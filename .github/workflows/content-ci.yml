@@ -1,0 +1,68 @@
+name: Content CI
+
+# Gates de contenu du corpus privé (étude 24, lot 2). Le moteur (scripts,
+# schéma zod, QA) vit dans le repo public MBeji/yahia-quest-arena : on le
+# checkout à côté du corpus, on branche `content/` par symlink, et on exécute
+# les trois gates depuis le moteur — zéro duplication de code.
+#
+# Transition (lots 2 → 4) : `content:check` compare le SQL généré aux
+# migrations DU MOTEUR ; il reste vert tant que ce repo est un miroir du
+# contenu public. Au lot 3 (émission vers sql/content/ d'ici), l'étape sera
+# remplacée.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: content-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gates:
+    name: content:check + qa:strict + audit:strict
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout corpus (ce repo)
+        uses: actions/checkout@v7
+        with:
+          path: corpus
+
+      - name: Checkout moteur (repo public)
+        uses: actions/checkout@v7
+        with:
+          repository: MBeji/yahia-quest-arena
+          path: engine
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: engine/package-lock.json
+
+      - name: Installer les dépendances du moteur
+        working-directory: engine
+        run: npm ci --no-audit --no-fund
+
+      - name: Brancher le corpus privé dans le moteur
+        run: |
+          rm -rf engine/content
+          ln -s "$GITHUB_WORKSPACE/corpus/content" engine/content
+
+      - name: content:check
+        working-directory: engine
+        run: npm run content:check
+
+      - name: content:qa:strict
+        working-directory: engine
+        run: npm run content:qa:strict
+
+      - name: content:audit:strict
+        working-directory: engine
+        run: npm run content:audit:strict

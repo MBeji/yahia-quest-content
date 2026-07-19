@@ -1,0 +1,131 @@
+name: Content audit (pedagogical sweep)
+
+# Garde pédagogique hebdo du corpus privé — adaptation du content-audit.yml du
+# moteur public (étude 24, lot 2) : double checkout (corpus + moteur), symlink
+# du contenu, puis le skill .claude/skills/content-audit re-résout les questions
+# récemment modifiées et ouvre des issues de suivi ICI (privées). Review-only,
+# ne modifie jamais le contenu.
+#
+# S'active quand le secret CLAUDE_CODE_OAUTH_TOKEN est configuré (skip gracieux
+# sinon) — recommandé au lot 4, quand ce repo devient l'unique source du
+# contenu ; d'ici là la garde du repo public continue de couvrir les éditions.
+
+on:
+  schedule:
+    # Wed + Sat 22:07 UTC — même créneau que la garde du moteur qu'elle remplacera.
+    - cron: "7 22 * * 3,6"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: content-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    name: Pedagogical content audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Check the Claude OAuth token is configured
+        id: guard
+        run: |
+          if [ -z "${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}" ]; then
+            echo "CLAUDE_CODE_OAUTH_TOKEN not set — skipping the content audit."
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout corpus (full history for diff context)
+        if: steps.guard.outputs.configured == 'true'
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Checkout moteur (repo public)
+        if: steps.guard.outputs.configured == 'true'
+        uses: actions/checkout@v7
+        with:
+          repository: MBeji/yahia-quest-arena
+          path: engine
+
+      - name: Setup Node
+        if: steps.guard.outputs.configured == 'true'
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: engine/package-lock.json
+
+      - name: Install engine dependencies
+        if: steps.guard.outputs.configured == 'true'
+        working-directory: engine
+        run: npm ci --no-audit --no-fund
+
+      - name: Brancher le corpus privé dans le moteur
+        if: steps.guard.outputs.configured == 'true'
+        run: |
+          rm -rf engine/content
+          ln -s "$GITHUB_WORKSPACE/content" engine/content
+
+      - name: Run the content-audit sweep
+        if: steps.guard.outputs.configured == 'true'
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: |
+            Run the /content-audit skill for the private corpus yahia-quest-content.
+
+            LAYOUT — the workspace root is the CORPUS repo (content/ lives here);
+            the public ENGINE repo is checked out under `engine/`, with
+            `engine/content` symlinked to the corpus. Run every `npm run …`
+            command from `engine/`.
+
+            SCOPE — audit only what recently changed, to keep the run bounded:
+            list the subjects whose files under `content/**` were modified on
+            `main` in roughly the last 4 days
+            (`git log --since="4 days ago" --name-only --pretty=format: -- content`
+            then map the touched paths back to their subject dir). If nothing under
+            `content/` changed, audit nothing and post a short "no content changed —
+            nothing to audit" summary in the job log.
+
+            For each changed subject, follow the skill's per-item runbook:
+              • For ecole-tn subjects, run `npm run content:audit` (from engine/)
+                first for coverage/conformity vs the CNP manifest.
+              • RE-SOLVE every question blind, then compare to `correctOption`;
+                check distractors, explanation agreement, difficulty calibration,
+                answer-key balance, duplicates, standard notation (Western digits
+                even in Arabic, LTR equations, bidi-safe, SVG viewBox), language
+                purity, and factual / syllabus accuracy. Also grade cours.md /
+                resume.md against the course-quality bar.
+
+            OUTPUT — review only, never edit content:
+              • Open ONE tracking GitHub issue per BLOCKER or MAJOR finding
+                (label `content-audit`), titled with the subject + defect, body
+                carrying the `file` + `locator`, the defect, and a PROPOSED fix.
+                Before opening, list existing open `content-audit` issues and do
+                NOT duplicate one already filed for the same locator.
+              • MINOR findings: aggregate into the job-log summary, no issue.
+              • If everything audited is clean, open no issue and post a short
+                "all clean" summary instead.
+
+            Hard rules: NEVER modify content/ or push a commit; this is a review.
+            Report the number of questions re-solved per subject. If you cannot
+            verify a key with confidence, file it as a finding rather than passing
+            it silently.
+          claude_args: |
+            --model claude-sonnet-4-6
+            --max-turns 60
+            --allowedTools "Bash,Read,Glob,Grep"
+
+      # Même garde-fou loud-fail que le moteur : claude-code-action sort en 0
+      # même quand Claude a échoué ; le parseur (pris dans le moteur) inspecte
+      # le is_error du dernier événement résultat.
+      - name: Fail loudly if the audit errored
+        if: ${{ always() && steps.guard.outputs.configured == 'true' }}
+        run: python3 engine/.github/scripts/check-claude-result.py "$RUNNER_TEMP/claude-execution-output.json"
