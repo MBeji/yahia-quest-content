@@ -1,0 +1,197 @@
+name: Apply content (PROD)
+
+# Applique le corpus (sql/content/<subject>.sql) à la base de PRODUCTION.
+#
+# Pourquoi ce workflow existe (étude 24 D-3) : une base Postgres n'héberge qu'UN
+# historique de migrations, donc deux dépôts qui poussent dessus se bloquent
+# mutuellement (« Remote migration versions not found in local migrations
+# directory »). Le corpus quitte donc le framework de migrations : il devient des
+# fichiers par sujet à nom stable, appliqués ici par psql. C'est le pendant privé
+# de `db-migrate-prod.yml`, avec la même posture de sûreté (garde de cible +
+# pg_dump préalable + journal).
+#
+# ⚠️ DÉSARMÉ — lot 3a. `workflow_dispatch` UNIQUEMENT : aucun merge, aucun push
+# ne peut déclencher une application en production. Le déclencheur automatique
+# (push sur main touchant content/**) ne sera armé qu'au lot 3b, APRÈS la
+# répétition intégrale sur le projet TEST et l'arbitrage du runbook §4.3.
+# Tant que cette ligne est là, ce fichier est du code livré, pas une automation
+# active.
+#
+# Prérequis : secret PROD_SUPABASE_DB_URL (même valeur que dans le repo public)
+# et la table `content_releases` (migration du repo public, appliquée au merge).
+
+on:
+  workflow_dispatch:
+    inputs:
+      subjects:
+        description: "ids de sujets séparés par des espaces (vide = tout le corpus — sûr, l'application est idempotente)"
+        type: string
+        default: ""
+      dry_run:
+        description: "n'applique rien : affiche le plan et sort (défaut = true)"
+        type: boolean
+        default: true
+
+# Jamais deux applications de contenu en parallèle sur la même base.
+concurrency:
+  group: apply-content-prod
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  apply:
+    name: Apply content to PROD
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      PROD_SUPABASE_DB_URL: ${{ secrets.PROD_SUPABASE_DB_URL }}
+      DRY_RUN: ${{ github.event.inputs.dry_run }}
+      SUBJECTS: ${{ github.event.inputs.subjects }}
+      # Ref du projet prod — miroir de la garde `assertProdDbUrl` du moteur
+      # (scripts/db/push-prod.mjs). Non secret : déjà en clair dans le repo public.
+      PROD_REF: fasrenmmrkqjoobrztbp
+      TEST_REF: pqegdnwdtbjtplcthxyp
+
+    steps:
+      - name: Garde — secret présent
+        run: |
+          if [ -z "${PROD_SUPABASE_DB_URL}" ]; then
+            echo "::error::Secret PROD_SUPABASE_DB_URL manquant (Settings > Secrets and variables > Actions)."
+            exit 1
+          fi
+
+      # Fail closed : on refuse de tourner si l'URL ne désigne pas sans ambiguïté
+      # la PROD. Même logique que `assertProdDbUrl` côté moteur.
+      - name: Garde — la cible est bien la PROD
+        run: |
+          set -euo pipefail
+          case "${PROD_SUPABASE_DB_URL}" in
+            *"${TEST_REF}"*)
+              echo "::error::L'URL vise le projet TEST (${TEST_REF}) — refus."; exit 1 ;;
+          esac
+          case "${PROD_SUPABASE_DB_URL}" in
+            *"${PROD_REF}"*) echo "Cible confirmée : prod (${PROD_REF})." ;;
+            *) echo "::error::L'URL ne contient pas le ref prod connu (${PROD_REF}) — refus."; exit 1 ;;
+          esac
+
+      - name: Checkout corpus (ce repo)
+        uses: actions/checkout@v4
+        with:
+          path: corpus
+
+      - name: Checkout moteur (repo public)
+        uses: actions/checkout@v4
+        with:
+          repository: MBeji/yahia-quest-arena
+          path: engine
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: engine/package-lock.json
+
+      - name: Installer les dépendances du moteur
+        working-directory: engine
+        run: npm ci
+
+      # Le moteur résout le corpus en `cwd()/content` : on branche le corpus privé
+      # à cette place (même mécanique que content-ci.yml — zéro patch du moteur).
+      - name: Brancher le corpus privé dans le moteur
+        run: |
+          rm -rf engine/content
+          ln -s "$GITHUB_WORKSPACE/corpus/content" engine/content
+
+      # Appel direct du CLI (et non `npm run content:emit`) : le script npm fige
+      # déjà --sql-dir, et le premier flag l'emporte.
+      - name: Émettre le SQL de contenu
+        working-directory: engine
+        run: |
+          node --experimental-strip-types scripts/content/build.ts \
+            --sql-dir "$GITHUB_WORKSPACE/corpus/sql/content"
+
+      - name: Établir le plan d'application
+        id: plan
+        run: |
+          set -euo pipefail
+          cd "$GITHUB_WORKSPACE/corpus/sql/content"
+          if [ -n "${SUBJECTS}" ]; then
+            FILES=""
+            for s in ${SUBJECTS}; do
+              [ -f "${s}.sql" ] || { echo "::error::Sujet inconnu : ${s}.sql introuvable."; exit 1; }
+              FILES="${FILES} ${s}.sql"
+            done
+          else
+            FILES="$(ls *.sql | tr '\n' ' ')"
+          fi
+          echo "files=${FILES}" >> "$GITHUB_OUTPUT"
+          echo "### Plan d'application" >> "$GITHUB_STEP_SUMMARY"
+          for f in ${FILES}; do echo "- \`${f}\`" >> "$GITHUB_STEP_SUMMARY"; done
+
+      - name: Dry-run — on s'arrête ici
+        if: ${{ env.DRY_RUN != 'false' }}
+        run: |
+          echo "### 🧪 Dry-run : rien n'a été appliqué" >> "$GITHUB_STEP_SUMMARY"
+          echo "Relancer avec dry_run=false pour appliquer."
+
+      - name: Installer postgresql-client-17
+        if: ${{ env.DRY_RUN == 'false' }}
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq postgresql-common >/dev/null
+          yes | sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh >/dev/null
+          sudo apt-get install -y -qq postgresql-client-17 >/dev/null
+          echo "/usr/lib/postgresql/17/bin" >> "$GITHUB_PATH"
+
+      # Filet de sécurité : un dump frais AVANT toute écriture, comme
+      # db-migrate-prod.yml. On refuse d'appliquer sur un backup douteux.
+      - name: Backup prod (pg_dump) AVANT application
+        if: ${{ env.DRY_RUN == 'false' }}
+        run: |
+          set -euo pipefail
+          STAMP="$(date -u +%Y%m%d-%H%M%S)"
+          FILE="prod-pre-content-${STAMP}.dump"
+          pg_dump "${PROD_SUPABASE_DB_URL}" -Fc --schema=public -f "$FILE"
+          OBJECTS=$(pg_restore --list "$FILE" | wc -l)
+          echo "STAMP=$STAMP" >> "$GITHUB_ENV"
+          echo "FILE=$FILE" >> "$GITHUB_ENV"
+          echo "### Backup \`$FILE\` — $OBJECTS objets" >> "$GITHUB_STEP_SUMMARY"
+          [ "$OBJECTS" -gt 50 ] || { echo "::error::Dump suspect ($OBJECTS objets) — abandon."; exit 1; }
+
+      - name: Uploader le backup (rétention 14 j)
+        if: ${{ env.DRY_RUN == 'false' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: prod-pre-content-${{ env.STAMP }}
+          path: ${{ env.FILE }}
+          retention-days: 14
+          if-no-files-found: error
+
+      # Chaque fichier sujet est idempotent par construction (upsert UUIDv5 +
+      # prune scopé au sujet) : rejouer est sûr. ON_ERROR_STOP + une transaction
+      # par sujet — un sujet qui casse ne laisse pas la base à moitié écrite.
+      - name: Appliquer le contenu
+        if: ${{ env.DRY_RUN == 'false' }}
+        working-directory: corpus/sql/content
+        run: |
+          set -euo pipefail
+          for f in ${{ steps.plan.outputs.files }}; do
+            echo "→ ${f}"
+            psql "${PROD_SUPABASE_DB_URL}" \
+              --set ON_ERROR_STOP=1 --single-transaction -q -f "${f}"
+          done
+
+      # Le journal que le contenu perd en quittant supabase_migrations (§4.2).
+      - name: Journaliser la release
+        if: ${{ env.DRY_RUN == 'false' }}
+        run: |
+          set -euo pipefail
+          SUBJECT_LIST=$(for f in ${{ steps.plan.outputs.files }}; do basename "$f" .sql; done | paste -sd, -)
+          psql "${PROD_SUPABASE_DB_URL}" --set ON_ERROR_STOP=1 -q -c \
+            "INSERT INTO public.content_releases (git_sha, subjects, actor)
+             VALUES ('${{ github.sha }}',
+                     string_to_array('${SUBJECT_LIST}', ','),
+                     '${{ github.actor }} via ${{ github.workflow }}#${{ github.run_id }}');"
+          echo "### ✅ Contenu appliqué et journalisé" >> "$GITHUB_STEP_SUMMARY"

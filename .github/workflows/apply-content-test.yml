@@ -1,0 +1,154 @@
+name: Apply content (TEST)
+
+# Applique le corpus (sql/content/<subject>.sql) au projet Supabase TEST.
+#
+# C'est la RÉPÉTITION GÉNÉRALE du canal de contenu (étude 24 D-3) : tout ce que
+# `apply-content.yml` fera en production se joue d'abord ici, sur une base
+# jetable et reseedable. C'est aussi ce qui redonne un catalogue au projet TEST
+# pour la tier e2e authentifiée (lot 6).
+#
+# Différences assumées avec la prod : pas de pg_dump préalable (TEST est
+# reconstructible via scripts/e2e/) et dry_run à false par défaut — appliquer
+# est justement le but ici.
+#
+# ⚠️ Comme son pendant prod, ce workflow est en `workflow_dispatch` UNIQUEMENT :
+# aucun merge ne déclenche d'application. Prérequis : secret TEST_SUPABASE_DB_URL.
+
+on:
+  workflow_dispatch:
+    inputs:
+      subjects:
+        description: "ids de sujets séparés par des espaces (vide = tout le corpus)"
+        type: string
+        default: ""
+      dry_run:
+        description: "n'applique rien : affiche le plan et sort"
+        type: boolean
+        default: false
+
+concurrency:
+  group: apply-content-test
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  apply:
+    name: Apply content to TEST
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TEST_SUPABASE_DB_URL: ${{ secrets.TEST_SUPABASE_DB_URL }}
+      DRY_RUN: ${{ github.event.inputs.dry_run }}
+      SUBJECTS: ${{ github.event.inputs.subjects }}
+      PROD_REF: fasrenmmrkqjoobrztbp
+      TEST_REF: pqegdnwdtbjtplcthxyp
+
+    steps:
+      - name: Garde — secret présent
+        run: |
+          if [ -z "${TEST_SUPABASE_DB_URL}" ]; then
+            echo "::error::Secret TEST_SUPABASE_DB_URL manquant (Settings > Secrets and variables > Actions)."
+            exit 1
+          fi
+
+      # Garde INVERSE de celle de la prod : ce workflow seed et écrase — il ne
+      # doit jamais, sous aucun prétexte, viser la production.
+      - name: Garde — la cible est bien TEST (jamais la prod)
+        run: |
+          set -euo pipefail
+          case "${TEST_SUPABASE_DB_URL}" in
+            *"${PROD_REF}"*)
+              echo "::error::L'URL vise la PRODUCTION (${PROD_REF}) — refus catégorique."; exit 1 ;;
+          esac
+          case "${TEST_SUPABASE_DB_URL}" in
+            *"${TEST_REF}"*) echo "Cible confirmée : TEST (${TEST_REF})." ;;
+            *) echo "::error::L'URL ne contient pas le ref TEST connu (${TEST_REF}) — refus."; exit 1 ;;
+          esac
+
+      - name: Checkout corpus (ce repo)
+        uses: actions/checkout@v4
+        with:
+          path: corpus
+
+      - name: Checkout moteur (repo public)
+        uses: actions/checkout@v4
+        with:
+          repository: MBeji/yahia-quest-arena
+          path: engine
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: engine/package-lock.json
+
+      - name: Installer les dépendances du moteur
+        working-directory: engine
+        run: npm ci
+
+      - name: Brancher le corpus privé dans le moteur
+        run: |
+          rm -rf engine/content
+          ln -s "$GITHUB_WORKSPACE/corpus/content" engine/content
+
+      - name: Émettre le SQL de contenu
+        working-directory: engine
+        run: |
+          node --experimental-strip-types scripts/content/build.ts \
+            --sql-dir "$GITHUB_WORKSPACE/corpus/sql/content"
+
+      - name: Établir le plan d'application
+        id: plan
+        run: |
+          set -euo pipefail
+          cd "$GITHUB_WORKSPACE/corpus/sql/content"
+          if [ -n "${SUBJECTS}" ]; then
+            FILES=""
+            for s in ${SUBJECTS}; do
+              [ -f "${s}.sql" ] || { echo "::error::Sujet inconnu : ${s}.sql introuvable."; exit 1; }
+              FILES="${FILES} ${s}.sql"
+            done
+          else
+            FILES="$(ls *.sql | tr '\n' ' ')"
+          fi
+          echo "files=${FILES}" >> "$GITHUB_OUTPUT"
+          echo "### Plan d'application (TEST)" >> "$GITHUB_STEP_SUMMARY"
+          for f in ${FILES}; do echo "- \`${f}\`" >> "$GITHUB_STEP_SUMMARY"; done
+
+      - name: Dry-run — on s'arrête ici
+        if: ${{ env.DRY_RUN == 'true' }}
+        run: echo "### 🧪 Dry-run : rien n'a été appliqué" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Installer postgresql-client-17
+        if: ${{ env.DRY_RUN != 'true' }}
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq postgresql-common >/dev/null
+          yes | sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh >/dev/null
+          sudo apt-get install -y -qq postgresql-client-17 >/dev/null
+          echo "/usr/lib/postgresql/17/bin" >> "$GITHUB_PATH"
+
+      - name: Appliquer le contenu
+        if: ${{ env.DRY_RUN != 'true' }}
+        working-directory: corpus/sql/content
+        run: |
+          set -euo pipefail
+          for f in ${{ steps.plan.outputs.files }}; do
+            echo "→ ${f}"
+            psql "${TEST_SUPABASE_DB_URL}" \
+              --set ON_ERROR_STOP=1 --single-transaction -q -f "${f}"
+          done
+
+      - name: Journaliser la release
+        if: ${{ env.DRY_RUN != 'true' }}
+        run: |
+          set -euo pipefail
+          SUBJECT_LIST=$(for f in ${{ steps.plan.outputs.files }}; do basename "$f" .sql; done | paste -sd, -)
+          psql "${TEST_SUPABASE_DB_URL}" --set ON_ERROR_STOP=1 -q -c \
+            "INSERT INTO public.content_releases (git_sha, subjects, actor)
+             VALUES ('${{ github.sha }}',
+                     string_to_array('${SUBJECT_LIST}', ','),
+                     '${{ github.actor }} via ${{ github.workflow }}#${{ github.run_id }}');"
+          echo "### ✅ Contenu appliqué sur TEST et journalisé" >> "$GITHUB_STEP_SUMMARY"
