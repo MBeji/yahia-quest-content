@@ -773,4 +773,40 @@ Cases à cocher :
   52 sujets sur 77 appliqués en 30 min, puis job `cancelled` (pas `failure`) — les sujets passés
   sont appliqués, les suivants non, et l'écriture dans `content_releases`, en fin de job, n'a pas
   lieu : **on perd la trace de ce qui a été appliqué**. Le canal PROD portait le même défaut
-  latent. Relevé à 120 min des deux côtés.
+  latent. Relevé à 120 min des deux côtés. **Confirmé après coup** : la reprise a mis
+  **31 min 30** — l'ancien plafond l'aurait coupée une seconde fois.
+
+- **2026-07-20 — É-9 : le prune disparu fait percuter les fixtures pgTAP.** Quatrième et
+  dernier effet de bord, de nature différente des trois premiers (qui empêchaient les migrations
+  de s'appliquer ; celui-ci les laisse passer et casse les tests).
+
+  **Mécanisme** : chaque migration de contenu **générée** portait un prune — « prune
+  admin-authored content that is no longer in the source tree » — qui supprimait les vieilles
+  lignes de `20260522170000_seed_content`. Ces migrations parties, **la purge est partie avec
+  elles** : sur une base fraîche, ces lignes de seed **survivent** désormais, alors qu'en prod
+  elles ont été purgées il y a des semaines. Une base reconstruite depuis le repo public
+  contient donc du contenu que la prod n'a **pas** — divergence à garder en tête au-delà des
+  tests.
+
+  Conséquence immédiate : **19 uuid** de fixtures, répartis sur **5 fichiers pgTAP**
+  (`04_scoring_submit_attempt`, `06_start_exercise_session`, `13_user_subject_stats`,
+  `28_recall_mode_foundations`, `31_sm2_close_reviews`), entrent en collision avec ces lignes →
+  `duplicate key` sur `exercises_pkey` / `chapters_pkey`, et fichiers qui n'exécutent plus aucun
+  assert (« You planned 12 tests but ran 0 »). Les tests **possèdent** ces lignes (leurs propres
+  sujets `score-subj`, `start-sess-subj`, `stats-s1`) : ils avaient seulement choisi des ids
+  malheureux. Correctif : déplacer les 19 ids vers un espace de noms que le corpus n'utilise pas
+  (premier octet `fa`/`fb`/`fc`/`fd`/`fe`/`f9`), sans toucher aux migrations.
+
+  **Constat annexe, indépendant de cette étude mais important** : la suite pgTAP échouait
+  **déjà** avant la scission — 6 tests d'entitlements premium (`05_parcours_entitlements`)
+  rouges à chaque nightly depuis au moins le 2026-07-17. Or `db-tests.yml` se décrit lui-même
+  comme « le filet exécutable pour le SQL SECURITY DEFINER que Vitest ne peut pas couvrir ».
+  **Ce filet était donc déjà à terre**, et un nightly rouge en permanence ne réveillait personne
+  — ce qui explique en partie pourquoi les régressions de la scission ont pu passer. À traiter
+  hors étude 24.
+
+- **2026-07-20 — lot 6 : le projet TEST a retrouvé son catalogue.** `apply-content-test.yml`
+  exécuté en réel : 77 sujets appliqués, release journalisée dans `content_releases`, 31 min 30.
+  C'est la première exécution complète du canal de contenu de bout en bout — et elle lève
+  RISK-4 (« la tier e2e auth suppose un catalogue en TEST »). Reste à confirmer la tier e2e
+  authentifiée elle-même, qui tourne au nightly.
