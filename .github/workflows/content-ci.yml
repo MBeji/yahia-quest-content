@@ -1,14 +1,21 @@
 name: Content CI
 
-# Gates de contenu du corpus privé (étude 24, lot 2). Le moteur (scripts,
-# schéma zod, QA) vit dans le repo public MBeji/yahia-quest-arena : on le
-# checkout à côté du corpus, on branche `content/` par symlink, et on exécute
-# les trois gates depuis le moteur — zéro duplication de code.
+# Gates de contenu du corpus privé (étude 24). Le moteur (scripts, schéma zod,
+# QA) vit dans le repo public MBeji/yahia-quest-arena : on le checkout à côté du
+# corpus, on branche les données par symlink, et on exécute les gates depuis le
+# moteur — zéro duplication de code.
 #
-# Transition (lots 2 → 4) : `content:check` compare le SQL généré aux
-# migrations DU MOTEUR ; il reste vert tant que ce repo est un miroir du
-# contenu public. Au lot 3 (émission vers sql/content/ d'ici), l'étape sera
-# remplacée.
+# Depuis le lot 3b (2026-07-20), ce repo n'est plus un miroir : il est la SEULE
+# source du corpus et des skills pédagogiques. Deux symlinks sont donc
+# nécessaires, pas un :
+#   • `content/`        — le corpus (le moteur le résout en `cwd()/content`)
+#   • `.claude/skills/` — les 41 skills pédagogiques. `content:audit:strict` lit
+#     `content-ecole-tn/references/programmes-officiels/manifest` et
+#     `programme:check` lit `…/suivi` + `…/programme`. Sans ce second lien, ces
+#     deux gates échouent sur le SKILL avant même de toucher au corpus.
+#
+# `programme:check` (registre de transcription CNP) tournait dans la CI publique
+# jusqu'au lot 3b ; il a suivi ses données ici. Les gates suivent leurs données.
 
 on:
   pull_request:
@@ -24,7 +31,7 @@ concurrency:
 
 jobs:
   gates:
-    name: content:check + qa:strict + audit:strict
+    name: content:check + qa:strict + audit:strict + programme:check
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -50,10 +57,18 @@ jobs:
         working-directory: engine
         run: npm ci --no-audit --no-fund
 
-      - name: Brancher le corpus privé dans le moteur
+      - name: Brancher le corpus ET les skills privés dans le moteur
         run: |
-          rm -rf engine/content
+          set -euo pipefail
+          rm -rf engine/content engine/.claude/skills
+          mkdir -p engine/.claude
           ln -s "$GITHUB_WORKSPACE/corpus/content" engine/content
+          ln -s "$GITHUB_WORKSPACE/corpus/.claude/skills" engine/.claude/skills
+          # Fail fast et lisible si un jour l'arborescence privée bouge.
+          test -f engine/content/misconceptions.json \
+            || { echo "::error::corpus non branché (misconceptions.json introuvable)"; exit 1; }
+          test -d engine/.claude/skills/content-ecole-tn/references/programmes-officiels/manifest \
+            || { echo "::error::skills non branchés (manifest programmes-officiels introuvable)"; exit 1; }
 
       - name: content:check
         working-directory: engine
@@ -66,3 +81,7 @@ jobs:
       - name: content:audit:strict
         working-directory: engine
         run: npm run content:audit:strict
+
+      - name: programme:check
+        working-directory: engine
+        run: npm run programme:check
