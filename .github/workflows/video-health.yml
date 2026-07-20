@@ -1,0 +1,150 @@
+name: Video health (curated explainer videos)
+
+# Weekly liveness check of the curated videos in content/videos.json (étude 23
+# lot 4, R-12/US-8). For every `active` entry it asks YouTube's PUBLIC oEmbed
+# endpoint whether the video is still live AND embeddable — no API key, no
+# secret, no Claude: a plain deterministic script.
+#
+# Ported from the public repo by étude 24 lot 3b: the registry it reads
+# (`content/videos.json`) moved here with the corpus, so the check moved with
+# its data. The CHECKER itself stays in the public repo (it is engine code) —
+# we check that repo out next to the corpus, exactly like content-ci.yml.
+#
+# It NEVER edits content/videos.json (R-12). It opens/updates ONE tracking issue
+# listing the dead videos and the subjects that must be re-applied once a human
+# session retires or replaces them; the issue is auto-closed on the next clean
+# run. Rationale: a video can be deleted, made private or have embedding turned
+# off at any time by its author — the app must learn about it in ≤ 7 days rather
+# than show a student a dead player (RISK-1).
+#
+# Network failures degrade to `unknown`, never to a false `broken`: the oEmbed
+# endpoint carries no SLA, and retiring a healthy video because of a blip would
+# be worse than a late detection.
+#
+# schedule only fires on the default branch (main) — takes effect once merged.
+
+on:
+  schedule:
+    # Sundays at 06:00 UTC (07:00 Tunisia) — a slot no other guard occupies
+    # (regression Mon/Thu 23:00, nightly daily 01:00, upgrade Tue/Fri,
+    # content-audit Wed/Sat 22:07).
+    - cron: "0 6 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: video-health
+  cancel-in-progress: false
+
+jobs:
+  check:
+    name: Probe every active curated video
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout corpus (ce repo)
+        uses: actions/checkout@v7
+        with:
+          path: corpus
+
+      - name: Checkout moteur (repo public)
+        uses: actions/checkout@v7
+        with:
+          repository: MBeji/yahia-quest-arena
+          path: engine
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: engine/package-lock.json
+
+      # The checker has zero dependencies, but `npm ci` keeps the job aligned
+      # with every other workflow (and is cached).
+      - name: Install dependencies
+        working-directory: engine
+        run: npm ci --no-audit --no-fund
+
+      - name: Brancher le corpus privé dans le moteur
+        run: |
+          set -euo pipefail
+          rm -rf engine/content
+          ln -s "$GITHUB_WORKSPACE/corpus/content" engine/content
+          test -f engine/content/videos.json \
+            || { echo "::error::registre non branché (content/videos.json introuvable)"; exit 1; }
+
+      - name: Probe the registry
+        id: probe
+        working-directory: engine
+        # Exits 1 when a video is broken — that is a finding, not a job failure.
+        continue-on-error: true
+        run: |
+          node scripts/content/check-videos.mjs > "$GITHUB_WORKSPACE/video-health.json"
+          echo "exit=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Summarise
+        id: report
+        run: |
+          node --input-type=module -e '
+            import { readFileSync, appendFileSync } from "node:fs";
+            const r = JSON.parse(readFileSync("video-health.json", "utf8"));
+            const lines = [];
+            lines.push(`Checked **${r.total}** active video(s) — ${r.ok} ok, ${r.broken.length} broken, ${r.unknown.length} unknown.`);
+            if (r.broken.length) {
+              lines.push("", "### Dead videos (registry `status` → `broken`)", "");
+              for (const b of r.broken) lines.push(`- \`${b.id}\` (${b.videoId}) — ${b.reason}`);
+            }
+            if (r.subjectsToRebuild.length) {
+              lines.push("", "### Subjects to re-apply after retiring them", "");
+              for (const s of r.subjectsToRebuild) {
+                lines.push(`- sujet \`${s.subject}\` — référence ${s.videos.map((v) => `\`${v}\``).join(", ")}`);
+              }
+              lines.push("", "Réappliquer via le workflow **Apply content (PROD)** en lui passant ces ids de sujets (le contenu ne voyage plus en migrations — étude 24).");
+            }
+            if (r.unknown.length) {
+              lines.push("", "### Unverified this run (network/no SLA — NOT a defect)", "");
+              for (const u of r.unknown) lines.push(`- \`${u.id}\` — ${u.reason}`);
+            }
+            const body = lines.join("\n");
+            appendFileSync(process.env.GITHUB_STEP_SUMMARY, body + "\n");
+            appendFileSync(process.env.GITHUB_OUTPUT, `broken=${r.broken.length}\n`);
+            appendFileSync(process.env.GITHUB_OUTPUT, "body<<VIDEOEOF\n" + body + "\nVIDEOEOF\n");
+          '
+
+      - name: Open or update the tracking issue
+        if: steps.report.outputs.broken != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BODY: ${{ steps.report.outputs.body }}
+        run: |
+          # Self-healing: the label is repo metadata nobody has to provision by
+          # hand (--force = create, or update in place if it already exists).
+          gh label create video-health \
+            --color BFD4F2 \
+            --description "Vidéo curée indisponible (étude 23 health-check)" \
+            --force
+          TITLE="Vidéos indisponibles — health-check hebdomadaire"
+          EXISTING=$(gh issue list --label video-health --state open --limit 1 --json number --jq '.[0].number')
+          FULL="$BODY
+
+          > Le health-check ne modifie **jamais** \`content/videos.json\` (étude 23 R-12).
+          > Une session humaine passe l'entrée en \`broken\` (ou la remplace), puis réapplique
+          > les sujets listés ci-dessus."
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$FULL"
+          else
+            gh issue create --title "$TITLE" --label video-health --body "$FULL"
+          fi
+
+      - name: Close the tracking issue when everything is healthy
+        if: steps.report.outputs.broken == '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          EXISTING=$(gh issue list --label video-health --state open --limit 1 --json number --jq '.[0].number')
+          if [ -n "$EXISTING" ]; then
+            gh issue close "$EXISTING" --comment "Toutes les vidéos actives répondent de nouveau — clôture automatique."
+          fi
