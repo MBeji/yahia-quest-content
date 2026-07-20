@@ -810,3 +810,35 @@ Cases à cocher :
   C'est la première exécution complète du canal de contenu de bout en bout — et elle lève
   RISK-4 (« la tier e2e auth suppose un catalogue en TEST »). Reste à confirmer la tier e2e
   authentifiée elle-même, qui tourne au nightly.
+
+- **2026-07-20 — clôture de session : ce qui reste ouvert.**
+
+  **É-10 — deux fichiers pgTAP assertent sur le CORPUS et ne peuvent plus passer au public.**
+  `26_competency_graph_schema` (« la famille math livre ≥50 compétences », « la compétence
+  phare `math.geo.thales-direct` existe », « le DAG de prérequis livre ≥60 arêtes ») et
+  `27_open_ecole_1ere_sec_parcours` (« `math-1ere-sec` compte 16 chapitres », rattachement au
+  grade). Même nature que les 2 tests unitaires traités à É-4, côté SQL cette fois.
+  **Décision à prendre** : rendre indépendantes les assertions purement structurelles
+  (`competency_prereqs` ne peut pas être son propre prérequis), et retirer celles de
+  volumétrie / de contenu nommé — que `content:check` rejoue déjà sur le corpus réel à chaque
+  PR privée. Non traité dans cette session.
+
+  **Trou de vérification comblé** : `db-tests.yml` gagne un déclencheur `pull_request` ciblé
+  sur `supabase/{migrations,tests}/**` (PR `claude/db-tests-on-migration-prs`). C'est **le**
+  correctif de fond : les quatre régressions n'ont été vues qu'après leur merge, faute d'un
+  check de PR rejouant la chaîne depuis zéro. Il **rapporte** sans bloquer — le promouvoir en
+  check requis coûte 5-8 min par PR de migration et reste à arbitrer.
+
+  **Leçon de collaboration, à valeur générale.** Deux correctifs ont été écrits **deux fois**
+  ce jour-là, par deux sessions en parallèle : les gardes des quatre vagues (moi puis #552) et
+  le renommage des fixtures pgTAP (moi puis #557). Sur un incident **partagé** — par opposition
+  à un lot réservé — la règle « une PR par lot sur un jeu de fichiers distinct » de
+  CONTRIBUER.md ne protège plus : il n'y a pas de réservation. **Vérifier `main` avant chaque
+  itération**, pas seulement au démarrage.
+
+  **Constat hors périmètre, à traiter à part** : la suite pgTAP échoue **déjà** sur 6 tests
+  d'entitlements premium (`05_parcours_entitlements`) à chaque nightly depuis au moins le
+  2026-07-17 — avant la scission. `db-tests.yml` se décrit comme « le filet exécutable pour le
+  SQL SECURITY DEFINER que Vitest ne peut pas couvrir » : ce filet est à terre depuis des
+  jours, et un nightly rouge en permanence n'alerte plus personne. C'est ce qui a permis aux
+  régressions de la scission de passer inaperçues.
