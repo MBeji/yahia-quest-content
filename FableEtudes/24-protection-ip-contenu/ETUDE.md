@@ -446,14 +446,24 @@ Cases à cocher :
       → **3a livré le 2026-07-19** (outillage & canal, zéro prod : émetteur, inventaire,
       `content_releases`, workflows privés désarmés) · **3b — retraits livrés le 2026-07-20**
       (228 migrations générées, `content/`, job `content` de `ci.yml`, migration
-      `exercises_mode_check`) ; **opération prod `repair-revert` en attente** (§9)
+      `exercises_mode_check`) ; **opération prod `repair-revert` exécutée avec succès** le
+      2026-07-20 (PR #544, run 29742370004) — 123 versions locales = 123 distantes, aucun
+      phantom. Quatre effets de bord sur la reconstruction d'une base VIERGE ont suivi,
+      tous corrigés (#548, #549, #552, #557 — É-8 et É-9 au §9)
 - [x] Lot 4 — fin du dégraissage public + gate anti-fuite — livré le 2026-07-20
       (41 skills pédago + `FableEtudes/` retirés, `leak:check` posé avec l'exclusion nommée
       des 17, gates contenu déplacés vers la Content CI privée)
 - [ ] Lot 5 — purge de l'historique public (si Q-2) — **go/no-go rouvert** : le rayon de
       souffle réel (14 worktrees, 7 avec du travail non commité, sessions concurrentes
       actives) diffère du cadrage « 0 fork, 1 star » de l'étude (§9)
-- [ ] Lot 6 — e2e TEST + régularisation documentaire
+- [ ] Lot 6 — e2e TEST + régularisation documentaire — **partiel au 2026-07-20**
+      → ✅ apply contenu sur le projet TEST (77 sujets, `content_releases` journalisé,
+      31 min 30) — RISK-4 levé · ✅ `STATUS.md` §2 : décision datée append-only ·
+      ✅ index des études resynchronisé
+      → ❌ **reste** : confirmer la **tier e2e authentifiée** contre le catalogue TEST
+      restauré (elle tourne au nightly ; « nightly verte 2 nuits consécutives » avant de
+      clore, §6) · trancher **É-10** (les 2 fichiers pgTAP qui assertent sur le corpus,
+      qui bloquent le merge de la PR #563)
 
 ## 6. Stratégie de test
 
