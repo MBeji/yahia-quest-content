@@ -782,9 +782,11 @@ Détail des points durs par lot :
 
 - [x] Lot 1 — Bascule AGENTS.md canonique + pointeurs (2026-07-19)
 - [x] Lot 2 — Outillage & gate `harness:check` + `models.json` (2026-07-19)
-- [ ] Lot 3 — Skills : conformité spec + miroir `.agents/skills/`
+- [x] Lot 3 — Skills : conformité spec + miroir `.agents/skills/` (2026-07-20)
 - [x] Lot 4 — Politique d'exécution déclarative + hook externalisé (2026-07-20)
-- [ ] Lot 5 — Gardes CI portables + épinglage SHA
+- [x] Lot 5a — Gardes CI portables (rôles) + contrat + CODEOWNERS (2026-07-20)
+- [x] Lot 5b — Épinglage SHA des actions (46 usages) (2026-07-20)
+- [ ] Lot 5c — Garde « second avis » dormant + run manuel d'un garde (critère d'acceptation L5)
 - [x] Lot 6 — Mémoire & collaboration multi-têtes (2026-07-20)
 - [ ] Lot 7 — Drill de portabilité (avec l'humain)
 
@@ -1002,6 +1004,94 @@ Détail des points durs par lot :
     jamais par un champ d'API ») et la course-poursuite rebase/automerge sous congestion.
     Gate : `npm run ci:verify` vert.
     _Reste_ : L5 (gardes CI + SHA + CODEOWNERS de Q-6), L3 (après é24 3b), L7 (drill, avec Mohamed).
+
+---
+
+- **2026-07-20 — Lot 5a livré (D-5/D-6, Q-6). ⚠️ Lot 5 scindé en 5a/5b/5c.**
+  _Raison du découpage_ : l'inventaire donnait **53 usages d'actions non épinglées sur 18
+  workflows**. Épingler tout ça dans la même PR qu'un changement de comportement des gardes, sur
+  un dépôt où ~10 sessions poussent en parallèle, c'est risquer de **bloquer tout le monde sur un
+  SHA erroné** sans pouvoir revert l'un sans l'autre. 5a = comportement ; 5b = épinglage seul,
+  mécanique et revertable isolément ; 5c = le reliquat identifié après coup (voir plus bas).
+  _Livré_ : les gardes résolvent leur modèle **au run** depuis `harness/models.json` via leur
+  rôle — un step `Resolve the model for role X` alimente `claude_args`. Plus **aucun**
+  `--model claude-…` dans un workflow. `docs/agents/gardes.md` écrit le **contrat D-6** en 5
+  règles (skip gracieux sans secret · contexte borné · invoque UN skill du dépôt · livre
+  PR/issue, jamais un push sur `main` · jugé par les mêmes checks), la table rôle→workflow, la
+  marche à suivre pour **changer de fournisseur** (2 lignes : l'action et le secret — prompt et
+  skill sont déjà agnostiques), le statut dormant du rôle `second-avis` (Q-3) avec sa règle de
+  gouvernance, la cadence et la posture sécurité. `.github/CODEOWNERS` créé (**arbitrage Q-6**)
+  sur `.github/workflows/`, `.github/rulesets/`, `harness/` et `scripts/harness/`.
+  ⚠️ **Action requise côté réglages GitHub** : CODEOWNERS n'a d'effet que si « Require review
+  from Code Owners » est coché dans le ruleset `main-protection` — sinon le fichier ne fait que
+  suggérer un relecteur.
+  _Bug réel trouvé grâce à ce lot_ : en élargissant le scan d'ids de modèles aux workflows, la
+  regex du lot 2 s'est révélée **trop large** — elle prenait `claude-code-action` (l'action
+  GitHub), `check-claude-result.py` et `claude-execution-output.json` pour des modèles (12 faux
+  positifs). Elle est désormais ancrée sur la **famille** de modèle
+  (`sonnet|opus|haiku|fable|instant`, `gpt-<chiffre>`, `gemini-<chiffre>`, `o<chiffre>`) ;
+  3 tests de non-régression figent ces faux positifs. **Le KPI-3 « zéro identifiant de modèle en
+  dur » est maintenant réellement gaté**, plus seulement déclaré (vérifié en réintroduisant un
+  `--model claude-opus-4-8` : gate rouge).
+  _Impact de la scission é24, survenue pendant ce lot_ : `content-audit.yml` est parti au dépôt
+  privé avec le corpus qu'il audite → le lot ne couvre plus que **3 gardes** (`regression-guard`,
+  `upgrade-guard`, `report-triage`). Le rôle `garde-contenu` reste déclaré dans `models.json`
+  sans consommateur ici ; le contrat s'applique à l'identique côté privé. La PR a dû être rebasée
+  en **acceptant la suppression** des fichiers `FableEtudes/**` et `content-audit.yml` — au
+  passage, **cette manœuvre a fait perdre la première version de ce journal**, réécrite ici.
+  Les **liens morts** vers `FableEtudes/` créés par la scission dans les playbooks du lot 6 ont
+  été réparés dans la même PR.
+
+- **2026-07-20 — Lot 5b livré (durcissement supply chain).** Les **46 `uses:`** du dépôt passent
+  d'un tag mouvant (`@v7`) à un **SHA de commit**, la version restant en commentaire
+  (`actions/checkout@9c091bb… # v7`). Un tag est déplaçable par son mainteneur : il laisse un
+  tiers changer ce qui s'exécute dans notre CI, avec nos secrets, sans qu'aucun diff n'apparaisse
+  chez nous (vecteur de l'incident Amazon Q, 2025). Les **10 actions distinctes ont été
+  contre-vérifiées une à une** contre l'API GitHub (`gh api repos/<a>/commits/<tag> --jq .sha`) :
+  chaque SHA committé correspond au tag annoncé. Aucun tag mouvant ne subsiste.
+  **Épinglage seul, sans montée de version** — deux changements distincts, dont le mélange
+  rendrait la PR non-revertable ; l'incohérence `checkout@v5` vs `@v7` repérée avant la scission
+  a disparu d'elle-même (elle vivait dans les workflows partis au privé). Documenté là où on le
+  cherchera : `docs/agents/gardes.md` (monter une action = remplacer SHA **et** commentaire) et
+  `docs/dependency-maintenance.md` (**les Actions sont une chaîne d'appro distincte de npm —
+  Dependabot ne les couvre pas** ; c'était un angle mort réel).
+
+- **2026-07-20 — Lot 3 livré (D-2), après é24 lot 3b comme prévu.** Le report décidé au lot 4
+  s'est révélé juste : la scission a emporté 40 des 45 skills, donc le miroir ne porte que les
+  **5 skills techniques** (`verify`, `code-review`, `regression-guard`, `upgrade-guard`,
+  `report-triage`) — au lieu de dupliquer dans le dépôt public l'usine que é24 en retirait.
+  `harness:sync` les copie **verbatim** vers `.agents/skills/`, le chemin neutre que découvrent
+  Codex, Gemini CLI, Cursor, Copilot et Amp ; copie et non traduction, `SKILL.md` étant un
+  standard ouvert (agentskills.io). `harness:check` gagne la **validation de la spec** sur chaque
+  skill : `name` = nom du dossier (sinon la découverte casse chez les autres outils) et
+  `description` ≤ 1 024 caractères (elle est injectée dans le prompt système de chaque session).
+  **Un skill était hors spec** : `upgrade-guard`, 1 048 caractères → resserré à 991 sans perdre
+  de mot déclencheur ; son corps listait en outre des **versions d'actions périmées**
+  (`checkout@v5` quand le dépôt est en v7), remplacées par la règle durable « lire les versions
+  dans les commentaires des SHA épinglés ».
+  _Écart assumé_ : **pas de `harness/manifest.json`**. Le manifeste était prévu pour déclarer des
+  exclusions du miroir ; depuis la scission, les seuls skills restants sont techniques et tous
+  destinés à être portables — un fichier de configuration vide « au cas où » serait du poids
+  mort. À créer le jour où un skill devra rester Claude-only. De même, la validation utilise les
+  règles de la spec réimplémentées dans `check.mjs` plutôt que le validateur officiel
+  `skills-ref` (option explicitement laissée ouverte par ce lot).
+  _Le gate a fait son travail en direct_ : juste après le commit, `harness:check` est passé au
+  rouge — `lint-staged` avait formaté les `.md` du **miroir**, qui divergeaient alors de leur
+  source non formatée. Un fichier généré ne doit jamais être reformaté indépendamment de sa
+  source : `.agents/skills/` rejoint `.prettierignore`, où `_INDEX.md` figurait déjà pour
+  exactement la même raison. C'est la **deuxième forme du même piège** que le lot 4 avait traité
+  côté JSON (sortie byte-compatible Prettier) — ici la sortie est une copie, donc c'est
+  l'exclusion qui s'impose. Deux filets vérifiés : le hook bloque l'édition manuelle du miroir en
+  local, le gate la détecte en CI.
+  48 tests sur `scripts/harness/`.
+
+- **2026-07-20 — Reliquat identifié : lot 5c.** La relecture de la table des lots a montré deux
+  éléments du L5 **non livrés** par 5a/5b : le workflow **`second-opinion.yml`** (garde « second
+  avis » dormant, activé par la seule présence de son secret) et le **critère d'acceptation
+  « run manuel (`workflow_dispatch`) d'un garde vert »**. Ils font l'objet du lot **5c** plutôt
+  que d'être silencieusement abandonnés. _Leçon de process_ : cocher un lot à partir du souvenir
+  de ce qu'on a fait, plutôt qu'en relisant sa ligne dans la table, laisse passer ce genre de
+  reliquat — d'où la révision d'aujourd'hui, déclenchée par une question de Mohamed.
 
 ---
 
