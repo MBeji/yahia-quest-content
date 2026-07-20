@@ -29,6 +29,10 @@
 
 ## 🧊 الحالة: صلب أم سائل
 
+::: figure الصُّلبُ يحتفظ بشكله أينما وُضِع، أمّا السائلُ فيأخذ شكلَ الإناء الذي يحويه
+<svg viewBox="0 0 340 175"><rect x="36" y="46" width="48" height="44" rx="4" fill="#a8a29e" stroke="#57534e" stroke-width="2.4"/><rect x="100" y="52" width="44" height="44" rx="4" fill="#a8a29e" stroke="#57534e" stroke-width="2.4"/><text x="90.0" y="122.0" text-anchor="middle" font-size="14" font-weight="700" fill="#57534e" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round">صُلب</text><text x="90.0" y="140.0" text-anchor="middle" font-size="10" font-weight="700" fill="#64748b" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round">شكلُه ثابت</text><text x="90.0" y="156.0" text-anchor="middle" font-size="9" font-weight="700" fill="#64748b" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round">نمسكُه بيدنا</text><path d="M176 36 V150" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4 4"/><path d="M210 48 V92 h34 V48" fill="none" stroke="#57534e" stroke-width="2.4"/><path d="M211 66 V91 h32 V66 z" fill="#60a5fa"/><path d="M266 48 L278 92 h26 L316 48" fill="none" stroke="#57534e" stroke-width="2.4"/><path d="M272 70 L279 91 h24 L310 70 z" fill="#60a5fa"/><text x="262.0" y="122.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round">سائل</text><text x="262.0" y="140.0" text-anchor="middle" font-size="10" font-weight="700" fill="#64748b" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round">يأخذُ شكلَ الإناء</text><text x="262.0" y="156.0" text-anchor="middle" font-size="9" font-weight="700" fill="#64748b" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round">يجري ولا نمسكُه</text><text x="170.0" y="26.0" text-anchor="middle" font-size="12" font-weight="700" fill="#334155" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round">المادّةُ في حالتين</text></svg>
+:::
+
 نرى المادّة في حالتين بسيطتين:
 
 - **الصلب:** له شكلٌ ثابت، نمسكه بيدنا. *مثل: الحجر، والخشب، والكتاب.*
