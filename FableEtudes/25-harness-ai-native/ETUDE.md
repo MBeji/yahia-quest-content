@@ -786,7 +786,7 @@ Détail des points durs par lot :
 - [x] Lot 4 — Politique d'exécution déclarative + hook externalisé (2026-07-20)
 - [x] Lot 5a — Gardes CI portables (rôles) + contrat + CODEOWNERS (2026-07-20)
 - [x] Lot 5b — Épinglage SHA des actions (46 usages) (2026-07-20)
-- [ ] Lot 5c — Garde « second avis » dormant + run manuel d'un garde (critère d'acceptation L5)
+- [x] Lot 5c — Garde « second avis » dormant + run manuel d'un garde (2026-07-20)
 - [x] Lot 6 — Mémoire & collaboration multi-têtes (2026-07-20)
 - [ ] Lot 7 — Drill de portabilité (avec l'humain)
 
@@ -1092,6 +1092,39 @@ Détail des points durs par lot :
   que d'être silencieusement abandonnés. _Leçon de process_ : cocher un lot à partir du souvenir
   de ce qu'on a fait, plutôt qu'en relisant sa ligne dans la table, laisse passer ce genre de
   reliquat — d'où la révision d'aujourd'hui, déclenchée par une question de Mohamed.
+
+---
+
+- **2026-07-20 — Lot 5c livré : le L5 est clos.** Les deux éléments que la relecture de la table
+  avait révélés manquants sont livrés. **`second-opinion.yml`** : un garde d'une AUTRE famille de
+  modèles — raison d'être, tous nos gardes tournent sur la même famille, donc un angle mort
+  partagé reste invisible quel que soit leur nombre. Dormant derrière **deux** verrous (le secret
+  `OPENAI_API_KEY` doit exister **et** le rôle `second-avis` porter un modèle dans
+  `harness/models.json`) : le secret dit « on paie », `models.json` dit « avec quoi ».
+  Gouvernance inscrite dans le fichier lui-même : son avis est un **commentaire**, jamais une
+  approbation ni un check requis — on ne promeut un check d'agent en « required » qu'après avoir
+  mesuré son taux de faux positifs.
+  ⚠️ **Jamais exécuté, par construction** (aucun secret de fournisseur alternatif sur le dépôt) :
+  le squelette suit le contrat D-6 et les entrées documentées de `openai/codex-action`, mais
+  **les vérifier est le premier geste de qui l'allumera** — c'est écrit dans le workflow plutôt
+  que sous-entendu.
+  **Second critère d'acceptation du L5 honoré factuellement** : `report-triage` déclenché en
+  `workflow_dispatch` sur `main` → run 29752286214 **vert**. Le lot 5 n'est plus « livré de
+  mémoire » mais prouvé.
+
+  _Hors lot, trouvé en traitant une alerte_ : `programme:check` lancé depuis le repo public
+  conseillait « lancer `--corpus` » — conseil devenu **faux et dangereux** depuis la scission
+  (cela recréerait un registre **vide** au mauvais endroit, masquant le vrai ; or ce registre est
+  le garde-fou anti-double-transcription, pour lequel un faux « rien à faire » est le pire
+  résultat). Message corrigé (PR publique #561). Vérifié au passage que l'alerte « gates de
+  transcription orphelins » est **périmée** : la Content CI privée fait bien les deux symlinks
+  (`content/` et `.claude/skills/`) et les logs de son run montrent le registre réellement lu,
+  run vert.
+
+  _Leçon de process consignée_ : cocher un lot d'après le souvenir de ce qu'on a codé, au lieu de
+  relire sa ligne dans la table des lots, laisse passer les items ennuyeux (un workflow dormant,
+  un run manuel à déclencher). Et re-lire le fichier **après** le push : la première version du
+  journal du 5a avait été mangée par un rebase sans que personne ne s'en aperçoive.
 
 ---
 
