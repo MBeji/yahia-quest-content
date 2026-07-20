@@ -37,7 +37,9 @@ jobs:
   apply:
     name: Apply content to TEST
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # 120 et non 30 : constate le 2026-07-20 sur ce workflow meme — 52 sujets sur
+    # 77 appliques puis job `cancelled` par le timeout. Voir apply-content.yml.
+    timeout-minutes: 120
     env:
       TEST_SUPABASE_DB_URL: ${{ secrets.TEST_SUPABASE_DB_URL }}
       DRY_RUN: ${{ github.event.inputs.dry_run }}

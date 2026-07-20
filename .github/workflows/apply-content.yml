@@ -44,7 +44,14 @@ jobs:
   apply:
     name: Apply content to PROD
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # 120 et non 30 (releve le 2026-07-20). Mesure reelle sur le projet TEST :
+    # 52 sujets sur 77 appliques en 30 min, soit ~45 min pour le corpus complet.
+    # A 30 min, une application integrale est COUPEE EN PLEIN MILIEU par GitHub
+    # (statut `cancelled`, pas `failure`) : les sujets deja passes sont appliques,
+    # les suivants non, et l'ecriture dans `content_releases` — qui est en fin de
+    # job — n'a pas lieu. On perd donc la trace de ce qui a ete applique.
+    # Une application incrementale (quelques sujets) reste bien en-deca.
+    timeout-minutes: 120
     env:
       PROD_SUPABASE_DB_URL: ${{ secrets.PROD_SUPABASE_DB_URL }}
       DRY_RUN: ${{ github.event.inputs.dry_run }}
