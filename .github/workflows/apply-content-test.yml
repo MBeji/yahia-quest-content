@@ -119,7 +119,12 @@ jobs:
 
       - name: Dry-run — on s'arrête ici
         if: ${{ env.DRY_RUN == 'true' }}
-        run: echo "### 🧪 Dry-run : rien n'a été appliqué" >> "$GITHUB_STEP_SUMMARY"
+        # Scalaire BLOC obligatoire : en scalaire simple, le « : » de
+        # « Dry-run : rien » se lit comme un mapping imbriqué et le workflow
+        # entier ne parse plus (startup_failure silencieux — il échouait sur
+        # chaque push depuis le lot 3a sans jamais pouvoir tourner).
+        run: |
+          echo "### 🧪 Dry-run : rien n'a été appliqué" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Installer postgresql-client-17
         if: ${{ env.DRY_RUN != 'true' }}
