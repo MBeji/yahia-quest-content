@@ -1,7 +1,10 @@
 # Étude 24 — Protection de la propriété intellectuelle du contenu (licences + scission corpus privé), repo moteur public conservé
 
-> **Statut** : en exécution — Q-1/Q-2/Q-3/Q-5 arbitrées le 2026-07-19, les 4 écarts du lot 3b
-> arbitrés le 2026-07-20 (§9) (Q-4 reste ouverte, démarche humaine)
+> **Statut** : en exécution — lots 1, 2, 3a, 3b (retraits) et 4 livrés. **Restent** :
+> l'opération prod `repair-revert` (bloquée sur É-5 : aucun canal de répétition TEST
+> n'existe), le lot 5 (go/no-go rouvert, É-7) et le lot 6. Q-1/Q-2/Q-3/Q-5 arbitrées le
+> 2026-07-19 ; les 4 écarts du lot 3b arbitrés le 2026-07-20 ; **7 nouveaux écarts (É-1…É-7)
+> à ratifier** (§9). Q-4 reste ouverte (démarche humaine).
 > **Priorité** : 24 · **Valeur** : 🔒 le corpus corrigé (566 chapitres, ~18 700 questions avec
 > clés de réponse) et l'usine de génération (skills prof-\*, taxonomies) cessent d'être clonables
 > en un `git clone` — **sans perdre** les avantages gratuits du repo public (Actions illimitées,
@@ -437,14 +440,17 @@ Cases à cocher :
 
 - [x] Lot 1 — armement juridique (LICENSE + notices) — livré le 2026-07-19
 - [x] Lot 2 — repo privé + CI contenu — livré le 2026-07-19
-- [ ] Lot 3 — découplage SQL contenu + nettoyage historique migrations
+- [x] Lot 3 — découplage SQL contenu + nettoyage historique migrations
       → **3a livré le 2026-07-19** (outillage & canal, zéro prod : émetteur, inventaire,
-      `content_releases`, workflows privés désarmés) · **3b débloqué le 2026-07-20** par
-      l'arbitrage des 4 écarts (§9) — **exécutable** selon le runbook §4.3 corrigé (retrait des
-      fichiers d'abord, `repair-revert` ensuite ; TEST puis prod), périmètre élargi au retrait
-      de `content/` + du job `content` de `ci.yml` et à la migration `exercises_mode_check`
-- [ ] Lot 4 — fin du dégraissage public + gate anti-fuite (avec exclusion des 17, §4.4)
-- [ ] Lot 5 — purge de l'historique public (si Q-2)
+      `content_releases`, workflows privés désarmés) · **3b — retraits livrés le 2026-07-20**
+      (228 migrations générées, `content/`, job `content` de `ci.yml`, migration
+      `exercises_mode_check`) ; **opération prod `repair-revert` en attente** (§9)
+- [x] Lot 4 — fin du dégraissage public + gate anti-fuite — livré le 2026-07-20
+      (41 skills pédago + `FableEtudes/` retirés, `leak:check` posé avec l'exclusion nommée
+      des 17, gates contenu déplacés vers la Content CI privée)
+- [ ] Lot 5 — purge de l'historique public (si Q-2) — **go/no-go rouvert** : le rayon de
+      souffle réel (14 worktrees, 7 avec du travail non commité, sessions concurrentes
+      actives) diffère du cadrage « 0 fork, 1 star » de l'étude (§9)
 - [ ] Lot 6 — e2e TEST + régularisation documentaire
 
 ## 6. Stratégie de test
@@ -621,3 +627,69 @@ Cases à cocher :
      `7 * * * *`) échouera sur « Remote migration versions not found in local migrations
      directory » et ouvrira des issues de suivi — fenêtre courte, surveillée, annoncée, toute
      autre migration de schéma bloquée pendant sa durée.
+
+- **2026-07-20 — lots 3b (retraits) et 4 livrés côté repos ; opération prod NON faite.**
+  Branche `claude/etude-24-finalization-da3164`. Le tip public ne contient plus ni corpus, ni
+  skill pédagogique, ni migration de contenu générée ; `npm run verify` est **vert sans le
+  corpus** (1 561 tests, gate anti-fuite inclus) — la preuve de découplage runtime du §2.3-1.
+
+  **Prérequis traité avant tout retrait** : le miroir privé datait de `ef43487` et avait
+  divergé — manquaient le chapitre `math-bac-math/03-derivabilite`, les études 25/26 +
+  ROADMAP, et le skill `content-videos`. Resynchronisé sur `public@bfa59ff1`, puis **vérifié
+  par comparaison des hachages d'arbre git** (`content/`, `FableEtudes/`, les 41 skills :
+  identiques au bit près). Sans cette étape, le lot 3b détruisait du contenu unique.
+
+  **Inventaire** : 228 révocables — 227 `_generated_*_content` **plus** 1
+  `_generated_competences_registry`. L'étude ne cite que le premier motif ; le script en porte
+  **deux** (`GENERATED_CONTENT_RE`, `GENERATED_REGISTRY_RE`). Confirmation pratique de la règle
+  « la liste se régénère par le script, jamais recopiée » : un glob écrit à la main en oubliait
+  une. Le gate anti-fuite importe ces deux regex plutôt que de les redupliquer.
+
+  **Sept écarts étude ↔ réel, à ratifier** (l'exécuteur ne re-designe pas — décisions prises
+  pour ne pas bloquer, toutes réversibles et documentées) :
+  1. **É-1 — deux gates de `ci:verify` cassent sur le SKILL, pas sur `content/`.**
+     `content:audit:strict` (`audit-program.ts` → `content-ecole-tn/references/
+     programmes-officiels/manifest`) et `programme:check` (`suivi.ts` → `…/suivi`,
+     `…/programme`) étaient dans `ci:verify`, ce que le §4.4 ne prévoit pas. **Décision : les
+     gates suivent leurs données** — déplacés vers la Content CI privée, qui symlinke
+     désormais `.claude/skills/` en plus de `content/`. Sans cela ils étaient silencieusement
+     perdus.
+  2. **É-2 — `video-health.yml` n'est mentionné nulle part dans l'étude.** Ce cron hebdomadaire
+     lit `content/videos.json` (étude 23) : il serait passé au rouge chaque dimanche. Retiré
+     du public avec `content-audit.yml`.
+  3. **É-3 — pas de pointeur `content/README.md`.** Le §4.4 le demande, mais le gate anti-fuite
+     fait échouer **tout** chemin sous `content/` — le pointeur ferait échouer le tip qu'il
+     documente. L'explication vit dans AGENTS.md (§ Content pipeline, canonique) et
+     `docs/content-generation-pipeline.md`. Gate sans exception plutôt que carve-out qui s'érode.
+  4. **É-4 — les 2 tests registres sont supprimés, pas « fixturisés » (D-6).** Ils assertaient
+     le **corpus** (55-70 compétences math, arête Thalès→proportionnalité, labels fr/en/ar non
+     vides), pas le loader : une fixture qui les restate n'assert plus rien. Le loader reste
+     couvert par les fixtures `mkdtemp` du même fichier, et `content:check` rejoue ces mêmes
+     loaders sur le corpus réel à chaque PR privée.
+  5. **É-5 — le §4.3-5 est inapplicable en l'état : il n'existe aucun canal de répétition
+     TEST pour le `repair-revert`.** `db-migrate-prod.yml` est le seul canal sanctionné et sa
+     garde **refuse toute URL non-prod** (`assertProdDbUrl`). Répéter sur TEST exigerait soit
+     d'ajouter un mode TEST au workflow (livrable public non prévu), soit un `supabase` à la
+     main — interdit par la politique d'exécution. **L'opération prod n'a donc pas été faite** :
+     elle demande soit l'arbitrage « on saute la répétition » (le `repair-revert` ne touche que
+     `supabase_migrations.schema_migrations`, aucune donnée, réversible par
+     `repair --status applied`), soit un lot supplémentaire qui crée le canal TEST.
+  6. **É-6 — `apply-content-test.yml` ne parsait pas depuis sa livraison (lot 3a).**
+     `run: echo "… Dry-run : rien …"` en scalaire simple : le « : » entouré d'espaces se lit
+     comme un mapping imbriqué → fichier invalide → `startup_failure` à chaque push, sans nom
+     ni log. Le canal TEST du contenu — la « répétition générale » de D-3 et ce qui redonne un
+     catalogue au projet TEST pour la tier e2e du lot 6 — n'avait **jamais** pu tourner.
+     Corrigé (scalaire bloc) ; les 4 workflows privés parsent et la Content CI est verte.
+  7. **É-7 — le rayon de souffle du lot 5 est plus large que le cadrage de l'étude.** Le §2.3-5
+     conclut « 0 fork, 1 star → réécriture réaliste et à faible casse » : c'est vrai des forks
+     **externes**, et muet sur la flotte **interne**. Constat du jour : **14 worktrees**, dont
+     **7 portent du travail non commité**, et `main` a avancé **pendant cette session**
+     (`3589a962` → `bfa59ff1`, PR #538 d'une autre session) — le repo a des sessions
+     concurrentes actives. Un force-push réécrivant tout l'historique orpheline chaque
+     worktree (tous les SHA changent) et casse toute PR en vol. **Le go/no-go du lot 5 est
+     rouvert** : il demande une fenêtre calme constatée, pas seulement une autorisation.
+
+  Livré côté **privé** : miroir resynchronisé ; Content CI qui symlinke corpus **et** skills et
+  reprend `programme:check` (verte) ; correctif de parse de `apply-content-test.yml`.
+  Livré côté **public** (non mergé) : les retraits, `20260720140000_exercises_mode_check.sql`,
+  `scripts/ci/check-content-leak.mjs` + ses tests, `ci:verify` recomposé, docs.
