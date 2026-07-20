@@ -728,3 +728,49 @@ Cases à cocher :
   **Règle nouvelle, active dès maintenant** : `FableEtudes/` n'existe plus au public — **ce
   dépôt-ci en est la SOURCE**. Ne jamais re-copier ces fichiers depuis le public (une copie en
   bloc a effacé ce journal en cours de session ; restauré depuis HEAD, rien perdu).
+
+- **2026-07-20 — É-8 : la scission a cassé la reconstruction d'une base VIERGE (3 régressions).**
+  L'écart le plus coûteux de l'étude, et il n'était anticipé nulle part — ni au §4.3, ni au §4.4,
+  ni au §6, qui affirmait au contraire « pgTAP nightly public **inchangé** (schéma) ».
+
+  **La cause commune** : les migrations **conservées** au public dépendaient silencieusement de
+  celles qui sont **parties**. Trois manifestations, toutes invisibles en prod (qui les a
+  appliquées de longue date) et fatales sur une base reconstruite depuis le seul repo public :
+  1. `20260604140000_content_quality_pass_delta` — 41 questions dont les **exercices** parents
+     étaient créés par des migrations générées → `questions_exercise_id_fkey`. Corrigé par #548.
+  2. `exercises_mode_check` ne connaissait pas le mode `challenge` : ce sont les gardes
+     idempotents des migrations générées qui l'élargissaient, et trois migrations manuelles du
+     04/06 insèrent des exercices `challenge`. La migration `20260720190000` livrée au lot 3b
+     repose bien la contrainte **mais s'applique après elles** — sur une base vierge, seul
+     l'ordre chronologique compte. Corrigé par #549 (élargissement à la pose, `20260602140500`).
+  3. `20260604190000_vague6_densification` — 56 exercices dont les **chapitres** parents
+     étaient créés par des migrations générées → `exercises_chapter_id_fkey`. Passée au travers
+     du diagnostic de #548, qui n'avait vérifié que la chaîne question→exercice. Corrigée par la
+     PR `claude/fix-fresh-db-rebuild-e24`, après **analyse statique des deux chaînes de
+     références** (question→exercice ET exercice→chapitre) sur les 123 migrations restantes.
+
+  **Pourquoi rien ne l'a arrêté avant le merge.** `ci:verify` prouve le découplage **runtime**
+  (§2.3-1) — pas la reconstructibilité du schéma. `db-tests.yml` (pgTAP, seul à rejouer la chaîne
+  sur une base vierge) n'était déclenché **qu'en nightly et à la demande** : les trois régressions
+  n'ont été vues qu'**après** le merge, en le dispatchant à la main.
+
+  **Corrections systémiques** : `db-tests.yml` gagne un déclencheur `pull_request` ciblé sur
+  `supabase/migrations/**` — check qui **rapporte**, non requis (le promouvoir rallonge chaque PR
+  de migration de 5-8 min : arbitrage à part).
+
+  **Règle normative pour tout futur retrait de migrations** : dispatcher `db-tests.yml`
+  **AVANT** le merge, et ne pas se fier au seul `ci:verify`. Corollaire pour le lot 5 : une purge
+  d'historique ne change pas le contenu des fichiers, mais toute opération qui **retire** des
+  migrations doit passer ce contrôle.
+
+  **Leçon de méthode** : le critère « ces 17 migrations ne sont pas reproductibles par
+  l'émetteur » a été appliqué sans poser la question inverse — **lesquelles dépendent de ce que
+  je supprime ?** Un inventaire de ce qui part ne remplace pas une analyse des dépendances de ce
+  qui reste.
+
+- **2026-07-20 — deux défauts du canal d'application corrigés** (hors périmètre initial) :
+  `timeout-minutes: 30` sur `apply-content.yml` **et** `apply-content-test.yml`. Mesure réelle :
+  52 sujets sur 77 appliqués en 30 min, puis job `cancelled` (pas `failure`) — les sujets passés
+  sont appliqués, les suivants non, et l'écriture dans `content_releases`, en fin de job, n'a pas
+  lieu : **on perd la trace de ce qui a été appliqué**. Le canal PROD portait le même défaut
+  latent. Relevé à 120 min des deux côtés.
