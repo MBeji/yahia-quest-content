@@ -1,10 +1,12 @@
 # Étude 24 — Protection de la propriété intellectuelle du contenu (licences + scission corpus privé), repo moteur public conservé
 
-> **Statut** : en exécution — lots 1, 2, 3a, 3b (retraits) et 4 livrés. **Restent** :
-> l'opération prod `repair-revert` (bloquée sur É-5 : aucun canal de répétition TEST
-> n'existe), le lot 5 (go/no-go rouvert, É-7) et le lot 6. Q-1/Q-2/Q-3/Q-5 arbitrées le
-> 2026-07-19 ; les 4 écarts du lot 3b arbitrés le 2026-07-20 ; **7 nouveaux écarts (É-1…É-7)
-> à ratifier** (§9). Q-4 reste ouverte (démarche humaine).
+> **Statut** : **scission faite** — lots 1, 2, 3a, 3b et 4 livrés et clos, opération prod
+> `repair-revert` exécutée avec succès le 2026-07-20 (PR #544). Le KPI §1 est atteint sur le
+> tip public. **Restent** : le **lot 5** (purge d'historique — **reporté**, go/no-go rouvert
+> par É-7 : pas de fenêtre calme spontanée sur ce repo) et la **fin du lot 6** (apply TEST réel
+> + tier e2e authentifiée). Q-1/Q-2/Q-3/Q-5 arbitrées le 2026-07-19 ; les 4 écarts du lot 3b
+> arbitrés le 2026-07-20 ; **7 nouveaux écarts (É-1…É-7) consignés au §9, à ratifier**.
+> Q-4 reste ouverte (démarche humaine).
 > **Priorité** : 24 · **Valeur** : 🔒 le corpus corrigé (566 chapitres, ~18 700 questions avec
 > clés de réponse) et l'usine de génération (skills prof-\*, taxonomies) cessent d'être clonables
 > en un `git clone` — **sans perdre** les avantages gratuits du repo public (Actions illimitées,
@@ -690,6 +692,39 @@ Cases à cocher :
      rouvert** : il demande une fenêtre calme constatée, pas seulement une autorisation.
 
   Livré côté **privé** : miroir resynchronisé ; Content CI qui symlinke corpus **et** skills et
-  reprend `programme:check` (verte) ; correctif de parse de `apply-content-test.yml`.
-  Livré côté **public** (non mergé) : les retraits, `20260720140000_exercises_mode_check.sql`,
+  reprend `programme:check` (verte) ; correctif de parse de `apply-content-test.yml` ;
+  rapatriement de `video-health.yml` (É-2).
+  Livré côté **public** : les retraits, `20260720190000_exercises_mode_check.sql`,
   `scripts/ci/check-content-leak.mjs` + ses tests, `ci:verify` recomposé, docs.
+
+- **2026-07-20 — opération prod exécutée, lots 3b et 4 CLOS.** PR **#544** mergée, puis
+  `db-migrate-prod.yml` dispatché en `repair-revert` avec les 228 versions du jour
+  ([run 29742370004](https://github.com/MBeji/yahia-quest-arena/actions/runs/29742370004),
+  succès).
+
+  **Vérifié sur le tip public — le KPI §1 est atteint** : `content/` 0 fichier, `FableEtudes/`
+  0 fichier, 5 skills restants (exactement les techniques), **0 migration de contenu générée**,
+  `exercises_mode_check` présente, 123 migrations conservées (17 de contenu manuelles +
+  106 schéma/ops — l'exclusion nommée du §4.4 tient).
+  **Côté prod** : 123 versions locales = 123 côté distant, **aucun phantom restant** ; la
+  migration `exercises_mode_check` a été appliquée par le `db push` qui suit le `repair`.
+
+  **La fenêtre de bruit annoncée n'a pas eu lieu** — à retenir pour les runbooks futurs : le
+  merge par **auto-merge squash utilise `GITHUB_TOKEN`, qui ne déclenche aucun événement
+  `push`** (c'est la raison d'être de la réconciliation horaire, documentée en tête de
+  `db-migrate-prod.yml`). Aucun auto-apply n'a donc échoué entre le merge et le dispatch, et
+  **aucune issue de suivi n'a été ouverte**. Le §4.3 sur-estimait ce risque dans ce sens.
+
+  **Canal TEST validé** : `apply-content-test.yml` dispatché en `dry_run` — **succès**, première
+  exécution possible depuis sa livraison (cf. É-6). La « répétition générale » de D-3 existe
+  désormais réellement.
+
+  **Course-poursuite constatée (renforce É-7)** : `main` a avancé **cinq fois** pendant la
+  session (PR #538, #540, #541, #542, #543), chaque merge touchant `FableEtudes/` ou `AGENTS.md`
+  rouvrant un conflit modify/delete que git ne résout pas seul — trois cycles
+  capture-au-privé → merge → résolution ont été nécessaires. Ce repo **n'a pas de fenêtre calme
+  spontanée** : argument de fond pour ne pas y tenter un force-push sans accalmie constatée.
+
+  **Règle nouvelle, active dès maintenant** : `FableEtudes/` n'existe plus au public — **ce
+  dépôt-ci en est la SOURCE**. Ne jamais re-copier ces fichiers depuis le public (une copie en
+  bloc a effacé ce journal en cours de session ; restauré depuis HEAD, rien perdu).
