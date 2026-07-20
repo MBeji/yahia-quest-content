@@ -135,7 +135,7 @@ v1 (joli mais sans valeur pédagogique directe).
 | 5   | Branchement étude 04 : `get_daily_plan` compétence-aware (US-3)                                                                                                                                     | pgTAP non-régression du plan                              | 4              |
 
 - [x] Lot 1 — pipeline + registre math (merge seul)
-- [ ] Lot 2 — DB + maîtrise
+- [x] Lot 2 — DB + maîtrise
 - [ ] Lot 3 — tagging vague 1 (chantier contenu, PR séparée du code)
 - [ ] Lot 4 — RPCs + UI
 - [ ] Lot 5 — intégration plan quotidien
@@ -220,3 +220,46 @@ carte.
   - **Gate** : `verify` vert (1223 tests dont 22 nouveaux), `content:check` (73 sujets +
     57 compétences), `content:qa:strict` 0 erreur, ordre des migrations conforme
     (13xxxx > 12xxxx de main).
+  - **Correctif de traçabilité (a posteriori)** : au merge (#366, rebase sur un `main` avancé de
+    15 commits), les 2 migrations ont été **re-timestampées** pour rester après la plus récente de
+    `main` (piège « migration antidatée ») → noms réels **`20260712130000_competency_graph_schema.sql`**
+    et `20260712131000_generated_competences_registry.sql`. Depuis la **scission du corpus** (étude 24),
+    `content/` + les registres `content/competences/*.json` vivent dans **ce** repo
+    (`yahia-quest-content`) : la migration compilée du registre a donc quitté `yahia-quest-arena`
+    (le graphe se recompile ici), mais les **3 tables catalogue** restent dans `arena`
+    (`20260712130000`). Le pgTAP `26_competency_graph_schema` a été réduit au **schéma seul**
+    (16 assertions, #574) une fois le corpus parti — les assertions « registre seedé » n'avaient
+    plus de données à asseoir.
+- **2026-07-20 — Lot 2 livré** (yahia-quest-arena PR #579, mergée). Maîtrise par compétence.
+  - **DB** `20260721100000_competency_mastery.sql` : table `user_competency_mastery`
+    (RLS `SELECT` owner + admin + **parent lié actif** — patron `parcours_entitlements`,
+    `auth.uid()` enveloppé pour le planner ; GRANTs explicites ; **aucune écriture cliente** —
+    trigger only ; index `(user_id, mastery ASC)` pour « mes compétences les plus faibles »).
+  - **EWMA explicable (R-4)** : `m ← m + α·(résultat − m)`, `résultat ∈ {0,100}`, initialisée
+    à 50 au premier contact ; **α par palier** `competency_mastery_alpha(difficulty)`
+    (d1 .15 · d2 .20 · d3 .25 · d4 .30), lu depuis `exercises.difficulty` (la table `questions`
+    ne porte pas la difficulté). **Oubli à la lecture** `competency_mastery_with_decay()` :
+    −1 pt/semaine d'inactivité, **plancher 30 qui ne REMONTE jamais** une maîtrise déjà sous le
+    plancher (`GREATEST(m − semaines, LEAST(m, 30))`). Constantes centralisées dans ces 2
+    fonctions (R-4) ; les 3 fonctions ne sont pas exécutables côté client (les RPC du lot 4 seront
+    `SECURITY DEFINER`).
+  - **Trigger** `record_competency_mastery` `AFTER INSERT` sur `question_attempts` (D-3) :
+    upsert par compétence évaluée (1–3 — R-2, principale ou non) ; **question non taggée =
+    strictement neutre** (zéro ligne créée) ; `last_attempt_at` monotone (un replay antidaté ne
+    rembobine pas l'horloge d'oubli).
+  - **Écart accepté n°4** : trigger **séparé** et non extension de celui de l'étude 04 — ce dernier
+    est filtré `WHEN misconception_tag IS NOT NULL`, or une réponse **correcte** (tag nul) est
+    justement l'évidence qui fait **monter** la maîtrise ; il ne fallait pas la filtrer.
+  - **pgTAP** `34_competency_mastery.test.sql` (24 assertions) : matrice difficulté×résultat,
+    compoundage, bornes/CHECK, oubli (frais / 4 semaines / plancher / jamais remonté), RLS owner +
+    parent lié **actif vs inactif** vs autrui, grants. **Fixtures créées DANS la transaction**
+    (compétences + questions de test), zéro dépendance au corpus (leçon #574).
+  - **Validation** : `verify` vert ; `db:check-chain` (rejoue 127 migrations + 37 pgTAP sur base
+    vierge → OK, aucune collision d'id fixture) ; ordre des migrations conforme
+    (`20260721100000` > `20260721090000`). Docker absent en local → la suite pgTAP (non-gate de PR
+    depuis qu'elle est « no longer per-commit ») exécutée par **dispatch `db-tests.yml` sur main**
+    (pratique documentée du repo) ; arithmétique EWMA/oubli re-vérifiée à la main.
+  - **Reste** : lot 3 (tagging vague 1 — chantier CONTENU dans ce repo, `content/competences`
+    déjà seedé), lot 4 (RPCs `get_my_competency_map`/`get_competency_blockers`/
+    `get_exercises_for_competency` + panneau UI, consommant `competency_mastery_with_decay`),
+    lot 5 (plan quotidien compétence-aware).
