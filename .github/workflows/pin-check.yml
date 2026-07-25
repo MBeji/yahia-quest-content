@@ -27,7 +27,10 @@ jobs:
           set -euo pipefail
           # Lignes `uses:` qui ne sont NI une action locale (`./…`) NI épinglées à
           # un SHA de 40 hex. `docker://…@sha256:` serait à exclure ici s'il apparaissait.
-          bad="$(grep -rnE 'uses:[[:space:]]' .github/workflows/ \
+          # Ancré en début de ligne : ne matche que les VRAIES clés YAML `uses:`
+          # (`  uses:` / `  - uses:`), jamais une mention de « uses: » dans un
+          # commentaire ou une string (sinon ce fichier se ferait échouer lui-même).
+          bad="$(grep -rnE '^[[:space:]]*-?[[:space:]]*uses:[[:space:]]' .github/workflows/ \
                  | grep -vE 'uses:[[:space:]]*\./' \
                  | grep -vE '@[0-9a-f]{40}([[:space:]]|$)' || true)"
           if [ -n "$bad" ]; then
