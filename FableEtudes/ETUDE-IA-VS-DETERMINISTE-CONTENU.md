@@ -1,10 +1,10 @@
 # Étude — IA → déterministe, volet contenu
 
-> **Statut : ouverte le 2026-07-25.** Pendant privé de
-> `docs/agents/etude-ia-vs-deterministe.md` du moteur public (close le 2026-07-25, 6 lots sur
-> 6), dont le §4.6 renvoyait explicitement cet arbitrage ici. **Périmètre** : ce dépôt (corpus,
-> skills, workflows) et les checks du moteur que le corpus consomme. Le moteur lui-même est
-> traité chez lui.
+> **Statut : ouverte le 2026-07-25, et les 5 lots sont livrés le jour même** — état par lot au
+> §6. Pendant privé de `docs/agents/etude-ia-vs-deterministe.md` du moteur public (close le
+> 2026-07-25, 6 lots sur 6), dont le §4.6 renvoyait explicitement cet arbitrage ici.
+> **Périmètre** : ce dépôt (corpus, skills, workflows) et les checks du moteur que le corpus
+> consomme. Le moteur lui-même est traité chez lui.
 
 ## 0. TL;DR
 
@@ -204,14 +204,14 @@ principe ici — elle finit de l'appliquer, comme dans le moteur.
 
 ## 6. Plan par lots
 
-| Lot      | Dépôt        | Contenu                                                                                                       | Effort | Gain                                                       |
-| -------- | ------------ | ------------------------------------------------------------------------------------------------------------- | ------ | ---------------------------------------------------------- |
-| **LC0**  | privé        | Corriger les 7 `cours.md` de `math-8eme` : LaTeX → Unicode brut (`R = BC/2`, `⟹`, prose arabe hors `\text{}`) | S      | défaut visible par l'élève ; **préalable strict à LC1**     |
-| **LC1**  | moteur       | `qa-checks.ts` : flag LaTeX (`\command`, `$…$` non-Unicode) + chiffres arabo-indiens, avec tests               | S      | couverture 100 % du corpus à chaque PR, 0 token             |
-| **LC2**  | privé        | Pré-gate déterministe de `content-audit` : sujets modifiés + locators déjà signalés → agent skippé si vide     | M      | la majorité des crons deviennent des no-ops sans agent      |
-| **LC3**  | privé        | Alléger le prompt de tout ce que `content:qa:strict` garantit ; l'audit ne garde que le jugement (§4.6)        | S      | moins de tours, moins de variance                           |
-| **LC4**  | privé        | Harness : modèle via `harness/models.json`, actions épinglées par SHA, **issue de suivi sur échec du garde**   | S      | rend le §1 impossible à répéter en silence                  |
-| _(LC5)_  | privé        | _Candidat, pas un lot_ : mécaniser T-9/T-10 de la charte tokens (coût déclaré, push par tranche)               | M      | à instruire avec l'étude 12                                 |
+| Lot     | Dépôt  | Contenu                                                                                                       | État                                                                                                            |
+| ------- | ------ | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **LC0** | privé  | Corriger les 7 `cours.md` de `math-8eme` : LaTeX → Unicode brut (`R = BC/2`, `⟹`, prose arabe hors `\text{}`) | ✅ livré 2026-07-25 (#13) — 43 lignes, conventions de la maison respectées                                          |
+| **LC1** | moteur | `qa-checks.ts` : flag LaTeX (`\command`, `$…$`) + chiffres arabo-indiens, avec tests                           | ✅ livré 2026-07-25 (arena#628) — `auditMathNotation`, +10 tests ; validé en 2 passes sur le corpus réel (voir §7) |
+| **LC2** | privé  | Pré-gate déterministe de `content-audit` : sujets modifiés + locators déjà signalés → agent skippé si vide     | ✅ livré 2026-07-25 (arena#629 pour le script + #16 pour le câblage) — 11 tests                                    |
+| **LC3** | privé  | Alléger le prompt de tout ce que `content:qa:strict` garantit ; l'audit ne garde que le jugement (§4.6)        | ✅ livré 2026-07-25 (#16) — en échange, le contrat `Locator:` devient obligatoire                                  |
+| **LC4** | privé  | Harness : modèle via `harness/models.json`, actions épinglées par SHA, **issue de suivi sur échec du garde**   | ✅ livré 2026-07-25 — SHA par #14 (session sœur), modèle + label `garde-en-panne` par #16                          |
+| _(LC5)_ | privé  | _Candidat, pas un lot_ : mécaniser T-9/T-10 de la charte tokens (coût déclaré, push par tranche)               | ⏸️ non instruit — à traiter avec l'étude 12                                                                        |
 
 **Ordre imposé.** `LC0` avant `LC1` (sinon la Content CI passe au rouge sur les fiches
 existantes ; aucune PR ne touche les deux dépôts, donc les deux merges sont séquentiels et
@@ -234,3 +234,13 @@ sans implémentation dans le gate.
 - **Ne pas généraliser au corpus la doctrine du code.** Le contenu n'a pas de « faux positif
   gratuit » : une règle mécanique mal calibrée fait échouer une campagne entière. Chaque lot
   s'accompagne d'une sonde sur le corpus **avant** d'armer le gate, comme celle du §4.1.
+
+  **Ce garde-fou a servi au premier lot, et il a fallu le renforcer.** La première version du
+  flag `$…$` de LC1 utilisait `\S` pour exiger du non-espace contre les délimiteurs — or `\S`
+  matche aussi `$` : le regex avalait le premier dollar d'une fermeture `$$` et flaguait une
+  quarantaine de cours de primaire parfaitement corrects (`$$24 + 13 = 37$$`). La sonde de
+  calibration, elle, avait annoncé « 0 inline » — parce qu'elle retirait les blocs `$$` avant de
+  chercher, ce que le gate ne faisait pas. D'où la règle, désormais explicite : **une sonde ne
+  vaut que si elle exécute le MÊME regex que le gate**, et un lot de gate se passe sur le corpus
+  entier, en deux temps — sur l'état fautif (le détecteur trouve-t-il ce qu'il doit ?) puis sur
+  l'état corrigé (ne trouve-t-il rien d'autre ?). Les deux passes sont dans arena#628.
