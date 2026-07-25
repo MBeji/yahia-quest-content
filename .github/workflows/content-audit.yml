@@ -42,20 +42,20 @@ jobs:
 
       - name: Checkout corpus (full history for diff context)
         if: steps.guard.outputs.configured == 'true'
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           fetch-depth: 0
 
       - name: Checkout moteur (repo public)
         if: steps.guard.outputs.configured == 'true'
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           repository: MBeji/yahia-quest-arena
           path: engine
 
       - name: Setup Node
         if: steps.guard.outputs.configured == 'true'
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
         with:
           node-version: 22
           cache: npm
@@ -74,7 +74,7 @@ jobs:
 
       - name: Run the content-audit sweep
         if: steps.guard.outputs.configured == 'true'
-        uses: anthropics/claude-code-action@v1
+        uses: anthropics/claude-code-action@be7b93b1907a4abad570368f3c74b6fe3807510b # v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
