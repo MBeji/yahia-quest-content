@@ -53,7 +53,7 @@ L'article s'accorde en genre et en nombre avec le nom : _le plus grand danseur �
 
 Le groupe de référence est souvent introduit par **de** (« de la troupe », « du festival », « de tous ») :
 
-$$ \text{le plus talentueux } \underline{\text{de}} \text{ la troupe} $$
+$$ le plus talentueux de la troupe $$
 
 > ⚠️ **Deux pièges à ne jamais confondre** :
 >
