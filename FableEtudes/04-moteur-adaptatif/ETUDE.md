@@ -1,6 +1,7 @@
 # Étude 04 — Moteur adaptatif & diagnostic de misconceptions
 
-> **Statut** : en exécution (GO humain 2026-07-06 — phase A0 lancée)
+> **Statut** : en exécution — phase A0 **livrée** (2026-07-06), **A1.1 livrée** (2026-07-20, #581),
+> **A1.2 spécifiée** (§9, 2026-07-25) et exécutable ; A2 derrière le seuil de données de Q-1
 > **Priorité** : 04 · **Valeur** : le différenciateur défendable — chaque distracteur du contenu encode déjà une erreur nommée (protocole « erreur exécutée ») ; personne n'exploite ce signal. Diagnostic par élève → révision/remédiation personnalisées → progression mesurable (l'argument de vente parents) · **Complexité** : haute
 > **Architecte** : Fable (claude-fable-5), 2026-07-04 · **Exécuteur cible** : Sonnet
 > **Dépend de** : volume d'usage (la télémétrie A0 doit tourner quelques semaines avant A2) ; le tagging de contenu (pipeline) monte en charge progressivement
@@ -105,25 +106,30 @@ progression, extension du rapport parent. États vides soignés (« Rien à rév
 
 ## 4. Plan d'exécution en lots
 
-| lot  | contenu                                                                                               | tests exigés                                     | dépend de            |
-| ---- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------ | -------------------- |
-| A0.1 | Migration : `distractor_tags`, `question_attempts`, `user_misconceptions` (+RLS/grants/index/trigger) | pgTAP (RLS, trigger d'agrégat, R-1)              | —                    |
-| A0.2 | Extension des 2 RPCs de soumission (D-2) + purge cron                                                 | pgTAP régression récompenses + insert télémétrie | A0.1                 |
-| A0.3 | Pipeline : `misconceptionTag` (zod) + registre + routage sql-builder (D-4) + lint QA                  | Vitest schema/sql-builder ; content:check/qa     | A0.1                 |
-| A1.1 | RPC `get_daily_plan` + fn + panneau « Révision du jour » (US-1, R-3/R-4)                              | pgTAP (sélection, gate premium) ; Vitest UI      | A0.2                 |
-| A2.1 | RPC `get_my_weaknesses` (R-2) + panneau « Points faibles » (US-2)                                     | pgTAP (seuils R-2) ; Vitest UI + i18n libellés   | A0.2, A0.3 + données |
-| A2.2 | Rapport parent enrichi (US-3)                                                                         | Vitest                                           | A2.1                 |
+| lot   | contenu                                                                                               | tests exigés                                     | dépend de            |
+| ----- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------ | -------------------- |
+| A0.1  | Migration : `distractor_tags`, `question_attempts`, `user_misconceptions` (+RLS/grants/index/trigger) | pgTAP (RLS, trigger d'agrégat, R-1)              | —                    |
+| A0.2  | Extension des 2 RPCs de soumission (D-2) + purge cron                                                 | pgTAP régression récompenses + insert télémétrie | A0.1                 |
+| A0.3  | Pipeline : `misconceptionTag` (zod) + registre + routage sql-builder (D-4) + lint QA                  | Vitest schema/sql-builder ; content:check/qa     | A0.1                 |
+| A1.1  | RPC `get_daily_plan` + fn + panneau « Révision du jour » (US-1, R-3/R-4)                              | pgTAP (sélection, gate premium) ; Vitest UI      | A0.2                 |
+| A1.2a | Serveur : `get_attempt_review` rend l'erreur nommée + le chapitre (§9, D-A1.2-2)                      | pgTAP (non-fuite de la clé, dégradation à vide)  | A0.3                 |
+| A1.2b | Client : bloc de correction riche dans la revue de fin de quête (§9, US-4)                            | Vitest UI + i18n FR/EN/AR ; e2e authed           | A1.2a                |
+| A2.1  | RPC `get_my_weaknesses` (R-2) + panneau « Points faibles » (US-2)                                     | pgTAP (seuils R-2) ; Vitest UI + i18n libellés   | A0.2, A0.3 + données |
+| A2.2  | Rapport parent enrichi (US-3)                                                                         | Vitest                                           | A2.1                 |
 
 - [x] A0.1 — schéma télémétrie (merge seul — DoD §7)
 - [x] A0.2 — capture (RPCs) + purge
 - [x] A0.3 — pipeline tags + registre
-- [ ] A1.1 — révision du jour
+- [x] A1.1 — révision du jour (PR #581 ; rendue compétence-aware par é07 lot 5, PR #616/#617)
+- [ ] A1.2a — serveur : l'erreur nommée dans la correction (§9)
+- [ ] A1.2b — client : le bloc de correction riche (§9)
 - [ ] A2.1 — points faibles (GO humain : ≥4 semaines de télémétrie ou seuil de volume)
 - [ ] A2.2 — rapport parent
 
 **Stop-points** : A0.2 ne change AUCUN barème/gate de récompense (pgTAP de régression obligatoire
-avant merge) ; les tags ne transitent jamais dans `options` (D-1) ; A2.1 attend le GO humain ;
-le tagging de masse du stock existant est un chantier CONTENU (content-audit), pas un lot code.
+avant merge) ; les tags ne transitent jamais dans `options` (D-1) ; **A1.2a ne rend jamais que le
+tag de l'option CHOISIE** (§9, RISK-A1.2-A) ; A2.1 attend le GO humain ; le tagging de masse du
+stock existant est un chantier CONTENU (content-audit), pas un lot code.
 
 ## 5. Stratégie de test
 
@@ -196,10 +202,161 @@ R-3. Vitest : fns zod, panneaux (états vides/pleins, RTL). E2E authed : un cycl
   du protocole « erreur exécutée ». Registre seedé avec 5 misconceptions math canoniques ; le
   tagging de masse du stock reste un chantier CONTENU (`content-audit`), pas un lot code.
 
+## 9. Amendement A1.2 — « la correction riche à l'échec » (architecte, 2026-07-25)
+
+> **Origine** : arbitrage A1-Q4 de l'étude 26 (2026-07-20) — la « correction riche à l'échec »
+> est **rattachée à cette étude** en nouvelle phase A1.2, entre A1.1 (livrée) et A2.
+> **Mandat reçu** (ROADMAP §3 ligne 8) : feedback in-session · lien « revoir le cours » par
+> erreur · misconception affichée · explication post-erreur **non monnayée**.
+> **Statut** : contrat fermé, exécutable. Deux lots (A1.2a serveur, A1.2b client).
+
+### 9.1 L'état réel, vérifié dans le code (pas ce que le mandat suppose)
+
+Le mandat est écrit comme s'il fallait tout construire. Vérification faite le 2026-07-25, deux
+de ses quatre points **sont déjà vrais**, et le dire évite de re-livrer de l'existant :
+
+| Point du mandat                      | État réel                                                                                                                                                                                                                                                                                                          |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Explication post-erreur non monnayée | **Déjà vrai.** La correction de fin de quête vient de `get_attempt_review` (SECURITY DEFINER, owner-only, session complétée), qui rend `explanation` **sans aucune contrepartie**. Ce qui est monnayé, c'est l'indice **avant** de répondre (`consume_hint`, consommable) — un objet différent, qui reste tel quel |
+| Misconception affichée               | **Absente.** `get_attempt_review` rend `(question_id, prompt, correct_option, explanation, is_correct)` — pas le tag. Le signal que toute la phase A0 collecte depuis le 2026-07-06 n'est affiché **nulle part** dans la correction                                                                                |
+| Lien « revoir le cours » par erreur  | **Absent.** `quest-review-list` n'a aucun lien vers le cours du chapitre                                                                                                                                                                                                                                           |
+| Feedback in-session                  | **Impossible sans casser une couture critique** — voir D-A1.2-1 et Q-4                                                                                                                                                                                                                                             |
+
+**Conséquence de cadrage** : A1.2 n'invente pas une économie ni un écran. Il **branche le
+diagnostic déjà capté** sur la surface de correction qui existe déjà. C'est la troisième des
+« boucles collectées-jamais-surfacées » de l'étude 26 qui se referme.
+
+### 9.2 Spécification fonctionnelle
+
+- **US-4** : quand je me trompe, la correction de fin de quête ne me dit plus seulement « la bonne
+  réponse était B ». Pour **chaque erreur**, elle nomme ce que j'ai fait (« Tu as additionné les
+  dénominateurs »), me donne l'explication, et m'offre deux gestes : **revoir le cours** à
+  l'endroit concerné, **m'entraîner** sur ce point.
+- **R-A1.2-1** : le libellé de l'erreur vient du registre `content/misconceptions.json`, dans la
+  langue de l'interface (FR/EN/AR). Le **tag n'est jamais affiché** — c'est un id.
+- **R-A1.2-2** : le bloc riche n'apparaît que sur les réponses **fausses**. Une bonne réponse
+  garde la correction sobre d'aujourd'hui : ne pas transformer une réussite en leçon.
+- **R-A1.2-3** : **dégradation silencieuse et totale.** Question non taguée (l'immense majorité
+  du corpus tant que le lot é07-3 / C4 n'a pas tourné), tag absent du registre, chapitre sans
+  cours : le bloc se réduit à ce qu'il sait dire, sans trou visuel ni message d'erreur. Le
+  comportement d'aujourd'hui est le **plancher** — jamais une régression.
+- **R-A1.2-4** : aucune récompense, aucun compteur, aucun anti-farm touché. A1.2 est un
+  **affichage**, comme A1.1 était un sélecteur.
+- **R-A1.2-5** : les **quiz de compréhension gardent zéro correction** (garde anti-mémorisation
+  de `get_attempt_review`, inchangée). L'enrichissement ne s'applique qu'aux modes
+  pratique/boss/rappel.
+- **R-A1.2-6** : le geste « m'entraîner » **réutilise** l'action livrée par é07 lot 4 (#588) — on
+  ne crée pas un second chemin de remédiation.
+
+### 9.3 Décisions d'architecture (fermées)
+
+- **D-A1.2-1 — La correction reste POST-SOUMISSION, pas par question.** `submitAttempt` reçoit
+  **toutes** les réponses en un appel et le RPC atomique calcule score, récompenses, anti-farm,
+  SM-2 et télémétrie **dans une seule transaction**. Un feedback par question exigerait de
+  scinder cette couture — c'est-à-dire de rouvrir la surface anti-triche et le barème, le
+  contraire d'un lot d'affichage. « In-session » est donc rendu comme **« immédiatement à la fin
+  de la session, sur l'item raté »**, ce qui préserve l'intention pédagogique (l'élève voit son
+  erreur nommée pendant qu'il l'a encore en tête) pour une fraction du risque. Un vrai mode
+  question-par-question est une **décision produit distincte** → Q-4. _Rejeté_ : soumettre chaque
+  question au fil de l'eau (multiplie les round-trips, ouvre le rejeu, et rend l'anti-farm
+  attaquable réponse par réponse).
+- **D-A1.2-2 — Le serveur ne rend que le tag de l'option CHOISIE.** `get_attempt_review` gagne
+  `misconception_tag TEXT` (et `chapter_id UUID`), résolus server-side par
+  `distractor_tags ->> <choix de l'élève>`. Rendre la **map** `distractor_tags` serait une
+  **fuite de la clé** : l'option correcte est la seule sans tag (D-1), donc la map désigne la
+  bonne réponse par élimination. Le pgTAP doit encoder cette attaque, pas seulement le cas
+  nominal. _Rejeté_ : exposer `distractor_tags` au client et résoudre côté UI.
+- **D-A1.2-3 — Les libellés sont embarqués au build, pas lus en base.** Le registre est un
+  fichier du dépôt de contenu, déjà compilé côté client pour d'autres surfaces ; la fonction SQL
+  rend l'**id**, l'UI rend le **libellé**. Une misconception mal formulée se corrige alors dans
+  le registre sans migration ni retouche de données (RISK-3, inchangé).
+- **D-A1.2-4 — « Revoir le cours » vise le chapitre, l'ancre est optionnelle.** Le lien pointe la
+  route de cours du `chapter_id` rendu par le RPC. Le registre peut porter un champ **optionnel**
+  `courseAnchor` par misconception ; présent, il précise l'ancre ; absent, on ouvre le cours en
+  haut. L'affinage est ainsi un **travail de contenu additif**, pas une dépendance de code — et
+  le lot ne se bloque pas sur l'ancrage de 566 chapitres. → Q-5.
+- **D-A1.2-5 — Déterministe, et c'est le socle sur lequel é11 se branchera.** Aucun LLM en A1.2 :
+  le registre écrit la phrase. C'est l'application directe de « le déterministe décide, le LLM
+  rédige » (é26 D-8). Le lot 1 de l'**étude 11** (« explication personnalisée post-review »)
+  viendra **remplir le même emplacement** avec un texte ancré sur l'item + le distracteur + le
+  tag : A1.2 définit donc l'emplacement, ses données et son état vide. Si A1.2 est bien fait,
+  é11 lot 1 est un remplacement de contenu, pas une refonte d'écran.
+- **D-A1.2-6 — La signature du RPC change par DROP + CREATE, dans la même transaction.** Ajouter
+  des colonnes à un `RETURNS TABLE` impose de recréer la fonction, et un paramètre défaillé
+  créerait une surcharge ambiguë pour PostgREST — c'est exactement ce qu'a fait
+  `20260705150000_get_attempt_review_scored.sql`, dont on reprend la forme. **Fenêtre de
+  déploiement** : la migration part **avant** le client qui lit les nouvelles colonnes (DoD §7,
+  additif d'abord).
+
+### 9.4 Lots, tests exigés et stop-points
+
+| lot       | périmètre                                                                                                                                                           | tests exigés                                                                                                                                                                                                                                                                                                 |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **A1.2a** | Migration : `get_attempt_review` rend `misconception_tag` + `chapter_id` (D-A1.2-2/D-A1.2-6). Aucun changement de gate (owner-only, session complétée, jamais quiz) | **pgTAP** : (1) le tag rendu est bien celui de l'option choisie ; (2) une bonne réponse ne rend **aucun** tag ; (3) la map `distractor_tags` reste **illisible** par `authenticated` ; (4) question non taguée → NULL, la ligne reste rendue ; (5) quiz → toujours zéro ligne ; (6) non-propriétaire → refus |
+| **A1.2b** | UI : bloc riche dans `quest-review-list` (erreur nommée + explication + « revoir le cours » + « m'entraîner »), i18n FR/EN/AR + RTL                                 | **Vitest** : rendu complet, rendu dégradé (tag absent / registre muet / pas de cours), bonne réponse = bloc absent, RTL. **e2e authed** : rater une question taguée → l'erreur est nommée, le lien ouvre le cours                                                                                            |
+
+**Stop-points** — l'exécuteur s'arrête et remonte si :
+
+1. il doit exposer `distractor_tags` au client pour faire marcher l'UI (⇒ il a raté D-A1.2-2) ;
+2. il doit modifier `submit_exercise_attempt` (⇒ il a glissé vers Q-4, hors périmètre) ;
+3. il doit toucher un barème, un compteur ou `consume_hint` (⇒ R-A1.2-4 / §9.1) ;
+4. le corpus tagué est trop maigre pour juger du rendu : **ce n'est pas un blocage** — R-A1.2-3
+   impose que le lot soit correct à vide, et le lot é07-3 / C4 l'allumera plus tard.
+
+### 9.5 Risques
+
+- **RISK-A1.2-A — Fuite de la clé par le tag** (rare / **critique**) → D-A1.2-2 + le pgTAP qui
+  joue l'attaque par élimination, pas seulement le cas nominal. C'est le seul risque de cette
+  phase qui justifie un refus de merge.
+- **RISK-A1.2-B — Un lot livré inerte** (certain / faible) → assumé et **voulu** : comme é07 lots
+  4 et 5, A1.2 s'allume avec le tagging du corpus. Inerte ≠ faux. À écrire dans le journal pour
+  que personne ne le lise comme un bug.
+- **RISK-A1.2-C — Correction perçue comme punitive** (possible / moyen) → R-A1.2-2 (rien sur les
+  bonnes réponses), ton RPG des libellés du registre, et le geste « m'entraîner » qui transforme
+  le constat en action. Mesure : taux de clic « revoir le cours » / « m'entraîner ».
+- **RISK-A1.2-D — Divergence avec é11** (possible / moyen) → D-A1.2-5 : l'emplacement, ses
+  données et son état vide sont spécifiés maintenant, pour que é11 lot 1 remplisse au lieu de
+  refondre.
+
+### 9.6 Questions ouvertes (pour Mohamed)
+
+- **Q-4** : veut-on, plus tard, un **vrai feedback question par question** pendant la session ?
+  Ce n'est pas un raffinement de A1.2 : cela rouvre la couture de soumission atomique (score,
+  anti-farm, SM-2, télémétrie). Proposition de l'architecte : **non pour la rentrée**, à
+  reconsidérer après mesure du taux de clic de A1.2b. Réponse attendue : oui / non / plus tard.
+- **Q-5** : le champ `courseAnchor` du registre — le **remplit-on maintenant** pour les
+  misconceptions des matières de concours (travail de contenu, petit), ou laisse-t-on tous les
+  liens pointer le haut du cours en v1 ? Proposition : **v1 sans ancres**, ancrer plus tard sur
+  les tags les plus fréquents (donnée que la télémétrie fournira).
+
 ### Phase A0 (socle télémétrie) — LIVRÉE
 
 Les trois lots A0.1 (schéma) · A0.2 (capture RPC + purge) · A0.3 (pipeline tags + registre) sont
 mergés (PR #308, #309, +A0.3). Le signal « choix par question + misconception » est désormais
-capté server-side à chaque soumission. Les lots A1.1 (« Révision du jour ») et A2.1 (« Points
-faibles ») attendent le **GO humain** (Q-1 : ≥4 semaines de télémétrie OU seuil de volume) —
-c'est le stop-point de l'étude : accumuler des données réelles avant de bâtir la reco/le profil.
+capté server-side à chaque soumission.
+
+> ⚠️ **Ce paragraphe disait jusqu'au 2026-07-25 que A1.1 attendait le GO humain de Q-1.**
+> C'est faux depuis le 2026-07-20 : le GO a été donné par l'arbitrage A1 de l'étude 26 (pipeline
+> V1 mandaté), **A1.1 est livrée** (#581) puis rendue compétence-aware par é07 lot 5 (#616/#617).
+> Seule **A2.1** reste derrière le seuil de données de Q-1.
+
+### Phase A1 (la révision devient un produit) — EN COURS
+
+- **2026-07-20 — A1.1 livrée** (#581) : RPC `get_daily_plan` (migration
+  `20260721120000_daily_plan_rpc.sql`) + panneau `DailyReviewPanel` sur le dashboard, ≤ 3 items
+  triés par retard SM-2 et priorité misconceptions. Première sortie visible du moteur adaptatif :
+  deux des trois « boucles collectées-jamais-surfacées » de l'étude 26 (SM-2, `user_misconceptions`)
+  cessent d'être mortes. C'est un **sélecteur** d'exercices existants — récompenses et anti-farm
+  inchangés (R-4 tenu).
+- **2026-07-25 — A1.1 devient compétence-aware** par le **lot 5 de l'étude 07** (#616, correctif
+  de GRANT #617) : `get_daily_plan` lit aussi `user_competency_mastery` (troisième terme du score,
+  maillon faible décayé). Non-régression par construction — sans ligne de maîtrise, le terme vaut
+  zéro et le plan est identique. Le cadrage prévu par R-1 (« le lot A1.1 devient compétence-aware
+  via le lot 5 de l'étude 07 ») s'est donc réalisé tel quel.
+- **2026-07-25 — amendement A1.2 rédigé** (§9, architecte) : la « correction riche à l'échec »
+  rattachée ici par l'arbitrage A1-Q4 de l'étude 26. Le contrat est fermé, en deux lots
+  (A1.2a serveur / A1.2b client), et il **corrige deux suppositions du mandat** : l'explication
+  post-erreur n'a jamais été monnayée (c'est l'indice _avant_ réponse qui l'est), et un feedback
+  question-par-question rouvrirait la couture de soumission atomique — écarté du périmètre et
+  posé en Q-4. Le lot allumera peu tant que le corpus n'est pas tagué (é07 lot 3) : **inerte par
+  construction, jamais faux**, comme é07 lots 4 et 5.
