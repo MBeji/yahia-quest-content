@@ -1,0 +1,66 @@
+name: Roadmap sync
+
+# La ROADMAP est ici (privé), les lots se livrent dans le dépôt public : aucune PR
+# ne touche les deux, donc sa règle d'origine — « cocher la case dans la même PR
+# que le lot » — est inapplicable depuis la scission (étude 24). Elle a dérivé de
+# 24 lots en cinq jours, du 2026-07-20 au 2026-07-25.
+#
+# Le gate vit dans le MOTEUR (public, testé là-bas) et c'est ce workflow qui
+# l'appelle avec le chemin du corpus — même schéma que les gates de contenu :
+# les gates suivent leurs données.
+#
+# Deux déclencheurs, deux rôles :
+#   • `schedule` — le vrai filet. La dérive vient d'en face, pas d'ici : ce dépôt
+#     peut rester silencieux des jours pendant que `main` avance (c'est très
+#     exactement ce qui s'est produit). Un déclencheur sur PR seul ne l'aurait
+#     jamais vue.
+#   • `pull_request` sur la roadmap — valide l'édition au moment où on la fait.
+
+on:
+  pull_request:
+    paths:
+      - "FableEtudes/ROADMAP.md"
+  schedule:
+    # 05:30 UTC — après le nightly du dépôt public (04:14), donc sur un `main` du jour.
+    - cron: "30 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: roadmap-sync-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    name: la roadmap connaît-elle les lots déjà livrés ?
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout corpus (ce repo)
+        uses: actions/checkout@v7
+        with:
+          path: corpus
+
+      - name: Checkout moteur (repo public)
+        uses: actions/checkout@v7
+        with:
+          repository: MBeji/yahia-quest-arena
+          path: engine
+          # Le gate lit `git log` : un clone superficiel ne verrait qu'un commit
+          # et déclarerait la roadmap saine quoi qu'il arrive.
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+
+      # Aucun `npm ci` : le gate n'utilise que des modules natifs de Node.
+      - name: roadmap-sync
+        working-directory: engine
+        run: >-
+          node scripts/ci/check-roadmap-sync.mjs
+          --ref HEAD
+          --roadmap "$GITHUB_WORKSPACE/corpus/FableEtudes/ROADMAP.md"

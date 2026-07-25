@@ -1,12 +1,14 @@
 # ROADMAP — ordre d'exécution du reste-à-faire (études, lots, contenu)
 
-> **Instantané du 2026-07-20 (révisé le soir même)** — déclinaison opérationnelle de l'**étude 26
-> (doctrine verticale : profondeur avant largeur)**. Les Q-1…Q-5 de l'étude 26 ayant été
-> **arbitrées le 2026-07-20**, cet ordre n'est plus une recommandation d'architecte : il est
-> **officiel**. La même session a rendu **tous les arbitrages en attente** (A1→A5) — plus aucune
-> ligne de ce fichier n'est bloquée par une décision humaine. Ce fichier est un instantané daté,
-> à resynchroniser quand un lot est livré (cocher la case dans la même PR) — l'état de référence
-> reste [STATUS.md](../STATUS.md) + l'[index des études](./README.md).
+<!-- roadmap-sync: since-pr=536 -->
+
+> **Instantané du 2026-07-25** (créé le 2026-07-20, **resynchronisé contre `main` le
+> 2026-07-25**) — déclinaison opérationnelle de l'**étude 26 (doctrine verticale : profondeur
+> avant largeur)**. Les Q-1…Q-5 de l'étude 26 ayant été **arbitrées le 2026-07-20**, cet ordre
+> n'est plus une recommandation d'architecte : il est **officiel**. La même session a rendu
+> **tous les arbitrages en attente** (A1→A5) — plus aucune ligne de ce fichier n'est bloquée par
+> une décision humaine. L'état de référence reste [STATUS.md](../STATUS.md) + l'[index des
+> études](./README.md).
 > **Jalon produit : rentrée scolaire, 1ᵉʳ septembre 2026** (§7).
 
 ## 0. Mode d'emploi (comment exécuter cette roadmap)
@@ -21,6 +23,26 @@
 4. Priorité inter-files en cas de choix : finir l'en-vol (§1) > PRODUIT > FONDATIONS >
    CONTENU nouveau (les corrections qualité contenu passent, elles, avant tout — P-4).
 
+### Comment cet ordre reste vrai (règle amendée le 2026-07-25)
+
+La règle d'origine — « cocher la case dans la même PR que le lot » — est **inapplicable depuis
+la scission de l'étude 24** : cette roadmap vit dans le dépôt privé, la quasi-totalité des lots
+se livre dans le dépôt public, et aucune PR ne touche les deux. Elle a dérivé exactement comme
+on pouvait le prévoir : **24 lots livrés entre le 2026-07-20 et le 2026-07-25 n'y figuraient
+nulle part**, dont toute la fin de l'étude 22, é04-A1.1, é20 lot 1, é07 lots 2/4/5 et une étude
+harness entière. Une session prenant « la première ligne non cochée » aurait refait du travail
+déjà sur `main`.
+
+La règle est donc remplacée par un **invariant vérifié** :
+
+- chaque ligne cochée **cite la ou les PR** qui l'ont livrée — le fichier porte sa propre preuve ;
+- le gate [`check-roadmap-sync.mjs`](https://github.com/MBeji/yahia-quest-arena/blob/main/scripts/ci/check-roadmap-sync.mjs)
+  (dans le moteur public, appelé par la Content CI d'ici) **échoue** si un lot livré sur `main`
+  après la PR de référence déclarée en tête de ce fichier n'y est cité nulle part. Citer suffit :
+  coché, reporté ou sans objet — le gate a un avis sur la **connaissance**, jamais sur le statut.
+- une session qui livre un lot au public **ouvre une PR d'une ligne ici** pour cocher. C'est le
+  seul geste cross-repo, et le gate le rend non-oubliable au lieu de compter sur la discipline.
+
 ## 1. En vol aujourd'hui (à finir avant d'ouvrir autre chose)
 
 - [x] **Étude 25 lot 2** (gate `harness:check` + rôles de modèles) : **mergé le 2026-07-20**
@@ -30,24 +52,16 @@
       l'**étude 23** — en-tête « brouillon » alors que ses lots 1-4 étaient mergés — est
       resynchronisée par la session d'arbitrages du 2026-07-20 (`en exécution`, lots 1-4 cochés,
       PRs #524/#527 inscrites au journal).
-- [ ] **Reverdir `main`** : une session dédiée — préalable de confiance pour tout le reste.
-      **État vérifié le 2026-07-20** : la CI **requise** est verte sur `main` (CI, CodeQL,
-      Auto-merge) ; ce sont les suites **hors gate requis** qui sont rouges — `Nightly tests`
-      (#250) échoue **tous les jours** (dernier run 2026-07-20 04:38, rouge au moins depuis le
-      18/07) et `E2E (authenticated)` (#363, 12 échecs préexistants) n'a plus tourné vert sur
-      `main` depuis le 2026-07-11.
-      **Diagnostic du volet pgTAP de #250** (constaté le 2026-07-20 en lançant `db-tests.yml`
-      sur une branche de lot) : ce sont **7 tests d'entitlements premium**, tous dormants depuis
-      le pivot gratuit — `05_parcours_entitlements` (4, 6-7, 9, 11-12) et `08_quiz_gate` (5).
-      Ils vérifient qu'un parcours premium sans grant est refusé, alors que
-      `20260711100000_free_phase_all_parcours` a mis `is_premium = false` partout. Ce n'est pas
-      une régression : ce sont des tests devenus faux par la décision produit. La session
-      « reverdir » doit donc les **re-scoper** (fixtures qui posent explicitement leur premium),
-      pas « réparer » du code. Le volet e2e (#363) reste, lui, à instruire.
-      ⚠️ **Au passage** : `db-tests.yml` (pgTAP) ne tourne **pas** sur les PR — nightly et
-      `workflow_dispatch` seulement. Toute PR portant une migration doit la dispatcher sur sa
-      branche AVANT de promouvoir, sinon rien ne prouve qu'elle s'applique avant que le merge ne
-      la pousse en prod.
+- [x] **Reverdir `main`** — **fait, vérifié le 2026-07-25**. Les deux volets rouges sont clos : - **Nightly (#250)** : réparé par #570 (quatre causes indépendantes accumulées), les suites
+      pgTAP orphelines séparées du corpus (#574/#575) et les collisions de préfixe nées des
+      merges parallèles renumérotées (#584/#587/#599 → rangs 35-39). **Vert 5 nuits d'affilée**
+      (du 2026-07-21 au 2026-07-25). Issue close. - **E2E authentifié (#363)** : les 12 échecs préexistants traités par vagues (#576/#577,
+      #580, #586/#589) puis **un run entièrement vert sur `main`** le 2026-07-21 — le premier
+      depuis l'ouverture de l'issue. Close. - Le diagnostic « 7 tests d'entitlements premium devenus faux par le pivot gratuit » a bien
+      été traité par re-scoping des fixtures, pas par une correction de code. - ⚠️ **La mise en garde « `db-tests.yml` ne tourne pas sur les PR » est PÉRIMÉE** : depuis
+      #563 (2026-07-21), la suite pgTAP tourne sur **toute PR** touchant
+      `supabase/migrations/**` ou `supabase/tests/**`. Elle reste hors des checks _requis_ :
+      un rouge n'empêche pas l'auto-merge, il faut le lire.
 - [x] ~~**Trancher les PRs legacy**~~ — **sans objet** : vérifié le 2026-07-20, #374 (français
       3ᵉ), #376 (transcription 2ᵉ sec) et #348 (transcriptions ScribeKit) sont **toutes les
       trois mergées** les 12-13/07. Le contenu « coffre-fort » qu'elles ont sauvé est sur `main` ;
@@ -55,7 +69,8 @@
 
 ## 2. Arbitrages — TOUS RENDUS le 2026-07-20
 
-> Session de décision unique (Mohamed, 2026-07-20). **Aucun arbitrage n'est plus en attente** :
+> Session de décision unique (Mohamed, 2026-07-20), consignée par #537. **Aucun arbitrage n'est
+> plus en attente** :
 > toute ligne de ce fichier est exécutable dès qu'une session la prend. Le détail de chaque
 > décision, avec sa conséquence sur les lots, vit dans le §7 (ou §8) de l'étude concernée —
 > ce tableau n'en est que le sommaire.
@@ -69,42 +84,45 @@
 | A5  | **é11 Q-1…Q-9** (tuteur IA)                                                                                                              | ✅ Exécution **dégelée pour les lots 0-2**, pilote **math 9ᵉ** · énergie 10/j (plafond dur 30) · budget **5 $/j** (≤ 150 $/mois) · **le tuteur s'appelle « El Ostedh » (الأستاذ)**, sans mascotte · pas de verbatim parent · champ libre dès le collège · GO coordonné avec é04-A1.1   |
 | A6  | ~~PRs legacy #374 / #376 / #348~~                                                                                                        | **Sans objet** — les trois sont mergées depuis les 12-13/07 (voir §1)                                                                                                                                                                                                                  |
 | A7  | _(rendus antérieurement, pour mémoire)_ é23 Q-1/Q-2/Q-5 le 2026-07-19 (#531) ; é22 Q-1…Q-5 le 2026-07-18 ; é20 Q-1…Q-5 le 2026-07-16     | é23 lot 5, é22 lots 1-6, é20 lots 1-8 : **exécutables**                                                                                                                                                                                                                                |
+| A8  | **Renovate ou script maison** pour le lot patch/minor (rendu le 2026-07-25)                                                              | ✅ **Script maison** — pas de tiers dans la chaîne, même régime que les autres gardes du harness. Appliqué par le lot L4 de l'étude « IA vs déterministe » (#613)                                                                                                                      |
 
 **Ce qui reste à la main de Mohamed** (hors lots, sans blocage de file) : é23 Q-3 (self-désigner
 l'app child-directed auprès de Google + paragraphe « vidéos YouTube » de la politique de
 confidentialité — la page n'existe pas encore) · é24 Q-4 (démarche OTDAV/INNORPI) · F4 (domaine,
-monitoring, sitemap) · F5 (légal avant rentrée).
+monitoring, sitemap) · F5 (légal avant rentrée) · **le signalement `d12f0f96` à passer
+`dismissed`** dans `/admin/content-reports` (artefact e2e écrit en prod, cause corrigée par #618).
 
 ## 3. FILE PRODUIT — la verticale V1 « apprendre & maîtriser » (ordre strict)
 
 > Objectif : refermer les trois boucles mortes (SM-2, misconceptions, adaptativité) et porter
-> la boucle d'apprentissage à M3 avant la rentrée. ~15-18 sessions-lots au total.
+> la boucle d'apprentissage à M3 avant la rentrée.
+> **État au 2026-07-25 : 10 des 19 lignes livrées.** La prochaine ligne libre est la **8**.
 
-**Étape A — réparer le parcours (étude 22, validée — 6 lots prêts)**
+**Étape A — réparer le parcours (étude 22, validée — 6 lots) — ✅ ÉTUDE CLOSE le 2026-07-21**
 
-- [x] 1. **é22 lot 1 — la carte honnête** (`/parcours` : plus de faux verrou séquentiel, états `next`/`done`)
-- [x] 2. **é22 lot 2 — la boucle SM-2 refermée** (`submit_exercise_attempt` passe les révisions à `completed`)
-- [ ] 3. **é22 lot 5 — le donjon scopé** au parcours (fallback cycle → catalogue, `pool_scope`)
-- [ ] 4. **é22 lot 4 — cohorte « Ma classe »** (`get_grade_leaderboard` + onglet par défaut dès ≥ 10 classés)
-- [ ] 5. **é22 lot 6 — « prochaine action » unifiée** (`resolveNextAction`) + purge des objectifs fantômes (`10_min`, `maintain_streak_5`)
-- [ ] 6. **é22 lot 3 — la rentrée** (bannière 1ᵉʳ sept → 31 oct, `current_parcours_set_at`, bloc « Réviser ») — **à livrer avant mi-août**
+- [x] 1. **é22 lot 1 — la carte honnête** (`/parcours` : plus de faux verrou séquentiel, états `next`/`done`) — #538
+- [x] 2. **é22 lot 2 — la boucle SM-2 refermée** (`submit_exercise_attempt` passe les révisions à `completed`) — #540
+- [x] 3. **é22 lot 5 — le donjon scopé** au parcours (fallback cycle → catalogue, `pool_scope`) — #547
+- [x] 4. **é22 lot 4 — cohorte « Ma classe »** (`get_grade_leaderboard` + onglet par défaut dès ≥ 10 classés) — #565
+- [x] 5. **é22 lot 6 — « prochaine action » unifiée** (`resolveNextAction`) + purge des objectifs fantômes — #567
+- [x] 6. **é22 lot 3 — la rentrée** (bannière 1ᵉʳ sept → 31 oct, `current_parcours_set_at`, bloc « Réviser ») — #573, livré **en avance** (échéance mi-août)
 
 **Étape B — la révision devient un produit (étude 04)**
 
-- [ ] 7. **é04 lot A1.1 — « Révision du jour »** (RPC `get_daily_plan` + panneau dashboard, consomme SM-2 refermée en 2)
-- [ ] 8. **amendement é04-A1.2 « correction riche à l'échec »** _(A1 rendu : rattachée à l'étude 04)_ (architecte : feedback in-session, lien « revoir le cours » par erreur, misconception affichée, explication post-erreur non monnayée) — puis :
-- [ ] 9. **é04 lot A1.2 — exécution de la correction riche** (1-2 PRs)
+- [x] 7. **é04 lot A1.1 — « Révision du jour »** (RPC `get_daily_plan` + panneau dashboard, consomme SM-2 refermée en 2) — #581 (pgTAP renuméroté #584)
+- [ ] 8. **amendement é04-A1.2 « correction riche à l'échec »** _(A1 rendu : rattachée à l'étude 04)_ (architecte : feedback in-session, lien « revoir le cours » par erreur, misconception affichée, explication post-erreur non monnayée) — **⬅️ PROCHAINE LIGNE PRODUIT**, puis :
+- [ ] 9. **é04 lot A1.2 — exécution de la correction riche** (1-2 PRs) — dépend de 8
 
 **Étape C — le Rappel cesse de refuser des réponses justes (étude 20, validée)**
 
-- [ ] 10. **é20 lot 1 — socle scoring ensembliste** (`accepted_answers` server-only + QA) — indépendant, peut s'intercaler dès maintenant
-- [ ] 11. **é20 lot 7 — type natif `short_answer`** (moteur ; parallélisable avec l'étape D)
+- [x] 10. **é20 lot 1 — socle scoring ensembliste** (`accepted_answers` server-only + juge unique `is_accepted_free_answer`) — #583
+- [ ] 11. **é20 lot 7 — type natif `short_answer`** (moteur) — **indépendant, exécutable dès maintenant** (l'étape D dont il était parallélisé est finie)
 
 **Étape D — la maîtrise devient visible (étude 07 puis 04-A2)**
 
-- [ ] 12. **é07 lot 2 — DB de maîtrise** (`user_competency_mastery` EWMA + oubli, trigger sur télémétrie)
-- [ ] 13. **é07 lot 4 — panneau compétences** (« ce qui te bloque », RPCs map/blockers) — dépend de 12 + du tagging C4 (fil contenu)
-- [ ] 14. **é07 lot 5 — plan compétence-aware** (`get_daily_plan` priorise par compétence) — dépend de 7 + 13
+- [x] 12. **é07 lot 2 — DB de maîtrise** (`user_competency_mastery` EWMA + oubli, trigger sur télémétrie) — #579
+- [x] 13. **é07 lot 4 — panneau compétences** (« ce qui te bloque », RPCs map/blockers) — #588. ⚠️ Livré **avant** le tagging C4 : inerte par construction tant que le corpus n'est pas tagué, jamais faux
+- [x] 14. **é07 lot 5 — plan compétence-aware** (`get_daily_plan` priorise par compétence) — #616, correctif de GRANT #617. Même réserve : inerte sans C4
 - [ ] 15. **é04 lot A2.1 — « Points faibles »** (misconceptions en langage élève + « S'entraîner »)
 - [ ] 16. **é04 lot A2.2 — rapport parent enrichi** (3 points faibles majeurs + tendance)
 
@@ -121,14 +139,41 @@ monitoring, sitemap) · F5 (légal avant rentrée).
 
 ## 4. FILE FONDATIONS (parallèle — ne bloque pas la file produit)
 
-- [ ] F1. **é25 lots restants** (lots 1-2 livrés #519/#530 ; **lots 4 et 6 livrés le 2026-07-20** — politique déclarative `harness/policy.json` + hook externalisé + invariant anti-dérive des vues générées ; `docs/agents/` (playbooks poste Windows · collaboration multi-agents · campagnes contenu)). Reste, dans cet ordre : **L5** gardes CI portables + épinglage SHA + CODEOWNERS (Q-6) · **L3** miroir skills `.agents/skills/` · **L7** drill de portabilité (**avec Mohamed**).
-      ⚠️ **L3 est volontairement repoussé APRÈS [F2] é24 lot 3b** : créer un miroir des 45 skills dans le repo public dupliquerait l'actif que le « dégraissage public » d'é24 est justement en train d'en retirer. Le miroir se fera sur le périmètre de skills qui subsiste après la scission. (é25 §6 déclare L3/L4/L5/L6 indépendants — l'ordre « 3 → 7 » n'était qu'un raccourci d'écriture.)
-- [ ] F2. **é24 lots 3b → 4 → 5 → 6** _(A2 rendu : 3b débloqué, dégraissage remonté dans 3b)_ (découplage SQL + dégraissage public + gate anti-fuite + purge d'historique + e2e TEST/régularisation) — **prérequis de la campagne lycée massive** (§5-C9)
-- [ ] F3. **é09 lots 1-2 — la mesure** (page admin « Économie » + simulateur `economy:check`) — condition du KPI-4 é26 (« excellent » mesurable) ; lot 3 conditionnel ensuite
+- [x] F1. **é25 — lots livrés** : 1-2 (#519/#530), 4 et 6 (#541/#543 — politique déclarative
+      `harness/policy.json`, hook externalisé, invariant anti-dérive des vues générées,
+      `docs/agents/`), **5a/5b/5c** (#545/#550/#560 — gardes CI portables, épinglage SHA,
+      CODEOWNERS, garde « second avis » dormante) et **3** (#558 — miroir `.agents/skills/`,
+      squashé sous un titre qui ne le nomme pas). **Reste le seul L7** : drill de portabilité,
+      **à faire avec Mohamed** (session hors file).
+- [ ] F2. **é24 — reste le lot 5** _(A2 rendu)_ : lots 3b et 4 exécutés le 2026-07-20 (#544 — le
+      corpus, l'usine et `FableEtudes/` partis au privé, gate anti-fuite posé), lot 6
+      resynchronisation de l'index fait ici. **Lot 5 = purge de l'historique git public**,
+      volontairement **reporté à une fenêtre calme constatée** (STATUS §2) — l'historique public
+      reste lisible pour mai→juillet 2026. Ce n'était PAS un prérequis de la campagne lycée : la
+      scission qui l'était (3b/4) est faite, **§5-C9 est débloqué**.
+- [ ] F3. **é09 lots 1-2 — la mesure** (page admin « Économie » + simulateur `economy:check`) — condition du KPI-4 é26 (« excellent » mesurable) ; lot 3 conditionnel ensuite. _Vérifié le 2026-07-25 : aucune route admin « Économie », rien n'est commencé._
 - [ ] F4. **C4 côté Mohamed (~45 min + suivi)** : câbler le domaine `na9ranal3ab.tn` · monitoring (UptimeRobot/Sentry/PostHog) · ruleset — puis soumettre le sitemap (débloque le SEO, 🟠 depuis juin)
 - [ ] F5. **Légal avant rentrée** : GAP-003 (conformité mineurs INPDP) + GAP-024 (pages légales)
-- [ ] F6. **Ops récurrent** : activer le triage hebdo des signalements (`/admin/content-reports`, `/admin/bug-reports`, skill `report-triage`) — le maillon manquant est opérationnel, pas technique
-- [ ] F7. **Dépendances majeures** #233/#234/#236 : une PR par major via `upgrade-guard`, quand une fenêtre calme le permet
+- [ ] F6. **Ops récurrent** : le triage hebdo des signalements. **Le volet technique est fait** —
+      le pré-gate déterministe (#611) ne réveille l'agent que sur du nouveau, avec une soupape
+      à 14 jours. Reste le **geste opérateur** : appliquer depuis `/admin/content-reports` et
+      `/admin/bug-reports` les `dismissed` recommandés, ce qui referme la boucle. **14 issues de
+      triage sont ouvertes** (du 17/07 au 25/07) faute de ce geste.
+- [ ] F7. **Dépendances majeures — file à nettoyer avant de l'exécuter.** Le lot patch/minor
+      étant scripté (#613), il ne reste que les majors, et leurs issues **doublonnent** :
+      #233 ≡ #595 (`@types/node` v26) · #236 ⊂ #594 (Supabase CLI + `setup-cli` v3) ·
+      **#234 est périmé** (« branche patch/minor à ouvrir à la main » — c'est exactement ce que
+      le script fait désormais). S'ajoute **#593** (`typescript` v7, gate rouge :
+      `typescript-eslint` incompatible). Une PR par major, quand une fenêtre calme le permet.
+- [x] F8. **Étude « IA vs déterministe » — CLOSE le 2026-07-25, 6 lots.** Ouverte le 2026-07-21
+      hors roadmap (#598), elle a remplacé par des scripts les 5 surfaces de garde qui
+      dépensaient des tokens sur un chemin mécanique : hook pré-commit (#608) et invariant
+      d'auth des server fns passé en règle ESLint (#600), `regression-guard` pré-gaté (#604),
+      garde « second avis » bornée (#606), `report-triage` pré-gaté (#611), lot patch/minor
+      d'`upgrade-guard` scripté (#613, arbitrage A8). L'étude vit **au public**
+      (`docs/agents/etude-ia-vs-deterministe.md`) : c'est de l'outillage, pas du contenu.
+      Prochain candidat s'il en faut un : appliquer la même grille au pipeline de contenu —
+      **arbitrage à rendre ici**.
 
 ## 5. FIL CONTENU (parallèle — sessions de campagne dédiées)
 
@@ -136,15 +181,17 @@ monitoring, sitemap) · F5 (légal avant rentrée).
 > gates, audits). **A1-Q2 rendu** : la cible de couverture pour la rentrée est le **statu quo
 > consolidé à la barre é18** — aucune nouvelle classe « vitrine » sous cette barre.
 
-- [ ] C1. **Corrections qualité ouvertes d'abord** (P-4) : `french-8eme` (2 BLOCKER #336/#337 + 6 MAJOR) · `math-bac-math` (#344)
+- [ ] C1. **Corrections qualité ouvertes d'abord** (P-4) : `french-8eme` — 2 BLOCKER (#336/#337) + 6 MAJOR (#338/#339/#340/#341/#342/#343) · `math-bac-math` (#344). ⚠️ **Une PR est déjà
+      en vol** sur le sous-ensemble LaTeX (#610, `fix/french-8eme-latex-338`) : vérifier son
+      état avant d'ouvrir une session, pour ne pas doublonner.
 - [ ] C2. **é23 lot 5 — campagne vidéos maths 9ᵉ** (débloquée : Q-1 arbitrée, skill `content-videos` + health-check livrés #527/#531) — puis extension aux autres matières concours au fil de l'eau
 - [ ] C3. **é16 vague A — les 4 matières restantes de 1ère secondaire** (base fidèle au programme + overlay `prof-*-lycee` d3/d4 ; une matière = une session ; génération native fr, décision 2026-07-13)
-- [ ] C4. **é07 lot 3 — tagging compétences vague 1** (questions math 9ᵉ + 6ᵉ, registre `content/competences/math.json`) — condition de l'étape D produit (ligne 13)
+- [ ] C4. **é07 lot 3 — tagging compétences vague 1** (questions math 9ᵉ + 6ᵉ, registre `content/competences/math.json`). **⬅️ PRIORITÉ MONTÉE** : les lots 4 et 13/14 produit sont livrés mais **inertes sans ce tagging** — c'est le seul chantier qui allume la maîtrise, la carte « ce qui te bloque » et la priorisation du plan quotidien.
 - [ ] C5. **é20 lots 2 → 4 — réponses acceptées** : Tier A morphologique déterministe (corpus entier) → skill Tier B + pilote petites classes ar → campagne (1 matière/PR, priorité petites classes → concours) ; puis lot 5 (saisie arabe) et lot 8 (pilote `short_answer`)
 - [ ] C6. **Illustration — backlog é18 (ordre petites-classes-d'abord)** : 4ᵉ puis 5ᵉ année (toutes matières visuelles) → maths 7ᵉ (5 ch.) → maths 9ᵉ fonctions+stats (2) → iq-training (3) → français (1)
-- [ ] C7. **é19 lot 1 — doctrine + gate figures questions** _(A3 rendu : SVG seul, vérification intégrale, lots ≤ ~40 figures)_,, puis campagne questions illustrées (concours d'abord : 6ᵉ/9ᵉ/bac)
+- [ ] C7. **é19 lot 1 — doctrine + gate figures questions** _(A3 rendu : SVG seul, vérification intégrale, lots ≤ ~40 figures)_, puis campagne questions illustrées (concours d'abord : 6ᵉ/9ᵉ/bac)
 - [ ] C8. **é21 lot 1 — doctrine manuels** _(A4 rendu : verbatim court non créatif toléré ; provenance NON affichée à l'élève, lot 3 abandonné)_, puis pilote `math-1ere-sec` (exercices tracés `manuel_ref`, rapport de couverture)
-- [ ] C9. **Transcriptions secondaire (fil continu, METHODE-GENERATION-CONTENU)** : finir `math-2eme-sec-sciences` (12/19 ch. transcrits) · `3eme-sec-anglais` (wip) · suite du lycée — **la campagne de GÉNÉRATION lycée massive (2ᵉ sec+) attend é24 lots 4-6 (F2)** ; la vague A 1ère sec déjà entamée continue, elle, normalement
+- [ ] C9. **Transcriptions secondaire (fil continu, METHODE-GENERATION-CONTENU)** : finir `math-2eme-sec-sciences` (12/19 ch. transcrits) · `3eme-sec-anglais` (wip) · suite du lycée. **La campagne de GÉNÉRATION lycée massive est débloquée** depuis l'exécution des lots 3b/4 de é24 (#544) — elle n'attendait pas le lot 5.
 
 ## 6. FILES DIFFÉRÉES (ne rien lancer avant leur porte d'entrée)
 
@@ -157,16 +204,17 @@ monitoring, sitemap) · F5 (légal avant rentrée).
 
 ## 7. Vue jalon — ce qui doit être vrai le 1ᵉʳ septembre 2026
 
-| Axe        | Cible rentrée                                                                                                                                                                                                  |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Produit    | File V1 étapes **1-16** livrées (é22 complet dont bannière rentrée · Révision du jour · correction riche · Rappel tolérant lot 1 · maîtrise visible · points faibles + rapport parent)                         |
-| IA         | A5 **rendu le 2026-07-20** : é11 dégelée (lots 0-2, pilote math 9ᵉ, budget 5 $/j, tuteur « El Ostedh »). Lots 0-1 à la rentrée **seulement si une session les prend hors file V1** — sinon octobre             |
-| Contenu    | Classes existantes à la barre é18 · 1ère sec complète (5 matières) · vidéos 9ᵉ · Tier A `acceptedAnswers` corpus entier · cible arbitrée (A1-Q2) = **statu quo consolidé à la barre é18**, sans classe vitrine |
-| Fondations | Domaine câblé + monitoring + sitemap (F4) · légal F5 · triage ops F6 en route · `main` verte (§1)                                                                                                              |
+| Axe        | Cible rentrée                                                                                                                                                                                                  | État au 2026-07-25                                                                                                                        |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Produit    | File V1 étapes **1-16** livrées (é22 complet dont bannière rentrée · Révision du jour · correction riche · Rappel tolérant lot 1 · maîtrise visible · points faibles + rapport parent)                         | **10/19 lignes faites**, dont toute l'étape A et l'étape D côté moteur. Restent : correction riche (8-9), `short_answer` (11), A2 (15-16) |
+| IA         | A5 **rendu le 2026-07-20** : é11 dégelée (lots 0-2, pilote math 9ᵉ, budget 5 $/j, tuteur « El Ostedh »). Lots 0-1 à la rentrée **seulement si une session les prend hors file V1** — sinon octobre             | non commencé — conforme au plan                                                                                                           |
+| Contenu    | Classes existantes à la barre é18 · 1ère sec complète (5 matières) · vidéos 9ᵉ · Tier A `acceptedAnswers` corpus entier · cible arbitrée (A1-Q2) = **statu quo consolidé à la barre é18**, sans classe vitrine | inchangé ; **C4 (tagging compétences) est devenu le point dur** : trois lots produit livrés en dépendent                                  |
+| Fondations | Domaine câblé + monitoring + sitemap (F4) · légal F5 · triage ops F6 en route · `main` verte (§1)                                                                                                              | **`main` verte ✅** (nightly + e2e-auth). Restent F4/F5 (Mohamed) et le geste opérateur de F6                                             |
 
 ## 8. Journal de la roadmap
 
-| Date       | Événement                                                                                                                                                                                                                                                                                                                                                                                            |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 2026-07-20 | Création (déclinaison de l'étude 26, état consolidé post #525/#526/#527/#529/#531)                                                                                                                                                                                                                                                                                                                   |
-| 2026-07-20 | **Session d'arbitrages — A1→A5 tous rendus** (Mohamed). é26, é19, é21, é11 → `validée` ; les 4 écarts de é24 tranchés (lot 3b débloqué) ; é23 resynchronisée en `en exécution`. **Corrections d'état** : A6 sans objet (PRs legacy mergées les 12-13/07), `main` — CI requise verte, `Nightly`/`E2E auth` rouges. Le tuteur IA est renommé **« El Ostedh »**. La roadmap devient officielle (A1-Q1). |
+| Date       | Événement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-07-20 | Création (déclinaison de l'étude 26, état consolidé post #525/#526/#527/#529/#531)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| 2026-07-20 | **Session d'arbitrages — A1→A5 tous rendus** (Mohamed). é26, é19, é21, é11 → `validée` ; les 4 écarts de é24 tranchés (lot 3b débloqué) ; é23 resynchronisée en `en exécution`. **Corrections d'état** : A6 sans objet (PRs legacy mergées les 12-13/07), `main` — CI requise verte, `Nightly`/`E2E auth` rouges. Le tuteur IA est renommé **« El Ostedh »**. La roadmap devient officielle (A1-Q1).                                                                                                                                                                                                                                                                                                                                                                                                                |
+| 2026-07-25 | **Resynchronisation contre `main` — 24 lots livrés manquaient.** La règle « cocher dans la même PR » était inapplicable depuis la scission (é24) : deux dépôts, aucune PR commune. Elle est remplacée par un invariant vérifié (§0) — chaque ligne cochée cite sa PR, et le gate `check-roadmap-sync.mjs` échoue si un lot livré n'est cité nulle part. **§1 « reverdir `main` » est clos** (nightly vert 5 nuits, e2e-auth vert, #250/#363 closes) et sa mise en garde pgTAP est périmée (#563). **F8 ajoutée** : l'étude « IA vs déterministe », 6 lots, close — elle avait tourné entièrement hors roadmap. **A8** consigné (script maison plutôt que Renovate). **F7 nettoyée** (issues majors doublonnées, #234 périmé). **C4 remontée en priorité** : trois lots produit livrés sont inertes sans le tagging. |
