@@ -152,6 +152,12 @@ monitoring, sitemap) · F5 (légal avant rentrée) · **le signalement `d12f0f96
       volontairement **reporté à une fenêtre calme constatée** (STATUS §2) — l'historique public
       reste lisible pour mai→juillet 2026. Ce n'était PAS un prérequis de la campagne lycée : la
       scission qui l'était (3b/4) est faite, **§5-C9 est débloqué**.
+      **Deuxième reliquat, à faire ICI** : porter dans la Content CI privée les **assertions
+      pgTAP de contenu** devenues orphelines à la scission (issue publique MBeji/yahia-quest-arena#574).
+      Elles ont été retirées du dépôt public parce qu'elles dépendaient de lignes de corpus qui
+      n'y sont plus ; tant qu'elles ne sont pas rejouées quelque part, **ce que le contenu
+      garantissait en base n'est plus testé nulle part**. Petit lot, mais il ferme un trou de
+      couverture ouvert depuis le 2026-07-20.
 - [ ] F3. **é09 lots 1-2 — la mesure** (page admin « Économie » + simulateur `economy:check`) — condition du KPI-4 é26 (« excellent » mesurable) ; lot 3 conditionnel ensuite. _Vérifié le 2026-07-25 : aucune route admin « Économie », rien n'est commencé._
 - [ ] F4. **C4 côté Mohamed (~45 min + suivi)** : câbler le domaine `na9ranal3ab.tn` · monitoring (UptimeRobot/Sentry/PostHog) · ruleset — puis soumettre le sitemap (débloque le SEO, 🟠 depuis juin)
 - [ ] F5. **Légal avant rentrée** : GAP-003 (conformité mineurs INPDP) + GAP-024 (pages légales)
