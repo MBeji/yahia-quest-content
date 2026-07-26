@@ -107,7 +107,12 @@ Règles de boucle (non négociables) :
   chapitre) est mergé, on ouvre la classe/section en production ; les chapitres suivants, d3/d4 et
   annales s'ajoutent en continu sans bloquer. Détail et bascule `coming_soon → available` : **R-8**
   de [`FableEtudes/16-ouverture-lycee/ETUDE.md`](./16-ouverture-lycee/ETUDE.md). Applicable à toute
-  session de génération, en cours ou future.
+  session de génération, en cours ou future. ⚠️ **La bascule elle-même n'est pas un geste de
+  campagne** : c'est une **migration `open_*` du dépôt moteur** (une par section) accompagnée de son
+  test pgTAP — donc une **PR distincte sur le dépôt public**, jamais un fichier de la PR de campagne
+  (§ B3). Une tranche mergée et appliquée dont le parcours reste `coming_soon` est **invisible aux
+  élèves** et aucun gate ne le dit : si la session ne porte pas cette PR moteur, elle inscrit
+  l'ouverture au **rapport de campagne** comme reste à faire, nommément.
 - **Attendre le merge réel** d'un lot avant d'entamer le suivant (le LOT B dépend de la fiche
   mergée ; deux PR simultanées sur le registre `suivi/` se marchent dessus). ⚠️ Le dépôt de
   contenu a sa **chaîne de merge** (`.github/workflows/automerge.yml`, depuis le 2026-07-26) :
@@ -664,6 +669,9 @@ Quand la file est épuisée (ou à l'arrêt propre), rapporter au contributeur :
 - par couple traité : lien PR LOT A / LOT B, profondeur atteinte, verdict R-7 (taille du
   sondage, corrections), **coût du lot** (T-9 — tokens in/out si exposés, sinon pages lues /
   volume écrit) ;
+- l'état de la **publication** (`apply-content` dispatché, run vert, ligne `content_releases`) et
+  celui de l'**ouverture** (migration `open_*` du dépôt moteur portée, ou restant à faire — R-8) :
+  ce sont les deux gestes qui rendent le travail visible aux élèves, et aucun gate ne les réclame ;
 - couples sautés et pourquoi (déjà `[~]`, source indisponible, matière annexe…) ;
 - ce qui reste dans `_INDEX.md` / la matrice lycée pour la campagne suivante.
 
