@@ -65,6 +65,12 @@ BUDGET     : <optionnel>        # plafond de la session (tokens ou temps) ; la c
                                 # proprement en fin de lot à l'approche du plafond (T-9).
 ```
 
+> 🚀 **Sous Claude Code, tu n'as pas à remplir ce bloc à la main : `/campagne`** (skill
+> `.claude/skills/campagne/`) établit l'état des lieux, **te demande** quel couple lancer, puis
+> déroule ce document pour toi — en appelant les bons skills et en passant les gates. Il ne
+> choisit jamais le couple : la priorité reste ton arbitrage (§ Phase 0.4). Le reste de ce
+> document est ce qu'il applique, et ce qu'un autre agent applique à la main.
+
 ## La boucle (vue d'ensemble)
 
 ```

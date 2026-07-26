@@ -11,21 +11,26 @@
 - **Authoring** : le flux de référence est `FableEtudes/METHODE-GENERATION-CONTENU.md` — ouvrir
   la session sur CE repo, ajouter le moteur public (`add_repo MBeji/yahia-quest-arena`),
   éditer `content/`, laisser `content-ci` valider.
-- **Gates en local / session** (deux clones côte à côte, ce repo et `engine/` = le moteur) —
-  **deux** liens sont nécessaires, pas un : les scripts résolvent `content/` **et**
+- **Gates en local / session** — deux clones **côte à côte** : ce repo et `../engine` (le moteur).
+  **Deux** liens sont nécessaires, pas un : les scripts résolvent `content/` **et**
   `.claude/skills/…/programmes-officiels/` relativement à la racine du **moteur**.
 
   ```bash
-  rm -rf engine/content engine/.claude/skills
-  ln -s "$PWD/content"        engine/content
-  ln -s "$PWD/.claude/skills" engine/.claude/skills
-  # puis depuis engine/ :
+  # depuis la racine de CE repo
+  rm -rf ../engine/content ../engine/.claude/skills
+  ln -s "$PWD/content"        ../engine/content
+  ln -s "$PWD/.claude/skills" ../engine/.claude/skills
+  # puis depuis ../engine :
   npm ci && npm run content:check && npm run content:qa:strict &&
     npm run content:audit:strict && npm run programme:check
   ```
 
   Recette complète (jonctions Windows, contrôles, pièges) :
   `FableEtudes/METHODE-GENERATION-CONTENU.md` § Phase 0.1.
+
+- **Lancer une campagne** : `/campagne` (skill `.claude/skills/campagne/`) — état des lieux
+  vérifié, question à l'humain sur le couple à traiter, puis déroulé de la chaîne. Il ne choisit
+  jamais le couple : l'outillage donne les faits, l'arbitrage reste humain.
 
 - **CI** : `.github/workflows/content-ci.yml` fait exactement cela (double checkout + les deux
   liens). `content-audit.yml` (garde pédagogique) tourne mer. + sam. et exige le secret
