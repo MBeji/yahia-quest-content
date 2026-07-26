@@ -1,69 +1,85 @@
 name: Diag 403 (jetable)
 
 # Workflow de diagnostic JETABLE — à supprimer avant la PR de correctif.
-# But : établir expérimentalement quelles lectures `gh` sont refusées à
-# GITHUB_TOKEN sur ce dépôt privé, sous le bloc `permissions:` d'automerge.yml
-# (contents+pull-requests) puis avec `checks: read` ajouté.
+# Répétition à blanc du script corrigé d'automerge.yml, avec SON bloc `permissions:` corrigé :
+# tout est exécuté sauf le `gh pr merge` final. But : prouver que la chaîne va au bout AVANT de
+# poser le correctif sur main (un job `workflow_run` s'exécute toujours depuis la branche par
+# défaut — le correctif ne peut donc pas se valider sur sa propre PR).
 
 on:
   push:
     branches: ['wip/diag-automerge-403']
 
-jobs:
-  actuel:
-    name: Permissions actuelles d'automerge.yml
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-    steps:
-      - name: Sonder
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_REPO: ${{ github.repository }}
-          REPO: ${{ github.repository }}
-          PR: '22'
-          SHA: bbeaed9b7117c66fa4489d825d3b38fa6a3a0439
-        run: |
-          set -uo pipefail
-          p() {
-            printf -- '--- %s\n' "$1"
-            if out="$(bash -c "$2" 2>&1)"; then
-              printf '    OK   : %s\n' "${out:0:200}"
-            else
-              printf '    FAIL : %s\n' "${out:0:200}"
-            fi
-          }
-          p "REST  commits/:sha/pulls (etape 1)"      'gh api "repos/$REPO/commits/$SHA/pulls" --jq "[.[] | select(.state == \"open\")][0].number // empty"'
-          p "REST  commits/:sha/check-runs (etape 3)" 'gh api "repos/$REPO/commits/$SHA/check-runs" --paginate --jq ".check_runs[] | \"\(.name)|\(.status)|\(.conclusion // \"\")\""'
-          p "REST  commits/:sha/check-runs sans jq"   'gh api "repos/$REPO/commits/$SHA/check-runs" --jq .total_count'
-          p "REST  commits/:sha/status"               'gh api "repos/$REPO/commits/$SHA/status" --jq .state'
-          p "GQL   statusCheckRollup"                 'gh pr view "$PR" --json statusCheckRollup --jq "[.statusCheckRollup[] | \"\(.name)|\(.status)|\(.conclusion)\"] | join(\" ~ \")"'
+permissions:
+  contents: write
+  pull-requests: write
+  checks: read
 
-  avec_checks:
-    name: Idem + checks read
+jobs:
+  repetition:
+    name: Script corrigé, à blanc
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-      checks: read
     steps:
-      - name: Sonder
+      - name: Merger la PR si tout est vert (À BLANC)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           REPO: ${{ github.repository }}
-          PR: '22'
-          SHA: bbeaed9b7117c66fa4489d825d3b38fa6a3a0439
+          HEAD_SHA: ${{ github.sha }}
+          INPUT_PR: ''
+          SELF_CHECK: automerge
         run: |
-          set -uo pipefail
-          p() {
-            printf -- '--- %s\n' "$1"
-            if out="$(bash -c "$2" 2>&1)"; then
-              printf '    OK   : %s\n' "${out:0:200}"
-            else
-              printf '    FAIL : %s\n' "${out:0:200}"
-            fi
-          }
-          p "REST  commits/:sha/check-runs (etape 3)" 'gh api "repos/$REPO/commits/$SHA/check-runs" --paginate --jq ".check_runs[] | \"\(.name)|\(.status)|\(.conclusion // \"\")\""'
-          p "GQL   statusCheckRollup"                 'gh pr view "$PR" --json statusCheckRollup --jq "[.statusCheckRollup[] | \"\(.name)|\(.status)|\(.conclusion)\"] | join(\" ~ \")"'
+          set -euo pipefail
+
+          # 1) Quelle PR porte ce commit ?
+          if [ -n "${INPUT_PR:-}" ]; then
+            pr="$INPUT_PR"
+            sha="$(gh pr view "$pr" --json headRefOid --jq .headRefOid)"
+          else
+            sha="$HEAD_SHA"
+            pr="$(gh api "repos/$REPO/commits/$sha/pulls" \
+                    --jq '[.[] | select(.state == "open")][0].number // empty')"
+          fi
+          if [ -z "${pr:-}" ]; then
+            echo "Aucune PR ouverte ne porte $sha — rien à faire."; exit 0
+          fi
+          echo "PR #$pr, tête $sha"
+
+          # 2) Les opt-out (affectation séparée du `read`, comme dans le correctif).
+          meta="$(gh pr view "$pr" \
+            --json isDraft,headRefName,baseRefName \
+            --jq '[.isDraft, .headRefName, .baseRefName] | @tsv')"
+          read -r draft branch base <<<"$meta"
+          opted_out="$(gh pr view "$pr" --json labels \
+            --jq 'any(.labels[]; .name == "no-automerge")')"
+          echo "  etape 2 OK : draft=$draft branch=$branch base=$base opted_out=$opted_out"
+          # A blanc : on NE sort PAS sur les opt-out, sinon le prefixe `wip/` couperait le test.
+
+          # 3) L'étape qui 403ait : tous les check runs du SHA.
+          runs="$(gh api "repos/$REPO/commits/$sha/check-runs" --paginate \
+                    --jq ".check_runs[] | select(.name != \"$SELF_CHECK\") | \"\(.name)|\(.status)|\(.conclusion // \"\")\"")"
+          echo "  etape 3 OK : check runs lus"
+          echo "$runs" | sed 's/^/    /'
+          pending="$(echo "$runs" | awk -F'|' '$2 != "completed"' | wc -l)"
+          red="$(echo "$runs" | awk -F'|' '$3 != "success" && $3 != "skipped" && $3 != "neutral"' || true)"
+          echo "  pending=$pending rouges=$(printf '%s' "$red" | grep -c . || true)"
+
+          # 4) Mergeable + le chemin de conflit (label), sur CETTE PR jetable.
+          state=""
+          for _ in 1 2 3 4 5 6; do
+            state="$(gh pr view "$pr" --json mergeable --jq .mergeable)"
+            [ "$state" = "UNKNOWN" ] || break
+            sleep 5
+          done
+          echo "  etape 4 OK : mergeable=$state"
+          echo "  --- chemin de conflit : label needs-rebase (sans permission issues:) ---"
+          gh label create needs-rebase --color D93F0B \
+            --description "PR en conflit avec main — à rebaser par sa session" --force
+          echo "    gh label create OK"
+          gh pr edit "$pr" --add-label needs-rebase
+          echo "    gh pr edit --add-label OK"
+          gh pr edit "$pr" --remove-label needs-rebase
+          echo "    (label retire — PR jetable)"
+
+          # 5) Merge : NON exécuté à blanc.
+          echo "  etape 5 : [A BLANC] gh pr merge $pr --squash --delete-branch non execute."
