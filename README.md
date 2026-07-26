@@ -9,4 +9,5 @@ Né de la scission décidée par l'étude 24 (protection de la propriété intel
 Par où commencer : [`CLAUDE.md`](./CLAUDE.md) (conventions de ce repo) ·
 [`FableEtudes/24-protection-ip-contenu/ETUDE.md`](./FableEtudes/24-protection-ip-contenu/ETUDE.md)
 (l'étude fondatrice) · [`FableEtudes/METHODE-GENERATION-CONTENU.md`](./FableEtudes/METHODE-GENERATION-CONTENU.md)
-(la méthode de génération, inchangée).
+(la méthode de génération, à jour de la scission : deux dépôts, gates depuis le moteur,
+application par `apply-content.yml`).

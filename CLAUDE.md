@@ -8,18 +8,30 @@
 
 - **Propriété intellectuelle** : tous droits réservés — le `LICENSE-CONTENT.md` du moteur
   s'applique intégralement à ce dépôt.
-- **Authoring** : le flux `FableEtudes/METHODE-GENERATION-CONTENU.md` est inchangé — ouvrir
+- **Authoring** : le flux de référence est `FableEtudes/METHODE-GENERATION-CONTENU.md` — ouvrir
   la session sur CE repo, ajouter le moteur public (`add_repo MBeji/yahia-quest-arena`),
   éditer `content/`, laisser `content-ci` valider.
-- **Gates en local / session** (deux clones côte à côte, ce repo et `engine/` = le moteur) :
-  `rm -rf engine/content && ln -s "$PWD/content" engine/content`, puis depuis `engine/` :
-  `npm ci`, `npm run content:check`, `npm run content:qa:strict`,
-  `npm run content:audit:strict`.
-- **CI** : `.github/workflows/content-ci.yml` fait exactement cela (double checkout +
-  symlink). `content-audit.yml` (garde pédagogique hebdo) s'active quand le secret
-  `CLAUDE_CODE_OAUTH_TOKEN` est configuré — recommandé au lot 4, quand ce repo devient
-  l'unique source du contenu.
-- ⚠️ **Transition (étude 24, lots 2 → 4)** : tant que le retrait du corpus public n'est pas
-  fait, le contenu s'édite **encore dans le repo public** ; ce repo est un miroir
-  (importé de `yahia-quest-arena@ef43487`). Après le lot 4, il devient l'unique source et
-  cette note est supprimée.
+- **Gates en local / session** (deux clones côte à côte, ce repo et `engine/` = le moteur) —
+  **deux** liens sont nécessaires, pas un : les scripts résolvent `content/` **et**
+  `.claude/skills/…/programmes-officiels/` relativement à la racine du **moteur**.
+
+  ```bash
+  rm -rf engine/content engine/.claude/skills
+  ln -s "$PWD/content"        engine/content
+  ln -s "$PWD/.claude/skills" engine/.claude/skills
+  # puis depuis engine/ :
+  npm ci && npm run content:check && npm run content:qa:strict &&
+    npm run content:audit:strict && npm run programme:check
+  ```
+
+  Recette complète (jonctions Windows, contrôles, pièges) :
+  `FableEtudes/METHODE-GENERATION-CONTENU.md` § Phase 0.1.
+
+- **CI** : `.github/workflows/content-ci.yml` fait exactement cela (double checkout + les deux
+  liens). `content-audit.yml` (garde pédagogique) tourne mer. + sam. et exige le secret
+  `CLAUDE_CODE_OAUTH_TOKEN` valide.
+- **Pas d'auto-merge sur ce dépôt** (contrairement au moteur) : la session qui pousse ouvre la
+  PR, surveille la Content CI et **merge elle-même** en squash une fois verte.
+- **Le contenu ne voyage pas en migrations** : `content:emit` → `sql/content/<subject>.sql`,
+  appliqué en prod par `apply-content.yml` (`workflow_dispatch`, journalisé dans
+  `content_releases`). Ne jamais committer de SQL ici, ni de migration dans le moteur.

@@ -17,13 +17,33 @@
 > lots, les gates, l'économie de tokens. Les règles d'**authoring** (schéma, barre de qualité,
 > récompenses, notation, sélection des skills) restent chez les skills — carte canonique :
 > `.claude/skills/content-engine/references/generation-pipeline.md`, consommée par le LOT B.
-> Hiérarchie en cas de désaccord : **AGENTS.md → skills & docs normatifs → cette méthode**.
+> Hiérarchie en cas de désaccord : **AGENTS.md (dépôt moteur) → skills & docs normatifs →
+> cette méthode**.
 >
 > **Pour qui ?** Un agent IA avec vision + accès fichiers + git (Claude Code ou équivalent),
 > piloté par un contributeur qui peut ne rien connaître du projet : copier ce document **en
 > entier**, INPUT rempli, dans l'agent — et laisser la campagne se dérouler. Un accès
-> **collaborateur (write)** au dépôt `MBeji/yahia-quest-arena` est requis pour pousser (le
-> demander à Mohamed) ; à défaut, terminer chaque lot par un fork + PR classique.
+> **collaborateur (write)** au dépôt **privé** `MBeji/yahia-quest-content` est requis pour
+> pousser (le demander à Mohamed) ; le dépôt public `MBeji/yahia-quest-arena` se clone en
+> lecture seule, on n'y pousse rien pendant une campagne.
+>
+> ⚠️ **Deux dépôts depuis l'étude 24 (2026-07-20)** — à intégrer avant la première commande :
+>
+> - **`yahia-quest-content` (privé) = le corpus.** Tout ce que cette méthode écrit vit ici :
+>   fiches `programmes-officiels/`, registre `suivi/`, `content/`, les 41 skills pédagogiques,
+>   cette méthode. **Toutes les branches et toutes les PR de la campagne sont ici.**
+> - **`yahia-quest-arena` (public) = le moteur.** Aucun corpus dedans : les scripts
+>   (`npm run content:*`, `programme:*`), le schéma Zod, le compilateur SQL, `docs/`, AGENTS.md.
+>   **Toutes les commandes `npm` de cette méthode s'exécutent depuis ce clone-là** (le corpus y
+>   est branché par lien — § Phase 0.1) : le dépôt privé n'a pas de `package.json`.
+> - **Le contenu ne voyage plus en migrations.** Il se compile en `sql/content/<subject>.sql`
+>   et s'applique par le workflow `apply-content.yml` du dépôt privé (§ B3). Un agent qui
+>   commite une migration `supabase/migrations/*_generated_*_content.sql` s'est trompé de
+>   décennie — et de dépôt.
+>
+> Panorama complet de la scission :
+> [`docs/content-generation-pipeline.md`](https://github.com/MBeji/yahia-quest-arena/blob/main/docs/content-generation-pipeline.md)
+> (moteur) et [`24-protection-ip-contenu/ETUDE.md`](./24-protection-ip-contenu/ETUDE.md).
 
 ---
 
@@ -48,16 +68,16 @@ BUDGET     : <optionnel>        # plafond de la session (tokens ou temps) ; la c
 ## La boucle (vue d'ensemble)
 
 ```
-PHASE 0 (une fois par campagne) : setup + cadrage + file de travail (ordre de priorité)
+PHASE 0 (une fois par campagne) : setup 2 dépôts + cadrage + file de travail (priorité)
 pour chaque UNITÉ de la file (couple niveau × matière, ou document libre) :
   LOT A — LA FICHE   : A1 existant → A2 sources → A3 transcription (ScribeKit + vision)
                        → A4 profondeur de génération → A5 audits (QA, R-7, _INDEX)
-                       → A6 push → 1 PR (auto-merge) → merge confirmé
+                       → A6 push → 1 PR → Content CI verte → merge (manuel) confirmé
   si GENERATION = oui :
   LOT B — LE CONTENU : B1 brief + skills → puis PAR TRANCHE de ≤4 chapitres complets :
-                       B2 génération (commit local par chapitre) → B3 gates + migration
-                       + push → 1 PR → merge + prod vérifiée → tranche suivante,
-                       jusqu'à la matière complète
+                       B2 génération (commit local par chapitre) → B3 gates + push
+                       → 1 PR → merge → apply-content dispatché + prod vérifiée
+                       → tranche suivante, jusqu'à la matière complète
   contexte frais → unité suivante
 fin : PORTEE épuisée, ou arrêt propre (BUDGET) → rapport de campagne
 ```
@@ -82,10 +102,12 @@ Règles de boucle (non négociables) :
   de [`FableEtudes/16-ouverture-lycee/ETUDE.md`](./16-ouverture-lycee/ETUDE.md). Applicable à toute
   session de génération, en cours ou future.
 - **Attendre le merge réel** d'un lot avant d'entamer le suivant (le LOT B dépend de la fiche
-  mergée ; deux PR simultanées sur `_INDEX.md` se marchent dessus). ⚠️ Ce dépôt **auto-merge** :
-  pousser une branche ouvre une PR **prête, auto-merge armé**, qui se merge seule quand les
-  checks CI sont verts. Ne pousser qu'un lot fini ; point de sauvegarde : branche `wip/…`
-  (PR draft).
+  mergée ; deux PR simultanées sur le registre `suivi/` se marchent dessus). ⚠️ **Le dépôt de
+  contenu n'a PAS d'auto-merge** (contrairement au dépôt moteur) : la session qui pousse ouvre
+  la PR, **surveille la Content CI**, corrige les rouges et **merge elle-même** en squash quand
+  elle est verte (§ A6) — elle reste de garde jusqu'au merge réel. Ne pousser qu'un lot fini ;
+  point de sauvegarde : branche `wip/…` en PR **draft** (une draft ne se merge pas par
+  distraction).
 
 ## Le socle R (hérité du skill `content-ingest` — condensé, non négociable)
 
@@ -124,7 +146,7 @@ aussi contraignante que les règles R : un agent qui les viole gaspille le budge
 publié le chapitre suivant.
 
 - **T-1 — Le déterministe est gratuit : ne le refais jamais au LLM.** ScribeKit extrait les
-  couches-texte, échafaude, valide (`qa`), trace (`status`/ledger) ; les scripts du dépôt
+  couches-texte, échafaude, valide (`qa`), trace (`status`/ledger) ; les scripts du **moteur**
   valident et compilent le contenu. Re-lire en vision un PDF à couche-texte saine, re-vérifier
   à l'œil ce que `scribekit qa`/`content:qa` vérifie, ou écrire du SQL à la main = brûler du
   budget pour rien.
@@ -169,14 +191,14 @@ publié le chapitre suivant.
   quand la session doit finir, la fiche partielle **honnêtement étiquetée se pousse** (arrêt
   propre, A3.4) plutôt que de viser le « tout » dans une session à risque. Interruption
   imminente au milieu d'un chapitre ou d'une tranche ⇒ push de sauvegarde en branche `wip/…`
-  (PR draft, pas d'auto-merge), que la session suivante reprend.
+  (PR draft — qu'on ne merge pas par distraction), que la session suivante reprend.
 
 ## Profils de source
 
 | Profil               | Quand                                                                | Sources                                                                                                                   | Livrable fiche (LOT A)                                                                                                                                                              | Work-list                                                                                                |
 | -------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | **ecole-cnp**        | cycle de base (`1ere-base` → `9eme-base`)                            | guide enseignant CNP (`5…`) **+** manuel élève (`1…`), **combinés**                                                       | `programme/<niveau>/<matière>.md` + `manifest/<niveau>.json`                                                                                                                        | `programme/_INDEX.md` (couples `[ ]`)                                                                    |
-| **ecole-secondaire** | lycée (`1ere-sec` → `bac-*`)                                         | manuel élève du secondaire (`2…`) + programme officiel du ministère s'il est publié ; **manuel seul ⇒ il fait référence** | idem ecole-cnp (les sections sont des nœuds `grades` ; slugs de [`docs/lycee-architecture.md`](../docs/lycee-architecture.md))                                                      | matrice sections × matières de `docs/lycee-architecture.md` ; **créer** la ligne `_INDEX.md` dans le lot |
+| **ecole-secondaire** | lycée (`1ere-sec` → `bac-*`)                                         | manuel élève du secondaire (`2…`) + programme officiel du ministère s'il est publié ; **manuel seul ⇒ il fait référence** | idem ecole-cnp (les sections sont des nœuds `grades` ; slugs de [`docs/lycee-architecture.md`](https://github.com/MBeji/yahia-quest-arena/blob/main/docs/lycee-architecture.md))                                                      | matrice sections × matières de `docs/lycee-architecture.md` ; **créer** la ligne `_INDEX.md` dans le lot |
 | **document-libre**   | PDF d'enseignant, polycopié, annales papier — tout doc hors corpus   | le document lui-même (**droits R-2 vérifiés** : auteur, origine, autorisation)                                            | école : `programmes-officiels/sources-externes/<slug>/fiche.md` ; hors école : `content/_sources/<theme>/<slug>/fiche.md` — **même gabarit** `_TEMPLATE.md` + en-tête de provenance | — (la PR trace ; pas de ligne `_INDEX.md`)                                                               |
 | **sans-source**      | la fiche existe (`[~]`/`[x]`) mais le contenu manque sous `content/` | aucune (la fiche mergée)                                                                                                  | — (sauter le LOT A)                                                                                                                                                                 | `content/CATALOGUE.md` (sujets existants)                                                                |
 
@@ -196,7 +218,8 @@ Notes par profil :
   Manuel élève seul ⇒ il fait référence — le signaler explicitement dans la fiche. **Aucune
   source officielle trouvable ⇒ STOP** (jamais d'invention). En LOT B, les matières
   scientifiques s'écrivent en **français natif, dans le jargon des manuels officiels — jamais
-  une traduction** (décision 2026-07-13) ; sections, slugs et ids : `docs/lycee-architecture.md`.
+  une traduction** (décision 2026-07-13) ; sections, slugs et ids : `docs/lycee-architecture.md`
+  (**dépôt moteur** — `engine/docs/…` une fois le clone en place, § Phase 0.1).
 - **document-libre.** Checklist droits **avant tout token** : auteur identifié, origine,
   autorisation écrite (ou corpus officiel) — sinon refus (R-2). La fiche porte un en-tête de
   provenance (auteur, origine, autorisation, date) ; les `sources[]` du chapitre généré
@@ -207,12 +230,52 @@ Notes par profil :
 
 ## Phase 0 — bootstrap (une fois par campagne, T-6)
 
-1. **Cloner + installer l'app** :
+1. **Cloner les deux dépôts côte à côte, installer le moteur, brancher le corpus dedans.** Le
+   corpus est l'espace de travail (branches, commits, PR) ; le moteur fournit les commandes.
+   Depuis le répertoire parent qui accueillera les deux :
 
    ```bash
-   git clone https://github.com/MBeji/yahia-quest-arena.git && cd yahia-quest-arena
-   npm install   # Node 22 / npm 10 — installe aussi les hooks git (Prettier au commit, verify au push)
+   git clone https://github.com/MBeji/yahia-quest-content.git corpus   # privé  — l'espace de travail
+   git clone https://github.com/MBeji/yahia-quest-arena.git   engine   # public — le moteur
+   (cd engine && npm ci)                                               # Node 22 / npm 10
    ```
+
+   Les scripts du moteur résolvent `content/` **et**
+   `.claude/skills/content-ecole-tn/references/programmes-officiels/` **relativement à leur
+   propre racine** : sans les deux liens ci-dessous, `content:*` ne voit aucun corpus et
+   `programme:check`/`content:audit` échouent avant même de le lire. C'est exactement ce que
+   fait la CI privée (`.github/workflows/content-ci.yml`) :
+
+   ```bash
+   rm -rf engine/content engine/.claude/skills
+   ln -s "$PWD/corpus/content"        engine/content
+   ln -s "$PWD/corpus/.claude/skills" engine/.claude/skills
+   ```
+
+   Windows sans mode développeur (`ln -s` inopérant) — jonctions, mêmes chemins :
+
+   ```powershell
+   Remove-Item -Recurse -Force engine\content, engine\.claude\skills -ErrorAction Ignore
+   New-Item -ItemType Junction -Path engine\content        -Target $PWD\corpus\content
+   New-Item -ItemType Junction -Path engine\.claude\skills -Target $PWD\corpus\.claude\skills
+   ```
+
+   Contrôle avant d'aller plus loin (les deux assertions de la CI) :
+
+   ```bash
+   test -f engine/content/misconceptions.json &&
+   test -d engine/.claude/skills/content-ecole-tn/references/programmes-officiels/manifest &&
+   echo "corpus + skills branchés"
+   ```
+
+   Trois choses à savoir, sinon on casse quelque chose :
+   - **Toutes les commandes `npm run …`** de cette méthode se lancent depuis **`engine/`** ;
+     **tous les `git`/`gh`** (branche, commit, PR) depuis **`corpus/`**. Le dépôt de contenu n'a
+     ni `package.json`, ni husky, ni Prettier — **rien ne s'y formate au commit**.
+   - `engine/` est un **clone de service** : le lien écrase ses 5 skills techniques et son
+     `git status` devient bruyant. On n'y commite ni n'y pousse **jamais** pendant une campagne.
+   - ⚠️ Un lien/jonction ne se supprime **jamais** par `rm -rf` (ça viderait la cible, donc le
+     corpus) : `rm` sur le lien en POSIX, `(Get-Item <lien> -Force).Delete()` en PowerShell.
 
 2. **Cloner + builder ScribeKit** (moteur déterministe — 0 LLM, 0 clé API) :
 
@@ -222,7 +285,8 @@ Notes par profil :
    alias scribekit="node $(pwd)/../ScribeKit/dist/bin.js"
    ```
 
-3. **Lire le cadrage — maintenant, pas à chaque lot** :
+3. **Lire le cadrage — maintenant, pas à chaque lot.** Tout est dans `corpus/`, sauf mention
+   contraire :
    - `programmes-officiels/programme/README.md` (spec de la couche de persistance + « Recette »
      de génération — la procédure normative du LOT B) ;
    - `programme/_TEMPLATE.md` (le gabarit de fiche) + un modèle abouti :
@@ -230,9 +294,11 @@ Notes par profil :
    - `.claude/skills/content-ingest/SKILL.md` (les règles R intégrales — elles s'appliquent à
      toi) ;
    - si `GENERATION: oui` : `.claude/skills/content-engine/references/generation-pipeline.md`
-     (la carte des skills du LOT B).
+     (la carte des skills du LOT B) ;
+   - **dépôt moteur** : `engine/AGENTS.md` § « Content pipeline » (la hiérarchie qui gagne) et
+     `engine/docs/content-generation-pipeline.md` (le flux complet fichiers → SQL → prod).
 
-   L'espace de travail des fiches, dans le dépôt :
+   L'espace de travail des fiches, dans le dépôt de **contenu** :
 
    ```
    .claude/skills/content-ecole-tn/references/programmes-officiels/
@@ -247,10 +313,13 @@ Notes par profil :
    └── manifest/<niveau>.json                   ← chapitrage machine-vérifiable (Zod)
    ```
 
-   Trois commandes gouvernent le registre : `npm run programme:check` (le gate — schémas +
-   anti-doublon + cohérence disque↔registre↔index, exécuté en CI), `npm run programme:index`
-   (régénère la vue), `npm run programme:corpus` (resynchronise le snapshot corpus depuis
-   `cnp-officiel/catalogue.csv`, machine locale uniquement).
+   Trois commandes gouvernent le registre — **depuis `engine/`**, comme toutes les autres :
+   `npm run programme:check` (le gate — schémas + anti-doublon + cohérence disque↔registre↔index,
+   exécuté par la Content CI), `npm run programme:index` (régénère la vue), `npm run
+   programme:corpus` (resynchronise le snapshot corpus depuis le `cnp-officiel/catalogue.csv`
+   voisin du clone moteur — `--catalogue <chemin>` pour le pointer ailleurs ; machine locale
+   uniquement). Elles écrivent **dans le corpus**, à travers le lien : le diff apparaît dans
+   `corpus/`, c'est là qu'on le commite.
 
 4. **Construire la file de travail**, dans l'**ordre de priorité** (décision 2026-07-14 — le
    lycée d'abord : c'est le gros trou du corpus, le cycle de base est largement couvert) :
@@ -280,7 +349,7 @@ Notes par profil :
 
 ### A1 — Vérifier l'existant (R-4)
 
-Branche fraîche :
+Branche fraîche — **dans `corpus/`** (toute la campagne se branche et se pousse là) :
 
 ```bash
 git fetch origin main && git checkout -B feat/transcription-<niveau>-<matiere> origin/main
@@ -315,6 +384,7 @@ chiffres. Téléchargement bloqué ⇒ demander les PDF et continuer avec les co
    manifeste) :
 
    ```bash
+   # depuis corpus/ — les chemins -o sont relatifs au dépôt de contenu
    # profils ecole-* :
    scribekit app-cnp <guide.pdf> [<manuel.pdf>] --grade <niveau> --subject <subject-id> \
      --lang <ar|fr|en> -o .claude/skills/content-ecole-tn/references/programmes-officiels
@@ -367,6 +437,7 @@ guide + manuel :
 1. **QA déterministe** (T-1) — 0 erreur exigé :
 
    ```bash
+   # depuis corpus/
    scribekit qa .claude/skills/content-ecole-tn/references/programmes-officiels
    scribekit status .claude/skills/content-ecole-tn/references/programmes-officiels  # plus aucun pending
    ```
@@ -385,8 +456,12 @@ guide + manuel :
    - **verdict consigné** : fiche § Incertitudes + `_INDEX.md`
      (« R-7 AAAA-MM-JJ, sondage N pages, X corrections »).
 
-3. **Gate du dépôt** : `npm run verify` (lint + typecheck + tests — tourne sans backend). Le
-   hook pre-commit formate (Prettier) : le laisser faire, jamais `--no-verify`.
+3. **Gate du dépôt de contenu** — depuis `engine/`, 0 erreur exigé :
+   `npm run programme:check` (et, si le lot a aussi touché `content/`, `content:check` +
+   `content:qa:strict`). Le `npm run verify` du **moteur** (lint + typecheck + tests de l'app)
+   **ne concerne pas** un LOT A : le corpus ne porte ni code ni hooks git — rien ne s'y formate
+   au commit, il n'y a pas de `--no-verify` à contourner. La Content CI rejouera exactement ces
+   gates sur la PR.
 
 4. **Mettre à jour le REGISTRE `suivi/<grade>.json`** (⛔ jamais `_INDEX.md` à la main — c'est
    une vue générée) : créer/actualiser l'entrée du couple avec le **statut normé** (`partielle`
@@ -398,6 +473,7 @@ guide + manuel :
    `suivi/<gradeSlug>.json` (slugs de `docs/lycee-architecture.md`). Puis :
 
    ```bash
+   # depuis engine/ — l'écriture atterrit dans corpus/ via le lien
    npm run programme:index    # régénère la vue _INDEX.md
    npm run programme:check    # 0 erreur exigé — doublons, plages, cohérence disque↔registre
    ```
@@ -407,19 +483,22 @@ guide + manuel :
 À committer — et **rien d'autre** : la fiche, le manifeste, le **registre**
 `suivi/<grade>.json` et la vue `_INDEX.md` régénérée (+ sorties YAML du profil générique si
 demandées). ⛔ Jamais : `.scribekit/ledger.json`, `AVANCEMENT.md`, les PDF sources, ni quoi que
-ce soit sous `content/` ou `supabase/migrations/` (ça, c'est le LOT B) — seule exception : la
-fiche `content/_sources/<theme>/<slug>/fiche.md` du profil document-libre non scolaire, qui est
-un livrable du LOT A.
+ce soit sous `content/` (ça, c'est le LOT B) — seule exception : la fiche
+`content/_sources/<theme>/<slug>/fiche.md` du profil document-libre non scolaire, qui est un
+livrable du LOT A. Aucun SQL, aucune migration : le corpus n'en porte pas (§ B3).
 
 ```bash
+# depuis corpus/
 git add .claude/skills/content-ecole-tn/references/programmes-officiels/   # document-libre hors école : content/_sources/<theme>/<slug>/
 git commit -m "feat(programme): transcription <matière> <niveau> — <codes sources> (FableEtudes/12#persistance)"
 git push -u origin feat/transcription-<niveau>-<matiere>
+gh pr create --fill
 ```
 
-La PR s'ouvre **auto-merge armé** : surveiller les checks (`gh pr checks <n> --watch`),
-corriger tout rouge et re-pousser, puis **confirmer que le merge a réellement eu lieu** avant
-le LOT B (ou le couple suivant).
+**Pas d'auto-merge ici** — la session qui a poussé reste de garde : surveiller la Content CI
+(`gh pr checks <n> --watch`), corriger tout rouge et re-pousser, puis **merger elle-même**
+(`gh pr merge <n> --squash --delete-branch`) et **confirmer que le merge a réellement eu lieu**
+avant le LOT B (ou le couple suivant).
 
 ---
 
@@ -432,7 +511,7 @@ le LOT B (ou le couple suivant).
 
 ### B1 — Brief + skills (T-6, T-7)
 
-1. Branche fraîche : `git fetch origin main`, puis
+1. Branche fraîche, **dans `corpus/`** : `git fetch origin main`, puis
    `git checkout -B feat/content-<subject-id> origin/main`.
 2. La procédure normative de cette phase est la **« Recette »** de
    `programmes-officiels/README.md`. Sa règle d'or (= T-3) : **la fiche
@@ -465,18 +544,19 @@ contexte : **brief matière + la section de la fiche de CE chapitre** :
   (1ère–3ème) ⇒ presque tout illustré, coloré ;
 - auto-vérification par chapitre : re-résolution à l'aveugle, distracteurs = erreurs exécutées,
   équilibre des clés, notation standard (0-9, LTR ; milliers arabes en U+00A0 **cohérent**) ;
-- **commit local après chaque chapitre complet** (fichiers `content/` seulement — la migration
-  vient en B3). Un chapitre part **complet ou pas du tout** dans une PR ready (cours + résumé +
-  quiz + ≥1 mission) : un chapitre entamé mais pas fini reste hors tranche (ou part en `wip/`
-  si la session s'interrompt, T-10).
+- **commit local après chaque chapitre complet** (fichiers `content/` seulement — il n'y a
+  aucun SQL à committer, § B3). Un chapitre part **complet ou pas du tout** dans une PR ready
+  (cours + résumé + quiz + ≥1 mission) : un chapitre entamé mais pas fini reste hors tranche
+  (ou part en `wip/` si la session s'interrompt, T-10).
 
 Tranche pleine — ou budget/fenêtre qui approche de sa fin — ⇒ passer en B3 pour la livrer. La
 matière est **finie** quand `content:audit` ne signale plus ni chapitre manquant ni chapitre
 incomplet pour ce sujet vs le manifeste.
 
-### B3 — Gates, migration, push, prod (à chaque tranche)
+### B3 — Gates, push, prod (à chaque tranche)
 
 ```bash
+# depuis engine/ (le corpus y est branché — § Phase 0.1)
 npm run content:check          # validation Zod de tout le contenu
 npm run content:qa:strict      # QA stricte — 0 [error]
 npm run content:audit          # conformité au programme + couverture vs manifeste
@@ -490,29 +570,46 @@ Puis **audit pédagogique** : appliquer le skill `content-audit` sur les **chapi
 tranche** (re-résoudre chaque question à l'aveugle, clés/distracteurs/calibrage) et corriger
 avant de pousser.
 
-```bash
-npm run content:build -- --subject <subject-id>
-```
+**Rien à compiler à la main** (étude 24 D-3) : le contenu **ne voyage plus en migrations**. Il
+est compilé par `content:emit` en un fichier **stable par matière** `sql/content/<subject>.sql`,
+et c'est le workflow d'application qui l'émet au moment d'appliquer. Un auteur ne commite donc
+**que des fichiers `content/`** — jamais de SQL.
 
-⚠️ **JAMAIS `content:build` sans `--subject`** (il régénérerait ~60 sujets — migrations
-parasites à ne pas committer). **Garder l'horodatage neuf proposé** ; ne jamais réutiliser
-celui d'une migration existante (elle serait « up to date » et sautée en prod). Chaque tranche
-produit ainsi **une nouvelle migration du sujet** (idempotente, cumulative — le pattern
-documenté de `math`/`math-6eme` ; ne jamais supprimer celles des tranches précédentes). Puis
-`npm run verify`, et le **commit de tranche** (les chapitres de la tranche **+ la migration
-générée**, rien d'autre) :
+> ⚠️ **Ne jamais lancer `npm run content:build`.** Sans `--sql-dir`, il écrit des migrations
+> horodatées dans `engine/supabase/migrations/` : un canal **mort** depuis l'étude 24, et une
+> fuite de corpus dans le dépôt **public** que son gate `leak:check` bloque. Pour inspecter le
+> SQL localement (facultatif, jamais committé), émettre dans un répertoire jetable :
+> `node --experimental-strip-types scripts/content/build.ts --subject <id> --sql-dir /tmp/sql-check`.
+
+**Commit de tranche** — les chapitres de la tranche, rien d'autre :
 
 ```bash
-git add content/<subject-id> supabase/migrations/<ts>_generated_<subject-id>_content.sql
+# depuis corpus/
+git add content/<subject-id>
 git commit -m "feat(content): <subject-id> ch.NN-MM — génération depuis la fiche (FableEtudes/12#generation)"
 git push -u origin feat/content-<subject-id>-chNN-MM
+gh pr create --fill
 ```
 
-La PR s'auto-merge comme au LOT A ; **au merge, la migration s'applique seule en prod**
-(`db-migrate-prod`). Confirmer le merge, vérifier dans l'onglet Actions que le run affiche bien
-`Applying migration <ts>_generated_<subject-id>…` (pas « Remote database is up to date »), puis
+Comme au LOT A : **pas d'auto-merge** — surveiller la Content CI, corriger, puis
+`gh pr merge <n> --squash --delete-branch` et confirmer le merge.
+
+**Puis la mise en prod, qui est un geste délibéré.** Contrairement au canal schéma du moteur
+(`db-migrate-prod`, automatique au merge), `apply-content.yml` est en **`workflow_dispatch`
+uniquement** — le déclencheur automatique prévu par l'étude 24 est **désarmé** : _un merge
+n'applique rien_. Il faut le dispatcher (write requis sur le dépôt privé) :
+
+```bash
+gh workflow run apply-content.yml -f subjects="<subject-id>" -f dry_run=true    # le plan d'abord
+gh workflow run apply-content.yml -f subjects="<subject-id>" -f dry_run=false   # puis l'application
+```
+
+Le run garde la cible (refus si l'URL n'est pas la prod), prend un `pg_dump` avant écriture,
+applique chaque sujet en une transaction (`ON_ERROR_STOP`, idempotent : rejouer est sûr) et
+**journalise** dans `content_releases`. Vérifier le run vert **et** la ligne du journal, puis
 **tranche suivante** (branche fraîche depuis `origin/main` mergé, B2) — et quand la matière est
-finie, **reprendre la boucle** au couple suivant.
+finie, **reprendre la boucle** au couple suivant. Un contributeur externe sans droit de
+dispatch s'arrête au merge et le signale : la publication reste au responsable du dépôt.
 
 ---
 
@@ -544,6 +641,12 @@ ne s'estime pas.
   générer** ; repasser par A3–A4.
 - Un chapitre appelle un **format de contenu inexistant** dans le moteur ⇒ signalement (issue)
   vers l'étude 03 / le catalogue de formats, jamais un format ad hoc.
+- **Rien ne s'applique à la main en base** : ni `psql`, ni l'éditeur SQL Supabase, ni
+  `supabase db push`. Le seul canal du contenu, c'est `apply-content.yml` (§ B3). Un run rouge
+  ou coupé ⇒ lire son résumé et **le redispatcher** (l'application est idempotente), jamais
+  compenser à la main.
+- Une **migration** ou un fichier `sql/` dans un commit de campagne ⇒ erreur de canal (§ B3) :
+  retirer le fichier, ne jamais le pousser — a fortiori dans le dépôt public.
 - Budget insuffisant ⇒ arrêt propre **au dernier palier poussable** (fin de tranche en LOT B,
   fiche partielle étiquetée en LOT A) + étiquetage honnête (T-9/T-10) ; interruption imminente
   au milieu d'un chapitre ⇒ sauvegarde `wip/…` (PR draft). La campagne reprendra où
@@ -552,5 +655,6 @@ ne s'estime pas.
 ---
 
 _Cette méthode applique les règles du skill `content-ingest` (R-1…R-7), la « Recette » de
-`programmes-officiels/README.md` et les études 12/13. En cas de désaccord : **AGENTS.md**
-(racine du dépôt) gagne, puis les skills et docs normatifs, puis cette méthode._
+`programmes-officiels/README.md` et les études 12/13 ; sa topologie deux dépôts vient de
+l'étude 24. En cas de désaccord : **AGENTS.md** (racine du dépôt **moteur**) gagne, puis les
+skills et docs normatifs, puis cette méthode._
