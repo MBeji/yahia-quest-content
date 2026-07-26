@@ -1,0 +1,76 @@
+name: Diag 403 (jetable)
+
+# Workflow de diagnostic JETABLE — à supprimer avant la PR de correctif.
+# But : établir expérimentalement quelles lectures `gh` sont refusées à
+# GITHUB_TOKEN sur ce dépôt privé, sous le bloc `permissions:` d'automerge.yml
+# (contents+pull-requests) puis avec `issues:` ajouté.
+
+on:
+  push:
+    branches: ['wip/diag-automerge-403']
+
+jobs:
+  actuel:
+    name: Permissions actuelles d'automerge.yml
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Sonder
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          REPO: ${{ github.repository }}
+          PR: '22'
+        run: |
+          set -uo pipefail
+          p() {
+            printf -- '--- %s\n' "$1"
+            if out="$(bash -c "$2" 2>&1)"; then
+              printf '    OK   : %s\n' "${out:0:200}"
+            else
+              printf '    FAIL : %s\n' "${out:0:200}"
+            fi
+          }
+          p "REST  pulls/:pr .draft"          'gh api "repos/$REPO/pulls/$PR" --jq .draft'
+          p "REST  pulls/:pr labels inline"   'gh api "repos/$REPO/pulls/$PR" --jq "[.labels[].name] | tostring"'
+          p "REST  pulls/:pr base+head+draft" 'gh api "repos/$REPO/pulls/$PR" --jq "[.draft, .head.ref, .base.ref] | @tsv"'
+          p "REST  pulls/:pr .mergeable"      'gh api "repos/$REPO/pulls/$PR" --jq ".mergeable | tostring"'
+          p "GQL   pr view isDraft,refs"      'gh pr view "$PR" --json isDraft,headRefName,baseRefName --jq "[.isDraft,.headRefName,.baseRefName] | @tsv"'
+          p "GQL   pr view labels"            'gh pr view "$PR" --json labels --jq "any(.labels[]; .name == \"no-automerge\")"'
+          p "GQL   pr view mergeable"         'gh pr view "$PR" --json mergeable --jq .mergeable'
+          p "REST  labels du dépôt"           'gh api "repos/$REPO/labels" --jq "[.[].name] | tostring"'
+          p "GQL   gh label list"             'gh label list -L 3'
+          p "REST+ gh label create"           'gh label create diag-403-probe --color ededed --description probe --force'
+          p "REST- gh label delete"           'gh label delete diag-403-probe --yes'
+
+  avec_issues:
+    name: Idem + issues write
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      - name: Sonder
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          REPO: ${{ github.repository }}
+          PR: '22'
+        run: |
+          set -uo pipefail
+          p() {
+            printf -- '--- %s\n' "$1"
+            if out="$(bash -c "$2" 2>&1)"; then
+              printf '    OK   : %s\n' "${out:0:200}"
+            else
+              printf '    FAIL : %s\n' "${out:0:200}"
+            fi
+          }
+          p "GQL   pr view labels"            'gh pr view "$PR" --json labels --jq "any(.labels[]; .name == \"no-automerge\")"'
+          p "REST  labels du dépôt"           'gh api "repos/$REPO/labels" --jq "[.[].name] | tostring"'
+          p "GQL   gh label list"             'gh label list -L 3'
+          p "REST+ gh label create"           'gh label create diag-403-probe --color ededed --description probe --force'
+          p "REST- gh label delete"           'gh label delete diag-403-probe --yes'
