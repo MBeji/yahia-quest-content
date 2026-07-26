@@ -4,7 +4,7 @@
 
 > **Source** : guide enseignant `501603P00.pdf` (`cnp-officiel/manuels/asasi/c6/enseignant/`) — titre réel imprimé sur la page de garde : « **دليل المعلّم في اللّغة العربيّة — السّنة السّادسة من التّعليم الأساسي** » (Guide du maître en langue arabe — 6e année de l'enseignement de base). Auteurs (تأليف) : **محرز بلعيد · حكيم بنعبادة · سامي الجازي · خالد التّهزرطي · نانع العبدلي** ; تقييم (évaluation) : **عزّ الدّين الرزقي · منية قارة بيبان · مسعود الماجري**. Éditeur : المركز الوطني البيداغوجي · وزارة التربية · الجمهوريّة التّونسيّة. الرمز : **501 603**. 128 p. (PDF, A4 portrait).
 > **⚠️ Le titre annoncé par la consigne (« الدليل المرجعي في قواعد اللغة ») n'est PAS le titre réel** : c'est un **دليل المعلّم** (guide du maître), pas un « دليل مرجعي ». Mais la consigne a raison sur le **fond** : ce guide est **fortement orienté قواعد/grammaire** — son cœur théorique (المفاهيم النّظريّة, p.13–24) est un précis de grammaire/morphologie/orthographe, et son volet pratique (p.33–36) **détaille la progression annuelle des faits de langue, unité par unité**. (Voir §6.)
-> **Pages lues** (numéros **imprimés** ≈ PDF) : page de garde (PDF 1) ; **مقدّمة** p.3 ; **intercalaire الجانب النظريّ** (sommaire des 4 sections) p.4 ; **I. نظام الوحدات** p.5–9 (مفهوم الوحدة p.5, شروط/مكوّنات p.6–7, **مراحل درس قواعد اللّغة : أتهيّأ / ألاحظ وأستنتج / أتدرّب / أدمج** p.8–9) ; **II. المقاربة بالكفايات في مجال اللّغة العربيّة** p.10–12 (مفهوم الكفاية, كفاية المادّة : التواصل الشفوي / إنتاج النصوص / **استعمال قواعد اللّغة** p.12) ; **III. أهمّ المفاهيم النّظريّة الواردة بالبرنامج = noyau grammaire** : **استعمال قواعد اللّغة → القرائن (لفظيّة : الإعراب/الرتبة/المطابقة/الصِّفة ; معنويّة) p.13** ; **الفعل** (الماضي/المضارع/الأمر, اللازم/المتعدّي), **الاسم** (الجامد : اسم الذات/اسم المعنى/المصدر ; المشتقّ : اسم الفاعل/اسم المفعول/المصدر) p.14 ; **الأوزان** (المجرّد/المزيد) + **رسم الهمزة في أوّل/آخر الكلمة** + تصريف النّاقص (سعى/مشى/رضي/دعا) p.15–18 ; **المركّبات** (بالتمييز, المركّب النحويّ الإسناديّ) + **علامات الإعراب** p.15–16 ; **التواصل الشفوي** (القراءة الواصلة, المقام) p.18 ; **القراءة والإنتاج الكتابيّ** (المقطع السّردي : بنية ثلاثيّة/خماسيّة, مسار التحسين/الانحطاط ; المقطع الوصفيّ ; الحواريّ ; التوجيهيّ) p.19–24 ; **VI. المسار التشخيصيّ / التقييم** p.25–32 (معايير التواصل الشفوي p.25, القراءة p.26, الإنتاج الكتابيّ + جدول توزيع الأعداد /20 p.27, **سلّم التملّك + حجم النصوص (tableau par année) p.28**, شبكات إصلاح الإنتاج الكتابيّ p.29–31, **معايير التقييم في استعمال قواعد اللّغة** p.32) ; **الجانب العملي** : **1. توزيع الكفايات والأهداف على الوحدات** (calendrier annuel : 6 وحدات, أكتوبر→جوان) p.33, **القراءة par unité** p.34, **استعمال قواعد اللّغة par unité (الوحدة 1→6) = LA progression grammaticale** p.35, **الإنتاج الكتابيّ par unité** p.36 ; **خارطة الوحدات** : intercalaire p.37 + **les 6 cartes d'unité, transcrites cellule par cellule** — و1 p.38–39, و2 p.40–41, و3 p.42–43, و4 p.44–45, و5 p.46–47, و6 p.48–49 (§2 bis) ; intercalaires **تقديم الوحدة الأولى** p.50 et **مذكّرات القراءة** p.51 ; **les 8 مذكّرات القراءة de l'unité 1** p.52–63 (§2 ter) ; **مذكّرات الإنتاج الكتابيّ** p.64–72, **مذكّرات قواعد اللّغة** p.73–83 et **l'الإدماج** (texte + مذكّرة) p.84–87 (§2 quater). **Offset printed↔PDF ≈ 0** au front lu. **Transcrit le** : 2026-06-28 (p.1–39) ; **complété le 2026-07-26** (p.40–87 : les six cartes d'unité, les intercalaires et les مذكّرات القراءة de l'unité 1). **Statut** : transcription fidèle.
+> **Pages lues** (numéros **imprimés** ≈ PDF) : page de garde (PDF 1) ; **مقدّمة** p.3 ; **intercalaire الجانب النظريّ** (sommaire des 4 sections) p.4 ; **I. نظام الوحدات** p.5–9 (مفهوم الوحدة p.5, شروط/مكوّنات p.6–7, **مراحل درس قواعد اللّغة : أتهيّأ / ألاحظ وأستنتج / أتدرّب / أدمج** p.8–9) ; **II. المقاربة بالكفايات في مجال اللّغة العربيّة** p.10–12 (مفهوم الكفاية, كفاية المادّة : التواصل الشفوي / إنتاج النصوص / **استعمال قواعد اللّغة** p.12) ; **III. أهمّ المفاهيم النّظريّة الواردة بالبرنامج = noyau grammaire** : **استعمال قواعد اللّغة → القرائن (لفظيّة : الإعراب/الرتبة/المطابقة/الصِّفة ; معنويّة) p.13** ; **الفعل** (الماضي/المضارع/الأمر, اللازم/المتعدّي), **الاسم** (الجامد : اسم الذات/اسم المعنى/المصدر ; المشتقّ : اسم الفاعل/اسم المفعول/المصدر) p.14 ; **الأوزان** (المجرّد/المزيد) + **رسم الهمزة في أوّل/آخر الكلمة** + تصريف النّاقص (سعى/مشى/رضي/دعا) p.15–18 ; **المركّبات** (بالتمييز, المركّب النحويّ الإسناديّ) + **علامات الإعراب** p.15–16 ; **التواصل الشفوي** (القراءة الواصلة, المقام) p.18 ; **القراءة والإنتاج الكتابيّ** (المقطع السّردي : بنية ثلاثيّة/خماسيّة, مسار التحسين/الانحطاط ; المقطع الوصفيّ ; الحواريّ ; التوجيهيّ) p.19–24 ; **VI. المسار التشخيصيّ / التقييم** p.25–32 (معايير التواصل الشفوي p.25, القراءة p.26, الإنتاج الكتابيّ + جدول توزيع الأعداد /20 p.27, **سلّم التملّك + حجم النصوص (tableau par année) p.28**, شبكات إصلاح الإنتاج الكتابيّ p.29–31, **معايير التقييم في استعمال قواعد اللّغة** p.32) ; **الجانب العملي** : **1. توزيع الكفايات والأهداف على الوحدات** (calendrier annuel : 6 وحدات, أكتوبر→جوان) p.33, **القراءة par unité** p.34, **استعمال قواعد اللّغة par unité (الوحدة 1→6) = LA progression grammaticale** p.35, **الإنتاج الكتابيّ par unité** p.36 ; **خارطة الوحدات** : intercalaire p.37 + **les 6 cartes d'unité, transcrites cellule par cellule** — و1 p.38–39, و2 p.40–41, و3 p.42–43, و4 p.44–45, و5 p.46–47, و6 p.48–49 (§2 bis) ; intercalaires **تقديم الوحدة الأولى** p.50 et **مذكّرات القراءة** p.51 ; **les 8 مذكّرات القراءة de l'unité 1** p.52–63 (§2 ter) ; **مذكّرات الإنتاج الكتابيّ** p.64–72, **مذكّرات قواعد اللّغة** p.73–83 et **l'الإدماج** (texte + مذكّرة) p.84–87 (§2 quater) ; **وضعيّات تقييم الوحدات** p.88–127 et le **فهرس** p.128 (§2 quinquies). **Le guide est désormais lu de bout en bout (128/128 p.)** ; le détail de ce qui est transcrit cellule par cellule et de ce qui l'est au niveau du gabarit est dit en §6. **Offset printed↔PDF ≈ 0** au front lu. **Transcrit le** : 2026-06-28 (p.1–39) ; **complété le 2026-07-26** (p.40–128 : les six cartes d'unité, les intercalaires et les مذكّرات القراءة de l'unité 1). **Statut** : transcription fidèle.
 > **Langue d'enseignement** : `ar` (monolingue — langue d'instruction officielle). **gradeSlug** : `6eme-base`. **subject id** attendu : `arabic-6eme`.
 
 ## 1. Cadre & compétences (الكفايات / المقاربة بالكفايات)
@@ -389,6 +389,105 @@ méthode : **قراءة نصّ الموضوع → الفصل بين المعطى
 > tout texte** s'écarte du modèle officiel ; l'exercice d'intégration attendu en fin de chapitre
 > devrait, lui, croiser compréhension + fait de langue + production.
 
+## 2 quinquies. وضعيّات تقييم الوحدات — les épreuves officielles (p.88–127) et le فهرس (p.128)
+
+> **Transcrit le 2026-07-26.** Dernier tiers du guide : **une épreuve par unité et par activité**,
+> prête à photocopier (en-tête « اسم التلميذ … القسم … »), notée sur une échelle de **درجات التملّك**.
+> C'est la **calibration officielle du niveau attendu en fin d'unité** — le meilleur étalon dont on
+> dispose pour doser un QCM de 6ème.
+
+### La règle de notation (p.88, « توضيحات حول درجات التملّك في الاختبارات التقييميّة »)
+
+Texte fidèle :
+
+- **في القراءة** — « تسند العلامة **(+)** إذا كان مضمون الإجابة صحيحا، وكانت صياغتها سليمة ؛
+  **(+−)** إذا كان مضمون الإجابة صحيحا، ولم تكن صياغتها سليمة ؛ **(−)** إذا كان مضمون الإجابة خاطئا،
+  ولم تكن صياغتها سليمة ».
+- **في الإنتاج الكتابيّ** — « **يعتمد سلّم خماسيّ الدّرجات** وفق شبكة الإصلاح الواردة بالقسم النظريّ »
+  (les cinq colonnes imprimées sur les grilles : `++++` `+++` `−++` `+−−` `−−−`).
+- **في قواعد اللّغة** — « **(+)** إذا كانت الإجابة صحيحة ؛ **(+−)** إذا كان **ثلثا** الإجابة صحيحين ؛
+  **(−)** إذا كان **ثلث** الإجابة فقط صحيحا ».
+
+> **Deux enseignements directement transposables** : (1) en lecture, **le fond et la forme sont notés
+> ensemble** — une bonne réponse mal formulée n'est que partiellement acquise ; (2) en grammaire, le
+> barème raisonne en **fractions d'items** (2/3, 1/3), ce qui suppose des questions à **plusieurs
+> occurrences** (« أستخرج ثلاثة أسماء… ») plutôt qu'à réponse unique.
+
+### 1. تقييم القراءة (p.89–107) — 6 épreuves, une par unité
+
+Chaque épreuve = **le texte `للتّقييم` de l'unité, imprimé et intégralement vocalisé** (1 page) +
+**la grille de questions** (2 pages), colonne `رقم المعيار` à gauche.
+
+| Unité | Texte de l'épreuve                   | Auteur / source (telle qu'imprimée)                                                                          | pages     |
+| ----- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------ | --------- |
+| 1     | **سمكٌ .. ودُلفينُ**                 | عبد الوهّاب الفقيه رمضان, _رجل في الأوحال_, الدّار التونسيّة للنّشر, 1985, ص ص 130–131 (بتصرّف)              | p.90–92   |
+| 2     | **في طريقي إلى المنزل**              | محمّد المصمودي, _قال صديقي_, مطبعة التسفير الفني, 2001, ص ص 39–40 (بتصرّف)                                   | p.93–95   |
+| 3     | **شواءُ الرّؤوس**                    | شاذلي الفلاّح, _الحياة الثقافيّة_, العدد 151, جانفي 2004, ص ص 117–118 (بتصرّف)                               | p.96–98   |
+| 4     | **الحمامةُ والثّعلبُ ومالكُ الحزين** | ابن المقفّع, _كليلة ودمنة_, دار المسيرة, بيروت, 1981, ص ص 285–288 (بتصرّف)                                   | p.99–101  |
+| 5     | **بطلٌ من قرطاج**                    | محمّد كامل حسن المحامي, _هنيبعل فاتح أوروبّا_, منشورات المكتب العالمي للطباعة والنشر, بيروت, 1988, ص ص 71–79 | p.102–104 |
+| 6     | **لنحفظْ هذه الثّروة**               | وزارة البيئة والتهيئة الترابيّة, _خمسون نصيحة ونصيحة لحماية المحيط_, تونس, ط 3, 1995, ص 20 (بتصرّف)          | p.105–107 |
+
+**Les questions posées (relevé complet de l'épreuve de l'unité 1, p.91–92)** — représentatives du
+gabarit : (1) compléter un tableau **أهمّ الأحداث / الإطار المكانيّ / الإطار الزّمانيّ** partiellement
+pré-rempli ; (2) une question de compréhension **suivie de « لماذا ؟ »** ; (3) identifier **deux états
+psychologiques** et en **extraire les قرائن du texte** ; (4) remplacer trois expressions soulignées
+par un équivalent **d'après le contexte** ; (5) **résumer le texte en cinq lignes** à l'aide d'une
+liste d'événements donnée ; (6) donner son avis motivé sur la décision d'un personnage ; (7) une
+question « **لو كنتَ مكانه، أتفعل ما فعل ؟ علّل اختيارك** ».
+
+> **Le niveau visé, concrètement** : aucune question n'est un simple prélèvement — même la n°1
+> impose de **trier** les informations dans une grille ; les n°3 et 4 exigent une **preuve textuelle**
+> ou une **inférence lexicale contextuelle** ; les n°6 et 7 demandent un **jugement argumenté**.
+> Un QCM 6ème calibré sur ce guide doit avoir des distracteurs **plausibles dans le texte**, pas des
+> erreurs grossières.
+
+### 2. تقييم الإنتاج الكتابيّ (p.108–114) — 6 sujets, un par unité
+
+Grille à **5 معايير** et **5 degrés** (`++++` → `−−−`). Les sujets, verbatim résumé, montrent la
+progression du type de texte exactement comme les cartes l'annonçaient :
+
+| Unité | Consigne (l'en-tête donne la compétence)       | Le sujet                                                                                                                           |
+| ----- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| 1     | « أخطّط لكتابة نصّ سرديّ »                     | chez un commerçant, un client resquille la file, les présents protestent → **raconter** ce qu'ils ont fait et comment cela a fini  |
+| 2     | « أنتج نصّا سرديّا »                           | jour de l'Aïd : un camarade ne peut pas se réjouir → **raconter** la raison et ce que tu as fait pour lui rendre la joie           |
+| 3     | « أنتج نصّا سرديّا أغنيه بمقاطع **وصفيّة** »   | dans un bus bondé, tu cèdes ta place → raconter, avec un **1er passage décrivant les passagers** et un **2e décrivant le paysage** |
+| 4     | « أنتج نصّا سرديّا أغنيه بمقاطع **حواريّة** »  | au marché avec un parent, tu assistes à un long marchandage → raconter, avec **le dialogue** échangé                               |
+| 5     | « أنتج نصّا سرديّا أغنيه بمقاطع **تفسيريّة** » | des enfants pourchassent les abeilles ; tu interviens → raconter, avec un **passage explicatif sur l'abeille et ses bienfaits**    |
+| 6     | « أنتج نصّا سرديّا أغنيه بمقاطع **متنوّعة** »  | trois amis partent en randonnée et enchaînent les imprévus → un **récit long**, passages **descriptifs et dialogués**, **+ titre** |
+
+### 3. تقييم استعمال قواعد اللّغة (p.115–127) — 6 épreuves, une par unité
+
+Toujours **ancrées sur un texte court** imprimé en tête (jamais de question hors contexte), avec un
+`المعيار` pondéré (1, 2 — parfois noté « مع 1 », « مع 2 »). Deux relevés complets :
+
+- **Unité 1** (p.116) : extraire **3 noms définis par « ال »** ; **3 noms définis par annexion à un
+  pronom** ; **3 verbes redoublés (مضاعفة)** ; conjuguer l'un d'eux au **مضارع مجزوم** aux غائبين,
+  متكلّمين, مخاطبين ; donner la **fonction** de trois formes soulignées (أضعفه / لكنّه / عليه).
+- **Unités 4 et 6** (p.122, p.126–127) : extraire **اسم الفاعل / اسم المفعول** et le verbe dont ils
+  dérivent (tableau) ; **réécrire un texte** en changeant le nombre/le genre du sujet ; produire des
+  phrases avec des dérivés donnés ; identifier **المركّب التمييزيّ** et **المركّب الموصوليّ** et leur
+  fonction ; remplacer un اسم فاعل par un **مركّب موصوليّ** ; compléter par un **تمييز** adéquat.
+
+> **Constante de conception** : chaque épreuve de grammaire **finit par une tâche de production**
+> (« أنتج نصّا … مستعملا … ») — le fait de langue n'est jamais évalué seul.
+
+### 4. الفهرس (p.128) — vérification de bout en bout
+
+La table des matières confirme, une à une, les sections transcrites et fixe leurs titres officiels :
+**الجانب النّظريّ** — I نظام الوحدات (p.5 : مفهوم / بناء / استثمار الوحدة) · II المقاربة بالكفايات
+(p.10 : مفهوم الكفاية, **الكفايات الأفقيّة**, كفاية المجال, كفاية المادّة) · III أهمّ المفاهيم النظريّة
+(p.13 : قواعد اللّغة p.13, التواصل الشفويّ p.18, القراءة والإنتاج الكتابيّ p.19) · **VI** المسار
+التشخيصيّ (p.25) ; **الجانب العمليّ** — I توزيع الكفايات والأهداف على الوحدات (القراءة 34, قواعد
+اللّغة 35, الإنتاج الكتابيّ 36) · **خارطة الوحدات** · II **تقديم وحدة التعلّم الأولى** (p.50 : القراءة
+51, الإنتاج الكتابيّ 64, قواعد اللّغة 73, **النّشاط الإدماجيّ** 84) · III **وضعيّات تقييم الوحدات**
+(p.88 : تقييم القراءة 89, الإنتاج الكتابيّ 108, قواعد اللّغة 115).
+
+> **Deux coquilles du فهرس, signalées non arbitrées** : « توزيع الكفايات … **3** » (c'est **p.33**) et
+> « خارطة الوحدات **34** » (l'intercalaire est **p.37**, les cartes p.38–49). Le corps du guide fait
+> foi. Le فهرس **confirme en revanche** que la section التقييم est bien numérotée **VI** au lieu de IV
+> (cf. §6) et que **seule l'unité 1 est développée** (« تقديم وحدة التعلّم **الأولى** ») — les cinq
+> autres unités se conduisent par transposition.
+
 ## 3. Notes pédagogiques / méthode
 
 ### 3.1 Le noyau grammatical (المفاهيم النّظريّة, p.13–18) — métalangage du maître
@@ -496,7 +595,7 @@ Chiffres **latins 0–9** partout (les tableaux écrivent **20, 30, 50, 100, 150
 - **Offset printed↔PDF ≈ 0** au front (page de garde PDF 1 ; p.13 = PDF 13 ; p.35 = PDF 35). Les pages citées sont les numéros **imprimés = PDF**.
 - **Divergence table p.35 ↔ carte de l'unité 1 (p.39)** — la carte de و1 porte **« صيغة المضارع المجزوم وصيغة الأمر من المضاعف »**, alors que la table-synthèse p.35 place le **المضاعف** en **و4** ; inversement **رسم التّنوين**, donné en و1 par p.35, apparaît en **bandeau de و2** (p.41). Les deux tables sont du même « الجانب العملي ». **Signalé, non arbitré** : pour le chapitrage, la table p.35 reste la référence (elle couvre l'année entière d'un seul tenant), la carte prime pour savoir **sur quel texte** le fait de langue se travaille.
 - **Bandeau de القراءة répété d'une unité à l'autre (p.42/p.44 et p.46/p.48)** — و4 porte le même bandeau que و3 (« …مقاطع وصفيّة ») bien que **tous** ses contenus portent sur le **حوار** ; و6 porte celui de و5 (« …مقاطع تفسيريّة ») bien que tous ses contenus portent sur le **مقطع توجيهيّ**. Les quatre bandeaux ont été **recadrés et relus à 400 dpi** : la lecture n'est pas en cause. C'est une **coquille du guide** (bandeau non mis à jour à la composition) ; l'ordre réel des types de texte est donné par les contenus et par l'الإنتاج الكتابيّ de la même carte. **Non arbitré** — mais un chapitre « حوار » (و4) et un chapitre « توجيه » (و6) sont bien au programme.
-- **Non transcrit (au 2026-07-26)** : **p.88–128** — après les مذكّرات القراءة de l'unité 1 (p.52–63, §2 ter), celles de l'écriture, de la grammaire et de l'intégration (p.64–87, §2 quater), le guide poursuit avec ce qui suit l'unité 1 — vraisemblablement les تقييمات et annexes. Non lues à ce jour. Le scope du programme (types de texte, faits de langue, textes, projets) est couvert par le noyau p.13–24, la progression p.33–36 et les cartes p.38–49 ; ce qui manque est l'**appareil de mise en œuvre** (déroulés de séances), utile à la pédagogie du contenu, non au périmètre.
+- **Couverture au 2026-07-26 — le guide est lu de bout en bout (128 p.), mais pas à la même profondeur partout.** **Transcrit page à page** : p.1–92, p.93, p.96, p.99, p.102, p.105 (les six textes d'épreuve), p.108–116, p.122, p.126–128. **Identifiées et cadrées, non transcrites question par question** : les **18 pages de grilles d'épreuve** répétant un gabarit déjà relevé — p.94–95, 97–98, 100–101, 103–104, 106–107 (questionnaires de lecture des unités 2 à 6) et p.117–121, 123–125 (épreuves de grammaire des unités 2, 3, 5 et début 6). Le gabarit, le barème et deux relevés complets (lecture unité 1, grammaire unités 1/4/6) sont en §2 quinquies. **Ce qui manquerait si l'on voulait tout** : le libellé exact d'environ 35 questions supplémentaires — utile pour un banc d'essai de calibration, sans effet sur le périmètre du programme.
 
 ## Ancres d'audit (faits + page — pour revérification)
 
