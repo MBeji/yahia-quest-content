@@ -166,6 +166,21 @@ dispatch : s'arrêter au merge et le dire. Un lot de **fiche** (LOT A) ne publie
 du 2026-07-19) : on n'attend pas la matière complète — bascule `coming_soon → available`, les
 chapitres suivants, d3/d4 et annales s'ajoutent en continu sans bloquer.
 
+⚠️ **Mais l'ouverture n'est pas un geste de campagne.** La bascule est une **migration `open_*` du
+dépôt moteur** — une par section (R-8) —, donc une **PR distincte, sur l'autre dépôt**, avec son
+test pgTAP et le gate `verify` :
+
+```
+supabase/migrations/<horodatage>_open_<parcours>_parcours.sql   # UPDATE parcours … available
+supabase/tests/NN_open_<parcours>_parcours.test.sql             # le pgTAP qui l'atteste
+```
+
+Elle ne va **jamais** dans la PR de campagne (§ B3 : aucun SQL, aucune migration dans le corpus) et
+ne se déclenche qu'après le merge **et** l'application vérifiée de la tranche. Tu la portes en PR
+moteur si l'humain te le demande ; sinon tu la **rapportes comme reste à faire** (§ 5), nommément —
+une classe dont le contenu est en base mais le parcours resté `coming_soon` est invisible pour les
+élèves, et rien dans les gates ne le signale.
+
 ## 5. Boucler, ou s'arrêter proprement
 
 Merge confirmé ⇒ **re-établis l'état des lieux** (il a changé) et **redemande** — le couple suivant
@@ -173,7 +188,9 @@ est de nouveau un choix humain, y compris « on s'arrête ». À l'approche du b
 de contexte : finir le palier poussable en cours, étiqueter honnêtement la profondeur atteinte,
 pousser, rapporter le coût (T-9/T-10). Jamais de travail non poussé en fin de session.
 
-Rapport de fin : par couple traité, la PR, la profondeur atteinte, le verdict R-7, le coût ; les
+Rapport de fin : par couple traité, la PR, la profondeur atteinte, le verdict R-7, le coût, l'état
+de la **publication** (dispatch appliqué, ligne `content_releases`) et celui de l'**ouverture**
+(migration `open_*` portée, ou à faire — dis-le nommément, personne d'autre ne le verra) ; les
 couples écartés et pourquoi ; ce qui reste. Le coût par chapitre publié est le KPI de l'étude 12.
 
 ## STOP — ne jamais improviser
