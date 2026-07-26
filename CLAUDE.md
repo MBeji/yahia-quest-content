@@ -42,6 +42,13 @@
   dépôt privé (`403 — Upgrade to GitHub Pro or make this repository public`), donc aucun check
   n'est *requis* et une PR rouge reste mergeable à la main. Le workflow automatise le bon
   geste, il n'interdit pas le mauvais — l'en-tête du fichier dit ce qu'il faudrait pour ça.
+  ⚠️ **En touchant à ce workflow** : son bloc `permissions:` **remplace** le défaut du dépôt, il
+  ne s'y ajoute pas — toute portée non listée tombe à `none`, pas à `read`. Un appel `gh` vers une
+  surface non déclarée répond `403 Resource not accessible by integration`. C'est ce qui a cassé
+  le premier usage réel de la chaîne (2026-07-26, #26) : `checks: read` manquait, et le workflow
+  dont le métier est de lire les checks était le seul à ne pas pouvoir les lire. Toute nouvelle
+  API appelée par le script exige donc sa portée dans le bloc. Aucun PAT n'est nécessaire ici —
+  `GITHUB_TOKEN` suffit, et reste au moindre privilège.
 - **Le contenu ne voyage pas en migrations** : `content:emit` → `sql/content/<subject>.sql`,
   appliqué en prod par `apply-content.yml` (`workflow_dispatch`, journalisé dans
   `content_releases`). Ne jamais committer de SQL ici, ni de migration dans le moteur.
