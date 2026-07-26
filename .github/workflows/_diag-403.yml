@@ -3,7 +3,7 @@ name: Diag 403 (jetable)
 # Workflow de diagnostic JETABLE — à supprimer avant la PR de correctif.
 # But : établir expérimentalement quelles lectures `gh` sont refusées à
 # GITHUB_TOKEN sur ce dépôt privé, sous le bloc `permissions:` d'automerge.yml
-# (contents+pull-requests) puis avec `issues:` ajouté.
+# (contents+pull-requests) puis avec `checks: read` ajouté.
 
 on:
   push:
@@ -23,6 +23,7 @@ jobs:
           GH_REPO: ${{ github.repository }}
           REPO: ${{ github.repository }}
           PR: '22'
+          SHA: bbeaed9b7117c66fa4489d825d3b38fa6a3a0439
         run: |
           set -uo pipefail
           p() {
@@ -33,25 +34,19 @@ jobs:
               printf '    FAIL : %s\n' "${out:0:200}"
             fi
           }
-          p "REST  pulls/:pr .draft"          'gh api "repos/$REPO/pulls/$PR" --jq .draft'
-          p "REST  pulls/:pr labels inline"   'gh api "repos/$REPO/pulls/$PR" --jq "[.labels[].name] | tostring"'
-          p "REST  pulls/:pr base+head+draft" 'gh api "repos/$REPO/pulls/$PR" --jq "[.draft, .head.ref, .base.ref] | @tsv"'
-          p "REST  pulls/:pr .mergeable"      'gh api "repos/$REPO/pulls/$PR" --jq ".mergeable | tostring"'
-          p "GQL   pr view isDraft,refs"      'gh pr view "$PR" --json isDraft,headRefName,baseRefName --jq "[.isDraft,.headRefName,.baseRefName] | @tsv"'
-          p "GQL   pr view labels"            'gh pr view "$PR" --json labels --jq "any(.labels[]; .name == \"no-automerge\")"'
-          p "GQL   pr view mergeable"         'gh pr view "$PR" --json mergeable --jq .mergeable'
-          p "REST  labels du dépôt"           'gh api "repos/$REPO/labels" --jq "[.[].name] | tostring"'
-          p "GQL   gh label list"             'gh label list -L 3'
-          p "REST+ gh label create"           'gh label create diag-403-probe --color ededed --description probe --force'
-          p "REST- gh label delete"           'gh label delete diag-403-probe --yes'
+          p "REST  commits/:sha/pulls (etape 1)"      'gh api "repos/$REPO/commits/$SHA/pulls" --jq "[.[] | select(.state == \"open\")][0].number // empty"'
+          p "REST  commits/:sha/check-runs (etape 3)" 'gh api "repos/$REPO/commits/$SHA/check-runs" --paginate --jq ".check_runs[] | \"\(.name)|\(.status)|\(.conclusion // \"\")\""'
+          p "REST  commits/:sha/check-runs sans jq"   'gh api "repos/$REPO/commits/$SHA/check-runs" --jq .total_count'
+          p "REST  commits/:sha/status"               'gh api "repos/$REPO/commits/$SHA/status" --jq .state'
+          p "GQL   statusCheckRollup"                 'gh pr view "$PR" --json statusCheckRollup --jq "[.statusCheckRollup[] | \"\(.name)|\(.status)|\(.conclusion)\"] | join(\" ~ \")"'
 
-  avec_issues:
-    name: Idem + issues write
+  avec_checks:
+    name: Idem + checks read
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
-      issues: write
+      checks: read
     steps:
       - name: Sonder
         env:
@@ -59,6 +54,7 @@ jobs:
           GH_REPO: ${{ github.repository }}
           REPO: ${{ github.repository }}
           PR: '22'
+          SHA: bbeaed9b7117c66fa4489d825d3b38fa6a3a0439
         run: |
           set -uo pipefail
           p() {
@@ -69,8 +65,5 @@ jobs:
               printf '    FAIL : %s\n' "${out:0:200}"
             fi
           }
-          p "GQL   pr view labels"            'gh pr view "$PR" --json labels --jq "any(.labels[]; .name == \"no-automerge\")"'
-          p "REST  labels du dépôt"           'gh api "repos/$REPO/labels" --jq "[.[].name] | tostring"'
-          p "GQL   gh label list"             'gh label list -L 3'
-          p "REST+ gh label create"           'gh label create diag-403-probe --color ededed --description probe --force'
-          p "REST- gh label delete"           'gh label delete diag-403-probe --yes'
+          p "REST  commits/:sha/check-runs (etape 3)" 'gh api "repos/$REPO/commits/$SHA/check-runs" --paginate --jq ".check_runs[] | \"\(.name)|\(.status)|\(.conclusion // \"\")\""'
+          p "GQL   statusCheckRollup"                 'gh pr view "$PR" --json statusCheckRollup --jq "[.statusCheckRollup[] | \"\(.name)|\(.status)|\(.conclusion)\"] | join(\" ~ \")"'
