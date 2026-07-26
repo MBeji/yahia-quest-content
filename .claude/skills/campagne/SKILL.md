@@ -36,12 +36,27 @@ La campagne a besoin des **deux dépôts** (étude 24) : ce dépôt (le corpus, 
 moteur public (les commandes). Vérifie, depuis la racine du corpus :
 
 ```bash
-test -x ../engine/node_modules/.bin/tsc && test -e ../engine/content && echo "moteur prêt"
+test -x ../engine/node_modules/.bin/tsc &&
+  test -f ../engine/content/misconceptions.json &&
+  test -d ../engine/.claude/skills/content-ecole-tn/references/programmes-officiels/manifest &&
+  echo "moteur + corpus + skills branchés"
 ```
 
-Absent ⇒ dérouler **Phase 0.1 de la méthode** (double clone, `npm ci`, les DEUX liens
-`engine/content` et `engine/.claude/skills`, variante jonctions sous Windows) et **s'arrêter là si
-un lien échoue** : sans corpus branché, toutes les commandes mentent par omission.
+Ce sont les **deux assertions de la Content CI** (méthode, Phase 0.1) : tester la seule existence de
+`engine/content` dirait « prêt » avec le lien des skills manquant, et `programme:etat` échouerait la
+commande suivante. Absent ⇒ dérouler **Phase 0.1 de la méthode** (double clone, `npm ci`, les DEUX
+liens `engine/content` et `engine/.claude/skills`, variante jonctions sous Windows) et **s'arrêter là
+si un lien échoue** : sans corpus branché, toutes les commandes mentent par omission.
+
+Un LOT A a un second préalable — **ScribeKit construit** (méthode, Phase 0.2), le déterministe qui se
+paie une fois (T-1) :
+
+```bash
+test -f ../ScribeKit/dist/bin.js && echo "scribekit prêt"
+```
+
+Absent ⇒ clone + `npm install && npm run build` avant d'ouvrir le moindre PDF. Un LOT B seul
+(profil sans-source) n'en a pas besoin.
 
 Rappels de posture, valables tout du long :
 
@@ -63,6 +78,12 @@ c'est-à-dire ce que la méthode prescrit **si** on choisit ce couple.
 Restreins avec `--grade` quand l'humain a déjà nommé un niveau : c'est du budget de contexte gagné
 (T-6), pas une présélection.
 
+**Limite assumée du point d'entrée.** L'état des lieux se calcule sur le registre et les manifestes :
+il ne voit que les profils `ecole-cnp`, `ecole-secondaire` et `sans-source`. Un **document-libre**
+(PDF d'enseignant, polycopié, annales papier) n'a ni ligne de registre ni couple à proposer — il se
+traite hors `/campagne`, par la méthode (§ Profils, checklist droits R-2) et `content-ingest`, sur
+demande explicite de l'humain. Ne l'invente pas dans la liste des options.
+
 ## 2. Demander — et seulement demander
 
 Présente l'état **dans l'ordre du registre** (jamais réordonné), puis pose la question avec
@@ -70,13 +91,20 @@ Présente l'état **dans l'ordre du registre** (jamais réordonné), puis pose l
 
 - une option = un couple, libellé `<niveau> / <matière>`, description = **le fait + l'étape**
   (ex. « partielle 48 %, 4 plages non lues — [LOT A A3] compléter la fiche ») ;
-- les couples **bloquants** se présentent quand même, préfixés `⛔`, avec leur motif — l'humain doit
-  voir pourquoi il ne peut pas les lancer tels quels ;
+- les couples **bloquants** se présentent quand même, préfixés `⛔`, avec leur motif **et l'étape
+  prescrite** : `bloquant` veut dire « pas lançable **tel quel** », pas « pas lançable ». Un couple
+  `en-cours` est réellement fermé (réservé par une session) ; un couple sous la barre R-5 a la
+  **génération** interdite, mais son étape `A3` — compléter la fiche — est parfaitement lançable et
+  se libelle « ⛔ génération interdite — [LOT A A3] compléter la fiche (4 plages non lues) » ;
 - **jamais** « (recommandé) », jamais un ordre autre que celui du registre, jamais un couple
   masqué parce qu'il te paraît moins utile ;
 - au-delà de 4 couples plausibles, propose ceux du niveau demandé et laisse « Other » ouvert plutôt
   que d'en écarter selon ton propre critère ;
-- l'humain peut aussi répondre un couple absent de la liste : c'est son droit, tu l'exécutes.
+- l'humain peut aussi répondre un couple absent de la liste : c'est son droit, tu l'exécutes — à
+  une exception, les **matières annexes hors périmètre** (musique, éducation artistique/dessin,
+  EPS et la section sport, 3èmes langues : allemand, espagnol, italien). Celles-là ne se proposent
+  pas et se **refusent** si elles sont demandées, en rappelant la règle (méthode, Phase 0.4) ; puis
+  tu redemandes.
 
 Choix d'un couple `en-cours` ⇒ redis qu'une autre session le tient (R-4), et **redemande**.
 
@@ -99,8 +127,9 @@ Points de vigilance, tous hérités de la méthode :
 - **LOT A** : fidélité absolue, jamais d'invention ; tranches de 10–20 pages écrites au format final
   (T-2) ; **jamais rouvrir un PDF déjà transcrit** (T-3) ; R-7 par sondage dirigé avant promotion.
 - **LOT B** : la **fiche** est la source de scope et de contenu — on ne rouvre pas les PDF ; unité de
-  travail = le chapitre, avec le brief matière + LA section de la fiche (T-5) ; tranches de ≤ 4
-  chapitres complets, commit local par chapitre ; illustration systématique des notions spatiales.
+  travail = le chapitre, avec le brief matière + LA section de la fiche (T-5) ; tranches de **3
+  chapitres complets par défaut, jamais plus de 4 non poussés** (T-10), commit local par chapitre ;
+  illustration systématique des notions spatiales.
 - **A5.4** : `sujets` doit désigner des ids du manifeste du niveau — `programme:check` refuse le
   reste. Aucun sujet correspondant (matière hors programme codifié) ⇒ laisser `[]` et l'écrire en
   note, jamais inventer un id pour faire disparaître un constat.
@@ -112,11 +141,30 @@ Points de vigilance, tous hérités de la méthode :
 Depuis `engine/`, 0 erreur exigé — `programme:check` pour un lot de fiche ; `content:check`,
 `content:qa:strict`, `content:audit` (+ l'audit pédagogique `content-audit` sur les chapitres de la
 tranche) pour un lot de contenu. **Aucun SQL, aucune migration** dans un commit de campagne : le
-contenu se compile hors des migrations (méthode, B3).
+contenu se compile hors des migrations (méthode, B3). ⚠️ Et **jamais `npm run content:build`** :
+sans `--sql-dir` il écrit des migrations horodatées dans le dépôt **moteur** — canal mort depuis
+l'étude 24, et une fuite de corpus que son gate `leak:check` bloque.
 
 Puis commit, push, `gh pr create --fill`. La chaîne de merge du dépôt merge une PR entièrement
 verte ; tu restes **de garde** jusqu'au merge réel (surveiller, corriger les rouges, confirmer).
 Sauvegarde d'une session interrompue : branche `wip/…` + PR draft.
+
+**Puis publier — un merge n'applique rien.** Contrairement au canal schéma du moteur,
+`apply-content.yml` est en `workflow_dispatch` **seul** (méthode, B3) : une tranche de contenu mergée
+reste invisible en prod tant qu'on ne l'a pas dispatchée, depuis le corpus :
+
+```bash
+gh workflow run apply-content.yml -f subjects="<subject-id>" -f dry_run=true    # le plan
+gh workflow run apply-content.yml -f subjects="<subject-id>" -f dry_run=false   # l'application
+```
+
+Vérifier le run vert **et** la ligne journalisée dans `content_releases` (l'application est
+idempotente : un run rouge ou coupé se redispatche, jamais de rattrapage à la main). Sans droit de
+dispatch : s'arrêter au merge et le dire. Un lot de **fiche** (LOT A) ne publie rien.
+
+**Première tranche complète d'une classe ⇒ ouvrir la classe en production** (R-8, règle d'ouverture
+du 2026-07-19) : on n'attend pas la matière complète — bascule `coming_soon → available`, les
+chapitres suivants, d3/d4 et annales s'ajoutent en continu sans bloquer.
 
 ## 5. Boucler, ou s'arrêter proprement
 

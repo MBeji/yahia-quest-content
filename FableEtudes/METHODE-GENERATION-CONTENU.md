@@ -50,8 +50,9 @@
 ## INPUT (l'unique chose à renseigner)
 
 ```
-PORTEE     : tout               # défaut — tous les couples manquants, dans l'ordre de priorité
-                                # (§ Phase 0.4). Restreindre : "1ere-sec" (une classe/section),
+PORTEE     : tout               # défaut — tous les couples manquants ; l'ORDRE de traitement
+                                # reste l'arbitrage humain (§ Phase 0.4). Restreindre :
+                                # "1ere-sec" (une classe/section),
                                 # "lycee" (le cycle), "9eme-base / math" (un couple).
 PROFIL     : auto               # auto (défaut) = déduit du niveau et des sources ; sinon forcer :
                                 # ecole-cnp | ecole-secondaire | document-libre | sans-source
@@ -84,7 +85,7 @@ pour chaque UNITÉ de la file (couple niveau × matière, ou document libre) :
                        B2 génération (commit local par chapitre) → B3 gates + push
                        → 1 PR → merge → apply-content dispatché + prod vérifiée
                        → tranche suivante, jusqu'à la matière complète
-  contexte frais → unité suivante
+  contexte frais → on re-présente l'état et on DEMANDE l'unité suivante (§ Phase 0.4)
 fin : PORTEE épuisée, ou arrêt propre (BUDGET) → rapport de campagne
 ```
 
@@ -133,7 +134,12 @@ Règles de boucle (non négociables) :
   `affectations.json` + `<grade>.json`), validé en CI par `npm run programme:check` —
   `programme/_INDEX.md` n'est qu'une **vue générée** (⛔ ne jamais l'éditer à la main). Une
   entrée `complete`/`validee-r7`/`promue` = **déjà fait** ; `partielle` = **compléter** (les
-  plages de pages manquantes sont listées), jamais refaire en parallèle. Un PDF ne peut être
+  plages de pages manquantes sont listées), jamais refaire en parallèle ; **`en-cours` = couple
+  réservé** par une autre session — on ne le lance pas et on ne touche pas son entrée (c'est le
+  seul statut qui peut précéder la fiche sur disque). Poser `en-cours` est le geste d'une session
+  qui réserve un couple dont la fiche n'existe pas encore ; **aucune session ne laisse un
+  `en-cours` derrière elle** : au dernier push, l'entrée repasse à `partielle` (palier honnête,
+  T-10) ou `complete`, sinon le couple reste fermé aux autres. Un PDF ne peut être
   revendiqué que par UNE fiche — le doublon est une **erreur CI**, plus un risque.
 - **R-5 — Profondeur de génération, jamais un résumé.** Chaque activité/exercice décrit
   individuellement, encadrés officiels verbatim, vocabulaire officiel, bornes ✅/⛔. Modèle de
@@ -332,8 +338,12 @@ Notes par profil :
    un gate mais le **rapport** d'état du couple (fiche × programme × contenu) — c'est elle qu'on
    lance en A1, et elle ne classe jamais les couples par priorité (§ Phase 0.4).
 
-4. **Construire la file de travail**, dans l'**ordre de priorité** (décision 2026-07-14 — le
-   lycée d'abord : c'est le gros trou du corpus, le cycle de base est largement couvert) :
+4. **Construire la file de travail** — puis la **présenter et demander** par quoi commencer.
+   L'ordre ci-dessous est la **priorité par défaut proposée** (décision 2026-07-14 — le lycée
+   d'abord : c'est le gros trou du corpus, le cycle de base est largement couvert) ; **le choix du
+   couple à lancer reste l'arbitrage humain** (décision 2026-07-26) : ni l'outillage
+   (`programme:etat`, qui ne classe rien) ni l'agent ne recommandent, ne réordonnent, ni ne
+   démarrent sans réponse.
    1. **`1ere-sec`** — tronc commun, pas de section : le plus fort levier ; la finir avant la
       suite ;
    2. **`2eme-sec-*`**, section par section (`sciences` · `lettres` · `eco-services` · `info`) —
@@ -351,8 +361,8 @@ Notes par profil :
      EPS/sport, la section sport, les 3èmes langues (allemand, espagnol, italien). Les sauter
      même si leur ligne est `[ ]` ; un `PORTEE` qui les cible explicitement se **refuse** avec
      rappel de cette règle.
-   - **Annoncer la file** au contributeur (nombre de lots, ordre retenu, couples sautés et
-     pourquoi), puis démarrer la boucle.
+   - **Annoncer la file** au contributeur (nombre de lots, ordre par défaut, couples sautés et
+     pourquoi), **lui demander par quoi commencer**, et ne démarrer la boucle qu'avec sa réponse.
 
 ---
 
@@ -378,11 +388,14 @@ couverts/attendus et incomplets côté **contenu** ; plus le corpus principal en
 ⚠️ Il **n'ordonne rien** : le choix du couple à lancer reste au contributeur (§ Phase 0.4) — la
 commande donne les faits, jamais le classement.
 
-Reste à vérifier ce qu'aucun registre ne sait : qu'**aucune autre session ne travaille déjà le
-couple** — `gh pr list --search "<niveau> <matière>"` + branches distantes
+Reste à vérifier ce que le registre ne sait pas toujours (une réservation `en-cours` n'est visible
+qu'une fois poussée) : qu'**aucune autre session ne travaille déjà le couple** —
+`gh pr list --search "<niveau> <matière>"` + branches distantes
 `feat/transcription-<niveau>-*` (une PR/branche ouverte sur le couple ⇒ couple pris, passer au
 suivant). Puis, dans le registre frais (`suivi/<grade>.json`) :
 
+- entrée `en-cours` ⇒ **couple réservé** par une autre session (R-4) : ne rien lancer, ne pas
+  toucher son entrée, passer au couple suivant.
 - entrée `complete` / `validee-r7` / `promue` ⇒ **déjà fait**. Si `GENERATION: oui` et que le
   sujet n'existe pas sous `content/` (vérifier `content/CATALOGUE.md`) ⇒ passer directement au
   **LOT B** (profil sans-source) ; sinon couple suivant.
