@@ -38,8 +38,20 @@ on:
         required: true
 
 permissions:
+  # ⚠️ Un bloc `permissions:` explicite n'AJOUTE pas au défaut du dépôt : il le REMPLACE. Toute
+  # portée non listée ici tombe à `none`, pas à `read` — même si le dépôt est réglé sur
+  # `default_workflow_permissions: read`. C'est ce qui a cassé le premier usage réel de cette
+  # chaîne (PR #18, puis #22, le 2026-07-26) : `checks` manquait, donc l'étape 3 (« l'état RÉEL
+  # du commit ») recevait `403 Resource not accessible by integration` sur
+  # `repos/:repo/commits/:sha/check-runs`, et le job mourait avant tout merge.
   contents: write
   pull-requests: write
+  # Lire les check runs du SHA — l'étape 3, le cœur de la décision. C'est une portée à part
+  # entière : ni `contents` ni `pull-requests` ne la couvrent.
+  checks: read
+  # Pas de `issues:` ici, et ce n'est pas un oubli : `gh label create` / `gh pr edit --add-label`
+  # (étape 4, chemin de conflit) passent avec `pull-requests: write` seul — vérifié sur ce dépôt
+  # le 2026-07-26. Ajouter `issues: write` élargirait le jeton sans rien débloquer.
 
 concurrency:
   # Une seule évaluation à la fois par commit de tête : les deux workflows de PR finissent à
@@ -88,9 +100,15 @@ jobs:
           echo "PR #$pr, tête $sha"
 
           # 2) Les opt-out, dans l'ordre du moins cher au plus cher.
-          read -r draft branch base <<<"$(gh pr view "$pr" \
+          #    L'affectation est SÉPARÉE du `read` volontairement : dans
+          #    `read -r a b c <<<"$(cmd)"`, l'échec de `cmd` n'est PAS vu par `set -e` (le statut
+          #    retenu est celui de `read`, qui réussit en lisant du vide) — les variables partent
+          #    vides et le script continue sur une décision fausse. En passant par une variable,
+          #    un `gh` qui échoue tue le job ici, à la bonne ligne.
+          meta="$(gh pr view "$pr" \
             --json isDraft,headRefName,baseRefName \
             --jq '[.isDraft, .headRefName, .baseRefName] | @tsv')"
+          read -r draft branch base <<<"$meta"
           opted_out="$(gh pr view "$pr" --json labels \
             --jq 'any(.labels[]; .name == "no-automerge")')"
 
