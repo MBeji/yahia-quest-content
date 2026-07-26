@@ -42,7 +42,12 @@ epics du projet, produites par le **modèle architecte** (Fable/Opus) et destin�
 > privé de l'étude « IA → déterministe » du moteur (close le 2026-07-25, 6 lots sur 6) : quelles
 > surfaces d'ici dépensent un agent, lesquelles doivent devenir des scripts, et ce que l'IA garde
 > (double résolution à l'aveugle, cohérence linguistique, fidélité au programme). Ouverte le
-> 2026-07-25, plan en 5 lots `LC0…LC4` dont l'ordre est imposé.
+> 2026-07-25, plan en 5 lots `LC0…LC4` dont l'ordre est imposé. Son pendant **côté moteur**
+> (hook pré-commit, `report-triage`, `regression-guard`, `upgrade-guard`, `second-opinion`) vit
+> dans le dépôt public, **hors de ce répertoire** : [`yahia-quest-arena/docs/agents/etude-ia-vs-deterministe.md`](https://github.com/MBeji/yahia-quest-arena/blob/main/docs/agents/etude-ia-vs-deterministe.md)
+> (close aussi, 6/6 lots, 2026-07-25) — n'y déménage pas, elle est référencée par des tests et
+> des workflows CI du moteur (`scripts/ci/__tests__/regression-guard-pregate.test.mjs`,
+> `docs/agents/gardes.md`, `docs/agents/poste-windows.md`).
 
 ## Cycle de vie d'une étude
 
