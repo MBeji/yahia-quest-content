@@ -10,7 +10,7 @@
 >
 > Ce document **remplace** `PROMPT-TRANSCRIPTION-CNP.md` (consolidation du 2026-07-17) et porte
 > le processus des études [12 — Studio d'ingestion](./12-studio-ingestion/ETUDE.md) (le canal)
-> et [13 — Moteur de transcription ScribeKit](./13-moteur-transcription/ETUDE.md) (le moteur,
+> et [13 — Moteur de transcription ScribeKit](./EtudeRealisé/13-moteur-transcription/ETUDE.md) (le moteur,
 > **livrée**).
 >
 > **Périmètre d'autorité.** Cette méthode est la référence du **processus** : la boucle, les
