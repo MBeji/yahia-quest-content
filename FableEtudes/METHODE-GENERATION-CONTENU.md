@@ -322,7 +322,9 @@ Notes par profil :
    programme:corpus` (resynchronise le snapshot corpus depuis le `cnp-officiel/catalogue.csv`
    voisin du clone moteur — `--catalogue <chemin>` pour le pointer ailleurs ; machine locale
    uniquement). Elles écrivent **dans le corpus**, à travers le lien : le diff apparaît dans
-   `corpus/`, c'est là qu'on le commite.
+   `corpus/`, c'est là qu'on le commite. Une quatrième, `npm run programme:etat`, n'est **pas**
+   un gate mais le **rapport** d'état du couple (fiche × programme × contenu) — c'est elle qu'on
+   lance en A1, et elle ne classe jamais les couples par priorité (§ Phase 0.4).
 
 4. **Construire la file de travail**, dans l'**ordre de priorité** (décision 2026-07-14 — le
    lycée d'abord : c'est le gros trou du corpus, le cycle de base est largement couvert) :
@@ -358,11 +360,22 @@ Branche fraîche — **dans `corpus/`** (toute la campagne se branche et se pous
 git fetch origin main && git checkout -B feat/transcription-<niveau>-<matiere> origin/main
 ```
 
-Puis, **dans le registre frais** (`suivi/<grade>.json`, complété par la vue `_INDEX.md`
-générée) — et en vérifiant qu'**aucune autre session ne travaille déjà le couple** :
-`gh pr list --search "<niveau> <matière>"` + branches distantes
+L'état du couple ne se reconstitue plus à la main — **depuis `engine/`** :
+
+```bash
+npm run programme:etat -- --grade <niveau>     # --json pour un traitement automatique
+```
+
+Il rapporte, pour chaque couple du niveau : statut, profondeur, **couverture calculée**, plages
+non lues, verdict R-7 et génération autorisée ou non côté **fiche** ; sujet présent, chapitres
+couverts/attendus et incomplets côté **contenu** ; plus le corpus principal encore non rattaché.
+⚠️ Il **n'ordonne rien** : le choix du couple à lancer reste au contributeur (§ Phase 0.4) — la
+commande donne les faits, jamais le classement.
+
+Reste à vérifier ce qu'aucun registre ne sait : qu'**aucune autre session ne travaille déjà le
+couple** — `gh pr list --search "<niveau> <matière>"` + branches distantes
 `feat/transcription-<niveau>-*` (une PR/branche ouverte sur le couple ⇒ couple pris, passer au
-suivant) :
+suivant). Puis, dans le registre frais (`suivi/<grade>.json`) :
 
 - entrée `complete` / `validee-r7` / `promue` ⇒ **déjà fait**. Si `GENERATION: oui` et que le
   sujet n'existe pas sous `content/` (vérifier `content/CATALOGUE.md`) ⇒ passer directement au
@@ -473,7 +486,15 @@ guide + manuel :
    `generation`), les **sources par code corpus** avec `pagesTotal` et les **plages exactes
    `pagesLues`** (le % est calculé — fini les « ~48 % » déclarés), le verdict `r7`, `maj`/`par`
    (PSEUDO) et des notes courtes. Grade lycée sans fichier de suivi ⇒ créer
-   `suivi/<gradeSlug>.json` (slugs de `docs/lycee-architecture.md`). Puis :
+   `suivi/<gradeSlug>.json` (slugs de `docs/lycee-architecture.md`).
+
+   **Déclarer aussi `sujets`** — les ids de sujets de `content/` dont cette fiche est la source
+   de scope (ex. `["math-1ere-sec"]`). C'est le seul lien fiche → contenu : personne ne le
+   devine (`mathematiques` alimente `math-1ere-sec`, `chimie` n'alimente aucun sujet propre), et
+   sans lui `programme:etat` ne peut pas dire si le contenu du couple existe. Les ids attendus au
+   niveau sont ceux du manifeste — `programme:check` refuse un id qui n'y figure pas. Aucun sujet
+   correspondant (matière transcrite mais hors programme codifié) ⇒ laisser `[]` et le dire en
+   note. Puis :
 
    ```bash
    # depuis engine/ — l'écriture atterrit dans corpus/ via le lien
