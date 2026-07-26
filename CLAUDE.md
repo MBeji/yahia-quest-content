@@ -30,8 +30,13 @@
 - **CI** : `.github/workflows/content-ci.yml` fait exactement cela (double checkout + les deux
   liens). `content-audit.yml` (garde pédagogique) tourne mer. + sam. et exige le secret
   `CLAUDE_CODE_OAUTH_TOKEN` valide.
-- **Pas d'auto-merge sur ce dépôt** (contrairement au moteur) : la session qui pousse ouvre la
-  PR, surveille la Content CI et **merge elle-même** en squash une fois verte.
+- **Chaîne de merge** : `.github/workflows/automerge.yml` merge (squash) toute PR dont **tous**
+  les checks sont verts, dès la fin du dernier workflow de PR. On s'y soustrait comme sur le
+  moteur : PR en draft, branche `wip/`/`draft/`/`rescue/`, ou label `no-automerge`. ⚠️ Ce n'est
+  pas un gate **opposable** : sur un compte Free, les rulesets ne sont pas disponibles sur un
+  dépôt privé (`403 — Upgrade to GitHub Pro or make this repository public`), donc aucun check
+  n'est *requis* et une PR rouge reste mergeable à la main. Le workflow automatise le bon
+  geste, il n'interdit pas le mauvais — l'en-tête du fichier dit ce qu'il faudrait pour ça.
 - **Le contenu ne voyage pas en migrations** : `content:emit` → `sql/content/<subject>.sql`,
   appliqué en prod par `apply-content.yml` (`workflow_dispatch`, journalisé dans
   `content_releases`). Ne jamais committer de SQL ici, ni de migration dans le moteur.

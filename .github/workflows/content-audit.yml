@@ -9,6 +9,14 @@ name: Content audit (pedagogical sweep)
 # S'active quand le secret CLAUDE_CODE_OAUTH_TOKEN est configuré (skip gracieux
 # sinon) — recommandé au lot 4, quand ce repo devient l'unique source du
 # contenu ; d'ici là la garde du repo public continue de couvrir les éditions.
+#
+# Depuis l'étude « IA → déterministe » (volet contenu, FableEtudes/ETUDE-IA-VS-
+# DETERMINISTE-CONTENU.md) l'agent n'est réveillé que s'il y a du jugement à rendre :
+#   • LC2 — un pré-gate (dans le moteur) calcule le périmètre et les locators déjà
+#     signalés, et skippe l'agent quand aucun sujet n'a bougé ;
+#   • LC3 — le prompt ne redemande plus ce que `content:qa:strict` garantit déjà ;
+#   • LC4 — le modèle vient de `harness/models.json` (rôle `garde-contenu`), et une
+#     panne du garde ouvre une issue de suivi au lieu de passer inaperçue.
 
 on:
   schedule:
@@ -23,6 +31,10 @@ permissions:
 concurrency:
   group: content-audit
   cancel-in-progress: false
+
+env:
+  # Fenêtre d'audit — lue par le pré-gate ET citée dans le prompt : une seule source.
+  AUDIT_WINDOW_DAYS: "4"
 
 jobs:
   audit:
@@ -61,19 +73,46 @@ jobs:
           cache: npm
           cache-dependency-path: engine/package-lock.json
 
-      - name: Install engine dependencies
+      # Pré-gate déterministe (étude « IA → déterministe », volet contenu, lot LC2).
+      # Il calcule ce que le prompt demandait à l'agent de re-dériver à chaque réveil — les
+      # sujets touchés dans la fenêtre, et les locators déjà portés par les issues ouvertes —
+      # et il SKIPPE l'agent quand rien n'a bougé, au lieu de le payer pour conclure « rien à
+      # auditer ». Le corpus bouge par rafales de campagne : c'est le cas courant.
+      # Il vit dans le moteur (générique, testé là-bas avec les trois autres pré-gates) et
+      # tombe TOUJOURS du côté « réveiller l'agent » en cas d'erreur.
+      - name: Pré-gate — y a-t-il quelque chose à auditer ?
+        id: pregate
         if: steps.guard.outputs.configured == 'true'
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node engine/scripts/ci/content-audit-pregate.mjs --out "$RUNNER_TEMP/audit-scope.json"
+
+      - name: Install engine dependencies
+        if: steps.pregate.outputs.run == 'true'
         working-directory: engine
         run: npm ci --no-audit --no-fund
 
       - name: Brancher le corpus privé dans le moteur
-        if: steps.guard.outputs.configured == 'true'
+        if: steps.pregate.outputs.run == 'true'
         run: |
           rm -rf engine/content
           ln -s "$GITHUB_WORKSPACE/content" engine/content
 
+      # Le modèle n'est pas écrit ici : il vient de `harness/models.json` du moteur, via le
+      # rôle `garde-contenu` (étude 25 D-5/D-6). Un identifiant en dur dans un workflow est
+      # précisément ce que `harness:check` interdit côté moteur — ce garde-ci y échappait par
+      # accident de la scission (lot LC4).
+      - name: Resolve the model for role garde-contenu
+        id: model
+        if: steps.pregate.outputs.run == 'true'
+        run: |
+          model="$(node -p "require('./engine/harness/models.json').roles['garde-contenu'].model")"
+          echo "model=$model" >> "$GITHUB_OUTPUT"
+          echo "Role garde-contenu -> $model (source: engine/harness/models.json)"
+
       - name: Run the content-audit sweep
-        if: steps.guard.outputs.configured == 'true'
+        if: steps.pregate.outputs.run == 'true'
         uses: anthropics/claude-code-action@be7b93b1907a4abad570368f3c74b6fe3807510b # v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
@@ -86,30 +125,40 @@ jobs:
             `engine/content` symlinked to the corpus. Run every `npm run …`
             command from `engine/`.
 
-            SCOPE — audit only what recently changed, to keep the run bounded:
-            list the subjects whose files under `content/**` were modified on
-            `main` in roughly the last 4 days
-            (`git log --since="4 days ago" --name-only --pretty=format: -- content`
-            then map the touched paths back to their subject dir). If nothing under
-            `content/` changed, audit nothing and post a short "no content changed —
-            nothing to audit" summary in the job log.
+            SCOPE — already computed, do NOT re-derive it. Read:
+              ${{ runner.temp }}/audit-scope.json
+            `subjects` lists exactly the subjects whose content changed in the
+            window — audit those, nothing else. `alreadyFiled` lists the open
+            `content-audit` issues with the locators they already carry: never
+            open a second issue for a locator that is already in that list.
+
+            DO NOT re-check what the gate already guarantees. `content:qa:strict`
+            fails the CI of every content PR on: LaTeX commands and inline `$…$`,
+            Arabic-Indic digits, an Arabic radicand under a `√`, the Arabic comma
+            inside a math bracket group, `<svg>` without a viewBox, meta-options
+            ("none of the above"), duplicate option texts, accepted-answer
+            collisions. Those classes are settled — re-reading them by eye buys
+            nothing and costs turns. Your value is the judgement no regex makes.
 
             For each changed subject, follow the skill's per-item runbook:
               • For ecole-tn subjects, run `npm run content:audit` (from engine/)
                 first for coverage/conformity vs the CNP manifest.
               • RE-SOLVE every question blind, then compare to `correctOption`;
-                check distractors, explanation agreement, difficulty calibration,
-                answer-key balance, duplicates, standard notation (Western digits
-                even in Arabic, LTR equations, bidi-safe, SVG viewBox), language
-                purity, and factual / syllabus accuracy. Also grade cours.md /
-                resume.md against the course-quality bar.
+                judge distractor quality, explanation agreement, difficulty
+                calibration, answer-key balance, duplicates across the chapter,
+                linguistic coherence (agreement, pronoun referents, calques,
+                Arabic dual over three referents), and factual / syllabus
+                accuracy. Also grade cours.md / resume.md against the
+                course-quality bar.
 
             OUTPUT — review only, never edit content:
               • Open ONE tracking GitHub issue per BLOCKER or MAJOR finding
-                (label `content-audit`), titled with the subject + defect, body
-                carrying the `file` + `locator`, the defect, and a PROPOSED fix.
-                Before opening, list existing open `content-audit` issues and do
-                NOT duplicate one already filed for the same locator.
+                (label `content-audit`), titled with the subject + defect. The
+                body MUST carry, on a line of its own:
+                    Locator: <subject>/<chapter>/<file>#<id>
+                The pre-gate parses that line to dedup the next runs — a finding
+                filed without it will be re-reported forever. Then the defect
+                itself and a PROPOSED fix.
               • MINOR findings: aggregate into the job-log summary, no issue.
               • If everything audited is clean, open no issue and post a short
                 "all clean" summary instead.
@@ -119,7 +168,7 @@ jobs:
             verify a key with confidence, file it as a finding rather than passing
             it silently.
           claude_args: |
-            --model claude-sonnet-4-6
+            --model ${{ steps.model.outputs.model }}
             --max-turns 60
             --allowedTools "Bash,Read,Glob,Grep"
 
@@ -127,5 +176,46 @@ jobs:
       # même quand Claude a échoué ; le parseur (pris dans le moteur) inspecte
       # le is_error du dernier événement résultat.
       - name: Fail loudly if the audit errored
-        if: ${{ always() && steps.guard.outputs.configured == 'true' }}
+        if: ${{ always() && steps.pregate.outputs.run == 'true' }}
         run: python3 engine/.github/scripts/check-claude-result.py "$RUNNER_TEMP/claude-execution-output.json"
+
+      # « Loud » ne l'était pas : un cron privé qui échoue ne notifie personne. Le garde s'est
+      # armé le 2026-07-20 et son unique exécution (2026-07-22) est morte sur un jeton
+      # invalide — invisible pendant des jours, zéro audit rendu. Il porte désormais la même
+      # mécanique que `video-health.yml` : une issue de suivi qui s'ouvre à l'échec et se
+      # referme au premier succès (étude « IA → déterministe » volet contenu, lot LC4).
+      - name: Ouvrir/mettre à jour l'issue de suivi si le garde est tombé
+        if: ${{ failure() && steps.guard.outputs.configured == 'true' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh label create garde-en-panne \
+            --color B60205 \
+            --description "Un garde planifié a échoué (étude IA → déterministe, LC4)" \
+            --force
+          TITLE="Garde d'audit de contenu en panne"
+          BODY="Le run du garde pédagogique a échoué : $RUN_URL
+
+          Tant que ce garde tombe, **aucun audit pédagogique n'est rendu** — et rien d'autre ne
+          le signale. Causes déjà vues : jeton \`CLAUDE_CODE_OAUTH_TOKEN\` invalide ou expiré
+          (\`API Error: Header 'Authorization' has invalid value\`) → le renouveler avec
+          \`claude setup-token\` et le remettre en secret du dépôt.
+
+          Cette issue se referme toute seule au premier run vert."
+          EXISTING=$(gh issue list --label garde-en-panne --state open --limit 1 --json number --jq '.[0].number')
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+          else
+            gh issue create --title "$TITLE" --label garde-en-panne --body "$BODY"
+          fi
+
+      - name: Refermer l'issue de suivi quand le garde repasse au vert
+        if: ${{ success() && steps.pregate.outputs.run == 'true' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          EXISTING=$(gh issue list --label garde-en-panne --state open --limit 1 --json number --jq '.[0].number')
+          if [ -n "$EXISTING" ]; then
+            gh issue close "$EXISTING" --comment "Le garde d'audit a de nouveau tourné jusqu'au bout — clôture automatique."
+          fi

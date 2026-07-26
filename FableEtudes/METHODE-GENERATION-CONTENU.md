@@ -72,7 +72,7 @@ PHASE 0 (une fois par campagne) : setup 2 dépôts + cadrage + file de travail (
 pour chaque UNITÉ de la file (couple niveau × matière, ou document libre) :
   LOT A — LA FICHE   : A1 existant → A2 sources → A3 transcription (ScribeKit + vision)
                        → A4 profondeur de génération → A5 audits (QA, R-7, _INDEX)
-                       → A6 push → 1 PR → Content CI verte → merge (manuel) confirmé
+                       → A6 push → 1 PR → Content CI verte → merge confirmé
   si GENERATION = oui :
   LOT B — LE CONTENU : B1 brief + skills → puis PAR TRANCHE de ≤4 chapitres complets :
                        B2 génération (commit local par chapitre) → B3 gates + push
@@ -102,12 +102,14 @@ Règles de boucle (non négociables) :
   de [`FableEtudes/16-ouverture-lycee/ETUDE.md`](./16-ouverture-lycee/ETUDE.md). Applicable à toute
   session de génération, en cours ou future.
 - **Attendre le merge réel** d'un lot avant d'entamer le suivant (le LOT B dépend de la fiche
-  mergée ; deux PR simultanées sur le registre `suivi/` se marchent dessus). ⚠️ **Le dépôt de
-  contenu n'a PAS d'auto-merge** (contrairement au dépôt moteur) : la session qui pousse ouvre
-  la PR, **surveille la Content CI**, corrige les rouges et **merge elle-même** en squash quand
-  elle est verte (§ A6) — elle reste de garde jusqu'au merge réel. Ne pousser qu'un lot fini ;
-  point de sauvegarde : branche `wip/…` en PR **draft** (une draft ne se merge pas par
-  distraction).
+  mergée ; deux PR simultanées sur le registre `suivi/` se marchent dessus). ⚠️ Le dépôt de
+  contenu a sa **chaîne de merge** (`.github/workflows/automerge.yml`, depuis le 2026-07-26) :
+  une PR dont **tous** les checks sont verts est mergée en squash toute seule, sans que
+  personne ne la lise. Ne pousser qu'un lot fini. S'y soustraire — comme sur le moteur — par
+  une PR **draft**, une branche préfixée `wip/`/`draft/`/`rescue/`, ou le label `no-automerge`.
+  Nuance qui compte : faute de rulesets sur un dépôt privé Free, **aucun check n'est
+  *requis*** — le workflow automatise le bon geste, il n'interdit pas le mauvais. La session
+  qui pousse reste donc de garde jusqu'au **merge réel** (§ A6).
 
 ## Le socle R (hérité du skill `content-ingest` — condensé, non négociable)
 
@@ -191,7 +193,8 @@ publié le chapitre suivant.
   quand la session doit finir, la fiche partielle **honnêtement étiquetée se pousse** (arrêt
   propre, A3.4) plutôt que de viser le « tout » dans une session à risque. Interruption
   imminente au milieu d'un chapitre ou d'une tranche ⇒ push de sauvegarde en branche `wip/…`
-  (PR draft — qu'on ne merge pas par distraction), que la session suivante reprend.
+  (le préfixe `wip/` et la PR draft exemptent tous deux de la chaîne de merge), que la session
+  suivante reprend.
 
 ## Profils de source
 
@@ -495,10 +498,11 @@ git push -u origin feat/transcription-<niveau>-<matiere>
 gh pr create --fill
 ```
 
-**Pas d'auto-merge ici** — la session qui a poussé reste de garde : surveiller la Content CI
-(`gh pr checks <n> --watch`), corriger tout rouge et re-pousser, puis **merger elle-même**
-(`gh pr merge <n> --squash --delete-branch`) et **confirmer que le merge a réellement eu lieu**
-avant le LOT B (ou le couple suivant).
+La chaîne de merge prend le relais : PR verte ⇒ **squash-mergée toute seule**. La session qui a
+poussé reste néanmoins de garde — surveiller la Content CI (`gh pr checks <n> --watch`),
+corriger tout rouge et re-pousser, puis **confirmer que le merge a réellement eu lieu** avant le
+LOT B (ou le couple suivant). Un déclenchement manqué se rattrape par
+`gh workflow run automerge.yml -f pr=<n>`.
 
 ---
 
@@ -591,8 +595,8 @@ git push -u origin feat/content-<subject-id>-chNN-MM
 gh pr create --fill
 ```
 
-Comme au LOT A : **pas d'auto-merge** — surveiller la Content CI, corriger, puis
-`gh pr merge <n> --squash --delete-branch` et confirmer le merge.
+Comme au LOT A : surveiller la Content CI, corriger tout rouge, et confirmer le merge (la
+chaîne de merge s'en charge dès que tout est vert).
 
 **Puis la mise en prod, qui est un geste délibéré.** Contrairement au canal schéma du moteur
 (`db-migrate-prod`, automatique au merge), `apply-content.yml` est en **`workflow_dispatch`

@@ -36,6 +36,13 @@ epics du projet, produites par le **modèle architecte** (Fable/Opus) et destin�
 > projet**, en **petits lots poussés** (une PR par fiche, puis une PR par tranche de ≤4
 > chapitres — jamais de longue session sans livrable). (Remplace
 > `PROMPT-TRANSCRIPTION-CNP.md`, consolidé le 2026-07-17.)
+>
+> **Toucher à l'outillage de ce dépôt (garde d'audit, gates, coût des agents) ?**
+> **[`ETUDE-IA-VS-DETERMINISTE-CONTENU.md`](./ETUDE-IA-VS-DETERMINISTE-CONTENU.md)** — pendant
+> privé de l'étude « IA → déterministe » du moteur (close le 2026-07-25, 6 lots sur 6) : quelles
+> surfaces d'ici dépensent un agent, lesquelles doivent devenir des scripts, et ce que l'IA garde
+> (double résolution à l'aveugle, cohérence linguistique, fidélité au programme). Ouverte le
+> 2026-07-25, plan en 5 lots `LC0…LC4` dont l'ordre est imposé.
 
 ## Cycle de vie d'une étude
 
