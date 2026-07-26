@@ -1,0 +1,141 @@
+name: Automerge (corpus)
+
+# Chaîne de merge du dépôt privé — pendant de `automerge.yml` du moteur, mais bâti autrement,
+# et il faut savoir pourquoi.
+#
+# POURQUOI PAS L'AUTO-MERGE NATIF DE GITHUB. Sur un compte Free, les rulesets et la protection
+# de branche ne sont **pas disponibles sur un dépôt privé** : l'API répond `403 — Upgrade to
+# GitHub Pro or make this repository public`. Sans check REQUIS, GitHub n'a rien à attendre,
+# donc l'auto-merge natif ne peut pas s'armer (et `allow_auto_merge` est à `false` ici). Le
+# moteur, lui, est public : ses rulesets sont gratuits, et c'était un bénéfice explicitement
+# acté par l'étude 24 avant la scission.
+#
+# CE QUE CE WORKFLOW EST — ET N'EST PAS. Il **automatise** le merge d'une PR verte ; il ne
+# l'**interdit** pas quand elle est rouge. Sans protection de branche, une PR rouge reste
+# mergeable à la main par quiconque a le droit d'écrire. C'est une commodité fidèle à la
+# directive « zéro intervention », pas un gate opposable — seul GitHub Pro (rulesets sur dépôt
+# privé) rendrait le gate réellement contraignant. À relire le jour où l'on décide d'upgrader.
+#
+# COMMENT IL DÉCIDE. Il se déclenche à la FIN de chaque workflow de PR, puis relit l'état
+# complet du commit de tête : il ne merge que si **tous** les check runs de ce SHA sont
+# conclus au vert. Rien n'est codé en dur — un futur workflow de PR entre dans le calcul tout
+# seul, sans qu'on ait à l'ajouter ici (le piège classique d'une liste figée).
+#
+# COMMENT S'Y SOUSTRAIRE (mêmes conventions que le moteur, DoD §8) :
+#   • PR en draft ;
+#   • branche préfixée `wip/`, `draft/` ou `rescue/` (savepoint volontaire) ;
+#   • label `no-automerge` (gel d'une PR déjà ouverte).
+
+on:
+  workflow_run:
+    workflows: ["Content CI", "Pin check"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: "Numéro de PR à réévaluer (si un déclenchement a été manqué)"
+        type: string
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  # Une seule évaluation à la fois par commit de tête : les deux workflows de PR finissent à
+  # quelques secondes d'écart et déclencheraient deux merges concurrents.
+  group: automerge-${{ github.event.workflow_run.head_sha || inputs.pr }}
+  cancel-in-progress: false
+
+jobs:
+  automerge:
+    # Les runs de `push: main` déclenchent aussi `workflow_run` — seules les PR nous intéressent.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.event == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Merger la PR si tout est vert
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Ce job tourne SANS checkout (déclencheur `workflow_run`) : `gh` n'a aucun dépôt
+          # git à déduire, et un `gh pr view` échouerait sur « not a git repository ».
+          # `GH_REPO` le lui dit une fois pour toutes.
+          GH_REPO: ${{ github.repository }}
+          REPO: ${{ github.repository }}
+          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+          INPUT_PR: ${{ inputs.pr }}
+          # Nom de check à ignorer dans le calcul : le nôtre. Sans ça, ce job s'attendrait
+          # lui-même indéfiniment s'il apparaît comme check run du SHA.
+          SELF_CHECK: automerge
+        run: |
+          set -euo pipefail
+
+          # 1) Quelle PR porte ce commit ? (l'API commits/:sha/pulls est plus fiable que
+          #    `workflow_run.pull_requests`, vide dans plusieurs cas documentés)
+          if [ -n "${INPUT_PR:-}" ]; then
+            pr="$INPUT_PR"
+            sha="$(gh pr view "$pr" --json headRefOid --jq .headRefOid)"
+          else
+            sha="$HEAD_SHA"
+            pr="$(gh api "repos/$REPO/commits/$sha/pulls" \
+                    --jq '[.[] | select(.state == "open")][0].number // empty')"
+          fi
+          if [ -z "${pr:-}" ]; then
+            echo "Aucune PR ouverte ne porte $sha — rien à faire."; exit 0
+          fi
+          echo "PR #$pr, tête $sha"
+
+          # 2) Les opt-out, dans l'ordre du moins cher au plus cher.
+          read -r draft branch base <<<"$(gh pr view "$pr" \
+            --json isDraft,headRefName,baseRefName \
+            --jq '[.isDraft, .headRefName, .baseRefName] | @tsv')"
+          opted_out="$(gh pr view "$pr" --json labels \
+            --jq 'any(.labels[]; .name == "no-automerge")')"
+
+          [ "$base" = "main" ] || { echo "Base $base ≠ main — pas de merge."; exit 0; }
+          [ "$draft" = "false" ] || { echo "PR en draft — savepoint volontaire, pas de merge."; exit 0; }
+          [ "$opted_out" = "false" ] || { echo "Label no-automerge — pas de merge."; exit 0; }
+          case "$branch" in
+            wip/*|draft/*|rescue/*) echo "Branche $branch — savepoint volontaire, pas de merge."; exit 0 ;;
+          esac
+
+          # 3) L'état RÉEL du commit : tous les checks, pas une liste figée.
+          runs="$(gh api "repos/$REPO/commits/$sha/check-runs" --paginate \
+                    --jq ".check_runs[] | select(.name != \"$SELF_CHECK\") | \"\(.name)|\(.status)|\(.conclusion // \"\")\"")"
+          if [ -z "$runs" ]; then
+            echo "Aucun check sur $sha — rien ne prouve que la PR est verte, pas de merge."; exit 0
+          fi
+          echo "$runs" | sed 's/^/  /'
+
+          pending="$(echo "$runs" | awk -F'|' '$2 != "completed"' | wc -l)"
+          if [ "$pending" -gt 0 ]; then
+            echo "$pending check(s) encore en cours — le prochain déclenchement reprendra."; exit 0
+          fi
+          # `neutral` et `skipped` comptent comme verts : un job conditionnel qui ne s'exécute
+          # pas n'est pas un échec.
+          red="$(echo "$runs" | awk -F'|' '$3 != "success" && $3 != "skipped" && $3 != "neutral"' || true)"
+          if [ -n "$red" ]; then
+            echo "Check(s) non verts — pas de merge :"; echo "$red" | sed 's/^/  /'; exit 0
+          fi
+
+          # 4) Mergeable ? GitHub calcule paresseusement : on laisse jusqu'à ~30 s.
+          state=""
+          for _ in 1 2 3 4 5 6; do
+            state="$(gh pr view "$pr" --json mergeable --jq .mergeable)"
+            [ "$state" = "UNKNOWN" ] || break
+            sleep 5
+          done
+          if [ "$state" = "CONFLICTING" ]; then
+            echo "Conflit avec main — label needs-rebase, la session propriétaire reprend."
+            gh label create needs-rebase --color D93F0B \
+              --description "PR en conflit avec main — à rebaser par sa session" --force
+            gh pr edit "$pr" --add-label needs-rebase
+            exit 0
+          fi
+          [ "$state" = "MERGEABLE" ] || { echo "État de merge « $state » — on repassera."; exit 0; }
+
+          # 5) Merge. Squash, comme le moteur : le sujet du commit unique devient celui de main.
+          echo "Tout est vert et sans conflit — merge de #$pr."
+          gh pr merge "$pr" --squash --delete-branch
