@@ -58,7 +58,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | 🚧 partielle — ⛔ génération interdite | **anglais** | mixte | `541608` ? | — | 2026-07-17 (seed) | Seed depuis _INDEX ([~] historique, campagnes collège 2026-07). Lecture et profondeur NON auditées (incident fiches minces #348) — évaluer avant toute génération future (R-5). |
 | 🚧 partielle — ⛔ génération interdite | **arabe** | mixte | `501603` ? | — | 2026-07-17 (seed) | Seed depuis _INDEX ([~] historique). Couverture/profondeur à évaluer avant génération (R-5). |
-| 🚧 partielle — ⛔ génération interdite | **eveil** | mixte | `503604` ? | — | 2026-07-17 (seed) | Seed depuis _INDEX ([~] historique). Couverture/profondeur à évaluer avant génération (R-5). |
+| 🚧 partielle — ⛔ génération interdite | **eveil** | mixte | `503604` 16 % (manque p.2, p.30–180) · `103604` 6 % (manque p.1–4, p.7–28, p.30–60, p.62–95, p.97–117, p.119–155, p.160) | — | 2026-07-26 (claude) | LOT A A3 (2026-07-26) : lecture du guide p.20–29 — إطار الكفايات (p.25), matrice كفايات أفقيّة × مجال العلوم (p.24), التقييم (p.26), الأداء المنتظر par ثلاثيّة (p.27), تطوّر المحاور 1→6 (p.28) et la خارطة برنامج السنة السادسة (p.29, le المخطّط السّنوي en 5 فترات). Cela LÈVE l'incertitude « ce guide ne tabule pas d'إطار كفايات » (§6 de la fiche), issue d'un survol non exhaustif. Les plages réelles remplacent le seed `inconnu` ; le manuel élève 103604 est déclaré en 2ᵉ source. Restent non lus : guide p.2 et p.30–180 (corps des جذاذات, détail didactique par درس) → la fiche reste `partielle` et la génération interdite (R-5). Le contenu publié eveil-scientifique-6eme (9 ch.) a été produit avant cette évaluation. |
 | 🚧 partielle — ⛔ génération interdite | **francais** | mixte | `521612` ? | — | 2026-07-17 (seed) | Seed depuis _INDEX ([~] historique). Couverture/profondeur à évaluer avant génération (R-5). |
 | 🚧 partielle — ⛔ génération interdite | **islamique** | mixte | `511608` ? | — | 2026-07-17 (seed) | Seed depuis _INDEX ([~] historique). Couverture/profondeur à évaluer avant génération (R-5). |
 | 🚧 partielle — ⛔ génération interdite | **maths** | mixte | `502603` ? | — | 2026-07-17 (seed) | Seed depuis _INDEX ([~] historique). Couverture/profondeur à évaluer avant génération (R-5). |
@@ -127,7 +127,7 @@
 - **3eme-base** : **arabe** (`101315`, `101316`) · **eveil** (`103304`) · **maths** (`102306`)
 - **4eme-base** : **arabe** (`101410`, `101411`) · **eveil** (`103404`) · **francais** (`121410`, `121411`, `521417`) · **maths** (`102407`)
 - **5eme-base** : **arabe** (`101509`, `101510`) · **eveil** (`103504`) · **francais** (`121511`, `121512`) · **islamique-civique** (`111512`) · **maths** (`102511`)
-- **6eme-base** : **arabe** (`101611`, `101612`) · **eveil** (`103604`) · **francais** (`121614`, `121615`, `521613`) · **islamique-civique** (`111612`) · **maths** (`102609`)
+- **6eme-base** : **arabe** (`101611`, `101612`) · **francais** (`121614`, `121615`, `521613`) · **islamique-civique** (`111612`) · **maths** (`102609`)
 - **7eme-base** : **anglais** (`141705`, `141706`) · **arabe** (`101708`, `101710`) · **eveil** (`103702`) · **francais** (`121707`) · **informatique** (`133701`, `133702`) · **islamique-civique** (`111706`, `111707`) · **maths** (`102707`) · **sciences-physiques** (`123702`) · **svt** (`105704`)
 - **8eme-base** : **anglais** (`141806`, `141807`) · **arabe** (`101806`, `101808`) · **eveil** (`103802`) · **francais** (`121804`) · **islamique-civique** (`111807`, `111809`) · **maths** (`102805`) · **sciences-physiques** (`123801`) · **svt** (`105804`)
 - **9eme-base** : **anglais** (`141906`, `141907`) · **arabe** (`101908`, `101909`) · **eveil** (`103902`) · **francais** (`121905`) · **islamique-civique** (`111909`, `111911`) · **maths** (`102905`) · **sciences-physiques** (`123901`) · **svt** (`105905`)
@@ -144,4 +144,4 @@
 - **enrichissement** : 21 PDF
   - décisions en attente (`differee`) : `128703`, `128803`, `128903`, `228103`, `228233`, `228362`, `228363`, `228461`, `228462`
 
-**Totaux (calculés)** : 49 fiches suivies (19 partielle · 25 complete · 5 validee-r7) · 346 PDF au corpus · 165 œuvres principales restant à rattacher.
+**Totaux (calculés)** : 49 fiches suivies (19 partielle · 25 complete · 5 validee-r7) · 346 PDF au corpus · 164 œuvres principales restant à rattacher.
