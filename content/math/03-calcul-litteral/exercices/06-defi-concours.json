@@ -16,7 +16,8 @@
       ],
       "correctOption": "b",
       "explanation": "ننطلق من الهويّة: (a − b)² = a² − 2ab + b²، ومنه a² + b² = (a − b)² + 2ab. بالتعويض: a² + b² = 5² + 2×3 = 25 + 6 = 31. ✓ الخطأ الشائع: طرح 2ab بدل جمعه (فيخرج 25 − 6 = 19)؛ أو نسيان 2ab كلّيًّا (25)؛ أو جمع ab بدل 2ab (28).",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.alg.identites-remarquables"]
     },
     {
       "prompt": "ليكن E = x² − 9 − (x − 3)(2x + 1). عمِّل E ثمّ احسب قيمته عند x = 5.",
@@ -28,7 +29,8 @@
       ],
       "correctOption": "b",
       "explanation": "نلاحظ x² − 9 = (x − 3)(x + 3) (فرق مربّعين)، فيصير العامل المشترك (x − 3): E = (x − 3)(x + 3) − (x − 3)(2x + 1) = (x − 3)[(x + 3) − (2x + 1)] = (x − 3)(2 − x). عند x = 5: E = (5 − 3)(2 − 5) = 2 × (−3) = −6. ✓ (تحقّق بالنشر: x² − 9 − (2x² − 5x − 3) = −x² + 5x − 6، وعند x=5: −25 + 25 − 6 = −6). الخطأ الشائع: نسيان تغيير إشارات (2x + 1) عند الطرح، أو الاكتفاء بـ x² − 9 = 16.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.alg.factorisation", "math.alg.identites-remarquables"]
     },
     {
       "prompt": "بيّن أنّ العبارة A = (x + 3)² − (x + 1)(x + 5) لا تتعلّق بـ x، وأوجد قيمتها.",
@@ -40,7 +42,8 @@
       ],
       "correctOption": "c",
       "explanation": "ننشر: (x + 3)² = x² + 6x + 9، و(x + 1)(x + 5) = x² + 6x + 5. إذن A = (x² + 6x + 9) − (x² + 6x + 5) = 4. حدود x² و6x تتلاشى، فالعبارة ثابتة قيمتها 4 مهما كان x. ✓ الخطأ الشائع: كتابة (x + 3)² = x² + 9 بإهمال 6x (فلا تُلغى الحدود ويظنّ الناتج متغيّرًا)؛ أو جمع الثابتين 9 + 5 = 14 بدل طرحهما.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.alg.identites-remarquables", "math.alg.developpement"]
     },
     {
       "prompt": "ما مجموعة حلول المعادلة x³ = 4x في ℝ؟",
@@ -52,7 +55,8 @@
       ],
       "correctOption": "a",
       "explanation": "ننقل كلّ شيء لطرف واحد: x³ − 4x = 0، ثمّ نعمّل: x(x² − 4) = 0، أي x(x − 2)(x + 2) = 0. جداء منعدم ⟺ أحد العوامل منعدم: x = 0 أو x = 2 أو x = −2. إذن S = {−2 ; 0 ; 2}. ✓ الخطأ الشائع: القسمة على x للحصول على x² = 4 ⟹ {−2 ; 2} — القسمة على x تُفقد الحلّ x = 0 لأنّ x قد يكون معدومًا؛ لا نقسم أبدًا على مقدار قد ينعدم، بل نعمّل.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.alg.equations-produit", "math.alg.factorisation"]
     },
     {
       "prompt": "إذا كان x + 1/x = 3 (مع x ≠ 0)، فما قيمة x² + 1/x²؟",
@@ -64,7 +68,8 @@
       ],
       "correctOption": "d",
       "explanation": "نربّع الطرفين بالهويّة (x + 1/x)² = x² + 2·x·(1/x) + 1/x² = x² + 2 + 1/x². وبما أنّ (x + 1/x)² = 3² = 9، فإنّ x² + 1/x² = 9 − 2 = 7. ✓ الخطأ الشائع: كتابة (x + 1/x)² = x² + 1/x² بإهمال الحدّ الأوسط 2 (فيخرج 9)؛ أو جمع 2 بدل طرحه (11).",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.alg.identites-remarquables"]
     },
     {
       "prompt": "عمّل تلميذ العبارة 4x² − 25 فكتب: «4x² − 25 = (2x − 5)²». هل من خطأ، وما الصواب؟",
@@ -76,7 +81,8 @@
       ],
       "correctOption": "a",
       "explanation": "4x² − 25 = (2x)² − 5² وهي فرق مربّعين، تُعمَّل إلى (2x − 5)(2x + 5)، لا (2x − 5)². (تمرين «صيد الخطأ».) الخطأ الشائع: الخلط بين فرق المربّعين a² − b² = (a−b)(a+b) والمربّع الكامل (a−b)² = a² − 2ab + b²؛ للتحقّق: (2x − 5)² = 4x² − 20x + 25 ≠ 4x² − 25.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.alg.identites-remarquables", "math.alg.factorisation"]
     }
   ]
 }
