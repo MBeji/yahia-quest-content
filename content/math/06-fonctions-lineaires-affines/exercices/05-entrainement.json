@@ -16,7 +16,8 @@
       ],
       "correctOption": "b",
       "explanation": "f(4) = 3 × 4 − 5 = 12 − 5 = 7. نعوّض x بـ 4 ثمّ نحسب.",
-      "difficulty": 1
+      "difficulty": 1,
+      "competencies": ["math.fn.fonction-affine"]
     },
     {
       "prompt": "الدالة الخطية f تُعرَّف بـ f(x) = ax وتحقّق f(4) = 12. ما هو تعبير f؟",
@@ -28,7 +29,8 @@
       ],
       "correctOption": "a",
       "explanation": "من f(4) = 12 نجد a = 12 ÷ 4 = 3. إذن f(x) = 3x. التحقّق: f(4) = 3 × 4 = 12 ✓.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.fn.fonction-lineaire"]
     },
     {
       "prompt": "بيان دالة تآلفية يمرّ بالنقطتَين A(1 ; 7) وB(3 ; 11). ما هو تعبيرها؟",
@@ -40,7 +42,8 @@
       ],
       "correctOption": "c",
       "explanation": "معامل التوجيه a = (11 − 7) ÷ (3 − 1) = 4 ÷ 2 = 2. بما أنّ فاصلة A لا تساوي 0 لا نقرأ b مباشرةً، بل نحسب: b = 7 − 2 × 1 = 5. إذن f(x) = 2x + 5. التحقّق: f(3) = 6 + 5 = 11 ✓.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.fn.fonction-affine", "math.fn.representation-droites"]
     },
     {
       "prompt": "الدالة f تُعرَّف بـ f(x) = 3x − 12. ما قيمة x حين f(x) = 0 (الصفر)؟",
@@ -52,7 +55,8 @@
       ],
       "correctOption": "b",
       "explanation": "نحلّ 3x − 12 = 0 → 3x = 12 → x = 4. هذه هي قيمة x التي يقطع عندها البيان محور الفواصل. التحقّق: f(4) = 3(4) − 12 = 0 ✓.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.fn.fonction-affine", "math.alg.equations-premier-degre"]
     },
     {
       "prompt": "أيّ مستقيم من المستقيمات التالية نازل (تناقصي)؟",
@@ -64,7 +68,8 @@
       ],
       "correctOption": "d",
       "explanation": "المستقيم نازل (تناقصي) إذا كان معامل التوجيه a سالبًا. الوحيد ذو المعامل السالب هو f(x) = −0,5x + 1 حيث a = −0,5 < 0.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.fn.representation-droites", "math.fn.fonction-affine"]
     },
     {
       "prompt": "مستقيمان: f(x) = 3x − 1 وg(x) = x + 5. ما إحداثيّا نقطة تقاطعهما؟",
@@ -76,7 +81,8 @@
       ],
       "correctOption": "a",
       "explanation": "نحلّ 3x − 1 = x + 5 → 2x = 6 → x = 3. الصورة: f(3) = 3(3) − 1 = 8. نقطة التقاطع (3 ; 8). التحقّق: g(3) = 3 + 5 = 8 ✓. الخطأ الشائع: التوقّف عند x = 3 وأخذ y = 5 (الحدّ الثابت في g) دون حساب الصورة f(3) = 8.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.fn.representation-droites", "math.alg.systemes"]
     }
   ]
 }
