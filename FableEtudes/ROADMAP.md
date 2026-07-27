@@ -1,6 +1,6 @@
 # ROADMAP — ordre d'exécution du reste-à-faire (études, lots, contenu)
 
-<!-- roadmap-sync: since-pr=641 -->
+<!-- roadmap-sync: since-pr=654 -->
 
 > **Instantané du 2026-07-27** (créé le 2026-07-20, resynchronisé contre `main` le 2026-07-25
 > puis le **2026-07-27**) — déclinaison opérationnelle de l'**étude 26 (doctrine verticale : profondeur
@@ -100,7 +100,7 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
 
 > Objectif : refermer les trois boucles mortes (SM-2, misconceptions, adaptativité) et porter
 > la boucle d'apprentissage à M3 avant la rentrée.
-> **État au 2026-07-27 : 11 des 19 lignes livrées** (inchangé depuis le 2026-07-25 — les
+> **État au 2026-07-27 (fin de journée) : 12 des 19 lignes livrées** (inchangé depuis le 2026-07-25 — les
 > livraisons des 26-27/07 sont toutes des fondations ou du contenu). La prochaine ligne libre
 > est la **9** (exécution de la correction riche, dont le contrat est désormais écrit).
 
@@ -122,7 +122,15 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
 **Étape C — le Rappel cesse de refuser des réponses justes (étude 20, validée)**
 
 - [x] 10. **é20 lot 1 — socle scoring ensembliste** (`accepted_answers` server-only + juge unique `is_accepted_free_answer`) — #583
-- [ ] 11. **é20 lot 7 — type natif `short_answer`** (moteur) — **indépendant, exécutable dès maintenant** (l'étape D dont il était parallélisé est finie)
+- [x] 11. **é20 lot 7 — type natif `short_answer`** (moteur) — **livré le 2026-07-27** (arena#654).
+      Sixième type natif, dans le cadre fermé de l'étude 03 **sans rien élargir** : aucune colonne
+      (clé `{text, mistakes?}` dans `answer_key`), aucun écran (le champ du Rappel devient
+      `FreeTextInput`, partagé), aucun grant. Son verdict réutilise le juge du lot 1 — donc une
+      question libre accepte les paraphrases **dès sa naissance**. L'appariement des erreurs, qui
+      était dupliqué entre les deux RPCs de soumission, devient `resolve_misconception_tag`
+      (3 variantes, 1 fonction). Garde d'autorat R-12 bloquante dans `content:qa`.
+      ⚠️ **Aucun contenu n'est authoré** : le type existe, il n'est joué nulle part tant que le
+      lot 8 n'a pas écrit ses chapitres témoins (et ce lot demande une décision de doctrine).
 
 **Étape D — la maîtrise devient visible (étude 07 puis 04-A2)**
 
@@ -259,7 +267,19 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
       **Vagues suivantes** (hors périmètre de ce lot) : les autres matières et les autres niveaux
       restent non tagués — la famille `math` couvre `math*`, une famille `physique`/`svt` reste à
       écrire par l'architecte avant tout tagging scientifique.
-- [ ] C5. **é20 lots 2 → 4 — réponses acceptées** : Tier A morphologique déterministe (corpus entier) → skill Tier B + pilote petites classes ar → campagne (1 matière/PR, priorité petites classes → concours) ; puis lot 5 (saisie arabe) et lot 8 (pilote `short_answer`)
+- [ ] C5. **é20 lots 2 → 4 — réponses acceptées.** **Lot 2 (Tier A) livré le 2026-07-27**
+      (arena#652) : l'expansion morphologique — article arabe plié dans les deux sens, articles
+      fr/en, contractions — est une **fonction pure appliquée au build**, pas des variantes
+      écrites dans le corpus (une dérivée de la clé n'est pas une décision d'auteur). Mesure sur
+      le corpus réel : **13 017 des 13 049 questions éligibles** au Rappel gagnent au moins une
+      forme acceptée, 24 932 variantes, 42 refusées par R-4 ; le gisement « article » arabe
+      (1 851 clés) est couvert à **1 849**. Écart assumé : la langue est prise du
+      `contentLanguage` déclaré au lieu d'être déduite — appliquer les trois langues produisait
+      « an Afrique ».
+      **Reste** : lot 3 (skill Tier B + pilote petites classes ar) et lot 4 (campagne, 1 matière
+      par PR) — **les deux demandent de la génération IA hors-ligne**, mise en attente par
+      Mohamed le 2026-07-27 ; puis lot 5 (aides à la saisie arabe, déterministe, livrable seul)
+      et lot 8 (pilote `short_answer`, qui attend en plus une décision de doctrine R-14).
 - [ ] C6. **Illustration — backlog é18 (ordre petites-classes-d'abord)** : 4ᵉ puis 5ᵉ année (toutes matières visuelles) → maths 7ᵉ (5 ch.) → maths 9ᵉ fonctions+stats (2) → iq-training (3) → français (1). **Entamé le 2026-07-26** : 10 figures « objet réel » remplacées par des illustrations libres en `eveil-2eme` (#10) et **23 figures** de la campagne animaux sur 1ᵉʳ → 4ᵉ année (#11), outillées par l'import du moteur (arena#623). Le reste de la liste est inchangé
 - [ ] C7. **é19 lot 1 — doctrine + gate figures questions** _(A3 rendu : SVG seul, vérification intégrale, lots ≤ ~40 figures)_, puis campagne questions illustrées (concours d'abord : 6ᵉ/9ᵉ/bac)
 - [ ] C8. **é21 lot 1 — doctrine manuels** _(A4 rendu : verbatim court non créatif toléré ; provenance NON affichée à l'élève, lot 3 abandonné)_, puis pilote `math-1ere-sec` (exercices tracés `manuel_ref`, rapport de couverture)
@@ -306,4 +326,5 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
 | 2026-07-25 | **Ligne 8 livrée — amendement é04-A1.2 écrit** (`04-moteur-adaptatif/ETUDE.md` §9). Contrat fermé en deux lots (A1.2a serveur / A1.2b client). Il corrige deux suppositions du mandat : l'explication post-erreur n'était **pas** monnayée (c'est l'indice avant réponse qui l'est), et le feedback question-par-question rouvre la couture de soumission atomique — sorti du périmètre, posé en **Q-4**. Le lot sera **inerte tant que le corpus n'est pas tagué** (C4), assumé. La prochaine ligne PRODUIT devient la **9**.                                                                                                                                                                                                                                                                                      |
 | 2026-07-25 | **Resynchronisation contre `main` — 24 lots livrés manquaient.** La règle « cocher dans la même PR » était inapplicable depuis la scission (é24) : deux dépôts, aucune PR commune. Elle est remplacée par un invariant vérifié (§0) — chaque ligne cochée cite sa PR, et le gate `check-roadmap-sync.mjs` échoue si un lot livré n'est cité nulle part. **§1 « reverdir `main` » est clos** (nightly vert 5 nuits, e2e-auth vert, #250/#363 closes) et sa mise en garde pgTAP est périmée (#563). **F8 ajoutée** : l'étude « IA vs déterministe », 6 lots, close — elle avait tourné entièrement hors roadmap. **A8** consigné (script maison plutôt que Renovate). **F7 nettoyée** (issues majors doublonnées, #234 périmé). **C4 remontée en priorité** : trois lots produit livrés sont inertes sans le tagging. |
 | 2026-07-27 | **Resynchronisation contre `main` (base #536 → #641).** Le gate `check-roadmap-sync.mjs` était **vert** — il ne voit que les sujets de commit en forme « étude/lot », et rien de ce qui a été livré les 26-27/07 n'en portait la forme : la dérive de ces deux jours est un **angle mort assumé** du gate, pas une panne. Corrigé ici à la main. **Fondations** : F4 **cochée** — le go-live infra est soldé, et il l'était en partie **depuis des semaines sans trace dans le repo** (GA4 tournait, le DSN Sentry était posé) ; F7 **nettoyée** (major Supabase livré par arena#622, restent #595 et #593) ; F8 **refermée** par son volet contenu (5 lots `LC0…LC4` le 2026-07-25) ; **F9 ajoutée** pour l'outillage de campagne, livré entièrement hors roadmap. **Contenu** : **C10 ajoutée** — une campagne petites classes (`french-4eme`, `french-5eme`, `arabic-6eme`, fiche 6ᵉ base) tournait depuis le 26/07 **sans aucune ligne ici** ; C6 entamée (33 figures). **F6** : la file de triage est passée de 14 à 3 issues, mais les 3 sont des **artefacts** d'arena#638 (un e2e écrit en prod chaque nuit) — le geste opérateur reste vain tant que le bug vit. **Aucune ligne PRODUIT n'a bougé** : la prochaine reste la **9**. |
+| 2026-07-27 | **Étude 20 — deux lots livrés (2 et 7), et la file C5 s'arrête là où l'IA commence.** **Lot 2** (Tier A, arena#652) : l'expansion morphologique est une fonction PURE appliquée au build, pas des variantes gravées dans le corpus — 13 017 des 13 049 questions éligibles au Rappel gagnent une forme acceptée, 42 refusées par R-4, gisement « article » arabe couvert à 1 849/1 851. **Lot 7** (type natif `short_answer`, arena#654, = ligne PRODUIT 11) : sixième type dans le cadre fermé de l'étude 03, sans colonne ni écran ni grant nouveau ; l'appariement des erreurs, dupliqué entre les deux RPCs de soumission, devient une fonction unique. **Les lots 3 et 4 (Tier B) sont mis en attente par Mohamed** : ils reposent sur de la génération IA — hors ligne et relue, jamais au runtime (R-7), mais génération quand même. Restent donc exécutables sans IA : lot 5 (saisie arabe) et lot 6 (refus contesté). Le lot 8 attend en plus une décision de doctrine (R-14). |
 | 2026-07-27 | **C4 cochée — le tagging de compétences vague 1 est fait** (1 362 questions : `math` 557/557, `math-6eme` 805/805, 10 PRs #51→#61). Les trois lots produit livrés depuis le 2026-07-20 mais **inertes faute de corpus tagué** ne le sont plus. Le lot rend deux constats à l'humain : les **57 compétences du registre sont toutes mobilisées** (le calibrage Q-1 est vérifié par l'usage, pas seulement par construction — c'est ce qui manquait à la validation de l'échantillon), et **deux compétences manquent** au registre (`num.valeur-absolue`, `stat.mode` — 18 questions rabattues sur une compétence voisine). **Découverte du même jour, et c'est le nouveau point dur** : `apply-content.yml` **n'a jamais appliqué de contenu en prod** — son unique run réel a échoué au backup, l'URL du secret `PROD_SUPABASE_DB_URL` d'ici étant la connexion directe Supabase, IPv6-only, injoignable depuis les runners GitHub (#52). Rien de ce qui a été produit depuis la scission n'est donc en prod. La prod est intacte : le fail-closed a joué avant toute écriture. |
