@@ -252,7 +252,7 @@ Le guide **tabule bien** le déroulé annuel, en **5 فترات** calées sur le
 - ~~**Format du guide ≠ 4ème/5ème** — « sans table إطار الكفايات ni المخطّط السّنوي tabulé »~~ → **LEVÉE le 2026-07-26** par la lecture des **p.20–29** : le إطار الكفايات (الكفاية النهائيّة + المكوّنان + 6 اقتدارات) est **p.25**, la matrice كفايات أفقيّة × مجال العلوم **p.24**, les critères d'évaluation **p.26**, l'أداء المنتظر par ثلاثيّة **p.27**, la progression 1ère→6ème **p.28**, et le **المخطّط السّنوي tabulé** (5 فترات × وحدات × محاور) **p.29**. Tout est transcrit en §1.1–§1.6 et §2.0. La conclusion précédente venait d'un **survol non exhaustif** : elle n'aurait pas dû être écrite au présent affirmatif sur des pages non lues.
 - ~~**Reste hors de ce volume : les مؤشّرات**~~ → **NUANCÉE le 2026-07-26** (lecture de la جذاذة عدد 1, p.43–44). Il est exact que le volume ne **tabule** pas les مؤشّرات dans un إطار كفايات — la case du schéma p.25 renvoie bien à « انظر البرامج الرسميّة ». Mais **chaque جذاذة en porte deux séries**, nommées et explicites : **مؤشّرات التّجاوز** (une par حاجز déclaré) et **مؤشّرات القدرة المستهدفة** (les gestes du تمشّي attendus). Le renvoi p.25 vise donc les مؤشّرات **du référentiel de compétences**, pas ceux de la séance. Pour un usage de génération, les مؤشّرات opérationnels sont **dans les جذاذات** — voir §7.5.
 - **Le document-programme officiel séparé** (celui cité p.23 « البرامج الرسميّة ص 119، 120 ») reste absent de `cnp-officiel/`. Il n'est plus bloquant pour la génération, mais il resterait la seule source des مؤشّرات du référentiel.
-- **Pages du guide encore non lues : p.2 et p.71–180** — le corps des **جذاذات** (une par درس : أهداف، وسائل، سير الحصّة، تقييم). Elles ne changent pas le **scope** (fixé par §2.0 + §4), mais elles portent le **détail didactique par درس** ; c'est la tranche suivante du LOT A pour ce couple.
+- **Pages du guide encore non lues : p.2 et p.83–180** — le corps des **جذاذات** (une par درس : أهداف، وسائل، سير الحصّة، تقييم). Elles ne changent pas le **scope** (fixé par §2.0 + §4), mais elles portent le **détail didactique par درس** ; c'est la tranche suivante du LOT A pour ce couple.
 - **محاور physiques sans chapitre publié dédié** : les **trois effets du courant électrique** (التأثير الحراري p.119 · الكيميائي p.122 · المغناطيسي p.135 — soit l'électricité de la و5) **ne sont pas couverts** par un chapitre du contenu publié ; de même l'**immunité/microbes** (الجلد-الجراثيم · التعفّن الجرثومي · التلقيح · المقاومة, p.68–83 de la و3) **n'a pas de chapitre dédié**. Le contenu publié (9 ch.) couvre donc **une partie** du programme ; ces blocs sont **au programme officiel** mais **absents du contenu app** → à signaler côté couverture (manifeste), pas une erreur de scope. La colonne pages de §4 a donc volontairement **resserré** les bornes des chapitres physiques (`07`=المغانط/البوصلة seulement ; `08`=الثقل seulement) pour ne pas leur imputer l'électricité.
 - **Bornes manuel (§4)** déduites « début du درس suivant − 1 » à partir de la خارطة الكتاب (p.156–157) : exactes au درس près, à ± une page de titre/transition. La frontière `01-air`/`02-respiration` est posée sur le درس « التبادل الغازي في الرئتين » (p.47) ; la frontière `03`/`04` (sang vs nutrition) saute le bloc immunité p.68–83 (sans chapitre).
 - **Cartes conceptuelles / أهداف** lus sur renders 170–200 dpi **nets** (manuel p.6/29/61/96/118 ; guide p.181) — fiables. Les **جذاذات détaillées** (déroulé de chaque درس dans le guide) **n'ont pas été transcrites cellule par cellule** (volume 182 p.) ; le scope notionnel est synthétisé des cartes + أهداف + titres de دروس + معجم. À reconfirmer au scan seulement si un déroulé de séance précis est requis.
@@ -794,3 +794,188 @@ _« وتتألّف الحركة التنفّسيّة من طورين : الشه�
 > 🎯 **Pour la génération.** Le mécanisme est donné **musculairement complet** — côtes **et** diaphragme, avec le sens de déplacement de chacun et la conséquence en pression. C'est exactement le niveau qui permet des items de type « cause → effet » sans invention : « à l'inspiration, le diaphragme s'aplatit-il ou se bombe-t-il ? ». Les valeurs (12 صم / 2 صم / 15 mouvements / 5 L / 500 millions / 1 micron) sont **citables telles quelles**. Le couple **volontaire ≠ involontaire** (centre bulbaire, mais mouvements forcés possibles) est une nuance rarement présente à ce niveau et vaut un item à elle seule.
 
 > ⚠️ **Coquilles de cette tranche, non corrigées** : « شريّن » pour شريان dans la légende p.69 ; « وهو ما يُيَسَّر » (p.69) au lieu de يُيَسِّر ; « الاكسجين » sans hamza dans le tableau p.65 et dans la ملاحظة 3 p.69, face à « الأكسجين » p.64.
+
+### 7.15 التبادل الغازي et la relation respiration ↔ circulation (guide p.71–73)
+
+**Trois expériences pour établir l'échange gazeux (p.71)** — le guide procède par preuves successives, chacune avec son observation :
+
+| | dispositif | ملاحظة | ce qu'elle prouve |
+| :-: | --- | --- | --- |
+| **تجربة 1أ** | on aspire l'air **extérieur** à travers un flacon de **ماء الجير** (par le tube ب, l'air entrant par le tube أ) | **عدم تعكّر ماء الجير** | الهواء الخارجي لا يحتوي إلاّ على كميّة ضئيلة من ثاني أكسيد الكربون |
+| **تجربة 1ب** | on **souffle** dans le tube أ : l'air d'expiration traverse l'eau de chaux | **يتعكّر ماء الجير** | هواء الزّفير غنيّ بثاني أكسيد الكربون |
+| **تجربة 2** | ننفخ على **زجاج بارد** | تتكوّن **قطرات من الماء** | هواء الزّفير غنيّ ببخار الماء |
+| **تجربة 3** | une souris sous cloche, reliée à un tube d'eau de chaux et à un tube d'eau colorée | بعد دقائق : **تعكّر ماء الجير** ; **ارتفاع الماء الملوّن في الأنبوب** | الفأر يطلق ثاني أكسيد الكربون **et** consomme de l'oxygène — la montée du liquide compense ce qu'il a prélevé ; _« واذا قمنا بتحليل هواء الزّجاجة لوجدناه فقيرا من حيث الاكسجين »_ |
+
+**Le tableau comparatif شهيق / زفير (p.71)**, tel qu'imprimé :
+
+| 100 ل من الهواء | أزوط | أكسجين | ثاني أكسيد الكربون | بخار الماء | الحرارة |
+| --- | :-: | :-: | :-: | :-: | :-: |
+| **هواء الشّهيق** | 79 ل | 21 ل | 0,03 ل | متغيّر (أثر) | متغيّرة |
+| **هواء الزّفير** | 79 ل | 16 ل | 4 ل | مشبع (4 غ) | 37 |
+| **الفارق** | 0 | −5 | +3,97 | | |
+
+**نستنتج من هذا الجدول** : _« عند مرور الهواء بالرّئتين يخسر قسما من الأكسيجين ويكسب كمية من ثاني أكسيد الكربون وبخار الماء. »_ Puis, pour le niveau tissulaire : _« أمّا في مستوى الخلايا (النسيج) فإنّ التّجربة التّالية تبيّن أنّ العضلة امتصّت الاكسجين و طرحت ثاني أكسيد الكربون الّذي عكّر ماء الجير. »_ — l'expérience de la **عضلة حيّة** dans l'eau de chaux à **37 °C** (schéma p.72).
+
+> ⚠️ **Deux choses à connaître avant d'exploiter ce tableau.** (a) Les colonnes ne se somment pas à 100 : l'inspiration donne 79 + 21 + 0,03 = **100,03 L**, l'expiration 79 + 16 + 4 = **99 L**. Les différences (0, −5, +3,97) sont, elles, arithmétiquement justes ligne à ligne. C'est un tableau **pédagogique arrondi**, pas un bilan bouclé — ne pas en faire un exercice de calcul de complément. (b) L'azote y est orthographié **« أزوط »** (avec ط) alors que le texte de la p.64 écrit **« الأزوت »**. Troisième graphie du même gaz dans le volume, après النتروجين du tableau p.65. On transcrit ce qui est imprimé.
+
+**ما علاقة التنفّس بالدّورة الدّمويّة ؟ (p.72)** — le mécanisme du transport, donné en toutes lettres :
+
+- L'oxygène, en entrant dans le sang, **s'unit** à un pigment rouge présent dans les globules rouges, la **خضاب الدّم (الهيموغلوبين)**, formant un composé nouveau, l'**أكسيهيموغلوبين** ;
+- arrivé aux tissus, l'أكسيهيموغلوبين **se dissocie** et libère l'oxygène, qui sert à l'**oxydation des matières nutritives** et à la **production d'énergie** ;
+- il en résulte du **CO₂**, qui repart avec le **plasma** des tissus vers les poumons pour être évacué **au niveau des حويصلات رئويّة**.
+
+L'union est présentée comme une **réaction réversible**, avec son équation à double flèche :
+
+> **خضاب الدّم + أكسجين** ⇄ **خضاب الدّم المؤكسج (اكسيموغلوبين)**
+> — flèche vers la droite sous la mention **ضغط الأكسجين منخفض** ; flèche vers la gauche sous **ضغط الأكسيجين مرتفع**.
+
+**Le sens de la réaction dépend de la pression d'oxygène du milieu (p.73)** : pression **forte** — ce qui se produit **au niveau des poumons**, où l'air est riche en O₂ — le sang **fixe** l'oxygène et sa couleur vire au **أحمر قان** (rouge vif) ; pression **faible** — ce qui se produit **dans les cellules** — l'أكسيهيموغلوبين se dissocie, l'oxygène est libéré, et le sang prend la couleur **أحمر قاتم** (rouge sombre). Figure p.73 : « **التبادل الغازي في مستوى الرّئتين** », deux schémas symétriques (alvéole ↔ sang, cellule ↔ sang) avec les flux O₂ et CO₂ fléchés en sens inverse, et les mentions **دم مؤكسج** / **دم فاقد للأكسجين** / **دم قان**.
+
+> 🎯 **Pour la génération.** C'est le chaînon qui manque entre `01-air`/`02-respiration` et `03-sang-circulation` : le guide **relie explicitement** les deux chapitres publiés, par un mécanisme unique (hémoglobine réversible, pilotée par la pression d'O₂). Le couple **rouge vif / rouge sombre** est un excellent item observable, et la double flèche permet une question de raisonnement « dans quel sens la réaction va-t-elle ici ? » avec une clé certaine.
+
+### 7.16 وقاية الجهاز التنفّسي, التدخين, التنفّس الاصطناعي (guide p.73–74)
+
+**كيف نحافظ على سلامة الجهاز التنفّسي ؟ (p.73)** — quatre règles, dans l'ordre du guide :
+
+- **(أ)** que l'air soit **suffisant en quantité et régulier en composition**, et **renouvelé** de façon continue — **تهوئة الغرف وقاعات التدريس** — pour fournir l'oxygène nécessaire ;
+- **(ب)** que l'air soit **exempt de gaz toxiques**. Le plus dangereux cité est le **غاز أوّل أكسيد الكربون** (monoxyde de carbone), qui **paralyse la fonction respiratoire** ; il naît d'une **combustion incomplète du charbon** et se détecte mal car il est **inodore**. Deux seuils chiffrés : il devient **dangereux** à **1/10 000** dans l'air et **mortel** à **1/1 000**. Autres gaz toxiques cités : ceux émis par les **fermentations**, les **mines**, les **usines** et les **volcans** ;
+- **(ج)** que le taux de **poussière et de germes** soit très faible. Deux moyens : ouvrir les fenêtres, car _« تقتل أشعّة الشّمس البكتيريات »_ — et le guide cite le dicton **« بيت تدخله الشّمس لا يدخله الطّبيب »** ; et **respirer par le nez**, dont la cavité, riche en poils, **humidifie, réchauffe et filtre** l'air — l'inspiration par la bouche laisse entrer un air poussiéreux, sec et froid qui expose les voies et les poumons aux **التهابات صدريّة** ;
+- **(د)** pratiquer une **activité physique en plein air et dans les espaces verts**, ce qui renforce les poumons en plus du muscle cardiaque, dilate la cage thoracique et fournit un air non pollué.
+
+**التدخين ومضارّه (p.74)** — _« يؤثّر التّدخين في صحّة الفرد تأثيرا سيّئا للغاية ويزيد من الإصابة ببعض الأمراض مثل السّرطان السّعالي وأمراض القلب والشّرايين »_, et son dommage **s'étend à l'entourage** — le guide nomme le **التّدخين السّلبي** (tabagisme passif). Trois substances toxiques du tabac : **النيكوتين · القطران · غاز ثاني أكسيد الكربون** ; elles agissent sur le **système nerveux**, causent le **cancer** et réduisent l'efficacité (**نجاعة**) de l'appareil respiratoire. Illustration : un visage coupé en deux, cigarette d'un côté, fleur de l'autre, légendé **« 13 ماي من كلّ سنة : اليوم العالمي بدون تدخين »**.
+
+> ⚠️ **Trois réserves sur cette page.** (a) « السّرطان السّعالي » n'est pas une dénomination médicale ; le sens visé est le cancer du poumon / des voies respiratoires. (b) Le troisième toxique du tabac est donné comme **ثاني أكسيد الكربون** ; le toxique caractéristique de la fumée de cigarette est l'**أوّل أكسيد الكربون** — celui-là même que la page précédente vient de désigner comme le plus dangereux. Le guide s'auto-contredit à une page d'intervalle. (c) La journée mondiale sans tabac est le **31 mai**, pas le **13 mai** — l'inversion des chiffres est visible. **Aucune des trois n'est corrigée dans la fiche** : elles sont transcrites telles quelles. Mais **aucune ne doit servir de clé** dans du contenu généré.
+
+**معلومات إضافيّة — التّنفّس الاصطناعي (p.74)** — but : faire entrer l'air dans les poumons par un mouvement d'inspiration et un mouvement d'expiration **imitant les mouvements naturels**, pratiqué par le secouriste (**المُسْعِف**) en cas d'**إغماء** (évanouissement), de **غرق** (noyade) ou d'**اختناق** (asphyxie). Les règles à suivre :
+
+1. **S'assurer que la respiration du blessé s'est bien arrêtée** — en posant la main au bas du **sternum** (عظم القصّ), au milieu de la poitrine, et l'oreille sur le thorax pour en observer le mouvement : _« إذ لا يجوز أبدا إجراء عمليّة التّنفّس الاصطناعي لمصاب لا يزال يتنفّس »_ ;
+2. **السّرعة في إجراء عمليّة التّنفّس** ;
+3. pratiquer cette respiration **في الهواء الطّلق** ;
+4. **ouvrir correctement les voies respiratoires** et vérifier l'**absence de corps étranger dans la bouche**.
+
+### 7.17 الاحتراق في الهواء et توظيف عمليّة الاحتراق (guide p.75–77)
+
+> **Troisième volet du ملفّ علمي de la و2.** Après l'air (§7.13) et la respiration (§7.14, §7.15), le guide traite la **combustion** — c'est-à-dire le second usage de l'oxygène, celui qui n'est pas biologique. Il l'aborde avec la même grammaire : une question, une expérience, une observation, une conclusion.
+
+**1. مفهوم الاحتراق — احتراق الورق (p.75)** — on brûle un morceau de papier ordinaire dans une coupelle. **ملاحظتان** : (a) des langues de flamme et de la fumée s'élèvent, on sent la chaleur en approchant la main, la flamme s'éteint quand le papier a disparu ; (b) la matière restante est une **cendre grise et friable** (رماديّة هشّة) dont les propriétés **diffèrent de la matière d'origine** — _« ويعني ذلك أنّها تحوّلت إلى مادّة جديدة وهذا النّوع من التفاعل يسمّى الاحتراق »_. La combustion est donc définie par la **transformation de matière**, pas par la flamme.
+
+**2. الاحتراق في الأكسجين (p.75)** — on place le papier enflammé dans une coupelle **vidée d'air** : _« فنلاحظ أنّ اللّهب سرعان ما يزول ولا يتمّ الاحتراق »_. D'où l'oxygène est nécessaire, ce que confirme l'**expérience du قبس** (une baguette incandescente, non enflammée, qui **se rallume** quand on l'introduit dans un tube d'oxygène — schéma légendé « اشتعال القبس في الأكسجين »).
+
+**Les éléments qui entrent dans une combustion**, tels que le guide les liste :
+
+- **المادّة القابلة للاحتراق (المحترق)** ;
+- **الأكسجين + الحرارة الّتي تسخّن المادّة إلى درجة الاحتراق الّتي تختلف من مادّة إلى أخرى.**
+
+**3. Trois combustibles, trois comportements (p.75–76)** :
+
+| المادّة | ce qu'on observe | ce que le guide en tire |
+| --- | --- | --- |
+| **الكحول** (p.75) | on approche une allumette d'un peu d'alcool dans une coupelle : il s'enflamme d'une **flamme peu lumineuse et très chaude** ; posée sur la coupelle, une plaque de verre **éteint** la flamme | l'extinction vient de l'**انعدام الأكسجين** |
+| **الموقد الغازي** (p.75) | l'aspect de la flamme dépend de la **proportion d'air mêlée au gaz**, réglée par une ouverture dite **هوايّة** près de la base du brûleur ; sans ce réglage la flamme **يتأجّج ويصير مضيئا** | combustion **incomplète** → formation de particules de charbon (**دخان**) → noircissement des ustensiles |
+| **النّفط** / les huiles lourdes (p.76) | approcher une flamme **ne suffit pas** à les enflammer, malgré la présence d'oxygène | ce sont des **liquides organiques** qui ne brûlent que **vaporisés** ou décomposés en aérosols ; d'où le **préchauffage** des moteurs **diesel** avant démarrage, et la flambée des huiles surchauffées dans la poêle |
+
+**4. ما هي العناصر النّاتجة عن عمليّة الاحتراق ؟ (p.76)** — une expérience à trois observations, sur une bougie :
+
+- coiffer la bougie d'un verre → **قطرات ماء على الجدار الدّاخلي** = preuve de **بخار الماء** ;
+- verser un peu d'**eau de chaux** dans le verre et agiter → **تعكّر ماء الجير** = preuve de **ثاني أكسيد الكربون** ;
+- approcher une **assiette blanche** de la flamme → **اسوداد**, par dépôt de **هباب الفحم**, _« لأنّ الاحتراق أصبح غير تامّ »_.
+
+**Conclusion imprimée** : _« تنتج عن عمليّة الاحتراق : **ضوء وحرارة وبخار الماء وثاني أكسيد الكربون وهباب الفحم** (عندما يكون الاحتراق غير تامّ). »_
+
+**5. توظيف عمليّة الاحتراق — احتراق الشّمعة (p.77)** — la bougie est faite d'une **فتيلة من القطن محاطة بالشّمع** ; la cire est un mélange de **برافين** et de **شحوم الحيوان**, les meilleures bougies étant les plus riches en paraffine. Mécanisme : la mèche allumée fait **fondre** la cire voisine, la mèche l'**absorbe**, et la cire fondue **se transforme alors en gaz qui brûle**.
+
+**Les trois zones de la flamme**, telles que le guide les décrit et les schématise (منطقة صفراء مضيئة · منطقة قاتمة · منطقة زرقاء, avec فتيلة, شمع سائل, شمع صلب) :
+
+| zone | position | test | ce qu'on en conclut |
+| :-: | --- | --- | --- |
+| **1 — منطقة صفراء مضيئة** | en **haut** de la flamme | un fil de cuivre y est recouvert d'une **fine couche de noir** | c'est le **هباب الفحم** incandescent qui rend la flamme lumineuse |
+| **2 — منطقة قاتمة** | au **milieu** | un fil de cuivre **ne rougit pas** | sa température est **basse** |
+| **3 — منطقة زرقاء** | en **bas** | — | sa température est **très élevée** |
+
+Et l'expérience qui identifie le combustible : on introduit un **tube de verre effilé** dans la **زone sombre** ; il en sort un **غاز أبيض qui s'enflamme** au simple approche d'une flamme. La zone sombre contient donc le gaz **non encore brûlé**.
+
+**6. قراءة للتوسّع — التقطير الاتلافي للخشب (p.77)** — chauffer le bois **hors contact de l'air** libère un **gaz combustible (غاز الاستصباح)**, condense des **matières noires** sur les parois froides du tube, et laisse une masse noire de **الفحم النّباتي**. Le procédé s'appelle **التّقطير الإتلافي** et il est exploité industriellement pour produire le **charbon (المردومة)** : le bois chauffé hors de l'air se décompose en gaz et liquides volatils, eux-mêmes combustibles, et la combustion s'entretient tant que la décomposition dure. Les pays industrialisés en tirent des liquides comme le **حامض الخلّ**, le **كحول**, les **زيوت** et le **قطران**.
+
+> 🎯 **Pour la génération.** Trois choses d'un coup : (a) une **définition opératoire** de la combustion (transformation de matière, pas flamme) qui casse la confusion habituelle ; (b) le **triangle du feu** énoncé sans le nommer — combustible, oxygène, température d'inflammation propre à chaque matière — directement transposable en item ; (c) les **trois zones de la flamme** avec, pour chacune, un **test observable** et un résultat. La zone sombre « froide et pleine de gaz imbrûlé » contredit l'intuition et fait un excellent item de raisonnement, avec une clé imprimée.
+
+### 7.18 مخطّط الوحدة 2 et أهداف مميّزة, version **guide** (p.78)
+
+Comme pour la و1 (§7.4), le guide clôt son ملفّ علمي par sa **propre carte conceptuelle** et la liste des objectifs. Concept central **« الهواء والتّنفّس »**, six branches :
+
+**الهواء ضروري لحياة الكائنات الحيّة** · **التّبادل الغازي في مستوى الرّئتين** · **مكوّنات الهواء** · **توظيف عمليّة الاحتراق** · **خاصيّات الهواء** · **الاحتراق في الهواء**.
+
+> Contrairement à la و1, **aucune divergence** entre cette carte et l'organisation du ملفّ علمي : les six branches recouvrent exactement §7.13 (air : nécessité, composition, propriétés), §7.15 (échange gazeux) et §7.17 (combustion et son emploi). En revanche la carte **ne porte pas de branche « التنفّس عند الإنسان »** — l'anatomie de §7.14 n'y figure pas comme entrée propre, elle est absorbée dans « التّبادل الغازي في مستوى الرّئتين ».
+
+**المشروع (p.78)** — le guide donne ici **quatre exemples** de projets, là où la و1 n'en proposait qu'un : إعداد **ملف حول تلوّث الهواء وتأثيره في التّنفّس وتقديم الحلول المناسبة** · إعداد **معلّقة حائطيّة** · إعداد **مطويّة** · إعداد **مقال في مجلّة مدرسيّة**. Et la même consigne à l'enseignant : _« يقوم المعلّم بإعداد جذاذة مشروع على غرار النموذج الموجود بالملفّ البيداغوجي. »_
+
+**الأهداف المميّزة** (7, dans l'ordre du guide) :
+
+1. إثبات ضرورة الهواء لحياة الإنسان والحيوان والنّبات.
+2. ذكر خاصيات الهواء.
+3. ذكر مكوّنات الهواء.
+4. إثبات دور الهواء في الاحتراق.
+5. ذكر العناصر المتدخّلة في عمليّة الاحتراق والنّاتجة عنها.
+6. توظيف عمليّة الاحتراق.
+7. تبيّن وظيفة الرّئتين في التّبادل الغازي بين الجسم والمحيط.
+
+> ⚠️ **Coquille de typographie, non corrigée** : l'objectif 2 est imprimé « ذكرخاصيات » (sans espace) et sans la ة de خاصيّات — ailleurs le guide écrit خاصيّات.
+
+### 7.19 جذاذة تنشيط عدد 1 de la و2 (guide p.79–82)
+
+> **Le gabarit de §7.5 est confirmé, et daté.** La جذاذة de la و2 reprend **exactement** les mêmes rubriques que celle de la و1 — نصّ الكفاية النّهائيّة · نصّ المكوّن الأوّل · المكوّن الثّاني · الوحدة · المفاهيم · المحتوى · الهدف المميّز للوحدة · المستلزمات البيداغوجيّة · الحواجز · مؤشّرات التّجاوز · مؤشّرات القدرة المستهدفة, puis le **التمشّي البيداغوجي**. Ce n'est donc pas une mise en page propre à la و1 : c'est **le** gabarit du volume.
+
+**Cadre (p.79)** — **تنجز في 5 حصص يضبط المعلّم أهدافها**.
+
+| rubrique | contenu (p.79) |
+| --- | --- |
+| **نصّ الكفاية النّهائيّة** | حلّ وضعيّات مشكل دالّة بإنجاز بحوث ومشاريع |
+| **نصّ المكوّن الأوّل** | حلّ وضعيات مشكل دالّة بإنجاز بحوث ومشاريع متّصلة ببعض الظّواهر الفيزيائيّة |
+| **المكوّن الثّاني** | حلّ وضعيات مشكل دالّة بإنجاز بحوث ومشاريع متّصلة بالوظائف الحيويّة للكائنات الحيّة في علاقتها بالمحيط |
+| **الوحدة** | الهواء والتنفّس |
+| **المفاهيم** | الهواء - الكائنات الحيّة - الانضغاط - الانتشار - التقلّص - التمدّد - الهواء الحارّ - الهواء البارد - الأكسيجين - النتروجين (الأزوت) - ثاني أكسيد الكربون - بخار الماء - الغازات النّادرة - الرّئتان - الحويصلات الرّئويّة - التّبادل الغازي |
+| **المحتوى** | مكوّنات الهواء وخاصيّاته - الاحتراق في الهواء - التبادل الغازي في مستوى الرّئتين |
+| **الهدف المميّز للوحدة** | يكون المتعلّم قادرا على تبيّن أهميّة الهواء في حياة الكائنات الحيّة ودوره في الاحتراق |
+| **المستلزمات البيداغوجيّة** | صور كائنات حيّة - نفّاخات - قوارير - مصدر حراري - منفخ - محاردة - أنابيب اختبار - شمعات - صحون بيضاء - قطع ثلج - ماء - مجسّم للرّئتين - رئتان حقيقيّتان … |
+
+**الحواجز (p.79)** — trois, contre cinq pour la و1 :
+
+1. صعوبة إدراك مادّة غير مرئيّة (**الهواء**) خاصّة في حالة سكوته ;
+2. عدم تصوّر أنّ الهواء يتكوّن من مجموعة من الغازات ومن بخار الماء ;
+3. عدم إدراك أنّ التبادل الغازي بين الجسم والمحيط الخارجي يتمّ في مستوى الحويصلات الرّئويّة.
+
+**مؤشّرات التّجاوز (p.79)** — appariées aux حواجز : إثبات وجود الهواء وتعرّف مكوّناته وخاصيّاته · تعرّف دور الهواء في الاحتراق · إبراز وظيفة الرّئتين في التّبادل الغازي.
+
+**مؤشّرات القدرة المستهدفة (p.79)** — les gestes de la démarche, indépendants du contenu : ملاحظة الظّاهرة وطرح أسئلة تيسّر حلّ الوضعيّة المشكل · التخطيط للبحث والتجريب · تسجيل نتائج التجارب المنجزة - سرد وثيقة علميّة · إيجاد علاقة بين المفاهيم لبناء بيانات تتعلّق بالظّاهرة العلميّة أو موضوع البحث · صياغة استنتاج · استثمار المفاهيم العلميّة المكتسبة في وضعيّات جديدة.
+
+**التمشّي البيداغوجي (p.80–82)** — cinq activités, chacune close par un استنتاج :
+
+**1. الوضعيّة المشكل** : _« لماذا لا يستطيع الإنسان الامتناع عن التّنفّس لمدّة طويلة ؟ »_
+
+**2. تحليل الوضعيّة ورصد التّصوّرات** — عناصر الوضعيّة : الإنسان · التنفّس · الهواء ومكوّناته وخاصيّاته · … **التّصوّرات** attendues :
+
+- يتكوّن الهواء من **عنصر واحد فقط** ;
+- تصوّر أنّ التنفّس **عمليّة إراديّة** ;
+- تصوّر أنّ الهواء ضروريّ **للتنفّس فقط**.
+
+**3. التحقّق العلمي** :
+
+| نشاط | ce qu'on fait | استنتاج |
+| :-: | --- | --- |
+| **الأوّل** (p.80) | inviter les élèves à retenir leur respiration → **الشّعور بالاختناق** ; observer un dessin de souris sous cloche ; débattre d'une plante isolée de l'air ; débattre d'un aquarium **sans aérateur** — le guide note que c'est un **réinvestissement des acquis de 5ème** (élevage de poissons monté dans le cadre de l'approche par projet) | **(1) الهواء ضروريّ لحياة الكائنات الحيّة** |
+| **الثّاني** (p.80–81) | gonfler des ballons et observer le changement de forme ; expérience à la **seringue** ; puis la série d'expériences dessinées : ballon sur un flacon **réchauffé à la main**, flacon **refroidi**, bouteille comprimée | **(2) الهواء قابل للانتشار · قابل للانضغاط · قابل للتمدّد والتقلّص** |
+| **الثّالث** (p.81) | renverser un flacon plein d'air sur une cuve d'eau ; (أ) verre renversé sur une bougie allumée ; (ب) verre gradué en **5 parts** posé sur une bougie flottant sur un bouchon de **liège (الفلّين/الخفّاف)** ; (ج) souffler dans un tube d'eau de chaux ; (د) souffler sur un **miroir poli** ; (هـ) observer une bouteille d'eau **sortie du réfrigérateur** ; comparer bouteille pleine d'eau / bouteille vide | **(3)** يتكوّن هواء المحيط من **الأكسيجين** (غاز يساعد على الاحتراق) ومجموعة من الغازات **لا تساعد** على الاحتراق : **الأزوت - ثاني أكسيد الكربون** الّذي يعكّر ماء الجير **وغازات نادرة**، كما يحتوي الهواء على **بخار الماء** |
+| **الرّابع** (p.82) | allumer une bougie dans un cylindre de verre **ouvert aux deux bouts** (رسم 1), puis dans une bouteille fermée (رسم 2) ; laisser place à l'observation et à la comparaison | **(4) الهواء ضروريّ للاحتراق** |
+| **الخامس** (p.82) | expériences de combustion de **الشّمع / النّفط / الكحول / الخشب**, avec consignes de sécurité, par **chauffage** et par **combustion directe** ; verre renversé sur une bougie + eau de chaux ; passer une assiette blanche dans la flamme → **هباب الفحم** | *(la suite dépasse cette tranche)* |
+
+**التطبيق — les renvois au manuel élève** (rubrique 5 du gabarit, cf. §7.6) :
+
+| التطبيق | renvoi imprimé |
+| :-: | --- |
+| **(1)** | كتاب التّلميذ **ص 31** — التمرين المتّصل بموت السّمكة (أ), puis les exercices (ب) et (ج) |
+| **(2)** | كتاب التلميذ **ص 36** — التمارين المتّصلة بتعرّف خاصيّات الهواء |
+| **(3)** | كتاب التلميذ — **التمرين 1** |
+| **(4)** | كتاب التلميذ **ص 45** — التمرين 1 (les quatre bocaux renversés sur des bougies) et le التمرين 2 (nécessité d'un extincteur dans la voiture, l'usine, la maison, et les gestes possibles en cas d'incendie) |
+
+> 🎯 **Ce que ces renvois valent.** Ils **datent** les frontières du chapitre `01-air` côté manuel élève : les applications de la و2 pointent vers les pages **31, 36 et 45** — ce qui recoupe les bornes déduites en §4 à partir de la خارطة الكتاب (p.156–157), indépendamment de celle-ci. C'est la **première confirmation croisée** des bornes de §4 par une autre source que la carte du manuel. Elle vaut pour la و2 seulement.
+
+> ⚠️ **Réserve.** Le التطبيق (3) est le seul des quatre à ne **pas** porter de numéro de page — seulement « التمرين – 1 – ». On ne comble pas : la page reste inconnue.
