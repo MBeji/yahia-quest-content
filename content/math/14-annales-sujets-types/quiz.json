@@ -11,7 +11,8 @@
       ],
       "correctOption": "a",
       "explanation": "نطبّق أولويّة العمليّات: الضرب قبل الجمع. 3 × (−4) = −12، ثمّ A = −2 + (−12) = −14. الخطأ الشائع: حساب (−2 + 3) × (−4) بإهمال الأولويّة.",
-      "difficulty": 1
+      "difficulty": 1,
+      "competencies": ["math.num.relatifs-operations"]
     },
     {
       "prompt": "انشر وبسّط العبارة (2x − 3)².",
@@ -23,7 +24,8 @@
       ],
       "correctOption": "c",
       "explanation": "متطابقة شهيرة: (a − b)² = a² − 2ab + b² مع a = 2x وb = 3. إذن (2x)² − 2(2x)(3) + 3² = 4x² − 12x + 9. الخطأ الشائع (a): نسيان الحدّ الأوسط −12x.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.alg.identites-remarquables"]
     },
     {
       "prompt": "حلّ المعادلة 3(x − 2) = 2x + 1.",
@@ -35,7 +37,8 @@
       ],
       "correctOption": "b",
       "explanation": "ننشر الطرف الأيسر: 3x − 6 = 2x + 1. ننقل: 3x − 2x = 1 + 6، أي x = 7. التحقّق: 3(7 − 2) = 15 و2(7) + 1 = 15 ✓.",
-      "difficulty": 1
+      "difficulty": 1,
+      "competencies": ["math.alg.equations-premier-degre"]
     },
     {
       "prompt": "في مثلّث ABC، M على [AB] وN على [AC] مع (MN) ∥ (BC). إذا كان AM = 4 cm، AB = 10 cm، BC = 15 cm، فما طول MN؟",
@@ -47,7 +50,8 @@
       ],
       "correctOption": "a",
       "explanation": "بنظرية طاليس: MN/BC = AM/AB = 4/10 = 2/5. إذن MN = 15 × 2/5 = 6 cm. الخطأ الشائع (b): استعمال MB = AB − AM = 6 بدل AM وحساب 15 × 6/10 = 9.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.geo.thales-direct"]
     },
     {
       "prompt": "مثلّث قائم في B، ضلعاه القائمان AB = 6 cm وBC = 8 cm. ما طول الوتر AC؟",
@@ -59,7 +63,8 @@
       ],
       "correctOption": "a",
       "explanation": "بنظرية فيثاغورس: AC² = AB² + BC² = 6² + 8² = 36 + 64 = 100. إذن AC = √100 = 10 cm. الخطأ الشائع (b): جمع الضلعين مباشرةً 6 + 8.",
-      "difficulty": 1
+      "difficulty": 1,
+      "competencies": ["math.geo.pythagore"]
     },
     {
       "prompt": "مثلّث قائم في B، الزاوية في A قياسها x. الضلع المجاور لـ x هو AB = 5 cm والوتر AC = 10 cm. ما قياس الزاوية x؟",
@@ -71,7 +76,8 @@
       ],
       "correctOption": "c",
       "explanation": "نستعمل جيب التمام (المجاور على الوتر): cos x = AB/AC = 5/10 = 1/2. ومن القيم المشهورة cos 60° = 1/2، إذن x = 60°. الخطأ الشائع (a): استعمال cos 30° = √3/2.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.geo.trigonometrie"]
     },
     {
       "prompt": "لتكن الدالّة التآلفية f(x) = 3x − 2. ما صورة العدد 4 بهذه الدالّة، أي f(4)؟",
@@ -83,7 +89,8 @@
       ],
       "correctOption": "a",
       "explanation": "نعوّض x بـ 4: f(4) = 3 × 4 − 2 = 12 − 2 = 10. الخطأ الشائع (b): نسيان طرح 2.",
-      "difficulty": 1
+      "difficulty": 1,
+      "competencies": ["math.fn.fonction-affine"]
     },
     {
       "prompt": "حصل تلميذ على الأعداد التالية في خمسة فروض: 4، 6، 8، 10، 12. ما المعدّل الحسابي لهذه الأعداد؟",
@@ -95,7 +102,8 @@
       ],
       "correctOption": "a",
       "explanation": "المعدّل = مجموع القيم ÷ عددها. المجموع = 4 + 6 + 8 + 10 + 12 = 40، والعدد 5. إذن المعدّل = 40 ÷ 5 = 8. الخطأ الشائع (c): إعطاء المجموع دون القسمة على العدد.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.stat.moyenne-mediane"]
     }
   ]
 }
