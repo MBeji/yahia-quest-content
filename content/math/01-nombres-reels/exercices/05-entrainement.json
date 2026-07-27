@@ -16,7 +16,8 @@
       ],
       "correctOption": "c",
       "explanation": "نحسب القوّة أوّلًا: (−2)³ = −8، ثمّ الضرب: (−5) × (−3) = 15. أخيرًا الجمع: −8 + 15 = 7. التحقّق: −8 + 15 = 7 ✓.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.num.relatifs-operations", "math.num.puissances"]
     },
     {
       "prompt": "ما أصغر مجموعة عدديّة ينتمي إليها العدد √16 ؟",
@@ -28,7 +29,8 @@
       ],
       "correctOption": "a",
       "explanation": "√16 = 4 بالضبط لأنّ 4² = 16، والعدد 4 عدد طبيعي. إذن أصغر مجموعة تحتويه هي ℕ (وهو ينتمي أيضًا إلى ℤ وℚ وℝ بالاحتواء). الخطأ الشائع: الظنّ أنّ وجود رمز الجذر يجعل العدد أصمّ — هذا صحيح فقط إذا لم يكن ما تحت الجذر مربّعًا كاملًا.",
-      "difficulty": 1
+      "difficulty": 1,
+      "competencies": ["math.num.ensembles-nombres", "math.num.racines-definition"]
     },
     {
       "prompt": "ما قيمة |2 − 9| + |−3| ؟",
@@ -40,7 +42,8 @@
       ],
       "correctOption": "d",
       "explanation": "2 − 9 = −7 إذن |2 − 9| = 7، و|−3| = 3. المجموع = 7 + 3 = 10. القيمة المطلقة دائمًا موجبة أو معدومة.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.num.ordre-encadrement"]
     },
     {
       "prompt": "أيّ مجال يمثّل مجموعة الأعداد الحقيقية x التي تحقّق |x| ≤ 3 ؟",
@@ -52,7 +55,8 @@
       ],
       "correctOption": "c",
       "explanation": "|x| ≤ 3 يعني أنّ بُعد x عن الصفر لا يتجاوز 3، أي −3 ≤ x ≤ 3، وهو المجال المغلق [−3 ; 3]. الخيار (a) يهمل الأعداد السالبة، و(b) يستثني الطرفين رغم أنّ الرمز ≤ يشملهما، و(d) ينسى الشرط x ≥ −3.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.num.ordre-encadrement"]
     },
     {
       "prompt": "رتّب الأعداد التالية تصاعديًّا: √2 ، 1 ، 1,5 ، √3 . ما الترتيب الصحيح؟",
@@ -64,7 +68,8 @@
       ],
       "correctOption": "b",
       "explanation": "√2 ≈ 1,414 و√3 ≈ 1,732. إذن الترتيب التصاعدي: 1 < 1,414 < 1,5 < 1,732، أي 1 < √2 < 1,5 < √3. الخطأ الشائع: الظنّ أنّ √2 > 1,5 — قارن المربّعين: (1,5)² = 2,25 > 2، إذن 1,5 > √2.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.num.ordre-encadrement", "math.num.racines-calcul"]
     },
     {
       "prompt": "إذا كان 0 < a < b، فأيّ عبارة صحيحة دائمًا؟",
@@ -76,7 +81,8 @@
       ],
       "correctOption": "a",
       "explanation": "بما أنّ a وb موجبان، فالضرب في عدد موجب يحفظ الترتيب: نضرب a < b في a فنجد a² < ab، ونضربها في b فنجد ab < b²، إذن a² < b². مثال: 2 < 3 يعطي 4 < 9 ✓. الخطأ الشائع: اختيار −a < −b، والصحيح أنّ الضرب في −1 يقلب الترتيب فـ −a > −b؛ كما أنّ a − b سالب لأنّ a < b.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.num.ordre-encadrement"]
     }
   ]
 }
