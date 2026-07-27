@@ -16,7 +16,8 @@
       ],
       "correctOption": "a",
       "explanation": "علاقة شال تنصّ على: AB + BC = AC. نتتبّع الحروف: نبدأ من A وننتهي في C مرورًا بـ B.",
-      "difficulty": 1
+      "difficulty": 1,
+      "competencies": ["math.vec.somme"]
     },
     {
       "prompt": "ABCD متوازي أضلاع. أيّ من المساواات الشعاعية التالية صحيحة؟",
@@ -28,7 +29,8 @@
       ],
       "correctOption": "b",
       "explanation": "في متوازي الأضلاع ABCD: الضلعان AB وDC متوازيان ومتساويان في الطول وبالمنحى نفسه، إذن AB = DC. انتبه: الشعاع CD معاكس المنحى للشعاع DC.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.vec.translation-vecteur", "math.geo.quadrilateres"]
     },
     {
       "prompt": "ما ناتج مجموع الشعاعين AB + BA؟",
@@ -40,7 +42,8 @@
       ],
       "correctOption": "c",
       "explanation": "بتطبيق شال: AB + BA = AA = الشعاع الصفري. فالشعاع BA هو معاكس الشعاع AB، ومجموع شعاع ومعاكسه هو الشعاع الصفري — لا AB ولا BA.",
-      "difficulty": 1
+      "difficulty": 1,
+      "competencies": ["math.vec.somme"]
     },
     {
       "prompt": "M نقطة في المستوي. صورتها بالانسحاب ذي الشعاع AB هي النقطة M' التي تحقّق:",
@@ -52,7 +55,8 @@
       ],
       "correctOption": "b",
       "explanation": "الانسحاب ذو الشعاع AB ينقل كلّ نقطة M إلى M' بحيث يكون الشعاع MM' مساويًا للشعاع AB. المنشأ هو M والطرف هو M'.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.vec.translation-vecteur"]
     },
     {
       "prompt": "ما ناتج مجموع الأشعّة AB + BC + CD؟",
@@ -64,7 +68,8 @@
       ],
       "correctOption": "c",
       "explanation": "نطبّق شال تدريجيًا: AB + BC = AC، ثمّ AC + CD = AD.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.vec.somme"]
     },
     {
       "prompt": "ABCD متوازي أضلاع مركزه O. ما ناتج مجموع الشعاعين OA + OC؟",
@@ -76,7 +81,8 @@
       ],
       "correctOption": "d",
       "explanation": "O هو منتصف [AC] في متوازي الأضلاع، إذن الشعاع OA هو معاكس الشعاع OC، ومنه OA + OC = الشعاع الصفري. الخطأ الشائع: محاولة تطبيق شال على OA + OC رغم أنّ طرف الأوّل (A) ليس منشأ الثاني (O) — شال يصلح لـ AO + OC = AC لا لهذا المجموع.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.vec.somme", "math.geo.quadrilateres"]
     }
   ]
 }

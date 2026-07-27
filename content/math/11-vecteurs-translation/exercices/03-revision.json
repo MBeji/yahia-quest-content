@@ -16,7 +16,8 @@
       ],
       "correctOption": "a",
       "explanation": "نطبّق شال تدريجيًا: MN + NP = MP، ثمّ MP + PQ = MQ. الحرفان الوسيطان N وP يختفيان ويبقى الشعاع MQ من نقطة الانطلاق إلى نقطة الوصول. التوقّف عند MP يعني نسيان الحدّ الأخير.",
-      "difficulty": 1
+      "difficulty": 1,
+      "competencies": ["math.vec.somme"]
     },
     {
       "prompt": "A وB وC وD أربع نقاط ليست على استقامة واحدة، والشعاعان AB وDC متساويان: AB = DC. ما طبيعة الرباعي ABCD؟",
@@ -28,7 +29,8 @@
       ],
       "correctOption": "c",
       "explanation": "تساوي الشعاعين AB = DC يعني أنّ الضلعين [AB] و[DC] متوازيان ومتساويان في الطول وبالمنحى نفسه، وهذا هو بالضبط ما يجعل ABCD متوازي أضلاع. لا شيء في المعطى يضمن تساوي ضلعين متجاورين (معيّن) أو وجود زاوية قائمة (مربّع).",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.vec.translation-vecteur", "math.geo.quadrilateres"]
     },
     {
       "prompt": "ما صورة الدائرة التي مركزها O ونصف قطرها 3 cm بالانسحاب ذي الشعاع u غير الصفري؟",
@@ -40,7 +42,8 @@
       ],
       "correctOption": "b",
       "explanation": "الانسحاب يحفظ الأطوال والأشكال: صورة دائرة هي دائرة لها نصف القطر نفسه، ومركزها صورة المركز. إذن الصورة دائرة مركزها O' حيث OO' = u ونصف قطرها 3 cm. بما أنّ u غير صفري فالمركز يتحرّك فعلًا.",
-      "difficulty": 1
+      "difficulty": 1,
+      "competencies": ["math.vec.translation-vecteur", "math.geo.cercle"]
     },
     {
       "prompt": "ما الشعاع v الذي يحقّق: v + BC = BA؟",
@@ -52,7 +55,8 @@
       ],
       "correctOption": "d",
       "explanation": "نعزل v: v = BA − BC = BA + CB (لأنّ معاكس BC هو CB). بالترتيب وتطبيق شال: CB + BA = CA. إذن v = CA. التحقّق: BC + CA = BA ✓ (شال). الخطأ الشائع: عكس المنحى فاختيار AC — عوّض دائمًا في المساواة الأصلية للتأكّد.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.vec.somme"]
     },
     {
       "prompt": "ما ناتج مجموع الأشعّة AB + BC + CA؟",
@@ -64,7 +68,8 @@
       ],
       "correctOption": "a",
       "explanation": "بتطبيق شال تدريجيًا: AB + BC = AC، ثمّ AC + CA = AA = الشعاع الصفري. مجموع الأشعّة على مضلّع مغلق يساوي دائمًا الشعاع الصفري — التوقّف عند AC أو CA يعني نسيان الحدّ الأخير من المجموع.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.vec.somme"]
     },
     {
       "prompt": "صورة النقطة A بالانسحاب ذي الشعاع u هي النقطة B، وصورة B بالانسحاب نفسه هي النقطة C. ماذا نستنتج؟",
@@ -76,7 +81,8 @@
       ],
       "correctOption": "c",
       "explanation": "من تعريف الانسحاب: AB = u وBC = u، إذن AB = BC. الشعاعان متساويان وطرف الأوّل هو منشأ الثاني، فالنقاط A وB وC على استقامة واحدة وB تبعد عن A بقدر ما تبعد عنها C: إذن B منتصف [AC]. الخطأ الشائع: الخلط في ترتيب النقاط فاختيار A أو C منتصفًا.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.vec.translation-vecteur"]
     }
   ]
 }
