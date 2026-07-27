@@ -252,7 +252,7 @@ Le guide **tabule bien** le déroulé annuel, en **5 فترات** calées sur le
 - ~~**Format du guide ≠ 4ème/5ème** — « sans table إطار الكفايات ni المخطّط السّنوي tabulé »~~ → **LEVÉE le 2026-07-26** par la lecture des **p.20–29** : le إطار الكفايات (الكفاية النهائيّة + المكوّنان + 6 اقتدارات) est **p.25**, la matrice كفايات أفقيّة × مجال العلوم **p.24**, les critères d'évaluation **p.26**, l'أداء المنتظر par ثلاثيّة **p.27**, la progression 1ère→6ème **p.28**, et le **المخطّط السّنوي tabulé** (5 فترات × وحدات × محاور) **p.29**. Tout est transcrit en §1.1–§1.6 et §2.0. La conclusion précédente venait d'un **survol non exhaustif** : elle n'aurait pas dû être écrite au présent affirmatif sur des pages non lues.
 - ~~**Reste hors de ce volume : les مؤشّرات**~~ → **NUANCÉE le 2026-07-26** (lecture de la جذاذة عدد 1, p.43–44). Il est exact que le volume ne **tabule** pas les مؤشّرات dans un إطار كفايات — la case du schéma p.25 renvoie bien à « انظر البرامج الرسميّة ». Mais **chaque جذاذة en porte deux séries**, nommées et explicites : **مؤشّرات التّجاوز** (une par حاجز déclaré) et **مؤشّرات القدرة المستهدفة** (les gestes du تمشّي attendus). Le renvoi p.25 vise donc les مؤشّرات **du référentiel de compétences**, pas ceux de la séance. Pour un usage de génération, les مؤشّرات opérationnels sont **dans les جذاذات** — voir §7.5.
 - **Le document-programme officiel séparé** (celui cité p.23 « البرامج الرسميّة ص 119، 120 ») reste absent de `cnp-officiel/`. Il n'est plus bloquant pour la génération, mais il resterait la seule source des مؤشّرات du référentiel.
-- **Pages du guide encore non lues : p.2 et p.30–180** — le corps des **جذاذات** (une par درس : أهداف، وسائل، سير الحصّة، تقييم). Elles ne changent pas le **scope** (fixé par §2.0 + §4), mais elles portent le **détail didactique par درس** ; c'est la tranche suivante du LOT A pour ce couple.
+- **Pages du guide encore non lues : p.2 et p.71–180** — le corps des **جذاذات** (une par درس : أهداف، وسائل، سير الحصّة، تقييم). Elles ne changent pas le **scope** (fixé par §2.0 + §4), mais elles portent le **détail didactique par درس** ; c'est la tranche suivante du LOT A pour ce couple.
 - **محاور physiques sans chapitre publié dédié** : les **trois effets du courant électrique** (التأثير الحراري p.119 · الكيميائي p.122 · المغناطيسي p.135 — soit l'électricité de la و5) **ne sont pas couverts** par un chapitre du contenu publié ; de même l'**immunité/microbes** (الجلد-الجراثيم · التعفّن الجرثومي · التلقيح · المقاومة, p.68–83 de la و3) **n'a pas de chapitre dédié**. Le contenu publié (9 ch.) couvre donc **une partie** du programme ; ces blocs sont **au programme officiel** mais **absents du contenu app** → à signaler côté couverture (manifeste), pas une erreur de scope. La colonne pages de §4 a donc volontairement **resserré** les bornes des chapitres physiques (`07`=المغانط/البوصلة seulement ; `08`=الثقل seulement) pour ne pas leur imputer l'électricité.
 - **Bornes manuel (§4)** déduites « début du درس suivant − 1 » à partir de la خارطة الكتاب (p.156–157) : exactes au درس près, à ± une page de titre/transition. La frontière `01-air`/`02-respiration` est posée sur le درس « التبادل الغازي في الرئتين » (p.47) ; la frontière `03`/`04` (sang vs nutrition) saute le bloc immunité p.68–83 (sans chapitre).
 - **Cartes conceptuelles / أهداف** lus sur renders 170–200 dpi **nets** (manuel p.6/29/61/96/118 ; guide p.181) — fiables. Les **جذاذات détaillées** (déroulé de chaque درس dans le guide) **n'ont pas été transcrites cellule par cellule** (volume 182 p.) ; le scope notionnel est synthétisé des cartes + أهداف + titres de دروس + معجم. À reconfirmer au scan seulement si un déroulé de séance précis est requis.
@@ -261,7 +261,7 @@ Le guide **tabule bien** le déroulé annuel, en **5 فترات** calées sur le
 
 ## 7. الملفّ العلمي du guide — savoir savant par unité
 
-> **Structure du corps du guide, découverte le 2026-07-26.** Après le cadrage (p.20–29) et les تصوّرات (p.30–31), le guide déroule **unité par unité** : un **intercalaire** (page pleine au titre de la وحدة), puis un **الملفّ العلمي** — le savoir savant destiné à l'enseignant, avec expériences et figures — puis les جذاذات. C'est cette structure qui rend les p.36–180 lisibles par tranches d'unité plutôt qu'en vrac.
+> **Structure du corps du guide, découverte le 2026-07-26.** Après le cadrage (p.20–29) et les تصوّرات (p.30–31), le guide déroule **unité par unité** : un **intercalaire** (page pleine au titre de la وحدة), puis un **الملفّ العلمي** — le savoir savant destiné à l'enseignant, avec expériences et figures — puis les جذاذات, puis les deux وضعيّات إدماج, puis — découverte du 2026-07-27 — un dernier bloc de **وضعيّات علاجيّة** rattachées aux حواجز de l’unité (§7.12). C'est cette structure qui rend les p.36–180 lisibles par tranches d'unité plutôt qu'en vrac.
 
 ### 7.1 الوحدة الأولى : العين / الضّوء — الملفّ العلمي (guide p.32–35)
 
@@ -583,3 +583,214 @@ Même cadre que la جذاذة 1 (trois séances, mêmes textes de compétence, m
 > 🎯 **Pourquoi c'est la page la plus utile du volume pour la génération.** Trois choses qu'aucune autre n'a données ensemble : (a) des **QCM officiels** — les تعليمات (2أ) et (3أ) sont, telles quelles, des questions à choix multiples avec leurs distracteurs, écrites par le CNP ; (b) le **type « chasse à l'erreur »** — quatre تعليمات sur onze demandent de corriger une affirmation fausse plausible (`مع3`, le critère de distinction), ce qui valide directement le format « chasse à l'erreur » de `content-interactif` pour ce chapitre ; (c) la **symétrie myopie/hypermétropie** montée en piège : (2ب) attribue à tort des lentilles **convexes** à un myope, (4ب) attribue à tort des lentilles **concaves** à un hypermétrope. Le même contresens, dans les deux sens.
 
 > **Réserve.** Le libellé (2أ) attend qu'on **coche** une ou plusieurs propositions sans dire combien : le guide n'imprime pas de corrigé pour cette épreuve (contrairement à §7.9). Ne pas en déduire une clé unique sans arbitrage.
+
+### 7.11 L'appareil d'évaluation de la و1, en entier (guide p.55–57)
+
+> **Ce que ces trois pages ajoutent à §7.10.** L'épreuve p.53–54 n'est pas livrée seule : elle est suivie de son **tableau de spécification** (quel item couvre quel objectif, sous quel critère), de ses **consignes de passation minutées**, et de son **barème chiffré**. C'est un dispositif d'évaluation complet, pas un sujet.
+
+**1. جدول توزيع الأهداف المميّزة حسب معايير الاختيار عدد 1 (p.55)** — la matrice item × objectif × critère, telle qu'imprimée :
+
+| المحور | الأهداف المميّزة الّتي يغطّيها الاختبار | النّشاط | مع1 | مع2 | مع3 |
+| --- | --- | --- | :-: | :-: | :-: |
+| **العين** | – تعرّف العين جهازا حسّيّا.<br>– تعرّف اختلال الرؤية ووسائل الإصلاح. | 1<br>2أ<br>2ب/2ج<br>4أ<br>4ب | ✳ | <br>✳<br>✳<br>✳ | <br><br>✳<br><br>✳ |
+| | – تعرّف السّلوكات الوقائيّة للعين. | 5 | ✳ | | |
+| **الضّوء** | – إدراك ظاهرة انعطاف الضّوء عند اصطدامه بحاجز. | 3أ | ✳ | | |
+| | – إدراك ظاهرة انعكاس الضّوء عند اصطدامه بجسم مصقول. | 3ب | | | ✳ |
+| **المجموع** | | | **3** | **3** | **3** |
+
+> ⚠️ **Une coquille du guide, transcrite telle quelle.** L'objectif de l'item **3أ** est libellé « إدراك ظاهرة **انعطاف** الضّوء عند اصطدامه بحاجز », alors que l'item 3أ lui-même (p.53, §7.10) demande de nommer la phénomène qui a permis de voir les montures — c'est-à-dire l'**انتثار**, et que le mot **انعطاف** n'apparaît **nulle part** dans le ملفّ علمي de l'unité (§7.2–§7.3), qui n'emploie que انتثار / انعكاس / انكسار. On ne corrige pas : on note que ce quatrième mot existe dans le volume, à cet endroit et à cet endroit seulement.
+
+Deux enseignements pour la génération, à lire dans la colonne des croix : (a) **un même item peut porter deux critères** — 2ب/2ج sont groupés sur une ligne et cochés en `مع2` **et** `مع3` ; (b) l'équilibre est **strictement paritaire, 3/3/3**, y compris pour le critère de distinction `مع3`, qui n'est donc pas un bonus marginal mais un tiers de l'épreuve.
+
+**2. توصيات التمرير الخاصّة بالوضعيّة التقييميّة الادماجيّة عدد 1 (p.56)** — le déroulé minuté de la passation :
+
+| التوصيات | التوقيت | ملاحظات |
+| --- | :-: | --- |
+| يمهّد المعلّم للوضعيّة التقييميّة المقترحة بالتحاور مع المتعلّمين حول مدى انخراطهم في عالم تكنولوجيا المعلومات والاتّصال من خلال الأنترنات، التّراسل الرّقمي (داخل المدرسة/في النّوادي …) وفوائد هذا الانخراط في حياتهم المدرسيّة. | **5 د** | مراعاة الحيز الزّمني المخصّص لهذا التمهيد. |
+| يوزّع المعلّم المطبوعات على المتعلّمين ويُطالبهم بكتابة الاسم واللقب وتاريخ اليوم. | **4 د** | |
+| يُذكّرهم أنّهم مدعوّون إلى الكتابة بخط واضح مع احترام التعليمة (وضع علامة - كتابة - تعليل ….) | **1 د** | |
+| يقرأ المعلّم المقاطع والتعليمات بتأنٍّ مرّة واحدة بعد ضمان المتابعة. | **5 د** | |
+| يمنح المعلّم الوقت الكافي المخصّص للانجاز ويحرص على عدم التّدخل ضمانا لتحقّق العمل بصورة فرديّة.<br>– إنجاز الأنشطة واحدا تلو الآخر.<br>– مراعاة التركيز والقراءة المتأنية للتعليمة عند الانجاز. | **45 د** | الحرص على الانجاز الفردي للأنشطة المقترحة. |
+
+Le total fait **60 minutes**, ce qui recoupe exactement le « التوقيت : 60 دقيقة » annoncé p.53 — mais on apprend ici que **15 de ces 60 minutes ne sont pas du travail élève** : mise en situation, distribution, rappel de consigne, lecture à voix haute. Le temps d'exécution réel est de **45 minutes pour 11 تعليمات**.
+
+**3. جدول إسناد الأعداد (p.57)** — le barème, sur 20 :
+
+| مستويات التملّك \ معايير التّقييم | معايير الحدّ الأدنى — **مع1** | معايير الحدّ الأدنى — **مع2** | التميّز — **مع3** |
+| --- | :-: | :-: | :-: |
+| **اِنعدام التملّك** | 0 | 0 | 0 |
+| **دون التملّك الأدنى** | 2,5 | 2,5 | 1 |
+| **التملّك الأدنى** | 5 | 5 | 3 |
+| **التملّك الأقصى** | 7,5 | 7,5 | 5 |
+| **العدد المسند من : 20** | | | |
+
+> 🎯 **Le poids réel des critères.** Les deux critères du **حدّ أدنى** valent **7,5 points chacun** au maximum, le critère de **تميّز** en vaut **5** : 7,5 + 7,5 + 5 = **20**. Autrement dit, un élève qui réussit parfaitement les deux critères minimaux **sans jamais corriger une erreur** plafonne à **15/20** — et la « chasse à l'erreur » vaut à elle seule **un quart de la note**. C'est la justification chiffrée de l'importance donnée à ce format en §7.10. Noter aussi que l'échelle est à **quatre niveaux**, pas trois : entre « rien » et « le minimum » il existe un palier intermédiaire (**دون التملّك الأدنى**) crédité de moitié.
+
+### 7.12 وضعيّات علاجيّة مرتبطة بالحواجز المتوقّعة (guide p.58–62)
+
+> ⚠️ **Correction de la structure annoncée en tête du §7.** Le modèle « intercalaire → ملفّ علمي → جذاذات → وضعيّة تعلّم الإدماج → وضعيّة تقييم إدماجيّة » était **incomplet** : l'unité se ferme sur une **cinquième strate**, un intercalaire p.58 « **وضعيّات علاجيّة مرتبطة بالحواجز المتوقّعة** » suivi d'un jeu de **situations de remédiation**. Ce n'est qu'après elles que commence l'unité suivante (intercalaire p.63). La و1 occupe donc **p.32–62**, soit **31 pages**, et non ~23 comme estimé.
+
+**توطئة (p.59)** — la doctrine, en une phrase : _« تمثّل الحواجز عوائق تحول دون تملّك المفاهيم ومواصلة التّعلّمات اللاّحقة، وهي ذات مصادر متنوّعة (استمولوجيّة - نشوئيّة - ثقافيّة - اجتماعيّة …) وبرصد هذه الحواجز وبناء استراتيجيّة علاج ملائمة تأخذ بعين الاعتبار الفروق الفرديّة، نتمكّن من مساعدة المتعلّمين المتعثّرين على تجاوزها. »_
+
+> La typologie des sources d'obstacle — **épistémologique · ontogénétique · culturelle · sociale** — est donnée **ici seulement** dans tout le volume. Elle éclaire rétrospectivement les حواجز déclarées جذاذة par جذاذة (§7.5–§7.8) : ce ne sont pas des « erreurs fréquentes » constatées, mais des obstacles **attribués à une origine**. La graphie « استمولوجيّة » (pour épistémologique) est celle du guide ; on ne la corrige pas.
+
+**الحواجز المتوقّعة المرتبطة بالعين والرؤية (p.59)** — la liste des **5 obstacles** que les situations qui suivent visent à lever :
+
+| n° | الحاجز (texte du guide) |
+| :-: | --- |
+| **1** | عدم التمييز بين المفاهيم التالية : – الانتثار – الانعكاس – الانكسار |
+| **2** | عدم التمييز بين المؤشّرات الدّالة على قصر النّظر والمؤشّرات الدّالة على طول النّظر |
+| **3** | الخلط بين وظيفة العدسة المقعّرة ووظيفة العدسة المحدّبة |
+| **4** | صعوبة التمييز بين مختلف مكوّنات أوساط العين |
+| **5** | تصوّر أنّ الرؤية تنطلق من العين |
+
+> **À rapprocher de §1.7.** Les تصوّرات du cadrage (p.31) et ces حواجز se recoupent — l'obstacle **5** est mot pour mot la conception n° 1 — mais ils ne sont **pas la même liste** : §1.7 recense des conceptions d'élèves en amont, cette page recense les obstacles **restant après l'enseignement**, ceux que la remédiation doit traiter. Les obstacles **1 et 3** sont, eux, des confusions **entre notions enseignées**, sans équivalent dans §1.7.
+
+**الوضعيّة العلاجيّة الأولى (p.60)** — vise les obstacles **1** (انتثار/انعكاس/انكسار). Trois tâches :
+
+- **(أ)** un schéma manuscrit du toit vitré d'une piscine (`زجاج السّقف` · `سطح الماء` · `أرضيّة المسبح من معدن مصقول`), traversé par un faisceau (`أشعّة الشّمس`), avec **deux étiquettes vides** « ظاهرة …… » à remplir. Consigne : _« أتأمّل الرّسم وأكتب مكان النّقاط : الانكسار - الانعكاس »_.
+- **(ب)** appariement مفهوم ↔ إفادة :
+
+| المفهوم | الإفادة |
+| --- | --- |
+| **الانتثار** | تغيير مسار الضّوء عند مروره من الهواء إلى الماء |
+| **الانعكاس** | انعطاف الضّوء عند اصطدامه بجدار |
+| **الانكسار** | ارتداد الضّوء عند اصطدامه بجدران بنايةٍ جدرانها مرايا مستوية |
+
+> ⚠️ **Le même mot « انعطاف » revient ici**, cette fois comme définition proposée pour l'**انعكاس**. Deux occurrences (p.55 et p.60) contre zéro dans le ملفّ علمي : le guide emploie donc bien ce terme, mais **hors du corps scientifique** et sans jamais le définir. À ne pas reprendre tel quel dans du contenu élève sans arbitrage.
+
+- **(ج)** classer trois situations sous انكسار / انتثار / انعكاس (trois cadres vides à remplir) : _« إضاءة غرفة بفانوس كهربائي يتدلّى من سقفها »_ · _« إسقاط أشعّة ضوئيّة صادرة عن مكشاف كهربائي على سطح ماء راكد »_ · _« إسقاط أشعّة ضوئيّة على صفيحة من الألمنيوم »_.
+
+**الوضعيّة العلاجيّة الثانية (p.61)** — vise les obstacles **2** (indices myopie/hypermétropie) et le tracé des rayons. Deux tâches :
+
+- **(أ)** appariement personne ↔ comportement : **أحمد مصاب بقصر النّظر** · **عليّ مصاب بطول النّظر** · **صالح سليم النّظر**, à relier à _« يبعّد الأشياء عن عينه ليراها بوضوح »_ · _« يرى بوضوح الأشياء القريبة والبعيدة »_ · _« يقرّب الأشياء من عينيه ليراها بوضوح »_.
+- **(ب)** _« أرسم صورة الجسم في المكان المناسب بكلّ رسم »_ — **quatre schémas** d'œil avec un objet lumineux (une bougie) et le tracé des rayons : œil seul, œil précédé d'une lentille **concave** (bord épais), œil avec un point marqué **ل**, œil précédé d'une lentille **convexe**. L'élève place l'image ; la position (avant / sur / derrière la rétine) est la réponse.
+
+**الوضعيّة العلاجيّة الثالثة (p.62)** — vise l'obstacle **3** (rôle des deux familles de lentilles). Deux tâches :
+
+- **(أ)** appariement : **العدسة المقعّرة** · **العدسة المحدّبة** · **عدسة العين** → **مفرّقة للأشعّة الضّوئيّة** · **لامّة للأشعّة الضّوئيّة** (trois entrées pour deux cibles : la **عدسة العين** doit être rattachée à la même case que la محدّبة — c'est la conclusion « العين تعمل عمل العدسة المقرّبة » de §7.1 réinvestie).
+- **(ب)** _« أرسم العدسة المناسبة أمام كلّ إفادة »_, deux cadres vides face à : _« تساعد قصير النّظر على تعديل رؤيته للأشياء الّتي تنطبع **أمام** شبكيّة العين »_ et _« تساعد طويل النّظر على تعديل رؤيته للأشياء الّتي تنطبع **خلف** شبكيّة العين »_.
+
+> ⚠️ **Un flottement de terminologie, à signaler avant toute génération.** Le ملفّ علمي (§7.2, p.36) nomme les deux familles **العدسة المقرّبة** / **العدسة المبعّدة** (nom par l'effet) et **رقيقة الحافّة** / **غليظة الحافّة** (nom par la géométrie). Les وضعيّات علاجيّة, elles, emploient **المحدّبة** / **المقعّرة** — un troisième couple, morphologique, qui n'a pas été introduit p.36. L'épreuve de §7.10 utilise **محدّبتين** et **مقعّرتين**. Les trois couples désignent bien les mêmes objets, mais le volume ne le dit **jamais explicitement**. Un contenu généré doit choisir un couple et l'assumer, ou poser l'équivalence lui-même.
+
+> 🎯 **Ce que cette strate vaut pour la génération.** Elle donne, pour la و1, la **liste fermée des cinq confusions à traiter** — c'est-à-dire un cahier des charges de distracteurs écrit par le CNP : tout QCM d'optique de 6ème devrait avoir ses distracteurs dans cette liste. Elle donne aussi **trois formats de tâche non-QCM** (étiquetage de schéma, appariement à cardinalité inégale, tracé à compléter) directement transposables. Aucune de ces trois situations n'est corrigée dans le volume.
+
+### 7.13 الوحدة الثانية « الهواء و التنفّس » — الملفّ العلمي : الهواء (guide p.63–67)
+
+> **Intercalaire p.63** : « **الوحدة الثّانية — الهـواء و التّنـفّس** ». La و2 démarre p.64 par un ملفّ علمي consacré à l'**air** avant tout propos sur la respiration — même architecture qu'en و1 (le milieu physique d'abord, l'organe ensuite).
+
+**Cadre d'entrée (p.64)** : _« يوجد الهواء بكثافة حول سطح الأرض ويقلّ تدريجيّا كلّما ارتفعنا لينعدم تماما على ارتفاع حوالي **1000 م** »_.
+
+> ⚠️ **Valeur à ne pas reprendre sans réserve.** « L'air disparaît totalement vers 1000 m » est **physiquement faux** (l'atmosphère est encore dense à 1000 m ; c'est vers ~100 km qu'on situe conventionnellement sa limite). Le guide l'imprime ainsi ; on le transcrit ainsi. Ne pas en faire une question à clé.
+
+**1. إثبات وجود الهواء (p.64)** — définition d'usage : _« الهواء غاز عديم اللّون يملأ جميع أجزاء الأواني والتجاويف الّتي لا تحتلّها مادّة أخرى »_, et on perçoit son existence quand il est **en mouvement** (نسيم، ريح، عاصفة، زوبعة، إعصار …) : il agite branches et feuilles, soulève la poussière, meut les nuages, porte oiseaux et avions. **Deux expériences** de preuve :
+
+1. وضع طوق داخلي مثقوب لعجلة درّاجة هوائيّة في إناء به ماء → **ملاحظة : خروج فقاقيع هوائيّة**.
+2. نكس كأس بصورة مائلة على إناء به ماء → **ملاحظة : فقاقيع هوائيّة تخرج من الكأس**.
+
+**2. الهواء ضروري للكائنات الحيّة (p.64)** — le principe : _« تحصل معظم الكائنات الحيّة على الطّاقة من الاحتراق البطيء للمادّة العضويّة الّتي تناولتها لذلك فهي لا تتمكّن من العيش بمعزل عن الهواء (الجوّي أو المنحلّ في الماء) »_. Deux expériences :
+
+- **تجربة 1** — ملاحظة فقاقيع الهواء الصّادرة عن سمكة في حوض به ماء :
+
+| الزمن بالسّاعة | 0 | 1 | 2 |
+| --- | :-: | :-: | :-: |
+| **عدد الحركات التنفسيّة** | 0 | 40 | 43 |
+
+- **تجربة 2** — نضع فأرا تحت ناقوس زجاجيّ : après un temps, on observe un changement de comportement (**الاضطراب، محاولة تسلّق جدران النّاقوس، الانقلاب … الموت**) ; _« ويحدث نفس الشيء بالنّسبة إلى الإنسان إذا وجد في مكان ينعدم فيه الهواء »_.
+- **الاستنتاج** : **الهواء ضروري لحياة الكائنات الحيّة**.
+
+> ⚠️ **Le tableau de la تجربة 1 est inexploitable tel quel** : à t = 0 h il donne **0** mouvement respiratoire, ce qui contredit le propos (un poisson vivant respire dès l'instant initial). Les valeurs 40 puis 43 sont cohérentes entre elles ; la colonne 0 ne l'est pas. Transcrit tel quel, à ne pas convertir en question de lecture de tableau.
+
+**3. مكوّنات الهواء (p.64–65)** — l'air est un mélange : **الأزوت والأكسجين وثاني أكسيد الكربون بالإضافة إلى بخار الماء، وبعض الغازات النّادرة**, en proportions variables. La vapeur d'eau varie de **0,01 %** à **5 %** selon la température, le taux d'évaporation et les ressources en eau de la région (couvert forestier). Les gaz cités forment **99,99 %** du volume de l'**air sec** ; le reste vient des rejets industriels et de transformations naturelles (volcanisme, décomposition végétale et animale).
+
+Le guide donne l'ordre de grandeur en deux formes. **Sur 100 L d'air** : **78 L من الأزوت** · **21 L من الأكسيجين** · **أقل من 1 L خليط من غازات أخرى**. Puis le tableau chiffré :
+
+| المكوّنات | النسبة الحجميّة |
+| --- | :-: |
+| **النتروجين** | 78,09 % |
+| **الاكسجين** | 20,95 % |
+| **الأرغون** | 0,03 % |
+| **ثاني أكسيد الكربون** | 0,03 % |
+| **غازات أخرى** | بكميّات قليلة ومتفاوتة |
+
+> ⚠️ **Deux points à connaître avant de générer sur ce tableau.** (a) La valeur de l'**argon** y est **0,03 %**, identique à celle du CO₂ ; la valeur admise est ~0,93 %. Le guide imprime 0,03 % ; on ne corrige pas. (b) Le tableau nomme l'azote **النتروجين** alors que le texte qui le précède et le programme de l'unité disent **الأزوت** — deux noms pour le même gaz dans la même page. Le manuel élève emploie **الأزوت** (cf. §3). Toute question sur la composition de l'air doit trancher son vocabulaire, et ne pas s'appuyer sur le chiffre de l'argon.
+
+**4. خصائص الهواء (p.65–66)** — quatre propriétés, chacune avec son expérience :
+
+| الخاصيّة | ce que dit le guide | expérience / illustration |
+| --- | --- | --- |
+| **الانتشاريّة** | لا يحافظ الهواء على شكل معيّن أو حجم معيّن بل ينتشر ليملأ الفراغ الّذي يصادفه تماما مثل كلّ غاز آخر ; on ne peut pas remplir « une partie » d'un récipient de gaz en laissant le reste vide, contrairement à un liquide qui se pose au fond. **Malgré cela, l'air ne remplit pas le vide cosmique** : _« بل إنّه يحيط بالأرض إلى حدّ ارتفاع معيّن »_ | نفخ إطار داخلي لعجلة درّاجة : le dessin montre le changement de forme de la chambre à air sous la pression |
+| **قابليّة الانضغاط** | — | expérience à la **seringue** (deux dessins : piston enfoncé, orifice bouché) |
+| **التمدّد** | ننكس دورقا في حوض ماء، ونسخّن الدّورق من خارجه فيتمدّد الهواء داخل الدّورق ويخرج بعضه على هيئة فقاعات | **تمدد الهواء** — _(يمكن استعمال مجفّف الشّعر بدل اليدين)_ |
+| **التقلّص** | عند التبريد يتقلّص حجم الهواء داخل الدّورق فيصعد فيه قليل من الماء | **تقلّص الهواء** — _(يمكن استعمال ثلج مجروش في مثانة كالّتي تستعمل في اسعاف الرّياضيّين)_ |
+
+L'explication microscopique est donnée explicitement (p.66) : _« يتكوّن الهواء من جزيئات صغيرة مستقلّة تتحرّك في كلّ الاتّجاهات وفي الفضاء الّذي تشغله »_ — peu d'air dans un pneu = molécules **espacées**, beaucoup d'air = molécules **rapprochées**, ce qu'on ressent à la pression sous les doigts. Et pour la dilatation : _« اعتمادا على النّظريّة الحركيّة للمادّة فإنّ اكتساب الأجسام لطاقة حراريّة يزيد في سرعة هباءاتها فتشغل عندئذ حيّزا أكبر وتتمدّد أبعادها »_. **Application citée** : صناعة **المحرار الغازي**.
+
+**Valeur numérique (p.66)** : _« كتلة **1 ل** من الهواء تساوي في الظروف العاديّة **1,3 غ** »_.
+
+**5. الهواء ضروريّ للاحتراق (p.66–67)** — deux expériences :
+
+- **تجربة 1** (p.66–67) — الأدوات : **ثلاث شمعات متماثلة، ثلاث زجاجات متسعة الفوهة ومختلفة السّعة، لوح زجاجي**. On allume les trois bougies sur la plaque de verre, on coiffe chacune d'un bocal (grand / moyen / petit) **au même instant**, et on observe. **Résultat imprimé** : _« تنطفئ الشّمعات وفق التّرتيب التّالي : 3-2-1 »_ — c'est-à-dire la plus petite d'abord. **الاستنتاج : الهواء ضروري للإحتراق.**
+- **تجربة 2** (p.67) — _« هل تحترق المواد إذا سخّنت بمعزل عن الهواء ؟ »_. الأدوات : **قطع من الخشب - حوجلة - سدّادة - أنبوب معقّف**. On chauffe le bois dans une fiole bouchée, hors contact de l'air. **On observe** : انبعاث غاز قابل للاحتراق يتسرّب من فوهة الأنبوب · تكثّف مادّة صفراء على الجدار الدّاخلي للحوجلة · **عدم احتراق الخشب**. **الاستنتاج : لا يحترق الخشب بمعزل عن الهواء.**
+
+> 🎯 **Pour la génération.** Cette page donne la **triade complète** « air nécessaire à la vie / à la combustion » avec, pour chaque affirmation, **une expérience nommée, son matériel, son observation et sa conclusion**. C'est le squelette d'un chapitre `01-air` entier. Les deux expériences de combustion se prêtent telles quelles à des questions de **prédiction** (dans quel ordre s'éteignent les bougies ? et pourquoi la plus petite d'abord ?) — le guide donne l'ordre, donc la clé existe.
+
+### 7.14 الملفّ العلمي (suite) : التنفّس عند الإنسان (guide p.68–70)
+
+**1. المجاري التنفّسيّة (p.68)** — _« سلسلة من الأعضاء تنقل الهواء إلى الرّئتين »_, dans l'ordre du guide :
+
+- **التجويف الأنفي** ؛
+- **البلعوم** — وهو ملتقى **مجرى التنفّس ومجرى الهضم** ؛
+- **الحنجرة** الّتي تمثّل **عضو التّصويت** ؛
+- **القصبة الهوائيّة (الرّغامَى)** — أنبوب طوله **12 صم** وقطره **2 صم**، يتألّف من **حلقات غضروفيّة غير تامّة الاستدارة**, sa partie postérieure étant faite d'une **paroi musculaire souple** qui facilite le passage des aliments dans l'œsophage.
+
+La trachée est tapissée d'un **غشاء مخاطيّ** qui humidifie l'air inspiré et retient les poussières ; ce même mucus porte des **أهداب** qui, en vibrant, poussent le mucus et ce qu'il a capté vers le pharynx, et de là vers l'extérieur **أثناء السّعال**.
+
+Figure p.68 : coupe sagittale tête-cou légendée **تجويف أنفي · اللّهاة · اللّسان · لسان المزمار · مسار الهواء · المريء · القصبة الهوائيّة · الهواء**.
+
+- **الشّعبتان الرّئويتان** : la trachée se divise à sa base en deux **شعبتين**, une par poumon, puis en **شعب أدقّ**, puis en **شعيبات** nombreuses dont le diamètre ne dépasse pas **1/10 مم**, chacune se terminant par une **حويصلة رئويّة**. Avec chaque شعبة entre dans le poumon une **شريان رئويّة** qui se ramifie à son tour en **شعيرات دمويّة** enveloppant les alvéoles. Le sang ressort ensuite des deux poumons par **quatre veines** dites **الأوردة الرّئويّة**.
+
+**2. الرّئتان (p.68–69)** — _« عضوان اسفنجيان مرنان لونهما ورديّ يوجدان في التّجويف الصّدري »_ ; forme de **demi-cône**, face interne creusée pour épouser le cœur. Deux ordres de sillons :
+
+- **أخاديد كبيرة** : تقسّم الرّئة **اليمنى إلى 3 فصوص** والرّئة **اليسرى إلى فصّين** ;
+- **أخاديد دقيقة** : تقسّم كلّ فصّ إلى un grand nombre de **فصيصات**.
+
+Chaque poumon est enveloppé du **غشاء الجنب**, fait de **deux feuillets** (وريقة داخليّة collée au poumon, وريقة خارجيّة collée à la face interne de la cage thoracique et au diaphragme) séparés par un liquide dit **سائل الجنب** qui facilite le glissement d'un feuillet sur l'autre pendant la respiration — _« وهو ما يُيَسَّر حركة الرّئتين »_ (graphie du guide).
+
+**3. البنية الشعريّة للرئة (p.69)** — les chiffres, tels qu'imprimés :
+
+| grandeur | valeur (guide p.69) |
+| --- | --- |
+| مساحة **الفصيص** (وحدة بناء الرّئة, شكل متعدّد الأضلاع) | **1 مم²** تقريبا |
+| عدد **الحويصلات** بكلّ فصيص | نحو **10** |
+| عدد **الأسناخ** في الرّئتين | **500 مليون** |
+| مساحة السّطح الّذي تؤلّفه الأسناخ | **200 م²** |
+| مساحة شبكة **الشّعيرات الدّمويّة** qui les recouvre | **150 م²** |
+| سمك الجدار séparant sang et air | **1 مكرون** |
+
+La **حويصلة** est un petit sac aérien en bout de شعيبة, portant des renflements dits **الأسناخ الرّئويّة** _« الّتي لا تخلو من الهواء أبدا »_ ; la finesse de la paroi (1 micron) est ce qui **facilite les échanges gazeux entre sang et air**.
+
+Figure p.69 : appareil respiratoire humain légendé — **الحنجرة · القصبة الهوائيّة · شعبة · شعيبات · الجنب · حويصلة رئويّة · الحجاب الحاجز · 3 فصوص · فصيصات**, avec un encart « حويصلتان رئويتان » détaillant **شريّن · وريد · شعيبة · الأسناخ الرّئويّة · شعيرات دمويّة**.
+
+**ملاحظات (p.69)** — trois, à retenir pour le chiffrage d'exercices :
+
+1. **معدّل الحركات التنفّسيّة العاديّة = 15 حركة شهيق وزفير في الدّقيقة الواحدة**, sachant que la fréquence **décroît** de la naissance jusqu'à un palier atteint vers **20 ans**.
+2. **السّعة الرّئويّة** (quantité d'air que les poumons peuvent contenir) = **5 ل**.
+3. La respiration **varie selon l'état** : la femme enceinte a besoin de plus d'oxygène pour le fœtus ; le sportif à l'effort en a besoin de plus qu'au repos.
+
+**4. الحركات التنفّسيّة (p.69–70)** — l'observation externe d'un torse nu donne **deux mouvements** :
+
+- **حركة ارتفاع الأضلاع وانخفاض الحجاب الحاجز** → دخول الهواء إلى الرّئتين = **الشّهيق** ;
+- **حركة انخفاض الأضلاع وارتفاع الحجاب الحاجز** → خروج الهواء من الرّئتين = **الزّفير**.
+
+_« وتتألّف الحركة التنفّسيّة من طورين : الشهيق والزّفير. »_
+
+**أ - آليّة الشهيق (p.70)** — عندما تتقلّص العضلات التنفّسيّة المرتبطة بالأضلاع يرتفع القفص الصّدري ويكبر حجمه، وفي نفس الوقت تتقلّص عضلة الحجاب الحاجز **فيصبح مستويا** ويندفع نحو تجويف البطن ; il en résulte un étirement des poumons, donc une pression interne **inférieure** à celle du milieu extérieur, _« ممّا يجعل الهواء الخارجي يندفع إلى الرّئتين عبر المجاري التنفّسيّة »_.
+
+**ب - آليّة الزّفير (p.70)** — l'inverse : les muscles respiratoires se relâchent, les côtes s'abaissent, et le diaphragme **reprend sa forme de coupole** (_« يتّخذ شكل القبّة »_) ; le volume thoracique se contracte, les poumons sont comprimés et l'air sort des شعب vers la trachée, puis le pharynx, puis le nez.
+
+**Contrôle nerveux (p.70)** — _« والحركات التنفسيّة حركات لا إراديّة مركزها البصلة الشوكيّة غير أنّه يمكن تغيير سعة هذه الحركات فنطيل مدّتها واتساعها إلى حين وبذلك نتحصّل على حركات قسريّة : **الشّهيق القسري والزّفير القسري**. »_
+
+> 🎯 **Pour la génération.** Le mécanisme est donné **musculairement complet** — côtes **et** diaphragme, avec le sens de déplacement de chacun et la conséquence en pression. C'est exactement le niveau qui permet des items de type « cause → effet » sans invention : « à l'inspiration, le diaphragme s'aplatit-il ou se bombe-t-il ? ». Les valeurs (12 صم / 2 صم / 15 mouvements / 5 L / 500 millions / 1 micron) sont **citables telles quelles**. Le couple **volontaire ≠ involontaire** (centre bulbaire, mais mouvements forcés possibles) est une nuance rarement présente à ce niveau et vaut un item à elle seule.
+
+> ⚠️ **Coquilles de cette tranche, non corrigées** : « شريّن » pour شريان dans la légende p.69 ; « وهو ما يُيَسَّر » (p.69) au lieu de يُيَسِّر ; « الاكسجين » sans hamza dans le tableau p.65 et dans la ملاحظة 3 p.69, face à « الأكسجين » p.64.
