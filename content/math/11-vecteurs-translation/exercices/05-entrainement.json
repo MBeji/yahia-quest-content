@@ -16,7 +16,8 @@
       ],
       "correctOption": "a",
       "explanation": "علاقة شال تُقرأ أيضًا بالعكس: يمكن تفكيك أيّ شعاع بإدخال نقطة وسيطة: AC = AM + MC (من A إلى M ثمّ من M إلى C). الترتيب مهمّ: طرف الشعاع الأوّل يجب أن يكون منشأ الثاني.",
-      "difficulty": 1
+      "difficulty": 1,
+      "competencies": ["math.vec.somme"]
     },
     {
       "prompt": "بسّط مجموع الأشعّة: AB + BC + CD + DA",
@@ -28,7 +29,8 @@
       ],
       "correctOption": "b",
       "explanation": "بشال تدريجيًا: AB + BC = AC، ثمّ AC + CD = AD، ثمّ AD + DA = AA = الشعاع الصفري. مسار مغلق يبدأ وينتهي في A مجموعه دائمًا الشعاع الصفري. التوقّف عند AD يعني نسيان الحدّ الأخير.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.vec.somme"]
     },
     {
       "prompt": "الرباعي ABCD يحقّق المساواة الشعاعية AB = DC. ماذا نستنتج عن قطريه [AC] و[BD]؟",
@@ -40,7 +42,8 @@
       ],
       "correctOption": "c",
       "explanation": "AB = DC يعني أنّ ABCD متوازي أضلاع، وفي متوازي الأضلاع يتقاطع القطران [AC] و[BD] في منتصف كلّ منهما — أي لهما المنتصف نفسه. أمّا التعامد فخاصّ بالمعيّن، وتساوي الطول خاصّ بالمستطيل.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.vec.translation-vecteur", "math.geo.quadrilateres"]
     },
     {
       "prompt": "في الانسحاب ذي الشعاع u، النقطة N هي صورة النقطة P (أي P هي سابقة N). أيّ علاقة شعاعية صحيحة؟",
@@ -52,7 +55,8 @@
       ],
       "correctOption": "d",
       "explanation": "تعريف الانسحاب: الشعاع ينطلق من السابقة نحو الصورة، إذن PN = u. الخطأ الشائع: قلب المنحى وكتابة NP = u — للعودة من الصورة إلى سابقتها نستعمل الشعاع المعاكس −u.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.vec.translation-vecteur"]
     },
     {
       "prompt": "I منتصف القطعة [AB]. أيّ مساواة شعاعية صحيحة؟",
@@ -64,7 +68,8 @@
       ],
       "correctOption": "a",
       "explanation": "بما أنّ I منتصف [AB] فإنّ الشعاعين IA وIB متساويان في الطول ومتعاكسان في المنحى، أي IB هو معاكس IA، ومجموعهما الشعاع الصفري. الخطأ الشائع: كتابة IA = IB — الطولان متساويان لكنّ المنحيين متعاكسان فالشعاعان غير متساويين.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.vec.translation-vecteur"]
     },
     {
       "prompt": "بسّط الفرق بين الشعاعين: AB − CB",
@@ -76,7 +81,8 @@
       ],
       "correctOption": "b",
       "explanation": "نحوّل الطرح إلى جمع بالشعاع المعاكس: AB − CB = AB + BC (لأنّ معاكس CB هو BC). بشال: AB + BC = AC. الخطأ الشائع: نسيان قلب الحرفين عند أخذ المعاكس، أو عكس المنحى في النهاية فاختيار CA.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.vec.somme"]
     }
   ]
 }

@@ -16,7 +16,8 @@
       ],
       "correctOption": "b",
       "explanation": "نحوّل الطرح إلى جمع بالشعاع المعاكس: −DB = BD، فالمجموع يصبح AB + BD + DC. بشال: AB + BD = AD، ثمّ AD + DC = AC. إذن الناتج هو AC. الخطأ الشائع: نسيان قلب الحرفين عند أخذ المعاكس فيتعطّل تسلسل شال، أو التوقّف عند AD بإهمال الحدّ الأخير.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.vec.somme"]
     },
     {
       "prompt": "M نقطة في المستوي. صورة M بالانسحاب ذي الشعاع AB هي M'، وصورة M' بالانسحاب ذي الشعاع BC هي M''. ما هو الشعاع MM''؟",
@@ -28,7 +29,8 @@
       ],
       "correctOption": "c",
       "explanation": "من تعريف الانسحاب: MM' = AB وM'M'' = BC. بتطبيق شال: MM'' = MM' + M'M'' = AB + BC = AC. إذن تركيب انسحابَين متتاليَين يعطي انسحابًا شعاعه مجموع الشعاعَين. الخطأ الشائع: الاكتفاء بأحد الشعاعين AB أو BC دون تركيب الانسحابَين.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.vec.translation-vecteur", "math.vec.somme"]
     },
     {
       "prompt": "A وB وC وD وE خمس نقاط. بسّط: AC − BC + BD − ED",
@@ -40,7 +42,8 @@
       ],
       "correctOption": "d",
       "explanation": "نحوّل الطرح إلى جمع: AC − BC = AC + CB، وبشال: AC + CB = AB. ثمّ BD − ED = BD + DE، وبشال: BD + DE = BE. الناتج الكلّي: AB + BE = AE (شال مرّة أخرى). إذن النتيجة هي AE. الخطأ الشائع: التوقّف عند AB ونسيان الشطر الثاني من التعبير.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.vec.somme"]
     },
     {
       "prompt": "M نقطة. صورتها بالانسحاب ذي الشعاع u هي M'، ثمّ صورة M' بالانسحاب ذي الشعاع المعاكس −u هي M''. ماذا يساوي الشعاع MM''؟",
@@ -52,7 +55,8 @@
       ],
       "correctOption": "a",
       "explanation": "من تعريف الانسحاب: MM' = u وM'M'' = −u. بتطبيق شال: MM'' = MM' + M'M'' = u + (−u) = الشعاع الصفري. هذا يعني أنّ M'' = M: تطبيق انسحاب ثمّ معاكسه يعيد كلّ نقطة إلى مكانها. الخطأ الشائع: جمع الطولين فاختيار 2u — الشعاعان متعاكسان فيُلغي أحدهما الآخر.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.vec.translation-vecteur"]
     },
     {
       "prompt": "ABCD متوازي أضلاع مركزه O. بسّط مجموع الأشعّة: AO + OC + CB",
@@ -64,7 +68,8 @@
       ],
       "correctOption": "b",
       "explanation": "بشال مباشرة: AO + OC = AC (المرور بالنقطة O لا يغيّر شيئًا)، ثمّ AC + CB = AB. كون O مركز متوازي الأضلاع معلومةٌ فخّ لا حاجة إليها هنا. الخطأ الشائع: الظنّ أنّ المرور بالمركز يجعل المجموع صفريًا، أو التوقّف عند AC بإهمال الحدّ الأخير.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.vec.somme", "math.geo.quadrilateres"]
     },
     {
       "prompt": "ABCD متوازي أضلاع. بسّط مجموع الأشعّة: AB + CD + AD",
@@ -76,7 +81,8 @@
       ],
       "correctOption": "a",
       "explanation": "في متوازي الأضلاع ABCD: AB = DC، فمعاكسه CD = BA. إذن AB + CD = AB + BA = الشعاع الصفري، ويبقى من المجموع AD فقط. الخطأ الشائع: الظنّ أنّ المجموع كلّه صفري — الشعاع الثالث AD لا يُلغيه شيء.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.vec.somme", "math.geo.quadrilateres"]
     }
   ]
 }
