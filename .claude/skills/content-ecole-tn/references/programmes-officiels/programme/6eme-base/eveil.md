@@ -252,7 +252,7 @@ Le guide **tabule bien** le déroulé annuel, en **5 فترات** calées sur le
 - ~~**Format du guide ≠ 4ème/5ème** — « sans table إطار الكفايات ni المخطّط السّنوي tabulé »~~ → **LEVÉE le 2026-07-26** par la lecture des **p.20–29** : le إطار الكفايات (الكفاية النهائيّة + المكوّنان + 6 اقتدارات) est **p.25**, la matrice كفايات أفقيّة × مجال العلوم **p.24**, les critères d'évaluation **p.26**, l'أداء المنتظر par ثلاثيّة **p.27**, la progression 1ère→6ème **p.28**, et le **المخطّط السّنوي tabulé** (5 فترات × وحدات × محاور) **p.29**. Tout est transcrit en §1.1–§1.6 et §2.0. La conclusion précédente venait d'un **survol non exhaustif** : elle n'aurait pas dû être écrite au présent affirmatif sur des pages non lues.
 - ~~**Reste hors de ce volume : les مؤشّرات**~~ → **NUANCÉE le 2026-07-26** (lecture de la جذاذة عدد 1, p.43–44). Il est exact que le volume ne **tabule** pas les مؤشّرات dans un إطار كفايات — la case du schéma p.25 renvoie bien à « انظر البرامج الرسميّة ». Mais **chaque جذاذة en porte deux séries**, nommées et explicites : **مؤشّرات التّجاوز** (une par حاجز déclaré) et **مؤشّرات القدرة المستهدفة** (les gestes du تمشّي attendus). Le renvoi p.25 vise donc les مؤشّرات **du référentiel de compétences**, pas ceux de la séance. Pour un usage de génération, les مؤشّرات opérationnels sont **dans les جذاذات** — voir §7.5.
 - **Le document-programme officiel séparé** (celui cité p.23 « البرامج الرسميّة ص 119، 120 ») reste absent de `cnp-officiel/`. Il n'est plus bloquant pour la génération, mais il resterait la seule source des مؤشّرات du référentiel.
-- **Pages du guide encore non lues : p.2 et p.83–180** — le corps des **جذاذات** (une par درس : أهداف، وسائل، سير الحصّة، تقييم). Elles ne changent pas le **scope** (fixé par §2.0 + §4), mais elles portent le **détail didactique par درس** ; c'est la tranche suivante du LOT A pour ce couple.
+- **Pages du guide encore non lues : p.2 et p.93–180** — le corps des **جذاذات** (une par درس : أهداف، وسائل، سير الحصّة، تقييم). Elles ne changent pas le **scope** (fixé par §2.0 + §4), mais elles portent le **détail didactique par درس** ; c'est la tranche suivante du LOT A pour ce couple.
 - **محاور physiques sans chapitre publié dédié** : les **trois effets du courant électrique** (التأثير الحراري p.119 · الكيميائي p.122 · المغناطيسي p.135 — soit l'électricité de la و5) **ne sont pas couverts** par un chapitre du contenu publié ; de même l'**immunité/microbes** (الجلد-الجراثيم · التعفّن الجرثومي · التلقيح · المقاومة, p.68–83 de la و3) **n'a pas de chapitre dédié**. Le contenu publié (9 ch.) couvre donc **une partie** du programme ; ces blocs sont **au programme officiel** mais **absents du contenu app** → à signaler côté couverture (manifeste), pas une erreur de scope. La colonne pages de §4 a donc volontairement **resserré** les bornes des chapitres physiques (`07`=المغانط/البوصلة seulement ; `08`=الثقل seulement) pour ne pas leur imputer l'électricité.
 - **Bornes manuel (§4)** déduites « début du درس suivant − 1 » à partir de la خارطة الكتاب (p.156–157) : exactes au درس près, à ± une page de titre/transition. La frontière `01-air`/`02-respiration` est posée sur le درس « التبادل الغازي في الرئتين » (p.47) ; la frontière `03`/`04` (sang vs nutrition) saute le bloc immunité p.68–83 (sans chapitre).
 - **Cartes conceptuelles / أهداف** lus sur renders 170–200 dpi **nets** (manuel p.6/29/61/96/118 ; guide p.181) — fiables. Les **جذاذات détaillées** (déroulé de chaque درس dans le guide) **n'ont pas été transcrites cellule par cellule** (volume 182 p.) ; le scope notionnel est synthétisé des cartes + أهداف + titres de دروس + معجم. À reconfirmer au scan seulement si un déroulé de séance précis est requis.
@@ -261,7 +261,7 @@ Le guide **tabule bien** le déroulé annuel, en **5 فترات** calées sur le
 
 ## 7. الملفّ العلمي du guide — savoir savant par unité
 
-> **Structure du corps du guide, découverte le 2026-07-26.** Après le cadrage (p.20–29) et les تصوّرات (p.30–31), le guide déroule **unité par unité** : un **intercalaire** (page pleine au titre de la وحدة), puis un **الملفّ العلمي** — le savoir savant destiné à l'enseignant, avec expériences et figures — puis les جذاذات, puis les deux وضعيّات إدماج, puis — découverte du 2026-07-27 — un dernier bloc de **وضعيّات علاجيّة** rattachées aux حواجز de l’unité (§7.12). C'est cette structure qui rend les p.36–180 lisibles par tranches d'unité plutôt qu'en vrac.
+> **Structure du corps du guide, découverte le 2026-07-26.** Après le cadrage (p.20–29) et les تصوّرات (p.30–31), le guide déroule **unité par unité** : un **intercalaire** (page pleine au titre de la وحدة), puis un **الملفّ العلمي** — le savoir savant destiné à l'enseignant, avec expériences et figures — puis les جذاذات, puis une وضعيّة تعلّم الإدماج. **Au-delà, la structure n’est pas la même d’une unité à l’autre** : la و1 ajoute une épreuve d’évaluation intégrative avec son appareil complet (spécification, passation, barème) **et** un bloc de **وضعيّات علاجيّة** adossées à ses حواجز (§7.11–§7.12) ; la **و2 n’a rien de tout cela** et s’arrête à sa وضعيّة تعلّم الإدماج (§7.21). Ne pas extrapoler d’une unité sur la suivante. C'est cette structure qui rend les p.36–180 lisibles par tranches d'unité plutôt qu'en vrac.
 
 ### 7.1 الوحدة الأولى : العين / الضّوء — الملفّ العلمي (guide p.32–35)
 
@@ -979,3 +979,140 @@ Comme pour la و1 (§7.4), le guide clôt son ملفّ علمي par sa **propre 
 > 🎯 **Ce que ces renvois valent.** Ils **datent** les frontières du chapitre `01-air` côté manuel élève : les applications de la و2 pointent vers les pages **31, 36 et 45** — ce qui recoupe les bornes déduites en §4 à partir de la خارطة الكتاب (p.156–157), indépendamment de celle-ci. C'est la **première confirmation croisée** des bornes de §4 par une autre source que la carte du manuel. Elle vaut pour la و2 seulement.
 
 > ⚠️ **Réserve.** Le التطبيق (3) est le seul des quatre à ne **pas** porter de numéro de page — seulement « التمرين – 1 – ». On ne comble pas : la page reste inconnue.
+
+### 7.20 جذاذة تنشيط عدد 1 de la و2 (fin, guide p.83–84)
+
+**النّشاط الخامس (fin) — الاستنتاج (5)** : _« تتمّ عمليّة الاحتراق في الهواء بتوفّر العناصر التّالية : **المادّة المحترقة · الأكسيجين · مصدر الحرارة**. تختلف سرعة الاحتراق حسب نوعيّة المادّة المحترقة (**احتراق سريع، احتراق بطيء**). »_ — le triangle du feu de §7.17, ici **énoncé comme conclusion d'élève**, plus la distinction combustion rapide / combustion lente que le ملفّ علمي n'avait pas posée.
+
+**التطبيق (5)** : deux exercices du manuel — nommer les éléments produits par la combustion, et **expliquer pourquoi les stations-service affichent des panneaux d'avertissement et interdisent le ravitaillement** dans certains cas.
+
+**النّشاط السّادس (p.83)** — la flamme de la bougie, en trois gestes : allumer et observer les étapes de la combustion et les différentes zones ; introduire **3 fils** de cuivre ou de fer **dans les trois zones en même temps** (avec une pince en bois) ; introduire un tube dans la **zone sombre** et vérifier la présence du gaz imbrûlé **en enflammant l'extrémité du tube**.
+
+**الاستنتاج (6)** — les étapes de la combustion d'une bougie : **احتراق الفتيل** · **انصهار الشمع بمفعول الحرارة وتحوّله إلى غاز قابل للاحتراق** · apparition de **trois zones** : منطقة مضيئة (**احتراق تامّ**), منطقة قاتمة **متكوّنة من غاز الشّمع**, منطقة زرقاء بها **هباب الفحم** (**احتراق غير تامّ**). Et : _« ينتج عن احتراق الشمعة : ضوء وحرارة وبخار الماء وهباب الفحم. »_
+
+> ⚠️ **Contradiction interne entre le ملفّ علمي et la جذاذة, sur la même flamme.** §7.17 (p.77) décrit la zone **زرقاء** comme celle dont _« درجة حرارتها عالية جدًّا »_, en bas de la flamme, et attribue le **هباب الفحم** à la zone **صفراء مضيئة** du haut (le fil de cuivre s'y couvre de noir). L'استنتاج (6) de la جذاذة inverse : il place le هباب dans la zone **زرقاء** et qualifie la zone مضيئة d'**احتراق تامّ**. Les deux pages sont à cinq pages d'intervalle dans le même volume. **On ne tranche pas** : les deux versions sont transcrites. Conséquence pratique : ce point, malgré son intérêt pédagogique signalé en §7.17, **n'a pas de clé fiable** dans ce volume — ne pas en faire un item à réponse unique.
+
+**النّشاط السّابع (p.83)** — l'appareil respiratoire : présenter une **maquette de poumons (ou deux poumons réels)** et faire nommer les composants — _« معلومات درسها التّلاميذ بالسّنة الخامسة في إطار تعرّف أعضاء التنفّس لدى الإنسان »_ ; rappeler les voies par un schéma ; faire exécuter des mouvements respiratoires **main posée sur la cage thoracique** et les décrire ; présenter l'image d'une alvéole.
+
+**الاستنتاج (7)** — le trajet de l'air, d'un trait : _« عند التّنفّس يمرّ الهواء عبر الأنف فالحنجرة ثمّ القصبة الهوائيّة الّتي تتفرّع إلى شعبتين تتفرّعان بدورهما إلى شعيبات تنتهي بحويصلات رئويّة غنيّة بالشّعيرات الدّمويّة. »_
+
+**النّشاط الثّامن (p.83–84)** — mettre en évidence le CO₂ de l'expiration en soufflant dans un tube plongé dans un verre d'eau de chaux ; présenter un schéma de l'échange gazeux au niveau de l'alvéole (figure p.84 : « **التبادل الغازي في مستوى حويصلة رئويّة** », flux O₂/CO₂ fléchés, mentions **دم أحمر قان** et **دم فاقد**).
+
+**الاستنتاج (8)** — le bilan complet : _« يدخل هواء المحيط الخارجي إلى الرّئتين أثناء الشّهيق، وفي مستوى الحويصلات الرّئويّة يتمّ التّبادل الغازي فينقل الدّم القاتم اللّون ثاني أكسيد الكربون من أعضاء الجسم إلى الرّئتين ويأخذ الأكسيجين فيصبح أحمر قان ويخرج ثاني أكسيد الكربون في هواء الزّفير. »_
+
+**التطبيق (8)** : كتاب التّلميذ **ص 50** — l'exercice sur l'échange gazeux au niveau des poumons.
+
+**التّقييم (p.84)** — une **photo de plongeur en profondeur** et six questions, qui font de l'unité entière un cas unique :
+
+1. ماذا يوجد في القارورة الّتي يحملها الغوّاص ؟
+2. أذكر خاصيّة الغاز الموجودة في القارورة.
+3. ممّ تتكوّن الفقاقيع المنطلقة من هواء زفير الغوّاص ؟
+4. كيف يتمّ التّبادل الغازي بين جسم الغوّاص والمحيط في هذه الوضعيّة ؟
+5. هل بإمكان هذا الغوّاص البقاء ما شاء في أعماق البحر ؟ **علّل جوابك.**
+6. لماذا يستعمل الغوّاص مكشافا كهربائيّا أثناء الغوص ؟
+
+> 🎯 **Le meilleur item de la و2 pour la génération.** Une seule situation concrète mobilise **compressibilité** (Q2), **composition de l'air expiré** (Q3), **échange gazeux** (Q4), **réserve finie** (Q5, avec justification demandée) — et Q6 **rappelle la و1** : sous l'eau, la lumière manque. C'est le seul endroit du volume qui **fait travailler deux unités ensemble**. Aucun corrigé n'est imprimé.
+
+**التوسّع والامتداد (p.84)** — quatre pistes : rassembler des informations sur la **pollution de l'air** et les moyens de la combattre ; rassembler des images sur les **premiers secours en cas d'asphyxie**, y compris depuis des encyclopédies ou des **sites web** ; _(possibilité de présenter ces travaux dans le cadre d'une recherche)_ ; rassembler des informations sur la combustion.
+
+### 7.21 وضعيّة تعلّم الإدماج de la و2 (guide p.85–86)
+
+**Cadre (p.85)** — mêmes en-têtes que la جذاذة (كفاية نهائيّة, المكوّنان, المفاهيم, المحتوى), plus deux rubriques propres :
+
+- **أهداف الحصّة** : تعرّف مكوّنات الهواء وخاصيّاته ودوره في الاحتراق · تبيّن ضرورته بالنّسبة إلى حياة الكائنات الحيّة · تبيّن وظيفة الرّئتين في التّبادل الغازي بين الجسم والمحيط.
+- **الوسائل** : صور - رسوم - وثائق مطبوعة.
+
+**الوضعيّة (p.85)** — le récit, transcrit intégralement :
+
+> _« كان البرد شديدا هذه اللّيلة، سكبت الأمّ قليلا من النّفط على الفحم في الكانون وأشعلته في فناء المنزل ثمّ أدخلته إلى غرفة الجلوس. شعر أفراد العائلة بالدّفء، وبعد مدّة زمنيّة أحسّ الجميع بدوار ورغبة شديدة في النّعاس. »_
+
+**Les trois أنشطة et leurs إجابات منتظرة (p.86)** — le guide imprime le corrigé en colonne, et intercale après chacun un encadré **« أستحضر مكتسباتي »** :
+
+| النّشاط | ce qui est demandé | الإجابات المنتظرة (colonne du guide) |
+| :-: | --- | --- |
+| **الأوّل** | ذكر العناصر الّتي ساعدت على احتراق الفحم في الكانون · ذكر مكوّنات الهواء وخاصياته · ذكر العناصر النّاتجة عن عمليّة الاحتراق | الهواء - النّفط بعد تسخينه بمفعول النّار - المادّة المحترقة (**الفحم الخشبي**) · الأكسيجين - ثاني أكسيد الكربون - النتروجين وغازات نادرة · خاصيات الهواء : الانتثار، الانضغاط … · الحرارة - الضوء - ثاني أكسيد الكربون - بخار الماء - هباب الفحم |
+| **الثّاني** | **لماذا شعر أفراد العائلة بدوار ورغبة شديدة في النّعاس ؟** | الاحتراق **غير التّامّ** للفحم في الكانون بسبب عدم توفّر الأكسيجين الكافي · انتشار ثاني أكسيد الكربون النّاتج عن عمليّة احتراق الفحم · احتواء هواء الشّهيق على نسبة كبيرة من **أحادي أكسيد الكربون** لم يمكّن الرّئتين من القيام بوظيفتهما المتمثّلة في ضمان التّبادل الغازي بين الجسم والمحيط |
+| **الثّالث** | **كيف نحافظ على سلامة الجهاز التنفّسي ؟** | تهوئة الغرف لتوفير كميّة الأكسيجين الضروريّة · خلوّ الهواء من الغازات السّامّة (**غاز أحادي أكسيد الكربون** النّاتج عن الاحتراق غير التّامّ) · ممارسة الأنشطة الرّياضيّة في الهواء الطّلق · تجنّب التّدخين الّذي يتسبّب في **سرطان الرّئة** … |
+
+> ⚠️ **Quatrième graphie du monoxyde de carbone, et une confirmation.** Le corrigé emploie **أحادي أكسيد الكربون**, là où la p.73 disait **أوّل أكسيد الكربون** et la p.74 **ثاني** أكسيد الكربون. Ce corrigé **confirme donc le signalement de §7.16** : le gaz responsable est bien le **monoxyde**, et la p.74 se trompait en désignant le dioxyde parmi les toxiques du tabac. Le même corrigé écrit d'ailleurs **سرطان الرّئة** — la dénomination correcte, contre « السّرطان السّعالي » de la p.74. **Le volume se corrige lui-même à douze pages d'intervalle, sans le dire.** La fiche conserve les deux états.
+
+> ⚠️ **Réserve sur le corrigé du نشاط الأوّل** : il liste parmi les composants de l'air « ثاني أكسيد الكربون - النتروجين » mais **omet l'azote sous son autre nom** et n'énumère pas la vapeur d'eau, pourtant établie en §7.13 comme composant. Il liste par ailleurs « الانتثار » parmi les propriétés de l'air, alors que la propriété établie p.65 est l'**الانتشار** (diffusion) — الانتثار étant, dans ce volume, un terme d'**optique** (§7.2). Confusion de deux mots proches ; non corrigée.
+
+> 🚩 **La و2 s'arrête ici — et sa structure n'est PAS celle de la و1.** La page suivante (p.87) est l'intercalaire de la **و3**. Il n'y a donc, pour la و2, **ni وضعيّة تقييم إدماجيّة, ni جدول توزيع الأهداف, ni جدول إسناد الأعداد, ni وضعيّات علاجيّة** — les quatre dispositifs qui occupaient p.52–62 pour la و1. La و2 tient en **p.63–86, soit 24 pages** (contre 31 pour la و1), et se compose de : intercalaire · ملفّ علمي (p.64–77) · carte et objectifs (p.78) · **une seule** جذاذة (p.79–84) · وضعيّة تعلّم الإدماج (p.85–86).
+>
+> **Conséquence pour la lecture du volume** : la structure en cinq strates établie en §7.12 décrit la **و1 seule**, et ne peut pas servir à prévoir le contenu des unités suivantes. L'appareil d'évaluation complet (spécification, passation, barème, remédiation) semble n'avoir été déployé qu'**une fois**, en démonstration, sur la première unité. À reconfirmer sur la و3.
+
+### 7.22 الوحدة الثالثة — الملفّ العلمي : جهاز دوران الدّم (guide p.87–92)
+
+> **Intercalaire p.87** : « **الوحدة الثّالثة — جهـاز دوران الدّم والأمـراض الجرثوميّة والتغذيّة** ». Trois thèmes en une unité, là où les deux premières en portaient un ou deux. C'est l'unité qui recouvre les chapitres publiés `03-sang-circulation` et `04-nutrition`, **plus** le bloc immunité/microbes signalé en §6 comme **sans chapitre dédié**.
+
+**1. القلب (p.88)** — quatre parties : **بطينان** surmontés chacun d'une **أذين**, chaque partie entourée extérieurement d'une **paroi musculaire dont l'épaisseur varie** — _« فهو قويّ في البطينين وأقلّ قوّة في الأذينين »_. À l'intérieur, ces parties forment des cavités reliées par des **صمّامات** dont le rôle est **fondamental dans l'orientation du sang** à l'intérieur du cœur. Deux figures : « **مثال لقلب مجسّم** » (photo) et « **مقطع طولي لقلب الإنسان** », légendée الأورطي · الشّريان الرّئوي · الأوردة الرّئويّة · الأذين الأيمن · الأذين الأيسر · الوريد الأجوف العلوي · الوريد الأجوف السّفلي · البطين الأيمن · البطين الأيسر · صمّامات الأورطي · صمّامات الأذينة البطينيّة · الصّمّاك الثّلاثيّة · قلاف وترية.
+
+**1-2. الأوعية الدّمويّة (p.88)** — de forme tubulaire, elles se divisent en **شرايين · أوردة · أوعية شعريّة**. Les **artères** portent le sang du cœur vers les organes ; arrivée à un organe, l'artère se ramifie en artérioles puis en vaisseaux fins dits **الأوعية الشّعريّة**. Ces capillaires se rejoignent pour former une **veinule**, qui rejoint d'autres veinules pour former une **veine** plus grosse ramenant le sang au cœur. C'est **au niveau des capillaires** que se font les échanges : _« ينتقل الغذاء والأكسيجين بواسطة الانتشار من الدّم إلى خلايا الجسم بينما ينتقل غاز ثاني أكسيد الكربون والافرازات الضّارّة من خلايا الجسم إلى الدّم. »_
+
+**1-3. الدّورة الدّمويّة (p.88)** — le circuit, décrit en continu :
+
+- les **veines** ramènent le sang du corps à l'**أذين أيمن**, d'où il passe au **بطين أيمن** ;
+- le ventricule droit **pompe** le sang par les **شرايين** vers les **poumons**, où se fait l'échange gazeux : le CO₂ est libéré, l'O₂ absorbé, et la couleur passe de **أحمر داكن مائل إلى الزّرقة** à **أحمر قان زاهي** ;
+- les **أوردة رئويّة** ramènent ce sang des poumons à l'**أذين أيسر**, qui se contracte et le pousse dans le **بطين أيسر**, _« الّذي يحيط به جدار سميك وقويّ »_ ;
+- le ventricule gauche l'envoie à tous les organes par une **artère à paroi épaisse**, qui se ramifie en artères aux parois également résistantes ;
+- des artères le sang passe aux **capillaires**, y échange les gaz avec les cellules, puis revient aux veines qui le ramènent au cœur.
+
+> **Ce que cela vaut pour `03-sang-circulation`.** La description est **complète et orientée** (droite → poumons → gauche → corps), avec la **différence d'épaisseur des parois** expliquée par la fonction, et le **code couleur** cohérent avec §7.15. C'est le niveau exact des items « quel ventricule envoie le sang aux poumons ? » ou « pourquoi la paroi du ventricule gauche est-elle plus épaisse ? », avec une clé sûre.
+
+**2. مكوّنات الدّم (p.89–90)** — le sang est un **tissu** fait de **بلازما** et de cellules : كريات حمراء · كريات بيضاء · صفيحات دمويّة.
+
+| composant | ce que le guide en dit (p.89–90) |
+| --- | --- |
+| **البلازما** | سائل **أصفر**, ≈ **55 %** du sang, composé d'eau à **90 %** et de nombreuses substances dissoutes formant ≈ **10 %**. Si l'on ajoute des **oxalates** pour empêcher la coagulation, le plasma **surnage** et les cellules **sédimentent** au fond |
+| **الكريات الحمراء** | disques **biconcaves**, rouge pâle, colorant le sang par leur abondance ; **élastiques** — elles se déforment pour franchir des capillaires **plus fins que leur propre diamètre** puis reprennent leur forme ; visqueuses, elles s'accolent « comme des pièces de monnaie empilées » |
+| **الكريات البيضاء** | cellules **incolores à noyau**, ≈ **7 000 /mm³** chez l'adulte, **plus nombreuses chez l'enfant** ; formées dans la moelle osseuse et dans les **العقد اللمفيّة (البلغميّة)** |
+| **الصّفيحات الدّمويّة** | **ne sont pas des cellules** mais des **fragments** de cellules, en forme de très petits disques remplis de cytoplasme, formées dans la moelle osseuse des mammifères ; ≈ **300 000 /mm³** chez l'humain. Rôle **capital dans la coagulation** : exposées à l'air elles se désagrègent, forment avec les globules rouges et des **خيوط اللّيفين** un bouchon qui **obture la plaie** |
+
+**Les chiffres du globule rouge (p.89)** — tels qu'imprimés :
+
+| grandeur | valeur |
+| --- | --- |
+| كريات حمراء بالمم³ | **5 ملايين** chez l'homme, un peu moins chez la femme |
+| — على ارتفاع 1000 م | **6 ملايين** |
+| — على ارتفاع 1800 م | **7 ملايين** |
+| — على ارتفاع 4000 م | **8 ملايين** |
+| — في حالة فقر الدّم | **ينخفض** |
+| part du **خضاب الدّم** dans le poids sec du globule | **95 %** |
+| molécules d'hémoglobine par globule | **250 مليون جُزَيْءٍ** |
+| durée de vie dans le sang | **120 يوما** |
+
+Fonction principale de l'hémoglobine : **transporter l'oxygène et le CO₂** — fonction respiratoire qui **exige une grande surface**, d'où la forme du globule. Les globules rouges se forment dans la **moelle osseuse rouge**, **avec** un noyau, mais **le perdent avant d'être libérés** dans le sang ; après 120 jours ils sont détruits dans la **رate (الطّحال)**, qui **conserve le fer** qu'ils contenaient, le reste de l'hémoglobine devenant un pigment que le foie sécrète avec la **bile** : la **بيليروبين**.
+
+**تخثّر الدّم (p.90)** — expérience : un peu de sang **frais** (de mouton ou de lapin) dans un verre ; après un temps il **coagule**, un caillot se dépose au fond et un liquide jaune surnage, le **المصل**. La coagulation transforme le **مولّد اللّيفين** en **ليفين**, sous l'effet des **sels de calcium**, et sépare le sang en deux parties : **جزء سائل : المصل** · **جزء صلب : العلقة = كريات الدّم + اللّيفين**.
+
+**فصائل الدّم (p.90)** — mélanger le sang de deux personnes peut provoquer l'**التصاق (الارتصاص)** — agglutination des globules rouges — aux conséquences graves lors d'une transfusion : _« موت المريض بدل إسعافه »_, par obstruction des capillaires. **Quatre substances** en sont responsables : deux **مولّدات الالتصاق** portées par les globules rouges, notées **A** et **B** ; deux **راصّات** présentes dans le plasma, notées **a** et **b**. Un même individu ne peut porter ensemble un مولّد et sa راصّة correspondante. D'où les quatre groupes :
+
+| الزّمرة | sur les globules rouges | dans le sérum |
+| :-: | --- | --- |
+| **A** | مولّدة الالتصاق **A** | الرّاصّة **b** |
+| **B** | مولّدة الالتصاق **B** | الرّاصّة **a** |
+| **AB** | مولّدتا الالتصاق **A, B** | **لا يحتوي** على أيّة راصّة |
+| **O** | **لا تحتوي** على أيّة مولّدة | الرّاصّتان **a, b** |
+
+**Le principe général de la transfusion** : _« أن لا ترتصّ كريات دم المتبرّع ببلازما دم الآخذ »_ — les مولّدات du **donneur** ne doivent pas réagir avec les راصّات du **receveur**. Schéma p.90 : le losange **O → A, B → AB**, légendé **1 = متبرّع عام · 2 = آخذ عام**.
+
+**التبرّع بالدّم (p.91)** — les conditions, chiffrées : toute personne **en bonne santé âgée de 18 à 65 ans** peut donner **5 fois par an** (un homme), **3 fois** (une femme), avec un intervalle **d'au moins deux mois** entre deux dons. Le don ne présente aucun risque : la quantité prélevée **ne représente que ≈ 8 %** du sang du corps, compensée en peu de temps ; le matériel est **stérilisé et à usage unique**. Avant le don, le donneur subit un **examen médical** ; le sang prélevé subit ensuite **plusieurs analyses** pour déterminer son groupe et vérifier son innocuité — le guide cite le **السّيدا (fr. sida)**, la **الزّهري (syphilis)** et l'**التهاب الكبد الفيروسي بصنفيه « ب » و « ج »**.
+
+**وظيفة الدّم في نقل الغذاء والغازات (p.91)** — le guide y nomme la **الدورة الدّمويّة الصّغرى** (cœur → artères pulmonaires → poumons → veines → cœur), et répartit les rôles : le **plasma** transporte les nutriments absorbés par l'intestin vers les cellules, les déchets des cellules vers les reins, et les gaz dissous ; les **globules rouges** transportent O₂ et CO₂ par l'hémoglobine ; les **globules blancs** ont un rôle **défensif** — ils entourent les cellules mortes et les microbes et **les phagocytent**, et ont la capacité de **fabriquer des ضادّات** qui neutralisent les microbes.
+
+**المحافظة على صحّة جهاز الدّوران (p.91–92)** — deux volets :
+
+**1. تقطّع الأوعية** — l'hémorragie (**النّزيف**), externe ou interne. **النّزيف الخارجي**, trois types : **الشّرياني** (le sang rouge vif jaillit par saccades) · **الوريدي** (sang sombre, écoulement lent, **moins dangereux** que l'artériel) · **نزيف الشّعيرات** (peu dangereux — le saignement de nez cité en exemple). Gestes : **إيقاف النّزيف** par un pansement serré · **تضميد الجرح** avec une compresse stérile imbibée d'antiseptique · **الإنعاش** si respiration et pouls s'arrêtent, par respiration artificielle ou apport d'oxygène.
+
+**النّزيف الدّاخلي**, deux cas : la **كدمة** (contusion / épanchement dû à un coup, avec bosse et coloration bleue virant progressivement au vert puis au jaune avant de disparaître) — compresse mouillée, ou **massage à l'huile de camphre / alcool camphré** si elle est étendue ; et la **السّكتة المخيّة / النّقطة**, hémorragie cérébrale due à un coup violent à la tête **ou à une hypertension** déchirant les capillaires du cerveau, dont les symptômes sont la **perte de conscience** et une **hémiplégie (شلل نصفي)** — en attendant le médecin : ouvrir les vêtements, surtout autour du cou et de la poitrine, allonger sur le dos dans un lieu bien aéré, et poser une compresse froide ou un sac de glace sur la tête.
+
+**2. أمراض الأوعية الدّمويّة (p.92)** — trois : **الدّوالي** (varices — dilatation des veines des membres inférieurs, due à la **station debout prolongée**) · **التهاب الأوردة** (phlébite — inflammation des parois veineuses, surtout chez les personnes déjà atteintes de varices) · **تصلّب الشّرايين** (durcissement des parois artérielles et perte de leur souplesse **avec l'âge**). Les artères peuvent en outre **s'obstruer** par des dépôts sur leur paroi interne, d'où des symptômes variés, _« قد يكون بعضها مميتا فجئيا مثل انسداد الشّرايين الإكليليّة المغذّية للقلب »_.
+
+**الاحتياطات الوقائيّة (p.92)** — deux, seulement : **(أ)** activer la circulation et renforcer le cœur par des **exercices physiques modérés** — _« لأنّ عضلة القلب - كسائر العضلات - تزداد قوّة ونشاطا بالتّمرين »_ ; **(ب)** éviter les **substances toxiques** qui agissent sur le sang et l'appareil circulatoire, **comme l'alcool**.
+
+> 🎯 **Ce que cette tranche donne, et ce qu'elle ne donne pas.** Elle fournit à `03-sang-circulation` tout ce qui lui manquait en profondeur : anatomie du cœur, trajet orienté, composition du sang **chiffrée**, coagulation, **groupes sanguins avec leur logique** (mécanisme donneur/receveur, pas seulement la liste), don du sang, hémorragies et premiers secours, maladies vasculaires. Les groupes sanguins et le schéma du losange **O → A/B → AB** sont un excellent support d'exercice de raisonnement à clé certaine.
+>
+> ⚠️ **En revanche, rien ici ne concerne l'immunité au sens du bloc p.68–83 du manuel élève** (الجلد-الجراثيم، التعفّن الجرثومي، التلقيح، المقاومة) signalé en §6 comme **sans chapitre publié** : le rôle des globules blancs est mentionné en deux lignes (p.91), c'est tout. Le volet « الأمراض الجرثوميّة » annoncé par l'intercalaire p.87 **n'a pas encore commencé** à la p.92 — il est dans la tranche suivante.
+
+> ⚠️ **Une légende manuscrite partiellement illisible (p.88).** Le « مقطع طولي لقلب الإنسان » est un dessin **à la main**, et deux de ses étiquettes ne se lisent pas de façon sûre au rendu 150 dpi : celle transcrite ci-dessus « الصّمّاك الثّلاثيّة » (probablement الصّمّامات الثّلاثيّة) et « قلاف وترية » (probablement حبال وتريّة). **On ne comble pas** : les deux sont reportées telles qu'elles se lisent, avec cette réserve. À reconfirmer par un recadrage à 300 dpi si un contenu doit s'appuyer sur la nomenclature valvulaire — ce que le programme de 6ème n'exige pas.
