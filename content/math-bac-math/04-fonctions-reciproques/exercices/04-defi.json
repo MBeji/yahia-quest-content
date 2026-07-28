@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le miroir des pentes",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Soit f définie sur [1, +∞[ par f(x) = x + 1/x. Elle réalise une bijection de [1, +∞[ sur [2, +∞[. Calculer (f⁻¹)′(5/2).",
+      "options": [
+        {
+          "id": "a",
+          "text": "(f⁻¹)′(5/2) = 3/4"
+        },
+        {
+          "id": "b",
+          "text": "(f⁻¹)′(5/2) = −1/3"
+        },
+        {
+          "id": "c",
+          "text": "(f⁻¹)′(5/2) = 25/21"
+        },
+        {
+          "id": "d",
+          "text": "(f⁻¹)′(5/2) = 4/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On cherche d'abord a de [1, +∞[ tel que f(a) = 5/2 : a + 1/a = 5/2 donne 2a² − 5a + 2 = 0, de discriminant 25 − 16 = 9 et de racines a = 2 et a = 1/2. Seule a = 2 appartient à l'intervalle de départ [1, +∞[ — le tri des racines est la moitié du travail. Ensuite f′(x) = 1 − 1/x², donc f′(2) = 1 − 1/4 = 3/4, valeur non nulle, et (f⁻¹)′(5/2) = 1/f′(2) = 4/3 ✓ (contrôle numérique : f(2,01) = 2,01 + 0,497512 = 2,507512, soit un taux d'accroissement de f égal à 0,7512 ≈ 3/4, et le taux inverse 0,01/0,007512 ≈ 1,331 ≈ 4/3 ✓). Le piège courant : oublier de passer à l'inverse et livrer f′(2) = 3/4 ; garder la racine 1/2, étrangère à [1, +∞[, donne f′(1/2) = 1 − 4 = −3 et la valeur −1/3 — un nombre négatif alors que f⁻¹ est croissante comme f, ce qui aurait dû alerter ; et dériver au point 5/2 au lieu du point a donne f′(5/2) = 1 − 4/25 = 21/25, d'où 25/21.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit m un réel et f définie sur ℝ par f(x) = x³ + mx. Pour quelles valeurs de m la fonction f réalise-t-elle une bijection de ℝ sur ℝ dont la réciproque est dérivable sur ℝ tout entier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "m ≥ 0"
+        },
+        {
+          "id": "b",
+          "text": "m ≠ 0"
+        },
+        {
+          "id": "c",
+          "text": "m > 0"
+        },
+        {
+          "id": "d",
+          "text": "Tout réel m convient"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Deux conditions distinctes doivent tenir. Bijection : f′(x) = 3x² + m ; si m < 0, f′ s'annule en changeant de signe en ±√(−m/3) et f n'est plus monotone (pour m = −3, f(x) = x³ − 3x prend la valeur 0 en −√3, 0 et √3 : trois antécédents, donc pas de bijection). Il faut donc m ≥ 0. Dérivabilité de la réciproque sur tout ℝ : le corollaire exige f′(x) ≠ 0 pour tout x ; or pour m = 0 on a f(x) = x³ et f′(0) = 0, et f⁻¹ : x ↦ ∛x n'est pas dérivable en 0 (tangente verticale). La condition est donc m > 0, et elle suffit : pour m > 0, f′(x) = 3x² + m ≥ m > 0 ✓. Le piège courant : s'arrêter à la bijection et répondre m ≥ 0 oublie la seconde condition, f′ ≠ 0, qui exclut exactement le cas frontière m = 0 ; répondre m ≠ 0 confond « f′ ne s'annule pas » avec « m ne s'annule pas » et laisse passer m = −3, où f n'est même pas injective ; et « tout réel m » ignore les deux conditions à la fois.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Résoudre dans [0, +∞[ l'équation √x + ⁴√x = 6.",
+      "options": [
+        {
+          "id": "a",
+          "text": "S = {4}"
+        },
+        {
+          "id": "b",
+          "text": "S = {16}"
+        },
+        {
+          "id": "c",
+          "text": "S = {16 ; 81}"
+        },
+        {
+          "id": "d",
+          "text": "S = ∅ : deux radicaux d'indices différents ne s'additionnent pas"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Il faut ramener les deux radicaux au même indice : ⁴√x est le plus fin, et √x = ⁴√(x²) = (⁴√x)² d'après la règle ⁿ√a = ⁿᵖ√(aᵖ). En posant t = ⁴√x, avec t ≥ 0, l'équation devient t² + t − 6 = 0, de discriminant 1 + 24 = 25 et de racines t = 2 et t = −3. Un radical étant positif, on rejette t = −3 et on garde t = 2, puis on revient à x par t = ⁴√x ⟺ x = t⁴ = 16, d'où S = {16} ✓ (vérification par réinjection : √16 + ⁴√16 = 4 + 2 = 6 ✓). Le piège courant : revenir à x avec le mauvais indice, x = t² = 4, oublie que t était la racine QUATRIÈME — et 4 ne convient pas, puisque √4 + ⁴√4 ≈ 2 + 1,414 = 3,414 ≠ 6 ; conserver la racine négative t = −3 et écrire x = (−3)⁴ = 81 fabrique une solution parasite (√81 + ⁴√81 = 9 + 3 = 12 ≠ 6) ; et déclarer l'équation insoluble parce que les indices diffèrent ignore justement la mise au même indice, seule technique attendue ici.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f définie sur ℝ par f(x) = x³ + 2x, bijection de ℝ sur ℝ. Déterminer une équation de la tangente à C_{f⁻¹} au point d'abscisse 3.",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = x/5 + 2/5"
+        },
+        {
+          "id": "b",
+          "text": "y = 5x − 14"
+        },
+        {
+          "id": "c",
+          "text": "y = x/5 + 14/5"
+        },
+        {
+          "id": "d",
+          "text": "y = 5x − 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le point de contact est sur C_{f⁻¹}, d'abscisse 3 : son ordonnée est f⁻¹(3), c'est-à-dire l'unique a tel que f(a) = 3. Or a³ + 2a = 3 admet la racine évidente a = 1 (1 + 2 = 3), unique car f′(x) = 3x² + 2 > 0 rend f strictement croissante : le point est donc (3, 1). La pente vaut (f⁻¹)′(3) = 1/f′(1) = 1/5. L'équation est y = (1/5)(x − 3) + 1 = x/5 + 2/5 ✓ (contrôle par la symétrie : la tangente à C_f au point (1, 3) est y = 5x − 2 ; son symétrique par rapport à Δ : y = x s'obtient en échangeant x et y dans x = 5y − 2, soit y = (x + 2)/5 = x/5 + 2/5 ✓). Le piège courant : prendre f′(1) = 5 comme pente de la tangente à C_{f⁻¹} sans passer à l'inverse donne y = 5(x − 3) + 1 = 5x − 14 ; échanger les coordonnées du point de contact et travailler en (1, 3) au lieu de (3, 1) donne y = (1/5)(x − 1) + 3 = x/5 + 14/5 ; et répondre y = 5x − 2, c'est donner la tangente à C_f, pas celle de sa réciproque.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f définie sur [0, +∞[ par f(x) = x² + 3x, bijection de [0, +∞[ sur [0, +∞[. Voici un calcul de (f⁻¹)′(4). Étape 1 : f est dérivable et f′(x) = 2x + 3 > 0, donc f⁻¹ est dérivable. Étape 2 : on résout f(a) = 4, soit a² + 3a − 4 = 0, de racines 1 et −4 ; on garde a = 1. Étape 3 : f′(4) = 2 × 4 + 3 = 11. Étape 4 : donc (f⁻¹)′(4) = 1/11. Quelle est la première étape fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 1"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 2"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 3"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 4 : la formule correcte est (f⁻¹)′(b) = f′(a), donc la réponse est 11"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ceci est une chasse à l'erreur : la solution proposée contient une faute plantée, et l'explication décrit donc un raisonnement volontairement faux. L'étape 1 est correcte (f′ ne s'annule pas sur [0, +∞[, le corollaire s'applique). L'étape 2 est correcte : a² + 3a − 4 = (a − 1)(a + 4), et −4 n'appartient pas à [0, +∞[, donc a = 1, ce que confirme f(1) = 1 + 3 = 4 ✓. L'étape 3 est la PREMIÈRE fausse ✓ : le théorème demande f′(a), c'est-à-dire f′(1) = 2 + 3 = 5, et non f′(4) — on dérive au point de départ a, jamais au point d'arrivée b. L'étape 4 applique correctement la formule 1/f′, mais à un nombre déjà faux : la bonne valeur est (f⁻¹)′(4) = 1/5 (contrôle : f⁻¹(y) = (−3 + √(9 + 4y))/2, donc f⁻¹(4) = 1 et f⁻¹(4,01) ≈ 1,002 ; le taux vaut environ 0,2 = 1/5 ✓). Le piège courant est précisément celui de l'étape 3, confondre a et b dans (f⁻¹)′(b) = 1/f′(a) ; l'option d ajoute la seconde erreur classique, supprimer l'inverse dans la formule.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g définie sur [0, +∞[ par g(x) = ∛(x² + 1). Elle réalise une bijection de [0, +∞[ sur [1, +∞[. Calculer (g⁻¹)′(∛5).",
+      "options": [
+        {
+          "id": "a",
+          "text": "(g⁻¹)′(∛5) = 3∛25/4"
+        },
+        {
+          "id": "b",
+          "text": "(g⁻¹)′(∛5) = 4/(3∛25)"
+        },
+        {
+          "id": "c",
+          "text": "(g⁻¹)′(∛5) = 3∛5/4"
+        },
+        {
+          "id": "d",
+          "text": "(g⁻¹)′(∛5) = 3∛25/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Trois étapes enchaînées. D'abord l'antécédent : g(a) = ∛5 équivaut à a² + 1 = 5, soit a = 2 (a ≥ 0). Ensuite la dérivée de la composée x ↦ ⁿ√(u(x)) avec u(x) = x² + 1, u′(x) = 2x et n = 3 : g′(x) = 2x/(3·∛((x² + 1)²)), d'où g′(2) = 4/(3·∛25), non nulle. Enfin l'inversion : (g⁻¹)′(∛5) = 1/g′(2) = 3∛25/4 ≈ 2,19 ✓ (contrôle par l'expression explicite : y = ∛(x² + 1) donne x = √(y³ − 1), donc (g⁻¹)′(y) = 3y²/(2√(y³ − 1)) et, en y = ∛5, y² = ∛25 et y³ − 1 = 4 : on retrouve 3∛25/4 ✓). Le piège courant : livrer g′(2) = 4/(3∛25) ≈ 0,456 sans passer à l'inverse — c'est la pente de C_g, pas celle de C_{g⁻¹} ; oublier d'élever u à la puissance n − 1 = 2 et écrire g′(2) = 4/(3∛5) donne 3∛5/4 ; et perdre le facteur 2 de u′(x) = 2x donne g′(2) = 2/(3∛25) et la valeur 3∛25/2, soit le double du résultat.",
+      "difficulty": 3
+    }
+  ]
+}

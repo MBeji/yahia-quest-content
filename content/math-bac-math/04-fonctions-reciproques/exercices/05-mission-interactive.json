@@ -1,0 +1,120 @@
+{
+  "title": "🧩 Mission interactive ⭐⭐ : L'atelier du miroir",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "Texte à trous — la fonction f : x ↦ ⁵√x est dérivable sur ]0 ; +∞[ et le cours donne f′(x) = 1/(n·ⁿ√(xⁿ⁻¹)) avec ici n = 5. En remarquant que 32 = 2⁵, on obtient f′(32) = ____.",
+      "options": [
+        { "id": "a", "text": "1/80" },
+        { "id": "b", "text": "1/16" },
+        { "id": "c", "text": "1/10" },
+        { "id": "d", "text": "80" }
+      ],
+      "correctOption": "a",
+      "explanation": "La formule avec n = 5 s'écrit f′(x) = 1/(5·⁵√(x⁴)). En x = 32 = 2⁵ : 32⁴ = (2⁵)⁴ = 2²⁰, donc ⁵√(32⁴) = ⁵√(2²⁰) = 2⁴ = 16, et f′(32) = 1/(5 × 16) = 1/80 ✓. Contrôle numérique : (⁵√32,1 − ⁵√32)/0,1 ≈ (2,001249 − 2)/0,1 ≈ 0,0125 ≈ 1/80 ✓. La réponse 1/16 oublie purement et simplement le facteur n = 5 imposé par la formule. La réponse 1/10 remplace ⁿ√(xⁿ⁻¹) par ⁿ√x : elle calcule 1/(5 × ⁵√32) = 1/(5 × 2) — l'exposant n − 1 = 4 sous le radical a disparu. Et 80 est l'inverse du résultat : c'est la valeur de n·ⁿ√(xⁿ⁻¹), c'est-à-dire le dénominateur oublié au passage à l'inverse.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Chasse à l'erreur — un élève explicite la réciproque de f(x) = x² + 6x + 5 sur I = [−3 ; +∞[ :\n① f′(x) = 2x + 6 = 2(x + 3) est strictement positive sur ]−3 ; +∞[, donc f est strictement croissante sur I : f réalise une bijection de I sur J = f(I).\n② f(−3) = 9 − 18 + 5 = −4 et lim_{x→+∞} f(x) = +∞, donc J = [−4 ; +∞[.\n③ De y = (x + 3)² − 4 on tire (x + 3)² = y + 4, puis x + 3 = ±√(y + 4).\n④ Comme x appartient à I, on garde le signe −, d'où f⁻¹(y) = −3 − √(y + 4) pour tout y de J.\nUne seule étape contient une erreur : laquelle ?",
+      "options": [
+        { "id": "a", "text": "L'étape ①" },
+        { "id": "b", "text": "L'étape ②" },
+        { "id": "c", "text": "L'étape ③" },
+        { "id": "d", "text": "L'étape ④" }
+      ],
+      "correctOption": "d",
+      "explanation": "L'erreur est à l'étape ④ : x appartient à [−3 ; +∞[ signifie x ≥ −3, donc x + 3 ≥ 0 — c'est le signe + qu'il faut garder. Étape corrigée : f⁻¹(y) = −3 + √(y + 4) ✓ (contrôle : f⁻¹(0) = −3 + √4 = −1 et f(−1) = 1 − 6 + 5 = 0 ✓ ; la formule fautive donnerait −5, qui n'est même pas dans I). Les autres étapes sont exactes : ① dérive correctement et conclut par le théorème « strictement monotone ⟹ bijection » ; ② calcule bien f(−3) = −4 et lit J à l'endroit puisque f croît ; ③ est la forme canonique x² + 6x + 5 = (x + 3)² − 9 + 5 = (x + 3)² − 4, suivie d'une extraction de racine correcte, avec les DEUX signes encore en lice. C'est bien l'appartenance à I qui tranche entre eux — et il faut la lire dans le bon sens.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Une fonction f, continue et strictement croissante sur [0 ; 4], prend les valeurs suivantes : f(0) = −2 · f(1) = 1 · f(2) = 3 · f(3) = 6 · f(4) = 10. Elle réalise donc une bijection de [0 ; 4] sur [−2 ; 10]. Associe chaque valeur de f⁻¹ au réel qui lui correspond.",
+      "options": [
+        { "id": "l1", "text": "f⁻¹(1)" },
+        { "id": "l2", "text": "f⁻¹(6)" },
+        { "id": "l3", "text": "f⁻¹(−2)" },
+        { "id": "r1", "text": "0" },
+        { "id": "r2", "text": "1" },
+        { "id": "r3", "text": "3" }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r2"],
+          ["l2", "r3"],
+          ["l3", "r1"]
+        ]
+      },
+      "explanation": "La règle est l'équivalence du cours : f(x) = y, si et seulement si, f⁻¹(y) = x. On lit donc le tableau « à l'envers », en entrant par les images. f(1) = 1 donne f⁻¹(1) = 1 ; f(3) = 6 donne f⁻¹(6) = 3 ; f(0) = −2 donne f⁻¹(−2) = 0 ✓. Les trois réponses 0, 1 et 3 appartiennent toutes à [0 ; 4], l'ensemble de départ de f — c'est bien là que vivent les valeurs de f⁻¹, et non dans [−2 ; 10]. L'erreur classique consiste à répondre f⁻¹(1) = −2 ou f⁻¹(−2) = 1 en entrant par le mauvais côté du tableau : la valeur cherchée est l'ANTÉCÉDENT, jamais l'image.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "La fonction f définie sur ℝ par f(x) = x³ + x + 3 est une bijection de ℝ sur ℝ (sa dérivée f′(x) = 3x² + 1 est strictement positive). On veut calculer f⁻¹(5). Remets les cinq étapes du calcul dans l'ordre.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Traduire f⁻¹(5) par l'équivalence du cours : on cherche le réel x tel que f(x) = 5, soit x³ + x + 3 = 5"
+        },
+        {
+          "id": "b",
+          "text": "Ramener tous les termes dans le membre de gauche : x³ + x − 2 = 0"
+        },
+        {
+          "id": "c",
+          "text": "Factoriser le polynôme obtenu : x³ + x − 2 = (x − 1)(x² + x + 2)"
+        },
+        {
+          "id": "d",
+          "text": "Constater que le facteur x² + x + 2 a pour discriminant 1 − 8 = −7 < 0, donc ne s'annule jamais"
+        },
+        {
+          "id": "e",
+          "text": "Conclure que la seule solution réelle est x = 1, c'est-à-dire f⁻¹(5) = 1"
+        }
+      ],
+      "answerKey": { "order": ["a", "b", "c", "d", "e"] },
+      "explanation": "Chaque étape a besoin de la précédente. On commence par TRADUIRE f⁻¹(5) en une équation, car f⁻¹ n'est pas explicitable ici (équation du troisième degré) : c'est l'équivalence f(x) = y ⟺ f⁻¹(y) = x qui fait tout le travail. On range ensuite l'équation sous forme x³ + x − 2 = 0, ce qui est indispensable avant toute factorisation. Vient la factorisation (x − 1)(x² + x + 2), que l'on contrôle en redéveloppant : x³ + x² + 2x − x² − x − 2 = x³ + x − 2 ✓. Le signe du discriminant du second facteur n'a de sens qu'une fois ce facteur écrit, et il élimine toute autre racine. La conclusion f⁻¹(5) = 1 arrive donc en dernier ✓ (contrôle : f(1) = 1 + 1 + 3 = 5 ✓). Annoncer la valeur avant d'avoir écarté les autres racines, ou factoriser avant d'avoir écrit l'équation, casse cette chaîne de dépendances.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Soit f définie sur [−3/2 ; +∞[ par f(x) = √(2x + 3). Elle est strictement croissante, donc bijective, et le cours donne un réflexe : tout réel a vérifiant f(a) = a fournit un point (a ; a) commun à C_f et à C_{f⁻¹}, situé sur la droite Δ : y = x. Résous f(x) = x et donne l'abscisse de ce point (un entier).",
+      "answerKey": { "value": 3 },
+      "explanation": "L'équation √(2x + 3) = x impose d'abord x ≥ 0 (un radical est positif). On élève alors au carré : 2x + 3 = x², soit x² − 2x − 3 = 0, qui se factorise en (x − 3)(x + 1) = 0. Les candidats sont 3 et −1, mais −1 est négatif : il est rejeté par la condition x ≥ 0 (c'est une racine parasite née de l'élévation au carré). Il reste x = 3 ✓ — contrôle : f(3) = √9 = 3 ✓ et f(−1) = √1 = 1 ≠ −1, la racine parasite est bien démasquée. Le point commun est donc (3 ; 3), et comme f(3) = 3 on a aussi f⁻¹(3) = 3 : il appartient bien aux deux courbes, sur Δ.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Une fonction f est continue et strictement décroissante sur I = [0 ; 4], avec f(0) = 6 et f(4) = −2. Sélectionne TOUTES les affirmations exactes.",
+      "options": [
+        { "id": "a", "text": "f réalise une bijection de [0 ; 4] sur [−2 ; 6]" },
+        { "id": "b", "text": "f⁻¹ est strictement décroissante sur [−2 ; 6]" },
+        { "id": "c", "text": "f⁻¹(6) = 0" },
+        { "id": "d", "text": "f⁻¹ est définie sur [0 ; 4]" },
+        {
+          "id": "e",
+          "text": "f⁻¹ est strictement croissante, car la symétrie par rapport à Δ : y = x retourne le sens de variation"
+        }
+      ],
+      "answerKey": { "correct": ["a", "b", "c"] },
+      "explanation": "f est strictement monotone sur un intervalle : elle réalise une bijection de I sur f(I). Comme f DÉCROÎT, l'image se lit en échangeant les bornes : f([0 ; 4]) = [f(4) ; f(0)] = [−2 ; 6] ✓ (première affirmation exacte). Le théorème du cours ajoute que f⁻¹ est continue et strictement monotone sur f(I) et varie dans le MÊME sens que f : f décroissante ⟹ f⁻¹ décroissante ✓ (deuxième affirmation exacte). Enfin f(0) = 6 équivaut à f⁻¹(6) = 0 ✓ (troisième affirmation exacte). En revanche, f⁻¹ est définie sur f(I) = [−2 ; 6] et NON sur [0 ; 4] : la réciproque échange l'ensemble de départ et l'ensemble d'arrivée — c'est [0 ; 4] qui est son ensemble d'ARRIVÉE. Et l'affirmation « f⁻¹ croissante » invente une règle : la symétrie par rapport à Δ conserve le sens de parcours de la courbe, elle ne le retourne pas ; elle contredit d'ailleurs directement le théorème « même sens de variation ».",
+      "difficulty": 2
+    },
+    {
+      "prompt": "QCM visuel — la courbe verte est celle d'une fonction f, bijection de [0 ; 3] sur [1 ; 5]. Lis graphiquement la valeur de f⁻¹(2). <svg viewBox=\"0 0 300 200\"><g stroke=\"#cbd5e1\" stroke-width=\"1\"><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"170\"/><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"170\"/><line x1=\"120\" y1=\"15\" x2=\"120\" y2=\"170\"/><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"170\"/><line x1=\"40\" y1=\"170\" x2=\"200\" y2=\"170\"/><line x1=\"40\" y1=\"140\" x2=\"200\" y2=\"140\"/><line x1=\"40\" y1=\"110\" x2=\"200\" y2=\"110\"/><line x1=\"40\" y1=\"80\" x2=\"200\" y2=\"80\"/><line x1=\"40\" y1=\"50\" x2=\"200\" y2=\"50\"/><line x1=\"40\" y1=\"20\" x2=\"200\" y2=\"20\"/></g><path d=\"M20 170 H240\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M240 170 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M40 188 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M40 12 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><polyline points=\"40,140 60,128 80,110 100,77 120,50 140,32 160,20\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"166\" y=\"18\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\">C_f</text><text x=\"80\" y=\"186\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1</text><text x=\"120\" y=\"186\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">2</text><text x=\"160\" y=\"186\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">3</text><text x=\"33\" y=\"144\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1</text><text x=\"33\" y=\"114\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">2</text><text x=\"33\" y=\"84\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">3</text><text x=\"33\" y=\"54\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">4</text><text x=\"33\" y=\"24\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"33\" y=\"184\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">0</text></svg>",
+      "options": [
+        { "id": "a", "text": "1" },
+        { "id": "b", "text": "4" },
+        { "id": "c", "text": "0,25" },
+        { "id": "d", "text": "3" }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour lire f⁻¹(2), on entre par l'axe des ORDONNÉES à la hauteur 2, on rejoint la courbe horizontalement, puis on redescend sur l'axe des abscisses : la courbe passe par le nœud du quadrillage (1 ; 2), donc f(1) = 2 et f⁻¹(2) = 1 ✓. La réponse 4 lit f(2) : la courbe passe aussi par (2 ; 4), mais c'est l'IMAGE de 2, pas son antécédent — c'est l'erreur d'entrer par le mauvais axe. La réponse 0,25 confond la fonction réciproque f⁻¹ avec l'inverse 1/f : ici 1/f(2) = 1/4 = 0,25, une quantité qui n'a rien à voir. Et 3 est l'abscisse du point le plus haut de la courbe, où f(3) = 5 : c'est la valeur de f⁻¹(5), pas celle de f⁻¹(2).",
+      "difficulty": 2
+    }
+  ]
+}

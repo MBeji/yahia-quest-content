@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : La remontée du courant",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Une seule de ces fonctions est une primitive sur ℝ de f définie par f(x) = cos³(2x). Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = sin(2x)/2 − sin³(2x)/6"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = sin(2x) − sin³(2x)/3"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = sin(2x)/2 − sin³(2x)/3"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = cos⁴(2x)/8"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un cube de cosinus se traite par découpage, pas par une formule : cos³(2x) = cos(2x)(1 − sin²(2x)) = cos(2x) − cos(2x)sin²(2x). Premier morceau : une primitive de cos(2x) est (1/2)sin(2x) (facteur 1/ω avec ω = 2). Second morceau : on pose u(x) = sin(2x), donc u′(x) = 2cos(2x) et cos(2x)sin²(2x) = (1/2)u′u², dont une primitive est (1/2) × u³/3 = sin³(2x)/6. D'où F(x) = sin(2x)/2 − sin³(2x)/6 ✓. Vérification par dérivation : F′(x) = cos(2x) − (3sin²(2x) × 2cos(2x))/6 = cos(2x) − sin²(2x)cos(2x) = cos(2x)(1 − sin²(2x)) = cos³(2x) ✓. Le piège courant : oublier le facteur 1/ω sur les DEUX termes donne sin(2x) − sin³(2x)/3, de dérivée 2cos³(2x), soit le double de f ; ne l'appliquer qu'au premier terme donne sin(2x)/2 − sin³(2x)/3, de dérivée cos(2x) − 2sin²(2x)cos(2x) ; et traiter cos³(2x) comme u³ en écrivant u⁴/4 corrigé du facteur 1/2 fabrique cos⁴(2x)/8, dont la dérivée vaut −cos³(2x)sin(2x) — un produit, donc jamais f.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f définie sur [0, π/2[ par f(x) = tan x + tan³x. Déterminer la primitive F de f sur [0, π/2[ telle que F(π/4) = 1.",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = tan²x/2"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = tan⁴x/4 + 3/4"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = tan²x/2 + 1/2"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = tan²x/2 + tan⁴x/4 + 1/4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Rien dans la table ne primitive tan x seul : il faut d'abord FACTORISER. f(x) = tan x(1 + tan²x), et l'on reconnaît u′u avec u(x) = tan x, puisque u′(x) = 1 + tan²x. La ligne u′uⁿ avec n = 1 donne u²/2, donc les primitives de f sont x ↦ tan²x/2 + c. La condition initiale : tan(π/4) = 1, donc F(π/4) = 1/2 + c = 1, d'où c = 1/2 et F(x) = tan²x/2 + 1/2 ✓. Vérification : F′(x) = 2tan x(1 + tan²x)/2 = tan x + tan³x ✓, et F(π/4) = 1/2 + 1/2 = 1 ✓. Le piège courant : trouver la bonne famille puis oublier d'ajuster la constante et livrer tan²x/2, qui vaut 1/2 en π/4 et non 1 — la condition initiale n'est pas décorative ; confondre ce calcul avec celui de tan³x/cos²x = u′u³ donne tan⁴x/4 + 3/4 (qui vérifie bien la condition en π/4, mais dont la dérivée est tan³x(1 + tan²x)) ; et primitiver terme à terme comme si tan x → tan²x/2 et tan³x → tan⁴x/4 sans jamais faire apparaître u′ donne tan²x/2 + tan⁴x/4 + 1/4 : la condition est encore satisfaite, mais la dérivée vaut (tan x + tan³x)(1 + tan²x).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f définie sur ]−1, +∞[ par f(x) = (x² + 2)/(x + 1)⁴. Sachant que f(x) s'écrit b/(x + 1)² + c/(x + 1)³ + d/(x + 1)⁴, déterminer une primitive de f sur ]−1, +∞[.",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = −1/(2(x + 1)) + 2/(3(x + 1)²) − 3/(4(x + 1)³)"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = −1/(x + 1) + 1/(x + 1)² − 1/(x + 1)³"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = −1/(x + 1) − 1/(x + 1)² − 1/(x + 1)³"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = 1/(x + 1) − 1/(x + 1)² + 1/(x + 1)³"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Étape 1, l'identification. En réduisant au même dénominateur, la forme proposée vaut (b(x + 1)² + c(x + 1) + d)/(x + 1)⁴ : il faut donc b(x + 1)² + c(x + 1) + d = x² + 2. Le plus rapide est d'écrire le numérateur en fonction de x + 1 : avec x = (x + 1) − 1, on a x² + 2 = (x + 1)² − 2(x + 1) + 1 + 2 = (x + 1)² − 2(x + 1) + 3, d'où b = 1, c = −2, d = 3. Étape 2, la primitivation terme à terme, avec la ligne 1/uⁿ → u^(−n+1)/(−n+1) : 1/(x + 1)² donne −1/(x + 1) ; −2/(x + 1)³ donne −2 × (−1/(2(x + 1)²)) = 1/(x + 1)² ; 3/(x + 1)⁴ donne 3 × (−1/(3(x + 1)³)) = −1/(x + 1)³. D'où F(x) = −1/(x + 1) + 1/(x + 1)² − 1/(x + 1)³ ✓. Vérification : F′(x) = 1/(x + 1)² − 2/(x + 1)³ + 3/(x + 1)⁴ = ((x + 1)² − 2(x + 1) + 3)/(x + 1)⁴ = (x² + 2)/(x + 1)⁴ ✓. Le piège courant : identifier les coefficients sans les signes (b = 1, c = 2, d = 3, en négligeant le double produit du carré) donne −1/(x + 1) − 1/(x + 1)² − 1/(x + 1)³, de dérivée (x² + 4x + 6)/(x + 1)⁴ ; oublier le signe de la table 1/xⁿ produit l'opposé exact, 1/(x + 1) − 1/(x + 1)² + 1/(x + 1)³ ; et diviser par −n au lieu de −n + 1 donne −1/(2(x + 1)) + 2/(3(x + 1)²) − 3/(4(x + 1)³).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Déterminer une primitive sur ]1, +∞[ de la fonction f définie par f(x) = (x + 1)/√(x − 1).",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = (2/3)(x − 1)√(x − 1) + 2√(x − 1)"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = 2(x + 1)√(x − 1)"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = (x²/2 + x)/√(x − 1)"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = (2/3)(x − 1)√(x − 1) + 4√(x − 1)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Aucun motif n'apparaît tel quel : on RÉÉCRIT f avant de primitiver. On fait apparaître x − 1 au numérateur : x + 1 = (x − 1) + 2, donc f(x) = (x − 1)/√(x − 1) + 2/√(x − 1) = √(x − 1) + 2/√(x − 1). Chaque morceau est alors une forme du tableau avec u(x) = x − 1 et u′(x) = 1 : u′√u a pour primitive (2/3)u√u, et u′/√u a pour primitive 2√u, donc 2/√(x − 1) donne 4√(x − 1). D'où F(x) = (2/3)(x − 1)√(x − 1) + 4√(x − 1) ✓. Vérification : la dérivée de (2/3)(x − 1)^(3/2) est (2/3)(3/2)(x − 1)^(1/2) = √(x − 1), et celle de 4√(x − 1) est 4/(2√(x − 1)) = 2/√(x − 1) ; la somme vaut √(x − 1) + 2/√(x − 1) = (x + 1)/√(x − 1) ✓. Le piège courant : recopier « 2√u » sans multiplier par le coefficient 2 du numérateur donne (2/3)(x − 1)√(x − 1) + 2√(x − 1), dont la dérivée vaut (x)/√(x − 1) ; appliquer la formule u′/√u → 2√u en traitant x + 1 comme un facteur constant fabrique 2(x + 1)√(x − 1), de dérivée 2√(x − 1) + (x + 1)/√(x − 1) ; et primitiver le seul numérateur en laissant le dénominateur intact donne (x²/2 + x)/√(x − 1) — il n'existe aucune formule de primitive d'un quotient.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On cherche la primitive F de f(x) = x(x² + 4)³ sur ℝ telle que F(0) = 0. Voici une solution proposée. Étape 1 : on pose u(x) = x² + 4, donc u′(x) = 2x. Étape 2 : ainsi f = u′u³. Étape 3 : une primitive de u′u³ est u⁴/4, donc F(x) = (x² + 4)⁴/4 + c. Étape 4 : F(0) = 256/4 + c = 64 + c = 0, donc c = −64. Quelle est la PREMIÈRE étape fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 1"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 2"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 3"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 4 : la condition initiale ne sert qu'à vérifier, jamais à fixer c"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Ceci est une chasse à l'erreur : la solution proposée contient une faute plantée, l'explication décrit donc un raisonnement volontairement faux. L'étape 1 est correcte : u(x) = x² + 4 et u′(x) = 2x. L'étape 2 est la PREMIÈRE fausse ✓ : u′u³ = 2x(x² + 4)³, c'est-à-dire le DOUBLE de f — le facteur manquant est la constante 1/2, et l'écriture juste est f = (1/2)u′u³. L'étape 3 est exacte en tant qu'énoncé de la table (u′u³ a bien pour primitive u⁴/4), et l'étape 4 applique correctement la condition initiale, mais toutes deux héritent de l'erreur de l'étape 2. Le calcul juste : F(x) = (1/2) × (x² + 4)⁴/4 + c = (x² + 4)⁴/8 + c, et F(0) = 256/8 + c = 32 + c = 0 donne c = −32, soit F(x) = (x² + 4)⁴/8 − 32. Vérification : F′(x) = 4(x² + 4)³ × 2x/8 = x(x² + 4)³ ✓. Le piège courant est exactement celui de l'étape 2 : lire un motif u′uⁿ sans contrôler le coefficient — on ne compense un facteur manquant que s'il est CONSTANT, et il faut alors l'écrire. L'option d est fausse deux fois : la condition initiale sert bien à déterminer c, et l'étape 4 n'est de toute façon pas la première fautive.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f définie sur ℝ par f(x) = x cos x. En remarquant que (x sin x)′ = sin x + x cos x, déterminer la primitive F de f sur ℝ qui s'annule en 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = x sin x + cos x"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = (x²/2) sin x"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = x sin x − cos x + 1"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = x sin x + cos x − 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'indication fournit une égalité de fonctions : x cos x = (x sin x)′ − sin x. On primitive alors membre à membre. Une primitive de (x sin x)′ est x sin x ; une primitive de −sin x est +cos x (attention au double signe : sin se primitive en −cos, et le tout est précédé d'un moins). Donc les primitives de f sont x ↦ x sin x + cos x + c. La condition F(0) = 0 donne 0 + 1 + c = 0, soit c = −1, et F(x) = x sin x + cos x − 1 ✓. Vérification par dérivation : F′(x) = (sin x + x cos x) − sin x = x cos x ✓, et F(0) = 0 + 1 − 1 = 0 ✓. Le piège courant : s'arrêter à la famille sans exploiter la condition et livrer x sin x + cos x, qui vaut 1 en 0 ; se tromper sur le signe en primitivant −sin x en −cos x donne x sin x − cos x + 1 — cette fonction s'annule bien en 0, ce qui la rend redoutable, mais sa dérivée vaut sin x + x cos x + sin x = 2sin x + x cos x ; et primitiver le produit facteur par facteur, en croyant que la primitive de x cos x est le produit des primitives, fabrique (x²/2)sin x, qui s'annule aussi en 0 mais dont la dérivée vaut x sin x + (x²/2)cos x. Il n'existe aucune formule pour la primitive d'un produit : seule la ligne u′v + v′u → u·v permet de conclure, et c'est précisément ce que l'indication met en place.",
+      "difficulty": 3
+    }
+  ]
+}

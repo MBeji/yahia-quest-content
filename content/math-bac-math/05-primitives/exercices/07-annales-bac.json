@@ -1,0 +1,112 @@
+{
+  "title": "🏛️ Annales Bac ⭐⭐⭐⭐ : Sujet type — Primitives et remplissage d'un réservoir",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "Partie A. Soit f la fonction définie sur ℝ par f(x) = (2x + 1)/√(x² + x + 1). Justifier que f admet des primitives sur ℝ, puis déterminer la primitive F de f sur ℝ telle que F(0) = 1.",
+      "options": [
+        { "id": "a", "text": "F(x) = 2√(x² + x + 1) − 1" },
+        { "id": "b", "text": "F(x) = 2√(x² + x + 1) + 1" },
+        { "id": "c", "text": "F(x) = √(x² + x + 1)" },
+        {
+          "id": "d",
+          "text": "F(x) = (2/3)(x² + x + 1)√(x² + x + 1) + 1/3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Existence d'abord : le trinôme x² + x + 1 a pour discriminant 1 − 4 = −3 < 0, il est donc strictement positif sur ℝ ; la fonction x ↦ √(x² + x + 1) est continue et ne s'annule jamais, donc f est continue sur l'intervalle ℝ et le théorème admis lui garantit des primitives. Calcul ensuite : on pose u(x) = x² + x + 1, strictement positive, avec u′(x) = 2x + 1. Alors f = u′/√u, dont la table donne pour primitive 2√u. Donc F(x) = 2√(x² + x + 1) + c, et F(0) = 1 impose 2 × 1 + c = 1, soit c = −1 : F(x) = 2√(x² + x + 1) − 1 ✓. Vérification par dérivation : F′(x) = 2 × (2x + 1)/(2√(x² + x + 1)) = f(x) ✓ et F(0) = 2 − 1 = 1 ✓. La proposition 2√(x² + x + 1) + 1 se trompe de signe sur c et vaut 3 en 0 : un simple test de la condition initiale la démasque — prends ce réflexe en examen. La proposition √(x² + x + 1) oublie le facteur 2 de la ligne u′/√u : sa dérivée vaut f(x)/2 (et elle passe pourtant le test en 0, ce qui montre qu'une condition initiale vérifiée ne prouve jamais qu'on a la bonne primitive : seule la dérivation le prouve). La dernière confond u′/√u avec u′√u, dont la primitive est (2/3)u√u : sa dérivée est (2x + 1)√(x² + x + 1), pas le quotient demandé.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Partie A (suite). Toujours avec f(x) = (2x + 1)/√(x² + x + 1) sur ℝ et F la primitive de f telle que F(0) = 1, soit F(x) = 2√(x² + x + 1) − 1. Étudier les variations de F et préciser son extremum.",
+      "options": [
+        {
+          "id": "a",
+          "text": "F décroît sur ]−∞ ; −1/2] puis croît sur [−1/2 ; +∞[ : elle admet en −1/2 un minimum égal à √3 − 1"
+        },
+        {
+          "id": "b",
+          "text": "F décroît sur ]−∞ ; −1/2] puis croît sur [−1/2 ; +∞[ : elle admet en −1/2 un minimum égal à 2√3 − 1"
+        },
+        {
+          "id": "c",
+          "text": "F croît sur ]−∞ ; −1/2] puis décroît sur [−1/2 ; +∞[ : elle admet en −1/2 un maximum égal à √3 − 1"
+        },
+        {
+          "id": "d",
+          "text": "F est strictement croissante sur ℝ, car son expression contient une racine carrée, toujours positive"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Par construction F′ = f, donc il suffit d'étudier le signe de f. Le dénominateur √(x² + x + 1) est strictement positif sur ℝ : f(x) a exactement le signe du numérateur 2x + 1, négatif sur ]−∞ ; −1/2[, nul en −1/2, positif sur ]−1/2 ; +∞[. F décroît puis croît, et comme F′ s'annule en −1/2 EN CHANGEANT DE SIGNE, du moins vers le plus, il s'agit d'un minimum. Sa valeur : x² + x + 1 vaut 1/4 − 1/2 + 1 = 3/4 en x = −1/2, donc F(−1/2) = 2√(3/4) − 1 = 2 × (√3/2) − 1 = √3 − 1 ✓ (contrôle : √3 − 1 ≈ 0,732, tandis que F(0) = 1 et F(−2) = 2√3 − 1 ≈ 2,46 — le creux est bien en −1/2). La valeur 2√3 − 1 oublie de simplifier √(3/4) = √3/2 et traite le radicande comme s'il valait 3 : elle est plus de trois fois trop grande. Lire le tableau à l'envers transforme le creux en sommet, alors que le signe de 2x + 1 passe sans ambiguïté du moins au plus. Enfin, conclure à la croissance sur ℝ ne regarde que le dénominateur de f et oublie le facteur 2x + 1, qui est précisément celui qui change de signe.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie A (fin). Toujours avec f(x) = (2x + 1)/√(x² + x + 1) sur ℝ. On note F la primitive de f telle que F(0) = 1 et G la primitive de f telle que G(1) = 0. Que vaut F(x) − G(x) pour tout réel x ?",
+      "options": [
+        { "id": "a", "text": "2√3 − 1" },
+        { "id": "b", "text": "1 − 2√3" },
+        { "id": "c", "text": "0" },
+        { "id": "d", "text": "Cela dépend de x" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le théorème du cours tranche d'emblée sur la NATURE de la réponse : F et G sont deux primitives d'une même fonction sur un intervalle (ici ℝ), donc F − G est constante. Reste à calculer cette constante, et le plus court est de l'évaluer en un point bien choisi. Explicitement : F(x) = 2√(x² + x + 1) − 1 (car F(0) = 1 donne c = −1) et G(x) = 2√(x² + x + 1) + c′ avec G(1) = 2√3 + c′ = 0, soit c′ = −2√3 ; d'où F(x) − G(x) = −1 + 2√3 = 2√3 − 1 ✓ (contrôle en x = 0 : F(0) = 1 et G(0) = 2 − 2√3 ≈ −1,46, la différence vaut bien ≈ 2,46 = 2√3 − 1 ✓, et en x = 1 : F(1) = 2√3 − 1 et G(1) = 0, même écart ✓). La réponse 1 − 2√3 calcule G − F : l'ordre des deux primitives compte dans une soustraction. La réponse 0 confond « diffèrent d'une constante » avec « sont égales » : deux primitives ne coïncident que si elles prennent la même valeur en un point, ce qui n'est pas le cas ici. Et affirmer que l'écart dépend de x contredit frontalement le théorème : la dérivée de F − G est f − f = 0 sur un intervalle, donc F − G est bien constante.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B. Un réservoir, vide à l'instant t = 0, est alimenté par une pompe dont le débit à l'heure t est d(t) = 12t/(t² + 4)² (en m³/h), pour t ≥ 0. On note V(t) le volume d'eau présent dans le réservoir, en m³. Déterminer V(t).",
+      "options": [
+        { "id": "a", "text": "V(t) = 3/2 − 6/(t² + 4)" },
+        { "id": "b", "text": "V(t) = −6/(t² + 4)" },
+        { "id": "c", "text": "V(t) = 6/(t² + 4) − 3/2" },
+        { "id": "d", "text": "V(t) = 3 − 12/(t² + 4)" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le débit est le taux de variation instantané du volume : V′ = d, donc V est la primitive de d qui vérifie la condition initiale V(0) = 0 (« réservoir vide »). On pose u(t) = t² + 4, qui ne s'annule pas, avec u′(t) = 2t : alors d(t) = 12t/u² = 6u′/u², motif u′/uⁿ avec n = 2, dont la primitive est u^(−1)/(−1) = −1/u. D'où V(t) = −6/(t² + 4) + c, et V(0) = 0 impose −6/4 + c = 0, soit c = 3/2 : V(t) = 3/2 − 6/(t² + 4) ✓. Vérification par dérivation : V′(t) = 6 × 2t/(t² + 4)² = 12t/(t² + 4)² = d(t) ✓ et V(0) = 3/2 − 3/2 = 0 ✓ (contrôle : V(2) = 3/2 − 6/8 = 0,75 m³, un volume positif et croissant, cohérent avec un débit positif). L'expression −6/(t² + 4) oublie la constante : elle donnerait un volume initial de −1,5 m³, ce qui n'a aucun sens physique — la condition initiale n'est pas un ornement. L'expression 6/(t² + 4) − 3/2 se trompe de signe sur la primitive de u′/u² : sa dérivée est négative, elle décrit un réservoir qui se vide. Enfin 3 − 12/(t² + 4) garde le coefficient 12 au lieu de reconnaître 12t = 6u′ : sa dérivée vaut 24t/(t² + 4)², soit le double du débit annoncé.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B (suite). Le réservoir, vide à t = 0, est alimenté par la pompe de débit d(t) = 12t/(t² + 4)² m³/h, et l'on a établi que le volume vaut V(t) = 3/2 − 6/(t² + 4) m³ pour t ≥ 0. Le cahier des charges exige que le réservoir puisse contenir 2 m³. Cette pompe, à elle seule, permet-elle de l'atteindre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non : V est croissante et V(t) tend vers 3/2 quand t tend vers +∞, donc V(t) < 3/2 < 2 pour tout t"
+        },
+        {
+          "id": "b",
+          "text": "Oui : V est croissante et non majorée, il suffit d'attendre assez longtemps"
+        },
+        {
+          "id": "c",
+          "text": "Oui : le calcul donne V(2) = 2 m³, atteint au bout de 2 heures"
+        },
+        {
+          "id": "d",
+          "text": "Non : V est décroissante, donc le volume diminue au fil du temps"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux arguments, comme dans l'activité de chimie du cours. D'abord la monotonie : V′(t) = d(t) = 12t/(t² + 4)², positive pour t > 0, donc V est croissante — le réservoir se remplit bien. Ensuite le plafond : quand t tend vers +∞, la quantité 6/(t² + 4) tend vers 0, donc V(t) tend vers 3/2 = 1,5 m³. Comme le terme retranché 6/(t² + 4) reste strictement positif, on a même V(t) < 3/2 pour tout t. La croissance vers une limite finie enferme donc le volume sous 1,5 m³ : les 2 m³ exigés ne seront jamais atteints ✓ (contrôles : V(2) = 0,75 ; V(10) ≈ 1,442 ; V(100) ≈ 1,4994 — la courbe s'écrase sous 1,5). Affirmer que V n'est pas majorée est l'erreur de raisonnement centrale : une fonction croissante n'est pas nécessairement non bornée, et c'est exactement ce que révèle le calcul de la limite. Le prétendu V(2) = 2 confond l'instant t = 2 avec le volume visé : le calcul donne 3/2 − 6/8 = 0,75 m³. Et annoncer une décroissance contredit le signe du débit, qui est positif.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B (fin). Même réservoir, vide à t = 0, de volume V(t) = 3/2 − 6/(t² + 4) m³ pour t ≥ 0. Un capteur doit se déclencher à l'instant précis où le réservoir contient exactement 1 m³. À quel instant se déclenche-t-il ?",
+      "options": [
+        { "id": "a", "text": "t = 2√2 heures" },
+        { "id": "b", "text": "t = 2√3 heures" },
+        { "id": "c", "text": "t = 2 heures" },
+        {
+          "id": "d",
+          "text": "Jamais : le volume plafonne sous 3/2 m³, donc il n'atteint pas 1 m³"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On résout V(t) = 1, soit 3/2 − 6/(t² + 4) = 1. On isole le quotient : 6/(t² + 4) = 3/2 − 1 = 1/2. Le produit en croix donne t² + 4 = 12, puis t² = 8 et, comme t ≥ 0, t = √8 = 2√2 ≈ 2,83 heures ✓. Vérification en reportant : t² + 4 = 8 + 4 = 12, donc V(2√2) = 3/2 − 6/12 = 3/2 − 1/2 = 1 m³ ✓ ; et le résultat est cohérent avec l'encadrement V(2) = 0,75 < 1 < V(4) = 3/2 − 6/20 = 1,2, l'instant cherché tombe bien entre 2 h et 4 h. La réponse 2√3 vient de t² = 12 : on a oublié de retrancher les 4 après le produit en croix — le radicande de la solution est t² = 8, pas t² + 4. La réponse 2 h est le volume à mi-parcours mal relu : V(2) = 0,75 m³, pas 1 m³. Enfin, répondre « jamais » applique le plafond au mauvais seuil : le volume est effectivement majoré par 3/2, mais 1 est strictement INFÉRIEUR à 3/2 — c'est 2 m³ qui est hors d'atteinte, pas 1 m³.",
+      "difficulty": 3
+    }
+  ]
+}

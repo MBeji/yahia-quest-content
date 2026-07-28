@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Primitives",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "La fonction x ↦ tan x est une primitive sur ]−π/2, π/2[ de laquelle de ces fonctions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ 1/sin²x"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ sin²x"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ tan²x"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ 1 + tan²x"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Il suffit de dériver tan x : (tan x)′ = 1 + tan²x, qui vaut aussi 1/cos²x ✓. C'est la dernière ligne de la table des primitives usuelles, lue à l'envers. L'option c est le piège voisin : une primitive de tan²x est tan x − x, puisqu'on écrit tan²x = (1 + tan²x) − 1 ; il manque donc le −x. L'option a remplace cos² par sin² au dénominateur, alors que la dérivée de tan fait apparaître cos². L'option b confond sin²x avec 1/cos²x, deux fonctions sans rapport.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f une fonction continue sur ℝ, et F et G deux primitives de f sur ℝ telles que F(0) = G(0) = 3. Que peut-on en conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F et G diffèrent d'une constante non nulle"
+        },
+        {
+          "id": "b",
+          "text": "F − G est constante, sans qu'on puisse déterminer sa valeur"
+        },
+        {
+          "id": "c",
+          "text": "F et G sont égales sur ℝ"
+        },
+        {
+          "id": "d",
+          "text": "On ne peut rien conclure sans connaître l'expression de f"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le théorème donne d'abord F − G = c, constante sur l'intervalle ℝ. On évalue ensuite en 0 : c = F(0) − G(0) = 3 − 3 = 0, donc F = G sur ℝ ✓. C'est l'unicité du corollaire de la condition initiale : deux primitives qui coïncident en un seul point sont égales partout. L'option b s'arrête à mi-chemin alors que la valeur commune en 0 détermine la constante. L'option a affirme le contraire de ce calcul. L'option d oublie que le théorème conclut sans jamais avoir besoin de l'expression de f.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f définie par f(x) = 1/x² sur D = ]−∞, 0[ ∪ ]0, +∞[. Pourquoi le théorème « deux primitives de f diffèrent d'une constante » ne s'applique-t-il pas sur D ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que f n'est pas continue sur D"
+        },
+        {
+          "id": "b",
+          "text": "Parce que D n'est pas un intervalle"
+        },
+        {
+          "id": "c",
+          "text": "Parce que f n'est pas dérivable sur D"
+        },
+        {
+          "id": "d",
+          "text": "Parce que f n'admet aucune primitive sur D"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'hypothèse du théorème est un INTERVALLE, et D est une réunion de deux intervalles disjoints ✓. Conséquence concrète : deux primitives de f peuvent différer d'une constante sur ]0, +∞[ et d'une autre constante sur ]−∞, 0[, par exemple x ↦ −1/x et la fonction valant −1/x + 1 sur ]0, +∞[ et −1/x + 7 sur ]−∞, 0[. Les options a et c sont fausses : f est continue et même dérivable en tout point de D. L'option d est fausse aussi : x ↦ −1/x est bien une primitive de f sur D — c'est l'unicité « à une constante près » qui tombe, pas l'existence.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f définie sur ℝ par f(x) = x√(x² + 5). Une primitive de f sur ℝ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1/3)(x² + 5)√(x² + 5)"
+        },
+        {
+          "id": "b",
+          "text": "(1/2)(x² + 5)√(x² + 5)"
+        },
+        {
+          "id": "c",
+          "text": "(2/3)(x² + 5)√(x² + 5)"
+        },
+        {
+          "id": "d",
+          "text": "(1/2)x²√(x² + 5)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On vise le motif u′√u avec u(x) = x² + 5, donc u′(x) = 2x. Or f ne contient que x : on ajuste par la constante 1/2, car f = (1/2) × u′√u. La table donne (2/3)u√u pour u′√u, d'où F = (1/2) × (2/3)(x² + 5)√(x² + 5) = (1/3)(x² + 5)√(x² + 5) ✓. Vérification avec F = (1/3)u^(3/2) : F′ = (1/3) × (3/2)u^(1/2) × 2x = x√(x² + 5) ✓. L'option c applique la table sans compenser le facteur 1/2 manquant : sa dérivée vaut 2x√(x² + 5). L'option b utilise 1/2 au lieu de 1/3 et redonne (3/2)x√(x² + 5). L'option d primitive le seul facteur x en laissant la racine « au repos », ce qu'aucune règle n'autorise.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f définie sur ]3, +∞[ par f(x) = (2x − 3)/√(x² − 3x). Quelle est la primitive F de f sur ]3, +∞[ vérifiant F(4) = 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "√(x² − 3x) − 1"
+        },
+        {
+          "id": "b",
+          "text": "2√(x² − 3x) − 3"
+        },
+        {
+          "id": "c",
+          "text": "2√(x² − 3x) + 1"
+        },
+        {
+          "id": "d",
+          "text": "2√(x² − 3x) + 3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On pose u(x) = x² − 3x, strictement positive sur ]3, +∞[, avec u′(x) = 2x − 3 : f est exactement le motif u′/√u, dont une primitive est 2√u. Les primitives sont donc 2√(x² − 3x) + c. Condition initiale : u(4) = 16 − 12 = 4, donc F(4) = 2 × 2 + c = 4 + c = 1, d'où c = −3 et F(x) = 2√(x² − 3x) − 3 ✓ (contrôle : F′ = 2 × u′/(2√u) = (2x − 3)/√(x² − 3x) ✓). L'option a oublie le facteur 2 de la table (sa dérivée vaut (2x − 3)/(2√(x² − 3x))). L'option c prend y₀ = 1 pour constante sans calculer F(4). L'option d se trompe de signe sur c.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit F une primitive d'une fonction f sur ℝ. Laquelle de ces fonctions est une primitive sur ℝ de x ↦ f(2x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ F(x)/2"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ F(2x)"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ (1/2)F(2x)"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ 2F(2x)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On dérive la composée : (F(2x))′ = 2 × F′(2x) = 2f(2x). Le facteur 2 parasite se neutralise en divisant par 2, donc ((1/2)F(2x))′ = f(2x) ✓. L'option b est l'erreur classique — « F(2x) est une primitive de f(2x) » est FAUX, sa dérivée vaut 2f(2x) : c'est la même logique que le facteur 1/ω des lignes trigonométriques. L'option d va dans le mauvais sens et donne 4f(2x). L'option a divise la bonne fonction par 2 mais ne compose pas : sa dérivée vaut f(x)/2, où le 2x a disparu.",
+      "difficulty": 3
+    }
+  ]
+}

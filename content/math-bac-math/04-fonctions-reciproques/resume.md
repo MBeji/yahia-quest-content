@@ -1,0 +1,12 @@
+# 📜 Résumé : Fonctions réciproques
+
+- **Bijection** : f réalise une bijection de I sur f(I) si, pour tout y de f(I), l'équation f(x) = y a une **unique** solution dans I ; **f strictement monotone sur I ⟹ f bijection de I sur f(I)** (la continuité seule ne suffit pas ; x ↦ ax + b n'est bijective de ℝ sur ℝ que si a ≠ 0).
+- **Déterminer J = f(I)** : par le tableau de variation et les limites aux bornes — si f est continue strictement croissante, f([a, b]) = [f(a), f(b)], f([a, b[) = [f(a), lim_{b⁻} f[ ; bornes échangées si f est décroissante.
+- **Fonction réciproque** : f⁻¹ associe à y de f(I) l'unique antécédent x dans I ; **f(x) = y ⟺ f⁻¹(y) = x** ; f⁻¹∘f(x) = x sur I et f∘f⁻¹(y) = y sur f(I) ; f⁻¹ ≠ 1/f. Méthode : résoudre y = f(x) en x, garder la solution de I (ex. f(x) = x² − 4x + 1 sur [2, +∞[ ⟹ f⁻¹(y) = 2 + √(y + 3) sur [−3, +∞[).
+- **Symétrie des courbes** : en repère orthonormé, C_f et C_{f⁻¹} sont symétriques par rapport à **Δ : y = x** (M(a, b) ↦ M′(b, a)) ; le tableau de variation de f⁻¹ s'obtient en échangeant les deux lignes ; f(a) = a ⟹ (a, a) est commun aux deux courbes. La symétrie échange les axes : **asymptote horizontale y = ℓ de C_f ⟹ asymptote verticale x = ℓ de C_{f⁻¹}** (et réciproquement).
+- **Continuité et monotonie** : f continue et strictement monotone sur I ⟹ f⁻¹ **continue et strictement monotone sur f(I), dans le même sens que f** (même sens ≠ même signe).
+- **Dérivée de la réciproque** : si f est dérivable en a, f′(a) ≠ 0 et b = f(a), alors f⁻¹ est dérivable en b et **(f⁻¹)′(b) = 1/f′(a)** ; sur tout l'intervalle, (f⁻¹)′(y) = 1/f′[f⁻¹(y)] (valable aussi à droite/à gauche). Si f′(a) = 0 : tangente horizontale ↦ **tangente verticale**, f⁻¹ n'est pas dérivable en b.
+- **Fonction racine nᵉᵐᵉ** (n ≥ 2) : réciproque de x ↦ xⁿ sur ℝ₊, strictement croissante de ℝ₊ sur ℝ₊, notée ⁿ√x ; y = xⁿ ⟺ x = ⁿ√y (x, y ≥ 0) ; lim_{x→+∞} ⁿ√x = +∞ ; ⁿ√ ne prend que des radicandes **positifs**.
+- **Opérations sur les radicaux** (a, b ≥ 0) : ⁿ√(aⁿ) = a ; (ⁿ√a)ⁿ = a ; ⁿ√(ab) = ⁿ√a·ⁿ√b ; ⁿ√(a/b) = ⁿ√a/ⁿ√b ; **ⁿ√a = ⁿᵖ√(aᵖ)** (mise au même indice pour comparer) ; (ⁿ√a)ᵖ = ⁿ√(aᵖ) ; ⁿ√(ᵖ√a) = ⁿᵖ√a. Attention : la comparaison s'inverse selon que x > 1 ou 0 < x < 1.
+- **Dérivée de ⁿ√** : x ↦ ⁿ√x est continue sur [0, +∞[, dérivable sur ]0, +∞[ avec **f′(x) = 1/(n·ⁿ√(xⁿ⁻¹))** ; non dérivable à droite en 0 (demi-tangente verticale).
+- **Composée** : x ↦ ⁿ√(u(x)) (u dérivable, u ≥ 0) est continue sur I et dérivable là où u(x) > 0, avec **f′(x) = u′(x)/(n·ⁿ√(u(x)ⁿ⁻¹))** ; cas n = 2 : (√u)′ = u′/(2√u).

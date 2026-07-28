@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Fonctions réciproques",
+  "questions": [
+    {
+      "prompt": "Soit I un intervalle de ℝ et f une fonction définie sur I. Que signifie exactement « f réalise une bijection de I sur f(I) » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour tout y de f(I), l'équation f(x) = y admet au moins une solution dans I"
+        },
+        {
+          "id": "b",
+          "text": "f est continue sur I"
+        },
+        {
+          "id": "c",
+          "text": "Pour tout y de f(I), l'équation f(x) = y admet une unique solution dans I"
+        },
+        {
+          "id": "d",
+          "text": "Tout réel x de I admet une unique image par f"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "C'est la définition : pour tout y de f(I), l'équation f(x) = y admet une unique solution dans I ✓. L'option a n'exige que l'existence, qui est gratuite puisque y est justement pris dans l'image f(I) : c'est l'unicité qu'il faut gagner. L'option b confond une hypothèse commode avec la définition — une fonction continue qui monte puis redescend reprend deux fois la même valeur et n'est pas bijective. L'option d énonce simplement que f est une fonction : chaque x n'a jamais qu'une image, cela ne dit rien sur les antécédents.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle hypothèse sur f suffit, à elle seule, à garantir que f réalise une bijection de l'intervalle I sur f(I) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est continue sur I"
+        },
+        {
+          "id": "b",
+          "text": "f est strictement monotone sur I"
+        },
+        {
+          "id": "c",
+          "text": "f est strictement positive sur I"
+        },
+        {
+          "id": "d",
+          "text": "f est dérivable sur I"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "C'est le théorème clé du chapitre : f strictement monotone sur I ⟹ f réalise une bijection de I sur f(I) ✓. En effet, deux réels distincts x₁ < x₂ vérifient f(x₁) < f(x₂) ou f(x₁) > f(x₂), jamais l'égalité : deux antécédents distincts sont impossibles. L'option a ne suffit pas : x ↦ x² est continue sur [−1, 1] mais 1 y a deux antécédents. Les options c et d ne disent rien sur l'unicité : x ↦ x² + 1 est positive et dérivable sur [−1, 1], et pourtant non bijective.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f définie sur I = [2, +∞[ par f(x) = x² − 4x + 1. On admet que f réalise une bijection de I sur J. Que vaut f⁻¹(1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "−0,5"
+        },
+        {
+          "id": "c",
+          "text": "−3"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Par définition, f⁻¹(1) est l'unique solution DANS I de l'équation f(x) = 1 : x² − 4x + 1 = 1 donne x² − 4x = 0, soit x(x − 4) = 0, donc x = 0 ou x = 4. Comme I = [2, +∞[, on garde x = 4 ✓ (vérification : f(4) = 16 − 16 + 1 = 1). L'option a est l'autre racine, rejetée parce qu'elle n'appartient pas à I : oublier la restriction d'intervalle est l'erreur n° 1 du chapitre. L'option b confond f⁻¹ et 1/f : 1/f(1) = 1/(1 − 4 + 1) = −0,5. L'option c donne f(2) = −3, c'est-à-dire la borne de J, pas un antécédent.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f une bijection d'un intervalle I sur J, et 3 un réel de I tel que f(3) = −5. Quelle égalité est nécessairement vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f⁻¹(−5) = 3"
+        },
+        {
+          "id": "b",
+          "text": "f⁻¹(3) = −5"
+        },
+        {
+          "id": "c",
+          "text": "f⁻¹(3) = −1/5"
+        },
+        {
+          "id": "d",
+          "text": "f⁻¹(−5) = −3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'équivalence fondamentale est f(x) = y ⟺ f⁻¹(y) = x : la réciproque part de l'image et rend l'antécédent. De f(3) = −5 on tire donc f⁻¹(−5) = 3 ✓. L'option b applique f⁻¹ à l'antécédent au lieu de l'image : elle inverse le sens de lecture. L'option c confond la fonction réciproque f⁻¹ avec l'inverse 1/f. L'option d ajoute un signe moins gratuit, comme si f⁻¹ était l'opposée : rien dans la définition ne change le signe de l'antécédent.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un repère orthonormé, par rapport à quel objet les courbes d'une bijection f et de sa réciproque f⁻¹ sont-elles symétriques ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'axe des abscisses"
+        },
+        {
+          "id": "b",
+          "text": "L'axe des ordonnées"
+        },
+        {
+          "id": "c",
+          "text": "La droite Δ : y = x"
+        },
+        {
+          "id": "d",
+          "text": "L'origine O du repère"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le point M(a, b) appartient à C_f exactement quand M′(b, a) appartient à C_{f⁻¹}, et échanger les deux coordonnées, c'est précisément la symétrie par rapport à la droite Δ : y = x ✓. L'option a correspond à la symétrie (x, y) ↦ (x, −y), qui est la courbe de −f. L'option b correspond à (x, y) ↦ (−x, y), c'est-à-dire la courbe de x ↦ f(−x). L'option d correspond à (x, y) ↦ (−x, −y) : aucune de ces trois transformations n'échange l'abscisse et l'ordonnée. Attention : la symétrie par rapport à Δ n'a ce sens que dans un repère ORTHONORMÉ.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f une fonction continue et strictement décroissante sur un intervalle I. Que peut-on affirmer de sa réciproque f⁻¹ sur f(I) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est strictement croissante"
+        },
+        {
+          "id": "b",
+          "text": "Elle est constante"
+        },
+        {
+          "id": "c",
+          "text": "On ne peut rien dire tant qu'on n'a pas explicité f⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "Elle est strictement décroissante"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le théorème dit que f⁻¹ est continue et strictement monotone sur f(I) et varie DANS LE MÊME SENS que f : décroissante ⟹ décroissante ✓. C'est cohérent avec le miroir, car la symétrie par rapport à Δ : y = x conserve le sens de parcours de la courbe. Exemple : f(x) = 1/x sur ℝ*₊ est décroissante, et sa réciproque, qui est f elle-même, l'est aussi. L'option a est l'erreur classique « la réciproque inverse tout » — elle inverse les coordonnées, pas le sens de variation. L'option b est impossible : une fonction constante n'est pas injective. L'option c oublie que le théorème conclut sans jamais expliciter f⁻¹.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f continue et strictement décroissante sur [−2, 5], avec f(−2) = 8 et f(5) = 3. Quel est l'intervalle J = f([−2, 5]) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[8, 3]"
+        },
+        {
+          "id": "b",
+          "text": "[3, 8]"
+        },
+        {
+          "id": "c",
+          "text": "[−2, 5]"
+        },
+        {
+          "id": "d",
+          "text": "[3, 5]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour f continue et strictement croissante, f([a, b]) = [f(a), f(b)] ; quand f est DÉCROISSANTE les bornes s'échangent : f([a, b]) = [f(b), f(a)] = [3, 8] ✓. Le contrôle de bon sens : f décroît de 8 jusqu'à 3, donc elle prend toutes les valeurs entre 3 et 8. L'option a applique la formule de la fonction croissante et produit une écriture qui n'est même pas un intervalle (la borne de gauche doit être la plus petite). L'option c confond l'intervalle de départ I avec l'intervalle image f(I). L'option d mélange une borne de f(I) et une borne de I.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Écrire plus simplement le réel ∛(2⁶ × 3³).",
+      "options": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "24"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "1728"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On utilise ⁿ√(a·b) = ⁿ√a · ⁿ√b puis ⁿ√(aⁿ) = a : ∛(2⁶ × 3³) = ∛(2⁶) × ∛(3³) = ∛((2²)³) × 3 = 2² × 3 = 12 ✓ (vérification : 12³ = 1728 = 64 × 27). L'option a divise l'exposant 6 par 6 au lieu de 3 et obtient 2 × 3. L'option b prend ∛(2⁶) = 2³ en divisant l'exposant par 2 : c'est la racine carrée, pas la racine cubique. L'option d se contente de calculer le radicande 64 × 27 sans jamais extraire la racine.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour un entier n ≥ 2, la fonction racine nᵉᵐᵉ x ↦ ⁿ√x est, par définition, la fonction réciproque de quelle fonction ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ xⁿ sur ℝ₊"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ xⁿ sur ℝ tout entier"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ 1/xⁿ sur ℝ*₊"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ nx sur ℝ₊"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le théorème-définition du chapitre : pour n ≥ 2, x ↦ xⁿ réalise une bijection de ℝ₊ sur ℝ₊, et sa réciproque, strictement croissante de ℝ₊ sur ℝ₊, est la fonction racine nᵉᵐᵉ ✓. L'option b oublie la restriction à ℝ₊ : pour n pair, x ↦ xⁿ n'est pas bijective sur ℝ (2 et −2 ont la même image), et le programme n'applique ⁿ√ qu'à des réels positifs, quelle que soit la parité de n. L'option c confond réciproque et inverse. L'option d confond l'exposant n avec un facteur n : la réciproque de x ↦ nx est x ↦ x/n.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résoudre dans ℝ₊ l'équation ∛x = ⁴√2.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = ∛8"
+        },
+        {
+          "id": "b",
+          "text": "x = ¹²√2"
+        },
+        {
+          "id": "c",
+          "text": "x = 8"
+        },
+        {
+          "id": "d",
+          "text": "x = ⁴√8"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les deux membres sont positifs : on élève au cube pour libérer x, ce qui donne x = (⁴√2)³ = ⁴√(2³) = ⁴√8 ✓, en utilisant (ⁿ√a)ᵖ = ⁿ√(aᵖ). Vérification : ∛(⁴√8) = ¹²√8 = ¹²√(2³) = ⁴√2 ✓. L'option a applique la puissance 3 au mauvais membre et « libère » le 2 au lieu du x. L'option b multiplie les indices 3 et 4 sans toucher au radicande : c'est la règle ⁿ√(ᵖ√a) = ⁿᵖ√a, qui ne s'applique pas ici. L'option c vient de l'autre méthode, celle qui élève les deux membres à la puissance 12 : elle donne x⁴ = 2³ = 8, et il reste à conclure x = ⁴√8 — s'arrêter à 8 revient à confondre x et x⁴.",
+      "difficulty": 2
+    }
+  ]
+}

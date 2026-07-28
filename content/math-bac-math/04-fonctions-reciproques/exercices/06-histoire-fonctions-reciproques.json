@@ -1,0 +1,118 @@
+{
+  "title": "🗿 Histoire ⭐⭐⭐ : Le Miroir de la Cité Engloutie",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 6,
+  "questions": [
+    {
+      "prompt": "Épisode 1 — Les eaux se referment derrière toi : te voilà dans la Cité Engloutie, dont chaque porte s'ouvre par un miroir. Sur la première dalle, une fonction est gravée : f(x) = x³ − 3x + 5, et le sceau précise « domaine d'invocation : I = [1 ; +∞[ ». La Gardienne des Seuils te toise : « Avant tout miroir, prouve-moi que ce chemin se remonte — et dis-moi jusqu'où il mène. » Quelle réponse est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est strictement croissante sur I, donc réalise une bijection de I sur J = [3 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "f est strictement croissante sur I, donc réalise une bijection de I sur J = ]3 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "f est strictement croissante sur I, donc réalise une bijection de I sur J = [5 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "f n'est pas une bijection de I sur f(I), car sa dérivée s'annule en 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On calcule f′(x) = 3x² − 3 = 3(x − 1)(x + 1), strictement positive sur ]1 ; +∞[ : f est strictement croissante sur I = [1 ; +∞[, donc elle réalise une bijection de I sur J = f(I). Comme f est continue, croissante, avec f(1) = 1 − 3 + 5 = 3 et lim_{x→+∞} f(x) = +∞, l'image est J = [3 ; +∞[ ✓ (contrôle : f(2) = 8 − 6 + 5 = 7, bien dans J). La borne 3 est ATTEINTE, en x = 1 qui appartient à I : l'écrire ouverte, ]3 ; +∞[, revient à exclure une valeur réellement prise. La borne 5 vient d'un calcul bâclé de f(1) où le terme −3x est oublié : f(1) vaut 3, pas 5. Enfin, l'annulation de f′ au seul point 1, sans changement de signe sur I, n'empêche nullement la stricte croissance — c'est le changement de signe qui casserait l'unicité, pas un zéro isolé au bord.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Épisode 2 — La porte cède sur la Salle des Antécédents. Au centre flotte un chiffre lumineux : 7. La Gardienne reprend : « Le miroir de f, toujours f(x) = x³ − 3x + 5 sur I = [1 ; +∞[, renvoie 7 vers son unique source. Nomme-la. » Que vaut f⁻¹(7) ?",
+      "options": [
+        { "id": "a", "text": "2" },
+        { "id": "b", "text": "−1" },
+        { "id": "c", "text": "1/7" },
+        { "id": "d", "text": "327" }
+      ],
+      "correctOption": "a",
+      "explanation": "Par l'équivalence du cours, f⁻¹(7) est l'unique solution DANS I de f(x) = 7, soit x³ − 3x + 5 = 7, c'est-à-dire x³ − 3x − 2 = 0. On factorise : x³ − 3x − 2 = (x − 2)(x + 1)² (contrôle en redéveloppant : (x − 2)(x² + 2x + 1) = x³ + 2x² + x − 2x² − 4x − 2 = x³ − 3x − 2 ✓). Les racines sont 2 et −1, mais −1 n'appartient pas à I = [1 ; +∞[ : on ne garde que x = 2, donc f⁻¹(7) = 2 ✓ (contrôle : f(2) = 8 − 6 + 5 = 7 ✓). Répondre −1 oublie la moitié décisive de la méthode : parmi les solutions de l'équation, seule celle qui vit dans I est l'antécédent — c'est précisément la restriction à I qui rend la solution unique. Répondre 1/7 confond la fonction réciproque f⁻¹ avec l'inverse 1/f. Et 327 est f(7) = 343 − 21 + 5 : c'est l'image de 7, l'aller au lieu du retour.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 3 — Troisième salle : le Miroir des Pentes. Sur sa surface, la courbe de f⁻¹ apparaît, et la Gardienne exige une tangente. Données rappelées : f(x) = x³ − 3x + 5 sur I = [1 ; +∞[, f′(x) = 3x² − 3, f(2) = 7 donc f⁻¹(7) = 2. Quelle est l'équation de la tangente à C_{f⁻¹} au point d'abscisse 7 ?",
+      "options": [
+        { "id": "a", "text": "y = (1/9)(x − 7) + 2" },
+        { "id": "b", "text": "y = 9(x − 7) + 2" },
+        { "id": "c", "text": "y = (1/9)(x − 2) + 7" },
+        { "id": "d", "text": "y = (1/9)x + 2" }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux ingrédients, comme toujours pour une tangente : l'ordonnée du point et la pente. L'ordonnée est f⁻¹(7) = 2. La pente est (f⁻¹)′(7) = 1/f′(a) avec a = f⁻¹(7) = 2 : f′(2) = 3 × 4 − 3 = 9, donc (f⁻¹)′(7) = 1/9 (le théorème s'applique bien, car f′(2) ≠ 0). L'équation est y = (f⁻¹)′(7)(x − 7) + f⁻¹(7) = (1/9)(x − 7) + 2 ✓. La pente 9 oublie de passer à l'INVERSE : 9 est la pente de la tangente à C_f, et la symétrie par rapport à Δ : y = x transforme une pente p en 1/p. L'écriture (1/9)(x − 2) + 7 échange les rôles de 7 et de 2 : on est sur la courbe de f⁻¹, dont le point a pour abscisse 7 et pour ordonnée 2 — jamais l'inverse. Et y = (1/9)x + 2 oublie le décalage (x − 7), qui ne serait nul que si le point d'appui avait une abscisse nulle.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 4 — Une fissure court sur le grand miroir de la salle suivante : à l'endroit du point (3 ; 1), le reflet se dresse à la verticale. La Gardienne murmure : « Ici, mon miroir a un défaut. Sais-tu le nommer ? » Rappel : f(x) = x³ − 3x + 5 sur I = [1 ; +∞[, f′(x) = 3(x − 1)(x + 1), f(1) = 3, et f est une bijection de I sur J = [3 ; +∞[. Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(1) = 0, donc f⁻¹ n'est pas dérivable à droite en 3 : C_{f⁻¹} admet au point (3 ; 1) une demi-tangente verticale, bien que f⁻¹ y reste continue"
+        },
+        {
+          "id": "b",
+          "text": "f′(1) = 0, donc f⁻¹ n'est pas continue en 3 : sa courbe présente un saut au point (3 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "f′(1) = 0, donc (f⁻¹)′(3) = 0 : C_{f⁻¹} admet au point (3 ; 1) une tangente horizontale"
+        },
+        {
+          "id": "d",
+          "text": "f′(1) = 0 empêche f d'être une bijection au voisinage de 1 : f⁻¹ n'est pas définie en 3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f′(1) = 3 × 0 × 2 = 0 : la tangente à C_f au point (1 ; 3) est horizontale. Par symétrie par rapport à Δ : y = x, la tangente à C_{f⁻¹} au point symétrique (3 ; 1) est VERTICALE — une demi-tangente ici, puisque 3 est la borne gauche de J. Le théorème de dérivation de la réciproque exige f′(a) ≠ 0 : sa condition tombe, et le taux d'accroissement de f⁻¹ en 3 tend vers +∞. En revanche, f est continue et strictement monotone sur I, donc f⁻¹ est CONTINUE sur J tout entier (théorème du cours) : la non-dérivabilité n'est pas une rupture ✓. Parler de saut confond justement non-dérivabilité et discontinuité. Écrire (f⁻¹)′(3) = 0 recopie la valeur de f′ au lieu d'en prendre l'inverse — et 1/0 n'a de toute façon aucun sens : c'est bien pour cela que le théorème réclame f′(a) ≠ 0. Enfin, un zéro isolé de f′ ne détruit pas la stricte croissance : f reste une bijection de I sur J, donc f⁻¹(3) = 1 existe bel et bien.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 5 — Salle des Radicaux. Deux sceaux de pierre barrent le passage ; il faut désigner le plus grand. Sur le premier : ¹⁰√(3⁴). Sur le second : ⁶√(3²). Quelle comparaison, avec sa justification, est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "¹⁰√(3⁴) > ⁶√(3²), car en ramenant les deux au même indice 30 on compare ³⁰√(3¹²) et ³⁰√(3¹⁰)"
+        },
+        {
+          "id": "b",
+          "text": "¹⁰√(3⁴) < ⁶√(3²), car un indice de racine plus grand donne toujours un nombre plus petit"
+        },
+        {
+          "id": "c",
+          "text": "¹⁰√(3⁴) = ⁶√(3²), car dans les deux cas l'exposant est la moitié de l'indice"
+        },
+        {
+          "id": "d",
+          "text": "On ne peut pas les comparer sans calculatrice, faute d'indice commun"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La règle du cours ⁿ√a = ⁿᵖ√(aᵖ) permet de ramener deux radicaux au même indice ; ici on prend 30 = PPCM(10 ; 6). D'une part ¹⁰√(3⁴) = ³⁰√((3⁴)³) = ³⁰√(3¹²) ; d'autre part ⁶√(3²) = ³⁰√((3²)⁵) = ³⁰√(3¹⁰). La fonction ³⁰√ étant strictement croissante et 3¹² > 3¹⁰, on conclut ¹⁰√(3⁴) > ⁶√(3²) ✓ (contrôle : ¹⁰√(3⁴) = ⁵√(3²) = ⁵√9 ≈ 1,552 et ⁶√(3²) = ∛3 ≈ 1,442 ✓). « Un indice plus grand donne toujours un nombre plus petit » est une fausse règle : elle ne vaudrait qu'à radicande égal, or les radicandes 3⁴ et 3² diffèrent — c'est le rapport exposant/indice qui décide (12/30 contre 10/30). L'égalité annoncée par « l'exposant est la moitié de l'indice » est doublement fausse : 4 n'est pas la moitié de 10. Et l'indice commun s'obtient justement sans aucune calculatrice, par le PPCM des indices.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 6 — Dernière salle : le Puits du Retour. Pour remonter à la surface, tu dois donner l'ensemble des réels x positifs vérifiant l'inscription gravée sur la margelle : x − 5·√x + 6 = 0. Quel est cet ensemble de solutions ?",
+      "options": [
+        { "id": "a", "text": "{4 ; 9}" },
+        { "id": "b", "text": "{2 ; 3}" },
+        { "id": "c", "text": "{9}" },
+        { "id": "d", "text": "{8 ; 27}" }
+      ],
+      "correctOption": "a",
+      "explanation": "On reconnaît une équation du second degré déguisée. Comme x = (√x)² pour x ≥ 0, on pose t = √x, avec t ≥ 0 : l'équation devient t² − 5t + 6 = 0, de racines t = 2 et t = 3, toutes deux positives donc recevables. Il reste à REVENIR à x par l'équivalence t = √x ⟺ x = t² : t = 2 donne x = 4, t = 3 donne x = 9. L'ensemble des solutions est {4 ; 9} ✓ (contrôle pour x = 4 : 4 − 5 × 2 + 6 = 0 ✓ ; pour x = 9 : 9 − 5 × 3 + 6 = 0 ✓). Répondre {2 ; 3} s'arrête à l'inconnue auxiliaire t : c'est l'erreur classique du changement de variable oublié en chemin — ces valeurs résolvent t² − 5t + 6 = 0, pas l'équation posée. Ne garder que 9 élimine à tort t = 2, pourtant positif. Et {8 ; 27} remonte par x = t³ : l'indice du radical est 2, donc c'est x = t² qu'il faut écrire.",
+      "difficulty": 3
+    }
+  ]
+}

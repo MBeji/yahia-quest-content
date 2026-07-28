@@ -1,0 +1,124 @@
+{
+  "title": "🧩 Mission interactive ⭐⭐ : La Vallée des Débits",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "Texte à trous — une conduite d'irrigation transporte un débit D(t) = 4t + 3 (en m³/h) à l'heure t, pour t ∈ [0 ; 5]. Le volume écoulé entre l'instant t = 1 et l'instant t = 3 est l'intégrale ∫₁³ D(t)dt, et il vaut ____ mètres cubes.",
+      "options": [
+        { "id": "a", "text": "22" },
+        { "id": "b", "text": "8" },
+        { "id": "c", "text": "27" },
+        { "id": "d", "text": "11" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le volume écoulé est l'intégrale du débit : on cherche une primitive de D puis on prend la différence entre les bornes. Une primitive de 4t + 3 est G(t) = 2t² + 3t (contrôle par dérivation, le seul qui compte : G′(t) = 4t + 3 = D(t) ✓). Donc ∫₁³ D(t)dt = [2t² + 3t]₁³ = (18 + 9) − (2 + 3) = 27 − 5 = 22 m³ ✓. Contrôle d'ordre de grandeur : sur [1 ; 3] le débit varie entre D(1) = 7 et D(3) = 15, et l'intervalle a pour largeur 2 ; le volume est donc coincé entre 7 × 2 = 14 et 15 × 2 = 30, et 22 est bien dans cet encadrement ✓. La valeur 8 est D(3) − D(1) : c'est la différence des DÉBITS, pas le volume — on a soustrait la fonction au lieu de soustraire sa primitive. La valeur 27 est G(3) seul : oublier G(1), c'est intégrer depuis 0 et non depuis 1, donc facturer deux heures d'eau qui n'ont pas coulé dans la fenêtre demandée. La valeur 11 est 22 divisé par la largeur 2 : c'est le débit MOYEN sur [1 ; 3] (en m³/h), pas le volume — la valeur moyenne se lit en m³/h, le volume en m³, et les unités suffisent à trancher.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Lecture graphique — la courbe verte représente une fonction f continue sur [0 ; 5]. Les deux parties coloriées ont pour aires respectives 6 u.a (au-dessus de l'axe, entre x = 0 et x = 2) et 4 u.a (en dessous de l'axe, entre x = 2 et x = 5). Que vaut ∫₀⁵ f(x)dx ? <svg viewBox=\"0 0 320 200\"><path d=\"M50 110 Q90 40 130 110 Z\" fill=\"#0f6e56\" fill-opacity=\"0.20\"/><path d=\"M130 110 Q200 185 265 110 Z\" fill=\"#b45309\" fill-opacity=\"0.20\"/><path d=\"M30 110 H300\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M300 110 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M50 190 V25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M50 25 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><path d=\"M50 110 Q90 40 130 110 Q200 185 265 110\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"90\" y=\"100\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\">6 u.a</text><text x=\"197\" y=\"145\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#b45309\">4 u.a</text><text x=\"44\" y=\"126\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">0</text><text x=\"130\" y=\"126\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">2</text><text x=\"265\" y=\"126\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"272\" y=\"96\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\">C_f</text></svg>",
+      "options": [
+        { "id": "a", "text": "2" },
+        { "id": "b", "text": "10" },
+        { "id": "c", "text": "−2" },
+        { "id": "d", "text": "6" }
+      ],
+      "correctOption": "a",
+      "explanation": "Une intégrale est un BILAN algébrique : ce qui est au-dessus de l'axe compte positivement, ce qui est en dessous compte négativement. On découpe en x = 2, où f change de signe (relation de Chasles) : ∫₀⁵ f = ∫₀² f + ∫₂⁵ f. Sur [0 ; 2] la fonction est positive, donc l'intégrale vaut l'aire, soit +6. Sur [2 ; 5] elle est négative, donc l'intégrale vaut l'opposé de l'aire, soit −4. Total : 6 − 4 = 2 ✓. La valeur 10 additionne les deux aires : c'est ∫₀⁵ |f(x)|dx, l'AIRE totale de la partie coloriée, un nombre toujours positif — ici l'énoncé demande l'intégrale, pas l'aire, et les deux ne coïncident que si f garde un signe constant. La valeur −2 inverse les rôles : elle compte négativement le morceau situé AU-DESSUS de l'axe. La valeur 6 s'arrête au premier morceau, comme si la courbe cessait d'exister après x = 2. Retiens la phrase du cours : ∫f est un bilan signé, ∫|f| est une aire.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Chasse à l'erreur — une éolienne fournit la puissance P(t) = 12t − 3t² (en kW) pendant les 4 premières heures, t ∈ [0 ; 4]. Voici la copie d'un élève qui calcule l'énergie produite E (en kWh) puis la puissance moyenne.\n① L'énergie produite est E = ∫₀⁴ P(t)dt.\n② Une primitive de P est G(t) = 6t² − t³/3.\n③ E = G(4) − G(0) = 96 − 64/3 = 224/3 kWh.\n④ La puissance moyenne vaut P̄ = E/(4 − 0) = 56/3 ≈ 18,7 kW.\nUne seule étape contient une erreur : laquelle ?",
+      "options": [
+        { "id": "a", "text": "L'étape ①" },
+        { "id": "b", "text": "L'étape ②" },
+        { "id": "c", "text": "L'étape ③" },
+        { "id": "d", "text": "L'étape ④" }
+      ],
+      "correctOption": "b",
+      "explanation": "L'erreur est à l'étape ② : une primitive de −3t² est −t³, et non −t³/3. L'élève a divisé deux fois — une fois par le nouvel exposant 3, comme le veut la règle, puis une seconde fois sans raison, en oubliant que le coefficient 3 du départ compense exactement cette division. Contrôle par dérivation : (6t² − t³/3)′ = 12t − t², qui n'est pas P(t) ; en revanche (6t² − t³)′ = 12t − 3t² = P(t) ✓. Le calcul correct donne E = G(4) − G(0) = 6 × 16 − 64 = 96 − 64 = 32 kWh, et P̄ = 32/4 = 8 kW. Contrôle d'ordre de grandeur : P est une parabole qui vaut 0 en t = 0 et t = 4, avec un maximum P(2) = 24 − 12 = 12 kW ; une moyenne de 8 kW, soit les deux tiers du maximum, est exactement ce qu'on attend d'un arc de parabole, tandis que les 18,7 kW de la copie DÉPASSENT le maximum de la puissance — une moyenne supérieure au maximum est impossible, et l'inégalité de la moyenne du cours l'interdit formellement. Les autres étapes sont justes : ① traduit correctement « énergie = intégrale de la puissance » ; ③ et ④ sont arithmétiquement exactes, elles ne font que propager la faute commise en ②. C'est le piège de ce format : la ligne fausse n'est pas toujours celle où se cache la faute.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Un chariot se déplace sur un rail rectiligne entre les instants t = 0 et t = 4 (t en secondes). Sa vitesse algébrique v est continue sur [0 ; 4] et elle change de signe : le chariot avance, puis recule. Associe chaque grandeur demandée à l'expression qui la calcule.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "La distance totale parcourue par le chariot sur [0 ; 4]"
+        },
+        {
+          "id": "l2",
+          "text": "Le déplacement du chariot sur [0 ; 4], c'est-à-dire position finale moins position initiale"
+        },
+        {
+          "id": "l3",
+          "text": "La vitesse moyenne algébrique du chariot sur [0 ; 4]"
+        },
+        { "id": "r1", "text": "∫₀⁴ |v(t)|dt" },
+        { "id": "r2", "text": "∫₀⁴ v(t)dt" },
+        { "id": "r3", "text": "(1/4) ∫₀⁴ v(t)dt" }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"]
+        ]
+      },
+      "explanation": "Tout repose sur la relation x′ = v : la position x est une primitive de la vitesse. Le déplacement est donc x(4) − x(0) = ∫₀⁴ v(t)dt : c'est un bilan signé, où le trajet aller et le trajet retour se compensent partiellement, et il peut très bien être nul si le chariot revient à son point de départ. La distance totale, elle, additionne les kilomètres réellement parcourus dans les deux sens : on rend chaque morceau positif avant de sommer, d'où ∫₀⁴ |v(t)|dt — exactement la définition de l'aire du cours, ∫ₐᵇ |f(x)|dx. La vitesse moyenne, enfin, est la valeur moyenne de la fonction v sur l'intervalle : f̄ = 1/(b − a) · ∫ₐᵇ f, soit ici (1/4)∫₀⁴ v(t)dt ; c'est la vitesse constante qui produirait le même déplacement en 4 secondes. Trois pièges à retenir. Confondre distance et déplacement, c'est oublier la valeur absolue : la distance est toujours supérieure ou égale à la valeur absolue du déplacement (c'est le corollaire |∫v| ≤ ∫|v| du cours). Oublier le facteur 1/(b − a), c'est confondre la vitesse moyenne avec le déplacement, et les unités le dénoncent : des mètres par seconde d'un côté, des mètres de l'autre. Enfin, appliquer 1/(b − a) à ∫|v| donnerait la moyenne de la VALEUR ABSOLUE de la vitesse, une quatrième grandeur qui n'est demandée nulle part ici.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un drone décolle d'un toit situé à 20 m du sol. Entre t = 0 et t = 3 secondes, sa vitesse verticale est v(t) = 3t² − 12 (en m/s, comptée positivement vers le haut) : le drone descend d'abord, puis remonte. À quelle altitude, en mètres, se trouve-t-il à l'instant t = 3 s ? Donne un nombre entier.",
+      "answerKey": { "value": 11, "unit": "m" },
+      "explanation": "L'altitude h est une primitive de la vitesse verticale (h′ = v), donc la variation d'altitude entre 0 et 3 est exactement l'intégrale de v : h(3) − h(0) = ∫₀³ v(t)dt. On calcule avec la primitive H(t) = t³ − 12t (contrôle : H′(t) = 3t² − 12 = v(t) ✓) : ∫₀³ (3t² − 12)dt = [t³ − 12t]₀³ = (27 − 36) − 0 = −9. La variation est donc de −9 m, et l'altitude finale vaut h(3) = 20 + (−9) = 11 m ✓. Vérification du signe : v s'annule en t = 2 (car 3t² = 12 donne t = 2), elle est négative avant — le drone descend pendant les deux premières secondes — et positive après. L'intégrale négative traduit donc bien une perte nette d'altitude, ce qui est cohérent puisque la phase de descente dure plus longtemps que la phase de remontée. Contrôle numérique : la descente vaut ∫₀² v = 8 − 24 = −16 m et la remontée ∫₂³ v = (27 − 36) − (8 − 24) = −9 + 16 = +7 m ; le bilan −16 + 7 = −9 m ✓ redonne bien la même valeur. Deux pièges classiques : répondre 9 en oubliant que l'intégrale est négative, ou répondre −9 en donnant la variation au lieu de l'altitude — l'énoncé demande une position, il faut donc l'ajouter à l'altitude initiale.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Une sonde mesure la concentration f(x) d'un produit à la profondeur x. On sait seulement ceci : f est continue, positive et DÉCROISSANTE sur [1 ; 3], avec f(1) = 6, f(2) = 4 et f(3) = 3. Aucune primitive de f n'est connue. On note A = ∫₁³ f(x)dx. Sélectionne TOUTES les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La méthode des rectangles avec deux intervalles de largeur 1 donne 7 ≤ A ≤ 10"
+        },
+        {
+          "id": "b",
+          "text": "L'inégalité de la moyenne, avec 3 ≤ f(x) ≤ 6 sur [1 ; 3], donne 6 ≤ A ≤ 12"
+        },
+        {
+          "id": "c",
+          "text": "Il existe un réel c de [1 ; 3] tel que f(c) soit égal à la valeur moyenne de f sur [1 ; 3]"
+        },
+        {
+          "id": "d",
+          "text": "Puisque f est décroissante sur [1 ; 3], le nombre A est négatif"
+        },
+        {
+          "id": "e",
+          "text": "En affinant le pas des rectangles, on finit par obtenir la valeur exacte de A en un nombre fini d'étapes"
+        }
+      ],
+      "answerKey": { "correct": ["a", "b", "c"] },
+      "explanation": "La méthode des rectangles s'applique parce que f est MONOTONE : sur chaque sous-intervalle, la plus petite valeur est atteinte à droite (f décroît) et la plus grande à gauche. Avec les deux morceaux [1 ; 2] et [2 ; 3], de largeur 1 chacun, la somme minorante vaut 1 × f(2) + 1 × f(3) = 4 + 3 = 7 et la somme majorante 1 × f(1) + 1 × f(2) = 6 + 4 = 10, d'où 7 ≤ A ≤ 10 ✓. L'inégalité de la moyenne est plus grossière mais toujours valable : la décroissance donne f(3) ≤ f(x) ≤ f(1), soit 3 ≤ f(x) ≤ 6, et en multipliant par la largeur b − a = 2 on obtient 6 ≤ A ≤ 12 ✓ — un encadrement compatible avec le précédent, simplement moins serré, ce qui est normal puisqu'il n'utilise que deux valeurs de f au lieu de trois. Le corollaire de l'inégalité de la moyenne s'applique aussi : f est continue sur [1 ; 3], donc sa valeur moyenne est effectivement atteinte en au moins un point c de l'intervalle ✓. En revanche, décroissante ne veut pas dire négative : f est positive par hypothèse, donc A ≥ 0 par le théorème de positivité — c'est la fonction qui descend, pas ses valeurs qui passent sous zéro. Et affiner le pas RESSERRE l'encadrement sans jamais le refermer : les deux sommes tendent vers A, elles ne l'atteignent pas en un nombre fini d'étapes — c'est précisément pour cela qu'on parle de calcul APPROCHÉ.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "QCM visuel — sur la figure, la droite orange a pour équation y = 2x et la courbe verte pour équation y = x². Elles se coupent en x = 0 et en x = 2. Quelle est l'aire, en u.a, de la partie coloriée comprise entre les deux courbes, entre x = 0 et x = 3 ? <svg viewBox=\"0 0 300 200\"><polygon points=\"50,175 190,111 155,139 120,159 85,171\" fill=\"#0f6e56\" fill-opacity=\"0.20\"/><polygon points=\"190,111 260,79 260,31 225,75\" fill=\"#0f6e56\" fill-opacity=\"0.20\"/><path d=\"M30 175 H285\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M285 175 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M50 192 V15\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M50 15 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><polyline points=\"50,175 85,171 120,159 155,139 190,111 225,75 260,31\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M50 175 L260 79\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"111\" x2=\"190\" y2=\"175\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><line x1=\"260\" y1=\"31\" x2=\"260\" y2=\"175\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><text x=\"120\" y=\"190\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">1</text><text x=\"190\" y=\"190\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">2</text><text x=\"260\" y=\"190\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">3</text><text x=\"196\" y=\"48\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\">y = x²</text><text x=\"256\" y=\"110\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#b45309\">y = 2x</text></svg>",
+      "options": [
+        { "id": "a", "text": "8/3" },
+        { "id": "b", "text": "0" },
+        { "id": "c", "text": "4/3" },
+        { "id": "d", "text": "9" }
+      ],
+      "correctOption": "a",
+      "explanation": "L'aire entre deux courbes vaut ∫ₐᵇ |f(x) − g(x)|dx : avant tout calcul, il faut donc étudier le SIGNE de la différence. Ici 2x − x² = x(2 − x) est positif sur [0 ; 2] (la droite est au-dessus) et négatif sur [2 ; 3] (la parabole passe au-dessus). On découpe donc en x = 2, le point d'intersection, et on écrit chaque morceau avec la fonction du dessus moins celle du dessous. Premier morceau : ∫₀² (2x − x²)dx = [x² − x³/3]₀² = 4 − 8/3 = 4/3. Second morceau : ∫₂³ (x² − 2x)dx = [x³/3 − x²]₂³ = (9 − 9) − (8/3 − 4) = 0 + 4/3 = 4/3. Aire totale : 4/3 + 4/3 = 8/3 ≈ 2,67 u.a ✓. Contrôle visuel : les deux lentilles sont de tailles comparables sur la figure, la seconde étant plus étroite mais plus haute — deux morceaux égaux à 4/3 sont donc plausibles ✓. La valeur 0 est le résultat de ∫₀³ (2x − x²)dx = [x² − x³/3]₀³ = 9 − 9, c'est-à-dire le calcul mené SANS découper : les deux morceaux se compensent EXACTEMENT au lieu de s'ajouter, et une aire nulle entre deux courbes qui ne sont pas confondues est manifestement absurde. La valeur 4/3 ne retient qu'un seul des deux morceaux. La valeur 9 est l'aire sous la droite y = 2x sur [0 ; 3], soit ∫₀³ 2x dx : c'est l'aire d'une seule courbe avec l'axe, pas l'aire comprise ENTRE les deux courbes. Règle à graver : jamais d'aire entre deux courbes sans avoir d'abord cherché les points d'intersection.",
+      "difficulty": 3
+    }
+  ]
+}

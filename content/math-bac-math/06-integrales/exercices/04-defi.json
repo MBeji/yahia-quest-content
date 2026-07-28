@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le maître des suites d'intégrales",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Calculer K = ∫₀^π x² cos x dx.",
+      "options": [
+        {
+          "id": "a",
+          "text": "K = 2π"
+        },
+        {
+          "id": "b",
+          "text": "K = −π"
+        },
+        {
+          "id": "c",
+          "text": "K = −2π"
+        },
+        {
+          "id": "d",
+          "text": "K = π² − 2π"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Deux intégrations par parties en cascade : la puissance de x descend d'un cran à chaque tour. Premier tour, avec f(t) = t² (donc f′(t) = 2t) et g′(t) = cos t (donc g(t) = sin t) : K = [t² sin t]₀^π − 2∫₀^π t sin t dt. Le crochet est NUL, car sin π = 0 et sin 0 = 0. Second tour, sur A = ∫₀^π t sin t dt, avec f(t) = t et g′(t) = sin t (donc g(t) = −cos t) : A = [−t cos t]₀^π + ∫₀^π cos t dt = (−π × (−1) − 0) + [sin t]₀^π = π + 0 = π. D'où K = 0 − 2π = −2π ≈ −6,28 ✓. Contrôle numérique indépendant (Simpson, 4 intervalles de pas π/4, valeurs 0 ; 0,436 ; 0 ; −3,926 ; −9,870) : K ≈ −6,24, cohérent avec −2π à l'erreur de méthode près ✓ — et le signe négatif se lit sur la courbe, puisque x² est grand là où cos x est négatif. L'erreur classique : oublier le coefficient n = 2 sorti de la dérivée de t² et conclure K = −π ; inverser le signe de la formule d'IPP (écrire + ∫f′g) donne 2π ; et lire sin π = 1 dans le crochet fabrique π² − 2π. Un contrôle de signe suffit à éliminer les deux réponses positives.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Calculer I = ∫_{−π/2}^{π/2} (x⁵ cos x + 3cos²x) dx.",
+      "options": [
+        {
+          "id": "a",
+          "text": "I = 3π/2"
+        },
+        {
+          "id": "b",
+          "text": "I = 3π/4"
+        },
+        {
+          "id": "c",
+          "text": "I = 0"
+        },
+        {
+          "id": "d",
+          "text": "I = 3π"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Aucune primitive de x⁵cos x n'est raisonnable à la main : c'est la PARITÉ, sur l'intervalle [−π/2, π/2] centré en 0, qui règle l'affaire, après un découpage par linéarité. Premier terme : x ↦ x⁵ est impaire et x ↦ cos x est paire, donc leur produit est impair, et ∫_{−π/2}^{π/2} x⁵cos x dx = 0. Second terme : x ↦ 3cos²x est paire, donc ∫_{−π/2}^{π/2} 3cos²x dx = 2 × 3∫₀^{π/2} cos²x dx = 6 × π/4 = 3π/2, en utilisant ∫₀^{π/2} cos²x dx = π/4 (obtenue par linéarisation, cos²x = (1 + cos 2x)/2, ou par le couple I, J du cours). D'où I = 0 + 3π/2 ≈ 4,71 ✓. Contrôle indépendant : la valeur moyenne de cos² sur un quart de période vaut 1/2, donc 3cos²x a pour moyenne 1,5 sur un intervalle de longueur π, soit une intégrale ≈ 4,71 ✓. L'erreur classique : juger la parité sur le seul premier terme et annoncer que toute l'intégrale est nulle (0) ; appliquer la formule de la fonction paire en oubliant le facteur 2 donne 3π/4 ; et doubler deux fois — une fois par la parité, une fois par la linéarisation — donne 3π.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit b un réel strictement positif. L'arc de courbe d'équation y = √x, pour 0 ≤ x ≤ b, tourne autour de l'axe (Ox) et engendre un solide de volume 18π. Déterminer b.",
+      "options": [
+        {
+          "id": "a",
+          "text": "b = 9"
+        },
+        {
+          "id": "b",
+          "text": "b = 6"
+        },
+        {
+          "id": "c",
+          "text": "b = 3√2"
+        },
+        {
+          "id": "d",
+          "text": "b = 36"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sens inverse : le volume est donné, c'est la borne qu'il faut retrouver. La fonction f(x) = √x est continue et positive sur [0, b], donc V = π∫₀^b f²(x)dx = π∫₀^b x dx, car f²(x) = x — le carré fait disparaître le radical, c'est tout l'intérêt de la formule. Ainsi V = π[x²/2]₀^b = πb²/2. L'équation πb²/2 = 18π se simplifie par π : b² = 36, et comme b > 0, b = 6 ✓. Vérification par la voie directe : avec b = 6, V = π × 36/2 = 18π ✓. Contrôle d'ordre de grandeur : le solide est un cône « évasé » de rayon maximal √6 ≈ 2,45 et de longueur 6 ; le cylindre circonscrit vaut π × 6 × 6 = 36π, et le solide en occupe la moitié — cohérent ✓. L'erreur classique : oublier le carré et écrire V = π∫₀^b √x dx = (2π/3)b^{3/2}, ce qui donne b^{3/2} = 27 puis b = 9 ; perdre le 1/2 de la primitive de x conduit à πb² = 18π, soit b = 3√2 ; et résoudre b² = 36 en recopiant b = 36 est la faute de dernière ligne, celle qui coûte le plus cher en session.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On veut calculer J = ∫₀^{π/2} x cos x dx. Voici une solution proposée. Étape 1 : on pose f(t) = t et g′(t) = cos t, donc f′(t) = 1 et g(t) = sin t. Étape 2 : par intégration par parties, J = [t sin t]₀^{π/2} + ∫₀^{π/2} sin t dt. Étape 3 : [t sin t]₀^{π/2} = π/2 et ∫₀^{π/2} sin t dt = [−cos t]₀^{π/2} = 1. Étape 4 : donc J = π/2 + 1. Quelle est la PREMIÈRE étape fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 1"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 2"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 3"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 4 : le résultat d'une intégration par parties est toujours un crochet seul"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Ceci est une chasse à l'erreur : la solution proposée contient une faute plantée, l'explication décrit donc un raisonnement volontairement faux. L'étape 1 est correcte : f(t) = t se simplifie en dérivant et g′(t) = cos t se primitive en g(t) = sin t — c'est exactement le bon choix. L'étape 2 est la PREMIÈRE fausse ✓ : le théorème s'écrit ∫ₐᵇ fg′ = [fg]ₐᵇ − ∫ₐᵇ f′g, avec un SIGNE MOINS devant l'intégrale restante ; la solution a écrit un plus. L'étape 3 est juste isolément (le crochet vaut bien π/2 × 1 − 0 = π/2 et ∫₀^{π/2} sin t dt = −cos(π/2) + cos 0 = 1), et l'étape 4 additionne correctement, mais toutes deux héritent du signe fautif. Le calcul juste : J = π/2 − 1 ≈ 0,571. Contrôle numérique indépendant (Simpson, pas π/8, valeurs 0 ; 0,363 ; 0,555 ; 0,451 ; 0) : J ≈ 0,572 ✓ — et l'intégrande, positif et inférieur à 0,56 sur [0, π/2], ne peut pas donner π/2 + 1 ≈ 2,57 sur une largeur 1,57. L'erreur classique est précisément celle-là : retenir l'IPP comme « crochet plus intégrale », alors que le signe moins vient de (fg)′ = f′g + fg′. L'option d est doublement fausse : une IPP laisse en général une intégrale à calculer, et l'étape 4 n'est de toute façon pas la première fautive.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout entier naturel n, on pose Iₙ = ∫₀^{π/4} tanⁿx dx. On admet que pour tout n ≥ 0, Iₙ + Iₙ₊₂ = 1/(n + 1). Calculer I₄.",
+      "options": [
+        {
+          "id": "a",
+          "text": "I₄ = 1/3"
+        },
+        {
+          "id": "b",
+          "text": "I₄ = 4/3 − π/4"
+        },
+        {
+          "id": "c",
+          "text": "I₄ = π/4 − 4/5"
+        },
+        {
+          "id": "d",
+          "text": "I₄ = π/4 − 2/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La relation relie Iₙ à Iₙ₊₂ : on remonte de deux en deux, en partant du seul terme calculable directement. Amorçage : I₀ = ∫₀^{π/4} dx = π/4 (tan⁰ = 1). Rang n = 0 : I₀ + I₂ = 1/1, donc I₂ = 1 − π/4 ≈ 0,215. Rang n = 2 : I₂ + I₄ = 1/3, donc I₄ = 1/3 − 1 + π/4 = π/4 − 2/3 ≈ 0,119 ✓. Vérification de I₂ par une seconde voie, indépendante de la relation admise : tan²x = (1 + tan²x) − 1, donc ∫₀^{π/4} tan²x dx = [tan x − x]₀^{π/4} = 1 − π/4 ✓ — les deux chemins concordent. Contrôle numérique de I₄ (Simpson, pas π/16, valeurs 0 ; 0,0016 ; 0,0294 ; 0,199 ; 1) : ≈ 0,122, cohérent avec 0,119 pour une intégrande aussi bombée près de π/4 ✓. Et l'encadrement de sécurité : 0 ≤ tan⁴x ≤ tan²x sur [0, π/4], donc 0 ≤ I₄ ≤ I₂ ≈ 0,215 — seule la bonne réponse le respecte. L'erreur classique : additionner au lieu de soustraire (I₄ = I₂ + 1/3) et obtenir 4/3 − π/4 ≈ 0,55, une valeur supérieure à I₂ alors que la suite est décroissante ; utiliser le second membre avec l'indice d'arrivée n = 4 au lieu de l'indice de départ n = 2 donne π/4 − 4/5 ≈ −0,014, une intégrale négative de fonction positive, donc impossible ; et amorcer avec I₀ = 1 au lieu de π/4 donne I₂ = 0 puis 1/3.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout entier naturel n, on pose uₙ = ∫₀¹ xⁿ √(1 − x) dx. On admet que pour tout n ≥ 1, (2n + 3)uₙ = 2n·uₙ₋₁. Calculer u₂.",
+      "options": [
+        {
+          "id": "a",
+          "text": "u₂ = 4/15"
+        },
+        {
+          "id": "b",
+          "text": "u₂ = 8/21"
+        },
+        {
+          "id": "c",
+          "text": "u₂ = 16/105"
+        },
+        {
+          "id": "d",
+          "text": "u₂ = 8/35"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Trois étapes dépendantes : calculer le terme d'amorçage, puis appliquer la relation deux fois, rang après rang. Amorçage : u₀ = ∫₀¹ √(1 − x) dx ; avec v(x) = 1 − x et v′(x) = −1, une primitive de √(1 − x) est −(2/3)(1 − x)√(1 − x), donc u₀ = [−(2/3)(1 − x)^{3/2}]₀¹ = 0 + 2/3 = 2/3. Rang n = 1 : 5u₁ = 2u₀ = 4/3, donc u₁ = 4/15. Rang n = 2 : 7u₂ = 4u₁ = 16/15, donc u₂ = 16/105 ≈ 0,152 ✓. Vérification par une seconde voie, sans la relation admise : ∫₀¹ x²√(1 − x) dx se calcule en écrivant x = 1 − (1 − x), soit x² = 1 − 2(1 − x) + (1 − x)² ; en notant w = 1 − x, l'intégrale vaut ∫₀¹ (1 − 2w + w²)√w dw = 2/3 − 2 × 2/5 + 2/7 = (70 − 84 + 30)/105 = 16/105 ✓ — les deux chemins donnent le même nombre. Contrôle d'encadrement : 0 ≤ xⁿ√(1 − x) ≤ xⁿ sur [0, 1], donc 0 ≤ u₂ ≤ 1/3 ≈ 0,333, et la suite est décroissante (u₂ < u₁ = 0,267) : seule la bonne réponse satisfait les deux ✓. L'erreur classique : s'arrêter au premier rang et livrer u₁ = 4/15 ; sauter un rang en appliquant la relation directement entre u₂ et u₀ (7u₂ = 4u₀) donne 8/21 ≈ 0,381, valeur supérieure à u₁ alors que la suite décroît ; et amorcer avec u₀ = 1 au lieu de 2/3 donne 8/35.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du courant inverse",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Déterminer une primitive sur ℝ de la fonction f définie par f(x) = cos²(2x).",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = x/2 + sin(4x)/2"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = x/2 + sin(4x)/8"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = x/2 − sin(4x)/8"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = sin³(2x)/6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un carré de cosinus ne figure dans aucune table : on linéarise d'abord. Avec cos²t = (1 + cos 2t)/2 appliquée à t = 2x, on obtient f(x) = (1 + cos 4x)/2 = 1/2 + (1/2)cos(4x). La linéarité donne alors une primitive terme à terme : 1/2 se primitive en x/2, et cos(4x) en (1/4)sin(4x) (facteur 1/ω avec ω = 4), donc (1/2)cos(4x) se primitive en (1/8)sin(4x). D'où F(x) = x/2 + sin(4x)/8 ✓. Vérification par dérivation : F′(x) = 1/2 + (4/8)cos(4x) = (1 + cos 4x)/2 = cos²(2x) ✓. Le piège courant : perdre le facteur 1/ω et écrire sin(4x)/2 — sa dérivée vaut 1/2 + 2cos(4x), soit bien plus que f ; confondre la formule de cos² avec celle de sin² = (1 − cos 2t)/2 renverse le signe et donne x/2 − sin(4x)/8, de dérivée sin²(2x) ; et traiter cos²(2x) comme uⁿ en écrivant « u³/3 » sans u′ produit sin³(2x)/6, dont la dérivée est sin²(2x)cos(2x), un produit qui n'a rien à voir avec f.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Déterminer une primitive sur ]−π, π[ de la fonction f définie par f(x) = sin x/(cos x + 1)³.",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = 1/(2(cos x + 1)²)"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = −1/(2(cos x + 1)²)"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = 1/(3(cos x + 1)³)"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = −1/(4(cos x + 1)⁴)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le motif se cache derrière un signe. On pose u(x) = cos x + 1, strictement positive sur ]−π, π[ (elle ne s'annule qu'en ±π), donc u ne s'annule pas sur l'intervalle et u′(x) = −sin x. Ainsi f(x) = −u′(x)/u(x)³ : c'est la ligne u′/uⁿ avec n = 3, au signe près. La table donne u^(−3+1)/(−3+1) = −1/(2u²) comme primitive de u′/u³ ; il faut donc l'opposé, F(x) = 1/(2(cos x + 1)²) ✓. Vérification : F(x) = (1/2)u^(−2), donc F′(x) = (1/2)(−2)u^(−3)u′(x) = −u′(x)/u³ = sin x/(cos x + 1)³ ✓. Le piège courant : oublier que u′ = −sin x et non +sin x — on livre alors la primitive de u′/u³ telle quelle, −1/(2(cos x + 1)²), dont la dérivée vaut −sin x/(cos x + 1)³, soit l'opposé de f ; diviser par l'exposant n au lieu de −n + 1 donne 1/(3(cos x + 1)³), de dérivée sin x/(cos x + 1)⁴ ; et monter l'exposant au lieu de le descendre (u^(n+1)/(n+1), la formule de u′uⁿ appliquée à tort) fabrique −1/(4(cos x + 1)⁴), de dérivée −sin x/(cos x + 1)⁵.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f définie sur ]−∞, 2[ par f(x) = (2x + 1)/(x − 2)³. Après avoir écrit f(x) sous la forme a/(x − 2)² + b/(x − 2)³, déterminer une primitive de f sur ]−∞, 2[.",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = −1/(x − 2) − 5/(3(x − 2)²)"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = 2/(x − 2) + 5/(2(x − 2)²)"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = −2/(x − 2) − 1/(2(x − 2)²)"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = −2/(x − 2) − 5/(2(x − 2)²)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Étape 1, l'identification : a/(x − 2)² + b/(x − 2)³ = (a(x − 2) + b)/(x − 2)³, donc il faut a(x − 2) + b = 2x + 1, soit ax + (b − 2a) = 2x + 1. On lit a = 2, puis b − 4 = 1 donne b = 5 (contrôle direct : 2(x − 2) + 5 = 2x + 1 ✓). Étape 2, la primitivation terme à terme : une primitive de 1/(x − 2)² est −1/(x − 2), donc 2/(x − 2)² donne −2/(x − 2) ; une primitive de 1/(x − 2)³ est (x − 2)^(−2)/(−2) = −1/(2(x − 2)²), donc 5/(x − 2)³ donne −5/(2(x − 2)²). D'où F(x) = −2/(x − 2) − 5/(2(x − 2)²) ✓. Vérification : F′(x) = 2/(x − 2)² + 5/(x − 2)³ = (2(x − 2) + 5)/(x − 2)³ = (2x + 1)/(x − 2)³ ✓. Le piège courant : identifier « à vue » les coefficients du numérateur, a = 2 et b = 1, sans tenir compte du décalage −2a apporté par (x − 2) — on obtient alors −2/(x − 2) − 1/(2(x − 2)²), de dérivée (2x − 3)/(x − 2)³ ; oublier le signe de la table 1/xⁿ donne l'opposé, 2/(x − 2) + 5/(2(x − 2)²) ; et diviser par −n au lieu de −n + 1 conduit à −1/(x − 2) − 5/(3(x − 2)²).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Sur l'intervalle ]1, +∞[, la fonction F définie par F(x) = x√(x − 1) est une primitive de laquelle de ces fonctions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) = (2x − 1)/√(x − 1)"
+        },
+        {
+          "id": "b",
+          "text": "f(x) = √(x − 1)"
+        },
+        {
+          "id": "c",
+          "text": "f(x) = (3x − 2)/(2√(x − 1))"
+        },
+        {
+          "id": "d",
+          "text": "f(x) = x/(2√(x − 1))"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sens inverse : il n'y a rien à primitiver, il faut DÉRIVER F et lire le résultat. F est un produit, F = u·v avec u(x) = x et v(x) = √(x − 1), donc F′ = u′v + v′u. On a u′(x) = 1 et v′(x) = 1/(2√(x − 1)). Ainsi F′(x) = √(x − 1) + x/(2√(x − 1)) ; on réduit au même dénominateur 2√(x − 1) : F′(x) = (2(x − 1) + x)/(2√(x − 1)) = (3x − 2)/(2√(x − 1)) ✓. Contrôle numérique en x = 2 : F(2) = 2, F(2,001) ≈ 2,001 × 1,0005 ≈ 2,002000, soit un taux ≈ 2,0 ; et la formule donne (6 − 2)/(2 × 1) = 2 ✓. Le piège courant : oublier le facteur 1/2 de la dérivée d'une racine et écrire F′ = √(x − 1) + x/√(x − 1) = (2x − 1)/√(x − 1) ; ne dériver que le premier facteur en « laissant » le radical donne √(x − 1) ; et ne dériver que le radical en laissant x devant donne x/(2√(x − 1)). Ces trois options oublient qu'un produit se dérive avec DEUX termes.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un mobile se déplace sur un axe. Son accélération à l'instant t est a(t) = 6t − 2 (en m/s²). À l'instant t = 0, sa vitesse vaut 1 m/s et son abscisse vaut 3 m. Quelle est son abscisse à l'instant t = 2 s ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x(2) = 9 m"
+        },
+        {
+          "id": "b",
+          "text": "x(2) = 7 m"
+        },
+        {
+          "id": "c",
+          "text": "x(2) = 6 m"
+        },
+        {
+          "id": "d",
+          "text": "x(2) = 11 m"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux primitivations successives, donc deux conditions initiales — une par remontée. Première remontée : v′ = a, donc v(t) = 3t² − 2t + c, et v(0) = 1 impose c = 1 : v(t) = 3t² − 2t + 1 (contrôle : v′(t) = 6t − 2 = a(t) ✓). Seconde remontée : x′ = v, donc x(t) = t³ − t² + t + c′, et x(0) = 3 impose c′ = 3 : x(t) = t³ − t² + t + 3 (contrôle : x′(t) = 3t² − 2t + 1 = v(t) ✓). Enfin x(2) = 8 − 4 + 2 + 3 = 9 m ✓. Le piège courant : croire qu'une seule constante suffit — en oubliant la condition v(0) = 1 on obtient v(t) = 3t² − 2t puis x(t) = t³ − t² + 3 et la valeur 7 ; en oubliant au contraire x(0) = 3 on obtient x(t) = t³ − t² + t et la valeur 6 ; et ne primitiver qu'une seule fois, en prenant la vitesse pour la position, donne 3 × 4 − 4 + 3 = 11, qui est en réalité la valeur d'une primitive de a, pas de v.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule des affirmations suivantes est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Toute fonction définie sur un intervalle I admet au moins une primitive sur I"
+        },
+        {
+          "id": "b",
+          "text": "Si F est une primitive de f sur ℝ, alors x ↦ F(3x) est une primitive de x ↦ f(3x) sur ℝ"
+        },
+        {
+          "id": "c",
+          "text": "Si F et G sont deux primitives de f sur un intervalle I et s'il existe x₀ de I tel que F(x₀) = G(x₀), alors F = G sur I"
+        },
+        {
+          "id": "d",
+          "text": "Si F est une primitive de f sur ℝ et G une primitive de g sur ℝ, alors F·G est une primitive de f·g sur ℝ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Seule l'affirmation c est vraie ✓ : sur un intervalle, F − G est constante ; cette constante vaut F(x₀) − G(x₀) = 0, donc F − G est la fonction nulle et F = G. C'est exactement l'unicité du corollaire « primitive vérifiant une condition initiale ». a est fausse : l'hypothèse du théorème d'existence est la CONTINUITÉ, pas la simple définition — la fonction qui vaut 0 sur ]−∞, 0[ et 1 sur [0, +∞[ est définie sur ℝ, mais aucune fonction dérivable sur ℝ n'a cette dérivée (une dérivée ne saute pas). b est fausse : si F′ = f, alors (F(3x))′ = 3F′(3x) = 3f(3x) — la bonne primitive est x ↦ F(3x)/3 ; avec f = cos et F = sin, (sin(3x))′ = 3cos(3x) ≠ cos(3x). d est fausse : la linéarité s'arrête à la somme et au produit par un réel ; avec f = g = 1 sur ℝ, F = G = x, on a (F·G)′ = (x²)′ = 2x, qui n'est pas f·g = 1. Le piège courant est de croire à une « formule du produit » (d) ou de transporter la primitive à travers un changement de variable sans le facteur correcteur (b) ; et de retenir le théorème d'existence en oubliant son unique hypothèse, la continuité (a).",
+      "difficulty": 3
+    }
+  ]
+}
