@@ -660,6 +660,30 @@ applique chaque sujet en une transaction (`ON_ERROR_STOP`, idempotent : rejouer 
 finie, **reprendre la boucle** au couple suivant. Un contributeur externe sans droit de
 dispatch s'arrête au merge et le signale : la publication reste au responsable du dépôt.
 
+## Retoucher du contenu déjà écrit (ajouter un champ en masse)
+
+Ajouter un champ à des questions **déjà écrites** — le `competencies` du tagging de
+compétences (étude 07 lot 3, PR #51→#61), demain un autre — n'est pas de la génération :
+c'est un **patch**. Il se fait par insertion textuelle, jamais par réécriture du fichier.
+
+**Ce qui casse (mesuré le 2026-07-27).** Les JSON du corpus sont formatés par Prettier, dont
+l'heuristique d'objet **préserve l'état replié/déplié de la source** : un objet dont
+l'accolade ouvrante n'est pas suivie d'un retour à la ligne reste sur une ligne. C'est ce qui
+garde les options compactes et lisibles (`{ "id": "a", "text": "…" }`). Un script qui charge
+le fichier par `JSON.parse` puis le réécrit par `JSON.stringify(json, null, 2)` **perd cette
+information** : toutes les options ressortent dépliées, une clé par ligne — et un
+`prettier --write` derrière ne les recolle **jamais** (il n'y a plus d'objet sur une ligne à
+préserver). Le tagging de 41 questions a ainsi produit un diff de **~2 500 lignes au lieu de
+~250** : la PR devient illisible, donc non revue.
+
+**La règle.** Repérer les bornes de chaque objet du tableau `questions` par comptage
+d'accolades (en ignorant celles qui sont **à l'intérieur des chaînes**), insérer la ligne du
+nouveau champ juste avant l'accolade fermante de l'objet (et la virgule sur la ligne
+précédente), réécrire le fichier tel quel. Puis `prettier --write`, qui ne normalise alors que
+la ligne ajoutée. Diff attendu : **2 lignes par question touchée**, rien d'autre. Un diff dix
+fois plus gros est le symptôme d'une réécriture complète — on repart du fichier d'origine et
+on repatche, on ne « reformate » pas après coup.
+
 ---
 
 ## Rapport de campagne
