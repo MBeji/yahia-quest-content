@@ -252,7 +252,7 @@ Le guide **tabule bien** le déroulé annuel, en **5 فترات** calées sur le
 - ~~**Format du guide ≠ 4ème/5ème** — « sans table إطار الكفايات ni المخطّط السّنوي tabulé »~~ → **LEVÉE le 2026-07-26** par la lecture des **p.20–29** : le إطار الكفايات (الكفاية النهائيّة + المكوّنان + 6 اقتدارات) est **p.25**, la matrice كفايات أفقيّة × مجال العلوم **p.24**, les critères d'évaluation **p.26**, l'أداء المنتظر par ثلاثيّة **p.27**, la progression 1ère→6ème **p.28**, et le **المخطّط السّنوي tabulé** (5 فترات × وحدات × محاور) **p.29**. Tout est transcrit en §1.1–§1.6 et §2.0. La conclusion précédente venait d'un **survol non exhaustif** : elle n'aurait pas dû être écrite au présent affirmatif sur des pages non lues.
 - ~~**Reste hors de ce volume : les مؤشّرات**~~ → **NUANCÉE le 2026-07-26** (lecture de la جذاذة عدد 1, p.43–44). Il est exact que le volume ne **tabule** pas les مؤشّرات dans un إطار كفايات — la case du schéma p.25 renvoie bien à « انظر البرامج الرسميّة ». Mais **chaque جذاذة en porte deux séries**, nommées et explicites : **مؤشّرات التّجاوز** (une par حاجز déclaré) et **مؤشّرات القدرة المستهدفة** (les gestes du تمشّي attendus). Le renvoi p.25 vise donc les مؤشّرات **du référentiel de compétences**, pas ceux de la séance. Pour un usage de génération, les مؤشّرات opérationnels sont **dans les جذاذات** — voir §7.5.
 - **Le document-programme officiel séparé** (celui cité p.23 « البرامج الرسميّة ص 119، 120 ») reste absent de `cnp-officiel/`. Il n'est plus bloquant pour la génération, mais il resterait la seule source des مؤشّرات du référentiel.
-- **Pages du guide encore non lues : p.2 et p.93–180** — le corps des **جذاذات** (une par درس : أهداف، وسائل، سير الحصّة، تقييم). Elles ne changent pas le **scope** (fixé par §2.0 + §4), mais elles portent le **détail didactique par درس** ; c'est la tranche suivante du LOT A pour ce couple.
+- **Pages du guide encore non lues : p.2 et p.103–180** — le corps des **جذاذات** (une par درس : أهداف، وسائل، سير الحصّة، تقييم). Elles ne changent pas le **scope** (fixé par §2.0 + §4), mais elles portent le **détail didactique par درس** ; c'est la tranche suivante du LOT A pour ce couple.
 - **محاور physiques sans chapitre publié dédié** : les **trois effets du courant électrique** (التأثير الحراري p.119 · الكيميائي p.122 · المغناطيسي p.135 — soit l'électricité de la و5) **ne sont pas couverts** par un chapitre du contenu publié ; de même l'**immunité/microbes** (الجلد-الجراثيم · التعفّن الجرثومي · التلقيح · المقاومة, p.68–83 de la و3) **n'a pas de chapitre dédié**. Le contenu publié (9 ch.) couvre donc **une partie** du programme ; ces blocs sont **au programme officiel** mais **absents du contenu app** → à signaler côté couverture (manifeste), pas une erreur de scope. La colonne pages de §4 a donc volontairement **resserré** les bornes des chapitres physiques (`07`=المغانط/البوصلة seulement ; `08`=الثقل seulement) pour ne pas leur imputer l'électricité.
 - **Bornes manuel (§4)** déduites « début du درس suivant − 1 » à partir de la خارطة الكتاب (p.156–157) : exactes au درس près, à ± une page de titre/transition. La frontière `01-air`/`02-respiration` est posée sur le درس « التبادل الغازي في الرئتين » (p.47) ; la frontière `03`/`04` (sang vs nutrition) saute le bloc immunité p.68–83 (sans chapitre).
 - **Cartes conceptuelles / أهداف** lus sur renders 170–200 dpi **nets** (manuel p.6/29/61/96/118 ; guide p.181) — fiables. Les **جذاذات détaillées** (déroulé de chaque درس dans le guide) **n'ont pas été transcrites cellule par cellule** (volume 182 p.) ; le scope notionnel est synthétisé des cartes + أهداف + titres de دروس + معجم. À reconfirmer au scan seulement si un déroulé de séance précis est requis.
@@ -1116,3 +1116,197 @@ Fonction principale de l'hémoglobine : **transporter l'oxygène et le CO₂** �
 > ⚠️ **En revanche, rien ici ne concerne l'immunité au sens du bloc p.68–83 du manuel élève** (الجلد-الجراثيم، التعفّن الجرثومي، التلقيح، المقاومة) signalé en §6 comme **sans chapitre publié** : le rôle des globules blancs est mentionné en deux lignes (p.91), c'est tout. Le volet « الأمراض الجرثوميّة » annoncé par l'intercalaire p.87 **n'a pas encore commencé** à la p.92 — il est dans la tranche suivante.
 
 > ⚠️ **Une légende manuscrite partiellement illisible (p.88).** Le « مقطع طولي لقلب الإنسان » est un dessin **à la main**, et deux de ses étiquettes ne se lisent pas de façon sûre au rendu 150 dpi : celle transcrite ci-dessus « الصّمّاك الثّلاثيّة » (probablement الصّمّامات الثّلاثيّة) et « قلاف وترية » (probablement حبال وتريّة). **On ne comble pas** : les deux sont reportées telles qu'elles se lisent, avec cette réserve. À reconfirmer par un recadrage à 300 dpi si un contenu doit s'appuyer sur la nomenclature valvulaire — ce que le programme de 6ème n'exige pas.
+
+### 7.23 الملفّ العلمي de la و3 (suite) : التغذية عند الإنسان (guide p.93–96)
+
+> 🚩 **L'ordre du dossier n'est pas celui de l'intercalaire.** La page de garde p.87 annonce « جهاز دوران الدّم **والأمراض الجرثوميّة** والتغذيّة » — dans cet ordre. Le ملفّ علمي, lui, enchaîne **دوران الدّم (p.88–92) → التغذية (p.93–99) → الأمراض الجرثوميّة (p.100 et suivantes)**. Le volet « maladies microbiennes » est donc traité **en dernier**, pas en deuxième. À savoir avant de chercher une page dans cette unité.
+
+**توطئة (p.93)** — l'entrée est **sociale et documentée**, pas anatomique. Le guide part de l'idée que les besoins du corps ont été **établis par les nutritionnistes**, que les sources sont animales et végétales, et que les proportions varient d'un aliment à l'autre — d'où la nécessité de **varier**. Il réfute explicitement l'intuition inverse : _« وبما أنّ جميع الأغذية العضويّة قادرة على توفير الطّاقة للجسم فقد يتبادر للذّهن أنّ أيّ نوع منها يمكن أن يعوّض الأنواع الأخرى، إلاّ أنّ التّجارب أثبتت عكس ذلك »_.
+
+**L'étude citée (p.93)** — le guide appuie ce refus sur une enquête nommée et datée : celle de **« نلسون شاف »، الأخصّائي في التّغذية، سنة 1963**, dans une région du **Brésil** spécialisée dans la culture de la **canne à sucre**. Résultats imprimés :
+
+- نقص في معدّل **قامة الأفراد** ;
+- ضعف أصاب العمّال أعجزهم عن العمل **أكثر من 4 ساعات في اليوم** ;
+- نقص بنسبة **3 مرّات** في كمّية الحليب لدى المرضعات ;
+- نقص في **وزن الأطفال عند الولادة** ;
+- نقص في **الذّكاء** عند الأطفال أعجزهم عن مواصلة التّعلّم **إلاّ بنسبة 8,7 %** منهم.
+
+_« ويعود هذا كلّه بالطّبع إلى اقتصار السكّان على نوع واحد من الغذاء وهو قصب السّكّر. »_
+
+> ⚠️ **Une référence à ne pas reprendre telle quelle.** Le nom « نلسون شاف » ne correspond à aucun nutritionniste identifiable sous cette translittération, et le chiffre « نقص بنسبة 3 مرّات » n'a pas de sens quantitatif clair (une baisse *de trois fois* ?). L'étude est **transcrite parce qu'elle est imprimée**, mais elle ne doit servir ni de source citable ni de support d'exercice de lecture de données.
+
+Suivent trois cas particuliers de besoins accrus, donnés en prose : les travailleurs à **effort musculaire intense** ou en **ambiance chaude**, qui perdent beaucoup de **sel** par la sueur et doivent en recevoir un supplément ; le **calcium**, qui entre dans la constitution des **os et des dents**, avec un besoin accru chez les **enfants, femmes enceintes et allaitantes** — sa carence rendant les os moins solides et causant le **الكساح (rachitisme)** chez l'enfant ; et les **protéines, lipides, sucres et vitamines**, dont la carence provoque diverses maladies — le guide cite le cas des **marins** au long cours : gonflement du visage, déchaussement des dents avec saignements, chute des dents, effondrement des forces avec gêne respiratoire, _« وسبب ذلك نقصان الفيتامين ج الموجود بكثرة في البرتقال »_.
+
+**ما الغاية من التغذية ؟ (p.93)** — la digestion en une phrase : les matières alimentaires (**النشا، الدّهنيات، البروتينات**) sont **découpées par les enzymes digestives** en substances simples et **solubles dans l'eau**, tandis que d'autres (**الأملاح المعدنيّة، الماء، السّكريات الأحاديّة، الفيتامينات**) passent **sans changement** ; la transformation commence à la **bouche**, se poursuit **estomac → intestin grêle**, où toutes les matières deviennent un liquide dit **الكيلوس**, qui traverse la paroi intestinale sous forme de fines particules pour gagner le sang.
+
+**1. تركيبة الأغذية (p.94)** — la plupart des aliments contiennent **à la fois** sucres, protéines et lipides ; on les classe en **أغذية البناء · أغذية الطّاقة · أغذية الوقاية**.
+
+**2. حاجة الجسم إلى المواد العضويّة (p.94)** :
+
+| famille | sources (guide p.94) | rôle |
+| --- | --- | --- |
+| **السكّريات** | النشا (végétal) : الحبوب، البطاطا، البقول · سكّر الشّعير (pain) · sucre du raisin (miel, raisin, jus de fruits) · sucre du lait | **source essentielle d'énergie**, et entre dans la fabrication de la **matière vivante** et des **acides nucléiques** |
+| **الدّهنيات** | **زيوت** : liquides à température ordinaire, surtout végétales (زيت الزّيتون) · **شحوم** : semi-solides à température ordinaire, animales | fournissent l'**énergie**, éléments **nécessaires à la croissance** |
+| **البروتيدات** | **animales** : اللّحوم، الأسماك، أبيض البيض، الحليب ومشتقاته · **végétales** : البقول الجافّة — الفول، الجلبان، الحمّص، العدس، اللّوبيا | **matières azotées de construction**, et pour partie source d'énergie ; assurent la **protection** |
+| **الفيتامينات** | (tableau ci-dessous) | _« مواد غذائيّة عضويّة لا تعطي الجسم أيّ قدر من الطّاقة كما يسود الاعتقاد »_ — leur importance est d'être **nécessaires à la croissance** et de **protéger des maladies** |
+
+**Le tableau des vitamines (p.94–95)**, tel qu'imprimé — noter que le guide double chaque nom en **lettre arabe et lettre latine** :
+
+| الفيتامين | مصدره | تأثيره في الجسم |
+| :-: | --- | --- |
+| **«أ»، «A»** | زيت كبد السّمك، الخضر، الزّبدة، الجزر | ضروري لتكوين **الأرجوان الشبكي** · يسهم في نموّ وتطوّر خلايا النّسيج البشري |
+| **«ب1»، «B1»** | الأغذية ذات الأصل النّباتي، بادرات الحبوب، مح البيض، الحليب، اللّحم | نقصه يمène un **découpage incomplet des sucres**, d'où des acides qui **intoxiquent les tissus nerveux** |
+| **«ج»، «C»** | الخضر الطازجة، **القوارص**، الفلفل الأخضر | يساعد على **سرعة التئام الجروح**, nécessaire à la conservation des tissus **os, dents, fibres** · permet l'**assimilation du fer** et joue le rôle de **transporteur d'hydrogène** dans la respiration cellulaire |
+| **«د»، «D»** | زيت السّمك، الحليب، البيض، المواد الدّهنيّة — **يصنعه الجسم عند تعرّضه لأشعّة الشّمس أو الأشعّة البنفسجيّة** | facilite l'**absorption du calcium et du phosphore** depuis l'intestin · aide à **fixer le calcium dans les os** |
+| **«هـ»، «E»** | بادرات الحبوب، مح البيض، الحليب، المواد الدّهنيّة | **régule le fonctionnement des glandes génitales** chez les deux sexes |
+| **«ك»، «K»** | ▪▪▪ **البرتقال والليمون**، الخضر الطازجة كالطّماطم والبقدونس والخسّ، والحليب واللّحم | nécessaire à la fabrication de la **prothrombine (dans le foie)**, qui convertit le **fibrinogène en fibrine** · aide à **arrêter les hémorragies** et renforce les capillaires |
+| **«ب12»، «B12»** | كبد الحيوانات، الحليب، السّمك، الخضر الورقيّة (خسّ - مقدونس …) | contribue, **avec l'acide folique**, à la fabrication des **globules rouges** et des protéides |
+
+> ⚠️ **Trois réserves sur ce tableau.** (a) La cellule « source » de la vitamine **K** commence par **trois caractères non rendus (▪▪▪)** dans le PDF — quelque chose y est illisible ; on ne le comble pas. (b) Les sources qui y sont lisibles — **البرتقال والليمون** — sont des **agrumes**, c'est-à-dire les mêmes que celles déjà données pour la vitamine **C** (**القوارص**) une ligne plus haut, et non les sources habituelles de la vitamine K (légumes verts, foie). Le doublon est **dans le volume** ; on ne tranche pas. (c) La vitamine **C** est donnée comme « transporteur d'hydrogène dans la respiration cellulaire », formulation savante qui dépasse largement le niveau de 6ème — ce tableau est un **document enseignant**, pas un contenu élève.
+
+**3. حاجة الجسم إلى الماء (p.95)** — l'eau est un **élément nutritif** obtenu de sources diverses (boisson, liquides, aliments végétaux et animaux) ; son importance se justifie par le fait qu'elle constitue **les deux tiers de la masse du corps**. Elle est nécessaire au **transport des aliments** et au **maintien de l'équilibre thermique**. **Meilleur moment pour boire** : _« ما كان قبل الأكل بساعة أو ساعتين »_ — boire **juste après le repas** agit **négativement** sur la digestion, car cela **dilue le suc gastrique** et ralentit la digestion.
+
+**4. حاجة الجسم إلى الأغذية المعدنيّة (p.95)** — elles **ne fournissent aucune énergie** mais sont nécessaires à la croissance et à la protection :
+
+| الأملاح المعدنيّة | أهمّ مصادرها | تأثيرها في الجسم |
+| --- | --- | --- |
+| **أملاح الكالسيوم** | الحليب ومشتقاته - القوارص - الخضر الطازجة - الخضراء - اللّحوم | تتدخّل مع أملاح الفسفور في **تركيب العظام والأسنان** وتوجد في جميع خلايا الجسم |
+| **أملاح الفسفور** | الأسماك - البيض - الحليب ومشتقاته - الحبوب | — (même ligne que le calcium) et présents **dans le sang et le lymphe** |
+| **أملاح الحديد** | كبد الحيوانات - الحبوب - البيض - السّمك - الخضر الطازجة | **أحد المكوّنات الأساسيّة لخضاب الدّم** |
+
+**المجموعات الغذائيّة et les réactifs (p.95–96)** — les aliments se divisent en deux grandes classes : **أغذية بسيطة**, faites d'un seul élément nutritif (le sucre, l'huile), elles-mêmes organiques ou minérales ; et **أغذية مركّبة**, qui en contiennent plus d'un (le pain, le lait). Le guide donne ensuite **deux tableaux d'expériences** — les réactifs de reconnaissance — avec, pour chaque ligne, le but, le réactif, un schéma et le résultat :
+
+**Sur les aliments simples (p.95–96)** :
+
+| الهدف من التجربة | الكاشف | النّتيجة |
+| --- | --- | --- |
+| الكشف عن **الدّهنيات** | قطعة من ورق — ماء | **لطخة على الورق لا تزول بالتّسخين** (tache translucide persistante) |
+| الكشف عن **النشا** | **ماء اليود** | يتلوّن النشا بالأزرق عند إضافة ماء اليود |
+| الكشف عن **سكّر العنب** (سكّر بسيط) | **محلول فهلنق** | يعطي **راسبا أحمر أجريّا** بعد ajout de la liqueur de Fehling puis chauffage **jusqu'à ébullition** |
+| الكشف عن **أملاح الكالسيوم** | **أكسلات الأمنيوم** | تكوّن أملاح الكالسيوم مع أكسلات الأمنيوم **راسبا أبيض** |
+
+**Sur un aliment composé — les composants du pain (p.96)** :
+
+| الهدف | الكاشف | النّتيجة |
+| --- | --- | --- |
+| الكشف عن **النشا** | قطعة خبز — ماء اليود | يحتوي الخبز على النّشا (**لون أزرق**) |
+| الكشف عن **البروتيدات** | قطعة خبز — **حمض أزوتي** — **محلول النشادر** | يحتوي الخبز على بروتيد يُدعى **الدّابوق** (couleur **أصفر** puis **برتقالي** après chauffage) |
+| الحصول على **رشاحة الخبز** | خبز مبلّل بماء مقطّر — ورق ترشيح | تنفصل مكوّنات الخبز **الذّاتيّة** في الماء بالترشيح |
+| الكشف عن **السّكّريات** | رشاحة الخبز — محلول فهلنق | يحتوي الخبز على سكّريات مثل **سكّر الشّعير** (راسب أحمر أجريّ) |
+| الكشف عن **أملاح الكلور** | رشاحة الخبز — **نترات الفضّة** | يحتوي الخبز على أملاح الكلور (**راسب مسودّ** / راسب أبيض) |
+| الكشف عن **أملاح الكلسيوم** | رشاحة الخبز — أكسلات الأمنيوم | يحتوي الخبز على أملاح الكالسيوم (**راسب أبيض**) |
+
+> 🎯 **Pour la génération.** C'est le premier endroit du volume qui donne une **batterie de tests avec réactif → observation → conclusion**, sur deux niveaux (aliment simple, puis aliment composé décomposé en six tests). Le format « quel réactif utiliseriez-vous pour montrer que… » et son inverse « ce précipité rouge brique signale la présence de… » sont directement disponibles, avec des clés imprimées. La **couleur** est à chaque fois le critère observable — ce qui se prête bien à l'illustration.
+
+### 7.24 وجبة متوازنة, groupes alimentaires, idées reçues et maladies de la malnutrition (guide p.97–98)
+
+**5. حاجة الجسم إلى غذاء متوازن (p.97)** — la définition : _« الوجبة الغذائيّة المتوازنة هي الوجبة الّتي تحتوي على المواد الغذائيّة الضّروريّة لنموّ الجسم وإمداده بالطّاقة ووقايته من الأمراض »_. Quatre conditions :
+
+- **(أ)** contenir des **hydrates de carbone et des lipides** qui fournissent l'énergie thermique nécessaire à la chaleur, à l'activité et aux fonctions vitales ;
+- **(ب)** contenir des **matières protéiques** qui participent à la croissance et **remplacent les tissus abîmés** ;
+- **(ج)** contenir **eau, sels minéraux et vitamines** ;
+- **(د)** être **adaptée à l'âge, au travail et au milieu** de la personne : le travailleur de force a besoin d'aliments plus énergétiques ; les habitants des **régions froides** ont besoin d'aliments plus riches en **lipides** ; ceux des **régions chaudes** ont davantage besoin de **légumes et de fruits**.
+
+Et la conclusion économique, qui est le vrai message de la page : _« ويمكن توفير المواد الغذائيّة الضروريّة لبناء الجسم وامداده بالطّاقة ووقايته من الأمراض **بأقلّ التّكاليف** لأنّ سرّ التغذية السّليمة يكمن في مدى **تنوّع** الغذاء … وبالتّالي ما على الفرد إلاّ إدخال نوع من كلّ مجموعة من المجموعات الغذائيّة في طعامه. »_
+
+**Le tableau des six groupes alimentaires (p.97)** :
+
+| المجموعة | مثالها | ماذا توفّر للجسم ؟ | فوائدها |
+| :-: | --- | --- | --- |
+| **1** | اللّحم · السّمك · البيض · البقول الجافّة | البروتينات | **النّموّ**، بناء الجسم وتجديد الأنسجة |
+| **2** | الحليب ومشتقاته (ياغرت - جبن - رائب …) | البروتينات | *(idem groupe 1 — la cellule « فوائد » couvre 1 et 2)* |
+| **3** | المواد الدّهنيّة : زيت زيتون … | الدّهنيات | مصدر **للطاقة الحراريّة والحركيّة** |
+| **4** | الحبوب ومشتقاتها : خبز - كسكسي - مقرونة | السّكّريات | *(idem groupe 3)* |
+| **5** | الغلال والخضر الطازجة | الأملاح المعدنيّة · الفيتامينات («ب»، «ج») · الألياف (سليلوز) | **الحفاظ على سلامة الجسم من الأمراض** |
+| **6** | الخضر المطهيّة | *(idem groupe 5)* | *(idem groupe 5)* |
+
+> **Six groupes, pas sept.** À noter pour la génération : ce découpage en **six** est celui du guide tunisien ; il diffère des classifications à sept groupes courantes ailleurs. Les groupes **1 et 2** partagent le même apport (protéines) et le même bénéfice, de même que **3 et 4**, puis **5 et 6** — le tableau est donc structuré en **trois paires**, une par grande fonction : bâtir, fournir l'énergie, protéger.
+
+**أقوال خاطئة في مجال التّغذيّة (p.98)** — un tableau **الخطأ / الصّواب** de six lignes, dont la valeur pédagogique est directe :
+
+| الخطأ | الصّواب |
+| --- | --- |
+| أكل البيض طازجا أنفع من أكله مطبوخا | يستحسن استهلاك البيض **مطبوخا** لأنّ **الألبومين صعبة الهضم** |
+| لا تأكل سمكا وتشرب لبنا | **الغذاءان متكاملان** إذ أنّ الحليب يحتوي كميّة وافرة من أملاح الكالسيوم خلافا للسّمك وتناولهما معا **لا يضرّ** |
+| يحتوي «البرودو» على جميع المواد المغذية الموجودة باللّحم قبل طهيه | يحتوي البرودو خاصّة على **الماء والدّهنيات**، أمّا البروتيدات **فتبقى في اللّحم** |
+| يجب التقليل من استهلاك الملح صيفا لأنّه يزيد في العطش | الملح **يقلّل من التعرّق** ويمكّن من تعويض ما يخسره الجسم من هذه المادّة مع التعرّق |
+| خير اللّحم ما كان مهضبا (أي لم يُشو جيّدا) | **طهي اللّحم جيّدا** يقتل ما به من جراثيم وطفيليات ويُبقي ما به من بروتينات |
+| العجين يزيد في درّ اللّبن لدى المرضعة | **اللّبن (الحليب) أفضل** |
+
+> 🎯 **Le meilleur matériau « chasse à l'erreur » rencontré depuis §7.10.** Six affirmations fausses **populaires**, chacune avec sa réfutation argumentée, écrites par le CNP. C'est exactement le format `مع3` de la و1 — et cette fois avec un corrigé. À réserver toutefois : la ligne sur le sel est **contre-intuitive et discutable** hors contexte (le guide veut dire que le sel compense les pertes sudorales), et la dernière ligne oppose deux mots (**العجين** / **اللّبن**) sans expliquer pourquoi.
+
+**6. بعض الأمراض النّاتجة عن سوء التّغذية (p.98)** :
+
+- carence en **vitamine «أ»** → **الزّكام** et **عدم الرؤية ليلا** ;
+- carence en **vitamine «ج»** → **تشقّق اللّثّة** et le **الأسقربوط (scorbut)**, dont les symptômes sont : انتفاخ في اللّثّة ونزف بها مع الشّعور بالألم · نزف في الجهاز الهضمي وفي العضلات · تشوّه في العظام ;
+- carence en **vitamine «د»** → **ليونة العظام** et le **الكساح (rachitisme)** ;
+- **الإفراط** — que ce soit par excès global ou par excès d'un seul type, comme le sucre — mène à la **السّمنة**, où le corps devient affaissé, la mobilité réduite, incapable d'activité sportive voire ordinaire ; ses dangers portent sur l'appareil circulatoire (**ضغط الدّم، تصلّب الشرايين**) et **le cœur en particulier**.
+
+Trois raisons données à la nocivité de l'excès de sucre : les sucreries **ouvrent l'appétit**, ce qui mène à l'obésité ; les dents **se carient** car les sucreries forment entre elles **une couche propice aux germes** ; l'excès de sucreries et de sucre **fatigue la rate (يجهد الطّحال)**.
+
+**كيف نستفيد من الطّعام الّذي نتناوله ؟ (p.98)** — six règles : manger **lentement et posément**, dans le calme — _« لاحظ ظاهرة تفشّي الأكلات السّريعة والّتي غالبا ما لا تتوفّر فيها الشّروط الصّحيّة »_ · **régularité des horaires**, sachant que _« الطّعام يبقى في المعدة حوالي 4 ساعات »_ · **bien mastiquer** · **ne pas lire en mangeant**, car cela détourne l'afflux sanguin vers le cerveau · **ne pas se doucher juste après le repas**, à l'eau froide ou chaude, car cela détourne le sang vers la peau et retarde digestion et absorption · et veiller à ce que la nourriture soit **propre et protégée de la poussière et des germes**.
+
+### 7.25 التغذية — la page de règles sanitaires (guide p.99)
+
+> **Une page à part.** Après le ملفّ علمي de la nutrition (p.93–98), le guide insère une page autonome intitulée simplement « **التغذية** », sous-titrée « **قواعد صحّية** ». Elle ne reprend pas le contenu précédent : elle le **reformule en règles**, sans expérience ni figure. C'est la seule page de ce type rencontrée jusqu'ici.
+
+**Principe** : _« تقتضي التّغذية الصحّيّة السّليمة اعتماد التّوازن في تناول الأطعمة وضرورة المحافظة على سلامتها. »_ — deux exigences, l'équilibre **et** la salubrité, qui donnent les deux moitiés de la page.
+
+**كيف يتمّ اعتماد التوازن في التغذية ؟** — varier les composants des repas **sans excès d'un type**. Trois excès et leurs conséquences, chaînées :
+
+- excès de **سكّريات** → stockage sous forme de **شحوم** → **انسداد الشّرايين** et gêne du travail du cœur ; en outre le sucre **s'unit rapidement au calcium** des tissus, appauvrissant le sang en cet élément, qu'il **prélève alors sur les os** → **ضعف العظام وتسوّس الأسنان** ;
+- excès de **دهنيات** → élévation du taux de **شحم** dans le sang, **augmentation de la masse corporelle**, **تصلّب الشّرايين**, **السّمنة**, **ضغط الدّم** ;
+- excès de **زلاليات** — une alimentation réduite aux **viandes et dérivés du lait (fromages…)** → **أمراض القلب، تصلّب الشرايين، السّمنة**.
+
+**كيف نحافظ على سلامة الأغذية ؟** — sept règles : ne pas acheter d'aliments **exposés à découvert** · **laver** légumes et fruits à l'eau additionnée d'**eau de Javel (ماء الجافال)** pour tuer les germes et **éliminer l'effet des pesticides** employés par les agriculteurs · conserver au **réfrigérateur** pour limiter la prolifération · **faire bouillir le lait** avant de le consommer · **bien cuire les viandes** · **vérifier la date de péremption** des conserves · ne pas conserver légumes et fruits **trop longtemps**, sous peine de perdre leurs vitamines.
+
+### 7.26 الملفّ العلمي de la و3 (fin) : الأمراض الجرثوميّة والوقاية منها (guide p.100–102)
+
+**I — دور الجلد في حماية الجسم من تسرّب الجراثيم داخله (p.100)**
+
+**الجلد** — il forme une **barrière séparant le corps du milieu**, le recouvrant presque entièrement. Deux chiffres : surface ≈ **1,7 m²**, masse ≈ **3 kg**.
+
+**مميّزات الجلد** : souplesse, **extensibilité**, glissement sur les organes, et **abondance de plis au niveau des articulations** — autant de traits qui facilitent le mouvement. Il porte des **بصمات (empreintes digitales)**. Son **épaisseur varie selon l'exposition au frottement** : _« فنجده مثلا أكثر سمكا في القدم »_.
+
+**بنية الجلد** — deux parties, sur une coupe transversale :
+
+- **البشرة** (épiderme) — couche externe, faite de **plusieurs strates de cellules** ; les couches **profondes** contiennent la **ميلانين**, matière qui donne au peau et aux poils leur couleur sombre et **augmente à l'exposition solaire**. Les cellules de l'épiderme ont la **capacité de se diviser et de se multiplier** ; celles de la couche **externe** contiennent la **كيراتين**, qui rend la peau résistante aux agressions extérieures — d'où le nom de **الطّبقة المتقرّنة** donné à cette couche, où l'on observe les **pores (المسامّ)** ;
+- **الأدمة** (derme) — la partie **profonde**, qui contient : des **شعيرات دمويّة** faites d'artérioles et de veinules assurant la nutrition des cellules et l'échange gazeux · des **terminaisons nerveuses** ramifiées dans le derme et sous l'épiderme · de **petits corpuscules** recevant les stimuli du milieu (**حرارة - برودة**) et transmettant la sensation de **douleur** — _« وبذلك يكون الجلد عضوا حسّيا »_ · des **غدد عرقيّة** débouchant par des pores à la surface, qui évacuent les **déchets toxiques** · des **غدد دهنيّة** placées **à la base de chaque poil**, dont la sécrétion donne au poil souplesse et brillance et **aide à résister aux champignons (فوق جلد الرّأس)** · et des **فصيصات شحميّة** formant une enveloppe isolante qui protège le corps du **froid et de la chaleur**.
+
+**أهميّة الجلد في منع تسرّب الجراثيم إلى الجسم (p.100–101)** — la peau couvre le corps à l'extérieur **et** forme intérieurement une **enveloppe muqueuse** tapissant toutes les cavités internes (voies respiratoires, tube digestif…), d'où une barrière **imperméable**. Deux fonctions :
+
+- elle **empêche les liquides de pénétrer**, ce qui protège des **matières toxiques et chimiques** ;
+- elle constitue la **première ligne de défense** contre les germes qui s'infiltrent par brûlures, écorchures et plaies — grâce aux **cellules sanguines** qui y circulent, en particulier les **globules blancs**, capables de **sortir des vaisseaux et d'y rentrer (الانسلال)**, en particulier les **البلغميّات** : _« فتشكّل بذلك جهاز مناعة مختصّ بالتصدّي للجراثيم والقضاء عليها. »_
+
+**وقاية الجلد (p.101)** — deux volets. **Prévenir les accidents** qui exposent la peau aux plaies et aux brûlures, donc à l'infiltration des germes. Et veiller à sa **propreté**, particulièrement sur les zones découvertes, où la poussière et les salissures se mêlent aux **sécrétions grasses** et forment _« وسطا ملائما لنموّ الجراثيم »_. La plaie guérit vite, mais la rapidité de guérison dépend de sa propreté et de sa protection contre ce qui mène au **تقيّح (suppuration)**, aux conséquences graves.
+
+**قواعد مداواة الجروح** — cinq, dans l'ordre :
+
+1. s'assurer de la **propreté des mains** avant tout secours — de préférence les laver à l'eau et au savon ou avec un **antiseptique** ;
+2. retirer les corps étrangers **non collés** à la plaie, comme la terre, puis la laver en **versant** de l'eau pure pour qu'elle s'écoule sur les côtés — _« ولا يجوز أبدا غسل الجرح بعد تشكّل العلقة الدّمويّة عليه »_ ;
+3. **désinfecter** la plaie avec un antiseptique ;
+4. **panser** par des moyens adaptés à la nature et à la localisation de la plaie ;
+5. administrer le **sérum antitétanique (ضدّ الكزاز)** à qui a été blessé par une plaie **souillée de terre**, _« لأنّه يحمل بكتيريا هذا المرض »_.
+
+Pour les petites plaies simples, **pas besoin de bandage** : il suffit de poser des **morceaux de tissu adhésif** sur la compresse. Figure p.101 : un bandage de main en cours d'exécution.
+
+**الحروق — quatre degrés (p.101)** :
+
+| الدّرجة | ce qui se produit |
+| :-: | --- |
+| **الأولى** | يصاب الجلد **باحمرار بسيط** |
+| **الثّانية** | تتكوّن **فقاعات** تظهر في الجلد |
+| **الثّالثة** | تنفجر الفقاقيع وتصبح **طبقات الجلد الدّاخليّة عارية** ويشعر المصاب **بألم شديد** عند ملامستها أو إذا مرّ عليها تيّار شديد من الهواء |
+| **الرّابعة** | **تحترق العضلات** وتتفحّم منطقة الاصابة **حتّى العظم** |
+
+**إسعاف المصاب بحروق (p.102)** — recouvrir immédiatement les brûlures d'une **gaze stérile imbibée** : de **solution de carbonates** si la brûlure vient d'un **acide** (pour le neutraliser), ou de **solution de vinaigre léger** si elle vient d'un **alcali**. **Interdits absolus** : couvrir la brûlure de **coton**, et **percer les cloques** formées. Après un temps, enduire la zone d'une **pommade spéciale** ; à défaut, utiliser de l'**huile d'olive** ou du **blanc d'œuf**. Pour les brûlures des **3ᵉ et 4ᵉ degrés** : transport **d'urgence à l'hôpital**.
+
+**حروق العين بالمواد الكيميائيّة (p.102)** — l'œil peut être brûlé par la **volatilisation** de produits chimiques en laboratoire ou en atelier, acides ou alcalins — _« ضرورة استعمال وسائل الحماية بالنسبة إلى هذا النّوع من المهن »_. Trois gestes : **laver l'œil ouvert** à l'eau **tiède et propre** · poser une **compresse de gaze stérile** ou un linge propre sur l'œil atteint · **conduire directement au médecin spécialiste**.
+
+**ضربة الشمس (p.102)** — après une exposition prolongée. Symptômes : **صداع شديد مصحوب بقيء واحمرار شديد في الوجه** · température pouvant dépasser **39** et **causer la mort** · **accélération du pouls** puis évanouissement rapide · dans les cas sévères, **délire et convulsions musculaires**. Premiers secours : transporter dans un lieu **sombre et frais** · **retirer les vêtements** autour du cou · poser un sac de glace ou des compresses froides sur la tête, et une fois la conscience revenue, **faire boire de l'eau froide en abondance**.
+
+**Morsures et piqûres (p.102)** — la peau est exposée aux **morsures de serpents**, aux **piqûres d'insectes** et aux **morsures d'animaux (chiens, chats…)**. Secours : essuyer la zone avec un **antiseptique** · **ligaturer** fermement la zone atteinte (morsure de vipère, de scorpion…) **entre le point de morsure et le cœur**, pour empêcher le venin de gagner la circulation, et **presser fortement la plaie** pour en faire sortir une quantité de sang souillé · **réchauffer** la victime par des couvertures et lui donner des **boissons chaudes** · pratiquer la **respiration artificielle** si la respiration s'arrête ; et **transporter à l'hôpital** pour l'administration du **sérum antivenimeux**.
+
+**II — التعفّن الجرثومي (p.102, début)** — l'humain est en **contact direct** avec les germes répandus dans tous les milieux (**ماء - تربة - هواء**), et pourtant il n'est que **rarement** atteint par les germes nuisibles, _« ذلك لأنّ لجسمه **حواجز طبيعيّة** تحول دون تسرّبها إليه (الجلد) كما أنّه يمتلك **وسائل دفاعيّة طبيعيّة ووسائل دفاعيّة مكتسبة** تقاوم كلّ هجوم وجرثومي »_. La question posée — **ما هي الحواجز الطّبيعيّة لمقاومة الجراثيم ؟** — ouvre une liste dont le premier terme, **الجلد**, est la dernière ligne de la page.
+
+> 🎯 **Ce que cette tranche apporte, et à quel chapitre.** Le volet nutrition (p.93–99) donne à `04-nutrition` un socle complet : composition des aliments, vitamines et sels **tabulés**, batterie de réactifs, repas équilibré, six groupes alimentaires, six idées fausses corrigées, maladies de carence et d'excès, règles d'hygiène alimentaire. Le volet peau et premiers secours (p.100–102) est en revanche **sans chapitre publié correspondant** — il relève du bloc immunité p.68–83 du manuel élève, signalé en §6 comme non couvert. C'est le début de la réponse à cette lacune, mais **le cœur du sujet (التعفّن الجرثومي، التلقيح، المقاومة) commence tout juste** à la dernière ligne de la p.102.
