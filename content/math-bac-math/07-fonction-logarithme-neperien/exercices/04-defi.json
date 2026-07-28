@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le maître des encadrements logarithmiques",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Pour tout entier naturel n, on pose Iₙ = ∫₁^e (ln x)ⁿ dx. On admet que pour tout n ≥ 1, Iₙ = e − n Iₙ₋₁. Calculer I₃.",
+      "options": [
+        {
+          "id": "a",
+          "text": "I₃ = 6 − 2e"
+        },
+        {
+          "id": "b",
+          "text": "I₃ = e − 2"
+        },
+        {
+          "id": "c",
+          "text": "I₃ = 4e − 6"
+        },
+        {
+          "id": "d",
+          "text": "I₃ = e − 3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Trois étapes dépendantes : calculer le terme d'amorçage, puis descendre la relation rang après rang. Amorçage : I₀ = ∫₁^e (ln x)⁰ dx = ∫₁^e dx = e − 1 (attention, (ln x)⁰ = 1, pas ln x). Rang n = 1 : I₁ = e − 1 × I₀ = e − (e − 1) = 1 — ce qui recoupe exactement le cours, où ∫₁^e ln x dx = [x ln x − x]₁^e = 0 − (−1) = 1 ✓. Rang n = 2 : I₂ = e − 2I₁ = e − 2 ≈ 0,718. Rang n = 3 : I₃ = e − 3I₂ = e − 3(e − 2) = 6 − 2e ≈ 0,563 ✓. Vérification par une seconde voie, sans la relation admise : contrôle numérique de ∫₁^e (ln x)³ dx par Simpson (4 intervalles de pas ≈ 0,4296, valeurs 0 ; 0,0456 ; 0,2385 ; 0,5677 ; 1) ≈ 0,563 ✓. Encadrement de sécurité : sur [1, e] on a 0 ≤ ln x ≤ 1, donc 0 ≤ (ln x)³ ≤ (ln x)² et la suite (Iₙ) est décroissante et positive — I₃ doit être compris entre 0 et I₂ ≈ 0,718 ; seule la bonne réponse le respecte. L'erreur classique : s'arrêter un rang trop tôt et livrer I₂ = e − 2 ; amorcer avec I₀ = 1 au lieu de e − 1 donne I₁ = e − 1, I₂ = 2 − e (une intégrale négative de fonction positive, signal d'alarme) puis I₃ = 4e − 6 ≈ 4,87, supérieur à I₀ alors que la suite décroît ; et sauter un rang en appliquant la relation entre I₃ et I₁ (I₃ = e − 3I₁) fournit e − 3 ≈ −0,282, négatif, donc impossible.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit α un réel de ]0, 1[. On note 𝒜(α) l'aire, en u.a, du domaine limité par la courbe de la fonction ln, l'axe des abscisses et les droites x = α et x = 1 (partie colorée ci-dessous). Déterminer lim_{α→0⁺} 𝒜(α).\n\n<svg viewBox=\"0 0 340 200\"><polygon points=\"87,55 87,131 96,119 114,103 132,92 150,83 168,75 186,69 204,64 222,59 240,55\" fill=\"#0f6e56\" fill-opacity=\"0.18\"/><path d=\"M40 55 H320\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M60 185 V25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M320 55 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M60 25 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><path d=\"M78 147 L87 131 L96 119 L114 103 L132 92 L150 83 L168 75 L186 69 L204 64 L222 59 L240 55 L267 49\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"87\" y1=\"55\" x2=\"87\" y2=\"131\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"87\" y=\"46\" text-anchor=\"middle\" fill=\"#0f172a\">α</text><text x=\"240\" y=\"46\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"54\" y=\"46\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"165\" y=\"74\" text-anchor=\"middle\" fill=\"#0f6e56\">𝒜(α)</text><text x=\"272\" y=\"40\" fill=\"#0f6e56\">y = ln x</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La limite vaut 1"
+        },
+        {
+          "id": "b",
+          "text": "La limite vaut 0"
+        },
+        {
+          "id": "c",
+          "text": "La limite vaut −1"
+        },
+        {
+          "id": "d",
+          "text": "La limite vaut +∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le signe d'abord, le calcul ensuite. Sur [α, 1] ⊂ ]0, 1[ on a ln x ≤ 0 : la courbe est SOUS l'axe, comme le montre la figure, donc l'aire vaut ∫_α¹ |ln x| dx = ∫_α¹ (−ln x)dx = −∫_α¹ ln x dx. Le cours donne la primitive qui manquait : x ↦ x ln x − x. Ainsi 𝒜(α) = −[x ln x − x]_α¹ = −[(1 × 0 − 1) − (α ln α − α)] = 1 + α ln α − α. On passe à la limite : α ln α → 0 quand α → 0⁺, par croissance comparée (c'est le cas m = 1, n = 1 de xᵐ(ln x)ⁿ → 0), et α → 0. D'où lim_{α→0⁺} 𝒜(α) = 1 ✓ : le domaine s'étire infiniment vers la gauche, mais son aire reste finie et vaut 1 u.a. Vérification par une seconde voie : pour α = 0,15 la formule donne 1 + 0,15 × (−1,897) − 0,15 ≈ 0,565, et un calcul numérique direct de ∫_{0,15}¹ (−ln x)dx par Simpson (pas ≈ 0,2125, valeurs 1,897 ; 1,015 ; 0,553 ; 0,239 ; 0) donne ≈ 0,568 ✓ ; pour α = 0,01 la formule donne 0,944, qui monte bien vers 1 ✓. L'erreur classique : oublier la valeur absolue et intégrer ln directement, ce qui livre −1 — un nombre négatif présenté comme une aire, absurdité repérable d'un coup d'œil ; primitiver ln en x ln x, en oubliant le −x, donne 𝒜(α) = α ln α, de limite 0 ; et croire que α ln α tend vers −∞ (parce que ln α → −∞) conduit à annoncer +∞, alors que c'est justement la croissance comparée qui tranche : le facteur α écrase le logarithme.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit m un réel strictement positif. Déterminer m pour que l'équation ln x = m x admette une solution et une seule dans ]0, +∞[.",
+      "options": [
+        {
+          "id": "a",
+          "text": "m = 1/e"
+        },
+        {
+          "id": "b",
+          "text": "m = e"
+        },
+        {
+          "id": "c",
+          "text": "0 < m < 1/e"
+        },
+        {
+          "id": "d",
+          "text": "m ≥ 1/e"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sens inverse : le nombre de solutions est imposé, c'est le paramètre qu'il faut retrouver. On étudie g(x) = ln x − mx sur ]0, +∞[ : g′(x) = 1/x − m = (1 − mx)/x, positive pour x < 1/m et négative après, donc g atteint son MAXIMUM en x = 1/m, où g(1/m) = ln(1/m) − m × (1/m) = −ln m − 1. Aux bornes, g → −∞ en 0⁺ (car ln x → −∞) et g → −∞ en +∞ (car g(x) = x((ln x)/x − m) et (ln x)/x → 0 < m). Par stricte monotonie sur chaque côté du maximum : si le maximum est strictement négatif, aucune solution ; s'il est strictement positif, exactement deux ; il n'y a donc UNE solution que si le maximum est nul, c'est-à-dire −ln m − 1 = 0, soit ln m = −1 et m = 1/e ✓. Vérification par une seconde voie, géométrique et indépendante : « une seule solution » signifie que la droite y = mx est TANGENTE à la courbe de ln ; en un point d'abscisse a cela impose m = ln′(a) = 1/a et ln a = ma = 1, donc a = e et m = 1/e ✓ — les deux chemins concordent. Contrôle numérique : avec m = 1/e ≈ 0,368, en x = e on a ln e = 1 et me = 1 (égalité), tandis qu'en x = 2, ln 2 ≈ 0,693 < 2/e ≈ 0,736 et en x = 5, ln 5 ≈ 1,609 < 5/e ≈ 1,839 : la courbe reste bien sous la droite ailleurs ✓. L'erreur classique : résoudre ln m = 1 au lieu de ln m = −1 et livrer m = e (pour lequel le maximum vaut −2, donc aucune solution) ; confondre le cas d'unicité avec le cas de deux solutions et répondre 0 < m < 1/e — pour m = 0,2 par exemple, les deux racines sont voisines de 1,3 et de 12,7 ; et croire qu'au-delà de la valeur critique la solution subsiste conduit à m ≥ 1/e, alors que pour m > 1/e la droite passe entièrement au-dessus de la courbe.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On veut calculer J = ∫₁² (ln x)/x² dx. Voici une solution proposée. Étape 1 : intégration par parties avec f(t) = ln t et g′(t) = 1/t², donc f′(t) = 1/t et g(t) = −1/t. Étape 2 : J = [−(ln t)/t]₁² − ∫₁² (1/t)(−1/t)dt = [−(ln t)/t]₁² + ∫₁² dt/t². Étape 3 : [−(ln t)/t]₁² = −(ln 2)/2 et ∫₁² dt/t² = [1/t]₁² = 1/2 − 1 = −1/2. Étape 4 : donc J = −(ln 2)/2 − 1/2. Quelle est la PREMIÈRE étape fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 1"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 2"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 3"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 4 : le résultat est négatif alors que l'intégrande est positive, la faute est donc dans la dernière ligne"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ceci est une chasse à l'erreur : la solution proposée contient une faute plantée, l'explication décrit donc un raisonnement volontairement faux. L'étape 1 est correcte : c'est ln qui se simplifie en dérivant, et une primitive de 1/t² = t⁻² est bien g(t) = −1/t (vérification : (−1/t)′ = 1/t² ✓). L'étape 2 est correcte aussi : la formule ∫fg′ = [fg] − ∫f′g est appliquée avec son signe moins, et ce moins s'annule avec celui de g, d'où le « + ∫ dt/t² » — l'écriture est juste. L'étape 3 est la PREMIÈRE fausse ✓ : le crochet est correct ([−(ln t)/t]₁² = −(ln 2)/2 − 0), mais l'intégrale restante est calculée avec la primitive 1/t au lieu de −1/t. Le calcul juste est ∫₁² dt/t² = [−1/t]₁² = −1/2 + 1 = 1/2, et non −1/2. L'étape 4 additionne fidèlement des résultats faussés : elle hérite de l'erreur sans en créer une nouvelle, et l'option d, qui repère bien l'absurdité du signe, désigne la mauvaise ligne — un résultat aberrant signale une faute EN AMONT. Le calcul correct : J = −(ln 2)/2 + 1/2 ≈ −0,347 + 0,5 = 0,153. Contrôle numérique indépendant (Simpson, pas 0,25, valeurs 0 ; 0,1428 ; 0,1802 ; 0,1827 ; 0,1733) : J ≈ 0,153 ✓, et l'intégrande, positive et inférieure à 0,19 sur [1, 2], ne peut donner qu'une valeur entre 0 et 0,19. L'erreur classique est exactement celle-là : primitiver t⁻² comme on primitiverait 1/t, en perdant le signe de l'exposant négatif — elle survit d'autant mieux qu'elle se cache derrière une IPP correctement posée.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout entier n ≥ 1, on pose vₙ = 1/(n + 1) + 1/(n + 2) + … + 1/(2n). On rappelle que pour tout réel x > 0, 1/(x + 1) ≤ ln(x + 1) − ln x ≤ 1/x. Déterminer lim_{n→+∞} vₙ.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La limite vaut ln 2"
+        },
+        {
+          "id": "b",
+          "text": "La limite vaut 1/2"
+        },
+        {
+          "id": "c",
+          "text": "La limite vaut 0"
+        },
+        {
+          "id": "d",
+          "text": "La limite vaut +∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La somme a n termes qui tendent tous vers 0 : ni la taille des termes ni leur nombre ne suffit à conclure, il faut ENCADRER puis télescoper. Majoration : l'inégalité de gauche avec x = k donne 1/(k + 1) ≤ ln(k + 1) − ln k ; en sommant pour k allant de n à 2n − 1, le membre de gauche est exactement vₙ et celui de droite télescope en ln(2n) − ln n = ln 2. Donc vₙ ≤ ln 2. Minoration : l'inégalité de droite avec x = k donne ln(k + 1) − ln k ≤ 1/k ; en sommant pour k allant de n + 1 à 2n, on obtient ln(2n + 1) − ln(n + 1) ≤ vₙ. Finalement ln((2n + 1)/(n + 1)) ≤ vₙ ≤ ln 2, et comme (2n + 1)/(n + 1) → 2, la borne de gauche tend vers ln 2 : le théorème des gendarmes donne lim vₙ = ln 2 ≈ 0,693 ✓. Contrôle numérique indépendant : v₅ = 1/6 + 1/7 + 1/8 + 1/9 + 1/10 ≈ 0,6456, encadré par ln(11/6) ≈ 0,606 et ln 2 ≈ 0,693 ✓ ; v₅₀ ≈ 0,688, qui remonte bien vers ln 2 ✓. Autre voie de recoupement : vₙ = S₂ₙ − Sₙ avec Sₙ = 1 + 1/2 + … + 1/n ; comme Sₙ − ln n converge (vers la constante d'Euler γ), vₙ = (S₂ₙ − ln 2n) − (Sₙ − ln n) + ln 2 → γ − γ + ln 2 = ln 2 ✓. L'erreur classique : estimer grossièrement les n termes par le plus petit d'entre eux, 1/(2n), et conclure n × 1/(2n) = 1/2 — un minorant, pas la limite, et l'encadrement 1/2 ≤ vₙ ≤ ln 2 montre justement que cette borne n'est pas atteinte ; croire que la somme tend vers 0 parce que chaque terme y tend oublie qu'ils sont n ; et l'assimiler à la série harmonique, qui diverge, conduit à +∞, alors qu'on n'en prend ici qu'une tranche de longueur bornée en logarithme.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule des affirmations suivantes est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La fonction F : x ↦ ln|x² − 1| est une primitive de x ↦ 2x/(x² − 1) sur ℝ"
+        },
+        {
+          "id": "b",
+          "text": "lim_{x→+∞} [ln(x² + 1) − ln(x² + x)] = 0"
+        },
+        {
+          "id": "c",
+          "text": "Pour tout entier n ≥ 1, 1 + 1/2 + … + 1/n ≤ ln n"
+        },
+        {
+          "id": "d",
+          "text": "La suite (uₙ) définie par uₙ = ∫₀¹ xⁿ ln(1 + x)dx converge vers ln 2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Seule l'affirmation b est vraie ✓. On regroupe d'abord les deux logarithmes en un seul, ce qui lève la forme indéterminée « ∞ − ∞ » : ln(x² + 1) − ln(x² + x) = ln((x² + 1)/(x² + x)), légitime car les deux quantités sont strictement positives pour x > 0. Le quotient (x² + 1)/(x² + x) = (1 + 1/x²)/(1 + 1/x) tend vers 1 quand x → +∞, et ln est continue en 1 avec ln 1 = 0 : la limite est donc 0 ✓. Contrôle numérique : pour x = 1000, ln(1000001) − ln(1001000) = ln(0,999001) ≈ −0,000999 ✓. a est fausse par le DOMAINE : ln|x² − 1| n'existe ni en 1 ni en −1, donc F n'est définie sur aucun intervalle contenant ces points — l'énoncé du corollaire exige que u ne s'annule pas sur I ; F est une primitive sur ]−∞, −1[, sur ]−1, 1[ et sur ]1, +∞[ séparément, jamais sur ℝ. c est fausse et inverse l'encadrement du cours : la bonne inégalité est Sₙ ≥ ln(n + 1) — pour n = 2, 1 + 1/2 = 1,5 alors que ln 2 ≈ 0,693, et l'affirmation tombe dès le deuxième rang. d est fausse : sur [0, 1] on a 0 ≤ ln(1 + x) ≤ ln 2, donc 0 ≤ uₙ ≤ ln 2 ∫₀¹ xⁿ dx = (ln 2)/(n + 1), qui tend vers 0 ; la suite converge vers 0, et non vers ln 2 — c'est le majorant de l'intégrande, pas la limite de l'intégrale, et pour n = 1 on calcule d'ailleurs u₁ = 1/4 = 0,25 par intégration par parties, déjà loin de ln 2 ≈ 0,693. Le piège courant, commun à a et à d, est de conclure sans regarder l'ensemble de validité ni l'ordre de grandeur : une primitive n'existe que sur un intervalle où u ne s'annule pas, et une intégrale dont l'intervalle a une longueur fixe mais dont l'intégrande xⁿ s'écrase tend vers 0.",
+      "difficulty": 3
+    }
+  ]
+}

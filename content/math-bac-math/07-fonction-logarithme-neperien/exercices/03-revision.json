@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Logarithme népérien",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Soit a et b deux réels strictement positifs. ln(a/b) est égal à :",
+      "options": [
+        {
+          "id": "a",
+          "text": "(ln a)/(ln b)"
+        },
+        {
+          "id": "b",
+          "text": "ln a + ln b"
+        },
+        {
+          "id": "c",
+          "text": "ln a − ln b"
+        },
+        {
+          "id": "d",
+          "text": "ln b − ln a"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le logarithme transforme un quotient en différence : ln(a/b) = ln a − ln b ✓. Contrôle numérique : ln(3/2) = ln 3 − ln 2 ≈ 1,099 − 0,693 = 0,406, et la calculatrice donne ln 1,5 ≈ 0,405 ✓. L'option a est LE piège du chapitre : on ne « simplifie » jamais par ln, et (ln 3)/(ln 2) ≈ 1,585 n'a rien à voir. L'option b est la règle du produit, pas du quotient. L'option d prend la différence dans le mauvais sens : elle vaut ln(b/a), c'est-à-dire l'opposé.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi ces égalités, laquelle est VRAIE pour tous réels a > 0 et b > 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln(a + b) = ln a + ln b"
+        },
+        {
+          "id": "b",
+          "text": "ln(ab) = ln a × ln b"
+        },
+        {
+          "id": "c",
+          "text": "ln(a/b) = (ln a)/(ln b)"
+        },
+        {
+          "id": "d",
+          "text": "ln(a²b) = 2 ln a + ln b"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On applique la règle du produit puis celle de la puissance : ln(a²b) = ln(a²) + ln b = 2 ln a + ln b ✓ (contrôle avec a = b = 2 : ln 8 ≈ 2,079 et 2 ln 2 + ln 2 = 3 ln 2 ≈ 2,079 ✓). L'option a est l'erreur la plus fréquente du chapitre : seul le PRODUIT devient une somme, et avec a = b = 1 elle donnerait ln 2 ≈ 0,693 = 0, ce qui est faux. L'option b garde la multiplication au lieu de l'addition (a = b = 2 : ln 4 ≈ 1,386 ≠ 0,480). L'option c « simplifie par ln » un quotient, alors que la règle correcte est ln a − ln b.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On donne ln 2 ≈ 0,693 et ln 3 ≈ 1,099. Une valeur approchée de ln(9/8) est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,119"
+        },
+        {
+          "id": "b",
+          "text": "0,406"
+        },
+        {
+          "id": "c",
+          "text": "1,057"
+        },
+        {
+          "id": "d",
+          "text": "4,277"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On factorise avant tout : 9/8 = 3²/2³, donc ln(9/8) = 2 ln 3 − 3 ln 2 ≈ 2,198 − 2,079 = 0,119 ✓. Contrôle : 9/8 = 1,125 est à peine supérieur à 1, son logarithme doit donc être petit et positif ✓. L'option b oublie les exposants et calcule ln 3 − ln 2 = ln(3/2) ≈ 0,406. L'option c divise les logarithmes, (2 ln 3)/(3 ln 2) ≈ 1,057, au lieu de les soustraire. L'option d additionne au lieu de soustraire : 2 ln 3 + 3 ln 2 ≈ 4,277, qui est en fait ln 72.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résoudre dans ]0, +∞[ l'équation (ln x)² − 3 ln x + 2 = 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "{1 ; 2}"
+        },
+        {
+          "id": "b",
+          "text": "{e ; e²}"
+        },
+        {
+          "id": "c",
+          "text": "{1/e ; 1/e²}"
+        },
+        {
+          "id": "d",
+          "text": "{2 ; e}"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On pose X = ln x : l'équation devient X² − 3X + 2 = 0, de racines X = 1 et X = 2. Il reste à remonter grâce à la bijection : ln x = 1 donne x = e, et ln x = 2 donne x = e² (car ln(e²) = 2 ln e = 2). L'ensemble des solutions est donc {e ; e²} ≈ {2,718 ; 7,389} ✓. L'option a s'arrête aux valeurs de X sans revenir à x. L'option c change le signe des racines et donne les solutions de X = −1 et X = −2. L'option d mélange une valeur de X et une valeur de x.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Résoudre dans ℝ l'inéquation ln(4x − 1) ≤ 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−∞, 1/2]"
+        },
+        {
+          "id": "b",
+          "text": "]0, 1/2]"
+        },
+        {
+          "id": "c",
+          "text": "]1/4, 1/2]"
+        },
+        {
+          "id": "d",
+          "text": "[1/2, +∞["
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Méthode en trois temps. Condition d'existence : 4x − 1 > 0, soit x > 1/4. Puis on écrit 0 = ln 1 et la croissance de ln donne 4x − 1 ≤ 1, soit x ≤ 1/2. En croisant, S = ]1/4, 1/2] ✓ (contrôle : pour x = 0,3, ln 0,2 ≈ −1,61 ≤ 0 ✓ ; pour x = 0,6, ln 1,4 ≈ 0,34 > 0, exclu ✓). L'option a oublie complètement la condition d'existence et garde des valeurs où ln(4x − 1) n'existe pas. L'option b utilise x > 0 au lieu de x > 1/4. L'option d renverse le sens de l'inégalité, alors que ln est croissante.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quel est l'ensemble de définition de la fonction f : x ↦ ln(x² − x − 6) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−2, 3["
+        },
+        {
+          "id": "b",
+          "text": "]−∞, −2[ ∪ ]3, +∞["
+        },
+        {
+          "id": "c",
+          "text": "]3, +∞["
+        },
+        {
+          "id": "d",
+          "text": "ℝ \\ {−2 ; 3}"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On résout u(x) > 0 AVANT tout autre calcul. Le trinôme se factorise : x² − x − 6 = (x + 2)(x − 3), de racines −2 et 3 ; un trinôme de coefficient dominant positif est strictement positif à l'extérieur de ses racines. Donc D_f = ]−∞, −2[ ∪ ]3, +∞[ ✓ (contrôle : en x = −3, 9 + 3 − 6 = 6 > 0 ✓ ; en x = 0, −6 < 0, exclu ✓). L'option a prend l'intervalle entre les racines, où le trinôme est négatif. L'option c oublie la branche de gauche, pourtant tout aussi valable. L'option d est l'ensemble de définition de x ↦ ln|x² − x − 6| : la valeur absolue se contenterait de u ≠ 0, mais ici u doit être strictement positif.",
+      "difficulty": 3
+    }
+  ]
+}

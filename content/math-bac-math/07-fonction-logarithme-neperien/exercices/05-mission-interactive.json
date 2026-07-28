@@ -1,0 +1,115 @@
+{
+  "title": "🧩 Mission interactive ⭐⭐ : La Guilde des Mesureurs",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "Texte à trous — dans l'atelier de la Guilde, un tableur affiche A(x), l'aire (en u.a) comprise entre l'hyperbole y = 1/t, l'axe des abscisses et les droites t = 1 et t = x. L'écran indique A(9) ≈ 2,197. Alors l'aire entre t = 1 et t = 3 vaut A(3) = ____ (arrondie au millième).",
+      "options": [
+        { "id": "a", "text": "1,099" },
+        { "id": "b", "text": "0,732" },
+        { "id": "c", "text": "0,244" },
+        { "id": "d", "text": "6,591" }
+      ],
+      "correctOption": "a",
+      "explanation": "Par définition, cette aire EST le logarithme népérien : A(x) = ∫₁ˣ dt/t = ln x. L'écran donne donc ln 9 ≈ 2,197, et l'on cherche ln 3. Le lien entre les deux ne passe pas par une proportion mais par une puissance : 9 = 3², donc ln 9 = ln(3²) = 2 ln 3, d'où ln 3 = 2,197/2 = 1,0985 ≈ 1,099 ✓. Contrôle indépendant : la calculatrice donne ln 3 ≈ 1,0986, et l'on sait par ailleurs que ln 3 > 1 puisque 3 > e ≈ 2,718 — la valeur 1,099 respecte bien cette borne ✓. Les trois autres propositions viennent toutes de la MÊME erreur, la plus répandue du chapitre : croire que ln est proportionnel à son argument. La valeur 0,732 est 2,197 divisé par 3, comme si diviser l'argument par 3 divisait l'aire par 3 ; la valeur 0,244 est 2,197 divisé par 9, même réflexe poussé plus loin ; la valeur 6,591 est 2,197 multiplié par 3, la même fausse proportionnalité prise à l'envers. Or ln transforme les PRODUITS en sommes, jamais les rapports en rapports : passer de 3 à 9, c'est multiplier l'argument par 3, donc AJOUTER ln 3 à l'aire — pas la tripler. Contrôle visuel décisif : l'aire sous 1/t entre 3 et 9 est bien plus plate que celle entre 1 et 3, puisque l'hyperbole y est bien plus basse ; ces deux morceaux valent pourtant exactement la même chose, 1,099 chacun, et leur somme redonne 2,197 ✓.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "QCM visuel — la Guilde gradue ses règles à l'échelle logarithmique : le nombre x est placé à la distance ln x du repère de départ, en centimètres. Sur la règle ci-dessous, 1 est en 0 cm, 2 en 0,7 cm et 3 en 1,1 cm. À quelle graduation se trouve le nombre 6 ? <svg viewBox=\"0 0 340 150\"><path d=\"M25 85 H320\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g stroke=\"#0f172a\" stroke-width=\"2\"><line x1=\"40\" y1=\"77\" x2=\"40\" y2=\"93\"/><line x1=\"109\" y1=\"77\" x2=\"109\" y2=\"93\"/><line x1=\"150\" y1=\"77\" x2=\"150\" y2=\"93\"/><line x1=\"179\" y1=\"77\" x2=\"179\" y2=\"93\"/><line x1=\"248\" y1=\"77\" x2=\"248\" y2=\"93\"/></g><line x1=\"219\" y1=\"75\" x2=\"219\" y2=\"95\" stroke=\"#b45309\" stroke-width=\"2.6\"/><g font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"40\" y=\"110\">1</text><text x=\"109\" y=\"110\">2</text><text x=\"150\" y=\"110\">3</text><text x=\"179\" y=\"110\">4</text><text x=\"248\" y=\"110\">8</text><text x=\"40\" y=\"66\">0 cm</text><text x=\"109\" y=\"66\">0,7</text><text x=\"150\" y=\"66\">1,1</text></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#b45309\"><text x=\"219\" y=\"110\">6</text><text x=\"219\" y=\"64\">?</text></g><text x=\"25\" y=\"132\" font-size=\"11\" font-weight=\"700\" fill=\"#0f6e56\">graduation en centimètres = ln du nombre</text></svg>",
+      "options": [
+        { "id": "a", "text": "1,8 cm" },
+        { "id": "b", "text": "2,1 cm" },
+        { "id": "c", "text": "0,77 cm" },
+        { "id": "d", "text": "4,2 cm" }
+      ],
+      "correctOption": "a",
+      "explanation": "Sur une telle règle, la position du nombre x est ln x. Il faut donc calculer ln 6 à partir de ln 2 ≈ 0,693 et ln 3 ≈ 1,099. La clé est la factorisation : 6 = 2 × 3, et ln transforme le produit en somme, donc ln 6 = ln 2 + ln 3 ≈ 0,693 + 1,099 = 1,792 ≈ 1,8 cm ✓. Contrôle graphique : 6 doit tomber entre 4 (à ln 4 = 2 ln 2 ≈ 1,4 cm) et 8 (à ln 8 = 3 ln 2 ≈ 2,1 cm), et 1,8 y figure ✓. C'est exactement la propriété qui a fait la fortune historique des tables : sur cette règle, MULTIPLIER deux nombres revient à ADDITIONNER leurs graduations, et c'est pour cela qu'on a pu calculer des produits à la règle avant les machines. La graduation 2,1 cm est la position de 8, obtenue en écrivant 6 = 2 + 4 puis en additionnant les positions de 2 et de 4 : c'est la somme des nombres qui devient somme des positions, alors que seule la MULTIPLICATION le permet — ln(a + b) n'est jamais ln a + ln b. La graduation 0,77 cm est le produit 0,7 × 1,1 : elle multiplie les positions au lieu de les additionner, exactement l'inverse de la règle. La graduation 4,2 cm est 6 × 0,7 : c'est un raisonnement d'échelle ordinaire, proportionnelle, qui placerait 6 six fois plus loin que 1 — or sur une échelle logarithmique les grands nombres se tassent, et l'écart entre 4 et 8 (0,7 cm) est le même que celui entre 1 et 2, alors que l'écart de valeur est huit fois plus grand.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Chasse à l'erreur — la Guilde filtre l'eau d'un puits. Chaque passage dans un filtre retient 30 % des impuretés : après n filtres, la concentration vaut C(n) = 200 × 0,7ⁿ (en mg/L). L'apprenti cherche le plus petit nombre de filtres qui fait descendre la concentration à 5 mg/L au plus. Voici sa copie (on donne ln 0,7 ≈ −0,357 et ln 0,025 ≈ −3,689).\n① Il faut résoudre 200 × 0,7ⁿ ≤ 5, c'est-à-dire 0,7ⁿ ≤ 0,025.\n② La fonction ln est strictement croissante, donc l'inéquation équivaut à n ln 0,7 ≤ ln 0,025.\n③ On divise les deux membres par ln 0,7 : n ≤ ln 0,025/ln 0,7 ≈ 10,34.\n④ Le plus grand entier qui convient est donc n = 10 : dix filtres suffisent.\nUne seule étape contient une erreur : laquelle ?",
+      "options": [
+        { "id": "a", "text": "L'étape ①" },
+        { "id": "b", "text": "L'étape ②" },
+        { "id": "c", "text": "L'étape ③" },
+        { "id": "d", "text": "L'étape ④" }
+      ],
+      "correctOption": "c",
+      "explanation": "L'erreur est à l'étape ③ : on divise par ln 0,7, qui est NÉGATIF (≈ −0,357, car 0,7 < 1 donne ln 0,7 < 0), et diviser une inégalité par un nombre négatif en RENVERSE le sens. La ligne correcte est donc n ≥ ln 0,025/ln 0,7 ≈ 10,34, et non n ≤ 10,34. La conclusion juste est : le plus petit entier convenable est n = 11, il faut ONZE filtres — la copie se trompe donc bien de résultat final. Contrôle numérique, celui qui tranche : avec 10 filtres, 0,7¹⁰ ≈ 0,0282 donc C(10) ≈ 5,65 mg/L, encore au-dessus du seuil ✗ ; avec 11 filtres, 0,7¹¹ ≈ 0,0198 donc C(11) ≈ 3,95 mg/L ≤ 5 ✓. Les trois autres étapes sont irréprochables. L'étape ① est une simple division par 200 (5/200 = 0,025), qui ne change pas le sens de l'inégalité puisque 200 est positif. L'étape ② est exactement le bon usage de la croissance de ln — a ≤ b équivaut à ln a ≤ ln b pour a et b strictement positifs — suivi de la règle ln(aⁿ) = n ln a. L'étape ④ est cohérente avec la ligne ③ telle qu'elle est écrite : elle ne fait que propager la faute, sans en commettre de nouvelle. Retiens le réflexe : dès que la raison d'une suite géométrique est inférieure à 1, son logarithme est négatif, et l'inégalité bascule au moment de la division. Un contrôle de bon sens suffit d'ailleurs à sentir le piège : plus on ajoute de filtres, plus l'eau est propre, donc l'ensemble des solutions ne peut pas être « n petit » — il doit être de la forme « n assez grand ».",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "La Guilde jauge la fatigue d'une poutre par l'indice F(x) = ln x, où x est la charge posée dessus, en tonnes (x > 0). L'indice ne se lit jamais seul : ce qui compte, c'est sa VARIATION quand la charge change. Associe chaque changement de charge à la variation d'indice qu'il provoque.",
+      "options": [
+        { "id": "l1", "text": "La charge est multipliée par 8" },
+        { "id": "l2", "text": "La charge est multipliée par 1,5" },
+        { "id": "l3", "text": "La charge est divisée par 4" },
+        { "id": "r1", "text": "L'indice augmente de 3 ln 2, soit environ 2,079" },
+        { "id": "r2", "text": "L'indice augmente de ln 3 − ln 2, soit environ 0,405" },
+        { "id": "r3", "text": "L'indice diminue de 2 ln 2, soit environ 1,386" }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"]
+        ]
+      },
+      "explanation": "Tout repose sur une seule idée : quand la charge passe de x à kx, la variation d'indice vaut ln(kx) − ln x = ln k. Elle ne dépend donc PAS de la charge de départ, seulement du facteur multiplicatif — c'est ce qui fait d'une échelle logarithmique un instrument de mesure. Premier cas, la charge est multipliée par 8 : la variation vaut ln 8 = ln(2³) = 3 ln 2 ≈ 3 × 0,693 = 2,079, et elle est positive puisque 8 > 1 donc ln 8 > 0 ✓. Deuxième cas, facteur 1,5 = 3/2 : la variation vaut ln(3/2) = ln 3 − ln 2 ≈ 1,099 − 0,693 = 0,405, positive elle aussi mais bien plus modeste — augmenter la charge de moitié coûte cinq fois moins d'indice que la multiplier par 8 ✓. Troisième cas, la charge est divisée par 4 : la variation vaut ln(1/4) = −ln 4 = −2 ln 2 ≈ −1,386, donc l'indice DIMINUE de 1,386 ✓ ; le signe négatif était prévisible sans calcul, car 1/4 < 1 et ln a < 0 dès que 0 < a < 1. Trois pièges à connaître. Le premier est d'associer la division par 4 à une variation positive : décharger une poutre ne peut pas augmenter sa fatigue, et le signe de ln le dit tout seul. Le deuxième est de croire que multiplier par 8 triple l'indice au lieu de lui ajouter 3 ln 2 — ln ne multiplie rien, il ajoute. Le troisième est de traiter le facteur 1,5 comme « la moitié de plus » et d'écrire une variation de ln 1 + ln 0,5 ou de la moitié de ln 3 : la seule écriture correcte est ln(3/2) = ln 3 − ln 2, le QUOTIENT devenant différence. Contrôle final : les trois variations sont rangées dans l'ordre 2,079 > 0,405 > −1,386, ce qui suit exactement l'ordre des facteurs 8 > 1,5 > 0,25, comme l'impose la stricte croissance de ln ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans la cave de la Guilde, une culture de levure double de taille toutes les heures : au bout de n heures, sa population est 2ⁿ fois la population de départ. Le maître levurier veut savoir au bout de combien d'heures la population aura dépassé mille fois sa taille initiale. On donne ln 2 ≈ 0,693 et ln 1000 ≈ 6,908. Donne un nombre entier d'heures.",
+      "answerKey": { "value": 10, "unit": "h" },
+      "explanation": "On cherche le plus petit entier n tel que 2ⁿ > 1000. Les deux membres sont strictement positifs, donc on peut appliquer ln, qui est strictement croissante et conserve le sens de l'inégalité : 2ⁿ > 1000 équivaut à ln(2ⁿ) > ln 1000, c'est-à-dire n ln 2 > ln 1000 d'après la règle ln(aᵖ) = p ln a. Ici ln 2 ≈ 0,693 est POSITIF, donc la division ne renverse rien : n > 6,908/0,693 ≈ 9,97. Le plus petit entier qui convient est donc n = 10 ✓. Contrôle par le calcul direct, indispensable : 2⁹ = 512, qui n'atteint pas 1000 ✗, tandis que 2¹⁰ = 1024 > 1000 ✓ — la levure franchit le cap pendant la dixième heure. Deux pièges classiques. Le premier est de répondre 9 en tronquant 9,97 : quand l'inéquation est n > 9,97, le bon entier est l'entier IMMÉDIATEMENT SUPÉRIEUR, jamais la partie entière. Le second est de croire qu'il faut mille fois plus de temps pour être mille fois plus nombreux, et de répondre 1000 : le logarithme sert précisément à mesurer cet écart entre ce qui multiplie et ce qui s'ajoute — mille fois plus de levure ne coûte que dix heures, et un million de fois plus n'en coûterait que vingt, puisque ln 1000000 = 2 ln 1000.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Le cartographe de la Guilde vient de tracer la courbe de la fonction ln sur son parchemin et relit ses annotations avant de les graver dans la pierre. Sélectionne TOUTES les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La courbe coupe l'axe des abscisses en un seul point, celui d'abscisse 1"
+        },
+        {
+          "id": "b",
+          "text": "Quand x tend vers 0 par valeurs supérieures, la courbe plonge indéfiniment vers le bas : l'axe des ordonnées est asymptote verticale"
+        },
+        {
+          "id": "c",
+          "text": "La courbe admet une asymptote horizontale en +∞, puisque ln croît de plus en plus lentement"
+        },
+        {
+          "id": "d",
+          "text": "Tout réel, si grand soit-il, est l'image par ln d'un réel strictement positif et d'un seul"
+        },
+        {
+          "id": "e",
+          "text": "La fonction ln est définie sur ℝ privé de 0, car la seule valeur interdite est celle qui annulerait 1/x"
+        }
+      ],
+      "answerKey": { "correct": ["a", "b", "d"] },
+      "explanation": "Trois annotations sur cinq sont bonnes à graver. La première : ln est STRICTEMENT croissante sur ]0, +∞[, donc elle ne peut prendre la valeur 0 qu'une seule fois, et comme ln 1 = 0 (l'aire de 1 à 1 est nulle), l'unique point d'intersection avec l'axe des abscisses est bien celui d'abscisse 1 ✓. La deuxième : lim_{x→0⁺} ln x = −∞, résultat du cours obtenu en écrivant ln x = −ln(1/x), donc la courbe descend sans fin le long de l'axe des ordonnées, qui est asymptote verticale ✓. La quatrième est la lecture graphique du théorème de bijection : ln réalise une bijection strictement croissante de ]0, +∞[ sur ℝ TOUT ENTIER, donc chaque réel — 5, 100, un milliard — est atteint exactement une fois ✓ ; c'est ce théorème qui légitime le nombre e, unique solution de ln x = 1. En revanche, l'annotation sur l'asymptote horizontale est fausse et c'est le contresens majeur du chapitre : ln croît bien de plus en plus lentement, sa dérivée 1/x tendant vers 0, mais elle croît quand même SANS BORNE, car lim_{x→+∞} ln x = +∞ — la démonstration du cours le prouve, puisque ln(2ⁿ) ≥ n/2 dépasse tout réel. Une pente qui s'aplatit ne signifie donc pas une courbe qui plafonne ; il faut simplement aller très loin, ln x n'atteignant 10 qu'aux alentours de x = 22 000. Enfin, dire que ln est définie sur ℝ privé de 0 confond l'ensemble de définition de ln avec celui de la fonction t ↦ 1/t qui lui a donné naissance : ln x est l'AIRE sous 1/t entre 1 et x, et cette aire n'a de sens que si l'on reste du côté positif, là où l'hyperbole vit. Un nombre négatif n'a pas de logarithme — ce qui explique au passage l'identité ln(x²) = 2 ln|x|, où la valeur absolue est indispensable.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "QCM visuel — sur le parchemin, l'hyperbole y = 1/t et deux zones coloriées : la zone A, entre t = 1 et t = 2, et la zone B, entre t = 2 et t = 4. Quelle relation lie leurs aires ? <svg viewBox=\"0 0 340 200\"><polygon points=\"100,165 100,75 115,93 130,105 145,114 160,120 160,165\" fill=\"#0f6e56\" fill-opacity=\"0.22\"/><polygon points=\"160,165 160,120 190,129 220,135 250,139 280,143 280,165\" fill=\"#b45309\" fill-opacity=\"0.22\"/><path d=\"M45 165 H330\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M330 165 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M60 185 V40\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M60 40 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><path d=\"M88 62 L100 75 L115 93 L130 105 L145 114 L160 120 L190 129 L220 135 L250 139 L280 143 L310 146\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><g stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"><line x1=\"100\" y1=\"75\" x2=\"100\" y2=\"165\"/><line x1=\"160\" y1=\"120\" x2=\"160\" y2=\"165\"/><line x1=\"280\" y1=\"143\" x2=\"280\" y2=\"165\"/></g><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"100\" y=\"181\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"160\" y=\"181\" text-anchor=\"middle\" fill=\"#0f172a\">2</text><text x=\"280\" y=\"181\" text-anchor=\"middle\" fill=\"#0f172a\">4</text><text x=\"52\" y=\"181\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"128\" y=\"150\" text-anchor=\"middle\" fill=\"#0f6e56\">A</text><text x=\"218\" y=\"157\" text-anchor=\"middle\" fill=\"#b45309\">B</text><text x=\"286\" y=\"132\" fill=\"#0f6e56\">y = 1/t</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "A = B" },
+        { "id": "b", "text": "B = 2A" },
+        { "id": "c", "text": "B = A/2" },
+        { "id": "d", "text": "B = A²" }
+      ],
+      "correctOption": "a",
+      "explanation": "Chaque zone se lit directement avec la définition ln x = ∫₁ˣ dt/t. La zone A, entre t = 1 et t = 2, vaut donc A = ln 2 ≈ 0,693. La zone B, entre t = 2 et t = 4, est la différence de deux aires prises depuis 1 : B = ln 4 − ln 2 = ln(4/2) = ln 2 ≈ 0,693. Les deux zones ont donc exactement la même aire ✓, alors que la figure les montre très différentes : A est étroite et haute, B est deux fois plus large mais nettement plus basse, et les deux effets se compensent au millième près. La règle générale, qui est le cœur du chapitre : l'aire sous l'hyperbole entre a et ka vaut ln(ka) − ln a = ln k, quelle que soit la valeur de a — elle ne dépend que du RAPPORT des bornes, jamais de leur position. C'est cette invariance qui aligne la progression géométrique 1, 2, 4, 8, 16 sur la progression arithmétique 0, ln 2, 2 ln 2, 3 ln 2, 4 ln 2, exactement la table que Stifel avait entrevue en 1544. La relation B = 2A est le réflexe des aires ordinaires : la largeur double, donc l'aire double — vrai sous une droite horizontale, faux sous une hyperbole qui s'effondre en 1/t. La relation B = A/2 sur-corrige dans l'autre sens, comme si seule la hauteur comptait. La relation B = A² n'a même pas la bonne dimension : élever une aire au carré ne produit pas une aire, et ici elle donnerait 0,48, ce qu'aucun découpage ne justifie. Contrôle rapide à retenir : entre 4 et 8, puis entre 8 et 16, on retrouverait encore et toujours ln 2 ≈ 0,693.",
+      "difficulty": 3
+    }
+  ]
+}
