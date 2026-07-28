@@ -9,22 +9,46 @@
     {
       "prompt": "Texte à trous — un capital placé à intérêts continus vaut C(t) = 2000 e^(0,05t) dinars au bout de t années (t ≥ 0). Le capital a exactement doublé à l'instant t = ____ années.",
       "options": [
-        { "id": "a", "text": "20 ln 2 ≈ 13,9" },
-        { "id": "b", "text": "40" },
-        { "id": "c", "text": "ln 2 ≈ 0,69" },
-        { "id": "d", "text": "0,05 × ln 2 ≈ 0,035" }
+        {
+          "id": "a",
+          "text": "20 ln 2 ≈ 13,9"
+        },
+        {
+          "id": "b",
+          "text": "40"
+        },
+        {
+          "id": "c",
+          "text": "ln 2 ≈ 0,69"
+        },
+        {
+          "id": "d",
+          "text": "0,05 × ln 2 ≈ 0,035"
+        }
       ],
       "correctOption": "a",
-      "explanation": "Doubler, c'est atteindre 4000 dinars : on résout 2000 e^(0,05t) = 4000, soit e^(0,05t) = 2. Comme 2 > 0, l'équation e^A = k équivaut à A = ln k : ici 0,05t = ln 2, donc t = (ln 2)/0,05 = 20 ln 2 ≈ 20 × 0,693 = 13,86 années ✓. Contrôle numérique : 0,05 × 13,86 = 0,693 et e^(0,693) ≈ 2, donc C ≈ 2000 × 2 = 4000 ✓. Remarque utile pour tout le chapitre : le temps de doublement ne dépend PAS du capital de départ — les 2000 dinars se simplifient dès la première ligne, et un placement de 5000 dinars au même taux doublerait aussi en 13,86 ans. La valeur 40 résout 0,05t = 2 : elle prend le rapport 2 pour l'exposant, en oubliant le passage au logarithme — l'exposant qui donne 2 n'est pas 2, c'est ln 2. La valeur ln 2 ≈ 0,69 s'arrête à l'exposant 0,05t = ln 2 sans isoler t : il reste à diviser par 0,05, c'est-à-dire à multiplier par 20. La valeur 0,05 × ln 2 multiplie au lieu de diviser ; l'ordre de grandeur la dénonce, 0,035 année valant à peine treize jours pour doubler un capital à 5 % par an.",
+      "explanation": "Doubler, c'est atteindre 4000 dinars : on résout 2000 e^(0,05t) = 4000, soit e^(0,05t) = 2. Comme 2 > 0, l'équation e^A = k équivaut à A = ln k : ici 0,05t = ln 2, donc t = (ln 2)/0,05 = 20 ln 2 ≈ 20 × 0,693 = 13,86 années, soit ≈ 13,9 années ✓. Contrôle numérique : 0,05 × 13,86 = 0,693 et e^(0,693) ≈ 2, donc C ≈ 2000 × 2 = 4000 ✓. Remarque utile pour tout le chapitre : le temps de doublement ne dépend PAS du capital de départ — les 2000 dinars se simplifient dès la première ligne, et un placement de 5000 dinars au même taux doublerait aussi en 13,86 ans. La valeur 40 résout 0,05t = 2 : elle prend le rapport 2 pour l'exposant, en oubliant le passage au logarithme — l'exposant qui donne 2 n'est pas 2, c'est ln 2. La valeur ln 2 ≈ 0,69 s'arrête à l'exposant 0,05t = ln 2 sans isoler t : il reste à diviser par 0,05, c'est-à-dire à multiplier par 20. La valeur 0,05 × ln 2 multiplie au lieu de diviser ; l'ordre de grandeur la dénonce, 0,035 année valant à peine treize jours pour doubler un capital à 5 % par an.",
       "difficulty": 1
     },
     {
       "prompt": "QCM visuel — la figure montre la courbe de exp (en vert), celle de ln (en orange) et la droite Δ : y = x (en pointillés). Le point A, d'abscisse 2, appartient à C_exp : ses coordonnées sont donc (2 ; e²), avec e² ≈ 7,39. Quel est le symétrique de A par rapport à Δ ? <svg viewBox=\"0 0 240 265\"><path d=\"M15 210 H232\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M232 210 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M60 258 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M60 12 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><path d=\"M20 250 L220 50\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><polyline points=\"20,207.3 40,202.6 50,197.9 60,190 70,177 80,155.6 90,120.4 100,62.2 105,20.2\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"62.7,250 67.4,230 72.1,220 80,210 93,200 114.4,190 149.6,180 207.8,170\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"100\" cy=\"62.2\" r=\"3.8\" fill=\"#0f172a\"/><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"86\" y=\"60\" fill=\"#0f172a\">A</text><text x=\"110\" y=\"30\" fill=\"#0f6e56\">C_exp</text><text x=\"200\" y=\"163\" text-anchor=\"end\" fill=\"#b45309\">C_ln</text><text x=\"140\" y=\"78\" text-anchor=\"middle\" fill=\"#94a3b8\">Δ : y = x</text><text x=\"80\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"54\" y=\"194\" text-anchor=\"end\" fill=\"#0f172a\">1</text></g></svg>",
       "options": [
-        { "id": "a", "text": "Le point (e² ; 2), soit environ (7,39 ; 2), qui appartient à C_ln" },
-        { "id": "b", "text": "Le point (2 ; ln 2), soit environ (2 ; 0,69)" },
-        { "id": "c", "text": "Le point (−2 ; e²), soit environ (−2 ; 7,39)" },
-        { "id": "d", "text": "Le point (e^(−2) ; −2), soit environ (0,135 ; −2)" }
+        {
+          "id": "a",
+          "text": "Le point (e² ; 2), soit environ (7,39 ; 2), qui appartient à C_ln"
+        },
+        {
+          "id": "b",
+          "text": "Le point (2 ; ln 2), soit environ (2 ; 0,69)"
+        },
+        {
+          "id": "c",
+          "text": "Le point (−2 ; e²), soit environ (−2 ; 7,39)"
+        },
+        {
+          "id": "d",
+          "text": "Le point (e^(−2) ; −2), soit environ (0,135 ; −2)"
+        }
       ],
       "correctOption": "a",
       "explanation": "La symétrie par rapport à la première bissectrice Δ : y = x ÉCHANGE les deux coordonnées : le symétrique de (α ; β) est (β ; α). Le symétrique de A(2 ; e²) est donc (e² ; 2) ✓. Et ce point est bien sur C_ln, car ln(e²) = 2 — c'est exactement la définition de exp comme réciproque de ln, lue géométriquement : les deux courbes se déduisent l'une de l'autre par le pliage le long de Δ. Contrôle numérique : e² ≈ 7,389 et ln(7,389) ≈ 2 ✓ ; sur la figure, le point cherché se lit loin à droite (abscisse d'environ 7,4) et à faible hauteur (ordonnée 2), c'est-à-dire sur la branche orange ✓. Le point (2 ; ln 2) est sur C_ln, mais ce n'est pas le symétrique de A : c'est le point de C_ln de même ABSCISSE que A. La symétrie par rapport à Δ ne conserve pas l'abscisse, elle l'échange avec l'ordonnée. Le point (−2 ; e²) est le symétrique de A par rapport à l'axe des ordonnées, pas par rapport à Δ. Le point (e^(−2) ; −2) est le symétrique par rapport à Δ du point (−2 ; e^(−2)), c'est-à-dire d'un AUTRE point de C_exp, celui d'abscisse −2. Retiens le geste : pour passer de C_exp à C_ln, on échange les coordonnées, jamais on ne change un signe.",
@@ -33,10 +57,22 @@
     {
       "prompt": "Chasse à l'erreur — un échantillon radioactif a une masse m(t) = 12 e^(−0,08t) grammes au jour t. Voici la copie d'un élève qui cherche la demi-vie T, c'est-à-dire l'instant où la masse est réduite de moitié.\n① La masse initiale vaut m(0) = 12 g, donc T vérifie m(T) = 6.\n② L'équation s'écrit 12 e^(−0,08T) = 6, soit e^(−0,08T) = 1/2.\n③ Donc −0,08T = ln(1/2) = ln 2, d'où T = −(ln 2)/0,08.\n④ Numériquement, T ≈ −8,7 jours.\nUne seule étape contient une erreur : laquelle ?",
       "options": [
-        { "id": "a", "text": "L'étape ①" },
-        { "id": "b", "text": "L'étape ②" },
-        { "id": "c", "text": "L'étape ③" },
-        { "id": "d", "text": "L'étape ④" }
+        {
+          "id": "a",
+          "text": "L'étape ①"
+        },
+        {
+          "id": "b",
+          "text": "L'étape ②"
+        },
+        {
+          "id": "c",
+          "text": "L'étape ③"
+        },
+        {
+          "id": "d",
+          "text": "L'étape ④"
+        }
       ],
       "correctOption": "c",
       "explanation": "L'erreur est à l'étape ③, et le résultat final de la copie est bel et bien faux. Le passage au logarithme est correct — e^A = k avec k > 0 équivaut à A = ln k — mais la valeur de ln(1/2) est fausse : ln(1/2) = ln 1 − ln 2 = −ln 2, et non +ln 2. On a donc −0,08T = −ln 2, d'où T = (ln 2)/0,08 = 0,693/0,08 ≈ 8,7 jours ✓, un nombre POSITIF. Contrôle : m(8,7) = 12 e^(−0,08 × 8,7) = 12 e^(−0,696) ≈ 12 × 0,4986 ≈ 5,98 ≈ 6 g ✓. Le tell est physique autant que mathématique : une demi-vie négative signifierait que l'échantillon a perdu la moitié de sa masse AVANT le début de l'expérience — dès que ton résultat contredit le sens de l'énoncé, remonte les signes. Les autres étapes sont justes. L'étape ① lit correctement m(0) = 12 e^0 = 12 et traduit « réduite de moitié » par m(T) = 6. L'étape ② divise les deux membres par 12, ce qui donne bien 6/12 = 1/2. L'étape ④ est arithmétiquement exacte : elle ne fait que propager la faute de signe commise en ③, et c'est le piège de ce format — la ligne où l'absurdité SAUTE aux yeux n'est presque jamais celle où la faute a été commise.",
@@ -46,9 +82,18 @@
       "type": "matching",
       "prompt": "Trois capteurs du laboratoire suivent trois modèles différents, tous définis pour t ≥ 0 (t en heures). Associe chaque modèle au comportement qu'il décrit sur [0 ; +∞[.",
       "options": [
-        { "id": "l1", "text": "f(t) = 200 e^(−0,3t)" },
-        { "id": "l2", "text": "g(t) = 200 e^(0,3t)" },
-        { "id": "l3", "text": "h(t) = 200(1 − e^(−0,3t))" },
+        {
+          "id": "l1",
+          "text": "f(t) = 200 e^(−0,3t)"
+        },
+        {
+          "id": "l2",
+          "text": "g(t) = 200 e^(0,3t)"
+        },
+        {
+          "id": "l3",
+          "text": "h(t) = 200(1 − e^(−0,3t))"
+        },
         {
           "id": "r1",
           "text": "Part de 200 et décroît vers 0, sans jamais atteindre 0"
@@ -64,9 +109,18 @@
       ],
       "answerKey": {
         "pairs": [
-          ["l1", "r1"],
-          ["l2", "r2"],
-          ["l3", "r3"]
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
         ]
       },
       "explanation": "Tout se décide en deux gestes : évaluer en t = 0, puis chercher la limite en +∞. Pour f(t) = 200 e^(−0,3t) : f(0) = 200 e^0 = 200, et comme −0,3t → −∞, on a e^(−0,3t) → 0, donc f(t) → 0. La décroissance est stricte (f est de la forme e^u avec u′ = −0,3 < 0), et f(t) reste strictement positive pour tout t : la valeur 0 est une LIMITE, jamais atteinte — c'est le modèle de désintégration ou de refroidissement. Pour g(t) = 200 e^(0,3t) : g(0) = 200 également, mais cette fois 0,3t → +∞, donc g(t) → +∞ : croissance sans plafond, le modèle de population libre ou de capital à intérêts continus. Pour h(t) = 200(1 − e^(−0,3t)) : h(0) = 200(1 − 1) = 0, et quand t → +∞ le terme e^(−0,3t) tend vers 0, donc h(t) → 200(1 − 0) = 200. Comme e^(−0,3t) > 0, on a toujours h(t) < 200 : la valeur 200 est un plafond asymptotique jamais atteint — c'est la charge d'un condensateur, ou le remplissage d'un réservoir qui ralentit. Contrôle numérique en t = 10 : e^(−3) ≈ 0,0498, donc f(10) ≈ 9,96, g(10) = 200 e³ ≈ 4017 et h(10) ≈ 200 × 0,950 = 190,0 ✓ — trois trajectoires nettement séparées. Les deux confusions classiques que ce tri fait tomber : lire f et g comme la même chose parce qu'elles ont la même valeur initiale, alors que c'est le SIGNE de l'exposant qui décide de tout ; et croire que h finit par dépasser 200 parce qu'elle monte, alors qu'une exponentielle strictement positive interdit à la parenthèse d'atteindre 1.",
@@ -75,7 +129,10 @@
     {
       "type": "numeric",
       "prompt": "Un plat sorti du four refroidit selon la loi T(t) = 20 + 75 e^(−0,04t), où T est la température en degrés Celsius et t le temps en minutes (t ≥ 0). Au bout de combien de minutes le plat atteint-il 45 °C ? Donne le résultat en minutes, arrondi à l'entier le plus proche.",
-      "answerKey": { "value": 27, "unit": "min" },
+      "answerKey": {
+        "value": 27,
+        "unit": "min"
+      },
       "explanation": "On résout T(t) = 45, c'est-à-dire 20 + 75 e^(−0,04t) = 45. On isole d'abord l'exponentielle — c'est le réflexe : 75 e^(−0,04t) = 25, donc e^(−0,04t) = 25/75 = 1/3. Comme 1/3 > 0, on passe au logarithme : −0,04t = ln(1/3) = −ln 3, d'où t = (ln 3)/0,04 = 1,0986/0,04 = 27,46 minutes, soit 27 minutes après arrondi à l'entier le plus proche ✓. Contrôle numérique : T(27) = 20 + 75 e^(−1,08) = 20 + 75 × 0,3396 = 20 + 25,47 = 45,5 °C, et T(28) = 20 + 75 e^(−1,12) = 20 + 75 × 0,3263 = 44,5 °C : la température traverse bien 45 °C entre 27 et 28 minutes, plus près de 27 ✓. Deux erreurs à éviter absolument. La première consiste à écrire e^(−0,04t) = 45/75 sans avoir retranché le 20 : le terme constant 20 est la température de la PIÈCE, la limite vers laquelle le plat tend, et le modèle ne décroît vers 0 que pour l'ÉCART de température T(t) − 20. La seconde est le signe : ln(1/3) vaut −ln 3, et oublier ce signe donnerait un temps négatif, absurde pour un refroidissement qui commence à T(0) = 95 °C. Note d'ailleurs que le plat ne redescendra jamais à 20 °C exactement : e^(−0,04t) > 0 pour tout t, donc T(t) > 20 toujours.",
       "difficulty": 2
     },
@@ -104,17 +161,35 @@
           "text": "Au bout de 40 années, le modèle donne un effectif négatif"
         }
       ],
-      "answerKey": { "correct": ["a", "c", "d"] },
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
       "explanation": "L'effectif initial se lit en t = 0 : P(0) = 4000 e^0 = 4000 poissons ✓ — c'est toujours le coefficient placé devant l'exponentielle. La stricte positivité est la propriété fondatrice du chapitre : e^(−0,15t) > 0 pour tout réel, donc P(t) > 0 quel que soit t ✓ ; la population décroît vers 0 sans jamais l'atteindre, et le modèle exponentiel ne décrit donc jamais une extinction en temps fini — une limite n'est pas une valeur atteinte. Le temps de demi-vie se calcule en résolvant 4000 e^(−0,15t) = 2000, soit e^(−0,15t) = 1/2, donc −0,15t = −ln 2 et t = (ln 2)/0,15 = 0,693/0,15 ≈ 4,62 années ✓ ; contrôle : P(4,62) = 4000 e^(−0,693) ≈ 4000 × 0,5 = 2000 ✓. En revanche, « perdre 15 % par an » est faux, et c'est le piège le plus rentable du modèle continu : d'une année à la suivante, le facteur multiplicatif vaut P(t + 1)/P(t) = e^(−0,15) ≈ 0,8607, ce qui correspond à une baisse d'environ 13,9 %, pas 15 %. Le coefficient 0,15 est un TAUX CONTINU, pas un pourcentage annuel — et il ne coïncide avec lui que pour de très petites valeurs. Enfin, un effectif négatif est impossible pour la même raison que ci-dessus : P(40) = 4000 e^(−6) ≈ 4000 × 0,00248 ≈ 9,9 poissons, un nombre petit mais strictement positif ✓ — l'exponentielle s'écrase, elle ne traverse jamais l'axe.",
       "difficulty": 2
     },
     {
       "prompt": "QCM visuel — la courbe verte représente la concentration d'un médicament dans le sang, modélisée par C(t) = C₀ e^(−kt) (C en milligrammes par litre, t en heures, k > 0). On lit sur la figure C(0) = 90 mg/L et C(3) = 30 mg/L. Que vaut la constante k ? <svg viewBox=\"0 0 260 200\"><path d=\"M45 165 H250\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M250 165 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M45 185 V22\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M45 22 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><line x1=\"45\" y1=\"124.5\" x2=\"120\" y2=\"124.5\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><line x1=\"120\" y1=\"124.5\" x2=\"120\" y2=\"165\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><line x1=\"45\" y1=\"43.5\" x2=\"62\" y2=\"43.5\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><polyline points=\"45,43.5 70,80.8 95,106.5 120,124.5 145,136.9 170,145.6 195,151.5 220,155.6 245,158.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"45\" cy=\"43.5\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"120\" cy=\"124.5\" r=\"3.5\" fill=\"#0f172a\"/><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"40\" y=\"47.5\" text-anchor=\"end\" fill=\"#0f172a\">90</text><text x=\"40\" y=\"128.5\" text-anchor=\"end\" fill=\"#0f172a\">30</text><text x=\"120\" y=\"180\" text-anchor=\"middle\" fill=\"#0f172a\">3</text><text x=\"238\" y=\"180\" text-anchor=\"middle\" fill=\"#0f172a\">t</text><text x=\"196\" y=\"140\" fill=\"#0f6e56\">C_f</text></g></svg>",
       "options": [
-        { "id": "a", "text": "k = (ln 3)/3 ≈ 0,366" },
-        { "id": "b", "text": "k = ln 3 ≈ 1,099" },
-        { "id": "c", "text": "k = 20" },
-        { "id": "d", "text": "k = −(ln 3)/3 ≈ −0,366" }
+        {
+          "id": "a",
+          "text": "k = (ln 3)/3 ≈ 0,366"
+        },
+        {
+          "id": "b",
+          "text": "k = ln 3 ≈ 1,099"
+        },
+        {
+          "id": "c",
+          "text": "k = 20"
+        },
+        {
+          "id": "d",
+          "text": "k = −(ln 3)/3 ≈ −0,366"
+        }
       ],
       "correctOption": "a",
       "explanation": "Deux lectures suffisent. La première donne C₀ : C(0) = C₀ e^0 = C₀ = 90 mg/L. La seconde fournit l'équation : C(3) = 90 e^(−3k) = 30, donc e^(−3k) = 30/90 = 1/3. On passe au logarithme : −3k = ln(1/3) = −ln 3, d'où k = (ln 3)/3 = 1,0986/3 ≈ 0,366 ✓ (l'unité est l'inverse d'une heure, h⁻¹). Contrôle : avec cette valeur, C(6) = 90 e^(−6 × 0,366) = 90 e^(−2,197) = 90 × 0,1111 = 10 mg/L, c'est-à-dire encore un tiers de C(3) — la lecture graphique confirme bien une concentration proche de 10 à t = 6 ✓. C'est la signature du modèle exponentiel : sur des intervalles de même durée, la concentration est multipliée par le même facteur, ici 1/3 toutes les trois heures. La valeur ln 3 ≈ 1,099 s'arrête à l'exposant : il reste à diviser par 3 pour isoler k. Avec k = 1,099, la concentration à t = 3 vaudrait 90 e^(−3,3) ≈ 3,3 mg/L, très loin des 30 lus sur la figure. La valeur 20 est la pente moyenne (90 − 30)/3, exprimée en mg/L par heure : c'est le taux de décroissance MOYEN d'un modèle affine, pas la constante k d'un modèle exponentiel — les unités le disent, k est en h⁻¹ et se lit dans l'exposant, pas sur l'axe des ordonnées. La valeur négative provient d'un signe perdu en écrivant ln(1/3) = ln 3 ; elle est immédiatement absurde, car un k négatif transformerait C en fonction CROISSANTE, alors que la courbe descend.",

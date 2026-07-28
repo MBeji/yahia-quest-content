@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Équations différentielles",
+  "questions": [
+    {
+      "prompt": "Résoudre dans ℝ l'équation différentielle y′ = ay, c'est déterminer :",
+      "options": [
+        {
+          "id": "a",
+          "text": "toutes les fonctions dérivables sur ℝ qui vérifient y′ = ay"
+        },
+        {
+          "id": "b",
+          "text": "l'unique fonction dérivable sur ℝ qui vérifie y′ = ay"
+        },
+        {
+          "id": "c",
+          "text": "tous les réels x qui vérifient y′ = ay"
+        },
+        {
+          "id": "d",
+          "text": "la dérivée de la fonction y"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "C'est le vocabulaire du cours : dans une équation différentielle, l'inconnue est une FONCTION, et résoudre signifie trouver toutes les fonctions dérivables sur ℝ qui vérifient l'égalité pour tout x ✓. L'option b oublie qu'il n'y a pas une solution mais toute une famille : y′ = −y admet déjà e^(−x), −2e^(−x), 0,5e^(−x)… L'option c cherche des nombres, comme dans 2x + 5 = 13 : c'est précisément la différence avec une équation numérique. L'option d confond résoudre l'équation avec le calcul d'une dérivée, qui est l'opération inverse.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'ensemble des solutions sur ℝ de l'équation différentielle y′ = 5y est l'ensemble des fonctions :",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ 5e^(kx), k ∈ ℝ"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ e^(5x)"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ ke^(−5x), k ∈ ℝ"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ ke^(5x), k ∈ ℝ"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "D'après le théorème du cours, les solutions de y′ = ay sont les fonctions x ↦ ke^(ax) ; ici a = 5, donc x ↦ ke^(5x) ✓. Vérification : (ke^(5x))′ = 5ke^(5x), qui est bien 5 fois la fonction. L'option b oublie le facteur k et ne donne qu'UNE solution sur une infinité. L'option c inverse le signe de l'exposant : (ke^(−5x))′ = −5ke^(−5x), c'est une solution de y′ = −5y. L'option a place le paramètre dans l'exposant et le coefficient devant : (5e^(kx))′ = 5ke^(kx) = k × y, ce qui ne vaut 5y que pour la seule valeur k = 5.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La fonction f définie sur ℝ par f(x) = 3e^(−4x) est solution de l'équation différentielle :",
+      "options": [
+        {
+          "id": "a",
+          "text": "y′ = −4y"
+        },
+        {
+          "id": "b",
+          "text": "y′ = −3y"
+        },
+        {
+          "id": "c",
+          "text": "y′ = 3y"
+        },
+        {
+          "id": "d",
+          "text": "y′ = 4y"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On dérive et on réinjecte : f′(x) = 3 × (−4)e^(−4x) = −12e^(−4x), et −4f(x) = −4 × 3e^(−4x) = −12e^(−4x). Les deux expressions coïncident pour tout x, donc f est solution de y′ = −4y ✓. Le coefficient a est celui qui apparaît DANS l'exposant, pas devant l'exponentielle : les options b et c prennent le facteur 3 pour a, alors qu'il joue le rôle de k. L'option d garde la bonne valeur absolue mais perd le signe moins de l'exposant : ses solutions sont les x ↦ ke^(4x), qui croissent au lieu de décroître.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur ℝ, les solutions de l'équation différentielle y′ = 2x + 1 sont les fonctions :",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ ke^(2x + 1), k ∈ ℝ"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ x² + x"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ x² + x + c, c ∈ ℝ"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ 2x² + x + c, c ∈ ℝ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ici le second membre ne dépend que de x : résoudre y′ = f(x), c'est chercher les PRIMITIVES de f. Une primitive de 2x + 1 est x² + x, donc les solutions sont les x ↦ x² + x + c, c ∈ ℝ ✓ (contrôle : (x² + x + c)′ = 2x + 1 ✓). L'option b oublie la constante c et ne retient qu'une solution parmi une infinité. L'option d ne divise pas le coefficient : (2x² + x + c)′ = 4x + 1, pas 2x + 1. L'option a applique la formule ke^(ax) alors que l'équation n'est pas du type y′ = ay : ici l'inconnue y n'apparaît pas au second membre.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'équation différentielle y′ = 3y − 6 admet une solution constante. Quelle est la valeur de cette constante ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−6"
+        },
+        {
+          "id": "b",
+          "text": "−2"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Si y est la fonction constante égale à c, alors y′ = 0 et l'équation devient 0 = 3c − 6, donc c = 2 ✓. C'est la formule −b/a du cours avec a = 3 et b = −6 : −(−6)/3 = 2. Contrôle imposé par le cours : la constante trouvée doit annuler ay + b, et 3 × 2 − 6 = 0 ✓. L'option b applique b/a au lieu de −b/a et donne −2 : or 3 × (−2) − 6 = −12 ≠ 0. L'option a recopie b et l'option d son opposé, sans jamais diviser par a : 3 × 6 − 6 = 12 ≠ 0.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Combien l'équation différentielle y′ = 2y admet-elle de solutions f vérifiant f(0) = 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "aucune"
+        },
+        {
+          "id": "b",
+          "text": "exactement une"
+        },
+        {
+          "id": "c",
+          "text": "exactement deux"
+        },
+        {
+          "id": "d",
+          "text": "une infinité"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les solutions de y′ = 2y sont les x ↦ ke^(2x). La condition f(0) = 1 s'écrit ke^0 = k = 1 : elle fixe k sans ambiguïté, donc il reste exactement une solution, f(x) = e^(2x) ✓ (contrôle : f′(x) = 2e^(2x) = 2f(x) ✓ et f(0) = 1 ✓). L'option d décrit la situation AVANT la condition initiale : la famille est infinie, mais une condition en sélectionne une seule. L'option a oublie que k = 1 convient. L'option c n'a pas de sens ici : l'équation ke^0 = 1 est du premier degré en k et n'a qu'une racine.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résoudre dans ℝ l'équation différentielle 3y′ + y = 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ ke^(−3x), k ∈ ℝ"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ ke^(−x/3), k ∈ ℝ"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ ke^(x/3), k ∈ ℝ"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ ke^(3x), k ∈ ℝ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Premier geste : isoler y′ en divisant par le coefficient de y′, ici 3. On obtient y′ = −(1/3)y, donc a = −1/3 et les solutions sont les x ↦ ke^(−x/3) ✓. Vérification : f′(x) = −(k/3)e^(−x/3), donc 3f′(x) + f(x) = −ke^(−x/3) + ke^(−x/3) = 0 ✓. L'option a prend pour a le coefficient 3 lu tel quel au lieu de son inverse. L'option c oublie le signe moins : elle résout 3y′ − y = 0. L'option d cumule les deux erreurs, coefficient non divisé et signe perdu.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'ensemble des solutions sur ℝ de l'équation différentielle y′ = −2y + 8 est l'ensemble des fonctions :",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ ke^(2x) + 4, k ∈ ℝ"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ ke^(−2x) − 4, k ∈ ℝ"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ ke^(−2x) + 4, k ∈ ℝ"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ ke^(−2x) + 8, k ∈ ℝ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'équation est du type y′ = ay + b avec a = −2 et b = 8, donc les solutions sont les x ↦ ke^(ax) − b/a, soit x ↦ ke^(−2x) + 4 puisque −b/a = −8/(−2) = 4 ✓. Vérification : f′(x) = −2ke^(−2x) et −2f(x) + 8 = −2ke^(−2x) − 8 + 8 = −2ke^(−2x) ✓. L'option b prend +b/a = −4 : le terme constant a le mauvais signe. L'option d recopie b sans le diviser par a. L'option a garde la bonne constante mais inverse le signe de l'exposant : sa dérivée vaut 2ke^(2x), alors que −2y + 8 vaut −2ke^(2x), soit exactement l'opposé.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la solution sur ℝ de l'équation différentielle y′ = −y vérifiant f(1) = 2. Alors f est la fonction :",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ 2e^(x − 1)"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ 2e^(1 − x)"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ 2e^(−x)"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ 2e^(−x − 1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La formule du cours donne x ↦ y₀e^(a(x − x₀)) avec a = −1, x₀ = 1 et y₀ = 2, soit f(x) = 2e^(−(x − 1)) = 2e^(1 − x) ✓. Double contrôle : f′(x) = −2e^(1 − x) = −f(x) ✓ et f(1) = 2e^0 = 2 ✓. L'option a vérifie bien f(1) = 2 mais sa dérivée vaut +f : c'est une solution de y′ = y. Les options c et d sont bien solutions de y′ = −y, mais elles ratent la condition : la première applique la valeur 2 en 0 au lieu de 1 (elle donne f(1) = 2e^(−1)), la seconde utilise k = y₀e^(ax₀) au lieu de y₀e^(−ax₀).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit k un réel strictement négatif et f la fonction définie sur ℝ par f(x) = ke^(−2x), solution de y′ = −2y. Que peut-on affirmer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est croissante sur ℝ"
+        },
+        {
+          "id": "b",
+          "text": "f est décroissante sur ℝ"
+        },
+        {
+          "id": "c",
+          "text": "f est constante sur ℝ"
+        },
+        {
+          "id": "d",
+          "text": "f est croissante puis décroissante sur ℝ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On dérive : f′(x) = −2ke^(−2x). L'exponentielle est strictement positive, donc f′ est du signe de −2k ; comme k < 0, on a −2k > 0 et f est croissante sur ℝ ✓ (exemple : k = −1 donne f(x) = −e^(−2x), qui monte de −∞ vers 0). L'option b est le piège du chapitre : on conclut du signe de a = −2 que la fonction décroît, en oubliant que le signe de k compte aussi. L'option c ne vaudrait que pour k = 0, exclu ici. L'option d suppose un changement de signe de f′, impossible puisque e^(−2x) ne s'annule jamais.",
+      "difficulty": 2
+    }
+  ]
+}

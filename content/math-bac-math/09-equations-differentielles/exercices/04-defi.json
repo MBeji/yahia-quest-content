@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le maître des équations différentielles",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Déterminer la solution f de l'équation différentielle y″ + 16y = 0 vérifiant f(π) = −1 et f′(π) = −2.",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) = −2sin(4x) − cos(4x)"
+        },
+        {
+          "id": "b",
+          "text": "f(x) = −sin(4x) − (1/2)cos(4x)"
+        },
+        {
+          "id": "c",
+          "text": "f(x) = −(1/2)sin(4x) − cos(4x)"
+        },
+        {
+          "id": "d",
+          "text": "f(x) = −(1/2)sin(16x) − cos(16x)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les conditions ne sont pas données en 0 : la formule toute faite ne s'applique pas, il faut repasser par la forme générale. Comme 16 = 4², on a ω = 4 et f(x) = A sin(4x) + B cos(4x). En x = π : sin(4π) = 0 et cos(4π) = 1, donc f(π) = B = −1. Puis f′(x) = 4A cos(4x) − 4B sin(4x), donc f′(π) = 4A = −2, soit A = −1/2. D'où f(x) = −(1/2)sin(4x) − cos(4x) ✓. Vérification par réinjection : f′(x) = −2cos(4x) + 4sin(4x), puis f″(x) = 8sin(4x) + 16cos(4x) ; or −16f(x) = 8sin(4x) + 16cos(4x), les deux coïncident, donc f″ + 16f = 0 ✓. Conditions : f(π) = −(1/2)(0) − 1 = −1 ✓ et f′(π) = −2(1) + 4(0) = −2 ✓. L'erreur classique : oublier le facteur ω = 4 en dérivant et poser A = f′(π) = −2, ce qui donne −2sin(4x) − cos(4x), dont la dérivée en π vaut −8. Échanger les rôles de A et B (attribuer f(π) au coefficient du sinus) produit −sin(4x) − (1/2)cos(4x), qui vaut −1/2 en π. Et prendre ω = 16 au lieu de 4 fabrique une solution de y″ + 256y = 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On considère (E) : y′ − y = 4cos x. On admet que (E) admet une solution particulière de la forme g : x ↦ a cos x + b sin x. Déterminer la solution f de (E) vérifiant f(0) = 1.",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) = 3e^x − 2cos x + 2sin x"
+        },
+        {
+          "id": "b",
+          "text": "f(x) = 3e^(−x) − 2cos x + 2sin x"
+        },
+        {
+          "id": "c",
+          "text": "f(x) = e^x − 2cos x + 2sin x"
+        },
+        {
+          "id": "d",
+          "text": "f(x) = 3e^x + 2cos x − 2sin x"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Trois étapes dépendantes : identifier g, résoudre l'homogène, fixer la constante. Avec g(x) = a cos x + b sin x, on a g′(x) = −a sin x + b cos x, donc g′ − g = (b − a)cos x + (−a − b)sin x. L'identification avec 4cos x + 0 × sin x impose b − a = 4 et a + b = 0, d'où b = −a puis −2a = 4 : a = −2 et b = 2, soit g(x) = −2cos x + 2sin x. Réinjection de g : g′(x) = 2sin x + 2cos x, donc g′ − g = 2sin x + 2cos x + 2cos x − 2sin x = 4cos x ✓. L'homogène y′ − y = 0 s'écrit y′ = y, de solutions ke^x, et f est solution de (E) si et seulement si f − g l'est de l'homogène : f(x) = ke^x − 2cos x + 2sin x. La condition f(0) = k − 2 = 1 donne k = 3 ✓. Vérification finale : f′(x) = 3e^x + 2sin x + 2cos x, donc f′ − f = 3e^x + 2sin x + 2cos x − 3e^x + 2cos x − 2sin x = 4cos x ✓ et f(0) = 3 − 2 = 1 ✓. L'erreur classique : résoudre y′ − y = 0 en ke^(−x) (signe de a lu à l'envers) — la deuxième option respecte pourtant f(0) = 1, mais sa réinjection laisse f′ − f = −6e^(−x) + 4cos x. Poser k = f(0) = 1 sans tenir compte de g(0) = −2 donne e^x − 2cos x + 2sin x, dont la valeur en 0 est −1. Et inverser les signes du système (lire a = 2, b = −2) produit la dernière option, pour laquelle f′ − f = −4cos x, soit l'opposé du second membre.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La courbe ci-dessous représente, sur [0, +∞[, une solution f de l'équation différentielle y′ = ay + b (a et b réels, a ≠ 0). La droite d'équation y = 2 est asymptote à la courbe, et on lit f(0) = 6 puis f(ln 2) = 4. Déterminer le couple (a, b).\n\n<svg viewBox=\"0 0 340 210\"><path d=\"M45 175 H310\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M55 190 V25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M310 175 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M55 25 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><line x1=\"50\" y1=\"131\" x2=\"300\" y2=\"131\" stroke=\"#b45309\" stroke-width=\"1.4\" stroke-dasharray=\"5 3\"/><polyline points=\"55,43 66.3,53.3 77.5,62.5 88.8,70.5 100,77.6 117.4,87 131.5,93.4 145,98.6 167.5,105.8 190,111.4 212.5,115.7 235,119.1 257.5,121.7 280,123.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"55\" y1=\"87\" x2=\"117.4\" y2=\"87\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><line x1=\"117.4\" y1=\"87\" x2=\"117.4\" y2=\"175\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><circle cx=\"55\" cy=\"43\" r=\"3\" fill=\"#0f172a\"/><circle cx=\"117.4\" cy=\"87\" r=\"3\" fill=\"#0f172a\"/><text x=\"50\" y=\"47\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">6</text><text x=\"50\" y=\"91\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">4</text><text x=\"50\" y=\"135\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\">2</text><text x=\"52\" y=\"190\" text-anchor=\"end\" font-size=\"11\" fill=\"#0f172a\">0</text><text x=\"117.4\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">ln 2</text><text x=\"252\" y=\"126\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\">y = 2</text><text x=\"298\" y=\"168\" font-size=\"11\" fill=\"#0f172a\">x</text><text x=\"26\" y=\"34\" font-size=\"11\" fill=\"#0f172a\">f(x)</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(a, b) = (−1, −2)"
+        },
+        {
+          "id": "b",
+          "text": "(a, b) = (−1, 2)"
+        },
+        {
+          "id": "c",
+          "text": "(a, b) = (1, −2)"
+        },
+        {
+          "id": "d",
+          "text": "(a, b) = (−1, 0)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sens inverse, à partir d'une lecture graphique : la courbe donne trois informations, il en faut exactement trois. Les solutions de y′ = ay + b s'écrivent f(x) = ke^(ax) − b/a. L'asymptote horizontale y = 2 se lit sur le terme constant : −b/a = 2. Le point de départ donne f(0) = k + 2 = 6, donc k = 4 et f(x) = 4e^(ax) + 2. Le second point lu, f(ln 2) = 4, donne 4e^(a ln 2) = 2, soit e^(a ln 2) = 1/2, puis a ln 2 = −ln 2 et a = −1. Enfin b = −2a = 2 : (a, b) = (−1, 2), c'est-à-dire l'équation y′ = −y + 2 ✓. Vérification par réinjection : f(x) = 4e^(−x) + 2 donne f′(x) = −4e^(−x) et −f(x) + 2 = −4e^(−x) − 2 + 2 = −4e^(−x) ✓ ; f(0) = 6 ✓ ; f(ln 2) = 4 × (1/2) + 2 = 4 ✓ ; et f(x) → 2 quand x → +∞, conformément à l'asymptote ✓. L'erreur classique : écrire le terme constant +b/a au lieu de −b/a et conclure b = 2a = −2 — la famille ke^(−x) − 2 aurait alors pour asymptote y = −2, en contradiction avec la figure. Résoudre e^(a ln 2) = 1/2 en oubliant le signe (lire a ln 2 = ln 2) donne a = 1 puis b = −2, mais ke^x + 2 n'admet aucune asymptote en +∞ et la courbe monterait au lieu de descendre. Et ignorer b en croyant l'équation homogène donne (−1, 0), dont les solutions ke^(−x) tendent vers 0, pas vers 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On cherche la solution f de (E) : y″ + 9y = 0 vérifiant f(0) = 1 et f′(0) = −3, puis on veut l'écrire sous la forme r cos(3x − φ) avec r > 0 et φ ∈ ]−π, π]. Voici une solution proposée. Étape 1 : les solutions de (E) sont les fonctions x ↦ A sin(3x) + B cos(3x). Étape 2 : f(0) = B = 1, et f′(x) = 3A cos(3x) − 3B sin(3x) donne f′(0) = 3A = −3, donc A = −1 et f(x) = −sin(3x) + cos(3x). Étape 3 : r = √(A² + B²) = √2, puis cos φ = A/r = −√2/2 et sin φ = B/r = √2/2, donc φ = 3π/4. Étape 4 : donc f(x) = √2 cos(3x − 3π/4). Quelle est la PREMIÈRE étape fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 1"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 2"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 3"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 4 : l'écriture r cos(ωx − φ) est impossible dès que A est négatif"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ceci est une chasse à l'erreur : la solution proposée contient une faute plantée, l'explication décrit donc un raisonnement volontairement faux. L'étape 1 est correcte : 9 = 3², donc ω = 3 et les solutions sont bien les A sin(3x) + B cos(3x). L'étape 2 est correcte : B = f(0) = 1, et f′(0) = 3A = −3 donne A = −1 ; la fonction −sin(3x) + cos(3x) vérifie d'ailleurs f″ = 9sin(3x) − 9cos(3x) = −9f ✓. L'étape 3 est la PREMIÈRE fausse ✓ : en développant r cos(3x − φ) = r cos φ cos(3x) + r sin φ sin(3x), on identifie B = r cos φ et A = r sin φ, donc cos φ = B/r et sin φ = A/r — les deux rapports ont été échangés. Le calcul juste : cos φ = 1/√2 = √2/2 et sin φ = −1/√2 = −√2/2, donc φ = −π/4 et f(x) = √2 cos(3x + π/4). Vérification par réinjection : √2 cos(3x + π/4) = √2[cos(3x)cos(π/4) − sin(3x)sin(π/4)] = cos(3x) − sin(3x) ✓, alors que la réponse proposée √2 cos(3x − 3π/4) vaut sin(3x) − cos(3x), soit l'OPPOSÉ de f — le contrôle en 0 le montre d'un coup : elle donne −1 au lieu de 1. L'étape 4 se contente de recopier l'étape 3 : elle hérite de la faute sans en créer une nouvelle. L'erreur classique est exactement celle-là, retenir « cos φ va avec A » alors que c'est le coefficient du COSINUS, donc B, qui s'apparie à cos φ. L'option d est fausse deux fois : le signe de A n'empêche rien (il se lit dans sin φ, donc dans le signe de φ), et l'étape 4 n'est de toute façon pas la première fautive.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une substance solide se dissout dans l'eau à une vitesse proportionnelle à la quantité non encore dissoute. On place 20 g de cette substance dans l'eau et l'on observe que les dix premiers grammes se dissolvent en 5 minutes. Au bout de combien de temps reste-t-il exactement 1 g non dissous ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "t = 5(ln 20)/(ln 2) ≈ 21,6 min"
+        },
+        {
+          "id": "b",
+          "text": "t = 5 ln 20 ≈ 15,0 min"
+        },
+        {
+          "id": "c",
+          "text": "t = 10(ln 20)/(ln 2) ≈ 43,2 min"
+        },
+        {
+          "id": "d",
+          "text": "t = 5(ln 2)/(ln 20) ≈ 1,2 min"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Transfert : l'énoncé décrit un modèle, à toi de le traduire. Notons q(t) la quantité NON encore dissoute à l'instant t (en minutes). L'hypothèse s'écrit q′(t) = −λq(t) avec λ > 0, donc q(t) = q(0)e^(−λt) = 20e^(−λt). Réinjection : q′(t) = −20λe^(−λt) = −λq(t) ✓ et q(0) = 20 ✓. La donnée « dix grammes dissous en 5 minutes » signifie q(5) = 10, c'est-à-dire la MOITIÉ de la quantité initiale : 5 minutes est donc la demi-vie, et λ = (ln 2)/5. On cherche t tel que q(t) = 1 : 20e^(−λt) = 1 donne e^(−λt) = 1/20, puis λt = ln 20 et t = (ln 20)/λ = 5(ln 20)/(ln 2) ≈ 5 × 4,322 ≈ 21,6 min ✓. Contrôle indépendant par la demi-vie : la quantité restante vaut 20, 10, 5 ; 2,5 ; 1,25 puis 0,625 g aux instants 0, 5, 10, 15, 20 et 25 minutes — le seuil de 1 g est franchi juste après 20 minutes, ce que confirme 21,6 ✓. L'erreur classique : confondre la demi-vie avec 1/λ et poser q(t) = 20e^(−t/5), ce qui donne t = 5 ln 20 ≈ 15 min — or à 15 minutes il reste encore 2,5 g. Prendre 10 minutes pour demi-vie (en calquant les 10 grammes sur le temps) double le résultat, soit ≈ 43,2 min, alors qu'à cet instant il ne resterait que 0,05 g. Et inverser le rapport des logarithmes livre ≈ 1,2 min, durée pendant laquelle à peine 3 g se sont dissous.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f une fonction dérivable sur ℝ, ne s'annulant pas sur ℝ, telle que f′(x) + 2f(x) = (f(x))² pour tout réel x, et f(0) = 1. On pose g = 1/f. Déterminer f(x).",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) = 2/(3e^(2x) − 1)"
+        },
+        {
+          "id": "b",
+          "text": "f(x) = 2/(e^(−2x) + 1)"
+        },
+        {
+          "id": "c",
+          "text": "f(x) = (e^(2x) + 1)/2"
+        },
+        {
+          "id": "d",
+          "text": "f(x) = 2/(e^(2x) + 1)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'équation n'est pas linéaire : c'est le changement de fonction imposé par l'énoncé qui la ramène au programme. Comme f ne s'annule pas, g = 1/f est dérivable et g′ = −f′/f². On divise l'égalité f′ + 2f = f² par f² (licite) : f′/f² + 2/f = 1, c'est-à-dire −g′ + 2g = 1, donc g′ = 2g − 1. C'est une équation y′ = ay + b avec a = 2 et b = −1, de terme constant −b/a = 1/2 : g(x) = ke^(2x) + 1/2. La condition g(0) = 1/f(0) = 1 donne k + 1/2 = 1, soit k = 1/2 et g(x) = (e^(2x) + 1)/2. On repasse à l'inverse : f(x) = 2/(e^(2x) + 1) ✓ — bien définie et non nulle, puisque e^(2x) + 1 > 0. Vérification par réinjection dans l'équation d'origine, en posant D = e^(2x) + 1 : f′(x) = −4e^(2x)/D² et (f(x))² = 4/D², donc f′ + 2f = (−4e^(2x) + 4D)/D² = (−4e^(2x) + 4e^(2x) + 4)/D² = 4/D² = f² ✓ ; et f(0) = 2/2 = 1 ✓. L'erreur classique : oublier le signe moins de g′ = −f′/f² et obtenir g′ = −2g + 1, donc g(x) = (e^(−2x) + 1)/2 et f(x) = 2/(e^(−2x) + 1) — elle vaut bien 1 en 0, mais sa réinjection donne f′ + 2f = (8e^(−2x) + 4)/D², au lieu de 4/D². Écrire le terme constant +b/a = −1/2 conduit à g = (3e^(2x) − 1)/2 puis à 2/(3e^(2x) − 1), qui vaut aussi 1 en 0 mais fournit f′ + 2f = −f². Et s'arrêter à g sans revenir à f livre (e^(2x) + 1)/2, dont la valeur en 0 est également 1 : ces trois pièges passent tous le test de la condition initiale, seule la réinjection dans l'équation les élimine.",
+      "difficulty": 3
+    }
+  ]
+}

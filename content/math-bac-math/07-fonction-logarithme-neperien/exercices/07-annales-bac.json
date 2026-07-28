@@ -57,9 +57,18 @@
     {
       "prompt": "Partie A (fin). Toujours avec f(x) = x − 2 + (2 ln x)/x sur ]0 ; +∞[, dont on a établi qu'elle est strictement croissante. On donne ln 1,4 ≈ 0,336 et ln 1,5 ≈ 0,405. Montrer que l'équation f(x) = 0 admet une solution unique α sur ]0 ; +∞[ et donner un encadrement de α d'amplitude 0,1.",
       "options": [
-        { "id": "a", "text": "α est unique et 1,4 < α < 1,5" },
-        { "id": "b", "text": "α est unique et 1,5 < α < 1,6" },
-        { "id": "c", "text": "α est unique et 1 < α < 1,1" },
+        {
+          "id": "a",
+          "text": "α est unique et 1,4 < α < 1,5"
+        },
+        {
+          "id": "b",
+          "text": "α est unique et 1,5 < α < 1,6"
+        },
+        {
+          "id": "c",
+          "text": "α est unique et 1 < α < 1,1"
+        },
         {
           "id": "d",
           "text": "L'équation admet deux solutions, une de part et d'autre de x = 1"
@@ -72,9 +81,18 @@
     {
       "prompt": "Partie B. Un atelier de la médina fabrique des lanternes en série. Après n réglages successifs de la machine, le taux de pièces défectueuses est r(n) = 12 × 0,85ⁿ, exprimé en pourcentage. Le cahier des charges exige un taux strictement inférieur à 1 %. On donne ln 12 ≈ 2,485 et ln 0,85 ≈ −0,163. Déterminer le plus petit nombre de réglages nécessaire.",
       "options": [
-        { "id": "a", "text": "16 réglages" },
-        { "id": "b", "text": "15 réglages" },
-        { "id": "c", "text": "44 réglages" },
+        {
+          "id": "a",
+          "text": "16 réglages"
+        },
+        {
+          "id": "b",
+          "text": "15 réglages"
+        },
+        {
+          "id": "c",
+          "text": "44 réglages"
+        },
         {
           "id": "d",
           "text": "Aucun : 12 × 0,85ⁿ reste strictement positif, il ne peut donc pas descendre sous 1 %"
@@ -87,13 +105,22 @@
     {
       "prompt": "Partie B (suite). Dans le même atelier, le coût du contrôle qualité d'un lot est modélisé par C(x) = 30 ln x + 20, en dinars, où x est le nombre de lanternes contrôlées (x ≥ 1). Le responsable dispose d'un budget de 110 dinars. À partir de combien de lanternes contrôlées le coût dépasse-t-il strictement ce budget ? On donne e³ ≈ 20,09.",
       "options": [
-        { "id": "a", "text": "À partir de 21 lanternes" },
-        { "id": "b", "text": "À partir de 20 lanternes" },
+        {
+          "id": "a",
+          "text": "À partir de 21 lanternes"
+        },
+        {
+          "id": "b",
+          "text": "À partir de 20 lanternes"
+        },
         {
           "id": "c",
           "text": "À partir de e³ ≈ 20,09 lanternes"
         },
-        { "id": "d", "text": "À partir de 3 lanternes" }
+        {
+          "id": "d",
+          "text": "À partir de 3 lanternes"
+        }
       ],
       "correctOption": "a",
       "explanation": "On résout C(x) > 110, c'est-à-dire 30 ln x + 20 > 110, donc 30 ln x > 90, soit ln x > 3. Le membre de droite s'écrit 3 = 3 ln e = ln(e³), puisque ln e = 1. L'inéquation devient ln x > ln(e³), et la stricte croissance de ln donne x > e³ ≈ 20,09. Mais x compte des lanternes : c'est un ENTIER, et la question porte sur le franchissement réel du budget. Le plus petit entier strictement supérieur à 20,09 est 21 ✓. Contrôle décisif par le calcul du coût : C(20) = 30 ln 20 + 20 ≈ 30 × 2,996 + 20 = 89,87 + 20 = 109,87 dinars, encore SOUS le budget ✓ ; C(21) = 30 ln 21 + 20 ≈ 30 × 3,045 + 20 = 91,34 + 20 = 111,34 dinars, au-dessus ✓. Le basculement se produit donc bien entre 20 et 21 lanternes, et la vingtième passe de justesse — treize centimes de marge, ce qui montre au passage pourquoi il faut calculer et non estimer. La réponse 20 arrondit e³ ≈ 20,09 à l'entier le plus proche au lieu de prendre l'entier immédiatement supérieur : avec 20 lanternes le budget est respecté, la réponse est donc fausse par excès de zèle arithmétique. La réponse e³ ≈ 20,09 est le seuil mathématique exact, correct comme étape mais pas comme réponse : on ne contrôle pas 20,09 lanternes, et un sujet de bac attend toujours qu'on revienne au contexte pour la conclusion. La réponse 3 s'arrête à la ligne ln x > 3 et prend cette borne pour la solution, en oubliant de « défaire » le logarithme : c'est l'erreur la plus coûteuse du chapitre, puisqu'elle donne un coût C(3) ≈ 53 dinars, à moitié du budget.",
@@ -121,7 +148,7 @@
       ],
       "correctOption": "a",
       "explanation": "Deux temps, comme dans tout sujet d'examen. Le sens de variation d'abord. Sur ]1 ; +∞[, les deux quantités x + 3 et x − 1 sont strictement positives, donc Q est bien définie et dérivable, avec Q′(x) = 1/(x + 3) − 1/(x − 1) — chaque terme étant de la forme u′/u. On réduit au même dénominateur : Q′(x) = ((x − 1) − (x + 3))/((x + 3)(x − 1)) = −4/((x + 3)(x − 1)). Sur ]1 ; +∞[ le dénominateur est strictement positif, donc Q′(x) < 0 : Q est strictement DÉCROISSANTE ✓, ce qui est cohérent avec le modèle — plus on contrôle de lots, moins la dispersion est grande. L'inéquation ensuite. On écrit d'abord Q sous forme d'un seul logarithme, la différence devenant quotient : Q(x) = ln((x + 3)/(x − 1)). L'inéquation Q(x) ≤ ln 3 équivaut alors, par stricte croissance de ln, à (x + 3)/(x − 1) ≤ 3. Comme x > 1, le facteur x − 1 est strictement positif et l'on multiplie sans changer le sens : x + 3 ≤ 3(x − 1), soit x + 3 ≤ 3x − 3, donc 6 ≤ 2x et x ≥ 3. L'ensemble des solutions est [3 ; +∞[ ✓. Contrôle : Q(3) = ln 6 − ln 2 = ln 3, l'égalité est atteinte au bord ✓ ; Q(5) = ln 8 − ln 4 = ln 2 ≈ 0,693 ≤ 1,099 ✓ ; Q(2) = ln 5 − ln 1 = ln 5 ≈ 1,609 > ln 3, exclu ✓. La proposition 1 < x ≤ 3 a le bon seuil mais le sens inversé : puisque Q décroît, les petites valeurs de x donnent les GRANDES valeurs de Q, donc c'est bien au-delà de 3 que l'indice passe sous ln 3 — le sens de variation, calculé au premier temps, était fait pour lever ce doute. La proposition « croissante, x ≥ 2 » cumule deux fautes : un signe perdu dans Q′, et un développement bâclé de 3(x − 1) en 3x − 1. La dernière proposition applique la règle inexistante ln a − ln b = ln(a − b) ; seul le QUOTIENT devient différence, et l'on remarquera qu'un indice constant contredirait frontalement le calcul de Q′, qui n'est jamais nul.",
-      "difficulty": 4
+      "difficulty": 3
     }
   ]
 }

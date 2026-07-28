@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des familles de solutions",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Soit f la solution de l'équation différentielle y″ + 16y = 0 vérifiant f(0) = √3 et f′(0) = 4. Écrire f sous la forme r cos(ωx − φ), avec r > 0 et φ ∈ ]−π, π].",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) = 2cos(4x − π/3)"
+        },
+        {
+          "id": "b",
+          "text": "f(x) = 2cos(4x − π/6)"
+        },
+        {
+          "id": "c",
+          "text": "f(x) = 2cos(16x − π/6)"
+        },
+        {
+          "id": "d",
+          "text": "f(x) = 4cos(4x − π/6)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Deux étapes dépendantes : résoudre, puis condenser. Comme 16 = 4², on a ω = 4 — ω est la RACINE du coefficient de y — donc f(x) = A sin(4x) + B cos(4x). La première condition donne f(0) = B = √3. Ensuite f′(x) = 4A cos(4x) − 4B sin(4x), donc f′(0) = 4A = 4, soit A = 1 : f(x) = sin(4x) + √3 cos(4x). Passage à la forme amplitude-phase : r = √(A² + B²) = √(1 + 3) = 2, puis cos φ = B/r = √3/2 et sin φ = A/r = 1/2, ce qui donne φ = π/6 dans ]−π, π]. D'où f(x) = 2cos(4x − π/6) ✓. Vérification par réinjection : 2cos(4x − π/6) = 2[cos(4x)cos(π/6) + sin(4x)sin(π/6)] = √3 cos(4x) + sin(4x), c'est bien la même fonction ; f(0) = 2cos(−π/6) = √3 ✓ ; f′(x) = −8 sin(4x − π/6) donc f′(0) = −8 sin(−π/6) = 4 ✓ ; f″(x) = −32 cos(4x − π/6) = −16f(x), donc f″ + 16f = 0 ✓. Le piège courant : échanger les deux formules de φ (prendre cos φ = A/r et sin φ = B/r), ce qui fabrique φ = π/3 et une fonction dont la valeur en 0 vaut 1, pas √3 ; prendre ω = 16 au lieu de 4 donne 2cos(16x − π/6), solution de y″ + 256y = 0 ; et oublier la racine carrée dans r (écrire r = A² + B² = 4) livre l'amplitude 4, incompatible avec r² = 1 + 3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On considère (E) : y′ + 3y = 6x + 8. On admet que (E) admet une solution particulière affine g : x ↦ ax + b. Déterminer la solution f de (E) qui vérifie f(0) = 3.",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) = 3e^(−3x) + 2x + 2"
+        },
+        {
+          "id": "b",
+          "text": "f(x) = e^(3x) + 2x + 2"
+        },
+        {
+          "id": "c",
+          "text": "f(x) = (1/3)e^(−3x) + 2x + 8/3"
+        },
+        {
+          "id": "d",
+          "text": "f(x) = e^(−3x) + 2x + 2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Trois étapes dépendantes : la solution particulière, l'équation homogène, puis la condition initiale. Avec g(x) = ax + b, on a g′ + 3g = a + 3ax + 3b = 3ax + (a + 3b) ; l'identification avec 6x + 8 impose 3a = 6, donc a = 2, puis a + 3b = 8, donc 3b = 6 et b = 2 : g(x) = 2x + 2. L'homogène (E₀) : y′ + 3y = 0 s'écrit y′ = −3y, de solutions x ↦ ke^(−3x). Comme f est solution de (E) si et seulement si f − g est solution de (E₀), les solutions de (E) sont f(x) = ke^(−3x) + 2x + 2. Enfin f(0) = k + 2 = 3 donne k = 1 : f(x) = e^(−3x) + 2x + 2 ✓. Vérification par réinjection : f′(x) = −3e^(−3x) + 2, donc f′ + 3f = −3e^(−3x) + 2 + 3e^(−3x) + 6x + 6 = 6x + 8 ✓ ; et f(0) = 1 + 2 = 3 ✓. Le piège courant : identifier « 3a = 6 et 3b = 8 » en oubliant le terme a issu de la dérivée, ce qui donne b = 8/3 et la troisième option — elle respecte pourtant f(0) = 3, d'où la nécessité de réinjecter dans l'équation, où elle laisse un reste constant de −2. Résoudre l'homogène en ke^(3x) (signe de a oublié) donne e^(3x) + 2x + 2, qui vérifie aussi f(0) = 3 mais fournit f′ + 3f = 6e^(3x) + 6x + 8. Et poser k = f(0) = 3 sans retrancher g(0) = 2 donne 3e^(−3x) + 2x + 2, dont la valeur en 0 est 5.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On considère (E) : y″ = −3y′ + 1. En posant z = y′, déterminer la solution f de (E) vérifiant f(0) = 0 et f′(0) = 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) = (1/9)e^(−3x) + x/3 − 1/9"
+        },
+        {
+          "id": "b",
+          "text": "f(x) = −(1/9)e^(−3x) + x/3 + 1/9"
+        },
+        {
+          "id": "c",
+          "text": "f(x) = −(1/3)e^(−3x) + 1/3"
+        },
+        {
+          "id": "d",
+          "text": "f(x) = −(1/9)e^(−3x) − x/3 + 1/9"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'équation ne contient pas y : la réduction d'ordre s'impose. En posant z = y′, (E) devient z′ = −3z + 1, du type y′ = ay + b avec a = −3 et b = 1, donc de terme constant −b/a = 1/3 : z(x) = ke^(−3x) + 1/3. La condition f′(0) = z(0) = 0 donne k + 1/3 = 0, soit k = −1/3, d'où f′(x) = −(1/3)e^(−3x) + 1/3. Il reste à primitiver : une primitive de −(1/3)e^(−3x) est +(1/9)e^(−3x) (le facteur 1/(−3) change le signe), donc f(x) = (1/9)e^(−3x) + x/3 + c. Enfin f(0) = 1/9 + c = 0 donne c = −1/9 : f(x) = (1/9)e^(−3x) + x/3 − 1/9 ✓. Vérification par réinjection : f′(x) = −(1/3)e^(−3x) + 1/3 et f″(x) = e^(−3x) ; or −3f′(x) + 1 = e^(−3x) − 1 + 1 = e^(−3x) = f″(x) ✓ ; f(0) = 1/9 − 1/9 = 0 ✓ et f′(0) = −1/3 + 1/3 = 0 ✓. Le piège courant : s'arrêter à z et livrer f′ pour f — c'est la troisième option, qui vérifie bien f(0) = 0 mais donne f′(0) = 1. Perdre le signe en primitivant e^(−3x) conduit à −(1/9)e^(−3x) + x/3 + 1/9, dont la dérivée seconde vaut −e^(−3x) alors que −3f′ + 1 vaut +e^(−3x). Et écrire le terme constant +b/a au lieu de −b/a donne z = ke^(−3x) − 1/3 puis la dernière option, décroissante alors que f′ = z doit rester positive.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les fonctions f : x ↦ ke^(−x/2) + 4, où k décrit ℝ, sont exactement les solutions sur ℝ de l'une des équations suivantes. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2y′ + y = 8"
+        },
+        {
+          "id": "b",
+          "text": "y′ + 2y = 8"
+        },
+        {
+          "id": "c",
+          "text": "2y′ + y = 4"
+        },
+        {
+          "id": "d",
+          "text": "2y′ − y = −4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sens inverse : la famille est donnée, c'est l'équation qu'il faut reconstruire. Deux lectures suffisent. L'exposant donne a = −1/2, car les solutions de y′ = ay + b sont x ↦ ke^(ax) − b/a. Le terme constant donne −b/a = 4, donc b = −4a = 2. L'équation est donc y′ = −y/2 + 2, c'est-à-dire, en multipliant par 2, 2y′ + y = 4 ✓. Vérification par réinjection, la seule preuve qui compte : avec f(x) = ke^(−x/2) + 4, on a f′(x) = −(k/2)e^(−x/2), donc 2f′(x) + f(x) = −ke^(−x/2) + ke^(−x/2) + 4 = 4 pour tout x et tout k ✓ ; réciproquement 2y′ + y = 4 s'écrit y′ = −y/2 + 2, dont les solutions sont exactement les ke^(−x/2) + 4 ✓. Le piège courant : confondre le terme constant de la famille avec b et écrire b = 4, ce qui donne 2y′ + y = 8, dont les solutions sont les ke^(−x/2) + 8 — réinjection : 2f′ + f = 4, pas 8. Lire a = −2 dans l'exposant au lieu de −1/2 (en prenant le dénominateur pour un coefficient) mène à y′ + 2y = 8, de solutions ke^(−2x) + 4 : même constante, mauvaise exponentielle — et en réinjectant la famille de l'énoncé dans cette équation on trouve f′ + 2f = −(k/2)e^(−x/2) + 2ke^(−x/2) + 8 = (3k/2)e^(−x/2) + 8, qui n'est constant que pour k = 0. Enfin un signe de a inversé produit 2y′ − y = −4, dont les solutions ke^(x/2) + 4 explosent en +∞ au lieu de tendre vers 4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la solution de (E) : y′ + 2y = 6 vérifiant f(0) = 5. Calculer ∫₀^{ln 2} f(x) dx.",
+      "options": [
+        {
+          "id": "a",
+          "text": "3ln 2 − 3/4"
+        },
+        {
+          "id": "b",
+          "text": "3ln 2 + 15/8"
+        },
+        {
+          "id": "c",
+          "text": "3ln 2 + 3/2"
+        },
+        {
+          "id": "d",
+          "text": "3ln 2 + 3/4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Deux chapitres en un : résoudre l'équation différentielle, puis intégrer la solution obtenue. On isole d'abord y′ = −2y + 6 : a = −2, b = 6, donc le terme constant vaut −b/a = 3 et f(x) = ke^(−2x) + 3. La condition f(0) = k + 3 = 5 donne k = 2, soit f(x) = 2e^(−2x) + 3. Réinjection : f′(x) = −4e^(−2x), donc f′ + 2f = −4e^(−2x) + 4e^(−2x) + 6 = 6 ✓ et f(0) = 5 ✓. Vient l'intégrale : une primitive de 2e^(−2x) est −e^(−2x) (facteur 1/(−2)), donc ∫₀^{ln 2} f = [−e^(−2x) + 3x]₀^{ln 2}. Comme e^(−2ln 2) = 1/4, le crochet vaut (−1/4 + 3ln 2) − (−1 + 0) = 3ln 2 + 3/4 ≈ 2,83 ✓. Contrôle indépendant : f décroît de f(0) = 5 à f(ln 2) = 3,5 sur un intervalle de longueur ln 2 ≈ 0,693, donc l'intégrale est comprise entre 3,5 × 0,693 ≈ 2,43 et 5 × 0,693 ≈ 3,47 — seule la bonne réponse y est ✓. Le piège courant : primitiver 2e^(−2x) en +e^(−2x) en perdant le signe du facteur 1/(−2), ce qui donne 3ln 2 − 3/4 ≈ 1,33, trop petit pour une fonction supérieure à 3. Oublier le facteur 1/2 et primitiver en −2e^(−2x) donne 3ln 2 + 3/2 ≈ 3,58, au-dessus de la borne supérieure. Et poser k = f(0) = 5 sans retrancher le terme constant 3 conduit à 3ln 2 + 15/8 ≈ 3,95.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule des affirmations suivantes est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La fonction x ↦ 2cos x − 3sin x est solution de l'équation différentielle y″ + 3y = 0"
+        },
+        {
+          "id": "b",
+          "text": "Si ω est un réel non nul et si f, solution de y″ + ω²y = 0, vérifie f(0) = 0 et f′(0) = 0, alors f est la fonction nulle"
+        },
+        {
+          "id": "c",
+          "text": "Toute solution non nulle de l'équation différentielle y″ + 4y = 0 est périodique de période 4"
+        },
+        {
+          "id": "d",
+          "text": "Une solution de y″ + ω²y = 0 (ω non nul) est entièrement déterminée par la seule donnée de f(0)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Seule l'affirmation b est vraie ✓ : c'est la conséquence directe du théorème d'unicité à l'ordre deux. Toute solution s'écrit f(x) = A sin(ωx) + B cos(ωx) ; alors f(0) = B = 0 et, puisque f′(x) = Aω cos(ωx) − Bω sin(ωx), f′(0) = Aω = 0 avec ω ≠ 0 donne A = 0. Il reste f = 0, qui est bien solution ✓. L'affirmation a est fausse : avec f(x) = 2cos x − 3sin x, la réinjection donne f″(x) = −2cos x + 3sin x = −f(x), donc f″ + f = 0 et non f″ + 3f = 0 ; on confond le coefficient de l'équation avec les coefficients A et B de la solution. L'affirmation c est fausse : la période d'une solution de y″ + ω²y = 0 vaut 2π/ω, ici 2π/2 = π ≈ 3,14 ; lire la période sur le coefficient 4 revient à oublier à la fois la racine carrée et le facteur 2π. L'affirmation d est fausse : à l'ordre deux il faut DEUX conditions — x ↦ cos(ωx) et x ↦ cos(ωx) + sin(ωx) sont deux solutions distinctes qui valent toutes deux 1 en 0 ; c'est la donnée supplémentaire de f′(0) qui les sépare. Le piège courant du chapitre est justement de transporter à l'ordre deux le réflexe de l'ordre un, où une seule condition initiale suffisait.",
+      "difficulty": 3
+    }
+  ]
+}

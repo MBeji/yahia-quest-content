@@ -1,0 +1,109 @@
+{
+  "title": "🏛️ Annales Bac ⭐⭐⭐⭐ : Sujet type — Changement de fonction et perfusion",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "Partie A. On considère l'équation différentielle (E) : y′ + 2y = y², dont l'inconnue y est une fonction dérivable sur ℝ. Parmi les fonctions constantes suivantes, laquelle est solution de (E) sur ℝ ?",
+      "options": [
+        { "id": "a", "text": "u : x ↦ 2" },
+        { "id": "b", "text": "u : x ↦ −2" },
+        { "id": "c", "text": "u : x ↦ 1/2" },
+        { "id": "d", "text": "u : x ↦ 4" }
+      ],
+      "correctOption": "a",
+      "explanation": "Une fonction constante a une dérivée nulle : si u est la constante c, alors u′ = 0 et l'équation (E) devient 0 + 2c = c², c'est-à-dire c² − 2c = 0, soit c(c − 2) = 0. On teste maintenant chaque candidate, ce qui est exactement le premier geste du chapitre — dériver et réinjecter. Pour c = 2 : u′ + 2u = 0 + 4 = 4 et u² = 4, les deux membres coïncident pour tout réel x, donc u : x ↦ 2 est solution ✓. Pour c = −2 : u′ + 2u = −4, tandis que u² = 4 ; les deux membres sont opposés, l'égalité est fausse — c'est le piège classique du carré, qui efface le signe à droite mais pas à gauche. Pour c = 1/2 : u′ + 2u = 1 et u² = 1/4, donc 1 ≠ 1/4. Pour c = 4 : u′ + 2u = 8 et u² = 16, donc 8 ≠ 16 ; on notera qu'un doublement de c double le membre de gauche mais QUADRUPLE celui de droite, ce qui explique qu'une seule valeur non nulle puisse convenir. Cette solution constante n'est pas un détail décoratif : elle sera la valeur limite de la fonction étudiée à la fin de la Partie A, et c'est un réflexe de bac que de commencer un problème de ce type en cherchant les solutions constantes, car elles donnent d'emblée les asymptotes horizontales du champ de solutions.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Partie A (suite). Toujours avec (E) : y′ + 2y = y². Soit f une fonction dérivable sur ℝ, qui ne s'annule en aucun point, et qui est solution de (E). On pose g = 1/f. De quelle équation différentielle la fonction g est-elle solution ?",
+      "options": [
+        { "id": "a", "text": "y′ = 2y − 1" },
+        { "id": "b", "text": "y′ = −2y + 1" },
+        { "id": "c", "text": "y′ = 2y + 1" },
+        { "id": "d", "text": "y′ = −y + 2" }
+      ],
+      "correctOption": "a",
+      "explanation": "C'est le changement de fonction classique de ce type de sujet : l'équation de départ n'est pas linéaire (le carré y² l'interdit), mais l'inverse de la solution, lui, obéit à une équation du programme. Comme f ne s'annule pas, g = 1/f est bien définie et dérivable, de dérivée g′ = −f′/f². Or f est solution de (E), donc f′ = f² − 2f. On substitue : g′ = −(f² − 2f)/f² = −f²/f² + 2f/f² = −1 + 2/f = 2g − 1, puisque 1/f = g. Donc g est solution de y′ = 2y − 1 ✓, une équation du type y′ = ay + b avec a = 2 et b = −1. Contrôle sur un cas connu : la solution constante x ↦ 2 trouvée à la question précédente donne g = 1/2, constante ; vérifions qu'elle satisfait la nouvelle équation : g′ = 0 et 2g − 1 = 1 − 1 = 0 ✓ — la constante 1/2 est bien la solution constante −b/a de y′ = 2y − 1, ce qui confirme le calcul. Les distracteurs encodent chacun une faute de signe précise. La proposition y′ = −2y + 1 a oublié que la dérivée de 1/f porte un signe moins DEVANT la fraction et non à l'intérieur : elle revient à écrire g′ = (f′)/f², ce qui inverse tout. La proposition y′ = 2y + 1 est juste sur le terme en y mais garde +1 : elle a substitué f′ = f² + 2f, c'est-à-dire lu (E) comme y′ − 2y = y². La proposition y′ = −y + 2 divise par f au lieu de f², une erreur d'exposant qui ne peut pas donner une équation linéaire cohérente.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie A (fin). On rappelle que si f est une solution de (E) : y′ + 2y = y² qui ne s'annule pas, alors g = 1/f est solution de y′ = 2y − 1. Déterminer l'expression de la solution f de (E) telle que f(0) = 1, puis ses limites en +∞ et en −∞.",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) = 2/(e^(2x) + 1) ; limite 0 en +∞ et limite 2 en −∞"
+        },
+        {
+          "id": "b",
+          "text": "f(x) = 2/(e^(2x) + 1) ; limite 2 en +∞ et limite 0 en −∞"
+        },
+        {
+          "id": "c",
+          "text": "f(x) = 1/(e^(2x) + 1/2) ; limite 0 en +∞ et limite 2 en −∞"
+        },
+        {
+          "id": "d",
+          "text": "f(x) = 2/(e^(−2x) + 1) ; limite 2 en +∞ et limite 0 en −∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On résout d'abord l'équation en g : y′ = 2y − 1 est du type y′ = ay + b avec a = 2 et b = −1, donc ses solutions sont g(x) = ke^(2x) − b/a = ke^(2x) + 1/2 (contrôle du terme constant : a × 1/2 + b = 1 − 1 = 0 ✓). La condition sur f se traduit sur g : f(0) = 1 donne g(0) = 1/f(0) = 1, donc k + 1/2 = 1 et k = 1/2. D'où g(x) = (1/2)e^(2x) + 1/2 = (e^(2x) + 1)/2, puis, en inversant, f(x) = 2/(e^(2x) + 1) ✓ — et f ne s'annule effectivement jamais, ce qui légitime a posteriori tout le changement de fonction. Vérification complète par réinjection dans (E), le seul contrôle qui vaille : f′(x) = −2 × 2e^(2x)/(e^(2x) + 1)² = −4e^(2x)/(e^(2x) + 1)², donc f′ + 2f = [−4e^(2x) + 4(e^(2x) + 1)]/(e^(2x) + 1)² = 4/(e^(2x) + 1)² = f(x)² ✓. Contrôle de la condition : f(0) = 2/(1 + 1) = 1 ✓. Limites : quand x → +∞, e^(2x) → +∞ donc le dénominateur explose et f(x) → 0 ; quand x → −∞, e^(2x) → 0 donc f(x) → 2/1 = 2 ✓. Ce 2 n'est pas un hasard : c'est la solution constante de la Partie A, asymptote horizontale de toutes les solutions non nulles quand x tend vers −∞. La proposition qui échange les deux limites contredit le sens de variation : f′ est du signe de −4e^(2x), donc f est strictement DÉCROISSANTE, et une fonction décroissante ne peut pas partir de 0 pour monter vers 2. La proposition f(x) = 1/(e^(2x) + 1/2) prend k = 1 : elle a résolu l'équation en g correctement mais n'a jamais utilisé la condition initiale, et l'on s'en aperçoit en évaluant en 0, où elle vaut 1/(3/2) = 2/3 et non 1. La proposition avec e^(−2x) a inversé le signe de a : elle correspond à g′ = −2g + 1, donc à une équation de départ différente, et elle croît au lieu de décroître.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B. Un patient reçoit une perfusion à débit constant. La quantité Q(t) de médicament présente dans son sang, exprimée en milligrammes (t en heures), vérifie Q′(t) = −0,4 Q(t) + 20, avec Q(0) = 0. Déterminer l'expression de Q(t) pour t ≥ 0.",
+      "options": [
+        { "id": "a", "text": "Q(t) = 50(1 − e^(−0,4t))" },
+        { "id": "b", "text": "Q(t) = 20(1 − e^(−0,4t))" },
+        { "id": "c", "text": "Q(t) = 50 e^(−0,4t)" },
+        { "id": "d", "text": "Q(t) = 50(e^(0,4t) − 1)" }
+      ],
+      "correctOption": "a",
+      "explanation": "L'équation est du type y′ = ay + b avec a = −0,4 et b = 20. Le terme constant des solutions vaut −b/a = −20/(−0,4) = 50 (contrôle systématique : a × 50 + b = −20 + 20 = 0 ✓, la constante annule bien le second membre). Les solutions sont donc Q(t) = ke^(−0,4t) + 50, et la condition initiale les départage : Q(0) = k + 50 = 0 donne k = −50, d'où Q(t) = 50(1 − e^(−0,4t)) ✓. Vérification complète : Q′(t) = 50 × 0,4 e^(−0,4t) = 20 e^(−0,4t), et le second membre vaut −0,4 × 50(1 − e^(−0,4t)) + 20 = −20 + 20e^(−0,4t) + 20 = 20 e^(−0,4t) ✓ ; condition : Q(0) = 50(1 − 1) = 0 ✓. Interprétation, qui vaut des points en examen : comme a < 0, la quantité croît vers son palier −b/a = 50 mg, l'état d'équilibre où l'apport de la perfusion compense exactement l'élimination rénale ; à l'instant 0 le patient n'a rien reçu, et la vitesse d'entrée y est maximale, Q′(0) = 20 mg/h, soit précisément le débit de la perfusion. La proposition 20(1 − e^(−0,4t)) confond le second membre b avec le palier : elle plafonne à 20 mg, alors que le palier est −b/a et non b — c'est l'oubli de la division le plus fréquent du chapitre. La proposition 50 e^(−0,4t) est la solution de l'équation homogène : elle a perdu le terme constant, et surtout elle vaut 50 en t = 0, ce qui décrirait un patient déjà saturé avant la perfusion, puis vidé jusqu'à zéro. La proposition 50(e^(0,4t) − 1) respecte bien Q(0) = 0 mais a inversé le signe dans l'exposant : elle croît sans limite, alors qu'une quantité qui s'élimine proportionnellement à elle-même ne peut pas s'accumuler indéfiniment à débit d'apport constant.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B (suite). Même perfusion : Q′(t) = −0,4 Q(t) + 20 avec Q(0) = 0, et l'on a établi que Q(t) = 50(1 − e^(−0,4t)) mg (t en heures). Le seuil thérapeutique est atteint lorsque la quantité présente dans le sang vaut 40 mg. Au bout de combien de temps ce seuil est-il atteint, arrondi au dixième d'heure ? On donne ln 2 ≈ 0,693 et ln 5 ≈ 1,609.",
+      "options": [
+        { "id": "a", "text": "Environ 4,0 heures" },
+        { "id": "b", "text": "Environ 1,6 heure" },
+        { "id": "c", "text": "Environ 1,7 heure" },
+        {
+          "id": "d",
+          "text": "Jamais : la quantité plafonne à 40 mg sans jamais l'atteindre"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On commence par justifier l'existence et l'unicité de l'instant cherché, comme le réclame un sujet d'examen : Q′(t) = 20e^(−0,4t) > 0, donc Q est strictement croissante sur [0 ; +∞[, continue, de valeur 0 en 0 et de limite 50 en +∞ ; comme 40 est strictement compris entre 0 et 50, le seuil est franchi une fois et une seule. On résout ensuite : 50(1 − e^(−0,4t)) = 40 donne 1 − e^(−0,4t) = 0,8, soit e^(−0,4t) = 0,2 = 1/5. En composant par le logarithme : −0,4t = −ln 5, donc t = (ln 5)/0,4 ≈ 1,609/0,4 ≈ 4,02, soit environ 4,0 heures ✓. Contrôle numérique : e^(−0,4 × 4,02) = e^(−1,609) ≈ 0,2 et 50 × 0,8 = 40 ✓. La réponse 1,6 heure oublie purement et simplement de diviser par 0,4 : elle confond ln 5 avec le temps, alors que le coefficient a fixe l'échelle de temps du phénomène — c'est l'erreur la plus coûteuse ici, car elle raccourcit la perfusion de deux heures et demie. La réponse 1,7 heure calcule (ln 2)/0,4 ≈ 1,73 h, l'instant où la quantité atteint la MOITIÉ du palier, soit 25 mg : le seuil de 40 mg est bien plus haut, et un contrôle de bon sens suffisait, puisque atteindre 80 % du palier prend nécessairement plus longtemps que d'en atteindre 50 %. Quant à nier l'existence de l'instant, c'est appliquer au mauvais nombre la règle — juste — selon laquelle une exponentielle décroissante ne s'annule jamais : ce que Q ne peut jamais atteindre, c'est son palier 50 mg, pas 40 mg qui lui est strictement inférieur. La leçon est la même que pour le refroidissement de Newton : un seuil situé sous l'asymptote est toujours franchi, un seuil situé SUR l'asymptote ne l'est jamais.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B (fin). Le médecin décide de doubler le débit de la perfusion : la quantité vérifie désormais Q′(t) = −0,4 Q(t) + 40, toujours avec Q(0) = 0 (Q en mg, t en heures). Sur la figure, la courbe verte est l'ancienne quantité, 50(1 − e^(−0,4t)), et la courbe violette la nouvelle ; les deux paliers sont en pointillés orange. Que peut-on affirmer ? <svg viewBox=\"0 0 340 200\"><path d=\"M45 165 H325\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M60 180 V25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M325 165 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M60 25 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><line x1=\"55\" y1=\"100\" x2=\"318\" y2=\"100\" stroke=\"#b45309\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><line x1=\"55\" y1=\"35\" x2=\"318\" y2=\"35\" stroke=\"#b45309\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><polyline points=\"60,165 85,143.6 110,129.2 135,119.6 160,113.1 185,108.8 210,105.9 235,104 260,102.7 310,101.2\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"60,165 85,122.1 110,93.4 135,74.2 160,61.2 185,52.6 210,46.8 235,42.9 260,40.3 310,37.4\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"316\" y=\"31\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\">100 mg</text><text x=\"316\" y=\"96\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\">50 mg</text><text x=\"310\" y=\"180\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">t (h)</text><text x=\"30\" y=\"36\" font-size=\"11\" fill=\"#0f172a\">Q (mg)</text><text x=\"56\" y=\"180\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">0</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le palier double et passe à 100 mg, mais la rapidité de la montée est inchangée : le temps mis pour atteindre la moitié du palier reste (ln 2)/0,4 ≈ 1,7 h dans les deux cas"
+        },
+        {
+          "id": "b",
+          "text": "Le palier double et passe à 100 mg, et le temps mis pour atteindre la moitié du palier double lui aussi, passant à environ 3,5 h"
+        },
+        {
+          "id": "c",
+          "text": "Le palier reste 50 mg : seule la montée est deux fois plus rapide"
+        },
+        {
+          "id": "d",
+          "text": "Le palier double et passe à 100 mg, et la montée est deux fois plus rapide : la moitié du palier est atteinte au bout de 0,87 h environ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La nouvelle équation est y′ = ay + b avec a = −0,4 inchangé et b = 40 doublé. Le palier vaut −b/a = 40/0,4 = 100 mg : il double, exactement comme le débit ✓. La solution nulle en 0 est alors Q(t) = 100(1 − e^(−0,4t)) — vérification : Q′(t) = 40e^(−0,4t) et −0,4Q + 40 = −40 + 40e^(−0,4t) + 40 = 40e^(−0,4t) ✓, avec Q(0) = 0 ✓. Reste la question décisive, celle que la figure invite à trancher : la RAPIDITÉ. Or elle est gouvernée par le seul coefficient a, resté à −0,4. Le calcul le montre sans ambiguïté : atteindre la moitié du palier, c'est résoudre 1 − e^(−0,4t) = 1/2, soit e^(−0,4t) = 1/2, donc t = (ln 2)/0,4 ≈ 0,693/0,4 ≈ 1,73 h — et cette équation ne contient plus b, donc elle donne le MÊME temps avant et après le doublement ✓. Sur la figure, les deux courbes coupent leur pointillé de mi-palier à la même abscisse : la violette atteint 50 mg quand la verte atteint 25 mg. Plus généralement, la nouvelle courbe est l'ancienne multipliée par 2 : c'est une dilatation verticale, pas une accélération. La proposition qui fait doubler le temps de demi-montée confond l'échelle des ORDONNÉES avec celle des ABSCISSES : il faut effectivement deux fois plus de médicament, mais il arrive deux fois plus vite, donc la durée ne bouge pas. La proposition qui garde le palier à 50 mg n'a pas vu que b intervient dans −b/a : elle traite le débit comme s'il ne changeait que la vitesse d'entrée, alors qu'il fixe le niveau d'équilibre entre apport et élimination. La proposition qui divise le temps par deux (0,87 h) fait exactement l'erreur inverse de la précédente et croit qu'un débit doublé accélère la montée ; mais un débit doublé se heurte aussi à une élimination doublée en régime plus élevé, et le compromis se règle au même rythme — retiens la règle : dans y′ = ay + b, a fixe le TEMPO, b fixe la HAUTEUR.",
+      "difficulty": 3
+    }
+  ]
+}

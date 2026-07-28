@@ -9,10 +9,22 @@
     {
       "prompt": "Épisode 1 — La Tour des Tables Perdues garde les registres d'avant les machines à calculer. Au premier palier, le Copiste te barre le passage, une tablette à la main : « Ici, nul ne multiplie. Sur ma tablette, la ligne du bas porte les nombres, la ligne du haut porte leurs logarithmes, et le passage de l'une à l'autre change tout produit en somme. Je n'ai gravé que deux valeurs : ln 2 ≈ 0,693 et ln 3 ≈ 1,099. Donne-moi ln 288, ou redescends. »",
       "options": [
-        { "id": "a", "text": "5,663" },
-        { "id": "b", "text": "7,616" },
-        { "id": "c", "text": "4,095" },
-        { "id": "d", "text": "4,564" }
+        {
+          "id": "a",
+          "text": "5,663"
+        },
+        {
+          "id": "b",
+          "text": "7,616"
+        },
+        {
+          "id": "c",
+          "text": "4,095"
+        },
+        {
+          "id": "d",
+          "text": "4,564"
+        }
       ],
       "correctOption": "a",
       "explanation": "Toute la méthode tient en un geste : FACTORISER l'argument avant d'appliquer la moindre règle. Ici 288 = 2 × 144 = 2 × 16 × 9, soit 288 = 2⁵ × 3² (contrôle : 32 × 9 = 288 ✓). On applique alors ln(a·b) = ln a + ln b, puis ln(aᵖ) = p ln a : ln 288 = ln(2⁵) + ln(3²) = 5 ln 2 + 2 ln 3 ≈ 5 × 0,693 + 2 × 1,099 = 3,465 + 2,198 = 5,663 ✓. Contrôle d'ordre de grandeur : 288 est compris entre 256 = 2⁸ et 512 = 2⁹, donc ln 288 est compris entre 8 ln 2 ≈ 5,545 et 9 ln 2 ≈ 6,238, et 5,663 s'y trouve bien ✓. La valeur 7,616 est le PRODUIT 3,465 × 2,198 : c'est l'erreur symétrique de celle que le logarithme est censé effacer — ln(a·b) est la somme des logarithmes, jamais leur produit. La valeur 4,095 vaut ln 10 + ln 6 ≈ 2,303 + 1,792 : elle transforme 5 ln 2 en ln(5 × 2) et 2 ln 3 en ln(2 × 3), c'est-à-dire qu'elle fait entrer le coefficient DANS le logarithme comme facteur au lieu de le laisser en exposant ; or p ln a = ln(aᵖ), avec p en exposant. La valeur 4,564 est 5 ln 2 + ln 3 : elle oublie purement et simplement le carré du 3, faute de recompter la factorisation jusqu'au bout.",
@@ -21,10 +33,22 @@
     {
       "prompt": "Épisode 2 — Deuxième palier, la Salle des Cloches. Un cadran mesure la puissance sonore de la Grande Cloche par l'indice S = ln(P/P₀), où P est la puissance mesurée et P₀ la puissance de référence, fixe. Le Sonneur te tend son carnet : « Entre l'aube et midi, mon indice a augmenté de 2,079 exactement. Je ne veux pas d'indices, je veux des cloches : par combien la PUISSANCE a-t-elle été multipliée ? On te donne ln 2 ≈ 0,693. »",
       "options": [
-        { "id": "a", "text": "Par 8" },
-        { "id": "b", "text": "Par 6" },
-        { "id": "c", "text": "Par 2" },
-        { "id": "d", "text": "Par 2,079" }
+        {
+          "id": "a",
+          "text": "Par 8"
+        },
+        {
+          "id": "b",
+          "text": "Par 6"
+        },
+        {
+          "id": "c",
+          "text": "Par 2"
+        },
+        {
+          "id": "d",
+          "text": "Par 2,079"
+        }
       ],
       "correctOption": "a",
       "explanation": "Notons P₁ la puissance de l'aube et P₂ celle de midi. L'écart d'indice vaut S₂ − S₁ = ln(P₂/P₀) − ln(P₁/P₀) = ln(P₂/P₁) : les références se simplifient, et l'écart d'indice est exactement le logarithme du FACTEUR de multiplication — c'est toute l'utilité d'une échelle logarithmique. On doit donc résoudre ln(P₂/P₁) = 2,079. On reconnaît 2,079 = 3 × 0,693 = 3 ln 2 = ln(2³) = ln 8. Comme ln est une bijection de ]0, +∞[ sur ℝ, l'égalité ln(P₂/P₁) = ln 8 donne P₂/P₁ = 8 : la puissance a été multipliée par 8 ✓. Contrôle : si la puissance est multipliée par 8, l'indice augmente de ln 8 ≈ 2,079 ✓, et il augmenterait de 0,693 seulement pour un doublement — trois doublements successifs, trois fois 0,693, voilà l'écart relevé. La réponse « par 6 » lit 3 ln 2 comme ln(3 × 2) : le coefficient 3 est un EXPOSANT, il donne 2³ = 8, pas 3 × 2 = 6. La réponse « par 2 » s'arrête au logarithme de référence sans voir le coefficient 3, comme si un seul doublement suffisait. La réponse « par 2,079 » confond l'écart d'indice avec le facteur lui-même : l'indice et la puissance ne vivent pas sur la même échelle, et c'est précisément le rôle de ln de traduire l'un dans l'autre — un facteur 2,079 ne produirait qu'un écart d'indice de ln 2,079 ≈ 0,732.",
@@ -33,8 +57,14 @@
     {
       "prompt": "Épisode 3 — Troisième palier, la Salle des Balances. Deux coffres scellés portent chacun un nombre gravé : sur le premier 5⁴⁰, sur le second 4⁵⁰. Le Peseur ricane : « Ces nombres ont vingt-huit et trente chiffres, aucune balance de la Tour ne les départage. Mais toi, tu as ln. Lequel des deux coffres est le plus lourd ? On te donne ln 2 ≈ 0,693, ln 4 ≈ 1,386 et ln 5 ≈ 1,609. »",
       "options": [
-        { "id": "a", "text": "Le second : 4⁵⁰ > 5⁴⁰" },
-        { "id": "b", "text": "Le premier : 5⁴⁰ > 4⁵⁰, car la base est plus grande" },
+        {
+          "id": "a",
+          "text": "Le second : 4⁵⁰ > 5⁴⁰"
+        },
+        {
+          "id": "b",
+          "text": "Le premier : 5⁴⁰ > 4⁵⁰, car la base est plus grande"
+        },
         {
           "id": "c",
           "text": "Ils sont égaux, car 5 × 40 = 4 × 50 = 200"
@@ -51,10 +81,22 @@
     {
       "prompt": "Épisode 4 — Quatrième palier, le Puits de l'Hyperbole. Une margelle circulaire, et gravée dessus la courbe y = 1/t. La Gardienne du Puits pose une craie sur la pierre : « ln 2 est l'aire sous cette courbe entre t = 1 et t = 2, et personne ici n'a jamais su l'écrire exactement. On l'encadre. Partage l'intervalle [1 ; 2] en DEUX morceaux de même longueur et donne-moi l'encadrement de ln 2 par la méthode des rectangles. »",
       "options": [
-        { "id": "a", "text": "7/12 ≤ ln 2 ≤ 5/6" },
-        { "id": "b", "text": "37/60 ≤ ln 2 ≤ 47/60" },
-        { "id": "c", "text": "7/6 ≤ ln 2 ≤ 5/3" },
-        { "id": "d", "text": "1/2 ≤ ln 2 ≤ 1" }
+        {
+          "id": "a",
+          "text": "7/12 ≤ ln 2 ≤ 5/6"
+        },
+        {
+          "id": "b",
+          "text": "37/60 ≤ ln 2 ≤ 47/60"
+        },
+        {
+          "id": "c",
+          "text": "7/6 ≤ ln 2 ≤ 5/3"
+        },
+        {
+          "id": "d",
+          "text": "1/2 ≤ ln 2 ≤ 1"
+        }
       ],
       "correctOption": "a",
       "explanation": "La fonction t ↦ 1/t est strictement DÉCROISSANTE sur [1 ; 2] : sur chaque morceau, sa plus petite valeur est atteinte à droite et sa plus grande à gauche. Avec les deux morceaux [1 ; 1,5] et [1,5 ; 2], de largeur 1/2 chacun, on a f(1) = 1, f(1,5) = 2/3 et f(2) = 1/2. Somme minorante (rectangles bâtis sur les valeurs de droite) : (1/2)(2/3) + (1/2)(1/2) = 1/3 + 1/4 = 7/12. Somme majorante (valeurs de gauche) : (1/2)(1) + (1/2)(2/3) = 1/2 + 1/3 = 5/6. D'où 7/12 ≤ ln 2 ≤ 5/6, soit 0,583 ≤ ln 2 ≤ 0,833 ✓. Contrôle : la calculatrice donne ln 2 ≈ 0,693, qui est bien dans l'encadrement ✓ ; et l'on retrouve exactement l'encadrement obtenu au chapitre précédent, quand cette aire n'avait pas encore de nom. L'encadrement 37/60 ≤ ln 2 ≤ 47/60, soit 0,617 ≤ ln 2 ≤ 0,783, est le bon résultat du DÉCOUPAGE EN TROIS morceaux, celui du cours : il est correct mais répond à une autre question, et l'on vérifie au passage qu'il est plus serré, ce qui est normal puisque le pas est plus fin — l'amplitude passe de 0,25 à 0,167. L'encadrement 7/6 ≤ ln 2 ≤ 5/3 additionne les hauteurs sans les multiplier par la largeur 1/2 : c'est l'erreur reine de la méthode, et elle se repère à l'œil, car un minorant de 1,167 pour un nombre qu'on sait inférieur à 1 est absurde. L'encadrement 1/2 ≤ ln 2 ≤ 1 est celui d'un SEUL rectangle sur tout [1 ; 2], c'est-à-dire l'inégalité de la moyenne : correct mais deux fois plus grossier, il ne répond pas à la demande d'un partage en deux.",
@@ -63,21 +105,42 @@
     {
       "prompt": "Épisode 5 — Cinquième palier, la Salle des Cartes. Sur le mur, la courbe de la fonction ln, et une corde tendue à la hauteur y = 2. « Sous cette corde, l'air est respirable, gronde le Cartographe. Au-dessus, non. Dis-moi pour quelles valeurs de x on a ln x ≥ 2 — exactement, pas à peu près. On donne e ≈ 2,718 et e² ≈ 7,389. » <svg viewBox=\"0 0 340 220\"><path d=\"M35 150 H330\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M330 150 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M55 200 V40\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M55 40 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><path d=\"M65 182 L70 171 L76 161 L85 150 L100 138 L115 129 L145 117 L175 108 L205 102 L235 96 L265 92 L277 90 L305 86 L325 84\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M55 90 H312\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"1.8\" stroke-dasharray=\"6 4\"/><line x1=\"277\" y1=\"90\" x2=\"277\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><circle cx=\"277\" cy=\"90\" r=\"3.5\" fill=\"#0f6e56\"/><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47\" y=\"166\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"85\" y=\"166\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"47\" y=\"94\" text-anchor=\"middle\" fill=\"#0f172a\">2</text><text x=\"277\" y=\"166\" text-anchor=\"middle\" fill=\"#b45309\">?</text><text x=\"300\" y=\"76\" fill=\"#0f6e56\">y = ln x</text></g></svg>",
       "options": [
-        { "id": "a", "text": "x ≥ e², soit environ x ≥ 7,39" },
-        { "id": "b", "text": "x ≥ 2" },
-        { "id": "c", "text": "0 < x ≤ e², soit environ 0 < x ≤ 7,39" },
-        { "id": "d", "text": "x ≥ 2e, soit environ x ≥ 5,44" }
+        {
+          "id": "a",
+          "text": "x ≥ e², soit environ x ≥ 7,39"
+        },
+        {
+          "id": "b",
+          "text": "x ≥ 2"
+        },
+        {
+          "id": "c",
+          "text": "0 < x ≤ e², soit environ 0 < x ≤ 7,39"
+        },
+        {
+          "id": "d",
+          "text": "x ≥ 2e, soit environ x ≥ 5,44"
+        }
       ],
       "correctOption": "a",
-      "explanation": "Trois temps, comme pour toute inéquation en ln. D'abord la condition d'existence : ln x n'a de sens que pour x > 0, on travaille donc sur ]0, +∞[. Ensuite on met les deux membres sous la forme ln A et ln B : le nombre 2 s'écrit 2 = 2 × 1 = 2 ln e = ln(e²), puisque ln e = 1 par définition de e. L'inéquation devient ln x ≥ ln(e²). Enfin on applique la stricte croissance de ln, qui conserve le sens : x ≥ e² ≈ 7,389 ✓. L'ensemble des solutions est [e² ; +∞[, et la lecture graphique le confirme — la courbe passe au-dessus de la corde à partir du point marqué, situé un peu avant 7,4 ✓. Contrôle numérique : ln 7 ≈ 1,946 < 2 (encore sous la corde) et ln 8 ≈ 2,079 > 2 (au-dessus) : le basculement se produit bien entre 7 et 8 ✓. La réponse x ≥ 2 « enlève le ln » des deux côtés sans le remplacer par rien : c'est l'erreur la plus fréquente du chapitre, et elle se démonte en une ligne, puisque ln 2 ≈ 0,693 est très loin d'atteindre 2. La réponse 0 < x ≤ e² a le bon seuil mais le mauvais sens : elle traiterait ln comme une fonction décroissante, alors que sa dérivée 1/x est strictement positive sur ]0, +∞[. La réponse x ≥ 2e confond ln(e²) avec 2e : le 2 est un EXPOSANT une fois rentré dans le logarithme, pas un facteur — d'ailleurs ln(2e) = ln 2 + 1 ≈ 1,693, ce qui n'atteint pas 2 et laisserait respirer des points qui ne le devraient pas.",
+      "explanation": "Trois temps, comme pour toute inéquation en ln. D'abord la condition d'existence : ln x n'a de sens que pour x > 0, on travaille donc sur ]0, +∞[. Ensuite on met les deux membres sous la forme ln A et ln B : le nombre 2 s'écrit 2 = 2 × 1 = 2 ln e = ln(e²), puisque ln e = 1 par définition de e — et e² ≈ 7,39. L'inéquation devient ln x ≥ ln(e²). Enfin on applique la stricte croissance de ln, qui conserve le sens : x ≥ e² ≈ 7,389 ✓. L'ensemble des solutions est [e² ; +∞[, et la lecture graphique le confirme — la courbe passe au-dessus de la corde à partir du point marqué, situé un peu avant 7,4 ✓. Contrôle numérique : ln 7 ≈ 1,946 < 2 (encore sous la corde) et ln 8 ≈ 2,079 > 2 (au-dessus) : le basculement se produit bien entre 7 et 8 ✓. La réponse x ≥ 2 « enlève le ln » des deux côtés sans le remplacer par rien : c'est l'erreur la plus fréquente du chapitre, et elle se démonte en une ligne, puisque ln 2 ≈ 0,693 est très loin d'atteindre 2. La réponse 0 < x ≤ e² a le bon seuil mais le mauvais sens : elle traiterait ln comme une fonction décroissante, alors que sa dérivée 1/x est strictement positive sur ]0, +∞[. La réponse x ≥ 2e confond ln(e²) avec 2e : le 2 est un EXPOSANT une fois rentré dans le logarithme, pas un facteur — d'ailleurs ln(2e) = ln 2 + 1 ≈ 1,693, ce qui n'atteint pas 2 et laisserait respirer des points qui ne le devraient pas.",
       "difficulty": 3
     },
     {
       "prompt": "Épisode 6 — Sommet de la Tour, la Porte du Retour. Une roue dentée, graduée en nombre de lots d, et une inscription : « Je ne cède qu'à l'équilibre. Mon indice vaut I(d) = ln(d − 2) − ln(d + 1), et la porte s'ouvre dès que I(d) ≥ −ln 2. Donne-moi le plus petit ENTIER d qui l'ouvre — et n'oublie pas où mon indice existe. »",
       "options": [
-        { "id": "a", "text": "d = 5" },
-        { "id": "b", "text": "d = 3" },
-        { "id": "c", "text": "d = 2" },
+        {
+          "id": "a",
+          "text": "d = 5"
+        },
+        {
+          "id": "b",
+          "text": "d = 3"
+        },
+        {
+          "id": "c",
+          "text": "d = 2"
+        },
         {
           "id": "d",
           "text": "Aucun : I(d) = ln((d − 2) − (d + 1)) = ln(−3) n'existe jamais"
