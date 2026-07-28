@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Fonctions réciproques",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Soit f une fonction continue sur [1, +∞[ telle que f(1) = 2 et lim_{x→+∞} f(x) = 3. Peut-on affirmer que f réalise une bijection de [1, +∞[ sur [2, 3[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui : la continuité et les deux valeurs aux bornes suffisent"
+        },
+        {
+          "id": "b",
+          "text": "Non : il manque l'hypothèse de stricte monotonie"
+        },
+        {
+          "id": "c",
+          "text": "Oui, car f est bornée entre 2 et 3"
+        },
+        {
+          "id": "d",
+          "text": "Non, car f n'est pas définie en +∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La continuité donne l'existence d'antécédents, jamais leur unicité : rien n'empêche f de monter jusqu'à 5 puis de redescendre vers 3, auquel cas la valeur 4 aurait deux antécédents et f ne serait pas bijective. Il faut la stricte monotonie ✓ — et même avec elle, l'intervalle image devrait être justifié par le tableau de variation. L'option a prend la continuité pour une condition suffisante : c'est le piège central du chapitre. L'option c invente une borne : rien ne dit que f reste entre 2 et 3, seule sa limite vaut 3. L'option d parle d'une définition en +∞ que personne n'exige : la limite suffit à décrire le comportement à l'infini.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit g définie sur ℝ par g(x) = ax + b, où a et b sont deux réels. Sous quelle condition g réalise-t-elle une bijection de ℝ sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour toutes les valeurs de a et b"
+        },
+        {
+          "id": "b",
+          "text": "Si a > 0"
+        },
+        {
+          "id": "c",
+          "text": "Si a ≠ 0"
+        },
+        {
+          "id": "d",
+          "text": "Si a ≠ 0 et b ≠ 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "g est strictement monotone sur ℝ exactement quand a ≠ 0 (croissante si a > 0, décroissante si a < 0), et elle est alors bijective de ℝ sur ℝ, de réciproque g⁻¹(y) = (y − b)/a ✓. L'option a oublie le cas a = 0 : g est alors constante et g(ℝ) = {b}, réduit à un seul point — « toute fonction affine est une bijection de ℝ sur ℝ » est donc FAUX. L'option b élimine à tort les fonctions décroissantes, qui sont tout aussi bijectives. L'option d ajoute une condition sur b sans effet : b ne fait que translater la courbe, il ne change ni la monotonie ni l'image.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f définie sur I = ]−1, +∞[ par f(x) = (2x − 1)/(x + 1). On admet que f réalise une bijection de I sur J = ]−∞, 2[. Quelle est l'expression de f⁻¹(y) pour y de J ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(y + 1)/(y − 2)"
+        },
+        {
+          "id": "b",
+          "text": "(2y − 1)/(y + 1)"
+        },
+        {
+          "id": "c",
+          "text": "(y + 1)/(2y − 1)"
+        },
+        {
+          "id": "d",
+          "text": "(1 + y)/(2 − y)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On résout y = (2x − 1)/(x + 1) en x. Comme x ≠ −1 : y(x + 1) = 2x − 1, donc yx + y = 2x − 1, puis x(y − 2) = −1 − y et enfin x = (1 + y)/(2 − y) ✓, bien défini car y < 2 sur J. Vérification : pour y = 0, x = 1/2 et f(1/2) = (1 − 1)/(3/2) = 0 ✓. L'option a se trompe de signe au moment de diviser par (y − 2) : elle oublie le signe moins de −1 − y. L'option b recopie l'expression de f en remplaçant x par y : la réciproque n'est pas obtenue en renommant la variable. L'option c inverse la fraction, c'est-à-dire calcule 1/f : encore la confusion entre f⁻¹ et l'inverse.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f une bijection d'un intervalle I sur J, tracée dans un repère orthonormé. On sait que l'équation f(x) = x admet 3 pour solution. Que peut-on en déduire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f⁻¹(3) = 3, et le point (3, 3) appartient aux deux courbes C_f et C_{f⁻¹}"
+        },
+        {
+          "id": "b",
+          "text": "f⁻¹(3) = 1/3"
+        },
+        {
+          "id": "c",
+          "text": "f⁻¹(3) = −3"
+        },
+        {
+          "id": "d",
+          "text": "C_f et C_{f⁻¹} n'ont aucun point commun"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "De f(3) = 3 et de l'équivalence f(x) = y ⟺ f⁻¹(y) = x, on tire f⁻¹(3) = 3 : le point (3, 3) appartient donc à C_f ET à C_{f⁻¹} ✓. Il est d'ailleurs sur la droite Δ : y = x, l'axe de symétrie — d'où le réflexe d'examen : résoudre f(x) = x fournit directement des points d'intersection des deux courbes. L'option b confond f⁻¹ et 1/f. L'option c applique une symétrie par rapport à l'origine, que rien ne justifie. L'option d affirme le contraire de ce qu'on vient d'établir : deux courbes symétriques par rapport à Δ se coupent justement sur Δ dès que f(x) = x a une solution.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f définie sur I = [−1, 1] par f(x) = x + 10 ; f est strictement positive sur I et f(I) = [9, 11]. Sa réciproque garde-t-elle un signe constant sur [9, 11] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui : f⁻¹ est positive, comme f"
+        },
+        {
+          "id": "b",
+          "text": "Oui : f⁻¹ est négative, car la réciproque inverse tout"
+        },
+        {
+          "id": "c",
+          "text": "Non : f⁻¹(y) = y − 10 change de signe sur [9, 11]"
+        },
+        {
+          "id": "d",
+          "text": "On ne peut pas le savoir sans tracer les deux courbes"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "De y = x + 10 on tire f⁻¹(y) = y − 10 : f⁻¹(9) = −1 < 0 et f⁻¹(11) = 1 > 0, donc le signe change ✓. La raison de fond : f⁻¹ prend ses valeurs dans l'intervalle de DÉPART I = [−1, 1], qui contient 0 — le signe de f⁻¹ se lit sur I, pas sur f(I). L'option a transporte le signe de f à f⁻¹ : « même sens de variation » ne veut pas dire « même signe ». L'option b invente une règle d'inversion des signes ; ici f et f⁻¹ sont toutes deux strictement croissantes. L'option d renonce alors qu'un simple calcul de f⁻¹ tranche.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit x un réel strictement positif. Comment se comparent ⁶√(x⁴) et ⁴√(x³) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "⁶√(x⁴) < ⁴√(x³) pour tout x > 0"
+        },
+        {
+          "id": "b",
+          "text": "⁶√(x⁴) > ⁴√(x³) si 0 < x < 1, et ⁶√(x⁴) < ⁴√(x³) si x > 1"
+        },
+        {
+          "id": "c",
+          "text": "⁶√(x⁴) > ⁴√(x³) pour tout x > 0"
+        },
+        {
+          "id": "d",
+          "text": "Les deux réels sont toujours égaux"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On ramène au même indice avec ⁿ√a = ⁿᵖ√(aᵖ) et 12 = PPCM(6, 4) : ⁶√(x⁴) = ¹²√(x⁸) et ⁴√(x³) = ¹²√(x⁹). Comme ¹²√ est strictement croissante, tout se joue sur la comparaison de x⁸ et x⁹, c'est-à-dire sur celle de 1 et x. Si 0 < x < 1, alors x⁹ < x⁸ donc ⁶√(x⁴) > ⁴√(x³) ; si x > 1, l'inégalité s'inverse ; et pour x = 1 il y a égalité ✓. Contrôle numérique : pour x = 16, ⁶√(16⁴) = 2^(8/3) ≈ 6,35 tandis que ⁴√(16³) = 8. Les options a et c généralisent à tort un cas particulier (a est le cas x > 1, c le cas 0 < x < 1) : c'est pourquoi « ⁴√x ≥ ∛x pour tout x > 0 » est faux. L'option d confondrait les fractions 4/6 et 3/4, qui ne sont pas égales.",
+      "difficulty": 3
+    }
+  ]
+}

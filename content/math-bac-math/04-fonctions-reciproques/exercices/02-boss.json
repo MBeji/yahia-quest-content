@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le passeur du chemin de retour",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Soit f définie sur ℝ par f(x) = x³ + 3x − 2. Sachant que f réalise une bijection de ℝ sur ℝ, calculer (f⁻¹)′(2).",
+      "options": [
+        {
+          "id": "a",
+          "text": "(f⁻¹)′(2) = 6"
+        },
+        {
+          "id": "b",
+          "text": "(f⁻¹)′(2) = 1/15"
+        },
+        {
+          "id": "c",
+          "text": "(f⁻¹)′(2) = 1/6"
+        },
+        {
+          "id": "d",
+          "text": "(f⁻¹)′(2) = 1/3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La formule est (f⁻¹)′(b) = 1/f′(a) avec b = f(a), donc la première étape est de trouver a tel que f(a) = 2, JAMAIS de dériver en 2. On résout a³ + 3a − 2 = 2, soit a³ + 3a − 4 = 0 ; a = 1 est racine évidente (1 + 3 − 4 = 0) et, comme f est strictement croissante (f′(x) = 3x² + 3 > 0), c'est la seule. Ensuite f′(1) = 3 + 3 = 6, d'où (f⁻¹)′(2) = 1/6 ✓ (contrôle numérique : f(1,01) = 1,030301 + 3,03 − 2 = 2,060301, donc le taux d'accroissement de f vaut 6,03 et celui de f⁻¹ entre 2 et 2,060301 vaut 0,01/0,060301 ≈ 0,166 ≈ 1/6 ✓). Le piège courant : évaluer f′ au point 2 au lieu du point a donne f′(2) = 15 et la réponse 1/15 — c'est l'erreur numéro un du chapitre ; oublier l'inverse et répondre f′(1) = 6 confond (f⁻¹)′(b) avec f′(a) ; et dériver x³ + 3x − 2 en 3x² (en oubliant le terme 3x) donne f′(1) = 3 et la réponse 1/3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f définie sur [0, +∞[ par f(x) = ⁵√(x³ + 2x). Déterminer f′(x) pour tout x > 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = (3x² + 2)/(5(x³ + 2x))"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = (3x² + 2)/(5·⁵√((x³ + 2x)⁴))"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = 1/(5·⁵√((x³ + 2x)⁴))"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = (3x² + 2)/(5·⁵√(x³ + 2x))"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On pose u(x) = x³ + 2x = x(x² + 2), positive sur [0, +∞[ et strictement positive pour x > 0 ; u′(x) = 3x² + 2. La formule de la composée x ↦ ⁿ√(u(x)) donne f′(x) = u′(x)/(n·ⁿ√(u(x)ⁿ⁻¹)) avec n = 5, soit f′(x) = (3x² + 2)/(5·⁵√((x³ + 2x)⁴)) ✓ (contrôle numérique en x = 1 : la formule donne 5/(5·⁵√81) = 1/2,4082 ≈ 0,415 ; le taux (f(1,001) − f(1))/0,001 ≈ (1,246146 − 1,245731)/0,001 ≈ 0,415 ✓). Le piège courant : écrire l'exposant n au lieu de n − 1 sous le radical donne ⁵√((x³ + 2x)⁵) = x³ + 2x au dénominateur, soit (3x² + 2)/(5(x³ + 2x)) ; oublier le facteur intérieur u′ produit 1/(5·⁵√((x³ + 2x)⁴)) ; et transposer mécaniquement le modèle (√u)′ = u′/(2√u) sans élever u à la puissance n − 1 fabrique (3x² + 2)/(5·⁵√(x³ + 2x)).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f définie sur ℝ par f(x) = x³ − 3x² + 3x. Elle réalise une bijection de ℝ sur ℝ. Que peut-on dire de f⁻¹ en 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f⁻¹ est dérivable en 1 et (f⁻¹)′(1) = 0"
+        },
+        {
+          "id": "b",
+          "text": "f⁻¹ est dérivable en 1 et (f⁻¹)′(1) = 1"
+        },
+        {
+          "id": "c",
+          "text": "f⁻¹ n'est pas dérivable en 1 : C_{f⁻¹} y admet une tangente verticale"
+        },
+        {
+          "id": "d",
+          "text": "f⁻¹ n'est pas dérivable en 1 parce que f n'est pas dérivable en 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On remarque que f(x) = (x − 1)³ + 1, donc f′(x) = 3(x − 1)², positive et ne s'annulant qu'en 1 : f est strictement croissante sur ℝ, donc bijective. Le point utile est a = 1, puisque f(1) = 1 − 3 + 3 = 1, soit b = 1. Ici f′(a) = f′(1) = 0 : le théorème de la dérivée de la réciproque ne s'applique pas, et la tangente HORIZONTALE de C_f au point (1, 1) se replie par symétrie par rapport à Δ : y = x en une tangente VERTICALE de C_{f⁻¹} au même point : f⁻¹ n'est pas dérivable en 1 ✓ (contrôle : pour y ≥ 1, f⁻¹(y) = 1 + ∛(y − 1) ; le taux entre 1 et 1,001 vaut (∛0,001)/0,001 = 0,1/0,001 = 100, et il explose quand y → 1 ✓). Le piège courant : appliquer la formule à l'envers, (f⁻¹)′(b) = f′(a) = 0, conclut à tort à une tangente horizontale ; utiliser f(1) = 1 à la place de f′(1) donne 1/1 = 1 ; et la dernière option donne la bonne conclusion avec la mauvaise justification — f est polynomiale donc parfaitement dérivable en 1 : c'est l'annulation de f′(1), pas un défaut de dérivabilité de f, qui bloque la réciproque.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f définie sur [0, 1] par f(x) = x³ + x² + x. Elle réalise une bijection de [0, 1] sur [0, 3]. Encadrer f⁻¹(1) par deux décimaux consécutifs d'ordre 1.",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,3 < f⁻¹(1) < 0,4"
+        },
+        {
+          "id": "b",
+          "text": "0,6 < f⁻¹(1) < 0,7"
+        },
+        {
+          "id": "c",
+          "text": "f⁻¹(1) = 3"
+        },
+        {
+          "id": "d",
+          "text": "0,5 < f⁻¹(1) < 0,6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Par définition, f⁻¹(1) est l'unique réel α de [0, 1] tel que f(α) = 1. Comme f′(x) = 3x² + 2x + 1 a un discriminant 4 − 12 < 0, f′ est strictement positive et f est strictement croissante : encadrer α revient à encadrer 1 entre deux valeurs de f. On calcule f(0,5) = 0,125 + 0,25 + 0,5 = 0,875 et f(0,6) = 0,216 + 0,36 + 0,6 = 1,176. Ainsi f(0,5) < 1 < f(0,6), et la stricte croissance donne 0,5 < α < 0,6 ✓. Le piège courant : confondre f⁻¹(1) avec f(1) = 3 lit la fonction dans le mauvais sens — c'est la faute majeure du chapitre ; résoudre approximativement x(x² + x + 1) = 1 en remplaçant le facteur x² + x + 1 par sa valeur en 1, soit 3, donne x ≈ 1/3 et l'encadrement 0,3 < α < 0,4 (or f(0,4) = 0,624 < 1, donc c'est trop petit) ; et négliger le terme x³ conduit à x² + x − 1 = 0, de racine positive (−1 + √5)/2 ≈ 0,618, d'où le faux encadrement 0,6 < α < 0,7.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Résoudre dans [0, +∞[ l'équation ∛(x²) − 3·∛x + 2 = 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "S = {1 ; 8}"
+        },
+        {
+          "id": "b",
+          "text": "S = {1 ; 2}"
+        },
+        {
+          "id": "c",
+          "text": "S = {1 ; ∛2}"
+        },
+        {
+          "id": "d",
+          "text": "S = ∅ : l'équation n'a pas de solution positive"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On pose t = ∛x, avec t ≥ 0, et on utilise ∛(x²) = (∛x)² = t² (règle (ⁿ√a)ᵖ = ⁿ√(aᵖ)). L'équation devient t² − 3t + 2 = 0, soit (t − 1)(t − 2) = 0 : t = 1 ou t = 2, deux valeurs bien positives. On revient ensuite à x par l'équivalence t = ∛x ⟺ x = t³ : x = 1³ = 1 et x = 2³ = 8, d'où S = {1 ; 8} ✓ (vérification par réinjection : pour x = 8, ∛64 − 3∛8 + 2 = 4 − 6 + 2 = 0 ✓ ; pour x = 1, 1 − 3 + 2 = 0 ✓). Le piège courant : s'arrêter aux valeurs de l'inconnue auxiliaire et annoncer S = {1 ; 2} oublie de revenir à x — or 2 ne convient pas, puisque ∛4 − 3∛2 + 2 ≈ 1,587 − 3,780 + 2 ≈ −0,193 ≠ 0 ; inverser le retour et écrire x = ∛t donne {1 ; ∛2} ; et une erreur de signe dans la factorisation, (t + 1)(t + 2) = 0, fournit t = −1 et t = −2, rejetés car un radical est positif, d'où la conclusion erronée qu'il n'y a aucune solution.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule des affirmations suivantes est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si f est continue sur un intervalle I, alors f réalise une bijection de I sur f(I)"
+        },
+        {
+          "id": "b",
+          "text": "Si f est une bijection de I sur J, dérivable en a de I avec f′(a) ≠ 0, alors la tangente à C_{f⁻¹} au point d'abscisse f(a) a pour coefficient directeur 1/f′(a)"
+        },
+        {
+          "id": "c",
+          "text": "Si f est une bijection dérivable d'un intervalle I sur J, alors f⁻¹ est dérivable sur J"
+        },
+        {
+          "id": "d",
+          "text": "Si f est strictement croissante et strictement positive sur I, alors f⁻¹ est strictement positive sur f(I)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Seule l'affirmation b est vraie ✓ : c'est exactement le théorème de la dérivée de la réciproque, (f⁻¹)′(b) = 1/f′(a) avec b = f(a), et le nombre dérivé est par définition le coefficient directeur de la tangente. a est fausse : la continuité seule n'assure pas l'unicité de l'antécédent — une fonction continue sur [1, +∞[ peut monter puis redescendre et prendre deux fois la même valeur ; il faut la stricte monotonie. c est fausse : la dérivabilité de f ne suffit pas, il faut de plus f′ ≠ 0 — pour f(x) = x³ sur ℝ, f est dérivable et bijective, mais f′(0) = 0 et f⁻¹ : x ↦ ∛x n'est pas dérivable en 0. d est fausse : « f⁻¹ varie dans le même sens que f » ne dit rien du signe ; avec f(x) = x + 10 sur [−1, 1], f est strictement positive, f(I) = [9, 11] et f⁻¹(y) = y − 10 vaut −1 en 9 : elle change de signe. Le piège courant : retenir ces énoncés sans leur hypothèse critique (stricte monotonie pour a, f′ ≠ 0 pour c) et transporter le signe de f sur f⁻¹ pour d, alors que le signe de f⁻¹ se lit sur I et non sur f(I).",
+      "difficulty": 3
+    }
+  ]
+}

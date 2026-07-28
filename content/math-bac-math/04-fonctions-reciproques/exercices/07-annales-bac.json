@@ -1,0 +1,118 @@
+{
+  "title": "🏛️ Annales Bac ⭐⭐⭐⭐ : Sujet type — Une fonction irrationnelle et sa réciproque",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "Partie A. Soit f la fonction définie sur ℝ par f(x) = (x − 1)/√(x² + 1), de courbe C_f dans un repère orthonormé. Justifier que f est dérivable sur ℝ et donner l'expression de f′(x).",
+      "options": [
+        { "id": "a", "text": "f′(x) = (x + 1)/((x² + 1)√(x² + 1))" },
+        { "id": "b", "text": "f′(x) = (x + 1)/(x² + 1)" },
+        { "id": "c", "text": "f′(x) = (1 − x)/((x² + 1)√(x² + 1))" },
+        { "id": "d", "text": "f′(x) = 1/√(x² + 1)" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le radicande x² + 1 est strictement positif sur ℝ, donc x ↦ √(x² + 1) est dérivable sur ℝ, de dérivée 2x/(2√(x² + 1)) = x/√(x² + 1), et elle ne s'annule jamais : le quotient f est dérivable sur ℝ. Avec u = x − 1 (u′ = 1) et v = √(x² + 1), la formule (u/v)′ = (u′v − uv′)/v² donne au numérateur √(x² + 1) − (x − 1)·x/√(x² + 1) = ((x² + 1) − x(x − 1))/√(x² + 1) = (x + 1)/√(x² + 1), et v² = x² + 1. Donc f′(x) = (x + 1)/((x² + 1)√(x² + 1)) ✓ (contrôle en x = 0 : la formule donne 1 ; le taux (f(0,001) − f(0))/0,001 ≈ (−0,998999 + 1)/0,001 ≈ 1 ✓). Le piège courant : écrire v² = √(x² + 1) au lieu de x² + 1 fait perdre un facteur et donne (x + 1)/(x² + 1) ; intervertir les deux termes du numérateur de la formule du quotient produit le signe opposé (1 − x) ; et 1/√(x² + 1) traite le dénominateur comme une constante, en oubliant complètement le terme −u·v′.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Toujours pour f(x) = (x − 1)/√(x² + 1) sur ℝ. Déterminer les branches infinies de C_f.",
+      "options": [
+        {
+          "id": "a",
+          "text": "C_f admet deux asymptotes horizontales : y = 1 au voisinage de +∞ et y = −1 au voisinage de −∞"
+        },
+        {
+          "id": "b",
+          "text": "C_f admet une seule asymptote horizontale, y = 1, aux deux infinis"
+        },
+        {
+          "id": "c",
+          "text": "C_f admet la droite y = x pour asymptote oblique aux deux infinis"
+        },
+        {
+          "id": "d",
+          "text": "C_f n'admet aucune asymptote : elle a une branche parabolique de direction (O, i⃗) en ±∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On factorise par la puissance dominante en n'oubliant pas que √(x²) = |x|. Pour x > 0 : √(x² + 1) = x√(1 + 1/x²), donc f(x) = (x − 1)/(x√(1 + 1/x²)) = (1 − 1/x)/√(1 + 1/x²) → 1 quand x → +∞. Pour x < 0 : √(x² + 1) = −x√(1 + 1/x²), donc f(x) = (1 − 1/x)/(−√(1 + 1/x²)) → −1 quand x → −∞. Les deux droites y = 1 et y = −1 sont donc asymptotes horizontales ✓ (contrôle : f(1000) ≈ 0,999 et f(−1000) ≈ −1,001 ✓). Le piège courant, et il est classique au bac : remplacer √(x²) par x au lieu de |x| — l'oubli de la valeur absolue fait disparaître l'asymptote y = −1 et donne la même limite 1 aux deux infinis. Une asymptote oblique y = x supposerait f(x)/x → 1, alors que f est bornée (|f(x)| < 1). Et parler de branche parabolique contredit l'existence même d'une limite finie.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Toujours pour f(x) = (x − 1)/√(x² + 1) sur ℝ, de dérivée f′(x) = (x + 1)/((x² + 1)√(x² + 1)). Étudier les variations de f et donner son extremum.",
+      "options": [
+        {
+          "id": "a",
+          "text": "f décroît sur ]−∞ ; −1] puis croît sur [−1 ; +∞[ : elle admet en −1 un minimum égal à −√2"
+        },
+        {
+          "id": "b",
+          "text": "f décroît sur ]−∞ ; −1] puis croît sur [−1 ; +∞[ : elle admet en −1 un minimum égal à −2"
+        },
+        {
+          "id": "c",
+          "text": "f croît sur ]−∞ ; −1] puis décroît sur [−1 ; +∞[ : elle admet en −1 un maximum égal à −√2"
+        },
+        {
+          "id": "d",
+          "text": "f est strictement croissante sur ℝ, car son dénominateur est toujours strictement positif"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le dénominateur (x² + 1)√(x² + 1) est strictement positif sur ℝ, donc f′(x) a exactement le signe de x + 1 : négatif sur ]−∞ ; −1[, nul en −1, positif sur ]−1 ; +∞[. La fonction décroît puis croît, et f′ s'annule en −1 EN CHANGEANT DE SIGNE, de − à + : c'est un minimum, de valeur f(−1) = (−1 − 1)/√(1 + 1) = −2/√2 = −√2 ✓ (contrôle : −√2 ≈ −1,414, et f(−2) = −3/√5 ≈ −1,342 > −1,414 ✓ ; ce minimum est global, cohérent avec les limites −1 et 1 aux infinis). Le piège courant : annoncer −2 en oubliant de diviser par √2, ou ne pas rationaliser −2/√2 = −2√2/2 = −√2 ; lire le tableau à l'envers transforme le creux en sommet, alors que f′ passe bien du − au + ; et conclure à la croissance sur ℝ ne regarde que le dénominateur de f′ en oubliant le facteur x + 1, qui est précisément celui qui change de signe.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B. Soit g la restriction de f à l'intervalle I = [−1 ; +∞[, où f(x) = (x − 1)/√(x² + 1). On rappelle que f est strictement croissante sur I, que f(−1) = −√2 et que lim_{x→+∞} f(x) = 1. Montrer que g réalise une bijection de I sur un intervalle J que l'on précisera.",
+      "options": [
+        { "id": "a", "text": "J = [−√2 ; 1[" },
+        { "id": "b", "text": "J = [−√2 ; 1]" },
+        { "id": "c", "text": "J = ]−√2 ; 1[" },
+        { "id": "d", "text": "J = [−1 ; 1[" }
+      ],
+      "correctOption": "a",
+      "explanation": "g est continue et strictement croissante sur l'intervalle I : d'après le théorème du cours, elle réalise une bijection de I sur J = g(I). Pour une fonction croissante sur [a ; +∞[, l'image est [g(a) ; lim_{+∞} g[ : la borne gauche est ATTEINTE (en x = −1, qui appartient à I) tandis que la borne droite est une LIMITE, jamais atteinte. D'où J = [−√2 ; 1[ ✓ (contrôle : f(0) = −1 et f(3) = 2/√10 ≈ 0,632 sont bien dans [−√2 ; 1[, et f(x) < 1 pour tout x puisque x − 1 < √(x² + 1) ✓). Le piège courant : fermer la borne 1 alors qu'aucun réel n'a pour image 1 — l'asymptote horizontale n'est jamais touchée ; ouvrir la borne −√2 alors que g(−1) = −√2 est une valeur effectivement prise ; et confondre l'ensemble de DÉPART I = [−1 ; +∞[ avec l'ensemble d'arrivée, en recopiant la borne −1 dans J.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On garde g, restriction de f : x ↦ (x − 1)/√(x² + 1) à I = [−1 ; +∞[, bijection de I sur J = [−√2 ; 1[, de dérivée g′(x) = (x + 1)/((x² + 1)√(x² + 1)). Calculer (g⁻¹)′(0).",
+      "options": [
+        { "id": "a", "text": "√2" },
+        { "id": "b", "text": "√2/2" },
+        { "id": "c", "text": "1" },
+        { "id": "d", "text": "g⁻¹ n'est pas dérivable en 0" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le théorème donne (g⁻¹)′(b) = 1/g′(a) avec a = g⁻¹(b). Il faut donc d'abord trouver a tel que g(a) = 0 : (a − 1)/√(a² + 1) = 0 équivaut à a = 1, qui appartient bien à I, donc g⁻¹(0) = 1. Ensuite g′(1) = (1 + 1)/((1 + 1)√(1 + 1)) = 2/(2√2) = 1/√2, non nul : g⁻¹ est dérivable en 0 et (g⁻¹)′(0) = 1/(1/√2) = √2 ✓ (contrôle : √2 ≈ 1,414 ; g(1,1) ≈ 0,0673 et g(0,9) ≈ −0,0743, d'où un taux d'accroissement de g⁻¹ voisin de 0,2/0,1416 ≈ 1,412 ✓). Le piège courant : oublier de passer à l'inverse et rendre √2/2, la pente de la tangente à C_g et non à C_{g⁻¹} ; évaluer g′ en 0 au lieu de a = g⁻¹(0) = 1, ce qui donne g′(0) = 1 donc la réponse 1 — c'est l'erreur reine de ce théorème, où le point où l'on dérive f⁻¹ et celui où l'on dérive f ne sont pas le même ; et conclure à la non-dérivabilité alors que la seule condition, g′(a) ≠ 0, est ici satisfaite.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dernière question. g est la bijection de I = [−1 ; +∞[ sur J = [−√2 ; 1[ définie par g(x) = (x − 1)/√(x² + 1), avec g(−1) = −√2, g′(−1) = 0 et lim_{x→+∞} g(x) = 1. Que peut-on dire de g⁻¹ et de sa courbe C_{g⁻¹} ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g⁻¹ est continue et strictement croissante sur [−√2 ; 1[, non dérivable en −√2 où C_{g⁻¹} admet une demi-tangente verticale, et C_{g⁻¹} admet la droite x = 1 pour asymptote verticale"
+        },
+        {
+          "id": "b",
+          "text": "g⁻¹ n'est pas continue en −√2, puisqu'elle n'y est pas dérivable ; C_{g⁻¹} admet la droite y = 1 pour asymptote horizontale"
+        },
+        {
+          "id": "c",
+          "text": "g⁻¹ est dérivable sur tout J, car g′ ne s'annule en aucun point de I"
+        },
+        {
+          "id": "d",
+          "text": "g⁻¹ est strictement décroissante sur J, car la symétrie par rapport à Δ : y = x inverse le sens de variation"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Trois lectures, toutes tirées de la symétrie par rapport à Δ : y = x. (1) g est continue et strictement croissante sur I, donc g⁻¹ est continue et strictement croissante sur J — elle varie dans le MÊME sens que g. (2) g′(−1) = 0 : la tangente à C_g au point (−1 ; −√2) est horizontale, donc son image par la symétrie, la tangente à C_{g⁻¹} au point (−√2 ; −1), est verticale ; c'est une demi-tangente, −√2 étant la borne gauche de J, et g⁻¹ n'y est pas dérivable — sans pour autant cesser d'y être continue. (3) L'asymptote horizontale y = 1 de C_g se replie en l'asymptote VERTICALE x = 1 de C_{g⁻¹} : quand y tend vers 1 par valeurs inférieures, g⁻¹(y) tend vers +∞ ✓. Le piège courant : déduire la discontinuité de la non-dérivabilité, alors que le théorème du cours garantit la continuité de la réciproque ; conserver l'asymptote y = 1 sans échanger les axes, ce que fait pourtant la symétrie ; affirmer que g′ ne s'annule jamais, alors que g′(−1) = 0 est justement le point délicat ; et retourner le sens de variation, que la symétrie par rapport à Δ conserve.",
+      "difficulty": 3
+    }
+  ]
+}
