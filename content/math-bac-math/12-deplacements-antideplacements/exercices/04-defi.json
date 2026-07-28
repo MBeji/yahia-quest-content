@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le maître des déplacements",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "ABC est un triangle équilatéral direct de centre G. On note r₁ la rotation de centre A et d'angle π/3, et r₂ la rotation de centre C et d'angle π/3. Identifier f = r₂∘r₁.\n\n<svg viewBox=\"0 0 300 260\"><path d=\"M70 210 L230 210 L150 71 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M70 210 L230 210 L150 71 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M70 210 L150 164 M230 210 L150 164 M150 71 L150 164\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"210\" r=\"4\"/><circle cx=\"230\" cy=\"210\" r=\"4\"/><circle cx=\"150\" cy=\"71\" r=\"4\"/></g><g fill=\"#b45309\"><circle cx=\"150\" cy=\"164\" r=\"4.5\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"58\" y=\"226\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"242\" y=\"226\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"150\" y=\"60\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"166\" y=\"172\" text-anchor=\"middle\" fill=\"#b45309\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La rotation de centre B et d'angle 2π/3"
+        },
+        {
+          "id": "b",
+          "text": "La rotation de centre G et d'angle π/3"
+        },
+        {
+          "id": "c",
+          "text": "La rotation de centre le milieu de [AC] et d'angle 2π/3"
+        },
+        {
+          "id": "d",
+          "text": "La rotation de centre G et d'angle 2π/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Trois étapes dépendantes. 1) La nature et l'angle, sans aucun calcul : la somme des angles vaut π/3 + π/3 = 2π/3, qui n'est pas congrue à 0 modulo 2π, donc f est une rotation d'angle 2π/3. 2) Le centre, en suivant DEUX points bien choisis — ceux que l'une des deux rotations fixe. f(A) : r₁ fixe A, puis r₂ fait tourner A d'un angle π/3 autour de C ; sur le triangle équilatéral direct, cela amène A sur B, donc f(A) = B. f(B) : r₁ envoie B sur C (rotation de π/3 autour de A dans le sens direct), puis r₂ fixe C, donc f(B) = C. 3) La conclusion : f est la rotation d'angle 2π/3 qui envoie A sur B et B sur C — c'est exactement le tiers de tour autour du centre G du triangle, qui réalise le cycle A ↦ B ↦ C ↦ A ✓. Contrôle par une voie analytique totalement indépendante : posons A(0 ; 0), B(1 ; 0), C(0,5 ; √3/2), donc G(0,5 ; √3/6) et c = e^(iπ/3) comme affixe de C. Alors r₁ : z ↦ e^(iπ/3)z et r₂ : z ↦ e^(iπ/3)(z − c) + c, d'où f : z ↦ e^(iπ/3)(e^(iπ/3)z − c) + c = e^(2iπ/3)z − e^(2iπ/3) + e^(iπ/3) = e^(2iπ/3)z + 1, puisque −e^(2iπ/3) + e^(iπ/3) = (0,5 − i√3/2) + (0,5 + i√3/2) = 1. Le centre a pour affixe 1/(1 − e^(2iπ/3)) = 1/(1,5 − i√3/2) = (1,5 + i√3/2)/3 = 0,5 + i√3/6 : c'est bien G ✓. On revérifie au passage f(0) = 1 = B ✓ et f(1) = e^(2iπ/3) + 1 = 0,5 + i√3/2 = C ✓. L'erreur classique : ne pas additionner les angles et garder π/3 — mais la rotation de centre G et d'angle π/3 n'envoie A sur aucun sommet, elle envoie A sur le milieu du chemin de A vers B sur le cercle circonscrit. Croire que le centre est l'image du premier point donne B : la rotation de centre B et d'angle 2π/3 envoie A sur (1,5 ; −√3/2), qui n'est même pas dans le triangle. Enfin prendre le milieu des deux centres, ici le milieu de [AC], est la fausse recette la plus répandue : ce point a pour affixe 0,25 + i√3/4, or f(0,25 + i√3/4) = e^(2iπ/3)(0,25 + i√3/4) + 1 = 0,5, il n'est pas fixe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "ABCD est un carré direct de centre O. On note L le milieu de [AD] et J le milieu de [BC]. Déterminer TOUTES les isométries f du plan telles que f(A) = C et f(D) = B.\n\n<svg viewBox=\"0 0 300 250\"><path d=\"M40 120 H260\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><path d=\"M60 200 L220 200 L220 40 L60 40 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M60 200 L220 200 L220 40 L60 40 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"200\" r=\"4\"/><circle cx=\"220\" cy=\"200\" r=\"4\"/><circle cx=\"220\" cy=\"40\" r=\"4\"/><circle cx=\"60\" cy=\"40\" r=\"4\"/><circle cx=\"140\" cy=\"120\" r=\"3.5\"/></g><g fill=\"#b45309\"><circle cx=\"60\" cy=\"120\" r=\"4\"/><circle cx=\"220\" cy=\"120\" r=\"4\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"48\" y=\"219\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"232\" y=\"219\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"232\" y=\"34\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"48\" y=\"34\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"128\" y=\"114\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"46\" y=\"136\" text-anchor=\"middle\" fill=\"#b45309\">L</text><text x=\"234\" y=\"136\" text-anchor=\"middle\" fill=\"#b45309\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La symétrie centrale de centre O et la symétrie glissante d'axe (LJ) et de vecteur AB⃗"
+        },
+        {
+          "id": "b",
+          "text": "La symétrie centrale de centre O et la symétrie orthogonale d'axe (LJ)"
+        },
+        {
+          "id": "c",
+          "text": "La rotation de centre O et d'angle π/2 et la symétrie glissante d'axe (LJ) et de vecteur AB⃗"
+        },
+        {
+          "id": "d",
+          "text": "La symétrie centrale de centre O et la symétrie glissante d'axe (LJ) et de vecteur ½AB⃗"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le comptage d'abord : AD = CB et AD ≠ 0, donc il existe exactement DEUX isométries répondant à la question, un déplacement et un antidéplacement — et il faut les identifier tous les deux. Posons A(0 ; 0), B(1 ; 0), C(1 ; 1), D(0 ; 1), donc O(0,5 ; 0,5), L(0 ; 0,5) et J(1 ; 0,5). 1) Le déplacement f : son angle vaut (AD⃗, CB⃗) = ((0 ; 1), (0 ; −1)) ≡ π [2π], il est non nul, donc f est une rotation d'angle π, c'est-à-dire une symétrie centrale. Son centre est le milieu de [A f(A)] = [AC], soit O ; on recoupe sur le second point, le milieu de [D f(D)] = [DB] est encore O ✓. Donc f = S_O. 2) L'antidéplacement g : on l'écrit z′ = az̄ + b avec |a| = 1. De g(0) = 1 + i vient b = 1 + i ; de g(i) = 1 vient a·conj(i) + 1 + i = 1, soit −ia = −i et a = 1. Donc g : z ↦ z̄ + 1 + i. Points fixes : x + 1 = x est impossible, il n'y en a AUCUN, donc g est une symétrie glissante et non une symétrie orthogonale. Son vecteur : g∘g(z) = conj(z̄ + 1 + i) + 1 + i = z + 2, c'est t_(2u⃗) de vecteur (2 ; 0), donc u⃗ = (1 ; 0) = AB⃗ ✓. Son axe : les milieux de [M g(M)] ont pour coordonnées (x + 0,5 ; 0,5), c'est la droite d'équation y = 0,5, c'est-à-dire (LJ) ✓ — et AB⃗ dirige bien cet axe ✓. Contrôle par recomposition, voie indépendante : la symétrie d'axe (LJ) envoie A(0 ; 0) sur (0 ; 1) puis la translation de AB⃗ donne (1 ; 1) = C ✓ ; elle envoie D(0 ; 1) sur (0 ; 0) puis (1 ; 0) = B ✓. Les deux images demandées sont retrouvées. L'erreur classique : conclure « symétrie orthogonale d'axe (LJ) » parce que l'axe apparaît naturellement, sans faire le test des points fixes — cette symétrie envoie A sur D, pas sur C. Lire le vecteur sur g∘g sans le diviser par deux donnerait (2 ; 0) ; le diviser une fois de trop donne ½AB⃗, et l'image de A serait alors (0,5 ; 1). Enfin prendre la rotation d'angle π/2 revient à mal lire l'angle (AD⃗, CB⃗) : elle envoie A sur B, pas sur C.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé direct. On note D la droite d'équation y = 0, v⃗ le vecteur de coordonnées (4 ; 6) et f = t_v⃗∘S_D. Voici une solution proposée. Étape 1 : S_D(x, y) = (x ; −y), donc f(x, y) = (x + 4 ; −y + 6) ; comme f est la composée d'une symétrie orthogonale et d'une translation, c'est un antidéplacement. Étape 2 : un point fixe vérifierait x = x + 4, ce qui est impossible ; f n'a aucun point fixe, c'est donc une symétrie glissante. Étape 3 : f∘f envoie M(x, y) sur (x + 8 ; y), c'est la translation de vecteur (8 ; 0), donc le vecteur de f est u⃗(8 ; 0). Étape 4 : les milieux de [M f(M)] ont pour coordonnées (x + 2 ; 3), donc l'axe est la droite d'équation y = 3, et f est la symétrie glissante d'axe y = 3 et de vecteur (8 ; 0). Quelle est la PREMIÈRE étape fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 1"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 2"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 3"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ceci est une chasse à l'erreur : la solution proposée contient une faute plantée, l'explication décrit donc un raisonnement volontairement faux. L'étape 3 est la PREMIÈRE fausse ✓. Le calcul de f∘f y est exact — f(x + 4 ; −y + 6) = (x + 8 ; −(−y + 6) + 6) = (x + 8 ; y), c'est bien la translation de vecteur (8 ; 0) — mais la propriété du cours dit f∘f = t_(2u⃗), et non f∘f = t_u⃗. Le vecteur de la symétrie glissante est donc la MOITIÉ de (8 ; 0), c'est-à-dire u⃗(4 ; 0). La bonne conclusion est : f est la symétrie glissante d'axe y = 3 et de vecteur (4 ; 0). Vérification par recomposition : la symétrie d'axe y = 3 envoie (x, y) sur (x ; 6 − y), puis la translation de (4 ; 0) donne (x + 4 ; 6 − y), exactement l'expression de f ✓. Vérification par une seconde voie, la réduction du cours : on coupe v⃗ = (4 ; 6) en sa part parallèle à D, (4 ; 0), et sa part perpendiculaire, (0 ; 6) ; l'axe glisse de la moitié de la part perpendiculaire, soit (0 ; 3), ce qui donne y = 3, et il ne reste que la part parallèle comme vecteur, (4 ; 0) ✓. Les deux routes donnent le même couple. Contrôle chiffré : M(0 ; 0) a pour image (4 ; 6), le milieu (2 ; 3) est bien sur y = 3 ✓, et le point (0 ; 3) de l'axe a pour image (4 ; 3), donc le glissement mesuré sur l'axe vaut bien (4 ; 0) ✓ — avec (8 ; 0) on tomberait sur (8 ; 3). Les étapes 1 et 2 sont irréprochables : l'expression analytique est exacte et le test des points fixes est mené sur la bonne équation. L'étape 4 est même doublement correcte dans sa partie « axe » (le calcul des milieux est juste) ; elle n'est fautive que parce qu'elle recopie le vecteur erroné de l'étape 3 — la question portant sur la PREMIÈRE faute, la choisir revient à confondre la faute et son héritage. Le piège courant est exactement celui qui est planté : le facteur 2 de f∘f = t_(2u⃗), oublié d'autant plus facilement que le reste du calcul est impeccable.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé direct. Soit r la rotation de centre O et d'angle π/2, et f la symétrie glissante d'axe la droite d'équation y = x et de vecteur (2 ; 2). Déterminer l'isométrie g telle que r∘g = f.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La symétrie glissante d'axe la droite d'équation x = 1 et de vecteur (0 ; 2)"
+        },
+        {
+          "id": "b",
+          "text": "La symétrie glissante d'axe la droite d'équation y = −1 et de vecteur (2 ; 0)"
+        },
+        {
+          "id": "c",
+          "text": "La symétrie glissante d'axe la droite d'équation y = −1 et de vecteur (4 ; 0)"
+        },
+        {
+          "id": "d",
+          "text": "La symétrie orthogonale d'axe la droite d'équation y = −1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Quatre étapes dépendantes, et la première décide de tout. 1) Isoler g : de r∘g = f on tire, en composant les DEUX membres à gauche par r⁻¹, g = r⁻¹∘f — et non f∘r⁻¹, la composition n'étant pas commutative. 2) Écrire f en complexes : la symétrie d'axe y = x envoie (x, y) sur (y, x), ce qui s'écrit z ↦ iz̄, donc f : z ↦ iz̄ + 2 + 2i. Et r⁻¹ est la rotation de centre O et d'angle −π/2, soit z ↦ −iz. 3) Composer : g(z) = −i(iz̄ + 2 + 2i) = z̄ − 2i + 2 = z̄ + 2 − 2i. 4) Identifier g par la méthode : la barre de conjugaison signale un antidéplacement ; en coordonnées g(x, y) = (x + 2 ; −y − 2), et un point fixe exigerait x = x + 2, impossible — c'est donc une symétrie glissante. Son vecteur : g∘g(z) = conj(z̄ + 2 − 2i) + 2 − 2i = z + 4, translation de vecteur (4 ; 0) = 2u⃗, donc u⃗ = (2 ; 0) ✓. Son axe : les milieux de [M g(M)] valent (x + 1 ; −1), c'est la droite d'équation y = −1 ✓, que (2 ; 0) dirige bien ✓. Contrôle par une voie indépendante, en revérifiant l'équation de départ pour TOUT z : r(g(z)) = i(z̄ + 2 − 2i) = iz̄ + 2i + 2 = f(z) ✓ — c'est la seule preuve qui compte, et elle est immédiate. L'erreur classique : composer du mauvais côté et calculer f∘r⁻¹ : z ↦ i·conj(−iz) + 2 + 2i = −z̄ + 2 + 2i, c'est-à-dire (x, y) ↦ (2 − x ; y + 2), la symétrie glissante d'axe x = 1 et de vecteur (0 ; 2) — une isométrie parfaitement identifiée… qui ne vérifie pas l'équation, puisque r appliqué ensuite donnerait i(−z̄ + 2 + 2i) = −iz̄ − 2 + 2i, et non f. Lire le vecteur directement sur g∘g donne (4 ; 0), en oubliant que g∘g = t_(2u⃗) : ce glissement doublé enverrait O sur (4 ; −2) au lieu de (2 ; −2). Enfin conclure « symétrie orthogonale d'axe y = −1 » revient à trouver l'axe par les milieux sans tester les points fixes : cette symétrie envoie O sur (0 ; −2), alors que g(O) = (2 ; −2).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABCD est un carré direct de centre O. On note r la rotation de centre A et d'angle π/2, et r′ la rotation de centre C et d'angle −π/2. Identifier f = r′∘r.\n\n<svg viewBox=\"0 0 300 250\"><path d=\"M60 200 L220 200 L220 40 L60 40 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M60 200 L220 200 L220 40 L60 40 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M60 200 L220 40\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"220\" cy=\"200\" r=\"4\"/><circle cx=\"60\" cy=\"40\" r=\"4\"/><circle cx=\"140\" cy=\"120\" r=\"3.5\"/></g><g fill=\"#b45309\"><circle cx=\"60\" cy=\"200\" r=\"5\"/><circle cx=\"220\" cy=\"40\" r=\"5\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"48\" y=\"219\" text-anchor=\"middle\" fill=\"#b45309\">A</text><text x=\"232\" y=\"219\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"232\" y=\"34\" text-anchor=\"middle\" fill=\"#b45309\">C</text><text x=\"48\" y=\"34\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"128\" y=\"114\" text-anchor=\"middle\" fill=\"#0f172a\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La translation de vecteur 2AD⃗"
+        },
+        {
+          "id": "b",
+          "text": "L'identité"
+        },
+        {
+          "id": "c",
+          "text": "La translation de vecteur 2BA⃗"
+        },
+        {
+          "id": "d",
+          "text": "La translation de vecteur AC⃗"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "C'est le CAS LIMITE de la composition de deux rotations : θ + θ′ = π/2 + (−π/2) = 0 ≡ 0 [2π], donc f n'est PAS une rotation — c'est une translation, et le théorème précise que son vecteur est non nul dès que les centres sont distincts. Reste à lire ce vecteur, en suivant un point que l'une des deux rotations fixe. Posons A(0 ; 0), B(1 ; 0), C(1 ; 1), D(0 ; 1), ce qui rend le carré direct. Pour M = A, fixé par r : r(A) = A, puis r′(A) est l'image de A par la rotation de centre C et d'angle −π/2, soit (0 ; 2). Le vecteur vaut donc (0 ; 2) − (0 ; 0) = (0 ; 2) = 2AD⃗ ✓. Contrôle sur un SECOND point, comme l'exige la méthode : pour M = C, fixé par r′, r(C) = (−1 ; 1) (quart de tour direct autour de A), puis r′((−1 ; 1)) = (1 ; 3) ; de C(1 ; 1) à (1 ; 3), le vecteur vaut encore (0 ; 2) ✓. Contrôle par l'écriture complexe, voie totalement indépendante : r s'écrit z ↦ iz et r′ s'écrit z ↦ −i(z − (1 + i)) + 1 + i = −iz + 2i, donc f : z ↦ −i(iz) + 2i = z + 2i, la translation de vecteur d'affixe 2i, soit (0 ; 2) = 2AD⃗ ✓. Trois routes, un seul résultat. L'erreur classique, et de loin la plus fréquente : conclure « l'identité » parce que la somme des angles est nulle — c'est confondre « angle nul » et « transformation nulle ». Le théorème dit translation de vecteur NON nul ; d'ailleurs f(A) = (0 ; 2) ≠ A suffit à l'exclure. Composer dans le mauvais ordre donne r∘r′ : z ↦ i(−iz + 2i) = z − 2, la translation de vecteur (−2 ; 0) = 2BA⃗ — même nature, vecteur différent, car seule la CONDITION sur les angles est symétrique. Enfin répondre AC⃗ revient à croire que le vecteur joint les deux centres : ce vecteur vaut (1 ; 1) et enverrait A sur C, pas sur (0 ; 2).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule des affirmations suivantes est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La composée de deux rotations de centres distincts est toujours une rotation"
+        },
+        {
+          "id": "b",
+          "text": "Dès que A, B, C et D sont deux à deux distincts, il existe un déplacement qui envoie A sur C et B sur D"
+        },
+        {
+          "id": "c",
+          "text": "La réciproque d'une symétrie glissante d'axe D et de vecteur u⃗ est la symétrie glissante d'axe D et de vecteur −u⃗"
+        },
+        {
+          "id": "d",
+          "text": "Une symétrie glissante peut avoir un vecteur orthogonal à son axe"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Seule l'affirmation c est vraie ✓, et elle se démontre en une ligne à partir de la forme réduite : si f = t_u⃗∘S_D avec u⃗ directeur de D, alors t_(−u⃗)∘S_D vérifie (t_(−u⃗)∘S_D)∘(t_u⃗∘S_D) = t_(−u⃗)∘t_u⃗∘S_D∘S_D = Id, puisque t_u⃗ et S_D commutent quand u⃗ dirige D (propriété de la forme réduite) et que S_D∘S_D = Id. La réciproque est donc bien la symétrie glissante de même axe et de vecteur −u⃗ ; elle est bien du type attendu, car −u⃗ est non nul et dirige encore D ✓. Vérification chiffrée : pour f(x, y) = (x + 3 ; −y), la réciproque est (x, y) ↦ (x − 3 ; −y), c'est-à-dire la symétrie glissante d'axe (Ox) et de vecteur (−3 ; 0) ✓. a est fausse à cause du cas limite : si θ + θ′ ≡ 0 [2π], la composée est une TRANSLATION de vecteur non nul. Contre-exemple exécuté : r de centre A(0 ; 0) et d'angle π/2, r′ de centre C(1 ; 1) et d'angle −π/2 donnent r′∘r : z ↦ z + 2i, une translation. b est fausse parce qu'elle efface l'hypothèse métrique : une isométrie conserve les distances, donc AB = CD est une condition NÉCESSAIRE. Contre-exemple : A(0 ; 0), B(1 ; 0), C(5 ; 0), D(8 ; 0) sont deux à deux distincts, mais AB = 1 et CD = 3 ; aucune isométrie, déplacement ou non, ne peut envoyer A sur C et B sur D. d est fausse par définition même de la forme réduite : le théorème impose que u⃗ soit un vecteur DIRECTEUR de l'axe. Et l'on voit pourquoi en exécutant le cas interdit : si v⃗ est orthogonal à D, alors t_v⃗∘S_D est la symétrie ORTHOGONALE d'axe l'image de D par la translation de ½v⃗ — elle possède toute une droite de points fixes, donc ce n'est pas une symétrie glissante. Le piège courant, présent dans a comme dans b : retenir un théorème sans sa condition (la somme des angles pour a, l'égalité des longueurs pour b), alors que c'est précisément la condition qui départage les natures.",
+      "difficulty": 3
+    }
+  ]
+}

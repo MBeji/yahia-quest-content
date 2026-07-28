@@ -1,0 +1,175 @@
+{
+  "title": "🧭 Mission interactive ⭐⭐ : La Fabrique des Sceaux",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "QCM visuel — la Fabrique grave des sceaux. Le graveur a posé le motif triangulaire direct ABC, puis sa copie A′B′C′, dans un repère orthonormé direct gradué en unités. Les chevrons indiquent le sens de parcours A → B, puis A′ → B′. Quelle isométrie envoie ABC sur A′B′C′ ? <svg viewBox=\"0 0 300 245\"><g stroke=\"#e2e8f0\" stroke-width=\"1\" fill=\"none\"><path d=\"M69 61 V205 M93 61 V205 M117 61 V205 M141 61 V205 M165 61 V205 M189 61 V205 M213 61 V205 M237 61 V205 M261 61 V205 M285 61 V205 M45 181 H285 M45 157 H285 M45 133 H285 M45 109 H285 M45 85 H285 M45 61 H285\"/></g><path d=\"M28 205 H293\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M293 205 l-8 -4 l0 8 z\" fill=\"#0f172a\"/><path d=\"M45 232 V50\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M45 50 l-4 8 l8 0 z\" fill=\"#0f172a\"/><path d=\"M69 181 L117 181 L69 157 Z\" fill=\"#0f172a\" opacity=\"0.10\"/><path d=\"M69 181 L117 181 L69 157 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M261 181 L213 181 L261 157 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M261 181 L213 181 L261 157 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M89 176 L95 181 L89 186 Z\" fill=\"#0f172a\"/><path d=\"M241 176 L235 181 L241 186 Z\" fill=\"#0f6e56\"/><g fill=\"#0f172a\"><circle cx=\"69\" cy=\"181\" r=\"4\"/><circle cx=\"117\" cy=\"181\" r=\"4\"/><circle cx=\"69\" cy=\"157\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"261\" cy=\"181\" r=\"4\"/><circle cx=\"213\" cy=\"181\" r=\"4\"/><circle cx=\"261\" cy=\"157\" r=\"4\"/></g><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"63\" y=\"195\" text-anchor=\"end\" fill=\"#0f172a\">A</text><text x=\"123\" y=\"195\" fill=\"#0f172a\">B</text><text x=\"63\" y=\"153\" text-anchor=\"end\" fill=\"#0f172a\">C</text><text x=\"267\" y=\"195\" fill=\"#0f6e56\">A′</text><text x=\"207\" y=\"195\" text-anchor=\"end\" fill=\"#0f6e56\">B′</text><text x=\"267\" y=\"153\" fill=\"#0f6e56\">C′</text><text x=\"39\" y=\"219\" text-anchor=\"end\" fill=\"#0f172a\">O</text><text x=\"69\" y=\"219\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"39\" y=\"185\" text-anchor=\"end\" fill=\"#0f172a\">1</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La symétrie orthogonale d'axe la droite d'équation x = 5 — un antidéplacement"
+        },
+        {
+          "id": "b",
+          "text": "La rotation de centre Ω(5 ; 1) et d'angle π — un déplacement"
+        },
+        {
+          "id": "c",
+          "text": "La translation de vecteur u⃗(8 ; 0) — un déplacement"
+        },
+        {
+          "id": "d",
+          "text": "La symétrie glissante d'axe la droite d'équation y = 1 et de vecteur u⃗(8 ; 0) — un antidéplacement"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On lit les six points sur le quadrillage : A(1 ; 1), B(3 ; 1), C(1 ; 2) et A′(9 ; 1), B′(7 ; 1), C′(9 ; 2). Le premier réflexe du chapitre est de regarder le SENS, pas les longueurs. Angle de départ : AB⃗ = (2 ; 0) et AC⃗ = (0 ; 1), donc (AB⃗ ; AC⃗) ≡ π/2 [2π] — le motif est direct. Angle d'arrivée : A′B′⃗ = (7 − 9 ; 0) = (−2 ; 0) et A′C′⃗ = (0 ; 1) ; le premier vecteur pointe dans la direction π, le second dans la direction π/2, donc (A′B′⃗ ; A′C′⃗) ≡ π/2 − π ≡ −π/2 [2π]. La mesure a changé de signe : f est un ANTIDÉPLACEMENT ✓, ce que les chevrons montrent aussi d'un coup d'œil, puisque le parcours s'est retourné. Restent deux espèces d'antidéplacements : symétrie orthogonale (elle a des points fixes) ou symétrie glissante (elle n'en a aucun). On cherche donc l'axe par les milieux : le milieu de [AA′] est ((1 + 9)/2 ; 1) = (5 ; 1), celui de [BB′] est (5 ; 1) aussi, et celui de [CC′] est (5 ; 2). Ces trois milieux sont alignés sur la droite d'équation x = 5, et chaque segment [MM′] est horizontal donc perpendiculaire à cette droite verticale : c'est exactement la définition de la symétrie orthogonale d'axe x = 5 ✓. Vérification complète, sur les trois sommets : S(x ; y) = (10 − x ; y), donc A(1 ; 1) ↦ (9 ; 1) = A′ ✓, B(3 ; 1) ↦ (7 ; 1) = B′ ✓, C(1 ; 2) ↦ (9 ; 2) = C′ ✓. Les trois images sont produites, l'identification est close. La rotation de centre Ω(5 ; 1) et d'angle π est le piège le mieux posé du lot, car elle réussit sur DEUX points : elle envoie A(1 ; 1) sur (10 − 1 ; 2 − 1) = (9 ; 1) = A′ ✓ et B(3 ; 1) sur (7 ; 1) = B′ ✓. Mais elle envoie C(1 ; 2) sur (9 ; 0), et non sur C′(9 ; 2). C'est la leçon la plus rentable du chapitre : deux points ne départagent JAMAIS un déplacement d'un antidéplacement, puisqu'il en existe exactement un de chaque espèce coïncidant sur eux ; c'est le troisième point — ou, plus rapidement, le signe de l'angle orienté — qui tranche. Ici la symétrie centrale conserverait l'orientation, alors que la figure la renverse. La translation de vecteur (8 ; 0) enverrait B(3 ; 1) sur (11 ; 1), très loin de B′(7 ; 1) ; elle conserve d'ailleurs le sens, ce que la figure interdit. La symétrie glissante d'axe y = 1 et de vecteur (8 ; 0) réussit elle aussi sur A — (1 ; 1) reste (1 ; 1) puis glisse en (9 ; 1) — mais envoie B(3 ; 1) sur (11 ; 1). Et surtout, l'antidéplacement cherché possède des points fixes (toute la droite x = 5), alors qu'une symétrie glissante n'en a aucun.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "QCM visuel — l'atelier teste un tampon f. On sait que f est un antidéplacement et qu'il ne laisse AUCUN point fixe. Trois encres ont été posées en M, N et P, et le tampon a laissé leurs images M′, N′ et P′, relevées sur le quadrillage ci-dessous (repère orthonormé direct, unité = un carreau). Quels sont l'axe et le vecteur de f ? <svg viewBox=\"0 0 270 210\"><g stroke=\"#e2e8f0\" stroke-width=\"1\" fill=\"none\"><path d=\"M69 61 V181 M93 61 V181 M117 61 V181 M141 61 V181 M165 61 V181 M189 61 V181 M213 61 V181 M237 61 V181 M45 157 H237 M45 133 H237 M45 109 H237 M45 85 H237 M45 61 H237\"/></g><path d=\"M28 181 H255\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M255 181 l-8 -4 l0 8 z\" fill=\"#0f172a\"/><path d=\"M45 205 V50\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M45 50 l-4 8 l8 0 z\" fill=\"#0f172a\"/><g stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-dasharray=\"5 4\" fill=\"none\"><path d=\"M69 85 L117 181\"/><path d=\"M93 109 L141 157\"/><path d=\"M141 85 L189 181\"/></g><g fill=\"#0f172a\"><circle cx=\"69\" cy=\"85\" r=\"4\"/><circle cx=\"93\" cy=\"109\" r=\"4\"/><circle cx=\"141\" cy=\"85\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"117\" cy=\"181\" r=\"4\"/><circle cx=\"141\" cy=\"157\" r=\"4\"/><circle cx=\"189\" cy=\"181\" r=\"4\"/></g><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"61\" y=\"80\" text-anchor=\"end\" fill=\"#0f172a\">M</text><text x=\"85\" y=\"104\" text-anchor=\"end\" fill=\"#0f172a\">N</text><text x=\"150\" y=\"80\" fill=\"#0f172a\">P</text><text x=\"126\" y=\"175\" fill=\"#0f6e56\">M′</text><text x=\"150\" y=\"152\" fill=\"#0f6e56\">N′</text><text x=\"198\" y=\"175\" fill=\"#0f6e56\">P′</text><text x=\"39\" y=\"195\" text-anchor=\"end\" fill=\"#0f172a\">O</text><text x=\"69\" y=\"195\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"39\" y=\"161\" text-anchor=\"end\" fill=\"#0f172a\">1</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Axe : la droite d'équation y = 2 ; vecteur : u⃗(2 ; 0)"
+        },
+        {
+          "id": "b",
+          "text": "Axe : la droite d'équation y = 2 ; vecteur : u⃗(4 ; 0)"
+        },
+        {
+          "id": "c",
+          "text": "Axe : la droite d'équation y = 2 ; vecteur : u⃗(2 ; −4), c'est-à-dire MM′⃗"
+        },
+        {
+          "id": "d",
+          "text": "Axe : l'axe des abscisses (y = 0) ; vecteur : u⃗(2 ; 0)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un antidéplacement sans point fixe est nécessairement une SYMÉTRIE GLISSANTE : le cours n'offre que deux espèces d'antidéplacements, et la symétrie orthogonale, elle, fixe toute une droite. Il faut donc trouver le couple (axe, vecteur) de sa forme réduite. On lit les coordonnées : M(1 ; 4), N(2 ; 3), P(4 ; 4), M′(3 ; 0), N′(4 ; 1), P′(6 ; 0). L'AXE se lit par la propriété du milieu : pour une symétrie glissante, le milieu de [M f(M)] appartient toujours à l'axe. Milieu de [MM′] : ((1 + 3)/2 ; (4 + 0)/2) = (2 ; 2). Milieu de [NN′] : ((2 + 4)/2 ; (3 + 1)/2) = (3 ; 2). Milieu de [PP′] : ((4 + 6)/2 ; (4 + 0)/2) = (5 ; 2). Les trois milieux ont la même ordonnée 2 : l'axe est la droite d'équation y = 2 ✓ — et il en faut au moins deux, un seul milieu ne définirait pas de droite. Le VECTEUR se lit ensuite sans effort, car il dirige l'axe, donc il est horizontal : c'est le vecteur qui joint deux milieux consécutifs de manière cohérente, ou plus sûrement celui que donne f∘f = t_(2u⃗). Vérifions par le calcul : l'application (x ; y) ↦ (x + 2 ; 4 − y) envoie M(1 ; 4) sur (3 ; 0) = M′ ✓, N(2 ; 3) sur (4 ; 1) = N′ ✓, P(4 ; 4) sur (6 ; 0) = P′ ✓. Cette application est bien t_((2 ; 0))∘S_(y = 2) : la symétrie d'axe y = 2 envoie y sur 4 − y, la translation ajoute (2 ; 0) ✓. Son carré vaut (x ; y) ↦ (x + 4 ; y), c'est-à-dire t_((4 ; 0)) = t_(2u⃗) avec u⃗(2 ; 0) ✓. Contrôle d'absence de point fixe : il faudrait 4 − y = y donc y = 2, ET x + 2 = x, impossible ✓ — cohérent avec l'énoncé. Le vecteur (4 ; 0) est l'erreur la plus fréquente : c'est le vecteur du CARRÉ f∘f, pas celui de f. La règle est f∘f = t_(2u⃗), donc on divise toujours par deux ; avec (4 ; 0) le tampon avancerait deux fois trop vite et enverrait M sur (5 ; 0). Le vecteur MM′⃗ = (3 − 1 ; 0 − 4) = (2 ; −4) est l'autre piège classique : dans une symétrie glissante, le déplacement d'un point quelconque n'est PAS le vecteur de la forme réduite — il ne l'est que si M appartient à l'axe. D'ailleurs (2 ; −4) ne dirige pas la droite y = 2, ce qui suffit à l'exclure : la forme réduite exige un vecteur directeur de l'axe. L'axe des abscisses échoue sur le premier milieu : (2 ; 2) n'a pas une ordonnée nulle. Avec cet axe on obtiendrait (x ; y) ↦ (x + 2 ; −y), qui enverrait M(1 ; 4) sur (3 ; −4) au lieu de (3 ; 0).",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Trois matrices de sceau sont rangées à l'atelier. Toutes travaillent sur le même carré direct ABCD, avec A(0 ; 0), B(2 ; 0), C(2 ; 2) et D(0 ; 2), de centre I(1 ; 1), dans un repère orthonormé direct. Associe chaque isométrie à l'effet qu'elle produit sur les quatre sommets.",
+      "options": [
+        { "id": "l1", "text": "La rotation de centre I et d'angle π/2" },
+        {
+          "id": "l2",
+          "text": "La symétrie orthogonale d'axe la diagonale (AC)"
+        },
+        {
+          "id": "l3",
+          "text": "La symétrie orthogonale d'axe la droite d'équation x = 1, qui joint les milieux de [AB] et de [CD]"
+        },
+        { "id": "r1", "text": "A ↦ B, B ↦ C, C ↦ D, D ↦ A" },
+        { "id": "r2", "text": "A ↦ A, B ↦ D, C ↦ C, D ↦ B" },
+        { "id": "r3", "text": "A ↦ B, B ↦ A, C ↦ D, D ↦ C" }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"]
+        ]
+      },
+      "explanation": "Les trois isométries laissent le carré globalement invariant, donc les trois effets sont des permutations des quatre sommets : aucune ne se distingue par les longueurs, il faut calculer. La rotation de centre I(1 ; 1) et d'angle π/2 transforme M(x ; y) en (1 − (y − 1) ; 1 + (x − 1)) = (2 − y ; x). On applique : A(0 ; 0) ↦ (2 ; 0) = B ✓, B(2 ; 0) ↦ (2 ; 2) = C ✓, C(2 ; 2) ↦ (0 ; 2) = D ✓, D(0 ; 2) ↦ (0 ; 0) = A ✓. Elle DÉCALE les sommets d'un cran, dans le sens direct, et ne fixe aucun d'eux : c'est la signature d'un déplacement d'angle non nul. La symétrie orthogonale d'axe (AC) : la diagonale (AC) est la droite d'équation y = x, dont la symétrie échange les coordonnées, (x ; y) ↦ (y ; x). Alors A(0 ; 0) ↦ A ✓, C(2 ; 2) ↦ C ✓ — les deux sommets de l'axe restent en place, comme il se doit —, tandis que B(2 ; 0) ↦ (0 ; 2) = D ✓ et D ↦ B ✓. La symétrie orthogonale d'axe x = 1 : elle garde l'ordonnée et renvoie l'abscisse de l'autre côté, (x ; y) ↦ (2 − x ; y). Donc A(0 ; 0) ↦ (2 ; 0) = B ✓, B ↦ A ✓, C(2 ; 2) ↦ (0 ; 2) = D ✓, D ↦ C ✓. Le critère de tri le plus rapide, et il vaut pour tout le chapitre : une symétrie orthogonale ÉCHANGE les points deux à deux (elle est involutive, f∘f = Id), tandis qu'une rotation d'angle π/2 les fait TOURNER en cycle de longueur 4. Il suffit donc de regarder la structure de la permutation avant même de calculer : un seul effet est un cycle de quatre sommets, il ne peut appartenir qu'à la rotation. Reste à départager les deux symétries, et c'est leur axe qui le fait : celle d'axe (AC) doit laisser A et C en place, puisque ces deux points SONT sur l'axe — l'effet qui fixe A et C lui revient forcément. Celle d'axe x = 1 ne fixe aucun sommet, car aucun sommet n'a pour abscisse 1 ; en revanche elle échange les deux sommets d'un même côté horizontal. La confusion qui guette est d'attribuer à la symétrie d'axe (AC) l'effet A ↦ B, B ↦ A : ce serait oublier qu'un point de l'axe est un point fixe, et A appartient à (AC). L'autre confusion, plus insidieuse, est d'attribuer à la rotation un effet d'échange : une rotation d'angle π/2 n'échange jamais deux points, car l'appliquer deux fois donne la rotation d'angle π, qui n'est pas l'identité — or un échange appliqué deux fois redonne l'identité.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le rouleau à sceaux de l'atelier applique, à chaque passage, une même symétrie glissante f. Après DEUX passages, le graveur constate que le motif a simplement glissé du vecteur (6 ; 8), sans avoir été retourné. Quelle est la longueur ‖u⃗‖ du vecteur u⃗ de la forme réduite de f, exprimée en unités du repère (valeur exacte) ?",
+      "answerKey": {
+        "value": 5,
+        "unit": "unités"
+      },
+      "explanation": "La donnée « après deux passages le motif a glissé sans être retourné » se traduit exactement par f∘f = t_((6 ; 8)), et c'est cohérent avec le cours : la composée de deux antidéplacements est un déplacement, ici une translation. Or la propriété caractéristique d'une symétrie glissante de vecteur u⃗ est f∘f = t_(2u⃗). On identifie donc 2u⃗ = (6 ; 8), d'où u⃗ = (3 ; 4) ✓. Sa longueur vaut ‖u⃗‖ = √(3² + 4²) = √(9 + 16) = √25 = 5 unités ✓ — le triplet pythagoricien (3 ; 4 ; 5) donne une valeur exacte, sans racine à traîner. Contrôle explicite, en construisant une symétrie glissante qui répond à l'énoncé : prenons pour axe la droite D passant par l'origine et dirigée par u⃗(3 ; 4), c'est-à-dire d'équation 4x − 3y = 0, et f = t_u⃗∘S_D. Alors f∘f = t_u⃗∘S_D∘t_u⃗∘S_D ; comme u⃗ dirige D, la translation et la symétrie COMMUTENT (propriété de la forme réduite), donc f∘f = t_u⃗∘t_u⃗∘S_D∘S_D = t_(2u⃗)∘Id = t_((6 ; 8)) ✓. Le raisonnement est bien réversible, et l'on vérifie au passage que la longueur du glissement par passage vaut la moitié de la longueur du glissement total : ‖(6 ; 8)‖ = √(36 + 64) = 10, et 10/2 = 5 ✓, les deux voies concordent. Trois erreurs à écarter. Répondre 10 revient à prendre u⃗ = (6 ; 8) au lieu de sa moitié : le rouleau aurait alors glissé de (12 ; 16) en deux passages. Répondre 7 revient à additionner les coordonnées de u⃗ (3 + 4) au lieu d'appliquer le théorème de Pythagore : une longueur de vecteur n'est jamais la somme des coordonnées, sauf si l'une est nulle. Répondre 25 s'arrête au carré et oublie d'extraire la racine.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Le maître grave la fiche technique du rouleau. Ce rouleau applique une symétrie glissante f, d'axe la droite D et de vecteur u⃗ non nul, u⃗ étant un vecteur directeur de D. Sélectionne TOUTES les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quel que soit le point M du plan, le milieu du segment [M f(M)] appartient à D"
+        },
+        { "id": "b", "text": "f∘f est la translation de vecteur 2u⃗" },
+        {
+          "id": "c",
+          "text": "f⁻¹ est la symétrie glissante d'axe D et de vecteur −u⃗"
+        },
+        {
+          "id": "d",
+          "text": "L'image par f d'un triangle direct est un triangle indirect"
+        },
+        {
+          "id": "e",
+          "text": "f admet un unique point fixe, et ce point appartient à D"
+        },
+        {
+          "id": "f",
+          "text": "f∘f change les mesures des angles orientés en leurs opposées"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "c", "d"]
+      },
+      "explanation": "Les quatre premières affirmations sont, mot pour mot ou par conséquence immédiate, la fiche d'identité de la symétrie glissante donnée par le cours. Le milieu de [M f(M)] appartient à D pour TOUT point M ✓ : c'est la propriété qui sert, en pratique, à construire l'axe à partir de deux images seulement — et c'est aussi ce qui rend le tri visuel possible sur une figure. f∘f = t_(2u⃗) ✓ : on écrit f = t_u⃗∘S_D, et comme u⃗ dirige D les deux facteurs commutent, d'où f∘f = t_u⃗∘S_D∘t_u⃗∘S_D = t_u⃗∘t_u⃗∘S_D∘S_D = t_(2u⃗), puisqu'une symétrie orthogonale est involutive. C'est la clé qui donne le vecteur : on calcule le carré, on divise par deux. f⁻¹ est la symétrie glissante de MÊME axe et de vecteur −u⃗ ✓ : la réciproque d'un antidéplacement est un antidéplacement, elle n'a pas plus de point fixe que f, donc c'est encore une symétrie glissante ; et (t_u⃗∘S_D)⁻¹ = S_D⁻¹∘t_u⃗⁻¹ = S_D∘t_(−u⃗) = t_(−u⃗)∘S_D, ce qui est bien la forme réduite annoncée. L'image d'un triangle direct est un triangle indirect ✓ : une symétrie glissante est un antidéplacement (elle vaut trois symétries orthogonales, nombre impair), donc elle change toute mesure d'angle orienté en son opposée — un angle +π/2 devient −π/2, et le sens de parcours des sommets s'inverse. Les deux affirmations à écarter. « f admet un unique point fixe sur D » est fausse et c'est même la propriété qui DÉFINIT la symétrie glissante face à la symétrie orthogonale : f n'a AUCUN point fixe. Le voir est immédiat — si M était fixe, le milieu de [M f(M)] serait M lui-même, donc M appartiendrait à D ; or sur D la symétrie S_D ne fait rien et f s'y réduit à la translation de vecteur u⃗ ≠ 0⃗, qui déplace M. Un point fixe est donc impossible, sur D comme ailleurs. Une isométrie qui n'a qu'un seul point fixe est une rotation d'angle non nul, c'est-à-dire un déplacement, pas un antidéplacement. « f∘f change les angles orientés en leurs opposées » est fausse pour la raison de signes du cours : antidéplacement ∘ antidéplacement = déplacement, soit (−1) × (−1) = +1. Et l'on connaît déjà ce déplacement, c'est la translation t_(2u⃗), qui conserve évidemment tous les angles orientés. Retiens la conséquence pratique : appliquer deux fois un miroir glissant remet la figure à l'endroit — c'est exactement ce que fait un rouleau qui avance.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "QCM visuel — la Fabrique grave une frise sans fin sur le bandeau d'un coffre : les motifs se répètent indéfiniment vers la droite ET vers la gauche selon le schéma ci-dessous. Chaque motif est un crochet fait d'un montant de 2 unités et d'une barre de 1,2 unité partant du sommet du montant. L'axe Δ est gradué en unités. Quelle transformation laisse la frise entière globalement invariante ? <svg viewBox=\"0 0 300 190\"><path d=\"M10 110 H292\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g stroke=\"#0f172a\" stroke-width=\"1.4\" fill=\"none\"><path d=\"M25 106 V114 M73 106 V114 M121 106 V114 M169 106 V114 M217 106 V114 M265 106 V114\"/></g><g fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\"><path d=\"M25 110 V62 H54\"/><path d=\"M121 110 V62 H150\"/><path d=\"M217 110 V62 H246\"/><path d=\"M73 110 V158 H44\"/><path d=\"M169 110 V158 H140\"/><path d=\"M265 110 V158 H236\"/></g><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"25\" y=\"128\" text-anchor=\"middle\" fill=\"#0f172a\">0</text><text x=\"121\" y=\"128\" text-anchor=\"middle\" fill=\"#0f172a\">4</text><text x=\"217\" y=\"128\" text-anchor=\"middle\" fill=\"#0f172a\">8</text><text x=\"73\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\">2</text><text x=\"169\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\">6</text><text x=\"265\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\">10</text><text x=\"14\" y=\"100\" text-anchor=\"middle\" fill=\"#0f172a\">Δ</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La symétrie centrale de centre le point de Δ d'abscisse 1 — un déplacement"
+        },
+        {
+          "id": "b",
+          "text": "La translation de vecteur u⃗(2 ; 0) — un déplacement"
+        },
+        {
+          "id": "c",
+          "text": "La symétrie orthogonale d'axe Δ — un antidéplacement"
+        },
+        {
+          "id": "d",
+          "text": "La symétrie glissante d'axe Δ et de vecteur u⃗(2 ; 0) — un antidéplacement"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Décrivons la frise avec la précision qu'exige ce genre de question, car tout se joue sur le détail. Les crochets d'abscisses paires 0, 4, 8, … montent au-dessus de Δ et leur barre part vers la DROITE ; ceux d'abscisses 2, 6, 10, … descendent au-dessous de Δ et leur barre part vers la GAUCHE. Le motif change donc DEUX fois d'un cran à l'autre : haut/bas, et droite/gauche. Testons la symétrie centrale de centre Ω(1 ; 0). Elle transforme M(x ; y) en (2 − x ; −y). Le pied du crochet de 0 est (0 ; 0) ↦ (2 ; 0) : c'est bien le pied du crochet suivant ✓. Le sommet de son montant, (0 ; 2), devient (2 ; −2) : le montant est retourné vers le BAS ✓, ce qu'est effectivement le crochet d'abscisse 2. L'extrémité de sa barre, (1,2 ; 2), devient (0,8 ; −2) : la barre part donc du point (2 ; −2) vers la GAUCHE ✓, ce qui est exactement le crochet d'abscisse 2. Le motif de 0 est envoyé sur le motif de 2, tout entier. Le même calcul envoie ensuite le crochet de 2 sur celui de 0, celui de 4 sur celui de −2, et ainsi de suite dans les deux directions : la frise se superpose exactement à elle-même ✓. Et cette transformation est une ROTATION d'angle π, donc un déplacement : la frise est bien invariante par un déplacement, malgré l'apparence de retournement. C'est le cœur de la question — un demi-tour retourne le motif haut/bas ET droite/gauche à la fois, ce qu'aucun miroir ne fait. La translation de vecteur (2 ; 0) échoue : elle enverrait le crochet HAUT de pied 0 sur un crochet HAUT de pied 2, barre toujours vers la droite ; or à l'abscisse 2 la frise porte un crochet BAS à barre gauche. Il faut doubler le pas : c'est la translation de vecteur (4 ; 0) qui convient, et elle s'obtient en composant les symétries centrales de centres d'abscisses 1 et 3, puisque x ↦ 2 − x suivi de x ↦ 6 − x donne x ↦ x + 4. La symétrie orthogonale d'axe Δ retourne le crochet de 0 vers le bas SANS le décaler et SANS changer le sens de la barre : elle produirait un crochet bas à barre droite en 0, motif qui n'existe nulle part dans la frise. La symétrie glissante d'axe Δ et de vecteur (2 ; 0) corrige le décalage mais pas le sens de la barre : elle envoie le crochet de 0 sur un crochet bas de pied 2 à barre DROITE, alors que la frise porte en 2 un crochet bas à barre GAUCHE. Retiens la lecture d'une frise : compte combien de caractères du motif s'inversent d'un cran au suivant. Un seul (haut/bas) ⟹ symétrie glissante, un antidéplacement. Deux (haut/bas et gauche/droite) ⟹ demi-tour, un déplacement.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "QCM visuel — dernière commande. Le graveur enchaîne deux gestes sur le motif triangulaire direct T de sommets A(2 ; 0), B(5 ; 0) et C(2 ; 2) : ① la rotation r de centre Ω(1 ; 1) et d'angle π/2, puis ② la symétrie orthogonale S_D d'axe la droite D d'équation y = 3. Le motif final T″, de sommets A″(2 ; 4), B″(2 ; 1) et C″(0 ; 4), est tracé en vert (les chevrons donnent le sens de parcours A → B et A″ → B″). Identifie f = S_D∘r. <svg viewBox=\"0 0 220 225\"><g stroke=\"#e2e8f0\" stroke-width=\"1\" fill=\"none\"><path d=\"M73 55 V195 M101 55 V195 M129 55 V195 M157 55 V195 M185 55 V195 M45 167 H185 M45 139 H185 M45 111 H185 M45 83 H185 M45 55 H185\"/></g><path d=\"M28 195 H207\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M207 195 l-8 -4 l0 8 z\" fill=\"#0f172a\"/><path d=\"M45 213 V45\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M45 45 l-4 8 l8 0 z\" fill=\"#0f172a\"/><path d=\"M35 111 H200\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"1.8\" stroke-dasharray=\"7 5\"/><path d=\"M101 195 L185 195 L101 139 Z\" fill=\"#0f172a\" opacity=\"0.10\"/><path d=\"M101 195 L185 195 L101 139 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M101 83 L101 167 L45 83 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M101 83 L101 167 L45 83 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M139 190 L145 195 L139 200 Z\" fill=\"#0f172a\"/><path d=\"M96 141 L106 141 L101 149 Z\" fill=\"#0f6e56\"/><g fill=\"#0f172a\"><circle cx=\"101\" cy=\"195\" r=\"4\"/><circle cx=\"185\" cy=\"195\" r=\"4\"/><circle cx=\"101\" cy=\"139\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"101\" cy=\"83\" r=\"4\"/><circle cx=\"101\" cy=\"167\" r=\"4\"/><circle cx=\"45\" cy=\"83\" r=\"4\"/></g><circle cx=\"73\" cy=\"167\" r=\"4\" fill=\"#b45309\"/><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"95\" y=\"210\" text-anchor=\"end\" fill=\"#0f172a\">A</text><text x=\"191\" y=\"210\" fill=\"#0f172a\">B</text><text x=\"95\" y=\"135\" text-anchor=\"end\" fill=\"#0f172a\">C</text><text x=\"108\" y=\"78\" fill=\"#0f6e56\">A″</text><text x=\"110\" y=\"172\" fill=\"#0f6e56\">B″</text><text x=\"39\" y=\"78\" text-anchor=\"end\" fill=\"#0f6e56\">C″</text><text x=\"66\" y=\"161\" text-anchor=\"end\" fill=\"#b45309\">Ω</text><text x=\"203\" y=\"106\" fill=\"#b45309\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La symétrie glissante d'axe la droite d'équation y = −x + 4 et de vecteur u⃗(−2 ; 2)"
+        },
+        {
+          "id": "b",
+          "text": "La symétrie glissante d'axe la droite d'équation y = −x + 4 et de vecteur u⃗(−4 ; 4)"
+        },
+        {
+          "id": "c",
+          "text": "La symétrie orthogonale d'axe la droite d'équation y = −x + 4"
+        },
+        {
+          "id": "d",
+          "text": "La symétrie glissante d'axe D (la droite y = 3) et de vecteur u⃗(−2 ; 2)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Étape 1, la nature, par le comptage. Une rotation vaut deux symétries orthogonales, S_D en vaut une : f en compte trois, nombre impair, donc f est un ANTIDÉPLACEMENT ✓. La figure le confirme, chevrons à l'appui : (AB⃗ ; AC⃗) = ((3 ; 0) ; (0 ; 2)) ≡ π/2, tandis que (A″B″⃗ ; A″C″⃗) = ((0 ; −3) ; (−2 ; 0)) ≡ π − (−π/2) ≡ −π/2 [2π] — le sens de parcours s'est retourné. Étape 2, l'expression analytique, qu'il faut poser pour ne rien deviner. La rotation de centre Ω(1 ; 1) et d'angle π/2 envoie M(x ; y) sur (1 − (y − 1) ; 1 + (x − 1)) = (2 − y ; x). La symétrie d'axe y = 3 envoie (X ; Y) sur (X ; 6 − Y). En composant dans l'ordre — r d'abord, S_D ensuite — on obtient f(x ; y) = (2 − y ; 6 − x). Contrôle sur les trois sommets : A(2 ; 0) ↦ (2 ; 4) = A″ ✓, B(5 ; 0) ↦ (2 ; 1) = B″ ✓, C(2 ; 2) ↦ (0 ; 4) = C″ ✓. Étape 3, points fixes. Il faudrait x = 2 − y et y = 6 − x, c'est-à-dire x + y = 2 ET x + y = 6 : impossible. f n'a AUCUN point fixe, donc ce n'est pas une symétrie orthogonale mais une SYMÉTRIE GLISSANTE ✓. Étape 4, les éléments caractéristiques. Le vecteur se lit sur le carré : f∘f(x ; y) = f(2 − y ; 6 − x) = (2 − (6 − x) ; 6 − (2 − y)) = (x − 4 ; y + 4), donc f∘f = t_((−4 ; 4)) = t_(2u⃗) et u⃗ = (−2 ; 2) ✓. L'axe se lit sur les milieux : milieu de [A A″] = (2 ; 2), milieu de [B B″] = (3,5 ; 0,5), milieu de [C C″] = (1 ; 3). Les trois vérifient x + y = 4 : l'axe est la droite d'équation x + y = 4, c'est-à-dire y = −x + 4 ✓. Dernier contrôle, celui qui ferme le dossier : le vecteur u⃗(−2 ; 2) doit DIRIGER l'axe, et la droite y = −x + 4 a bien pour vecteur directeur (−1 ; 1), colinéaire à u⃗ ✓. On peut aussi le retrouver sur un point de l'axe : le point E(4 ; 0) vérifie 4 + 0 = 4, il est donc sur l'axe, et f(E) = (2 − 0 ; 6 − 4) = (2 ; 2), d'où E f(E)⃗ = (−2 ; 2) = u⃗ ✓ — pour un point de l'axe, le déplacement EST le vecteur de la forme réduite. Le vecteur (−4 ; 4) est celui de f∘f : il double le glissement, et il enverrait A(2 ; 0) sur (0 ; 6) au lieu de (2 ; 4). La règle f∘f = t_(2u⃗) impose la division par deux. La symétrie orthogonale d'axe y = −x + 4 a le bon axe mais oublie le glissement : elle envoie M(x ; y) sur (4 − y ; 4 − x), donc A(2 ; 0) sur (4 ; 2), et non sur A″(2 ; 4). Elle fixerait toute une droite, alors que f ne fixe rien. La dernière proposition garde l'axe de S_D : c'est confondre un facteur de la composée avec le résultat. On l'écarte sans calcul, par la règle de cohérence de la forme réduite : le vecteur (−2 ; 2) n'est pas un vecteur directeur de la droite y = 3, qui est horizontale — un couple (axe, vecteur) où le vecteur ne dirige pas l'axe n'est jamais une forme réduite.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Déplacements et antidéplacements",
+  "questions": [
+    {
+      "prompt": "Par définition, un déplacement du plan est une isométrie qui :",
+      "options": [
+        {
+          "id": "a",
+          "text": "admet au moins un point fixe"
+        },
+        {
+          "id": "b",
+          "text": "change les mesures des angles orientés en leurs opposées"
+        },
+        {
+          "id": "c",
+          "text": "conserve les mesures des angles orientés"
+        },
+        {
+          "id": "d",
+          "text": "est la composée de trois symétries orthogonales"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La définition du cours est exactement celle-là : un déplacement est une isométrie qui conserve les mesures des angles orientés ✓. L'option b énonce au contraire la définition de l'antidéplacement : les deux clans se distinguent par le signe de l'angle, pas par autre chose. L'option d décrit encore un antidéplacement, puisque trois symétries renversent l'orientation. L'option a est fausse dans les deux sens : une translation de vecteur non nul est un déplacement sans aucun point fixe, et une symétrie orthogonale fixe toute une droite sans être un déplacement.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi ces isométries du plan, laquelle est un antidéplacement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "la translation de vecteur (3 ; 0)"
+        },
+        {
+          "id": "b",
+          "text": "la rotation de centre O et d'angle π/2"
+        },
+        {
+          "id": "c",
+          "text": "la symétrie centrale de centre O"
+        },
+        {
+          "id": "d",
+          "text": "la symétrie glissante d'axe (Ox) et de vecteur (3 ; 0)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le tableau de classification range la symétrie orthogonale et la symétrie glissante du côté des antidéplacements, et l'identité, les translations et les rotations du côté des déplacements : seule l'option d convient ✓. Les options a et b sont explicitement des déplacements. L'option c est le piège : une symétrie centrale porte le mot « symétrie », mais c'est la rotation d'angle π, donc un déplacement — le nom ne décide pas, l'orientation si.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le plan est rapporté à un repère orthonormé direct. Quelle est la nature de l'application qui à tout point d'affixe z associe le point d'affixe z′ = z + 3 − 2i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "la translation de vecteur (3 ; −2)"
+        },
+        {
+          "id": "b",
+          "text": "la translation de vecteur (−3 ; 2)"
+        },
+        {
+          "id": "c",
+          "text": "la symétrie centrale de centre (3, −2)"
+        },
+        {
+          "id": "d",
+          "text": "la rotation de centre O et d'angle arg(3 − 2i)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'écriture z′ = z + b caractérise la translation de vecteur d'affixe b. Ici b = 3 − 2i, donc c'est la translation de vecteur (3 ; −2) ✓. Contrôle sur l'origine : le point d'affixe 0 a pour image 3 − 2i, soit un décalage de 3 vers la droite et de 2 vers le bas ✓. L'option b donne le vecteur de la réciproque, d'affixe −3 + 2i. L'option d confond le complexe b, qui est ajouté, avec le coefficient a, qui est multiplié : ici a = 1, et aucun argument n'intervient. L'option c ferait de b le double de l'affixe d'un centre, ce que la forme z′ = z + b ne permet pas.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une isométrie du plan est un déplacement si et seulement si elle est la composée de :",
+      "options": [
+        {
+          "id": "a",
+          "text": "une symétrie orthogonale"
+        },
+        {
+          "id": "b",
+          "text": "deux symétries orthogonales"
+        },
+        {
+          "id": "c",
+          "text": "trois symétries orthogonales"
+        },
+        {
+          "id": "d",
+          "text": "une symétrie orthogonale et d'une translation de vecteur non nul"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une symétrie orthogonale renverse l'orientation ; en composer deux la rétablit. Comme toute isométrie du plan se décompose en au plus trois symétries orthogonales, le critère est un critère de parité : déplacement ⇔ composée de deux symétries orthogonales ✓. Les options a et c donnent au contraire les deux formes de l'antidéplacement, avec un nombre impair de symétries. L'option d décrit également un antidéplacement, d'après le théorème « antidéplacement = symétrie orthogonale composée avec une translation ».",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f un déplacement et g un antidéplacement du plan. Quelle est la nature de f∘g ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "un déplacement"
+        },
+        {
+          "id": "b",
+          "text": "l'identité du plan"
+        },
+        {
+          "id": "c",
+          "text": "une isométrie qui n'est ni un déplacement ni un antidéplacement"
+        },
+        {
+          "id": "d",
+          "text": "un antidéplacement"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Retiens la règle des signes : déplacement = +1, antidéplacement = −1, et la nature de la composée est le produit. Ici (+1) × (−1) = −1, donc f∘g est un antidéplacement ✓. L'option a inverserait cette règle : c'est le produit de deux facteurs de même nature qui donne un déplacement. L'option b n'a aucune raison d'être vraie, f et g n'étant pas supposées réciproques l'une de l'autre. L'option c est impossible : toute isométrie du plan conserve les angles orientés ou les change en leurs opposées, il n'y a pas de troisième cas.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit S une symétrie orthogonale. Les points M, N, P et Q ont pour images M′, N′, P′ et Q′ par S, avec MN⃗ ≠ 0⃗ et PQ⃗ ≠ 0⃗. Si (MN⃗, PQ⃗) ≡ π/3 [2π], que vaut (M′N′⃗, P′Q′⃗) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−π/3"
+        },
+        {
+          "id": "b",
+          "text": "π/6"
+        },
+        {
+          "id": "c",
+          "text": "π/3"
+        },
+        {
+          "id": "d",
+          "text": "2π/3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Toute symétrie orthogonale change les mesures des angles orientés en leurs opposées : de π/3 on passe à −π/3 [2π] ✓. L'option c est l'erreur classique qui consiste à traiter la symétrie comme un déplacement : elle conserve bien les distances et les angles géométriques, mais pas le signe des angles orientés. Les options b et d modifieraient la valeur absolue de l'angle, ce qu'aucune isométrie ne fait : l'angle géométrique reste π/3, seul son signe bascule.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la nature de la composée de deux symétries glissantes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "une symétrie orthogonale"
+        },
+        {
+          "id": "b",
+          "text": "une symétrie glissante"
+        },
+        {
+          "id": "c",
+          "text": "un déplacement"
+        },
+        {
+          "id": "d",
+          "text": "un antidéplacement"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une symétrie glissante est un antidéplacement, et la composée de deux antidéplacements est un déplacement : le produit des signes vaut (−1) × (−1) = +1 ✓. C'est donc une translation ou une rotation, jamais une symétrie. Les options a, b et d sont toutes des antidéplacements et tombent donc sous le même contre-argument. L'option b est le piège naturel — on s'attend à retrouver un objet de la même espèce — alors que la parité l'interdit formellement.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f un déplacement d'angle θ tel que θ ≡ 0 [2π], et f différente de l'identité. Quelle est la nature de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "une rotation d'angle nul"
+        },
+        {
+          "id": "b",
+          "text": "une translation de vecteur non nul"
+        },
+        {
+          "id": "c",
+          "text": "une symétrie orthogonale"
+        },
+        {
+          "id": "d",
+          "text": "une symétrie glissante"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le corollaire du cours tranche selon l'angle : si θ ≡ 0 [2π], le déplacement est une translation, sinon c'est une rotation d'angle θ. Comme f n'est pas l'identité, son vecteur est non nul ✓. L'option a n'est qu'une autre écriture de l'identité, exclue par l'énoncé : une rotation véritable a un angle non nul. Les options c et d sont impossibles puisque ce sont des antidéplacements, alors que f est donné comme un déplacement.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, un déplacement s'écrit toujours z′ = az + b avec |a| = 1. Quelle condition caractérise le cas où ce déplacement est une translation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = 1"
+        },
+        {
+          "id": "b",
+          "text": "a = −1"
+        },
+        {
+          "id": "c",
+          "text": "b = 0"
+        },
+        {
+          "id": "d",
+          "text": "|a| = 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec a = 1, l'écriture devient z′ = z + b, qui est exactement la forme d'une translation de vecteur d'affixe b ✓ ; dès que a ≠ 1, on obtient une rotation d'angle arg(a) et de centre d'affixe b/(1 − a). L'option d est vraie pour tous les déplacements, translations et rotations confondues : elle ne distingue rien. L'option b donne a = e^(iπ), donc une rotation d'angle π, c'est-à-dire une symétrie centrale. L'option c donne z′ = az, une rotation de centre O quand a ≠ 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, soit f l'application qui à tout point d'affixe z associe le point d'affixe z′ = iz + 2. Quelle est l'affixe du centre de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "2i"
+        },
+        {
+          "id": "c",
+          "text": "−1 + i"
+        },
+        {
+          "id": "d",
+          "text": "1 + i"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Ici a = i, donc |a| = 1 et a ≠ 1 : f est la rotation d'angle π/2, de centre d'affixe b/(1 − a) = 2/(1 − i) = 2(1 + i)/((1 − i)(1 + i)) = 2(1 + i)/2 = 1 + i ✓. Contrôle : i(1 + i) + 2 = −1 + i + 2 = 1 + i, le point est bien fixe ✓. L'option a prend le centre égal à b, l'erreur la plus fréquente : b n'est pas l'affixe du centre, il faut le diviser par 1 − a. L'option b confond b avec ab. L'option c donne le centre de la composée prise dans l'autre ordre, z ↦ i(z + 2) = iz + 2i, dont le centre est 2i/(1 − i) = −1 + i.",
+      "difficulty": 2
+    }
+  ]
+}
