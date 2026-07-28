@@ -1,0 +1,139 @@
+{
+  "title": "🏛️ Annales Bac ⭐⭐⭐⭐ : Sujet type — Triangle isocèle rectangle, composée t∘r et lieu de points",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "Partie A. Le plan est orienté dans le sens direct et rapporté au repère orthonormé direct (A, u⃗, v⃗). On considère les points B(2 ; 0) et C(0 ; 2) : le triangle ABC est isocèle rectangle en A et direct, puisque (AB⃗, AC⃗) ≡ π/2 [2π]. On note I le milieu de [BC], Δ la médiatrice du segment [BC], et r la rotation de centre A et d'angle π/2. Décomposer r en deux symétries orthogonales dont l'une est d'axe (AB), et préciser ce que donne l'ordre inverse. <svg viewBox=\"0 0 300 220\"><path d=\"M30 150 H285\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><path d=\"M285 150 l-8 -4 l0 8 z\" fill=\"#0f172a\"/><path d=\"M150 200 V25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><path d=\"M150 25 l-4 8 l8 0 z\" fill=\"#0f172a\"/><path d=\"M110 190 L220 80\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.2\"/><path d=\"M150 150 L240 150 L150 60 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M150 150 L240 150 L150 60 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><path d=\"M164 150 V136 H150\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><g fill=\"#0f172a\"><circle cx=\"150\" cy=\"150\" r=\"4.5\"/><circle cx=\"240\" cy=\"150\" r=\"4.5\"/><circle cx=\"150\" cy=\"60\" r=\"4.5\"/><circle cx=\"195\" cy=\"105\" r=\"4\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"142\" y=\"168\" text-anchor=\"end\" fill=\"#0f172a\">A</text><text x=\"248\" y=\"168\" fill=\"#0f172a\">B</text><text x=\"140\" y=\"56\" text-anchor=\"end\" fill=\"#0f172a\">C</text><text x=\"204\" y=\"100\" fill=\"#0f172a\">I</text><text x=\"228\" y=\"76\" fill=\"#b45309\">Δ</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "r = S_Δ∘S_(AB), car 2((AB), Δ) ≡ π/2 [2π] ; l'ordre inverse S_(AB)∘S_Δ est la rotation de centre A et d'angle −π/2"
+        },
+        {
+          "id": "b",
+          "text": "r = S_(AB)∘S_Δ, car on applique toujours d'abord l'axe qui porte le côté ; l'ordre inverse S_Δ∘S_(AB) est la rotation de centre A et d'angle −π/2"
+        },
+        {
+          "id": "c",
+          "text": "r = S_Δ∘S_(AB), et l'ordre inverse donne la même rotation, puisque les deux axes se coupent en A"
+        },
+        {
+          "id": "d",
+          "text": "r = S_Δ∘S_(AC), car Δ et (AC) forment eux aussi un angle de π/4 ; l'ordre inverse donne la rotation d'angle −π/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le théorème de décomposition d'une rotation dit ceci : pour r de centre A et d'angle θ, et pour une droite D quelconque passant par A et de vecteur directeur u⃗, on a r = S_D′∘S_D où D′ passe par A et a un vecteur directeur u′⃗ tel que 2(u⃗, u′⃗) ≡ θ [2π]. Le premier axe est LIBRE (pourvu qu'il passe par le centre), le second est imposé. Ici on impose D = (AB), donc il faut D′ passant par A avec (u⃗, u′⃗) ≡ π/4, c'est-à-dire la bissectrice de l'angle droit BAC^. Or le triangle est isocèle en A (AB = AC = 2), donc cette bissectrice est exactement la médiatrice Δ de [BC], qui passe par A et par I ✓. D'où r = S_Δ∘S_(AB) ✓ — l'axe imposé arrive en DERNIER dans l'écriture, puisque S_D′∘S_D signifie « d'abord S_D, ensuite S_D′ ». Contrôle par les coordonnées, sans aucune référence au théorème : (AB) est la droite y = 0, donc S_(AB)(x ; y) = (x ; −y) ; Δ est la droite y = x, donc S_Δ(x ; y) = (y ; x). On compose : S_Δ∘S_(AB)(x ; y) = S_Δ(x ; −y) = (−y ; x), et c'est précisément l'écriture de la rotation de centre A(0 ; 0) et d'angle π/2 ✓. Contrôle sur deux points, comme le veut la prudence : B(2 ; 0) ↦ (0 ; 2) = C, et r(B) = C puisque AB = AC et (AB⃗, AC⃗) ≡ π/2 ✓ ; C(0 ; 2) ↦ (−2 ; 0), qui est bien l'image de C par le quart de tour direct ✓. L'ordre inverse se calcule aussi bien : S_(AB)∘S_Δ(x ; y) = S_(AB)(y ; x) = (y ; −x), c'est-à-dire la rotation d'angle −π/2 ✓ — cohérent avec la règle générale (S_D′∘S_D)⁻¹ = S_D∘S_D′, une symétrie étant sa propre réciproque. La proposition qui écrit r = S_(AB)∘S_Δ inverse les deux facteurs et obtient donc la rotation d'angle −π/2, pas r. Il n'existe aucune règle « on applique d'abord l'axe du côté » : c'est le SENS de l'angle (u⃗, u′⃗) qui décide, et il se lit du premier axe appliqué vers le second. La proposition qui affirme que les deux ordres donnent la même rotation postule une commutativité fausse : deux symétries orthogonales distinctes ne commutent que si leurs axes sont perpendiculaires, ce qui n'est pas le cas ici, l'angle valant π/4. La dernière proposition remplace (AB) par (AC) : l'angle ((AC), Δ) vaut bien π/4 en valeur absolue, mais il est ORIENTÉ dans l'autre sens, d'où 2((AC), Δ) ≡ −π/2 ; l'écriture S_Δ∘S_(AC) donne la rotation d'angle −π/2, et non r. Ce serait S_(AC)∘S_Δ qui vaudrait r.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Partie A (suite). Mêmes données : dans le repère orthonormé direct (A, u⃗, v⃗), on a A(0 ; 0), B(2 ; 0), C(0 ; 2), le triangle ABC est isocèle rectangle et direct en A, et I(1 ; 1) est le milieu de [BC]. On note r la rotation de centre A et d'angle π/2, et l'on pose f = t_(BC⃗)∘r, c'est-à-dire : on applique d'abord r, puis la translation de vecteur BC⃗. Déterminer l'ensemble des points fixes de f, puis identifier f.",
+      "options": [
+        {
+          "id": "a",
+          "text": "f admet un unique point fixe Ω(−2 ; 0), symétrique de B par rapport à A : f est la rotation de centre Ω et d'angle π/2"
+        },
+        {
+          "id": "b",
+          "text": "f admet un unique point fixe A(0 ; 0) : f est la rotation de centre A et d'angle π/2, la translation ne déplaçant pas le centre"
+        },
+        {
+          "id": "c",
+          "text": "f n'admet aucun point fixe : f est la translation de vecteur BC⃗"
+        },
+        {
+          "id": "d",
+          "text": "f admet un unique point fixe I(1 ; 1), milieu de [BC] : f est la rotation de centre I et d'angle π/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Première étape, l'écriture analytique. La rotation de centre A(0 ; 0) et d'angle π/2 envoie M(x ; y) sur (−y ; x). Le vecteur BC⃗ a pour coordonnées (0 − 2 ; 2 − 0) = (−2 ; 2). En composant dans le bon ordre — r d'abord, la translation ensuite — on obtient f(x ; y) = (−y − 2 ; x + 2). Deuxième étape, les points fixes. Ils vérifient le système x = −y − 2 et y = x + 2. En reportant la seconde équation dans la première : x = −(x + 2) − 2 = −x − 4, donc 2x = −4 et x = −2, puis y = 0. Le système a une solution et une seule : Ω(−2 ; 0) ✓. Troisième étape, la conclusion par la classification. Une isométrie qui fixe un UNIQUE point I est une rotation de centre I et d'angle non nul : f est donc la rotation de centre Ω et d'angle non nul. Quatrième étape, l'angle, qui se lit sur l'image d'un point bien choisi. Prenons A : f(A) = f(0 ; 0) = (−2 ; 2). Alors ΩA⃗ = (0 − (−2) ; 0 − 0) = (2 ; 0) et Ωf(A)⃗ = (−2 − (−2) ; 2 − 0) = (0 ; 2). Le quart de tour direct envoie (2 ; 0) sur (0 ; 2), donc l'angle vaut π/2 ✓. Contrôle complet de la réponse : la rotation de centre Ω(−2 ; 0) et d'angle π/2 envoie M(x ; y) sur (−2 − (y − 0) ; 0 + (x − (−2))) = (−2 − y ; x + 2), ce qui est exactement l'expression de f ✓ — les deux écritures coïncident terme à terme. Contrôle géométrique du centre : Ω(−2 ; 0) est bien le symétrique de B(2 ; 0) par rapport à A(0 ; 0), puisque A est le milieu de [BΩ] ✓, et l'on vérifie ΩB = 4 = Ωf(B) avec f(B) = f(2 ; 0) = (−2 ; 4), d'où Ωf(B) = |4 − 0| = 4 ✓. La réponse « point fixe A » est l'erreur la plus courante : composer une rotation avec une translation non nulle DÉPLACE le centre. C'est même l'objet du théorème de décomposition unique — toute isométrie s'écrit d'une seule manière comme une translation suivie d'une isométrie fixant un point donné, mais le point fixe de la composée n'a aucune raison d'être celui du facteur. Ici f(A) = (−2 ; 2) ≠ A, la proposition tombe d'elle-même. La réponse « aucun point fixe, donc translation » se trompe deux fois : d'une part le système admet une solution, d'autre part une translation composée à une rotation d'angle non nul ne peut pas être une translation, car une translation conserve la direction de tout vecteur, ce que r ne fait pas. La réponse « centre I » choisit le point remarquable le plus visible de la figure sans vérifier : f(1 ; 1) = (−3 ; 3) ≠ I, donc I n'est pas fixe.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie A (fin). Mêmes données : A(0 ; 0), B(2 ; 0), C(0 ; 2) dans le repère orthonormé direct (A, u⃗, v⃗), triangle ABC isocèle rectangle et direct en A, I(1 ; 1) milieu de [BC], Δ la médiatrice de [BC], et r la rotation de centre A et d'angle π/2. On pose g = S_(AC)∘r, où S_(AC) est la symétrie orthogonale d'axe la droite (AC). Identifier g.",
+      "options": [
+        {
+          "id": "a",
+          "text": "g = S_Δ, la symétrie orthogonale d'axe la médiatrice Δ de [BC], c'est-à-dire la droite (AI)"
+        },
+        {
+          "id": "b",
+          "text": "g = S_(AB), la symétrie orthogonale d'axe la droite (AB)"
+        },
+        {
+          "id": "c",
+          "text": "g est la rotation de centre A et d'angle π, c'est-à-dire la symétrie centrale de centre A"
+        },
+        { "id": "d", "text": "g est l'identité du plan" }
+      ],
+      "correctOption": "a",
+      "explanation": "La voie la plus rapide passe par la décomposition établie plus haut. On sait que r = S_Δ∘S_(AB) ; mais on peut aussi décomposer r en imposant cette fois le SECOND axe : r = S_(AC)∘S_Δ, car (u_Δ⃗, u_(AC)⃗) ≡ π/2 − π/4 ≡ π/4 et 2 × π/4 ≡ π/2 ✓. En composant à gauche par S_(AC), il vient g = S_(AC)∘r = S_(AC)∘S_(AC)∘S_Δ = Id∘S_Δ = S_Δ ✓, puisqu'une symétrie orthogonale est involutive : S_(AC)∘S_(AC) = Id. C'est le geste rentable du chapitre — composer par une symétrie pour la faire télescoper avec elle-même. Contrôle analytique, entièrement indépendant : r(x ; y) = (−y ; x), et (AC) est l'axe des ordonnées, d'équation x = 0, donc S_(AC)(x ; y) = (−x ; y). En composant dans l'ordre — r d'abord, S_(AC) ensuite — on obtient g(x ; y) = S_(AC)(−y ; x) = (y ; x). L'application qui échange les deux coordonnées est la symétrie orthogonale d'axe la droite y = x ✓. Reste à reconnaître cette droite : elle passe par A(0 ; 0) et par I(1 ; 1), et comme AB = AC = 2, le point A appartient à la médiatrice de [BC], qui contient aussi le milieu I — la droite y = x est donc bien Δ = (AI) ✓. Contrôle par les points fixes, le plus sûr : g(x ; y) = (y ; x) laisse fixe tout point vérifiant x = y, c'est-à-dire toute la droite Δ, et rien d'autre ; une isométrie différente de l'identité qui fixe deux points distincts est la symétrie orthogonale d'axe la droite qui les joint ✓. Contrôle sur les sommets : g(B) = g(2 ; 0) = (0 ; 2) = C et g(C) = B — la symétrie d'axe la médiatrice de [BC] doit précisément échanger B et C ✓. La réponse S_(AB) échangerait B et lui-même en fixant toute la droite y = 0 : or g(2 ; 0) = (0 ; 2) ≠ (2 ; 0), donc B n'est pas fixe. La réponse « symétrie centrale de centre A » enverrait B(2 ; 0) sur (−2 ; 0), pas sur C ; elle correspondrait à S_(AC)∘S_(AB), composée de deux symétries d'axes PERPENDICULAIRES, ce qui n'est pas la composition demandée. La réponse « identité » suppose que S_(AC) est la réciproque de r : c'est faux, car la réciproque d'une rotation d'angle π/2 est la rotation d'angle −π/2, jamais une symétrie orthogonale — deux isométries réciproques ont d'ailleurs le même type, et une rotation n'est pas une symétrie.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B. Le plan complexe est rapporté au repère orthonormé direct (A, u⃗, v⃗) : le point A a pour affixe 0, B a pour affixe 2 et C a pour affixe 2i. On garde r la rotation de centre A et d'angle π/2, et f = t_(BC⃗)∘r. Donner l'écriture complexe de f, puis retrouver par le calcul l'affixe de son point fixe.",
+      "options": [
+        {
+          "id": "a",
+          "text": "z′ = iz − 2 + 2i, et le point fixe a pour affixe −2"
+        },
+        {
+          "id": "b",
+          "text": "z′ = iz + 2 − 2i, et le point fixe a pour affixe 2"
+        },
+        {
+          "id": "c",
+          "text": "z′ = i·z̄ − 2 + 2i, et le point fixe a pour affixe −2"
+        },
+        {
+          "id": "d",
+          "text": "z′ = iz − 2 + 2i, et le point fixe a pour affixe 2i, c'est-à-dire le point C"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La rotation de centre A d'affixe 0 et d'angle π/2 a pour écriture complexe z′ = e^(iπ/2)·z = iz. La translation de vecteur BC⃗ ajoute l'affixe de ce vecteur, qui vaut z_C − z_B = 2i − 2. En composant dans l'ordre imposé — r d'abord, la translation ensuite — on obtient f : z′ = iz + (2i − 2) = iz − 2 + 2i ✓. Première vérification, celle qu'on fait toujours en premier : le coefficient de z est a = i, de module |i| = 1, donc f est bien une isométrie, puisque |z′₁ − z′₂| = |i||z₁ − z₂| = |z₁ − z₂| ✓. Point fixe : z = iz − 2 + 2i ⟺ z(1 − i) = −2 + 2i ⟺ z = (−2 + 2i)/(1 − i). On multiplie haut et bas par le conjugué 1 + i : le numérateur devient (−2 + 2i)(1 + i) = −2 − 2i + 2i + 2i² = −2 − 2 = −4, et le dénominateur (1 − i)(1 + i) = 2. D'où z = −4/2 = −2 ✓ : le point fixe est Ω d'affixe −2, soit le point de coordonnées (−2 ; 0) — exactement celui trouvé par les équations analytiques en Partie A ✓, les deux méthodes se recoupent. On peut aussi appliquer la formule du cours : pour z′ = az + b avec a ≠ 1 et |a| = 1, le centre a pour affixe b/(1 − a) = (−2 + 2i)/(1 − i) = −2, et l'angle vaut arg(a) = arg(i) = π/2 ✓ — on retrouve la rotation de centre Ω et d'angle π/2. Contrôle sur un point : l'affixe de A est 0, donc f(A) a pour affixe i × 0 − 2 + 2i = −2 + 2i, c'est-à-dire le point (−2 ; 2), conforme au calcul analytique ✓. L'écriture z′ = iz + 2 − 2i utilise le vecteur CB⃗ au lieu de BC⃗ : elle est cohérente avec elle-même (son point fixe est bien 2, car z(1 − i) = 2 − 2i donne z = 2), mais elle décrit la composée t_(CB⃗)∘r, pas f. C'est le contresens le plus coûteux : l'affixe d'un vecteur BC⃗ est z_C − z_B, jamais z_B − z_C. L'écriture z′ = i·z̄ − 2 + 2i remplace z par son conjugué : elle décrit une isométrie d'un tout autre genre, qui retourne le plan, alors que r est une rotation. On le voit sur les points fixes, qui pour z′ = i·z̄ forment une droite entière et non un point isolé. La dernière proposition donne la bonne écriture mais se trompe dans la division : si 2i était fixe, on aurait i × 2i − 2 + 2i = −2 − 2 + 2i = −4 + 2i, qui n'est pas 2i — la vérification par réinjection, en une ligne, écarte toute erreur de calcul sur le point fixe.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B (suite). Le plan complexe est rapporté au repère orthonormé direct (A, u⃗, v⃗). On considère l'isométrie f d'écriture complexe z′ = iz − 2 + 2i, dont le point fixe est Ω d'affixe −2. À tout point M d'affixe z, f associe le point M′ d'affixe z′. Déterminer l'ensemble E des points M tels que la distance MM′ soit égale à 4.",
+      "options": [
+        {
+          "id": "a",
+          "text": "E est le cercle de centre Ω(−2 ; 0) et de rayon 2√2"
+        },
+        { "id": "b", "text": "E est le cercle de centre Ω(−2 ; 0) et de rayon 4" },
+        { "id": "c", "text": "E est le cercle de centre A(0 ; 0) et de rayon 2√2" },
+        { "id": "d", "text": "E est le cercle de centre Ω(−2 ; 0) et de rayon 4√2" }
+      ],
+      "correctOption": "a",
+      "explanation": "Tout repose sur une factorisation, et c'est le geste attendu à l'écrit : on exprime z′ − z en faisant apparaître l'affixe du point fixe. z′ − z = iz − 2 + 2i − z = (i − 1)z + (−2 + 2i) = (i − 1)z + 2(i − 1) = (i − 1)(z + 2) ✓ — le facteur 2(i − 1) se reconnaît en mettant (i − 1) en évidence, puisque 2i − 2 = 2(i − 1). Or z + 2 = z − (−2) est l'affixe du vecteur ΩM⃗, où Ω est le point fixe d'affixe −2. En passant aux modules : MM′ = |z′ − z| = |i − 1| × |z + 2| = √(1 + 1) × ΩM = √2 · ΩM. La condition MM′ = 4 s'écrit donc √2 · ΩM = 4, soit ΩM = 4/√2 = 4√2/2 = 2√2 ✓. L'ensemble E est l'ensemble des points situés à la distance 2√2 du point Ω : c'est le cercle de centre Ω(−2 ; 0) et de rayon 2√2 ✓, sans aucun point à exclure, puisque M = Ω donnerait MM′ = 0 ≠ 4 et ne satisfait donc pas la condition. Contrôle sur un point, indispensable : prenons M d'affixe 2i, c'est-à-dire le point C(0 ; 2). Sa distance à Ω vaut √((0 + 2)² + 2²) = √8 = 2√2, il est donc sur E. Son image a pour affixe z′ = i × 2i − 2 + 2i = −2 − 2 + 2i = −4 + 2i, et MM′ = |z′ − z| = |−4 + 2i − 2i| = |−4| = 4 ✓ — la condition est bien vérifiée. Deuxième contrôle, sur un point qui ne doit PAS convenir : M d'affixe 0, c'est-à-dire A. Alors ΩA = 2 ≠ 2√2, et MM′ = |−2 + 2i − 0| = √(4 + 4) = 2√2 ≈ 2,83 ≠ 4 ✓, la condition échoue comme prévu. Interprétation géométrique du facteur √2 : f est la rotation de centre Ω et d'angle π/2, donc M et M′ sont sur le même cercle de centre Ω, aux extrémités d'un angle droit ; le triangle ΩMM′ est rectangle isocèle en Ω, et son hypoténuse MM′ vaut ΩM√2 — on retrouve √2 sans passer par les complexes. La réponse « rayon 4 » oublie le facteur |i − 1| = √2 et confond MM′ avec ΩM. Elle revient à croire qu'un point tourné d'un quart de tour s'éloigne de son image de la longueur du rayon, alors qu'il s'en éloigne de la DIAGONALE du carré construit sur ce rayon. La réponse « centre A » remplace le point fixe par l'origine du repère : la factorisation fait apparaître z + 2, pas z, et c'est toujours le point fixe qui commande le lieu. La réponse « rayon 4√2 » multiplie par √2 au lieu de diviser : elle donnerait MM′ = √2 × 4√2 = 8, soit le double de la distance demandée.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B (fin). Mêmes données : dans le repère orthonormé direct (A, u⃗, v⃗) on a A(0 ; 0), B(2 ; 0), C(0 ; 2), et f est l'isométrie d'écriture complexe z′ = iz − 2 + 2i, c'est-à-dire la rotation de centre Ω(−2 ; 0) et d'angle π/2. On décide de décomposer f en deux symétries orthogonales en imposant comme PREMIER axe la droite D = (AB). Déterminer la droite D′ telle que f = S_D′∘S_D.",
+      "options": [
+        {
+          "id": "a",
+          "text": "D′ est la droite passant par Ω et de coefficient directeur 1, d'équation y = x + 2"
+        },
+        {
+          "id": "b",
+          "text": "D′ est la droite d'équation y = x, c'est-à-dire la médiatrice Δ de [BC]"
+        },
+        { "id": "c", "text": "D′ est la droite d'équation y = −x − 2" },
+        {
+          "id": "d",
+          "text": "D′ est la droite d'équation x = −2, perpendiculaire à D en Ω"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux conditions déterminent D′, et il faut les poser toutes les deux. Première condition, la position : les deux axes d'une décomposition de rotation doivent se couper au CENTRE de la rotation, ici Ω(−2 ; 0). Le choix D = (AB) est légitime, car (AB) est la droite d'équation y = 0 et Ω lui appartient ✓ — c'est ce qui rend l'énoncé cohérent. Donc D′ passe par Ω. Seconde condition, la direction : le théorème impose 2(u⃗, u′⃗) ≡ θ [2π], avec ici θ = π/2, donc (u⃗, u′⃗) ≡ π/4 [π]. Comme u⃗ = i⃗ dirige D, le vecteur u′⃗ fait un angle de π/4 avec l'axe des abscisses : son coefficient directeur vaut tan(π/4) = 1. La droite passant par Ω(−2 ; 0) de coefficient directeur 1 a pour équation y − 0 = 1 × (x + 2), soit y = x + 2 ✓. Vérification analytique complète, la seule qui clôt le débat. S_D est la symétrie d'axe y = 0 : (x ; y) ↦ (x ; −y). S_D′ est la symétrie d'axe y = x + 2 : on ramène l'axe à la droite y = x par la translation de vecteur (2 ; 0), on échange les coordonnées, on revient — ce qui donne (x ; y) ↦ (y − 2 ; x + 2). En composant : S_D′∘S_D(x ; y) = S_D′(x ; −y) = (−y − 2 ; x + 2), qui est exactement l'expression de f trouvée en Partie A ✓. Contrôle sur un point : A(0 ; 0) ↦ S_D ↦ (0 ; 0) ↦ S_D′ ↦ (−2 ; 2), et f(A) = (−2 ; 2) ✓. Contrôle du point fixe : Ω(−2 ; 0) ↦ S_D ↦ (−2 ; 0) puisque Ω est sur D, ↦ S_D′ ↦ (−2 ; 0) puisque Ω est sur D′ (0 = −2 + 2 ✓) — Ω est fixé par les deux symétries, donc par f ✓. La droite y = x oublie la première condition : elle a la bonne direction mais passe par A et non par Ω. Le calcul le confirme : S_(y=x)∘S_(y=0)(x ; y) = S_(y=x)(x ; −y) = (−y ; x), c'est-à-dire la rotation de centre A et d'angle π/2, soit r et non f. C'est précisément l'écart entre r et f, que la translation de vecteur BC⃗ avait creusé. La droite y = −x − 2 passe bien par Ω, mais son coefficient directeur −1 correspond à l'angle −π/4, donc à une rotation d'angle 2 × (−π/4) = −π/2 : on obtient la rotation de centre Ω et d'angle −π/2, réciproque de f. La droite x = −2 est perpendiculaire à D en Ω : deux axes perpendiculaires donnent l'angle 2 × (π/2) = π, c'est-à-dire la symétrie centrale de centre Ω, et non un quart de tour.",
+      "difficulty": 3
+    }
+  ]
+}
