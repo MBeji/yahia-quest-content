@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Nombres complexes",
+  "questions": [
+    {
+      "prompt": "Soit z = 5 − 3i. Quelle est la partie imaginaire de z ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3"
+        },
+        {
+          "id": "b",
+          "text": "−3i"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Dans l'écriture z = a + ib avec a et b réels, Im(z) est le réel b, pas le terme ib. Ici z = 5 + i × (−3), donc Im(z) = −3 ✓. L'option b garde le facteur i : la partie imaginaire est un RÉEL, jamais un imaginaire. L'option c perd le signe moins, alors que b = −3 est bien négatif. L'option d donne la partie réelle Re(z) = 5.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est le conjugué de z = −4 + 7i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−7 + 4i"
+        },
+        {
+          "id": "b",
+          "text": "−4 − 7i"
+        },
+        {
+          "id": "c",
+          "text": "4 − 7i"
+        },
+        {
+          "id": "d",
+          "text": "4 + 7i"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le conjugué de z = a + ib est z̄ = a − ib : on change le signe de la SEULE partie imaginaire. Ici a = −4 reste inchangé et b = 7 devient −7, donc z̄ = −4 − 7i ✓. Contrôle : z + z̄ = −8 = 2Re(z) ✓. L'option c est l'opposé −z = 4 − 7i : c'est la confusion la plus fréquente, elle change les deux signes. L'option d ne change que la partie réelle. L'option a échange les rôles de a et b.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut (2 + 3i)(2 − 3i) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−5"
+        },
+        {
+          "id": "b",
+          "text": "4 − 9i"
+        },
+        {
+          "id": "c",
+          "text": "√13"
+        },
+        {
+          "id": "d",
+          "text": "13"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "C'est le produit z z̄ avec z = 2 + 3i : (2 + 3i)(2 − 3i) = 4 − 6i + 6i − 9i², et comme i² = −1 le terme −9i² vaut +9, d'où 4 + 9 = 13 ✓. C'est bien zz̄ = (Re z)² + (Im z)² = 4 + 9 = 13. L'option a prend i² pour +1 et donne 4 − 9 = −5. L'option b remplace i² par i au lieu de −1. L'option c donne le module |z| = √13 au lieu de son carré : zz̄ = |z|², pas |z|.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est le module de z = −3 + 4i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Par définition |z| = √(a² + b²) = √((−3)² + 4²) = √(9 + 16) = √25 = 5 ✓. Un module est une longueur : c'est la distance OM, donc un réel positif. L'option a s'arrête à a² + b² = 25 et oublie la racine carrée. L'option b additionne les valeurs absolues 3 + 4, ce qui reviendrait à longer les axes au lieu de couper en diagonale. L'option d additionne a et b sans les élever au carré : −3 + 4 = 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le plan complexe, A a pour affixe 2 − i et B a pour affixe −1 + 3i. Quelle est l'affixe du vecteur BA⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3 + 4i"
+        },
+        {
+          "id": "b",
+          "text": "1 + 2i"
+        },
+        {
+          "id": "c",
+          "text": "3 − 4i"
+        },
+        {
+          "id": "d",
+          "text": "3 + 2i"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'affixe d'un vecteur MN⃗ est z_N − z_M : ici Aff(BA⃗) = z_A − z_B = (2 − (−1)) + (−1 − 3)i = 3 − 4i ✓. L'option a est l'affixe de AB⃗ = z_B − z_A : c'est le vecteur opposé, on a soustrait dans le mauvais sens. L'option b additionne les deux affixes au lieu de les soustraire. L'option d se trompe de signe sur la partie imaginaire en calculant −1 + 3 = 2 au lieu de −1 − 3 = −4.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Écrire le quotient (3 + i)/(1 − i) sous forme algébrique.",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 − 2i"
+        },
+        {
+          "id": "b",
+          "text": "1 + 2i"
+        },
+        {
+          "id": "c",
+          "text": "2 + 4i"
+        },
+        {
+          "id": "d",
+          "text": "4 − 2i"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On multiplie haut et bas par le conjugué du dénominateur, 1 + i : le numérateur devient (3 + i)(1 + i) = 3 + 3i + i − 1 = 2 + 4i, le dénominateur (1 − i)(1 + i) = 1 + 1 = 2, d'où (2 + 4i)/2 = 1 + 2i ✓. Contrôle par réinjection : (1 + 2i)(1 − i) = 1 − i + 2i + 2 = 3 + i ✓. L'option c oublie de diviser par 2. L'option d multiplie par 1 − i au lieu du conjugué 1 + i et laisse tomber le dénominateur. L'option a est le conjugué du résultat : une conjugaison de trop en fin de calcul.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le plan complexe, M a pour affixe 2 + 3i et N a pour affixe −4 + 11i. Que vaut la distance MN ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "14"
+        },
+        {
+          "id": "d",
+          "text": "100"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La règle du cours est MN = |z_N − z_M|. Ici z_N − z_M = (−4 − 2) + (11 − 3)i = −6 + 8i, donc MN = √(36 + 64) = √100 = 10 ✓. L'option d s'arrête à 36 + 64 = 100 sans extraire la racine carrée. L'option c additionne 6 et 8 au lieu de passer par les carrés. L'option a additionne simplement −6 et 8 : une distance ne se lit pas sur les coordonnées, elle se calcule par le module.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est l'écriture trigonométrique de z = 1 + i√3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2(cos(−π/3) + i sin(−π/3))"
+        },
+        {
+          "id": "b",
+          "text": "2(cos(π/6) + i sin(π/6))"
+        },
+        {
+          "id": "c",
+          "text": "2(cos(π/3) + i sin(π/3))"
+        },
+        {
+          "id": "d",
+          "text": "4(cos(π/3) + i sin(π/3))"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Module : |z| = √(1 + 3) = 2. Argument : cos θ = 1/2 et sin θ = √3/2, et comme Re(z) > 0 et Im(z) > 0 le point est dans le premier quadrant, donc θ = π/3, d'où z = 2(cos(π/3) + i sin(π/3)) ✓. Contrôle par retour à la forme algébrique : 2(1/2 + i√3/2) = 1 + i√3 ✓. L'option a prend l'argument opposé : elle décrit 1 − i√3, dans le quatrième quadrant. L'option b échange cosinus et sinus et redonne √3 + i. L'option d garde 1² + (√3)² = 4 comme module, sans la racine carrée.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la forme algébrique de z = 4(cos(2π/3) + i sin(2π/3)) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2√3 + 2i"
+        },
+        {
+          "id": "b",
+          "text": "−2 − 2i√3"
+        },
+        {
+          "id": "c",
+          "text": "−2 + 2i√3"
+        },
+        {
+          "id": "d",
+          "text": "2 + 2i√3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On remplace : cos(2π/3) = −1/2 et sin(2π/3) = √3/2, donc z = 4(−1/2 + i√3/2) = −2 + 2i√3 ✓. Contrôle : |z| = √(4 + 12) = 4 ✓, et l'angle 2π/3 est entre π/2 et π, donc le point doit être dans le deuxième quadrant (Re < 0, Im > 0) ✓. L'option d place le point dans le premier quadrant en prenant cos(2π/3) positif. L'option b met le sinus en négatif et tombe dans le troisième quadrant, ce qui correspondrait à −2π/3. L'option a échange les valeurs du cosinus et du sinus.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résoudre dans ℂ l'équation z² − 4z + 13 = 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "S = ∅"
+        },
+        {
+          "id": "b",
+          "text": "S = {−2 − 3i ; −2 + 3i}"
+        },
+        {
+          "id": "c",
+          "text": "S = {2 − 6i ; 2 + 6i}"
+        },
+        {
+          "id": "d",
+          "text": "S = {2 − 3i ; 2 + 3i}"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Δ = (−4)² − 4 × 13 = 16 − 52 = −36, dont une racine carrée est δ = 6i. Alors z = (4 ± 6i)/2, soit 2 + 3i et 2 − 3i ✓. Contrôle par réinjection : (2 + 3i)² = 4 + 12i − 9 = −5 + 12i, puis −5 + 12i − 8 − 12i + 13 = 0 ✓. Contrôle somme-produit : la somme vaut 4 = −b/a et le produit 4 + 9 = 13 = c/a ✓. L'option a applique le réflexe réel « Δ < 0, pas de solution » : dans ℂ le discriminant n'a pas de signe et l'équation a toujours deux solutions. L'option c oublie de diviser par 2a. L'option b se trompe de signe sur −b : c'est +4 qu'il faut écrire, pas −4.",
+      "difficulty": 2
+    }
+  ]
+}

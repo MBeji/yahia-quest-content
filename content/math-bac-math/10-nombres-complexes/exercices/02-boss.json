@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du plan complexe",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Écrire sous forme algébrique le nombre Z = (1 + i√3)⁹/(1 − i)⁶.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Z = −64"
+        },
+        {
+          "id": "b",
+          "text": "Z = 64i"
+        },
+        {
+          "id": "c",
+          "text": "Z = −64i"
+        },
+        {
+          "id": "d",
+          "text": "Z = 64"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Développer une puissance neuvième par le binôme serait interminable : on passe tout en exponentielle, car le module se met à la puissance et l'argument se multiplie (Moivre). Numérateur : |1 + i√3| = √(1 + 3) = 2, et cos θ = 1/2, sin θ = √3/2, premier quadrant, donc arg ≡ π/3. D'où (1 + i√3)⁹ = 2⁹ e^(i9π/3) = 512 e^(i3π) = 512 e^(iπ) = −512. Dénominateur : |1 − i| = √2 et arg ≡ −π/4 (quatrième quadrant), donc (1 − i)⁶ = (√2)⁶ e^(−i6π/4) = 8 e^(−i3π/2) = 8 e^(iπ/2) = 8i. Enfin Z = −512/(8i) = −64/i = −64 × (−i) = 64i ✓, puisque 1/i = −i. Contrôle par une voie totalement indépendante, en restant en algébrique : (1 + i√3)³ = (1 + i√3)(−2 + 2i√3) = −2 + 2i√3 − 2i√3 − 6 = −8, donc (1 + i√3)⁹ = (−8)³ = −512 ✓ ; et (1 − i)² = −2i, donc (1 − i)⁶ = (−2i)³ = −8i³ = 8i ✓ — mêmes valeurs, même quotient. Contrôle du module : |Z| = 2⁹/(√2)⁶ = 512/8 = 64 ✓. Le piège courant : lire l'argument de 1 + i√3 comme π/6 en confondant les rôles de la partie réelle et de la partie imaginaire (tan θ = √3 donne θ = π/3, pas π/6) ; on obtient alors 512 e^(i3π/2) = −512i, donc Z = −64. Prendre arg(1 − i) ≡ +π/4 au lieu de −π/4, c'est-à-dire oublier que le point est sous l'axe des abscisses, donne un dénominateur −8i et Z = −64i ; cumuler les deux erreurs livre Z = 64.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résoudre dans ℂ l'équation z² − (3 + 4i)z − 1 + 7i = 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "S = {2 + i ; 1 + 3i}"
+        },
+        {
+          "id": "b",
+          "text": "S = {2 + 3i ; 1 + i}"
+        },
+        {
+          "id": "c",
+          "text": "S = {4 + 2i ; 2 + 6i}"
+        },
+        {
+          "id": "d",
+          "text": "S = {2 + i ; 2 − i}"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les coefficients sont complexes : la formule reste (−b ± δ)/2a, mais δ ne se lit plus à vue, il faut la méthode algébrique. Discriminant : Δ = (3 + 4i)² − 4(−1 + 7i) = 9 + 24i − 16 + 4 − 28i = −3 − 4i. Racine carrée de Δ : on pose δ = x + iy et on écrit le système x² − y² = −3, 2xy = −4, x² + y² = |Δ| = √(9 + 16) = 5. En additionnant et soustrayant les équations extrêmes : 2x² = 2 donc x² = 1, et 2y² = 8 donc y² = 4. Comme 2xy = −4 < 0, x et y sont de signes contraires : δ = 1 − 2i convient (contrôle : (1 − 2i)² = 1 − 4i − 4 = −3 − 4i ✓). D'où z₁ = ((3 + 4i) + (1 − 2i))/2 = (4 + 2i)/2 = 2 + i et z₂ = ((3 + 4i) − (1 − 2i))/2 = (2 + 6i)/2 = 1 + 3i ✓. Contrôle par somme-produit, indépendant du calcul de δ : (2 + i) + (1 + 3i) = 3 + 4i = −b/a ✓ et (2 + i)(1 + 3i) = 2 + 6i + i − 3 = −1 + 7i = c/a ✓. Contrôle supplémentaire par réinjection de 1 + 3i : (1 + 3i)² = −8 + 6i, −(3 + 4i)(1 + 3i) = −(−9 + 13i) = 9 − 13i, et −8 + 6i + 9 − 13i − 1 + 7i = 0 ✓. Le piège courant : oublier que le signe de 2xy apparie x et y, et retenir δ = 1 + 2i — mais (1 + 2i)² = −3 + 4i, c'est une racine du conjugué de Δ, et l'on obtient {2 + 3i ; 1 + i}, dont le produit vaut −1 + 5i, pas −1 + 7i. Oublier de diviser par 2a donne {4 + 2i ; 2 + 6i} ; et invoquer des racines conjuguées donne {2 + i ; 2 − i}, alors que la conjugaison des racines n'a lieu que si TOUS les coefficients sont réels — ici leur somme, 4, ne vaut pas 3 + 4i.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On résout dans ℂ l'équation z³ = 4√2(1 + i). Quelle est celle des trois solutions dont le point image se trouve dans le deuxième quadrant (partie réelle strictement négative et partie imaginaire strictement positive) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "√2 + i√2"
+        },
+        {
+          "id": "b",
+          "text": "−√2 + i√2"
+        },
+        {
+          "id": "c",
+          "text": "−2 + 2i"
+        },
+        {
+          "id": "d",
+          "text": "−√2 − i√2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Trois gestes : écrire le second membre en exponentielle, prendre la racine cubique réelle positive du module, partager l'argument par 3 et ajouter les multiples de 2π/3. Second membre : a = 4√2(1 + i), donc |a| = 4√2 × √2 = 8 et arg(a) ≡ π/4 (car 1 + i est d'argument π/4 et 4√2 est un réel positif), soit a = 8 e^(iπ/4). Racines cubiques : r³ = 8 donne r = 2, et zₖ = 2 e^(i(π/12 + 2kπ/3)) pour k ∈ {0 ; 1 ; 2}, donc des arguments π/12 (≈ 15°, premier quadrant), 3π/4 (135°, deuxième quadrant) et 17π/12 (255°, troisième quadrant). La solution cherchée est donc z₁ = 2 e^(i3π/4) = 2(−√2/2 + i√2/2) = −√2 + i√2 ✓. Contrôle par réinjection, seule preuve qui compte : (−√2 + i√2)² = 2 − 4i − 2 = −4i, puis (−4i)(−√2 + i√2) = 4i√2 + 4√2 = 4√2(1 + i) ✓. Contrôle du module : |−√2 + i√2| = √(2 + 2) = 2, et 2³ = 8 = |a| ✓. Le piège courant : oublier de diviser l'argument par 3 et écrire les solutions avec l'argument π/4 lui-même, ce qui donne 2 e^(iπ/4) = √2 + i√2 — un nombre qui, élevé au cube, vaut 8 e^(i3π/4) = −4√2 + 4i√2, et non 8 e^(iπ/4). Écrire e^(i3π/4) comme −1 + i, en oubliant le facteur √2/2 des lignes trigonométriques, donne −2 + 2i, de module 2√2 et non 2 : son cube vaut 16 + 16i, presque trois fois trop grand en module. Enfin −√2 − i√2 correspond à l'argument −3π/4 : c'est le symétrique par rapport à l'axe des abscisses, obtenu en se trompant de signe sur le sinus, et son cube vaut 4√2(1 − i).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé direct. On note A le point d'affixe 2 et B le point d'affixe 2i. Déterminer l'ensemble E des points M d'affixe z tels que (z − 2)/(z − 2i) soit un imaginaire non nul.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La droite (AB), privée de A et de B"
+        },
+        {
+          "id": "b",
+          "text": "La médiatrice de [AB], d'équation y = x"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle de centre Ω(1 + i) et de rayon 2√2, privé de A et de B"
+        },
+        {
+          "id": "d",
+          "text": "Le cercle de centre Ω(1 + i) et de rayon √2, privé de A et de B"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le quotient (z − 2)/(z − 2i) est celui de l'affixe de MA⃗ par l'affixe de MB⃗ (au signe global près, qui ne change ni la nature réelle/imaginaire ni la direction) : il porte donc l'angle (MB⃗, MA⃗). Dire qu'il est imaginaire non nul, c'est dire que MA⃗ et MB⃗ sont orthogonaux, c'est-à-dire que M voit le segment [AB] sous un angle droit — et l'ensemble des points d'où l'on voit [AB] sous un angle droit est le cercle de diamètre [AB], privé de A et de B. Son centre est le milieu Ω d'affixe (2 + 2i)/2 = 1 + i, et son rayon vaut AB/2 = |2i − 2|/2 = 2√2/2 = √2 ✓. Les exclusions sont imposées par l'énoncé : z = 2 annule le quotient (imaginaire, mais nul) et z = 2i l'interdit. Contrôle sur deux points par une voie indépendante : pour z = 0, le quotient vaut (−2)/(−2i) = 1/i = −i, imaginaire non nul ✓, et |0 − (1 + i)| = √2, donc O est bien sur le cercle ✓ ; pour z = 2 + 2i, le quotient vaut 2i/2 = i ✓, et |2 + 2i − 1 − i| = |1 + i| = √2 ✓. Un point de contrôle négatif : z = 1 + i (le centre) donne (−1 + i)/(1 − i) = −1, un réel — le centre n'appartient pas à E, comme attendu. Le piège courant : intervertir les deux tests du cours, « quotient réel » (alignement, donc la droite (AB)) et « quotient imaginaire » (orthogonalité) ; répondre la droite (AB) revient exactement à cette inversion. La médiatrice de [AB], d'équation y = x, traduit une condition de MODULE (|z − 2| = |z − 2i|), pas d'argument. Et prendre AB au lieu de AB/2 comme rayon donne 2√2 : ce cercle ne passe même pas par A, puisque |2 − (1 + i)| = √2 ≠ 2√2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Sur la figure ci-dessous, M₀, M₁, M₂, M₃ et M₄ sont les points images des cinq racines cinquièmes de l'unité, M₀ ayant pour affixe 1. Calculer S = cos(2π/5) + cos(4π/5) + cos(6π/5) + cos(8π/5).\n\n<svg viewBox=\"0 0 300 260\"><path d=\"M20 130 H285\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M150 245 V20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M285 130 l-8 -4 l0 8 z\" fill=\"#0f172a\"/><path d=\"M150 20 l-4 8 l8 0 z\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"130\" r=\"90\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M240 130 L177.8 44.4 L77.2 77.1 L77.2 182.9 L177.8 215.6 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M240 130 L177.8 44.4 L77.2 77.1 L77.2 182.9 L177.8 215.6 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"240\" cy=\"130\" r=\"4\"/><circle cx=\"177.8\" cy=\"44.4\" r=\"4\"/><circle cx=\"77.2\" cy=\"77.1\" r=\"4\"/><circle cx=\"77.2\" cy=\"182.9\" r=\"4\"/><circle cx=\"177.8\" cy=\"215.6\" r=\"4\"/></g><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"249\" y=\"127\" fill=\"#0f172a\">M₀</text><text x=\"186\" y=\"38\" fill=\"#0f172a\">M₁</text><text x=\"69\" y=\"70\" text-anchor=\"end\" fill=\"#0f172a\">M₂</text><text x=\"69\" y=\"195\" text-anchor=\"end\" fill=\"#0f172a\">M₃</text><text x=\"186\" y=\"231\" fill=\"#0f172a\">M₄</text><text x=\"141\" y=\"146\" text-anchor=\"end\" fill=\"#0f172a\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "S = 0"
+        },
+        {
+          "id": "b",
+          "text": "S = 1"
+        },
+        {
+          "id": "c",
+          "text": "S = −1"
+        },
+        {
+          "id": "d",
+          "text": "S = −1/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Aucune de ces quatre valeurs de cosinus n'est remarquable : il ne faut donc surtout pas les calculer une à une, mais reconnaître une somme de racines. Les cinq racines cinquièmes de l'unité sont zₖ = e^(i2kπ/5) pour k ∈ {0 ; 1 ; 2 ; 3 ; 4}, et leur somme est nulle (identité du cours, vraie pour tout n ≥ 2 : c'est la somme des termes d'une suite géométrique de raison e^(i2π/5) ≠ 1, égale à (1 − e^(i2π)) /(1 − e^(i2π/5)) = 0). Or Re(zₖ) = cos(2kπ/5). En prenant la partie réelle de z₀ + z₁ + z₂ + z₃ + z₄ = 0, on obtient 1 + cos(2π/5) + cos(4π/5) + cos(6π/5) + cos(8π/5) = 0, c'est-à-dire 1 + S = 0, donc S = −1 ✓ — géométriquement, le centre de gravité des cinq sommets du pentagone régulier est O. Contrôle numérique indépendant : cos(2π/5) ≈ 0,309, cos(4π/5) ≈ −0,809, cos(6π/5) ≈ −0,809 et cos(8π/5) ≈ 0,309, de somme ≈ −1,000 ✓. Second contrôle, par symétrie : M₄ est le symétrique de M₁ et M₃ celui de M₂ par rapport à l'axe des abscisses (cos(8π/5) = cos(2π/5) et cos(6π/5) = cos(4π/5)), donc S = 2cos(2π/5) + 2cos(4π/5) ≈ 2 × 0,309 + 2 × (−0,809) = −1 ✓. Le piège courant : appliquer l'identité « la somme des racines nièmes est nulle » sans remarquer que le terme k = 0, qui vaut 1, ne figure PAS dans S ; on répond alors 0. Répondre −1/2, c'est s'arrêter à la demi-somme cos(2π/5) + cos(4π/5) après avoir apparié les termes conjugués, en oubliant de la doubler ; et 1 vient d'un signe perdu en isolant S dans 1 + S = 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule des affirmations suivantes est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si z est un nombre complexe tel que z³ est réel, alors z est réel"
+        },
+        {
+          "id": "b",
+          "text": "Pour tous nombres complexes non nuls z et a, z⁴ = a⁴ si et seulement si z = a ou z = −a"
+        },
+        {
+          "id": "c",
+          "text": "Pour tous nombres complexes z₁ et z₂, le conjugué de Z = z₁ + iz₂ est Z̄ = z̄₁ − i z̄₂"
+        },
+        {
+          "id": "d",
+          "text": "Deux nombres complexes non nuls ayant même argument et même partie réelle sont égaux"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Seule l'affirmation c est vraie ✓ : la conjugaison respecte la somme et le produit, donc (z₁ + iz₂)‾ = z̄₁ + (iz₂)‾ = z̄₁ + ī × z̄₂ = z̄₁ − i z̄₂, puisque ī = −i. Vérification par une seconde voie, en composantes : avec z₁ = a + ib et z₂ = c + id, on a Z = (a − d) + i(b + c), donc Z̄ = (a − d) − i(b + c) ; et z̄₁ − i z̄₂ = (a − ib) − i(c − id) = (a − d) − i(b + c) ✓ — mêmes parties réelle et imaginaire. Attention, la faute voisine est d'écrire Z̄ = z̄₁ − iz₂ (sans conjuguer z₂) : c'est faux dès que z₂ n'est pas réel. a est fausse : j = e^(i2π/3) = −1/2 + i√3/2 vérifie j³ = 1, qui est réel, alors que j n'est pas réel — tout complexe dont l'argument est un multiple de π/3 fournit un contre-exemple. b est fausse : l'équation z⁴ = a⁴ s'écrit (z/a)⁴ = 1, dont les solutions sont les QUATRE racines quatrièmes de l'unité, donc z = a, z = −a, z = ia ou z = −ia ; par exemple, avec a = 1, z = i donne bien i⁴ = 1. On perd ici la moitié des solutions en raisonnant comme dans ℝ. d est fausse par un cas limite : i et 2i ont le même argument π/2 et la même partie réelle 0, mais sont différents. Le piège courant est justement là — l'affirmation d est vraie DÈS QUE l'argument commun θ vérifie cos θ ≠ 0, car alors |z| = Re(z)/cos θ est déterminé ; c'est exactement sur l'axe des ordonnées qu'elle tombe, et une propriété fausse pour un seul cas reste fausse.",
+      "difficulty": 3
+    }
+  ]
+}
