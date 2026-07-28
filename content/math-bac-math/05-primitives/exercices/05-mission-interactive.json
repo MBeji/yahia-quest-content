@@ -1,0 +1,132 @@
+{
+  "title": "🧩 Mission interactive ⭐⭐ : La salle des machines",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "Texte à trous — une citerne contient déjà 20 L au moment où l'on ouvre la vanne. Au bout de t minutes, le débit entrant vaut D(t) = 6t + 4 (en L/min). Le volume V vérifie V′ = D sur [0 ; +∞[ et V(0) = 20. Alors V(t) = ____.",
+      "options": [
+        { "id": "a", "text": "3t² + 4t + 20" },
+        { "id": "b", "text": "3t² + 4t" },
+        { "id": "c", "text": "6t² + 4t + 20" },
+        { "id": "d", "text": "(6t + 4)²/2 + 20" }
+      ],
+      "correctOption": "a",
+      "explanation": "Un débit est le taux de variation instantané du volume : V′ = D, donc V est une primitive de D. Par linéarité, on primitive terme à terme : 6t donne 3t² (on augmente l'exposant puis on divise par le nouvel exposant), et 4 donne 4t. D'où V(t) = 3t² + 4t + c. La condition initiale V(0) = 20 donne c = 20, soit V(t) = 3t² + 4t + 20 ✓. Vérification par dérivation, le seul contrôle qui compte : V′(t) = 6t + 4 = D(t) ✓ et V(0) = 20 ✓ (au bout de 10 minutes, V(10) = 300 + 40 + 20 = 360 L). L'écriture 3t² + 4t oublie la constante : elle décrit une citerne vide au départ, ce que la donnée V(0) = 20 interdit — sans condition initiale, on ne désigne aucune primitive en particulier. L'écriture 6t² + 4t + 20 garde le coefficient 6 au lieu de le diviser par le nouvel exposant 2 : sa dérivée vaut 12t + 4, pas 6t + 4. Enfin (6t + 4)²/2 + 20 applique le motif u′u alors que u′ ne figure nulle part dans D ; sa dérivée est 6(6t + 4) = 36t + 24, très loin du débit annoncé.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Chasse à l'erreur — un mobile se déplace sur un axe. Son accélération est a(t) = 6t − 2 (en m/s²), sa vitesse initiale v(0) = 1 m/s et sa position initiale x(0) = 4 m. Voici la copie d'un élève :\n① v est une primitive de a, donc v(t) = 3t² − 2t + c.\n② v(0) = 1 donne c = 1, d'où v(t) = 3t² − 2t + 1.\n③ x est une primitive de v, donc x(t) = t³ − 2t² + t + c′.\n④ x(0) = 4 donne c′ = 4, d'où x(t) = t³ − 2t² + t + 4.\nUne seule étape contient une erreur de calcul : laquelle ?",
+      "options": [
+        { "id": "a", "text": "L'étape ①" },
+        { "id": "b", "text": "L'étape ②" },
+        { "id": "c", "text": "L'étape ③" },
+        { "id": "d", "text": "L'étape ④" }
+      ],
+      "correctOption": "c",
+      "explanation": "L'erreur est à l'étape ③ : une primitive de −2t est −t² et non −2t². Le facteur oublié est la division par le nouvel exposant 2. Étape corrigée : x(t) = t³ − t² + t + c′, et la conclusion devient x(t) = t³ − t² + t + 4 ✓ (contrôle : (t³ − t² + t + 4)′ = 3t² − 2t + 1 = v(t) ✓ et x(0) = 4 ✓ ; la version fautive se dérive en 3t² − 4t + 1, qui n'est pas la vitesse trouvée en ②). Les autres étapes tiennent : ① primitive correctement 6t − 2 en 3t² − 2t et pense bien à la constante ; ② applique la condition initiale au bon endroit, sur la vitesse ; ④ est arithmétiquement juste — l'élève applique correctement x(0) = 4 à SON expression, il propage simplement l'erreur commise juste avant. C'est le piège de ce genre de copie : la dernière ligne fausse n'est pas toujours celle qui contient la faute. Rappel de méthode : deux primitivations réclament deux conditions initiales, une pour chaque constante.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Trois circuits d'un même automate sont parcourus par des intensités variables. Dans chaque cas, la charge q accumulée vérifie q′ = i. Associe chaque intensité à une charge possible (une primitive, la constante étant laissée de côté).",
+      "options": [
+        { "id": "l1", "text": "Circuit A : i(t) = cos(3t)" },
+        { "id": "l2", "text": "Circuit B : i(t) = sin(3t)" },
+        { "id": "l3", "text": "Circuit C : i(t) = 3cos(3t)" },
+        { "id": "r1", "text": "q(t) = −(1/3)cos(3t)" },
+        { "id": "r2", "text": "q(t) = (1/3)sin(3t)" },
+        { "id": "r3", "text": "q(t) = sin(3t)" }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r2"],
+          ["l2", "r1"],
+          ["l3", "r3"]
+        ]
+      },
+      "explanation": "Une seule méthode : dériver chaque candidate et voir sur quelle intensité on retombe. ((1/3)sin(3t))′ = (1/3) × 3cos(3t) = cos(3t) : c'est le circuit A ✓. (−(1/3)cos(3t))′ = −(1/3) × (−3sin(3t)) = sin(3t) : c'est le circuit B ✓. (sin(3t))′ = 3cos(3t) : c'est le circuit C ✓. Tout se joue sur deux réflexes du cours. D'abord le facteur 1/ω : quand l'intérieur est ωt + φ, la primitive porte le facteur 1 divisé par ω — ici 1/3. C'est exactement ce qui sépare le circuit A du circuit C : la même forme, mais un facteur 3 devant l'intensité fait disparaître le 1/3 de la charge. Ensuite le signe : la primitive de sin est −cos (et non +cos), tandis que celle de cos est +sin. Échanger les deux lignes sinus et cosinus, ou oublier le signe moins, sont les deux fautes qui font tomber cet appariement.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Une bille est lâchée sur un rail. Son accélération est a(t) = 12t² (en m/s²), sa vitesse initiale v(0) = 5 m/s et sa position initiale x(0) = 2 m. On veut connaître sa position à l'instant t = 3 s. Remets les cinq étapes du calcul dans l'ordre.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La vitesse v est une primitive de l'accélération a : v(t) = 4t³ + c"
+        },
+        {
+          "id": "b",
+          "text": "La donnée v(0) = 5 fixe la première constante : c = 5, donc v(t) = 4t³ + 5"
+        },
+        {
+          "id": "c",
+          "text": "La position x est une primitive de la vitesse v : x(t) = t⁴ + 5t + c′"
+        },
+        {
+          "id": "d",
+          "text": "La donnée x(0) = 2 fixe la seconde constante : c′ = 2, donc x(t) = t⁴ + 5t + 2"
+        },
+        {
+          "id": "e",
+          "text": "On évalue enfin x(3) = 81 + 15 + 2 = 98, soit 98 m"
+        }
+      ],
+      "answerKey": { "order": ["a", "b", "c", "d", "e"] },
+      "explanation": "La chaîne accélération → vitesse → position se remonte d'un cran à la fois, et chaque cran consomme sa propre condition initiale. On primitive d'abord a : une primitive de 12t² est 4t³ (contrôle : (4t³)′ = 12t² ✓), d'où v(t) = 4t³ + c. Impossible de passer à la position tant que cette constante flotte : on l'élimine avec v(0) = 5, ce qui donne v(t) = 4t³ + 5. On primitive alors CETTE vitesse-là : x(t) = t⁴ + 5t + c′ (contrôle : (t⁴ + 5t)′ = 4t³ + 5 ✓), puis x(0) = 2 fixe c′ = 2. L'évaluation numérique x(3) = 3⁴ + 5 × 3 + 2 = 81 + 15 + 2 = 98 m arrive nécessairement en dernier : elle a besoin de l'expression complète ✓. Les deux inversions classiques cassent la chaîne : primitiver deux fois de suite avant d'utiliser la moindre donnée mélange les deux constantes, et appliquer x(0) = 2 à la vitesse (ou v(0) = 5 à la position) applique une condition à la mauvaise fonction. Retiens la règle : une remontée, une constante, une donnée.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans une cuve, une réaction chimique produit une substance. Au bout de t secondes (t ≥ 5), le taux de production instantané est Q′(t) = 30/t² + 100/t³ (en g/s), et l'on a mesuré Q(5) = 4 g. Quelle masse, en grammes, a été produite au bout de 10 secondes ? Donne la valeur exacte (un nombre décimal).",
+      "answerKey": { "value": 8.5, "unit": "g" },
+      "explanation": "Le taux de production est une dérivée : la masse Q est donc une primitive de Q′ sur [5 ; +∞[. On primitive terme à terme avec la ligne 1/tⁿ de la table : une primitive de 30/t² est −30/t (attention au signe : la primitive de 1/t² est −1/t, pas 1/t) et une primitive de 100/t³ est 100 × t^(−2)/(−2) = −50/t². D'où Q(t) = −30/t − 50/t² + c. La mesure Q(5) = 4 donne −6 − 2 + c = 4, soit c = 12, et Q(t) = 12 − 30/t − 50/t². Il reste à évaluer : Q(10) = 12 − 3 − 0,5 = 8,5 g ✓. Vérification par dérivation : Q′(t) = 30/t² + 100/t³ ✓, et le résultat est cohérent — la masse passe de 4 g à 8,5 g, elle augmente bien puisque le taux est positif. Les deux pièges à éviter : oublier la constante c (on trouverait alors une masse négative, −3,5 g, physiquement absurde) et se tromper de signe sur la primitive de 1/tⁿ, ce qui renverse le sens de variation de la masse. Remarque pour la culture : quand t grandit, Q(t) tend vers 12 — la production plafonne sous 12 g.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Une pompe débite f(t) litres par minute, où f est continue et positive sur [0 ; 10]. On note V la primitive de f sur [0 ; 10] telle que V(0) = 0 : V(t) est le volume pompé depuis l'instant 0. Sélectionne TOUTES les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "f admet au moins une primitive sur [0 ; 10], car f est continue sur cet intervalle"
+        },
+        {
+          "id": "b",
+          "text": "V est croissante sur [0 ; 10], car V′ = f est positive"
+        },
+        {
+          "id": "c",
+          "text": "Toute primitive de f sur [0 ; 10] s'écrit V + c, où c est une constante réelle"
+        },
+        {
+          "id": "d",
+          "text": "La donnée de f suffit à déterminer V : la condition V(0) = 0 est superflue"
+        },
+        {
+          "id": "e",
+          "text": "Si g est le débit d'une seconde pompe, de primitive W, alors V × W est une primitive de f × g"
+        }
+      ],
+      "answerKey": { "correct": ["a", "b", "c"] },
+      "explanation": "Trois affirmations sortent directement du cours. (1) Le théorème d'existence est admis : toute fonction CONTINUE sur un intervalle y admet au moins une primitive — c'est bien la continuité qui est l'hypothèse, pas la dérivabilité ✓. (2) V′ = f ≥ 0 sur [0 ; 10], donc V est croissante : le volume pompé ne peut que grandir, ce qui est rassurant physiquement ✓. (3) Deux primitives d'une même fonction sur un INTERVALLE diffèrent d'une constante : la famille complète s'écrit donc V + c ✓. En revanche, dire que la condition V(0) = 0 est superflue revient à nier ce troisième point : f seule laisse une infinité de primitives, toutes translatées verticalement les unes des autres ; c'est la condition initiale qui en désigne une et une seule (corollaire du cours). Quant au produit, il n'existe AUCUNE formule de primitive d'un produit : la linéarité s'arrête à la somme et au produit par un réel. Le contre-exemple du cours suffit — avec f = g = 1 et V = W = t, (V × W)′ = (t²)′ = 2t, alors que f × g = 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Lecture graphique — la courbe verte donne la vitesse v (en m/s) d'un chariot sur l'intervalle [0 ; 4] (t en secondes). Sa position x est la primitive de v telle que x(0) = 0. À quel instant le chariot est-il le plus loin de son point de départ ? <svg viewBox=\"0 0 300 200\"><g stroke=\"#cbd5e1\" stroke-width=\"1\"><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"185\"/><line x1=\"120\" y1=\"30\" x2=\"120\" y2=\"185\"/><line x1=\"160\" y1=\"30\" x2=\"160\" y2=\"185\"/><line x1=\"200\" y1=\"30\" x2=\"200\" y2=\"185\"/><line x1=\"45\" y1=\"50\" x2=\"240\" y2=\"50\"/><line x1=\"45\" y1=\"170\" x2=\"240\" y2=\"170\"/></g><path d=\"M25 110 H245\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M245 110 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M40 190 V25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M40 25 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><line x1=\"40\" y1=\"50\" x2=\"200\" y2=\"170\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><circle cx=\"120\" cy=\"110\" r=\"3.5\" fill=\"#b45309\"/><text x=\"80\" y=\"124\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1</text><text x=\"124\" y=\"124\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\">2</text><text x=\"160\" y=\"124\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">3</text><text x=\"200\" y=\"124\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">4</text><text x=\"33\" y=\"54\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">3</text><text x=\"33\" y=\"114\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">0</text><text x=\"33\" y=\"174\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">−3</text><text x=\"206\" y=\"180\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\">C_v</text><text x=\"250\" y=\"114\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">t</text></svg>",
+      "options": [
+        { "id": "a", "text": "À t = 2 s" },
+        { "id": "b", "text": "À t = 0 s" },
+        { "id": "c", "text": "À t = 4 s" },
+        { "id": "d", "text": "À t = 1 s" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le lien est toujours le même : x′ = v, donc le SIGNE de la vitesse donne le sens de variation de la position. Le graphique se lit ainsi : v est positive sur [0 ; 2[ (la courbe est au-dessus de l'axe), s'annule en t = 2 (point marqué), puis devient négative sur ]2 ; 4]. La position x croît donc jusqu'à t = 2, puis décroît : elle atteint son maximum en t = 2 s ✓. Contrôle par le calcul : la droite passe par (0 ; 3) et (4 ; −3), donc v(t) = 3 − 1,5t, d'où x(t) = 3t − 0,75t² (car x(0) = 0) ; on obtient x(2) = 6 − 3 = 3 m, contre x(1) = 2,25 m et x(4) = 12 − 12 = 0 m — le chariot est même revenu à son point de départ ✓. Répondre t = 1 confond « vitesse grande » et « position maximale » : à t = 1 le chariot avance encore vite, donc il va continuer à s'éloigner. Répondre t = 4 lit la fin de l'intervalle sans regarder le signe de v : sur la dernière phase le chariot recule. Et t = 0 est le point de départ, donc la distance parcourue y est nulle. Retiens la règle : le maximum de la primitive se lit là où la fonction CHANGE DE SIGNE, du plus vers le moins.",
+      "difficulty": 2
+    }
+  ]
+}

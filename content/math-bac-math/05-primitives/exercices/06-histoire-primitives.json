@@ -1,0 +1,94 @@
+{
+  "title": "🗿 Histoire ⭐⭐⭐ : La Citadelle des Flux",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 6,
+  "questions": [
+    {
+      "prompt": "Épisode 1 — La Citadelle des Flux ne mesure rien : elle ne connaît que des vitesses, jamais des quantités. Au pied du donjon, la première écluse déverse dans un bassin qui contient déjà 5 m³. Le Maître des Écluses gronde : « Mon débit à l'heure t vaut d(t) = 12/(t + 1)² mètres cubes par heure, pour t ≥ 0. Remonte-moi le volume V(t) du bassin, ou reste dehors. » Quelle expression est correcte ?",
+      "options": [
+        { "id": "a", "text": "V(t) = 17 − 12/(t + 1)" },
+        { "id": "b", "text": "V(t) = 5 − 12/(t + 1)" },
+        { "id": "c", "text": "V(t) = 5 + 12/(t + 1)" },
+        { "id": "d", "text": "V(t) = 5 − 4/(t + 1)³" }
+      ],
+      "correctOption": "a",
+      "explanation": "Un débit est une dérivée : V′ = d, donc V est une primitive de d. On pose u(t) = t + 1, dont la dérivée vaut 1 : d = 12 u′/u², qui est la ligne u′/uⁿ de la table avec n = 2. Elle donne 12 × u^(−1)/(−1) = −12/(t + 1). Donc V(t) = −12/(t + 1) + c, et la donnée V(0) = 5 impose −12 + c = 5, soit c = 17 : V(t) = 17 − 12/(t + 1) ✓. Vérification par dérivation : V′(t) = 12/(t + 1)² ✓ et V(0) = 17 − 12 = 5 ✓ (contrôle : V(5) = 17 − 2 = 15 m³, le bassin s'est bien rempli). L'expression 5 − 12/(t + 1) recopie la valeur initiale à la place de la constante : c'est l'erreur reine de la condition initiale — c ne vaut V(0) que si la primitive choisie s'annule en 0, ce qui n'est pas le cas ici (elle vaut −12). L'expression 5 + 12/(t + 1) se trompe de signe : sa dérivée est −12/(t + 1)², donc elle décrit un bassin qui se VIDE. Enfin 5 − 4/(t + 1)³ augmente l'exposant du dénominateur au lieu de l'augmenter au sens algébrique : la règle porte sur l'exposant −n, qui passe de −2 à −1, jamais de −2 à −3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Épisode 2 — La herse s'ouvre sur la Galerie du Chariot. Un chariot de pierre démarre à l'arrêt (vitesse nulle à l'instant t = 0) et le mécanisme lui impose l'accélération a(t) = 1 − 1/(t + 1)² (en m/s²), pour t ≥ 0. Le Maître des Écluses te barre le passage : « Dis-moi sa vitesse au bout de 3 secondes, en mètres par seconde. » Que vaut v(3) ?",
+      "options": [
+        { "id": "a", "text": "9/4" },
+        { "id": "b", "text": "13/4" },
+        { "id": "c", "text": "15/4" },
+        { "id": "d", "text": "3" }
+      ],
+      "correctOption": "a",
+      "explanation": "La vitesse est une primitive de l'accélération : v′ = a. On primitive terme à terme. Le terme 1 donne t. Pour −1/(t + 1)², on pose u(t) = t + 1 (u′ = 1) : −u′/u² a pour primitive −u^(−1)/(−1) = +1/(t + 1). Donc v(t) = t + 1/(t + 1) + c. La condition v(0) = 0 donne 0 + 1 + c = 0, soit c = −1 : v(t) = t + 1/(t + 1) − 1. D'où v(3) = 3 + 1/4 − 1 = 9/4 = 2,25 m/s ✓. Vérification par dérivation : v′(t) = 1 − 1/(t + 1)² = a(t) ✓ et v(0) = 0 + 1 − 1 = 0 ✓. La réponse 13/4 = 3 + 1/4 oublie la constante −1 : elle donnerait v(0) = 1, en contradiction avec « démarre à l'arrêt ». La réponse 15/4 se trompe de signe sur la primitive de 1/u² : avec v(t) = t − 1/(t + 1) + 1 on obtiendrait 3 − 1/4 + 1 — or dériver −1/(t+1) redonne +1/(t+1)², donc le signe est faux. Et la réponse 3 laisse tomber le terme en 1/(t + 1), comme si l'accélération se réduisait à 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 3 — Salle des Vitraux. Un rayon oscille et l'intensité lumineuse reçue par le cristal central s'écrit f(x) = sin(2x)cos³(2x) sur ℝ. « Le cristal ne s'ouvre, souffle le Maître, qu'à celui qui nomme une primitive de cette intensité. » Laquelle est correcte ?",
+      "options": [
+        { "id": "a", "text": "F(x) = −cos⁴(2x)/8" },
+        { "id": "b", "text": "F(x) = −cos⁴(2x)/4" },
+        { "id": "c", "text": "F(x) = cos⁴(2x)/8" },
+        { "id": "d", "text": "F(x) = −cos⁴(2x)/2" }
+      ],
+      "correctOption": "a",
+      "explanation": "On cherche le motif u′uⁿ. Le candidat naturel est u(x) = cos(2x), dont la dérivée est u′(x) = −2sin(2x). Alors f(x) = sin(2x)cos³(2x) = −(1/2) × (−2sin(2x)) × cos³(2x) = −(1/2) u′u³. La table donne u⁴/4 pour u′u³, donc F(x) = −(1/2) × cos⁴(2x)/4 = −cos⁴(2x)/8 ✓. Vérification par dérivation, indispensable ici où trois constantes se cumulent : F′(x) = −(1/8) × 4cos³(2x) × (−sin(2x) × 2) = (8/8) sin(2x)cos³(2x) = f(x) ✓ (contrôle numérique en x = 0,1 : f(0,1) ≈ 0,198 × 0,941 ≈ 0,187, et (F(0,11) − F(0,09))/0,02 ≈ 0,187 ✓). Chacun des trois autres résultats correspond à un facteur perdu en route. Avec −cos⁴(2x)/4 on a oublié le 1/2 qui compense le facteur 2 venu de la dérivée de 2x : sa dérivée vaut 2f(x). Avec cos⁴(2x)/8 on a pris u′ = +2sin(2x) au lieu de −2sin(2x) : le signe moins de la dérivée du cosinus a sauté. Avec −cos⁴(2x)/2 on a oublié de diviser par n + 1 = 4 en primitivant u′u³.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 4 — Le Sablier des Profondeurs mesure le temps qu'il te reste. Le sable s'écoule avec le débit massique d(t) = t/√(t² + 16) (en grammes par seconde), et le sablier était plein — donc rien n'était encore écoulé — à l'instant t = 0 : M(0) = 0. Le Maître exige : « Quelle masse de sable, en grammes, s'est écoulée au bout de 3 secondes ? »",
+      "options": [
+        { "id": "a", "text": "1 g" },
+        { "id": "b", "text": "5 g" },
+        { "id": "c", "text": "2 g" },
+        { "id": "d", "text": "3/5 g" }
+      ],
+      "correctOption": "a",
+      "explanation": "La masse écoulée est une primitive du débit : M′ = d. On pose u(t) = t² + 16, strictement positive, avec u′(t) = 2t. Alors d(t) = t/√u = (1/2) u′/√u, et la table donne 2√u pour u′/√u : M(t) = (1/2) × 2√(t² + 16) + c = √(t² + 16) + c. La condition M(0) = 0 donne √16 + c = 0, soit c = −4, d'où M(t) = √(t² + 16) − 4. Ainsi M(3) = √25 − 4 = 5 − 4 = 1 g ✓. Vérification par dérivation : M′(t) = 2t/(2√(t² + 16)) = t/√(t² + 16) = d(t) ✓ et M(0) = 4 − 4 = 0 ✓. La réponse 5 g oublie la constante : elle prétend qu'à l'instant 0 il s'était déjà écoulé 4 g, alors que le sablier était plein. La réponse 2 g oublie le facteur 1/2 : en écrivant M(t) = 2√(t² + 16) + c on trouve c = −8 et M(3) = 10 − 8 = 2 — la faute classique du « facteur qui manque », ici en trop. Enfin 3/5 g est tout simplement d(3), c'est-à-dire le DÉBIT à l'instant 3 (en g/s) et non la masse accumulée : confondre le taux et la quantité, c'est confondre la dérivée et sa primitive.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 5 — Salle des Tambours. Deux tambours identiques tournent, mais le second est réglé deux fois plus vite. Le Maître pose une énigme : « Sur ℝ, F est une primitive d'une fonction f. Le second tambour accumule au taux g(t) = f(2t). Mon apprenti prétend que G(t) = F(2t) fait l'affaire. » Quelle réponse, avec sa justification, est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faux : (F(2t))′ = 2f(2t), donc la bonne primitive est G(t) = F(2t)/2"
+        },
+        {
+          "id": "b",
+          "text": "Vrai : composer par une fonction affine ne modifie pas la primitive"
+        },
+        {
+          "id": "c",
+          "text": "Faux : la bonne primitive est G(t) = 2F(2t), car il faut compenser le doublement de la vitesse"
+        },
+        {
+          "id": "d",
+          "text": "Faux : g n'admet pas de primitive, puisqu'on ne connaît pas f explicitement"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Tout se décide par la dérivation d'une composée : (F(2t))′ = 2 × F′(2t) = 2f(2t). La fonction F(2t) a donc pour dérivée le DOUBLE du taux voulu ; pour retomber sur f(2t), il faut diviser par 2, et la bonne primitive est G(t) = F(2t)/2 ✓. Contrôle sur un cas concret : avec f(x) = x, on prend F(x) = x²/2, alors g(t) = f(2t) = 2t, dont une primitive est t² ; et effectivement F(2t)/2 = (4t²/2)/2 = t² ✓, tandis que F(2t) = 2t² se dérive en 4t, soit le double ✓. L'apprenti a donc tort : affirmer que la composition par une fonction affine ne change rien, c'est la même illusion que d'écrire sin(3x) pour primitive de cos(3x) au lieu de (1/3)sin(3x) — c'est exactement le facteur 1/ω du cours. Multiplier par 2 au lieu de diviser aggrave l'écart : (2F(2t))′ = 4f(2t). Quant à nier l'existence d'une primitive, c'est oublier le théorème admis : si f est continue, g : t ↦ f(2t) l'est aussi, donc elle admet des primitives — connaître f explicitement n'a jamais été une condition d'existence.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 6 — La Porte du Retour. Un contrepoids doit remonter du puits : il part de l'origine de l'axe (position nulle) avec une vitesse nulle, et le mécanisme lui impose l'accélération a(t) = 4cos(2t) (en m/s²). « Donne-moi sa position x(t), et la porte s'ouvre. » Quelle expression est correcte ?",
+      "options": [
+        { "id": "a", "text": "x(t) = 1 − cos(2t)" },
+        { "id": "b", "text": "x(t) = −cos(2t)" },
+        { "id": "c", "text": "x(t) = 4 − 4cos(2t)" },
+        { "id": "d", "text": "x(t) = 2sin(2t)" }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux remontées, deux constantes, deux données. Première remontée : v est une primitive de a, et la table donne (1/ω)sin(ωt) pour cos(ωt) avec ω = 2, donc une primitive de 4cos(2t) est 4 × (1/2)sin(2t) = 2sin(2t). Ainsi v(t) = 2sin(2t) + c, et v(0) = 0 donne c = 0 : v(t) = 2sin(2t). Seconde remontée : x est une primitive de v, et une primitive de sin(2t) est −(1/2)cos(2t), donc une primitive de 2sin(2t) est −cos(2t). Ainsi x(t) = −cos(2t) + c′, et x(0) = 0 donne −1 + c′ = 0, soit c′ = 1 : x(t) = 1 − cos(2t) ✓. Vérification en dérivant deux fois : x′(t) = 2sin(2t) = v(t) ✓, puis v′(t) = 4cos(2t) = a(t) ✓, avec x(0) = 0 et v(0) = 0 ✓. L'expression −cos(2t) s'arrête avant la seconde condition initiale : elle placerait le contrepoids en −1 m au départ. L'expression 4 − 4cos(2t) perd le facteur 1/ω aux DEUX étages : on garde 4sin(2t) puis −4cos(2t), et sa dérivée seconde vaut 16cos(2t), quatre fois trop. Enfin 2sin(2t) est la vitesse : la réponse s'est arrêtée à mi-chemin de la remontée.",
+      "difficulty": 3
+    }
+  ]
+}

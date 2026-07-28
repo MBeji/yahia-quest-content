@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Primitives",
+  "questions": [
+    {
+      "prompt": "Soit f et F deux fonctions définies sur un intervalle I. Que signifie exactement « F est une primitive de f sur I » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est dérivable sur I et f′(x) = F(x) pour tout x de I"
+        },
+        {
+          "id": "b",
+          "text": "F est continue sur I et F(x) = f(x) pour tout x de I"
+        },
+        {
+          "id": "c",
+          "text": "F est dérivable sur I et F′(x) = f(x) pour tout x de I"
+        },
+        {
+          "id": "d",
+          "text": "F est dérivable en un réel x₀ de I et F′(x₀) = f(x₀)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "C'est la définition du cours : F doit être dérivable sur I et l'égalité F′(x) = f(x) doit valoir en TOUT point de I ✓. L'option a échange les rôles de f et de F : c'est f qui dérive de F, pas l'inverse — c'est l'erreur de sens la plus fréquente du chapitre. L'option b remplace la dérivation par une simple égalité : si F = f, on n'a rien primitivé du tout. L'option d n'exige l'égalité qu'en un seul point : une primitive se définit toujours sur un intervalle, jamais « en un point ».",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi les fonctions suivantes, laquelle est une primitive de f(x) = 3x² − 4x + 5 sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6x − 4"
+        },
+        {
+          "id": "b",
+          "text": "x³ − 2x² + 5x + 1"
+        },
+        {
+          "id": "c",
+          "text": "x³ − 4x² + 5x"
+        },
+        {
+          "id": "d",
+          "text": "3x³ − 4x² + 5x"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le réflexe est toujours le même : on dérive le candidat et on regarde si l'on retombe sur f. (x³ − 2x² + 5x + 1)′ = 3x² − 4x + 5 = f(x) ✓. L'option a est la dérivée f′ de f : on est parti dans le mauvais sens. L'option c oublie de diviser par n + 1 sur le terme en x : (x³ − 4x² + 5x)′ = 3x² − 8x + 5, le coefficient de x est doublé. L'option d garde le coefficient 3 devant x³ au lieu de 3x²/3 = x³ : sa dérivée vaut 9x² − 8x + 5.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le théorème d'existence admis dans le cours affirme : « Toute fonction … sur un intervalle I admet au moins une primitive sur I. » Quel mot complète correctement cet énoncé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "continue"
+        },
+        {
+          "id": "b",
+          "text": "dérivable"
+        },
+        {
+          "id": "c",
+          "text": "monotone"
+        },
+        {
+          "id": "d",
+          "text": "bornée"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'hypothèse du théorème est la continuité ✓ : toute fonction continue sur un intervalle y admet au moins une primitive. Retiens-le pour les questions « montrer que f possède des primitives sur I » — il suffit alors de justifier la continuité. L'option b énonce une hypothèse trop forte, donc un théorème plus faible : x ↦ |x| est continue sur ℝ sans y être dérivable, et elle admet pourtant des primitives. Les options c et d ne garantissent rien : la monotonie et le caractère borné ne disent rien sur l'existence d'une primitive.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f une fonction continue sur un intervalle I, et F et G deux primitives de f sur I. Que peut-on affirmer avec certitude ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F et G sont égales sur I"
+        },
+        {
+          "id": "b",
+          "text": "F + G est une primitive de f sur I"
+        },
+        {
+          "id": "c",
+          "text": "F − G s'annule en tout point où f s'annule"
+        },
+        {
+          "id": "d",
+          "text": "F − G est constante sur I"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "C'est le théorème central : (F − G)′ = F′ − G′ = f − f = 0 sur I, et une fonction de dérivée nulle sur un intervalle y est constante, donc F − G est constante ✓. L'option a oublie justement cette constante : il existe une infinité de primitives, F et G n'ont aucune raison de coïncider. L'option b applique mal la linéarité : F + G est une primitive de f + f = 2f, pas de f. L'option c invente un lien entre les zéros de f et ceux de F − G : la constante F − G ne s'annule nulle part si elle n'est pas nulle partout.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f une fonction continue sur un intervalle I contenant 2. Combien f admet-elle de primitives F sur I vérifiant F(2) = 5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucune en général"
+        },
+        {
+          "id": "b",
+          "text": "Exactement une"
+        },
+        {
+          "id": "c",
+          "text": "Exactement deux"
+        },
+        {
+          "id": "d",
+          "text": "Une infinité"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "C'est le corollaire de la condition initiale : pour x₀ de I et y₀ réel, il existe une unique primitive F de f sur I telle que F(x₀) = y₀ ✓. L'existence vient du théorème (f est continue) et l'unicité du fait que deux telles primitives diffèrent d'une constante, nulle puisqu'elles coïncident en 2. L'option a nie l'existence, pourtant garantie par la continuité. L'option d décrit la famille de TOUTES les primitives (F + c) : c'est justement la condition initiale qui fixe c et n'en laisse qu'une. L'option c ne correspond à rien.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f définie sur ℝ par f(x) = 2x. Quelle est la primitive F de f sur ℝ vérifiant F(1) = 5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x² − 4"
+        },
+        {
+          "id": "b",
+          "text": "x²"
+        },
+        {
+          "id": "c",
+          "text": "x² + 4"
+        },
+        {
+          "id": "d",
+          "text": "x² + 5"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La méthode est en deux temps. D'abord la famille : les primitives de 2x sont x² + c. Ensuite la condition : F(1) = 1 + c = 5 donne c = 4, donc F(x) = x² + 4 ✓ (double contrôle : F′(x) = 2x ✓ et F(1) = 1 + 4 = 5 ✓). L'option d recopie y₀ = 5 comme constante sans jamais calculer F(1) : elle donne F(1) = 6. L'option a inverse le calcul de c en écrivant c = 1 − 5 = −4. L'option b oublie purement et simplement la constante : F(1) = 1 ≠ 5.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une primitive de f(x) = 1/x² sur ]0, +∞[ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1/x"
+        },
+        {
+          "id": "b",
+          "text": "−2/x³"
+        },
+        {
+          "id": "c",
+          "text": "1/x"
+        },
+        {
+          "id": "d",
+          "text": "1/(3x³)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La ligne 1/xⁿ de la table donne x^(−n+1)/(−n+1) : avec n = 2, on obtient x^(−1)/(−1) = −1/x ✓. Contrôle par dérivation : (−x^(−1))′ = x^(−2) = 1/x² ✓. L'option c est LE piège du chapitre : on croit « remonter » de 1/x² à 1/x, mais (1/x)′ = −1/x², c'est-à-dire l'opposé — il manque le signe moins. L'option b est la dérivée de f, pas sa primitive. L'option d applique la règle x^(n+1)/(n+1) au dénominateur, sans voir que l'exposant vaut −2 : sa dérivée est −1/x⁴.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une primitive de f(x) = cos(4x) sur ℝ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 sin(4x)"
+        },
+        {
+          "id": "b",
+          "text": "sin(4x)"
+        },
+        {
+          "id": "c",
+          "text": "(1/4) sin(4x)"
+        },
+        {
+          "id": "d",
+          "text": "−(1/4) sin(4x)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La table donne, pour cos(ωx + φ), la primitive (1/ω) sin(ωx + φ) : ici ω = 4, donc (1/4) sin(4x) ✓. Vérification : ((1/4) sin(4x))′ = (1/4) × 4 cos(4x) = cos(4x) ✓. L'option b oublie le facteur 1/ω, l'erreur la plus fréquente sur les lignes trigonométriques : sa dérivée vaut 4 cos(4x). L'option a multiplie par ω au lieu de diviser : sa dérivée vaut 16 cos(4x). L'option d ajoute un signe moins qui n'appartient qu'à la ligne du sinus (sin → −cos) : sa dérivée vaut −cos(4x).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une primitive de f(x) = 4/√x sur ]0, +∞[ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2/(x√x)"
+        },
+        {
+          "id": "b",
+          "text": "2√x"
+        },
+        {
+          "id": "c",
+          "text": "4√x"
+        },
+        {
+          "id": "d",
+          "text": "8√x"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On sort le facteur constant par linéarité : une primitive de 1/√x est 2√x, donc une primitive de 4/√x est 4 × 2√x = 8√x ✓. Vérification : (8√x)′ = 8 × 1/(2√x) = 4/√x ✓. L'option b primitive bien 1/√x mais oublie de reporter le facteur 4 : sa dérivée vaut 1/√x. L'option c reporte le 4 tout en oubliant le facteur 2 de la table : sa dérivée vaut 2/√x. L'option a est la dérivée de f (f(x) = 4x^(−1/2) donne f′(x) = −2x^(−3/2)) : on a primitivé dans le mauvais sens.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f définie sur ℝ par f(x) = 2x(x² + 1)³. Une primitive de f sur ℝ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "(x² + 1)⁴/8"
+        },
+        {
+          "id": "b",
+          "text": "(x² + 1)⁴/4"
+        },
+        {
+          "id": "c",
+          "text": "(x² + 1)⁴"
+        },
+        {
+          "id": "d",
+          "text": "x²(x² + 1)⁴/4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On cherche le motif u′uⁿ : en posant u(x) = x² + 1, on a u′(x) = 2x, donc f = u′u³ exactement, et la table donne u⁴/4 ✓. Vérification : ((x² + 1)⁴/4)′ = (1/4) × 4(x² + 1)³ × 2x = 2x(x² + 1)³ ✓. L'option c oublie le facteur 1/(n + 1) : sa dérivée vaut 8x(x² + 1)³. L'option a compense une seconde fois le facteur 2 alors que le u′ = 2x était déjà complet dans f : sa dérivée vaut x(x² + 1)³. L'option d primitive « facteur par facteur » en gardant un x² devant, ce qu'aucune règle n'autorise — il n'existe pas de formule pour la primitive d'un produit.",
+      "difficulty": 2
+    }
+  ]
+}
