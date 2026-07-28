@@ -69,6 +69,17 @@ jobs:
             *) echo "::error::L'URL ne contient pas le ref TEST connu (${TEST_REF}) — refus."; exit 1 ;;
           esac
 
+      # Même angle mort que côté prod : l'hôte direct `db.<ref>.supabase.co` n'est
+      # servi qu'en IPv6, et un runner GitHub n'en a pas.
+      - name: Garde — l'URL doit être celle du pooler (IPv4)
+        run: |
+          set -euo pipefail
+          case "${TEST_SUPABASE_DB_URL}" in
+            *"@db."*)
+              echo "::error::TEST_SUPABASE_DB_URL est une « Direct connection » (@db.<ref>.supabase.co) : servie en IPv6 seule, injoignable depuis un runner GitHub. Reprendre l'URI « Session pooler » (port 5432) dans Supabase > Connect ; l'utilisateur doit être postgres.<ref> et le mot de passe être percent-encodé."
+              exit 1 ;;
+          esac
+
       - name: Checkout corpus (ce repo)
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:

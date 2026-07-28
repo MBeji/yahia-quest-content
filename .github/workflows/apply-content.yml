@@ -83,6 +83,25 @@ jobs:
             *) echo "::error::L'URL ne contient pas le ref prod connu (${PROD_REF}) — refus."; exit 1 ;;
           esac
 
+      # Un runner GitHub n'a pas d'IPv6, et l'hôte direct `db.<ref>.supabase.co`
+      # n'est servi qu'en IPv6 (sauf add-on IPv4 — que ce projet n'a pas). Une URL
+      # directe passe les deux gardes ci-dessus, puis meurt 90 s plus tard dans le
+      # pg_dump sur un « Network is unreachable » qui ne dit pas quoi faire.
+      # Vécu les 2026-07-27 et 2026-07-28 : le canal n'avait jamais rien appliqué
+      # depuis la scission, et ça ressemblait à un workflow rouge sans cause.
+      - name: Garde — l'URL doit être celle du pooler (IPv4)
+        run: |
+          set -euo pipefail
+          case "${PROD_SUPABASE_DB_URL}" in
+            *"@db."*)
+              echo "::error::PROD_SUPABASE_DB_URL est une « Direct connection » (@db.<ref>.supabase.co) : servie en IPv6 seule, injoignable depuis un runner GitHub. Reprendre l'URI « Session pooler » (port 5432) dans Supabase > Connect. Deux pièges qui coûtent chacun un run : l'utilisateur doit être postgres.<ref> (et non postgres), et tout caractère spécial du mot de passe doit être percent-encodé. Détail : docs/backup-restore-runbook.md du dépôt public."
+              exit 1 ;;
+          esac
+          case "${PROD_SUPABASE_DB_URL}" in
+            *pooler.supabase.com*) echo "URL pooler confirmée (IPv4)." ;;
+            *) echo "::warning::Hôte ni direct ni pooler — inattendu. On tente." ;;
+          esac
+
       - name: Checkout corpus (ce repo)
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
@@ -189,6 +208,39 @@ jobs:
             psql "${PROD_SUPABASE_DB_URL}" \
               --set ON_ERROR_STOP=1 --single-transaction -q -f "${f}"
           done
+
+      # Le SQL peut passer sans rien écrire de jouable (fichier vide, sujet dont
+      # tous les chapitres ont été prunés). On recompte donc en base ce qu'on
+      # vient d'appliquer, sujet par sujet, et on échoue si un sujet appliqué n'a
+      # aucune question — pour qu'un canal muet ne puisse plus s'afficher vert.
+      - name: Vérifier que le contenu est bien en base
+        if: ${{ env.DRY_RUN == 'false' }}
+        working-directory: corpus/sql/content
+        run: |
+          set -euo pipefail
+          echo "### Contenu vérifié en base" >> "$GITHUB_STEP_SUMMARY"
+          echo "| sujet | chapitres | questions |" >> "$GITHUB_STEP_SUMMARY"
+          echo "| ----- | --------- | --------- |" >> "$GITHUB_STEP_SUMMARY"
+          VIDES=""
+          for f in ${{ steps.plan.outputs.files }}; do
+            # `subjects.id` EST le slug du sujet (et donc le nom du fichier) —
+            # pas un UUID, contrairement aux chapitres/exercices/questions.
+            SUBJECT="$(basename "$f" .sql)"
+            READ=$(psql "${PROD_SUPABASE_DB_URL}" --set ON_ERROR_STOP=1 -tAq -c \
+              "SELECT (SELECT count(*) FROM public.chapters WHERE subject_id = '${SUBJECT}')
+                   || '|' ||
+                      (SELECT count(*) FROM public.questions q
+                         JOIN public.exercises e ON e.id = q.exercise_id
+                         JOIN public.chapters c ON c.id = e.chapter_id
+                        WHERE c.subject_id = '${SUBJECT}');")
+            CH="${READ%%|*}"; QU="${READ##*|}"
+            echo "| \`${SUBJECT}\` | ${CH} | ${QU} |" >> "$GITHUB_STEP_SUMMARY"
+            [ "${QU:-0}" -gt 0 ] || VIDES="${VIDES} ${SUBJECT}"
+          done
+          if [ -n "$VIDES" ]; then
+            echo "::error::Appliqué sans effet — aucun contenu en base pour :${VIDES}. La base n'a PAS le contenu attendu malgré un SQL passé sans erreur."
+            exit 1
+          fi
 
       # Le journal que le contenu perd en quittant supabase_migrations (§4.2).
       - name: Journaliser la release
