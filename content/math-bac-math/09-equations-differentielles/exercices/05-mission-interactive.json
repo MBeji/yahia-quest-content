@@ -1,0 +1,118 @@
+{
+  "title": "🧩 Mission interactive ⭐⭐ : Le Laboratoire des Lois Vivantes",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "Texte à trous — un patient reçoit une dose de 12 mg d'un médicament à l'instant t = 0 (t en heures). La quantité Q présente dans le sang vérifie Q′(t) = −0,2 Q(t). Au bout de 5 heures, il reste ____ dans le sang. (On donne e ≈ 2,71828.)",
+      "options": [
+        { "id": "a", "text": "12e^(−1) ≈ 4,41 mg" },
+        { "id": "b", "text": "12e^(−0,2) ≈ 9,83 mg" },
+        { "id": "c", "text": "11 mg" },
+        { "id": "d", "text": "12e ≈ 32,62 mg" }
+      ],
+      "correctOption": "a",
+      "explanation": "L'énoncé donne exactement l'équation reine du chapitre : Q′ = aQ avec a = −0,2. Ses solutions sont les fonctions t ↦ ke^(−0,2t), et la dose initiale fixe k : Q(0) = ke^0 = k = 12, donc Q(t) = 12e^(−0,2t). Vérification par réinjection, le seul contrôle qui ne ment jamais : Q′(t) = 12 × (−0,2)e^(−0,2t) = −0,2 × 12e^(−0,2t) = −0,2 Q(t) ✓, et Q(0) = 12 ✓. Il ne reste qu'à évaluer en t = 5 : l'exposant vaut −0,2 × 5 = −1, donc Q(5) = 12e^(−1) = 12/2,71828 ≈ 4,41 mg ✓. Contrôle d'ordre de grandeur, à faire systématiquement : la demi-vie du médicament vaut (ln 2)/0,2 ≈ 0,693/0,2 ≈ 3,47 h. Cinq heures, c'est plus d'une demi-vie et moins de deux (6,94 h), donc la quantité restante doit être coincée entre 12/4 = 3 mg et 12/2 = 6 mg — et 4,41 est bien dans cet encadrement ✓. La valeur 12e^(−0,2) évalue l'exponentielle en oubliant de multiplier le coefficient par le temps : c'est la quantité au bout d'UNE heure, pas de cinq. La valeur 11 mg traite la décroissance comme si elle était affine, 12 − 0,2 × 5, c'est-à-dire une perte de 0,2 mg par heure ; or l'équation dit que la vitesse de perte est proportionnelle à ce qui reste, donc elle ralentit à mesure que le sang se vide. La valeur 12e est le résultat d'un signe perdu dans l'exposant : elle décrirait un médicament qui se MULTIPLIE dans le sang, ce qu'aucune élimination ne fait.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "QCM visuel — dans un circuit série, l'intensité i (en ampères) est solution d'une équation de la forme i′ = a i + b, avec i(0) = 0. La courbe verte représente i en fonction du temps t (en secondes) : elle part de l'origine, monte vers l'asymptote horizontale i = 0,4 A (en orange), et sa tangente à l'origine (en violet) a pour coefficient directeur 20. Que valent a et b ? <svg viewBox=\"0 0 320 200\"><path d=\"M45 160 H305\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M60 175 V25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M305 160 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M60 25 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><line x1=\"55\" y1=\"50\" x2=\"300\" y2=\"50\" stroke=\"#b45309\" stroke-width=\"1.4\" stroke-dasharray=\"5 3\"/><line x1=\"60\" y1=\"160\" x2=\"106\" y2=\"50\" stroke=\"#7c3aed\" stroke-width=\"1.8\"/><polyline points=\"60,160 83,116.7 106,90.5 129,74.5 152,64.9 175,59 198,55.5 244,52 290,50.7\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"210\" y=\"44\" font-size=\"12\" font-weight=\"700\" fill=\"#b45309\">i = 0,4 A</text><text x=\"110\" y=\"62\" font-size=\"11\" font-weight=\"700\" fill=\"#7c3aed\">pente 20</text><text x=\"284\" y=\"176\" font-size=\"11\" fill=\"#0f172a\">t (s)</text><text x=\"32\" y=\"36\" font-size=\"11\" fill=\"#0f172a\">i (A)</text><text x=\"52\" y=\"174\" font-size=\"11\" fill=\"#0f172a\">0</text></svg>",
+      "options": [
+        { "id": "a", "text": "a = −50 et b = 20" },
+        { "id": "b", "text": "a = 50 et b = 20" },
+        { "id": "c", "text": "a = −50 et b = 0,4" },
+        { "id": "d", "text": "a = −0,4 et b = 20" }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux lectures graphiques suffisent, et chacune donne une équation. Première lecture, la TANGENTE À L'ORIGINE : son coefficient directeur est i′(0), et l'équation évaluée en 0 donne i′(0) = a × i(0) + b = a × 0 + b = b. Donc b = 20 directement, sans aucun calcul. Deuxième lecture, l'ASYMPTOTE : le cours établit que les solutions de y′ = ay + b s'écrivent ke^(at) − b/a, et que si a < 0 le terme exponentiel s'efface, la limite en +∞ valant alors −b/a. Ici cette limite se lit sur la figure : −b/a = 0,4, donc a = −b/0,4 = −20/0,4 = −50 ✓. Vérification complète par réinjection : avec a = −50 et b = 20, la solution valant 0 en 0 est i(t) = ke^(−50t) + 0,4 avec k + 0,4 = 0, soit i(t) = 0,4(1 − e^(−50t)). On dérive : i′(t) = 0,4 × 50e^(−50t) = 20e^(−50t), et l'on calcule le second membre : −50 i(t) + 20 = −20 + 20e^(−50t) + 20 = 20e^(−50t) ✓. Contrôles annexes : i(0) = 0 ✓, i′(0) = 20 ✓, et i(t) → 0,4 quand t → +∞ ✓. La réponse a = 50 change le signe du coefficient et donc toute l'histoire : avec a > 0 l'exponentielle explose, la courbe s'envolerait vers +∞ au lieu de se coucher sur une asymptote. La réponse b = 0,4 confond le PALIER de l'intensité avec le second membre constant de l'équation : le palier est −b/a, pas b, et l'oubli de la division par a est l'erreur la plus fréquente du chapitre. La réponse a = −0,4 fait la même confusion en sens inverse, en plaçant la valeur lue sur l'asymptote à la place du coefficient de l'exposant — et l'on peut la rejeter à vue : avec a = −0,4 le régime transitoire durerait plusieurs secondes, alors que la figure montre une montée achevée en quelques centièmes de seconde.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Chasse à l'erreur — un café à 90 °C est posé dans une pièce à 20 °C. Sa température f(t) (en °C, t en minutes) obéit à la loi de Newton : f′(t) = a(f(t) − 20), avec f(0) = 90 et f(10) = 60. Voici la copie d'un élève.\n① On pose g = f − 20 : alors g′ = f′ = a g, donc g(t) = g(0)e^(at) et f(t) = 20 + 70e^(at).\n② La donnée f(10) = 60 impose 70e^(10a) = 40, soit e^(10a) = 4/7.\n③ Donc 10a = ln(4/7) et a = (ln(4/7))/10 ≈ −0,056.\n④ Le café atteint la température de la pièce, 20 °C, à l'instant t = −(ln 70)/a ≈ 75,9 min.\nUne seule étape contient une erreur : laquelle ?",
+      "options": [
+        { "id": "a", "text": "L'étape ①" },
+        { "id": "b", "text": "L'étape ②" },
+        { "id": "c", "text": "L'étape ③" },
+        { "id": "d", "text": "L'étape ④" }
+      ],
+      "correctOption": "d",
+      "explanation": "L'erreur est à l'étape ④, et elle est de fond, pas de calcul : le café n'atteint JAMAIS 20 °C. Résoudre f(t) = 20 revient à écrire 20 + 70e^(at) = 20, c'est-à-dire 70e^(at) = 0 ; or une exponentielle ne s'annule pas, donc cette équation n'a aucune solution. L'élève a en réalité résolu 70e^(at) = 1, ce qui correspond au seuil f(t) = 21 °C, puis a présenté ce résultat comme l'instant d'égalisation. La formulation correcte ne peut porter que sur un seuil : par exemple, f(t) < 20,1 °C donne 70e^(at) < 0,1, soit at < ln(1/700), donc t > ln(700)/0,056 ≈ 6,551/0,056 ≈ 117 min. La température TEND vers celle de la pièce, elle ne la rejoint pas — c'est la signature de toute décroissance exponentielle vers une asymptote. Les trois autres étapes sont exactes, et il faut savoir le vérifier. ① est le changement de fonction du cours : g = f − 20 vérifie g′ = f′ = a(f − 20) = ag, donc g(t) = g(0)e^(at) avec g(0) = 90 − 20 = 70, d'où f(t) = 20 + 70e^(at) ✓ ; contrôle : f(0) = 20 + 70 = 90 ✓. ② remplace t par 10 : 20 + 70e^(10a) = 60 donne bien 70e^(10a) = 40 puis e^(10a) = 40/70 = 4/7 ✓. ③ compose par le logarithme : 10a = ln(4/7) ≈ ln(0,5714) ≈ −0,5596, donc a ≈ −0,05596 ✓, et le signe négatif est cohérent avec un café qui refroidit. C'est tout le piège de ce format : les lignes ①②③ sont irréprochables, et l'unique faute se cache dans la conclusion, là où l'on relit le moins.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Trois isotopes sont conservés au Laboratoire. Pour chacun, le nombre de noyaux vérifie N′(t) = −λN(t), où t est en années et λ est la constante radioactive donnée par an. Associe chaque isotope à sa durée de demi-vie. On donne ln 2 ≈ 0,693.",
+      "options": [
+        { "id": "l1", "text": "Isotope A : λ = 0,1386 par an" },
+        { "id": "l2", "text": "Isotope B : λ = 0,0231 par an" },
+        { "id": "l3", "text": "Isotope C : λ = 0,00693 par an" },
+        { "id": "r1", "text": "Demi-vie de 5 ans" },
+        { "id": "r2", "text": "Demi-vie de 30 ans" },
+        { "id": "r3", "text": "Demi-vie de 100 ans" }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"]
+        ]
+      },
+      "explanation": "Une seule formule pilote les trois associations. De N′ = −λN et N(0) = N₀ on tire N(t) = N₀e^(−λt) (réinjection : N′(t) = −λN₀e^(−λt) = −λN(t) ✓). La demi-vie T est définie par N(T) = N₀/2, soit e^(−λT) = 1/2 ; en composant par le logarithme, −λT = −ln 2, donc T = (ln 2)/λ. Application, avec ln 2 ≈ 0,693. Isotope A : T = 0,693/0,1386 = 5 ans. Isotope B : T = 0,693/0,0231 = 30 ans. Isotope C : T = 0,693/0,00693 = 100 ans. Contrôle croisé sans calculatrice : λ est divisé par 6 entre A et B (0,1386/0,0231 = 6) et la demi-vie est bien multipliée par 6 (5 × 6 = 30) ; entre B et C, λ est divisé par 10 et la demi-vie multipliée par 10 ✓. C'est la clé du raisonnement : λ et T sont INVERSEMENT proportionnels, donc le plus grand λ correspond forcément à la plus courte demi-vie, jamais à la plus longue. L'appariement inverse (A avec 100 ans) est le piège central : il lit λ comme une durée alors que c'est un taux, exprimé « par an » et non « en années ». Deux remarques que le bac réclame souvent. D'abord, T ne dépend pas de N₀ : que l'on parte d'un gramme ou d'une tonne, la moitié a disparu au bout du même temps — c'est ce qui rend possible la datation au carbone 14, dont la demi-vie de 5730 ans donne λ = 0,693/5730 ≈ 1,21 × 10⁻⁴ par an. Ensuite, la division par 2 se répète : après 2T il reste le quart, après 3T le huitième, et jamais zéro.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un échantillon de 80 mg d'un isotope se désintègre selon m′(t) = −λ m(t), où m est la masse restante en milligrammes et t le temps en heures. La demi-vie de cet isotope est de 12 heures. Quelle masse, en milligrammes, reste-t-il au bout de 36 heures ? Donne un nombre entier.",
+      "answerKey": { "value": 10, "unit": "mg" },
+      "explanation": "Deux chemins mènent au même nombre, et un candidat solide les connaît tous les deux. Chemin rapide : 36 heures, c'est exactement trois demi-vies (36 = 3 × 12). Or à chaque demi-vie la masse est divisée par 2, indépendamment de la valeur de départ. On divise donc trois fois : 80 → 40 → 20 → 10. Il reste 10 mg ✓. Chemin complet, celui qu'on rédige au bac : la solution de m′ = −λm valant 80 en 0 est m(t) = 80e^(−λt) (réinjection : m′(t) = −80λe^(−λt) = −λm(t) ✓, et m(0) = 80 ✓). La demi-vie donne λ = (ln 2)/12 ≈ 0,693/12 ≈ 0,0578 par heure. Alors m(36) = 80e^(−36 × (ln 2)/12) = 80e^(−3 ln 2) = 80 × (e^(ln 2))^(−3) = 80 × 2^(−3) = 80/8 = 10 mg ✓ — les deux méthodes concordent, ce qui valide le résultat. Contrôle numérique de sécurité : 36 × 0,0578 ≈ 2,08 et e^(−2,08) ≈ 0,125 = 1/8, puis 80 × 0,125 = 10 ✓. Trois erreurs classiques à écarter. Répondre 40 revient à ne compter qu'une seule demi-vie, comme si 36 heures valaient 12. Répondre 20 s'arrête à deux divisions : on oublie que 36/12 fait 3, pas 2. Répondre environ 27 applique une proportionnalité (80 × 12/36) : la décroissance radioactive n'est pas affine, elle est exponentielle, et c'est précisément pour cela qu'aucune masse n'atteint jamais zéro — après une durée aussi longue qu'on veut, il reste toujours une fraction, si petite soit-elle.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Un minerai contient N₀ noyaux radioactifs à l'instant t = 0 ; leur nombre vérifie N′(t) = −λN(t) avec λ > 0, et la demi-vie de cet élément vaut 20 jours. Sélectionne TOUTES les affirmations exactes.",
+      "options": [
+        { "id": "a", "text": "Au bout de 40 jours, il reste le quart de N₀" },
+        {
+          "id": "b",
+          "text": "La demi-vie de 20 jours ne dépend pas du nombre N₀ de noyaux présents au départ"
+        },
+        {
+          "id": "c",
+          "text": "La constante radioactive vaut λ = (ln 2)/20 ≈ 0,0347 par jour"
+        },
+        {
+          "id": "d",
+          "text": "Il existe un instant à partir duquel il ne reste plus aucun noyau"
+        },
+        { "id": "e", "text": "Au bout de 30 jours, il reste exactement 25 % de N₀" }
+      ],
+      "answerKey": { "correct": ["a", "b", "c"] },
+      "explanation": "La solution du modèle est N(t) = N₀e^(−λt), et la demi-vie T vérifie e^(−λT) = 1/2, soit T = (ln 2)/λ. Examinons chaque affirmation. Quarante jours valent deux demi-vies : la moitié disparaît pendant les vingt premiers jours, puis la moitié du reste pendant les vingt suivants, donc il reste N₀/4 ✓ — on peut aussi l'écrire N(40) = N₀e^(−2 ln 2) = N₀ × 2⁻² = N₀/4. La demi-vie ne dépend pas de N₀ ✓ : dans l'équation e^(−λT) = 1/2, obtenue en simplifiant N(T) = N₀/2 par N₀, la quantité initiale s'élimine — c'est exactement ce qui rend la datation possible, puisqu'on ignore toujours combien de noyaux contenait l'échantillon à l'origine. La constante se déduit de T = (ln 2)/λ inversée en λ = (ln 2)/T = 0,693/20 ≈ 0,0347 par jour ✓ ; contrôle : e^(−0,0347 × 20) = e^(−0,693) ≈ 0,5 ✓. En revanche, aucun instant ne vide l'échantillon : N(t) = N₀e^(−λt) est un produit de facteurs strictement positifs, donc N(t) > 0 pour tout t, et la fonction TEND vers 0 sans jamais l'atteindre — l'affirmation qui promet une disparition complète confond une limite avec une valeur atteinte, l'erreur jumelle du « le café atteint la température de la pièce ». Enfin, 30 jours ne donnent pas 25 % : trente jours valent une demi-vie et demie, donc N(30) = N₀ × 2^(−1,5) = N₀/(2√2) ≈ 0,354 N₀, soit environ 35,4 %, et non 25 %. Cette proposition interpole linéairement entre 50 % à 20 jours et 25 % à 40 jours ; or la courbe exponentielle est convexe, elle passe au-DESSUS de la corde, et la valeur réelle est toujours supérieure à l'estimation affine.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "QCM visuel — un mobile oscille sur un axe. Son élongation x (en mètres) en fonction du temps t (en secondes) est représentée en vert ; on lit sur la figure que le mouvement passe par l'origine en montant à l'instant 0, que l'élongation varie entre −3 et 3, et que le motif se répète toutes les 6 secondes. Quelle est l'équation horaire, et de quelle équation différentielle est-elle solution ? <svg viewBox=\"0 0 340 190\"><path d=\"M40 95 H325\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M55 175 V20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M325 95 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M55 20 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><line x1=\"50\" y1=\"40\" x2=\"315\" y2=\"40\" stroke=\"#b45309\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><line x1=\"50\" y1=\"150\" x2=\"315\" y2=\"150\" stroke=\"#b45309\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><polyline points=\"55,95 69,67.5 83,47.4 97,40 111,47.4 125,67.5 139,95 153,122.5 167,142.6 181,150 195,142.6 209,122.5 223,95 237,67.5 251,47.4 265,40 279,47.4 293,67.5 307,95\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"55\" y1=\"168\" x2=\"223\" y2=\"168\" stroke=\"#7c3aed\" stroke-width=\"1.4\"/><line x1=\"55\" y1=\"164\" x2=\"55\" y2=\"172\" stroke=\"#7c3aed\" stroke-width=\"1.4\"/><line x1=\"223\" y1=\"164\" x2=\"223\" y2=\"172\" stroke=\"#7c3aed\" stroke-width=\"1.4\"/><text x=\"139\" y=\"164\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#7c3aed\">6 s</text><text x=\"44\" y=\"44\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\">3</text><text x=\"44\" y=\"154\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\">−3</text><text x=\"139\" y=\"110\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">3</text><text x=\"307\" y=\"110\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">9</text><text x=\"306\" y=\"85\" font-size=\"11\" fill=\"#0f172a\">t (s)</text><text x=\"26\" y=\"30\" font-size=\"11\" fill=\"#0f172a\">x (m)</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "x(t) = 3 sin(πt/3), solution de y″ + (π²/9)y = 0"
+        },
+        {
+          "id": "b",
+          "text": "x(t) = 3 cos(πt/3), solution de y″ + (π²/9)y = 0"
+        },
+        { "id": "c", "text": "x(t) = 3 sin(6t), solution de y″ + 36y = 0" },
+        {
+          "id": "d",
+          "text": "x(t) = 6 sin(πt/3), solution de y″ + (π²/9)y = 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Trois lectures, trois informations, et l'équation tombe. La PÉRIODE d'abord : elle vaut 2π/ω, et la figure indique 6 s, donc 2π/ω = 6 et ω = 2π/6 = π/3. L'équation différentielle est alors y″ + ω²y = 0, c'est-à-dire y″ + (π²/9)y = 0. L'AMPLITUDE ensuite : la courbe oscille entre −3 et 3, donc l'amplitude est 3 (la moitié de l'écart total 6, pas l'écart lui-même). La PHASE enfin : à l'instant 0 la courbe passe par 0 en montant, ce qui exclut le cosinus, maximal en 0, et impose le sinus. Conclusion : x(t) = 3 sin(πt/3) ✓. Vérification complète par réinjection : x′(t) = 3 × (π/3)cos(πt/3) = π cos(πt/3), puis x″(t) = −π × (π/3)sin(πt/3) = −(π²/3)sin(πt/3) = −(π²/9) × 3sin(πt/3) = −(π²/9)x(t), donc x″ + (π²/9)x = 0 ✓. Contrôles aux points lus : x(0) = 0 ✓ avec x′(0) = π > 0, donc la courbe monte ✓ ; x(1,5) = 3 sin(π/2) = 3, le maximum, et la figure place bien le sommet à mi-chemin entre 0 et 3 ✓ ; x(3) = 3 sin(π) = 0 ✓ ; x(6) = 3 sin(2π) = 0 avec la même montée qu'en 0, le motif se répète ✓. La proposition en cosinus a la bonne équation différentielle mais la mauvaise condition initiale : elle vaudrait 3 à l'instant 0, c'est-à-dire un mobile lâché depuis son élongation maximale, alors que la figure le montre au repos de position et lancé à pleine vitesse. La proposition en sin(6t) confond la période avec la pulsation : elle prend pour ω le nombre 6 lu sur l'axe des temps, ce qui donnerait une période de 2π/6 ≈ 1,05 s, six fois trop rapide — c'est le piège signalé par le cours, ω est relié à la période par 2π/ω et n'est jamais la période elle-même. La proposition d'amplitude 6 mesure l'écart entre le creux et la crête au lieu de la distance à la position d'équilibre : sa courbe monterait jusqu'à 6, bien au-dessus de la ligne pointillée de la figure. Retiens la répartition des rôles : la période ne dépend que de l'ÉQUATION (donc de ω), l'amplitude et la phase ne dépendent que des CONDITIONS INITIALES.",
+      "difficulty": 3
+    }
+  ]
+}

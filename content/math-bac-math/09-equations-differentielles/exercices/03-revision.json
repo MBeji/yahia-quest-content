@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Équations différentielles",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Parmi ces égalités, laquelle est une équation différentielle du type y′ = ay + b, avec a et b réels et a ≠ 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2x + 5 = 13"
+        },
+        {
+          "id": "b",
+          "text": "y′ = 3y − 7"
+        },
+        {
+          "id": "c",
+          "text": "y′ = x²"
+        },
+        {
+          "id": "d",
+          "text": "y″ + 4y = 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le type y′ = ay + b demande que le second membre soit une combinaison de l'inconnue y et d'une constante ; ici a = 3 et b = −7, avec a ≠ 0 ✓. L'option a n'est pas une équation différentielle du tout : son inconnue est un NOMBRE, et sa résolution donne x = 4. L'option c est bien une équation différentielle, mais du type y′ = f(x) : elle se résout par primitivation (solutions x ↦ x³/3 + c) et son second membre ne contient pas y. L'option d fait intervenir la dérivée seconde : c'est une équation du second ordre, d'un tout autre type.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Résoudre dans ℝ l'équation différentielle −5y′ + y = 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ ke^(−5x), k ∈ ℝ"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ ke^(−x/5), k ∈ ℝ"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ ke^(x/5), k ∈ ℝ"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ ke^(5x), k ∈ ℝ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On isole y′ en divisant par son coefficient −5 : l'équation devient y′ = (1/5)y, donc a = 1/5 et les solutions sont les x ↦ ke^(x/5) ✓. Vérification : f′(x) = (k/5)e^(x/5), donc −5f′(x) + f(x) = −ke^(x/5) + ke^(x/5) = 0 ✓. L'option b ajoute un signe moins qui n'a pas lieu d'être : le −5 est déjà pris en compte par la division. Les options a et d prennent pour a le coefficient 5 lu tel quel au lieu de son inverse 1/5, avec ou sans le signe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Déterminer la solution f sur ℝ de l'équation différentielle y′ = 2y − 1 qui vérifie f(0) = 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ (1/2)(1 − e^(2x))"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ (1/2)(1 − e^(−2x))"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ (1/2)(e^(2x) − 1)"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ (1/2)(e^(2x) + 1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Ici a = 2 et b = −1, donc −b/a = 1/2 et les solutions sont les x ↦ ke^(2x) + 1/2. La condition f(0) = k + 1/2 = 0 donne k = −1/2, d'où f(x) = 1/2 − (1/2)e^(2x) = (1/2)(1 − e^(2x)) ✓. Double contrôle : f′(x) = −e^(2x) et 2f(x) − 1 = 1 − e^(2x) − 1 = −e^(2x) ✓ ; f(0) = (1/2)(1 − 1) = 0 ✓. L'option d est bien solution de l'équation (avec k = 1/2) mais rate la condition : elle donne f(0) = 1. Les options b et c donnent bien 0 en 0 mais ne vérifient pas l'équation : la première inverse le signe de l'exposant, la seconde prend +b/a = −1/2 pour terme constant.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la solution sur ℝ de l'équation différentielle y′ = −y + 1 telle que f(0) = 1. Que peut-on affirmer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est négative sur ℝ"
+        },
+        {
+          "id": "b",
+          "text": "f est nulle sur ℝ"
+        },
+        {
+          "id": "c",
+          "text": "f est strictement positive sur ℝ"
+        },
+        {
+          "id": "d",
+          "text": "f n'a pas un signe constant sur ℝ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ici a = −1 et b = 1, donc −b/a = 1 et les solutions sont les x ↦ ke^(−x) + 1. La condition donne f(0) = k + 1 = 1, soit k = 0 : f est donc la fonction constante égale à 1, strictement positive sur ℝ ✓ (contrôle : f′ = 0 et −f + 1 = −1 + 1 = 0 ✓). L'option b confond k = 0 avec f = 0 : c'est le coefficient devant l'exponentielle qui s'annule, pas la fonction, car le terme constant 1 subsiste. L'option d suppose une exponentielle survivante qui ferait changer f de signe. L'option a déduit du coefficient a = −1 < 0 que la fonction serait négative : le signe de a gouverne le comportement de l'exponentielle, jamais le signe de la solution.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la solution sur ℝ de l'équation différentielle y′ = 4y telle que f(0) = 1. Que vaut f(ln 2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "16"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les solutions de y′ = 4y sont les x ↦ ke^(4x), et f(0) = k = 1 donne f(x) = e^(4x). Donc f(ln 2) = e^(4ln 2) = (e^(ln 2))⁴ = 2⁴ = 16 ✓ (contrôle : f′(x) = 4e^(4x) = 4f(x) ✓ et f(0) = 1 ✓). L'option a calcule e^(ln 2) = 2 en oubliant le coefficient 4 de l'exposant. L'option c élève 2 au cube, c'est-à-dire applique 4ln 2 = ln 8 au lieu de ln 16 : l'erreur classique est d'écrire 4ln 2 = ln(4 × 2). L'option b recopie le coefficient a = 4 de l'équation.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Déterminer la solution f sur ℝ de l'équation différentielle y′ = −2y + 6 qui vérifie f(1) = 5.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ 2e^(−2(x + 1)) + 3"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ 2e^(−2(x − 1)) + 3"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ 2e^(2(x − 1)) + 3"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ 5e^(−2(x − 1)) + 3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Ici a = −2 et b = 6, donc −b/a = 3 et les solutions sont les x ↦ ke^(−2x) + 3. La condition f(1) = ke^(−2) + 3 = 5 donne k = 2e², d'où f(x) = 2e²e^(−2x) + 3 = 2e^(−2(x − 1)) + 3 ✓. Double contrôle : f′(x) = −4e^(−2(x − 1)) et −2f(x) + 6 = −4e^(−2(x − 1)) − 6 + 6 ✓ ; f(1) = 2e^0 + 3 = 5 ✓. L'option d applique la formule (y₀ + b/a)e^(a(x − x₀)) − b/a en oubliant de retirer 3 à y₀ : elle donne f(1) = 8. L'option a se trompe de signe dans x − x₀ et vaut 5 en −1, pas en 1. L'option c inverse le signe de l'exposant : sa dérivée vaut +4e^(2(x − 1)), elle résout y′ = 2y − 6.",
+      "difficulty": 3
+    }
+  ]
+}

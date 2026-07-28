@@ -1,0 +1,154 @@
+{
+  "title": "🏛️ Annales Bac ⭐⭐⭐⭐ : Sujet type — Étude de (2x − 1)e^x − 1 et aire d'un domaine non borné",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "Partie A. Soit f la fonction définie sur ℝ par f(x) = (2x − 1)e^x − 1, de courbe C_f. Déterminer les limites de f en −∞ et en +∞, et en donner l'interprétation graphique.",
+      "options": [
+        {
+          "id": "a",
+          "text": "lim_{x→−∞} f(x) = −∞ et lim_{x→+∞} f(x) = +∞ : C_f n'admet aucune asymptote"
+        },
+        {
+          "id": "b",
+          "text": "lim_{x→−∞} f(x) = −1 et lim_{x→+∞} f(x) = +∞ : la droite d'équation y = −1 est asymptote horizontale à C_f en −∞"
+        },
+        {
+          "id": "c",
+          "text": "lim_{x→−∞} f(x) = 0 et lim_{x→+∞} f(x) = +∞ : l'axe des abscisses est asymptote à C_f en −∞"
+        },
+        {
+          "id": "d",
+          "text": "lim_{x→−∞} f(x) = −1 et lim_{x→+∞} f(x) = +∞ : la droite d'équation y = 2x − 2 est asymptote oblique à C_f en +∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En −∞, le produit (2x − 1)e^x est une forme indéterminée « −∞ × 0 » : on la lève par les croissances comparées. On écrit (2x − 1)e^x = 2x e^x − e^x ; or lim_{x→−∞} x e^x = 0 (théorème lim_{x→−∞} x^m e^(nx) = 0) et lim_{x→−∞} e^x = 0, donc (2x − 1)e^x → 0 et f(x) → 0 − 1 = −1 ✓ : la droite d'équation y = −1 est asymptote horizontale à C_f en −∞. En +∞, aucune indétermination : 2x − 1 → +∞ et e^x → +∞, donc le produit tend vers +∞ et lim_{x→+∞} f(x) = +∞ ✓. Contrôle numérique : f(−5) = (−11)e^(−5) − 1 = −11 × 0,006738 − 1 ≈ −1,074, puis f(−20) ≈ −1,0000001 — la courbe se colle bien à −1 par en dessous ✓ ; et f(5) = 9e^5 − 1 ≈ 1334,7, ce qui confirme +∞ ✓. La proposition « −∞ en −∞ » raisonne sur le seul facteur 2x − 1 et oublie que l'exponentielle écrase toute puissance : c'est e^x qui décide, et il s'écrase vers 0 bien plus vite que 2x − 1 ne descend. La proposition « 0 en −∞ » calcule correctement la limite du produit (2x − 1)e^x mais perd le « − 1 » de l'expression : f(−20) ≈ −1,0000001 n'a rien d'un nombre proche de 0, et l'asymptote est y = −1, pas l'axe des abscisses. La proposition d'une asymptote oblique y = 2x − 2 en +∞ transporte un réflexe de fonction rationnelle : ici f(x) − (2x − 2) = (2x − 1)e^x − 2x + 1 tend vers +∞ au lieu de tendre vers 0, l'écart explose — il n'y a pas d'asymptote oblique, mais une croissance de type exponentiel.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Partie A (suite). Toujours avec f définie sur ℝ par f(x) = (2x − 1)e^x − 1. Calculer f′(x), puis donner le sens de variation de f et son extremum.",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = 2e^x : f est strictement croissante sur ℝ et n'admet aucun extremum"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = (2x + 1)e^x : f croît sur ]−∞ ; −1/2] puis décroît sur [−1/2 ; +∞[, avec un maximum f(−1/2) = −2e^(−1/2) − 1 ≈ −2,21"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = (2x + 1)e^x − 1, qui s'annule en x = 0 : f admet un minimum en 0, égal à −2"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = (2x + 1)e^x : f décroît sur ]−∞ ; −1/2] puis croît sur [−1/2 ; +∞[, avec un minimum f(−1/2) = −2e^(−1/2) − 1 ≈ −2,21"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f est un produit augmenté d'une constante. En dérivant (2x − 1)e^x comme un produit u v, avec u(x) = 2x − 1 (u′ = 2) et v(x) = e^x (v′ = e^x) : f′(x) = 2e^x + (2x − 1)e^x = e^x(2 + 2x − 1) = (2x + 1)e^x ✓ — la constante −1 disparaît en dérivant, elle ne laisse aucune trace. Le signe se lit alors par le raccourci du chapitre : e^x > 0 pour tout x, donc f′(x) est du signe de 2x + 1, négatif pour x < −1/2, positif pour x > −1/2. Donc f décroît sur ]−∞ ; −1/2], croît sur [−1/2 ; +∞[ et atteint en −1/2 son minimum, égal à f(−1/2) = (2 × (−1/2) − 1)e^(−1/2) − 1 = −2e^(−1/2) − 1 ≈ −2 × 0,6065 − 1 ≈ −2,21 ✓. Contrôle par le taux d'accroissement : (f(0,01) − f(−0,01))/0,02 ≈ 1,000, alors que la formule donne f′(0) = 1 × e^0 = 1 ✓. Contrôle de cohérence : f part de la valeur limite −1 en −∞ et descend jusqu'à −2,21 — c'est bien une descente ✓. La proposition f′(x) = 2e^x ne dérive que le facteur 2x − 1 et recopie e^x tel quel : la règle du produit est oubliée. Les valeurs la démentent : f(−1) = −3e^(−1) − 1 ≈ −2,10 est SUPÉRIEUR à f(−1/2) ≈ −2,21, or une fonction croissante sur ℝ ne peut pas redescendre entre −1 et −1/2. La proposition « croît puis décroît » a la bonne dérivée mais lit son signe à l'envers : 2x + 1 est négatif AVANT −1/2 et non après ; un maximum égal à −2,21 serait d'ailleurs incompatible avec f(1) = e − 1 ≈ 1,72. La proposition f′(x) = (2x + 1)e^x − 1 dérive la constante −1 en −1 au lieu de 0 ; elle est cohérente avec elle-même, puisque cette expression s'annule effectivement en x = 0, ce qui la rend tentante — mais elle conclut à un minimum f(0) = −2 alors que f(−1/2) ≈ −2,21 lui est strictement inférieur : 0 n'est pas un point de minimum.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie A (suite). Toujours avec f définie sur ℝ par f(x) = (2x − 1)e^x − 1, de courbe C_f et de dérivée f′(x) = (2x + 1)e^x. Déterminer une équation de la tangente T à C_f au point d'abscisse 0, puis la position de C_f par rapport à T.",
+      "options": [
+        {
+          "id": "a",
+          "text": "T : y = x − 2 ; C_f est au-dessus de T sur ℝ tout entier, le seul point commun étant A(0 ; −2)"
+        },
+        {
+          "id": "b",
+          "text": "T : y = x − 2 ; C_f est au-dessous de T sur ]−∞ ; 0] et au-dessus sur [0 ; +∞[, A(0 ; −2) étant un point d'inflexion"
+        },
+        {
+          "id": "c",
+          "text": "T : y = x − 1 ; C_f est au-dessus de T sur ℝ, le seul point commun étant A(0 ; −1)"
+        },
+        {
+          "id": "d",
+          "text": "T : y = 2x − 2 ; C_f est au-dessus de T sur ℝ, le seul point commun étant A(0 ; −2)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La tangente au point d'abscisse 0 a pour équation y = f′(0)(x − 0) + f(0). Or f(0) = (0 − 1)e^0 − 1 = −1 − 1 = −2 et f′(0) = (2 × 0 + 1)e^0 = 1, donc T : y = x − 2 ✓, avec le point de contact A(0 ; −2). Pour la position, on étudie l'écart h(x) = f(x) − (x − 2) = (2x − 1)e^x − x + 1, qui vérifie h(0) = −1 − 0 + 1 = 0. On dérive : h′(x) = (2x + 1)e^x − 1, donc h′(0) = 1 − 1 = 0, puis h″(x) = 2e^x + (2x + 1)e^x = (2x + 3)e^x, du signe de 2x + 3. Ainsi h′ décroît sur ]−∞ ; −3/2] et croît sur [−3/2 ; +∞[. Sur la première branche, h′ part de lim_{x→−∞} h′(x) = 0 − 1 = −1 et descend jusqu'à h′(−3/2) = −2e^(−3/2) − 1 ≈ −1,45 : elle y est toujours négative. Sur la seconde, h′ remonte de −1,45 vers +∞ en s'annulant une seule fois — et l'on sait que c'est en 0. Donc h′ < 0 sur ]−∞ ; 0[ et h′ > 0 sur ]0 ; +∞[ : h atteint en 0 son minimum, qui vaut 0. Conclusion : h(x) ≥ 0 pour tout réel x, avec égalité pour x = 0 seulement — C_f est au-dessus de T sur ℝ tout entier, le seul point commun étant A(0 ; −2) ✓. Contrôle numérique de part et d'autre du contact : h(−1) ≈ 0,90 ; h(−0,2) ≈ 0,054 ; h(0,2) ≈ 0,067 ; h(1) ≈ 2,72 — toutes strictement positives ✓. La proposition qui fait traverser la tangente en A confond « la dérivée première s'annule » et « la dérivée seconde change de signe » : ici h″(x) = (2x + 3)e^x ne s'annule pas en 0 mais en −3/2, il n'y a donc aucun changement de côté en A, et h(−0,2) ≈ 0,054 > 0 le montre en une ligne. La proposition T : y = x − 1 calcule f(0) = −1 en oubliant la constante −1 de l'expression de f : le contact est à l'ordonnée −2, pas −1. La proposition T : y = 2x − 2 prend f′(0) = 2, c'est-à-dire s'appuie sur la dérivée erronée f′(x) = 2e^x écartée plus haut ; elle se réfute par deux valeurs : f(−1) ≈ −2,10 est SUPÉRIEUR à 2 × (−1) − 2 = −4, tandis que f(0,1) ≈ −1,88 est INFÉRIEUR à 2 × 0,1 − 2 = −1,8 — la courbe passe donc des deux côtés de cette droite.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie A (fin). Toujours avec f définie sur ℝ par f(x) = (2x − 1)e^x − 1 : sa limite en −∞ vaut −1, elle décroît sur ]−∞ ; −1/2] puis croît sur [−1/2 ; +∞[ avec f(−1/2) ≈ −2,21, et sa limite en +∞ vaut +∞. Discuter le nombre de solutions de l'équation f(x) = 0, et localiser chaque solution à 10⁻¹ près.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deux solutions : une sur chaque branche de monotonie, l'une négative, l'autre dans ]0,7 ; 0,8["
+        },
+        {
+          "id": "b",
+          "text": "Une solution unique α, avec 0,5 < α < 0,6"
+        },
+        {
+          "id": "c",
+          "text": "Une solution unique α, avec 0,7 < α < 0,8"
+        },
+        {
+          "id": "d",
+          "text": "Une solution unique α, avec 0,9 < α < 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On raisonne branche par branche, comme dans tout sujet d'examen. Sur ]−∞ ; −1/2], f est continue et strictement décroissante, donc ses valeurs décrivent [f(−1/2) ; lim_{−∞} f[ = [−2,21 ; −1[ : toutes sont strictement négatives, l'équation f(x) = 0 n'a AUCUNE solution sur cette branche — c'est la limite −1 qui le prouve, sans le moindre calcul supplémentaire. Sur [−1/2 ; +∞[, f est continue et strictement croissante de f(−1/2) ≈ −2,21 vers +∞ ; comme 0 appartient à ]−2,21 ; +∞[, le théorème des valeurs intermédiaires appliqué à une fonction strictement monotone donne une solution et une seule, notée α ✓. Reste à la localiser en évaluant f aux dixièmes : f(0,7) = 0,4 × e^(0,7) − 1 = 0,4 × 2,0138 − 1 ≈ −0,194 < 0 et f(0,8) = 0,6 × e^(0,8) − 1 = 0,6 × 2,2255 − 1 ≈ 0,335 > 0. Le changement de signe sur un intervalle où f croît donne 0,7 < α < 0,8 ✓. Contrôle par dichotomie : f(0,73) ≈ −0,045 et f(0,74) ≈ 0,006, donc α ≈ 0,739, bien situé dans ]0,7 ; 0,8[ ✓. Annoncer deux solutions revient à croire qu'une branche décroissante finit toujours par traverser l'axe des abscisses : ici elle reste coincée entre −2,21 et −1, plafond que la limite en −∞ interdit de dépasser. La localisation 0,5 < α < 0,6 est démentie par le calcul direct : f(0,5) = 0 × e^(0,5) − 1 = −1 et f(0,6) = 0,2 × 1,8221 − 1 ≈ −0,636 sont tous deux négatifs, donc la racine est plus à droite. La localisation 0,9 < α < 1 arrive trop tard : f(0,9) = 0,8 × 2,4596 − 1 ≈ 0,968 est déjà positif, donc l'axe a été franchi AVANT 0,9.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B. On garde f définie sur ℝ par f(x) = (2x − 1)e^x − 1, dont la courbe C_f admet pour asymptote en −∞ la droite D : y = −1 ; on remarque que pour tout réel x, f(x) − (−1) = (2x − 1)e^x. Calculer I = ∫₀¹ (2x − 1)e^x dx.",
+      "options": [
+        {
+          "id": "a",
+          "text": "I = e + 1 ≈ 3,718"
+        },
+        {
+          "id": "b",
+          "text": "I = 3 − e ≈ 0,282"
+        },
+        {
+          "id": "c",
+          "text": "I = 3e − 1 ≈ 7,155"
+        },
+        {
+          "id": "d",
+          "text": "I = 2 − e ≈ −0,718"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le facteur 2x − 1 placé devant l'exponentielle n'est pas la dérivée de l'exposant x : la reconnaissance u′e^u ne s'applique pas, il faut une intégration par parties. On pose u(x) = 2x − 1 (donc u′(x) = 2) et v′(x) = e^x (donc v(x) = e^x) : I = [(2x − 1)e^x]₀¹ − ∫₀¹ 2e^x dx = (1 × e − (−1) × 1) − 2[e^x]₀¹ = (e + 1) − 2(e − 1) = e + 1 − 2e + 2 = 3 − e ≈ 0,282 ✓. Seconde voie, indépendante : par linéarité, I = 2∫₀¹ x e^x dx − ∫₀¹ e^x dx ; le cours établit ∫₀¹ x e^x dx = 1 et ∫₀¹ e^x dx = e − 1, d'où I = 2 × 1 − (e − 1) = 3 − e ✓ — les deux chemins concordent. Troisième contrôle, numérique : la méthode de Simpson sur [0 ; 1] avec les points 0 ; 0,25 ; 0,5 ; 0,75 ; 1 donne (0,25/3)[−1 + 4 × (−0,642) + 0 + 4 × 1,0585 + 2,718] ≈ 0,282 ✓. Remarque de méthode, qui prépare la suite : I est une intégrale SIGNÉE et non une aire, car l'intégrande (2x − 1)e^x est négatif avant x = 1/2 et positif après. La valeur e + 1 s'arrête au crochet [(2x − 1)e^x]₀¹ et oublie de retrancher ∫₀¹ 2e^x dx : c'est l'intégration par parties abandonnée à mi-chemin. La valeur 3e − 1 additionne les deux morceaux au lieu de les soustraire, (e + 1) + 2(e − 1) = 3e − 1 : le signe moins de la formule a été perdu, et le contrôle de Simpson, qui plafonne à 0,282, écarte immédiatement un nombre supérieur à 7. La valeur 2 − e vient de la seconde voie mal menée : elle prend ∫₀¹ e^x dx = e au lieu de e − 1, en oubliant la borne inférieure e^0 = 1 ; elle rendrait I négatif, alors que sur [0,5 ; 1] la partie positive de l'intégrande l'emporte largement sur la partie négative de [0 ; 0,5].",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B (fin). Toujours avec f(x) = (2x − 1)e^x − 1 et D : y = −1. Sur ]−∞ ; 0], on a f(x) ≤ −1, donc pour tout réel λ < 0 l'aire, en u.a, du domaine limité par C_f, la droite D et les droites d'équations x = λ et x = 0 vaut A(λ) = ∫_λ^0 (1 − 2x)e^x dx. Déterminer la limite de A(λ) quand λ tend vers −∞.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A(λ) tend vers +∞ : un domaine non borné ne peut pas avoir une aire finie"
+        },
+        {
+          "id": "b",
+          "text": "A(λ) tend vers 1 u.a"
+        },
+        {
+          "id": "c",
+          "text": "A(λ) n'a pas de limite : (3 − 2λ)e^λ est une forme indéterminée « +∞ × 0 » qu'on ne peut pas lever"
+        },
+        {
+          "id": "d",
+          "text": "A(λ) tend vers 3 u.a : le domaine, pourtant non borné, a une aire finie"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Il faut d'abord une primitive de x ↦ (1 − 2x)e^x. Une intégration par parties — ou l'essai naturel G(x) = (3 − 2x)e^x — la fournit, et seule la dérivation la valide : G′(x) = −2e^x + (3 − 2x)e^x = (−2 + 3 − 2x)e^x = (1 − 2x)e^x ✓. Donc A(λ) = G(0) − G(λ) = 3e^0 − (3 − 2λ)e^λ = 3 − (3 − 2λ)e^λ. Reste la limite du terme soustrait : (3 − 2λ)e^λ = 3e^λ − 2λe^λ, où e^λ → 0 et λe^λ → 0 par croissances comparées (lim_{x→−∞} x e^x = 0). Ce terme tend donc vers 0, et A(λ) tend vers 3 u.a ✓ : le domaine s'étend indéfiniment vers la gauche, mais son aire reste finie, parce que la courbe rejoint son asymptote de façon exponentielle. Contrôles numériques : A(−5) = 3 − 13e^(−5) ≈ 3 − 0,0876 = 2,912, valeur que redonne une intégration numérique de ∫_(−5)^0 (1 − 2x)e^x dx ≈ 2,9124 ✓ ; puis A(−20) = 3 − 43e^(−20) ≈ 2,9999999, de plus en plus proche de 3 ✓. Conclure à +∞ parce que le domaine est non borné confond longueur et aire : la hauteur du domaine, égale à (1 − 2x)e^x, décroît si vite vers 0 que l'aire cesse pratiquement de s'accumuler — et c'est précisément ce que mesure la limite 3. La valeur 1 u.a vient d'avoir pris (1 − 2x)e^x pour sa propre primitive, comme si le facteur polynomial traversait l'intégration inchangé : on obtiendrait G(0) = 1 ; mais la dérivée de (1 − 2x)e^x vaut (−1 − 2x)e^x, qui n'est pas l'intégrande, donc ce n'est pas une primitive. Enfin déclarer la forme « +∞ × 0 » non levable, c'est renoncer devant l'indétermination alors que le théorème des croissances comparées la tranche : l'exponentielle e^λ écrase le facteur affine 3 − 2λ, et le produit tend vers 0.",
+      "difficulty": 3
+    }
+  ]
+}

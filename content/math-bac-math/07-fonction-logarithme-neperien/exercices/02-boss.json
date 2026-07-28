@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien de l'aire sous l'hyperbole",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur ]2, +∞[ par f(x) = (2x − 3)/(x² − 3x + 2). Déterminer la primitive F de f sur ]2, +∞[ qui s'annule en 3.",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = ln(x² − 3x + 2) − ln 2"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = ln(x² − 3x + 2)"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = (1/2)ln(x² − 3x + 2) − (1/2)ln 2"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = ln(2x − 3) − ln 3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le réflexe : reconnaître la forme u′/u. On pose u(x) = x² − 3x + 2 = (x − 1)(x − 2) ; sur ]2, +∞[ les deux facteurs sont strictement positifs, donc u > 0 et u ne s'annule pas — la condition du corollaire est remplie. Or u′(x) = 2x − 3, qui est exactement le numérateur : f = u′/u. Les primitives sont donc F(x) = ln|u(x)| + k = ln(x² − 3x + 2) + k, la valeur absolue tombant puisque u > 0 sur l'intervalle. Reste la condition F(3) = 0 : u(3) = 9 − 9 + 2 = 2, donc ln 2 + k = 0 et k = −ln 2. D'où F(x) = ln(x² − 3x + 2) − ln 2, qu'on peut aussi écrire ln((x² − 3x + 2)/2) ✓. Vérification par la voie inverse (dérivation) : F′(x) = (2x − 3)/(x² − 3x + 2) = f(x) ✓, et contrôle numérique du raccord en 3 : F(3) = ln 2 − ln 2 = 0 ✓ ; F(4) = ln 6 − ln 2 = ln 3 ≈ 1,099, à comparer à l'aire ∫₃⁴ f, estimée par le rectangle médian f(3,5) × 1 = 4/3,75 ≈ 1,07 — même ordre de grandeur ✓. Le piège courant : livrer une primitive quelconque sans utiliser la condition « s'annule en 3 » et répondre ln(x² − 3x + 2), qui vaut ln 2 en 3 et non 0 ; croire qu'il faut un facteur 1/2 parce que la dérivée de x² est 2x conduit à (1/2)ln(x² − 3x + 2) − (1/2)ln 2, dont la dérivée ne vaut que la moitié de f ; et primitiver « le numérateur » en écrivant ln(2x − 3) − ln 3 donne bien 0 en 3, mais sa dérivée est 2/(2x − 3), qui n'a rien à voir avec f.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Calculer I = ∫₁^e x² ln x dx.",
+      "options": [
+        {
+          "id": "a",
+          "text": "I = (2e³ + 1)/9"
+        },
+        {
+          "id": "b",
+          "text": "I = (4e³ − 1)/9"
+        },
+        {
+          "id": "c",
+          "text": "I = (2e³ + 1)/3"
+        },
+        {
+          "id": "d",
+          "text": "I = 1/3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Intégration par parties, avec le réflexe du chapitre : c'est ln qui se simplifie en dérivant, donc on pose f(t) = ln t (f′(t) = 1/t) et g′(t) = t², d'où g(t) = t³/3 — le 1/3 est décisif. La formule ∫ₐᵇ fg′ = [fg]ₐᵇ − ∫ₐᵇ f′g donne I = [(t³/3)ln t]₁^e − ∫₁^e (1/t)(t³/3)dt = e³/3 − (1/3)∫₁^e t² dt, le crochet en 1 étant nul car ln 1 = 0. Puis (1/3)[t³/3]₁^e = (e³ − 1)/9. D'où I = e³/3 − (e³ − 1)/9 = (3e³ − e³ + 1)/9 = (2e³ + 1)/9 ≈ (40,17 + 1)/9 ≈ 4,575 ✓. Contrôle numérique indépendant (Simpson, 4 intervalles de pas (e − 1)/4 ≈ 0,4296, valeurs 0 ; 0,730 ; 2,144 ; 4,337 ; 7,389) : I ≈ 4,574 ✓ — et l'ordre de grandeur se lit aussi sur la courbe, l'intégrande passant de 0 à e² ≈ 7,39 sur une largeur 1,72. L'erreur classique : inverser le signe de l'IPP et écrire e³/3 + (e³ − 1)/9 = (4e³ − 1)/9 ≈ 8,81, une valeur supérieure au rectangle circonscrit e² × 1,72 ≈ 12,7 mais incompatible avec la forme bombée de la courbe ; oublier le 1/3 en primitivant t² (prendre g(t) = t³) donne e³ − (e³ − 1)/3 = (2e³ + 1)/3 ≈ 13,7 ; et oublier le facteur 1/3 devant l'intégrale restante fournit e³/3 − (e³ − 1)/3 = 1/3, absurdement petit.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0, +∞[ par f(x) = (x² + 2 ln x)/x, de courbe C_f dans un repère orthonormé. Préciser la branche infinie de C_f en +∞ et la position de C_f par rapport à son asymptote.",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = x est asymptote en +∞ ; C_f est au-dessus de cette droite pour x > 1 et au-dessous pour 0 < x < 1"
+        },
+        {
+          "id": "b",
+          "text": "y = x est asymptote en +∞ ; C_f est au-dessus de cette droite sur tout ]0, +∞["
+        },
+        {
+          "id": "c",
+          "text": "y = x + 2 est asymptote en +∞ ; C_f est au-dessous de cette droite pour x > 1"
+        },
+        {
+          "id": "d",
+          "text": "C_f admet en +∞ une branche parabolique de direction l'axe des ordonnées"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On sépare d'abord les deux morceaux : f(x) = x²/x + 2(ln x)/x = x + 2(ln x)/x. La question de l'asymptote oblique se ramène alors à la limite de f(x) − x, c'est-à-dire à une croissance comparée : lim_{x→+∞} (ln x)/x = 0, donc lim_{x→+∞} [f(x) − x] = 0, et la droite D : y = x est asymptote oblique à C_f en +∞ ✓. La position relative est le signe de f(x) − x = 2(ln x)/x. Sur ]0, +∞[ le dénominateur x est positif : le signe est celui de ln x, positif pour x > 1, nul en 1, négatif pour 0 < x < 1. Donc C_f est au-dessus de D pour x > 1, la coupe en (1, 1) et passe au-dessous pour 0 < x < 1 ✓. Contrôle numérique indépendant : f(100) = 100 + 2(4,605)/100 = 100,092 (juste au-dessus de 100, l'écart s'écrase bien) et f(0,5) = 0,5 + 2(−0,693)/0,5 = 0,5 − 2,77 = −2,27, franchement au-dessous de 0,5 ✓. Le piège courant : conclure sur la position à partir du seul comportement en +∞ et déclarer C_f toujours au-dessus, en oubliant que ln change de signe en 1 ; lire lim (ln x)/x = 1 au lieu de 0 fabrique l'asymptote y = x + 2 ; et croire que ln l'emporte sur x — donc que f(x)/x tend vers l'infini — conduit à annoncer une branche parabolique, alors que f(x)/x = 1 + 2(ln x)/x² tend vers 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout entier n ≥ 1, on pose Sₙ = 1 + 1/2 + 1/3 + … + 1/n. On rappelle que pour tout réel x > 0, 1/(x + 1) ≤ ln(x + 1) − ln x ≤ 1/x. Déterminer lim_{n→+∞} Sₙ/ln n.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La limite vaut 1"
+        },
+        {
+          "id": "b",
+          "text": "La limite vaut 0"
+        },
+        {
+          "id": "c",
+          "text": "La limite vaut +∞"
+        },
+        {
+          "id": "d",
+          "text": "La limite vaut γ ≈ 0,577 (constante d'Euler)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le geste-clé : encadrer Sₙ par deux logarithmes, puis appliquer le théorème des gendarmes au quotient. Minoration : l'inégalité de droite avec x = k donne 1/k ≥ ln(k + 1) − ln k ; en sommant de k = 1 à n, la somme télescope et Sₙ ≥ ln(n + 1) ≥ ln n. Majoration : l'inégalité de gauche avec x = k − 1 donne 1/k ≤ ln k − ln(k − 1) pour k ≥ 2 ; en sommant de k = 2 à n, Sₙ − 1 ≤ ln n, soit Sₙ ≤ 1 + ln n. On divise l'encadrement ln(n + 1) ≤ Sₙ ≤ 1 + ln n par ln n > 0 (donc pour n ≥ 2) : ln(n + 1)/ln n ≤ Sₙ/ln n ≤ 1 + 1/ln n. Les deux bornes tendent vers 1 (à gauche, ln(n + 1)/ln n = 1 + ln(1 + 1/n)/ln n → 1), donc la limite cherchée est 1 ✓. Contrôle numérique indépendant : pour n = 10, S₁₀ ≈ 2,929 et ln 10 ≈ 2,303, quotient ≈ 1,27 ; pour n = 1000, S₁₀₀₀ ≈ 7,485 et ln 1000 ≈ 6,908, quotient ≈ 1,08 — la descente vers 1 est lente mais nette, et l'encadrement est bien respecté (ln 1001 ≈ 6,909 ≤ 7,485 ≤ 7,908) ✓. Le piège courant : croire que Sₙ converge parce que son terme général 1/n tend vers 0, ce qui donnerait un quotient de limite 0 ; croire au contraire que Sₙ, somme de n termes, explose bien plus vite que ln n et annoncer +∞ ; et confondre le quotient avec la DIFFÉRENCE Sₙ − ln n, qui, elle, converge vers la constante d'Euler γ ≈ 0,577 — deux résultats voisins d'énoncé, mais un seul répond à la question posée.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit m un réel. Déterminer l'ensemble des valeurs de m pour lesquelles l'équation (ln x)² − 2 ln x + m = 0 admet exactement deux solutions distinctes dans ]0, +∞[.",
+      "options": [
+        {
+          "id": "a",
+          "text": "m < 1"
+        },
+        {
+          "id": "b",
+          "text": "m ≤ 1"
+        },
+        {
+          "id": "c",
+          "text": "m > 1"
+        },
+        {
+          "id": "d",
+          "text": "0 < m < 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux étapes dépendantes : d'abord le trinôme, ensuite la remontée par la bijection. Pour x > 0 on pose X = ln x ; l'équation devient X² − 2X + m = 0, de discriminant Δ = 4 − 4m = 4(1 − m). Comme ln réalise une BIJECTION de ]0, +∞[ sur ℝ, chaque racine réelle X correspond à une solution x et une seule (aucune racine n'est à écarter : X parcourt ℝ tout entier). Le nombre de solutions en x est donc exactement le nombre de racines réelles distinctes du trinôme : deux solutions distinctes ⟺ Δ > 0 ⟺ 1 − m > 0 ⟺ m < 1 ✓. Vérification par une seconde voie, avec une valeur test : pour m = −3, X² − 2X − 3 = 0 donne X = 3 et X = −1, donc x = e³ ≈ 20,09 et x = 1/e ≈ 0,368 — deux solutions strictement positives et distinctes ✓ ; on contrôle sur la première : (ln e³)² − 2 ln e³ − 3 = 9 − 6 − 3 = 0 ✓. Le piège courant : accepter Δ = 0 et répondre m ≤ 1, alors qu'en m = 1 le trinôme a la racine double X = 1, d'où l'UNIQUE solution x = e ; lire le discriminant à l'envers et exiger m > 1 donne Δ < 0, donc aucune solution ; et ajouter une fausse condition de positivité (croire que X = ln x doit être positif, donc que le trinôme doit avoir ses racines positives) restreint sans raison à 0 < m < 1 et fait perdre toutes les valeurs négatives de m, qui conviennent pourtant.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule des affirmations suivantes est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour tout réel x non nul, ln(x²) = 2 ln x"
+        },
+        {
+          "id": "b",
+          "text": "lim_{x→0⁺} x(ln x)² = +∞"
+        },
+        {
+          "id": "c",
+          "text": "Pour tout réel x > 0, ln x ≥ 1 − 1/x"
+        },
+        {
+          "id": "d",
+          "text": "La fonction x ↦ ln|x − 3| est dérivable sur ℝ, de dérivée x ↦ 1/(x − 3)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Seule l'affirmation c est vraie ✓, et elle se démontre en retournant l'inégalité de la tangente du cours. On sait que ln t ≤ t − 1 pour tout t > 0 ; on l'applique à t = 1/x (qui est bien strictement positif) : ln(1/x) ≤ 1/x − 1, c'est-à-dire −ln x ≤ 1/x − 1, soit, en multipliant par −1 et en renversant, ln x ≥ 1 − 1/x ✓. Vérification par une seconde voie, indépendante : la fonction h(x) = ln x − 1 + 1/x a pour dérivée h′(x) = 1/x − 1/x² = (x − 1)/x², négative sur ]0, 1[ et positive sur ]1, +∞[ ; h atteint donc son minimum en 1, où h(1) = 0 − 1 + 1 = 0, donc h ≥ 0 ✓. Contrôles numériques : en x = 1/2, ln 0,5 ≈ −0,693 ≥ 1 − 2 = −1 ✓ ; en x = 4, ln 4 ≈ 1,386 ≥ 1 − 0,25 = 0,75 ✓. a est fausse : pour x < 0, ln x n'existe même pas ; la formule correcte est ln(x²) = 2 ln|x|. b est fausse : c'est exactement la croissance comparée lim_{x→0⁺} xᵐ(ln x)ⁿ = 0 avec m = 1 et n = 2, la puissance de x écrasant le logarithme — pour x = 10⁻⁶, x(ln x)² ≈ 1,9 × 10⁻⁴, qui tend bien vers 0. d est fausse sur l'ensemble de définition : ln|x − 3| n'existe pas en x = 3, donc la fonction n'est pas dérivable sur ℝ ; la formule u′/u = 1/(x − 3) n'est valable que sur ]−∞, 3[ et sur ]3, +∞[ séparément. Le piège courant est là : appliquer une formule de dérivation avant d'avoir résolu la condition d'existence, faute la plus coûteuse du chapitre.",
+      "difficulty": 3
+    }
+  ]
+}

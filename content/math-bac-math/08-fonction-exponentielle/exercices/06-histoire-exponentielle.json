@@ -1,0 +1,91 @@
+{
+  "title": "🗿 Histoire ⭐⭐⭐ : La Tour d'Ambre",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 6,
+  "questions": [
+    {
+      "prompt": "Épisode 1 — La Tour d'Ambre n'a ni escalier ni fenêtre : on y monte en résolvant. Au premier palier, une nuée de lucioles éclaire un long couloir, et l'Alchimiste des Croissances lève la main : « L'éclat de ma nuée vaut E(x) = e^(−x² + 4x) à x pas de l'entrée, pour 0 ≤ x ≤ 6. La trappe ne s'ouvre qu'au point le plus lumineux du couloir. Dis-moi où il se trouve, et combien vaut l'éclat là-bas. »",
+      "options": [
+        { "id": "a", "text": "À 2 pas, où l'éclat vaut e⁴ ≈ 54,6" },
+        { "id": "b", "text": "À 4 pas, où l'éclat vaut 1" },
+        {
+          "id": "c",
+          "text": "Nulle part : E′(x) = e^(−x² + 4x) ne s'annule jamais, l'éclat ne cesse de croître"
+        },
+        {
+          "id": "d",
+          "text": "À 6 pas, tout au bout : l'exponentielle est strictement croissante, donc l'éclat est maximal au bord"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On cherche un extremum, donc on dérive. E est de la forme e^u avec u(x) = −x² + 4x, et la règle du chapitre est (e^u)′ = u′e^u — le facteur u′ ne disparaît jamais. Ici u′(x) = −2x + 4, donc E′(x) = (−2x + 4)e^(−x² + 4x). Or e^(−x² + 4x) > 0 pour tout x, puisque l'exponentielle est strictement positive : E′ est du SIGNE de −2x + 4, positif pour x < 2 et négatif pour x > 2. L'éclat croît donc jusqu'à 2 pas puis décroît : il y admet un maximum, égal à E(2) = e^(−4 + 8) = e⁴ ≈ 54,6 ✓. Contrôle numérique de part et d'autre : E(1) = e^(−1 + 4) = e³ ≈ 20,1 et E(3) = e^(−9 + 12) = e³ ≈ 20,1, tous deux nettement en dessous de e⁴ ≈ 54,6 ✓ — la nuée est bien symétrique autour du deuxième pas, comme l'est le trinôme. La réponse « à 4 pas » annule l'EXPOSANT au lieu de sa dérivée : −x² + 4x = 0 donne x = 0 ou x = 4, mais ces abscisses sont celles où l'éclat vaut e⁰ = 1, c'est-à-dire les points les plus SOMBRES du couloir, pas le plus lumineux. La réponse « nulle part » oublie le facteur u′ et dérive e^u en e^u : cette expression ne s'annule effectivement jamais, mais elle n'est pas la dérivée de E — exécutée jusqu'au bout, elle conclurait que l'éclat croît sans cesse, ce que dément le calcul direct, puisque E(6) = e^(−36 + 24) = e^(−12) ≈ 0,000006, une obscurité quasi totale. La réponse « à 6 pas » applique la croissance de exp à la COMPOSÉE : exp est bien strictement croissante, mais e^u suit les variations de u, et le trinôme u, lui, redescend après son sommet — c'est u qui commande.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Épisode 2 — Deuxième palier : la Salle du Brasier. La chaleur y est soutenable tant que l'intensité du foyer dépasse 30 unités, au-delà de quoi le passage se referme. « Mon brasier a pour intensité I(t) = 90 e^(−0,12t) à la minute t, gronde l'Alchimiste. Traverse pendant que je décline. Sur quel intervalle de temps l'intensité reste-t-elle strictement supérieure à 30 ? »",
+      "options": [
+        { "id": "a", "text": "Pour t < (ln 3)/0,12 ≈ 9,2 minutes" },
+        { "id": "b", "text": "Pour t > (ln 3)/0,12 ≈ 9,2 minutes" },
+        { "id": "c", "text": "Pour t < ln 3 ≈ 1,1 minute" },
+        { "id": "d", "text": "Pour t < 25 minutes" }
+      ],
+      "correctOption": "a",
+      "explanation": "On résout l'inéquation 90 e^(−0,12t) > 30. On isole d'abord l'exponentielle en divisant par 90, qui est positif — le sens est conservé : e^(−0,12t) > 1/3. La fonction exp étant STRICTEMENT CROISSANTE, l'inéquation e^A > e^B équivaut à A > B ; ici, en écrivant 1/3 = e^(ln(1/3)) = e^(−ln 3), on obtient −0,12t > −ln 3. Reste à diviser par −0,12 : ce nombre est NÉGATIF, donc le sens de l'inégalité S'INVERSE, et t < (ln 3)/0,12 = 1,0986/0,12 ≈ 9,15 minutes ✓. Contrôle aux bornes : I(9,15) = 90 e^(−1,0986) = 90 × (1/3) = 30 exactement, l'égalité est bien à la borne ✓ ; en t = 5, I = 90 e^(−0,6) ≈ 49,4 > 30 ✓ ; en t = 12, I = 90 e^(−1,44) ≈ 21,3 < 30 ✓. La réponse t > 9,2 min est l'erreur reine de ce calcul : elle conserve le sens de l'inégalité en divisant par un nombre négatif. Elle est démentie par le simple bon sens physique — un brasier qui décroît est intense au DÉBUT, pas à la fin. La réponse t < ln 3 ≈ 1,1 min oublie de diviser par 0,12 et confond l'exposant avec le temps. La réponse t < 25 min vient d'un calcul purement proportionnel : 90/30 = 3, puis 3/0,12 = 25 — mais l'intensité ne décroît pas linéairement, elle est multipliée par un facteur constant sur des durées égales, et le rapport 3 doit passer par le logarithme avant de devenir un temps.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 3 — Troisième palier : la Salle des Deux Herses. Deux mécanismes tournent en sens contraires. « L'écart algébrique entre eux vaut 2e^t + 3e^(−t), et les herses s'alignent exactement quand cet écart vaut 7, murmure l'Alchimiste. Le temps t se compte en heures, positivement APRÈS minuit et négativement avant. Donne-moi tous les instants d'alignement. »",
+      "options": [
+        { "id": "a", "text": "t = ln 3 ≈ 1,10 h et t = −ln 2 ≈ −0,69 h" },
+        { "id": "b", "text": "t = 3 h et t = 0,5 h" },
+        { "id": "c", "text": "t = ln 3 ≈ 1,10 h uniquement" },
+        { "id": "d", "text": "t = ln 3 ≈ 1,10 h et t = ln 2 ≈ 0,69 h" }
+      ],
+      "correctOption": "a",
+      "explanation": "On résout 2e^t + 3e^(−t) = 7. On multiplie les deux membres par e^t, qui est STRICTEMENT POSITIF donc jamais nul — l'opération est licite et ne crée aucune solution parasite : 2e^(2t) + 3 = 7e^t, soit 2e^(2t) − 7e^t + 3 = 0. On pose alors X = e^t, avec l'unique contrainte X > 0, et comme e^(2t) = (e^t)² = X², l'équation devient 2X² − 7X + 3 = 0. Le discriminant vaut 49 − 24 = 25, donc X = (7 + 5)/4 = 3 ou X = (7 − 5)/4 = 1/2. Les DEUX racines sont strictement positives : on les garde toutes les deux. On revient à t : e^t = 3 donne t = ln 3 ≈ 1,10 h, et e^t = 1/2 donne t = ln(1/2) = −ln 2 ≈ −0,69 h ✓. Contrôle du second, le moins intuitif : en t = −ln 2, e^t = 1/2 et e^(−t) = 2, donc 2 × 0,5 + 3 × 2 = 1 + 6 = 7 ✓. Contrôle du premier : 2 × 3 + 3 × (1/3) = 6 + 1 = 7 ✓. La réponse t = 3 et t = 0,5 confond X avec t : les valeurs 3 et 1/2 sont celles de e^t, pas de t, et il reste à appliquer le logarithme. La réponse « ln 3 uniquement » rejette abusivement la racine X = 1/2 : la contrainte du changement de variable est X > 0, pas X > 1 — seule une racine NÉGATIVE ou nulle serait à écarter, et 1/2 est parfaitement admissible. Elle conduit à manquer l'instant d'avant minuit, que l'énoncé autorise explicitement. La réponse t = ln 3 et t = ln 2 perd le signe : ln(1/2) = −ln 2 et non +ln 2 ; en t = +ln 2, on aurait e^t = 2 et 2 × 2 + 3 × 0,5 = 5,5 ≠ 7.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 4 — Quatrième palier : la Chambre du Condensateur. Une plaque de cuivre se charge lentement et la porte cède au premier instant où la charge atteint 90 % de sa valeur limite. « Ma charge vaut q(t) = 5(1 − e^(−0,5t)) millicoulombs à la seconde t, et elle plafonne — sans jamais y toucher — à 5 mC, dit l'Alchimiste. À quel instant atteint-elle 90 % de ce plafond ? »",
+      "options": [
+        { "id": "a", "text": "t = 2 ln 10 ≈ 4,61 secondes" },
+        { "id": "b", "text": "t = ln 10 ≈ 2,30 secondes" },
+        { "id": "c", "text": "t = 4,5 secondes" },
+        { "id": "d", "text": "t = 2 ln 0,9 ≈ −0,21 seconde" }
+      ],
+      "correctOption": "a",
+      "explanation": "Les 90 % du plafond valent 0,9 × 5 = 4,5 mC. On résout donc 5(1 − e^(−0,5t)) = 4,5, soit 1 − e^(−0,5t) = 0,9, c'est-à-dire e^(−0,5t) = 0,1 = 1/10. Le second membre est strictement positif, donc −0,5t = ln(1/10) = −ln 10, d'où t = (ln 10)/0,5 = 2 ln 10 ≈ 2 × 2,3026 = 4,61 secondes ✓. Contrôle numérique : q(4,61) = 5(1 − e^(−2,303)) = 5(1 − 0,1000) = 5 × 0,9 = 4,5 mC ✓. Contrôle de cohérence : q(2) = 5(1 − e^(−1)) = 5 × 0,632 = 3,16 mC, encore loin de 4,5, tandis que q(6) = 5(1 − e^(−3)) = 5 × 0,950 = 4,75 mC, déjà au-delà — l'instant cherché est bien coincé entre 2 et 6 secondes ✓. La réponse ln 10 ≈ 2,30 s oublie de diviser par 0,5 : elle confond l'exposant −0,5t avec le temps lui-même. En t = 2,30 s, la charge n'atteint que 5(1 − e^(−1,15)) ≈ 3,42 mC, soit 68 % du plafond. La réponse 4,5 s recopie la CHARGE cherchée à la place du TEMPS : les unités trahissent la confusion, 4,5 est en millicoulombs, la question demande des secondes — et la coïncidence numérique avec 4,61 la rend d'autant plus perfide. La réponse 2 ln 0,9 est négative : elle vient d'avoir écrit e^(−0,5t) = 0,9 en oubliant le « 1 − », c'est-à-dire d'avoir confondu la charge accumulée avec ce qui MANQUE encore pour atteindre le plafond. Un temps négatif signale toujours qu'un complément à 1 a été sauté.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 5 — Cinquième palier : la Salle des Deux Clans. Sur le mur, deux courbes gravées. « Le clan A compte A(t) = 300 e^(0,1t) guerriers au bout de t jours, le clan B en compte B(t) = 60 e^(0,3t), dit l'Alchimiste en désignant la fresque. B part loin derrière, et pourtant il rattrapera. Donne-moi l'instant exact où les deux effectifs sont égaux. » <svg viewBox=\"0 0 250 195\"><path d=\"M20 165 H240\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M240 165 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M30 182 V14\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M30 14 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><polyline points=\"30,117 64,106.4 98,93.4 132,77.5 166,58.2 200,34.5 208.5,28\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"30,155.4 64,147.5 98,133.1 132,106.9 149,86.6 166,59.2 183,22.1\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"26\" y=\"121\" text-anchor=\"end\" fill=\"#0f172a\">300</text><text x=\"26\" y=\"159\" text-anchor=\"end\" fill=\"#0f172a\">60</text><text x=\"98\" y=\"179\" text-anchor=\"middle\" fill=\"#0f172a\">4</text><text x=\"166\" y=\"179\" text-anchor=\"middle\" fill=\"#0f172a\">8</text><text x=\"228\" y=\"179\" text-anchor=\"middle\" fill=\"#0f172a\">t</text><text x=\"212\" y=\"32\" fill=\"#0f6e56\">A</text><text x=\"188\" y=\"20\" fill=\"#b45309\">B</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "t = 5 ln 5 ≈ 8,05 jours" },
+        { "id": "b", "text": "t = ln 5 ≈ 1,61 jour" },
+        { "id": "c", "text": "t = 2,5 ln 5 ≈ 4,02 jours" },
+        {
+          "id": "d",
+          "text": "Jamais : B part de 60 et reste toujours en dessous de A"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On résout 300 e^(0,1t) = 60 e^(0,3t). On regroupe les exponentielles d'un même côté en divisant par e^(0,1t), qui est strictement positif : 300 = 60 e^(0,3t)/e^(0,1t) = 60 e^(0,3t − 0,1t) = 60 e^(0,2t). Le quotient de deux exponentielles SOUSTRAIT les exposants — c'est la propriété e^(a−b) = e^a/e^b lue à l'envers. On obtient e^(0,2t) = 300/60 = 5, donc 0,2t = ln 5 et t = (ln 5)/0,2 = 5 ln 5 ≈ 5 × 1,6094 = 8,05 jours ✓. Contrôle numérique : A(8,05) = 300 e^(0,805) = 300 × 2,2367 ≈ 671 et B(8,05) = 60 e^(2,415) = 60 × 11,19 ≈ 671 ✓ — les deux courbes se croisent bien juste après la graduation 8, ce que confirme la fresque. La réponse ln 5 ≈ 1,61 jour s'arrête à l'exposant 0,2t = ln 5 sans isoler t ; à cette date A vaut 352 guerriers contre 97 pour B, l'écart est encore béant. La réponse 2,5 ln 5 ≈ 4,02 jours provient d'une addition des exposants au lieu d'une soustraction : elle résout e^(0,4t) = 5 au lieu de e^(0,2t) = 5. C'est l'erreur la plus fréquente dès qu'on divise deux exponentielles, et elle donne systématiquement un temps deux fois trop court ici. Nier la rencontre, enfin, c'est raisonner sur la seule valeur initiale : B démarre cinq fois plus bas, mais son taux 0,3 est TRIPLE de celui de A, et une exponentielle de taux plus grand finit toujours par dépasser une exponentielle de taux plus petit, quel que soit le handicap de départ — le quotient B(t)/A(t) = 0,2 e^(0,2t) tend vers +∞.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 6 — Sommet de la Tour. Une flamme d'ambre vacille au centre de la coupole, d'intensité F(t) = 50 e^(−0,3t) (t en heures). L'Alchimiste te barre la sortie une dernière fois : « La porte n'obéit qu'aux mesures exactes. L'énergie que ma flamme libère durant ses dix premières heures est l'intégrale ∫₀¹⁰ 50 e^(−0,3t) dt. Donne-la-moi. »",
+      "options": [
+        { "id": "a", "text": "(500/3)(1 − e^(−3)) ≈ 158,4" },
+        { "id": "b", "text": "50(1 − e^(−3)) ≈ 47,5" },
+        { "id": "c", "text": "(500/3)(e^(−3) − 1) ≈ −158,4" },
+        { "id": "d", "text": "15(1 − e^(−3)) ≈ 14,3" }
+      ],
+      "correctOption": "a",
+      "explanation": "Tout repose sur la primitive de e^(u) : les primitives de u′e^u sont e^u + k, il faut donc faire apparaître u′ = −0,3 devant l'exponentielle. Avec u(t) = −0,3t, on écrit e^(−0,3t) = (1/(−0,3)) × (−0,3)e^(−0,3t), donc une primitive de e^(−0,3t) est −(1/0,3)e^(−0,3t) = −(10/3)e^(−0,3t). D'où ∫₀¹⁰ 50 e^(−0,3t) dt = 50 × [−(10/3)e^(−0,3t)]₀¹⁰ = (500/3)(1 − e^(−3)) ≈ 166,67 × 0,9502 ≈ 158,4 ✓ (vérification par dérivation : (−(10/3)e^(−0,3t))′ = −(10/3)(−0,3)e^(−0,3t) = e^(−0,3t) ✓). Contrôle numérique indépendant (Simpson, pas 2,5, valeurs 50 ; 23,62 ; 11,16 ; 5,27 ; 2,49) : ≈ 158,6, en accord avec 158,4 ✓. Contrôle grossier par encadrement : l'intégrande décroît de 50 à 50e^(−3) ≈ 2,49 sur une largeur 10, l'aire est donc comprise entre 24,9 et 500 — seule la valeur 158,4 y tient. La réponse 47,5 oublie purement le facteur 1/u′ : elle primitive e^(−0,3t) en e^(−0,3t), erreur qui reviendrait à dire que l'exposant se dérive tout seul. La réponse négative inverse les bornes du crochet, alors qu'une fonction strictement positive ne peut donner qu'une aire positive — le signe est ici un signal d'alarme immédiat. La réponse 14,3 MULTIPLIE par 0,3 au lieu de diviser : c'est l'erreur symétrique de la première, et l'ordre de grandeur la dénonce, une flamme d'intensité initiale 50 ne libérant pas moins que ce qu'elle vaut à sa dernière heure multipliée par dix.",
+      "difficulty": 3
+    }
+  ]
+}

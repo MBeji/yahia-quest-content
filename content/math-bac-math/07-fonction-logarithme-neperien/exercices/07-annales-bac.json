@@ -1,0 +1,154 @@
+{
+  "title": "🏛️ Annales Bac ⭐⭐⭐⭐ : Sujet type — Fonction auxiliaire et atelier de contrôle",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "Partie A. Soit h la fonction définie sur ]0 ; +∞[ par h(x) = x² + 2 − 2 ln x. Étudier les variations de h, puis en déduire le signe de h(x) sur ]0 ; +∞[.",
+      "options": [
+        {
+          "id": "a",
+          "text": "h admet un minimum égal à 3, atteint en x = 1 ; donc h(x) ≥ 3 > 0 pour tout x > 0"
+        },
+        {
+          "id": "b",
+          "text": "h admet un minimum nul, atteint en x = 1 ; donc h(x) ≥ 0, avec égalité seulement en x = 1"
+        },
+        {
+          "id": "c",
+          "text": "h admet un maximum égal à 3, atteint en x = 1 ; donc h(x) ≤ 3"
+        },
+        {
+          "id": "d",
+          "text": "h est strictement croissante sur ]0 ; +∞[ et change de signe une seule fois"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La fonction h est dérivable sur ]0 ; +∞[ comme somme d'un polynôme et de la fonction ln, et h′(x) = 2x − 2/x. On réduit au même dénominateur, ce qui est le geste qui donne le signe : h′(x) = (2x² − 2)/x = 2(x − 1)(x + 1)/x. Sur ]0 ; +∞[, les facteurs x et x + 1 sont strictement positifs, donc h′ est du signe de x − 1 : h′ < 0 sur ]0 ; 1[, h′ > 0 sur ]1 ; +∞[. La fonction h décroît donc jusqu'en 1 puis croît : elle admet en x = 1 un MINIMUM, égal à h(1) = 1 + 2 − 2 ln 1 = 3, puisque ln 1 = 0. Comme ce minimum vaut 3, on conclut h(x) ≥ 3 > 0 pour tout x > 0 ✓ — h ne s'annule jamais et reste strictement positive, ce qui servira à toute la Partie A. Contrôle numérique aux deux extrémités du raisonnement : h(0,5) = 0,25 + 2 − 2 ln 0,5 ≈ 2,25 + 1,386 = 3,636 > 3 ✓ et h(2) = 4 + 2 − 2 ln 2 ≈ 6 − 1,386 = 4,614 > 3 ✓, deux valeurs bien situées au-dessus du minimum. La proposition « minimum nul » est le réflexe automatique de l'élève pressé : il voit un minimum en x = 1 et suppose qu'il vaut 0 sans le calculer. Or ici h(1) = 3, et cette valeur change tout — la conclusion « h ≥ 0 avec égalité en 1 » serait un signe non strict, insuffisant pour affirmer plus loin qu'une dérivée ne s'annule jamais. La proposition « maximum » inverse le sens de h′ : une dérivée négative PUIS positive donne un creux, pas une bosse. La proposition « strictement croissante » ignore purement et simplement la partie ]0 ; 1[, où h′(x) < 0 ; et « changer de signe » est impossible pour une fonction dont le minimum vaut 3.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie A (suite). On considère maintenant la fonction f définie sur ]0 ; +∞[ par f(x) = x − 2 + (2 ln x)/x. On rappelle que h(x) = x² + 2 − 2 ln x est strictement positive sur ]0 ; +∞[. Calculer f′(x) et en déduire le sens de variation de f.",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = h(x)/x² = (x² + 2 − 2 ln x)/x², strictement positive : f est strictement croissante sur ]0 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = (x² − 2 + 2 ln x)/x² : f décroît sur ]0 ; 1[ puis croît sur ]1 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = 1 + 2/x², en dérivant seulement le numérateur du quotient : f est strictement croissante sur ]0 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = (2 − 2 ln x)/x² : f croît sur ]0 ; e[ puis décroît sur ]e ; +∞["
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On dérive terme à terme. La partie x − 2 donne 1. La partie (2 ln x)/x est un QUOTIENT, avec u(x) = 2 ln x et v(x) = x : sa dérivée vaut (u′v − uv′)/v² = ((2/x) × x − 2 ln x × 1)/x² = (2 − 2 ln x)/x². D'où f′(x) = 1 + (2 − 2 ln x)/x², et en réduisant au même dénominateur x² : f′(x) = (x² + 2 − 2 ln x)/x² = h(x)/x² ✓. C'est là que la question précédente paie : h(x) ≥ 3 > 0 et x² > 0, donc f′(x) > 0 sur tout ]0 ; +∞[, et f est strictement croissante sur cet intervalle ✓. Contrôle numérique de la dérivée, indispensable : f′(2) = h(2)/4 ≈ 4,614/4 ≈ 1,154 ; le taux d'accroissement entre 2 et 2,01 vaut (f(2,01) − f(2))/0,01, avec f(2) = 0 + 2 ln 2/2 ≈ 0,6931 et f(2,01) = 0,01 + 2 ln(2,01)/2,01 ≈ 0,01 + 0,6946 = 0,7046, soit ≈ 1,15 ✓ — la formule est bonne. La proposition (x² − 2 + 2 ln x)/x² inverse deux signes dans le numérateur ; le numérateur obtenu s'annule effectivement quelque part et fabrique un changement de variation qui n'existe pas. La proposition 1 + 2/x² dérive le quotient en ne dérivant que le numérateur et en gardant le dénominateur intact : c'est l'erreur classique du quotient, et elle passe inaperçue ici parce qu'elle donne malgré tout une dérivée positive — la CONCLUSION serait juste par accident, mais un correcteur note l'expression de f′, pas la chance. La proposition (2 − 2 ln x)/x² oublie le terme x − 2 de f, donc le 1 de sa dérivée ; elle fabrique un maximum en x = e qui n'existe pas, puisque f, elle, ne cesse de croître.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie A (fin). Toujours avec f(x) = x − 2 + (2 ln x)/x sur ]0 ; +∞[, dont on a établi qu'elle est strictement croissante. On donne ln 1,4 ≈ 0,336 et ln 1,5 ≈ 0,405. Montrer que l'équation f(x) = 0 admet une solution unique α sur ]0 ; +∞[ et donner un encadrement de α d'amplitude 0,1.",
+      "options": [
+        {
+          "id": "a",
+          "text": "α est unique et 1,4 < α < 1,5"
+        },
+        {
+          "id": "b",
+          "text": "α est unique et 1,5 < α < 1,6"
+        },
+        {
+          "id": "c",
+          "text": "α est unique et 1 < α < 1,1"
+        },
+        {
+          "id": "d",
+          "text": "L'équation admet deux solutions, une de part et d'autre de x = 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'unicité vient de la STRICTE MONOTONIE : f est continue sur ]0 ; +∞[ (somme et quotient de fonctions continues, le dénominateur ne s'annulant pas) et strictement croissante d'après la question précédente, donc elle prend chaque valeur au plus une fois. Il reste à prouver qu'elle prend la valeur 0, et à la localiser, en évaluant f à des abscisses bien choisies. f(1,4) = 1,4 − 2 + 2 × 0,336/1,4 ≈ −0,6 + 0,480 = −0,120 < 0. f(1,5) = 1,5 − 2 + 2 × 0,405/1,5 ≈ −0,5 + 0,540 = +0,040 > 0. La fonction est continue et change de signe entre 1,4 et 1,5 : par le théorème des valeurs intermédiaires, elle s'annule au moins une fois sur cet intervalle, et la stricte croissance rend cette solution unique sur TOUT ]0 ; +∞[. D'où 1,4 < α < 1,5 ✓, encadrement d'amplitude exactement 0,1 comme demandé. Contrôle supplémentaire, celui qui rassure en examen : f(1) = 1 − 2 + 2 ln 1/1 = −1 < 0 et f(2) = 0 + 2 ln 2/2 ≈ 0,693 > 0, donc α est bien coincé entre 1 et 2, et l'encadrement fin y est inclus ✓. L'encadrement 1,5 < α < 1,6 est démenti par le signe de f(1,5), qui est déjà POSITIF : une fonction strictement croissante ayant dépassé zéro en 1,5 ne peut plus s'annuler après. L'encadrement 1 < α < 1,1 se heurte au même contrôle en sens inverse : f(1,1) = −0,9 + 2 × 0,0953/1,1 ≈ −0,727 est encore franchement négatif, on est loin du compte. Enfin l'idée de deux solutions symétriques autour de x = 1 confond f avec la fonction auxiliaire h de la première question : c'est h qui admet un extremum en 1, pas f, dont la dérivée ne s'annule jamais — une fonction strictement croissante ne peut pas s'annuler deux fois.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B. Un atelier de la médina fabrique des lanternes en série. Après n réglages successifs de la machine, le taux de pièces défectueuses est r(n) = 12 × 0,85ⁿ, exprimé en pourcentage. Le cahier des charges exige un taux strictement inférieur à 1 %. On donne ln 12 ≈ 2,485 et ln 0,85 ≈ −0,163. Déterminer le plus petit nombre de réglages nécessaire.",
+      "options": [
+        {
+          "id": "a",
+          "text": "16 réglages"
+        },
+        {
+          "id": "b",
+          "text": "15 réglages"
+        },
+        {
+          "id": "c",
+          "text": "44 réglages"
+        },
+        {
+          "id": "d",
+          "text": "Aucun : 12 × 0,85ⁿ reste strictement positif, il ne peut donc pas descendre sous 1 %"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On traduit l'exigence : 12 × 0,85ⁿ < 1, soit 0,85ⁿ < 1/12. Les deux membres sont strictement positifs, on applique donc ln, strictement croissante, ce qui conserve le sens : n ln 0,85 < ln(1/12) = −ln 12. On divise ensuite par ln 0,85, qui est NÉGATIF (≈ −0,163, car 0,85 < 1), et cette division RENVERSE l'inégalité : n > (−2,485)/(−0,163) = 2,485/0,163 ≈ 15,25. Le plus petit entier strictement supérieur à 15,25 est 16 : il faut 16 réglages ✓. Contrôle numérique, celui qui vaut preuve en examen : 0,85¹⁵ ≈ 0,0874, donc r(15) ≈ 1,05 %, encore au-dessus du seuil ✗ ; 0,85¹⁶ ≈ 0,0742, donc r(16) ≈ 0,89 % < 1 % ✓. La réponse 15 tronque 15,25 au lieu de prendre l'entier immédiatement supérieur — l'écart entre les deux est mince en apparence, mais il fait la différence entre un lot conforme et un lot refusé, et le contrôle ci-dessus le montre. La réponse 44 confond les unités : elle résout 12 × 0,85ⁿ < 0,01 en oubliant que r(n) est DÉJÀ exprimé en pourcentage, ce qui revient à exiger un taux de 0,01 %, cent fois plus sévère que le cahier des charges. La dernière proposition confond « rester strictement positif » et « rester au-dessus d'un seuil » : une suite géométrique de raison comprise entre 0 et 1 ne s'annule jamais mais tend vers 0, donc elle finit par passer sous n'importe quel seuil strictement positif — et le logarithme sert justement à dire QUAND.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B (suite). Dans le même atelier, le coût du contrôle qualité d'un lot est modélisé par C(x) = 30 ln x + 20, en dinars, où x est le nombre de lanternes contrôlées (x ≥ 1). Le responsable dispose d'un budget de 110 dinars. À partir de combien de lanternes contrôlées le coût dépasse-t-il strictement ce budget ? On donne e³ ≈ 20,09.",
+      "options": [
+        {
+          "id": "a",
+          "text": "À partir de 21 lanternes"
+        },
+        {
+          "id": "b",
+          "text": "À partir de 20 lanternes"
+        },
+        {
+          "id": "c",
+          "text": "À partir de e³ ≈ 20,09 lanternes"
+        },
+        {
+          "id": "d",
+          "text": "À partir de 3 lanternes"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On résout C(x) > 110, c'est-à-dire 30 ln x + 20 > 110, donc 30 ln x > 90, soit ln x > 3. Le membre de droite s'écrit 3 = 3 ln e = ln(e³), puisque ln e = 1. L'inéquation devient ln x > ln(e³), et la stricte croissance de ln donne x > e³ ≈ 20,09. Mais x compte des lanternes : c'est un ENTIER, et la question porte sur le franchissement réel du budget. Le plus petit entier strictement supérieur à 20,09 est 21 ✓. Contrôle décisif par le calcul du coût : C(20) = 30 ln 20 + 20 ≈ 30 × 2,996 + 20 = 89,87 + 20 = 109,87 dinars, encore SOUS le budget ✓ ; C(21) = 30 ln 21 + 20 ≈ 30 × 3,045 + 20 = 91,34 + 20 = 111,34 dinars, au-dessus ✓. Le basculement se produit donc bien entre 20 et 21 lanternes, et la vingtième passe de justesse — treize centimes de marge, ce qui montre au passage pourquoi il faut calculer et non estimer. La réponse 20 arrondit e³ ≈ 20,09 à l'entier le plus proche au lieu de prendre l'entier immédiatement supérieur : avec 20 lanternes le budget est respecté, la réponse est donc fausse par excès de zèle arithmétique. La réponse e³ ≈ 20,09 est le seuil mathématique exact, correct comme étape mais pas comme réponse : on ne contrôle pas 20,09 lanternes, et un sujet de bac attend toujours qu'on revienne au contexte pour la conclusion. La réponse 3 s'arrête à la ligne ln x > 3 et prend cette borne pour la solution, en oubliant de « défaire » le logarithme : c'est l'erreur la plus coûteuse du chapitre, puisqu'elle donne un coût C(3) ≈ 53 dinars, à moitié du budget.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B (fin). Le service qualité de l'atelier suit un indice de dispersion défini pour x > 1 par Q(x) = ln(x + 3) − ln(x − 1), où x est le nombre de lots contrôlés. Étudier le sens de variation de Q sur ]1 ; +∞[, puis déterminer l'ensemble des valeurs de x pour lesquelles Q(x) ≤ ln 3.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Q est strictement décroissante sur ]1 ; +∞[ et Q(x) ≤ ln 3 équivaut à x ≥ 3"
+        },
+        {
+          "id": "b",
+          "text": "Q est strictement décroissante sur ]1 ; +∞[ et Q(x) ≤ ln 3 équivaut à 1 < x ≤ 3"
+        },
+        {
+          "id": "c",
+          "text": "Q est strictement croissante sur ]1 ; +∞[ et Q(x) ≤ ln 3 équivaut à x ≥ 2"
+        },
+        {
+          "id": "d",
+          "text": "Aucune valeur ne convient, car Q(x) = ln((x + 3) − (x − 1)) = ln 4 est constant et ln 4 > ln 3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux temps, comme dans tout sujet d'examen. Le sens de variation d'abord. Sur ]1 ; +∞[, les deux quantités x + 3 et x − 1 sont strictement positives, donc Q est bien définie et dérivable, avec Q′(x) = 1/(x + 3) − 1/(x − 1) — chaque terme étant de la forme u′/u. On réduit au même dénominateur : Q′(x) = ((x − 1) − (x + 3))/((x + 3)(x − 1)) = −4/((x + 3)(x − 1)). Sur ]1 ; +∞[ le dénominateur est strictement positif, donc Q′(x) < 0 : Q est strictement DÉCROISSANTE ✓, ce qui est cohérent avec le modèle — plus on contrôle de lots, moins la dispersion est grande. L'inéquation ensuite. On écrit d'abord Q sous forme d'un seul logarithme, la différence devenant quotient : Q(x) = ln((x + 3)/(x − 1)). L'inéquation Q(x) ≤ ln 3 équivaut alors, par stricte croissance de ln, à (x + 3)/(x − 1) ≤ 3. Comme x > 1, le facteur x − 1 est strictement positif et l'on multiplie sans changer le sens : x + 3 ≤ 3(x − 1), soit x + 3 ≤ 3x − 3, donc 6 ≤ 2x et x ≥ 3. L'ensemble des solutions est [3 ; +∞[ ✓. Contrôle : Q(3) = ln 6 − ln 2 = ln 3, l'égalité est atteinte au bord ✓ ; Q(5) = ln 8 − ln 4 = ln 2 ≈ 0,693 ≤ 1,099 ✓ ; Q(2) = ln 5 − ln 1 = ln 5 ≈ 1,609 > ln 3, exclu ✓. La proposition 1 < x ≤ 3 a le bon seuil mais le sens inversé : puisque Q décroît, les petites valeurs de x donnent les GRANDES valeurs de Q, donc c'est bien au-delà de 3 que l'indice passe sous ln 3 — le sens de variation, calculé au premier temps, était fait pour lever ce doute. La proposition « croissante, x ≥ 2 » cumule deux fautes : un signe perdu dans Q′, et un développement bâclé de 3(x − 1) en 3x − 1. La dernière proposition applique la règle inexistante ln a − ln b = ln(a − b) ; seul le QUOTIENT devient différence, et l'on remarquera qu'un indice constant contredirait frontalement le calcul de Q′, qui n'est jamais nul.",
+      "difficulty": 3
+    }
+  ]
+}

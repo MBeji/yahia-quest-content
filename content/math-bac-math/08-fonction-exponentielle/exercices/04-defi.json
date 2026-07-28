@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le maître de l'exponentielle",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Pour tout entier naturel n, on pose Iₙ = ∫₀¹ xⁿ e^(−x) dx. On admet que pour tout n ≥ 1, Iₙ = n Iₙ₋₁ − 1/e. Calculer I₃.",
+      "options": [
+        {
+          "id": "a",
+          "text": "I₃ = 2 − 5/e"
+        },
+        {
+          "id": "b",
+          "text": "I₃ = 6 − 16/e"
+        },
+        {
+          "id": "c",
+          "text": "I₃ = 6 − 15/e"
+        },
+        {
+          "id": "d",
+          "text": "I₃ = 6 − 6/e"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La relation fait descendre d'un rang à la fois : il faut amorcer, puis l'appliquer trois fois de suite sans jamais oublier le terme −1/e. Amorçage : I₀ = ∫₀¹ e^(−x)dx = [−e^(−x)]₀¹ = 1 − 1/e ≈ 0,632. Rang 1 : I₁ = 1 × I₀ − 1/e = 1 − 2/e ≈ 0,264. Rang 2 : I₂ = 2I₁ − 1/e = 2 − 4/e − 1/e = 2 − 5/e ≈ 0,161. Rang 3 : I₃ = 3I₂ − 1/e = 6 − 15/e − 1/e = 6 − 16/e ≈ 6 − 5,886 = 0,114 ✓. Contrôle numérique indépendant de la relation admise (Simpson sur x³e^(−x), pas 0,25, valeurs 0 ; 0,0122 ; 0,0758 ; 0,1993 ; 0,3679) : I₃ ≈ 0,1138, en accord avec 0,114 ✓. Second filtre, l'encadrement du cours : sur [0, 1] on a 0 ≤ x³e^(−x) ≤ x³, donc 0 ≤ I₃ ≤ 1/4, et la suite décroît puisque xⁿ⁺¹ ≤ xⁿ sur [0, 1] — seule la valeur 0,114 respecte à la fois I₃ ≤ 0,25 et I₃ < I₂ ≈ 0,161. L'erreur classique : s'arrêter un rang trop tôt et livrer I₂ = 2 − 5/e. Oublier le −1/e au dernier rang seulement donne 6 − 15/e ≈ 0,482, valeur supérieure à I₂ alors que la suite décroît ; et l'oublier à chaque rang, c'est-à-dire utiliser Iₙ = n Iₙ₋₁, donne 6I₀ = 6 − 6/e ≈ 3,79, une aire impossible sous une courbe majorée par 1 sur une largeur 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Calculer lim_{x→+∞} x(e^(1/x) − 1).",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "+∞"
+        },
+        {
+          "id": "d",
+          "text": "e − 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "C'est une forme indéterminée ∞ × 0 : x tend vers +∞ pendant que e^(1/x) − 1 tend vers 0. Le changement de variable la lève d'un coup. On pose t = 1/x ; quand x → +∞, t → 0⁺, et x = 1/t, donc x(e^(1/x) − 1) = (e^t − 1)/t. Or lim_{t→0} (e^t − 1)/t = 1, puisque c'est le taux d'accroissement de exp entre 0 et t, donc le nombre dérivé exp′(0) = e⁰ = 1. La limite vaut 1 ✓. Contrôle numérique indépendant : en x = 10, 10(e^(0,1) − 1) = 10 × 0,10517 = 1,0517 ; en x = 1000, 1000(e^(0,001) − 1) = 1000 × 0,0010005 = 1,0005 — les valeurs convergent bien vers 1 ✓. Seconde voie, sans changement de variable : l'inégalité e^u ≥ u + 1 du cours, appliquée à u = 1/x > 0, donne e^(1/x) − 1 ≥ 1/x, donc x(e^(1/x) − 1) ≥ 1 pour tout x > 0 — la réponse 0 est ainsi éliminée d'emblée, et les valeurs calculées, qui décroissent vers 1, écartent aussi e − 1 ≈ 1,718. L'erreur classique : traiter la forme 0 × ∞ comme nulle en disant que e^(1/x) → 1 donc la parenthèse → 0, et répondre 0 — une indétermination ne se tranche jamais par le seul facteur qui tend vers 0. Répondre +∞ revient à ne regarder que le facteur x ; et e − 1 vient de remplacer la limite du taux d'accroissement par sa valeur en t = 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = 1 + x − e^(−x/2), de courbe C, et D la droite d'équation y = x + 1. Pour tout entier naturel n, on note Aₙ l'aire, en u.a, du domaine limité par C, D et les droites x = n et x = n + 1. La suite (Aₙ) est géométrique ; quelle est sa raison ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e^(1/2)"
+        },
+        {
+          "id": "b",
+          "text": "−1/2"
+        },
+        {
+          "id": "c",
+          "text": "e^(−1/2)"
+        },
+        {
+          "id": "d",
+          "text": "e^(−1)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Deux notions se combinent : l'aire entre une courbe et son asymptote, puis la nature d'une suite. Position relative d'abord : f(x) − (x + 1) = −e^(−x/2) < 0 pour tout x, donc C est strictement sous D, et l'aire cherchée vaut Aₙ = ∫ₙ^{n+1} [(x + 1) − f(x)]dx = ∫ₙ^{n+1} e^(−x/2)dx. Primitive : avec u(x) = −x/2 et u′(x) = −1/2, la primitive de e^(−x/2) est −2e^(−x/2). Donc Aₙ = [−2e^(−x/2)]ₙ^{n+1} = 2e^(−n/2) − 2e^(−(n+1)/2) = 2e^(−n/2)(1 − e^(−1/2)). Le facteur (1 − e^(−1/2)) ne dépend pas de n : la suite est géométrique de premier terme A₀ = 2(1 − e^(−1/2)) et de raison Aₙ₊₁/Aₙ = e^(−(n+1)/2)/e^(−n/2) = e^(−1/2) ✓. Contrôle numérique indépendant : A₀ = 2(1 − 0,6065) = 0,7869 et A₁ = 2(e^(−1/2) − e^(−1)) = 2(0,6065 − 0,3679) = 0,4773, dont le quotient vaut 0,6065 = e^(−1/2) ✓. Cohérence : la raison est comprise entre 0 et 1, ce qui traduit des aires qui décroissent à mesure que C se colle à son asymptote. L'erreur classique : perdre le 1/2 de l'exposant, en confondant le pas 1 sur l'axe des abscisses avec le pas dans l'exponentielle, et annoncer e^(−1) ≈ 0,368. Un signe perdu dans la primitive ou dans l'exposant donne e^(1/2) ≈ 1,649, raison supérieure à 1 pour des aires qui diminuent — impossible ; et lire le coefficient −1/2 de l'exposant comme la raison elle-même donne −1/2, raison négative pour des aires toutes positives.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit k un réel et f_k la fonction définie sur ℝ par f_k(x) = (x + k)e^(−x). La courbe de f_k admet une tangente horizontale en son point d'abscisse 2. Déterminer k, puis le maximum de f_k sur ℝ.",
+      "options": [
+        {
+          "id": "a",
+          "text": "k = 1 et le maximum vaut 3e^(−2)"
+        },
+        {
+          "id": "b",
+          "text": "k = −3 et le maximum vaut −e^(−2)"
+        },
+        {
+          "id": "c",
+          "text": "k = −1 et le maximum vaut e²"
+        },
+        {
+          "id": "d",
+          "text": "k = −1 et le maximum vaut e^(−2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Sens inverse puis chaîne : la condition géométrique fixe le paramètre, le paramètre fixe l'extremum. Dérivée du produit, avec (e^(−x))′ = −e^(−x) : f′_k(x) = e^(−x) − (x + k)e^(−x) = e^(−x)(1 − x − k). Comme l'exponentielle ne s'annule jamais, f′_k(x) = 0 équivaut à x = 1 − k. Une tangente horizontale en x = 2 impose donc 1 − k = 2, soit k = −1. La fonction est alors f(x) = (x − 1)e^(−x), de dérivée f′(x) = e^(−x)(2 − x) : positive pour x < 2, négative pour x > 2 — il s'agit bien d'un maximum, atteint en x = 2, et sa valeur est f(2) = (2 − 1)e^(−2) = e^(−2) ≈ 0,135 ✓. Vérification par une seconde voie : f(1,5) = 0,5 × e^(−1,5) = 0,112 et f(3) = 2 × e^(−3) = 0,0996, tous deux inférieurs à 0,135 ✓ ; et le maximum est bien global puisque f → −∞ en −∞ et f → 0 par valeurs positives en +∞ (croissances comparées). L'erreur classique : oublier le second terme du produit ou se tromper de signe sur (e^(−x))′, ce qui donne f′_k(x) = e^(−x)(1 + x + k), donc 2 = −1 − k, soit k = −3, et une valeur f(2) = −e^(−2), négative alors que la courbe passe par des ordonnées positives. Résoudre 1 − x − k = 0 en k = x − 1 donne k = 1 et f(2) = 3e^(−2) ≈ 0,406 ; et se tromper de signe dans l'exposant final livre e² ≈ 7,39, valeur que f n'atteint jamais.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On veut calculer I = ∫₀¹ x e^(x²) dx. Voici une solution proposée. Étape 1 : l'intégrande est un produit, on pose f(t) = t et g′(t) = e^(t²), d'où f′(t) = 1 et g(t) = e^(t²). Étape 2 : par intégration par parties, I = [t e^(t²)]₀¹ − ∫₀¹ e^(t²) dt. Étape 3 : [t e^(t²)]₀¹ = e et ∫₀¹ e^(t²) dt = [e^(t²)]₀¹ = e − 1. Étape 4 : donc I = e − (e − 1) = 1. Quelle est la PREMIÈRE étape fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 1"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 2"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 3"
+        },
+        {
+          "id": "d",
+          "text": "Aucune : le calcul est juste et I = 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Ceci est une chasse à l'erreur : la solution proposée contient une faute plantée, l'explication décrit donc un raisonnement volontairement faux. L'étape 1 est la PREMIÈRE fausse ✓ : elle affirme que e^(t²) est une primitive de e^(t²), alors que (e^(t²))′ = 2t e^(t²) — le facteur intérieur u′ = 2t manque. Une intégration par parties était de toute façon la mauvaise route : le facteur t placé devant l'exponentielle EST, à un demi près, la dérivée de l'exposant t², donc l'intégrande est de la forme u′e^u. Le calcul correct : x e^(x²) = ½ × 2x e^(x²), dont une primitive est ½e^(x²), d'où I = [½e^(x²)]₀¹ = (e − 1)/2 ≈ 0,859. L'étape 2 applique correctement la formule d'intégration par parties, signe moins compris, et les étapes 3 et 4 sont arithmétiquement exactes — elles héritent simplement de la primitive fausse de l'étape 1 ; c'est pourquoi la réponse d est également à écarter. Contrôle numérique indépendant (Simpson, pas 0,25, valeurs 0 ; 0,266 ; 0,642 ; 1,316 ; 2,718) : I ≈ 0,861, cohérent avec 0,859 et incompatible avec 1 ✓. L'erreur classique est exactement celle plantée ici : confondre ∫ x e^(x²) dx, qui se règle par reconnaissance de u′e^u, avec ∫ x e^x dx, qui exige une intégration par parties et vaut 1 — d'où la valeur 1 obtenue par la fausse solution.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Résoudre dans ℝ l'équation 3^x + 4^x = 5^x.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucune solution"
+        },
+        {
+          "id": "b",
+          "text": "Exactement deux solutions, x = 2 et x = −2"
+        },
+        {
+          "id": "c",
+          "text": "Exactement une solution, x = 2"
+        },
+        {
+          "id": "d",
+          "text": "Une infinité de solutions"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Trois exponentielles de bases différentes : on ne peut pas les comparer telles quelles. Le geste décisif est de diviser par 5^x, qui est strictement positif donc jamais nul : l'équation équivaut à (3/5)^x + (4/5)^x = 1, en utilisant a^c/b^c = (a/b)^c. Posons φ(x) = (3/5)^x + (4/5)^x. Comme 0 < 3/5 < 1 et 0 < 4/5 < 1, chacune des deux fonctions est strictement décroissante sur ℝ, donc φ l'est aussi ; par ailleurs lim_{x→−∞} φ = +∞ et lim_{x→+∞} φ = 0. Continue et strictement décroissante, φ réalise une bijection de ℝ sur ]0, +∞[ : l'équation φ(x) = 1 admet donc UNE solution et une seule. Il reste à l'identifier : φ(2) = 9/25 + 16/25 = 25/25 = 1, donc x = 2 ✓ — c'est le triplet pythagoricien 3, 4, 5. Vérification directe : 3² + 4² = 9 + 16 = 25 = 5² ✓. Contrôle de l'unicité par une seconde voie, numérique : φ(1) = 0,6 + 0,8 = 1,4 > 1 et φ(3) = 0,216 + 0,512 = 0,728 < 1, la valeur 1 n'est donc franchie qu'une fois, entre 1 et 3. L'erreur classique : croire que la relation de Pythagore se transporte à tout exposant et conclure à une infinité de solutions — ou, symétriquement, la juger fortuite et répondre qu'il n'y en a aucune. Postuler une symétrie et ajouter x = −2 ne résiste pas au test : 3^(−2) + 4^(−2) = 1/9 + 1/16 ≈ 0,174, très loin de 5^(−2) = 0,04.",
+      "difficulty": 3
+    }
+  ]
+}

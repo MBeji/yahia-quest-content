@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Fonction exponentielle",
+  "questions": [
+    {
+      "prompt": "La fonction exponentielle étant la réciproque de la fonction ln, elle est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "définie sur ℝ et à valeurs dans ℝ"
+        },
+        {
+          "id": "b",
+          "text": "définie sur ]0, +∞[ et à valeurs dans ℝ"
+        },
+        {
+          "id": "c",
+          "text": "définie sur ]0, +∞[ et à valeurs dans ]0, +∞["
+        },
+        {
+          "id": "d",
+          "text": "définie sur ℝ et à valeurs dans ]0, +∞["
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Quand on retourne une fonction, on échange départ et arrivée : ln va de ]0, +∞[ vers ℝ, donc exp va de ℝ vers ]0, +∞[ ✓. Autrement dit e^x existe pour TOUT réel x, et e^x est toujours strictement positif. L'option b décrit exactement ln, pas sa réciproque : c'est l'échange oublié. L'option a oublie que e^x ne prend jamais une valeur négative ou nulle. L'option c garde ]0, +∞[ au départ, alors que e^(−3) ou e^0 se calculent parfaitement.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut e^(ln 5) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/5"
+        },
+        {
+          "id": "b",
+          "text": "ln 5"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "e^5"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "exp et ln sont réciproques l'une de l'autre : pour tout x > 0, e^(ln x) = x, donc e^(ln 5) = 5 ✓. Contrôle numérique : ln 5 ≈ 1,609 et e^(1,609) ≈ 5 ✓. L'option b s'arrête au contenu de l'exposant sans jamais appliquer l'exponentielle. L'option d applique e à 5 au lieu de l'appliquer à ln 5 : e^5 ≈ 148,4. L'option a est e^(−ln 5) = 1/5 : un signe moins a été ajouté à l'exposant.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut ln(e^(−3)) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3"
+        },
+        {
+          "id": "b",
+          "text": "−1/3"
+        },
+        {
+          "id": "c",
+          "text": "1/e³"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'autre sens de la relation réciproque : pour tout réel x, ln(e^x) = x, donc ln(e^(−3)) = −3 ✓. Le logarithme « annule » l'exponentielle et rend l'exposant tel quel, signe compris. L'option d perd ce signe moins, alors que rien dans ln ne change le signe de l'exposant. L'option c est la valeur de e^(−3) ≈ 0,0498 elle-même, sans lui appliquer ln. L'option b confond l'opposé −3 avec l'inverse −1/3.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour tous réels a et b, e^(a+b) est égal à :",
+      "options": [
+        {
+          "id": "a",
+          "text": "e^a + e^b"
+        },
+        {
+          "id": "b",
+          "text": "e^a × e^b"
+        },
+        {
+          "id": "c",
+          "text": "e^a/e^b"
+        },
+        {
+          "id": "d",
+          "text": "(e^a)^b"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'exponentielle transforme les sommes en produits : e^(a+b) = e^a × e^b ✓ — c'est l'exacte réciproque de ln(xy) = ln x + ln y. Contrôle numérique avec a = 1 et b = 2 : e³ ≈ 20,09 et e × e² ≈ 2,718 × 7,389 ≈ 20,09 ✓. L'option a est l'erreur numéro un du chapitre : e + e² ≈ 10,1, très loin de 20,09. L'option c correspond à e^(a−b). L'option d vaut e^(ab) : le produit des exposants, pas leur somme.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans ℝ, l'équation e^x = −2 admet :",
+      "options": [
+        {
+          "id": "a",
+          "text": "aucune solution"
+        },
+        {
+          "id": "b",
+          "text": "une seule solution"
+        },
+        {
+          "id": "c",
+          "text": "deux solutions"
+        },
+        {
+          "id": "d",
+          "text": "une infinité de solutions"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour tout réel x, e^x > 0 : une exponentielle ne prend jamais une valeur négative, donc l'équation n'a aucune solution ✓. Plus généralement, e^A = k n'a de solution que si k > 0, et alors A = ln k. L'option b vient du réflexe « exp est bijective, donc chaque nombre a un antécédent » : c'est vrai seulement pour les nombres strictement positifs. L'option c transpose à tort le comportement d'une parabole. L'option d n'a pas de sens pour une fonction strictement croissante, qui prend chaque valeur au plus une fois.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut e^(2 ln 3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/9"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "27"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On rentre le coefficient dans le logarithme : 2 ln 3 = ln(3²) = ln 9, donc e^(2 ln 3) = e^(ln 9) = 9 ✓. Contrôle numérique : 2 ln 3 ≈ 2,197 et e^(2,197) ≈ 9 ✓. L'option b multiplie 2 par 3 comme si l'exponentielle disparaissait en laissant un simple produit. L'option d applique l'exposant 3 au lieu de 2 : 27 = e^(3 ln 3). L'option a est e^(−2 ln 3) = 3^(−2) : le signe de l'exposant a été inventé.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la dérivée sur ℝ de la fonction f définie par f(x) = e^(3x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = e^(3x)"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = 3x e^(3x)"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = 3e^(3x−1)"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = 3e^(3x)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La formule du cours est (e^u)′ = u′e^u. Avec u(x) = 3x, on a u′(x) = 3, donc f′(x) = 3e^(3x) ✓. L'option a oublie complètement le facteur u′ : elle ne serait juste que pour u(x) = x. L'option b prend u(x) = 3x pour facteur au lieu de sa dérivée u′(x) = 3. L'option c dérive l'exposant comme une puissance x^n en le diminuant de 1 : l'exposant d'une exponentielle ne baisse jamais.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résoudre dans ℝ l'équation e^x = e^(3x−4).",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = −2"
+        },
+        {
+          "id": "b",
+          "text": "x = 1"
+        },
+        {
+          "id": "c",
+          "text": "x = 2"
+        },
+        {
+          "id": "d",
+          "text": "x = 4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "exp étant strictement croissante donc injective, e^A = e^B ⟺ A = B. Ici x = 3x − 4, soit 4 = 2x et x = 2 ✓. Contrôle : les deux membres valent e² ≈ 7,389 ✓. L'option a est le résultat d'une erreur de signe en résolvant −2x = −4. L'option b vient de x + 3x = 4 : le terme 3x a été ajouté au lieu d'être retranché. L'option d recopie la constante 4 de l'énoncé sans résoudre.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résoudre dans ℝ l'inéquation e^x < 1.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x > 0"
+        },
+        {
+          "id": "b",
+          "text": "x < 0"
+        },
+        {
+          "id": "c",
+          "text": "x < 1"
+        },
+        {
+          "id": "d",
+          "text": "x > 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On écrit 1 = e^0 ; comme exp est strictement croissante, e^x < e^0 ⟺ x < 0 ✓. Contrôle : e^(−1) ≈ 0,368 < 1 ✓ et e^(0,5) ≈ 1,65 > 1 ✓. L'option a renverse le sens de l'inégalité, ce qui ne se produit qu'avec une fonction décroissante. Les options c et d comparent x à 1 au lieu de comparer les exposants : 1 est la VALEUR de l'exponentielle, l'exposant qui la produit est 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un réel x vérifie e^x = 4. Que vaut e^(2x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "16"
+        },
+        {
+          "id": "d",
+          "text": "64"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "e^(2x) = e^(x+x) = e^x × e^x = (e^x)², donc e^(2x) = 4² = 16 ✓. Contrôle : x = ln 4 ≈ 1,386, et e^(2,772) ≈ 16 ✓. L'option b multiplie la valeur par 2 : c'est confondre e^(2x) avec 2e^x. L'option d applique l'exposant 3 (4³ = 64) et correspondrait à e^(3x). L'option a prend la racine carrée de 4, c'est-à-dire e^(x/2), en divisant l'exposant au lieu de le doubler.",
+      "difficulty": 2
+    }
+  ]
+}

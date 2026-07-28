@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Fonction exponentielle",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Pour tout réel x, e^(−x) est égal à :",
+      "options": [
+        {
+          "id": "a",
+          "text": "e^(1/x)"
+        },
+        {
+          "id": "b",
+          "text": "−e^x"
+        },
+        {
+          "id": "c",
+          "text": "−1/e^x"
+        },
+        {
+          "id": "d",
+          "text": "1/e^x"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La propriété du cours donne e^(−a) = 1/e^a, donc e^(−x) = 1/e^x ✓. Contrôle en x = 1 : e^(−1) ≈ 0,368 et 1/e ≈ 1/2,718 ≈ 0,368 ✓. L'option b est LE piège du chapitre : un signe moins dans l'exposant ne sort pas devant, et surtout e^(−x) est toujours strictement positif alors que −e^x est toujours négatif. L'option c cumule les deux erreurs et reste négative. L'option a confond l'opposé de x avec son inverse : en x = 1 elle donnerait e ≈ 2,718.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi ces égalités, laquelle est vraie pour tout réel x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(e^x + e^(−x))² = e^(2x) + e^(−2x)"
+        },
+        {
+          "id": "b",
+          "text": "(e^x + e^(−x))² = e^(2x) + e^(−2x) + 2"
+        },
+        {
+          "id": "c",
+          "text": "(e^x + e^(−x))² = e^(x²) + e^(−x²)"
+        },
+        {
+          "id": "d",
+          "text": "(e^x + e^(−x))² = 2e^x + 2e^(−x)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On développe l'identité remarquable : (e^x + e^(−x))² = (e^x)² + 2 e^x e^(−x) + (e^(−x))² = e^(2x) + 2e^0 + e^(−2x), et e^0 = 1 donne le terme constant 2 ✓. Contrôle en x = 1 : (2,71828 + 0,36788)² = 3,08616² ≈ 9,524, et e² + e^(−2) + 2 ≈ 7,389 + 0,135 + 2 = 9,524 ✓. L'option a oublie le double produit, pourtant égal à 2 et non à 0. L'option c élève l'exposant au carré au lieu d'élever la puissance. L'option d confond le carré d'une somme avec son double.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résoudre dans ℝ l'équation e^(2x) − 3e^x + 2 = 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "S = {ln 2}"
+        },
+        {
+          "id": "b",
+          "text": "S = {0}"
+        },
+        {
+          "id": "c",
+          "text": "S = {0, ln 2}"
+        },
+        {
+          "id": "d",
+          "text": "S = {1, 2}"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On pose X = e^x, avec X > 0 ; comme e^(2x) = (e^x)² = X², l'équation devient X² − 3X + 2 = 0, soit (X − 1)(X − 2) = 0. Les deux racines 1 et 2 sont strictement positives, donc AUCUNE n'est à rejeter : e^x = 1 donne x = 0 et e^x = 2 donne x = ln 2 ≈ 0,693 ✓. Contrôle en x = ln 2 : 4 − 6 + 2 = 0 ✓. L'option d s'arrête aux valeurs de X sans revenir à x. Les options a et b ne gardent qu'une des deux solutions, comme si l'autre racine devait être écartée.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résoudre dans ℝ l'inéquation e^(−x) ≥ e^(2x−3).",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≤ 1"
+        },
+        {
+          "id": "b",
+          "text": "x ≥ 1"
+        },
+        {
+          "id": "c",
+          "text": "x ≤ 3"
+        },
+        {
+          "id": "d",
+          "text": "x ≥ 3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "exp étant strictement croissante, e^A ≥ e^B ⟺ A ≥ B : ici −x ≥ 2x − 3, soit 3 ≥ 3x, donc x ≤ 1 ✓. Contrôle en x = 0 : e^0 = 1 ≥ e^(−3) ≈ 0,050 ✓ ; en x = 2 : e^(−2) ≈ 0,135 alors que e^1 ≈ 2,718, l'inégalité est bien fausse ✓. L'option b renverse le sens de l'inégalité, réflexe erroné venu du signe moins de l'exposant. Les options c et d gardent la constante 3 sans diviser par le coefficient 3 obtenu en regroupant les x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (x − 2)e^x. Sur quel intervalle f est-elle décroissante ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−∞, 1]"
+        },
+        {
+          "id": "b",
+          "text": "]−∞, 2]"
+        },
+        {
+          "id": "c",
+          "text": "[1, +∞["
+        },
+        {
+          "id": "d",
+          "text": "[2, +∞["
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "C'est un produit : f′(x) = 1 × e^x + (x − 2)e^x = (x − 1)e^x. Comme e^x > 0, f′ est du signe de x − 1, donc négative sur ]−∞, 1] : f y est décroissante ✓. Contrôle : f(0) = −2 et f(1) = −e ≈ −2,718 < −2, la fonction a bien baissé ✓. L'option b lit le signe de f(x) = (x − 2)e^x au lieu de celui de f′ : c'est oublier de dériver le produit. L'option c donne l'intervalle de CROISSANCE. L'option d combine les deux erreurs.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Résoudre dans ℝ l'équation e^x − 5e^(−x) + 4 = 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "S = {−ln 5, 0}"
+        },
+        {
+          "id": "b",
+          "text": "S = {0}"
+        },
+        {
+          "id": "c",
+          "text": "S = {0, ln 5}"
+        },
+        {
+          "id": "d",
+          "text": "S = {ln 5}"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On multiplie par e^x, qui est strictement positif (l'équation est donc équivalente) : e^(2x) + 4e^x − 5 = 0. Avec X = e^x > 0, on obtient X² + 4X − 5 = (X + 5)(X − 1) = 0, donc X = 1 ou X = −5. La racine −5 est REJETÉE car une exponentielle est strictement positive ; il reste e^x = 1, soit x = 0 ✓. Contrôle : 1 − 5 + 4 = 0 ✓. Les options a, c et d conservent une seconde solution issue de la racine négative, en oubliant que X = −5 est impossible — l'option c prend même son opposé ln 5 ≈ 1,609, pour lequel e^x − 5e^(−x) + 4 = 5 − 1 + 4 = 8 ≠ 0.",
+      "difficulty": 3
+    }
+  ]
+}
