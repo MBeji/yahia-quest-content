@@ -127,27 +127,27 @@
       "difficulty": 3
     },
     {
-      "prompt": "Soit f une fonction dérivable sur ℝ, ne s'annulant pas sur ℝ, telle que f′(x) + 2f(x) = (f(x))² pour tout réel x, et f(0) = 1. On pose g = 1/f. Déterminer f(x).",
+      "prompt": "Déterminer la fonction f, continue sur ℝ, telle que f(x) = ∫₀ˣ f(t) dt + x pour tout réel x.",
       "options": [
         {
           "id": "a",
-          "text": "f(x) = 2/(3e^(2x) − 1)"
+          "text": "f(x) = e^x − 1"
         },
         {
           "id": "b",
-          "text": "f(x) = 2/(e^(−2x) + 1)"
+          "text": "f(x) = e^(−x) − 1"
         },
         {
           "id": "c",
-          "text": "f(x) = (e^(2x) + 1)/2"
+          "text": "f(x) = 2e^x − 2"
         },
         {
           "id": "d",
-          "text": "f(x) = 2/(e^(2x) + 1)"
+          "text": "f(x) = e^x + x − 1"
         }
       ],
-      "correctOption": "d",
-      "explanation": "L'équation n'est pas linéaire : c'est le changement de fonction imposé par l'énoncé qui la ramène au programme. Comme f ne s'annule pas, g = 1/f est dérivable et g′ = −f′/f². On divise l'égalité f′ + 2f = f² par f² (licite) : f′/f² + 2/f = 1, c'est-à-dire −g′ + 2g = 1, donc g′ = 2g − 1. C'est une équation y′ = ay + b avec a = 2 et b = −1, de terme constant −b/a = 1/2 : g(x) = ke^(2x) + 1/2. La condition g(0) = 1/f(0) = 1 donne k + 1/2 = 1, soit k = 1/2 et g(x) = (e^(2x) + 1)/2. On repasse à l'inverse : f(x) = 2/(e^(2x) + 1) ✓ — bien définie et non nulle, puisque e^(2x) + 1 > 0. Vérification par réinjection dans l'équation d'origine, en posant D = e^(2x) + 1 : f′(x) = −4e^(2x)/D² et (f(x))² = 4/D², donc f′ + 2f = (−4e^(2x) + 4D)/D² = (−4e^(2x) + 4e^(2x) + 4)/D² = 4/D² = f² ✓ ; et f(0) = 2/2 = 1 ✓. L'erreur classique : oublier le signe moins de g′ = −f′/f² et obtenir g′ = −2g + 1, donc g(x) = (e^(−2x) + 1)/2 et f(x) = 2/(e^(−2x) + 1) — elle vaut bien 1 en 0, mais sa réinjection donne f′ + 2f = (8e^(−2x) + 4)/D², au lieu de 4/D². Écrire le terme constant +b/a = −1/2 conduit à g = (3e^(2x) − 1)/2 puis à 2/(3e^(2x) − 1), qui vaut aussi 1 en 0 mais fournit f′ + 2f = −f². Et s'arrêter à g sans revenir à f livre (e^(2x) + 1)/2, dont la valeur en 0 est également 1 : ces trois pièges passent tous le test de la condition initiale, seule la réinjection dans l'équation les élimine.",
+      "correctOption": "a",
+      "explanation": "L'inconnue est enfermée sous une intégrale : le geste d'ouverture est de dériver la relation. Comme f est continue sur ℝ, la fonction F : x ↦ ∫₀ˣ f(t) dt est dérivable de dérivée f ; l'égalité f = F + x montre donc que f est elle-même dérivable, et en dérivant les deux membres : f′(x) = f(x) + 1. On reconnaît y′ = ay + b avec a = 1 et b = 1, de terme constant −b/a = −1, donc f(x) = ke^x − 1. La relation de départ fournit la condition initiale, en prenant x = 0 : f(0) = ∫₀⁰ f(t) dt + 0 = 0, d'où k − 1 = 0 et k = 1, soit f(x) = e^x − 1 ✓. Vérification par réinjection dans la relation d'origine, le seul contrôle qui vaille : ∫₀ˣ (e^t − 1) dt = [e^t − t]₀ˣ = e^x − x − 1, et en ajoutant x on retrouve exactement e^x − 1 = f(x) ✓. Attention à la réciproque, qui n'est pas automatique : toute solution de y′ = y + 1 s'écrit ke^x − 1, mais seule celle qui s'annule en 0 vérifie l'équation intégrale — c'est précisément le piège des trois autres propositions, qui valent toutes 0 en 0 et que seule la réinjection élimine. La fonction e^(−x) − 1 a inversé le signe de a : elle est solution de y′ = −y − 1, et son intégrale de 0 à x augmentée de x vaut 1 − e^(−x), soit son opposée. La fonction 2e^x − 2 est solution de y′ = y + 2 : le même calcul redonne 2e^x − 2 − x, où subsiste un terme en x. Enfin e^x + x − 1 ajoute le terme x deux fois, une fois par la primitivation et une fois par la relation : sa dérivée vaut e^x + 1 alors que f + 1 vaut e^x + x.",
       "difficulty": 3
     }
   ]

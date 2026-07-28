@@ -55,7 +55,7 @@
       "difficulty": 2
     },
     {
-      "prompt": "Épisode 3 — Troisième palier, la Salle des Balances. Deux coffres scellés portent chacun un nombre gravé : sur le premier 5⁴⁰, sur le second 4⁵⁰. Le Peseur ricane : « Ces nombres ont vingt-huit et trente chiffres, aucune balance de la Tour ne les départage. Mais toi, tu as ln. Lequel des deux coffres est le plus lourd ? On te donne ln 2 ≈ 0,693, ln 4 ≈ 1,386 et ln 5 ≈ 1,609. »",
+      "prompt": "Épisode 3 — Troisième palier, la Salle des Balances. Deux coffres scellés portent chacun un nombre gravé : sur le premier 5⁴⁰, sur le second 4⁵⁰. Le Peseur ricane : « Ces nombres ont chacun une trentaine de chiffres, aucune balance de la Tour ne les départage. Mais toi, tu as ln. Lequel des deux coffres est le plus lourd ? On te donne ln 2 ≈ 0,693, ln 4 ≈ 1,386 et ln 5 ≈ 1,609. »",
       "options": [
         {
           "id": "a",
@@ -75,7 +75,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "La stratégie est celle du chapitre : deux nombres strictement positifs se comparent par leurs logarithmes, puisque ln a > ln b équivaut à a > b. On calcule donc chacun avec la règle ln(aᵖ) = p ln a. D'un côté ln(5⁴⁰) = 40 ln 5 ≈ 40 × 1,609 = 64,36. De l'autre ln(4⁵⁰) = 50 ln 4 ≈ 50 × 1,386 = 69,30. Comme 69,30 > 64,36, on conclut ln(4⁵⁰) > ln(5⁴⁰), donc 4⁵⁰ > 5⁴⁰ ✓ : le second coffre est le plus lourd. Contrôle indépendant, sans logarithme : 4⁵⁰ = (2²)⁵⁰ = 2¹⁰⁰ et 5⁴⁰ < 8⁴⁰ = (2³)⁴⁰ = 2¹²⁰... cette borne-là est trop lâche ; reprenons plus finement avec 5⁴⁰ < (5,04)⁴⁰ où 5,04² ≈ 25,4, ce qui est fastidieux — et c'est exactement la leçon : le logarithme remplace des acrobaties par deux multiplications. Un second contrôle par les ordres de grandeur le confirme pourtant : ln(5⁴⁰)/ln 10 ≈ 64,36/2,303 ≈ 27,9 chiffres contre 69,30/2,303 ≈ 30,1 chiffres, soit les vingt-huit et trente chiffres annoncés par le Peseur ✓. La réponse « le premier » suit l'intuition que la base pèse plus lourd que l'exposant ; c'est l'inverse, l'exposant l'emporte presque toujours, et ln le rend visible en le transformant en simple facteur. La réponse « ils sont égaux » applique une règle inventée : le produit base × exposant n'a aucun sens ici, ce qui compte est le produit exposant × LOGARITHME de la base, soit 40 × 1,609 contre 50 × 1,386 — deux nombres différents. Quant à prétendre que ln ne comparerait que de petits nombres, c'est méconnaître qu'il est défini sur tout ]0, +∞[ et qu'il réalise une bijection sur ℝ tout entier : aucun nombre n'est trop grand pour lui.",
+      "explanation": "La stratégie est celle du chapitre : deux nombres strictement positifs se comparent par leurs logarithmes, puisque ln a > ln b équivaut à a > b. On calcule donc chacun avec la règle ln(aᵖ) = p ln a. D'un côté ln(5⁴⁰) = 40 ln 5 ≈ 40 × 1,609 = 64,36. De l'autre ln(4⁵⁰) = 50 ln 4 ≈ 50 × 1,386 = 69,30. Comme 69,30 > 64,36, on conclut ln(4⁵⁰) > ln(5⁴⁰), donc 4⁵⁰ > 5⁴⁰ ✓ : le second coffre est le plus lourd. Contrôle indépendant, sans logarithme : on ramène les deux nombres au même exposant, puisque 40 et 50 sont tous deux multiples de 10 — 5⁴⁰ = (5⁴)¹⁰ = 625¹⁰ et 4⁵⁰ = (4⁵)¹⁰ = 1024¹⁰ ; comme 1024 > 625, on retrouve bien 4⁵⁰ > 5⁴⁰ ✓. Cette astuce-là dépend d'une coïncidence sur les exposants, alors que le logarithme, lui, tranche toujours : c'est exactement la leçon du palier. Un second contrôle par les ordres de grandeur : le nombre de chiffres se lit sur ln/ln 10, soit 64,36/2,303 ≈ 27,9 d'un côté et 69,30/2,303 ≈ 30,1 de l'autre, donc 28 chiffres pour le premier coffre et 31 pour le second — une trentaine chacun, comme l'annonçait le Peseur ✓. La réponse « le premier » suit l'intuition que la base pèse plus lourd que l'exposant ; c'est l'inverse, l'exposant l'emporte presque toujours, et ln le rend visible en le transformant en simple facteur. La réponse « ils sont égaux » applique une règle inventée : le produit base × exposant n'a aucun sens ici, ce qui compte est le produit exposant × LOGARITHME de la base, soit 40 × 1,609 contre 50 × 1,386 — deux nombres différents. Quant à prétendre que ln ne comparerait que de petits nombres, c'est méconnaître qu'il est défini sur tout ]0, +∞[ et qu'il réalise une bijection sur ℝ tout entier : aucun nombre n'est trop grand pour lui.",
       "difficulty": 3
     },
     {
@@ -127,27 +127,27 @@
       "difficulty": 3
     },
     {
-      "prompt": "Épisode 6 — Sommet de la Tour, la Porte du Retour. Une roue dentée, graduée en nombre de lots d, et une inscription : « Je ne cède qu'à l'équilibre. Mon indice vaut I(d) = ln(d − 2) − ln(d + 1), et la porte s'ouvre dès que I(d) ≥ −ln 2. Donne-moi le plus petit ENTIER d qui l'ouvre — et n'oublie pas où mon indice existe. »",
+      "prompt": "Épisode 6 — Sommet de la Tour, la Porte du Retour. Une roue dentée, graduée en nombre de lots d, et une inscription : « Je ne cède qu'à l'équilibre. Ma charge vaut C(d) = ln(d − 2) + ln(d + 1), et la porte s'ouvre à l'instant exact où C(d) = ln 4. Donne-moi la valeur de d qui l'ouvre — et n'oublie pas où ma charge existe. »",
       "options": [
         {
           "id": "a",
-          "text": "d = 5"
-        },
-        {
-          "id": "b",
           "text": "d = 3"
         },
         {
+          "id": "b",
+          "text": "d = 3 et d = −2"
+        },
+        {
           "id": "c",
-          "text": "d = 2"
+          "text": "d = 2,5"
         },
         {
           "id": "d",
-          "text": "Aucun : I(d) = ln((d − 2) − (d + 1)) = ln(−3) n'existe jamais"
+          "text": "d = 2 ou d = −1"
         }
       ],
       "correctOption": "a",
-      "explanation": "Premier temps, les conditions d'existence, que l'inscription rappelle expressément : il faut d − 2 > 0 ET d + 1 > 0, donc d > 2. Deuxième temps, on ramène les deux membres à la forme ln A. À gauche, la différence de deux logarithmes est le logarithme du quotient : I(d) = ln((d − 2)/(d + 1)). À droite, −ln 2 = ln(1/2). L'inéquation s'écrit donc ln((d − 2)/(d + 1)) ≥ ln(1/2). Troisième temps, la stricte croissance de ln : (d − 2)/(d + 1) ≥ 1/2. Comme d > 2, le dénominateur d + 1 est strictement positif, on peut multiplier en croix sans changer le sens : 2(d − 2) ≥ d + 1, soit 2d − 4 ≥ d + 1, donc d ≥ 5. Compte tenu de la condition d > 2, l'ensemble des solutions est [5 ; +∞[ et le plus petit entier convenable est d = 5 ✓. Contrôle : pour d = 5, I(5) = ln 3 − ln 6 = ln(1/2) = −ln 2 ≈ −0,693, l'égalité est atteinte, la porte cède ✓ ; pour d = 4, I(4) = ln 2 − ln 5 ≈ 0,693 − 1,609 = −0,916, strictement inférieur à −0,693, la porte reste close ✓. La réponse d = 3 vient d'une faute d'arithmétique dans le développement, 2(d − 2) écrit 2d − 2 au lieu de 2d − 4, qui donne d ≥ 3 ; le contrôle la démonte aussitôt, car I(3) = ln 1 − ln 4 = −1,386 < −0,693. La réponse d = 2 prend la borne du DOMAINE pour une solution : en d = 2, ln(d − 2) = ln 0 n'existe même pas, et le domaine est ouvert. Enfin la dernière proposition applique une règle qui n'existe pas, ln a − ln b = ln(a − b) : seule la division devient soustraction, et c'est bien ln((d − 2)/(d + 1)) qu'il fallait écrire — l'apparition d'un ln(−3) dans une copie est toujours le signe qu'une propriété a été inventée.",
+      "explanation": "Premier temps, les conditions d'existence, que l'inscription rappelle expressément : il faut d − 2 > 0 ET d + 1 > 0, donc d > 2. Deuxième temps, on ramène le membre de gauche à un seul logarithme — et c'est ici une SOMME, qui devient donc le logarithme d'un PRODUIT : C(d) = ln((d − 2)(d + 1)). L'équation s'écrit ln((d − 2)(d + 1)) = ln 4. Troisième temps, ln étant une bijection de ]0, +∞[ sur ℝ, deux logarithmes sont égaux si et seulement si leurs arguments le sont : (d − 2)(d + 1) = 4. On développe et on ramène tout d'un côté : d² − d − 2 = 4, donc d² − d − 6 = 0. Le discriminant vaut 1 + 24 = 25, de racine carrée 5, d'où les deux racines (1 + 5)/2 = 3 et (1 − 5)/2 = −2. La condition d > 2 élimine −2 : il reste d = 3 ✓. Contrôle en réinjectant dans la charge de départ : C(3) = ln 1 + ln 4 = 0 + 1,386 = 1,386 = ln 4 ✓, l'équilibre est atteint et la porte cède ; en d = 4 on aurait C(4) = ln 2 + ln 5 ≈ 0,693 + 1,609 = 2,302, bien au-delà de 1,386. La réponse « d = 3 et d = −2 » résout correctement le second degré mais oublie le premier temps : en d = −2, ln(d − 2) = ln(−4) n'existe pas, une racine algébrique n'est une solution que si elle appartient au domaine. La réponse d = 2,5 applique une règle qui n'existe pas, ln a + ln b = ln(a + b) : elle conduit à (d − 2) + (d + 1) = 4, soit 2d − 1 = 4 et d = 2,5 ; on l'exécute jusqu'au bout pour la démonter, car C(2,5) = ln 0,5 + ln 3,5 ≈ −0,693 + 1,253 = 0,560, très loin de ln 4 ≈ 1,386. Seul le PRODUIT devient une somme. La réponse « d = 2 ou d = −1 » vient d'un produit égalé à 0 au lieu de 4 : on a bien factorisé d² − d − 2 = (d − 2)(d + 1), mais en oubliant de faire passer le 4 à gauche ; d'ailleurs en d = 2 la charge n'existe pas non plus, puisque ln 0 n'a pas de sens.",
       "difficulty": 3
     }
   ]

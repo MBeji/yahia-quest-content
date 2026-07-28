@@ -7,15 +7,21 @@
   "displayOrder": 6,
   "questions": [
     {
-      "prompt": "Épisode 1 — La Tour d'Ambre n'a ni escalier ni fenêtre : on y monte en résolvant. Au premier palier, une nuée de lucioles éclaire la salle, et l'Alchimiste des Croissances lève la main : « Mon essaim compte N(t) = 240 e^(0,25t) lucioles au bout de t heures. Tant qu'il n'aura pas QUADRUPLÉ, la trappe restera close. Dis-moi au bout de combien d'heures — et ne me réponds pas par un nombre volé au hasard. »",
+      "prompt": "Épisode 1 — La Tour d'Ambre n'a ni escalier ni fenêtre : on y monte en résolvant. Au premier palier, une nuée de lucioles éclaire un long couloir, et l'Alchimiste des Croissances lève la main : « L'éclat de ma nuée vaut E(x) = e^(−x² + 4x) à x pas de l'entrée, pour 0 ≤ x ≤ 6. La trappe ne s'ouvre qu'au point le plus lumineux du couloir. Dis-moi où il se trouve, et combien vaut l'éclat là-bas. »",
       "options": [
-        { "id": "a", "text": "8 ln 2 ≈ 5,55 heures" },
-        { "id": "b", "text": "16 heures" },
-        { "id": "c", "text": "4 ln 2 ≈ 2,77 heures" },
-        { "id": "d", "text": "ln 4 ≈ 1,39 heure" }
+        { "id": "a", "text": "À 2 pas, où l'éclat vaut e⁴ ≈ 54,6" },
+        { "id": "b", "text": "À 4 pas, où l'éclat vaut 1" },
+        {
+          "id": "c",
+          "text": "Nulle part : E′(x) = e^(−x² + 4x) ne s'annule jamais, l'éclat ne cesse de croître"
+        },
+        {
+          "id": "d",
+          "text": "À 6 pas, tout au bout : l'exponentielle est strictement croissante, donc l'éclat est maximal au bord"
+        }
       ],
       "correctOption": "a",
-      "explanation": "Quadrupler, c'est atteindre 4 × 240 = 960 lucioles : on résout 240 e^(0,25t) = 960, soit e^(0,25t) = 4. Le nombre 4 est strictement positif, donc l'équation équivaut à 0,25t = ln 4, d'où t = (ln 4)/0,25 = 4 ln 4. Comme ln 4 = ln(2²) = 2 ln 2, cela s'écrit aussi t = 8 ln 2 ≈ 8 × 0,693 = 5,55 heures ✓. Contrôle numérique : 0,25 × 5,545 = 1,386 et e^(1,386) ≈ 4, donc N ≈ 240 × 4 = 960 ✓. Contrôle structurel, plus élégant : le temps de doublement de cet essaim vaut (ln 2)/0,25 = 4 ln 2 ≈ 2,77 h ; quadrupler, c'est doubler deux fois, donc 2 × 2,77 = 5,55 h ✓ — deux chemins, un seul nombre. La réponse 16 h résout 0,25t = 4 : elle prend le rapport 4 pour l'exposant, sans passer par le logarithme. L'exposant qui produit 4 n'est pas 4, c'est ln 4 ≈ 1,386, et confondre les deux fait ici perdre un facteur presque trois. La réponse 4 ln 2 ≈ 2,77 h est le temps de DOUBLEMENT : l'essaim n'y compte que 480 lucioles, la trappe reste close. La réponse ln 4 ≈ 1,39 h s'arrête à l'exposant 0,25t = ln 4 sans isoler t : il restait à diviser par 0,25, c'est-à-dire à multiplier par 4.",
+      "explanation": "On cherche un extremum, donc on dérive. E est de la forme e^u avec u(x) = −x² + 4x, et la règle du chapitre est (e^u)′ = u′e^u — le facteur u′ ne disparaît jamais. Ici u′(x) = −2x + 4, donc E′(x) = (−2x + 4)e^(−x² + 4x). Or e^(−x² + 4x) > 0 pour tout x, puisque l'exponentielle est strictement positive : E′ est du SIGNE de −2x + 4, positif pour x < 2 et négatif pour x > 2. L'éclat croît donc jusqu'à 2 pas puis décroît : il y admet un maximum, égal à E(2) = e^(−4 + 8) = e⁴ ≈ 54,6 ✓. Contrôle numérique de part et d'autre : E(1) = e^(−1 + 4) = e³ ≈ 20,1 et E(3) = e^(−9 + 12) = e³ ≈ 20,1, tous deux nettement en dessous de e⁴ ≈ 54,6 ✓ — la nuée est bien symétrique autour du deuxième pas, comme l'est le trinôme. La réponse « à 4 pas » annule l'EXPOSANT au lieu de sa dérivée : −x² + 4x = 0 donne x = 0 ou x = 4, mais ces abscisses sont celles où l'éclat vaut e⁰ = 1, c'est-à-dire les points les plus SOMBRES du couloir, pas le plus lumineux. La réponse « nulle part » oublie le facteur u′ et dérive e^u en e^u : cette expression ne s'annule effectivement jamais, mais elle n'est pas la dérivée de E — exécutée jusqu'au bout, elle conclurait que l'éclat croît sans cesse, ce que dément le calcul direct, puisque E(6) = e^(−36 + 24) = e^(−12) ≈ 0,000006, une obscurité quasi totale. La réponse « à 6 pas » applique la croissance de exp à la COMPOSÉE : exp est bien strictement croissante, mais e^u suit les variations de u, et le trinôme u, lui, redescend après son sommet — c'est u qui commande.",
       "difficulty": 2
     },
     {
@@ -70,27 +76,15 @@
       "difficulty": 3
     },
     {
-      "prompt": "Épisode 6 — Sommet de la Tour. Une flamme d'ambre vacille au centre de la coupole, d'intensité F(t) = 50 e^(−0,3t) (t en heures). L'Alchimiste te barre la sortie une dernière fois : « Puisque e^(−0,3t) tend vers 0 quand t tend vers +∞, ma flamme finira bien par s'éteindre COMPLÈTEMENT, à un instant précis que je pourrais nommer. Ai-je raison ? Réponds, et justifie — la porte n'obéit qu'aux raisons. »",
+      "prompt": "Épisode 6 — Sommet de la Tour. Une flamme d'ambre vacille au centre de la coupole, d'intensité F(t) = 50 e^(−0,3t) (t en heures). L'Alchimiste te barre la sortie une dernière fois : « La porte n'obéit qu'aux mesures exactes. L'énergie que ma flamme libère durant ses dix premières heures est l'intégrale ∫₀¹⁰ 50 e^(−0,3t) dt. Donne-la-moi. »",
       "options": [
-        {
-          "id": "a",
-          "text": "Faux : pour tout réel t, e^(−0,3t) > 0, donc F(t) > 0 ; la flamme faiblit indéfiniment vers 0 sans jamais s'éteindre, car 0 est une limite et non une valeur atteinte"
-        },
-        {
-          "id": "b",
-          "text": "Vrai : puisque la limite de F en +∞ vaut 0, il existe un instant t₀ à partir duquel F(t₀) = 0 exactement"
-        },
-        {
-          "id": "c",
-          "text": "Faux : en réalité e^(−0,3t) tend vers +∞ quand t tend vers +∞, donc la flamme s'intensifie"
-        },
-        {
-          "id": "d",
-          "text": "Vrai : l'exponentielle s'annule dès que son exposant devient suffisamment négatif, ici à partir d'environ t = 40 heures"
-        }
+        { "id": "a", "text": "(500/3)(1 − e^(−3)) ≈ 158,4" },
+        { "id": "b", "text": "50(1 − e^(−3)) ≈ 47,5" },
+        { "id": "c", "text": "(500/3)(e^(−3) − 1) ≈ −158,4" },
+        { "id": "d", "text": "15(1 − e^(−3)) ≈ 14,3" }
       ],
       "correctOption": "a",
-      "explanation": "L'Alchimiste a tort, et sa faute est celle que tout le chapitre cherche à déraciner : confondre une LIMITE avec une VALEUR ATTEINTE. La fonction exp est bijective de ℝ sur ℝ*₊ : pour tout réel x, e^x est strictement positif — jamais nul, jamais négatif. Donc F(t) = 50 e^(−0,3t) > 0 pour tout t ✓. La limite lim_{t→+∞} e^(−0,3t) = 0 dit exactement ceci : on peut rendre F(t) aussi petit qu'on veut en attendant assez longtemps, mais aucun instant fini n'annule F. Contrôle numérique : F(50) = 50 e^(−15) ≈ 50 × 3,06 × 10⁻⁷ ≈ 1,5 × 10⁻⁵, minuscule mais strictement positif ; F(100) = 50 e^(−30) ≈ 4,7 × 10⁻¹² , plus petit encore et toujours positif ✓. Graphiquement, la droite d'équation y = 0 est ASYMPTOTE HORIZONTALE à la courbe en +∞ : la courbe s'en approche sans jamais la toucher. L'affirmation « la limite est 0 donc il existe t₀ avec F(t₀) = 0 » inverse la définition même d'une limite ; si un tel t₀ existait, on aurait 50 e^(−0,3t₀) = 0, donc e^(−0,3t₀) = 0, ce qu'aucun réel ne permet. Dire que e^(−0,3t) tend vers +∞ est une confusion de signe sur l'exposant : quand t → +∞, l'exposant −0,3t tend vers −∞, et c'est lim_{x→−∞} e^x = 0 qui s'applique ; c'est e^(+0,3t) qui exploserait. Enfin, fixer un seuil comme t = 40 heures ne change rien à l'affaire : F(40) = 50 e^(−12) ≈ 3 × 10⁻⁴, un nombre que ta calculatrice affichera peut-être comme 0 par troncature d'affichage — mais l'arrondi d'une machine n'est pas une annulation mathématique, et c'est précisément le genre de faux témoignage que la porte refuse.",
+      "explanation": "Tout repose sur la primitive de e^(u) : les primitives de u′e^u sont e^u + k, il faut donc faire apparaître u′ = −0,3 devant l'exponentielle. Avec u(t) = −0,3t, on écrit e^(−0,3t) = (1/(−0,3)) × (−0,3)e^(−0,3t), donc une primitive de e^(−0,3t) est −(1/0,3)e^(−0,3t) = −(10/3)e^(−0,3t). D'où ∫₀¹⁰ 50 e^(−0,3t) dt = 50 × [−(10/3)e^(−0,3t)]₀¹⁰ = (500/3)(1 − e^(−3)) ≈ 166,67 × 0,9502 ≈ 158,4 ✓ (vérification par dérivation : (−(10/3)e^(−0,3t))′ = −(10/3)(−0,3)e^(−0,3t) = e^(−0,3t) ✓). Contrôle numérique indépendant (Simpson, pas 2,5, valeurs 50 ; 23,62 ; 11,16 ; 5,27 ; 2,49) : ≈ 158,6, en accord avec 158,4 ✓. Contrôle grossier par encadrement : l'intégrande décroît de 50 à 50e^(−3) ≈ 2,49 sur une largeur 10, l'aire est donc comprise entre 24,9 et 500 — seule la valeur 158,4 y tient. La réponse 47,5 oublie purement le facteur 1/u′ : elle primitive e^(−0,3t) en e^(−0,3t), erreur qui reviendrait à dire que l'exposant se dérive tout seul. La réponse négative inverse les bornes du crochet, alors qu'une fonction strictement positive ne peut donner qu'une aire positive — le signe est ici un signal d'alarme immédiat. La réponse 14,3 MULTIPLIE par 0,3 au lieu de diviser : c'est l'erreur symétrique de la première, et l'ordre de grandeur la dénonce, une flamme d'intensité initiale 50 ne libérant pas moins que ce qu'elle vaut à sa dernière heure multipliée par dix.",
       "difficulty": 3
     }
   ]

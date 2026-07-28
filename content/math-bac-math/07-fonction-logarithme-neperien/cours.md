@@ -171,13 +171,13 @@ _Exemple détaillé_ — soit f(x) = ln(x² + x − 2). On résout d'abord u(x) 
 
 $$ f′(x) = (2x + 1)/(x² + x − 2) $$
 
-_Contrôle numérique_ — en x = 2 : la formule donne 5/4 = 1,25 ; le taux d'accroissement entre 2 et 2,01 vaut (ln 4,0501 − ln 4)/0,01 ≈ 1,247 ✓.
+_Contrôle numérique_ — en x = 2 : la formule donne 5/4 = 1,25 ; le taux d'accroissement entre 2 et 2,01 vaut (ln 4,0501 − ln 4)/0,01 ≈ 1,245 ✓.
 
 _Exemple détaillé_ — soit f(x) = ln|1 − x⁴|. Ici u ≠ 0 ⟺ x⁴ ≠ 1 ⟺ x ≠ 1 et x ≠ −1 : D_f = ℝ \ {−1 ; 1}. Avec u′(x) = −4x³ :
 
 $$ f′(x) = −4x³/(1 − x⁴) $$
 
-_Contrôle numérique_ — en x = 2 : la formule donne −32/(−15) ≈ 2,133 ; le taux d'accroissement entre 2 et 2,01 vaut ≈ 2,139 ✓.
+_Contrôle numérique_ — en x = 2 : la formule donne −32/(−15) ≈ 2,133 ; le taux d'accroissement entre 2 et 2,01 vaut ≈ 2,127 ✓.
 
 _Exemple détaillé (étude complète)_ — soit f(x) = ln((x − 2)/(x + 1)) + x. Le quotient est strictement positif pour x < −1 ou x > 2 : D_f = ]−∞, −1[ ∪ ]2, +∞[. Avec u = (x − 2)/(x + 1), on a u′ = 3/(x + 1)², donc u′/u = 3/((x + 1)(x − 2)) et :
 
