@@ -1,0 +1,121 @@
+{
+  "title": "🏛️ Annales Bac ⭐⭐⭐⭐ : Sujet type — Modèle logistique et propagation d'une rumeur",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "Partie A. Soit f la fonction définie sur [0 ; +∞[ par f(x) = 1000/(1 + 9e^(−0,5x)). Calculer f(0), puis déterminer la limite de f en +∞.",
+      "options": [
+        { "id": "a", "text": "f(0) = 100 et lim_{x→+∞} f(x) = 1000" },
+        { "id": "b", "text": "f(0) = 1000 et lim_{x→+∞} f(x) = +∞" },
+        { "id": "c", "text": "f(0) = 100 et lim_{x→+∞} f(x) = 0" },
+        {
+          "id": "d",
+          "text": "f(0) = 1000/9 ≈ 111 et lim_{x→+∞} f(x) = 1000"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour f(0), on remplace : e^(−0,5 × 0) = e^0 = 1, donc le dénominateur vaut 1 + 9 × 1 = 10 et f(0) = 1000/10 = 100 ✓. Pour la limite, tout tient au signe de l'exposant : quand x → +∞, on a −0,5x → −∞, et le théorème du cours donne lim_{X→−∞} e^X = 0, donc e^(−0,5x) → 0. Le dénominateur 1 + 9e^(−0,5x) tend donc vers 1 + 9 × 0 = 1, et par quotient f(x) → 1000/1 = 1000 ✓. Autrement dit, la droite d'équation y = 1000 est ASYMPTOTE HORIZONTALE à la courbe en +∞. Contrôle numérique : f(10) = 1000/(1 + 9e^(−5)) = 1000/(1 + 9 × 0,006738) = 1000/1,06064 ≈ 942,8, et f(20) = 1000/(1 + 9 × 4,54 × 10⁻⁵) ≈ 999,6 ✓ — la fonction monte bien de 100 vers 1000. La proposition f(0) = 1000 confond la constante du numérateur avec la valeur en 0 : elle oublie que le dénominateur vaut 10 et non 1 en x = 0 ; et lim = +∞ suppose que le dénominateur tend vers 0, alors qu'il tend vers 1. La proposition lim = 0 est l'erreur de signe classique : elle traite e^(−0,5x) comme s'il explosait en +∞, ce qui rendrait le dénominateur infini et le quotient nul. Le repère à garder : c'est e^(+0,5x) qui explose, e^(−0,5x) s'écrase. La proposition f(0) = 1000/9 oublie le « 1 + » du dénominateur et ne divise que par 9.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Partie A (suite). Toujours avec f définie sur [0 ; +∞[ par f(x) = 1000/(1 + 9e^(−0,5x)). Calculer f′(x) et en déduire le sens de variation de f sur [0 ; +∞[.",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = 4500 e^(−0,5x)/(1 + 9e^(−0,5x))², donc f est strictement croissante"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = −4500 e^(−0,5x)/(1 + 9e^(−0,5x))², donc f est strictement décroissante"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = 4500 e^(−0,5x)/(1 + 9e^(−0,5x)), donc f est strictement croissante"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = 500 e^(−0,5x)/(1 + 9e^(−0,5x))², donc f est strictement croissante"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On pose u(x) = 1 + 9e^(−0,5x), de sorte que f = 1000/u. La dérivée de e^(u) étant u′e^(u), on a d'abord u′(x) = 9 × (−0,5) e^(−0,5x) = −4,5 e^(−0,5x) — le facteur 9 se conserve, le facteur −0,5 descend de l'exposant. Ensuite, la dérivée de 1000/u est −1000u′/u², d'où f′(x) = −1000 × (−4,5 e^(−0,5x))/(1 + 9e^(−0,5x))² = 4500 e^(−0,5x)/(1 + 9e^(−0,5x))² ✓. Le signe se lit sans effort : e^(−0,5x) > 0 pour tout x, le dénominateur est un carré strictement positif (le dénominateur 1 + 9e^(−0,5x) ne s'annule jamais, il est même > 1), et 4500 > 0 — donc f′(x) > 0 et f est strictement croissante sur [0 ; +∞[ ✓. Contrôle numérique en x = 0 : f′(0) = 4500 × 1/10² = 45 ; le taux d'accroissement entre 0 et 0,1 vaut (f(0,1) − f(0))/0,1 = (104,49 − 100)/0,1 ≈ 44,9 ✓, valeur très proche, comme attendu. La proposition avec le signe moins oublie que la dérivée de 1000/u vaut −1000u′/u² et que u′ est DÉJÀ négative : deux signes moins se composent en un plus. Une fonction décroissante serait d'ailleurs incompatible avec f(0) = 100 et une limite de 1000. La proposition sans carré au dénominateur perd la formule de la dérivée d'un quotient — et un simple test la ruine : elle donnerait f′(0) = 4500/10 = 450, dix fois trop grand par rapport au taux d'accroissement mesuré. La proposition avec 500 au numérateur a dérivé 9e^(−0,5x) en −0,5e^(−0,5x), c'est-à-dire a effacé le coefficient 9 en chemin.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie A (fin). Toujours avec f définie sur [0 ; +∞[ par f(x) = 1000/(1 + 9e^(−0,5x)), fonction strictement croissante de f(0) = 100 vers la limite 1000. Résoudre dans [0 ; +∞[ l'équation f(x) = 500.",
+      "options": [
+        { "id": "a", "text": "x = 4 ln 3 ≈ 4,39" },
+        { "id": "b", "text": "x = ln 9 ≈ 2,20" },
+        { "id": "c", "text": "x = 2 ln 18 ≈ 5,78" },
+        { "id": "d", "text": "x = 4 ln 9 ≈ 8,79" }
+      ],
+      "correctOption": "a",
+      "explanation": "L'équation 1000/(1 + 9e^(−0,5x)) = 500 se transforme en produit en croix — licite, car le dénominateur est strictement positif : 1000 = 500(1 + 9e^(−0,5x)), soit 1 + 9e^(−0,5x) = 2, donc 9e^(−0,5x) = 1 et e^(−0,5x) = 1/9. Ce nombre étant strictement positif, on passe au logarithme : −0,5x = ln(1/9) = −ln 9, d'où x = (ln 9)/0,5 = 2 ln 9. Comme ln 9 = ln(3²) = 2 ln 3, cela s'écrit aussi x = 4 ln 3 ≈ 4 × 1,0986 = 4,39 ✓. Contrôle : e^(−0,5 × 4,394) = e^(−2,197) = 0,1111 = 1/9, donc le dénominateur vaut 1 + 9 × (1/9) = 2 et f = 1000/2 = 500 ✓. Unicité : f est strictement croissante (question précédente), donc elle ne prend chaque valeur qu'une seule fois — la solution est unique, et elle existe bien puisque 500 est compris entre f(0) = 100 et la limite 1000. La valeur ln 9 ≈ 2,20 s'arrête à l'exposant : il reste à diviser par 0,5, c'est-à-dire à MULTIPLIER par 2. On la contrôle en une ligne : f(2,20) = 1000/(1 + 9e^(−1,10)) = 1000/(1 + 3) = 250, pas 500. La valeur 2 ln 18 ≈ 5,78 vient d'avoir écrit 9e^(−0,5x) = 1/2 au lieu de 1 : le raccourci « f vaut la moitié de 1000 donc le terme exponentiel vaut la moitié » est faux, car le lien n'est pas proportionnel. La valeur 4 ln 9 ≈ 8,79 divise deux fois par 0,5 ; elle correspond en réalité au seuil de 900, calculé plus loin dans le sujet.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B. Dans un lycée de 1000 élèves, une rumeur se propage. Le nombre d'élèves informés au bout de t jours est modélisé par P(t) = 1000/(1 + 9e^(−0,5t)), pour t ≥ 0. Combien d'élèves connaissent la rumeur au bout de 4 jours ? (On donnera le nombre entier le plus proche ; on rappelle e^(−2) ≈ 0,1353.)",
+      "options": [
+        { "id": "a", "text": "Environ 451 élèves" },
+        { "id": "b", "text": "Environ 135 élèves" },
+        { "id": "c", "text": "Environ 100 élèves" },
+        { "id": "d", "text": "Environ 15 élèves" }
+      ],
+      "correctOption": "a",
+      "explanation": "On évalue P en t = 4. L'exposant vaut −0,5 × 4 = −2, donc e^(−2) ≈ 0,1353 ; le dénominateur vaut 1 + 9 × 0,1353 = 1 + 1,2180 = 2,2180, et P(4) = 1000/2,2180 ≈ 450,9, soit environ 451 élèves ✓. Contrôle de cohérence avec le reste du sujet : P est strictement croissante, elle part de P(0) = 100 élèves et le seuil des 500 élèves est franchi à t = 4 ln 3 ≈ 4,39 jours. La valeur au jour 4 doit donc se situer juste EN DESSOUS de 500 — et 451 y est ✓. Deux nombres, deux vérifications qui se répondent : c'est ainsi qu'on sécurise une copie de bac. La réponse 135 élèves calcule 1000 e^(−2) : elle oublie purement et simplement la structure en quotient et traite le modèle comme une exponentielle décroissante ordinaire, ce qui contredirait d'ailleurs le sens du phénomène — une rumeur se répand, elle ne reflue pas. La réponse 100 élèves est P(0), la valeur initiale : elle suppose que rien n'a bougé en quatre jours. La réponse 15 élèves vient d'un signe perdu dans l'exposant : avec e^(+2) ≈ 7,389, le dénominateur vaudrait 1 + 66,5 = 67,5 et le quotient 14,8. Le repère : quand t augmente, −0,5t DIMINUE, donc e^(−0,5t) diminue, donc le dénominateur diminue, donc P augmente.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B (suite). Même modèle : P(t) = 1000/(1 + 9e^(−0,5t)) élèves informés au bout de t jours, fonction strictement croissante. Le proviseur considère la rumeur comme « généralisée » lorsqu'au moins 900 élèves la connaissent. À partir de quel jour la rumeur est-elle généralisée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À partir de t = 8 ln 3 ≈ 8,79 jours, donc dès le neuvième jour"
+        },
+        {
+          "id": "b",
+          "text": "À partir de t = 4 ln 3 ≈ 4,39 jours, donc dès le cinquième jour"
+        },
+        {
+          "id": "c",
+          "text": "À partir de t = 16 ln 3 ≈ 17,6 jours, donc dès le dix-huitième jour"
+        },
+        {
+          "id": "d",
+          "text": "À partir de t = 8 ln 3 ≈ 8,79 jours, donc dès le huitième jour"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On résout l'inéquation P(t) ≥ 900. Le dénominateur étant strictement positif, on multiplie sans changer de sens : 1000 ≥ 900(1 + 9e^(−0,5t)), soit 1 + 9e^(−0,5t) ≤ 1000/900 = 10/9. On retranche 1 : 9e^(−0,5t) ≤ 1/9, puis on divise par 9 : e^(−0,5t) ≤ 1/81. Comme exp est strictement croissante, l'inéquation équivaut à −0,5t ≤ ln(1/81) = −ln 81, et en divisant par −0,5, NÉGATIF, le sens s'inverse : t ≥ 2 ln 81. Or ln 81 = ln(3⁴) = 4 ln 3, donc t ≥ 8 ln 3 ≈ 8 × 1,0986 = 8,79 jours ✓. Contrôle : e^(−0,5 × 8,789) = e^(−4,394) = 1/81 ≈ 0,012346 ; le dénominateur vaut 1 + 9/81 = 1 + 1/9 = 10/9 et P = 1000 × 9/10 = 900 ✓, exactement à la borne. Reste l'interprétation, qui vaut des points en examen : 8,79 jours tombe ENTRE la fin du huitième jour et la fin du neuvième ; comme P croît, le seuil est franchi au cours du neuvième jour et n'est donc atteint qu'à partir de ce jour-là ✓ — c'est ce que dit la réponse retenue, et c'est précisément ce que rate la proposition qui annonce le huitième jour à partir du même nombre : au jour 8, P(8) = 1000/(1 + 9e^(−4)) = 1000/1,1648 ≈ 858 élèves, en dessous du seuil. La réponse 4,39 jours recopie le résultat de la Partie A, qui correspondait au seuil de 500 élèves et non de 900. La réponse 17,6 jours divise deux fois par 0,5 au lieu d'une : elle multiplie le temps par 2 en trop, et l'on vérifie que P(17,6) ≈ 998,6 élèves, bien au-delà du seuil demandé — donc trop tard.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B (fin). Même modèle : P(t) = 1000/(1 + 9e^(−0,5t)) élèves informés au bout de t jours, croissante, de limite 1000 en +∞ ; la courbe est reproduite ci-dessous. Le proviseur affirme : « Ce modèle prévoit qu'à un certain jour, les 1000 élèves du lycée connaîtront la rumeur. » Que peut-on répondre ? <svg viewBox=\"0 0 270 190\"><path d=\"M30 155 H260\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M260 155 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M40 168 V22\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M40 22 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><line x1=\"40\" y1=\"35\" x2=\"252\" y2=\"35\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><polyline points=\"40,143 60,127.2 80,100.9 100,72.1 120,51.9 140,41.9 160,37.6 180,35.9 200,35.4 240,35.05\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"36\" y=\"39\" text-anchor=\"end\" fill=\"#0f172a\">1000</text><text x=\"90\" y=\"170\" text-anchor=\"middle\" fill=\"#0f172a\">5</text><text x=\"140\" y=\"170\" text-anchor=\"middle\" fill=\"#0f172a\">10</text><text x=\"190\" y=\"170\" text-anchor=\"middle\" fill=\"#0f172a\">15</text><text x=\"248\" y=\"170\" text-anchor=\"middle\" fill=\"#0f172a\">t</text><text x=\"196\" y=\"52\" fill=\"#0f6e56\">C_P</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il a tort : pour tout t ≥ 0 on a 9e^(−0,5t) > 0, donc P(t) < 1000 strictement ; la droite y = 1000 est une asymptote dont la courbe s'approche sans jamais l'atteindre"
+        },
+        {
+          "id": "b",
+          "text": "Il a raison : puisque la limite de P en +∞ vaut 1000, il existe un jour t₀ pour lequel P(t₀) = 1000 exactement"
+        },
+        {
+          "id": "c",
+          "text": "Il a tort : le modèle plafonne en réalité à 900 élèves, valeur atteinte au neuvième jour, et n'ira jamais au-delà"
+        },
+        {
+          "id": "d",
+          "text": "Il a raison : dès que 9e^(−0,5t) devient inférieur à 0,001, l'exponentielle s'annule et P(t) vaut exactement 1000"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "C'est la question de synthèse du sujet, et elle se tranche par la propriété fondatrice du chapitre : l'exponentielle est strictement positive. Pour tout t ≥ 0, e^(−0,5t) > 0, donc 9e^(−0,5t) > 0, donc le dénominateur 1 + 9e^(−0,5t) est strictement SUPÉRIEUR à 1, et par conséquent P(t) = 1000/(1 + 9e^(−0,5t)) < 1000 strictement ✓. Aucun jour ne donne donc 1000 élèves informés. La limite 1000 signifie seulement que P(t) s'approche autant qu'on veut de 1000 quand t grandit : la droite y = 1000 est asymptote horizontale, et sur la figure la courbe vient se coller dessous sans jamais la couper. Contrôle numérique : P(20) = 1000/(1 + 9e^(−10)) = 1000/1,000409 ≈ 999,6 ; P(30) ≈ 999,997 ✓ — de plus en plus proche, jamais égal. Interprétation concrète, qui vaut aussi des points : le modèle continu ne rend pas d'entiers, et P(20) ≈ 999,6 se lit « pratiquement tout le lycée » ; dire que le dernier élève est informé à un jour précis relève de la réalité, pas du modèle. Affirmer qu'un t₀ vérifie P(t₀) = 1000 confond une limite avec une valeur atteinte : cette égalité exigerait 9e^(−0,5t₀) = 0, donc e^(−0,5t₀) = 0, ce qu'aucun réel ne permet. Prétendre que le modèle plafonne à 900 fige le seuil calculé à la question précédente en maximum, alors que ce n'était qu'un palier franchi : P(15) ≈ 994,5 dépasse largement 900. Enfin, l'idée qu'une exponentielle « s'annule » une fois assez petite confond la valeur mathématique et l'affichage arrondi d'une calculatrice : e^(−0,5t) décroît vers 0 en restant strictement positive, indéfiniment.",
+      "difficulty": 3
+    }
+  ]
+}

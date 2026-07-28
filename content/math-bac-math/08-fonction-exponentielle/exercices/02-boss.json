@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des croissances comparées",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Calculer lim_{x→+∞} (2x − e^x)/(x² + x).",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "−1"
+        },
+        {
+          "id": "c",
+          "text": "−∞"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Numérateur et dénominateur tendent tous deux vers l'infini : il faut arbitrer, et l'arbitre est la hiérarchie ln x ≪ x^r ≪ e^x. On factorise chacun par son terme dominant : 2x − e^x = −e^x(1 − 2x/e^x) et x² + x = x²(1 + 1/x). Le quotient s'écrit donc −(e^x/x²) × (1 − 2x/e^x)/(1 + 1/x). Or e^x/x² → +∞ (croissances comparées, avec n = 1 et m = 2), tandis que 2x/e^x → 0 et 1/x → 0, donc la seconde fraction tend vers 1. La limite est −∞ ✓. Contrôle numérique indépendant : en x = 20, le numérateur vaut 40 − 4,85×10⁸ ≈ −4,85×10⁸ et le dénominateur 420, soit un quotient ≈ −1,15×10⁶ ; en x = 25, on obtient ≈ −1,11×10⁸ — la valeur s'effondre bien vers −∞ ✓. Le piège courant : croire que le polynôme du dénominateur écrase l'exponentielle du numérateur et conclure 0, c'est-à-dire inverser la hiérarchie — l'exponentielle bat TOUTE puissance. Lire la forme ∞/∞ comme valant 1 au signe près donne −1 ; et oublier que le terme dominant du numérateur est précédé d'un signe moins livre +∞.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Calculer lim_{x→+∞} (3^x + 3^(x+1))/(2^x + 2^(x−1)).",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/2"
+        },
+        {
+          "id": "b",
+          "text": "8/3"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Tout se joue en factorisant chaque somme par son exponentielle de base. Au numérateur, 3^(x+1) = 3^x × 3, donc 3^x + 3^(x+1) = 3^x(1 + 3) = 4 × 3^x. Au dénominateur, 2^(x−1) = 2^x/2, donc 2^x + 2^(x−1) = 2^x(1 + 1/2) = (3/2) × 2^x. Le quotient vaut alors (4/(3/2)) × 3^x/2^x = (8/3)(3/2)^x, en utilisant a^c/b^c = (a/b)^c. Comme 3/2 > 1, on a (3/2)^x → +∞, donc la limite est +∞ ✓. Contrôle numérique indépendant : en x = 10, le numérateur vaut 4 × 59049 = 236196 et le dénominateur 1,5 × 1024 = 1536, soit un quotient ≈ 153,8 ; en x = 20 il dépasse 8800 — la suite des valeurs explose ✓. Le piège courant : simplifier les bases terme à terme et annoncer 3/2, en oubliant que c'est l'exposant qui varie ; retenir seulement le facteur constant en croyant que (3/2)^x tend vers 1 donne 8/3 ; et inverser le quotient des bases, donc travailler avec (2/3)^x → 0, donne 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Calculer I = ∫₀¹ x e^(1−x) dx.",
+      "options": [
+        {
+          "id": "a",
+          "text": "I = e − 2"
+        },
+        {
+          "id": "b",
+          "text": "I = 2 − e"
+        },
+        {
+          "id": "c",
+          "text": "I = e − 1"
+        },
+        {
+          "id": "d",
+          "text": "I = 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Premier réflexe : le facteur x devant l'exponentielle est-il la dérivée de l'exposant ? Ici l'exposant est 1 − x, de dérivée −1, sans rapport avec x : ce n'est donc PAS un u′e^u, il faut une intégration par parties. On pose f(t) = t (donc f′(t) = 1) et g′(t) = e^(1−t) ; une primitive de e^(1−t) est g(t) = −e^(1−t), car (−e^(1−t))′ = −(−1)e^(1−t) = e^(1−t). Alors I = [−t e^(1−t)]₀¹ + ∫₀¹ e^(1−t) dt = (−1 × e⁰ − 0) + [−e^(1−t)]₀¹ = −1 + (−1 + e) = e − 2 ≈ 0,718 ✓. Contrôle numérique indépendant (Simpson, pas 0,25, valeurs 0 ; 0,529 ; 0,824 ; 0,963 ; 1) : I ≈ 0,718 ✓, et l'intégrande, positif et majoré par 1 sur [0, 1], ne peut donner qu'une aire comprise entre 0 et 1. Le piège courant : primitiver e^(1−t) en e^(1−t) (oubli du facteur 1/u′ = −1), ce qui donne 1 − (e − 1) = 2 − e ≈ −0,718 — une intégrale négative pour une fonction positive, donc impossible. Oublier le crochet et ne garder que ∫₀¹ e^(1−t)dt donne e − 1 ; et confondre l'énoncé avec ∫₀¹ t e^t dt, calculé dans le cours, donne 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit a, b et c trois réels et f la fonction définie sur ℝ par f(x) = (ax² + bx + c)e^(−x). Sa courbe passe par le point A(0, 1), admet en son point d'abscisse 1 une tangente parallèle à l'axe des abscisses, et vérifie f′(0) = −6. Déterminer a, b et c.",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = 3, b = −6, c = 1"
+        },
+        {
+          "id": "b",
+          "text": "a = 1, b = −5, c = 1"
+        },
+        {
+          "id": "c",
+          "text": "a = 1, b = −6, c = 1"
+        },
+        {
+          "id": "d",
+          "text": "a = −1, b = −5, c = 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sens inverse : trois conditions donnent trois équations, mais tout dépend d'une dérivée correcte. f est un produit, et (e^(−x))′ = −e^(−x) : f′(x) = (2ax + b)e^(−x) − (ax² + bx + c)e^(−x) = e^(−x)(−ax² + (2a − b)x + b − c). Condition 1, A(0, 1) sur la courbe : f(0) = c = 1. Condition 3, f′(0) = b − c = −6, donc b = −5. Condition 2, tangente horizontale en x = 1, c'est-à-dire f′(1) = 0 : e^(−1)(−a + 2a − b + b − c) = e^(−1)(a − c) = 0, et comme l'exponentielle ne s'annule jamais, a = c = 1. D'où a = 1, b = −5, c = 1 ✓. Vérification par la voie directe, sur f(x) = (x² − 5x + 1)e^(−x) : f(0) = 1 ✓ ; f′(x) = e^(−x)(−x² + 7x − 6), donc f′(0) = −6 ✓ et f′(1) = e^(−1)(−1 + 7 − 6) = 0 ✓ — les trois conditions sont satisfaites. Le piège courant : dériver le seul polynôme et écrire f′(x) = (2ax + b)e^(−x), ce qui donne b = −6 puis 2a + b = 0, soit a = 3, b = −6, c = 1. Lire f′(0) = b au lieu de b − c donne a = 1, b = −6, c = 1 ; et résoudre a − c = 0 comme a + c = 0 donne a = −1, b = −5, c = 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = ½x² − e^x. En combien de points la courbe de f coupe-t-elle l'axe des abscisses, et où ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En aucun point : f ne s'annule jamais sur ℝ"
+        },
+        {
+          "id": "b",
+          "text": "En exactement deux points, d'abscisses α ∈ ]−1, 0[ et β ∈ ]1, 2["
+        },
+        {
+          "id": "c",
+          "text": "En exactement un point, d'abscisse α ∈ ]−1, 0["
+        },
+        {
+          "id": "d",
+          "text": "En exactement un point, d'abscisse α ∈ ]0, 1["
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Trois étapes dépendantes : variations, limites, puis valeurs intermédiaires. Variations : f′(x) = x − e^x. Pour en connaître le signe, on étudie g(x) = x − e^x, de dérivée g′(x) = 1 − e^x, positive sur ]−∞, 0[ et négative sur ]0, +∞[ ; g atteint donc son maximum en 0, où g(0) = 0 − 1 = −1 < 0. Ainsi f′ < 0 sur ℝ tout entier : f est strictement décroissante. Limites : en −∞, ½x² → +∞ et e^x → 0, donc f → +∞ ; en +∞, on factorise f(x) = e^x(½x²/e^x − 1), et comme x²/e^x → 0 par croissances comparées, f → −∞. Strictement décroissante et continue de +∞ vers −∞, f s'annule donc en un point et un seul. Localisation : f(−1) = 0,5 − 0,368 = 0,132 > 0 et f(0) = 0 − 1 = −1 < 0, donc α ∈ ]−1, 0[ ✓. Contrôle numérique indépendant : f(−0,9) = 0,405 − 0,407 ≈ −0,002 et f(−0,91) = 0,414 − 0,403 ≈ +0,011, ce qui situe α ≈ −0,90, bien dans ]−1, 0[ ✓. Le piège courant : croire que f′(x) = x − e^x change de signe parce que x et e^x se croisent — l'équation x = e^x n'a aucune solution, puisque e^x ≥ x + 1 > x pour tout x ; on invente alors un second zéro et on répond deux points. Répondre aucun point revient à oublier le changement de signe entre les deux limites ; et placer α dans ]0, 1[ vient d'une erreur de signe sur f(−1).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule des affirmations suivantes est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La fonction x ↦ x^(3/2) est une primitive sur ]0, +∞[ de la fonction x ↦ (3/2)x^(1/2)"
+        },
+        {
+          "id": "b",
+          "text": "Pour tout réel x, la dérivée de x ↦ 2^x est x ↦ x·2^(x−1)"
+        },
+        {
+          "id": "c",
+          "text": "lim_{x→+∞} (2^x − e^x) = +∞"
+        },
+        {
+          "id": "d",
+          "text": "Pour tout rationnel r ≠ −1, x ↦ x^(r+1) est une primitive sur ]0, +∞[ de x ↦ x^r"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Seule l'affirmation a est vraie ✓ : le théorème des fonctions puissances donne (x^r)′ = r x^(r−1), donc (x^(3/2))′ = (3/2)x^(1/2) — c'est exactement la fonction annoncée. Vérification par une seconde voie, en repassant par la définition : x^(3/2) = e^((3/2)ln x), dont la dérivée vaut (3/2)(1/x)e^((3/2)ln x) = (3/2)x^(3/2)/x = (3/2)x^(1/2) ✓. b est fausse : l'exposant est ici la VARIABLE et non un entier fixe, la formule (xⁿ)′ = n x^(n−1) ne s'applique pas ; la bonne dérivée est (2^x)′ = (ln 2)2^x, ce qu'on retrouve en écrivant 2^x = e^(x ln 2). c est fausse : 2^x = e^(x ln 2) avec ln 2 ≈ 0,693 < 1, donc 2^x − e^x = e^x(e^(x(ln 2 − 1)) − 1) ; la parenthèse tend vers −1 et e^x vers +∞, la limite est −∞ — contrôle en x = 10 : 1024 − 22026 ≈ −21000, déjà très négatif. d est fausse : il manque le facteur 1/(r + 1), car (x^(r+1))′ = (r + 1)x^r ; la bonne primitive est x^(r+1)/(r + 1) + k. Le piège courant est justement de confondre a et d : la seule différence est ce coefficient, et c'est lui qui décide.",
+      "difficulty": 3
+    }
+  ]
+}
