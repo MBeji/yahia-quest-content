@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des aires et des volumes",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Calculer I = ∫₀^{π/3} x sin(3x) dx.",
+      "options": [
+        {
+          "id": "a",
+          "text": "I = π/3"
+        },
+        {
+          "id": "b",
+          "text": "I = π/9"
+        },
+        {
+          "id": "c",
+          "text": "I = −π/9"
+        },
+        {
+          "id": "d",
+          "text": "I = (π + 1)/9"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'intégrande est un produit dont un facteur, x, se simplifie en dérivant : c'est le signal de l'intégration par parties. On pose f(t) = t (donc f′(t) = 1) et g′(t) = sin(3t), donc g(t) = −cos(3t)/3 — le facteur 1/ω avec ω = 3 est ici décisif. La formule ∫ₐᵇ fg′ = [fg]ₐᵇ − ∫ₐᵇ f′g donne I = [−t cos(3t)/3]₀^{π/3} + (1/3)∫₀^{π/3} cos(3t)dt. Le crochet : en t = π/3, cos(π) = −1, donc −(π/3)(−1)/3 = π/9 ; en 0 le terme est nul. L'intégrale restante : (1/3)[sin(3t)/3]₀^{π/3} = (1/9)(sin π − sin 0) = 0. D'où I = π/9 ≈ 0,349 ✓. Contrôle numérique indépendant (Simpson, pas π/12) : les valeurs de l'intégrande sont 0 ; 0,185 ; 0,524 ; 0,555 ; 0, ce qui donne ≈ 0,350 — l'écart avec π/9 tient à la méthode ✓. Le piège courant : primitiver sin(3t) en −cos(3t) sans le facteur 1/3, ce qui triple le crochet et donne π/3 ; oublier le signe de la primitive (prendre g(t) = cos(3t)/3) retourne le crochet en −π/9 ; et lire sin π = 1 au lieu de 0 ajoute 1/9 de trop, soit (π + 1)/9.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est rapporté à un repère orthonormé. On considère C_f la courbe de f(x) = x² et C_g la droite d'équation y = x, représentées ci-dessous sur [0, 2]. Calculer, en u.a, l'aire de la partie du plan limitée par C_f, C_g et les droites x = 0 et x = 2.\n\n<svg viewBox=\"0 0 320 210\"><polygon points=\"50,180 160,142.5 132.5,158.91 105,170.63 77.5,177.66\" fill=\"#0f6e56\" fill-opacity=\"0.18\"/><polygon points=\"160,142.5 270,105 270,30 242.5,65.16 215,95.63 187.5,121.41\" fill=\"#b45309\" fill-opacity=\"0.18\"/><path d=\"M40 180 H305\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M50 195 V20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M305 180 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M50 20 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><polyline points=\"50,180 77.5,177.66 105,170.63 132.5,158.91 160,142.5 187.5,121.41 215,95.63 242.5,65.16 270,30\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"180\" x2=\"270\" y2=\"105\" stroke=\"#b45309\" stroke-width=\"2.4\"/><line x1=\"160\" y1=\"142.5\" x2=\"160\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><line x1=\"270\" y1=\"30\" x2=\"270\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><text x=\"160\" y=\"195\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">1</text><text x=\"270\" y=\"195\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">2</text><text x=\"228\" y=\"28\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\">y = x²</text><text x=\"274\" y=\"118\" font-size=\"12\" font-weight=\"700\" fill=\"#b45309\">y = x</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2/3 u.a"
+        },
+        {
+          "id": "b",
+          "text": "5/6 u.a"
+        },
+        {
+          "id": "c",
+          "text": "1 u.a"
+        },
+        {
+          "id": "d",
+          "text": "1/6 u.a"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'aire entre deux courbes vaut ∫₀² |f(x) − g(x)|dx : le signe de f − g s'étudie AVANT tout calcul. Ici f(x) − g(x) = x² − x = x(x − 1), qui s'annule en 0 et en 1 : la différence est négative sur [0, 1] (la droite est au-dessus, comme sur la figure) et positive sur [1, 2] (la parabole passe devant). Chasles impose donc deux morceaux. Sur [0, 1] : ∫₀¹ (x − x²)dx = [x²/2 − x³/3]₀¹ = 1/2 − 1/3 = 1/6. Sur [1, 2] : ∫₁² (x² − x)dx = [x³/3 − x²/2]₁² = (8/3 − 2) − (1/3 − 1/2) = 2/3 + 1/6 = 5/6. Aire totale = 1/6 + 5/6 = 1 u.a ✓. Contrôle indépendant par ordre de grandeur : l'écart |x² − x| vaut au plus 1/4 sur [0, 1] et 2 en x = 2 ; une aire proche de 1 sur une largeur 2 est cohérente, alors que 1/6 serait bien trop peu ✓. Le piège courant : intégrer f − g sans valeur absolue ni découpage, ce qui donne ∫₀² (x² − x)dx = 2/3 — un bilan algébrique où le morceau [0, 1] se retranche au lieu de s'ajouter ; ne garder que la partie où la parabole domine donne 5/6, et ne garder que la première donne 1/6.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé. On fait tourner autour de l'axe (Ox) l'arc de courbe d'équation y = sin x + cos x, pour 0 ≤ x ≤ π/2. Quel est le volume du solide de révolution engendré ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "V = π²/2 + π"
+        },
+        {
+          "id": "b",
+          "text": "V = π²/2"
+        },
+        {
+          "id": "c",
+          "text": "V = 2π"
+        },
+        {
+          "id": "d",
+          "text": "V = π/2 + 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La formule est V = π∫ₐᵇ f²(x)dx : c'est le CARRÉ qui s'intègre (la section d'abscisse x est un disque de rayon f(x)). La fonction f(x) = sin x + cos x est bien continue et positive sur [0, π/2]. On développe : f²(x) = sin²x + 2 sin x cos x + cos²x = 1 + sin(2x), le double produit valant exactement sin(2x). Alors ∫₀^{π/2} (1 + sin 2x)dx = [x]₀^{π/2} + [−cos(2x)/2]₀^{π/2} = π/2 + (1/2 + 1/2) = π/2 + 1. D'où V = π(π/2 + 1) = π²/2 + π ≈ 8,08 ✓. Contrôle numérique indépendant : f² varie entre 1 (aux bornes) et 2 (en π/4), donc ∫₀^{π/2} f² est compris entre π/2 ≈ 1,57 et π ≈ 3,14 ; la valeur π/2 + 1 ≈ 2,57 est dans cet encadrement, et 2,57 × π ≈ 8,08 ✓. Le piège courant : oublier le carré et calculer π∫₀^{π/2}(sin x + cos x)dx = π[−cos x + sin x]₀^{π/2} = 2π — l'erreur la plus fréquente du chapitre ; développer le carré en oubliant le double produit laisse ∫1 = π/2 et donne π²/2 ; et perdre le facteur π en cours de route livre π/2 + 1, qui n'est même pas un volume.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit F la fonction définie sur ℝ par F(x) = ∫ₓ^{2x} dt/(1 + t²). Calculer F′(1).",
+      "options": [
+        {
+          "id": "a",
+          "text": "F′(1) = 2/5"
+        },
+        {
+          "id": "b",
+          "text": "F′(1) = −3/10"
+        },
+        {
+          "id": "c",
+          "text": "F′(1) = 1/10"
+        },
+        {
+          "id": "d",
+          "text": "F′(1) = −1/10"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les DEUX bornes dépendent de x : on commence par les séparer avec Chasles. La fonction t ↦ 1/(1 + t²) est continue sur ℝ ; en notant G(x) = ∫₀ˣ dt/(1 + t²), on a F(x) = ∫₀^{2x} − ∫₀ˣ = G(2x) − G(x). Le théorème de dérivation d'une intégrale à borne variable donne G′ = f, donc F′(x) = 2f(2x) − f(x) = 2/(1 + 4x²) − 1/(1 + x²) — le facteur u′(x) = 2 vient de la borne 2x. En x = 1 : F′(1) = 2/5 − 1/2 = 4/10 − 5/10 = −1/10 ✓. Contrôle numérique indépendant par le taux d'accroissement : F(1) ≈ 0,3217 et F(1,01) ≈ 0,3208 (valeurs de l'aire sous 1/(1 + t²)), soit un taux ≈ −0,09, proche de −0,1 ✓ — et le signe négatif se comprend : l'intégrande décroît vite, donc l'intervalle [x, 2x] qui s'élargit gagne moins qu'il ne perd. Le piège courant : oublier le facteur u′ = 2 et écrire 1/(1 + 4x²) − 1/(1 + x²), soit 1/5 − 1/2 = −3/10 ; ne dériver que la borne du haut donne 2/5 ; et intervertir les deux bornes (dériver la borne du bas en la comptant positivement) fournit l'opposé, 1/10.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "À l'aide de l'inégalité de la moyenne, donner un encadrement de I = ∫₂⁴ dx/(x² − x + 1).",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/13 ≤ I ≤ 1/3"
+        },
+        {
+          "id": "b",
+          "text": "2/13 ≤ I ≤ 2/3"
+        },
+        {
+          "id": "c",
+          "text": "1/26 ≤ I ≤ 1/6"
+        },
+        {
+          "id": "d",
+          "text": "6 ≤ I ≤ 26"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On encadre d'abord l'intégrande. Le trinôme u(x) = x² − x + 1 a pour dérivée 2x − 1 > 0 sur [2, 4] : il est croissant, de u(2) = 3 à u(4) = 13, et reste strictement positif. En passant à l'inverse, l'ordre se RENVERSE : 1/13 ≤ 1/(x² − x + 1) ≤ 1/3 pour tout x de [2, 4]. L'inégalité de la moyenne, avec m = 1/13 et M = 1/3 sur un intervalle de longueur b − a = 2, donne m(b − a) ≤ I ≤ M(b − a), soit 2/13 ≤ I ≤ 2/3 ✓, c'est-à-dire 0,154 ≤ I ≤ 0,667. Contrôle numérique indépendant (Simpson avec les valeurs 1/3 ; 1/7 ; 1/13) : I ≈ (1/3)(0,333 + 4 × 0,143 + 0,077) ≈ 0,33, bien à l'intérieur de l'encadrement ✓. Le piège courant : encadrer la valeur moyenne f̄ et livrer ce résultat pour l'intégrale, en oubliant de multiplier par la longueur b − a : on obtient 1/13 ≤ I ≤ 1/3 ; diviser par b − a au lieu de multiplier donne 1/26 ≤ I ≤ 1/6 ; et encadrer le dénominateur sans renverser les inégalités par passage à l'inverse conduit à 6 ≤ I ≤ 26, un encadrement absurde puisque l'intégrande est inférieur à 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule des affirmations suivantes est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si f est continue sur [a, b] et si ∫ₐᵇ f(x)dx = 0, alors f est nulle sur [a, b]"
+        },
+        {
+          "id": "b",
+          "text": "Pour toute fonction f continue sur ℝ et tout réel a, ∫_{−a}ᵃ f(x)dx = 2∫₀ᵃ f(x)dx"
+        },
+        {
+          "id": "c",
+          "text": "∫₀^{2π} |sin x| dx = 4"
+        },
+        {
+          "id": "d",
+          "text": "Si f est continue et positive sur [a, b], le volume engendré par la rotation de C_f autour de (Ox) vaut π∫ₐᵇ f(x)dx"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Seule l'affirmation c est vraie ✓ : la fonction |sin| est périodique de période π (et non 2π), et ∫₀^π sin x dx = [−cos x]₀^π = 2 ; l'intervalle [0, 2π] contient exactement 2 périodes, donc l'intégrale vaut 2 × 2 = 4. Vérification par une seconde voie : sin est positive sur [0, π] et négative sur [π, 2π], donc ∫₀^{2π}|sin| = ∫₀^π sin x dx − ∫_π^{2π} sin x dx = 2 − (−2) = 4 ✓. a est fausse : une intégrale nulle n'entraîne pas une fonction nulle — ∫_{−1}¹ x dx = 0 alors que x n'est nul qu'en 0 ; c'est la réciproque fautive de la positivité. b est fausse : le doublement n'a lieu que si f est PAIRE — avec f(x) = x et a = 1, le membre de gauche vaut 0 et celui de droite 1. d est fausse : c'est f², pas f, qui s'intègre dans la formule du volume, car la section est un disque de rayon f(x) et d'aire πf²(x). Le piège courant est de compter les périodes de |sin| avec la période 2π de sin, ce qui divise le résultat par deux, et d'appliquer les théorèmes de parité ou de volume sans vérifier leur hypothèse.",
+      "difficulty": 3
+    }
+  ]
+}

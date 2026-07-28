@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec les intégrales",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Que vaut [x² − 3x]₁⁴ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−6"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La notation [F(x)]ₐᵇ se lit « F(x) pris entre a et b » et vaut F(b) − F(a). Ici F(4) = 16 − 12 = 4 et F(1) = 1 − 3 = −2, donc [x² − 3x]₁⁴ = 4 − (−2) = 6 ✓. L'option c s'arrête à F(4) = 4 et oublie de retrancher la valeur en la borne du bas. L'option b retranche 2 au lieu de −2 : c'est le signe de F(1) qui a été perdu. L'option a est le résultat obtenu en inversant les bornes, [x² − 3x]₄¹ = −2 − 4 = −6.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Calculer ∫₁² (3x² + 1)dx.",
+      "options": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        },
+        {
+          "id": "d",
+          "text": "22"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une primitive de 3x² + 1 est F(x) = x³ + x (contrôle par dérivation : F′(x) = 3x² + 1 ✓). Donc ∫₁² (3x² + 1)dx = [x³ + x]₁² = (8 + 2) − (1 + 1) = 10 − 2 = 8 ✓. L'option b s'arrête à F(2) = 10 sans retrancher F(1) = 2. L'option c donne f(2) = 12 + 1 = 13, la valeur de la fonction et non de l'intégrale. L'option d garde le coefficient 3 devant x³ au lieu de 3x³/3 = x³ : elle calcule [3x³ + x]₁² = 26 − 4 = 22.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Calculer ∫₀^π sin x dx.",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une primitive de sin est −cos (contrôle : (−cos x)′ = sin x ✓), donc ∫₀^π sin x dx = [−cos x]₀^π = −cos π + cos 0 = 1 + 1 = 2 ✓. Contrôle de plausibilité : sin est positive sur [0, π] et y culmine à 1 sur une largeur π ≈ 3,14, donc l'intégrale est positive et inférieure à 3,14. L'option a oublie le signe moins de la primitive et calcule [cos x]₀^π = −1 − 1 = −2. L'option b conclut à tort de sin 0 = sin π = 0 que l'intégrale est nulle : ce sont les valeurs de la primitive aux bornes qui comptent, pas celles de f. L'option c ne correspond qu'à la moitié du calcul, ∫₀^{π/2} sin x dx.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f une fonction continue sur ℝ telle que ∫₁³ f(x)dx = 5 et ∫₅³ f(x)dx = −7. Que vaut ∫₁⁵ f(x)dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "35"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Il faut d'abord remettre la seconde intégrale dans le bon sens : ∫₃⁵ f(x)dx = −∫₅³ f(x)dx = 7. La relation de Chasles donne ensuite ∫₁⁵ f = ∫₁³ f + ∫₃⁵ f = 5 + 7 = 12 ✓. L'option a additionne les données telles quelles, 5 + (−7) = −2, sans retourner les bornes de la seconde. L'option b soustrait au lieu d'additionner après avoir retourné les bornes : 7 − 5 = 2. L'option d multiplie 5 par 7, alors que Chasles est une relation additive.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la valeur moyenne de la fonction f définie par f(x) = 4x sur l'intervalle [0, 3] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "18"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On calcule d'abord l'intégrale : ∫₀³ 4x dx = [2x²]₀³ = 18 − 0 = 18. On divise ensuite par la longueur de l'intervalle : f̄ = 18/(3 − 0) = 6 ✓. Contrôle : f est affine, sa moyenne est donc atteinte au milieu, et f(1,5) = 6 ✓. L'option d s'arrête à l'intégrale et oublie le facteur 1/(b − a) : c'est le piège central de la valeur moyenne. L'option c donne f(3) = 12, la valeur maximale et non la moyenne. L'option a divise f(3) = 12 par 3 au lieu de diviser l'intégrale.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f définie sur [0, 2] par f(x) = x + 1. La partie colorée ci-dessous est limitée par C_f, l'axe des abscisses et les droites d'équations x = 0 et x = 2. Quelle est son aire, en u.a ?\n\n<svg viewBox=\"0 0 300 200\"><polygon points=\"60,170 60,130 180,50 180,170\" fill=\"#0f6e56\" fill-opacity=\"0.18\"/><path d=\"M35 170 H280\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M60 190 V25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M280 170 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M60 25 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><line x1=\"48\" y1=\"138\" x2=\"216\" y2=\"26\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"50\" x2=\"180\" y2=\"170\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><line x1=\"56\" y1=\"130\" x2=\"64\" y2=\"130\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"120\" y1=\"166\" x2=\"120\" y2=\"174\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"120\" y=\"186\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">1</text><text x=\"180\" y=\"186\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">2</text><text x=\"52\" y=\"186\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">0</text><text x=\"50\" y=\"134\" text-anchor=\"end\" font-size=\"12\" fill=\"#0f172a\">1</text><text x=\"222\" y=\"30\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\">C_f</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f est continue et positive sur [0, 2], donc l'aire vaut ∫₀² (x + 1)dx = [x²/2 + x]₀² = (2 + 2) − 0 = 4 u.a ✓. Contrôle géométrique : la partie colorée est un trapèze de bases f(0) = 1 et f(2) = 3 et de hauteur 2, d'aire (1 + 3)/2 × 2 = 4 ✓. L'option a oublie de primitiver le terme constant 1 et calcule [x²/2]₀² = 2. L'option d oublie le diviseur 2 de x²/2 et calcule [x² + x]₀² = 6. L'option b donne f(2) = 3, l'ordonnée du point le plus haut, qui n'est pas une aire.",
+      "difficulty": 2
+    }
+  ]
+}

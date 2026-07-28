@@ -1,0 +1,94 @@
+{
+  "title": "🏛️ Annales Bac ⭐⭐⭐⭐ : Sujet type — Aires signées et station de pompage",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "Partie A. Soit f la fonction définie sur [0 ; 3] par f(x) = x³ − 3x² + 2x. Vérifier que f(x) = x(x − 1)(x − 2), puis calculer l'intégrale ∫₀³ f(x)dx.",
+      "options": [
+        { "id": "a", "text": "9/4" },
+        { "id": "b", "text": "11/4" },
+        { "id": "c", "text": "0" },
+        { "id": "d", "text": "−9/4" }
+      ],
+      "correctOption": "a",
+      "explanation": "La factorisation d'abord : x(x − 1)(x − 2) = x(x² − 3x + 2) = x³ − 3x² + 2x ✓ — elle servira pour le signe à la question suivante, mais le calcul de l'intégrale se mène sur la forme développée. Une primitive de f est F(x) = x⁴/4 − x³ + x² (contrôle par dérivation, le seul qui vaille : F′(x) = 4x³/4 − 3x² + 2x = x³ − 3x² + 2x = f(x) ✓). D'où ∫₀³ f(x)dx = F(3) − F(0) = (81/4 − 27 + 9) − 0 = 81/4 − 18 = (81 − 72)/4 = 9/4 = 2,25 ✓. Contrôle par découpage, utile pour la suite du sujet : F(1) = 1/4 − 1 + 1 = 1/4, F(2) = 4 − 8 + 4 = 0, donc ∫₀¹ f = 1/4, ∫₁² f = 0 − 1/4 = −1/4 et ∫₂³ f = 9/4 − 0 = 9/4 ; la somme 1/4 − 1/4 + 9/4 = 9/4 ✓ redonne bien le même nombre. La valeur 11/4 est ∫₀³ |f(x)|dx, l'AIRE de la partie comprise entre la courbe et l'axe — c'est l'objet de la question suivante, pas de celle-ci ; l'intégrale demandée est un bilan signé. La valeur 0 suppose que la bosse négative compense exactement la bosse positive, ce que la symétrie apparente du polynôme suggère mais que le calcul dément : la bosse de droite, sur [2 ; 3], est bien plus grosse que les deux autres. La valeur −9/4 correspond à ∫₃⁰ f, c'est-à-dire aux bornes échangées.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Partie A (suite). Toujours avec f(x) = x³ − 3x² + 2x = x(x − 1)(x − 2) sur [0 ; 3], dont on a établi que ∫₀³ f(x)dx = 9/4. Calculer l'aire, en u.a, de la partie du plan limitée par la courbe C_f, l'axe des abscisses et les droites d'équations x = 0 et x = 3.",
+      "options": [
+        { "id": "a", "text": "11/4" },
+        { "id": "b", "text": "9/4" },
+        { "id": "c", "text": "5/2" },
+        { "id": "d", "text": "1/2" }
+      ],
+      "correctOption": "a",
+      "explanation": "L'aire vaut ∫₀³ |f(x)|dx, donc tout commence par le signe de f, que la forme factorisée x(x − 1)(x − 2) livre immédiatement. Sur ]0 ; 1[ : x > 0, x − 1 < 0, x − 2 < 0, produit de deux facteurs négatifs, donc f > 0. Sur ]1 ; 2[ : x > 0, x − 1 > 0, x − 2 < 0, donc f < 0. Sur ]2 ; 3[ : les trois facteurs sont positifs, donc f > 0. On découpe en 1 et en 2 (Chasles) et on prend la valeur absolue de chaque morceau. Avec F(x) = x⁴/4 − x³ + x² : ∫₀¹ f = 1/4, ∫₁² f = −1/4 et ∫₂³ f = 9/4. Aire = 1/4 + 1/4 + 9/4 = 11/4 = 2,75 u.a ✓. Contrôle : l'aire est nécessairement supérieure ou égale à |∫₀³ f| = 9/4, et l'écart 11/4 − 9/4 = 1/2 vaut exactement le double du morceau négatif ✓ — c'est toujours ainsi que se rattrape une partie sous l'axe. La valeur 9/4 est piégeuse car deux erreurs y mènent : recopier l'intégrale de la question précédente à la place de l'aire, ou ne découper qu'en un seul des deux zéros intérieurs (avec un découpage en x = 1 seulement, on obtient 1/4 + |−1/4 + 9/4| = 1/4 + 2 = 9/4 ; avec un découpage en x = 2 seulement, |0| + 9/4 = 9/4). La valeur 5/2 = 1/4 + 9/4 oublie purement et simplement le morceau négatif [1 ; 2], comme s'il ne comptait pas. La valeur 1/2 = 1/4 + 1/4 s'arrête à x = 2 et laisse de côté le plus gros morceau de la figure.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie A (fin). Toujours avec f(x) = x³ − 3x² + 2x sur [0 ; 3]. Pour tout réel λ de [0 ; 3], on pose A(λ) = ∫₀^λ f(x)dx. Déterminer toutes les valeurs de λ de [0 ; 3] pour lesquelles A(λ) = 0.",
+      "options": [
+        { "id": "a", "text": "λ = 0 et λ = 2" },
+        { "id": "b", "text": "λ = 0, λ = 1 et λ = 2 (les zéros de f)" },
+        { "id": "c", "text": "λ = 0 uniquement" },
+        { "id": "d", "text": "λ = 0, λ = 2 et λ = 3" }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec F(x) = x⁴/4 − x³ + x², qui vérifie F(0) = 0, on a directement A(λ) = F(λ) − F(0) = λ⁴/4 − λ³ + λ². On factorise : A(λ) = (λ²/4)(λ² − 4λ + 4) = (λ²/4)(λ − 2)², c'est-à-dire A(λ) = [λ(λ − 2)/2]². L'expression est donc un carré, toujours positive ou nulle, et elle s'annule exactement quand λ(λ − 2) = 0, soit λ = 0 ou λ = 2 ✓. Vérifications directes : A(2) = 4 − 8 + 4 = 0 ✓, A(1) = 1/4 − 1 + 1 = 1/4 ≠ 0, A(3) = 81/4 − 27 + 9 = 9/4 ≠ 0. Interprétation, et c'est le cœur du sujet : A(2) = 0 signifie que sur [0 ; 2] la bosse positive de [0 ; 1] et la bosse négative de [1 ; 2] ont exactement la même aire — elles se compensent. La proposition la plus tentante confond les zéros de A avec ceux de f. Or A′ = f (A est la primitive de f qui s'annule en 0) : les zéros de f sont les points où A admet un EXTREMUM, pas ceux où A s'annule. En λ = 1, f change de signe du plus au moins, donc A atteint un maximum local, égal à 1/4 : la primitive y est maximale, certainement pas nulle. La réponse « λ = 0 uniquement » oublie la compensation exacte en λ = 2, et croire que A ne s'annule qu'au départ revient à croire qu'une aire une fois gagnée ne peut plus être perdue. Enfin ajouter λ = 3 ignore que A(3) = 9/4, valeur déjà calculée en début de Partie A.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B. Une station de pompage fonctionne 12 heures d'affilée. À l'heure t, son débit est d(t) = 60 + 40 sin(πt/6) (en m³/h), pour t ∈ [0 ; 12]. On note V(t) le volume pompé depuis l'instant 0, le bassin étant vide à t = 0. Calculer le volume total pompé pendant les 12 heures.",
+      "options": [
+        { "id": "a", "text": "720 m³" },
+        { "id": "b", "text": "Environ 872,8 m³, soit 720 + 480/π" },
+        { "id": "c", "text": "1200 m³" },
+        { "id": "d", "text": "60 m³" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le volume pompé est l'intégrale du débit : V(12) = ∫₀¹² (60 + 40 sin(πt/6))dt. Par linéarité, on sépare les deux termes. Le terme constant donne ∫₀¹² 60 dt = [60t]₀¹² = 720. Le terme sinusoïdal : une primitive de sin(πt/6) est −(6/π)cos(πt/6) (contrôle par dérivation : (−(6/π)cos(πt/6))′ = (6/π) × (π/6) × sin(πt/6) = sin(πt/6) ✓), donc ∫₀¹² 40 sin(πt/6)dt = 40 × [−(6/π)cos(πt/6)]₀¹² = −(240/π)(cos(2π) − cos 0) = −(240/π)(1 − 1) = 0. Total : V(12) = 720 + 0 = 720 m³ ✓. Le résultat s'explique aussi sans calcul : le sinus décrit exactement une période sur [0 ; 12], sa partie positive sur [0 ; 6] compense exactement sa partie négative sur [6 ; 12], donc la station pompe en moyenne son débit de base, 60 m³/h pendant 12 h ✓. Contrôle d'encadrement : le débit reste compris entre 20 et 100 m³/h, donc le volume est coincé entre 240 et 1200 m³, et 720 y figure ✓. La valeur 720 + 480/π compte deux fois la contribution positive du sinus et jamais sa contribution négative : c'est ce qu'on obtient en intégrant sur [0 ; 6] puis en doublant, ce qui suppose à tort que la seconde moitié ressemble à la première. La valeur 1200 m³ prend le débit MAXIMAL 100 m³/h pendant 12 h : c'est le majorant de l'encadrement, pas le volume. La valeur 60 m³ est le débit moyen exprimé en m³/h, pas un volume — les unités suffisent à l'écarter.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B (suite). Même station : d(t) = 60 + 40 sin(πt/6) m³/h sur [0 ; 12], bassin vide à t = 0, et l'on a établi que le volume total sur les 12 heures vaut 720 m³. Calculer le volume pompé pendant les SIX PREMIÈRES heures, c'est-à-dire V(6) = ∫₀⁶ d(t)dt.",
+      "options": [
+        { "id": "a", "text": "360 + 480/π m³, soit environ 512,8 m³" },
+        { "id": "b", "text": "360 m³, la moitié du total" },
+        { "id": "c", "text": "360 + 240/π m³, soit environ 436,4 m³" },
+        { "id": "d", "text": "360 − 480/π m³, soit environ 207,2 m³" }
+      ],
+      "correctOption": "a",
+      "explanation": "On reprend la même décomposition par linéarité. Terme constant : ∫₀⁶ 60 dt = 360. Terme sinusoïdal : ∫₀⁶ 40 sin(πt/6)dt = 40 × [−(6/π)cos(πt/6)]₀⁶ = −(240/π)(cos π − cos 0) = −(240/π)(−1 − 1) = 480/π ≈ 152,8. D'où V(6) = 360 + 480/π ≈ 512,8 m³ ✓. Contrôle par la valeur moyenne : sur [0 ; 6] l'argument πt/6 parcourt [0 ; π], le sinus y est positif de moyenne 2/π ≈ 0,637, donc le débit moyen vaut environ 60 + 40 × 0,637 ≈ 85,5 m³/h, et 85,5 × 6 ≈ 513 ✓. Second contrôle, décisif en examen : le complément ∫₆¹² d = 720 − 512,8 = 207,2 m³ doit être le volume des six dernières heures, où le sinus est négatif — il est bien plus petit que celui des six premières, et la somme redonne exactement 720 ✓. La valeur 360 m³ suppose que la contribution du sinus s'annule aussi sur [0 ; 6] : c'est vrai sur une période ENTIÈRE, faux sur une demi-période, où le sinus garde un signe constant. La valeur 360 + 240/π perd un facteur 2 : elle oublie que cos π − cos 0 vaut −2 et non −1, l'erreur d'évaluation la plus fréquente sur les bornes trigonométriques. La valeur 360 − 480/π est le volume des six DERNIÈRES heures : c'est la bonne méthode appliquée au mauvais intervalle, ou un signe perdu en chemin.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B (fin). Même station : d(t) = 60 + 40 sin(πt/6) m³/h sur [0 ; 12], et le volume pompé depuis l'instant 0 vaut V(t) = 60t + (240/π)(1 − cos(πt/6)) m³. Le bassin de réception, vide à t = 0, a une capacité de 520 m³. Déborde-t-il, et si oui pendant quelle heure de fonctionnement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, pendant la septième heure : le seuil de 520 m³ est franchi entre t = 6 et t = 7"
+        },
+        {
+          "id": "b",
+          "text": "Oui, pendant la sixième heure : le seuil de 520 m³ est franchi entre t = 5 et t = 6"
+        },
+        {
+          "id": "c",
+          "text": "Oui, pendant la neuvième heure : le seuil de 520 m³ est franchi entre t = 8 et t = 9"
+        },
+        {
+          "id": "d",
+          "text": "Non : le volume plafonne à 512,8 m³, la valeur atteinte au bout de six heures"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux temps, exactement comme dans un sujet d'examen. D'abord la monotonie : V′(t) = d(t) = 60 + 40 sin(πt/6) ≥ 60 − 40 = 20 > 0, donc V est strictement croissante sur [0 ; 12] — le bassin ne se vide jamais, et le seuil, une fois franchi, l'est définitivement. Ensuite l'encadrement du seuil, en évaluant V aux heures rondes. V(6) = 360 + (240/π)(1 − cos π) = 360 + (240/π) × 2 = 360 + 480/π ≈ 512,8 m³, valeur déjà obtenue à la question précédente, encore inférieure à 520. V(7) = 420 + (240/π)(1 − cos(7π/6)) ; or cos(7π/6) = −√3/2 ≈ −0,866, donc V(7) ≈ 420 + 76,4 × 1,866 ≈ 420 + 142,6 = 562,6 m³, supérieur à 520. Comme V est continue et strictement croissante, elle prend la valeur 520 une fois et une seule, entre t = 6 et t = 7 : le bassin déborde pendant la septième heure ✓. La proposition « pendant la sixième heure » est démentie par son propre calcul : V(6) ≈ 512,8 est INFÉRIEUR à 520, donc le seuil n'est pas encore atteint à la fin de la sixième heure — c'est le piège de la lecture rapide, où l'on voit deux nombres qui encadrent presque et l'on conclut trop vite. La proposition « pendant la neuvième heure » est fausse pour la raison inverse : V(8) = 480 + (240/π)(1 − cos(4π/3)) = 480 + 76,4 × 1,5 ≈ 594,6 dépasse déjà 520, donc le débordement a eu lieu AVANT la huitième heure ; un seuil se franchit à la première traversée, pas à la dernière. Quant à nier le débordement, c'est confondre le maximum du DÉBIT, atteint en t = 3, avec un plafond du VOLUME : le débit reste minoré par 20 m³/h, donc V croît sans jamais plafonner, jusqu'à 720 m³ au bout des 12 heures.",
+      "difficulty": 3
+    }
+  ]
+}

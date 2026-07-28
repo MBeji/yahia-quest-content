@@ -1,0 +1,91 @@
+{
+  "title": "🗿 Histoire ⭐⭐⭐ : Le Canal des Sept Vannes",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 6,
+  "questions": [
+    {
+      "prompt": "Épisode 1 — Le Canal des Sept Vannes traverse la cité morte de Qurra. Aucune jauge n'y survit : les vannes n'affichent que des débits, jamais des volumes. Devant la première vanne, le Gardien des Écluses te toise : « Mon débit à la minute t vaut d(t) = 8 − 2t mètres cubes par minute, sur les six premières minutes. Quand d devient négatif, l'eau refoule et repart en arrière. Dis-moi le volume NET qui a franchi ma vanne entre t = 0 et t = 6, ou reste sur la berge. »",
+      "options": [
+        { "id": "a", "text": "12 m³" },
+        { "id": "b", "text": "16 m³" },
+        { "id": "c", "text": "20 m³" },
+        { "id": "d", "text": "2 m³" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le volume net est l'intégrale du débit, signe compris : ∫₀⁶ (8 − 2t)dt. Une primitive de 8 − 2t est G(t) = 8t − t² (contrôle par dérivation : G′(t) = 8 − 2t ✓), donc le volume net vaut [8t − t²]₀⁶ = (48 − 36) − 0 = 12 m³ ✓. Le détail éclaire les autres propositions : le débit s'annule en t = 4 (car 8 − 2t = 0), il est positif avant et négatif après. Sur [0 ; 4] il est entré ∫₀⁴ (8 − 2t)dt = 32 − 16 = 16 m³, puis sur [4 ; 6] il est ressorti ∫₄⁶ (8 − 2t)dt = 12 − 16 = −4 m³, c'est-à-dire 4 m³ de refoulement. Bilan : 16 − 4 = 12 m³ ✓, cohérent avec le calcul direct — deux chemins, un seul nombre. La réponse 16 m³ s'arrête à l'instant où le débit s'annule : elle ignore les deux dernières minutes, pendant lesquelles l'eau repart. La réponse 20 m³ additionne 16 et 4 : c'est ∫₀⁶ |d(t)|dt, le volume total BRASSÉ dans les deux sens, une aire, pas un bilan — le Gardien demandait le net. La réponse 2 m³ est 12 divisé par 6 : c'est le débit moyen sur la fenêtre, exprimé en m³/min, pas un volume.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Épisode 2 — La herse se lève sur la Galerie du Chariot. Un chariot de maintenance parcourt le rail entre t = 0 et t = 4 secondes, avec la vitesse algébrique v(t) = t² − 4t + 3 (en m/s) : positive, elle le fait avancer, négative, reculer. « Le rail est usé, gronde le Gardien. Donne-moi la DISTANCE TOTALE réellement parcourue par le chariot, aller et retour confondus. »",
+      "options": [
+        { "id": "a", "text": "4 m" },
+        { "id": "b", "text": "4/3 m" },
+        { "id": "c", "text": "8/3 m" },
+        { "id": "d", "text": "0 m" }
+      ],
+      "correctOption": "a",
+      "explanation": "La distance totale est ∫₀⁴ |v(t)|dt : on rend chaque morceau positif AVANT de sommer. Il faut donc commencer par le signe de v. Le trinôme t² − 4t + 3 se factorise en (t − 1)(t − 3) : il est positif sur [0 ; 1[, négatif sur ]1 ; 3[, positif sur ]3 ; 4]. On découpe en 1 et en 3 (relation de Chasles). Avec la primitive V(t) = t³/3 − 2t² + 3t (contrôle : V′(t) = t² − 4t + 3 ✓), on a V(0) = 0, V(1) = 1/3 − 2 + 3 = 4/3, V(3) = 9 − 18 + 9 = 0 et V(4) = 64/3 − 32 + 12 = 4/3. D'où ∫₀¹ v = 4/3, ∫₁³ v = 0 − 4/3 = −4/3 et ∫₃⁴ v = 4/3 − 0 = 4/3. En valeur absolue : 4/3 + 4/3 + 4/3 = 4 m ✓. Contrôle : le chariot avance de 4/3 m, recule d'autant, puis ré-avance de 4/3 m — trois phases de même longueur, ce qui donne bien 4 m au compteur. La réponse 4/3 m est le DÉPLACEMENT ∫₀⁴ v = 4/3 − 4/3 + 4/3 : la marche arrière y annule une partie de la marche avant, alors qu'elle use le rail tout autant. La réponse 8/3 m oublie l'un des trois morceaux, typiquement le dernier : découper en t = 1 sans voir que v redevient positive en t = 3 est l'erreur reine ici. La réponse 0 m suppose une compensation totale ; elle est doublement fausse, car même le déplacement n'est pas nul, et une distance nulle signifierait un chariot immobile.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 3 — Salle des Turbines. Une turbine délivre la puissance P(t) = 6t − t² (en kW) pendant six heures, t ∈ [0 ; 6]. Le Gardien pose sa lanterne sur le cadran : « Ma turbine ne travaille jamais à régime constant. Pourtant, il existe des instants où elle délivre EXACTEMENT sa puissance moyenne des six heures. Nomme-les tous, et la porte cède. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "t = 3 − √3 h et t = 3 + √3 h (soit environ 1,27 h et 4,73 h)"
+        },
+        { "id": "b", "text": "t = 3 h uniquement, le milieu de l'intervalle" },
+        {
+          "id": "c",
+          "text": "t = 0 h et t = 6 h, les extrémités de l'intervalle"
+        },
+        {
+          "id": "d",
+          "text": "Aucun : une puissance variable n'atteint jamais sa valeur moyenne"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux temps. D'abord la puissance moyenne : P̄ = 1/(6 − 0) · ∫₀⁶ (6t − t²)dt. Une primitive est G(t) = 3t² − t³/3 (contrôle : G′(t) = 6t − t² ✓), donc ∫₀⁶ P = [3t² − t³/3]₀⁶ = 108 − 72 = 36 kWh et P̄ = 36/6 = 6 kW. Contrôle : P est un arc de parabole nul en 0 et en 6, de maximum P(3) = 18 − 9 = 9 kW ; la moyenne d'un tel arc vaut les deux tiers du maximum, soit 6 kW ✓. Ensuite les instants : on résout P(t) = 6, soit 6t − t² = 6, c'est-à-dire t² − 6t + 6 = 0. Le discriminant vaut 36 − 24 = 12, donc t = (6 ± 2√3)/2 = 3 ± √3. Les deux solutions, environ 1,27 h et 4,73 h, appartiennent bien à [0 ; 6] ✓ (vérification : P(3 − √3) = 6(1,268) − 1,608 = 7,608 − 1,608 = 6 kW ✓). Le corollaire de l'inégalité de la moyenne garantissait au moins un tel instant, puisque P est continue ; ici la symétrie de la parabole en donne deux. La réponse t = 3 confond l'instant du MAXIMUM (9 kW) avec celui de la moyenne : la moyenne n'est atteinte au milieu que pour une fonction affine. La réponse t = 0 et t = 6 pointe les instants où la puissance est NULLE, l'exact opposé. Et nier l'existence de tels instants contredit frontalement le corollaire du cours : toute fonction continue atteint sa valeur moyenne sur l'intervalle.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 4 — La Citerne Aveugle. Une conduite y déverse avec le débit d(t) = 10/(1 + t²) (en L/min) pendant la première minute, t ∈ [0 ; 1]. « Nul ne connaît de primitive à ce débit-là, murmure le Gardien, alors nul ne connaît le volume V. On l'encadre. J'ai déjà obtenu 5 ≤ V ≤ 10 par l'inégalité de la moyenne, et je le juge grossier. Partage la minute en deux demi-minutes et donne-moi l'encadrement par rectangles. »",
+      "options": [
+        { "id": "a", "text": "6,5 ≤ V ≤ 9" },
+        { "id": "b", "text": "13 ≤ V ≤ 18" },
+        { "id": "c", "text": "5 ≤ V ≤ 10" },
+        { "id": "d", "text": "6,5 ≤ V ≤ 10" }
+      ],
+      "correctOption": "a",
+      "explanation": "La méthode des rectangles exige d'abord une fonction MONOTONE : ici 1 + t² croît sur [0 ; 1], donc d décroît, de d(0) = 10 à d(1) = 10/2 = 5, en passant par d(0,5) = 10/1,25 = 8. Sur chaque demi-minute, le rectangle de hauteur la plus petite valeur minore l'aire, celui de hauteur la plus grande valeur la majore — et comme d décroît, la plus petite valeur est atteinte à droite. Minorant : 0,5 × d(0,5) + 0,5 × d(1) = 0,5 × 8 + 0,5 × 5 = 4 + 2,5 = 6,5. Majorant : 0,5 × d(0) + 0,5 × d(0,5) = 5 + 4 = 9. D'où 6,5 ≤ V ≤ 9 ✓, un encadrement d'amplitude 2,5 au lieu de 5 : le pas a été divisé par deux, l'amplitude aussi. Contrôle de cohérence : le nouvel encadrement doit être INCLUS dans l'ancien, et c'est bien le cas puisque 5 ≤ 6,5 et 9 ≤ 10 ✓. L'encadrement 13 ≤ V ≤ 18 additionne les hauteurs 8 + 5 et 10 + 8 sans les multiplier par la largeur 0,5 : c'est l'erreur la plus fréquente du procédé, et elle se repère à l'œil — un volume supérieur à 10 L est impossible puisque le débit ne dépasse jamais 10 L/min pendant une minute. L'encadrement 5 ≤ V ≤ 10 est simplement celui du Gardien, non amélioré. Et 6,5 ≤ V ≤ 10 ne fait que la moitié du travail : le minorant a été affiné, le majorant grossier a été conservé.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 5 — La Salle des Cartes. Sur le mur, une courbe gravée : C_f, représentant une fonction f continue sur [0 ; 6], négative sur [0 ; 2] et positive sur [2 ; 6]. Deux nombres sont burinés dessous : ∫₀⁶ f(x)dx = 5 et ∫₀² f(x)dx = −3. « L'AIRE totale de la partie comprise entre la courbe et l'axe, sur [0 ; 6] : donne-la-moi en u.a. » <svg viewBox=\"0 0 320 200\"><path d=\"M55 110 Q87 165 120 110 Z\" fill=\"#b45309\" fill-opacity=\"0.20\"/><path d=\"M120 110 Q200 30 280 110 Z\" fill=\"#0f6e56\" fill-opacity=\"0.20\"/><path d=\"M35 110 H305\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M305 110 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M55 190 V20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M55 20 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><path d=\"M55 110 Q87 165 120 110 Q200 30 280 110\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"49\" y=\"126\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">0</text><text x=\"120\" y=\"126\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">2</text><text x=\"280\" y=\"126\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">6</text><text x=\"287\" y=\"96\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\">C_f</text></svg>",
+      "options": [
+        { "id": "a", "text": "11 u.a" },
+        { "id": "b", "text": "5 u.a" },
+        { "id": "c", "text": "8 u.a" },
+        { "id": "d", "text": "2 u.a" }
+      ],
+      "correctOption": "a",
+      "explanation": "L'aire cherchée est ∫₀⁶ |f(x)|dx, et la valeur absolue impose de découper aux changements de signe. La relation de Chasles fournit le morceau manquant : ∫₀⁶ f = ∫₀² f + ∫₂⁶ f, donc ∫₂⁶ f = 5 − (−3) = 8. Sur [0 ; 2] la fonction est négative, l'aire de ce morceau vaut donc l'OPPOSÉ de son intégrale, soit −(−3) = 3. Sur [2 ; 6] elle est positive, l'aire vaut directement 8. Aire totale : 3 + 8 = 11 u.a ✓. Contrôle : l'aire doit être supérieure ou égale à la valeur absolue de l'intégrale (c'est le corollaire |∫f| ≤ ∫|f|), et 11 ≥ |5| ✓ ; l'écart 11 − 5 = 6 est exactement le double du morceau négatif, ce qui est la signature d'une fonction qui change de signe une fois. La réponse 5 u.a donne l'intégrale à la place de l'aire : c'est le bilan algébrique, où la bosse du dessous se retranche de celle du dessus. La réponse 8 u.a ne retient que la partie positive [2 ; 6] et jette la partie négative, alors qu'une aire ne se jette pas. La réponse 2 u.a calcule 5 − 3 : elle applique Chasles avec le mauvais signe, en oubliant que ∫₀² f vaut −3 et non +3 — soustraire un nombre négatif, c'est ajouter.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 6 — La Porte du Retour. Un dernier bassin, vide à l'instant t = 0, se remplit avec le débit d(t) = 3t² + 1 (en m³/min), pour t ≥ 0. Le Gardien s'efface devant la porte : « Elle s'ouvrira quand le bassin contiendra exactement 10 mètres cubes. Dis-moi au bout de combien de minutes — et sois précis, la porte ne pardonne pas. »",
+      "options": [
+        { "id": "a", "text": "2 minutes" },
+        { "id": "b", "text": "Environ 2,15 minutes" },
+        { "id": "c", "text": "Environ 1,73 minute" },
+        { "id": "d", "text": "10 minutes" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le volume accumulé au bout de λ minutes est V(λ) = ∫₀^λ (3t² + 1)dt = [t³ + t]₀^λ = λ³ + λ (contrôle par dérivation : (t³ + t)′ = 3t² + 1 = d(t) ✓, et V(0) = 0 ✓ puisque le bassin est vide). On résout donc λ³ + λ = 10. La valeur λ = 2 convient : 8 + 2 = 10 ✓. Et elle est la SEULE, car la fonction λ ↦ λ³ + λ est strictement croissante sur [0 ; +∞[ (sa dérivée 3λ² + 1 est strictement positive) : une fonction strictement croissante ne prend chaque valeur qu'une fois. Contrôle : V(1) = 2 m³ et V(3) = 30 m³, l'instant cherché est bien coincé entre 1 et 3 ✓. La réponse 2,15 min résout λ³ = 10 : elle a oublié le terme +1 du débit, donc le terme +λ du volume — un terme discret mais qui pèse 2 m³ sur les 10 demandés. La réponse 1,73 min, soit √3, résout d(t) = 10 : elle cherche l'instant où le DÉBIT atteint 10 m³/min, pas celui où le VOLUME atteint 10 m³ — confondre le taux et la quantité accumulée, c'est confondre une fonction et sa primitive. La réponse 10 min suppose un débit constant égal au débit initial d(0) = 1 m³/min ; or le débit croît vite, et le bassin est plein cinq fois plus tôt.",
+      "difficulty": 3
+    }
+  ]
+}
