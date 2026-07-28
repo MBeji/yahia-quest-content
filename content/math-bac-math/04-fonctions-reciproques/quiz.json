@@ -146,27 +146,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Soit f continue et strictement décroissante sur [0, 4], avec f(0) = 7 et f(4) = −1. Quel est l'intervalle J = f([0, 4]) ?",
+      "prompt": "Soit f continue et strictement décroissante sur [−2, 5], avec f(−2) = 8 et f(5) = 3. Quel est l'intervalle J = f([−2, 5]) ?",
       "options": [
         {
           "id": "a",
-          "text": "[7, −1]"
+          "text": "[8, 3]"
         },
         {
           "id": "b",
-          "text": "[−1, 7]"
+          "text": "[3, 8]"
         },
         {
           "id": "c",
-          "text": "[0, 4]"
+          "text": "[−2, 5]"
         },
         {
           "id": "d",
-          "text": "[−1, 4]"
+          "text": "[3, 5]"
         }
       ],
       "correctOption": "b",
-      "explanation": "Pour f continue et strictement croissante, f([a, b]) = [f(a), f(b)] ; quand f est DÉCROISSANTE les bornes s'échangent : f([a, b]) = [f(b), f(a)] = [−1, 7] ✓. Le contrôle de bon sens : f décroît de 7 jusqu'à −1, donc elle prend toutes les valeurs entre −1 et 7. L'option a applique la formule de la fonction croissante et produit une écriture qui n'est même pas un intervalle (la borne de gauche doit être la plus petite). L'option c confond l'intervalle de départ I avec l'intervalle image f(I). L'option d mélange une borne de f(I) et une borne de I.",
+      "explanation": "Pour f continue et strictement croissante, f([a, b]) = [f(a), f(b)] ; quand f est DÉCROISSANTE les bornes s'échangent : f([a, b]) = [f(b), f(a)] = [3, 8] ✓. Le contrôle de bon sens : f décroît de 8 jusqu'à 3, donc elle prend toutes les valeurs entre 3 et 8. L'option a applique la formule de la fonction croissante et produit une écriture qui n'est même pas un intervalle (la borne de gauche doit être la plus petite). L'option c confond l'intervalle de départ I avec l'intervalle image f(I). L'option d mélange une borne de f(I) et une borne de I.",
       "difficulty": 2
     },
     {

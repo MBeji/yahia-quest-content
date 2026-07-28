@@ -15,7 +15,7 @@
         { "id": "d", "text": "V(t) = 5 − 4/(t + 1)³" }
       ],
       "correctOption": "a",
-      "explanation": "Un débit est une dérivée : V′ = d, donc V est une primitive de d. On pose u(t) = t + 1, dont la dérivée vaut 1 : d = 12 u′/u², qui est la ligne u′/uⁿ de la table avec n = 2. Elle donne 12 × u^(−1)/(−1) = −12/(t + 1). Donc V(t) = −12/(t + 1) + c, et la donnée V(0) = 5 impose −12 + c = 5, soit c = 17 : V(t) = 17 − 12/(t + 1) ✓. Vérification par dérivation : V′(t) = 12/(t + 1)² ✓ et V(0) = 17 − 12 = 5 ✓ (contrôle : V(5) = 17 − 2 = 15 m³, le bassin s'est bien rempli). L'expression 5 − 12/(t + 1) recopie la valeur initiale à la place de la constante : c'est l'erreur reine de la condition initiale — c ne vaut V(0) que si la primitive choisie s'annule en 0, ce qui n'est pas le cas ici (elle vaut −12). L'expression 5 + 12/(t + 1) se trompe de signe : sa dérivée est −12/(t + 1)², donc elle décrit un bassin qui se VIDE. Enfin 5 − 4/(t + 1)³ augmente l'exposant du dénominateur au lieu de l'augmenter au sens algébrique : la règle porte sur l'exposant −n, qui passe de −2 à −1, jamais de −2 à −3.",
+      "explanation": "Un débit est une dérivée : V′ = d, donc V est une primitive de d. On pose u(t) = t + 1, dont la dérivée vaut 1 : d = 12 u′/u², qui est la ligne u′/uⁿ de la table avec n = 2. Elle donne 12 × u^(−1)/(−1) = −12/(t + 1). Donc V(t) = −12/(t + 1) + c, et la donnée V(0) = 5 impose −12 + c = 5, soit c = 17 : V(t) = 17 − 12/(t + 1) ✓. Vérification par dérivation : V′(t) = 12/(t + 1)² ✓ et V(0) = 17 − 12 = 5 ✓ (contrôle : V(5) = 17 − 2 = 15 m³, le bassin s'est bien rempli). L'expression 5 − 12/(t + 1) recopie la valeur initiale à la place de la constante : c'est l'erreur reine de la condition initiale — c ne vaut V(0) que si la primitive choisie s'annule en 0, ce qui n'est pas le cas ici (elle vaut −12). L'expression 5 + 12/(t + 1) se trompe de signe : sa dérivée est −12/(t + 1)², donc elle décrit un bassin qui se VIDE. Enfin 5 − 4/(t + 1)³ augmente l'exposant du dénominateur au lieu de le diminuer : la règle porte sur l'exposant algébrique −n, qui passe de −2 à −1, jamais de −2 à −3.",
       "difficulty": 2
     },
     {
@@ -55,27 +55,27 @@
       "difficulty": 3
     },
     {
-      "prompt": "Épisode 5 — Salle des Tambours. Deux tambours identiques tournent, mais le second est réglé deux fois plus vite. Le Maître pose une énigme : « Sur ℝ, F est une primitive d'une fonction f. Le second tambour accumule au taux g(t) = f(2t). Mon apprenti prétend que G(t) = F(2t) fait l'affaire. » Quelle réponse, avec sa justification, est correcte ?",
+      "prompt": "Épisode 5 — Salle des Tambours. Le roulement ralentit, s'éteint exactement à la deuxième heure, puis repart de plus belle : le taux d'accumulation du son vaut f(t) = |t − 2| sur ℝ, et sa courbe forme un angle en t = 2. Le Maître ricane : « Cette fonction-là n'est même pas dérivable en 2. Admet-elle des primitives sur ℝ ? » Quelle réponse, avec sa justification, est correcte ?",
       "options": [
         {
           "id": "a",
-          "text": "Faux : (F(2t))′ = 2f(2t), donc la bonne primitive est G(t) = F(2t)/2"
+          "text": "Oui : f est continue sur ℝ, et le théorème d'existence n'exige rien d'autre que la continuité"
         },
         {
           "id": "b",
-          "text": "Vrai : composer par une fonction affine ne modifie pas la primitive"
+          "text": "Non : une fonction non dérivable en un point n'admet aucune primitive sur un intervalle contenant ce point"
         },
         {
           "id": "c",
-          "text": "Faux : la bonne primitive est G(t) = 2F(2t), car il faut compenser le doublement de la vitesse"
+          "text": "Oui sur ]−∞, 2] et sur [2, +∞[ séparément, mais jamais sur ℝ tout entier"
         },
         {
           "id": "d",
-          "text": "Faux : g n'admet pas de primitive, puisqu'on ne connaît pas f explicitement"
+          "text": "Oui, et cette primitive est unique, puisque f est définie sur ℝ tout entier"
         }
       ],
       "correctOption": "a",
-      "explanation": "Tout se décide par la dérivation d'une composée : (F(2t))′ = 2 × F′(2t) = 2f(2t). La fonction F(2t) a donc pour dérivée le DOUBLE du taux voulu ; pour retomber sur f(2t), il faut diviser par 2, et la bonne primitive est G(t) = F(2t)/2 ✓. Contrôle sur un cas concret : avec f(x) = x, on prend F(x) = x²/2, alors g(t) = f(2t) = 2t, dont une primitive est t² ; et effectivement F(2t)/2 = (4t²/2)/2 = t² ✓, tandis que F(2t) = 2t² se dérive en 4t, soit le double ✓. L'apprenti a donc tort : affirmer que la composition par une fonction affine ne change rien, c'est la même illusion que d'écrire sin(3x) pour primitive de cos(3x) au lieu de (1/3)sin(3x) — c'est exactement le facteur 1/ω du cours. Multiplier par 2 au lieu de diviser aggrave l'écart : (2F(2t))′ = 4f(2t). Quant à nier l'existence d'une primitive, c'est oublier le théorème admis : si f est continue, g : t ↦ f(2t) l'est aussi, donc elle admet des primitives — connaître f explicitement n'a jamais été une condition d'existence.",
+      "explanation": "Le théorème admis du cours dit : toute fonction CONTINUE sur un intervalle y admet au moins une primitive. Or f(t) = |t − 2| est continue sur ℝ ; l'angle en t = 2 casse la dérivabilité de f, jamais sa continuité. Donc f admet des primitives sur ℝ ✓. On peut même en exhiber une : F(t) = −(t − 2)²/2 pour t < 2 et F(t) = (t − 2)²/2 pour t ≥ 2. Vérification par dérivation : pour t > 2, F′(t) = t − 2 = |t − 2| ✓ ; pour t < 2, F′(t) = −(t − 2) = 2 − t = |t − 2| ✓ ; et en t = 2 les deux dérivées latérales valent 0, donc F est bien dérivable en 2 avec F′(2) = 0 = |2 − 2| ✓ — c'est bien une primitive sur ℝ entier. Exiger la dérivabilité de f, c'est confondre l'hypothèse du théorème avec la conclusion : c'est F qui doit être dérivable, pas f. Découper en ]−∞, 2] et [2, +∞[ est inutile ici, car ℝ est déjà un intervalle : ce réflexe sert quand le domaine n'en est PAS un, comme ]−∞, 0[ ∪ ]0, +∞[. Enfin l'unicité est fausse : dès qu'une primitive existe, F + c en est une pour toute constante c, donc il y en a une infinité — il faut une condition initiale pour en isoler une seule.",
       "difficulty": 3
     },
     {

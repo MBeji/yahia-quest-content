@@ -103,15 +103,15 @@
       "difficulty": 3
     },
     {
-      "prompt": "Épisode 6 — Dernière salle : le Puits du Retour. Pour remonter à la surface, tu dois donner l'ensemble des réels x positifs vérifiant l'inscription gravée sur la margelle : ∛(x²) − 3·∛x + 2 = 0. Quel est cet ensemble de solutions ?",
+      "prompt": "Épisode 6 — Dernière salle : le Puits du Retour. Pour remonter à la surface, tu dois donner l'ensemble des réels x positifs vérifiant l'inscription gravée sur la margelle : x − 5·√x + 6 = 0. Quel est cet ensemble de solutions ?",
       "options": [
-        { "id": "a", "text": "{1 ; 8}" },
-        { "id": "b", "text": "{1 ; 2}" },
-        { "id": "c", "text": "{8}" },
-        { "id": "d", "text": "{1 ; 4}" }
+        { "id": "a", "text": "{4 ; 9}" },
+        { "id": "b", "text": "{2 ; 3}" },
+        { "id": "c", "text": "{9}" },
+        { "id": "d", "text": "{8 ; 27}" }
       ],
       "correctOption": "a",
-      "explanation": "On reconnaît une équation du second degré déguisée. Comme ∛(x²) = (∛x)² (règle (ⁿ√a)ᵖ = ⁿ√(aᵖ)), on pose t = ∛x, avec t ≥ 0 puisque x ≥ 0 : l'équation devient t² − 3t + 2 = 0, de racines t = 1 et t = 2, toutes deux positives donc recevables. Il reste à REVENIR à x par l'équivalence t = ∛x ⟺ x = t³ : t = 1 donne x = 1, t = 2 donne x = 8. L'ensemble des solutions est {1 ; 8} ✓ (contrôle pour x = 8 : ∛64 − 3∛8 + 2 = 4 − 6 + 2 = 0 ✓ ; pour x = 1 : 1 − 3 + 2 = 0 ✓). Répondre {1 ; 2} s'arrête à l'inconnue auxiliaire t : c'est l'erreur classique du changement de variable oublié en chemin — ces valeurs résolvent t² − 3t + 2 = 0, pas l'équation posée. Ne garder que 8 élimine à tort t = 1, pourtant positif. Et {1 ; 4} élève t au carré au lieu du cube : l'indice du radical est 3, donc on remonte par x = t³.",
+      "explanation": "On reconnaît une équation du second degré déguisée. Comme x = (√x)² pour x ≥ 0, on pose t = √x, avec t ≥ 0 : l'équation devient t² − 5t + 6 = 0, de racines t = 2 et t = 3, toutes deux positives donc recevables. Il reste à REVENIR à x par l'équivalence t = √x ⟺ x = t² : t = 2 donne x = 4, t = 3 donne x = 9. L'ensemble des solutions est {4 ; 9} ✓ (contrôle pour x = 4 : 4 − 5 × 2 + 6 = 0 ✓ ; pour x = 9 : 9 − 5 × 3 + 6 = 0 ✓). Répondre {2 ; 3} s'arrête à l'inconnue auxiliaire t : c'est l'erreur classique du changement de variable oublié en chemin — ces valeurs résolvent t² − 5t + 6 = 0, pas l'équation posée. Ne garder que 9 élimine à tort t = 2, pourtant positif. Et {8 ; 27} remonte par x = t³ : l'indice du radical est 2, donc c'est x = t² qu'il faut écrire.",
       "difficulty": 3
     }
   ]

@@ -68,6 +68,10 @@ En pratique : pour tracer C_{f⁻¹}, tu **ne calcules rien** — tu replies C_f
 
 _Exemple_ — si f est une bijection de [−2, +∞[ sur [−1, +∞[ avec f(−2) = −1, f(0) = 1 et f(2) = 3, alors f⁻¹(−1) = −2, f⁻¹(1) = 0 et f⁻¹(3) = 2 : on lit la courbe « à l'envers », en entrant par l'axe des ordonnées.
 
+Ce pliage **échange les rôles des deux axes** : ce que C_f fait à l'horizontale, C_{f⁻¹} le fait à la verticale. En particulier, une **asymptote horizontale y = ℓ de C_f devient une asymptote verticale x = ℓ de C_{f⁻¹}** — et, dans l'autre sens, une asymptote verticale x = ℓ de C_f se replie en asymptote horizontale y = ℓ de C_{f⁻¹}. La justification tient en une phrase : dire que f(x) tend vers ℓ quand x devient arbitrairement grand, c'est exactement dire que f⁻¹(y) devient arbitrairement grand quand y tend vers ℓ. C'est le même mécanisme qui transformera plus loin une **tangente** horizontale de C_f (cas f′(a) = 0) en tangente verticale de C_{f⁻¹}.
+
+_Exemple_ — f(x) = x/(x + 1) sur I = ]−1, +∞[ : f′(x) = 1/(x + 1)² > 0, donc f est strictement croissante, avec lim_{x→−1⁺} f = −∞ et lim_{x→+∞} f = 1, d'où J = ]−∞, 1[. C_f a l'asymptote verticale x = −1 et l'asymptote horizontale y = 1. De y = x/(x + 1) on tire x = y/(1 − y), donc f⁻¹(y) = y/(1 − y) : elle a bien l'asymptote **horizontale y = −1** (quand y → −∞) et l'asymptote **verticale x = 1** (quand y → 1⁻) ✓ — les deux asymptotes ont échangé leur nature.
+
 > 🗡️ Si a vérifie f(a) = a, alors f⁻¹(a) = a : le point (a, a) appartient **aux deux courbes**, sur Δ. Résoudre f(x) = x fournit donc directement des points d'intersection de C_f et C_{f⁻¹} — un réflexe très rentable aux examens.
 
 ## 🧭 Réciproque d'une fonction continue strictement monotone

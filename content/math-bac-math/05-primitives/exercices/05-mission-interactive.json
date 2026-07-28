@@ -19,7 +19,7 @@
       "difficulty": 1
     },
     {
-      "prompt": "Chasse à l'erreur — un mobile se déplace sur un axe. Son accélération est a(t) = 6t − 2 (en m/s²), sa vitesse initiale v(0) = 1 m/s et sa position initiale x(0) = 4 m. Voici la copie d'un élève :\n① v est une primitive de a, donc v(t) = 3t² − 2t + c.\n② v(0) = 1 donne c = 1, d'où v(t) = 3t² − 2t + 1.\n③ x est une primitive de v, donc x(t) = t³ − 2t² + t + c′.\n④ x(0) = 4 donne c′ = 4, d'où x(t) = t³ − 2t² + t + 4.\nUne seule étape contient une erreur de calcul : laquelle ?",
+      "prompt": "Chasse à l'erreur — un mobile se déplace sur un axe. Son accélération est a(t) = 12t − 6 (en m/s²), sa vitesse initiale v(0) = 2 m/s et sa position initiale x(0) = 4 m. Voici la copie d'un élève :\n① v est une primitive de a, donc v(t) = 6t² − 6t + c.\n② v(0) = 2 donne c = 2, d'où v(t) = 6t² − 6t + 2.\n③ x est une primitive de v, donc x(t) = 2t³ − 6t² + 2t + c′.\n④ x(0) = 4 donne c′ = 4, d'où x(t) = 2t³ − 6t² + 2t + 4.\nUne seule étape contient une erreur de calcul : laquelle ?",
       "options": [
         { "id": "a", "text": "L'étape ①" },
         { "id": "b", "text": "L'étape ②" },
@@ -27,7 +27,7 @@
         { "id": "d", "text": "L'étape ④" }
       ],
       "correctOption": "c",
-      "explanation": "L'erreur est à l'étape ③ : une primitive de −2t est −t² et non −2t². Le facteur oublié est la division par le nouvel exposant 2. Étape corrigée : x(t) = t³ − t² + t + c′, et la conclusion devient x(t) = t³ − t² + t + 4 ✓ (contrôle : (t³ − t² + t + 4)′ = 3t² − 2t + 1 = v(t) ✓ et x(0) = 4 ✓ ; la version fautive se dérive en 3t² − 4t + 1, qui n'est pas la vitesse trouvée en ②). Les autres étapes tiennent : ① primitive correctement 6t − 2 en 3t² − 2t et pense bien à la constante ; ② applique la condition initiale au bon endroit, sur la vitesse ; ④ est arithmétiquement juste — l'élève applique correctement x(0) = 4 à SON expression, il propage simplement l'erreur commise juste avant. C'est le piège de ce genre de copie : la dernière ligne fausse n'est pas toujours celle qui contient la faute. Rappel de méthode : deux primitivations réclament deux conditions initiales, une pour chaque constante.",
+      "explanation": "L'erreur est à l'étape ③ : une primitive de −6t est −3t² et non −6t². Le facteur oublié est la division par le nouvel exposant 2. Étape corrigée : x(t) = 2t³ − 3t² + 2t + c′, et la conclusion devient x(t) = 2t³ − 3t² + 2t + 4 ✓ (contrôle : (2t³ − 3t² + 2t + 4)′ = 6t² − 6t + 2 = v(t) ✓ et x(0) = 4 ✓ ; la version fautive se dérive en 6t² − 12t + 2, qui n'est pas la vitesse trouvée en ②). Les autres étapes tiennent : ① primitive correctement 12t − 6 en 6t² − 6t et pense bien à la constante ; ② applique la condition initiale au bon endroit, sur la vitesse ; ④ est arithmétiquement juste — l'élève applique correctement x(0) = 4 à SON expression, il propage simplement l'erreur commise juste avant. C'est le piège de ce genre de copie : la dernière ligne fausse n'est pas toujours celle qui contient la faute. Rappel de méthode : deux primitivations réclament deux conditions initiales, une pour chaque constante.",
       "difficulty": 2
     },
     {

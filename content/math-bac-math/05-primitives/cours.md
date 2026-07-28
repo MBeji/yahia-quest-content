@@ -18,6 +18,10 @@ _Exemple détaillé_ — vérifions que F(x) = tan x est une primitive de f(x) =
 
 _Exemple_ — sur [1, +∞[, F(x) = 1/x a pour dérivée F′(x) = −1/x² : F est une primitive de f(x) = −1/x² sur cet intervalle.
 
+L'égalité F′ = f a une conséquence immédiate : **le signe de f donne le sens de variation de ses primitives**. Là où f est strictement positive, F est croissante ; là où f est strictement négative, F est décroissante ; et si f s'annule en changeant de signe en x₀, alors F admet un **extremum** en x₀. Étudier les variations d'une primitive ne demande donc aucun calcul supplémentaire : il suffit de lire le tableau de signes de f.
+
+_Exemple_ — pour f(x) = 2x sur ℝ, les primitives sont les F(x) = x² + c. Comme f est négative sur ]−∞, 0] et positive sur [0, +∞[, chacune de ces primitives décroît puis croît, et admet un minimum en 0 — ce que confirme la courbe de x² + c.
+
 Toute fonction admet-elle une primitive ? Le programme répond par un théorème, admis :
 
 > **Théorème (admis) — existence** — « Toute fonction continue sur un intervalle I admet au moins une primitive sur I. »
