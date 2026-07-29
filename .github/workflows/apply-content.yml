@@ -122,6 +122,42 @@ jobs:
             *) echo "::warning::Utilisateur inattendu dans l'URL — on tente." ;;
           esac
 
+      # « password authentication failed » ne dit RIEN de ce qui cloche : mot de
+      # passe faux, espace collé au bout, retour à la ligne avalé par le champ
+      # GitHub, ou caractère spécial non encodé. Quatre causes, un seul message.
+      # On décrit donc la chaîne reçue SANS jamais l'exposer : longueur et classes
+      # de caractères seulement, jamais le contenu. Assez pour comparer avec ce
+      # qu'on croit avoir collé, trop peu pour reconstituer quoi que ce soit.
+      - name: Diagnostic — décrire l'URL reçue sans la révéler
+        run: |
+          set -uo pipefail
+          RAW="${PROD_SUPABASE_DB_URL}"
+          # 1. Blancs parasites : la cause de paste la plus fréquente, et invisible.
+          case "$RAW" in
+            *[[:space:]]) echo "::error::La valeur du secret se termine par une espace ou un retour à la ligne — le mot de passe transmis n'est donc pas celui que tu crois. Recoller la chaîne sans blanc final." ; exit 1 ;;
+            [[:space:]]*) echo "::error::La valeur du secret commence par un blanc. Recoller la chaîne sans blanc initial." ; exit 1 ;;
+          esac
+          # 2. Décrire le mot de passe : entre le premier ':' après '//' et le dernier '@'.
+          CREDS="${RAW#*//}"; CREDS="${CREDS%@*}"
+          PWD_PART="${CREDS#*:}"
+          LEN=${#PWD_PART}
+          NON_ALNUM=$(printf '%s' "$PWD_PART" | tr -d '[:alnum:]' | wc -c)
+          echo "Mot de passe reçu : ${LEN} caractères, dont ${NON_ALNUM} non alphanumériques."
+          case "$PWD_PART" in
+            *%*) echo "Il contient un « % » — donc du percent-encodage, ou un « % » littéral qu'il faudrait écrire %25." ;;
+          esac
+          case "$PWD_PART" in
+            *"[YOUR-PASSWORD]"*|*"["*"]"*)
+              echo "::error::Le gabarit de Supabase a été collé tel quel : le mot de passe est encore entre crochets. Remplacer [YOUR-PASSWORD], crochets compris." ; exit 1 ;;
+          esac
+          if [ "$LEN" -lt 8 ]; then
+            echo "::error::Mot de passe de ${LEN} caractères — trop court pour un mot de passe Supabase. La chaîne est probablement tronquée ou mal découpée."
+            exit 1
+          fi
+          [ "$NON_ALNUM" -eq 0 ] \
+            && echo "Purement alphanumérique : aucun encodage requis, une cause d'erreur en moins." \
+            || echo "::warning::Il reste ${NON_ALNUM} caractère(s) non alphanumérique(s) : chacun doit être percent-encodé (@ → %40, / → %2F, # → %23, ? → %3F, & → %26, + → %2B, : → %3A, * → %2A). Si l'authentification échoue ensuite, c'est presque toujours ça."
+
       - name: Checkout corpus (ce repo)
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
