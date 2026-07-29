@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des équations tordues",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé. Soit ℰ l'ellipse d'équation x²/16 + y²/4 = 1 et M₀(2 ; √3). Déterminer une équation de la tangente à ℰ en M₀.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x − 2√3 y = 8"
+        },
+        {
+          "id": "b",
+          "text": "x + √3 y = 2"
+        },
+        {
+          "id": "c",
+          "text": "x + 2√3 y = 8"
+        },
+        {
+          "id": "d",
+          "text": "√3 x + 8y = 16"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Avant tout dédoublement, un réflexe : M₀ est-il SUR la conique ? 4/16 + 3/4 = 1/4 + 3/4 = 1 ✓ — la règle du dédoublement est donc licite. 1) On dédouble x² en x₀x et y² en y₀y dans x²/16 + y²/4 = 1 : la tangente est 2x/16 + √3y/4 = 1, soit x/8 + √3y/4 = 1, et en multipliant par 8 : x + 2√3 y = 8 ✓. 2) Contrôle n° 1, le point : 2 + 2√3·√3 = 2 + 6 = 8 ✓, M₀ est bien sur la droite. 3) Contrôle n° 2, la tangence par la racine double — la seule preuve qui distingue une tangente d'une sécante. On tire x = 8 − 2√3y et on substitue dans x² + 4y² = 16 : (8 − 2√3y)² + 4y² = 16, soit 64 − 32√3y + 12y² + 4y² = 16, soit 16y² − 32√3y + 48 = 0, soit y² − 2√3y + 3 = 0, c'est-à-dire (y − √3)² = 0. Racine DOUBLE en y = √3 : la droite touche ℰ en M₀ et nulle part ailleurs ✓. Le piège courant, et le plus retors ici : recopier le signe − de l'hyperbole et écrire 2x/16 − √3y/4 = 1, soit x − 2√3 y = 8. Cette droite EST une vraie tangente à ℰ — la substitution donne y² + 2√3y + 3 = (y + √3)² = 0 —, mais au point (2 ; −√3), le symétrique de M₀, et elle ne passe pas par M₀ : 2 − 6 = −4 ≠ 8. Voilà pourquoi une réponse « tangente » ne se valide jamais sans vérifier d'abord le point. Le distracteur x + √3 y = 2 exécute l'erreur de dédoubler avec a et b au lieu de a² et b² : 2x/4 + √3y/2 = 1 ; il ne passe même pas par M₀ (2 + 3 = 5 ≠ 2), et sa substitution donne 7y² − 4√3y − 12 = 0, de discriminant 384 > 0 : c'est une sécante. Enfin √3x + 8y = 16 vient d'intervertir x₀ et y₀ (√3x/16 + 2y/4 = 1) ; substitution : 19y² − 64y + 52 = 0, de discriminant 144 > 0, sécante elle aussi.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé. Soit 𝒞 la courbe d'équation 4x² + 9y² − 16x + 18y − 11 = 0. Déterminer son centre et son excentricité.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Centre (−2 ; 1), excentricité √5/3"
+        },
+        {
+          "id": "b",
+          "text": "Centre (2 ; −1), excentricité √5/3"
+        },
+        {
+          "id": "c",
+          "text": "Centre (2 ; −1), excentricité √5/2"
+        },
+        {
+          "id": "d",
+          "text": "Centre (2 ; −1), excentricité 2/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "1) Le genre en trois secondes : A = 4 et B = 9, donc AB = 36 > 0 — ellipse, cercle, un point ou le vide ; et A ≠ B interdit le cercle. 2) On complète les deux carrés : 4x² − 16x = 4(x² − 4x) = 4[(x − 2)² − 4] = 4(x − 2)² − 16, et 9y² + 18y = 9(y² + 2y) = 9[(y + 1)² − 1] = 9(y + 1)² − 9. L'équation devient 4(x − 2)² + 9(y + 1)² − 16 − 9 − 11 = 0, soit 4(x − 2)² + 9(y + 1)² = 36, et en divisant par 36 : (x − 2)²/9 + (y + 1)²/4 = 1. 3) Lecture : centre O′(2 ; −1), a = 3, b = 2, donc a > b (grand axe horizontal), c = √(9 − 4) = √5 et e = c/a = √5/3 ≈ 0,745 < 1 ✓ — une excentricité d'ellipse doit toujours être inférieure à 1, c'est le premier garde-fou. Contrôle n° 1, en réinjectant les sommets dans l'équation DE DÉPART : sommet principal (5 ; −1) donne 100 + 9 − 80 − 18 − 11 = 0 ✓ ; (−1 ; −1) donne 4 + 9 + 16 − 18 − 11 = 0 ✓ ; sommet secondaire (2 ; 1) donne 16 + 9 − 32 + 18 − 11 = 0 ✓ ; (2 ; −3) donne 16 + 81 − 32 − 54 − 11 = 0 ✓. Les quatre sommets tombent, et leur milieu commun est bien (2 ; −1). Contrôle n° 2, par la définition MF = e·MH, voie totalement indépendante : F(2 + √5 ; −1) ≈ (4,2361 ; −1) et la directrice associée est x = 2 + a²/c = 2 + 9/√5 ≈ 6,0249. Pour le sommet S(5 ; −1) : SF ≈ 0,7639 et SH ≈ 1,0249, de rapport 0,7454 — et √5/3 ≈ 0,7454 ✓. Le piège courant : lire le centre en recopiant les signes écrits, (−2 ; 1) au lieu de (2 ; −1), alors que (x − 2)² s'annule en x = 2. On le réfute par la symétrie : le symétrique de (5 ; −1) par rapport à (2 ; −1) est (−1 ; −1), qui est bien sur 𝒞 ✓, tandis que son symétrique par rapport à (−2 ; 1) est (−9 ; 3), qui donne 324 + 81 + 144 − 54 − 11 = 484 ≠ 0. L'excentricité √5/2 exécute e = c/b, le réflexe faux quand on ne regarde pas quel demi-axe est le plus grand ; ici elle vaut 1,118 > 1, impossible pour une ellipse. Enfin 2/3 est le rapport b/a, qui n'est pas l'excentricité.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé. Soit ℋ la courbe d'équation xy = 8. Déterminer ses foyers et son excentricité.",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(2√2 ; 2√2) et F′(−2√2 ; −2√2), excentricité √2"
+        },
+        {
+          "id": "b",
+          "text": "F(4√2 ; 0) et F′(−4√2 ; 0), excentricité √2"
+        },
+        {
+          "id": "c",
+          "text": "F(4 ; 4) et F′(−4 ; −4), excentricité 2"
+        },
+        {
+          "id": "d",
+          "text": "F(4 ; 4) et F′(−4 ; −4), excentricité √2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une équation de la forme XY = k est une hyperbole rapportée à ses ASYMPTOTES : ici les asymptotes sont les axes du repère, et les axes de symétrie de la courbe sont les bissectrices y = x et y = −x (l'échange (x, y) ↦ (y, x) laisse xy invariant). Les asymptotes étant perpendiculaires, l'hyperbole est ÉQUILATÈRE, donc a = b et e = √2 — toujours, quelle que soit la valeur de k. 1) Sommets : ils sont sur l'axe focal y = x, d'où x² = 8 et S(2√2 ; 2√2), S′(−2√2 ; −2√2). 2) Demi-axe : a = OS = √(8 + 8) = 4 — c'est la DISTANCE au centre, pas l'abscisse du sommet. 3) Comme a = b = 4, c = √(a² + b²) = √32 = 4√2, et les foyers sont sur l'axe focal y = x à la distance c du centre : F(4 ; 4), car √(16 + 16) = 4√2 ✓, et F′(−4 ; −4). Excentricité e = c/a = 4√2/4 = √2 ✓. Contrôle par une seconde voie totalement indépendante, la définition MF = e·MH. La directrice associée à F est perpendiculaire à l'axe focal à la distance a²/c = 16/(4√2) = 2√2 du centre, soit la droite D : x + y = 4. Testons trois points de ℋ. M(2 ; 4) : MF = √(4 + 0) = 2 et MH = |2 + 4 − 4|/√2 = √2, rapport 2/√2 = √2 ✓. M(4 ; 2) : MF = 2 et MH = √2, rapport √2 ✓. M(1 ; 8) : MF = √(9 + 16) = 5 et MH = |1 + 8 − 4|/√2 = 5/√2, rapport √2 ✓. Trois points concordants. Contrôle n° 2 par la réduction : dans le repère porté par les bissectrices, x² − y² = a² s'écrit XY = a²/2 ; ici k = 8 donne a² = 16 et a = 4 ✓. Le piège courant : annoncer les SOMMETS comme foyers. Il se réfute en une ligne : (2√2)(2√2) = 8, donc ce point est SUR la courbe, et un foyer n'est jamais sur sa conique (MF = 0 forcerait MH = 0, donc F sur la directrice, ce que la définition interdit). L'excentricité 2 exécute e = c/a en prenant pour a l'abscisse du sommet, 2√2, au lieu de OS = 4 : 4√2/(2√2) = 2 ; le calcul direct sur M(2 ; 4) donne √2 et non 2. Enfin placer les foyers en (±4√2 ; 0) garde le bon c mais met l'axe focal sur (Ox) — or ℋ n'est pas symétrique par rapport à (Ox) : (2 ; 4) est sur ℋ, (2 ; −4) donne −8 ≠ 8.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé et m désigne un réel. On note 𝒞ₘ l'ensemble des points M(x, y) tels que x² + 4y² − 6x + 8y + m = 0. Discuter la nature de 𝒞ₘ suivant les valeurs de m.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une ellipse si m < 13 ; le point (3 ; −1) si m = 13 ; l'ensemble vide si m > 13"
+        },
+        {
+          "id": "b",
+          "text": "Une ellipse si m < 13 ; le point (−3 ; 1) si m = 13 ; l'ensemble vide si m > 13"
+        },
+        {
+          "id": "c",
+          "text": "Une ellipse si m < 0 ; le point (3 ; −1) si m = 0 ; l'ensemble vide si m > 0"
+        },
+        {
+          "id": "d",
+          "text": "Une ellipse si m < 13 ; le point (3 ; −1) si m = 13 ; une hyperbole si m > 13"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "A = 1 et B = 4 donnent AB = 4 > 0 : ellipse, cercle, un point ou le vide — et A ≠ B écarte le cercle. Les cas dégénérés, eux, ne se décident qu'APRÈS réduction. 1) On complète : x² − 6x = (x − 3)² − 9 et 4y² + 8y = 4(y + 1)² − 4. L'équation devient (x − 3)² + 4(y + 1)² − 9 − 4 + m = 0, soit (x − 3)² + 4(y + 1)² = 13 − m. 2) Une somme de carrés ne pardonne pas : si 13 − m > 0, c'est-à-dire m < 13, on divise et on obtient (x − 3)²/(13 − m) + (y + 1)²/((13 − m)/4) = 1, une ellipse de centre (3 ; −1) ; si m = 13, la somme est nulle, ce qui force x = 3 et y = −1, donc 𝒞₁₃ est le POINT (3 ; −1) ; si m > 13, le second membre est strictement négatif et aucun point ne convient : 𝒞ₘ est VIDE ✓. Contrôles chiffrés dans l'équation de départ. Pour m = 0 : l'origine (0 ; 0) donne 0 + 0 − 0 + 0 + 0 = 0 ✓, et elle vérifie bien (0 − 3)² + 4(0 + 1)² = 9 + 4 = 13 = 13 − 0 ✓. Pour m = 12 : le point (4 ; −1) donne 16 + 4 − 24 − 8 + 12 = 0 ✓, cohérent avec (4 − 3)² + 0 = 1 = 13 − 12 ✓. Pour m = 13 : (3 ; −1) donne 9 + 4 − 18 − 8 + 13 = 0 ✓, et tout autre point donne une somme de carrés strictement positive. Pour m = 14 : (3 ; −1), le seul candidat possible, donne 9 + 4 − 18 − 8 + 14 = 1 ≠ 0 ✓, l'ensemble est bien vide. Le piège courant : oublier les constantes libérées par la complétion des carrés et placer le basculement en m = 0 — c'est ce qu'exécute le distracteur en m < 0 / m = 0 / m > 0, réfuté par le cas m = 12 ci-dessus, qui donne une vraie ellipse alors que 12 > 0. Le centre (−3 ; 1) recopie les signes de l'équation au lieu d'annuler les carrés : (x − 3)² s'annule en x = 3. Enfin annoncer une hyperbole pour m > 13 revient à croire qu'un second membre négatif « retourne » un signe : mais les deux carrés restent affectés du signe +, leur somme est ≥ 0 et ne peut jamais valoir un nombre négatif — c'est le vide, pas une hyperbole (une hyperbole exigerait AB < 0, or AB = 4 quel que soit m).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé. Déterminer une équation de la parabole 𝒫 de foyer F(2 ; 2) et de directrice D : x = 3.",
+      "options": [
+        {
+          "id": "a",
+          "text": "(y − 2)² = 2(x − 5/2)"
+        },
+        {
+          "id": "b",
+          "text": "(x − 2)² = −2(y − 5/2)"
+        },
+        {
+          "id": "c",
+          "text": "(y − 2)² = −2(x − 5/2)"
+        },
+        {
+          "id": "d",
+          "text": "(y − 2)² = −2(x − 2)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ni le sommet ni les axes ne sont donnés : on repart donc de la DÉFINITION, MF = MH, et on laisse le calcul produire l'équation. Pour M(x, y), H(3 ; y) est son projeté sur D, donc MF² = MH² s'écrit (x − 2)² + (y − 2)² = (x − 3)². On développe : x² − 4x + 4 + (y − 2)² = x² − 6x + 9, d'où 2x − 5 + (y − 2)² = 0, c'est-à-dire (y − 2)² = 5 − 2x = −2(x − 5/2) ✓. Lecture des éléments, qui sert de contrôle : le paramètre est p = d(F, D) = |3 − 2| = 1, donc 2p = 2, ce qui est exactement le coefficient obtenu ✓ ; K(3 ; 2) est le projeté de F sur D et le sommet est le milieu de [FK], soit (5/2 ; 2) ✓, l'abscisse qui apparaît dans (x − 5/2) ; et comme F est à GAUCHE de D, la parabole s'ouvre vers les x décroissants, d'où le signe − ✓. Contrôle n° 2 sur des points, voie indépendante : pour x = 0, (y − 2)² = 5 donne M(0 ; 2 + √5) ; alors MF = √(4 + 5) = 3 et MH = |0 − 3| = 3, donc MF = MH ✓. Pour x = 2, (y − 2)² = 1 donne M(2 ; 3) ; MF = 1 et MH = |2 − 3| = 1 ✓. Le piège courant : recopier l'orientation standard y² = 2px sans regarder de quel côté de la directrice se trouve le foyer. La courbe (y − 2)² = 2(x − 5/2) est la parabole symétrique, de foyer (3 ; 2) et de directrice x = 2 — et son foyer serait alors SUR la directrice de l'énoncé, ce qui est interdit ; son point (3 ; 3) donne MF = √2 et MH = 0, l'égalité tombe. Le distracteur (y − 2)² = −2(x − 2) place le sommet AU FOYER, erreur fréquente : son point (0 ; 4) donne MF = √(4 + 4) = 2√2 ≈ 2,83 alors que MH = 3, l'égalité tombe aussi. Enfin (x − 2)² = −2(y − 5/2) intervertit les rôles de x et de y, donc l'axe focal : son sommet (2 ; 5/2) donne MF = 0,5 et MH = |2 − 3| = 1, ce n'est pas une parabole de foyer F et de directrice D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé. Une seule des affirmations suivantes est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La droite d'équation y = 2x + 2 est tangente à la parabole d'équation y² = 8x"
+        },
+        {
+          "id": "b",
+          "text": "L'ensemble des points M(x, y) tels que x² − 4y² + 2x + 16y − 15 = 0 est la réunion de deux droites sécantes"
+        },
+        {
+          "id": "c",
+          "text": "L'ensemble des points M(x, y) tels que x² + 4y² − 2x + 5 = 0 est une ellipse de centre (1 ; 0)"
+        },
+        {
+          "id": "d",
+          "text": "L'ellipse d'équation 9x² + 4y² = 36 a pour excentricité √5/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Seule l'affirmation b est vraie ✓, et c'est le cas dégénéré du signe AB < 0. Ici A = 1 et B = −4, donc AB = −4 < 0 : hyperbole OU deux droites sécantes — la réduction tranche. On complète : x² + 2x = (x + 1)² − 1 et −4y² + 16y = −4(y² − 4y) = −4[(y − 2)² − 4] = −4(y − 2)² + 16. L'équation devient (x + 1)² − 1 − 4(y − 2)² + 16 − 15 = 0, soit (x + 1)² − 4(y − 2)² = 0. Le second membre est NUL, donc pas d'équation réduite : c'est une différence de carrés, qui se factorise en [(x + 1) − 2(y − 2)]·[(x + 1) + 2(y − 2)] = 0, c'est-à-dire (x − 2y + 5)(x + 2y − 3) = 0 — les deux droites x − 2y + 5 = 0 et x + 2y − 3 = 0, sécantes en (−1 ; 2) car leurs coefficients directeurs 1/2 et −1/2 diffèrent ✓. Contrôle par développement, voie indépendante : (x − 2y + 5)(x + 2y − 3) = x² + 2xy − 3x − 2xy − 4y² + 6y + 5x + 10y − 15 = x² − 4y² + 2x + 16y − 15 ✓, on retombe exactement sur l'énoncé. a est fausse, et c'est un vrai quasi-succès : en substituant x = (y − 2)/2 dans y² = 8x on obtient y² = 4y − 8, soit y² − 4y + 8 = 0, de discriminant 16 − 32 = −16 < 0 — la droite ne rencontre même PAS la parabole, elle ne peut donc pas lui être tangente. La tangente de pente 2 à cette parabole est y = 2x + 1, qui donne (2x − 1)² = 0, racine double ✓ : une unité d'écart sépare la sécante fantôme de la vraie tangente. c est fausse : x² − 2x = (x − 1)² − 1, donc l'équation devient (x − 1)² + 4y² = −4. Une somme de carrés ne vaut jamais un nombre strictement négatif : l'ensemble est VIDE. Le piège est de s'arrêter au tableau AB = 4 > 0 et de conclure « ellipse » sans réduire — or ce tableau annonce aussi le point et le vide. d est fausse : 9x² + 4y² = 36 s'écrit x²/4 + y²/9 = 1, donc a = 2 et b = 3 avec a < b — le grand axe est VERTICAL. On a c = √(9 − 4) = √5, et l'excentricité se divise toujours par le DEMI-GRAND axe : e = c/b = √5/3 ≈ 0,745, et non √5/2 ≈ 1,118, valeur d'ailleurs impossible pour une ellipse puisqu'elle dépasse 1.",
+      "difficulty": 3
+    }
+  ]
+}

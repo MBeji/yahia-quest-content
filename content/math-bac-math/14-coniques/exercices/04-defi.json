@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le maître des coniques",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé. Soit 𝒫 la parabole d'équation y² = 4x, de foyer F et de directrice D. Soit M₀(4 ; 4) un point de 𝒫, T la tangente à 𝒫 en M₀ et T₀ le point d'intersection de T et de D. Déterminer les coordonnées de T₀ et la nature du triangle M₀FT₀.\n\n<svg viewBox=\"0 0 300 270\"><path d=\"M80 180 H288\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M120 40 V252\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M92 30 V252\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-dasharray=\"7 5\"/><path d=\"M261.8 54 L232 68 L205.8 82 L183 96 L163.8 110 L148 124 L135.8 138 L127 152 L121.8 166 L120 180 L121.8 194 L127 208 L135.8 222 L148 236\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\"/><path d=\"M92 138 L274 47\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\"/><path d=\"M148 180 L92 68\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.2\" stroke-dasharray=\"5 4\"/><path d=\"M232 68 L92 68\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/><path d=\"M232 68 L148 180\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M148 180 L92 138\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M155.2 170.4 L145.6 163.2 L138.4 172.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><g fill=\"#0f172a\"><circle cx=\"148\" cy=\"180\" r=\"4.5\"/><circle cx=\"232\" cy=\"68\" r=\"5\"/><circle cx=\"92\" cy=\"68\" r=\"4.5\"/><circle cx=\"92\" cy=\"138\" r=\"4.5\"/><circle cx=\"120\" cy=\"180\" r=\"3.5\"/></g><g fill=\"#b45309\"><circle cx=\"120\" cy=\"124\" r=\"4\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"156\" y=\"198\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"246\" y=\"62\" text-anchor=\"middle\" fill=\"#0f172a\">M₀</text><text x=\"78\" y=\"62\" text-anchor=\"middle\" fill=\"#0f172a\">H₀</text><text x=\"78\" y=\"132\" text-anchor=\"middle\" fill=\"#0f172a\">T₀</text><text x=\"108\" y=\"118\" text-anchor=\"middle\" fill=\"#b45309\">I</text><text x=\"102\" y=\"264\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"280\" y=\"42\" text-anchor=\"middle\" fill=\"#0f6e56\">T</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "T₀(−1 ; 3/2), triangle rectangle en M₀"
+        },
+        {
+          "id": "b",
+          "text": "T₀(−1 ; 3), triangle rectangle en F"
+        },
+        {
+          "id": "c",
+          "text": "T₀(−1 ; 3/2), triangle isocèle en T₀"
+        },
+        {
+          "id": "d",
+          "text": "T₀(−1 ; 3/2), triangle rectangle en F"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Trois sous-résultats dépendants. 1) Les éléments : y² = 4x donne 2p = 4, donc p = 2, F(p/2 ; 0) = (1 ; 0) et D : x = −p/2 = −1. Le point M₀ est bien sur 𝒫 : 4² = 16 = 4 × 4 ✓. 2) La tangente par dédoublement (y² → y₀y et 2x → x + x₀, donc y² = 2px devient y₀y = p(x + x₀)) : 4y = 2(x + 4), soit T : x − 2y + 4 = 0. Contrôle par la racine double : en substituant x = 2y − 4 dans y² = 4x on obtient y² − 8y + 16 = (y − 4)² = 0 ✓, contact unique en M₀. 3) T₀ = T ∩ D : on pose x = −1 dans x − 2y + 4 = 0, d'où −1 − 2y + 4 = 0 et y = 3/2, soit T₀(−1 ; 3/2) ✓. 4) La nature du triangle : FM₀⃗ = (3 ; 4) et FT₀⃗ = (−2 ; 3/2), de produit scalaire 3 × (−2) + 4 × (3/2) = −6 + 6 = 0 — le triangle est RECTANGLE EN F ✓. Contrôle par une seconde voie, purement géométrique, celle de la propriété reine de la parabole : H₀(−1 ; 4) est le projeté de M₀ sur D, et T est la médiatrice de [FH₀] — le milieu I(0 ; 2) de [FH₀] vérifie 0 − 4 + 4 = 0, il est sur T ✓, et FH₀⃗ = (−2 ; 4) est orthogonal au vecteur directeur (2 ; 1) de T car −4 + 4 = 0 ✓. Donc T₀F = T₀H₀ = |4 − 3/2| = 5/2, et le triangle M₀H₀T₀, rectangle en H₀, se transporte par la symétrie d'axe T en le triangle M₀FT₀, lui aussi rectangle : l'angle droit passe de H₀ à F ✓. Contrôle numérique par Pythagore : M₀F = √(9 + 16) = 5, T₀F = 5/2 et M₀T₀ = √(25 + 25/4) = √31,25 ; or 5² + (5/2)² = 25 + 6,25 = 31,25 ✓. Le piège courant : oublier que 2p vaut 4 et écrire la tangente 4y = 4(x + 4), soit y = x + 4, ce qui donne T₀(−1 ; 3) ; mais alors FT₀⃗ = (−2 ; 3) et le produit scalaire avec FM₀⃗ vaut −6 + 12 = 6 ≠ 0, l'angle droit disparaît — le signe que la tangente était fausse. Placer l'angle droit en M₀ se réfute de même : M₀F⃗ = (−3 ; −4) et M₀T₀⃗ = (−5 ; −5/2) ont pour produit scalaire 15 + 10 = 25 ≠ 0. Enfin le triangle n'est pas isocèle en T₀ : T₀F = 2,5 alors que T₀M₀ = √31,25 ≈ 5,59 — c'est le triangle FT₀H₀ qui est isocèle, conséquence de la médiatrice, et confondre les deux revient à changer de sommet en cours de route.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé. Déterminer l'équation réduite et l'excentricité de l'hyperbole ℋ de centre O, dont S(5 ; 0) est un sommet et dont l'une des asymptotes est la droite d'équation 3x + 5y = 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x²/9 − y²/25 = 1, excentricité √34/3"
+        },
+        {
+          "id": "b",
+          "text": "x²/16 − y²/9 = 1, excentricité 5/4"
+        },
+        {
+          "id": "c",
+          "text": "x²/25 − y²/9 = 1, excentricité √34/5"
+        },
+        {
+          "id": "d",
+          "text": "x²/25 + y²/9 = 1, excentricité 4/5"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sens inverse : on donne des éléments, on reconstruit l'équation. 1) Le sommet S(5 ; 0) est sur (Ox) et le centre est O, donc l'axe focal est (Ox) et l'équation est de la forme x²/a² − y²/b² = 1 avec a = OS = 5. 2) Les asymptotes sont y = (b/a)x et y = −(b/a)x. L'asymptote donnée s'écrit y = −(3/5)x, de coefficient directeur −3/5, donc b/a = 3/5 et b = 3 (les deux asymptotes étant symétriques, peu importe laquelle est fournie). D'où ℋ : x²/25 − y²/9 = 1 ✓. 3) Pour une hyperbole, c est le PLUS GRAND : c² = a² + b² = 25 + 9 = 34, donc c = √34 ≈ 5,831 et e = c/a = √34/5 ≈ 1,166 > 1 ✓ — un premier garde-fou, une excentricité d'hyperbole dépasse toujours 1. Contrôle par la définition MF = e·MH, voie totalement indépendante. Le foyer est F(√34 ; 0) et la directrice associée x = a²/c = 25/√34 ≈ 4,2874. Sur le sommet S(5 ; 0) : SF = |5 − 5,831| = 0,831 et SH = |5 − 4,2874| = 0,7126, de rapport 1,166 ✓. Sur un second point, x = 10 : y² = 9(100/25 − 1) = 27, donc M(10 ; 3√3) avec 3√3 ≈ 5,196 ; MF = √((10 − 5,831)² + 27) = √44,38 ≈ 6,662 et MH = |10 − 4,2874| = 5,7126, de rapport 6,662/5,7126 ≈ 1,166 ✓. Deux points concordants. Le piège courant : lire le coefficient directeur à l'envers et poser b/a = 5/3, donc b = 25/3 — ou, sous une forme plus séduisante, échanger purement les dénominateurs et écrire x²/9 − y²/25 = 1 ; cette hyperbole-là a pour sommet (3 ; 0), pas (5 ; 0), et ses asymptotes ont pour coefficients directeurs ±5/3, donc 5x + 3y = 0 et non 3x + 5y = 0. Le distracteur x²/16 − y²/9 = 1 exécute la confusion sommet-foyer : il prend 5 pour c, en déduit a² = c² − b² = 25 − 9 = 16 et trouve e = 5/4 ; mais son sommet est (4 ; 0), qui n'est pas le point donné. Enfin x²/25 + y²/9 = 1 recopie un signe + : c'est une ellipse, une courbe bornée qui n'a aucune asymptote, et son excentricité 4/5 est d'ailleurs inférieure à 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé. On considère la courbe 𝒞 d'équation 9x² − 4y² − 36x − 8y + 68 = 0, et voici une solution proposée. Étape 1 : A = 9 et B = −4, donc AB = −36 < 0 : 𝒞 est une hyperbole ou une réunion de deux droites sécantes. Étape 2 : on complète les carrés, 9x² − 36x = 9(x − 2)² − 36 et −4y² − 8y = −4(y + 1)² − 4. Étape 3 : l'équation devient 9(x − 2)² − 4(y + 1)² − 36 − 4 + 68 = 0, soit 4(y + 1)² − 9(x − 2)² = 28, c'est-à-dire (y + 1)²/7 − (x − 2)²/(28/9) = 1. Étape 4 : 𝒞 est donc une hyperbole de centre (2 ; −1), d'axe focal parallèle à (Oy), de sommets (2 ; −1 + √7) et (2 ; −1 − √7), et d'excentricité √13/3. Quelle est la PREMIÈRE étape fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 1"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 2"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 3"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Ceci est une chasse à l'erreur : la solution proposée contient une faute plantée, l'explication décrit donc un raisonnement volontairement faux. L'étape 2 est la PREMIÈRE fausse ✓. Quand on factorise un coefficient NÉGATIF, la constante libérée change de signe en ressortant : −4y² − 8y = −4(y² + 2y) = −4[(y + 1)² − 1] = −4(y + 1)² + 4, et non −4(y + 1)² − 4. L'écart est de 8, et il déforme toute la suite. La réduction correcte donne 9(x − 2)² − 36 − 4(y + 1)² + 4 + 68 = 0, soit 9(x − 2)² − 4(y + 1)² = −36, c'est-à-dire (y + 1)²/9 − (x − 2)²/4 = 1 : les demi-axes sont 3 et 2, les sommets sont (2 ; 2) et (2 ; −4), et c = √(9 + 4) = √13. Contrôle en réinjectant dans l'équation DE DÉPART, la seule preuve qui compte : (2 ; 2) donne 36 − 16 − 72 − 16 + 68 = 0 ✓ et (2 ; −4) donne 36 − 64 − 72 + 32 + 68 = 0 ✓. Les sommets annoncés à l'étape 4, eux, échouent : pour (2 ; −1 + √7), on obtient 36 − 4(8 − 2√7) − 72 − 8(−1 + √7) + 68 = 36 − 32 + 8√7 − 72 + 8 − 8√7 + 68 = 8 ≠ 0 ✗ — ce point n'est pas sur 𝒞. L'étape 1 est irréprochable : le signe de AB donne bien le genre, et il est confirmé a posteriori. Les étapes 3 et 4, elles, sont exactes LIGNE À LIGNE une fois l'étape 2 admise : de −36 − 4 + 68 on tire bien 28, et de b² = 7 et a² = 28/9 on tire bien c² = 7 + 28/9 = 91/9, donc e = c/b = √91/(3√7) = √13/3. C'est précisément ce qui rend l'erreur si difficile à voir : le rapport a²/b² = 4/9 est le même dans les deux versions, si bien que l'excentricité annoncée à l'étape 4 est la BONNE (√13/3 ≈ 1,202) et que les asymptotes le seraient aussi. Seules les longueurs sont fausses. Choisir l'étape 3 ou l'étape 4 revient à confondre la faute avec son héritage — la question porte sur la PREMIÈRE. Le piège courant est exactement celui qui est planté : distribuer un facteur négatif sans propager le signe sur la constante de la complétion du carré ; le réflexe qui l'attrape, c'est de vérifier un sommet dans l'équation de départ.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé. Soit ℰ l'ellipse d'équation x²/4 + y² = 1 et I(0 ; 2). Déterminer les tangentes à ℰ issues de I.",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = (√3/2)x + 2 et y = −(√3/2)x + 2"
+        },
+        {
+          "id": "b",
+          "text": "y = √3 x + 2 et y = −√3 x + 2"
+        },
+        {
+          "id": "c",
+          "text": "y = x + 2 et y = −x + 2"
+        },
+        {
+          "id": "d",
+          "text": "La seule droite d'équation y = 1/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Premier réflexe, décisif : I est-il SUR ℰ ? 0/4 + 4 = 4 ≠ 1 — il est extérieur, donc la règle du dédoublement est INTERDITE ici. La méthode est celle du discriminant nul. 1) Une droite passant par I s'écrit y = mx + 2 (le cas de la verticale x = 0 se traite à part : elle coupe ℰ en (0 ; 1) et (0 ; −1), deux points, ce n'est donc pas une tangente). 2) On substitue : x²/4 + (mx + 2)² = 1, soit x²(1/4 + m²) + 4mx + 3 = 0. 3) La tangence, c'est la racine DOUBLE : Δ = (4m)² − 4 × 3 × (1/4 + m²) = 16m² − 3 − 12m² = 4m² − 3 = 0, d'où m² = 3/4 et m = ±√3/2 ✓. Les deux tangentes sont donc y = (√3/2)x + 2 et y = −(√3/2)x + 2. Contrôle n° 1, la racine double effective : pour m = √3/2, l'équation devient x²(1/4 + 3/4) + 2√3x + 3 = 0, soit x² + 2√3x + 3 = (x + √3)² = 0 ✓ — contact unique en x = −√3, d'ordonnée y = (√3/2)(−√3) + 2 = 1/2, donc au point (−√3 ; 1/2), qui est bien sur ℰ : 3/4 + 1/4 = 1 ✓. Contrôle n° 2 par une voie indépendante, le dédoublement AU POINT DE CONTACT (là, il est licite) : la tangente en (−√3 ; 1/2) vaut (−√3)x/4 + (1/2)y = 1, soit −√3x + 2y = 4, c'est-à-dire y = (√3/2)x + 2 ✓ — les deux méthodes coïncident, et la seconde tangente s'obtient par symétrie par rapport à (Oy), au point (√3 ; 1/2). Le piège courant, et il est majeur : dédoubler quand même à partir de I et écrire 0 × x/4 + 2y = 1, d'où l'unique droite y = 1/2. Le dédoublement ne produit une tangente que si le point est sur la conique ; ici y = 1/2 coupe ℰ en deux points, x²/4 = 3/4 donnant x = ±√3, c'est une sécante (c'est en réalité la polaire de I, hors programme). Le distracteur y = ±√3x + 2 exécute l'oubli du dénominateur 4 : avec x² + (mx + 2)² = 1 on trouve Δ = 4m² − 12 = 0 et m = ±√3 ; on le réfute en substituant, 13x² + 16√3x + 12 = 0 a pour discriminant 768 − 624 = 144 > 0, deux points d'intersection. Enfin y = ±x + 2 revient à croire que les tangentes issues de I touchent ℰ en ses sommets principaux (±2 ; 0) : la substitution donne 5x² + 16x + 12 = 0, de discriminant 256 − 240 = 16 > 0 — encore une sécante.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé. Soit 𝒫 la parabole d'équation y² = 6x et F son foyer. Une droite variable D passant par F, de vecteur directeur u⃗(1 ; m) où m est un réel non nul, coupe 𝒫 en deux points M et M′. Soit K le milieu de [MM′]. Quelle est l'équation de la courbe décrite par K lorsque m décrit ℝ* ?\n\n<svg viewBox=\"0 0 300 280\"><path d=\"M20 200 H290\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M40 10 V272\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M265 20 L236 32 L184 56 L140 80 L104 104 L76 128 L56 152 L44 176 L40 200 L44 224 L56 248 L65 260\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\"/><path d=\"M46.2 229.8 L249.8 26.2\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\"/><path d=\"M58.7 251.9 L109.3 100.1\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/><g fill=\"#0f172a\"><circle cx=\"249.8\" cy=\"26.2\" r=\"4\"/><circle cx=\"46.2\" cy=\"229.8\" r=\"4\"/><circle cx=\"109.3\" cy=\"100.1\" r=\"3.5\"/><circle cx=\"58.7\" cy=\"251.9\" r=\"3.5\"/></g><g fill=\"#b45309\"><circle cx=\"76\" cy=\"200\" r=\"4.5\"/><circle cx=\"148\" cy=\"128\" r=\"5\"/><circle cx=\"84\" cy=\"176\" r=\"4\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"68\" y=\"218\" text-anchor=\"middle\" fill=\"#b45309\">F</text><text x=\"262\" y=\"22\" text-anchor=\"middle\" fill=\"#0f172a\">M</text><text x=\"34\" y=\"246\" text-anchor=\"middle\" fill=\"#0f172a\">M′</text><text x=\"160\" y=\"122\" text-anchor=\"middle\" fill=\"#b45309\">K</text><text x=\"96\" y=\"170\" text-anchor=\"middle\" fill=\"#b45309\">K′</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "y² = 6x − 9"
+        },
+        {
+          "id": "b",
+          "text": "y² = 3x"
+        },
+        {
+          "id": "c",
+          "text": "y² = 3x − 9/2"
+        },
+        {
+          "id": "d",
+          "text": "y² = 3x + 9/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Chaîne complète : éléments, paramétrage, élimination du paramètre. 1) y² = 6x donne 2p = 6, donc p = 3 et F(3/2 ; 0). 2) On paramètre D : un point de D s'écrit (3/2 + t ; mt), t réel. En reportant dans y² = 6x : m²t² = 6(3/2 + t), soit m²t² − 6t − 9 = 0. Comme m ≠ 0, c'est une vraie équation du second degré, de discriminant 36 + 36m² > 0 : il y a bien DEUX points d'intersection, quel que soit m ✓. 3) Le milieu correspond à la DEMI-SOMME des racines : t₁ + t₂ = 6/m² (somme des racines = −(−6)/m²), donc t_K = 3/m². D'où y_K = m·t_K = 3/m et x_K = 3/2 + 3/m². 4) On élimine m : de y_K = 3/m on tire m = 3/y_K, donc 3/m² = 3y_K²/9 = y_K²/3, et x_K = 3/2 + y_K²/3. En multipliant par 3 : y_K² = 3x_K − 9/2 ✓. C'est la parabole de sommet F(3/2 ; 0) et de paramètre 3/2 — la moitié de celle de 𝒫 (à noter : y_K = 3/m ne s'annule jamais, donc le sommet F lui-même n'est pas atteint). Contrôle par deux valeurs exécutées, voie indépendante. Pour m = 1 : t² − 6t − 9 = 0 donne t = 3 ± 3√2, de demi-somme 3, donc K(9/2 ; 3) ; or 3 × 9/2 − 9/2 = 27/2 − 9/2 = 9 = 3² ✓. Pour m = 3 : 9t² − 6t − 9 = 0, soit 3t² − 2t − 3 = 0, de demi-somme t_K = 1/3, donc K(11/6 ; 1) ; or 3 × 11/6 − 9/2 = 11/2 − 9/2 = 1 = 1² ✓. Deux points concordants. Le piège courant : confondre la somme des racines et sa moitié, c'est-à-dire poser t_K = 6/m². On obtient alors y = 6/m et x = 3/2 + 6/m², d'où m = 6/y, 6/m² = y²/6 et y² = 6x − 9 : c'est exactement le distracteur, et il se réfute sur le cas m = 1, où il donnerait K(9/2 ; ±√18), soit une ordonnée de 4,24 au lieu de 3. Le distracteur y² = 3x oublie la translation, c'est-à-dire le terme 3/2 de l'abscisse (la courbe des milieux a son sommet en F, pas en O) ; pour m = 1, il donnerait y² = 13,5 et non 9. Enfin y² = 3x + 9/2 translate du mauvais côté, plaçant le sommet en (−3/2 ; 0), à l'extérieur de 𝒫 : pour m = 1 il donnerait y² = 18.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé direct. Soit f la similitude directe de centre O, de rapport √2 et d'angle π/4, d'écriture complexe z′ = (1 + i)z, et soit 𝒞 la courbe d'équation x² + 2xy + y² − 4x + 4y = 0. Déterminer la nature de 𝒞 et ses éléments caractéristiques.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le cercle de centre (2 ; −2) et de rayon 2√2"
+        },
+        {
+          "id": "b",
+          "text": "Une parabole de foyer F(1 ; 0) et de directrice x = −1"
+        },
+        {
+          "id": "c",
+          "text": "Une parabole de foyer F(1 ; 1) et de directrice x + y + 2 = 0"
+        },
+        {
+          "id": "d",
+          "text": "Une parabole de foyer F(1/2 ; −1/2) et de directrice x − y + 1 = 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le terme en xy interdit la complétion des carrés directe : on passe par la similitude fournie, qui conserve le genre (elle multiplie les distances par son rapport et conserve les orthogonalités). 1) Traduire f en coordonnées : z′ = (1 + i)(x + iy) = (x − y) + i(x + y), donc M′(X ; Y) avec X = x − y et Y = x + y. 2) Reconnaître ces expressions dans l'équation : x² + 2xy + y² = (x + y)² = Y² et −4x + 4y = −4(x − y) = −4X. Donc M appartient à 𝒞 si et seulement si son image M′ vérifie Y² = 4X : la courbe image 𝒞′ = f(𝒞) est une PARABOLE, de sommet O, de paramètre p′ = 2, de foyer F′(1 ; 0) et de directrice D′ : X = −1. 3) Revenir en arrière avec f⁻¹ : z ↦ z/(1 + i) = z(1 − i)/2. Le foyer de 𝒞 est f⁻¹(F′) : (1)(1 − i)/2 = (1 − i)/2, soit F(1/2 ; −1/2) ✓. La directrice de 𝒞 est l'image de D′ : un point (−1 ; t) de D′ a pour antécédent (−1 + it)(1 − i)/2 = ((t − 1) + i(1 + t))/2, donc x = (t − 1)/2 et y = (t + 1)/2, d'où y − x = 1, c'est-à-dire D : x − y + 1 = 0 ✓. Contrôle n° 1, la cohérence des longueurs : le paramètre de 𝒞 doit être celui de 𝒞′ divisé par le rapport √2, soit 2/√2 = √2 ; or la distance de F(1/2 ; −1/2) à la droite x − y + 1 = 0 vaut |1/2 + 1/2 + 1|/√2 = 2/√2 = √2 ✓. Contrôle n° 2 sur un point, voie totalement indépendante : le point (X ; Y) = (1 ; 2) est sur 𝒞′ (4 = 4 ✓), son antécédent est (1 + 2i)(1 − i)/2 = (3 + i)/2, soit M(3/2 ; 1/2) ; on le vérifie dans l'équation de départ, 9/4 + 2(3/4) + 1/4 − 6 + 2 = 9/4 + 3/2 + 1/4 − 4 = 4 − 4 = 0 ✓. Et la définition MF = MH tient : MF = √((3/2 − 1/2)² + (1/2 + 1/2)²) = √2 et MH = |3/2 − 1/2 + 1|/√2 = 2/√2 = √2 ✓. Le piège courant : s'arrêter à 𝒞′ et livrer SES éléments, F(1 ; 0) et X = −1, en oubliant le retour par f⁻¹ ; pour le point M(3/2 ; 1/2) de 𝒞, la distance à (1 ; 0) vaut √0,5 ≈ 0,707 tandis que la distance à x = −1 vaut 5/2, l'égalité tombe. Appliquer f au lieu de f⁻¹ donne F = (1 + i)(1) = (1 ; 1) et, pour la directrice, (1 + i)(−1 + it) = (−1 − t) + i(t − 1), soit x + y + 2 = 0 ; même point M : distance à (1 ; 1) égale à √0,5, distance à x + y + 2 = 0 égale à 4/√2 ≈ 2,83, l'égalité tombe encore. Enfin le distracteur circulaire exécute la faute la plus grossière et la plus fréquente, effacer le terme 2xy : il reste x² + y² − 4x + 4y = 0, soit (x − 2)² + (y + 2)² = 8 ; mais M(3/2 ; 1/2) donne 1/4 + 25/4 = 6,5 ≠ 8, il n'est pas sur ce cercle.",
+      "difficulty": 3
+    }
+  ]
+}
