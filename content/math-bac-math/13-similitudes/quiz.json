@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Similitudes",
+  "questions": [
+    {
+      "prompt": "Soit k un réel strictement positif. Par définition, une similitude de rapport k est une application du plan telle que, pour tous points A et B d'images respectives A′ et B′ :",
+      "options": [
+        {
+          "id": "a",
+          "text": "A′B′ = AB"
+        },
+        {
+          "id": "b",
+          "text": "A′B′ = k·AB"
+        },
+        {
+          "id": "c",
+          "text": "A′B′ = k²·AB"
+        },
+        {
+          "id": "d",
+          "text": "A′B′⃗ = k·AB⃗"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "C'est mot pour mot la définition du cours : toutes les distances sont multipliées par le même réel k > 0, donc A′B′ = k·AB ✓. L'option a décrit le cas particulier k = 1, celui des isométries : elle n'est vraie que pour ce rapport-là. L'option c place le rapport au carré : k² intervient bien, mais sur les produits scalaires et les aires, jamais sur les longueurs. L'option d est une relation entre vecteurs, et non entre distances : elle caractérise les homothéties et les translations, alors qu'une rotation d'angle π/2, qui est une similitude de rapport 1, ne la vérifie pas.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Toute isométrie du plan est une similitude. Quel est son rapport ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "un rapport qui dépend de l'isométrie choisie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une isométrie conserve les distances : A′B′ = AB = 1 × AB, donc c'est une similitude de rapport 1 ✓. C'est exactement l'exemple donné par le cours, et c'est aussi la frontière du chapitre : |a| = 1 pour une isométrie, |a| = k quelconque pour une similitude. L'option d est le piège : le rapport ne dépend pas de l'isométrie retenue, translation, rotation, symétrie orthogonale ou symétrie glissante conservent toutes les longueurs, donc valent toutes 1. Les options a et c correspondraient à une réduction ou à un agrandissement, ce qu'aucune isométrie ne fait.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit I un point du plan. L'homothétie de centre I et de rapport −4 est une similitude de rapport :",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4"
+        },
+        {
+          "id": "b",
+          "text": "1/4"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "16"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le cours l'énonce ainsi : toute homothétie de rapport k est une similitude de rapport |k|. Ici |−4| = 4 ✓. Contrôle direct : pour deux points A et B, on a A′B′⃗ = −4AB⃗, donc A′B′ = |−4| × AB = 4AB. L'option a est l'erreur la plus fréquente du chapitre : le rapport d'une homothétie peut être négatif, mais le rapport d'une similitude est par définition strictement positif — ce sont deux rapports différents qui portent le même nom. L'option d élève au carré, ce qui vaudrait pour une aire et non pour une longueur. L'option b donne le rapport de l'homothétie réciproque, h(I, −1/4).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'image d'un triangle d'aire 𝒜 par une similitude de rapport 1/2 est un triangle d'aire :",
+      "options": [
+        {
+          "id": "a",
+          "text": "𝒜/4"
+        },
+        {
+          "id": "b",
+          "text": "𝒜/2"
+        },
+        {
+          "id": "c",
+          "text": "𝒜"
+        },
+        {
+          "id": "d",
+          "text": "4𝒜"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une similitude de rapport k multiplie les longueurs par k et les aires par k². Ici k = 1/2, donc k² = 1/4 et l'aire de l'image vaut 𝒜/4 ✓. Contrôle sur un cas concret : un triangle rectangle de côtés de l'angle droit 4 et 6 a pour aire 12 ; son image a des côtés 2 et 3, donc une aire de 3, et 3 = 12/4 ✓. L'option b applique le rapport aux aires comme s'il s'agissait de longueurs : c'est la confusion d'exposant la plus fréquente du chapitre. L'option c supposerait une isométrie, c'est-à-dire k = 1. L'option d inverse le sens de la transformation : elle donnerait l'aire d'une image par une similitude de rapport 2.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une similitude de rapport 3 transforme un angle géométrique de mesure 30° en un angle géométrique de mesure :",
+      "options": [
+        {
+          "id": "a",
+          "text": "10°"
+        },
+        {
+          "id": "b",
+          "text": "30°"
+        },
+        {
+          "id": "c",
+          "text": "90°"
+        },
+        {
+          "id": "d",
+          "text": "270°"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le rapport k agit sur les longueurs, pas sur les angles : toute similitude conserve les angles géométriques, donc l'image mesure encore 30° ✓. C'est même ce qui donne son sens au mot « semblable » : une carte à l'échelle réduit toutes les distances mais respecte tous les angles. L'option c multiplie l'angle par 3 et l'option a le divise par 3, deux façons d'appliquer aux angles un rapport qui ne concerne que les longueurs. L'option d multiplie par 3² = 9, en transposant aux angles la règle valable pour les aires.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le plan est rapporté à un repère orthonormé direct. Quel est le rapport de la similitude directe d'écriture complexe z′ = (5 + 12i)z + 1 − i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        },
+        {
+          "id": "d",
+          "text": "169"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour z′ = az + b, le rapport est le module du coefficient a : k = |a| = |5 + 12i| = √(5² + 12²) = √(25 + 144) = √169 = 13 ✓. L'option d s'arrête à 5² + 12² = 169 et oublie la racine carrée. Les options a et b lisent séparément la partie réelle et la partie imaginaire de a, alors que le module les combine. Remarque : le complexe b = 1 − i ne joue aucun rôle ici, il ne sert qu'à localiser le centre b/(1 − a).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est rapporté à un repère orthonormé direct. Parmi ces applications qui à tout point d'affixe z associent le point d'affixe z′, laquelle est une similitude indirecte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z′ = 2z̄ + i"
+        },
+        {
+          "id": "b",
+          "text": "z′ = 3z + 1"
+        },
+        {
+          "id": "c",
+          "text": "z′ = iz + 2"
+        },
+        {
+          "id": "d",
+          "text": "z′ = −2z + 5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le signe distinctif est la barre de conjugaison : une similitude directe s'écrit z′ = az + b, une similitude indirecte z′ = az̄ + b. Seule l'option a porte z̄, avec a = 2, donc |a| = 2 ≠ 1 : c'est bien une similitude indirecte, de rapport 2 ✓. L'option b est l'homothétie de rapport 3 et l'option d l'homothétie de rapport −2 : toutes deux sont des similitudes directes, malgré le coefficient négatif de d. L'option c est la rotation d'angle π/2, une similitude directe de rapport |i| = 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est rapporté à un repère orthonormé direct. Quelle est l'affixe du centre de l'homothétie d'écriture complexe z′ = 3z + 4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le centre est l'unique point fixe : il vérifie z = 3z + 4, soit −2z = 4 et z = −2 ✓. C'est aussi la formule du cours, b/(1 − k) = 4/(1 − 3) = 4/(−2) = −2. Contrôle : 3 × (−2) + 4 = −6 + 4 = −2, le point d'affixe −2 est bien fixe ✓. L'option c prend le centre égal à b, l'erreur la plus fréquente du chapitre : b n'est l'affixe du centre que si l'on oublie la division par 1 − k. L'option b oublie le signe en divisant par k − 1 = 2 au lieu de 1 − k = −2. L'option d multiplie b par k.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f une similitude de rapport 4 et g une similitude de rapport 3/2. Quel est le rapport de f∘g ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8/3"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "11/2"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le cours l'énonce : la composée de deux similitudes de rapports k et k′ est une similitude de rapport kk′. Ici 4 × 3/2 = 12/2 = 6 ✓. Contrôle sur deux points : g multiplie AB par 3/2, puis f multiplie le résultat par 4, donc au total AB est multipliée par 6. L'option c additionne les rapports, 4 + 3/2 = 11/2 : c'est la règle des angles d'une composée, pas celle des rapports. L'option a divise au lieu de multiplier, 4 ÷ 3/2 = 8/3, ce qui donnerait le rapport de f∘g⁻¹. L'option b ne retient que le rapport de f et oublie g.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La composée d'une similitude directe et d'une similitude indirecte est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "une isométrie"
+        },
+        {
+          "id": "b",
+          "text": "une similitude directe"
+        },
+        {
+          "id": "c",
+          "text": "une similitude indirecte"
+        },
+        {
+          "id": "d",
+          "text": "une homothétie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Applique la règle des signes du cours : directe = +1, indirecte = −1, et la nature de la composée est le produit des signes. Ici (+1) × (−1) = −1, donc la composée est une similitude indirecte ✓. L'option b inverserait la règle : ce sont deux similitudes de même nature, deux directes ou deux indirectes, dont la composée est directe. L'option a est fausse en général, car le rapport de la composée est le produit des rapports et n'a aucune raison de valoir 1. L'option d confond nature et forme réduite : une similitude indirecte se décompose en h∘S_D, jamais en une simple homothétie.",
+      "difficulty": 2
+    }
+  ]
+}

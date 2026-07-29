@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien de la forme réduite",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé direct. Soit f la similitude directe d'écriture complexe z′ = (−1 + i)z + 3 + i. Donner la forme réduite de f.",
+      "options": [
+        {
+          "id": "a",
+          "text": "h(Ω, √2)∘r(Ω, 3π/4) avec Ω(1 ; −3)"
+        },
+        {
+          "id": "b",
+          "text": "h(Ω, √2)∘r(Ω, 3π/4) avec Ω(1 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "h(Ω, 2)∘r(Ω, 3π/4) avec Ω(1 ; 1)"
+        },
+        {
+          "id": "d",
+          "text": "h(Ω, √2)∘r(Ω, −π/4) avec Ω(1 ; 1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Tout se lit sur le coefficient a, puis se recoupe sur un point. 1) Rapport et angle : a = −1 + i, donc k = |a| = √((−1)² + 1²) = √2 et θ = arg(a) = 3π/4 — le point (−1 ; 1) est dans le DEUXIÈME quadrant, l'argument vaut π − π/4 = 3π/4 et non −π/4. 2) Centre : c'est l'unique point fixe, z_Ω = b/(1 − a) = (3 + i)/(1 − (−1 + i)) = (3 + i)/(2 − i). On multiplie par le conjugué : (3 + i)(2 + i)/((2)² + (1)²) = (6 + 3i + 2i − 1)/5 = (5 + 5i)/5 = 1 + i, soit Ω(1 ; 1). Contrôle par substitution : (−1 + i)(1 + i) + 3 + i = (−1 − i + i − 1) + 3 + i = −2 + 3 + i = 1 + i ✓, Ω est bien fixe. 3) Forme réduite : f = h(Ω, √2)∘r(Ω, 3π/4) ✓. Contrôle par une seconde voie totalement indépendante, en suivant un point à travers la forme réduite : prenons O(0 ; 0). Par l'écriture complexe, f(0) = 3 + i. Par la forme réduite : ΩO⃗ a pour affixe 0 − (1 + i) = −1 − i ; la rotation d'angle 3π/4 le multiplie par e^(i3π/4) = (−√2/2) + i(√2/2), ce qui donne (√2/2)(−1 − i)(−1 + i) = (√2/2)(1 − i + i + 1) = (√2/2)(2) = √2 ; l'homothétie de rapport √2 le multiplie encore par √2 et donne 2 ; enfin Ω + 2 = 3 + i ✓. Les deux routes coïncident. Le piège courant : lire l'argument de −1 + i comme −π/4 parce que le quotient des coordonnées vaut 1/(−1) = −1 — c'est oublier le quadrant. Cette rotation-là enverrait O sur Ω + √2·(√2/2)(1 − i)(−1 − i) = Ω + (−2) = −1 + i, et non sur 3 + i. Le distracteur Ω(1 ; −3) exécute l'erreur de signe b/(1 + a) = (3 + i)/i = −i(3 + i) = 1 − 3i ; on le teste en une ligne : f(1 − 3i) = (−1 + i)(1 − 3i) + 3 + i = (−1 + 3i + i + 3) + 3 + i = 5 + 5i ≠ 1 − 3i, ce point n'est pas fixe. Enfin le rapport 2 confond k = |a| avec |a|² : cette similitude-là enverrait O sur 1 + 2√2 + i, et 2√2 ≈ 2,83 ne vaut pas 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé direct. Soit f la similitude indirecte d'écriture complexe z′ = 3z̄ + 2 − 4i. Déterminer ses éléments caractéristiques.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Centre (−1 ; −1), rapport 3, axe la droite d'équation x = −1"
+        },
+        {
+          "id": "b",
+          "text": "Centre (−1 ; −1), rapport 9, axe la droite d'équation y = −1"
+        },
+        {
+          "id": "c",
+          "text": "Centre (−1 ; 2), rapport 3, axe la droite d'équation y = −1"
+        },
+        {
+          "id": "d",
+          "text": "Centre (−1 ; −1), rapport 3, axe la droite d'équation y = −1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une similitude indirecte a un centre, un rapport et un AXE — jamais d'angle. 1) Rapport : a = 3, donc k = |a| = 3, et k ≠ 1 garantit l'existence d'un centre unique. 2) Centre : z_I = (a·b̄ + b)/(1 − |a|²) avec b = 2 − 4i et b̄ = 2 + 4i, soit (3(2 + 4i) + 2 − 4i)/(1 − 9) = (6 + 12i + 2 − 4i)/(−8) = (8 + 8i)/(−8) = −1 − i, donc I(−1 ; −1). Contrôle par substitution : 3·conj(−1 − i) + 2 − 4i = 3(−1 + i) + 2 − 4i = −3 + 3i + 2 − 4i = −1 − i ✓. 3) Axe : c'est l'ensemble des M tels que IM′⃗ = kIM⃗, soit z′ − z_I = 3(z − z_I) : 3z̄ + 2 − 4i + 1 + i = 3z + 3 + 3i, c'est-à-dire 3z̄ + 3 − 3i = 3z + 3 + 3i, donc 3z̄ = 3z + 6i puis z̄ = z + 2i. Avec z = x + iy : x − iy = x + iy + 2i donne −y = y + 2, soit y = −1 ✓. L'axe passe bien par I(−1 ; −1), comme l'exige la forme réduite ✓. Contrôle par une seconde voie indépendante, en recomposant f = h(I, 3)∘S_D : la symétrie d'axe y = −1 envoie (x, y) sur (x ; −2 − y), puis h(I, 3) donne (−1 + 3(x + 1) ; −1 + 3(−2 − y + 1)) = (3x + 2 ; −3y − 4) ; or l'écriture complexe donne z′ = 3(x − iy) + 2 − 4i = (3x + 2) + i(−3y − 4) — les deux expressions coïncident pour TOUT point ✓. Le piège courant : confondre l'axe avec la perpendiculaire à l'axe passant par le centre. Cette perpendiculaire (ici x = −1) est bien globalement invariante, ce qui la rend crédible, mais elle n'est pas l'axe : pour M(−1 ; 0), qui est dessus, f donne z′ = 3(−1) + 2 − 4i = −1 − 4i, donc M′(−1 ; −4), et IM′⃗ = (0 ; −3) = −3·IM⃗ — le facteur est −k, pas +k, ce qui disqualifie x = −1. Le rapport 9 exécute l'erreur k = |a|² : le point M(0 ; −1) de l'axe a pour image z′ = 2 − 4i, soit (2 ; −4), et IM′⃗ = (3 ; −3) vaut 3 fois IM⃗ = (1 ; −1), pas 9 fois. Enfin le centre (−1 ; 2) vient d'appliquer la formule des similitudes DIRECTES, b/(1 − a) = (2 − 4i)/(−2) = −1 + 2i ; on vérifie que ce point n'est pas fixe : 3·conj(−1 + 2i) + 2 − 4i = −3 − 6i + 2 − 4i = −1 − 10i ≠ −1 + 2i.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "ABCD est un carré direct de centre O. Déterminer les éléments caractéristiques de l'unique similitude directe S telle que S(A) = O et S(B) = C.\n\n<svg viewBox=\"0 0 300 250\"><path d=\"M60 200 L220 200 L220 40 L60 40 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M60 200 L220 200 L220 40 L60 40 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"200\" r=\"4\"/><circle cx=\"220\" cy=\"200\" r=\"4\"/><circle cx=\"220\" cy=\"40\" r=\"4\"/><circle cx=\"60\" cy=\"40\" r=\"4\"/></g><g fill=\"#b45309\"><circle cx=\"140\" cy=\"120\" r=\"4.5\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"48\" y=\"219\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"232\" y=\"219\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"232\" y=\"34\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"48\" y=\"34\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"128\" y=\"114\" text-anchor=\"middle\" fill=\"#b45309\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Centre D, rapport √2/2, angle π/4"
+        },
+        {
+          "id": "b",
+          "text": "Centre D, rapport √2/2, angle −π/4"
+        },
+        {
+          "id": "c",
+          "text": "Centre O, rapport √2/2, angle π/4"
+        },
+        {
+          "id": "d",
+          "text": "Centre D, rapport √2, angle π/4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le théorème d'existence-unicité garantit d'abord qu'une telle similitude directe existe et qu'elle est unique, sans aucune condition sur les longueurs : A ≠ B et O ≠ C suffisent. Posons A(0 ; 0), B(2 ; 0), C(2 ; 2), D(0 ; 2), donc O(1 ; 1) — le carré est bien direct. 1) Rapport : k = OC/AB, avec OC = √(1² + 1²) = √2 et AB = 2, donc k = √2/2 ✓. 2) Angle : θ = (AB⃗, OC⃗) avec AB⃗ = (2 ; 0) et OC⃗ = (1 ; 1) ; en complexes le quotient vaut (1 + i)/2, d'argument π/4 ✓. 3) Centre : écrivons z′ = az + b. De S(A) = O on tire b = 1 + i ; de S(B) = C on tire 2a + 1 + i = 2 + 2i, donc a = (1 + i)/2 — cohérent avec |a| = √2/2 ✓ et arg(a) = π/4 ✓. Le centre est l'unique point fixe : z_Ω = b/(1 − a) = (1 + i)/(1 − (1 + i)/2) = (1 + i)/((1 − i)/2) = 2(1 + i)/(1 − i) = 2(1 + i)²/((1 − i)(1 + i)) = 2(2i)/2 = 2i, soit le point (0 ; 2), c'est-à-dire D ✓. Contrôle par substitution : ((1 + i)/2)(2i) + 1 + i = i(1 + i) + 1 + i = i − 1 + 1 + i = 2i ✓. Contrôle par une seconde voie, purement géométrique, sur DEUX couples de points issus de D. Premier couple (A, O) : DA = 2 et DO = √(1² + 1²) = √2, donc DO/DA = √2/2 ✓ ; et (DA⃗, DO⃗) = ((0 ; −2), (1 ; −1)) donne en complexes (1 − i)/(−2i) = (1 − i)i/2 = (1 + i)/2, d'argument π/4 ✓. Second couple (B, C) : DB = √(2² + 2²) = 2√2 et DC = 2, donc DC/DB = √2/2 ✓ ; et (DB⃗, DC⃗) = ((2 ; −2), (2 ; 0)) donne 2/(2 − 2i) = 1/(1 − i) = (1 + i)/2, d'argument π/4 ✓. Deux couples, mêmes rapport et angle : l'identification est sûre. Le piège courant : inverser le rapport et calculer AB/OC = 2/√2 = √2, en oubliant que le rapport se lit image sur antécédent. Cette similitude-là enverrait A sur D + √2·e^(iπ/4)·DA⃗, soit 2i + √2·((√2/2)(1 + i))·(−2i) = 2i + (1 + i)(−2i) = 2i − 2i + 2 = 2, c'est-à-dire B et non O. Prendre l'angle −π/4 revient à lire (OC⃗, AB⃗) au lieu de (AB⃗, OC⃗) : le point A partirait alors sur 2i + (√2/2)e^(−iπ/4)(−2i) = 2i + ((1 − i)/2)(−2i) = 2i + (−i − 1) = −1 + i, qui n'est pas O. Enfin croire que le centre est O, parce que c'est le point remarquable du carré, se réfute en une ligne : S(O) = ((1 + i)/2)(1 + i) + 1 + i = i + 1 + i = 1 + 2i ≠ 1 + i.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit Ω un point du plan, h l'homothétie de centre Ω et de rapport −3, et r la rotation de centre Ω et d'angle 2π/3. Donner la forme réduite de la similitude directe f = h∘r.",
+      "options": [
+        {
+          "id": "a",
+          "text": "h(Ω, 3)∘r(Ω, 2π/3)"
+        },
+        {
+          "id": "b",
+          "text": "h(Ω, 3)∘r(Ω, −2π/3)"
+        },
+        {
+          "id": "c",
+          "text": "h(Ω, 3)∘r(Ω, −π/3)"
+        },
+        {
+          "id": "d",
+          "text": "h(Ω, −3)∘r(Ω, 2π/3)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le rapport d'une similitude est par définition un réel STRICTEMENT POSITIF : une forme réduite h∘r ne peut donc pas afficher un rapport négatif, et le signe moins doit être converti en angle. Plaçons-nous en repère d'origine Ω pour calculer. r s'écrit z ↦ e^(2iπ/3)z et h s'écrit z ↦ −3z, donc f : z ↦ −3e^(2iπ/3)z. Le coefficient vaut a = −3e^(2iπ/3) = 3e^(iπ)·e^(2iπ/3) = 3e^(i(2π/3 + π)) = 3e^(i5π/3) = 3e^(−iπ/3), puisque 5π/3 − 2π = −π/3. Donc k = |a| = 3 et θ = −π/3 : la forme réduite est f = h(Ω, 3)∘r(Ω, −π/3) ✓, et la commutation du cours autorise aussi l'écriture r(Ω, −π/3)∘h(Ω, 3). Contrôle par une seconde voie, en coordonnées : e^(2iπ/3) = −1/2 + i√3/2, donc a = −3(−1/2 + i√3/2) = 3/2 − i3√3/2. Son module vaut √(9/4 + 27/4) = √(36/4) = 3 ✓, et son argument, dans le QUATRIÈME quadrant (partie réelle > 0, partie imaginaire < 0), vérifie tan θ = (−3√3/2)/(3/2) = −√3, d'où θ = −π/3 ✓. Contrôle sur un point, Ω pris comme origine et M d'affixe 1 : f(M) a pour affixe 3/2 − i3√3/2 ≈ (1,5 ; −2,60) — l'image est bien « en bas à droite », ce que donne un tiers de tour indirect suivi d'un agrandissement de 3, et non un tiers de tour direct. Le piège courant, et de loin le plus fréquent : garder l'angle 2π/3 en se contentant de remplacer −3 par 3, comme si le signe du rapport était une décoration. La similitude h(Ω, 3)∘r(Ω, 2π/3) a pour coefficient 3e^(2iπ/3) = −3/2 + i3√3/2, soit l'image (−1,5 ; 2,60) pour le même point M : c'est exactement l'opposé, un rapport négatif « coûte » un demi-tour supplémentaire. L'angle −2π/3 n'est qu'un changement de signe et donne le coefficient 3e^(−2iπ/3) = −3/2 − i3√3/2, donc l'image (−1,5 ; −2,60), fausse elle aussi. Enfin recopier l'énoncé h(Ω, −3)∘r(Ω, 2π/3) revient à croire que toute écriture h∘r est déjà réduite : elle décrit bien la bonne application, mais ce n'est pas une forme réduite, dont le rapport doit être positif.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "A, B, C et D sont quatre points du plan tels que BD = 2·AC et (AC⃗, BD⃗) ≡ π/3 [2π]. Soit S la similitude directe qui transforme A en B et C en D. Le centre I de S est le point d'intersection de :",
+      "options": [
+        {
+          "id": "a",
+          "text": "le cercle des M tels que MA = ½MB et l'arc des M tels que (MA⃗, MB⃗) ≡ π/3 [2π]"
+        },
+        {
+          "id": "b",
+          "text": "le cercle des M tels que MA = 2MB et l'arc des M tels que (MA⃗, MB⃗) ≡ π/3 [2π]"
+        },
+        {
+          "id": "c",
+          "text": "le cercle des M tels que MA = ½MB et l'arc des M tels que (MA⃗, MB⃗) ≡ −π/3 [2π]"
+        },
+        {
+          "id": "d",
+          "text": "la médiatrice de [AB] et l'arc des M tels que (MA⃗, MB⃗) ≡ π/3 [2π]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "C'est la construction du centre sans repère, celle qui sert dès qu'aucune coordonnée n'est donnée. 1) Les éléments de S se lisent sur les deux couples : le rapport vaut k = BD/AC = 2 et l'angle θ = (AC⃗, BD⃗) = π/3. 2) La caractérisation du centre dit que pour tout M ≠ I d'image M′, IM′ = k·IM et (IM⃗, IM′⃗) ≡ θ. En l'appliquant au point A, dont l'image est B : IB = 2·IA, c'est-à-dire IA = ½IB, et (IA⃗, IB⃗) ≡ π/3 [2π]. 3) Chacune de ces deux conditions est un lieu du cours : l'ensemble des M tels que MA = k′MB avec k′ = ½ ≠ 1 est un CERCLE (celui de diamètre [GG′], G et G′ étant les barycentres de (A, 1), (B, −½) et de (A, 1), (B, ½)), et l'ensemble des M tels que (MA⃗, MB⃗) ≡ π/3 [2π] est un ARC de cercle d'extrémités A et B. Le centre est leur intersection ✓. Contrôle par une voie analytique totalement indépendante : plaçons A d'affixe 0 et C d'affixe 1, donc AC⃗ = 1 et AC = 1 ; alors BD⃗ = 2e^(iπ/3) = 1 + i√3. Le coefficient de S vaut a = (D − B)/(C − A) = BD⃗/AC⃗ = 1 + i√3, de module 2 ✓ et d'argument π/3 ✓. Prenons B d'affixe 3 : alors b = 3 et S : z ↦ (1 + i√3)z + 3, d'où D = S(1) = 4 + i√3, qui vérifie bien D − B = 1 + i√3 ✓. Le centre a pour affixe z_I = 3/(1 − 1 − i√3) = 3/(−i√3) = 3i/√3 = i√3, soit I(0 ; √3). On teste alors les deux lieux : IA = |0 − i√3| = √3 et IB = |3 − i√3| = √(9 + 3) = 2√3, donc IA = ½IB ✓ ; et (IA⃗, IB⃗) se lit sur le quotient (3 − i√3)/(−i√3) = (3 − i√3)·i/√3 = (3i + √3)/√3 = 1 + i√3, d'argument π/3 ✓. Les deux conditions sont vérifiées par le point calculé indépendamment. Le piège courant : écrire IA = 2IB au lieu de IA = ½IB, en prenant le rapport dans le mauvais sens — c'est l'image qui est k fois plus loin, pas l'antécédent. Le point trouvé plus haut le réfute : IA = √3 tandis que 2·IB = 4√3. Retourner l'angle en −π/3 revient à lire (IB⃗, IA⃗), ce qui donnerait l'arc symétrique par rapport à (AB), du mauvais côté de la droite. Enfin la médiatrice de [AB] est le lieu des M tels que MA = MB : c'est le cercle dégénéré du cas k′ = 1, exclu ici puisque k = 2 ≠ 1 — et notre centre vérifie IA = √3 ≠ IB = 2√3.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule des affirmations suivantes est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La composée de deux similitudes indirectes de rapports 2 et 3 est une similitude indirecte de rapport 6"
+        },
+        {
+          "id": "b",
+          "text": "Une similitude directe de rapport 1 admet un unique point fixe"
+        },
+        {
+          "id": "c",
+          "text": "Une similitude indirecte qui envoie A sur C et B sur D n'existe que si AB = CD"
+        },
+        {
+          "id": "d",
+          "text": "Si f est une similitude indirecte de centre I et de rapport 3, alors f∘f est l'homothétie de centre I et de rapport 9"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Seule l'affirmation d est vraie ✓ : c'est exactement la conséquence de la forme réduite d'une similitude indirecte, f = h(I, k)∘S_D = S_D∘h(I, k), d'où f∘f = h∘S_D∘S_D∘h = h∘h = h(I, k²) — ici h(I, 9). Vérification chiffrée sur un exemple exécuté : f : z ↦ 3z̄ + 2 − 4i, de centre I(−1 ; −1) et de rapport 3. Alors f∘f(z) = 3·conj(3z̄ + 2 − 4i) + 2 − 4i = 3(3z + 2 + 4i) + 2 − 4i = 9z + 6 + 12i + 2 − 4i = 9z + 8 + 8i ; or l'homothétie de centre I(−1 − i) et de rapport 9 s'écrit 9(z + 1 + i) − 1 − i = 9z + 8 + 8i ✓ — les deux expressions sont identiques. a est fausse par la règle des signes : indirecte = −1, et (−1) × (−1) = +1, donc la composée de deux similitudes indirectes est DIRECTE. Le rapport, lui, est bien 6 (les rapports se multiplient), et c'est ce qui rend l'affirmation crédible : seule la nature est fausse. Contre-exemple exécuté : f : z ↦ 2z̄ et g : z ↦ 3z̄ donnent g∘f(z) = 3·conj(2z̄) = 6z, l'homothétie de rapport 6, qui est bien une similitude directe. b est fausse parce que le théorème du centre exige un rapport DIFFÉRENT de 1 : une similitude directe de rapport 1 est un déplacement, et une translation de vecteur non nul n'a aucun point fixe, tandis que l'identité en a une infinité. Contre-exemple : z ↦ z + 1. c est fausse et c'est le contraste majeur avec le chapitre 12 : le théorème d'existence-unicité ne demande que A ≠ B et C ≠ D, aucune condition sur les longueurs, car le rapport s'ajuste tout seul à k = CD/AB. Contre-exemple exécuté : A(0), B(1), C(0), D(2) donnent la similitude indirecte z ↦ 2z̄, qui envoie bien A sur C et B sur D avec AB = 1 ≠ CD = 2. Le piège courant, présent dans a comme dans c : transposer mécaniquement un énoncé du chapitre 12 (nature conservée, égalité des longueurs obligatoire) alors que ce chapitre lève précisément la contrainte |a| = 1.",
+      "difficulty": 3
+    }
+  ]
+}

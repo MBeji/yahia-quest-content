@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Similitudes",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Soit k un réel strictement positif. L'image d'un cercle de rayon 3 par une similitude de rapport k est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "un cercle de rayon 3k"
+        },
+        {
+          "id": "b",
+          "text": "un cercle de rayon 3k²"
+        },
+        {
+          "id": "c",
+          "text": "un cercle de rayon 3"
+        },
+        {
+          "id": "d",
+          "text": "une ellipse dont le grand axe mesure 6k"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le cours donne deux résultats à enchaîner : une similitude transforme un cercle en un cercle, et elle multiplie toutes les longueurs par k. Le rayon, qui est une longueur, passe donc de 3 à 3k ✓. L'option d est le piège de fond : une similitude ne déforme pas, elle change seulement l'échelle, donc un cercle ne peut jamais devenir une ellipse. L'option b applique au rayon le facteur k², réservé aux aires : l'aire, elle, passe bien de 9π à 9πk². L'option c supposerait k = 1, c'est-à-dire une isométrie.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f une similitude de rapport 3 et A, B, C, D des points d'images respectives A′, B′, C′, D′. Sachant que AB⃗·CD⃗ = 5, que vaut A′B′⃗·C′D′⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "15"
+        },
+        {
+          "id": "d",
+          "text": "45"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le théorème du cours donne A′B′⃗·C′D′⃗ = k²·AB⃗·CD⃗. Ici k = 3, donc k² = 9 et le produit scalaire vaut 9 × 5 = 45 ✓. C'est cohérent avec la formule AB⃗·CD⃗ = AB × CD × cos θ : les deux longueurs sont multipliées par 3 chacune et l'angle est conservé, d'où le facteur 3 × 3 = 9. L'option c n'applique le rapport qu'une seule fois, 3 × 5 = 15 : c'est la règle des longueurs, pas celle des produits scalaires. L'option a supposerait le produit scalaire conservé, ce qui n'est vrai que pour une isométrie. L'option b ajoute le rapport au lieu de multiplier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f une similitude indirecte de rapport 2 et g une similitude indirecte de rapport 3. Quelle est la nature de g∘f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "une similitude directe de rapport 5"
+        },
+        {
+          "id": "b",
+          "text": "une similitude directe de rapport 6"
+        },
+        {
+          "id": "c",
+          "text": "une similitude indirecte de rapport 5"
+        },
+        {
+          "id": "d",
+          "text": "une similitude indirecte de rapport 6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Deux règles se combinent. La règle des signes d'abord : indirecte = −1, et (−1) × (−1) = +1, donc g∘f est une similitude directe. Les rapports ensuite : ils se multiplient, 2 × 3 = 6. La composée est donc une similitude directe de rapport 6 ✓. Contrôle sur les angles orientés : f les change en leurs opposées, g fait de même sur les images, et deux renversements successifs rétablissent le signe de départ ✓. Les options c et d gardent le caractère indirect, en s'attendant à retrouver un objet de même espèce, alors que la parité l'interdit. Les options a et c additionnent les rapports, 2 + 3 = 5, ce qui est la règle des angles, pas celle des rapports.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est rapporté à un repère orthonormé direct. Quelle est l'affixe du centre de la similitude directe d'écriture complexe z′ = (1 + i)z + 2 − 2i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 + i"
+        },
+        {
+          "id": "b",
+          "text": "2 − 2i"
+        },
+        {
+          "id": "c",
+          "text": "2 + 2i"
+        },
+        {
+          "id": "d",
+          "text": "−2 − 2i"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le centre est l'unique point fixe, d'affixe b/(1 − a). Ici a = 1 + i, donc 1 − a = 1 − 1 − i = −i, et z_I = (2 − 2i)/(−i). En multipliant haut et bas par i : (2 − 2i)i/(−i × i) = (2i − 2i²)/(−i²) = (2i + 2)/1 = 2 + 2i ✓. Contrôle : (1 + i)(2 + 2i) + 2 − 2i = (2 + 2i + 2i + 2i²) + 2 − 2i = (4i) + 2 − 2i = 2 + 2i, le point est bien fixe ✓. Au passage, le rapport vaut |1 + i| = √2. L'option b prend le centre égal à b, l'erreur la plus fréquente du chapitre. L'option d vient d'une faute de signe sur 1 − a, écrit i au lieu de −i : (2 − 2i)/i = (2 − 2i)(−i) = −2i + 2i² = −2 − 2i. L'option a confond le centre avec le coefficient a.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est rapporté à un repère orthonormé direct. Quelle est la nature de l'application qui à tout point d'affixe z associe le point d'affixe z′ = e^(iπ/3)z + 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "la translation de vecteur d'affixe 1"
+        },
+        {
+          "id": "b",
+          "text": "l'homothétie de rapport π/3"
+        },
+        {
+          "id": "c",
+          "text": "la rotation d'angle π/3"
+        },
+        {
+          "id": "d",
+          "text": "une similitude directe de rapport différent de 1 et d'angle π/3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Avant tout calcul, on regarde a = e^(iπ/3) : son module vaut 1 et il est différent de 1, donc on est encore au chapitre 12 et l'application est la rotation d'angle arg(a) = π/3 ✓. Son centre a pour affixe b/(1 − a) = 1/(1 − e^(iπ/3)) ; comme 1 − e^(iπ/3) = 1 − (1/2 + i√3/2) = 1/2 − i√3/2 = e^(−iπ/3), ce centre vaut e^(iπ/3). Contrôle : e^(iπ/3) × e^(iπ/3) + 1 = e^(2iπ/3) + 1 = (−1/2 + i√3/2) + 1 = 1/2 + i√3/2 = e^(iπ/3), le point est bien fixe ✓. L'option d est le piège du chapitre : le rapport d'une similitude est |a|, ici 1, et non un nombre quelconque parce que a n'est pas réel. L'option b prend l'argument de a pour un rapport, alors qu'une homothétie a un coefficient a réel. L'option a supposerait a = 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est rapporté à un repère orthonormé direct. Soit f l'application qui à tout point d'affixe z associe le point d'affixe z′ = (2 − 2i)z + 5. Quelle est l'aire de l'image par f d'un triangle d'aire 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "6√2"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "24"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Deux étapes. Le rapport d'abord : k = |a| = |2 − 2i| = √(2² + (−2)²) = √(4 + 4) = √8 = 2√2. Les aires ensuite : elles sont multipliées par k² = (2√2)² = 4 × 2 = 8, donc l'aire de l'image vaut 3 × 8 = 24 ✓. L'option b multiplie l'aire par k au lieu de k² : 3 × 2√2 = 6√2, la confusion d'exposant la plus fréquente du chapitre. L'option c lit le rapport sur la seule partie réelle de a, k = 2, et donne 3 × 2² = 12. L'option a s'arrête au facteur k² = 8 sans le multiplier par l'aire de départ.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le maître des similitudes",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "ABCD est un carré direct de centre O. On note S₁ la similitude directe de centre A qui envoie B sur O, et S₂ la similitude directe de centre C qui envoie O sur B. Identifier f = S₂∘S₁.\n\n<svg viewBox=\"0 0 300 250\"><path d=\"M60 200 L220 200 L220 40 L60 40 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M60 200 L220 200 L220 40 L60 40 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M60 200 L220 40\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"220\" cy=\"200\" r=\"4\"/><circle cx=\"60\" cy=\"40\" r=\"4\"/><circle cx=\"140\" cy=\"120\" r=\"3.5\"/></g><g fill=\"#b45309\"><circle cx=\"60\" cy=\"200\" r=\"5\"/><circle cx=\"220\" cy=\"40\" r=\"5\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"48\" y=\"219\" text-anchor=\"middle\" fill=\"#b45309\">A</text><text x=\"232\" y=\"219\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"232\" y=\"34\" text-anchor=\"middle\" fill=\"#b45309\">C</text><text x=\"48\" y=\"34\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"128\" y=\"114\" text-anchor=\"middle\" fill=\"#0f172a\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La similitude directe de centre B, de rapport 2 et d'angle π/2"
+        },
+        {
+          "id": "b",
+          "text": "La rotation de centre O et d'angle π/2"
+        },
+        {
+          "id": "c",
+          "text": "La rotation de centre B et d'angle π/2"
+        },
+        {
+          "id": "d",
+          "text": "La rotation de centre B et d'angle π/4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "C'est le CAS LIMITE du chapitre : le rapport de la composée retombe sur 1, et l'on repasse donc du côté des isométries. 1) Rapport, sans coordonnées : k₁ = AO/AB et k₂ = CB/CO ; dans un carré de côté c, AO = CO = c√2/2 et AB = CB = c, donc k₁ = √2/2 et k₂ = √2, d'où k = k₁k₂ = 1 ✓. 2) Angle : les deux similitudes sont directes, donc la composée l'est aussi, et les angles s'ADDITIONNENT. θ₁ = (AB⃗, AO⃗) = π/4 et θ₂ = (CO⃗, CB⃗) = π/4 (les diagonales d'un carré coupent les côtés à 45°, dans le sens direct pour ce carré direct), donc θ = π/2. Une similitude directe de rapport 1 et d'angle π/2 est une ROTATION d'angle π/2 : reste son centre. 3) Le centre, en suivant deux points bien choisis. Pour A, fixé par S₁ : posons A(0 ; 0), B(2 ; 0), C(2 ; 2), D(0 ; 2), O(1 ; 1). S₁(A) = A, puis S₂(A) : le coefficient de S₂ vaut a₂ = (B − C)/(O − C) = (−2i)/(−1 − i) = 2i(1 − i)/2 = 1 + i, donc S₂ : z ↦ (1 + i)(z − 2 − 2i) + 2 + 2i = (1 + i)z + 2 − 2i, et S₂(0) = 2 − 2i. Donc f(A) = (2 ; −2). Pour C, fixé par S₂ : le coefficient de S₁ vaut a₁ = (O − A)/(B − A) = (1 + i)/2, donc S₁(C) = ((1 + i)/2)(2 + 2i) = (1 + i)² = 2i, puis S₂(2i) = (1 + i)(2i) + 2 − 2i = 2i − 2 + 2 − 2i = 0, donc f(C) = A. 4) Une rotation d'angle π/2 qui envoie A(0 ; 0) sur (2 ; −2) et C(2 ; 2) sur A(0 ; 0) : son centre est le point B(2 ; 0), car BA⃗ = (−2 ; 0) tourné d'un quart de tour direct donne (0 ; −2), ce qui mène bien à (2 ; −2) ✓, et BC⃗ = (0 ; 2) tourné de même donne (−2 ; 0), ce qui mène bien à A ✓. Contrôle par l'écriture complexe, voie totalement indépendante : f(z) = (1 + i)·((1 + i)/2)z + 2 − 2i = ((1 + i)²/2)z + 2 − 2i = iz + 2 − 2i. On lit a = i, donc |a| = 1 ✓ (isométrie) et arg(a) = π/2 ✓ ; le centre a pour affixe (2 − 2i)/(1 − i) = 2(1 − i)/(1 − i) = 2, soit B ✓. Substitution : f(2) = 2i + 2 − 2i = 2 ✓. L'erreur classique : ne pas multiplier les rapports mais les diviser, √2 ÷ (√2/2) = 2, et annoncer une similitude de rapport 2 — mais alors f(A) vaudrait B + 2·(0 ; −2) = (2 ; −4), et non (2 ; −2). Placer le centre en O parce que c'est le point remarquable du carré se réfute en une ligne : f(1 + i) = i(1 + i) + 2 − 2i = 1 − i ≠ 1 + i. Enfin garder l'angle π/4 revient à oublier l'addition : cette rotation-là enverrait A sur (2 − √2 ; −√2) ≈ (0,59 ; −1,41), et non sur (2 ; −2).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé direct. Soit r la rotation de centre O et d'angle π/2, et f l'application d'écriture complexe z′ = 2iz̄ + 6 + 2i. Déterminer les éléments caractéristiques de la similitude g telle que r∘g = f.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Centre (2 ; −2), rapport 2, axe la droite d'équation x = 2"
+        },
+        {
+          "id": "b",
+          "text": "Centre (−2 ; −2), rapport 2, axe la droite d'équation y = −2"
+        },
+        {
+          "id": "c",
+          "text": "Centre (−2 ; −2), rapport 2, axe la droite d'équation x = −2"
+        },
+        {
+          "id": "d",
+          "text": "Centre (−2 ; −2), rapport 4, axe la droite d'équation y = −2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sens inverse : on connaît la composée et l'un des facteurs, il faut remonter à l'autre. 1) Isoler g : de r∘g = f on tire, en composant les DEUX membres à gauche par r⁻¹, g = r⁻¹∘f — et surtout pas f∘r⁻¹, la composition n'étant pas commutative. 2) r⁻¹ est la rotation de centre O et d'angle −π/2, soit z ↦ −iz. Donc g(z) = −i(2iz̄ + 6 + 2i) = −2i²z̄ − 6i − 2i² = 2z̄ + 2 − 6i. La barre de conjugaison survit : g est une similitude INDIRECTE, de rapport k = |2| = 2 ≠ 1 (cohérent avec la règle des rapports, 1 × 2 = 2, la rotation ayant le rapport 1). 3) Centre : z_I = (a·b̄ + b)/(1 − |a|²) avec a = 2 et b = 2 − 6i, soit (2(2 + 6i) + 2 − 6i)/(1 − 4) = (4 + 12i + 2 − 6i)/(−3) = (6 + 6i)/(−3) = −2 − 2i, donc I(−2 ; −2). Substitution : 2·conj(−2 − 2i) + 2 − 6i = 2(−2 + 2i) + 2 − 6i = −2 − 2i ✓. 4) Axe : ensemble des M tels que IM′⃗ = 2IM⃗, soit z′ − z_I = 2(z − z_I) : 2z̄ + 2 − 6i + 2 + 2i = 2z + 4 + 4i, donc 2z̄ + 4 − 4i = 2z + 4 + 4i, puis z̄ = z + 4i ; avec z = x + iy, −y = y + 4 donne y = −2 ✓, droite qui passe bien par I ✓. Contrôle par la seule preuve qui compte, la vérification de l'équation de départ pour TOUT z : r(g(z)) = i(2z̄ + 2 − 6i) = 2iz̄ + 2i + 6 = f(z) ✓. Contrôle sur un point via la forme réduite g = h(I, 2)∘S_D : pour M(0 ; 0), S_D l'envoie sur (0 ; −4), puis h(I, 2) donne (−2 + 2(0 + 2) ; −2 + 2(−4 + 2)) = (2 ; −6) ; et l'écriture complexe donne g(0) = 2 − 6i ✓, même point. L'erreur classique : composer du mauvais côté et calculer f∘r⁻¹, qui vaut 2i·conj(−iz) + 6 + 2i = 2i(iz̄) + 6 + 2i = −2z̄ + 6 + 2i — une similitude indirecte parfaitement identifiable, de rapport 2, de centre (−2(6 − 2i) + 6 + 2i)/(−3) = (−6 + 6i)/(−3) = 2 − 2i et d'axe x = 2 (car z̄ = −z + 4 donne x = 2), mais qui ne vérifie PAS l'équation : r appliqué ensuite donnerait i(−2z̄ + 6 + 2i) = −2iz̄ − 2 + 6i, et non f. Confondre l'axe avec la perpendiculaire à l'axe passant par le centre donne x = −2 : cette droite est bien globalement invariante, mais pour M(−2 ; 0) qui est dessus, g(−2) = 2(−2) + 2 − 6i = −2 − 6i, donc IM′⃗ = (0 ; −4) = −2·IM⃗ — le facteur est −k, pas +k. Enfin le rapport 4 exécute l'erreur k = |a|², ou la confusion avec g∘g = h(I, k²).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé direct. On considère l'application f : z′ = −2z̄ + 6 − 2i, et voici une solution proposée. Étape 1 : a = −2 et b = 6 − 2i ; la barre de conjugaison montre que f est une similitude indirecte, de rapport k = |a| = 2, différent de 1, donc f a un centre unique. Étape 2 : ce centre vérifie z_I = (a·b̄ + b)/(1 − |a|²) = (−2(6 + 2i) + 6 − 2i)/(1 − 4) = (−6 − 6i)/(−3) = 2 + 2i, donc I(2 ; 2). Étape 3 : l'axe est l'ensemble des M tels que IM′⃗ = a·IM⃗, soit z′ − z_I = −2(z − z_I), c'est-à-dire −2z̄ + 4 − 4i = −2z + 4 + 4i, donc z̄ = z − 4i, soit y = 2 : l'axe est la droite d'équation y = 2. Étape 4 : la forme réduite de f est donc f = h(I, 2)∘S_D = S_D∘h(I, 2), avec I(2 ; 2) et D la droite d'équation y = 2. Quelle est la PREMIÈRE étape fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 1"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 2"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 3"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ceci est une chasse à l'erreur : la solution proposée contient une faute plantée, l'explication décrit donc un raisonnement volontairement faux. L'étape 3 est la PREMIÈRE fausse ✓. Le cours définit l'axe comme l'ensemble des M tels que IM′⃗ = k·IM⃗, avec k le RAPPORT — un réel strictement positif, ici k = 2. L'étape 3 y a substitué le coefficient a = −2, et son calcul, exact ligne à ligne, produit donc la mauvaise droite : de −2z̄ + 4 − 4i = −2z + 4 + 4i on tire z̄ = z − 4i, soit −y = y − 4 et y = 2. La bonne équation est z′ − z_I = 2(z − z_I) : −2z̄ + 6 − 2i − 2 − 2i = 2z − 4 − 4i, soit −2z̄ + 4 − 4i = 2z − 4 − 4i, donc −2z̄ = 2z − 8 puis z̄ = −z + 4 ; avec z = x + iy, x − iy = −x − iy + 4 donne x = 2. L'axe est la droite d'équation x = 2, et la droite y = 2 obtenue par l'étape 3 est en fait la PERPENDICULAIRE à l'axe en I — elle est globalement invariante, ce qui explique que le calcul « marche » et que l'erreur soit si difficile à voir. Vérification par recomposition, voie indépendante : la symétrie d'axe x = 2 envoie (x, y) sur (4 − x ; y), puis h(I, 2) donne (2 + 2(4 − x − 2) ; 2 + 2(y − 2)) = (6 − 2x ; 2y − 2) ; or f donne z′ = −2(x − iy) + 6 − 2i = (6 − 2x) + i(2y − 2) — les deux expressions coïncident pour TOUT point ✓, ce que la droite y = 2 ne ferait pas. Vérification chiffrée sur deux points : M(2 ; 0), qui est sur x = 2, a pour image f(2) = −4 + 6 − 2i = 2 − 2i, soit (2 ; −2), et IM′⃗ = (0 ; −4) = 2·IM⃗ ✓, exactement la caractérisation de l'axe ; tandis que M(0 ; 2), qui est sur y = 2, a pour image f(2i) = −2(−2i) + 6 − 2i = 6 + 2i, soit (6 ; 2), et IM′⃗ = (4 ; 0) = −2·IM⃗ — le facteur est négatif, la signature de la perpendiculaire et non de l'axe. Les étapes 1 et 2 sont irréprochables : k = |−2| = 2 ✓, et le centre se recontrôle par substitution, −2·conj(2 + 2i) + 6 − 2i = −2(2 − 2i) + 6 − 2i = −4 + 4i + 6 − 2i = 2 + 2i ✓. L'étape 4 énonce correctement le théorème de la forme réduite ; elle n'est fautive que parce qu'elle recopie l'axe erroné de l'étape 3 — la question portant sur la PREMIÈRE faute, la choisir revient à confondre la faute et son héritage. Le piège courant est exactement celui qui est planté : prendre le coefficient a pour le rapport quand a est réel négatif, alors que le rapport d'une similitude est toujours |a| > 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABC est un triangle rectangle en A, direct, tel que (AB⃗, AC⃗) ≡ π/2 [2π], AB = 1 et AC = 2. On note H le pied de la hauteur issue de A. Déterminer les éléments caractéristiques de la similitude directe f telle que f(B) = A et f(A) = C.\n\n<svg viewBox=\"0 0 200 260\"><path d=\"M50 220 L140 220 L50 40 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M50 220 L140 220 L50 40 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M50 202 L68 202 L68 220\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M50 220 L122 184\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"220\" r=\"4\"/><circle cx=\"140\" cy=\"220\" r=\"4\"/><circle cx=\"50\" cy=\"40\" r=\"4\"/></g><g fill=\"#b45309\"><circle cx=\"122\" cy=\"184\" r=\"4.5\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"40\" y=\"238\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"148\" y=\"238\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"44\" y=\"32\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"136\" y=\"179\" text-anchor=\"middle\" fill=\"#b45309\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Centre H, rapport 2, angle π/2"
+        },
+        {
+          "id": "b",
+          "text": "Centre H, rapport 1/2, angle −π/2"
+        },
+        {
+          "id": "c",
+          "text": "Centre A, rapport 2, angle −π/2"
+        },
+        {
+          "id": "d",
+          "text": "Centre H, rapport 2, angle −π/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Trois sous-résultats dépendants, et le troisième est le vrai enjeu. Posons A(0 ; 0), B(1 ; 0), C(0 ; 2), ce qui rend le triangle direct avec (AB⃗, AC⃗) ≡ π/2 ✓. 1) Rapport : k = AC/BA = 2/1 = 2 ✓ — l'image du segment [BA] est le segment [AC]. 2) Angle : θ = (BA⃗, AC⃗) avec BA⃗ = (−1 ; 0) et AC⃗ = (0 ; 2) ; en complexes le quotient vaut 2i/(−1) = −2i, d'argument −π/2 ✓. 3) Centre : écrivons z′ = az + b. De f(A) = C on tire b = 2i ; de f(B) = A on tire a + 2i = 0, donc a = −2i — cohérent avec |a| = 2 ✓ et arg(a) = −π/2 ✓. Le centre est l'unique point fixe : z_Ω = b/(1 − a) = 2i/(1 + 2i) = 2i(1 − 2i)/((1)² + (2)²) = (2i + 4)/5 = (4 + 2i)/5 = 0,8 + 0,4i, soit Ω(0,8 ; 0,4). Substitution : −2i(0,8 + 0,4i) + 2i = −1,6i + 0,8 + 2i = 0,8 + 0,4i ✓. Reste à reconnaître ce point : H est le projeté orthogonal de A sur (BC) ; un point de (BC) s'écrit B + t·BC⃗ = (1 − t ; 2t), et l'orthogonalité AH⃗·BC⃗ = 0 s'écrit (1 − t ; 2t)·(−1 ; 2) = −1 + t + 4t = 0, d'où t = 1/5 et H(0,8 ; 0,4) — c'est exactement le centre ✓. 4) Contrôle par une seconde voie, la caractérisation IM′ = k·IM et (IM⃗, IM′⃗) ≡ θ, testée sur les DEUX couples. Couple (B, A) : HB⃗ = (0,2 ; −0,4) de norme √0,2 et HA⃗ = (−0,8 ; −0,4) de norme √0,8 = 2√0,2, donc HA = 2·HB ✓ ; et le quotient des affixes vaut (−0,8 − 0,4i)/(0,2 − 0,4i) = (−0,8 − 0,4i)(0,2 + 0,4i)/0,2 = (−0,16 − 0,32i − 0,08i + 0,16)/0,2 = −0,4i/0,2 = −2i, de module 2 et d'argument −π/2 ✓. Couple (A, C) : HA = √0,8 et HC⃗ = (−0,8 ; 1,6) de norme √3,2 = 2√0,8 ✓ ; et (−0,8 + 1,6i)/(−0,8 − 0,4i) = (−0,8 + 1,6i)(−0,8 + 0,4i)/0,8 = (0,64 − 0,32i − 1,28i − 0,64)/0,8 = −1,6i/0,8 = −2i ✓. Deux couples concordants : (H, 2, −π/2) est confirmé. L'erreur classique : recopier l'angle droit de l'énoncé, (AB⃗, AC⃗) ≡ π/2, comme si c'était l'angle de f — mais l'angle se lit sur un couple antécédent-image, ici (BA⃗, AC⃗). La similitude de centre H, de rapport 2 et d'angle π/2 enverrait B sur H + 2·(0,4 ; 0,2) = (1,6 ; 0,8), et non sur A. Inverser le rapport en BA/AC = 1/2 enverrait B sur H + 0,5·(−0,4 ; −0,2) = (0,6 ; 0,3), toujours pas A. Enfin croire que le centre est A, le sommet de l'angle droit, se réfute immédiatement : f(A) = C ≠ A, un centre est fixe par définition.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé direct. Soit S la similitude directe de centre Ω(2 ; 1), de rapport 3 et d'angle π/2. Déterminer le point M dont l'image par S est le point A(5 ; 4).",
+      "options": [
+        {
+          "id": "a",
+          "text": "M(3 ; 0)"
+        },
+        {
+          "id": "b",
+          "text": "M(3 ; 2)"
+        },
+        {
+          "id": "c",
+          "text": "M(1 ; 2)"
+        },
+        {
+          "id": "d",
+          "text": "M(−7 ; 10)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sens inverse : on donne l'image, on cherche l'antécédent — donc on travaille avec S⁻¹, qui est la similitude directe de MÊME centre Ω, de rapport 1/3 et d'angle −π/2 (le rapport s'inverse, l'angle change de signe). Voie 1, l'écriture complexe. Avec z_Ω = 2 + i, S s'écrit z′ = 3e^(iπ/2)(z − z_Ω) + z_Ω = 3i(z − 2 − i) + 2 + i. On résout 3i(z − 2 − i) + 2 + i = 5 + 4i : d'abord 3i(z − 2 − i) = 3 + 3i, puis z − 2 − i = (3 + 3i)/(3i) = (1 + i)/i = (1 + i)(−i) = 1 − i, donc z = 3 + 0i, soit M(3 ; 0) ✓. Contrôle par substitution directe : S(3) = 3i(3 − 2 − i) + 2 + i = 3i(1 − i) + 2 + i = 3i + 3 + 2 + i = 5 + 4i ✓, c'est bien A. Voie 2, totalement indépendante, par les éléments caractéristiques. Si M(3 ; 0) est l'antécédent, alors ΩM⃗ = (1 ; −1) de norme √2 et ΩA⃗ = (3 ; 3) de norme 3√2 : le rapport ΩA/ΩM vaut bien 3 ✓. Et l'angle (ΩM⃗, ΩA⃗) se lit sur le quotient des affixes, (3 + 3i)/(1 − i) = (3 + 3i)(1 + i)/2 = (3 + 3i + 3i − 3)/2 = 6i/2 = 3i, de module 3 ✓ et d'argument π/2 ✓. Les deux conditions caractéristiques sont satisfaites, l'antécédent est le bon. L'erreur classique : diviser la distance par 3 mais oublier de tourner, c'est-à-dire poser M = Ω + (1/3)ΩA⃗ = (2 ; 1) + (1 ; 1) = (3 ; 2) — mais l'image de ce point vaut S(3 + 2i) = 3i(1 + i) + 2 + i = 3i − 3 + 2 + i = −1 + 4i, soit (−1 ; 4), et non A. Tourner du mauvais côté, en gardant +π/2 au lieu de −π/2 pour la réciproque, donne M = Ω + (1/3)·i·ΩA⃗ = (2 + i) + i(1 + i) = 1 + 2i, soit (1 ; 2) : son image est S(1 + 2i) = 3i(−1 + i) + 2 + i = −3i − 3 + 2 + i = −1 − 2i, encore raté. Enfin appliquer S à A au lieu de S⁻¹ — l'erreur de direction pure — donne S(5 + 4i) = 3i(3 + 3i) + 2 + i = 9i − 9 + 2 + i = −7 + 10i, soit (−7 ; 10) : c'est l'IMAGE de A, pas son antécédent.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule des affirmations suivantes est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Toute similitude directe admet un unique point fixe"
+        },
+        {
+          "id": "b",
+          "text": "Si f est une similitude indirecte de centre I, de rapport k ≠ 1 et d'axe D, alors S_D∘f est l'homothétie de centre I et de rapport k"
+        },
+        {
+          "id": "c",
+          "text": "Si une similitude directe f et une similitude indirecte g coïncident en deux points distincts A et B, alors f = g"
+        },
+        {
+          "id": "d",
+          "text": "Toute droite passant par le centre d'une similitude indirecte de rapport k ≠ 1 est globalement invariante"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Seule l'affirmation b est vraie ✓, et elle se démontre en une ligne à partir de la forme réduite. Le théorème donne f = h(I, k)∘S_D = S_D∘h(I, k) ; en utilisant la SECONDE écriture, S_D∘f = S_D∘S_D∘h(I, k) = h(I, k), puisque S_D∘S_D = Id. Vérification chiffrée sur un exemple exécuté : f : z ↦ −2z̄ + 6 − 2i, de centre I(2 ; 2), de rapport 2 et d'axe D : x = 2. La symétrie d'axe x = 2 envoie (x, y) sur (4 − x ; y), c'est-à-dire z ↦ 4 − z̄. Alors S_D∘f(z) = 4 − conj(−2z̄ + 6 − 2i) = 4 − (−2z + 6 + 2i) = 2z − 2 − 2i ; or h(I, 2) s'écrit z ↦ 2(z − 2 − 2i) + 2 + 2i = 2z − 2 − 2i ✓ — les deux applications sont identiques. a est fausse parce qu'elle oublie la condition du théorème, « rapport différent de 1 » : une similitude directe de rapport 1 est un déplacement, et une translation de vecteur non nul n'a AUCUN point fixe. Contre-exemple exécuté : z ↦ z + 3. c est fausse et c'est le cœur du théorème d'existence-unicité : pour A ≠ B et leurs images, il existe exactement DEUX similitudes, une directe et une indirecte, et elles sont nécessairement distinctes puisque l'une conserve les mesures des angles orientés et l'autre les change en leurs opposées. Contre-exemple exécuté : f : z ↦ 2z et g : z ↦ 2z̄ coïncident en A(0) et B(1) — les deux envoient 0 sur 0 et 1 sur 2 — mais f(i) = 2i tandis que g(i) = −2i. Deux similitudes ne sont forcées d'être égales que si elles coïncident sur trois points NON ALIGNÉS. d est fausse : seuls l'axe D et la perpendiculaire à D passant par I sont globalement invariants, pas toutes les droites du faisceau de centre I. Contre-exemple exécuté, sur la même f que plus haut : la droite d'équation y = x passe par I(2 ; 2), et le point M(3 ; 3) qu'elle porte a pour image f(3 + 3i) = −2(3 − 3i) + 6 − 2i = 4i, soit (0 ; 4), qui n'est pas sur y = x. Le piège courant, présent dans a comme dans d : retenir un théorème sans sa condition (le rapport ≠ 1 pour b, la paire axe-perpendiculaire pour d), alors que c'est précisément cette condition qui fait le tri.",
+      "difficulty": 3
+    }
+  ]
+}
