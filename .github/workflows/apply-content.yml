@@ -101,6 +101,26 @@ jobs:
             *pooler.supabase.com*) echo "URL pooler confirmée (IPv4)." ;;
             *) echo "::warning::Hôte ni direct ni pooler — inattendu. On tente." ;;
           esac
+          # Le pooler expose DEUX ports et l'interface propose les deux onglets :
+          # 6543 = mode transaction (pas de prepared statements, pg_dump non
+          # supporté), 5432 = mode session, le seul qui convienne ici. Vécu le
+          # 2026-07-29 : URL en 6543, échec sur le pg_dump.
+          case "${PROD_SUPABASE_DB_URL}" in
+            *pooler.supabase.com:6543*)
+              echo "::error::URL en port 6543 = pooler en mode TRANSACTION : pg_dump n'y est pas supporté. Prendre l'onglet « Session pooler » (port 5432) dans Supabase > Connect."
+              exit 1 ;;
+          esac
+          # Le pooler exige un identifiant de tenant : l'utilisateur doit être
+          # postgres.<ref>, pas postgres. Sans le suffixe, l'échec se présente
+          # comme un mot de passe faux (le pooler retire le suffixe avant l'auth),
+          # ce qui envoie chercher au mauvais endroit.
+          case "${PROD_SUPABASE_DB_URL}" in
+            *"//postgres.${PROD_REF}:"*) echo "Tenant confirmé : postgres.${PROD_REF}." ;;
+            *"//postgres:"*)
+              echo "::error::L'utilisateur est « postgres » sans suffixe de tenant : le pooler le refusera avec un « password authentication failed » trompeur. Utiliser postgres.${PROD_REF}."
+              exit 1 ;;
+            *) echo "::warning::Utilisateur inattendu dans l'URL — on tente." ;;
+          esac
 
       - name: Checkout corpus (ce repo)
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
