@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le maître des isométries",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé direct. Soit f l'application qui à tout point M d'affixe z associe le point M′ d'affixe z′ = ((1 − i√3)/2)·z̄. Identifier f.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La rotation de centre O et d'angle −π/3"
+        },
+        {
+          "id": "b",
+          "text": "La symétrie orthogonale d'axe la droite d'équation y = −(√3/3)x"
+        },
+        {
+          "id": "c",
+          "text": "La symétrie orthogonale d'axe la droite d'équation y = −√3 x"
+        },
+        {
+          "id": "d",
+          "text": "La symétrie orthogonale d'axe la droite d'équation y = (√3/3)x"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Écriture en z̄, donc rien à voir avec une rotation : on suit les trois temps du cours. 1) Avec a = (1 − i√3)/2, on a |a| = 1, et la conjugaison conserve les modules, donc |z′₁ − z′₂| = |a|·|z̄₁ − z̄₂| = |z₁ − z₂| : f est une isométrie ✓. 2) Points fixes : en repassant en coordonnées, z̄ = x − iy donne z′ = ((1 − i√3)/2)(x − iy) = (x/2 − (√3/2)y) + i(−(√3/2)x − y/2), c'est-à-dire x′ = x/2 − (√3/2)y et y′ = −(√3/2)x − y/2. La condition x′ = x s'écrit x/2 = −(√3/2)y, soit x = −√3 y ; la condition y′ = y s'écrit (3/2)y = −(√3/2)x, soit encore x = −√3 y — les DEUX équations donnent la même droite, d'équation y = −x/√3 = −(√3/3)x. 3) Conclusion par le tableau de classification : l'ensemble des points fixes est une droite, donc f est la symétrie orthogonale d'axe cette droite ✓. Contrôle par une voie indépendante, en polaire : pour z = re^(iθ) avec r > 0, on a z̄ = re^(−iθ) et a = e^(−iπ/3), donc az̄ = re^(−i(θ + π/3)) ; la condition z = az̄ s'écrit alors e^(iθ) = e^(−i(θ + π/3)), soit 2θ ≡ −π/3 [2π] et θ ≡ −π/6 [π] : les points fixes sont bien sur la droite passant par O de coefficient directeur tan(−π/6) = −√3/3 ✓. Second contrôle, sur un point hors de l'axe : z = 1 a pour image (1 − i√3)/2 = e^(−iπ/3), de module 1 ✓ ; réfléchir la direction d'angle 0 par rapport à une droite d'angle −π/6 donne bien la direction d'angle −π/3 ✓. Le piège courant : prendre l'argument de a pour l'angle de l'axe et répondre y = tan(−π/3)x = −√3 x, alors que l'axe fait l'angle arg(a)/2 — c'est le même facteur 2 que dans « deux symétries d'axes sécants donnent la rotation d'angle DOUBLE », lu à l'envers ; on le teste immédiatement : le point (1 ; −√3) de cette droite a pour image ((1 − i√3)/2)(1 + i√3) = 2, donc le point (2 ; 0), qui n'est pas lui-même. Oublier le signe donne y = (√3/3)x, dont le point (√3 ; 1) a pour image −2i, soit (0 ; −2) : pas davantage fixe. Enfin traiter z̄ comme z conduit à une rotation d'angle −π/3, mais une rotation ne fixe qu'un point, jamais toute une droite.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé direct. Soit f la rotation de centre Ω d'affixe 2 et d'angle π/2. D'après le théorème de décomposition, f s'écrit de manière UNIQUE sous la forme f = t∘g, où t est une translation et g une isométrie fixant l'origine O. Déterminer t et g.",
+      "options": [
+        {
+          "id": "a",
+          "text": "t est la translation de vecteur d'affixe 2 − 2i et g la rotation de centre O et d'angle π/2"
+        },
+        {
+          "id": "b",
+          "text": "t est la translation de vecteur d'affixe 2 + 2i et g la rotation de centre O et d'angle π/2"
+        },
+        {
+          "id": "c",
+          "text": "t est la translation de vecteur d'affixe 2 − 2i et g la rotation de centre O et d'angle −π/2"
+        },
+        {
+          "id": "d",
+          "text": "t est la translation de vecteur d'affixe 2 et g la rotation de centre O et d'angle π/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Trois étapes dépendantes. 1) Écrire f en complexes : une rotation de centre ω et d'angle θ s'écrit z′ = e^(iθ)(z − ω) + ω, donc ici z′ = i(z − 2) + 2 = iz + 2 − 2i. 2) Identifier la translation : dans f = t∘g, on applique g d'abord, et g fixe O ; donc f(O) = t(g(O)) = t(O), ce qui détermine le vecteur de t sans aucun choix possible — c'est là qu'est l'unicité. Or f(O) a pour affixe 2 − 2i, donc t est la translation de vecteur d'affixe 2 − 2i. 3) En déduire g : de f = t∘g on tire g = t⁻¹∘f, c'est-à-dire z ↦ (iz + 2 − 2i) − (2 − 2i) = iz. C'est la rotation de centre O et d'angle arg(i) = π/2 ✓, et elle fixe bien O ✓. Contrôle par recomposition, voie indépendante : t∘g envoie z sur iz puis sur iz + 2 − 2i, exactement l'écriture de f trouvée à l'étape 1 ✓. Contrôle chiffré sur un point : f(Ω) = Ω, donc l'affixe 2 doit être fixe ; par a, on calcule g(2) = 2i puis t(2i) = 2i + 2 − 2i = 2 ✓. Le piège courant : croire que la translation « transporte le centre », donc prendre le vecteur d'affixe 2 (celle de Ω) — mais alors t∘g enverrait O sur 2 et non sur 2 − 2i, et Ω sur 2i + 2 ≠ 2. Se tromper de signe sur l'affixe de f(O) donne 2 + 2i, ce qui viole aussi le test f(Ω) = Ω. Enfin prendre pour g la rotation d'angle −π/2 revient à décomposer f⁻¹ : la composée t∘g enverrait alors Ω sur −2i + 2 − 2i = 2 − 4i, très loin de Ω.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "OAB est un triangle équilatéral direct. On note Δ la droite perpendiculaire à (OA) en O, et S₁, S₂, S₃ les symétries orthogonales d'axes respectifs (OA), (OB) et Δ. Identifier f = S₃∘S₂∘S₁.\n\n<svg viewBox=\"0 0 300 260\"><path d=\"M30 200 H285\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M78 220 L177 48\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M90 35 V245\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"1.8\"/><path d=\"M90 200 L230 200 L160 79 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M90 200 L230 200 L160 79 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"90\" cy=\"200\" r=\"4\"/><circle cx=\"230\" cy=\"200\" r=\"4\"/><circle cx=\"160\" cy=\"79\" r=\"4\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"74\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"240\" y=\"220\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"168\" y=\"66\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"272\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\">(OA)</text><text x=\"196\" y=\"44\" text-anchor=\"middle\" fill=\"#0f172a\">(OB)</text><text x=\"90\" y=\"28\" text-anchor=\"middle\" fill=\"#b45309\">Δ</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La rotation de centre O et d'angle 2π/3"
+        },
+        {
+          "id": "b",
+          "text": "La symétrie orthogonale d'axe (OB)"
+        },
+        {
+          "id": "c",
+          "text": "La symétrie centrale de centre O"
+        },
+        {
+          "id": "d",
+          "text": "La symétrie orthogonale d'axe la médiatrice de [AB]"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Chaîne en trois maillons. 1) Les trois axes passent par O, donc f fixe O ; et comme les axes sont CONCOURANTS, l'exercice résolu du cours garantit déjà que f est une symétrie orthogonale — reste à trouver laquelle. 2) On regroupe les deux premières : (OA) et (OB) sont sécantes en O et l'angle entre leurs vecteurs directeurs vaut π/3 (le triangle est équilatéral direct), donc S₂∘S₁ est la rotation R de centre O et d'angle 2 × π/3 = 2π/3. Ainsi f = S₃∘R. 3) On détermine f par les images de trois points non alignés. R envoie A sur le point d'angle 2π/3 ; puis S₃, symétrie d'axe la perpendiculaire à (OA) en O, ramène ce point sur celui d'angle π/3, c'est-à-dire B. Donc f(A) = B, f(O) = O, et en refaisant le même chemin pour B (angle π/3 ↦ angle π par R ↦ angle 0 par S₃) on obtient f(B) = A. L'isométrie f fixe O, échange A et B : elle fixe donc aussi le milieu de [AB] (une isométrie conserve le milieu), c'est-à-dire deux points distincts, et elle n'est pas l'identité — c'est la symétrie orthogonale d'axe la droite (O, milieu de [AB]), qui est exactement la médiatrice de [AB] ✓ (elle passe par O puisque OA = OB). Contrôle analytique, voie totalement indépendante : posons O(0, 0), A(1, 0) et B(1/2 ; √3/2). Alors S₁(x, y) = (x ; −y) ; S₂, symétrie d'axe la droite d'angle π/3, s'écrit (x, y) ↦ (−x/2 + (√3/2)y ; (√3/2)x + y/2) ; S₃, symétrie d'axe (Oy), s'écrit (x, y) ↦ (−x ; y). En enchaînant sur A(1, 0) : (1 ; 0) ↦ (−1/2 ; √3/2) ↦ (1/2 ; √3/2) = B ✓. Sur B(1/2 ; √3/2) : (1/2 ; −√3/2) ↦ (−1 ; 0) ↦ (1 ; 0) = A ✓. La médiatrice de [AB] est la droite passant par O et par le milieu (3/4 ; √3/4), donc la droite d'angle π/6 : réfléchir A (angle 0) par rapport à elle donne bien l'angle π/3, soit B ✓. Le piège courant : s'arrêter au regroupement S₂∘S₁ et oublier le troisième facteur, ce qui livre la rotation d'angle 2π/3 — mais cette rotation envoie A sur le point (−1/2 ; √3/2), qui n'est pas un sommet du triangle. Répondre S_(OB) revient à croire que le « facteur restant » se lit sur l'axe du milieu : cette symétrie envoie A (angle 0) sur le point d'angle 2π/3, pas sur B. Quant à la symétrie centrale de centre O, elle enverrait A sur (−1 ; 0) : dès le premier point testé, c'est éliminé.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé direct et f est l'application qui à tout point M d'affixe z associe le point M′ d'affixe z′ = −z̄ + 4i. Voici une solution proposée. Étape 1 : la conjugaison conserve les modules et |−1| = 1, donc |z′₁ − z′₂| = |−(z̄₁ − z̄₂)| = |z₁ − z₂| : f est une isométrie. Étape 2 : en posant z = x + iy, on obtient z′ = −(x − iy) + 4i = −x + i(y + 4), c'est-à-dire x′ = −x et y′ = y + 4. Étape 3 : les points fixes vérifient −x = x, soit x = 0 ; l'ensemble des points fixes est donc la droite (Oy). Étape 4 : d'après le tableau de classification, une isométrie dont l'ensemble des points fixes est une droite D est la symétrie orthogonale d'axe D ; f est donc la symétrie orthogonale d'axe (Oy). Quelle est la PREMIÈRE étape fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 1"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 2"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 3"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ceci est une chasse à l'erreur : la solution proposée contient une faute plantée, l'explication décrit donc un raisonnement volontairement faux. L'étape 3 est la PREMIÈRE fausse ✓ : un point fixe doit vérifier les DEUX équations à la fois, x′ = x et y′ = y. La première donne bien x = 0, mais la seconde s'écrit y = y + 4, c'est-à-dire 0 = 4 : impossible. L'ensemble des points fixes est donc VIDE, et non la droite (Oy) — la solution a résolu une équation sur deux, exactement comme si un système sans solution en avait une. La bonne conclusion s'obtient ensuite en deux calculs : sans point fixe, il ne reste que la translation de vecteur non nul ou la symétrie glissante ; ce n'est pas une translation, car MM′⃗ = (−2x ; 4) dépend du point ; et f∘f envoie M(x, y) sur (x ; y + 8), c'est la translation t_(0 ; 8) = t_(2u⃗), donc u⃗ = (0 ; 4). L'axe est formé des milieux des segments [M f(M)], de coordonnées (0 ; y + 2) : c'est la droite (Oy), dont (0 ; 4) est bien un vecteur directeur ✓. Conclusion : f est la symétrie glissante d'axe (Oy) et de vecteur (0 ; 4). Contrôle par recomposition : la symétrie d'axe (Oy) envoie (x, y) sur (−x ; y), puis la translation de vecteur (0 ; 4) donne (−x ; y + 4), exactement f ✓. Contrôle chiffré : M(3, 1) ↦ M′(−3 ; 5), le milieu (0 ; 3) est bien sur (Oy) ✓, et aucun point de (Oy) n'est fixe puisque (0, y) ↦ (0 ; y + 4). Les étapes 1 et 2 sont irréprochables : le calcul de module et le passage aux coordonnées sont exacts. L'étape 4 énonce d'ailleurs une propriété VRAIE du tableau de classification ; elle n'est fausse que parce qu'elle hérite d'un ensemble de points fixes erroné — la question demandant la PREMIÈRE faute, la retenir revient à confondre la faute et sa conséquence. Le piège courant est justement celui qui est planté : la droite (Oy) apparaît bel et bien dans la solution correcte, mais comme AXE du glissement, jamais comme ensemble de points fixes ; c'est précisément ce qui rend l'étape 3 crédible.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé direct. On note r la rotation de centre O et d'angle π/2 et t la translation de vecteur (0 ; 4). Déterminer l'isométrie f telle que r∘f = t.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La rotation de centre Ω(2 ; −2) et d'angle −π/2"
+        },
+        {
+          "id": "b",
+          "text": "La rotation de centre Ω(2 ; 2) et d'angle −π/2"
+        },
+        {
+          "id": "c",
+          "text": "La rotation de centre Ω(−2 ; −2) et d'angle π/2"
+        },
+        {
+          "id": "d",
+          "text": "La rotation de centre Ω(2 ; −2) et d'angle π/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sens inverse : on connaît le résultat de la composée, on cherche le facteur. La simplification à gauche du cours (h∘f = h∘g ⟺ f = g) autorise à composer les deux membres par r⁻¹ : de r∘f = t on tire r⁻¹∘r∘f = r⁻¹∘t, c'est-à-dire f = r⁻¹∘t — et l'ordre compte, r⁻¹ est appliqué EN DERNIER. Passons en complexes : r s'écrit z ↦ iz, donc r⁻¹ s'écrit z ↦ −iz (rotation de centre O et d'angle −π/2), et t s'écrit z ↦ z + 4i. D'où f : z ↦ −i(z + 4i) = −iz − 4i² = −iz + 4. On identifie alors f par la méthode habituelle : a = −i vérifie |a| = 1 et a ≠ 1, donc f est une rotation dont le centre a pour affixe b/(1 − a) = 4/(1 + i) = 4(1 − i)/2 = 2 − 2i, soit Ω(2 ; −2), et dont l'angle vaut arg(−i) = −π/2 ✓. Contrôle direct que le centre est fixe : f(2 − 2i) = −i(2 − 2i) + 4 = −2i − 2 + 4 = 2 − 2i ✓. Contrôle par une voie indépendante, en revérifiant l'équation de départ : r(f(z)) = i(−iz + 4) = z + 4i = t(z) ✓ pour TOUT z — c'est la seule preuve qui compte, et elle est immédiate. Le piège courant : composer du mauvais côté et calculer t∘r⁻¹ au lieu de r⁻¹∘t, ce qui donne z ↦ −iz + 4i, rotation d'angle −π/2 mais de centre 4i/(1 + i) = 2 + 2i, soit Ω(2 ; 2) ; on la démasque en testant l'équation : r appliqué à −iz + 4i donne z − 4, et non z + 4i. Oublier d'inverser r et calculer r∘t donne z ↦ i(z + 4i) = iz − 4, rotation d'angle π/2 et de centre −4/(1 − i) = −2 − 2i, soit Ω(−2 ; −2). Enfin garder le bon centre mais l'angle π/2 revient à confondre r et r⁻¹ dans la seule dernière ligne : cette rotation s'écrit z ↦ i(z − (2 − 2i)) + 2 − 2i = iz − 4i, et r appliqué ensuite donnerait i(iz − 4i) = −z + 4, pas z + 4i.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule des affirmations suivantes est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La seule isométrie du plan qui fixe trois points distincts est l'identité"
+        },
+        {
+          "id": "b",
+          "text": "Les symétries glissantes sont les seules isométries du plan sans point fixe"
+        },
+        {
+          "id": "c",
+          "text": "Si une isométrie f vérifie f∘f = Id et f ≠ Id, alors f est une symétrie orthogonale ou une symétrie centrale"
+        },
+        {
+          "id": "d",
+          "text": "Si une isométrie laisse globalement invariante une droite D, alors elle est soit une symétrie orthogonale, soit une translation"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Seule l'affirmation c est vraie ✓, et on l'établit en balayant les CINQ lignes du tableau de classification, une par une — c'est le seul raisonnement complet possible ici. L'identité est exclue par hypothèse. Une symétrie orthogonale S_D vérifie S_D∘S_D = Id : elle convient. Une rotation de centre I et d'angle θ ≠ 0 [2π] a pour carré la rotation d'angle 2θ ; ce carré vaut Id si et seulement si 2θ ≡ 0 [2π], donc θ ≡ π [2π] : la seule rotation retenue est la symétrie centrale S_I. Une translation de vecteur non nul u⃗ a pour carré t_(2u⃗) ≠ Id : exclue. Une symétrie glissante de vecteur u⃗ ≠ 0⃗ a elle aussi pour carré t_(2u⃗) ≠ Id : exclue. Il ne reste donc que les symétries orthogonales et les symétries centrales ✓ — ce sont exactement les isométries involutives, comme l'annonce le cours. Contrôle par la réciproque, pour s'assurer qu'aucun cas ne manque : ces deux familles vérifient bien f∘f = Id et sont différentes de l'identité ✓. a est fausse par un cas limite : trois points distincts peuvent être ALIGNÉS, et la symétrie orthogonale d'axe leur droite commune les fixe tous les trois sans être l'identité ; le théorème exige trois points NON ALIGNÉS. b est fausse : la translation de vecteur non nul n'a aucun point fixe non plus — le tableau donne deux natures pour un ensemble de points fixes vide. d est fausse pour deux raisons indépendantes : la symétrie glissante d'axe D laisse D globalement invariante (chaque point de D glisse le long de D), et la symétrie centrale de centre un point I de D la laisse également invariante en échangeant ses deux demi-droites ; ni l'une ni l'autre n'est une symétrie orthogonale ou une translation. Le piège courant, présent dans a comme dans d, est de citer un théorème du cours en effaçant une hypothèse : « non alignés » dans a, et dans d la confusion entre laisser une droite globalement invariante (elle revient sur elle-même) et la fixer point par point (chaque point reste en place) — seule la seconde force la symétrie orthogonale.",
+      "difficulty": 3
+    }
+  ]
+}

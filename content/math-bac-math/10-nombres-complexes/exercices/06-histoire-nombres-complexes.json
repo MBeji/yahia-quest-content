@@ -1,0 +1,82 @@
+{
+  "title": "🗿 Histoire ⭐⭐⭐ : L'Horloge de Moivre",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 6,
+  "questions": [
+    {
+      "prompt": "Épisode 1 — L'Horloge de Moivre n'a ni cadran ni aiguilles : elle a six salles, et l'on n'y monte qu'en calculant. Au rez-de-chaussée, une roue d'ambre tourne lentement. Le Gardien des Angles pose la main dessus : « Chaque tour de roue multiplie la position du jeton par z = √3 + i. Le jeton part de 1. Après quatre tours, il occupe le point d'affixe z⁴ — donne-la-moi sous forme algébrique, et l'escalier s'ouvrira. »",
+      "options": [
+        { "id": "a", "text": "z⁴ = −8 + 8i√3" },
+        { "id": "b", "text": "z⁴ = −8 − 8i√3" },
+        { "id": "c", "text": "z⁴ = −4 + 4i√3" },
+        { "id": "d", "text": "z⁴ = 8√3 + 8i" }
+      ],
+      "correctOption": "a",
+      "explanation": "Élever à la puissance quatrième par le binôme serait long et fautif : on passe par la forme trigonométrique, et la formule de Moivre fait le travail. Module : |z| = √(3 + 1) = 2. Argument : cos θ = √3/2 et sin θ = 1/2, tous deux positifs, premier quadrant, donc θ = π/6 (et non π/3 : c'est le COSINUS qui vaut √3/2, pas le sinus). Moivre donne z⁴ = 2⁴(cos(4π/6) + i sin(4π/6)) = 16(cos(2π/3) + i sin(2π/3)) = 16(−1/2 + i√3/2) = −8 + 8i√3 ✓. Contrôle par un chemin totalement différent : z² = (√3 + i)² = 3 + 2i√3 − 1 = 2 + 2i√3, puis z⁴ = (2 + 2i√3)² = 4 + 8i√3 + 4i²·3 = 4 + 8i√3 − 12 = −8 + 8i√3 ✓ — les deux voies concordent. Contrôle du module : |z⁴| = |z|⁴ = 16, et √(64 + 192) = √256 = 16 ✓. La réponse −8 − 8i√3 prend arg(z) ≡ π/3 au lieu de π/6 : elle échange les rôles du cosinus et du sinus, puis aboutit à 16e^(i4π/3). Le contrôle de quadrant la dénonce, car 2π/3 place le jeton en haut à gauche alors que 4π/3 le place en bas à gauche. La réponse −4 + 4i√3 a le bon argument mais MULTIPLIE le module par 4 au lieu de l'élever à la puissance 4 : elle donne un module 8, incompatible avec |z⁴| = |z|⁴ = 16. La réponse 8√3 + 8i garde l'argument π/6 sans le multiplier par 4 : c'est 16e^(iπ/6), c'est-à-dire le jeton allongé mais jamais tourné — or chaque tour de roue AJOUTE π/6 à l'argument.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Épisode 2 — Premier étage : la Salle des Deux Serrures. Deux serrures jumelles sont scellées dans la porte, l'une gravée d'un ℝ, l'autre d'un i. « Celle de gauche n'accepte qu'un nombre réel, celle de droite qu'un imaginaire pur, dit le Gardien. Ma clé est le nombre Z = (m + 2i)/(1 + im), où m est un réel que tu choisis toi-même. Quelles valeurs de m ouvrent la serrure de gauche, et laquelle ouvre celle de droite ? »",
+      "options": [
+        { "id": "a", "text": "Gauche (réel) : m = √2 ou m = −√2 · Droite (imaginaire pur) : m = 0" },
+        { "id": "b", "text": "Gauche (réel) : m = 0 · Droite (imaginaire pur) : m = √2 ou m = −√2" },
+        { "id": "c", "text": "Gauche (réel) : m = 2 ou m = −2 · Droite (imaginaire pur) : m = 0" },
+        { "id": "d", "text": "Gauche (réel) : m = √2 seulement · Droite (imaginaire pur) : aucune valeur de m ne convient" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le dénominateur ne s'annule jamais, car |1 + im|² = 1 + m² ≥ 1 pour tout réel m. On sépare donc partie réelle et partie imaginaire en multipliant haut et bas par le conjugué 1 − im : (m + 2i)(1 − im) = m − im² + 2i − 2i²m = m + 2m + i(2 − m²) = 3m + i(2 − m²), et (1 + im)(1 − im) = 1 + m². D'où Z = 3m/(1 + m²) + i(2 − m²)/(1 + m²), une forme algébrique où m est réel : les deux fractions sont bien des réels. Serrure de gauche, Z réel : la partie imaginaire s'annule, 2 − m² = 0, donc m = √2 ou m = −√2. Serrure de droite, Z imaginaire pur : la partie réelle s'annule, 3m = 0, donc m = 0. Contrôle par réinjection, obligatoire : pour m = √2, Z = 3√2/3 = √2, un réel ✓ ; pour m = −√2, Z = −3√2/3 = −√2, un réel aussi ✓ ; pour m = 0, Z = (0 + 2i)/(1 + 0) = 2i, imaginaire pur et non nul ✓. Deuxième contrôle, par le conjugué, exactement le test du cours : Z est réel si et seulement si Z = Z̄, et imaginaire si et seulement si Z = −Z̄ ; avec m = 0 on a Z̄ = −2i = −Z ✓. La réponse qui échange les deux serrures se réfute en dix secondes : m = 0 donne Z = 2i, qui n'est pas réel, et m = √2 donne Z = √2, qui n'est pas imaginaire pur. La réponse m = 2 ou m = −2 résout m² = 2 comme si c'était m = 2 : elle confond le nombre et son carré. Réinjection : m = 2 donne Z = (6 + i(2 − 4))/5 = (6 − 2i)/5, dont la partie imaginaire −2/5 n'est pas nulle, donc Z n'est pas réel. La dernière réponse commet deux fautes : elle oublie que m² = 2 a DEUX solutions opposées, et elle déclare la serrure de droite inaccessible alors que 3m = 0 a bien une solution, m = 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 3 — Deuxième étage : la Salle du Trait de Craie. Le sol est nu, sauf une consigne gravée sur le linteau. « Mes serviteurs marchent tous à l'endroit exact où l'on peut écrire arg(z − 1 + i) ≡ π/4 [2π], dit le Gardien. Dessine-moi à la craie l'ensemble des points M d'affixe z qui vérifient cette condition, et dis-moi exactement de quelle figure il s'agit. »",
+      "options": [
+        { "id": "a", "text": "La demi-droite d'origine A(1 − i) dirigée par l'angle π/4, privée de A : la partie de la droite d'équation y = x − 2 où x > 1" },
+        { "id": "b", "text": "La droite entière d'équation y = x − 2, privée de A(1 − i)" },
+        { "id": "c", "text": "La demi-droite d'origine A(1 + i) dirigée par l'angle π/4, privée de A : la partie de la droite d'équation y = x où x > 1" },
+        { "id": "d", "text": "La demi-droite d'origine A(1 − i) dirigée par l'angle −3π/4, privée de A : la partie de la droite d'équation y = x − 2 où x < 1" }
+      ],
+      "correctOption": "a",
+      "explanation": "Premier geste, le plus souvent bâclé : lire correctement le point fixe. z − 1 + i s'écrit z − (1 − i), donc le point fixe est A d'affixe 1 − i, et non 1 + i — le signe change quand on met le nombre en facteur dans la soustraction. Deuxième geste : arg(z − z_A) est la mesure de l'angle (u⃗, AM⃗). Imposer (u⃗, AM⃗) ≡ π/4 [2π], c'est imposer au vecteur AM⃗ une direction ET un sens : M parcourt la demi-droite d'origine A dirigée par l'angle π/4, privée de A (car 0 n'a pas d'argument). En paramétrant, M a pour affixe z = 1 − i + t e^(iπ/4) avec t > 0, et e^(iπ/4) = (√2/2)(1 + i) ; en posant s = t√2/2 > 0 on lit x = 1 + s et y = −1 + s, d'où la partie de la droite d'équation y = x − 2 où x > 1 ✓. Contrôle sur deux points, dans les deux sens : pour z = 2, z − 1 + i = 1 + i, de module √2 et d'argument π/4 ✓, et le point (2 ; 0) vérifie bien y = x − 2 avec x > 1 ✓ ; pour z = −2i, z − 1 + i = −1 − i, dont l'argument est −3π/4 et non π/4 ✗, alors que le point (0 ; −2) est pourtant sur la droite y = x − 2 — la moitié de la droite est donc bien à rejeter. La réponse « droite entière » traduit la condition modulo π au lieu de modulo 2π : c'est arg(z − 1 + i) ≡ π/4 [π] qui donnerait la droite complète, et le point (0 ; −2) ci-dessus la réfute. La réponse d'origine A(1 + i) est la faute de lecture annoncée ; elle se démasque sur le point z = 2, qui appartient à l'ensemble cherché mais donne z − (1 + i) = 1 − i, d'argument −π/4. La dernière réponse garde le bon point A mais prend la demi-droite opposée, celle des t < 0 : son argument est π/4 + π = 5π/4 ≡ −3π/4, exactement l'argument trouvé pour z = −2i, qui n'est pas π/4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 4 — Troisième étage : la Chambre des Ondes. Deux cloches d'ambre de même puissance sonnent ensemble, mais décalées. « L'onde résultante a pour affixe Z = 1 + e^(iθ), où θ est le décalage de phase, murmure le Gardien. Ce soir, θ = 2π/3. Donne-moi l'amplitude de l'onde résultante, c'est-à-dire le module de Z. »",
+      "options": [
+        { "id": "a", "text": "|Z| = 1" },
+        { "id": "b", "text": "|Z| = 2" },
+        { "id": "c", "text": "|Z| = −1" },
+        { "id": "d", "text": "|Z| = 0 : les deux ondes s'annulent exactement" }
+      ],
+      "correctOption": "a",
+      "explanation": "La factorisation par « la moitié de l'angle » est faite pour cela : 1 + e^(iθ) = e^(iθ/2)(e^(−iθ/2) + e^(iθ/2)) = 2cos(θ/2) e^(iθ/2). Avec θ = 2π/3, la moitié de l'angle vaut π/3, donc Z = 2cos(π/3) e^(iπ/3) = 2 × (1/2) × e^(iπ/3) = e^(iπ/3). Le facteur 2cos(π/3) = 1 est STRICTEMENT POSITIF, c'est donc bien le module : |Z| = 1 ✓ (et un argument de Z est π/3). Contrôle par la forme algébrique, indépendant de toute factorisation : e^(i2π/3) = −1/2 + i√3/2, donc Z = 1 − 1/2 + i√3/2 = 1/2 + i√3/2, de module √(1/4 + 3/4) = 1 ✓ — deux cloches d'amplitude 1 chacune produisent ici une onde d'amplitude 1, ni plus ni moins. La réponse 2 additionne les amplitudes comme si les deux ondes étaient en phase : c'est le cas θ = 0, où 1 + e^(i0) = 2. Dès qu'il y a un décalage, les deux vecteurs ne s'alignent plus et la somme est plus courte que la somme des longueurs — c'est exactement l'inégalité triangulaire |z + z′| ≤ |z| + |z′|, ici stricte. La réponse −1 utilise 2cos θ au lieu de 2cos(θ/2) : elle oublie de prendre la MOITIÉ de l'angle, et son résultat se dénonce tout seul, car un module est un réel positif — un facteur négatif signalerait seulement qu'il faut écrire 2cos(θ/2) = −|2cos(θ/2)| et ajouter π à l'argument. La réponse 0 correspond au décalage θ = π, où 1 + e^(iπ) = 1 − 1 = 0 : c'est l'extinction totale, mais elle n'a lieu que pour ce décalage-là.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 5 — Quatrième étage : la Salle des Trois Tours. Deux tours d'ambre percent déjà le plafond, d'affixes z_A = 1 + i et z_B = 4 + 2i ; leurs pieds sont marqués sur le plan ci-dessous. La troisième est encore en chantier : son affixe sera z_C = m + 3i, et c'est à toi de fixer le réel m. « Le plafond ne tiendra que si les pieds des trois tours sont exactement alignés, gronde le Gardien. Quelle valeur de m ? » <svg viewBox=\"0 0 300 260\"><path d=\"M20 200 H285\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M285 200 l-8 -4 l0 8 z\" fill=\"#0f172a\"/><path d=\"M60 245 V20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M60 20 l-4 8 l8 0 z\" fill=\"#0f172a\"/><path d=\"M90 196 V204 M56 170 H64\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g fill=\"#0f172a\"><circle cx=\"90\" cy=\"170\" r=\"4.5\"/><circle cx=\"180\" cy=\"140\" r=\"4.5\"/></g><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"96\" y=\"164\" fill=\"#0f172a\">A</text><text x=\"188\" y=\"134\" fill=\"#0f172a\">B</text><text x=\"54\" y=\"216\" text-anchor=\"end\" fill=\"#0f172a\">O</text><text x=\"90\" y=\"218\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"54\" y=\"174\" text-anchor=\"end\" fill=\"#0f172a\">1</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "m = 7" },
+        { "id": "b", "text": "m = 1/3" },
+        { "id": "c", "text": "m = −5" },
+        { "id": "d", "text": "Aucune valeur réelle de m ne convient : avec une partie imaginaire imposée à 3, C ne peut pas être aligné avec A et B" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le test d'alignement est le même quotient que d'habitude, lu par sa NATURE et non par son module : A, B et C sont alignés si et seulement si Z = (z_C − z_A)/(z_B − z_A) est un réel, car les vecteurs AB⃗ et AC⃗ sont alors colinéaires. Ici z_B − z_A = 3 + i et z_C − z_A = (m − 1) + 2i. On multiplie haut et bas par le conjugué 3 − i : ((m − 1) + 2i)(3 − i) = 3(m − 1) − i(m − 1) + 6i − 2i² = (3m − 3 + 2) + i(6 − m + 1) = (3m − 1) + i(7 − m), et (3 + i)(3 − i) = 10. Donc Z = ((3m − 1) + i(7 − m))/10. Z est réel si et seulement si sa partie imaginaire est nulle, c'est-à-dire 7 − m = 0, soit m = 7. Contrôle par réinjection : avec m = 7, z_C = 7 + 3i et z_C − z_A = 6 + 2i = 2(3 + i) = 2(z_B − z_A), donc AC⃗ = 2AB⃗ — colinéarité manifeste, et Z = (21 − 1)/10 = 2, un réel ✓. Contrôle géométrique indépendant : la droite (AB) passe par (1 ; 1) avec un coefficient directeur (2 − 1)/(4 − 1) = 1/3, donc son équation est y = 1 + (x − 1)/3 ; on y impose y = 3, ce qui donne x − 1 = 6 et x = 7 ✓. On remarque au passage que B est le milieu de [AC], puisque (1 + 7)/2 = 4 et (1 + 3)/2 = 2 ✓. La réponse m = 1/3 annule la partie RÉELLE de Z au lieu de sa partie imaginaire : elle rend Z imaginaire pur, et c'est le test de l'ORTHOGONALITÉ, pas celui de l'alignement — vérification : m = 1/3 donne Z = i(7 − 1/3)/10 = 2i/3, donc AB⃗ et AC⃗ seraient perpendiculaires. La réponse m = −5 vient d'avoir multiplié par 3 + i au lieu du conjugué 3 − i : on obtient alors la partie imaginaire (m − 1) + 6, qui s'annule pour m = −5 ; le calcul correct la réfute, car m = −5 donne Z = (−16 + 12i)/10, dont la partie imaginaire vaut 1,2 et non 0. La dernière réponse oublie que la droite (AB) n'est pas horizontale : de coefficient directeur 1/3, elle coupe la droite d'équation y = 3 en exactement un point, celui d'abscisse 7.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 6 — Sommet de l'Horloge. Une dernière porte, couverte de sinusoïdes gravées. « Ma serrure n'accepte que les sommes d'harmoniques, dit le Gardien des Angles pour la dernière fois. Linéarise sin³x, c'est-à-dire écris-le comme une combinaison de sin x et de sin 3x, et l'Horloge est à toi. »",
+      "options": [
+        { "id": "a", "text": "sin³x = (3 sin x − sin 3x)/4" },
+        { "id": "b", "text": "sin³x = (sin 3x − 3 sin x)/4" },
+        { "id": "c", "text": "sin³x = (3 sin x + sin 3x)/4" },
+        { "id": "d", "text": "sin³x = (1/4)sin 3x + (3/4)cos x" }
+      ],
+      "correctOption": "a",
+      "explanation": "On part de la formule d'Euler du sinus, dont le dénominateur est 2i et non 2 : sin x = (e^(ix) − e^(−ix))/(2i). En élevant au cube : sin³x = (1/(2i)³)(e^(ix) − e^(−ix))³. D'une part (2i)³ = 8i³ = −8i. D'autre part, le binôme de Newton donne (e^(ix) − e^(−ix))³ = e^(3ix) − 3e^(ix) + 3e^(−ix) − e^(−3ix), que l'on regroupe par paires conjuguées : (e^(3ix) − e^(−3ix)) − 3(e^(ix) − e^(−ix)) = 2i sin 3x − 3 × 2i sin x = 2i(sin 3x − 3 sin x). Donc sin³x = 2i(sin 3x − 3 sin x)/(−8i) = −(sin 3x − 3 sin x)/4 = (3 sin x − sin 3x)/4 ✓. Contrôle en x = π/2, immédiat et imparable : sin³(π/2) = 1, et (3 × 1 − sin(3π/2))/4 = (3 + 1)/4 = 1 ✓. Deuxième contrôle en x = π/6 : sin³(π/6) = (1/2)³ = 0,125, et (3 × 0,5 − sin(π/2))/4 = (1,5 − 1)/4 = 0,125 ✓. Troisième contrôle en x = 0 : les deux membres valent 0 ✓. La réponse (sin 3x − 3 sin x)/4 est la précédente au signe près : elle vient d'avoir écrit (2i)³ = 8i au lieu de −8i, en oubliant que i³ = −i. Le test x = π/2 la balaie, puisqu'elle donnerait −1 alors que sin³(π/2) = +1. La réponse (3 sin x + sin 3x)/4 remplace la soustraction par une addition ; en x = π/2 elle donne (3 − 1)/4 = 0,5, très loin de 1. La réponse mêlant sin 3x et cos x transpose la linéarisation de cos³x, qui vaut (1/4)cos 3x + (3/4)cos x : les fonctions ont été échangées en cours de route. Retiens la règle de parité : la linéarisation d'une puissance IMPAIRE de sinus ne fait apparaître que des sinus, jamais un cosinus — et l'évaluation en une valeur particulière vérifie tout cela en dix secondes.",
+      "difficulty": 3
+    }
+  ]
+}

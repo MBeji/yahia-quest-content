@@ -1,0 +1,199 @@
+{
+  "title": "🧩 Mission interactive ⭐⭐ : Les Arpenteurs du Plan d'Ambre",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "QCM visuel — la guilde des Arpenteurs relève ses balises dans un repère orthonormé direct (O, u⃗, v⃗). La balise M est plantée au point marqué sur le relevé. Quelle est son affixe z_M, et où se trouve le point image du conjugué z̄_M ? <svg viewBox=\"0 0 300 260\"><path d=\"M20 150 H285\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M285 150 l-8 -4 l0 8 z\" fill=\"#0f172a\"/><path d=\"M140 245 V20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M140 20 l-4 8 l8 0 z\" fill=\"#0f172a\"/><path d=\"M80 60 V150 M80 60 H140\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-dasharray=\"5 4\"/><path d=\"M140 150 L80 60\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\"/><path d=\"M170 145 V155 M135 120 H145\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g fill=\"#0f172a\"><circle cx=\"80\" cy=\"60\" r=\"4.5\"/><circle cx=\"80\" cy=\"150\" r=\"3\"/><circle cx=\"140\" cy=\"60\" r=\"3\"/></g><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"134\" y=\"166\" text-anchor=\"end\" fill=\"#0f172a\">O</text><text x=\"170\" y=\"168\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"134\" y=\"124\" text-anchor=\"end\" fill=\"#0f172a\">1</text><text x=\"72\" y=\"54\" text-anchor=\"end\" fill=\"#0f172a\">M</text><text x=\"80\" y=\"166\" text-anchor=\"middle\" fill=\"#94a3b8\">−2</text><text x=\"146\" y=\"64\" fill=\"#94a3b8\">3</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "z_M = −2 + 3i, et z̄_M a pour image le point de coordonnées (−2 ; −3), symétrique de M par rapport à l'axe des abscisses"
+        },
+        {
+          "id": "b",
+          "text": "z_M = 3 − 2i, et z̄_M a pour image le point de coordonnées (3 ; 2)"
+        },
+        {
+          "id": "c",
+          "text": "z_M = −2 + 3i, et z̄_M a pour image le point de coordonnées (2 ; 3), symétrique de M par rapport à l'axe des ordonnées"
+        },
+        {
+          "id": "d",
+          "text": "z_M = −2 + 3i, et z̄_M a pour image le point de coordonnées (2 ; −3), symétrique de M par rapport à O"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'affixe d'un point se lit dans l'ordre (abscisse, ordonnée) : le point de coordonnées (a ; b) a pour affixe a + ib. Les pointillés du relevé mènent à −2 sur l'axe des abscisses et à 3 sur l'axe des ordonnées, donc z_M = −2 + 3i ✓ — la partie réelle est −2 et la partie imaginaire est 3, un réel, et non « 3i ». Le conjugué change le signe de la seule partie imaginaire : z̄_M = −2 − 3i, dont l'image a pour coordonnées (−2 ; −3). Géométriquement, garder l'abscisse et retourner l'ordonnée, c'est exactement la symétrie par rapport à l'axe des abscisses ✓ — c'est la lecture visuelle de arg(z̄) ≡ −arg(z) [2π] avec un module inchangé : |z̄_M| = |z_M| = √(4 + 9) = √13, les deux points sont à la même distance de O, de part et d'autre de l'axe réel. Contrôle : z_M + z̄_M = −4 = 2Re(z_M) ✓, et z_M z̄_M = 4 + 9 = 13 = |z_M|² ✓. La lecture 3 − 2i inverse les deux coordonnées : elle lit l'ordonnée comme partie réelle, erreur classique quand on relève le point « en montant d'abord ». Elle place d'ailleurs la balise dans le quatrième quadrant, alors que le relevé la montre nettement en haut à gauche. Le point (2 ; 3) est le symétrique de M par rapport à l'axe des ordonnées, c'est-à-dire l'image de −z̄_M, pas de z̄_M : c'est la partie RÉELLE qui y change de signe. Le point (2 ; −3) est le symétrique de M par rapport à O : c'est l'image de −z_M, dont l'argument vaut arg(z_M) + π. Retiens la carte des trois symétries : axe des abscisses → z̄, origine → −z, axe des ordonnées → −z̄.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Texte à trous — la carte de fouille de la guilde décrit la zone autorisée par la condition |z − 2 + i| = 3. Complète : cette zone est le cercle de centre Ω d'affixe ____ et de rayon ____.",
+      "options": [
+        {
+          "id": "a",
+          "text": "① 2 − i  ·  ② 3"
+        },
+        {
+          "id": "b",
+          "text": "① −2 + i  ·  ② 3"
+        },
+        {
+          "id": "c",
+          "text": "① 2 − i  ·  ② 9"
+        },
+        {
+          "id": "d",
+          "text": "① 2 + i  ·  ② 3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La forme de référence est |z − ω| = r, qui se lit ΩM = r et décrit le cercle de centre Ω(ω) et de rayon r. Il faut donc écrire l'expression sous cette forme AVANT toute lecture : z − 2 + i = z − (2 − i), donc ω = 2 − i et r = 3 ✓. Le rayon est le nombre du second membre, pas son carré. Contrôle sur deux points : pour z = 5 − i, |z − 2 + i| = |3| = 3 ✓, et le point (5 ; −1) est bien à 3 unités de Ω(2 ; −1) ; pour z = 2 + 2i, |z − 2 + i| = |3i| = 3 ✓, et la distance de (2 ; 2) à (2 ; −1) vaut 3 ✓. Le centre −2 + i prend les constantes telles qu'elles apparaissent dans l'écriture, sans les faire passer de l'autre côté du signe moins : c'est l'erreur reine de ce format, et elle place le centre dans le mauvais quadrant. La valeur 9 pour le rayon confond l'équation avec sa version au carré : |z − ω|² = 9 donnerait bien r = 3, mais ici c'est le module lui-même qui vaut 3. Le centre 2 + i change le signe de la seule partie imaginaire, comme si le « + i » de l'écriture donnait directement l'ordonnée du centre ; le contrôle par un point le réfute aussitôt, car la distance de (2 ; 1) au point (5 ; −1) vaut √(9 + 4) = √13 ≠ 3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Chasse à l'erreur — un apprenti arpenteur met la balise z = −1 − i√3 sous forme trigonométrique. Voici sa copie.\n① |z| = √((−1)² + (−√3)²) = √(1 + 3) = 2.\n② Donc cos θ = −1/2 et sin θ = −√3/2.\n③ Le cosinus −1/2 correspond à l'angle 2π/3, donc arg(z) ≡ 2π/3 [2π].\n④ Conclusion : z = 2(cos(2π/3) + i sin(2π/3)).\nUne seule étape contient une erreur : laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape ①"
+        },
+        {
+          "id": "b",
+          "text": "L'étape ②"
+        },
+        {
+          "id": "c",
+          "text": "L'étape ③"
+        },
+        {
+          "id": "d",
+          "text": "L'étape ④"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'erreur est à l'étape ③, et la conclusion de la copie est bel et bien fausse. L'apprenti n'a utilisé que le cosinus : or cos θ = −1/2 admet DEUX solutions dans ]−π ; π], à savoir 2π/3 et −2π/3, et c'est le signe du sinus qui tranche. Ici sin θ = −√3/2 < 0, donc l'argument est négatif : arg(z) ≡ −2π/3 [2π], et l'écriture correcte est z = 2(cos(−2π/3) + i sin(−2π/3)) ✓. Contrôle par le quadrant, le réflexe à installer : Re(z) = −1 < 0 et Im(z) = −√3 < 0, la balise est dans le TROISIÈME quadrant, donc son argument est entre −π et −π/2 — 2π/3, qui vise le deuxième quadrant, ne pouvait pas convenir. Contrôle par retour à la forme algébrique : 2(cos(−2π/3) + i sin(−2π/3)) = 2(−1/2 − i√3/2) = −1 − i√3 ✓, on retombe sur le point de départ, alors que la copie donnerait 2(−1/2 + i√3/2) = −1 + i√3, qui est le CONJUGUÉ de z. Les autres étapes sont justes. L'étape ① applique correctement |z| = √(a² + b²), et les carrés effacent bien les deux signes moins. L'étape ② divise chaque coordonnée par le module : cos θ = a/|z| = −1/2 et sin θ = b/|z| = −√3/2, sans faute. L'étape ④ ne fait que recopier le module et l'argument annoncés en ③ : elle propage la faute sans en commettre de nouvelle — c'est le piège habituel de ce format, la ligne où le résultat devient faux n'est pas celle où l'erreur a été commise.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Trois balises de la guilde sont à la même distance de O. Associe chaque affixe à son écriture exponentielle.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "1 − i√3"
+        },
+        {
+          "id": "l2",
+          "text": "−√3 + i"
+        },
+        {
+          "id": "l3",
+          "text": "√3 − i"
+        },
+        {
+          "id": "r1",
+          "text": "2e^(−iπ/3)"
+        },
+        {
+          "id": "r2",
+          "text": "2e^(i5π/6)"
+        },
+        {
+          "id": "r3",
+          "text": "2e^(−iπ/6)"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "Les trois balises ont le même module : |1 − i√3| = √(1 + 3) = 2, |−√3 + i| = √(3 + 1) = 2 et |√3 − i| = √(3 + 1) = 2. Le module ne départage donc rien : tout se joue sur l'argument, et l'argument se décide par le QUADRANT, puis par la comparaison des deux coordonnées. Pour 1 − i√3 : cos θ = 1/2 et sin θ = −√3/2, réel positif et imaginaire négatif, quatrième quadrant, donc θ = −π/3 et l'écriture est 2e^(−iπ/3) ✓. Pour −√3 + i : cos θ = −√3/2 et sin θ = 1/2, réel négatif et imaginaire positif, deuxième quadrant, donc θ = 5π/6 et l'écriture est 2e^(i5π/6) ✓. Pour √3 − i : cos θ = √3/2 et sin θ = −1/2, réel positif et imaginaire négatif, quatrième quadrant lui aussi, donc θ = −π/6 et l'écriture est 2e^(−iπ/6) ✓. Contrôle systématique par retour à la forme algébrique, le seul qui soit imparable : 2e^(−iπ/3) = 2(1/2 − i√3/2) = 1 − i√3 ✓ ; 2e^(i5π/6) = 2(−√3/2 + i/2) = −√3 + i ✓ ; 2e^(−iπ/6) = 2(√3/2 − i/2) = √3 − i ✓. Deux confusions que ce tri fait tomber. La première échange les rôles de la partie réelle et de la partie imaginaire : c'est elle qui fait hésiter entre les deux balises du quatrième quadrant, alors que le départage est net — celle dont la partie imaginaire domine (√3 > 1) est la plus « verticale », donc −π/3, l'autre −π/6. La seconde ne regarde que le cosinus : pour −√3 + i, cos θ = −√3/2 admet 5π/6 ET −5π/6, et c'est le signe du sinus, positif, qui impose 5π/6 ; s'en remettre au cosinus seul livre le point −√3 − i, symétrique du bon par rapport à l'axe des abscisses. Retiens le geste : deux coordonnées, deux signes à vérifier, un seul angle possible.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le phare d'Ambre tourne selon une loi étrange : après n tours, sa position dans le plan complexe a pour affixe zⁿ, où z = 1 + i. L'unité du repère vaut 1 kilomètre. À quelle distance du point O se trouve le phare après 8 tours ? Donne le résultat en kilomètres (valeur exacte).",
+      "answerKey": {
+        "value": 16,
+        "unit": "km"
+      },
+      "explanation": "La distance cherchée est OM = |z⁸|, et la propriété du chapitre évite tout développement : |zⁿ| = |z|ⁿ. Ici |z| = |1 + i| = √(1 + 1) = √2, donc |z⁸| = (√2)⁸ = (√2²)⁴ = 2⁴ = 16 kilomètres ✓. Contrôle par un calcul direct, entièrement indépendant : (1 + i)² = 1 + 2i + i² = 2i, donc (1 + i)⁸ = ((1 + i)²)⁴ = (2i)⁴ = 16 i⁴ = 16 × 1 = 16. Le phare est donc sur l'axe des abscisses, au point d'abscisse 16, et sa distance à O vaut bien 16 ✓ — les deux chemins concordent. Contrôle par l'argument, pour comprendre la trajectoire : arg(1 + i) ≡ π/4, donc arg(z⁸) ≡ 8 × π/4 = 2π ≡ 0 : après huit tours, le phare est revenu sur la demi-droite de départ, mais 2⁴ = 16 fois plus loin. Trois pièges à éviter. Multiplier le module par 8 au lieu de l'élever à la puissance 8 donnerait 8√2 ≈ 11,3 : le module d'une puissance est une puissance de module, jamais un multiple. Prendre 2⁸ = 256 revient à oublier la racine carrée dans |1 + i| = √2. Enfin, additionner naïvement les parties réelle et imaginaire du point de départ (1 + 1 = 2) ignore que la distance à O est une racine carrée de somme de carrés, jamais une somme de coordonnées.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "La balise mobile M(z) tourne sur le cercle de centre O et de rayon 1 : son affixe s'écrit z = e^(iθ), θ décrivant ℝ. Sélectionne TOUTES les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "|z| = 1 pour toute position de la balise"
+        },
+        {
+          "id": "b",
+          "text": "z̄ = 1/z pour toute position de la balise"
+        },
+        {
+          "id": "c",
+          "text": "Le point d'affixe −z est le symétrique de M par rapport à O"
+        },
+        {
+          "id": "d",
+          "text": "L'affixe z de la balise est toujours un nombre réel"
+        },
+        {
+          "id": "e",
+          "text": "z + z̄ = 0 pour toute position de la balise"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Le cercle de centre O et de rayon 1 est exactement l'ensemble des points dont la distance à O vaut 1, et cette distance est le module : |z| = OM = 1 pour toute position ✓ — c'est aussi ce que dit l'écriture e^(iθ), dont le module vaut 1 quel que soit θ. De |z| = 1 découle la deuxième propriété : le cours donne |z|² = z z̄, donc ici z z̄ = 1, et comme z n'est pas nul, z̄ = 1/z ✓. C'est une identité précieuse, qui n'est vraie QUE sur le cercle trigonométrique ; en écriture exponentielle elle se relit d'un trait, puisque (e^(iθ))‾ = e^(−iθ) = 1/e^(iθ). Enfin, −z a le même module que z et un argument augmenté de π : le point image est diamétralement opposé, c'est-à-dire symétrique de M par rapport à O ✓ — la balise et son opposée sont donc toutes deux sur le cercle. Les deux affirmations écartées. « z est toujours réel » est faux : pour θ = π/2 on obtient z = e^(iπ/2) = i, dont la partie réelle est nulle ; seuls DEUX points du cercle ont une affixe réelle, les points d'affixes 1 et −1. La condition « z réel » s'écrit z = z̄, et elle ne décrit pas un cercle mais l'axe des abscisses tout entier. « z + z̄ = 0 » est faux aussi : z + z̄ = 2Re(z) = 2cos θ, qui ne s'annule que pour θ ≡ ±π/2, c'est-à-dire aux deux points d'affixes i et −i. Confondre cette égalité avec z z̄ = 1 est l'erreur à débusquer ici : la SOMME z + z̄ donne la partie réelle, le PRODUIT z z̄ donne le carré du module — deux formules voisines qui ne parlent pas de la même chose.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "QCM visuel — dernière épreuve du relevé. La balise M a pour affixe z = 3 + i. Le maître arpenteur demande où se trouve le point d'affixe iz. Quatre repères P, Q, R et S sont déjà plantés sur la carte. <svg viewBox=\"0 0 300 260\"><path d=\"M20 150 H285\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M285 150 l-8 -4 l0 8 z\" fill=\"#0f172a\"/><path d=\"M150 245 V20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M150 20 l-4 8 l8 0 z\" fill=\"#0f172a\"/><path d=\"M180 145 V155 M145 120 H155\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M150 150 L240 120\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\"/><g fill=\"#0f172a\"><circle cx=\"240\" cy=\"120\" r=\"4.5\"/><circle cx=\"120\" cy=\"60\" r=\"4\"/><circle cx=\"180\" cy=\"240\" r=\"4\"/><circle cx=\"240\" cy=\"180\" r=\"4\"/><circle cx=\"60\" cy=\"180\" r=\"4\"/></g><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"144\" y=\"166\" text-anchor=\"end\" fill=\"#0f172a\">O</text><text x=\"180\" y=\"168\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"144\" y=\"124\" text-anchor=\"end\" fill=\"#0f172a\">1</text><text x=\"248\" y=\"116\" fill=\"#0f6e56\">M</text><text x=\"112\" y=\"54\" text-anchor=\"end\" fill=\"#0f172a\">P</text><text x=\"188\" y=\"246\" fill=\"#0f172a\">Q</text><text x=\"248\" y=\"190\" fill=\"#0f172a\">R</text><text x=\"52\" y=\"190\" text-anchor=\"end\" fill=\"#0f172a\">S</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le repère P, d'affixe −1 + 3i"
+        },
+        {
+          "id": "b",
+          "text": "Le repère Q, d'affixe 1 − 3i"
+        },
+        {
+          "id": "c",
+          "text": "Le repère R, d'affixe 3 − i"
+        },
+        {
+          "id": "d",
+          "text": "Le repère S, d'affixe −3 − i"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le calcul d'abord : iz = i(3 + i) = 3i + i² = −1 + 3i, dont l'image a pour coordonnées (−1 ; 3) — c'est le repère P ✓. La lecture géométrique ensuite, bien plus parlante : |i| = 1 et arg(i) ≡ π/2, donc |iz| = |i||z| = |z| et arg(iz) ≡ arg(z) + π/2 [2π]. Multiplier par i conserve la distance à O et ajoute un quart de tour DIRECT (dans le sens trigonométrique) : le point tourne autour de O sans s'en éloigner. Contrôle des longueurs : OM = |3 + i| = √10 et OP = |−1 + 3i| = √10 ✓, les deux repères sont bien à la même distance de O. Contrôle de l'angle droit : le quotient (z_P − 0)/(z_M − 0) vaut i, un imaginaire pur, donc les vecteurs OM⃗ et OP⃗ sont orthogonaux ✓ — c'est le test « quotient imaginaire » du cours. Les trois autres repères sont les images de M par les trois autres transformations élémentaires du chapitre, et chacun correspond à une erreur nommée. Q, d'affixe 1 − 3i, vaut −iz : c'est le quart de tour INDIRECT, obtenu en oubliant le signe de i² ou en tournant dans le mauvais sens. R, d'affixe 3 − i, est le conjugué z̄ : c'est la symétrie par rapport à l'axe des abscisses, sans aucun rapport avec une multiplication par i. S, d'affixe −3 − i, vaut −z : c'est la symétrie par rapport à O, c'est-à-dire une multiplication par i appliquée DEUX fois de suite, puisque i²z = −z. Retiens l'échelle des quarts de tour : i fait tourner de +π/2, i² de +π (demi-tour), i³ = −i de −π/2, i⁴ ramène au point de départ.",
+      "difficulty": 3
+    }
+  ]
+}

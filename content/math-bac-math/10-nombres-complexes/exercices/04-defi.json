@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le maître des nombres complexes",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Donner l'écriture exponentielle re^(iθ) (avec r > 0) du nombre complexe z = 1 + e^(i8π/5).",
+      "options": [
+        {
+          "id": "a",
+          "text": "z = 2cos(4π/5) e^(i4π/5)"
+        },
+        {
+          "id": "b",
+          "text": "z = 2cos(π/5) e^(i4π/5)"
+        },
+        {
+          "id": "c",
+          "text": "z = 2cos(π/5) e^(−iπ/5)"
+        },
+        {
+          "id": "d",
+          "text": "z = 2cos(4π/5) e^(−iπ/5)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On applique la factorisation par la moitié de l'angle : 1 + e^(iθ) = e^(iθ/2)(e^(−iθ/2) + e^(iθ/2)) = 2cos(θ/2) e^(iθ/2). Avec θ = 8π/5, on obtient z = 2cos(4π/5) e^(i4π/5). Mais l'écriture exponentielle exige r > 0, et ici cos(4π/5) ≈ −0,809 est NÉGATIF : ce n'est donc pas encore la forme demandée. On corrige en écrivant 2cos(4π/5) = −2cos(π/5) (car cos(π − x) = −cos x), puis en absorbant le signe moins dans l'argument, puisque −e^(iα) = e^(i(α+π)) : z = 2cos(π/5) e^(i(4π/5 + π)) = 2cos(π/5) e^(i9π/5) = 2cos(π/5) e^(−iπ/5) ✓, en revenant à la mesure principale (9π/5 − 2π = −π/5). Contrôle numérique indépendant, par la forme algébrique : e^(i8π/5) = cos 288° + i sin 288° ≈ 0,309 − 0,951i, donc z ≈ 1,309 − 0,951i ; son module vaut √(1,713 + 0,904) ≈ 1,618, et 2cos(π/5) = 2 × 0,809 = 1,618 ✓ ; son argument vaut arctan(−0,951/1,309) ≈ −36° = −π/5 ✓ (le point est bien dans le quatrième quadrant, ce qu'aucun argument voisin de 4π/5 ne pourrait décrire). Contrôle de cohérence géométrique : z est la somme de deux nombres de module 1, donc son module ne peut pas dépasser 2 ni être négatif. Le piège courant est précisément d'arrêter le calcul à la factorisation brute et de livrer 2cos(4π/5) e^(i4π/5) : la formule est juste, l'écriture exponentielle ne l'est pas, car un module est strictement positif. Corriger le module sans corriger l'argument donne 2cos(π/5) e^(i4π/5), dont le point image est dans le deuxième quadrant, à l'opposé du bon ; et corriger l'argument sans corriger le module donne 2cos(4π/5) e^(−iπ/5), qui vaut −1,618 e^(−iπ/5), soit exactement l'opposé de z.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Calculer T = cos(2π/7) + cos(4π/7) + cos(6π/7).",
+      "options": [
+        {
+          "id": "a",
+          "text": "T = −1/2"
+        },
+        {
+          "id": "b",
+          "text": "T = −1"
+        },
+        {
+          "id": "c",
+          "text": "T = 0"
+        },
+        {
+          "id": "d",
+          "text": "T = 1/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Ces trois cosinus ne sont pas remarquables : la seule voie est de reconnaître les racines septièmes de l'unité. Elles sont zₖ = e^(i2kπ/7), k ∈ {0, …, 6}, et leur somme est nulle (suite géométrique de raison e^(i2π/7) ≠ 1). En prenant la partie réelle : 1 + cos(2π/7) + cos(4π/7) + cos(6π/7) + cos(8π/7) + cos(10π/7) + cos(12π/7) = 0. Il reste à apparier les termes conjugués : z₆ = z̄₁, z₅ = z̄₂ et z₄ = z̄₃, donc cos(12π/7) = cos(2π/7), cos(10π/7) = cos(4π/7) et cos(8π/7) = cos(6π/7). L'égalité devient 1 + 2T = 0, d'où T = −1/2 ✓. Contrôle numérique indépendant : cos(2π/7) ≈ 0,6235, cos(4π/7) ≈ −0,2225 et cos(6π/7) ≈ −0,9010, de somme ≈ −0,5000 ✓. Second contrôle, par une autre route : les trois nombres cos(2π/7), cos(4π/7), cos(6π/7) sont les abscisses de trois sommets consécutifs du heptagone régulier ; comme le centre de gravité des sept sommets est O, l'abscisse de la somme des six sommets autres que M₀ vaut −1, et ces six abscisses sont deux à deux égales — on retombe sur 2T = −1 ✓. Le piège courant : oublier l'appariement des conjugués et écrire directement 1 + T = 0, ce qui donne T = −1 — c'est compter trois termes là où la somme nulle en contient six, et le contrôle numérique l'exclut immédiatement (−0,50 et non −1,00). Oublier le terme k = 0, qui vaut 1, donne 2T = 0 donc T = 0 ; et un signe perdu en isolant T dans 1 + 2T = 0 livre 1/2, valeur exclue d'emblée car deux des trois cosinus sont négatifs et le plus grand ne vaut que 0,62.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé direct. L'équation (E) : z³ − (4 + i)z² + (7 + i)z − 4 = 0 admet une racine réelle. On note B et C les points images des deux autres solutions. Quelle est la nature du triangle OBC ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rectangle et isocèle en O"
+        },
+        {
+          "id": "b",
+          "text": "Rectangle en O mais non isocèle"
+        },
+        {
+          "id": "c",
+          "text": "Isocèle en O mais non rectangle"
+        },
+        {
+          "id": "d",
+          "text": "Équilatéral"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Quatre étapes dépendantes. 1) Trouver la racine réelle : si x est réel et solution, on sépare parties réelle et imaginaire de x³ − 4x² − ix² + 7x + ix − 4 = 0, ce qui donne x³ − 4x² + 7x − 4 = 0 et −x² + x = 0. La seconde impose x = 0 ou x = 1, et x = 0 est exclu (il donnerait −4 = 0) : la racine réelle est x = 1, qu'on vérifie dans la première équation, 1 − 4 + 7 − 4 = 0 ✓. 2) Factoriser : z³ − (4 + i)z² + (7 + i)z − 4 = (z − 1)(z² − (3 + i)z + 4), ce que le développement confirme. 3) Résoudre le second degré, à coefficients complexes : Δ = (3 + i)² − 16 = 9 + 6i − 1 − 16 = −8 + 6i ; par la méthode algébrique, x² − y² = −8, 2xy = 6, x² + y² = 10, donc x² = 1, y² = 9 avec xy > 0, soit δ = 1 + 3i (contrôle : (1 + 3i)² = 1 + 6i − 9 = −8 + 6i ✓). Les solutions sont ((3 + i) + (1 + 3i))/2 = 2 + 2i et ((3 + i) − (1 + 3i))/2 = 1 − i. 4) Conclure sur le triangle : z_B/z_C = (2 + 2i)/(1 − i) = (2 + 2i)(1 + i)/2 = 4i/2 = 2i. Son argument vaut π/2, donc (OC⃗, OB⃗) ≡ π/2 : le triangle est rectangle en O ; son module vaut 2, donc OB = 2 × OC : il n'est PAS isocèle ✓. Contrôle par une voie indépendante, les longueurs : OB = |2 + 2i| = 2√2, OC = |1 − i| = √2, BC = |1 + 3i| = √10 ; or OB² + OC² = 8 + 2 = 10 = BC², la réciproque de Pythagore confirme l'angle droit en O ✓, et 2√2 ≠ √2 confirme le non-isocèle. Le piège courant : lire dans le quotient le seul argument, conclure « rectangle » et ajouter « isocèle » par réflexe, sans vérifier que le module vaut 1 — c'est précisément le module 2 qui tranche ici. Répondre isocèle non rectangle, c'est intervertir les deux lectures du quotient ; et équilatéral exigerait |z_B/z_C| = 1 et un argument ≡ ±π/3, deux conditions violées.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Linéariser cos⁴x, c'est-à-dire l'écrire comme une somme de cosinus d'angles multiples de x.",
+      "options": [
+        {
+          "id": "a",
+          "text": "cos⁴x = (1/4)cos 4x + (3/4)cos 2x"
+        },
+        {
+          "id": "b",
+          "text": "cos⁴x = (1/16)cos 4x + (1/4)cos 2x + 3/8"
+        },
+        {
+          "id": "c",
+          "text": "cos⁴x = (1/8)cos 4x + (1/2)cos 2x + 3/4"
+        },
+        {
+          "id": "d",
+          "text": "cos⁴x = (1/8)cos 4x + (1/2)cos 2x + 3/8"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On part de la formule d'Euler cos x = (e^(ix) + e^(−ix))/2 et l'on développe par le binôme de Newton, dont les coefficients d'ordre 4 sont 1, 4, 6, 4, 1 : cos⁴x = (1/16)(e^(ix) + e^(−ix))⁴ = (1/16)(e^(4ix) + 4e^(2ix) + 6 + 4e^(−2ix) + e^(−4ix)). On regroupe ensuite les termes conjugués deux à deux, en n'oubliant pas que e^(iu) + e^(−iu) = 2cos u : cos⁴x = (1/16)(2cos 4x + 8cos 2x + 6) = (1/8)cos 4x + (1/2)cos 2x + 3/8 ✓. Contrôle en x = 0 : le membre de gauche vaut 1, le membre de droite 1/8 + 1/2 + 3/8 = 1 ✓. Second contrôle, en une valeur non triviale, x = π/3 : cos⁴(π/3) = (1/2)⁴ = 1/16 ; et (1/8)cos(4π/3) + (1/2)cos(2π/3) + 3/8 = −1/16 − 1/4 + 3/8 = 1/16 ✓. Troisième contrôle, par une route totalement différente (double abaissement de degré) : cos²x = (1 + cos 2x)/2, donc cos⁴x = (1 + cos 2x)²/4 = (1 + 2cos 2x + cos²2x)/4, et cos²2x = (1 + cos 4x)/2, d'où cos⁴x = (1 + 2cos 2x + 1/2 + (1/2)cos 4x)/4 = 3/8 + (1/2)cos 2x + (1/8)cos 4x ✓ — trois voies, un seul résultat. Le piège courant : transposer par analogie la formule cos³x = (1/4)cos 3x + (3/4)cos x, en remplaçant les angles 3x et x par 4x et 2x, et oublier qu'une puissance PAIRE fait apparaître un terme constant (le terme central 6 du binôme, qui n'a pas de conjugué) ; la réponse (1/4)cos 4x + (3/4)cos 2x passe même le test x = 0, mais elle échoue en x = π/2, où elle donne 1/4 − 3/4 = −1/2 alors que cos⁴(π/2) = 0. Oublier les facteurs 2 de l'appariement des conjugués donne (1/16)cos 4x + (1/4)cos 2x + 3/8, qui vaut 11/16 en x = 0 ; et diviser le terme central 6 par 8 au lieu de 16 donne la constante 3/4, soit 11/8 en x = 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On cherche les racines carrées du nombre complexe u = 5 − 12i. Voici une solution proposée. Étape 1 : on pose z = x + iy, alors z² = x² − y² + 2ixy, donc x² − y² = 5 et 2xy = −12. Étape 2 : de plus |z|² = |u|, c'est-à-dire x² + y² = √(25 + 144) = 13. Étape 3 : en additionnant la première et la troisième équation, 2x² = 18 donc x² = 9 et x = ±3 ; en les soustrayant, 2y² = 8 donc y² = 4 et y = ±2 ; les quatre couples (3 ; 2), (3 ; −2), (−3 ; 2) et (−3 ; −2) conviennent donc. Étape 4 : un nombre complexe n'ayant que deux racines carrées, opposées l'une de l'autre, les racines carrées de u sont 3 + 2i et −3 − 2i. Quelle est la PREMIÈRE étape fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 1"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 2"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 3"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ceci est une chasse à l'erreur : la solution proposée contient une faute plantée, l'explication décrit donc un raisonnement volontairement faux. L'étape 3 est la PREMIÈRE fausse ✓ : les valeurs x² = 9 et y² = 4 sont exactes, mais la conclusion « les quatre couples conviennent » abandonne la deuxième équation du système, 2xy = −12. Comme ce produit est NÉGATIF, x et y sont de signes contraires : seuls les couples (3 ; −2) et (−3 ; 2) sont solutions, et les racines carrées de u sont 3 − 2i et −3 + 2i. Contrôle par réinjection : (3 − 2i)² = 9 − 12i + 4i² = 9 − 12i − 4 = 5 − 12i ✓, tandis que le couple retenu par la fausse solution donne (3 + 2i)² = 9 + 12i − 4 = 5 + 12i, c'est-à-dire le CONJUGUÉ de u — la signature exacte de l'erreur de signe. Les étapes 1 et 2 sont irréprochables : le développement de (x + iy)² et l'identification des parties réelle et imaginaire sont corrects, et |z²| = |z|² = x² + y² donne bien x² + y² = |u| = 13. L'étape 4 est fausse aussi, mais elle n'est que l'héritière de l'étape 3 : la question demande la PREMIÈRE étape fautive, et son affirmation de principe (« deux racines carrées opposées ») est d'ailleurs vraie. Le piège courant est justement celui qui est planté ici : traiter le système comme deux équations aux carrés en oubliant que la troisième, 2xy = Im(u), n'est pas une conséquence des deux autres — c'est elle qui apparie x et y et divise par deux le nombre de candidats. Retenir l'étape 4 comme première faute revient à confondre la faute et sa conséquence.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit z = (1 + i√3)/(1 − i). Déterminer le plus petit entier n ≥ 1 tel que zⁿ soit un réel strictement positif.",
+      "options": [
+        {
+          "id": "a",
+          "text": "n = 12"
+        },
+        {
+          "id": "b",
+          "text": "n = 24"
+        },
+        {
+          "id": "c",
+          "text": "n = 48"
+        },
+        {
+          "id": "d",
+          "text": "n = 84"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Tout se joue sur l'argument, car le module ne peut pas nuire : il est toujours strictement positif. Écriture exponentielle : 1 + i√3 = 2e^(iπ/3) (module 2, cos = 1/2, sin = √3/2, premier quadrant) et 1 − i = √2 e^(−iπ/4) (quatrième quadrant), donc z = (2/√2) e^(i(π/3 + π/4)) = √2 e^(i7π/12), puisque π/3 + π/4 = 4π/12 + 3π/12 = 7π/12. Contrôle par la forme algébrique : z = (1 + i√3)(1 + i)/2 = ((1 − √3) + i(1 + √3))/2 ≈ −0,366 + 1,366i, de module √(0,134 + 1,866) = √2 ✓ et situé dans le deuxième quadrant, à environ 105° = 7π/12 ✓. Par Moivre, zⁿ = (√2)ⁿ e^(i7nπ/12) : ce nombre est un réel strictement positif si et seulement si son argument est nul modulo 2π, c'est-à-dire 7n/12 = 2k avec k entier, soit 7n = 24k. Comme 7 et 24 sont premiers entre eux, 24 divise n : le plus petit entier convenable est n = 24 ✓. Vérification directe : z²⁴ = (√2)²⁴ e^(i14π) = 2¹² × 1 = 4096, réel strictement positif ✓. Le piège courant : demander seulement que zⁿ soit RÉEL, c'est-à-dire un argument nul modulo π (7n = 12k), ce qui donne n = 12 ; or z¹² = 2⁶ e^(i7π) = −64, réel NÉGATIF — la condition « strictement positif » double exactement la période. Répondre 48, c'est trouver la bonne condition mais oublier de prendre le plus petit multiple (z⁴⁸ = 2²⁴ convient aussi, mais 24 le précède) ; et 84 = 12 × 7 vient de croire qu'il faut annuler à la fois le 7 du numérateur et le 12 du dénominateur, alors que z⁸⁴ = 2⁴² e^(i49π) = −2⁴², encore négatif.",
+      "difficulty": 3
+    }
+  ]
+}

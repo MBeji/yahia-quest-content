@@ -1,0 +1,115 @@
+{
+  "title": "🏛️ Annales Bac ⭐⭐⭐⭐ : Sujet type — Racines cubiques de −8, triangle équilatéral et lieux de points",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "Partie A. Résoudre dans ℂ l'équation (E₁) : z² − 2z + 4 = 0, puis donner l'écriture exponentielle de chacune de ses solutions.",
+      "options": [
+        {
+          "id": "a",
+          "text": "z = 1 + i√3 = 2e^(iπ/3) et z = 1 − i√3 = 2e^(−iπ/3)"
+        },
+        {
+          "id": "b",
+          "text": "z = −1 + i√3 = 2e^(i2π/3) et z = −1 − i√3 = 2e^(−i2π/3)"
+        },
+        {
+          "id": "c",
+          "text": "z = 1 + i√3 = 2e^(iπ/6) et z = 1 − i√3 = 2e^(−iπ/6)"
+        },
+        {
+          "id": "d",
+          "text": "z = 2 + 2i√3 = 4e^(iπ/3) et z = 2 − 2i√3 = 4e^(−iπ/3)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les coefficients sont réels, mais la méthode reste celle de ℂ : Δ = b² − 4ac = 4 − 16 = −12. On ne dit pas « Δ < 0 » pour conclure à l'absence de solutions — on cherche une racine carrée de Δ. Comme (2i√3)² = 4 × 3 × i² = −12, on prend δ = 2i√3, et les solutions sont z = (2 ± 2i√3)/2 = 1 ± i√3 ✓ — sans oublier de diviser par 2a = 2. Contrôle par somme-produit : (1 + i√3) + (1 − i√3) = 2 = −b/a ✓ et (1 + i√3)(1 − i√3) = 1 + 3 = 4 = c/a ✓. Contrôle par réinjection : (1 + i√3)² = 1 + 2i√3 − 3 = −2 + 2i√3, puis −2 + 2i√3 − 2(1 + i√3) + 4 = −2 + 2i√3 − 2 − 2i√3 + 4 = 0 ✓. Pour l'écriture exponentielle : |1 + i√3| = √(1 + 3) = 2, puis cos θ = 1/2 et sin θ = √3/2, tous deux positifs, premier quadrant, donc θ = π/3 et 1 + i√3 = 2e^(iπ/3) ✓. Le conjugué a le même module et l'argument opposé : 1 − i√3 = 2e^(−iπ/3) ✓ — les deux racines sont conjuguées, ce qui est garanti ici parce que TOUS les coefficients sont réels. La proposition −1 ± i√3 prend b au lieu de −b dans la formule : ces nombres vérifient z² + 2z + 4 = 0, pas (E₁), et leur somme vaut −2 au lieu de 2. La proposition 2e^(±iπ/6) donne les bonnes racines mais un mauvais argument : π/6 correspond à cos = √3/2 et sin = 1/2, c'est-à-dire au point √3 + i ; le contrôle par retour à la forme algébrique, 2(cos(π/6) + i sin(π/6)) = √3 + i ≠ 1 + i√3, tranche immédiatement. La proposition 2 ± 2i√3 oublie la division par 2a : ce sont les numérateurs −b ± δ laissés bruts, et leur produit vaudrait 4 + 12 = 16 au lieu de 4.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Partie A (suite). On pose a = 1 + i√3, solution de (E₁) obtenue à la question précédente, dont l'écriture exponentielle est a = 2e^(iπ/3). Déterminer le plus petit entier naturel non nul n tel que aⁿ soit un nombre réel, et préciser la valeur de aⁿ pour cet entier.",
+      "options": [
+        { "id": "a", "text": "n = 3, et alors a³ = −8" },
+        { "id": "b", "text": "n = 6, et alors a⁶ = 64" },
+        { "id": "c", "text": "n = 2, et alors a² = −2 + 2i√3" },
+        { "id": "d", "text": "n = 12, et alors a¹² = 4096" }
+      ],
+      "correctOption": "a",
+      "explanation": "Un complexe non nul est réel si et seulement si son argument est congru à 0 modulo π (argument 0 pour un réel positif, π pour un réel négatif). Par la formule de Moivre, arg(aⁿ) ≡ n arg(a) ≡ nπ/3 [2π]. La condition « aⁿ réel » s'écrit donc nπ/3 ≡ 0 [π], c'est-à-dire n/3 entier, soit n multiple de 3. Le plus petit entier naturel non nul convenable est n = 3 ✓, et alors a³ = 2³ e^(iπ) = 8 × (−1) = −8 ✓. Contrôle par le calcul direct, indépendant de Moivre : a² = (1 + i√3)² = 1 + 2i√3 + 3i² = −2 + 2i√3, puis a³ = a² × a = (−2 + 2i√3)(1 + i√3) = −2 − 2i√3 + 2i√3 + 2i²×3 = −2 − 6 = −8 ✓. La proposition n = 6 donne bien un réel, a⁶ = 2⁶ e^(i2π) = 64, mais ce n'est pas le PLUS PETIT : elle impose à l'argument d'être congru à 0 modulo 2π, alors qu'un réel négatif est tout aussi réel. C'est le piège central de la question, et l'énoncé ne demande pas « réel positif ». La proposition n = 2 se contente de constater que a² est plus simple que a, mais −2 + 2i√3 a une partie imaginaire non nulle : il n'est pas réel, et son argument vaut 2π/3, qui n'est ni 0 ni π. La proposition n = 12 est correcte quant à la valeur (a¹² = 2¹² e^(i4π) = 4096) mais quadruple le plus petit exposant : elle revient à chercher le retour au point de départ dans la même direction, deux tours complets plus loin.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Partie A (suite). On admet l'identité, valable pour tout complexe z : z³ + 8 = (z + 2)(z² − 2z + 4). En déduire l'ensemble des solutions dans ℂ de l'équation (E₂) : z³ = −8.",
+      "options": [
+        { "id": "a", "text": "S = {−2 ; 1 + i√3 ; 1 − i√3}" },
+        { "id": "b", "text": "S = {2 ; −1 + i√3 ; −1 − i√3}" },
+        { "id": "c", "text": "S = {−2}" },
+        { "id": "d", "text": "S = {−2 ; −1 + i√3 ; −1 − i√3}" }
+      ],
+      "correctOption": "a",
+      "explanation": "L'équation (E₂) s'écrit z³ + 8 = 0, donc (z + 2)(z² − 2z + 4) = 0. Un produit de facteurs est nul si et seulement si l'un des facteurs l'est : soit z + 2 = 0, ce qui donne z = −2, soit z² − 2z + 4 = 0, dont la question 1 a donné les solutions 1 + i√3 et 1 − i√3. D'où S = {−2 ; 1 + i√3 ; 1 − i√3} ✓ — trois solutions distinctes, comme l'annonce le théorème : l'équation zⁿ = a, avec a non nul, en a exactement n. Contrôle par la voie exponentielle, entièrement indépendante de la factorisation : −8 = 8e^(iπ), donc r³ = 8 ⇒ r = 2, et zₖ = 2e^(i(π/3 + 2kπ/3)) pour k ∈ {0 ; 1 ; 2}, soit 2e^(iπ/3) = 1 + i√3, 2e^(iπ) = −2 et 2e^(i5π/3) = 1 − i√3 ✓ — les deux méthodes donnent le même ensemble. Contrôle par réinjection : (−2)³ = −8 ✓, et (1 + i√3)³ = a³ = −8, déjà établi à la question précédente ✓. Contrôle par la somme des racines : −2 + (1 + i√3) + (1 − i√3) = 0 ✓, comme il se doit pour les racines nièmes d'un complexe avec n ≥ 2. La proposition {2 ; −1 + i√3 ; −1 − i√3} résout z³ = +8 : elle perd le signe du second membre, c'est-à-dire l'argument π. Ces trois points forment le triangle équilatéral symétrique du bon par rapport à O. La proposition {−2} raisonne dans ℝ, où −8 n'a qu'une seule racine cubique : c'est précisément la limite que ce chapitre lève. La proposition {−2 ; −1 + i√3 ; −1 − i√3} mélange les deux équations en gardant la racine réelle de z³ = −8 et les racines complexes de z³ = 8 ; la somme de ces trois nombres vaut −4 et non 0, ce qui suffit à l'écarter.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie A (fin). Le plan est muni d'un repère orthonormé direct (O, u⃗, v⃗). On note A, B et C les points d'affixes respectives a = 1 + i√3, b = −2 et c = 1 − i√3, c'est-à-dire les trois solutions de (E₂). Préciser la nature du triangle ABC et calculer son aire, en unités d'aire.",
+      "options": [
+        { "id": "a", "text": "ABC est équilatéral, de côté 2√3 et d'aire 3√3 ≈ 5,196" },
+        { "id": "b", "text": "ABC est équilatéral, de côté 2 et d'aire √3 ≈ 1,732" },
+        {
+          "id": "c",
+          "text": "ABC est isocèle en A sans être équilatéral, et son aire vaut 2√3 ≈ 3,464"
+        },
+        { "id": "d", "text": "ABC est équilatéral, de côté 2√3 et d'aire 6√3 ≈ 10,392" }
+      ],
+      "correctOption": "a",
+      "explanation": "On calcule les trois longueurs par la formule MN = |z_N − z_M|. AB = |b − a| = |−2 − 1 − i√3| = |−3 − i√3| = √(9 + 3) = 2√3. AC = |c − a| = |−2i√3| = 2√3. BC = |c − b| = |1 − i√3 + 2| = |3 − i√3| = √(9 + 3) = 2√3. Les trois côtés sont égaux : ABC est équilatéral de côté 2√3 ✓. L'aire d'un triangle équilatéral de côté s vaut (√3/4)s², donc ici (√3/4) × 12 = 3√3 ≈ 5,196 unités d'aire ✓. Contrôle par une seconde formule, indépendante : les trois points sont les racines cubiques de −8, donc ils sont sur le cercle de centre O et de rayon 2 et découpent trois angles au centre de 2π/3. L'aire vaut alors 3 × (1/2) × R² × sin(2π/3) = 3 × 0,5 × 4 × (√3/2) = 3√3 ✓. Contrôle par la base et la hauteur : la base [AC] est verticale, portée par la droite d'équation x = 1 et de longueur 2√3 ; le point B a pour abscisse −2, donc la hauteur issue de B vaut |1 − (−2)| = 3, et l'aire vaut (1/2) × 2√3 × 3 = 3√3 ✓ — trois chemins, un seul résultat. La proposition « côté 2 » confond le côté du triangle avec le RAYON du cercle circonscrit : le rayon vaut bien 2, mais dans un triangle équilatéral le côté vaut R√3, soit 2√3 ≈ 3,46, et non R. La proposition « isocèle en A seulement » s'arrête après avoir constaté AB = AC, sans calculer BC : c'est l'économie de trop, car le troisième calcul est exactement de la même difficulté et change la conclusion. La proposition d'aire 6√3 double le résultat : elle utilise (√3/2)s² au lieu de (√3/4)s², c'est-à-dire oublie le facteur 1/2 de la formule « base × hauteur ».",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B. On garde A(a), B(b) et C(c) avec a = 1 + i√3, b = −2 et c = 1 − i√3 : les trois points sont sur le cercle de centre O et de rayon 2, comme le montre la figure. À tout point M d'affixe z, distinct de A et de B, on associe le nombre complexe Z = (z − a)/(z + 2). Déterminer l'ensemble E des points M tels que |Z| = 1. <svg viewBox=\"0 0 300 260\"><path d=\"M20 130 H285\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M285 130 l-8 -4 l0 8 z\" fill=\"#0f172a\"/><path d=\"M150 245 V15\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M150 15 l-4 8 l8 0 z\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"130\" r=\"80\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M190 126 V134\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M190 60.7 L70 130\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.4\"/><g fill=\"#0f172a\"><circle cx=\"190\" cy=\"60.7\" r=\"4.5\"/><circle cx=\"70\" cy=\"130\" r=\"4.5\"/><circle cx=\"190\" cy=\"199.3\" r=\"4.5\"/></g><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"198\" y=\"56\" fill=\"#0f172a\">A</text><text x=\"64\" y=\"124\" text-anchor=\"end\" fill=\"#0f172a\">B</text><text x=\"198\" y=\"208\" fill=\"#0f172a\">C</text><text x=\"144\" y=\"146\" text-anchor=\"end\" fill=\"#0f172a\">O</text><text x=\"190\" y=\"148\" text-anchor=\"middle\" fill=\"#0f172a\">1</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "E est la médiatrice de [AB], droite d'équation y = −√3 x"
+        },
+        {
+          "id": "b",
+          "text": "E est la médiatrice de [AB], droite d'équation y = √3 x"
+        },
+        { "id": "c", "text": "E est le cercle de centre O et de rayon 2, privé de A et B" },
+        { "id": "d", "text": "E est la droite (AB), privée de A et de B" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le module d'un quotient est le quotient des modules : |Z| = |z − a|/|z + 2| = |z − a|/|z − b| = MA/MB, puisque MN = |z_N − z_M| et que b = −2. La condition |Z| = 1 équivaut donc à MA = MB, c'est-à-dire à « M est équidistant de A et de B » : E est la médiatrice du segment [AB] ✓ (le point M = B est exclu d'office, le quotient n'y étant pas défini). Reste à en donner une équation. Avec A(1 ; √3) et B(−2 ; 0), on écrit MA² = MB² : (x − 1)² + (y − √3)² = (x + 2)² + y², soit x² − 2x + 1 + y² − 2√3 y + 3 = x² + 4x + 4 + y², d'où −6x − 2√3 y = 0 et enfin y = −√3 x ✓. Contrôle sur deux points : O(0 ; 0) vérifie l'équation, et de fait OA = OB = 2, les deux points étant sur le cercle ✓ ; C(1 ; −√3) la vérifie aussi, et CA = |a − c| = |2i√3| = 2√3 tandis que CB = |b − c| = |−3 + i√3| = 2√3 ✓. Contrôle de perpendicularité : le vecteur AB⃗ a pour coordonnées (−3 ; −√3) et un vecteur directeur de E est (1 ; −√3) ; leur produit scalaire vaut −3 + 3 = 0 ✓, la droite est bien perpendiculaire à [AB]. La droite y = √3 x est la symétrique de la bonne par rapport à l'axe des abscisses : elle vient d'une erreur de signe dans l'isolement de y, et le point C, dont on vérifie en une ligne qu'il est équidistant de A et B, ne lui appartient pas. Le cercle de centre O et de rayon 2 est le cercle circonscrit à ABC, tracé sur la figure : il contient bien les trois sommets, mais le point d'affixe 2 y est situé sans être équidistant de A et B — on calcule MA = |2 − 1 − i√3| = |1 − i√3| = 2 et MB = |2 + 2| = 4, qui diffèrent. La droite (AB) est l'ensemble des M tels que Z soit RÉEL (arg Z ≡ 0 [π]), une condition sur l'argument et non sur le module : c'est l'autre lecture du même quotient, et il ne faut pas les confondre.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B (fin). Mêmes données : A(a) avec a = 1 + i√3, B(b) avec b = −2, et Z = (z − a)/(z + 2) pour tout point M d'affixe z distinct de A et de B. Déterminer l'ensemble F des points M tels que Z soit un imaginaire pur non nul.",
+      "options": [
+        {
+          "id": "a",
+          "text": "F est le cercle de diamètre [AB] — centre d'affixe (−1 + i√3)/2 et rayon √3 — privé de A et de B"
+        },
+        {
+          "id": "b",
+          "text": "F est la droite (AB), privée de A et de B"
+        },
+        {
+          "id": "c",
+          "text": "F est la médiatrice de [AB], droite d'équation y = −√3 x"
+        },
+        {
+          "id": "d",
+          "text": "F est le cercle de centre O et de rayon 2, privé de A et de B"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On lit le quotient comme un angle. Le numérateur z − a est l'affixe du vecteur AM⃗ et le dénominateur z + 2 = z − b celle du vecteur BM⃗, donc arg Z ≡ arg(z − a) − arg(z − b) ≡ (BM⃗, AM⃗) [2π] d'après le théorème sur les angles orientés. Or un complexe non nul est imaginaire pur si et seulement si son argument est congru à π/2 modulo π. La condition s'écrit donc (BM⃗, AM⃗) ≡ π/2 [π], c'est-à-dire (MA) ⊥ (MB) : le point M voit le segment [AB] sous un angle droit, il appartient au cercle de diamètre [AB], privé de A et de B ✓. Ses caractéristiques : le centre est le milieu de [AB], d'affixe (a + b)/2 = (1 + i√3 − 2)/2 = (−1 + i√3)/2, et le rayon vaut AB/2 = 2√3/2 = √3 ✓. Contrôle sur un point, indispensable : prenons M = O, d'affixe 0. Alors Z = (0 − 1 − i√3)/(0 + 2) = (−1 − i√3)/2, dont la partie réelle −1/2 n'est pas nulle : O n'appartient donc pas à F, et de fait |O − centre| = |(−1 + i√3)/2| = √(1 + 3)/2 = 1 ≠ √3 ✓, O n'est pas sur ce cercle. Deuxième contrôle, sur un point qui doit convenir : le point M d'affixe −2 + i√3, qui est bien sur le cercle de diamètre [AB], puisque sa distance au centre vaut |−2 + i√3 − (−1 + i√3)/2| = |(−3 + i√3)/2| = 2√3/2 = √3. Pour lui, Z = (−2 + i√3 − 1 − i√3)/(−2 + i√3 + 2) = −3/(i√3) = −3(−i√3)/3 = i√3, imaginaire pur non nul ✓. Modulo π, et non 2π : c'est pourquoi F est le cercle ENTIER (privé de A et B) et non un seul arc — une condition « ≡ π/2 [2π] » n'en garderait qu'une moitié. La droite (AB) privée de A et B est l'ensemble des M tels que Z soit réel : le quotient de deux vecteurs colinéaires est réel, c'est le test d'alignement, exactement la condition opposée à celle demandée. La médiatrice de [AB] répond à la question précédente, |Z| = 1 : elle porte sur le MODULE du quotient, pas sur son argument — un même quotient, deux lectures qu'il ne faut jamais intervertir. Le cercle de centre O et de rayon 2 est le cercle circonscrit au triangle ABC ; il passe par A et B, mais son centre n'est pas le milieu de [AB] et l'angle sous lequel on y voit [AB] n'y est pas droit : pour M d'affixe 2i, on trouve Z = (2i − 1 − i√3)/(2i + 2), dont la partie réelle est non nulle.",
+      "difficulty": 3
+    }
+  ]
+}

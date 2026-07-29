@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des symétries",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé direct. Soit f l'application qui à tout point M d'affixe z associe le point M′ d'affixe z′ = ((1 − i√3)/2)·z + 1 + i√3. Caractériser f.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La rotation de centre Ω d'affixe 2 et d'angle π/3"
+        },
+        {
+          "id": "b",
+          "text": "La rotation de centre Ω d'affixe 1 + i√3 et d'angle −π/3"
+        },
+        {
+          "id": "c",
+          "text": "La rotation de centre Ω d'affixe 2 et d'angle −π/3"
+        },
+        {
+          "id": "d",
+          "text": "La rotation de centre Ω d'affixe 2 et d'angle −π/6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La méthode du cours tient en trois temps. 1) Est-ce une isométrie ? On pose a = (1 − i√3)/2 ; alors |a| = √(1/4 + 3/4) = 1, donc |z′₁ − z′₂| = |a|·|z₁ − z₂| = |z₁ − z₂| : f conserve les distances ✓. 2) Points fixes : z = az + b équivaut à z(1 − a) = b avec b = 1 + i√3. Or 1 − a = 1 − 1/2 + i√3/2 = (1 + i√3)/2, donc z = (1 + i√3)/((1 + i√3)/2) = 2 : il y a un point fixe UNIQUE, Ω d'affixe 2. 3) Conclusion par le tableau de classification : une isométrie qui fixe un seul point est une rotation de centre ce point et d'angle non nul ; l'angle vaut arg(a). Comme cos = 1/2 et sin = −√3/2, on lit arg(a) ≡ −π/3, donc f est la rotation de centre Ω(2 ; 0) et d'angle −π/3 ✓. Contrôle par une voie géométrique totalement indépendante, sur l'image d'un point : f(O) a pour affixe 1 + i√3, donc M′(1 ; √3). Le vecteur ΩM⃗ vaut (−2 ; 0), de module 2 et d'argument π ; le vecteur ΩM′⃗ vaut (1 − 2 ; √3) = (−1 ; √3), de module √(1 + 3) = 2 ✓ (les longueurs sont conservées) et d'argument 2π/3 ; l'angle de rotation vaut donc 2π/3 − π = −π/3 ✓. Le piège courant : lire l'argument de a comme −π/6 parce que la partie imaginaire contient √3, alors que c'est le rapport sin/cos = −√3 qui décide (tan θ = −√3 donne θ = −π/3, jamais −π/6) ; on livre alors un angle −π/6 pour lequel l'image de O ne serait pas 1 + i√3. Oublier le signe du sinus donne l'angle π/3 : c'est la rotation réciproque, celle qui ramènerait M′ sur M. Enfin confondre le nombre b avec l'affixe du centre donne Ω(1 + i√3) — mais ce point n'est pas fixe : son image a pour affixe ((1 − i√3)/2)(1 + i√3) + 1 + i√3 = 2 + 1 + i√3 = 3 + i√3, différente de 1 + i√3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit A, B et C trois points non alignés, r la rotation de centre A et d'angle π/4, et f l'isométrie définie par f = t_(AB⃗)∘S_(AC)∘r. On note r′ la rotation de centre A et d'angle −π/4. Déterminer f⁻¹.",
+      "options": [
+        {
+          "id": "a",
+          "text": "f⁻¹ = r′∘S_(AC)∘t_(BA⃗)"
+        },
+        {
+          "id": "b",
+          "text": "f⁻¹ = t_(BA⃗)∘S_(AC)∘r′"
+        },
+        {
+          "id": "c",
+          "text": "f⁻¹ = r∘S_(AC)∘t_(BA⃗)"
+        },
+        {
+          "id": "d",
+          "text": "f⁻¹ = r′∘S_(AC)∘t_(AB⃗)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux règles, appliquées ensemble. D'abord (f∘g)⁻¹ = g⁻¹∘f⁻¹ : pour inverser une chaîne, on la remonte À L'ENVERS. Ensuite chaque facteur est remplacé par sa propre réciproque : (t_u⃗)⁻¹ = t_(−u⃗), (S_D)⁻¹ = S_D (les symétries sont les seules involutives) et la réciproque d'une rotation de centre A et d'angle θ est la rotation de même centre et d'angle −θ. Ici f = t_(AB⃗)∘S_(AC)∘r, donc f⁻¹ = r⁻¹∘(S_(AC))⁻¹∘(t_(AB⃗))⁻¹ = r′∘S_(AC)∘t_(−AB⃗) = r′∘S_(AC)∘t_(BA⃗) ✓, puisque −AB⃗ = BA⃗. Contrôle par une seconde voie, en vérifiant f∘f⁻¹ = Id facteur par facteur, de l'intérieur vers l'extérieur : on part de f⁻¹ = r′∘S_(AC)∘t_(BA⃗) et on applique f = t_(AB⃗)∘S_(AC)∘r. La chaîne complète f∘f⁻¹ s'écrit t_(AB⃗)∘S_(AC)∘r∘r′∘S_(AC)∘t_(BA⃗) ; or r∘r′ = Id (angles opposés, même centre), il reste t_(AB⃗)∘S_(AC)∘S_(AC)∘t_(BA⃗) ; puis S_(AC)∘S_(AC) = Id, il reste t_(AB⃗)∘t_(BA⃗) = t_(AB⃗ + BA⃗) = t_(0⃗) = Id ✓ — chaque facteur télescope avec son voisin, ce qui n'arrive que si l'ordre est bien inversé. Contrôle numérique de l'ordre, sur un exemple : avec A(0, 0), B(1, 0), C(0, 1), l'image de A par f est A ↦ r(A) = A ↦ S_(AC)(A) = A ↦ (1 ; 0) = B ; et l'image de B par la réponse a est B ↦ t_(BA⃗)(B) = A ↦ S_(AC)(A) = A ↦ r′(A) = A ✓ : on est bien revenu au point de départ. Le piège courant : inverser chaque facteur mais garder l'ordre d'écriture, ce qui donne t_(BA⃗)∘S_(AC)∘r′ — sur le même exemple, l'image de B serait B ↦ r′(B) = (√2/2 ; −√2/2) ↦ S_(AC) ↦ (−√2/2 ; −√2/2) ↦ t_(BA⃗) ↦ (−√2/2 − 1 ; −√2/2), qui n'est pas A. Renverser l'ordre en oubliant d'opposer l'angle donne r∘S_(AC)∘t_(BA⃗), et l'oublier sur le vecteur donne r′∘S_(AC)∘t_(AB⃗) : dans les deux cas un facteur ne télescope plus et la composée n'est pas l'identité.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé direct. Soit f l'application qui à tout point M(x, y) associe le point M′(x′, y′) tel que x′ = y + 2 et y′ = x + 2. Identifier f.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La symétrie orthogonale d'axe la droite d'équation y = x"
+        },
+        {
+          "id": "b",
+          "text": "La translation de vecteur (2 ; 2)"
+        },
+        {
+          "id": "c",
+          "text": "La symétrie glissante d'axe la droite d'équation y = x et de vecteur (4 ; 4)"
+        },
+        {
+          "id": "d",
+          "text": "La symétrie glissante d'axe la droite d'équation y = x et de vecteur (2 ; 2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Étape 1, est-ce une isométrie ? Avec a = x₁ − x et b = y₁ − y, les différences deviennent x′₁ − x′ = b et y′₁ − y′ = a, donc M′N′² = b² + a² = MN² ✓ (les constantes 2 disparaissent en soustrayant, comme toujours). Étape 2, points fixes : il faudrait x = y + 2 ET y = x + 2, c'est-à-dire x − y = 2 et x − y = −2 : impossible, f n'a AUCUN point fixe. Étape 3, le tri : sans point fixe, il ne reste que deux natures, translation de vecteur non nul ou symétrie glissante. Ce n'est pas une translation, car le vecteur MM′⃗ = (y + 2 − x ; x + 2 − y) change avec le point (il vaut (2 ; 2) pour M(0, 0) mais (1 ; 3) pour M(1, 0)). C'est donc une symétrie glissante, et on la caractérise par deux calculs standards. Le vecteur : f∘f envoie M(x, y) sur f(y + 2, x + 2) = (x + 4 ; y + 4), c'est la translation t_(4 ; 4) = t_(2u⃗), donc u⃗ = (2 ; 2). L'axe : il est formé des milieux des segments [M f(M)], de coordonnées ((x + y + 2)/2 ; (x + y + 2)/2) — l'abscisse et l'ordonnée sont toujours égales, l'axe est la droite d'équation y = x, dont (2 ; 2) est bien un vecteur directeur ✓ (condition obligatoire d'une symétrie glissante). Contrôle par une voie indépendante, en recomposant : la symétrie d'axe y = x échange les coordonnées, (x, y) ↦ (y, x) ; en translatant ensuite de (2 ; 2) on obtient (y + 2 ; x + 2), exactement f ✓. Contrôle chiffré : M(1, 0) ↦ M′(2, 3) ; le milieu (1,5 ; 1,5) est sur y = x ✓ et MM′⃗ = (1 ; 3) = (2 ; 2) + (−1 ; 1), somme du glissement et d'un vecteur orthogonal à l'axe ✓. Le piège courant : s'arrêter à la forme complexe z′ = i·z̄ + 2 + 2i, reconnaître le i·z̄ de l'exemple du cours et répondre « symétrie orthogonale d'axe y = x » sans vérifier les points fixes — mais cette symétrie envoie (1, 0) sur (0, 1), pas sur (2, 3). Répondre translation de vecteur (2 ; 2) revient à ne tester le vecteur MM′⃗ que sur l'origine. Enfin lire le vecteur directement sur f∘f = t_(4 ; 4) donne (4 ; 4) : c'est oublier que f∘f vaut t_(2u⃗), donc que le vecteur de glissement est la MOITIÉ de celui-là.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "ABCD est un carré direct de centre I. On note r la rotation de centre I et d'angle π/2 (elle envoie A sur B) et S_(AC) la symétrie orthogonale d'axe la diagonale (AC). Identifier g = S_(AC)∘r.\n\n<svg viewBox=\"0 0 300 260\"><path d=\"M40 220 L240 20\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><path d=\"M60 200 L220 200 L220 40 L60 40 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M60 200 L220 200 L220 40 L60 40 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"200\" r=\"4\"/><circle cx=\"220\" cy=\"200\" r=\"4\"/><circle cx=\"220\" cy=\"40\" r=\"4\"/><circle cx=\"60\" cy=\"40\" r=\"4\"/><circle cx=\"140\" cy=\"120\" r=\"3.5\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"48\" y=\"219\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"232\" y=\"219\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"232\" y=\"34\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"48\" y=\"34\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"128\" y=\"116\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"254\" y=\"22\" text-anchor=\"middle\" fill=\"#b45309\">(AC)</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La symétrie orthogonale d'axe la médiatrice de [AB]"
+        },
+        {
+          "id": "b",
+          "text": "La symétrie orthogonale d'axe la médiatrice de [AD]"
+        },
+        {
+          "id": "c",
+          "text": "La symétrie centrale de centre I"
+        },
+        {
+          "id": "d",
+          "text": "La symétrie orthogonale d'axe (BD)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une isométrie est entièrement déterminée par les images de trois points non alignés : il suffit donc de suivre trois sommets, en n'oubliant jamais que g = S_(AC)∘r applique r D'ABORD. Sur le carré direct, r réalise le cycle A ↦ B ↦ C ↦ D ↦ A, et S_(AC) fixe A et C tout en échangeant B et D. D'où : A ↦ r ↦ B ↦ S_(AC) ↦ D ; B ↦ r ↦ C ↦ S_(AC) ↦ C ; D ↦ r ↦ A ↦ S_(AC) ↦ A. Ainsi g échange A et D, échange B et C, et l'on conclut par les points fixes : g conserve le milieu, donc elle fixe le milieu de [AD] (milieu de [DA], le même) et le milieu de [BC] ; elle fixe deux points distincts sans être l'identité (elle bouge A), c'est donc la symétrie orthogonale d'axe la droite joignant ces deux milieux, autrement dit la médiatrice de [AD] — qui est aussi celle de [BC] ✓. Contrôle par une voie analytique indépendante : plaçons A(0, 0), B(1, 0), C(1, 1), D(0, 1), donc I(0,5 ; 0,5). La rotation directe de centre I et d'angle π/2 s'écrit z′ = i(z − ω) + ω avec ω = 0,5 + 0,5i, et la symétrie d'axe (AC), qui est la droite y = x, échange les coordonnées. On obtient g(x, y) = (x ; 1 − y) : c'est bien la symétrie orthogonale d'axe y = 1/2, c'est-à-dire la médiatrice de [AD] ✓ ; on vérifie g(A) = (0 ; 1) = D et g(B) = (1 ; 1) = C ✓. Le piège courant : composer dans le mauvais sens et calculer r∘S_(AC) au lieu de S_(AC)∘r. Cet autre produit envoie A sur B, B sur A, C sur D et D sur C : c'est la symétrie orthogonale d'axe la médiatrice de [AB] — une réponse parfaitement cohérente… pour une autre question, ce qui en fait le distracteur le plus dangereux (la composition n'est pas commutative). La symétrie centrale de centre I enverrait A sur C, tout comme la symétrie d'axe (BD) : or l'image de A est D, donc ces deux réponses tombent dès le premier point testé.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est muni d'un repère orthonormé direct. Soit r la rotation de centre O et d'angle 2π/3, et D la droite d'équation y = 0. Déterminer la droite D′ telle que r = S_D′∘S_D.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La droite d'équation y = √3 x"
+        },
+        {
+          "id": "b",
+          "text": "La droite d'équation y = −√3 x"
+        },
+        {
+          "id": "c",
+          "text": "La droite d'équation y = (√3/3)x"
+        },
+        {
+          "id": "d",
+          "text": "La droite d'équation x = 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le théorème de décomposition d'une rotation dit ceci : le PREMIER axe est libre pourvu qu'il passe par le centre, et le second est alors imposé par la relation 2(u⃗, u′⃗) ≡ θ [2π], où u⃗ et u′⃗ dirigent D et D′. Ici θ = 2π/3 et D = (Ox) a pour vecteur directeur u⃗ = i⃗, d'angle 0 : il faut donc (u⃗, u′⃗) ≡ π/3 [π], c'est-à-dire une droite D′ passant par O et faisant un angle de π/3 avec l'axe des abscisses. Son coefficient directeur vaut tan(π/3) = √3 : D′ a pour équation y = √3 x ✓. Contrôle par une voie totalement indépendante, en calculant la composée sur deux points bien choisis. La symétrie d'axe D transforme M(x, y) en (x ; −y), et la symétrie d'axe D′, droite d'angle π/3, s'écrit (x, y) ↦ (x·cos(2π/3) + y·sin(2π/3) ; x·sin(2π/3) − y·cos(2π/3)) = (−x/2 + (√3/2)y ; (√3/2)x + y/2). Pour M(1, 0) : S_D(M) = (1 ; 0), puis S_D′(1, 0) = (−1/2 ; √3/2) ; or la rotation d'angle 2π/3 envoie (1, 0) sur (cos(2π/3) ; sin(2π/3)) = (−1/2 ; √3/2) ✓. Pour N(0, 1) : S_D(N) = (0 ; −1), puis S_D′(0, −1) = (−√3/2 ; −1/2) ; or la rotation d'angle 2π/3 envoie (0, 1) sur (−sin(2π/3) ; cos(2π/3)) = (−√3/2 ; −1/2) ✓. Deux points non alignés avec le centre suffisent à conclure. Le piège courant : oublier le facteur 2 et prendre pour D′ la droite faisant l'angle θ = 2π/3 avec D, soit y = tan(2π/3)x = −√3 x — cette droite donnerait la rotation d'angle 2 × (−π/3) = −2π/3, c'est-à-dire la rotation réciproque, ce que l'on vérifie sur M(1, 0), envoyé alors sur (−1/2 ; −√3/2). Diviser une fois de trop et prendre l'angle π/6 donne y = (√3/3)x, qui produit la rotation d'angle π/3, deux fois trop petite. Enfin croire que les deux axes doivent toujours être perpendiculaires donne x = 0 : cette configuration ne convient qu'à la symétrie centrale, c'est-à-dire à l'angle π.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule des affirmations suivantes est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une isométrie du plan qui n'a aucun point fixe est nécessairement une symétrie glissante"
+        },
+        {
+          "id": "b",
+          "text": "Si une isométrie f vérifie f∘f = Id, alors f est une symétrie orthogonale"
+        },
+        {
+          "id": "c",
+          "text": "Si f et g sont deux isométries telles que f∘g = Id, alors g∘f = Id"
+        },
+        {
+          "id": "d",
+          "text": "La composée de trois symétries orthogonales d'axes deux à deux sécants est une symétrie orthogonale"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Seule l'affirmation c est vraie ✓, et c'est un résultat du cours pris dans le bon sens : pour deux isométries, g = f⁻¹ si et seulement si f∘g = Id. L'hypothèse f∘g = Id donne donc g = f⁻¹, et par définition de la réciproque f⁻¹∘f = Id, c'est-à-dire g∘f = Id ✓. Vérification par une seconde voie, points par points : pour tout M, f(g(M)) = M signifie que g(M) est l'antécédent de M par f ; comme f est bijective (toute isométrie l'est), cet antécédent est unique et g est exactement l'application « antécédent par f », donc g(f(M)) = M pour tout M ✓. Attention à la nuance : cela ne dit PAS que f = g. a est fausse : la translation de vecteur non nul n'a elle non plus aucun point fixe, et ce n'est pas une symétrie glissante — le tableau de classification donne bien DEUX natures à ensemble de points fixes vide. b est fausse pour deux raisons indépendantes : l'identité vérifie Id∘Id = Id sans être une symétrie orthogonale, et surtout toute symétrie centrale S_I vérifie S_I∘S_I = Id alors que c'est une rotation d'angle π. d est fausse : « deux à deux sécants » ne suffit pas, il faut CONCOURANTS (ou tous parallèles). Contre-exemple exécuté jusqu'au bout : avec D₁ : y = 0, D₂ : x = 0 et D₃ : y = x + 2, trois droites deux à deux sécantes mais non concourantes, la composée S₁∘S₂∘S₃ envoie M(x, y) sur (2 − y ; −x − 2). Un point fixe exigerait à la fois y = 2 − x et y = −x − 2, c'est-à-dire 2 = −2 : elle n'a aucun point fixe, alors qu'une symétrie orthogonale en a toute une droite — ce n'en est donc pas une (c'est une symétrie glissante, puisque la composée avec elle-même vaut t_(4 ; −4)). Le piège courant est justement là : retenir de l'exercice résolu le mot « sécantes » au lieu de « concourantes », deux conditions qui coïncident pour deux droites mais divergent pour trois.",
+      "difficulty": 3
+    }
+  ]
+}

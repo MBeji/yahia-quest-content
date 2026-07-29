@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec les isométries",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Dans un repère orthonormé, laquelle de ces applications du plan dans lui-même n'est **pas** une isométrie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "l'application qui à M(x, y) associe M′(x, −y)"
+        },
+        {
+          "id": "b",
+          "text": "l'application qui à M(x, y) associe M′(x + 3, y − 1)"
+        },
+        {
+          "id": "c",
+          "text": "l'application qui à M(x, y) associe M′(2x, 2y)"
+        },
+        {
+          "id": "d",
+          "text": "l'application qui à M(x, y) associe M′(−y, x)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Il suffit de tester la conservation des distances sur deux points. Pour l'option c, prenons M(0, 0) et N(1, 0) : leurs images sont M′(0, 0) et N′(2, 0), donc M′N′ = 2 alors que MN = 1. Toutes les longueurs sont doublées : ce n'est pas une isométrie ✓. Les trois autres en sont : a est la symétrie orthogonale d'axe (Ox), b la translation de vecteur (3 ; −1) et d la rotation de centre O et d'angle π/2 ; sur le même couple de points, chacune donne bien M′N′ = 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit S la symétrie orthogonale d'axe (Ox). Quelle est l'image du point M(3, −5) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−3, −5)"
+        },
+        {
+          "id": "b",
+          "text": "(−3, 5)"
+        },
+        {
+          "id": "c",
+          "text": "(3, 5)"
+        },
+        {
+          "id": "d",
+          "text": "(5, 3)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La symétrie d'axe (Ox) laisse l'abscisse inchangée et change le signe de l'ordonnée : M(3, −5) a pour image M′(3, 5) ✓. Contrôle : le milieu de [MM′] est (3, 0), qui appartient bien à l'axe, et la droite (MM′) est verticale, donc perpendiculaire à (Ox). L'option a applique la symétrie d'axe (Oy), qui change l'abscisse. L'option b change les deux signes : c'est la symétrie centrale de centre O. L'option d échange les coordonnées : c'est la symétrie d'axe y = x.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit t la translation de vecteur u⃗ = (2 ; −7). Quelle est sa réciproque t⁻¹ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "la translation de vecteur (−2 ; 7)"
+        },
+        {
+          "id": "b",
+          "text": "la translation de vecteur (−2 ; −7)"
+        },
+        {
+          "id": "c",
+          "text": "la translation de vecteur (2 ; −7)"
+        },
+        {
+          "id": "d",
+          "text": "la symétrie centrale de centre O"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La réciproque de la translation de vecteur u⃗ est la translation de vecteur −u⃗ : ici −u⃗ = (−2 ; 7) ✓. Contrôle sur M(0, 0) : t(M) = (2, −7), puis la translation de vecteur (−2 ; 7) le ramène en (0, 0), donc la composée est l'identité ✓. L'option c affirme que t est sa propre réciproque, ce qui n'est vrai que pour les symétries, jamais pour une translation de vecteur non nul. L'option b ne change le signe que de la première coordonnée. L'option d ne dépend d'aucun vecteur et ne peut donc pas défaire t.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur la figure, D et D′ sont deux droites sécantes en I, de vecteurs directeurs respectifs u⃗ et u′⃗ tels que (u⃗, u′⃗) ≡ π/4 [2π]. On pose M′ = S_D(M) puis M″ = S_D′(M′). Que peut-on affirmer ?\n<svg viewBox=\"0 0 320 220\">\n<title>Deux droites sécantes en I et leurs vecteurs directeurs</title>\n<path d=\"M25 120 H295\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M82.2 197.8 L237.8 42.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M200 120 A 40 40 0 0 0 188.28 91.72\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"1.8\"/><g stroke=\"#0f6e56\" stroke-width=\"2.4\" fill=\"none\"><path d=\"M160 120 L213 120\"/><path d=\"M160 120 L197.5 82.5\"/></g><g fill=\"#0f6e56\"><path d=\"M213 114 L225 120 L213 126 Z\"/><path d=\"M201.7 86.7 L206 74 L193.3 78.3 Z\"/></g><g fill=\"#0f172a\"><circle cx=\"160\" cy=\"120\" r=\"4\"/><circle cx=\"95\" cy=\"62\" r=\"4\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"152\" y=\"137\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"85\" y=\"54\" text-anchor=\"middle\" fill=\"#0f172a\">M</text><text x=\"305\" y=\"116\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"252\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">D′</text><text x=\"224\" y=\"140\" text-anchor=\"middle\" fill=\"#0f6e56\">u</text><text x=\"183\" y=\"62\" text-anchor=\"middle\" fill=\"#0f6e56\">u′</text><text x=\"212\" y=\"106\" text-anchor=\"middle\" fill=\"#b45309\">π/4</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "IM″ = IM et (IM⃗, IM″⃗) ≡ π/4 [2π]"
+        },
+        {
+          "id": "b",
+          "text": "IM″ = IM et (IM⃗, IM″⃗) ≡ π/2 [2π]"
+        },
+        {
+          "id": "c",
+          "text": "IM″ = 2IM et (IM⃗, IM″⃗) ≡ π/2 [2π]"
+        },
+        {
+          "id": "d",
+          "text": "M″ est le symétrique de M par rapport à I"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme I appartient à D, la symétrie S_D le fixe et conserve les distances, donc IM′ = IM ; de même I appartient à D′, donc IM″ = IM′, d'où IM″ = IM : le point tourne autour de I sans s'en éloigner ✓. Pour l'angle, le cours donne (IM⃗, IM″⃗) ≡ 2(u⃗, u′⃗) ≡ 2 × π/4 ≡ π/2 [2π] ✓ : la composée S_D′∘S_D est la rotation de centre I et d'angle π/2. L'option a garde l'angle des axes sans le doubler, c'est le piège classique. L'option c fait grandir la distance, ce qu'aucune isométrie ne permet. L'option d correspondrait à un angle π, donc à des axes perpendiculaires.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé, D est l'axe des ordonnées et D′ la droite d'équation x = 5. Quelle est l'image du point M(1, 3) par S_D′∘S_D ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−9, 3)"
+        },
+        {
+          "id": "b",
+          "text": "(1, 3)"
+        },
+        {
+          "id": "c",
+          "text": "(6, 3)"
+        },
+        {
+          "id": "d",
+          "text": "(11, 3)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On applique les deux symétries dans l'ordre. S_D, d'axe (Oy), envoie M(1, 3) sur (−1, 3) ; puis S_D′, d'axe x = 5, envoie (−1, 3) sur (10 − (−1) ; 3) = (11, 3) ✓. Contrôle par le théorème : les axes sont parallèles, I(0, 0) appartient à D et son projeté orthogonal sur D′ est J(5, 0), donc la composée est la translation de vecteur 2IJ⃗ = (10 ; 0), et 1 + 10 = 11 ✓. L'option c n'utilise que IJ⃗ = (5 ; 0) et oublie le facteur 2. L'option a est le résultat de S_D∘S_D′, l'ordre inverse. L'option b suppose que les deux symétries s'annulent, ce qui n'arrive que si les axes sont confondus.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f une isométrie du plan dont l'ensemble des points fixes est réduit au seul point I. D'après le tableau de classification, f est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "l'identité du plan"
+        },
+        {
+          "id": "b",
+          "text": "la symétrie orthogonale d'un axe passant par I"
+        },
+        {
+          "id": "c",
+          "text": "une translation de vecteur non nul"
+        },
+        {
+          "id": "d",
+          "text": "une rotation de centre I et d'angle non nul"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le théorème du cours conclut directement : une isométrie qui fixe un unique point I est une rotation de centre I et d'angle non nul ✓. C'est ainsi que se lit le tableau de classification, des points fixes vers la nature de l'isométrie. L'option b est fausse car une symétrie orthogonale fixe TOUS les points de son axe, donc une droite entière et pas un point isolé. L'option c est fausse car une translation de vecteur non nul ne fixe aucun point. L'option a est fausse car l'identité fixe le plan tout entier.",
+      "difficulty": 2
+    }
+  ]
+}

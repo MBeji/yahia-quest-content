@@ -1,0 +1,148 @@
+{
+  "title": "🌀 Histoire ⭐⭐⭐ : Le Royaume des Deux Sens",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 6,
+  "questions": [
+    {
+      "prompt": "Épisode 1 — Au Royaume des Deux Sens, toute porte transforme le plan, et l'on ne franchit celle-ci qu'en sachant si elle garde le sens du monde ou le renverse. Le Veilleur de la Première Porte trace au sol, dans un repère orthonormé direct, le fanion triangulaire A(0 ; 0), B(2 ; 0), C(0 ; 1), puis son image par la transformation f qui garde la porte : A′(1 ; 3), B′(1 ; 5), C′(2 ; 3). « Dis-moi ce qu'est f, et prouve-le », ordonne-t-il. <svg viewBox=\"0 0 190 220\"><g stroke=\"#e2e8f0\" stroke-width=\"1\" fill=\"none\"><path d=\"M85 40 V190 M115 40 V190 M145 40 V190 M55 160 H145 M55 130 H145 M55 100 H145 M55 70 H145 M55 40 H145\"/></g><path d=\"M35 190 H175\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M175 190 l-8 -4 l0 8 z\" fill=\"#0f172a\"/><path d=\"M55 210 V30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M55 30 l-4 8 l8 0 z\" fill=\"#0f172a\"/><path d=\"M55 190 L115 190 L55 160 Z\" fill=\"#0f172a\" opacity=\"0.10\"/><path d=\"M55 190 L115 190 L55 160 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M85 100 L85 40 L115 100 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M85 100 L85 40 L115 100 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M81 185 L87 190 L81 195 Z\" fill=\"#0f172a\"/><path d=\"M80 74 L90 74 L85 66 Z\" fill=\"#0f6e56\"/><g fill=\"#0f172a\"><circle cx=\"55\" cy=\"190\" r=\"4\"/><circle cx=\"115\" cy=\"190\" r=\"4\"/><circle cx=\"55\" cy=\"160\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"85\" cy=\"100\" r=\"4\"/><circle cx=\"85\" cy=\"40\" r=\"4\"/><circle cx=\"115\" cy=\"100\" r=\"4\"/></g><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"49\" y=\"204\" text-anchor=\"end\" fill=\"#0f172a\">A</text><text x=\"121\" y=\"204\" fill=\"#0f172a\">B</text><text x=\"49\" y=\"156\" text-anchor=\"end\" fill=\"#0f172a\">C</text><text x=\"76\" y=\"96\" text-anchor=\"end\" fill=\"#0f6e56\">A′</text><text x=\"76\" y=\"36\" text-anchor=\"end\" fill=\"#0f6e56\">B′</text><text x=\"124\" y=\"96\" fill=\"#0f6e56\">C′</text><text x=\"85\" y=\"204\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"49\" y=\"164\" text-anchor=\"end\" fill=\"#0f172a\">1</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est un antidéplacement : l'angle orienté (AB⃗ ; AC⃗) ≡ π/2 devient (A′B′⃗ ; A′C′⃗) ≡ −π/2 [2π]"
+        },
+        {
+          "id": "b",
+          "text": "f est un déplacement : les trois côtés du fanion ont conservé leurs longueurs"
+        },
+        {
+          "id": "c",
+          "text": "f n'est pas une isométrie, puisque le fanion a changé de sens de parcours"
+        },
+        {
+          "id": "d",
+          "text": "f est un antidéplacement, donc c'est une symétrie orthogonale : tout antidéplacement possède un axe de points fixes"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux vérifications, dans cet ordre, et le Veilleur s'écarte. Premièrement, f est bien une ISOMÉTRIE : AB = 2 et A′B′ = |(1 − 1 ; 5 − 3)| = |(0 ; 2)| = 2 ✓ ; AC = 1 et A′C′ = |(2 − 1 ; 3 − 3)| = 1 ✓ ; BC = |(0 − 2 ; 1 − 0)| = √5 et B′C′ = |(2 − 1 ; 3 − 5)| = |(1 ; −2)| = √5 ✓. Les trois longueurs sont conservées. Deuxièmement, le SENS. Au départ : AB⃗ = (2 ; 0) pointe dans la direction 0, AC⃗ = (0 ; 1) dans la direction π/2, donc (AB⃗ ; AC⃗) ≡ π/2 [2π] — le fanion est direct. À l'arrivée : A′B′⃗ = (0 ; 2) pointe dans la direction π/2, A′C′⃗ = (1 ; 0) dans la direction 0, donc (A′B′⃗ ; A′C′⃗) ≡ 0 − π/2 ≡ −π/2 [2π]. La mesure de l'angle orienté est passée à son OPPOSÉE : par définition, f est un antidéplacement ✓. Les chevrons de la figure disent la même chose sans un seul calcul : le parcours A → B → C tourne dans le sens direct, le parcours A′ → B′ → C′ tourne dans l'autre. Sur l'affirmation écartée la plus tentante, « f est un déplacement car les longueurs sont conservées » : c'est confondre isométrie et déplacement. TOUTE isométrie conserve les longueurs — c'est sa définition —, y compris les symétries orthogonales et les symétries glissantes, qui sont des antidéplacements. Les longueurs ne disent donc rigoureusement rien sur l'orientation ; seul le SIGNE d'un angle orienté la trahit. Retiens la hiérarchie : isométrie = conserve les distances ; déplacement = isométrie qui conserve en plus les angles orientés ; antidéplacement = isométrie qui les change en leurs opposés. « f n'est pas une isométrie » se trompe de raison : changer le sens n'a jamais empêché de conserver les distances, et les trois calculs ci-dessus le prouvent. Le miroir de la salle de bain est une isométrie, et il retourne pourtant tout ce qu'il reflète. La dernière affirmation démarre bien — f est un antidéplacement — puis conclut trop vite. Le cours distingue DEUX espèces d'antidéplacements : la symétrie orthogonale, qui fixe toute une droite, et la symétrie glissante, qui ne fixe AUCUN point. Ici f n'a aucun point fixe : le milieu de [AA′] vaut (0,5 ; 1,5) et celui de [BB′] vaut (1,5 ; 2,5), or pour une symétrie orthogonale ces deux milieux devraient être sur l'axe ET les segments [AA′], [BB′] devraient lui être perpendiculaires — ce qui n'est pas le cas, AA′⃗ = (1 ; 3) et BB′⃗ = (−1 ; 5) n'étant même pas colinéaires. C'est donc une symétrie glissante ; la porte suivante le démontrera.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Épisode 2 — La Deuxième Porte ne s'ouvre pas sur un nom, mais sur des mesures. Le Veilleur reprend la même transformation f, celle qui envoie, dans le repère orthonormé direct, A(0 ; 0) sur A′(1 ; 3), B(2 ; 0) sur B′(1 ; 5) et C(0 ; 1) sur C′(2 ; 3). Il a déjà été établi que f est un antidéplacement sans aucun point fixe, donc une symétrie glissante. « Son axe et son vecteur, voyageur. Rien de moins. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "Axe : la droite d'équation y = x + 1 ; vecteur : u⃗(2 ; 2)"
+        },
+        {
+          "id": "b",
+          "text": "Axe : la droite d'équation y = x + 1 ; vecteur : u⃗(4 ; 4)"
+        },
+        {
+          "id": "c",
+          "text": "Axe : la droite d'équation y = x + 1 ; vecteur : u⃗(1 ; 3), c'est-à-dire AA′⃗"
+        },
+        {
+          "id": "d",
+          "text": "Axe : la médiatrice du segment [AA′] ; vecteur : u⃗(2 ; 2)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le plus efficace est de passer par l'écriture complexe, puis de revenir à la géométrie. Un antidéplacement s'écrit z′ = a·z̄ + b avec |a| = 1 (la barre de conjugaison est la signature du renversement d'orientation). De f(A) = A′ on tire, avec z_A = 0 : b = 1 + 3i. De f(B) = B′ avec z_B = 2 : 2a + 1 + 3i = 1 + 5i, donc 2a = 2i et a = i, de module 1 ✓. Donc f : z′ = i·z̄ + 1 + 3i. Contrôle sur le troisième point, jamais facultatif : z_C = i, donc z′ = i·(−i) + 1 + 3i = 1 + 1 + 3i = 2 + 3i, c'est-à-dire C′(2 ; 3) ✓. Le VECTEUR se lit sur le carré, d'après la propriété f∘f = t_(2u⃗). Calculons : f∘f(z) = i·conj(i·z̄ + 1 + 3i) + 1 + 3i = i·(−i·z + 1 − 3i) + 1 + 3i = z + i + 3 + 1 + 3i = z + 4 + 4i. Donc f∘f est la translation de vecteur (4 ; 4) = 2u⃗, d'où u⃗ = (2 ; 2) ✓. L'AXE se lit sur les milieux, d'après la propriété « le milieu de [M f(M)] appartient à l'axe ». Milieu de [AA′] : (0,5 ; 1,5). Milieu de [BB′] : (1,5 ; 2,5). Milieu de [CC′] : (1 ; 2). Ces trois points sont alignés sur une droite de coefficient directeur (2,5 − 1,5)/(1,5 − 0,5) = 1, passant par (1 ; 2) : son équation est y − 2 = 1 × (x − 1), soit y = x + 1 ✓. Dernière vérification, celle qui valide la forme réduite : u⃗(2 ; 2) doit DIRIGER l'axe, et la droite y = x + 1 a pour vecteur directeur (1 ; 1), colinéaire à u⃗ ✓. Contrôle final en repassant par la définition : la symétrie orthogonale d'axe y = x + 1 envoie (x ; y) sur (y − 1 ; x + 1) ; pour A(0 ; 0) elle donne (−1 ; 1), puis la translation de vecteur (2 ; 2) donne (1 ; 3) = A′ ✓ ; pour B(2 ; 0) elle donne (−1 ; 3), puis (1 ; 5) = B′ ✓. Le vecteur (4 ; 4) est celui de f∘f : c'est l'erreur de la moitié oubliée. Un rouleau qui avance de (4 ; 4) en deux passages avance de (2 ; 2) par passage — la règle f∘f = t_(2u⃗) impose la division. Le vecteur AA′⃗ = (1 ; 3) est le déplacement d'UN point particulier, et non le vecteur de la forme réduite : ces deux-là ne coïncident que lorsque le point choisi appartient déjà à l'axe, ce qui n'est pas le cas de A (0 ≠ 0 + 1). D'ailleurs (1 ; 3) ne dirige pas la droite y = x + 1, ce qui l'exclut immédiatement. Enfin la médiatrice de [AA′] a pour vecteur directeur un vecteur orthogonal à AA′⃗ = (1 ; 3), donc de coefficient directeur −1/3 : elle n'est pas dirigée par u⃗(2 ; 2), et un couple (axe, vecteur) dont le vecteur ne dirige pas l'axe n'est jamais une forme réduite.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 3 — La Salle du Serment. Deux gardes se font face. « Soit I et J deux points DISTINCTS du royaume, énonce le premier. Soit f un déplacement qui envoie I sur J, et g un antidéplacement qui envoie J sur I. Alors g∘f est une symétrie glissante. » Le second garde secoue la tête. Qui a raison, et pour quelle raison exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faux : g∘f est un antidéplacement qui FIXE le point I, c'est donc une symétrie orthogonale, dont l'axe passe par I"
+        },
+        {
+          "id": "b",
+          "text": "Vrai : g∘f est un antidéplacement, et un antidéplacement obtenu par composition est toujours une symétrie glissante"
+        },
+        {
+          "id": "c",
+          "text": "Faux : g∘f est un déplacement, car composer un déplacement et un antidéplacement rétablit l'orientation"
+        },
+        {
+          "id": "d",
+          "text": "Vrai : g∘f fixe I, et une symétrie glissante admet des points fixes dès qu'ils appartiennent à son axe"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le second garde a raison : l'affirmation est FAUSSE, et deux lignes suffisent à la renverser. Première ligne, la nature. La règle des signes du cours attribue +1 à un déplacement et −1 à un antidéplacement, la nature d'une composée étant le produit : ici (−1) × (+1) = −1, donc g∘f est un ANTIDÉPLACEMENT. Jusque-là l'affirmation tient. Deuxième ligne, le point fixe — c'est elle qui tue l'énoncé. Par définition de la composition, g∘f signifie « f d'abord, g ensuite ». On calcule donc g∘f(I) = g(f(I)) = g(J) = I : le point I est FIXE ✓. Or le cours ne laisse aucune latitude : un antidéplacement qui possède un point fixe est une SYMÉTRIE ORTHOGONALE, et l'axe de cette symétrie passe nécessairement par ce point fixe. La symétrie glissante, elle, se définit précisément par l'absence totale de point fixe. La conclusion est donc l'inverse de celle du premier garde : g∘f est la symétrie orthogonale d'un axe passant par I ✓. Contrôle sur un exemple entièrement chiffré, pour ne rien laisser au doute : prenons I(0 ; 0) et J(1 ; 0). Soit f la translation de vecteur (1 ; 0), qui est un déplacement envoyant I sur J ; soit g la symétrie orthogonale d'axe la droite d'équation x = 1/2, qui est un antidéplacement envoyant J(1 ; 0) sur (0 ; 0) = I ✓. Alors g∘f(x ; y) = g(x + 1 ; y) = (1 − (x + 1) ; y) = (−x ; y) : c'est la symétrie orthogonale d'axe (Oy), qui passe bien par I(0 ; 0) ✓, et ce n'est pas une symétrie glissante. L'affirmation « un antidéplacement obtenu par composition est toujours une symétrie glissante » ignore qu'il n'existe QUE deux espèces d'antidéplacements et que c'est l'existence d'un point fixe qui les sépare — la composition n'y change rien, une symétrie orthogonale est elle aussi une composée (par exemple S∘Id). L'affirmation « g∘f est un déplacement » se trompe de règle : dép∘antidép = antidép, et non l'inverse ; il faut DEUX antidéplacements pour rétablir l'orientation, puisque (−1) × (−1) = +1. Enfin la dernière affirmation prête à la symétrie glissante des points fixes sur son axe : c'est exactement ce qu'elle n'a pas. Sur son axe, la symétrie ne fait rien et la transformation se réduit à la translation de vecteur u⃗ ≠ 0⃗, qui déplace tout point. Une symétrie glissante n'a aucun point fixe, nulle part.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 4 — La Cour des Six Bras. Au sol est incrustée une rosace à six bras rigoureusement identiques, régulièrement disposés autour du point O ; chaque bras se termine par un crochet, et tous les crochets s'enroulent dans le même sens. « Un intrus a voulu recopier la rosace en la retournant, dit le Veilleur. Il a échoué. Dis-moi pourquoi. » Quelle affirmation décrit exactement les isométries qui laissent cette rosace globalement invariante ? <svg viewBox=\"0 0 300 260\"><g fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M150 130 L150 50 L111 63\"/><path d=\"M150 130 L81 90 L72 130\"/><path d=\"M150 130 L81 170 L111 198\"/><path d=\"M150 130 L150 210 L189 198\"/><path d=\"M150 130 L219 170 L228 130\"/><path d=\"M150 130 L219 90 L189 63\"/></g><g fill=\"#0f6e56\"><circle cx=\"111\" cy=\"63\" r=\"5\"/><circle cx=\"72\" cy=\"130\" r=\"5\"/><circle cx=\"111\" cy=\"198\" r=\"5\"/><circle cx=\"189\" cy=\"198\" r=\"5\"/><circle cx=\"228\" cy=\"130\" r=\"5\"/><circle cx=\"189\" cy=\"63\" r=\"5\"/></g><circle cx=\"150\" cy=\"130\" r=\"5\" fill=\"#0f172a\"/><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"142\" y=\"149\" text-anchor=\"end\" fill=\"#0f172a\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exactement six isométries, toutes des DÉPLACEMENTS : les rotations de centre O et d'angles 2kπ/6, k allant de 0 à 5 (dont l'identité). La rosace n'admet aucun antidéplacement."
+        },
+        {
+          "id": "b",
+          "text": "Douze isométries : six rotations de centre O et six symétries orthogonales d'axes passant par O"
+        },
+        {
+          "id": "c",
+          "text": "Deux isométries seulement : l'identité et la symétrie centrale de centre O"
+        },
+        {
+          "id": "d",
+          "text": "Une infinité : toutes les rotations de centre O, quel que soit leur angle"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Il faut raisonner en deux temps, et le second est celui que la question vise. Premier temps, les DÉPLACEMENTS. Une isométrie qui laisse la rosace invariante permute ses six bras, donc elle fixe O — le seul point commun à tous les bras. Une isométrie qui fixe O est l'identité, une rotation de centre O, ou une symétrie orthogonale d'axe passant par O. Les six bras se partageant équitablement le tour, l'angle entre deux bras consécutifs vaut 2π/6 = π/3 ; la rotation de centre O et d'angle π/3 envoie chaque bras sur le suivant, crochet compris, puisque tous les crochets s'enroulent dans le même sens et qu'une rotation CONSERVE ce sens ✓. Ses puissances donnent les angles 0, π/3, 2π/3, π, 4π/3 et 5π/3, soit six rotations en tout (l'identité comprise), et aucune autre : un angle intermédiaire enverrait un bras dans un intervalle vide. Second temps, les ANTIDÉPLACEMENTS — et c'est là que l'intrus a échoué. Une symétrie orthogonale d'axe passant par O renverse les mesures des angles orientés. Or chaque bras est CHIRAL : son crochet s'enroule dans le sens direct. Après une symétrie, le crochet s'enroulerait dans le sens indirect, et la figure image ne serait superposable à AUCUN bras de la rosace, quel que soit l'axe choisi ✓. La rosace n'admet donc aucun antidéplacement : ses seules isométries invariantes sont les six rotations, toutes des déplacements ✓. C'est la leçon du chapitre appliquée à une figure : une figure peut être très symétrique au sens des rotations et n'avoir aucun axe de symétrie, parce que son motif élémentaire a un SENS. Une main, une hélice, un escalier en colimaçon, la lettre S : aucun miroir ne les superpose à elles-mêmes. La réponse « douze isométries » est celle qui vaudrait pour un hexagone régulier, ou pour une rosace dont chaque bras serait un simple segment — c'est-à-dire lui-même symétrique. Elle ajoute six symétries orthogonales que le crochet interdit : il suffit d'en tester une pour le voir, le crochet part alors du mauvais côté. La réponse « deux isométries » ne retient que l'identité et le demi-tour ; elle oublie que six bras autorisent un pas de π/3, et non seulement de π. La réponse « une infinité » vaudrait pour un CERCLE ou une couronne circulaire, invariants par toute rotation de leur centre ; six bras ne laissent que six positions superposables.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Épisode 5 — Le Corridor des Deux Rouleaux. Deux mécanismes se succèdent le long du couloir, dans un repère orthonormé direct. Le premier, f, est la symétrie glissante d'axe l'axe des abscisses et de vecteur (2 ; 0). Le second, g, est la symétrie glissante d'axe la droite d'équation y = 1 et de vecteur (1 ; 0). « Le voyageur subit f, puis g, murmure le Veilleur. Identifie g∘f — et prends garde, l'ordre compte. »",
+      "options": [
+        { "id": "a", "text": "La translation de vecteur v⃗(3 ; 2)" },
+        { "id": "b", "text": "La translation de vecteur v⃗(3 ; −2)" },
+        {
+          "id": "c",
+          "text": "La symétrie glissante d'axe la droite d'équation y = 1 et de vecteur (3 ; 0)"
+        },
+        {
+          "id": "d",
+          "text": "Un antidéplacement, puisque f et g en sont tous les deux"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La règle des signes donne la nature avant tout calcul : antidéplacement ∘ antidéplacement = déplacement, soit (−1) × (−1) = +1. Le voyageur ressort donc à l'endroit, et g∘f est un déplacement ✓ — c'est exactement ce qu'affirme le cours, et c'est déjà de quoi écarter une réponse. Reste à identifier lequel. On écrit les deux expressions analytiques. La symétrie d'axe (Ox) envoie (x ; y) sur (x ; −y), donc f(x ; y) = (x + 2 ; −y). La symétrie d'axe y = 1 envoie (x ; y) sur (x ; 2 − y), donc g(x ; y) = (x + 1 ; 2 − y). On compose dans l'ordre imposé — f d'abord, g ensuite : g∘f(x ; y) = g(x + 2 ; −y) = (x + 2 + 1 ; 2 − (−y)) = (x + 3 ; y + 2). C'est l'application qui ajoute (3 ; 2) à tout point : la TRANSLATION de vecteur v⃗(3 ; 2) ✓. Contrôle sur deux points, comme toujours. Pour O(0 ; 0) : f(O) = (2 ; 0), puis g(2 ; 0) = (3 ; 2) ✓, et 0 + 3 = 3, 0 + 2 = 2 ✓. Pour M(1 ; 4) : f(M) = (3 ; −4), puis g(3 ; −4) = (4 ; 6) ✓, et (1 + 3 ; 4 + 2) = (4 ; 6) ✓. Contrôle par l'angle : g∘f est un déplacement dont l'angle vaut la somme des angles ; on peut aussi remarquer que les deux axes sont PARALLÈLES (tous deux horizontaux), et que la composée de deux symétries d'axes parallèles est toujours une translation — les glissements, eux aussi horizontaux, ne font que s'ajouter. Le cas des axes sécants donnerait une rotation. La translation de vecteur (3 ; −2) est le résultat de l'ordre INVERSE, et c'est le piège annoncé : f∘g(x ; y) = f(x + 1 ; 2 − y) = (x + 3 ; y − 2). Les deux composées ont le même « pas » horizontal mais des composantes verticales opposées : la composition n'est pas commutative, et f∘g ≠ g∘f dès que les deux axes sont distincts. Retiens le sens de lecture : g∘f veut dire f d'abord. La symétrie glissante d'axe y = 1 et de vecteur (3 ; 0) est écartée d'un mot par la règle des signes : ce serait un antidéplacement, alors que g∘f conserve l'orientation. Le calcul le confirme, elle enverrait O(0 ; 0) sur (3 ; 2)… même image que la bonne réponse ! Mais elle enverrait M(1 ; 4) sur (4 ; −2) au lieu de (4 ; 6) — un point ne suffit jamais. Enfin « un antidéplacement, puisque f et g en sont » applique la règle à l'envers : c'est justement parce que les deux facteurs renversent l'orientation que la composée la rétablit, comme deux miroirs face à face rendent l'écriture lisible.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 6 — La Salle du Trône. « Une dernière porte, voyageur. » Dans le plan complexe rapporté à un repère orthonormé direct, f est l'isométrie d'écriture complexe z′ = i·z̄ + 1 + 3i — celle de la première porte —, et g est la rotation de centre O, l'origine, et d'angle π/2, d'écriture z′ = i·z. « Identifie h = g∘f, avec ses éléments caractéristiques, et le royaume est à toi. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "h est la symétrie glissante d'axe la droite d'équation x = −3/2 et de vecteur u⃗(0 ; 1)"
+        },
+        {
+          "id": "b",
+          "text": "h est la symétrie glissante d'axe la droite d'équation x = −3/2 et de vecteur u⃗(0 ; 2)"
+        },
+        {
+          "id": "c",
+          "text": "h est la symétrie orthogonale d'axe la droite d'équation x = −3/2"
+        },
+        {
+          "id": "d",
+          "text": "h est la symétrie glissante d'axe la droite d'équation y = x + 1, l'axe de f, et de vecteur u⃗(0 ; 1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Étape 1, la nature, par la règle des signes : f est un antidéplacement (sa barre de conjugaison le dit), g est un déplacement (une rotation), donc h = g∘f est un ANTIDÉPLACEMENT ✓, soit (+1) × (−1) = −1. Étape 2, l'écriture complexe, en composant dans l'ordre — f d'abord, g ensuite : h(z) = i·(i·z̄ + 1 + 3i) = i²·z̄ + i + 3i² = −z̄ + i − 3 = −z̄ − 3 + i. Le coefficient de z̄ vaut −1, de module 1 ✓ : c'est bien une isométrie, et la barre confirme l'antidéplacement. Étape 3, la traduction en coordonnées, indispensable pour la suite. Avec z = x + iy, on a z̄ = x − iy, donc −z̄ = −x + iy et h(z) = (−x − 3) + i(y + 1), c'est-à-dire h(x ; y) = (−x − 3 ; y + 1). Étape 4, les points fixes. Il faudrait x = −x − 3, soit x = −3/2, ET y = y + 1, ce qui est impossible. h n'a AUCUN point fixe : ce n'est pas une symétrie orthogonale, c'est une SYMÉTRIE GLISSANTE ✓. Étape 5, les éléments caractéristiques. Le vecteur par le carré : h∘h(x ; y) = h(−x − 3 ; y + 1) = (−(−x − 3) − 3 ; y + 2) = (x ; y + 2), donc h∘h = t_((0 ; 2)) = t_(2u⃗) et u⃗ = (0 ; 1) ✓. L'axe par les milieux : le milieu de [M h(M)] vaut ((x + (−x − 3))/2 ; (y + y + 1)/2) = (−3/2 ; y + 1/2). Son abscisse vaut −3/2 quel que soit M : l'axe est la droite verticale d'équation x = −3/2 ✓. Vérification de cohérence, celle qui clôt toute forme réduite : u⃗(0 ; 1) doit diriger l'axe, et une droite verticale est bien dirigée par (0 ; 1) ✓. Contrôle sur un point de l'axe, où le glissement se lit directement : E(−3/2 ; 0) donne h(E) = (3/2 − 3 ; 1) = (−3/2 ; 1), d'où E h(E)⃗ = (0 ; 1) = u⃗ ✓. Le vecteur (0 ; 2) est celui de h∘h : c'est la moitié oubliée, et il enverrait le point E sur (−3/2 ; 2) au lieu de (−3/2 ; 1). La règle h∘h = t_(2u⃗) impose de diviser par deux, toujours. La symétrie orthogonale d'axe x = −3/2 a le bon axe mais aucun glissement : elle envoie (x ; y) sur (−x − 3 ; y), donc elle laisserait l'ordonnée intacte, alors que h l'augmente de 1. Elle fixerait toute une droite, or h ne fixe rien. La dernière proposition conserve l'axe de f : composer avec une rotation n'a aucune raison de laisser l'axe en place, et le couple proposé est même incohérent — le vecteur (0 ; 1) ne dirige pas la droite y = x + 1, dont un vecteur directeur est (1 ; 1), alors qu'une forme réduite exige un vecteur directeur de son axe. Le calcul tranche de toute façon : h(0 ; 1) = (−3 ; 2), et le milieu du segment joignant (0 ; 1) à (−3 ; 2) vaut (−3/2 ; 3/2), qui n'appartient pas à la droite y = x + 1.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "title": "🧩 Mission interactive ⭐⭐ : L'Atelier des Mosaïstes",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "QCM visuel — l'atelier prépare une frise de mosaïque. Le maître a posé le motif triangulaire ABC, puis sa copie A′B′C′, dans un repère orthonormé gradué en unités de carreau. Quelle isométrie envoie ABC sur A′B′C′ ? <svg viewBox=\"0 0 300 260\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M69 61 V205 M93 61 V205 M117 61 V205 M141 61 V205 M165 61 V205 M189 61 V205 M213 61 V205 M237 61 V205 M261 61 V205 M285 61 V205 M45 181 H285 M45 157 H285 M45 133 H285 M45 109 H285 M45 85 H285 M45 61 H285\"/></g><path d=\"M28 205 H293\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M293 205 l-8 -4 l0 8 z\" fill=\"#0f172a\"/><path d=\"M45 232 V50\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M45 50 l-4 8 l8 0 z\" fill=\"#0f172a\"/><path d=\"M69 181 L117 181 L69 133 Z\" fill=\"#0f172a\" opacity=\"0.10\"/><path d=\"M69 181 L117 181 L69 133 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M165 133 L213 133 L165 85 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M165 133 L213 133 L165 85 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><g stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-dasharray=\"5 4\" fill=\"none\"><path d=\"M69 181 L165 133\"/><path d=\"M117 181 L213 133\"/><path d=\"M69 133 L165 85\"/></g><g fill=\"#0f172a\"><circle cx=\"69\" cy=\"181\" r=\"4\"/><circle cx=\"117\" cy=\"181\" r=\"4\"/><circle cx=\"69\" cy=\"133\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"165\" cy=\"133\" r=\"4\"/><circle cx=\"213\" cy=\"133\" r=\"4\"/><circle cx=\"165\" cy=\"85\" r=\"4\"/></g><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"63\" y=\"195\" text-anchor=\"end\" fill=\"#0f172a\">A</text><text x=\"123\" y=\"195\" fill=\"#0f172a\">B</text><text x=\"63\" y=\"129\" text-anchor=\"end\" fill=\"#0f172a\">C</text><text x=\"159\" y=\"147\" text-anchor=\"end\" fill=\"#0f6e56\">A′</text><text x=\"219\" y=\"147\" fill=\"#0f6e56\">B′</text><text x=\"159\" y=\"81\" text-anchor=\"end\" fill=\"#0f6e56\">C′</text><text x=\"39\" y=\"219\" text-anchor=\"end\" fill=\"#0f172a\">O</text><text x=\"69\" y=\"219\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"39\" y=\"185\" text-anchor=\"end\" fill=\"#0f172a\">1</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La translation de vecteur u⃗(4 ; 2)"
+        },
+        {
+          "id": "b",
+          "text": "La symétrie centrale de centre Ω(3 ; 2), milieu de [AA′]"
+        },
+        {
+          "id": "c",
+          "text": "La rotation de centre A et d'angle π/2"
+        },
+        {
+          "id": "d",
+          "text": "La symétrie orthogonale d'axe la médiatrice de [AA′]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On lit les six points sur le quadrillage : A(1 ; 1), B(3 ; 1), C(1 ; 3) et A′(5 ; 3), B′(7 ; 3), C′(5 ; 5). Le test décisif est celui des trois vecteurs, et il suffit à lui seul : AA′⃗ = (5 − 1 ; 3 − 1) = (4 ; 2), BB′⃗ = (7 − 3 ; 3 − 1) = (4 ; 2), CC′⃗ = (5 − 1 ; 5 − 3) = (4 ; 2). Les trois vecteurs sont ÉGAUX, donc chaque point subit exactement le même déplacement : c'est la translation de vecteur u⃗(4 ; 2) ✓. Contrôle des longueurs, qui confirme au passage qu'il s'agit bien d'une isométrie : AB = 2 et A′B′ = 7 − 5 = 2 ✓ ; AC = 2 et A′C′ = 5 − 3 = 2 ✓ ; BC = √(4 + 4) = 2√2 et B′C′ = √((5 − 7)² + (5 − 3)²) = 2√2 ✓. Contrôle du sens de rotation : AB⃗ = (2 ; 0) et AC⃗ = (0 ; 2) ; A′B′⃗ = (2 ; 0) et A′C′⃗ = (0 ; 2). Les deux couples sont identiques, donc la figure n'a été ni tournée ni retournée — elle a seulement glissé. La symétrie centrale de centre Ω(3 ; 2) est le piège principal : Ω est bien le milieu de [AA′], mais un centre de symétrie doit être le milieu des TROIS segments à la fois. Or l'image de B(3 ; 1) par S_Ω est (2×3 − 3 ; 2×2 − 1) = (3 ; 3), très loin de B′(7 ; 3). Une symétrie centrale retournerait d'ailleurs le triangle d'un demi-tour, ce que la figure dément. La rotation de centre A et d'angle π/2 laisserait A fixe, alors que la figure montre A′ ≠ A : une rotation ne peut pas déplacer son propre centre. La symétrie orthogonale d'axe la médiatrice de [AA′] enverrait bien A sur A′, mais elle RETOURNE la figure : le couple (A′B′⃗ ; A′C′⃗) changerait de sens, alors qu'il est resté rigoureusement identique. Retiens la règle de lecture : trois vecteurs égaux ⟹ translation ; un point fixe unique ⟹ rotation ; toute une droite fixe ⟹ symétrie orthogonale.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "QCM visuel — le mosaïste a fait pivoter la baguette [AB] d'un quart de tour pour obtenir [A′B′], mais il a oublié où était planté le clou qui servait de pivot. Quatre clous J, P, Q, R sont encore dans la planche. Lequel est le centre de la rotation ? <svg viewBox=\"0 0 300 260\"><g stroke=\"#e2e8f0\" stroke-width=\"1\"><path d=\"M69 61 V205 M93 61 V205 M117 61 V205 M141 61 V205 M165 61 V205 M189 61 V205 M213 61 V205 M237 61 V205 M261 61 V205 M285 61 V205 M45 181 H285 M45 157 H285 M45 133 H285 M45 109 H285 M45 85 H285 M45 61 H285\"/></g><path d=\"M28 205 H293\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M293 205 l-8 -4 l0 8 z\" fill=\"#0f172a\"/><path d=\"M45 232 V50\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M45 50 l-4 8 l8 0 z\" fill=\"#0f172a\"/><g stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\" fill=\"none\"><path d=\"M213 133 V85\"/><path d=\"M165 85 H213\"/></g><path d=\"M213 181 L213 133\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3\"/><path d=\"M165 85 L117 85\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\"/><g fill=\"#0f172a\"><circle cx=\"213\" cy=\"181\" r=\"4.5\"/><circle cx=\"213\" cy=\"133\" r=\"4.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"165\" cy=\"85\" r=\"4.5\"/><circle cx=\"117\" cy=\"85\" r=\"4.5\"/></g><g fill=\"#ffffff\" stroke=\"#b45309\" stroke-width=\"2.2\"><circle cx=\"141\" cy=\"157\" r=\"4.5\"/><circle cx=\"189\" cy=\"133\" r=\"4.5\"/><circle cx=\"165\" cy=\"109\" r=\"4.5\"/><circle cx=\"213\" cy=\"85\" r=\"4.5\"/></g><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"221\" y=\"186\" fill=\"#0f172a\">A</text><text x=\"221\" y=\"138\" fill=\"#0f172a\">B</text><text x=\"171\" y=\"76\" fill=\"#0f6e56\">A′</text><text x=\"117\" y=\"76\" text-anchor=\"middle\" fill=\"#0f6e56\">B′</text><text x=\"135\" y=\"170\" text-anchor=\"end\" fill=\"#b45309\">J</text><text x=\"196\" y=\"128\" fill=\"#b45309\">P</text><text x=\"159\" y=\"104\" text-anchor=\"end\" fill=\"#b45309\">Q</text><text x=\"221\" y=\"80\" fill=\"#b45309\">R</text><text x=\"39\" y=\"219\" text-anchor=\"end\" fill=\"#0f172a\">O</text><text x=\"69\" y=\"219\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"39\" y=\"185\" text-anchor=\"end\" fill=\"#0f172a\">1</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "Le clou J, de coordonnées (4 ; 2)" },
+        { "id": "b", "text": "Le clou P, de coordonnées (6 ; 3), milieu de [AA′]" },
+        { "id": "c", "text": "Le clou Q, de coordonnées (5 ; 4), milieu de [BB′]" },
+        {
+          "id": "d",
+          "text": "Le clou R, de coordonnées (7 ; 5), point d'intersection des droites (AB) et (A′B′)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le centre d'une rotation est un point FIXE : il vérifie donc ΩA = ΩA′ et ΩB = ΩB′ à la fois, puisque la rotation conserve les distances et laisse Ω en place. Autrement dit, il est à l'intersection de la médiatrice de [AA′] et de la médiatrice de [BB′] — c'est exactement le théorème du cours : les points fixes d'une isométrie vivent sur la médiatrice de [AA′]. On lit sur le quadrillage A(7 ; 1), B(7 ; 3), A′(5 ; 5), B′(3 ; 5). Testons J(4 ; 2) : JA = √((7 − 4)² + (1 − 2)²) = √10 et JA′ = √((5 − 4)² + (5 − 2)²) = √10 ✓ ; JB = √(9 + 1) = √10 et JB′ = √(1 + 9) = √10 ✓. J est équidistant des deux couples : c'est le centre ✓. Contrôle de l'angle, qui achève l'identification : JA⃗ = (3 ; −1) et JA′⃗ = (1 ; 3) ; or la rotation d'angle π/2 transforme (x ; y) en (−y ; x), et (3 ; −1) donne bien (1 ; 3) ✓. Le quart de tour est direct, et il envoie de même JB⃗ = (3 ; 1) sur (−1 ; 3) = JB′⃗ ✓. Le clou P(6 ; 3) est le milieu de [AA′] : il est bien sur la médiatrice… du seul segment [AA′], et encore, être le milieu ne suffit pas — il faut être équidistant, ce qu'il est. Mais il échoue sur l'autre couple : PB = 1 alors que PB′ = √(9 + 4) = √13. Un seul segment ne détermine jamais le centre, il en faut deux. Le clou Q(5 ; 4), milieu de [BB′], tombe symétriquement : QA = √(4 + 9) = √13 et QA′ = 1. Le clou R(7 ; 5) est le point d'intersection des deux droites support, un point remarquable de la figure mais sans rapport avec la rotation : RA = 4 et RA′ = 2. Retiens le geste, il vaut pour tout le chapitre : pour trouver un point fixe, on n'observe pas la figure, on écrit deux égalités de distances.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "L'apprenti pose un carreau au point A(3 ; 1) dans le repère orthonormé direct (O, i⃗, j⃗), puis lui applique trois isométries qui laissent toutes le point O en place. Associe chaque isométrie aux coordonnées du carreau image.",
+      "options": [
+        { "id": "l1", "text": "La rotation de centre O et d'angle π/2" },
+        { "id": "l2", "text": "La symétrie orthogonale d'axe (Oy)" },
+        { "id": "l3", "text": "La symétrie centrale de centre O" },
+        { "id": "r1", "text": "(−3 ; 1)" },
+        { "id": "r2", "text": "(−1 ; 3)" },
+        { "id": "r3", "text": "(−3 ; −1)" }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r2"],
+          ["l2", "r1"],
+          ["l3", "r3"]
+        ]
+      },
+      "explanation": "Les trois isométries fixent O, donc les trois images sont à la même distance de O que A : OA = √(3² + 1²) = √10, et l'on vérifie que √(1 + 9) = √(9 + 1) = √(9 + 1) = √10 pour les trois candidats ✓. Le module ne départage donc rien — il faut appliquer chaque transformation. La rotation de centre O et d'angle π/2 transforme M(x ; y) en M′(−y ; x) : le quart de tour direct envoie i⃗ sur j⃗ et j⃗ sur −i⃗. Pour A(3 ; 1) on obtient (−1 ; 3) ✓. Contrôle par l'angle droit : OA⃗ = (3 ; 1) et OA′⃗ = (−1 ; 3) ont pour produit scalaire 3 × (−1) + 1 × 3 = 0, les deux rayons sont bien perpendiculaires ✓. La symétrie orthogonale d'axe (Oy) laisse l'ordonnée intacte et change le signe de l'abscisse : (x ; y) ↦ (−x ; y), donc A ↦ (−3 ; 1) ✓ — le carreau traverse l'axe des ordonnées horizontalement, l'ordonnée 1 ne bouge pas. La symétrie centrale de centre O change les DEUX signes : (x ; y) ↦ (−x ; −y), donc A ↦ (−3 ; −1) ✓ ; O est alors le milieu de [AA′], ce qui se vérifie d'un trait : ((3 − 3)/2 ; (1 − 1)/2) = (0 ; 0) ✓. Les deux confusions que ce tri fait tomber. La première donne (−3 ; 1) à la rotation : c'est oublier que le quart de tour ÉCHANGE les coordonnées avant d'en changer une de signe ; on peut la débusquer en constatant que (−3 ; 1) et (3 ; 1) sont symétriques par rapport à un axe, donc alignés horizontalement, alors qu'un quart de tour doit produire un angle droit en O. La seconde donne (−3 ; −1) à la symétrie d'axe (Oy) : elle change un signe de trop, et c'est en réalité l'image par la symétrie centrale — souviens-toi que la symétrie d'axe (Oy) laisse invariante la coordonnée LUE SUR cet axe, c'est-à-dire l'ordonnée.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le maître découpe un gabarit triangulaire ABC avec A(1 ; 1), B(5 ; 1) et C(5 ; 4) dans un repère orthonormé, l'unité valant un carreau. Il applique au gabarit une isométrie f du plan, dont il refuse de dire laquelle, et obtient le triangle image A′B′C′. Quel est le périmètre du triangle A′B′C′, exprimé en carreaux (valeur exacte) ?",
+      "answerKey": {
+        "value": 12,
+        "unit": "carreaux"
+      },
+      "explanation": "Il ne sert à rien de connaître f : par définition, une isométrie conserve les distances, donc A′B′ = AB, B′C′ = BC et A′C′ = AC. Le périmètre de l'image est égal au périmètre du gabarit — c'est toute la force de la définition du chapitre, et c'est ce que veut tester la question. On calcule donc les trois côtés du triangle de départ : AB = √((5 − 1)² + (1 − 1)²) = 4 (côté horizontal) ; BC = √((5 − 5)² + (4 − 1)²) = 3 (côté vertical) ; AC = √((5 − 1)² + (4 − 1)²) = √(16 + 9) = √25 = 5. Le périmètre vaut 4 + 3 + 5 = 12 carreaux ✓. Contrôle sur une isométrie particulière, pour se convaincre : prenons la rotation de centre O et d'angle π/2, qui envoie (x ; y) sur (−y ; x). Alors A′(−1 ; 1), B′(−1 ; 5), C′(−4 ; 5). On recalcule : A′B′ = 4 ✓, B′C′ = 3 ✓, A′C′ = √(9 + 16) = 5 ✓, périmètre 12 ✓ — le résultat ne dépend effectivement pas de l'isométrie choisie. Deuxième contrôle, avec une symétrie orthogonale d'axe (Ox) cette fois : A′(1 ; −1), B′(5 ; −1), C′(5 ; −4), mêmes longueurs, même périmètre ✓. Trois pièges à éviter. Additionner les coordonnées au lieu des longueurs n'a aucun sens : un périmètre est une somme de distances. Oublier que le triangle est rectangle en B et remplacer AC par 4 + 3 = 7 donnerait 14 : l'hypoténuse d'un triangle rectangle est strictement plus courte que la somme des deux autres côtés (c'est l'inégalité triangulaire). Enfin, croire qu'il faut d'abord identifier f est l'erreur de méthode que la question traque : la conservation des distances rend la question du nom de f totalement inutile.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Le motif de l'atelier est un carré MNPQ dans lequel est inscrit un cercle 𝒞, tangent aux quatre côtés. Le maître lui applique une isométrie f du plan et obtient la figure image. Sélectionne TOUTES les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'image du cercle 𝒞 est un cercle de même rayon que 𝒞"
+        },
+        {
+          "id": "b",
+          "text": "L'image du milieu du côté [MN] est le milieu du côté [M′N′]"
+        },
+        {
+          "id": "c",
+          "text": "Les images des deux côtés perpendiculaires [MN] et [NP] sont deux segments perpendiculaires"
+        },
+        {
+          "id": "d",
+          "text": "Chaque point du motif garde ses coordonnées dans le repère (O, i⃗, j⃗)"
+        },
+        {
+          "id": "e",
+          "text": "L'image du carré MNPQ peut être un rectangle qui n'est pas un carré"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "c"]
+      },
+      "explanation": "Le cours dresse la liste des configurations qu'une isométrie transporte, et les trois premières affirmations y figurent mot pour mot. L'image d'un cercle par une isométrie est un cercle qui lui est isométrique : même rayon, seul le centre a bougé — l'image du centre est le centre de l'image ✓. Une isométrie conserve le barycentre de deux points, donc en particulier le milieu d'un segment : le milieu de [MN] a pour image le milieu de [M′N′] ✓. Une isométrie conserve l'orthogonalité : deux droites perpendiculaires ont pour images deux droites perpendiculaires, donc l'angle droit du carré en N survit ✓. Ces trois propriétés descendent toutes du même théorème : une isométrie conserve le produit scalaire, puisque AB⃗·AC⃗ = ½(AB² + AC² − BC²) ne fait intervenir que des distances. Contrôle chiffré, avec la rotation r de centre O et d'angle π/2, qui envoie (x ; y) sur (−y ; x) : le segment [MN] avec M(2 ; 0) et N(0 ; 4) a pour milieu (1 ; 2) ; les images sont M′(0 ; 2) et N′(−4 ; 0), de milieu (−2 ; 1), et r(1 ; 2) = (−2 ; 1) ✓, c'est bien le même point. Les deux affirmations écartées. « Chaque point garde ses coordonnées » confond conserver les DISTANCES et conserver les COORDONNÉES : une translation de vecteur (3 ; 0) est une isométrie, et elle change l'abscisse de tous les points du plan. Ce qui est vrai, et que le cours énonce précisément, c'est que les coordonnées ne changent pas quand on les lit dans le repère porté par la figure elle-même : si AM⃗ = x·AB⃗ + y·AC⃗, alors A′M′⃗ = x·A′B′⃗ + y·A′C′⃗ — le repère bouge avec la figure. « L'image du carré peut être un rectangle non carré » contredit directement la conservation des longueurs : les quatre côtés du carré sont égaux, leurs images ont les mêmes longueurs, donc restent égales entre elles ; avec l'angle droit conservé, l'image est nécessairement un carré de même côté. C'est le réflexe le plus rentable du chapitre : pour reconnaître la nature de la figure image, on ne recalcule rien, on transporte la propriété caractéristique.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "QCM visuel — l'atelier grave une frise sans fin sur le bandeau d'une fontaine : les motifs se répètent indéfiniment vers la droite ET vers la gauche selon le schéma ci-dessous. L'axe Δ est gradué en unités. Quelle transformation laisse la frise entière globalement invariante, c'est-à-dire la superpose exactement à elle-même ? <svg viewBox=\"0 0 300 200\"><path d=\"M10 110 H292\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g stroke=\"#0f172a\" stroke-width=\"1.4\" fill=\"none\"><path d=\"M25 106 V114 M73 106 V114 M121 106 V114 M169 106 V114 M217 106 V114 M265 106 V114\"/></g><g fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\"><path d=\"M25 110 V62 H54\"/><path d=\"M121 110 V62 H150\"/><path d=\"M217 110 V62 H246\"/><path d=\"M73 110 V158 H102\"/><path d=\"M169 110 V158 H198\"/><path d=\"M265 110 V158 H294\"/></g><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"25\" y=\"128\" text-anchor=\"middle\" fill=\"#0f172a\">0</text><text x=\"121\" y=\"128\" text-anchor=\"middle\" fill=\"#0f172a\">4</text><text x=\"217\" y=\"128\" text-anchor=\"middle\" fill=\"#0f172a\">8</text><text x=\"73\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\">2</text><text x=\"169\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\">6</text><text x=\"265\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\">10</text><text x=\"14\" y=\"100\" text-anchor=\"middle\" fill=\"#0f172a\">Δ</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La composée de la symétrie orthogonale d'axe Δ et de la translation de vecteur u⃗(2 ; 0), qui est directeur de Δ"
+        },
+        { "id": "b", "text": "La translation de vecteur u⃗(2 ; 0)" },
+        { "id": "c", "text": "La symétrie orthogonale d'axe Δ" },
+        { "id": "d", "text": "La symétrie centrale de centre le point de Δ d'abscisse 0" }
+      ],
+      "correctOption": "a",
+      "explanation": "Décrivons la frise avec précision : chaque motif est un crochet formé d'un montant de 2 unités partant de Δ et d'une barre de 1,2 unité partant du sommet du montant VERS LA DROITE. Les crochets tournés vers le haut ont leur pied aux abscisses 0, 4, 8, … et ceux tournés vers le bas aux abscisses 2, 6, 10, … Testons la composée proposée, c'est-à-dire l'application t_u⃗∘S_Δ. La symétrie d'axe Δ retourne le crochet de pied 0 : il devient un crochet vers le bas, de pied 0, barre toujours vers la droite. La translation de vecteur (2 ; 0) le pousse ensuite en pied 2 — et il y a bien là, dans la frise, un crochet vers le bas de pied 2, barre vers la droite ✓. Le même calcul envoie le crochet bas de pied 2 sur le crochet haut de pied 4, celui de pied 4 sur celui de pied 6, et ainsi de suite dans les deux directions : la frise se superpose exactement à elle-même ✓. Comme le vecteur u⃗(2 ; 0) est directeur de Δ (qui est horizontal), cette composée porte le nom que lui donne le cours : c'est une symétrie glissante, et elle n'a aucun point fixe — ce qui se voit bien, puisque aucun crochet ne reste sur place. La translation de vecteur (2 ; 0) échoue seule : elle enverrait le crochet HAUT de pied 0 sur un crochet HAUT de pied 2, or à l'abscisse 2 la frise porte un crochet vers le BAS. Il faut donc doubler le pas : c'est la translation de vecteur (4 ; 0) qui convient, et elle vaut d'ailleurs le carré de la symétrie glissante, conformément à la règle f∘f = t_(2u⃗). La symétrie orthogonale d'axe Δ échoue aussi : elle retourne le crochet de pied 0 vers le bas SANS le décaler, et la frise n'a pas de crochet bas à l'abscisse 0. La symétrie centrale de centre le point d'abscisse 0 retourne le crochet et renvoie sa barre vers la GAUCHE, alors que toutes les barres de la frise pointent vers la droite : le motif image n'appartient pas à la frise. Retiens la lecture d'une frise : quand les motifs alternent de part et d'autre de l'axe en avançant d'un demi-pas, la transformation qui la porte n'est ni la translation ni la symétrie, mais leur composée.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "QCM visuel — dernière commande : une rosace de pavement à cinq branches identiques, régulièrement disposées autour du point O. Le maître veut la faire pivoter autour de O sans que personne ne s'en aperçoive. Quel est le plus petit angle de rotation strictement positif qui laisse la rosace globalement invariante ? <svg viewBox=\"0 0 300 260\"><g stroke=\"#0f6e56\" stroke-width=\"2.6\" fill=\"none\"><path d=\"M150 130 L150 52\"/><path d=\"M150 130 L75.8 105.9\"/><path d=\"M150 130 L104.2 193.1\"/><path d=\"M150 130 L195.8 193.1\"/><path d=\"M150 130 L224.2 105.9\"/></g><g fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"#0f6e56\" stroke-width=\"2.2\"><circle cx=\"150\" cy=\"52\" r=\"14\"/><circle cx=\"75.8\" cy=\"105.9\" r=\"14\"/><circle cx=\"104.2\" cy=\"193.1\" r=\"14\"/><circle cx=\"195.8\" cy=\"193.1\" r=\"14\"/><circle cx=\"224.2\" cy=\"105.9\" r=\"14\"/></g><circle cx=\"150\" cy=\"130\" r=\"4.5\" fill=\"#0f172a\"/><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"142\" y=\"148\" text-anchor=\"end\" fill=\"#0f172a\">O</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "2π/5" },
+        { "id": "b", "text": "π/5" },
+        { "id": "c", "text": "π/2" },
+        { "id": "d", "text": "2π/3" }
+      ],
+      "correctOption": "a",
+      "explanation": "Les cinq branches se partagent équitablement le tour complet autour de O : l'angle entre deux branches consécutives vaut 2π/5, soit 72 degrés. La rotation de centre O et d'angle 2π/5 envoie chaque branche sur la suivante, donc la rosace entière sur elle-même ✓, et aucun angle strictement plus petit ne le fait, car il enverrait une branche sur une position où il n'y a rien. Contrôle par le calcul, avec la première branche placée à l'angle π/2 : les cinq branches occupent les directions π/2, π/2 + 2π/5, π/2 + 4π/5, π/2 + 6π/5 et π/2 + 8π/5. Ajouter 2π/5 à chacune de ces valeurs redonne exactement la même liste, la dernière revenant à π/2 + 2π = π/2 ✓. Le point O est le seul point fixe de cette rotation, ce qui est cohérent avec la classification du chapitre : une isométrie qui fixe un unique point est une rotation de centre ce point et d'angle non nul. L'angle π/5 est la moitié du bon : il correspond à la moitié de l'écart entre deux branches, donc il envoie chaque branche entre deux branches — la rosace image se superpose à un décalage vide. C'est l'erreur la plus fréquente, celle qui divise le tour par le nombre de branches puis divise encore par 2 ; le contre-test est immédiat, car deux applications successives de π/5 donneraient 2π/5, or si π/5 convenait, la rosace aurait dix branches. L'angle π/2, un quart de tour, ne convient que pour une rosace à quatre branches : 2π/(π/2) = 4. L'angle 2π/3 ne convient que pour trois branches. Retiens la formule : une rosace à n branches régulières est invariante par la rotation d'angle 2π/n autour de son centre, et par les multiples de cet angle uniquement — pour n = 5 les angles admissibles sont 2π/5, 4π/5, 6π/5, 8π/5 et 2π.",
+      "difficulty": 3
+    }
+  ]
+}

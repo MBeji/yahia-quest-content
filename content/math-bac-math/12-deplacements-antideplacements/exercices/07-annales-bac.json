@@ -1,0 +1,142 @@
+{
+  "title": "🏛️ Annales Bac ⭐⭐⭐⭐ : Sujet type — Rectangle AB = 2BC, composée, symétrie glissante et lieu de points",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "Partie A. Le plan est orienté dans le sens direct et rapporté au repère orthonormé direct (A, u⃗, v⃗). ABCD est un rectangle tel que B(4 ; 0), C(4 ; 2) et D(0 ; 2) : on a donc AB = 2BC et (AB⃗, AD⃗) ≡ π/2 [2π]. On note O(2 ; 1) le centre du rectangle, I(2 ; 0) le milieu de [AB] et J(2 ; 2) le milieu de [CD]. Justifier qu'il existe un unique déplacement f tel que f(A) = C et f(I) = J, puis identifier f. <svg viewBox=\"0 0 300 220\"><path d=\"M30 175 H285\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><path d=\"M285 175 l-8 -4 l0 8 z\" fill=\"#0f172a\"/><path d=\"M55 205 V50\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><path d=\"M55 50 l-4 8 l8 0 z\" fill=\"#0f172a\"/><path d=\"M55 175 H247 V79 H55 Z\" fill=\"#0f6e56\" opacity=\"0.08\"/><path d=\"M55 175 H247 V79 H55 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><g stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\" fill=\"none\"><path d=\"M55 175 L247 79\"/><path d=\"M247 175 L55 79\"/></g><path d=\"M151 175 V79\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-dasharray=\"7 5\"/><path d=\"M85 175 A30 30 0 0 0 55 145\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\"/><path d=\"M49 145 L59 140 L59 150 Z\" fill=\"#0f6e56\"/><g fill=\"#0f172a\"><circle cx=\"55\" cy=\"175\" r=\"4.5\"/><circle cx=\"247\" cy=\"175\" r=\"4.5\"/><circle cx=\"247\" cy=\"79\" r=\"4.5\"/><circle cx=\"55\" cy=\"79\" r=\"4.5\"/><circle cx=\"151\" cy=\"175\" r=\"4\"/><circle cx=\"151\" cy=\"79\" r=\"4\"/><circle cx=\"151\" cy=\"127\" r=\"4\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47\" y=\"192\" text-anchor=\"end\" fill=\"#0f172a\">A</text><text x=\"255\" y=\"192\" fill=\"#0f172a\">B</text><text x=\"255\" y=\"74\" fill=\"#0f172a\">C</text><text x=\"47\" y=\"74\" text-anchor=\"end\" fill=\"#0f172a\">D</text><text x=\"151\" y=\"194\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"151\" y=\"70\" text-anchor=\"middle\" fill=\"#0f172a\">J</text><text x=\"161\" y=\"122\" fill=\"#0f172a\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "AI = CJ ≠ 0 assure l'existence et l'unicité ; f est la symétrie centrale de centre O, c'est-à-dire la rotation de centre O et d'angle π"
+        },
+        {
+          "id": "b",
+          "text": "AI = CJ ≠ 0 assure l'existence et l'unicité ; f est la translation de vecteur AC⃗(4 ; 2)"
+        },
+        {
+          "id": "c",
+          "text": "AI = CJ ≠ 0 assure l'existence et l'unicité ; f est la rotation de centre O et d'angle π/2"
+        },
+        {
+          "id": "d",
+          "text": "AI = CJ ≠ 0 assure l'existence et l'unicité ; f est la symétrie orthogonale d'axe (IJ), la droite d'équation x = 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Existence et unicité d'abord, car c'est ce que le barème exige avant toute identification. On calcule les deux longueurs : AI = |(2 − 0 ; 0 − 0)| = 2 et CJ = |(2 − 4 ; 2 − 2)| = |(−2 ; 0)| = 2. Donc AI = CJ ≠ 0, et le théorème du cours s'applique : il existe exactement UN déplacement et exactement UN antidéplacement envoyant A sur C et I sur J ✓. La question porte sur le déplacement. Identification, par l'angle. Un déplacement est déterminé par son angle θ ≡ (MN⃗ ; M′N′⃗) [2π], pour n'importe quel couple de points. Prenons M = A et N = I : AI⃗ = (2 ; 0), et son image CJ⃗ = (−2 ; 0). Le premier vecteur pointe dans la direction 0, le second dans la direction π, donc θ ≡ π [2π]. Comme θ ≢ 0 [2π], f est une ROTATION d'angle π, c'est-à-dire une symétrie centrale ✓. Reste le centre Ω. Pour une symétrie centrale, le centre est le milieu de [M f(M)] pour tout M : milieu de [AC] = ((0 + 4)/2 ; (0 + 2)/2) = (2 ; 1) = O ✓, et milieu de [IJ] = ((2 + 2)/2 ; (0 + 2)/2) = (2 ; 1) = O ✓. Les deux milieux coïncident, comme il se doit. Donc f = S_O ✓. On peut aussi retrouver le centre par la méthode générale : Ω vérifie ΩA = Ωf(A) = ΩC, il est donc sur la médiatrice de [AC] ; et ΩI = ΩJ le place sur la médiatrice de [IJ], d'équation y = 1 ; l'intersection donne O(2 ; 1). Vérification finale, sur les deux images demandées : S_O(x ; y) = (4 − x ; 2 − y), donc A(0 ; 0) ↦ (4 ; 2) = C ✓ et I(2 ; 0) ↦ (2 ; 2) = J ✓. On note au passage que f(B) = (0 ; 2) = D et f(D) = (4 ; 0) = B : le rectangle est globalement invariant, ce qui était prévisible pour sa symétrie centrale. La translation de vecteur AC⃗ est le piège principal, et il est classique : il consiste à voir A ↦ C et à conclure « translation » sans regarder le second couple. Elle enverrait I(2 ; 0) sur (6 ; 2), très loin de J(2 ; 2). Une translation est un déplacement d'angle 0 ; ici l'angle vaut π, la nature est donc tout autre. La rotation de centre O et d'angle π/2 a le bon centre mais le mauvais angle : elle enverrait A(0 ; 0) sur (2 − (0 − 1) ; 1 + (0 − 2)) = (3 ; −1), pas sur C. Et un quart de tour ne peut pas laisser un rectangle non carré globalement invariant, puisqu'il échangerait un côté de longueur 4 avec un côté de longueur 2. La symétrie orthogonale d'axe (IJ) envoie bien I sur I et non sur J — elle fixe l'axe point par point — et elle enverrait A(0 ; 0) sur B(4 ; 0), pas sur C. Elle est de plus un ANTIDÉPLACEMENT, alors que la question demande le déplacement ; c'est d'ailleurs elle qu'il faudrait modifier pour obtenir l'antidéplacement cherché, comme le montrera la question suivante.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Partie A (suite). Mêmes données : dans le repère orthonormé direct (A, u⃗, v⃗), ABCD est le rectangle A(0 ; 0), B(4 ; 0), C(4 ; 2), D(0 ; 2), de centre O(2 ; 1), avec I(2 ; 0) milieu de [AB] et J(2 ; 2) milieu de [CD]. On rappelle que le déplacement f tel que f(A) = C et f(I) = J est la symétrie centrale de centre O. Soit r la rotation de centre I et d'angle π/2. Déterminer la nature et les éléments caractéristiques de g = r∘f.",
+      "options": [
+        {
+          "id": "a",
+          "text": "g est la rotation d'angle −π/2 et de centre Ω(1 ; 1), centre du carré AIJD"
+        },
+        {
+          "id": "b",
+          "text": "g est la rotation d'angle π/2 et de centre Ω(1 ; 1), centre du carré AIJD"
+        },
+        {
+          "id": "c",
+          "text": "g est la rotation d'angle −π/2 et de centre I(2 ; 0)"
+        },
+        {
+          "id": "d",
+          "text": "g est la translation de vecteur AD⃗(0 ; 2), puisque les angles π et π/2 se compensent"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Nature et angle d'abord, par le théorème sur la composée de deux rotations. f est un déplacement d'angle π, r un déplacement d'angle π/2 ; leurs centres O(2 ; 1) et I(2 ; 0) sont distincts. La somme des angles vaut π + π/2 = 3π/2 ≡ −π/2 [2π], qui n'est pas nulle modulo 2π : g est donc une ROTATION d'angle −π/2 ✓, et non une translation. Éléments caractéristiques, par l'expression analytique — c'est la voie la plus sûre et la plus rapide à rédiger. f = S_O envoie M(x ; y) sur (4 − x ; 2 − y). La rotation r de centre I(2 ; 0) et d'angle π/2 envoie M(x ; y) sur (2 − (y − 0) ; 0 + (x − 2)) = (2 − y ; x − 2). En composant dans l'ordre — f d'abord, r ensuite : g(x ; y) = r(4 − x ; 2 − y) = (2 − (2 − y) ; (4 − x) − 2) = (y ; 2 − x). Le centre est l'unique point fixe : x = y et y = 2 − x donnent x = 2 − x, soit x = 1 puis y = 1. Donc Ω(1 ; 1) ✓, et l'unicité de la solution confirme au passage que g est bien une rotation d'angle non nul. Contrôle de l'angle sur un point, comme le veut la méthode : g(A) = g(0 ; 0) = (0 ; 2) = D. Alors ΩA⃗ = (0 − 1 ; 0 − 1) = (−1 ; −1) et ΩD⃗ = (0 − 1 ; 2 − 1) = (−1 ; 1). Or la rotation d'angle −π/2 transforme (x ; y) en (y ; −x), et (−1 ; −1) donne bien (−1 ; 1) ✓ — l'angle est confirmé indépendamment du calcul de somme. Lecture géométrique du centre, qui vaut d'être signalée : A(0 ; 0), I(2 ; 0), J(2 ; 2) et D(0 ; 2) forment un CARRÉ de côté 2, et Ω(1 ; 1) en est le centre ✓. La rotation d'angle −π/2 autour de Ω envoie d'ailleurs A sur D, D sur J, J sur I et I sur A : elle fait tourner le carré AIJD d'un quart de tour dans le sens indirect. Second contrôle : g(I) = g(2 ; 0) = (0 ; 0) = A ✓, cohérent. L'angle π/2 au lieu de −π/2 est l'erreur de signe la plus coûteuse : elle vient de retenir l'angle du seul facteur r en oubliant celui de f. La somme des angles est π + π/2, pas π/2 ; et le test sur A est sans appel, puisque la rotation d'angle π/2 autour de Ω enverrait A(0 ; 0) sur (1 − (0 − 1) ; 1 + (0 − 1)) = (2 ; 0) = I, et non sur D. Le centre I est écarté par le calcul des points fixes : g(I) = A ≠ I. C'est l'erreur générale du chapitre — composer deux rotations DÉPLACE le centre, qui n'a en règle générale rien à voir avec celui des facteurs. La translation est écartée par le théorème lui-même : la composée de deux rotations n'est une translation que si θ + θ′ ≡ 0 [2π], or ici θ + θ′ ≡ −π/2 ≢ 0. Et une translation n'aurait aucun point fixe, alors que le système en fournit exactement un.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie A (fin). Mêmes données : dans le repère orthonormé direct (A, u⃗, v⃗), ABCD est le rectangle A(0 ; 0), B(4 ; 0), C(4 ; 2), D(0 ; 2), de centre O(2 ; 1), avec I(2 ; 0) et J(2 ; 2) les milieux respectifs de [AB] et [CD]. Puisque AI = CJ ≠ 0, il existe un unique antidéplacement h tel que h(A) = C et h(I) = J. Montrer que h est une symétrie glissante et donner sa forme réduite.",
+      "options": [
+        {
+          "id": "a",
+          "text": "h n'a aucun point fixe : c'est la symétrie glissante d'axe la droite (IJ), d'équation x = 2, et de vecteur AD⃗(0 ; 2) ; sa forme réduite est h = t_(AD⃗)∘S_(IJ)"
+        },
+        {
+          "id": "b",
+          "text": "h n'a aucun point fixe : c'est la symétrie glissante d'axe la droite (IJ), d'équation x = 2, et de vecteur (0 ; 4) ; sa forme réduite est h = t_((0 ; 4))∘S_(IJ)"
+        },
+        {
+          "id": "c",
+          "text": "h fixe le point O : c'est la symétrie orthogonale d'axe la droite (IJ), d'équation x = 2"
+        },
+        {
+          "id": "d",
+          "text": "h n'a aucun point fixe : c'est la symétrie glissante d'axe la droite (AB), l'axe des abscisses, et de vecteur AC⃗(4 ; 2)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On passe par l'écriture complexe, la voie la plus courte pour un antidéplacement donné par deux images. Un antidéplacement s'écrit z′ = a·z̄ + b avec |a| = 1. De h(A) = C avec z_A = 0 et z_C = 4 + 2i, on tire b = 4 + 2i. De h(I) = J avec z_I = 2 et z_J = 2 + 2i : 2a + 4 + 2i = 2 + 2i, donc 2a = −2 et a = −1, de module 1 ✓. Ainsi h : z′ = −z̄ + 4 + 2i. En coordonnées, avec z = x + iy on a −z̄ = −x + iy, donc h(x ; y) = (4 − x ; y + 2). Points fixes : il faudrait 4 − x = x, soit x = 2, ET y + 2 = y, ce qui est impossible. h ne fixe AUCUN point ✓, ce n'est donc pas une symétrie orthogonale mais bien une SYMÉTRIE GLISSANTE. Le vecteur, par le carré : h∘h(x ; y) = h(4 − x ; y + 2) = (4 − (4 − x) ; y + 4) = (x ; y + 4), c'est-à-dire h∘h = t_((0 ; 4)) = t_(2u⃗), d'où u⃗ = (0 ; 2) ✓ — et l'on reconnaît AD⃗ = (0 ; 2). L'axe, par les milieux : le milieu de [A h(A)] = [AC] vaut (2 ; 1) = O, et le milieu de [D h(D)] vaut, avec h(D) = h(0 ; 2) = (4 ; 4), le point (2 ; 3). Ces deux points ont pour abscisse 2 : l'axe est la droite d'équation x = 2, c'est-à-dire la droite (IJ) ✓, puisque I(2 ; 0) et J(2 ; 2) y appartiennent. Cohérence de la forme réduite : u⃗(0 ; 2) doit diriger l'axe, et une droite verticale est bien dirigée par (0 ; 1) ✓. Vérification directe, celle qui clôt la question : S_(IJ) envoie (x ; y) sur (4 − x ; y), puis t_(AD⃗) ajoute (0 ; 2), ce qui donne (4 − x ; y + 2) = h ✓. Sur les images demandées : A(0 ; 0) ↦ S_(IJ) ↦ B(4 ; 0) ↦ +AD⃗ ↦ (4 ; 2) = C ✓ ; I(2 ; 0) ↦ I ↦ (2 ; 2) = J ✓. Et l'on retrouve le vecteur sur un point de l'axe, comme le veut la propriété : I appartient à (IJ), et I h(I)⃗ = IJ⃗ = (0 ; 2) = u⃗ ✓. Le vecteur (0 ; 4) confond u⃗ avec 2u⃗ : c'est le vecteur du carré h∘h, pas celui de la forme réduite. Il enverrait A sur (4 ; 4) et non sur C(4 ; 2). La symétrie orthogonale d'axe (IJ) est écartée par le calcul des points fixes, mais aussi d'un mot par les données : elle fixerait I, alors que l'énoncé impose h(I) = J ≠ I. Le point O n'est pas fixe non plus : h(2 ; 1) = (2 ; 3). La dernière proposition prend l'axe (AB) et le vecteur AC⃗ : ce couple est incohérent avec la définition même de la forme réduite, puisque AC⃗ = (4 ; 2) n'est PAS un vecteur directeur de (AB), qui est horizontale. Et le test tombe : la symétrie d'axe (AB) envoie A sur A, puis la translation donnerait (4 ; 2) = C par chance ✓, mais elle envoie I(2 ; 0) sur I puis sur (6 ; 2) ≠ J. Un seul point ne valide jamais une identification.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B. Le plan complexe est rapporté au repère orthonormé direct (A, u⃗, v⃗) : A a pour affixe 0, B pour affixe 4, C pour affixe 4 + 2i et D pour affixe 2i ; les milieux I et J ont pour affixes 2 et 2 + 2i, et O a pour affixe 2 + i. On reprend g, le déplacement identifié en Partie A comme la rotation de centre Ω(1 ; 1) et d'angle −π/2. Donner l'écriture complexe de g, et retrouver par le calcul l'affixe de son centre.",
+      "options": [
+        {
+          "id": "a",
+          "text": "z′ = −i·z + 2i, et le centre a pour affixe 2i/(1 + i) = 1 + i"
+        },
+        {
+          "id": "b",
+          "text": "z′ = i·z + 2i, et le centre a pour affixe 2i/(1 − i) = −1 + i"
+        },
+        {
+          "id": "c",
+          "text": "z′ = −i·z + 2, et le centre a pour affixe 2/(1 + i) = 1 − i"
+        },
+        {
+          "id": "d",
+          "text": "z′ = −i·z̄ + 2i, et le centre a pour affixe 1 + i"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La rotation de centre Ω d'affixe ω et d'angle θ a pour écriture complexe z′ − ω = e^(iθ)·(z − ω). Ici ω = 1 + i et θ = −π/2, donc e^(iθ) = e^(−iπ/2) = −i. On développe : z′ = −i·(z − (1 + i)) + (1 + i) = −i·z + i(1 + i) + 1 + i = −i·z + (i + i²) + 1 + i = −i·z + (i − 1) + (1 + i) = −i·z + 2i ✓. Première vérification, toujours la même : le coefficient de z vaut a = −i, de module |−i| = 1, et a ≠ 1, donc g est bien une rotation et non une translation ✓ ; son angle est arg(a) = arg(−i) = −π/2 ✓, ce qui recoupe la Partie A. Centre par la formule du cours : z_Ω = b/(1 − a) = 2i/(1 − (−i)) = 2i/(1 + i). On multiplie haut et bas par le conjugué 1 − i : le numérateur devient 2i(1 − i) = 2i − 2i² = 2i + 2, le dénominateur (1 + i)(1 − i) = 1 − i² = 2. D'où z_Ω = (2 + 2i)/2 = 1 + i ✓, c'est-à-dire le point (1 ; 1) — exactement le centre trouvé analytiquement en Partie A, les deux méthodes concordent. Contrôle par réinjection, en une ligne : −i(1 + i) + 2i = −i − i² + 2i = −i + 1 + 2i = 1 + i ✓, le centre est bien fixe. Contrôle sur un sommet : z_A = 0 donne z′ = 2i, c'est-à-dire le point (0 ; 2) = D, et l'on avait bien g(A) = D en Partie A ✓. Vérifions même l'accord complet avec l'expression analytique g(x ; y) = (y ; 2 − x) : pour z = x + iy, −i·z + 2i = −i(x + iy) + 2i = −ix + y + 2i = y + i(2 − x) ✓, terme à terme. L'écriture z′ = i·z + 2i décrit la rotation d'angle +π/2 (car arg(i) = π/2) : c'est la faute de signe qui découle d'avoir oublié l'angle π de la symétrie centrale dans la somme. Elle est cohérente avec elle-même — son centre vaut bien 2i/(1 − i) = 2i(1 + i)/2 = i − 1 = −1 + i — et elle donne même la bonne image pour A, puisque i × 0 + 2i = 2i = z_D. C'est sur un SECOND point que l'écart éclate, et c'est la raison pour laquelle on vérifie toujours sur deux points : pour z_I = 2 elle donne i × 2 + 2i = 4i, soit le point (0 ; 4), alors que g(I) = A, d'affixe 0. L'écriture z′ = −i·z + 2 se trompe sur b : elle enverrait A(0) sur le point d'affixe 2, c'est-à-dire I, et non sur D. Le terme constant se lit sur l'image de l'origine du repère, ici A, et cette image est D d'affixe 2i. L'écriture z′ = −i·z̄ + 2i porte une barre de conjugaison : elle décrit un ANTIDÉPLACEMENT, alors que g est une rotation, donc un déplacement. Le test des points fixes le confirme : elle transforme (x ; y) en (−y ; 2 − x), et il faudrait x = −y ET y = 2 − x, deux conditions incompatibles — elle ne fixe AUCUN point, c'est une symétrie glissante, alors qu'une rotation possède exactement un point fixe, son centre.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B (suite). Le plan complexe est rapporté au repère orthonormé direct (A, u⃗, v⃗). On considère le déplacement g d'écriture complexe z′ = −i·z + 2i ; c'est la rotation de centre Ω d'affixe 1 + i et d'angle −π/2. À tout point M d'affixe z, g associe le point M′ d'affixe z′. Déterminer l'ensemble E des points M du plan tels que MM′ = 2√2.",
+      "options": [
+        { "id": "a", "text": "E est le cercle de centre Ω(1 ; 1) et de rayon 2" },
+        { "id": "b", "text": "E est le cercle de centre Ω(1 ; 1) et de rayon 2√2" },
+        { "id": "c", "text": "E est le cercle de centre Ω(1 ; 1) et de rayon 4" },
+        { "id": "d", "text": "E est le cercle de centre A(0 ; 0) et de rayon 2" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le geste attendu à l'écrit est une factorisation qui fait apparaître l'affixe du centre. On calcule z′ − z = −i·z + 2i − z = −(1 + i)·z + 2i. Il faut donc mettre −(1 + i) en facteur : −(1 + i)·z + 2i = −(1 + i)·[z − 2i/(1 + i)]. Or 2i/(1 + i) = 2i(1 − i)/2 = i(1 − i) = i + 1, qui est précisément l'affixe ω du centre Ω. Donc z′ − z = −(1 + i)·(z − ω) ✓ — la factorisation fait toujours sortir le point fixe, c'est ce qui rend ce type de lieu calculable. En passant aux modules : MM′ = |z′ − z| = |−(1 + i)| × |z − ω| = |1 + i| × ΩM = √(1² + 1²) × ΩM = √2 · ΩM. La condition MM′ = 2√2 s'écrit donc √2 · ΩM = 2√2, soit ΩM = 2 ✓. L'ensemble E est l'ensemble des points situés à la distance 2 de Ω : c'est le CERCLE de centre Ω(1 ; 1) et de rayon 2 ✓, sans point à exclure, puisque M = Ω donnerait MM′ = 0 ≠ 2√2. Interprétation géométrique, qui permet de retrouver le facteur √2 sans complexes : g étant une rotation d'angle −π/2 de centre Ω, on a ΩM′ = ΩM et l'angle (ΩM⃗ ; ΩM′⃗) ≡ −π/2. Le triangle ΩMM′ est donc rectangle et isocèle en Ω, et son hypoténuse vaut MM′ = ΩM·√2 ✓. La condition MM′ = 2√2 redonne ΩM = 2. Contrôle sur un point qui doit convenir : prenons M(3 ; 1), d'affixe 3 + i. Sa distance à Ω vaut |(3 − 1 ; 1 − 1)| = 2, il est donc sur E. Son image : g(x ; y) = (y ; 2 − x) donne M′(1 ; −1), d'où MM′ = |(1 − 3 ; −1 − 1)| = |(−2 ; −2)| = 2√2 ✓. Contrôle sur un point qui ne doit PAS convenir : M = A(0 ; 0). Alors ΩA = √2 ≠ 2, et g(A) = D(0 ; 2), d'où AD = 2 ≠ 2√2 ✓ — la condition échoue comme prévu, et l'on vérifie au passage la relation MM′ = √2·ΩM, puisque √2 × √2 = 2 ✓. Le rayon 2√2 est l'erreur la plus fréquente : elle consiste à confondre MM′ et ΩM, c'est-à-dire à oublier le facteur |1 + i| = √2 apporté par la factorisation. Elle donnerait MM′ = √2 × 2√2 = 4, soit le double de la valeur demandée. Le rayon 4 multiplie au lieu de diviser d'une autre manière, en prenant |z′ − z| = 2·ΩM ; le module de 1 + i est √2, jamais 2 — c'est √(1 + 1), pas 1 + 1. Enfin le cercle de centre A remplace le point fixe par l'origine du repère : la factorisation fait apparaître z − (1 + i), et non z ; dans ce type de lieu, c'est TOUJOURS le point fixe de la transformation qui commande le centre, et il n'y a aucune raison qu'il coïncide avec l'origine.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B (fin). Mêmes données : dans le repère orthonormé direct (A, u⃗, v⃗) du plan complexe, A a pour affixe 0, B pour affixe 4, C pour affixe 4 + 2i, I pour affixe 2 et J pour affixe 2 + 2i. On note g le déplacement d'écriture z′ = −i·z + 2i (rotation de centre Ω(1 ; 1) et d'angle −π/2) et h l'antidéplacement d'écriture z′ = −z̄ + 4 + 2i (symétrie glissante d'axe (IJ) et de vecteur AD⃗). Déterminer la nature et les éléments caractéristiques de g∘h.",
+      "options": [
+        {
+          "id": "a",
+          "text": "g∘h est la symétrie orthogonale d'axe la droite (IC), d'équation y = x − 2"
+        },
+        {
+          "id": "b",
+          "text": "g∘h est la symétrie glissante d'axe la droite (IC), d'équation y = x − 2, et de vecteur IC⃗(2 ; 2)"
+        },
+        {
+          "id": "c",
+          "text": "g∘h est la symétrie orthogonale d'axe la droite (IJ), d'équation x = 2"
+        },
+        {
+          "id": "d",
+          "text": "g∘h est la rotation de centre I et d'angle −π/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Nature d'abord, par la règle des signes : g est un déplacement (+1), h un antidéplacement (−1), donc g∘h est un ANTIDÉPLACEMENT ✓. Cela élimine d'emblée toute rotation. Écriture complexe ensuite, en composant dans l'ordre — h d'abord, g ensuite : g∘h(z) = −i·(−z̄ + 4 + 2i) + 2i = i·z̄ − 4i − 2i² + 2i = i·z̄ + 2 − 2i. Le coefficient de z̄ vaut i, de module 1 ✓, et la barre de conjugaison confirme l'antidéplacement. Traduction en coordonnées : avec z = x + iy on a z̄ = x − iy, donc i·z̄ = i(x − iy) = y + ix, et g∘h(z) = (y + 2) + i(x − 2), c'est-à-dire g∘h(x ; y) = (y + 2 ; x − 2). Points fixes — c'est ici que tout se joue : il faut x = y + 2 ET y = x − 2, deux équations qui n'en font qu'une, y = x − 2. L'ensemble des points fixes est donc une DROITE entière, et non un point isolé ni l'ensemble vide. Le cours conclut aussitôt : un antidéplacement qui possède un point fixe est une symétrie orthogonale, et une isométrie différente de l'identité qui fixe toute une droite est la symétrie orthogonale d'axe cette droite ✓. Donc g∘h = S_Δ avec Δ : y = x − 2 ✓. Identification de Δ dans la configuration : I(2 ; 0) vérifie 0 = 2 − 2 ✓ et C(4 ; 2) vérifie 2 = 4 − 2 ✓, donc Δ est la droite (IC) ✓ — l'une des deux « demi-diagonales » du rectangle, celle qui joint le milieu de [AB] au sommet C. Vérification que l'expression obtenue EST bien cette symétrie : la symétrie orthogonale d'axe y = x + c envoie (x ; y) sur (y − c ; x + c) ; avec c = −2 on obtient (y + 2 ; x − 2), ce qui coïncide terme à terme ✓. Contrôle sur deux points, comme toujours : A(0 ; 0) ↦ (2 ; −2) ; le milieu de [A, (2 ; −2)] vaut (1 ; −1), qui vérifie −1 = 1 − 2 ✓ donc appartient à Δ, et le vecteur (2 ; −2) est orthogonal au vecteur directeur (1 ; 1) de Δ, puisque 2 × 1 + (−2) × 1 = 0 ✓. D(0 ; 2) ↦ (4 ; −2) ; milieu (2 ; 0) = I ∈ Δ ✓. Contrôle par la chaîne, entièrement indépendant : h(A) = C, puis g(C) : avec g(x ; y) = (y ; 2 − x) on a g(4 ; 2) = (2 ; −2) ✓ — la même image que par l'expression composée. La symétrie glissante d'axe (IC) et de vecteur IC⃗ est écartée par les points fixes : une symétrie glissante n'en a AUCUN, alors que g∘h en a une droite entière. Le glissement est donc nul, et l'antidéplacement se réduit à sa symétrie. La symétrie orthogonale d'axe (IJ) garde l'axe du facteur h : c'est l'erreur de méthode récurrente du chapitre, composer ne conserve pas les éléments caractéristiques des facteurs. Le calcul le confirme : S_(IJ) envoie A(0 ; 0) sur (4 ; 0), alors que g∘h(A) = (2 ; −2). Enfin la rotation de centre I et d'angle −π/2 est un DÉPLACEMENT : elle est exclue par la seule règle des signes, sans le moindre calcul.",
+      "difficulty": 3
+    }
+  ]
+}
