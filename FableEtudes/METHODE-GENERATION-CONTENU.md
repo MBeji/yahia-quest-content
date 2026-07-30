@@ -150,6 +150,17 @@ Règles de boucle (non négociables) :
   individuellement, encadrés officiels verbatim, vocabulaire officiel, bornes ✅/⛔. Modèle de
   référence : `programme/1ere-sec/mathematiques.md`. Une « first-pass » s'étiquette comme telle
   et ne se génère pas.
+  **La barre se lit au CHAPITRE, pas à la fiche entière** (décision du 2026-07-29). Ce qu'une
+  génération consomme, c'est la **section** de son chapitre : une fiche trouée peut donc nourrir
+  les chapitres qu'elle a réellement transcrits en profondeur, et eux seuls. Le mécanisme est
+  déclaratif et vérifié — l'entrée de registre liste ces chapitres dans `chapitresGeneration`,
+  `programme:check` refuse tout slug absent du chapitrage du manifeste, sans `sujets` déclarés,
+  ou posé sur une fiche `en-cours`, et `programme:etat` prescrit alors un **LOT B2 restreint**
+  (l'intersection « ce que la fiche autorise ∩ ce qui manque au contenu »), non bloquant.
+  Ce qui n'a pas changé : le reste de la fiche exige toujours le LOT A, et une section mince ou
+  non lue ne se génère toujours pas. La levée **ouvre une classe** — elle n'achève pas une
+  matière. Motif : sur 2ème sec sciences, 12 chapitres sur 19 étaient transcrits en profondeur
+  et les 19 restaient bloqués, gardant la classe fermée sur de la transcription déjà payée.
 - **R-6 — Une session = une matière, lecture intégrale.** Jamais de plafond arbitraire de
   lecture (l'incident du 2026-07-10 : lectures tronquées à 70 k ⇒ fiches truffées
   d'inventions). Partiel honnêtement étiqueté > complet bâclé.
@@ -713,8 +724,11 @@ ne s'estime pas.
   deviner.
 - Divergence fiche ↔ programme officiel, ou gabarit/manifeste qui ne colle pas au réel ⇒ STOP
   et documenter (commentaire de PR ou issue), jamais d'adaptation silencieuse.
-- LOT B sans fiche mergée, ou fiche restée « first-pass » (pas la profondeur R-5) ⇒ **ne pas
-  générer** ; repasser par A3–A4.
+- LOT B sans fiche mergée, ou chapitre dont la section n'atteint pas la profondeur R-5 ⇒ **ne
+  pas générer CE chapitre** ; repasser par A3–A4. Une fiche globalement `partielle` n'est plus
+  un STOP en soi : elle l'est pour les chapitres hors de son `chapitresGeneration` (R-5, lu au
+  chapitre). Ce qui reste un STOP franc : générer un chapitre que la fiche ne déclare pas, ou
+  ajouter un slug à `chapitresGeneration` sans avoir lu la section correspondante.
 - Un chapitre appelle un **format de contenu inexistant** dans le moteur ⇒ signalement (issue)
   vers l'étude 03 / le catalogue de formats, jamais un format ad hoc.
 - **Rien ne s'applique à la main en base** : ni `psql`, ni l'éditeur SQL Supabase, ni
