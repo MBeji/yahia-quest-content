@@ -1,0 +1,82 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Pourcentages, radicaux et ordres de grandeur",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Le prix hors taxes d'un article est de 84 dinars et le taux de TVA est de 17 %. Quel est son prix toutes taxes comprises ?",
+      "options": [
+        { "id": "a", "text": "69,720 dinars" },
+        { "id": "b", "text": "84,170 dinars" },
+        { "id": "c", "text": "98,280 dinars" },
+        { "id": "d", "text": "101,000 dinars" }
+      ],
+      "correctOption": "c",
+      "explanation": "Appliquer une hausse de 17 %, c'est multiplier par 1,17 : 84 × 1,17 = 98,280 dinars ✓. Le montant 69,720 dinars applique une baisse de 17 % (84 × 0,83) ; 84,170 dinars ajoute 0,17 dinar au lieu de 17 % du prix ; 101,000 dinars ajoute 17 dinars au lieu de 17 % du prix.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un article subit une augmentation de 20 %, puis une seconde augmentation de 25 %. Quel est le pourcentage global d'augmentation ?",
+      "options": [
+        { "id": "a", "text": "5 %" },
+        { "id": "b", "text": "45 %" },
+        { "id": "c", "text": "50 %" },
+        { "id": "d", "text": "150 %" }
+      ],
+      "correctOption": "c",
+      "explanation": "Les coefficients multiplicateurs se composent : 1,20 × 1,25 = 1,50, ce qui correspond à une hausse globale de 50 % ✓. Le piège courant est d'additionner les deux taux (20 + 25 = 45 %) alors qu'ils se multiplient ; le taux 150 % confond le coefficient final avec la hausse (le nouveau prix vaut 150 % de l'ancien) ; le taux 5 % vient du produit des taux eux-mêmes (0,20 × 0,25 = 0,05).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Écrire 1/(5 + √3) sans radical au dénominateur.",
+      "options": [
+        { "id": "a", "text": "(5 − √3)/22" },
+        { "id": "b", "text": "(5 + √3)/22" },
+        { "id": "c", "text": "(5 − √3)/25" },
+        { "id": "d", "text": "(5 − √3)/28" }
+      ],
+      "correctOption": "a",
+      "explanation": "On multiplie haut et bas par la quantité conjuguée 5 − √3 : le dénominateur devient (5 + √3)(5 − √3) = 25 − 3 = 22, d'où (5 − √3)/22 ✓. La forme (5 + √3)/22 garde le signe + au numérateur, alors que c'est la conjuguée 5 − √3 qui y apparaît ; le dénominateur 28 vient de 25 + 3 au lieu de 25 − 3 ; le dénominateur 25 oublie de retrancher (√3)² = 3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Simplifier √(7 − 4√3).",
+      "options": [
+        { "id": "a", "text": "√3 − 2" },
+        { "id": "b", "text": "2 − √3" },
+        { "id": "c", "text": "2 + √3" },
+        { "id": "d", "text": "√7 − 2√3" }
+      ],
+      "correctOption": "b",
+      "explanation": "On reconnaît un carré : 7 − 4√3 = 4 − 4√3 + 3 = (2 − √3)². Donc √(7 − 4√3) = |2 − √3| = 2 − √3 ✓, car 2 > √3 ≈ 1,73. Le piège courant est d'oublier la valeur absolue et d'écrire √3 − 2, qui est négatif alors qu'une racine carrée ne l'est jamais ; 2 + √3 se trompe de signe sur le double produit, puisque (2 + √3)² = 7 + 4√3 ; √7 − 2√3 distribue la racine sur la différence, ce qui est interdit.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résoudre dans ℝ l'équation |3x − 1| = |x + 5|.",
+      "options": [
+        { "id": "a", "text": "S = {−1}" },
+        { "id": "b", "text": "S = {−1 ; 3}" },
+        { "id": "c", "text": "S = {3/2 ; 3}" },
+        { "id": "d", "text": "S = {3}" }
+      ],
+      "correctOption": "b",
+      "explanation": "|A| = |B| équivaut à A = B ou A = −B. Premier cas : 3x − 1 = x + 5 donne 2x = 6, soit x = 3. Second cas : 3x − 1 = −x − 5 donne 4x = −4, soit x = −1. Vérification : |3 × (−1) − 1| = 4 et |−1 + 5| = 4 ✓, donc S = {−1 ; 3}. Les ensembles {3} et {−1} ne retiennent qu'un seul des deux cas ; {3/2 ; 3} vient de l'oubli du signe dans −(x + 5) : en résolvant 3x − 1 = −x + 5 on trouve x = 3/2, qui ne convient pas (|3 × 1,5 − 1| = 3,5 alors que |1,5 + 5| = 6,5).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le Sahara couvre environ 8 millions de km² et l'on compte environ 2 milliards de grains de sable par m². Quel est l'ordre de grandeur du nombre de grains de sable du Sahara ?",
+      "options": [
+        { "id": "a", "text": "2 × 10¹⁶" },
+        { "id": "b", "text": "2 × 10¹⁹" },
+        { "id": "c", "text": "1,6 × 10²²" },
+        { "id": "d", "text": "2 × 10²²" }
+      ],
+      "correctOption": "d",
+      "explanation": "L'aire vaut 8 millions de km² = 8 × 10⁶ km², et 1 km² = 10⁶ m², donc 8 × 10¹² m². Le nombre de grains est 8 × 10¹² × 2 × 10⁹ = 16 × 10²¹ = 1,6 × 10²², dont l'ordre de grandeur est 2 × 10²² ✓ (le facteur 1,6 s'arrondit à 2). La valeur 1,6 × 10²² est le résultat en écriture scientifique, pas son ordre de grandeur ; 2 × 10¹⁶ oublie de convertir les km² en m² ; 2 × 10¹⁹ convertit avec 10³ au lieu de 10⁶.",
+      "difficulty": 2
+    }
+  ]
+}

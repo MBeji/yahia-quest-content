@@ -1,0 +1,65 @@
+{
+  "title": "Test de compréhension ⭐ : Problèmes du premier et du second degré",
+  "questions": [
+    {
+      "prompt": "Quel est le discriminant Δ de l'équation 2x² − 5x + 3 = 0 ?",
+      "options": [
+        { "id": "a", "text": "Δ = −1" },
+        { "id": "b", "text": "Δ = 1" },
+        { "id": "c", "text": "Δ = 25" },
+        { "id": "d", "text": "Δ = 49" }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec a = 2, b = −5 et c = 3 : Δ = b² − 4ac = 25 − 4 × 2 × 3 = 25 − 24 = 1 ✓. La valeur −1 vient de calculer 4ac − b² (soustraction inversée) ; 25 s'arrête à b² en oubliant le terme −4ac ; 49 correspond à b² + 4ac, avec une erreur de signe.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le discriminant d'une équation du second degré ax² + bx + c = 0 est strictement positif. Que peut-on affirmer ?",
+      "options": [
+        { "id": "a", "text": "L'équation admet deux racines distinctes" },
+        { "id": "b", "text": "L'équation admet une racine double" },
+        { "id": "c", "text": "L'équation n'admet aucune racine réelle" },
+        { "id": "d", "text": "L'équation admet une infinité de racines" }
+      ],
+      "correctOption": "a",
+      "explanation": "Quand Δ > 0, l'équation admet deux racines distinctes x₁ = (−b − √Δ)/2a et x₂ = (−b + √Δ)/2a ✓. La racine double correspond au cas Δ = 0, et l'absence de racine réelle au cas Δ < 0. Une équation du second degré (a ≠ 0) ne peut jamais avoir une infinité de racines.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'équation x² − 7x + 12 = 0 admet deux racines. Que valent leur somme S et leur produit P ?",
+      "options": [
+        { "id": "a", "text": "S = −7 et P = 12" },
+        { "id": "b", "text": "S = 7 et P = 12" },
+        { "id": "c", "text": "S = 7 et P = −12" },
+        { "id": "d", "text": "S = 12 et P = 7" }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec a = 1, b = −7 et c = 12 : S = −b/a = 7 et P = c/a = 12 ✓ (les racines sont d'ailleurs 3 et 4, de somme 7 et de produit 12). La réponse S = −7 oublie le signe moins de la formule −b/a ; P = −12 change à tort le signe de c/a ; « S = 12 et P = 7 » intervertit la somme et le produit.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = x² − 5x + 6, dont les racines sont 2 et 3. Pour quelles valeurs de x a-t-on f(x) < 0 ?",
+      "options": [
+        { "id": "a", "text": "]−∞ ; 2[ ∪ ]3 ; +∞[" },
+        { "id": "b", "text": "]−∞ ; 2] ∪ [3 ; +∞[" },
+        { "id": "c", "text": "[2 ; 3]" },
+        { "id": "d", "text": "]2 ; 3[" }
+      ],
+      "correctOption": "d",
+      "explanation": "Ici a = 1 > 0 : le trinôme est du signe de a à l'extérieur des racines et du signe de −a entre elles, donc f(x) < 0 sur ]2 ; 3[ ✓. Les intervalles ]−∞ ; 2[ ∪ ]3 ; +∞[ et ]−∞ ; 2] ∪ [3 ; +∞[ décrivent l'extérieur des racines, c'est-à-dire l'endroit où f(x) > 0. L'intervalle fermé [2 ; 3] inclut 2 et 3, où f s'annule : l'inégalité étant stricte, ces bornes doivent être exclues.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est l'ensemble des solutions de l'équation |x − 3| = 2 ?",
+      "options": [
+        { "id": "a", "text": "{−5 ; 5}" },
+        { "id": "b", "text": "{−1 ; 5}" },
+        { "id": "c", "text": "{1 ; 5}" },
+        { "id": "d", "text": "{5}" }
+      ],
+      "correctOption": "c",
+      "explanation": "|X| = 2 équivaut à X = 2 ou X = −2, donc x − 3 = 2 (soit x = 5) ou x − 3 = −2 (soit x = 1) : l'ensemble des solutions est {1 ; 5} ✓. La réponse {−5 ; 5} revient à résoudre |x| = 2 + 3 ; {−1 ; 5} garde x = 2 − 3 = −1 en oubliant d'isoler x ; {5} ne retient que le premier cas et perd la seconde solution.",
+      "difficulty": 2
+    }
+  ]
+}

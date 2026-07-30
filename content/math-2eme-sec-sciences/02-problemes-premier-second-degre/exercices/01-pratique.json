@@ -1,0 +1,82 @@
+{
+  "title": "⭐ Exercice : Premières résolutions du premier et du second degré",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Résous l'équation 3(x − 2) = x + 4.",
+      "options": [
+        { "id": "a", "text": "x = −1" },
+        { "id": "b", "text": "x = 3" },
+        { "id": "c", "text": "x = 5" },
+        { "id": "d", "text": "x = 10" }
+      ],
+      "correctOption": "c",
+      "explanation": "On développe : 3x − 6 = x + 4, puis 3x − x = 4 + 6, soit 2x = 10 et x = 5 ✓ (vérification : 3 × (5 − 2) = 9 et 5 + 4 = 9). La réponse x = 3 vient d'un développement fautif (3x − 2 au lieu de 3x − 6) ; x = 10 oublie de diviser par 2 ; x = −1 provient d'une erreur de signe lors de la transposition.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Résous l'inéquation −2x + 1 > 7.",
+      "options": [
+        { "id": "a", "text": "x > 3" },
+        { "id": "b", "text": "x < 3" },
+        { "id": "c", "text": "x > −3" },
+        { "id": "d", "text": "x < −3" }
+      ],
+      "correctOption": "d",
+      "explanation": "On isole : −2x > 6, puis on divise par −2, ce qui inverse le sens de l'inégalité : x < −3 ✓ (vérification avec x = −4 : −2 × (−4) + 1 = 9 > 7). La réponse x > −3 est le piège courant : on divise par un nombre négatif sans changer le sens de l'inégalité. Les réponses avec 3 oublient le signe moins du quotient 6/(−2).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Résous l'équation x² − 5x + 6 = 0.",
+      "options": [
+        { "id": "a", "text": "{−3 ; −2}" },
+        { "id": "b", "text": "{1 ; 6}" },
+        { "id": "c", "text": "{2 ; 3}" },
+        { "id": "d", "text": "{5 ; 6}" }
+      ],
+      "correctOption": "c",
+      "explanation": "Δ = (−5)² − 4 × 1 × 6 = 1, donc √Δ = 1 et les racines sont (5 − 1)/2 = 2 et (5 + 1)/2 = 3 : l'ensemble des solutions est {2 ; 3} ✓. La réponse {−3 ; −2} inverse le signe des racines ; {1 ; 6} donne deux nombres de produit 6 mais de somme 7, pas 5 ; {5 ; 6} recopie les coefficients b et c au lieu de résoudre.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'équation 2x² − 6x + 1 = 0 admet deux racines. Quel est leur produit ?",
+      "options": [
+        { "id": "a", "text": "−3" },
+        { "id": "b", "text": "1/2" },
+        { "id": "c", "text": "3" },
+        { "id": "d", "text": "6" }
+      ],
+      "correctOption": "b",
+      "explanation": "Le produit des racines vaut P = c/a = 1/2 ✓, sans avoir besoin de calculer les racines. La réponse 3 est la somme des racines (S = −b/a = 6/2 = 3), à ne pas confondre avec le produit ; 6 vaut −b sans la division par a ; −3 est l'opposé de la somme, obtenu en écrivant b/a au lieu de −b/a.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Résous l'équation |2x + 3| = 5.",
+      "options": [
+        { "id": "a", "text": "{−4 ; −1}" },
+        { "id": "b", "text": "{−4 ; 1}" },
+        { "id": "c", "text": "{−1 ; 4}" },
+        { "id": "d", "text": "{1}" }
+      ],
+      "correctOption": "b",
+      "explanation": "|X| = 5 équivaut à X = 5 ou X = −5. Ici 2x + 3 = 5 donne x = 1, et 2x + 3 = −5 donne 2x = −8, soit x = −4 : l'ensemble des solutions est {−4 ; 1} ✓. La réponse {−4 ; −1} se trompe de signe sur la première solution ; {−1 ; 4} inverse les deux signes ; {1} oublie complètement le second cas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résous l'équation (x − 1)/(x + 3) = 2.",
+      "options": [
+        { "id": "a", "text": "x = −7" },
+        { "id": "b", "text": "x = −3" },
+        { "id": "c", "text": "x = 7" },
+        { "id": "d", "text": "L'équation n'a pas de solution" }
+      ],
+      "correctOption": "a",
+      "explanation": "L'ensemble de résolution est ℝ \\ {−3}. On obtient x − 1 = 2(x + 3), soit x − 1 = 2x + 6, donc −x = 7 et x = −7 ✓ (vérification : (−7 − 1)/(−7 + 3) = −8/−4 = 2). La réponse x = −3 est la valeur interdite, jamais acceptable ; x = 7 vient d'une erreur de signe en résolvant −x = 7 ; et l'équation a bien une solution, donc « l'équation n'a pas de solution » est faux.",
+      "difficulty": 2
+    }
+  ]
+}
