@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Géométrie dans l'espace",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé. Soit S la sphère d'équation (x − 1)² + (y + 2)² + (z − 3)² = 25. Lequel de ces points appartient à S ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−1, 2, −3)"
+        },
+        {
+          "id": "b",
+          "text": "(1, −2, 3)"
+        },
+        {
+          "id": "c",
+          "text": "(5, 1, 3)"
+        },
+        {
+          "id": "d",
+          "text": "(26, −2, 3)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'équation se lit directement : S a pour centre I(1, −2, 3) et pour rayon R = √25 = 5, et un point est sur S si et seulement si ses coordonnées vérifient l'équation. Pour (5, 1, 3) : (5 − 1)² + (1 + 2)² + (3 − 3)² = 16 + 9 + 0 = 25 ✓. Contrôle par la définition : la distance de (5, 1, 3) au centre vaut √25 = 5 = R ✓. L'option (1, −2, 3) est le centre lui-même, qui n'est jamais sur la sphère : elle donne 0 et non 25. L'option (26, −2, 3) est à la distance 25 du centre : elle confond le rayon R = 5 avec R² = 25. L'option (−1, 2, −3) lit le centre avec les signes tels qu'ils apparaissent dans l'équation, et donne 4 + 16 + 36 = 56.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé. Quelle est une équation de la sphère de centre J(−2, 1, 5) et de rayon 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(x + 2)² + (y − 1)² + (z − 5)² = 3"
+        },
+        {
+          "id": "b",
+          "text": "(x + 2)² + (y − 1)² + (z − 5)² = 9"
+        },
+        {
+          "id": "c",
+          "text": "(x − 2)² + (y + 1)² + (z + 5)² = 9"
+        },
+        {
+          "id": "d",
+          "text": "x² + y² + z² + 4x − 2y − 10z + 30 = 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le cours donne (x − x₀)² + (y − y₀)² + (z − z₀)² = R² pour la sphère de centre (x₀, y₀, z₀) et de rayon R. Avec J(−2, 1, 5) et R = 3 : (x + 2)² + (y − 1)² + (z − 5)² = 9 ✓. Contrôle sur un point : (1, 1, 5) donne 9 + 0 + 0 = 9, il est sur la sphère, et sa distance à J vaut bien 3 ✓. L'option = 3 met le rayon là où il faut son carré, c'est la confusion la plus fréquente du chapitre. L'option (x − 2)² + (y + 1)² + (z + 5)² = 9 recopie les signes du centre au lieu de les changer : elle décrit la sphère de centre (2, −1, −5). L'option développée est fausse d'une constante : en développant la bonne équation on obtient 4 + 1 + 25 − 9 = 21, donc x² + y² + z² + 4x − 2y − 10z + 21 = 0, alors que 30 correspond à un rayon nul.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct. Le plan P passe par A(2, 1, −1) et admet pour vecteurs directeurs u⃗(1, 0, 2) et v⃗(0, 1, −1). Quel vecteur est normal à P ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−2, −1, 1)"
+        },
+        {
+          "id": "b",
+          "text": "(−2, 1, −1)"
+        },
+        {
+          "id": "c",
+          "text": "(−2, 1, 1)"
+        },
+        {
+          "id": "d",
+          "text": "(1, 1, 1)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un vecteur normal à P s'obtient par le produit vectoriel des deux directeurs : u⃗∧v⃗ = (0(−1) − 2(1) ; 2(0) − 1(−1) ; 1(1) − 0(0)) = (−2, 1, 1) ✓. Contrôle obligatoire, l'orthogonalité aux deux directions : (−2, 1, 1).u⃗ = −2 + 0 + 2 = 0 ✓ et (−2, 1, 1).v⃗ = 0 + 1 − 1 = 0 ✓ — un vecteur normal doit annuler DEUX produits scalaires, avec deux directions non colinéaires. L'option (−2, −1, 1) fausse le signe de la deuxième coordonnée : elle reste orthogonale à u⃗, mais son produit scalaire avec v⃗ vaut −1 − 1 = −2 ≠ 0, donc elle n'est normale à rien. L'option (−2, 1, −1) fausse la troisième : son produit scalaire avec u⃗ vaut −2 − 2 = −4 ≠ 0. L'option (1, 1, 1) additionne les deux directeurs, u⃗ + v⃗, qui est un vecteur DU plan et non un vecteur normal : son produit scalaire avec u⃗ vaut 1 + 0 + 2 = 3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé. Quelle est la mesure en radians de l'angle géométrique formé par u⃗(1, 1, 0) et v⃗(−1, 0, 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "π/4"
+        },
+        {
+          "id": "b",
+          "text": "π/3"
+        },
+        {
+          "id": "c",
+          "text": "π/2"
+        },
+        {
+          "id": "d",
+          "text": "2π/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La définition du produit scalaire relie l'angle aux normes : u⃗.v⃗ = ‖u⃗‖·‖v⃗‖·cos θ. Ici u⃗.v⃗ = 1(−1) + 1(0) + 0(1) = −1, avec ‖u⃗‖ = √2 et ‖v⃗‖ = √2, donc cos θ = −1/(√2·√2) = −1/2 et θ = 2π/3 ✓. Le cosinus est NÉGATIF : l'angle est obtus, il dépasse forcément π/2. L'option π/3 correspond à cos θ = 1/2 : elle perd le signe moins du produit scalaire. L'option π/2 conclut à l'orthogonalité, alors que le produit scalaire vaut −1 et non 0. L'option π/4 correspond à cos θ = √2/2 : elle cumule la perte du signe et un dénominateur √2 au lieu de √2·√2 = 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé. Quelle est une équation cartésienne du plan passant par A(1, −2, 3) et perpendiculaire à la droite D : { x = 2 + 3α ; y = −α ; z = 1 + 2α }, α ∈ ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3x − y + 2z − 11 = 0"
+        },
+        {
+          "id": "b",
+          "text": "3x − y + 2z − 7 = 0"
+        },
+        {
+          "id": "c",
+          "text": "3x − y + 2z + 11 = 0"
+        },
+        {
+          "id": "d",
+          "text": "x − 2y + 3z − 5 = 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un plan perpendiculaire à une droite admet le vecteur directeur de cette droite pour vecteur normal. Les coefficients de α donnent u⃗(3, −1, 2), donc l'équation est de la forme 3x − y + 2z + d = 0 ; en y injectant A(1, −2, 3) : 3(1) − (−2) + 2(3) + d = 3 + 2 + 6 + d = 11 + d = 0, soit d = −11 et le plan 3x − y + 2z − 11 = 0 ✓. Contrôle sur A : 3 + 2 + 6 − 11 = 0 ✓. L'option 3x − y + 2z − 7 = 0 traite −y avec y = −2 comme si cela donnait −2 : elle calcule 3 − 2 + 6 = 7, alors que le terme −y vaut +2 ici. L'option 3x − y + 2z + 11 = 0 garde la bonne normale mais prend d = +11 au lieu de son opposé, ce qui place le plan de l'autre côté de l'origine. L'option x − 2y + 3z − 5 = 0 échange les rôles : elle prend les coordonnées de A pour la normale et le point (2, 0, 1) de la droite pour point du plan.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé. On considère la droite D : { x = 1 + 2α ; y = −1 + α ; z = 3 − α }, α ∈ ℝ, et le plan P : x + 2y − z − 6 = 0. Quelles sont les coordonnées de leur point d'intersection ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−3, −3, 5)"
+        },
+        {
+          "id": "b",
+          "text": "(1, −1, 3)"
+        },
+        {
+          "id": "c",
+          "text": "(3, 0, 2)"
+        },
+        {
+          "id": "d",
+          "text": "(5, 1, 1)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On cherche la valeur de α pour laquelle le point courant de D vérifie l'équation de P. En substituant : (1 + 2α) + 2(−1 + α) − (3 − α) − 6 = 1 + 2α − 2 + 2α − 3 + α − 6, soit 5α − 10 = 0, donc α = 2. Les trois lignes donnent alors x = 1 + 4 = 5, y = −1 + 2 = 1 et z = 3 − 2 = 1, soit le point (5, 1, 1) ✓. Double contrôle : ce point est sur D avec α = 2 ✓, et il est sur P car 5 + 2(1) − 1 − 6 = 0 ✓. L'option (1, −1, 3) est le point de D obtenu pour α = 0 : c'est celui que la représentation paramétrique affiche, mais il n'est pas dans P, où il donne 1 − 2 − 3 − 6 = −10. L'option (−3, −3, 5) résout 5α − 10 = 0 en α = −2, une faute de signe. L'option (3, 0, 2) compte deux fois les termes en α (coefficient 10 au lieu de 5) et conclut à α = 1 ; ce point donne 3 + 0 − 2 − 6 = −5 dans P.",
+      "difficulty": 3
+    }
+  ]
+}

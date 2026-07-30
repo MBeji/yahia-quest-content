@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le seigneur des transformations de l'espace",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). ABCDEFGH est un parallélépipède tel que A(1, 0, −1), B(3, 1, −1), D(2, 2, −1) et E(2, 1, 2). Soit h l'homothétie de centre Ω(1, −1, 2) et de rapport −2. Quel est le volume du parallélépipède image de ABCDEFGH par h ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "18"
+        },
+        {
+          "id": "b",
+          "text": "36"
+        },
+        {
+          "id": "c",
+          "text": "72"
+        },
+        {
+          "id": "d",
+          "text": "−72"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Deux notions enchaînées : le produit mixte donne le volume de départ, l'homothétie le multiplie. 1) LES TROIS VECTEURS issus de A : AB⃗ = B − A = (2, 1, 0), AD⃗ = D − A = (1, 2, 0) et AE⃗ = E − A = (1, 1, 3). 2) LE PRODUIT VECTORIEL, coordonnée par coordonnée, avec (a, b, c) = (2, 1, 0) et (a′, b′, c′) = (1, 2, 0) : bc′ − cb′ = (1)(0) − (0)(2) = 0 ; ca′ − ac′ = (0)(1) − (2)(0) = 0 ; ab′ − ba′ = (2)(2) − (1)(1) = 4 − 1 = 3. Donc AB⃗∧AD⃗ = (0, 0, 3). Contrôle obligatoire par deux produits scalaires nuls : (0, 0, 3).AB⃗ = 0 + 0 + 0 = 0 ✓ et (0, 0, 3).AD⃗ = 0 + 0 + 0 = 0 ✓. 3) LE VOLUME DE DÉPART, par le théorème du cours : V = |(AB⃗∧AD⃗).AE⃗| = |(0)(1) + (0)(1) + (3)(3)| = |9| = 9. Contrôle par une seconde voie totalement indépendante, base fois hauteur. La base ABCD est portée par le plan z = −1, puisque A, B et D ont tous −1 pour troisième coordonnée (et C = B + AD⃗ = (4, 3, −1) aussi ✓). Son aire vaut ‖AB⃗∧AD⃗‖ = ‖(0, 0, 3)‖ = 3, ce qu'un calcul plan confirme : le parallélogramme bâti sur (2, 1) et (1, 2) a pour aire |2×2 − 1×1| = 3 ✓. La hauteur est la distance de E(2, 1, 2) au plan z = −1, soit |2 − (−1)| = 3. D'où V = 3 × 3 = 9 ✓. Les deux chemins concordent. 4) L'EFFET DE L'HOMOTHÉTIE. Une homothétie de rapport k multiplie les longueurs par |k|, les aires par k² et les volumes par |k|³. Avec k = −2, on a |k|³ = 8, donc le volume de l'image vaut 8 × 9 = 72 ✓. Le centre Ω ne joue aucun rôle ici : il fixe la POSITION de l'image, jamais sa taille. Contrôle par une seconde voie, en transformant les vecteurs eux-mêmes : la propriété caractéristique donne A′B′⃗ = k AB⃗ = (−4, −2, 0), A′D′⃗ = (−2, −4, 0) et A′E′⃗ = (−2, −2, −6) ; alors A′B′⃗∧A′D′⃗ = ((−2)(0) − (0)(−4) ; (0)(−2) − (−4)(0) ; (−4)(−4) − (−2)(−2)) = (0, 0, 12) — contrôle : (0, 0, 12).A′B′⃗ = 0 ✓ et (0, 0, 12).A′D′⃗ = 0 ✓ — puis le produit mixte (0, 0, 12).A′E′⃗ = −72, dont la valeur absolue est bien 72 ✓. Le piège courant : multiplier le volume par |k| au lieu de |k|³, ce qui donne 18 ; c'est le facteur des LONGUEURS, et il ne peut pas convenir, car une figure dont chaque arête double voit son volume octupler. Le distracteur 36 exécute la même faute d'un cran plus haut, k² = 4 : c'est le facteur des AIRES. Enfin −72 exécute k³ = −8 sans la valeur absolue : le produit mixte est signé, mais un volume ne l'est jamais — la formule du cours prend toujours des barres.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit S la sphère de centre I(1, −2, 2) et de rayon 3, et pour tout réel m soit P_m le plan d'équation 2x − y + 2z + m = 0. Déterminer toutes les valeurs de m pour lesquelles le plan P_m est tangent à la sphère S.",
+      "options": [
+        {
+          "id": "a",
+          "text": "m = 1 ou m = −1"
+        },
+        {
+          "id": "b",
+          "text": "m = 1 ou m = −17"
+        },
+        {
+          "id": "c",
+          "text": "m = 1"
+        },
+        {
+          "id": "d",
+          "text": "m = −5 ou m = −11"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sens inverse et cas limite : la position relative est imposée, il faut retrouver le paramètre. Le théorème du cours classe l'intersection d'une sphère et d'un plan selon h = d(I, P) : vide si h > R, réduite à un point — le cas TANGENT — si h = R, un cercle si h < R. La tangence est donc l'équation h = R, ni plus ni moins. 1) LA DISTANCE, avec n⃗(2, −1, 2) et ‖n⃗‖ = √(4 + 1 + 4) = 3 : h = |2(1) − (−2) + 2(2) + m| / 3 = |2 + 2 + 4 + m| / 3 = |8 + m| / 3. 2) L'ÉQUATION : |8 + m|/3 = 3, soit |8 + m| = 9. Une valeur absolue égale à 9 laisse DEUX possibilités, et c'est tout l'enjeu de la question : 8 + m = 9 donne m = 1, et 8 + m = −9 donne m = −17. Donc m = 1 ou m = −17 ✓. Ce résultat est géométriquement inévitable : les plans de vecteur normal (2, −1, 2) forment une famille de plans parallèles qui balaie l'espace, et une sphère en admet toujours DEUX comme plans tangents, un de chaque côté. 3) CONTRÔLE PAR UNE SECONDE VOIE, le point de contact, pour chacune des deux valeurs. Pour m = 1 : h = |8 + 1|/3 = 3 = R ✓, et le contact est le projeté H = I − t·n⃗ avec t = 9/9 = 1, soit H = (1, −2, 2) − (2, −1, 2) = (−1, −1, 0) ; H appartient bien au plan, car 2(−1) − (−1) + 2(0) + 1 = −2 + 1 + 1 = 0 ✓, et IH = ‖(2, −1, 2)‖ = 3 = R ✓. Pour m = −17 : h = |8 − 17|/3 = 9/3 = 3 = R ✓, et t = −9/9 = −1 donne H′ = I + n⃗ = (3, −3, 4) ; vérification dans le plan : 6 + 3 + 8 − 17 = 0 ✓, et IH′ = 3 ✓. Les deux plans touchent la sphère en deux points diamétralement opposés, ce qui achève de valider la paire. Le piège courant, et il coûte la moitié des points : résoudre |8 + m| = 9 comme une équation sans valeur absolue, ne retenir que m = 1 et oublier la seconde branche. Le distracteur m = 1 ou m = −1 exécute une autre lecture fautive de la valeur absolue, en écrivant « 8 + m = 9 ou 8 − m = 9 » : on change le signe de m au lieu de changer celui du crochet tout entier ; on le réfute en calculant h pour m = −1, soit |8 − 1|/3 = 7/3 ≈ 2,333 < 3 — le plan coupe la sphère suivant un cercle, il n'est pas tangent. Le distracteur m = −5 ou m = −11 exécute la faute reine du chapitre, la distance point-plan sans normalisation : en posant |8 + m| = 3 au lieu de |8 + m|/3 = 3, on oublie de diviser par ‖n⃗‖ ; ces deux plans sont d'ailleurs à la distance 1 du centre, donc franchement sécants.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit P le plan d'équation x + 2y − 2z + 3 = 0, soit t la translation de vecteur u⃗(2, −1, 2) et soit P′ = t(P) l'image de P par t. On considère de plus la sphère S de centre O et de rayon 7/3. Déterminer une équation de P′ et la position relative de S et de P′.",
+      "options": [
+        {
+          "id": "a",
+          "text": "P′ : x + 2y − 2z − 1 = 0 ; S et P′ se coupent suivant un cercle"
+        },
+        {
+          "id": "b",
+          "text": "P′ : x + 2y − 2z + 3 = 0 ; S et P′ sont tangents"
+        },
+        {
+          "id": "c",
+          "text": "P′ : x + 2y − 2z + 7 = 0 ; S et P′ ne se coupent pas"
+        },
+        {
+          "id": "d",
+          "text": "P′ : x + 2y − 2z + 7 = 0 ; S et P′ sont tangents"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Deux notions en une : l'image d'une surface par une translation, puis le test sphère-plan. 1) LA MÉTHODE D'IMAGE, celle que le cours martèle : on n'avance jamais, on exprime les ANCIENNES coordonnées en fonction des NOUVELLES. L'expression analytique de t donne x′ = x + 2, y′ = y − 1, z′ = z + 2, donc x = x′ − 2, y = y′ + 1, z = z′ − 2. On substitue dans l'équation de P : (x′ − 2) + 2(y′ + 1) − 2(z′ − 2) + 3 = x′ + 2y′ − 2z′ + (−2 + 2 + 4 + 3) = x′ + 2y′ − 2z′ + 7. D'où P′ : x + 2y − 2z + 7 = 0. Le vecteur normal est inchangé, (1, 2, −2) : l'image d'un plan par une translation est bien un plan PARALLÈLE ✓. Contrôle sur deux points, la vérification qui tranche : A(−3, 0, 0) est dans P (−3 + 0 − 0 + 3 = 0 ✓) et son image A′ = A + u⃗ = (−1, −1, 2) vérifie −1 − 2 − 4 + 7 = 0 ✓ ; B(1, 0, 2) est dans P (1 + 0 − 4 + 3 = 0 ✓) et son image B′ = (3, −1, 4) vérifie 3 − 2 − 8 + 7 = 0 ✓. Contrôle par une seconde voie, algébrique : le terme constant se décale de −n⃗.u⃗, avec n⃗.u⃗ = (1)(2) + (2)(−1) + (−2)(2) = 2 − 2 − 4 = −4, donc d′ = 3 − (−4) = 7 ✓. 2) LA POSITION RELATIVE. Avec ‖n⃗‖ = √(1 + 4 + 4) = 3, on a h = d(O, P′) = |0 + 0 − 0 + 7|/3 = 7/3. Or le rayon vaut exactement 7/3 : h = R, donc S et P′ sont TANGENTS ✓ — l'intersection se réduit à un seul point. Contrôle du point de contact : c'est le projeté H = O − t·n⃗ avec t = 7/9, soit H = (−7/9, −14/9, 14/9) ; il appartient bien à P′, car −7/9 − 28/9 − 28/9 + 7 = −63/9 + 7 = 0 ✓, et OH = (7/9)‖(1, 2, −2)‖ = (7/9)(3) = 7/3 = R ✓. À noter, et c'est ce que la translation a changé : le plan de départ P était SÉCANT, puisque d(O, P) = 3/3 = 1 < 7/3 ; en glissant, il est devenu tangent. Le piège courant : « avancer » au lieu de reculer, c'est-à-dire substituer x + 2 à la place de x, ce qui donne le terme constant 3 + n⃗.u⃗ = −1 et le plan x + 2y − 2z − 1 = 0 — celui du premier distracteur, qui translate du mauvais côté ; on le réfute d'un point : l'image de A(−3, 0, 0) est (−1, −1, 2), et −1 − 2 − 4 − 1 = −8 ≠ 0. Le distracteur qui garde x + 2y − 2z + 3 = 0 suppose le plan globalement invariant ; il ne l'est que si u⃗ le dirige, or n⃗.u⃗ = −4 ≠ 0, donc u⃗ n'est pas parallèle à P. Enfin l'option qui annonce une intersection vide exécute la distance non normalisée : elle compare 7 à 7/3 au lieu de comparer 7/3 à 7/3, et conclut h > R alors que le contact existe et se calcule.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit D la droite passant par A(1, 2, 0) et de vecteur directeur u⃗(1, −1, 2), et Δ la droite passant par B(0, 1, 1) et de vecteur directeur v⃗(2, 1, −1). Déterminer une équation cartésienne du plan Q qui contient la droite D et qui est parallèle à la droite Δ.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x − 5y − 3z + 9 = 0"
+        },
+        {
+          "id": "b",
+          "text": "x + 5y − 3z − 11 = 0"
+        },
+        {
+          "id": "c",
+          "text": "x − 5y − 3z + 8 = 0"
+        },
+        {
+          "id": "d",
+          "text": "x − y + 2z + 1 = 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un plan se détermine par une DIRECTION (son vecteur normal) et une POSITION (un point qu'il contient) : les deux conditions de l'énoncé fournissent exactement ces deux données, et il faut les utiliser à la bonne place. 1) LA DIRECTION. Contenir D impose que Q soit dirigé par u⃗ ; être parallèle à Δ impose qu'il soit aussi dirigé par v⃗. Un vecteur normal est donc n⃗ = u⃗∧v⃗, avec (a, b, c) = (1, −1, 2) et (a′, b′, c′) = (2, 1, −1) : bc′ − cb′ = (−1)(−1) − (2)(1) = 1 − 2 = −1 ; ca′ − ac′ = (2)(2) − (1)(−1) = 4 + 1 = 5 ; ab′ − ba′ = (1)(1) − (−1)(2) = 1 + 2 = 3. Donc u⃗∧v⃗ = (−1, 5, 3). Contrôle obligatoire par deux produits scalaires nuls : (−1, 5, 3).u⃗ = −1 − 5 + 6 = 0 ✓ et (−1, 5, 3).v⃗ = −2 + 5 − 3 = 0 ✓. Ce vecteur n'est pas nul, donc u⃗ et v⃗ ne sont pas colinéaires et le plan existe bien. On peut changer n⃗ en son opposé (1, −5, −3), un vecteur normal étant défini à un facteur non nul près. 2) LA POSITION. L'équation est x − 5y − 3z + d = 0, et le point à injecter est A, qui est sur D — la droite CONTENUE : 1 − 5(2) − 3(0) + d = 1 − 10 + d = 0, donc d = 9 et Q : x − 5y − 3z + 9 = 0 ✓. 3) LES VÉRIFICATIONS, par deux voies indépendantes. D'abord la droite D tout entière : A(1, 2, 0) donne 1 − 10 − 0 + 9 = 0 ✓ et le second point A + u⃗ = (2, 1, 2) donne 2 − 5 − 6 + 9 = 0 ✓ — deux points d'une droite dans un plan, la droite y est. Ensuite le parallélisme avec Δ : (1, −5, −3).v⃗ = 2 − 5 + 3 = 0 ✓, donc v⃗ dirige Q. Il reste à s'assurer que Δ n'est pas CONTENUE dans Q, sans quoi le mot « parallèle » serait usurpé : B(0, 1, 1) donne 0 − 5 − 3 + 9 = 1 ≠ 0 ✓, B n'est pas dans Q, le parallélisme est strict. Au passage, ce 1 est le produit mixte det(AB⃗, u⃗, v⃗) au signe près, avec AB⃗ = (−1, −1, 1) : (1, −5, −3).AB⃗ = −1 + 5 − 3 = 1 ≠ 0 — les deux droites ne sont pas coplanaires, et c'est bien pour cela que Q est l'unique plan répondant à la question. Le piège courant : injecter le point B au lieu du point A, c'est-à-dire fixer la position du plan avec la droite qu'il doit seulement LONGER. On obtient alors 0 − 5 − 3 + d = 0, donc d = 8 et le plan x − 5y − 3z + 8 = 0 ; il est bien parallèle à Δ, mais il la contient et ne contient plus D — A y donne 1 − 10 + 8 = −1 ≠ 0. Le distracteur x + 5y − 3z − 11 = 0 exécute l'erreur de signe sur la DEUXIÈME coordonnée du produit vectoriel, la seule qui s'écrive à l'envers : en calculant ac′ − ca′ = (1)(−1) − (2)(2) = −5 au lieu de ca′ − ac′ = 5, on obtient la normale (1, 5, −3) puis d = −11 ; le contrôle réglementaire l'aurait attrapé, car (1, 5, −3).u⃗ = 1 − 5 − 6 = −10 ≠ 0. Enfin x − y + 2z + 1 = 0 confond vecteur DIRECTEUR et vecteur NORMAL : il prend u⃗ pour normale du plan, si bien que D lui est perpendiculaire au lieu d'être contenue — (1, −1, 2).u⃗ = 1 + 1 + 4 = 6 ≠ 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Chasse à l'erreur. L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗) et f est l'application qui, à tout point M(x, y, z), associe le point M′(x′, y′, z′) tel que x′ = −2x + 3 ; y′ = −2y − 6 ; z′ = −2z + 9. Voici une solution proposée, en quatre étapes. ① « Cette expression est de la forme x′ = kx + α, y′ = ky + β, z′ = kz + δ avec k = −2 ≠ 1 : f est donc une homothétie de rapport −2. » ② « Son centre est le point I de coordonnées (α/(1 − k), β/(1 − k), δ/(1 − k)) = (3/3, −6/3, 9/3), soit I(1, −2, 3). » ③ « Soit S la sphère de centre J(2, 1, 0) et de rayon 2. Son image par f est la sphère de centre J′(−1, −8, 9) et de rayon 2. » ④ « L'image par f d'un cube d'arête 3 est un cube d'arête 6, donc de volume 216. » Quelle est la PREMIÈRE étape fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape ①"
+        },
+        {
+          "id": "b",
+          "text": "L'étape ②"
+        },
+        {
+          "id": "c",
+          "text": "L'étape ③"
+        },
+        {
+          "id": "d",
+          "text": "L'étape ④"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ceci est une chasse à l'erreur : la solution proposée contient une faute plantée, l'explication décrit donc un raisonnement volontairement faux. La PREMIÈRE — et seule — étape fausse est l'étape ③ ✓. Reprenons la fiche ligne à ligne. ① EST JUSTE. Le cours énonce la réciproque de l'expression analytique : toute application de la forme x′ = kx + α, y′ = ky + β, z′ = kz + δ avec k ≠ 1 est une homothétie de rapport k. Ici le même coefficient −2 multiplie les trois coordonnées, et −2 ≠ 1 : f est une homothétie de rapport −2 ✓. ② EST JUSTE. Avec 1 − k = 1 − (−2) = 3, on obtient I(3/3, −6/3, 9/3) = I(1, −2, 3) ✓. Contrôle par la propriété qui définit le centre — il est le seul point FIXE : −2(1) + 3 = 1 ✓, −2(−2) − 6 = 4 − 6 = −2 ✓ et −2(3) + 9 = −6 + 9 = 3 ✓. Les trois lignes redonnent I. ③ EST FAUSSE. Le centre de l'image est bien calculé : x′ = −2(2) + 3 = −1, y′ = −2(1) − 6 = −8, z′ = −2(0) + 9 = 9, donc J′(−1, −8, 9) ✓ — et on le recoupe par la définition, IJ⃗ = J − I = (1, 3, −3), donc IJ′⃗ doit valoir k·IJ⃗ = (−2)(1, 3, −3) = (−2, −6, 6), et I + (−2, −6, 6) = (−1, −8, 9) ✓. Mais LE RAYON EST FAUX : une homothétie ne conserve pas les longueurs, elle les multiplie par |k|. Le théorème du cours est explicite : l'image d'une sphère de centre J et de rayon R par une homothétie de rapport k est la sphère de centre l'image de J et de rayon |k|R. Ici |k|R = 2 × 2 = 4, et non 2. ÉTAPE CORRIGÉE : « ③ L'image de S par f est la sphère de centre J′(−1, −8, 9) et de rayon 4. » Contrôle par une seconde voie, sur un point : le point M(4, 1, 0) est sur S (sa distance à J vaut ‖(2, 0, 0)‖ = 2 ✓) ; son image est M′(−2(4) + 3, −2(1) − 6, −2(0) + 9) = (−5, −8, 9), et sa distance à J′ vaut ‖(−4, 0, 0)‖ = 4 ✓. Le rayon a bien doublé. Le rayon conservé est la signature de la TRANSLATION, pas de l'homothétie : confondre les deux transformations est le piège courant de cette fin de chapitre, et il se détecte en une ligne, puisque |k| = 2 ≠ 1. ④ EST JUSTE, et c'est ce qui rend l'exercice sélectif : l'arête est multipliée par |k| = 2, donc 3 devient 6, et le volume passe de 3³ = 27 à 6³ = 216 — ce qui est exactement 27 × |k|³ = 27 × 8 = 216 ✓, cohérent avec la règle « longueurs ×|k|, aires ×k², volumes ×|k|³ ». Répondre ④ revient à soupçonner l'étape la plus spectaculaire alors qu'elle est correcte ; répondre ① ou ② revient à contester une lecture de formule et un point fixe que la vérification valide en trois calculs. La leçon du problème : dans une chaîne de transformations, c'est toujours l'étape qui parle de LONGUEUR qu'il faut relire deux fois.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On considère les droites D : { x = 1 + α ; y = 2α ; z = 2 − α }, α ∈ ℝ, et Δ : { x = 4 + 2β ; y = 1 − β ; z = 2 + β }, β ∈ ℝ. Déterminer leur position relative et, le cas échéant, une équation cartésienne du plan qu'elles définissent.",
+      "options": [
+        {
+          "id": "a",
+          "text": "D et Δ sont sécantes en I(2, 2, 1) et définissent le plan x − 3y − 5z − 9 = 0"
+        },
+        {
+          "id": "b",
+          "text": "D et Δ sont sécantes en I(2, 2, 1) et définissent le plan x − 3y − 5z + 9 = 0"
+        },
+        {
+          "id": "c",
+          "text": "D et Δ ne sont pas coplanaires : aucun plan ne les contient toutes les deux"
+        },
+        {
+          "id": "d",
+          "text": "D et Δ sont sécantes en I(0, −2, 3) et définissent le plan x − 3y − 5z + 9 = 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Chaîne complète : lire les éléments, trancher la coplanarité, trancher le parallélisme, puis produire le point et le plan. 1) LECTURE. D passe par A(1, 0, 2) et a pour vecteur directeur u⃗(1, 2, −1) ; Δ passe par B(4, 1, 2) et a pour vecteur directeur v⃗(2, −1, 1). 2) COPLANARITÉ, par le produit mixte. u⃗∧v⃗ = ((2)(1) − (−1)(−1) ; (−1)(2) − (1)(1) ; (1)(−1) − (2)(2)) = (2 − 1 ; −2 − 1 ; −1 − 4) = (1, −3, −5). Contrôle obligatoire par deux produits scalaires nuls : (1, −3, −5).u⃗ = 1 − 6 + 5 = 0 ✓ et (1, −3, −5).v⃗ = 2 + 3 − 5 = 0 ✓. Puis AB⃗ = B − A = (3, 1, 0) et det(AB⃗, u⃗, v⃗) = (u⃗∧v⃗).AB⃗ = 3 − 3 + 0 = 0 : les deux droites sont COPLANAIRES. 3) PARALLÈLES OU SÉCANTES ? Le produit vectoriel u⃗∧v⃗ = (1, −3, −5) n'est pas nul, donc u⃗ et v⃗ ne sont pas colinéaires : les droites ne sont pas parallèles. Coplanaires et non parallèles, elles sont donc SÉCANTES. 4) LE POINT, en résolvant le système COMPLET — les trois lignes, jamais deux. La troisième donne 2 − α = 2 + β, donc α = −β. La première devient 1 − β = 4 + 2β, soit 3β = −3 et β = −1, d'où α = 1. On vérifie la deuxième ligne, celle qui n'a pas servi : à gauche y = 2α = 2, à droite y = 1 − β = 2 ✓, le système est compatible. Le point commun est I = (1 + 1 ; 2 ; 2 − 1) = (2, 2, 1), et on le retrouve sur Δ avec β = −1 : (4 − 2 ; 1 + 1 ; 2 − 1) = (2, 2, 1) ✓. 5) LE PLAN. Deux droites sécantes définissent un plan, de vecteur normal u⃗∧v⃗ = (1, −3, −5) et passant par I : 2 − 3(2) − 5(1) + d = 2 − 6 − 5 + d = 0, donc d = 9 et le plan est x − 3y − 5z + 9 = 0 ✓. Contrôle sur quatre points, deux par droite : A(1, 0, 2) donne 1 − 0 − 10 + 9 = 0 ✓ et A + u⃗ = (2, 2, 1) donne 2 − 6 − 5 + 9 = 0 ✓ ; B(4, 1, 2) donne 4 − 3 − 10 + 9 = 0 ✓ et B + v⃗ = (6, 0, 3) donne 6 − 0 − 15 + 9 = 0 ✓. Les deux droites sont bien dans ce plan. Le piège courant : prendre d = n⃗.I⃗ au lieu de son opposé, ce qui donne x − 3y − 5z − 9 = 0 ; ce plan a la bonne inclinaison mais la mauvaise position, et il ne contient même pas I, car 2 − 6 − 5 − 9 = −18 ≠ 0 — le vecteur normal fixe la direction, c'est le point injecté qui fixe le terme constant. Le distracteur qui annonce des droites non coplanaires exécute l'erreur de signe sur la deuxième coordonnée du produit vectoriel : en écrivant ac′ − ca′ = (1)(1) − (−1)(2) = 3 au lieu de ca′ − ac′ = −3, on obtient (1, 3, −5) puis un déterminant (1, 3, −5).AB⃗ = 3 + 3 + 0 = 6 ≠ 0 et la conclusion inverse ; le contrôle réglementaire le réfute, car (1, 3, −5).u⃗ = 1 + 6 + 5 = 12 ≠ 0. Enfin le distracteur I(0, −2, 3) est redoutable, parce qu'il est cohérent avec le plan annoncé : ce point est sur D (α = −1) donc dans le plan, et il correspond au fait de reporter dans D la valeur trouvée pour β. Mais il n'est pas sur Δ : 4 + 2β = 0 impose β = −2, et Δ vaut alors (0, 3, 0) ≠ (0, −2, 3). Un point d'intersection ne se déclare qu'après avoir été retrouvé sur les DEUX droites.",
+      "difficulty": 3
+    }
+  ]
+}
