@@ -1,0 +1,65 @@
+{
+  "title": "Test de compréhension ⭐ : Notion de polynômes",
+  "questions": [
+    {
+      "prompt": "Quel est le degré du polynôme P(x) = 5x³ − 7x² + 2x − 4 ?",
+      "options": [
+        { "id": "a", "text": "1" },
+        { "id": "b", "text": "3" },
+        { "id": "c", "text": "4" },
+        { "id": "d", "text": "5" }
+      ],
+      "correctOption": "b",
+      "explanation": "Le degré est l'exposant du terme du plus haut degré, ici 5x³ : d°(P) = 3 ✓. La réponse 4 compte le nombre de termes et non le degré ; la réponse 5 donne le coefficient dominant (le coefficient de x³) au lieu de l'exposant ; la réponse 1 correspond au terme 2x, qui n'est pas le terme du plus haut degré.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un réel α est une racine (ou un zéro) du polynôme f lorsque :",
+      "options": [
+        { "id": "a", "text": "f(α) = 0" },
+        { "id": "b", "text": "f(0) = α" },
+        { "id": "c", "text": "α = 0" },
+        { "id": "d", "text": "le degré de f est égal à α" }
+      ],
+      "correctOption": "a",
+      "explanation": "Par définition, α est une racine de f si l'image de α par f est nulle, c'est-à-dire f(α) = 0 ✓. Écrire f(0) = α échange les rôles de α et de 0 : f(0) est simplement le terme constant du polynôme. Écrire α = 0 confond la racine avec le nombre 0, alors qu'une racine peut valoir n'importe quel réel. Enfin « le degré de f est égal à α » confond une racine avec le degré, qui est un exposant et non une valeur annulant f.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le polynôme f est de degré 2 et le polynôme g est de degré 3. Quel est le degré du produit fg ?",
+      "options": [
+        { "id": "a", "text": "2" },
+        { "id": "b", "text": "3" },
+        { "id": "c", "text": "5" },
+        { "id": "d", "text": "6" }
+      ],
+      "correctOption": "c",
+      "explanation": "Le degré d'un produit est la somme des degrés : d°(fg) = 2 + 3 = 5 ✓. La réponse 6 multiplie les degrés au lieu de les additionner ; les réponses 2 et 3 gardent le degré de l'un des deux facteurs, comme si le produit ne changeait pas le degré.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On sait que, pour tout réel x, ax² + bx + c = 3x² − 5. Que valent a, b et c ?",
+      "options": [
+        { "id": "a", "text": "a = 0, b = 3 et c = −5" },
+        { "id": "b", "text": "a = 3, b = 0 et c = 5" },
+        { "id": "c", "text": "a = 3, b = −5 et c = 0" },
+        { "id": "d", "text": "a = 3, b = 0 et c = −5" }
+      ],
+      "correctOption": "d",
+      "explanation": "Deux polynômes égaux pour tout x ont les mêmes coefficients de même rang. À droite, le coefficient de x² est 3, celui de x est 0 (le terme en x est absent) et le terme constant est −5 : a = 3, b = 0 et c = −5 ✓. La réponse « b = −5 et c = 0 » place −5 en coefficient de x au lieu du terme constant ; « c = 5 » oublie le signe du terme constant ; et « a = 0, b = 3 » décale tous les coefficients d'un rang.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le polynôme P est de degré 3 et admet 2 comme racine. Que peut-on écrire ?",
+      "options": [
+        { "id": "a", "text": "P(x) = (x − 2)Q(x), avec Q de degré 2" },
+        { "id": "b", "text": "P(x) = (x + 2)Q(x), avec Q de degré 2" },
+        { "id": "c", "text": "P(x) = (x − 2)Q(x), avec Q de degré 3" },
+        { "id": "d", "text": "P(x) = 2Q(x), avec Q de degré 3" }
+      ],
+      "correctOption": "a",
+      "explanation": "Si α est racine d'un polynôme de degré n, alors ce polynôme est factorisable par (x − α) et le quotient est de degré n − 1 : ici P(x) = (x − 2)Q(x) avec d°(Q) = 3 − 1 = 2 ✓. L'écriture (x + 2)Q(x) se trompe de signe : la racine 2 donne le facteur (x − 2), pas (x + 2). L'écriture (x − 2)Q(x) avec Q de degré 3 oublie que la factorisation fait baisser le degré d'une unité (le produit serait alors de degré 4). Enfin 2Q(x) met la racine en facteur constant, ce qui ne factorise rien.",
+      "difficulty": 2
+    }
+  ]
+}

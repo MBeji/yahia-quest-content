@@ -1,0 +1,82 @@
+{
+  "title": "⭐ Exercice : Réaffûter les outils de base",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Parmi ces nombres, lequel appartient à ℤ sans appartenir à ℕ ?",
+      "options": [
+        { "id": "a", "text": "−63/7" },
+        { "id": "b", "text": "5/8" },
+        { "id": "c", "text": "2,5" },
+        { "id": "d", "text": "√36" }
+      ],
+      "correctOption": "a",
+      "explanation": "−63/7 = −9 : c'est un entier relatif, mais il est négatif donc il n'est pas un entier naturel ✓. √36 = 6 appartient à ℕ ; 5/8 = 0,625 et 2,5 sont décimaux mais pas entiers.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Développer et réduire (2 + a)³.",
+      "options": [
+        { "id": "a", "text": "8 + a³" },
+        { "id": "b", "text": "8 + 6a + 6a² + a³" },
+        { "id": "c", "text": "8 + 12a + 12a² + a³" },
+        { "id": "d", "text": "8 + 12a + 6a² + a³" }
+      ],
+      "correctOption": "d",
+      "explanation": "(2 + a)³ = 2³ + 3 × 2² × a + 3 × 2 × a² + a³ = 8 + 12a + 6a² + a³ ✓. L'expression 8 + a³ applique à tort le cube terme à terme ; 8 + 6a + 6a² + a³ utilise 3 × 2 au lieu de 3 × 2² pour le terme en a ; 8 + 12a + 12a² + a³ double par erreur le coefficient de a².",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Factoriser 25x² − 9.",
+      "options": [
+        { "id": "a", "text": "(5x − 3)²" },
+        { "id": "b", "text": "(5x − 9)(5x + 9)" },
+        { "id": "c", "text": "(5x − 3)(5x + 3)" },
+        { "id": "d", "text": "(25x − 3)(25x + 3)" }
+      ],
+      "correctOption": "c",
+      "explanation": "25x² − 9 = (5x)² − 3² = (5x − 3)(5x + 3) ✓, c'est la différence de deux carrés. La factorisation (5x − 3)² correspondrait à 25x² − 30x + 9 ; les formes (5x − 9)(5x + 9) et (25x − 3)(25x + 3) ne repèrent pas correctement les carrés (9 = 3² et 25x² = (5x)², pas (25x)²).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un article affiché à 32 dinars est soldé à 20,400 dinars. Quel est le pourcentage de remise ?",
+      "options": [
+        { "id": "a", "text": "11,60 %" },
+        { "id": "b", "text": "20,40 %" },
+        { "id": "c", "text": "36,25 %" },
+        { "id": "d", "text": "63,75 %" }
+      ],
+      "correctOption": "c",
+      "explanation": "La baisse vaut 32 − 20,400 = 11,600 dinars et le taux se calcule sur le prix initial : 11,600 / 32 = 0,3625, soit 36,25 % ✓. Le taux 11,60 % prend la baisse en dinars pour un pourcentage ; 20,40 % fait la même confusion avec le prix soldé ; 63,75 % (= 20,400 / 32) est le pourcentage du prix conservé, pas celui de la remise.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On sait que −2 ≤ a ≤ 3. Quel encadrement de −3a + 5 en découle ?",
+      "options": [
+        { "id": "a", "text": "−1 ≤ −3a + 5 ≤ 14" },
+        { "id": "b", "text": "−4 ≤ −3a + 5 ≤ 11" },
+        { "id": "c", "text": "−9 ≤ −3a + 5 ≤ 6" },
+        { "id": "d", "text": "−11 ≤ −3a + 5 ≤ 4" }
+      ],
+      "correctOption": "b",
+      "explanation": "Multiplier par −3 renverse les inégalités : de −2 ≤ a ≤ 3 on obtient −9 ≤ −3a ≤ 6, puis en ajoutant 5 : −4 ≤ −3a + 5 ≤ 11 ✓. Les bornes −1 et 14 oublient de renverser les inégalités ; les bornes −9 et 6 oublient d'ajouter 5 ; les bornes −11 et 4 appliquent le renversement une seconde fois sur le résultat.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La calculatrice affiche 75/17 = 4,411764705. Quelle est la valeur approchée de 75/17 à 10⁻² près par excès ?",
+      "options": [
+        { "id": "a", "text": "4,41" },
+        { "id": "b", "text": "4,42" },
+        { "id": "c", "text": "4,411" },
+        { "id": "d", "text": "4,412" }
+      ],
+      "correctOption": "b",
+      "explanation": "Une valeur approchée par excès est supérieure au nombre : au centième, c'est 4,42 ✓, car 4,41 < 4,4117… < 4,42. La valeur 4,41 est l'approximation par défaut (et aussi l'arrondi) au centième ; 4,411 et 4,412 sont des approximations à 10⁻³ près, pas à 10⁻² près.",
+      "difficulty": 2
+    }
+  ]
+}

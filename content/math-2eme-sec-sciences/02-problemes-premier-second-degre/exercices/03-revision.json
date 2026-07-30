@@ -1,0 +1,82 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Mise en équation, racines et signe",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Écris le trinôme x² − 6x + 1 sous forme canonique.",
+      "options": [
+        { "id": "a", "text": "(x − 3)² − 10" },
+        { "id": "b", "text": "(x − 3)² − 8" },
+        { "id": "c", "text": "(x − 3)² + 1" },
+        { "id": "d", "text": "(x + 3)² − 8" }
+      ],
+      "correctOption": "b",
+      "explanation": "On complète le carré : x² − 6x = (x − 3)² − 9, donc x² − 6x + 1 = (x − 3)² − 9 + 1 = (x − 3)² − 8 ✓ (vérification en développant : x² − 6x + 9 − 8 = x² − 6x + 1). La réponse (x − 3)² + 1 oublie de retrancher le 9 introduit par le carré ; (x − 3)² − 10 calcule 1 − 9 avec une erreur de signe ; (x + 3)² − 8 se trompe sur le signe à l'intérieur du carré.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La somme de cinq entiers consécutifs est comprise entre 2004 et 2009. Quel est le plus grand de ces cinq entiers ?",
+      "options": [
+        { "id": "a", "text": "399" },
+        { "id": "b", "text": "401" },
+        { "id": "c", "text": "402" },
+        { "id": "d", "text": "403" }
+      ],
+      "correctOption": "d",
+      "explanation": "Soit n le plus petit : la somme vaut n + (n+1) + (n+2) + (n+3) + (n+4) = 5n + 10 = 5(n + 2), donc c'est toujours un multiple de 5. Le seul multiple de 5 entre 2004 et 2009 est 2005, d'où 5(n + 2) = 2005, soit n + 2 = 401 et n = 399. Les cinq entiers sont 399, 400, 401, 402 et 403 : le plus grand est 403 ✓ (leur somme fait bien 2005). La réponse 401 s'arrête au terme du milieu, égal à 2005/5 ; la réponse 399 donne le plus petit au lieu du plus grand ; la réponse 402 vient d'une mise en équation fautive du type 5n + 15 = 2005 (on additionne 1 + 2 + 3 + 4 + 5 au lieu de 1 + 2 + 3 + 4), qui donne n = 398 et un plus grand terme de 402.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résous dans ℝ l'équation bicarrée x⁴ − 5x² + 4 = 0.",
+      "options": [
+        { "id": "a", "text": "{−2 ; −1 ; 1 ; 2}" },
+        { "id": "b", "text": "{−2 ; 2}" },
+        { "id": "c", "text": "{1 ; 2}" },
+        { "id": "d", "text": "{1 ; 4}" }
+      ],
+      "correctOption": "a",
+      "explanation": "On pose X = x², d'où X² − 5X + 4 = 0 : Δ = 25 − 16 = 9, donc X = 1 ou X = 4. On revient ensuite à x : x² = 1 donne x = −1 ou x = 1, et x² = 4 donne x = −2 ou x = 2. L'ensemble des solutions est {−2 ; −1 ; 1 ; 2} ✓. La réponse {1 ; 4} s'arrête aux valeurs de X sans revenir à x ; {1 ; 2} ne garde que les racines positives ; {−2 ; 2} oublie le cas x² = 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le tableau ci-dessous donne le signe d'un trinôme g(x). Quel est l'ensemble des solutions de l'inéquation g(x) ≥ 0 ?\n<svg viewBox=\"0 0 340 110\"><rect x=\"10\" y=\"10\" width=\"320\" height=\"90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"10\" y1=\"45\" x2=\"330\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"70\" y1=\"10\" x2=\"70\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"160\" y1=\"45\" x2=\"160\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"235\" y1=\"45\" x2=\"235\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><g font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"40\" y=\"33\" text-anchor=\"middle\">x</text><text x=\"95\" y=\"33\" text-anchor=\"middle\">−∞</text><text x=\"160\" y=\"33\" text-anchor=\"middle\">−1</text><text x=\"235\" y=\"33\" text-anchor=\"middle\">4</text><text x=\"300\" y=\"33\" text-anchor=\"middle\">+∞</text><text x=\"40\" y=\"80\" text-anchor=\"middle\">g(x)</text><text x=\"160\" y=\"80\" text-anchor=\"middle\">0</text><text x=\"235\" y=\"80\" text-anchor=\"middle\">0</text></g><g font-size=\"18\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"115\" y=\"81\" text-anchor=\"middle\" fill=\"#0f6e56\">+</text><text x=\"198\" y=\"81\" text-anchor=\"middle\" fill=\"#b91c1c\">−</text><text x=\"285\" y=\"81\" text-anchor=\"middle\" fill=\"#0f6e56\">+</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "]−∞ ; −1[ ∪ ]4 ; +∞[" },
+        { "id": "b", "text": "]−∞ ; −1] ∪ [4 ; +∞[" },
+        { "id": "c", "text": "[−1 ; 4]" },
+        { "id": "d", "text": "]−1 ; 4[" }
+      ],
+      "correctOption": "b",
+      "explanation": "Le tableau montre que g est positif avant −1 et après 4, négatif entre les deux, et s'annule en −1 et en 4. L'inégalité étant large, on garde aussi les valeurs qui annulent g : l'ensemble des solutions est ]−∞ ; −1] ∪ [4 ; +∞[ ✓. Le piège courant est d'écrire des bornes ouvertes : ]−∞ ; −1[ ∪ ]4 ; +∞[ correspond à g(x) > 0, sans les racines. Les intervalles [−1 ; 4] et ]−1 ; 4[ décrivent au contraire la zone où g est négatif, donc l'inégalité inverse.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Deux nombres réels ont pour somme 11 et pour produit 30. Quels sont ces deux nombres ?",
+      "options": [
+        { "id": "a", "text": "−6 et −5" },
+        { "id": "b", "text": "3 et 10" },
+        { "id": "c", "text": "5 et 6" },
+        { "id": "d", "text": "5 et 7" }
+      ],
+      "correctOption": "c",
+      "explanation": "Deux nombres de somme S et de produit P sont les racines de x² − Sx + P = 0, ici x² − 11x + 30 = 0 : Δ = 121 − 120 = 1, donc les nombres sont (11 − 1)/2 = 5 et (11 + 1)/2 = 6 ✓ (5 + 6 = 11 et 5 × 6 = 30). La réponse −6 et −5 donne bien un produit de 30 mais une somme de −11 ; 3 et 10 respecte le produit mais pas la somme (13) ; 5 et 7 a pour somme 12 et pour produit 35.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résous l'équation √(x + 7) = x + 1.",
+      "options": [
+        { "id": "a", "text": "x = −3" },
+        { "id": "b", "text": "x = −3 et x = 2" },
+        { "id": "c", "text": "x = 2" },
+        { "id": "d", "text": "L'équation n'a pas de solution" }
+      ],
+      "correctOption": "c",
+      "explanation": "Il faut x + 7 ≥ 0 et, le second membre devant être positif, x + 1 ≥ 0 : l'ensemble de résolution est donc [−1 ; +∞[. En élevant au carré : x + 7 = x² + 2x + 1, soit x² + x − 6 = 0, avec Δ = 1 + 24 = 25, d'où x = 2 ou x = −3. On rejette −3, qui n'appartient pas à l'ensemble de résolution (√4 = 2 alors que −3 + 1 = −2). La seule solution est x = 2 ✓ (√9 = 3 = 2 + 1). Le piège courant est de garder les deux valeurs après élévation au carré, sans vérification.",
+      "difficulty": 2
+    }
+  ]
+}

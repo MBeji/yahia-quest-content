@@ -1,0 +1,82 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec les polynômes",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Parmi les fonctions suivantes, laquelle est une fonction polynôme ?",
+      "options": [
+        { "id": "a", "text": "x ↦ |x|" },
+        { "id": "b", "text": "x ↦ √x + 1" },
+        { "id": "c", "text": "x ↦ −2x³ + 5x² − 1" },
+        { "id": "d", "text": "x ↦ (3x − 1)/(x + 2)" }
+      ],
+      "correctOption": "c",
+      "explanation": "Une fonction polynôme est une somme de termes de la forme a xⁿ (un coefficient réel multiplié par une puissance entière positive de x) : x ↦ −2x³ + 5x² − 1 en est une ✓. La fonction x ↦ |x| n'est pas une puissance de x. La fonction x ↦ √x + 1 fait intervenir √x, dont l'exposant n'est pas entier. Enfin x ↦ (3x − 1)/(x + 2) est un quotient de deux polynômes : c'est une fonction rationnelle, pas un polynôme.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est le terme constant du polynôme P(x) = 4x³ − x² + 7x − 9 ?",
+      "options": [
+        { "id": "a", "text": "−9" },
+        { "id": "b", "text": "−1" },
+        { "id": "c", "text": "4" },
+        { "id": "d", "text": "7" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le terme constant est le coefficient a₀, celui qui ne porte aucune puissance de x : ici −9 ✓. La réponse 4 donne le coefficient dominant (celui de x³) ; la réponse 7 donne le coefficient du terme du 1er degré 7x ; la réponse −1 donne le coefficient de x².",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f la fonction polynôme définie par f(x) = 2x³ − 5x + 1. Combien vaut f(−2) ?",
+      "options": [
+        { "id": "a", "text": "−25" },
+        { "id": "b", "text": "−6" },
+        { "id": "c", "text": "−5" },
+        { "id": "d", "text": "27" }
+      ],
+      "correctOption": "c",
+      "explanation": "On remplace x par −2 : 2 × (−2)³ − 5 × (−2) + 1 = −16 + 10 + 1 = −5 ✓. La réponse −25 vient d'une erreur de signe sur le terme −5x, calculé comme −16 − 10 + 1. La réponse 27 vient de (−2)³ traité comme 8 (le cube d'un nombre négatif est négatif). La réponse −6 oublie le terme constant +1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Lequel des réels suivants est une racine du polynôme P(x) = x² − 5x + 6 ?",
+      "options": [
+        { "id": "a", "text": "−1" },
+        { "id": "b", "text": "2" },
+        { "id": "c", "text": "5" },
+        { "id": "d", "text": "6" }
+      ],
+      "correctOption": "b",
+      "explanation": "Un réel est racine lorsqu'il annule le polynôme : P(2) = 4 − 10 + 6 = 0 ✓, donc 2 est une racine. Les autres ne conviennent pas : P(−1) = 1 + 5 + 6 = 12, P(5) = 25 − 25 + 6 = 6 et P(6) = 36 − 30 + 6 = 12. Attention à ne pas confondre une racine avec un coefficient du polynôme (5 et 6 apparaissent dans l'écriture de P, mais cela ne les rend pas racines).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On pose f(x) = 3x² − x + 4 et g(x) = −3x² + 2x − 1. Quel est le degré du polynôme f + g ?",
+      "options": [
+        { "id": "a", "text": "0" },
+        { "id": "b", "text": "1" },
+        { "id": "c", "text": "2" },
+        { "id": "d", "text": "4" }
+      ],
+      "correctOption": "b",
+      "explanation": "On additionne terme à terme : (3x² − 3x²) + (−x + 2x) + (4 − 1) = x + 3. Les termes en x² se sont annulés, il reste un polynôme du 1er degré, donc le degré de f + g est 1 ✓. La réponse 2 suppose à tort que la somme garde le degré des deux polynômes : contrairement au produit, le degré d'une somme peut baisser. La réponse 4 additionne les deux degrés (règle du produit, pas de la somme) et la réponse 0 correspondrait à une somme constante.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le polynôme P(x) = x³ − 4x² − 2x + 8 admet 4 comme racine. Quelle est sa factorisation par (x − 4) ?",
+      "options": [
+        { "id": "a", "text": "P(x) = (x + 4)(x² − 2)" },
+        { "id": "b", "text": "P(x) = (x − 4)(x² + 2)" },
+        { "id": "c", "text": "P(x) = (x − 4)(x² − 2x)" },
+        { "id": "d", "text": "P(x) = (x − 4)(x² − 2)" }
+      ],
+      "correctOption": "d",
+      "explanation": "On écrit P(x) = (x − 4)(ax² + bx + c) et on identifie : a = 1 (terme en x³), b − 4a = −4 donc b = 0, c − 4b = −2 donc c = −2, et −4c = 8 ✓ (cohérent). D'où P(x) = (x − 4)(x² − 2) ✓ ; on peut vérifier en développant : x³ − 2x − 4x² + 8. L'écriture (x + 4)(x² − 2) change le signe du facteur (la racine 4 donne (x − 4), pas (x + 4)) ; (x − 4)(x² + 2) se trompe de signe sur le terme constant du quotient ; et (x − 4)(x² − 2x) donne un quotient dont le terme constant est nul, incompatible avec le terme +8 de P.",
+      "difficulty": 2
+    }
+  ]
+}

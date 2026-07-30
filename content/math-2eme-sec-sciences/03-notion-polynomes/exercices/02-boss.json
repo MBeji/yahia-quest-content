@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Racines, symétrie et télescopage",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "On appelle polynôme symétrique de degré 3 tout polynôme de la forme f(x) = ax³ + bx² + bx + a, avec a ≠ 0. Quel réel est racine de f quels que soient a et b ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "−b/a"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On calcule f(−1) = a × (−1)³ + b × (−1)² + b × (−1) + a = −a + b − b + a = 0 : le réel −1 est donc racine, quels que soient a et b ✓. La réponse 1 donne f(1) = 2a + 2b, qui n'est nul que si b = −a ; la réponse 0 donne f(0) = a, non nul par hypothèse ; la réponse −b/a est la somme des trois racines et non une racine (le piège courant est de confondre les relations racines-coefficients avec une racine).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résoudre dans ℝ l'équation 3x³ − 7x² − 7x + 3 = 0, en utilisant le fait que 3x² − 10x + 3 = (x − 3)(3x − 1).",
+      "options": [
+        {
+          "id": "a",
+          "text": "S = {−3 ; −1/3 ; 1}"
+        },
+        {
+          "id": "b",
+          "text": "S = {−1 ; 1/3 ; 3}"
+        },
+        {
+          "id": "c",
+          "text": "S = {−1 ; −3 ; 1/3}"
+        },
+        {
+          "id": "d",
+          "text": "S = {1/3 ; 3}"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le polynôme est symétrique (coefficients 3, −7, −7, 3), donc −1 en est racine et, avec a = 3 et b = −7, il s'écrit (x + 1)(3x² − 10x + 3) = (x + 1)(x − 3)(3x − 1). Un produit est nul si l'un de ses facteurs l'est : x = −1, x = 3 ou 3x − 1 = 0 soit x = 1/3, d'où S = {−1 ; 1/3 ; 3} ✓. L'ensemble {−3 ; −1/3 ; 1} inverse le signe de chaque solution ; {−1 ; −3 ; 1/3} se trompe de signe sur la solution issue de (x − 3) ; {1/3 ; 3} oublie la racine −1 du facteur symétrique.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le polynôme P(x) = 2x³ − 9x² − 11x + 30 admet trois racines α, β et γ. Sans les calculer, combien vaut α + β + γ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−15"
+        },
+        {
+          "id": "b",
+          "text": "−11/2"
+        },
+        {
+          "id": "c",
+          "text": "−9/2"
+        },
+        {
+          "id": "d",
+          "text": "9/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour un polynôme ax³ + bx² + cx + d admettant trois racines, la somme des racines vaut −b/a. Ici a = 2 et b = −9, donc α + β + γ = −(−9)/2 = 9/2 ✓ (vérification : P(x) = (2x − 3)(x + 2)(x − 5), donc 3/2 − 2 + 5 = 9/2). La réponse −9/2 est le piège courant : elle recopie b/a en oubliant le signe opposé. La réponse −11/2 utilise c/a, qui donne la somme des produits deux à deux. La réponse −15 donne le produit des racines −d/a et non leur somme.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les trois racines du polynôme P(x) = 2x³ − 8x² + 2x + 12 sont notées α, β et γ. Combien vaut 1/α + 1/β + 1/γ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−6"
+        },
+        {
+          "id": "b",
+          "text": "−1/6"
+        },
+        {
+          "id": "c",
+          "text": "1/6"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On réduit au même dénominateur : 1/α + 1/β + 1/γ = (αβ + βγ + γα)/(αβγ). Or αβ + βγ + γα = c/a = 2/2 = 1 et αβγ = −d/a = −12/2 = −6, donc le quotient vaut 1/(−6) = −1/6 ✓ (vérification avec les racines −1, 2 et 3 : −1 + 1/2 + 1/3 = −1/6). La réponse −6 s'arrête au produit des racines sans faire le quotient ; la réponse 1/6 oublie le signe opposé dans αβγ = −d/a ; la réponse 4 donne la somme des racines −b/a au lieu de la somme de leurs inverses.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On admet la décomposition 1/(k(k + 1)) = 1/k − 1/(k + 1). Combien vaut la somme S = 1/(1×2) + 1/(2×3) + … + 1/(9×10) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10/9"
+        },
+        {
+          "id": "b",
+          "text": "11/10"
+        },
+        {
+          "id": "c",
+          "text": "9/10"
+        },
+        {
+          "id": "d",
+          "text": "1/10"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En remplaçant chaque terme, S = (1/1 − 1/2) + (1/2 − 1/3) + … + (1/9 − 1/10). Chaque terme négatif est effacé par le terme positif suivant (télescopage) : il ne reste que 1 − 1/10 = 9/10 ✓. La réponse 1/10 ne garde que le terme restant en bout de chaîne sans le retirer de 1 ; la réponse 11/10 additionne 1 et 1/10 au lieu de les soustraire (erreur de signe sur le dernier terme) ; la réponse 10/9 inverse le résultat.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit P un polynôme de degré inférieur ou égal à 3 tel que P(1) = P(2) = P(3) = P(4) = 0. Que peut-on affirmer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "P est de degré 3 et s'écrit P(x) = (x − 1)(x − 2)(x − 3)(x − 4)"
+        },
+        {
+          "id": "b",
+          "text": "P est un polynôme constant non nul"
+        },
+        {
+          "id": "c",
+          "text": "P est de degré 4"
+        },
+        {
+          "id": "d",
+          "text": "P est le polynôme nul"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un polynôme non nul de degré n admet au plus n racines : un polynôme non nul de degré inférieur ou égal à 3 ne peut donc pas avoir 4 racines distinctes. La seule possibilité restante est que P soit le polynôme nul, qui s'annule en tout réel ✓. L'écriture (x − 1)(x − 2)(x − 3)(x − 4) est un produit de quatre facteurs du premier degré, donc un polynôme de degré 4, ce que l'hypothèse interdit ; « P est de degré 4 » contredit de même l'hypothèse sur le degré ; et « P est un polynôme constant non nul » est impossible, car un tel polynôme ne s'annule jamais.",
+      "difficulty": 3
+    }
+  ]
+}
