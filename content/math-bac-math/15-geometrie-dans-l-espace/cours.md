@@ -52,11 +52,11 @@ Trois exigences, et elles déterminent le vecteur sans ambiguïté : la **direct
 
 Pour ne jamais te tromper de signe, écris les deux triplets l'un sous l'autre et **saute la ligne de la coordonnée cherchée** :
 
-| coordonnée cherchée | on barre  | on calcule en croix |
-| ------------------- | --------- | ------------------- |
-| la 1ʳᵉ (i⃗)          | a et a′   | b c′ − c b′         |
-| la 2ᵉ (j⃗)           | b et b′   | c a′ − a c′         |
-| la 3ᵉ (k⃗)           | c et c′   | a b′ − b a′         |
+| coordonnée cherchée | on barre | on calcule en croix |
+| ------------------- | -------- | ------------------- |
+| la 1ʳᵉ (i⃗)         | a et a′  | b c′ − c b′         |
+| la 2ᵉ (j⃗)          | b et b′  | c a′ − a c′         |
+| la 3ᵉ (k⃗)          | c et c′  | a b′ − b a′         |
 
 _Exemple détaillé_ — repère orthonormé direct, A(1, 0, −1), B(1, −2, 1), C(0, −1, 2). Alors AB⃗ = (0, −2, 2) et AC⃗ = (−1, −1, 3), donc :
 
@@ -64,7 +64,7 @@ $$ AB⃗∧AC⃗ = ((−2)(3) − (2)(−1) ; (2)(−1) − (0)(3) ; (0)(−1) �
 
 _Contrôle par orthogonalité (à faire systématiquement)_ — avec AB⃗ : 0·(−4) + (−2)(−2) + 2·(−2) = 0 + 4 − 4 = 0 ✓. Avec AC⃗ : (−1)(−4) + (−1)(−2) + 3·(−2) = 4 + 2 − 6 = 0 ✓. Les deux produits scalaires sont nuls : le calcul est juste.
 
-_Suite — l'angle géométrique BAĈ._ On a ‖AB⃗∧AC⃗‖ = √(16 + 4 + 4) = √24 = 2√6, ‖AB⃗‖ = √8 = 2√2 et ‖AC⃗‖ = √11. Donc sin BAĈ = 2√6/(2√2·√11) = √(3/11). Par ailleurs AB⃗.AC⃗ = 0 + 2 + 6 = 8, donc cos BAĈ = 8/(2√22) = 4/√22. _Contrôle_ — cos² + sin² = 16/22 + 6/22 = 1 ✓. Comme cos BAĈ ≈ 0.853, on obtient **BAĈ ≈ 0.5 rad** (à 0.1 près).
+_Suite — l'angle géométrique BAĈ._ On a ‖AB⃗∧AC⃗‖ = √(16 + 4 + 4) = √24 = 2√6, ‖AB⃗‖ = √8 = 2√2 et ‖AC⃗‖ = √11. Donc sin BAĈ = 2√6/(2√2·√11) = √(3/11). Par ailleurs AB⃗.AC⃗ = 0 + 2 + 6 = 8, donc cos BAĈ = 8/(2√22) = 4/√22. _Contrôle_ — cos² + sin² = 16/22 + 6/22 = 1 ✓. Comme cos BAĈ ≈ 0,853, on obtient **BAĈ ≈ 0,5 rad** (à 0,1 près).
 
 > ⚠️ Le produit vectoriel **n'est pas commutatif** : u⃗∧v⃗ = −(v⃗∧u⃗). Il n'est pas non plus simplifiable : de u⃗∧v⃗ = u⃗∧w⃗ on ne peut **pas** conclure v⃗ = w⃗ (prends u⃗ = v⃗ et w⃗ = 2v⃗ : les deux produits valent 0⃗). Et u⃗∧v⃗ est un **vecteur**, alors que u⃗.v⃗ est un **réel** — écrire « u⃗∧v⃗ = 0 » sans la flèche est une faute.
 
@@ -134,6 +134,10 @@ En repère orthonormé, avec A(x₀, y₀, z₀), cela s'écrit (x − x₀)² +
 
 _Exemple détaillé_ — S : x² + y² + z² + 2x − 4y + 2z = 3. On regroupe : (x + 1)² − 1 + (y − 2)² − 4 + (z + 1)² − 1 = 3, donc (x + 1)² + (y − 2)² + (z + 1)² = 9. C'est la sphère de **centre I(−1, 2, −1) et de rayon R = 3**. _Contrôle_ — le point A(−3, 1, 1) : 4 + 1 + 4 = 9 ✓, il appartient bien à S.
 
+**Une sphère peut passer par tous les sommets d'un solide** : on dit alors qu'elle lui est **circonscrite**. Puisqu'une sphère est l'ensemble des points situés à une même distance de son centre, le centre d'une sphère circonscrite est exactement le point **équidistant des sommets** — on le trouve donc en écrivant les égalités de distances ΩA = ΩB, ΩA = ΩC, … : en élevant au carré, les termes x², y² et z² se simplifient de part et d'autre et il ne reste qu'un système **linéaire**. Le rayon est ensuite la distance commune.
+
+_Exemple détaillé_ — le tétraèdre OABC avec O(0, 0, 0), A(2, 0, 0), B(0, 2, 0), C(0, 0, 2). Avec Ω(x, y, z), l'égalité ΩO² = ΩA² s'écrit x² + y² + z² = (x − 2)² + y² + z², soit 0 = −4x + 4, donc x = 1 ; de même ΩO² = ΩB² donne y = 1 et ΩO² = ΩC² donne z = 1. D'où **Ω(1, 1, 1)**. _Contrôle en réinjectant les quatre sommets_ — O − Ω = (−1, −1, −1) donne ΩO = √3 ; A − Ω = (1, −1, −1) donne √3 ✓ ; B − Ω = (−1, 1, −1) donne √3 ✓ ; C − Ω = (−1, −1, 1) donne √3 ✓. Les quatre distances sont égales : la sphère circonscrite a pour **centre Ω(1, 1, 1) et pour rayon √3**, donc pour équation (x − 1)² + (y − 1)² + (z − 1)² = 3.
+
 > ⚠️ Une droite de l'espace **n'a pas** d'équation cartésienne unique : ax + by + cz + d = 0 décrit un **plan**. Une droite se donne soit en paramétrique, soit comme **intersection de deux plans** (un système de deux équations).
 
 ## 🔮 Distances, tangence, positions relatives
@@ -144,7 +148,7 @@ _Exemple détaillé_ — S : x² + y² + z² + 2x − 4y + 2z = 3. On regroupe :
 <svg viewBox="0 0 250 198"><path d="M30 170 L186 170 L227.6 146 L71.6 146 Z" fill="#0f6e56" opacity="0.12"/><path d="M30 170 L186 170 L227.6 146 L71.6 146 Z" fill="none" stroke="#0f172a" stroke-width="1.6" stroke-linejoin="round"/><path d="M120.2 81.5 L120.2 159.5" fill="none" stroke="#b45309" stroke-width="2.2" stroke-dasharray="5 4"/><path d="M120.2 159.5 L130.2 159.5 L130.2 149.5" fill="none" stroke="#b45309" stroke-width="1.5"/><path d="M181.2 152 L181.2 110" fill="none" stroke="#0f6e56" stroke-width="2.6"/><path d="M181.2 102 l-6 11 l12 0 z" fill="#0f6e56"/><circle cx="120.2" cy="81.5" r="4" fill="#0f172a"/><circle cx="120.2" cy="159.5" r="4" fill="#b45309"/><circle cx="181.2" cy="152" r="3" fill="#0f6e56"/><g font-size="14" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"><text x="120" y="70" text-anchor="middle" fill="#0f172a">M</text><text x="108" y="176" text-anchor="middle" fill="#b45309">H</text><text x="88" y="120" text-anchor="middle" fill="#b45309">d(M, P)</text><text x="194" y="112" text-anchor="middle" fill="#0f6e56">n⃗</text><text x="203" y="180" text-anchor="middle" fill="#0f172a">P</text></g></svg>
 :::
 
-_Exemple détaillé_ — P : 2x − y + z − 3 = 0 et M(1, 1, 1). Alors d(M, P) = |2 − 1 + 1 − 3| / √(4 + 1 + 1) = 1/√6 = **√6/6 ≈ 0.408**. _Contrôle par une seconde méthode (le projeté)_ — le projeté H de M sur P s'obtient en descendant le long de n⃗(2, −1, 1) : H = M − t·n⃗ avec t = (2 − 1 + 1 − 3)/6 = −1/6, donc H = (1, 1, 1) + (1/6)(2, −1, 1) = (4/3, 5/6, 7/6). Vérifions que H est bien sur P : 8/3 − 5/6 + 7/6 − 3 = 8/3 + 2/6 − 3 = 3 − 3 = 0 ✓. Et MH = ‖(1/3, −1/6, 1/6)‖ = √(4/36 + 1/36 + 1/36) = √6/6 ✓. Même résultat par deux chemins.
+_Exemple détaillé_ — P : 2x − y + z − 3 = 0 et M(1, 1, 1). Alors d(M, P) = |2 − 1 + 1 − 3| / √(4 + 1 + 1) = 1/√6 = **√6/6 ≈ 0,408**. _Contrôle par une seconde méthode (le projeté)_ — le projeté H de M sur P s'obtient en descendant le long de n⃗(2, −1, 1) : H = M − t·n⃗ avec t = (2 − 1 + 1 − 3)/6 = −1/6, donc H = (1, 1, 1) + (1/6)(2, −1, 1) = (4/3, 5/6, 7/6). Vérifions que H est bien sur P : 8/3 − 5/6 + 7/6 − 3 = 8/3 + 2/6 − 3 = 3 − 3 = 0 ✓. Et MH = ‖(1/3, −1/6, 1/6)‖ = √(4/36 + 1/36 + 1/36) = √6/6 ✓. Même résultat par deux chemins.
 
 > **Distance d'un point à une droite** — « Soit D une droite de vecteur directeur u⃗ et A un point de D. La distance d'un point M de l'espace à la droite D est le réel d(M, D) = ‖MA⃗∧u⃗‖ / ‖u⃗‖. »
 
@@ -156,7 +160,7 @@ _Exemple détaillé_ — D passe par A(1, 0, 0) et a pour vecteur directeur u⃗
 
 $$ MA⃗∧u⃗ = ((−1)(1) − (0)(1) ; (0)(0) − (−1)(1) ; (−1)(1) − (−1)(0)) = (−1, 1, −1) $$
 
-_Contrôle_ — (−1, 1, −1).MA⃗ = 1 − 1 + 0 = 0 ✓ et (−1, 1, −1).u⃗ = 0 + 1 − 1 = 0 ✓. D'où d(M, D) = √3/√2 = **√6/2 ≈ 1.225**. _Contrôle par une seconde méthode (le projeté)_ — un point courant de D s'écrit P(1, t, t) ; MP⃗ = (−1, t − 1, t) est orthogonal à u⃗ quand (t − 1) + t = 0, soit t = 1/2. Alors MP⃗ = (−1, −1/2, 1/2) et ‖MP⃗‖ = √(1 + 1/4 + 1/4) = √(3/2) = √6/2 ✓.
+_Contrôle_ — (−1, 1, −1).MA⃗ = 1 − 1 + 0 = 0 ✓ et (−1, 1, −1).u⃗ = 0 + 1 − 1 = 0 ✓. D'où d(M, D) = √3/√2 = **√6/2 ≈ 1,225**. _Contrôle par une seconde méthode (le projeté)_ — un point courant de D s'écrit P(1, t, t) ; MP⃗ = (−1, t − 1, t) est orthogonal à u⃗ quand (t − 1) + t = 0, soit t = 1/2. Alors MP⃗ = (−1, −1/2, 1/2) et ‖MP⃗‖ = √(1 + 1/4 + 1/4) = √(3/2) = √6/2 ✓.
 
 **Sphère et plan.**
 
