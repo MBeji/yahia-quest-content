@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des restes",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Résoudre dans ℤ l'équation 6x ≡ 4 (mod 10).",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≡ 4 (mod 10)"
+        },
+        {
+          "id": "b",
+          "text": "aucune solution"
+        },
+        {
+          "id": "c",
+          "text": "x ≡ 4 ou x ≡ 9 (mod 10)"
+        },
+        {
+          "id": "d",
+          "text": "x ≡ 2 ou x ≡ 7 (mod 10)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une congruence ne se résout pas en divisant : la seule méthode fiable du cours est le BALAYAGE des 10 restes possibles. 1) On dresse la ligne des valeurs de 6x modulo 10, pour x ≡ 0, 1, …, 9 : 0 ; 6 ; 12 ≡ 2 ; 18 ≡ 8 ; 24 ≡ 4 ; 30 ≡ 0 ; 36 ≡ 6 ; 42 ≡ 2 ; 48 ≡ 8 ; 54 ≡ 4. Contrôle de la ligne : 12 = 10 + 2 ✓, 18 = 10 + 8 ✓, 24 = 20 + 4 ✓, 54 = 50 + 4 ✓. 2) Le reste 4 apparaît DEUX fois, en x ≡ 4 et en x ≡ 9. La solution est donc x ≡ 4 ou x ≡ 9 (mod 10) ✓. Contrôle par une seconde voie totalement indépendante : 6x ≡ 4 (mod 10) signifie que 10 divise 6x − 4 = 2(3x − 2) ; or 2(3x − 2) = 10k équivaut à 3x − 2 = 5k, donc l'équation revient à 3x ≡ 2 (mod 5). Balayage sur 5 cas : 3x vaut 0 ; 3 ; 6 ≡ 1 ; 9 ≡ 4 ; 12 ≡ 2 ✓, donc x ≡ 4 (mod 5), c'est-à-dire x ≡ 4 ou x ≡ 9 modulo 10 — les deux chemins concordent. Vérification numérique finale : x = 4 donne 24 = 20 + 4 ✓ et x = 9 donne 54 = 50 + 4 ✓. Le piège courant, et il coûte la moitié des points : simplifier par 2 comme dans une équation ordinaire, écrire 3x ≡ 2 (mod 10) SANS toucher au module, balayer et ne trouver que x ≡ 4 (mod 10) — c'est exactement l'interdit que le cours martèle (de 2 × 3 ≡ 2 × 8 (mod 10) on ne déduit pas 3 ≡ 8). La moitié des solutions disparaît : x = 9 vérifie pourtant 6 × 9 = 54 ≡ 4. Le distracteur x ≡ 2 ou x ≡ 7 (mod 10) exécute une autre simplification abusive, celle du coefficient seul (on remplace 6 par 2 en « divisant par 3 » à gauche sans rien faire à droite) : ce sont les solutions de 2x ≡ 4 (mod 10), et elles se réfutent en une ligne, car 6 × 2 = 12 ≡ 2 ≠ 4. Enfin « aucune solution » exécute la croyance qu'une congruence dont le coefficient ne se simplifie pas est impossible ; x = 4 la réfute immédiatement.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Déterminer le reste de 2²⁰²⁴ dans la division euclidienne par 13.",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les trois gestes du cours : réduire la base (elle l'est déjà), trouver la PÉRIODE, réduire l'exposant modulo cette période. 1) LA PÉRIODE, par le théorème de Fermat : 13 est premier et ne divise pas 2, donc 2¹² ≡ 1 (mod 13). Contrôle : 2¹² = 4096 et 13 × 315 = 4095, donc 4096 = 13 × 315 + 1 ✓. 2) RÉDUCTION DE L'EXPOSANT modulo 12 : 2024 = 12 × 168 + 8, car 12 × 168 = 2016 et 2016 + 8 = 2024 ✓. Donc 2²⁰²⁴ = (2¹²)¹⁶⁸ × 2⁸ ≡ 1¹⁶⁸ × 2⁸ = 2⁸ (mod 13). 3) LE RESTE : 2⁸ = 256 et 13 × 19 = 247, donc 256 = 13 × 19 + 9 et le reste vaut 9 ✓ (on contrôle bien 0 ≤ 9 < 13). Contrôle par une seconde voie totalement indépendante, sans Fermat, en cherchant une puissance congrue à −1 : 2⁶ = 64 = 13 × 4 + 12, donc 2⁶ ≡ 12 ≡ −1 (mod 13). Or 2024 = 6 × 337 + 2, car 6 × 337 = 2022 et 2022 + 2 = 2024 ✓. Donc 2²⁰²⁴ = (2⁶)³³⁷ × 2² ≡ (−1)³³⁷ × 4 = −4 ≡ 13 − 4 = 9 (mod 13) ✓. Les deux chemins donnent 9. Le piège courant, celui que le cours signale en encadré : réduire l'exposant modulo le MODULE au lieu de le réduire modulo la période. On écrit alors 2024 = 13 × 155 + 9 (13 × 155 = 2015 ✓) et on livre 2⁹ = 512 = 13 × 39 + 5, soit 5 — l'exposant ne se réduit jamais modulo n. Le distracteur 4 exécute la faute de signe sur (−1)³³⁷ : en oubliant que 337 est impair on obtient +1 × 2² = 4 ; il suffit de relire 337 = 2 × 168 + 1 pour la réfuter. Enfin 1 exécute l'exposant tronqué : on écrit 2024 = 12 × 168 en oubliant le reste 8, on conclut (2¹²)¹⁶⁸ ≡ 1 — mais 12 × 168 = 2016 ≠ 2024, et ce sont précisément les 8 crans manquants qui font tout le résultat.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "En utilisant les restes des puissances successives de 10 modulo 7 (méthode de Pascal), déterminer le reste de N = 2468135 modulo 7.",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La méthode de Pascal remplace chaque puissance de 10 par son reste, puis somme. 1) LA ROUE des restes de 10ᵏ modulo 7, celle du cours : 10⁰ ≡ 1, 10¹ ≡ 3, 10² ≡ 2, 10³ ≡ 6, 10⁴ ≡ 4, 10⁵ ≡ 5, puis 10⁶ ≡ 1 et tout recommence (période 6). Contrôle de la roue : 10 = 7 + 3 ✓, 100 = 98 + 2 ✓, 1000 = 994 + 6 ✓, puis chaque cran se déduit du précédent en multipliant par 3 — 6 × 3 = 18 ≡ 4 ✓, 4 × 3 = 12 ≡ 5 ✓, 5 × 3 = 15 ≡ 1 ✓. 2) LES CHIFFRES DE N, PRIS DEPUIS LES UNITÉS : c₀ = 5, c₁ = 3, c₂ = 1, c₃ = 8, c₄ = 6, c₅ = 4, c₆ = 2. On applique la roue chiffre par chiffre : N ≡ 5 × 1 + 3 × 3 + 1 × 2 + 8 × 6 + 6 × 4 + 4 × 5 + 2 × 1 (mod 7), soit 5 + 9 + 2 + 48 + 24 + 20 + 2. Recalcul terme à terme de la somme : 5 + 9 = 14 ; 14 + 2 = 16 ; 16 + 48 = 64 ; 64 + 24 = 88 ; 88 + 20 = 108 ; 108 + 2 = 110. 3) LA RÉDUCTION FINALE : 110 = 7 × 15 + 5, car 7 × 15 = 105, donc le reste vaut 5 ✓. Contrôle par une seconde voie totalement indépendante, les blocs de trois chiffres. Comme 1000 ≡ 6 ≡ −1 (mod 7), les blocs de trois chiffres pris depuis la droite se somment en ALTERNANT les signes : N = 2 × 10⁶ + 468 × 10³ + 135 ≡ 2 × 1 − 468 + 135 = −331 (mod 7). Et −331 = 7 × (−48) + 5, car 7 × 48 = 336 et −331 + 336 = 5 ✓. Troisième contrôle, la division directe : 7 × 352590 = 2468130 et 2468135 − 2468130 = 5 ✓. Trois chemins, un seul reste : 5. Le piège courant : appliquer la roue à l'ENVERS, en donnant le poids 1 au chiffre de gauche au lieu du chiffre des unités — exactement l'avertissement du cours sur la somme alternée modulo 11. On obtient alors 2 × 1 + 4 × 3 + 6 × 2 + 8 × 6 + 1 × 4 + 3 × 5 + 5 × 1 = 98 = 7 × 14, donc 0, et on annonce à tort que 7 divise N. Le distracteur 1 exécute le critère de 9 plaqué sur 7 : la somme des chiffres 2 + 4 + 6 + 8 + 1 + 3 + 5 = 29 ≡ 1 (mod 7) ; ce critère n'est valable que parce que 10 ≡ 1 (mod 9), et 10 ≡ 3 (mod 7). Enfin 3 exécute le critère des blocs de trois SANS alternance, celui du module 111 : 2 + 468 + 135 = 605 = 7 × 86 + 3 ; il suppose 1000 ≡ 1, alors que 1000 = 7 × 142 + 6.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule des quatre affirmations suivantes est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il existe un entier x tel que x² ≡ 5 (mod 8)."
+        },
+        {
+          "id": "b",
+          "text": "Il existe un entier x tel que x² + 1 ≡ 0 (mod 4)."
+        },
+        {
+          "id": "c",
+          "text": "Pour tout entier x, x³ ≡ x (mod 4)."
+        },
+        {
+          "id": "d",
+          "text": "Il existe un entier x tel que x² ≡ 3 (mod 11)."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Quatre affirmations, quatre tableaux de congruence : « pour tout entier » et « il existe un entier » se tranchent tous deux par le balayage des restes, jamais par l'intuition. L'affirmation vraie est « Il existe un entier x tel que x² ≡ 3 (mod 11). » ✓ Les carrés modulo 11 se lisent sur les 11 restes : 0² ≡ 0 ; 1² ≡ 1 ; 2² ≡ 4 ; 3² ≡ 9 ; 4² = 16 ≡ 5 ; 5² = 25 ≡ 3 ; 6² = 36 ≡ 3 ; 7² = 49 ≡ 5 ; 8² = 64 ≡ 9 ; 9² = 81 ≡ 4 ; 10² = 100 ≡ 1. Contrôle des quatre réductions les plus lourdes : 25 = 22 + 3 ✓, 36 = 33 + 3 ✓, 49 = 44 + 5 ✓, 100 = 99 + 1 ✓. L'ensemble des carrés modulo 11 est donc {0, 1, 3, 4, 5, 9}, et 3 en fait partie : x = 5 convient. Contrôle par une seconde voie, sur un entier hors du balayage : x = 16 ≡ 5 (mod 11) donne 16² = 256 = 11 × 23 + 3 ✓ (11 × 23 = 253) — même reste 3, comme la compatibilité avec × l'annonce. LES TROIS AUTRES SONT FAUSSES, et chacune encode une erreur classique. « Il existe un entier x tel que x² ≡ 5 (mod 8) » : les carrés modulo 8 valent 0 ; 1 ; 4 ; 9 ≡ 1 ; 16 ≡ 0 ; 25 ≡ 1 ; 36 ≡ 4 ; 49 ≡ 1, soit l'ensemble {0, 1, 4} — 5 n'y figure pas, et c'est précisément ce qui rend l'équation x² ≡ 5 (mod 8) sans solution. Croire qu'un carré peut prendre n'importe quel reste est l'erreur reine du chapitre. « Pour tout entier x, x³ ≡ x (mod 4) » : la propriété est vraie modulo 6 (0 ; 1 ; 8 ≡ 2 ; 27 ≡ 3 ; 64 ≡ 4 ; 125 ≡ 5), et on la transporte à tort. Le contre-exemple est immédiat : x = 2 donne 2³ = 8 ≡ 0 (mod 4) alors que x ≡ 2 — et 0 ≠ 2. Un seul contre-exemple suffit à abattre un « pour tout ». « Il existe un entier x tel que x² + 1 ≡ 0 (mod 4) » : les carrés modulo 4 valent 0 ; 1 ; 4 ≡ 0 ; 9 ≡ 1, donc x² + 1 vaut 1 ou 2 modulo 4, jamais 0. Le piège courant ici est de raisonner par analogie avec les nombres réels — « x² + 1 = 0 n'a pas de solution réelle, donc modulo 4 non plus » — ce qui donne la bonne réponse pour une mauvaise raison ; modulo 5, la même équation en a deux (2² + 1 = 5 ≡ 0 et 3² + 1 = 10 ≡ 0). Seul le balayage tranche.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Déterminer l'ensemble des entiers n tels que 2n + 3 divise 5n + 1.",
+      "options": [
+        {
+          "id": "a",
+          "text": "{−1, 5}"
+        },
+        {
+          "id": "b",
+          "text": "{−10, −2, −1, 7}"
+        },
+        {
+          "id": "c",
+          "text": "{−8, −2, −1, 5}"
+        },
+        {
+          "id": "d",
+          "text": "{−13, −1, 1, 13}"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La méthode reine du chapitre : faire disparaître la partie encombrante par une COMBINAISON LINÉAIRE, puisque 2n + 3 divise αb + βc dès qu'il divise b et c. 1) ÉLIMINER n. On multiplie 2n + 3 par 5 et 5n + 1 par 2 pour égaliser les coefficients de n : 5(2n + 3) − 2(5n + 1) = 10n + 15 − 10n − 2 = 13. Recalcul du terme constant : 5 × 3 = 15 et 2 × 1 = 2, donc 15 − 2 = 13 ✓. Comme 2n + 3 divise toujours 5(2n + 3), il divise 5n + 1 si, et seulement si, il divise la différence, c'est-à-dire 13. 2) LES DIVISEURS DE 13, qui est premier : 2n + 3 ∈ {−13, −1, 1, 13} — les diviseurs vont par paires ±, et les oublier coûte la moitié des solutions. 3) REVENIR À n : 2n = −16, −4, −2 ou 10, donc n = −8, −2, −1 ou 5. L'ensemble cherché est {−8, −2, −1, 5} ✓. Contrôle par une seconde voie totalement indépendante, la vérification directe des quatre valeurs. n = −8 : 2n + 3 = −13 et 5n + 1 = −39 = (−13) × 3 ✓. n = −2 : 2n + 3 = −1 et 5n + 1 = −9, et −1 divise tout entier ✓. n = −1 : 2n + 3 = 1 et 5n + 1 = −4 ✓. n = 5 : 2n + 3 = 13 et 5n + 1 = 26 = 13 × 2 ✓. On vérifie au passage qu'aucune valeur n'est à écarter : 2n + 3 est toujours impair, donc jamais nul, et la division a toujours un sens. Le piège courant : ne retenir que les diviseurs POSITIFS de 13 et livrer {−1, 5}. Les deux solutions perdues, n = −8 et n = −2, sont pourtant les plus faciles à contrôler — le cours le rappelle dès la première page, si d divise a alors −d divise a. Le distracteur {−10, −2, −1, 7} exécute une faute de signe dans la combinaison : en écrivant 10n + 15 − 10n + 2 = 17 au lieu de 13, on obtient 2n + 3 ∈ {−17, −1, 1, 17} puis ces quatre valeurs ; on la réfute en testant n = 7, car 2n + 3 = 17 et 5n + 1 = 36, qui n'est pas un multiple de 17. Enfin {−13, −1, 1, 13} exécute l'arrêt prématuré : on livre les diviseurs de 13 eux-mêmes sans redescendre à n, alors que la question porte sur les entiers n ; on la réfute en testant n = 13, car 2n + 3 = 29 et 5n + 1 = 66, qui n'est pas un multiple de 29.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit a et b deux entiers non nuls. On désigne par q et r le quotient et le reste de la division euclidienne de a par b. Peut-on avoir simultanément a + b = −49, q = −13 et r = 11 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui : a = −54 et b = 5, et le reste 11 convient."
+        },
+        {
+          "id": "b",
+          "text": "Non : on trouve b = 5, or le reste doit vérifier 0 ≤ 11 < 5."
+        },
+        {
+          "id": "c",
+          "text": "Non : le système obtenu n'admet aucune solution entière."
+        },
+        {
+          "id": "d",
+          "text": "Oui : a = 5 et b = −54, et le reste 11 convient."
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Cas limite : l'algèbre aboutit, et c'est la CONDITION du théorème qui refuse. 1) TRADUIRE. La division euclidienne s'écrit a = bq + r, donc ici a = −13b + 11. 2) RÉSOUDRE. On reporte dans a + b = −49 : (−13b + 11) + b = −12b + 11 = −49, donc −12b = −60 et b = 5. Il vient a = −13 × 5 + 11 = −65 + 11 = −54. Contrôle de la somme : −54 + 5 = −49 ✓. À ce stade tout semble cohérent, et c'est le piège. 3) VÉRIFIER LA CONDITION, qui fait partie du théorème au même titre que l'égalité : le couple (q, r) est l'unique couple tel que a = bq + r ET 0 ≤ r < |b|. Ici |b| = 5 et r = 11 : la condition 0 ≤ 11 < 5 est FAUSSE. Un reste ne peut jamais atteindre le module. La réponse est donc : « Non : on trouve b = 5, or le reste doit vérifier 0 ≤ 11 < 5. » — la situation est impossible ✓. Contrôle par une seconde voie totalement indépendante : posons vraiment la division euclidienne de −54 par 5. On a −54/5 = −10,8 et b > 0, donc q est le plus grand entier inférieur ou égal à −10,8, c'est-à-dire −11 ; alors r = −54 − 5 × (−11) = −54 + 55 = 1, et 0 ≤ 1 < 5 ✓. Le vrai couple est (−11, 1), pas (−13, 11) : l'unicité du couple confirme que (−13, 11) ne peut pas être celui de la division euclidienne de −54 par 5. Le piège courant : s'arrêter dès que le système donne des entiers et conclure « oui, a = −54 et b = 5 ». L'égalité a = bq + r est vérifiée, mais elle ne suffit pas — sans l'encadrement du reste, tout entier a une infinité d'écritures de cette forme (ici −54 = 5 × (−13) + 11, mais aussi 5 × (−12) + 6, ou 5 × (−11) + 1). C'est l'encadrement qui rend le couple unique. Le distracteur qui annonce a = 5 et b = −54 exécute l'inversion des rôles : on écrit b = aq + r au lieu de a = bq + r, ce qui donne −12a + 11 = −49 puis a = 5 et b = −54 ; la somme tombe juste, mais on a divisé dans le mauvais sens. Enfin l'option « aucune solution entière » se trompe de motif : le système EST résoluble dans ℤ, et −12b = −60 donne bien l'entier b = 5 ; ce n'est pas l'arithmétique qui bloque, c'est l'inégalité 0 ≤ r < |b|.",
+      "difficulty": 3
+    }
+  ]
+}

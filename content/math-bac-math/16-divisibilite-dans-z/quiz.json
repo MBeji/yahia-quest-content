@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Divisibilité dans ℤ",
+  "questions": [
+    {
+      "prompt": "Quel est l'ensemble D des diviseurs de −143 dans ℤ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{−143, −1, 1, 143}"
+        },
+        {
+          "id": "b",
+          "text": "{−13, −11, 11, 13}"
+        },
+        {
+          "id": "c",
+          "text": "{1, 11, 13, 143}"
+        },
+        {
+          "id": "d",
+          "text": "{−143, −13, −11, −1, 1, 11, 13, 143}"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le cours rappelle deux choses : un entier a et son opposé −a ont exactement les mêmes diviseurs, et si d divise a alors −d aussi. Comme 143 = 11 × 13, les diviseurs positifs sont 1, 11, 13 et 143, et chacun vient avec son opposé : {−143, −13, −11, −1, 1, 11, 13, 143} ✓. L'ensemble {1, 11, 13, 143} n'énumère que la moitié de la liste, celle des diviseurs positifs, alors qu'on travaille dans ℤ. L'ensemble {−143, −1, 1, 143} traite 143 comme un nombre premier, or 11 × 13 = 143 le contredit. L'ensemble {−13, −11, 11, 13} ne garde que les deux facteurs et oublie 1 et 143, qui divisent tout entier et lui-même.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quels sont le quotient q et le reste r de la division euclidienne de −38 par 7 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "q = −6 et r = 4"
+        },
+        {
+          "id": "b",
+          "text": "q = −5 et r = −3"
+        },
+        {
+          "id": "c",
+          "text": "q = −5 et r = 3"
+        },
+        {
+          "id": "d",
+          "text": "q = 5 et r = 3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le diviseur est positif, donc q est le plus grand entier inférieur ou égal à −38/7 ≈ −5,43 : c'est −6, et non −5. Le reste suit : r = −38 − 7 × (−6) = −38 + 42 = 4, d'où q = −6 et r = 4 ✓, avec 0 ≤ 4 < 7 comme l'exige le théorème. Le couple q = −5 et r = −3 vient de la troncature de la calculatrice vers zéro : l'égalité 7 × (−5) − 3 = −38 est vraie, mais un reste négatif est interdit. Le couple q = −5 et r = 3 ne vérifie même pas l'égalité, car 7 × (−5) + 3 = −32. Le couple q = 5 et r = 3 est la division de 38, pas celle de −38 : il oublie purement le signe du dividende.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est le reste de la division euclidienne de 100 par −7 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−5"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "14"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le diviseur est négatif, donc q est le plus petit entier supérieur ou égal à 100/(−7) ≈ −14,29, c'est-à-dire −14. Alors r = 100 − (−7) × (−14) = 100 − 98 = 2 ✓, et le contrôle 0 ≤ 2 < |−7| = 7 est vérifié. On retrouve le fait clé du cours : le reste ne dépend pas du signe du diviseur, et 100 divisé par 7 laisse lui aussi 2. Le nombre −5 correspond au quotient −15, qui donnerait 100 − 105 = −5 : un reste négatif est impossible. Le nombre 5 est le reste de −100, pas de 100. Le nombre 14 est la valeur absolue du quotient, confondue avec le reste.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Laquelle de ces affirmations sur l'entier 0 est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 divise tous les entiers"
+        },
+        {
+          "id": "b",
+          "text": "0 est un diviseur de lui-même"
+        },
+        {
+          "id": "c",
+          "text": "tout entier non nul divise 0"
+        },
+        {
+          "id": "d",
+          "text": "0 n'est le multiple d'aucun entier"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La définition impose au diviseur d d'être non nul, et l'égalité 0 = d × 0 montre que tout entier d non nul divise 0 ✓ : 0 est donc le champion des multiples. Les deux premières affirmations font de 0 un diviseur, ce que la définition interdit — et il ne divise pas davantage lui-même. La dernière affirmation dit exactement le contraire de la bonne réponse : 0 est au contraire multiple de tous les entiers non nuls, ce qui explique la mise en garde du cours sur les tailles, puisque 1000 divise 0 alors que 1000 est plus grand que 0.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que signifie exactement l'écriture a ≡ 0 (mod 12) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a est un multiple de 12"
+        },
+        {
+          "id": "b",
+          "text": "a est nul"
+        },
+        {
+          "id": "c",
+          "text": "12 est un multiple de a"
+        },
+        {
+          "id": "d",
+          "text": "le quotient de a par 12 est nul"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Par définition, a ≡ 0 (mod 12) signifie que la différence a − 0 = a est un multiple de 12, autrement dit que 12 divise a ✓. C'est le cas particulier le plus utilisé du chapitre : une congruence à 0 est une divisibilité. Dire que a est nul confond la congruence avec une égalité, alors que 24, −36 ou 0 conviennent tous. Dire que 12 est un multiple de a inverse les rôles du diviseur et du multiple. Enfin, un quotient nul décrirait les entiers a compris entre 0 et 11, alors que c'est le reste, et non le quotient, qui vaut 0 ici.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est le reste modulo 9 de l'entier −25 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−7"
+        },
+        {
+          "id": "b",
+          "text": "−2"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "7"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le reste modulo 9 est l'unique entier de {0, 1, …, 8} congru à −25. On écrit −25 = 9 × (−3) + 2, car 9 × (−3) = −27 et −27 + 2 = −25, donc le reste vaut 2 ✓ et il vérifie 0 ≤ 2 < 9. Le nombre −7 correspond au quotient −2, qui donne −25 + 18 = −7 : arrêter le quotient trop tôt produit un reste négatif, toujours interdit. Le nombre −2 recopie le signe du dividende devant le reste, alors que le reste est toujours positif ou nul. Le nombre 7 est le reste de 25, puisque 25 = 9 × 2 + 7 : c'est le reste de l'opposé, pas celui de −25.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi ces quatre congruences, laquelle est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100 ≡ 4 (mod 9)"
+        },
+        {
+          "id": "b",
+          "text": "45 ≡ 3 (mod 7)"
+        },
+        {
+          "id": "c",
+          "text": "−31 ≡ 1 (mod 5)"
+        },
+        {
+          "id": "d",
+          "text": "−7 ≡ 7 (mod 3)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le test est toujours le même : la différence est-elle un multiple du module ? Pour 45 ≡ 3 (mod 7), la différence vaut 45 − 3 = 42 = 7 × 6 ✓, la congruence est vraie. Pour 100 ≡ 4 (mod 9), la différence 96 n'est pas multiple de 9, car 96 = 9 × 10 + 6 : le reste de 100 modulo 9 vaut 1. Pour −31 ≡ 1 (mod 5), la différence −32 n'est pas multiple de 5, et le reste de −31 modulo 5 vaut 4. Pour −7 ≡ 7 (mod 3), la différence −14 n'est pas multiple de 3 : −7 a pour reste 2 et 7 a pour reste 1, deux restes différents.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit a et b deux entiers tels que a ≡ 5 (mod 9) et b ≡ 7 (mod 9). Quel est le reste modulo 9 de ab ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "35"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La compatibilité de la congruence avec la multiplication donne ab ≡ 5 × 7 = 35 (mod 9), puis on réduit : 35 = 9 × 3 + 8, donc le reste vaut 8 ✓. Contrôle numérique avec a = 14 et b = 16, qui ont bien pour restes 5 et 7 : ab = 224 = 9 × 24 + 8 ✓. Le nombre 35 est le produit des restes laissé non réduit, alors qu'un reste modulo 9 vit dans {0, …, 8}. Le nombre 12 additionne les deux restes au lieu de les multiplier, et le nombre 3 est cette même somme une fois réduite modulo 9.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit a et b deux entiers tels que a ≡ 2 (mod 5) et b ≡ 3 (mod 5). Quel est le reste modulo 5 de a − b ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On remplace chaque entier par son reste : a − b ≡ 2 − 3 = −1 (mod 5). Il reste à ramener ce résultat dans {0, 1, 2, 3, 4} en ajoutant le module : −1 + 5 = 4, donc le reste vaut 4 ✓. Contrôle numérique avec a = 7 et b = 8 : a − b = −1 = 5 × (−1) + 4 ✓. Le nombre −1 est le calcul arrêté trop tôt : un reste n'est jamais négatif. Le nombre 1 calcule la différence à l'envers, 3 − 2, alors que la soustraction n'est pas commutative. Le nombre 5 additionne les deux restes et ne peut pas être un reste modulo 5, puisqu'il égale le module.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit a et b deux entiers tels que a ≡ b (mod 12). Laquelle de ces affirmations est alors toujours vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a + 5 ≡ b + 5 (mod 12)"
+        },
+        {
+          "id": "b",
+          "text": "a ≡ −b (mod 12)"
+        },
+        {
+          "id": "c",
+          "text": "a ≡ b (mod 24)"
+        },
+        {
+          "id": "d",
+          "text": "si a et b sont pairs, a/2 ≡ b/2 (mod 12)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La compatibilité avec l'addition s'applique avec la congruence évidente 5 ≡ 5 (mod 12) et donne a + 5 ≡ b + 5 (mod 12) ✓ ; on le voit aussi directement, puisque la différence (a + 5) − (b + 5) = a − b est le même multiple de 12 qu'au départ. Les trois autres se réfutent avec a = 14 et b = 2, congrus modulo 12 car 14 − 2 = 12. On n'a pas a ≡ −b, car 14 + 2 = 16 n'est pas multiple de 12. On n'a pas a ≡ b (mod 24), car 12 n'est pas multiple de 24 : changer de module casse tout. Enfin la division est le grand interdit du chapitre : 14/2 = 7 et 2/2 = 1 ne sont pas congrus modulo 12, puisque leur différence vaut 6.",
+      "difficulty": 2
+    }
+  ]
+}

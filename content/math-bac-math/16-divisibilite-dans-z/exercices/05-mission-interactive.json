@@ -1,0 +1,124 @@
+{
+  "title": "🧩 Mission interactive ⭐⭐ : Le Bureau des Sceaux",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "Texte à trous — première journée au Bureau des Sceaux. L'intendant rentre du port avec 4517 pièces et l'ordre de les répartir en bourses scellées contenant chacune exactement 60 pièces ; ce qui ne remplit pas une bourse entière repart au coffre. Sur le registre, il doit écrire la division euclidienne de 4517 par 60 sous la forme 4517 = 60 × q + r, avec 0 ≤ r < 60. Complète la ligne du registre : « 4517 = 60 × ____ + ____ ».",
+      "options": [
+        { "id": "a", "text": "① q = 75 / ② r = 17" },
+        { "id": "b", "text": "① q = 76 / ② r = −43" },
+        { "id": "c", "text": "① q = 74 / ② r = 77" },
+        { "id": "d", "text": "① q = 75 / ② r = 43" }
+      ],
+      "correctOption": "a",
+      "explanation": "LA MÉTHODE DU CHAPITRE, en deux temps : on cherche d'abord le quotient, ENSUITE le reste, et on relit toujours la double condition a = bq + r ET 0 ≤ r < |b|. LE QUOTIENT. La calculatrice donne 4517/60 ≈ 75,283. Comme b = 60 > 0, le quotient est le PLUS GRAND ENTIER INFÉRIEUR OU ÉGAL à 75,283, c'est-à-dire q = 75. LE RESTE. r = 4517 − 60 × 75 = 4517 − 4500 = 17. CONTRÔLE OBLIGATOIRE, les deux conditions : 60 × 75 + 17 = 4500 + 17 = 4517 ✓ et 0 ≤ 17 < 60 ✓. La ligne du registre est donc « 4517 = 60 × 75 + 17 » : q = 75 et r = 17. LECTURE CONCRÈTE, qui sert de second contrôle : 75 bourses pleines sont scellées, et 17 pièces retournent au coffre — 17 pièces, c'est trop peu pour une 76ᵉ bourse (il en faudrait 60), et pourtant assez pour ne pas être zéro. Les deux inégalités 0 ≤ r < 60 disent exactement cela. « q = 76 / r = −43 » a arrondi 75,283 au plus proche… vers le haut. L'égalité tient encore : 60 × 76 + (−43) = 4560 − 43 = 4517 ✓, et c'est justement ce qui rend l'erreur dangereuse — le calcul « tombe juste ». Mais r = −43 viole 0 ≤ r, et sur le terrain cela reviendrait à sceller 76 bourses en devant 43 pièces à la dernière. Le théorème garantit l'unicité du couple (q, r) SOUS la condition 0 ≤ r < |b| : sans elle, il existe une infinité d'écritures. « q = 74 / r = 77 » a pris un quotient trop petit. Là encore l'égalité tient : 60 × 74 + 77 = 4440 + 77 = 4517 ✓, mais r = 77 ≥ 60 : il reste de quoi remplir une bourse entière, donc on n'a pas fini de sceller. Le test r < |b| est précisément le signal « tu peux encore avancer d'un cran ». « q = 75 / r = 43 » a le bon quotient mais répond à une AUTRE question : 43 = 60 − 17 est le nombre de pièces qui MANQUENT pour remplir une 76ᵉ bourse, pas le nombre de pièces restantes. Le contrôle le démasque immédiatement : 60 × 75 + 43 = 4543 ≠ 4517.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le maître des sceaux grave sur chaque document une clé de contrôle : c'est le reste du numéro du document dans la division euclidienne par 11. Le document du jour porte le numéro 4172583. Le règlement rappelle la méthode : « puisque 10 ≡ −1 (mod 11), un entier est congru modulo 11 à la somme alternée de ses chiffres, en partant du chiffre des unités affecté du signe + ». Quelle clé de contrôle faut-il graver ? Réponds par un entier compris entre 0 et 10.",
+      "answerKey": {
+        "value": 8
+      },
+      "explanation": "LA MÉTHODE DE PASCAL, appliquée à la lettre. Tout entier s'écrit avec des puissances de 10, et modulo 11 ces puissances valent alternativement 1 et −1 : 10⁰ ≡ 1, 10¹ ≡ −1, 10² ≡ 1, 10³ ≡ −1, et ainsi de suite, puisque 10 ≡ −1 (mod 11) donne 10ᵏ ≡ (−1)ᵏ. LA DÉCOMPOSITION, en partant des unités. Les chiffres de 4172583, lus depuis la droite, sont 3 (rang 10⁰), 8 (10¹), 5 (10²), 2 (10³), 7 (10⁴), 1 (10⁵) et 4 (10⁶). LA SOMME ALTERNÉE, signe + sur les unités : 3 − 8 + 5 − 2 + 7 − 1 + 4. On calcule pas à pas : 3 − 8 = −5 ; −5 + 5 = 0 ; 0 − 2 = −2 ; −2 + 7 = 5 ; 5 − 1 = 4 ; 4 + 4 = 8. Donc 4172583 ≡ 8 (mod 11), et comme 8 appartient déjà à {0, 1, …, 10}, le reste modulo 11 vaut 8 : la clé à graver est 8. CONTRÔLE PAR UNE SECONDE MÉTHODE, la division euclidienne posée. 11 × 379325 = 4172575, et 4172583 − 4172575 = 8, avec 0 ≤ 8 < 11 ✓. Les deux chemins concordent : 8. DEUX PIÈGES À CONNAÎTRE. Premier piège : commencer la somme alternée par le chiffre de GAUCHE. On obtiendrait ici 4 − 1 + 7 − 2 + 5 − 8 + 3 = 8 également, parce que le nombre a un nombre IMPAIR de chiffres ; mais avec un nombre pair de chiffres on obtiendrait l'opposé, donc un reste faux. C'est 10⁰ qui porte le signe +, jamais le chiffre de tête. Second piège : rendre une somme alternée négative telle quelle. Si le calcul avait donné −3, la clé ne serait pas −3 mais −3 + 11 = 8 : un reste vit toujours dans {0, …, 10}.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Le calendrier des relèves. Le Bureau des Sceaux fonctionne sans interruption, sept jours sur sept, et la grande relève de la garde est aujourd'hui — un MARDI. Le planificateur doit annoncer trois relèves à venir, comptées en jours à partir d'aujourd'hui. Associe chaque échéance au jour de la semaine où elle tombe. On rappelle que la semaine est un cycle de 7 jours : le jour situé n jours après aujourd'hui ne dépend que du reste de n modulo 7.",
+      "options": [
+        { "id": "l1", "text": "La relève des vivres, dans 45 jours" },
+        { "id": "l2", "text": "La relève des sceaux, dans 200 jours" },
+        { "id": "l3", "text": "La grande revue, dans 1000 jours" },
+        { "id": "r1", "text": "tombe un lundi" },
+        { "id": "r2", "text": "tombe un vendredi" },
+        { "id": "r3", "text": "tombe un samedi" }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r2"],
+          ["l2", "r3"],
+          ["l3", "r1"]
+        ]
+      },
+      "explanation": "UNE SEULE MÉTHODE POUR LES TROIS, et elle ne demande aucun calendrier : on divise le nombre de jours par 7, on garde le RESTE, et on avance de ce reste à partir de mardi. Le quotient, lui, ne sert à rien — il compte seulement les semaines entières, qui ramènent toujours au même jour. La table de marche depuis mardi : reste 0 → mardi, 1 → mercredi, 2 → jeudi, 3 → vendredi, 4 → samedi, 5 → dimanche, 6 → lundi. DANS 45 JOURS → UN VENDREDI. 45 = 7 × 6 + 3, car 7 × 6 = 42 et 45 − 42 = 3, avec 0 ≤ 3 < 7 ✓. Reste 3 : mardi + 3 = mercredi, jeudi, vendredi. La relève des vivres tombe un vendredi. DANS 200 JOURS → UN SAMEDI. 200 = 7 × 28 + 4, car 7 × 28 = 196 et 200 − 196 = 4, avec 0 ≤ 4 < 7 ✓. Reste 4 : mardi + 4 = mercredi, jeudi, vendredi, samedi. La relève des sceaux tombe un samedi. DANS 1000 JOURS → UN LUNDI. 1000 = 7 × 142 + 6, car 7 × 142 = 994 et 1000 − 994 = 6, avec 0 ≤ 6 < 7 ✓. Reste 6 : mardi + 6 = mercredi, jeudi, vendredi, samedi, dimanche, lundi. La grande revue tombe un lundi. CONTRÔLE CROISÉ, sans refaire les divisions : 200 − 45 = 155 et 155 = 7 × 22 + 1, donc la deuxième relève tombe un jour APRÈS la première dans le cycle — vendredi puis samedi ✓. De même 1000 − 200 = 800 et 800 = 7 × 114 + 2, donc la revue tombe deux jours après la relève des sceaux — samedi puis dimanche, lundi ✓. Les trois réponses sont cohérentes entre elles. CE QU'IL FAUT RETENIR : 45, 200 et 1000 n'ont rien en commun, mais seuls comptent leurs restes 3, 4 et 6 modulo 7. Deux échéances tombent le même jour si, et seulement si, leurs nombres de jours sont congrus modulo 7 — c'est la définition même de la congruence, appliquée au temps.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Chasse à l'erreur — l'archiviste doit dater une pièce du passé. Aujourd'hui est un MARDI, et il cherche quel jour de la semaine c'était il y a 227 jours. Il compte les jours sur un axe : aujourd'hui porte le numéro 0, demain 1, hier −1, et le jour cherché porte donc le numéro −227. Voici sa fiche, en quatre étapes. ① « Le jour de numéro n est un mardi si n ≡ 0 (mod 7), et plus généralement le jour de numéro n se lit en avançant, depuis mardi, du reste de n modulo 7. » ② « Je divise : −227/7 ≈ −32,43 ; comme 7 > 0, le quotient est le plus grand entier inférieur ou égal à −32,43, soit −33. » ③ « Le reste vaut r = −227 − 7 × (−33) = −227 + 231 = 4, et 0 ≤ 4 < 7 ✓. » ④ « Un reste de 4 signifie qu'il faut reculer de 4 jours à partir de mardi : c'était donc un vendredi. » Une seule étape est fausse : laquelle, et que faut-il écrire à la place ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape ④ : un reste de 4 place le jour cherché 4 crans APRÈS mardi dans le cycle, pas 4 crans avant — c'était un samedi"
+        },
+        {
+          "id": "b",
+          "text": "L'étape ② : le quotient de −227 par 7 est −32, car on prend la partie entière de 32,43 puis on remet le signe"
+        },
+        {
+          "id": "c",
+          "text": "L'étape ③ : le reste vaut −3, puisque −227 = 7 × (−32) − 3"
+        },
+        {
+          "id": "d",
+          "text": "L'étape ① : le sens du temps ne change rien au reste, il fallait diviser 227 par 7, trouver le reste 3, et lire le jour à partir de là"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'erreur est à l'étape ④, et elle est de lecture, pas de calcul : les trois premières lignes sont irréprochables. ① EST JUSTE. Deux jours portent le même nom si, et seulement si, leurs numéros diffèrent d'un multiple de 7 — c'est exactement « être congrus modulo 7 ». Comme le jour 0 est un mardi, le jour de numéro n est le jour situé r crans APRÈS mardi, où r est le reste de n modulo 7, et ce reste appartient toujours à {0, 1, …, 6}. ② EST JUSTE. −227/7 ≈ −32,43. Le diviseur 7 est positif, donc le quotient est le plus grand entier INFÉRIEUR OU ÉGAL à −32,43 : sur l'axe, c'est −33, pas −32 (car −32 > −32,43). ③ EST JUSTE. r = −227 − 7 × (−33) = −227 + 231 = 4 ✓, et le contrôle réglementaire passe : 7 × (−33) + 4 = −231 + 4 = −227 ✓ avec 0 ≤ 4 < 7 ✓. ④ EST FAUSSE. Le reste ne se lit jamais « en arrière ». L'étape ① le disait : le jour de numéro n s'obtient en AVANÇANT du reste depuis mardi. Le reste 4 donne donc mardi + 4 = mercredi, jeudi, vendredi, samedi. ÉTAPE CORRIGÉE : « ④ Un reste de 4 signifie que le jour cherché porte, dans le cycle, la même position que le jour numéro 4 : c'était un samedi. » CONTRÔLE PAR UN AUTRE CHEMIN, entièrement dans le passé. 227 = 7 × 32 + 3, car 7 × 32 = 224 et 227 − 224 = 3 ✓. Autrement dit, remonter 227 jours revient à remonter 32 semaines pleines — qui ne changent pas le jour — puis 3 jours de plus. Or reculer de 3 jours depuis mardi donne lundi, dimanche, samedi ✓. Même réponse : samedi. Et l'on retrouve au passage la cohérence des restes : 227 ≡ 3 (mod 7) donc −227 ≡ −3 ≡ −3 + 7 = 4 (mod 7) ✓. « L'étape ② serait fausse » énonce la recette la plus coûteuse du chapitre : « partie entière de la valeur absolue, puis on remet le signe ». Avec q = −32 on obtiendrait r = −227 + 224 = −3, un reste NÉGATIF, donc interdit par le théorème. La règle est unique et ne se négocie pas : pour b > 0, q est le plus grand entier ≤ a/b, quel que soit le signe de a. « L'étape ③ serait fausse » propose précisément ce reste −3. L'égalité −227 = 7 × (−32) − 3 est vraie arithmétiquement, mais elle n'est PAS la division euclidienne : le théorème impose 0 ≤ r < 7, et c'est cette condition qui assure l'unicité du couple (q, r). « L'étape ① serait fausse » affirme que le signe ne compte pas. C'est faux : 227 laisse le reste 3 tandis que −227 laisse le reste 4, et 3 ≠ 4. Un aller et un retour de même durée ne mènent pas au même jour de la semaine — sauf si la durée est un multiple de 7. Le contrôle ci-dessus montre comment utiliser quand même le reste 3 : à condition de reculer de 3, et non d'avancer de 3, ce qui donnerait vendredi.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Contrôle de fin de journée. Le greffier relit le document numéro 4172583 et note six affirmations dans son registre. Sélectionne TOUTES celles qui sont exactes. On rappelle les critères vus en cours : un entier est congru modulo 9 (et modulo 3) à la somme de ses chiffres ; il est congru modulo 4 au nombre formé par ses deux derniers chiffres ; il est congru modulo 10 à son chiffre des unités ; et il est congru modulo 11 à la somme alternée de ses chiffres depuis les unités.",
+      "options": [
+        { "id": "a", "text": "4172583 est divisible par 3" },
+        { "id": "b", "text": "4172583 est divisible par 9" },
+        { "id": "c", "text": "Le reste de 4172583 modulo 4 vaut 3" },
+        { "id": "d", "text": "4172583 est divisible par 11" },
+        { "id": "e", "text": "Le reste de 4172583 modulo 10 vaut 3" },
+        { "id": "f", "text": "4172583 est divisible par 6" }
+      ],
+      "answerKey": {
+        "correct": ["a", "c", "e"]
+      },
+      "explanation": "Trois calculs préliminaires règlent tout, et on ne pose aucune division. LA SOMME DES CHIFFRES : 4 + 1 + 7 + 2 + 5 + 8 + 3. Pas à pas : 4 + 1 = 5 ; 5 + 7 = 12 ; 12 + 2 = 14 ; 14 + 5 = 19 ; 19 + 8 = 27 ; 27 + 3 = 30. La somme vaut 30. LES DEUX DERNIERS CHIFFRES : 83. LA SOMME ALTERNÉE depuis les unités : 3 − 8 + 5 − 2 + 7 − 1 + 4 = 8 (soit −5, puis 0, puis −2, puis 5, puis 4, puis 8). a) EXACTE. 4172583 ≡ 30 (mod 3), et 30 = 3 × 10, donc 4172583 ≡ 0 (mod 3) : le nombre est divisible par 3 ✓. Contrôle direct : 3 × 1390861 = 4172583 ✓. b) INEXACTE. Modulo 9, la même somme donne 30 = 9 × 3 + 3, donc 4172583 ≡ 3 (mod 9) : le reste vaut 3, il n'est pas nul, le nombre n'est PAS divisible par 9. C'est le piège classique — le même calcul sert aux deux critères, mais la conclusion diffère : divisible par 3 n'entraîne jamais divisible par 9. Contrôle : 9 × 463620 = 4172580 et 4172583 − 4172580 = 3 ✓. c) EXACTE. Modulo 4, seuls comptent les deux derniers chiffres : 83 = 4 × 20 + 3, avec 0 ≤ 3 < 4, donc le reste de 4172583 modulo 4 vaut 3 ✓. Contrôle direct : 4 × 1043145 = 4172580 et 4172583 − 4172580 = 3 ✓. d) INEXACTE. La somme alternée vaut 8, donc 4172583 ≡ 8 (mod 11) : le reste est 8, pas 0, le nombre n'est pas divisible par 11. Contrôle : 11 × 379325 = 4172575 et 4172583 − 4172575 = 8 ✓. e) EXACTE. Le reste modulo 10 est le chiffre des unités, ici 3 ✓ — c'est le cas le plus court du critère de Pascal, puisque 10 ≡ 0 (mod 10) annule toutes les puissances de 10 à partir de 10¹. f) INEXACTE, et c'est l'affirmation qui demande de RAISONNER plutôt que de calculer. Le chiffre des unités est 3 : le nombre est impair, donc non divisible par 2. Or si 6 divisait 4172583, alors 2, qui divise 6, diviserait 4172583 par transitivité — contradiction. Donc 6 ne le divise pas, bien que 3 le divise. Retiens la règle générale : être divisible par 3 ne suffit jamais pour être divisible par 6, il faut aussi être pair. BILAN : les affirmations exactes sont a), c) et e).",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "Dernière commande de la journée : le forgeron du Bureau doit graver, sur un jeton de plomb, le CHIFFRE DES UNITÉS du nombre 7²⁰²⁵ — le nombre de maillons de la chaîne du grand sceau. Personne, évidemment, ne calcule 7²⁰²⁵. Remets dans l'ordre les cinq étapes de la méthode du chapitre.",
+      "options": [
+        {
+          "id": "s1",
+          "text": "Traduire la question en arithmétique : le chiffre des unités d'un entier est son reste dans la division euclidienne par 10."
+        },
+        {
+          "id": "s2",
+          "text": "Dresser la liste des restes des puissances successives de 7 modulo 10 : 7, 9, 3, 1 — puis constater que la suite recommence, donc que la période vaut 4."
+        },
+        {
+          "id": "s3",
+          "text": "Écrire la division euclidienne de l'exposant par la période : 2025 = 4 × 506 + 1."
+        },
+        {
+          "id": "s4",
+          "text": "Conclure que 7²⁰²⁵ ≡ 7¹ ≡ 7 (mod 10)."
+        },
+        {
+          "id": "s5",
+          "text": "Graver sur le jeton le chiffre 7."
+        }
+      ],
+      "answerKey": {
+        "order": ["s1", "s2", "s3", "s4", "s5"]
+      },
+      "explanation": "L'ORDRE EST IMPOSÉ PAR LA LOGIQUE, pas par l'habitude : chaque étape a besoin du résultat de la précédente. D'ABORD TRADUIRE. « Chiffre des unités » n'est pas une notion d'arithmétique ; « reste modulo 10 » en est une. Tant qu'on n'a pas choisi le module, aucun calcul de congruence n'a de sens : c'est cette étape qui fixe le 10. ENSUITE CHERCHER LA PÉRIODE. On calcule les puissances de 7 modulo 10 : 7¹ = 7 ; 7² = 49 ≡ 9 ; 7³ = 343 ≡ 3 (ou plus simplement 9 × 7 = 63 ≡ 3) ; 7⁴ ≡ 3 × 7 = 21 ≡ 1. Dès qu'on retombe sur 1, la suite se répète à l'identique : la période vaut 4. Cette étape doit précéder la suivante, puisque c'est elle qui FOURNIT le nombre 4 par lequel on va diviser. ENSUITE SEULEMENT DIVISER L'EXPOSANT. 2025 = 4 × 506 + 1, car 4 × 506 = 2024 et 2025 − 2024 = 1, avec 0 ≤ 1 < 4 ✓. Contrôle rapide, le critère de divisibilité par 4 : les deux derniers chiffres de 2025 forment 25 = 4 × 6 + 1, donc 2025 ≡ 1 (mod 4) ✓ — même reste, par un autre chemin. PUIS CONCLURE. 7²⁰²⁵ = 7⁴ˣ⁵⁰⁶⁺¹ = (7⁴)⁵⁰⁶ × 7 ≡ 1⁵⁰⁶ × 7 = 7 (mod 10). ENFIN GRAVER : le chiffre des unités de 7²⁰²⁵ est 7. CONTRÔLE SUR DE PETITS EXPOSANTS, pour vérifier que la règle « exposant ≡ 1 modulo 4 » donne bien 7 : 7¹ = 7 se termine par 7 ✓ ; 7⁵ = 16807 se termine par 7 ✓, et 5 = 4 + 1 ≡ 1 (mod 4) ✓. LES DEUX INVERSIONS QUI COÛTENT DES POINTS. Diviser l'exposant AVANT d'avoir la période : on ne saurait pas par quoi diviser, et la tentation serait de diviser par 10, le module — or le cours l'interdit explicitement, l'exposant se réduit modulo la PÉRIODE, jamais modulo n. Ici cela donnerait 2025 ≡ 5 (mod 10) puis 7⁵, dont le chiffre des unités est 7 par chance, mais le raisonnement serait faux et échouerait ailleurs. Conclure avant d'avoir divisé l'exposant : il n'y a alors rien à conclure, puisque c'est le reste 1 qui désigne la puissance 7¹ dans le cycle.",
+      "difficulty": 3
+    }
+  ]
+}
