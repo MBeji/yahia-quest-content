@@ -1,0 +1,139 @@
+{
+  "title": "🏛️ Annales Bac ⭐⭐⭐⭐ : Sujet type — Puissances de 10 modulo 13, carrés et théorème de Fermat, puis un critère de divisibilité par 13",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "Partie A. Dans tout le sujet, n désigne un entier naturel et a un entier. 1. Vérifier que 10³ ≡ −1 (mod 13). 2. En déduire, suivant le reste de n dans la division euclidienne par 6, le reste de 10ⁿ modulo 13. 3. Déterminer le reste de 10²⁰²⁶ modulo 13.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le reste de 10²⁰²⁶ modulo 13 est 3"
+        },
+        {
+          "id": "b",
+          "text": "Le reste de 10²⁰²⁶ modulo 13 est 10"
+        },
+        {
+          "id": "c",
+          "text": "Le reste de 10²⁰²⁶ modulo 13 est 9"
+        },
+        {
+          "id": "d",
+          "text": "Le reste de 10²⁰²⁶ modulo 13 est 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "1. LA VÉRIFICATION DE DÉPART, qui porte tout le sujet. 10³ = 1000 et 1001 = 13 × 77, donc 1000 = 1001 − 1 = 13 × 77 − 1, c'est-à-dire 10³ ≡ −1 (mod 13) ✓. Sous forme de division euclidienne, cela s'écrit 1000 = 13 × 76 + 12 : le reste est 12, et 12 ≡ −1 (mod 13) puisque 12 − (−1) = 13. Contrôle : 13 × 76 = 988 et 988 + 12 = 1000 ✓. 2. LES SIX CAS. De 10³ ≡ −1 on tire 10⁶ = (10³)² ≡ (−1)² = 1 (mod 13) : les puissances de 10 se répètent avec une période de 6. On dresse la roue en multipliant chaque cran par 10 et en réduisant : 10⁰ ≡ 1 ; 10¹ ≡ 10 ; 10² ≡ 10 × 10 = 100 = 13 × 7 + 9 ≡ 9 ; 10³ ≡ 9 × 10 = 90 = 78 + 12 ≡ 12 ✓ (cohérent avec la question 1) ; 10⁴ ≡ 12 × 10 = 120 = 117 + 3 ≡ 3 ; 10⁵ ≡ 3 × 10 = 30 = 26 + 4 ≡ 4 ; 10⁶ ≡ 4 × 10 = 40 = 39 + 1 ≡ 1, et la roue a bouclé ✓. Donc, suivant le reste de n modulo 6 — 0, 1, 2, 3, 4, 5 — le reste de 10ⁿ modulo 13 vaut respectivement 1, 10, 9, 12, 3, 4. 3. L'APPLICATION. On divise l'exposant par la période : 2026 = 6 × 337 + 4, car 6 × 337 = 2022 et 2026 − 2022 = 4, avec 0 ≤ 4 < 6 ✓. Donc 10²⁰²⁶ = (10⁶)³³⁷ × 10⁴ ≡ 1³³⁷ × 10⁴ ≡ 3 (mod 13) : le reste de 10²⁰²⁶ modulo 13 est 3. CONTRÔLE INDÉPENDANT de la valeur 10⁴ ≡ 3 : 10⁴ = 10000 et 13 × 769 = 9997, d'où 10000 = 13 × 769 + 3 avec 0 ≤ 3 < 13 ✓. Les deux chemins concordent. « Le reste est 10 » a lu la roue avec un cran d'avance, comme si 2026 ≡ 1 (mod 6). Le calcul dit 2026 − 2022 = 4, pas 1 ; c'est 2023 qui serait congru à 1. « Le reste est 9 » correspond au cas n ≡ 2 (mod 6), c'est-à-dire au carré 10² ≡ 9 : c'est le résultat qu'on obtient en divisant l'exposant par 4 au lieu de 6 (2026 = 4 × 506 + 2). La période à utiliser est celle des puissances de 10 MODULO 13, et elle vaut 6 ; la période 4 est celle des puissances de 3 modulo 10, un autre problème. « Le reste est 1 » suppose 2026 multiple de 6. Le critère est immédiat : 2026 est pair, mais sa somme de chiffres 2 + 0 + 2 + 6 = 10 n'est pas multiple de 3, donc 2026 n'est divisible ni par 3 ni par 6. La roue ne retombe sur 1 que pour les exposants multiples de 6.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Partie A (suite). Mêmes conventions : a désigne un entier. 1. Déterminer l'ensemble des restes possibles de a² modulo 13. 2. En déduire si l'équation x² + 2 ≡ 0 (mod 13) admet des solutions dans ℤ.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les restes possibles de a² modulo 13 sont {0 ; 1 ; 3 ; 4 ; 9 ; 10 ; 12}, et l'équation x² + 2 ≡ 0 (mod 13) n'a aucune solution"
+        },
+        {
+          "id": "b",
+          "text": "Les restes possibles de a² modulo 13 sont {0 ; 1 ; 3 ; 4 ; 9 ; 10 ; 12}, et l'équation x² + 2 ≡ 0 (mod 13) a exactement deux solutions, x ≡ 5 et x ≡ 8 (mod 13)"
+        },
+        {
+          "id": "c",
+          "text": "Les restes possibles de a² modulo 13 sont tous les entiers de 0 à 12, et l'équation x² + 2 ≡ 0 (mod 13) admet donc des solutions"
+        },
+        {
+          "id": "d",
+          "text": "Les restes possibles de a² modulo 13 sont {0 ; 1 ; 4 ; 9}, et l'équation x² + 2 ≡ 0 (mod 13) n'a aucune solution"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "1. LE BALAYAGE DES RESTES, la seule méthode fiable : « pour tout entier a » se ramène à treize cas, ceux des restes 0, 1, …, 12, puisque le reste de a² ne dépend que de celui de a. On élève au carré et on réduit modulo 13, cas par cas. a ≡ 0 → 0. a ≡ 1 → 1. a ≡ 2 → 4. a ≡ 3 → 9. a ≡ 4 → 16 = 13 + 3 ≡ 3. a ≡ 5 → 25 = 13 + 12 ≡ 12. a ≡ 6 → 36 = 26 + 10 ≡ 10. a ≡ 7 → 49 = 39 + 10 ≡ 10. a ≡ 8 → 64 = 52 + 12 ≡ 12. a ≡ 9 → 81 = 78 + 3 ≡ 3. a ≡ 10 → 100 = 91 + 9 ≡ 9. a ≡ 11 → 121 = 117 + 4 ≡ 4. a ≡ 12 → 144 = 143 + 1 ≡ 1. L'ensemble des restes possibles de a² modulo 13 est donc {0 ; 1 ; 3 ; 4 ; 9 ; 10 ; 12}. CONTRÔLE DE STRUCTURE, qui coûte une seconde et attrape toute faute de recopie : la table est symétrique, car a et 13 − a ont le même carré modulo 13 — en effet (13 − a)² = 169 − 26a + a² ≡ a². On le lit sur les lignes : 1 et 12 donnent 1, 2 et 11 donnent 4, 3 et 10 donnent 9, 4 et 9 donnent 3, 5 et 8 donnent 12, 6 et 7 donnent 10 ✓. Six paires plus le cas 0 : sept restes distincts, ce que confirme le cardinal de l'ensemble trouvé. 2. L'ÉQUATION. x² + 2 ≡ 0 (mod 13) équivaut à x² ≡ −2 (mod 13), et −2 + 13 = 11, donc à x² ≡ 11 (mod 13). Or 11 N'APPARTIENT PAS à l'ensemble {0 ; 1 ; 3 ; 4 ; 9 ; 10 ; 12} des restes possibles d'un carré : l'équation x² + 2 ≡ 0 (mod 13) n'a donc aucune solution dans ℤ. La réponse est bien : restes possibles {0 ; 1 ; 3 ; 4 ; 9 ; 10 ; 12}, et aucune solution. CONTRÔLE : les restes ABSENTS de la table sont 2, 5, 6, 7, 8 et 11 — six valeurs, ce qui est cohérent avec les sept valeurs atteintes sur treize. Toute équation x² ≡ c (mod 13) avec c dans cette liste d'absents est sans solution ; toute équation avec c dans la liste des atteints en a exactement deux, sauf c ≡ 0 qui n'en a qu'une. « … deux solutions, x ≡ 5 et x ≡ 8 » a résolu une AUTRE équation. Les entiers 5 et 8 vérifient x² ≡ 12 ≡ −1 (mod 13) : ce sont les solutions de x² + 1 ≡ 0, pas de x² + 2 ≡ 0. Contrôle immédiat : 5² + 2 = 27 = 26 + 1 ≡ 1 ≠ 0 (mod 13), et 8² + 2 = 66 = 65 + 1 ≡ 1 ≠ 0 (mod 13). Le passage de −2 à son reste 11 est l'étape où cette confusion se joue. « Tous les entiers de 0 à 12 » suppose que la fonction « élever au carré » atteint tout le monde modulo 13. La table le dément : sept restes seulement sur treize sont des carrés. C'est précisément cette rareté qui rend la méthode utile — sans elle, aucune impossibilité ne se démontrerait. « {0 ; 1 ; 4 ; 9} » n'a carré que les entiers 0, 1, 2 et 3, en oubliant de réduire les suivants modulo 13 : 4² = 16 ne vaut pas 16 modulo 13, mais 3. La conclusion « aucune solution » est ici juste par accident, avec une table fausse — au bac, c'est la table qui est notée, et un raisonnement fondé sur un ensemble incomplet ne prouve rien.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie A (fin). Mêmes conventions : a désigne un entier naturel. On rappelle le théorème de Fermat : pour tout nombre premier p ne divisant pas a, on a a^(p−1) ≡ 1 (mod p). Déterminer le reste de a¹³ − a modulo 13, en discutant selon a.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le reste est 0 pour tout entier a : si 13 divise a, les deux termes sont congrus à 0 ; sinon Fermat donne a¹² ≡ 1, donc a¹³ ≡ a (mod 13)"
+        },
+        {
+          "id": "b",
+          "text": "Le reste est 0 lorsque 13 ne divise pas a, et vaut 1 lorsque 13 divise a"
+        },
+        {
+          "id": "c",
+          "text": "Le reste est 0 pour tout entier a, car le théorème de Fermat donne directement a¹³ ≡ 1 (mod 13)"
+        },
+        {
+          "id": "d",
+          "text": "Le reste vaut 1 pour tout entier a non divisible par 13, et n'est pas défini sinon"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "LA DISCUSSION EST OBLIGATOIRE, car le théorème de Fermat a une hypothèse : p ne doit pas diviser a. Il y a donc exactement deux cas, et il faut les traiter tous les deux. PREMIER CAS — 13 DIVISE a. Alors a ≡ 0 (mod 13), donc a¹³ ≡ 0¹³ = 0 par compatibilité de la congruence avec les puissances, et a¹³ − a ≡ 0 − 0 = 0 (mod 13). SECOND CAS — 13 NE DIVISE PAS a. Le nombre 13 est premier, l'hypothèse de Fermat est satisfaite, et p − 1 = 12 : on a donc a¹² ≡ 1 (mod 13). En multipliant les deux membres par a — ce que la compatibilité autorise — on obtient a¹³ ≡ a (mod 13), donc a¹³ − a ≡ 0 (mod 13). CONCLUSION. Dans les deux cas le reste vaut 0 : 13 divise a¹³ − a pour TOUT entier a, sans exception. CONTRÔLE NUMÉRIQUE sur un cas de chaque famille. Avec a = 13 (premier cas) : 13¹³ − 13 = 13 × (13¹² − 1), visiblement multiple de 13 ✓. Avec a = 2 (second cas) : Fermat annonce 2¹² ≡ 1 (mod 13), et on le vérifie sans écrire 2¹² en entier — 2⁶ = 64 = 52 + 12 ≡ −1 (mod 13), donc 2¹² = (2⁶)² ≡ (−1)² = 1 ✓ ; alors 2¹³ ≡ 2 et 2¹³ − 2 ≡ 0 ✓. Contrôle direct pour les sceptiques : 2¹³ = 8192 et 8192 − 2 = 8190 = 13 × 630 ✓. REMARQUE DE MÉTHODE, celle qui rapporte les points : le résultat s'énonce « a¹³ ≡ a (mod 13) pour tout a », une forme plus forte que Fermat puisqu'elle ne suppose plus rien sur a. C'est exactement le schéma de l'exercice résolu du cours sur a⁹ − a, mais obtenu ici par Fermat au lieu d'un tableau à treize lignes. « 0 si 13 ne divise pas a, 1 sinon » inverse le cas facile. Si 13 divise a, alors a ≡ 0, donc a¹³ − a ≡ 0 : c'est le cas le plus simple des deux, et il donne 0, jamais 1. « … car Fermat donne a¹³ ≡ 1 (mod 13) » a le bon verdict et une justification fausse — et au bac, c'est la justification qui est notée. Fermat porte sur l'exposant p − 1 = 12, pas sur p = 13. D'ailleurs a¹³ ≡ 1 serait absurde : avec a = 2, on a montré 2¹³ ≡ 2, et 2 n'est pas congru à 1 modulo 13. « Le reste vaut 1 … et n'est pas défini sinon » confond a¹² avec a¹³ − a, et invente une indétermination : le reste d'un entier modulo 13 est toujours défini, pour tout entier, y compris 0 — c'est le contenu même du théorème de la division euclidienne.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B — un critère de divisibilité par 13. On admet le résultat établi dans la partie A : 10³ ≡ −1 (mod 13). Soit N un entier naturel écrit en base dix. On le découpe en blocs de trois chiffres à partir du chiffre des unités, et on note b₀, b₁, b₂, … les nombres formés par ces blocs, de sorte que N = b₀ + b₁ × 10³ + b₂ × 10⁶ + b₃ × 10⁹ + … Établir le critère : à quoi N est-il congru modulo 13 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "N ≡ b₀ − b₁ + b₂ − b₃ + … (mod 13), la somme alternée des blocs, car (10³)ᵏ ≡ (−1)ᵏ (mod 13)"
+        },
+        {
+          "id": "b",
+          "text": "N ≡ b₀ + b₁ + b₂ + b₃ + … (mod 13), la somme des blocs, car 10³ ≡ 1 (mod 13)"
+        },
+        {
+          "id": "c",
+          "text": "N est congru modulo 13 à la somme alternée de ses CHIFFRES depuis les unités, car 10 ≡ −1 (mod 13)"
+        },
+        {
+          "id": "d",
+          "text": "N ≡ b₀ − b₁ + b₂ − b₃ + … (mod 13), mais seulement lorsque le nombre de blocs est pair"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "LA MÉTHODE DE PASCAL, appliquée non plus aux puissances de 10 mais à celles de 1000. L'écriture par blocs de trois chiffres est exactement l'écriture de N en base mille : N = b₀ + b₁ × 10³ + b₂ × (10³)² + b₃ × (10³)³ + …, où chaque bloc bₖ est un entier de 0 à 999. LE CALCUL DES POIDS. On part de 10³ ≡ −1 (mod 13) et on élève à la puissance k, ce que la compatibilité des congruences avec les puissances autorise : (10³)ᵏ ≡ (−1)ᵏ (mod 13). Les poids valent donc 1, −1, 1, −1, … en alternance. LA CONCLUSION. En remplaçant chaque poids par sa valeur, N ≡ b₀ × 1 + b₁ × (−1) + b₂ × 1 + b₃ × (−1) + … , c'est-à-dire N ≡ b₀ − b₁ + b₂ − b₃ + … (mod 13) : N est congru modulo 13 à la SOMME ALTERNÉE DE SES BLOCS DE TROIS CHIFFRES, le premier bloc — celui des unités — portant le signe +. CONTRÔLE SUR UN CAS QU'ON SAIT RÉSOUDRE AUTREMENT. Prenons N = 1001. Ses blocs sont b₀ = 1 et b₁ = 1, donc le critère annonce N ≡ 1 − 1 = 0 (mod 13) : N serait divisible par 13. Vérification directe : 1001 = 13 × 77 ✓. Deuxième contrôle avec N = 2000 : blocs b₀ = 0 et b₁ = 2, donc N ≡ 0 − 2 = −2 ≡ 11 (mod 13) ; directement, 13 × 153 = 1989 et 2000 − 1989 = 11 ✓. Le critère fonctionne. UNE REMARQUE QUI SERT AU BAC : le même calcul montre que 10⁶ ≡ 1 (mod 13), donc le critère peut aussi se lire « N est congru modulo 13 à la somme de ses blocs de SIX chiffres » — mais l'alternance par blocs de trois est plus économique. « La somme des blocs, car 10³ ≡ 1 » recopie le critère du module 111, où 1000 = 111 × 9 + 1 donne effectivement 1000 ≡ 1. Modulo 13, c'est faux : 1000 = 13 × 76 + 12, donc 10³ ≡ −1 et non 1. Le contre-exemple est immédiat : pour N = 1001, la somme des blocs vaudrait 1 + 1 = 2, ce qui annoncerait un reste de 2, alors que 1001 = 13 × 77 est divisible par 13. « La somme alternée des CHIFFRES, car 10 ≡ −1 » transporte modulo 13 le critère du module 11, le seul où 10 ≡ −1. Modulo 13, on a 10 ≡ 10, et les puissances de 10 défilent 1, 10, 9, 12, 3, 4 avant de boucler : il n'existe aucun critère chiffre par chiffre. Contre-exemple : pour N = 1001, la somme alternée des chiffres vaut 1 − 0 + 0 − 1 = 0, ce qui tomberait juste par hasard ; mais pour N = 100, elle vaut 0 − 0 + 1 = 1, alors que 100 = 13 × 7 + 9 ≡ 9. « … seulement lorsque le nombre de blocs est pair » ajoute une condition qui n'existe pas. Le calcul (10³)ᵏ ≡ (−1)ᵏ est valable pour tout k, sans hypothèse sur le nombre total de blocs ; c'est le RANG de chaque bloc qui fixe son signe, jamais la longueur de la liste. Le contrôle sur N = 2000, qui a deux blocs, et sur N = 100, qui n'en a qu'un — b₀ = 100, d'où N ≡ 100 = 91 + 9 ≡ 9 (mod 13) ✓ — montre que le critère marche dans les deux cas.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Partie B (suite). On admet le critère établi ci-dessus : si N s'écrit N = b₀ + b₁ × 10³ + b₂ × 10⁶ + b₃ × 10⁹ + …, où b₀, b₁, b₂, … sont les blocs de trois chiffres de N lus depuis les unités, alors N ≡ b₀ − b₁ + b₂ − b₃ + … (mod 13). Déterminer, en appliquant ce critère, le reste de N = 4275618093 dans la division euclidienne par 13. Réponds par un entier compris entre 0 et 12.",
+      "answerKey": {
+        "value": 6
+      },
+      "explanation": "LE DÉCOUPAGE, depuis les unités et par tranches de trois. N = 4275618093 s'écrit 4 | 275 | 618 | 093, donc b₀ = 93, b₁ = 618, b₂ = 275 et b₃ = 4. CONTRÔLE DU DÉCOUPAGE, à ne jamais sauter — une tranche mal placée fausse tout : 4 × 10⁹ = 4000000000 ; 275 × 10⁶ = 275000000, d'où 4275000000 ; 618 × 10³ = 618000, d'où 4275618000 ; et + 93 donne 4275618093 ✓. C'est bien N. LA SOMME ALTERNÉE, le bloc des unités portant le signe + : b₀ − b₁ + b₂ − b₃ = 93 − 618 + 275 − 4. Pas à pas : 93 − 618 = −525 ; −525 + 275 = −250 ; −250 − 4 = −254. LA RÉDUCTION DU RÉSULTAT NÉGATIF, l'étape où l'on perd des points. On cherche le reste de −254 modulo 13 : comme 13 × 20 = 260, on écrit −254 = 13 × (−20) + 6, et le contrôle passe — −260 + 6 = −254 ✓ avec 0 ≤ 6 < 13 ✓. Donc N ≡ 6 (mod 13) : le reste cherché est 6. CONTRÔLE PAR LA DIVISION EUCLIDIENNE POSÉE, indispensable pour valider le critère sur un aussi grand nombre : 13 × 328893699 = 4275618087 (en effet 328893699 × 10 = 3288936990 et 328893699 × 3 = 986681097, dont la somme vaut 4275618087), et 4275618093 − 4275618087 = 6, avec 0 ≤ 6 < 13 ✓. Les deux chemins donnent le même reste : 6. DEUX PIÈGES DE CE CALCUL. Premier piège : découper les blocs depuis la GAUCHE, ce qui donnerait 427 | 561 | 809 | 3 — un découpage sans aucun sens arithmétique, puisque les poids 1000ᵏ se comptent depuis les unités. Second piège : rendre −254 comme reste, ou rendre son opposé 254. Un reste vit dans {0, 1, …, 12} ; ici 254 = 13 × 19 + 7 donnerait 7, et l'écart avec 6 se lit d'un coup — deux restes opposés modulo 13 doivent avoir pour somme 13 quand ils sont non nuls, et 6 + 7 = 13 ✓, ce qui confirme au passage que la valeur 6 est la bonne pour −254 et 7 pour +254.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B (fin). On admet les résultats précédents : 10³ ≡ −1 (mod 13), et le reste de 10ⁿ modulo 13 vaut 1, 10, 9, 12, 3, 4 selon que le reste de n modulo 6 vaut respectivement 0, 1, 2, 3, 4, 5. Pour tout entier naturel n, on pose A_n = 10ⁿ + 1. Déterminer l'ensemble des entiers naturels n pour lesquels 13 divise A_n.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exactement les entiers n tels que n ≡ 3 (mod 6)"
+        },
+        {
+          "id": "b",
+          "text": "Exactement les entiers n impairs"
+        },
+        {
+          "id": "c",
+          "text": "Exactement les multiples de 3"
+        },
+        {
+          "id": "d",
+          "text": "Aucun entier naturel n : A_n n'est jamais divisible par 13"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "LA TRADUCTION. 13 divise A_n signifie A_n ≡ 0 (mod 13), c'est-à-dire 10ⁿ + 1 ≡ 0, soit 10ⁿ ≡ −1 (mod 13). On cherche donc les exposants pour lesquels la roue des puissances de 10 tombe sur −1, autrement dit sur le reste 12. LE BALAYAGE DES SIX CAS, il n'y en a pas d'autres puisque la période vaut 6. Si n ≡ 0 (mod 6) : 10ⁿ ≡ 1, donc A_n ≡ 2. Si n ≡ 1 : 10ⁿ ≡ 10, donc A_n ≡ 11. Si n ≡ 2 : 10ⁿ ≡ 9, donc A_n ≡ 10. Si n ≡ 3 : 10ⁿ ≡ 12, donc A_n ≡ 12 + 1 = 13 ≡ 0. Si n ≡ 4 : 10ⁿ ≡ 3, donc A_n ≡ 4. Si n ≡ 5 : 10ⁿ ≡ 4, donc A_n ≡ 5. LA CONCLUSION. Un seul cas sur six annule A_n : l'ensemble cherché est exactement l'ensemble des entiers n tels que n ≡ 3 (mod 6), c'est-à-dire n ∈ {3, 9, 15, 21, …}. La démonstration directe se rédige en une ligne : si n = 6q + 3, alors 10ⁿ = (10⁶)^q × 10³ ≡ 1^q × (−1) = −1 (mod 13), donc A_n ≡ 0 ✓ ; et la réciproque est assurée par le balayage, qui montre que les cinq autres cas donnent des restes non nuls. CONTRÔLES NUMÉRIQUES. Pour n = 3 : A₃ = 1001 = 13 × 77 ✓. Pour n = 9 : A₉ = 1000000001, et le critère de la partie B s'applique — blocs 1 | 000 | 000 | 001, donc A₉ ≡ 1 − 0 + 0 − 1 = 0 (mod 13) ✓ divisible. Pour n = 6, qui ne convient pas : A₆ = 1000001, blocs 1 | 000 | 001, d'où A₆ ≡ 1 − 0 + 1 = 2 (mod 13), non nul ✓ — conforme au balayage. « Les entiers n impairs » transporte modulo 13 ce qui est vrai modulo 11, où 10 ≡ −1 donne 10ⁿ ≡ (−1)ⁿ. Modulo 13, 10 n'est pas congru à −1 mais à 10, et la parité de n ne décide de rien. Contre-exemple : n = 1 est impair et A₁ = 11, qui n'est pas divisible par 13. « Les multiples de 3 » retient que 3 apparaît dans la condition, mais oublie l'alternance de signe. Les exposants multiples de 3 sont ceux où 10ⁿ ≡ (−1)^(n/3) : la valeur est −1 quand n/3 est impair, donc pour n ≡ 3 (mod 6), et +1 quand n/3 est pair, donc pour n ≡ 0 (mod 6). Contre-exemple : n = 6 est multiple de 3 et A₆ ≡ 2, calculé ci-dessus. « Aucun entier n » contredit le contrôle le plus simple du sujet : A₃ = 1001 = 13 × 77. C'est la conclusion typique d'une résolution qui cherche 10ⁿ ≡ 1 au lieu de 10ⁿ ≡ −1 — une erreur de signe lors du passage de 10ⁿ + 1 ≡ 0 à 10ⁿ ≡ −1.",
+      "difficulty": 3
+    }
+  ]
+}
