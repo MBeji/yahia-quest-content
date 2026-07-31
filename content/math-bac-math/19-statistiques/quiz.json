@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Statistiques",
+  "questions": [
+    {
+      "prompt": "On relève sur 25 élèves d'un club le nombre de langues étudiées X (1, 2 ou 3) et le nombre de séjours à l'étranger Y (0, 1 ou 2). Les effectifs nᵢⱼ sont donnés ci-dessous. Quel est l'effectif marginal de la valeur X = 2 ? <svg viewBox=\"0 0 330 172\"><g stroke=\"#0f172a\" stroke-width=\"1.4\" fill=\"none\"><rect x=\"10\" y=\"10\" width=\"309\" height=\"152\"/><path d=\"M100 10 V162 M173 10 V162 M246 10 V162 M10 48 H319 M10 86 H319 M10 124 H319\"/></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\"><text x=\"55\" y=\"34\">Effectifs</text><text x=\"136.5\" y=\"34\">Y = 0</text><text x=\"209.5\" y=\"34\">Y = 1</text><text x=\"282.5\" y=\"34\">Y = 2</text><text x=\"55\" y=\"72\">X = 1</text><text x=\"55\" y=\"110\">X = 2</text><text x=\"55\" y=\"148\">X = 3</text></g><g font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"136.5\" y=\"72\">4</text><text x=\"209.5\" y=\"72\">3</text><text x=\"282.5\" y=\"72\">1</text><text x=\"136.5\" y=\"110\">2</text><text x=\"209.5\" y=\"110\">5</text><text x=\"282.5\" y=\"110\">3</text><text x=\"136.5\" y=\"148\">1</text><text x=\"209.5\" y=\"148\">2</text><text x=\"282.5\" y=\"148\">4</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "10"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'effectif marginal d'une valeur de X est le TOTAL de sa ligne, jamais l'effectif d'une seule case. La ligne X = 2 porte 2, 5 et 3, donc l'effectif marginal vaut 2 + 5 + 3 = 10 ✓. Contrôle par les deux marges, qui doivent redonner la même taille d'échantillon : les lignes donnent 4 + 3 + 1 = 8, puis 10, puis 1 + 2 + 4 = 7, soit 8 + 10 + 7 = 25 ; les colonnes donnent 4 + 2 + 1 = 7, 3 + 5 + 2 = 10 et 1 + 3 + 4 = 8, de somme 7 + 10 + 8 = 25 elle aussi. Les deux chemins concordent, le tableau est bien lu. Le nombre 5 est l'effectif de la seule CASE (X = 2, Y = 1) : c'est exactement la confusion case / marge que le cours signale, et une moyenne calculée sur des cases est fausse dès la première ligne. Le nombre 8 est l'effectif marginal de X = 1 et le nombre 7 celui de X = 3 : ce sont les bonnes sommes, mais lues sur la mauvaise ligne du tableau.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un club de 20 élèves, on relève le nombre de livres lus pendant l'été : 5 élèves en ont lu 1, 8 en ont lu 2, 4 en ont lu 3 et 3 en ont lu 4. Quelle est la moyenne du nombre de livres lus ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,5"
+        },
+        {
+          "id": "b",
+          "text": "2,25"
+        },
+        {
+          "id": "c",
+          "text": "2,5"
+        },
+        {
+          "id": "d",
+          "text": "11,25"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La moyenne d'une série d'effectifs nᵢ est X̄ = (1/n)Σnᵢxᵢ : chaque valeur pèse autant de fois que son effectif. Ici Σnᵢxᵢ = 5 × 1 + 8 × 2 + 4 × 3 + 3 × 4 = 5 + 16 + 12 + 12 = 45, et n = 5 + 8 + 4 + 3 = 20, donc X̄ = 45/20 = 2,25 ✓. Contrôle de vraisemblance : 2,25 tombe bien entre la plus petite valeur 1 et la plus grande 4, et penche vers 2, la valeur la plus fréquente. Le nombre 2,5 est la moyenne NON pondérée (1 + 2 + 3 + 4)/4 : elle traite les quatre valeurs comme si elles avaient le même effectif, alors que 8 élèves ont lu 2 livres contre 3 seulement qui en ont lu 4. Le nombre 0,5 oublie les effectifs au seul numérateur : (1 + 2 + 3 + 4)/20 = 10/20. Le nombre 11,25 divise le bon numérateur 45 par le nombre de valeurs distinctes (4) au lieu de l'effectif total 20.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une série double (X, Y) est formée des quatre couples (2 ; 5), (4 ; 9), (6 ; 10) et (8 ; 16). Quelles sont les coordonnées de son point moyen G ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "G(5 ; 10)"
+        },
+        {
+          "id": "b",
+          "text": "G(5 ; 40)"
+        },
+        {
+          "id": "c",
+          "text": "G(6 ; 10)"
+        },
+        {
+          "id": "d",
+          "text": "G(20 ; 40)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le point moyen a pour coordonnées les deux moyennes marginales. Sur X : Σxᵢ = 2 + 4 + 6 + 8 = 20 et n = 4, donc X̄ = 20/4 = 5. Sur Y : Σyᵢ = 5 + 9 + 10 + 16 = 40, donc Ȳ = 40/4 = 10. Le point moyen est G(5 ; 10) ✓. Contrôle par les écarts, dont la somme doit être nulle : pour X, (2 − 5) + (4 − 5) + (6 − 5) + (8 − 5) = −3 − 1 + 1 + 3 = 0 ✓ ; pour Y, (5 − 10) + (9 − 10) + (10 − 10) + (16 − 10) = −5 − 1 + 0 + 6 = 0 ✓ — c'est bien le centre d'équilibre du nuage. Le point G(6 ; 10) est le troisième point OBSERVÉ du nuage : le point moyen n'est en général pas un point du nuage, comme le montre déjà l'exemple du cours. Le point G(5 ; 40) garde la somme des yᵢ sans la diviser par 4, et G(20 ; 40) garde les deux sommes brutes.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour une série statistique double (X, Y), on a calculé cov(X, Y) = −3,4. Qu'en déduit-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "X et Y varient dans le même sens."
+        },
+        {
+          "id": "b",
+          "text": "Le lien entre X et Y est faible, car 3,4 est un petit nombre."
+        },
+        {
+          "id": "c",
+          "text": "X et Y varient en sens contraire."
+        },
+        {
+          "id": "d",
+          "text": "Il y a une erreur : comme une variance, une covariance est toujours positive."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La covariance est la moyenne des produits d'écarts (xᵢ − X̄)(yᵢ − Ȳ). Un tel produit est positif quand les deux écarts vont dans le même sens et négatif quand ils s'opposent ; une moyenne négative signifie donc que les individus au-dessus de la moyenne en X sont plutôt en dessous en Y : X et Y varient en sens contraire ✓. C'est mot pour mot l'interprétation du cours, et c'est la SEULE lecture que la covariance autorise à elle seule. Dire que X et Y varient dans le même sens inverse la conclusion : ce serait le cas si cov(X, Y) était positive. Juger le lien « faible » parce que 3,4 est petit est le piège central du chapitre : la covariance dépend des unités, et compter Y en unités plutôt qu'en milliers la multiplierait par 1000 sans changer d'un cheveu le lien entre les deux séries — seul le coefficient de corrélation donne une échelle absolue. Enfin, une covariance négative n'a rien d'impossible : la variance V(X) = cov(X, X) est une moyenne de CARRÉS, donc toujours positive, mais un produit de deux écarts différents peut parfaitement être négatif.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi les affirmations suivantes sur le point moyen G d'un nuage de points, laquelle est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "G est toujours l'un des points du nuage."
+        },
+        {
+          "id": "b",
+          "text": "G est le point du nuage le plus proche de l'origine du repère."
+        },
+        {
+          "id": "c",
+          "text": "G n'existe que si les points du nuage sont alignés."
+        },
+        {
+          "id": "d",
+          "text": "G a pour coordonnées les moyennes X̄ et Ȳ des deux variables."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La définition du cours est directe : le point moyen du nuage est le point dont les coordonnées sont les moyennes X̄ et Ȳ ✓. Rien d'autre n'intervient — ni la position des points, ni leur alignement. Les trois autres affirmations sont fausses. « G est toujours l'un des points du nuage » : sur l'exemple des abonnés du cours, G(3 ; 9,2) n'est aucun des cinq points observés, puisque la valeur observée au rang 3 vaut 7 et non 9,2 ; G est un centre d'équilibre, pas une observation. « G est le point le plus proche de l'origine » confond une moyenne avec une distance : G n'est même pas, en général, un point du nuage, et changer d'unité sur un axe déplacerait ce « plus proche » sans déplacer les moyennes. « G n'existe que si les points sont alignés » confond l'existence du point moyen avec la légitimité d'un ajustement affine : deux moyennes se calculent toujours, même sur un nuage informe ; c'est l'ajustement, pas G, qui demande à être justifié.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une série statistique prend les cinq valeurs 4, 6, 7, 9 et 14, chacune une seule fois. Que vaut sa variance ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,41"
+        },
+        {
+          "id": "b",
+          "text": "11,6"
+        },
+        {
+          "id": "c",
+          "text": "58"
+        },
+        {
+          "id": "d",
+          "text": "75,6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On calcule d'abord la moyenne : Σxᵢ = 4 + 6 + 7 + 9 + 14 = 40 et n = 5, donc X̄ = 40/5 = 8. Puis la formule de calcul V(X) = (1/n)Σxᵢ² − X̄² : Σxᵢ² = 16 + 36 + 49 + 81 + 196 = 378, donc V(X) = 378/5 − 8² = 75,6 − 64 = 11,6 ✓. Contrôle obligatoire par la seconde formule, celle des écarts : les écarts à la moyenne valent −4, −2, −1, 1 et 6, leurs carrés 16, 4, 1, 1 et 36, de somme 58, et 58/5 = 11,6 ✓. Les deux chemins donnent le même nombre : la variance est juste. Le nombre 75,6 est (1/n)Σxᵢ² : on a oublié de retrancher le carré de la moyenne, l'erreur la plus fréquente du chapitre. Le nombre 58 est la somme des carrés des écarts, à qui il manque la division par n = 5. Le nombre 3,41 est l'écart-type σ = √11,6 ≈ 3,41 : c'est la racine de la variance, pas la variance.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une série X prend la valeur 10 avec l'effectif 2, la valeur 20 avec l'effectif 5 et la valeur 30 avec l'effectif 3. Que vaut son écart-type σ_X ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "8,16"
+        },
+        {
+          "id": "c",
+          "text": "22,14"
+        },
+        {
+          "id": "d",
+          "text": "49"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'effectif total est n = 2 + 5 + 3 = 10. La moyenne vaut X̄ = (2 × 10 + 5 × 20 + 3 × 30)/10 = (20 + 100 + 90)/10 = 210/10 = 21. Puis Σnᵢxᵢ² = 2 × 100 + 5 × 400 + 3 × 900 = 200 + 2000 + 2700 = 4900, donc V(X) = 4900/10 − 21² = 490 − 441 = 49, et σ_X = √49 = 7 ✓. Contrôle par la formule des écarts : 2 × (10 − 21)² + 5 × (20 − 21)² + 3 × (30 − 21)² = 2 × 121 + 5 × 1 + 3 × 81 = 242 + 5 + 243 = 490, et 490/10 = 49, la même variance ✓. Le nombre 49 est justement cette variance : l'écart-type en est la racine carrée, et il s'exprime dans l'unité des données, pas dans son carré. Le nombre 22,14 est √490 : on a oublié de retrancher X̄² avant de prendre la racine. Le nombre 8,16 ignore les effectifs et traite 10, 20, 30 comme trois valeurs de même poids : leur moyenne serait 20, leur variance (100 + 0 + 100)/3 ≈ 66,67 et sa racine ≈ 8,16 — or la valeur 20 pèse ici cinq fois plus que la valeur 10.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une série double est formée des quatre couples (1 ; 3), (2 ; 5), (3 ; 4) et (4 ; 8). Que vaut cov(X, Y) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,75"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "12,5"
+        },
+        {
+          "id": "d",
+          "text": "14,25"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La formule du cours est cov(X, Y) = (1/n)Σxᵢyᵢ − X̄·Ȳ, avec n = 4. Les moyennes d'abord : Σxᵢ = 1 + 2 + 3 + 4 = 10 donc X̄ = 10/4 = 2,5, et Σyᵢ = 3 + 5 + 4 + 8 = 20 donc Ȳ = 20/4 = 5. Ensuite Σxᵢyᵢ = 1 × 3 + 2 × 5 + 3 × 4 + 4 × 8 = 3 + 10 + 12 + 32 = 57. D'où cov(X, Y) = 57/4 − 2,5 × 5 = 14,25 − 12,5 = 1,75 ✓. Contrôle par la moyenne des produits d'écarts, seconde voie indépendante : les écarts de X valent −1,5 ; −0,5 ; 0,5 ; 1,5 et ceux de Y valent −2 ; 0 ; −1 ; 3 ; les produits font 3 ; 0 ; −0,5 ; 4,5, de somme 7, et 7/4 = 1,75 ✓. Le nombre 14,25 est (1/n)Σxᵢyᵢ : on a oublié de retrancher le produit des moyennes. Le nombre 12,5 est justement ce produit X̄·Ȳ, recopié seul. Le nombre 7 est la somme des produits d'écarts, à qui il manque la division par n = 4.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour la variable X d'une série double, un élève annonce les quatre fréquences marginales 0,24 ; 0,31 ; 0,28 et 0,19. Que peut-on en dire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tout est correct : chaque fréquence est bien comprise entre 0 et 1."
+        },
+        {
+          "id": "b",
+          "text": "Tout est correct : la somme 1,02 est suffisamment proche de 1."
+        },
+        {
+          "id": "c",
+          "text": "Un calcul est faux : la somme des fréquences vaut 1,02 et non 1."
+        },
+        {
+          "id": "d",
+          "text": "Un calcul est faux : la somme des fréquences devrait valoir 100."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les fréquences marginales d'une variable se partagent l'échantillon tout entier : leur somme vaut exactement 1. Ici 0,24 + 0,31 = 0,55, puis 0,55 + 0,28 = 0,83 et 0,83 + 0,19 = 1,02 : la somme dépasse 1, donc au moins un effectif a été mal lu ✓. C'est le premier contrôle du chapitre, et il est gratuit. Le fait que chaque fréquence soit entre 0 et 1 est nécessaire mais pas suffisant : quatre nombres peuvent tous être licites individuellement et former une marge fausse, comme ici. Se contenter d'une somme « proche de 1 » est la porte ouverte à l'erreur : 1,02 n'est pas un arrondi acceptable sur quatre nombres donnés au centième, puisque chacun est exact au centième et que leur somme l'est donc aussi. Enfin la somme vaut 1, pas 100 : ce sont les POURCENTAGES qui totalisent 100 %, et les fréquences 0,24 ; 0,31 ; 0,28 et 0,19 correspondraient alors à 102 %, ce qui est tout aussi impossible.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le nuage de points ci-dessous représente une série statistique double (X, Y). Sans aucun calcul, que peut-on dire de cov(X, Y) ? <svg viewBox=\"0 0 300 200\"><path d=\"M35 170 H285\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M35 170 V20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"45\" r=\"5\"/><circle cx=\"112\" cy=\"62\" r=\"5\"/><circle cx=\"154\" cy=\"98\" r=\"5\"/><circle cx=\"196\" cy=\"118\" r=\"5\"/><circle cx=\"238\" cy=\"148\" r=\"5\"/></g><g font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\"><text x=\"289\" y=\"186\">x</text><text x=\"25\" y=\"24\">y</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "cov(X, Y) > 0, car les points montent quand x augmente."
+        },
+        {
+          "id": "b",
+          "text": "cov(X, Y) < 0, car les points descendent quand x augmente."
+        },
+        {
+          "id": "c",
+          "text": "cov(X, Y) = 0, car les points ne sont pas parfaitement alignés."
+        },
+        {
+          "id": "d",
+          "text": "Le signe est indécidable tant que X̄ et Ȳ ne sont pas calculés."
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le nuage se lit avant tout calcul : les cinq points descendent régulièrement de la gauche vers la droite, donc les individus dont l'abscisse dépasse X̄ ont une ordonnée inférieure à Ȳ, et inversement. Chaque produit d'écarts (xᵢ − X̄)(yᵢ − Ȳ) est alors négatif, et leur moyenne l'est aussi : cov(X, Y) < 0 ✓. Le cours le dit dans l'autre sens : une covariance négative signifie que X et Y varient en sens contraire — ici c'est le dessin qui donne le signe. Annoncer cov(X, Y) > 0 lit le nuage à l'envers : ce serait le cas d'un nuage qui monte, comme celui des abonnés du cours. Annoncer cov(X, Y) = 0 confond « non parfaitement aligné » et « sans lien » : une covariance nulle demande que les produits d'écarts se compensent exactement, ce qui n'a aucune raison d'arriver sur un nuage aussi nettement orienté. Enfin il n'est pas nécessaire de calculer X̄ et Ȳ pour trancher le SIGNE : c'est même l'usage principal du nuage, décider avant de calculer. Seule la VALEUR de la covariance, elle, exige les deux moyennes.",
+      "difficulty": 2
+    }
+  ]
+}

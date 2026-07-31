@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le juge du nuage",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "D'une série statistique double (X, Y), on sait seulement ceci : la droite de régression de Y en X a pour équation y = 1,5x + 4, l'écart-type de X vaut σ_X = 2 et le coefficient de corrélation vaut ρ = 0,8. Que vaut l'écart-type σ_Y ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "σ_Y = 2,4"
+        },
+        {
+          "id": "b",
+          "text": "σ_Y = 3,75"
+        },
+        {
+          "id": "c",
+          "text": "σ_Y = 1,875"
+        },
+        {
+          "id": "d",
+          "text": "σ_Y = 6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sens inverse : on ne dispose d'aucune donnée brute, seulement de résultats — il faut remonter des formules vers un paramètre. Deux relations du cours suffisent, et elles s'enchaînent. 1) LA COVARIANCE, lue sur la PENTE. Le théorème des moindres carrés donne a = cov(X, Y)/σ_X², donc cov(X, Y) = a × σ_X² = 1,5 × 2² = 1,5 × 4 = 6. Le dénominateur est un CARRÉ, c'est ce qui décide tout le reste. 2) L'ÉCART-TYPE DE Y, lu sur le COEFFICIENT. Par définition ρ = cov(X, Y)/(σ_X σ_Y), donc σ_Y = cov(X, Y)/(σ_X × ρ) = 6/(2 × 0,8) = 6/1,6 = 3,75. La réponse est σ_Y = 3,75 ✓. Remarque : l'ordonnée à l'origine 4 ne sert à rien ici — elle ne porte aucune information sur la dispersion, seulement sur la position du nuage. Contrôle par une seconde voie totalement indépendante, en combinant les deux formules AVANT de calculer : ρ = cov/(σ_X σ_Y) et cov = aσ_X² donnent ρ = aσ_X²/(σ_X σ_Y) = aσ_X/σ_Y, d'où σ_Y = aσ_X/ρ = (1,5 × 2)/0,8 = 3/0,8 = 3,75 ✓ — la covariance n'est jamais écrite et le nombre est le même. Troisième contrôle, par le produit des deux pentes : la droite de X en Y a pour pente a' = cov/σ_Y² = 6/3,75² = 6/14,0625 ≈ 0,4267, et le cours affirme que a × a' = ρ² ; or 1,5 × 0,4267 = 0,64 = 0,8² ✓. Contrôle de cohérence : cov = 6 doit rester inférieure à σ_X σ_Y = 2 × 3,75 = 7,5, ce qui est exactement la traduction de |ρ| ≤ 1 ✓. Le piège courant : multiplier par ρ au lieu de diviser, en écrivant σ_Y = aσ_X ρ = 1,5 × 2 × 0,8 = 2,4. Le contrôle le réfute en une ligne : avec σ_Y = 2,4, on aurait ρ = 6/(2 × 2,4) = 1,25, un coefficient de corrélation supérieur à 1, ce que le cours interdit. Le distracteur σ_Y = 1,875 exécute l'oubli du carré dans la pente : on écrit cov = aσ_X = 1,5 × 2 = 3, puis 3/1,6 = 1,875 ; même réfutation, la vraie covariance étant 6, ce σ_Y donnerait ρ = 6/(2 × 1,875) = 1,6 > 1. Enfin σ_Y = 6 exécute l'arrêt en cours de route : 6 est la COVARIANCE, obtenue à l'étape 1, pas un écart-type — et une covariance s'exprime dans le produit des unités de X et de Y, jamais dans celles de Y seul.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève affirme avoir obtenu, pour une même série statistique double (X, Y), la droite de régression de Y en X d'équation y = 2x + 3 et la droite de régression de X en Y d'équation x = 0,6y − 1. Que peut-on en dire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C'est impossible : le produit des deux pentes vaut 1,2, alors qu'il est égal à ρ², qui ne peut pas dépasser 1."
+        },
+        {
+          "id": "b",
+          "text": "C'est possible : on en tire ρ ≈ 1,095, donc une corrélation très forte et un ajustement pleinement justifié."
+        },
+        {
+          "id": "c",
+          "text": "C'est possible : on en tire ρ = 1,2, valeur qui signale simplement un alignement parfait des points."
+        },
+        {
+          "id": "d",
+          "text": "C'est impossible : les deux droites ne se coupent pas, alors qu'elles devraient toutes deux passer par G."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Cas limite : la question n'est pas de calculer, mais de décider si les deux résultats annoncés peuvent coexister. Le juge est la relation qui relie les deux droites au coefficient de corrélation. 1) LES DEUX PENTES. Celle de la droite de Y en X vaut a = cov(X, Y)/σ_X² = 2 ; celle de la droite de X en Y vaut a' = cov(X, Y)/σ_Y² = 0,6. 2) LEUR PRODUIT : a × a' = cov²/(σ_X²σ_Y²) = ρ², et ici 2 × 0,6 = 1,2. 3) LA CONTRADICTION. Le cours impose −1 ≤ ρ ≤ 1, donc ρ² ≤ 1 ; or 1,2 > 1. La conclusion est bien celle-ci : C'est impossible : le produit des deux pentes vaut 1,2, alors qu'il est égal à ρ², qui ne peut pas dépasser 1. ✓ Autrement dit, au moins une des deux droites a été mal calculée. Contrôle par une seconde voie totalement indépendante, en tentant de RECONSTRUIRE une série compatible. Posons σ_X = 1 : de cov/σ_X² = 2 on tire cov = 2, puis de cov/σ_Y² = 0,6 on tire σ_Y² = 2/0,6 = 10/3, soit σ_Y ≈ 1,826 ; on revient alors à la définition, ρ = cov/(σ_Xσ_Y) = 2/(1 × 1,826) ≈ 1,095 — un nombre supérieur à 1, donc aucune série réelle ne peut produire ce couple de droites ✓. Ce qui rend la question sélective : LE CONTRÔLE HABITUEL NE VOIT RIEN. Les deux droites se coupent parfaitement bien ; en substituant y = 2x + 3 dans x = 0,6y − 1 on obtient x = 0,6(2x + 3) − 1 = 1,2x + 0,8, soit −0,2x = 0,8 et x = −4, puis y = 2 × (−4) + 3 = −5 ; le point d'intersection est (−4 ; −5) et l'on vérifie 0,6 × (−5) − 1 = −4 ✓. Le passage par un point commun est donc satisfait, et pourtant les données sont impossibles : la cohérence d'un ajustement se teste sur les PENTES, pas seulement sur le point moyen. Le piège courant : conclure « ρ ≈ 1,095, corrélation très forte, ajustement justifié » parce que la valeur trouvée dépasse largement le seuil √3/2 ≈ 0,866. Dépasser 1 n'est pas « mieux que 1 » : c'est sortir de l'intervalle où ρ est défini, donc le signe qu'un calcul est faux, jamais celui d'une liaison exceptionnelle. Le distracteur « ρ = 1,2 » exécute en plus la confusion entre ρ et ρ² : on annonce le produit des pentes tel quel, sans prendre la racine, et l'on double l'erreur puisque 1,2 sort lui aussi de l'intervalle [−1, 1]. Enfin le distracteur « les deux droites ne se coupent pas » exécute un contrôle qui n'a pas été mené jusqu'au bout : elles se coupent, en (−4 ; −5) comme on vient de le calculer ; deux droites de pentes différentes se coupent toujours, et ce test-là ne pouvait donc pas trancher.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un lycée relève, sur 50 élèves, le nombre X de séances de révision hebdomadaires (valeurs 1, 2, 3) et la note Y obtenue au devoir de synthèse (valeurs 8, 12, 16). Le tableau à double entrée des effectifs donne : pour X = 1, 9 élèves à la note 8, 4 à la note 12 et 2 à la note 16 ; pour X = 2, 5 élèves à 8, 10 à 12 et 5 à 16 ; pour X = 3, 1 élève à 8, 6 à 12 et 8 à 16. Que valent la covariance et le coefficient de corrélation, et un ajustement affine est-il justifié ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "cov(X, Y) = 25,12 et ρ ≈ 10,47 : l'ajustement affine est justifié."
+        },
+        {
+          "id": "b",
+          "text": "cov(X, Y) = 1,12 et ρ ≈ 0,194 : l'ajustement affine n'est pas justifié."
+        },
+        {
+          "id": "c",
+          "text": "cov(X, Y) = 1,12 et ρ ≈ 0,467 : l'ajustement affine n'est pas justifié."
+        },
+        {
+          "id": "d",
+          "text": "cov(X, Y) = 1,12 et ρ ≈ 0,467 : l'ajustement affine est justifié."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Échantillon GROUPÉ : les moyennes se lisent sur les marges, la covariance balaie les cases, et le verdict se prend au seuil. 1) LES MARGES. Effectifs de X : 9 + 4 + 2 = 15 pour X = 1, 5 + 10 + 5 = 20 pour X = 2, 1 + 6 + 8 = 15 pour X = 3 ; total 15 + 20 + 15 = 50 ✓, et les fréquences 0,30 + 0,40 + 0,30 = 1 ✓, le contrôle gratuit du cours. Effectifs de Y : 9 + 5 + 1 = 15 pour la note 8, 4 + 10 + 6 = 20 pour 12, 2 + 5 + 8 = 15 pour 16 ; total 50 ✓. 2) LES MOYENNES : X̄ = (15 × 1 + 20 × 2 + 15 × 3)/50 = (15 + 40 + 45)/50 = 100/50 = 2 ; Ȳ = (15 × 8 + 20 × 12 + 15 × 16)/50 = (120 + 240 + 240)/50 = 600/50 = 12. 3) LES VARIANCES : Σnᵢxᵢ² = 15 × 1 + 20 × 4 + 15 × 9 = 15 + 80 + 135 = 230, donc V(X) = 230/50 − 2² = 4,6 − 4 = 0,6 ; contrôle par les écarts : [15 × (−1)² + 20 × 0² + 15 × 1²]/50 = 30/50 = 0,6 ✓. Σnⱼyⱼ² = 15 × 64 + 20 × 144 + 15 × 256 = 960 + 2880 + 3840 = 7680, donc V(Y) = 7680/50 − 12² = 153,6 − 144 = 9,6 ; contrôle par les écarts : [15 × (−4)² + 20 × 0² + 15 × 4²]/50 = (240 + 240)/50 = 9,6 ✓. 4) LA COVARIANCE, case par case : ligne X = 1 : 1 × (9 × 8 + 4 × 12 + 2 × 16) = 72 + 48 + 32 = 152 ; ligne X = 2 : 2 × (5 × 8 + 10 × 12 + 5 × 16) = 2 × (40 + 120 + 80) = 2 × 240 = 480 ; ligne X = 3 : 3 × (1 × 8 + 6 × 12 + 8 × 16) = 3 × (8 + 72 + 128) = 3 × 208 = 624. Total ΣΣnᵢⱼxᵢyⱼ = 152 + 480 + 624 = 1256, d'où cov(X, Y) = 1256/50 − 2 × 12 = 25,12 − 24 = 1,12. Contrôle par une seconde voie totalement indépendante, la moyenne des produits d'écarts : ligne X = 1 (écart −1) : 9 × (−1)(−4) + 4 × (−1)(0) + 2 × (−1)(4) = 36 + 0 − 8 = 28 ; ligne X = 2 (écart 0) : 0 ; ligne X = 3 (écart 1) : 1 × (1)(−4) + 6 × 0 + 8 × (1)(4) = −4 + 32 = 28 ; somme 56, et 56/50 = 1,12 ✓. 5) LE COEFFICIENT : σ_X σ_Y = √0,6 × √9,6 = √5,76 = 2,4 exactement, donc ρ = 1,12/2,4 ≈ 0,467. 6) LE VERDICT : 0,467 est nettement inférieur au seuil √3/2 ≈ 0,866, donc cov(X, Y) = 1,12 et ρ ≈ 0,467 : l'ajustement affine n'est pas justifié ✓. Le lien existe et il est positif — réviser davantage va bien avec de meilleures notes — mais il est trop lâche pour qu'une droite prédise la note d'un élève. Le piège courant : oublier de retrancher X̄ · Ȳ et annoncer cov = 25,12, la simple moyenne des produits. Ce nombre s'auto-réfute, car il donnerait ρ = 25,12/2,4 ≈ 10,47, plus de dix fois la borne autorisée. Le distracteur ρ ≈ 0,194 exécute la division par les VARIANCES au lieu des écarts-types : 1,12/(0,6 × 9,6) = 1,12/5,76 ≈ 0,194 ; le verdict tombe juste par accident, mais la valeur est fausse — la définition impose bien σ_X σ_Y au dénominateur. Enfin le distracteur « ρ ≈ 0,467 : justifié » exécute l'appréciation du seuil à vue, en jugeant qu'un coefficient positif et « pas si petit » suffit : le seuil du cours est √3/2 ≈ 0,866, il se franchit et ne se négocie pas.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un club de robotique compte Y adhérents au mois de rang x. Le nuage de la série (X, Y) est nettement incurvé vers le haut, on pose donc Z = ln Y. La série (X, Z) donne ρ_XZ ≈ 0,997 et pour droite de régression de Z en X : z = 0,25x + 4,6. Combien d'adhérents ce modèle prévoit-il au mois de rang 8 ? (On donne e^4,6 ≈ 99,5 et e² ≈ 7,389.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "≈ 6,6 adhérents"
+        },
+        {
+          "id": "b",
+          "text": "≈ 106,9 adhérents"
+        },
+        {
+          "id": "c",
+          "text": "≈ 9 900 adhérents"
+        },
+        {
+          "id": "d",
+          "text": "≈ 735 adhérents"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'ajustement porte sur la série TRANSFORMÉE : la droite prédit Z = ln Y, jamais Y. Il faut donc prévoir z, puis composer par l'exponentielle. 1) LA VALIDATION, avant tout calcul : c'est ρ_XZ ≈ 0,997 qui décide, et non un coefficient calculé sur (X, Y) ; comme 0,997 > √3/2 ≈ 0,866, l'ajustement affine de Z en X est justifié et la prévision a un sens. 2) LA PRÉVISION SUR Z, au rang x = 8 : z = 0,25 × 8 + 4,6 = 2 + 4,6 = 6,6. 3) LE RETOUR À LA VARIABLE INITIALE. De Z = ln Y on tire Y = e^Z, donc y = e^6,6. On décompose l'exposant pour utiliser les deux valeurs fournies : e^6,6 = e^(4,6 + 2) = e^4,6 × e² ≈ 99,5 × 7,389. Détail du produit, pour ne pas le bâcler : 99,5 × 7,389 = 100 × 7,389 − 0,5 × 7,389 = 738,9 − 3,6945 ≈ 735,2. La prévision est donc ≈ 735 adhérents ✓. Contrôle par une seconde voie totalement indépendante, en passant par le modèle explicite. La droite z = 0,25x + 4,6 se réécrit y = e^(0,25x + 4,6) = e^4,6 × (e^0,25)^x ≈ 99,5 × 1,284^x : le club part d'environ 99,5 adhérents au rang 0 et gagne environ 28,4 % par mois. Au rang 8, 1,284^8 se calcule par carrés successifs : 1,284² ≈ 1,649, puis 1,649² ≈ 2,718, puis 2,718² ≈ 7,389, d'où y ≈ 99,5 × 7,389 ≈ 735 ✓ — le même nombre, obtenu sans jamais écrire e^6,6. Contrôle de cohérence : un effectif multiplié par environ 7,4 en huit mois est bien l'allure incurvée observée, et non une croissance linéaire. Le piège courant : oublier de revenir à la variable initiale et annoncer ≈ 6,6 adhérents. 6,6 est une valeur de Z, c'est-à-dire un LOGARITHME d'effectif ; un club qui comptait déjà une centaine d'adhérents ne peut pas en avoir six. C'est la faute classique de tout ajustement non affine, et un simple regard sur l'ordre de grandeur des données la démasque. Le distracteur ≈ 106,9 adhérents exécute la fausse règle e^(a+b) = e^a + e^b : on écrit 99,5 + 7,389 = 106,889 ; or l'exponentielle transforme une somme en PRODUIT, jamais en somme. Enfin ≈ 9 900 adhérents exécute la confusion inverse, e^4,6 × e² = e^(4,6 × 2) = e^9,2 : on multiplie les exposants au lieu de les additionner, ce qui revient à calculer 99,5² = 9 900,25 ; l'écart est énorme, le modèle n'ayant jamais promis un facteur cent en huit mois.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Chasse à l'erreur. Une coopérative relève, sur cinq parcelles, la quantité d'engrais X (en kg par are) et le rendement Y (en quintaux) : (2 ; 5), (4 ; 9), (6 ; 10), (8 ; 14), (10 ; 17). On cherche la quantité d'engrais associée à un rendement de 20 quintaux. Voici une solution proposée. ① « On a X̄ = 30/5 = 6 et Ȳ = 55/5 = 11 ; puis V(X) = 220/5 − 6² = 8, V(Y) = 691/5 − 11² = 17,2 et cov(X, Y) = 388/5 − 6 × 11 = 11,6. » ② « La droite de régression de Y en X a pour pente a = cov/V(X) = 11,6/8 = 1,45 et pour ordonnée à l'origine b = 11 − 1,45 × 6 = 2,3, soit y = 1,45x + 2,3. » ③ « La droite de régression de X en Y s'obtient en résolvant cette équation en x : x = (y − 2,3)/1,45, soit x ≈ 0,690y − 1,586. » ④ « Pour y = 20, cette droite donne x ≈ 0,690 × 20 − 1,586 ≈ 12,2 : il faut environ 12,2 kg d'engrais par are. » Quelle est la PREMIÈRE étape fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape ①"
+        },
+        {
+          "id": "b",
+          "text": "L'étape ②"
+        },
+        {
+          "id": "c",
+          "text": "L'étape ③"
+        },
+        {
+          "id": "d",
+          "text": "L'étape ④"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ceci est une chasse à l'erreur : la solution proposée contient une faute plantée, l'explication décrit donc un raisonnement volontairement faux. L'étape ③ est la PREMIÈRE — et la seule — étape fausse ✓, et sa perfidie est qu'elle produit un nombre final très voisin du bon. Reprenons la fiche ligne à ligne. ① EST JUSTE. Σxᵢ = 2 + 4 + 6 + 8 + 10 = 30 donc X̄ = 6 ✓ ; Σyᵢ = 5 + 9 + 10 + 14 + 17 = 55 donc Ȳ = 11 ✓. Σxᵢ² = 4 + 16 + 36 + 64 + 100 = 220, d'où V(X) = 44 − 36 = 8 ✓ ; contrôle par les écarts −4 ; −2 ; 0 ; 2 ; 4 : (16 + 4 + 0 + 4 + 16)/5 = 40/5 = 8 ✓. Σyᵢ² = 25 + 81 + 100 + 196 + 289 = 691, d'où V(Y) = 138,2 − 121 = 17,2 ✓ ; contrôle par les écarts −6 ; −2 ; −1 ; 3 ; 6 : (36 + 4 + 1 + 9 + 36)/5 = 86/5 = 17,2 ✓. Σxᵢyᵢ = 10 + 36 + 60 + 112 + 170 = 388, d'où cov = 77,6 − 66 = 11,6 ✓ ; contrôle par les produits d'écarts : (−4)(−6) + (−2)(−2) + 0 + (2)(3) + (4)(6) = 24 + 4 + 0 + 6 + 24 = 58, et 58/5 = 11,6 ✓. ② EST JUSTE : a = 11,6/8 = 1,45 ✓ et b = 11 − 8,7 = 2,3 ✓, et la droite passe bien par G puisque 1,45 × 6 + 2,3 = 8,7 + 2,3 = 11 = Ȳ ✓. ③ EST FAUSSE. La droite de régression de X en Y n'est PAS la droite de Y en X retournée : le cours donne sa propre formule, x = (cov/σ_Y²)(y − Ȳ) + X̄, avec V(Y) et non V(X) au dénominateur. ÉTAPE CORRIGÉE : « ③ La droite de régression de X en Y a pour pente a' = cov/V(Y) = 11,6/17,2 ≈ 0,674, d'où x = 0,674(y − 11) + 6 ≈ 0,674y − 1,414. » Les deux pentes diffèrent bel et bien, 0,674 contre 0,690 : ce sont deux droites distinctes, qui se croisent seulement en G. ÉTAPE ④ CORRIGÉE : pour y = 20, x ≈ 0,674 × 20 − 1,414 = 13,488 − 1,414 ≈ 12,1 kg par are, contre 12,2 annoncés — l'écart est petit ici parce que la liaison est presque parfaite, et c'est précisément ce qui rend la faute difficile à voir. Contrôle par une seconde voie totalement indépendante, le produit des pentes : le cours affirme que a × a' = ρ² ; avec les vraies valeurs, 1,45 × 0,674 ≈ 0,978, et l'on retrouve bien ρ² puisque ρ = cov/(σ_Xσ_Y) = 11,6/√(8 × 17,2) = 11,6/√137,6 ≈ 0,989 et 0,989² ≈ 0,978 ✓. Avec la pente inventée de l'étape ③, on obtiendrait 1,45 × 0,690 ≈ 1,0005, c'est-à-dire ρ² supérieur à 1 : impossible, et la faute est démasquée sans même refaire le calcul. ④ EST JUSTE arithmétiquement — 0,690 × 20 = 13,80 puis 13,80 − 1,586 ≈ 12,2 ✓ — elle ne fait qu'appliquer fidèlement la droite erronée qu'on lui a donnée ; on ne condamne pas une étape pour l'erreur d'une autre. Le piège courant, ici, est de croire qu'inverser algébriquement l'équation revient au même : c'est la confusion centrale du chapitre, celle que l'exemple du cours réfute chiffres en main. Répondre ① revient à contester des sommes vérifiables par deux formules ; répondre ② revient à contester le théorème lui-même ; répondre ④ revient à condamner un calcul exact. La leçon : prévoir Y à partir de X et prévoir X à partir de Y sont DEUX ajustements différents — et l'on notera au passage que 20 quintaux dépasse le maximum observé de 17, si bien que la prévision, correcte ou non, reste une extrapolation à manier avec prudence.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On étudie la série double formée des quatre couples (1 ; 3), (2 ; 4), (3 ; 8), (4 ; 9). On l'ajuste de deux façons : par les moindres carrés, ce qui donne une droite D, et par la méthode de Mayer en scindant le nuage en deux parties de deux points (rangs 1 et 2, puis rangs 3 et 4), ce qui donne une droite Δ. On note S_D et S_Δ les sommes des carrés des écarts verticaux à chacune de ces droites. Que valent S_D et S_Δ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "S_D = 2,25 et S_Δ = 1,80"
+        },
+        {
+          "id": "b",
+          "text": "S_D = 1,80 et S_Δ = 2,25"
+        },
+        {
+          "id": "c",
+          "text": "S_D = 1,80 et S_Δ = 1,80"
+        },
+        {
+          "id": "d",
+          "text": "S_D = 0 et S_Δ = 2,25"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Il faut construire les DEUX droites, puis mesurer ce que chacune coûte — c'est la comparaison qui justifie le nom de « moindres carrés ». 1) LES PARAMÈTRES COMMUNS. X̄ = (1 + 2 + 3 + 4)/4 = 10/4 = 2,5 et Ȳ = (3 + 4 + 8 + 9)/4 = 24/4 = 6, donc G(2,5 ; 6). Σxᵢ² = 1 + 4 + 9 + 16 = 30, d'où V(X) = 30/4 − 2,5² = 7,5 − 6,25 = 1,25 ; contrôle par les écarts −1,5 ; −0,5 ; 0,5 ; 1,5 : (2,25 + 0,25 + 0,25 + 2,25)/4 = 5/4 = 1,25 ✓. Σxᵢyᵢ = 3 + 8 + 24 + 36 = 71, d'où cov(X, Y) = 71/4 − 2,5 × 6 = 17,75 − 15 = 2,75 ; contrôle par les produits d'écarts, ceux de Y valant −3 ; −2 ; 2 ; 3 : (−1,5)(−3) + (−0,5)(−2) + (0,5)(2) + (1,5)(3) = 4,5 + 1 + 1 + 4,5 = 11, et 11/4 = 2,75 ✓. 2) LA DROITE D DES MOINDRES CARRÉS : a = cov/V(X) = 2,75/1,25 = 2,2 et b = 6 − 2,2 × 2,5 = 6 − 5,5 = 0,5, soit D : y = 2,2x + 0,5 ; contrôle par le point moyen, 2,2 × 2,5 + 0,5 = 5,5 + 0,5 = 6 = Ȳ ✓. Valeurs théoriques : 2,7 ; 4,9 ; 7,1 ; 9,3 ; écarts observés − théoriques : 0,3 ; −0,9 ; 0,9 ; −0,3, de somme nulle ✓, d'où S_D = 0,09 + 0,81 + 0,81 + 0,09 = 1,80. 3) LA DROITE Δ DE MAYER : G₁((1 + 2)/2 ; (3 + 4)/2) = G₁(1,5 ; 3,5) et G₂((3 + 4)/2 ; (8 + 9)/2) = G₂(3,5 ; 8,5) ; pente (8,5 − 3,5)/(3,5 − 1,5) = 5/2 = 2,5, puis ordonnée à l'origine 3,5 − 2,5 × 1,5 = 3,5 − 3,75 = −0,25, soit Δ : y = 2,5x − 0,25 ; contrôle obligatoire par G, 2,5 × 2,5 − 0,25 = 6,25 − 0,25 = 6 = Ȳ ✓. Valeurs théoriques : 2,25 ; 4,75 ; 7,25 ; 9,75 ; écarts : 0,75 ; −0,75 ; 0,75 ; −0,75, d'où S_Δ = 4 × 0,5625 = 2,25. 4) LA CONCLUSION : S_D = 1,80 et S_Δ = 2,25 ✓, et l'on a bien 1,80 < 2,25. Contrôle par une seconde voie totalement indépendante, purement théorique : le théorème du cours affirme que Σ(axᵢ + b − yᵢ)² est MINIMALE pour le couple (a₀, b₀) des moindres carrés ; aucune autre droite du plan, Mayer comprise, ne peut donc faire mieux que S_D — l'ordre S_D ≤ S_Δ était garanti d'avance, seuls les nombres restaient à trouver. Contrôle de vraisemblance : les deux droites passent par G, mais Mayer, calculée sur deux barycentres partiels, adopte une pente de 2,5 un peu trop raide contre 2,2, ce qui lui coûte 0,45 de plus en somme de carrés. Le piège courant : croire que Mayer, parce qu'elle s'appuie sur des points moyens, est la « meilleure » droite, et intervertir les deux résultats en écrivant S_D = 2,25 et S_Δ = 1,80. C'est impossible par définition même du minimum : Mayer relie deux barycentres, elle ne minimise rien. Le distracteur S_D = S_Δ = 1,80 exécute la croyance que les deux méthodes donnent la même droite ; le passage commun par G n'y suffit pas, puisque les pentes diffèrent, 2,2 contre 2,5 — le contrôle par le point moyen vérifie l'ordonnée à l'origine, jamais la pente. Enfin S_D = 0 exécute la confusion entre « somme minimale » et « somme nulle » : une somme nulle exigerait que les quatre points soient ALIGNÉS sur D, ce qui est faux ici puisque le point (2 ; 4) est à 0,9 sous la droite ; la corrélation vaut d'ailleurs ρ ≈ 0,965, forte mais différente de 1.",
+      "difficulty": 3
+    }
+  ]
+}
