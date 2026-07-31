@@ -100,10 +100,12 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
 
 > Objectif : refermer les trois boucles mortes (SM-2, misconceptions, adaptativité) et porter
 > la boucle d'apprentissage à M3 avant la rentrée.
-> **État au 2026-07-31 : 12 des 19 lignes livrées, et la 9 est à moitié faite.** Son volet
-> serveur **A1.2a est mergé** (arena#689, correctif arena#691) ; la ligne reste décochée tant
-> que **A1.2b** (le bloc de correction riche côté client) n'est pas livré. C'est donc toujours
-> la **9** qu'une session PRODUIT prend, mais elle y trouve la moitié du chemin déjà faite.
+> **État au 2026-07-31 : 12 des 19 lignes livrées ; la 9 a ses deux lots livrés** (arena#689,
+> #691, #695) **mais reste décochée** sur un reliquat — le geste « m'entraîner », qui attend une
+> décision (lien misconception → compétence). ⚠️ Avant de prendre la 9 **ou la 15**, lire le
+> constat en gras de la ligne 9 : **le corpus ne porte aucun tag de misconception**, donc tout
+> l'étage « erreur nommée / points faibles » est alimenté par du vide — c'est un travail de
+> contenu, pas de code.
 
 **Étape A — réparer le parcours (étude 22, validée — 6 lots) — ✅ ÉTUDE CLOSE le 2026-07-21**
 
@@ -118,19 +120,42 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
 
 - [x] 7. **é04 lot A1.1 — « Révision du jour »** (RPC `get_daily_plan` + panneau dashboard, consomme SM-2 refermée en 2) — #581 (pgTAP renuméroté #584)
 - [x] 8. **amendement é04-A1.2 « correction riche à l'échec »** _(A1 rendu : rattachée à l'étude 04)_ — **rédigé le 2026-07-25**, contrat fermé en `04-moteur-adaptatif/ETUDE.md` §9. Il **corrige deux suppositions du mandat** : l'explication post-erreur n'a jamais été monnayée (c'est l'indice _avant_ réponse qui l'est), et un feedback question-par-question rouvrirait la couture de soumission atomique — sorti du périmètre, posé en Q-4. Reste donc à livrer : l'erreur nommée + le lien « revoir le cours »
-- [ ] 9. **é04 lot A1.2 — exécution de la correction riche** — **⬅️ PROCHAINE LIGNE PRODUIT**, deux lots cadrés.
-      **A1.2a (serveur) livré le 2026-07-31** (arena#689, correctif de test arena#691) :
-      `get_attempt_review` rend `misconception_tag` (le tag de l'option **choisie**, et seulement
-      sur une réponse fausse) + `chapter_id`, sans qu'une porte bouge — owner-only, session
-      complétée, quiz muet, Rappel restreint aux éligibles. L'appariement réutilise
-      `resolve_misconception_tag` (é20 lot 7) au lieu d'être réécrit : la correction dit ce que la
-      télémétrie a enregistré par construction, pas par ressemblance. Inerte là où le corpus n'est
-      pas tagué (R-A1.2-3), donc vivant sur `math` et `math-6eme` depuis C4.
-      **Reste A1.2b** (client, bloc de correction riche : erreur nommée depuis le registre, lien
-      « revoir le cours », geste « m'entraîner » réutilisant celui d'é07 lot 4, i18n FR/EN/AR + RTL).
-      ⚠️ Stop-point de sécurité D-A1.2-2 **tenu** : la map `distractor_tags` n'est jamais rendue —
-      l'option correcte étant la seule sans tag, elle désignerait la bonne réponse par élimination.
-      Trois assertions pgTAP jouent cette attaque, pas le cas nominal.
+- [ ] 9. **é04 lot A1.2 — correction riche — LES DEUX LOTS SONT LIVRÉS, la ligne reste ouverte sur un reliquat.**
+      **A1.2a (serveur)** — arena#689, correctif de test arena#691. `get_attempt_review` rend
+      `misconception_tag` (le tag de l'option **choisie**, et seulement sur une réponse fausse) +
+      `chapter_id`, sans qu'une porte bouge. L'appariement réutilise `resolve_misconception_tag`
+      (é20 lot 7) au lieu d'être réécrit. Stop-point **D-A1.2-2 tenu** : la map `distractor_tags`
+      n'est jamais rendue — l'option correcte étant la seule sans tag, elle désignerait la bonne
+      réponse par élimination. Trois assertions pgTAP jouent cette attaque, pas le cas nominal.
+      **A1.2b (client)** — arena#695. Le bloc riche sur une question ratée : erreur nommée, lien
+      « revoir le cours », i18n FR/EN/AR + RTL, dégradation totale et silencieuse (R-A1.2-3).
+      Il a fallu **corriger D-A1.2-3** : elle fondait les libellés sur un registre « déjà compilé
+      côté client pour d'autres surfaces » — cette surface n'existe pas, et depuis la scission
+      `content/` n'est pas dans le dépôt public au build. Les libellés passent donc par la base,
+      **par le canal des compétences** (é07), qui répondait déjà au même besoin. L'intention est
+      préservée : la fonction SQL rend un ID, le registre reste source unique, une reformulation
+      reste une correction de registre sans migration.
+      **Reliquat qui garde la case décochée** : le geste **« m'entraîner »**. R-A1.2-6 impose de
+      réutiliser celui d'é07 lot 4, qui résout une COMPÉTENCE en exercices — une misconception
+      n'en est pas une, et en inventer un second est ce que la règle interdit. Il attend une
+      décision : **quel lien entre une misconception et une compétence ?**
+      ⚠️⚠️ **LE FAIT QUI COMMANDE TOUT L'AXE, mesuré le 2026-07-31 : le corpus ne contient AUCUN
+      tag de misconception.** Zéro occurrence de `misconceptionTag` sur 566 chapitres et
+      ~18 700 questions ; zéro `distractor_tags` non vide dans les 17 migrations manuelles ; les
+      5 tags du registre ne sont utilisés nulle part. La chaîne est mécanique : pas de tag authoré
+      → `distractor_tags` vide → `resolve_misconception_tag` rend NULL → le trigger
+      `trg_question_attempts_misconception` (qui ne se déclenche que sur un tag non nul) ne s'est
+      **jamais** déclenché → **`user_misconceptions` est vide en prod**. Le récit de l'étude 26
+      (« signal collecté depuis le 2026-07-06, jamais surfacé ») est donc faux dans sa prémisse :
+      la boucle n'était pas *collectée-jamais-surfacée*, elle n'était **jamais alimentée**.
+      Conséquences à ne pas redécouvrir : A1.2 ne nommera **aucune** erreur tant que rien n'est
+      tagué (le lien « revoir le cours », lui, fonctionne) · le terme « misconceptions » de
+      `get_daily_plan` (A1.1, #581, D-3) vaut zéro depuis le premier jour · **la ligne 15 (A2.1
+      « Points faibles ») livrerait un écran vide** — à lire avant de la prendre.
+      **Le blocage de tout l'axe est donc du CONTENU, pas du code** : taguer les distracteurs,
+      comme C4 l'a fait pour les compétences. ⚠️ Ne pas confondre : **C4 a tagué les COMPÉTENCES**
+      (`math`, `math-6eme`), pas les misconceptions — ce sont deux registres distincts, et le
+      second est vide d'usage.
       **Q-5 reste à trancher par Mohamed** (non bloquante) : remplit-on `courseAnchor` maintenant
       sur les matières de concours, ou tous les liens pointent-ils le haut du cours en v1 ?
 
@@ -345,3 +370,4 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
 | 2026-07-29 | **Le canal de contenu a tourné pour de vrai — pour la première fois depuis la scission.** Le secret `PROD_SUPABASE_DB_URL` du privé repointé sur le pooler (Mohamed), deux applications passées et **vérifiées en base** : `french-4eme`/`french-5eme`/`arabic-6eme`, puis `math`/`math-6eme` — donc les **1 362 questions taggées** sont en prod, et les trois lots é07 livrés le 20/07 reçoivent enfin des données. Backup `pg_dump` avant chaque écriture, releases journalisées. **Ce qui a rendu la panne trouvable la prochaine fois** (#71/#72/#73) : l'URL IPv6 est refusée d'emblée en nommant la cause, le mauvais port et le tenant manquant sont attrapés, et une étape « vérifier que le contenu est bien en base » **échoue si un sujet revient vide** — elle transforme « le SQL est passé » en « le contenu est là », la distinction exacte qui manquait. Audit préalable au risque de prune : prod avait déjà été convergée vers les mêmes UUIDv5 le 2026-06-02 par les 231 migrations générées d'avant la scission, donc appliquer `math` était une convergence ordinaire, pas une purge. |
 | 2026-07-27 | **C4 cochée — le tagging de compétences vague 1 est fait** (1 362 questions : `math` 557/557, `math-6eme` 805/805, 10 PRs #51→#61). Les trois lots produit livrés depuis le 2026-07-20 mais **inertes faute de corpus tagué** ne le sont plus. Le lot rend deux constats à l'humain : les **57 compétences du registre sont toutes mobilisées** (le calibrage Q-1 est vérifié par l'usage, pas seulement par construction — c'est ce qui manquait à la validation de l'échantillon), et **deux compétences manquent** au registre (`num.valeur-absolue`, `stat.mode` — 18 questions rabattues sur une compétence voisine). **Découverte du même jour, et c'est le nouveau point dur** : `apply-content.yml` **n'a jamais appliqué de contenu en prod** — son unique run réel a échoué au backup, l'URL du secret `PROD_SUPABASE_DB_URL` d'ici étant la connexion directe Supabase, IPv6-only, injoignable depuis les runners GitHub (#52). Rien de ce qui a été produit depuis la scission n'est donc en prod. La prod est intacte : le fail-closed a joué avant toute écriture. |
 | 2026-07-31 | **Ligne 9 à moitié livrée — é04 lot A1.2a (serveur) est sur `main`** (arena#689, correctif de test arena#691). `get_attempt_review` rend `misconception_tag` + `chapter_id` : la troisième boucle « collectée-jamais-surfacée » de l'étude 26 se referme côté serveur, le signal capté depuis la phase A0 cesse de n'alimenter que la télémétrie. Le stop-point D-A1.2-2 est tenu et **encodé en attaque** — trois assertions rejouent l'élimination par la map plutôt que le cas nominal. La ligne reste décochée : **A1.2b** (client) n'est pas fait. **Deux enseignements de process, qui valent au-delà de ce lot.** (1) `pgTAP suite` tourne sur les PR de migration mais **n'est pas requise** : #689 a mergé 3 minutes après son ouverture, sur les checks requis verts, avec un fichier de test rouge — la fenêtre de lecture d'un check non requis est plus courte que le temps de le lire. Sur une PR de migration, soit on rend le check requis, soit on ouvre en `wip/`. (2) La vérification locale du lot avait tourné sur des **shims pgTAP écrits pour l'occasion**, dont l'un implémentait `unlike()` — une fonction que pgTAP n'a jamais eue. Un harnais qui définit la fonction qu'il est censé valider ne valide rien : c'est la leçon d'arena#631/#635 (« une sonde ne vaut que si elle exécute le même code que le gate ») rejouée sous une autre forme. |
+| 2026-07-31 | **Ligne 9 — les deux lots livrés (A1.2a arena#689/#691, A1.2b arena#695), et un constat qui vaut plus que le lot.** A1.2b a dû **corriger D-A1.2-3**, fondée sur une surface de compilation client qui n'existe pas : les libellés passent désormais par la base, par le canal des compétences (é07), sans rien perdre de l'intention (la fonction rend un ID, le registre reste source unique, une reformulation reste une correction de registre). **Le fait majeur** : mesuré ce jour, le corpus ne contient **aucun** tag de misconception — 0 occurrence sur ~18 700 questions, 0 `distractor_tags` non vide dans les migrations manuelles, les 5 tags du registre inutilisés. Donc `user_misconceptions` est **vide en prod** depuis l'origine, le terme « misconceptions » de `get_daily_plan` vaut zéro depuis #581, et **la ligne 15 (A2.1) livrerait un écran vide**. L'étude 26 décrivait une boucle « collectée-jamais-surfacée » : elle n'était **jamais alimentée**. Le blocage de tout l'axe est du **contenu** — taguer les distracteurs, comme C4 l'a fait pour les compétences (deux registres distincts : C4 n'a PAS tagué les misconceptions). **Reliquat de la ligne 9** : le geste « m'entraîner », suspendu à la décision « quel lien misconception → compétence ». |
