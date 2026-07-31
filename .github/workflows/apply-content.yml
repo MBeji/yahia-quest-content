@@ -194,19 +194,41 @@ jobs:
           node --experimental-strip-types scripts/content/build.ts \
             --sql-dir "$GITHUB_WORKSPACE/corpus/sql/content"
 
+      # DEUXIÈME appel, et non un drapeau oublié : `--competences` émet le
+      # registre SEUL (étude 07 D-1) sans régénérer aucun sujet — l'appel
+      # ci-dessus fait exactement l'inverse. Sans cette étape,
+      # `_competences_registry.sql` n'était JAMAIS produit : le registre en base
+      # restait figé à la migration du 2026-07-11 (57 compétences), et toute
+      # compétence ajoutée depuis n'existait nulle part en prod — alors que les
+      # sujets, eux, portaient déjà les tags qui la référencent. Constaté le
+      # 2026-07-31 en ajoutant `num.valeur-absolue` et `stat.mode`.
+      - name: Émettre le registre de compétences
+        working-directory: engine
+        run: |
+          node --experimental-strip-types scripts/content/build.ts --competences \
+            --sql-dir "$GITHUB_WORKSPACE/corpus/sql/content"
+
       - name: Établir le plan d'application
         id: plan
         run: |
           set -euo pipefail
           cd "$GITHUB_WORKSPACE/corpus/sql/content"
+          # Le registre passe TOUJOURS en premier, et quel que soit le périmètre :
+          # un sujet peut référencer une compétence toute neuve, et la jointure
+          # `question_competencies` ne retiendrait rien si la ligne n'existe pas
+          # encore. Il est idempotent — l'appliquer à chaque fois coûte quelques
+          # secondes et supprime une classe entière de « appliqué sans effet ».
+          REGISTRY="_competences_registry.sql"
+          [ -f "${REGISTRY}" ] || { echo "::error::${REGISTRY} absent — l'étape d'émission du registre a-t-elle tourné ?"; exit 1; }
           if [ -n "${SUBJECTS}" ]; then
-            FILES=""
+            FILES="${REGISTRY}"
             for s in ${SUBJECTS}; do
+              [ "${s}.sql" = "${REGISTRY}" ] && continue
               [ -f "${s}.sql" ] || { echo "::error::Sujet inconnu : ${s}.sql introuvable."; exit 1; }
               FILES="${FILES} ${s}.sql"
             done
           else
-            FILES="$(ls *.sql | tr '\n' ' ')"
+            FILES="${REGISTRY} $(ls *.sql | grep -v "^${REGISTRY}$" | tr '\n' ' ')"
           fi
           echo "files=${FILES}" >> "$GITHUB_OUTPUT"
           echo "### Plan d'application" >> "$GITHUB_STEP_SUMMARY"
