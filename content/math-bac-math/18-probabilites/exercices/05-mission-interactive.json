@@ -1,0 +1,124 @@
+{
+  "title": "🧩 Mission interactive ⭐⭐ : Le Bazar du Hasard",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "Texte à trous — l'étal du changeur. Au Bazar du Hasard, le premier étal propose un sac opaque contenant 8 jetons tous DIFFÉRENTS, dont exactement 3 sont dorés. Le changeur plonge la main et en retire 3 d'un seul geste, SIMULTANÉMENT, sans regarder — les 8 jetons sont indiscernables au toucher. Complète le registre de l'étal : « nombre de poignées possibles = ____ ; probabilité que les 3 jetons retirés soient les 3 jetons dorés = ____ ».",
+      "options": [
+        { "id": "a", "text": "① 56 poignées possibles / ② 1/56" },
+        { "id": "b", "text": "① 336 poignées possibles / ② 1/336" },
+        { "id": "c", "text": "① 56 poignées possibles / ② 3/56" },
+        { "id": "d", "text": "① 512 poignées possibles / ② 27/512" }
+      ],
+      "correctOption": "a",
+      "explanation": "LIRE L'ÉNONCÉ AVANT DE COMPTER. Trois mots décident du modèle : les jetons sont retirés SIMULTANÉMENT (l'ordre ne dit rien), d'un sac où chaque jeton est unique (pas de remise), et on en prend 3 sur 8. C'est donc une COMBINAISON. ① LE DÉNOMBREMENT. C_8^3 = 8!/(5!3!) = (8 × 7 × 6)/6 = 336/6 = 56. Il y a 56 poignées possibles. Contrôle par la symétrie du cours, C_n^p = C_n^(n−p) : choisir les 3 jetons pris revient à choisir les 5 laissés, et C_8^5 = (8 × 7 × 6 × 5 × 4)/120 = 6720/120 = 56 ✓. Les deux chemins concordent. ② LA PROBABILITÉ. Les 8 jetons sont indiscernables au toucher, donc les 56 poignées sont équiprobables et p(A) = card(A)/card(E). Combien de poignées ne contiennent que les 3 dorés ? Il faut choisir les 3 dorés parmi les 3 dorés : C_3^3 = 1. Une seule poignée convient, donc la probabilité vaut 1/56. La bonne ligne du registre est donc 56 poignées possibles et 1/56. CONTRÔLE PAR UN SECOND CHEMIN, en raisonnant jeton par jeton : le premier jeton est doré avec la probabilité 3/8, le deuxième avec 2/7 (il reste 2 dorés sur 7 jetons), le troisième avec 1/6. Le produit vaut (3/8) × (2/7) × (1/6) = 6/336 = 1/56 ✓. Tirer d'un seul geste ou l'un après l'autre ne change pas cette probabilité. « 336 poignées / 1/336 » a compté des ARRANGEMENTS : 336 = A_8^3 = 8 × 7 × 6 est le nombre de façons de retirer 3 jetons EN LES ORDONNANT. Or le sac est vidé d'un seul geste : les poignées {jeton 1, jeton 2, jeton 3} et {jeton 2, jeton 1, jeton 3} sont la MÊME poignée. Le cours donne le lien exact : A_8^3 = 3! × C_8^3, soit 336 = 6 × 56 ✓ — on a compté chaque poignée six fois. Et même dans le modèle ordonné, la réponse ne serait pas 1/336 mais 6/336, puisque les 3 dorés se rangent de 3! = 6 façons. « 56 poignées / 3/56 » compte bien les poignées mais se trompe sur les cas favorables : il n'y a pas 3 poignées gagnantes parce qu'il y a 3 jetons dorés. La poignée gagnante est UNIQUE — c'est celle qui contient les trois dorés à la fois. Le nombre de cas favorables se calcule, C_3^3 = 1, il ne se recopie pas sur les données. « 512 poignées / 27/512 » a modélisé un tirage AVEC REMISE : 512 = 8³ est le nombre de triplets si l'on remettait le jeton après chaque tirage, et 27 = 3³ le nombre de triplets entièrement dorés. Le calcul est cohérent avec lui-même, mais pas avec l'énoncé : le changeur retire les 3 jetons d'un seul geste, il ne peut donc pas prendre deux fois le même. Rien n'est remis dans le sac.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le stand des deux urnes. Le forain fait d'abord tourner une roue truquée : elle désigne l'urne U₁ avec la probabilité 0,3 et l'urne U₂ avec la probabilité 0,7. Il tire ensuite une boule au hasard dans l'urne désignée. L'urne U₁ contient 10 boules dont 6 gagnantes ; l'urne U₂ contient 10 boules dont 2 gagnantes. L'arbre ci-dessous porte les probabilités de chaque branche, mais aucun résultat n'y est calculé. Quelle est la probabilité de l'événement G « la boule tirée est gagnante » ? Réponds en pourcentage, par un nombre ENTIER (par exemple 25 pour 25 %).\n<svg viewBox=\"0 0 340 250\"><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"><path d=\"M45 125 L150 65\"/><path d=\"M45 125 L150 185\"/><path d=\"M150 65 L250 35\"/><path d=\"M150 65 L250 95\"/><path d=\"M150 185 L250 155\"/><path d=\"M150 185 L250 215\"/></g><g fill=\"#0f172a\"><circle cx=\"45\" cy=\"125\" r=\"4\"/><circle cx=\"150\" cy=\"65\" r=\"4.5\"/><circle cx=\"150\" cy=\"185\" r=\"4.5\"/><circle cx=\"250\" cy=\"35\" r=\"4\"/><circle cx=\"250\" cy=\"95\" r=\"4\"/><circle cx=\"250\" cy=\"155\" r=\"4\"/><circle cx=\"250\" cy=\"215\" r=\"4\"/></g><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f6e56\"><text x=\"97\" y=\"88\" text-anchor=\"middle\">0,3</text><text x=\"97\" y=\"166\" text-anchor=\"middle\">0,7</text><text x=\"200\" y=\"42\" text-anchor=\"middle\">0,6</text><text x=\"200\" y=\"92\" text-anchor=\"middle\">0,4</text><text x=\"200\" y=\"162\" text-anchor=\"middle\">0,2</text><text x=\"200\" y=\"212\" text-anchor=\"middle\">0,8</text></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"150\" y=\"53\" text-anchor=\"middle\">U₁</text><text x=\"150\" y=\"205\" text-anchor=\"middle\">U₂</text><text x=\"261\" y=\"40\" text-anchor=\"start\">G</text><text x=\"261\" y=\"100\" text-anchor=\"start\">G̅</text><text x=\"261\" y=\"160\" text-anchor=\"start\">G</text><text x=\"261\" y=\"220\" text-anchor=\"start\">G̅</text></g></svg>",
+      "answerKey": {
+        "value": 32
+      },
+      "explanation": "VÉRIFIER L'ARBRE AVANT DE S'EN SERVIR. À chaque nœud, les branches doivent sommer à 1 : à la racine 0,3 + 0,7 = 1 ✓ ; sous U₁, 0,6 + 0,4 = 1 ✓ ; sous U₂, 0,2 + 0,8 = 1 ✓. Les proportions de boules gagnantes se lisent directement : 6 sur 10 dans U₁ donne p(G/U₁) = 0,6 ✓, et 2 sur 10 dans U₂ donne p(G/U₂) = 0,2 ✓. L'arbre est cohérent. ON MULTIPLIE EN DESCENDANT. Le chemin U₁ puis G a pour probabilité p(U₁) × p(G/U₁) = 0,3 × 0,6 = 0,18. Le chemin U₂ puis G a pour probabilité p(U₂) × p(G/U₂) = 0,7 × 0,2 = 0,14. ON ADDITIONNE EN TRAVERS. Les urnes U₁ et U₂ forment une partition de l'univers, donc la formule des probabilités totales donne p(G) = 0,18 + 0,14 = 0,32, c'est-à-dire 32 %. La réponse est 32. CONTRÔLE PAR L'ÉVÉNEMENT CONTRAIRE, obligatoire : p(G̅) = 0,3 × 0,4 + 0,7 × 0,8 = 0,12 + 0,56 = 0,68, et 0,32 + 0,68 = 1,00 ✓. Les quatre chemins de l'arbre forment bien une partition. SECOND CONTRÔLE, PAR LES EFFECTIFS. Imaginons 1000 joueurs : 300 sont envoyés vers U₁ et 700 vers U₂. Parmi les 300, 60 % gagnent, soit 180 ; parmi les 700, 20 % gagnent, soit 140. Au total 180 + 140 = 320 gagnants sur 1000, soit 32 % ✓. Les deux chemins concordent. TROIS PIÈGES À ÉVITER. Répondre 40 en faisant la moyenne des deux taux, (60 + 20)/2 = 40 : ce serait juste si les deux urnes étaient désignées aussi souvent, or U₂ l'est plus de deux fois plus souvent, et c'est la moins généreuse — la vraie valeur doit donc être TIRÉE VERS LE BAS, en dessous de 40, ce que confirme 32. Répondre 80 en additionnant 60 % et 20 % : une probabilité ne s'obtient jamais en additionnant des taux conditionnels sans les pondérer, et 80 % serait absurdement élevé pour un stand de forain. Répondre 12 en multipliant 0,6 par 0,2 : les deux urnes ne sont pas traversées l'une après l'autre, elles s'excluent — on multiplie LE LONG d'un chemin, jamais entre deux chemins.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "L'étal des trois paris. Le même sac de 6 jetons numérotés de 1 à 6 sert aux trois paris de l'étal, mais la règle du tirage change à chaque fois, et le nombre de résultats possibles avec. ① Pari du duel : on tire deux jetons l'un APRÈS l'autre, SANS remettre le premier, et l'on note le couple dans l'ordre de sortie. ② Pari de la paire : on tire deux jetons D'UN SEUL GESTE, l'ordre ne comptant pas. ③ Pari de l'écho : on tire un jeton, on le REMET dans le sac, puis on en tire un second, et l'on note le couple dans l'ordre de sortie. Associe chaque pari au nombre de résultats possibles.",
+      "options": [
+        { "id": "l1", "text": "① Pari du duel — nombre de résultats possibles" },
+        { "id": "l2", "text": "② Pari de la paire — nombre de résultats possibles" },
+        { "id": "l3", "text": "③ Pari de l'écho — nombre de résultats possibles" },
+        { "id": "r1", "text": "30" },
+        { "id": "r2", "text": "15" },
+        { "id": "r3", "text": "36" }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"]
+        ]
+      },
+      "explanation": "TROIS QUESTIONS SUFFISENT À TRIER LES TROIS PARIS : y a-t-il remise ? l'ordre compte-t-il ? combien de jetons prend-on ? ① LE DUEL → 30. Tirage successif SANS remise, l'ordre compte : c'est un ARRANGEMENT de 2 jetons parmi 6, A_6^2 = 6!/4! = 6 × 5 = 30. Contrôle direct : 6 choix pour le premier jeton, puis 5 pour le second puisque le premier ne revient pas, soit 6 × 5 = 30 ✓. ② LA PAIRE → 15. Tirage simultané, l'ordre ne dit rien : c'est une COMBINAISON, C_6^2 = 6!/(4!2!) = 30/2 = 15. Contrôle par la relation du cours A_n^p = p! × C_n^p : chaque paire se range de 2! = 2 façons dans un duel, et 15 × 2 = 30 ✓ — il y a exactement deux fois moins de paires que de duels. ③ L'ÉCHO → 36. Tirage successif AVEC remise : le sac est intact au second tirage, donc c'est un couple quelconque, 6² = 36. Contrôle par décomposition : 6 couples ont deux fois le même numéro et 30 en ont deux différents, et 6 + 30 = 36 ✓ — on retrouve au passage les 30 duels du pari ①, ce qui est logique, un duel étant exactement un écho dont les deux jetons diffèrent. CE QUE CET ÉTAL APPREND, et qui est le piège numéro un du chapitre : les mots « successivement » et « simultanément » ne sont pas du décor, ils changent le nombre de résultats. Sur les mêmes 6 jetons et le même nombre de tirages, on obtient 36, 30 ou 15 selon la règle — du plus permissif au plus restrictif : avec remise ordonné (36), sans remise ordonné (30), sans remise non ordonné (15). Chaque contrainte ajoutée réduit le compte, jamais l'inverse. Intervertir 30 et 15 revient à oublier que l'ordre double le nombre de résultats ; attribuer 36 au duel revient à remettre un jeton que l'énoncé garde en main.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Chasse à l'erreur — la fiche du croupier. Sur l'étal du dé, le croupier lance un dé cubique ÉQUILIBRÉ dont les faces sont numérotées de 1 à 6. Il note A l'événement « obtenir un numéro pair » et B l'événement « obtenir un numéro supérieur ou égal à 5 », puis affiche sa fiche de calcul en quatre étapes. ① « A = {2, 4, 6}, et comme le dé est équilibré, p(A) = card(A)/card(E) = 3/6 = 1/2. » ② « B = {5, 6}, donc p(B) = 2/6 = 1/3. » ③ « A et B sont-ils incompatibles ? A ∩ B = {6}, qui n'est pas vide : non, ils ne le sont pas. » ④ « Puisqu'ils ne sont pas incompatibles, la probabilité de A ∪ B vaut p(A) + p(B) = 1/2 + 1/3 = 5/6. » Une seule étape est fausse : laquelle, et que faut-il écrire à la place ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape ④ : la formule générale est p(A ∪ B) = p(A) + p(B) − p(A ∩ B) ; avec p(A ∩ B) = 1/6, on obtient 1/2 + 1/3 − 1/6 = 2/3, et non 5/6"
+        },
+        {
+          "id": "b",
+          "text": "L'étape ③ : A ∩ B = {6} ne contient qu'une seule issue, ce qui est trop peu pour compter — A et B sont donc incompatibles, et l'étape ④ devient correcte"
+        },
+        {
+          "id": "c",
+          "text": "L'étape ② : « supérieur ou égal à 5 » englobe aussi le 4, donc B = {4, 5, 6} et p(B) = 3/6 = 1/2, d'où p(A ∪ B) = 1/2 + 1/2 = 1"
+        },
+        {
+          "id": "d",
+          "text": "L'étape ④ n'est pas fautive : A et B sont indépendants, puisque p(A) × p(B) = 1/6 = p(A ∩ B), et l'indépendance autorise l'addition — c'est l'étape ③ qui est fausse"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'ERREUR EST À L'ÉTAPE ④, et la fiche se contredit elle-même d'une ligne à l'autre : l'étape ③ constate que A ∩ B = {6} n'est PAS vide, puis l'étape ④ additionne comme si l'intersection était vide. ① EST JUSTE. Le dé est équilibré, donc la probabilité est uniforme et p(A) = card(A)/card(E). A = {2, 4, 6} a bien 3 éléments sur 6, donc p(A) = 3/6 = 1/2 ✓. ② EST JUSTE. « Supérieur ou égal à 5 » désigne les numéros 5 et 6, donc B = {5, 6}, de cardinal 2, et p(B) = 2/6 = 1/3 ✓. ③ EST JUSTE. A ∩ B est l'ensemble des numéros à la fois pairs et supérieurs ou égaux à 5 : seul le 6 convient, donc A ∩ B = {6}, non vide, et les deux événements ne sont pas incompatibles ✓. ④ EST FAUSSE, et voici la correction. La propriété du cours est p(A ∪ B) = p(A) + p(B) − p(A ∩ B) ; l'addition simple n'est valable QUE si A ∩ B = ∅, ce que l'étape ③ vient précisément d'exclure. Ici p(A ∩ B) = p({6}) = 1/6, donc ÉTAPE CORRIGÉE : p(A ∪ B) = 1/2 + 1/3 − 1/6 = 3/6 + 2/6 − 1/6 = 4/6 = 2/3. CONTRÔLE PAR COMPTAGE DIRECT, qui tranche sans formule : A ∪ B = {2, 4, 6} ∪ {5, 6} = {2, 4, 5, 6}, de cardinal 4, donc p(A ∪ B) = 4/6 = 2/3 ✓. Les deux chemins donnent le même nombre. Et l'on voit d'où venait l'écart : 5/6 − 2/3 = 5/6 − 4/6 = 1/6, exactement la probabilité du 6, compté deux fois par l'addition naïve. « L'étape ③ serait fausse » invente un seuil qui n'existe pas. Deux événements sont incompatibles lorsque leur intersection est VIDE, un point c'est tout : une seule issue commune suffit à les rendre compatibles. Si l'on suivait cette fiche, on obtiendrait p(A ∪ B) = 5/6, alors que le comptage direct donne 4 issues sur 6 : le 6 aurait été compté deux fois. « L'étape ② serait fausse » se trompe de vocabulaire. « Supérieur ou égal à 5 » signifie 5 ou plus ; le 4 est strictement inférieur à 5 et n'appartient donc pas à B. La conclusion proposée est d'ailleurs absurde à elle seule : elle annonce p(A ∪ B) = 1, autrement dit que TOUT lancer donnerait un numéro pair ou au moins égal à 5 — or le 1 et le 3 ne vérifient ni l'un ni l'autre. « A et B sont indépendants, donc on peut additionner » est le piège de la fiche, et il est doublement instructif. Le calcul annoncé est EXACT : p(A) × p(B) = (1/2) × (1/3) = 1/6 = p(A ∩ B), donc A et B sont bel et bien indépendants ✓. Mais l'indépendance ne dit rien sur la réunion : elle justifie de MULTIPLIER pour obtenir l'intersection, jamais d'ADDITIONNER pour obtenir la réunion. Ce qui autoriserait l'addition, c'est l'incompatibilité — et le cours rappelle que les deux notions sont presque contraires, puisque deux événements incompatibles de probabilités non nulles ne sont jamais indépendants.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "La roue des gains. Le dernier stand du bazar propose une roue partagée en secteurs. Le gain X d'une partie, en pièces d'or, prend la valeur 0 avec la probabilité 0,5, la valeur 5 avec la probabilité 0,4 et la valeur 20 avec la probabilité 0,1. Le comptable du bazar note six affirmations dans son grand livre. Sélectionne TOUTES celles qui sont exactes.",
+      "options": [
+        { "id": "a", "text": "Le gain moyen par partie vaut E(X) = 4 pièces" },
+        { "id": "b", "text": "La variance vaut V(X) = 50" },
+        { "id": "c", "text": "La variance vaut V(X) = 34" },
+        { "id": "d", "text": "La fonction de répartition de X vérifie F(5) = 0,4" },
+        { "id": "e", "text": "La probabilité de repartir avec au moins 5 pièces vaut p(X ≥ 5) = 0,5" },
+        { "id": "f", "text": "Si le forain triplait tous les gains, le gain moyen deviendrait E(3X) = 12 pièces" }
+      ],
+      "answerKey": {
+        "correct": ["a", "c", "e", "f"]
+      },
+      "explanation": "PREMIER RÉFLEXE, TOUJOURS : vérifier que la loi est cohérente. 0,5 + 0,4 + 0,1 = 1,0 ✓, et les trois nombres appartiennent à [0, 1] ✓. On peut calculer. « LE GAIN MOYEN VAUT E(X) = 4 PIÈCES » — EXACTE. E(X) = Σ xᵢpᵢ = 0 × 0,5 + 5 × 0,4 + 20 × 0,1 = 0 + 2 + 2 = 4. Contrôle de bon sens : 4 se situe bien entre la plus petite valeur 0 et la plus grande 20, comme toute moyenne pondérée ✓. « LA VARIANCE VAUT V(X) = 50 » — INEXACTE. Le nombre 50 est E(X²), pas la variance : E(X²) = 0² × 0,5 + 5² × 0,4 + 20² × 0,1 = 0 + 10 + 40 = 50. C'est l'oubli le plus fréquent du chapitre — il manque le retranchement de la formule de Kœnig. « LA VARIANCE VAUT V(X) = 34 » — EXACTE. V(X) = E(X²) − (E(X))² = 50 − 4² = 50 − 16 = 34. Contrôle par la définition, obligatoire : V(X) = Σ pᵢ(xᵢ − 4)² = 0,5 × (0 − 4)² + 0,4 × (5 − 4)² + 0,1 × (20 − 4)² = 0,5 × 16 + 0,4 × 1 + 0,1 × 256 = 8 + 0,4 + 25,6 = 34 ✓. Les deux chemins concordent, et la variance est bien positive. « F(5) = 0,4 » — INEXACTE. La fonction de répartition est F(x) = p(X ≤ x), donc F(5) = p(X = 0) + p(X = 5) = 0,5 + 0,4 = 0,9, et non 0,4. Le nombre 0,4 est le SAUT de F en 5, c'est-à-dire p(X = 5) ; la valeur de F est le cumul de tous les sauts déjà franchis. Contrôle : F(5) = 0,9 et p(X > 5) = p(X = 20) = 0,1, avec 0,9 + 0,1 = 1 ✓. « p(X ≥ 5) = 0,5 » — EXACTE. « Au moins 5 pièces » réunit les valeurs 5 et 20, donc p(X ≥ 5) = 0,4 + 0,1 = 0,5. Contrôle par l'événement contraire : p(X < 5) = p(X = 0) = 0,5, et 0,5 + 0,5 = 1 ✓. « E(3X) = 12 PIÈCES » — EXACTE. L'espérance est linéaire : E(αX) = αE(X), donc E(3X) = 3 × 4 = 12 pièces. Contrôle par le calcul direct sur la loi de 3X, qui prend les valeurs 0, 15 et 60 avec les mêmes probabilités : 0 × 0,5 + 15 × 0,4 + 60 × 0,1 = 0 + 6 + 6 = 12 ✓. BILAN : quatre affirmations sont exactes — le gain moyen E(X) = 4, la variance V(X) = 34, la probabilité p(X ≥ 5) = 0,5 et l'espérance triplée E(3X) = 12 ; les deux affirmations à écarter sont celle qui annonce V(X) = 50 et celle qui annonce F(5) = 0,4. LA LEÇON DU STAND : le gain moyen de 4 pièces ne dit pas tout. Avec une variance de 34, donc un écart-type d'environ 5,8 pièces, les gains sont très dispersés autour de leur moyenne — une partie sur deux ne rapporte rien, et c'est le gros lot de 20 pièces, tiré une fois sur dix, qui porte la moitié de l'espérance.",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "Dernière mission — le rapport du trésorier. Le trésorier du bazar doit trancher : le jeu du sac est-il équitable ? La règle est simple — le joueur paie un droit d'entrée fixe, puis tire un jeton au hasard parmi les 10 du sac, chaque jeton portant un nombre de pièces gagnées. Remets dans l'ordre les cinq étapes du rapport que le trésorier doit rédiger.",
+      "options": [
+        {
+          "id": "s1",
+          "text": "Décrire l'expérience aléatoire et son univers : le joueur tire un jeton parmi les 10 du sac, les jetons sont indiscernables au toucher, donc les 10 issues sont équiprobables."
+        },
+        {
+          "id": "s2",
+          "text": "Définir la variable aléatoire X comme le nombre de pièces inscrit sur le jeton tiré, et dresser la liste des valeurs qu'elle peut prendre."
+        },
+        {
+          "id": "s3",
+          "text": "Établir la loi de probabilité de X : pour chaque valeur, compter les jetons favorables et diviser par 10, puis vérifier que la somme des probabilités obtenues vaut exactement 1."
+        },
+        {
+          "id": "s4",
+          "text": "Calculer l'espérance E(X) = Σ xᵢpᵢ, c'est-à-dire le gain moyen par partie que le bazar verse sur un très grand nombre de parties."
+        },
+        {
+          "id": "s5",
+          "text": "Comparer E(X) au droit d'entrée pour conclure : le jeu est équitable si les deux nombres sont égaux, et favorable au bazar si le droit d'entrée est le plus grand des deux."
+        }
+      ],
+      "answerKey": {
+        "order": ["s1", "s2", "s3", "s4", "s5"]
+      },
+      "explanation": "L'ORDRE EST IMPOSÉ PAR LA LOGIQUE : chaque étape consomme le résultat de la précédente, et c'est la chaîne complète du chapitre, de l'expérience jusqu'à la décision. D'ABORD L'EXPÉRIENCE ET L'UNIVERS. Tant qu'on n'a pas dit ce qu'est une issue ni combien il y en a, aucune probabilité n'existe. Cette étape porte aussi la justification de l'ÉQUIPROBABILITÉ — « indiscernables au toucher » — sans laquelle on n'aurait pas le droit d'écrire p(A) = card(A)/10. Le cours est formel : l'équiprobabilité se justifie, elle ne se suppose jamais. ENSUITE DÉFINIR LA VARIABLE. Une variable aléatoire est une application X de l'univers vers ℝ : elle a besoin de l'univers pour exister, donc elle vient après lui. On liste ici X(E), l'ensemble des valeurs prises. PUIS ÉTABLIR LA LOI. La loi associe à chaque valeur xᵢ sa probabilité p(X = xᵢ) — impossible avant d'avoir listé ces valeurs. C'est ici que se place la vérification qui sauve tout le reste du rapport : Σ p(X = xᵢ) = 1. Un total différent de 1 signale une erreur de comptage, et il vaut mille fois mieux la trouver maintenant qu'après avoir calculé une espérance fausse. PUIS CALCULER L'ESPÉRANCE. E(X) = Σ xᵢpᵢ mobilise à la fois les valeurs et leurs probabilités : la loi complète est donc un préalable strict. ENFIN COMPARER ET CONCLURE. L'espérance seule ne dit pas si le jeu est équitable ; elle ne le devient qu'une fois confrontée au droit d'entrée. Si E(X) est égal au droit d'entrée, le bazar ne gagne ni ne perd sur un grand nombre de parties ; si le droit d'entrée est plus grand, le bazar encaisse la différence à chaque partie en moyenne. LES DEUX INVERSIONS QUI COÛTENT DES POINTS. Calculer l'espérance avant d'avoir vérifié que la loi somme à 1 : on obtient un nombre, il a l'air d'une réponse, et il est faux sans que rien ne le signale. Et conclure sur l'équité avant d'avoir calculé E(X) : comparer le droit d'entrée au plus gros gain affiché sur un jeton n'a aucun sens, puisque ce gain peut n'arriver qu'une fois sur mille — seule la MOYENNE PONDÉRÉE décide, et c'est exactement ce que l'espérance mesure.",
+      "difficulty": 2
+    }
+  ]
+}
