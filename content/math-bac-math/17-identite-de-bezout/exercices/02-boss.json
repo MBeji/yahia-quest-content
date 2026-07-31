@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le forgeron des combinaisons",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Déterminer deux entiers u et v tels que 27u + 10v = 1.",
+      "options": [
+        {
+          "id": "a",
+          "text": "u = −3 et v = 8"
+        },
+        {
+          "id": "b",
+          "text": "u = 3 et v = −8"
+        },
+        {
+          "id": "c",
+          "text": "u = 8 et v = −3"
+        },
+        {
+          "id": "d",
+          "text": "u = 3 et v = −7"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un couple de Bézout ne se devine pas : on déroule Euclide, puis on le REMONTE. 1) EUCLIDE. 27 = 10 × 2 + 7 ; 10 = 7 × 1 + 3 ; 7 = 3 × 2 + 1 ; 3 = 1 × 3 + 0. Le dernier reste non nul vaut 1, donc 27 ∧ 10 = 1 et l'identité existe. 2) LA REMONTÉE, en partant de l'avant-dernière division. 1 = 7 − 2 × 3. On remplace 3 par 10 − 7 : 1 = 7 − 2(10 − 7) = 3 × 7 − 2 × 10 ; recalcul du coefficient de 7 : 1 + 2 = 3 ✓. On remplace 7 par 27 − 2 × 10 : 1 = 3(27 − 2 × 10) − 2 × 10 = 3 × 27 − 6 × 10 − 2 × 10 = 3 × 27 − 8 × 10 ; recalcul du coefficient de 10 : −6 − 2 = −8 ✓. D'où u = 3 et v = −8 ✓. Contrôle par réinjection dans 27u + 10v = 1 : 27 × 3 + 10 × (−8) = 81 − 80 = 1 ✓. Contrôle par une seconde voie totalement indépendante, le tableau de l'algorithme d'Euclide étendu (r, u, v) initialisé par (27, 1, 0) et (10, 0, 1), chaque ligne étant l'avant-dernière moins q fois la dernière. q = 2 : (27 − 2 × 10, 1 − 0, 0 − 2) = (7, 1, −2), contrôle 27 − 20 = 7 ✓. q = 1 : (10 − 7, 0 − 1, 1 + 2) = (3, −1, 3), contrôle −27 + 30 = 3 ✓. q = 2 : (7 − 2 × 3, 1 + 2, −2 − 6) = (1, 3, −8), contrôle 81 − 80 = 1 ✓. Les deux méthodes livrent le même couple. Le piège courant : livrer le couple OPPOSÉ, u = −3 et v = 8, en confondant 1 = 7 − 2 × 3 avec −1 = 2 × 3 − 7 ; la réinjection le réfute en une ligne, 27 × (−3) + 10 × 8 = −81 + 80 = −1, et non 1. Le distracteur u = 8 et v = −3 exécute l'échange des rôles : on recopie les deux coefficients dans le mauvais ordre, alors que u multiplie 27 et v multiplie 10 ; 27 × 8 + 10 × (−3) = 216 − 30 = 186, très loin de 1. Enfin u = 3 et v = −7 exécute une distribution incomplète : en écrivant 3(27 − 2 × 10) − 2 × 10 = 3 × 27 − 6 × 10 − 10 on ne compte le dernier terme qu'une fois au lieu de deux, d'où −7 au lieu de −8 ; 81 − 70 = 11 ≠ 1. Rappel utile : le couple n'est pas unique, u = 13 et v = −35 conviennent aussi (351 − 350 = 1 ✓) — seule la réinjection juge.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résoudre dans ℤ l'équation 17x ≡ −9 (mod 33).",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≡ 18 (mod 33)"
+        },
+        {
+          "id": "b",
+          "text": "x ≡ 15 (mod 17)"
+        },
+        {
+          "id": "c",
+          "text": "x ≡ 24 (mod 33)"
+        },
+        {
+          "id": "d",
+          "text": "x ≡ 15 (mod 33)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une congruence linéaire ax ≡ c (mod b) se résout par l'INVERSE de a, et jamais par une division — encore faut-il vérifier d'abord que l'inverse existe. 1) LA CONDITION. 33 = 17 × 1 + 16 ; 17 = 16 × 1 + 1 ; 16 = 1 × 16 + 0, donc 17 ∧ 33 = 1 : 17 est bien inversible modulo 33. 2) L'INVERSE. 17 × 2 = 34 = 33 + 1, donc 17 × 2 ≡ 1 (mod 33) : l'inverse de 17 modulo 33 est 2, et c'est l'unique élément de {0, 1, …, 32} qui convient ✓. 3) ON MULTIPLIE les deux membres par cet inverse : 2 × 17x ≡ 2 × (−9) (mod 33), soit x ≡ −18 (mod 33). 4) LE REPRÉSENTANT dans {0, 1, …, 32} : −18 + 33 = 15, d'où x ≡ 15 (mod 33) ✓. Contrôle par réinjection : 17 × 15 = 255 et 255 + 9 = 264 = 33 × 8, donc 17 × 15 ≡ −9 (mod 33) ✓. Contrôle sur une seconde valeur de la même classe : x = 48 donne 17 × 48 = 816, et 816 + 9 = 825 = 33 × 25 ✓. Contrôle par une seconde voie totalement indépendante : on réduit d'abord le second membre, −9 ≡ 24 (mod 33), puis on multiplie par l'inverse 2, ce qui donne x ≡ 48 ≡ 15 (mod 33) — même classe, sans jamais manipuler de nombre négatif ✓. Le piège courant : perdre le signe du second membre et livrer x ≡ 18 (mod 33), c'est-à-dire résoudre 17x ≡ 9 au lieu de 17x ≡ −9 ; la réinjection le réfute, 17 × 18 = 306 et 306 + 9 = 315 = 33 × 9 + 18, qui n'est pas un multiple de 33. Le distracteur x ≡ 24 (mod 33) exécute l'oubli pur et simple de la multiplication par l'inverse : on se contente de réécrire −9 sous la forme 24 et on annonce ce nombre comme solution ; or 17 × 24 = 408 et 408 + 9 = 417 = 33 × 12 + 21, non multiple de 33. Enfin x ≡ 15 (mod 17) garde la bonne valeur mais la donne modulo le COEFFICIENT 17 au lieu du module 33 : l'ensemble annoncé est alors deux fois trop gros, et x = 32, qui est congru à 15 modulo 17, n'est pas solution — 17 × 32 = 544 et 544 + 9 = 553 = 33 × 16 + 25.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résoudre dans ℤ × ℤ l'équation 35x − 14y = 7.",
+      "options": [
+        {
+          "id": "a",
+          "text": "{(1 + 2k, 2 + 5k), k ∈ ℤ}"
+        },
+        {
+          "id": "b",
+          "text": "{(1 + 14k, 2 + 35k), k ∈ ℤ}"
+        },
+        {
+          "id": "c",
+          "text": "{(1 + 2k, 2 − 5k), k ∈ ℤ}"
+        },
+        {
+          "id": "d",
+          "text": "{(2 + 5k, 1 + 2k), k ∈ ℤ}"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les quatre étapes du cours, dans l'ordre, sans en sauter une. 1) LE PGCD ET LA CONDITION. 35 = 14 × 2 + 7 ; 14 = 7 × 2 + 0, donc 35 ∧ 14 = 7 ; comme 7 divise 7, l'équation a des solutions. 2) ON DIVISE TOUTE L'ÉQUATION par 7 : 5x − 2y = 1, avec 5 ∧ 2 = 1. C'est l'étape qui fixe le pas, et l'oublier fausse tout le reste. 3) UNE SOLUTION PARTICULIÈRE : (x₀, y₀) = (1, 2), car 5 × 1 − 2 × 2 = 5 − 4 = 1 ✓. 4) LA FORME GÉNÉRALE. En soustrayant, 5(x − 1) = 2(y − 2) ; l'entier 2 divise 5(x − 1) et 2 ∧ 5 = 1, donc par le lemme de Gauss 2 divise x − 1, soit x = 1 + 2k. En reportant, 5 × 2k = 2(y − 2), d'où y − 2 = 5k et y = 2 + 5k. L'ensemble des solutions est {(1 + 2k, 2 + 5k), k ∈ ℤ} ✓. Contrôle sur trois valeurs du paramètre, dont une négative : k = 0 donne (1, 2) et 35 − 28 = 7 ✓ ; k = 2 donne (5, 12) et 35 × 5 − 14 × 12 = 175 − 168 = 7 ✓ ; k = −1 donne (−1, −3) et 35 × (−1) − 14 × (−3) = −35 + 42 = 7 ✓. Contrôle par une seconde voie totalement indépendante : l'équation 5x − 2y = 1 équivaut à 5x ≡ 1 (mod 2), c'est-à-dire x ≡ 1 (mod 2) puisque 5 ≡ 1 ; les x solutions sont donc exactement les entiers impairs, ce que décrit bien x = 1 + 2k, et y s'en déduit par y = (5x − 1)/2 ✓. Le piège courant, celui que le cours signale en encadré : paramétrer AVANT de diviser par d, et livrer {(1 + 14k, 2 + 35k), k ∈ ℤ}. Ces couples sont bien solutions, mais ils ne sont pas tous : le pas doit valoir (−b/d, a/d) et non (−b, a), et on rate ici six solutions sur sept — (3, 7) vérifie 105 − 98 = 7 et ne s'écrit pourtant pas sous cette forme. Le distracteur {(1 + 2k, 2 − 5k), k ∈ ℤ} exécute une faute de signe dans le pas : k = 1 donne (3, −3) et 35 × 3 − 14 × (−3) = 105 + 42 = 147, très loin de 7. Enfin {(2 + 5k, 1 + 2k), k ∈ ℤ} exécute l'échange des deux inconnues : k = 0 donne (2, 1) et 35 × 2 − 14 × 1 = 70 − 14 = 56 ≠ 7 ; on a recopié le couple à l'envers.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout entier n, on pose a = 2n − 3 et b = 3n − 1. Déterminer l'ensemble des entiers n pour lesquels a ∧ b = 7.",
+      "options": [
+        {
+          "id": "a",
+          "text": "n ≡ 3 (mod 7)"
+        },
+        {
+          "id": "b",
+          "text": "n ≡ 2 (mod 7)"
+        },
+        {
+          "id": "c",
+          "text": "n ≡ 5 (mod 7)"
+        },
+        {
+          "id": "d",
+          "text": "aucun entier n : le PGCD ne peut valoir que 1 ou 11"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Deux expressions en n : on ne calcule pas, on COMBINE pour éliminer n, puis on résout une congruence. 1) BORNER LE PGCD. Tout diviseur commun d de a et b divise 3a − 2b = 3(2n − 3) − 2(3n − 1) = 6n − 9 − 6n + 2 = −7 ; recalcul du terme constant : −9 + 2 = −7 ✓. Donc d divise 7, qui est premier : a ∧ b vaut 1 ou 7, jamais autre chose. 2) LE CAS D'ÉGALITÉ. a ∧ b = 7 si et seulement si 7 divise a = 2n − 3, c'est-à-dire 2n ≡ 3 (mod 7). 3) RÉSOUDRE PAR L'INVERSE. 2 × 4 = 8 = 7 + 1, donc l'inverse de 2 modulo 7 est 4 ✓ ; en multipliant les deux membres par 4, n ≡ 12 (mod 7), et 12 = 7 + 5, d'où n ≡ 5 (mod 7) ✓. 4) VÉRIFIER QUE b SUIT : si n ≡ 5 (mod 7) alors b = 3n − 1 ≡ 15 − 1 = 14 ≡ 0 (mod 7) ✓ — les deux divisibilités tombent ensemble, exactement comme la combinaison le laissait prévoir. Contrôle sur trois valeurs, dont une négative : n = 5 donne a = 7 et b = 14, de PGCD 7 ✓ ; n = 12 donne a = 21 et b = 35, de PGCD 7 car 21 = 7 × 3, 35 = 7 × 5 et 3 ∧ 5 = 1 ✓ ; n = −2, congru à 5 modulo 7 puisque −2 + 7 = 5, donne a = −7 et b = −7, de PGCD 7 ✓. Contrôle négatif, pour être sûr de ne pas avoir élargi l'ensemble : n = 6 donne a = 9 et b = 17, de PGCD 1 ✓. Contrôle par une seconde voie totalement indépendante : d divise b − a = (3n − 1) − (2n − 3) = n + 2, et d divise a = 2n − 3, donc d divise 2(n + 2) − a = 2n + 4 − 2n + 3 = 7 ; on retrouve la même borne, et cette fois la condition s'écrit directement 7 divise n + 2, soit n ≡ −2 ≡ 5 (mod 7) ✓. Le piège courant : traiter 2n − 3 comme s'il s'agissait de n − 3 et livrer n ≡ 3 (mod 7) — on ne simplifie jamais un coefficient dans une congruence, on l'inverse. Le test le réfute : n = 3 donne a = 3 et b = 8, dont le PGCD vaut 1. Le distracteur n ≡ 2 (mod 7) exécute un inverse faux : on prend 3 pour inverse de 2 modulo 7 alors que 2 × 3 = 6 ≡ −1, ce qui donne n ≡ 9 ≡ 2 ; or n = 2 donne a = 1 et b = 5, de PGCD 1. Enfin l'option annonçant que le PGCD ne peut valoir que 1 ou 11 exécute une faute de signe dans la combinaison, 6n − 9 − 6n − 2 = −11 au lieu de −7 ; le cas n = 5, où a = 7 et b = 14 ont pour PGCD 7, suffit à la réfuter.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Résoudre dans ℤ le système de congruences {x ≡ 4 (mod 7), x ≡ 9 (mod 13)}.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≡ 32 (mod 91)"
+        },
+        {
+          "id": "b",
+          "text": "x ≡ 74 (mod 91)"
+        },
+        {
+          "id": "c",
+          "text": "x ≡ 13 (mod 91)"
+        },
+        {
+          "id": "d",
+          "text": "x ≡ 74 (mod 20)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Deux congruences à la fois : on paramètre la première, on la reporte dans la seconde, on résout par l'inverse. 1) LA CONDITION. 7 et 13 sont deux nombres premiers distincts, donc 7 ∧ 13 = 1 : le système a des solutions, et elles formeront une seule classe modulo 7 × 13 = 91. 2) PARAMÉTRER la première congruence : x = 4 + 7t, t ∈ ℤ. 3) REPORTER dans la seconde : 4 + 7t ≡ 9 (mod 13), soit 7t ≡ 5 (mod 13). 4) INVERSER 7 modulo 13 : 7 × 2 = 14 = 13 + 1, l'inverse est donc 2 ✓ ; en multipliant, t ≡ 10 (mod 13), soit t = 10 + 13s. 5) REVENIR À x : x = 4 + 7(10 + 13s) = 4 + 70 + 91s = 74 + 91s, donc x ≡ 74 (mod 91) ✓. Contrôle sur deux valeurs du paramètre, dont une négative : s = 0 donne x = 74, et 74 = 7 × 10 + 4 ✓ puis 74 = 13 × 5 + 9 ✓ ; s = −1 donne x = −17, et −17 = 7 × (−3) + 4 ✓ puis −17 = 13 × (−2) + 9 ✓. Contrôle par une seconde voie totalement indépendante, en démarrant de l'AUTRE congruence : x = 9 + 13u reporté dans la première donne 9 + 13u ≡ 4 (mod 7), soit 6u ≡ −5 ≡ 2 (mod 7) ; comme 6 ≡ −1 (mod 7), cela s'écrit −u ≡ 2, d'où u ≡ −2 ≡ 5 (mod 7) et x = 9 + 13 × 5 = 74 ✓. Les deux chemins donnent la même classe. Le piège courant : inverser 7 de travers. En prenant 6 pour inverse de 7 modulo 13 — alors que 7 × 6 = 42 = 39 + 3 ≡ 3, et non 1 — on obtient t ≡ 30 ≡ 4, puis x = 4 + 28 = 32 ; le contrôle le réfute aussitôt, 32 = 13 × 2 + 6 laisse le reste 6 modulo 13, et non 9. Le distracteur x ≡ 13 (mod 91) exécute l'addition des restes, 4 + 9 = 13, comme si les deux conditions se cumulaient ; or 13 = 7 + 6 laisse le reste 6 modulo 7, et non 4. Enfin x ≡ 74 (mod 20) garde la bonne valeur mais ADDITIONNE les modules, 7 + 13 = 20, au lieu de les multiplier ; le théorème du cours conclut modulo mn dès que m ∧ n = 1, et cette classe contient x = 94 = 7 × 13 + 3, qui rate déjà la première congruence.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Déterminer tous les couples (a, b) d'entiers naturels non nuls tels que a ≤ b, a ∧ b = 5 et a ∨ b = 60.",
+      "options": [
+        {
+          "id": "a",
+          "text": "{(5, 60)}"
+        },
+        {
+          "id": "b",
+          "text": "{(5, 60), (10, 30), (15, 20)}"
+        },
+        {
+          "id": "c",
+          "text": "{(5, 300), (15, 100), (20, 75), (25, 60)}"
+        },
+        {
+          "id": "d",
+          "text": "{(5, 60), (15, 20)}"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un système {PGCD, PPCM} se résout toujours par la même chaîne : produit, mise en facteur du PGCD, couples premiers entre eux. 1) LE PRODUIT, par la formule (a ∨ b)(a ∧ b) = |ab| : ab = 5 × 60 = 300. 2) LA MISE EN FACTEUR : on écrit a = 5a′ et b = 5b′ avec a′ ∧ b′ = 1, donc 25a′b′ = 300 et a′b′ = 12 ; recalcul : 300/25 = 12 ✓. C'est bien d² = 25 qui sort, pas d. 3) LES COUPLES PREMIERS ENTRE EUX de produit 12 avec a′ ≤ b′ : (1, 12) de PGCD 1 ✓ ; (2, 6) de PGCD 2, à REJETER ; (3, 4) de PGCD 1 ✓. 4) REMONTER en multipliant par 5 : (a, b) = (5, 60) ou (15, 20). L'ensemble cherché est {(5, 60), (15, 20)} ✓. Contrôle des deux couples, un par un : 5 divise 60 donc 5 ∧ 60 = 5 ✓ et 5 ∨ 60 = 60 ✓ ; 15 = 5 × 3 et 20 = 5 × 4 avec 3 ∧ 4 = 1, donc 15 ∧ 20 = 5 ✓, et 15 ∨ 20 = 15 × 20/5 = 300/5 = 60 ✓. Contrôle par une seconde voie totalement indépendante : les diviseurs de 60 qui sont multiples de 5 sont 5, 10, 15, 20, 30 et 60 ; en testant les six, seuls a = 5 (avec b = 60) et a = 15 (avec b = 20) donnent à la fois le PGCD 5 et le PPCM 60 — a = 10 donnerait b = 30, dont le PGCD avec 10 vaut 10, et a = 20 donnerait b = 15 < a. Le piège courant : oublier la condition a′ ∧ b′ = 1 et garder les trois décompositions de 12, ce qui ajoute le couple (10, 30) ; il se réfute en une ligne, 10 ∧ 30 = 10 ≠ 5. Le distracteur {(5, 60)} exécute l'arrêt au couple évident, celui formé du PGCD et du PPCM eux-mêmes : il est bien solution, mais il n'est pas seul, et (15, 20) le prouve. Enfin {(5, 300), (15, 100), (20, 75), (25, 60)} exécute la division par d au lieu de d² : en écrivant a′b′ = 300/5 = 60 on obtient quatre couples dont le PGCD vaut effectivement 5, mais dont le PPCM vaut 300 et non 60 — par exemple 5 ∨ 300 = 300, et 15 ∨ 100 = 1500/5 = 300.",
+      "difficulty": 3
+    }
+  ]
+}

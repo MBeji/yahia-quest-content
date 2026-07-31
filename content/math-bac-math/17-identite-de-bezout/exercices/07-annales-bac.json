@@ -1,0 +1,139 @@
+{
+  "title": "🏛️ Annales Bac ⭐⭐⭐⭐ : Sujet type — Euclide étendu, équation diophantienne, Gauss et rangement d'un dépôt",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "Partie A. On considère les deux entiers a = 899 et b = 493. 1. Déterminer d = 899 ∧ 493 à l'aide de l'algorithme d'Euclide. 2. En remontant les divisions de l'algorithme, déterminer un couple d'entiers (u, v) tel que 899u + 493v = d.",
+      "options": [
+        {
+          "id": "a",
+          "text": "899 ∧ 493 = 29, et 899 × (−6) + 493 × 11 = 29"
+        },
+        {
+          "id": "b",
+          "text": "899 ∧ 493 = 29, et 899 × 11 + 493 × (−6) = 29"
+        },
+        {
+          "id": "c",
+          "text": "899 ∧ 493 = 58, et 899 × 5 + 493 × (−9) = 58"
+        },
+        {
+          "id": "d",
+          "text": "899 ∧ 493 = 29, et 899 × 6 + 493 × (−11) = 29"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "1. L'ALGORITHME D'EUCLIDE, division par division, chacune contrôlée. 899 = 493 × 1 + 406, car 899 − 493 = 406 ✓. 493 = 406 × 1 + 87, car 493 − 406 = 87 ✓. 406 = 87 × 4 + 58, car 87 × 4 = 348 et 406 − 348 = 58 ✓. 87 = 58 × 1 + 29, car 87 − 58 = 29 ✓. 58 = 29 × 2 + 0 ✓. Le dernier reste non nul est 29 : 899 ∧ 493 = 29. Contrôle indépendant, par division : 899 = 29 × 31 ✓ et 493 = 29 × 17 ✓, et 31 ∧ 17 = 1 puisque 31 et 17 sont deux nombres premiers distincts — on ne peut donc pas faire mieux que 29. 2. LA REMONTÉE, en repartant de l'avant-dernière ligne et en remplaçant à chaque fois le reste le plus récent. 29 = 87 − 58. Or 58 = 406 − 4 × 87, donc 29 = 87 − (406 − 4 × 87) = 5 × 87 − 406. Or 87 = 493 − 406, donc 29 = 5 × (493 − 406) − 406 = 5 × 493 − 6 × 406. Or 406 = 899 − 493, donc 29 = 5 × 493 − 6 × (899 − 493) = 11 × 493 − 6 × 899. On obtient donc 899 × (−6) + 493 × 11 = 29, soit (u, v) = (−6, 11). CONTRÔLE PAR RÉINJECTION, le seul juge : 6 × 899 = 5394 et 11 × 493 = 5423, et 5423 − 5394 = 29 ✓. « 899 × 11 + 493 × (−6) = 29 » a interverti les deux coefficients. Réinjection : 899 × 11 = 9889 et 493 × 6 = 2958, d'où 9889 − 2958 = 6931, très loin de 29. Chaque coefficient appartient à l'entier devant lequel il est écrit ; l'échange se repère toujours par une réinjection. « 899 ∧ 493 = 58 » s'est arrêté une ligne trop tôt dans l'algorithme : 58 est un reste, pas le DERNIER reste non nul, puisque la division suivante 87 = 58 × 1 + 29 donne encore un reste 29 différent de zéro. Et attention, l'égalité proposée est arithmétiquement VRAIE — 899 × 5 = 4495, 493 × 9 = 4437, et 4495 − 4437 = 58 ✓ — ce qui en fait le piège le plus instructif du sujet : le corollaire de Bézout n'est PAS une équivalence. De au + bv = 58 on ne peut jamais conclure que 58 est le PGCD ; on peut seulement affirmer que le PGCD divise 58, ce qui est bien le cas puisque 29 divise 58. « 899 × 6 + 493 × (−11) = 29 » a changé les deux signes. Réinjection : 5394 − 5423 = −29, et non 29. Ce couple résout 899u + 493v = −29 : c'est l'opposé du bon couple, l'erreur de signe classique quand on inverse le sens de la dernière soustraction de la remontée.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Partie A (suite). On admet les résultats précédents : 899 ∧ 493 = 29, avec 899 = 29 × 31, 493 = 29 × 17, et 899 × (−6) + 493 × 11 = 29. On considère dans ℤ × ℤ l'équation (E) : 899x + 493y = 145. 1. Justifier que (E) admet des solutions. 2. Résoudre (E) dans ℤ × ℤ.",
+      "options": [
+        {
+          "id": "a",
+          "text": "(E) a des solutions et S = {(−30 + 17k, 55 − 31k), k ∈ ℤ}"
+        },
+        {
+          "id": "b",
+          "text": "(E) a des solutions et S = {(−30 + 493k, 55 − 899k), k ∈ ℤ}"
+        },
+        {
+          "id": "c",
+          "text": "(E) a des solutions et S = {(−30 + 31k, 55 − 17k), k ∈ ℤ}"
+        },
+        {
+          "id": "d",
+          "text": "(E) n'admet aucune solution, car 899 ∧ 493 = 29 ne divise pas 145"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "1. L'EXISTENCE. Le théorème du cours : ax + by = c a des solutions dans ℤ × ℤ si et seulement si d = a ∧ b divise c. Ici d = 29 et 145 = 29 × 5 ✓, donc (E) admet des solutions. 2.a. ON DIVISE TOUTE L'ÉQUATION PAR d — l'étape que l'on saute le plus souvent, et celle qui fixe le pas. 899 / 29 = 31, 493 / 29 = 17 et 145 / 29 = 5, donc (E) équivaut à 31x + 17y = 5, avec 31 ∧ 17 = 1. 2.b. SOLUTION PARTICULIÈRE. On part de 899 × (−6) + 493 × 11 = 29 ; en divisant par 29, on obtient 31 × (−6) + 17 × 11 = 1, ce qu'on contrôle aussitôt : −186 + 187 = 1 ✓. En multipliant par 5 : 31 × (−30) + 17 × 55 = 5, contrôle −930 + 935 = 5 ✓. Le couple (x₀, y₀) = (−30, 55) est donc une solution particulière. Contrôle dans l'équation d'origine : 899 × (−30) = −26970 et 493 × 55 = 27115, et 27115 − 26970 = 145 ✓. 2.c. SOLUTION GÉNÉRALE PAR GAUSS. Si (x, y) est solution, en soustrayant les deux égalités 31x + 17y = 5 et 31 × (−30) + 17 × 55 = 5 il vient 31(x + 30) + 17(y − 55) = 0, soit 31(x + 30) = −17(y − 55). L'entier 17 divise 31(x + 30) et 17 ∧ 31 = 1, donc par le LEMME DE GAUSS 17 divise x + 30 : il existe k ∈ ℤ tel que x + 30 = 17k, c'est-à-dire x = −30 + 17k. En reportant, 31 × 17k = −17(y − 55), donc y − 55 = −31k et y = 55 − 31k. Réciproquement, tout couple de cette forme est solution. S = {(−30 + 17k, 55 − 31k), k ∈ ℤ}. CONTRÔLE SUR DEUX VALEURS DU PARAMÈTRE, obligatoire. k = 1 : (−13, 24), et 899 × (−13) = −11687, 493 × 24 = 11832, d'où 11832 − 11687 = 145 ✓. k = 2 : (4, −7), et 899 × 4 = 3596, 493 × 7 = 3451, d'où 3596 − 3451 = 145 ✓. « S = {(−30 + 493k, 55 − 899k)} » a paramétré avec (b, a) au lieu de (b/d, a/d) : le pas n'a pas été divisé par 29. Ces couples sont bien solutions, mais on n'en obtient qu'un sur 29 — c'est l'avertissement explicite du cours. Contrôle : la vraie solution (−13, 24), obtenue pour k = 1 ci-dessus, ne s'écrit pas sous cette forme, puisqu'il faudrait 493k = 17, impossible pour k entier. « S = {(−30 + 31k, 55 − 17k)} » a bien divisé par 29 mais a interverti les deux coefficients du pas. Contrôle avec k = 1 : le couple (1, 38) donnerait 899 × 1 + 493 × 38 = 899 + 18734 = 19633, et non 145. Le pas est (−b/d, a/d) : le déplacement de x se lit sur le coefficient de l'AUTRE inconnue. « Aucune solution » se trompe sur la condition d'existence. Il fallait tester si 29 DIVISE 145, ce qui est le cas : 145 = 29 × 5. On peut d'ailleurs exhiber une solution en une ligne, (−30, 55), ce qui clôt le débat.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie A (fin). On rappelle que l'équation (E) : 899x + 493y = 145 équivaut, après division par 29, à 31x + 17y = 5, que 31 ∧ 17 = 1 et que le couple (−30, 55) est une solution particulière de (E). Soit (x, y) une solution quelconque de (E) dans ℤ × ℤ. Démontrer que 17 divise x + 30.",
+      "options": [
+        {
+          "id": "a",
+          "text": "De 31x + 17y = 5 et 31 × (−30) + 17 × 55 = 5 on tire 31(x + 30) = −17(y − 55) ; ainsi 17 divise 31(x + 30), et comme 17 ∧ 31 = 1, le lemme de Gauss donne 17 divise x + 30"
+        },
+        {
+          "id": "b",
+          "text": "De 899x + 493y = 145 on tire 899(x + 30) = −493(y − 55) ; mais 899 ∧ 493 = 29 est différent de 1, donc le lemme de Gauss ne s'applique pas et l'énoncé est indémontrable"
+        },
+        {
+          "id": "c",
+          "text": "17 divise 493 et 493 divise 899x + 493y − 145, donc 17 divise x + 30 par transitivité de la divisibilité"
+        },
+        {
+          "id": "d",
+          "text": "L'énoncé est faux : le couple (−13, 24) est solution de (E) et pourtant 17 ne divise pas −13 + 30"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "LA RÉDACTION ATTENDUE, en trois temps. PREMIER TEMPS — ÉLIMINER LE SECOND MEMBRE. Le couple (x, y) vérifie 31x + 17y = 5, et le couple particulier vérifie 31 × (−30) + 17 × 55 = 5, ce qu'on contrôle : −930 + 935 = 5 ✓. En soustrayant membre à membre, 31(x + 30) + 17(y − 55) = 0, c'est-à-dire 31(x + 30) = −17(y − 55). DEUXIÈME TEMPS — LIRE UNE DIVISIBILITÉ. Le membre de droite est un multiple de 17, donc 17 divise le produit 31(x + 30). TROISIÈME TEMPS — APPLIQUER GAUSS. On dispose de 17 ∧ 31 = 1 (les entiers 17 et 31 sont premiers et distincts), et 17 divise le produit 31(x + 30) : le lemme de Gauss conclut que 17 divise x + 30. C'est exactement la démonstration attendue, et c'est le cœur de la méthode en quatre temps du cours. POURQUOI L'HYPOTHÈSE 17 ∧ 31 = 1 EST INDISPENSABLE : sans elle, l'énoncé tomberait. Le cours en donne le contre-exemple type — 6 divise 4 × 3 = 12, et pourtant 6 ne divise ni 4 ni 3, parce que 6 ∧ 4 = 2 ≠ 1. CONTRÔLE NUMÉRIQUE sur deux solutions. Pour (−13, 24) : x + 30 = 17, et 17 divise 17 ✓. Pour (4, −7) : x + 30 = 34 = 17 × 2 ✓. Pour la solution particulière (−30, 55) : x + 30 = 0, et 17 divise 0 ✓. « 899(x + 30) = −493(y − 55) … donc indémontrable » a raison sur l'égalité mais tire la mauvaise conclusion. L'égalité est vraie, et 493 divise bien 899(x + 30) ; simplement, comme 899 ∧ 493 = 29 ≠ 1, Gauss ne s'applique pas SOUS CETTE FORME. Le remède n'est pas de renoncer, c'est de DIVISER D'ABORD par 29 : on retombe sur 31(x + 30) = −17(y − 55), où l'hypothèse est enfin satisfaite. Renoncer ici, c'est perdre tous les points d'une question parfaitement démontrable. « 17 divise 493 et 493 divise … donc par transitivité » enchaîne deux divisibilités qui ne se composent pas. La transitivité dit : si p divise q et q divise r, alors p divise r. Ici on voudrait conclure sur x + 30, qui n'est pas le r de l'énoncé — et de plus 493 ne divise pas 899x + 493y − 145, qui vaut 0 pour une solution, mais alors la propriété est vide et ne dit rien sur x. La chaîne est purement verbale. « L'énoncé est faux, contre-exemple (−13, 24) » se réfute tout seul par le calcul. Le couple est bien solution : 899 × (−13) + 493 × 24 = −11687 + 11832 = 145 ✓. Mais x + 30 = −13 + 30 = 17, et 17 divise évidemment 17 : ce prétendu contre-exemple CONFIRME l'énoncé. Un contre-exemple ne s'annonce jamais, il se vérifie.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B — le dépôt du lycée. Un dépôt contient N caisses, N étant un entier naturel. L'intendant fait deux essais de rangement. Rangées par paquets de 31, il reste 4 caisses isolées. Rangées par paquets de 17, il reste 9 caisses isolées. 1. Traduire l'énoncé par un système de deux congruences. 2. Résoudre ce système, c'est-à-dire déterminer toutes les valeurs possibles de N sous la forme d'une congruence.",
+      "options": [
+        {
+          "id": "a",
+          "text": "N ≡ 128 (mod 527)"
+        },
+        {
+          "id": "b",
+          "text": "N ≡ 66 (mod 527)"
+        },
+        {
+          "id": "c",
+          "text": "N ≡ 128 (mod 48)"
+        },
+        {
+          "id": "d",
+          "text": "N ≡ 36 (mod 527)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "1. LA TRADUCTION. « Rangées par paquets de 31, il reste 4 caisses » signifie que le reste de N dans la division euclidienne par 31 vaut 4, soit N ≡ 4 (mod 31). De même N ≡ 9 (mod 17). Le système est donc {N ≡ 4 (mod 31), N ≡ 9 (mod 17)}. 2.a. LE MODULE DE LA CONCLUSION. Les entiers 31 et 17 sont deux nombres premiers distincts, donc 31 ∧ 17 = 1 : le théorème du cours garantit que la solution s'exprimera par une congruence modulo 31 × 17 = 527. 2.b. ON PARAMÈTRE LA PREMIÈRE CONGRUENCE. N = 4 + 31t, avec t ∈ ℤ. 2.c. ON REPORTE DANS LA SECONDE. 4 + 31t ≡ 9 (mod 17), soit 31t ≡ 5 (mod 17). On réduit d'abord le coefficient : 31 = 17 + 14, donc 31 ≡ 14 (mod 17), et l'équation devient 14t ≡ 5 (mod 17). 2.d. L'INVERSE DE 14 MODULO 17, par Bézout. Euclide : 17 = 14 × 1 + 3 ; 14 = 3 × 4 + 2 ; 3 = 2 × 1 + 1. Remontée : 1 = 3 − 2 = 3 − (14 − 4 × 3) = 5 × 3 − 14 = 5 × (17 − 14) − 14 = 5 × 17 − 6 × 14. Contrôle : 85 − 84 = 1 ✓. Donc 14 × (−6) ≡ 1 (mod 17), et l'inverse de 14 modulo 17 est −6 + 17 = 11. Second contrôle, direct : 14 × 11 = 154 = 17 × 9 + 1 = 153 + 1 ✓. 2.e. ON CONCLUT. En multipliant 14t ≡ 5 par 11 : t ≡ 55 (mod 17), et 55 = 51 + 4, donc t ≡ 4 (mod 17), soit t = 4 + 17s. Alors N = 4 + 31 × (4 + 17s) = 4 + 124 + 527s = 128 + 527s : N ≡ 128 (mod 527). CONTRÔLE DES DEUX CONDITIONS, toujours : 128 = 31 × 4 + 4 ✓ (124 + 4), avec 0 ≤ 4 < 31 ; et 128 = 17 × 7 + 9 ✓ (119 + 9), avec 0 ≤ 9 < 17. Second contrôle sur la valeur suivante, 655 : 655 = 31 × 21 + 4 ✓ (651 + 4) et 655 = 17 × 38 + 9 ✓ (646 + 9). « N ≡ 66 (mod 527) » a utilisé 14 comme son propre inverse modulo 17 : de 14t ≡ 5 on aurait tiré t ≡ 70 ≡ 2 (mod 17), puis N = 4 + 62 = 66. Or 14 × 14 = 196 = 17 × 11 + 9 ≡ 9 (mod 17), et non 1. Le contrôle démasque l'erreur : 66 = 17 × 3 + 15, donc 66 ≡ 15 (mod 17), et non 9. Un inverse se calcule par Bézout, il ne se devine pas. « N ≡ 128 (mod 48) » a le bon représentant mais le mauvais module, obtenu en additionnant 31 + 17 au lieu de multiplier. Contre-exemple immédiat : 128 + 48 = 176, et 176 = 31 × 5 + 21, donc 176 ≡ 21 (mod 31), et non 4. Le module de la conclusion est le PRODUIT des deux modules, et c'est précisément l'hypothèse 31 ∧ 17 = 1 qui l'autorise. « N ≡ 36 (mod 527) » a multiplié les deux restes, 4 × 9 = 36, ce qui n'a aucun fondement. Contrôle : 36 = 31 × 1 + 5, donc 36 ≡ 5 (mod 31), et non 4. Les restes ne se combinent jamais ainsi ; seule la substitution paramétrée donne la réponse.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Partie B (suite). On admet le résultat précédent : le nombre N de caisses du dépôt vérifie N ≡ 128 (mod 527), c'est-à-dire N = 128 + 527s avec s entier naturel. L'intendant précise que le dépôt contient entre 1000 et 1600 caisses, bornes comprises. Déterminer le nombre exact N de caisses. Réponds par un entier.",
+      "answerKey": {
+        "value": 1182
+      },
+      "explanation": "ON ÉNUMÈRE LES VALEURS POSSIBLES, il n'y en a que quelques-unes. s = 0 : N = 128. s = 1 : N = 128 + 527 = 655. s = 2 : N = 655 + 527 = 1182. s = 3 : N = 1182 + 527 = 1709. LE FILTRE. On veut 1000 ≤ N ≤ 1600. Les valeurs 128 et 655 sont trop petites, 1709 est trop grande : seule 1182 convient. Le dépôt contient 1182 caisses. RÉSOLUTION PLUS RAPIDE, par encadrement du paramètre, celle qu'on attend au bac quand les bornes sont grandes : 1000 ≤ 128 + 527s ≤ 1600 équivaut à 872 ≤ 527s ≤ 1472, puis à 1,65… ≤ s ≤ 2,79… . Le seul entier de cet intervalle est s = 2, d'où N = 128 + 527 × 2 = 128 + 1054 = 1182 ✓. Les deux méthodes concordent. CONTRÔLE DES DEUX CONDITIONS DE DÉPART, indispensable : ranger 1182 caisses par paquets de 31 donne 1182 = 31 × 38 + 4, car 31 × 38 = 1178 et 1182 − 1178 = 4, avec 0 ≤ 4 < 31 ✓ — il reste bien 4 caisses isolées. Les ranger par paquets de 17 donne 1182 = 17 × 69 + 9, car 17 × 69 = 1173 et 1182 − 1173 = 9, avec 0 ≤ 9 < 17 ✓ — il reste bien 9 caisses isolées. La valeur 1182 satisfait les deux essais de l'intendant. DEUX PIÈGES. Premier piège : oublier que l'écart entre deux valeurs admissibles est 527 et non 31 ou 17 — on chercherait alors une infinité de candidats dans l'intervalle, alors qu'il n'y en a qu'un. Second piège : rendre 655 ou 1709, les deux valeurs voisines, en relâchant une borne ; l'énoncé dit bien « entre 1000 et 1600 », et 655 < 1000 tandis que 1709 > 1600. L'unicité de la réponse est d'ailleurs une conséquence de la taille du module : puisque 527 est inférieur à la largeur 600 de l'intervalle mais du même ordre, on ne pouvait attendre qu'une ou deux valeurs — et le calcul en donne exactement une, 1182.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B (fin). On admet que le dépôt contient N = 1182 caisses, et l'on rappelle que 31 ∧ 17 = 1 et qu'un inverse de 14 modulo 17 est 11. Pour évacuer le dépôt, l'intendant dispose de camions transportant chacun 31 caisses et de remorques transportant chacune 17 caisses. Tous les véhicules engagés doivent partir PLEINS et le dépôt doit être vidé exactement : on cherche donc les couples (x, y) d'entiers NATURELS tels que 31x + 17y = 1182, où x est le nombre de camions et y le nombre de remorques. Combien d'organisations différentes l'intendant peut-il choisir, et lesquelles ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deux organisations : (x, y) = (14, 44) et (x, y) = (31, 13)"
+        },
+        {
+          "id": "b",
+          "text": "Trois organisations : (14, 44), (31, 13) et (48, −18)"
+        },
+        {
+          "id": "c",
+          "text": "Une infinité d'organisations, décrites par (14 + 17k, 44 − 31k), k ∈ ℤ"
+        },
+        {
+          "id": "d",
+          "text": "Aucune organisation : 31 ∧ 17 = 1 ne divise pas 1182"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "EXISTENCE. 31 ∧ 17 = 1, et 1 divise tout entier, donc 1 divise 1182 : l'équation 31x + 17y = 1182 admet des solutions dans ℤ × ℤ. UNE SOLUTION PARTICULIÈRE, en passant par une congruence — le chemin le plus court ici. L'égalité impose 31x ≡ 1182 (mod 17). On réduit chaque terme : 31 ≡ 14 (mod 17) puisque 31 = 17 + 14, et 1182 ≡ 9 (mod 17) puisque 1182 = 17 × 69 + 9 ✓ (1173 + 9). L'équation devient 14x ≡ 9 (mod 17) ; en multipliant par l'inverse 11 de 14 modulo 17, x ≡ 99 (mod 17), et 99 = 85 + 14, donc x ≡ 14 (mod 17). Pour x = 14 : 17y = 1182 − 31 × 14 = 1182 − 434 = 748, donc y = 748 / 17 = 44 ✓. Le couple (14, 44) est une solution particulière. Contrôle : 31 × 14 + 17 × 44 = 434 + 748 = 1182 ✓. SOLUTION GÉNÉRALE PAR GAUSS. En soustrayant, 31(x − 14) = −17(y − 44) ; l'entier 17 divise 31(x − 14) et 17 ∧ 31 = 1, donc 17 divise x − 14 : x = 14 + 17k, puis y = 44 − 31k, k ∈ ℤ. LE FILTRE DES ENTIERS NATURELS, que la situation impose : on ne mobilise pas un nombre négatif de véhicules. x ≥ 0 donne 14 + 17k ≥ 0, soit k ≥ −0,82…, donc k ≥ 0. y ≥ 0 donne 44 − 31k ≥ 0, soit k ≤ 1,41…, donc k ≤ 1. Seules les valeurs k = 0 et k = 1 conviennent : il y a exactement DEUX organisations, (14, 44) et (31, 13). CONTRÔLE DES DEUX, une par une : 31 × 14 + 17 × 44 = 434 + 748 = 1182 ✓ ; 31 × 31 + 17 × 13 = 961 + 221 = 1182 ✓. LECTURE CONCRÈTE, qui vaut troisième contrôle : passer d'une organisation à l'autre revient à remplacer 31 remorques (31 × 17 = 527 caisses) par 17 camions (17 × 31 = 527 caisses) — le pas d'échange transporte toujours 527 caisses, ce qui explique qu'il n'y ait pas de place pour un troisième palier dans un dépôt de 1182 caisses. « Trois organisations, dont (48, −18) » a bien trouvé la forme générale mais a oublié de filtrer : le couple (48, −18) correspond à k = 2, et il vérifie effectivement 31 × 48 + 17 × (−18) = 1488 − 306 = 1182 ✓ dans ℤ × ℤ. Mais −18 remorques n'existent pas : la contrainte « entiers naturels » élimine ce couple. « Une infinité, décrites par (14 + 17k, 44 − 31k), k ∈ ℤ » donne la bonne solution générale DANS ℤ × ℤ, et c'est bien elle qu'on écrit à la question de résolution — mais l'énoncé demande des nombres de véhicules, donc des entiers naturels. Répondre « une infinité » ici, c'est s'arrêter à l'étape 4 sans lire la contrainte de la situation. « Aucune organisation » se trompe sur la condition d'existence : elle exige que d = 31 ∧ 17 divise 1182, or d = 1 divise absolument tout entier. On a d'ailleurs exhibé deux couples explicites, ce qui suffit à réfuter cette affirmation.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Identité de Bézout",
+  "questions": [
+    {
+      "prompt": "Soit a et b deux entiers non nuls et d = a ∧ b. Quelle propriété caractérise d, en plus du fait que d divise a et divise b ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "d est un nombre premier"
+        },
+        {
+          "id": "b",
+          "text": "d est le plus petit entier naturel non nul qui divise a et b"
+        },
+        {
+          "id": "c",
+          "text": "tout diviseur commun de a et b divise d"
+        },
+        {
+          "id": "d",
+          "text": "d divise tout diviseur commun de a et b"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le théorème de définition du cours impose deux conditions : d divise a et b, et si un entier k divise a et b alors k divise d — autrement dit tout diviseur commun de a et b divise d ✓. C'est cette seconde condition, et non la comparaison des tailles, qu'on utilise dans les démonstrations. L'affirmation « d divise tout diviseur commun de a et b » renverse la divisibilité : avec a = 12 et b = 18, d = 6 ne divise pas le diviseur commun 2. Le plus petit entier naturel non nul qui divise a et b est toujours 1, quelle que soit la paire : ce serait le PGCD de tout le monde. Enfin d n'a aucune raison d'être premier, puisque 12 ∧ 18 = 6 = 2 × 3.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "En déroulant l'algorithme d'Euclide on obtient 630 = 273 × 2 + 84, puis 273 = 84 × 3 + 21, puis 84 = 21 × 4 + 0. Que vaut 630 ∧ 273 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "21"
+        },
+        {
+          "id": "c",
+          "text": "84"
+        },
+        {
+          "id": "d",
+          "text": "8190"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le PGCD est le dernier reste non nul de la suite des divisions, c'est-à-dire 21 ✓. Contrôle direct : 630 = 21 × 30 et 273 = 21 × 13, donc 21 divise bien les deux, et 30 ∧ 13 = 1 montre qu'on ne peut pas faire mieux. Le nombre 0 est le tout dernier reste, celui qui arrête l'algorithme : le prendre pour PGCD est l'erreur classique, et 0 ne divise d'ailleurs aucun entier. Le nombre 84 est le reste de l'avant-avant-dernière ligne, obtenu en s'arrêtant une division trop tôt : 273 n'est pas un multiple de 84. Le nombre 8190 est le PPCM, puisque 630 × 273 = 171990 et 171990/21 = 8190 : c'est le miroir du PGCD, pas le PGCD.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut (−204) ∧ 85 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−17"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "17"
+        },
+        {
+          "id": "d",
+          "text": "1020"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les signes ne comptent pas : a ∧ b = |a| ∧ |b|, donc on calcule 204 ∧ 85 par l'algorithme d'Euclide. On a 204 = 85 × 2 + 34, puis 85 = 34 × 2 + 17, puis 34 = 17 × 2 + 0 : le dernier reste non nul vaut 17 ✓. Contrôle : 204 = 17 × 12 et 85 = 17 × 5, avec 12 ∧ 5 = 1. Le nombre −17 recopie le signe du premier entier, alors que le cours affirme a ∧ b > 0 pour tous entiers non nuls. Le nombre 1 reviendrait à dire que 204 et 85 sont premiers entre eux, ce que le facteur commun 17 contredit. Le nombre 1020 est le PPCM, car 204 × 85 = 17340 et 17340/17 = 1020.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Parmi ces couples d'entiers, lequel est formé de deux entiers premiers entre eux ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(8, 9)"
+        },
+        {
+          "id": "b",
+          "text": "(9, 15)"
+        },
+        {
+          "id": "c",
+          "text": "(21, 35)"
+        },
+        {
+          "id": "d",
+          "text": "(26, 39)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Être premiers entre eux signifie que le PGCD vaut 1, et non que chacun des deux entiers est un nombre premier. Or 8 = 2³ et 9 = 3² n'ont aucun facteur premier commun, donc (8, 9) convient ✓, alors qu'aucun des deux n'est premier : c'est exactement la mise en garde du cours. Le couple (9, 15) a 3 pour diviseur commun, donc son PGCD vaut 3. Le couple (21, 35) partage le facteur 7, et 21 ∧ 35 = 7. Le couple (26, 39) partage 13, avec 26 = 13 × 2 et 39 = 13 × 3, donc son PGCD vaut 13.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'identité de Bézout permet de prouver que 25 et 13 sont premiers entre eux dès qu'on exhibe un couple (u, v) d'entiers tel que 25u + 13v = 1. Quel couple convient ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−1, 2)"
+        },
+        {
+          "id": "b",
+          "text": "(1, −2)"
+        },
+        {
+          "id": "c",
+          "text": "(1, 2)"
+        },
+        {
+          "id": "d",
+          "text": "(2, −1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le seul juge est la réinjection dans 25u + 13v. Avec le couple (−1, 2) on obtient 25 × (−1) + 13 × 2 = −25 + 26 = 1 ✓ : l'identité de Bézout est vérifiée, donc 25 ∧ 13 = 1. Le couple (1, −2) donne 25 − 26 = −1 : la valeur −1 n'est pas 1, et l'énoncé du théorème demande bien la valeur 1, même si on peut la retrouver en changeant les deux signes. Le couple (1, 2) donne 25 + 26 = 51, très loin du compte. Le couple (2, −1) donne 50 − 13 = 37, ce qui prouve seulement que 25 ∧ 13 divise 37.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit a = 150 et b = −105. Quel est l'unique couple (a′, b′) d'entiers premiers entre eux tel que a = (a ∧ b)a′ et b = (a ∧ b)b′ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−7, 10)"
+        },
+        {
+          "id": "b",
+          "text": "(10, −7)"
+        },
+        {
+          "id": "c",
+          "text": "(10, 7)"
+        },
+        {
+          "id": "d",
+          "text": "(30, −21)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On calcule d'abord le PGCD sur les valeurs absolues : 150 = 105 × 1 + 45, puis 105 = 45 × 2 + 15, puis 45 = 15 × 3 + 0, donc a ∧ b = 15. On divise ensuite chaque entier par 15 en gardant son signe : 150/15 = 10 et −105/15 = −7, d'où le couple (10, −7) ✓, avec 10 ∧ 7 = 1 comme l'exige le théorème. Le couple (10, 7) perd le signe de b, alors que 15 × 7 = 105 et non −105. Le couple (−7, 10) intervertit les deux composantes, alors que a′ est associé à a. Le couple (30, −21) correspond à une division par 5 seulement : les égalités 5 × 30 = 150 et 5 × (−21) = −105 sont vraies, mais 30 ∧ 21 = 3 n'est pas 1, donc 5 n'était pas le PGCD.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que vaut 24 ∨ 36, le PPCM de 24 et 36 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "72"
+        },
+        {
+          "id": "c",
+          "text": "144"
+        },
+        {
+          "id": "d",
+          "text": "864"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On passe toujours par le PGCD : 36 = 24 × 1 + 12 puis 24 = 12 × 2 + 0, donc 24 ∧ 36 = 12. La relation (a ∨ b)(a ∧ b) = |ab| donne alors 24 ∨ 36 = (24 × 36)/12 = 864/12 = 72 ✓. Contrôle : 72 = 24 × 3 et 72 = 36 × 2, c'est bien un multiple commun, et 3 ∧ 2 = 1 interdit de descendre plus bas. Le nombre 12 est le PGCD, interverti avec le PPCM. Le nombre 864 est le produit brut, qui est un multiple commun mais pas le plus petit. Le nombre 144 vient d'une division du produit par 6 au lieu de 12 : c'est un multiple de 72, donc pas le plus petit non plus.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit a = −18 et b = 30. Que vaut a ∨ b ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−90"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "90"
+        },
+        {
+          "id": "d",
+          "text": "540"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le PPCM ne dépend pas des signes, car a ∨ b = |a| ∨ |b|. Euclide sur 30 et 18 : 30 = 18 × 1 + 12, puis 18 = 12 × 1 + 6, puis 12 = 6 × 2 + 0, donc a ∧ b = 6. La relation (a ∨ b)(a ∧ b) = |ab| porte sur la valeur absolue du produit : |−18 × 30| = 540, donc a ∨ b = 540/6 = 90 ✓, et 90 = 18 × 5 = 30 × 3 confirme le multiple commun. Le nombre −90 vient d'avoir écrit ab au lieu de |ab| : un PPCM est strictement positif par définition. Le nombre 6 est le PGCD, échangé avec le PPCM. Le nombre 540 est le produit laissé tel quel, sans division par le PGCD.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit n un entier tel que 11 divise 6n. Que peut-on en déduire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "11 divise 6"
+        },
+        {
+          "id": "b",
+          "text": "6 divise n"
+        },
+        {
+          "id": "c",
+          "text": "n est un multiple de 66"
+        },
+        {
+          "id": "d",
+          "text": "11 divise n"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "C'est l'application directe du lemme de Gauss : 11 divise le produit 6 × n et 11 ∧ 6 = 1, donc 11 divise n ✓. Contrôle : les multiples de 6 divisibles par 11 sont 66, 132, 198, et les entiers n correspondants 11, 22, 33 sont bien des multiples de 11. Affirmer que 11 divise 6 est faux, puisque 6 = 11 × 0 + 6. Affirmer que 6 divise n est faux avec n = 11, qui donne 6n = 66 = 11 × 6. Affirmer que n est multiple de 66 revient à exiger en plus la divisibilité par 6, que rien ne garantit : n = 11 le contredit encore.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On constate que 17 × 5 + 24 × (−3) = 13. Que peut-on en conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "17 ∧ 24 = 13"
+        },
+        {
+          "id": "b",
+          "text": "17 et 24 ne sont pas premiers entre eux"
+        },
+        {
+          "id": "c",
+          "text": "13 divise 17 ∧ 24"
+        },
+        {
+          "id": "d",
+          "text": "17 ∧ 24 divise 13"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'égalité est exacte, puisque 85 − 72 = 13. Mais le corollaire de Bézout n'est pas une équivalence : de au + bv = m on tire seulement que a ∧ b divise a, divise b, donc divise la combinaison, c'est-à-dire que 17 ∧ 24 divise 13 ✓. Conclure 17 ∧ 24 = 13 est précisément le piège signalé par le cours, et c'est faux ici puisque 17 ∧ 24 = 1. Affirmer que 13 divise 17 ∧ 24 renverse la divisibilité, or 13 ne divise pas 1. Affirmer que 17 et 24 ne sont pas premiers entre eux contredit le calcul : 24 = 17 × 1 + 7, 17 = 7 × 2 + 3, 7 = 3 × 2 + 1, 3 = 1 × 3 + 0, donc leur PGCD vaut 1.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : PGCD, PPCM et lemme de Gauss",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Que vaut 19625 ∧ 1155 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "10"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On déroule l'algorithme d'Euclide : 19625 = 1155 × 16 + 1145, puis 1155 = 1145 × 1 + 10, puis 1145 = 10 × 114 + 5, puis 10 = 5 × 2 + 0. Le dernier reste non nul vaut 5 ✓. Contrôle : 19625 = 5 × 3925 et 1155 = 5 × 231, et 3925 ∧ 231 = 1 puisque 231 = 3 × 7 × 11 alors que 3925 = 5² × 157. Le nombre 10 est l'avant-dernier reste : on s'arrête une division trop tôt, alors que 1145 n'est pas un multiple de 10. Le nombre 0 est le reste final, celui qui signale la fin de l'algorithme, jamais le PGCD. Le nombre 1 prétendrait que les deux entiers sont premiers entre eux, ce que le facteur commun 5 contredit.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que valent le PGCD et le PPCM de 231 et 165 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "231 ∧ 165 = 3 et 231 ∨ 165 = 12705"
+        },
+        {
+          "id": "b",
+          "text": "231 ∧ 165 = 11 et 231 ∨ 165 = 3465"
+        },
+        {
+          "id": "c",
+          "text": "231 ∧ 165 = 33 et 231 ∨ 165 = 38115"
+        },
+        {
+          "id": "d",
+          "text": "231 ∧ 165 = 33 et 231 ∨ 165 = 1155"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Euclide donne 231 = 165 × 1 + 66, puis 165 = 66 × 2 + 33, puis 66 = 33 × 2 + 0 : le PGCD vaut 33. La relation (a ∨ b)(a ∧ b) = |ab| avec 231 × 165 = 38115 donne alors le PPCM 38115/33 = 1155, d'où 231 ∧ 165 = 33 et 231 ∨ 165 = 1155 ✓. Contrôle : 1155 = 231 × 5 = 165 × 7, avec 5 ∧ 7 = 1. La proposition qui annonce 38115 pour PPCM garde le produit brut sans le diviser par le PGCD. Les valeurs 3 et 11 sont bien des diviseurs communs, mais pas le plus grand : leurs PPCM associés 12705 et 3465 sont cohérents avec la formule et pourtant faux, car ils reposent sur un PGCD incomplet.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit a et b deux entiers non nuls tels que ab = −756 et a ∨ b = 252. Que vaut a ∧ b ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "252"
+        },
+        {
+          "id": "d",
+          "text": "756"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La relation du cours s'écrit (a ∨ b) × (a ∧ b) = |ab|, avec une valeur absolue au second membre : ici |−756| = 756, donc a ∧ b = 756/252 = 3 ✓. Contrôle sur un couple effectif : a = −36 et b = 21 donnent ab = −756, 36 ∧ 21 = 3 et 36 ∨ 21 = 756/3 = 252. Le nombre −3 vient d'avoir écrit ab au lieu de |ab| : le PGCD de deux entiers non nuls est toujours strictement positif. Le nombre 252 recopie le PPCM, comme si les deux notions étaient interchangeables. Le nombre 756 est la valeur absolue du produit, laissée sans division par le PPCM.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un entier n est divisible par 8 et par 12. Que peut-on affirmer à coup sûr ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "24 divise n"
+        },
+        {
+          "id": "b",
+          "text": "96 divise n, puisque 96 = 8 × 12"
+        },
+        {
+          "id": "c",
+          "text": "n est égal à 24 ou à son opposé"
+        },
+        {
+          "id": "d",
+          "text": "on ne peut rien affirmer de plus que le fait que 8 divise n"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un entier divisible par 8 et par 12 est un multiple commun, donc un multiple de leur PPCM. Comme 8 ∧ 12 = 4 et 8 × 12 = 96, le PPCM vaut 96/4 = 24 : on peut affirmer que 24 divise n ✓. Conclure que 96 divise n reviendrait à appliquer le théorème du produit sans son hypothèse, car 8 et 12 ne sont pas premiers entre eux ; le contre-exemple est immédiat, puisque 24 est divisible par 8 et par 12 mais pas par 96. Dire que n vaut 24 ou −24 oublie tous les autres multiples, comme 48 ou 120. Dire qu'on ne peut rien ajouter à « 8 divise n » sous-estime l'information : 24 est un multiple strict de 8.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit n un entier tel que 14 divise 21n. Que peut-on en déduire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "14 divise n"
+        },
+        {
+          "id": "b",
+          "text": "21 divise n"
+        },
+        {
+          "id": "c",
+          "text": "n est pair"
+        },
+        {
+          "id": "d",
+          "text": "on ne peut rien conclure sur n"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le lemme de Gauss ne s'applique pas tel quel, car 14 ∧ 21 = 7 n'est pas 1 : il faut d'abord simplifier. De 21n = 14k on tire, en divisant par 7, l'égalité 3n = 2k, donc 2 divise 3n ; cette fois 2 ∧ 3 = 1 et Gauss conclut que 2 divise n, c'est-à-dire que n est pair ✓. La réciproque est vraie : si n = 2m alors 21n = 42m = 14 × 3m. Affirmer que 14 divise n est trop fort, comme le montre n = 2, qui donne 21n = 42 = 14 × 3 sans que 14 divise 2. Affirmer que 21 divise n est faux pour la même valeur n = 2. Et l'on peut bien conclure quelque chose, à savoir la parité de n.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Parmi ces couples (a, b) d'entiers naturels, lequel vérifie à la fois a ∧ b = 5 et a ∨ b = 170 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(5, 34)"
+        },
+        {
+          "id": "b",
+          "text": "(10, 85)"
+        },
+        {
+          "id": "c",
+          "text": "(15, 170)"
+        },
+        {
+          "id": "d",
+          "text": "(34, 85)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La méthode consiste à écrire a = 5a′ et b = 5b′ avec a′ ∧ b′ = 1, puis à utiliser (a ∨ b)(a ∧ b) = |ab|, qui vaut ici ab puisque a et b sont naturels : ab = 170 × 5 = 850. Le couple (10, 85) convient ✓ : 10 = 5 × 2 et 85 = 5 × 17 avec 2 ∧ 17 = 1, donc leur PGCD vaut 5, et leur produit 850 divisé par 5 redonne bien le PPCM 170. Le couple (5, 34) a pour PPCM 170, mais son PGCD vaut 1 car 34 = 2 × 17 n'est pas divisible par 5. Le couple (15, 170) a bien 5 pour PGCD, mais son PPCM vaut 2550/5 = 510. Le couple (34, 85) a pour PPCM 170 et pour PGCD 17, puisque 34 = 17 × 2 et 85 = 17 × 5.",
+      "difficulty": 3
+    }
+  ]
+}
