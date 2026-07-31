@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Reconnaître une similitude et lire son rapport",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Soit I un point du plan et h l'homothétie de centre I et de rapport 3. Quelle relation caractérise l'image M′ d'un point M par h ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IM′ = 3 + IM"
+        },
+        {
+          "id": "b",
+          "text": "IM′⃗ = 3IM⃗"
+        },
+        {
+          "id": "c",
+          "text": "IM⃗ = 3IM′⃗"
+        },
+        {
+          "id": "d",
+          "text": "MM′⃗ = 3IM⃗"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "C'est la définition du cours : h(I, k) associe à M l'unique point M′ tel que IM′⃗ = kIM⃗, ici IM′⃗ = 3IM⃗ ✓. L'image est donc trois fois plus loin de I que M, sur la même demi-droite d'origine I. L'option c échange M et M′ : elle décrit l'homothétie réciproque, de rapport 1/3. L'option d se trompe de vecteur de départ ; elle donne d'ailleurs IM′⃗ = IM⃗ + MM′⃗ = 4IM⃗, donc l'homothétie de rapport 4 et non 3. L'option a ajoute 3 au lieu de multiplier par 3 : ce serait un décalage constant, qui ne conserverait aucun rapport de longueurs.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une similitude de rapport 2,5 transforme les points A et B en A′ et B′. Sachant que AB = 6, que vaut A′B′ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,4"
+        },
+        {
+          "id": "b",
+          "text": "8,5"
+        },
+        {
+          "id": "c",
+          "text": "15"
+        },
+        {
+          "id": "d",
+          "text": "37,5"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La définition donne directement A′B′ = k·AB = 2,5 × 6 = 15 ✓. L'option d utilise k² = 2,5² = 6,25 et donne 6 × 6,25 = 37,5 : le carré du rapport s'applique aux aires et aux produits scalaires, jamais aux longueurs. L'option a divise par le rapport, 6 ÷ 2,5 = 2,4 : c'est la longueur de l'image par la similitude réciproque, de rapport 1/2,5. L'option b ajoute le rapport à la longueur, 6 + 2,5 = 8,5, alors que le rapport se multiplie.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La réciproque d'une similitude de rapport 4 est une similitude de rapport :",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/4"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "16"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une similitude de rapport k est une bijection dont la réciproque est une similitude de rapport 1/k, ici 1/4 ✓. Contrôle par la composition : f⁻¹∘f a pour rapport 4 × 1/4 = 1, ce qui est bien le rapport de l'identité. L'option c garderait le même rapport, ce qui donnerait 4 × 4 = 16 pour f⁻¹∘f, donc une application qui multiplie les longueurs par 16 au lieu de les laisser inchangées. L'option b est le rapport de la composée f⁻¹∘f, pas celui de f⁻¹. L'option d élève le rapport au carré.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le plan est rapporté à un repère orthonormé direct. Quelle est la nature de l'application qui à tout point d'affixe z associe le point d'affixe z′ = −3z + 8 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "l'homothétie de rapport −3 et de centre d'affixe 2"
+        },
+        {
+          "id": "b",
+          "text": "l'homothétie de rapport −3 et de centre d'affixe 8"
+        },
+        {
+          "id": "c",
+          "text": "l'homothétie de rapport 3 et de centre d'affixe 2"
+        },
+        {
+          "id": "d",
+          "text": "la similitude directe de rapport −3 et de centre d'affixe 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le coefficient a = −3 est réel et différent de 1 : d'après le tableau du cours, l'application est l'homothétie de rapport −3. Son centre est l'unique point fixe : z = −3z + 8 donne 4z = 8, donc z = 2, ce que confirme la formule b/(1 − k) = 8/(1 − (−3)) = 8/4 = 2 ✓. Contrôle : −3 × 2 + 8 = −6 + 8 = 2, le point d'affixe 2 est bien fixe ✓. L'option b prend le centre égal à b = 8 et oublie la division par 1 − k. L'option c change le rapport de l'homothétie en son opposé, alors que le signe négatif est ce qui retourne la figure ; d'ailleurs h(I, 3) d'écriture 3z + 8 aurait pour centre 8/(1 − 3) = −4. L'option d confond les deux rapports : en tant que similitude, cette homothétie est bien directe, mais son rapport de similitude vaut |−3| = 3, un rapport de similitude étant toujours strictement positif.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur la figure, le triangle A′B′C′ est l'image du triangle ABC par une similitude f, et les longueurs des côtés sont indiquées. Que peut-on dire de f ?\n<svg viewBox=\"0 0 245 200\">\n<title>Un triangle ABC de côtés 3, 4, 5 et son image A′B′C′ de côtés 6, 8, 10</title>\n<path d=\"M30 170 L66 170 L30 122 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M140 170 L212 170 L140 74 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M30 170 L66 170 L30 122 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M140 170 L212 170 L140 74 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"30\" cy=\"170\" r=\"3.5\"/><circle cx=\"66\" cy=\"170\" r=\"3.5\"/><circle cx=\"30\" cy=\"122\" r=\"3.5\"/><circle cx=\"140\" cy=\"170\" r=\"3.5\"/><circle cx=\"212\" cy=\"170\" r=\"3.5\"/><circle cx=\"140\" cy=\"74\" r=\"3.5\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"22\" y=\"188\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"74\" y=\"188\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"30\" y=\"112\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"132\" y=\"188\" text-anchor=\"middle\" fill=\"#0f172a\">A′</text><text x=\"220\" y=\"188\" text-anchor=\"middle\" fill=\"#0f172a\">B′</text><text x=\"140\" y=\"64\" text-anchor=\"middle\" fill=\"#0f172a\">C′</text><text x=\"48\" y=\"188\" text-anchor=\"middle\" fill=\"#0f6e56\">3</text><text x=\"16\" y=\"150\" text-anchor=\"middle\" fill=\"#0f6e56\">4</text><text x=\"62\" y=\"140\" text-anchor=\"middle\" fill=\"#0f6e56\">5</text><text x=\"176\" y=\"188\" text-anchor=\"middle\" fill=\"#0f6e56\">6</text><text x=\"126\" y=\"126\" text-anchor=\"middle\" fill=\"#0f6e56\">8</text><text x=\"194\" y=\"116\" text-anchor=\"middle\" fill=\"#0f6e56\">10</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "c'est une isométrie, car les angles sont conservés"
+        },
+        {
+          "id": "b",
+          "text": "c'est une similitude directe de rapport 2"
+        },
+        {
+          "id": "c",
+          "text": "c'est une similitude directe de rapport 4"
+        },
+        {
+          "id": "d",
+          "text": "c'est une similitude indirecte de rapport 2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le rapport se lit sur les trois côtés : 6/3 = 2, 8/4 = 2 et 10/5 = 2, donc k = 2 ✓. Le sens se lit sur le parcours des sommets : A puis B puis C tourne dans un sens, et A′ puis B′ puis C′ tourne dans le même sens, donc l'orientation est conservée et f est directe ✓. L'option a serait vraie pour les angles seulement : une similitude conserve toujours les angles géométriques, mais ici les longueurs sont doublées, donc f n'est pas une isométrie. L'option c prend 4 comme rapport, sans doute en lisant le quotient des aires : l'aire passe de (3 × 4)/2 = 6 à (6 × 8)/2 = 24, soit un facteur 4 = k², alors que le rapport de la similitude est k = 2. L'option d annonce le bon rapport avec le mauvais sens : le parcours des sommets n'a pas été inversé.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est rapporté à un repère orthonormé direct. Quelle est la nature de l'application f qui à tout point d'affixe z associe le point d'affixe z′ = (1 + i√3)z̄ + 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "un antidéplacement, car |a| = 1"
+        },
+        {
+          "id": "b",
+          "text": "une similitude directe de rapport 2"
+        },
+        {
+          "id": "c",
+          "text": "une similitude indirecte de rapport 2"
+        },
+        {
+          "id": "d",
+          "text": "une similitude indirecte de rapport 4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'écriture porte z̄ : c'est la forme z′ = az̄ + b, donc une similitude indirecte, à condition que |a| ≠ 1. Ici a = 1 + i√3 et |a| = √(1² + (√3)²) = √(1 + 3) = √4 = 2, donc f est une similitude indirecte de rapport 2 ✓. L'option a se trompe sur le module : si l'on avait |a| = 1, la formule du centre se diviserait par 1 − |a|² = 0 et f serait un antidéplacement du chapitre 12, ce qui n'est pas le cas puisque |a| = 2. L'option b oublie la barre de conjugaison, seul signe qui départage directe et indirecte. L'option d prend |a|² = 4 au lieu de |a| = 2.",
+      "difficulty": 2
+    }
+  ]
+}

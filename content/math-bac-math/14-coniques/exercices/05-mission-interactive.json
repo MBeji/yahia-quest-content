@@ -1,0 +1,145 @@
+{
+  "title": "🧩 Mission interactive ⭐⭐ : Le Chantier des Miroirs",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "QCM visuel — au Chantier des Miroirs, l'atelier de tracé travaille toujours de la même façon : un point F, une droite D, et un point M relevé sur le quadrillage à l'unité. Le segment vert va de M jusqu'à la droite D (perpendiculairement, comme le montre l'angle droit en H) ; le segment orange va de M jusqu'à F. Les pointillés gris décomposent le trajet oblique en un déplacement horizontal puis un déplacement vertical, pour t'aider à compter. Sur quelle conique le contremaître est-il en train de placer ses points ? <svg viewBox=\"0 0 300 240\"><g stroke=\"#e2e8f0\" stroke-width=\"1\" fill=\"none\"><path d=\"M20 20 V220 M40 20 V220 M60 20 V220 M80 20 V220 M100 20 V220 M120 20 V220 M140 20 V220 M160 20 V220 M180 20 V220 M200 20 V220 M220 20 V220 M240 20 V220 M260 20 V220 M280 20 V220 M20 20 H280 M20 40 H280 M20 60 H280 M20 80 H280 M20 100 H280 M20 120 H280 M20 140 H280 M20 160 H280 M20 180 H280 M20 200 H280 M20 220 H280\"/></g><path d=\"M60 20 V220\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.6\"/><g stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\" fill=\"none\"><path d=\"M140 100 H200 M200 100 V180\"/></g><path d=\"M140 100 H60\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\"/><path d=\"M140 100 L200 180\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\"/><path d=\"M60 112 H72 V100\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><g fill=\"#0f172a\"><circle cx=\"140\" cy=\"100\" r=\"4.5\"/><circle cx=\"60\" cy=\"100\" r=\"4.5\"/></g><g fill=\"#b45309\"><circle cx=\"200\" cy=\"180\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"148\" y=\"94\" fill=\"#0f172a\">M</text><text x=\"54\" y=\"94\" text-anchor=\"end\" fill=\"#0f172a\">H</text><text x=\"208\" y=\"190\" fill=\"#b45309\">F</text><text x=\"60\" y=\"234\" text-anchor=\"middle\" fill=\"#0f172a\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une hyperbole de foyer F, de directrice D et d'excentricité 5/4"
+        },
+        {
+          "id": "b",
+          "text": "Une ellipse de foyer F, de directrice D et d'excentricité 4/5"
+        },
+        {
+          "id": "c",
+          "text": "Une ellipse de foyer F, de directrice D et d'excentricité 5/4"
+        },
+        {
+          "id": "d",
+          "text": "Une hyperbole de foyer F, de directrice D et d'excentricité 3/4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Tout se joue sur UNE mesure : le rapport MF/MH. MH D'ABORD, le segment vert. Il est horizontal et va de M jusqu'à la droite D : on compte 4 carreaux, donc MH = 4. Et c'est bien la distance de M à D, puisque H est le projeté ORTHOGONAL de M sur D — l'angle droit est marqué sur la figure. MF ENSUITE, le segment orange. Il est oblique, donc on ne le compte pas à l'œil : on passe par les pointillés gris, qui décomposent le trajet en 3 carreaux vers la droite puis 4 carreaux vers le bas. Le théorème de Pythagore donne MF = √(3² + 4²) = √(9 + 16) = √25 = 5. C'est le triangle 3-4-5, celui qu'on reconnaît sans calculer. LE RAPPORT : MF/MH = 5/4 = 1,25. LE VERDICT, par la définition générale du cours : la conique de foyer F, de directrice D et d'excentricité e est l'ensemble des M tels que MF = eMH. Ici e = 5/4, et 5/4 > 1, donc la courbe est une HYPERBOLE ✓. Retiens la lecture en une phrase : si le trajet vers le foyer est PLUS LONG que le trajet vers la directrice, e > 1, c'est une hyperbole ; s'il est plus court, e < 1, c'est une ellipse ; s'ils sont égaux, e = 1, c'est une parabole. Contrôle de cohérence : F n'appartient pas à D (F est à 7 carreaux de D), l'hypothèse de la définition est respectée — sans elle, l'ensemble MF = eMH dégénère en droites. « Ellipse d'excentricité 4/5 » inverse le rapport : elle calcule MH/MF au lieu de MF/MH. L'excentricité se lit toujours dans le sens « distance au FOYER divisée par distance à la DIRECTRICE », c'est-à-dire dans l'ordre où la définition est écrite, MF = eMH. « Ellipse d'excentricité 5/4 » a le bon nombre mais le mauvais genre, et se contredit toute seule : une ellipse exige 0 < e < 1 par définition, donc aucune ellipse n'a pour excentricité 5/4. « Hyperbole d'excentricité 3/4 » lit le déplacement horizontal des pointillés (3 carreaux) au lieu de la longueur MF elle-même (5 carreaux) : les pointillés sont un outil de comptage, pas le segment orange. Et 3/4 < 1 ne pourrait de toute façon pas décrire une hyperbole.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'atelier monte une antenne parabolique. Sa coupe axiale est modélisée, dans le repère orthonormé (S, i⃗, j⃗) de sommet S et d'axe (S, i⃗) confondu avec l'axe de l'antenne, par une parabole d'équation y² = 2px, les longueurs étant en centimètres. Le bord de l'antenne se trouve à 60 cm de l'axe, pour une profondeur de 25 cm : autrement dit le point de coordonnées (25 ; 60) appartient à la parabole. Le récepteur doit être placé au foyer. À quelle distance du sommet S, en centimètres, faut-il le fixer ?",
+      "answerKey": {
+        "value": 36,
+        "unit": "cm"
+      },
+      "explanation": "Deux étapes seulement : trouver le paramètre p, puis se souvenir que le foyer est à p/2 du sommet — et non à p. ÉTAPE 1, LE PARAMÈTRE. Le point (25 ; 60) est sur la parabole, donc il vérifie son équation : 60² = 2p × 25, soit 3600 = 50p, donc p = 72 cm. ÉTAPE 2, LE FOYER. Le cours donne l'équation réduite y² = 2px avec le foyer F(p/2 ; 0) et la directrice x = −p/2. Ici p/2 = 36, donc le foyer est le point (36 ; 0) : le récepteur se fixe à 36 cm du sommet, sur l'axe ✓. CONTRÔLE PAR LA DÉFINITION, le seul qui vaille : un point de la parabole doit vérifier MF = MH. Prenons justement le bord M(25 ; 60). Sa distance au foyer F(36 ; 0) vaut MF = √((25 − 36)² + (60 − 0)²) = √(121 + 3600) = √3721 = 61 cm. Sa distance à la directrice x = −36 vaut MH = |25 − (−36)| = 61 cm. MF = MH ✓ — l'identification est juste. SECOND CONTRÔLE sur un autre point de la courbe : avec p = 72, l'équation s'écrit y² = 144x, et pour x = 4 elle donne y² = 576, soit y = 24. Le point M′(4 ; 24) donne M′F = √((4 − 36)² + 24²) = √(1024 + 576) = √1600 = 40 et M′H = |4 + 36| = 40 ✓. Deux points concordants, l'antenne est correctement réglée. Trois erreurs classiques. Répondre 72 revient à confondre le paramètre et la distance sommet–foyer : p est la distance FOYER–DIRECTRICE, et le sommet en est le milieu, donc SF = p/2. Répondre 18 revient à lire 2p = 72 au lieu de 2p = 144 : dans y² = 2px, c'est le coefficient ENTIER de x qui vaut 2p, ici 144, donc p = 72. Répondre 60 ou 25 revient à recopier une donnée de l'énoncé : ni la demi-ouverture ni la profondeur ne sont la distance focale — c'est justement le calcul qui les relie.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Trois vitres elliptiques ①②③ sont posées côte à côte sur l'établi, chacune tracée dans son propre repère orthonormé centré, quadrillé à l'unité (les axes du repère sont les traits foncés). Associe chaque vitre au couple « foyers · excentricité » qui lui correspond. <svg viewBox=\"0 0 360 152\"><g stroke=\"#e2e8f0\" stroke-width=\"1\" fill=\"none\"><path d=\"M6 11 V119 M15 11 V119 M24 11 V119 M33 11 V119 M42 11 V119 M51 11 V119 M60 11 V119 M69 11 V119 M78 11 V119 M87 11 V119 M96 11 V119 M105 11 V119 M114 11 V119 M6 11 H114 M6 20 H114 M6 29 H114 M6 38 H114 M6 47 H114 M6 56 H114 M6 65 H114 M6 74 H114 M6 83 H114 M6 92 H114 M6 101 H114 M6 110 H114 M6 119 H114 M126 11 V119 M135 11 V119 M144 11 V119 M153 11 V119 M162 11 V119 M171 11 V119 M180 11 V119 M189 11 V119 M198 11 V119 M207 11 V119 M216 11 V119 M225 11 V119 M234 11 V119 M126 11 H234 M126 20 H234 M126 29 H234 M126 38 H234 M126 47 H234 M126 56 H234 M126 65 H234 M126 74 H234 M126 83 H234 M126 92 H234 M126 101 H234 M126 110 H234 M126 119 H234 M246 11 V119 M255 11 V119 M264 11 V119 M273 11 V119 M282 11 V119 M291 11 V119 M300 11 V119 M309 11 V119 M318 11 V119 M327 11 V119 M336 11 V119 M345 11 V119 M354 11 V119 M246 11 H354 M246 20 H354 M246 29 H354 M246 38 H354 M246 47 H354 M246 56 H354 M246 65 H354 M246 74 H354 M246 83 H354 M246 92 H354 M246 101 H354 M246 110 H354 M246 119 H354\"/></g><g stroke=\"#0f172a\" stroke-width=\"1.6\" fill=\"none\"><path d=\"M6 65 H114 M60 11 V119 M126 65 H234 M180 11 V119 M246 65 H354 M300 11 V119\"/></g><g fill=\"#0f6e56\" opacity=\"0.12\"><ellipse cx=\"60\" cy=\"65\" rx=\"45\" ry=\"27\"/><ellipse cx=\"180\" cy=\"65\" rx=\"27\" ry=\"45\"/><ellipse cx=\"300\" cy=\"65\" rx=\"45\" ry=\"36\"/></g><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\"><ellipse cx=\"60\" cy=\"65\" rx=\"45\" ry=\"27\"/><ellipse cx=\"180\" cy=\"65\" rx=\"27\" ry=\"45\"/><ellipse cx=\"300\" cy=\"65\" rx=\"45\" ry=\"36\"/></g><g font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\"><text x=\"60\" y=\"142\" text-anchor=\"middle\">①</text><text x=\"180\" y=\"142\" text-anchor=\"middle\">②</text><text x=\"300\" y=\"142\" text-anchor=\"middle\">③</text></g></svg>",
+      "options": [
+        { "id": "l1", "text": "Vitre ①" },
+        { "id": "l2", "text": "Vitre ②" },
+        { "id": "l3", "text": "Vitre ③" },
+        { "id": "r1", "text": "Foyers (4 ; 0) et (−4 ; 0) · excentricité 4/5" },
+        { "id": "r2", "text": "Foyers (0 ; 4) et (0 ; −4) · excentricité 4/5" },
+        { "id": "r3", "text": "Foyers (3 ; 0) et (−3 ; 0) · excentricité 3/5" }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"]
+        ]
+      },
+      "explanation": "La méthode est la même sur les trois vitres : compter les deux demi-axes sur le quadrillage, repérer lequel est le GRAND, puis appliquer b² = a² − c² et e = c/(demi-grand axe). VITRE ① — la courbe coupe l'axe horizontal à 5 carreaux du centre et l'axe vertical à 3 carreaux : son équation réduite est x²/25 + y²/9 = 1, donc a = 5 et b = 3. Comme a > b, le grand axe est horizontal, les foyers sont sur (Ox) et c = √(a² − b²) = √(25 − 9) = √16 = 4. D'où les foyers (4 ; 0) et (−4 ; 0) et l'excentricité e = c/a = 4/5 ✓. Contrôle par la définition : la directrice associée est x = a²/c = 25/4, et sur le sommet secondaire B(0 ; 3) on a BF = √(4² + 3²) = 5 et BH = 25/4, de rapport 5 ÷ (25/4) = 20/25 = 4/5 ✓. Contrôle géométrique : le triangle OFB est rectangle en O, de côtés c = 4 et b = 3, donc son hypoténuse vaut 5 = a — la relation a² = b² + c² se lit directement sur la vitre. VITRE ② — 3 carreaux horizontalement, 5 verticalement : x²/9 + y²/25 = 1, donc a = 3 et b = 5. Ici a < b : le grand axe est VERTICAL, les foyers sont sur (Oy) avec c = √(b² − a²) = √(25 − 9) = 4, d'où (0 ; 4) et (0 ; −4), et e = c/b = 4/5 ✓ — on divise par le demi-GRAND axe, qui vaut 5 et non 3. Contrôle : la directrice associée est y = b²/c = 25/4, et sur le sommet secondaire (3 ; 0) on a une distance au foyer (0 ; 4) de √(9 + 16) = 5 et une distance à la directrice de 25/4, de rapport 4/5 ✓. Les vitres ① et ② ont donc la MÊME excentricité et des foyers sur des axes différents : c'est exactement ce que la question teste, et c'est pourquoi il ne suffit pas de calculer e. VITRE ③ — 5 carreaux horizontalement, 4 verticalement : x²/25 + y²/16 = 1, a = 5 > b = 4, donc c = √(25 − 16) = 3, foyers (3 ; 0) et (−3 ; 0), excentricité e = 3/5 ✓. Contrôle : directrice x = 25/3, et sur le sommet secondaire (0 ; 4), distance au foyer √(9 + 16) = 5, distance à la directrice 25/3, rapport 5 × 3/25 = 3/5 ✓. Les deux confusions à écarter. Donner à la vitre ② des foyers sur (Ox) : le grand axe est celui qui porte les foyers, TOUJOURS, et ici il est vertical — un foyer placé en (4 ; 0) serait d'ailleurs à l'extérieur de la vitre, dont la demi-largeur ne vaut que 3. Donner à la vitre ③ l'excentricité 4/5 en recopiant le rapport b/a : l'excentricité est c/a, pas b/a. Ici c = 3 et non 4, la valeur 4 étant le demi-PETIT axe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "QCM visuel — le chantier coule une arche parabolique en béton. Elle mesure 24 m de portée au sol et 9 m de hauteur en son sommet S, comme le montre le relevé ci-dessous (quadrillage à l'unité, 1 carreau = 1 m). Le bureau d'études fournit son modèle : dans le repère orthonormé (S, i⃗, j⃗) de sommet S, l'arche a pour équation X² = −16Y. Le coffreur doit maintenant placer le clou du foyer. Que valent le paramètre de cette parabole et la position du foyer ? <svg viewBox=\"0 0 290 215\"><g stroke=\"#e2e8f0\" stroke-width=\"1\" fill=\"none\"><path d=\"M20 100 V190 M30 100 V190 M40 100 V190 M50 100 V190 M60 100 V190 M70 100 V190 M80 100 V190 M90 100 V190 M100 100 V190 M110 100 V190 M120 100 V190 M130 100 V190 M140 100 V190 M150 100 V190 M160 100 V190 M170 100 V190 M180 100 V190 M190 100 V190 M200 100 V190 M210 100 V190 M220 100 V190 M230 100 V190 M240 100 V190 M250 100 V190 M260 100 V190 M20 100 H260 M20 110 H260 M20 120 H260 M20 130 H260 M20 140 H260 M20 150 H260 M20 160 H260 M20 170 H260 M20 180 H260 M20 190 H260\"/></g><path d=\"M10 190 H278\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M140 92 V202\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"6 5\"/><path d=\"M20 190 L30 175.63 L40 162.5 L50 150.63 L60 140 L70 130.63 L80 122.5 L90 115.63 L100 110 L110 105.63 L120 102.5 L130 100.63 L140 100 L150 100.63 L160 102.5 L170 105.63 L180 110 L190 115.63 L200 122.5 L210 130.63 L220 140 L230 150.63 L240 162.5 L250 175.63 L260 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"140\" cy=\"100\" r=\"4.5\"/><circle cx=\"20\" cy=\"190\" r=\"4\"/><circle cx=\"260\" cy=\"190\" r=\"4\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"148\" y=\"96\" fill=\"#0f172a\">S</text><text x=\"20\" y=\"206\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"260\" y=\"206\" text-anchor=\"middle\" fill=\"#0f172a\">B</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Paramètre p = 8 m ; le foyer est sur l'axe de symétrie, 4 m EN DESSOUS du sommet"
+        },
+        {
+          "id": "b",
+          "text": "Paramètre p = 16 m ; le foyer est sur l'axe de symétrie, 8 m EN DESSOUS du sommet"
+        },
+        {
+          "id": "c",
+          "text": "Paramètre p = 8 m ; le foyer est sur l'axe de symétrie, 8 m EN DESSOUS du sommet"
+        },
+        {
+          "id": "d",
+          "text": "Paramètre p = 8 m ; le foyer est sur l'axe de symétrie, 4 m AU-DESSUS du sommet"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'équation X² = −16Y est l'une des quatre formes réduites du cours, celle d'une parabole d'axe (S, j⃗) ouverte vers les Y NÉGATIFS — ce que confirme la figure, puisque l'arche descend de part et d'autre du sommet. LE PARAMÈTRE. La forme générale est X² = −2pY. On identifie 2p = 16, donc p = 8 m ✓. C'est le coefficient entier qui vaut 2p, pas p : la tentation d'écrire p = 16 est exactement le piège du chapitre. LE FOYER. Pour X² = −2pY, le foyer est le point de coordonnées (0 ; −p/2) et la directrice a pour équation Y = p/2. Ici p/2 = 4, donc le foyer est à 4 m du sommet, du côté où la courbe s'ouvre, c'est-à-dire EN DESSOUS ✓ — soit à 5 m au-dessus du sol, puisque le sommet est à 9 m. La directrice, elle, est la droite horizontale située 4 m AU-DESSUS du sommet. CONTRÔLE PAR LA DÉFINITION, sur un point de l'arche que la figure permet de lire. Prends le point de l'arche situé 4 m à droite de l'axe : X = 4 donne Y = −16/16 = −1, il est donc 1 m plus bas que le sommet, ce que le relevé confirme (à 4 carreaux de l'axe, l'arche est à 8 m de haut). Sa distance au foyer (0 ; −4) vaut √(4² + (−1 + 4)²) = √(16 + 9) = 5, et sa distance à la directrice Y = 4 vaut |−1 − 4| = 5. MF = MH ✓. SECOND CONTRÔLE, au pied de l'arche : X = 12 donne Y = −144/16 = −9, soit 9 m sous le sommet — c'est bien le sol, et la portée totale vaut 2 × 12 = 24 m ✓, la donnée de l'énoncé. Sa distance au foyer vaut √(144 + (−9 + 4)²) = √(144 + 25) = √169 = 13, sa distance à la directrice |−9 − 4| = 13 ✓. Le modèle est cohérent de bout en bout. « p = 16 » confond le paramètre et le coefficient de l'équation ; il conduirait à un foyer 8 m sous le sommet, et le contrôle échouerait aussitôt : pour le point (4 ; −1), la distance au foyer (0 ; −8) vaudrait √(16 + 49) = √65 ≈ 8,06 alors que la distance à la directrice Y = 8 vaudrait 9. « p = 8 mais foyer à 8 m » garde le bon paramètre et oublie la moitié : la distance sommet–foyer vaut p/2, car le sommet est le MILIEU du segment [FK] joignant le foyer à son projeté sur la directrice. « Foyer au-dessus du sommet » place le foyer du mauvais côté : le foyer est toujours à l'INTÉRIEUR de la parabole, du côté de la concavité — ici vers le bas — tandis que la directrice est de l'autre côté. Un foyer au-dessus donnerait une arche ouverte vers le haut, ce que le relevé dément.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Le chantier installe une tour de refroidissement dont la paroi extérieure est engendrée par une hyperbole. Le bureau d'études fournit son équation dans le repère orthonormé (O, i⃗, j⃗) de centre O : x²/16 − y²/9 = 1, les longueurs étant en mètres. Sélectionne TOUTES les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les asymptotes de la paroi ont pour équations y = 3x/4 et y = −3x/4"
+        },
+        { "id": "b", "text": "L'excentricité de l'hyperbole vaut 5/4" },
+        {
+          "id": "c",
+          "text": "Les foyers ont pour coordonnées (5 ; 0) et (−5 ; 0)"
+        },
+        {
+          "id": "d",
+          "text": "Le point de la paroi d'abscisse 5 et d'ordonnée positive a pour ordonnée 9/4"
+        },
+        {
+          "id": "e",
+          "text": "Cette hyperbole est équilatère, puisque ses deux branches sont symétriques l'une de l'autre"
+        },
+        {
+          "id": "f",
+          "text": "Les sommets de l'hyperbole sont les points (0 ; 4) et (0 ; −4)"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "c", "d"]
+      },
+      "explanation": "On commence par extraire les trois nombres de l'équation réduite x²/16 − y²/9 = 1 : a² = 16 donc a = 4, b² = 9 donc b = 3, et pour une hyperbole c² = a² + b² = 16 + 9 = 25, donc c = 5. Le signe + porte sur x², donc l'axe focal est (Ox). a) VRAIE. Le théorème du cours donne les asymptotes y = (b/a)x et y = −(b/a)x, ici y = 3x/4 et y = −3x/4 ✓. Contrôle du comportement : l'équation donne y = (3/4)√(x² − 16) sur la branche supérieure droite, donc pour x = 40 la paroi est à (3/4)√1584 ≈ 29,85 m, tandis que l'asymptote donne (3/4) × 40 = 30 m : l'écart n'est que de 0,15 m et il continue de diminuer ✓. b) VRAIE. e = c/a = 5/4 = 1,25 ✓, et l'on vérifie au passage que e > 1, comme l'exige toute hyperbole. Contrôle par la définition : la directrice associée est x = a²/c = 16/5 = 3,2 ; sur le sommet S(4 ; 0), SF = |4 − 5| = 1 et SH = |4 − 3,2| = 0,8, de rapport 1 ÷ 0,8 = 1,25 = e ✓. c) VRAIE. Les foyers sont (±c ; 0) = (5 ; 0) et (−5 ; 0) ✓, sur l'axe focal (Ox) porté par le signe +. d) VRAIE, et c'est la seule qui demande un calcul. On remplace x par 5 : 25/16 − y²/9 = 1, donc y²/9 = 25/16 − 1 = 9/16, donc y² = 81/16 et y = 9/4 = 2,25 pour l'ordonnée positive ✓. Contrôle par la définition sur ce point M(5 ; 9/4) : MF = √((5 − 5)² + (9/4)²) = 9/4 = 2,25 (les deux points ont la même abscisse) et MH = |5 − 16/5| = 9/5 = 1,8, de rapport 2,25 ÷ 1,8 = 1,25 = e ✓. e) FAUSSE. Une hyperbole est dite équilatère lorsque ses ASYMPTOTES sont perpendiculaires, ce qui équivaut à a = b — et alors, et alors seulement, e = √2. Ici a = 4 et b = 3, donc les asymptotes ont pour pentes 3/4 et −3/4, dont le produit vaut −9/16 et non −1 : elles ne sont pas perpendiculaires ✓. La symétrie des deux branches n'a rien à voir avec cette question : TOUTE hyperbole a deux branches symétriques par rapport à son centre, équilatère ou non. f) FAUSSE. Les sommets sont les points où la courbe rencontre son axe focal, ici (±a ; 0) = (4 ; 0) et (−4 ; 0). Les points (0 ; ±4) ne sont même pas sur la courbe : en y remplaçant, on obtiendrait 0 − 16/9 = 1, ce qui est faux. Une hyperbole ne coupe jamais l'axe perpendiculaire à son axe focal — c'est précisément ce qui la distingue d'une ellipse, qui, elle, a des sommets secondaires.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Chasse à l'erreur — au fond du chantier, la Salle des Chuchotements a une voûte elliptique. L'ingénieur pose sa fiche de calcul sur ton établi et te demande de la relire avant de percer les points d'ancrage. Voici sa fiche, en quatre étapes, pour la coupe d'équation x²/9 + y²/25 = 1 (unités : mètres) : ① « On lit a² = 9 et b² = 25, donc a = 3 et b = 5. » ② « Comme b > a, l'axe focal est l'axe (Oy) et c² = b² − a² = 25 − 9 = 16, donc c = 4. » ③ « Les foyers sont donc les points F(4 ; 0) et F′(−4 ; 0). » ④ « L'excentricité vaut e = c/b = 4/5. » Où l'erreur se cache-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À l'étape ③ : puisque l'axe focal est (Oy), les foyers sont F(0 ; 4) et F′(0 ; −4)"
+        },
+        {
+          "id": "b",
+          "text": "À l'étape ④ : l'excentricité vaut toujours c/a, donc ici e = 4/3"
+        },
+        {
+          "id": "c",
+          "text": "À l'étape ② : pour une conique on a toujours c² = a² + b², donc c = √34"
+        },
+        {
+          "id": "d",
+          "text": "À l'étape ① : la lettre a désigne toujours le demi-grand axe, donc a = 5 et b = 3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'erreur est à l'étape ③, et elle est grave : les ancrages seraient percés à 90 degrés de leur place. Reprenons la fiche ligne à ligne. ① est JUSTE : dans l'écriture x²/a² + y²/b² = 1, le nombre a² est par convention le dénominateur de x² et b² celui de y², sans aucune hypothèse sur lequel est le plus grand. Ici a = 3 et b = 5. ② est JUSTE : puisque b > a, le grand axe est porté par (Oy), et la relation de l'ellipse s'écrit b² = a² + c², d'où c² = 25 − 9 = 16 et c = 4. ③ est FAUSSE : les foyers d'une ellipse sont toujours sur son axe FOCAL, c'est-à-dire sur le grand axe — et l'étape ② vient justement d'établir que cet axe est (Oy). Les foyers sont donc F(0 ; 4) et F′(0 ; −4). La fiche se contredit elle-même : elle annonce un axe focal vertical puis place les foyers sur l'axe horizontal. ÉTAPE CORRIGÉE : « ③ Les foyers sont les points F(0 ; 4) et F′(0 ; −4), et les directrices associées ont pour équations y = b²/c = 25/4 et y = −25/4. » ④ est JUSTE : e = c/b = 4/5, car l'excentricité se divise toujours par le demi-GRAND axe, qui vaut ici b = 5. Et 4/5 < 1, comme il se doit pour une ellipse. CONTRÔLE de la version corrigée par la définition MF = eMH, sur deux points. Sur le sommet principal (0 ; 5) : distance au foyer (0 ; 4) égale à 1, distance à la directrice y = 25/4 égale à |5 − 25/4| = 5/4, rapport 1 ÷ (5/4) = 4/5 ✓. Sur le sommet secondaire (3 ; 0) : distance au foyer (0 ; 4) égale à √(9 + 16) = 5, distance à la directrice y = 25/4 égale à 25/4, rapport 5 × 4/25 = 4/5 ✓. Avec les foyers fautifs de l'étape ③, ce contrôle s'effondre : depuis (0 ; 5), la distance au faux foyer (4 ; 0) vaudrait √(16 + 25) = √41 ≈ 6,4 pour une distance à la directrice de 1,25, soit un rapport supérieur à 5 — absurde pour une ellipse. L'erreur signalée à l'étape ④ est un faux procès et reproduit le piège central du chapitre : e = c/a n'est valable que lorsque a > b. Ici a < b, donc e = c/b. La valeur proposée, 4/3, est d'ailleurs supérieure à 1 : aucune ellipse ne peut avoir une telle excentricité. L'erreur signalée à l'étape ② confond les deux relations : c² = a² + b² est celle de l'HYPERBOLE, où c est le plus grand ; pour une ellipse c'est le demi-grand axe qui est le plus grand, d'où c² = (demi-grand axe)² − (demi-petit axe)². Avec c = √34 ≈ 5,83, les foyers tomberaient à l'extérieur de la voûte, dont la demi-hauteur ne vaut que 5. L'erreur signalée à l'étape ① invente une convention qui n'existe pas : le cours traite explicitement les DEUX cas, a > b et a < b, et 9x² + 4y² = 36 en est l'exemple type. Renommer les lettres pour forcer a > b conduit tout droit à oublier que l'axe focal peut être vertical.",
+      "difficulty": 3
+    }
+  ]
+}

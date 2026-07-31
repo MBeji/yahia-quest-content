@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Géométrie dans l'espace",
+  "questions": [
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct et on donne u⃗(2, −1, 3). Lequel de ces vecteurs est orthogonal à u⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−3, 0, 2)"
+        },
+        {
+          "id": "b",
+          "text": "(1, 2, 1)"
+        },
+        {
+          "id": "c",
+          "text": "(2, 1, −3)"
+        },
+        {
+          "id": "d",
+          "text": "(4, −2, 6)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux vecteurs non nuls sont orthogonaux si et seulement si leur produit scalaire est nul, et en repère orthonormé u⃗.v⃗ = xx′ + yy′ + zz′. Avec (−3, 0, 2) : 2(−3) + (−1)(0) + 3(2) = −6 + 0 + 6 = 0 ✓. Les trois autres ne donnent pas 0 : (1, 2, 1) donne 2 − 2 + 3 = 3, (2, 1, −3) donne 4 − 1 − 9 = −6, et (4, −2, 6) donne 8 + 2 + 18 = 28. Ce dernier est le piège : (4, −2, 6) = 2u⃗, donc il est colinéaire à u⃗ — c'est la condition qui annule le produit VECTORIEL, jamais le produit scalaire.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé. Que vaut la norme du vecteur u⃗(2, −3, 6) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "11"
+        },
+        {
+          "id": "d",
+          "text": "49"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le cours donne ‖u⃗‖ = √(x² + y² + z²), donc ‖u⃗‖ = √(2² + (−3)² + 6²) = √(4 + 9 + 36) = √49 = 7 ✓. Le signe moins disparaît au carré : (−3)² = 9, jamais −9. L'option d s'arrête à la somme des carrés, 49, en oubliant de prendre la racine. L'option c additionne les valeurs absolues, 2 + 3 + 6 = 11 : cette longueur-là est celle d'un chemin qui suit les trois arêtes, pas celle de la diagonale. L'option a additionne les coordonnées telles quelles, 2 − 3 + 6 = 5.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le cube ABCDEFGH ci-dessous a pour arête 1 et l'espace est rapporté au repère orthonormé direct (A, AB⃗, AD⃗, AE⃗). Quelles sont les coordonnées du sommet G ?\n<svg viewBox=\"0 0 215 222\">\n<title>Le cube ABCDEFGH en perspective cavalière, sommet D caché à l'arrière en pointillés</title>\n<path d=\"M60 195 L150 195 L189 172.5 L99 172.5 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M60 195 L150 195 M150 195 L189 172.5 M189 172.5 L189 82.5 M189 82.5 L99 82.5 M99 82.5 L60 105 M60 105 L60 195 M150 195 L150 105 M150 105 L60 105 M150 105 L189 82.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M60 195 L99 172.5 M99 172.5 L189 172.5 M99 172.5 L99 82.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"195\" r=\"3.5\"/><circle cx=\"150\" cy=\"195\" r=\"3.5\"/><circle cx=\"189\" cy=\"172.5\" r=\"3.5\"/><circle cx=\"60\" cy=\"105\" r=\"3.5\"/><circle cx=\"150\" cy=\"105\" r=\"3.5\"/><circle cx=\"189\" cy=\"82.5\" r=\"3.5\"/><circle cx=\"99\" cy=\"82.5\" r=\"3.5\"/></g><circle cx=\"99\" cy=\"172.5\" r=\"3.5\" fill=\"#94a3b8\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"50\" y=\"210\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"154\" y=\"212\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"200\" y=\"184\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"86\" y=\"168\" text-anchor=\"middle\" fill=\"#94a3b8\">D</text><text x=\"49\" y=\"100\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"157\" y=\"99\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"201\" y=\"76\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"94\" y=\"74\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(0, 1, 1)"
+        },
+        {
+          "id": "b",
+          "text": "(1, 0, 1)"
+        },
+        {
+          "id": "c",
+          "text": "(1, 1, 0)"
+        },
+        {
+          "id": "d",
+          "text": "(1, 1, 1)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Dans le repère (A, AB⃗, AD⃗, AE⃗), la première coordonnée se lit sur AB⃗, la deuxième sur AD⃗ et la troisième sur AE⃗. Le sommet G est celui qu'on atteint en parcourant une arête dans chacune des trois directions : G(1, 1, 1) ✓. Les trois autres options sont d'autres sommets du cube, chacun obtenu en oubliant une direction : (1, 1, 0) est C, dans le plan de la base ; (1, 0, 1) est F, sur la face avant ; (0, 1, 1) est H, sur la face de gauche. C'est G, extrémité de la grande diagonale [AG], qui porte les trois 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit u⃗ et v⃗ deux vecteurs non nuls de l'espace. À quelle condition a-t-on u⃗∧v⃗ = 0⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u⃗ et v⃗ sont colinéaires"
+        },
+        {
+          "id": "b",
+          "text": "u⃗ et v⃗ sont orthogonaux"
+        },
+        {
+          "id": "c",
+          "text": "u⃗ et v⃗ ont la même norme"
+        },
+        {
+          "id": "d",
+          "text": "u⃗ et v⃗ sont unitaires"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le cours l'énonce comme une équivalence : u⃗∧v⃗ = 0⃗ si et seulement si u⃗ et v⃗ sont colinéaires ✓. La norme le confirme : ‖u⃗∧v⃗‖ = ‖u⃗‖·‖v⃗‖·sin(u⃗, v⃗), et pour deux vecteurs non nuls elle ne s'annule que si le sinus de l'angle est nul, donc si l'angle vaut 0 ou π. L'option b est la confusion majeure du chapitre : ce sont les vecteurs ORTHOGONAUX qui annulent le produit SCALAIRE ; deux vecteurs orthogonaux ont au contraire un produit vectoriel de norme maximale ‖u⃗‖·‖v⃗‖. Les options c et d ne portent que sur les longueurs, qui n'interviennent que comme facteurs : deux vecteurs unitaires perpendiculaires donnent un produit vectoriel unitaire, donc non nul.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'espace est muni d'une base orthonormée directe. Que vaut u⃗∧v⃗ pour u⃗(1, 2, 3) et v⃗(2, 1, 0) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−3, −6, −3)"
+        },
+        {
+          "id": "b",
+          "text": "(−3, 6, −3)"
+        },
+        {
+          "id": "c",
+          "text": "(−3, 6, 3)"
+        },
+        {
+          "id": "d",
+          "text": "(3, −6, 3)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On applique u⃗∧v⃗ = (bc′ − cb′ ; ca′ − ac′ ; ab′ − ba′) avec (a, b, c) = (1, 2, 3) et (a′, b′, c′) = (2, 1, 0) : première coordonnée 2×0 − 3×1 = −3, deuxième 3×2 − 1×0 = 6, troisième 1×1 − 2×2 = −3, d'où (−3, 6, −3) ✓. Contrôle obligatoire par deux produits scalaires nuls : (−3, 6, −3).u⃗ = −3 + 12 − 9 = 0 ✓ et (−3, 6, −3).v⃗ = −6 + 6 + 0 = 0 ✓. L'option a calcule la deuxième coordonnée « en croix simple », ac′ − ca′ = 0 − 6 = −6, en oubliant que cette ligne-là est la seule à s'écrire à l'envers. L'option c inverse l'ordre sur la troisième, ba′ − ab′ = 4 − 1 = 3. L'option d est v⃗∧u⃗, l'opposé du résultat cherché : le produit vectoriel n'est pas commutatif.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le plan P a pour équation cartésienne 3x − y + 2z − 5 = 0. Quel vecteur est normal à P ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−1, 2, −5)"
+        },
+        {
+          "id": "b",
+          "text": "(3, −1, −5)"
+        },
+        {
+          "id": "c",
+          "text": "(3, −1, 2)"
+        },
+        {
+          "id": "d",
+          "text": "(3, 1, 2)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La lecture la plus rentable du chapitre : dans ax + by + cz + d = 0, les trois premiers coefficients sont exactement les coordonnées d'un vecteur normal. Ici a = 3, b = −1, c = 2, donc n⃗(3, −1, 2) ✓. Contrôle : le point A(1, 0, 1) vérifie 3 − 0 + 2 − 5 = 0 et le point B(1, 1, 3/2) vérifie 3 − 1 + 3 − 5 = 0, donc AB⃗ = (0, 1, 1/2) dirige P, et n⃗.AB⃗ = 0 − 1 + 1 = 0 ✓. L'option b et l'option a embarquent le terme constant −5, qui ne fait pas partie du vecteur normal : il fixe seulement la position du plan, pas sa direction. L'option d perd le signe du coefficient de y, alors que ce signe oriente la normale.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le plan P a pour équation cartésienne 2x − y + 3z − 4 = 0. Lequel de ces points appartient à P ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(0, 0, 4)"
+        },
+        {
+          "id": "b",
+          "text": "(0, 4, 0)"
+        },
+        {
+          "id": "c",
+          "text": "(2, −1, 3)"
+        },
+        {
+          "id": "d",
+          "text": "(3, 2, 0)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un point appartient à P si et seulement si ses coordonnées annulent l'équation. Pour (3, 2, 0) : 2(3) − 2 + 3(0) − 4 = 6 − 2 + 0 − 4 = 0 ✓. Les autres ne l'annulent pas : (0, 0, 4) donne 0 − 0 + 12 − 4 = 8, (0, 4, 0) donne 0 − 4 + 0 − 4 = −8, et (2, −1, 3) donne 4 + 1 + 9 − 4 = 10. Cette dernière est le piège du chapitre : (2, −1, 3) recopie les coefficients de l'équation, or ces trois nombres sont les coordonnées d'un vecteur NORMAL au plan, pas celles d'un point du plan.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'ensemble S des points M(x, y, z) tels que x² + y² + z² − 4x + 2y − 6z + 5 = 0 est une sphère. Quels sont son centre I et son rayon R ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I(−4, 2, −6) et R = 3"
+        },
+        {
+          "id": "b",
+          "text": "I(−2, 1, −3) et R = 3"
+        },
+        {
+          "id": "c",
+          "text": "I(2, −1, 3) et R = 3"
+        },
+        {
+          "id": "d",
+          "text": "I(2, −1, 3) et R = 9"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On complète les trois carrés : x² − 4x = (x − 2)² − 4, y² + 2y = (y + 1)² − 1 et z² − 6z = (z − 3)² − 9. L'équation devient (x − 2)² + (y + 1)² + (z − 3)² − 4 − 1 − 9 + 5 = 0, soit (x − 2)² + (y + 1)² + (z − 3)² = 9. On lit I(2, −1, 3) et R = √9 = 3 ✓. Contrôle : le point (5, −1, 3) donne 25 + 1 + 9 − 20 − 2 − 18 + 5 = 0, il est bien sur S, et sa distance à I vaut 3 ✓. L'option d confond R² et R. L'option b oublie de diviser par 2 les coefficients avant de changer leur signe. L'option a recopie les coefficients bruts, sans les diviser par 2 ni changer leur signe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est une représentation paramétrique de la droite passant par A(1, −2, 0) et de vecteur directeur u⃗(3, 1, −2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = 1 + 3α ; y = −2 − α ; z = −2α"
+        },
+        {
+          "id": "b",
+          "text": "x = 1 + 3α ; y = −2 + α ; z = −2α"
+        },
+        {
+          "id": "c",
+          "text": "x = 1 + 3α ; y = −2 + α ; z = 2α"
+        },
+        {
+          "id": "d",
+          "text": "x = 3 + α ; y = 1 − 2α ; z = −2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le cours donne x = x₀ + αa ; y = y₀ + αb ; z = z₀ + αc, où (x₀, y₀, z₀) sont les coordonnées du point et (a, b, c) celles du vecteur directeur. Ici le point apporte les constantes 1, −2 et 0, et le vecteur apporte les coefficients 3, 1 et −2 : x = 1 + 3α ; y = −2 + α ; z = −2α ✓. Contrôle : α = 0 redonne A(1, −2, 0) ✓, et α = 1 donne (4, −1, −2), qui est bien A + u⃗ ✓. L'option d échange les rôles : elle place le vecteur directeur en constantes et le point en coefficients, donc elle décrit une droite qui passe par (3, 1, −2) et non par A. Les options a et c gardent le bon point mais changent un signe du vecteur directeur, ce qui donne une autre direction que celle de u⃗.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est une équation cartésienne du plan passant par A(1, −1, 2) et de vecteur normal n⃗(2, 3, −1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2x + 3y − z − 3 = 0"
+        },
+        {
+          "id": "b",
+          "text": "2x + 3y − z = 0"
+        },
+        {
+          "id": "c",
+          "text": "2x + 3y − z + 3 = 0"
+        },
+        {
+          "id": "d",
+          "text": "x − y + 2z + 3 = 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le vecteur normal fournit les trois premiers coefficients : l'équation est 2x + 3y − z + d = 0. On détermine d en y injectant A(1, −1, 2) : 2(1) + 3(−1) − 2 + d = 2 − 3 − 2 + d = −3 + d = 0, donc d = 3 et le plan est 2x + 3y − z + 3 = 0 ✓. Contrôle sur A : 2 − 3 − 2 + 3 = 0 ✓. L'option a prend d = n⃗.A⃗ = −3 au lieu de son opposé, ce qui déplace le plan de l'autre côté de l'origine. L'option b oublie purement le terme constant : ce plan passe par l'origine, or 2(0) + 3(0) − 0 = 0 ≠ −3 montre que A n'y est pas. L'option d échange le point et la normale : elle décrit le plan de normale (1, −1, 2) passant par (2, 3, −1).",
+      "difficulty": 2
+    }
+  ]
+}

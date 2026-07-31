@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Coniques",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Soit ℰ une ellipse d'équation réduite x²/a² + y²/b² = 1 avec a > b > 0, et c la distance de son centre à l'un de ses foyers. Quelle relation lie a, b et c ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "b² = a² + c²"
+        },
+        {
+          "id": "b",
+          "text": "c² = a² + b²"
+        },
+        {
+          "id": "c",
+          "text": "b² = c² − a²"
+        },
+        {
+          "id": "d",
+          "text": "b² = a² − c²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le cours donne, pour l'ellipse, b² = a² − c², c'est-à-dire a² = b² + c² : c'est a, le demi-grand axe, qui est le plus grand ✓. La figure du cours le résume : le triangle OFB, rectangle en O et de côtés c et b, a pour hypoténuse FB = a. Contrôle numérique sur x²/25 + y²/16 = 1 : c² = a² − b² = 25 − 16 = 9 donne c = 3, et le sommet secondaire B(0, 4) vérifie bien BF = √(9 + 16) = 5 = a ✓. Les options b et c sont les relations de l'hyperbole, où c'est c qui est le plus grand : les intervertir est l'erreur la plus fréquente du chapitre. L'option a rendrait b plus grand que a, ce qui contredit l'hypothèse a > b.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit ℋ l'hyperbole d'équation 16x² − 9y² = 144. Quelles sont les équations de ses asymptotes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = ±(9/16)x"
+        },
+        {
+          "id": "b",
+          "text": "y = ±(3/4)x"
+        },
+        {
+          "id": "c",
+          "text": "y = ±(4/3)x"
+        },
+        {
+          "id": "d",
+          "text": "y = ±(16/9)x"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Il faut d'abord réduire l'équation en divisant les deux membres par 144 : 16x²/144 = x²/9 et 9y²/144 = y²/16, d'où x²/9 − y²/16 = 1. On lit alors a = 3 et b = 4, et les asymptotes sont y = ±(b/a)x = ±(4/3)x ✓. L'option b donne la pente a/b = 3/4 : c'est l'inversion classique de la formule. Les options a et d oublient la réduction et prennent les coefficients 16 et 9 de l'équation de départ, ou leurs dénominateurs, sans passer par les racines carrées.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit ℰ l'ellipse d'équation 16x² + 25y² = 400. Que vaut son excentricité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/5"
+        },
+        {
+          "id": "b",
+          "text": "3/4"
+        },
+        {
+          "id": "c",
+          "text": "4/5"
+        },
+        {
+          "id": "d",
+          "text": "5/3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On divise par 400 : 16x²/400 = x²/25 et 25y²/400 = y²/16, d'où x²/25 + y²/16 = 1. Donc a = 5, b = 4 et c² = 25 − 16 = 9, soit c = 3 ; l'excentricité vaut e = c/a = 3/5 ✓. Contrôle par la définition, avec la directrice x = a²/c = 25/3 : le sommet S(5, 0) vérifie SF = |5 − 3| = 2 et SH = |5 − 25/3| = 10/3, de rapport 2 ÷ (10/3) = 6/10 = 3/5 ✓. L'option b divise c par b au lieu du demi-grand axe a. L'option c prend le rapport des demi-axes b/a = 4/5 au lieu de c/a. L'option d inverse le quotient et donne a/c, ce qui dépasserait 1, valeur interdite pour une ellipse.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit 𝒫 la parabole d'équation y² = 8x, de foyer F, et soit M le point de 𝒫 d'ordonnée 8. Que vaut la distance MF ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'ordonnée 8 donne 64 = 8x, donc x = 8 et M(8, 8). Comme 2p = 8, on a p = 4, F(2, 0) et la directrice x = −2. La définition MF = MH évite tout calcul de racine : MF = MH = |8 − (−2)| = 10 ✓. Contrôle direct : MF = √((8 − 2)² + 8²) = √(36 + 64) = √100 = 10 ✓. L'option a ne mesure que l'écart des abscisses, |8 − 2| = 6, en oubliant l'ordonnée. L'option b prend la seule abscisse de M, comme si la directrice passait par O. L'option d ajoute le paramètre p = 4 au lieu de p/2 = 2, soit 8 + 4 = 12.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est l'équation réduite de l'hyperbole de centre O, de sommet S(3, 0) et de foyer F(5, 0) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x²/9 − y²/16 = 1"
+        },
+        {
+          "id": "b",
+          "text": "x²/9 − y²/25 = 1"
+        },
+        {
+          "id": "c",
+          "text": "x²/9 + y²/16 = 1"
+        },
+        {
+          "id": "d",
+          "text": "x²/25 − y²/16 = 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le sommet donne a = 3 et le foyer c = 5, tous deux sur (Ox). La relation de l'hyperbole b² = c² − a² donne b² = 25 − 9 = 16, d'où x²/9 − y²/16 = 1 ✓. Contrôle par la définition : c = √(9 + 16) = 5 ✓, e = c/a = 5/3 et la directrice x = a²/c = 9/5 = 1,8 ; le point de ℋ d'abscisse 5 vérifie y² = 16(25/9 − 1) = 256/9, soit M(5 ; 16/3), et MF = 16/3 (même abscisse que F) tandis que MH = |5 − 1,8| = 16/5, de rapport (16/3) ÷ (16/5) = 5/3 ✓. L'option b confond b² avec c² et met 25 sous y². L'option c écrit un signe +, donc une ellipse, alors qu'une ellipse n'a jamais son foyer au-delà de son sommet. L'option d place a² = 25 et b² = 16, ce qui reviendrait à prendre le foyer pour le sommet : le point (3, 0) n'y serait plus sur la courbe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est l'équation réduite de l'ellipse de centre O dont un foyer est F(0, 6) et dont l'excentricité vaut 0,6 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x²/36 + y²/100 = 1"
+        },
+        {
+          "id": "b",
+          "text": "x²/64 + y²/100 = 1"
+        },
+        {
+          "id": "c",
+          "text": "x²/100 + y²/64 = 1"
+        },
+        {
+          "id": "d",
+          "text": "x²/100 + y²/136 = 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le foyer est sur (Oy), donc le grand axe est vertical : on est dans le cas a < b, où e = c/b. De c = 6 et e = 0,6 on tire b = c/e = 6 ÷ 0,6 = 10, puis a² = b² − c² = 100 − 36 = 64, soit a = 8. L'équation est donc x²/64 + y²/100 = 1 ✓. Contrôle par la définition, avec la directrice y = b²/c = 100/6 = 50/3 ≈ 16,667 : le sommet principal B(0, 10) vérifie BF = |10 − 6| = 4 et BH = |10 − 50/3| = 20/3 ≈ 6,667, de rapport 4 ÷ (20/3) = 0,6 ✓ ; le sommet secondaire A(8, 0) vérifie AF = √(64 + 36) = 10 et AH = 50/3, de rapport 10 ÷ (50/3) = 0,6 ✓. L'option c échange les deux dénominateurs, ce qui reviendrait à utiliser e = c/a et placerait les foyers sur (Ox), contrairement à l'énoncé. L'option a pose a = c = 6, en confondant le foyer avec le sommet secondaire. L'option d additionne au lieu de soustraire, 100 + 36 = 136, en appliquant la relation de l'hyperbole.",
+      "difficulty": 3
+    }
+  ]
+}

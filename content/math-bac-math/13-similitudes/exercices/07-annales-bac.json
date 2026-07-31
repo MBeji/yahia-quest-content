@@ -1,0 +1,154 @@
+{
+  "title": "🏛️ Annales Bac ⭐⭐⭐⭐ : Sujet type — Carré ABCD, similitude de centre A, similitude indirecte et lieu de points",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "Partie A. Le plan est orienté dans le sens direct et rapporté au repère orthonormé direct (A, u⃗, v⃗). ABCD est le carré direct de sommets A(0 ; 0), B(4 ; 0), C(4 ; 4) et D(0 ; 4) ; on note O(2 ; 2) son centre et I(2 ; 0) le milieu de [AB]. On considère S, la similitude directe de centre A qui transforme B en C. Déterminer le rapport et l'angle de S, puis l'image du point I par S. <svg viewBox=\"0 0 230 210\"><path d=\"M20 175 H215\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><path d=\"M215 175 l-8 -4 l0 8 z\" fill=\"#0f172a\"/><path d=\"M45 195 V35\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><path d=\"M45 35 l-4 8 l8 0 z\" fill=\"#0f172a\"/><path d=\"M45 175 H165 V55 H45 Z\" fill=\"#0f6e56\" opacity=\"0.08\"/><path d=\"M45 175 H165 V55 H45 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><g stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\" fill=\"none\"><path d=\"M45 175 L165 55\"/><path d=\"M165 175 L45 55\"/></g><path d=\"M75 175 A30 30 0 0 0 66.2 153.8\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\"/><g fill=\"#0f172a\"><circle cx=\"45\" cy=\"175\" r=\"4.5\"/><circle cx=\"165\" cy=\"175\" r=\"4.5\"/><circle cx=\"165\" cy=\"55\" r=\"4.5\"/><circle cx=\"45\" cy=\"55\" r=\"4.5\"/><circle cx=\"105\" cy=\"115\" r=\"4\"/><circle cx=\"105\" cy=\"175\" r=\"4\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"37\" y=\"192\" text-anchor=\"end\" fill=\"#0f172a\">A</text><text x=\"173\" y=\"192\" fill=\"#0f172a\">B</text><text x=\"173\" y=\"50\" fill=\"#0f172a\">C</text><text x=\"37\" y=\"50\" text-anchor=\"end\" fill=\"#0f172a\">D</text><text x=\"113\" y=\"110\" fill=\"#0f172a\">O</text><text x=\"105\" y=\"193\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"82\" y=\"160\" fill=\"#b45309\">π/4</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "S a pour rapport √2 et pour angle π/4 ; S(I) = O, le centre du carré"
+        },
+        {
+          "id": "b",
+          "text": "S a pour rapport 2 et pour angle π/4 ; S(I) = O, le centre du carré"
+        },
+        {
+          "id": "c",
+          "text": "S a pour rapport √2 et pour angle π/2 ; S(I) est le milieu J(4 ; 2) de [BC]"
+        },
+        {
+          "id": "d",
+          "text": "S a pour rapport √2 et pour angle π/4 ; S(I) est le milieu J(4 ; 2) de [BC]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le centre d'une similitude directe est son point fixe : ici S(A) = A, et l'on connaît en plus S(B) = C. Tout se lit donc sur le couple (A, B). LE RAPPORT. Pour tout point M d'image M′, on a AM′ = k·AM ; appliqué à B : AC = k·AB. Or AB = 4 et AC = |(4 ; 4)| = √(16 + 16) = 4√2, d'où k = 4√2/4 = √2 ✓. L'ANGLE. Il vaut θ ≡ (AM⃗ ; AM′⃗) pour tout M distinct du centre ; avec M = B : θ ≡ (AB⃗ ; AC⃗) [2π]. En complexes, le quotient des affixes vaut (4 + 4i)/4 = 1 + i, de module √2 ✓ — cohérent avec le rapport — et d'argument π/4. Donc θ ≡ π/4 [2π] ✓ : c'est l'angle de la diagonale du carré avec son côté, ce que la figure montre en A. L'IMAGE DE I. Le plus court est l'écriture complexe : le centre A est l'origine du repère, donc S s'écrit z′ = a·z avec a = k·e^(iθ) = √2·e^(iπ/4) = √2(√2/2 + i√2/2) = 1 + i. Vérification immédiate : S(B) donne (1 + i)·4 = 4 + 4i = z_C ✓, et S(A) donne 0 ✓. Alors S(I) : z_I = 2, donc z′ = (1 + i)·2 = 2 + 2i, c'est-à-dire le point (2 ; 2) = O ✓. CONTRÔLE par les éléments caractéristiques, sans complexes, comme le veut la méthode : AI = 2 et AO = |(2 ; 2)| = 2√2 = √2 × 2 = √2 × AI ✓, la condition sur les longueurs est satisfaite ; et (AI⃗ ; AO⃗) = ((2 ; 0) ; (2 ; 2)) a pour quotient d'affixes (2 + 2i)/2 = 1 + i, d'argument π/4 ✓, la condition sur l'angle l'est aussi. Les deux conditions caractérisent S, donc S(I) = O est bien l'image cherchée. Le rapport 2 confond la longueur de la diagonale et le double du côté : la diagonale d'un carré de côté 4 mesure 4√2 ≈ 5,66, et non 8. Si le rapport valait 2, l'image de B serait à la distance 8 de A, hors du carré. L'angle π/2 est celui de (AB⃗ ; AD⃗), pas de (AB⃗ ; AC⃗) : un quart de tour enverrait B sur D, pas sur C. Il donnerait d'ailleurs a = √2·i, donc S(B) = 4√2·i ≈ 5,66i, qui n'est pas C. Enfin S(I) = J est la réponse « intuitive » qui glisse le milieu d'un côté sur le milieu du côté suivant ; elle est fausse, et un seul contrôle suffit : AJ = |(4 ; 2)| = √20 = 2√5 ≈ 4,47, alors que l'image de I doit être à la distance √2 × AI = 2√2 ≈ 2,83 de A. C'est O, et non J, qui satisfait la double condition.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Partie A (suite). Mêmes données : dans le repère orthonormé direct (A, u⃗, v⃗), ABCD est le carré direct A(0 ; 0), B(4 ; 0), C(4 ; 4), D(0 ; 4), de centre O(2 ; 2). On rappelle que S est la similitude directe de centre A, de rapport √2 et d'angle π/4 (celle qui transforme B en C). Donner la forme réduite de S, puis l'aire de l'image du carré ABCD par S.",
+      "options": [
+        {
+          "id": "a",
+          "text": "S = h(A, √2)∘r(A, π/4) = r(A, π/4)∘h(A, √2) ; l'aire de l'image vaut 32"
+        },
+        {
+          "id": "b",
+          "text": "S = h(A, √2)∘r(A, π/4) = r(A, π/4)∘h(A, √2) ; l'aire de l'image vaut 16√2"
+        },
+        {
+          "id": "c",
+          "text": "S = h(A, 2)∘r(A, π/4) = r(A, π/4)∘h(A, 2) ; l'aire de l'image vaut 64"
+        },
+        {
+          "id": "d",
+          "text": "S = h(O, √2)∘r(O, π/4) = r(O, π/4)∘h(O, √2) ; l'aire de l'image vaut 32"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "LA FORME RÉDUITE. Le théorème du cours est direct : toute similitude directe de centre I, de rapport k ≠ 1 et d'angle θ se décompose de manière unique en f = h∘r = r∘h, où h est l'homothétie de centre I et de rapport k et r la rotation de centre I et d'angle θ. Ici le centre est A, le rapport √2 et l'angle π/4, donc S = h(A, √2)∘r(A, π/4) = r(A, π/4)∘h(A, √2) ✓. Les deux facteurs ont le MÊME centre, celui de S — c'est ce qui rend la décomposition commutative. Contrôle de la commutation sur B, en complexes avec A à l'origine : par r(A, π/4) d'abord, z_B = 4 devient 4e^(iπ/4) = 2√2 + 2√2·i ; puis h(A, √2) multiplie par √2 et donne 4 + 4i = z_C ✓. Dans l'autre ordre : h(A, √2) envoie 4 sur 4√2, puis r(A, π/4) donne 4√2·e^(iπ/4) = 4√2(√2/2 + i√2/2) = 4 + 4i = z_C ✓ — même résultat, comme annoncé. L'AIRE DE L'IMAGE. Une similitude de rapport k multiplie les aires par k², conséquence du théorème A′B′⃗·C′D′⃗ = k²·AB⃗·CD⃗. L'aire du carré ABCD vaut 4 × 4 = 16, et k² = (√2)² = 2, donc l'aire de l'image vaut 16 × 2 = 32 ✓. CONTRÔLE en construisant l'image, point par point, avec z′ = (1 + i)z : S(A) = 0 = A ; S(B) = 4 + 4i = C ; S(C) = (1 + i)(4 + 4i) = 4 + 4i + 4i + 4i² = 8i, soit le point (0 ; 8) ; S(D) = (1 + i)·4i = 4i + 4i² = −4 + 4i, soit le point (−4 ; 4). L'image est donc le quadrilatère de sommets (0 ; 0), (4 ; 4), (0 ; 8) et (−4 ; 4). Ses côtés : (4 ; 4), (−4 ; 4), (−4 ; −4) et (4 ; −4), tous de longueur 4√2 et consécutivement orthogonaux — c'est bien un carré, de côté 4√2, donc d'aire (4√2)² = 32 ✓. Les deux méthodes concordent. Retiens au passage que l'image d'un carré par une similitude est toujours un carré : angles et rapports de longueurs sont conservés. L'aire 16√2 applique aux aires le coefficient des longueurs : les côtés sont multipliés par √2, mais les aires par (√2)² = 2. C'est l'erreur des deux exposants, la plus fréquente du chapitre. Le rapport 2 dans la forme réduite contredit la question précédente (AC = 4√2 = √2 × AB, pas 2 × AB) et donnerait une aire de 16 × 4 = 64. Le centre O est écarté par la définition même de S, dont le centre est A : une similitude directe de rapport ≠ 1 n'a qu'UN seul point fixe, et S(A) = A. Si le centre était O, on aurait S(O) = O, alors que S(O) = (1 + i)(2 + 2i) = 4i, soit le point (0 ; 4) = D ≠ O. Les deux facteurs de la forme réduite ont obligatoirement le centre de S.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie A (fin). Mêmes données : dans le repère orthonormé direct (A, u⃗, v⃗), ABCD est le carré direct A(0 ; 0), B(4 ; 0), C(4 ; 4), D(0 ; 4), de centre O(2 ; 2), et S est la similitude directe de centre A, de rapport √2 et d'angle π/4, d'écriture complexe z′ = (1 + i)z. Soit r la rotation de centre O et d'angle −π/2, qui laisse le carré globalement invariant. Déterminer la nature et les éléments caractéristiques de S∘r.",
+      "options": [
+        {
+          "id": "a",
+          "text": "S∘r est la similitude directe de centre C, de rapport √2 et d'angle −π/4"
+        },
+        {
+          "id": "b",
+          "text": "S∘r est la similitude directe de centre O, de rapport √2 et d'angle −π/4"
+        },
+        {
+          "id": "c",
+          "text": "S∘r est la similitude directe de centre C, de rapport 2 et d'angle −π/4"
+        },
+        {
+          "id": "d",
+          "text": "S∘r est la similitude directe de centre A, de rapport √2 et d'angle π/4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "NATURE, RAPPORT ET ANGLE, par les théorèmes de composition. r est une rotation, donc une similitude directe de rapport 1 et d'angle −π/2 ; S est directe, de rapport √2 et d'angle π/4. La composée de deux similitudes directes est directe ✓ ; les rapports se multiplient : √2 × 1 = √2 ✓ ; les angles s'ajoutent : π/4 + (−π/2) = −π/4 ✓. Comme le rapport √2 ≠ 1, S∘r admet un unique point fixe, son centre — reste à le calculer. LE CENTRE, par l'écriture complexe, la voie la plus sûre. La rotation de centre Ω d'affixe ω et d'angle θ s'écrit z′ = e^(iθ)(z − ω) + ω ; ici ω = 2 + 2i et e^(−iπ/2) = −i, donc r : z′ = −i(z − 2 − 2i) + 2 + 2i = −iz + 2i + 2i² + 2 + 2i = −iz + 4i. Contrôle : r(A) = 4i = z_D ✓ et r(B) = −4i + 4i = 0 = z_A ✓ — le carré direct tourne bien d'un quart de tour dans le sens indirect, B venant sur A. On compose ensuite dans l'ordre — r d'abord, S ensuite : S∘r(z) = (1 + i)(−iz + 4i) = (1 + i)(−i)·z + 4i(1 + i) = (−i − i²)z + (4i + 4i²) = (1 − i)z − 4 + 4i. Le coefficient a = 1 − i a pour module √2 ✓ et pour argument −π/4 ✓, ce qui recoupe exactement le calcul par les théorèmes. Le centre vérifie z_Ω = b/(1 − a) = (−4 + 4i)/(1 − (1 − i)) = (−4 + 4i)/i. On multiplie haut et bas par −i : le numérateur devient (−4 + 4i)(−i) = 4i − 4i² = 4 + 4i, le dénominateur i × (−i) = 1. Donc z_Ω = 4 + 4i = z_C : le centre est le sommet C ✓. CONTRÔLE par réinjection : (1 − i)(4 + 4i) − 4 + 4i = (4 + 4i − 4i − 4i²) − 4 + 4i = (4 + 4) − 4 + 4i = 4 + 4i ✓, C est bien fixe. CONTRÔLE par la chaîne, entièrement indépendant : r(A) = D, puis S(D) = (1 + i)·4i = −4 + 4i, soit le point (−4 ; 4) ; et l'expression composée donne S∘r(0) = −4 + 4i ✓, même image. Vérifions même que C se comporte comme un centre sur ce point : CA = |(−4 ; −4)| = 4√2 et C(−4 ; 4)⃗ = (−8 ; 0), de longueur 8 = √2 × 4√2 ✓ ; et le quotient des affixes (−8)/(−4 − 4i) = 8/(4 + 4i) = 8(4 − 4i)/32 = 1 − i, d'argument −π/4 ✓ — rapport et angle confirmés géométriquement. Le centre O est l'erreur de méthode récurrente : composer DÉPLACE le centre, qui n'a en général rien à voir avec celui des facteurs. Le test tranche : S∘r(O) = (1 − i)(2 + 2i) − 4 + 4i = (2 + 2i − 2i + 2) − 4 + 4i = 4 − 4 + 4i = 4i ≠ 2 + 2i, donc O n'est pas fixe. Le rapport 2 oublie que la rotation a un rapport 1 : √2 × 1 = √2, et non √2 × √2. Un rapport 2 enverrait A à la distance 2 × CA = 8√2 de C, alors que l'image de A est à 8. La dernière proposition garde purement et simplement les éléments de S : elle ignore r, dont l'angle −π/2 s'ajoute à π/4, et son centre A n'est même pas fixe puisque S∘r(A) = (−4 ; 4) ≠ A.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B. Le plan complexe est rapporté au repère orthonormé direct (A, u⃗, v⃗) : A a pour affixe 0, B pour affixe 4, C pour affixe 4 + 4i, D pour affixe 4i, et le centre O du carré pour affixe 2 + 2i. On reprend S, la similitude directe de centre A, de rapport √2 et d'angle π/4, qui transforme B en C. Donner l'écriture complexe de S, puis l'affixe de l'image du point D par S.",
+      "options": [
+        {
+          "id": "a",
+          "text": "z′ = (1 + i)z, et S(D) a pour affixe −4 + 4i"
+        },
+        {
+          "id": "b",
+          "text": "z′ = (1 + i)z + 4, et S(D) a pour affixe 4i"
+        },
+        {
+          "id": "c",
+          "text": "z′ = √2·z, et S(D) a pour affixe 4√2·i"
+        },
+        {
+          "id": "d",
+          "text": "z′ = (1 + i)z̄, et S(D) a pour affixe 4 − 4i"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une similitude directe de centre I, de rapport k ≠ 1 et d'angle θ s'écrit z′ = az + b avec a = k·e^(iθ) et z_I = b/(1 − a). LE COEFFICIENT a : a = √2·e^(iπ/4) = √2·(cos(π/4) + i·sin(π/4)) = √2·(√2/2 + i·√2/2) = 1 + i ✓. On contrôle aussitôt : |1 + i| = √(1 + 1) = √2, c'est bien le rapport ✓, et arg(1 + i) = π/4, c'est bien l'angle ✓. LE TERME CONSTANT b : le centre est A, d'affixe 0, et le centre est le point fixe, donc 0 = a·0 + b, d'où b = 0 ✓. Autrement dit, quand le centre de la similitude est l'ORIGINE du repère, l'écriture se réduit à z′ = az. D'où S : z′ = (1 + i)z ✓. Contrôle sur la donnée de l'énoncé, qui n'a pas servi à construire l'écriture : S(B) doit valoir C, et (1 + i)·4 = 4 + 4i = z_C ✓. L'IMAGE DE D : z_D = 4i, donc z′ = (1 + i)·4i = 4i + 4i² = 4i − 4 = −4 + 4i ✓, c'est-à-dire le point de coordonnées (−4 ; 4). CONTRÔLE par les éléments caractéristiques : AD = 4 et A S(D) = |(−4 ; 4)| = 4√2 = √2 × 4 ✓ ; et (AD⃗ ; A S(D)⃗) a pour quotient d'affixes (−4 + 4i)/(4i) = (−4 + 4i)·(−i)/(4i·(−i)) = (4i + 4)/4 = 1 + i, d'argument π/4 ✓. Les deux conditions caractéristiques sont vérifiées, l'image est bien celle-là. L'écriture z′ = (1 + i)z + 4 se trompe sur b : elle a un terme constant non nul, donc son centre vaut b/(1 − a) = 4/(1 − 1 − i) = 4/(−i) = 4i, c'est-à-dire D, et non A. Le terme constant se lit toujours sur l'image de l'ORIGINE du repère, ici A, et S(A) = A d'affixe 0. L'écriture z′ = √2·z a le bon module mais un coefficient RÉEL : le cours est catégorique, un coefficient réel désigne une HOMOTHÉTIE, d'angle nul, et non une similitude d'angle π/4. Elle enverrait B sur le point d'affixe 4√2, situé sur la demi-droite [AB), alors que S(B) = C. L'écriture z′ = (1 + i)z̄ porte une barre de conjugaison : elle décrit une similitude INDIRECTE, qui changerait les angles orientés en leurs opposées, alors que S est directe. Elle donne pourtant la bonne image pour B — (1 + i)·conj(4) = 4 + 4i = z_C — et c'est précisément pourquoi le théorème d'existence annonce DEUX similitudes envoyant A sur A et B sur C, une directe et une indirecte : elles ne se séparent que sur un troisième point, ici D, envoyé sur 4 − 4i au lieu de −4 + 4i.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B (suite). Le plan complexe est rapporté au repère orthonormé direct (A, u⃗, v⃗) : A a pour affixe 0, B pour affixe 4, C pour affixe 4 + 4i, D pour affixe 4i, et le centre O du carré direct ABCD pour affixe 2 + 2i. On considère l'application g qui, à tout point M d'affixe z, associe le point M′ d'affixe z′ = 2i·z̄ − 2 − 2i. Montrer que g est une similitude indirecte, puis donner son rapport, son centre, son axe et sa forme réduite.",
+      "options": [
+        {
+          "id": "a",
+          "text": "g est la similitude indirecte de rapport 2, de centre O et d'axe la diagonale (AC) d'équation y = x ; sa forme réduite est g = h(O, 2)∘S_(AC) = S_(AC)∘h(O, 2)"
+        },
+        {
+          "id": "b",
+          "text": "g est la similitude indirecte de rapport 2, de centre O et d'axe la diagonale (BD) d'équation y = −x + 4 ; sa forme réduite est g = h(O, 2)∘S_(BD) = S_(BD)∘h(O, 2)"
+        },
+        {
+          "id": "c",
+          "text": "g est la similitude indirecte de rapport 4, de centre O et d'axe la diagonale (AC) d'équation y = x ; sa forme réduite est g = h(O, 4)∘S_(AC) = S_(AC)∘h(O, 4)"
+        },
+        {
+          "id": "d",
+          "text": "g est la similitude indirecte de rapport 2, de centre A et d'axe la diagonale (AC) d'équation y = x ; sa forme réduite est g = h(A, 2)∘S_(AC) = S_(AC)∘h(A, 2)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "NATURE ET RAPPORT. L'écriture est de la forme z′ = a·z̄ + b avec a = 2i et b = −2 − 2i. La barre de conjugaison signe une similitude INDIRECTE, et le rapport vaut k = |a| = |2i| = 2 ✓ ; comme k ≠ 1, g admet bien un unique point fixe — si l'on avait |a| = 1, on serait retombé sur un antidéplacement du chapitre 12, sans centre unique. LE CENTRE, par la formule z_I = (a·b̄ + b)/(1 − |a|²). On calcule b̄ = −2 + 2i, puis a·b̄ = 2i(−2 + 2i) = −4i + 4i² = −4 − 4i ; en ajoutant b : (−4 − 4i) + (−2 − 2i) = −6 − 6i. Le dénominateur vaut 1 − |a|² = 1 − 4 = −3. Donc z_I = (−6 − 6i)/(−3) = 2 + 2i ✓, c'est-à-dire O, le centre du carré. Contrôle par réinjection, obligatoire : 2i·conj(2 + 2i) − 2 − 2i = 2i(2 − 2i) − 2 − 2i = 4i − 4i² − 2 − 2i = 4i + 4 − 2 − 2i = 2 + 2i ✓, O est fixe. L'AXE. C'est l'ensemble des points M tels que IM′⃗ = k·IM⃗, ici z′ − z_I = 2(z − z_I) : 2i·z̄ − 2 − 2i − (2 + 2i) = 2z − 2(2 + 2i), soit 2i·z̄ − 4 − 4i = 2z − 4 − 4i, donc 2i·z̄ = 2z et i·z̄ = z. Avec z = x + iy on a i·z̄ = i(x − iy) = y + ix ; l'identification avec x + iy donne x = y (partie réelle) et y = x (partie imaginaire) : une seule et même condition. L'axe est donc la droite d'équation y = x ✓ — elle passe par A(0 ; 0) et par C(4 ; 4), c'est la diagonale (AC) du carré, et elle contient bien le centre O(2 ; 2) ✓, comme l'exige la forme réduite. LA FORME RÉDUITE : g = h(O, 2)∘S_(AC) = S_(AC)∘h(O, 2) ✓. VÉRIFICATION sur deux points, dans les deux ordres. Pour A(0) : g(0) = −2 − 2i, soit (−2 ; −2). Par S_(AC) d'abord : A est sur l'axe, donc S_(AC)(A) = A ; puis h(O, 2) donne O + 2·(A − O) = (2 ; 2) + 2·(−2 ; −2) = (−2 ; −2) ✓. Pour B(4) : g(4) = 2i·4 − 2 − 2i = 8i − 2 − 2i = −2 + 6i, soit (−2 ; 6). Par S_(AC), la symétrie d'axe y = x échange les coordonnées, donc B(4 ; 0) ↦ (0 ; 4) = D ; puis h(O, 2) donne (2 ; 2) + 2·(−2 ; 2) = (−2 ; 6) ✓. Dans l'autre ordre pour B : h(O, 2) envoie (4 ; 0) sur (2 ; 2) + 2·(2 ; −2) = (6 ; −2), puis S_(AC) échange les coordonnées et donne (−2 ; 6) ✓ — les deux ordres coïncident, comme le garantit le théorème. L'axe (BD) a le mérite de passer aussi par O, mais il échoue au test : la symétrie d'axe y = −x + 4 envoie A(0 ; 0) sur (4 ; 4) = C, puis h(O, 2) donnerait (2 ; 2) + 2·(2 ; 2) = (6 ; 6), et non (−2 ; −2) = g(A). L'axe se calcule, il ne se devine pas parmi les droites remarquables de la figure. Le rapport 4 confond k et k² : |2i| = 2, et 4 est le rapport de g∘g, qui est l'homothétie h(O, 4). Avec un rapport 4, A serait envoyé sur (2 ; 2) + 4·(−2 ; −2) = (−6 ; −6). Le centre A enfin n'est pas fixe : g(A) = (−2 ; −2) ≠ A ; le point fixe est unique et le calcul le donne en O.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Partie B (fin). Le plan complexe est rapporté au repère orthonormé direct (A, u⃗, v⃗), et ABCD est le carré direct d'affixes 0, 4, 4 + 4i et 4i, de centre O d'affixe 2 + 2i. On considère g, la similitude indirecte d'écriture complexe z′ = 2i·z̄ − 2 − 2i, de rapport 2, de centre O et d'axe (AC). À tout point M d'affixe z, on associe le point M″ = g∘g(M). Déterminer l'ensemble E des points M du plan tels que MM″ = 12.",
+      "options": [
+        {
+          "id": "a",
+          "text": "E est le cercle de centre O(2 ; 2) et de rayon 4"
+        },
+        {
+          "id": "b",
+          "text": "E est le cercle de centre O(2 ; 2) et de rayon 12"
+        },
+        {
+          "id": "c",
+          "text": "E est le cercle de centre O(2 ; 2) et de rayon 3"
+        },
+        {
+          "id": "d",
+          "text": "E est le cercle de centre A(0 ; 0) et de rayon 4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "PREMIER TEMPS — identifier g∘g. Le cours donne le résultat sans calcul : si g est une similitude indirecte de centre I et de rapport k, alors g∘g est l'HOMOTHÉTIE de centre I et de rapport k². Ici g∘g = h(O, 4). Vérifions-le par le calcul, car c'est lui qui fournit l'écriture dont on a besoin : g∘g(z) = 2i·conj(2i·z̄ − 2 − 2i) − 2 − 2i = 2i·(−2i·z − 2 + 2i) − 2 − 2i = −4i²·z − 4i + 4i² − 2 − 2i = 4z − 4i − 4 − 2 − 2i = 4z − 6 − 6i. Et l'homothétie de centre O(2 + 2i) et de rapport 4 s'écrit z′ = 4(z − 2 − 2i) + 2 + 2i = 4z − 8 − 8i + 2 + 2i = 4z − 6 − 6i ✓ : les deux expressions coïncident terme à terme. DEUXIÈME TEMPS — factoriser, le geste attendu à l'écrit. z″ − z = (4z − 6 − 6i) − z = 3z − 6 − 6i = 3·(z − 2 − 2i) = 3·(z − z_O) ✓ — la factorisation fait toujours sortir le point fixe, c'est ce qui rend ce type de lieu calculable. En passant aux modules : MM″ = |z″ − z| = 3·|z − z_O| = 3·OM. TROISIÈME TEMPS — conclure. La condition MM″ = 12 s'écrit 3·OM = 12, soit OM = 4 ✓. L'ensemble E est donc l'ensemble des points situés à la distance 4 de O : le CERCLE de centre O(2 ; 2) et de rayon 4 ✓, sans point à exclure, puisque M = O donnerait MM″ = 0 ≠ 12. Lecture géométrique, qui permet de retrouver le facteur 3 sans complexes : g∘g étant l'homothétie de centre O et de rapport 4, on a OM″⃗ = 4·OM⃗, donc MM″⃗ = OM″⃗ − OM⃗ = 3·OM⃗ et MM″ = 3·OM ✓. CONTRÔLE sur un point qui doit convenir : M(6 ; 2), d'affixe 6 + 2i, vérifie OM = |(4 ; 0)| = 4, il est donc sur E. Son image : z″ = 4(6 + 2i) − 6 − 6i = 24 + 8i − 6 − 6i = 18 + 2i, soit M″(18 ; 2), d'où MM″ = |(12 ; 0)| = 12 ✓. CONTRÔLE sur un point qui ne doit PAS convenir : M = A(0 ; 0), pour lequel OA = 2√2 ≈ 2,83 ≠ 4. Son image : z″ = −6 − 6i, soit (−6 ; −6), d'où AM″ = |(−6 ; −6)| = 6√2 ≈ 8,49 ≠ 12 ✓ — et l'on vérifie au passage la relation MM″ = 3·OM, puisque 3 × 2√2 = 6√2 ✓. Le rayon 12 confond MM″ et OM, c'est-à-dire oublie le facteur 3 apporté par la factorisation : il donnerait MM″ = 3 × 12 = 36, le triple de la valeur demandée. Le rayon 3 confond le facteur et le rayon : 3 est le coefficient qui relie MM″ à OM, pas la distance cherchée ; c'est 12 qu'il faut diviser par 3, non l'inverse. Enfin le cercle de centre A remplace le point fixe par l'origine du repère : la factorisation fait apparaître z − (2 + 2i) et non z. Dans ce type de lieu, c'est TOUJOURS le point fixe de la transformation qui commande le centre, et il n'y a aucune raison qu'il coïncide avec l'origine — ici le point fixe de g∘g est O, hérité du centre de g.",
+      "difficulty": 3
+    }
+  ]
+}

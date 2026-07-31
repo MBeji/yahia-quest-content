@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des volumes et des distances",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On considère les points A(1, 1, 0), B(3, 0, 1), C(2, 3, 1) et D(0, 1, 3). Calculer le volume du tétraèdre ABCD.",
+      "options": [
+        {
+          "id": "a",
+          "text": "18"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La formule du cours part toujours du même sommet : V = (1/6)|(BC⃗∧BD⃗).BA⃗|. 1) Les trois vecteurs issus de B : BC⃗ = C − B = (−1, 3, 0), BD⃗ = D − B = (−3, 1, 2) et BA⃗ = A − B = (−2, 1, −1). 2) Le produit vectoriel, coordonnée par coordonnée : BC⃗∧BD⃗ = ((3)(2) − (0)(1) ; (0)(−3) − (−1)(2) ; (−1)(1) − (3)(−3)) = (6, 2, 8). Contrôle obligatoire par deux produits scalaires nuls : (6, 2, 8).BC⃗ = −6 + 6 + 0 = 0 ✓ et (6, 2, 8).BD⃗ = −18 + 2 + 16 = 0 ✓ — le produit vectoriel est juste. 3) Le produit mixte : (6, 2, 8).BA⃗ = −12 + 2 − 8 = −18. Il est SIGNÉ, d'où V = (1/6)|−18| = 3 ✓. Contrôle par une seconde voie totalement indépendante, (1/3)·base·hauteur. L'aire du triangle BCD vaut (1/2)‖(6, 2, 8)‖ = (1/2)√104 = √26. Le plan (BCD) a pour vecteur normal (3, 1, 4) (on divise (6, 2, 8) par 2) et passe par B(3, 0, 1), donc 9 + 0 + 4 + d = 0 et d = −13, soit 3x + y + 4z − 13 = 0 ; on le vérifie sur les deux autres points, C(2, 3, 1) : 6 + 3 + 4 − 13 = 0 ✓ et D(0, 1, 3) : 0 + 1 + 12 − 13 = 0 ✓. La hauteur issue de A(1, 1, 0) vaut alors |3 + 1 + 0 − 13|/√(9 + 1 + 16) = 9/√26, et V = (1/3)·√26·(9/√26) = 3 ✓. Les deux chemins concordent. Le piège courant : livrer le produit mixte lui-même, 18 — mais |(BC⃗∧BD⃗).BA⃗| est le volume du PARALLÉLÉPIPÈDE bâti sur les trois vecteurs, six fois trop grand pour le tétraèdre. Le distracteur 9 exécute (1/2)|det|, c'est-à-dire le facteur des AIRES appliqué à un volume. Le distracteur 6 exécute (1/3)|det| : le réflexe « (1/3)·base·hauteur » plaqué directement sur le déterminant, en oubliant que celui-ci contient l'aire du PARALLÉLOGRAMME, soit le double de l'aire du triangle de base — c'est exactement ce doublement qui fait passer de 1/3 à 1/6.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On considère les points A(1, 0, 1), B(2, 2, 1), C(1, 2, 2) et M(0, 1, 7). Calculer la distance du point M au plan (ABC).",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "17/3"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux étapes dépendantes : d'abord l'équation du plan, ensuite seulement la distance. 1) AB⃗ = (1, 2, 0) et AC⃗ = (0, 2, 1), donc AB⃗∧AC⃗ = ((2)(1) − (0)(2) ; (0)(0) − (1)(1) ; (1)(2) − (2)(0)) = (2, −1, 2). Contrôle par deux produits scalaires nuls : (2, −1, 2).AB⃗ = 2 − 2 + 0 = 0 ✓ et (2, −1, 2).AC⃗ = 0 − 2 + 2 = 0 ✓. Ce vecteur est non nul, donc A, B et C ne sont pas alignés et n⃗(2, −1, 2) est normal au plan. 2) L'équation est 2x − y + 2z + d = 0 ; en y injectant A(1, 0, 1) : 2 − 0 + 2 + d = 0, donc d = −4 et (ABC) : 2x − y + 2z − 4 = 0. Contrôle sur les deux autres points : B(2, 2, 1) donne 4 − 2 + 2 − 4 = 0 ✓ et C(1, 2, 2) donne 2 − 2 + 4 − 4 = 0 ✓. 3) La distance : d(M, (ABC)) = |2(0) − 1 + 2(7) − 4| / √(4 + 1 + 4) = |−1 + 14 − 4| / 3 = 9/3 = 3 ✓. Contrôle par une seconde méthode, le projeté orthogonal : H = M − t·n⃗ avec t = 9/9 = 1, soit H = (0, 1, 7) − (2, −1, 2) = (−2, 2, 5). H appartient-il au plan ? 2(−2) − 2 + 2(5) − 4 = −4 − 2 + 10 − 4 = 0 ✓ — c'est la vérification qui rend le contrôle valable. Et MH = ‖(2, −1, 2)‖ = √9 = 3 ✓. Même résultat par deux chemins. Le piège courant : oublier la normalisation et livrer le numérateur brut, 9 ; la formule divise TOUJOURS par ‖n⃗‖, sans quoi le résultat dépendrait du multiple choisi pour le vecteur normal (avec (4, −2, 4), le même calcul donnerait 18). Le distracteur 17/3 exécute une erreur de signe sur d : en écrivant d = +4 au lieu de −4, on obtient |0 − 1 + 14 + 4|/3 = 17/3 ; on la réfute en réinjectant A dans 2x − y + 2z + 4 = 0, qui donne 8 ≠ 0. Enfin 1 exécute une division par ‖n⃗‖² = 9 au lieu de ‖n⃗‖ = 3 : le contrôle par le projeté le réfute, car MH vaut bien 3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗) et m désigne un réel. On considère les points A(1, 0, 1), B(2, 1, 3), C(0, 2, 2) et D(3, m, 0). Déterminer la valeur de m pour laquelle les points A, B, C et D sont coplanaires.",
+      "options": [
+        {
+          "id": "a",
+          "text": "m = 0"
+        },
+        {
+          "id": "b",
+          "text": "m = −3"
+        },
+        {
+          "id": "c",
+          "text": "m = 3"
+        },
+        {
+          "id": "d",
+          "text": "m = −2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sens inverse : la condition est donnée, il faut retrouver le paramètre. Le test de coplanarité du chapitre est le produit mixte : A, B, C et D sont coplanaires si et seulement si det(AB⃗, AC⃗, AD⃗) = (AB⃗∧AC⃗).AD⃗ = 0. 1) AB⃗ = (1, 1, 2), AC⃗ = (−1, 2, 1) et AD⃗ = (2, m, −1). 2) AB⃗∧AC⃗ = ((1)(1) − (2)(2) ; (2)(−1) − (1)(1) ; (1)(2) − (1)(−1)) = (−3, −3, 3). Contrôle par deux produits scalaires nuls : (−3, −3, 3).AB⃗ = −3 − 3 + 6 = 0 ✓ et (−3, −3, 3).AC⃗ = 3 − 6 + 3 = 0 ✓. 3) Le produit mixte : (−3, −3, 3).AD⃗ = −6 − 3m − 3 = −9 − 3m. Il s'annule pour m = −3 ✓. Contrôle par une seconde voie totalement indépendante, l'équation du plan. En divisant le vecteur normal par −3 on obtient (1, 1, −1), donc (ABC) : x + y − z + d = 0 ; avec A(1, 0, 1), 1 + 0 − 1 + d = 0 donne d = 0, soit x + y − z = 0. Vérification sur B(2, 1, 3) : 2 + 1 − 3 = 0 ✓ et sur C(0, 2, 2) : 0 + 2 − 2 = 0 ✓. On y réinjecte D(3, m, 0) : 3 + m − 0 = 0, donc m = −3 ✓. Les deux méthodes donnent la même valeur. Le piège courant, et il est redoutable parce qu'il ne laisse aucune trace : se tromper de signe sur la deuxième coordonnée du produit vectoriel. En écrivant (a c′ − c a′) au lieu de (c a′ − a c′), on obtient (−3, 3, 3), donc −6 + 3m − 3 = 0 et m = 3 — le contrôle par les deux produits scalaires l'aurait attrapé, car (−3, 3, 3).AB⃗ = −3 + 3 + 6 = 6 ≠ 0. Le distracteur m = −2 exécute l'oubli du dernier terme du produit mixte (−6 − 3m = 0), c'est-à-dire une ligne du calcul sautée. Enfin m = 0 exécute la confusion la plus classique du chapitre, produit scalaire pris pour produit mixte : AB⃗.AD⃗ = 2 + m − 2 = m s'annule bien en 0, mais un produit scalaire nul signifie une ORTHOGONALITÉ, pas une coplanarité — et avec m = 0, D(3, 0, 0) donne 3 + 0 − 0 = 3 ≠ 0 dans l'équation du plan.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit D la droite passant par le point A(1, 2, −1) et de vecteur directeur u⃗(2, −1, 2), et soit M(2, 0, 3). Calculer la distance du point M à la droite D.",
+      "options": [
+        {
+          "id": "a",
+          "text": "3√5"
+        },
+        {
+          "id": "b",
+          "text": "√5/3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "√5"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La formule du cours est d(M, D) = ‖MA⃗∧u⃗‖ / ‖u⃗‖ — un produit VECTORIEL au numérateur, une norme au dénominateur. 1) MA⃗ = A − M = (−1, 2, −4). 2) MA⃗∧u⃗ = ((2)(2) − (−4)(−1) ; (−4)(2) − (−1)(2) ; (−1)(−1) − (2)(2)) = (0, −6, −3). Contrôle par deux produits scalaires nuls : (0, −6, −3).MA⃗ = 0 − 12 + 12 = 0 ✓ et (0, −6, −3).u⃗ = 0 + 6 − 6 = 0 ✓. 3) ‖(0, −6, −3)‖ = √(36 + 9) = √45 = 3√5 et ‖u⃗‖ = √(4 + 1 + 4) = 3, d'où d(M, D) = 3√5/3 = √5 ≈ 2,236 ✓. Contrôle par une seconde méthode, le projeté orthogonal, qui n'utilise aucun produit vectoriel. Un point courant de D s'écrit P = A + αu⃗ = (1 + 2α, 2 − α, −1 + 2α), donc MP⃗ = (−1 + 2α, 2 − α, −4 + 2α). On impose MP⃗.u⃗ = 0 : 2(−1 + 2α) − (2 − α) + 2(−4 + 2α) = 9α − 12 = 0, soit α = 4/3. Le pied est donc P(11/3, 2/3, 5/3), qui appartient bien à D par construction (α = 4/3), et MP⃗ = (5/3, 2/3, −4/3) vérifie MP⃗.u⃗ = 10/3 − 2/3 − 8/3 = 0 ✓. Sa norme vaut (1/3)√(25 + 4 + 16) = √45/3 = √5 ✓. Même résultat par deux chemins. Le piège courant : oublier de diviser par ‖u⃗‖ et livrer 3√5 ≈ 6,708 — or le numérateur est une AIRE (celle du parallélogramme bâti sur MA⃗ et u⃗), pas une longueur ; le quotient par la base ‖u⃗‖ est ce qui la transforme en hauteur. Le distracteur √5/3 exécute une division par ‖u⃗‖² = 9 : 3√5/9 = √5/3 ≈ 0,745, une valeur que le projeté réfute immédiatement. Enfin 4 exécute la confusion reine du chapitre, produit scalaire au lieu de produit vectoriel : |MA⃗.u⃗|/‖u⃗‖ = |−2 − 2 − 8|/3 = 12/3 = 4 ; mais MA⃗.u⃗ mesure une PROJECTION le long de la droite, pas un écart à la droite — c'est même la longueur AP, puisque α‖u⃗‖ = (4/3)(3) = 4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit S l'ensemble des points M(x, y, z) tels que x² + y² + z² − 4x + 2y − 6z − 11 = 0 et soit P le plan d'équation x + 2y + 2z + 3 = 0. Déterminer l'intersection de S et de P.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le cercle de centre (2, −1, 3) et de rayon 4"
+        },
+        {
+          "id": "b",
+          "text": "Le cercle de centre (1, −3, 1) et de rayon 4"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle de centre (1, −3, 1) et de rayon 3"
+        },
+        {
+          "id": "d",
+          "text": "Le cercle de centre (1, −3, 1) et de rayon √34"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Trois sous-résultats dépendants : réduire la sphère, mesurer h, puis construire le cercle. 1) On complète les trois carrés : x² − 4x = (x − 2)² − 4, y² + 2y = (y + 1)² − 1 et z² − 6z = (z − 3)² − 9. L'équation devient (x − 2)² + (y + 1)² + (z − 3)² − 14 − 11 = 0, soit (x − 2)² + (y + 1)² + (z − 3)² = 25 : S est la sphère de centre I(2, −1, 3) et de rayon R = 5. Contrôle : le point (2, −1, 8) doit être sur S, et 4 + 1 + 64 − 8 − 2 − 48 − 11 = 0 ✓ dans l'équation de départ. 2) h = d(I, P) = |2 + 2(−1) + 2(3) + 3| / √(1 + 4 + 4) = |2 − 2 + 6 + 3|/3 = 9/3 = 3. Comme h = 3 < 5 = R, l'intersection est un CERCLE ✓ (elle serait réduite à un point si h = R, vide si h > R). 3) Son rayon est r = √(R² − h²) = √(25 − 9) = 4, et son centre est le projeté orthogonal H de I sur P : H = I − t·n⃗ avec n⃗(1, 2, 2) et t = 9/9 = 1, soit H = (2 − 1, −1 − 2, 3 − 2) = (1, −3, 1) ✓. Contrôle en deux points : H appartient bien à P, car 1 + 2(−3) + 2(1) + 3 = 1 − 6 + 2 + 3 = 0 ✓, et IH = ‖(1, 2, 2)‖ = 3 = h ✓. Second contrôle, sur un point explicite du cercle : le vecteur (2, 1, −2) est orthogonal à n⃗ (2 + 2 − 4 = 0) et de norme 3, donc K = H + (4/3)(2, 1, −2) = (11/3, −5/3, −5/3) est à la distance 4 de H dans le plan P. On vérifie K dans P : 11/3 − 10/3 − 10/3 + 3 = 0 ✓, et K sur S : (5/3)² + (−2/3)² + (−14/3)² = (25 + 4 + 196)/9 = 25 = R² ✓. C'est le triangle rectangle IHK qui organise tout : IK² = IH² + HK², soit 25 = 9 + 16 ✓, ce qui redonne r = 4. Le piège courant : garder le centre de la SPHÈRE comme centre du cercle. Le centre de la section est le PROJETÉ du centre sur le plan, et I(2, −1, 3) n'est même pas dans P (2 − 2 + 6 + 3 = 9 ≠ 0) : un cercle de P ne peut pas avoir son centre hors de P. Le distracteur de rayon 3 confond r avec h — or h est la distance du centre au plan, mesurée perpendiculairement à P, tandis que r se lit DANS P. Enfin √34 exécute √(R² + h²) = √(25 + 9) au lieu de √(R² − h²) : c'est le théorème de Pythagore appliqué à l'envers, et il donnerait un cercle de section plus grand que la sphère elle-même (√34 ≈ 5,83 > 5), ce qui est géométriquement impossible.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On considère les droites D : { x = 1 + α ; y = 2 − α ; z = α }, α ∈ ℝ, et Δ : { x = 3 − 2β ; y = β ; z = 1 + β }, β ∈ ℝ. Déterminer leur position relative.",
+      "options": [
+        {
+          "id": "a",
+          "text": "D et Δ sont parallèles"
+        },
+        {
+          "id": "b",
+          "text": "D et Δ sont sécantes au point I(3, 0, 2)"
+        },
+        {
+          "id": "c",
+          "text": "D et Δ ne sont pas coplanaires"
+        },
+        {
+          "id": "d",
+          "text": "D et Δ sont sécantes au point I(3, 0, 1)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "1) Lecture : D passe par A(1, 2, 0) et a pour vecteur directeur u⃗(1, −1, 1) ; Δ passe par B(3, 0, 1) et a pour vecteur directeur v⃗(−2, 1, 1). 2) Parallélisme : u⃗ et v⃗ ne sont pas colinéaires, car 1/(−2) ≠ (−1)/1 — les droites ne sont donc PAS parallèles. 3) Coplanarité, le test du produit mixte : u⃗∧v⃗ = ((−1)(1) − (1)(1) ; (1)(−2) − (1)(1) ; (1)(1) − (−1)(−2)) = (−2, −3, −1). Contrôle par deux produits scalaires nuls : (−2, −3, −1).u⃗ = −2 + 3 − 1 = 0 ✓ et (−2, −3, −1).v⃗ = 4 − 3 − 1 = 0 ✓. Puis AB⃗ = (2, −2, 1) et det(AB⃗, u⃗, v⃗) = (u⃗∧v⃗).AB⃗ = −4 + 6 − 1 = 1 ≠ 0 : les droites ne sont PAS coplanaires ✓ — donc ni parallèles ni sécantes, une situation qui n'existe que dans l'espace. Contrôle par une seconde voie totalement indépendante, la résolution du système COMPLET. Les deux premières lignes, 1 + α = 3 − 2β et 2 − α = β, donnent α = 2 − β puis 2 − β + 2β = 2, soit β = 0 et α = 2. On reporte dans la TROISIÈME ligne : à gauche z = α = 2, à droite z = 1 + β = 1. Comme 2 ≠ 1, le système est incompatible ✓ : aucun point commun, ce qui confirme le produit mixte non nul. Le piège courant, et c'est le plus fréquent de tout le chapitre : s'arrêter aux deux premières équations, trouver un couple (α, β) et annoncer un point d'intersection. C'est exactement ce que fabriquent les deux distracteurs « sécantes » — I(3, 0, 2) est le point de D obtenu pour α = 2, I(3, 0, 1) est le point de Δ obtenu pour β = 0, et ils sont DIFFÉRENTS : les deux droites passent au-dessus l'une de l'autre à une distance verticale de 1. Dans l'espace, « non parallèles » n'entraîne jamais « sécantes » ; il faut résoudre les trois lignes et vérifier la compatibilité de la troisième. Quant au parallélisme, il est réfuté d'un coup d'œil par les directeurs : aucun réel λ ne vérifie à la fois 1 = −2λ et −1 = λ.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Calculer dans l'espace — produits, aires et équations",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Que vaut le produit scalaire u⃗.v⃗ pour u⃗(2, −1, 4) et v⃗(3, 5, 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "15"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En repère orthonormé, le cours donne u⃗.v⃗ = xx′ + yy′ + zz′, donc u⃗.v⃗ = 2(3) + (−1)(5) + 4(1) = 6 − 5 + 4 = 5 ✓. Le résultat est un RÉEL : c'est le produit vectoriel, et lui seul, qui rend un vecteur. L'option 15 additionne les trois produits en valeur absolue, 6 + 5 + 4, et perd le signe de la deuxième coordonnée de u⃗. L'option −3 ajoute une seconde faute de signe, 6 − 5 − 4. L'option 1 s'arrête à 6 − 5 : c'est le réflexe du plan, où il n'y a que deux coordonnées, alors que dans l'espace le troisième terme 4(1) compte lui aussi.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé. Que vaut la distance AB pour A(1, 2, −1) et B(4, −2, 11) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "11"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        },
+        {
+          "id": "d",
+          "text": "169"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le cours donne MM′ = √((x − x′)² + (y − y′)² + (z − z′)²). Ici AB⃗ = B − A = (3, −4, 12), donc AB = √(3² + (−4)² + 12²) = √(9 + 16 + 144) = √169 = 13 ✓. L'option 169 s'arrête à la somme des carrés et oublie la racine. L'option 5 ne garde que les deux premières coordonnées, √(9 + 16) : c'est une distance dans un plan, pas dans l'espace. L'option 11 additionne les coordonnées de AB⃗ telles quelles, 3 − 4 + 12, alors que la formule les élève d'abord au carré — ce qui fait justement disparaître le signe moins.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct. On donne A(1, 2, 0), B(2, 0, 1) et C(0, 1, 3). Que vaut AB⃗∧AC⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−5, −4, −3)"
+        },
+        {
+          "id": "b",
+          "text": "(−5, −4, 3)"
+        },
+        {
+          "id": "c",
+          "text": "(−5, 4, −3)"
+        },
+        {
+          "id": "d",
+          "text": "(5, 4, 3)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On lit d'abord les deux vecteurs par différence de coordonnées : AB⃗ = (1, −2, 1) et AC⃗ = (−1, −1, 3). La formule du cours donne AB⃗∧AC⃗ = (bc′ − cb′ ; ca′ − ac′ ; ab′ − ba′) : première coordonnée (−2)(3) − (1)(−1) = −6 + 1 = −5, deuxième (1)(−1) − (1)(3) = −1 − 3 = −4, troisième (1)(−1) − (−2)(−1) = −1 − 2 = −3, soit (−5, −4, −3) ✓. Contrôle obligatoire par deux produits scalaires nuls : (−5, −4, −3).AB⃗ = −5 + 8 − 3 = 0 ✓ et (−5, −4, −3).AC⃗ = 5 + 4 − 9 = 0 ✓. L'option (5, 4, 3) est AC⃗∧AB⃗, l'opposé du résultat cherché : le produit vectoriel n'est pas commutatif. L'option (−5, 4, −3) calcule la deuxième coordonnée « à l'endroit », ac′ − ca′ = 3 + 1 = 4, alors que c'est la seule ligne du tableau qui s'écrit à l'envers. L'option (−5, −4, 3) inverse de même l'ordre sur la troisième, ba′ − ab′ = 2 + 1 = 3.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct. ABCD est un parallélogramme avec A(1, 0, 2), B(2, 0, 3), C(3, 2, 3) et D(2, 2, 2). Quelle est son aire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "√10"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le cours donne l'aire du parallélogramme ABCD sous la forme ‖AB⃗∧AD⃗‖. Ici AB⃗ = (1, 0, 1) et AD⃗ = (1, 2, 0), donc AB⃗∧AD⃗ = (0(0) − 1(2) ; 1(1) − 1(0) ; 1(2) − 0(1)) = (−2, 1, 2). Contrôle par deux produits scalaires nuls : (−2, 1, 2).AB⃗ = −2 + 0 + 2 = 0 ✓ et (−2, 1, 2).AD⃗ = −2 + 2 + 0 = 0 ✓. L'aire vaut donc √(4 + 1 + 4) = √9 = 3 ✓. L'option 3/2 applique la formule du triangle, la moitié de cette norme, alors que la figure est le parallélogramme entier. L'option 9 oublie la racine et rend le carré de la norme. L'option √10 multiplie simplement les longueurs des deux côtés, ‖AB⃗‖·‖AD⃗‖ = √2·√5 : cette formule ne vaudrait que si l'angle en A était droit, or AB⃗.AD⃗ = 1 + 0 + 0 = 1 ≠ 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct. Quelle est une équation cartésienne du plan (ABC) avec A(0, 0, −3), B(1, −1, −3) et C(−1, 2, −4) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x − y = 0"
+        },
+        {
+          "id": "b",
+          "text": "x + y + z − 3 = 0"
+        },
+        {
+          "id": "c",
+          "text": "x + y + z = 0"
+        },
+        {
+          "id": "d",
+          "text": "x + y + z + 3 = 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les vecteurs AB⃗ = (1, −1, 0) et AC⃗ = (−1, 2, −1) ne sont pas colinéaires : leur produit vectoriel fournit un vecteur normal au plan. AB⃗∧AC⃗ = ((−1)(−1) − (0)(2) ; (0)(−1) − (1)(−1) ; (1)(2) − (−1)(−1)) = (1, 1, 1). Contrôle par deux produits scalaires nuls : (1, 1, 1).AB⃗ = 1 − 1 + 0 = 0 ✓ et (1, 1, 1).AC⃗ = −1 + 2 − 1 = 0 ✓. L'équation est donc x + y + z + d = 0 ; en y injectant A(0, 0, −3) : 0 + 0 − 3 + d = 0, soit d = 3 et le plan x + y + z + 3 = 0 ✓. Contrôle sur les deux autres points : B donne 1 − 1 − 3 + 3 = 0 ✓ et C donne −1 + 2 − 4 + 3 = 0 ✓. L'option x + y + z − 3 = 0 prend pour d la valeur −3 lue sur A au lieu de son opposé. L'option x + y + z = 0 oublie le terme constant : ce plan passe par l'origine, où A ne se trouve pas. L'option x − y = 0 prend AB⃗ pour vecteur normal alors que c'est un vecteur DIRECTEUR du plan ; elle contient bien A, mais pas B, car 1 − (−1) = 2 ≠ 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé. On considère la droite D : { x = 2 + α ; y = 1 − 2α ; z = 3α }, α ∈ ℝ. Lequel de ces points appartient à D ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1, −2, 3)"
+        },
+        {
+          "id": "b",
+          "text": "(3, −1, 3)"
+        },
+        {
+          "id": "c",
+          "text": "(3, 3, 3)"
+        },
+        {
+          "id": "d",
+          "text": "(5, −3, 3)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un point appartient à D s'il existe un SEUL réel α qui satisfait les trois lignes en même temps. Pour (3, −1, 3) : la première ligne donne 2 + α = 3, donc α = 1 ; on reporte cette valeur dans les deux autres, y = 1 − 2(1) = −1 ✓ et z = 3(1) = 3 ✓. Le point (3, −1, 3) est donc bien sur D ✓. L'option (1, −2, 3) recopie le vecteur directeur u⃗(1, −2, 3), lu sur les coefficients de α : ces trois nombres donnent une DIRECTION, pas un point de la droite — avec x = 1 on aurait α = −1, donc y = 3 et non −2. L'option (3, 3, 3) change le signe du terme en α de la deuxième ligne, comme si elle s'écrivait y = 1 + 2α. L'option (5, −3, 3) utilise un α différent par ligne (α = 3 pour x, α = 2 pour y, α = 1 pour z), alors que la droite est parcourue par un seul paramètre.",
+      "difficulty": 2
+    }
+  ]
+}

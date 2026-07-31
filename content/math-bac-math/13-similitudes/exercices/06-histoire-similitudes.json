@@ -1,0 +1,140 @@
+{
+  "title": "🌀 Histoire ⭐⭐⭐ : La Cité aux Sept Échelles",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 6,
+  "questions": [
+    {
+      "prompt": "Épisode 1 — La Cité aux Sept Échelles ne connaît pas deux bâtiments de tailles égales : tout y est copie agrandie ou réduite d'autre chose. À la Loge des Bâtisseurs, le Maître d'Œuvre te montre son pantographe, la machine à recopier les plans. « Réglé sur 3, il multiplie toutes les longueurs par 3, et il ne fait pas tourner le dessin. Mais mon apprenti a posé la feuille à l'envers, face contre verre : le tracé est ressorti retourné comme dans un miroir. » Le plan est orienté dans le sens direct. Que peux-tu affirmer de la transformation f réellement subie par le dessin ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est une similitude INDIRECTE de rapport 3 : elle conserve les angles géométriques, change les angles orientés en leurs opposées, et multiplie les aires par 9"
+        },
+        {
+          "id": "b",
+          "text": "f est une similitude DIRECTE de rapport 3 : le retournement n'affecte pas les angles orientés"
+        },
+        {
+          "id": "c",
+          "text": "f est une similitude INDIRECTE de rapport 9 : le retournement double l'effet du réglage"
+        },
+        {
+          "id": "d",
+          "text": "f n'est pas une similitude : un retournement ne conserve pas les rapports de longueurs"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Décomposons la machine, comme le cours l'exige : toute similitude est « une isométrie, puis un zoom ». Le zoom, c'est le réglage 3 — une homothétie de rapport 3, qui multiplie les longueurs par 3. Le retournement, c'est une symétrie orthogonale, donc un ANTIDÉPLACEMENT. Or la définition du chapitre est sans ambiguïté : une similitude composée d'une homothétie et d'un antidéplacement est une similitude INDIRECTE ✓. Son rapport est celui du zoom, k = 3 ✓, puisque la symétrie, isométrie, laisse les longueurs intactes : le rapport d'une composée est le produit des rapports, ici 3 × 1 = 3. Effets, un par un. Les angles GÉOMÉTRIQUES sont conservés : c'est une propriété de TOUTE similitude, directe ou non — un angle droit reste droit, un triangle reste semblable à lui-même. Les angles ORIENTÉS, eux, sont changés en leurs opposées : c'est exactement la conséquence du cours pour une similitude indirecte, et c'est ce que l'œil appelle « retourné comme dans un miroir » ✓. Les aires enfin sont multipliées par k² = 3² = 9 ✓ : le produit scalaire vérifie A′B′⃗·C′D′⃗ = k²·AB⃗·CD⃗, et les aires suivent le carré du rapport, jamais le rapport lui-même. Contrôle chiffré : un plan rectangulaire de 20 cm sur 15 cm, d'aire 300 cm², ressort en 60 cm sur 45 cm, d'aire 2 700 cm² = 300 × 9 ✓, retourné mais toujours rectangulaire — angles droits intacts. « Directe de rapport 3 » ignore le retournement, alors que c'est précisément lui qui décide de la nature : le rapport ne dit RIEN du sens. Deux copies, l'une directe l'autre indirecte, de même rapport 3, ont exactement les mêmes dimensions ; seul le signe d'un angle orienté les distingue. « Indirecte de rapport 9 » confond le rapport et son carré : 9 est le coefficient des AIRES, jamais celui des longueurs, et le retournement — une isométrie — ne change aucune longueur. « f n'est pas une similitude » se trompe de définition : une similitude de rapport k est caractérisée par A′B′ = k·AB pour tous points A et B, et c'est bien ce que fait la machine, retournée ou non. Le miroir de la salle de bain est une isométrie, donc une similitude de rapport 1 : il retourne sans rien déformer.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Épisode 2 — Le Bassin des Reflets. Au centre de la Cité, un bassin rectangulaire renvoie aux passants une image agrandie de ce qui le surplombe. Le Gardien du Bassin te l'explique : « Chaque nuit, le bassin applique au plan une même transformation f. C'est une similitude INDIRECTE, de rapport 3, dont le centre est le point I au milieu de la margelle ; son axe est la droite D qui traverse le bassin dans sa longueur. » Puis il ajoute : « Cette nuit, la lune est double : le bassin appliquera f DEUX fois de suite. » Quelle est la nature, et quels sont les éléments caractéristiques de f∘f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f∘f est l'homothétie de centre I et de rapport 9"
+        },
+        {
+          "id": "b",
+          "text": "f∘f est la similitude indirecte de centre I, de rapport 9 et d'axe D"
+        },
+        {
+          "id": "c",
+          "text": "f∘f est la similitude directe de centre I, de rapport 9 et d'angle π"
+        },
+        {
+          "id": "d",
+          "text": "f∘f est la similitude indirecte de centre I, de rapport 6 et d'axe D"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Trois questions dans l'ordre : la nature, le rapport, les éléments. LA NATURE, par la règle des signes. f est indirecte, donc de signe −1 ; la nature d'une composée est le produit des signes, ici (−1) × (−1) = +1 : f∘f est une similitude DIRECTE ✓. Cela élimine d'emblée toute réponse « indirecte ». LE RAPPORT : les rapports se multiplient, donc 3 × 3 = 9 ✓ — et non 3 + 3 = 6, un rapport ne s'additionne jamais. LES ÉLÉMENTS. Le cours donne le résultat tout fait : si f est une similitude indirecte de centre I et de rapport k, alors f∘f est l'HOMOTHÉTIE de centre I et de rapport k². Ici f∘f = h(I, 9) ✓. Démonstration en une ligne, avec la forme réduite f = h(I, 3)∘S_D = S_D∘h(I, 3) : f∘f = h(I, 3)∘S_D∘S_D∘h(I, 3) = h(I, 3)∘h(I, 3), puisque S_D∘S_D = Id (une symétrie orthogonale est involutive) ; et la composée de deux homothéties de même centre et de rapports 3 et 3 est l'homothétie de centre I et de rapport 9 ✓. Contrôle par l'écriture complexe, entièrement indépendant : plaçons I à l'origine, f s'écrit z′ = a·z̄ avec |a| = 3. Alors f∘f(z) = a·conj(a·z̄) = a·ā·z = |a|²·z = 9z — c'est bien z′ = 9z, coefficient RÉEL, donc l'homothétie de centre I (le point fixe, ici l'origine) et de rapport 9 ✓. Contrôle concret sur le bassin : un objet posé à 2 m de I ressort à 6 m de I après une nuit, du côté renvoyé par l'axe ; après deux nuits il est à 18 m = 9 × 2 ✓, et du MÊME côté qu'au départ, puisqu'on l'a retourné deux fois. « Indirecte de rapport 9 et d'axe D » garde la nature du facteur : c'est l'erreur de méthode majeure du chapitre, composer ne conserve pas les caractéristiques des facteurs. Elle contredit d'ailleurs la règle des signes, indirecte ∘ indirecte = directe. « Directe de rapport 9 et d'angle π » a raison sur la nature et le rapport, mais se trompe d'angle : l'homothétie obtenue a un rapport POSITIF (9), donc un angle NUL — les points s'éloignent de I sans changer de demi-droite. Un angle π correspondrait à un rapport −9, c'est-à-dire à un demi-tour supplémentaire, ce que deux retournements successifs n'introduisent pas. « Rapport 6 » additionne les rapports au lieu de les multiplier.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Épisode 3 — L'Escalier de la Tour du Guet. L'escalier monte en colimaçon : chaque marche est l'image de la précédente par une seule et même similitude directe s, de centre Ω (l'axe de la tour), de rapport 0,8 et d'angle π/6. La première marche mesure 250 cm de long. Le Guetteur te demande la longueur de la QUATRIÈME marche, en centimètres (valeur exacte).",
+      "answerKey": {
+        "value": 128,
+        "unit": "cm"
+      },
+      "explanation": "Il faut compter les APPLICATIONS de s, pas les marches. La marche 2 est l'image de la marche 1 : une application. La marche 3 : deux applications. La marche 4 : TROIS applications. Or une similitude de rapport k multiplie les longueurs par k, donc composer s trois fois multiplie les longueurs par k³ — le cours le dit sous une autre forme : la composée de similitudes de rapports k et k′ est de rapport kk′, donc s∘s∘s est une similitude de rapport 0,8³. Calcul : 0,8² = 0,64, puis 0,8³ = 0,64 × 0,8 = 0,512. Longueur de la quatrième marche = 250 × 0,512 = 128 cm ✓. CONTRÔLE en descendant l'escalier marche par marche, ce qui ne coûte rien et sécurise tout : marche 1 = 250 cm ; marche 2 = 250 × 0,8 = 200 cm ; marche 3 = 200 × 0,8 = 160 cm ; marche 4 = 160 × 0,8 = 128 cm ✓. Les deux voies concordent. Contrôle de cohérence sur les autres éléments : après trois applications, l'escalier a tourné de 3 × π/6 = π/2, un quart de tour — les angles s'AJOUTENT quand les rapports se multiplient — et l'aire de la quatrième marche vaut (0,8³)² = 0,512² = 0,262144 fois celle de la première, puisque les aires suivent le carré du rapport. Trois erreurs à écarter. Répondre 160 revient à ne compter que DEUX applications (250 × 0,8² = 160) : c'est confondre le numéro de la marche avec le nombre de pas de la suite ; la marche n s'obtient après n − 1 applications. Répondre 200 n'en compte qu'une seule. Répondre 150 revient à retrancher 20 % de 250 puis à additionner les réductions au lieu de les composer : une similitude MULTIPLIE, elle ne soustrait pas un pourcentage fixe à chaque étape.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 4 — La Chambre des Maquettes. Un apprenti géomètre présente son calcul au Maître d'Œuvre, qui te charge de le relire avant de le valider. Voici sa copie, en quatre étapes : ① « Le parvis est un rectangle de 12 m sur 9 m ; son aire vaut donc 12 × 9 = 108 m². » ② « La maquette est l'image du parvis par une similitude de rapport k = 1/3. » ③ « Les dimensions de la maquette valent donc 12 × 1/3 = 4 m et 9 × 1/3 = 3 m. » ④ « L'aire de la maquette vaut donc 108 × 1/3 = 36 m². » À quelle étape l'erreur se cache-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À l'étape ④ : l'aire est multipliée par k², donc par 1/9, ce qui donne 12 m² et non 36 m²"
+        },
+        {
+          "id": "b",
+          "text": "À l'étape ③ : les longueurs sont elles aussi multipliées par k², donc la maquette mesure 12/9 m sur 9/9 m"
+        },
+        {
+          "id": "c",
+          "text": "À l'étape ② : le rapport d'une réduction est négatif, il vaut −1/3"
+        },
+        {
+          "id": "d",
+          "text": "À l'étape ① : l'aire d'un rectangle image ne se calcule pas avant d'avoir appliqué la similitude"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'erreur est à l'étape ④, et le résultat final annoncé — 36 m² — est FAUX. Reprenons la copie ligne à ligne. ① est juste : un rectangle de 12 m sur 9 m a bien pour aire 108 m². ② est juste et licite : le rapport d'une similitude est un réel STRICTEMENT POSITIF par définition, et 1/3 en est un — c'est une réduction au tiers. ③ est juste : les LONGUEURS sont multipliées par k, donc 12/3 = 4 m et 9/3 = 3 m ✓. ④ est fausse : les AIRES sont multipliées par k², pas par k. On a k² = (1/3)² = 1/9, donc l'aire de la maquette vaut 108 × 1/9 = 12 m². ÉTAPE CORRIGÉE : « ④ L'aire de la maquette vaut 108 × (1/3)² = 108/9 = 12 m². » Le plus beau, c'est que la copie se contredit toute seule : l'étape ③, exacte, donne une maquette de 4 m sur 3 m, dont l'aire vaut 4 × 3 = 12 m² ✓ — exactement la valeur corrigée, et non 36. Relire une copie, c'est d'abord vérifier que ses lignes s'accordent entre elles ; ici la ligne ④ contredit la ligne ③, ce qui suffisait à localiser la faute sans même connaître le théorème. Contrôle par le théorème du cours : le produit scalaire vérifie A′B′⃗·C′D′⃗ = k²·AB⃗·CD⃗, et c'est de là que découle « les aires sont multipliées par k² ». Avec k = 1/3, une aire est divisée par 9, pas par 3. L'erreur signalée à l'étape ③ inverserait exactement le problème : les longueurs suivent k, les aires suivent k². Prétendre que les longueurs suivent k² reviendrait à obtenir une maquette de 12/9 ≈ 1,33 m sur 1 m, dont l'aire vaudrait 1,33 m², incompatible avec toute lecture du plan. L'erreur signalée à l'étape ② méconnaît la définition : « Soit k un réel strictement positif. On appelle similitude de rapport k… » — un rapport de similitude n'est JAMAIS négatif. Seul le rapport d'une HOMOTHÉTIE peut l'être, et l'homothétie de rapport −1/3 est alors une similitude de rapport |−1/3| = 1/3. L'erreur signalée à l'étape ① est un faux procès : calculer l'aire du parvis AVANT la transformation est même la seule façon de procéder, puisque c'est cette aire que la similitude va multiplier par k².",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 5 — Les Trois Bannières du Rempart. Sur le chemin de ronde, trois bannières triangulaires sont plantées dans un repère orthonormé direct (plan orienté dans le sens direct). Le Héraut t'explique : « La bannière F₁ est l'image de F₀ par une similitude directe s de centre Ω, et F₂ est l'image de F₁ par cette MÊME similitude s. » Le Maître d'Œuvre veut savoir ce qui envoie F₀ directement sur F₂. Identifie cette transformation. <svg viewBox=\"0 0 300 215\"><g stroke=\"#e2e8f0\" stroke-width=\"1\" fill=\"none\"><path d=\"M45 15 V195 M65 15 V195 M85 15 V195 M105 15 V195 M125 15 V195 M145 15 V195 M165 15 V195 M185 15 V195 M205 15 V195 M225 15 V195 M245 15 V195 M265 15 V195 M285 15 V195 M25 175 H285 M25 155 H285 M25 135 H285 M25 115 H285 M25 95 H285 M25 75 H285 M25 55 H285 M25 35 H285 M25 15 H285\"/></g><path d=\"M12 195 H295\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M295 195 l-8 -4 l0 8 z\" fill=\"#0f172a\"/><path d=\"M25 210 V8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M25 8 l-4 8 l8 0 z\" fill=\"#0f172a\"/><path d=\"M265 195 L265 115 L185 195 Z\" fill=\"#0f172a\" opacity=\"0.10\"/><path d=\"M265 195 L265 115 L185 195 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M145 35 L105 35 L145 75 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M145 35 L105 35 L145 75 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M65 95 L65 115 L85 95 Z\" fill=\"#b45309\" opacity=\"0.14\"/><path d=\"M65 95 L65 115 L85 95 Z\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><circle cx=\"105\" cy=\"115\" r=\"5\" fill=\"#0f172a\"/><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"272\" y=\"209\" fill=\"#0f172a\">P₀</text><text x=\"272\" y=\"112\" fill=\"#0f172a\">Q₀</text><text x=\"179\" y=\"209\" text-anchor=\"end\" fill=\"#0f172a\">R₀</text><text x=\"152\" y=\"32\" fill=\"#0f6e56\">P₁</text><text x=\"99\" y=\"32\" text-anchor=\"end\" fill=\"#0f6e56\">Q₁</text><text x=\"152\" y=\"82\" fill=\"#0f6e56\">R₁</text><text x=\"58\" y=\"92\" text-anchor=\"end\" fill=\"#b45309\">P₂</text><text x=\"58\" y=\"126\" text-anchor=\"end\" fill=\"#b45309\">Q₂</text><text x=\"92\" y=\"92\" fill=\"#b45309\">R₂</text><text x=\"113\" y=\"130\" fill=\"#0f172a\">Ω</text><text x=\"19\" y=\"209\" text-anchor=\"end\" fill=\"#0f172a\">O</text><text x=\"45\" y=\"209\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"19\" y=\"180\" text-anchor=\"end\" fill=\"#0f172a\">1</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'homothétie de centre Ω et de rapport −1/4, c'est-à-dire la similitude directe de centre Ω, de rapport 1/4 et d'angle π"
+        },
+        {
+          "id": "b",
+          "text": "La similitude directe de centre Ω, de rapport 1/4 et d'angle π/2"
+        },
+        {
+          "id": "c",
+          "text": "L'homothétie de centre Ω et de rapport 1/4 (angle nul)"
+        },
+        {
+          "id": "d",
+          "text": "La similitude directe de centre Ω, de rapport 1/2 et d'angle π"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On lit d'abord les coordonnées sur le quadrillage. F₀ : P₀(12 ; 0), Q₀(12 ; 4), R₀(8 ; 0). F₁ : P₁(6 ; 8), Q₁(4 ; 8), R₁(6 ; 6). F₂ : P₂(2 ; 5), Q₂(2 ; 4), R₂(3 ; 5). Et Ω(4 ; 4). ÉTAPE 1 — identifier s, de F₀ vers F₁. Rapport : P₀Q₀⃗ = (0 ; 4) donc P₀Q₀ = 4, et P₁Q₁⃗ = (−2 ; 0) donc P₁Q₁ = 2 : le rapport vaut 2/4 = 1/2. Contrôle sur le second côté : P₀R₀⃗ = (−4 ; 0) donne 4, et P₁R₁⃗ = (0 ; −2) donne 2 ✓, encore 1/2. Angle : (P₀Q₀⃗ ; P₁Q₁⃗) = ((0 ; 4) ; (−2 ; 0)) ≡ π − π/2 ≡ π/2 [2π] ; contrôle avec l'autre couple, (P₀R₀⃗ ; P₁R₁⃗) = ((−4 ; 0) ; (0 ; −2)) ≡ −π/2 − π ≡ π/2 [2π] ✓, la même mesure. Donc s est la similitude directe de centre Ω, de rapport 1/2 et d'angle π/2. ÉTAPE 2 — composer. Le cours donne les deux lois : les rapports se MULTIPLIENT et les angles s'AJOUTENT. Donc s∘s a pour rapport (1/2) × (1/2) = 1/4 et pour angle π/2 + π/2 = π ✓. Son centre reste Ω, car Ω est fixe par s donc par s∘s, et une similitude directe de rapport 1/4 ≠ 1 n'a qu'un seul point fixe. Une similitude directe d'angle π et de rapport 1/4 est exactement l'HOMOTHÉTIE de centre Ω et de rapport −1/4 : en complexes son coefficient vaut a = (1/4)e^(iπ) = −1/4, un réel, et le cours range précisément « a réel » sous l'étiquette homothétie ✓. ÉTAPE 3 — vérification directe sur la figure, sans passer par s. P₀Q₀⃗ = (0 ; 4) et P₂Q₂⃗ = (0 ; −1) : le rapport vaut 1/4 ✓ et le vecteur a été retourné, donc l'angle vaut π ✓. Second contrôle : P₀R₀⃗ = (−4 ; 0) et P₂R₂⃗ = (1 ; 0), toujours un rapport 1/4 et un demi-tour ✓. Troisième contrôle, le centre : ΩP₀⃗ = (12 − 4 ; 0 − 4) = (8 ; −4) et ΩP₂⃗ = (2 − 4 ; 5 − 4) = (−2 ; 1) = (−1/4)·(8 ; −4) ✓ — la relation ΩM′⃗ = −(1/4)·ΩM⃗ est bien celle d'une homothétie de rapport −1/4, et elle se vérifie encore sur Q : ΩQ₀⃗ = (8 ; 0) et ΩQ₂⃗ = (−2 ; 0) ✓. L'angle π/2 est celui d'UNE application de s, pas de deux : c'est l'erreur de qui identifie s puis oublie de composer. Elle est démentie par la figure — un quart de tour enverrait le vecteur vertical P₀Q₀⃗ sur un vecteur horizontal, alors que P₂Q₂⃗ est vertical. « Homothétie de rapport 1/4 » a le bon module mais oublie le demi-tour : avec un rapport POSITIF, ΩP₂⃗ serait dans le même sens que ΩP₀⃗, c'est-à-dire (2 ; −1) et non (−2 ; 1) ; le point P₂ tomberait de l'autre côté de Ω. Le rapport 1/2 avec l'angle π mélange les deux lois : il additionne bien les angles mais oublie de multiplier les rapports une seconde fois. Un rapport 1/2 donnerait P₂Q₂ = 2, alors que la figure affiche 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 6 — La Salle des Sceaux. Dernière porte. Le Maître d'Œuvre pose deux sceaux sur la table. « Voici f, la transformation du pantographe retourné : une similitude INDIRECTE de rapport 3. Et voici g, une similitude DIRECTE de rapport 1/3. Applique f, puis g. Dis-moi ce qu'est g∘f — et la Cité est à toi. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "g∘f est une similitude de rapport 1 qui renverse l'orientation : c'est un ANTIDÉPLACEMENT — une symétrie orthogonale ou une symétrie glissante, selon qu'elle a ou non des points fixes"
+        },
+        {
+          "id": "b",
+          "text": "g∘f est une similitude indirecte de rapport 1, et elle admet donc un unique point fixe, son centre"
+        },
+        {
+          "id": "c",
+          "text": "g∘f est un déplacement : les deux rapports se compensent, donc les orientations aussi"
+        },
+        {
+          "id": "d",
+          "text": "g∘f est l'identité, puisque son rapport vaut 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux calculs, et la porte s'ouvre. LE RAPPORT : les rapports d'une composée se multiplient, donc 3 × (1/3) = 1 ✓. LA NATURE, par la règle des signes : f est indirecte (−1), g est directe (+1), et le produit vaut (−1) × (+1) = −1, donc g∘f est INDIRECTE ✓ — elle change les mesures des angles orientés en leurs opposées. Reste à nommer l'objet obtenu, et c'est là que le chapitre renvoie au précédent : une similitude de rapport 1 est, par définition même (A′B′ = 1 × AB pour tous A et B), une ISOMÉTRIE. Une isométrie qui renverse l'orientation est un ANTIDÉPLACEMENT ✓, et le chapitre 12 n'en connaît que deux espèces : la symétrie orthogonale, qui fixe toute une droite, et la symétrie glissante, qui ne fixe aucun point. C'est l'étape 3 de la méthode d'identification : « si k = 1, retour aux chapitres 11 et 12 ». Contrôle par l'écriture complexe, décisif : f s'écrit z′ = a·z̄ + b avec |a| = 3, et g s'écrit z′ = c·z + d avec |c| = 1/3. Alors g∘f(z) = c(a·z̄ + b) + d = (ca)·z̄ + (cb + d). Le coefficient de z̄ vaut ca, de module |c|·|a| = (1/3) × 3 = 1 ✓, et la barre de conjugaison a survécu : on est exactement dans le cas z′ = a′z̄ + b′ avec |a′| = 1, dont le cours dit qu'il s'agit d'un antidéplacement — symétrie orthogonale ou symétrie glissante — et NON d'une similitude indirecte à centre. Exemple entièrement chiffré, pour ne rien laisser au doute : f : z ↦ 3z̄ et g : z ↦ z/3 donnent g∘f : z ↦ z̄, qui est la symétrie orthogonale d'axe l'axe des abscisses ✓ ; en changeant g en z ↦ (z + 3)/3, on obtient g∘f : z ↦ z̄ + 1, une symétrie glissante d'axe l'axe des abscisses et de vecteur (1 ; 0), sans aucun point fixe ✓ — les deux espèces sont bien atteignables, ce que dit exactement la bonne réponse. « Similitude indirecte de rapport 1 admettant un unique point fixe » est le piège central, et il est explicitement désamorcé par le cours : le théorème d'existence du centre suppose un rapport DIFFÉRENT de 1, et la formule z_I = (a·b̄ + b)/(1 − |a|²) se divise par 1 − 1 = 0 dès que |a| = 1. Une symétrie orthogonale fixe une droite entière, une symétrie glissante ne fixe rien : dans les deux cas, « un unique point fixe » est faux. « Un déplacement » applique la règle des signes à l'envers : il faudrait DEUX similitudes indirectes pour rétablir l'orientation, puisque (−1) × (−1) = +1 ; une directe composée avec une indirecte reste indirecte. Le rapport 1 ne dit rien du sens — il dit seulement que les longueurs sont conservées. « L'identité » confond conserver les longueurs et ne rien faire : toutes les isométries ont un rapport 1, et l'immense majorité d'entre elles déplacent les points. Une symétrie orthogonale a bien un rapport 1 et n'est pas l'identité.",
+      "difficulty": 3
+    }
+  ]
+}

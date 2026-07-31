@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Coniques",
+  "questions": [
+    {
+      "prompt": "Soit D une droite, F un point n'appartenant pas à D et e un réel strictement positif. Pour un point M du plan, on note H son projeté orthogonal sur D. Quelle égalité caractérise les points M de la conique de foyer F, de directrice D et d'excentricité e ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "MF = MH"
+        },
+        {
+          "id": "b",
+          "text": "MH = e·MF"
+        },
+        {
+          "id": "c",
+          "text": "MF + MH = e"
+        },
+        {
+          "id": "d",
+          "text": "MF = e·MH"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "C'est mot pour mot la définition générale du cours : la conique est l'ensemble des points M tels que MF = e·MH ✓. Un seul nombre, e, gouverne toute la famille. L'option a est le cas particulier e = 1, celui de la parabole : elle n'est vraie que pour cette valeur-là. L'option b inverse le rapport ; elle décrirait une conique d'excentricité 1/e, donc une ellipse là où on attend une hyperbole et réciproquement. L'option c remplace un rapport de longueurs par une somme : l'excentricité est un quotient sans unité, pas une longueur, et une somme de distances ne peut pas être égale à un nombre sans dimension.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une conique a pour excentricité e = 3/2. De quelle courbe s'agit-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "un cercle"
+        },
+        {
+          "id": "b",
+          "text": "une ellipse"
+        },
+        {
+          "id": "c",
+          "text": "une parabole"
+        },
+        {
+          "id": "d",
+          "text": "une hyperbole"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le cours range les trois genres selon la seule valeur de e : e = 1 donne une parabole, e > 1 une hyperbole, 0 < e < 1 une ellipse. Ici e = 3/2 = 1,5 > 1, donc la conique est une hyperbole ✓. L'option b demanderait e < 1, l'option c exactement e = 1. L'option a est hors classification : le cercle n'est pas obtenu par la définition foyer-directrice, qui suppose justement un foyer, une directrice et un rapport.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit 𝒫 la parabole d'équation y² = 10x. Que vaut son paramètre p ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,5"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "20"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'équation réduite s'écrit y² = 2px : on identifie 2p = 10, donc p = 5 ✓. Contrôle par la définition : le foyer est F(p/2, 0) = F(2,5 ; 0) et la directrice x = −2,5. Le point de 𝒫 d'abscisse 2,5 vérifie y² = 25, soit M(2,5 ; 5) ; alors MF = √(0 + 25) = 5 et MH = |2,5 + 2,5| = 5, donc MF = MH ✓. L'option c lit le paramètre directement sur le coefficient de x, en oubliant le facteur 2. L'option a donne p/2, c'est-à-dire la distance du sommet au foyer, et non la distance foyer-directrice. L'option d double le coefficient au lieu de le diviser par 2.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit 𝒫 la parabole d'équation y² = 12x. Quels sont son foyer et sa directrice ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(−3, 0) et D : x = 3"
+        },
+        {
+          "id": "b",
+          "text": "F(0, 3) et D : y = −3"
+        },
+        {
+          "id": "c",
+          "text": "F(3, 0) et D : x = −3"
+        },
+        {
+          "id": "d",
+          "text": "F(6, 0) et D : x = −6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "De y² = 2px on tire 2p = 12, donc p = 6 ; le cours donne alors F(p/2, 0) = F(3, 0) et D : x = −p/2, soit x = −3 ✓. Contrôle par la définition : le point de 𝒫 d'abscisse 3 vérifie y² = 36, soit M(3, 6) ; MF = √(0 + 36) = 6 et MH = |3 − (−3)| = 6, donc MF = MH ✓. L'option d prend p à la place de p/2 pour l'abscisse du foyer. L'option a place le foyer du mauvais côté : dans y² = 2px avec p > 0, la parabole s'ouvre vers les x positifs, donc le foyer aussi. L'option b échange les rôles de x et de y, ce qui correspondrait à l'équation x² = 12y.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit ℋ l'hyperbole d'équation x²/16 − y²/9 = 1. Que vaut c, la distance du centre à chacun de ses foyers ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "√7"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "25"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour une hyperbole, c'est c qui est le plus grand : b² = c² − a², donc c² = a² + b² = 16 + 9 = 25 et c = 5 ✓. Contrôle par la définition, avec e = c/a = 5/4 et la directrice x = a²/c = 16/5 = 3,2 : le point de ℋ d'abscisse 5 vérifie y² = 9(25/16 − 1) = 81/16, soit M(5 ; 2,25) ; alors MF = 2,25 (même abscisse que F) et MH = |5 − 3,2| = 1,8, de rapport 2,25 ÷ 1,8 = 1,25 = 5/4 ✓. L'option a applique la relation de l'ellipse b² = a² − c², qui donnerait c² = 16 − 9 = 7 : c'est l'interversion classique entre les deux coniques à centre. L'option d s'arrête à c² = 25 sans prendre la racine. L'option c cumule les deux erreurs.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit ℰ l'ellipse d'équation x²/25 + y²/16 = 1. Quelles sont les coordonnées de ses foyers ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(±3, 0)"
+        },
+        {
+          "id": "b",
+          "text": "(0, ±3)"
+        },
+        {
+          "id": "c",
+          "text": "(±4, 0)"
+        },
+        {
+          "id": "d",
+          "text": "(±√41, 0)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Ici a = 5 > b = 4, donc l'axe focal est (Ox) et b² = a² − c² donne c² = 25 − 16 = 9, soit c = 3 : les foyers sont (3, 0) et (−3, 0) ✓. Contrôle par la définition, avec e = c/a = 3/5 et la directrice x = a²/c = 25/3 : le sommet principal S(5, 0) vérifie SF = |5 − 3| = 2 et SH = |5 − 25/3| = 10/3, de rapport 2 ÷ (10/3) = 0,6 = 3/5 ✓. L'option b place les foyers sur (Oy), alors que le plus grand dénominateur est sous x². L'option c confond le foyer avec le sommet secondaire (0, 4), dont on n'a gardé que la valeur 4. L'option d applique la relation c² = a² + b² de l'hyperbole, qui donnerait c = √41.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit ℋ l'hyperbole d'équation x²/9 − y²/25 = 1. Quelles sont les équations de ses asymptotes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = ±(9/25)x"
+        },
+        {
+          "id": "b",
+          "text": "y = ±(3/5)x"
+        },
+        {
+          "id": "c",
+          "text": "y = ±(5/3)x"
+        },
+        {
+          "id": "d",
+          "text": "y = ±(25/9)x"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le cours donne les asymptotes de x²/a² − y²/b² = 1 sous la forme y = ±(b/a)x. Ici a² = 9 et b² = 25, donc a = 3 et b = 5, d'où y = (5/3)x et y = −(5/3)x ✓. L'option b intervertit a et b et donne la pente a/b = 3/5 : c'est l'erreur la plus fréquente du chapitre, retenir « le dénominateur de x sur celui de y » au lieu de la racine du dénominateur de y sur celle du dénominateur de x. Les options a et d oublient de prendre les racines carrées et utilisent directement a² et b², d'où 9/25 et 25/9.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit ℰ l'ellipse d'équation x²/9 + y²/25 = 1. Que vaut son excentricité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/5"
+        },
+        {
+          "id": "b",
+          "text": "4/5"
+        },
+        {
+          "id": "c",
+          "text": "5/4"
+        },
+        {
+          "id": "d",
+          "text": "4/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Ici a = 3 est plus petit que b = 5 : le grand axe est porté par (Oy), la relation est b² = a² + c², donc c² = 25 − 9 = 16 et c = 4. L'excentricité se divise toujours par le demi-grand axe, donc e = c/b = 4/5 ✓. Contrôle par la définition : le foyer est F(0, 4) et la directrice y = b²/c = 25/4 = 6,25 ; le sommet principal B(0, 5) vérifie BF = |5 − 4| = 1 et BH = |5 − 6,25| = 1,25, de rapport 1 ÷ 1,25 = 0,8 = 4/5 ✓. L'option d applique e = c/a = 4/3, le piège du chapitre : on obtiendrait une excentricité supérieure à 1, impossible pour une ellipse. L'option c inverse le quotient en écrivant b/c. L'option a lit le rapport des deux demi-axes a/b au lieu de c/b.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la nature de la courbe d'équation 4x² + 9y² = 36 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "un cercle de rayon 6"
+        },
+        {
+          "id": "b",
+          "text": "une ellipse de centre O"
+        },
+        {
+          "id": "c",
+          "text": "une parabole de sommet O"
+        },
+        {
+          "id": "d",
+          "text": "une hyperbole de centre O"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On divise les deux membres par 36 pour retrouver une équation réduite : x²/9 + y²/4 = 1. Les deux carrés sont affectés du même signe et les dénominateurs sont différents, donc c'est une ellipse de centre O, de demi-axes a = 3 et b = 2 ✓. Le critère du cours confirme : A = 4 et B = 9 donnent AB = 36 > 0, donc ellipse ou cercle. L'option a supposerait A = B, c'est-à-dire des dénominateurs égaux, et 6 n'est de toute façon pas un demi-axe. L'option d demanderait un signe − entre les deux carrés, donc AB < 0. L'option c demanderait qu'un seul des deux carrés soit présent, donc AB = 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit ℋ l'hyperbole d'équation x²/36 − y²/64 = 1. Quelle est l'équation de la directrice associée à son foyer F(10, 0) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = 18/5"
+        },
+        {
+          "id": "b",
+          "text": "x = 9/2"
+        },
+        {
+          "id": "c",
+          "text": "x = 32/5"
+        },
+        {
+          "id": "d",
+          "text": "x = 50/3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On lit a = 6 et b = 8, puis c = √(36 + 64) = √100 = 10, ce qui confirme le foyer F(10, 0) donné par l'énoncé. Le cours donne alors la directrice x = a²/c = 36/10 = 18/5 ✓. Contrôle par la définition, avec e = c/a = 10/6 = 5/3 : le sommet S(6, 0) vérifie SF = |6 − 10| = 4 et SH = |6 − 3,6| = 2,4, de rapport 4 ÷ 2,4 = 5/3 ✓. L'option d utilise c²/a = 100/6 = 50/3, en échangeant les rôles de a et de c au numérateur. L'option c prend b²/c = 64/10 = 32/5, qui est la directrice de l'hyperbole conjuguée, d'axe focal (Oy). L'option b divise a² par b au lieu de c, soit 36/8 = 9/2.",
+      "difficulty": 2
+    }
+  ]
+}
