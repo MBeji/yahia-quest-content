@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : combinaisons, conditionnement et variable aléatoire",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Dans une classe de 12 élèves, on forme une délégation de 3 élèves, sans distinction de rôle. Combien de délégations différentes peut-on constituer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "220"
+        },
+        {
+          "id": "b",
+          "text": "1320"
+        },
+        {
+          "id": "c",
+          "text": "1728"
+        },
+        {
+          "id": "d",
+          "text": "4096"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une délégation est une partie à 3 éléments d'un ensemble à 12 éléments, donc C_12^3 = (12 × 11 × 10)/(3 × 2 × 1) = 1320/6 = 220 ✓. Contrôle par un second chemin : compter chaque délégation une fois par ordre de citation donne 3! × 220 = 6 × 220 = 1320 = A_12^3, ce qui est exactement le nombre d'arrangements. Le nombre 1320 est donc cet arrangement A_12^3, qui distinguerait à tort deux délégations formées des mêmes élèves. Le nombre 1728 est 12³, valable seulement si un élève pouvait être choisi plusieurs fois. Le nombre 4096 est 2¹², le nombre total de parties de la classe, toutes tailles confondues.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut C_15^11 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "455"
+        },
+        {
+          "id": "b",
+          "text": "1365"
+        },
+        {
+          "id": "c",
+          "text": "3003"
+        },
+        {
+          "id": "d",
+          "text": "32760"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La symétrie C_n^p = C_n^(n−p) évite un calcul de onze facteurs : C_15^11 = C_15^4 = (15 × 14 × 13 × 12)/(4 × 3 × 2 × 1) = 32760/24 = 1365 ✓. Contrôle par la définition : 15!/(4!11!) donne le même quotient, puisque 32760/24 = 1365. Le nombre 455 est C_15^3, obtenu en se trompant d'une unité sur le complément 15 − 11. Le nombre 3003 est C_15^5, la même erreur d'une unité dans l'autre sens. Le nombre 32760 est A_15^4, le numérateur laissé sans division par 4! : c'est la confusion arrangement / combinaison, et A_15^4 = 4! × C_15^4 = 24 × 1365 le confirme.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur une chaîne de production, une pièce prélevée au hasard est contrôlée avec la probabilité 0,4. Sachant qu'une pièce est contrôlée, la probabilité qu'elle soit conforme vaut 0,95. Quelle est la probabilité qu'une pièce prélevée au hasard soit contrôlée et conforme ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,02"
+        },
+        {
+          "id": "b",
+          "text": "0,05"
+        },
+        {
+          "id": "c",
+          "text": "0,38"
+        },
+        {
+          "id": "d",
+          "text": "0,95"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Notons C « la pièce est contrôlée » et F « la pièce est conforme ». On lit sur l'arbre p(C) = 0,4 puis, sur la branche suivante, p(F/C) = 0,95 ; la probabilité du chemin est le produit des deux : p(C ∩ F) = 0,4 × 0,95 = 0,38 ✓. Contrôle sur 1000 pièces : 400 sont contrôlées et 95 % d'entre elles, soit 380, sont conformes, donc 380/1000 = 0,38. Le nombre 0,02 est la probabilité de l'autre chemin issu du même nœud, p(C ∩ F̅) = 0,4 × 0,05, et les deux se recoupent bien puisque 0,38 + 0,02 = 0,4 = p(C). Le nombre 0,05 est la probabilité conditionnelle p(F̅/C), une valeur portée par une branche et non par un chemin. Le nombre 0,95 recopie p(F/C) sans multiplier par le poids de la branche qui y mène.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une urne contient 4 boules blanches et 2 boules noires, indiscernables au toucher. On tire simultanément 2 boules et on note X le nombre de boules noires obtenues. Que vaut p(X = 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/15"
+        },
+        {
+          "id": "b",
+          "text": "2/5"
+        },
+        {
+          "id": "c",
+          "text": "4/9"
+        },
+        {
+          "id": "d",
+          "text": "8/15"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'univers compte C_6^2 = 15 tirages équiprobables. Obtenir exactement une noire, c'est choisir une noire parmi 2 et une blanche parmi 4, soit 2 × 4 = 8 tirages, d'où p(X = 1) = 8/15 ✓. Contrôle de la loi entière : p(X = 0) = C_4^2/15 = 6/15, p(X = 1) = 8/15 et p(X = 2) = C_2^2/15 = 1/15, et 6 + 8 + 1 = 15, donc la somme des trois probabilités vaut exactement 1. Le nombre 2/5 est p(X = 0) = 6/15, celle de deux boules blanches. Le nombre 1/15 est p(X = 2), celle de deux boules noires. Le nombre 4/9 vaut 2 × (2/6) × (4/6), qui serait la réponse pour deux tirages successifs avec remise, alors qu'ici les deux boules sortent ensemble.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une variable aléatoire X a pour loi p(X = 0) = 0,5 ; p(X = 2) = 0,3 et p(X = 4) = 0,2. Que valent son espérance et sa variance ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "E(X) = 1,4 et V(X) = 2,44"
+        },
+        {
+          "id": "b",
+          "text": "E(X) = 1,4 et V(X) = 3"
+        },
+        {
+          "id": "c",
+          "text": "E(X) = 1,4 et V(X) = 4,4"
+        },
+        {
+          "id": "d",
+          "text": "E(X) = 2 et V(X) = 2,44"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La loi somme bien à 1 (0,5 + 0,3 + 0,2). L'espérance vaut E(X) = 0 × 0,5 + 2 × 0,3 + 4 × 0,2 = 0 + 0,6 + 0,8 = 1,4. Pour la variance, on calcule d'abord E(X²) = 0 × 0,5 + 4 × 0,3 + 16 × 0,2 = 1,2 + 3,2 = 4,4, puis la formule de Kœnig donne V(X) = 4,4 − 1,4² = 4,4 − 1,96 = 2,44, d'où E(X) = 1,4 et V(X) = 2,44 ✓. Contrôle par la définition : 0,5 × 1,96 + 0,3 × 0,36 + 0,2 × 6,76 = 0,98 + 0,108 + 1,352 = 2,44. La valeur V(X) = 4,4 est E(X²), à qui on a oublié de retrancher le carré de l'espérance. La valeur V(X) = 3 retranche l'espérance elle-même au lieu de son carré, soit 4,4 − 1,4. La valeur E(X) = 2 est la moyenne non pondérée (0 + 2 + 4)/3, qui ignore les probabilités.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit A et B deux événements tels que p(A) = 0,6 ; p(B) = 0,5 et p(A ∪ B) = 0,8. Que peut-on dire de A et B ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ils ne sont pas indépendants, car p(A ∩ B) = 0,2 est différent de p(A) × p(B) = 0,3."
+        },
+        {
+          "id": "b",
+          "text": "Ils ne sont pas indépendants, car p(A/B) = 0,5 est différent de p(A) = 0,6."
+        },
+        {
+          "id": "c",
+          "text": "Ils ne sont pas indépendants, car p(A ∩ B) n'est pas nul, donc ils ne sont pas incompatibles."
+        },
+        {
+          "id": "d",
+          "text": "Ils sont indépendants, car p(A ∩ B) = 0,3 est égal à p(A) × p(B) = 0,3."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On extrait d'abord l'intersection de la formule de la réunion : p(A ∩ B) = p(A) + p(B) − p(A ∪ B) = 0,6 + 0,5 − 0,8 = 1,1 − 0,8 = 0,3. Or p(A) × p(B) = 0,6 × 0,5 = 0,3 également : le critère du cours est vérifié, donc A et B sont indépendants ✓. Contrôle par le conditionnel : p(A/B) = 0,3/0,5 = 0,6 = p(A), savoir que B est réalisé ne change pas la probabilité de A. La valeur p(A ∩ B) = 0,2 vient d'avoir écrit p(A ∪ B) − p(A) = 0,8 − 0,6 au lieu de la vraie formule. L'affirmation p(A/B) = 0,5 confond la probabilité conditionnelle avec p(B), alors que le calcul ci-dessus donne 0,6. Enfin, dire que l'intersection est non vide prouve seulement que A et B ne sont pas incompatibles : c'est même une condition nécessaire à l'indépendance, jamais un argument contre elle.",
+      "difficulty": 3
+    }
+  ]
+}

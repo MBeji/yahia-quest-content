@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : dénombrer, puis calculer une probabilité",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Une urne contient 6 jetons numérotés de 1 à 6. On tire simultanément 3 jetons. Combien de résultats différents ce tirage peut-il donner ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20"
+        },
+        {
+          "id": "b",
+          "text": "120"
+        },
+        {
+          "id": "c",
+          "text": "216"
+        },
+        {
+          "id": "d",
+          "text": "720"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un tirage simultané ne fournit aucun ordre : le résultat est une partie à 3 éléments d'un ensemble à 6 éléments, donc C_6^3 = (6 × 5 × 4)/(3 × 2 × 1) = 120/6 = 20 ✓. Contrôle par le compte total des parties : les parties de l'ensemble se répartissent en 1 + 6 + 15 + 20 + 15 + 6 + 1 = 64 = 2⁶, et le terme central 20 est bien celui des parties à 3 éléments. Le nombre 120 est A_6^3, qui compte les tirages successifs sans remise, où l'ordre distingue deux résultats ; c'est exactement 3! = 6 fois trop. Le nombre 216 est 6³, valable pour trois tirages avec remise. Le nombre 720 est 6!, le rangement des six jetons.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On lance deux dés équilibrés, l'un rouge et l'autre vert, dont les faces sont numérotées de 1 à 6. Quelle est la probabilité que la somme des deux faces obtenues soit égale à 5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/18"
+        },
+        {
+          "id": "b",
+          "text": "1/12"
+        },
+        {
+          "id": "c",
+          "text": "1/9"
+        },
+        {
+          "id": "d",
+          "text": "5/36"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les dés étant discernables par leur couleur, l'univers est formé des 6 × 6 = 36 couples équiprobables. Les couples de somme 5 sont (1, 4), (2, 3), (3, 2) et (4, 1), soit 4 cas, d'où 4/36 = 1/9 ✓. Contrôle : la somme 5 se lit aussi comme « le dé rouge donne i et le dé vert donne 5 − i », avec i allant de 1 à 4, ce qui redonne 4 couples. Le nombre 1/18 vaut 2/36 : il compte les paires non ordonnées {1, 4} et {2, 3} en oubliant que les deux dés sont distincts. Le nombre 1/12 vaut 3/36, obtenu en oubliant un des quatre couples. Le nombre 5/36 est la probabilité que la somme vaille 6, qui compte 5 couples.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un lot de 200 pièces, 24 présentent un défaut d'aspect, 15 un défaut de dimension et 6 présentent les deux défauts. On prélève une pièce au hasard. Quelle est la probabilité qu'elle ne présente aucun défaut ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,165"
+        },
+        {
+          "id": "b",
+          "text": "0,195"
+        },
+        {
+          "id": "c",
+          "text": "0,805"
+        },
+        {
+          "id": "d",
+          "text": "0,835"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Notons A le défaut d'aspect et D le défaut de dimension. La probabilité d'avoir au moins un défaut vaut p(A ∪ D) = 24/200 + 15/200 − 6/200 = 33/200 = 0,165, donc n'avoir aucun défaut a pour probabilité 1 − 0,165 = 0,835 ✓. Contrôle par les effectifs : 18 pièces n'ont que le défaut d'aspect, 9 que celui de dimension, 6 les deux, soit 33 pièces défectueuses et 200 − 33 = 167 pièces saines, avec 167/200 = 0,835. Le nombre 0,165 est justement la probabilité d'avoir au moins un défaut. Le nombre 0,195 vaut 39/200, la somme 24 + 15 sans retrancher les 6 pièces comptées deux fois. Le nombre 0,805 est le complément de cette même erreur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans une classe de 30 élèves, 18 sont des filles. Parmi ces filles, 12 étudient l'anglais en LV1, et la classe compte au total 20 élèves en anglais LV1. On interroge un élève au hasard. Sachant que c'est une fille, quelle est la probabilité qu'elle étudie l'anglais en LV1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2/5"
+        },
+        {
+          "id": "b",
+          "text": "3/5"
+        },
+        {
+          "id": "c",
+          "text": "2/3"
+        },
+        {
+          "id": "d",
+          "text": "9/10"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Notons F « l'élève est une fille » et L « l'élève étudie l'anglais LV1 ». Conditionner par F revient à réduire l'univers aux 18 filles : p(L/F) = p(L ∩ F)/p(F) = (12/30)/(18/30) = 12/18 = 2/3 ✓. Contrôle direct sur les effectifs : 12 des 18 filles sont concernées, soit deux filles sur trois. Le nombre 3/5 est p(F/L) = 12/20, la probabilité inversée : sachant que l'élève fait anglais LV1, la probabilité que ce soit une fille. Le nombre 2/5 est p(L ∩ F) = 12/30, non ramené à l'univers réduit. Le nombre 9/10 est 18/20, qui compare deux effectifs sans lien de conditionnement.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On tire une carte au hasard dans un jeu de 32 cartes (4 couleurs de 8 cartes, dont un roi par couleur). Soit A « la carte est un cœur » et B « la carte est un roi ». Que peut-on dire de A et B ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ils sont indépendants, car p(A ∩ B) = 1/32 et p(A) × p(B) = 1/4 × 1/8 = 1/32."
+        },
+        {
+          "id": "b",
+          "text": "Ils sont indépendants, car ils sont incompatibles, et deux événements incompatibles n'ont aucune influence l'un sur l'autre."
+        },
+        {
+          "id": "c",
+          "text": "Ils ne sont pas indépendants, car p(A ∩ B) = 1/32 est différent de p(A) + p(B) = 3/8."
+        },
+        {
+          "id": "d",
+          "text": "Ils ne sont pas indépendants, car ils peuvent se réaliser en même temps : le roi de cœur appartient aux deux."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le jeu compte 8 cœurs et 4 rois, dont une seule carte commune, le roi de cœur : p(A) = 8/32 = 1/4, p(B) = 4/32 = 1/8 et p(A ∩ B) = 1/32. Comme 1/4 × 1/8 = 1/32, le critère du cours est vérifié et les deux événements sont indépendants ✓. Contrôle par le conditionnel : p(A/B) = (1/32)/(1/8) = 1/4 = p(A), savoir que la carte est un roi ne change rien à la chance qu'elle soit un cœur. Le critère d'indépendance porte sur le produit, jamais sur la somme p(A) + p(B) = 3/8, qui ne sert qu'à la réunion d'événements incompatibles. Le fait que les deux événements puissent se réaliser ensemble prouve seulement qu'ils ne sont pas incompatibles, ce qui n'empêche nullement l'indépendance. Enfin A et B ne sont justement pas incompatibles, et deux événements incompatibles de probabilités non nulles ne sont jamais indépendants.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On lance un dé équilibré à six faces. Un joueur gagne 5 dinars si le résultat est 6, gagne 2 dinars si le résultat est 4 ou 5, et perd 1 dinar dans tous les autres cas. Soit X le gain algébrique du joueur, en dinars. Que vaut E(X) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2/3"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La loi de X est p(X = 5) = 1/6, p(X = 2) = 2/6 et p(X = −1) = 3/6, et elle est cohérente puisque 1/6 + 2/6 + 3/6 = 1. D'où E(X) = 5 × 1/6 + 2 × 2/6 + (−1) × 3/6 = 5/6 + 4/6 − 3/6 = 6/6 = 1 ✓ : le jeu rapporte en moyenne 1 dinar par partie. Le nombre 2 vient d'avoir oublié le signe de la perte, c'est-à-dire d'avoir calculé 5/6 + 4/6 + 3/6 = 12/6. Le nombre 2/3 correspond à n'avoir compté qu'une seule face pour le gain de 2 dinars : 5/6 + 2/6 − 3/6 = 4/6. Le nombre 6 est la somme brute des gains annoncés, 5 + 2 − 1, sans aucune pondération par les probabilités.",
+      "difficulty": 2
+    }
+  ]
+}
