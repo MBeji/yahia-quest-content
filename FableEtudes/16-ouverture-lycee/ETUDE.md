@@ -124,7 +124,11 @@ parent, visiteur anonyme, admin (priorisation des vagues).
   plusieurs sections d'une même année est authored **une fois** (dossier partagé `compileTo`,
   D-4) et compilée en un subject par section. La décision de partage se prend **par matière ×
   année, à la station L1 (sur transcription)** — jamais par défaut. En cas de doute : dossiers
-  séparés (fidélité > économie).
+  séparés (fidélité > économie). _Amendement 2026-07-31 :_ le **catalogue CNP** rend d'abord un
+  verdict mécanique (deux sections sur un même code manuel, ou deux codes distincts) — il
+  **présélectionne** les candidats et ferme les faux espoirs sans coûter une transcription, mais
+  il ne remplace pas L1 : un code partagé peut cacher une divergence de chapitrage (عيون الأدب,
+  vague E). Relevé : `docs/lycee-architecture.md` §3.1 du dépôt moteur.
 - **R-6** — **Pas de fusion de progression inter-sections (v1)** : chaque section a ses subjects
   (UUIDs propres), donc quiz-gates et progression indépendants. Changer de section conserve
   XP/niveau/pièces/badges/série (portés par `profiles`) mais repart sur la progression matière
@@ -368,6 +372,17 @@ terminologique) — jamais en traduction : ni lexique fr↔ar, ni gloses, ni mis
 `NN-pont-linguistique` (décision 2026-07-13, doc §4 amendé — l'ancien « pont linguistique » est
 supprimé).
 
+> **Amendement 2026-07-31 — les ⚭ ci-dessous ne sont plus des hypothèses.** Le catalogue officiel
+> CNP les tranche sans transcrire une ligne : **un code manuel = un programme**, et le titre du
+> manuel NOMME les sections qui se le partagent (« الرياضيات (شعبتا العلوم وتكنولوجيا الإعلامية) »,
+> « التاريخ (شعبتي الآداب و الاقتصاد والخدمات) »). Relevé complet par année et par matière :
+> **`docs/lycee-architecture.md` §3.1 du dépôt moteur** (PR arena #700). Ce qu'il établit : le
+> partage est un fait **du tronc** ; les dominantes de section ne se partagent **jamais**, à une
+> exception sur les trois années — les maths de 2ème sec (Sciences ⚭ Info), déjà livrées et déjà
+> en production. **Huit ⚭ planifiés tombent, trois tiennent** ; les vagues B à E ci-dessous sont
+> corrigées en conséquence. La transcription L1 reste l'arbitre chapitre par chapitre (D-4.b) :
+> un code partagé ouvre le dossier, il ne clôt pas la question (cas عيون الأدب, vague E).
+
 **Vague A — `1ere-sec` (5 dossiers → 5 subjects)**
 `math-1ere-sec`, `physique-1ere-sec`, `svt-1ere-sec` (fr natif — jargon des manuels officiels,
 sans traduction), `francais-1ere-sec`, `arabe-1ere-sec`. Ouvre `ecole-1ere-sec` dès le premier lot de chapitres complet
@@ -386,45 +401,69 @@ sans traduction), `francais-1ere-sec`, `arabe-1ere-sec`. Ouvre `ecole-1ere-sec` 
 > l'id du sujet a été aligné sur la convention lycée dans le manifest `1ere-sec`
 > (`mathematiques` → `math-1ere-sec`, doc §2).
 
-**Vague B — `bac-math` + `bac-sciences-exp` (7 dossiers → ~17 subjects compilés)**
-Tronc ⚭×6 (authored maintenant, sert aussi la vague C) : `francais-bac`, `philosophie-bac` →
-2 dossiers → 12 subjects. Dominantes dédiées (D-4.b) : compléter `math-bac-math` (existant),
+**Vague B — `bac-math` + `bac-sciences-exp` (9 dossiers → ~17 subjects compilés)**
+Tronc (authored maintenant, sert aussi la vague C) : `francais-bac` ⚭×5 + `francais-bac-lettres`
+dédié, `philosophie-bac` ⚭×5 + `philosophie-bac-lettres` dédié → **4 dossiers** → 12 subjects.
+_(Correction 2026-07-31 : le ⚭×6 était faux — Lettres a ses propres manuels, français `221421`
+contre `221402`, philosophie `210422`+`210423` contre `210402`.)_ Dominantes dédiées (D-4.b) :
+compléter `math-bac-math` (existant),
 `math-bac-sciences-exp`, `physique-bac-math`, `physique-bac-sciences-exp`,
 `svt-bac-sciences-exp` → 5 dossiers. Classes résultantes : bac-math = math, physique, français,
 philo (4 ✓) ; bac-sciences-exp = SVT, physique, math, français, philo (5 ✓). Ouvre
 `concours-bac-sciences-exp` (+ ré-atteste `concours-bac-math` au seuil R-8).
 
-**Vague C — `bac-lettres` / `bac-eco-gestion` / `bac-techniques` / `bac-info` (~8 dossiers → ~15 subjects)**
-Le tronc français/philo ×6 est déjà compilé (vague B). S'ajoutent : `arabe-bac` ⚭×6 (cœur
-lettres — renforcement lettres via `gradeSlugs` d3/d4), `histoire-geo-bac` ⚭ {lettres,
-eco-gestion}, `economie-bac-eco-gestion`, `gestion-bac-eco-gestion`, `technologie-bac-techniques`,
-`informatique-bac-info`, `math-bac-techniques` ⚭ {techniques, info} _(à confirmer L1)_,
-`physique-bac-techniques`. Classes : lettres = arabe, français, philo, histoire-géo (4 ✓) ;
+**Vague C — `bac-lettres` / `bac-eco-gestion` / `bac-techniques` / `bac-info` (~10 dossiers → ~15 subjects)**
+Le tronc français/philo est déjà compilé (vague B, 2 groupes). S'ajoutent : `arabe-bac` ⚭×5 +
+`arabe-bac-lettres` **dédié** _(correction 2026-07-31 : le ⚭×6 « renforcé par `gradeSlugs` » ne
+tient pas — Lettres a ses propres manuels `201421`+`201422` contre `201403` ; c'est une divergence
+de programme, pas de profondeur)_, `histoire-geo-bac` ⚭ {lettres, eco-gestion} **confirmé**
+(`207422` nomme exactement ces deux sections ; au bac les sections scientifiques n'ont pas la
+matière), `economie-bac-eco-gestion`, `gestion-bac-eco-gestion`, `technologie-bac-techniques`,
+`informatique-bac-info`, `math-bac-techniques` **et** `math-bac-info` _(le ⚭ est démenti :
+`222451` contre `222472`)_, `physique-bac-techniques`. Classes : lettres = arabe, français, philo, histoire-géo (4 ✓) ;
 eco-gestion = économie, gestion, français, philo, histoire-géo (5 ✓) ; techniques = technologie,
 math, physique, français, philo (5 ✓) ; info = informatique, math, français, philo (4 ✓).
 4 migrations `open_*` au fil de l'eau.
 
-**Vague D — les 6 `3eme-sec-*` (~14 dossiers → ~28 subjects)**
-Tronc ⚭×6 : `francais-3eme-sec`, `arabe-3eme-sec` → 2 dossiers. Math ×4 variantes _(à
-confirmer)_ : `math-3eme-sec-math`, `math-3eme-sec-sciences-exp`, `math-3eme-sec-techniques`
-⚭ {techniques, info}, `math-3eme-sec-lettres` ⚭ {lettres, eco-gestion}. Physique :
-`physique-3eme-sec-math` ⚭ {math, sciences-exp} _(à confirmer)_, `physique-3eme-sec-techniques`.
-Dominantes : `svt-3eme-sec-sciences-exp`, `technologie-3eme-sec-techniques`,
+**Vague D — les 6 `3eme-sec-*` (~20 dossiers → ~29 subjects)**
+Tronc, **2 groupes par matière et non un** _(correction 2026-07-31)_ : `francais-3eme-sec` ⚭×5 +
+`francais-3eme-sec-lettres` (`221302`/`221321`), `arabe-3eme-sec` ⚭×5 + `arabe-3eme-sec-lettres`
+(`201302`/`201321`) → **4 dossiers**. Math : **×6, un manuel par section, aucun partage**
+(`222322` lettres, `222333`+`222334` sciences-exp, `222343`+`222344` math, `222351` techniques,
+`222362` eco-gestion, `222371` info) — les deux ⚭ planifiés sont démentis. Physique : **4 dossiers
+dédiés** (`223332` math, `223333` sciences-exp, `223351` techniques, `223371` info ; la chimie
+suit le même découpage, `224332`/`224333`/`224351`/`224371`) — le ⚭ {math, sciences-exp} est
+démenti. Dominantes : `svt-3eme-sec-sciences-exp`, `technologie-3eme-sec-techniques`,
 `informatique-3eme-sec-info`, `economie-3eme-sec-eco-gestion`, `gestion-3eme-sec-eco-gestion`,
-`histoire-geo-3eme-sec` ⚭ {lettres, eco-gestion}. 6 migrations `open_*` au fil de l'eau.
+`histoire-geo-3eme-sec` ⚭ {lettres, eco-gestion} **confirmé** (`206321`/`207321` ; les quatre
+sections scientifiques ont leur propre manuel `206331`/`207331`, hors périmètre R-10 — la matière
+n'y est pas cœur). 6 migrations `open_*` au fil de l'eau.
 
-**Vague E — les 4 `2eme-sec-*` (~10 dossiers → ~17 subjects)**
-Tronc ⚭×4 : `francais-2eme-sec`, `arabe-2eme-sec`. Math _(à confirmer)_ :
-`math-2eme-sec-sciences`, `math-2eme-sec-info`, `math-2eme-sec-lettres` ⚭ {lettres, eco-services}.
-Dominantes : `physique-2eme-sec-sciences` _(⚭ info à confirmer)_, `svt-2eme-sec-sciences`,
+**Vague E — les 4 `2eme-sec-*` (~12 dossiers → ~18 subjects)** — _la vague la plus avancée : deux
+classes ouvertes le 2026-07-30, une troisième le 2026-07-31_
+Tronc : `francais-2eme-sec` ⚭×4 **confirmé** (`221203`, manuel unique aux quatre orientations).
+Arabe : le manuel عيون الأدب (`201202`+`201203`) est lui aussi unique aux quatre, mais son محور
+الخامس est dédoublé (roman pour Lettres, théâtre pour les trois autres) — **divergence
+structurelle ⇒ deux dossiers séparés, pas de `compileTo`** (décision 2026-07-30), 12 chapitres
+sur 13 réutilisables tels quels, et R-4 impose que les fiches des sections sœurs **renvoient** à
+celle de `2eme-sec-lettres` au lieu de revendiquer le code. Math : `math-2eme-sec-sciences-info`
+⚭ {sciences, info} — **confirmé et LIVRÉ** (`222231`+`222232`, le titre nomme les deux sections ;
+3 chapitres en production, ouverture `20260731130000`) ; `math-2eme-sec-lettres` (`222221`) et
+`math-2eme-sec-eco-services` (`222261`) sont **deux dossiers distincts**, le ⚭ planifié entre eux
+est démenti. Dominantes : `physique-2eme-sec-sciences` (`223231`) **et** `physique-2eme-sec-info`
+(`223272`) — le « ⚭ info à confirmer » est démenti —, `svt-2eme-sec-sciences`,
 `informatique-2eme-sec-info`, `economie-2eme-sec-eco-services`, `gestion-2eme-sec-eco-services`.
 4 migrations `open_*` au fil de l'eau.
 
-**Volumétrie totale v1 : ~44 dossiers source → ~82 subjects compilés** (sans mutualisation :
-~82 dossiers — **≈ 46 % d'authoring économisé**, concentré sur le tronc). **Pack v1.1 anglais**
-(après le v1, ou promu par les votes) : `anglais-1ere-sec`, `anglais-2eme-sec` ⚭×4,
-`anglais-3eme-sec` ⚭×6, `anglais-bac` ⚭×6 — 4 dossiers → 17 subjects, le partage rend
-l'extension bon marché ; `philosophie-3eme-sec` ⚭×6 idem si le programme officiel le justifie.
+**Volumétrie totale v1 (révisée 2026-07-31) : ~56 dossiers source → ~84 subjects compilés** — soit
+**≈ 33 % d'authoring économisé**, et non les ≈ 46 % annoncés au cadrage : les huit ⚭ démentis
+coûtent une douzaine de dossiers. L'économie survit intacte là où elle était réelle (le tronc) et
+disparaît là où elle était supposée (les dominantes). **Pack v1.1 anglais** (après le v1, ou promu
+par les votes) : `anglais-1ere-sec`, `anglais-2eme-sec` ⚭×4, `anglais-3eme-sec` ⚭×6,
+`anglais-bac` ⚭×6 — 4 dossiers → 17 subjects, **tous confirmés au catalogue** (`241203`, `241303`,
+`241403` : l'anglais est la seule matière dont le manuel ne se dédouble jamais, Lettres comprise),
+ce qui en fait l'extension la moins chère du plan — argument pour ne pas la laisser en v1.1 ;
+`philosophie-3eme-sec` en revanche est ⚭×5 + Lettres (`210301`/`210322`), pas ⚭×6.
 L'ordre A→E est re-priorisable par les votes (D-6, arbitrage humain).
 
 ## 5. Stratégie de test
@@ -553,3 +592,19 @@ EXECUTE TO anon` sur `parcours_interest_counts`), `getParcoursInterestCounts` an
   lexique fr↔ar, ni gloses arabes, ni mission `NN-pont-linguistique`. Amendés dans la même PR :
   doc lycée §4/§7/§8, `content-ecole-tn` §Langue, `programme-map.md`, CLAUDE.md,
   `content-generation-pipeline.md` ; en-tête de statut resynchronisé (lots 0–3 livrés, #375).
+- 2026-07-31 — **Les ⚭ du §4bis cessent d'être des hypothèses : le catalogue CNP les tranche.**
+  La question « quelles matières écrire une fois et ouvrir dans plusieurs orientations » était
+  traitée par défauts de planification marqués « à confirmer » depuis le cadrage. Elle a une
+  réponse mécanique et vérifiable sans transcrire : **un code manuel officiel = un programme**, et
+  le titre du manuel nomme les sections qui se le partagent. Relevé porté dans le dépôt moteur
+  (`docs/lycee-architecture.md` §3.1, PR arena #700, qui corrige au passage le trade-off §8 —
+  « once per (matière × year) » devient « × groupe de sections »). Verdict : **le partage est un
+  fait du tronc, les dominantes ne se partagent jamais** — seule exception des trois années, les
+  maths de 2ème sec (Sciences ⚭ Info), livrées et en production. **Huit ⚭ tombent** (les trois
+  ⚭×6 du bac — français, philosophie, arabe, tous démentis par le manuel propre à Lettres ; les
+  maths 3ème « techniques ⚭ info » et « lettres ⚭ eco-gestion » ; la physique 3ème « math ⚭
+  sciences-exp » ; les maths bac « techniques ⚭ info » ; les maths 2ème « lettres ⚭
+  eco-services »). **Trois tiennent** : histoire-géo {lettres, eco-gestion}, anglais ⚭×4/×6/×6
+  (seule matière dont le manuel ne se dédouble jamais) et les maths 2ème Sciences ⚭ Info.
+  Volumétrie v1 révisée : ~56 dossiers → ~84 subjects, **≈ 33 %** d'authoring économisé au lieu
+  des ≈ 46 % annoncés. R-5 amendé : le catalogue présélectionne, L1 arbitre toujours.
