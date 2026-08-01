@@ -1,0 +1,103 @@
+{
+  "title": "🔮 Histoire ⭐⭐⭐ : Le Scriptorium englouti",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 6,
+  "questions": [
+    {
+      "prompt": "Épisode 1 — La descente. Sous le Bureau des Sceaux dort un scriptorium englouti, et le vieux Maître des Restes t'a laissé ses consignes avant de disparaître dans le puits. Le puits est une échelle de paliers numérotés depuis la margelle : la margelle est le palier 0, chaque palier au-dessus porte un numéro positif, chaque palier sous terre un numéro négatif — le premier palier sous la margelle est le palier −1, le suivant −2, et ainsi de suite. Consigne du Maître : « une lampe brûle exactement aux paliers dont le numéro est congru à 2 modulo 9 ». Ta corde s'arrête au palier −344. Quel est le reste de −344 modulo 9, et trouveras-tu une lampe à ce palier ?",
+      "options": [
+        { "id": "a", "text": "Le reste vaut 7 : pas de lampe à ce palier" },
+        { "id": "b", "text": "Le reste vaut 2 : une lampe brûle à ce palier" },
+        { "id": "c", "text": "Le reste vaut −2 : pas de lampe à ce palier" },
+        { "id": "d", "text": "Le reste vaut 8 : pas de lampe à ce palier" }
+      ],
+      "correctOption": "a",
+      "explanation": "LA DIVISION EUCLIDIENNE DE −344 PAR 9, dans les règles. Le diviseur 9 est positif, donc le quotient est le PLUS GRAND ENTIER INFÉRIEUR OU ÉGAL à −344/9 ≈ −38,22 : c'est −39, et non −38 (car −38 > −38,22). Le reste vaut alors r = −344 − 9 × (−39) = −344 + 351 = 7, et le contrôle passe : 9 × (−39) + 7 = −351 + 7 = −344 ✓ avec 0 ≤ 7 < 9 ✓. Le reste vaut donc 7, et comme 7 ≠ 2, aucune lampe ne brûle au palier −344. CONTRÔLE PAR UNE SECONDE ROUTE, plus rapide et sans calculatrice. Le critère du cours donne le reste de 344 modulo 9 par sa somme de chiffres : 3 + 4 + 4 = 11, et 11 = 9 + 2, donc 344 ≡ 2 (mod 9). Par conséquent −344 ≡ −2 (mod 9), et −2 + 9 = 7 : on retrouve 7 ✓. Les deux chemins concordent. LECTURE CONCRÈTE, qui vaut troisième contrôle : les lampes brûlent aux paliers … , 2, −7, −16, … et plus bas aux paliers de la forme 9k + 2. Le palier lampe le plus proche au-dessus de −344 est −340 (car −340 = 9 × (−38) + 2, soit −342 + 2 ✓) : il te manque 4 paliers de remontée pour retrouver la lumière — exactement l'écart entre le reste 7 et le reste 2, complété au tour suivant. « Le reste vaut 2 » est LE piège de l'épisode : c'est le reste de +344, pas celui de −344. Descendre 344 paliers et en monter 344 ne mène pas au même reste, sauf si 344 était un multiple de 9 — ce qu'il n'est pas. « Le reste vaut −2 » vient du quotient −38 : on obtient bien −344 = 9 × (−38) − 2, égalité arithmétiquement vraie, mais ce n'est PAS la division euclidienne, car le théorème impose 0 ≤ r < 9. C'est cette condition qui rend le couple (q, r) unique ; sans elle, il existe une infinité d'écritures. « Le reste vaut 8 » a la bonne conclusion mais un reste faux : il vient du réflexe « je change 2 en 9 − 1 ». Le passage de a à −a se fait par r ↦ 9 − r quand r n'est pas nul, ici 9 − 2 = 7, pas 8.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Épisode 2 — La cote du grimoire. Au fond du puits, les rayonnages sont intacts. Le catalogue du scriptorium range chaque ouvrage sous une cote qui vaut, dit la règle gravée sur le pupitre, « le reste modulo 9 du produit des deux nombres inscrits sur le dos du volume ». Le grimoire que tu cherches porte les deux nombres 3148762 et 5219344. Aucune tablette de calcul ne survivra à ce produit — et le Maître des Restes rappelait qu'un entier est toujours congru modulo 9 à la somme de ses chiffres. Quelle est la cote du grimoire ? Réponds par un entier compris entre 0 et 8.",
+      "answerKey": {
+        "value": 4
+      },
+      "explanation": "LA RÈGLE D'OR DU CHAPITRE : on réduit CHAQUE facteur avant de multiplier, jamais l'inverse. C'est la propriété de compatibilité — si a ≡ a′ et b ≡ b′ (mod n), alors ab ≡ a′b′ (mod n). PREMIER FACTEUR. Somme des chiffres de 3148762 : 3 + 1 = 4 ; 4 + 4 = 8 ; 8 + 8 = 16 ; 16 + 7 = 23 ; 23 + 6 = 29 ; 29 + 2 = 31. Donc 3148762 ≡ 31 (mod 9), et 31 = 9 × 3 + 4, d'où 3148762 ≡ 4 (mod 9). Contrôle : on peut réappliquer le critère à 31, dont la somme des chiffres est 3 + 1 = 4 ✓. SECOND FACTEUR. Somme des chiffres de 5219344 : 5 + 2 = 7 ; 7 + 1 = 8 ; 8 + 9 = 17 ; 17 + 3 = 20 ; 20 + 4 = 24 ; 24 + 4 = 28. Donc 5219344 ≡ 28 (mod 9), et 28 = 9 × 3 + 1, d'où 5219344 ≡ 1 (mod 9). Contrôle : somme des chiffres de 28 égale 2 + 8 = 10, puis 1 + 0 = 1 ✓. LE PRODUIT. 3148762 × 5219344 ≡ 4 × 1 = 4 (mod 9), et 4 appartient déjà à {0, 1, …, 8} : la cote du grimoire est 4. POURQUOI CE RÉSULTAT EST SOLIDE. Le second facteur est congru à 1 : il se comporte modulo 9 comme un neutre, donc la cote du produit est celle du premier facteur seul. C'est un contrôle de cohérence gratuit — si tu avais trouvé autre chose que 4, l'un des deux facteurs aurait été mal réduit. DEUX ERREURS À NE PAS COMMETTRE. Additionner les restes au lieu de les multiplier donnerait 4 + 1 = 5 : la compatibilité vaut pour l'addition ET pour le produit, mais chacune à sa place. Et surtout, ne jamais tenter le produit entier pour « vérifier » : le critère de la somme des chiffres existe précisément pour éviter un nombre de treize chiffres.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Épisode 3 — Le message chiffré. Dans le grimoire, une feuille pliée porte un seul mot, et le Maître des Restes a laissé sa méthode de chiffrement en marge : « à chaque lettre j'associe son rang, de A = 0 jusqu'à Z = 25 ; puis je remplace la lettre de rang m par la lettre de rang (m + 11) modulo 26 ». La première lettre du mot chiffré est un D. Quelle était la lettre d'origine ? On rappelle les rangs utiles : D = 3, I = 8, O = 14, S = 18, T = 19.",
+      "options": [
+        { "id": "a", "text": "La lettre S" },
+        { "id": "b", "text": "La lettre O" },
+        { "id": "c", "text": "La lettre I" },
+        { "id": "d", "text": "La lettre T" }
+      ],
+      "correctOption": "a",
+      "explanation": "ON ÉCRIT D'ABORD L'ÉQUATION, ensuite on la résout — dans le bon sens. Le chiffrement transforme le rang m en le rang c = m + 11 (mod 26). Ici la lettre chiffrée est D, de rang c = 3. On cherche donc m tel que m + 11 ≡ 3 (mod 26), c'est-à-dire m ≡ 3 − 11 = −8 (mod 26). LA RÉDUCTION DU NÉGATIF, l'étape décisive. Un rang de lettre vit dans {0, 1, …, 25}, donc on remplace −8 par son reste modulo 26 : −8 + 26 = 18. Contrôle du reste : 26 × (−1) + 18 = −8 ✓ avec 0 ≤ 18 < 26 ✓. Le rang cherché est 18, c'est-à-dire la lettre S. CONTRÔLE PAR LE SENS DIRECT, obligatoire dans tout déchiffrement : on rechiffre la réponse. S a pour rang 18, et 18 + 11 = 29 ; or 29 = 26 + 3 ≡ 3 (mod 26), qui est bien le rang de D ✓. La boucle est fermée : la lettre d'origine est la lettre S. « La lettre O » a ajouté le décalage au lieu de le retrancher : 3 + 11 = 14, rang de O. C'est l'erreur de sens la plus fréquente — elle CHIFFRE une seconde fois au lieu de déchiffrer. Le contrôle la démasque aussitôt : O rechiffré donnerait le rang 14 + 11 = 25, soit Z, et non D. « La lettre I » a calculé 11 − 3 = 8, en inversant les deux membres de la soustraction. Le contrôle échoue également : I rechiffré donne 8 + 11 = 19, soit T, et non D. « La lettre T » a fait le bon calcul jusqu'à −8, puis a raté la réduction : elle a écrit −8 ≡ 19 en retranchant de 27, ou en comptant les lettres une à une avec un cran de trop. Le bon complément est 26 − 8 = 18, pas 19. Et le contrôle tranche : T rechiffré donne 19 + 11 = 30 ≡ 4 (mod 26), soit E, et non D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 4 — Le faux manuscrit. Le mot déchiffré t'ouvre une niche murée : elle contient un inventaire du trésor du scriptorium, signé d'un copiste inconnu. L'inventaire affirme deux choses sur le nombre N de perles du collier royal. Premièrement : « N est un carré parfait, c'est-à-dire qu'il existe un entier k tel que N = k² ». Deuxièmement : « N laisse le reste 2 dans la division euclidienne par 4 ». Le Maître des Restes t'a appris à ne jamais croire un inventaire sur parole. Que peux-tu conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'inventaire se contredit : le reste d'un carré modulo 4 vaut toujours 0 ou 1, jamais 2 — un tel nombre N n'existe pas"
+        },
+        {
+          "id": "b",
+          "text": "L'inventaire est cohérent : N = 6 convient, puisque 6 = 4 + 2 laisse bien le reste 2"
+        },
+        {
+          "id": "c",
+          "text": "L'inventaire est cohérent : N = 4 convient, puisque 4 = 2² est un carré parfait"
+        },
+        {
+          "id": "d",
+          "text": "On ne peut rien conclure tant qu'on ne connaît pas la valeur de N"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "LA MÉTHODE, celle qui répond à « pour tout entier k » sans essayer les entiers un à un : on balaye les RESTES. Modulo 4, un entier k a exactement quatre restes possibles — 0, 1, 2 ou 3 — et le reste de k² ne dépend que de celui de k, par compatibilité du produit avec les congruences. LE TABLEAU DE CONGRUENCE, ligne par ligne. Si k ≡ 0, alors k² ≡ 0² = 0. Si k ≡ 1, alors k² ≡ 1² = 1. Si k ≡ 2, alors k² ≡ 2² = 4 ≡ 0 (mod 4). Si k ≡ 3, alors k² ≡ 3² = 9 = 4 × 2 + 1 ≡ 1 (mod 4). LES RESTES POSSIBLES D'UN CARRÉ modulo 4 sont donc exactement 0 et 1 : jamais 2, jamais 3. CONCLUSION. Un entier N qui serait à la fois un carré parfait et congru à 2 modulo 4 devrait avoir un reste appartenant à {0, 1} et valant 2 : impossible. L'inventaire se contredit, un tel nombre N n'existe pas, et le manuscrit est un faux. CONTRÔLE NUMÉRIQUE, sur les premiers carrés : 0 ≡ 0 ; 1 ≡ 1 ; 4 ≡ 0 ; 9 ≡ 1 ; 16 ≡ 0 ; 25 ≡ 1 ; 36 ≡ 0 ; 49 ≡ 1. Les restes alternent entre 0 et 1 sans jamais produire 2 ✓ — et le tableau explique pourquoi : les carrés des entiers pairs sont multiples de 4, ceux des impairs sont de la forme 4m + 1. « N = 6 convient » ne vérifie qu'UNE des deux conditions : 6 = 4 + 2 laisse bien le reste 2, mais 6 n'est pas un carré parfait, puisque 2² = 4 et 3² = 9 l'encadrent sans l'atteindre. Un contre-exemple doit satisfaire TOUTES les hypothèses, sinon il ne prouve rien. « N = 4 convient » commet la faute symétrique : 4 = 2² est bien un carré, mais son reste modulo 4 vaut 0, pas 2. Là encore, une condition sur deux. « On ne peut rien conclure sans connaître N » est l'aveu qui coûte le plus cher dans ce chapitre : c'est précisément quand N est INCONNU que le tableau de congruence donne toute sa puissance. Quatre lignes suffisent à statuer sur une infinité d'entiers — et ici à conclure, sans la moindre perle en main, que l'inventaire ment.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 5 — Le code du phare. Une galerie remonte vers le phare du port, dont la lanterne transmet chaque nuit un code aux navires : « le code d'un navire est le reste modulo 111 de son numéro d'immatriculation ». Le navire du Maître des Restes porte le numéro 4507384, et aucun gardien n'a jamais posé cette division. Le registre du phare ne rappelle qu'une seule égalité, gravée sous la lanterne : 1000 = 111 × 9 + 1. Quel code la lanterne doit-elle envoyer ?",
+      "options": [
+        { "id": "a", "text": "Le code 7" },
+        { "id": "b", "text": "Le code 82" },
+        { "id": "c", "text": "Le code 31" },
+        { "id": "d", "text": "Le code 8" }
+      ],
+      "correctOption": "a",
+      "explanation": "LE CRITÈRE DES BLOCS DE TROIS, celui que le cours tire de la méthode de Pascal. Tout repose sur l'égalité gravée : 1000 = 111 × 9 + 1, donc 10³ ≡ 1 (mod 111), et par conséquent 10⁶ = (10³)² ≡ 1, 10⁹ ≡ 1, et ainsi de suite — toutes les puissances de 1000 valent 1. LA DÉCOMPOSITION PAR BLOCS, pris DEPUIS LES UNITÉS : 4507384 = 4 × 10⁶ + 507 × 10³ + 384. Contrôle de l'écriture : 4 × 1000000 = 4000000 ; 507 × 1000 = 507000 ; et 4000000 + 507000 + 384 = 4507384 ✓. LE REMPLACEMENT : chaque puissance de 1000 valant 1, il reste la somme nue des blocs, sans poids et sans signe — 4507384 ≡ 4 + 507 + 384 (mod 111). LA SOMME, terme à terme : 4 + 507 = 511 ; 511 + 384 = 895. LA RÉDUCTION FINALE, qu'on oublie une fois sur deux : 895 = 111 × 8 + 7, car 111 × 8 = 888 et 895 − 888 = 7, avec 0 ≤ 7 < 111 ✓. Le code à envoyer est 7. CONTRÔLE PAR LA DIVISION POSÉE, entièrement explicite : 111 × 40607 = 4060700 + 446677 = 4507377, et 4507384 − 4507377 = 7 ✓ — on a bien 111 × 40607 + 7 = 4507384. Les deux chemins concordent : le code est 7. POURQUOI CE CRITÈRE EXISTE, et pourquoi il ne se transporte pas tel quel. Il naît de 111 × 9 = 999 : c'est parce que 111 divise 999 que 1000 laisse le reste 1. Modulo 11 ou modulo 13, la même découpe donnerait une somme ALTERNÉE, car 10³ y est congru à −1 et non à 1. Le critère se lit toujours dans la table des restes des puissances de 10 — jamais par analogie. « Le code 82 » a découpé les blocs DEPUIS LA GAUCHE : 450 + 738 + 4 = 1192, puis 1192 − 1110 = 82. Le découpage part toujours des unités ; ici le premier bloc est 384, pas 450, et un bloc de tête incomplet vaut simplement 4. « Le code 31 » a plaqué le critère du module 9, la somme des chiffres : 4 + 5 + 0 + 7 + 3 + 8 + 4 = 31. Ce critère ne vaut que parce que 10 ≡ 1 (mod 9) ; modulo 111, c'est 10³ qui vaut 1, pas 10 — on somme donc des blocs de trois chiffres, pas des chiffres isolés. « Le code 8 » a livré le QUOTIENT au lieu du reste : dans 895 = 111 × 8 + 7, le 8 compte les tours complets et le 7 est ce qui dépasse. L'encadrement 0 ≤ r < 111 ne tranche pas ici, puisque 8 le vérifie aussi — seule la lecture du théorème le fait : le reste est le terme ajouté, jamais le facteur.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Épisode 6 — La dernière porte. Au sommet du phare, une porte de bronze garde le legs du Maître des Restes. Deux cadrans y sont sertis, et la plaque grave l'énigme : « la chaîne du grand sceau compte 3¹⁰⁰⁰ maillons ; règle le premier cadran sur le reste de ce nombre modulo 7, et le second sur son chiffre des unités ». Aucune tablette n'écrira jamais 3¹⁰⁰⁰. Quels sont les deux réglages ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Premier cadran 4, second cadran 1"
+        },
+        {
+          "id": "b",
+          "text": "Premier cadran 1, second cadran 1"
+        },
+        {
+          "id": "c",
+          "text": "Premier cadran 4, second cadran 3"
+        },
+        {
+          "id": "d",
+          "text": "Premier cadran 3, second cadran 9"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "DEUX MODULES, DEUX PÉRIODES, et la même méthode en trois gestes : réduire la base, trouver la période, réduire l'exposant modulo la période. PREMIER CADRAN — LE RESTE MODULO 7. La base 3 est déjà réduite. On liste les puissances de 3 modulo 7 : 3¹ ≡ 3 ; 3² = 9 ≡ 2 ; 3³ ≡ 2 × 3 = 6 ; 3⁴ ≡ 6 × 3 = 18 ≡ 4 ; 3⁵ ≡ 4 × 3 = 12 ≡ 5 ; 3⁶ ≡ 5 × 3 = 15 ≡ 1. La période vaut 6 — ce que le théorème de Fermat annonçait d'ailleurs, puisque 7 est premier et ne divise pas 3, donc 3⁶ ≡ 1 (mod 7). On divise l'exposant par la période : 1000 = 6 × 166 + 4, car 6 × 166 = 996 et 1000 − 996 = 4, avec 0 ≤ 4 < 6 ✓. Donc 3¹⁰⁰⁰ = (3⁶)¹⁶⁶ × 3⁴ ≡ 1¹⁶⁶ × 3⁴ ≡ 4 (mod 7). Contrôle : 3⁴ = 81 = 7 × 11 + 4 ✓. Le premier cadran vaut 4. SECOND CADRAN — LE CHIFFRE DES UNITÉS, c'est-à-dire le reste modulo 10. On liste les puissances de 3 modulo 10 : 3¹ ≡ 3 ; 3² = 9 ; 3³ = 27 ≡ 7 ; 3⁴ = 81 ≡ 1. La période vaut ici 4, et non 6 : la période dépend du module, elle se recalcule à chaque fois. On divise l'exposant par 4 : 1000 = 4 × 250 + 0, avec un reste NUL. Contrôle par le critère de divisibilité par 4 : les deux derniers chiffres de 1000 forment 00, multiple de 4 ✓. Donc 3¹⁰⁰⁰ = (3⁴)²⁵⁰ ≡ 1²⁵⁰ = 1 (mod 10) : le chiffre des unités est 1. Le second cadran vaut 1. Les réglages sont donc : premier cadran 4, second cadran 1. CONTRÔLE DE COHÉRENCE ENTRE LES DEUX. Un nombre qui se termine par 1 est congru à 1 modulo 10 ; cela n'impose rien modulo 7, et il n'y a donc aucune contradiction à trouver 4 d'un côté et 1 de l'autre. Contrôle numérique sur un petit exposant qui occupe les MÊMES cases dans les deux cycles, l'exposant 4 : d'une part 4 ≡ 1000 (mod 6), puisque 1000 − 4 = 996 = 6 × 166 ✓ ; d'autre part 4 ≡ 1000 (mod 4), puisque 1000 − 4 = 996 = 4 × 249 ✓. Les exposants 4 et 1000 tombent donc au même endroit des deux roues, et 3⁴ doit donner les deux mêmes chiffres que 3¹⁰⁰⁰. Or 3⁴ = 81 : son reste modulo 7 vaut 4, car 81 = 7 × 11 + 4 ✓, et son chiffre des unités vaut 1 ✓. Les deux réglages sont confirmés par un calcul entièrement explicite. « Premier cadran 1 » applique Fermat sans réduire l'exposant : 3⁶ ≡ 1 (mod 7) ne donne 3¹⁰⁰⁰ ≡ 1 que si 1000 est un MULTIPLE de 6. Or 1000 = 6 × 166 + 4 : il reste 4 crans à parcourir sur la roue, et l'on arrive sur 3⁴ ≡ 4, pas sur 1. « Second cadran 3 » a bien vu la période 4 modulo 10, mais a écrit 1000 ≡ 1 (mod 4) au lieu de 1000 ≡ 0. Un reste nul n'est pas un reste manquant : il désigne la case 3⁴ ≡ 1 du cycle, celle où la roue vient de boucler. « Premier cadran 3, second cadran 9 » cumule les deux mêmes glissements d'un cran : 1000 ≡ 1 (mod 6) donnerait 3¹ ≡ 3, et 1000 ≡ 2 (mod 4) donnerait 3² ≡ 9. Retiens le réflexe qui les évite tous : on écrit la division euclidienne de l'exposant EN ENTIER, 1000 = 6 × 166 + 4 puis 1000 = 4 × 250 + 0, et on relit le contrôle b × q + r = a avant de conclure.",
+      "difficulty": 3
+    }
+  ]
+}

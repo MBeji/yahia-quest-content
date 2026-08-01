@@ -1,0 +1,136 @@
+{
+  "title": "🧩 Mission interactive ⭐⭐ : La Halle aux Engrenages",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "Texte à trous — première commande de la journée. La Halle aux Engrenages abrite aussi l'atelier de confiserie du quartier, et le maître confiseur doit préparer des coffrets IDENTIQUES pour la fête : chaque coffret recevra le même nombre d'amandes et le même nombre de pistaches, et il ne doit rien rester. Il dispose de 600 amandes et de 168 pistaches, et veut le PLUS GRAND nombre possible de coffrets. Complète le bon de commande : « nombre de coffrets = ____ ; amandes par coffret = ____ ».",
+      "options": [
+        { "id": "a", "text": "① 24 coffrets / ② 25 amandes par coffret" },
+        { "id": "b", "text": "① 24 coffrets / ② 7 amandes par coffret" },
+        { "id": "c", "text": "① 8 coffrets / ② 75 amandes par coffret" },
+        { "id": "d", "text": "① 7 coffrets / ② 25 amandes par coffret" }
+      ],
+      "correctOption": "a",
+      "explanation": "TRADUIRE AVANT DE CALCULER. Un coffret contient le même nombre d'amandes et le même nombre de pistaches, sans reste : le nombre de coffrets DIVISE 600 et DIVISE 168. On en veut le plus grand : c'est exactement 600 ∧ 168, le PGCD. ALGORITHME D'EUCLIDE, quatre divisions. 600 = 168 × 3 + 96, car 168 × 3 = 504 et 600 − 504 = 96 ✓. Puis 168 = 96 × 1 + 72, car 168 − 96 = 72 ✓. Puis 96 = 72 × 1 + 24 ✓. Puis 72 = 24 × 3 + 0 ✓. Le dernier reste non nul est 24, donc 600 ∧ 168 = 24 : il y aura 24 coffrets. LE CONTENU D'UN COFFRET. Amandes : 600 / 24 = 25, car 24 × 25 = 600 ✓. Pistaches : 168 / 24 = 7, car 24 × 7 = 168 ✓. La bonne ligne du bon de commande est donc 24 coffrets et 25 amandes par coffret. CONTRÔLE QUI PROUVE LE « PLUS GRAND ». Il reste à vérifier qu'on ne peut pas faire mieux : si un nombre plus grand convenait, les quotients 25 et 7 auraient encore un facteur commun. Or 25 = 5² et 7 est premier : 25 ∧ 7 = 1 ✓. On est bien au maximum. « 24 coffrets / 7 amandes » a le bon nombre de coffrets mais a recopié le contenu de la mauvaise ligne : 7 est le nombre de PISTACHES par coffret, pas d'amandes. Le contrôle démasque l'échange en une ligne : 24 × 7 = 168, ce qui est le stock de pistaches, pas les 600 amandes. « 8 coffrets / 75 amandes » a trouvé un diviseur commun, mais pas le plus grand. C'est vrai que 8 divise les deux stocks — 600 / 8 = 75 et 168 / 8 = 21 — et la répartition marcherait ; simplement elle n'utilise pas tout le potentiel, puisque 75 ∧ 21 = 3 permet encore de découper chaque coffret en 3. Le PGCD est le seul arrêt légitime : 8 × 3 = 24 ✓. « 7 coffrets / 25 amandes » a pris pour nombre de coffrets le QUOTIENT 168 / 24 = 7 au lieu du PGCD. Le contrôle est immédiat et sans appel : 7 ne divise pas 600, puisque 7 × 85 = 595 et 600 − 595 = 5 ≠ 0 — cinq amandes resteraient sur la table, ce que la commande interdit.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le dallage de la Halle. Le maître carreleur doit border l'allée par deux bandes de MÊME longueur : la première sera pavée uniquement de dalles de 84 cm posées bout à bout, la seconde uniquement de dalles de 60 cm, et aucune dalle ne doit être coupée. Quelle est la plus petite longueur possible, en centimètres, de ces deux bandes ? Réponds par un nombre entier.",
+      "answerKey": {
+        "value": 420
+      },
+      "explanation": "TRADUIRE LA SITUATION. Une bande pavée sans découpe avec des dalles de 84 cm a une longueur MULTIPLE de 84 ; l'autre, une longueur multiple de 60. Les deux bandes ayant la même longueur, celle-ci est un multiple COMMUN de 84 et 60, et on la veut la plus petite : c'est le PPCM 84 ∨ 60. LA FORMULE DE TRAVAIL DU CHAPITRE : on calcule d'abord le PGCD par Euclide, JAMAIS le PPCM directement, puis on applique (a ∨ b) × (a ∧ b) = |ab|. EUCLIDE. 84 = 60 × 1 + 24, car 84 − 60 = 24 ✓. Puis 60 = 24 × 2 + 12, car 24 × 2 = 48 et 60 − 48 = 12 ✓. Puis 24 = 12 × 2 + 0 ✓. Le dernier reste non nul est 12, donc 84 ∧ 60 = 12. LE PPCM. 84 ∨ 60 = (84 × 60) / 12 = 5040 / 12 = 420. La réponse est 420 cm. CONTRÔLE PAR LES DALLES, indispensable. 420 / 84 = 5 : la première bande compte exactement 5 dalles ✓. 420 / 60 = 7 : la seconde en compte exactement 7 ✓. Les deux comptes tombent juste, donc 420 est bien un multiple commun. Et c'est le PLUS PETIT, car les nombres de dalles 5 et 7 vérifient 5 ∧ 7 = 1 : aucun facteur commun ne peut être simplifié, il n'existe pas de longueur commune plus courte. DEUX ERREURS À ÉVITER. Répondre 5040, le produit brut : c'est bien une longueur commune — 60 dalles d'un côté, 84 de l'autre — mais douze fois trop longue, exactement le facteur 12 du PGCD. Répondre 12, le PGCD lui-même : 12 cm ne suffisent même pas à poser une seule dalle. Le PGCD répond à « comment découper ? », le PPCM à « à partir de quelle longueur les deux pavages tombent-ils juste ensemble ? ».",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Trois commandes du même après-midi, et deux nombres qui reviennent partout : 18 et 24. ① Deux tambours de la Halle battent la cadence, l'un toutes les 18 secondes, l'autre toutes les 24 secondes ; ils viennent de frapper ensemble, et l'on cherche au bout de combien de secondes ils frapperont de nouveau ensemble. ② Un ferronnier doit découper une barre de 18 cm et une barre de 24 cm en morceaux tous de MÊME longueur entière, sans aucune chute, et veut ces morceaux les plus longs possible : on cherche cette longueur, en cm. ③ Avec la découpe de la commande ②, on cherche le nombre TOTAL de morceaux obtenus à partir des deux barres. Associe chaque commande au nombre qui lui répond.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "① Les deux tambours frappent de nouveau ensemble au bout de …"
+        },
+        {
+          "id": "l2",
+          "text": "② La plus grande longueur de morceau possible vaut …"
+        },
+        { "id": "l3", "text": "③ Le nombre total de morceaux obtenus vaut …" },
+        { "id": "r1", "text": "72" },
+        { "id": "r2", "text": "6" },
+        { "id": "r3", "text": "7" }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"]
+        ]
+      },
+      "explanation": "UN SEUL CALCUL PRÉLIMINAIRE SERT AUX TROIS COMMANDES : le PGCD de 18 et 24 par l'algorithme d'Euclide. 24 = 18 × 1 + 6, car 24 − 18 = 6 ✓ ; puis 18 = 6 × 3 + 0 ✓. Le dernier reste non nul est 6, donc 18 ∧ 24 = 6. On en déduit le PPCM par la formule (a ∨ b) × (a ∧ b) = |ab| : 18 ∨ 24 = (18 × 24) / 6 = 432 / 6 = 72. ① LES TAMBOURS → 72. Le premier frappe aux instants multiples de 18, le second aux multiples de 24 ; ils coïncident aux multiples COMMUNS, et la première coïncidence est le PPCM, donc 72 secondes. Contrôle : 72 / 18 = 4 frappes du premier tambour et 72 / 24 = 3 frappes du second ✓, et 4 ∧ 3 = 1 confirme qu'aucune coïncidence n'a eu lieu avant. ② LA DÉCOUPE → 6. La longueur d'un morceau doit diviser 18 ET diviser 24, sinon il resterait une chute ; on la veut maximale, c'est donc le PGCD : 6 cm. Contrôle : 18 = 6 × 3 ✓ et 24 = 6 × 4 ✓, aucune chute des deux côtés. ③ LE NOMBRE DE MORCEAUX → 7. La barre de 18 cm donne 18 / 6 = 3 morceaux, celle de 24 cm en donne 24 / 6 = 4, soit 3 + 4 = 7 morceaux en tout. Contrôle par la longueur totale : 7 × 6 = 42 cm, et 18 + 24 = 42 cm ✓ — rien n'a été perdu. CE QUE CETTE TRIPLE COMMANDE APPREND. Les deux mêmes nombres 18 et 24 répondent à deux questions opposées : « QUAND se retrouve-t-on ? » appelle le PPCM (un multiple, donc plus grand que les données : 72), tandis que « COMMENT partager ? » appelle le PGCD (un diviseur, donc plus petit : 6). Un réflexe de tri qui ne trompe jamais : si la réponse attendue est plus GRANDE que les données, c'est un PPCM ; si elle est plus PETITE, c'est un PGCD. La commande ③ n'est ni l'un ni l'autre : c'est une simple somme de quotients, 3 + 4 = 7, et confondre 7 avec le PGCD 6 revient à compter les morceaux au lieu de les mesurer.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Chasse à l'erreur — le péage de la Halle. Le péagiste ne dispose que de jetons de 15 unités et de jetons de 11 unités ; il peut en donner comme en recevoir, si bien qu'on cherche tous les couples (x, y) d'entiers RELATIFS tels que 15x + 11y = 4. Voici sa fiche de résolution, en quatre étapes. ① « Euclide : 15 = 11 × 1 + 4 ; 11 = 4 × 2 + 3 ; 4 = 3 × 1 + 1. Le PGCD vaut 1, et 1 divise 4 : il y a des solutions. » ② « Remontée : 1 = 4 − 3 = 4 − (11 − 2 × 4) = 3 × 4 − 11 = 3 × (15 − 11) − 11 = 3 × 15 − 4 × 11. Donc 15 × 3 + 11 × (−4) = 1. » ③ « En multipliant par 4 : 15 × 12 + 11 × (−16) = 4, donc (12, −16) est une solution particulière. » ④ « On soustrait : 15(x − 12) + 11(y + 16) = 0, donc 15 divise 11(y + 16) ; comme 15 ∧ 11 = 1, le lemme de Gauss donne 15 divise y + 16, soit y + 16 = 15k, puis x − 12 = −11k. L'ensemble des solutions est S = {(12 − 15k, −16 + 11k), k ∈ ℤ}. » Une seule étape est fausse : laquelle, et que faut-il écrire à la place ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape ④ : son propre raisonnement donne y + 16 = 15k et x − 12 = −11k, donc S = {(12 − 11k, −16 + 15k), k ∈ ℤ} — les deux coefficients ont été intervertis dans la conclusion"
+        },
+        {
+          "id": "b",
+          "text": "L'étape ② : la remontée est mal conduite, elle donne en réalité 15 × (−3) + 11 × 4 = 1, donc le couple de Bézout est (−3, 4)"
+        },
+        {
+          "id": "c",
+          "text": "L'étape ③ : pour passer d'un second membre 1 à un second membre 4, on ajoute 4 aux deux coefficients, ce qui donne la solution particulière (16, −12)"
+        },
+        {
+          "id": "d",
+          "text": "L'étape ① : la condition d'existence n'est pas remplie, car 15 ∧ 11 = 1 est différent de 4 — l'équation n'a aucune solution"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'ERREUR EST À L'ÉTAPE ④, et elle est d'autant plus vicieuse que la fiche se contredit elle-même en une seule ligne : elle démontre y + 16 = 15k et x − 12 = −11k, puis écrit l'inverse dans l'ensemble S. ① EST JUSTE. Les trois divisions sont correctes : 15 − 11 = 4 ✓ ; 11 − 4 × 2 = 11 − 8 = 3 ✓ ; 4 − 3 = 1 ✓. Le dernier reste non nul est 1, donc 15 ∧ 11 = 1, et comme 1 divise tout entier, il divise 4 : le théorème du cours garantit des solutions. ② EST JUSTE. Réinjection, seul juge d'un couple de Bézout : 15 × 3 + 11 × (−4) = 45 − 44 = 1 ✓. ③ EST JUSTE. On multiplie l'ÉGALITÉ entière par 4, donc chaque coefficient est multiplié par 4 : 3 × 4 = 12 et (−4) × 4 = −16. Réinjection : 15 × 12 + 11 × (−16) = 180 − 176 = 4 ✓. ④ EST FAUSSE, et voici la correction. De y + 16 = 15k on tire y = −16 + 15k ; en reportant, 15(x − 12) = −11 × 15k, donc x − 12 = −11k et x = 12 − 11k. ÉTAPE CORRIGÉE : « S = {(12 − 11k, −16 + 15k), k ∈ ℤ} ». Le pas est (−11, 15), c'est-à-dire (−b, a) : le coefficient de x se déplace du COEFFICIENT DE L'AUTRE inconnue, jamais du sien. CONTRÔLE SUR DEUX VALEURS DU PARAMÈTRE, obligatoire. k = 1 : (12 − 11, −16 + 15) = (1, −1), et 15 × 1 + 11 × (−1) = 15 − 11 = 4 ✓. k = 2 : (12 − 22, −16 + 30) = (−10, 14), et 15 × (−10) + 11 × 14 = −150 + 154 = 4 ✓. CONTRÔLE QUI TUE LA FICHE. Testons la formule écrite en ④, avec k = 1 : elle propose (12 − 15, −16 + 11) = (−3, −5), et 15 × (−3) + 11 × (−5) = −45 − 55 = −100, très loin de 4. Une seule réinjection suffisait à voir l'erreur. « L'étape ② serait fausse » propose le couple (−3, 4). Réinjection : 15 × (−3) + 11 × 4 = −45 + 44 = −1, et non 1. Ce couple résout 15x + 11y = −1 : c'est l'OPPOSÉ du bon couple, l'erreur de signe classique de la remontée. La fiche, elle, avait bien conclu 3 × 15 − 4 × 11. « L'étape ③ serait fausse » remplace une multiplication par une addition. Réinjection du couple proposé : 15 × 16 + 11 × (−12) = 240 − 132 = 108, et non 4. Passer du second membre 1 au second membre c se fait en MULTIPLIANT toute l'égalité par c ; ajouter c à chaque coefficient n'a aucun sens, puisque cela change le membre de gauche de 15c + 11c = 26c. « L'étape ① serait fausse » confond deux conditions. Le théorème dit : l'équation ax + by = c a des solutions si et seulement si d = a ∧ b DIVISE c — il ne dit nulle part que d doit être ÉGAL à c. Ici d = 1 divise 4, donc les solutions existent, et on vient d'en exhiber trois : (12, −16), (1, −1) et (−10, 14).",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Le chiffre de la Halle. Les marchands communiquent par un chiffrement affine : chaque lettre est ramenée à son rang m, de A = 0 à Z = 25, puis remplacée par la lettre de rang c ≡ am + b (mod 26), où a et b sont les deux clés. Le déchiffrement n'est possible QUE si l'on peut « annuler » la multiplication par a, c'est-à-dire si a possède un inverse modulo 26 — et le cours donne le critère : un tel inverse existe si et seulement si a ∧ 26 = 1. Le scribe note six affirmations dans son carnet. Sélectionne TOUTES celles qui sont exactes.",
+      "options": [
+        { "id": "a", "text": "La clé a = 5 est utilisable, car 5 ∧ 26 = 1" },
+        {
+          "id": "b",
+          "text": "La clé a = 13 est utilisable, car 13 est un nombre premier"
+        },
+        { "id": "c", "text": "Un inverse de 5 modulo 26 est 21" },
+        { "id": "d", "text": "La clé a = 9 est utilisable, car 9 ∧ 26 = 1" },
+        { "id": "e", "text": "Un inverse de 7 modulo 26 est 11" },
+        {
+          "id": "f",
+          "text": "La clé a = 4 est utilisable, car 4 est pair et 26 aussi"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "c", "d"]
+      },
+      "explanation": "UN SEUL CRITÈRE POUR LES CLÉS, celui du cours : a est utilisable si et seulement si a ∧ 26 = 1. Et un seul juge pour les inverses : la RÉINJECTION dans au ≡ 1 (mod 26). a) EXACTE. Euclide : 26 = 5 × 5 + 1, puis 5 = 1 × 5 + 0 ✓. Le dernier reste non nul est 1, donc 5 ∧ 26 = 1 : la clé a = 5 est utilisable. b) INEXACTE, et c'est le piège du chapitre. Le fait que 13 soit premier ne dit rien sur 13 ∧ 26 : ce qui compte, c'est que 13 DIVISE 26, donc 13 ∧ 26 = 13 ≠ 1. Aucun inverse n'existe, et le chiffrement serait catastrophique — avec a = 13 et b = 0, les lettres de rang pair se codent toutes en A, on ne peut plus rien déchiffrer. Retiens la distinction : « premier » et « premier AVEC 26 » sont deux propriétés différentes. c) EXACTE. Réinjection : 5 × 21 = 105, et 105 = 26 × 4 + 1 = 104 + 1, donc 5 × 21 ≡ 1 (mod 26) ✓. L'inverse de 5 modulo 26 est bien 21, et il appartient à {0, 1, …, 25} comme l'exige le théorème d'unicité. d) EXACTE. Euclide : 26 = 9 × 2 + 8 ; 9 = 8 × 1 + 1 ; 8 = 1 × 8 + 0 ✓. Donc 9 ∧ 26 = 1 : la clé a = 9 est utilisable. Contrôle de cohérence, en fabriquant son inverse : 9 × 3 = 27 ≡ 1 (mod 26) ✓, l'inverse de 9 est 3. e) INEXACTE. Réinjection : 7 × 11 = 77, et 77 = 26 × 2 + 25 = 52 + 25, donc 7 × 11 ≡ 25 ≡ −1 (mod 26), et non 1. C'est l'erreur de signe la plus fréquente : 11 est l'inverse de −7, pas de 7. Le vrai inverse de 7 modulo 26 est 15, car 7 × 15 = 105 = 26 × 4 + 1 ✓ — le même 105 qu'à l'affirmation c), ce qui n'a rien d'un hasard puisque 5 × 21 = 7 × 15. f) INEXACTE. L'argument se retourne exactement contre lui-même : 4 et 26 sont tous deux pairs, donc 2 est un diviseur commun et 4 ∧ 26 = 2 ≠ 1. Loin de rendre la clé valide, la parité commune l'interdit. Contrôle : 4u est toujours pair, donc 4u − 1 est toujours impair et ne peut jamais être un multiple de 26, qui est pair — aucun inverse n'existe. BILAN : les affirmations exactes sont a), c) et d).",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "Dernière mission — le chargement de la caravane. Le maître de la caravane doit charger EXACTEMENT 1000 kg avec des caisses de 35 kg et des barils de 90 kg, tous pleins, et il cherche tous les chargements possibles : les couples (x, y) d'entiers naturels tels que 35x + 90y = 1000. Remets dans l'ordre les cinq étapes de la méthode du chapitre.",
+      "options": [
+        {
+          "id": "s1",
+          "text": "Traduire la situation en équation : on cherche les entiers naturels x et y tels que 35x + 90y = 1000, où x compte les caisses et y les barils."
+        },
+        {
+          "id": "s2",
+          "text": "Tester l'existence de solutions : l'algorithme d'Euclide donne 35 ∧ 90 = 5, et 5 divise 1000 — l'équation a donc des solutions dans ℤ × ℤ."
+        },
+        {
+          "id": "s3",
+          "text": "Diviser toute l'équation par le PGCD 5, ce qui donne 7x + 18y = 200 avec 7 ∧ 18 = 1."
+        },
+        {
+          "id": "s4",
+          "text": "Fabriquer une solution particulière par Bézout : de 7 × (−5) + 18 × 2 = 1 on tire, en multipliant par 200, le couple (x₀, y₀) = (−1000, 400)."
+        },
+        {
+          "id": "s5",
+          "text": "Décrire toutes les solutions par le lemme de Gauss — les couples (−1000 − 18k, 400 + 7k), k ∈ ℤ — puis ne retenir que ceux à coordonnées positives, comme (8, 8)."
+        }
+      ],
+      "answerKey": {
+        "order": ["s1", "s2", "s3", "s4", "s5"]
+      },
+      "explanation": "L'ORDRE EST IMPOSÉ PAR LA LOGIQUE : chaque étape consomme le résultat de la précédente, et c'est exactement le tableau en quatre temps du cours, précédé de la traduction. D'ABORD TRADUIRE. « Charger exactement 1000 kg » n'est pas une équation ; 35x + 90y = 1000 en est une. Cette étape fixe aussi la contrainte cachée qui décidera de tout à la fin : x et y sont des entiers NATURELS, car on ne charge pas un nombre négatif de caisses. ENSUITE TESTER L'EXISTENCE. Euclide : 90 = 35 × 2 + 20 (70 + 20 = 90 ✓) ; 35 = 20 × 1 + 15 ✓ ; 20 = 15 × 1 + 5 ✓ ; 15 = 5 × 3 + 0 ✓. Dernier reste non nul : 5, donc 35 ∧ 90 = 5. Et 1000 = 5 × 200, donc 5 divise 1000 : il y a des solutions. Cette étape doit précéder toutes les autres — si 5 n'avait pas divisé 1000, tout le reste aurait été du travail perdu. ENSUITE DIVISER PAR d. 35 / 5 = 7, 90 / 5 = 18, 1000 / 5 = 200, d'où 7x + 18y = 200 avec 7 ∧ 18 = 1. C'est l'étape que l'on saute le plus souvent, et celle qui coûte le plus cher : c'est ELLE qui fixera le bon pas. PUIS BÉZOUT. Réinjection du couple annoncé : 7 × (−5) + 18 × 2 = −35 + 36 = 1 ✓. En multipliant l'égalité par 200 : 7 × (−1000) + 18 × 400 = −7000 + 7200 = 200 ✓. Le couple (−1000, 400) est bien une solution particulière — laide, mais parfaitement légitime. ENFIN CONCLURE ET FILTRER. En soustrayant, 7(x + 1000) = −18(y − 400) ; comme 7 ∧ 18 = 1, le lemme de Gauss donne 7 divise y − 400, puis la forme générale (−1000 − 18k, 400 + 7k). CONTRÔLE SUR DEUX VALEURS DU PARAMÈTRE : k = −56 donne (−1000 + 1008, 400 − 392) = (8, 8), et 35 × 8 + 90 × 8 = 280 + 720 = 1000 ✓ ; k = −57 donne (−1000 + 1026, 400 − 399) = (26, 1), et 35 × 26 + 90 × 1 = 910 + 90 = 1000 ✓. Le filtre x ≥ 0 impose k ≤ −56 et le filtre y ≥ 0 impose k ≥ −57 : il n'existe donc QUE DEUX chargements réels, (8, 8) et (26, 1). LES DEUX INVERSIONS QUI COÛTENT DES POINTS. Chercher Bézout AVANT d'avoir divisé par 5 : l'équation 35u + 90v = 1 n'a aucune solution, puisque 5 ne divise pas 1 — on s'acharnerait sur une impossibilité. Et filtrer les solutions positives AVANT d'avoir la forme générale : il n'y aurait rien à filtrer, puisque la solution particulière (−1000, 400) est elle-même négative en x. C'est le paramètre k qui ramène la solution dans le monde réel, jamais l'inverse.",
+      "difficulty": 2
+    }
+  ]
+}

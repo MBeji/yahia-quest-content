@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Diviser, poser la division euclidienne et lire les restes",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Quel est le quotient de la division euclidienne de −23 par 4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−6"
+        },
+        {
+          "id": "b",
+          "text": "−5"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le diviseur 4 est positif, donc le quotient est le plus grand entier inférieur ou égal à −23/4 = −5,75, c'est-à-dire −6 ✓. Le contrôle par le reste tranche : avec ce quotient, r = −23 − 4 × (−6) = −23 + 24 = 1, et 0 ≤ 1 < 4 est bien vérifié. Le nombre −5 est ce qu'affiche une calculatrice qu'on tronque vers zéro ; il conduirait à r = −23 + 20 = −3, un reste négatif donc impossible. Le nombre 5 est le quotient de 23 par 4 et perd le signe du dividende. Le nombre 6 est la valeur absolue du bon quotient, avec le signe oublié.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Laquelle de ces écritures est la division euclidienne de 154 par −12 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "154 = (−12) × (−13) − 2"
+        },
+        {
+          "id": "b",
+          "text": "154 = (−12) × (−13) + 10"
+        },
+        {
+          "id": "c",
+          "text": "154 = (−12) × (−12) + 10"
+        },
+        {
+          "id": "d",
+          "text": "154 = 12 × 12 + 10"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le diviseur est négatif, donc le quotient est le plus petit entier supérieur ou égal à 154/(−12) ≈ −12,83, c'est-à-dire −12. Le reste vaut alors r = 154 − (−12) × (−12) = 154 − 144 = 10, d'où l'écriture 154 = (−12) × (−12) + 10 ✓, avec 0 ≤ 10 < |−12| = 12. L'écriture 154 = (−12) × (−13) − 2 est une égalité exacte, puisque 156 − 2 = 154, mais son reste −2 est négatif : le théorème impose 0 ≤ r < |b|, ce qui garantit l'unicité du couple. L'écriture 154 = (−12) × (−13) + 10 n'est même pas une égalité, car 156 + 10 = 166. L'écriture 154 = 12 × 12 + 10 est exacte mais divise par 12 et non par −12 : le reste est bien le même, seul le quotient change de signe.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Combien l'entier 45 admet-il de diviseurs dans ℤ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On liste d'abord les diviseurs positifs en les appariant par produits valant 45 : 1 et 45, 3 et 15, 5 et 9, soit six diviseurs positifs. Comme d divise 45 entraîne que −d le divise aussi, chacun vient avec son opposé : l'ensemble complet est {−45, −15, −9, −5, −3, −1, 1, 3, 5, 9, 15, 45}, ce qui fait 12 diviseurs ✓. Le nombre 6 ne compte que les diviseurs positifs, alors que la question porte sur ℤ. Le nombre 10 oublie la paire extrême 1 et 45 ou la paire −1 et −45. Le nombre 8 ne retient que deux paires de diviseurs positifs doublées, en oubliant que 45 = 5 × 9 fournit une troisième paire.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit a et b deux entiers tels que a ≡ 4 (mod 11) et b ≡ 9 (mod 11). Quel est le reste modulo 11 de a + b ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "13"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La congruence est compatible avec l'addition : a + b ≡ 4 + 9 = 13 (mod 11). Il faut encore ramener 13 dans {0, 1, …, 10} en retirant le module : 13 − 11 = 2, donc le reste vaut 2 ✓. Contrôle numérique avec a = 15 et b = 20, de restes 4 et 9 : a + b = 35 = 11 × 3 + 2 ✓. Le nombre 13 est la somme des restes laissée non réduite, alors qu'un reste modulo 11 est toujours strictement inférieur à 11. Les nombres 4 et 9 recopient l'un des deux restes de départ, comme si additionner un entier congru à 9 ne changeait rien.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit a un entier tel que a ≡ 5 (mod 9). Quel est le reste modulo 9 de a² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "25"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La compatibilité avec les puissances donne a² ≡ 5² = 25 (mod 9), puis on réduit : 25 = 9 × 2 + 7, donc le reste vaut 7 ✓. Contrôle numérique avec a = 14, dont le reste modulo 9 est bien 5 : a² = 196 = 9 × 21 + 7 ✓. Le nombre 25 est le carré du reste laissé non réduit. Le nombre 10 double le reste au lieu de l'élever au carré, et ne pourrait de toute façon pas être un reste modulo 9. Le nombre 5 traite la congruence comme une égalité, comme si a² gardait le reste de a — c'est faux dès que ce reste dépasse 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit n un entier multiple de 5. Lequel de ces entiers est alors à coup sûr un multiple de 5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "n² + 1"
+        },
+        {
+          "id": "b",
+          "text": "2n − 3"
+        },
+        {
+          "id": "c",
+          "text": "3n + 5"
+        },
+        {
+          "id": "d",
+          "text": "4n + 2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La propriété des combinaisons linéaires du cours s'applique : 5 divise n et 5 divise 5, donc 5 divise 3n + 5 ✓ — autrement dit 3n + 5 est un multiple de 5. Les trois autres ajoutent à un multiple de 5 un terme constant qui n'en est pas un, et le total ne peut donc pas l'être : n² + 1 est congru à 1 modulo 5, 2n − 3 est congru à 2 et 4n + 2 est congru à 2. Contrôle avec n = 10 : 3n + 5 = 35 = 5 × 7 ✓, tandis que n² + 1 = 101, 2n − 3 = 17 et 4n + 2 = 42, qui ne sont pas des multiples de 5.",
+      "difficulty": 2
+    }
+  ]
+}

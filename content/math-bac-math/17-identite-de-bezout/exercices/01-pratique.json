@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : PGCD, algorithme d'Euclide et PPCM",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "L'algorithme d'Euclide appliqué à 1071 et 462 donne 1071 = 462 × 2 + 147, puis 462 = 147 × 3 + 21, puis 147 = 21 × 7 + 0. Que vaut 1071 ∧ 462 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "21"
+        },
+        {
+          "id": "c",
+          "text": "147"
+        },
+        {
+          "id": "d",
+          "text": "23562"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le PGCD est le dernier reste non nul de la chaîne de divisions, donc 21 ✓. Contrôle : 1071 = 21 × 51 et 462 = 21 × 22, et comme 51 ∧ 22 = 1 il n'existe pas de diviseur commun plus grand. Le nombre 0 est le reste qui arrête l'algorithme, jamais le PGCD : il ne divise aucun entier. Le nombre 147 est le reste précédent, celui de la première division ; s'arrêter là est faux, car 462 = 147 × 3 + 21 n'est pas une division exacte. Le nombre 23562 est le PPCM, obtenu par (1071 × 462)/21 = 1071 × 22 : c'est le plus petit multiple commun, pas le plus grand diviseur commun.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut 360 ∧ (−24) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−24"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "24"
+        },
+        {
+          "id": "d",
+          "text": "360"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On travaille sur les valeurs absolues, donc on calcule 360 ∧ 24. Comme 360 = 24 × 15 exactement, 24 divise 360, et la propriété du cours « si b divise a alors a ∧ b = |b| » donne immédiatement 24 ✓. Le nombre −24 oublie que le PGCD est toujours strictement positif, quels que soient les signes de a et b. Le nombre 1 supposerait 360 et 24 premiers entre eux, alors qu'ils partagent 24 lui-même. Le nombre 360 est la valeur absolue du premier entier : c'est ce que vaut le PPCM 360 ∨ (−24), justement parce que 24 divise 360, et non le PGCD.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi ces quatre affirmations sur les entiers premiers entre eux, laquelle est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deux entiers premiers entre eux sont nécessairement deux nombres premiers."
+        },
+        {
+          "id": "b",
+          "text": "Les entiers 6 et 35 ne sont pas premiers entre eux, puisque ni 6 ni 35 n'est un nombre premier."
+        },
+        {
+          "id": "c",
+          "text": "Deux entiers impairs sont toujours premiers entre eux, puisqu'ils n'ont pas 2 comme diviseur commun."
+        },
+        {
+          "id": "d",
+          "text": "Les entiers 9 et 16 sont premiers entre eux, bien qu'aucun des deux ne soit un nombre premier."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La définition ne parle que du PGCD : a et b sont premiers entre eux lorsque a ∧ b = 1. Or 9 = 3² et 16 = 2⁴ n'ont aucun facteur commun, donc 9 ∧ 16 = 1 alors qu'aucun des deux n'est un nombre premier ✓ — c'est exactement l'avertissement du cours. Prétendre que deux entiers premiers entre eux sont deux nombres premiers est donc faux, et le contre-exemple précédent suffit. L'affirmation sur 6 et 35 est fausse aussi : 6 = 2 × 3 et 35 = 5 × 7 ne partagent rien, donc 6 ∧ 35 = 1. Enfin deux entiers impairs peuvent très bien partager un facteur impair : 9 ∧ 15 = 3, car 9 = 3 × 3 et 15 = 3 × 5.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que vaut 45 ∨ 60, le PPCM de 45 et 60 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15"
+        },
+        {
+          "id": "b",
+          "text": "105"
+        },
+        {
+          "id": "c",
+          "text": "180"
+        },
+        {
+          "id": "d",
+          "text": "2700"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On calcule d'abord le PGCD par Euclide : 60 = 45 × 1 + 15, puis 45 = 15 × 3 + 0, donc 45 ∧ 60 = 15. La relation (a ∨ b)(a ∧ b) = |ab| donne ensuite 45 ∨ 60 = (45 × 60)/15 = 2700/15 = 180 ✓. Contrôle : 180 = 45 × 4 et 180 = 60 × 3, avec 4 ∧ 3 = 1, donc c'est bien le plus petit multiple commun. Le nombre 15 est le PGCD, échangé avec le PPCM. Le nombre 2700 est le produit non divisé par le PGCD : c'est un multiple commun, mais quinze fois trop grand. Le nombre 105 est la somme 45 + 60, qui n'est même pas un multiple de 60.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le lemme de Gauss permet de conclure, de « a divise bc », que a divise c. Quelle hypothèse rend cette conclusion légitime ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a ∧ b = 1"
+        },
+        {
+          "id": "b",
+          "text": "a ∧ c = 1"
+        },
+        {
+          "id": "c",
+          "text": "a et b sont deux nombres premiers"
+        },
+        {
+          "id": "d",
+          "text": "b ∧ c = 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'énoncé du lemme est précis : si a ∧ b = 1 et si a divise bc, alors a divise c ✓ — c'est la primalité entre a et le facteur qu'on veut écarter qui autorise la simplification. Sans elle tout s'écroule : 6 divise 4 × 3 = 12, mais 6 ne divise ni 4 ni 3, et de fait 6 ∧ 4 = 2. Supposer a ∧ c = 1 mène au contraire à conclure que a divise b, pas c : c'est l'autre facteur qu'on écarte. L'hypothèse b ∧ c = 1 ne fait intervenir a nulle part et ne peut donc rien dire de ce que a divise. Exiger que a et b soient premiers est beaucoup trop fort et hors sujet : 8 ∧ 9 = 1 suffit alors qu'aucun des deux n'est premier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On sait que 84 ∧ 30 = 6. Que vaut alors 420 ∧ 150 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "30"
+        },
+        {
+          "id": "c",
+          "text": "150"
+        },
+        {
+          "id": "d",
+          "text": "2100"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On reconnaît 420 = 5 × 84 et 150 = 5 × 30 : la propriété ka ∧ kb = |k|(a ∧ b) avec k = 5 donne 420 ∧ 150 = 5 × 6 = 30 ✓. Vérification par Euclide, sans utiliser la propriété : 420 = 150 × 2 + 120, puis 150 = 120 × 1 + 30, puis 120 = 30 × 4 + 0, on retrouve bien 30. Le nombre 6 est le PGCD de départ, laissé inchangé comme si multiplier les deux entiers par 5 ne changeait rien. Le nombre 150 supposerait que 150 divise 420, ce qui est faux car 420 = 150 × 2 + 120. Le nombre 2100 est le PPCM, puisque (420 × 150)/30 = 63000/30 = 2100.",
+      "difficulty": 2
+    }
+  ]
+}

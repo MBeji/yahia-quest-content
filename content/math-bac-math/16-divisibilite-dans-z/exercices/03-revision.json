@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Divisibilité dans ℤ",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Quel est le reste de la division euclidienne de −307 par −7 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−6"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "44"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les deux nombres sont négatifs, donc leur quotient réel est positif : −307/(−7) ≈ 43,86. Le diviseur étant négatif, le quotient est le plus petit entier supérieur ou égal à ce nombre, soit 44, et le reste vaut r = −307 − (−7) × 44 = −307 + 308 = 1 ✓, avec 0 ≤ 1 < 7. Le nombre −6 correspond au quotient 43, qui donne −307 + 301 = −6 : un reste négatif signale toujours un quotient mal arrondi. Le nombre 6 est le reste de 307, et non celui de −307 : ces deux opposés ont des restes complémentaires, 1 et 6, dont la somme fait 7. Le nombre 44 est le quotient lui-même, confondu avec le reste.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est l'ensemble de tous les entiers n tels que n divise n + 5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{−5, 5}"
+        },
+        {
+          "id": "b",
+          "text": "{1, 5}"
+        },
+        {
+          "id": "c",
+          "text": "{−5, −1, 1, 5}"
+        },
+        {
+          "id": "d",
+          "text": "{−5, −1, 0, 1, 5}"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On fait disparaître la partie encombrante : n divise n, donc si n divise n + 5, il divise la différence (n + 5) − n = 5. Réciproquement, si n divise 5, il divise n + 5 comme somme de deux multiples de n. Les diviseurs de 5 dans ℤ sont −5, −1, 1 et 5, d'où l'ensemble {−5, −1, 1, 5} ✓. Contrôle des quatre valeurs : −5 divise 0, −1 divise 4, 1 divise 6 et 5 divise 10 ✓. L'ensemble {1, 5} n'énumère que les diviseurs positifs, alors qu'on travaille dans ℤ. L'ensemble {−5, 5} oublie −1 et 1, qui divisent pourtant tout entier. L'ensemble {−5, −1, 0, 1, 5} ajoute 0, interdit par la définition : 0 n'est le diviseur de personne.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le reste de la division euclidienne d'un entier a par 13 vaut 7. Quel est le reste modulo 13 de a + 20 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "14"
+        },
+        {
+          "id": "d",
+          "text": "27"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Dire que le reste de a par 13 vaut 7, c'est dire a ≡ 7 (mod 13). La compatibilité avec l'addition donne a + 20 ≡ 7 + 20 = 27 (mod 13), qu'on réduit : 27 = 13 × 2 + 1, donc le reste vaut 1 ✓. Contrôle numérique avec a = 20, dont le reste par 13 est bien 7 : a + 20 = 40 = 13 × 3 + 1 ✓. Le nombre 27 est la somme laissée non réduite. Le nombre 14 s'arrête après une seule soustraction du module, 27 − 13, alors que 14 dépasse encore 13 : un reste vit dans {0, 1, …, 12}. Le nombre 7 suppose qu'ajouter 20 ne change pas le reste, ce qui ne serait vrai que pour un multiple de 13.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Combien y a-t-il d'entiers a tels que |a| < 30 et dont le reste dans la division euclidienne par 7 vaut 5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le reste vaut 5, donc a s'écrit a = 7q + 5 avec q entier. La condition |7q + 5| < 30 s'écrit −30 < 7q + 5 < 30, soit −35 < 7q < 25, soit −5 < q < 3,57 : le quotient parcourt {−4, −3, −2, −1, 0, 1, 2, 3}, ce qui donne 8 entiers ✓, à savoir −23, −16, −9, −2, 5, 12, 19 et 26. Contrôle des bords : q = −5 donnerait −30, écarté car |−30| n'est pas strictement inférieur à 30, et q = 4 donnerait 33, écarté aussi. Le nombre 9 vient de l'oubli du terme 5 dans l'encadrement, qui laisserait passer q = 4. Le nombre 7 oublie la valeur q = 0, c'est-à-dire l'entier 5 lui-même, qui a pourtant bien 5 pour reste. Le nombre 4 ne compte que les solutions positives.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit n un entier. Quels sont les restes possibles modulo 5 de n² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{1, 4}"
+        },
+        {
+          "id": "b",
+          "text": "{0, 1, 4}"
+        },
+        {
+          "id": "c",
+          "text": "{0, 1, 3, 4}"
+        },
+        {
+          "id": "d",
+          "text": "{0, 1, 2, 3, 4}"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "« Pour tout entier n » ne demande que cinq cas, ceux des restes de n modulo 5. On dresse le tableau de congruence : si n ≡ 0 alors n² ≡ 0 ; si n ≡ 1 alors n² ≡ 1 ; si n ≡ 2 alors n² ≡ 4 ; si n ≡ 3 alors n² ≡ 9 ≡ 4 ; si n ≡ 4 alors n² ≡ 16 ≡ 1. Les valeurs obtenues sont donc {0, 1, 4} ✓ : un carré n'est jamais congru à 2 ni à 3 modulo 5. L'ensemble {1, 4} oublie le cas n ≡ 0, qui se produit dès que 5 divise n. L'ensemble {0, 1, 3, 4} est le résultat connu du cours pour les carrés modulo 6, transposé à tort au module 5. L'ensemble {0, 1, 2, 3, 4} suppose qu'un carré peut atteindre n'importe quel reste, ce que le tableau contredit.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit a un entier tel que a ≡ 3 (mod 7). Quel est le reste modulo 7 de 2a² − a + 4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On réduit terme à terme. D'abord a² ≡ 3² = 9 ≡ 2 (mod 7), donc 2a² ≡ 2 × 2 = 4. Ensuite −a ≡ −3, et le terme constant reste 4. Au total 2a² − a + 4 ≡ 4 − 3 + 4 = 5 (mod 7), et 5 est déjà dans {0, …, 6} : le reste vaut 5 ✓. Contrôle numérique avec a = 10, de reste 3 : 2 × 100 − 10 + 4 = 194 = 7 × 27 + 5 ✓. Le nombre 4 change le signe du terme −a et calcule 4 + 3 + 4 = 11 ≡ 4. Le nombre 2 élève 2a au carré au lieu de doubler a², ce qui donne 4a² ≡ 8 ≡ 1, puis 1 − 3 + 4 = 2. Le nombre 3 recopie le reste de a, comme si la congruence était une égalité.",
+      "difficulty": 3
+    }
+  ]
+}

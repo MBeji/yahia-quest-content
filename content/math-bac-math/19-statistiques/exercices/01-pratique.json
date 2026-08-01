@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : lire un tableau à double entrée et en tirer les marges",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Une bibliothèque scolaire suit 40 élèves pendant un mois : X désigne le nombre de livres empruntés (0, 1 ou 2) et Y le nombre de visites (1, 2 ou 3). Combien d'élèves ont emprunté 0 livre et fait 3 visites ? <svg viewBox=\"0 0 330 172\"><g stroke=\"#0f172a\" stroke-width=\"1.4\" fill=\"none\"><rect x=\"10\" y=\"10\" width=\"309\" height=\"152\"/><path d=\"M100 10 V162 M173 10 V162 M246 10 V162 M10 48 H319 M10 86 H319 M10 124 H319\"/></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\"><text x=\"55\" y=\"34\">Effectifs</text><text x=\"136.5\" y=\"34\">Y = 1</text><text x=\"209.5\" y=\"34\">Y = 2</text><text x=\"282.5\" y=\"34\">Y = 3</text><text x=\"55\" y=\"72\">X = 0</text><text x=\"55\" y=\"110\">X = 1</text><text x=\"55\" y=\"148\">X = 2</text></g><g font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"136.5\" y=\"72\">6</text><text x=\"209.5\" y=\"72\">3</text><text x=\"282.5\" y=\"72\">1</text><text x=\"136.5\" y=\"110\">4</text><text x=\"209.5\" y=\"110\">8</text><text x=\"282.5\" y=\"110\">4</text><text x=\"136.5\" y=\"148\">2</text><text x=\"209.5\" y=\"148\">5</text><text x=\"282.5\" y=\"148\">7</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La question porte sur une CASE du tableau : celle qui croise la ligne X = 0 et la colonne Y = 3. On y lit l'effectif 1 ✓ : un seul élève n'a emprunté aucun livre tout en venant trois fois. Contrôle de cohérence sur la ligne : 6 + 3 + 1 = 10, donc 10 élèves n'ont emprunté aucun livre, dont ce seul et unique « trois visites ». Le nombre 10 est justement ce total de ligne, c'est-à-dire l'effectif MARGINAL de X = 0 : il compte tous les élèves sans emprunt, quel que soit leur nombre de visites. Le nombre 12 est le total de la colonne Y = 3, soit 1 + 4 + 7 : il compte tous les élèves venus trois fois, quel que soit leur nombre d'emprunts. Le nombre 4 est la case voisine (X = 1, Y = 3) : c'est la bonne colonne, mais la mauvaise ligne.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une bibliothèque scolaire suit des élèves pendant un mois : X désigne le nombre de livres empruntés (0, 1 ou 2) et Y le nombre de visites (1, 2 ou 3). Quelle est la taille n de l'échantillon étudié ? <svg viewBox=\"0 0 330 172\"><g stroke=\"#0f172a\" stroke-width=\"1.4\" fill=\"none\"><rect x=\"10\" y=\"10\" width=\"309\" height=\"152\"/><path d=\"M100 10 V162 M173 10 V162 M246 10 V162 M10 48 H319 M10 86 H319 M10 124 H319\"/></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\"><text x=\"55\" y=\"34\">Effectifs</text><text x=\"136.5\" y=\"34\">Y = 1</text><text x=\"209.5\" y=\"34\">Y = 2</text><text x=\"282.5\" y=\"34\">Y = 3</text><text x=\"55\" y=\"72\">X = 0</text><text x=\"55\" y=\"110\">X = 1</text><text x=\"55\" y=\"148\">X = 2</text></g><g font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"136.5\" y=\"72\">6</text><text x=\"209.5\" y=\"72\">3</text><text x=\"282.5\" y=\"72\">1</text><text x=\"136.5\" y=\"110\">4</text><text x=\"209.5\" y=\"110\">8</text><text x=\"282.5\" y=\"110\">4</text><text x=\"136.5\" y=\"148\">2</text><text x=\"209.5\" y=\"148\">5</text><text x=\"282.5\" y=\"148\">7</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "14"
+        },
+        {
+          "id": "c",
+          "text": "16"
+        },
+        {
+          "id": "d",
+          "text": "40"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Chaque élève est compté dans une case et une seule : la taille de l'échantillon est la somme des neuf cases. Ligne par ligne : (6 + 3 + 1) + (4 + 8 + 4) + (2 + 5 + 7) = 10 + 16 + 14 = 40 ✓. Contrôle par l'autre marge, seconde voie indépendante : colonne par colonne, (6 + 4 + 2) + (3 + 8 + 5) + (1 + 4 + 7) = 12 + 16 + 12 = 40 ✓. Les deux marges donnent le même total, comme elles le doivent toujours — c'est la vérification à faire avant tout calcul de moyenne. Les nombres 10, 16 et 14 sont les trois effectifs marginaux de X, c'est-à-dire les totaux des lignes X = 0, X = 1 et X = 2 : ils ne comptent chacun qu'une partie de l'échantillon, et prendre l'un d'eux pour n fausserait toutes les divisions qui suivent.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une bibliothèque scolaire suit 40 élèves pendant un mois : X désigne le nombre de livres empruntés (0, 1 ou 2) et Y le nombre de visites (1, 2 ou 3). Quelle est la fréquence marginale de la valeur X = 2 ? <svg viewBox=\"0 0 330 172\"><g stroke=\"#0f172a\" stroke-width=\"1.4\" fill=\"none\"><rect x=\"10\" y=\"10\" width=\"309\" height=\"152\"/><path d=\"M100 10 V162 M173 10 V162 M246 10 V162 M10 48 H319 M10 86 H319 M10 124 H319\"/></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\"><text x=\"55\" y=\"34\">Effectifs</text><text x=\"136.5\" y=\"34\">Y = 1</text><text x=\"209.5\" y=\"34\">Y = 2</text><text x=\"282.5\" y=\"34\">Y = 3</text><text x=\"55\" y=\"72\">X = 0</text><text x=\"55\" y=\"110\">X = 1</text><text x=\"55\" y=\"148\">X = 2</text></g><g font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"136.5\" y=\"72\">6</text><text x=\"209.5\" y=\"72\">3</text><text x=\"282.5\" y=\"72\">1</text><text x=\"136.5\" y=\"110\">4</text><text x=\"209.5\" y=\"110\">8</text><text x=\"282.5\" y=\"110\">4</text><text x=\"136.5\" y=\"148\">2</text><text x=\"209.5\" y=\"148\">5</text><text x=\"282.5\" y=\"148\">7</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,175"
+        },
+        {
+          "id": "b",
+          "text": "0,30"
+        },
+        {
+          "id": "c",
+          "text": "0,35"
+        },
+        {
+          "id": "d",
+          "text": "0,40"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une fréquence marginale est un effectif marginal divisé par la taille de l'échantillon. L'effectif marginal de X = 2 est le total de sa ligne : 2 + 5 + 7 = 14, et n = 40, donc la fréquence vaut 14/40 = 0,35 ✓. Contrôle par la somme, qui doit valoir 1 : les trois effectifs marginaux de X sont 10, 16 et 14, d'où les fréquences 0,25 ; 0,40 et 0,35, et 0,25 + 0,40 + 0,35 = 1 ✓ — la marge est bonne. Le nombre 0,40 est la fréquence de X = 1 (16/40) : bonne méthode, mauvaise ligne du tableau. Le nombre 0,30 vaut 12/40, la fréquence marginale de Y = 1 ou de Y = 3 : on a lu une colonne au lieu d'une ligne, donc la marge de l'autre variable. Le nombre 0,175 vaut 7/40 : on a divisé l'effectif de la seule CASE (X = 2, Y = 3) par n, en oubliant les 2 et 5 élèves du reste de la ligne.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une bibliothèque scolaire suit 40 élèves pendant un mois : X désigne le nombre de livres empruntés (0, 1 ou 2) et Y le nombre de visites (1, 2 ou 3). Que vaut la moyenne X̄ du nombre de livres empruntés ? <svg viewBox=\"0 0 330 172\"><g stroke=\"#0f172a\" stroke-width=\"1.4\" fill=\"none\"><rect x=\"10\" y=\"10\" width=\"309\" height=\"152\"/><path d=\"M100 10 V162 M173 10 V162 M246 10 V162 M10 48 H319 M10 86 H319 M10 124 H319\"/></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\"><text x=\"55\" y=\"34\">Effectifs</text><text x=\"136.5\" y=\"34\">Y = 1</text><text x=\"209.5\" y=\"34\">Y = 2</text><text x=\"282.5\" y=\"34\">Y = 3</text><text x=\"55\" y=\"72\">X = 0</text><text x=\"55\" y=\"110\">X = 1</text><text x=\"55\" y=\"148\">X = 2</text></g><g font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"136.5\" y=\"72\">6</text><text x=\"209.5\" y=\"72\">3</text><text x=\"282.5\" y=\"72\">1</text><text x=\"136.5\" y=\"110\">4</text><text x=\"209.5\" y=\"110\">8</text><text x=\"282.5\" y=\"110\">4</text><text x=\"136.5\" y=\"148\">2</text><text x=\"209.5\" y=\"148\">5</text><text x=\"282.5\" y=\"148\">7</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "1,1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "44"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On travaille sur la MARGE de X, jamais sur les cases. Les effectifs marginaux sont 10 pour la valeur 0, 16 pour la valeur 1 et 14 pour la valeur 2, et ils totalisent bien 40. Alors Σnᵢxᵢ = 10 × 0 + 16 × 1 + 14 × 2 = 0 + 16 + 28 = 44, donc X̄ = 44/40 = 1,1 ✓. Contrôle par les écarts, dont la somme pondérée doit être nulle : 10 × (0 − 1,1) + 16 × (1 − 1,1) + 14 × (2 − 1,1) = −11 − 1,6 + 12,6 = 0 ✓. Le nombre 1 est la moyenne NON pondérée (0 + 1 + 2)/3 : elle donne le même poids aux trois valeurs, alors que 14 élèves ont emprunté 2 livres contre 10 qui n'en ont emprunté aucun. Le nombre 2 est la moyenne Ȳ de l'AUTRE variable : ses effectifs marginaux 12, 16 et 12 pour les valeurs 1, 2 et 3 donnent (12 + 32 + 36)/40 = 80/40 = 2 — on a lu la marge de Y au lieu de celle de X. Le nombre 44 est la somme Σnᵢxᵢ laissée sans division par n.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une bibliothèque scolaire suit 40 élèves pendant un mois : X désigne le nombre de livres empruntés (0, 1 ou 2) et Y le nombre de visites (1, 2 ou 3). Sachant que X̄ = 1,1, que vaut la variance V(X) ? <svg viewBox=\"0 0 330 172\"><g stroke=\"#0f172a\" stroke-width=\"1.4\" fill=\"none\"><rect x=\"10\" y=\"10\" width=\"309\" height=\"152\"/><path d=\"M100 10 V162 M173 10 V162 M246 10 V162 M10 48 H319 M10 86 H319 M10 124 H319\"/></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\"><text x=\"55\" y=\"34\">Effectifs</text><text x=\"136.5\" y=\"34\">Y = 1</text><text x=\"209.5\" y=\"34\">Y = 2</text><text x=\"282.5\" y=\"34\">Y = 3</text><text x=\"55\" y=\"72\">X = 0</text><text x=\"55\" y=\"110\">X = 1</text><text x=\"55\" y=\"148\">X = 2</text></g><g font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"136.5\" y=\"72\">6</text><text x=\"209.5\" y=\"72\">3</text><text x=\"282.5\" y=\"72\">1</text><text x=\"136.5\" y=\"110\">4</text><text x=\"209.5\" y=\"110\">8</text><text x=\"282.5\" y=\"110\">4</text><text x=\"136.5\" y=\"148\">2</text><text x=\"209.5\" y=\"148\">5</text><text x=\"282.5\" y=\"148\">7</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,59"
+        },
+        {
+          "id": "b",
+          "text": "0,77"
+        },
+        {
+          "id": "c",
+          "text": "1,8"
+        },
+        {
+          "id": "d",
+          "text": "23,6"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On reprend la marge de X : effectifs 10, 16 et 14 pour les valeurs 0, 1 et 2, avec n = 40. La formule de calcul donne Σnᵢxᵢ² = 10 × 0 + 16 × 1 + 14 × 4 = 0 + 16 + 56 = 72, puis V(X) = 72/40 − 1,1² = 1,8 − 1,21 = 0,59 ✓. Contrôle obligatoire par la formule des écarts, l'autre chemin du cours : 10 × (0 − 1,1)² + 16 × (1 − 1,1)² + 14 × (2 − 1,1)² = 10 × 1,21 + 16 × 0,01 + 14 × 0,81 = 12,1 + 0,16 + 11,34 = 23,6, et 23,6/40 = 0,59 ✓. Les deux formules concordent, la variance est juste. Le nombre 1,8 est (1/n)Σnᵢxᵢ² : on a oublié de retrancher X̄². Le nombre 23,6 est la somme des écarts au carré pondérés, à qui il manque la division par n = 40. Le nombre 0,77 est l'écart-type σ_X = √0,59 ≈ 0,77, et non la variance elle-même.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une bibliothèque scolaire suit 40 élèves pendant un mois : X désigne le nombre de livres empruntés (0, 1 ou 2) et Y le nombre de visites (1, 2 ou 3). Sachant que X̄ = 1,1 et Ȳ = 2, que vaut cov(X, Y) ? <svg viewBox=\"0 0 330 172\"><g stroke=\"#0f172a\" stroke-width=\"1.4\" fill=\"none\"><rect x=\"10\" y=\"10\" width=\"309\" height=\"152\"/><path d=\"M100 10 V162 M173 10 V162 M246 10 V162 M10 48 H319 M10 86 H319 M10 124 H319\"/></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\"><text x=\"55\" y=\"34\">Effectifs</text><text x=\"136.5\" y=\"34\">Y = 1</text><text x=\"209.5\" y=\"34\">Y = 2</text><text x=\"282.5\" y=\"34\">Y = 3</text><text x=\"55\" y=\"72\">X = 0</text><text x=\"55\" y=\"110\">X = 1</text><text x=\"55\" y=\"148\">X = 2</text></g><g font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"136.5\" y=\"72\">6</text><text x=\"209.5\" y=\"72\">3</text><text x=\"282.5\" y=\"72\">1</text><text x=\"136.5\" y=\"110\">4</text><text x=\"209.5\" y=\"110\">8</text><text x=\"282.5\" y=\"110\">4</text><text x=\"136.5\" y=\"148\">2</text><text x=\"209.5\" y=\"148\">5</text><text x=\"282.5\" y=\"148\">7</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1,75"
+        },
+        {
+          "id": "b",
+          "text": "0,25"
+        },
+        {
+          "id": "c",
+          "text": "2,2"
+        },
+        {
+          "id": "d",
+          "text": "2,45"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les données sont GROUPÉES : chaque produit xᵢyⱼ compte autant de fois que l'effectif nᵢⱼ de sa case, selon cov(X, Y) = (1/n)ΣΣnᵢⱼxᵢyⱼ − X̄·Ȳ. On balaie le tableau ligne par ligne en sautant les cases où un facteur est nul. Ligne X = 0 : tous les produits valent 0, elle apporte 0. Ligne X = 1 : 4 × (1 × 1) + 8 × (1 × 2) + 4 × (1 × 3) = 4 + 16 + 12 = 32. Ligne X = 2 : 2 × (2 × 1) + 5 × (2 × 2) + 7 × (2 × 3) = 4 + 20 + 42 = 66. Total ΣΣnᵢⱼxᵢyⱼ = 0 + 32 + 66 = 98. D'où cov(X, Y) = 98/40 − 1,1 × 2 = 2,45 − 2,2 = 0,25 ✓, positive : les gros emprunteurs sont plutôt les élèves qui viennent souvent. Contrôle par la moyenne des produits d'écarts, seconde voie indépendante : la ligne X = 0 apporte 6 × (−1,1)(−1) + 3 × (−1,1)(0) + 1 × (−1,1)(1) = 6,6 + 0 − 1,1 = 5,5 ; la ligne X = 1 apporte 4 × (−0,1)(−1) + 0 + 4 × (−0,1)(1) = 0,4 − 0,4 = 0 ; la ligne X = 2 apporte 2 × (0,9)(−1) + 0 + 7 × (0,9)(1) = −1,8 + 6,3 = 4,5 ; total 5,5 + 0 + 4,5 = 10, et 10/40 = 0,25 ✓. Le nombre 2,45 est (1/n)ΣΣnᵢⱼxᵢyⱼ : on a oublié de retrancher le produit des moyennes. Le nombre 2,2 est justement ce produit X̄·Ȳ = 1,1 × 2, recopié seul. Le nombre −1,75 oublie de pondérer par les effectifs : en sommant les neuf produits xᵢyⱼ une seule fois chacun, on obtient 18 au lieu de 98, d'où 18/40 − 2,2 = 0,45 − 2,2 = −1,75, et le signe s'inverse — la covariance dirait alors le contraire de ce que dit le tableau.",
+      "difficulty": 2
+    }
+  ]
+}

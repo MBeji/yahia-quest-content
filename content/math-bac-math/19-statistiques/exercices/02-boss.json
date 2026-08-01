@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le maître de la droite",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Un musée relève son nombre de visiteurs Y (en centaines) pendant six mois consécutifs, X étant le rang du mois : (1 ; 5), (2 ; 8), (3 ; 8), (4 ; 14), (5 ; 15), (6 ; 19). On ajuste cette série par la méthode de Mayer, en scindant le nuage en deux parties de trois points (rangs 1 à 3, puis rangs 4 à 6). Quelle est l'équation de la droite de Mayer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = 3x + 5,5"
+        },
+        {
+          "id": "b",
+          "text": "y = 2,8x + 2,2"
+        },
+        {
+          "id": "c",
+          "text": "y = 3x + 1"
+        },
+        {
+          "id": "d",
+          "text": "y = 3x + 13"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La méthode de Mayer ne demande aucune formule savante : deux points moyens partiels, la droite qui les joint, puis LE contrôle qui valide tout. 1) LE PREMIER POINT MOYEN G₁, sur les rangs 1 à 3. Abscisse : (1 + 2 + 3)/3 = 6/3 = 2. Ordonnée : (5 + 8 + 8)/3 = 21/3 = 7. Donc G₁(2 ; 7). 2) LE SECOND POINT MOYEN G₂, sur les rangs 4 à 6. Abscisse : (4 + 5 + 6)/3 = 15/3 = 5. Ordonnée : (14 + 15 + 19)/3 = 48/3 = 16. Donc G₂(5 ; 16). 3) LA PENTE : a = (16 − 7)/(5 − 2) = 9/3 = 3. 4) L'ORDONNÉE À L'ORIGINE, en écrivant que la droite passe par G₁ : b = 7 − 3 × 2 = 7 − 6 = 1. La droite de Mayer est donc y = 3x + 1 ✓. Contrôle immédiat : elle doit repasser par les deux points moyens. En x = 2 : 3 × 2 + 1 = 7, l'ordonnée de G₁ ✓ ; en x = 5 : 3 × 5 + 1 = 16, l'ordonnée de G₂ ✓. Contrôle par une seconde voie totalement indépendante, le point moyen GLOBAL, que le cours impose : X̄ = (1 + 2 + 3 + 4 + 5 + 6)/6 = 21/6 = 3,5 et Ȳ = (5 + 8 + 8 + 14 + 15 + 19)/6 = 69/6 = 11,5, donc G(3,5 ; 11,5) ; la droite de Mayer passe TOUJOURS par G, et de fait 3 × 3,5 + 1 = 10,5 + 1 = 11,5 = Ȳ ✓. Ce seul test élimine les trois autres propositions, sans refaire un calcul : 3 × 3,5 + 5,5 = 16, 2,8 × 3,5 + 2,2 = 12 et 3 × 3,5 + 13 = 23,5, aucun ne vaut 11,5. Le piège courant : calculer la pente sur les points moyens, puis l'ordonnée à l'origine sur le point moyen GLOBAL en croyant l'améliorer — on écrit b = Ȳ − a·x_G₁ = 11,5 − 3 × 2 = 5,5 et l'on obtient y = 3x + 5,5, en mélangeant l'ordonnée d'un nuage avec l'abscisse d'un autre. Le distracteur y = 3x + 13 exécute l'erreur de signe dans le report : on écrit b = 7 + 3 × 2 = 13 au lieu de 7 − 3 × 2, c'est-à-dire b = ȳ₁ + a·x̄₁. Enfin y = 2,8x + 2,2 exécute la droite des deux points EXTRÊMES au lieu des deux points moyens : a = (19 − 5)/(6 − 1) = 14/5 = 2,8 puis b = 5 − 2,8 = 2,2 ; cette droite ne s'appuie que sur deux observations sur six, et elle ne passe pas par G, ce qui la disqualifie.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une seule des affirmations suivantes sur les deux méthodes d'ajustement affine du chapitre est correcte. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La droite de Mayer est celle qui rend minimale la somme des carrés des écarts verticaux."
+        },
+        {
+          "id": "b",
+          "text": "Si le coefficient de corrélation est proche de 0, la droite des moindres carrés n'existe pas."
+        },
+        {
+          "id": "c",
+          "text": "Modifier le découpage du nuage en deux parties ne modifie jamais la droite de Mayer."
+        },
+        {
+          "id": "d",
+          "text": "La droite de Mayer et celle des moindres carrés passent toutes deux par le point moyen G."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les quatre affirmations portent sur les deux méthodes du cours ; une seule survit à la lecture des encadrés. La bonne est : « La droite de Mayer et celle des moindres carrés passent toutes deux par le point moyen G. » ✓ Le principe de Mayer l'énonce explicitement — la droite (G₁G₂) passe par le point moyen G du nuage global — et la conséquence du théorème des moindres carrés l'énonce pour les DEUX droites de régression, celle de Y en X et celle de X en Y. Vérification directe sur la droite des moindres carrés : son équation y = (cov/σ_X²)(x − X̄) + Ȳ donne, pour x = X̄, la valeur y = 0 + Ȳ = Ȳ, donc elle contient bien le point (X̄ ; Ȳ) = G ✓. C'est cette propriété partagée qui fait du passage par G le contrôle universel d'un ajustement — mais un contrôle qui vérifie l'ordonnée à l'origine, jamais la pente. POURQUOI LES TROIS AUTRES SONT FAUSSES. « La droite de Mayer est celle qui rend minimale la somme des carrés des écarts verticaux » inverse les rôles : c'est la définition même de la droite des MOINDRES CARRÉS, et Mayer ne minimise rien du tout — elle relie deux barycentres partiels. Sur l'exemple du cours, la droite des moindres carrés donne une somme de carrés de 7,20 contre 7,911 pour la droite de Mayer : Mayer est donc strictement moins bonne, et c'est exactement ce qui a motivé la seconde méthode. « Si le coefficient de corrélation est proche de 0, la droite des moindres carrés n'existe pas » confond exister et servir : le théorème n'exige que σ_X ≠ 0, et les formules a₀ = cov/σ_X² et b₀ = Ȳ − a₀X̄ produisent une droite pour n'importe quel nuage, fût-il informe. Ce que dit le cours est autre chose : lorsque |ρ| ne dépasse pas le seuil √3/2 ≈ 0,866, cette droite existe mais les prévisions qu'on en tire ne sont pas raisonnables. « Modifier le découpage du nuage en deux parties ne modifie jamais la droite de Mayer » est le piège courant, celui qui fait croire la méthode canonique : changer le découpage change les deux points moyens partiels, donc la pente. Contre-exemple immédiat, sur la série (1 ; 5), (2 ; 8), (3 ; 8), (4 ; 14), (5 ; 15), (6 ; 19) : le découpage 3-3 donne G₁(2 ; 7) et G₂(5 ; 16), de pente (16 − 7)/(5 − 2) = 3 ; le découpage 2-4 donne G₁(1,5 ; 6,5) et G₂(4,5 ; 14), de pente (14 − 6,5)/(4,5 − 1,5) = 7,5/3 = 2,5. Deux découpages, deux pentes — les deux droites passent pourtant par G(3,5 ; 11,5), ce qui montre bien que ce contrôle ne départage pas les pentes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une pépinière relève le nombre de plants vendus Y (en centaines) sur cinq semaines, X désignant le rang de la semaine : (1 ; 12), (2 ; 15), (3 ; 21), (4 ; 22), (5 ; 30). En utilisant la droite de régression de Y en X obtenue par les moindres carrés, quelle prévision de ventes obtient-on pour la semaine de rang 8 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50,4"
+        },
+        {
+          "id": "b",
+          "text": "41,5"
+        },
+        {
+          "id": "c",
+          "text": "23,9"
+        },
+        {
+          "id": "d",
+          "text": "67,3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Quatre étapes dépendantes : les moyennes, la variance de X, la covariance, puis la droite — et seulement alors la prévision. 1) LES MOYENNES. Σxᵢ = 1 + 2 + 3 + 4 + 5 = 15 donc X̄ = 15/5 = 3. Σyᵢ = 12 + 15 + 21 + 22 + 30 = 100 donc Ȳ = 100/5 = 20. Le point moyen est G(3 ; 20). 2) LA VARIANCE DE X. Σxᵢ² = 1 + 4 + 9 + 16 + 25 = 55, donc V(X) = 55/5 − 3² = 11 − 9 = 2 ; contrôle par la formule des écarts : [(−2)² + (−1)² + 0² + 1² + 2²]/5 = (4 + 1 + 0 + 1 + 4)/5 = 10/5 = 2 ✓, les deux chemins concordent. 3) LA COVARIANCE. Σxᵢyᵢ = 1 × 12 + 2 × 15 + 3 × 21 + 4 × 22 + 5 × 30 = 12 + 30 + 63 + 88 + 150 = 343, donc cov(X, Y) = 343/5 − 3 × 20 = 68,6 − 60 = 8,6. Contrôle par les écarts, seconde voie indépendante : les écarts de X valent −2 ; −1 ; 0 ; 1 ; 2 et ceux de Y valent −8 ; −5 ; 1 ; 2 ; 10 ; la somme des produits fait (−2)(−8) + (−1)(−5) + 0 + (1)(2) + (2)(10) = 16 + 5 + 0 + 2 + 20 = 43, et 43/5 = 8,6 ✓. 4) LA DROITE : a = cov/σ_X² = 8,6/2 = 4,3, puis b = Ȳ − a·X̄ = 20 − 4,3 × 3 = 20 − 12,9 = 7,1, soit y = 4,3x + 7,1. Contrôle par le point moyen : 4,3 × 3 + 7,1 = 12,9 + 7,1 = 20 = Ȳ ✓. Contrôle par les résidus : les valeurs théoriques sont 11,4 ; 15,7 ; 20 ; 24,3 ; 28,6, les écarts observés − théoriques valent 0,6 ; −0,7 ; 1 ; −2,3 ; 1,4 et leur somme fait 0,6 − 0,7 + 1 − 2,3 + 1,4 = 0 ✓. 5) LA PRÉVISION au rang 8 : y = 4,3 × 8 + 7,1 = 34,4 + 7,1 = 41,5 ✓, soit environ 4 150 plants. Contrôle de vraisemblance : la droite gagne 4,3 centaines par semaine ; entre le rang 5 (28,6 théorique) et le rang 8, il s'écoule trois semaines, soit 28,6 + 3 × 4,3 = 28,6 + 12,9 = 41,5 ✓. Le piège courant : diviser la covariance par l'ÉCART-TYPE au lieu de la VARIANCE ; on écrit a = 8,6/√2 ≈ 6,081 puis b = 20 − 6,081 × 3 ≈ 1,757, d'où une prévision 6,081 × 8 + 1,757 ≈ 50,4 — le théorème donne bien a₀ = cov/σ_X², un carré au dénominateur. Le distracteur 23,9 exécute l'oubli du terme −X̄² dans la variance : on prend V(X) = 55/5 = 11, d'où a ≈ 0,782, b = 20 − 2,345 ≈ 17,655 et 0,782 × 8 + 17,655 ≈ 23,9 ; la pente obtenue est six fois trop faible pour un nuage qui monte de 12 à 30. Enfin 67,3 exécute l'erreur de signe sur l'ordonnée à l'origine : avec b = Ȳ + a·X̄ = 20 + 12,9 = 32,9, on obtient 4,3 × 8 + 32,9 = 67,3, et cette droite ne passe plus par G puisque 4,3 × 3 + 32,9 = 45,8 au lieu de 20.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour une série statistique double (X, Y), la droite de régression de Y en X a pour équation y = 0,8x + 3 et celle de X en Y a pour équation x = 0,9y + 1,5. Que peut-on conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ρ ≈ 0,849 : l'ajustement affine n'est pas justifié."
+        },
+        {
+          "id": "b",
+          "text": "ρ ≈ 0,849 : l'ajustement affine est justifié."
+        },
+        {
+          "id": "c",
+          "text": "ρ ≈ 0,894 : l'ajustement affine est justifié."
+        },
+        {
+          "id": "d",
+          "text": "ρ = 0,72 : l'ajustement affine n'est pas justifié."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On ne dispose ni des données ni des écarts-types : il faut passer par la relation qui relie les deux droites au coefficient de corrélation. 1) LA RELATION. La pente de la droite de Y en X vaut a = cov/σ_X² = 0,8 ; celle de la droite de X en Y vaut a' = cov/σ_Y² = 0,9. Leur produit fait a × a' = cov²/(σ_X²σ_Y²) = ρ², exactement la formule de contrôle du cours. 2) LE CALCUL : ρ² = 0,8 × 0,9 = 0,72. 3) LE SIGNE. Les deux pentes sont positives, donc cov > 0 et ρ est positif : ρ = √0,72. 4) LA VALEUR : √0,72 ≈ 0,8485, soit ρ ≈ 0,849. 5) LE VERDICT, qui est la vraie question. Le seuil du cours est √3/2 ≈ 0,866 ; or 0,849 < 0,866, donc l'ajustement affine n'est PAS justifié malgré une apparence de forte liaison. La conclusion est bien ρ ≈ 0,849 : l'ajustement affine n'est pas justifié ✓. Contrôle par une seconde voie totalement indépendante, en reconstruisant une série compatible. Prenons V(X) = 1 : alors cov = 0,8 × 1 = 0,8, et de cov/σ_Y² = 0,9 on tire σ_Y² = 0,8/0,9 = 8/9, donc σ_X = 1 et σ_Y = √(8/9) ≈ 0,9428 ; on revient à la définition, ρ = cov/(σ_Xσ_Y) = 0,8/(1 × 0,9428) ≈ 0,8485 ✓ — le même nombre, obtenu sans jamais multiplier les pentes. Contrôle de cohérence : ρ² = 0,72 ≤ 1, ce qui est obligatoire, et les deux droites se coupent bien en un unique point, le point moyen G, qu'on obtient en résolvant x = 0,9(0,8x + 3) + 1,5, soit 0,28x = 4,2 et x = 15, puis y = 0,8 × 15 + 3 = 15 : G(15 ; 15) ✓. Le piège courant, celui qui décide la question : comparer 0,849 au seuil « à vue » et le déclarer suffisant parce qu'il est « proche de 1 ». Le seuil n'est pas 0,8, ni 0,75 : c'est √3/2 = 0,866…, et 0,849 lui est strictement inférieur — un seuil se franchit, il ne s'apprécie pas. Le distracteur ρ ≈ 0,894 exécute l'oubli de la seconde droite : on prend ρ² = 0,8, la seule pente de Y en X, d'où ρ = √0,8 ≈ 0,894, qui dépasse cette fois le seuil et inverse le verdict ; or une pente seule dépend des unités et ne peut pas être un coefficient de corrélation. Enfin ρ = 0,72 exécute la confusion entre ρ et ρ² : on annonce le produit des pentes tel quel, sans prendre la racine ; le verdict tombe juste par accident, mais la valeur est fausse, et l'écart n'est pas anodin puisque 0,72 et 0,849 ne se lisent pas de la même façon.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une tache d'huile s'étale à la surface de l'eau ; on mesure son aire Y (en cm²) au bout de X minutes. Le nuage de points est nettement incurvé, alors on pose Z = √Y : la série (X, Z) donne ρ_XZ ≈ 0,999 et pour droite de régression de Z en X : z = 1,8x + 0,2. Quelle aire peut-on prévoir au bout de 5 minutes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "9,2 cm²"
+        },
+        {
+          "id": "b",
+          "text": "81,04 cm²"
+        },
+        {
+          "id": "c",
+          "text": "3,03 cm²"
+        },
+        {
+          "id": "d",
+          "text": "84,64 cm²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'ajustement a été fait sur la série TRANSFORMÉE (X, Z) : la droite prédit Z, jamais Y directement. Il faut donc prévoir z, puis remonter à y. 1) LA VALIDATION, à faire avant tout calcul : c'est ρ_XZ ≈ 0,999 qui compte, et non un coefficient calculé sur (X, Y) ; comme 0,999 > √3/2 ≈ 0,866, l'ajustement affine de Z en X est justifié et la prévision a un sens. 2) LA PRÉVISION SUR Z, au rang x = 5 : z = 1,8 × 5 + 0,2 = 9 + 0,2 = 9,2. 3) LE RETOUR À LA VARIABLE INITIALE. De Z = √Y on tire Y = Z², donc y = 9,2² = 84,64. La prévision est 84,64 cm² ✓. Détail du carré, pour ne pas le bâcler : 9,2² = (9 + 0,2)² = 81 + 2 × 9 × 0,2 + 0,04 = 81 + 3,6 + 0,04 = 84,64 ✓. Contrôle par une seconde voie totalement indépendante, en repartant du résultat : si l'aire vaut 84,64 cm², alors z devrait valoir √84,64 = 9,2, et la droite en x = 5 donne bien 9,2 ✓ — la transformation et son inverse se referment. Contrôle de cohérence du modèle : y = (1,8x + 0,2)² est une fonction du second degré en x, donc l'aire croît de plus en plus vite, ce qui est exactement l'allure incurvée observée sur le nuage de départ ; et en x = 4 on obtiendrait (7,4)² = 54,76, soit près de 30 cm² de moins en une seule minute d'écart, cohérent avec cette accélération. Le piège courant : oublier de revenir à la variable initiale et annoncer 9,2 cm² ; 9,2 est une valeur de Z, c'est-à-dire une racine carrée d'aire — homogène à une longueur, pas à une aire. C'est la faute classique de tout ajustement non affine, et elle se repère à l'unité. Le distracteur 81,04 cm² exécute le carré terme à terme : on écrit (1,8 × 5)² + 0,2² = 81 + 0,04 = 81,04, en oubliant le double produit 2 × 9 × 0,2 = 3,6 ; le carré d'une somme n'est pas la somme des carrés. Enfin 3,03 cm² exécute la transformation à l'envers : on applique une seconde fois la racine, √9,2 ≈ 3,03, comme si Z = √Y se retournait en Y = √Z ; la relation inverse d'une racine carrée est un carré, pas une autre racine.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une série statistique double (X, Y) vérifie cov(X, Y) = 24, σ_X = 4 et σ_Y = 10. On pose U = 2X (changement d'unité sur X) et W = Y − 3 (changement d'origine sur Y). Que valent la covariance et le coefficient de corrélation de la nouvelle série (U, W) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "cov(U, W) = 24 et ρ_UW = 0,6"
+        },
+        {
+          "id": "b",
+          "text": "cov(U, W) = 48 et ρ_UW = 0,6"
+        },
+        {
+          "id": "c",
+          "text": "cov(U, W) = 48 et ρ_UW = 1,2"
+        },
+        {
+          "id": "d",
+          "text": "cov(U, W) = 45 et ρ_UW = 0,6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Toute la question tient dans une distinction du cours : la covariance dépend des unités, le coefficient de corrélation n'en dépend pas. On la démontre ici sur les écarts à la moyenne, qui sont la matière première des deux formules. 1) L'EFFET SUR LES ÉCARTS. Si U = 2X, alors Ū = 2X̄, donc uᵢ − Ū = 2(xᵢ − X̄) : chaque écart est doublé. Si W = Y − 3, alors W̄ = Ȳ − 3, donc wᵢ − W̄ = (yᵢ − 3) − (Ȳ − 3) = yᵢ − Ȳ : les écarts sont INCHANGÉS, la constante disparaît par soustraction. 2) LA COVARIANCE, moyenne des produits d'écarts : chaque produit est multiplié par 2 et par 1, donc cov(U, W) = 2 × cov(X, Y) = 2 × 24 = 48. 3) LES ÉCARTS-TYPES : σ_U = 2σ_X = 2 × 4 = 8 et σ_W = σ_Y = 10, car un écart-type se lit lui aussi sur les écarts. 4) LE COEFFICIENT : ρ_UW = 48/(8 × 10) = 48/80 = 0,6. D'où cov(U, W) = 48 et ρ_UW = 0,6 ✓. Contrôle par une seconde voie totalement indépendante, le coefficient de départ : ρ_XY = 24/(4 × 10) = 24/40 = 0,6, et la propriété du cours affirme que ρ est invariant par changement d'unité ou d'origine — on retrouve donc 0,6 sans calculer ni cov(U, W) ni σ_U ✓. Contrôle de cohérence : le facteur 2 apparaît une fois au numérateur et une fois au dénominateur, il se simplifie ; c'est précisément le mécanisme qui donne à ρ une échelle absolue, alors que la covariance, elle, changerait encore si l'on comptait Y en milliers. Le piège courant : croire que les deux quantités se comportent pareil et laisser la covariance inchangée à 24 sous prétexte que « le lien entre les deux séries n'a pas bougé ». Le lien n'a effectivement pas bougé — et c'est ρ qui le mesure ; la covariance, elle, est exprimée dans le produit des unités et suit mécaniquement le facteur 2. Le distracteur cov(U, W) = 48 et ρ_UW = 1,2 exécute la propagation du facteur jusqu'au bout : on double la covariance mais on oublie de doubler σ_U, d'où 48/(4 × 10) = 1,2 ; ce résultat s'auto-réfute, puisque le cours impose −1 ≤ ρ ≤ 1. Enfin cov(U, W) = 45 et ρ_UW = 0,6 exécute la translation appliquée à la covariance : on écrit 2 × 24 − 3 = 45, comme si retrancher 3 à Y retranchait 3 à la covariance ; or une covariance ne se calcule que sur des écarts à la moyenne, et une translation ne les modifie pas.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Probabilités",
+  "questions": [
+    {
+      "prompt": "Un digicode est formé de 3 chiffres choisis parmi 0, 1, ..., 9, un même chiffre pouvant être répété. Combien de codes différents peut-on former ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "120"
+        },
+        {
+          "id": "b",
+          "text": "720"
+        },
+        {
+          "id": "c",
+          "text": "1000"
+        },
+        {
+          "id": "d",
+          "text": "3628800"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un code est un 3-uplet d'éléments d'un ensemble à 10 éléments, avec répétitions autorisées : le nombre cherché est 10³ = 1000 ✓. Contrôle par décomposition : chacune des 3 positions se remplit indépendamment de 10 façons, soit 10 × 10 × 10 = 1000. Le nombre 720 est A_10^3 = 10 × 9 × 8, c'est-à-dire le compte des codes à chiffres deux à deux distincts : il oublie que la répétition est permise. Le nombre 120 est C_10^3 = 720/6, qui compte des ensembles de 3 chiffres sans tenir compte de l'ordre, alors qu'un code est ordonné. Le nombre 3628800 est 10!, le nombre de façons de ranger les dix chiffres en entier.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un club de 9 membres élit un bureau formé d'un président, d'un secrétaire et d'un trésorier, trois personnes différentes. Combien de bureaux différents peut-on former ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "84"
+        },
+        {
+          "id": "b",
+          "text": "504"
+        },
+        {
+          "id": "c",
+          "text": "729"
+        },
+        {
+          "id": "d",
+          "text": "362880"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les trois membres sont distincts et les trois postes ne jouent pas le même rôle : l'ordre compte, on dénombre des arrangements. On obtient A_9^3 = 9!/6! = 9 × 8 × 7 = 504 ✓. Contrôle par étapes : 9 choix pour le président, 8 pour le secrétaire, 7 pour le trésorier. Le nombre 84 est C_9^3, qui compte les groupes de 3 membres sans leur attribuer de poste ; comme A_9^3 = 3! × C_9^3, on a bien 6 × 84 = 504. Le nombre 729 est 9³, valable seulement si une même personne pouvait cumuler deux postes. Le nombre 362880 est 9!, le nombre de façons d'ordonner les neuf membres.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut C_10^7 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "120"
+        },
+        {
+          "id": "b",
+          "text": "210"
+        },
+        {
+          "id": "c",
+          "text": "720"
+        },
+        {
+          "id": "d",
+          "text": "604800"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La symétrie du cours donne C_10^7 = C_10^(10−7) = C_10^3 = (10 × 9 × 8)/(3 × 2 × 1) = 720/6 = 120 ✓. Contrôle par la définition : 10!/(3!7!) = 3628800/(6 × 5040) = 3628800/30240 = 120. Le nombre 210 est C_10^4 : c'est ce qu'on obtient en se trompant d'une unité sur le complément et en écrivant 10 − 6 au lieu de 10 − 7. Le nombre 720 est A_10^3, qui tient compte de l'ordre alors qu'une combinaison est une partie. Le nombre 604800 est A_10^7 = 10!/3!, l'arrangement correspondant.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "De combien de façons peut-on ranger côte à côte 7 livres tous différents sur une étagère ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "49"
+        },
+        {
+          "id": "b",
+          "text": "128"
+        },
+        {
+          "id": "c",
+          "text": "5040"
+        },
+        {
+          "id": "d",
+          "text": "823543"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ranger tous les éléments d'un ensemble à 7 éléments, c'est former une permutation : le nombre cherché est 7! = 7 × 6 × 5 × 4 × 3 × 2 × 1 = 5040 ✓. Contrôle par étapes : 7 livres possibles à la première place, 6 à la deuxième, et ainsi de suite jusqu'à 1. Le nombre 49 est 7², qui ne concerne que deux positions. Le nombre 128 est 2⁷, le nombre de parties d'un ensemble à 7 éléments : il répond à « quels livres choisir », pas à « dans quel ordre les ranger ». Le nombre 823543 est 7⁷, qui autoriserait de placer le même livre à plusieurs places à la fois.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit A et B deux événements tels que p(A) = 0,5 ; p(B) = 0,4 et p(A ∩ B) = 0,15. Que vaut p(A ∪ B) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,2"
+        },
+        {
+          "id": "b",
+          "text": "0,25"
+        },
+        {
+          "id": "c",
+          "text": "0,6"
+        },
+        {
+          "id": "d",
+          "text": "0,75"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La propriété du cours donne p(A ∪ B) = p(A) + p(B) − p(A ∩ B) = 0,5 + 0,4 − 0,15 = 0,9 − 0,15 = 0,75 ✓. Le résultat est bien dans [0, 1] et supérieur à p(A) = 0,5, comme le veut l'inclusion A ⊂ A ∪ B. Le nombre 0,6 retranche l'intersection deux fois : 0,9 − 0,30. Le nombre 0,2 est le produit 0,5 × 0,4, qui ne serait la probabilité de A ∩ B que si A et B étaient indépendants — ce qui n'est pas le cas ici puisque p(A ∩ B) = 0,15. Le nombre 0,25 est la probabilité de l'événement contraire, 1 − 0,75.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une roue de loterie s'arrête sur l'un des quatre secteurs A, B, C ou D. On sait que p(A) = 0,2 ; p(B) = 0,35 et p(C) = 0,15. Que vaut p(D) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,25"
+        },
+        {
+          "id": "b",
+          "text": "0,3"
+        },
+        {
+          "id": "c",
+          "text": "0,65"
+        },
+        {
+          "id": "d",
+          "text": "0,7"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les quatre secteurs sont les événements élémentaires de l'univers, donc leurs probabilités ont pour somme 1. Comme 0,2 + 0,35 + 0,15 = 0,7, il reste p(D) = 1 − 0,7 = 0,3 ✓. Contrôle : 0,2 + 0,35 + 0,15 + 0,3 = 1 exactement. Le nombre 0,7 est justement cette somme des trois premières probabilités, pas le complément. Le nombre 0,25 suppose l'équiprobabilité des quatre secteurs, alors que les données la contredisent. Le nombre 0,65 est 1 − 0,35, comme si D était le contraire du seul secteur B.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une urne contient 5 boules rouges et 3 boules vertes, indiscernables au toucher. On tire simultanément 2 boules. Quelle est la probabilité d'obtenir deux boules rouges ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/28"
+        },
+        {
+          "id": "b",
+          "text": "5/14"
+        },
+        {
+          "id": "c",
+          "text": "25/64"
+        },
+        {
+          "id": "d",
+          "text": "15/28"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les boules étant indiscernables, il y a équiprobabilité : l'univers compte C_8^2 = 28 tirages et les tirages favorables sont C_5^2 = 10, d'où 10/28 = 5/14 ✓. Contrôle par décomposition : les 28 tirages se répartissent en 10 « deux rouges », 15 « une de chaque » et 3 « deux vertes », et 10 + 15 + 3 = 28. Le nombre 15/28 est justement la probabilité d'une boule de chaque couleur. Le nombre 3/28 est celle de deux boules vertes, C_3^2/C_8^2. Le nombre 25/64 est (5/8)², qui vaudrait pour deux tirages successifs avec remise, alors qu'ici la première boule n'est pas remise.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit A et B deux événements tels que p(B) = 0,5 et p(A ∩ B) = 0,2. Que vaut p(A/B) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,1"
+        },
+        {
+          "id": "b",
+          "text": "0,2"
+        },
+        {
+          "id": "c",
+          "text": "0,3"
+        },
+        {
+          "id": "d",
+          "text": "0,4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Par définition p(A/B) = p(A ∩ B)/p(B) = 0,2/0,5 = 0,4 ✓. Contrôle par la formule des probabilités composées : p(B) × p(A/B) = 0,5 × 0,4 = 0,2, on retrouve bien p(A ∩ B). Le nombre 0,1 est le produit 0,5 × 0,2, c'est-à-dire une multiplication au lieu d'une division. Le nombre 0,2 recopie p(A ∩ B) : conditionner, c'est justement ramener cette probabilité à l'univers réduit B, donc la diviser par p(B) et l'augmenter. Le nombre 0,3 est la différence 0,5 − 0,2, qui n'a aucun sens ici.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit A et B deux événements de probabilités non nulles. Laquelle de ces affirmations est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si A et B sont incompatibles, alors ils ne sont pas indépendants."
+        },
+        {
+          "id": "b",
+          "text": "Si A et B sont incompatibles, alors ils sont indépendants."
+        },
+        {
+          "id": "c",
+          "text": "Si A et B sont indépendants, alors p(A ∩ B) = 0."
+        },
+        {
+          "id": "d",
+          "text": "Si A et B sont indépendants, alors p(A ∪ B) = p(A) + p(B)."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Incompatibles signifie A ∩ B = ∅, donc p(A ∩ B) = 0, tandis que p(A) × p(B) > 0 puisque les deux probabilités sont non nulles : les deux nombres diffèrent, donc A et B ne sont jamais indépendants ✓. C'est pourquoi l'affirmation inverse, « incompatibles donc indépendants », est fausse : incompatible parle des issues, indépendant parle de l'information. Affirmer que l'indépendance entraîne p(A ∩ B) = 0 est faux aussi : elle entraîne au contraire p(A ∩ B) = p(A) × p(B) > 0. Enfin p(A ∪ B) = p(A) + p(B) caractérise l'incompatibilité, pas l'indépendance : pour deux événements indépendants on a p(A ∪ B) = p(A) + p(B) − p(A)p(B).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une variable aléatoire X prend les valeurs −2, 1 et 4 avec p(X = −2) = 0,5 ; p(X = 1) = 0,2 et p(X = 4) = 0,3. Que vaut E(X) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,4"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2,4"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La loi est cohérente puisque 0,5 + 0,2 + 0,3 = 1. L'espérance est la somme des valeurs pondérées par leurs probabilités : E(X) = (−2) × 0,5 + 1 × 0,2 + 4 × 0,3 = −1 + 0,2 + 1,2 = 0,4 ✓. Le nombre 2,4 vient d'avoir oublié le signe de la valeur −2 : 1 + 0,2 + 1,2 = 2,4. Le nombre 1 est la moyenne non pondérée des trois valeurs, (−2 + 1 + 4)/3, qui traiterait les trois issues comme équiprobables alors qu'elles ne le sont pas. Le nombre 3 est la simple somme des valeurs prises, sans aucune pondération.",
+      "difficulty": 2
+    }
+  ]
+}

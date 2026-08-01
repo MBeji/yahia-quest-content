@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : marges, dispersion et covariance",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "On a relevé la durée d'attente X, en minutes, de 20 clients d'un guichet : 5 clients ont attendu une durée de la classe [0, 10[, 10 clients une durée de la classe [10, 20[ et 5 clients une durée de la classe [20, 30[. Quelle est la durée moyenne d'attente, en minutes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "20"
+        },
+        {
+          "id": "d",
+          "text": "300"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La variable est CONTINUE : le cours impose de remplacer chaque classe par son centre, puis d'appliquer la formule ordinaire X̄ = (1/n)Σnᵢxᵢ. Les centres sont (0 + 10)/2 = 5, (10 + 20)/2 = 15 et (20 + 30)/2 = 25, d'effectifs 5, 10 et 5, avec n = 5 + 10 + 5 = 20. Alors Σnᵢxᵢ = 5 × 5 + 10 × 15 + 5 × 25 = 25 + 150 + 125 = 300, donc X̄ = 300/20 = 15 minutes ✓. Contrôle par la symétrie : les effectifs 5, 10, 5 sont symétriques autour de la classe centrale, dont le centre est justement 15 — la moyenne doit tomber pile dessus ✓. Le nombre 10 remplace chaque classe par sa borne INFÉRIEURE : (5 × 0 + 10 × 10 + 5 × 20)/20 = 200/20 = 10, ce qui sous-estime systématiquement toutes les attentes. Le nombre 20 fait l'erreur symétrique avec les bornes supérieures : (5 × 10 + 10 × 20 + 5 × 30)/20 = 400/20 = 20. Le nombre 300 est la somme Σnᵢxᵢ laissée sans division par n = 20 : ce serait le temps d'attente cumulé des 20 clients, pas leur moyenne.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une série statistique X prend la valeur 2 avec l'effectif 3, la valeur 4 avec l'effectif 5, la valeur 6 avec l'effectif 4 et la valeur 8 avec l'effectif 8. Que vaut son écart-type σ_X, arrondi au centième ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,22"
+        },
+        {
+          "id": "b",
+          "text": "4,91"
+        },
+        {
+          "id": "c",
+          "text": "6,12"
+        },
+        {
+          "id": "d",
+          "text": "9,91"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Trois étapes, dans cet ordre. 1) L'EFFECTIF TOTAL : n = 3 + 5 + 4 + 8 = 20. 2) LA MOYENNE : Σnᵢxᵢ = 3 × 2 + 5 × 4 + 4 × 6 + 8 × 8 = 6 + 20 + 24 + 64 = 114, donc X̄ = 114/20 = 5,7. 3) LA VARIANCE, par la formule de calcul : Σnᵢxᵢ² = 3 × 4 + 5 × 16 + 4 × 36 + 8 × 64 = 12 + 80 + 144 + 512 = 748, donc V(X) = 748/20 − 5,7² = 37,4 − 32,49 = 4,91. L'écart-type en est la racine : σ_X = √4,91 ≈ 2,22 ✓. Contrôle obligatoire par la seconde formule, celle des écarts : 3 × (2 − 5,7)² + 5 × (4 − 5,7)² + 4 × (6 − 5,7)² + 8 × (8 − 5,7)² = 3 × 13,69 + 5 × 2,89 + 4 × 0,09 + 8 × 5,29 = 41,07 + 14,45 + 0,36 + 42,32 = 98,2, et 98,2/20 = 4,91 ✓ — la variance est confirmée par deux chemins indépendants. Contrôle de vraisemblance : un écart-type de 2,22 sur des valeurs allant de 2 à 8 est plausible, alors qu'un écart-type supérieur à l'étendue 6 ne le serait pas. Le nombre 4,91 est la VARIANCE, dont on a oublié de prendre la racine. Le nombre 6,12 est √37,4 : on a pris la racine avant de retrancher X̄². Le nombre 9,91 est √98,2 : on a oublié de diviser la somme des écarts au carré par n = 20.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une série double (X, Y) est formée des cinq couples (2 ; 18), (4 ; 15), (6 ; 13), (8 ; 10) et (10 ; 9). Quelles sont les coordonnées du point moyen G, et quel est le signe de cov(X, Y) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "G(6 ; 13) et cov(X, Y) > 0"
+        },
+        {
+          "id": "b",
+          "text": "G(30 ; 65) et cov(X, Y) > 0"
+        },
+        {
+          "id": "c",
+          "text": "G(6 ; 13) et cov(X, Y) < 0"
+        },
+        {
+          "id": "d",
+          "text": "G(13 ; 6) et cov(X, Y) < 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "1) LE POINT MOYEN. Σxᵢ = 2 + 4 + 6 + 8 + 10 = 30 et n = 5, donc X̄ = 30/5 = 6 ; Σyᵢ = 18 + 15 + 13 + 10 + 9 = 65, donc Ȳ = 65/5 = 13. Le point moyen est G(6 ; 13). 2) LE SIGNE. Y décroît régulièrement quand X croît : le nuage descend, donc les deux variables varient en sens contraire et cov(X, Y) < 0. La réponse est G(6 ; 13) et cov(X, Y) < 0 ✓. Vérification par le calcul, qu'on peut mener jusqu'au bout : Σxᵢyᵢ = 2 × 18 + 4 × 15 + 6 × 13 + 8 × 10 + 10 × 9 = 36 + 60 + 78 + 80 + 90 = 344, donc cov(X, Y) = 344/5 − 6 × 13 = 68,8 − 78 = −9,2, effectivement négative ✓. Contrôle par les produits d'écarts, seconde voie indépendante : les écarts de X valent −4 ; −2 ; 0 ; 2 ; 4 et ceux de Y valent 5 ; 2 ; 0 ; −3 ; −4 ; les produits font −20 ; −4 ; 0 ; −6 ; −16, de somme −46, et −46/5 = −9,2 ✓. Annoncer cov(X, Y) > 0 avec le bon point moyen, c'est lire le nuage à l'envers : ici Y perd 9 unités quand X en gagne 8. Le point G(30 ; 65) garde les deux sommes brutes sans les diviser par n = 5. Le point G(13 ; 6) intervertit les deux coordonnées : l'abscisse d'un point moyen est toujours la moyenne de la variable portée par l'axe des abscisses, donc X̄ = 6.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une étude porte sur 50 candidats : X est le nombre d'heures de révision hebdomadaires (5, 10 ou 15) et Y le nombre d'exercices résolus par jour (1, 2 ou 3). Un effectif du tableau a été effacé. Quel est l'effectif marginal de la valeur Y = 3 ? <svg viewBox=\"0 0 330 172\"><g stroke=\"#0f172a\" stroke-width=\"1.4\" fill=\"none\"><rect x=\"10\" y=\"10\" width=\"309\" height=\"152\"/><path d=\"M100 10 V162 M173 10 V162 M246 10 V162 M10 48 H319 M10 86 H319 M10 124 H319\"/></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\"><text x=\"55\" y=\"34\">Effectifs</text><text x=\"136.5\" y=\"34\">Y = 1</text><text x=\"209.5\" y=\"34\">Y = 2</text><text x=\"282.5\" y=\"34\">Y = 3</text><text x=\"55\" y=\"72\">X = 5</text><text x=\"55\" y=\"110\">X = 10</text><text x=\"55\" y=\"148\">X = 15</text></g><g font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"136.5\" y=\"72\">6</text><text x=\"209.5\" y=\"72\">4</text><text x=\"282.5\" y=\"72\">2</text><text x=\"136.5\" y=\"110\">3</text><text x=\"209.5\" y=\"110\">11</text><text x=\"282.5\" y=\"110\">8</text><text x=\"136.5\" y=\"148\">2</text><text x=\"209.5\" y=\"148\">5</text><text x=\"282.5\" y=\"148\">?</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "16"
+        },
+        {
+          "id": "d",
+          "text": "19"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Deux étapes : retrouver la case, puis seulement additionner la colonne. 1) LA CASE MANQUANTE. La somme des huit effectifs lisibles vaut 6 + 4 + 2 + 3 + 11 + 8 + 2 + 5 = 41, et l'échantillon compte 50 candidats, donc la case (X = 15, Y = 3) porte 50 − 41 = 9. 2) L'EFFECTIF MARGINAL DE Y = 3, c'est-à-dire le total de sa colonne : 2 + 8 + 9 = 19 ✓. Contrôle par les deux marges, qui doivent redonner 50 : les lignes valent 6 + 4 + 2 = 12, 3 + 11 + 8 = 22 et 2 + 5 + 9 = 16, soit 12 + 22 + 16 = 50 ✓ ; les colonnes valent 6 + 3 + 2 = 11, 4 + 11 + 5 = 20 et 19, soit 11 + 20 + 19 = 50 ✓. Le nombre 9 est la case retrouvée à l'étape 1 : c'est un résultat intermédiaire, pas la marge demandée. Le nombre 10 additionne la colonne en oubliant la case reconstituée, 2 + 8. Le nombre 16 est le total de la LIGNE X = 15, c'est-à-dire la marge de l'autre variable : bonne arithmétique, mauvaise direction de lecture.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une étude porte sur 50 candidats : X est le nombre d'heures de révision hebdomadaires (5, 10 ou 15) et Y le nombre d'exercices résolus par jour (1, 2 ou 3). Que valent la moyenne X̄ et l'écart-type σ_X du nombre d'heures de révision ? <svg viewBox=\"0 0 330 172\"><g stroke=\"#0f172a\" stroke-width=\"1.4\" fill=\"none\"><rect x=\"10\" y=\"10\" width=\"309\" height=\"152\"/><path d=\"M100 10 V162 M173 10 V162 M246 10 V162 M10 48 H319 M10 86 H319 M10 124 H319\"/></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\"><text x=\"55\" y=\"34\">Effectifs</text><text x=\"136.5\" y=\"34\">Y = 1</text><text x=\"209.5\" y=\"34\">Y = 2</text><text x=\"282.5\" y=\"34\">Y = 3</text><text x=\"55\" y=\"72\">X = 5</text><text x=\"55\" y=\"110\">X = 10</text><text x=\"55\" y=\"148\">X = 15</text></g><g font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"136.5\" y=\"72\">6</text><text x=\"209.5\" y=\"72\">4</text><text x=\"282.5\" y=\"72\">2</text><text x=\"136.5\" y=\"110\">3</text><text x=\"209.5\" y=\"110\">11</text><text x=\"282.5\" y=\"110\">8</text><text x=\"136.5\" y=\"148\">2</text><text x=\"209.5\" y=\"148\">5</text><text x=\"282.5\" y=\"148\">9</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "X̄ = 10 et σ_X ≈ 3,72"
+        },
+        {
+          "id": "b",
+          "text": "X̄ = 10,4 et σ_X ≈ 3,72"
+        },
+        {
+          "id": "c",
+          "text": "X̄ = 10,4 et σ_X ≈ 11,05"
+        },
+        {
+          "id": "d",
+          "text": "X̄ = 10,4 et σ_X ≈ 13,84"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Tout se calcule sur la MARGE de X, c'est-à-dire les totaux des lignes : 6 + 4 + 2 = 12 pour la valeur 5, 3 + 11 + 8 = 22 pour la valeur 10 et 2 + 5 + 9 = 16 pour la valeur 15, avec 12 + 22 + 16 = 50 ✓. 1) LA MOYENNE : Σnᵢxᵢ = 12 × 5 + 22 × 10 + 16 × 15 = 60 + 220 + 240 = 520, donc X̄ = 520/50 = 10,4. 2) LA VARIANCE : Σnᵢxᵢ² = 12 × 25 + 22 × 100 + 16 × 225 = 300 + 2200 + 3600 = 6100, donc V(X) = 6100/50 − 10,4² = 122 − 108,16 = 13,84. 3) L'ÉCART-TYPE : σ_X = √13,84 ≈ 3,72. La réponse est X̄ = 10,4 et σ_X ≈ 3,72 ✓. Contrôle par la formule des écarts, seconde voie indépendante : 12 × (5 − 10,4)² + 22 × (10 − 10,4)² + 16 × (15 − 10,4)² = 12 × 29,16 + 22 × 0,16 + 16 × 21,16 = 349,92 + 3,52 + 338,56 = 692, et 692/50 = 13,84 ✓ — la même variance. La réponse X̄ = 10 utilise la moyenne non pondérée (5 + 10 + 15)/3 : elle ignore que 22 candidats révisent 10 heures contre 12 seulement qui en révisent 5. La valeur σ_X ≈ 13,84 confond l'écart-type avec la variance, dont il est la racine carrée. La valeur σ_X ≈ 11,05 est √122 : on a pris la racine de (1/n)Σnᵢxᵢ² sans retrancher le carré de la moyenne.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une série statistique double (X, Y) porte sur 5 individus et vérifie Σxᵢ = 20, Σxᵢ² = 90, Σyᵢ = 35 et Σxᵢyᵢ = 155. Que valent la variance V(X) et la covariance cov(X, Y) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "V(X) = 2 et cov(X, Y) = 3"
+        },
+        {
+          "id": "b",
+          "text": "V(X) = 2 et cov(X, Y) = 31"
+        },
+        {
+          "id": "c",
+          "text": "V(X) = 18 et cov(X, Y) = 3"
+        },
+        {
+          "id": "d",
+          "text": "V(X) = 18 et cov(X, Y) = 31"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "C'est la situation que renvoie une calculatrice en mode statistique à deux variables : on ne dispose que des sommes, et les deux formules du cours suffisent. 1) LES MOYENNES : X̄ = 20/5 = 4 et Ȳ = 35/5 = 7. 2) LA VARIANCE : V(X) = (1/n)Σxᵢ² − X̄² = 90/5 − 4² = 18 − 16 = 2. 3) LA COVARIANCE : cov(X, Y) = (1/n)Σxᵢyᵢ − X̄·Ȳ = 155/5 − 4 × 7 = 31 − 28 = 3. La réponse est V(X) = 2 et cov(X, Y) = 3 ✓. Contrôle sur une série compatible avec les quatre sommes, seconde voie totalement indépendante : x = 2 ; 3 ; 4 ; 5 ; 6 donne bien Σxᵢ = 20 et Σxᵢ² = 4 + 9 + 16 + 25 + 36 = 90, et y = 4 ; 6 ; 6 ; 9 ; 10 donne Σyᵢ = 35 et Σxᵢyᵢ = 8 + 18 + 24 + 45 + 60 = 155. Sur cette série, les écarts de X valent −2 ; −1 ; 0 ; 1 ; 2 et ceux de Y valent −3 ; −1 ; −1 ; 2 ; 3 : la moyenne des carrés des premiers fait (4 + 1 + 0 + 1 + 4)/5 = 2 ✓, et la moyenne de leurs produits fait (6 + 1 + 0 + 2 + 6)/5 = 15/5 = 3 ✓. Les deux valeurs sont confirmées. Les réponses V(X) = 18 et cov(X, Y) = 31 exécutent la même erreur, la plus fréquente du chapitre : on s'arrête à (1/n)Σxᵢ² et à (1/n)Σxᵢyᵢ sans retrancher X̄² dans un cas, X̄·Ȳ dans l'autre. Le contrôle est immédiat : une variance de 18 sur cinq valeurs dont les écarts ne dépassent pas 2 en valeur absolue est impossible, puisque la variance ne peut pas excéder le plus grand carré d'écart, soit 4.",
+      "difficulty": 3
+    }
+  ]
+}

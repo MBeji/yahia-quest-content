@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le maître des clés",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Une seule de ces quatre équations n'admet AUCUNE solution dans ℤ × ℤ. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5x − 10y = 10"
+        },
+        {
+          "id": "b",
+          "text": "25x − 80y = 3"
+        },
+        {
+          "id": "c",
+          "text": "91x + 65y = 39"
+        },
+        {
+          "id": "d",
+          "text": "102x + 68y = 34"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le théorème du cours tranche en une ligne : ax + by = c admet des solutions si, et seulement si, a ∧ b divise c. Quatre PGCD, quatre tests de divisibilité, rien de plus. L'équation impossible est 25x − 80y = 3 ✓ : 80 = 25 × 3 + 5 et 25 = 5 × 5 + 0, donc 25 ∧ 80 = 5, et 5 ne divise pas 3 puisque 3 = 5 × 0 + 3. Contrôle par une seconde voie totalement indépendante : pour tous entiers x et y, 25x − 80y = 5(5x − 16y) est un multiple de 5, donc son chiffre des unités vaut 0 ou 5 ; il ne pourra jamais valoir 3 ✓. LES TROIS AUTRES ONT DES SOLUTIONS, et la réfutation la plus courte consiste à en exhiber une. Pour 5x − 10y = 10 : 5 ∧ 10 = 5, qui divise 10 ; le couple (4, 1) convient, car 20 − 10 = 10 ✓. Pour 91x + 65y = 39 : 91 = 7 × 13 et 65 = 5 × 13, donc 91 ∧ 65 = 13, qui divise 39 = 13 × 3 ; en divisant par 13 on obtient 7x + 5y = 3, dont (−1, 2) est solution car −7 + 10 = 3, et ce même couple convient à l'équation initiale : 91 × (−1) + 65 × 2 = −91 + 130 = 39 ✓. Pour 102x + 68y = 34 : 102 = 34 × 3 et 68 = 34 × 2, donc 102 ∧ 68 = 34, qui divise 34 ; le couple (1, −1) convient, car 102 − 68 = 34 ✓. Le piège courant : croire qu'une équation dont le second membre est plus petit que les coefficients est impossible, et éliminer 102x + 68y = 34 pour cette raison — la taille ne joue aucun rôle, seule la divisibilité décide, et ici a ∧ b = c donne même une solution évidente. Le distracteur 5x − 10y = 10 exécute la croyance inverse, celle que d ≠ 1 interdit les solutions : le PGCD 5 ne bloque rien tant qu'il divise le second membre. Enfin 91x + 65y = 39 exécute l'examen d'un seul coefficient : ni 91 ni 65 ne divise 39, ce qui semble condamner l'équation, mais le critère porte sur 91 ∧ 65 = 13, qui divise 39 — c'est exactement la même erreur que d'écarter 25x − 80y = 3 parce que 25 ne divise pas 3, alors que le vrai motif est 5 ∤ 3 ; d'ailleurs 25x − 80y = 5 aurait, elle, des solutions, par exemple (−3, −1), car −75 + 80 = 5.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un entier naturel n laisse le reste 3 dans la division euclidienne par 11 et le reste 5 dans la division euclidienne par 13. Quel est le plus petit entier naturel n possible ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "16"
+        },
+        {
+          "id": "b",
+          "text": "69"
+        },
+        {
+          "id": "c",
+          "text": "135"
+        },
+        {
+          "id": "d",
+          "text": "94"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'énoncé se traduit en un système de deux congruences : {n ≡ 3 (mod 11), n ≡ 5 (mod 13)}, qu'on résout par report. 1) LA CONDITION. 11 et 13 sont deux nombres premiers distincts, donc 11 ∧ 13 = 1 : le système a des solutions, et elles formeront une classe modulo 11 × 13 = 143. 2) PARAMÉTRER : n = 3 + 11t, t ∈ ℤ. 3) REPORTER : 3 + 11t ≡ 5 (mod 13), soit 11t ≡ 2 (mod 13). 4) INVERSER 11 modulo 13 : 11 × 6 = 66 = 65 + 1, donc l'inverse est 6 ✓ ; en multipliant, t ≡ 12 (mod 13). 5) LE PLUS PETIT ENTIER NATUREL. Avec t = 12, n = 3 + 11 × 12 = 3 + 132 = 135, et la classe est n ≡ 135 (mod 143) ; le terme précédent vaut 135 − 143 = −8, qui est négatif : le plus petit entier naturel convenable est donc 135 ✓. Contrôle par réinjection, les deux divisions euclidiennes posées en entier : 135 = 11 × 12 + 3 avec 0 ≤ 3 < 11 ✓, et 135 = 13 × 10 + 5 avec 0 ≤ 5 < 13 ✓. Contrôle par une seconde voie totalement indépendante, en démarrant de l'autre congruence : n = 5 + 13u donne 5 + 13u ≡ 3 (mod 11), soit 2u ≡ −2 (mod 11) ; l'inverse de 2 modulo 11 est 6, car 2 × 6 = 12 = 11 + 1, d'où u ≡ −12 ≡ −1 ≡ 10 (mod 11) et n = 5 + 13 × 10 = 135 ✓. Les deux chemins concordent, et le suivant, 135 + 143 = 278, se contrôle aussi : 278 = 11 × 25 + 3 ✓ et 278 = 13 × 21 + 5 ✓. Le piège courant : inverser 11 de travers. En prenant 3 pour inverse de 11 modulo 13 — alors que 11 × 3 = 33 = 26 + 7 ≡ 7, et non 1 — on obtient t ≡ 6 puis n = 3 + 66 = 69 ; le contrôle le réfute aussitôt, 69 = 13 × 5 + 4 laisse le reste 4 modulo 13, pas 5. Le distracteur 16 exécute l'échange des deux restes : il résout {n ≡ 5 (mod 11), n ≡ 3 (mod 13)}, car 16 = 11 + 5 et 16 = 13 + 3 — les bons nombres, les mauvaises places. Enfin 94 exécute une formule inventée de produits croisés : on écrit 3 × 13 + 5 × 11 = 39 + 55 = 94 comme si les restes se combinaient directement, alors que la méthode du cours passe par un couple de Bézout ; or 94 = 11 × 8 + 6 laisse le reste 6 modulo 11.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On donne les divisions successives de l'algorithme d'Euclide appliqué à 11413 et 191 : 11413 = 191 × 59 + 144 ; 191 = 144 × 1 + 47 ; 144 = 47 × 3 + 3 ; 47 = 3 × 15 + 2 ; 3 = 2 × 1 + 1 ; 2 = 1 × 2 + 0. Déterminer un couple d'entiers (u, v) tel que 11413u + 191v = 1.",
+      "options": [
+        {
+          "id": "a",
+          "text": "u = 65 et v = −3884"
+        },
+        {
+          "id": "b",
+          "text": "u = 65 et v = −3835"
+        },
+        {
+          "id": "c",
+          "text": "u = 65 et v = −49"
+        },
+        {
+          "id": "d",
+          "text": "u = −65 et v = 3884"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le dernier reste non nul vaut 1, donc 11413 ∧ 191 = 1 et l'identité de Bézout existe ; il reste à REMONTER les cinq divisions, une par une, sans en abandonner aucune. 1 = 3 − 2. On remplace 2 par 47 − 15 × 3 : 1 = 3 − (47 − 15 × 3) = 16 × 3 − 47, avec 1 + 15 = 16 ✓. On remplace 3 par 144 − 3 × 47 : 1 = 16(144 − 3 × 47) − 47 = 16 × 144 − 48 × 47 − 47 = 16 × 144 − 49 × 47, avec −48 − 1 = −49 ✓. On remplace 47 par 191 − 144 : 1 = 16 × 144 − 49(191 − 144) = 65 × 144 − 49 × 191, avec 16 + 49 = 65 ✓. On remplace enfin 144 par 11413 − 59 × 191 : 1 = 65(11413 − 59 × 191) − 49 × 191 = 65 × 11413 − (3835 + 49) × 191 = 65 × 11413 − 3884 × 191, avec 65 × 59 = 3835 et 3835 + 49 = 3884 ✓. D'où u = 65 et v = −3884 ✓. Contrôle par réinjection : 11413 × 65 = 741845 (684780 + 57065) et 191 × 3884 = 741844 (776800 − 34956), donc 741845 − 741844 = 1 ✓. Contrôle par une seconde voie totalement indépendante, le tableau étendu (r, u, v) qui descend une seule fois, initialisé par (11413, 1, 0) et (191, 0, 1), chaque ligne valant l'avant-dernière moins q fois la dernière : q = 59 donne (144, 1, −59) ; q = 1 donne (47, −1, 60), contrôlé par −11413 + 11460 = 47 ✓ ; q = 3 donne (3, 4, −239), contrôlé par 45652 − 45649 = 3 ✓ ; q = 15 donne (2, −61, 3645), contrôlé par −696193 + 696195 = 2 ✓ ; q = 1 donne (1, 65, −3884) ✓. Les deux méthodes livrent le même couple. Le piège courant : abandonner un terme lors de la dernière substitution et livrer u = 65 et v = −3835, en oubliant le −49 × 191 déjà présent dans la ligne précédente ; la réinjection le réfute, 11413 × 65 − 191 × 3835 = 741845 − 732485 = 9360, et non 1. Le distracteur u = 65 et v = −49 exécute l'arrêt une substitution trop tôt : on recopie la ligne 65 × 144 − 49 × 191 = 1 en prenant 144 pour 11413 ; or 11413 × 65 − 191 × 49 = 741845 − 9359 = 732486. Enfin u = −65 et v = 3884 exécute l'inversion globale des signes, qui donne l'opposé : 11413 × (−65) + 191 × 3884 = −741845 + 741844 = −1, et non 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Chasse à l'erreur. On veut résoudre dans ℤ × ℤ l'équation (E) : 15x + 24y = 9. Voici une solution proposée, en quatre étapes. ① « 15 ∧ 24 = 3, car 24 = 15 × 1 + 9 ; 15 = 9 × 1 + 6 ; 9 = 6 × 1 + 3 ; 6 = 3 × 2 + 0 ; et 3 divise 9, donc (E) admet des solutions. » ② « On divise toute l'équation par 3 : 5x + 8y = 3. » ③ « Comme 5 × (−3) + 8 × 2 = 1, le couple (x₀, y₀) = (−3, 2) est une solution particulière de 5x + 8y = 3. » ④ « Par soustraction, 5(x − x₀) = −8(y − y₀) ; comme 5 ∧ 8 = 1, le lemme de Gauss donne 5 divise y − y₀, d'où y = y₀ + 5k et x = x₀ − 8k, k ∈ ℤ. » Quelle est la PREMIÈRE étape fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape ①"
+        },
+        {
+          "id": "b",
+          "text": "L'étape ②"
+        },
+        {
+          "id": "c",
+          "text": "L'étape ③"
+        },
+        {
+          "id": "d",
+          "text": "L'étape ④"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ceci est une chasse à l'erreur : la solution proposée contient une faute plantée, l'explication décrit donc un raisonnement volontairement faux. L'étape ③ est la PREMIÈRE — et la seule — étape fausse ✓. Reprenons la fiche ligne à ligne. ① EST JUSTE. Les quatre divisions sont exactes : 24 = 15 + 9 ✓, 15 = 9 + 6 ✓, 9 = 6 + 3 ✓, 6 = 3 × 2 ✓ ; le dernier reste non nul vaut 3, donc 15 ∧ 24 = 3, et 9 = 3 × 3 est bien divisible par 3, ce qui garantit l'existence de solutions. ② EST JUSTE. 15/3 = 5, 24/3 = 8 et 9/3 = 3, donc l'équation devient 5x + 8y = 3 avec 5 ∧ 8 = 1 ✓ ; c'est exactement le geste que le cours impose avant tout paramétrage. ③ EST FAUSSE. Le calcul écrit est pourtant exact — 5 × (−3) + 8 × 2 = −15 + 16 = 1 ✓ — mais il fournit une solution de 5x + 8y = 1, pas de 5x + 8y = 3. On a oublié de MULTIPLIER le couple de Bézout par le second membre c′ = 3. ÉTAPE CORRIGÉE : « ③ Comme 5 × (−3) + 8 × 2 = 1, le couple (−3 × 3, 2 × 3) = (−9, 6) est une solution particulière de 5x + 8y = 3 », et le contrôle tombe juste : 5 × (−9) + 8 × 6 = −45 + 48 = 3 ✓. ④ EST JUSTE, et c'est ce qui rend l'exercice sélectif : la phrase ne dépend pas des valeurs de x₀ et y₀, elle décrit la méthode générale, et cette méthode est correcte — de 5(x − x₀) = −8(y − y₀) et 5 ∧ 8 = 1, Gauss donne bien 5 divise y − y₀, puis y = y₀ + 5k et x = x₀ − 8k. Appliquée au bon couple, elle livre l'ensemble complet {(−9 − 8k, 6 + 5k), k ∈ ℤ}. Contrôle sur trois valeurs du paramètre, dont une négative : k = 0 donne (−9, 6) et 15 × (−9) + 24 × 6 = −135 + 144 = 9 ✓ ; k = 1 donne (−17, 11) et −255 + 264 = 9 ✓ ; k = −1 donne (−1, 1) et −15 + 24 = 9 ✓. Contrôle de la faute par ses conséquences : le couple (−3, 2) de l'étape ③ donne 15 × (−3) + 24 × 2 = −45 + 48 = 3, et non 9 — il résout (E) avec un second membre trois fois trop petit. Répondre ① revient à contester un algorithme d'Euclide dont les quatre divisions se vérifient de tête ; répondre ② revient à contester la division par d, alors que c'est justement l'étape que le cours rend obligatoire ; répondre ④ revient à condamner l'énoncé correct de Gauss parce que le couple qu'on lui donne est faux. La leçon : une solution particulière ne se déclare jamais, elle se RÉINJECTE — un seul calcul, 5 × (−3) + 8 × 2 = 1 ≠ 3, démasque l'étape ③.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Combien y a-t-il de couples (x, y) d'entiers relatifs vérifiant 25x² − 9y² = 16 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une équation du second degré en nombres entiers ne se résout pas comme dans ℝ : on FACTORISE, puis on liste les couples de diviseurs — et on ne garde que ceux qui redonnent des entiers. 1) LA FACTORISATION. 25x² − 9y² = (5x − 3y)(5x + 3y), donc en posant A = 5x − 3y et B = 5x + 3y, l'équation devient AB = 16 avec A et B entiers. 2) LE RETOUR À (x, y). En additionnant, A + B = 10x ; en soustrayant, B − A = 6y. Un couple de diviseurs (A, B) ne convient donc que si A + B est divisible par 10 ET B − A divisible par 6. 3) LE BALAYAGE des couples de diviseurs de 16, produit compris : (1, 16) et (16, 1) donnent A + B = 17, non divisible par 10, à rejeter ; (4, 4) donne 8, à rejeter ; (2, 8) donne A + B = 10 et B − A = 6, d'où x = 1 et y = 1 ✓ ; (8, 2) donne 10 et −6, d'où x = 1 et y = −1 ✓. Les couples négatifs se traitent de même : (−2, −8) donne x = −1 et y = −1 ✓, (−8, −2) donne x = −1 et y = 1 ✓, tandis que (−1, −16), (−16, −1) et (−4, −4) sont rejetés pour la même raison que leurs opposés. 4) LE COMPTE : les solutions sont (1, 1), (1, −1), (−1, 1) et (−1, −1), soit 4 couples ✓. Contrôle par réinjection : dans les quatre cas x² = 1 et y² = 1, donc 25 × 1 − 9 × 1 = 16 ✓. Contrôle par une seconde voie totalement indépendante, par majoration : de AB = 16 on tire |A| ≥ 1 et |B| ≥ 1, donc |A| ≤ 16 et |B| ≤ 16, puis |10x| = |A + B| ≤ 17, ce qui impose |x| ≤ 1 ; et x = 0 est exclu, car il donnerait −9y² = 16, impossible pour un carré. Il reste x = 1 ou x = −1, d'où 25 − 9y² = 16, soit y² = 1 et y = ±1 : on retrouve exactement 4 couples, sans passer par les diviseurs ✓. Le piège courant : ne considérer que les diviseurs POSITIFS et livrer 2, en oubliant que dans ℤ un produit vaut 16 avec deux facteurs négatifs ; les deux solutions perdues, (−1, 1) et (−1, −1), sont pourtant les plus simples à contrôler. Le distracteur 1 exécute le réflexe des équations réelles : on lit « une racine » et on s'arrête à (1, 1), alors qu'ici les deux carrés autorisent les quatre combinaisons de signes. Enfin 8 exécute le comptage sans vérification : on retient les huit couples de diviseurs (A, B) à facteurs distincts, (1, 16), (2, 8), (8, 2), (16, 1) et leurs opposés, et on annonce huit solutions ; mais quatre d'entre eux donnent A + B = ±17, donc x = ±1,7, qui n'est pas entier — un couple de diviseurs ne devient une solution qu'après le test de divisibilité.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Application au chiffrement à clé publique. Le chef d'un réseau choisit p = 11 et q = 13, calcule n = pq = 143 puis φ(n) = (p − 1)(q − 1) = 120, et diffuse la clé de codage e = 7. La clé de décodage est l'unique entier d de {0, 1, …, 119} tel que 7d ≡ 1 (mod 120). Que vaut d ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "41"
+        },
+        {
+          "id": "b",
+          "text": "17"
+        },
+        {
+          "id": "c",
+          "text": "61"
+        },
+        {
+          "id": "d",
+          "text": "103"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La clé de décodage n'est rien d'autre qu'un INVERSE modulo φ(n) — c'est l'usage du chapitre qui fait tourner tout le chiffrement. 1) L'INVERSE EXISTE. 120 = 7 × 17 + 1 et 7 = 1 × 7 + 0, donc 7 ∧ 120 = 1 : l'inverse existe et il est unique dans {0, 1, …, 119} ✓. 2) L'IDENTITÉ DE BÉZOUT, lue directement sur la première division : 1 = 120 − 17 × 7, c'est-à-dire 7 × (−17) + 120 × 1 = 1. Contrôle : 7 × 17 = 119 et 120 − 119 = 1 ✓. 3) LA CONGRUENCE : de 7 × (−17) ≡ 1 (mod 120) on tire d ≡ −17 (mod 120). 4) LE REPRÉSENTANT dans {0, 1, …, 119} : −17 + 120 = 103, donc d = 103 ✓. Contrôle par réinjection : 7 × 103 = 721 et 721 = 120 × 6 + 1, car 120 × 6 = 720 ✓ — le produit des deux clés est bien congru à 1 modulo φ(n). Contrôle par une seconde voie totalement indépendante, en cherchant directement un multiple de 7 juste au-dessus d'un multiple de 120 : les nombres 121, 241, 361, 481, 601 et 721 sont les entiers congrus à 1 modulo 120 ; le premier divisible par 7 est 721 = 7 × 103, ce qui redonne d = 103 ✓ (121, 241, 361, 481 et 601 ne sont pas des multiples de 7, puisque 7 × 17 = 119, 7 × 34 = 238, 7 × 51 = 357, 7 × 68 = 476 et 7 × 85 = 595 ratent chacun leur cible). Le piège courant : perdre le signe de l'identité de Bézout et livrer 17. On a bien 7 × 17 = 119 = 120 − 1, mais cela signifie 7 × 17 ≡ −1 (mod 120), et non 1 : la clé 17 déchiffrerait en l'opposé du message. Le distracteur 41 exécute la confusion de module la plus fréquente du procédé : on inverse 7 modulo n = 143 au lieu de φ(n) = 120, ce qui donne 7 × 41 = 287 = 143 × 2 + 1, donc 41 est l'inverse modulo 143 — exact, mais dans le mauvais anneau ; modulo 120, 287 = 120 × 2 + 47, et non 1. Enfin 61 exécute une indicatrice mal calculée : en écrivant φ(n) = pq − 1 = 142 au lieu de (p − 1)(q − 1) = 120, on obtient 7 × 61 = 427 = 142 × 3 + 1, donc 61 ; or modulo 120, 427 = 120 × 3 + 67, et non 1.",
+      "difficulty": 3
+    }
+  ]
+}

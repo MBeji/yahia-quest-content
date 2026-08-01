@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le seigneur des grandes puissances",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Déterminer le reste de 7²⁰²³ dans la division euclidienne par 11.",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Trois gestes, toujours les mêmes : réduire la base, trouver la période, réduire l'exposant modulo la PÉRIODE. 1) LA PÉRIODE. Le théorème de Fermat s'applique, car 11 est premier et ne divise pas 7 : 7¹⁰ ≡ 1 (mod 11). La période divise donc 10. 2) RÉDUCTION DE L'EXPOSANT modulo 10 : 2023 = 10 × 202 + 3, car 10 × 202 = 2020 et 2020 + 3 = 2023 ✓. D'où 7²⁰²³ = (7¹⁰)²⁰² × 7³ ≡ 1²⁰² × 7³ = 7³ (mod 11). 3) LE RESTE. 7³ = 343 et 11 × 31 = 341, donc 343 = 11 × 31 + 2 : le reste vaut 2 ✓ (contrôle de l'encadrement, 0 ≤ 2 < 11 ✓). Contrôle par une seconde voie totalement indépendante, sans Fermat, en passant par une base négative : 7 = 11 − 4, donc 7 ≡ −4 (mod 11) et 7²⁰²³ ≡ (−4)²⁰²³ = −4²⁰²³, puisque 2023 est impair. Les puissances de 4 modulo 11 ont pour période 5, car 4⁵ = 1024 = 11 × 93 + 1 (11 × 93 = 1023 ✓). Or 2023 = 5 × 404 + 3, car 5 × 404 = 2020 ✓. Donc 4²⁰²³ ≡ 4³ = 64 = 11 × 5 + 9 ≡ 9, et 7²⁰²³ ≡ −9 ≡ 11 − 9 = 2 (mod 11) ✓. Les deux chemins donnent 2. Le piège courant, celui que le cours signale en encadré : réduire l'exposant modulo le MODULE (11) au lieu de le réduire modulo la période. On écrit 2023 = 11 × 183 + 10 (11 × 183 = 2013 ✓), on conclut 7¹⁰ ≡ 1 et on livre 1 — l'exposant ne se réduit jamais modulo n, seulement modulo la période. Le distracteur 9 exécute la perte du signe sur la base négative : on remplace (−4)²⁰²³ par 4²⁰²³ alors que 2023 est impair, et on obtient 9 au lieu de son opposé 2 ; le contrôle tient en une ligne, 2023 = 2 × 1011 + 1. Enfin 7 exécute une période empruntée au mauvais chapitre : on reprend la période 6 de la roue des puissances de 10 modulo 7, on écrit 2023 = 6 × 337 + 1 (6 × 337 = 2022 ✓) et on livre 7¹ = 7 ; mais la période dépend du couple (base, module), et ici 7² = 49 ≡ 5 ≠ 1 montre déjà que 2 n'est pas la période, tout comme 7⁶ ≡ 4 montre que 6 ne l'est pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résoudre dans ℤ l'équation x² + 6x + 5 ≡ 0 (mod 7).",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≡ 2 ou x ≡ 6 (mod 7)"
+        },
+        {
+          "id": "b",
+          "text": "x ≡ 1 ou x ≡ 5 (mod 7)"
+        },
+        {
+          "id": "c",
+          "text": "x ≡ 5 ou x ≡ 6 (mod 7)"
+        },
+        {
+          "id": "d",
+          "text": "x ≡ 2 (mod 7)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une congruence n'est pas une équation ordinaire : on ne cherche pas des racines, on BALAIE les 7 restes possibles. 1) LE TABLEAU, reste par reste, pour l'expression x² + 6x + 5 modulo 7. x ≡ 0 : 0 + 0 + 5 = 5. x ≡ 1 : 1 + 6 + 5 = 12 ≡ 5 (12 = 7 + 5). x ≡ 2 : 4 + 12 + 5 = 21 ≡ 0 ✓ (21 = 7 × 3). x ≡ 3 : 9 + 18 + 5 = 32 ≡ 4 (32 = 28 + 4). x ≡ 4 : 16 + 24 + 5 = 45 ≡ 3 (45 = 42 + 3). x ≡ 5 : 25 + 30 + 5 = 60 ≡ 4 (60 = 56 + 4). x ≡ 6 : 36 + 36 + 5 = 77 ≡ 0 ✓ (77 = 7 × 11). 2) LECTURE. Le reste 0 n'apparaît qu'en deux cases, d'où la solution x ≡ 2 ou x ≡ 6 (mod 7) ✓. Contrôle par une seconde voie totalement indépendante, en testant des entiers pris HORS de l'intervalle balayé — c'est ce qui vérifie que le résultat porte bien sur des classes entières et pas sur six nombres. x = −1, qui est congru à 6 : (−1)² + 6 × (−1) + 5 = 1 − 6 + 5 = 0, multiple de 7 ✓. x = −5, qui est congru à 2 : 25 − 30 + 5 = 0 ✓. x = 9, qui est congru à 2 : 81 + 54 + 5 = 140 = 7 × 20 ✓. x = 13, qui est congru à 6 : 169 + 78 + 5 = 252 = 7 × 36 ✓. Et un contrôle négatif, pour être sûr de ne rien avoir ajouté : x = 3 donne 32, qui n'est pas un multiple de 7 ✓. Le piège courant : traiter la congruence comme une équation du second degré dans ℝ, lire les racines −1 et −5 du trinôme et les recopier avec le mauvais signe, ce qui donne x ≡ 1 ou x ≡ 5 (mod 7). Ces deux valeurs se réfutent en une ligne : x = 1 donne 12 ≡ 5 ≠ 0 et x = 5 donne 60 ≡ 4 ≠ 0. Le distracteur x ≡ 5 ou x ≡ 6 (mod 7) exécute une conversion à moitié faite : on part bien des racines −1 et −5, on convertit correctement −1 en 6 mais on laisse −5 devenir 5 au lieu de 7 − 5 = 2 ; deux conventions de signe dans la même ligne. Enfin x ≡ 2 (mod 7) exécute l'arrêt au premier succès du balayage : on trouve 21 ≡ 0 en x ≡ 2 et on s'arrête, alors qu'une congruence du second degré n'a aucune raison d'avoir une solution unique — le cours le montre déjà sur x² ≡ 4 (mod 11), qui en a deux, et sur x² ≡ 3 (mod 4), qui n'en a aucune. Le balayage se termine toujours.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Chasse à l'erreur. On cherche le reste de 5²⁰²⁴ modulo 7. Voici une solution proposée, en quatre étapes. ① « 5 ≡ −2 (mod 7) et 2024 est pair, donc 5²⁰²⁴ ≡ (−2)²⁰²⁴ = 2²⁰²⁴ (mod 7). » ② « 2³ = 8 ≡ 1 (mod 7), donc les puissances de 2 modulo 7 se répètent avec une période de 3. » ③ « Or 2024 = 7 × 289 + 1, donc 2024 ≡ 1 et 2²⁰²⁴ ≡ 2¹ = 2 (mod 7). » ④ « Le théorème de Fermat, avec p = 7 qui ne divise pas 5, donne 5⁶ ≡ 1 (mod 7) ; comme 2024 = 6 × 337 + 2, il vient 5²⁰²⁴ ≡ 5² = 25 ≡ 4 (mod 7). » Quelle est la PREMIÈRE étape fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape ①"
+        },
+        {
+          "id": "b",
+          "text": "L'étape ②"
+        },
+        {
+          "id": "c",
+          "text": "L'étape ③"
+        },
+        {
+          "id": "d",
+          "text": "L'étape ④"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ceci est une chasse à l'erreur : la solution proposée contient une faute plantée, l'explication décrit donc un raisonnement volontairement faux. L'étape ③ est la PREMIÈRE — et la seule — étape fausse ✓. Reprenons la fiche ligne à ligne. ① EST JUSTE. On a 5 + 2 = 7, donc 5 ≡ −2 (mod 7) ; la compatibilité avec les puissances donne 5²⁰²⁴ ≡ (−2)²⁰²⁴, et comme 2024 est pair, (−2)²⁰²⁴ = 2²⁰²⁴ ✓. Contrôle sur un petit exposant : 5² = 25 = 21 + 4 ≡ 4 et 2² = 4 ✓, même reste. ② EST JUSTE. 2³ = 8 = 7 + 1, donc 2³ ≡ 1 (mod 7), et la suite des restes de 2ᵏ est bien 1, 2, 4, 1, 2, 4, … de période 3 ✓. ③ EST FAUSSE. L'arithmétique y est exacte — 7 × 289 = 2023, donc 2024 = 7 × 289 + 1 ✓ — mais elle est appliquée au mauvais module. L'exposant se réduit modulo la PÉRIODE, c'est-à-dire modulo 3, jamais modulo le module 7 : c'est l'interdit que le cours signale en encadré, « on ne réduit jamais l'exposant modulo n ». ÉTAPE CORRIGÉE : « ③ Or 2024 = 3 × 674 + 2, donc 2²⁰²⁴ = (2³)⁶⁷⁴ × 2² ≡ 1⁶⁷⁴ × 4 = 4 (mod 7) », avec 3 × 674 = 2022 et 2022 + 2 = 2024 ✓. Le vrai reste vaut donc 4, et non 2. Contrôle par une seconde voie, sur un exposant assez petit pour être vérifié à la main : 5⁴ = 625 = 7 × 89 + 2, donc 5⁴ ≡ 2 (mod 7) ; or l'étape ③ fautive appliquée à l'exposant 4 donnerait 4 ≡ 4 (mod 7) puis 2⁴ = 16 ≡ 2 — juste par accident ici — tandis que sur l'exposant 8 elle donnerait 8 = 7 × 1 + 1 puis 2¹ = 2, alors que le vrai reste vaut 5⁸ = (5⁴)² ≡ 2² = 4 ✓ — cette fois les deux valeurs diffèrent. La méthode fautive ne coïncide avec la bonne que par hasard, ce qui est la signature d'une règle inventée. ④ EST JUSTE, et c'est ce qui rend l'exercice sélectif : 7 est premier et ne divise pas 5, donc Fermat donne 5⁶ ≡ 1 (mod 7) ; 6 × 337 = 2022 et 2022 + 2 = 2024 ✓, d'où 5²⁰²⁴ ≡ 5² = 25 ≡ 4 (mod 7) ✓. Cette étape est la CONFIRMATION du vrai résultat, et son désaccord avec ③ aurait dû alerter : deux méthodes correctes ne donnent jamais deux restes différents. Répondre ④ revient à condamner l'étape qui a raison parce qu'elle contredit la précédente ; répondre ① ou ② revient à contester une réduction de base et une période que trois calculs valident. La leçon du problème : quand deux chemins se contredisent, on relit celui qui a changé de module en cours de route.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit n un entier supérieur ou égal à 4. On étudie dans ℤ l'équation (E) : x² + 9 = 2ⁿ et on suppose, par l'absurde, que (E) admet une solution entière a. Quelle est la contradiction correctement obtenue en raisonnant modulo 4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a est pair, donc a² + 9 ≡ 1 (mod 4), alors que 2ⁿ ≡ 0 (mod 4)."
+        },
+        {
+          "id": "b",
+          "text": "a est impair, donc a² + 9 ≡ 2 (mod 4), alors que 2ⁿ ≡ 0 (mod 4)."
+        },
+        {
+          "id": "c",
+          "text": "a est impair, donc a² + 9 ≡ 0 (mod 4), alors que 2ⁿ ≡ 2 (mod 4)."
+        },
+        {
+          "id": "d",
+          "text": "a est impair, donc a² + 9 ≡ 2 (mod 4), et 2ⁿ ≡ 2 (mod 4) : il n'y a pas de contradiction."
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Trois sous-résultats dépendants : la parité de a, le reste du carré, le reste de la puissance de 2. La contradiction correcte est celle-ci : « a est impair, donc a² + 9 ≡ 2 (mod 4), alors que 2ⁿ ≡ 0 (mod 4). » ✓ 1) LA PARITÉ DE a. Pour n ≥ 4, 2ⁿ est pair, et 9 est impair ; de a² = 2ⁿ − 9 on tire que a² est impair, donc a est impair — le cours l'établit, a et a² ont toujours la même parité. Contrôle : a pair s'écrit a = 2k et a² = 4k² serait pair, ce qui est exclu. 2) LE RESTE DE a² + 9 MODULO 4. a impair s'écrit a = 2k + 1, donc a² = 4k² + 4k + 1 ≡ 1 (mod 4). Le balayage confirme : les carrés modulo 4 valent 0 ; 1 ; 4 ≡ 0 ; 9 ≡ 1, et ceux des restes impairs valent tous 1. Alors a² + 9 ≡ 1 + 9 = 10 ≡ 2 (mod 4), car 10 = 4 × 2 + 2 ✓. 3) LE RESTE DE 2ⁿ MODULO 4. Pour n ≥ 4, on écrit 2ⁿ = 4 × 2ⁿ⁻², avec n − 2 ≥ 2 entier naturel, donc 4 divise 2ⁿ et 2ⁿ ≡ 0 (mod 4) ✓. 4) LA CONTRADICTION : le même entier a² + 9 = 2ⁿ aurait pour reste 2 d'un côté et 0 de l'autre, ce que l'unicité du reste modulo 4 interdit. Donc (E) n'a aucune solution entière. Contrôle par une seconde voie totalement indépendante, numérique : pour n = 4, 5, 6, 7 et 8, la quantité 2ⁿ − 9 vaut 7, 23, 55, 119 et 247 — aucune n'est un carré (16 − 9 = 7 est entre 2² = 4 et 3² = 9 ; 247 est entre 15² = 225 et 16² = 256), et toutes sont bien congrues à 3 modulo 4 (7 = 4 + 3 ✓, 23 = 20 + 3 ✓, 55 = 52 + 3 ✓, 247 = 244 + 3 ✓) alors qu'un carré ne vaut jamais 3 modulo 4. Les deux chemins concordent. Le piège courant : partir de « a est pair », ce qui donnerait a² + 9 ≡ 0 + 9 ≡ 1 (mod 4) — la conclusion « pas de solution » tomberait juste, mais l'étape est fausse, car a impair est justement ce que la parité de 2ⁿ − 9 impose ; un raisonnement par l'absurde bâti sur une hypothèse invalide ne démontre rien. Le distracteur annonçant a² + 9 ≡ 0 (mod 4) exécute la croyance qu'un carré peut être congru à 3 modulo 4 (3 + 9 = 12 ≡ 0) : or le cours établit que x² ≡ 3 (mod 4) n'a aucune solution. Enfin l'option qui écrit 2ⁿ ≡ 2 (mod 4) et conclut à l'absence de contradiction confond 2ⁿ avec 2 × n, ou n'utilise pas l'hypothèse n ≥ 4 : 2ⁿ ≡ 2 (mod 4) n'est vrai que pour n = 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Déterminer le reste de A = 10¹⁰² + 3 × 10²⁰⁴ + 106 × 10⁶¹² modulo 103. On admet que 103 est un nombre premier.",
+      "options": [
+        {
+          "id": "a",
+          "text": "110"
+        },
+        {
+          "id": "b",
+          "text": "25"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "7"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Aucune de ces puissances n'est calculable : tout repose sur le théorème de Fermat, qui fournit la période sans la chercher. 1) LA CLÉ. 103 est premier et ne divise pas 10, donc Fermat donne 10¹⁰² ≡ 1 (mod 103). 2) LES TROIS TERMES, un par un. Premier terme : 10¹⁰² ≡ 1. Deuxième terme : 204 = 2 × 102, donc 10²⁰⁴ = (10¹⁰²)² ≡ 1² = 1, et 3 × 10²⁰⁴ ≡ 3. Troisième terme : 612 = 6 × 102, car 102 × 6 = 612 ✓, donc 10⁶¹² = (10¹⁰²)⁶ ≡ 1⁶ = 1, et 106 × 10⁶¹² ≡ 106. 3) LA SOMME, puis LA RÉDUCTION FINALE, qui est l'étape qu'on oublie : A ≡ 1 + 3 + 106 = 110 (mod 103), et 110 = 103 + 7, donc le reste vaut 7 ✓ — un reste doit toujours vérifier 0 ≤ r < 103, et 110 ne le vérifie pas. Contrôle par une seconde voie totalement indépendante : on réduit CHAQUE coefficient avant de sommer, comme le cours l'exige pour les produits. Ici 106 = 103 + 3, donc 106 ≡ 3 (mod 103), et A ≡ 1 + 3 + 3 = 7 (mod 103) directement, sans passer par 110 ✓. Troisième contrôle, sur la légitimité de Fermat : 103 n'est divisible ni par 2, ni par 3, ni par 5, ni par 7 (7 × 14 = 98 et 7 × 15 = 105), et il est inutile d'aller plus loin puisque 11² = 121 dépasse déjà 103 — 103 est bien premier, et il ne divise évidemment pas 10. Le piège courant : livrer la somme brute 110 sans la réduire. La compatibilité avec + donne une CONGRUENCE, pas un reste : le reste est l'unique élément de {0, 1, …, 102} congru à A, et 110 n'en fait pas partie. Le distracteur 25 exécute la confusion entre puissance et multiple : on écrit 10²⁰⁴ = 2 × 10¹⁰² ≡ 2 et 10⁶¹² = 6 × 10¹⁰² ≡ 6 au lieu d'élever à la puissance, ce qui donne 1 + 3 × 2 + 106 × 6 = 1 + 6 + 636 = 643, puis 643 = 103 × 6 + 25 ; or 10²⁰⁴ = 10¹⁰² × 10¹⁰², jamais 10¹⁰² + 10¹⁰². Enfin 5 exécute un coefficient perdu en route : en oubliant le facteur 3 devant 10²⁰⁴ on obtient 1 + 1 + 106 = 108, donc 108 − 103 = 5 ; le contrôle par les coefficients réduits (1 + 3 + 3) l'écarte aussitôt.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les nombres de Fermat sont définis par F_n = 2^(2ⁿ) + 1. Fermat les croyait tous premiers ; on va contredire cette conjecture sur F₅ = 2³² + 1 sans jamais le calculer. On admet les deux égalités 641 = 5 × 2⁷ + 1 = 5⁴ + 2⁴. Quel est le reste de 2³² modulo 641 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "16"
+        },
+        {
+          "id": "b",
+          "text": "640"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "639"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Quatre étapes dépendantes, et pas une seule grande puissance calculée. 0) CONTRÔLE DES DEUX ÉGALITÉS ADMISES, avant de s'en servir : 5 × 2⁷ = 5 × 128 = 640, donc 5 × 2⁷ + 1 = 641 ✓ ; et 5⁴ + 2⁴ = 625 + 16 = 641 ✓. 1) LA PREMIÈRE CONGRUENCE. De 641 = 5 × 2⁷ + 1 on tire 5 × 2⁷ = 640 = 641 − 1, donc 5 × 2⁷ ≡ −1 (mod 641). 2) ON ÉLÈVE À LA PUISSANCE 4, ce que la compatibilité autorise : (5 × 2⁷)⁴ = 5⁴ × 2²⁸ ≡ (−1)⁴ = 1 (mod 641). Contrôle de l'exposant : 7 × 4 = 28 ✓, et 4 est pair, donc (−1)⁴ = 1 ✓. 3) LA SECONDE CONGRUENCE. De 641 = 5⁴ + 2⁴ on tire 5⁴ = 641 − 2⁴, donc 5⁴ ≡ −2⁴ (mod 641). On substitue dans l'étape précédente : 1 ≡ 5⁴ × 2²⁸ ≡ (−2⁴) × 2²⁸ = −2²⁸⁺⁴ = −2³² (mod 641). Contrôle de l'exposant : 4 + 28 = 32 ✓. 4) LE RESTE. De −2³² ≡ 1 on tire 2³² ≡ −1 (mod 641), et l'unique reste de {0, 1, …, 640} congru à −1 est 641 − 1 = 640 : le reste vaut 640 ✓. CONSÉQUENCE, et c'est le but de l'exercice : F₅ = 2³² + 1 ≡ 640 + 1 = 641 ≡ 0 (mod 641), donc 641 divise F₅ et F₅ n'est pas premier — la conjecture de Fermat tombe, sans avoir écrit les dix chiffres de F₅. Contrôle par une seconde voie totalement indépendante, sur les seuls petits nombres : 2³² = (2⁸)⁴ = 256⁴, et 256² = 65536 ; or 641 × 102 = 65382, donc 65536 = 641 × 102 + 154 et 2¹⁶ ≡ 154 (mod 641). Puis 154² = 23716, et 641 × 37 = 23717, donc 23716 = 641 × 37 − 1 et 2³² ≡ −1 ≡ 640 (mod 641) ✓. Les deux chemins concordent, et le second n'utilise ni 5 ni les égalités admises. Le piège courant : perdre le signe en substituant 5⁴ ≡ −2⁴. En écrivant 5⁴ ≡ 2⁴ on obtient 1 ≡ 2⁴ × 2²⁸ = 2³², donc le reste 1 — et la démonstration s'effondre, puisque F₅ ≡ 2 et 641 ne diviserait rien du tout ; c'est bien le signe moins de 5⁴ = 641 − 2⁴ qui porte toute la conclusion. Le distracteur 16 exécute un facteur abandonné : de 5⁴ × 2²⁸ ≡ 1 on conclut hâtivement 2²⁸ ≡ 1, puis 2³² = 2²⁸ × 2⁴ ≡ 16 ; on ne simplifie jamais une congruence par un facteur, le cours l'interdit explicitement. Enfin 639 exécute une conversion fautive de −1 : on trouve bien 2³² ≡ −1 (mod 641) mais on écrit −1 ≡ 641 − 2 = 639 au lieu de 641 − 1 = 640 ; le test est immédiat, 639 + 1 = 640 n'est pas un multiple de 641, alors que 640 + 1 = 641 en est un.",
+      "difficulty": 3
+    }
+  ]
+}

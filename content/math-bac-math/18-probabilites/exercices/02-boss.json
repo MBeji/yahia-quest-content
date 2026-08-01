@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le stratège du hasard",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Dans un centre de tri, 50 % des colis passent par le tapis A, 30 % par le tapis B et 20 % par le tapis C. La probabilité qu'un colis soit mal étiqueté vaut 0,02 sur A, 0,05 sur B et 0,11 sur C. Quelle est la probabilité qu'un colis pris au hasard à la sortie du centre soit mal étiqueté ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,074"
+        },
+        {
+          "id": "b",
+          "text": "0,047"
+        },
+        {
+          "id": "c",
+          "text": "0,06"
+        },
+        {
+          "id": "d",
+          "text": "0,18"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les trois tapis forment une PARTITION de l'univers : tout colis passe par un tapis et un seul. On applique donc la formule des probabilités totales, en pondérant chaque taux d'erreur par le poids de son tapis. 1) L'ARBRE. Premier niveau : p(A) = 0,5, p(B) = 0,3, p(C) = 0,2, de somme 0,5 + 0,3 + 0,2 = 1 ✓ — la partition est complète. Second niveau : p(D/A) = 0,02, p(D/B) = 0,05, p(D/C) = 0,11, où D est l'événement « le colis est mal étiqueté ». 2) LES TROIS CHEMINS, un par un : p(A ∩ D) = 0,5 × 0,02 = 0,010 ; p(B ∩ D) = 0,3 × 0,05 = 0,015 ; p(C ∩ D) = 0,2 × 0,11 = 0,022. 3) LA SOMME, puisque ces trois événements sont deux à deux incompatibles : 0,010 + 0,015 = 0,025, puis 0,025 + 0,022 = 0,047. D'où p(D) = 0,047 ✓. Contrôle par une seconde voie totalement indépendante, le raisonnement sur les effectifs : sur 1000 colis, le tapis A en traite 500 dont 500 × 0,02 = 10 mal étiquetés ; B en traite 300 dont 300 × 0,05 = 15 ; C en traite 200 dont 200 × 0,11 = 22. Total : 10 + 15 + 22 = 47 colis mal étiquetés sur 1000, soit 47/1000 = 0,047 ✓. Contrôle de cohérence : 500 + 300 + 200 = 1000 ✓, et la probabilité complémentaire vaut 1 − 0,047 = 0,953, qui se retrouve aussi par les chemins « bien étiqueté » 0,5 × 0,98 + 0,3 × 0,95 + 0,2 × 0,89 = 0,49 + 0,285 + 0,178 = 0,953 ✓. Enfin le résultat est encadré par le plus petit et le plus grand des taux, 0,02 < 0,047 < 0,11, comme doit l'être toute moyenne pondérée. Le piège courant : oublier de pondérer et prendre la moyenne arithmétique des trois taux, (0,02 + 0,05 + 0,11)/3 = 0,18/3 = 0,06 ; c'est traiter les trois tapis comme s'ils traitaient chacun un tiers des colis, alors que C, le plus mauvais, n'en voit qu'un cinquième. Le distracteur 0,074 exécute l'appariement inversé des taux et des poids : on écrit 0,5 × 0,11 + 0,3 × 0,05 + 0,2 × 0,02 = 0,055 + 0,015 + 0,004 = 0,074, en donnant au tapis le plus fréquenté le taux du tapis le plus rare. Enfin 0,18 exécute l'addition pure des taux conditionnels, 0,02 + 0,05 + 0,11, comme s'ils étaient des probabilités d'événements incompatibles ; ce sont des probabilités CONDITIONNELLES, calculées chacune dans un univers différent, et rien n'oblige leur somme à valoir moins de 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un atelier reçoit ses batteries de deux fournisseurs : F₁ en livre 70 % et F₂ les 30 % restants. Parmi les batteries livrées par F₁, 4 % sont hors normes ; parmi celles livrées par F₂, 12 % le sont. On prélève une batterie au hasard dans le stock : elle est hors normes. Quelle est la probabilité qu'elle provienne du fournisseur F₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7/16"
+        },
+        {
+          "id": "b",
+          "text": "3/10"
+        },
+        {
+          "id": "c",
+          "text": "0,12"
+        },
+        {
+          "id": "d",
+          "text": "9/16"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On remonte la flèche : l'énoncé donne le défaut SACHANT le fournisseur, on demande le fournisseur SACHANT le défaut. Il n'y a rien à mémoriser, on revient à la définition p(F₂/H) = p(F₂ ∩ H)/p(H), et p(H) se calcule d'abord par les probabilités totales. 1) LES DEUX CHEMINS menant à H. p(F₁ ∩ H) = 0,7 × 0,04 = 0,028 et p(F₂ ∩ H) = 0,3 × 0,12 = 0,036. 2) LA PROBABILITÉ TOTALE : F₁ et F₂ forment une partition, donc p(H) = 0,028 + 0,036 = 0,064. 3) LE QUOTIENT : p(F₂/H) = p(F₂ ∩ H)/p(H) = 0,036/0,064 = 36/64 = 9/16 ≈ 0,5625 ✓ (en multipliant numérateur et dénominateur par 1000, puis en simplifiant par 4). Contrôle par une seconde voie totalement indépendante, le comptage sur un stock fictif de 1000 batteries : F₁ en livre 700, dont 700 × 0,04 = 28 hors normes ; F₂ en livre 300, dont 300 × 0,12 = 36 hors normes. Le stock compte donc 28 + 36 = 64 batteries hors normes, dont 36 viennent de F₂ : la proportion cherchée est 36/64 = 9/16 ✓. Contrôle de cohérence : p(F₁/H) = 28/64 = 7/16, et 9/16 + 7/16 = 16/16 = 1 ✓ — la batterie hors normes vient forcément de l'un des deux fournisseurs. Remarque de sens : F₂ ne livre que 30 % des batteries mais fournit 9/16 ≈ 56 % des rebuts, parce que son taux de défaut est le triple. Le piège courant, celui que le cours signale en encadré : confondre p(F₂/H) avec p(H/F₂) et répondre 0,12, c'est-à-dire recopier le taux de défaut de F₂ ; ce sont deux nombres différents, calculés dans deux univers différents — l'un parmi les batteries de F₂, l'autre parmi les batteries hors normes. Le distracteur 3/10 exécute l'oubli pur et simple de l'information : on répond p(F₂) = 0,3 = 3/10, la probabilité AVANT de savoir que la batterie est hors normes ; or cette information doit rehausser F₂, puisque F₂ fournit plus de rebuts, et 9/16 > 3/10 ✓. Enfin 7/16 exécute la réponse à la mauvaise cause : c'est p(F₁/H), la probabilité que la batterie vienne de F₁, obtenue en écrivant 0,028/0,064 au lieu de 0,036/0,064.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une machine produit des pièces ; chaque pièce est conforme avec la probabilité 0,8, indépendamment des autres. Combien de pièces au minimum faut-il prélever pour que la probabilité d'obtenir au moins une pièce NON conforme soit supérieure ou égale à 0,9 ? (On donne 0,8¹⁰ ≈ 0,1074 et 0,8¹¹ ≈ 0,0859.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "11"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "« Au moins un » se traite TOUJOURS par l'événement contraire : c'est le seul moyen d'éviter d'additionner n termes de la loi binomiale. 1) LE MODÈLE. Les prélèvements sont identiques et indépendants, à deux issues ; le nombre X de pièces non conformes suit donc la loi binomiale B(n ; 0,2). 2) LE CONTRAIRE. L'événement « aucune pièce non conforme » est (X = 0), de probabilité C_n^0 × 0,2⁰ × 0,8ⁿ = 0,8ⁿ : les n pièces sont conformes. 3) L'INÉQUATION. p(X ≥ 1) = 1 − 0,8ⁿ ≥ 0,9 équivaut à 0,8ⁿ ≤ 0,1. 4) LE SEUIL. Pour n = 10, 0,8¹⁰ ≈ 0,1074 > 0,1, donc p(X ≥ 1) ≈ 1 − 0,1074 = 0,8926 < 0,9 : dix pièces ne suffisent pas. Pour n = 11, 0,8¹¹ ≈ 0,0859 ≤ 0,1, donc p(X ≥ 1) ≈ 1 − 0,0859 = 0,9141 ≥ 0,9 ✓. Comme la suite (0,8ⁿ) est strictement décroissante, tous les n ≥ 11 conviennent et aucun n ≤ 10 ne convient : le nombre minimal cherché est 11 ✓. Contrôle par une seconde voie totalement indépendante, le calcul direct de 0,8¹¹ par puissances successives : 0,8² = 0,64 ; 0,8⁴ = 0,64² = 0,4096 ; 0,8⁸ = 0,4096² = 0,16777216 ; puis 0,8¹⁰ = 0,16777216 × 0,64 = 0,1073741824 et 0,8¹¹ = 0,1073741824 × 0,8 = 0,0858993459 ✓ — les deux valeurs de l'énoncé sont confirmées, et l'une est bien au-dessus de 0,1, l'autre en dessous. Le piège courant : arrondir 0,8¹⁰ ≈ 0,1074 à 0,1 et déclarer que dix pièces suffisent ; l'inégalité demandée est 1 − 0,8ⁿ ≥ 0,9, et avec n = 10 on obtient 0,8926, qui est strictement inférieur à 0,9 — un seuil se franchit, il ne s'arrondit pas. Le distracteur 2 exécute l'échange du succès et de l'échec : on prend 0,8 pour la probabilité qu'une pièce soit NON conforme, donc 0,2 pour celle qu'elle soit conforme, et on résout 1 − 0,2ⁿ ≥ 0,9, soit 0,2ⁿ ≤ 0,1 ; comme 0,2¹ = 0,2 > 0,1 puis 0,2² = 0,04 ≤ 0,1, on annonce 2. C'est la conformité, de probabilité 0,8, qu'on a alors traitée comme le défaut. Enfin 5 exécute l'additivité illégitime : on écrit p(au moins une non conforme) = n × 0,2 et on résout 0,2n ≥ 0,9, soit n ≥ 4,5, d'où 5 ; cette formule donnerait une probabilité 1,2 pour n = 6, ce qui la réfute seule.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une variable aléatoire X a pour fonction de répartition F définie sur ℝ par : F(x) = 0 si x < −1 ; F(x) = 0,2 si −1 ≤ x < 1 ; F(x) = 0,5 si 1 ≤ x < 3 ; F(x) = 0,9 si 3 ≤ x < 6 ; F(x) = 1 si x ≥ 6. Que vaut l'espérance E(X) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,6"
+        },
+        {
+          "id": "b",
+          "text": "2,3"
+        },
+        {
+          "id": "c",
+          "text": "1,9"
+        },
+        {
+          "id": "d",
+          "text": "2,25"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une fonction de répartition en escalier contient TOUTE la loi : les valeurs prises par X sont les abscisses des sauts, et chaque probabilité est la HAUTEUR du saut correspondant. On reconstruit donc la loi avant tout calcul. 1) LES VALEURS. F change de palier en −1, 1, 3 et 6 : X(E) = {−1, 1, 3, 6}. 2) LES HAUTEURS DE SAUT, chacune étant la différence de deux paliers consécutifs : p(X = −1) = 0,2 − 0 = 0,2 ; p(X = 1) = 0,5 − 0,2 = 0,3 ; p(X = 3) = 0,9 − 0,5 = 0,4 ; p(X = 6) = 1 − 0,9 = 0,1. 3) LE CONTRÔLE OBLIGATOIRE de toute loi : 0,2 + 0,3 + 0,4 + 0,1 = 1,0 ✓ — la loi est cohérente, et c'est ce test qui invalide toute lecture fautive des sauts. 4) L'ESPÉRANCE, terme à terme : (−1) × 0,2 = −0,2 ; 1 × 0,3 = 0,3 ; 3 × 0,4 = 1,2 ; 6 × 0,1 = 0,6. Somme : −0,2 + 0,3 = 0,1 ; 0,1 + 1,2 = 1,3 ; 1,3 + 0,6 = 1,9. D'où E(X) = 1,9 ✓. Contrôle par une seconde voie totalement indépendante, en décalant l'origine : posons Y = X + 1, de valeurs 0 ; 2 ; 4 ; 7 avec les mêmes probabilités. E(Y) = 0 × 0,2 + 2 × 0,3 + 4 × 0,4 + 7 × 0,1 = 0 + 0,6 + 1,6 + 0,7 = 2,9, et par linéarité E(X) = E(Y) − 1 = 2,9 − 1 = 1,9 ✓. Contrôle de vraisemblance : l'espérance doit tomber entre la plus petite et la plus grande valeur, −1 < 1,9 < 6 ✓, et plutôt près de 1 et 3 qui portent à eux deux 70 % de la masse. Le piège courant : décaler les sauts d'un cran, en attribuant à chaque valeur la hauteur du saut SUIVANT — soit 0,3 ; 0,4 ; 0,1 ; 0,2 — ce qui donne (−1) × 0,3 + 1 × 0,4 + 3 × 0,1 + 6 × 0,2 = −0,3 + 0,4 + 0,3 + 1,2 = 1,6 ; la somme fait encore 1, donc le contrôle habituel ne suffit pas : il faut relire que le saut se produit EN xᵢ, pas après. Le distracteur 2,3 exécute la perte du signe de la plus petite valeur : on calcule 1 × 0,2 + 1 × 0,3 + 3 × 0,4 + 6 × 0,1 = 0,2 + 0,3 + 1,2 + 0,6 = 2,3, en oubliant que la valeur vaut −1 et non 1. Enfin 2,25 exécute la moyenne non pondérée des quatre valeurs, (−1 + 1 + 3 + 6)/4 = 9/4 = 2,25, comme si les quatre valeurs étaient équiprobables ; elles ne le sont pas, et la valeur 6, la plus grosse, est justement la plus rare, ce qui tire l'espérance vers le bas.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La durée de vie X, en années, d'un composant électronique suit la loi exponentielle de paramètre λ = 0,25. Sachant qu'un composant fonctionne encore au bout de 4 ans, quelle est la probabilité qu'il fonctionne encore au bout de 12 ans ? (On donne e^(−1) ≈ 0,368, e^(−2) ≈ 0,135, e^(−3) ≈ 0,050 et e^(−4) ≈ 0,018.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "≈ 0,050"
+        },
+        {
+          "id": "b",
+          "text": "≈ 0,135"
+        },
+        {
+          "id": "c",
+          "text": "≈ 0,018"
+        },
+        {
+          "id": "d",
+          "text": "≈ 0,318"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Deux notions du chapitre se combinent ici : la loi exponentielle pour les probabilités, la probabilité conditionnelle pour l'information « il fonctionne encore à 4 ans ». 1) LA DÉFINITION. On cherche p(X ≥ 12 / X ≥ 4) = p((X ≥ 12) ∩ (X ≥ 4))/p(X ≥ 4). 2) L'INCLUSION, l'étape que l'on saute à tort : si X ≥ 12 alors à plus forte raison X ≥ 4, donc (X ≥ 12) ∩ (X ≥ 4) = (X ≥ 12). L'intersection n'est PAS un produit ici, c'est le plus petit des deux événements. 3) LES DEUX PROBABILITÉS, par la formule p(X ≥ c) = e^(−λc) : p(X ≥ 12) = e^(−0,25 × 12) = e^(−3) et p(X ≥ 4) = e^(−0,25 × 4) = e^(−1) ; contrôle des produits : 0,25 × 12 = 3 ✓ et 0,25 × 4 = 1 ✓. 4) LE QUOTIENT : e^(−3)/e^(−1) = e^(−3 + 1) = e^(−2) ≈ 0,135 ✓. Contrôle par une seconde voie totalement indépendante, avec les valeurs numériques données : e^(−3)/e^(−1) ≈ 0,050/0,368 ≈ 0,1359, et 0,135 × 0,368 ≈ 0,0497 ≈ 0,050 ✓ — la multiplication redonne bien le numérateur. Contrôle par le sens : le résultat e^(−2) est exactement p(X ≥ 8), la probabilité qu'un composant NEUF dure au moins huit ans. Autrement dit, un composant qui a déjà tenu 4 ans a la même chance de tenir 8 ans de plus qu'un composant neuf d'atteindre 8 ans : la loi exponentielle est sans vieillissement, et l'âge acquis ne compte pas. Le piège courant : ignorer le conditionnement et répondre p(X ≥ 12) ≈ 0,050 ; c'est la probabilité calculée sur un composant neuf, alors que l'univers a été RÉDUIT aux composants encore vivants à 4 ans — et cet univers ne pèse que e^(−1) ≈ 0,368, ce qui doit augmenter la probabilité, pas la laisser inchangée. Le distracteur ≈ 0,018 exécute la multiplication au lieu de la division : on écrit p = p(X ≥ 12) × p(X ≥ 4) = e^(−3) × e^(−1) = e^(−4) ≈ 0,018, comme si les deux événements étaient indépendants ; ils ne le sont pas, l'un contient l'autre. Enfin ≈ 0,318 exécute le changement de question : on calcule p(4 ≤ X ≤ 12) = e^(−1) − e^(−3) ≈ 0,368 − 0,050 = 0,318, c'est-à-dire la probabilité de tomber en panne ENTRE 4 et 12 ans — l'événement contraire de celui qu'on cherche à l'intérieur de l'univers réduit, et d'ailleurs 0,318/0,368 ≈ 0,865 = 1 − 0,135 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un club compte 7 filles et 5 garçons. On tire au sort une délégation de 4 personnes, tous les tirages étant équiprobables. Quelle est la probabilité que la délégation compte au moins une fille ET au moins un garçon ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8/99"
+        },
+        {
+          "id": "b",
+          "text": "92/99"
+        },
+        {
+          "id": "c",
+          "text": "98/99"
+        },
+        {
+          "id": "d",
+          "text": "91/99"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une délégation est un CHOIX SIMULTANÉ : l'ordre ne dit rien, on compte donc des combinaisons. Et une double contrainte « au moins … et au moins … » se traite par le contraire, qui est une réunion de deux cas incompatibles. 1) L'UNIVERS. card(E) = C_12^4 = (12 × 11 × 10 × 9)/(4 × 3 × 2 × 1) = 11880/24 = 495. 2) LE CONTRAIRE. Ne pas avoir les deux sexes, c'est être « que des filles » ou « que des garçons », deux cas incompatibles : C_7^4 = (7 × 6 × 5 × 4)/24 = 840/24 = 35 délégations entièrement féminines, et C_5^4 = 5 délégations entièrement masculines, soit 35 + 5 = 40 cas défavorables. 3) LE COMPTE FAVORABLE : 495 − 40 = 455. 4) LA PROBABILITÉ : 455/495 ; en divisant haut et bas par 5, on obtient 91/99 ✓ (455 = 5 × 91 et 495 = 5 × 99). Contrôle par une seconde voie totalement indépendante, la décomposition en cas disjoints selon le nombre de garçons : 1 garçon et 3 filles donne C_5^1 × C_7^3 = 5 × 35 = 175 ; 2 et 2 donne C_5^2 × C_7^2 = 10 × 21 = 210 ; 3 et 1 donne C_5^3 × C_7^1 = 10 × 7 = 70. Total : 175 + 210 = 385, puis 385 + 70 = 455 ✓ — le même nombre, obtenu sans passer par le complémentaire. Contrôle de la partition complète : 35 + 175 + 210 + 70 + 5 = 495 ✓, exactement card(E). Valeur décimale : 91/99 ≈ 0,919, une probabilité forte, ce qui est cohérent puisqu'il est difficile de tirer quatre personnes du même sexe dans un groupe aussi mélangé. Le piège courant : ne retirer qu'une seule des deux configurations interdites. En n'écartant que les délégations entièrement féminines, on obtient (495 − 35)/495 = 460/495 = 92/99 ; en n'écartant que les entièrement masculines, (495 − 5)/495 = 490/495 = 98/99 — deux options du menu, deux moitiés de la même faute : la condition en porte DEUX, et le contraire d'une conjonction est une réunion. Le distracteur 8/99 exécute la réponse à la question contraire : c'est 40/495, la probabilité que la délégation soit d'un seul sexe, et l'on vérifie que 91/99 + 8/99 = 99/99 = 1 ✓.",
+      "difficulty": 3
+    }
+  ]
+}

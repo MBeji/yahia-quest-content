@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le maître des lois",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Le temps d'attente X d'un client à un guichet, en minutes, suit la loi uniforme sur [0, a]. On observe que la probabilité d'attendre plus de 9 minutes vaut 0,4. Que vaut a ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "22,5"
+        },
+        {
+          "id": "b",
+          "text": "9,4"
+        },
+        {
+          "id": "c",
+          "text": "15"
+        },
+        {
+          "id": "d",
+          "text": "3,6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sens inverse : on ne calcule pas une probabilité, on retrouve le paramètre de la loi à partir d'une probabilité connue. La méthode ne change pas — on écrit la formule du cours, puis on résout l'équation obtenue. 1) LA FORMULE. Sur la loi uniforme de [0, a], la probabilité d'un intervalle est le quotient de sa longueur par a. L'événement « attendre plus de 9 minutes » est l'intervalle [9, a], de longueur a − 9 (ce qui suppose a > 9, à confirmer à la fin). Donc p(X > 9) = (a − 9)/a. 2) L'ÉQUATION : (a − 9)/a = 0,4, soit a − 9 = 0,4a en multipliant les deux membres par a, qui est non nul. 3) LA RÉSOLUTION : a − 0,4a = 9, soit 0,6a = 9, d'où a = 9/0,6 = 90/6 = 15 ✓. La condition a > 9 est bien vérifiée. Contrôle par réinjection : avec a = 15, p(X > 9) = (15 − 9)/15 = 6/15 = 0,4 ✓. Contrôle par une seconde voie totalement indépendante, en passant par l'événement contraire : p(X ≤ 9) = 1 − 0,4 = 0,6, et cette probabilité vaut 9/a sur la loi uniforme de [0, a] ; de 9/a = 0,6 on tire a = 9/0,6 = 15 ✓, et l'on retrouve le même nombre sans jamais écrire a − 9. Contrôle de vraisemblance : une attente moyenne sur [0, 15] place le seuil 9 aux trois cinquièmes de l'intervalle, ce qui laisse bien deux cinquièmes de la masse au-delà, soit 0,4 ✓. Le piège courant : appliquer la formule de p(X ≤ 9) à un énoncé qui parle de p(X > 9), et résoudre 9/a = 0,4, d'où a = 22,5. La réinjection le réfute en une ligne : avec a = 22,5, la probabilité d'attendre plus de 9 minutes vaut (22,5 − 9)/22,5 = 13,5/22,5 = 0,6, et non 0,4. Le distracteur 9,4 exécute une multiplication oubliée : on écrit (a − 9)/a = 0,4 puis a − 9 = 0,4, en ne multipliant que le membre de gauche par a, d'où a = 9,4 ; on vérifie que ce nombre est faux, car (9,4 − 9)/9,4 = 0,4/9,4 ≈ 0,043. Enfin 3,6 exécute la multiplication à la place de la division, a = 9 × 0,4 = 3,6 ; cette valeur est même impossible, puisque a = 3,6 < 9 rendrait l'attente de plus de 9 minutes strictement impossible, de probabilité 0 et non 0,4.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans une seule de ces quatre situations, la variable aléatoire X ne suit PAS une loi binomiale. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "On lance 10 fois un dé équilibré ; X est le nombre de 6 obtenus."
+        },
+        {
+          "id": "b",
+          "text": "Une urne contient 4 boules rouges et 6 noires ; on tire 3 boules successivement SANS remise ; X est le nombre de rouges obtenues."
+        },
+        {
+          "id": "c",
+          "text": "Une urne contient 4 boules rouges et 6 noires ; on tire 3 boules successivement AVEC remise ; X est le nombre de rouges obtenues."
+        },
+        {
+          "id": "d",
+          "text": "Un joueur tire 5 pénalties indépendants, réussis chacun avec la probabilité 0,7 ; X est le nombre de buts."
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La loi binomiale exige trois conditions simultanées : des épreuves IDENTIQUES, INDÉPENDANTES, et n'ayant que DEUX issues. Il suffit qu'une seule tombe pour que la loi ne soit plus binomiale. La situation à écarter est le tirage SANS remise ✓. Pourquoi : au premier tirage, la probabilité d'une rouge vaut 4/10 = 0,4 ; mais si la première boule tirée est rouge, il ne reste que 3 rouges sur 9 boules et la probabilité de rouge au deuxième tirage tombe à 3/9 = 1/3, alors qu'elle monterait à 4/9 si la première avait été noire. La probabilité de succès CHANGE d'une épreuve à l'autre et dépend du passé : les épreuves ne sont ni identiques ni indépendantes. Réfutation chiffrée, par une seconde voie totalement indépendante : la vraie loi se calcule par dénombrement, p(X = 0) = C_6^3/C_10^3 = 20/120 = 1/6 ≈ 0,167, alors qu'une loi binomiale B(3 ; 0,4) donnerait p(X = 0) = 0,6³ = 0,216 ; les deux nombres diffèrent, donc la loi n'est pas B(3 ; 0,4) ✓. Contrôle du dénombrement : C_10^3 = (10 × 9 × 8)/6 = 720/6 = 120 ✓ et C_6^3 = (6 × 5 × 4)/6 = 20 ✓. LES TROIS AUTRES SONT BIEN BINOMIALES, et l'on peut nommer leurs paramètres. Les 10 lancers d'un dé sont indépendants et le dé ne se souvient de rien ; en appelant succès « obtenir 6 », X suit B(10 ; 1/6) ✓. Le tirage AVEC remise remet l'urne dans son état initial à chaque fois : la probabilité de rouge reste 0,4 à chaque tirage, et X suit B(3 ; 0,4) ✓ — c'est la même urne que la situation écartée, seule la remise change, ce qui est exactement le contre-exemple que les énoncés adorent glisser. Les 5 pénalties sont déclarés indépendants et de même probabilité 0,7, à deux issues but ou raté : X suit B(5 ; 0,7) ✓. Le piège courant : croire que « il n'y a que deux couleurs, donc c'est binomial », ou juger la situation sur le nombre d'issues seulement. Deux issues ne suffisent pas ; ce sont l'indépendance et la constance de p qui décident, et c'est la remise, jamais la couleur, qui les garantit. Autre confusion fréquente : penser que le nombre 1/6 des 6 au dé, jugé « petit », interdirait la loi binomiale — la valeur de p n'entre pour rien dans les conditions, seule sa CONSTANCE compte.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une urne contient 2 boules gagnantes et 4 boules perdantes, indiscernables au toucher. Le joueur mise 2 dinars et tire simultanément 2 boules : il reçoit a dinars s'il obtient deux boules gagnantes, 3 dinars s'il en obtient exactement une, et rien sinon. Pour quelle valeur de a le jeu est-il équitable, c'est-à-dire l'espérance du gain algébrique nulle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Trois étapes dépendantes : la loi du nombre de gagnantes, puis celle du gain ALGÉBRIQUE (reçu moins mise), puis l'équation E(G) = 0. 1) L'UNIVERS. Un tirage simultané de 2 boules parmi 6 donne C_6^2 = (6 × 5)/2 = 15 tirages équiprobables. 2) LA LOI DU NOMBRE Y DE GAGNANTES. Deux gagnantes : C_2^2 = 1 cas, soit 1/15. Exactement une : C_2^1 × C_4^1 = 2 × 4 = 8 cas, soit 8/15. Aucune : C_4^2 = (4 × 3)/2 = 6 cas, soit 6/15. Contrôle de la loi : 1 + 8 + 6 = 15 ✓ et 1/15 + 8/15 + 6/15 = 15/15 = 1 ✓. 3) LE GAIN ALGÉBRIQUE G, mise déduite dans TOUS les cas : G = a − 2 avec la probabilité 1/15 ; G = 3 − 2 = 1 avec la probabilité 8/15 ; G = 0 − 2 = −2 avec la probabilité 6/15. 4) L'ESPÉRANCE, terme à terme : E(G) = (a − 2)(1/15) + 1 × (8/15) + (−2)(6/15) = (a − 2 + 8 − 12)/15 = (a − 6)/15 ; recalcul du terme constant : −2 + 8 = 6, puis 6 − 12 = −6 ✓. 5) L'ÉQUATION : (a − 6)/15 = 0 équivaut à a = 6 ✓. Contrôle par une seconde voie totalement indépendante, en raisonnant sur ce que le joueur REÇOIT : un jeu est équitable lorsque l'espérance de la somme reçue égale la mise. Avec a = 6, cette espérance vaut 6 × (1/15) + 3 × (8/15) + 0 × (6/15) = (6 + 24)/15 = 30/15 = 2, exactement la mise de 2 dinars ✓. Les deux chemins donnent la même valeur. Le piège courant : ne déduire la mise que des branches perdantes et l'oublier sur la branche la plus payante. On écrit alors E(G) = a(1/15) + 1(8/15) − 2(6/15) = (a − 4)/15, d'où a = 4 ; mais la mise est versée AVANT le tirage, elle est perdue dans tous les cas, y compris quand on gagne. Le distracteur 3 exécute l'équiprobabilité imaginaire des trois issues : on donne 1/3 à chacune et on résout (a + 3 + 0)/3 = 2, d'où a + 3 = 6 et a = 3 ; or les trois issues sont très inégales, la meilleure ne pesant que 1/15 contre 6/15 pour la pire. Enfin 1 exécute l'échange des deux combinaisons extrêmes : en prenant C_4^2 = 6 pour le nombre de tirages doublement gagnants et C_2^2 = 1 pour les tirages doublement perdants, l'équation devient 6a/15 + 24/15 = 2, soit 6a = 6 et a = 1 ; le simple bon sens la réfute, car la meilleure issue paierait alors trois fois moins que l'issue moyenne.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Chasse à l'erreur. Une maladie touche 2 % d'une population ; un test est positif chez 95 % des malades et chez 3 % des non-malades. On cherche p(M/T), probabilité qu'une personne au test positif soit malade. Voici une solution proposée. ① « L'arbre porte au premier niveau p(M) = 0,02 et p(M̅) = 0,98, et au second p(T/M) = 0,95 et p(T/M̅) = 0,03. » ② « Les deux branches menant à un test positif portent 0,95 et 0,03, de somme 0,98 ; on complète donc l'arbre par p(T̅/M) = 0,03 et p(T̅/M̅) = 0,95. » ③ « Les deux chemins menant à T donnent p(M ∩ T) = 0,02 × 0,95 = 0,019 et p(M̅ ∩ T) = 0,98 × 0,03 = 0,0294, donc par les probabilités totales p(T) = 0,019 + 0,0294 = 0,0484. » ④ « Enfin p(M/T) = p(M ∩ T)/p(T) = 0,019/0,0484 ≈ 0,393. » Quelle est la PREMIÈRE étape fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape ①"
+        },
+        {
+          "id": "b",
+          "text": "L'étape ②"
+        },
+        {
+          "id": "c",
+          "text": "L'étape ③"
+        },
+        {
+          "id": "d",
+          "text": "L'étape ④"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Ceci est une chasse à l'erreur : la solution proposée contient une faute plantée, l'explication décrit donc un raisonnement volontairement faux. L'étape ② est la PREMIÈRE — et la seule — étape fausse ✓, et sa perfidie est qu'elle ne contamine pas le résultat final, qui reste juste. Reprenons la fiche ligne à ligne. ① EST JUSTE. « 2 % de la population est malade » donne p(M) = 0,02 et p(M̅) = 1 − 0,02 = 0,98 ✓ ; « positif chez 95 % des malades » est bien une probabilité conditionnelle, p(T/M) = 0,95, et « chez 3 % des non-malades » donne p(T/M̅) = 0,03 ✓. ② EST FAUSSE. La règle de l'arbre est que les branches issues d'un MÊME nœud ont pour somme 1 ; or 0,95 et 0,03 sont issues de deux nœuds DIFFÉRENTS, M et M̅, et leur somme 0,98 ne signifie rien. Les bonnes valeurs se lisent nœud par nœud : p(T̅/M) = 1 − 0,95 = 0,05 et p(T̅/M̅) = 1 − 0,03 = 0,97. ÉTAPE CORRIGÉE : « ② Les branches issues de M portent 0,95 et p(T̅/M) = 0,05, de somme 1 ; celles issues de M̅ portent 0,03 et p(T̅/M̅) = 0,97, de somme 1. » Contrôle de la correction par la partition complète : p(M ∩ T) = 0,019, p(M ∩ T̅) = 0,02 × 0,05 = 0,001, p(M̅ ∩ T) = 0,0294 et p(M̅ ∩ T̅) = 0,98 × 0,97 = 0,9506 ; leur somme vaut 0,019 + 0,001 + 0,0294 + 0,9506 = 1,0000 ✓, alors que les valeurs de l'étape ② donneraient p(M ∩ T̅) = 0,02 × 0,03 = 0,0006 et p(M̅ ∩ T̅) = 0,98 × 0,95 = 0,931, pour un total de 0,980 ≠ 1 — la faute est démasquée par le seul contrôle qui compte sur un arbre. ③ EST JUSTE, et c'est ce qui rend l'exercice sélectif : elle n'utilise que les branches « positif », que l'étape ② n'a pas touchées. Les produits se vérifient, 0,02 × 0,95 = 0,019 ✓ et 0,98 × 0,03 = 0,0294 ✓, et la somme aussi, 0,019 + 0,0294 = 0,0484 ✓ ; les deux chemins forment bien une partition de T. ④ EST JUSTE. C'est la définition même de la probabilité conditionnelle, appliquée dans le bon sens : 0,019/0,0484 ≈ 0,3926, soit environ 0,393 ✓ — contrôle par produit, 0,0484 × 0,393 ≈ 0,0190 ✓. Le piège courant, ici, est de chercher la faute là où le nombre final serait faux : comme 0,393 est correct, on est tenté de déclarer la solution entièrement juste, ou d'accuser ④ parce que le résultat surprend (un test très fiable qui, sur une maladie rare, laisse moins de 40 % de vrais malades parmi les positifs). Répondre ① revient à contester une traduction d'énoncé littérale ; répondre ③ revient à contester des produits vérifiables de tête ; répondre ④ revient à condamner la définition du cours. La leçon : sur un arbre, on vérifie la somme des branches NŒUD PAR NŒUD, jamais en travers — et une étape fausse peut fort bien précéder un résultat juste.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un conseil de 4 membres est tiré au sort parmi 6 professeurs et 4 parents d'élèves, tous les tirages étant équiprobables. Quelle est la probabilité que le conseil compte au moins 2 professeurs et au moins 1 parent ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "37/42"
+        },
+        {
+          "id": "b",
+          "text": "3/7"
+        },
+        {
+          "id": "c",
+          "text": "4/21"
+        },
+        {
+          "id": "d",
+          "text": "17/21"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Deux contraintes à la fois : on ne cherche pas de formule globale, on ÉNUMÈRE les compositions autorisées, chacune étant un cas disjoint des autres. 1) L'UNIVERS. Un conseil est un choix simultané de 4 personnes parmi 10 : card(E) = C_10^4 = (10 × 9 × 8 × 7)/(4 × 3 × 2 × 1) = 5040/24 = 210. 2) LES COMPOSITIONS AUTORISÉES, écrites en (professeurs, parents) avec au moins 2 professeurs et au moins 1 parent : seules (2, 2) et (3, 1) conviennent — (4, 0) a bien assez de professeurs mais aucun parent, (1, 3) et (0, 4) manquent de professeurs. 3) LE DÉNOMBREMENT, cas par cas : (2, 2) donne C_6^2 × C_4^2 = 15 × 6 = 90 ; (3, 1) donne C_6^3 × C_4^1 = 20 × 4 = 80. Total favorable : 90 + 80 = 170. 4) LA PROBABILITÉ : 170/210 = 17/21 ✓ en divisant haut et bas par 10 ; valeur décimale ≈ 0,810. Contrôle par une seconde voie totalement indépendante, le complémentaire : les compositions interdites sont (4, 0) avec C_6^4 = 15, (1, 3) avec C_6^1 × C_4^3 = 6 × 4 = 24, et (0, 4) avec C_4^4 = 1, soit 15 + 24 + 1 = 40 conseils interdits ; il en reste 210 − 40 = 170 ✓, le même nombre. Contrôle de la partition complète : 1 + 24 + 90 + 80 + 15 = 210 ✓, exactement card(E) — aucune composition n'a été oubliée ni comptée deux fois. Le piège courant : ne retenir qu'une seule des deux contraintes. En oubliant « au moins un parent », on garde aussi la composition (4, 0) et l'on obtient (90 + 80 + 15)/210 = 185/210 = 37/42 ; l'écart avec la bonne réponse est exactement 15/210, c'est-à-dire les conseils composés des seuls professeurs, où les parents n'auraient aucune voix. Le distracteur 3/7 exécute la lecture « exactement 2 professeurs » au lieu de « au moins 2 » : on ne compte que la composition (2, 2), soit 90/210 = 3/7, en oubliant les conseils à 3 professeurs et 1 parent, qui respectent pourtant les deux conditions. Enfin 4/21 exécute la réponse à la question contraire : c'est 40/210, la probabilité qu'au moins une des deux contraintes soit violée, et l'on vérifie que 17/21 + 4/21 = 21/21 = 1 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La durée de vie X, en années, d'une machine suit la loi exponentielle de paramètre λ = 0,1. Un atelier possède 4 machines dont les durées de vie sont indépendantes. Quelle est la probabilité qu'au moins une des 4 machines fonctionne encore au bout de 10 ans ? (On donne e^(−1) ≈ 0,368 et 0,632⁴ ≈ 0,160.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "≈ 0,632"
+        },
+        {
+          "id": "b",
+          "text": "≈ 0,368"
+        },
+        {
+          "id": "c",
+          "text": "≈ 0,840"
+        },
+        {
+          "id": "d",
+          "text": "≈ 0,018"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Deux lois s'enchaînent : l'exponentielle fournit la probabilité de survie d'UNE machine, la binomiale compte combien de machines survivent parmi les quatre. 1) LA PROBABILITÉ INDIVIDUELLE. Pour une machine, p(X ≥ 10) = e^(−λ × 10) = e^(−0,1 × 10) = e^(−1) ≈ 0,368 ; contrôle du produit : 0,1 × 10 = 1 ✓. 2) LE MODÈLE BINOMIAL. Les quatre machines sont indépendantes et identiques, chacune à deux issues (encore vivante ou non) avec la même probabilité de succès e^(−1) : le nombre Y de machines survivantes suit B(4 ; e^(−1)). 3) LE CONTRAIRE. « Au moins une » se traite par « aucune » : p(Y = 0) = C_4^0 × (e^(−1))⁰ × (1 − e^(−1))⁴ = (1 − 0,368)⁴ = 0,632⁴ ≈ 0,160. 4) LA CONCLUSION : p(Y ≥ 1) = 1 − p(Y = 0) ≈ 1 − 0,160 = 0,840 ✓. Contrôle par une seconde voie totalement indépendante, en additionnant les quatre termes utiles de la loi binomiale au lieu de passer par le contraire : avec p = 0,368 et q = 0,632, p(Y = 1) = 4 × 0,368 × 0,632³ ≈ 4 × 0,368 × 0,2525 ≈ 0,372 ; p(Y = 2) = 6 × 0,368² × 0,632² ≈ 6 × 0,1354 × 0,3994 ≈ 0,325 ; p(Y = 3) = 4 × 0,368³ × 0,632 ≈ 4 × 0,0498 × 0,632 ≈ 0,126 ; p(Y = 4) = 0,368⁴ ≈ 0,018. Somme : 0,372 + 0,325 = 0,697 ; 0,697 + 0,126 = 0,823 ; 0,823 + 0,018 = 0,841 ≈ 0,840 ✓, l'écart n'étant dû qu'aux arrondis. Contrôle de la loi complète : 0,160 + 0,841 = 1,001 ≈ 1 ✓. Le piège courant : oublier qu'il y a quatre machines et répondre ≈ 0,368, la probabilité de survie d'une seule ; avec quatre machines indépendantes la chance qu'au moins une tienne doit être plus GRANDE, jamais égale. Le distracteur ≈ 0,018 exécute la confusion entre « au moins une » et « toutes les quatre » : c'est (e^(−1))⁴ = e^(−4) ≈ 0,018, la probabilité que les quatre machines soient encore en service, c'est-à-dire p(Y = 4) — l'événement le plus rare du problème, pas le plus fréquent. Enfin ≈ 0,632 exécute le calcul sur l'événement contraire d'une seule machine : c'est 1 − e^(−1) = p(X ≤ 10), la probabilité qu'UNE machine soit déjà tombée en panne, valeur qu'il fallait élever à la puissance 4 avant de la retrancher à 1, et non annoncer telle quelle. Erreur voisine à connaître : additionner les quatre probabilités individuelles, 4 × 0,368 ≈ 1,47, nombre plus grand que 1 donc impossible — c'est E(Y), le nombre MOYEN de machines survivantes, jamais une probabilité.",
+      "difficulty": 3
+    }
+  ]
+}
