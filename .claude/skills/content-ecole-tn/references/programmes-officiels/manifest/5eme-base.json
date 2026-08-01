@@ -2,25 +2,61 @@
   "grade": "5eme-base",
   "sealed": false,
   "source": "CNP — programme national 5ème année de base (guides enseignant, cnp-officiel/ : maths 502503, arabe 501505, éveil 503504, islamique 511505, français 521513). Transcriptions fidèles sous programme/5eme-base/. Vérif. séquençage : taybah.",
-  "note": "sealed=false. math/arabic/eveil-5eme codifiés depuis les guides CNP (contenu publié, audit 100%). islamique-5eme et french-5eme attendus mais contenu non encore créé → rapportés 'manquants' (amorces de transcription disponibles : programme/5eme-base/islamique.md, /francais.md). english n'existe pas avant la 6ème.",
+  "note": "sealed=false. math/arabic/eveil-5eme codifiés depuis les guides CNP (contenu publié, audit 100%). islamique-5eme chapitré depuis la transcription programme/5eme-base/islamique.md §4 (20 chapitres : la فترة 0 diagnostique n'est pas modélisée par l'app ; le bloc التواضع/الأيثار/الألفة est éclaté en 3, un محور = un chapitre comme le reste) — contenu en cours de génération, tranche par tranche. french-5eme attendu mais contenu non encore créé → rapporté 'manquant' (amorce : programme/5eme-base/francais.md). english n'existe pas avant la 6ème.",
   "subjects": [
     {
       "id": "math-5eme",
       "name": "الرياضيات",
       "contentLanguage": "ar",
       "chapters": [
-        { "slug": "01-grands-nombres", "notion": "الأعداد الكبيرة (حتى الملايين)" },
-        { "slug": "02-nombres-decimaux", "notion": "الأعداد العشريّة" },
-        { "slug": "03-comparaison-decimaux", "notion": "مقارنة وترتيب الأعداد العشريّة" },
-        { "slug": "04-addition-soustraction-decimaux", "notion": "جمع وطرح الأعداد العشريّة" },
-        { "slug": "05-multiplication-decimaux", "notion": "ضرب الأعداد العشريّة" },
-        { "slug": "06-division", "notion": "القسمة" },
-        { "slug": "07-fractions", "notion": "الكسور" },
-        { "slug": "08-mesure-grandeurs", "notion": "القيس (المقادير)" },
-        { "slug": "09-perimetre-aire", "notion": "المحيط والمساحة" },
-        { "slug": "10-proportionnalite-pourcentage", "notion": "التناسب والنسبة المئويّة" },
-        { "slug": "11-geometrie", "notion": "الأنشطة الهندسيّة (المنقلة، الموسّط، الدائرة)" },
-        { "slug": "12-symetrie", "notion": "التناظر المحوري" }
+        {
+          "slug": "01-grands-nombres",
+          "notion": "الأعداد الكبيرة (حتى الملايين)"
+        },
+        {
+          "slug": "02-nombres-decimaux",
+          "notion": "الأعداد العشريّة"
+        },
+        {
+          "slug": "03-comparaison-decimaux",
+          "notion": "مقارنة وترتيب الأعداد العشريّة"
+        },
+        {
+          "slug": "04-addition-soustraction-decimaux",
+          "notion": "جمع وطرح الأعداد العشريّة"
+        },
+        {
+          "slug": "05-multiplication-decimaux",
+          "notion": "ضرب الأعداد العشريّة"
+        },
+        {
+          "slug": "06-division",
+          "notion": "القسمة"
+        },
+        {
+          "slug": "07-fractions",
+          "notion": "الكسور"
+        },
+        {
+          "slug": "08-mesure-grandeurs",
+          "notion": "القيس (المقادير)"
+        },
+        {
+          "slug": "09-perimetre-aire",
+          "notion": "المحيط والمساحة"
+        },
+        {
+          "slug": "10-proportionnalite-pourcentage",
+          "notion": "التناسب والنسبة المئويّة"
+        },
+        {
+          "slug": "11-geometrie",
+          "notion": "الأنشطة الهندسيّة (المنقلة، الموسّط، الدائرة)"
+        },
+        {
+          "slug": "12-symetrie",
+          "notion": "التناظر المحوري"
+        }
       ]
     },
     {
@@ -28,14 +64,38 @@
       "name": "اللغة العربية",
       "contentLanguage": "ar",
       "chapters": [
-        { "slug": "01-fahm-al-maqru", "notion": "فهم المقروء" },
-        { "slug": "02-al-jumla-al-kubra-wal-sughra", "notion": "الجملة الكبرى والصغرى" },
-        { "slug": "03-al-fi3l-allazim-wal-muta3addi", "notion": "الفعل اللازم والمتعدّي" },
-        { "slug": "04-al-mabni-lilmajhul", "notion": "المبني للمجهول" },
-        { "slug": "05-al-maf3ulat-wal-hal", "notion": "المفعولات والحال" },
-        { "slug": "06-kana-wa-inna-wa-akhawatuhuma", "notion": "كان وإنّ وأخواتهما" },
-        { "slug": "07-as-sarf-al-mujarrad-wal-mazid", "notion": "الصرف: المجرّد والمزيد" },
-        { "slug": "08-al-imla-al-hamza", "notion": "الإملاء: الهمزة" }
+        {
+          "slug": "01-fahm-al-maqru",
+          "notion": "فهم المقروء"
+        },
+        {
+          "slug": "02-al-jumla-al-kubra-wal-sughra",
+          "notion": "الجملة الكبرى والصغرى"
+        },
+        {
+          "slug": "03-al-fi3l-allazim-wal-muta3addi",
+          "notion": "الفعل اللازم والمتعدّي"
+        },
+        {
+          "slug": "04-al-mabni-lilmajhul",
+          "notion": "المبني للمجهول"
+        },
+        {
+          "slug": "05-al-maf3ulat-wal-hal",
+          "notion": "المفعولات والحال"
+        },
+        {
+          "slug": "06-kana-wa-inna-wa-akhawatuhuma",
+          "notion": "كان وإنّ وأخواتهما"
+        },
+        {
+          "slug": "07-as-sarf-al-mujarrad-wal-mazid",
+          "notion": "الصرف: المجرّد والمزيد"
+        },
+        {
+          "slug": "08-al-imla-al-hamza",
+          "notion": "الإملاء: الهمزة"
+        }
       ]
     },
     {
@@ -43,23 +103,134 @@
       "name": "الإيقاظ العلمي",
       "contentLanguage": "ar",
       "chapters": [
-        { "slug": "01-sources-lumiere", "notion": "مصادر الضوء" },
-        { "slug": "02-propagation-lumiere", "notion": "انتشار الضوء" },
-        { "slug": "03-ombre-eclipses", "notion": "الظلّ والكسوف والخسوف" },
-        { "slug": "04-squelette", "notion": "الهيكل العظمي" },
-        { "slug": "05-mouvement-muscles", "notion": "العضلات والحركة" },
-        { "slug": "06-respiration", "notion": "الجهاز التنفّسي" },
-        { "slug": "07-circulation-sang", "notion": "الدّورة الدّمويّة" },
-        { "slug": "08-electricite", "notion": "الكهرباء" },
-        { "slug": "09-vivants-milieu", "notion": "الكائنات الحيّة والوسط البيئيّ" },
-        { "slug": "10-plantes-sol-eau", "notion": "النبات والتربة والماء" }
+        {
+          "slug": "01-sources-lumiere",
+          "notion": "مصادر الضوء"
+        },
+        {
+          "slug": "02-propagation-lumiere",
+          "notion": "انتشار الضوء"
+        },
+        {
+          "slug": "03-ombre-eclipses",
+          "notion": "الظلّ والكسوف والخسوف"
+        },
+        {
+          "slug": "04-squelette",
+          "notion": "الهيكل العظمي"
+        },
+        {
+          "slug": "05-mouvement-muscles",
+          "notion": "العضلات والحركة"
+        },
+        {
+          "slug": "06-respiration",
+          "notion": "الجهاز التنفّسي"
+        },
+        {
+          "slug": "07-circulation-sang",
+          "notion": "الدّورة الدّمويّة"
+        },
+        {
+          "slug": "08-electricite",
+          "notion": "الكهرباء"
+        },
+        {
+          "slug": "09-vivants-milieu",
+          "notion": "الكائنات الحيّة والوسط البيئيّ"
+        },
+        {
+          "slug": "10-plantes-sol-eau",
+          "notion": "النبات والتربة والماء"
+        }
       ]
     },
     {
       "id": "education-islamique-5eme",
       "name": "التربية الإسلامية",
       "contentLanguage": "ar",
-      "chapters": []
+      "chapters": [
+        {
+          "slug": "01-sourate-al-burooj",
+          "notion": "سورة البروج (تلاوة واستظهار، الآيات 1–22)"
+        },
+        {
+          "slug": "02-al-iman-billah",
+          "notion": "الإيمان بالله — وحدانية الله (آل عمران 18 ؛ سورة الإخلاص)"
+        },
+        {
+          "slug": "03-ar-rifq-bil-walidayn",
+          "notion": "الرفق بالوالدين (الإسراء 23–24)"
+        },
+        {
+          "slug": "04-adab-al-hadith",
+          "notion": "آداب الحديث (حديثان شريفان)"
+        },
+        {
+          "slug": "05-al-wudoo",
+          "notion": "الوضوء (الفرائض، السنن، النواقض)"
+        },
+        {
+          "slug": "06-sourate-al-inshiqaq",
+          "notion": "سورة الانشقاق (تلاوة واستظهار، الآيات 1–25)"
+        },
+        {
+          "slug": "07-sourate-al-mutaffifeen",
+          "notion": "سورة المطفّفين (تلاوة واستظهار، الآيات 1–36)"
+        },
+        {
+          "slug": "08-al-iman-bir-rusul",
+          "notion": "الإيمان بالرّسل (الشورى 13)"
+        },
+        {
+          "slug": "09-ikram-ad-dayf",
+          "notion": "إكرام الضيف (الحديث النبوي الشريف)"
+        },
+        {
+          "slug": "10-al-ijtihad-fid-dirasa",
+          "notion": "الاجتهاد في الدراسة (الزمر 9)"
+        },
+        {
+          "slug": "11-as-salat",
+          "notion": "الصلاة (الصلوات الخمس، مبطلات الصلاة)"
+        },
+        {
+          "slug": "12-al-iman-bil-kutub",
+          "notion": "الإيمان بالكتب السماوية (آل عمران 3–4)"
+        },
+        {
+          "slug": "13-al-mouhafadha-ala-mumtalakat",
+          "notion": "المحافظة على ممتلكات المدرسة (القصص 77)"
+        },
+        {
+          "slug": "14-adh-dhann-bil-ghayr",
+          "notion": "الظنّ بالغير / إحسان الظنّ (الحجرات 12)"
+        },
+        {
+          "slug": "15-qawl-al-maroof",
+          "notion": "قول المعروف / الكلمة الطيّبة (البقرة 263 ؛ إبراهيم 24–25)"
+        },
+        {
+          "slug": "16-sourate-al-infitar",
+          "notion": "سورة الانفطار (تلاوة واستظهار، الآيات 1–19)"
+        },
+        {
+          "slug": "17-az-zakat",
+          "notion": "الزكاة (أحكامها وأنواعها، فوائدها للفرد والمجتمع)"
+        },
+        {
+          "slug": "18-at-tawadu",
+          "notion": "التواضع (الفرقان 63)"
+        },
+        {
+          "slug": "19-al-ithar",
+          "notion": "الأيثار (الحشر 9)"
+        },
+        {
+          "slug": "20-al-ulfa-wal-itilaf",
+          "notion": "الألفة والائتلاف (حديث رواه أحمد)"
+        }
+      ]
     },
     {
       "id": "french-5eme",
