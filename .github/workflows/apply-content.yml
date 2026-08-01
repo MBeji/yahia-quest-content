@@ -301,6 +301,27 @@ jobs:
           echo "| ----- | --------- | --------- |" >> "$GITHUB_STEP_SUMMARY"
           VIDES=""
           for f in ${{ steps.plan.outputs.files }}; do
+            # Le registre N'EST PAS un sujet : il ne porte ni chapitre ni
+            # question. Le compter comme tel le déclarait « appliqué sans effet »
+            # à chaque passage — constaté le 2026-08-01 (run 30692259709) : le
+            # contenu ÉTAIT bien en base, mais l'étape échouait et la release
+            # n'était donc jamais journalisée. Il a son propre critère : le
+            # nombre de compétences en base ne doit pas être inférieur à ce que
+            # le corpus déclare.
+            if [ "$f" = "_competences_registry.sql" ]; then
+              DECLARE=$(node -e "
+                const fs = require('fs');
+                const d = process.env.GITHUB_WORKSPACE + '/corpus/content/competences';
+                let n = 0;
+                for (const x of fs.readdirSync(d).filter((y) => y.endsWith('.json')))
+                  n += JSON.parse(fs.readFileSync(d + '/' + x, 'utf8')).competencies.length;
+                process.stdout.write(String(n));")
+              EN_BASE=$(psql "${PROD_SUPABASE_DB_URL}" --set ON_ERROR_STOP=1 -tAq \
+                -c "SELECT count(*) FROM public.competencies;")
+              echo "| \`registre de compétences\` | — | ${EN_BASE} en base / ${DECLARE} déclarées |" >> "$GITHUB_STEP_SUMMARY"
+              [ "${EN_BASE:-0}" -ge "${DECLARE:-1}" ] || VIDES="${VIDES} registre(${EN_BASE}<${DECLARE})"
+              continue
+            fi
             # `subjects.id` EST le slug du sujet (et donc le nom du fichier) —
             # pas un UUID, contrairement aux chapitres/exercices/questions.
             SUBJECT="$(basename "$f" .sql)"
