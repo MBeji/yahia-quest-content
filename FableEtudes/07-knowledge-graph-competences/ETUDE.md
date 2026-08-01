@@ -136,7 +136,7 @@ v1 (joli mais sans valeur pédagogique directe).
 
 - [x] Lot 1 — pipeline + registre math (merge seul)
 - [x] Lot 2 — DB + maîtrise
-- [ ] Lot 3 — tagging vague 1 (chantier contenu, PR séparée du code)
+- [x] Lot 3 — tagging vague 1 (chantier contenu, PR séparée du code)
 - [ ] Lot 4 — RPCs + UI
 - [ ] Lot 5 — intégration plan quotidien
 
@@ -263,3 +263,25 @@ carte.
     déjà seedé), lot 4 (RPCs `get_my_competency_map`/`get_competency_blockers`/
     `get_exercises_for_competency` + panneau UI, consommant `competency_mastery_with_decay`),
     lot 5 (plan quotidien compétence-aware).
+- **2026-07-27 — Lot 3 livré : la vague 1 est complète** (privé #51, #53, #54, #55 pour `math` ;
+  #56 → #61 pour `math-6eme`). **1 362 questions taggées** — 557/557 et 805/805 — 1 à 3
+  compétences par question, la première étant la principale. Les lots 2, 4 et 5, livrés mais
+  **inertes faute de corpus tagué**, ne le sont plus.
+  - **Le stop-point Q-1 est levé par l'usage, pas par une signature** : les **57 compétences du
+    registre sont TOUTES mobilisées**, aucune n'est morte. Le calibrage « granularité medium
+    ~55-70 » est donc vérifié par le tagging réel et non seulement par construction — c'est
+    exactement ce qui manquait à la validation de l'échantillon.
+  - **Deux manques ressortis en creux**, tranchés par Mohamed le 2026-07-31 et livrés (privé #90) :
+    `math.num.valeur-absolue` (prérequis `num.ordre-encadrement` — |x| est une distance, elle
+    suppose l'ordre) et `math.stat.mode` (prérequis `stat.effectifs-frequences` — le mode se lit
+    sur les effectifs). **16 questions re-taguées**, et non 18 comme annoncé d'abord : le
+    recensement à la main était faux (les tableaux Markdown de statistiques ressemblent à des
+    valeurs absolues), refait sur un discriminant vérifié. Une question garde son tag voisin —
+    `07/04-defi#1`, l'angle du secteur du mode, porte déjà 3 compétences et le plafond R-2 est
+    de 3 : choix assumé, écrit dans le script.
+  - **Appliqué en prod le 2026-08-01**, registre à 59 compétences compris — ce qui a demandé de
+    corriger le canal : `apply-content.yml` n'émettait **jamais** le registre (`--competences`
+    est un mode « registre seul »), donc les deux nouvelles compétences n'auraient existé nulle
+    part et la jointure `question_competencies` n'aurait rien retenu, **sans que rien n'échoue**.
+  - **Reste** : le tagging des autres matières et niveaux. La famille `math` couvre `math*` ;
+    une famille `physique`/`svt` reste à écrire par l'architecte avant tout tagging scientifique.

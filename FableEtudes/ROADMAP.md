@@ -1,9 +1,9 @@
 # ROADMAP — ordre d'exécution du reste-à-faire (études, lots, contenu)
 
-<!-- roadmap-sync: since-pr=668 -->
+<!-- roadmap-sync: since-pr=702 -->
 
-> **Instantané du 2026-07-27** (créé le 2026-07-20, resynchronisé contre `main` le 2026-07-25
-> puis le **2026-07-27**) — déclinaison opérationnelle de l'**étude 26 (doctrine verticale : profondeur
+> **Instantané du 2026-08-01** (créé le 2026-07-20, resynchronisé contre `main` les 2026-07-25,
+> 2026-07-27, 2026-07-29 puis le **2026-08-01**) — déclinaison opérationnelle de l'**étude 26 (doctrine verticale : profondeur
 > avant largeur)**. Les Q-1…Q-5 de l'étude 26 ayant été **arbitrées le 2026-07-20**, cet ordre
 > n'est plus une recommandation d'architecte : il est **officiel**. La même session a rendu
 > **tous les arbitrages en attente** (A1→A5) — plus aucune ligne de ce fichier n'est bloquée par
@@ -238,7 +238,16 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
       sans lesquels `rollback-prod.yml` était **inopérant depuis son écriture**.
       **Règle qui en sort** : une action faite hors du repo n'y laisse aucune trace — « pas écrit
       fait » ≠ « pas fait ».
-- [ ] F5. **Légal avant rentrée** : GAP-003 (conformité mineurs INPDP) + GAP-024 (pages légales)
+- [ ] F5. **Légal avant rentrée.** **GAP-024 livré le 2026-07-31** (arena#701) : `/confidentialite`
+      et `/conditions`, deux **URL stables** — c'est le point : la déclaration « child-directed »
+      auprès de Google (é23 Q-3) comme la conformité mineurs exigent une politique **atteignable**,
+      là où une modale n'aurait pas suffi. La politique n'affirme QUE ce que le code prouve
+      (inventaire préalable : PostHog UE sans profil individuel, Sentry en Allemagne, YouTube en
+      `youtube-nocookie` chargé après un clic délibéré) ; elle ne nomme aucune région non vérifiée
+      et ne prétend pas qu'une déclaration INPDP a été faite.
+      **Reste, et c'est humain** : la démarche **INPDP** (GAP-003), l'identité d'éditeur pour des
+      mentions légales complètes, et la décision « français seul ou trilingue » — traduire un
+      engagement juridique sans relecture ferait dire autre chose à une version.
 - [ ] F6. **Ops récurrent** : le triage hebdo des signalements. **Le volet technique est fait** —
       le pré-gate déterministe (#611) ne réveille l'agent que sur du nouveau, avec une soupape
       à 14 jours. Reste le **geste opérateur** : appliquer depuis `/admin/content-reports` et
@@ -314,11 +323,13 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
       **Pour le stop-point Q-1** (validation humaine de l'échantillon, jamais rendue) : les
       **57 compétences du registre sont toutes mobilisées, aucune n'est morte** — le calibrage
       « granularité medium ~55-70 » est désormais vérifié par l'usage et non seulement par
-      construction. Deux manques sont ressortis en creux et restent à trancher :
-      **`math.num.valeur-absolue`** (12 questions rabattues sur `num.ordre-encadrement`, #51) et
-      **`math.stat.mode`** (6 questions rabattues sur `stat.moyenne-mediane`, #53). Les ajouter
-      est une PR de suivi qui retague 18 questions, pas une reprise. Le registre n'a pas été
-      touché : l'exécuteur ne le rédige pas (é07 §4).
+      construction. Les deux manques ressortis en creux — **`math.num.valeur-absolue`** et
+      **`math.stat.mode`** — ont été **tranchés par Mohamed le 2026-07-31 et livrés** (#90) :
+      registre à **59 compétences**, **16 questions re-taguées** (et non 18 comme annoncé d'abord —
+      le recensement à la main confondait les tableaux Markdown de statistiques avec des valeurs
+      absolues, refait sur un discriminant vérifié). Une question garde son tag voisin :
+      `07/04-defi#1` porte déjà 3 compétences et le plafond est de 3 — choix assumé.
+      **Appliqué en prod le 2026-08-01**, registre compris.
       **Vagues suivantes** (hors périmètre de ce lot) : les autres matières et les autres niveaux
       restent non tagués — la famille `math` couvre `math*`, une famille `physique`/`svt` reste à
       écrire par l'architecte avant tout tagging scientifique.
@@ -331,10 +342,20 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
       (1 851 clés) est couvert à **1 849**. Écart assumé : la langue est prise du
       `contentLanguage` déclaré au lieu d'être déduite — appliquer les trois langues produisait
       « an Afrique ».
-      **Reste** : lot 3 (skill Tier B + pilote petites classes ar) et lot 4 (campagne, 1 matière
-      par PR) — **les deux demandent de la génération IA hors-ligne**, mise en attente par
-      Mohamed le 2026-07-27 ; puis lot 5 (aides à la saisie arabe, déterministe, livrable seul)
-      et lot 8 (pilote `short_answer`, qui attend en plus une décision de doctrine R-14).
+      **Lot 5 livré le 2026-07-27** (arena#655) — et son constat corrige l'énoncé du lot : la
+      barre de caractères n'offrait que 8 formes rares, **toutes repliées par la normalisation**,
+      donc les taper ne changeait même pas le verdict. Le vrai manque était **l'alphabet**, pour
+      l'enfant sans clavier arabe. ⚠️ Les **translittérations** du lot 5 ne sont pas livrées :
+      elles relèvent des Tiers A/B.
+      **Lot 3 livré le 2026-08-01** (#96), après levée de la mise en attente du 2026-07-27 : le
+      skill `content-accepted-answers` et son pilote sur `math-1ere/07-reperage-espace`, la
+      mission même où le défaut avait été constaté. 25 des 30 questions couvertes ;
+      « فوق الشجرة » est enfin acceptée là où « فوقها » était attendue, distracteurs toujours
+      refusés. **Dette remontée** : Tier A produit « الفوقها » en préfixant « ال » sans condition
+      — inoffensif au scoring, mais consomme la borne des 24. Candidat à un lot moteur.
+      **Reste** : **lot 4** (campagne Tier B, 1 matière par PR) — à décider sur la base du pilote,
+      c'est ce que l'arbitrage prévoyait ; lot 6 (refus contesté, optionnel) ; lot 8 (pilote
+      `short_answer`, qui attend en plus la doctrine R-14).
 - [ ] C6. **Illustration — backlog é18 (ordre petites-classes-d'abord)** : 4ᵉ puis 5ᵉ année (toutes matières visuelles) → maths 7ᵉ (5 ch.) → maths 9ᵉ fonctions+stats (2) → iq-training (3) → français (1). **Entamé le 2026-07-26** : 10 figures « objet réel » remplacées par des illustrations libres en `eveil-2eme` (#10) et **23 figures** de la campagne animaux sur 1ᵉʳ → 4ᵉ année (#11), outillées par l'import du moteur (arena#623). Le reste de la liste est inchangé
 - [ ] C7. **é19 lot 1 — doctrine + gate figures questions** _(A3 rendu : SVG seul, vérification intégrale, lots ≤ ~40 figures)_, puis campagne questions illustrées (concours d'abord : 6ᵉ/9ᵉ/bac)
 - [ ] C8. **é21 lot 1 — doctrine manuels** _(A4 rendu : verbatim court non créatif toléré ; provenance NON affichée à l'élève, lot 3 abandonné)_, puis pilote `math-1ere-sec` (exercices tracés `manuel_ref`, rapport de couverture)
@@ -383,6 +404,7 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
 | 2026-07-27 | **Resynchronisation contre `main` (base #536 → #641).** Le gate `check-roadmap-sync.mjs` était **vert** — il ne voit que les sujets de commit en forme « étude/lot », et rien de ce qui a été livré les 26-27/07 n'en portait la forme : la dérive de ces deux jours est un **angle mort assumé** du gate, pas une panne. Corrigé ici à la main. **Fondations** : F4 **cochée** — le go-live infra est soldé, et il l'était en partie **depuis des semaines sans trace dans le repo** (GA4 tournait, le DSN Sentry était posé) ; F7 **nettoyée** (major Supabase livré par arena#622, restent #595 et #593) ; F8 **refermée** par son volet contenu (5 lots `LC0…LC4` le 2026-07-25) ; **F9 ajoutée** pour l'outillage de campagne, livré entièrement hors roadmap. **Contenu** : **C10 ajoutée** — une campagne petites classes (`french-4eme`, `french-5eme`, `arabic-6eme`, fiche 6ᵉ base) tournait depuis le 26/07 **sans aucune ligne ici** ; C6 entamée (33 figures). **F6** : la file de triage est passée de 14 à 3 issues, mais les 3 sont des **artefacts** d'arena#638 (un e2e écrit en prod chaque nuit) — le geste opérateur reste vain tant que le bug vit. **Aucune ligne PRODUIT n'a bougé** : la prochaine reste la **9**. |
 | 2026-07-27 | **Étude 20 — deux lots livrés (2 et 7), et la file C5 s'arrête là où l'IA commence.** **Lot 2** (Tier A, arena#652) : l'expansion morphologique est une fonction PURE appliquée au build, pas des variantes gravées dans le corpus — 13 017 des 13 049 questions éligibles au Rappel gagnent une forme acceptée, 42 refusées par R-4, gisement « article » arabe couvert à 1 849/1 851. **Lot 7** (type natif `short_answer`, arena#654, = ligne PRODUIT 11) : sixième type dans le cadre fermé de l'étude 03, sans colonne ni écran ni grant nouveau ; l'appariement des erreurs, dupliqué entre les deux RPCs de soumission, devient une fonction unique. **Les lots 3 et 4 (Tier B) sont mis en attente par Mohamed** : ils reposent sur de la génération IA — hors ligne et relue, jamais au runtime (R-7), mais génération quand même. Restent donc exécutables sans IA : lot 5 (saisie arabe) et lot 6 (refus contesté). Le lot 8 attend en plus une décision de doctrine (R-14). |
 | 2026-07-29 | **Le canal de contenu a tourné pour de vrai — pour la première fois depuis la scission.** Le secret `PROD_SUPABASE_DB_URL` du privé repointé sur le pooler (Mohamed), deux applications passées et **vérifiées en base** : `french-4eme`/`french-5eme`/`arabic-6eme`, puis `math`/`math-6eme` — donc les **1 362 questions taggées** sont en prod, et les trois lots é07 livrés le 20/07 reçoivent enfin des données. Backup `pg_dump` avant chaque écriture, releases journalisées. **Ce qui a rendu la panne trouvable la prochaine fois** (#71/#72/#73) : l'URL IPv6 est refusée d'emblée en nommant la cause, le mauvais port et le tenant manquant sont attrapés, et une étape « vérifier que le contenu est bien en base » **échoue si un sujet revient vide** — elle transforme « le SQL est passé » en « le contenu est là », la distinction exacte qui manquait. Audit préalable au risque de prune : prod avait déjà été convergée vers les mêmes UUIDv5 le 2026-06-02 par les 231 migrations générées d'avant la scission, donc appliquer `math` était une convergence ordinaire, pas une purge. |
+| 2026-08-01 | **Session de clôture — les quatre arbitrages du 2026-07-31 sont livrés, et deux canaux ont été réparés en s'en servant.** Livré : les deux compétences manquantes du registre (#90, 16 questions re-taguées, **appliquées en prod** avec le registre à 59) · l'alarme de gel `freeze-watch` (arena#696) — le gel reste DISCIPLINAIRE et non opposable, parce que la panne réelle a été un gel **invisible**, pas un gel contourné · les pages légales (arena#701, GAP-024) · le **lot 3 de l'étude 20** (#96, skill Tier B + pilote sur la mission constatée). **Deux réparations de canal, trouvées en l'utilisant** : `apply-content.yml` n'émettait **jamais** le registre de compétences (#92 — `--competences` est un mode « registre seul », l'appel se faisait sans lui), puis la vérification post-application comptait ce registre **comme un sujet** et le déclarait « appliqué sans effet » (#98, régression de #92 : le contenu était bien en base, mais la release n'était pas journalisée). Même famille que les précédentes : un canal écrit, jamais exercé, qui échoue sans bruit. **Dette remontée par le pilote** : Tier A préfixe « ال » sans condition et produit « الفوقها » — inoffensif au scoring, candidat à un lot moteur. |
 | 2026-07-27 | **C4 cochée — le tagging de compétences vague 1 est fait** (1 362 questions : `math` 557/557, `math-6eme` 805/805, 10 PRs #51→#61). Les trois lots produit livrés depuis le 2026-07-20 mais **inertes faute de corpus tagué** ne le sont plus. Le lot rend deux constats à l'humain : les **57 compétences du registre sont toutes mobilisées** (le calibrage Q-1 est vérifié par l'usage, pas seulement par construction — c'est ce qui manquait à la validation de l'échantillon), et **deux compétences manquent** au registre (`num.valeur-absolue`, `stat.mode` — 18 questions rabattues sur une compétence voisine). **Découverte du même jour, et c'est le nouveau point dur** : `apply-content.yml` **n'a jamais appliqué de contenu en prod** — son unique run réel a échoué au backup, l'URL du secret `PROD_SUPABASE_DB_URL` d'ici étant la connexion directe Supabase, IPv6-only, injoignable depuis les runners GitHub (#52). Rien de ce qui a été produit depuis la scission n'est donc en prod. La prod est intacte : le fail-closed a joué avant toute écriture. |
 | 2026-07-31 | **Ligne 9 à moitié livrée — é04 lot A1.2a (serveur) est sur `main`** (arena#689, correctif de test arena#691). `get_attempt_review` rend `misconception_tag` + `chapter_id` : la troisième boucle « collectée-jamais-surfacée » de l'étude 26 se referme côté serveur, le signal capté depuis la phase A0 cesse de n'alimenter que la télémétrie. Le stop-point D-A1.2-2 est tenu et **encodé en attaque** — trois assertions rejouent l'élimination par la map plutôt que le cas nominal. La ligne reste décochée : **A1.2b** (client) n'est pas fait. **Deux enseignements de process, qui valent au-delà de ce lot.** (1) `pgTAP suite` tourne sur les PR de migration mais **n'est pas requise** : #689 a mergé 3 minutes après son ouverture, sur les checks requis verts, avec un fichier de test rouge — la fenêtre de lecture d'un check non requis est plus courte que le temps de le lire. Sur une PR de migration, soit on rend le check requis, soit on ouvre en `wip/`. (2) La vérification locale du lot avait tourné sur des **shims pgTAP écrits pour l'occasion**, dont l'un implémentait `unlike()` — une fonction que pgTAP n'a jamais eue. Un harnais qui définit la fonction qu'il est censé valider ne valide rien : c'est la leçon d'arena#631/#635 (« une sonde ne vaut que si elle exécute le même code que le gate ») rejouée sous une autre forme. |
 | 2026-07-31 | **Ligne 9 — les deux lots livrés (A1.2a arena#689/#691, A1.2b arena#695), et un constat qui vaut plus que le lot.** A1.2b a dû **corriger D-A1.2-3**, fondée sur une surface de compilation client qui n'existe pas : les libellés passent désormais par la base, par le canal des compétences (é07), sans rien perdre de l'intention (la fonction rend un ID, le registre reste source unique, une reformulation reste une correction de registre). **Le fait majeur** : mesuré ce jour, le corpus ne contient **aucun** tag de misconception — 0 occurrence sur ~18 700 questions, 0 `distractor_tags` non vide dans les migrations manuelles, les 5 tags du registre inutilisés. Donc `user_misconceptions` est **vide en prod** depuis l'origine, le terme « misconceptions » de `get_daily_plan` vaut zéro depuis #581, et **la ligne 15 (A2.1) livrerait un écran vide**. L'étude 26 décrivait une boucle « collectée-jamais-surfacée » : elle n'était **jamais alimentée**. Le blocage de tout l'axe est du **contenu** — taguer les distracteurs, comme C4 l'a fait pour les compétences (deux registres distincts : C4 n'a PAS tagué les misconceptions). **Reliquat de la ligne 9** : le geste « m'entraîner », suspendu à la décision « quel lien misconception → compétence ». |
