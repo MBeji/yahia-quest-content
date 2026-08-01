@@ -649,7 +649,7 @@ automatique en base : la boucle reste **humaine-dans-la-boucle** (pas d'oracle a
 | 7        | **Type natif `short_answer` (volet B — moteur)** : CHECK étendu + branche seam `score_answer` + `answer_key_display` ; union zod (`answerKey.text`, `expectedMistakes`) + builder + QA autorat (R-12) ; UI `FreeTextInput` partagé + `answer-formats` + review ; télémétrie appariement erreurs attendues (R-9) ; amendement `docs/interactive-question-types.md` + `content-schema.md` (skills) | migration `2026…_short_answer_type.sql` ; `schema.ts`/`sql-builder.ts`/`qa.ts` ; `question-input.tsx` (extraction `FreeTextInput`) ; docs/skills | pgTAP branche seam (clé malformée, mistakes, vide, `[]`) ; unit QA autorat ; unit UI ; test whitelist | lot 1 (parallélisable aux lots 2–6) |
 | 8        | **Pilote contenu `short_answer`** : 1 chapitre témoin ar petites classes + 1 témoin fr/en, questions nées complètes (R-13) via skills mis à jour ; mesure ; doctrine d'usage validée (R-14) puis ouverte aux campagnes normales                                                                                                                                                                  | fichiers contenu (1 matière/PR) ; migrations sujets ; doctrine dans `content-engine`/`content-interactif`/`prof-*`                               | `content:qa:strict` ; e2e player (répondre une `short_answer`) ; sweep `content-audit` du pilote      | lot 7                               |
 
-- [ ] **Lot 1 — Socle scoring ensembliste + colonne server-only + QA.** Périmètre : migration
+- [x] **Lot 1 — Socle scoring ensembliste + colonne server-only + QA.** Périmètre : migration
       additive (`accepted_answers` + CHECK), helper `is_accepted_free_answer` (REVOKEd),
       `CREATE OR REPLACE score_recall_answer` (délégation), champ `acceptedAnswers` au schéma zod,
       émission builder, règles `content:qa` (R-4/R-5 + parité TS↔SQL), pgTAP. **Critères** :
@@ -659,22 +659,22 @@ automatique en base : la boucle reste **humaine-dans-la-boucle** (pas d'oracle a
       **cadrage du type `content_reports.recall_false_negative`** (enum + acceptation serveur) —
       **sans** la file admin (lot 6, Q-3). Sécurité : prouver que `accepted_answers` n'est jamais
       côté client (audit whitelist + smoke) **avant** de clore le lot.
-- [ ] **Lot 2 — Tier A : expansion morphologique déterministe (corpus entier).** Périmètre : une
+- [x] **Lot 2 — Tier A : expansion morphologique déterministe (corpus entier).** Périmètre : une
       fonction **pure** (article ar/fr, contractions en), appliquée à toutes les questions éligibles,
       chaque variante gardée par R-4. Gros gain, faible risque, **sans IA**. **Critères** : US-2/R-2/
       R-4/R-5. **Stop-point** : Tier A ne produit QUE des variantes morphologiques mécaniques — aucune
       paraphrase sémantique (c'est le Tier B) ; mesurer le recul du gisement « article ».
-- [ ] **Lot 3 — Tier B : skill de génération + pilote petites classes.** Périmètre : le skill
+- [x] **Lot 3 — Tier B : skill de génération + pilote petites classes.** Périmètre : le skill
       `content-accepted-answers`, puis génération (paraphrases/synonymes/positions) sur la mission
       « التموقع في الفضاء » + arabes 1re–2e année + 2-3 témoins fr/en. **Critères** : US-1/US-6/R-2/
       R-4/R-5/R-7. **Stop-point** : pas de campagne globale ; mesurer et remonter avant d'étendre.
 - [ ] **Lot 4 — Campagne Tier B (1 matière/PR).** Priorité produit. **Stop-point** : une matière par
       PR, jamais `content:build` nu (`--subject <id>`), revue de diff obligatoire.
-- [ ] **Lot 5 — Aides de saisie arabe (petites classes).** **Stop-point** : livrable indépendant de la
+- [x] **Lot 5 — Aides de saisie arabe (petites classes).** **Stop-point** : livrable indépendant de la
       campagne complète.
 - [ ] **Lot 6 (opt.) — Boucle refus contesté.** **Stop-point** : aucune écriture auto en base ;
       humain-dans-la-boucle.
-- [ ] **Lot 7 — Type natif `short_answer` (moteur).** Périmètre : migration (CHECK étendu — aucune
+- [x] **Lot 7 — Type natif `short_answer` (moteur).** Périmètre : migration (CHECK étendu — aucune
       colonne nouvelle), branche seam `score_answer` + `answer_key_display` (recréations verbatim,
       pattern B1→B3), union zod + builder + QA autorat (R-12), extraction `FreeTextInput` +
       `answer-formats` + review, appariement télémétrique `expectedMistakes` (R-9) dans
@@ -797,6 +797,44 @@ automatique en base : la boucle reste **humaine-dans-la-boucle** (pas d'oracle a
   exécuteur bon marché + double-solve ; éligibilité Rappel inchangée, élargissement hors-v1 ;
   aucune conversion de QCM en v1, remplacement authored seulement si rouvert plus tard) → statut
   **validée**, prête pour l'exécuteur (lot 1). Aucun lot démarré.
+
+- 2026-07-25 — **Lot 1 livré** (arena#583) : colonne `accepted_answers` server-only, juge unique
+  `is_accepted_free_answer`, champ `acceptedAnswers` au schéma, QA collision/typabilité/parité.
+- 2026-07-27 — **Lot 2 livré** (arena#652). Tier A est une **fonction pure appliquée au build**, et
+  non des variantes écrites dans le corpus : une dérivée mécanique de la clé n'est pas une décision
+  d'auteur, la stocker dupliquerait 13 000 fois une règle de trois lignes et noierait les
+  paraphrases du Tier B. Mesure : **13 017 des 13 049** questions éligibles gagnent au moins une
+  forme acceptée (24 932 variantes, 1,9 par question), **42 refusées par R-4** ; le gisement
+  « article » arabe est couvert à **1 849 clés sur 1 851** — les 2 restantes refusées à raison,
+  leur forme nue étant un distracteur déclaré. **Écart assumé** : la langue est prise du
+  `contentLanguage` DÉCLARÉ au lieu d'être déduite — appliquer les trois langues produisait
+  « an Afrique », faux dans un mode destiné à des enfants qui apprennent à écrire. Second écart :
+  « can't » donne « cannot », pas « can not ».
+- 2026-07-27 — **Lot 7 livré** (arena#654) : sixième type natif, dans le cadre fermé de l'étude 03
+  **sans rien élargir** — aucune colonne (`{text, mistakes?}` tient dans `answer_key`), aucun
+  écran (le champ du Rappel devient `FreeTextInput`, partagé), aucun grant. L'appariement des
+  erreurs, **dupliqué** entre `submit_exercise_attempt` et `submit_dungeon_answer`, devient
+  `resolve_misconception_tag` — trois variantes, une fonction. Les deux RPCs ont été recréées
+  verbatim par **substitution scriptée puis diff de contrôle**, pour prouver que seules les lignes
+  visées changeaient. pgTAP joué sur `main` après merge : vert (28 assertions).
+- 2026-07-27 — **Lot 5 livré** (arena#655), et son constat corrige l'énoncé du lot : la barre de
+  caractères de l'étude 17 n'offrait que 8 formes rares — or **ces 8 formes sont repliées par la
+  normalisation** (أ إ آ → ا, ة → ه, ى → ي), donc les taper ne changeait même pas le verdict. Le
+  vrai manque était **l'alphabet**, pour l'enfant qui n'a AUCUN clavier arabe et tapait « NAMLA ».
+  `AssistKeypad` rend les 28 lettres, replié par défaut, servi au Rappel comme au type natif.
+  ⚠️ Les **translittérations** du lot 5 ne sont PAS livrées : les produire relève des Tiers A/B.
+- 2026-08-01 — **Lot 3 livré** (privé #96) : le skill `content-accepted-answers` et son pilote sur
+  `math-1ere/07-reperage-espace` — la mission même où le défaut avait été constaté le 2026-07-15.
+  **25 des 30 questions** reçoivent un ensemble ; les 5 écartées le sont pour une raison (trois
+  rangements où toute variante de ponctuation serait un pari sur la normalisation, deux « أمامك »
+  sans reformulation qui ne déplace le sens). Vérifié end-to-end, Tier A + Tier B : « فوق الشجرة »,
+  « فوق » et la forme vocalisée sont acceptés ; « تحتها », « خلفها », « في السماء » restent refusés.
+  **Dette remontée** : Tier A préfixe « ال » sans condition et produit « الفوقها » sur une
+  préposition + pronom — inoffensif au scoring (personne ne tape ça, et R-4 garantit que ce n'est
+  pas un distracteur), mais c'est du bruit qui consomme la borne des 24. Candidat à un lot moteur.
+
+**Reste** : lot 4 (campagne Tier B, une matière par PR — à décider sur la base du pilote), lot 6
+(refus contesté, optionnel) et lot 8 (pilote `short_answer`, qui demande en plus la doctrine R-14).
 
 _(à remplir lot par lot par l'exécuteur : date, lot, PR, écarts acceptés, dettes.)_
 
