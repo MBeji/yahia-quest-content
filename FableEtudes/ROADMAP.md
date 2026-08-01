@@ -205,12 +205,27 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
       volontairement **reporté à une fenêtre calme constatée** (STATUS §2) — l'historique public
       reste lisible pour mai→juillet 2026. Ce n'était PAS un prérequis de la campagne lycée : la
       scission qui l'était (3b/4) est faite, **§5-C9 est débloqué**.
-      **Deuxième reliquat, à faire ICI** : porter dans la Content CI privée les **assertions
-      pgTAP de contenu** devenues orphelines à la scission (issue publique MBeji/yahia-quest-arena#574).
-      Elles ont été retirées du dépôt public parce qu'elles dépendaient de lignes de corpus qui
-      n'y sont plus ; tant qu'elles ne sont pas rejouées quelque part, **ce que le contenu
-      garantissait en base n'est plus testé nulle part**. Petit lot, mais il ferme un trou de
-      couverture ouvert depuis le 2026-07-20.
+      **Deuxième reliquat — RÉGLÉ le 2026-08-01, autrement que demandé** (arena#574 close,
+      arena#702). Ce que cette entrée disait — « ce que le contenu garantissait en base n'est plus
+      testé nulle part » — était **faux depuis le 2026-07-25** : l'analyse portée sur l'issue
+      montrait que **cinq des six assertions orphelines sont couvertes à la source, et mieux**
+      (Zod interdit un label vide ; l'assertion pgTAP était un faux vert — `count(*) WHERE
+      label = ''` sur table vide vaut 0). Ne restaient que deux garde-fous de volumétrie.
+      En cherchant ce qu'ils protégeaient, le vrai risque s'est révélé **plus grave et ailleurs** :
+      le SQL d'un registre converge la base vers le fichier, donc il **purge ce qui n'y est plus** —
+      et `question_competencies` part en CASCADE. Mesuré sur un Postgres réel depuis l'état
+      d'après C4, un registre tronqué à 3 compétences donnait `competencies=3 mappings=0` :
+      **les 1 362 mappings de C4 effacés** par un `apply-content.yml` de routine, idempotent et
+      journalisé. arena#702 pose une garde **fail-closed dans le SQL émis** (compter les condamnés
+      avant d'effacer, refuser au-delà d'un tiers, nommer les deux nombres et la casse
+      collatérale) — sur les deux registres, compétences et misconceptions.
+      **Ce qui reste, sans urgence** : un garde-fou de **volumétrie** côté corpus (« ce registre ne
+      devrait pas descendre sous N ») — décision data-dépendante, donc ici, et désormais un confort
+      plutôt qu'un filet, la propriété étant garantie à l'application.
+      ⚠️ Leçon de méthode : le seuil pgTAP visait le bon danger **de loin**. Il ne l'attrape
+      qu'après coup et seulement si quelqu'un lit — or `pgTAP suite` n'est pas un check requis
+      (#689 a mergé rouge trois minutes après son ouverture le 2026-07-31). Une garde à
+      l'application bat une assertion sur un check non opposable.
 - [ ] F3. **é09 lots 1-2 — la mesure** (page admin « Économie » + simulateur `economy:check`) — condition du KPI-4 é26 (« excellent » mesurable) ; lot 3 conditionnel ensuite. _Vérifié le 2026-07-25 : aucune route admin « Économie », rien n'est commencé._
 - [x] F4. **C4 côté Mohamed — FAIT, constaté le 2026-07-27.** Le récapitulatif a été rendu en
       **sondant l'état réel** plutôt qu'en lisant la doc : `www.na9ranal3ab.tn` répond 200
