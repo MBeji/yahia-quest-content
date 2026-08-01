@@ -116,14 +116,14 @@ Pour de plus grands nombres, la remontée devient pénible. On lui préfère le 
 
 _Exemple détaillé (le tableau)_ — a = 2015 et b = 2007.
 
-| division euclidienne  | q   | r    | u    | v    | contrôle r = 2015u + 2007v         |
-| --------------------- | --- | ---- | ---- | ---- | ---------------------------------- |
-| —                     | —   | 2015 | 1    | 0    | 2015 ✓                             |
-| —                     | —   | 2007 | 0    | 1    | 2007 ✓                             |
-| 2015 = 2007 × 1 + 8   | 1   | 8    | 1    | −1   | 2015 − 2007 = 8 ✓                  |
-| 2007 = 8 × 250 + 7    | 250 | 7    | −250 | 251  | −503750 + 503757 = 7 ✓             |
-| 8 = 7 × 1 + 1         | 1   | 1    | 251  | −252 | 505765 − 505764 = 1 ✓              |
-| 7 = 1 × 7 + 0         | 7   | 0    | —    | —    | on s'arrête                        |
+| division euclidienne | q   | r    | u    | v    | contrôle r = 2015u + 2007v |
+| -------------------- | --- | ---- | ---- | ---- | -------------------------- |
+| —                    | —   | 2015 | 1    | 0    | 2015 ✓                     |
+| —                    | —   | 2007 | 0    | 1    | 2007 ✓                     |
+| 2015 = 2007 × 1 + 8  | 1   | 8    | 1    | −1   | 2015 − 2007 = 8 ✓          |
+| 2007 = 8 × 250 + 7   | 250 | 7    | −250 | 251  | −503750 + 503757 = 7 ✓     |
+| 8 = 7 × 1 + 1        | 1   | 1    | 251  | −252 | 505765 − 505764 = 1 ✓      |
+| 7 = 1 × 7 + 0        | 7   | 0    | —    | —    | on s'arrête                |
 
 Le dernier reste non nul est 1 : 2015 ∧ 2007 = 1, et la ligne correspondante livre **2015 × 251 + 2007 × (−252) = 1**. _Contrôle final_ — 251 × 2015 = 505765 et 252 × 2007 = 505764 : la différence vaut bien 1 ✓. _Second contrôle, par la remontée_ — 1 = 8 − 7 = 8 − (2007 − 250 × 8) = 251 × 8 − 2007 = 251 × (2015 − 2007) − 2007 = 251 × 2015 − 252 × 2007 ✓. Les deux méthodes donnent le même couple.
 
@@ -143,12 +143,12 @@ Le sens « si d ne divise pas c, pas de solution » est immédiat : d divise ax 
 
 La résolution complète suit toujours les **quatre mêmes étapes** :
 
-| étape | ce qu'on fait                                    | outil                                    |
-| ----- | ------------------------------------------------ | ---------------------------------------- |
-| 1     | calculer d = a ∧ b et tester si d divise c       | algorithme d'Euclide                     |
-| 2     | diviser toute l'équation par d                   | on obtient a′x + b′y = c′ avec a′ ∧ b′ = 1 |
-| 3     | trouver une solution particulière (x₀, y₀)       | Bézout, puis multiplication par c′       |
-| 4     | soustraire et conclure : a′(x − x₀) = −b′(y − y₀) | lemme de Gauss                           |
+| étape | ce qu'on fait                                     | outil                                      |
+| ----- | ------------------------------------------------- | ------------------------------------------ |
+| 1     | calculer d = a ∧ b et tester si d divise c        | algorithme d'Euclide                       |
+| 2     | diviser toute l'équation par d                    | on obtient a′x + b′y = c′ avec a′ ∧ b′ = 1 |
+| 3     | trouver une solution particulière (x₀, y₀)        | Bézout, puis multiplication par c′         |
+| 4     | soustraire et conclure : a′(x − x₀) = −b′(y − y₀) | lemme de Gauss                             |
 
 _Exemple détaillé (le cas de base)_ — résolvons 7x + 11y = 1. On a 7 ∧ 11 = 1, donc il y a des solutions. Une solution particulière saute aux yeux : 7 × 8 = 56 et 11 × 5 = 55, donc **(x₀, y₀) = (8, −5)**, et 56 − 55 = 1 ✓. Pour la forme générale, on soustrait les deux égalités :
 
@@ -175,6 +175,10 @@ _Exemple détaillé (le cas d ≠ 1)_ — résolvons 46x + 115y = a selon les va
 - **a = 230 = 23 × 10** : on multiplie la solution particulière par 10, soit (30, −10), le pas restant (−5, 2). **S = {(30 − 5k, −10 + 2k), k ∈ ℤ}.** _Contrôle sur deux valeurs_ — k = 0 : 1380 − 1150 = 230 ✓ ; k = 2 : 46 × 20 + 115 × (−6) = 920 − 690 = 230 ✓.
 
 > ⚠️ Le pas de la solution générale se calcule **après** division par d : il vaut (−b/d, a/d), et non (−b, a). Pour 46x + 115y = 23, écrire (3 − 115k, −1 + 46k) ne donne qu'une partie des solutions — on en rate 22 sur 23. Divise d'abord, paramètre ensuite.
+
+_Suite — quand l'équation n'est pas du premier degré._ Une équation en nombres entiers qui contient des carrés ne se traite **pas** par Bézout : on la **factorise**, et le produit obtenu ne laisse plus qu'un nombre fini de cas. Trois gestes : ramener l'équation à un **produit de deux facteurs entiers** égal à un entier connu, **énumérer les couples de diviseurs** de cet entier — les négatifs compris —, puis **résoudre chaque système** et ne garder que les couples **entiers**. La **parité** élimine souvent la moitié des cas : deux facteurs dont la somme est paire sont de même parité.
+
+_Exemple détaillé_ — résolvons x² − y² = 12 dans ℤ × ℤ. On factorise : **(x − y)(x + y) = 12**. La somme des deux facteurs vaut (x − y) + (x + y) = 2x, elle est paire, donc les deux facteurs sont de même parité ; leur produit 12 étant pair, ils sont tous deux **pairs**. Restent les couples (x − y, x + y) ∈ {(2, 6), (6, 2), (−2, −6), (−6, −2)}. Le couple (2, 6) donne 2x = 2 + 6 = 8 puis x = 4, et 2y = 6 − 2 = 4 puis y = 2. En traitant les trois autres de même : **S = {(4, 2), (4, −2), (−4, 2), (−4, −2)}**. _Contrôle par réinjection des quatre couples_ — seuls des carrés interviennent, donc les quatre donnent le même calcul : 4² − 2² = 16 − 4 = 12 ✓. _Contrôle des cas écartés_ — le couple (1, 12) donnerait 2x = 13, donc x = 6,5, qui n'est pas entier ✓ ; le couple (3, 4) donnerait 2x = 7, non entier lui aussi ✓. C'est bien la parité qui les condamne, et non un calcul de plus.
 
 ## 🛡️ Deux congruences à la fois
 

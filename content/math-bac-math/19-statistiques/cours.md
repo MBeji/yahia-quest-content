@@ -8,7 +8,7 @@ En 1669, Huygens dépouille les relevés de décès de Londres et écrit à son 
 
 On interroge 20 logements d'un quartier. Sur **chaque** logement on relève deux nombres : X = le nombre de pièces habitées, Y = le nombre d'enfants. Chaque logement fournit donc un **couple** (xᵢ, yᵢ), pas un nombre isolé.
 
-> **Définitions** — « Soit (X, Y) une série statistique double sur un échantillon de taille n et soit (xᵢ, yᵢ)_{1≤i≤n} les valeurs numériques prises respectivement par les variables X et Y. La distribution marginale de la variable X est la distribution des valeurs (xᵢ)_{1≤i≤n} prises par la variable X. La distribution marginale de la variable Y est la distribution des valeurs (yᵢ)_{1≤i≤n} prises par la variable Y. »
+> **Définitions** — « Soit (X, Y) une série statistique double sur un échantillon de taille n et soit (xᵢ, yᵢ), 1 ≤ i ≤ n, les valeurs numériques prises respectivement par les variables X et Y. La distribution marginale de la variable X est la distribution des valeurs xᵢ, 1 ≤ i ≤ n, prises par la variable X. La distribution marginale de la variable Y est la distribution des valeurs yᵢ, 1 ≤ i ≤ n, prises par la variable Y. »
 
 Les résultats se rangent dans un **tableau à double entrée** : la case (i, j) contient l'effectif nᵢⱼ des individus pour lesquels X vaut xᵢ **et** Y vaut yⱼ.
 
@@ -23,7 +23,7 @@ La colonne des totaux donne la **distribution marginale de X** : la valeur 1 a l
 
 Chaque marge est alors une série simple ordinaire, et les formules du collège s'y appliquent telles quelles.
 
-> **Définition** — « Soit X une série statistique sur un échantillon de taille n. Si X̄, V(X) et σ_X désignent respectivement la moyenne, la variance et l'écart-type de la série, alors X̄ = (1/n)Σ_{i=1}^{p} nᵢxᵢ, V(X) = (1/n)Σ_{i=1}^{p} nᵢ(xᵢ − X̄)², σ_X = √(V(X)), où les valeurs x₁, x₂, …, x_p désignent les valeurs distinctes prises par la variable X si elle est discrète, ou les centres des classes si la variable X est continue. L'entier nᵢ désigne l'effectif de la valeur xᵢ. »
+> **Définition** — « Soit X une série statistique sur un échantillon de taille n. Si X̄, V(X) et σ_X désignent respectivement la moyenne, la variance et l'écart-type de la série, alors X̄ = (1/n)Σ_(i=1)^(p) nᵢxᵢ, V(X) = (1/n)Σ_(i=1)^(p) nᵢ(xᵢ − X̄)², σ_X = √(V(X)), où les valeurs x₁, x₂, …, x_p désignent les valeurs distinctes prises par la variable X si elle est discrète, ou les centres des classes si la variable X est continue. L'entier nᵢ désigne l'effectif de la valeur xᵢ. »
 
 En développant le carré, on obtient la forme la plus commode au calcul, celle que rend une calculatrice :
 
@@ -37,11 +37,26 @@ _Exemple détaillé (la marge de Y)_ — Σnⱼyⱼ = 7×0 + 7×1 + 6×2 = 19, d
 
 > ⚠️ Ne confonds pas l'effectif d'une **case** et celui d'une **marge**. Ici 4 logements ont X = 3 (marge), mais seulement 3 d'entre eux ont aussi Y = 2 (case). Une moyenne calculée sur des cases au lieu des marges est fausse dès la première ligne, et rien ne le signale ensuite.
 
+**Et si la variable est continue ?** La définition l'a dit en une incise, et c'est tout ce qu'il y a à retenir : quand les données arrivent groupées en **classes**, on remplace chaque classe par son **centre** — le centre de la classe [a, b[ vaut (a + b)/2 — puis on applique les mêmes formules, sans rien changer d'autre.
+
+_Exemple détaillé (série groupée en classes)_ — une librairie en ligne relève le montant, en dinars, de 25 commandes.
+
+| Classe [a, b[ | [10, 20[ | [20, 30[ | [30, 40[ | [40, 50[ | **Total** |
+| ------------- | -------- | -------- | -------- | -------- | --------- |
+| Centre cᵢ     | 15       | 25       | 35       | 45       | —         |
+| Effectif nᵢ   | 4        | 9        | 8        | 4        | **25**    |
+
+Contrôle des fréquences d'abord : 0,16 + 0,36 + 0,32 + 0,16 = 1 ✓. Puis Σnᵢcᵢ = 4×15 + 9×25 + 8×35 + 4×45 = 60 + 225 + 280 + 180 = 745, donc **X̄ = 745/25 = 29,8 dinars**. Ensuite Σnᵢcᵢ² = 4×225 + 9×625 + 8×1225 + 4×2025 = 900 + 5625 + 9800 + 8100 = 24 425, donc **V(X) = 24 425/25 − 29,8² = 977 − 888,04 = 88,96** et **σ_X = √88,96 ≈ 9,43 dinars**.
+
+_Contrôle par l'autre formule_ — par les écarts au carré : 4(15 − 29,8)² + 9(25 − 29,8)² + 8(35 − 29,8)² + 4(45 − 29,8)² = 4(219,04) + 9(23,04) + 8(27,04) + 4(231,04) = 876,16 + 207,36 + 216,32 + 924,16 = 2 224, et 2 224/25 = **88,96** ✓.
+
+> ⚠️ Le centre d'une classe n'est **pas** une de ses bornes. Avec les bornes inférieures on trouverait (4×10 + 9×20 + 8×30 + 4×40)/25 = 620/25 = 24,8, avec les bornes supérieures 870/25 = 34,8 : deux moyennes fausses, l'une systématiquement trop basse, l'autre trop haute. Le centre est la seule valeur qui encadre honnêtement la classe — et la vraie moyenne, 29,8, tombe bien entre les deux.
+
 ## ⚡ La covariance : mesurer si les deux varient ensemble
 
 X̄ et Ȳ résument chaque variable **séparément** ; elles ne disent rien du lien entre les deux. L'idée est simple : quand X est au-dessus de sa moyenne, Y l'est-il aussi ? Le produit des deux écarts (xᵢ − X̄)(yᵢ − Ȳ) est positif quand ils vont dans le même sens, négatif sinon. La covariance en fait la moyenne.
 
-> **Définition (échantillon simple)** — « Soit (X, Y) une série statistique double sur un échantillon de taille n. On appelle covariance de (X, Y) le réel, noté cov(X, Y) défini par cov(X, Y) = (1/n)Σ_{i=1}^{n} xᵢyᵢ − X̄·Ȳ, où (xᵢ, yᵢ) est la valeur observée pour l'individu i si X et Y sont discrètes, ou le centre de la classe si l'une des variables est continue. »
+> **Définition (échantillon simple)** — « Soit (X, Y) une série statistique double sur un échantillon de taille n. On appelle covariance de (X, Y) le réel, noté cov(X, Y) défini par cov(X, Y) = (1/n)Σ_(i=1)^(n) xᵢyᵢ − X̄·Ȳ, où (xᵢ, yᵢ) est la valeur observée pour l'individu i si X et Y sont discrètes, ou le centre de la classe si l'une des variables est continue. »
 
 Comme pour la variance, cette écriture est la forme développée de la moyenne des produits d'écarts — et l'échange des rôles de X et de Y n'y change rien : **cov(X, Y) = cov(Y, X)**.
 
@@ -49,10 +64,10 @@ Comme pour la variance, cette écriture est la forme développée de la moyenne 
 
 _Exemple détaillé_ — une bibliothèque numérique compte ses abonnés (en milliers) de 2019 à 2023. On note X le rang de l'année.
 
-| Année               | 2019 | 2020 | 2021 | 2022 | 2023 |
-| ------------------- | ---- | ---- | ---- | ---- | ---- |
-| Rang xᵢ             | 1    | 2    | 3    | 4    | 5    |
-| Abonnés yᵢ (milliers) | 4  | 8    | 7    | 12   | 15   |
+| Année                 | 2019 | 2020 | 2021 | 2022 | 2023 |
+| --------------------- | ---- | ---- | ---- | ---- | ---- |
+| Rang xᵢ               | 1    | 2    | 3    | 4    | 5    |
+| Abonnés yᵢ (milliers) | 4    | 8    | 7    | 12   | 15   |
 
 Ici n = 5. Σxᵢ = 15 donc **X̄ = 3** ; Σyᵢ = 4 + 8 + 7 + 12 + 15 = 46 donc **Ȳ = 46/5 = 9,2**. Σxᵢ² = 1 + 4 + 9 + 16 + 25 = 55 donc **V(X) = 55/5 − 3² = 11 − 9 = 2** et σ_X = √2 ≈ 1,414. Σyᵢ² = 16 + 64 + 49 + 144 + 225 = 498 donc **V(Y) = 498/5 − 9,2² = 99,6 − 84,64 = 14,96** et σ_Y ≈ 3,868. Enfin Σxᵢyᵢ = 4 + 16 + 21 + 48 + 75 = 164, d'où :
 
@@ -62,7 +77,7 @@ _Contrôle par les écarts_ — les écarts de Y à Ȳ valent −5,2 ; −1,2 ; 
 
 Quand les données arrivent déjà groupées dans un tableau à double entrée, chaque produit xᵢyⱼ compte autant de fois que son effectif.
 
-> **Définition (échantillon groupé)** — « Soit (X, Y) une série statistique double de taille n. Soit nᵢⱼ le nombre de fois qu'apparaît le couple (xᵢ, yⱼ). Alors cov(X, Y) = (1/n)Σ_{j=1}^{q}Σ_{i=1}^{p} nᵢⱼxᵢyⱼ − X̄·Ȳ. »
+> **Définition (échantillon groupé)** — « Soit (X, Y) une série statistique double de taille n. Soit nᵢⱼ le nombre de fois qu'apparaît le couple (xᵢ, yⱼ). Alors cov(X, Y) = (1/n)Σ_(j=1)^(q)Σ_(i=1)^(p) nᵢⱼxᵢyⱼ − X̄·Ȳ. »
 
 _Exemple détaillé_ — reprenons les 20 logements. On balaie le tableau case par case, en ignorant celles où un facteur est nul : ligne X = 1 : 2×(1×1) + 1×(1×2) = 2 + 2 = 4 ; ligne X = 2 : 4×(2×1) + 2×(2×2) = 8 + 8 = 16 ; ligne X = 3 : 1×(3×1) + 3×(3×2) = 3 + 18 = 21. Total ΣΣnᵢⱼxᵢyⱼ = 4 + 16 + 21 = **41**. Avec X̄ = 1,8 et Ȳ = 0,95 :
 
@@ -76,7 +91,7 @@ Positive : les logements les plus grands abritent plutôt les familles les plus 
 
 Une série double se voit. On place chaque individu à la position de son couple, et le dessin dit en une seconde ce qu'un tableau cache.
 
-> **Définition** — « Soit (X, Y) une série statistique double de valeurs (xᵢ, yᵢ)_{1≤i≤n}. L'ensemble des points Mᵢ de coordonnées (xᵢ, yᵢ) dans un repère orthogonal est appelé **nuage de points** représentant la série statistique. Le **point moyen** du nuage est le point dont les coordonnées sont les moyennes X̄ et Ȳ. »
+> **Définition** — « Soit (X, Y) une série statistique double de valeurs (xᵢ, yᵢ), 1 ≤ i ≤ n. L'ensemble des points Mᵢ de coordonnées (xᵢ, yᵢ) dans un repère orthogonal est appelé **nuage de points** représentant la série statistique. Le **point moyen** du nuage est le point dont les coordonnées sont les moyennes X̄ et Ȳ. »
 
 ::: figure Les cinq abonnements forment une bande qui monte ; le point moyen G(3 ; 9,2) n'est **aucun** des cinq points observés — c'est leur centre d'équilibre.
 <svg viewBox="0 0 340 250"><g stroke="#94a3b8" stroke-width="1" fill="none"><path d="M50 160 H310 M50 105 H310 M50 50 H310"/></g><path d="M50 215 H322" fill="none" stroke="#0f172a" stroke-width="1.8"/><path d="M50 215 V32" fill="none" stroke="#0f172a" stroke-width="1.8"/><g stroke="#0f172a" stroke-width="1.4" fill="none"><path d="M90 215 V220 M130 215 V220 M170 215 V220 M210 215 V220 M250 215 V220"/></g><path d="M50 113.8 H170 M170 113.8 V215" fill="none" stroke="#0f6e56" stroke-width="1.6" stroke-dasharray="6 4"/><g fill="#0f172a"><circle cx="90" cy="171" r="4.5"/><circle cx="130" cy="127" r="4.5"/><circle cx="170" cy="138" r="4.5"/><circle cx="210" cy="83" r="4.5"/><circle cx="250" cy="50" r="4.5"/></g><circle cx="170" cy="113.8" r="5.5" fill="#0f6e56"/><g font-size="13" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"><text x="90" y="233" text-anchor="middle" fill="#0f172a">1</text><text x="130" y="233" text-anchor="middle" fill="#0f172a">2</text><text x="170" y="233" text-anchor="middle" fill="#0f172a">3</text><text x="210" y="233" text-anchor="middle" fill="#0f172a">4</text><text x="250" y="233" text-anchor="middle" fill="#0f172a">5</text><text x="38" y="165" text-anchor="middle" fill="#0f172a">5</text><text x="34" y="110" text-anchor="middle" fill="#0f172a">10</text><text x="34" y="55" text-anchor="middle" fill="#0f172a">15</text><text x="186" y="110" text-anchor="middle" fill="#0f6e56">G</text><text x="328" y="233" text-anchor="middle" fill="#0f172a">x</text><text x="42" y="28" text-anchor="middle" fill="#0f172a">y</text></g></svg>
@@ -108,11 +123,11 @@ _Contrôle obligatoire_ — elle doit passer par G(3 ; 9,2) : (43/15)×3 + 0,6 =
 
 ## 🧮 Les moindres carrés : la droite qui minimise l'erreur
 
-Pour classer les droites, il faut d'abord mesurer ce qu'elles coûtent. Pour une droite D d'équation y = ax + b, on note Hᵢ(xᵢ, zᵢ) le point de D qui a la **même abscisse** que le point observé Mᵢ. L'écart MᵢHᵢ = |yᵢ − (axᵢ + b)| est ce que la droite se trompe sur l'individu i. Le manuel énonce alors : « Le principe de la méthode d'ajustement par la méthode des moindres carrés consiste à déterminer les réels a et b tels que la somme Σ_{i=1}^{n} MᵢHᵢ² soit **minimale**. Dans ce cas, le statisticien pourra faire des prévisions en remplaçant la valeur observée yᵢ par la valeur théorique zᵢ = axᵢ + b. »
+Pour classer les droites, il faut d'abord mesurer ce qu'elles coûtent. Pour une droite D d'équation y = ax + b, on note Hᵢ(xᵢ, zᵢ) le point de D qui a la **même abscisse** que le point observé Mᵢ. L'écart MᵢHᵢ = |yᵢ − (axᵢ + b)| est ce que la droite se trompe sur l'individu i. Le manuel énonce alors : « Le principe de la méthode d'ajustement par la méthode des moindres carrés consiste à déterminer les réels a et b tels que la somme Σ_(i=1)^(n) MᵢHᵢ² soit **minimale**. Dans ce cas, le statisticien pourra faire des prévisions en remplaçant la valeur observée yᵢ par la valeur théorique zᵢ = axᵢ + b. »
 
 On élève au carré pour deux raisons : les écarts positifs et négatifs ne doivent pas se compenser, et les gros écarts doivent peser plus lourd que les petits.
 
-> **Théorème (admis)** — « Soit (X, Y) une série statistique double sur un échantillon de taille n et telle que σ_X ≠ 0. Soit (xᵢ, yᵢ)_{1≤i≤n} les valeurs observées de la série. Alors la somme Σ_{i=1}^{n} (axᵢ + b − yᵢ)² est minimale pour le couple (a₀, b₀) tel que **a₀ = cov(X, Y)/σ_X²** et **b₀ = Ȳ − (cov(X, Y)/σ_X²)·X̄**. »
+> **Théorème (admis)** — « Soit (X, Y) une série statistique double sur un échantillon de taille n et telle que σ_X ≠ 0. Soit (xᵢ, yᵢ), 1 ≤ i ≤ n, les valeurs observées de la série. Alors la somme Σ_(i=1)^(n) (axᵢ + b − yᵢ)² est minimale pour le couple (a₀, b₀) tel que **a₀ = cov(X, Y)/σ_X²** et **b₀ = Ȳ − (cov(X, Y)/σ_X²)·X̄**. »
 
 > **Définition** — « La droite d'équation **y = (cov(X, Y)/σ_X²)(x − X̄) + Ȳ** est appelée droite des moindres carrés de Y en X, ou **droite de régression de Y en X**. La droite d'équation **x = (cov(X, Y)/σ_Y²)(y − Ȳ) + X̄** est appelée droite des moindres carrés de X en Y, ou droite de régression de X en Y. »
 
@@ -166,14 +181,14 @@ _Exemple détaillé (le cas défavorable)_ — sur les 20 logements : cov = 0,34
 
 ## 🧪 Quand le nuage n'est pas droit : changer de variable
 
-Un nuage nettement incurvé n'appelle pas de droite — mais il en cache souvent une. Si Y semble croître de façon **exponentielle**, on pose Z = ln Y : la relation Y = k·e^{ax} devient ln Y = ax + ln k, c'est-à-dire **Z = ax + b**, qui est affine. On ajuste alors (X, Z) par les moindres carrés, puis on revient à Y par la fonction exponentielle.
+Un nuage nettement incurvé n'appelle pas de droite — mais il en cache souvent une. Si Y semble croître de façon **exponentielle**, on pose Z = ln Y : la relation Y = k·e^(ax) devient ln Y = ax + ln k, c'est-à-dire **Z = ax + b**, qui est affine. On ajuste alors (X, Z) par les moindres carrés, puis on revient à Y par la fonction exponentielle.
 
 _Exemple détaillé_ — on compte une culture de bactéries (en milliers) heure par heure.
 
-| Rang xᵢ (heures)      | 0     | 1     | 2     | 3     | 4     |
-| --------------------- | ----- | ----- | ----- | ----- | ----- |
-| Bactéries yᵢ (milliers) | 5   | 8     | 13    | 20    | 33    |
-| zᵢ = ln yᵢ (à 10⁻³)   | 1,609 | 2,079 | 2,565 | 2,996 | 3,497 |
+| Rang xᵢ (heures)        | 0     | 1     | 2     | 3     | 4     |
+| ----------------------- | ----- | ----- | ----- | ----- | ----- |
+| Bactéries yᵢ (milliers) | 5     | 8     | 13    | 20    | 33    |
+| zᵢ = ln yᵢ (à 10⁻³)     | 1,609 | 2,079 | 2,565 | 2,996 | 3,497 |
 
 Sur X : X̄ = 10/5 = **2**, Σxᵢ² = 0 + 1 + 4 + 9 + 16 = 30, V(X) = 30/5 − 4 = **2**, σ_X ≈ 1,414. Sur Z : Σzᵢ = 12,746 donc **Z̄ = 2,5492** ; Σzᵢ² ≈ 34,695 donc V(Z) ≈ 34,695/5 − 2,5492² ≈ 6,939 − 6,498 = **0,4407** et σ_Z ≈ 0,664. Enfin Σxᵢzᵢ = 0 + 2,079 + 2×2,565 + 3×2,996 + 4×3,497 = 2,079 + 5,130 + 8,988 + 13,988 = 30,185, d'où :
 
@@ -187,11 +202,11 @@ $$ z = 0,469x + 1,611 $$
 
 _Contrôle_ — au point moyen : 0,469×2 + 1,611 = 0,938 + 1,611 = 2,549 = Z̄ ✓.
 
-On revient enfin à Y en composant par l'exponentielle : y = e^z = e^{0,469x + 1,611} = e^{1,611}·e^{0,469x}, soit **y ≈ 5,01·e^{0,469x}**. Le facteur e^{0,469} ≈ 1,60 se lit comme une croissance d'environ 60 % par heure.
+On revient enfin à Y en composant par l'exponentielle : y = e^z = e^(0,469x + 1,611) = e^(1,611)·e^(0,469x), soit **y ≈ 5,01·e^(0,469x)**. Le facteur e^(0,469) ≈ 1,60 se lit comme une croissance d'environ 60 % par heure.
 
-_Contrôle sur les données_ — au rang 4 : 5,01 × e^{1,876} ≈ 5,01 × 6,527 ≈ **32,7**, contre 33 observés ✓ ; au rang 2 : 5,01 × e^{0,938} ≈ 5,01 × 2,555 ≈ **12,8**, contre 13 observés ✓. Le modèle colle.
+_Contrôle sur les données_ — au rang 4 : 5,01 × e^(1,876) ≈ 5,01 × 6,527 ≈ **32,7**, contre 33 observés ✓ ; au rang 2 : 5,01 × e^(0,938) ≈ 5,01 × 2,555 ≈ **12,8**, contre 13 observés ✓. Le modèle colle.
 
-_Prévision_ — à la 6ᵉ heure : y ≈ 5,01 × e^{0,469×6} = 5,01 × e^{2,814} ≈ 5,01 × 16,68 ≈ **83,5 milliers**, soit près de 84 000 bactéries.
+_Prévision_ — à la 6ᵉ heure : y ≈ 5,01 × e^(0,469×6) = 5,01 × e^(2,814) ≈ 5,01 × 16,68 ≈ **83,5 milliers**, soit près de 84 000 bactéries.
 
 > 🗡️ Le changement de variable se choisit sur l'**allure** du nuage, et l'énoncé le souffle presque toujours : Z = ln Y pour une croissance exponentielle, Z = √Y quand Y semble proportionnel au carré de X, X = V² et Y = R/V pour une résistance qui grimpe en puissance de la vitesse. Une fois posé, tout le chapitre s'applique à la **nouvelle** série — puis on remonte à la variable de départ.
 
@@ -199,14 +214,14 @@ _Prévision_ — à la 6ᵉ heure : y ≈ 5,01 × e^{0,469×6} = 5,01 × e^{2,81
 
 ## 👑 Méthode : traiter une série double de bout en bout
 
-| Étape | Question                         | Outil                                                                           |
-| ----- | -------------------------------- | ------------------------------------------------------------------------------- |
-| 1     | Quelles sont les deux séries ?    | marges du tableau ; contrôler que les fréquences somment à 1                     |
-| 2     | Comment les résumer ?             | X̄, V(X) = (1/n)Σnᵢxᵢ² − X̄², σ_X — idem pour Y                                  |
-| 3     | Varient-elles ensemble ?          | cov(X, Y) = (1/n)Σxᵢyᵢ − X̄Ȳ (ou ΣΣnᵢⱼxᵢyⱼ si groupé) ; lire le **signe**       |
-| 4     | Une droite est-elle légitime ?    | allure du nuage, puis ρ_XY = cov/(σ_X σ_Y) comparé à √3/2 ≈ 0,866                |
-| 5     | Quelle droite ?                   | moindres carrés a₀ = cov/σ_X², b₀ = Ȳ − a₀X̄ (ou Mayer si l'énoncé l'impose)     |
-| 6     | Vérification                      | la droite passe par G(X̄, Ȳ) et la somme des écarts observés−théoriques vaut 0   |
-| 7     | Le nuage est courbe ?             | changement de variable (Z = ln Y, Z = √Y…), ajuster (X, Z), puis revenir à Y      |
+| Étape | Question                       | Outil                                                                         |
+| ----- | ------------------------------ | ----------------------------------------------------------------------------- |
+| 1     | Quelles sont les deux séries ? | marges du tableau ; contrôler que les fréquences somment à 1                  |
+| 2     | Comment les résumer ?          | X̄, V(X) = (1/n)Σnᵢxᵢ² − X̄², σ_X — idem pour Y                                 |
+| 3     | Varient-elles ensemble ?       | cov(X, Y) = (1/n)Σxᵢyᵢ − X̄Ȳ (ou ΣΣnᵢⱼxᵢyⱼ si groupé) ; lire le **signe**      |
+| 4     | Une droite est-elle légitime ? | allure du nuage, puis ρ_XY = cov/(σ_X σ_Y) comparé à √3/2 ≈ 0,866             |
+| 5     | Quelle droite ?                | moindres carrés a₀ = cov/σ_X², b₀ = Ȳ − a₀X̄ (ou Mayer si l'énoncé l'impose)   |
+| 6     | Vérification                   | la droite passe par G(X̄, Ȳ) et la somme des écarts observés−théoriques vaut 0 |
+| 7     | Le nuage est courbe ?          | changement de variable (Z = ln Y, Z = √Y…), ajuster (X, Z), puis revenir à Y  |
 
 > 🏆 Dix-neuvième et dernière porte, héros. Tu sais lire un tableau à double entrée, en extraire deux séries et leurs paramètres, mesurer leur lien par la covariance puis par la corrélation, tracer la droite qui minimise vraiment l'erreur, la contrôler en la faisant passer par le point moyen, et redresser un nuage courbe par un changement de variable. Le manuel s'arrête ici : de la continuité du chapitre 1 jusqu'à ce nuage de points, tu tiens désormais le programme entier. Il ne reste qu'à t'en servir.

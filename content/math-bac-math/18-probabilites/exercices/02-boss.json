@@ -31,27 +31,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Un atelier A fabrique 60 % des pièces d'un lot, l'atelier B les 40 % restants. Parmi les pièces de A, 5 % sont défectueuses ; parmi celles de B, 10 % le sont. On prélève une pièce au hasard : elle est défectueuse. Quelle est la probabilité qu'elle provienne de l'atelier B ?",
+      "prompt": "Un atelier reçoit ses batteries de deux fournisseurs : F₁ en livre 70 % et F₂ les 30 % restants. Parmi les batteries livrées par F₁, 4 % sont hors normes ; parmi celles livrées par F₂, 12 % le sont. On prélève une batterie au hasard dans le stock : elle est hors normes. Quelle est la probabilité qu'elle provienne du fournisseur F₂ ?",
       "options": [
         {
           "id": "a",
-          "text": "3/7"
+          "text": "7/16"
         },
         {
           "id": "b",
-          "text": "2/5"
+          "text": "3/10"
         },
         {
           "id": "c",
-          "text": "1/10"
+          "text": "0,12"
         },
         {
           "id": "d",
-          "text": "4/7"
+          "text": "9/16"
         }
       ],
       "correctOption": "d",
-      "explanation": "On remonte la flèche : l'énoncé donne la panne SACHANT l'atelier, on demande l'atelier SACHANT la panne. Il n'y a rien à mémoriser, on revient à la définition p(B/D) = p(B ∩ D)/p(D), et p(D) se calcule d'abord par les probabilités totales. 1) LES DEUX CHEMINS menant à D. p(A ∩ D) = 0,6 × 0,05 = 0,03 et p(B ∩ D) = 0,4 × 0,10 = 0,04. 2) LA PROBABILITÉ TOTALE : A et B forment une partition, donc p(D) = 0,03 + 0,04 = 0,07. 3) LE QUOTIENT : p(B/D) = p(B ∩ D)/p(D) = 0,04/0,07 = 4/7 ✓ (en multipliant numérateur et dénominateur par 100). Contrôle par une seconde voie totalement indépendante, le comptage sur un lot fictif de 1000 pièces : A en produit 600, dont 600 × 0,05 = 30 défectueuses ; B en produit 400, dont 400 × 0,10 = 40 défectueuses. Le lot compte donc 30 + 40 = 70 pièces défectueuses, dont 40 viennent de B : la proportion cherchée est 40/70 = 4/7 ✓. Contrôle de cohérence : p(A/D) = 30/70 = 3/7, et 4/7 + 3/7 = 1 ✓ — la pièce défectueuse vient forcément de l'un des deux ateliers. Remarque de sens : B ne fabrique que 40 % des pièces mais fournit 4/7 ≈ 57 % des rebuts, parce que son taux de panne est double. Le piège courant, celui que le cours signale en encadré : confondre p(B/D) avec p(D/B) et répondre 1/10, c'est-à-dire recopier le taux de panne de B ; ce sont deux nombres différents, calculés dans deux univers différents — l'un parmi les pièces de B, l'autre parmi les pièces défectueuses. Le distracteur 2/5 exécute l'oubli pur et simple de l'information : on répond p(B) = 0,4 = 2/5, la probabilité AVANT de savoir que la pièce est défectueuse ; or cette information doit rehausser B, puisque B produit plus de rebuts, et 4/7 > 2/5 ✓. Enfin 3/7 exécute la réponse à la mauvaise cause : c'est p(A/D), la probabilité que la pièce vienne de A, obtenue en écrivant 0,03/0,07 au lieu de 0,04/0,07.",
+      "explanation": "On remonte la flèche : l'énoncé donne le défaut SACHANT le fournisseur, on demande le fournisseur SACHANT le défaut. Il n'y a rien à mémoriser, on revient à la définition p(F₂/H) = p(F₂ ∩ H)/p(H), et p(H) se calcule d'abord par les probabilités totales. 1) LES DEUX CHEMINS menant à H. p(F₁ ∩ H) = 0,7 × 0,04 = 0,028 et p(F₂ ∩ H) = 0,3 × 0,12 = 0,036. 2) LA PROBABILITÉ TOTALE : F₁ et F₂ forment une partition, donc p(H) = 0,028 + 0,036 = 0,064. 3) LE QUOTIENT : p(F₂/H) = p(F₂ ∩ H)/p(H) = 0,036/0,064 = 36/64 = 9/16 ≈ 0,5625 ✓ (en multipliant numérateur et dénominateur par 1000, puis en simplifiant par 4). Contrôle par une seconde voie totalement indépendante, le comptage sur un stock fictif de 1000 batteries : F₁ en livre 700, dont 700 × 0,04 = 28 hors normes ; F₂ en livre 300, dont 300 × 0,12 = 36 hors normes. Le stock compte donc 28 + 36 = 64 batteries hors normes, dont 36 viennent de F₂ : la proportion cherchée est 36/64 = 9/16 ✓. Contrôle de cohérence : p(F₁/H) = 28/64 = 7/16, et 9/16 + 7/16 = 16/16 = 1 ✓ — la batterie hors normes vient forcément de l'un des deux fournisseurs. Remarque de sens : F₂ ne livre que 30 % des batteries mais fournit 9/16 ≈ 56 % des rebuts, parce que son taux de défaut est le triple. Le piège courant, celui que le cours signale en encadré : confondre p(F₂/H) avec p(H/F₂) et répondre 0,12, c'est-à-dire recopier le taux de défaut de F₂ ; ce sont deux nombres différents, calculés dans deux univers différents — l'un parmi les batteries de F₂, l'autre parmi les batteries hors normes. Le distracteur 3/10 exécute l'oubli pur et simple de l'information : on répond p(F₂) = 0,3 = 3/10, la probabilité AVANT de savoir que la batterie est hors normes ; or cette information doit rehausser F₂, puisque F₂ fournit plus de rebuts, et 9/16 > 3/10 ✓. Enfin 7/16 exécute la réponse à la mauvaise cause : c'est p(F₁/H), la probabilité que la batterie vienne de F₁, obtenue en écrivant 0,028/0,064 au lieu de 0,036/0,064.",
       "difficulty": 2
     },
     {
