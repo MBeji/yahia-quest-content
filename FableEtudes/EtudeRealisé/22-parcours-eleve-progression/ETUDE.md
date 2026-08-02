@@ -1,7 +1,10 @@
 # Étude 22 — Parcours élève & progression pédagogique (doctrine de navigation, déblocage, cohortes)
 
-> **Statut** : en exécution — Q-1…Q-5 arbitrées le 2026-07-18 par Mohamed, toutes sur les
-> recommandations (§7) ; **lots 1 et 2 livrés le 2026-07-20**, lots 3–6 exécutables
+> **Statut** : **livrée** — Q-1…Q-5 arbitrées le 2026-07-18 par Mohamed, toutes sur les
+> recommandations (§7) ; **les 6 lots sont sur `main`** : lot 1 carte honnête (#538), lot 2
+> boucle SM-2 (#540), lot 3 rentrée (#573), lot 4 cohorte « Ma classe » (#565), lot 5 donjon
+> scopé au parcours (#547), lot 6 « prochaine action » unifiée (#567). Close le 2026-07-21 ;
+> l'en-tête est resté à « lots 1 et 2 » jusqu'au 2026-08-02, corrigé en relisant `main`.
 > **Priorité** : 22 · **Valeur** : un parcours élève cohérent, lisible et motivant — la doctrine
 > unique qui répond à « qu'est-ce qui est ouvert, qu'est-ce qui est verrouillé, et pourquoi » ·
 > **Complexité** : moyenne
