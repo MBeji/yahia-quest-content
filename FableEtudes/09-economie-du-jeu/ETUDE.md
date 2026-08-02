@@ -1,6 +1,8 @@
 # Étude 09 — Économie du jeu : instrumentation & équilibrage
 
-> **Statut** : brouillon
+> **Statut** : **en exécution** — **lot 1 livré** le 2026-08-02 : la console admin « Économie »
+> (#703), qui mesure la courbe XP/coins réelle avant d'y toucher. _(L'en-tête disait encore
+> « brouillon » le jour même où son lot 1 arrivait sur `main` ; corrigé en relisant `main`.)_
 > **Priorité** : 09 · **Valeur** : 📊 pilotage — savoir si la courbe XP/coins est trop rapide ou trop lente **en vrai**, avant de toucher quoi que ce soit · **Complexité** : faible/moyenne
 > **Architecte** : Fable (claude-fable-5), 2026-07-04 · **Exécuteur cible** : Sonnet
 > **Dépend de** : rien (indépendant, peut démarrer tôt) · **Bloque** : tout futur rééquilibrage sérieux (04/05 profiteront des mêmes vues)

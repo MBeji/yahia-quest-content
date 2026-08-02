@@ -1,7 +1,11 @@
 # Étude 20 — Réponses acceptées : rappel tolérant & questions libres natives (zéro question exclue)
 
-> **Statut** : validée (Q-1…Q-5 arbitrées par Mohamed — Q-1/Q-3 le 2026-07-15, Q-2/Q-4/Q-5 le
-> 2026-07-16, toutes sur les recommandations) — prête pour l'exécuteur (lot 1)
+> **Statut** : **en exécution** (Q-1…Q-5 arbitrées par Mohamed — Q-1/Q-3 le 2026-07-15,
+> Q-2/Q-4/Q-5 le 2026-07-16, toutes sur les recommandations). **Livrés** : lot 1 socle du
+> scoring ensembliste (#583), lot 2 Tier A variantes morphologiques (#652), lot 3 skill Tier B
+> + pilote (#96, corpus), lot 5 clavier arabe d'appoint (#655), lot 7 `short_answer` (#654).
+> Reste le remplissage du corpus `acceptedAnswers` à l'échelle. _(En-tête « prête pour
+> l'exécuteur (lot 1) » corrigé le 2026-08-02 en relisant `main` des deux dépôts.)_
 > **Priorité** : 20 · **Valeur** : rend les **12 349** missions Rappel (étude 17) réellement
 > jouables — une réponse **correcte mais formulée autrement** cesse d'être refusée, **sans retirer
 > une seule question** du mode — **et** dote le moteur de son premier type natif de **réponse
