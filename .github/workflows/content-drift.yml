@@ -1,0 +1,232 @@
+name: Contenu non publié (garde)
+
+# Dit ce qu'aucun autre signal ne dit : quels sujets ont, dans `main`, du contenu
+# plus récent que leur dernière application en production.
+#
+# Pourquoi cette garde existe. `apply-content.yml` est DÉSARMÉ (workflow_dispatch
+# seul, lot 3a) : aucun merge ne publie. Une PR de contenu mergée n'est donc pas
+# en prod, et rien — ni la CI verte, ni la chaîne d'automerge, ni le journal
+# `content_releases` — ne le signale. Le trou se referme sur un geste humain dont
+# personne ne rappelle l'existence.
+#
+# Vécu le 2026-08-01 sur `math-bac-math` : une application a tourné à 19:11 UTC
+# depuis le SHA 891c864, et la PR #104 — qui levait quatre doublons du chapitre 19
+# — a été mergée à 19:27 en 67e3dd7. Seize minutes. La prod a servi les questions
+# clonées pendant deux jours, et les six applications qui ont suivi portaient sur
+# une autre matière : « il y a eu des publications récentes » ne prouvait rien.
+# Redispatché le 2026-08-03 (run 30818142646), après constat manuel.
+#
+# Ce que cette garde N'EST PAS : elle n'applique rien et n'écrit rien en base.
+# Elle LIT `content_releases` et compare au dépôt. Armer le déclencheur
+# automatique de `apply-content.yml` reste réservé au lot 3b, après répétition
+# intégrale sur le projet TEST et arbitrage du runbook §4.3 — ce n'est pas à
+# cette garde de trancher ça, et elle ne le contourne pas : elle rend visible le
+# geste manquant, elle ne le fait pas à la place de quelqu'un.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/**"
+  schedule:
+    # 06:40 UTC — après roadmap-sync (05:30), avant la journée. Créneau libre
+    # (video-health dim. 06:00, content-audit mer./sam. 22:07).
+    - cron: "40 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+# Le push et le cron peuvent se croiser ; deux runs concurrents se disputeraient
+# la même issue et produiraient des doublons.
+concurrency:
+  group: content-drift
+  cancel-in-progress: false
+
+jobs:
+  drift:
+    name: Écart entre main et la prod
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PROD_SUPABASE_DB_URL: ${{ secrets.PROD_SUPABASE_DB_URL }}
+      GH_TOKEN: ${{ github.token }}
+      # Mêmes refs que apply-content.yml — non secrets, déjà en clair côté public.
+      PROD_REF: fasrenmmrkqjoobrztbp
+      TEST_REF: pqegdnwdtbjtplcthxyp
+
+    steps:
+      - name: Garde — secret présent
+        run: |
+          if [ -z "${PROD_SUPABASE_DB_URL}" ]; then
+            echo "::error::Secret PROD_SUPABASE_DB_URL manquant (Settings > Secrets and variables > Actions)."
+            exit 1
+          fi
+
+      # Fail closed, comme apply-content : lire le journal du projet TEST et
+      # conclure sur la PROD serait pire que de ne rien dire — on annoncerait
+      # « tout est publié » en regardant la mauvaise base.
+      - name: Garde — la cible est bien la PROD
+        run: |
+          set -euo pipefail
+          case "${PROD_SUPABASE_DB_URL}" in
+            *"${TEST_REF}"*)
+              echo "::error::L'URL vise le projet TEST (${TEST_REF}) — refus."; exit 1 ;;
+          esac
+          case "${PROD_SUPABASE_DB_URL}" in
+            *"${PROD_REF}"*) echo "Cible confirmée : prod (${PROD_REF})." ;;
+            *) echo "::error::L'URL ne contient pas le ref prod connu (${PROD_REF}) — refus."; exit 1 ;;
+          esac
+
+      # fetch-depth: 0 — la garde compare HEAD à des SHA arbitraires du passé
+      # (celui de chaque dernière publication). Un clone superficiel ne les a pas
+      # et `git rev-list <sha>..HEAD` échouerait sur « unknown revision ».
+      - name: Checkout corpus (historique complet)
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+
+      # Un simple SELECT : pas besoin du client 17 de pgdg (que apply-content
+      # installe pour que pg_dump corresponde au serveur).
+      - name: Installer psql
+        run: |
+          set -euo pipefail
+          if command -v psql >/dev/null; then exit 0; fi
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq postgresql-client >/dev/null
+
+      - name: Relever la dernière publication de chaque sujet
+        run: |
+          set -euo pipefail
+          # Un sujet peut avoir été publié plusieurs fois ; seule la plus récente
+          # compte. DISTINCT ON + ORDER BY applied_at DESC donne exactement ça.
+          psql "${PROD_SUPABASE_DB_URL}" --set ON_ERROR_STOP=1 -tAq -F'|' -c \
+            "SELECT DISTINCT ON (s) s, r.git_sha, r.applied_at::date
+               FROM public.content_releases r, unnest(r.subjects) AS s
+              ORDER BY s, r.applied_at DESC;" > releases.txt
+          echo "$(wc -l < releases.txt) sujet(s) publié(s) au moins une fois."
+
+      # Le tableau s'accumule dans un FICHIER, jamais dans une variable shell
+      # multi-ligne : une variable obligerait à écrire un guillemet en colonne 0,
+      # ce qui sort du bloc littéral YAML (le fichier ne parsait plus). Le fichier
+      # a un second mérite — il ne repasse jamais par une interpolation `${{ }}`
+      # au milieu d'une commande, alors qu'il contient des backticks et des
+      # messages de commit arbitraires, que le shell exécuterait.
+      - name: Comparer main au dernier publié
+        id: diff
+        run: |
+          set -euo pipefail
+          : > stale.md
+          NB=0
+
+          # Les sujets sont les dossiers de content/. `competences` n'en est pas
+          # un : il alimente le registre, journalisé sous `_competences_registry`.
+          for dir in content/*/; do
+            SUBJECT="$(basename "${dir}")"
+            SLUG="${SUBJECT}"
+            if [ "${SUBJECT}" = "competences" ]; then SLUG="_competences_registry"; fi
+
+            LINE="$(grep -m1 "^${SLUG}|" releases.txt || true)"
+
+            if [ -z "${LINE}" ]; then
+              NB=$((NB + 1))
+              printf '| `%s` | **jamais publié** | tout le sujet |\n' "${SUBJECT}" >> stale.md
+              continue
+            fi
+
+            SHA="$(printf '%s' "${LINE}" | cut -d'|' -f2)"
+            LE="$(printf '%s' "${LINE}" | cut -d'|' -f3)"
+
+            # Le SHA journalisé peut être introuvable : publication depuis une ref
+            # réécrite, ou historique tronqué. On le dit plutôt que de conclure.
+            if ! git cat-file -e "${SHA}^{commit}" 2>/dev/null; then
+              NB=$((NB + 1))
+              printf '| `%s` | %s (`%s` introuvable) | indéterminé — republier par sûreté |\n' \
+                "${SUBJECT}" "${LE}" "${SHA}" >> stale.md
+              continue
+            fi
+
+            N="$(git rev-list --count "${SHA}..HEAD" -- "content/${SUBJECT}" 2>/dev/null || echo 0)"
+            if [ "${N}" -gt 0 ]; then
+              NB=$((NB + 1))
+              # Le `|` d'un message de commit casserait la colonne du tableau.
+              DERNIER="$(git log -1 --format='%h %s' "${SHA}..HEAD" -- "content/${SUBJECT}" \
+                         | tr '|' '/' | cut -c1-90)"
+              printf '| `%s` | %s (`%s`) | %s commit(s), dernier : %s |\n' \
+                "${SUBJECT}" "${LE}" "$(printf '%s' "${SHA}" | cut -c1-7)" "${N}" "${DERNIER}" >> stale.md
+            fi
+          done
+
+          echo "nb=${NB}" >> "$GITHUB_OUTPUT"
+
+          if [ "${NB}" -eq 0 ]; then
+            echo "### Prod à jour — aucun sujet en retard" >> "$GITHUB_STEP_SUMMARY"
+          else
+            {
+              echo "### ${NB} sujet(s) non publié(s)"
+              echo
+              echo "| sujet | dernière publication | ce qui n'est pas en prod |"
+              echo "| ----- | -------------------- | ------------------------ |"
+              cat stale.md
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      # Même mécanique que video-health.yml : UNE issue vivante, mise à jour tant
+      # que l'écart dure, refermée d'elle-même quand il disparaît. Un run rouge
+      # ferait clignoter `main` sans rien apprendre à personne ; une issue ouverte
+      # survit à l'onglet Actions, et c'est bien le problème qu'on traite.
+      - name: Ouvrir ou mettre à jour l'issue
+        if: ${{ steps.diff.outputs.nb != '0' }}
+        env:
+          NB: ${{ steps.diff.outputs.nb }}
+        run: |
+          set -euo pipefail
+          gh label create content-drift \
+            --color B60205 --description "Contenu mergé mais pas encore appliqué en prod" \
+            --force >/dev/null 2>&1 || true
+
+          {
+            cat <<'ENTETE'
+          Ces sujets ont, dans `main`, du contenu que la production n'a pas.
+          `apply-content.yml` étant en `workflow_dispatch` seul, aucun merge ne les
+          publiera tout seul.
+
+          | sujet | dernière publication | ce qui n'est pas en prod |
+          | ----- | -------------------- | ------------------------ |
+          ENTETE
+            cat stale.md
+            cat <<'PIED'
+
+          **Pour refermer :** Actions → *Apply content (PROD)* → `dry_run: false`.
+          Laisser `subjects` **vide** applique tout le corpus — c'est idempotent, et
+          c'est le geste le plus sûr quand plusieurs sujets sont en retard. Pour n'en
+          viser qu'un : `subjects: <slug>`.
+
+          Cette issue se referme toute seule au prochain passage de la garde, une fois
+          l'écart comblé. Vérifiée chaque jour à 06:40 UTC et à chaque push sur `main`
+          touchant `content/`.
+          PIED
+          } > corps.md
+
+          TITRE="${NB} sujet(s) mergé(s) mais pas en production"
+          EXISTING="$(gh issue list --label content-drift --state open --limit 1 --json number --jq '.[0].number')"
+          if [ -n "${EXISTING}" ]; then
+            gh issue edit "${EXISTING}" --title "${TITRE}" --body-file corps.md >/dev/null
+            echo "Issue #${EXISTING} mise à jour."
+          else
+            gh issue create --title "${TITRE}" --label content-drift --body-file corps.md
+          fi
+
+      - name: Refermer l'issue si l'écart est comblé
+        if: ${{ steps.diff.outputs.nb == '0' }}
+        run: |
+          set -euo pipefail
+          EXISTING="$(gh issue list --label content-drift --state open --limit 1 --json number --jq '.[0].number')"
+          if [ -n "${EXISTING}" ]; then
+            gh issue close "${EXISTING}" \
+              --comment "Tous les sujets de \`main\` sont appliqués en production — clôture automatique."
+            echo "Issue #${EXISTING} refermée."
+          else
+            echo "Rien à refermer : prod à jour."
+          fi

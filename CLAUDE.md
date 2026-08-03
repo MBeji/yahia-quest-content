@@ -52,3 +52,14 @@
 - **Le contenu ne voyage pas en migrations** : `content:emit` → `sql/content/<subject>.sql`,
   appliqué en prod par `apply-content.yml` (`workflow_dispatch`, journalisé dans
   `content_releases`). Ne jamais committer de SQL ici, ni de migration dans le moteur.
+  ⚠️ **Merger ne publie pas.** `apply-content.yml` est désarmé volontairement (lot 3a) : aucun
+  merge, aucun push ne déclenche une application. Une PR de contenu mergée n'est donc **pas** en
+  prod tant qu'un humain n'a pas dispatché — et une application lancée quelques minutes *avant*
+  un merge fige l'ancienne version sans que rien ne le dise. Vécu le 2026-08-01 sur
+  `math-bac-math` : application à 19:11 depuis `891c864`, PR #104 mergée à 19:27 en `67e3dd7`,
+  et la prod a servi le contenu périmé deux jours. C'est pourquoi `content-drift.yml` existe :
+  garde en **lecture seule** (elle n'applique rien) qui compare `content_releases` à `main`
+  chaque jour à 06:40 UTC et à chaque push touchant `content/`, et tient **une** issue
+  `content-drift` ouverte tant qu'un sujet est en retard — refermée d'elle-même une fois l'écart
+  comblé. En fin de session de contenu : vérifier que cette issue est close, pas seulement que
+  la PR est mergée.
