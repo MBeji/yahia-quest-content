@@ -318,16 +318,17 @@ diagnostic déjà capté** sur la surface de correction qui existe déjà. C'est
   données et son état vide sont spécifiés maintenant, pour que é11 lot 1 remplisse au lieu de
   refondre.
 
-### 9.6 Questions ouvertes (pour Mohamed)
+### 9.6 Questions — TRANCHÉES le 2026-08-02 (Mohamed)
 
-- **Q-4** : veut-on, plus tard, un **vrai feedback question par question** pendant la session ?
-  Ce n'est pas un raffinement de A1.2 : cela rouvre la couture de soumission atomique (score,
-  anti-farm, SM-2, télémétrie). Proposition de l'architecte : **non pour la rentrée**, à
-  reconsidérer après mesure du taux de clic de A1.2b. Réponse attendue : oui / non / plus tard.
-- **Q-5** : le champ `courseAnchor` du registre — le **remplit-on maintenant** pour les
-  misconceptions des matières de concours (travail de contenu, petit), ou laisse-t-on tous les
-  liens pointer le haut du cours en v1 ? Proposition : **v1 sans ancres**, ancrer plus tard sur
-  les tags les plus fréquents (donnée que la télémétrie fournira).
+- **Q-4 — feedback question par question : ✅ NON POUR LA RENTRÉE.** Décision conforme à la
+  proposition de l'architecte. Ce n'est pas un raffinement d'affichage : cela rouvrirait la
+  couture de soumission atomique (score, anti-farm, SM-2, télémétrie calculés en UNE
+  transaction). À reconsidérer **après mesure du taux de clic de A1.2b** — donc après que le
+  corpus soit tagué, sans quoi il n'y a rien à cliquer.
+- **Q-5 — `courseAnchor` : ✅ V1 SANS ANCRES.** Tous les liens « revoir le cours » ouvrent le
+  chapitre en haut. Le code ne s'y bloque pas (D-A1.2-4 : l'ancre est un champ **optionnel** du
+  registre). On ancrera plus tard, **sur les tags que la télémétrie aura montrés fréquents** —
+  ancrer 566 chapitres à l'aveugle serait du travail perdu à 95 %.
 
 ### Phase A0 (socle télémétrie) — LIVRÉE
 

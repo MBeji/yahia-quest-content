@@ -5,10 +5,11 @@
 > **Instantané du 2026-08-01** (créé le 2026-07-20, resynchronisé contre `main` les 2026-07-25,
 > 2026-07-27, 2026-07-29 puis le **2026-08-01**) — déclinaison opérationnelle de l'**étude 26 (doctrine verticale : profondeur
 > avant largeur)**. Les Q-1…Q-5 de l'étude 26 ayant été **arbitrées le 2026-07-20**, cet ordre
-> n'est plus une recommandation d'architecte : il est **officiel**. La même session a rendu
-> **tous les arbitrages en attente** (A1→A5) — plus aucune ligne de ce fichier n'est bloquée par
-> une décision humaine. L'état de référence reste [STATUS.md](../STATUS.md) + l'[index des
-> études](./README.md).
+> n'est plus une recommandation d'architecte : il est **officiel**. Les arbitrages **A1→A8**
+> (2026-07-20) puis **A9→A14** (2026-08-02) sont rendus : cette seconde session a vidé les
+> questions internes des études 04 et 09, et tranché le périmètre du tagging, le lien
+> misconception → compétence et le statut du check pgTAP. L'état de référence reste
+> [STATUS.md](../STATUS.md) + l'[index des études](./README.md).
 > **Jalon produit : rentrée scolaire, 1ᵉʳ septembre 2026** (§7).
 
 ## 0. Mode d'emploi (comment exécuter cette roadmap)
@@ -18,8 +19,10 @@
 2. **Trois files parallèles** : PRODUIT (§3), FONDATIONS (§4), CONTENU (§5). Elles ne se
    bloquent pas entre elles — une session prend **la première ligne non cochée de sa file**
    dont les dépendances sont satisfaites.
-3. **Plus aucun arbitrage humain n'est en attente** (tous rendus le 2026-07-20, §2). Les
-   entrées autrefois marquées ⚖️ portent désormais leur décision entre parenthèses.
+3. **Les arbitrages A1→A14 sont rendus** (§2). ⚠️ Mais « arbitrage rendu » ≠ « ligne
+   exécutable » : vérifier aussi le **statut de l'étude** (`brouillon` / `validée` / `en
+   exécution`) et ses questions internes. C'est le piège dans lequel ce fichier est tombé
+   jusqu'au 2026-08-01 — voir l'encart du §2.
 4. Priorité inter-files en cas de choix : finir l'en-vol (§1) > PRODUIT > FONDATIONS >
    CONTENU nouveau (les corrections qualité contenu passent, elles, avant tout — P-4).
 
@@ -67,11 +70,15 @@ La règle est donc remplacée par un **invariant vérifié** :
       trois mergées** les 12-13/07. Le contenu « coffre-fort » qu'elles ont sauvé est sur `main` ;
       son exploitation relève du fil contenu (§5), pas d'un arbitrage.
 
-## 2. Arbitrages — TOUS RENDUS le 2026-07-20
+## 2. Arbitrages — A1→A8 le 2026-07-20, A9→A14 le 2026-08-02
 
-> Session de décision unique (Mohamed, 2026-07-20), consignée par #537. **Aucun arbitrage n'est
-> plus en attente** :
-> toute ligne de ce fichier est exécutable dès qu'une session la prend. Le détail de chaque
+> Deux sessions de décision : **A1→A8** le 2026-07-20 (consignée par #537), puis **A9→A14** le
+> 2026-08-02 — celle-ci vide les questions internes des études 04 et 09 et tranche le périmètre
+> du tagging, le lien misconception → compétence et le statut du check pgTAP.
+> ⚠️ **Ne pas lire « aucun arbitrage en attente » comme « toute ligne est exécutable ».** C'est
+> l'erreur qu'a faite ce fichier jusqu'au 2026-08-01 : les arbitrages A* étaient rendus, mais les
+> **questions internes des études restées en `brouillon`** ne l'étaient pas — é09 en portait trois,
+> dont une bloquait un lot entier. Avant de prendre une ligne, **lire le statut de son étude**. Le détail de chaque
 > décision, avec sa conséquence sur les lots, vit dans le §7 (ou §8) de l'étude concernée —
 > ce tableau n'en est que le sommaire.
 
@@ -85,6 +92,12 @@ La règle est donc remplacée par un **invariant vérifié** :
 | A6  | ~~PRs legacy #374 / #376 / #348~~                                                                                                        | **Sans objet** — les trois sont mergées depuis les 12-13/07 (voir §1)                                                                                                                                                                                                                  |
 | A7  | _(rendus antérieurement, pour mémoire)_ é23 Q-1/Q-2/Q-5 le 2026-07-19 (#531) ; é22 Q-1…Q-5 le 2026-07-18 ; é20 Q-1…Q-5 le 2026-07-16     | é23 lot 5, é22 lots 1-6, é20 lots 1-8 : **exécutables**                                                                                                                                                                                                                                |
 | A8  | **Renovate ou script maison** pour le lot patch/minor (rendu le 2026-07-25)                                                              | ✅ **Script maison** — pas de tiers dans la chaîne, même régime que les autres gardes du harness. Appliqué par le lot L4 de l'étude « IA vs déterministe » (#613)                                                                                                                      |
+| A9  | **é09 Q-1…Q-3** (garde-fous chiffrés · cadence de revue · déclencheur du lot 3) — rendu le 2026-08-02                                    | ✅ **G-1…G-4 ratifiés tels quels**, comme **hypothèses de départ** à corriger après la première lecture de la page Économie · revue **mensuelle** (hebdo inviterait au réglage réactif, RISK-2) · lot 3 déclenché par la **latence** (> 2 s, déjà journalisée), pas par la volumétrie. **é09 lot 2 débloqué** |
+| A10 | **é04 Q-4 / Q-5** (feedback par question · ancres de cours) — rendu le 2026-08-02                                                        | ✅ Feedback question-par-question : **non pour la rentrée** (rouvrirait la soumission atomique), à reconsidérer après mesure du clic A1.2b · `courseAnchor` : **v1 sans ancres**, on ancrera sur les tags que la télémétrie montrera fréquents                                          |
+| A11 | **Tagging des misconceptions — périmètre** (rendu le 2026-08-02)                                                                        | ✅ **Pilote sur `math` 9ᵉ** (557 questions), pas la vague large : il donne un coût réel par question avant d'engager `math-6eme`, et allume l'écran sur la matière de concours. C'est le déblocage de TOUT l'axe adaptatif                                                              |
+| A12 | **Lien misconception → compétence** (rendu le 2026-08-02)                                                                               | ✅ **Un champ `competency` dans le registre des misconceptions** — chaque erreur déclare la compétence qu'elle met en défaut. Réutilise le chemin d'é07 lot 4 sans en créer un second (R-A1.2-6). **Débloque « m'entraîner », donc la ligne 9**                                        |
+| A13 | **`pgTAP suite` requis sur les PR de migration** (rendu le 2026-08-02)                                                                   | ✅ **Requis.** #689 a mergé ROUGE trois minutes après son ouverture : le check tournait, il était rouge, la fenêtre de lecture était plus courte que le temps de lire. ~2 min par PR de schéma contre une classe entière de pannes de base                                              |
+| A14 | **Garde-fou de volumétrie des registres** (rendu le 2026-08-02)                                                                          | ✅ **Non** — la purge est déjà gardée là où le dégât se produit (arena#702, fail-closed à l'application). Un seuil « ne pas descendre sous N » serait un doublon plus faible, et en pgTAP donc après coup                                                                              |
 
 **Ce qui reste à la main de Mohamed** (hors lots, sans blocage de file) : é23 Q-3 (self-désigner
 l'app child-directed auprès de Google + paragraphe « vidéos YouTube » de la politique de
@@ -135,10 +148,12 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
       **par le canal des compétences** (é07), qui répondait déjà au même besoin. L'intention est
       préservée : la fonction SQL rend un ID, le registre reste source unique, une reformulation
       reste une correction de registre sans migration.
-      **Reliquat qui garde la case décochée** : le geste **« m'entraîner »**. R-A1.2-6 impose de
-      réutiliser celui d'é07 lot 4, qui résout une COMPÉTENCE en exercices — une misconception
-      n'en est pas une, et en inventer un second est ce que la règle interdit. Il attend une
-      décision : **quel lien entre une misconception et une compétence ?**
+      **Reliquat qui garde la case décochée — DÉBLOQUÉ le 2026-08-02 par A12** : le geste
+      **« m'entraîner »**. R-A1.2-6 impose de réutiliser celui d'é07 lot 4, qui résout une
+      COMPÉTENCE en exercices. La décision rendue : **un champ `competency` dans le registre des
+      misconceptions** — chaque erreur déclare la compétence qu'elle met en défaut, et le geste
+      réutilise le chemin existant sans en créer un second. Reste à exécuter (schéma + registre +
+      bouton).
       ⚠️⚠️ **LE FAIT QUI COMMANDE TOUT L'AXE, mesuré le 2026-07-31 : le corpus ne contient AUCUN
       tag de misconception.** Zéro occurrence de `misconceptionTag` sur 566 chapitres et
       ~18 700 questions ; zéro `distractor_tags` non vide dans les 17 migrations manuelles ; les
@@ -235,16 +250,16 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
       telle** (les coins gagnés ne sont pas persistés par tentative, D-5 : les sources sont
       reconstruites, le mot « estimé » est à l'écran, et là où il n'y a pas de donnée la page rend
       un tiret — jamais « 0 % d'inflation » sur une économie à l'arrêt).
-      **Lot 2 (simulateur) — BLOQUÉ par Q-1.** Ses assertions doivent vérifier les garde-fous
-      chiffrés **G-1…G-4** (niveau 5 en 7-14 j · ≤ 1 000 XP farmables/jour · puits ≥ 60 % des
-      sources · shields ≤ ~20 % des jours manqués). Ces valeurs sont des PROPOSITIONS de
-      l'architecte, jamais arbitrées : les choisir en exécutant reviendrait à décider de
-      l'équilibrage du jeu sous couvert d'outillage. **Une session qui prend F3 s'arrête ici.**
-      ⚠️ **L'étude 09 est encore au statut `brouillon`** et porte trois questions (Q-1 seuils ·
-      Q-2 cadence de revue de la page · Q-3 déclencheur du lot 3). Aucune ne bloquait le lot 1,
-      dont les décisions D-1…D-5 sont fermées — c'est ce qui l'a rendu exécutable. Le §2 de ce
-      fichier dit « plus aucun arbitrage en attente » : c'est vrai des arbitrages A1→A8, **pas des
-      questions internes des études non validées**. é09 en est la preuve.
+      **Lot 2 (simulateur) — DÉBLOQUÉ le 2026-08-02 par A9.** Les garde-fous **G-1…G-4** sont
+      ratifiés tels quels (niveau 5 en 7-14 j · ≤ 1 000 XP farmables/jour · puits ≥ 60 % des
+      sources · shields ≤ ~20 % des jours manqués), **avec statut d'hypothèses de départ** : à
+      corriger après la première lecture de la page Économie, et non à contourner en retouchant
+      `gamification.ts` pour faire passer un test. Le lot est exécutable.
+      ✅ **Les trois questions d'é09 sont tranchées** (A9, 2026-08-02) : seuils ratifiés,
+      revue **mensuelle** (hebdo inviterait au réglage réactif, RISK-2), lot 3 déclenché par la
+      **latence** déjà journalisée et non par la volumétrie. L'étude est passée `en exécution`.
+      Le piège de lecture qu'elle a révélé reste consigné au §2 : « arbitrage rendu » n'a jamais
+      voulu dire « ligne exécutable ».
       **Lot 3** : conditionnel, ne se lance que sur constat mesuré (RPC > 2 s, ou écart coins jugé
       gênant) — le seuil est journalisé par la server fn, donc observé et non deviné.
 - [x] F4. **C4 côté Mohamed — FAIT, constaté le 2026-07-27.** Le récapitulatif a été rendu en
@@ -353,6 +368,18 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
       **Vagues suivantes** (hors périmètre de ce lot) : les autres matières et les autres niveaux
       restent non tagués — la famille `math` couvre `math*`, une famille `physique`/`svt` reste à
       écrire par l'architecte avant tout tagging scientifique.
+- [ ] C4bis. **Tagging des MISCONCEPTIONS — pilote `math` 9ᵉ** _(A11 rendu le 2026-08-02)_.
+      ⚠️ **Ne pas confondre avec C4**, qui a tagué les **compétences** : ce sont deux registres
+      distincts, et celui des misconceptions est **vide d'usage** — 0 occurrence de
+      `misconceptionTag` sur ~18 700 questions, mesuré le 2026-07-31.
+      **C'est le déblocage de TOUT l'axe adaptatif** : sans lui, `user_misconceptions` reste vide
+      en prod, la correction riche (ligne 9) ne nomme aucune erreur, le terme « misconceptions »
+      de `get_daily_plan` vaut zéro, et la ligne 15 livrerait un écran vide.
+      **Périmètre arbitré : `math` 9ᵉ seulement** (557 questions, déjà tagué en compétences par
+      C4). Le pilote donne un **coût réel par question** avant d'engager `math-6eme`, et allume
+      l'écran sur la matière de concours. Deux gestes par question ratée : `misconceptionTag` sur
+      les distracteurs, et l'entrée correspondante dans `content/misconceptions.json` (5 entrées
+      aujourd'hui) — **avec son champ `competency`** (A12), sans quoi « m'entraîner » reste mort.
 - [ ] C5. **é20 lots 2 → 4 — réponses acceptées.** **Lot 2 (Tier A) livré le 2026-07-27**
       (arena#652) : l'expansion morphologique — article arabe plié dans les deux sens, articles
       fr/en, contractions — est une **fonction pure appliquée au build**, pas des variantes
@@ -429,3 +456,4 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
 | 2026-07-31 | **Ligne 9 à moitié livrée — é04 lot A1.2a (serveur) est sur `main`** (arena#689, correctif de test arena#691). `get_attempt_review` rend `misconception_tag` + `chapter_id` : la troisième boucle « collectée-jamais-surfacée » de l'étude 26 se referme côté serveur, le signal capté depuis la phase A0 cesse de n'alimenter que la télémétrie. Le stop-point D-A1.2-2 est tenu et **encodé en attaque** — trois assertions rejouent l'élimination par la map plutôt que le cas nominal. La ligne reste décochée : **A1.2b** (client) n'est pas fait. **Deux enseignements de process, qui valent au-delà de ce lot.** (1) `pgTAP suite` tourne sur les PR de migration mais **n'est pas requise** : #689 a mergé 3 minutes après son ouverture, sur les checks requis verts, avec un fichier de test rouge — la fenêtre de lecture d'un check non requis est plus courte que le temps de le lire. Sur une PR de migration, soit on rend le check requis, soit on ouvre en `wip/`. (2) La vérification locale du lot avait tourné sur des **shims pgTAP écrits pour l'occasion**, dont l'un implémentait `unlike()` — une fonction que pgTAP n'a jamais eue. Un harnais qui définit la fonction qu'il est censé valider ne valide rien : c'est la leçon d'arena#631/#635 (« une sonde ne vaut que si elle exécute le même code que le gate ») rejouée sous une autre forme. |
 | 2026-07-31 | **Ligne 9 — les deux lots livrés (A1.2a arena#689/#691, A1.2b arena#695), et un constat qui vaut plus que le lot.** A1.2b a dû **corriger D-A1.2-3**, fondée sur une surface de compilation client qui n'existe pas : les libellés passent désormais par la base, par le canal des compétences (é07), sans rien perdre de l'intention (la fonction rend un ID, le registre reste source unique, une reformulation reste une correction de registre). **Le fait majeur** : mesuré ce jour, le corpus ne contient **aucun** tag de misconception — 0 occurrence sur ~18 700 questions, 0 `distractor_tags` non vide dans les migrations manuelles, les 5 tags du registre inutilisés. Donc `user_misconceptions` est **vide en prod** depuis l'origine, le terme « misconceptions » de `get_daily_plan` vaut zéro depuis #581, et **la ligne 15 (A2.1) livrerait un écran vide**. L'étude 26 décrivait une boucle « collectée-jamais-surfacée » : elle n'était **jamais alimentée**. Le blocage de tout l'axe est du **contenu** — taguer les distracteurs, comme C4 l'a fait pour les compétences (deux registres distincts : C4 n'a PAS tagué les misconceptions). **Reliquat de la ligne 9** : le geste « m'entraîner », suspendu à la décision « quel lien misconception → compétence ». |
 | 2026-08-01 | **F3 — é09 lot 1 livré** (arena#703) : la console « Économie » mesure enfin ce que la courbe XP/coins produit en vrai. Vérifié en exécution réelle sur PostgreSQL 16, sur des scores choisis pour être contrôlables de tête (100 XP à 80 % → 20 coins, à 45 % → 10, à 30 % → 0 : le RPC rend 30.00). **Le lot 2 est bloqué par Q-1** — les garde-fous G-1…G-4 n'ont jamais été arbitrés, et les choisir en exécutant serait décider de l'équilibrage sous couvert d'outillage. **Constat de méthode qui dépasse é09** : le §2 affirme « plus aucun arbitrage humain n'est en attente ». C'est vrai des arbitrages A1→A8 ; ce n'est PAS vrai des questions internes des études restées en `brouillon`. Une session qui lit le §2 littéralement croit toute ligne exécutable de bout en bout — é09 montre que non. À vérifier étude par étude avant de prendre une ligne. |
+| 2026-08-02 | **Session d'arbitrages — A9→A14 rendus** (Mohamed). Les questions internes des études 04 et 09 sont vidées, et trois décisions de fond tranchées. **Ce qui se débloque** : é09 lot 2 (le simulateur a enfin des seuils opposables, ratifiés comme **hypothèses de départ** — un seuil que le simulateur fait sauter au premier run a probablement tort lui-même, on ne retouche pas `gamification.ts` pour faire passer un test) · le geste « m'entraîner » de la ligne 9 (**un champ `competency` dans le registre des misconceptions**, qui réutilise le chemin d'é07 lot 4 au lieu d'en créer un second) · **C4bis**, le pilote de tagging des misconceptions sur `math` 9ᵉ — le déblocage de tout l'axe adaptatif, volontairement limité à une matière pour obtenir un coût réel par question avant d'engager une vague. **Deux décisions de posture** : `pgTAP suite` devient **requis** sur les PR de migration (#689 a mergé rouge en trois minutes : la fenêtre de lecture était plus courte que le temps de lire) · **pas** de garde-fou de volumétrie des registres, la purge étant déjà gardée là où le dégât se produit (arena#702). **Correction de lecture consignée au §2** : « arbitrage rendu » n'a jamais voulu dire « ligne exécutable » — il faut aussi lire le statut de l'étude. |
