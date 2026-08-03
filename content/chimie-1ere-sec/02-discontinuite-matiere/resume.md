@@ -1,0 +1,8 @@
+# 📜 Résumé : Discontinuité de la matière
+
+- **La matière est divisible, très largement.** Les roches broyées au concasseur donnent le gravier, l'érosion donne le sable ; le pulvérisateur divise le parfum en gouttelettes ; l'éther qui s'évapore se disperse en particules invisibles que l'odorat détecte.
+- **Mais la divisibilité est limitée.** Les divisions successives aboutissent à des grains très petits, identiques pour un même corps pur, les **molécules** : on dit que **la matière est discontinue**. Presque tous les gaz, la plupart des liquides et quelques solides (sucre, glace) sont formés de molécules.
+- **Les molécules ne sont pas toutes identiques.** Une bûchette incandescente se rallume dans le **dioxygène** et s'éteint dans le **dioxyde de carbone** : les molécules de ces deux gaz diffèrent. **Des molécules identiques constituent un corps pur ; des molécules différentes constituent un mélange.**
+- **Ordres de grandeur.** Dimension : quelques **Angström**, avec **1 Å = 10⁻¹⁰ m** (cheveu agrandi 2600 fois → épaisseur réelle 13,5 × 10⁻⁶ m, couverte par 135 000 molécules alignées). Masse : environ **10⁻²⁶ kg** (goutte de 0,02 g contenant 6,66 × 10²⁰ molécules → 3 × 10⁻²³ g, soit 3 × 10⁻²⁶ kg).
+- **Structures moléculaires des trois états.** **Solide** : condensée et **ordonnée** (positions fixes, forme propre). **Liquide** : condensée et **désordonnée** (molécules au contact, mouvement désordonné, pas de forme propre). **Gaz** : **non condensée** et désordonnée (molécules éloignées, sans interaction notable, expansible).
+- **⚠️ À ne pas confondre.** « Condensé » dit que les molécules se touchent ; « ordonné » dit qu'elles occupent des positions fixes. Le liquide est condensé **sans** être ordonné.

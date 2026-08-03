@@ -1,0 +1,82 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Ordres de grandeur et structures",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "2 g de dihydrogène contiennent environ 6 × 10²³ molécules. En les plaçant côte à côte, chacune occupant 10⁻¹⁰ m, quelle est la longueur de la file obtenue ?",
+      "options": [
+        { "id": "a", "text": "6 × 10¹³ m" },
+        { "id": "b", "text": "6 × 10³³ m" },
+        { "id": "c", "text": "6 × 10²³ m" },
+        { "id": "d", "text": "6 × 10⁻¹³ m" }
+      ],
+      "correctOption": "a",
+      "explanation": "La longueur est le produit du nombre de molécules par la dimension de chacune : (6 × 10²³) × 10⁻¹⁰ = 6 × 10¹³ m ✓. Obtenir 10³³ revient à additionner les exposants au lieu de tenir compte du signe négatif. Garder 10²³ revient à oublier purement et simplement la dimension. Et un résultat négatif en exposant donnerait une file plus courte qu'une seule molécule, ce qui n'a pas de sens.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Cette file de molécules mesure 6 × 10¹³ m. Combien de fois ferait-elle le tour de la Terre le long de l'équateur, long de 40 000 km ?",
+      "options": [
+        { "id": "a", "text": "Environ 1,5 × 10⁶ fois" },
+        { "id": "b", "text": "Environ 1,5 × 10³ fois" },
+        { "id": "c", "text": "Environ 1,5 × 10⁹ fois" },
+        { "id": "d", "text": "Environ 15 fois" }
+      ],
+      "correctOption": "a",
+      "explanation": "Il faut d'abord convertir l'équateur en mètres : 40 000 km = 4 × 10⁷ m. Le quotient vaut alors (6 × 10¹³) ÷ (4 × 10⁷) = 1,5 × 10⁶, soit environ 1,5 million de tours ✓ — valeur exacte ici, aucun arrondi n'a été nécessaire. Trouver 10³ ou 10⁹ trahit une erreur d'exposant lors de la division. Et quinze tours seulement reviendrait à oublier la conversion des kilomètres en mètres.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un gaz est compressible : enfermé dans une seringue bouchée, il occupe un volume plus réduit quand on pousse le piston. Quelle interprétation microscopique convient ?",
+      "options": [
+        { "id": "a", "text": "Ses molécules sont éloignées : on réduit les distances" },
+        { "id": "b", "text": "Ses molécules deviennent plus petites sous la poussée" },
+        { "id": "c", "text": "Une partie de ses molécules disparaît" },
+        { "id": "d", "text": "Ses molécules se rangent en positions fixes" }
+      ],
+      "correctOption": "a",
+      "explanation": "Un gaz a une structure non condensée : de grands espaces séparent ses molécules, et comprimer revient à réduire ces distances ✓. Les molécules elles-mêmes ne changent pas de taille, quelle que soit la pression. Aucune ne disparaît : la masse enfermée reste la même. Et prendre des positions fixes ferait du gaz un solide, ce que la compression seule ne produit pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une gouttelette d'eau d'un nuage a un volume de 4,19 × 10⁻¹⁵ cm³. Sachant que 1 cm³ d'eau a une masse de 1 g et que 18 g d'eau contiennent environ 6 × 10²³ molécules, combien de molécules contient-elle ?",
+      "options": [
+        { "id": "a", "text": "Environ 1,4 × 10⁸ molécules" },
+        { "id": "b", "text": "Environ 1,4 × 10⁻⁸ molécule" },
+        { "id": "c", "text": "Environ 2,3 × 10¹⁶ molécules" },
+        { "id": "d", "text": "Environ 6 × 10²³ molécules" }
+      ],
+      "correctOption": "a",
+      "explanation": "La masse de la gouttelette vaut 4,19 × 10⁻¹⁵ g, puisque 1 cm³ pèse 1 g. Le nombre de molécules s'obtient par proportionnalité : (4,19 × 10⁻¹⁵ ÷ 18) × 6 × 10²³ = 1,397 × 10⁸, arrondi à 1,4 × 10⁸ molécules ✓. Un exposant négatif donnerait moins d'une molécule, ce qui est absurde pour une gouttelette visible. La valeur 2,3 × 10¹⁶ s'obtient en oubliant de multiplier par 6 × 10²³. Et 6 × 10²³ est le nombre de molécules de 18 g d'eau, pas de la gouttelette.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un corps possède une forme propre et ne coule pas. Que peut-on affirmer de ses molécules ?",
+      "options": [
+        { "id": "a", "text": "Elles occupent des positions fixes" },
+        { "id": "b", "text": "Elles sont très éloignées les unes des autres" },
+        { "id": "c", "text": "Elles n'interagissent pratiquement pas" },
+        { "id": "d", "text": "Elles se déplacent de façon désordonnée" }
+      ],
+      "correctOption": "a",
+      "explanation": "Forme propre et absence d'écoulement signent la structure condensée et ordonnée du solide : les molécules sont au contact et occupent des positions fixes ✓. Être très éloignées, ou ne pratiquement pas interagir, décrit le gaz, qui n'a précisément aucune forme propre. Et un mouvement désordonné caractérise aussi bien le liquide que le gaz — c'est justement ce qui leur interdit d'avoir une forme propre.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "En divisant de l'eau de mer jusqu'à la limite, obtiendrait-on des molécules toutes identiques ?",
+      "options": [
+        { "id": "a", "text": "Non : l'eau de mer est un mélange" },
+        { "id": "b", "text": "Oui : elle est homogène à l'œil nu" },
+        { "id": "c", "text": "Oui : toute matière donne les mêmes molécules" },
+        { "id": "d", "text": "Non : la division ne s'arrête jamais" }
+      ],
+      "correctOption": "a",
+      "explanation": "L'eau de mer contient de l'eau et des sels dissous : ce sont des molécules différentes, donc un mélange ✓ — des molécules identiques ne se rencontrent que dans un corps pur. Être homogène ne dit rien de plus que « l'œil n'y distingue rien » ; c'est vrai de l'eau de mer, et pourtant elle reste un mélange. Toute matière ne donne évidemment pas les mêmes molécules : le dioxygène et le dioxyde de carbone en sont la preuve. Et la division s'arrête bel et bien, puisque la matière est discontinue.",
+      "difficulty": 3
+    }
+  ]
+}
