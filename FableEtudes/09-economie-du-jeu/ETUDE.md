@@ -133,9 +133,13 @@ lots 1–2 ; `npm run verify` inchangé.
 - **RISK-4 — Vues lentes quand le volume monte.** Mitigation : log de durée (D-5/observabilité) +
   Lot 3 conditionnel déjà spécifié (snapshot journalier additive).
 
-## 7. Questions ouvertes (pour l'humain)
+## 7. Questions — TOUTES TRANCHÉES le 2026-08-02 (Mohamed)
 
-- **Q-1 — Garde-fous chiffrés à valider** (valeurs proposées, assertions du Lot 2) :
+> Les trois questions de cette étude sont rendues. **Le lot 2 est débloqué** : ses assertions ont
+> désormais des seuils opposables, et non des propositions.
+
+- **Q-1 — Garde-fous chiffrés : ✅ RATIFIÉS TELS QUELS**, avec un statut explicite d'**hypothèses
+  de départ**. Les quatre valeurs deviennent les assertions du lot 2 :
   **G-1** le persona _moyen_ atteint le niveau 5 (1 000 XP) en **7–14 jours** — plus tôt = courbe
   trop rapide, plus tard = décourageant ; **G-2** aucun jour simulé (même _assidu_ optimal) ne
   dépasse **1 000 XP farmables/jour** (l'anti-farm `improved`/`tooFast`/60 % doit borner) ;
@@ -143,10 +147,18 @@ lots 1–2 ; `npm run verify` inchangé.
   inflation : la boutique ne draine pas) ; **G-4** le streak shield ne rend pas la streak
   triviale : sur 8 semaines, le persona moyen ne peut pas couvrir plus de **~20 %** de ses jours
   manqués via shields (borné par leur coût en coins).
-- **Q-2 — Cadence de revue humaine** de la page Économie : mensuelle (proposé) ou hebdo pendant
-  les 2 premiers mois post-lancement ?
-- **Q-3 — Seuil de déclenchement du Lot 3** : les 2 s de latence RPC proposées conviennent-elles,
-  ou préférer un déclenchement purement volumétrique (ex. > 50 k attempts) ?
+  ⚠️ **Ce sont des hypothèses, pas des vérités mesurées** — aucune donnée réelle ne les a encore
+  confrontées. Elles sont à **corriger après la première lecture de la page Économie** (lot 1,
+  livrée). Un seuil que le simulateur fait sauter dès le premier run est probablement le seuil
+  qui a tort, pas l'économie : le dire ici évite qu'une session suivante retouche `gamification.ts`
+  pour faire passer un test.
+- **Q-2 — Cadence de revue : ✅ MENSUELLE.** Une revue hebdomadaire invite au réglage réactif, que
+  RISK-2 identifie comme le danger principal de l'outil : on retouche une constante sur le bruit
+  d'une semaine. Mensuel laisse le temps à un signal d'exister.
+- **Q-3 — Déclencheur du lot 3 : ✅ LA LATENCE** (RPC > 2 s), pas la volumétrie. Le seuil est déjà
+  **instrumenté et journalisé** par `economy.server.ts` (lot 1) : c'est donc un symptôme observé,
+  pas un nombre deviné. Un seuil volumétrique (« > 50 k attempts ») demanderait de deviner à
+  quelle taille les vues deviennent lentes — or c'est exactement ce que la latence mesure.
 
 ## 8. Journal d'exécution
 
