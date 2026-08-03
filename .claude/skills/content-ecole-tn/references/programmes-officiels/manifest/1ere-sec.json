@@ -2,7 +2,7 @@
   "grade": "1ere-sec",
   "sealed": false,
   "source": "CNP — programme national 1ère année de l'enseignement secondaire (tronc commun). Manuels élèves OFFICIELS CNP : Mathématiques (222104P01/P02, auteurs Mcharek/Mhamdi/Klila/Ben Youssef) ; Sciences Physiques (222105P01/P02) ; SVT (225104P00, « Sciences de la Vie et de la Terre — 1ère année de l'enseignement secondaire », 199 p., auteurs Abid/Chebbi/Guermazi/Smaoui) [no guide enseignant au corpus]. Transcriptions sous programme/1ere-sec/.",
-  "note": "sealed=false. MVP 2026 : mathématiques + sciences-physiques (électricité/thermodynamique/optique/mécanique, hors chimie). Chimie (chapitres du tome 2 sciences physiques) → PR séparé. Statut : chapitres 1–16 (mathématiques, intégralité), 2–17 (sciences-physiques, 1 pilote omis) transcrits à profondeur complète. SVT : 8 chapitres (3 parties du manuel — production végétale, microbes et santé, environnement géologique) transcrits à profondeur de génération le 2026-07-16 ; le mapping manuel↔pages par chapitre vit dans §4 de programme/1ere-sec/svt.md (le schéma du manifeste ne porte pas de champ manuel — il alimente chapter.manuel du content au lot de génération).",
+  "note": "sealed=false. MVP 2026 : mathématiques + sciences-physiques (électricité/thermodynamique/optique/mécanique, hors chimie). Chimie (chapitres du tome 2 sciences physiques) → PR séparé. Statut : chapitres 1–16 (mathématiques, intégralité), 2–17 (sciences-physiques, 1 pilote omis) transcrits à profondeur complète. SVT : 8 chapitres (3 parties du manuel — production végétale, microbes et santé, environnement géologique) transcrits à profondeur de génération le 2026-07-16 ; le mapping manuel↔pages par chapitre vit dans §4 de programme/1ere-sec/svt.md (le schéma du manifeste ne porte pas de champ manuel — il alimente chapter.manuel du content au lot de génération). FRANÇAIS : 7 chapitres = les 7 modules du manuel « Communiquer en français » (221104P00, 224 p.), unité structurante de l'ouvrage (fiche §Incertitudes, unitCount = 7) ; chaque module associe un thème, une dominante de discours et son Point-Grammaire, et le mapping module↔pages vit dans la notion de chaque chapitre. Aucun module n'est un atelier d'oral isolé (l'Oral y est une rubrique parmi six), donc aucun chapitre optionnel.",
   "subjects": [
     {
       "id": "arabe-1ere-sec",
@@ -290,6 +290,41 @@
         { "slug": "32-geo-tasahhur", "notion": "تدهور الأوساط الطّبيعية : مثال التّصحّر" },
         { "slug": "33-geo-tadahwur-ghabi", "notion": "تدهور وسط غابي : مثال الغابة المتوسّطيّة" },
         { "slug": "34-geo-ta3riyat-sawahil", "notion": "تدهور الأوساط الطّبيعية : تعرية السّواحل" }
+      ]
+    },
+    {
+      "id": "french-1ere-sec",
+      "name": "Français",
+      "contentLanguage": "fr",
+      "chapters": [
+        {
+          "slug": "01-recit-et-temps-du-recit",
+          "notion": "Module 1 « Rencontres » — lire des récits de fiction, raconter ; présent et passé composé, temps du récit, subordonnée circonstancielle de temps (p. 12-42)"
+        },
+        {
+          "slug": "02-description-et-expansions-du-nom",
+          "notion": "Module 2 « Scènes de la vie en France » — décrire un site, une scène ; expansions du nom, verbes attributifs et attribut, nominalisation (p. 44-75)"
+        },
+        {
+          "slug": "03-dialogue-et-discours-rapporte",
+          "notion": "Module 3 « Jeunesse sans frontières » — dialoguer, écrire une lettre ; temps du discours, interrogation, discours rapporté (p. 76-107)"
+        },
+        {
+          "slug": "04-publicite-et-prise-de-position",
+          "notion": "Module 4 « La société de consommation » — lire un message publicitaire, prendre position ; accords (adjectif, participe passé), valeurs des modes, substituts lexicaux et grammaticaux (p. 108-143)"
+        },
+        {
+          "slug": "05-cause-consequence-et-but",
+          "notion": "Module 5 « Sauvons la planète Terre » — défendre une cause, expliquer et prescrire ; expression de la cause, de la conséquence et du but (p. 144-173)"
+        },
+        {
+          "slug": "06-oeuvre-integrale-la-nouvelle",
+          "notion": "Module 6 « Passions » — lire une œuvre intégrale (la nouvelle) et rendre compte de sa lecture ; composantes du récit, fiches de lecture (p. 174-190)"
+        },
+        {
+          "slug": "07-argumentation-nuancee",
+          "notion": "Module 7 « Progrès et bonheur » — regard critique sur la science, prise de position nuancée ; opposition et concession, condition et hypothèse, dénotation/connotation, humour et ironie (p. 192-221)"
+        }
       ]
     }
   ]
