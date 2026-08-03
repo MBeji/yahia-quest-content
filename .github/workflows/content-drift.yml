@@ -120,42 +120,76 @@ jobs:
           : > stale.md
           NB=0
 
-          # Les sujets sont les dossiers de content/. `competences` n'en est pas
-          # un : il alimente le registre, journalisé sous `_competences_registry`.
+          # Le nom du DOSSIER n'est pas l'identifiant en base, et les confondre
+          # produit un faux positif éternel — constaté au deuxième passage réel de
+          # cette garde, qui signalait `math-2eme-sec-sciences-info` « jamais
+          # publié » juste après une application intégrale du corpus. Trois cas :
+          #  - `competences` n'est pas un sujet : il alimente le registre,
+          #    journalisé sous `_competences_registry` ;
+          #  - `compileTo` : un dossier source peut compiler vers PLUSIEURS
+          #    sujets — deux sections qui partagent un programme. Le SQL, et donc
+          #    `content_releases`, porte ces ids-là, jamais le nom du dossier ;
+          #  - sinon l'`id` déclaré dans subject.json, qui fait foi.
+          # On compare slug par slug, mais toujours sur les fichiers du dossier
+          # source : c'est lui qui bouge, et il alimente tous ses slugs.
           for dir in content/*/; do
             SUBJECT="$(basename "${dir}")"
-            SLUG="${SUBJECT}"
-            if [ "${SUBJECT}" = "competences" ]; then SLUG="_competences_registry"; fi
 
-            LINE="$(grep -m1 "^${SLUG}|" releases.txt || true)"
-
-            if [ -z "${LINE}" ]; then
-              NB=$((NB + 1))
-              printf '| `%s` | **jamais publié** | tout le sujet |\n' "${SUBJECT}" >> stale.md
-              continue
+            if [ "${SUBJECT}" = "competences" ]; then
+              SLUGS="_competences_registry"
+            elif [ -f "${dir}subject.json" ]; then
+              # node plutôt que jq : préinstallé sur le runner comme jq, mais
+              # c'est déjà l'outil de la chaîne de contenu — et il se rejoue à
+              # l'identique en local, ce qui a permis de tester ce bloc.
+              SLUGS="$(node -e '
+                const j = JSON.parse(require("fs").readFileSync(process.argv[1], "utf8"));
+                const cibles = (j.compileTo || []).map((c) => c.id).filter(Boolean);
+                process.stdout.write((cibles.length ? cibles : [j.id].filter(Boolean)).join("\n"));
+              ' "${dir}subject.json")"
+              [ -n "${SLUGS}" ] || SLUGS="${SUBJECT}"
+            else
+              SLUGS="${SUBJECT}"
             fi
 
-            SHA="$(printf '%s' "${LINE}" | cut -d'|' -f2)"
-            LE="$(printf '%s' "${LINE}" | cut -d'|' -f3)"
+            for SLUG in ${SLUGS}; do
+              # Le slug est ce qu'on passe à `subjects:` ; on rappelle le dossier
+              # quand il en diffère, sinon la ligne est introuvable dans le dépôt.
+              NOM="\`${SLUG}\`"
+              if [ "${SLUG}" != "${SUBJECT}" ]; then
+                NOM="\`${SLUG}\` (dossier \`${SUBJECT}\`)"
+              fi
 
-            # Le SHA journalisé peut être introuvable : publication depuis une ref
-            # réécrite, ou historique tronqué. On le dit plutôt que de conclure.
-            if ! git cat-file -e "${SHA}^{commit}" 2>/dev/null; then
-              NB=$((NB + 1))
-              printf '| `%s` | %s (`%s` introuvable) | indéterminé — republier par sûreté |\n' \
-                "${SUBJECT}" "${LE}" "${SHA}" >> stale.md
-              continue
-            fi
+              LINE="$(grep -m1 "^${SLUG}|" releases.txt || true)"
 
-            N="$(git rev-list --count "${SHA}..HEAD" -- "content/${SUBJECT}" 2>/dev/null || echo 0)"
-            if [ "${N}" -gt 0 ]; then
-              NB=$((NB + 1))
-              # Le `|` d'un message de commit casserait la colonne du tableau.
-              DERNIER="$(git log -1 --format='%h %s' "${SHA}..HEAD" -- "content/${SUBJECT}" \
-                         | tr '|' '/' | cut -c1-90)"
-              printf '| `%s` | %s (`%s`) | %s commit(s), dernier : %s |\n' \
-                "${SUBJECT}" "${LE}" "$(printf '%s' "${SHA}" | cut -c1-7)" "${N}" "${DERNIER}" >> stale.md
-            fi
+              if [ -z "${LINE}" ]; then
+                NB=$((NB + 1))
+                printf '| %s | **jamais publié** | tout le sujet |\n' "${NOM}" >> stale.md
+                continue
+              fi
+
+              SHA="$(printf '%s' "${LINE}" | cut -d'|' -f2)"
+              LE="$(printf '%s' "${LINE}" | cut -d'|' -f3)"
+
+              # Le SHA journalisé peut être introuvable : publication depuis une
+              # ref réécrite, ou historique tronqué. On le dit plutôt que de
+              # conclure.
+              if ! git cat-file -e "${SHA}^{commit}" 2>/dev/null; then
+                NB=$((NB + 1))
+                printf '| %s | %s (`%s` introuvable) | indéterminé — republier par sûreté |\n' \
+                  "${NOM}" "${LE}" "${SHA}" >> stale.md
+                continue
+              fi
+
+              N="$(git rev-list --count "${SHA}..HEAD" -- "content/${SUBJECT}" 2>/dev/null || echo 0)"
+              if [ "${N}" -gt 0 ]; then
+                NB=$((NB + 1))
+                # Le `|` d'un message de commit casserait la colonne du tableau.
+                DERNIER="$(git log -1 --format='%h %s' "${SHA}..HEAD" -- "content/${SUBJECT}" \
+                           | tr '|' '/' | cut -c1-90)"
+                printf '| %s | %s (`%s`) | %s commit(s), dernier : %s |\n' \
+                  "${NOM}" "${LE}" "$(printf '%s' "${SHA}" | cut -c1-7)" "${N}" "${DERNIER}" >> stale.md
+              fi
+            done
           done
 
           echo "nb=${NB}" >> "$GITHUB_OUTPUT"
