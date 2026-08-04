@@ -852,3 +852,51 @@ Cases à cocher :
   SQL SECURITY DEFINER que Vitest ne peut pas couvrir » : ce filet est à terre depuis des
   jours, et un nightly rouge en permanence n'alerte plus personne. C'est ce qui a permis aux
   régressions de la scission de passer inaperçues.
+
+- **2026-08-03 — le désarmement du lot 3a avait un angle mort : rien ne disait qu'un merge
+  n'était pas publié.** Le déclencheur automatique de `apply-content.yml` a été volontairement
+  désarmé (§ lot 3a, 2026-07-19) pour qu'aucun merge ne puisse appliquer du contenu. La
+  contrepartie n'avait pas été outillée : une PR de contenu mergée n'est pas en prod, et **aucun
+  signal ne le dit** — ni la CI verte, ni la chaîne d'automerge, ni `content_releases`, qui ne
+  sait que ce qui a été appliqué, jamais ce qui manque. Le trou se referme sur un geste humain
+  dont rien ne rappelle l'existence.
+
+  **Ce que ça a coûté.** Le 2026-08-01, une application de `math-bac-math` a tourné à 19:11:44
+  UTC depuis `891c864` ; la PR #104, qui levait quatre doublons du chapitre 19, a été mergée à
+  19:27:18 en `67e3dd7`. **Seize minutes**, et la prod a servi le contenu périmé deux jours. Les
+  six applications suivantes portaient sur une autre matière, si bien que « il y a eu des
+  publications récentes » ne prouvait rien : il fallait comparer à la main le SHA de chaque run
+  au SHA du merge. Ce n'était pas un accident isolé — au premier passage de la garde ci-dessous,
+  **23 sujets** étaient en retard, dont `0e17aab` (« les explications citent la valeur de
+  l'option, pas sa lettre »), correctif transverse mergé le 29 juillet et jamais publié sur une
+  dizaine de matières.
+
+  **Ce qui a été livré** (PR privées #112 puis #116) : `content-drift.yml`, garde en **lecture
+  seule** qui lit `content_releases` (dernier `git_sha` par sujet) et le compare à `main` par un
+  `git rev-list <sha>..HEAD -- content/<dossier>`. Elle tient **une** issue `content-drift`
+  ouverte tant qu'un sujet est en retard et la referme d'elle-même — mécanique de
+  `video-health.yml`, déjà l'idiome maison. Déclenchée à chaque push sur `main` touchant
+  `content/` (signal immédiat) et chaque jour à 06:40 UTC (rattrape le cas ci-dessus, une
+  publication faite depuis un SHA antérieur au correctif). Pas de run rouge : faire clignoter
+  `main` n'apprend rien, une issue ouverte survit à l'onglet Actions. Cycle complet vérifié en
+  production le 2026-08-03 : ouverture (23 sujets), mises à jour (23 → 2 → 1), clôture
+  automatique (0). L'arriéré a été vidé — corpus complet, run 30819985947, 49 min, backup
+  préalable et vérification en base vertes — puis `chimie-1ere-sec`, qui avait été mergé
+  *pendant* cette application, exactement la course d'origine.
+
+  **Un piège pour qui reprendra ce fichier** : le nom du dossier de `content/` **n'est pas**
+  l'identifiant en base. `compileTo` fait compiler un dossier source vers PLUSIEURS sujets quand
+  deux sections partagent un programme (`math-2eme-sec-sciences-info` → `math-2eme-sec-sciences`
+  + `math-2eme-sec-info`), et c'est sous ces ids-là que le SQL est émis puis journalisé. La
+  première version de la garde confondait les deux et signalait ce dossier « jamais publié »
+  juste après une application intégrale — un faux positif **éternel**, que rien n'aurait pu
+  refermer, et qui aurait suffi à faire ignorer la garde en quelques semaines. Corrigé par #116 :
+  la résolution passe par `subject.json`, chaque slug suivi séparément.
+
+  **Ce que cette garde ne fait pas, et pourquoi.** Elle n'applique rien, n'écrit rien en base, et
+  **ne touche pas au désarmement** : armer le déclencheur automatique reste du ressort du lot 3b,
+  après répétition intégrale sur TEST et arbitrage du §4.3. Une garde ne re-designe pas le canal
+  qu'elle surveille (règle d'exécution n° 3). Elle rend visible le geste manquant — elle ne le
+  fait pas à la place de quelqu'un, et le risque résiduel reste entier : entre un merge et le
+  passage suivant de la garde, la prod est en retard sans que personne ne le sache. **C'est ce
+  risque-là, et non la visibilité, que le lot 3b supprimerait.**
