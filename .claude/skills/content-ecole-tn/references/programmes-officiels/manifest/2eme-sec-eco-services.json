@@ -1,94 +1,11 @@
 {
-  "grade": "2eme-sec-info",
+  "grade": "2eme-sec-eco-services",
   "sealed": false,
-  "source": "CNP — programme national 2ème année secondaire, section Technologies de l'informatique. Manuel de mathématiques : « الرياضيات — شعبتا العلوم وتكنولوجيا الإعلامية » (222231 tome 1, 222232 tome 2) — le MÊME manuel officiel que la section Sciences, son titre nommant les deux sections. Le scope est donc porté par la fiche `programme/2eme-sec-sciences/mathematiques.md` (R-4 : un code source, une seule fiche), et le contenu est mutualisé par `compileTo` (étude 16 D-4). || Français : manuel élève OFFICIEL CNP « Le français en situation — 2e année de l'Enseignement Secondaire » (221203P00.pdf, 288 p. ; auteurs Mansouri/ben Zineb-Zitouni/Souab/Kheder-Ben Salem ; pas de guide enseignant au corpus, le manuel élève fait donc référence). Le manuel ne nomme AUCUNE شعبة et dessert les quatre orientations de 2ème sec : le contenu est écrit une fois sous content/french-2eme-sec/ et compilé vers un sujet par orientation (compileTo, étude 16 D-4). Transcription sous programme/2eme-sec/francais.md — LA fiche qui revendique le code 221203 (R-4).",
-  "note": "sealed=false. Seul le chapitrage de mathématiques est codifié, à l'identique de 2eme-sec-sciences : c'est le même manuel, le même programme, les mêmes 19 chapitres — d'où le sujet compilé `math-2eme-sec-info`, produit par `compileTo` depuis le sujet physique partagé, sans retranscription ni duplication de contenu. Les autres matières de la section ne sont PAS encore codifiées et sont donc rapportées manquantes : الفيزياء (223272) et الكيمياء (224271), tous deux propres à la section, et surtout « Technologie — Manuel d'activités » (228233, 3 tomes), la matière emblématique de la filière, qui demandera son propre LOT A. Ouverture de la classe décidée le 2026-07-30 sur les mathématiques (R-8 : la première tranche ouvre, on n'attend pas la matière complète) ; la technologie s'ajoutera sous un parcours déjà visible. ▸ FRANÇAIS (ajouté le 2026-08-04) : chapitrage COMPLET codifié — 18 chapitres = les 18 SÉQUENCES du manuel, l'unité de compétence que la préface déclare elle-même (p. 3 : « La répartition d'un même module en plusieurs séquences — trois ou quatre — permet de mieux cerner les capacités et les compétences à développer »). Chaque séquence porte exactement un objectif de vocabulaire, un de grammaire et un d'expression écrite ; un chapitre = un module en cumulerait trois à quatre de chaque et rendrait le cours superficiel. Le 19e chapitre (nouvelles en lecture suivie) est `optional: true` : les deux nouvelles n'ont aucun appareil de rubriques, et « La reine de beauté » (S. Prou, 1920-1995) est sous droits, donc non servable à l'élève (R-2). ⚠️ La fiche est PARTIELLE au 2026-08-04 : seul le chapitre 01 (p. 7-19) est transcrit à profondeur de génération ; les chapitres 02-18 n'ont que leur scope (texte d'étude, bornes de pages, intitulés d'objectifs) et NE sont PAS générables — cf. programme/2eme-sec/francais.md §6 et suivi/2eme-sec.json (`chapitresGeneration`), LA source de vérité de la couverture. Cause : session de campagne interrompue par la limite d'usage du compte, arrêt propre au dernier palier poussable (T-10).",
+  "source": "CNP — programme national 2ème année secondaire, orientation Économie et services. Français : manuel élève OFFICIEL CNP « Le français en situation — 2e année de l'Enseignement Secondaire » (221203P00.pdf, 288 p. ; auteurs Mansouri/ben Zineb-Zitouni/Souab/Kheder-Ben Salem ; pas de guide enseignant au corpus, le manuel élève fait donc référence). Le manuel ne nomme AUCUNE شعبة et dessert les quatre orientations de 2ème sec : le contenu est écrit une fois sous content/french-2eme-sec/ et compilé vers un sujet par orientation (compileTo, étude 16 D-4). Transcription sous programme/2eme-sec/francais.md — LA fiche qui revendique le code 221203 (R-4).",
+  "note": "sealed=false. Manifeste CRÉÉ le 2026-08-04 : cette orientation n'en avait aucun. Seul le français y est codifié pour l'instant — c'est une matière du TRONC, partagée par les quatre orientations. Les matières propres à la filière (mathématiques 222261, économie et gestion 229262, et le groupe {Lettres, Éco-services} pour l'histoire 207202 et la géographie 206203) ne sont PAS encore codifiées et sont donc rapportées manquantes : chacune demandera son propre LOT A. ▸ FRANÇAIS (ajouté le 2026-08-04) : chapitrage COMPLET codifié — 18 chapitres = les 18 SÉQUENCES du manuel, l'unité de compétence que la préface déclare elle-même (p. 3 : « La répartition d'un même module en plusieurs séquences — trois ou quatre — permet de mieux cerner les capacités et les compétences à développer »). Chaque séquence porte exactement un objectif de vocabulaire, un de grammaire et un d'expression écrite ; un chapitre = un module en cumulerait trois à quatre de chaque et rendrait le cours superficiel. Le 19e chapitre (nouvelles en lecture suivie) est `optional: true` : les deux nouvelles n'ont aucun appareil de rubriques, et « La reine de beauté » (S. Prou, 1920-1995) est sous droits, donc non servable à l'élève (R-2). ⚠️ La fiche est PARTIELLE au 2026-08-04 : seul le chapitre 01 (p. 7-19) est transcrit à profondeur de génération ; les chapitres 02-18 n'ont que leur scope (texte d'étude, bornes de pages, intitulés d'objectifs) et NE sont PAS générables — cf. programme/2eme-sec/francais.md §6 et suivi/2eme-sec.json (`chapitresGeneration`), LA source de vérité de la couverture. Cause : session de campagne interrompue par la limite d'usage du compte, arrêt propre au dernier palier poussable (T-10).",
   "subjects": [
     {
-      "id": "math-2eme-sec-info",
-      "name": "Mathématiques",
-      "contentLanguage": "fr",
-      "chapters": [
-        {
-          "slug": "01-calcul-dans-r",
-          "notion": "Calcul dans ℝ"
-        },
-        {
-          "slug": "02-problemes-premier-second-degre",
-          "notion": "Problèmes du 1er degré et du 2nd degré (équations & inéquations du 2nd degré)"
-        },
-        {
-          "slug": "03-notion-polynomes",
-          "notion": "Notion de polynômes"
-        },
-        {
-          "slug": "04-arithmetique",
-          "notion": "Arithmétique"
-        },
-        {
-          "slug": "05-calcul-vectoriel",
-          "notion": "Calcul vectoriel"
-        },
-        {
-          "slug": "06-barycentre",
-          "notion": "Barycentre"
-        },
-        {
-          "slug": "07-translations",
-          "notion": "Translations"
-        },
-        {
-          "slug": "08-homotheties",
-          "notion": "Homothéties"
-        },
-        {
-          "slug": "09-rotations",
-          "notion": "Rotations"
-        },
-        {
-          "slug": "10-suites-arithmetiques",
-          "notion": "Suites arithmétiques"
-        },
-        {
-          "slug": "11-suites-geometriques",
-          "notion": "Suites géométriques"
-        },
-        {
-          "slug": "12-generalites-fonctions",
-          "notion": "Généralités sur les fonctions"
-        },
-        {
-          "slug": "13-fonctions-de-reference",
-          "notion": "Fonctions de référence"
-        },
-        {
-          "slug": "14-trigonometrie",
-          "notion": "Trigonométrie et mesure des grandeurs"
-        },
-        {
-          "slug": "15-geometrie-analytique",
-          "notion": "Géométrie analytique"
-        },
-        {
-          "slug": "16-droites-plans-espace",
-          "notion": "Droites et plans de l'espace"
-        },
-        {
-          "slug": "17-parallelisme-espace",
-          "notion": "Parallélisme dans l'espace"
-        },
-        {
-          "slug": "18-orthogonalite-espace",
-          "notion": "Orthogonalité dans l'espace"
-        },
-        {
-          "slug": "19-statistiques",
-          "notion": "Statistiques"
-        }
-      ]
-    },
-    {
-      "id": "french-2eme-sec-info",
+      "id": "french-2eme-sec-eco-services",
       "name": "Français",
       "contentLanguage": "fr",
       "chapters": [
