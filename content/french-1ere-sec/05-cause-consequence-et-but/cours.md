@@ -63,9 +63,10 @@ Dans la phrase complexe, la subordonnée de conséquence est **toujours placée 
 | Cas                                     | Introducteurs                                          | Mode                  | Exemple                                              |
 | --------------------------------------- | ------------------------------------------------------ | --------------------- | ---------------------------------------------------- |
 | conséquence **sans degré d'intensité**  | de sorte que, **si bien que**, de façon que            | **indicatif**         | « Il a raté son train, si bien qu'il est arrivé en retard. » |
-| conséquence **sans degré d'intensité**  | pour que (conséquence **voulue**, sujet différent)     | **subjonctif**        | « Il est arrivé à l'heure pour qu'on ne lui fasse aucune remarque. » |
 | conséquence **liée à un degré d'intensité** | **si… que, tellement… que, tant… que, tant de… que** | **indicatif** (ou conditionnel) | « Il a fourni tant d'efforts qu'il est épuisé. » |
 | conséquence **liée à un degré d'intensité** | **trop… pour que, assez… pour que** (sujet différent) | **subjonctif**        | « Elle parle trop vite pour qu'on puisse la comprendre. » |
+
+> ⚠️ Le manuel range aussi **_pour que_** + subjonctif parmi les conséquences, sous le nom de « conséquence voulue ». Retiens la répartition qui ne trompe pas : seuls **_trop… pour que_** et **_assez… pour que_** expriment une conséquence ; **_pour que_** employé seul exprime le **but** — le résultat visé, qui n'est pas encore atteint.
 
 La conséquence peut enfin s'exprimer par une **relative à l'indicatif mise en apposition** : _La tempête envoya sur les rochers le petit voilier, qui coula._ Elle se marque aussi entre deux phrases indépendantes par des mots de liaison : **donc**, **par conséquent**, **c'est pourquoi** — mais ce ne sont pas des conjonctions de subordination : ils ne créent aucune subordonnée.
 

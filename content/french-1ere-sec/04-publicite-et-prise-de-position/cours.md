@@ -59,11 +59,13 @@ Un verbe pronominal se conjugue avec le pronom réfléchi **se** et toujours ave
 | Type de verbe pronominal                                                     | Règle d'accord                                | Exemple                                    |
 | ---------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------ |
 | **Essentiellement pronominal** — _se_ est inséparable (_se souvenir, s'absenter, s'efforcer_) | accord avec le **sujet**                      | _Elles se sont **souvenues** de leur enfance._ |
-| **De sens passif** (_se vendre_, _se faire_ + infinitif)                     | accord avec le **sujet**                      | _Les dattes se sont **vendues** cher cette année._ |
+| **De sens passif** (_se vendre_, _se lire_, _se dire_)                       | accord avec le **sujet**                      | _Les dattes se sont **vendues** cher cette année._ |
 | **De sens réfléchi ou réciproque**, _se_ = **C.O.D**                         | accord avec ce C.O.D                          | _Elles se sont **lavées**._                |
 | **De sens réfléchi ou réciproque**, _se_ = **C.O.I**                         | **aucun accord**                              | _Elles se sont **lavé** les mains._        |
 
 Pour les deux dernières lignes, la question est donc : **quelle fonction a « se » ?** _Laver quelqu'un_ → _se_ est C.O.D. _Laver quelque chose **à** quelqu'un_ → _se_ est C.O.I, et le vrai C.O.D est _les mains_, placé après.
+
+> ⚠️ Une exception à retenir telle quelle : dans **_se faire_ + infinitif**, le participe _fait_ reste **toujours invariable** — _elle s'est **fait** couper les cheveux_, _ils se sont **fait** remarquer_. Le pronom n'y est pas le complément du verbe _faire_, mais le sujet de l'infinitif qui suit.
 
 > ⚠️ Quand _se_ est C.O.I mais qu'un **autre C.O.D est placé avant** le participe, l'accord se fait avec ce C.O.D : _Les tableaux **qu'**il s'est **achetés**…_ Le piège courant est de conclure « _se_ est C.O.I, donc jamais d'accord » : la règle porte sur le C.O.D, pas sur _se_.
 

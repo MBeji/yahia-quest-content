@@ -98,6 +98,8 @@ Au **style indirect**, les paroles deviennent une **subordonnée complétive** (
 
 > ⚠️ Si le verbe introducteur est au **présent**, les temps ne bougent pas : _Il dit : « Je pars. »_ → _Il dit qu'il part._ Seules les personnes changent.
 
+**4. Rapporter un ordre ou un conseil.** Quand les paroles rapportées sont un **impératif**, le style indirect ne les rend ni par une complétive ni par une interrogative indirecte, mais par **_de_ + infinitif** : _« Ne rentre pas tard. »_ → _Il lui recommanda **de ne pas rentrer** tard._ Le retour au **style direct** refait le chemin en sens inverse — l'infinitif redevient un impératif, annoncé par deux points et encadré de guillemets, avec la majuscule : _Il lui recommanda : « **Ne rentre pas** tard. »_
+
 ## ✉️ Écrire à l'autre : la lettre et l'interview
 
 On distingue **deux types de correspondance**, qui n'ont ni les mêmes règles ni le même registre.
