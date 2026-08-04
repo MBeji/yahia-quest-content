@@ -1,16 +1,23 @@
 # ROADMAP — ordre d'exécution du reste-à-faire (études, lots, contenu)
 
-<!-- roadmap-sync: since-pr=708 -->
+<!-- roadmap-sync: since-pr=709 -->
 
-> **Instantané du 2026-08-01** (créé le 2026-07-20, resynchronisé contre `main` les 2026-07-25,
-> 2026-07-27, 2026-07-29 puis le **2026-08-01**) — déclinaison opérationnelle de l'**étude 26 (doctrine verticale : profondeur
+> **Instantané du 2026-08-03** (créé le 2026-07-20, resynchronisé contre `main` les 2026-07-25,
+> 2026-07-27, 2026-07-29, 2026-08-01 puis le **2026-08-03**) — déclinaison opérationnelle de l'**étude 26 (doctrine verticale : profondeur
 > avant largeur)**. Les Q-1…Q-5 de l'étude 26 ayant été **arbitrées le 2026-07-20**, cet ordre
 > n'est plus une recommandation d'architecte : il est **officiel**. Les arbitrages **A1→A8**
 > (2026-07-20) puis **A9→A14** (2026-08-02) sont rendus : cette seconde session a vidé les
 > questions internes des études 04 et 09, et tranché le périmètre du tagging, le lien
 > misconception → compétence et le statut du check pgTAP. L'état de référence reste
 > [STATUS.md](../STATUS.md) + l'[index des études](./README.md).
-> **Jalon produit : rentrée scolaire, 1ᵉʳ septembre 2026** (§7).
+> **Jalon produit : rentrée scolaire, 1ᵉʳ septembre 2026** (§7) — **J-29**.
+>
+> ⚠️ **Ce que la resynchronisation du 2026-08-03 a corrigé, et pourquoi ça compte** : trois lots
+> livrés les 2026-08-02/03 manquaient (**arena#706 · #707 · #708**), dont **la ligne 9, que ce
+> fichier donnait encore ouverte** — une session prenant « la première ligne non cochée » aurait
+> réimplémenté un geste déjà sur `main`. Et **F6 justifiait l'inaction du triage par un fait
+> réfuté** : arena#638 est close depuis le 2026-07-27, l'e2e n'a jamais écrit en prod. Un motif
+> périmé garde un chantier fermé aussi efficacement qu'un vrai blocage.
 
 ## 0. Mode d'emploi (comment exécuter cette roadmap)
 
@@ -25,6 +32,11 @@
    jusqu'au 2026-08-01 — voir l'encart du §2.
 4. Priorité inter-files en cas de choix : finir l'en-vol (§1) > PRODUIT > FONDATIONS >
    CONTENU nouveau (les corrections qualité contenu passent, elles, avant tout — P-4).
+   ⚠️ **Exception constatée au 2026-08-03, et elle prime sur cet ordre** : la première ligne à
+   prendre est **C4bis** (§5), une ligne CONTENU. La règle « PRODUIT d'abord » suppose que la
+   file PRODUIT a une ligne prenable — or la 15 livrerait un écran vide et la 9 est close. Une
+   ligne de contenu qui **allume quatre lots déjà mergés** vaut mieux qu'une ligne produit qui
+   en ajoute un cinquième inerte. L'ordre sert la valeur livrée ; il ne la remplace pas.
 
 ### Comment cet ordre reste vrai (règle amendée le 2026-07-25)
 
@@ -92,7 +104,7 @@ La règle est donc remplacée par un **invariant vérifié** :
 | A6  | ~~PRs legacy #374 / #376 / #348~~                                                                                                        | **Sans objet** — les trois sont mergées depuis les 12-13/07 (voir §1)                                                                                                                                                                                                                  |
 | A7  | _(rendus antérieurement, pour mémoire)_ é23 Q-1/Q-2/Q-5 le 2026-07-19 (#531) ; é22 Q-1…Q-5 le 2026-07-18 ; é20 Q-1…Q-5 le 2026-07-16     | é23 lot 5, é22 lots 1-6, é20 lots 1-8 : **exécutables**                                                                                                                                                                                                                                |
 | A8  | **Renovate ou script maison** pour le lot patch/minor (rendu le 2026-07-25)                                                              | ✅ **Script maison** — pas de tiers dans la chaîne, même régime que les autres gardes du harness. Appliqué par le lot L4 de l'étude « IA vs déterministe » (#613)                                                                                                                      |
-| A9  | **é09 Q-1…Q-3** (garde-fous chiffrés · cadence de revue · déclencheur du lot 3) — rendu le 2026-08-02                                    | ✅ **G-1…G-4 ratifiés tels quels**, comme **hypothèses de départ** à corriger après la première lecture de la page Économie · revue **mensuelle** (hebdo inviterait au réglage réactif, RISK-2) · lot 3 déclenché par la **latence** (> 2 s, déjà journalisée), pas par la volumétrie. **é09 lot 2 débloqué** — ⚠️ **et son premier run dément G-1 et G-4** (arena#708) : niveau 5 au jour 6 pour l'assidu / jour 31 pour le moyen (fenêtre 7-14 j) et shields à ~38 % contre 20 %. L'hypothèse a joué son rôle ; les seuils sont **à re-trancher** — voir F3 |
+| A9  | **é09 Q-1…Q-3** (garde-fous chiffrés · cadence de revue · déclencheur du lot 3) — rendu le 2026-08-02                                    | ✅ **G-1…G-4 ratifiés tels quels**, comme **hypothèses de départ** à corriger après la première lecture de la page Économie · revue **mensuelle** (hebdo inviterait au réglage réactif, RISK-2) · lot 3 déclenché par la **latence** (> 2 s, déjà journalisée), pas par la volumétrie. **é09 lot 2 débloqué** — ⚠️ **et son premier run en dément deux** (arena#708) : niveau 5 au jour 6 pour l'assidu et au jour 31 pour le moyen contre une fenêtre 7-14 j (G-1), shields à ~38 % contre 20 % (G-4). L'hypothèse a joué son rôle exactement comme prévu ; les seuils sont **à re-trancher — voir A15/A16** ci-dessous. Lire cette ligne sans son démenti, c'est lire une décision périmée |
 | A10 | **é04 Q-4 / Q-5** (feedback par question · ancres de cours) — rendu le 2026-08-02                                                        | ✅ Feedback question-par-question : **non pour la rentrée** (rouvrirait la soumission atomique), à reconsidérer après mesure du clic A1.2b · `courseAnchor` : **v1 sans ancres**, on ancrera sur les tags que la télémétrie montrera fréquents                                          |
 | A11 | **Tagging des misconceptions — périmètre** (rendu le 2026-08-02)                                                                        | ✅ **Pilote sur `math` 9ᵉ** (557 questions), pas la vague large : il donne un coût réel par question avant d'engager `math-6eme`, et allume l'écran sur la matière de concours. C'est le déblocage de TOUT l'axe adaptatif                                                              |
 | A12 | **Lien misconception → compétence** (rendu le 2026-08-02)                                                                               | ✅ **Un champ `competency` dans le registre des misconceptions** — chaque erreur déclare la compétence qu'elle met en défaut. Réutilise le chemin d'é07 lot 4 sans en créer un second (R-A1.2-6). **Débloque « m'entraîner », donc la ligne 9**                                        |
@@ -100,12 +112,26 @@ La règle est donc remplacée par un **invariant vérifié** :
 | A14 | **Garde-fou de volumétrie des registres** (rendu le 2026-08-02)                                                                          | ✅ **Non** — la purge est déjà gardée là où le dégât se produit (arena#702, fail-closed à l'application). Un seuil « ne pas descendre sous N » serait un doublon plus faible, et en pgTAP donc après coup                                                                              |
 
 **Ce qui reste à la main de Mohamed** (hors lots, sans blocage de file) : é23 Q-3 (self-désigner
-l'app child-directed auprès de Google + paragraphe « vidéos YouTube » de la politique de
-confidentialité — la page n'existe pas encore) · é24 Q-4 (démarche OTDAV/INNORPI) · F5 (légal
-avant rentrée) · **le signalement `d12f0f96` à passer `dismissed`** dans `/admin/content-reports`
-(artefact e2e écrit en prod, cause corrigée par #618 — état **non vérifiable depuis ce dépôt**) ·
+l'app child-directed auprès de Google — le paragraphe « vidéos YouTube » a désormais une page où
+vivre, arena#701) · é24 Q-4 (démarche OTDAV/INNORPI) · F5 (légal avant rentrée) ·
+**le signalement `d12f0f96` à passer `dismissed`** dans `/admin/content-reports`
+(artefact e2e, cause corrigée par #618 — état **non vérifiable depuis ce dépôt**) ·
 le **test à blanc de `rollback-prod.yml`** (`freeze-only` puis `unfreeze`) et les **gabarits
 d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
+
+**A15/A16 — deux arbitrages NEUFS, produits par l'exécution du 2026-08-03** (arena#708, é09
+lot 2). Ils ne sont pas des questions d'étude restées ouvertes : le simulateur les a **fabriqués
+en tournant**, ce qui est exactement son métier. Les deux portent sur des garde-fous que A9 avait
+ratifiés **comme hypothèses de départ** — les corriger maintenant est le protocole prévu, pas un
+revirement.
+
+| #   | Constat mesuré                                                                                                                                                                                        | Ce qui est à trancher                                                                                                                                                        |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| A15 | **G-1 (niveau 5 en 7-14 j) échoue des DEUX côtés** : l'assidu l'atteint au jour 6, le moyen au jour 31. À 3 j/semaine × 2 exercices, 800 XP demandent ~5 semaines — le seuil est arithmétiquement hors d'atteinte | **Recaler G-1** (une fenêtre par persona, ou une cible qui décrive le moyen). ⚠️ Ne PAS retoucher `gamification.ts` pour faire passer le test : ce serait régler l'outil        |
+| A16 | **G-4 (shields ≤ 20 % des jours manqués) échoue à 38 %** — celui-là est un **signal d'économie**, pas un seuil trop serré : à 15 coins, le rachat de série est bon marché face au revenu                 | Desserrer le seuil **ou** renchérir le shield. C'est le premier réglage d'équilibrage que la mesure rend possible — la revue est **mensuelle** (A9), rien n'oblige à trancher ce jour |
+
+Écart d'énoncé relevé au passage, sans arbitrage : l'étude é09 écrit « niveau 5 (1 000 XP) » ;
+avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit le niveau.
 **~~F4~~ en sort** : domaine, monitoring, analytics et sitemap sont **faits, constatés le
 2026-07-27** — voir F4 au §4.
 
@@ -113,12 +139,14 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
 
 > Objectif : refermer les trois boucles mortes (SM-2, misconceptions, adaptativité) et porter
 > la boucle d'apprentissage à M3 avant la rentrée.
-> **État au 2026-08-03 : 13 des 19 lignes livrées ; la 9 est CLOSE** (arena#689, #691, #695,
-> #707) — le reliquat « m'entraîner » a été livré le 2026-08-02 sur la décision A12.
-> ⚠️ Avant de prendre la 15 — et pour comprendre pourquoi la 9 est **muette en prod**, lire le
-> constat en gras de la ligne 9 : **le corpus ne porte aucun tag de misconception**, donc tout
-> l'étage « erreur nommée / points faibles » est alimenté par du vide — c'est un travail de
-> contenu, pas de code.
+> **État au 2026-08-03 : 14 des 19 lignes livrées. La ligne 9 est CLOSE** (arena#689, #691,
+> #695, **#707**) — son reliquat, le geste « m'entraîner », est livré le 2026-08-03 sur
+> l'arbitrage A12. Restent **15, 16** (é04 A2) et **17-19** (é11, hors file par A1).
+> ⚠️ **La 15 n'est PAS prenable telle quelle** : **le corpus ne porte toujours aucun tag de
+> misconception** (0 occurrence sur ~18 700 questions, re-mesuré le 2026-08-03 ; le registre
+> `content/misconceptions.json` compte 5 entrées, **aucune ne déclare son `competency`**). Tout
+> l'étage « erreur nommée / points faibles » est alimenté par du vide — y compris le geste que
+> #707 vient de livrer. Le déblocage est **C4bis** (§5), un travail de contenu, pas de code.
 
 **Étape A — réparer le parcours (étude 22, validée — 6 lots) — ✅ ÉTUDE CLOSE le 2026-07-21**
 
@@ -133,9 +161,7 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
 
 - [x] 7. **é04 lot A1.1 — « Révision du jour »** (RPC `get_daily_plan` + panneau dashboard, consomme SM-2 refermée en 2) — #581 (pgTAP renuméroté #584)
 - [x] 8. **amendement é04-A1.2 « correction riche à l'échec »** _(A1 rendu : rattachée à l'étude 04)_ — **rédigé le 2026-07-25**, contrat fermé en `04-moteur-adaptatif/ETUDE.md` §9. Il **corrige deux suppositions du mandat** : l'explication post-erreur n'a jamais été monnayée (c'est l'indice _avant_ réponse qui l'est), et un feedback question-par-question rouvrirait la couture de soumission atomique — sorti du périmètre, posé en Q-4. Reste donc à livrer : l'erreur nommée + le lien « revoir le cours »
-- [x] 9. **é04 lot A1.2 — correction riche — CLOSE le 2026-08-02** (arena#689, #691, #695, #707).
-      ⚠️ **Close en CODE, muette en PROD** : les trois gestes fonctionnent, et n'affichent rien
-      tant que C4bis n'a pas tagué un distracteur. Voir le fait en gras plus bas.
+- [x] 9. **é04 lot A1.2 — correction riche — LIGNE CLOSE le 2026-08-03** (arena#689, #691, #695, **#707**).
       **A1.2a (serveur)** — arena#689, correctif de test arena#691. `get_attempt_review` rend
       `misconception_tag` (le tag de l'option **choisie**, et seulement sur une réponse fausse) +
       `chapter_id`, sans qu'une porte bouge. L'appariement réutilise `resolve_misconception_tag`
@@ -150,14 +176,24 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
       **par le canal des compétences** (é07), qui répondait déjà au même besoin. L'intention est
       préservée : la fonction SQL rend un ID, le registre reste source unique, une reformulation
       reste une correction de registre sans migration.
-      **Le reliquat « m'entraîner » — LIVRÉ le 2026-08-02** (arena#707), sur la décision A12 :
-      un champ `competency` dans le registre des misconceptions (colonne SQL + schéma Zod +
-      libellé), et le bouton résout la compétence par `get_exercises_for_competency` — le chemin
-      d'é07 lot 4, réutilisé et non redoublé, comme l'exigeait R-A1.2-6. La colonne est **sans
-      FK** vers `competencies` : les deux registres s'appliquent par des canaux séparés, une FK
-      transformerait un ordre d'application en panne. Le bouton **ne s'affiche pas** si la
-      compétence est absente ou ne rend aucun exercice — dégradation silencieuse, R-A1.2-3.
-      ⚠️⚠️ **LE FAIT QUI COMMANDE TOUT L'AXE, mesuré le 2026-07-31 : le corpus ne contient AUCUN
+      **Reliquat — LIVRÉ le 2026-08-03** (arena#707), sur l'arbitrage A12 : le geste
+      **« m'entraîner »**. R-A1.2-6 imposait de réutiliser celui d'é07 lot 4, qui résout une
+      COMPÉTENCE en exercices — or une misconception n'en est pas une. A12 a posé la traduction
+      **dans le registre**, déclarée par l'auteur qui écrit l'erreur, plutôt que devinée par du
+      code à partir des compétences de la question. Livré : champ **optionnel** `competency` au
+      schéma (`misconception_competency`, migration `20260802120000`), résolution via l'unique
+      `get_exercises_for_competency`, bouton sur le bloc de correction.
+      **Trois partis pris à connaître avant d'y toucher** : le champ est optionnel **par
+      conception** — une confusion de vocabulaire n'a pas de compétence propre, et proposer un
+      exercice au hasard serait pire que ne rien proposer ; **pas de FK** vers `competencies`,
+      les deux registres passant par le même canal dans un ordre que rien ne garantit (l'intégrité
+      est vérifiée à la source par `content:qa`, sur les deux à la fois) ; la server fn vit dans
+      `quest.training.ts` et non `quest.server`, sinon l'écran tirait tout le serveur dans le
+      chunk client.
+      ⚠️ **Livré ne veut pas dire allumé** : le registre ne déclare **aucun** `competency` à ce
+      jour, donc le bouton ne s'affiche chez aucun élève tant que **C4bis** n'a pas tourné.
+      ⚠️⚠️ **LE FAIT QUI COMMANDE TOUT L'AXE, mesuré le 2026-07-31 et RE-MESURÉ INCHANGÉ le
+      2026-08-03 : le corpus ne contient AUCUN
       tag de misconception.** Zéro occurrence de `misconceptionTag` sur 566 chapitres et
       ~18 700 questions ; zéro `distractor_tags` non vide dans les 17 migrations manuelles ; les
       5 tags du registre ne sont utilisés nulle part. La chaîne est mécanique : pas de tag authoré
@@ -174,8 +210,9 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
       comme C4 l'a fait pour les compétences. ⚠️ Ne pas confondre : **C4 a tagué les COMPÉTENCES**
       (`math`, `math-6eme`), pas les misconceptions — ce sont deux registres distincts, et le
       second est vide d'usage.
-      **Q-5 reste à trancher par Mohamed** (non bloquante) : remplit-on `courseAnchor` maintenant
-      sur les matières de concours, ou tous les liens pointent-ils le haut du cours en v1 ?
+      ~~**Q-5 reste à trancher par Mohamed**~~ — **tranchée le 2026-08-02 par A10** : `courseAnchor`
+      en **v1 sans ancres**, tous les liens pointent le haut du cours ; on ancrera plus tard sur les
+      tags que la télémétrie montrera fréquents (donc après C4bis, comme le reste de l'axe).
 
 **Étape C — le Rappel cesse de refuser des réponses justes (étude 20, validée)**
 
@@ -195,8 +232,13 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
 - [x] 12. **é07 lot 2 — DB de maîtrise** (`user_competency_mastery` EWMA + oubli, trigger sur télémétrie) — #579
 - [x] 13. **é07 lot 4 — panneau compétences** (« ce qui te bloque », RPCs map/blockers) — #588. ⚠️ Livré **avant** le tagging C4 : inerte par construction tant que le corpus n'est pas tagué, jamais faux
 - [x] 14. **é07 lot 5 — plan compétence-aware** (`get_daily_plan` priorise par compétence) — #616, correctif de GRANT #617. Même réserve : inerte sans C4
-- [ ] 15. **é04 lot A2.1 — « Points faibles »** (misconceptions en langage élève + « S'entraîner »)
-- [ ] 16. **é04 lot A2.2 — rapport parent enrichi** (3 points faibles majeurs + tendance)
+- [ ] 15. **é04 lot A2.1 — « Points faibles »** (misconceptions en langage élève + « S'entraîner »).
+      ⛔ **NE PAS PRENDRE AVANT C4bis** : `user_misconceptions` est vide en prod depuis l'origine
+      (la chaîne est mécanique — voir ligne 9), donc ce lot **livrerait un écran vide**. Ce n'est
+      pas une réserve de prudence, c'est arithmétique : l'écran n'a aucune ligne à afficher
+- [ ] 16. **é04 lot A2.2 — rapport parent enrichi** (3 points faibles majeurs + tendance).
+      Même dépendance de fond à C4bis pour les « points faibles » ; la **tendance**, elle, se
+      calcule sur la télémétrie existante
 
 **Étape E — l'étage IA (étude 11) — A5 rendu le 2026-07-20 : exécution dégelée pour les lots 0-2**
 
@@ -244,32 +286,32 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
       qu'après coup et seulement si quelqu'un lit — or `pgTAP suite` n'est pas un check requis
       (#689 a mergé rouge trois minutes après son ouverture le 2026-07-31). Une garde à
       l'application bat une assertion sur un check non opposable.
-- [ ] F3. **é09 — la mesure. LOTS 1 ET 2 LIVRÉS** (arena#703, #708) ; reste le lot 3,
-      **conditionnel**. Condition du KPI-4 é26 (« excellent » mesurable).
+- [ ] F3. **é09 — la mesure. LOTS 1 ET 2 LIVRÉS** (arena#703 le 2026-08-01, **arena#708 le
+      2026-08-03**) ; reste le **lot 3, conditionnel**. Condition du KPI-4 é26 (« excellent » mesurable).
       **Lot 1** : cinq vues `econ_*` derrière UNE porte admin (`admin_economy_overview`, SECURITY
       DEFINER, `is_admin()`), route `/admin/economie` en lecture seule, US-1…US-4. Deux partis pris
       qui sont le vrai contenu du lot : **jamais une moyenne seule** (p50/p90/max — une moyenne
-      d'XP noie l'élève qui décroche, or c'est lui qu'on cherche) et **un tiret là où il n'y a pas
-      de donnée** — jamais « 0 % d'inflation » sur une économie à l'arrêt.
-      ⚠️ **D-5 est CORRIGÉE par le lot 2** (arena#708) : « les coins gagnés ne sont pas persistés,
-      donc on estime » était vrai de la **colonne**, faux de l'**information**. `attempts.xp_earned
-      > 0` signe exactement l'éligibilité (le RPC met XP et coins à zéro **ensemble**) et
-      `exercises.reward_coins` donne le forfait — le flux se **calcule**. Le lot 1 le
-      reconstruisait par une « règle canonique » qui **n'existe nulle part dans le moteur** :
-      ni demi-coins entre 40 et 59 %, ni dérivation des coins depuis l'XP. `sources_estimated`
-      devient `sources_earned`, et la seule inconnue restante est **nommée** (un multiplicateur de
-      potion n'est stocké nulle part, donc les sources sont un plancher).
-      **Lot 2 (simulateur) — LIVRÉ le 2026-08-02** (arena#708), sur les seuils ratifiés par A9.
-      `npm run economy:check` rejoue 8 semaines de trois personas sur les **constantes importées**
-      (R-3), PRNG à graine fixe — hors `verify` (D-4), lancé à la main et par R-4.
-      ⚠️ **Deux garde-fous ratifiés sont déjà démentis par le premier run** — et c'est
-      exactement ce que A9 prévoyait en les ratifiant « comme hypothèses de départ » :
-      **G-1 est faux dans les deux sens** (l'assidu atteint le niveau 5 au jour 6, avant la
-      fenêtre 7-14 j ; le moyen au jour 31, bien après) et **G-4 est à ~38 %** de jours manqués
-      couvrables par shield, contre un plafond à 20 %. Troisième écart, d'énoncé celui-là :
-      l'étude écrit « niveau 5 (1 000 XP) », or à `XP_PER_LEVEL = 200` le niveau 5 est à **800**
-      XP — 1 000 est le niveau 6. Le simulateur suit le niveau. **Ces trois écarts sont ouverts et
-      appellent un arbitrage** : on corrige les seuils, pas `gamification.ts`.
+      d'XP noie l'élève qui décroche, or c'est lui qu'on cherche) et **une estimation qui se dit
+      telle** (les coins gagnés ne sont pas persistés par tentative, D-5 : les sources sont
+      reconstruites, le mot « estimé » est à l'écran, et là où il n'y a pas de donnée la page rend
+      un tiret — jamais « 0 % d'inflation » sur une économie à l'arrêt).
+      **Lot 2 (simulateur) — LIVRÉ le 2026-08-03** (arena#708), débloqué la veille par A9.
+      `npm run economy:check` rejoue 8 semaines de trois personas sur les constantes réelles, en
+      **déterministe** (PRNG à graine fixe : un garde-fou qui passerait un jour et casserait le
+      lendemain ne prouverait rien). Hors `verify`/`ci:verify` (D-4).
+      **DEUX GARDE-FOUS CASSENT DÈS LE PREMIER RUN — et c'est le livrable, pas un incident.**
+      G-1 et G-4 échouent ; ni `gamification.ts` ni les seuils n'ont été touchés. Les deux
+      décisions qui en découlent sont posées en **A15/A16** au §2. C'était le protocole prévu :
+      A9 avait ratifié G-1…G-4 comme **hypothèses de départ**, à corriger à la première mesure.
+      **Trois corrections de fond, remontées par la confrontation à `submit_exercise_attempt`** —
+      elles valent plus que le simulateur lui-même : (1) **le lot 1 encodait une règle
+      inexistante**, la branche « 40-59 % → xp/10 » — le moteur n'a **aucune** règle de demi-coins,
+      l'éligibilité est binaire et décide de l'XP et des coins ensemble ; (2) **les coins ne
+      dérivent pas de l'XP**, c'est le forfait `exercises.reward_coins` ; (3) donc **la prémisse de
+      D-5 tombe** — « les coins ne sont pas persistés, donc on estime » est vrai de la colonne et
+      faux de l'information : `attempts.xp_earned > 0` signe l'éligibilité, `reward_coins` donne le
+      montant, le flux se **calcule**. `sources_estimated` devient `sources_earned`, et la seule
+      inconnue restante est nommée (un multiplicateur de potion n'est stocké nulle part).
       ✅ **Les trois questions d'é09 sont tranchées** (A9, 2026-08-02) : seuils ratifiés,
       revue **mensuelle** (hebdo inviterait au réglage réactif, RISK-2), lot 3 déclenché par la
       **latence** déjà journalisée et non par la volumétrie. L'étude est passée `en exécution`.
@@ -302,19 +344,32 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
       le pré-gate déterministe (#611) ne réveille l'agent que sur du nouveau, avec une soupape
       à 14 jours. Reste le **geste opérateur** : appliquer depuis `/admin/content-reports` et
       `/admin/bug-reports` les `dismissed` recommandés, ce qui referme la boucle. **La file a
-      fondu** : plus 14 issues de triage ouvertes mais **3** au 2026-07-27 — le pré-gate fait son
-      travail, le geste manque toujours. ⚠️ Et ces trois-là (#627, #632, #637) sont **des
-      artefacts**, pas des élèves : **arena#638 (ouverte)** montre que
-      `e2e/authed/content-report.spec.ts` écrit en prod **chaque nuit vers 04:42 UTC** depuis le
-      2026-07-25 — le filet de #618 ne couvre que les hôtes exacts, un **slug de preview** passe
-      au travers. Tant qu'il n'est pas corrigé, la file se re-remplit toute seule.
+      fondu** : plus 14 issues de triage ouvertes mais **1** au 2026-08-03 (arena#673) — le
+      pré-gate fait son travail, le geste manque toujours.
+      ⚠️⚠️ **LE MOTIF QUI TENAIT CE CHANTIER FERMÉ EST FAUX — corrigé le 2026-08-03.** Cette
+      entrée disait « les trois signalements sont des artefacts, arena#638 (ouverte) montre que
+      l'e2e écrit en prod chaque nuit, le geste est vain tant que le bug vit ». **arena#638 est
+      close depuis le 2026-07-27, sa prémisse réfutée** : l'e2e n'a **jamais** écrit en
+      production — la ligne était la seule de `content_reports` du projet **TEST**, recréée puis
+      effacée chaque nuit. L'« id neuf chaque matin en prod » était un artefact de lecture.
+      **La vraie panne était l'inverse, et plus grave** : le secret `PROD_SUPABASE_URL` pointait
+      sur TEST depuis le 2026-07-17, donc **la boucle de triage était aveugle à la production
+      pendant dix jours** — le signalement d'un vrai élève ne serait remonté nulle part. Corrigé
+      par `assertProdReportSource` (arena#643) + secrets repointés le 2026-07-27.
+      **Conséquence pour cette file** : il n'y a plus aucun blocage technique, plus aucune raison
+      d'attendre. Le geste opérateur est le seul reste — et il porte désormais sur de **vrais**
+      signalements. ⚠️ Leçon de méthode, la même que F4 dans l'autre sens : **un motif de report
+      se re-vérifie avant d'être invoqué**. Celui-ci a gardé un chantier fermé une semaine de plus
+      que le fait qui le justifiait.
 - [ ] F7. **Dépendances majeures — la file est nettoyée, deux majors restent.** Le lot
       patch/minor étant scripté (#613, corrigé par #625 qui lui apprend à lire les lignes `0.x`),
       il ne restait que les majors et leurs issues doublonnées (#233 ≡ #595 · #236 ⊂ #594 ·
       #234 périmé, closes depuis). **Le major Supabase est fait** : `setup-cli` v2 → v3.0.0 +
       CLI 2.108.0 → 2.109.1, livré le 2026-07-25 par **#622** (ferme #594/#236). **Restent deux
-      PRs, une par major** : **#595** (`@types/node` v22 → v26, lié Node 22 → 26 LTS) et
-      **#593** (`typescript` v7, gate rouge : `typescript-eslint` incompatible — attendre l'amont).
+      issues, une par major** (références corrigées le 2026-08-03) : **arena#595** — aligner
+      `@types/node` (v26) sur le runtime CI, **passé à Node 24 depuis** (arena#688), pas 26 — et
+      **arena#660** (`typescript` v7.0.2, gate rouge : `typescript-eslint` incompatible, attendre
+      l'amont). ⚠️ **#660 remplace #593**, que cette entrée citait encore ; #593 est close.
 - [x] F8. **Étude « IA vs déterministe » — CLOSE le 2026-07-25, 6 lots.** Ouverte le 2026-07-21
       hors roadmap (#598), elle a remplacé par des scripts les 5 surfaces de garde qui
       dépensaient des tokens sur un chemin mécanique : hook pré-commit (#608) et invariant
@@ -384,17 +439,27 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
       restent non tagués — la famille `math` couvre `math*`, une famille `physique`/`svt` reste à
       écrire par l'architecte avant tout tagging scientifique.
 - [ ] C4bis. **Tagging des MISCONCEPTIONS — pilote `math` 9ᵉ** _(A11 rendu le 2026-08-02)_.
+      🔴 **PREMIÈRE LIGNE DE TOUTE LA ROADMAP au 2026-08-03**, toutes files confondues — c'est la
+      seule qui allume du code déjà livré.
       ⚠️ **Ne pas confondre avec C4**, qui a tagué les **compétences** : ce sont deux registres
       distincts, et celui des misconceptions est **vide d'usage** — 0 occurrence de
-      `misconceptionTag` sur ~18 700 questions, mesuré le 2026-07-31.
+      `misconceptionTag` sur ~18 700 questions, mesuré le 2026-07-31 et **re-mesuré inchangé le
+      2026-08-03** ; les 5 entrées de `content/misconceptions.json` ne déclarent **aucun**
+      `competency`, alors que le schéma l'accepte depuis arena#707.
       **C'est le déblocage de TOUT l'axe adaptatif** : sans lui, `user_misconceptions` reste vide
-      en prod, la correction riche (ligne 9) ne nomme aucune erreur, le terme « misconceptions »
-      de `get_daily_plan` vaut zéro, et la ligne 15 livrerait un écran vide.
+      en prod, la correction riche (ligne 9) ne nomme aucune erreur, le geste « m'entraîner »
+      livré le 2026-08-03 ne s'affiche chez personne, le terme « misconceptions » de
+      `get_daily_plan` vaut zéro, et la ligne 15 livrerait un écran vide.
+      **Le compte des lots que ce seul travail de contenu allume : quatre** — é04 A1.2a, A1.2b,
+      le geste « m'entraîner », et le terme misconception d'A1.1. Tous sur `main`, tous inertes.
       **Périmètre arbitré : `math` 9ᵉ seulement** (557 questions, déjà tagué en compétences par
       C4). Le pilote donne un **coût réel par question** avant d'engager `math-6eme`, et allume
       l'écran sur la matière de concours. Deux gestes par question ratée : `misconceptionTag` sur
       les distracteurs, et l'entrée correspondante dans `content/misconceptions.json` (5 entrées
       aujourd'hui) — **avec son champ `competency`** (A12), sans quoi « m'entraîner » reste mort.
+      ⚠️ Le champ est **optionnel par conception** (arena#707) : une confusion de vocabulaire ou
+      une erreur de lecture d'énoncé n'a pas de compétence propre, et il vaut mieux ne rien
+      proposer qu'un exercice au hasard. Ne pas en inventer une pour remplir la colonne.
 - [ ] C5. **é20 lots 2 → 4 — réponses acceptées.** **Lot 2 (Tier A) livré le 2026-07-27**
       (arena#652) : l'expansion morphologique — article arabe plié dans les deux sens, articles
       fr/en, contractions — est une **fonction pure appliquée au build**, pas des variantes
@@ -436,6 +501,21 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
       qu'une **PR moteur** ne l'ouvre (#44) — l'état des lieux le rapporte depuis arena#636.
       À confronter à **A1-Q2** (statu quo consolidé à la barre é18, aucune classe vitrine) au
       prochain point : la roadmap constate, elle ne tranche pas à la place de Mohamed.
+      **Suite constatée le 2026-08-03** : la campagne a continué sans repasser ici —
+      **`education-islamique-5eme`** est un **sujet neuf**, ses 10 chapitres livrés en 4 tranches
+      (#105 → #109) · **`math-bac-math`** ch.16-19, le manuel couvert en entier (#100), puis la
+      correction de 4 épisodes qui clonaient l'annale (#104) · `arabic-2eme-sec-lettres` ·
+      `arabic-6eme` (suite).
+      ⚠️⚠️ **ET GÉNÉRER N'EST PAS APPLIQUER — un stock s'accumule.** Contenu ajouté au corpus
+      **depuis la dernière application vérifiée en base** (2026-07-29) : `education-islamique-5eme`,
+      `math-bac-math`, `arabic-6eme`, `arabic-2eme-sec-lettres` — auxquels s'ajoutent les trois
+      déjà en attente (figures `eveil`, `math-8eme` dé-LaTeXé, corrections `french-8eme`).
+      Nuance à ne pas confondre avec le « générer n'est pas ouvrir » ci-dessus : le parcours
+      **5ᵉ base est ouvert depuis le 2026-06-20** (`20260620140000_open_5eme_base_parcours.sql`),
+      donc l'islamique 5ᵉ ne demande **aucune PR moteur** — seulement un run `apply-content.yml`.
+      Rien ici ne peut vérifier l'état réel de la prod : cette liste dit ce qui a été **produit**
+      depuis la dernière application, pas ce qui manque en base. **Du contenu généré et jamais
+      appliqué est du travail invisible pour l'élève.**
 
 ## 6. FILES DIFFÉRÉES (ne rien lancer avant leur porte d'entrée)
 
@@ -448,17 +528,19 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
 
 ## 7. Vue jalon — ce qui doit être vrai le 1ᵉʳ septembre 2026
 
-| Axe        | Cible rentrée                                                                                                                                                                                                  | État au 2026-07-27                                                                                                                        |
+| Axe        | Cible rentrée                                                                                                                                                                                                  | État au **2026-08-03 (J-29)**                                                                                                              |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Produit    | File V1 étapes **1-16** livrées (é22 complet dont bannière rentrée · Révision du jour · correction riche · Rappel tolérant lot 1 · maîtrise visible · points faibles + rapport parent)                         | **11/19 lignes faites** (le « 10/19 » du 2026-07-25 comptait mal), dont toute l'étape A et l'étape D côté moteur. Restent : correction riche (9), `short_answer` (11), A2 (15-16) |
+| Produit    | File V1 étapes **1-16** livrées (é22 complet dont bannière rentrée · Révision du jour · correction riche · Rappel tolérant lot 1 · maîtrise visible · points faibles + rapport parent)                         | **14/19 lignes faites** (11/19 au 2026-07-27). La **9 est close** (arena#707). Restent **15-16** (é04 A2) et 17-19 (é11, hors file). ⛔ **La 15 est bloquée par C4bis, pas par du code** : elle livrerait un écran vide |
 | IA         | A5 **rendu le 2026-07-20** : é11 dégelée (lots 0-2, pilote math 9ᵉ, budget 5 $/j, tuteur « El Ostedh »). Lots 0-1 à la rentrée **seulement si une session les prend hors file V1** — sinon octobre             | non commencé — conforme au plan                                                                                                           |
-| Contenu    | Classes existantes à la barre é18 · 1ère sec complète (5 matières) · vidéos 9ᵉ · Tier A `acceptedAnswers` corpus entier · cible arbitrée (A1-Q2) = **statu quo consolidé à la barre é18**, sans classe vitrine | **C4 n'est plus le point dur — vague 1 faite le 2026-07-27** (1 362 questions, math 9ᵉ + 6ᵉ) : les trois lots produit qui en dépendaient ne sont plus inertes. Aussi bougé : la campagne petites classes (C10) et l'illustration entamée (C6). Toujours rien sur : 1ère sec, vidéos 9ᵉ, Tier A. **Le contenu ATTEINT enfin la prod** (2026-07-29, #52 close) : `french-4eme`, `french-5eme`, `arabic-6eme` puis `math` + `math-6eme` (le tagging) appliqués et **vérifiés en base**. Restent à appliquer quand on le décide : figures `eveil`, `math-8eme` dé-LaTeXé, corrections `french-8eme` |
-| Fondations | Domaine câblé + monitoring + sitemap (F4) · légal F5 · triage ops F6 en route · `main` verte (§1)                                                                                                              | **`main` verte ✅** (nightly + e2e-auth) et **F4 soldée le 2026-07-27** (domaine, monitoring, analytics, SMTP, secrets du kill-switch). Restent **F5** (Mohamed) et le geste opérateur de **F6** — que le bug arena#638 re-remplit chaque nuit |
+| Contenu    | Classes existantes à la barre é18 · 1ère sec complète (5 matières) · vidéos 9ᵉ · Tier A `acceptedAnswers` corpus entier · cible arbitrée (A1-Q2) = **statu quo consolidé à la barre é18**, sans classe vitrine | **C4bis est le nouveau point dur** — il allume **quatre lots déjà sur `main`** ; C4 (compétences) est fait depuis le 2026-07-27 et appliqué. **Tier A est fait** (arena#652, 13 017/13 049). Toujours rien sur : **1ère sec** (C3), **vidéos 9ᵉ** (C2). Aussi bougé : petites classes (C10, + `education-islamique-5eme` et `math-bac-math` complet), illustration (C6). ⚠️ **Un stock généré attend son application** depuis le 2026-07-29 — voir C10 |
+| Fondations | Domaine câblé + monitoring + sitemap (F4) · légal F5 · triage ops F6 en route · `main` verte (§1)                                                                                                              | **`main` verte ✅** et **F4 soldée**. **F6 n'a plus aucun blocage technique** — son motif de report (arena#638) est **réfuté et clos** ; reste le seul geste opérateur. **F5 reste le vrai bloqueur de la Porte 1**, dont **un volet est du code** : GAP-024 « droits des personnes » (suppression de compte + export) n'existe nulle part dans `src/` |
 
 ## 8. Journal de la roadmap
 
 | Date       | Événement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-08-03 | **Le désarmement du canal de contenu avait un angle mort : rien ne disait qu'un merge n'était pas publié — et 23 sujets l'étaient depuis des jours.** Point de départ : un audit du ch.19 de `math-bac-math` relevait quatre paires de questions clonées entre `06-histoire-statistiques` et `07-annales-bac` (mêmes gabarits, mêmes triplets de distracteurs) — réécrites sur place, sans réordonner ni changer une lettre de clé (#104). **Mais la PR a révélé pire que son objet** : appliquée à 19:11 le 2026-08-01 depuis `891c864`, elle a été mergée à 19:27 en `67e3dd7` — **seize minutes**, deux jours de contenu périmé servi en prod, et rien pour le dire. `apply-content.yml` est désarmé (lot 3a) : aucun merge ne publie, et ni la CI verte, ni l'automerge, ni `content_releases` — qui ne sait que ce qui a été appliqué, jamais ce qui manque — ne signalent le geste absent. **Livré : `content-drift.yml`** (#112, corrigée par #116), garde en **lecture seule** qui compare `content_releases` à `main` et tient **une** issue `content-drift` ouverte tant qu'un sujet est en retard, refermée d'elle-même — mécanique de `video-health.yml`. Pas de run rouge : une issue ouverte survit à l'onglet Actions. **Son premier passage a trouvé 23 sujets**, dont `0e17aab` (« les explications citent la valeur de l'option, pas sa lettre »), correctif transverse mergé le 29 juillet, jamais publié sur une dizaine de matières — le stock que la ligne précédente signalait est donc **soldé** : corpus complet appliqué (run 30819985947, 49 min, backup + vérification en base verts), puis `chimie-1ere-sec`, mergé *pendant* cette application, soit exactement la course d'origine. Cycle complet exercé en prod : ouverture (23) → mises à jour (23 → 2 → 1) → **clôture automatique** (0). **Le piège pour la suite** : le nom du dossier de `content/` n'est pas l'identifiant en base — `compileTo` fait compiler un dossier vers plusieurs sujets, et la v1 de la garde criait « jamais publié » sur un dossier fraîchement appliqué, faux positif **éternel** qui l'aurait fait ignorer en quelques semaines (#116). **Ce qui n'est PAS fait, délibérément** : armer le déclencheur automatique. Ça reste le **lot 3b** d'é24 (répétition sur TEST + arbitrage §4.3) — une garde ne re-designe pas le canal qu'elle surveille. Le risque résiduel est donc entier : entre un merge et le passage suivant de la garde, la prod est en retard sans que personne ne le sache. C'est ce risque-là, pas la visibilité, que 3b supprimerait. |
+| 2026-08-03 | **Resynchronisation contre `main` (base #702 → #709) — et deux motifs périmés retirés.** Trois lots livrés les 2026-08-02/03 manquaient : **arena#707** (le geste « m'entraîner », qui **ferme la ligne 9** — ce fichier la donnait encore ouverte, donc une session « première ligne non cochée » aurait réimplémenté du code déjà sur `main`), **arena#708** (é09 lot 2, le simulateur) et **arena#706** (le canonique SEO tranché : `SITE_URL` passe à `www`, balise `rel=canonical` posée sur toute la coquille publique — les 1 541 URL du sitemap pointaient vers une redirection). **Deux arbitrages NEUFS, A15/A16 au §2** : le simulateur casse G-1 et G-4 dès son premier run, ce qui est son métier — A9 les avait ratifiés comme hypothèses de départ, les corriger est le protocole, pas un revirement. Le lot rend aussi trois corrections de fond, dont **le lot 1 encodait une règle de demi-coins qui n'existe pas dans le moteur** — donc la prémisse de D-5 tombe et le flux de coins se **calcule** au lieu d'être estimé. **Deux motifs de report réfutés** : F6 justifiait l'inaction du triage par arena#638, **close depuis le 2026-07-27** (l'e2e n'a jamais écrit en prod ; la vraie panne était l'inverse — la boucle de triage était aveugle à la prod pendant dix jours) ; F7 citait encore #593, remplacée par #660, et « Node 26 » là où la CI est à **Node 24**. **Q-5 d'é04** était donnée « à trancher » alors qu'A10 l'a tranchée. **Constat contenu ajouté à C10** : un stock généré depuis le 2026-07-29 (`education-islamique-5eme`, `math-bac-math`, `arabic-6eme`, `arabic-2eme-sec-lettres`) attend son application — et le parcours 5ᵉ étant ouvert depuis juin, l'islamique ne demande aucune PR moteur. **Rien n'a bougé sur la file PRODUIT au-delà de la 9** : la prochaine ligne prenable reste **C4bis**, pas la 15. |
 | 2026-07-20 | Création (déclinaison de l'étude 26, état consolidé post #525/#526/#527/#529/#531)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | 2026-07-20 | **Session d'arbitrages — A1→A5 tous rendus** (Mohamed). é26, é19, é21, é11 → `validée` ; les 4 écarts de é24 tranchés (lot 3b débloqué) ; é23 resynchronisée en `en exécution`. **Corrections d'état** : A6 sans objet (PRs legacy mergées les 12-13/07), `main` — CI requise verte, `Nightly`/`E2E auth` rouges. Le tuteur IA est renommé **« El Ostedh »**. La roadmap devient officielle (A1-Q1).                                                                                                                                                                                                                                                                                                                                                                                                                |
 | 2026-07-25 | **Ligne 8 livrée — amendement é04-A1.2 écrit** (`04-moteur-adaptatif/ETUDE.md` §9). Contrat fermé en deux lots (A1.2a serveur / A1.2b client). Il corrige deux suppositions du mandat : l'explication post-erreur n'était **pas** monnayée (c'est l'indice avant réponse qui l'est), et le feedback question-par-question rouvre la couture de soumission atomique — sorti du périmètre, posé en **Q-4**. Le lot sera **inerte tant que le corpus n'est pas tagué** (C4), assumé. La prochaine ligne PRODUIT devient la **9**.                                                                                                                                                                                                                                                                                      |
@@ -472,5 +554,3 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
 | 2026-07-31 | **Ligne 9 — les deux lots livrés (A1.2a arena#689/#691, A1.2b arena#695), et un constat qui vaut plus que le lot.** A1.2b a dû **corriger D-A1.2-3**, fondée sur une surface de compilation client qui n'existe pas : les libellés passent désormais par la base, par le canal des compétences (é07), sans rien perdre de l'intention (la fonction rend un ID, le registre reste source unique, une reformulation reste une correction de registre). **Le fait majeur** : mesuré ce jour, le corpus ne contient **aucun** tag de misconception — 0 occurrence sur ~18 700 questions, 0 `distractor_tags` non vide dans les migrations manuelles, les 5 tags du registre inutilisés. Donc `user_misconceptions` est **vide en prod** depuis l'origine, le terme « misconceptions » de `get_daily_plan` vaut zéro depuis #581, et **la ligne 15 (A2.1) livrerait un écran vide**. L'étude 26 décrivait une boucle « collectée-jamais-surfacée » : elle n'était **jamais alimentée**. Le blocage de tout l'axe est du **contenu** — taguer les distracteurs, comme C4 l'a fait pour les compétences (deux registres distincts : C4 n'a PAS tagué les misconceptions). **Reliquat de la ligne 9** : le geste « m'entraîner », suspendu à la décision « quel lien misconception → compétence ». |
 | 2026-08-01 | **F3 — é09 lot 1 livré** (arena#703) : la console « Économie » mesure enfin ce que la courbe XP/coins produit en vrai. Vérifié en exécution réelle sur PostgreSQL 16, sur des scores choisis pour être contrôlables de tête (100 XP à 80 % → 20 coins, à 45 % → 10, à 30 % → 0 : le RPC rend 30.00). **Le lot 2 est bloqué par Q-1** — les garde-fous G-1…G-4 n'ont jamais été arbitrés, et les choisir en exécutant serait décider de l'équilibrage sous couvert d'outillage. **Constat de méthode qui dépasse é09** : le §2 affirme « plus aucun arbitrage humain n'est en attente ». C'est vrai des arbitrages A1→A8 ; ce n'est PAS vrai des questions internes des études restées en `brouillon`. Une session qui lit le §2 littéralement croit toute ligne exécutable de bout en bout — é09 montre que non. À vérifier étude par étude avant de prendre une ligne. |
 | 2026-08-02 | **Session d'arbitrages — A9→A14 rendus** (Mohamed). Les questions internes des études 04 et 09 sont vidées, et trois décisions de fond tranchées. **Ce qui se débloque** : é09 lot 2 (le simulateur a enfin des seuils opposables, ratifiés comme **hypothèses de départ** — un seuil que le simulateur fait sauter au premier run a probablement tort lui-même, on ne retouche pas `gamification.ts` pour faire passer un test) · le geste « m'entraîner » de la ligne 9 (**un champ `competency` dans le registre des misconceptions**, qui réutilise le chemin d'é07 lot 4 au lieu d'en créer un second) · **C4bis**, le pilote de tagging des misconceptions sur `math` 9ᵉ — le déblocage de tout l'axe adaptatif, volontairement limité à une matière pour obtenir un coût réel par question avant d'engager une vague. **Deux décisions de posture** : `pgTAP suite` devient **requis** sur les PR de migration (#689 a mergé rouge en trois minutes : la fenêtre de lecture était plus courte que le temps de lire) · **pas** de garde-fou de volumétrie des registres, la purge étant déjà gardée là où le dégât se produit (arena#702). **Correction de lecture consignée au §2** : « arbitrage rendu » n'a jamais voulu dire « ligne exécutable » — il faut aussi lire le statut de l'étude. |
-| 2026-08-02 | **Ligne 9 CLOSE — le geste « m'entraîner » livré** (arena#707), sur la décision A12 rendue le matin même. Un champ `competency` dans le registre des misconceptions (colonne SQL sans FK, schéma Zod, libellé) et un bouton qui résout la compétence par `get_exercises_for_competency` — le chemin d'é07 lot 4, réutilisé et non redoublé (R-A1.2-6). **Pas de FK vers `competencies` assumée** : les deux registres s'appliquent par des canaux séparés, une FK ferait d'un ordre d'application une panne. **Ce que la ligne close ne dit pas** : les trois gestes d'A1.2 sont muets en prod tant que C4bis n'a rien tagué — « close en code » n'est pas « visible par un élève ». |
-| 2026-08-03 | **F3 — é09 lot 2 livré** (arena#708), et il a **démenti trois choses écrites la veille**. (1) **D-5 est fausse dans sa prémisse** : les coins ne sont pas « non persistés donc à estimer » — `attempts.xp_earned > 0` signe l'éligibilité (le RPC met XP et coins à zéro ensemble) et `exercises.reward_coins` donne le forfait ; le flux se **calcule**. Le lot 1 le reconstruisait par une règle canonique — demi-coins entre 40 et 59 %, coins dérivés de l'XP — qui **n'existe nulle part dans `submit_exercise_attempt`**. La branche morte ne faussait aucun chiffre (sous 60 %, `xp_earned` vaut 0), mais une vue qui documente une règle inexistante finit par être lue comme la spécification. Corrigé, avec l'unique inconnue restante **nommée** (multiplicateur de potion) au lieu d'un « estimé » vague. (2) **G-1 est arithmétiquement faux dans les deux sens** — assidu niveau 5 au jour 6, moyen au jour 31, contre une fenêtre 7-14 j — et **G-4 est à ~38 %** contre un plafond à 20 %. Ratifiés la veille par A9 **comme hypothèses de départ** : l'hypothèse a joué son rôle exactement comme prévu, et ce sont les seuils qu'on corrige, jamais `gamification.ts`. (3) L'étude écrit « niveau 5 (1 000 XP) » : à `XP_PER_LEVEL = 200`, c'est le niveau **6**. **Leçon** : un simulateur ne vaut que s'il rejoue la règle depuis son autorité (le SQL), pas depuis l'énoncé de l'étude — c'est en l'écrivant que la règle inventée est tombée. |
