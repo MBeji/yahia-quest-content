@@ -1,6 +1,6 @@
 # ROADMAP — ordre d'exécution du reste-à-faire (études, lots, contenu)
 
-<!-- roadmap-sync: since-pr=702 -->
+<!-- roadmap-sync: since-pr=708 -->
 
 > **Instantané du 2026-08-01** (créé le 2026-07-20, resynchronisé contre `main` les 2026-07-25,
 > 2026-07-27, 2026-07-29 puis le **2026-08-01**) — déclinaison opérationnelle de l'**étude 26 (doctrine verticale : profondeur
@@ -92,7 +92,7 @@ La règle est donc remplacée par un **invariant vérifié** :
 | A6  | ~~PRs legacy #374 / #376 / #348~~                                                                                                        | **Sans objet** — les trois sont mergées depuis les 12-13/07 (voir §1)                                                                                                                                                                                                                  |
 | A7  | _(rendus antérieurement, pour mémoire)_ é23 Q-1/Q-2/Q-5 le 2026-07-19 (#531) ; é22 Q-1…Q-5 le 2026-07-18 ; é20 Q-1…Q-5 le 2026-07-16     | é23 lot 5, é22 lots 1-6, é20 lots 1-8 : **exécutables**                                                                                                                                                                                                                                |
 | A8  | **Renovate ou script maison** pour le lot patch/minor (rendu le 2026-07-25)                                                              | ✅ **Script maison** — pas de tiers dans la chaîne, même régime que les autres gardes du harness. Appliqué par le lot L4 de l'étude « IA vs déterministe » (#613)                                                                                                                      |
-| A9  | **é09 Q-1…Q-3** (garde-fous chiffrés · cadence de revue · déclencheur du lot 3) — rendu le 2026-08-02                                    | ✅ **G-1…G-4 ratifiés tels quels**, comme **hypothèses de départ** à corriger après la première lecture de la page Économie · revue **mensuelle** (hebdo inviterait au réglage réactif, RISK-2) · lot 3 déclenché par la **latence** (> 2 s, déjà journalisée), pas par la volumétrie. **é09 lot 2 débloqué** |
+| A9  | **é09 Q-1…Q-3** (garde-fous chiffrés · cadence de revue · déclencheur du lot 3) — rendu le 2026-08-02                                    | ✅ **G-1…G-4 ratifiés tels quels**, comme **hypothèses de départ** à corriger après la première lecture de la page Économie · revue **mensuelle** (hebdo inviterait au réglage réactif, RISK-2) · lot 3 déclenché par la **latence** (> 2 s, déjà journalisée), pas par la volumétrie. **é09 lot 2 débloqué** — ⚠️ **et son premier run dément G-1 et G-4** (arena#708) : niveau 5 au jour 6 pour l'assidu / jour 31 pour le moyen (fenêtre 7-14 j) et shields à ~38 % contre 20 %. L'hypothèse a joué son rôle ; les seuils sont **à re-trancher** — voir F3 |
 | A10 | **é04 Q-4 / Q-5** (feedback par question · ancres de cours) — rendu le 2026-08-02                                                        | ✅ Feedback question-par-question : **non pour la rentrée** (rouvrirait la soumission atomique), à reconsidérer après mesure du clic A1.2b · `courseAnchor` : **v1 sans ancres**, on ancrera sur les tags que la télémétrie montrera fréquents                                          |
 | A11 | **Tagging des misconceptions — périmètre** (rendu le 2026-08-02)                                                                        | ✅ **Pilote sur `math` 9ᵉ** (557 questions), pas la vague large : il donne un coût réel par question avant d'engager `math-6eme`, et allume l'écran sur la matière de concours. C'est le déblocage de TOUT l'axe adaptatif                                                              |
 | A12 | **Lien misconception → compétence** (rendu le 2026-08-02)                                                                               | ✅ **Un champ `competency` dans le registre des misconceptions** — chaque erreur déclare la compétence qu'elle met en défaut. Réutilise le chemin d'é07 lot 4 sans en créer un second (R-A1.2-6). **Débloque « m'entraîner », donc la ligne 9**                                        |
@@ -113,9 +113,9 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
 
 > Objectif : refermer les trois boucles mortes (SM-2, misconceptions, adaptativité) et porter
 > la boucle d'apprentissage à M3 avant la rentrée.
-> **État au 2026-07-31 : 12 des 19 lignes livrées ; la 9 a ses deux lots livrés** (arena#689,
-> #691, #695) **mais reste décochée** sur un reliquat — le geste « m'entraîner », qui attend une
-> décision (lien misconception → compétence). ⚠️ Avant de prendre la 9 **ou la 15**, lire le
+> **État au 2026-08-03 : 13 des 19 lignes livrées ; la 9 est CLOSE** (arena#689, #691, #695,
+> #707) — le reliquat « m'entraîner » a été livré le 2026-08-02 sur la décision A12.
+> ⚠️ Avant de prendre la 15 — et pour comprendre pourquoi la 9 est **muette en prod**, lire le
 > constat en gras de la ligne 9 : **le corpus ne porte aucun tag de misconception**, donc tout
 > l'étage « erreur nommée / points faibles » est alimenté par du vide — c'est un travail de
 > contenu, pas de code.
@@ -133,7 +133,9 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
 
 - [x] 7. **é04 lot A1.1 — « Révision du jour »** (RPC `get_daily_plan` + panneau dashboard, consomme SM-2 refermée en 2) — #581 (pgTAP renuméroté #584)
 - [x] 8. **amendement é04-A1.2 « correction riche à l'échec »** _(A1 rendu : rattachée à l'étude 04)_ — **rédigé le 2026-07-25**, contrat fermé en `04-moteur-adaptatif/ETUDE.md` §9. Il **corrige deux suppositions du mandat** : l'explication post-erreur n'a jamais été monnayée (c'est l'indice _avant_ réponse qui l'est), et un feedback question-par-question rouvrirait la couture de soumission atomique — sorti du périmètre, posé en Q-4. Reste donc à livrer : l'erreur nommée + le lien « revoir le cours »
-- [ ] 9. **é04 lot A1.2 — correction riche — LES DEUX LOTS SONT LIVRÉS, la ligne reste ouverte sur un reliquat.**
+- [x] 9. **é04 lot A1.2 — correction riche — CLOSE le 2026-08-02** (arena#689, #691, #695, #707).
+      ⚠️ **Close en CODE, muette en PROD** : les trois gestes fonctionnent, et n'affichent rien
+      tant que C4bis n'a pas tagué un distracteur. Voir le fait en gras plus bas.
       **A1.2a (serveur)** — arena#689, correctif de test arena#691. `get_attempt_review` rend
       `misconception_tag` (le tag de l'option **choisie**, et seulement sur une réponse fausse) +
       `chapter_id`, sans qu'une porte bouge. L'appariement réutilise `resolve_misconception_tag`
@@ -148,12 +150,13 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
       **par le canal des compétences** (é07), qui répondait déjà au même besoin. L'intention est
       préservée : la fonction SQL rend un ID, le registre reste source unique, une reformulation
       reste une correction de registre sans migration.
-      **Reliquat qui garde la case décochée — DÉBLOQUÉ le 2026-08-02 par A12** : le geste
-      **« m'entraîner »**. R-A1.2-6 impose de réutiliser celui d'é07 lot 4, qui résout une
-      COMPÉTENCE en exercices. La décision rendue : **un champ `competency` dans le registre des
-      misconceptions** — chaque erreur déclare la compétence qu'elle met en défaut, et le geste
-      réutilise le chemin existant sans en créer un second. Reste à exécuter (schéma + registre +
-      bouton).
+      **Le reliquat « m'entraîner » — LIVRÉ le 2026-08-02** (arena#707), sur la décision A12 :
+      un champ `competency` dans le registre des misconceptions (colonne SQL + schéma Zod +
+      libellé), et le bouton résout la compétence par `get_exercises_for_competency` — le chemin
+      d'é07 lot 4, réutilisé et non redoublé, comme l'exigeait R-A1.2-6. La colonne est **sans
+      FK** vers `competencies` : les deux registres s'appliquent par des canaux séparés, une FK
+      transformerait un ordre d'application en panne. Le bouton **ne s'affiche pas** si la
+      compétence est absente ou ne rend aucun exercice — dégradation silencieuse, R-A1.2-3.
       ⚠️⚠️ **LE FAIT QUI COMMANDE TOUT L'AXE, mesuré le 2026-07-31 : le corpus ne contient AUCUN
       tag de misconception.** Zéro occurrence de `misconceptionTag` sur 566 chapitres et
       ~18 700 questions ; zéro `distractor_tags` non vide dans les 17 migrations manuelles ; les
@@ -241,20 +244,32 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
       qu'après coup et seulement si quelqu'un lit — or `pgTAP suite` n'est pas un check requis
       (#689 a mergé rouge trois minutes après son ouverture le 2026-07-31). Une garde à
       l'application bat une assertion sur un check non opposable.
-- [ ] F3. **é09 — la mesure. LOT 1 LIVRÉ le 2026-08-01** (arena#703) ; le lot 2 est **bloqué par
-      une question jamais tranchée**. Condition du KPI-4 é26 (« excellent » mesurable).
+- [ ] F3. **é09 — la mesure. LOTS 1 ET 2 LIVRÉS** (arena#703, #708) ; reste le lot 3,
+      **conditionnel**. Condition du KPI-4 é26 (« excellent » mesurable).
       **Lot 1** : cinq vues `econ_*` derrière UNE porte admin (`admin_economy_overview`, SECURITY
       DEFINER, `is_admin()`), route `/admin/economie` en lecture seule, US-1…US-4. Deux partis pris
       qui sont le vrai contenu du lot : **jamais une moyenne seule** (p50/p90/max — une moyenne
-      d'XP noie l'élève qui décroche, or c'est lui qu'on cherche) et **une estimation qui se dit
-      telle** (les coins gagnés ne sont pas persistés par tentative, D-5 : les sources sont
-      reconstruites, le mot « estimé » est à l'écran, et là où il n'y a pas de donnée la page rend
-      un tiret — jamais « 0 % d'inflation » sur une économie à l'arrêt).
-      **Lot 2 (simulateur) — DÉBLOQUÉ le 2026-08-02 par A9.** Les garde-fous **G-1…G-4** sont
-      ratifiés tels quels (niveau 5 en 7-14 j · ≤ 1 000 XP farmables/jour · puits ≥ 60 % des
-      sources · shields ≤ ~20 % des jours manqués), **avec statut d'hypothèses de départ** : à
-      corriger après la première lecture de la page Économie, et non à contourner en retouchant
-      `gamification.ts` pour faire passer un test. Le lot est exécutable.
+      d'XP noie l'élève qui décroche, or c'est lui qu'on cherche) et **un tiret là où il n'y a pas
+      de donnée** — jamais « 0 % d'inflation » sur une économie à l'arrêt.
+      ⚠️ **D-5 est CORRIGÉE par le lot 2** (arena#708) : « les coins gagnés ne sont pas persistés,
+      donc on estime » était vrai de la **colonne**, faux de l'**information**. `attempts.xp_earned
+      > 0` signe exactement l'éligibilité (le RPC met XP et coins à zéro **ensemble**) et
+      `exercises.reward_coins` donne le forfait — le flux se **calcule**. Le lot 1 le
+      reconstruisait par une « règle canonique » qui **n'existe nulle part dans le moteur** :
+      ni demi-coins entre 40 et 59 %, ni dérivation des coins depuis l'XP. `sources_estimated`
+      devient `sources_earned`, et la seule inconnue restante est **nommée** (un multiplicateur de
+      potion n'est stocké nulle part, donc les sources sont un plancher).
+      **Lot 2 (simulateur) — LIVRÉ le 2026-08-02** (arena#708), sur les seuils ratifiés par A9.
+      `npm run economy:check` rejoue 8 semaines de trois personas sur les **constantes importées**
+      (R-3), PRNG à graine fixe — hors `verify` (D-4), lancé à la main et par R-4.
+      ⚠️ **Deux garde-fous ratifiés sont déjà démentis par le premier run** — et c'est
+      exactement ce que A9 prévoyait en les ratifiant « comme hypothèses de départ » :
+      **G-1 est faux dans les deux sens** (l'assidu atteint le niveau 5 au jour 6, avant la
+      fenêtre 7-14 j ; le moyen au jour 31, bien après) et **G-4 est à ~38 %** de jours manqués
+      couvrables par shield, contre un plafond à 20 %. Troisième écart, d'énoncé celui-là :
+      l'étude écrit « niveau 5 (1 000 XP) », or à `XP_PER_LEVEL = 200` le niveau 5 est à **800**
+      XP — 1 000 est le niveau 6. Le simulateur suit le niveau. **Ces trois écarts sont ouverts et
+      appellent un arbitrage** : on corrige les seuils, pas `gamification.ts`.
       ✅ **Les trois questions d'é09 sont tranchées** (A9, 2026-08-02) : seuils ratifiés,
       revue **mensuelle** (hebdo inviterait au réglage réactif, RISK-2), lot 3 déclenché par la
       **latence** déjà journalisée et non par la volumétrie. L'étude est passée `en exécution`.
@@ -457,3 +472,5 @@ d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
 | 2026-07-31 | **Ligne 9 — les deux lots livrés (A1.2a arena#689/#691, A1.2b arena#695), et un constat qui vaut plus que le lot.** A1.2b a dû **corriger D-A1.2-3**, fondée sur une surface de compilation client qui n'existe pas : les libellés passent désormais par la base, par le canal des compétences (é07), sans rien perdre de l'intention (la fonction rend un ID, le registre reste source unique, une reformulation reste une correction de registre). **Le fait majeur** : mesuré ce jour, le corpus ne contient **aucun** tag de misconception — 0 occurrence sur ~18 700 questions, 0 `distractor_tags` non vide dans les migrations manuelles, les 5 tags du registre inutilisés. Donc `user_misconceptions` est **vide en prod** depuis l'origine, le terme « misconceptions » de `get_daily_plan` vaut zéro depuis #581, et **la ligne 15 (A2.1) livrerait un écran vide**. L'étude 26 décrivait une boucle « collectée-jamais-surfacée » : elle n'était **jamais alimentée**. Le blocage de tout l'axe est du **contenu** — taguer les distracteurs, comme C4 l'a fait pour les compétences (deux registres distincts : C4 n'a PAS tagué les misconceptions). **Reliquat de la ligne 9** : le geste « m'entraîner », suspendu à la décision « quel lien misconception → compétence ». |
 | 2026-08-01 | **F3 — é09 lot 1 livré** (arena#703) : la console « Économie » mesure enfin ce que la courbe XP/coins produit en vrai. Vérifié en exécution réelle sur PostgreSQL 16, sur des scores choisis pour être contrôlables de tête (100 XP à 80 % → 20 coins, à 45 % → 10, à 30 % → 0 : le RPC rend 30.00). **Le lot 2 est bloqué par Q-1** — les garde-fous G-1…G-4 n'ont jamais été arbitrés, et les choisir en exécutant serait décider de l'équilibrage sous couvert d'outillage. **Constat de méthode qui dépasse é09** : le §2 affirme « plus aucun arbitrage humain n'est en attente ». C'est vrai des arbitrages A1→A8 ; ce n'est PAS vrai des questions internes des études restées en `brouillon`. Une session qui lit le §2 littéralement croit toute ligne exécutable de bout en bout — é09 montre que non. À vérifier étude par étude avant de prendre une ligne. |
 | 2026-08-02 | **Session d'arbitrages — A9→A14 rendus** (Mohamed). Les questions internes des études 04 et 09 sont vidées, et trois décisions de fond tranchées. **Ce qui se débloque** : é09 lot 2 (le simulateur a enfin des seuils opposables, ratifiés comme **hypothèses de départ** — un seuil que le simulateur fait sauter au premier run a probablement tort lui-même, on ne retouche pas `gamification.ts` pour faire passer un test) · le geste « m'entraîner » de la ligne 9 (**un champ `competency` dans le registre des misconceptions**, qui réutilise le chemin d'é07 lot 4 au lieu d'en créer un second) · **C4bis**, le pilote de tagging des misconceptions sur `math` 9ᵉ — le déblocage de tout l'axe adaptatif, volontairement limité à une matière pour obtenir un coût réel par question avant d'engager une vague. **Deux décisions de posture** : `pgTAP suite` devient **requis** sur les PR de migration (#689 a mergé rouge en trois minutes : la fenêtre de lecture était plus courte que le temps de lire) · **pas** de garde-fou de volumétrie des registres, la purge étant déjà gardée là où le dégât se produit (arena#702). **Correction de lecture consignée au §2** : « arbitrage rendu » n'a jamais voulu dire « ligne exécutable » — il faut aussi lire le statut de l'étude. |
+| 2026-08-02 | **Ligne 9 CLOSE — le geste « m'entraîner » livré** (arena#707), sur la décision A12 rendue le matin même. Un champ `competency` dans le registre des misconceptions (colonne SQL sans FK, schéma Zod, libellé) et un bouton qui résout la compétence par `get_exercises_for_competency` — le chemin d'é07 lot 4, réutilisé et non redoublé (R-A1.2-6). **Pas de FK vers `competencies` assumée** : les deux registres s'appliquent par des canaux séparés, une FK ferait d'un ordre d'application une panne. **Ce que la ligne close ne dit pas** : les trois gestes d'A1.2 sont muets en prod tant que C4bis n'a rien tagué — « close en code » n'est pas « visible par un élève ». |
+| 2026-08-03 | **F3 — é09 lot 2 livré** (arena#708), et il a **démenti trois choses écrites la veille**. (1) **D-5 est fausse dans sa prémisse** : les coins ne sont pas « non persistés donc à estimer » — `attempts.xp_earned > 0` signe l'éligibilité (le RPC met XP et coins à zéro ensemble) et `exercises.reward_coins` donne le forfait ; le flux se **calcule**. Le lot 1 le reconstruisait par une règle canonique — demi-coins entre 40 et 59 %, coins dérivés de l'XP — qui **n'existe nulle part dans `submit_exercise_attempt`**. La branche morte ne faussait aucun chiffre (sous 60 %, `xp_earned` vaut 0), mais une vue qui documente une règle inexistante finit par être lue comme la spécification. Corrigé, avec l'unique inconnue restante **nommée** (multiplicateur de potion) au lieu d'un « estimé » vague. (2) **G-1 est arithmétiquement faux dans les deux sens** — assidu niveau 5 au jour 6, moyen au jour 31, contre une fenêtre 7-14 j — et **G-4 est à ~38 %** contre un plafond à 20 %. Ratifiés la veille par A9 **comme hypothèses de départ** : l'hypothèse a joué son rôle exactement comme prévu, et ce sont les seuils qu'on corrige, jamais `gamification.ts`. (3) L'étude écrit « niveau 5 (1 000 XP) » : à `XP_PER_LEVEL = 200`, c'est le niveau **6**. **Leçon** : un simulateur ne vaut que s'il rejoue la règle depuis son autorité (le SQL), pas depuis l'énoncé de l'étude — c'est en l'écrivant que la règle inventée est tombée. |
