@@ -120,7 +120,7 @@ Règles de boucle (non négociables) :
   personne ne la lise. Ne pousser qu'un lot fini. S'y soustraire — comme sur le moteur — par
   une PR **draft**, une branche préfixée `wip/`/`draft/`/`rescue/`, ou le label `no-automerge`.
   Nuance qui compte : faute de rulesets sur un dépôt privé Free, **aucun check n'est
-  *requis*** — le workflow automatise le bon geste, il n'interdit pas le mauvais. La session
+  _requis_** — le workflow automatise le bon geste, il n'interdit pas le mauvais. La session
   qui pousse reste donc de garde jusqu'au **merge réel** (§ A6).
 
 ## Le socle R (hérité du skill `content-ingest` — condensé, non négociable)
@@ -229,7 +229,7 @@ publié le chapitre suivant.
 | Profil               | Quand                                                                | Sources                                                                                                                   | Livrable fiche (LOT A)                                                                                                                                                              | Work-list                                                                                                |
 | -------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | **ecole-cnp**        | cycle de base (`1ere-base` → `9eme-base`)                            | guide enseignant CNP (`5…`) **+** manuel élève (`1…`), **combinés**                                                       | `programme/<niveau>/<matière>.md` + `manifest/<niveau>.json`                                                                                                                        | `programme/_INDEX.md` (couples `[ ]`)                                                                    |
-| **ecole-secondaire** | lycée (`1ere-sec` → `bac-*`)                                         | manuel élève du secondaire (`2…`) + programme officiel du ministère s'il est publié ; **manuel seul ⇒ il fait référence** | idem ecole-cnp (les sections sont des nœuds `grades` ; slugs de [`docs/lycee-architecture.md`](https://github.com/MBeji/yahia-quest-arena/blob/main/docs/lycee-architecture.md))                                                      | matrice sections × matières de `docs/lycee-architecture.md` ; **créer** la ligne `_INDEX.md` dans le lot |
+| **ecole-secondaire** | lycée (`1ere-sec` → `bac-*`)                                         | manuel élève du secondaire (`2…`) + programme officiel du ministère s'il est publié ; **manuel seul ⇒ il fait référence** | idem ecole-cnp (les sections sont des nœuds `grades` ; slugs de [`docs/lycee-architecture.md`](https://github.com/MBeji/yahia-quest-arena/blob/main/docs/lycee-architecture.md))    | matrice sections × matières de `docs/lycee-architecture.md` ; **créer** la ligne `_INDEX.md` dans le lot |
 | **document-libre**   | PDF d'enseignant, polycopié, annales papier — tout doc hors corpus   | le document lui-même (**droits R-2 vérifiés** : auteur, origine, autorisation)                                            | école : `programmes-officiels/sources-externes/<slug>/fiche.md` ; hors école : `content/_sources/<theme>/<slug>/fiche.md` — **même gabarit** `_TEMPLATE.md` + en-tête de provenance | — (la PR trace ; pas de ligne `_INDEX.md`)                                                               |
 | **sans-source**      | la fiche existe (`[~]`/`[x]`) mais le contenu manque sous `content/` | aucune (la fiche mergée)                                                                                                  | — (sauter le LOT A)                                                                                                                                                                 | `content/CATALOGUE.md` (sujets existants)                                                                |
 
@@ -347,7 +347,7 @@ Notes par profil :
    Trois commandes gouvernent le registre — **depuis `engine/`**, comme toutes les autres :
    `npm run programme:check` (le gate — schémas + anti-doublon + cohérence disque↔registre↔index,
    exécuté par la Content CI), `npm run programme:index` (régénère la vue), `npm run
-   programme:corpus` (resynchronise le snapshot corpus depuis le `cnp-officiel/catalogue.csv`
+programme:corpus` (resynchronise le snapshot corpus depuis le `cnp-officiel/catalogue.csv`
    voisin du clone moteur — `--catalogue <chemin>` pour le pointer ailleurs ; machine locale
    uniquement). Elles écrivent **dans le corpus**, à travers le lien : le diff apparaît dans
    `corpus/`, c'est là qu'on le commite. Une quatrième, `npm run programme:etat`, n'est **pas**
@@ -604,6 +604,11 @@ contexte : **brief matière + la section de la fiche de CE chapitre** :
   (1ère–3ème) ⇒ presque tout illustré, coloré ;
 - auto-vérification par chapitre : re-résolution à l'aveugle, distracteurs = erreurs exécutées,
   équilibre des clés, notation standard (0-9, LTR ; milliers arabes en U+00A0 **cohérent**) ;
+- **périmètre nommé par agent, et interdiction du gabarit** : les fichiers d'un chapitre
+  s'écrivent en parallèle par des agents qui ne se voient pas. Donner à chacun (a) la liste
+  **exacte** des fichiers qu'il écrit, (b) le périmètre enseigné par le cours, (c) le chemin des
+  chapitres **déjà publiés** de la matière, avec l'ordre d'y aller avant d'écrire. Sans (c), le
+  moule d'un item se rejoue d'un chapitre à l'autre — voir « le doublon de gabarit » ci-dessous ;
 - **commit local après chaque chapitre complet** (fichiers `content/` seulement — il n'y a
   aucun SQL à committer, § B3). Un chapitre part **complet ou pas du tout** dans une PR ready
   (cours + résumé + quiz + ≥1 mission) : un chapitre entamé mais pas fini reste hors tranche
@@ -612,6 +617,38 @@ contexte : **brief matière + la section de la fiche de CE chapitre** :
 Tranche pleine — ou budget/fenêtre qui approche de sa fin — ⇒ passer en B3 pour la livrer. La
 matière est **finie** quand `content:audit` ne signale plus ni chapitre manquant ni chapitre
 incomplet pour ce sujet vs le manifeste.
+
+#### Le doublon de gabarit — le défaut dominant de l'écriture parallèle
+
+Mesuré sur les deux premières tranches d'`english-1ere-sec` (corpus #117 et #120, 138 questions) :
+**138/138 clés justes**, et pourtant **10 doublons de gabarit sur 33 constats MAJOR**, dont 5
+**inter-chapitres**. C'est le mode de défaut n°1, et il est **invisible partout** : les quatre
+gates ne le voient pas, et une mesure de similarité lexicale (Jaccard sur énoncé + options) a
+rendu **0 paire** sur les deux tranches.
+
+Il est invisible parce que ce n'est pas le lexique qui se répète, c'est la **forme de la tâche** :
+même structure d'énoncé, même type de question, même jeu de distracteurs — décor changé. Exemple
+réel, servi **quatre fois** dans la même matière dont une déjà publiée deux tranches plus tôt :
+« _Read this passage. \<Nom\> tient un commerce à \<ville\> depuis \<durée\>… à quoi renvoie ce
+pronom ?_ ». Un auteur ne peut pas le voir — il n'a que son chapitre. Seul un relecteur qui lit
+les chapitres **publiés** le voit.
+
+Deux parades, l'une en amont, l'autre en aval (§ B3) :
+
+- dans le brief de chaque auteur, le point (c) ci-dessus — le chemin des chapitres publiés et
+  l'ordre d'y aller **avant** d'écrire ; et la consigne explicite « change la **tâche**, pas
+  seulement le décor » ;
+- **les trois mesures muettes, à faire AVANT le commit** (un script jetable de ~40 lignes sur
+  `quiz.json` + `exercices/*.json` suffit ; aucun gate ne les porte encore) :
+
+  | mesure                                                    | seuil                            | ce qu'elle attrape                                                                     |
+  | --------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------------------------- |
+  | la clé est-elle l'option **strictement la plus longue** ? | viser 0 % ; le hasard est à 25 % | la fuite par la forme — mesurée à 57–76 % sur des lots antérieurs                      |
+  | distribution des clés **a/b/c/d**                         | ≈ 25 % chacune                   | l'écriture au gabarit (clé rédigée d'abord, distracteurs en remplissage)               |
+  | paires de questions proches (Jaccard ≥ 0,45)              | 0                                | les doublons **littéraux** — pas les doublons de gabarit, qui échappent à cette mesure |
+
+  Les deux premières se corrigent sans déplacer aucune clé. La troisième ne remplace **jamais**
+  l'audit humain : elle ne voit que ce qui se répète en mots.
 
 ### B3 — Gates, push, prod (à chaque tranche)
 
@@ -628,7 +665,30 @@ apparaissent « manquants » — c'est attendu tant que la matière n'est pas fi
 
 Puis **audit pédagogique** : appliquer le skill `content-audit` sur les **chapitres de la
 tranche** (re-résoudre chaque question à l'aveugle, clés/distracteurs/calibrage) et corriger
-avant de pousser.
+avant de pousser. **Un auditeur par chapitre, en contexte vierge, qui n'a écrit aucune ligne de
+ce qu'il relit** — l'auto-relecture de l'auteur ne compte pas : elle confirme les clés, et passe
+à côté de tout le reste. Quatre points à mettre dans son mandat, chacun payé par une campagne :
+
+1. **le chemin des chapitres déjà publiés**, avec l'ordre de croiser — sans ça, les doublons
+   inter-chapitres ne sont pas trouvables (§ B2, « le doublon de gabarit ») ;
+2. **les paires que l'orchestrateur a déjà repérées à la main**, nommément à trancher : c'est en
+   cherchant autour qu'il trouve les autres ;
+3. **quels fichiers n'ont pas de rapport d'auteur** — un sous-agent tué par la limite de session
+   laisse des fichiers complets mais jamais relus. Ils ne sont pas faux (0 clé fausse sur les 24
+   items concernés en #120), mais ils ont porté **11 des 16 constats** de leur chapitre : le dire
+   à l'auditeur change ce qu'il cherche ;
+4. le mandat lui-même : **« trouve ce qui est faux, pas ce qui est bon »**, et il ne modifie aucun
+   fichier — il rend des corrections prêtes à appliquer (ancien texte → nouveau texte).
+
+L'orchestrateur **arbitre** ensuite constat par constat (ce qu'on applique, ce qu'on écarte et
+pourquoi), puis fait appliquer. ⚠️ **La correction prescrite peut elle-même être fautive** :
+quatre correcteurs sur six l'ont attrapée en deux tranches — une consigne introduisait un verbe
+hors du périmètre de la leçon, une autre rendait la clé strictement l'option la plus longue.
+Donc, dans le brief du correcteur : **re-résoudre à l'aveugle chaque item touché** et **re-mesurer
+les trois métriques** (§ B2) après application, pas seulement appliquer.
+
+Correction **sur place, toujours** : jamais de réordonnancement de questions, jamais de renommage
+d'id d'option — l'identité en base dépend de la position et des slugs (§ « Slugs are identity »).
 
 **Rien à compiler à la main** (étude 24 D-3) : le contenu **ne voyage plus en migrations**. Il
 est compilé par `content:emit` en un fichier **stable par matière** `sql/content/<subject>.sql`,

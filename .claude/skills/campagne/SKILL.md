@@ -114,13 +114,13 @@ Avant tout : **branche fraîche depuis `origin/main` fetchée**, dans le corpus 
 et re-vérifie la contention — `gh pr list --search "<niveau> <matière>"` + branches
 `feat/transcription-<niveau>-*` — que `programme:etat` ne peut pas connaître.
 
-| `prochaineEtape.etape` | Ce que tu déroules                                                        | Qui écrit                                                               |
-| ---------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| `A1`                   | LOT A complet : sources → transcription → profondeur → audits → PR        | `content-ingest`                                                        |
-| `A3`                   | LOT A partiel : **uniquement les plages listées**, puis profondeur R-5    | `content-ingest`                                                        |
-| `A5.4`                 | déclarer `sujets` (+ statut/couverture) au registre, régénérer la vue     | toi — édition du registre, aucun skill d'écriture                       |
-| `B1`                   | LOT B : `subject.json` + **première tranche** de chapitres                | `content-ecole-tn` (carte `generation-pipeline.md`)                     |
-| `B2`                   | LOT B : tranches suivantes, chapitres manquants ou incomplets             | idem + `content-cours`, `content-interactif`, `prof-<matière>-<cycle>`  |
+| `prochaineEtape.etape` | Ce que tu déroules                                                     | Qui écrit                                                              |
+| ---------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| `A1`                   | LOT A complet : sources → transcription → profondeur → audits → PR     | `content-ingest`                                                       |
+| `A3`                   | LOT A partiel : **uniquement les plages listées**, puis profondeur R-5 | `content-ingest`                                                       |
+| `A5.4`                 | déclarer `sujets` (+ statut/couverture) au registre, régénérer la vue  | toi — édition du registre, aucun skill d'écriture                      |
+| `B1`                   | LOT B : `subject.json` + **première tranche** de chapitres             | `content-ecole-tn` (carte `generation-pipeline.md`)                    |
+| `B2`                   | LOT B : tranches suivantes, chapitres manquants ou incomplets          | idem + `content-cours`, `content-interactif`, `prof-<matière>-<cycle>` |
 
 Points de vigilance, tous hérités de la méthode :
 
@@ -134,13 +134,21 @@ Points de vigilance, tous hérités de la méthode :
   reste. Aucun sujet correspondant (matière hors programme codifié) ⇒ laisser `[]` et l'écrire en
   note, jamais inventer un id pour faire disparaître un constat.
 - **Sous-agents** : un lot = un contexte frais (T-4). Délègue le lot à un sous-agent quand le harnais
-  le permet, et garde le rôle d'orchestrateur mince.
+  le permet, et garde le rôle d'orchestrateur mince. Écriture parallèle ⇒ **périmètre nommé** par
+  agent **et chemin des chapitres déjà publiés**, sinon le moule d'un item se rejoue d'un chapitre à
+  l'autre : c'est le défaut n°1 des tranches livrées, et aucun gate ne le voit (méthode, B2 « le
+  doublon de gabarit »). Avant chaque commit, les **trois mesures muettes** de ce même §.
 
 ## 4. Gates, PR, garde jusqu'au merge
 
 Depuis `engine/`, 0 erreur exigé — `programme:check` pour un lot de fiche ; `content:check`,
 `content:qa:strict`, `content:audit` (+ l'audit pédagogique `content-audit` sur les chapitres de la
-tranche) pour un lot de contenu. **Aucun SQL, aucune migration** dans un commit de campagne : le
+tranche — **un auditeur par chapitre, en contexte vierge, qui n'a rien écrit de ce qu'il relit** ;
+les quatre points de son mandat sont en B3 de la méthode) pour un lot de contenu. Un gate vert ne
+dit rien du fond : sur deux tranches d'anglais 1ère sec, les quatre gates étaient verts, les
+138 clés justes, et l'audit a trouvé 5 BLOCKER et 33 MAJOR.
+
+**Aucun SQL, aucune migration** dans un commit de campagne : le
 contenu se compile hors des migrations (méthode, B3). ⚠️ Et **jamais `npm run content:build`** :
 sans `--sql-dir` il écrit des migrations horodatées dans le dépôt **moteur** — canal mort depuis
 l'étude 24, et une fuite de corpus que son gate `leak:check` bloque.
