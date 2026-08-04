@@ -10,16 +10,34 @@
           "code": "641203",
           "tomes": ["P00"],
           "role": "enseignant",
-          "pagesTotal": null,
-          "pagesLues": "inconnu"
+          "pagesTotal": 96,
+          "pagesLues": "integral"
+        },
+        {
+          "code": "241203",
+          "tomes": ["P00"],
+          "role": "eleve",
+          "pagesTotal": 184,
+          "pagesLues": [
+            [1, 5],
+            [20, 27],
+            [33, 41],
+            [45, 54]
+          ]
         }
       ],
-      "sujets": ["english-2eme-sec"],
+      "sujets": [
+        "english-2eme-sec-sciences",
+        "english-2eme-sec-lettres",
+        "english-2eme-sec-eco-services",
+        "english-2eme-sec-info"
+      ],
       "sourcesLibres": [],
       "r7": null,
-      "maj": "2026-07-17",
-      "par": "seed",
-      "notes": "Seed depuis _INDEX ([~] historique). Évaluer lecture + profondeur, et combiner le manuel élève, avant génération (R-5)."
+      "maj": "2026-08-04",
+      "par": "claude/campagne",
+      "notes": "⚭ LOT MUTUALISÉ ×4 — un dossier de contenu, quatre classes. Le manuel d'anglais n'est PAS dédoublé par section au catalogue CNP (un seul code 241203 pour toute la 2ème sec) et la préface du Student's Book (p.3) le dit : les 30 leçons du tronc commun servent toutes les sections, les 20 leçons Arts/Économie étant un supplément optionnel par filière (hors scope). Le contenu est donc écrit UNE fois sous content/english-2eme-sec/ (id racine VIRTUEL, sans gradeSlug) et compilé en quatre sujets par `compileTo` (étude 16 D-4) — d'où les quatre ids en `sujets`. ▸ POURQUOI CETTE FICHE EST SOUS `2eme-sec` ET NON SOUS UNE SECTION : `2eme-sec` est le nœud plat hérité, non sélectionnable, et interdit comme cible `compileTo` (LEGACY_GRADE_SLUGS, étude 16 R-9). La fiche y reste quand même — R-4 n'autorise qu'UNE fiche par code source, et le manuel est commun aux quatre sections ; ce sont les SUJETS COMPILÉS qui visent les quatre nœuds de section. Conséquence à connaître avant d'y toucher : `checkSuivi` vérifie `sujets` et chaque slug de `chapitresGeneration` contre le manifeste DU GRADE DE LA FICHE — donc `manifest/2eme-sec.json` porte le chapitrage sous les quatre ids COMPILÉS (et non sous l'id source virtuel `english-2eme-sec`, qu'`audit-program.ts` rapporterait « matière absente du catalogue » à perpétuité, puisqu'il audite après expansion). Le même chapitrage est répliqué à l'identique dans les quatre `manifest/2eme-sec-<section>.json` : CINQ fichiers à modifier ensemble. ▸ GUIDE ENSEIGNANT : lu INTÉGRALEMENT (641203, 96 p.) dès le 2026-07-07 — cadre méthodologique, Book Map des 11 thèmes / 30 leçons, référentiel des fonctions communicatives, Timeline. C'est l'autorité de SCOPE. ▸ MANUEL ÉLÈVE (2026-08-04, tranche 1) : 32 pages sur 184 — la table des matières (p.1–5), puis les chapitres 01 à 03 à PROFONDEUR DE GÉNÉRATION (p.20–27 leçons 1–2, p.33–41 leçons 3–5, p.45–54 leçons 6–8), chaque activité décrite individuellement avec sa consigne verbatim, en fiche §4 bis. ▸ GÉNÉRATION RESTREINTE (R-5 lu au chapitre, décision du 2026-07-29) : SEULS les 3 chapitres de `chapitresGeneration` sont générables ; les chapitres 04 à 11 sont chapitrés mais NON transcrits, donc interdits tant que leurs pages ne sont pas lues (p.60–68, 73–81, 86–95, 100–107, 112–120, 125–132, 138–144, 147–165). ▸ TROIS CONSTATS QUI GOUVERNENT LA GÉNÉRATION, établis contre le manuel et non déductibles du Book Map (détail en fiche §4 bis) : (1) le manuel n'imprime AUCUN encadré de règle et ne nomme AUCUN des temps annoncés par le guide — la grammaire y est purement inductive, un cours généré doit donc énoncer la règle que le manuel laisse implicite ; (2) le manuel ne donne AUCUN corrigé — toute clé de QCM doit être résolue, jamais recopiée ; (3) le Progress Check 1 (L8, p.52–54) révise les thèmes I et II, PAS le thème III qui l'héberge. ▸ DETTE DE RÉSOLUTION : les 27 pages ont été lues à 150 dpi, seules p.20, 21, 38 et 41 ont eu le contrôle 300 dpi ; les points douteux sont marqués [?] en fiche et ne portent sur aucun élément de scope. ▸ Pas de R-7 formelle (fiche non complète). ▸ LE PLUS RENTABLE POUR LA SUITE : l'appendice du manuel (p.166–184 — grammar summary, new words per lesson, irregular verbs) n'a jamais été ouvert, et c'est la seule source qui nomme les règles que le corps du manuel laisse implicites.",
+      "chapitresGeneration": ["01-family-life", "02-communicating-with-others", "03-social-life"]
     }
   ]
 }

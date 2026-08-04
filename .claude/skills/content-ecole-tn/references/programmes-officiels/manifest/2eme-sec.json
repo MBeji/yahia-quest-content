@@ -2,8 +2,211 @@
   "grade": "2eme-sec",
   "sealed": false,
   "source": "CNP — programme national 2ème année secondaire (2ème année du lycée). Guide enseignant cnp-officiel/manuels/secondaire/c2/enseignant/641203P00.pdf « Perform to Learn — Second Year Secondary Education — Teacher's Book » (National Pedagogic Centre, authors Ammar/Merdessi/Omrane/Raddaoui), combiné au manuel élève 241203P00.pdf (même titre, Student's Book, 184 p. — table des matières lue intégralement). Transcription sous programme/2eme-sec/anglais.md.",
-  "note": "MANIFESTE PARTIEL — ne code que l'anglais (seule matière secondaire dont le guide enseignant est au corpus et a été transcrit à ce jour). chapters=[] volontairement : content/english-2eme-sec/ n'existe pas encore (aucun contenu généré) ; le chapitrage officiel (11 thèmes) est néanmoins entièrement codifié dans programme/2eme-sec/anglais.md §4, à reprendre lors de la première génération. id de subject `english-2eme-sec` proposé par analogie avec la convention primaire — à confirmer (cf. anglais.md §6). Les 20 leçons Arts/Économie du guide sont un supplément optionnel par filière, hors scope générique (cf. anglais.md §2).",
+  "note": "MANIFESTE DU NŒUD LEGACY — à lire avant d'y toucher. `2eme-sec` est le nœud plat hérité du seed lycée : il n'est PAS sélectionnable par un élève, et le schéma interdit de le viser en cible `compileTo` (LEGACY_GRADE_SLUGS, étude 16 R-9). Aucun contenu ne lui est donc rattaché et ce manifeste ne décrit pas une classe : il porte le CHAPITRAGE DE RÉFÉRENCE des matières dont le manuel officiel est commun aux quatre sections de 2ème sec, parce que c'est sous ce grade que vit leur fiche de transcription (R-4 : un code source, une seule fiche — `suivi/2eme-sec.json` en est le registre). ▸ POURQUOI LES IDS COMPILÉS Y FIGURENT : `checkSuivi` vérifie les `sujets` d'une fiche, et chaque slug de son `chapitresGeneration`, contre le manifeste DE SON PROPRE GRADE. La fiche d'anglais vivant sous `2eme-sec`, vider ces entrées — ou n'y laisser que l'id source virtuel `english-2eme-sec`, comme c'était le cas jusqu'au 2026-08-04 — désarmerait silencieusement le filet de R-5 : les slugs déclarés générables ne seraient plus vérifiables contre aucun programme codifié. Les ids listés sont donc les ids COMPILÉS, jamais l'id source virtuel : `audit-program.ts` audite les sujets APRÈS expansion `compileTo`, et un id virtuel y serait rapporté « matière absente du catalogue » à perpétuité. ▸ REDONDANCE ASSUMÉE : le même chapitrage est répliqué à l'identique dans les quatre manifestes de section (`2eme-sec-sciences`, `2eme-sec-lettres`, `2eme-sec-eco-services`, `2eme-sec-info`), qui sont ceux que l'audit oppose au contenu réellement rattaché à chaque classe. Toute modification du chapitrage doit être portée dans les CINQ fichiers. ▸ ANGLAIS : un seul manuel (Student's Book 241203P00 + Teacher's Book 641203P00) sert les quatre sections — le catalogue CNP ne le dédouble pas, et la préface du Student's Book (p.3) le dit : les 30 leçons du tronc commun valent pour tous, les 20 leçons Arts/Économie étant un supplément OPTIONNEL par filière, hors chapitrage (cf. anglais.md §2). Le contenu est écrit UNE fois sous `content/english-2eme-sec/` (id racine VIRTUEL, sans gradeSlug) et compilé en quatre sujets par `compileTo` (étude 16 D-4). Chapitrage = les 11 thèmes officiels du Book Map (guide p.12–73) ; les 3 Progress Checks (leçons 8, 17, 30) closent respectivement les chapitres 03, 06 et 11 sans ouvrir de chapitre propre. Détail : programme/2eme-sec/anglais.md §4.",
   "subjects": [
-    { "id": "english-2eme-sec", "name": "English", "contentLanguage": "en", "chapters": [] }
+    {
+      "id": "english-2eme-sec-sciences",
+      "name": "English",
+      "contentLanguage": "en",
+      "chapters": [
+        {
+          "slug": "01-family-life",
+          "notion": "Theme I — Family life (Lessons 1–2: expressing want/desire, narrating past events, the present perfect)"
+        },
+        {
+          "slug": "02-communicating-with-others",
+          "notion": "Theme II — Communicating with others (Lessons 3–5: be going to, the future with will, cause/result relationship)"
+        },
+        {
+          "slug": "03-social-life",
+          "notion": "Theme III — Social Life (Lessons 6–7 + Progress Check 1: either in end position, the present perfect progressive)"
+        },
+        {
+          "slug": "04-social-problems",
+          "notion": "Theme IV — Social Problems (Lessons 9–11: countable/uncountable nouns, the superlative, causative verbs)"
+        },
+        {
+          "slug": "05-attitudes-and-values",
+          "notion": "Theme V — Attitudes and Values (Lessons 12–14: cause/result linkers, imperatives, question tags)"
+        },
+        {
+          "slug": "06-rights-and-duties",
+          "notion": "Theme VI — Rights and Duties (Lessons 15–16 + Progress Check 2: the passive voice, a little/a few/a lot of)"
+        },
+        {
+          "slug": "07-education",
+          "notion": "Theme VII — Education (Lessons 18–19: reflexive pronouns, ought to / needn't / had better / should have)"
+        },
+        {
+          "slug": "08-professional-life",
+          "notion": "Theme VIII — Professional Life (Lessons 20–22: should have + past participle, purpose clauses, used to)"
+        },
+        {
+          "slug": "09-media-and-arts",
+          "notion": "Theme IX — Media and Arts (Lessons 23–24: parallel increase, any/some/no/nobody)"
+        },
+        {
+          "slug": "10-science-and-technology",
+          "notion": "Theme X — Science and Technology (Lessons 25–26: reported speech, gradual increase/decrease)"
+        },
+        {
+          "slug": "11-ecology",
+          "notion": "Theme XI — Ecology (Lessons 27–29 + Progress Check 3: adverbs of degree, not only… but also)"
+        }
+      ]
+    },
+    {
+      "id": "english-2eme-sec-lettres",
+      "name": "English",
+      "contentLanguage": "en",
+      "chapters": [
+        {
+          "slug": "01-family-life",
+          "notion": "Theme I — Family life (Lessons 1–2: expressing want/desire, narrating past events, the present perfect)"
+        },
+        {
+          "slug": "02-communicating-with-others",
+          "notion": "Theme II — Communicating with others (Lessons 3–5: be going to, the future with will, cause/result relationship)"
+        },
+        {
+          "slug": "03-social-life",
+          "notion": "Theme III — Social Life (Lessons 6–7 + Progress Check 1: either in end position, the present perfect progressive)"
+        },
+        {
+          "slug": "04-social-problems",
+          "notion": "Theme IV — Social Problems (Lessons 9–11: countable/uncountable nouns, the superlative, causative verbs)"
+        },
+        {
+          "slug": "05-attitudes-and-values",
+          "notion": "Theme V — Attitudes and Values (Lessons 12–14: cause/result linkers, imperatives, question tags)"
+        },
+        {
+          "slug": "06-rights-and-duties",
+          "notion": "Theme VI — Rights and Duties (Lessons 15–16 + Progress Check 2: the passive voice, a little/a few/a lot of)"
+        },
+        {
+          "slug": "07-education",
+          "notion": "Theme VII — Education (Lessons 18–19: reflexive pronouns, ought to / needn't / had better / should have)"
+        },
+        {
+          "slug": "08-professional-life",
+          "notion": "Theme VIII — Professional Life (Lessons 20–22: should have + past participle, purpose clauses, used to)"
+        },
+        {
+          "slug": "09-media-and-arts",
+          "notion": "Theme IX — Media and Arts (Lessons 23–24: parallel increase, any/some/no/nobody)"
+        },
+        {
+          "slug": "10-science-and-technology",
+          "notion": "Theme X — Science and Technology (Lessons 25–26: reported speech, gradual increase/decrease)"
+        },
+        {
+          "slug": "11-ecology",
+          "notion": "Theme XI — Ecology (Lessons 27–29 + Progress Check 3: adverbs of degree, not only… but also)"
+        }
+      ]
+    },
+    {
+      "id": "english-2eme-sec-eco-services",
+      "name": "English",
+      "contentLanguage": "en",
+      "chapters": [
+        {
+          "slug": "01-family-life",
+          "notion": "Theme I — Family life (Lessons 1–2: expressing want/desire, narrating past events, the present perfect)"
+        },
+        {
+          "slug": "02-communicating-with-others",
+          "notion": "Theme II — Communicating with others (Lessons 3–5: be going to, the future with will, cause/result relationship)"
+        },
+        {
+          "slug": "03-social-life",
+          "notion": "Theme III — Social Life (Lessons 6–7 + Progress Check 1: either in end position, the present perfect progressive)"
+        },
+        {
+          "slug": "04-social-problems",
+          "notion": "Theme IV — Social Problems (Lessons 9–11: countable/uncountable nouns, the superlative, causative verbs)"
+        },
+        {
+          "slug": "05-attitudes-and-values",
+          "notion": "Theme V — Attitudes and Values (Lessons 12–14: cause/result linkers, imperatives, question tags)"
+        },
+        {
+          "slug": "06-rights-and-duties",
+          "notion": "Theme VI — Rights and Duties (Lessons 15–16 + Progress Check 2: the passive voice, a little/a few/a lot of)"
+        },
+        {
+          "slug": "07-education",
+          "notion": "Theme VII — Education (Lessons 18–19: reflexive pronouns, ought to / needn't / had better / should have)"
+        },
+        {
+          "slug": "08-professional-life",
+          "notion": "Theme VIII — Professional Life (Lessons 20–22: should have + past participle, purpose clauses, used to)"
+        },
+        {
+          "slug": "09-media-and-arts",
+          "notion": "Theme IX — Media and Arts (Lessons 23–24: parallel increase, any/some/no/nobody)"
+        },
+        {
+          "slug": "10-science-and-technology",
+          "notion": "Theme X — Science and Technology (Lessons 25–26: reported speech, gradual increase/decrease)"
+        },
+        {
+          "slug": "11-ecology",
+          "notion": "Theme XI — Ecology (Lessons 27–29 + Progress Check 3: adverbs of degree, not only… but also)"
+        }
+      ]
+    },
+    {
+      "id": "english-2eme-sec-info",
+      "name": "English",
+      "contentLanguage": "en",
+      "chapters": [
+        {
+          "slug": "01-family-life",
+          "notion": "Theme I — Family life (Lessons 1–2: expressing want/desire, narrating past events, the present perfect)"
+        },
+        {
+          "slug": "02-communicating-with-others",
+          "notion": "Theme II — Communicating with others (Lessons 3–5: be going to, the future with will, cause/result relationship)"
+        },
+        {
+          "slug": "03-social-life",
+          "notion": "Theme III — Social Life (Lessons 6–7 + Progress Check 1: either in end position, the present perfect progressive)"
+        },
+        {
+          "slug": "04-social-problems",
+          "notion": "Theme IV — Social Problems (Lessons 9–11: countable/uncountable nouns, the superlative, causative verbs)"
+        },
+        {
+          "slug": "05-attitudes-and-values",
+          "notion": "Theme V — Attitudes and Values (Lessons 12–14: cause/result linkers, imperatives, question tags)"
+        },
+        {
+          "slug": "06-rights-and-duties",
+          "notion": "Theme VI — Rights and Duties (Lessons 15–16 + Progress Check 2: the passive voice, a little/a few/a lot of)"
+        },
+        {
+          "slug": "07-education",
+          "notion": "Theme VII — Education (Lessons 18–19: reflexive pronouns, ought to / needn't / had better / should have)"
+        },
+        {
+          "slug": "08-professional-life",
+          "notion": "Theme VIII — Professional Life (Lessons 20–22: should have + past participle, purpose clauses, used to)"
+        },
+        {
+          "slug": "09-media-and-arts",
+          "notion": "Theme IX — Media and Arts (Lessons 23–24: parallel increase, any/some/no/nobody)"
+        },
+        {
+          "slug": "10-science-and-technology",
+          "notion": "Theme X — Science and Technology (Lessons 25–26: reported speech, gradual increase/decrease)"
+        },
+        {
+          "slug": "11-ecology",
+          "notion": "Theme XI — Ecology (Lessons 27–29 + Progress Check 3: adverbs of degree, not only… but also)"
+        }
+      ]
+    }
   ]
 }
