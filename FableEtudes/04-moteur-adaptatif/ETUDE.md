@@ -343,6 +343,23 @@ capté server-side à chaque soumission.
 
 ### Phase A1 (la révision devient un produit) — EN COURS
 
+- **2026-07-31 — A1.2a livrée** (arena#689, correctif de test arena#691) : `get_attempt_review`
+  rend `misconception_tag` (le tag de l'option **choisie**, et seulement sur une réponse fausse)
+  + `chapter_id`, sans qu'une porte bouge. Stop-point **D-A1.2-2 tenu**, et **encodé en attaque** :
+  trois assertions pgTAP rejouent l'élimination par la map plutôt que le cas nominal.
+- **2026-07-31 — A1.2b livrée** (arena#695). Elle a dû **corriger D-A1.2-3**, fondée sur une
+  surface de compilation client qui **n'existe pas** : le registre n'est lu que par `build.ts` et
+  `qa.ts`, et depuis la scission `content/` n'est pas dans le dépôt public au build. Les libellés
+  passent donc **par la base**, par le canal des compétences (é07). L'intention est préservée : la
+  fonction SQL rend un ID, le registre reste source unique, une reformulation reste une correction
+  de registre sans migration.
+- **2026-08-03 — le geste « m'entraîner » livré** (arena#707, arbitrage **A12**) : un champ
+  `competency` dans le registre traduit l'erreur en compétence, et le bouton réutilise
+  `get_exercises_for_competency` — R-A1.2-6 tenu, aucun second chemin de remédiation.
+- ⚠️ **La phase A1.2 est complète en CODE et muette en PROD** : le corpus ne porte **aucun** tag
+  de misconception (0 occurrence sur ~18 700 questions, mesuré le 2026-07-31). Rien ne s'allumera
+  avant **C4bis**, le pilote de tagging `math` 9ᵉ (arbitrage A11).
+
 - **2026-07-20 — A1.1 livrée** (#581) : RPC `get_daily_plan` (migration
   `20260721120000_daily_plan_rpc.sql`) + panneau `DailyReviewPanel` sur le dashboard, ≤ 3 items
   triés par retard SM-2 et priorité misconceptions. Première sortie visible du moteur adaptatif :
