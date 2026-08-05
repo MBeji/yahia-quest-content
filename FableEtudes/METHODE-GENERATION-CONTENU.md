@@ -84,6 +84,7 @@ pour chaque UNITÉ de la file (couple niveau × matière, ou document libre) :
   LOT B — LE CONTENU : B1 brief + skills → puis PAR TRANCHE de ≤4 chapitres complets :
                        B2 génération (commit local par chapitre) → B3 gates + push
                        → 1 PR → merge → apply-content dispatché + prod vérifiée
+                       → issue `content-drift` close (sinon la prod est en retard)
                        → tranche suivante, jusqu'à la matière complète
   contexte frais → on re-présente l'état et on DEMANDE l'unité suivante (§ Phase 0.4)
 fin : PORTEE épuisée, ou arrêt propre (BUDGET) → rapport de campagne
@@ -766,7 +767,12 @@ Quand la file est épuisée (ou à l'arrêt propre), rapporter au contributeur :
   volume écrit) ;
 - l'état de la **publication** (`apply-content` dispatché, run vert, ligne `content_releases`) et
   celui de l'**ouverture** (migration `open_*` du dépôt moteur portée, ou restant à faire — R-8) :
-  ce sont les deux gestes qui rendent le travail visible aux élèves, et aucun gate ne les réclame ;
+  ce sont les deux gestes qui rendent le travail visible aux élèves. Depuis le 2026-08-03, la
+  publication a **une** garde — `content-drift.yml` tient une issue `content-drift` ouverte tant
+  qu'un sujet de `main` n'est pas en prod, et la referme d'elle-même : la question de fin de
+  session n'est plus « la PR est-elle mergée ? » mais **« l'issue est-elle close ? »**. Elle
+  constate, elle n'empêche pas — entre le merge et son passage suivant (push sur `content/`, ou
+  06:40 UTC), la prod reste en retard. L'**ouverture**, elle, n'a toujours aucune garde ;
 - couples sautés et pourquoi (déjà `[~]`, source indisponible, matière annexe…) ;
 - ce qui reste dans `_INDEX.md` / la matrice lycée pour la campagne suivante.
 
