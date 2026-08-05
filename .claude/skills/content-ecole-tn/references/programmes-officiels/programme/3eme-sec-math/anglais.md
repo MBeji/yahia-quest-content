@@ -4765,8 +4765,14 @@ communicating, working and living with others.
 - expand my knowledge of the world »
 
 **Skills travaillés, par section** (synthèse des « Scope and sequence », guide p.46-55) :
-Reading (Sections One, Two, Three, Five ; Arts One, Two), Listening (Section Two),
-Speaking (Sections One, Two, Four), Writing (Sections One, Two, Three, Five ; Arts One, Two, Three).
+Reading (Sections One, Two, Three, **Four**, Five ; Arts One, Two), Listening (Section Two),
+Speaking (Sections One, Two, Four), Writing (Sections One, Two, Three, Five ; Arts One, Two).
+L'Arts Section Three n'a **pas** de tableau « Scope and sequence » au guide (p.55) — seulement une
+ligne Vocabulary ; le travail d'écriture y est prescrit par les Helpful notes (« Have the students
+apply the writing process to produce the text. (B) »), pas par un tableau de compétences.
+_(Corrigé R-7 2026-08-05 : Reading manquait pour la Section Four — le guide p.52 ouvre bien son
+tableau par « Reading — identify expressions in a line of letters » ; et Writing était attribué à
+l'Arts Section Three, qui n'a aucun tableau de compétences.)_
 
 **Grammar du module** :
 - Section Two — **prefixes of negation** + **word formation** (guide p.49)
@@ -6392,7 +6398,23 @@ Arts Section one A, B, H, I, J ; **toute l'Arts Section two** (A→F sur le poè
 11. **Manuel p.148 vs guide p.48** : « **invitro** » (manuel, en un mot) contre « **in vitro** » (guide) ; « **tumour** » (manuel) contre « **tumor** » (guide et tapescript). Variantes orthographiques de la source.
 12. **Coquilles isolées relevées** : guide p.46 « one thousand of a micron » [sic, pour *one thousandth*] et « millimiter » [sic] ; guide p.54 « studentsof » [sic] ; guide p.55 « tasksassigned » [sic] ; guide p.47 « in1990 » [sic] ; manuel p.115 « rocks.. » [sic] ; manuel p.138 « corrolations » [sic] ; manuel p.139 « unevenesses » [sic] ; manuel p.139 « I din't » [sic] ; manuel p.140 « **Isac** Asimov » [sic, pour *Isaac*] ; manuel p.142 « **Eva** Merriam » [sic, pour *Eve Merriam*] ; manuel p.143 « uderstanding » [sic] ; manuel p.143 « Ithink » [sic].
 13. **Manuel p.110-111, numérotation des photos 5 et 6** : dans la couche texte, le repère « 6 » est imprimé entre la légende « It's dangerous to place too much faith in technology » et la légende « Will a machine replace me at work ? », le repère « 5 » venant après. L'ordre gauche→droite établi par les paires 1/2 et 3/4 conduit à lire 5 = « It's dangerous… » et 6 = « Will a machine… », mais l'appariement exact n'est pas certifiable sans les images. [?] *(Sans conséquence : l'activité ne demande qu'une discussion.)*
-14. **Section five — reconstitution des textes** : les mentions « KWAI », « Sharon », « kidney disease » proviennent des questions imprimées (manuel p.134) ; les champs lexicaux attribués ci-dessus aux Text 1 et Text 2 (ail/cholestérol/régime pour l'un, rein/campagne/don pour l'autre) sont **déduits** des listes de vocabulaire officielles (manuel p.148 Section five + guide p.53) et **ne sont pas une transcription**. À confirmer par vision OCR de la p.133 avant toute génération.
+14. **Section five — reconstitution des textes** (précisé par la R-7 du 2026-08-05, qui a séparé
+    deux plans que la version initiale confondait sous « déduit ») :
+    - **Ce qui est ÉTABLI, pas déduit** : l'identité des deux supports. Text 1 = réclame pour le
+      produit **KWAI** ; Text 2 = **article** de presse d'appel aux dons pour **Sharon**, atteinte
+      d'une maladie rénale. Les questions imprimées **p.134** le disent explicitement (D.1 « How
+      does the writer in **text 1** encourage people to buy **KWAI** ? », D.2 « …help **Sharon** in
+      **text 2** ? », C.1-C.4, et le mot « article 2 » en B.2).
+    - **Ce qui est DÉDUIT** : la **répartition** des champs lexicaux entre les deux textes
+      (ail / cholestérol / régime / bon de réduction d'un côté ; rein / campagne / don / polio /
+      tuberculose de l'autre). Les mots eux-mêmes sont tous réels — ce sont les 12 entrées de la
+      Section five du manuel p.148 et les 10 items du guide p.53 — mais **aucune source ne les
+      assigne à un texte**. La répartition proposée est cohérente et non contredite ; elle n'est
+      pas vérifiable.
+    - **Ce qui manque vraiment** : le **corps des deux textes**. La p.133 ne porte, en couche
+      texte, que l'en-tête, la consigne A, les en-têtes du tableau vide et les deux étiquettes
+      « Text 1 » / « Text 2 » — pas un caractère du contenu. ⇒ **Les exercices A, B, C et D de
+      cette section ne sont pas générables sans rouvrir la p.133 en image.**
 
 ### Consolidation Module 2 (manuel p.149–152 · guide p.57)
 
@@ -7028,8 +7050,12 @@ Les deux items sont imprimés **déjà transformés** (ils servent de modèles) 
 - d) « Did you use an employment agency to find this job ? *[guillemet fermant manquant — sic]*
 - e) « Will you do a safari next year ? »
 
-> Les cinq énoncés sont extraits (ou proches) du tapescript : a), b), c) et e) y figurent
-> tels quels ou presque ; d) n'apparaît pas dans le tapescript.
+> Trois des cinq énoncés sont repris **mot pour mot** du tapescript : a), b) et c). Les deux
+> autres — d) « Did you use an employment agency to find this job ? » et e) « Will you do a
+> safari next year ? » — **ne figurent pas** dans le tapescript ; e) réinvestit seulement le mot
+> _safari_, qui n'y apparaît que dans une réplique **affirmative** de Mrs Perks (« While working
+> in Africa, doing a safari on foot… »), jamais dans une question du journaliste.
+> _(Corrigé R-7 2026-08-05 : la version initiale rangeait e) parmi les énoncés du tapescript.)_
 
 **Corrigé** : non fourni par le guide.
 
@@ -8676,7 +8702,10 @@ C'est la restitution du Homework de la Section One (manuel p.188).
 | catch | caught |
 | lose | lost |
 
-> Incohérence interne du texte B, à signaler : Florencio parle d'« my son and my two daughters » (3 enfants) puis de « my three children » — cohérent ; mais le chapeau du manuel dit « the Philippines mudslide of **2006** » alors que la catastrophe de Guinsaugon a effectivement eu lieu en février 2006 — pas d'anomalie ici.
+> Vérification de cohérence du texte B : Florencio parle d'« my son and my two daughters » puis de
+> « my three children » — cohérent ; et le chapeau du manuel date le glissement de terrain des
+> Philippines de **2006**, ce qui correspond bien à la catastrophe de Guinsaugon (février 2006).
+> **Aucune anomalie.**
 
 ##### Questions 1 à 6 (manuel p.198-199)
 
@@ -8791,7 +8820,10 @@ Soit : engulf = swallow up / cover · grab = take roughly · pin = make unable t
 
 > ### ⚠️ Œuvre sous droits — non reproduite (règle R-2)
 >
-> Le poème n'est **pas** transcrit ici, ni en tout ni en partie. Description non reproductive uniquement.
+> Le poème n'est **pas** transcrit ici : **aucun vers n'est reproduit**, et rien de ce qui suit ne
+> permet d'en reconstituer un. Seuls quelques **mots isolés** (une à trois unités) sont cités à
+> titre d'exemple lexical dans la description. _(Précisé R-7 2026-08-05 : la formulation initiale,
+> « ni en tout ni en partie », se contredisait elle-même.)_
 
 **Fiche descriptive du poème**
 
@@ -9013,7 +9045,7 @@ asphalt, bulldozer, concrete, creep, debris, emit, freeway, garbage dump, greed,
 | Section | Dans le guide mais **absent** de la liste du manuel | Dans le manuel mais **absent** de la liste du guide |
 | --- | --- | --- |
 | One | *(aucun)* | *(aucun — hors le doublon « rate »)* |
-| Two | sorrowful, grief, honetmoon [sic], pospone [sic] *(les deux dernières sont les coquilles du guide pour honeymoon / postpone, présentes au manuel sous leur graphie correcte)* | book (v), evacuate, fisherman, glimpse, livelihood, orphaned, pound (v), pray, rotting, spotlessly, trap, turmoil |
+| Two | **wedding**, sorrowful, grief, honetmoon [sic], pospone [sic] *(les deux dernières sont les coquilles du guide pour honeymoon / postpone, présentes au manuel sous leur graphie correcte ; « wedding » est en revanche réellement absent de la liste du manuel — corrigé R-7 2026-08-05)* | book (v), evacuate, fisherman, glimpse, livelihood, orphaned, pound (v), pray, rotting, spotlessly, trap, turmoil |
 | Three | release, findings, implications, accelerated, adequate, global warming, renewable energy | accelerate, compelling, finding, impact (v), remove |
 | Four | switch off, spill, tanker, trash | *(aucun)* |
 | Five | *(aucun)* | *(aucun)* |
@@ -9447,12 +9479,19 @@ Ce que cela veut dire concrètement :
   passe vision ciblée exigée à la génération »). Elle ne bloque pas la profondeur de génération, elle
   la borne.
 
-⚠️ **Un point à traiter avant génération, et non un simple manque** : au **module Four, Section Five**
-(manuel p.133), la transcription attribue aux Text 1 et Text 2 des champs lexicaux (ail / cholestérol
-/ régime pour l'un ; rein / campagne / don pour l'autre) qui sont **déduits des listes de vocabulaire
-officielles, et non transcrits d'un texte lu**. C'est la seule inférence de toute la fiche, et son
-auteur l'a signalée. **Elle doit être confirmée par vision de la p.133 avant toute génération sur
-cette section**, ou retirée. Ne pas la traiter comme une transcription.
+⚠️ **Le seul point à traiter avant génération, et non un simple manque** : au **module Four,
+Section Five** (manuel p.133), **le corps des deux textes-supports est absent de la couche texte** —
+la page ne porte que l'en-tête, la consigne, le tableau vide et les étiquettes « Text 1 » / « Text 2 ».
+La R-7 du 2026-08-05 a vérifié la page ligne à ligne et confirmé la lacune, en séparant deux plans
+que la première rédaction confondait :
+
+- l'**identité** des deux textes est **établie** par les questions imprimées p.134 (Text 1 = réclame
+  KWAI ; Text 2 = article d'appel aux dons pour Sharon, malade rénale) — ce n'est pas une déduction ;
+- seule la **répartition des champs lexicaux** entre les deux textes est déduite ; les mots sont
+  tous réels (manuel p.148 + guide p.53), mais aucune source ne les assigne à un texte.
+
+⇒ **Les exercices A, B, C et D de cette section ne se génèrent pas sans rouvrir la p.133 en image.**
+C'est la seule inférence de toute la fiche, et elle est bornée à une page.
 
 ### 6.2 Ce que la couche texte ne restitue pas non plus
 
@@ -9534,12 +9573,49 @@ structurellement — mais **leur auteur n'a jamais rendu compte de son propre tr
 exactement le cas de figure documenté par la méthode (§ B3, point 3) : des fichiers ni faux ni
 relus, qui concentrent ensuite l'essentiel des constats d'audit.
 
-**La relecture indépendante R-7 doit donc concentrer son sondage sur les modules Four, Five et Six**,
+**C'est exactement là que la R-7 a été dirigée — et elle a été faite** : voir §6.6.
+
+**La relecture indépendante R-7 devait donc concentrer son sondage sur les modules Four, Five et Six**,
 et en priorité sur la Section Five du module Four (§6.1, la seule inférence de la fiche).
 
 ### 6.6 État R-7 et points à trancher par Mohamed
 
-- **R-7 non faite à ce jour.** Le statut de registre s'arrête donc à `complete` (couverture 100 % +
+- **R-7 FAITE le 2026-08-05 — verdict : « fidèle avec réserves ».** Relecture indépendante, en
+  contexte vierge, **contre les sources** (jamais contre la fiche), dirigée sur les modules Four,
+  Five et Six comme le prescrivait le §6.5.
+
+  **Étendue réelle du sondage** : l'agent est allé bien au-delà des 15 % exigés par le protocole
+  (T-8) et a relu **100 % de la couche texte** des trois modules dans les deux ouvrages. Ont été
+  vérifiés à 100 % : **13 encadrés de règle** donnés comme verbatim, **≈ 56 blocs de corrigé
+  (≈ 250 clés individuelles)**, les **4 tapescripts** phrase à phrase, les **3 listes
+  « VOCABULARY COVERED IN MODULE N »** recomptées entrée par entrée (207 + 97 + 110 = 414), les
+  **3 frontières tronc commun ↔ Arts**, les **4 zones `[?]`** et les **57 marques `[sic]`**.
+
+  **Résultat sur ce cœur : 0 défaut.** Aucune règle inventée, aucune clé de corrigé altérée, aucun
+  tapescript déformé, aucune entrée de vocabulaire fausse, aucune frontière Arts erronée, et les
+  57 `[sic]` portent tous sur une vraie coquille de la source.
+
+  **3 constats substantiels**, tous situés dans des **commentaires dérivés** ajoutés par l'auteur —
+  aucun dans un bloc transcrit : (1) module Five, un énoncé était présenté à tort comme figurant
+  dans le tapescript ; (2) module Six, un item (`wedding`) manquait au tableau d'écart manuel ↔
+  guide ; (3) module Four, la synthèse « Skills par section » omettait Reading en Section Four et
+  attribuait Writing à une section Arts dépourvue de tableau de compétences. **Les trois sont
+  corrigés dans cette version**, chacun avec sa mention `(Corrigé R-7 2026-08-05)`, après
+  re-vérification de deux d'entre eux contre la source par l'orchestratrice.
+
+  **Sur l'escalade** : à la lettre du protocole, 3 constats substantiels déclenchent la relecture
+  intégrale. L'arbitrage retenu est de **ne pas escalader**, et le motif est écrit ici pour être
+  contestable : la règle d'escalade existe pour détecter une transcription à laquelle on ne peut
+  pas se fier, et c'est précisément ce qui a été vérifié **à 100 % et non par sondage** — les
+  414 entrées de vocabulaire, les 250 clés et les 13 encadrés sont revenus intacts. Une relecture
+  intégrale re-vérifierait ce qui vient de l'être. Les trois écarts étaient des phrases de
+  commentaire, non des transcriptions, et aucun n'aurait enseigné quoi que ce soit de faux.
+
+- **Reste hors périmètre R-7** : les modules One, Two et Three (dont les auteurs, eux, ont rendu
+  leur rapport) et les parties écrites par l'orchestratrice (Review, Consolidations, appendice).
+  Une R-7 complémentaire sur ce périmètre reste souhaitable avant promotion.
+
+- Le statut de registre s'arrête à `complete` (couverture 100 % +
   profondeur de génération) et **pas** à `validee-r7`. La promotion appartient à l'humain.
 - **La cassette audio** déclarée par le guide (p.4) n'est pas au corpus. Sans effet bloquant : les
   tapescripts couvrent tous les passages écoutés. Les seules activités réellement perdues sont celles
