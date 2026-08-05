@@ -1,0 +1,12 @@
+# 📜 Résumé : Souvenirs et nostalgie — rapporter la parole, entrer dans l'épreuve
+
+- **Les trois formes du discours rapporté** : le **direct** reproduit les paroles telles qu'elles ont été prononcées (guillemets) · l'**indirect** les subordonne à un verbe introducteur (_dire, annoncer, prétendre, demander_) · l'**indirect libre**, procédé essentiellement littéraire, combine l'absence de subordination et les marques d'oralité du direct avec la transformation des pronoms et des temps de l'indirect.
+- **Les trois familles de verbes introducteurs** : **déclaration** (déclarer, annoncer, expliquer, prévenir, avouer, s'écrier…) · **demande** (demander, prier, interroger, questionner, supplier…) · **réponse** (répondre, répliquer, ajouter, refuser, interrompre…). Le choix du verbe porte un jugement sur les paroles rapportées.
+- **La concordance des temps** ne s'applique que si le **verbe introducteur est au passé** : présent → **imparfait**, passé composé → **plus-que-parfait**, futur simple → **conditionnel présent**, futur antérieur → **conditionnel passé**, impératif → **de + infinitif**. Verbe introducteur au présent ⇒ **rien ne change**.
+- **Les repères de temps et de lieu se déplacent aussi** : _aujourd'hui_ → **ce jour-là**, _hier_ → **la veille**, _demain_ → **le lendemain**, _maintenant_ → **alors**, _ici_ → **là**.
+- **L'interrogation rapportée** perd l'inversion et le point d'interrogation ; la question totale se subordonne par **si** (_« Viendras-tu ? »_ → _il demanda **si** je viendrais_).
+- **Vocabulaire** : un mot **monosémique** n'a qu'un sens, un mot **polysémique** en change selon le **contexte** ; les **synonymes** ont un sens voisin, les **antonymes** un sens opposé.
+- **L'étude de texte** en quatre temps : comprendre l'énoncé de la question · rechercher les éléments de réponse · rédiger · réviser et améliorer la rédaction.
+- **L'essai** : un sujet comporte une **citation** (ou une pensée), une **question** et une **consigne** — les isoler avant d'écrire. L'**introduction** amène le sujet, établit la **problématique** (reformuler la question posée) et annonce le plan.
+- **Lire une image** : contrairement au texte, elle donne toutes ses informations **simultanément**. Axes de lecture : composition, lumière, couleur, formes, point de vue, traitement des thèmes.
+- **Versification** : **alexandrin** = 12 syllabes, **décasyllabe** = 10, **octosyllabe** = 8 ; bien lire un vers, c'est respecter le nombre des syllabes et les liaisons.
