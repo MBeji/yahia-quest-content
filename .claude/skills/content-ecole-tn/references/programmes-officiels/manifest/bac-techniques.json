@@ -1,0 +1,43 @@
+{
+  "grade": "bac-techniques",
+  "sealed": false,
+  "source": "CNP — manuel élève officiel « Au gré des textes », français, 4ème année de l'enseignement secondaire (code 221402P00, 264 p.). Aucun guide enseignant au corpus pour ce couple ⇒ le manuel élève fait référence (profil ecole-secondaire). La PAGE DE TITRE (p. 1) nomme les cinq sections desservies, une par une : Mathématiques, Sciences techniques, Économie et gestion, Sciences expérimentales, Sciences de l'informatique — c'est un constat, pas une déduction. bac-lettres a son propre manuel (221421) et n'est PAS desservi. Transcription : programme/bac-math/francais.md ; registre : suivi/bac-math.json (entrée « francais »).",
+  "note": "sealed=false (advisory). Ce manifeste ne porte pour l'instant QUE le français : les dominantes de la section Sciences techniques restent à transcrire (elles ne se partagent jamais entre sections — voir docs/lycee-architecture.md §3.1). ▸ Le français vient d'un dossier de contenu MUTUALISÉ : content/french-bac/ déclare compileTo vers les 5 sujets french-bac-* (étude 16 D-4). Le chapitrage ci-dessous est donc IDENTIQUE dans manifest/bac-math, bac-sciences-exp, bac-eco-gestion, bac-techniques et bac-info — c'est le même manuel, donc le même programme. Toute évolution du chapitrage doit être répercutée sur les 5 à la fois.",
+  "subjects": [
+    {
+      "id": "french-bac-techniques",
+      "name": "Français",
+      "contentLanguage": "fr",
+      "chapters": [
+        {
+          "slug": "01-souvenirs-et-nostalgie",
+          "notion": "Module d'apprentissage N°1 « Souvenirs et nostalgie » — le discours rapporté ; l'étude de texte (répondre à une question de compréhension) ; l'essai (p. 6-50)"
+        },
+        {
+          "slug": "02-histoires-d-amour",
+          "notion": "Module d'apprentissage N°2 « Histoires d'amour » — récit et discours ; la caractérisation (p. 51-94)"
+        },
+        {
+          "slug": "03-liberte-j-ecris-ton-nom",
+          "notion": "Module d'apprentissage N°3 « Liberté, j'écris ton nom… » — la comparaison et la métaphore ; la nominalisation (p. 95-130)"
+        },
+        {
+          "slug": "04-le-silence-de-la-mer",
+          "notion": "Module de lecture 1 — « Le silence de la mer » de Vercors : lecture d'une œuvre intégrale (p. 131-149)"
+        },
+        {
+          "slug": "05-guerre-et-paix",
+          "notion": "Module d'apprentissage N°4 « Guerre et Paix » — le conditionnel et le subjonctif (p. 150-188)"
+        },
+        {
+          "slug": "06-l-homme-et-la-science",
+          "notion": "Module d'apprentissage N°5 « L'Homme et la Science » — l'expression de l'opinion ; bilan des apprentissages de l'étude de texte (p. 189-222)"
+        },
+        {
+          "slug": "07-la-cantatrice-chauve",
+          "notion": "Module de lecture 2 — « La Cantatrice chauve » d'Eugène Ionesco : lecture d'une œuvre intégrale, théâtre de l'absurde (p. 223-262)"
+        }
+      ]
+    }
+  ]
+}

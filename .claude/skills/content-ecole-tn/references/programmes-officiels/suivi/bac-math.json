@@ -2,6 +2,32 @@
   "grade": "bac-math",
   "fiches": [
     {
+      "matiere": "francais",
+      "statut": "complete",
+      "profondeur": "generation",
+      "sources": [
+        {
+          "code": "221402",
+          "tomes": ["P00"],
+          "role": "eleve",
+          "pagesTotal": 264,
+          "pagesLues": "integral"
+        }
+      ],
+      "sujets": [
+        "french-bac-math",
+        "french-bac-sciences-exp",
+        "french-bac-eco-gestion",
+        "french-bac-techniques",
+        "french-bac-info"
+      ],
+      "sourcesLibres": [],
+      "r7": null,
+      "maj": "2026-08-05",
+      "par": "claude/campagne",
+      "notes": "Manuel élève CNP « Au gré des textes » (221402P00, 264 p.), 4ème année de l'enseignement secondaire. AUCUN guide enseignant au corpus ⇒ le manuel élève fait référence (profil ecole-secondaire). ▸ ⚭ MUTUALISATION ×5 — CONSTAT, PAS DÉDUCTION : la PAGE DE TITRE (p. 1) énumère les cinq sections desservies une par une — « Mathématiques · Sciences techniques · Économie et gestion · Sciences expérimentales · Sciences de l'informatique ». ÉCO-GESTION EST DONC BIEN COUVERTE, et la question laissée ouverte par docs/lycee-architecture.md §3.1 (« rattachement d'éco-gestion déduit par élimination, à confirmer en L1 ») est CLOSE pour le français. À noter : le titre arabe du catalogue CNP (« فرنسية_شعب علمية », sections scientifiques) est un RACCOURCI qui décrit mal son propre contenu — il annonce un groupe scientifique alors que le manuel nomme aussi une section qui ne l'est pas. La question reste OUVERTE pour l'arabe et la philosophie : leurs manuels n'ont pas été lus ici, ne pas leur étendre ce constat. bac-lettres a son propre manuel (221421P00, « فرنسية_شعبة الآداب ») et n'est PAS desservi : c'est un dossier distinct, à traiter séparément. ▸ TRANSCRIPTION INTÉGRALE (p. 1-264) à PROFONDEUR DE GÉNÉRATION : chaque activité et chaque exercice décrits individuellement, encadrés « Repères » reproduits verbatim avec leur page, vocabulaire et terminologie officielle relevés, bornes ✅/⛔ posées. Couche-texte saine sur tout l'ouvrage ⇒ extraction déterministe `pdftotext -layout -enc UTF-8`, 0 OCR facturé ; vision 150 dpi ponctuelle (page de titre, pages d'image, encadrés en gras que la couche-texte perd). Page du PDF = page imprimée (offset 0). ▸ DROIT D'AUTEUR (R-2) : le manuel imprime des œuvres sous droits (Vercors p. 132-147 et Ionesco p. 224-260 en intégralité, plus Le Clézio, Éluard, Aragon, Camus, Saint-Exupéry, Céline, Remarque, Pavloff, Prévert, Giraudoux…). La fiche NE LES REPRODUIT PAS : chaque texte est identifié (auteur, œuvre, date, page) et résumé, avec au plus la phrase-pivot sur laquelle porte une question. L'apparat pédagogique, lui, est transcrit intégralement. ▸ CHAPITRAGE : 7 chapitres = les 7 modules du manuel (5 modules d'apprentissage + 2 modules de lecture), codifiés à l'identique dans les 5 manifestes bac-*. Le glossaire (p. 263-264, 55 entrées) est une ressource transverse, pas un chapitre. ▸ ANOMALIES DE LA SOURCE relevées (détail en §6 de la fiche) : les DEUX modules de lecture annoncent une évaluation qu'ils ne fournissent pas — « 8. Evaluation » (p. 149) et « 7. Activité : évaluation » (p. 262) sont des titres SANS AUCUN CONTENU, vérifiés en image ; la p. 175 ne porte que le mot « Ressources : » et rien d'autre ; la numérotation des questions p. 177 saute le 3 ; le manuel attribue la même aquarelle à August Macke (p. 6) et à Paul Klee (p. 31) ; l'encadré de versification p. 41 attribue à Rimbaud un vers du « Lac » de Lamartine ; les 4èmes de couverture p. 46 et p. 47 se contredisent (vingt-deux vs vingt-cinq pays) ; divergence sommaire/légende pour le Picasso (« Olga sur/dans un fauteuil », p. 4 vs p. 75, la légende imprimée a été retenue). Aucune n'a été arbitrée : l'imprimé est recopié tel quel, coquilles suivies de [sic]. Ne jamais les combler par invention en génération. ▸ R-7 NON ENCORE FAITE : la relecture indépendante par sondage dirigé reste à mener avant toute promotion (statut `complete`, pas `validee-r7`). Point à vérifier en priorité, signalé par le transcripteur : l'attribution de « Joute oratoire » (p. 186) à Giraudoux est DÉDUITE du chapeau et des personnages, le manuel ne la crédite pas. ▸ CONTENU : content/french-bac/ (dossier mutualisé, compileTo ×5) — LOT B à mener. ▸ OUVERTURE : bac-math est déjà `available` ; bac-sciences-exp, bac-eco-gestion, bac-techniques et bac-info sont encore `coming_soon` (aucune migration open_*). Leur ouverture est un arbitrage humain, à porter en PR sur le dépôt MOTEUR, jamais ici."
+    },
+    {
       "matiere": "mathematiques",
       "statut": "validee-r7",
       "profondeur": "generation",
