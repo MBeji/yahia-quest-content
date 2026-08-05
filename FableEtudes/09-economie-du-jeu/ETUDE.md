@@ -162,4 +162,41 @@ lots 1–2 ; `npm run verify` inchangé.
 
 ## 8. Journal d'exécution
 
-_(rempli au fil des lots par l'exécuteur : date, lot, PR, écarts acceptés, dettes notées)_
+| date | lot | PR | ce qu'il faut retenir |
+| --- | --- | --- | --- |
+| 2026-08-01 | **Lot 1 — instrumentation** | arena#703 | 5 vues `econ_*` derrière une porte admin unique, page read-only. Deux partis pris de lecture : jamais une moyenne seule (p50/p90/max), et un **tiret** là où il n'y a pas de donnée — « 0 % d'inflation » sur une économie à l'arrêt est un chiffre faux, pas prudent. Vérifié en exécution réelle sur PostgreSQL 16. |
+| 2026-08-03 | **Lot 2 — simulateur** | arena#708 | `economy:check` : 3 personas × 8 semaines, PRNG à graine fixe, hors `verify` (D-4). **Deux garde-fous cassent au premier run** — voir ci-dessous. |
+
+### Ce que le lot 2 a rendu, et qui appelle une décision
+
+**G-1 est faux des deux côtés.** L'assidu atteint le niveau 5 au **jour 6**, le moyen au
+**jour 31**. La fenêtre 7-14 jours ne décrit **aucun** des deux personas : elle décrit une
+cadence d'assidu assignée au moyen. À 3 j/semaine × 2 exercices, 800 XP demandent ~5 semaines —
+le seuil est **arithmétiquement hors d'atteinte**. ⚠️ C'est le SEUIL qui a tort, pas l'économie :
+il est à refixer, probablement **par persona** plutôt qu'en une fenêtre unique.
+
+**G-4 échoue à 38 %** contre 20 % attendus. Là, c'est l'inverse — un vrai signal d'économie : à
+15 coins, le rachat de série est bon marché par rapport au revenu, donc la série s'achète.
+
+**Erreur dans l'énoncé de Q-1 lui-même** : « niveau 5 (1 000 XP) ». Avec `XP_PER_LEVEL = 200`,
+le niveau 5 est à **800 XP** ; 1 000 XP est le niveau 6. Le simulateur suit le NIVEAU.
+
+### D-5 est CORRIGÉE — sa prémisse était fausse (arena#708)
+
+D-5 posait : « les coins gagnés ne sont pas persistés par tentative, donc la vue les RECONSTRUIT
+par la règle canonique (~XP/5, demi-coins 40-59 %) ». Confrontée à son autorité
+(`submit_exercise_attempt`, RISK-3), la règle ne s'y trouve pas :
+
+- **il n'existe aucune règle de demi-coins.** L'éligibilité est **binaire**
+  (`NOT too_fast AND score_pct >= 60 AND score_pct > prev_best`) et décide de l'XP **et** des
+  coins ensemble. La branche « 40-59 % » du lot 1 décrivait un comportement que le moteur n'a
+  jamais eu (elle ne faussait pas les chiffres — `xp_earned` vaut 0 là — mais une vue qui
+  documente une règle inexistante finit par être lue comme la spécification) ;
+- **les coins ne dérivent pas de l'XP** : c'est le forfait `exercises.reward_coins`.
+
+Donc la prémisse tombe : « pas persistés » est vrai de la **colonne**, faux de l'**information**.
+`attempts.xp_earned > 0` signe l'éligibilité, `exercises.reward_coins` donne le montant — le flux
+se **calcule**. `sources_estimated` → `sources_earned`, et la seule inconnue restante est nommée :
+un multiplicateur de potion n'est stocké nulle part, donc les sources sont un **plancher**.
+
+**Lot 3** : toujours conditionnel, non déclenché (la latence RPC est journalisée par le lot 1).
