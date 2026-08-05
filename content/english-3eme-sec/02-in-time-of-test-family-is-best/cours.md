@@ -58,7 +58,7 @@ want  +  object (a person)  +  to  +  base verb
 
 Two details decide the mark:
 
-1. the word after *want* is an **object pronoun** — *me, you, him, her, us, them* — never a subject pronoun;
+1. the word after *want* is the person concerned: a noun (_wants **my brother** to phone_) or, **if it is a pronoun**, an object pronoun — *me, you, him, her, us, them* — never a subject pronoun;
 2. the **to** is compulsory.
 
 > ⚠️ English has **no that-clause after want**. _"My father wants that I choose engineering"_ ✗ → _My father **wants me to choose** engineering_ ✓. This is the single most frequent mistake of French- and Arabic-speaking students, because both languages say it with a subordinate clause.
@@ -95,17 +95,17 @@ You can double your vocabulary of family life without learning a single new root
 | **-ful**  | adjective, "full of" | care → **careful** · use → **useful** · help → **helpful** |
 | **-less** | adjective, "without" | care → **careless** · use → **useless** · help → **helpless** |
 | **-ly**   | adverb              | open → **openly** · polite → **politely** · quiet → **quietly** |
-| **-ment** | noun                | agree → **agreement** · treat → **treatment** · disappoint → **disappointment** |
+| **-ment** | noun                | agree → **agreement** · assign → **assignment** · disappoint → **disappointment** |
 | **-ion**  | noun                | depress → **depression** · frustrate → **frustration** · express → **expression** |
-| **-ness** | noun (from an adjective) | kind → **kindness** · ill → **illness** · sad → **sadness** |
-| **-ance** | noun                | annoy → **annoyance** · appear → **appearance**      |
+| **-ness** | noun (from an adjective) | kind → **kindness** · lazy → **laziness** · sad → **sadness** |
+| **-ance** | noun                | maintain → **maintenance** · appear → **appearance**      |
 
 | Prefix   | Meaning        | Examples                                   |
 | -------- | -------------- | ------------------------------------------ |
 | **un-**  | not, the opposite | **unhappy** · **unkind** · **unfair**   |
 | **im-**  | not (before m, p) | **impossible** · **impolite**           |
-| **in-**  | not            | **inability** · **invisible**              |
-| **dis-** | the opposite of an action | **disagree** · **disrespect** · **disinterest** |
+| **in-**  | not            | **incorrect** · **invisible**              |
+| **dis-** | the opposite of an action | **disagree** · **disrespect** · **disobey** |
 | **mis-** | badly, wrongly | **misunderstand** · **misconduct** · **misbehave** |
 
 > ⚠️ **The reversing prefix is not chosen by a rule — it is learnt with the word.** English says _unkind_ but _impolite_, _disagree_ but _misunderstand_. There is no way to work it out from the sound; the only safe method is to meet the word inside a sentence and keep the pair together.
@@ -118,18 +118,19 @@ English spells more letters than it says. Learn the silent letters in **families
 
 | Silent letter | Where                              | Words                        |
 | ------------- | ---------------------------------- | ---------------------------- |
-| **gh**        | after a vowel                      | ni**gh**t · dau**gh**ter     |
+| **gh**        | after a vowel — **usually**        | ni**gh**t · dau**gh**ter · thou**gh**t — **but not always**: in lau**gh**ter, enou**gh**, cou**gh** it says /f/ |
 | **k**         | before n                           | **k**now · **k**nee          |
-| **b**         | after m                            | com**b** · clim**b**         |
+| **b**         | after m, **and before t**          | com**b** · clim**b** · dou**b**t · de**b**t |
 | **t**         | between s and le / en              | lis**t**en · cas**t**le      |
-| **h**         | at the start of a few words        | **h**our · **h**onest        |
+| **h**         | at the start of a few words, **and after w** | **h**our · **h**onest · **wh**ich · **wh**y |
 | **l**         | before m, k, d                     | ca**l**m · wou**l**d         |
-| **w**         | before r                           | **w**rite · ans**w**er       |
+| **w**         | before r, **and in a few odd words** | **w**rite · **w**rong — ans**w**er · s**w**ord · t**w**o |
 
 And the same letters do **not** always stand for the same sound. Compare:
 
 - **love / above** — the same short vowel, the one in *but*.
 - **daughter / laughter** — one letter apart on the page, two different vowels in the mouth.
+- **the letters _ou_ hide several sounds** — c**ou**sin, y**ou**ng, c**ou**ntry take the vowel of *but*; h**ou**se and m**ou**th take the one of *now*; thr**ou**gh and gr**ou**p take the one of *too*; th**ou**ght and b**ou**ght take the one of *more*.
 - **heart / heard** — the same four opening letters, two different vowels.
 - **child / children** — the same root, a long vowel in the first, a short one in the second.
 
@@ -161,11 +162,10 @@ A conversation about family life needs four kinds of phrase. Keep them ready.
 | **can't help it**                      | be unable to stop yourself                                      |
 | **for heaven's sake**                  | an exclamation of impatience                                    |
 
-## ⚠️ Four traps that cost marks
+## ⚠️ Three traps that cost marks
 
 1. **The that-clause after want.** _"My mother wants that I stay"_ ✗ → _My mother **wants me to stay**_ ✓. And the pronoun is an object: _"wants she to stay"_ ✗ → _**wants her to stay**_ ✓.
 2. **The stray `to` after make, let and have.** _"He makes me to work"_ ✗ → _He **makes me work**_ ✓ · _"They let us to go"_ ✗ → _They **let us go**_ ✓. Only *want* keeps its *to*.
 3. **`will` inside an if-clause.** _"If you will help me, the work goes faster"_ ✗ → _**If you help** me, the work goes faster_ ✓.
-4. **The apostrophe on the wrong side.** _my **sister's** room_ = one sister · _my **sisters'** room_ = at least two. And an irregular plural takes the full **'s**: _the **children's** room_, never "childrens'".
 
 > 🏆 Module one is behind you, hero. You can name what each member of a household actually does, state a rule that works every time, say who forces, who allows and who arranges — and, when the two generations collide, disagree in English without slamming a single door.

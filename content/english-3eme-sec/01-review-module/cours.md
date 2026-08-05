@@ -97,9 +97,9 @@ A text is not a pile of sentences. Three things bind it.
 | **Contrast** | but, however, yet, although | _The road was closed. **However**, we arrived on time._ |
 | **Addition** | and, besides, moreover      | _It was late. **Besides**, we were tired._              |
 
-> ⚠️ **because** and **so** point in opposite directions: _because_ is followed by the **cause**, _so_ by the **result**. Swap them and the sentence states the opposite of what you mean. **In fact** confirms what has just been said; it never contradicts it.
+> ⚠️ **because** and **so** point in opposite directions: _because_ is followed by the **cause**, _so_ by the **result**. Swap them and the sentence states the opposite of what you mean. **In fact** does not set two facts against each other: it either sharpens what has just been said (_It was cold. **In fact**, it was freezing._) or corrects a belief somebody else holds (_Everyone thinks he is French. **In fact**, he is Belgian._). To set a disappointing fact against good news you have just given yourself, you need **however**.
 
-**2. Order.** A paragraph follows a line, usually time, and the markers give it away: _in 1902 … that winter … within two years … then … today_. A sentence opening with **then**, **so** or **however** can never come first: it leans on something that must already be there.
+**2. Order.** A paragraph follows a line, usually time, and the markers give it away: _in 1956 … the following spring … ten years later … after that … now_. A sentence opening with **then**, **so** or **however** can never come first: it leans on something that must already be there.
 
 **3. Reference words.** _he, it, this, these, there, the one_ all point back at something said earlier. When a part has been deleted from a passage, hunt for the word that has lost what it points at — the gap is exactly there.
 
@@ -146,7 +146,7 @@ English rebuilds one word into another with **suffixes**. Read the **slot** firs
 
 | You need         | Where it sits                        | Common endings                      | Example                    |
 | ---------------- | ------------------------------------ | ----------------------------------- | -------------------------- |
-| A **noun**       | after _the, a, every_, or before _of_ | -tion, -ment, -ness, -ity, -ty      | _decide → **decision**_    |
+| A **noun**       | after _the, a, every_, or before _of_ | -tion/-sion, -ment, -ness, -ity, -ty | _decide → **decision**_    |
 | An **adjective** | before a noun, or after _be / seem_  | -al, -ful, -less, -ous, -ive, -y    | _care → **careful**_       |
 | An **adverb**    | beside a verb                        | -ly                                 | _careful → **carefully**_  |
 | A **verb**       | after a subject                      | -ise/-ize, -en, -ify                | _strong → **strengthen**_  |
