@@ -8,20 +8,36 @@
       "sources": [
         {
           "code": "222445",
-          "tomes": ["P00"],
+          "tomes": [
+            "P00"
+          ],
           "role": "eleve",
           "pagesTotal": 207,
-          "pagesLues": [[1, 207]]
+          "pagesLues": [
+            [
+              1,
+              207
+            ]
+          ]
         },
         {
           "code": "222446",
-          "tomes": ["P00"],
+          "tomes": [
+            "P00"
+          ],
           "role": "eleve",
           "pagesTotal": 230,
-          "pagesLues": [[1, 230]]
+          "pagesLues": [
+            [
+              1,
+              230
+            ]
+          ]
         }
       ],
-      "sujets": ["math-bac-math"],
+      "sujets": [
+        "math-bac-math"
+      ],
       "sourcesLibres": [],
       "r7": {
         "date": "2026-07-19",
@@ -32,6 +48,91 @@
       "maj": "2026-07-19",
       "par": "bejimed",
       "notes": "LOT A COMPLET : manuel officiel CNP 4eme Math section Mathematiques (Bac) integralement transcrit a profondeur de generation. Tome 1 Analyse (222445, 207 p., ch.1-9) + tome 2 Algebre/Geometrie/Probabilites (222446, 230 p., ch.10-19) = 19 chapitres, manuel eleve seul (pas de guide au corpus) => fait reference. Livre en 9 paliers/PR (auto-merge) sur 2026-07-18/19. R-7 independant par chapitre : CONFORME partout, corrections mineures appliquees ch.1 (3 forme), ch.4 (VF-5 f'->f), ch.7 (Activite 2 p.140 + note Ex.28), ch.11 (etiquette page), ch.15 (V.2 ajoutee inventaire). Statut validee-r7 (PAS promue : reserve a l'humain). => LOT B (generation du contenu content/math-bac-math) desormais AUTORISE."
+    },
+    {
+      "matiere": "anglais",
+      "statut": "partielle",
+      "profondeur": "mixte",
+      "sources": [
+        {
+          "code": "641404",
+          "tomes": [
+            "P00"
+          ],
+          "role": "enseignant",
+          "pagesTotal": 56,
+          "pagesLues": "integral"
+        },
+        {
+          "code": "241403",
+          "tomes": [
+            "P00"
+          ],
+          "role": "eleve",
+          "pagesTotal": 280,
+          "pagesLues": [
+            [
+              1,
+              234
+            ]
+          ]
+        }
+      ],
+      "sujets": [
+        "english-bac-math",
+        "english-bac-sciences-exp",
+        "english-bac-lettres",
+        "english-bac-eco-gestion",
+        "english-bac-techniques",
+        "english-bac-info"
+      ],
+      "sourcesLibres": [],
+      "chapitresGeneration": [
+        "01-checking-year-3-programme",
+        "02-first-impressions",
+        "03-holidaying",
+        "04-space-tourism",
+        "05-art-shows",
+        "06-exploring-a-song",
+        "07-walking-tour",
+        "08-a-package-tour",
+        "09-at-the-travel-agency",
+        "10-put-a-little-drama-in-your-travel",
+        "11-the-winters-tale",
+        "12-school-related-words",
+        "13-education-for-all",
+        "14-virtual-schools",
+        "15-online-learning",
+        "16-comparing-educational-systems",
+        "17-age-or-ability",
+        "18-lifelong-learning",
+        "19-reading-the-back-cover-of-a-book",
+        "20-alexander-graham-bell",
+        "21-check-your-language-and-skills-1",
+        "22-inventions-related-words",
+        "23-technology-a-blessing-in-disguise",
+        "24-the-father-of-playstation",
+        "25-prize-winners",
+        "26-women-choose-to-opt-out",
+        "27-the-brain-drain",
+        "28-scientists-achievements",
+        "29-the-daffodils",
+        "30-writing-an-argumentative-text",
+        "31-check-your-punctuation",
+        "32-life-concerns",
+        "33-attitudes",
+        "34-if-a-poem-by-kipling",
+        "35-consumerism",
+        "36-ecodriving",
+        "37-urban-exodus",
+        "38-a-newscast",
+        "39-staff-management",
+        "40-job-ads"
+      ],
+      "r7": null,
+      "maj": "2026-08-04",
+      "par": "bejimed",
+      "notes": "⚭ MUTUALISATION 1 source → 6 sujets. L'anglais est la seule matière du bac dont le manuel ne se dédouble pas : un code unique (241403 élève + 641404 guide) sert les six sections. Cette fiche unique porte donc le scope des six sujets compilés (R-4 : une source = une fiche) ; les cinq ids hors bac-lettres remontent en avertissement de mutualisation, comportement prévu. Fiche portée par bac-math, PREMIÈRE SECTION DE L'ORDRE CANONIQUE de docs/lycee-architecture.md §2 — règle mécanique et non sémantique, alignée sur l'anglais 3ème sec (#129) qui a tranché le même cas un an plus bas. Pas sous le créneau d'année `bac` : c'est un nœud legacy non sélectionnable sans manifeste, et y placer la fiche désarmerait silencieusement les contrôles `sujets` et `chapitresGeneration`. Les 10 sessions « For Arts Students » (réservées à la filière Lettres, préface p.2 / guide p.5) sont TRANSCRITES dans la fiche et codifiées `optional: true` au seul manifeste bac-lettres ; elles ne figurent pas dans `chapitresGeneration`, qui ne déclare que les chapitres vérifiables contre le manifeste de bac-math. PALIER DU 2026-08-04 (arrêt propre sur budget, T-9/T-10) : guide 641404 lu INTÉGRALEMENT (programme, référentiel de compétences PART IV, KEY par leçon, tapescripts) ; manuel 241403 transcrit à profondeur de génération p.1-234 sur 280 (84 %) — bloc liminaire, Units 1 à 3, et les 9 leçons de l'Unit 4. RESTENT p.235-280 : Arts Sessions 8-10, Check your Language and Skills 2, Before we say Good Bye, et surtout les ADD-ONS (GRAMMAR REFERENCE p.261-271 et WORD LIST p.275-280), qui bornent respectivement la grammaire et le lexique opposables du niveau. Levée R-5 au chapitre : 47 des 52 chapitres déclarés générables ; 41, 42, 50, 51, 52 ne le sont pas. R-7 NON FAITE (budget) — à passer avant toute promotion. ⚠️ Constat majeur pour le LOT B : la KEY du guide comporte plusieurs corrigés faux ou décalés (détaillés en §6.2 de la fiche) — toute clé réutilisée doit être re-résolue sur l'énoncé du manuel."
     }
   ]
 }

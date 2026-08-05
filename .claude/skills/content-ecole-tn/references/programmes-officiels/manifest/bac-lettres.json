@@ -2,7 +2,7 @@
   "grade": "bac-lettres",
   "sealed": false,
   "source": "CNP — « SKILLS For LIFE », Year 4 Secondary (bac), manuel élève code 241403 (280 p.) + guide enseignant code 641404 (56 p.). ⚭ Manuel UNIQUE pour les six sections du bac : le sujet anglais est authored une fois sous content/english-bac/ et compilé en six sujets (compileTo, étude 16 D-4). Transcription : programme/bac-lettres/anglais.md (fiche unique portant le scope des six sujets, R-4).",
-  "note": "Chapitrage = les 36 leçons de tronc commun du manuel + les 6 blocs non-leçons (Checking Year 3, Introductory Unit, Check your Punctuation, les deux Check your Language and Skills, Before we say Good Bye), soit 42 chapitres. Les 10 « sessions » For Arts Students du manuel sont RÉSERVÉES à la section Lettres (préface p.2, guide p.5) : elles ne figurent qu'au manifeste bac-lettres et sont restreintes côté contenu par chapter.gradeSlugs. LOT A partiel au 2026-08-04 : p.1-234 du manuel transcrites, p.235-280 restantes ⇒ les chapitres 41, 42 (et 50-52 en Lettres) ne sont pas encore générables (registre suivi/bac-lettres.json, champ chapitresGeneration). Ce manifeste porte les 52 chapitres (42 tronc commun + 10 sessions Arts).",
+  "note": "Chapitrage = les 36 leçons de tronc commun du manuel + les 6 blocs non-leçons (Checking Year 3, Introductory Unit, Check your Punctuation, les deux Check your Language and Skills, Before we say Good Bye), soit 42 chapitres. Les 10 « sessions » For Arts Students du manuel sont RÉSERVÉES à la section Lettres (préface p.2, guide p.5) : elles ne figurent qu'au manifeste bac-lettres et sont restreintes côté contenu par chapter.gradeSlugs. LOT A partiel au 2026-08-04 : p.1-234 du manuel transcrites, p.235-280 restantes ⇒ les chapitres 41, 42 (et 50-52 en Lettres) ne sont pas encore générables (registre suivi/bac-lettres.json, champ chapitresGeneration). Ce manifeste porte 52 chapitres : les 42 du tronc commun + les 10 sessions For Arts Students, marquées `optional: true` — elles font partie du programme codifié (les écrire n'est donc jamais « hors-programme ») mais leur absence n'est jamais comptée comme un trou, la filière Lettres n'étant pas traitée pour elle-même dans ce lot. Même arbitrage que l'anglais 3ème sec (#129), à ceci près qu'en 4ème année les sessions Arts sont des LEÇONS autonomes (Session 1 à 10, pages propres) et non un supplément intra-module : elles sont donc chapitrables, là où celles de 3ème sec relèvent d'exercices restreints par gradeSlugs.",
   "subjects": [
     {
       "id": "english-bac-lettres",
@@ -179,43 +179,53 @@
         },
         {
           "slug": "43-arts-the-winters-tale-part-2",
-          "notion": "Arts Session 1 — The Winter's Tale, Part 2 (p. 82-84)"
+          "notion": "Arts Session 1 — The Winter's Tale, Part 2 (p. 82-84)",
+          "optional": true
         },
         {
           "slug": "44-arts-tale-end",
-          "notion": "Arts Session 2 — Tale end…? (p. 85)"
+          "notion": "Arts Session 2 — Tale end…? (p. 85)",
+          "optional": true
         },
         {
           "slug": "45-arts-later",
-          "notion": "Arts Session 3 — Later (p. 124-127)"
+          "notion": "Arts Session 3 — Later (p. 124-127)",
+          "optional": true
         },
         {
           "slug": "46-arts-writing-a-narrative",
-          "notion": "Arts Session 4 — Writing a Narrative (p. 128)"
+          "notion": "Arts Session 4 — Writing a Narrative (p. 128)",
+          "optional": true
         },
         {
           "slug": "47-arts-the-bards-sonnet-18",
-          "notion": "Arts Session 5 — The Bard's Sonnet 18 (p. 182-183)"
+          "notion": "Arts Session 5 — The Bard's Sonnet 18 (p. 182-183)",
+          "optional": true
         },
         {
           "slug": "48-arts-as-you-like-it",
-          "notion": "Arts Session 6 — As You Like It (p. 186-188)"
+          "notion": "Arts Session 6 — As You Like It (p. 186-188)",
+          "optional": true
         },
         {
           "slug": "49-arts-project-work-3",
-          "notion": "Arts Session 7 — Project Work 3, More on Text Structure (p. 189-190)"
+          "notion": "Arts Session 7 — Project Work 3, More on Text Structure (p. 189-190)",
+          "optional": true
         },
         {
           "slug": "50-arts-the-richer-the-poorer",
-          "notion": "Arts Session 8 — The Richer, The Poorer (p. 235-239)"
+          "notion": "Arts Session 8 — The Richer, The Poorer (p. 235-239)",
+          "optional": true
         },
         {
           "slug": "51-arts-a-secret-for-two",
-          "notion": "Arts Session 9 — A Secret for Two (p. 240-244)"
+          "notion": "Arts Session 9 — A Secret for Two (p. 240-244)",
+          "optional": true
         },
         {
           "slug": "52-arts-what-a-wonderful-world",
-          "notion": "Arts Session 10 — What a Wonderful World! (p. 245-247)"
+          "notion": "Arts Session 10 — What a Wonderful World! (p. 245-247)",
+          "optional": true
         }
       ]
     }

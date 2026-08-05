@@ -12,8 +12,8 @@
 >   (`cnp-officiel/manuels/secondaire/c4/eleve/`) — « SKILLS For LIFE — Year 4 Secondary »,
 >   280 p. **Pages lues** : p.1–280 (intégral).
 >   **Transcrit le** : 2026-08-04. **Statut** : transcription fidèle (sources combinées).
->   **Langue d'enseignement** : en. **gradeSlug** : `bac` (créneau d'année — voir l'encadré
->   « Mutualisation » ci-dessous). **subject id** attendu : `english-bac`, **compilé en six
+>   **Langue d'enseignement** : en. **gradeSlug porteur** : `bac-math` (voir l'encadré
+>   « Mutualisation » ci-dessous — le manuel ne dépend d'aucune section). **subject id** attendu : `english-bac`, **compilé en six
 >   sujets** `english-bac-math`, `english-bac-sciences-exp`, `english-bac-lettres`,
 >   `english-bac-eco-gestion`, `english-bac-techniques`, `english-bac-info`.
 
@@ -7192,18 +7192,32 @@ priorité lors de la R-7.
 
 ### 6.5 Décisions éditoriales à valider par Mohamed
 
-1. **Emplacement de la fiche** : `programme/bac-lettres/anglais.md`, et non `programme/bac/`. Motif :
-   `bac` est un nœud **legacy non sélectionnable** (`LEGACY_GRADE_SLUGS`) sans manifeste, et y
-   placer la fiche **désactive silencieusement** les contrôles `sujets` et `chapitresGeneration` de
-   `programme:check` (ils ne s'arment que si le niveau de la fiche a un manifeste). `bac-lettres`
-   est la seule section dont le programme **est le livre entier** — les cinq autres en consomment un
-   sous-ensemble strict — donc le seul manifeste où les 52 slugs sont vérifiables. Les cinq autres
-   sujets déclarés produisent un **avertissement de mutualisation**, qui est le comportement prévu
-   (`transcription-suivi.ts`, § 8).
+1. **Emplacement de la fiche** : `programme/bac-math/anglais.md` — `bac-math` est la **première
+   section de l'ordre canonique** de `docs/lycee-architecture.md` §2. Le choix est **mécanique, pas
+   sémantique** : le manuel ne dépend d'aucune section, et cette règle est celle qu'a posée
+   l'anglais **3ème sec** (corpus #129) sur exactement le même cas, un an plus bas — deux règles
+   différentes pour un même cas seraient un piège pour la session suivante. Ce n'est **pas** sous le
+   créneau d'année `programme/bac/` : `bac` est un nœud **legacy non sélectionnable**
+   (`LEGACY_GRADE_SLUGS`) sans manifeste, et y déposer la fiche **désarmerait silencieusement** les
+   contrôles `sujets` et `chapitresGeneration` de `programme:check`, qui ne s'arment que si le
+   niveau de la fiche a un manifeste. Les cinq sujets hors `bac-math` produisent un **avertissement
+   de mutualisation** : c'est le comportement prévu (`transcription-suivi.ts`, § 8).
 2. **Découpage à la leçon** (52 chapitres pour `bac-lettres`, 42 pour les autres), aligné sur
    `english-1ere-sec` (35 leçons = 35 chapitres). L'alternative — un chapitre par unité — aurait
    donné 4 chapitres de 50 pages, ingénérables.
-3. **Les 10 sessions Arts sont restreintes à `bac-lettres`** par `gradeSlugs`. C'est une correction
-   assumée du cadrage initial de la campagne, qui prévoyait « six manifestes, même chapitrage » :
-   le manuel réserve explicitement ces sessions aux Arts students (préface p.2, guide p.5), et les
-   servir aux six sections aurait donné à cinq d'entre elles 10 chapitres hors programme.
+3. **Les 10 sessions Arts ne sont codifiées qu'au manifeste `bac-lettres`, en `optional: true`**, et
+   se restreindront côté contenu par `gradeSlugs`. C'est une correction assumée du cadrage initial de
+   la campagne, qui prévoyait « six manifestes, même chapitrage » : le manuel réserve explicitement
+   ces sessions aux Arts students (préface p.2, guide p.5), et les servir aux six sections aurait
+   donné à cinq d'entre elles 10 chapitres hors programme. `optional: true` parce que la filière
+   Lettres n'est pas traitée pour elle-même dans ce lot : les écrire ne sera jamais « hors-programme »,
+   et leur absence n'est jamais comptée comme un trou.
+   **Différence assumée avec l'anglais 3ème sec** (#129), qui a transcrit son supplément Arts sans le
+   codifier : là-bas le supplément est **intra-module** (des items roses à l'intérieur de chaque
+   module), donc porté par des exercices ; ici les sessions sont des **leçons autonomes**, numérotées
+   1 à 10, avec leurs propres pages — donc chapitrables.
+4. **`chapitresGeneration` ne déclare que les 40 chapitres de tronc commun** transcrits, et **pas** les
+   7 sessions Arts pourtant transcrites (43 à 49) : la fiche étant portée par `bac-math`, seuls les
+   slugs présents au manifeste de `bac-math` y sont vérifiables. Sous-déclarer est sans risque —
+   sur-déclarer serait un STOP de la méthode. Ces 7 sessions sont transcrites en §2 et attendent la
+   session qui traitera `bac-lettres` pour elle-même.
