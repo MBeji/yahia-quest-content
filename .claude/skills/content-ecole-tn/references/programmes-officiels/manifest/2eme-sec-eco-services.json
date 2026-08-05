@@ -1,0 +1,59 @@
+{
+  "grade": "2eme-sec-eco-services",
+  "sealed": false,
+  "source": "CNP — programme national 2ème année secondaire, section Économie & Services. Manuel d'anglais : « Perform to Learn — Second Year Secondary Education » (Student's Book 241203P00, 184 p. ; Teacher's Book 641203P00, 96 p. — National Pedagogic Centre, authors Ammar/Merdessi/Omrane/Raddaoui). Ce manuel n'est PAS dédoublé par section au catalogue CNP : un seul code sert les quatre sections de 2ème sec, et le Student's Book le dit lui-même (préface p.3 : les 30 leçons du tronc commun valent pour tous, les 20 leçons Arts/Économie étant un supplément optionnel par filière). Le scope est donc porté par la fiche `programme/2eme-sec/anglais.md` (R-4 : un code source, une seule fiche), et le contenu est mutualisé par `compileTo` (étude 16 D-4).",
+  "note": "sealed=false. PREMIÈRE matière codifiée de cette section — le manifeste est créé pour elle. Seul l'anglais est codifié : les 11 chapitres ci-dessous sont ceux du tronc commun, identiques aux trois autres sections de 2ème sec, d'où le sujet compilé `english-2eme-sec-eco-services` produit par `compileTo` depuis le répertoire partagé `content/english-2eme-sec/`, sans retranscription ni duplication de contenu. ⚠️ La fiche vit sous le grade `2eme-sec` (le nœud plat hérité, non sélectionnable) et NON sous cette section : c'est normal et voulu — le manuel est commun, R-4 n'autorise qu'une fiche par code source, et `suivi/2eme-sec.json` est son registre. Les autres matières de la section (arabe 201281, français 221203, maths 222261, histoire/géographie, éco-gestion 229262…) ne sont PAS encore codifiées et sont donc rapportées manquantes. Les 20 leçons Arts/Économie du guide (dont les 10 « E1–E10 » propres à cette filière : marché financier, publicité, lettres commerciales, inflation, lecture de graphiques économiques…) sont un supplément OPTIONNEL hors tronc commun : elles ne sont pas chapitrées ici et relèveraient d'un approfondissement filière ultérieur (cf. programme/2eme-sec/anglais.md §2).",
+  "subjects": [
+    {
+      "id": "english-2eme-sec-eco-services",
+      "name": "English",
+      "contentLanguage": "en",
+      "chapters": [
+        {
+          "slug": "01-family-life",
+          "notion": "Theme I — Family life (Lessons 1–2: expressing want/desire, narrating past events, the present perfect)"
+        },
+        {
+          "slug": "02-communicating-with-others",
+          "notion": "Theme II — Communicating with others (Lessons 3–5: be going to, the future with will, cause/result relationship)"
+        },
+        {
+          "slug": "03-social-life",
+          "notion": "Theme III — Social Life (Lessons 6–7 + Progress Check 1: either in end position, the present perfect progressive)"
+        },
+        {
+          "slug": "04-social-problems",
+          "notion": "Theme IV — Social Problems (Lessons 9–11: countable/uncountable nouns, the superlative, causative verbs)"
+        },
+        {
+          "slug": "05-attitudes-and-values",
+          "notion": "Theme V — Attitudes and Values (Lessons 12–14: cause/result linkers, imperatives, question tags)"
+        },
+        {
+          "slug": "06-rights-and-duties",
+          "notion": "Theme VI — Rights and Duties (Lessons 15–16 + Progress Check 2: the passive voice, a little/a few/a lot of)"
+        },
+        {
+          "slug": "07-education",
+          "notion": "Theme VII — Education (Lessons 18–19: reflexive pronouns, ought to / needn't / had better / should have)"
+        },
+        {
+          "slug": "08-professional-life",
+          "notion": "Theme VIII — Professional Life (Lessons 20–22: should have + past participle, purpose clauses, used to)"
+        },
+        {
+          "slug": "09-media-and-arts",
+          "notion": "Theme IX — Media and Arts (Lessons 23–24: parallel increase, any/some/no/nobody)"
+        },
+        {
+          "slug": "10-science-and-technology",
+          "notion": "Theme X — Science and Technology (Lessons 25–26: reported speech, gradual increase/decrease)"
+        },
+        {
+          "slug": "11-ecology",
+          "notion": "Theme XI — Ecology (Lessons 27–29 + Progress Check 3: adverbs of degree, not only… but also)"
+        }
+      ]
+    }
+  ]
+}
