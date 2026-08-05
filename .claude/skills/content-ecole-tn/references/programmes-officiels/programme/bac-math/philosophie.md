@@ -8,8 +8,10 @@
 >   (`cnp-officiel/manuels/secondaire/c4/eleve/`) — « كتاب الفلسفة — لتلاميذ السّنة الرّابعة من
 >   التّعليم الثانوي — الشّعب العلميّة ». **408 pages** (page PDF = page imprimée, **offset 0**).
 >   **Pages lues** : p.1–6 (page de titre, copyright, التقديم, خارطة الكتاب, ouverture du محور 1),
+>   **p.215–226** (ouverture du مبحث 2 + نافذة مدخل complète + سندات 1–3 — **en profondeur**),
 >   p.404–408 (فهرس الكتاب intégral).
->   **Transcrit le** : 2026-08-04. **Statut** : ⚠️ **first-pass — ossature seule** (voir §6).
+>   **Transcrit le** : 2026-08-04. **Statut** : ⚠️ **first-pass — ossature + une amorce de
+>   profondeur sur le seul مبحث 2 (p.215–226)** (voir §6).
 >   **Langue d'enseignement** : `ar`. **gradeSlug porteur** : `bac-math`.
 >   **subject ids** attendus : `philosophie-bac-math`, `philosophie-bac-sciences-exp`,
 >   `philosophie-bac-eco-gestion`, `philosophie-bac-techniques`, `philosophie-bac-info`
@@ -256,6 +258,259 @@ Ce محور ne comporte **qu'un seul مبحث**, qui porte son nom.
   - ✅ INCLUS : الحقيقة · النمذجة · النّموذج · الواقع · البراديغم · البنية ; cybernétique, épistémologie constructiviste ; le rapport activité scientifique / activité technique.
   - ⛔ EXCLU : idem — le programme de شعبة الآداب.
 
+#### مبحث 2 — transcription en PROFONDEUR (partielle : p.215–226 seulement)
+
+> ⚠️ **Portée réelle de ce bloc : p.215–226**, soit la page d'ouverture, la نافذة مدخل complète
+> et les **3 premiers سندات sur 16**. Les p.227–270 (سندات 4–16, la نافذة دعائم et ses
+> تحديدات/سياقات, la نافذة كيفيّات التفكير, le نصّ مطوّل de بوبير et les مختصرات) ne sont
+> **PAS** transcrites. Ce chapitre n'atteint donc **pas** la profondeur de génération : il reste
+> hors de `chapitresGeneration` (R-5). **Source** : manuel élève `210402`
+> (كتاب الفلسفة — السّنة الرّابعة من التّعليم الثانوي — الشّعب العلميّة, CNP).
+> Ce مبحث constitue à lui seul le **محور 2** du manuel : il est autonome.
+
+---
+
+##### Page d'ouverture du مبحث — p.215
+
+Titre imprimé en bandeau : **العلم بين الحقيقة والنمذجة**.
+
+Mention manuscrite (en rose, bas de page) : « تمّ إنجاز هذه المسألة بالتعاون مع لجنة تأليف كتاب
+الرابعة آداب ».
+
+**Encadré de citation** (verbatim) :
+
+> « إنّ جعل التمثّل هندسيّا أي رسم الظواهر والترتيب المتسلسل للأحداث الحاسمة في تجربة ما، هما
+> المهمّة الأولى في توكيد العقل العلمي ».
+> — **باشلار، تكوين العقل العلمي**
+
+**Le plan du مبحث, tel qu'il est imprimé sous forme de deux organigrammes** (c'est la carte
+conceptuelle officielle de la question — verbatim) :
+
+**1 — أبعاد النمذجة**
+
+| البعد | مكوّناته تِباعا كما هي مطبوعة |
+| --- | --- |
+| **البعد التركيبي** | الأكسمة — البنية — التريّض — الصورنة |
+| **البعد الدلالي** | الافتراضي — الملائم — الواقعي — القانون — النظريّة |
+| **البعد التداولي** | التفسير — التحقّق — الفهم — النجاعة |
+
+**2 — النمذجة ومطلب الحقيقة**
+
+| الحدود | مكوّناتها كما هي مطبوعة |
+| --- | --- |
+| **الحدود الابستيمولوجيّة** | الاختزاليّة — التاريخيّة — الأنظمة التقنيّة |
+| **الحدود الفلسفيّة** | الحقيقة — المسؤولية — المعنى |
+
+Illustration : composition en couleurs — polyèdres géométriques (icosaèdre, cube filaire,
+tétraèdres) suspendus sur des orbites elliptiques autour d'un soleil, sur fond rouge et noir.
+
+---
+
+##### 2.1 نافذة مدخل إلى التفكير في المسألة — p.216–219
+
+###### Page de titre de la نافذة — p.216
+
+Deux illustrations : (a) une silhouette de tête d'homme sur fond bleu portant un grand **point
+d'interrogation** ; (b) une image colorée d'un tableau noir portant la formule
+`α = (√5 − 1) / 2`.
+
+**Encadré de citation** (verbatim) :
+
+> " إذا قام مؤرّخ العلوم بتفحّص وثائق ماضي البحث من وجهة النظر التأريخيّة المعاصرة، فإنّه
+> سيُغْرى لربّما بكتابة أنّه عندما تتغيّر البراديغمات فإنّ العالم نفسه سيتغيّر معها ".
+> — ▲ **توماس س. كوهن، بنية الثورات العلميّة**
+
+###### 1 — وضعية استكشاف — p.217
+
+C'est une **fiche de travail à remplir par l'élève** (cases vides, pointillés). Support :
+la **comparaison de deux théories astronomiques**, celle de **بطلميوس** (Ptolémée) et celle de
+**نيوتن** (Newton). Consignes imprimées :
+
+- **1.1 — أبحث ... وأحدّد** : deux cadres à remplir — « أهمّ خصائص نظريّة بطلميوس الفلكيّة » /
+  « أهمّ خصائص نظريّة نيوتن الفلكيّة ».
+- **2.1 — أرسم..** : deux cadres de dessin — « صورة الكون وموقع الأرض في نظريّة بطلميوس. » /
+  « صورة الكون وموقع الأرض في نظريّة نيوتن ».
+- **3.1 — أستخلص ما يجمع بين النظريّتين وما يميّز بينهما** : un cadre « ما يجمع بينهما : » et un
+  cadre « ما يميّز بينهما: » à double colonne (بطلميوس / نيوتن).
+- **4.1 — ماذا أستنتج في خصوص طبيعة الاختلاف بين النظريّتين؟**
+
+###### 1.2 — أتابع التفكير : أقرأ النص قراءة متأنّية وأفكّر في مضمونه … — p.218
+
+**Texte support** — **فيرنر هيزنبرغ**, *الجزء والكل: محاورات في مضمار الفيزياء الذرّيّة*,
+ترجمة وتحقيق محمد أسعد عبد الرؤوف، الهيئة المصريّة العامة للكتاب، 1986، ص 51—52.
+
+Forme : un fragment de dialogue, la parole étant donnée à **أوتو**. **Thèse** : la différence
+entre l'astronomie ptoléméenne et l'astronomie newtonienne n'est pas jugée « essentielle » par
+le locuteur ; l'astronomie de Ptolémée fut une bonne science (quinze siècles d'enseignement),
+et Newton n'a pas apporté quelque chose de plus fondamental — il a seulement donné
+« un autre **تمثيلا رياضيّا** » du mouvement des planètes, représentation que les siècles ont
+prouvée la plus **réussie** (نجاحا).
+
+**الكاتب — فيرنر هيزنبرغ** `Werner Karl HEISENBERG` (notice biographique imprimée, verbatim
+resserré) : وُلد في 5 ديسمبر 1901 بفورتسبورغ بألمانيا. درس الفيزياء في مونيخ وغوتنغين. حصل في
+1924—1925 على منحة روكفلر وعمل لدى نيلز بوهر في كوبنهاغن. أصبح أستاذا بجامعة لايبزيك سنة 1927.
+حصل على جائزة نوبل للفيزياء سنة 1932. تولّى رئاسة معهد القيصر فيلهلم للفيزياء سنة 1941. قام سنة
+1936 بإنشاء معهد ماكس بلانك للفيزياء في غوتنغين ثمّ انتقل به إلى مونيخ سنة 1957 حيث توفي في
+1 فيفري 1976.
+
+**الهوامش** (verbatim resserré) :
+
+1. **أوتو** : فيزيائي وصديق هيزنبرغ. شاركه في أكثر من حوار في كتاب "الجزء والكل".
+2. **بطلميوس** `Ptolémée` (90—168)، عالم فلك يوناني من المدرسة الإسكندرانيّة، من أشهر مؤلّفاته
+   "الماجسطي" الذي وضع فيه مبادئ علم الفلك القديم القائم على فكرة **مركزيّة الأرض**
+   `géocentrisme`، وهي الفكرة التي سيقوّضها بعد ذلك **كوبرنيك** `Copernic` (1473—1543) صاحب كتاب
+   "في دوران الأجرام السماويّة" الذي أحدث ثورة تسمّى بعد ذلك **بالثورة الكوبرنيكيّة**.
+3. **نيوتن** `Newton` (1642—1727)، عالم إنجليزي في الرياضيات والفيزياء وواضع **قانون الجاذبيّة**.
+   من أهم مؤلّفاته "المبادئ الرياضيّة للفلسفة الطبيعيّة" (1687).
+
+**2.2 — أنجز المهام التالية** (les 7 consignes imprimées, verbatim) :
+
+- ما طبيعة الاختلاف بين نظريّة بطلميوس ونظريّة نيوتن حسب الكاتب؟ هل يتّفق مع استخلاصي السابق؟
+- لِمَ اعتبر الكاتب علم بطلميوس علما جيّدا جدّا ؟
+- بِمَ تميّزت نظريّة نيوتن في رأي الكاتب ؟
+- ما دلالة ((التمثيل الرّياضي)) وما قيمته العلميّة ؟
+- أبحث في دلالة ((النمذجة)) وأتساءل عن علاقتها بـ((التمثيل الرياضي)).
+- ما دلالة ((النجاح)) الذي يتحدّث عنه الكاتب ؟
+- أفكّر في العلاقات الممكنة بين (( النجاح )) و(( الحقيقة )) وأستخلص الاحراجات النظريّة التي يمكن
+  أن تترتّب عليها.
+
+Illustration : portrait peint de **نيوتن**.
+
+###### 2 — الأبعاد الإشكاليّة للمسألة — p.219
+
+⚠️ Cette page **n'imprime pas** une liste de dimensions problématiques rédigées : c'est une
+**page de méthode + espace de travail vierge**. Ce qui est imprimé, verbatim :
+
+> **أستحضر مكاسبي…**
+> وأحوّل الاحراجات النظريّة التي انتهيت إليها إلى أسئلة تساعدني على التقدّم في معالجة المسألة.
+> وأحدّد الرهانات النظريّة والعمليّة التي تدعو إلى التفكير في المسألة.
+
+**التمشيات** (organigramme, deux étapes, verbatim) :
+
+1. أطرح الأسئلة كــمــا تــرد في ذهني
+2. أعيد النظر في الأسئلة: أنظّمها وأقوم بصياغتها في مشكلات فلسفية
+
+Le grand cadre à gauche de l'organigramme est **vide** (à remplir par l'élève).
+
+---
+
+##### 2.2 نافذة سندات للتفكير في المسألة — p.220–250
+
+###### Page de titre de la نافذة — p.220
+
+Deux illustrations : (a) une table d'alchimiste/savant ancien (livre ouvert, bougie, alambic,
+manuscrit) ; (b) un champignon atomique.
+
+Deux **encadrés de citation** (verbatim) :
+
+> " إنّ كلّ قيمة تقسّم الذات المقيّمة. فهي تعطي الذات، على الأقل، تاريخ تقييمها، ويكون إذاك
+> للذات ماض من اللاقيمة تقتضي معارضته مع حاضر من القيمة ".
+> — ▲ **غاستون باشلار، العقلانيّة المطبّقة**
+
+> " إذا كنت تـفـرّق هكـذا بين الاكتـشـاف والاختراع، فأين تضع إذن هذه النتيجة المفزعة للتقدّم
+> التكنلوجي [sic]، أعني القنبلة الذريّة؟ ".
+> — **هيزنبرغ**
+
+###### Tableau récapitulatif des 16 سندات
+
+> **Convention de la نافذة** : chaque سند occupe une double page — une page de **texte** précédée
+> d'un **تمهيد** (chapeau problématisant, imprimé en rose), puis une page (ou une demi-page) de
+> **الهوامش** / **الكاتب** / **المهام**.
+
+| # | المؤلّف (كما هو مطبوع) | عنوان السّند | ص. | الأطروحة (مُعاد صياغتها) | المفاهيم |
+| --- | --- | --- | --- | --- | --- |
+| 1 | **نوال مولود** `Noël MOULOUD` — *الموسوعة العالميّة* (`Encyclopédia Universalis`, pp 529-530) | **في أصل النماذج** | 221–222 | L'origine du mot « نموذج » est **technologique** : c'est d'abord un « تصميم », un objet **réduit** et maniable qui reproduit sous forme simplifiée les propriétés d'une chose de grandes dimensions. Ce sens n'est pas le « المثال » platonicien : le modèle renverse la situation du modèle platonicien puisqu'il est **réalisé** au lieu d'être une idée à réaliser. Dans les sciences, le modèle est un **pont entre la conception et l'expérimentation**, matériel ou abstrait, et l'économie, la sociologie et la biologie se donnent à elles-mêmes des « نماذج نظريّة » des faits qu'elles décrivent. | النموذج — التصميم — المثال (الأفلاطوني) — التحقّق — الإبستيمولوجيا — التصور والتجريب — النماذج النظريّة |
+| 2 | **جيل كوهن تنّودجي** `G. Cohen TANNODJI` — *معنى النموذج في الفيزياء النظرية* (`La notion de modèle en physique théorique`, p 31, in *enquête sur le concept de modèle*, sous la direction de `Pascal Nouvel`) | **النموذج واستكشاف الظواهر** | 223–224 | Les modèles jouent, dans le développement de toute théorie physique, des **rôles distincts selon l'état d'avancement** de la théorie. Dans la phase **exploratoire**, ils sont dits « فينومينولوجية » ou « استكشافيّة » et fonctionnent comme des **وسائط استكشافيّة** transitoires — le dessin d'une théorie qui n'existe pas encore. Ils sont abandonnés puis remplacés par de plus performants à mesure que la théorie se consolide ; même stabilisée, une théorie doit être complétée par des données extérieures et des « ثوابت حرّة », ce qui montre qu'elle **garde toujours une part de modélisation**. | النموذج — الاستكشاف — النماذج الفينومينولوجيّة — الوسائط الاستكشافيّة — ثوابت حرّة — الصورنة — الإطار النظري — التوقّعات النظريّة والمعطيات التجريبيّة |
+| 3 | **ر. كارناب** — *مدخل إلى فلسفة العلوم — الأسس الفلسفية للفيزياء*, ترجمة السيد نفادي، ص 183-184 | **في الفرق بين النموذج الرياضي والنموذج الفيزيائي** | 225–226 | Il ne faut pas confondre le modèle au sens de **construction visuelle spatiale** et le modèle au sens **mathématique moderne** : chez les mathématiciens, logiciens et savants, le modèle est une construction **abstraite** (une équation ou un ensemble d'équations), non un objet qu'on manipule avec des boules et des fils. C'est une **description simplifiée** — donc appauvrie — d'une structure physique, économique ou sociologique. Le modèle visuel bien construit **n'est pas une garantie** de la validité d'une théorie, et l'absence de modèle visuel n'est pas une raison de la réfuter. | النموذج الرياضي — النموذج الفيزيائي — البناءات المكانيّة البصريّة — الثابتات `paramètres` — الحدس — الوصف المبسّط — حدود النموذج |
+
+*(les سندات 4 à 16 sont détaillés plus bas dans ce même tableau — voir la suite)*
+
+###### Détail des سندات lus
+
+##### سند 1 — في أصل النماذج — p.221–222
+
+**التمهيد** (verbatim) :
+
+> ساد اعتقاد بأنّ العمل العلمي هو مجرّد وصف للوقائع يكون بتوفّر شرط موضوعيّة النقل عبر قراءة
+> للأحداث قوامها حياد الذّات. ومع ذلك، لنا أن نرتاب في اعتقاد كهذا، تهزّه تصوّرات جديدة لعمل
+> العقل العلمي حين يُدرك فاعليّة لا تكتفي بالمعرفة بل تذهب إلى توفير شروط المعرفة.
+
+**الهوامش** (verbatim resserré) :
+
+1. **نموذج** `Paradigme` : المقصود هنا النموذج **الإرشادي** للعلم بالمعنى الذي يقدمه **توماس
+   كوهن** في *بنية الثورات العلمية*. (انظر تحديدات وتمييزات مفهوميّة)
+2. **نموذج بوهر** : هو النموذج أو الرّسم الذي قدّمه بوهر للذرّة والذي استعاره من نموذج المجموعة
+   الشمسية حيث توجد النواة في الوسط وتدور الكهارب حولها، غير أنّه تمّ الآن التخلي عن هذا
+   النموذج بعد معرفة طبيعة حركة الكهارب التي لا تدور بشكل منتظم بل تقوم بقفزات مختلفة وترسل
+   موجات.
+
+**الكاتب — نوال مولود (1921—1997)** : أستاذ بجامعة الآداب والعلوم الإنسانية بليل بفرنسا، له
+عدّة مقالات بالموسوعة العالمية : الحدس، الحدسية، الحكم، النموذج. وله كتابات أخرى :
+"اللغة والبنى : محاولة منطقية وسميولوجية" (1969)، "بنى البحث والمعرفة"، و"علم النفس والبنى".
+
+**المهام** (verbatim) :
+
+- كيف يحدّد الكاتب دلالة ((النموذج)) ؟
+- ما الفرق بين النموذج والمثال ؟
+- أرصد معنيي النموذج كما عرضهما الكاتب.
+- كيف يعمل النّموذج في الحقل العلمي ؟
+- ماذا يقصد الكاتب بتعقّد أنواع النموذج وتنوّع استعمالاته ؟
+- أفكّر في نموذج ((بوهر)) وأكشف عن الطابع **الإجرائي** للنموذج.
+- أستحضر مثالا من العلوم الفيزيائيّة التي أدرسها لأتبيّن قيمة ((النموذج)).
+- ماذا تحمل النمذجة للعلم اليوم : معرفة أم منهجا ؟
+
+**Encadré-citation (p.222, courte, attribuée)** : « فالنموذج هو بادئ ذي بدء "التصميم" … » —
+**مولود**.
+
+##### سند 2 — النموذج واستكشاف الظواهر — p.223–224
+
+**التمهيد** (verbatim) :
+
+> يجري استعمال النماذج، في الحقل العلمي، على أنحاء مختلفة. ولعلّ في استحضارها ما يستجيب لأغراض
+> متنوّعة تبدو خارجة عن النماذج ذاتها، وكأنّ فضلها كامن لا فيما تنغلق عليه من حقيقة بل فيما
+> تنفتح عليه من إمكان.
+
+**الكاتب — جيل كوهن تنودجي (1938)** : فيزيائي فرنسي وُلد بالجزائر، من قدماء معهد البوليتكنيك وهو
+شقيق الفيزيائي **كلود كوهن تنودجي** الحائز على جائزة نوبل للفيزياء (1997). يُعدّ أب مفهوم
+"الأفق" ونال سنة 1971 جائزة **تيبو** `Thibaud`. درّس بجامعة باريس `XI`. من أهمّ ما كتب نذكر
+"الثّوابت الكونيّة" (1991). كما كتب بالاشتراك مع ميشال ستيرو `STIRO` [sic — lire `SPIRO`]
+"المادة فضاء — زمن" (1986).
+
+**المهام** (verbatim) :
+
+- كيف يحدّد الكاتب دور النموذج ؟
+- لِمَ يتحدّث الكاتب عن (( نماذج )) لا عن (( نموذج)) ؟
+- أتتبّع النص وأستخرج أنواع النماذج التي يشير إليها الكاتب.
+- أستند إلى النصّ وأعمّر الجدول التالي : *(tableau à 3 colonnes vides —* **أنواع النماذج** /
+  **مراحل تطوّر النظريّة** / **أدوار النماذج***)*
+- أستعيد مكتسباتي من النصّ وأتبيّن الفارق بين الواقع الذي تقدّمه النظريّة العلميّة والواقع كما
+  أدركه في تجربتي المباشرة.
+- أستخلص دلالة النمذجة.
+
+**Encadré-citation (p.223)** : « تشبه النماذج ما يسميه المهندسون "نموذجا مصغّرا" أو "تصميما" » —
+**تنّودجي**.
+
+##### سند 3 — في الفرق بين النموذج الرياضي والنموذج الفيزيائي — p.225–226
+
+**التمهيد** (verbatim) :
+
+> إن رهان العقل العلمي المعاصر على (( الحدس )) في تعقل الواقع قد يبرّر إلى حد ما إنشاءه لنماذج
+> متعددة بتعدد مجالات اشتغاله. وهذا أمر يطرح الحاجة إلى التفريق بين هذه النماذج المتنوعة :
+> بين نموذج رياضي وآخر فيزيائي.
+
+Points saillants du texte (reformulés) : le modèle mathématique **exclut de nombreux facteurs**
+et c'est précisément ce qui lui permet de simplifier le complexe (modèle de l'économie de
+marché vs de l'économie planifiée ; modèle mathématique de l'apprentissage ; chaînes de
+`Markov` en psychologie) — il diffère donc totalement des modèles de la physique du XIX<sup>e</sup>
+siècle, où le but était de **rendre visible**. Le modèle mathématique est **hypothétique** : il
+contient des `paramètres` ajustés pour coller aux données ; des observations plus fines
+n'imposent pas seulement un réglage plus fin mais parfois la **révision des équations
+fondamentales** — l'ancien modèle nous a menés jusqu'ici, il faut un nouveau modèle. Le modèle
+physique du XIX<sup>e</sup>, lui, était **spatial et visuel** (maquette de navire, d'avion). La
+conclusion : les modèles visuels aident (l'esprit travaille par intuition), mais un modèle
+visuel réussi n'est **pas** une garantie de vérité de la théorie, et son absence n'est pas un
+motif de réfutation.
+
 ### محور 3 : القيم بين النسبي والمطلق — p.271–402
 
 #### مبحث 3.1 : الدولة — السيادة والمواطنة — p.271–346
@@ -404,23 +659,32 @@ Cinq chapitres = les cinq **مباحث** du programme. Les plages de pages sont 
 
 ## 6. Incertitudes / à revérifier
 
-- ⚠️ **PROFONDEUR RÉELLE DE CE PALIER — first-pass, ossature seule.** Ce qui est transcrit ici a
-  été **lu sur les pages** : la page de titre et son verso (p.1–2), le التقديم (p.3), la خارطة
-  الكتاب (p.4–5), l'ouverture du محور 1 (p.6) et le **فهرس intégral** (p.404–408). Le §2 et le §4
-  en dérivent : ils donnent le **scope, la structure et les plages de pages** exacts, ainsi que
-  l'inventaire nominatif des **113 سندات** (auteur + titre + page).
-  **Ce qui n'est PAS transcrit** : le contenu enseigné des p.7–402 — les thèses des سندات, les
-  encadrés de تحديدات وتمييزات مفهوميّة, les سياقات فكريّة, les كيفيّات التفكير, les نصوص مطوّلة,
-  les مختصرات et les وضعيّات استكشافيّة. **Aucun chapitre n'atteint la profondeur de génération
-  (R-5)** ⇒ `chapitresGeneration: []` au registre, et **le LOT B est interdit** sur les cinq
-  chapitres tant que ces pages ne sont pas lues.
+- ⚠️ **PROFONDEUR RÉELLE DE CE PALIER — first-pass (ossature) + 12 pages en profondeur.** Ce qui
+  est transcrit ici a été **lu sur les pages** :
+  - **l'ossature** — la page de titre et son verso (p.1–2), le التقديم (p.3), la خارطة الكتاب
+    (p.4–5), l'ouverture du محور 1 (p.6) et le **فهرس intégral** (p.404–408). Le §2 et le §4 en
+    dérivent : ils donnent le **scope, la structure et les plages de pages** exacts, ainsi que
+    l'inventaire nominatif des **113 سندات** (auteur + titre + page).
+  - **une amorce de profondeur sur le seul مبحث 2** — **p.215–226** : la page d'ouverture (avec
+    les deux organigrammes officiels أبعاد النمذجة / النمذجة ومطلب الحقيقة), la **نافذة مدخل
+    complète** (وضعية استكشاف بطلميوس/نيوتن, le texte de هيزنبرغ avec sa notice, ses هوامش et ses
+    7 مهامّ, la page de méthode الأبعاد الإشكاليّة) et les **3 premiers سندات sur 16** (مولود,
+    تنّودجي, كارناب) avec تمهيد verbatim, thèse, هوامش, notice d'auteur et مهامّ.
+
+  **Ce qui n'est PAS transcrit** : tout le reste — p.7–214, **p.227–270** (سندات 4–16 du مبحث 2, sa
+  نافذة دعائم et ses تحديدات/سياقات, sa نافذة كيفيّات التفكير, le نصّ مطوّل de بوبير, ses
+  مختصرات) et p.271–402. **Aucun chapitre n'atteint la profondeur de génération (R-5)** — pas même
+  le مبحث 2, couvert à 12 pages sur 56 ⇒ `chapitresGeneration: []` au registre, et **le LOT B est
+  interdit** sur les cinq chapitres tant que ces pages ne sont pas lues.
 - **Motif de l'arrêt** : limite d'usage de session atteinte (2026-08-04), qui a tué les deux
   sous-agents de transcription avant leur première écriture. Arrêt propre au dernier palier
   poussable (méthode, T-9/T-10) plutôt que fiche bâclée.
 - **Reprise** : les 408 pages sont déjà **rendues en PNG 150 dpi** (offset 0, `p-NNN.png` = page
-  imprimée NNN) — la reprise n'a pas à re-rendre. Ordre de reprise conseillé : le مبحث 2 (p.215–270,
-  56 p., le plus court et le plus autonome), puis 3.2 (p.347–402, 56 p.), puis 3.1 (p.271–346),
-  puis 1.2 (p.115–214), puis 1.1 (p.6–114). **Ne pas relire** p.1–6 ni p.404–408 (T-2/R-4).
+  imprimée NNN) — la reprise n'a pas à re-rendre. Ordre de reprise conseillé : **finir le مبحث 2
+  en reprenant à la p.227** (سند 4 « سيمون », il reste 44 p. — c'est le chapitre le plus proche de
+  la barre R-5, donc le premier à devenir générable), puis 3.2 (p.347–402, 56 p.), puis 3.1
+  (p.271–346), puis 1.2 (p.115–214), puis 1.1 (p.6–114). **Ne pas relire** p.1–6, p.215–226 ni
+  p.404–408 (T-2/R-4).
 - `[?]` p.117 : le فهرس annonce « وضعيّة استكشافيّة أولى : نص **محمد ه** » — nom visiblement
   **tronqué dans le sommaire lui-même**. À lire sur la page 117 pour rétablir l'auteur.
 - `[?]` p.4 : le bandeau latéral de la خارطة الكتاب est imprimé **en rotation** ; la série de termes
