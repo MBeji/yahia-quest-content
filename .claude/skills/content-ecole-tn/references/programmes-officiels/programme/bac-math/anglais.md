@@ -10,7 +10,7 @@
 >   Teacher's Book », 56 p. **Pages lues** : p.1–56 (intégral).
 > - **Manuel élève** (contenu/exemples/exercices) : `241403P00.pdf`
 >   (`cnp-officiel/manuels/secondaire/c4/eleve/`) — « SKILLS For LIFE — Year 4 Secondary »,
->   280 p. **Pages lues** : p.1–280 (intégral).
+>   280 p. **Pages lues** : p.1–247 et p.261–271 (92 %).
 >   **Transcrit le** : 2026-08-04. **Statut** : transcription fidèle (sources combinées).
 >   **Langue d'enseignement** : en. **gradeSlug porteur** : `bac-math` (voir l'encadré
 >   « Mutualisation » ci-dessous — le manuel ne dépend d'aucune section). **subject id** attendu : `english-bac`, **compilé en six
@@ -420,11 +420,12 @@ verbatim, et le contenu généré ne le fera pas non plus.
 
 ## 2. Plan annuel — le programme, bloc par bloc
 
-> **Profondeur atteinte à ce palier** : **p.1 à 234 du manuel élève en profondeur de génération**
-> (R-5) — bloc liminaire, Unit 1, Unit 2, Unit 3, et les 9 leçons de l'Unit 4 — plus le guide
-> enseignant lu intégralement. **p.235 à 280 non lues** : voir la table « Non transcrit dans ce
-> palier » en fin de §2. La fiche est donc `partielle` au registre, avec une levée R-5 **au
-> chapitre** (`chapitresGeneration`) sur les 47 chapitres réellement transcrits.
+> **Profondeur atteinte à ce palier** : **p.1–247 et p.261–271 du manuel élève en profondeur de génération**
+> (R-5) — bloc liminaire, Units 1 à 3, l'Unit 4 entière (9 leçons + les 3 sessions Arts) et le
+> GRAMMAR REFERENCE des ADD-ONS — plus le guide enseignant lu intégralement.
+> **p.248–260 et p.272–280 non lues** : voir la table « Non transcrit dans ce
+> palier » en fin de §2. La fiche reste `partielle` au registre, avec une levée R-5 **au
+> chapitre** (`chapitresGeneration`) sur les 40 chapitres de tronc commun transcrits.
 
 > Chaque leçon suit le même gabarit : blend de compétences et colonnes du UNIT OUTLINE, supports,
 > déroulé **activité par activité** avec le corrigé officiel du guide quand il existe
@@ -5645,7 +5646,7 @@ keypals, portfolio, editing.
 
 ---
 
-### UNIT 4 — LIFE ISSUES (p.191–260 ; **transcrit ici : p.191–234, leçons 1 à 9**)
+### UNIT 4 — LIFE ISSUES (p.191–260 ; **transcrit : p.191–247** — leçons 1 à 9 et sessions Arts 8 à 10)
 
 Page de titre **p.191** : bandeau « UNIT 4 » + titre graphique en oblique « LIFE ISSUES ».
 La présente section couvre **p.191–234 = Lessons 1 à 9**. Les Sessions Arts 8, 9, 10 et les
@@ -7006,26 +7007,1023 @@ potential/qualities, commitment/willingness to work hard).
     résumés à la place. Le script du newscast (guide p.51) est restitué en résumé factuel, sauf les
     deux passages que le manuel imprime lui-même en exercice à trous.
 
+# SKILLS For LIFE — Year 4 Secondary (bac), manuel élève CNP 241403
+
+## Transcription fidèle — p.235 à 260 (fin d'ouvrage)
+
+Clés du guide du maître 641404 (pages 43 à 46) reportées sous chaque activité en *Clé (guide p.NN)*.
+
+⚠️ **Droits** — les Sessions 8 et 9 reposent sur deux nouvelles sous droits (« The Richer, the Poorer »,
+Dorothy West ; « A Secret for Two », Quentin Reynolds) et la Session 10 sur deux chansons. **Aucune
+phrase de ces textes ni aucune ligne de ces paroles n'est reproduite ici** : on ne donne que le titre,
+l'auteur, le genre, la longueur, un résumé factuel reformulé, et l'appareil pédagogique (consignes,
+données d'exercice, corrigés). Le reste du périmètre (CHECK YOUR LANGUAGE AND SKILLS 2, BEFORE WE SAY
+GOODBYE) est du matériel rédigé par le CNP : il est transcrit intégralement.
+
+---
+
+#### FOR ARTS STUDENTS : SESSION 8 — THE RICHER, THE POORER (p.235–239)
+
+- **Public** : ⚠️ Arts students uniquement (section Lettres — 5 h/semaine ; hors tronc commun)
+- **Skills blend** : `SPEAKING INTO READING` (bandeau p.235)
+- **Sections imprimées** : `SPEAKING` puis `IN PAIRS` (p.235) — `READING` (p.236) — `LEXICAL FOCUS`
+  (p.239) — `PRONUNCIATION FOCUS` (p.239)
+- **Constructing meaning** : identifier les idées essentielles d'une nouvelle ; comprendre et
+  paraphraser le langage figuré
+- **Communicating** : Speaking (débat richesse / bonheur) INTO Reading
+- **Functions & linguistic exponents** : champ lexical richesse / pauvreté ; synonymie et antonymie ;
+  paraphrase d'expressions idiomatiques
+- **Pronunciation** : place de l'accent tonique (1re vs 2e syllabe)
+
+**Supports**
+
+- (p.235) **Trois encadrés de définitions de dictionnaire** (extraits d'un dictionnaire
+  d'apprentissage, sans attribution imprimée dans le manuel), servant de données à l'activité 1 :
+  - encadré rose — `fortune` (chance/luck ; a large amount of money) ; `luxury` (the enjoyment of
+    special and expensive things) ; `prosperity` (the state of being successful especially
+    financially ; SYN. affluence) ; `wealth` (a large amount of money that a person or country owns ;
+    `[of sth]` a large amount of sth).
+  - encadré bleu — `affluent` (having a lot of money and a good standard of living) ; `comfortable`
+    (having enough money) ; `prosperous` (rich and successful ; SYN. affluent) ; `rich` (having a lot
+    of money or property) ; `wealthy` (rich ; having a lot of money, possessions, etc.) ; `well-to-do`
+    (having a lot of money ; rich).
+  - encadré vert — `badly-off` *infml* (poor ; not having much money) ; `broke` *adj.* (having no
+    money) ; `impoverished` (having become poor) ; `needy` *adj.* (not having enough money, food,
+    clothes etc.) ; `penniless` *adj.* (having no money ; very poor) ; `penurious` *adj. (forml)*
+    (very poor ; needy) ; `poor` *adj.* (1. having very little money and therefore a low standard of
+    living ; 2. less than is needed or expected ; small in size or quantity) ; `short (of)` *infml*
+    (lacking enough (money)) ; `tight` *adj.* (of money : not easy to get).
+    *(Les phrases-exemples de chaque entrée sont imprimées dans le manuel ; seules les définitions
+    sont relevées ici.)*
+- (p.236) Deux **spidergrammes vides** à compléter, centrés sur `The have-nots` et `The haves`
+  (huit branches chacun).
+- (p.236–237) **Texte littéraire** — nouvelle **« The Richer, the Poorer »**, attribution imprimée
+  p.235 : *by Dorothy West*. Genre : *short story* (nouvelle), version abrégée avec deux coupures
+  imprimées `[…]`. Longueur : environ 55 lignes, réparties sur un encadré jaune en bas de p.236
+  (2 paragraphes) et la totalité de la p.237. ⚠️ **Texte sous droits — non reproduit.**
+  **Résumé factuel (mes propres mots)** : deux sœurs prennent des chemins opposés. Lottie, blessée
+  par la pauvreté de son enfance, travaille dès douze ans, quitte le lycée pour un emploi stable,
+  ne se marie jamais et économise toute sa vie en vivant chichement pour ses vieux jours. Bess
+  épouse à sa sortie de l'école un musicien sans le sou, mène avec lui une vie errante et sans
+  argent, et n'a ni enfant ni économies. Veuve et ruinée à l'étranger, Bess est recueillie par
+  Lottie ; en l'écoutant raconter son existence, Lottie mesure que la sienne, pourtant confortable,
+  n'a jamais été vécue, et décide d'apprendre de sa sœur.
+- (p.236) Vignette : couverture du recueil *The Richer, the Poorer*, Dorothy West.
+- (p.238) Encadré biographique **DOROTHY WEST** + photo de l'autrice.
+- (p.239) Boîte de 16 mots (synonymes / antonymes) ; boîte de 8 mots (accentuation) ; matrice de
+  prononciation à 2 colonnes ; boîtes `MY NEW WORDS` / `WHAT I CAN DO NOW`.
+
+**Déroulé des activités**
+
+1. <p.235> **SPEAKING / IN PAIRS** — activité **1** : « Focus on the dictionary entries and complete
+   the spidergrams below. » Les deux spidergrammes à remplir sont imprimés p.236 (`The have-nots`,
+   `The haves`) ; les trois encadrés de dictionnaire de la p.235 fournissent le matériau.
+   *Clé (guide p.43)* : absente.
+2. <p.236> Activités **2** à **6** — questions de discussion :
+   **2.** « What is essential to make someone happy? » ;
+   **3.** « Do you think that having money is essential for happiness? » ;
+   **4.** « Can people be rich in wealth but poor in other things? » ;
+   **5.** « Do you think that the rich are always happy? » ;
+   **6.** « Do you agree on the idea that the more educated you are, the better paid you are? Justify
+   your opinion. »
+   *Clé (guide p.43)* : absente (activités ouvertes).
+3. <p.236> **READING** — activité **1** : « Read the text as quickly as you can. How many paragraphs
+   could you read in 1 minute? Do you now have a better reading speed? » (mesure de vitesse de
+   lecture).
+4. <p.236> **READING** — activité **2** : « Read and tick the main ideas in the story. » Huit
+   propositions imprimées :
+   a. Two sisters who take opposite paths in life
+   b. A wealthy woman with an existence that has been a 'life never lived'
+   c. Two sisters who are reunited.
+   d. Despite poverty, we can live a happy life.
+   e. The struggle to make ends meet.
+   f. The poverty of a rich woman's life.
+   g. The poor musician's life abroad.
+   h. The wealth in a poor woman's exciting life.
+   *Clé (guide p.43)* : « the main ideas in the story : a – b – d – f – h. »
+5. <p.238> **READING** — activité **3** : « Who does each description apply to? Put a tick under the
+   corresponding name. » Tableau à 3 colonnes (`Description` / `Bess` / `Lottie`), 8 descriptions
+   imprimées : *Nothing but clothes on her back.* • *Prepared for old age.* • *Didn't notice parents'
+   poverty.* • *Wanted to borrow.* • *Wanted to acquire wealth.* • *Her life was very exciting.* •
+   *Lived each hour for itself.* • *Hated parents' poverty.*
+   *Clé (guide p.43)* — cases cochées :
+   | Description | Bess | Lottie |
+   |---|:--:|:--:|
+   | Nothing but clothes on her back. | √ | |
+   | Prepared for old age. | | √ |
+   | Didn't notice parents' poverty. | √ | |
+   | Wanted to borrow. | *(aucune case cochée dans le guide)* | |
+   | Wanted to acquire wealth. | | √ |
+   | Her life was very exciting. | √ | |
+   | Lived each hour for itself. | √ | |
+   | Hated parents' poverty. | | √ |
+6. <p.238> **READING** — activité **4** : « Correct the following false statements. Justify with
+   suitable information from the text. » Quatre énoncés faux imprimés :
+   a. Bess is the more serious of the two sisters.
+   b. Lottie finished school.
+   c. Bess had a very secure married life.
+   d. Lottie paid much money to buy her house.
+   *Clé (guide p.43)* : absente.
+7. <p.238> **READING** — activité **5** : « Answer the questions. » Sept questions imprimées :
+   a. Why was Bess better off without having children?
+   b. How could Bess's stories be 'very ordinary' and 'magnificent' at the same time.
+   c. Why did Lottie feel 'trapped by the blood tie?
+   d. What do you think is meant by « Lottie and Bess were both past sixty, time for summing up »?
+   e. Why should Lottie feel sorry for herself?
+   f. What do you think of the 2 attitudes? Which one do you side with?
+   g. In what way might Lottie's life change after Bess's moving in with her? Do you believe that
+   Bess will be able to show Lottie how to enjoy life?
+   *(Guillemets et apostrophes non fermés en b., c. et d. : `[sic]`, tels qu'imprimés.)*
+   *Clé (guide p.43)* : absente.
+8. <p.239> **LEXICAL FOCUS** — activité **1** : « Focus on the words in the box and sort out 4 pairs
+   of synonyms and 4 pairs of antonyms. » Boîte de 16 mots imprimée :
+   `hire - waste - sorrow - precious - criticize - joy - to race - employ - grieve - save - frugally
+   - move fast - economically - praise - feel happy - valuable .`
+   *Clé (guide p.44)* — **paires de synonymes** : `hire = employ` • `precious = valuable` •
+   `to race = move fast` • `frugally = economically` ; **paires d'antonymes** : `joy / sorrow` •
+   `grieve / feel happy` • `criticize / praise` • `save / waste`.
+9. <p.239> **LEXICAL FOCUS** — activité **2** : « Pick out the words related to poverty and those
+   related to wealth. Are there new words that do not appear in the dictionary pages at the beginning
+   of this lesson? »
+   *Clé (guide p.44)* : absente.
+10. <p.239> **LEXICAL FOCUS** — activité **3** : « Paraphrase the following sentences. » Cinq items
+    idiomatiques imprimés comme amorces d'exercice (a. *A job in hand was worth two in the future.* /
+    b. *They were often in rags and never in riches.* / c. *Bess reaped the harvest of Lottie's
+    self-denial.* / d. *I'll sleep like a rock tonight.* / e. *How have the years used you?*).
+    *Clé (guide p.44)* — le guide numérote cet exercice **1.** `[sic]` et ne corrige que a–d :
+    - a. « it is better to have any job than to risk losing it by trying to get a better one. »
+    - b. « they were poor and they never had much money. »
+    - c. « Bess benefited from Lottie's years of saving. »
+    - d. « sleep deeply. »
+    - e. non corrigé.
+11. <p.239> **PRONUNCIATION FOCUS** : « Complete the matrix below with words from the box. » Boîte de
+    8 mots : `Possessions - variety - comfortable - frugally - reasonable - prosperous -
+    impoverished - prosperity`. Matrice à deux colonnes vides : *Words stressed on the 1st syllable*
+    / *Words stressed on the 2nd syllable*.
+    *Clé (guide p.44)* :
+    - 1re syllabe : `comfortable - frugally - reasonable - prosperous`
+    - 2e syllabe : `possessions - impoverished - variety - prosperity`
+
+**Encadrés officiels (verbatim)**
+
+> DOROTHY WEST Novelist, editor, short story writer. Born
+> June 2, 1907, in Boston, Massachussets; died on August 16,
+> 1998. Daughter of an emancipated slave, she lived in one of
+> the very few well-to-do black families in Boston. She studied
+> journalism and philosophy at Columbia University. Her first
+> novel, The Living Is Easy (1948), put her on the literary map.
+> She became the Youngest of Harlem Renaissance Writers .
+
+*(« Massachussets » `[sic]` pour *Massachusetts* ; majuscule à « Youngest » `[sic]`.)*
+
+> MY NEW WORDS
+>
+> Affluent, badly-off, broke, frugally, grieve, hire, impoverished, penurious,
+> to race, tight of, reap the harvest,
+
+> WHAT I CAN DO NOW
+>
+> • Identify essential ideas in a story
+> • Understand figurative language and paraphrase it
+> • Evaluate and react to content
+> ………….. ? ……………
+
+**Lexique de la leçon** : *affluent, badly-off, broke, comfortable, fortune, frugally, grieve, hire,
+impoverished, luxury, needy, penniless, penurious, poor, prosperity, prosperous, rich, short (of),
+tight, to race, wealth, wealthy, well-to-do* ; expressions : *the haves / the have-nots, to make ends
+meet, in rags and never in riches, reap the harvest of, a job in hand, sleep like a rock* ; couples
+synonymiques et antonymiques de l'activité Lexical Focus 1.
+
+---
+
+#### FOR ARTS STUDENTS : SESSION 9 — A SECRET FOR TWO (p.240–244)
+
+- **Public** : ⚠️ Arts students uniquement (section Lettres — 5 h/semaine ; hors tronc commun)
+- **Skills blend** : `READING INTO WRITING` (bandeau p.240)
+- **Sections imprimées** : `IN GROUPS` (p.240) — `PREDICTIVE READING` (p.240) — `GRAMMAR FOCUS`
+  (p.243) — `PRONUNCIATION FOCUS` (p.243–244) — `DEVELOP YOUR SUMMARY SKILLS` + `IN GROUPS` (p.244)
+- **Constructing meaning** : lecture prédictive (anticiper le contenu section par section), vérifier
+  et corriger ses hypothèses, repérer comparaisons et référents
+- **Communicating** : Reading INTO Writing — rédiger un résumé (summary) inséré au PORTFOLIO
+- **Functions & linguistic exponents** : **le subjonctif** (`suggest / insist / propose / recommend /
+  advise + that + base form`)
+- **Pronunciation** : opposition `/ oʊ /` vs `/ ɔː /` ; réalisations du digramme `gh`
+
+**Supports**
+
+- (p.240) Trois **proverbes** encadrés (patrimoine parémiologique, sans attribution imprimée),
+  données de l'activité 3.
+- (p.241–242) **Texte littéraire** — nouvelle **« A Secret for Two »**, attribution imprimée p.240 :
+  *by Quentin Reynolds*. Genre : *short story* (nouvelle), **découpée en 4 sections numérotées**
+  (`Section 1` p.241, `Section 2` p.241, `Section 3` p.241–242, `Section 4` p.242) présentées en
+  encadrés successifs pour permettre la lecture prédictive. Longueur : environ 45 lignes au total,
+  la Section 1 tenant en 9 lignes. ⚠️ **Texte sous droits — non reproduit.**
+  **Résumé factuel (mes propres mots)** : Pierre, vieux livreur de lait d'une compagnie laitière,
+  fait sa tournée depuis trente ans avec son cheval Joseph. Son contremaître Jacques suggère au
+  président de la compagnie de le mettre à la retraite ; Pierre refuse, disant qu'il ne s'arrêtera
+  que le jour où Joseph s'arrêtera. Un matin, Jacques lui annonce que le cheval est mort dans la
+  nuit. Pierre s'éloigne hébété, marche sous un camion et meurt sur le coup. Le médecin de
+  l'ambulance découvre alors que l'homme était aveugle depuis cinq ans : seul le cheval, qui
+  connaissait la tournée, partageait ce secret.
+- (p.243) Paragraphe d'exercice **rédigé par le CNP** (9 verbes entre parenthèses) pour le
+  subjonctif — voir activité 12 ci-dessous : il est transcrit intégralement, ce n'est pas du texte
+  d'auteur.
+- (p.243–244) Matrice de prononciation à 2 colonnes ; liste de 3 paires de mots pour `gh`.
+- (p.244) Tableau d'appariement `Section` / `Main idea` ; boîtes `MY NEW WORDS` / `MY GRAMMAR` /
+  `WHAT I CAN DO NOW`.
+
+**Déroulé des activités**
+
+1. <p.240> **IN GROUPS** — activité **1** : « Answer the following questions. » Sous-questions
+   imprimées (renumérotées 1-2-3 sous le n° 1, `[sic]`) :
+   1. What helps you predict text content ?
+   2. What linguistic clues enable you to predict ?
+   3. What words or expressions might help you predict the following content ? — *a definition* /
+      *a difference* / *a comparison* / *an example* / *an answer* / *a conclusion*
+   *Clé (guide p.44)* : absente.
+2. <p.240> Activité **2** : « Check the other groups' answers. »
+3. <p.240> Activité **3** : « Rephrase the following proverbs to show you understand them. » Trois
+   proverbes imprimés en encadrés :
+   > He that tells a secret, is another's servant.
+
+   > Thy secret is thy prisoner, if thou let it go, thou art a prisoner to it.
+
+   > Three may keep a secret, if two of them are dead.
+
+   *Clé (guide p.44)* : absente.
+4. <p.240> **PREDICTIVE READING — A SECRET FOR TWO** — consignes cadres : « Read the title and guess
+   what the story is about. » puis « Read the first section of the story. »
+5. <p.240> Questions sur la **Section 1**, activités **1** à **4** :
+   1. Identify the main characters.
+   2. Find out why Jacques was anxious.
+   3. Identify the tone in Jacques' speech.
+   4. Rephrase the following statement differently starting as shown. —
+      `Never once has there been a complaint.` → `There ..................................`
+   *Clé (guide p.44, colonne « Section 1 »)* : **1.** « Pierre, Jacques » — **2.** « He couldn't help
+   ask Pierre to retire » `[sic]` (formulation du guide). Questions 3 et 4 non corrigées.
+6. <p.241> Activité **5** : « Do you expect Pierre to quit his job? Why? Why not? » puis consigne
+   « Now read section 2 . »
+   *Clé (guide p.44)* : absente.
+7. <p.241> Questions sur la **Section 2**, activités **1** à **4** :
+   1. Have you guessed right? Correct your guesses if necessary.
+   2. Pick out an expression showing Pierre was deeply shocked.
+   3. Find details proving Pierre and Joseph have grown old.
+   4. Identify two similes.
+   *Clé (guide p.44, colonne « Section 2 »)* : **2.** « panic – stricken » — **3.** « Pierre would
+   limp / would walk wearily » — **4.** « like iced wine / like a million diamonds ».
+8. <p.241> Activité **6** : « Guess what the sad piece of news might be. » puis consigne « Read the
+   next section and answer the questions in the margin. »
+9. <p.242> Question-charnière imprimée entre Section 3 et Section 4 : « Did Pierre walk into the
+   truck deliberately or accidentally? Read the last section to find out. »
+10. <p.242> Questions sur la **Section 3**, activités **1** à **6** :
+    1. Have you guessed right?
+    2. What do you think of the way Jacques announced the sad news to Pierre?
+    3. Why do you think Pierre's eyes looked lifeless?
+    4. Paraphrase the following statement. — `The eyes were mirroring the grief that was in Pierre's
+       heart and his soul.`
+    5. What does 'neither' (in bold type in the text) refer to?
+    6. Guess what might have happened to Pierre.
+    *Clé (guide p.44, « Section 3 »)* : **5.** « warning yell / the scream of brakes ». Les autres
+    questions ne sont pas corrigées.
+11. <p.243> Après la **Section 4**, activité **1** : « Tick the right options. » Deux QCM imprimés :
+    - **a-** *The cause (s) of this tragic end is / are* : `despair` • `destiny` • `Jacques'
+      irresponsible attitude` • `blindness` • `old age`
+    - **b-** *After Joseph's death, Pierre felt he lost his* : `life` • `eyes` • `fortune` •
+      `ambitions` • `living`
+    *Clé (guide p.44)* : absente.
+12. <p.243> Activité **2** : « What is the moral of the story? »
+    *Clé (guide p.44)* : absente.
+13. <p.243> **GRAMMAR FOCUS** — phrase-support reprise du texte (la suggestion de Jacques au
+    président, avec `be` en gras), suivie de deux questions :
+    a) What is the form of to be in this statement? Why?
+    b) List down other expressions requiring similar form use.
+    *Clé (guide p.44)* : absente pour a) et b).
+14. <p.243> **GRAMMAR FOCUS** — exercice d'application, consigne : « Provide the right tense / form
+    of the bracketed verbs. » Paragraphe imprimé (rédigé par le CNP), transcrit intégralement :
+    > Jacques suggested that the milkman (to be) replaced by a husky young man. He insisted the new
+    > recruit (to sign) a form to confirm being fit for the job. He proposed all candidates (to go)
+    > through a medical check up. He recommended that the applications (to be) thoroughly analysed,
+    > and advised the president of the Provinciale Milk Company that the local jobcentre (to get) in
+    > charge of the recruitment. He also insisted new trucks (to take) it over on horse carriages. He
+    > insisted that all candidates (to go) through a training period and if they (to be) found lazy
+    > or unreliable they shouldn't be engaged. He also declared whatever result the company (to get),
+    > the modernization process shouldn't be halted.
+
+    *(« Provinciale » `[sic]` — orthographié « Provincial » dans le texte de la Section 1.)*
+    *Clé (guide p.44)* : « be - sign - go - be - get take - go - are - gets » — soit, dans l'ordre
+    des 9 parenthèses : **be** / **sign** / **go** / **be** / **get** / **take** / **go** / **are** /
+    **gets**.
+15. <p.243> **PRONUNCIATION FOCUS** — activité **1** : « Put the following words under the right
+    symbol . Focus on the underlined sounds. » Dix mots imprimés avec la lettre-cible soulignée :
+    `n<u>o</u>tice - m<u>o</u>rning - b<u>o</u>ld - th<u>o</u>se - b<u>o</u>th - th<u>ou</u>gh -
+    sn<u>o</u>w - h<u>o</u>rse - f<u>o</u>rward - s<u>ou</u>l`. Matrice à deux colonnes vides
+    imprimée p.244 : `/ OU /` et `/ ɔ : /`.
+    *Clé (guide p.44)* : absente.
+16. <p.244> **PRONUNCIATION FOCUS** — activité **2** : « Say whether the pronunciation of the letters
+    **gh** in the following pairs of words is similar or different ». Trois paires : `night - though`
+    • `right - enough` • `laughed - thought`.
+    *Clé (guide p.44 — l'exercice y est numéroté **3.** `[sic]`)* : « night-though **S** ,
+    right-enough **D** , laughed-thought **D** » (S = similar, D = different).
+17. <p.244> **DEVELOP YOUR SUMMARY SKILLS / IN GROUPS** — activité **1** : « Match each section with
+    the appropriate main idea. » Tableau imprimé :
+    | Section | Main idea |
+    |---|---|
+    | Section 1 | 1. Jacques told Pierre his horse had passed away. |
+    | Section 2 | 2. Jacques suggests that Pierre should retire. |
+    | Section 3 | 3. Joseph and Pierre, the close friends, are getting old. |
+    | Section 4 | 4. Pierre died when a truck hit him. |
+    *Clé (guide p.44)* : absente.
+18. <p.244> Activités **2** à **7** — cahier des charges du résumé :
+    2. Support each main idea with details.
+    3. Do not add personal information .
+    4. Do not make comments on the facts .
+    5. Use the right linkers where appropriate .
+    6. Have a classmate proofread your summary and comment upon it .
+    7. Improve your summary and insert it in your PORTFOLIO .
+
+**Encadrés officiels (verbatim)**
+
+> MY NEW WORDS
+>
+> limp; panic- stricken
+> wear out ; wearily
+
+> MY GRAMMAR
+>
+> The subjunctive
+> It would be too bold of me to suggest he be retired .
+> It is used mainly in formal, impersonal English. In more informal
+> language we commonly use should.
+
+> WHAT I CAN DO NOW
+>
+> • Predict content and events
+> • Guess and check my guessing
+> • Use the subjunctive
+> • Write a summary
+
+**Lexique de la leçon** : *limp, panic-stricken, wear out, wearily* ; verbes déclencheurs du
+subjonctif relevés dans l'exercice : *suggest, insist, propose, recommend, advise, declare* ; lexique
+de la lecture prédictive : *definition, difference, comparison, example, answer, conclusion, simile,
+tone, main idea, linkers*.
+
+---
+
+#### FOR ARTS STUDENTS : SESSION 10 — WHAT A WONDERFUL WORLD ! (p.245–247)
+
+- **Public** : ⚠️ Arts students uniquement (section Lettres — 5 h/semaine ; hors tronc commun)
+- **Skills blend** : `LISTENING, COMPOSING AND SINGING` (bandeau p.245)
+- **Sections imprimées** : `LISTEN TO Louis Armstrong's Song` (p.245) — `HOW GOOD A SINGER ARE YOU ?`
+  (p.245) — comparaison des deux chansons (p.247) — `PRONUNCIATION FOCUS` (p.247) — `DEVELOP YOUR
+  WRITING SKILL / WRITING A BIOGRAPHY` (p.247)
+- **Constructing meaning** : compléter des paroles à l'écoute, apprécier l'imagerie poétique,
+  repérer des vers intrus
+- **Communicating** : écrire une strophe ; chanter ; rédiger une **biographie** à partir de notes
+- **Functions & linguistic exponents** : développement de notes en récit biographique (temps du
+  passé, prépositions, pronoms relatifs, conjonctions, ponctuation)
+- **Pronunciation** : discrimination des voyelles `/ æ /`, `/ ɑː /`, `/ e /`, `/ aɪ /`
+
+**Supports**
+
+- (p.245) **Chanson 1** — **« What a Wonderful World »**, interprète imprimé : **Louis Armstrong**.
+  Thème : émerveillement devant la nature, les couleurs et les êtres humains ; ton optimiste.
+  Les paroles sont imprimées **à trous** dans deux encadrés bleus (6 lignes + 6 lignes) avec
+  9 blancs au total. ⚠️ **Paroles sous droits — non reproduites.** Deux photos de Louis Armstrong
+  accompagnent l'exercice (dont une pochette de disque *What A Wonderful World*).
+- (p.246) **Chanson 2** — **« Wonderful Life »**, interprète imprimé : **Black**. Thème : solitude et
+  besoin d'amitié au milieu d'une nature lumineuse (soleil, mer, mouettes) ; ton doux-amer. Paroles
+  imprimées intégralement dans un encadré bleu en écriture calligraphique, **4 strophes**
+  (7 + 8 + 7 + 3 lignes). ⚠️ **Paroles sous droits — non reproduites.**
+- (p.247) Liste de 7 mots pour le tri phonétique ; encadré de **notes biographiques sur Louis
+  Armstrong** (matériel factuel rédigé par le CNP, transcrit intégralement ci-dessous) ; boîtes
+  `MY NEW WORDS` / `WHAT I CAN DO NOW`.
+
+**Déroulé des activités**
+
+1. <p.245> **LISTEN TO Louis Armstrong's Song** — activité **1** : « Circle the words you hear then
+   fill in the gaps with the words you circled. » Boîte de 11 mots imprimée :
+   `say - days - bloom - pretty - trees - think - cry - much - blue - faces - shaking.`
+   Les paroles à trous suivent (9 blancs répartis sur les deux encadrés).
+   *Clé (guide p.45)* : « trees - bloom - say - blue - faces - shaking - cry - much » (8 items pour
+   9 blancs — voir § Incertitudes).
+2. <p.245> Activité **2** : « Pick out the images showing that the singer sounds optimistic and
+   fascinated by the marvels of nature. »
+   *Clé (guide p.45, numérotée **3.** `[sic]`)* : les deux images de lumière et d'obscurité de la
+   5e ligne du 1er encadré (jours lumineux et bénis / nuits sombres et sacrées).
+3. <p.245> Activité **3** : « What atmosphere does it depict? Tick the most appropriate answer. »
+   Trois options imprimées : `- gaiety and joy` • `- sadness and sorrow` • `- regret and remorse`.
+   *Clé (guide p.45, numérotée **4.** `[sic]`)* : « gaiety and joy. »
+4. <p.245> Activité **4** : « What does the image of growing babies symbolize ? »
+   *Clé (guide p.45)* : absente.
+5. <p.245> Activité **5** : a) « Think of other images and add some lines to the song. » b) « Show
+   what you wrote to your classmates and ask them to comment upon it . »
+6. <p.245> **HOW GOOD A SINGER ARE YOU ?** — « Sing the song or part of it. »
+7. <p.246> Consigne cadre : « Listen to the second song " WONDERFUL LIFE " by Black . » — activité
+   **1-** : « Cross out the three odd lines that do not belong . »
+   *Clé (guide p.45)* : les trois vers intrus sont, par leur **position** dans le texte imprimé —
+   strophe 1, ligne 5 ; strophe 2, ligne 6 ; strophe 3, ligne 4. *(Le guide les donne en toutes
+   lettres ; non reproduits ici pour raisons de droits.)*
+8. <p.246> Activité **2-** : « What are the elements of nature used in the song ? Do they represent
+   hope or despair ? »
+   *Clé (guide p.45)* : absente.
+9. <p.246> Activité **3-** : « What do the two antonyms **laugh** and **cry** tell about life ? »
+   *Clé (guide p.45)* : absente.
+10. <p.247> **Compare Black's song and Louis Armstrong's.** — trois questions :
+    a) What do the two songs have in common?
+    b) Which is your favourite? Why?
+    c) Which images in the two songs better illustrate the singers' attitudes?
+    *Clé (guide p.45)* : absente.
+11. <p.247> **PRONUNCIATION FOCUS** : « Sort out the following words in the appropriate column . »
+    Sept mots imprimés : `laugh - friend - magic - again - blessed - dark - stand -`. Matrice à
+    4 colonnes vides : `/ ae /` • `/ a: /` • `/ e /` • `/ ai /`.
+    *Clé (guide p.45)* : absente.
+12. <p.247> **DEVELOP YOUR WRITING SKILL — WRITING A BIOGRAPHY** : « Develop these notes into a
+    biography of Louis Armstrong . » Notes imprimées (transcription intégrale) :
+    > - Louis Armstrong / born / poor section of New Orleans / August 4, 1901 /
+    > - He / spend / first years / life / live / grand mother , Joseline / Armstrong /
+    > - When / he be eleven / Louis / fire / a pistol in the street / celebrate New Years Eve
+    > / He arrest / nearby policeman / confine / the colored Waif's home for Boys
+    > - After release / Waif's Home / Louis start / sell newspapers / help feed himself / mother /
+    > sister /
+    > - 1919 / Louis hire / perform / river boats / travelled / the Mississippi/
+    > - At 22 / make / first recording
+    > - 1930 / perform / Chicago, Baltimore, Detroit, Pittsburgh and Washington DC
+    > - 1932 / tour / Great Britain / 3 months
+    > - 1954 / Publish / autobiography "My Life in New Orleans"
+    > - 1968 / What a Wonderful World / Become / hit / Great Britain
+    > - 6 July 1971 / Louis Armstrong / pass away / his sleep / his home / Corona
+
+    Contraintes imprimées :
+    a- Do not add any notes.
+    b- Do not change the order of the notes.
+    c- Use prepositions, relative pronouns, conjunctions…
+    d- Use the right tense.
+    e- Mind the punctuation.
+    *Clé (guide p.45)* : absente.
+
+**Encadrés officiels (verbatim)**
+
+> MY NEW WORDS
+>
+> bloom - blessed - sacred
+
+> WHAT I CAN DO NOW
+>
+> • Complete the lyrics of a song
+> • Appreciate imagery in a song
+> • Identify extra parts in a song lyrics
+> • Write a stanza
+> • Discriminate between sounds
+
+**Lexique de la leçon** : *bloom, blessed, sacred* ; mots-outils de l'exercice de complétion
+(*say, days, bloom, pretty, trees, think, cry, much, blue, faces, shaking*) ; mots du tri
+phonétique (*laugh, friend, magic, again, blessed, dark, stand*) ; vocabulaire de l'appréciation
+(*imagery, image, atmosphere, gaiety, joy, sadness, sorrow, regret, remorse, stanza, lyrics,
+odd lines, antonyms*).
+
+---
+
+---
+
+### ADD-ONS — GRAMMAR REFERENCE (p.261–271)
+
+> Transcription fidèle du manuel élève CNP « SKILLS For LIFE » — Year 4 Secondary, code 241403.
+> Section ADD-ONS, pages 261 à 271. Les encadrés de règle sont reproduits **mot pour mot**.
+
+#### Sommaire imprimé de la section (p.261)
+
+Page de garde : bandeau « ADD-ONS », puis titre **GRAMMAR REFERENCE**, puis la liste :
+
+1. Verb + to + verb or + verb + gerund
+2. The + Adjective
+3. To be used to doing something
+4. The subjunctive
+5. Restrictive and non-restrictive relative clauses
+6. Inversion
+7. Needn't / Need
+8. Could have + past participle
+9. Clauses of contrast
+10. Whom / of which
+11. Parallelism
+12. Timeline chart
+
+Puis, sous la liste :
+
+    More on metaphors, collocations and idioms
+
+#### Verbs followed by Gerunds OR Infinitives (Similar Meaning) (p.262)
+
+Tableau à trois colonnes, sans en-tête de colonne imprimé : le verbe, l'exemple avec gérondif,
+l'exemple avec infinitif.
+
+| Verbe | Exemple (gerund) | Exemple (infinitive) |
+| --- | --- | --- |
+| can't bear | He can't bear being alone. | He can't bear to be alone. |
+| can't stand | Nancy can't stand working the late shift. | Nancy can't stand to work the late shift. |
+| cease | The government ceased providing free health care | The government ceased to provide free health care. |
+| continue | She continued talking. | She continued to talk. |
+| hate | He hates cleaning dishes. | He hates to clean dishes. |
+| like | Samantha likes reading. | Samantha likes to read. |
+| love | We love scuba diving. | We love to scuba dive. |
+| neglect | He neglected doing his daily chores. | He neglected to do his daily chores. |
+| prefer | He prefers eating at 7 PM. | He prefers to eat at 7 PM. |
+| propose | Drew proposed paying for the trip. | Drew proposed to pay for the trip. |
+
+Note : la cellule « cease » (colonne gerund) est imprimée sans point final — « free health care »
+[sic].
+
+#### Verbs followed by Gerunds OR Infinitives (Different Meaning) (p.262)
+
+| Verbe | Exemple (gerund) | Exemple (infinitive) |
+| --- | --- | --- |
+| stop | He **stopped smoking** for health reasons.<br>*"STOP" IS NORMALLY USED WITH A GERUND.* | He **stopped to rest** for a few minutes.<br>*WHEN "STOP" IS USED WITH AN INFINITIVE, THE INFINITIVE TAKES ON THE MEANING OF "IN ORDER TO." IN THE SENTENCE ABOVE, HE STOPPED IN ORDER TO REST FOR A FEW MINUTES.* |
+
+Les deux commentaires sont imprimés en italique et en capitales dans le manuel.
+
+#### THE + ADJECTIVE (p.263)
+
+**Règle (verbatim) :**
+
+> We use the +adjective to refer to some groups of people in society.
+> We must help the poor.
+> Who looks after the old and the sick?
+> The poor means poor people in general. It cannot refer to just one person or to a small
+> group.
+> The +Adjective takes a plural verb.
+> eg: the poor, the rich, the strong, the weak, the unemployed, the homeless, the deaf,
+> the disabled, the living, the dead.
+> The adjective can be modified by an adverb:
+> The very rich              /      The severely disabled
+> Some adjectives normally take an adverb/
+> The more/less fortunate       /                  The mentally ill
+> Abstract qualities
+> We can use some adjectives after "the" to refer to things which have an abstract
+> quality.
+> He reads a lot of books on the supernatural.
+> The human race has a great thirst for the unknown.
+
+**Exemples imprimés :**
+
+- We must help the poor.
+- Who looks after the old and the sick?
+- eg: the poor, the rich, the strong, the weak, the unemployed, the homeless, the deaf, the disabled, the living, the dead.
+- The very rich / The severely disabled
+- The more/less fortunate / The mentally ill
+- He reads a lot of books on the supernatural.
+- The human race has a great thirst for the unknown.
+
+Note : les guillemets autour de « the » sont des guillemets courbes dans le manuel (“the”).
+
+#### USED TO + VERB / BE USED TO + VERB + ING (p.263–264)
+
+**Règle (verbatim) :**
+
+> USED TO DO
+> We use 'used to' for something that happened regularly in the past but no
+> longer happens.
+>   I used to smoke a packet a day but I stopped two years ago.
+>   Ben used to travel a lot in his job but now, since his promotion, he doesn't.
+>   I used to drive to work but now I take the bus.
+> We also use it for something that was true but no longer is.
+>  There used to be a cinema in the town but now there isn't.
+>  She used to have really long hair but she's had it all cut off.
+>  I didn't use to like him but now I do.
+> 'Used to do' is different from 'to be used to doing' and 'to get used to doing'
+> TO BE USED TO DOING SOMETHING
+> We use 'to be used to doing' to say that something is normal, not unusual.
+> I'm used to living on my own. I've done it for quite a long time.
+> Hans has lived in England for over a year so he is used to driving on the left now.
+> They've always lived in hot countries so they aren't used to the cold weather here.
+
+(p.264, suite — sous-titre imprimé « TO BE / GET USED TO DOING SOMETHING »)
+
+> TO BE / GET USED TO DOING SOMETHING
+> We use 'to get used to doing' to talk about the process of something becoming normal
+> for us.
+> I didn't understand the accent when I first moved here but I quickly got used to it.
+> She has started working nights and is still getting used to sleeping during the day.
+> I have always lived in the country but now I'm beginning to get used to living in the city.
+
+**Exemples imprimés (tous) :**
+
+- I used to smoke a packet a day but I stopped two years ago.
+- Ben used to travel a lot in his job but now, since his promotion, he doesn't.
+- I used to drive to work but now I take the bus.
+- There used to be a cinema in the town but now there isn't.
+- She used to have really long hair but she's had it all cut off.
+- I didn't use to like him but now I do.
+- I'm used to living on my own. I've done it for quite a long time.
+- Hans has lived in England for over a year so he is used to driving on the left now.
+- They've always lived in hot countries so they aren't used to the cold weather here.
+- I didn't understand the accent when I first moved here but I quickly got used to it.
+- She has started working nights and is still getting used to sleeping during the day.
+- I have always lived in the country but now I'm beginning to get used to living in the city.
+
+#### THE SUBJUNCTIVE (p.264–265)
+
+**Règle (verbatim) :**
+
+> FORM
+> Use the simple form of the verb : the infinitive without "to" with all the subjects
+> (singular or plural)
+> USE
+> The Subjunctive is used to emphasize urgency or importance. It is used after
+> certain expressions and in formal, impersonal English.
+>  In more informal language we commonly use should.
+> This form is used more frequently in British English and is most common after the
+> verbs "suggest," "recommend" and "insist."
+
+**Examples : (imprimés sous la règle, p.264)**
+
+- The police insisted the car should be moved / be moved immediately
+- I suggest that he study.
+- Is it essential that we be there?
+- We recommended that she join the committee.
+
+**Verbs followed by the Subjunctive (liste imprimée, p.264) :**
+
+- to command
+- to demand
+- to insist
+- to propose
+- to recommend
+- to suggest
+
+**EXAMPLES: (p.264)**
+
+- Dr. Dave demanded that John prepare his research paper before the end of the month.
+- Brian proposed that Frank be at the party.
+- The teacher insists that the students arrive on time.
+
+**Expressions followed by the Subjunctive (liste imprimée, p.264) :**
+
+- It is best (that)
+- It is crucial (that)
+- It is desirable (that)
+- It is essential (that)
+- It is imperative (that)
+- It is important (that)
+- It is recommended (that)
+- It is urgent (that)
+- It is vital (that)
+- It is a good idea (that)
+- It is a bad idea (that)
+
+**EXAMPLES: (p.265)**
+
+- It is crucial that you be on time for a job interview.
+- It is urgent that she take her son to the doctor.
+- It is imperative that he attend all the lectures.
+
+#### RESTRICTIVE CLAUSE / NON-RESTRICTIVE CLAUSE (p.265)
+
+**WHAT IS A RESTRICTIVE CLAUSE ?** — règle verbatim :
+
+> A restrictive clause provides essential information about the subject of a sentence : it
+> restricts the meaning of a sentence by identifying the specific qualities of the noun or pronoun.
+
+> Do not use commas with a restrictive clause.
+
+> Restrictive clauses do not need commas.
+
+Exemples imprimés :
+
+- Example: The book which is on the desk is mine.
+  Commentaire du manuel : « Here the restrictive clause "which is on the desk " tells which book is
+  mine. There might be other books in other places, but this sentence is only concerned with the
+  book that is on the bureau. » — [sic] : l'exemple dit *desk*, le commentaire *bureau*.
+- Correct: The book which is on the desk is mine.
+- Incorrect: The book, which is on the desk , is mine.
+- The girl who is picking flowers is beautiful.
+  Commentaire : « The adjective clause tells which girl is in love; there could be a dozen other
+  girls in the area, but only one is picking flowers. » — [sic] : le commentaire dit *is in love*
+  alors que la phrase dit *is beautiful*.
+
+**WHAT IS A NON-RESTRICTIVE CLAUSE ?** — règle verbatim :
+
+> Non-restrictive clauses provide descriptive information that isn't essential to the meaning of
+> the sentence.
+
+> Non-restrictive clauses are enclosed with commas
+
+Exemples imprimés :
+
+- The detective, who was short and fat, took down my statement.
+- The car, which was brand-new, was parked in the garage.
+
+#### INVERSION (p.266)
+
+> Inversion refers to an irregular verb placement form.
+> Generally, an inversion is used to stress the uniqueness of an event and begins with a negative.
+
+**Use of Question Form**
+
+> Inversion refers to the use of question form (auxiliary + subject + main verb) instead of the
+> standard positive sentence structure (i.e. He goes to work every day)
+
+- Not only do I enjoy classical music, but I also have a season ticket to the symphony.
+- Seldom has the boss been so upset!
+
+**Negative Adverbials — Time expressions: never, rarely, seldom**
+
+> These time expressions are used with a perfect form and often include comparatives:
+
+- Never has she been moresuccessful ! — [sic] : *moresuccessful* imprimé en un seul mot.
+- Seldom has he seen anything stranger.
+
+**Time expressions: hardly, barely, no sooner, or scarcely**
+
+> These time expressions are used when there are a succession of events in the past.
+
+- Scarcely had I got out of bed when the doorbell rang.
+- No sooner had he finished dinner, when she walked in the door.
+
+**After 'Only' expressions** — « such as 'only after', 'only when', 'only then', etc. 'Only' is used
+with a time expression. »
+
+- Only then did I understand the problem.
+- Only after understanding the situation does the teacher make a comment.
+
+**After 'Little'** — « 'Little' is used in a negative sense. »
+
+- Little did he understand the situation.
+- Little have I read concerning nanotechnology.
+
+**Inverted Conditional Forms**
+
+> Sometimes conditional forms are inverted as a means of sounding more formal. In this case, the
+> conditional 'if' is dropped and the inverted forms take the place of the 'if clause'.
+
+- Had he understood the problem, he wouldn't have committed those mistakes. (If he had understood
+  the problem, he wouldn't have committed those mistakes.)
+- Should he decide to come, please telephone. (If he decides to come, please telephone.)
+
+#### NEED / NEEDN'T / NEEDN'T HAVE (p.267)
+
+Tableau de règle imprimé, verbatim :
+
+> Need + to + verb = obligation / necessity
+> Needn't + verb = absence of necessity in the present
+> Needn't + have + past participle = absence of necessity in the past. You did something but it
+> wasn't necessary
+
+> We use needn't and don't have to say that something is unnecessary
+
+- You needn't come early.
+- You do not have to make an appointment.
+
+**Need as an ordinary verb** — « used to express necessity, obligation. »
+
+- We don't need to leave now.
+- I need to get some sleep.
+- Do you need to show your identity card?
+
+**Needn't have done / didn't need to** — « used to talk about an unnecessary past action. The action
+happened but we know that it was unnecessary. »
+
+- You needn't have cooked / you didn't need to cook so much food. (You cooked much food but it
+  wasn't necessary).
+
+**Didn't need to** — « means that the action didn't happen. »
+
+- We didn't need to make any sandwiches. We knew that people were bringing their own. (We didn't
+  make them because it wasn't necessary.)
+
+#### COULD HAVE (p.267–268)
+
+> We can use 'could have' to talk about something somebody was capable of doing but didn't do.
+
+- I could have gone to Oxford University but I preferred Harvard.
+- She could have married him but she didn't want to.
+- They could have bought a house here 20 years ago but chose not to.
+
+> Often, there is a sense of criticism.
+
+- You could have phoned me to let me know.
+- They could have helped me instead of just sitting there.
+- I could have done more to help you. Sorry.
+
+> We can use 'couldn't have' to talk about something we were not capable of doing.
+
+- I couldn't have managed without you.
+- I couldn't have got the job. He was always going to appoint his nephew.
+- I couldn't have enjoyed myself more. Thank you for a lovely day.
+
+> We can use 'could have' to speculate about what has happened. (We can also use 'may have' or
+> 'might have' in these situations.)
+
+- She could have taken the earlier train.
+- Simon could have told her.
+- They could have overheard what we said.
+
+> We can also use 'could have' to speculate about something that didn't happen.
+
+- You could have broken your neck, jumping out the window like that.
+- He could have hurt somebody, throwing a bottle out of the window like that.
+- I could have done well in my exam if I'd worked harder.
+
+> You can also use 'could have' to talk about possible present situations that have not happened.
+
+- He could have been Manager now but he got involved in a big financial problem.
+- They could have been the market leaders now if they had taken his advice.
+- I could have been earning a lot as an accountant but the work was just too boring
+
+#### CLAUSES OF CONTRAST (p.268)
+
+> Clauses of Contrast give information that contrasts with or opposes the facts in the main clause
+> in an unexpected way. These clauses can be introduced with conjunctions such as although, (even)
+> though, however, etc. some of these words and phrases introduce the known or background
+> information; others introduce the unexpected contrast.
+
+- Even though it was much too hot, I went out.
+- Everyone played well. However, we still lost the game;
+
+> While can replace although:
+
+- While I see your point, I still think you're wrong.
+
+> The prepositions in spite of and despite are followed by a noun phrase or -ing form :
+
+- In spite of the price, I've decided to buy the car.
+- Despite feeling dreadful, Max went swimming.
+
+#### WHO, WHOM, OF WHICH (p.268–269)
+
+> Who and whom as relative pronouns.
+> A relative pronoun must refer to a noun preceding it.
+
+- The man whom she most admires will be here tonight. — « In this example whom is a relative
+  pronoun to MAN. »
+- The candidate will choose who will act as campaign director. — « In this example who is a
+  personal pronoun. »
+
+> If a pronoun (he, she, it, they) could serve as the subject of the who/whom clause, use who.
+
+- John Smith, who was respected by all the pupils, was the best teacher in the school.
+
+> When a pronoun functions as the object of a clause, use whom.
+
+- John Smith, whom all the pupils respected, was the best teacher in the school.
+
+> When a preposition (in, of, on, without, at, from) precedes the pronoun, use whom or which.
+
+- The anonymous donor, of whom we speak, gave ten million dollars to help the refugees.
+- The lady to whom I made the promise to work hard is my English teacher.
+- The book, from which I took the information, is a thesaurus.
+- The secondary school, to which they go, was built in 1965.
+
+#### PARALLELISM (p.269)
+
+> When two elements of a sentence are similar in meaning, you should express them in parallel form.
+> In other words, all linked words should match in form. By using parallel structure, we both
+> clarify the meaning of our writing and add symmetry to it. Parallel structure joins and emphasizes
+> equally important ideas.
+
+**1. Co-ordinating conjunctions** (and, or, but, for, so, yet)
+
+- She likes dancing and swimming
+- He wanted to buy a new car or a small apartment.
+
+**2. Correlative Conjunctions** (either …or, neither…nor, both…and, not only …but also, whether…or)
+
+- We can either watch a film or listen to music.
+- Neither my mother nor my father speaks English fluently.
+- My brother is not only intelligent but also hard-working.
+- You will need both English and German for this job.
+
+**3. Words in a series**
+
+- She reads novels, short stories and plays.
+- They bought a laptop, a webcam, a flash disk and a mouse.
+
+**4. Comparisons and contrasts using than or as** (i.e., more than, as much as)
+
+- I don't like French as much as I like English.
+- We practise basketball more than we practise volleyball.
+
+**5. Function words** — « A function word that begins one clause must begin the others. »
+
+- prepositions (to, by, in, for) : They take part in debates and in forums.
+- articles (a, an, the) : The documentary was about the Native Americans and the Aborigines.
+- the infinitive (to) : She decided to be serious, to work hard and to attend all the lectures.
+- introductory words (that, who, which, because, when) : I believe that she is innocent and that
+  she deserves our apologies.
+
+#### TIMELINE — tableau des temps (p.270)
+
+Chapeau imprimé, verbatim :
+
+> This timeline tenses chart provides a handy reference sheet to English tenses and their
+> relationship to one another and the past, present and future. Conjugated verbs are highlighted in
+> bold. Tenses which are rarely used in everyday conversation are marked by an asterisk (\*).
+
+Tableau **TIMELINE** à quatre colonnes — *Simple active* · *Simple passive* · *Progressive /
+continuous active* · *Progressive / continuous passive* — la colonne centrale portant le nom du
+temps. Il est ordonné du passé vers le futur, avec trois repères imprimés en travers : **PAST
+TIME**, **PRESENT MOMENT**, **FUTURE TIME**.
+
+| Temps | Simple active | Simple passive | Progressive / continuous active | Progressive / continuous passive |
+| --- | --- | --- | --- | --- |
+| **PAST PERFECT** | We had already eaten when they came. | The car had been sold twice before I bought it. | I had been waiting for four hours when the doctor arrived.. [sic : double point] | — |
+| **PAST** | I saw him at the station last week. | — | I was reading a book when she arrived. | — |
+| **PRESENT PERFECT** | She has lived in London for many years. | The firm has been managed by Steve Watters for the last two years. | She has been working at the supermarket for six months. | — |
+| **PRESENT** | He attends school five days a week | Those carpets are made in Kairawan. | I am learning English at the moment. | The work is being done by Sarah. |
+| **FUTURE INTENTION** | — | — | They are going to fly to Jerba tomorrow. | The reports are going to be completed by the secretary. |
+| **FUTURE SIMPLE** | The weather will be fine tomorrow. | The books will be brought later. | She will be travelling tomorrow at six o'clock. | — |
+| **FUTURE PERFECT** | I will have completed the revision by the end of next week. | The research will have been finished by tomorrow afternoon. | She will have been working here for two months by the end of next week. | — |
+
+> ⚠️ Les cases vides le sont **dans le manuel** : aucune forme n'y est imprimée. Elles ne sont pas
+> une omission de transcription. Le chapeau annonce un astérisque pour les temps rares — **aucun
+> astérisque n'apparaît effectivement dans le tableau imprimé**.
+
+#### COLLOCATIONS, METAPHORS AND IDIOMS (p.271)
+
+**COLLOCATIONS** — « 1. What is collocation ? »
+
+> Collocation is the way in which particular words tend to occur or belong together.
+
+> We say that words that occur together frequently « collocate ». Words that do not collocate almost
+> never occur together. If we try, they sound unnatural and wrong :
+
+- Time speeds / travels / rides / moves ( = they don't collocate).
+- Time flies / goes by / wears on / passes (= they collocate).
+
+> There are no rules or logical explanations for why some words collocate and others don't. For
+> example, we can talk about an academic year but not a studying year. Discussions can be
+> productive or fruitful but not prolific.
+
+**METAPHORS**
+
+> A metaphor is a combination of vocabulary items used in an imaginative way to describe something
+> or someone, in order to show that the 2 things have the same qualities and to make the
+> description more powerful.
+
+Exemples imprimés : *her sunny smile*, *have a big head*, *purr with delight*, *a sun drenched
+beach*, *pull strings*.
+
+*1- Words used metaphorically* :
+
+- I hope this will have cushioned your loss.
+- Seeing him on stage fired my enthusiasm.
+- She just froze when she saw her ex-boyfriend.
+- He's always trumpeting his own successes.
+
+*2- Compound adjectives and nouns as metaphors* :
+
+> Some compounds are always metaphorical - they have a meaning that each part of the compound
+> doesn't have a bloodbath is never 'a bath full of blood'; the compound has only the meaning of 'a
+> massacre'.
+
+[sic] : la phrase imprimée enchaîne sans ponctuation entre *doesn't have* et *a bloodbath is never*.
+
+Autres composés toujours métaphoriques, listés : *mind games*, *mind-reader*, *narrow-minded*,
+*warm-hearted*, *bone-dry*, *hard-bitten*.
+
+**IDIOMS**
+
+> An idiom is a group of words whose meaning is different from the meanings of the individual words.
+
+- The life and soul of the party: the most amusing or interesting person at a party.
+- Make it to the top: be successful.
+- Meeting of minds: a close understanding between people with similar ideas.
+- All of a sudden: quickly and unexpectedly.
+
+### Incertitudes (Grammar Reference)
+
+1. **Sommaire vs contenu (p.261)** : la liste imprimée annonce 12 entrées + « More on metaphors,
+   collocations and idioms ». Les 12 points sont tous présents p.262-270, et le complément
+   métaphores/collocations/idiomes occupe la p.271. Aucun point annoncé ne manque.
+2. **Trois coquilles de la source**, marquées `[sic]` ci-dessus : *bureau* pour *desk* et *is in
+   love* pour *is beautiful* (p.265, commentaires décalés par rapport à leurs exemples),
+   *moresuccessful* en un mot (p.266), et une phrase sans ponctuation p.271. Aucune n'est corrigée
+   en silence.
+3. **Tableau TIMELINE (p.270)** : le chapeau annonce un astérisque pour les temps rarement employés
+   à l'oral, mais **aucun astérisque n'est imprimé** dans le tableau. Les cellules vides sont bien
+   vides dans la source. La mise en page à quatre colonnes a été reconstituée depuis la couche
+   texte ; elle mériterait un contrôle visuel en R-7.
+
+---
+
 ### ⛔ Non transcrit dans ce palier — p.235 à 280
 
-Ce palier s'arrête à la **page 234** (arrêt propre sur budget, T-9/T-10). Restent à transcrire,
-dans une session suivante qui **complète** cette fiche et ne la refait pas (R-4) :
+Restent à transcrire, dans une session suivante qui **complète** cette fiche et ne la refait pas
+(R-4) — **22 pages sur 280** :
 
 | Pages       | Contenu                                                                            | Impact                                                       |
 | ----------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| p.235–247   | **Arts Sessions 8, 9, 10** — *The Richer, The Poorer* · *A Secret for Two* · *What a Wonderful World* | 3 chapitres `bac-lettres` non générables                     |
-| p.248–253   | **CHECK YOUR LANGUAGE AND SKILLS 2**                                               | 1 chapitre de consolidation non générable                    |
-| p.254–260   | **BEFORE WE SAY 'GOOD BYE'** (Road to Success, Organising your PORTFOLIO, auto-évaluation, questionnaire) | 1 chapitre non générable — c'est la préparation à l'examen |
-| p.261–271   | **ADD-ONS — GRAMMAR REFERENCE**                                                    | ⚠️ référentiel grammatical officiel : **absent**             |
+| p.248–253   | **CHECK YOUR LANGUAGE AND SKILLS 2**                                               | chapitre `41` non générable                                  |
+| p.254–260   | **BEFORE WE SAY 'GOOD BYE'** (Road to Success, Organising your PORTFOLIO, auto-évaluation, questionnaire) | chapitre `42` non générable — c'est la préparation à l'examen |
 | p.272–274   | **ADD-ONS — IRREGULAR VERBS**                                                      | liste de référence absente                                   |
 | p.275–280   | **ADD-ONS — Vocabulary Strategies and Affixation · WORD LIST**                     | ⚠️ lexique opposable du niveau : **absent**                   |
 
-Les deux manques qui pèsent le plus ne sont pas les 5 chapitres, ce sont les **ADD-ONS** : le
-GRAMMAR REFERENCE borne ce qu'on a le droit de tester (guide p.9 — « the structures that appear in
-the syllabus in boldtype are considered new at this level »), et le WORD LIST est le lexique
-officiel du niveau. Tant qu'ils ne sont pas transcrits, la génération s'appuie sur la colonne
-*Functions and linguistic exponents* des UNIT OUTLINES et sur les encadrés `MY GRAMMAR` /
-`MY NEW WORDS` de chaque leçon — qui sont, eux, intégralement transcrits pour les p.1–234.
+Le manque qui pèse le plus est désormais le **WORD LIST** : c'est le lexique officiel du niveau
+(guide p.9 — « A list of the new lexical items, specific to year 4, is provided at the end of the
+book. It is arranged in alphabetical order with a mention of the unit and lesson where each word
+appears »). Le **GRAMMAR REFERENCE**, lui, est transcrit intégralement dans ce lot : c'est lui qui
+borne ce qu'on a le droit de tester en langue (guide p.9 — « the structures that appear in the
+syllabus in boldtype are considered new at this level »). En attendant le WORD LIST, le lexique
+exploitable reste celui des encadrés `MY NEW WORDS` de chaque leçon et des rubriques *Lexique de la
+leçon* du §2, qui sont complets pour les pages transcrites.
 
 ## 4. Chapitrage retenu (→ alimente `manifest/bac-*.json` ×6)
 
@@ -7036,9 +8034,10 @@ séries de slugs : **01–42 pour le tronc commun** (les six sections) et **43�
 Arts** (`bac-lettres` seule, via `gradeSlugs`). Aucune numérotation à trous : chaque section voit
 une suite contiguë.
 
-Colonne **Gén.** : ✅ = section transcrite à profondeur de génération dans ce palier (déclarée dans
-`chapitresGeneration` du registre) ; ⛔ = pages non encore lues, **ce chapitre ne se génère pas**
-(R-5 lu au chapitre).
+Colonne **Gén.** : ✅ = transcrit **et** déclaré dans `chapitresGeneration` — générable ;
+🟡 = **transcrit mais non déclaré**, faute d'être vérifiable contre le manifeste de `bac-math`
+qui porte la fiche (voir §6.5, point 4) — générable une fois `bac-lettres` traitée pour elle-même ;
+⛔ = pages non encore lues, **ce chapitre ne se génère pas** (R-5 lu au chapitre).
 
 ### Tronc commun — les six sections (`bac-math`, `bac-sciences-exp`, `bac-lettres`, `bac-eco-gestion`, `bac-techniques`, `bac-info`)
 
@@ -7104,17 +8103,18 @@ Colonne **Gén.** : ✅ = section transcrite à profondeur de génération dans 
 | 47  | `47-arts-the-bards-sonnet-18`              | Arts Session 5 — The Bard's Sonnet 18 et citations de ses pièces   | p.182–183       | ✅   |
 | 48  | `48-arts-as-you-like-it`                   | Arts Session 6 — As You Like It                                    | p.186–188       | ✅   |
 | 49  | `49-arts-project-work-3`                   | Arts Session 7 — Project Work 3 (More on Text Structure)           | p.189–190       | ✅   |
-| 50  | `50-arts-the-richer-the-poorer`            | Arts Session 8 — The Richer, The Poorer                            | p.235–239       | ⛔   |
-| 51  | `51-arts-a-secret-for-two`                 | Arts Session 9 — A Secret for Two                                  | p.240–244       | ⛔   |
-| 52  | `52-arts-what-a-wonderful-world`           | Arts Session 10 — What a Wonderful World!                          | p.245–247       | ⛔   |
+| 50  | `50-arts-the-richer-the-poorer`            | Arts Session 8 — The Richer, The Poorer                            | p.235–239       | ⛔  🟡  |
+| 51  | `51-arts-a-secret-for-two`                 | Arts Session 9 — A Secret for Two                                  | p.240–244       | ⛔  🟡  |
+| 52  | `52-arts-what-a-wonderful-world`           | Arts Session 10 — What a Wonderful World!                          | p.245–247       | ⛔  🟡  |
 
-**Totaux** — tronc commun : **42 chapitres**, dont 40 générables. `bac-lettres` : **52 chapitres**
-(42 + 10), dont 47 générables. Non générables à ce palier : `41`, `42`, `50`, `51`, `52`.
+**Totaux** — tronc commun : **42 chapitres**, dont **40 déclarés générables** (`41` et `42` non
+transcrits). `bac-lettres` : **52 chapitres**, dont 40 déclarés ; ses **10 sessions Arts sont
+toutes transcrites** (les 7 premières au premier palier, les 3 dernières ici) mais non déclarées.
 
-**Hors chapitrage, volontairement** : les **ADD-ONS** (Grammar Reference p.261-271, Irregular Verbs
-p.272-274, Vocabulary Strategies & Word List p.275-280) ne sont pas des chapitres — ce sont des
-**référentiels transverses**, consultés par tous les chapitres. Ils appartiennent à la fiche (§2,
-une fois transcrits), pas au manifeste.
+**Hors chapitrage, volontairement** : les **ADD-ONS** ne sont pas des chapitres — ce sont des
+**référentiels transverses**, consultés par tous les chapitres. Ils appartiennent à la fiche (§2),
+pas au manifeste. Le **GRAMMAR REFERENCE (p.261-271) est transcrit** ; Irregular Verbs (p.272-274)
+et Vocabulary Strategies & Word List (p.275-280) restent à faire.
 
 ## 5. Sources croisées
 
@@ -7123,7 +8123,7 @@ une fois transcrits), pas au manifeste.
   la grammaire et du lexique — PARTS I à III), le **référentiel de compétences** (PART IV,
   transcrit §1.3), **la KEY leçon par leçon** (PART V, reportée dans chaque activité de §2) et les
   **tapescripts** (PART VI, p.47-56).
-- **Manuel élève** : `241403` — « SKILLS For LIFE », 280 p., lu **p.1 à 234** (84 %). Source de
+- **Manuel élève** : `241403` — « SKILLS For LIFE », 280 p., lu **p.1–247 et p.261–271** (92 %). Source de
   contenu combinée : leçons, supports, activités numérotées, encadrés officiels, pages par
   chapitre (§4).
 - **Taybah** : aucun fichier `taybah/bac*.md` au corpus pour ce couple — pas de vérification
@@ -7146,7 +8146,7 @@ une fois transcrits), pas au manifeste.
    the Official Syllabus, **Pages 28-34** ») est un **document tiers, absent du corpus**. La rubrique
    `WHAT I CAN DO NOW` de chaque leçon s'y adosse. Le référentiel PART IV (§1.3) en est le
    substitut disponible, mais ce n'est pas le même document — ne pas le présenter comme tel.
-3. **Les p.235-280 ne sont pas lues** — voir la table « Non transcrit dans ce palier ».
+3. **Les p.248-260 et p.272-280 ne sont pas lues** — voir la table « Non transcrit dans ce palier ».
 
 ### 6.2 ⚠️ La KEY du guide n'est pas fiable au mot près — à re-résoudre avant usage
 
