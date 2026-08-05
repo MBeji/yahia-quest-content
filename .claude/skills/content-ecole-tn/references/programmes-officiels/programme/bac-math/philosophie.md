@@ -679,8 +679,20 @@ Cinq chapitres = les cinq **مباحث** du programme. Les plages de pages sont 
 - **Motif de l'arrêt** : limite d'usage de session atteinte (2026-08-04), qui a tué les deux
   sous-agents de transcription avant leur première écriture. Arrêt propre au dernier palier
   poussable (méthode, T-9/T-10) plutôt que fiche bâclée.
-- **Reprise** : les 408 pages sont déjà **rendues en PNG 150 dpi** (offset 0, `p-NNN.png` = page
-  imprimée NNN) — la reprise n'a pas à re-rendre. Ordre de reprise conseillé : **finir le مبحث 2
+- **Reprise — rendu des pages.** Le rendu PNG de la session 2026-08-04 vivait dans un scratchpad
+  **éphémère** : ne pas compter dessus. Le re-rendu est **déterministe et gratuit** (T-1 — aucun
+  LLM), ~12 min pour les 408 pages ; `p-NNN.png` = page imprimée NNN (**offset 0**) :
+
+  ```bash
+  pdftoppm -png -r 150 -f 227 -l 270 \
+    cnp-officiel/manuels/secondaire/c4/eleve/210402P00.pdf <dir>/p
+  ```
+
+  (poppler local : `_tools/poppler/poppler-26.02.0/Library/bin/pdftoppm.exe`. 150 dpi suffit ; 300
+  seulement pour un encadré douteux.) ⚠️ La couche-texte du PDF est un encodage QuarkXPress hérité,
+  **illisible telle quelle** (glyphes en ordre visuel) : `pdftotext` ne sert à rien, la vision est
+  obligatoire.
+  Ordre de reprise conseillé : **finir le مبحث 2
   en reprenant à la p.227** (سند 4 « سيمون », il reste 44 p. — c'est le chapitre le plus proche de
   la barre R-5, donc le premier à devenir générable), puis 3.2 (p.347–402, 56 p.), puis 3.1
   (p.271–346), puis 1.2 (p.115–214), puis 1.1 (p.6–114). **Ne pas relire** p.1–6, p.215–226 ni
