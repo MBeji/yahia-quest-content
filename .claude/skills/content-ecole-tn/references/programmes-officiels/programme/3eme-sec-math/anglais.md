@@ -1982,7 +1982,7 @@ communicating, working and living with others.
 
 *(manuel p.43-46 · guide p.22-23)*
 
-### Scope and sequence (guide p.22)
+#### Scope and sequence (guide p.22)
 
 | Rubrique | Contenu imprimé |
 | --- | --- |
@@ -1993,7 +1993,7 @@ communicating, working and living with others.
 | **Homework** | doing internet research |
 | **Mini-project** | conducting project work |
 
-### Helpful notes (guide p.22-23)
+#### Helpful notes (guide p.22-23)
 
 - « In addition to the vocabulary presented, familiarise the students with "benevolence" and
   "in-kind" (adj) » — **in-kind contributions** : *goods, commodities or services instead of money*.
@@ -2015,7 +2015,7 @@ communicating, working and living with others.
   - aide / contributions en nature aux personnes handicapées
   - don d'argent ou de matériaux de construction pour bâtir des mosquées
 
-### Activity 1 (manuel p.43-44)
+#### Activity 1 (manuel p.43-44)
 
 **A.** « Look at the pictures and study the quotes then answer the questions below. »
 
@@ -2038,7 +2038,7 @@ communicating, working and living with others.
 *Note* : la question 4 révèle le contenu de la photo n°1 — une vieille dame et une jeune fille
 nommée **Meriam** qui lui offre quelque chose (image non présente dans la couche texte).
 
-### Activity 2 (manuel p.44-45)
+#### Activity 2 (manuel p.44-45)
 
 **A.** « Read the definitions below and complete the unfinished words in the spidergram. Each
 dot ( . ) stands for a letter. »
@@ -2104,13 +2104,13 @@ you wrote. Each dot stands for a letter. »
 **Corrigé D (guide p.23)** : welfare, advancement, donation, property, needy, endowment,
 hospitals, generous, socially.
 
-### Activity 3 (manuel p.46)
+#### Activity 3 (manuel p.46)
 
 « Think of the Tunisian context. In small groups, list the different occasions when Tunisians
 show generosity to their needy countrymen then share the information with your other
 classmates. » → réponses attendues : la liste du guide p.22-23 reproduite plus haut.
 
-### Activity 4 — Homework. A mini-project (manuel p.46)
+#### Activity 4 — Homework. A mini-project (manuel p.46)
 
 Consigne : « Select an NGO (Non-Governmental Organization) or a philanthropist from the lists
 below. In pairs or in a small group, find out about the organization or the person by doing
@@ -2155,7 +2155,7 @@ of this module and don't forget to keep it in your portfolio. »
 
 *(manuel p.47-49 · guide p.24-25 · tapescript guide p.78)*
 
-### Scope and sequence (guide p.24)
+#### Scope and sequence (guide p.24)
 
 | Rubrique | Contenu imprimé |
 | --- | --- |
@@ -2166,7 +2166,7 @@ of this module and don't forget to keep it in your portfolio. »
 | **Pronunciation** *(imprimé « Pronuncition » [sic])* | process speech involving dysfluency features (pausing at the end of a thought group) · recognizing rhythm and intonation patterns in a speech |
 | **Homework** | reorder a jumbled announcement to get a coherent text |
 
-### Helpful notes (guide p.24-25)
+#### Helpful notes (guide p.24-25)
 
 - **Emily Dickinson (1830-1886)** « is still considered America's foremost woman poet. She wrote
   more than 1.700 poems. » *(soit 1700 poèmes — la source écrit « 1.700 » avec un point séparateur
@@ -2188,7 +2188,7 @@ of this module and don't forget to keep it in your portfolio. »
 - Les élèves devront **réinvestir** cette connaissance de la structure du discours, des stratégies
   discursives et des schémas d'intonation pour produire et prononcer un discours en **section four**.
 
-### BEFORE YOU LISTEN (manuel p.47)
+#### BEFORE YOU LISTEN (manuel p.47)
 
 **A.** « Answer these questions. »
 1. Have you ever cared for a depressed/troubled person, or saved a bird/an animal from danger ?
@@ -2212,7 +2212,7 @@ of this module and don't forget to keep it in your portfolio. »
 + consigne complémentaire : « Find out the relationship between the actions described and the
 human values conveyed in this poem. »
 
-### AS YOU LISTEN (manuel p.47-48)
+#### AS YOU LISTEN (manuel p.47-48)
 
 **A.** « Listen to the speech and identify in which order the speaker does the following : »
 *(cases à numéroter ; ordre imprimé dans le manuel ci-dessous, corrigé du guide p.25 en 3e colonne)*
@@ -2304,7 +2304,7 @@ any more money. » ; il le réfute : « Well, the truth is, that's not the case.
 3. ever-increasing costs :
 *(aucun corrigé imprimé)*
 
-### Homework (manuel p.49)
+#### Homework (manuel p.49)
 
 « Reorder the following sentences to get a coherent public service announcement for your local
 radio station. » — 8 phrases, seule la n° 2 est pré-numérotée :
@@ -2328,7 +2328,7 @@ radio station. » — 8 phrases, seule la n° 2 est pré-numérotée :
 
 *(manuel p.50-55 · guide p.26-27)*
 
-### Scope and sequence (guide p.26)
+#### Scope and sequence (guide p.26)
 
 | Rubrique | Contenu imprimé |
 | --- | --- |
@@ -2338,7 +2338,7 @@ radio station. » — 8 phrases, seule la n° 2 est pré-numérotée :
 | **Functions** | talking about a personal experience · expressing opinion |
 | **Homework** | do a web research · gap-filling exercise |
 
-### Helpful notes (guide p.26)
+#### Helpful notes (guide p.26)
 
 - « Phrasal verbs are one of the major important features of the English language. Raise the
   students' awareness of the form and the functional use of phrasal verbs. In the following
@@ -2347,7 +2347,7 @@ radio station. » — 8 phrases, seule la n° 2 est pré-numérotée :
   the same attitude(s) »
 - « Homework : the students may do the research individually or in groups. »
 
-### BEFORE YOU READ (manuel p.50)
+#### BEFORE YOU READ (manuel p.50)
 
 **A.** « Try to recall a time when you sacrificed something (money, time, a desire, a dream …)
 for the good of others. Tell your classmates about it. »
@@ -2356,7 +2356,7 @@ for the good of others. Tell your classmates about it. »
 sentence and guess why Toni looks like a little girl although she's 18 and what made of Kirsty a
 self-sacrificer. » + « Read the whole text and check your guesses. »
 
-### Le texte-support (manuel p.50-51)
+#### Le texte-support (manuel p.50-51)
 
 - **Titre / accroche en gras** : « My sister looks like a little girl ……….. but she's 18. »
 - **Chapeau** : « They should be partying and swapping clothes, but a tragic illness means one
@@ -2404,7 +2404,7 @@ apart. »
 - `* 3 1/2 st . 2 stone = 12.7 kilograms`
 - `* 3 feet = 0.9144 metres`
 
-### AS YOU READ (manuel p.51-53)
+#### AS YOU READ (manuel p.51-53)
 
 **A.** « Complete the table with information from the text. » — tableau à 3 colonnes, vide :
 
@@ -2478,7 +2478,7 @@ children felt like a ton of bricks falling on my head." ? »
 **I.** « In small groups, list Kirsty's self-sacrificial decisions in order to care for her sister
 Toni. »
 
-### Encadré « Exploring grammar » — present perfect vs simple past (manuel p.53, corrigé guide p.27)
+#### Encadré « Exploring grammar » — present perfect vs simple past (manuel p.53, corrigé guide p.27)
 
 Consigne manuel : « Study the examples in column A and in column B. »
 Consigne guide : « Study the examples in column A and in column B then do the activities below. »
@@ -2521,7 +2521,7 @@ imprime, le manuel laissant des pointillés) :**
   - The simple past is used in **conditional sentences after : if, suppose, as if, if only,
     it's (high) time, would rather, wish**.
 
-### AFTER YOU READ (manuel p.53)
+#### AFTER YOU READ (manuel p.53)
 
 « After reading magazine articles dealing with important issues and stories related to specific
 cases from real life, readers usually react. Now, write a short letter to Woman's editor, in which
@@ -2530,7 +2530,7 @@ behave in the same way if you were in her position. »
 *(guide p.26 : la lettre de réaction peut être écrite en petits groupes, à condition que les
 membres partagent la même attitude)*
 
-### Practising related grammar points (manuel p.54)
+#### Practising related grammar points (manuel p.54)
 
 **A.** « Put the verbs in brackets in the present perfect tense or the simple past tense. »
 
@@ -2554,7 +2554,7 @@ membres partagent la même attitude)*
 have gone, **have invited** [sic — l'énoncé porte *(visit)* : lire *have visited*], studied, got,
 offered, accepted, has been. »
 
-### Homework (manuel p.55)
+#### Homework (manuel p.55)
 
 **A.** « Fill in the blanks with the words in the box. »
 
@@ -2591,7 +2591,7 @@ presentation to your classmates. »
 
 *(manuel p.56-58 · guide p.28-29)*
 
-### Scope and sequence (guide p.28)
+#### Scope and sequence (guide p.28)
 
 | Rubrique | Contenu imprimé |
 | --- | --- |
@@ -2601,7 +2601,7 @@ presentation to your classmates. »
 
 *(pas de rubrique Grammar / Pronunciation / Homework / Mini-project imprimée pour cette section)*
 
-### Helpful notes (guide p.28-29)
+#### Helpful notes (guide p.28-29)
 
 - « Elicit from the students what UNICEF stands for and let them talk about its key missions and
   major achievements. »
@@ -2622,7 +2622,7 @@ presentation to your classmates. »
   effective speech. »
 - « The students may use the quotes given in section one. »
 
-### Activity 1 (manuel p.56-57)
+#### Activity 1 (manuel p.56-57)
 
 **A.** « Read the ad and answer the questions below. » — *l'annonce est une publicité **UNICEF**
 signée **Carol Bellamy** (l'image et son texte ne figurent pas dans la couche texte — voir
@@ -2637,7 +2637,7 @@ Incertitudes)*.
 → **9 photos numérotées 1 à 9** (manuel p.56-57 ; contenu visuel non transcriptible — voir la
 description fournie par le guide p.28 ci-dessus).
 
-### AS YOU SPEAK (manuel p.58)
+#### AS YOU SPEAK (manuel p.58)
 
 Contexte imprimé : « **December 8, is the National Solidarity Day in Tunisia.** Your school
 headmaster / headmistress wants you to »
@@ -2665,7 +2665,7 @@ brochures, photographs, transparencies … »
 *(manuel p.59-62 · guide p.30) — les en-têtes des pages 61 et 62 du manuel impriment
 « Session five » [sic] au lieu de « Section five ».*
 
-### Scope and sequence (guide p.30)
+#### Scope and sequence (guide p.30)
 
 | Rubrique | Contenu imprimé |
 | --- | --- |
@@ -2674,7 +2674,7 @@ brochures, photographs, transparencies … »
 | **Grammar** | consolidate the use of discourse markers : expressions used to show the structure of a text · expressions of divisions |
 | **Functions** | giving information · expressing opinion about a specific issue · describing people in a picture |
 
-### Helpful notes (guide p.30)
+#### Helpful notes (guide p.30)
 
 - « Have the students listen to the song and construct much meaning from it. »
 - « Before you write.3. Make the students write complete sentences and discuss them in small groups. »
@@ -2685,7 +2685,7 @@ brochures, photographs, transparencies … »
   on the aspects of writing / evaluation criteria mentioned and apply the writing process
   strategies. »
 
-### BEFORE YOU WRITE (manuel p.59)
+#### BEFORE YOU WRITE (manuel p.59)
 
 **A.** « Read and listen to the following song then answer the questions below. »
 
@@ -2726,7 +2726,7 @@ Questions : « Look at the picture. Do you recognize the man leading the march ?
 know about him ? »
 → **Martin Luther King, Jr.** (photo de la marche, manuel p.59-60 ; image non transcriptible).
 
-### AS YOU WRITE (manuel p.60-61)
+#### AS YOU WRITE (manuel p.60-61)
 
 Consigne verbatim : « Below is a time line indicating some of the events and achievements in the
 life of Dr. Martin Luther King, Jr. the great leader of the civil rights movement in America. Use
@@ -2765,7 +2765,7 @@ maquette :**
 - **April 4, 1968** — King and staff meeting - plan peaceful march
   - assassination of Dr. Martin Luther King, Jr.
 
-### Les connecteurs proposés (manuel p.62) — verbatim
+#### Les connecteurs proposés (manuel p.62) — verbatim
 
 Consigne : « Select from the following expressions the appropriate items that will help you
 structure your text. »
@@ -2782,7 +2782,7 @@ structure your text. »
 - besides (introducing a stronger argument than the one before)
 - earlier · later · before that · after that
 
-### Le processus d'écriture imposé (manuel p.62) — verbatim
+#### Le processus d'écriture imposé (manuel p.62) — verbatim
 
 - Write your first draft
 - Read your text to check if you have used the appropriate cohesive devices
@@ -2800,11 +2800,11 @@ structure your text. »
 > propre vocabulaire (« Arts Supplement » dans la liste finale du manuel p.72) et leurs propres
 > corrigés dans le guide.
 
-### Arts. Section One : Reading a poem
+#### Arts. Section One : Reading a poem
 
 *(manuel p.63-66 · guide p.31 · tapescript du poème guide p.80-81)*
 
-#### Scope and sequence (guide p.31)
+##### Scope and sequence (guide p.31)
 
 | Rubrique | Contenu imprimé |
 | --- | --- |
@@ -2813,7 +2813,7 @@ structure your text. »
 | **Pronunciation** | pronounce properly at word, sentence and discourse levels · recite a poem in an expressive manner |
 | **Functions** | sharing information · expressing opinion |
 
-#### Helpful notes (guide p.31)
+##### Helpful notes (guide p.31)
 
 - « Follow the procedure suggested in this section. »
 - « Make the students listen to the poem. Encourage and motivate them to read the poem aloud and
@@ -2823,7 +2823,7 @@ structure your text. »
 - « Have the students write their poems and display them in class. The students read the different
   poems and exchange appreciation and comments. »
 
-#### BEFORE YOU READ (manuel p.63)
+##### BEFORE YOU READ (manuel p.63)
 
 **A.** « In the following list, there are different types of poetry. (Haiku, Sonnet, Cinquain, Free
 verse). In small groups, write the appropriate type of poetry in front of its corresponding
@@ -2838,7 +2838,7 @@ definition. »
 
 **B.** « What does "fire" usually symbolize ? »
 
-#### AS YOU READ (manuel p.63-66)
+##### AS YOU READ (manuel p.63-66)
 
 **A.** « Read the title of the poem *Catch the fire*. Do we usually catch fire ? » + « Guess what
 the poet means by the word "fire" and share your guesses with your classmates. »
@@ -2897,7 +2897,7 @@ the poet means by the word "fire" and share your guesses with your classmates. �
 8. « Now, listen then volunteer to read the poem aloud and in an expressive manner. (Suppose you
    were Sonia Sanchez reading her poem at a cultural event). »
 
-#### AFTER YOU READ — Writing a poem (manuel p.66)
+##### AFTER YOU READ — Writing a poem (manuel p.66)
 
 Consigne verbatim : « Write a poem (a haiku, free verse, cinquain) in which you address the
 universal theme of love and solidarity and you call for eliminating from the Earth evils such as
@@ -2916,12 +2916,12 @@ hatred, selfishness, racism, violence .etc. »
 | | famine |
 | | illiteracy |
 
-### Arts. Section Two : READING ABOUT GREAT PEOPLE
+#### Arts. Section Two : READING ABOUT GREAT PEOPLE
 
 *(manuel p.67-70 · guide p.32-33 — **attention : le guide p.32 imprime par erreur l'en-tête
 « Section Four : Speaking ». Anomalie confirmée, voir Incertitudes.**)*
 
-#### Scope and sequence (guide p.32)
+##### Scope and sequence (guide p.32)
 
 | Rubrique | Contenu imprimé |
 | --- | --- |
@@ -2929,7 +2929,7 @@ hatred, selfishness, racism, violence .etc. »
 | **Vocabulary** | autobiography, blind, blunted, breeze, cause, challenge, daring, deaf, disability, dumb, immortals, interpreter, joyously, manifest, mysterious, paralytic, prevail, quiver, rallies, reach (n), revelation, strive, struck, suffrage, superstition, testify, touch of (n), tract, unfathomable, unique, unreachable, vaudeville, wild, yearning |
 | **Functions** | describing a condition · expressing opinion · expressing approval/disapproval |
 
-#### Helpful notes (guide p.32)
+##### Helpful notes (guide p.32)
 
 - « The writing activity could be done in groups. Form the groups according to their choices. »
 - « The students are familiar with the strategies of expanding a quote into an extended text. They
@@ -2943,7 +2943,7 @@ hatred, selfishness, racism, violence .etc. »
 - « Make the students use the suggested expressions (page 70) » → renvoi explicite au manuel p.70,
   **preuve que cette page du guide traite bien la section Arts et non la Speaking du tronc commun**.
 
-#### BEFORE YOU READ (manuel p.67)
+##### BEFORE YOU READ (manuel p.67)
 
 **A.** « Complete the following sentences with words from the box below »
 1. A blind person cannot ………. → **see**
@@ -2961,13 +2961,13 @@ hatred, selfishness, racism, violence .etc. »
 3. Has he / she ever tried to challenge that disability ? How ?
 + « Share the information you have with your other classmates. »
 
-#### AS YOU READ (manuel p.67-69)
+##### AS YOU READ (manuel p.67-69)
 
 **A.** « Read paragraph No.1 and predict why Alexander Graham Bell, Maria Montessori, and Mark
 Twain greatly praised Helen Keller. »
 **B.** « Read the whole text and check your predictions. »
 
-#### Le texte-support : « Helen keller : ……………………… » (manuel p.67-68)
+##### Le texte-support : « Helen keller : ……………………… » (manuel p.67-68)
 
 - **Titre à trous** (l'élève doit le compléter en exercice I) : « Helen keller : ……………………… »
   *(minuscule à « keller » [sic])*
@@ -3024,7 +3024,7 @@ Guerre mondiale** et font un **tour du monde** pour la cause des aveugles.
 Unconquered**, et d'une pièce, **The Miracle Worker** — tentatives de documenter une vie qui
 témoignait des portées insondables de l'esprit humain.
 
-#### Les questions (manuel p.69)
+##### Les questions (manuel p.69)
 
 **C.** « What happened to Helen Keller ? When ? »
 **D.** « Did she behave like a normal child ? Justify your answer with two details from paragraph
@@ -3054,7 +3054,7 @@ Worker are written in …………….. because they are …………….. »
 3. Helen Keller : The Famous Actress ( )
 → **Corrigé (guide p.33)** : **2**
 
-#### AFTER YOU READ — Writing (manuel p.70)
+##### AFTER YOU READ — Writing (manuel p.70)
 
 Consigne verbatim : « Choose one of Helen Keller's quotes from the list below. Refer to the
 information given in the text and expand the quote into an article which you will contribute to
@@ -3113,7 +3113,7 @@ mentionné dans le testament — « well you are wrong. Hi Dan ! »
 
 ## VOCABULARY COVERED IN MODULE 2 (manuel p.72) — liste intégrale
 
-### Common core
+#### Common core
 
 **Section one** (26 mots) :
 activism · advancement · altruism · benevolence · charity · common good · contribution · devotion ·
@@ -3140,7 +3140,7 @@ abolish · advocate · assassination · character · civil rights · elect · en
 impressed · ivory · march · metaphor · preach · protest · racial injustice · segregation ·
 untiring · vote
 
-### Arts Supplement
+#### Arts Supplement
 
 **Section one** (17 mots) :
 abuse · barriers · boundaries · famine · free verse · gangster · greed · illiteracy · offence ·
@@ -3201,7 +3201,7 @@ Reading / Listening / Speaking / Writing / Vocabulary / Grammar
 
 ## Tapescripts du module
 
-### Tapescript 1 — « Module two. Section two : Listening » (guide p.78)
+#### Tapescript 1 — « Module two. Section two : Listening » (guide p.78)
 
 Discours prononcé par un **représentant régional de Hope Organization** devant un séminaire.
 Découpé en **4 parties numérotées (1) à (4)** dans le guide, ce qui correspond aux exercices A à F
@@ -3258,7 +3258,7 @@ adjectifs composés (*state-of-the-art, well-run, ever-increasing, fund-raising*
 (**DOES**, **NOW**) · lexique du financement (*Endowment Fund, revenues, operating and research
 budgets, gifts, bequests, wills*) · lexique médical (*orthopaedic, burn injuries, pediatric*).
 
-### Tapescript 2 — « Ebony And Ivory » (guide p.79)
+#### Tapescript 2 — « Ebony And Ivory » (guide p.79)
 
 > **Paroles non reproduites (R-2).** Chanson créditée dans le guide à **Paul Mc Cartney** et
 > **Steve Wonder** [sic]. Le tapescript donne la version complète : le distique d'ouverture
@@ -3272,7 +3272,7 @@ budgets, gifts, bequests, wills*) · lexique médical (*orthopaedic, burn injuri
 > le couplet (8 lignes), sans les reprises, et imprime « There's » là où le tapescript imprime
 > « There is ».
 
-### Tapescript 3 — « Catch the fire » (guide p.80-81)
+#### Tapescript 3 — « Catch the fire » (guide p.80-81)
 
 > **Poème non reproduit (R-2).** Le guide donne le texte intégral du poème de la section Arts one,
 > identique à celui du manuel p.63-64. **Différences relevées entre les deux impressions** :
@@ -3622,7 +3622,7 @@ _Corrigé du guide (p.35)_, tel qu'imprimé (`xxxxxxxxxxxxxx` = case laissée vi
 
 ---
 
-#### Chapeau du module
+##### Chapeau du module
 
 **Titre du module (manuel p.80)** : Module Three — A CHANGE IS AS GOOD AS A REST
 
@@ -3672,9 +3672,9 @@ Un second travail d'enquête existe, mais **uniquement en filière Lettres** : l
 
 ---
 
-#### Section One : Introductory activities (manuel p.81-83 · guide p.37-38)
+##### Section One : Introductory activities (manuel p.81-83 · guide p.37-38)
 
-##### Scope and sequence (guide p.37) — verbatim
+###### Scope and sequence (guide p.37) — verbatim
 
 **Skills/subskills and strategies**
 > **Speaking**
@@ -3700,7 +3700,7 @@ Un second travail d'enquête existe, mais **uniquement en filière Lettres** : l
 **Functions** : - describing pictures related to a specific topic area - expressing opinion - comparing attitudes
 **Mini-project** : Conducting a survey/writing a report
 
-##### Activity 1 (manuel p.81)
+###### Activity 1 (manuel p.81)
 
 **1. Match the activities with the pictures.**
 
@@ -3746,7 +3746,7 @@ C'est l'activité qui installe le point de grammaire de la section (comparatifs 
 
 *Pas de corrigé pour 1.2 et 1.3 dans le guide (activités d'expression libre).*
 
-##### Activity 2 (manuel p.82-83)
+###### Activity 2 (manuel p.82-83)
 
 **1. Complete the table with the appropriate information from the ads below.**
 
@@ -3773,7 +3773,7 @@ Tableau à deux colonnes, vide dans le manuel :
 
 *Pas de corrigé dans le guide.* Le tableau attendu se déduit directement des annonces (destinations : America / camper-van tour, Florida, Rocky Mountains, New York City, Hawaii, Texas–Rio Grande ; activités : self-drive touring, beaches + Universal Studios, canoeing, theatre-dance-opera-museums, beaches + food, rafting + camping).
 
-##### Activity 3 (manuel p.83)
+###### Activity 3 (manuel p.83)
 
 **1.** « look at the chart below.It represents the top leisure activities for adult people in USA. » [sic : minuscule initiale et espace manquante après le point]
 
@@ -3797,9 +3797,9 @@ Tableau à deux colonnes, vide dans le manuel :
 
 ---
 
-#### Section Two : Listening (manuel p.84-86 · guide p.39, tapescript guide p.82)
+##### Section Two : Listening (manuel p.84-86 · guide p.39, tapescript guide p.82)
 
-##### Scope and sequence (guide p.39) — verbatim
+###### Scope and sequence (guide p.39) — verbatim
 
 **Skills/subskills and strategies**
 > **Reading**
@@ -3823,7 +3823,7 @@ Tableau à deux colonnes, vide dans le manuel :
 > Students listen to the whole tape before answering the questions .Make students listen to the passage as many times as needed .
 > In the speaking activity , student A will express his / her preferences for visiting a chosen holiday resort using the appropriate language . Student B will ask for the reasons of his/ her classmate's choice and talk about his /her own preferences.
 
-##### BEFORE YOU LISTEN (manuel p.84)
+###### BEFORE YOU LISTEN (manuel p.84)
 
 **Consigne** : « Read the text about the Maltese islands and complete the table with the appropriate information. »
 
@@ -3835,7 +3835,7 @@ Tableau à cinq colonnes, vide dans le manuel :
 
 ⚠️ **Le texte sur les îles maltaises est une image dans le PDF et n'apparaît pas dans la couche texte** (voir Incertitudes). Le vocabulaire de la section (guide p.39 : island, dive, cave, harbour, bay, rock(y), shoreline, bake(ry), lagoon, sunset ; manuel p.106 : cliff, creek, crystal clear, jeep, labyrinth, mythical, path, reef, tiny, wreck, make up) indique ce que le texte contient, mais il n'est pas transcriptible depuis la source fournie.
 
-##### AS YOU LISTEN (manuel p.84-85)
+###### AS YOU LISTEN (manuel p.84-85)
 
 **1.** « Answer the following question. What are the islands that may be visited in this radio advert ? »
 *Réponse déductible du tapescript : Gozo et Comino (la « Blue Lagoon » se trouve sur l'île de Comino). Le guide ne donne pas de corrigé pour cette question.*
@@ -3872,7 +3872,7 @@ Tableau à cinq colonnes, vide dans le manuel :
 → à cocher : **along, off, through, around, on, in, back, at** (8 prépositions sur 20).
 → à ne pas cocher : above, before, towards, below, over, across, out of, away, up, after, under, into.
 
-##### PRONUNCIATION (manuel p.85)
+###### PRONUNCIATION (manuel p.85)
 
 **Consigne** : « Listen and put each of the following words in the appropriate box according to the underlined sound . »
 
@@ -3888,7 +3888,7 @@ Lecture la plus vraisemblable des symboles : /uː/ · /ʌ/ · /ɔː/ · /aʊ/ ·
 
 *Aucun corrigé dans le guide pour la rubrique Pronunciation.*
 
-##### AFTER YOU LISTEN — SPEAKING (manuel p.86)
+###### AFTER YOU LISTEN — SPEAKING (manuel p.86)
 
 **Consigne** : « You saw the following advertisements in a newspaper and you decided to go on holidays. Which of the holidays would you most like to go on ? »
 ⚠️ Les annonces de la p.86 sont des images et n'apparaissent pas dans la couche texte (voir Incertitudes).
@@ -3902,9 +3902,9 @@ Puis : « Tell your partner about the country you want to visit and the reasons 
 
 ---
 
-#### Section Three : Reading (manuel p.87-91 · guide p.40)
+##### Section Three : Reading (manuel p.87-91 · guide p.40)
 
-##### Scope and sequence (guide p.40) — verbatim
+###### Scope and sequence (guide p.40) — verbatim
 
 **Skills/subskills and strategies**
 > **Reading**
@@ -3928,7 +3928,7 @@ Puis : « Tell your partner about the country you want to visit and the reasons 
 > In the third stage of this section , students in pairs will give their opinions and justify their points of view . The items in the list of services provided is also an opportunity for students to learn more words related to the same topic.
 > Have students do the language exercise in the classroom or assign it as a homework .
 
-##### BEFORE YOU READ (manuel p.87)
+###### BEFORE YOU READ (manuel p.87)
 
 **Consigne** : « Look at the following pictures and the advertisements then discuss the following in pairs: »
 - « Which of these places would you prefer to stay the night at ? Why ? »
@@ -3941,7 +3941,7 @@ Puis : « Tell your partner about the country you want to visit and the reasons 
 2. **Terraced House** — « Terraced house situated in a quiet location. Layout comprises entrance hall, lounge, spacious kitchen/dining, 3 bedrooms, bathroom, guest toilet and laundry room at roof level. Further complementing this property is an airy basement with the possibility to convert into a flat let with own independent entrance. »
 3. Légende de la troisième photo : **« The Waterfront Hotel, The Strand, Gzira »** (pas de corps d'annonce imprimé).
 
-##### Le texte-support (manuel p.88)
+###### Le texte-support (manuel p.88)
 
 **Genre** : texte narratif — récit d'une expérience personnelle (cf. « read a narrative text about a personal experience », manuel p.80). **Aucune source ni auteur cités** dans le manuel. Texte non titré : c'est précisément l'objet de l'activité 8 (« Provide an appropriate title for this text »).
 
@@ -3957,7 +3957,7 @@ Puis : « Tell your partner about the country you want to visit and the reasons 
 > 1. Last summer my husband and I rented a cottage. Previously, We had always spent our summer holidays camping .
 > 2. As some of our friends had rented the same cottage before, we knew that the place would be clean and comfortable.
 
-##### AS YOU READ (manuel p.88-89) — 8 activités
+###### AS YOU READ (manuel p.88-89) — 8 activités
 
 **1. Complete the table with the appropriate information about the writer.** (manuel p.88)
 
@@ -4007,7 +4007,7 @@ Puis : « Tell your partner about the country you want to visit and the reasons 
 
 **8.** « Provide an appropriate title for this text. »
 
-##### Exploring grammar (manuel p.90) — encadré de règle
+###### Exploring grammar (manuel p.90) — encadré de règle
 
 **Consigne 1** : « Read the first paragraph again and underline all the verbs »
 
@@ -4027,7 +4027,7 @@ Puis : « Tell your partner about the country you want to visit and the reasons 
 
 *Le guide ne donne pas le corrigé de cet encadré.* Complétion attendue : *finished/completed* actions at a particular point in the *past* ; a completed *action* happened *before* something else in the past.
 
-##### AFTER YOU READ — la liste des services (manuel p.90)
+###### AFTER YOU READ — la liste des services (manuel p.90)
 
 **Consigne** : « Look at the list of services provided in a hotel in Florida. »
 
@@ -4052,7 +4052,7 @@ Puis : « Tell your partner about the country you want to visit and the reasons 
 2. « Put a cross next to any services which you think are not important. »
 3. « Discuss the reasons for your choice with a classmate and put the services in order of priority. »
 
-##### Practising related grammar points (manuel p.91) — l'exercice de langue / devoir maison
+###### Practising related grammar points (manuel p.91) — l'exercice de langue / devoir maison
 
 **Consigne** : « Complete the following conversation with the correct tense and/or form of the bracketed verbs : »
 
@@ -4088,9 +4088,9 @@ Puis : « Tell your partner about the country you want to visit and the reasons 
 
 ---
 
-#### Section Four : Speaking (manuel p.92-93 · guide p.41)
+##### Section Four : Speaking (manuel p.92-93 · guide p.41)
 
-##### Scope and sequence (guide p.41) — verbatim
+###### Scope and sequence (guide p.41) — verbatim
 
 **Skills/subskills and strategies**
 > **Reading**
@@ -4111,7 +4111,7 @@ Puis : « Tell your partner about the country you want to visit and the reasons 
 > **Activity 2**
 > Assign this activity as homework if class time is not sufficient. Ask the students to summarize their classmate's answers in a short paragraph and be ready to present it the following session. The speaking test may also be based on this activity.
 
-##### Activity 1 (manuel p.92) — l'interview support
+###### Activity 1 (manuel p.92) — l'interview support
 
 **Consigne** : « Read the following interview then answer the questions. »
 
@@ -4147,7 +4147,7 @@ Puis : « Tell your partner about the country you want to visit and the reasons 
 
 **2.** « How is the interview different from a usual conversation ? »
 
-##### Activity 2 (manuel p.93)
+###### Activity 2 (manuel p.93)
 
 **Consigne** : « Follow the steps below to interview a classmate about a holiday, real or imaginary. » — six étapes verbatim :
 > a) Write 5 to 7 questions about the holiday. Begin your questions with words like what, who, why, when, where, how many, did, was/were, etc
@@ -4157,7 +4157,7 @@ Puis : « Tell your partner about the country you want to visit and the reasons 
 > e) Exchange roles.
 > f) Enact the interview.
 
-##### Activity 3 (manuel p.93)
+###### Activity 3 (manuel p.93)
 
 « Report your classmate's answers to the class. » — c'est le second point de grammaire de la section (*reporting answers*, guide p.41).
 
@@ -4165,9 +4165,9 @@ Puis : « Tell your partner about the country you want to visit and the reasons 
 
 ---
 
-#### Section Five : Writing (manuel p.94-95 · guide p.42)
+##### Section Five : Writing (manuel p.94-95 · guide p.42)
 
-##### Scope and sequence (guide p.42) — verbatim
+###### Scope and sequence (guide p.42) — verbatim
 
 **Skills/subskills and strategies**
 > **Reading**
@@ -4189,7 +4189,7 @@ Puis : « Tell your partner about the country you want to visit and the reasons 
 
 *Le guide ne comporte pas de « Helpful notes » pour la Section Five — uniquement le Scope and sequence et l'Answer Key.*
 
-##### BEFORE YOU WRITE (manuel p.94-95)
+###### BEFORE YOU WRITE (manuel p.94-95)
 
 **1.** « What sort of things can spoil a holiday? The pictures below may help you. »
 ⚠️ Images non présentes dans la couche texte (voir Incertitudes).
@@ -4254,7 +4254,7 @@ Puis : « Tell your partner about the country you want to visit and the reasons 
 > Part 2 : Details of problems.
 > Part 3 : What is expected from the company.
 
-##### AS YOU WRITE (manuel p.95) — la tâche d'écriture
+###### AS YOU WRITE (manuel p.95) — la tâche d'écriture
 
 **Situation, verbatim** :
 > You have just come back from a holiday abroad. There were a number of things you were not happy about. Here are a few points you noted down :
@@ -4272,13 +4272,13 @@ Puis : « Tell your partner about the country you want to visit and the reasons 
 
 ---
 
-#### Supplément ARTS (filière Lettres uniquement) — manuel p.96-103 · guide p.43-44
+##### Supplément ARTS (filière Lettres uniquement) — manuel p.96-103 · guide p.43-44
 
 > ⚠️ **Frontière** : tout ce qui suit (manuel p.96 à 103, guide p.43-44) est imprimé en rose dans le manuel et **ne concerne que la filière Lettres (Arts branch)**. Les six sections de 3ème année traitent les Sections One à Five ci-dessus ; seules les classes Lettres traitent en plus les deux sections Arts. Les deux points de grammaire *might/could + bare infinitive* et *la voix passive* n'appartiennent donc **pas** au tronc commun de ce module.
 
-### ARTS · Section One — READING (manuel p.96-98 · guide p.43)
+#### ARTS · Section One — READING (manuel p.96-98 · guide p.43)
 
-##### Scope and sequence (guide p.43) — verbatim
+###### Scope and sequence (guide p.43) — verbatim
 
 **Skills/subskills and strategies**
 > **Speaking**
@@ -4300,12 +4300,12 @@ Puis : « Tell your partner about the country you want to visit and the reasons 
 
 *Pas de « Helpful notes » pour cette section dans le guide — seulement le Scope and sequence et l'Answer Key.*
 
-##### BEFORE YOU READ (manuel p.96)
+###### BEFORE YOU READ (manuel p.96)
 1. « Have you ever wanted to go on a holiday but couldn't afford it ? »
 2. « Can you make an estimate on how much you need to go on a holiday ? »
 3. « Look at the title of the text. What kind of information will it probably contain ? »
 
-##### Le texte-support (manuel p.96-97)
+###### Le texte-support (manuel p.96-97)
 
 **Titre** : **How to plan a cheap affordable vacation**
 **Genre** : texte informatif / article de conseils pratiques (cf. « read an informative text », manuel p.80). **Aucun auteur ni source cités** — c'est précisément l'objet de la question 6 (« Where do you think this text is from? Who wrote it? »).
@@ -4319,7 +4319,7 @@ Puis : « Tell your partner about the country you want to visit and the reasons 
 - **§5** — Une fois les idées en place, il faut décider du budget et des destinations. Pour cela, répartir l'argent disponible par catégories de dépenses : voyage, hébergement, repas, divertissements et activités. Inutile de mettre de côté pour les imprévus (réparations de voiture par exemple) si l'on a une carte de crédit sur laquelle se rabattre (« a credit card to fall back on »). Le montant alloué à chaque catégorie relève de chacun : il n'existe pas de formule toute faite (« there is no set formula »).
 - **§6 (clôture)** — Les vacances n'ont pas besoin d'être coûteuses pour être un moment particulier hors du quotidien. Avec quelques recherches et un peu de planification, on peut s'offrir un voyage à tout moment.
 
-##### AS YOU READ (manuel p.97) — 6 activités
+###### AS YOU READ (manuel p.97) — 6 activités
 
 **1.** « Read the text and check your guesses. »
 
@@ -4366,7 +4366,7 @@ Puis : « Tell your partner about the country you want to visit and the reasons 
 **6.** « Where do you think this text is from? Who wrote it? Who is the expected audience? »
 *Pas de corrigé dans le guide.*
 
-##### AFTER YOU READ (manuel p.98) — l'encadré de grammaire *might / could*
+###### AFTER YOU READ (manuel p.98) — l'encadré de grammaire *might / could*
 
 **1. Focus on the italicized words below. (par 2)** — les deux phrases-cibles, verbatim :
 > You could plan to spend at least one night…
@@ -4385,14 +4385,14 @@ Puis : « Tell your partner about the country you want to visit and the reasons 
 >    b- Possibility
 > 2* might / could + bare infinitive ---------- future possibility
 
-##### Homework (manuel p.98)
+###### Homework (manuel p.98)
 > Choose a vacation destination you would like to visit and search the web to find information about it.(location, accommodation, weather, activities, etc)
 
 Correspond à la ligne « Homework : Doing internet research » du guide p.43. *Pas de corrigé (production libre).*
 
-### ARTS · Section Two — READING (manuel p.99-103 · guide p.44)
+#### ARTS · Section Two — READING (manuel p.99-103 · guide p.44)
 
-##### Scope and sequence (guide p.44) — verbatim
+###### Scope and sequence (guide p.44) — verbatim
 
 **Skills/subskills and strategies**
 > **Reading**
@@ -4418,7 +4418,7 @@ Correspond à la ligne « Homework : Doing internet research » du guide p.43. *
 > Ask students to read both texts at the same time and answer the first questions then to focus on the second text and answer the remaining questions .
 > Before conducting the survey , students in groups of four complete the questionnaire with the appropriate questions and tick the appropriate boxes .
 
-##### BEFORE YOU READ (manuel p.99)
+###### BEFORE YOU READ (manuel p.99)
 
 **1. Answer the following questions :**
 > a) Do you like eating out?
@@ -4442,7 +4442,7 @@ Correspond à la ligne « Homework : Doing internet research » du guide p.43. *
 | Chips |  |  |
 | Fresh fruit salad |  |  |
 
-##### AS YOU READ — les deux textes (manuel p.100)
+###### AS YOU READ — les deux textes (manuel p.100)
 
 **Consigne** : « Read the texts and do the activities below. »
 
@@ -4464,7 +4464,7 @@ Phrase citée verbatim dans l'exercice 3 (donc reproduite ici parce qu'elle *est
 - **§3** — Fondée en 2002 par deux femmes dans une banlieue de Seattle, Dream Dinners fut la première société spécialisée dans le « meal assembly ». Le fonctionnement : le client utilise un site web pour choisir une date et une heure ainsi que les plats qu'il souhaite préparer — un pavé de bœuf en croûte d'herbes, par exemple, ou un poulet mirabella. À son arrivée à la séance, les ingrédients ont été soigneusement répartis dans des récipients en acier inoxydable.
 - **§4** — Le processus se déroule comme une émission culinaire de télévision : « c'est cuisiner avec tout déjà disposé pour soi ». Les chefs en herbe (« would-be chefs ») se contentent de mélanger et d'assaisonner, préparant viandes, poissons et pizzas pour le four. Les plats préparés — mais non cuits — sont ensuite emballés dans des sacs de congélation et des barquettes en aluminium. Les instructions de cuisson y sont apposées et les repas sont rapportés chez soi dans une glacière, où chaque client stockera une douzaine de plats prêts à cuire.
 
-##### Activités sur les DEUX textes (manuel p.101)
+###### Activités sur les DEUX textes (manuel p.101)
 
 **1. Complete the sentences** — amorces verbatim :
 > Both texts are about………………………………………………………………………………..
@@ -4483,7 +4483,7 @@ Phrase citée verbatim dans l'exercice 3 (donc reproduite ici parce qu'elle *est
 
 *Aucun corrigé dans le guide pour ces quatre activités.*
 
-##### Activités sur le TEXTE 2 (manuel p.101-102)
+###### Activités sur le TEXTE 2 (manuel p.101-102)
 
 **1. Say whether the following statements are true or false. Justify your answers.**
 > – Americans don't like home-made food ( )
@@ -4521,7 +4521,7 @@ Phrase citée verbatim dans l'exercice 3 (donc reproduite ici parce qu'elle *est
 
 *Aucun corrigé dans le guide pour ces quatre activités.*
 
-##### Exploring grammar — la voix passive (manuel p.102)
+###### Exploring grammar — la voix passive (manuel p.102)
 
 **Consigne** : « Focus on the following sentences » — les deux phrases-cibles, verbatim :
 > 1. the prepared meals are bundled into freezer bags.
@@ -4537,7 +4537,7 @@ Phrase citée verbatim dans l'exercice 3 (donc reproduite ici parce qu'elle *est
 
 *Le guide ne donne pas le corrigé de cet encadré.* Complétion attendue : focus more on the *action* than on the *person/doer* who does it ; used when the doer is not *important* or not known ; an object in an active sentence would be the *subject* in a *passive* sentence.
 
-##### AFTER YOU READ — l'enquête sur les habitudes alimentaires (manuel p.102-103)
+###### AFTER YOU READ — l'enquête sur les habitudes alimentaires (manuel p.102-103)
 
 **Consigne générale** : « You are going to do a survey about the eating habits in your class. »
 
@@ -4556,7 +4556,7 @@ Phrase citée verbatim dans l'exercice 3 (donc reproduite ici parce qu'elle *est
 **Useful language (encadré verbatim, manuel p.103)** :
 > most of us / some of us / nearly all of us / half of us / none of us... however , in addition.
 
-##### Homework — passif / actif (manuel p.103)
+###### Homework — passif / actif (manuel p.103)
 
 **Consigne** : « Circle the correct alternative. »
 
@@ -4577,7 +4577,7 @@ Phrase citée verbatim dans l'exercice 3 (donc reproduite ici parce qu'elle *est
 
 ---
 
-#### SELF-ASSESSMENT (manuel p.104)
+##### SELF-ASSESSMENT (manuel p.104)
 
 **A. « What progress do you feel you have made in English in this module ? Put a tick (√ ) in the box that applies to you . »** — grille à 14 énoncés × 3 colonnes (YES / A LITTLE / NO), verbatim :
 
@@ -4616,7 +4616,7 @@ Phrase citée verbatim dans l'exercice 3 (donc reproduite ici parce qu'elle *est
 
 ---
 
-#### FUN PAGE (manuel p.105)
+##### FUN PAGE (manuel p.105)
 
 Deux éléments humoristiques, sans titre ni auteur, séparés par un motif décoratif de points.
 
@@ -4625,11 +4625,11 @@ Deux éléments humoristiques, sans titre ni auteur, séparés par un motif déc
 
 ---
 
-#### VOCABULARY COVERED IN MODULE 3 (manuel p.106) — liste intégrale
+##### VOCABULARY COVERED IN MODULE 3 (manuel p.106) — liste intégrale
 
 La page est imprimée sur quatre colonnes ; la liste ci-dessous restitue l'ordre logique (chaque section est alphabétique dans la source, ce qui valide la recomposition des colonnes).
 
-##### Common core
+###### Common core
 
 **Section one** (17 entrées)
 accommodation · canoeing · cycling · dog sledge riding · harbour cruising · hiking · honeymoon · luscious food · roller skating · safari · sightseeing · sky diving · sunbathing · surfing · tent · water skiing · wildlife
@@ -4646,7 +4646,7 @@ appeal · battler · blend · choreographer · corrupt · elite · merge · reig
 **Section five** (5 entrées)
 break down · compensation · disappointed · fed up · marvellous
 
-##### Arts Supplement (filière Lettres uniquement)
+###### Arts Supplement (filière Lettres uniquement)
 
 **Section one** (18 entrées)
 affordable · amass · amazing · category · chalet · commune · estimate · fall back on sb · formula · get on line · grind · internet site · pertinent · resort · soak up · travel lodge · unwind · vacation (n &v)
@@ -4663,7 +4663,7 @@ anthropologist · bundle (v) · commodity · communal · consistent · cooler ·
 
 ---
 
-#### Tapescript du module (guide p.82)
+##### Tapescript du module (guide p.82)
 
 **En-tête imprimé** : « Module three: Section two . Listening »
 **Genre** : annonce radiophonique / boniment publicitaire pour une excursion d'une journée à Gozo et Comino (îles maltaises). Texte non littéraire, reproduit intégralement car c'est l'unique support audio de la Section Two et il n'est reproduit nulle part dans le manuel.
@@ -4708,7 +4708,7 @@ anthropologist · bundle (v) · commodity · communal · consistent · cooler ·
 
 ---
 
-#### Incertitudes (module 3)
+##### Incertitudes (module 3)
 
 1. **Le texte « about the Maltese islands » de la p.84 (BEFORE YOU LISTEN) est absent de la couche texte** — c'est une image dans le PDF. Le tableau à compléter (Number of Islands / Names / Landscape / weather / Sports) est donc transcrit mais sa source ne l'est pas. Le lexique de la section (guide p.39 + manuel p.106 : *cliff, creek, crystal clear, labyrinth, mythical, path, reef, tiny, wreck, make up, dive, cave, bay, harbour, rock(y)*) laisse deviner le contenu, mais **rien n'a été reconstitué**. Toute génération sur cette activité exige de rouvrir le manuel p.84.
 2. **Le graphique de la p.83 (Activity 3.1, « top leisure activities for adult people in USA ») est absent de la couche texte** : aucune activité ni aucun pourcentage n'est récupérable. L'activité 3.1a (comparaison chiffrée, comparatifs) n'est donc pas générable en l'état.
@@ -6594,7 +6594,7 @@ tâche ne portant que sur la ponctuation, c'est un écart du corrigé, pas de l'
 | **Homework** | §3 : language exercise (manuel p.167) · Arts §1 : language exercise, multiple choice alternatives (manuel p.175) |
 | **Mini-projects** | Aucun mini-project déclaré dans le guide pour ce module (rubrique « Homework / mini-projects » renseignée seulement en Homework). |
 
-### Expected learning outcomes (manuel p.153, verbatim)
+#### Expected learning outcomes (manuel p.153, verbatim)
 
 « In this module, I'm going to »
 
@@ -6623,11 +6623,11 @@ tâche ne portant que sur la ponctuation, c'est un écart du corrigé, pas de l'
 
 ---
 
-#### Section One : Introductory activities
+##### Section One : Introductory activities
 
 *(manuel p.154-159 · guide p.59-60)*
 
-##### Scope and sequence (guide p.59, verbatim)
+###### Scope and sequence (guide p.59, verbatim)
 
 **Skills/subskills and strategies**
 
@@ -6661,7 +6661,7 @@ retardation, rise, seek, self-esteem, slate, sow, status, switch, transfer, upda
 
 **Functions** : - expressing opinion · - making comparisons · - describing conditions
 
-##### Helpful notes (guide p.60, verbatim)
+###### Helpful notes (guide p.60, verbatim)
 
 - « Have the students exploit the Chinese proverb and construct much meaning from it. »
 - « The practice of integrating children with disabilities into regular school programs is called
@@ -6678,7 +6678,7 @@ retardation, rise, seek, self-esteem, slate, sow, status, switch, transfer, upda
 - learning can be individualized according to one's needs
 - establish a link with exercises C and D.
 
-##### Activity 1 (manuel p.154) — Le proverbe chinois
+###### Activity 1 (manuel p.154) — Le proverbe chinois
 
 **Consigne** : « Read the following Chinese proverb then answer the questions below. »
 
@@ -6698,7 +6698,7 @@ retardation, rise, seek, self-esteem, slate, sow, status, switch, transfer, upda
 **Corrigé** : aucun (activité d'expression ouverte ; le guide demande seulement d'« exploiter » le
 proverbe).
 
-##### Activity 2 (manuel p.154-155) — École traditionnelle vs apprentissage électronique
+###### Activity 2 (manuel p.154-155) — École traditionnelle vs apprentissage électronique
 
 **A.** « Find out the differences between the following two sets of pictures. »
 — **(Set 1)** manuel p.154 · **(Set 2)** manuel p.155.
@@ -6757,7 +6757,7 @@ Learning. » — Tableau à une colonne intitulée **Advantages**, 8 lignes dont
   « learn while you earn »
 - **E.** 1. audio, 2. illustrations, 3. quizzes, 4. chats, 5. electronic
 
-##### Activity 3 (manuel p.156-157) — Special education
+###### Activity 3 (manuel p.156-157) — Special education
 
 **A.** « Look at the following pictures and answer the questions below. » — 3 photos numérotées
 1, 2, 3 (manuel p.156).
@@ -6828,7 +6828,7 @@ Questions :
   *(Aucun corrigé fourni pour les questions 1, 3, 4, 5, 6 — questions de compréhension /
   d'opinion.)*
 
-##### Activity 4 (manuel p.158) — Réussite professionnelle et éducation
+###### Activity 4 (manuel p.158) — Réussite professionnelle et éducation
 
 **A.** « Does success in professional life depend exclusively on education ? » (débat).
 
@@ -6872,7 +6872,7 @@ a white-collar worker ? Why ? Why not ? »
 
 **Answer key (guide p.60)** — **C.** blue-collar workers. · **D.** The double life of Alfred Bloggs.
 
-##### Exploring grammar (manuel p.159) — Comparatifs modifiés et comparaison d'échelle
+###### Exploring grammar (manuel p.159) — Comparatifs modifiés et comparaison d'échelle
 
 **A. Modified comparatives** — verbatim :
 
@@ -6905,7 +6905,7 @@ a white-collar worker ? Why ? Why not ? »
 - `number of times + as + adjective / adverb + as`
 - `number of times + as + many / much + noun + as`
 
-##### Practising related grammar points (manuel p.159)
+###### Practising related grammar points (manuel p.159)
 
 « Use comparisons of scale »
 
@@ -6920,11 +6920,11 @@ a white-collar worker ? Why ? Why not ? »
 
 ---
 
-#### Section Two : Listening
+##### Section Two : Listening
 
 *(manuel p.160-161 · guide p.61 · tapescript guide p.85)*
 
-##### Scope and sequence (guide p.61, verbatim)
+###### Scope and sequence (guide p.61, verbatim)
 
 **Skills/subskills and strategies**
 *Reading* — acquire knowledge of the language
@@ -6939,12 +6939,12 @@ manage ideas and information
 
 **Pronunciation** : - stress patterns · - consonant/vowel sounds
 
-##### Helpful notes (guide p.61, verbatim)
+###### Helpful notes (guide p.61, verbatim)
 
 - « When dealing with the grammar exercise, have the students see the appended grammar summary to
   get help and guidance »
 
-##### BEFORE YOU LISTEN (manuel p.160)
+###### BEFORE YOU LISTEN (manuel p.160)
 
 « Complete the paragraph with the following words. »
 **Banque de mots** : `qualifications / employment / wages / search / application / interview / found out /`
@@ -6962,7 +6962,7 @@ manage ideas and information
 **Answer key (guide p.61)** : 1+employment, 2+application, 3+qualifications, 4+interview,
 5+found out, 6+wages, 7+search.
 
-##### AS YOU LISTEN (manuel p.160-161)
+###### AS YOU LISTEN (manuel p.160-161)
 
 **Mise en situation (manuel p.160, verbatim)** : « Mrs Perks, a product manager at Thomas Cook
 Holidays, is being inteviewed [sic] by a journalist about her job. »
@@ -7006,7 +7006,7 @@ false ones. »
 (§ Tapescript du module) ; ils ne sont pas imprimés dans la source et ne sont donc pas restitués
 ici comme corrigé officiel.
 
-##### Exploring grammar (manuel p.161) — Indirect questions
+###### Exploring grammar (manuel p.161) — Indirect questions
 
 **Consigne** : « Rewrite the following utterances starting with the words given. Spot the
 differences between the direct questions and the indirect questions. »
@@ -7018,7 +7018,7 @@ Les deux items sont imprimés **déjà transformés** (ils servent de modèles) 
 2. « Do you have any special qualifications ? »
    → *He asked Mrs Perks if she had any special qualifications.*
 
-##### Practising related grammar points (manuel p.161)
+###### Practising related grammar points (manuel p.161)
 
 « Report the following utterances starting with verbs in the past. »
 
@@ -7035,11 +7035,11 @@ Les deux items sont imprimés **déjà transformés** (ils servent de modèles) 
 
 ---
 
-#### Section Three : Reading
+##### Section Three : Reading
 
 *(manuel p.162-167 · guide p.62)*
 
-##### Scope and sequence (guide p.62, verbatim)
+###### Scope and sequence (guide p.62, verbatim)
 
 **Skills/subskills and strategies**
 *Reading* — identify the genre of a text · recognize text structure · differentiate between
@@ -7059,13 +7059,13 @@ detention - exclusion - lines - suspension
 
 **Homework / mini-projects** : Homework : language exercise
 
-##### Helpful notes (guide p.62, verbatim)
+###### Helpful notes (guide p.62, verbatim)
 
 - « Ask students to do the matching exercise. You may do the first one with the students to help
   them. The first activities prepare the students for the reading activity. Ask students to read
   the text and answer the comprehension questions. »
 
-##### BEFORE YOU READ — Activity 1 (manuel p.162) : les punitions scolaires
+###### BEFORE YOU READ — Activity 1 (manuel p.162) : les punitions scolaires
 
 **A.** « Match the words in column A with their meanings in B. » (3e colonne « Answers » à remplir)
 
@@ -7084,7 +7084,7 @@ detention - exclusion - lines - suspension
 
 **Answer key (guide p.62)** — Activity one : **1 - d / 2 - c / 3 - b / 4 - a**.
 
-##### BEFORE YOU READ — Activity 2 (manuel p.163) : qui parle ?
+###### BEFORE YOU READ — Activity 2 (manuel p.163) : qui parle ?
 
 **Consigne** : « Read the following quotes and match each one with the appropriate speaker :
 a teacher / a student / parents / an expert. »
@@ -7107,7 +7107,7 @@ Tableau à remplir : `QUOTE / SPEAKER` — 4 lignes (1, 2, 3, 4).
 (« We're always blamed for all the ills in society », qui évoque plutôt le corps enseignant) —
 voir Incertitudes. La clé est reproduite telle qu'imprimée.
 
-##### AS YOU READ (manuel p.164) — L'article de presse
+###### AS YOU READ (manuel p.164) — L'article de presse
 
 **Consigne** : « Read the text and do the activities below. »
 
@@ -7145,7 +7145,7 @@ voir Incertitudes. La clé est reproduite telle qu'imprimée.
 > over-relied on telling pupils off, which had very little effect on the pupils' behaviour. The
 > more praise there was the fewer kids there were mucking around."
 
-##### Comprehension (manuel p.165)
+###### Comprehension (manuel p.165)
 
 « Read the text and »
 
@@ -7175,7 +7175,7 @@ voir Incertitudes. La clé est reproduite telle qu'imprimée.
 **Answer key** : le guide p.62 ne donne **aucun corrigé** pour ces six questions de compréhension
 (seules Activity one, Activity two et le Homework sont corrigés). Voir Incertitudes.
 
-##### Exploring grammar (manuel p.166) — Relative clauses
+###### Exploring grammar (manuel p.166) — Relative clauses
 
 Verbatim :
 
@@ -7200,7 +7200,7 @@ relative clauses and say whether they provide necessary or additional informatio
 
 **Corrigé** : non fourni par le guide (ni pour l'encadré, ni pour l'exercice d'application).
 
-##### AFTER YOU READ — GROUP WORK (manuel p.166)
+###### AFTER YOU READ — GROUP WORK (manuel p.166)
 
 « In groups of 3, prepare and enact a short conversation about the case of a student who behaved
 badly at school. The conversation takes place during a meeting at the headmaster's office. The
@@ -7211,7 +7211,7 @@ notes in the table below will help you. »
 | You are the teacher and you must decide how to punish the student | You are the headmaster/headmistress. Remind the student of the school rules, the code of conduct, his frequent absences | You are the student. Defend yourself. |
 | **Expressing disapproval / Dissatisfaction** (I don't like / not doing homework / making noise / not paying attention) | **Expressing disapproval** (you shouldn't have + verb + ed) — **advising** : you should + … — **Warning** : - don't + … / - be careful | **Giving arguments / Expressing regret** : I'm very sorry. **Apologizing** : I do apologize |
 
-##### Homework (manuel p.167)
+###### Homework (manuel p.167)
 
 « Complete the following paragraph with words from the box below. »
 **Banque de mots** : `Pay - who - really - better - educationally - where - control`
@@ -7231,11 +7231,11 @@ really** (soit 1 = better, 2 = educationally, 3 = who, 4 = pay, 5 = control, 6 =
 
 ---
 
-#### Section Four : Speaking
+##### Section Four : Speaking
 
 *(manuel p.168-170 · guide p.63)*
 
-##### Scope and sequence (guide p.63, verbatim)
+###### Scope and sequence (guide p.63, verbatim)
 
 **Skills/subskills and strategies**
 *Reading* — evaluate and react to ideas · infer causes and effects (from events described) ·
@@ -7251,7 +7251,7 @@ one's speech · enact a conversation
 
 *(Aucune ligne Grammar ni Pronunciation pour cette section.)*
 
-##### Helpful notes (guide p.63, verbatim)
+###### Helpful notes (guide p.63, verbatim)
 
 Activity 1.
 - Give help to the students when asked for (clarify lexical items or concepts …)
@@ -7259,7 +7259,7 @@ Activity 1.
 - Make the students use the expressions suggested
 - Encourage them to enact the conversation in class using the appropriate strategies and skills.
 
-##### Activity 1 (manuel p.168) — Questionnaire personnel
+###### Activity 1 (manuel p.168) — Questionnaire personnel
 
 « Read the statements and put a (√) under the heading that is appropriate to your case. »
 Grille à 5 colonnes : **never · rarely · sometimes · usually · always**, 12 énoncés :
@@ -7279,7 +7279,7 @@ Grille à 5 colonnes : **never · rarely · sometimes · usually · always**, 12
 
 Consigne finale : « - Compare your answers with those of your classmate. »
 
-##### Activity 2 (manuel p.169-170) — Le bulletin scolaire
+###### Activity 2 (manuel p.169-170) — Le bulletin scolaire
 
 **A.** « Look at the picture and read the school report then answer the questions below.. » [sic —
 double point]
@@ -7319,11 +7319,11 @@ that led to those poor school results and the possible solutions to improve them
 
 ---
 
-#### Section Five : Writing
+##### Section Five : Writing
 
 *(manuel p.171-172 · guide p.64)*
 
-##### Scope and sequence (guide p.64, verbatim)
+###### Scope and sequence (guide p.64, verbatim)
 
 **Skills/subskills and strategies**
 *Reading* — use the strategies appropriate to the nature of text and purpose of reading ·
@@ -7338,7 +7338,7 @@ produce a report
 
 **Functions** : - asking for/giving information · - reporting
 
-##### Helpful notes (guide p.64, verbatim)
+###### Helpful notes (guide p.64, verbatim)
 
 - « Questions 1-5 may be assigned as a pair work or as a teacher-led discussion. In the latter
   case, go through the questions one by one and have the students elaborate on their answers by
@@ -7346,7 +7346,7 @@ produce a report
 - « Question 6 : Let the students exchange roles as this is meant to pave the way for the writing
   activity. »
 
-##### BEFORE YOU WRITE (manuel p.171)
+###### BEFORE YOU WRITE (manuel p.171)
 
 « Look at this list of resources you may use to study at school or at home then answer the
 questions. »
@@ -7368,7 +7368,7 @@ Computer · Internet
    - What the story is about.
    - What he/she thought of it.
 
-##### AS YOU WRITE (manuel p.171) — La consigne d'écriture
+###### AS YOU WRITE (manuel p.171) — La consigne d'écriture
 
 « Your teacher has asked you to write a report for the school magazine on a book you have recently
 read. He is hoping that other students in the school will then become interested in reading the
@@ -7378,7 +7378,7 @@ book. You may like to use the plan below as a guide. »
 - **Body** : The plot. Describe the events in the order in which they happen in the story.
 - **Conclusion** : What did you think of the book? Why ? Would you recommend it to others?
 
-##### Processus d'écriture (manuel p.172)
+###### Processus d'écriture (manuel p.172)
 
 1. Write your first draft.
 2. Exchange your writing with a classmate.
@@ -7387,7 +7387,7 @@ book. You may like to use the plan below as a guide. »
 5. Say what you like about it.
 6. Give him/her suggestions to improve his/her writing.
 
-##### Useful tips (manuel p.172, verbatim)
+###### Useful tips (manuel p.172, verbatim)
 
 - **Layout** — « Check whether you know what sort of text you have been asked to write, and why.
   Then make sure you choose the correct layout. »
@@ -7399,7 +7399,7 @@ book. You may like to use the plan below as a guide. »
   by adding more details or by linking ideas together. »
 - **Proofreading** — « Check for mistakes of spelling and punctuation in your final draft. »
 
-##### Useful language (manuel p.172, verbatim)
+###### Useful language (manuel p.172, verbatim)
 
 - This is a love story / a thriller / a classic …
 - The story is set in …
@@ -7429,9 +7429,9 @@ book. You may like to use the plan below as a guide. »
 
 ---
 
-#### Arts — Section One : READING (manuel p.173-175 · guide p.65)
+##### Arts — Section One : READING (manuel p.173-175 · guide p.65)
 
-##### Scope and sequence (guide p.65, verbatim)
+###### Scope and sequence (guide p.65, verbatim)
 
 **Skills/subskills and strategies**
 *Speaking* — talk about a future plan/ambition · express opinion/judgements about a specific issue
@@ -7448,7 +7448,7 @@ stuff - talented - flourish - destiny - promote
 
 **Homework / mini-projects** : Homework : language exercise (multiple choice alternatives)
 
-##### BEFORE YOU READ (manuel p.173)
+###### BEFORE YOU READ (manuel p.173)
 
 « Discuss the following questions with your classmate »
 1. What is your dream job?
@@ -7458,7 +7458,7 @@ stuff - talented - flourish - destiny - promote
 5. What do you need to be successful?
 6. What are the qualities needed to have a successful career?
 
-##### AS YOU READ (manuel p.173-174) — Le texte et le CV
+###### AS YOU READ (manuel p.173-174) — Le texte et le CV
 
 **Consigne** : « Read the text and do the activities below. »
 
@@ -7474,7 +7474,7 @@ pas récupérable — seul le titre l'est.
 Barbara Taylor Bradford (encadré « Curriculum Vitae ») n'est pas récupérable — seuls le titre de
 l'encadré et la source le sont.
 
-##### Activités de compréhension (manuel p.174-175)
+###### Activités de compréhension (manuel p.174-175)
 
 **1)** « Complete the table with appropriate information about Barbara Taylor's life »
 
@@ -7507,7 +7507,7 @@ essential in the text ?). »
 « Activity one » de la rubrique AFTER YOU READ et le Homework sont corrigés). Ces questions sont
 de toute façon inexploitables sans le texte, qui est en image.
 
-##### AFTER YOU READ (manuel p.175)
+###### AFTER YOU READ (manuel p.175)
 
 **1) Appariement de segments de phrase** — « Match the sentence parts to get a coherent paragraph.
 The parts in column A are in the right order. »
@@ -7547,7 +7547,7 @@ you. »
 vraisemblablement à l'exemple déjà résolu (`employ + ed`). Voir Incertitudes.
 **Corrigé** : non fourni par le guide.
 
-##### Homework (manuel p.175)
+###### Homework (manuel p.175)
 
 « Circle the correct alternative. »
 
@@ -7562,9 +7562,9 @@ vraisemblablement à l'exemple déjà résolu (`employ + ed`). Voir Incertitudes
 
 ---
 
-#### Arts — Section Two : WRITING ACTIVITIES (manuel p.176-177 · guide p.66)
+##### Arts — Section Two : WRITING ACTIVITIES (manuel p.176-177 · guide p.66)
 
-##### Guide (p.66, verbatim)
+###### Guide (p.66, verbatim)
 
 **Vocabulary** : enrolment, standard, tongue
 
@@ -7579,7 +7579,7 @@ vraisemblablement à l'exemple déjà résolu (`employ + ed`). Voir Incertitudes
 *(Pas de tableau Scope and sequence pour cette section dans le guide ; ni Grammar, ni Functions,
 ni corrigé.)*
 
-##### A. Fill in the following enrolment form (manuel p.176)
+###### A. Fill in the following enrolment form (manuel p.176)
 
 **En-tête** : `NEWBURY LANGUAGE CENTRE` — sigle `NLC` — **Enrolment form**
 « Complete in BLOCK LETTERS and return to : »
@@ -7611,7 +7611,7 @@ ni corrigé.)*
 | If you have any disability or chronic illness, please give details | |
 | How did you hear of N L C ? | `British Council` / `School/college` / `Friend/relative` / `Other` |
 
-##### B. Write a letter (manuel p.177)
+###### B. Write a letter (manuel p.177)
 
 « Develop the information you provided in the enrolment form into a letter to the principal of
 NLC, in which you express your desire to enrol in the school English classes. »
@@ -7630,9 +7630,9 @@ NLC, in which you express your desire to enrol in the school English classes. »
 
 ---
 
-#### Arts — Section Three : READING AND WRITING ADS (manuel p.178-179 · guide p.66)
+##### Arts — Section Three : READING AND WRITING ADS (manuel p.178-179 · guide p.66)
 
-##### Scope and sequence (guide p.66, verbatim)
+###### Scope and sequence (guide p.66, verbatim)
 
 **Skills/subskills and strategies**
 *Reading* — skim texts · scan for specific information
@@ -7646,7 +7646,7 @@ translate, weight
 - « Make sure the students explore and assimilate the lexical items in the reading ads. »
 - « Have the students identify the layout and conventions used in the ads. »
 
-##### A. Apparier images et commentaires (manuel p.178-179)
+###### A. Apparier images et commentaires (manuel p.178-179)
 
 **Consigne** : « Study the following pictures and read the comments below then match each picture
 with its corresponding comments. Justify your answers with specific details. »
@@ -7694,7 +7694,7 @@ d'annonces** numérotés 1, 2, 3, 4 ne sont pas récupérables. Seuls les quatre
 
 **Answer key (guide p.66)** : **1+b , 2+c , 3+a , 4+d**
 
-##### B. Rédiger une annonce (manuel p.179)
+###### B. Rédiger une annonce (manuel p.179)
 
 « Study the following picture carefully then write as many relevant comments as you can. »
 ⚠️ **support en image, absent de la couche texte** (manuel p.179) : l'image à commenter n'est pas
@@ -7707,7 +7707,7 @@ récupérable. **Corrigé** : aucun (production écrite).
 
 ---
 
-#### SELF-ASSESSMENT (manuel p.180)
+##### SELF-ASSESSMENT (manuel p.180)
 
 **A.** « What progress do you feel you have made in English in this module ? Put a tick (√) in the
 box that applies to you. » — 3 colonnes : **YES · A LITTLE · NO** ; 14 énoncés :
@@ -7744,7 +7744,7 @@ box that applies to you. » — 3 colonnes : **YES · A LITTLE · NO** ; 14 éno
 
 ---
 
-#### Fun page (manuel p.181)
+##### Fun page (manuel p.181)
 
 Deux blagues courtes, séparées par un motif décoratif (trois points en triangle).
 
@@ -7763,9 +7763,9 @@ sentiment d'avoir « the world by the tail » : tout lui réussit ces derniers t
 
 ---
 
-#### VOCABULARY COVERED IN MODULE 5 (manuel p.182) — liste intégrale
+##### VOCABULARY COVERED IN MODULE 5 (manuel p.182) — liste intégrale
 
-##### Common core
+###### Common core
 
 **Section one** (27 items) :
 alternative · bachelor · chronic · clerk · defectology · disability · distance learning · dustman ·
@@ -7786,7 +7786,7 @@ extra-curricular · involved · sit (for an exam) · strength · weakness
 **Section five** (3 items) :
 encyclopaedia · make use of · resource
 
-##### Arts Supplement
+###### Arts Supplement
 
 **Section one** (24 entrées imprimées) :
 bin · boost · destiny · drift · engraved · flittery [sic] · flourish · flourish [sic — imprimé
@@ -7813,7 +7813,7 @@ weight
 
 ---
 
-#### Tapescript du module
+##### Tapescript du module
 
 *(guide p.85 — « Module five. Section two : Listening »)*
 
@@ -7876,7 +7876,7 @@ magasins sont calmes.
 
 ---
 
-#### Incertitudes (module 5)
+##### Incertitudes (module 5)
 
 **A. Supports en image, absents de la couche texte** *(récapitulatif — information critique)*
 

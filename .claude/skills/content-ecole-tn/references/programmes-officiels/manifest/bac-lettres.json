@@ -1,38 +1,11 @@
 {
-  "grade": "bac-techniques",
+  "grade": "bac-lettres",
   "sealed": false,
-  "source": "Section « Sciences techniques » du baccalauréat tunisien (docs/lycee-architecture.md §2). CNP — manuel élève officiel de philosophie, 4ème année de l'enseignement secondaire : « كتاب الفلسفة — لتلاميذ السّنة الرّابعة من التّعليم الثانوي — الشّعب العلميّة » (code 210402P00, 408 p.). Aucun guide enseignant au corpus pour ce couple ⇒ le manuel élève fait référence (profil ecole-secondaire). Langue d'enseignement : arabe. Le manuel dessert les CINQ sections non-Lettres (constat §0 de la fiche : le catalogue CNP ne contient que deux manuels de philosophie pour la 4ème année — 210402 « الشعب العلمية » et 210422+210423 « شعبة الآداب »). Le scope est porté par l'unique fiche programme/bac-math/philosophie.md (R-4 : un code source, une seule fiche), et le contenu est mutualisé par compileTo depuis content/philosophie-bac/ (étude 16 D-4). bac-lettres n'est PAS desservi. | CNP — « SKILLS For LIFE », Year 4 Secondary (bac), manuel élève code 241403 (280 p.) + guide enseignant code 641404 (56 p.). ⚭ Manuel UNIQUE pour les six sections du bac : le sujet anglais est authored une fois sous content/english-bac/ et compilé en six sujets (compileTo, étude 16 D-4). Transcription : programme/bac-lettres/anglais.md (fiche unique portant le scope des six sujets, R-4).",
-  "note": "sealed=false. Seule la philosophie est codifiée à ce jour pour cette section : les autres matières du bac Sciences techniques ne sont PAS encore transcrites et sont donc rapportées manquantes. ⚠️ CHAPITRAGE CODIFIÉ, CONTENU NON GÉNÉRABLE au 2026-08-04. Les 5 chapitres sont les 5 مباحث du programme, relevés sur le فهرس du manuel (p.404-408, lu intégralement) ; les plages de pages sont exactes. MAIS la fiche est en profondeur « first-pass » (ossature seule : titre, التقديم, خارطة الكتاب, فهرس) — le contenu enseigné des p.7-402 n'est pas transcrit, donc chapitresGeneration est vide au registre et le LOT B est interdit sur les 5 chapitres (R-5). Reprise : voir §6 de la fiche. — ANGLAIS (241403/641404) : Chapitrage = les 36 leçons de tronc commun du manuel + les 6 blocs non-leçons (Checking Year 3, Introductory Unit, Check your Punctuation, les deux Check your Language and Skills, Before we say Good Bye), soit 42 chapitres. Les 10 « sessions » For Arts Students du manuel sont RÉSERVÉES à la section Lettres (préface p.2, guide p.5) : elles ne figurent qu'au manifeste bac-lettres et sont restreintes côté contenu par chapter.gradeSlugs. LOT A partiel au 2026-08-04 : p.1-234 du manuel transcrites, p.235-280 restantes ⇒ les chapitres 41, 42 (et 50-52 en Lettres) ne sont pas encore générables (registre suivi/bac-lettres.json, champ chapitresGeneration). ▸ FRANÇAIS (ajouté le 2026-08-05) : manuel élève 221402 « Au gré des textes » (264 p.), transcrit INTÉGRALEMENT à profondeur de génération — fiche programme/bac-math/francais.md, LOT B autorisé. Ce manuel dessert les CINQ sections non-Lettres, et c'est un CONSTAT et non une déduction : sa page de titre (p. 1) les nomme une par une — Mathématiques, Sciences techniques, Économie et gestion, Sciences expérimentales, Sciences de l'informatique. Contenu mutualisé par compileTo depuis content/french-bac/ ; chapitrage (7 modules) IDENTIQUE dans les 5 manifestes bac-*, toute évolution à répercuter sur les 5 à la fois. bac-lettres (manuel 221421) n'est PAS desservi.",
+  "source": "CNP — « SKILLS For LIFE », Year 4 Secondary (bac), manuel élève code 241403 (280 p.) + guide enseignant code 641404 (56 p.). ⚭ Manuel UNIQUE pour les six sections du bac : le sujet anglais est authored une fois sous content/english-bac/ et compilé en six sujets (compileTo, étude 16 D-4). Transcription : programme/bac-lettres/anglais.md (fiche unique portant le scope des six sujets, R-4).",
+  "note": "Chapitrage = les 36 leçons de tronc commun du manuel + les 6 blocs non-leçons (Checking Year 3, Introductory Unit, Check your Punctuation, les deux Check your Language and Skills, Before we say Good Bye), soit 42 chapitres. Les 10 « sessions » For Arts Students du manuel sont RÉSERVÉES à la section Lettres (préface p.2, guide p.5) : elles ne figurent qu'au manifeste bac-lettres et sont restreintes côté contenu par chapter.gradeSlugs. LOT A partiel au 2026-08-04 : p.1-234 du manuel transcrites, p.235-280 restantes ⇒ les chapitres 41, 42 (et 50-52 en Lettres) ne sont pas encore générables (registre suivi/bac-lettres.json, champ chapitresGeneration). Ce manifeste porte 52 chapitres : les 42 du tronc commun + les 10 sessions For Arts Students, marquées `optional: true` — elles font partie du programme codifié (les écrire n'est donc jamais « hors-programme ») mais leur absence n'est jamais comptée comme un trou, la filière Lettres n'étant pas traitée pour elle-même dans ce lot. Même arbitrage que l'anglais 3ème sec (#129), à ceci près qu'en 4ème année les sessions Arts sont des LEÇONS autonomes (Session 1 à 10, pages propres) et non un supplément intra-module : elles sont donc chapitrables, là où celles de 3ème sec relèvent d'exercices restreints par gradeSlugs.",
   "subjects": [
     {
-      "id": "philosophie-bac-techniques",
-      "name": "الفلسفة",
-      "contentLanguage": "ar",
-      "chapters": [
-        {
-          "slug": "01-aniyya-ghayriyya",
-          "notion": "المحور 1 : الإنساني بين الكثرة والوحدة — الآنيّة والغيريّة"
-        },
-        {
-          "slug": "02-khususiyya-kawniyya",
-          "notion": "المحور 1 : الإنساني بين الكثرة والوحدة — الخصوصيّة والكونيّة"
-        },
-        {
-          "slug": "03-ilm-haqiqa-namdhaja",
-          "notion": "المحور 2 : العلم بين الحقيقة والنمذجة"
-        },
-        {
-          "slug": "04-dawla-siyada-muwatana",
-          "notion": "المحور 3 : القيم بين النسبي والمطلق — الدّولة : السّيادة والمواطنة"
-        },
-        {
-          "slug": "05-akhlaq-khayr-saada",
-          "notion": "المحور 3 : القيم بين النسبي والمطلق — الأخلاق : الخير والسّعادة"
-        }
-      ]
-    },
-    {
-      "id": "english-bac-techniques",
+      "id": "english-bac-lettres",
       "name": "English",
       "contentLanguage": "en",
       "chapters": [
@@ -203,41 +176,56 @@
         {
           "slug": "42-before-we-say-good-bye",
           "notion": "Before we say 'Good Bye' — préparation à l'examen, PORTFOLIO (p. 254-260)"
-        }
-      ]
-    },
-    {
-      "id": "french-bac-techniques",
-      "name": "Français",
-      "contentLanguage": "fr",
-      "chapters": [
-        {
-          "slug": "01-souvenirs-et-nostalgie",
-          "notion": "Module d'apprentissage N°1 « Souvenirs et nostalgie » — le discours rapporté ; l'étude de texte (répondre à une question de compréhension) ; l'essai (p. 6-50)"
         },
         {
-          "slug": "02-histoires-d-amour",
-          "notion": "Module d'apprentissage N°2 « Histoires d'amour » — récit et discours ; la caractérisation (p. 51-94)"
+          "slug": "43-arts-the-winters-tale-part-2",
+          "notion": "Arts Session 1 — The Winter's Tale, Part 2 (p. 82-84)",
+          "optional": true
         },
         {
-          "slug": "03-liberte-j-ecris-ton-nom",
-          "notion": "Module d'apprentissage N°3 « Liberté, j'écris ton nom… » — la comparaison et la métaphore ; la nominalisation (p. 95-130)"
+          "slug": "44-arts-tale-end",
+          "notion": "Arts Session 2 — Tale end…? (p. 85)",
+          "optional": true
         },
         {
-          "slug": "04-le-silence-de-la-mer",
-          "notion": "Module de lecture 1 — « Le silence de la mer » de Vercors : lecture d'une œuvre intégrale (p. 131-149)"
+          "slug": "45-arts-later",
+          "notion": "Arts Session 3 — Later (p. 124-127)",
+          "optional": true
         },
         {
-          "slug": "05-guerre-et-paix",
-          "notion": "Module d'apprentissage N°4 « Guerre et Paix » — le conditionnel et le subjonctif (p. 150-188)"
+          "slug": "46-arts-writing-a-narrative",
+          "notion": "Arts Session 4 — Writing a Narrative (p. 128)",
+          "optional": true
         },
         {
-          "slug": "06-l-homme-et-la-science",
-          "notion": "Module d'apprentissage N°5 « L'Homme et la Science » — l'expression de l'opinion ; bilan des apprentissages de l'étude de texte (p. 189-222)"
+          "slug": "47-arts-the-bards-sonnet-18",
+          "notion": "Arts Session 5 — The Bard's Sonnet 18 (p. 182-183)",
+          "optional": true
         },
         {
-          "slug": "07-la-cantatrice-chauve",
-          "notion": "Module de lecture 2 — « La Cantatrice chauve » d'Eugène Ionesco : lecture d'une œuvre intégrale, théâtre de l'absurde (p. 223-262)"
+          "slug": "48-arts-as-you-like-it",
+          "notion": "Arts Session 6 — As You Like It (p. 186-188)",
+          "optional": true
+        },
+        {
+          "slug": "49-arts-project-work-3",
+          "notion": "Arts Session 7 — Project Work 3, More on Text Structure (p. 189-190)",
+          "optional": true
+        },
+        {
+          "slug": "50-arts-the-richer-the-poorer",
+          "notion": "Arts Session 8 — The Richer, The Poorer (p. 235-239)",
+          "optional": true
+        },
+        {
+          "slug": "51-arts-a-secret-for-two",
+          "notion": "Arts Session 9 — A Secret for Two (p. 240-244)",
+          "optional": true
+        },
+        {
+          "slug": "52-arts-what-a-wonderful-world",
+          "notion": "Arts Session 10 — What a Wonderful World! (p. 245-247)",
+          "optional": true
         }
       ]
     }
