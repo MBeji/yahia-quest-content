@@ -2,6 +2,73 @@
   "grade": "2eme-sec-sciences",
   "fiches": [
     {
+      "matiere": "francais",
+      "statut": "partielle",
+      "profondeur": "mixte",
+      "sources": [
+        {
+          "code": "221203",
+          "tomes": [
+            "P00"
+          ],
+          "role": "eleve",
+          "pagesTotal": 288,
+          "pagesLues": [
+            [
+              1,
+              20
+            ],
+            [
+              61,
+              64
+            ],
+            [
+              132,
+              133
+            ],
+            [
+              193,
+              194
+            ],
+            [
+              234,
+              235
+            ],
+            [
+              274,
+              274
+            ],
+            [
+              282,
+              282
+            ],
+            [
+              286,
+              286
+            ],
+            [
+              288,
+              288
+            ]
+          ]
+        }
+      ],
+      "sujets": [
+        "french-2eme-sec-sciences",
+        "french-2eme-sec-lettres",
+        "french-2eme-sec-eco-services",
+        "french-2eme-sec-info"
+      ],
+      "sourcesLibres": [],
+      "r7": null,
+      "maj": "2026-08-04",
+      "par": "claude/campagne",
+      "notes": "▸ GRADE PORTEUR = CONVENTION, PAS UNE FILIÈRE : ce manuel dessert les QUATRE orientations de 2ème sec ; il est rangé sous 2eme-sec-sciences parce que le registre range une fiche sous UN grade et que programme:check résout chapitresGeneration contre le manifeste de ce grade — on retient la première orientation de l'ordre canonique des slugs (lycee-architecture §2), comme la fiche de mathématiques mutualisée Sciences⊕Info. Ce n'est PAS du français de filière Sciences. Manuel élève seul (pas de guide enseignant au corpus) : « Le français en situation », 288 p., couche-texte propre (pdftotext -layout, 0 OCR). Langue CONSTATÉE : français. ▸ CE QUI EST ACQUIS : le chapitrage COMPLET des 18 séquences avec leurs bornes de pages CONSTATÉES (relévé des en-têtes de rubrique sur les 288 pages, recoupé au sommaire p. 288 et aux tableaux de module p. 133/194/235), et l'intitulé imprimé exact des 4 objectifs de chaque séquence. Grain retenu : 1 séquence = 1 chapitre — c'est l'unité de compétence que la préface déclare (p. 3), chaque séquence portant exactement un objectif de vocabulaire, un de grammaire et un d'écrit. ▸ CE QUI MANQUE : la profondeur de génération (R-5) sur 17 des 18 chapitres. Seul `01-champ-lexical-et-rapports-logiques` (p. 7-19) est transcrit à profondeur — activités et exercices décrits un à un, encadrés « Explicitation » verbatim, vocabulaire officiel, bornes OK/EXCLU. Il est donc le SEUL de `chapitresGeneration`. ▸ CAUSE DE L'ARRÊT : session de campagne du 2026-08-04 interrompue par la LIMITE D'USAGE DU COMPTE ; les cinq sous-agents de transcription (un par module) ont été tués avant d'écrire. Arrêt propre au dernier palier poussable (méthode T-10 / STOP « budget insuffisant ») : rien de bâclé, rien d'inventé, étiquetage honnête. ▸ REPRISE : transcrire les séquences 1.2 à 5.3 (p. 20-271) à profondeur, module par module en contexte vierge, SANS refaire le chapitrage ni la séquence 1.1 (R-4). Recette d'extraction et découpage des tranches : fiche §6.6. ▸ PORTÉE ⚭×4 VÉRIFIÉE, pas supposée : le manuel ne nomme aucune شعبة (page de titre), le catalogue CNP ne lui donne qu'un code (221203), et la recherche exhaustive des mentions de section sur les 288 pages ne rend aucune occurrence structurante. Aucun module n'est réservé à une filière — contrairement à l'arabe (عيون الأدب, محور خامس dédoublé). D'où UN dossier de contenu, content/french-2eme-sec/, compilé vers QUATRE sujets par compileTo (étude 16 D-4), et le français codifié dans les quatre manifestes de section — dont manifest/2eme-sec-eco-services.json, CRÉÉ par ce lot (l'orientation Économie et services n'avait aucun manifeste). ▸ ERRATUM DE LA SOURCE à connaître : le tableau du module 5 (p. 235) donne des renvois de pages faux de +8 sur toutes ses cases (« p. 244 » pour une explication de texte qui est p. 236, « p. 281 » pour un projet qui est p. 273...), contredits par le sommaire ET par les pages elles-mêmes ; les tableaux des modules 3 et 4 sont exacts. La fiche retient les pages réelles. ▸ R-7 non faite (fiche non complète). ▸ PUBLICATION : rien n'est visible côté élève — content/french-2eme-sec/ n'existe pas (aucun LOT B), et les parcours 2eme-sec-* restent `coming_soon`.",
+      "chapitresGeneration": [
+        "01-champ-lexical-et-rapports-logiques"
+      ]
+    },
+    {
       "matiere": "mathematiques",
       "statut": "partielle",
       "profondeur": "mixte",
