@@ -1,49 +1,11 @@
 {
-  "grade": "bac-math",
+  "grade": "bac-techniques",
   "sealed": false,
-  "source": "CNP — manuels élèves officiels de mathématiques, 4ème année de l'enseignement secondaire, section Mathématiques (Bac). Tome 1 « Analyse » (code 222445P00, 207 p.) : ch.1–9. Tome 2 « Algèbre · Géométrie · Probabilités » (code 222446P00, 230 p.) : ch.1–10. Aucun guide enseignant au corpus pour ce couple ⇒ le manuel élève fait référence (profil ecole-secondaire). Langue d'enseignement : français (bascule ar→fr acquise depuis la 1ère secondaire). Transcriptions sous programme/bac-math/mathematiques.md.",
-  "note": "sealed=false (advisory). Carte des chapitres = table des matières des deux tomes (page PDF = page imprimée, offset 0). Campagne terminée : LOT A (transcription des deux tomes) validé R-7 le 2026-07-19 (registre suivi/bac-math.json, statut 'validee-r7', profondeur 'generation', couverture 100 %), puis LOT B mené à terme — le sujet math-bac-math est complet à 19/19 chapitres. Plus aucun verrou de campagne sur ce manifeste. Le mapping manuel↔pages par chapitre vit dans §4 de la fiche.",
+  "source": "CNP — « SKILLS For LIFE », Year 4 Secondary (bac), manuel élève code 241403 (280 p.) + guide enseignant code 641404 (56 p.). ⚭ Manuel UNIQUE pour les six sections du bac : le sujet anglais est authored une fois sous content/english-bac/ et compilé en six sujets (compileTo, étude 16 D-4). Transcription : programme/bac-lettres/anglais.md (fiche unique portant le scope des six sujets, R-4).",
+  "note": "Chapitrage = les 36 leçons de tronc commun du manuel + les 6 blocs non-leçons (Checking Year 3, Introductory Unit, Check your Punctuation, les deux Check your Language and Skills, Before we say Good Bye), soit 42 chapitres. Les 10 « sessions » For Arts Students du manuel sont RÉSERVÉES à la section Lettres (préface p.2, guide p.5) : elles ne figurent qu'au manifeste bac-lettres et sont restreintes côté contenu par chapter.gradeSlugs. LOT A partiel au 2026-08-04 : p.1-234 du manuel transcrites, p.235-280 restantes ⇒ les chapitres 41, 42 (et 50-52 en Lettres) ne sont pas encore générables (registre suivi/bac-lettres.json, champ chapitresGeneration).",
   "subjects": [
     {
-      "id": "math-bac-math",
-      "name": "Mathématiques",
-      "contentLanguage": "fr",
-      "chapters": [
-        { "slug": "01-continuite-limites", "notion": "Continuité et limites (tome 1, ch.1)" },
-        { "slug": "02-suites-reelles", "notion": "Suites réelles (tome 1, ch.2)" },
-        { "slug": "03-derivabilite", "notion": "Dérivabilité (tome 1, ch.3)" },
-        { "slug": "04-fonctions-reciproques", "notion": "Fonctions réciproques (tome 1, ch.4)" },
-        { "slug": "05-primitives", "notion": "Primitives (tome 1, ch.5)" },
-        { "slug": "06-integrales", "notion": "Intégrales (tome 1, ch.6)" },
-        {
-          "slug": "07-fonction-logarithme-neperien",
-          "notion": "Fonction logarithme népérien (tome 1, ch.7)"
-        },
-        { "slug": "08-fonction-exponentielle", "notion": "Fonction exponentielle (tome 1, ch.8)" },
-        {
-          "slug": "09-equations-differentielles",
-          "notion": "Équations différentielles (tome 1, ch.9)"
-        },
-        { "slug": "10-nombres-complexes", "notion": "Nombres complexes (tome 2, ch.1)" },
-        { "slug": "11-isometries-du-plan", "notion": "Isométries du plan (tome 2, ch.2)" },
-        {
-          "slug": "12-deplacements-antideplacements",
-          "notion": "Déplacements – Antidéplacements (tome 2, ch.3)"
-        },
-        { "slug": "13-similitudes", "notion": "Similitudes (tome 2, ch.4)" },
-        { "slug": "14-coniques", "notion": "Coniques (tome 2, ch.5)" },
-        {
-          "slug": "15-geometrie-dans-l-espace",
-          "notion": "Géométrie dans l'espace (tome 2, ch.6)"
-        },
-        { "slug": "16-divisibilite-dans-z", "notion": "Divisibilité dans ℤ (tome 2, ch.7)" },
-        { "slug": "17-identite-de-bezout", "notion": "Identité de Bézout (tome 2, ch.8)" },
-        { "slug": "18-probabilites", "notion": "Probabilités (tome 2, ch.9)" },
-        { "slug": "19-statistiques", "notion": "Statistiques (tome 2, ch.10)" }
-      ]
-    },
-    {
-      "id": "english-bac-math",
+      "id": "english-bac-techniques",
       "name": "English",
       "contentLanguage": "en",
       "chapters": [
