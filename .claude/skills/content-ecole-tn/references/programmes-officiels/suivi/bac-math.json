@@ -58,6 +58,37 @@
       "maj": "2026-07-19",
       "par": "bejimed",
       "notes": "LOT A COMPLET : manuel officiel CNP 4eme Math section Mathematiques (Bac) integralement transcrit a profondeur de generation. Tome 1 Analyse (222445, 207 p., ch.1-9) + tome 2 Algebre/Geometrie/Probabilites (222446, 230 p., ch.10-19) = 19 chapitres, manuel eleve seul (pas de guide au corpus) => fait reference. Livre en 9 paliers/PR (auto-merge) sur 2026-07-18/19. R-7 independant par chapitre : CONFORME partout, corrections mineures appliquees ch.1 (3 forme), ch.4 (VF-5 f'->f), ch.7 (Activite 2 p.140 + note Ex.28), ch.11 (etiquette page), ch.15 (V.2 ajoutee inventaire). Statut validee-r7 (PAS promue : reserve a l'humain). => LOT B (generation du contenu content/math-bac-math) desormais AUTORISE."
+    },
+    {
+      "matiere": "philosophie",
+      "statut": "partielle",
+      "profondeur": "first-pass",
+      "sources": [
+        {
+          "code": "210402",
+          "tomes": ["P00"],
+          "role": "eleve",
+          "pagesTotal": 408,
+          "pagesLues": [
+            [1, 6],
+            [215, 226],
+            [404, 408]
+          ]
+        }
+      ],
+      "sujets": [
+        "philosophie-bac-math",
+        "philosophie-bac-sciences-exp",
+        "philosophie-bac-eco-gestion",
+        "philosophie-bac-techniques",
+        "philosophie-bac-info"
+      ],
+      "sourcesLibres": [],
+      "r7": null,
+      "maj": "2026-08-05",
+      "par": "claude/campagne",
+      "chapitresGeneration": [],
+      "notes": "OSSATURE SEULE — LOT B INTERDIT sur les 5 chapitres (chapitresGeneration vide, R-5). Fiche portee par bac-math, qui est le grade PORTEUR d'un manuel mutualise : le manuel 210402 « فلسفة_الشعب العلمية » (408 p., manuel eleve seul, PAS de guide au corpus => il fait reference) dessert les CINQ sections non-Lettres, d'ou les 5 `sujets` compiles par compileTo depuis l'unique dossier content/philosophie-bac/ (etude 16 D-4). Langue d'enseignement : ar (la philosophie ne bascule pas au francais). ▸ CONSTAT SUR LES SECTIONS COUVERTES (question ouverte par le plan de campagne, tranchee ici) : la page de titre (p.1) nomme le GROUPE « الشّعب العلميّة » sans enumerer aucune section ; le التقديم (p.3) et la خارطة الكتاب (p.4-5) non plus ; le verso (p.2) ne porte que le copyright. C'est donc l'EXHAUSTIVITE du catalogue CNP (cnp-officiel/catalogue.csv, 346 manuels, recherche sur « فلسفة ») qui tranche : pour la 4eme annee il n'existe QUE deux manuels de philosophie — 210402 (الشعب العلمية) et 210422+210423 (شعبة الآداب, 2 tomes) — et aucun manuel propre a eco-gestion, aux techniques ou a l'informatique. Le rattachement d'eco-gestion n'est donc plus une deduction par elimination interne au manuel mais un constat sur le corpus officiel complet. bac-lettres n'est PAS desservi : 210422+210423 restent non rattaches et demandent leur propre LOT A. ▸ CE QUI EST TRANSCRIT (p.1-6 + p.404-408, lus sur les pages) : le cadrage (§1 : l'intention du التقديم, les 4 competences de la خارطة verbatim, les 6 نوافذ et la typologie des مهامّ — أفكّر مع/ضدّ الفيلسوف/مع نفسي), la structure complete des 3 محاور / 5 مباحث avec plages de pages exactes, et l'inventaire NOMINATIF des 113 سندات (n° + auteur + titre + page) tire du فهرس. ▸ AMORCE DE PROFONDEUR SUR LE SEUL مبحث 2 (p.215-226, 12 p. sur 56) : page d'ouverture avec les deux organigrammes officiels (أبعاد النمذجة : البعد التركيبي/الدلالي/التداولي ; النمذجة ومطلب الحقيقة : الحدود الابستيمولوجيّة/الفلسفيّة), نافذة مدخل COMPLETE (وضعية استكشاف comparant بطلميوس et نيوتن, texte de هيزنبرغ « الجزء والكل » avec notice d'auteur, هوامش et les 7 مهامّ verbatim, page de methode الأبعاد الإشكاليّة), et les 3 premiers سندات sur 16 (مولود « في أصل النماذج » p.221, تنّودجي « النموذج واستكشاف الظواهر » p.223, كارناب « في الفرق بين النموذج الرياضي والنموذج الفيزيائي » p.225) avec تمهيد verbatim, these reformulee, هوامش, notice et مهامّ. ▸ CE QUI N'EST PAS TRANSCRIT : p.7-214, p.227-270 (سندات 4-16 du مبحث 2, sa نافذة دعائم et ses تحديدات الواقع/البراديغم + سياقات السيبارنيتيقا/الإبستيمولوجيا البنائيّة, sa نافذة كيفيّات التفكير, le نصّ مطوّل de بوبير, ses مختصرات) et p.271-402. AUCUN chapitre n'atteint la profondeur de generation — pas meme le مبحث 2, couvert a 12 p. sur 56. ▸ MOTIF DE L'ARRET : limite d'usage de session atteinte le 2026-08-04 ; les trois sous-agents de transcription ont ete tues par l'API, le troisieme apres avoir ecrit les p.215-226. Arret propre au dernier palier poussable (methode T-9/T-10) plutot que fiche bâclee. ▸ REPRISE : les 408 pages sont deja rendues en PNG 150 dpi (offset 0) ; ordre conseille = FINIR le مبحث 2 en reprenant a la p.227 (سند 4 « سيمون » ; il reste 44 p. — c'est le chapitre le plus proche de la barre R-5, donc le premier a devenir generable), puis 3.2 (p.347-402), 3.1 (p.271-346), 1.2 (p.115-214), 1.1 (p.6-114). NE PAS relire p.1-6, p.215-226 ni p.404-408 (T-2/R-4). Chapitrage des 5 مباحث deja codifie dans les 5 manifest/bac-*.json."
     }
   ]
 }

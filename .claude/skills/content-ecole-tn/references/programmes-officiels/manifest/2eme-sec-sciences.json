@@ -1,8 +1,8 @@
 {
   "grade": "2eme-sec-sciences",
   "sealed": false,
-  "source": "CNP — programme national 2ème année secondaire, sections Sciences et Technologie de l'informatique (programme identique pour les deux sections). Manuel élève OFFICIEL CNP en deux tomes : « Mathématiques — 2ème Année de l'Enseignement Secondaire — Sections : Sciences / Technologie de l'informatique » (auteurs Rahmouni/Hnaien/Kefi/M'hamdi/Smida/Oukhai/Marzougui) — Tome 1 = 222231P00.pdf (164 p.), Tome 2 = 222232P00.pdf (200 p.) [pas de guide enseignant au corpus]. Transcription sous programme/2eme-sec-sciences/mathematiques.md.",
-  "note": "sealed=false. Chapitrage COMPLET codifié (19 chapitres, 2 tomes) d'après le sommaire de chaque tome. ⚠️ La fiche de transcription est PARTIELLE au 2026-07-19 : chapitres 1–12 transcrits à profondeur de génération (TOME 1 COMPLET = ch.1–9, 222231 p.7–164 ; + tome 2 ch.1–3 = ch.10–12, 222232 p.7–47) ; chapitres 13–19 (tome 2 ch.4–10, 222232 p.48–200 : fonctions de référence, trigonométrie, géométrie analytique, géométrie de l'espace ×3, statistiques) listés mais NON encore transcrits (cf. programme/2eme-sec-sciences/mathematiques.md §4/§6 et suivi/2eme-sec-sciences.json — LA source de vérité de la couverture). Le contenu content/math-2eme-sec-sciences/ n'existe pas encore (aucun LOT B) — l'audit reporte donc le sujet comme manquant, c'est attendu (niveau non scellé). Ids de chapitres numérotés 01–19 en séquence (tome 1 = 01–09, tome 2 = 10–19). subject id `math-2eme-sec-sciences` (convention lycée <matière>-<gradeSlug>, docs/lycee-architecture.md §2).",
+  "source": "CNP — programme national 2ème année secondaire, sections Sciences et Technologie de l'informatique (programme identique pour les deux sections). Manuel élève OFFICIEL CNP en deux tomes : « Mathématiques — 2ème Année de l'Enseignement Secondaire — Sections : Sciences / Technologie de l'informatique » (auteurs Rahmouni/Hnaien/Kefi/M'hamdi/Smida/Oukhai/Marzougui) — Tome 1 = 222231P00.pdf (164 p.), Tome 2 = 222232P00.pdf (200 p.) [pas de guide enseignant au corpus]. Transcription sous programme/2eme-sec-sciences/mathematiques.md. || Français : manuel élève OFFICIEL CNP « Le français en situation — 2e année de l'Enseignement Secondaire » (221203P00.pdf, 288 p. ; auteurs Mansouri/ben Zineb-Zitouni/Souab/Kheder-Ben Salem ; pas de guide enseignant au corpus, le manuel élève fait donc référence). Le manuel ne nomme AUCUNE شعبة et dessert les quatre orientations de 2ème sec : le contenu est écrit une fois sous content/french-2eme-sec/ et compilé vers un sujet par orientation (compileTo, étude 16 D-4). Transcription sous programme/2eme-sec/francais.md — LA fiche qui revendique le code 221203 (R-4).",
+  "note": "sealed=false. Chapitrage COMPLET codifié (19 chapitres, 2 tomes) d'après le sommaire de chaque tome. ⚠️ La fiche de transcription est PARTIELLE au 2026-07-19 : chapitres 1–12 transcrits à profondeur de génération (TOME 1 COMPLET = ch.1–9, 222231 p.7–164 ; + tome 2 ch.1–3 = ch.10–12, 222232 p.7–47) ; chapitres 13–19 (tome 2 ch.4–10, 222232 p.48–200 : fonctions de référence, trigonométrie, géométrie analytique, géométrie de l'espace ×3, statistiques) listés mais NON encore transcrits (cf. programme/2eme-sec-sciences/mathematiques.md §4/§6 et suivi/2eme-sec-sciences.json — LA source de vérité de la couverture). Le contenu content/math-2eme-sec-sciences/ n'existe pas encore (aucun LOT B) — l'audit reporte donc le sujet comme manquant, c'est attendu (niveau non scellé). Ids de chapitres numérotés 01–19 en séquence (tome 1 = 01–09, tome 2 = 10–19). subject id `math-2eme-sec-sciences` (convention lycée <matière>-<gradeSlug>, docs/lycee-architecture.md §2). ▸ FRANÇAIS (ajouté le 2026-08-04) : chapitrage COMPLET codifié — 18 chapitres = les 18 SÉQUENCES du manuel, l'unité de compétence que la préface déclare elle-même (p. 3 : « La répartition d'un même module en plusieurs séquences — trois ou quatre — permet de mieux cerner les capacités et les compétences à développer »). Chaque séquence porte exactement un objectif de vocabulaire, un de grammaire et un d'expression écrite ; un chapitre = un module en cumulerait trois à quatre de chaque et rendrait le cours superficiel. Le 19e chapitre (nouvelles en lecture suivie) est `optional: true` : les deux nouvelles n'ont aucun appareil de rubriques, et « La reine de beauté » (S. Prou, 1920-1995) est sous droits, donc non servable à l'élève (R-2). ⚠️ La fiche est PARTIELLE au 2026-08-04 : seul le chapitre 01 (p. 7-19) est transcrit à profondeur de génération ; les chapitres 02-18 n'ont que leur scope (texte d'étude, bornes de pages, intitulés d'objectifs) et NE sont PAS générables — cf. programme/2eme-sec/francais.md §6 et suivi/2eme-sec.json (`chapitresGeneration`), LA source de vérité de la couverture. Cause : session de campagne interrompue par la limite d'usage du compte, arrêt propre au dernier palier poussable (T-10).",
   "subjects": [
     {
       "id": "math-2eme-sec-sciences",
@@ -31,6 +31,141 @@
         { "slug": "17-parallelisme-espace", "notion": "Parallélisme dans l'espace" },
         { "slug": "18-orthogonalite-espace", "notion": "Orthogonalité dans l'espace" },
         { "slug": "19-statistiques", "notion": "Statistiques" }
+      ]
+    },
+    {
+      "id": "english-2eme-sec-sciences",
+      "name": "English",
+      "contentLanguage": "en",
+      "chapters": [
+        {
+          "slug": "01-family-life",
+          "notion": "Theme I — Family life (Lessons 1–2: expressing want/desire, narrating past events, the present perfect)"
+        },
+        {
+          "slug": "02-communicating-with-others",
+          "notion": "Theme II — Communicating with others (Lessons 3–5: be going to, the future with will, cause/result relationship)"
+        },
+        {
+          "slug": "03-social-life",
+          "notion": "Theme III — Social Life (Lessons 6–7 + Progress Check 1: either in end position, the present perfect progressive)"
+        },
+        {
+          "slug": "04-social-problems",
+          "notion": "Theme IV — Social Problems (Lessons 9–11: countable/uncountable nouns, the superlative, causative verbs)"
+        },
+        {
+          "slug": "05-attitudes-and-values",
+          "notion": "Theme V — Attitudes and Values (Lessons 12–14: cause/result linkers, imperatives, question tags)"
+        },
+        {
+          "slug": "06-rights-and-duties",
+          "notion": "Theme VI — Rights and Duties (Lessons 15–16 + Progress Check 2: the passive voice, a little/a few/a lot of)"
+        },
+        {
+          "slug": "07-education",
+          "notion": "Theme VII — Education (Lessons 18–19: reflexive pronouns, ought to / needn't / had better / should have)"
+        },
+        {
+          "slug": "08-professional-life",
+          "notion": "Theme VIII — Professional Life (Lessons 20–22: should have + past participle, purpose clauses, used to)"
+        },
+        {
+          "slug": "09-media-and-arts",
+          "notion": "Theme IX — Media and Arts (Lessons 23–24: parallel increase, any/some/no/nobody)"
+        },
+        {
+          "slug": "10-science-and-technology",
+          "notion": "Theme X — Science and Technology (Lessons 25–26: reported speech, gradual increase/decrease)"
+        },
+        {
+          "slug": "11-ecology",
+          "notion": "Theme XI — Ecology (Lessons 27–29 + Progress Check 3: adverbs of degree, not only… but also)"
+        }
+      ]
+    },
+    {
+      "id": "french-2eme-sec-sciences",
+      "name": "Français",
+      "contentLanguage": "fr",
+      "chapters": [
+        {
+          "slug": "01-champ-lexical-et-rapports-logiques",
+          "notion": "Module 1 « Pages d'amour » séq. 1 (Flaubert, « Perdus dans la rêverie ») — reconnaître le thème à travers le champ lexical ; relier les idées par des rapports logiques ; exprimer et justifier une opinion, un sentiment (p. 7-19)"
+        },
+        {
+          "slug": "02-subjectivite-cause-consequence-but",
+          "notion": "Module 1 séq. 2 (Géraldy, « Méditation ») — exprimer la subjectivité au moyen des verbes ; construire des explications : la cause, la conséquence, le but (p. 20-32)"
+        },
+        {
+          "slug": "03-comparaison-metaphore-hypothese",
+          "notion": "Module 1 séq. 3 (Marivaux, « L'amoureux éconduit ») — établir une analogie : la comparaison, la métaphore ; raisonner à partir de faits imaginés : l'hypothèse (p. 33-45)"
+        },
+        {
+          "slug": "04-antithese-opposition-concession",
+          "notion": "Module 1 séq. 4 (Carco, « Il pleut ») — exprimer un contraste : l'antithèse ; exprimer et nuancer une divergence d'idées : l'opposition, la concession (p. 46-60)"
+        },
+        {
+          "slug": "05-association-idees-types-de-phrases",
+          "notion": "Module 2 « Toi, mon semblable » séq. 1 (Sully Prudhomme, « Un songe ») — explorer les aspects du thème : l'association d'idées ; reconnaître les types de phrases ; peser le pour et le contre (p. 65-80)"
+        },
+        {
+          "slug": "06-sens-voisins-actes-de-parole",
+          "notion": "Module 2 séq. 2 (R. Merle, « Solitude au milieu des hommes ») — différencier ou rapprocher des mots de sens voisin en contexte ; identifier les actes de parole (p. 81-97)"
+        },
+        {
+          "slug": "07-polysemie-et-enonciation",
+          "notion": "Module 2 séq. 3 (Stendhal, « La peur du mépris ») — distinguer les sens d'un mot polysémique ; repérer les marques de la situation d'énonciation (p. 98-112)"
+        },
+        {
+          "slug": "08-modalisation-et-indices-du-locuteur",
+          "notion": "Module 2 séq. 4 (A. Touraine, « Une affaire de conscience ») — la modalisation ; repérer les indices de la présence du locuteur (p. 113-129)"
+        },
+        {
+          "slug": "09-verbes-introducteurs-discours-rapporte",
+          "notion": "Module 3 « Femme et société » séq. 1 (C. Rochefort, « Je n'aimerais pas être un mari ! ») — citer les paroles d'autrui : les verbes introducteurs ; les formes du discours rapporté (p. 134-150)"
+        },
+        {
+          "slug": "10-verbes-d-opinion-recit-et-discours",
+          "notion": "Module 3 séq. 2 (G. Navel, « Ainsi était ma mère... ») — reconnaître l'opinion d'autrui : les verbes d'opinion ; différencier récit et discours : les temps verbaux (p. 151-165)"
+        },
+        {
+          "slug": "11-melioratif-et-arguments-de-la-these",
+          "notion": "Module 3 séq. 3 (Giraudoux, « Un roi déchu ») — recourir au vocabulaire mélioratif ; repérer des arguments en rapport avec la thèse ; la technique du résumé (p. 166-177)"
+        },
+        {
+          "slug": "12-pejoratif-et-raisonnement-implicite",
+          "notion": "Module 3 séq. 4 (F. de Lagarde, « Monsieur ou Mondamoiseau ? ») — recourir au vocabulaire péjoratif ; reconstituer un raisonnement à partir d'une information implicite (p. 178-190)"
+        },
+        {
+          "slug": "13-enchainer-des-arguments",
+          "notion": "Module 4 « Travail et bien-être » séq. 1 (R.M. du Gard, « Une existence exemplaire ») — explorer le lexique du thème ; enchaîner des arguments ; relier les arguments à la thèse (p. 195-206)"
+        },
+        {
+          "slug": "14-procedes-de-reprise",
+          "notion": "Module 4 séq. 2 (M. Tournier, « Des millions de petites flammes ») — le lexique des métiers ; maîtriser les procédés de reprise nominale et pronominale (p. 207-219)"
+        },
+        {
+          "slug": "15-exemple-et-information-nouvelle",
+          "notion": "Module 4 séq. 3 (Lamartine, « Le chant de la pierre ») — insérer un exemple ; introduire une information nouvelle dans un énoncé ; analyser des plans d'argumentation (p. 220-231)"
+        },
+        {
+          "slug": "16-modes-verbaux-et-analyse-de-la-consigne",
+          "notion": "Module 5 « Images d'ici, images d'ailleurs » séq. 1 (Cesbron, « Sur les routes du monde ») — envisager les faits dans la pensée : les modes verbaux ; comprendre et analyser une consigne (p. 236-247)"
+        },
+        {
+          "slug": "17-polysemie-grammaticale-et-problematique",
+          "notion": "Module 5 séq. 2 (Rimbaud, « Sensation ») — réduire des énoncés ; exploiter la polysémie de certains mots grammaticaux ; dégager une problématique (p. 248-258)"
+        },
+        {
+          "slug": "18-progression-thematique-et-plan",
+          "notion": "Module 5 séq. 3 (A. Jouffroy, « Le pouvoir de l'image ») — interpréter des titres ; analyser les types de progression thématique ; construire un plan (p. 259-271)"
+        },
+        {
+          "slug": "19-nouvelles-lecture-suivie",
+          "notion": "Nouvelles en lecture suivie — « La ficelle » (Maupassant, domaine public) et « La reine de beauté » (S. Prou, sous droits) : texte et « Pistes de recherche » seuls, aucun appareil de rubriques (p. 274-286)",
+          "optional": true
+        }
       ]
     }
   ]
