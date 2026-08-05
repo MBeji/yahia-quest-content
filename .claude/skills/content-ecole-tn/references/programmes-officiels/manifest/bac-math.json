@@ -2,44 +2,116 @@
   "grade": "bac-math",
   "sealed": false,
   "source": "CNP — manuels élèves officiels de mathématiques, 4ème année de l'enseignement secondaire, section Mathématiques (Bac). Tome 1 « Analyse » (code 222445P00, 207 p.) : ch.1–9. Tome 2 « Algèbre · Géométrie · Probabilités » (code 222446P00, 230 p.) : ch.1–10. Aucun guide enseignant au corpus pour ce couple ⇒ le manuel élève fait référence (profil ecole-secondaire). Langue d'enseignement : français (bascule ar→fr acquise depuis la 1ère secondaire). Transcriptions sous programme/bac-math/mathematiques.md.",
-  "note": "sealed=false (advisory). Carte des chapitres = table des matières des deux tomes (page PDF = page imprimée, offset 0). Campagne terminée : LOT A (transcription des deux tomes) validé R-7 le 2026-07-19 (registre suivi/bac-math.json, statut 'validee-r7', profondeur 'generation', couverture 100 %), puis LOT B mené à terme — le sujet math-bac-math est complet à 19/19 chapitres. Plus aucun verrou de campagne sur ce manifeste. Le mapping manuel↔pages par chapitre vit dans §4 de la fiche.",
+  "note": "sealed=false (advisory). Carte des chapitres = table des matières des deux tomes (page PDF = page imprimée, offset 0). Campagne terminée : LOT A (transcription des deux tomes) validé R-7 le 2026-07-19 (registre suivi/bac-math.json, statut 'validee-r7', profondeur 'generation', couverture 100 %), puis LOT B mené à terme — le sujet math-bac-math est complet à 19/19 chapitres. Plus aucun verrou de campagne sur ce manifeste pour les mathématiques. Le mapping manuel↔pages par chapitre vit dans §4 de la fiche. ▸ PHILOSOPHIE (ajoutée le 2026-08-04) : ⚠️ CHAPITRAGE CODIFIÉ, CONTENU NON GÉNÉRABLE. Les 5 chapitres sont les 5 مباحث du programme, relevés sur le فهرس du manuel 210402 (p.404-408, lu intégralement) ; les plages de pages sont exactes. MAIS la fiche programme/bac-math/philosophie.md est en profondeur « first-pass » (ossature seule : page de titre, التقديم, خارطة الكتاب, فهرس) — le contenu enseigné des p.7-402 n'est pas transcrit, donc chapitresGeneration est vide au registre et le LOT B est interdit sur ces 5 chapitres (R-5). Ce manuel dessert les CINQ sections non-Lettres (mutualisation par compileTo depuis content/philosophie-bac/) ; bac-math en est le grade porteur. Reprise : voir §6 de la fiche. — ANGLAIS (241403/641404) : sealed=false (advisory). Carte des chapitres = table des matières des deux tomes (page PDF = page imprimée, offset 0). Campagne terminée : LOT A (transcription des deux tomes) validé R-7 le 2026-07-19 (registre suivi/bac-math.json, statut 'validee-r7', profondeur 'generation', couverture 100 %), puis LOT B mené à terme — le sujet math-bac-math est complet à 19/19 chapitres. Plus aucun verrou de campagne sur ce manifeste. Le mapping manuel↔pages par chapitre vit dans §4 de la fiche.",
   "subjects": [
     {
       "id": "math-bac-math",
       "name": "Mathématiques",
       "contentLanguage": "fr",
       "chapters": [
-        { "slug": "01-continuite-limites", "notion": "Continuité et limites (tome 1, ch.1)" },
-        { "slug": "02-suites-reelles", "notion": "Suites réelles (tome 1, ch.2)" },
-        { "slug": "03-derivabilite", "notion": "Dérivabilité (tome 1, ch.3)" },
-        { "slug": "04-fonctions-reciproques", "notion": "Fonctions réciproques (tome 1, ch.4)" },
-        { "slug": "05-primitives", "notion": "Primitives (tome 1, ch.5)" },
-        { "slug": "06-integrales", "notion": "Intégrales (tome 1, ch.6)" },
+        {
+          "slug": "01-continuite-limites",
+          "notion": "Continuité et limites (tome 1, ch.1)"
+        },
+        {
+          "slug": "02-suites-reelles",
+          "notion": "Suites réelles (tome 1, ch.2)"
+        },
+        {
+          "slug": "03-derivabilite",
+          "notion": "Dérivabilité (tome 1, ch.3)"
+        },
+        {
+          "slug": "04-fonctions-reciproques",
+          "notion": "Fonctions réciproques (tome 1, ch.4)"
+        },
+        {
+          "slug": "05-primitives",
+          "notion": "Primitives (tome 1, ch.5)"
+        },
+        {
+          "slug": "06-integrales",
+          "notion": "Intégrales (tome 1, ch.6)"
+        },
         {
           "slug": "07-fonction-logarithme-neperien",
           "notion": "Fonction logarithme népérien (tome 1, ch.7)"
         },
-        { "slug": "08-fonction-exponentielle", "notion": "Fonction exponentielle (tome 1, ch.8)" },
+        {
+          "slug": "08-fonction-exponentielle",
+          "notion": "Fonction exponentielle (tome 1, ch.8)"
+        },
         {
           "slug": "09-equations-differentielles",
           "notion": "Équations différentielles (tome 1, ch.9)"
         },
-        { "slug": "10-nombres-complexes", "notion": "Nombres complexes (tome 2, ch.1)" },
-        { "slug": "11-isometries-du-plan", "notion": "Isométries du plan (tome 2, ch.2)" },
+        {
+          "slug": "10-nombres-complexes",
+          "notion": "Nombres complexes (tome 2, ch.1)"
+        },
+        {
+          "slug": "11-isometries-du-plan",
+          "notion": "Isométries du plan (tome 2, ch.2)"
+        },
         {
           "slug": "12-deplacements-antideplacements",
           "notion": "Déplacements – Antidéplacements (tome 2, ch.3)"
         },
-        { "slug": "13-similitudes", "notion": "Similitudes (tome 2, ch.4)" },
-        { "slug": "14-coniques", "notion": "Coniques (tome 2, ch.5)" },
+        {
+          "slug": "13-similitudes",
+          "notion": "Similitudes (tome 2, ch.4)"
+        },
+        {
+          "slug": "14-coniques",
+          "notion": "Coniques (tome 2, ch.5)"
+        },
         {
           "slug": "15-geometrie-dans-l-espace",
           "notion": "Géométrie dans l'espace (tome 2, ch.6)"
         },
-        { "slug": "16-divisibilite-dans-z", "notion": "Divisibilité dans ℤ (tome 2, ch.7)" },
-        { "slug": "17-identite-de-bezout", "notion": "Identité de Bézout (tome 2, ch.8)" },
-        { "slug": "18-probabilites", "notion": "Probabilités (tome 2, ch.9)" },
-        { "slug": "19-statistiques", "notion": "Statistiques (tome 2, ch.10)" }
+        {
+          "slug": "16-divisibilite-dans-z",
+          "notion": "Divisibilité dans ℤ (tome 2, ch.7)"
+        },
+        {
+          "slug": "17-identite-de-bezout",
+          "notion": "Identité de Bézout (tome 2, ch.8)"
+        },
+        {
+          "slug": "18-probabilites",
+          "notion": "Probabilités (tome 2, ch.9)"
+        },
+        {
+          "slug": "19-statistiques",
+          "notion": "Statistiques (tome 2, ch.10)"
+        }
+      ]
+    },
+    {
+      "id": "philosophie-bac-math",
+      "name": "الفلسفة",
+      "contentLanguage": "ar",
+      "chapters": [
+        {
+          "slug": "01-aniyya-ghayriyya",
+          "notion": "المحور 1 : الإنساني بين الكثرة والوحدة — الآنيّة والغيريّة"
+        },
+        {
+          "slug": "02-khususiyya-kawniyya",
+          "notion": "المحور 1 : الإنساني بين الكثرة والوحدة — الخصوصيّة والكونيّة"
+        },
+        {
+          "slug": "03-ilm-haqiqa-namdhaja",
+          "notion": "المحور 2 : العلم بين الحقيقة والنمذجة"
+        },
+        {
+          "slug": "04-dawla-siyada-muwatana",
+          "notion": "المحور 3 : القيم بين النسبي والمطلق — الدّولة : السّيادة والمواطنة"
+        },
+        {
+          "slug": "05-akhlaq-khayr-saada",
+          "notion": "المحور 3 : القيم بين النسبي والمطلق — الأخلاق : الخير والسّعادة"
+        }
       ]
     },
     {

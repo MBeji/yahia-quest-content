@@ -1,9 +1,36 @@
 {
   "grade": "bac-eco-gestion",
   "sealed": false,
-  "source": "CNP — « SKILLS For LIFE », Year 4 Secondary (bac), manuel élève code 241403 (280 p.) + guide enseignant code 641404 (56 p.). ⚭ Manuel UNIQUE pour les six sections du bac : le sujet anglais est authored une fois sous content/english-bac/ et compilé en six sujets (compileTo, étude 16 D-4). Transcription : programme/bac-lettres/anglais.md (fiche unique portant le scope des six sujets, R-4).",
-  "note": "Chapitrage = les 36 leçons de tronc commun du manuel + les 6 blocs non-leçons (Checking Year 3, Introductory Unit, Check your Punctuation, les deux Check your Language and Skills, Before we say Good Bye), soit 42 chapitres. Les 10 « sessions » For Arts Students du manuel sont RÉSERVÉES à la section Lettres (préface p.2, guide p.5) : elles ne figurent qu'au manifeste bac-lettres et sont restreintes côté contenu par chapter.gradeSlugs. LOT A partiel au 2026-08-04 : p.1-234 du manuel transcrites, p.235-280 restantes ⇒ les chapitres 41, 42 (et 50-52 en Lettres) ne sont pas encore générables (registre suivi/bac-lettres.json, champ chapitresGeneration).",
+  "source": "Section « Économie & gestion » du baccalauréat tunisien (docs/lycee-architecture.md §2). CNP — manuel élève officiel de philosophie, 4ème année de l'enseignement secondaire : « كتاب الفلسفة — لتلاميذ السّنة الرّابعة من التّعليم الثانوي — الشّعب العلميّة » (code 210402P00, 408 p.). Aucun guide enseignant au corpus pour ce couple ⇒ le manuel élève fait référence (profil ecole-secondaire). Langue d'enseignement : arabe. Le manuel dessert les CINQ sections non-Lettres (constat §0 de la fiche : le catalogue CNP ne contient que deux manuels de philosophie pour la 4ème année — 210402 « الشعب العلمية » et 210422+210423 « شعبة الآداب »). Le scope est porté par l'unique fiche programme/bac-math/philosophie.md (R-4 : un code source, une seule fiche), et le contenu est mutualisé par compileTo depuis content/philosophie-bac/ (étude 16 D-4). bac-lettres n'est PAS desservi. | CNP — « SKILLS For LIFE », Year 4 Secondary (bac), manuel élève code 241403 (280 p.) + guide enseignant code 641404 (56 p.). ⚭ Manuel UNIQUE pour les six sections du bac : le sujet anglais est authored une fois sous content/english-bac/ et compilé en six sujets (compileTo, étude 16 D-4). Transcription : programme/bac-lettres/anglais.md (fiche unique portant le scope des six sujets, R-4).",
+  "note": "sealed=false. Seule la philosophie est codifiée à ce jour pour cette section : les autres matières du bac Économie & gestion ne sont PAS encore transcrites et sont donc rapportées manquantes. ⚠️ CHAPITRAGE CODIFIÉ, CONTENU NON GÉNÉRABLE au 2026-08-04. Les 5 chapitres sont les 5 مباحث du programme, relevés sur le فهرس du manuel (p.404-408, lu intégralement) ; les plages de pages sont exactes. MAIS la fiche est en profondeur « first-pass » (ossature seule : titre, التقديم, خارطة الكتاب, فهرس) — le contenu enseigné des p.7-402 n'est pas transcrit, donc chapitresGeneration est vide au registre et le LOT B est interdit sur les 5 chapitres (R-5). Reprise : voir §6 de la fiche. — ANGLAIS (241403/641404) : Chapitrage = les 36 leçons de tronc commun du manuel + les 6 blocs non-leçons (Checking Year 3, Introductory Unit, Check your Punctuation, les deux Check your Language and Skills, Before we say Good Bye), soit 42 chapitres. Les 10 « sessions » For Arts Students du manuel sont RÉSERVÉES à la section Lettres (préface p.2, guide p.5) : elles ne figurent qu'au manifeste bac-lettres et sont restreintes côté contenu par chapter.gradeSlugs. LOT A partiel au 2026-08-04 : p.1-234 du manuel transcrites, p.235-280 restantes ⇒ les chapitres 41, 42 (et 50-52 en Lettres) ne sont pas encore générables (registre suivi/bac-lettres.json, champ chapitresGeneration).",
   "subjects": [
+    {
+      "id": "philosophie-bac-eco-gestion",
+      "name": "الفلسفة",
+      "contentLanguage": "ar",
+      "chapters": [
+        {
+          "slug": "01-aniyya-ghayriyya",
+          "notion": "المحور 1 : الإنساني بين الكثرة والوحدة — الآنيّة والغيريّة"
+        },
+        {
+          "slug": "02-khususiyya-kawniyya",
+          "notion": "المحور 1 : الإنساني بين الكثرة والوحدة — الخصوصيّة والكونيّة"
+        },
+        {
+          "slug": "03-ilm-haqiqa-namdhaja",
+          "notion": "المحور 2 : العلم بين الحقيقة والنمذجة"
+        },
+        {
+          "slug": "04-dawla-siyada-muwatana",
+          "notion": "المحور 3 : القيم بين النسبي والمطلق — الدّولة : السّيادة والمواطنة"
+        },
+        {
+          "slug": "05-akhlaq-khayr-saada",
+          "notion": "المحور 3 : القيم بين النسبي والمطلق — الأخلاق : الخير والسّعادة"
+        }
+      ]
+    },
     {
       "id": "english-bac-eco-gestion",
       "name": "English",
