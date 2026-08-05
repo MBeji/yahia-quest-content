@@ -1,0 +1,233 @@
+{
+  "grade": "bac-lettres",
+  "sealed": false,
+  "source": "CNP — « SKILLS For LIFE », Year 4 Secondary (bac), manuel élève code 241403 (280 p.) + guide enseignant code 641404 (56 p.). ⚭ Manuel UNIQUE pour les six sections du bac : le sujet anglais est authored une fois sous content/english-bac/ et compilé en six sujets (compileTo, étude 16 D-4). Transcription : programme/bac-lettres/anglais.md (fiche unique portant le scope des six sujets, R-4).",
+  "note": "Chapitrage = les 36 leçons de tronc commun du manuel + les 6 blocs non-leçons (Checking Year 3, Introductory Unit, Check your Punctuation, les deux Check your Language and Skills, Before we say Good Bye), soit 42 chapitres. Les 10 « sessions » For Arts Students du manuel sont RÉSERVÉES à la section Lettres (préface p.2, guide p.5) : elles ne figurent qu'au manifeste bac-lettres et sont restreintes côté contenu par chapter.gradeSlugs. LOT A partiel au 2026-08-04 : p.1-234 du manuel transcrites, p.235-280 restantes ⇒ les chapitres 41, 42 (et 50-52 en Lettres) ne sont pas encore générables (registre suivi/bac-lettres.json, champ chapitresGeneration). Ce manifeste porte 52 chapitres : les 42 du tronc commun + les 10 sessions For Arts Students, marquées `optional: true` — elles font partie du programme codifié (les écrire n'est donc jamais « hors-programme ») mais leur absence n'est jamais comptée comme un trou, la filière Lettres n'étant pas traitée pour elle-même dans ce lot. Même arbitrage que l'anglais 3ème sec (#129), à ceci près qu'en 4ème année les sessions Arts sont des LEÇONS autonomes (Session 1 à 10, pages propres) et non un supplément intra-module : elles sont donc chapitrables, là où celles de 3ème sec relèvent d'exercices restreints par gradeSlugs.",
+  "subjects": [
+    {
+      "id": "english-bac-lettres",
+      "name": "English",
+      "contentLanguage": "en",
+      "chapters": [
+        {
+          "slug": "01-checking-year-3-programme",
+          "notion": "Checking Year 3 Programme — révision d'entrée + writing as a process (p. 10-15)"
+        },
+        {
+          "slug": "02-first-impressions",
+          "notion": "Introductory Unit — First Impressions (p. 16-34)"
+        },
+        {
+          "slug": "03-holidaying",
+          "notion": "Unit 1, Lesson 1 — Holidaying (p. 37-40)"
+        },
+        {
+          "slug": "04-space-tourism",
+          "notion": "Unit 1, Lesson 2 — Space Tourism (p. 41-46)"
+        },
+        {
+          "slug": "05-art-shows",
+          "notion": "Unit 1, Lesson 3 — Art Shows, Strings (p. 47-53)"
+        },
+        {
+          "slug": "06-exploring-a-song",
+          "notion": "Unit 1, Lesson 4 — Exploring a Song: Immortality (p. 54-58)"
+        },
+        {
+          "slug": "07-walking-tour",
+          "notion": "Unit 1, Lesson 5 — Walking Tour (p. 59-63)"
+        },
+        {
+          "slug": "08-a-package-tour",
+          "notion": "Unit 1, Lesson 6 — A Package Tour + Project Work 1 (p. 64-67)"
+        },
+        {
+          "slug": "09-at-the-travel-agency",
+          "notion": "Unit 1, Lesson 7 — At the Travel Agency (p. 68-73)"
+        },
+        {
+          "slug": "10-put-a-little-drama-in-your-travel",
+          "notion": "Unit 1, Lesson 8 — Put a little drama in your travel (p. 74-76)"
+        },
+        {
+          "slug": "11-the-winters-tale",
+          "notion": "Unit 1, Lesson 9 — The Winter's Tale, Part 1 (p. 77-81)"
+        },
+        {
+          "slug": "12-school-related-words",
+          "notion": "Unit 2, Lesson 1 — School-related Words (p. 88-92)"
+        },
+        {
+          "slug": "13-education-for-all",
+          "notion": "Unit 2, Lesson 2 — Education for all (p. 93-96)"
+        },
+        {
+          "slug": "14-virtual-schools",
+          "notion": "Unit 2, Lesson 3 — Virtual Schools (p. 97-100)"
+        },
+        {
+          "slug": "15-online-learning",
+          "notion": "Unit 2, Lesson 4 — Online Learning (p. 101-102)"
+        },
+        {
+          "slug": "16-comparing-educational-systems",
+          "notion": "Unit 2, Lesson 5 — Comparing Educational Systems (p. 103-106)"
+        },
+        {
+          "slug": "17-age-or-ability",
+          "notion": "Unit 2, Lesson 6 — Age or …? (p. 107-110)"
+        },
+        {
+          "slug": "18-lifelong-learning",
+          "notion": "Unit 2, Lesson 7 — Lifelong Learning (p. 111-114)"
+        },
+        {
+          "slug": "19-reading-the-back-cover-of-a-book",
+          "notion": "Unit 2, Lesson 8 — Reading the Back Cover of a Book (p. 115-117)"
+        },
+        {
+          "slug": "20-alexander-graham-bell",
+          "notion": "Unit 2, Lesson 9 — Alexander Graham Bell + Project Work 2 (p. 118-123)"
+        },
+        {
+          "slug": "21-check-your-language-and-skills-1",
+          "notion": "Consolidation — Check your Language and Skills 1 (p. 129-133)"
+        },
+        {
+          "slug": "22-inventions-related-words",
+          "notion": "Unit 3, Lesson 1 — Inventions-related Words + Webquest 5 (p. 136-141)"
+        },
+        {
+          "slug": "23-technology-a-blessing-in-disguise",
+          "notion": "Unit 3, Lesson 2 — Technology: A Blessing in Disguise? (p. 142-146)"
+        },
+        {
+          "slug": "24-the-father-of-playstation",
+          "notion": "Unit 3, Lesson 3 — The Father of PlayStation (p. 147-150)"
+        },
+        {
+          "slug": "25-prize-winners",
+          "notion": "Unit 3, Lesson 4 — Prize Winners (p. 151-155)"
+        },
+        {
+          "slug": "26-women-choose-to-opt-out",
+          "notion": "Unit 3, Lesson 5 — Women choose to opt out (p. 156-160)"
+        },
+        {
+          "slug": "27-the-brain-drain",
+          "notion": "Unit 3, Lesson 6 — The Brain Drain (p. 161-167)"
+        },
+        {
+          "slug": "28-scientists-achievements",
+          "notion": "Unit 3, Lesson 7 — Scientists' Achievements (p. 168-173)"
+        },
+        {
+          "slug": "29-the-daffodils",
+          "notion": "Unit 3, Lesson 8 — The Daffodils (p. 174-179)"
+        },
+        {
+          "slug": "30-writing-an-argumentative-text",
+          "notion": "Unit 3, Lesson 9 — Writing as a Process: Argumentative Text (p. 180-181)"
+        },
+        {
+          "slug": "31-check-your-punctuation",
+          "notion": "Check your Punctuation — « TO BE DONE WITH ALL STUDENTS » (p. 184-185)"
+        },
+        {
+          "slug": "32-life-concerns",
+          "notion": "Unit 4, Lesson 1 — Life Concerns (p. 193-197)"
+        },
+        {
+          "slug": "33-attitudes",
+          "notion": "Unit 4, Lesson 2 — Attitudes (p. 198-201)"
+        },
+        {
+          "slug": "34-if-a-poem-by-kipling",
+          "notion": "Unit 4, Lesson 3 — If…, a poem by Kipling (p. 202-204)"
+        },
+        {
+          "slug": "35-consumerism",
+          "notion": "Unit 4, Lesson 4 — Consumerism (p. 205-210)"
+        },
+        {
+          "slug": "36-ecodriving",
+          "notion": "Unit 4, Lesson 5 — Ecodriving (p. 211-217)"
+        },
+        {
+          "slug": "37-urban-exodus",
+          "notion": "Unit 4, Lesson 6 — Urban Exodus (p. 218-221)"
+        },
+        {
+          "slug": "38-a-newscast",
+          "notion": "Unit 4, Lesson 7 — A Newscast (p. 222-226)"
+        },
+        {
+          "slug": "39-staff-management",
+          "notion": "Unit 4, Lesson 8 — Staff Management (p. 227-231)"
+        },
+        {
+          "slug": "40-job-ads",
+          "notion": "Unit 4, Lesson 9 — Job Ads (p. 232-234)"
+        },
+        {
+          "slug": "41-check-your-language-and-skills-2",
+          "notion": "Consolidation — Check your Language and Skills 2 (p. 248-253)"
+        },
+        {
+          "slug": "42-before-we-say-good-bye",
+          "notion": "Before we say 'Good Bye' — préparation à l'examen, PORTFOLIO (p. 254-260)"
+        },
+        {
+          "slug": "43-arts-the-winters-tale-part-2",
+          "notion": "Arts Session 1 — The Winter's Tale, Part 2 (p. 82-84)",
+          "optional": true
+        },
+        {
+          "slug": "44-arts-tale-end",
+          "notion": "Arts Session 2 — Tale end…? (p. 85)",
+          "optional": true
+        },
+        {
+          "slug": "45-arts-later",
+          "notion": "Arts Session 3 — Later (p. 124-127)",
+          "optional": true
+        },
+        {
+          "slug": "46-arts-writing-a-narrative",
+          "notion": "Arts Session 4 — Writing a Narrative (p. 128)",
+          "optional": true
+        },
+        {
+          "slug": "47-arts-the-bards-sonnet-18",
+          "notion": "Arts Session 5 — The Bard's Sonnet 18 (p. 182-183)",
+          "optional": true
+        },
+        {
+          "slug": "48-arts-as-you-like-it",
+          "notion": "Arts Session 6 — As You Like It (p. 186-188)",
+          "optional": true
+        },
+        {
+          "slug": "49-arts-project-work-3",
+          "notion": "Arts Session 7 — Project Work 3, More on Text Structure (p. 189-190)",
+          "optional": true
+        },
+        {
+          "slug": "50-arts-the-richer-the-poorer",
+          "notion": "Arts Session 8 — The Richer, The Poorer (p. 235-239)",
+          "optional": true
+        },
+        {
+          "slug": "51-arts-a-secret-for-two",
+          "notion": "Arts Session 9 — A Secret for Two (p. 240-244)",
+          "optional": true
+        },
+        {
+          "slug": "52-arts-what-a-wonderful-world",
+          "notion": "Arts Session 10 — What a Wonderful World! (p. 245-247)",
+          "optional": true
+        }
+      ]
+    }
+  ]
+}
