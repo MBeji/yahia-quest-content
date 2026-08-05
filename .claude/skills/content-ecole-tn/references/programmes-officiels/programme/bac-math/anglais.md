@@ -8147,6 +8147,15 @@ et Vocabulary Strategies & Word List (p.275-280) restent à faire.
    `WHAT I CAN DO NOW` de chaque leçon s'y adosse. Le référentiel PART IV (§1.3) en est le
    substitut disponible, mais ce n'est pas le même document — ne pas le présenter comme tel.
 3. **Les p.248-260 et p.272-280 ne sont pas lues** — voir la table « Non transcrit dans ce palier ».
+4. ⚠️ **Piège d'extraction du WORD LIST (p.276-280), mesuré — à ne pas redécouvrir.** La liste est
+   imprimée en **deux blocs de colonnes par page** (`Lexical Items | Unit | Lesson`, deux fois), que
+   `pdftotext` entrelace **ligne à ligne**. Un découpage à position fixe marche sur la p.276 mais
+   **échoue sur les p.277 et p.279**, où l'extraction **détache en plus l'initiale** de nombreux
+   mots : on lit `nspiration` pour *inspiration*, `ron-fisted` pour *iron-fisted*, `ssue` pour
+   *issue*, `andscape` pour *landscape*. Une tentative de parsing déterministe a rendu 229 entrées
+   exploitables pour **132 lignes non parsées** — un taux qui interdit de s'y fier.
+   ⇒ **Cette liste se transcrit en vision, page par page** (rendu à 200 dpi minimum), pas depuis la
+   couche texte. C'est la seule partie du manuel dans ce cas ; tout le reste s'extrait proprement.
 
 ### 6.2 ⚠️ La KEY du guide n'est pas fiable au mot près — à re-résoudre avant usage
 
