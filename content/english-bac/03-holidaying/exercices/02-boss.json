@@ -32,15 +32,15 @@
       "difficulty": 2
     },
     {
-      "prompt": "Nizar wants to ask a friend whether collecting stamps was one of his childhood habits. Which question is correct English?",
+      "prompt": "Correct this question: \"Did you used to collect stamps when you were a boy?\" What must change?",
       "options": [
-        { "id": "a", "text": "Did you use to collect stamps?" },
-        { "id": "b", "text": "Did you use to collecting stamps?" },
-        { "id": "c", "text": "Did you used to collect stamps?" },
-        { "id": "d", "text": "Do you used to collect stamps?" }
+        { "id": "a", "text": "\"used\" becomes \"use\" — the helper \"did\" already carries the past." },
+        { "id": "b", "text": "\"collect\" becomes \"collected\" — the sentence looks back at childhood." },
+        { "id": "c", "text": "\"Did\" becomes \"Do\" — \"used to\" is already a past form on its own." },
+        { "id": "d", "text": "Nothing — the question is correct as it stands." }
       ],
       "correctOption": "a",
-      "explanation": "In a question the helper \"did\" carries the past, so \"used\" goes back to \"use\" and the main verb keeps its base form: Did you use to collect stamps? The classic mistake is \"Did you used to collect stamps?\", which marks the past twice. \"Do you used to collect stamps?\" mixes a present helper with a past form, and \"Did you use to collecting stamps?\" puts an -ing form where the base form belongs.",
+      "explanation": "Only the -d is wrong: the helper \"did\" carries the past, so \"used\" goes back to \"use\" and the main verb keeps its base form — Did you use to collect stamps when you were a boy? Marking the past on \"did\" and on \"used\" at the same time marks it twice. Adding a past ending to \"collect\" marks it a third time, and replacing \"Did\" by \"Do\" would put a present helper in a question about childhood.",
       "difficulty": 3
     },
     {
@@ -70,9 +70,9 @@
     {
       "prompt": "Two groups ranked the same five outings. Children: the seaside 1 · the zoo 2 · a picnic 3 · a country walk 4 · a museum 5. Adults: the seaside 1 · a country walk 2 · a picnic 3= · a museum 3= · the zoo 5. Which statement do the two columns support?",
       "options": [
-        { "id": "a", "text": "Children and adults agree on the picnic only." },
+        { "id": "a", "text": "Children and adults agree on the picnic and on nothing else." },
         { "id": "b", "text": "The country walk climbs two places for adults." },
-        { "id": "c", "text": "The museum comes last in both of the two rankings." },
+        { "id": "c", "text": "The museum comes last in both rankings." },
         { "id": "d", "text": "The zoo is the adults' second choice." }
       ],
       "correctOption": "b",

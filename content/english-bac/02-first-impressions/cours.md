@@ -37,7 +37,7 @@ Half of learning English is being able to say what kind of thing is in front of 
 | **proofreading**       | **revising** a piece of writing before you hand it in                      |
 | **encyclopedia**       | a set of books giving information about many subjects, in alphabetical order |
 
-> ⚠️ Do not confuse the last three of the middle block. _make a mistake_ is a **collocation** (two ordinary words that simply belong together), _give up_ is a **phrasal verb** (a verb plus a particle), and _give somebody a hand_ is an **idiom** (the meaning is nowhere in the words).
+> ⚠️ Do not confuse **collocation**, **phrasal verb** and **idiom**. _make a mistake_ is a **collocation** (two ordinary words that simply belong together), _give up_ is a **phrasal verb** (a verb plus a particle), and _give somebody a hand_ is an **idiom** (the meaning is nowhere in the words).
 
 ## 🔗 Collocations — the partnerships English has already chosen
 
@@ -157,7 +157,7 @@ English is a mother tongue in **Great Britain, Australia, New Zealand, South Afr
 | **/k/** | psychology · stomach · chorus · chemistry · ache |
 | **/ʃ/** | machine · moustache                            |
 | **/tʃ/** | achievement · chores                          |
-| **/dʒ/** | spinach                                       |
+| **/dʒ/** | spinach (your book's grouping — many speakers say /tʃ/) |
 
 **Homophones, homographs, homonyms.** Three labels for three different accidents.
 
@@ -204,11 +204,12 @@ _Cuppa_ is colloquial English for _a cup of tea_ — perfect between neighbours,
 | Sentence                        | What it expresses |
 | ------------------------------- | ----------------- |
 | _Shall we have a cuppa?_        | a **suggestion**  |
-| _Would you like a cuppa?_       | a **suggestion**  |
 | _I'm dying for a cuppa._        | a **desire**      |
 | _Make us a cuppa, will you?_    | a **request**     |
 
 A **suggestion** puts an idea to the other person, a **desire** says what you want without asking anyone to act, and a **request** asks somebody to do something.
+
+> 🗡️ **Four words this unit leaves you with.** An **alien** is a stranger, somebody from another country — and a **legal alien** is one who holds the papers to be there. A **kettle** is the container with a spout, a lid and a handle you boil water in. Something **staggering** is so big that it causes surprise and astonishment: _a staggering 200 000 000 cups a day_. And a **cuppa** is what the British call a cup of tea when nobody is writing it down.
 
 ## 🧭 Cultures and languages
 

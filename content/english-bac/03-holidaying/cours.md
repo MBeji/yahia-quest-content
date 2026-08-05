@@ -18,6 +18,8 @@ A ranking table does not give numbers of people. It gives **positions**: 1 is th
 
 Two things must be read carefully. First, the sign **`=`**: `3=` is printed twice, so two outings are **equal** and **share** third place — which is why nobody is fourth in that column and the next position is fifth. Second, you must read **across**, not down: the same outing carries two positions, one per group.
 
+A survey often arrives as raw counts rather than positions. Turn it round yourself: sort the figures from the biggest to the smallest and number them 1, 2, 3… — 23 votes, 15 votes, 6 votes gives first, second, third.
+
 Say what you see with the verbs of ranking: _the seaside **comes first** for both groups_ · _a sports event **drops from** second **to** fifth_ · _a museum **climbs** one place among adults_ · _visiting friends and a country walk **are equally popular** with children_.
 
 > 🗡️ Before you compare, look for the **agreement**: here both groups put the seaside first. A comparison that only lists differences has read half the table.
@@ -40,6 +42,8 @@ Four question words open a conversation about holidays: _**Where** did you go? *
 Holidays then split into two columns. **Active holidays** hold the sporting activities — water skiing, sailing, horse riding, walking in the mountains. **Lazy holidays** hold everything that asks nothing of your body — sunbathing, sleeping late, playing cards, reading on a terrace.
 
 > ⚠️ **lazy** here describes the **holiday**, not the person. _An enjoyable holiday can be a very lazy one._ And **monotonous** is stronger than **boring**: it says the same thing came back every single day.
+
+Note that **holiday** is also a verb: _Where do you usually **holiday**?_ · _We **used to holiday** in Tabarka._
 
 ## ⏳ Habit in the past (1) — `used to` + base form
 
@@ -67,7 +71,7 @@ Three forms to know:
 
 _Every evening my grandmother **would sit** on the doorstep and tell us stories._ Here `would` and `used to` are interchangeable: the sentence paints a **repeated action**, a piece of typical behaviour.
 
-**But `would` stops at states.** A state verb — _be, have, live, own, like, know_ — accepts `used to` and refuses `would`.
+**But `would` stops at states.** A state verb — _be, live, own, know_, the verbs of feeling and opinion _like, hate, love, prefer, want_, and _have_ when it means **own** — accepts `used to` and refuses `would`.
 
 | Sentence                                  | `used to`             | `would`                 |
 | ----------------------------------------- | --------------------- | ----------------------- |
@@ -75,7 +79,11 @@ _Every evening my grandmother **would sit** on the doorstep and tell us stories.
 | My uncle … repair his boat every winter.  | used to repair ✓      | would repair ✓          |
 | We … live in Sfax.                        | used to live ✓        | would live ✗            |
 
+> ⚠️ **have** is a state verb only when it means _own_. In _have lunch_, _have a swim_, _have a look_ it names an action, and `would` is correct: _Every Sunday we **would have** lunch under the fig tree._
+
 > ⚠️ This is the trap of the lesson. Ask yourself one question before writing `would`: **is this an action that came back, or a situation that simply lasted?** A situation takes `used to` only.
+
+> ⚠️ In the negative, **wouldn't** is ambiguous — _He wouldn't eat fish_ can say he never ate any, or that he **refused** to. For a plain negative habit, write **didn't use to**.
 
 ## 🔀 Putting then and now side by side — the contrast linkers
 
@@ -101,7 +109,7 @@ Before reading a text word by word, look at its **shape**. The format alone tell
 | a few lines on one small card, no envelope   | a postcard                                       |
 | "Dear …", a signature, an address, an envelope | a personal letter                                |
 | a headline, prices, an address, no reader named | an advertisement or a leaflet                    |
-| "please tick the box below", "turn over"     | the text is **written**, never spoken            |
+| "tick the box below", "turn over", "enclosed with this letter" | the text is **written**, never spoken |
 | "**our** doctors are on duty at night"       | the writer is the clinic; the reader is a patient |
 
 > 🗡️ A possessive is a signature in disguise. _**Our** kitchen closes at ten_ can only be written by the hotel that owns the kitchen — so the readers are its guests.

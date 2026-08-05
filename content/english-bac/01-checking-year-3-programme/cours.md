@@ -83,6 +83,8 @@ You **say** something (**to** somebody), you **tell** **somebody** something. Th
 - _She **said that** she was tired._ · _She **said to** her father that she was tired._ · _She **told her father that** she was tired._
 - ✗ "She said her father that…" · ✗ "She told to her father that…"
 
+_ask_ behaves like _tell_: the person comes straight after the verb, with no _to_. _He **asked the secretary** when the bus left._ — ✗ "He asked **to** the secretary when the bus left."
+
 ### A long quotation needs several introducing verbs
 
 A speech of four sentences is not reported with four _he saids_. English shares the work out: _he **explained** that…_, _he **added** that…_, _he **admitted** that…_, _he **complained** that…_, _he **ended by saying** that…_
@@ -142,7 +144,7 @@ The four negative prefixes _il-_, _im-_, _ir-_ and _in-_ are **the same prefix**
 - **ir-** before **r** — _irregular, irresponsible_
 - **in-** everywhere else — _incorrect, inability_
 
-_un-_ and _dis-_ obey no letter rule; you learn them word by word. That is why "unlegal" and "unpatient" are wrong while _unreachable_ and _unfair_ are right.
+_un-_ and _dis-_ obey no letter rule; you learn them word by word. So there is no rule that predicts _unreachable_ and _unfair_ — you meet them and you keep them. And when a word already belongs to _il-_ or _im-_, _un-_ has nothing to do there: "unlegal" and "unpatient" are wrong for that reason.
 
 ### Adjectives in **-ed** and in **-ing**
 
@@ -165,7 +167,7 @@ The pair comes from the same verb and they are not interchangeable.
 | **request**     | ask for politely                          | _They requested a meeting._                |
 | **inquire**     | ask for information                       | _He inquired about the timetable._         |
 
-And the quantifiers: **a lot of** and **plenty of** both go with a positive sentence (_a lot of work_, _plenty of time_), while **any** belongs to a negative or a question (_I haven't got any time._ · _Have you got any brothers?_).
+And the quantifiers: **a lot of** and **plenty of** both fit a positive sentence (_a lot of work_, _plenty of time_), where **any** cannot go: **any** belongs to a negative or a question (_I haven't got any time._ · _Have you got any brothers?_).
 
 ## 🔗 5. The linkers
 
@@ -199,7 +201,7 @@ A word can belong to two fields depending on the sentence — _depression_ is a 
 
 ## ✍️ 7. Writing as a process
 
-An article is not written in one go from the first word to the last. The book gives you **six steps**, and you will use them eight times this year.
+An article is not written in one go from the first word to the last. Page 14 of your book scatters **seven labels** across a pink banner, but two of them — _Revising_ and _Editing_ — name one and the same stage, and _Finalizing_ is simply writing the final draft. The process has **six steps**, and you will use them eight times this year.
 
 | Step  | What you do                                                                    |
 | ----- | ------------------------------------------------------------------------------ |
