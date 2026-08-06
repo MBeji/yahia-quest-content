@@ -20,7 +20,7 @@
 > ⚭ **Mutualisation — une source, six terminales.** L'anglais est, au bac, **la seule matière dont
 > le manuel ne se dédouble pas** : un code unique (`241403`, guide `641404`) pour les six
 > sections, Lettres comprise — là où le français, la philosophie et l'arabe ont chacun leur
-> version Lettres. La préface le dit explicitement (manuel p.2) : le livre « addresses all
+> version Lettres. La préface le dit explicitement (manuel p.3) : le livre « addresses all
 > students in various streams through a common core of lessons, with additional material for the
 > Arts students to be covered in the two weekly extra hours. These are labelled : For Arts
 > Students. »
@@ -1654,7 +1654,7 @@ tranche B (p.36 et suivantes).
 ### UNIT 1 — ART SHOWS AND HOLIDAYING (p.36–86)
 
 Titre imprimé sur la page de garde de l'unité (p.35) : **UNIT 1 — ART SHOWS AND HOLIDAYING**
-(même libellé au sommaire, p.6 : « UNIT 1 — ART SHOWS AND HOLIDAYING »).
+(même libellé au sommaire, p.5 : « UNIT 1 — ART SHOWS AND HOLIDAYING »).
 La tranche p.36–86 couvre : UNIT OUTLINE (p.36), Lessons 1 à 9 (p.37–81), les deux sessions
 *For Arts Students* (p.82–85) et la page de garde de l'UNIT 2 (p.86, « EDUCATION MATTERS » —
 hors Unit 1, aucune activité).
@@ -1741,7 +1741,7 @@ Photo d'une île + consigne de carte postale ; tableau à deux colonnes *Holiday
     canoeing, …)). Outils imposés : `used to….` et les linkers *whereas, in contrast, while, but,
     however, unlike*. Auto-correction avec le code de correction de « Checking Year 3 Programme »
     (orthographe, ponctuation, majuscules).
-12. <p.40> **Grammar Focus** — texte à choix multiples (12 choix) sur `used to` / `would` /
+12. <p.40> **Grammar Focus** — texte à choix multiples (10 choix) sur `used to` / `would` /
     prétérit / présent : « As a teenager, I (was going to spend, **used to spend**, am spending) my
     summer holidays with my grandparents in the country… ». Chaque parenthèse propose 3 formes.
 
@@ -1931,7 +1931,7 @@ gras à apparier.
 
 **Déroulé des activités**
 
-1. <p.47> Activité **1 a)** — lire les DAILY EVENTS et remplir un tableau à 4 colonnes :
+1. <p.47> Activité **1 a)** — lire les DAILY EVENTS et remplir un tableau à 5 colonnes :
    *Type of activity | Day | Time | Place* (3 lignes vides).
 2. <p.47> Activité **1 b)** — appariement colonne A / colonne B : 1. foyer, 2. refreshments,
    3. interactive, 4. performances, 5. to book, 6. free ‖ a) drinks, b) make reservations,
@@ -3521,8 +3521,10 @@ trois traits du *lifelong education*.
    life ; **D.** We should start with interests and needs.
    *Clé (guide p.26)* : « A. We must use the learner's experience → 4 ; B. Adult education should not
    be only professional → 2 ; C. Education is life → 1 ; D. We should start with situations not
-   subjects → 3 » (le guide reformule les intitulés A et D, et ajoute un couple **E – c** qui n'a pas
-   de correspondant imprimé — cf. § Incertitudes).
+   subjects → 3 » (le guide reformule **trois** intitulés : A (« We must use the learner's experience »
+   pour « The learner's experience is paramount »), C (« Education is life » pour « Education is **for**
+   life ») et D (« We should start with situations not subjects » pour « We should start with interests
+   and needs ») — cf. § Incertitudes).
 5. <p.113> Activité **2** : « Focus on the first extract and a) pick out a sentence expressing a
    cause – result relationship ; b) pick out words meaning almost the same as : *simply* / *
    consequenthy* [sic] / *limited* / *full growth and development*. »
@@ -4123,7 +4125,7 @@ discours indirect (verbes introducteurs *complain, add, end by saying*) ; lexiqu
 
 ---
 
-### UNIT 3 — CREATIVE INVENTIVE MINDS (p.135–190)
+### UNIT 3 — CREATIVE, INVENTIVE MINDS (p.135–190)
 
 > Le titre de l'unité n'est **pas** imprimé sur la p.135 (qui ne porte que le bandeau
 > `UNIT OUTLINE`) : il vient du sommaire du manuel (p.6), qui titre l'unité
@@ -4139,7 +4141,7 @@ discours indirect (verbes introducteurs *complain, add, end by saying*) ; lexiqu
 | --- | --- | --- | --- | --- | --- |
 | 1 | Inventions-related words — Webquest (Robots) | Dictionary skills ; Defining | — | Word form ; Used to+V ; Be used to+V+ing | /s/ /z/ |
 | 2 | Technology: A Blessing in Disguise? | Reading an article | Speaking ; Expressing one's opinion | The Present Perfect | — |
-| 3 | The Father of Playstation | Listening to an interview | Speaking about Nobel Prize winners | — | Pronouncing - ed (regular past tense) ; - / t ∫/ / ∫ / /z/ /dz/ /z/ |
+| 3 | The Father of Playstation | Listening to an interview | Speaking about Nobel Prize winners | — | Pronouncing - ed (regular past tense) ; /tʃ/ /ʃ/ /ʒ/ /dʒ/ /z/ |
 | 4 | Prize Winners — Webquest (Nobel Prize Winners) | Reading notes about prize winners and inventors | Writing ; Imitating a model ; Making notes about famous inventors using web resources | — | — |
 | 5 | Women choose to opt out | Reading an argumentative article | Writing : Summarizing an article | Nouns ending in ship ; The Subjunctive | — |
 | 6 | The Brain Drain | Reading three short texts ; Comparing texts | Writing a formal letter | So that ; So .... that | - Syllable stress — Classifying words ; - Identifying number of syllables |
@@ -4417,7 +4419,7 @@ primetime network programming, semi-orphaning, have grown accustomed to.
 - **Communicating** : « Speaking about Nobel Prize winners » (cellule imprimée — voir § Incertitudes)
 - **Functions & linguistic exponents** : — (colonne vide ; l'encadré MY GRAMMAR p.150 travaille
   `to be dedicated / devoted / used / accustomed to + V-ing / to + something`)
-- **Pronunciation** : Pronouncing *-ed* (regular past tense) ; / t ∫/ / ∫ / /z/ /dz/ /z/
+- **Pronunciation** : Pronouncing *-ed* (regular past tense) ; /tʃ/ /ʃ/ /ʒ/ /dʒ/ /z/
 
 **Supports** (p.147) : liste de 14 items à trier en bénéfices / inconvénients des jeux vidéo ;
 paragraphe biographique à trous sur Ken Kutaragi (source implicite *Newsweek*) ; logo PlayStation.
@@ -5129,8 +5131,8 @@ hyperbole, personification) avec la citation d'Aristote (*Rhetoric*) et l'exempl
     (esprit) vagabonder — SYN : STRAY. *wonder* = se demander ; formule polie de question ; être
     très surpris.)
 13. <p.177> activité **12** : a) « Which word order is used instead of Subject + Verb + Object in
-    stanza 4 line 5? Why? » b) « Explain this phrase which appears in stanza 3 line 3 : *A poet could
-    not but be gay*. »
+    stanza 4 line 5? Why? » b) le manuel demande d'expliquer le vers 3 de la strophe 3 — celui où le
+    poète dit ne pouvoir qu'être joyeux (vers non reproduit, R-2).
     *Clé (guide p.34)* : « 12. a) the last stanza (le vers où le cœur se remplit de plaisir) —
     b) A poet cannot help (prevent himself from) feeling happy. »
     ⚠️ La clé du guide répond au a) par une référence de strophe, pas par la nomination de
@@ -5323,8 +5325,8 @@ b) *Hamlet*, Act II, Scene 2 — 3 lignes exclamatives louant l'homme, sa raison
 forme et son mouvement ; ponctuation en jeu : points d'exclamation.
 c) *The Winter's Tale*, Act II, Scene 2 — 2 vers sur le silence de l'innocence pure, plus persuasif
 que la parole ; ponctuation en jeu : point final.
-d) *The Winter's Tale*, Act IV, Scene 4 — offrande de fleurs, avec l'énumération *hot lavender,
-mints, savoury, marjoram, the marigold* ; ponctuation en jeu : point-virgule + virgules d'énumération.
+d) *The Winter's Tale*, Act IV, Scene 4 — offrande de fleurs, avec une énumération de cinq fleurs
+et herbes (non reproduite, R-2) ; ponctuation en jeu : point-virgule + virgules d'énumération.
 (p.184) tableau des 11 signes de ponctuation. (p.185) résumé de l'intrigue de *Hamlet* imprimé
 **sans aucune ponctuation ni majuscule**, à ponctuer.
 
@@ -5447,7 +5449,9 @@ Celia/Aliena, la forêt des Ardennes, la lionne, les mariages, la restitution du
    seven ages, then decide which, according to you, is the best age. »
 5. <p.187> activité **5** : « Could you - now that you understood the underlined expressions -
    rephrase them in your own words? »
-6. <p.187> activité **6** : « "All the world is a stage, and all the men and women merely players" is
+6. <p.187> activité **6** : le manuel cite le premier vers et demi de la tirade des sept âges, le donne
+   comme métaphore et demande d'en inventer une autre pour le monde et les hommes. Amorce à compléter :
+   « All the world is-----------------, and all the men and women are ------------------. » [item
    a metaphor. Think of another metaphor for the world and people. » Amorce à compléter :
    `All the world is-----------------, and all the men and women are ------------------.`
 7. <p.187> **Tâche orale** : « Read the plot summary of the play. Focus on the most important verbs
@@ -5560,9 +5564,9 @@ keypals, portfolio, editing.
 1. **p.135 (UNIT OUTLINE, leçon 3)** — la cellule *Communicating* imprime « Speaking about Nobel
    Prize winners », ce qui décrit la leçon 4 (*Prize Winners*) et non l'interview de Ken Kutaragi.
    Recopié tel qu'imprimé ; très probablement une erreur de la source.
-2. **p.135 (UNIT OUTLINE, leçon 3, colonne Pronunciation)** — la couche texte rend les symboles
-   « / t ∫/ / ∫ / /z/ /dz/ /z/ ». Il s'agit vraisemblablement de /tʃ/ /ʃ/ /ʒ/ /dʒ/ /z/ (le manuel ne
-   dispose pas des glyphes ʒ/dʒ). Recopié tel qu'imprimé.
+2. **p.135 (UNIT OUTLINE, leçon 3, colonne Pronunciation)** — RÉSOLU en R-7 par rendu à 400 dpi : le
+   manuel imprime bien **/tʃ/ /ʃ/ /ʒ/ /dʒ/ /z/**. C'est l'extraction texte qui perd ʒ et dʒ, pas le
+   manuel — même piège qu'en p.87.
 3. **Titre de l'unité** — la p.135 ne porte que le bandeau `UNIT OUTLINE` ; « CREATIVE INVENTIVE
    MINDS » est pris au sommaire du manuel (p.6). Aucun titre d'unité n'est imprimé sur les pages de
    l'unité elle-même dans la couche texte.
@@ -7007,18 +7011,12 @@ potential/qualities, commitment/willingness to work hard).
     résumés à la place. Le script du newscast (guide p.51) est restitué en résumé factuel, sauf les
     deux passages que le manuel imprime lui-même en exercice à trous.
 
-# SKILLS For LIFE — Year 4 Secondary (bac), manuel élève CNP 241403
-
-## Transcription fidèle — p.235 à 260 (fin d'ouvrage)
-
-Clés du guide du maître 641404 (pages 43 à 46) reportées sous chaque activité en *Clé (guide p.NN)*.
-
-⚠️ **Droits** — les Sessions 8 et 9 reposent sur deux nouvelles sous droits (« The Richer, the Poorer »,
-Dorothy West ; « A Secret for Two », Quentin Reynolds) et la Session 10 sur deux chansons. **Aucune
-phrase de ces textes ni aucune ligne de ces paroles n'est reproduite ici** : on ne donne que le titre,
-l'auteur, le genre, la longueur, un résumé factuel reformulé, et l'appareil pédagogique (consignes,
-données d'exercice, corrigés). Le reste du périmètre (CHECK YOUR LANGUAGE AND SKILLS 2, BEFORE WE SAY
-GOODBYE) est du matériel rédigé par le CNP : il est transcrit intégralement.
+> ⚠️ **Droits (R-2) — les trois sessions Arts qui suivent.** Les Sessions 8 et 9 reposent sur deux
+> nouvelles sous droits (« The Richer, the Poorer », Dorothy West ; « A Secret for Two », Quentin
+> Reynolds) et la Session 10 sur deux chansons. **Aucune phrase de ces textes ni aucune ligne de ces
+> paroles n'est reproduite ici** : on ne donne que le titre, l'auteur, le genre, la longueur, un
+> résumé factuel reformulé, et l'appareil pédagogique (consignes, données d'exercice, corrigés).
+> Clés du guide 641404 (p.43-46) reportées sous chaque activité en *Clé (guide p.NN)*.
 
 ---
 
@@ -7257,8 +7255,9 @@ synonymiques et antonymiques de l'activité Lexical Focus 1.
    1. Identify the main characters.
    2. Find out why Jacques was anxious.
    3. Identify the tone in Jacques' speech.
-   4. Rephrase the following statement differently starting as shown. —
-      `Never once has there been a complaint.` → `There ..................................`
+   4. Rephrase the following statement differently starting as shown. — *(le manuel reprend ici une
+      phrase du récit : négation en tête + present perfect ; non reproduite, R-2)* →
+      `There ..................................`
    *Clé (guide p.44, colonne « Section 1 »)* : **1.** « Pierre, Jacques » — **2.** « He couldn't help
    ask Pierre to retire » `[sic]` (formulation du guide). Questions 3 et 4 non corrigées.
 6. <p.241> Activité **5** : « Do you expect Pierre to quit his job? Why? Why not? » puis consigne
@@ -7279,8 +7278,8 @@ synonymiques et antonymiques de l'activité Lexical Focus 1.
     1. Have you guessed right?
     2. What do you think of the way Jacques announced the sad news to Pierre?
     3. Why do you think Pierre's eyes looked lifeless?
-    4. Paraphrase the following statement. — `The eyes were mirroring the grief that was in Pierre's
-       heart and his soul.`
+    4. Paraphrase the following statement. — *(le manuel reprend ici la phrase du récit sur les yeux
+       de Pierre reflétant son chagrin ; non reproduite, R-2)*
     5. What does 'neither' (in bold type in the text) refer to?
     6. Guess what might have happened to Pierre.
     *Clé (guide p.44, « Section 3 »)* : **5.** « warning yell / the scream of brakes ». Les autres
@@ -8004,7 +8003,7 @@ Autres composés toujours métaphoriques, listés : *mind games*, *mind-reader*,
 
 ---
 
-### ⛔ Non transcrit dans ce palier — p.235 à 280
+### ⛔ Non transcrit dans ce palier — p.248-260 et p.272-280
 
 Restent à transcrire, dans une session suivante qui **complète** cette fiche et ne la refait pas
 (R-4) — **22 pages sur 280** :
@@ -8096,16 +8095,16 @@ qui porte la fiche (voir §6.5, point 4) — générable une fois `bac-lettres` 
 
 | #   | slug                                       | notion                                                            | manuel (241403) | Gén. |
 | --- | ------------------------------------------ | ----------------------------------------------------------------- | --------------- | ---- |
-| 43  | `43-arts-the-winters-tale-part-2`          | Arts Session 1 — The Winter's Tale (Part 2)                        | p.82–84         | ✅   |
-| 44  | `44-arts-tale-end`                         | Arts Session 2 — Tale end…?                                        | p.85            | ✅   |
-| 45  | `45-arts-later`                            | Arts Session 3 — Later                                             | p.124–127       | ✅   |
-| 46  | `46-arts-writing-a-narrative`              | Arts Session 4 — Writing a Narrative                               | p.128           | ✅   |
-| 47  | `47-arts-the-bards-sonnet-18`              | Arts Session 5 — The Bard's Sonnet 18 et citations de ses pièces   | p.182–183       | ✅   |
-| 48  | `48-arts-as-you-like-it`                   | Arts Session 6 — As You Like It                                    | p.186–188       | ✅   |
-| 49  | `49-arts-project-work-3`                   | Arts Session 7 — Project Work 3 (More on Text Structure)           | p.189–190       | ✅   |
-| 50  | `50-arts-the-richer-the-poorer`            | Arts Session 8 — The Richer, The Poorer                            | p.235–239       | ⛔  🟡  |
-| 51  | `51-arts-a-secret-for-two`                 | Arts Session 9 — A Secret for Two                                  | p.240–244       | ⛔  🟡  |
-| 52  | `52-arts-what-a-wonderful-world`           | Arts Session 10 — What a Wonderful World!                          | p.245–247       | ⛔  🟡  |
+| 43  | `43-arts-the-winters-tale-part-2`          | Arts Session 1 — The Winter's Tale (Part 2)                        | p.82–84         | 🟡  |
+| 44  | `44-arts-tale-end`                         | Arts Session 2 — Tale end…?                                        | p.85            | 🟡  |
+| 45  | `45-arts-later`                            | Arts Session 3 — Later                                             | p.124–127       | 🟡  |
+| 46  | `46-arts-writing-a-narrative`              | Arts Session 4 — Writing a Narrative                               | p.128           | 🟡  |
+| 47  | `47-arts-the-bards-sonnet-18`              | Arts Session 5 — The Bard's Sonnet 18 et citations de ses pièces   | p.182–183       | 🟡  |
+| 48  | `48-arts-as-you-like-it`                   | Arts Session 6 — As You Like It                                    | p.186–188       | 🟡  |
+| 49  | `49-arts-project-work-3`                   | Arts Session 7 — Project Work 3 (More on Text Structure)           | p.189–190       | 🟡  |
+| 50  | `50-arts-the-richer-the-poorer`            | Arts Session 8 — The Richer, The Poorer                            | p.235–239       | 🟡  |
+| 51  | `51-arts-a-secret-for-two`                 | Arts Session 9 — A Secret for Two                                  | p.240–244       | 🟡  |
+| 52  | `52-arts-what-a-wonderful-world`           | Arts Session 10 — What a Wonderful World!                          | p.245–247       | 🟡  |
 
 **Totaux** — tronc commun : **42 chapitres**, dont **40 déclarés générables** (`41` et `42` non
 transcrits). `bac-lettres` : **52 chapitres**, dont 40 déclarés ; ses **10 sessions Arts sont
@@ -8134,6 +8133,44 @@ et Vocabulary Strategies & Word List (p.275-280) restent à faire.
   important de ce lot pour la génération, détaillé au §6.2.
 
 ## 6. Incertitudes / à revérifier
+
+### 6.0 Vérification R-7 (2026-08-05)
+
+Sondage dirigé (T-8) par **trois vérificateurs indépendants** en contexte vierge, contre les PDF
+sources et jamais contre la fiche.
+
+| Périmètre | Vérifié à 100 % | Échantillon | Erreurs substantielles |
+| --- | --- | --- | --- |
+| Structure : chapitrage, 6 manifestes, 5 UNIT OUTLINE, sommaire | 52 lignes · 262 entrées · ~300 cellules · 62 entrées | — | **6** |
+| Bloc liminaire + Units 1-2 (p.1–134) | 33 encadrés · 26 `[sic]` · ~55 renvois de clé | 100 % de la couche texte, 27 p. en vision | **2** |
+| Units 3-4 + GRAMMAR REFERENCE (p.135–247, 261–271) | GRAMMAR REFERENCE intégral · 22 p. d'encadrés · 53 marqueurs | 55 p. = 62 % du reste | **0** |
+
+**Verdict : CONFORME après corrections**, les 8 erreurs substantielles ayant été corrigées le
+2026-08-05. **Six d'entre elles étaient des incohérences d'assemblage** — colonne `Gén.` non
+réconciliée avec `chapitresGeneration`, bloc d'en-tête résiduel qui fermait le §2, bornes de scope —
+**et non des défauts de transcription** : le corps transcrit n'en portait que deux, et le **GRAMMAR
+REFERENCE, la partie qui borne ce qu'on a le droit de tester, s'est révélé fidèle à 100 %**, exemples
+et tableau TIMELINE compris.
+
+Ce que la vérification a établi, et qui vaut d'être su :
+
+- **les six accusations du §6.2 contre la KEY du guide sont toutes FONDÉES**, vérifiées une par une
+  contre la source — mais une **septième, inventée** (un couple « E – c » attribué à la Lesson 7 de
+  l'Unit 2 alors qu'il appartient à la Session Arts 3), a été trouvée et retirée. C'est le type
+  d'erreur que la R-7 existe pour attraper : une fausse charge contre la source, qui aurait été crue
+  et propagée dans chaque chapitre généré ;
+- **aucun `[sic]` n'est un faux positif** : les ~50 marqueurs vérifiables correspondent tous à une
+  coquille réelle du manuel ou du guide. Aucune coquille n'a été corrigée en silence ;
+- les **bandeaux de *skills blend***, que le §6.4 désignait comme le point le plus fragile parce
+  qu'ils reposent sur des rendus image et non sur l'extraction, sont **confirmés 14/14** ;
+- **R-2** : quatre passages reproduisaient des vers ou des phrases sous une bannière affirmant le
+  contraire — dont un d'une œuvre **réellement sous droits** (*A Secret for Two*, Quentin Reynolds,
+  mort en 1965). Tous remplacés par une description ;
+- deux vérificateurs se sont contredits sur la virgule de « CREATIVE, INVENTIVE MINDS » au sommaire
+  p.6 ; arbitré sur rendu image : **la virgule est imprimée**.
+
+Le statut reste **`partielle`** : 22 pages demeurent non lues, et la promotion est réservée à l'humain.
+
 
 ### 6.1 Sources absentes du corpus (bornes de la fiche)
 
@@ -8217,7 +8254,7 @@ priorité lors de la R-7.
 3. **Les 10 sessions Arts ne sont codifiées qu'au manifeste `bac-lettres`, en `optional: true`**, et
    se restreindront côté contenu par `gradeSlugs`. C'est une correction assumée du cadrage initial de
    la campagne, qui prévoyait « six manifestes, même chapitrage » : le manuel réserve explicitement
-   ces sessions aux Arts students (préface p.2, guide p.5), et les servir aux six sections aurait
+   ces sessions aux Arts students (préface p.3, guide p.5), et les servir aux six sections aurait
    donné à cinq d'entre elles 10 chapitres hors programme. `optional: true` parce que la filière
    Lettres n'est pas traitée pour elle-même dans ce lot : les écrire ne sera jamais « hors-programme »,
    et leur absence n'est jamais comptée comme un trou.
