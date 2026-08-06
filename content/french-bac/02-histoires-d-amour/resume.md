@@ -7,7 +7,7 @@
 - **Dénotation** = le sens premier et stable, celui du dictionnaire. **Connotation** = les valeurs affectives qui s'y ajoutent. Objectif ne veut pas dire vrai, et subjectif ne veut pas dire faux.
 - **Symbolique des couleurs** : vert = nature, hygiène, espoir · bleu = pureté, fraîcheur · rouge = vie, force, passion, mais aussi sang et violence · noir et or = luxe.
 - **L'anaphore** répète un mot ou un groupe de mots **en tête** de phrases, de vers ou de strophes ; elle crée un effet d'**insistance et de persuasion**. **La chute** est une fin inattendue, en décalage, qui crée la surprise. **L'infinitif substantivé** : précédé de l'article, un infinitif devient un nom (_le boire, le savoir-faire, le paraître_).
-- **Une sensation** est une perception physique ressentie par l'un des cinq sens : goût, odorat, ouïe, toucher, vue.
+- **Une sensation** est une perception physique ressentie par l'un des cinq sens (goût, odorat, ouïe, toucher, vue) ; un **sentiment** est un état affectif stable et durable qui en résulte. Le froid est une sensation, la peur un sentiment.
 - **Répondre à une question de compréhension** suppose trois choses : avoir compris le texte, avoir compris la question, et **ne pas se contenter de recopier** les phrases du texte.
 - **L'exposé** : exposer en une durée déterminée, devant un auditoire, un point de vue ou des informations — message **intelligible** et éventuellement **persuasif**. Trois types : **informatif**, **explicatif**, **persuasif**.
 - **Le langage dramatique** : la pièce se divise en **actes** puis en **scènes** ; deux composantes — les **didascalies** (indications scéniques) et les paroles des personnages ; les dialogues sont faits de **répliques**, et une réplique longue est une **tirade**.

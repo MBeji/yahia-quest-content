@@ -2,7 +2,7 @@
 
 - **La comparaison** rapproche deux éléments à l'aide d'un **outil comparatif** : _comme, ainsi que, semblable à, pareil à, ressembler_. Trois éléments en jeu — le **comparé**, le **comparant**, l'**outil** qui les relie (« Et moi, je suis **semblable à** la feuille flétrie », Lamartine).
 - **La métaphore** est une comparaison **où l'on a supprimé le terme comparatif**. Retirer l'outil supprime la distance : on ne dit plus que A ressemble à B, on dit que A **est** B.
-- **La métaphore filée** : la métaphore se développe dans une **série d'images complémentaires**, poursuivie sur plusieurs vers ou plusieurs phrases.
+- **La métaphore filée** : la métaphore se développe dans une **série d'images complémentaires**, — c'est le nombre d'images qui compte, jamais le nombre de phrases.
 - **Le test** : outil comparatif présent ⇒ comparaison · absent alors qu'un rapprochement est fait ⇒ métaphore · aucun rapprochement ⇒ ni l'une ni l'autre (un adjectif seul n'est pas une image).
 - **L'ironie** consiste à **dire le contraire de ce que l'on pense**. Elle vise le rire **mais aussi la révolte**, ridiculise les cibles et instaure une **complicité** avec le lecteur — lequel **ne doit pas lire naïvement**, sous peine de comprendre l'inverse. Exemple du manuel : Voltaire dans _Candide_, « Rien n'était si beau, si leste, si brillant, si bien ordonné que les deux armées. »
 - **La nominalisation** transforme une phrase en **groupe nominal** : _la presse est libre_ → **la liberté de la presse**. Deux procédés — par **suffixe** (_la guerre est bête_ → la bêt**ise** de la guerre) ou par **effacement de la terminaison verbale** (_il faut porter un badge_ → le **port** du badge).

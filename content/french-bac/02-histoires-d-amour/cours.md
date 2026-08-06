@@ -22,7 +22,7 @@ L'**énoncé**, c'est le texte produit. L'**énonciation**, ce sont « les condi
 
 > « Le temps, le lieu, les circonstances de production d'un énoncé forment la **situation d'énonciation**. L'énonciation est la production d'un énoncé dans un contexte précis. »
 
-Entre les deux, soixante-trois ans d'écart. C'est tout l'intérêt de la distinction : un poème du souvenir se écrit longtemps après ce qu'il raconte.
+Entre les deux, soixante-trois ans d'écart. C'est tout l'intérêt de la distinction : un poème du souvenir s'écrit longtemps après ce qu'il raconte.
 
 ## 🔮 La caractérisation : décrire objectivement ou subjectivement
 
@@ -55,7 +55,7 @@ C'est le même mécanisme dans les images. Le manuel donne une **symbolique des 
 
 Et un procédé de clôture, **la chute** : une fin inattendue, en décalage avec ce qui précède, qui crée un effet de surprise et oblige à relire.
 
-Enfin, une **sensation** est une « perception physique ressentie par l'un des cinq sens (goût, odorat, ouïe, toucher, vue) » — l'outil de base de toute description qui cherche à faire éprouver.
+Enfin, le manuel oppose deux mots qu'on confond. Une **sensation** est une « perception physique ressentie par l'un des cinq sens (goût, odorat, ouïe, toucher, vue) » ; un **sentiment** est un « état affectif stable et durable résultant de sensations, d'impressions, d'émotions… ». Le froid, le tremblement, la chaleur sont des sensations ; l'amour, la colère, le désespoir sont des sentiments. La sensation est l'outil de base de toute description qui cherche à faire éprouver.
 
 ## 🛡️ L'écrit : répondre à une question de compréhension
 

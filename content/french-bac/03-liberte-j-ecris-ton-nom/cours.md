@@ -16,9 +16,9 @@ Trois éléments sont donc en jeu : le **comparé** (moi), le **comparant** (la 
 
 Retirer l'outil ne retire pas seulement un mot : cela supprime la distance. On ne dit plus que l'Afrique *ressemble* à cet arbre, on dit qu'elle *est* cet arbre.
 
-> 🗡️ Le test est mécanique : cherche l'outil comparatif. Présent ⇒ comparaison. Absent, alors qu'un rapprochement est bien fait ⇒ métaphore. Et si aucun rapprochement n'est fait, il n'y a ni l'une ni l'autre — un simple adjectif n'est pas une image.
+> 🗡️ Le test se fait en **deux temps**. D'abord : les deux éléments rapprochés sont-ils de **nature différente** ? _Cette loi est plus sévère que la précédente_ met en regard deux lois — c'est un comparatif de supériorité, il mesure un degré, il ne crée pas d'image. Ensuite seulement, cherche l'outil comparatif : présent ⇒ comparaison ; absent, alors que le rapprochement est bien fait ⇒ métaphore. Et si aucun rapprochement n'est fait, il n'y a ni l'une ni l'autre — un simple adjectif n'est pas une image.
 
-**La métaphore filée** : « Lorsque la métaphore se développe dans une **série d'images complémentaires**, on parle de métaphore filée. » Une seule image, poursuivie et déclinée sur plusieurs vers ou plusieurs phrases.
+**La métaphore filée** : « Lorsque la métaphore se développe dans une **série d'images complémentaires**, on parle de métaphore filée. » Une seule et même image, prolongée par plusieurs mots de son réseau : ce qui compte est le **nombre d'images**, jamais le nombre de phrases — une métaphore filée peut tenir dans une seule. Le manuel renvoie à la première strophe du _Lac_ de Lamartine, déjà lue au module 1.
 
 ## 🔮 L'ironie
 
