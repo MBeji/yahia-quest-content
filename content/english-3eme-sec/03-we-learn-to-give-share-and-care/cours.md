@@ -57,7 +57,8 @@ Put a hyphen between two words in front of a noun and you have built an adjectiv
 | adverb + past participle     | a **well-run** charity         | a charity that somebody runs well                 |
 | adverb + **-ing**            | **ever-increasing** costs      | costs that never stop rising                      |
 | a whole phrase               | **state-of-the-art** equipment | equipment as modern as anything that exists       |
-| adjective + **-ing**         | **hard-working** volunteers    | volunteers who work hard                          |
+| noun + past participle       | a **snow-covered** village     | a village that snow has covered                   |
+| number + noun + **-old**     | an **18-year-old** volunteer   | a volunteer who is 18 years old                   |
 
 > ⚠️ Inside a compound adjective the first word **never takes the plural -s**: "a funds-raising dinner" ✗ → _a **fund-raising** dinner_ ✓. And the hyphen belongs to the adjective in front of its noun: once nothing follows, it goes — _the costs are ever increasing._
 
@@ -85,7 +86,9 @@ Three conditions, and the mark depends on all three:
 
 ## 🆘 need — an ordinary full verb, and the one the speech insists on
 
-*need* behaves like any other full verb, and that is the whole rule.
+*need* behaves like any other full verb, and that is the form the whole module uses.
+
+> 🗡️ English also has a **modal** *need*, used almost only in the negative: **needn't** = there is no necessity — _You **needn't** send it by air_ — and **needn't have + past participle** for something done that turned out unnecessary — _You **needn't have made** such a big cake._ The book's grammar summary pairs the two (p.211); this module practises only the full verb.
 
 | You want to say         | Structure                    | Example                                          |
 | ----------------------- | ---------------------------- | ------------------------------------------------ |
@@ -138,11 +141,11 @@ The negative says the opposite — the thing **did** happen, and it was wrong: _
 | _You **should give** blood._                | now, the future | advice: it is the right thing to do              |
 | _You **should have given** blood in April._ | the past        | it was the right thing, and you did not do it    |
 
-> ⚠️ The participle is compulsory: "should have go" ✗ → _should have **gone**_ ✓. And never read this structure as a report: *should have* never says the thing happened.
+> ⚠️ The participle is compulsory: "should have go" ✗ → _should have **gone**_ ✓. And in this module, never read this structure as a report: here *should have* names what did **not** happen, and the sentence around it always says so. (Elsewhere the same form can carry an expectation — _The train **should have arrived** by now_ — so it is the context, never the form alone, that tells you which of the two you are reading.)
 
 ## 🕰️ The present perfect against the simple past
 
-This is the table of the year. Learn it once, properly, and half the language exercises of the programme fall on their own.
+This is the table of the year. Learn it once, properly, and half the language exercises of the programme solve themselves.
 
 |             | Present perfect                                     | Simple past                                  |
 | ----------- | --------------------------------------------------- | -------------------------------------------- |
@@ -194,7 +197,7 @@ This is the table of the year. Learn it once, properly, and half the language ex
 **since and for** — the pair that decides the hardest questions.
 
 - **since** gives the **point where the period begins**; **for** gives **how long it lasts**: _since 2014_ · _for nine years_.
-- Both open a period that reaches today, so the main verb is a **present perfect**: _The centre **has kept** its doors open **since** 2014._ · _… **for** nine years._
+- **since** always opens a period that is still running, so its verb is a **present perfect**: _The centre **has kept** its doors open **since** 2014._ **for** only measures a length, and it is the tense that decides whether that length reaches today: _… **for** nine years_ (and it is still open) against _It **stayed** open **for** nine years_ (and then it closed).
 - When *since* introduces a **clause**, that clause takes the **simple past** while the main verb stays in the present perfect: _She **has volunteered** at the shelter **since she left** school._
 
 > ⚠️ **The trap of this module, and it is worth naming.** A sentence such as _She **has done** so **since she was five**_ is a **present perfect**, whatever the past form *was* in the second half suggests. Read the **main** verb: *has* + *done*. The past form after *since* only marks where an open period begins. Two errors follow from misreading it: "She does so since she was five" ✗ and "She did so since she was five" ✗ → _She **has done** so since she was five_ ✓.
