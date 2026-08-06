@@ -9502,6 +9502,30 @@ C'est la seule inférence de toute la fiche, et elle est bornée à une page.
   qui séparent explicitement `Common core:` et `Arts:`. Les trois signaux concordent sur **toutes** les
   frontières retenues au §4. Reste que le rose lui-même n'a pas été vu : si un item **isolé** du tronc
   commun était imprimé en rose, il ne serait pas détecté.
+
+  ⚠️ **Et c'est exactement ce qui se produit dans la colonne « Grammar » du Book map** (manuel p.4-6),
+  découvert le 2026-08-06 en générant le chapitre 05. Le Book map liste, **pour un même module et sans
+  les distinguer**, la grammaire du tronc commun **et** celle du supplément Arts — la seule marque était
+  le rose, et il ne survit pas à l'extraction. **Le Book map n'est donc PAS une source fiable de
+  périmètre.** Le discriminant qui, lui, est fiable, c'est le **« Scope and sequence » du guide, section
+  par section** : ses sections Arts sont **nommées** (« Arts. Section One », « Arts. Section Two »).
+
+  Relevé par vérification systématique des quatre modules transcrits :
+
+  | module | grammaire réellement **tronc commun** (guide, sections One→Five) | grammaire en réalité **Arts** |
+  | ------ | ---------------------------------------------------------------- | ----------------------------- |
+  | One    | `If + present → present` · `want + objet + to-infinitif` · `make/let/have + objet + base` | **word-building (affixation)** — guide p.20 |
+  | Two    | noms d'agent `-er/-or/-ist` · adjectifs composés · `should + perfect infinitive` · present perfect vs simple past · forme emphatique · `need` · phrasal verbs · discourse markers | — |
+  | Three  | comparatifs et superlatifs · prépositions · past perfect vs simple past · questions WH · linkers | **`might / could` + infinitif nu** (guide p.43) · **la voix passive** (guide p.44) |
+  | Four   | préfixes de négation · formation des mots · adjectifs composés · modaux (`may, can, must, should, ought to, had better`) | `can, may, should, will…` (guide p.54) |
+
+  **Conséquence pour la génération** : ne jamais dériver le périmètre grammatical d'un chapitre du
+  Book map seul. Deux notions ont failli être enseignées hors périmètre pour cette raison — `might /
+  could` et le passif au chapitre 05, écartées par leur auteur qui a préféré signaler la contradiction
+  du brief plutôt que la résoudre en silence. Nuance à garder en tête : une notion « Arts » dans un
+  module donné peut être **par ailleurs** au tronc commun de l'année — la formation des mots est Arts
+  au module One, mais elle est bien au tronc commun du Review Module, du module Two, du module Four et
+  des deux Consolidations. Ce qui se juge, c'est **où le module l'enseigne**, pas le mot seul.
 - **Les symboles phonétiques** (manuel p.216) : rendus en caractères de substitution (`^`, `ae`, `Ω`,
   `1`, `:e`…). Seuls les **mots-clés** sont fiables. Toute génération affichant un symbole API doit le
   prendre ailleurs.
