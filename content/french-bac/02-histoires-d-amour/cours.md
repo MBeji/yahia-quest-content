@@ -14,6 +14,16 @@ Un texte n'est presque jamais du récit pur ou du discours pur. Le manuel décri
 
 > 🗡️ Le test : demande-toi ce qui **encadre** et ce qui est **inséré**. Une démonstration qui s'interrompt pour un exemple vécu ⇒ récit dans le discours. Une histoire qui s'interrompt pour une explication du narrateur ⇒ discours dans le récit.
 
+Encore faut-il **reconnaître** les deux régimes. Le manuel en donne quatre critères.
+
+| | **Récit** | **Discours** |
+| --- | --- | --- |
+| Temps dominants | passé simple et présent de narration ; imparfait indiquant la répétition | présent et passé composé |
+| Pronoms personnels | la 3ème personne domine ; en cas de récit à la première personne, le « je » réfère à un **narrateur** qu'il ne faut pas confondre avec l'auteur | la 1ère et la 2ème personnes, qui révèlent une **relation directe** entre l'émetteur et le récepteur |
+| Indicateurs de lieu et de temps | à comprendre par rapport aux événements entre eux : lieux et moments **internes à l'histoire** | à comprendre par rapport à la **situation d'énonciation** : le présent de celui qui parle, le lieu qu'il occupe |
+| Révélateurs de l'implication de l'émetteur | absents, l'émetteur s'efface | présents : il prend position quant à la vérité ou à la certitude de son propre énoncé |
+
+
 ## ⚡ Énoncé et énonciation
 
 Distinction discrète et redoutable à l'examen.
@@ -59,7 +69,9 @@ Enfin, le manuel oppose deux mots qu'on confond. Une **sensation** est une « pe
 
 ## 🛡️ L'écrit : répondre à une question de compréhension
 
-Le module précise ce que le module 1 avait ouvert. « Répondre à une question de compréhension suppose : qu'on a **bien compris le texte** ; qu'on a **bien compris la question** ; qu'on **ne se contente pas de recopier les phrases du texte**. »
+Le manuel distingue d'abord **deux grands types de questions**. La **question de repérage** porte sur un contenu **explicite** : la réponse est dans le texte, il suffit de la retrouver et de la reformuler. La **question d'interprétation** porte sur un contenu **implicite**, « qu'il faut dégager en interprétant des éléments textuels ». Sur la phrase de Tourgueniev « Mon fusil glissa dans l'herbe ; j'avais tout oublié », demander _que fait le personnage ?_ est du repérage ; demander _quel sentiment l'envahit ?_ est de l'interprétation.
+
+Le module précise ensuite ce que le module 1 avait ouvert. « Répondre à une question de compréhension suppose : qu'on a **bien compris le texte** ; qu'on a **bien compris la question** ; qu'on **ne se contente pas de recopier les phrases du texte**. »
 
 Cette troisième exigence est celle qui coûte le plus de points : recopier n'est pas répondre.
 
