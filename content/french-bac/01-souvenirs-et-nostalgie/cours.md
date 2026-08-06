@@ -34,6 +34,8 @@ Entre _il a dit_ et _il a avoué_, les paroles rapportées sont les mêmes ; le 
 
 C'est la règle qui fait échouer le plus de copies. **Lorsque le verbe introducteur est au passé**, les temps des verbes du discours indirect suivent la **concordance des temps** ; **les adverbes et les expressions de temps et de lieu subissent également des transformations**.
 
+_Le manuel énonce la règle sans la détailler : ce tableau en donne l'application standard, supposée acquise depuis les classes antérieures._
+
 | Au discours direct | Au discours indirect (verbe introducteur au **passé**) |
 | ------------------ | -------------------------------------------------------- |
 | présent            | **imparfait**                                              |
