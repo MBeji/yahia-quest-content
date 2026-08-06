@@ -96,9 +96,11 @@ Here are the eighteen of this lesson. Learn them in families rather than one by 
 | liking and disliking  | enjoy, dislike, mind, miss                 | _Would you **mind closing** the door?_                       |
 | saying                | admit, deny, suggest                       | _He **denied knowing** the price of the ticket._             |
 | thinking              | consider, imagine, regret                  | _They are **considering selling** the shuttle._              |
-| time                  | postpone, delay, finish, stop              | _They have **postponed opening** the new spaceport._         |
+| time                  | postpone, delay, finish, **stop**\*        | _They have **postponed opening** the new spaceport._         |
 | keeping away from     | avoid, risk                                | _She **avoided answering** the journalist._                  |
 | doing                 | involve, practise                          | _The trip **involves crossing** two deserts._                |
+
+> \* _stop_ accepts _to_ + infinitive as well — but then it tells a different story altogether. That is the trap of the lesson, two sections below.
 
 Eight of them are worth a line of their own, because their meaning decides which one you need.
 
@@ -113,7 +115,7 @@ Eight of them are worth a line of their own, because their meaning decides which
 
 > ⚠️ **suggest** is the great trap of the list. "They suggested to visit the spaceport" ✗ — in English, _suggest_ takes the -ing form and nothing else: _suggested visiting_ ✓. The same goes for _avoid_, _deny_ and _mind_.
 
-> 🗡️ A **preposition** obeys the same law: after _in_, _of_, _before_, _without_ and their friends, a verb wears -ing. _interested **in flying**_ · _instead **of paying**_ · _without **saying** a word_.
+> 🗡️ A **preposition** obeys the same law: after _in_, _of_, _at_, _before_, _without_ and their friends, a verb wears -ing. _interested **in flying**_ · _instead **of paying**_ · _good **at listening**_ · _without **saying** a word_. Notice that the adjective brings its own preposition with it — _interested **in**_, _good **at**_ — and that preposition can never be traded for a bare _to_.
 
 ## 🔀 Verbs that accept both forms
 
@@ -130,7 +132,7 @@ With these, choosing one form or the other is a matter of style, not of meaning.
 
 ## ⛔ The trap of the lesson — `stop + -ing` against `stop + to`
 
-**Stop** belongs to neither group. It accepts both forms, and the two sentences tell **opposite stories**.
+**Stop** is the verb the asterisk warned you about. Like the verbs just above, it accepts both forms — but unlike them, the two sentences tell **opposite stories**.
 
 | Sentence                                  | What the -ing / the _to_ does        | What happened                                             |
 | ----------------------------------------- | ------------------------------------ | --------------------------------------------------------- |
@@ -157,16 +159,16 @@ A **prefix** is a small piece added in **front** of a word to change its meaning
 | **in-**   | inaccurate, ineffective          | on many adjectives of Latin origin                   |
 | **im-**   | impatient, immature, imperfect   | before **m**, **p**, **b**                           |
 | **il-**   | illogical, illegal, illiterate   | before **l**                                         |
-| **ir-**   | irregular, irresistible          | before **r**                                         |
-| **dis-**  | dishonest, disobey, discontinue  | often on **verbs** — it undoes the action            |
+| **ir-**   | irregular, irresponsible         | before **r**                                         |
+| **dis-**  | disobey, discontinue, dishonest  | often on **verbs** (it undoes the action), sometimes on adjectives |
 | **ab-**   | abnormal                         | away from what is normal                             |
 | **non-**  | non-living, non-smoker, non-violent | absence, not opposite — a neutral word            |
 
 Three things to hold on to.
 
-**First, a real rule exists — but it covers only three of them.** `il-`, `im-` and `ir-` are the same prefix as `in-`, and it is the **first letter of the word** that chooses the spelling: **l** calls `il-`, **r** calls `ir-`, and **m**, **p** or **b** call `im-`. Nothing is dropped when they meet, which is why the word ends up with a double letter: _ir_ + _responsible_ = **irresponsible**, _il_ + _logical_ = **illogical**, _im_ + _possible_ = **impossible**.
+**First, a real rule exists — but it covers only three of them.** `il-`, `im-` and `ir-` are the same prefix as `in-`, and it is the **first letter of the word** that chooses the spelling: **l** calls `il-`, **r** calls `ir-`, and **m**, **p** or **b** call `im-`. Nothing is dropped when they meet, which is why the word ends up with a double letter: _ir_ + _responsible_ = **irresponsible**, _il_ + _logical_ = **illogical**, _im_ + _mature_ = **immature**. The double letter only appears when the word begins with the very letter the prefix ends in — _im_ + _possible_ gives **impossible**, with no double at all, because _possible_ begins with a **p** and not with an **m**.
 
-**Second, between `un-` and `in-` there is no rule at all.** Each word keeps the prefix it has always had, and the ear is a bad guide: **unclear** but **inexpensive**, **unpleasant** but **inconvenient**, **unfit** but **ineffective**. When you hesitate, the dictionary decides.
+**Second, between `un-` and `in-` there is no rule at all.** Each word keeps the prefix it has always had, and the ear is a bad guide: **unclear** but **inexpensive**, **unpleasant** but **inconvenient**, **unfit** but **ineffective**. When you hesitate, the dictionary decides. One thing helps when no dictionary is at hand: `in-`, `il-`, `im-` and `ir-` are a closed list that stopped growing centuries ago, while `un-` and `non-` are the two English still uses to build new words today — so in front of an adjective you have never met, `un-` is the safer bet. A bet it stays.
 
 **Third, a prefix is not only for adjectives.** It goes on a **verb** (_obey_ → **disobey**, _continue_ → **discontinue**), on a **noun** (_balance_ → **imbalance**, _smoker_ → **non-smoker**) and on a participle used as an adjective (_paid_ → **unpaid**, _planned_ → **unplanned**, _inhabited_ → **uninhabited**).
 

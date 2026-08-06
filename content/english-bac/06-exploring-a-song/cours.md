@@ -107,7 +107,7 @@ Then each modal does its own work:
 | **must**    | obligation, necessity              | We **must** leave now to hear the first song.        |
 | **mustn't** | prohibition                        | You **mustn't** use a flash in the hall.             |
 
-> ⚠️ **mustn't never means "it isn't necessary".** _You mustn't shout_ **forbids** you to shout. When shouting is merely unnecessary, English says _You **don't have to** shout, I can hear you._ Turning a ban into a "no need" is the mistake of this lesson.
+> ⚠️ **mustn't never means "it isn't necessary".** _You mustn't shout_ **forbids** you to shout. When shouting is merely unnecessary, English says _You **don't have to** shout, I can hear you._ Turning a ban into a "no need" is the mistake of this lesson. In the affirmative, on the other hand, **have to** simply says what **must** says: _Every singer **has to** warm up before a concert_ = _Every singer **must** warm up before a concert._ The two only part company in the negative.
 
 > 🗡️ One rule, two ways of writing it. An **obligation** turns into a **prohibition** provided you forbid the **opposite** action: _You **must** show your ticket at the door_ = _You **mustn't** go in without your ticket._ Check the turn by asking what actually gets banned.
 
@@ -118,22 +118,23 @@ Put together, they make a role play — here, the box office of a concert hall:
 > — Fine. **Can** we choose our seats?
 > — Not tonight, I'm afraid. And you **mustn't** bring any drinks into the hall.
 
-## 🔊 Minimal pairs, and two vowels
+## 🔊 Minimal pairs, and sorting two vowels
 
 > Two words make a **minimal pair** when **one single sound** separates them and everything else is identical: _them_ / _then_ · _faith_ / _fate_ · _love_ / _luck_ · _storm_ / _store_.
 
 That one sound carries the whole meaning, so the ear gets no second chance — which is exactly why a listening exercise puts such pairs side by side and asks you to circle the one you heard.
 
-> ⚠️ Words that merely **sound close** are not minimal pairs. _history_ / _memory_ differ from their very first sound; _destination_ / _destiny_ part company after _desti-_; _may_ / _might_ change the vowel **and** add a final sound. Count the differences before you use the term.
+> ⚠️ Words that merely **sound close** are not minimal pairs. _history_ / _memory_ differ from their very first sound; _destination_ / _destiny_ part company after _desti-_; _may_ / _might_ change the vowel **and** add a final sound. And **no** difference at all disqualifies just as surely as two: _write_ and _right_ sound exactly alike, so they are **homophones**, not a minimal pair. Count the differences before you use the term — exactly one, or the term does not apply.
 
-The two vowels the lesson sorts are `[ou]` as in **home** (the dictionaries write /əʊ/) and `[ei]` as in **name** (/eɪ/). Neither has one spelling — that is the whole difficulty.
+The sort this lesson asks for has two columns: `[ou]` as in **home** (the dictionaries write /əʊ/) against `[ei]` as in **name** (/eɪ/). `[ei]` you already own — it is the vowel of _Space Tourism_, with all the spellings you met there. What this lesson adds is the **other** column, and the ear that keeps the two apart.
 
-| Sound                | Usual spellings   | Words                                                       |
-| -------------------- | ----------------- | ----------------------------------------------------------- |
-| `[ou]` as in **home** | o · oa · ow · o…e | s**o**, **o**nly, w**o**n't, r**oa**d, gr**ow**, foll**ow**, h**o**pe, s**ou**l |
-| `[ei]` as in **name** | a…e · ai · ay · ei | f**a**te, m**a**kes, f**ai**th, w**ai**t, s**ay**, m**ay**, **ei**ght, w**ei**gh |
+| Sound                 | Usual spellings        | Words                                                                           |
+| --------------------- | ---------------------- | ------------------------------------------------------------------------------- |
+| `[ou]` as in **home** | o · oa · ow · o…e · ou | s**o**, **o**nly, w**o**n't, r**oa**d, gr**ow**, foll**ow**, h**o**pe, s**ou**l |
 
-> ⚠️ The letters lie twice here. **ow** is `[ou]` in _grow_ and _follow_, but /aʊ/ in _now_, _how_, _down_. And **ea** goes three ways: /iː/ in _sea_ and _dream_, `[ei]` in _great_, _break_ and _steak_, and the short /e/ of _red_ in _bread_ and _head_. Read the letters as a **group**, never one by one — and when a group can go several ways, learn the word, not the rule.
+Sort the words of the song and the sort teaches itself: _so, grow, only, follow, road, won't_ on the `[ou]` side — _faith, makes, say_ on the `[ei]` side.
+
+> ⚠️ Three of these spellings lie. **ow** is `[ou]` in _grow_ and _follow_, but /aʊ/ in _now_, _how_, _down_. **o…e** is `[ou]` in _home_, _hope_ and _alone_, but /ʌ/ in _love_, _come_, _done_, and /uː/ in _prove_, _move_, _lose_. And **ou** is `[ou]` in _soul_ and _shoulder_, but /aʊ/ in _loud_, _round_, _about_. Read the letters as a **group**, never one by one — and when a group can go several ways, learn the word, not the rule.
 
 Last exercise of the ear: **same sound or different?** _through_ – _choose_ (**same**, /uː/) · _journey_ – _eternity_ (**same**, the vowel of _her_) · _wind_ – _wild_ (**different**) · _vision_ – _joker_ (**different**).
 

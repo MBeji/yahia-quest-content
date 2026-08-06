@@ -73,11 +73,13 @@ That welded word is a **compound adjective**. It says exactly the same thing in 
 | ----------------------------- | ----------------------------- | ------------------------------------------ |
 | noun + past participle        | a **science-inspired** gift   | a gift inspired by science                 |
 | noun + past participle        | **stone-walled** streets      | streets walled with stone                  |
-| adverb + past participle      | **naturally-produced** silk   | silk produced naturally                    |
+| adverb + past participle      | **naturally produced** silk (no hyphen) | silk produced naturally          |
 | adjective + noun + **-ed**    | **bright-coloured** umbrellas | umbrellas with bright colours              |
 | noun + **-ing** form          | an **elephant-training** centre | a centre for training elephants          |
 | number + noun (singular!)     | a **200-page** book           | a book of two hundred pages                |
-| number + noun + adjective     | a **one million-year-old** tree | a tree that is one million years old     |
+| number + noun + adjective     | a **one-hundred-year-old** tree | a tree that is one hundred years old     |
+
+> ⚠️ **Every part of the chain is hyphenated, the number included.** _a one-hundred-year-old tree_, _a twenty-five-metre pool_. Your textbook prints _a one million-year-old teak tree_ with the first hyphen missing; the full chain is the safe form to write.
 
 The official pattern of this lesson is the first one: **noun + past participle**, as in _science-inspired_.
 
@@ -85,7 +87,9 @@ Three rules hold the whole family together:
 
 1. **The hyphen joins the parts.** Without it the reader meets two separate words and stumbles.
 2. **The noun inside never takes -s.** _a six-**hour** flight_, _a four-**door** car_, _a 30-**dinar** bank note_ — even though the flight lasts six hours and the note is worth thirty dinars.
-3. **The compound stands before its noun.** After the verb _be_ you must unpack it again: _The flight lasts six hours._ ✓ — "The flight is six-hour." ✗
+3. **A compound of measurement only works in front of its noun.** _a six-hour flight_, _a 200-page book_, _a one-hundred-year-old tree_ — after the verb _be_ you must unpack them: _The flight lasts six hours._ ✓ — "The flight is six-hour." ✗ A compound that describes a **quality**, on the other hand, stays whole after _be_: _The film **is** thought-provoking._ ✓ _The umbrellas **are** bright-coloured._ ✓
+
+> ⚠️ **An adverb in -ly takes no hyphen.** _naturally produced silk_, _freshly painted walls_, _highly praised film_ — the _-ly_ already tells the reader that the word belongs to the participle, so the hyphen has no work left to do. Your textbook prints _naturally-produced_; write it without the hyphen.
 
 And you must be able to play the game in **both directions**:
 
@@ -144,12 +148,12 @@ Every English word of two syllables or more has **one** syllable said louder, lo
 | Rule                                            | Examples                                                       |
 | ----------------------------------------------- | -------------------------------------------------------------- |
 | **-ion** → stress the syllable just **before** it | ex-hi-**BI**-tion · dis-**CUS**-sion · in-spi-**RA**-tion       |
-| **-ic** → stress the syllable just **before** it  | dra-**MA**-tic · ar-**TIS**-tic · **MU**-sic                    |
+| **-ic** → stress the syllable just **before** it  | dra-**MA**-tic · ar-**TIS**-tic · en-thu-si-**AS**-tic          |
 | **-ity** → stress the syllable just **before** it | ac-**TIV**-i-ty · pop-u-**LAR**-i-ty                            |
 | **compound noun** → stress the **first** word     | **FILM** director · **SCRIPT** writer · **BOX** office · **TICKET** office |
 | **noun / verb pairs** → noun first, verb second   | a **RE**-cord / to re-**CORD** · a **PRE**-sent / to pre-**SENT** |
 
-The words of this lesson, marked: per-**FOR**-mance · re-**FRESH**-ments · in-ter-**AC**-tive · ex-hi-**BI**-tion · **FOY**-er · **CIN**-e-ma · **AU**-di-ence.
+The words of this lesson, marked: per-**FOR**-mance · re-**FRESH**-ments · in-ter-**AC**-tive · ex-hi-**BI**-tion · **FOY**-er (British; Americans say foy-**ER**) · **CIN**-e-ma · **AU**-di-ence.
 
 > ⚠️ In an ordinary adjective + noun phrase the noun keeps the stress (_a free per**FOR**mance_, _a crowded **FOY**er_), but a **compound noun** pulls it forward (_a **TICK**et office_). That is how the ear tells "a **BLACK** bird" (a blackbird, the bird) from "a black **BIRD**" (any bird that is black).
 
@@ -173,7 +177,7 @@ _String_ is a word with several lives. A dictionary lists them in order:
 | a strand of beads on a thread           | _a string of coloured beads_               |
 | the wire of a musical instrument        | _The musician broke a string._             |
 
-Choosing between them is a reading skill: **the sentence around the word decides**, never the word alone. And once you have chosen, ask a second question — is the word **literal** (a real piece of cord, a real wire) or **figurative** (a "string" of shops is not tied to anything)? In the poem the strings are the wires of an instrument, and the music they make stands for something larger.
+Choosing between them is a reading skill: **the sentence around the word decides**, never the word alone. And once you have chosen, ask a second question — is the word **literal** (a real piece of cord, a real wire) or **figurative** (a "string" of shops is not tied to anything)? In the poem the strings are the wires of an instrument, and the music they make stands for something larger. Which makes the answer a double one: the word names a real wire, so the sense is the instrument's string — but the title hangs those strings in the earth and in the air, where no instrument stands, and that makes the use **figurative**.
 
 ### Rhyme scheme
 
@@ -212,7 +216,8 @@ The lesson closes on **Ray Charles**, the American singer and pianist who mixed 
 ## ⚠️ The trap wall
 
 - _a six-**hours** flight_ ✗ → **a six-hour flight** — the noun inside a compound never takes -s.
-- _The flight is six-hour._ ✗ → **The flight lasts six hours.** — unpack the compound after _be_.
+- _The flight is six-hour._ ✗ → **The flight lasts six hours.** — unpack a compound of **measurement** after _be_ (a compound of quality, _thought-provoking_, stays whole).
+- _**naturally-produced** silk_ ✗ → **naturally produced silk** — an adverb in _-ly_ never takes a hyphen.
 - _She has eighteen years._ ✗ → **She is eighteen.** — age takes _be_.
 - _an elephant-**trained** centre_ ✗ → **an elephant-training centre** — the centre trains, it is not trained.
 - _12.30 pm is before 11.30 am_ ✗ — pm is after midday, so 12.30 pm comes half an hour after midday.
