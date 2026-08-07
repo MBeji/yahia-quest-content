@@ -40,7 +40,7 @@ Section One opens with a general-knowledge quiz, and the answer key behind it is
 | the computer hard disc                      | —                       | **1956** |
 | the laser                                   | Gordon Gould            | **1958** |
 | the compact disk                            | James Russel            | **1965** |
-| the first man-made satellite orbiting the moon | —                    | **1968** |
+| the first man-made satellite orbiting the moon | —                    | **1968** _(see the note below)_ |
 | cellular phones                             | —                       | **1979** |
 | the hepatitis-B vaccine                     | —                       | **1980** |
 | disposable contact lenses                   | —                       | **1987** |
@@ -48,7 +48,13 @@ Section One opens with a general-knowledge quiz, and the answer key behind it is
 | the internet protocol (HTTP) and HTML       | Berners Lee             | **1990** |
 | the DVD                                     | —                       | **1995** |
 
-The first **robot** is dated **1921**, and **Microsoft** was **set up by Bill Gates**.
+The first **robot** is dated **1921** in your book, and **Microsoft** was **set up by Bill Gates**.
+
+> 🗡️ Two dates in this table are the book's, and history reads them differently — you will not be
+> tested on either, but it is worth knowing why. A machine reached **lunar orbit in 1966** (Luna 10);
+> **1968** is the year the first *crewed* flight went round the moon. And **1921** is the year the
+> word **robot** was coined, in a play by Karel Čapek — not the year a robot was built. Learning the
+> vocabulary of invention is the point of this table; the exact year is not.
 
 ::: figure Five of the module's landmarks on one line of time — the century between the air conditioner and the DVD
 
