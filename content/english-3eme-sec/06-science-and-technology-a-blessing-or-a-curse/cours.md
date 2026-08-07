@@ -50,11 +50,12 @@ Section One opens with a general-knowledge quiz, and the answer key behind it is
 
 The first **robot** is dated **1921** in your book, and **Microsoft** was **set up by Bill Gates**.
 
-> 🗡️ Two dates in this table are the book's, and history reads them differently — you will not be
-> tested on either, but it is worth knowing why. A machine reached **lunar orbit in 1966** (Luna 10);
-> **1968** is the year the first *crewed* flight went round the moon. And **1921** is the year the
-> word **robot** was coined, in a play by Karel Čapek — not the year a robot was built. Learning the
-> vocabulary of invention is the point of this table; the exact year is not.
+> 🗡️ Two dates in this table are the book's, and history reads them differently. Answer with the
+> book's date if you are asked for one — but know why it is disputed. A machine reached **lunar orbit
+> in 1966** (Luna 10); **1968** is the year the first *crewed* flight went round the moon. And no
+> robot was built in **1921**: that is the year Karel Čapek's play *R.U.R.*, which **coined the word
+> robot**, was first staged — it had been published in **1920**. What this table is for is the
+> **vocabulary of invention** — *discover*, *invent*, *originate*, *set up* — not the exact year.
 
 ::: figure Five of the module's landmarks on one line of time — the century between the air conditioner and the DVD
 
@@ -116,7 +117,9 @@ This is the grammar point the module puts first, and it is worth every minute. E
 **Two prefixes that are not pure negations.** They change the action instead of cancelling it.
 
 - **mis-** says the action was carried out **wrongly or badly**: *misunderstand* is not "not understand", it is to understand the wrong way; *misread*, *misuse*, *misjudge* work the same.
-- **de-** **reverses** an action that had been done: *freeze* → **de**freeze.
+- **de-** **reverses** an action that had been done: *code* → **de**code, *activate* → **de**activate. _(Your grammar summary prints *freeze* → *defreeze*; keep it for the exam, but note that the English for undoing a freeze is **defrost**, **thaw** or **unfreeze** — *defreeze* is in no dictionary.)_
+
+> 🗡️ **Some words only look reversed.** *insert* is to put something **in**, not the opposite of anything; *dismiss* is to reject, not the opposite of "miss"; *inflame* is to make red and swollen, not the opposite of "flame". The test is quick: pull the opening letters off and ask whether what is left means the **opposite** of the whole word. If it does not, there was no prefix there.
 
 > 🗡️ Your book's own observation box puts four words side by side: *abnormal*, *unwanted*, *unethical*, *inestimable*. Three of them carry the prefixes above. The fourth, **abnormal**, carries **ab-**, which is not in the grammar summary's list of eight and means "away from" — away from what is normal. Notice it, keep the word, and do not try to build new words with it.
 
@@ -167,7 +170,7 @@ The listening section is built on genetics, and the book defines its terms befor
 
 Two more come from adjectives instead of verbs: *innocent* → **innocence**, *curious* → **curiosity**.
 
-> 🗡️ *diagnosis*, *choice*, *proof* and *suspicion* are the four to write out by hand. "diagnosement" ✗, "choosal" ✗, "provement" ✗, "suspectation" ✗ — English already has a word for each of them, and inventing an ending is how the mark is lost. Note also that *cure* and *release* are the **same word** as their verb, and that *diagnostic* is an **adjective** in English, never the noun.
+> 🗡️ *diagnosis*, *choice*, *proof* and *suspicion* are the four to write out by hand. "diagnosement" ✗, "choosal" ✗, "provement" ✗, "suspectation" ✗ — English already has a word for each of them, and inventing an ending is how the mark is lost. Note also that *cure* and *release* are the **same word** as their verb, and that *diagnostic* is normally an **adjective** in English — _a diagnostic test_ — and is never the noun built on *diagnose*, which is *diagnosis*.
 
 ## 🔗 Compound adjectives — the shorthand of a science page
 
@@ -221,6 +224,7 @@ Your module works four of them hard, and the grammar summary adds the rest of th
 | **mustn't**  | a **prohibition** — it is not allowed                  | _Technology is good but it **mustn't** fall in the wrong hands._ |
 | **should**   | advice, a recommendation                               | _Researchers **should** publish their failures too._         |
 | **needn't**  | **absence of necessity** — there is no need            | _You **needn't** buy a second charger._                      |
+| **had better** | urgent advice, with a warning behind it              | _You **had better** back up that file._                      |
 
 Three rules hold the whole table up.
 
@@ -239,7 +243,14 @@ Three rules hold the whole table up.
 Your module's pronunciation work is on **stress patterns**, and it sorts the section's expressions into two groups.
 
 - Expressions written as **two separate words** — *gene therapy*, *funeral homes*, *burial services*, *designer babies*, *blood clotting*, *lab dish*, *breast cancer*. The book's answer for this group is that the main stress falls on the **second** word.
-- Compound nouns written as **one block or joined by a hyphen** — *make-up*, *book-case*, *test-tube*. Here the main stress falls on the **first part**, and that is what makes them sound different from the group above.
+- Compound nouns written as **one block or joined by a hyphen** — *make-up*, *book-case*, *test-tube*. Here the main stress falls on the **first part**, and this half is not in dispute.
+
+> ⚠️ Learn the book's answer for the exam, and know why it is worth no more than that. Outside this
+> page, **the two groups behave the same way**: *GENE therapy*, *BLOOD clotting*, *BREAST cancer*,
+> *LAB dish*, *FUneral homes*, *BUrial services* and *deSIGNer babies* all carry their main stress on
+> the **first** word, exactly like *MAKE-up* and *TEST-tube*. The contrast the exercise is built on
+> does not hold in standard English — which is why nothing in this chapter asks you to choose a
+> stress for a two-word expression.
 
 > 🗡️ The test is worth doing out loud with a classmate, which is exactly what the book asks: say the word both ways and let your partner tell you which one sounded like English.
 
@@ -292,8 +303,8 @@ A text that persuades **speaks to the reader and asks for something**: it does n
 
 Two speakers are recorded, one after the other, and neither of them is the book's opinion. You are expected to know both lists.
 
-**For — the first speaker, a professor of reproductive medicine.** Gene therapy can **repair** damaged genes and **replace** missing ones. Used against cancer it **targets only the diseased cells**, avoiding the damage that radiation and chemical treatments do to healthy tissue: a woman whose breast cancer had already spread to major organs was injected with a genetically-engineered drug, her tumours shrank by 25 per cent in a year and had almost disappeared after three. **Germline** gene therapy could cure inherited disorders, and its benefit would be **passed on to later generations**. **Designer babies** could answer the wishes of parents who need a cure for a sick child. **Recombinant DNA** can show whether a suspect is guilty or innocent — four men convicted of a murder they had not committed were released when the evidence proved it — and it can establish the identity of the dead and determine ancestry.
+**For — the first speaker, a professor of reproductive medicine.** Gene therapy can **repair** damaged genes and **replace** missing ones. Used against cancer it **targets only the diseased cells**, avoiding the damage that radiation and chemical treatments do to healthy tissue: a woman whose breast cancer had already spread to major organs was injected with a genetically-engineered drug, her tumours shrank by 25 per cent in a year and had almost disappeared after three. **Germline** gene therapy could cure inherited disorders, including behavioural ones such as schizophrenia, or **insert genes that enhance intelligence or athletic performance**, and its benefit would be **passed on to later generations**. **Designer babies** could answer the wishes of parents who need a cure for a sick child. **Recombinant DNA** can show whether a suspect is guilty or innocent — four men convicted of a murder they had not committed were released when the evidence proved it — and it can establish the identity of the dead and determine ancestry.
 
-**Against — the second speaker, a member of a medical ethics alliance.** Gene therapy has produced **fevers, abnormal blood clotting, partial paralysis and death** during testing: a young man died after a cold virus was inserted into his liver to cure a genetic disease, and his heart, liver and kidneys were harmed instead. There is an **ethical question of access** — will the technology reach people in poor, developing areas, or only rich, developed countries? **DNA testing** has become a **business**: funeral homes and burial services offer to keep samples for a fee, which raises questions of privacy and of ethics — what are the rights of the dead person, who may see the samples, where are they stored? **Designer babies** she calls crazy and unethical: children are of **inestimable value in themselves**, and selecting them for somebody else's benefit is contrary to their dignity. Genetic **disorders** are as much a social construct as a difference in genes — we are all disabled in some respect. And intelligence and athletic performance depend on **upbringing, nutrition, education, experience and healthy living** as much as on the networking of hundreds of genes. Ageing, illness and death are parts of a human biography; trying to eliminate them denies human evolution.
+**Against — the second speaker, a member of a medical ethics alliance.** Gene therapy has produced **fevers, abnormal blood clotting, partial paralysis and death** during testing: a young man died after a cold virus was inserted into his liver to cure a genetic disease, and his heart, liver and kidneys were harmed instead. There is an **ethical question of access** — will the technology reach people in poor, developing areas, or only rich, developed countries? **DNA testing** has consequences nobody asked for: it can tell people who wish to hide their identity **things they never wanted to know**. It has also become a **business**: funeral homes and burial services offer to keep samples for a fee, which raises questions of privacy and of ethics — what are the rights of the dead person, who may see the samples, where are they stored? **Designer babies** she calls crazy and unethical: children are of **inestimable value in themselves**, and selecting them for somebody else's benefit is contrary to their dignity. Genetic **disorders** are as much a social construct as a difference in genes — we are all disabled in some respect. And intelligence and athletic performance depend on **upbringing, nutrition, education, experience and healthy living** as much as on the networking of hundreds of genes. Ageing, illness and death are parts of a human biography; trying to eliminate them denies human evolution.
 
 > 🏆 You can now name what was discovered and what was invented, reverse any word with the right prefix, fold a whole clause into a two-word adjective, forbid something without confusing it with what is merely impossible, and read a science page without being caught by *strain* or by *not mentioned*. Blessing or curse is still your answer to give — but from now on you give it in the module's own language, and that is what an examiner is listening for.
