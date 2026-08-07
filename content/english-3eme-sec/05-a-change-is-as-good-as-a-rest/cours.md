@@ -31,7 +31,7 @@ A holiday is three language jobs in one. Before you leave you **compare** places
 
 **The coast.** A **shoreline** is the line where the land meets the sea; a **bay** is a curve of sea in the land; a **creek** is a narrow inlet; a **cliff** is a high wall of rock; a **reef** lies just under the surface; a **lagoon** is shallow water shut off from the open sea; a **cave** is a hole in the rock; a **harbour** is where boats are safe; a **wreck** is a sunken ship; a **path** is a narrow way for walkers; water is **crystal clear** when you can see the bottom through it.
 
-**How it left you feeling** — before: **excited**, **enthusiastic**, **hopeful**. After, when it went wrong: **disappointed**, **regretful**, **embarrassed**, **nervous**, **fed up** (with). And when a week went badly, it was **spoilt**; you ask the company for **compensation**; a coach that stops working has **broken down**; a **fortnight** is two weeks; to **get rid of** something is to free yourself of it.
+**How it left you feeling** — before: **excited**, **enthusiastic**, **hopeful**, and **nervous**. After, when it went wrong: **disappointed**, **regretful**, **embarrassed**, **fed up** (with) — beside **impressed**, which she was not either. And when a week went badly, it was **spoilt**; you ask the company for **compensation**; a coach that stops working has **broken down**; a **fortnight** is two weeks; to **get rid of** something is to free yourself of it.
 
 ## 📈 Comparing — the comparative and the superlative
 
@@ -175,7 +175,7 @@ Section Four asks you to interview a classmate about a holiday. The whole job is
 | a price or a quantity you cannot count | **how much** | _Ninety dinars._ |
 | a number you can count | **how many** | _Four nights._ |
 
-The shape is **WH word + auxiliary + subject + base verb**: _**When did you** book?_ The one exception is the question whose WH word is itself the subject, and there no *do* is added: _**Who paid** for the trip?_ When you then report your classmate's answer to the class, the rules you reviewed in the Review Module apply unchanged.
+The shape is **WH word + auxiliary + subject + base verb**: _**When did you** book?_ Two shapes escape it. The question whose WH word is itself the **subject** adds no *do*: _**Who paid** for the trip?_ And when the verb is **be**, *be* does the inverting itself — no *do*, and no base verb after it: _**Where was** the hotel?_ · _**How long was** the flight?_ When you then report your classmate's answer to the class, the rules you reviewed in the Review Module apply unchanged.
 
 > 🗡️ An **interview** is not a conversation. One speaker brings prepared questions on one topic and the other answers them; the interviewer does not give her own opinion, and she leaves the other person time to think.
 
@@ -237,11 +237,12 @@ Start from the two pairs that prove the point. **food** and **flood** are writte
 | Box | Key word | The words of this module that go in it |
 | --- | --- | --- |
 | the long one | **moon** | food · through · routine · blue · lagoon |
-| the wide one | **now** | found · south · around · mouth · countryside |
+| the wide one | **now** | found · south · around · mouth |
 | the short one | **book** | wood |
 | the open one | **more** | board |
 | the sliding one | **throw** | boat |
-| the plain one | **bus** | flood |
+| the plain one | **bus** | flood · countryside |
+| the doubled one | **poor** | tour |
 
 Read the table by the key word, never by the letters: *through* has no *oo* at all and still belongs with *moon*; *wood* and *flood* both end in *-ood* and sit two boxes apart; *mouth* and *through* both carry *ou* and share nothing. The spelling never decides the sound — the ear does, and the key word is how you remember which ear.
 

@@ -84,7 +84,7 @@ A text handed to you without a single mark is a test of whether you can hear whe
 - The **apostrophe** marks possession: _his **father's** freedom_.
 - **I** is always a capital, wherever it stands.
 
-> ⚠️ **An important word is not a proper noun.** _He became a seaman and a property owner_ — no capitals: those are ordinary jobs, however impressive. And the word after a comma keeps its small letter; only a full stop opens a capital.
+> ⚠️ **An important word is not a proper noun.** _He became a seaman and a property owner_ — no capitals: those are ordinary jobs, however impressive. And a comma does not open a capital: only the **end of a sentence** does — a full stop, a question mark or an exclamation mark. The exceptions are the ones you already know: a **proper noun**, and the word **I**, keep their capital wherever they stand — _He spent August in Djerba, **T**abarka and **B**izerte._
 
 ## 🧵 Putting a paragraph back together
 
