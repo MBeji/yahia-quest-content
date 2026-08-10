@@ -56,13 +56,24 @@ les quatre **ouverts**. GA4 et PostHog sont câblés et instrumentent un entonno
 personne n'entre par un canal choisi. Le produit est prêt à recevoir des élèves qu'aucun
 mécanisme ne lui envoie. **C'est le goulot du projet, et il n'est traité par aucune étude.**
 
-**(c) Le différenciateur est construit et éteint.** Quatre lots mergés sur `main` — correction
-riche A1.2a/A1.2b, geste « m'entraîner », terme misconception de `get_daily_plan` — sont
-inertes pour cause de **0 tag de misconception sur 22 146 questions** (re-mesuré ce jour,
-inchangé depuis le 2026-07-31). La promesse « la plateforme qui nomme ton erreur et te la fait
-travailler » n'existe aujourd'hui pour **aucun élève**. C'est C4bis dans la ROADMAP §5, déjà
-identifié comme première ligne — cette étude ne le redécouvre pas, elle en tire la conséquence
-de position : **notre argument n°1 n'est pas démontrable en démo.**
+**(c) Le différenciateur est construit et éteint — mais moins loin du but que les docs ne le
+disent.** Quatre lots mergés sur `main` — correction riche A1.2a/A1.2b, geste « m'entraîner »,
+terme misconception de `get_daily_plan` — sont inertes pour cause de **0 occurrence de
+`misconceptionTag` sur 22 146 questions** (mesuré sur disque ce jour). La promesse « la
+plateforme qui nomme ton erreur et te la fait travailler » n'existe donc pour **aucun élève**,
+et **notre argument n°1 n'est pas démontrable en démo** — c'est la conséquence de position que
+cette étude tire, C4bis étant déjà première ligne de la ROADMAP §5.
+
+> ⚠️ **Correction à porter dans STATUS.md et la ROADMAP** (constat du 2026-08-10, à faire par
+> une session de resynchronisation — hors lots de cette étude). Les deux annoncent, à la date du
+> 2026-08-03, « les **5 entrées** du registre, **aucune** ne déclare de `competency` ». C'est
+> **faux depuis le #118** (`78fa302`, « le registre des erreurs de 9ème — étape 0 de C4bis
+> (A11/A12) ») : `content/misconceptions.json` compte **56 entrées sur `main`, et les 56
+> déclarent leur `competency`**. Autrement dit **l'étape 0 de C4bis est faite** — ce qui reste
+> est le **tagging des distracteurs**, moitié mieux définie et plus petite que ce que les deux
+> documents laissent croire. C'est très exactement la règle maison « un statut se constate, il
+> ne se déduit pas » prise en défaut une fois de plus : la première rédaction de cette étude
+> avait recopié le « 5 entrées » des docs avant de mesurer.
 
 **(d) La couverture des classes de concours a un trou nommé.** Mesure par niveau ce jour :
 
@@ -162,7 +173,9 @@ KPI mesurables (tous vérifiables sans instrumentation nouvelle) :
 
 ### 2.3 Les cinq mouvements (M-1 … M-5, ordre = rendement décroissant)
 
-- **M-1 — Allumer ce qui est construit.** C4bis (tagging misconceptions, pilote `math` 9ᵉ).
+- **M-1 — Allumer ce qui est construit.** C4bis, dont **l'étape 0 est déjà faite** (registre à
+  56 erreurs nommées, toutes avec leur `competency`, #118) : ne reste que le **tagging des
+  distracteurs** sur le pilote `math` 9ᵉ (557 questions, déjà taguées en compétences par C4).
   Quatre lots déjà sur `main` s'allument d'un coup. Meilleur ratio valeur/effort du portefeuille,
   et prérequis de P-4. *Propriétaire : ROADMAP §5 C4bis — déjà première ligne, rien à créer.*
 - **M-2 — Le concours comme preuve.** Un parent tunisien ne juge pas sur le plaisir de jeu, il
@@ -250,8 +263,9 @@ positionnement de marque (`go-live/05` S1 est bon et validé, il est **inexécut
 inscrit la position et requalifie des actions déjà écrites. Le lot 2 ne déplace **que** ce que
 Q-2/Q-3/Q-4 ont tranché, et ne modifie **pas** le corps des études é02/é08 (en-tête et rang
 seulement — leur re-scopage est un travail d'architecte, hors lots). Le lot 3 n'ajoute **aucune
-colonne** au tableau des features (é26 D-3 y pose déjà une colonne « M » ; deux grilles dans un
-même tableau le rendraient illisible).
+colonne** au tableau des features : é26 D-3 y **prévoit** une colonne « M » (son lot 2 n'est pas
+livré au 2026-08-10, la colonne n'existe donc pas encore) et deux grilles dans un même tableau
+le rendraient illisible — le bloc « position » est séparé, et ne dépend pas de é26 lot 2.
 
 **Hors lots** (travail d'architecte, post-arbitrage) : le re-scopage de é02 « examen blanc »
 sans wording premium et sans dépendance aux annales ; le re-scopage de é08 en volet enseignant
@@ -346,6 +360,7 @@ argumentée, et son §1.3 doit être relu à la première mesure réelle.
 | date | lot | PR | écarts acceptés / dettes notées |
 | --- | --- | --- | --- |
 | 2026-08-10 | — | (cette PR) | Étude créée. Statut `brouillon` : Q-1…Q-5 ouvertes. Aucun lot exécuté — le lot 1 est exécutable dès Q-1 arbitrée. |
+| 2026-08-10 | — | (cette PR) | **Trois chiffres des docs re-mesurés et corrigés dans l'étude avant publication** (annexe A) : corpus, catalogue, et surtout le registre des misconceptions — « 5 entrées sans `competency` » est faux depuis #118, il y en a **56, toutes avec `competency`**. La première rédaction avait recopié le chiffre des docs ; la mesure l'a démenti. Dette laissée : STATUS.md et la ROADMAP portent toujours les trois chiffres périmés — resynchronisation à faire, **hors lots de cette étude**. |
 
 ---
 
@@ -388,9 +403,17 @@ sensibles — statut `complète`/`validée R-7` = génération ouverte ; `partie
   philosophie 🚧 partielles. Le dépôt déclare six sections (`manifest/bac-*.json`) : **cinq
   n'ont aucune fiche** et aucun registre `suivi/`.
 
-Écarts avec les chiffres circulant dans les docs : « ~18 700 questions / 566 chapitres » date de
-la scission é24 (2026-07-20) ; la production de trois semaines explique l'écart. `CATALOGUE.md`
-(59 matières / 393 chapitres) est **périmé** — régénérer avec `npm run content:catalogue`.
+**Registre des misconceptions** (`content/misconceptions.json`, mesuré le même jour) :
+**56 entrées, 56 avec `competency`** — et **0 occurrence de `misconceptionTag`** dans tout
+`content/`. Le registre est donc prêt ; ce sont les **distracteurs** qui ne sont pas tagués.
+
+**Trois chiffres périmés dans les docs**, à corriger là où ils vivent :
+
+| affirmation | où | réalité mesurée le 2026-08-10 |
+| --- | --- | --- |
+| « ~18 700 questions / 566 chapitres » | STATUS.md, AGENTS.md, é24 | 22 146 questions / 659 chapitres (le chiffre date de la scission du 2026-07-20) |
+| « 59 matières / 393 chapitres » | `content/CATALOGUE.md` | 89 matières / 659 chapitres — fichier **généré et périmé**, régénérer (`npm run content:catalogue`) |
+| « 5 entrées au registre, aucune `competency` » | STATUS.md §3, ROADMAP §3 et §5 | **56 entrées, 56 avec `competency`** depuis #118 — l'étape 0 de C4bis est faite |
 
 ---
 
