@@ -64,8 +64,12 @@ plateforme qui nomme ton erreur et te la fait travailler » n'existe donc pour *
 et **notre argument n°1 n'est pas démontrable en démo** — c'est la conséquence de position que
 cette étude tire, C4bis étant déjà première ligne de la ROADMAP §5.
 
-> ⚠️ **Correction à porter dans STATUS.md et la ROADMAP** (constat du 2026-08-10, à faire par
-> une session de resynchronisation — hors lots de cette étude). Les deux annoncent, à la date du
+> ⚠️ **Correction à porter dans STATUS.md et la ROADMAP** (constat du 2026-08-10 — hors lots de
+> cette étude). **Mise à jour du 2026-08-13 : les deux sont traitées.** La ROADMAP est corrigée
+> par le privé **#150** (elle annonce désormais 56 `competency` sur 56 entrées et l'étape 0 de
+> C4bis faite) ; STATUS.md l'est par **arena#721**. Le constat ci-dessous est conservé parce
+> qu'il documente **comment** l'erreur a survécu une semaine, pas pour appeler une action.
+> Les deux annonçaient, à la date du
 > 2026-08-03, « les **5 entrées** du registre, **aucune** ne déclare de `competency` ». C'est
 > **faux depuis le #118** (`78fa302`, « le registre des erreurs de 9ème — étape 0 de C4bis
 > (A11/A12) ») : `content/misconceptions.json` compte **56 entrées sur `main`, et les 56
@@ -360,7 +364,8 @@ argumentée, et son §1.3 doit être relu à la première mesure réelle.
 | date | lot | PR | écarts acceptés / dettes notées |
 | --- | --- | --- | --- |
 | 2026-08-10 | — | (cette PR) | Étude créée. Statut `brouillon` : Q-1…Q-5 ouvertes. Aucun lot exécuté — le lot 1 est exécutable dès Q-1 arbitrée. |
-| 2026-08-10 | — | (cette PR) | **Trois chiffres des docs re-mesurés et corrigés dans l'étude avant publication** (annexe A) : corpus, catalogue, et surtout le registre des misconceptions — « 5 entrées sans `competency` » est faux depuis #118, il y en a **56, toutes avec `competency`**. La première rédaction avait recopié le chiffre des docs ; la mesure l'a démenti. Dette laissée : STATUS.md et la ROADMAP portent toujours les trois chiffres périmés — resynchronisation à faire, **hors lots de cette étude**. |
+| 2026-08-10 | — | (cette PR) | **Trois chiffres des docs re-mesurés et corrigés dans l'étude avant publication** (annexe A) : corpus, catalogue, et surtout le registre des misconceptions — « 5 entrées sans `competency` » est faux depuis #118, il y en a **56, toutes avec `competency`**. La première rédaction avait recopié le chiffre des docs ; la mesure l'a démenti. Dette laissée : STATUS.md et la ROADMAP portent encore les chiffres périmés — resynchronisation à faire, **hors lots de cette étude**. |
+| 2026-08-13 | — | (cette PR) | **Dette du 2026-08-10 soldée, par deux routes indépendantes.** La ROADMAP est resynchronisée par le privé **#150** — qui a au passage réparé la Content CI que la resynchro a révélée morte ; STATUS.md et AGENTS.md le sont par **arena#721** (registre 56/56, corpus 659 ch. / 22 146 q., et « Node 22 » corrigé en 24). Aucun lot de cette étude n'a bougé : elle reste `brouillon`, Q-1…Q-5 ouvertes. |
 
 ---
 
