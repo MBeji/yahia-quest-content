@@ -43,6 +43,11 @@ précisément pourquoi ils n'y figuraient pas.
   rouge 33 h**, `main` comprise. Hors file (incident de dépendance).
 - **arena#720** — « corriger chaque question à l'instant où elle est validée ». Hors file au sens
   strict : la file PRODUIT V1 ne portait pas cette ligne.
+- **arena#722** — la **garde anti-verbatim** entre dans `content:qa` (**étude 27 lot 2**). Elle
+  appartient à la file de l'étude 27, pas à celle-ci : citée ici au titre de la connaissance,
+  **sans objet** pour les trois files de cette roadmap.
+- **arena#723 · arena#724** — deux lots UI (silhouettes de chargement, surfaces du lecteur de
+  quête). Hors file également : la file PRODUIT V1 ne les portait pas.
 - **arena#721** — trois faits canoniques re-mesurés : registre des misconceptions à **56 entrées
   toutes pourvues de leur `competency`** (l'étape 0 de C4bis est donc **faite**), corpus à
   659 chapitres / 22 146 questions, et « Node 22 » corrigé en 24 dans AGENTS.md. Hors file
