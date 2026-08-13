@@ -1,0 +1,82 @@
+{
+  "title": "⭐ Exercice : Mole, masse molaire, premiers calculs",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Quelle est l'unité de la quantité de matière ?",
+      "options": [
+        { "id": "a", "text": "La mole" },
+        { "id": "b", "text": "Le gramme" },
+        { "id": "c", "text": "Le gramme par mole" },
+        { "id": "d", "text": "Le litre" }
+      ],
+      "correctOption": "a",
+      "explanation": "L'unité de la quantité de matière est la mole ✓, définie comme la quantité d'un ensemble contenant N particules identiques. Le gramme mesure une masse, pas une quantité de matière — et c'est justement parce que la masse ne comptait pas les particules qu'on a introduit cette nouvelle grandeur. Le gramme par mole est l'unité de la masse molaire. Et le litre mesure un volume.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut le nombre d'Avogadro N ?",
+      "options": [
+        { "id": "a", "text": "6,02 × 10²³" },
+        { "id": "b", "text": "6,02 × 10⁻²³" },
+        { "id": "c", "text": "1,6 × 10⁻¹⁹" },
+        { "id": "d", "text": "22,4 × 10²³" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le calcul à partir de 0,012 kg de carbone donne N = 6,02 × 10²³ ✓, un nombre de particules donc très grand. Un exposant négatif décrirait une quantité minuscule, incompatible avec un dénombrement. La valeur 1,6 × 10⁻¹⁹ est la charge élémentaire en coulombs, vue au chapitre sur l'atome. Et 22,4 est le volume molaire d'un gaz à 0 °C en litres par mole, sans lien avec ce nombre.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Comment obtient-on la masse molaire d'une molécule à partir de celles de ses atomes ?",
+      "options": [
+        { "id": "a", "text": "En additionnant les masses molaires atomiques de tous ses atomes" },
+        { "id": "b", "text": "En multipliant entre elles les masses molaires atomiques" },
+        { "id": "c", "text": "En prenant la plus grande des masses molaires atomiques" },
+        { "id": "d", "text": "En divisant la masse molaire du carbone par l'atomicité" }
+      ],
+      "correctOption": "a",
+      "explanation": "La masse molaire moléculaire est la somme des masses molaires atomiques des atomes qui constituent la molécule ✓, chaque atome étant compté autant de fois que l'indique son indice. Multiplier n'a aucun sens physique et donnerait des valeurs énormes. Retenir la plus grande reviendrait à ignorer les autres atomes, qui pèsent aussi. Et le carbone n'a aucun rôle particulier ici, sauf dans la définition du nombre d'Avogadro.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle relation lie la masse m, la quantité de matière n et la masse molaire M ?",
+      "options": [
+        { "id": "a", "text": "m = n × M" },
+        { "id": "b", "text": "m = n ÷ M" },
+        { "id": "c", "text": "m = M ÷ n" },
+        { "id": "d", "text": "m = n + M" }
+      ],
+      "correctOption": "a",
+      "explanation": "Si une mole pèse M grammes, alors n moles pèsent n fois plus : m = n × M ✓, avec m en grammes, n en moles et M en g·mol⁻¹. Les deux divisions donnent des unités incohérentes et feraient diminuer la masse quand la quantité augmente. Quant à l'addition, elle mélangerait des grandeurs d'unités différentes, ce qu'aucune relation physique ne fait.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle masse représente 0,10 mol de soufre, sachant que M(S) = 32 g·mol⁻¹ ?",
+      "options": [
+        { "id": "a", "text": "3,2 g" },
+        { "id": "b", "text": "320 g" },
+        { "id": "c", "text": "32 g" },
+        { "id": "d", "text": "0,003 g" }
+      ],
+      "correctOption": "a",
+      "explanation": "On applique m = n × M : 0,10 × 32 = 3,2 g ✓. Le résultat 320 g vient d'une division par 0,10 au lieu d'une multiplication. La valeur 32 g correspondrait à une mole entière, soit dix fois la quantité demandée. Et 0,003 g résulte d'une division du nombre de moles par la masse molaire, qui inverse la relation.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le volume molaire d'un gaz dépend-il de la nature de ce gaz ?",
+      "options": [
+        { "id": "a", "text": "Non : dans les mêmes conditions, tous les gaz ont le même volume molaire" },
+        { "id": "b", "text": "Oui, il augmente avec la masse molaire du gaz" },
+        { "id": "c", "text": "Oui, chaque gaz a le sien comme les solides" },
+        { "id": "d", "text": "Non, il vaut toujours 24 L·mol⁻¹ quelles que soient les conditions" }
+      ],
+      "correctOption": "a",
+      "explanation": "C'est la loi d'Avogadro-Ampère : dans les mêmes conditions de température et de pression, tous les corps purs à l'état gazeux ont le même volume molaire ✓. La masse molaire n'intervient pas — deux gaz de masses molaires très différentes occupent le même volume par mole. Ce sont les solides et les liquides qui ont chacun le leur. Et la valeur dépend bien des conditions : 22,4 L·mol⁻¹ à 0 °C, 24 L·mol⁻¹ à 20 °C.",
+      "difficulty": 2
+    }
+  ]
+}

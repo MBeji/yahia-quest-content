@@ -1,0 +1,11 @@
+# 📜 Résumé : Atomes et ions simples
+
+- **La matière n'est pas toujours moléculaire.** La lamelle d'or au microscope électronique montre des rangées de grains serrés et liés qui ne sont pas des molécules : ce sont des **atomes**. **Les métaux et les gaz rares** (argon, hélium…) **ont une structure atomique**.
+- **Ordres de grandeur.** Dimension d'un atome : de l'ordre de l'**Angström** (fer 2,3 Å, hydrogène 1,0 Å, or 1,5 Å). Masse : de l'ordre de **10⁻²⁶ kg** (fer 9,3 × 10⁻²⁶ kg). Les mêmes ordres que la molécule — normal, une molécule est faite de quelques atomes.
+- **Constitution de l'atome.** Un **noyau** chargé positivement, environ **cent mille fois plus petit** que l'atome et qui concentre pratiquement toute sa masse ; autour, des **électrons** chargés négativement qui gravitent en formant le **nuage électronique**. Entre les deux, du vide : l'atome a une **structure lacunaire** (pour l'aluminium, D ÷ d = 3 × 10⁻¹⁰ ÷ 2 × 10⁻¹⁵ = 1,5 × 10⁵).
+- **L'électron et la charge élémentaire.** Charge **−1,6 × 10⁻¹⁹ C**, masse **9 × 10⁻³¹ kg**, tous les électrons identiques. La valeur absolue de cette charge est la plus petite quantité d'électricité possible : la **charge élémentaire e**.
+- **Neutralité et identité.** L'atome est **électriquement neutre** : autant de charges négatives (électrons) que de charges positives (noyau). Et **un atome est caractérisé par son nombre d'électrons** (hydrogène 1, aluminium 13).
+- **Symboles.** Première lettre du nom français en majuscule (H, C, N), plus une deuxième lettre en minuscule quand la première est partagée (Cu cuivre, Ca calcium, Cl chlore, Fe fer). La casse compte : `CO` n'est pas `Co`.
+- **De l'atome à l'ion simple.** Un atome qui **perd** des électrons devient un **cation** (positif) ; un atome qui **gagne** des électrons devient un **anion** (négatif). Écriture : symbole de l'atome, charge en haut à droite en charges élémentaires, le 1 ne s'écrit pas — H⁺, Na⁺, Al³⁺, Cl⁻, O²⁻, S²⁻, Fe²⁺ et Fe³⁺, Cu⁺ et Cu²⁺.
+- **⚠️ À ne pas confondre.** Un ion **positif** a **moins** d'électrons que son atome, un ion **négatif** en a **plus** : le signe vient de ce qui manque.
+- **Structure ionique.** Le sel de cuisine ou l'oxyde de magnésium sont un assemblage d'ions positifs et négatifs — et le corps reste **électriquement neutre**, les charges se compensant exactement.

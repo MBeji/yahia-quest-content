@@ -77,13 +77,22 @@
 
 ---
 
-## 📣 D. Marketing / lancement (été → rentrée)
+## 📣 D. Marketing / lancement — 🔴 **CHEMIN CRITIQUE RENTRÉE** (requalifié le 2026-08-13, étude 28 lot 1)
 
-| # | Action | Type |
-|---|---|---|
-| D1 | Créer la **page Facebook** « Na9ra Nal3ab » + **WhatsApp Business** | 🟦 |
-| D2 | **Pitcher l'école pilote** (la tienne) avec le [playbook](./livrables/05-marketing/02-plan-acquisition.md) — fin août / pré-rentrée | 🟦 |
-| D3 | Recruter les **premiers beta-testeurs** (réseau perso) cet été | 🟦 |
+> **Ce bloc n'est plus « marketing », c'est le goulot du projet.** Les trois actions sont
+> ouvertes depuis le 2026-06-13, donc **aucun canal d'acquisition n'est actif** — le produit est
+> prêt à recevoir des élèves qu'aucun mécanisme ne lui envoie. Le reste du programme (infra,
+> monitoring, domaine, SEO, analytics) est vert : ce bloc-ci est ce qui sépare une mise en ligne
+> d'un lancement, et il est devenu une **condition de la Porte 1** ([master plan](./00-MASTER-PLAN.md) §3bis/§6).
+>
+> ⏳ **La fenêtre est étroite** : rentrée le 1ᵉʳ septembre, soit **J-19 au 2026-08-13**. La
+> suivante est le pic de révisions de **janvier-mars**. Rien ici ne demande de code.
+
+| # | Action | Type | Temps | Note |
+|---|---|---|---|---|
+| **D1** | Créer la **page Facebook** « Na9ra Nal3ab » + **WhatsApp Business** | 🟦 | ~1 h | Le canal parent n° 1 en Tunisie. Rien ne le bloque — ni code, ni décision, ni budget. À faire en premier : c'est le seul des trois qui ne dépend de personne d'autre |
+| **D2** | **Pitcher l'école pilote** (la tienne) avec le [playbook](./livrables/05-marketing/02-plan-acquisition.md) | 🟦 | — | Canal **CAC ≈ 0** : un enseignant qui donne un chapitre en devoir apporte 30 élèves **et** 30 parents, avec une légitimité que la publicité n'achète pas (é28 M-3). ⛔ **PRÉCONDITION DURE (é28 D-5) : ne rien engager avant `GAP-024` livré** (suppression de compte + export/portabilité — **absents de `src/`**) **et `GAP-003` tranché**. Démarcher un établissement sans chemin de suppression des données d'un mineur est une faute, pas un raccourci — et c'est la première question d'un directeur |
+| **D3** | Recruter les **premiers beta-testeurs** (réseau perso) | 🟦 | — | 20-30 suffisent. Leur vraie valeur n'est pas le volume mais **la première mesure de rétention S(N)→S(N+1)** — le KPI-4 de é26, défini le 2026-07-19 et **jamais publié depuis**. Sans lui, « référence » reste une opinion |
 
 ---
 

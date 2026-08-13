@@ -1,6 +1,14 @@
 # Étude 02 — Examen blanc / simulation concours
 
-> **Statut** : brouillon (⚠️ 2026-07-11 : la justification « premium » ci-dessous précède le pivot gratuité — la feature reste pertinente en offre gratuite, le _pourquoi_ est à re-scoper à la validation)
+> **Statut** : brouillon — **SORTIE DE LA FILE DIFFÉRÉE V2 le 2026-08-13** (é28 Q-4, arbitrée par
+> Mohamed). Sa porte d'entrée était « V1 ≥ M3 **et** annales transcrites » ; elle est **levée**,
+> parce qu'un **v1 n'a pas besoin d'annales** : un assemblage chronométré du corpus existant plus
+> un rang relatif suffisent à créer la preuve et le partage. Les annales redeviennent un
+> **enrichissement ultérieur**, pas un prérequis — c'était précisément ce qui tenait l'étude
+> fermée. **À re-scoper par l'architecte** avec ce v1 explicitement borné, avant tout lot.
+> ⚠️ 2026-07-11 : la justification « premium » ci-dessous précède le pivot gratuité — la feature
+> reste pertinente en offre gratuite, et **aucune surface ne peut dire « premium »** en phase
+> actuelle ; le _pourquoi_ se réécrit au re-scopage.
 > **Priorité** : 02 · **Valeur** : l'expérience « concours » en conditions réelles : classement percentile, diagnostic par matière (rédaction d'origine : « justifie les parcours premium ») · **Complexité** : moyenne+
 > **Architecte** : Fable (claude-fable-5), 2026-07-04 · **Exécuteur cible** : Sonnet
 > **Dépend de** : contenu exam-style suffisant (paliers d4 + `NN-annales-bac` pour le bac) ; rien côté code
