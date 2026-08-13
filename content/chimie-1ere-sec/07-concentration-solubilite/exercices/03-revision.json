@@ -1,0 +1,82 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Des grammes aux moles, jusqu'à la saturation",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Une fiche d'analyse indique une glycémie de 2,79 g/L. Avec M(glucose) = 180 g·mol⁻¹, quelle est la concentration molaire du glucose dans ce sang ?",
+      "options": [
+        { "id": "a", "text": "15,5 × 10⁻³ mol·L⁻¹" },
+        { "id": "b", "text": "502 mol·L⁻¹" },
+        { "id": "c", "text": "64,5 mol·L⁻¹" },
+        { "id": "d", "text": "2,79 mol·L⁻¹" }
+      ],
+      "correctOption": "a",
+      "explanation": "On divise la concentration massique par la masse molaire : 2,79 ÷ 180 = 15,5 × 10⁻³ mol·L⁻¹, soit environ 15,5 mmol·L⁻¹ ✓. Le résultat 502 vient d'une multiplication au lieu d'une division. La valeur 64,5 s'obtient en divisant la masse molaire par la concentration, soit le rapport inversé. Et reprendre 2,79 revient à changer d'unité sans faire le calcul, alors que passer des grammes aux moles exige la masse molaire.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On dissout 1,03 g de saccharose (M = 342 g·mol⁻¹) dans une solution de volume 250 mL. Quelle est sa concentration molaire ?",
+      "options": [
+        { "id": "a", "text": "1,2 × 10⁻² mol·L⁻¹" },
+        { "id": "b", "text": "3,0 × 10⁻³ mol·L⁻¹" },
+        { "id": "c", "text": "4,1 g·L⁻¹" },
+        { "id": "d", "text": "1,2 × 10⁻⁵ mol·L⁻¹" }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux étapes : n = 1,03 ÷ 342 = 3,0 × 10⁻³ mol, puis C = 3,0 × 10⁻³ ÷ 0,250 = 1,2 × 10⁻² mol·L⁻¹ ✓. S'arrêter à 3,0 × 10⁻³ donne la quantité de matière, pas la concentration : la division par le volume manque. La valeur 4,1 g·L⁻¹ est une concentration massique, en grammes par litre, alors que la question demande des moles. Et 1,2 × 10⁻⁵ vient d'avoir traité les 250 mL comme 250 L.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "À 20 °C, 36,0 g de chlorure de sodium se dissolvent au maximum dans 100 cm³ d'eau. Quelle est sa solubilité en g·L⁻¹ ?",
+      "options": [
+        { "id": "a", "text": "360 g·L⁻¹" },
+        { "id": "b", "text": "3,6 g·L⁻¹" },
+        { "id": "c", "text": "36 g·L⁻¹" },
+        { "id": "d", "text": "0,36 g·L⁻¹" }
+      ],
+      "correctOption": "a",
+      "explanation": "La solubilité est la concentration de la solution saturée : 36,0 ÷ 0,100 = 360 g·L⁻¹ ✓. Le résultat 3,6 vient d'une division par 10 au lieu de 0,100. Reprendre 36 laisse la masse telle quelle, sans rapporter au volume. Et 0,36 correspondrait à un litre entier de solution pour cette masse, soit dix fois trop dilué.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La même expérience donne, avec M(NaCl) = 58,5 g·mol⁻¹, une solubilité exprimée en moles. Que vaut-elle ?",
+      "options": [
+        { "id": "a", "text": "6,15 mol·L⁻¹" },
+        { "id": "b", "text": "0,615 mol·L⁻¹" },
+        { "id": "c", "text": "21 060 mol·L⁻¹" },
+        { "id": "d", "text": "1,63 mol·L⁻¹" }
+      ],
+      "correctOption": "a",
+      "explanation": "On convertit puis on divise : n = 36,0 ÷ 58,5 = 0,615 mol, puis 0,615 ÷ 0,100 = 6,15 mol·L⁻¹ ✓ — la même solubilité que 360 g·L⁻¹, dans l'autre unité. La valeur 0,615 est la quantité de matière dissoute, à laquelle il reste à appliquer le volume. Le résultat 21 060 vient d'une multiplication par la masse molaire au lieu d'une division. Et 1,63 s'obtient en divisant la masse molaire par la masse, soit le rapport inversé.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un bécher contient une solution saturée surmontant un dépôt de cristaux, à température constante. Que se passe-t-il à l'échelle des particules ?",
+      "options": [
+        { "id": "a", "text": "Dissolution et transformation inverse se produisent en même temps et se compensent" },
+        { "id": "b", "text": "Plus rien ne se passe : tout est arrêté" },
+        { "id": "c", "text": "Seule la dissolution continue, très lentement" },
+        { "id": "d", "text": "Le dépôt grossit continuellement" }
+      ],
+      "correctOption": "a",
+      "explanation": "C'est la définition même de l'équilibre : les deux transformations opposées se déroulent simultanément, et leurs effets s'annulent — d'où une composition qui ne change plus ✓. Un arrêt complet décrirait bien l'apparence, mais pas la réalité microscopique. Si seule la dissolution continuait, le dépôt finirait par disparaître. Et un dépôt qui grossirait ferait baisser la concentration, ce qui contredit la saturation maintenue.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "1 g de diiode sature 10 mL d'eau, mais il en faut 4 g pour saturer 10 mL d'alcool. Que montre cette comparaison ?",
+      "options": [
+        { "id": "a", "text": "La solubilité dépend de la nature du solvant" },
+        { "id": "b", "text": "La solubilité dépend uniquement du soluté" },
+        { "id": "c", "text": "L'alcool est plus chaud que l'eau" },
+        { "id": "d", "text": "Le diiode se transforme dans l'alcool" }
+      ],
+      "correctOption": "a",
+      "explanation": "Même soluté, même volume, même température, et pourtant quatre fois plus de diiode dissous dans l'alcool : c'est le solvant qui fait la différence ✓. Le soluté compte aussi, mais il ne peut pas expliquer un écart observé à soluté identique. Rien dans l'énoncé ne parle de température, et les deux essais sont faits dans les mêmes conditions. Enfin, se dissoudre n'est pas se transformer : le diiode reste du diiode.",
+      "difficulty": 2
+    }
+  ]
+}
