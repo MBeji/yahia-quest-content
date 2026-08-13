@@ -1,9 +1,10 @@
 # Étude 28 — Stratégie de référence : de la profondeur technique à la position de marché
 
-> **Statut** : brouillon — **Q-1 et Q-2 arbitrées le 2026-08-13** (Mohamed, toutes deux sur la
-> recommandation : position P-3 + renoncement à la vidéo acté ; critère de couverture amendé en
-> « classe de concours entière d'abord »). **Q-3, Q-4, Q-5 restent ouvertes** — l'étude ne passe
-> `validée` qu'une fois §7 vidée. **Lot 1 exécutable ; lot 2 sur son seul volet critère.**
+> **Statut** : **validée** — les cinq questions arbitrées le **2026-08-13** par Mohamed,
+> **toutes sur les recommandations** : position P-3 et renoncement à la vidéo actés (Q-1) ;
+> couverture amendée en « classe de concours entière d'abord » (Q-2) ; canal enseignant confié à
+> é08 re-scopée (Q-3) ; é02 sortie du différé avec un examen blanc v1 sans annales (Q-4) ;
+> soutenabilité = **B2B établissement**, l'élève reste gratuit (Q-5). **Les 3 lots sont fermes.**
 > **Priorité** : transverse (gouvernance de position — elle ne construit rien, elle ordonne) ·
 > **Valeur** : 🏁 le projet a une avance d'ingénierie réelle et **aucun canal d'acquisition
 > actif** ; cette étude nomme la position défendable, mesure l'écart qui l'en sépare, et
@@ -323,11 +324,9 @@ argumentée, et son §1.3 doit être relu à la première mesure réelle.
 > arbitrée. **Seul Q-1 conditionne le lot 1** — et il ne le bloque pas : le lot 1 est écrit pour
 > être exécutable même si Q-2…Q-5 restent ouvertes.
 >
-> **État au 2026-08-13 : Q-1 et Q-2 sont arbitrées par Mohamed, toutes deux sur la
-> recommandation.** Le **lot 1 est donc exécutable**, et le lot 2 l'est sur son seul volet
-> « critère de couverture » (ses volets é02/é08 attendent encore Q-4/Q-3). L'étude **reste
-> `brouillon`** : Q-3, Q-4 et Q-5 sont ouvertes, et le statut ne bascule qu'une fois la section
-> vidée.
+> **Section arbitrée le 2026-08-13 (Mohamed) — les cinq questions, toutes sur les
+> recommandations.** Aucune question n'est plus ouverte ; l'étude est passée **`validée`** et
+> ses **trois lots sont fermes**. Les arbitrages sont consignés sous chaque question.
 
 - **Q-1 — La position revendiquée.** Valider P-3 — « la plateforme où l'élève tunisien
   s'entraîne et mesure sa maîtrise » — comme position de référence, et acter **le renoncement
@@ -363,6 +362,10 @@ argumentée, et son §1.3 doit être relu à la première mesure réelle.
   ouvrir une étude dédiée (é29, 27 et 28 étant prises) ? _Recommandation : re-scoper é08 — le sujet est le sien, une
   étude de plus disperserait un portefeuille que é26 KPI-3 cherche à resserrer. Sous réserve
   D-5 (rien ne s'engage avant GAP-024/GAP-003)._
+  **Arbitrage (2026-08-13, Mohamed) : recommandation retenue.** Le volet enseignant est confié
+  à **é08**, re-scopée et sortie de sa porte V4 ; **aucune é29 n'est ouverte** — le portefeuille
+  reste resserré (é26 KPI-3). La réserve **D-5 est maintenue et ferme** : aucune démarche vers
+  un établissement avant GAP-024 livré et GAP-003 tranché.
 
 - **Q-4 — L'examen blanc maintenant ou après les annales ?** é02 est différée derrière
   « annales transcrites ». Or un examen blanc **v1** n'a pas besoin d'annales : un assemblage
@@ -370,6 +373,10 @@ argumentée, et son §1.3 doit être relu à la première mesure réelle.
   annales l'enrichissent ensuite. Sortir é02 de la file V2 et la re-scoper maintenant ?
   _Recommandation : oui, avec un v1 sans annales explicitement borné. C'est M-2, le plus gros
   écart produit face au marché._
+  **Arbitrage (2026-08-13, Mohamed) : recommandation retenue.** **é02 sort de la file différée
+  V2** et se re-scope maintenant, avec un **v1 explicitement borné SANS annales** (assemblage
+  chronométré du corpus existant + rang relatif). Les annales restent un enrichissement
+  ultérieur, pas un prérequis — c'est précisément la porte d'entrée qui la tenait fermée.
 
 - **Q-5 — La soutenabilité.** Trois voies : **(a)** B2B établissement (l'école paie, l'élève
   reste gratuit) · **(b)** freemium concours (pratique gratuite, examen blanc + suivi payants) ·
@@ -378,6 +385,11 @@ argumentée, et son §1.3 doit être relu à la première mesure réelle.
   interdite en phase gratuite) et transforme le canal d'acquisition en canal de revenu.
   ⚠️ Aucune des trois ne se met en œuvre sans dégel de é01, qui reste une décision humaine
   distincte de celle-ci.
+  **Arbitrage (2026-08-13, Mohamed) : option (a), B2B établissement.** L'école paie, **l'élève
+  reste gratuit** — la gratuité de phase n'est pas remise en cause et aucune surface « premium »
+  ne se réveille. Le canal de M-3 devient le canal de revenu. ⚠️ **La mise en œuvre reste
+  suspendue au dégel de é01**, décision humaine distincte que cet arbitrage ne préempte pas :
+  il fixe la **direction**, pas la date.
 
 ---
 
@@ -386,6 +398,7 @@ argumentée, et son §1.3 doit être relu à la première mesure réelle.
 | date | lot | PR | écarts acceptés / dettes notées |
 | --- | --- | --- | --- |
 | 2026-08-10 | — | (cette PR) | Étude créée. Statut `brouillon` : Q-1…Q-5 ouvertes. Aucun lot exécuté — le lot 1 est exécutable dès Q-1 arbitrée. |
+| 2026-08-13 | — | (cette PR) | **§7 vidée le même jour : Q-3, Q-4 et Q-5 arbitrées à leur tour, toutes sur les recommandations.** Q-3 : canal enseignant confié à **é08 re-scopée** hors de sa porte V4, aucune é29 ouverte, réserve D-5 ferme. Q-4 : **é02 sort de la file différée V2** avec un v1 **sans annales** explicitement borné. Q-5 : soutenabilité = **B2B établissement**, l'élève reste gratuit, mise en œuvre suspendue au dégel de é01 (l'arbitrage fixe la direction, pas la date). **L'étude passe `validée` et ses 3 lots sont fermes.** |
 | 2026-08-13 | — | (cette PR) | **Q-1 et Q-2 arbitrées par Mohamed, toutes deux sur la recommandation.** Q-1 : position P-3 retenue **et renoncement à la vidéo acté**. Q-2 : critère de couverture amendé en « classe de concours entière d'abord », barre é18 et refus de la classe vitrine inchangés — ce qui **amende é26 A1-Q2 du 2026-07-20**. Le lot 1 devient ferme ; le lot 2 l'est sur son seul volet critère (ses volets é02/é08 attendent Q-4/Q-3). ⚠️ **Les deux lots restent à livrer dans leurs PR propres** (règle « un lot = une PR à file set distinct ») — cette PR-ci ne porte que l'étude. |
 | 2026-08-13 | — | (cette PR) | **Renumérotée 27 → 28.** L'étude 27 « Enrichissement par sources web tierces » a été ouverte et **mergée sur `main` le 2026-08-13** (#153) pendant que cette branche vivait ; première mergée, premier servie. Collision de **numéro** seulement : les deux sujets sont distincts et complémentaires (la 27 traite l'approvisionnement en contenu, celle-ci la position de marché — elle sert d'ailleurs M-2). Rien du fond n'a bougé. Leçon pour le protocole de réservation (`CONTRIBUER.md`) : **un numéro d'étude ne vaut que mergé**, et une branche longue doit re-sonder l'index avant de pousser. |
 | 2026-08-10 | — | (cette PR) | **Trois chiffres des docs re-mesurés et corrigés dans l'étude avant publication** (annexe A) : corpus, catalogue, et surtout le registre des misconceptions — « 5 entrées sans `competency` » est faux depuis #118, il y en a **56, toutes avec `competency`**. La première rédaction avait recopié le chiffre des docs ; la mesure l'a démenti. Dette laissée : STATUS.md et la ROADMAP portent encore les chiffres périmés — resynchronisation à faire, **hors lots de cette étude**. |
