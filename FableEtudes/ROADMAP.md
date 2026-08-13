@@ -1,6 +1,6 @@
 # ROADMAP — ordre d'exécution du reste-à-faire (études, lots, contenu)
 
-<!-- roadmap-sync: since-pr=716 -->
+<!-- roadmap-sync: since-pr=721 -->
 
 > **Instantané du 2026-08-10** (créé le 2026-07-20, resynchronisé contre `main` les 2026-07-25,
 > 2026-07-27, 2026-07-29, 2026-08-01, 2026-08-03 puis le **2026-08-10**) — déclinaison opérationnelle de l'**étude 26 (doctrine verticale : profondeur
@@ -31,6 +31,28 @@
 > ⚠️ Quatre lignes décrivaient un état **factuellement faux** — corrigées ici : **C4bis** (son
 > étape 0 est faite, #118), **C3** (4 matières sur 5 en prod), **C9** (une campagne lycée entière
 > livrée), **F5** (son reliquat n'est pas que humain : il est **du code**).
+
+## 0bis. Livré au moteur depuis le #716 (citation exigée par `check-roadmap-sync`)
+
+Le gate a un avis sur la **connaissance**, jamais sur le statut : citer suffit, coché, reporté ou
+sans objet. Ces trois-là ne créent aucune ligne de roadmap — ils sont **hors file**, ce qui est
+précisément pourquoi ils n'y figuraient pas.
+
+- **arena#718** — revert du bump « undici » qui embarquait `miniflare 5-alpha` et deux majeures :
+  `npm ci` était cassé sur npm 10 depuis le 2026-08-09, donc **la Content CI d'ici est restée
+  rouge 33 h**, `main` comprise. Hors file (incident de dépendance).
+- **arena#720** — « corriger chaque question à l'instant où elle est validée ». Hors file au sens
+  strict : la file PRODUIT V1 ne portait pas cette ligne.
+- **arena#722** — la **garde anti-verbatim** entre dans `content:qa` (**étude 27 lot 2**). Elle
+  appartient à la file de l'étude 27, pas à celle-ci : citée ici au titre de la connaissance,
+  **sans objet** pour les trois files de cette roadmap.
+- **arena#723 · arena#724** — deux lots UI (silhouettes de chargement, surfaces du lecteur de
+  quête). Hors file également : la file PRODUIT V1 ne les portait pas.
+- **arena#721** — trois faits canoniques re-mesurés : registre des misconceptions à **56 entrées
+  toutes pourvues de leur `competency`** (l'étape 0 de C4bis est donc **faite**), corpus à
+  659 chapitres / 22 146 questions, et « Node 22 » corrigé en 24 dans AGENTS.md. Hors file
+  (resynchronisation documentaire) — mais **C4bis §5 en dépend** : ce qui reste est le seul
+  tagging des distracteurs.
 
 ## 0. Mode d'emploi (comment exécuter cette roadmap)
 
@@ -492,8 +514,21 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
 ## 5. FIL CONTENU (parallèle — sessions de campagne dédiées)
 
 > Règle é26 D-6 : la largeur _catalogue_ continue sous sa propre barre de qualité (é18 axe 5,
-> gates, audits). **A1-Q2 rendu** : la cible de couverture pour la rentrée est le **statu quo
-> consolidé à la barre é18** — aucune nouvelle classe « vitrine » sous cette barre.
+> gates, audits). ~~**A1-Q2 rendu** : la cible de couverture pour la rentrée est le **statu quo
+> consolidé à la barre é18**~~ — **AMENDÉ le 2026-08-13 par é28 Q-2** (arbitrage Mohamed).
+>
+> 🔴 **Le critère de priorité de cette file n'est plus « consolider l'existant » mais
+> « CLASSE DE CONCOURS ENTIÈRE D'ABORD »** (é28 D-3/D-4). Ce qui **ne change pas** : la barre
+> é18 reste non négociable, et **aucune classe « vitrine »** n'est ouverte sous cette barre —
+> l'amendement porte sur la **priorité**, jamais sur la qualité. On n'ouvre pas plus vite en
+> ouvrant moins bien (é28 RISK-4).
+>
+> **Pourquoi** : un élève de 6ᵉ qui ne trouve pas le français ne conclut pas « le français
+> arrive », il conclut « ce site ne couvre pas mon concours » et ne revient pas (é28 D-4). La
+> complétude d'une classe de concours prime donc sur l'ouverture d'une classe nouvelle.
+>
+> **Conséquence immédiate, et c'est la seule ligne que cet amendement crée** : **C4ter
+> (`french-6eme`) passe devant toute autre ligne de cette file après C4bis.**
 
 - [x] C1. **Corrections qualité — FAIT le 2026-07-25.** Les 9 issues sont closes : `french-8eme` 2 BLOCKER (#336/#337) + 6 MAJOR (#338/#339/#340/#341/#342/#343) · `math-bac-math` (#344), corrigées ici par la PR #6. ⚠️ **Leçon de la scission** : une PR de correction avait été ouverte dans le dépôt **public**
       (#610) — elle a dû être **fermée sans merge**, le gate anti-fuite refusant du corpus
@@ -576,6 +611,24 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
       ⚠️ Le champ est **optionnel par conception** (arena#707) : une confusion de vocabulaire ou
       une erreur de lecture d'énoncé n'a pas de compétence propre, et il vaut mieux ne rien
       proposer qu'un exercice au hasard. Ne pas en inventer une pour remplir la colonne.
+- [ ] C4ter. **`french-6eme` — compléter la 6ᵉ, classe de CONCOURS** _(é28 Q-2/D-4, arbitré le
+      2026-08-13)_.
+      🔴 **DEUXIÈME LIGNE DE CETTE FILE, juste après C4bis** — l'amendement de é28 Q-2 la place
+      devant tout le reste du fil contenu.
+      **Le fait** : la 6ᵉ a **3 matières avec du contenu** (math, arabe, éveil) pour **6 fiches
+      de programme transcrites**. Le **français a sa fiche et zéro contenu** — sur une classe de
+      **concours**, dont le français est une épreuve.
+      **Ce n'est pas un blocage de source.** La fiche est `partielle`, et depuis l'amendement
+      **R-5 du 2026-07-29** une fiche partielle ne bloque plus la matière : on génère
+      **chapitre par chapitre**, sur les seules sections transcrites à profondeur de génération.
+      Le seul motif du retard est qu'aucune session ne l'a prise.
+      **Barre inchangée** : é18 axes 1-5, gates contenu, audit — la priorité change, pas la
+      qualité (é28 RISK-4). Une matière se livre **entière ou par tranches ≤ 4 chapitres**,
+      jamais en échantillon vitrine.
+      **Ensuite, dans le même esprit** : les deux autres matières de 6ᵉ sans contenu (anglais,
+      islamique) puis la vérification que la 9ᵉ tient bien la barre é18 sur ses 6 matières. Le
+      **Bac n'entre pas ici** — cinq de ses six sections n'ont aucune fiche transcrite, c'est un
+      LOT A de transcription et un chantier **septembre→janvier** (é28 D-6).
 - [ ] C5. **é20 lots 2 → 4 — réponses acceptées.** **Lot 2 (Tier A) livré le 2026-07-27**
       (arena#652) : l'expansion morphologique — article arabe plié dans les deux sens, articles
       fr/en, contractions — est une **fonction pure appliquée au build**, pas des variantes
@@ -699,8 +752,8 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
 
 | File                                                             | Porte d'entrée                                                      | Contenu                                                                           |
 | ---------------------------------------------------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| **V2 — concours**                                                | V1 ≥ M3 (étapes 1-16) **et** annales transcrites (`NN-annales-bac`) | é02 re-scopée (« examen blanc » sans wording premium), percentiles                |
-| **V4 — parent**                                                  | é04-A2.2 livré (ligne 16)                                           | é08 re-scopée + digest hebdo IA (é11 lot 6 la sert aussi)                         |
+| ~~**V2 — concours**~~ **SORTIE DU DIFFÉRÉ le 2026-08-13** (é28 Q-4) | ~~V1 ≥ M3 **et** annales transcrites~~ — **porte levée** | **é02 se re-scope maintenant**, avec un **v1 explicitement borné SANS annales** : assemblage chronométré du corpus existant + rang relatif. Les annales redeviennent un **enrichissement**, pas un prérequis — c'était précisément la porte qui tenait l'étude fermée. Motif (é28 M-2) : un parent tunisien juge sur « est-ce que ça prépare au concours », et c'est le plus gros écart produit face au marché. Wording premium toujours proscrit (phase gratuite) |
+| ~~**V4 — parent**~~ **SORTIE DU DIFFÉRÉ le 2026-08-13** (é28 Q-3) | ~~é04-A2.2 livré (ligne 16)~~ — **porte levée** | **é08 se re-scope maintenant** sur son **volet enseignant** : code de classe, liste d'élèves, taux de réussite par chapitre — la mécanique existe déjà (le rapport parent par code alliance est le même objet). Motif (é28 M-3) : c'est le seul canal à **CAC ≈ 0** au budget réel (1 000-2 000 TND/an). Le volet parent + digest hebdo IA reste, lui, derrière é04-A2.2. ⛔ **Précondition dure é28 D-5** : aucune démarche vers un établissement avant **GAP-024 livré** et **GAP-003 tranché** |
 | **Gels — actés (A1-Q3, 2026-07-20)** ; application par é26 lot 2 | Dégel par décision humaine explicite uniquement                     | é06 (PWA offline) · é10 (anti-fraude — se dégèle au volume) · é12 (studio in-app) |
 | **Gelée (phase)**                                                | Sortie de la phase gratuite (décision humaine)                      | é01 (paiement en ligne — véhicule de réactivation du premium)                     |
 
