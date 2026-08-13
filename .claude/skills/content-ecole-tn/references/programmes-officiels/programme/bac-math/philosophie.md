@@ -2239,6 +2239,30 @@ Cinq chapitres = les cinq **مباحث** du programme. Les plages de pages sont 
 - ⚠️ **R-7 NON FAITE sur le مبحث 2.** La relecture indépendante par sondage dirigé (T-8) n'a pas
   eu lieu : le registre porte donc `r7: null` et le statut reste `partielle` — jamais
   `validee-r7`. Elle doit être menée **avant toute promotion**, et de préférence avant le LOT B.
+  (Elle a été lancée le 2026-08-05 et interrompue par une limite d'usage de session avant sa
+  première vérification.)
+
+- **Contrôle par sondage de l'orchestrateur — ce n'est PAS une R-7.** Faute de pouvoir lancer la
+  relecture indépendante, 5 pages ont été re-vérifiées **contre les images du PDF** par
+  l'orchestrateur. Ce contrôle ne vaut pas R-7 pour deux raisons qu'il faut garder en tête : son
+  contexte **n'est pas vierge** (il a lu les rapports des transcripteurs) et l'échantillon — 5
+  pages sur 56, ~9 % — est **sous le seuil T-8** (100 % du critique + ≥15 % du reste).
+  Résultat : **5 vérifications, 0 erreur.**
+  - p.237 — سند 9 : titre « كيف ينشأ النموذج؟ », auteur imprimé **هانز فرودونتال**, référence
+    latine `Hans FREUDENTHAL, La sémantique du terme modèle, Paris 1978, pp 159-160`, et le سند
+    tient bien **sur une seule page** (تمهيد + texte + الكاتب + المهام), **sans encadré هامش**.
+    ✅ conforme, y compris la troisième graphie du nom.
+  - p.255 — البراديغم s'étend bien jusqu'à p.255, avec la rubrique **قيل في البراديغم**
+    (توماس كوهن, رولان أومناس) et l'encadré **لمزيد التعمّق**. ✅ conforme : le فهرس était bien
+    inexact, pas la fiche.
+  - p.264 — **`Karl POPER`** est bien imprimé avec **un seul P** (le `[sic]` est justifié) ;
+    la page ne porte **aucun questionnaire** ; la couverture reproduite indique
+    **عالم المعرفة n° 292 · أبريل/مايو · 2003**. ✅ conforme — le millésime 2003 a été reconfirmé
+    à 400 dpi après un doute de lecture à 150 dpi.
+  - p.270 — les **6 encadrés de مختصرات** sont bien au nombre de 6. ✅ conforme.
+  Ce que ce contrôle **ne dit rien** de : les 13 autres سندات, les thèses reformulées, le gabarit
+  لغة/اصطلاحا/فلسفيا des تحديدات, les سياقات فكريّة et les 4 exercices de كيفيّات التفكير. La R-7
+  reste entièrement à faire.
 - **Motif de l'arrêt** : limite d'usage de session atteinte (2026-08-04), qui a tué les deux
   sous-agents de transcription avant leur première écriture. Arrêt propre au dernier palier
   poussable (méthode, T-9/T-10) plutôt que fiche bâclée.
