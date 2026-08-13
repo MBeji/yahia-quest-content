@@ -155,7 +155,9 @@ recherche dans les sites · ressource externe sur un écran de correction (é23 
 - **D-6 — Aucune ouverture de CSP.** Contrairement à é23 (qui a dû ouvrir `frame-src` d'un host),
   un lien sortant ne demande **rien** : pas d'iframe, donc pas d'élargissement de la surface.
   C'est un gain net de sécurité par rapport au patron dont on hérite.
-- **D-7 — Gate anti-verbatim déterministe** : `scripts/content/check-verbatim.mjs` — n-grammes de
+- **D-7 — Gate anti-verbatim déterministe** — ⚠️ _amendé à l'exécution, voir le journal du
+  2026-08-13 : livré en `scripts/content/verbatim-checks.ts` (TypeScript) appelé par `content:qa`,
+  et non en `.mjs` autonome._ n-grammes de
   mots normalisés (casse, accents, ponctuation, espaces ; notation mathématique et formules
   **exclues** du calcul, sinon toute équation est un faux positif) entre les champs textuels
   générés et les transcriptions déclarées `autorisation: aucune`. Branché dans `content:qa`.
@@ -181,7 +183,7 @@ recherche dans les sites · ressource externe sur un écran de correction (é23 
 | lot | contenu (résumé)                                                                                        | fichiers/objets créés                                                                | tests exigés                                                             | dépend de       |
 | --- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ | --------------- |
 | 1   | **Doctrine** : profil `source-web` (D-2) + les 4 tiers (R-1/R-2) dans la méthode + gabarit de fiche      | amendement `METHODE-GENERATION-CONTENU.md` ; annexe B promue en gabarit               | relecture humaine ; `programme:check` vert                               | —               |
-| 2   | **Gate anti-verbatim** (D-7)                                                                            | `scripts/content/check-verbatim.mjs` + branchement `content:qa` (dépôt **moteur**)    | Vitest : cas positifs/négatifs, **0 faux positif sur le corpus existant** | 1               |
+| 2   | **Gate anti-verbatim** (D-7)                                                                            | `scripts/content/verbatim-checks.ts` + branchement `content:qa` (dépôt **moteur**)    | Vitest : cas positifs/négatifs, **0 faux positif sur le corpus existant** | 1               |
 | 3   | **Pilote T0+T2′** : qualification de la source d'appel + 1 chapitre 2ᵉ sc. généré, coût mesuré           | `sources-externes/web-<slug>/fiche.md` + 1 chapitre `content/`                        | gates contenu + `content-audit` sur la sortie                            | 1, 2            |
 | 4   | **T1 moteur** : registre + `chapter.resources[]` + compilation + UI « Pour aller plus loin »            | `content/ressources.json`, `schema.ts`, `sql-builder.ts`, migration, composant        | Vitest schéma/loader/UI ; pgTAP si colonne ; `content:qa` croisé lang     | 3 + **GO** Q-2  |
 | 5   | **T1 campagne** : allowlist validée (Q-1) + curation sur les chapitres pilotes + sonde de santé (R-12)   | entrées de registre + `scripts/content/check-resources.mjs`                            | sonde verte ; `content:check`                                            | 4               |
@@ -206,8 +208,11 @@ de doute sur les droits, STOP (R-2 de `content-ingest`). Les lots 1, 3, 5 sont o
 
 - **Lot 2** — Vitest sur le script : deux textes identiques ⇒ détecté ; paraphrase lointaine ⇒ non
   détecté ; énoncé contenant la même formule mais un contexte différent ⇒ **non** détecté (le
-  faux positif à ne pas produire) ; passe sur les 566 chapitres existants sans lever un seul
-  drapeau (preuve de non-régression du corpus).
+  faux positif à ne pas produire) ; **plus un test qui lance le vrai `content:qa --strict`** sur un
+  corpus jouet — la logique prouve qu'on détecte, seul le câblage prouve que le gate est branché
+  dessus. La non-régression du corpus réel (aucun drapeau sur les chapitres existants) se mesure
+  dans la **Content CI privée**, pas dans le moteur : le corpus n'y est pas, et avec zéro fiche
+  surveillée le contrôle y est un no-op.
 - **Lot 4** — Vitest : schéma (`resourceId` mal formé, `site` hors enum, 3 ressources, ids
   dupliqués, `lang` divergente) ; loader ; `sql-builder` (JSONB émis) ; composant (état vide,
   interstitiel, `rel`/`target`, RTL). pgTAP si une colonne est ajoutée (grants explicites —
@@ -275,6 +280,27 @@ de doute sur les droits, STOP (R-2 de `content-ingest`). Les lots 1, 3, 5 sont o
   l'egress de la session (`EGRESS_BLOCKED`), et l'index de recherche disponible ne le remonte pas.
   L'annexe A est donc une liste à qualifier et non une allowlist ; c'est aussi ce qui a produit
   RISK-7, qui vaut pour toute campagne future de sources web depuis une session cloud.
+
+- **2026-08-13 — Lot 2 écrit et vert, en attente de Q-5** : moteur
+  [arena#722](https://github.com/MBeji/yahia-quest-arena/pull/722), **volontairement en draft** —
+  le push l'avait ouverte ready avec l'auto-merge armé, or c'est Q-5 qui dit si ce lot sort du gel.
+  Trois notes qui appartiennent à l'étude, pas seulement à la PR :
+
+  - **Écart sur D-7, assumé et non silencieux** : livré en `scripts/content/verbatim-checks.ts`
+    (TypeScript, à côté de `qa-checks.ts`) appelé par `content:qa`, et non en `check-verbatim.mjs`
+    autonome. Deux motifs : un `.mjs` sans types ne s'importe dans `qa.ts` qu'au prix d'un
+    `@ts-expect-error` en code de production (DoD §2 le proscrit), et le corpus a **déjà** une
+    porte — lui en ajouter une seconde à armer séparément est la meilleure façon de n'en armer
+    aucune. La règle d'exécution n° 3 demande de remonter l'écart plutôt que de re-designer en
+    silence : c'est cette entrée.
+  - **Un piège de câblage qui aurait désarmé un tiers du contrôle** : les options de question sont
+    des objets `{ id, text }`. Le premier branchement les épandait telles quelles et produisait
+    `[object Object]` — aucun type levé, aucun test rouge, et les options hors surveillance sans
+    que rien ne le dise. D'où `questionTextSurface`, fonction à part et testée. À retenir pour le
+    lot 4, qui touchera les mêmes structures.
+  - **Ce que le lot ne prouve pas** : l'absence de faux positif sur le corpus réel. Le seuil
+    (Q-4) reste donc ouvert de droit **et** de fait — la première mesure viendra de la Content CI
+    privée le jour où une fiche existe.
 
 ---
 
