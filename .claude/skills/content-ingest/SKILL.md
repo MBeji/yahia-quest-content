@@ -56,6 +56,12 @@ récompenses, style, notation) et à `content-ecole-tn` (fidélité au programme
   humaine. **Aucune écriture DB**, aucun skip d'audit.
 - **R-2 — Provenance & droits.** Chaque source porte auteur / origine / autorisation ; un document sous
   droits sans autorisation est **refusé**. Les `chapter.sources[]` citent le document. Doute ⇒ **STOP**.
+  **Source du WEB** (site de devoirs, blog d'enseignant, portail d'annales) : profil `source-web` de la
+  méthode — déclare le **tier** avant le premier token. T0 (veille), T1 (lien sortant) et T2′ (génération
+  inspirée) ne demandent aucune autorisation ; seule la **transcription (T2)** en exige une, écrite. Tu
+  n'es appelé que pour T2 : sans autorisation en main, **tu ne transcris pas** — tu produis une fiche de
+  veille et tu passes la main aux skills de génération. `content:qa` vérifie l'absence de reprise verbatim
+  (étude 27 R-8), donc une copie « discrète » échouera le gate, pas la revue.
 - **R-3 — Programme d'abord.** Pour une matière scolaire, confronter la fiche à la **transcription CNP**
   (`programme/<grade>/<matière>.md`) si elle existe ; divergence de scope ⇒ le **programme officiel gagne**,
   signaler l'écart (règle `content-ecole-tn`).
