@@ -189,8 +189,8 @@ recherche dans les sites · ressource externe sur un écran de correction (é23 
 | 5   | **T1 campagne** : allowlist validée (Q-1) + curation sur les chapitres pilotes + sonde de santé (R-12)   | entrées de registre + `scripts/content/check-resources.mjs`                            | sonde verte ; `content:check`                                            | 4               |
 | 6   | **T2 (GELÉ)** : partenariat + transcription autorisée                                                   | —                                                                                    | —                                                                        | Q-3 + écrit signé |
 
-- [ ] Lot 1 — doctrine (profil + tiers + gabarit)
-- [ ] Lot 2 — gate anti-verbatim
+- [x] Lot 1 — doctrine (profil + tiers + gabarit) — méthode + `content-ingest` R-2, 2026-08-13
+- [x] Lot 2 — gate anti-verbatim — moteur [arena#722](https://github.com/MBeji/yahia-quest-arena/pull/722), mergé le 2026-08-13
 - [ ] Lot 3 — pilote T0+T2′ mesuré
 - [ ] Lot 4 — T1 moteur (GO humain)
 - [ ] Lot 5 — T1 campagne
@@ -301,6 +301,24 @@ de doute sur les droits, STOP (R-2 de `content-ingest`). Les lots 1, 3, 5 sont o
   - **Ce que le lot ne prouve pas** : l'absence de faux positif sur le corpus réel. Le seuil
     (Q-4) reste donc ouvert de droit **et** de fait — la première mesure viendra de la Content CI
     privée le jour où une fiche existe.
+
+- **2026-08-13 — Lot 1 livré : la doctrine quitte l'étude pour la méthode.** Le profil
+  `source-web` est le **cinquième** de `METHODE-GENERATION-CONTENU.md` (table + section dédiée :
+  les quatre tiers, la ligne T2′, les cinq règles, le gabarit d'en-tête en 8 champs), R-2 du socle
+  y renvoie, et `content-ingest` R-2 porte la règle sous la forme qui l'intéresse : **il n'est
+  appelé que pour T2, donc sans autorisation en main il ne transcrit pas** — il produit une fiche
+  de veille et passe la main. Deux choix de rédaction valent d'être notés :
+
+  - **Les deux pièges d'un T2 sont écrits là où on les rencontre**, pas seulement ici : un site
+    qui ré-héberge des PDF tiers n'a pas les droits à céder (plafond T2′ même s'il signe), et
+    l'accès n'est pas acquis (egress bloqué en session cloud). Une méthode qui tait ses
+    impasses les fait redécouvrir une campagne sur deux.
+  - **La méthode annonce que le gate vérifie**, et ne se contente pas d'interdire. La phrase
+    « ce n'est pas une consigne d'honneur » est là exprès : un agent qui sait que `content:qa`
+    mesure le recouvrement ne tente pas la paraphrase minimale.
+
+  Restent ouverts : Q-1 (allowlist), Q-2 (GO du T1, lot 4), Q-3 (courrier aux sites), Q-4 (seuil,
+  mesurable seulement quand une fiche existera). Le lot 3 (pilote T0+T2′) est débloqué.
 
 ---
 
