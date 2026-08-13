@@ -1,6 +1,9 @@
 # Étude 28 — Stratégie de référence : de la profondeur technique à la position de marché
 
-> **Statut** : brouillon — Q-1…Q-5 ouvertes, aucune n'est arbitrable par un exécuteur
+> **Statut** : brouillon — **Q-1 et Q-2 arbitrées le 2026-08-13** (Mohamed, toutes deux sur la
+> recommandation : position P-3 + renoncement à la vidéo acté ; critère de couverture amendé en
+> « classe de concours entière d'abord »). **Q-3, Q-4, Q-5 restent ouvertes** — l'étude ne passe
+> `validée` qu'une fois §7 vidée. **Lot 1 exécutable ; lot 2 sur son seul volet critère.**
 > **Priorité** : transverse (gouvernance de position — elle ne construit rien, elle ordonne) ·
 > **Valeur** : 🏁 le projet a une avance d'ingénierie réelle et **aucun canal d'acquisition
 > actif** ; cette étude nomme la position défendable, mesure l'écart qui l'en sépare, et
@@ -319,12 +322,24 @@ argumentée, et son §1.3 doit être relu à la première mesure réelle.
 > Aucune n'est arbitrable par un exécuteur. L'étude passe `validée` quand cette section est
 > arbitrée. **Seul Q-1 conditionne le lot 1** — et il ne le bloque pas : le lot 1 est écrit pour
 > être exécutable même si Q-2…Q-5 restent ouvertes.
+>
+> **État au 2026-08-13 : Q-1 et Q-2 sont arbitrées par Mohamed, toutes deux sur la
+> recommandation.** Le **lot 1 est donc exécutable**, et le lot 2 l'est sur son seul volet
+> « critère de couverture » (ses volets é02/é08 attendent encore Q-4/Q-3). L'étude **reste
+> `brouillon`** : Q-3, Q-4 et Q-5 sont ouvertes, et le statut ne bascule qu'une fois la section
+> vidée.
 
 - **Q-1 — La position revendiquée.** Valider P-3 — « la plateforme où l'élève tunisien
   s'entraîne et mesure sa maîtrise » — comme position de référence, et acter **le renoncement
   explicite** à concurrencer TakiAcademy sur le cours vidéo (P-1). _Recommandation : oui. C'est
   la seule position que le code déjà écrit permet de tenir, et le renoncement à P-1 est ce qui
   la rend finançable._
+  **Arbitrage (2026-08-13, Mohamed) : recommandation retenue, telle quelle.** P-3 est la
+  position de référence revendiquée, et **le renoncement à concurrencer TakiAcademy sur le cours
+  vidéo est acté** — ce n'est pas un renoncement par défaut mais une décision : il protège le
+  budget contre la seule dérive qui pourrait l'engloutir (la production vidéo), et il rend la
+  position tenable avec ce qui est déjà construit. Conséquence : **le lot 1 est ferme**, D-1
+  entre dans `go-live/05` en décision datée, et D-5 s'écrit sur l'action D2.
 
 - **Q-2 — Amender la cible de couverture rentrée (é26 A1-Q2).** L'arbitrage du 2026-07-20 fixe
   « statu quo consolidé à la barre é18, aucune classe vitrine ». Il produit une rentrée où la
@@ -335,6 +350,13 @@ argumentée, et son §1.3 doit être relu à la première mesure réelle.
   sessions** va à la file contenu face à la file V1 d'ici au 1ᵉʳ septembre.
   _Recommandation : amender sur le critère ; sur le budget, majorité à la file contenu jusqu'au
   1ᵉʳ septembre (V1 n'a plus de ligne prenable avant C4bis, ROADMAP §0.4 le constate déjà)._
+  **Arbitrage (2026-08-13, Mohamed) : recommandation retenue.** Le critère de priorité du fil
+  contenu devient **« classe de concours entière d'abord »** ; la **barre é18 et le refus de la
+  classe vitrine restent inchangés** — c'est un amendement de priorité, pas de qualité.
+  ⚠️ Cet arbitrage **amende é26 A1-Q2 du 2026-07-20** : la cible rentrée n'est plus « statu quo
+  consolidé », et le second volet (part du budget de sessions) suit la recommandation. Première
+  conséquence opérationnelle, à inscrire par le lot 2 : **`french-6eme` passe devant toute autre
+  ligne du fil contenu après C4bis** (D-4).
 
 - **Q-3 — Le canal enseignant.** Ouvrir le volet enseignant en re-scopant **é08** (qui
   s'intitule déjà « Analytics parents & enseignants ») et en la sortant de sa porte V4, ou
@@ -364,6 +386,7 @@ argumentée, et son §1.3 doit être relu à la première mesure réelle.
 | date | lot | PR | écarts acceptés / dettes notées |
 | --- | --- | --- | --- |
 | 2026-08-10 | — | (cette PR) | Étude créée. Statut `brouillon` : Q-1…Q-5 ouvertes. Aucun lot exécuté — le lot 1 est exécutable dès Q-1 arbitrée. |
+| 2026-08-13 | — | (cette PR) | **Q-1 et Q-2 arbitrées par Mohamed, toutes deux sur la recommandation.** Q-1 : position P-3 retenue **et renoncement à la vidéo acté**. Q-2 : critère de couverture amendé en « classe de concours entière d'abord », barre é18 et refus de la classe vitrine inchangés — ce qui **amende é26 A1-Q2 du 2026-07-20**. Le lot 1 devient ferme ; le lot 2 l'est sur son seul volet critère (ses volets é02/é08 attendent Q-4/Q-3). ⚠️ **Les deux lots restent à livrer dans leurs PR propres** (règle « un lot = une PR à file set distinct ») — cette PR-ci ne porte que l'étude. |
 | 2026-08-13 | — | (cette PR) | **Renumérotée 27 → 28.** L'étude 27 « Enrichissement par sources web tierces » a été ouverte et **mergée sur `main` le 2026-08-13** (#153) pendant que cette branche vivait ; première mergée, premier servie. Collision de **numéro** seulement : les deux sujets sont distincts et complémentaires (la 27 traite l'approvisionnement en contenu, celle-ci la position de marché — elle sert d'ailleurs M-2). Rien du fond n'a bougé. Leçon pour le protocole de réservation (`CONTRIBUER.md`) : **un numéro d'étude ne vaut que mergé**, et une branche longue doit re-sonder l'index avant de pousser. |
 | 2026-08-10 | — | (cette PR) | **Trois chiffres des docs re-mesurés et corrigés dans l'étude avant publication** (annexe A) : corpus, catalogue, et surtout le registre des misconceptions — « 5 entrées sans `competency` » est faux depuis #118, il y en a **56, toutes avec `competency`**. La première rédaction avait recopié le chiffre des docs ; la mesure l'a démenti. Dette laissée : STATUS.md et la ROADMAP portent encore les chiffres périmés — resynchronisation à faire, **hors lots de cette étude**. |
 | 2026-08-13 | — | (cette PR) | **Dette du 2026-08-10 soldée, par deux routes indépendantes.** La ROADMAP est resynchronisée par le privé **#150** — qui a au passage réparé la Content CI que la resynchro a révélée morte ; STATUS.md et AGENTS.md le sont par **arena#721** (registre 56/56, corpus 659 ch. / 22 146 q., et « Node 22 » corrigé en 24). Aucun lot de cette étude n'a bougé : elle reste `brouillon`, Q-1…Q-5 ouvertes. |
