@@ -1,0 +1,11 @@
+# 📜 Résumé : Structure de la matière à l'échelle macroscopique
+
+- **La masse ne compte pas les particules.** 1 g de fer contient 1,08 × 10²² atomes, 1 g de soufre 1,69 × 10²² : même masse, nombres différents. Il faut donc une autre grandeur, la **quantité de matière** — un ensemble de particules identiques.
+- **L'atome ne peut pas servir d'unité** : sa masse est trop faible pour être pesée, donc aucune expérience quantitative n'est possible à son échelle. On compte par paquets.
+- **Nombre d'Avogadro et mole.** **N est le nombre d'atomes contenus dans 0,012 kg de carbone**, soit **N = 6,02 × 10²³** (calcul : 0,012 ÷ 19,93 × 10⁻²⁷). L'unité de quantité de matière est la **mole** : la quantité de matière d'un ensemble contenant N particules identiques. Une mole de soufre pèse 32 g, une mole d'eau 18 g — des masses pesables.
+- **Masse molaire.** **Atomique** : masse d'une mole d'atomes, en **g·mol⁻¹** (H : 1 ; C : 12 ; O : 16). **Moléculaire** : masse d'une mole de molécules, égale à la **somme des masses molaires atomiques** — M(O₂) = 2 × 16 = 32 g·mol⁻¹ ; M(H₂O) = 2 × 1 + 16 = 18 g·mol⁻¹.
+- **Relation masse ↔ quantité de matière : m = n × M** (m en g, n en mol, M en g·mol⁻¹). Exemple : 0,10 mol de soufre pèse 0,10 × 32 = 3,2 g.
+- **Volume molaire Vm** = volume occupé par une mole de corps pur. **Solides et liquides** : propre à chaque corps (fer 7,2 cm³ ; plomb 18,3 cm³ ; eau 18 cm³ ; alcool éthylique 37,5 cm³). **Gaz** : le même pour tous dans les mêmes conditions — **22,4 L·mol⁻¹ à 0 °C**, **24 L·mol⁻¹ à 20 °C** — et environ mille fois plus grand que celui des solides et des liquides.
+- **Les deux lois.** **Avogadro** : des volumes égaux de gaz différents, dans les mêmes conditions de température et de pression, contiennent la même quantité de matière. **Avogadro-Ampère** : dans ces mêmes conditions, tous les gaz ont le même volume molaire.
+- **Relation volume ↔ quantité de matière : V = n × Vm**, ou n = V ÷ Vm. **⚠️ Convertir d'abord** : 120 cm³ = 0,12 L, donc n = 0,12 ÷ 24 = 5 × 10⁻³ mol.
+- **Double sens des symboles.** À l'échelle macroscopique, le symbole d'un atome désigne **une mole d'atomes**, la formule d'une molécule **une mole de molécules**, celle d'un ion **une mole d'ions**. H₂O, c'est une molécule d'eau à l'échelle microscopique, et 18 g d'eau à l'échelle macroscopique.
