@@ -58,7 +58,7 @@ jobs:
 
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
         with:
-          node-version: 22
+          node-version: 24
           cache: npm
           cache-dependency-path: engine/package-lock.json
 
@@ -118,6 +118,11 @@ jobs:
         if: steps.report.outputs.broken != '0'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Les DEUX checkouts de ce job sont dans un sous-dossier (`corpus/`, `engine/`) :
+          # la racine du workspace n'est donc pas un dépôt git, et `gh` n'a rien à déduire —
+          # il échoue sur « fatal: not a git repository ». Même cause et même remède que
+          # dans automerge.yml, qui tourne carrément sans checkout.
+          GH_REPO: ${{ github.repository }}
           BODY: ${{ steps.report.outputs.body }}
         run: |
           # Self-healing: the label is repo metadata nobody has to provision by
@@ -143,6 +148,9 @@ jobs:
         if: steps.report.outputs.broken == '0'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Voir l'étape ci-dessus : sans `GH_REPO`, `gh` ne sait pas sur quel dépôt il
+          # travaille. C'est cette étape-ci qui échouait à chacun des trois runs du garde.
+          GH_REPO: ${{ github.repository }}
         run: |
           EXISTING=$(gh issue list --label video-health --state open --limit 1 --json number --jq '.[0].number')
           if [ -n "$EXISTING" ]; then

@@ -99,6 +99,17 @@ Trois choses, et **aucune n'est technique** :
    `VERCEL_*` ont été posés le 2026-07-27 — le kill-switch était inopérant depuis son écriture.
    Tant que le test n'est pas joué, on ne sait pas s'il fonctionne, on l'espère.
 
+**Une quatrième condition s'ajoute le 2026-08-13** (étude 28 D-2, lot 1) — elle ne crée pas de
+porte supplémentaire, elle qualifie la Porte 1 :
+
+4. **Au moins un canal d'acquisition actif et mesuré.** D1 (page Facebook), D2 (école pilote) et
+   D3 (beta-testeurs) des [91-actions](./91-actions-mohamed.md) sont **tous les trois ouverts** :
+   il n'existe aujourd'hui **aucun canal**. GA4 et PostHog instrumentent un entonnoir dans lequel
+   personne n'entre par un canal choisi. **Une Porte 1 franchie sans utilisateur n'est pas un
+   lancement, c'est une mise en ligne** — d'où cette condition. ⚠️ **D2 ne s'engage pas avant que
+   le point 2 (GAP-024) soit livré et le point 1 (GAP-003) tranché** : démarcher un établissement
+   sans chemin de suppression des données d'un mineur est une faute, pas un raccourci (é28 D-5).
+
 Le reste est du **rituel d'exploitation** à démarrer, pas un blocage : triage hebdomadaire de
 `content_reports` + `bug_reports` (consoles `/admin/*` + skill `report-triage`, cf.
 [91-actions](./91-actions-mohamed.md) E3).
@@ -164,6 +175,11 @@ Dépendances clés :
 - [ ] Domaine + SSL + emails transactionnels prod (C4)
 - [ ] Process support + incidents actif (C7)
 - [ ] Plan de communication J-7 / J0 / J+7 prêt (C5)
+- [ ] **Au moins un canal d'acquisition actif et mesuré** (C5 / é28 D-2) — D1, D2 **ou** D3 des
+      91-actions ouvert et visible dans PostHog. Aujourd'hui : **aucun**
+- [ ] **Position de référence énoncée et tenue par les surfaces publiques** (C5 D5) — « on
+      s'entraîne », pas « on regarde » ; et le différenciateur **démontrable** (é28 P-4 : il ne
+      l'est pas tant que C4bis n'a pas tourné)
 - ~~Pricing + offre publiés (C6)~~ ⏸️ **gelé** (pivot gratuité — aucune offre payante en phase actuelle)
 
 > **Volet infra détaillé** (items C4 ci-dessus : monitoring, backup, domaine/SSL/emails) → grille

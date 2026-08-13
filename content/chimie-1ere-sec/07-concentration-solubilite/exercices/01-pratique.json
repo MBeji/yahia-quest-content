@@ -1,0 +1,82 @@
+{
+  "title": "⭐ Exercice : Calculer une concentration",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Dans quelle unité s'exprime une concentration massique ?",
+      "options": [
+        { "id": "a", "text": "Le gramme par litre" },
+        { "id": "b", "text": "La mole par litre" },
+        { "id": "c", "text": "Le gramme par mole" },
+        { "id": "d", "text": "Le litre par gramme" }
+      ],
+      "correctOption": "a",
+      "explanation": "La concentration massique rapporte une masse à un volume : elle s'exprime en g·L⁻¹ ✓. La mole par litre est l'unité de la concentration molaire, qui décrit la même solution autrement. Le gramme par mole est l'unité de la masse molaire, vue au chapitre précédent. Et le litre par gramme serait le rapport inversé, qui diminuerait quand la solution se concentre.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On dissout 9,0 g de sucre dans une solution de volume 0,100 L. Quelle est sa concentration massique ?",
+      "options": [
+        { "id": "a", "text": "90 g·L⁻¹" },
+        { "id": "b", "text": "0,9 g·L⁻¹" },
+        { "id": "c", "text": "9 g·L⁻¹" },
+        { "id": "d", "text": "0,011 g·L⁻¹" }
+      ],
+      "correctOption": "a",
+      "explanation": "On applique directement C = m ÷ V : 9,0 ÷ 0,100 = 90 g·L⁻¹ ✓, le volume étant déjà en litres. Le résultat 0,9 vient d'une division par 10 au lieu de 0,100. Reprendre 9 sans diviser oublie le volume, pourtant essentiel : la même masse dans deux litres donnerait une solution bien moins concentrée. Et 0,011 correspond au rapport inversé, le volume divisé par la masse.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle grandeur faut-il connaître pour passer d'une concentration massique à une concentration molaire ?",
+      "options": [
+        { "id": "a", "text": "La masse molaire du soluté" },
+        { "id": "b", "text": "Le volume molaire du solvant" },
+        { "id": "c", "text": "La température de la solution" },
+        { "id": "d", "text": "La solubilité du soluté" }
+      ],
+      "correctOption": "a",
+      "explanation": "La masse molaire convertit une masse en quantité de matière — c'est le pont entre les deux concentrations ✓, comme pour la glycémie où 2,79 g/L divisés par 180 g·mol⁻¹ donnent 15,48 mmol·L⁻¹. Le volume molaire relie un volume à une quantité de matière, ce qui concerne surtout les gaz. La température n'intervient pas dans cette conversion. Et la solubilité est une concentration particulière, pas un facteur de conversion.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que peut-on dire de la concentration d'une solution saturée ?",
+      "options": [
+        { "id": "a", "text": "Elle est maximale dans les conditions considérées" },
+        { "id": "b", "text": "Elle est nulle" },
+        { "id": "c", "text": "Elle continue d'augmenter si on ajoute du soluté" },
+        { "id": "d", "text": "Elle est la même pour tous les solutés" }
+      ],
+      "correctOption": "a",
+      "explanation": "La concentration croît tant que le soluté se dissout, puis plafonne à la saturation : c'est la concentration maximale ✓. Une concentration nulle décrirait du solvant pur. Ajouter encore du soluté ne change plus rien à la solution — le surplus tombe au fond en formant le dépôt. Et la valeur atteinte dépend du soluté : 49 g·L⁻¹ pour le bichromate de potassium contre 1500 pour l'iodure de potassium.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "À 20 °C, la solubilité du chlorure de sodium dans l'eau vaut 360 g·L⁻¹ et celle de l'iodure de potassium 1500 g·L⁻¹. Que conclut-on ?",
+      "options": [
+        { "id": "a", "text": "La solubilité dépend du soluté" },
+        { "id": "b", "text": "La solubilité dépend uniquement du solvant" },
+        { "id": "c", "text": "Ces deux valeurs sont incompatibles" },
+        { "id": "d", "text": "L'iodure de potassium est plus léger" }
+      ],
+      "correctOption": "a",
+      "explanation": "Même solvant, même température, et pourtant deux valeurs très différentes : dans les mêmes conditions, les solutés ne sont pas également solubles ✓. Le solvant compte aussi — le diiode le montre avec l'eau et l'alcool — mais il ne peut pas expliquer un écart observé à solvant identique. Les deux valeurs ne sont nullement incompatibles : elles décrivent deux corps distincts. Et la masse d'un corps ne détermine pas sa solubilité.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pourquoi du calcaire se dépose-t-il dans les chaudières ?",
+      "options": [
+        { "id": "a", "text": "Sa solubilité diminue quand la température augmente" },
+        { "id": "b", "text": "Sa solubilité augmente quand la température augmente" },
+        { "id": "c", "text": "L'eau chaude contient plus de calcaire" },
+        { "id": "d", "text": "Le calcaire se forme par chauffage de l'eau pure" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le calcaire est moins soluble à chaud qu'à froid : en chauffant, l'eau ne peut plus le garder dissous et il se dépose ✓ — même comportement que l'eau de chaux, qui se trouble en chauffant. Une solubilité croissante ferait au contraire disparaître le dépôt. L'eau chaude n'apporte pas de calcaire supplémentaire, c'est la même eau. Et le calcaire n'est pas fabriqué par le chauffage : il était déjà dissous, comme le montre le dépôt de la casserole.",
+      "difficulty": 3
+    }
+  ]
+}

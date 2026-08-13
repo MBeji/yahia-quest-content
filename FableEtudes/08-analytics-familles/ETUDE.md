@@ -1,6 +1,17 @@
 # Étude 08 — Analytics parents & enseignants
 
-> **Statut** : brouillon (⚠️ 2026-07-11 : le wording « ceux qui paient / abonnement » précède le pivot gratuité — en phase gratuite le suivi parent est un **pilier de l'offre gratuite** ; à re-scoper à la validation)
+> **Statut** : brouillon — **SON VOLET ENSEIGNANT SORT DE LA FILE DIFFÉRÉE V4 le 2026-08-13**
+> (é28 Q-3, arbitrée par Mohamed). Cette étude devient **propriétaire du canal enseignant** ;
+> aucune étude nouvelle n'est ouverte pour lui (le portefeuille reste resserré, é26 KPI-3).
+> Périmètre à re-scoper par l'architecte : **code de classe, liste d'élèves, taux de réussite par
+> chapitre** — la mécanique existe déjà, le rapport parent par code alliance est le même objet.
+> Motif (é28 M-3) : c'est le **seul canal à CAC ≈ 0** au budget réel de 1 000-2 000 TND/an — un
+> enseignant qui donne un chapitre en devoir apporte 30 élèves **et** 30 parents.
+> ⛔ **PRÉCONDITION DURE (é28 D-5)** : aucune démarche vers un établissement avant **GAP-024
+> livré** (suppression de compte + export/portabilité, absents de `src/`) et **GAP-003 tranché**.
+> Le **volet parent** (digest hebdo IA compris) reste, lui, derrière é04-A2.2.
+> ⚠️ 2026-07-11 : le wording « ceux qui paient / abonnement » précède le pivot gratuité — en
+> phase gratuite le suivi parent est un **pilier de l'offre gratuite** ; à réécrire au re-scopage.
 > **Priorité** : 08 · **Valeur** : rendre la progression visible et honnête pour les familles — le rapport parent devient un tableau de bord descriptif (temps, progression, matières, points faibles, examens blancs) · **Complexité** : moyenne
 > **Architecte** : Fable (claude-fable-5), 2026-07-04 · **Exécuteur cible** : Sonnet (ou équiv.)
 > **Dépend de** : étude 04 lot A0 (télémétrie `question_attempts`) pour les vues compétences ; étude 07 (knowledge graph — **en cours de rédaction** : table `user_competency_mastery`, maîtrise 0–100 par compétence) pour les points faibles ; étude 02 (examen blanc) pour le percentile · **Bloque** : —

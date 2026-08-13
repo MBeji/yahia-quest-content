@@ -1,0 +1,87 @@
+{
+  "title": "⚔️ Chapter boss ⭐⭐⭐: reporting, correcting, writing",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Put the six steps of the writing process back in the order you follow them, from the blank page to the finished article.",
+      "type": "ordering",
+      "options": [
+        { "id": "a", "text": "Writing the first draft" },
+        { "id": "b", "text": "Revising and editing" },
+        { "id": "c", "text": "Generating ideas" },
+        { "id": "d", "text": "Writing the final draft" },
+        { "id": "e", "text": "Planning and organizing the ideas" },
+        { "id": "f", "text": "Sharing and responding (peer review)" }
+      ],
+      "answerKey": { "order": ["c", "e", "a", "f", "b", "d"] },
+      "explanation": "You cannot organize ideas you have not generated, so generating ideas comes first and planning and organizing them second. The first draft is written from that plan, and it is the draft — not the plan — that a classmate reads, so sharing and responding follows it. Revising and editing comes next because it works on the marks you have just received: revising changes the content, editing checks spelling, punctuation, grammar and linkers. Only when nothing is left to change do you copy out the final draft and give its format and layout your attention. Content before form, always.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "A classmate has written: \"The school has a ramp at its entrance. Therefore, pupils in wheelchairs still cannot reach the first floor.\" Which symbol of the correction code do you write above \"Therefore\"?",
+      "options": [
+        { "id": "a", "text": "W.O." },
+        { "id": "b", "text": "V" },
+        { "id": "c", "text": "G" },
+        { "id": "d", "text": "W.L" }
+      ],
+      "correctOption": "d",
+      "explanation": "The code keeps a symbol of its own for a link word that does not fit the relation between two ideas: W.L, wrong linker. Here the second sentence contradicts the first, so a linker of contrast such as However was needed, not a linker of consequence. V is kept for an ordinary word that does not exist or does not fit the meaning, G for a mistake in a grammatical form, and W.O. for words placed in the wrong order.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "You are proof-reading the school newsletter. Tick EVERY sentence in which the tense is wrong.",
+      "type": "multi",
+      "options": [
+        { "id": "a", "text": "The canteen has reopened last Thursday." },
+        { "id": "b", "text": "We have collected four hundred books so far." },
+        { "id": "c", "text": "The head has retired in 2019 after thirty years." },
+        { "id": "d", "text": "Our team lost the final three weeks ago." },
+        { "id": "e", "text": "The library is closed since the storm." }
+      ],
+      "answerKey": { "correct": ["a", "c", "e"] },
+      "explanation": "\"Last Thursday\" and \"in 2019\" both name a moment that is over and closed, and a closed marker forbids the present perfect: the canteen reopened last Thursday, the head retired in 2019. \"Since the storm\" dates the start of a situation that still holds, so the library has been closed since the storm — a present simple cannot carry a since-phrase of that kind. The two sentences that are already right are the ones nobody touches: \"so far\" reaches the present and takes have collected, and \"three weeks ago\" is closed and takes lost.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On Sunday a coach told a reporter: \"We chose our team yesterday, and today we are training on the new pitch.\" Which sentence reports his words correctly?",
+      "options": [
+        { "id": "a", "text": "He said that they chose their team yesterday and that today they were training on the new pitch." },
+        { "id": "b", "text": "He said that they have chosen their team the day before and that that day they were training on the new pitch." },
+        { "id": "c", "text": "He said that they had chosen their team the day before and that that day they were training on the new pitch." },
+        { "id": "d", "text": "He said that they had chosen their team the previous day and that that day they are training on the new pitch." }
+      ],
+      "correctOption": "c",
+      "explanation": "Reporting after a past verb moves three things at once. The tenses step back: the past simple chose becomes the past perfect had chosen, and the present are becomes were. The time words move away from the moment of speaking: yesterday becomes the day before, today becomes that day. Leaving yesterday and today untouched reports nothing at all; have chosen steps the tense back but not far enough; and the version that keeps are leaves one verb behind in the present although the other has moved.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "A parent asked the school secretary: \"When does the bus leave today?\" Which sentence reports the question?",
+      "options": [
+        { "id": "a", "text": "The parent asked when did the bus leave that day." },
+        { "id": "b", "text": "The parent asked when the bus left that day." },
+        { "id": "c", "text": "The parent asked to the secretary when the bus left that day." },
+        { "id": "d", "text": "The parent asked when the bus leaves today." }
+      ],
+      "correctOption": "b",
+      "explanation": "A reported question stops being a question: the subject goes back in front of its verb and the auxiliary do disappears into the verb itself, so \"when does the bus leave\" becomes \"when the bus left\", and today becomes that day. Keeping the auxiliary of the direct question is the commonest mistake in the whole chapter; you ask somebody, never \"ask to somebody\"; and leaving both the present verb and \"today\" untouched reports nothing at all.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Complete: \"The last twenty minutes of the match were ___ and the goalkeeper's mother was too ___ to watch.\"",
+      "options": [
+        { "id": "a", "text": "worried … worrying" },
+        { "id": "b", "text": "worrying … worried" },
+        { "id": "c", "text": "worrying … worrying" },
+        { "id": "d", "text": "worried … worried" }
+      ],
+      "correctOption": "b",
+      "explanation": "An adjective in -ed says how somebody feels, an adjective in -ing says what causes the feeling. The last twenty minutes cause the feeling, so they are worrying; the goalkeeper's mother is the one who feels it, so she is too worried to watch. Swapping the two makes the minutes the sufferer and the mother the cause; calling both of them worrying leaves nobody actually feeling anything; and calling both of them worried gives a feeling to a stretch of time, which cannot have one.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Peser et mesurer une quantité de matière",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Un ballon contient un volume V = 120 cm³ de dioxygène gazeux, dans des conditions où Vm = 24 L·mol⁻¹. Quelle quantité de matière contient-il ?",
+      "options": [
+        { "id": "a", "text": "5 × 10⁻³ mol" },
+        { "id": "b", "text": "5 mol" },
+        { "id": "c", "text": "2880 mol" },
+        { "id": "d", "text": "0,2 mol" }
+      ],
+      "correctOption": "a",
+      "explanation": "Il faut d'abord convertir le volume dans l'unité du volume molaire : 120 cm³ = 0,12 L, puis n = V ÷ Vm = 0,12 ÷ 24 = 5 × 10⁻³ mol ✓. Le résultat 5 mol vient d'avoir divisé 120 par 24 sans convertir, ce qui est l'erreur classique de cet exercice. La valeur 2880 vient d'une multiplication au lieu d'une division. Et 0,2 s'obtient en inversant le rapport, soit Vm ÷ V.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une mole de fer pèse 56 g et occupe 7,2 cm³ ; une mole de plomb pèse 207,2 g et occupe 18,3 cm³. Que peut-on en conclure ?",
+      "options": [
+        { "id": "a", "text": "Le volume molaire d'un solide dépend du corps considéré" },
+        { "id": "b", "text": "Tous les solides ont le même volume molaire" },
+        { "id": "c", "text": "Le volume molaire augmente toujours avec la masse molaire" },
+        { "id": "d", "text": "Le volume molaire d'un solide vaut 22,4 L·mol⁻¹" }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux solides, deux volumes molaires différents : chaque corps a le sien ✓, contrairement aux gaz qui partagent le même dans les mêmes conditions. Affirmer l'égalité contredit directement les deux mesures données. Aucune loi ne relie proportionnellement volume molaire et masse molaire pour les solides : la comparaison de deux corps ne suffit pas à établir une règle générale. Et 22,4 L·mol⁻¹ est le volume molaire d'un gaz à 0 °C, mille fois supérieur à ces valeurs.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Avec M(H) = 1, M(C) = 12 et M(O) = 16 g·mol⁻¹, que vaut la masse molaire du dioxyde de carbone CO₂ ?",
+      "options": [
+        { "id": "a", "text": "44 g·mol⁻¹" },
+        { "id": "b", "text": "28 g·mol⁻¹" },
+        { "id": "c", "text": "32 g·mol⁻¹" },
+        { "id": "d", "text": "12 g·mol⁻¹" }
+      ],
+      "correctOption": "a",
+      "explanation": "On additionne les masses molaires atomiques en respectant les indices : 12 + 2 × 16 = 44 g·mol⁻¹ ✓. Le résultat 28 vient d'avoir compté un seul oxygène au lieu des deux annoncés par l'indice. La valeur 32 correspond aux deux oxygènes seuls, en oubliant le carbone. Et 12 est la masse molaire du carbone pris isolément.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un ballon vide pèse 84,60 g. Rempli de dioxygène, il pèse 84,76 g. Avec M(O₂) = 32 g·mol⁻¹, quelle quantité de dioxygène contient-il ?",
+      "options": [
+        { "id": "a", "text": "5 × 10⁻³ mol" },
+        { "id": "b", "text": "2,65 mol" },
+        { "id": "c", "text": "5,12 g" },
+        { "id": "d", "text": "0,16 mol" }
+      ],
+      "correctOption": "a",
+      "explanation": "La masse de gaz s'obtient par différence : 84,76 − 84,60 = 0,16 g, puis n = m ÷ M = 0,16 ÷ 32 = 5 × 10⁻³ mol ✓. Le résultat 2,65 vient d'avoir divisé la masse totale du ballon rempli au lieu de la seule masse de gaz. La valeur 5,12 g est une masse, exprimée en grammes, alors que la question demande une quantité de matière. Et 0,16 est la masse de gaz elle-même, à laquelle il reste à appliquer la relation.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pourquoi n'a-t-on pas choisi l'atome comme unité de quantité de matière ?",
+      "options": [
+        { "id": "a", "text": "Sa masse est trop faible pour être pesée, donc inutilisable en pratique" },
+        { "id": "b", "text": "Parce que les atomes sont tous différents" },
+        { "id": "c", "text": "Parce qu'un atome n'est pas une particule identique aux autres" },
+        { "id": "d", "text": "Parce que le nombre d'Avogadro était déjà défini" }
+      ],
+      "correctOption": "a",
+      "explanation": "La masse d'un atome est de l'ordre de 10⁻²⁶ kg : aucune balance ne la mesure, donc aucune expérience quantitative n'est possible à cette échelle ✓. C'est bien un obstacle pratique, pas théorique. La diversité des atomes n'empêcherait pas d'en faire une unité, puisqu'on compte des particules identiques entre elles. Deux atomes d'un même corps sont d'ailleurs identiques. Et le nombre d'Avogadro a été introduit pour résoudre ce problème, il ne lui préexistait pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un prélèvement de 50 L d'air contient 0,012 g de dioxyde de soufre, de masse molaire 64 g·mol⁻¹. Le seuil de pollution est fixé à 3 × 10⁻⁵ mol par m³ d'air. Cet air est-il pollué ?",
+      "options": [
+        { "id": "a", "text": "Oui : environ 3,75 × 10⁻³ mol·m⁻³, bien au-dessus du seuil" },
+        { "id": "b", "text": "Non : 1,875 × 10⁻⁴ mol, en dessous du seuil" },
+        { "id": "c", "text": "Non : la masse prélevée est trop faible pour compter" },
+        { "id": "d", "text": "On ne peut pas conclure sans connaître la température" }
+      ],
+      "correctOption": "a",
+      "explanation": "On calcule d'abord la quantité de matière : n = 0,012 ÷ 64 = 1,875 × 10⁻⁴ mol, contenue dans 50 L soit 0,050 m³. On ramène ensuite au mètre cube : 1,875 × 10⁻⁴ ÷ 0,050 = 3,75 × 10⁻³ mol·m⁻³, soit plus de cent fois le seuil ✓. Répondre 1,875 × 10⁻⁴ mol revient à comparer la quantité prélevée au seuil sans la ramener au mètre cube, donc à confronter deux grandeurs qui ne se comparent pas. Une masse faible ne dit rien tant qu'on ne l'a pas rapportée au volume. Et la température n'est pas nécessaire ici, puisqu'on passe par la masse et non par le volume molaire.",
+      "difficulty": 3
+    }
+  ]
+}
