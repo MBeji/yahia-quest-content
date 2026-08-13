@@ -1,0 +1,10 @@
+# 📜 Résumé : Molécules et ions polyatomiques
+
+- **Une molécule est un assemblage d'atomes**, électriquement **neutre**, et **les molécules d'un corps pur sont identiques**. La photographie au microscope électronique de la phtalocyanine de cuivre montre directement cet assemblage.
+- **Corps simple ou composé.** Atomes **identiques** dans la molécule → **corps pur simple** (dihydrogène, dioxygène, ozone) ; atomes **différents** → **corps pur composé** (eau, dioxyde de carbone). C'est la nature des atomes qui décide, jamais leur nombre — l'ozone a trois atomes et reste simple.
+- **Deux modèles.** Le **modèle compact** (boules qui s'interpénètrent) montre la **disposition** des atomes et l'encombrement ; le **modèle éclaté** (petites boules reliées par des tiges) montre **comment les atomes sont liés**. Angles et distances sont respectés dans les deux.
+- **Trois critères distinguent deux molécules** : la **nature** des atomes, leur **nombre** (l'**atomicité**), leur **disposition dans l'espace** (la **géométrie** : linéaire, plane ou spatiale).
+- **La formule d'une molécule.** Symboles des atomes, nombre de chacun **en indice en bas à droite**, **l'indice 1 ne s'écrit pas** : O₂, O₃, Cl₂, H₂O, NH₃, CO₂, et le saccharose C₁₂H₂₂O₁₁ (12 C, 22 H, 11 O). **Un corps pur à structure moléculaire a la même formule que sa molécule.**
+- **Les ions polyatomiques.** Entité chimique **chargée** formée de **plusieurs atomes liés** : ion ammonium NH₄⁺ (1 N + 4 H), ion carbonate CO₃²⁻, ion sulfate SO₄²⁻, ion hydronium H₃O⁺, ion nitrate (1 N + 3 O, négatif). La **charge se porte en haut à droite de la formule entière**.
+- **⚠️ Deux étages à ne pas mélanger.** L'**indice en bas** compte des **atomes** ; la **charge en haut** compte des **charges élémentaires**. Dans SO₄²⁻ : quatre atomes d'oxygène, deux charges négatives pour l'ion entier.
+- **La formule statistique.** Un corps pur à structure ionique s'écrit en respectant la composition en ions **et la neutralité électrique** : NaCl (1 Na⁺ pour 1 Cl⁻), NH₄Cl, Na₂CO₃ — deux ions sodium sont nécessaires pour compenser les deux charges négatives de l'ion carbonate.
