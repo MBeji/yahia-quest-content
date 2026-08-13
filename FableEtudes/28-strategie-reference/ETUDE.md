@@ -1,4 +1,4 @@
-# Étude 27 — Stratégie de référence : de la profondeur technique à la position de marché
+# Étude 28 — Stratégie de référence : de la profondeur technique à la position de marché
 
 > **Statut** : brouillon — Q-1…Q-5 ouvertes, aucune n'est arbitrable par un exécuteur
 > **Priorité** : transverse (gouvernance de position — elle ne construit rien, elle ordonne) ·
@@ -12,7 +12,7 @@
 > Q-2 **amende un arbitrage rendu** (é26 A1-Q2, cible de couverture rentrée), et son Q-4
 > déplace é02 hors de la file différée V2
 > **Docs normatifs liés** : AGENTS.md, STATUS.md, `FableEtudes/ROADMAP.md`, étude 26 (doctrine
-> verticale — cette étude en est le pendant **externe** : é26 regarde le produit, é27 regarde
+> verticale — cette étude en est le pendant **externe** : é26 regarde le produit, é28 regarde
 > le marché), `go-live/05-plan-marketing-commercial.md`, `go-live/91-actions-mohamed.md`
 
 **Fiche de verticalité** (é26 D-2) — **Verticale** : transverse (gouvernance) ·
@@ -338,7 +338,7 @@ argumentée, et son §1.3 doit être relu à la première mesure réelle.
 
 - **Q-3 — Le canal enseignant.** Ouvrir le volet enseignant en re-scopant **é08** (qui
   s'intitule déjà « Analytics parents & enseignants ») et en la sortant de sa porte V4, ou
-  ouvrir une étude dédiée é28 ? _Recommandation : re-scoper é08 — le sujet est le sien, une
+  ouvrir une étude dédiée (é29, 27 et 28 étant prises) ? _Recommandation : re-scoper é08 — le sujet est le sien, une
   étude de plus disperserait un portefeuille que é26 KPI-3 cherche à resserrer. Sous réserve
   D-5 (rien ne s'engage avant GAP-024/GAP-003)._
 
@@ -364,6 +364,7 @@ argumentée, et son §1.3 doit être relu à la première mesure réelle.
 | date | lot | PR | écarts acceptés / dettes notées |
 | --- | --- | --- | --- |
 | 2026-08-10 | — | (cette PR) | Étude créée. Statut `brouillon` : Q-1…Q-5 ouvertes. Aucun lot exécuté — le lot 1 est exécutable dès Q-1 arbitrée. |
+| 2026-08-13 | — | (cette PR) | **Renumérotée 27 → 28.** L'étude 27 « Enrichissement par sources web tierces » a été ouverte et **mergée sur `main` le 2026-08-13** (#153) pendant que cette branche vivait ; première mergée, premier servie. Collision de **numéro** seulement : les deux sujets sont distincts et complémentaires (la 27 traite l'approvisionnement en contenu, celle-ci la position de marché — elle sert d'ailleurs M-2). Rien du fond n'a bougé. Leçon pour le protocole de réservation (`CONTRIBUER.md`) : **un numéro d'étude ne vaut que mergé**, et une branche longue doit re-sonder l'index avant de pousser. |
 | 2026-08-10 | — | (cette PR) | **Trois chiffres des docs re-mesurés et corrigés dans l'étude avant publication** (annexe A) : corpus, catalogue, et surtout le registre des misconceptions — « 5 entrées sans `competency` » est faux depuis #118, il y en a **56, toutes avec `competency`**. La première rédaction avait recopié le chiffre des docs ; la mesure l'a démenti. Dette laissée : STATUS.md et la ROADMAP portent encore les chiffres périmés — resynchronisation à faire, **hors lots de cette étude**. |
 | 2026-08-13 | — | (cette PR) | **Dette du 2026-08-10 soldée, par deux routes indépendantes.** La ROADMAP est resynchronisée par le privé **#150** — qui a au passage réparé la Content CI que la resynchro a révélée morte ; STATUS.md et AGENTS.md le sont par **arena#721** (registre 56/56, corpus 659 ch. / 22 146 q., et « Node 22 » corrigé en 24). Aucun lot de cette étude n'a bougé : elle reste `brouillon`, Q-1…Q-5 ouvertes. |
 

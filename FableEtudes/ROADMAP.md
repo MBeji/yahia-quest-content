@@ -1,23 +1,36 @@
 # ROADMAP — ordre d'exécution du reste-à-faire (études, lots, contenu)
 
-<!-- roadmap-sync: since-pr=709 -->
+<!-- roadmap-sync: since-pr=716 -->
 
-> **Instantané du 2026-08-03** (créé le 2026-07-20, resynchronisé contre `main` les 2026-07-25,
-> 2026-07-27, 2026-07-29, 2026-08-01 puis le **2026-08-03**) — déclinaison opérationnelle de l'**étude 26 (doctrine verticale : profondeur
+> **Instantané du 2026-08-10** (créé le 2026-07-20, resynchronisé contre `main` les 2026-07-25,
+> 2026-07-27, 2026-07-29, 2026-08-01, 2026-08-03 puis le **2026-08-10**) — déclinaison opérationnelle de l'**étude 26 (doctrine verticale : profondeur
 > avant largeur)**. Les Q-1…Q-5 de l'étude 26 ayant été **arbitrées le 2026-07-20**, cet ordre
 > n'est plus une recommandation d'architecte : il est **officiel**. Les arbitrages **A1→A8**
 > (2026-07-20) puis **A9→A14** (2026-08-02) sont rendus : cette seconde session a vidé les
 > questions internes des études 04 et 09, et tranché le périmètre du tagging, le lien
 > misconception → compétence et le statut du check pgTAP. L'état de référence reste
 > [STATUS.md](../STATUS.md) + l'[index des études](./README.md).
-> **Jalon produit : rentrée scolaire, 1ᵉʳ septembre 2026** (§7) — **J-29**.
+> **Jalon produit : rentrée scolaire, 1ᵉʳ septembre 2026** (§7) — **J-22**.
 >
-> ⚠️ **Ce que la resynchronisation du 2026-08-03 a corrigé, et pourquoi ça compte** : trois lots
-> livrés les 2026-08-02/03 manquaient (**arena#706 · #707 · #708**), dont **la ligne 9, que ce
-> fichier donnait encore ouverte** — une session prenant « la première ligne non cochée » aurait
-> réimplémenté un geste déjà sur `main`. Et **F6 justifiait l'inaction du triage par un fait
-> réfuté** : arena#638 est close depuis le 2026-07-27, l'e2e n'a jamais écrit en prod. Un motif
-> périmé garde un chantier fermé aussi efficacement qu'un vrai blocage.
+> ⚠️ **Ce que la resynchronisation du 2026-08-10 a corrigé — et le fait qui commande la file
+> aujourd'hui.** **37 PR livrées n'étaient citées nulle part** : 30 ici (#117 → #148) et 7 au
+> moteur (arena#710 → #716). Le gate `roadmap-sync` était **vert** pendant tout ce temps, et il
+> avait raison de l'être : il ne lit que les sujets de commit du **moteur** en forme
+> « étude/lot » — or ces sept jours se sont joués **au privé**, où il ne regarde pas. Un gate vert
+> n'a jamais voulu dire « la roadmap est à jour » ; il veut dire « rien de ce que je sais lire ne
+> manque ».
+>
+> **Le point dur a changé de nature.** Ce n'est plus C4bis : c'est que **du contenu mergé,
+> audité et validé n'atteint aucun élève**. La garde `content-drift` tient l'issue **#124**
+> ouverte depuis le 2026-08-04 sur **18 sujets** — dont la campagne lycée anglais/français
+> **en entier**, jamais publiée. Et elle a été écrite pendant que le **garde pédagogique était en
+> panne** (#81, quatre runs échoués : 07-29, 08-01, 08-05, 08-08). Les deux nouvelles lignes sont
+> **C11** (§5) et **F10** (§4) — aucun des deux chantiers n'avait de ligne, alors que les deux
+> issues étaient ouvertes et visibles.
+>
+> ⚠️ Quatre lignes décrivaient un état **factuellement faux** — corrigées ici : **C4bis** (son
+> étape 0 est faite, #118), **C3** (4 matières sur 5 en prod), **C9** (une campagne lycée entière
+> livrée), **F5** (son reliquat n'est pas que humain : il est **du code**).
 
 ## 0. Mode d'emploi (comment exécuter cette roadmap)
 
@@ -32,11 +45,17 @@
    jusqu'au 2026-08-01 — voir l'encart du §2.
 4. Priorité inter-files en cas de choix : finir l'en-vol (§1) > PRODUIT > FONDATIONS >
    CONTENU nouveau (les corrections qualité contenu passent, elles, avant tout — P-4).
-   ⚠️ **Exception constatée au 2026-08-03, et elle prime sur cet ordre** : la première ligne à
-   prendre est **C4bis** (§5), une ligne CONTENU. La règle « PRODUIT d'abord » suppose que la
-   file PRODUIT a une ligne prenable — or la 15 livrerait un écran vide et la 9 est close. Une
-   ligne de contenu qui **allume quatre lots déjà mergés** vaut mieux qu'une ligne produit qui
-   en ajoute un cinquième inerte. L'ordre sert la valeur livrée ; il ne la remplace pas.
+   ⚠️ **Exception constatée au 2026-08-03, ré-arbitrée le 2026-08-10 — elle prime sur cet
+   ordre.** L'ordre à prendre est **C11 → F10 → C4bis**, trois lignes hors file PRODUIT.
+   La règle « PRODUIT d'abord » suppose que la file PRODUIT a une ligne prenable — or la 15
+   livrerait un écran vide et la 9 est close.
+   **C11 d'abord parce que c'est le seul geste qui ne produit rien et livre tout** : 18 sujets
+   sont écrits, audités, mergés — et invisibles. À J-22, publier ce qui existe bat écrire ce qui
+   n'existe pas, quelle que soit la file. **F10 ensuite** : le garde pédagogique est en panne
+   depuis le 2026-07-29, donc tout ce qui s'écrit d'ici là s'écrit sans filet — le réparer avant
+   la campagne suivante coûte un jeton, après coûte un audit. **C4bis en troisième**, inchangée
+   sur le fond : elle reste la ligne qui **allume quatre lots déjà mergés**.
+   L'ordre sert la valeur livrée ; il ne la remplace pas.
 
 ### Comment cet ordre reste vrai (règle amendée le 2026-07-25)
 
@@ -118,6 +137,10 @@ vivre, arena#701) · é24 Q-4 (démarche OTDAV/INNORPI) · F5 (légal avant rent
 (artefact e2e, cause corrigée par #618 — état **non vérifiable depuis ce dépôt**) ·
 le **test à blanc de `rollback-prod.yml`** (`freeze-only` puis `unfreeze`) et les **gabarits
 d'e-mail FR** à coller dans Supabase (STATUS §2 du 2026-07-27).
+**Ajouté le 2026-08-10** : le **renouvellement du secret `CLAUDE_CODE_OAUTH_TOKEN`** de ce dépôt
+(`claude setup-token`) — c'est le geste humain que F10 attend, et le seul qui remette le garde
+pédagogique en marche. ⚠️ Celui-ci n'est **pas** « sans blocage de file » : il conditionne la
+qualité de tout ce qui s'écrira ensuite.
 
 **A15/A16 — deux arbitrages NEUFS, produits par l'exécution du 2026-08-03** (arena#708, é09
 lot 2). Ils ne sont pas des questions d'étude restées ouvertes : le simulateur les a **fabriqués
@@ -130,6 +153,12 @@ revirement.
 | A15 | **G-1 (niveau 5 en 7-14 j) échoue des DEUX côtés** : l'assidu l'atteint au jour 6, le moyen au jour 31. À 3 j/semaine × 2 exercices, 800 XP demandent ~5 semaines — le seuil est arithmétiquement hors d'atteinte | **Recaler G-1** (une fenêtre par persona, ou une cible qui décrive le moyen). ⚠️ Ne PAS retoucher `gamification.ts` pour faire passer le test : ce serait régler l'outil        |
 | A16 | **G-4 (shields ≤ 20 % des jours manqués) échoue à 38 %** — celui-là est un **signal d'économie**, pas un seuil trop serré : à 15 coins, le rachat de série est bon marché face au revenu                 | Desserrer le seuil **ou** renchérir le shield. C'est le premier réglage d'équilibrage que la mesure rend possible — la revue est **mensuelle** (A9), rien n'oblige à trancher ce jour |
 
+⏳ **Toujours en attente au 2026-08-10** — une semaine après leur production. Rien ne les
+relance et rien ne les bloque : la revue d'économie est **mensuelle** (A9), donc A16 peut
+légitimement attendre. **A15 est différent** : tant que G-1 reste au tableau, `economy:check`
+échoue **par construction**, et un garde-fou qui échoue toujours cesse d'être lu — c'est le
+mécanisme exact par lequel le garde pédagogique (#81) est resté en panne douze jours.
+
 Écart d'énoncé relevé au passage, sans arbitrage : l'étude é09 écrit « niveau 5 (1 000 XP) » ;
 avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit le niveau.
 **~~F4~~ en sort** : domaine, monitoring, analytics et sitemap sont **faits, constatés le
@@ -139,14 +168,21 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
 
 > Objectif : refermer les trois boucles mortes (SM-2, misconceptions, adaptativité) et porter
 > la boucle d'apprentissage à M3 avant la rentrée.
-> **État au 2026-08-03 : 14 des 19 lignes livrées. La ligne 9 est CLOSE** (arena#689, #691,
-> #695, **#707**) — son reliquat, le geste « m'entraîner », est livré le 2026-08-03 sur
-> l'arbitrage A12. Restent **15, 16** (é04 A2) et **17-19** (é11, hors file par A1).
+> **État au 2026-08-10 : 14 des 19 lignes livrées, inchangé depuis le 2026-08-03.** La ligne 9
+> est CLOSE (arena#689, #691, #695, **#707**) — son reliquat, le geste « m'entraîner », est livré
+> le 2026-08-03 sur l'arbitrage A12. Restent **15, 16** (é04 A2) et **17-19** (é11, hors file
+> par A1). **Aucune ligne PRODUIT n'a bougé cette semaine** : les 37 PR de la période sont du
+> contenu, de la transcription et des correctifs de moteur.
 > ⚠️ **La 15 n'est PAS prenable telle quelle** : **le corpus ne porte toujours aucun tag de
-> misconception** (0 occurrence sur ~18 700 questions, re-mesuré le 2026-08-03 ; le registre
-> `content/misconceptions.json` compte 5 entrées, **aucune ne déclare son `competency`**). Tout
-> l'étage « erreur nommée / points faibles » est alimenté par du vide — y compris le geste que
-> #707 vient de livrer. Le déblocage est **C4bis** (§5), un travail de contenu, pas de code.
+> misconception** — 0 occurrence sur ~18 700 questions, re-mesuré **inchangé le 2026-08-10**.
+> Tout l'étage « erreur nommée / points faibles » est alimenté par du vide, y compris le geste
+> que #707 a livré. Le déblocage est **C4bis** (§5), un travail de contenu, pas de code.
+> ✅ **Mais son étape 0 est faite** (#118, 2026-08-04) : le registre
+> `content/misconceptions.json` est passé de **5 à 56 entrées**, et **les 56 déclarent leur
+> `competency`** — les 51 neuves couvrent les 13 chapitres de `math` 9ᵉ, les 5 anciennes ont
+> gagné le champ qui leur manquait. Ce n'est **pas** un détail de comptage : la moitié du travail
+> que la ligne 15 attend existe désormais, et une session qui lit « 5 entrées, aucun
+> `competency` » la referait.
 
 **Étape A — réparer le parcours (étude 22, validée — 6 lots) — ✅ ÉTUDE CLOSE le 2026-07-21**
 
@@ -190,13 +226,15 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
       est vérifiée à la source par `content:qa`, sur les deux à la fois) ; la server fn vit dans
       `quest.training.ts` et non `quest.server`, sinon l'écran tirait tout le serveur dans le
       chunk client.
-      ⚠️ **Livré ne veut pas dire allumé** : le registre ne déclare **aucun** `competency` à ce
-      jour, donc le bouton ne s'affiche chez aucun élève tant que **C4bis** n'a pas tourné.
-      ⚠️⚠️ **LE FAIT QUI COMMANDE TOUT L'AXE, mesuré le 2026-07-31 et RE-MESURÉ INCHANGÉ le
-      2026-08-03 : le corpus ne contient AUCUN
+      ⚠️ **Livré ne veut pas dire allumé** — et la raison a changé le 2026-08-04. Le registre
+      déclare désormais **56 `competency` sur 56 entrées** (#118), donc ce n'est plus lui qui
+      manque : le bouton ne s'affiche chez aucun élève parce qu'**aucune question ne pointe vers
+      une de ces 56 entrées**. C'est l'étape 1 de **C4bis**.
+      ⚠️⚠️ **LE FAIT QUI COMMANDE TOUT L'AXE, mesuré le 2026-07-31 et RE-MESURÉ INCHANGÉ les
+      2026-08-03 et 2026-08-10 : le corpus ne contient AUCUN
       tag de misconception.** Zéro occurrence de `misconceptionTag` sur 566 chapitres et
       ~18 700 questions ; zéro `distractor_tags` non vide dans les 17 migrations manuelles ; les
-      5 tags du registre ne sont utilisés nulle part. La chaîne est mécanique : pas de tag authoré
+      56 entrées du registre ne sont référencées nulle part. La chaîne est mécanique : pas de tag authoré
       → `distractor_tags` vide → `resolve_misconception_tag` rend NULL → le trigger
       `trg_question_attempts_misconception` (qui ne se déclenche que sur un tag non nul) ne s'est
       **jamais** déclenché → **`user_misconceptions` est vide en prod**. Le récit de l'étude 26
@@ -330,16 +368,28 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
       sans lesquels `rollback-prod.yml` était **inopérant depuis son écriture**.
       **Règle qui en sort** : une action faite hors du repo n'y laisse aucune trace — « pas écrit
       fait » ≠ « pas fait ».
-- [ ] F5. **Légal avant rentrée.** **GAP-024 livré le 2026-07-31** (arena#701) : `/confidentialite`
+- [ ] F5. **Légal avant rentrée.** ⚠️ **Cette entrée disait « GAP-024 livré » et « reste, et c'est
+      humain » — les deux sont faux, corrigé le 2026-08-10.** **GAP-024 est à MOITIÉ fait**, et
+      la moitié qui manque est **du code** : ni suppression de compte ni export/portabilité
+      n'existent dans `src/` (`deleteAccount`, `export_user_data` : zéro occurrence, vérifié sur
+      `main` au 2026-08-10). C'est **le seul bloqueur légal de la Porte 1 qu'un agent peut
+      lever**, et le classer « humain » l'a gelé une semaine (constat déjà porté par STATUS §5 le
+      2026-08-03 — cette roadmap ne l'avait pas repris, ce qui est exactement la dérive que le §0
+      cherche à empêcher). **Rappel du piège qui a produit l'erreur : une PR qui cite un GAP dans
+      son titre ne le clôt pas.**
+      **Ce qui EST livré le 2026-07-31** (arena#701) : `/confidentialite`
       et `/conditions`, deux **URL stables** — c'est le point : la déclaration « child-directed »
       auprès de Google (é23 Q-3) comme la conformité mineurs exigent une politique **atteignable**,
       là où une modale n'aurait pas suffi. La politique n'affirme QUE ce que le code prouve
       (inventaire préalable : PostHog UE sans profil individuel, Sentry en Allemagne, YouTube en
       `youtube-nocookie` chargé après un clic délibéré) ; elle ne nomme aucune région non vérifiée
       et ne prétend pas qu'une déclaration INPDP a été faite.
-      **Reste, et c'est humain** : la démarche **INPDP** (GAP-003), l'identité d'éditeur pour des
+      **Reste côté humain** : la démarche **INPDP** (GAP-003), l'identité d'éditeur pour des
       mentions légales complètes, et la décision « français seul ou trilingue » — traduire un
       engagement juridique sans relecture ferait dire autre chose à une version.
+      **Reste côté code, et c'est prenable dès maintenant** : le volet « droits des personnes »
+      ci-dessus (suppression de compte + export). Une ligne de session à part entière, pas un
+      reliquat.
 - [ ] F6. **Ops récurrent** : le triage hebdo des signalements. **Le volet technique est fait** —
       le pré-gate déterministe (#611) ne réveille l'agent que sur du nouveau, avec une soupape
       à 14 jours. Reste le **geste opérateur** : appliquer depuis `/admin/content-reports` et
@@ -403,6 +453,41 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
       classe aux élèves est une PR moteur, pas un geste de campagne »** (#44) · registre rattaché
       aux sujets du programme (#23) · méthode à jour de la scission (#18) · études livrées
       regroupées dans `EtudeRealisé/` (#20/#22) · workflow `roadmap-sync.yml`.
+- [ ] F10. **LE GARDE PÉDAGOGIQUE EST EN PANNE DEPUIS LE 2026-07-29 — ligne ouverte le
+      2026-08-10, deuxième priorité de toutes files.** L'issue **#81** est ouverte depuis douze
+      jours et **quatre runs consécutifs ont échoué** : 07-29, 08-01, **08-05**, **08-08**.
+      Cause connue et écrite dans l'issue elle-même : le secret `CLAUDE_CODE_OAUTH_TOKEN` est
+      invalide ou expiré (`API Error: Header 'Authorization' has invalid value`) — le geste est
+      `claude setup-token` puis remise en secret du dépôt. L'issue se referme seule au premier
+      run vert.
+      **Pourquoi ça mérite une ligne et pas une note de bas de page** : `content-audit.yml` est
+      la **seule** garde pédagogique de la chaîne — les gates déterministes (`content:check`,
+      `content:qa:strict`, `content:audit:strict`) valident le schéma, la notation, les doublons,
+      jamais la **justesse d'une clé de réponse**. Pendant ces douze jours **la plus grosse
+      campagne de contenu du projet a été écrite** : `english-3eme-sec`, `english-bac`,
+      `french-bac`, soit 17 sujets compilés (#136 → #148). Elle l'a été **sans filet
+      pédagogique**, et ce n'est pas théorique : les correctifs #138, #140, #146, #147 et #148
+      montrent que les erreurs de fond ont bien été trouvées — mais par des **audits en session,
+      à la main**, chacun décidé par son auteur. Ce qu'aucune session n'a décidé de relire n'a
+      été relu par personne.
+      ⚠️⚠️ **CE N'EST PAS UN INCIDENT, C'EST UNE SÉRIE — trois gardes, trois pannes muettes.**
+      (1) **Le garde pédagogique n'avait jamais tourné** — F8 bis, 2026-07-25, token OAuth
+      invalide. (2) **Il est de nouveau en panne** depuis le 2026-07-29 — même cause, #81, la
+      présente ligne. (3) **Le garde vidéo n'avait jamais tourné non plus** — #149, corrigé le
+      2026-08-10 : `video-health.yml` a été exécuté **trois fois** depuis son portage (26/07,
+      02/08, 09/08) et a échoué les trois fois **au même endroit, avec les mêmes 357 lignes de
+      log**. Sa sonde marchait pourtant (« 0 vidéo cassée » à chaque passage) ; c'est l'étape
+      d'après qui tombait — `gh` sans `GH_REPO`, dans un workspace dont la racine n'est pas un
+      dépôt git parce que les deux checkouts vont en sous-dossiers. **Et le pire y est dit** :
+      l'étape qui **ouvre** l'issue quand une vidéo meurt portait le même défaut et n'avait
+      jamais tourné, étant gardée par `broken != '0'` — elle aurait échoué **le jour même où ce
+      garde sert à quelque chose**.
+      **Ce que la série apprend, et qui dépasse chaque cas** : une garde qui échoue en silence est
+      **indistinguable d'une garde qui passe**, et une issue qui se re-commente toute seule cesse
+      d'être lue au troisième commentaire. La question à porter à l'étude « IA vs déterministe » :
+      ce qui manque n'est jamais la garde — c'est que **sa panne n'atteint personne**. Trois
+      gardes sur trois l'ont montré ; il faut cesser de traiter chacune comme une surprise.
+      **Le geste est humain** (renouveler le jeton, §2) ; le suivi est ici.
 
 ## 5. FIL CONTENU (parallèle — sessions de campagne dédiées)
 
@@ -418,7 +503,22 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
       l'app n'ayant aucun moteur de rendu) — et la double option méta du défi élite `french-8eme`
       (#15).
 - [ ] C2. **é23 lot 5 — campagne vidéos maths 9ᵉ** (débloquée : Q-1 arbitrée, skill `content-videos` + health-check livrés #527/#531) — puis extension aux autres matières concours au fil de l'eau
-- [ ] C3. **é16 vague A — les 4 matières restantes de 1ère secondaire** (base fidèle au programme + overlay `prof-*-lycee` d3/d4 ; une matière = une session ; génération native fr, décision 2026-07-13)
+- [ ] C3. **é16 vague A — 1ère secondaire : 4 matières sur 5 EN PRODUCTION, reste l'arabe**
+      _(état corrigé le 2026-08-10 — cette ligne se lisait « les 4 matières restantes », non
+      entamée, alors que la vague était presque finie)_. En prod au **2026-08-04** : math,
+      physique, SVT et **français** (#119, 7 modules, 203 questions, 7 défauts de fond levés par
+      l'audit). **Reste la seule matière `arabe`**, et elle est **bloquée à la source** : sa fiche
+      de programme est `partielle`/`first-pass`, donc génération interdite tant que le **محور 3**
+      n'est pas transcrit — c'est une tâche de **transcription** (C9), pas de génération.
+      ⚠️ **Ne pas lire « 1ère sec = 4/5 » comme « la classe est à moitié vide »** : elle compte
+      **6 matières en ligne**, `chimie-1ere-sec` (#114) et `english-1ere-sec` (#117, #120)
+      s'étant ajoutés **hors vague A**. Les chiffres à jour, relus sur `origin/main` et non
+      recopiés du tableau de suivi : chimie **2 chapitres codifiés sur 11**, anglais **6 sur 35**,
+      français **7 sur 7** (arena#714). ⚠️ Le tableau de suivi annonçait « 35/35 » et
+      « 11 chapitres » : une session qui lit « LIVRÉ » saute la matière, et **38 chapitres
+      seraient partis en silence**.
+      Cadre inchangé : base fidèle au programme + overlay `prof-*-lycee` d3/d4 ; une matière =
+      une session ; génération native fr (décision 2026-07-13)
 - [x] C4. **é07 lot 3 — tagging compétences vague 1 — FAIT le 2026-07-27.** `math` (9ᵉ) **557/557**
       et `math-6eme` **805/805**, soit **1 362 questions** en 10 PRs (#51, #53, #54, #55 pour la 9ᵉ ;
       #56 → #61 pour la 6ᵉ), 1 à 3 compétences par question, la première étant la principale.
@@ -439,13 +539,27 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
       restent non tagués — la famille `math` couvre `math*`, une famille `physique`/`svt` reste à
       écrire par l'architecte avant tout tagging scientifique.
 - [ ] C4bis. **Tagging des MISCONCEPTIONS — pilote `math` 9ᵉ** _(A11 rendu le 2026-08-02)_.
-      🔴 **PREMIÈRE LIGNE DE TOUTE LA ROADMAP au 2026-08-03**, toutes files confondues — c'est la
-      seule qui allume du code déjà livré.
+      🟠 **ÉTAPE 0 FAITE le 2026-08-04 (#118), ÉTAPE 1 À PRENDRE** — troisième ligne de la
+      roadmap au 2026-08-10 (derrière C11 et F10), et toujours la seule qui **allume du code déjà
+      livré**.
+      ✅ **Ce qui est fait — une étape 0 que l'arbitrage ne prévoyait pas, et elle avait raison
+      d'exister.** A11 décrivait C4bis comme « deux gestes par question ratée : le tag sur le
+      distracteur et l'entrée correspondante au registre ». Vérifié avant de commencer, l'énoncé
+      sous-estimait le point de départ : les 5 entrées existantes décrivaient des erreurs de
+      fractions, de décimaux et de pourcentages — le bout **6ème** de la famille. Sur les
+      **31 compétences des domaines de 9ème** (alg, fn, vec, geo, stat, esp), **pas une** n'avait
+      de misconception en face : il n'y avait rien contre quoi taguer. Taguer et écrire le
+      vocabulaire dans le même geste aurait produit un registre **au fil de l'eau**, avec les
+      doublons et les formulations divergentes que produit toujours un vocabulaire écrit en marge.
+      Le registre est donc passé de **5 à 56 entrées**, les 51 neuves couvrant les 13 chapitres de
+      `math` 9ᵉ, et **les 5 anciennes ont gagné le `competency`** qu'elles n'avaient pas —
+      **56/56 le déclarent** aujourd'hui.
+      🔜 **Ce qui reste — l'étape 1, le tagging lui-même** : poser `misconceptionTag` sur les
+      distracteurs des **557 questions** de `math` 9ᵉ, contre le vocabulaire désormais fixé.
       ⚠️ **Ne pas confondre avec C4**, qui a tagué les **compétences** : ce sont deux registres
-      distincts, et celui des misconceptions est **vide d'usage** — 0 occurrence de
-      `misconceptionTag` sur ~18 700 questions, mesuré le 2026-07-31 et **re-mesuré inchangé le
-      2026-08-03** ; les 5 entrées de `content/misconceptions.json` ne déclarent **aucun**
-      `competency`, alors que le schéma l'accepte depuis arena#707.
+      distincts, et celui des misconceptions reste **vide d'usage côté corpus** — 0 occurrence de
+      `misconceptionTag` sur ~18 700 questions, mesuré le 2026-07-31, **re-mesuré inchangé les
+      2026-08-03 et 2026-08-10**. C'est le corpus qui manque, plus le registre.
       **C'est le déblocage de TOUT l'axe adaptatif** : sans lui, `user_misconceptions` reste vide
       en prod, la correction riche (ligne 9) ne nomme aucune erreur, le geste « m'entraîner »
       livré le 2026-08-03 ne s'affiche chez personne, le terme « misconceptions » de
@@ -454,9 +568,11 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
       le geste « m'entraîner », et le terme misconception d'A1.1. Tous sur `main`, tous inertes.
       **Périmètre arbitré : `math` 9ᵉ seulement** (557 questions, déjà tagué en compétences par
       C4). Le pilote donne un **coût réel par question** avant d'engager `math-6eme`, et allume
-      l'écran sur la matière de concours. Deux gestes par question ratée : `misconceptionTag` sur
-      les distracteurs, et l'entrée correspondante dans `content/misconceptions.json` (5 entrées
-      aujourd'hui) — **avec son champ `competency`** (A12), sans quoi « m'entraîner » reste mort.
+      l'écran sur la matière de concours. **Il ne reste qu'un geste par question ratée** depuis
+      l'étape 0 : `misconceptionTag` sur les distracteurs, pointant une des **56 entrées** de
+      `content/misconceptions.json`. Le second geste — écrire l'entrée **avec son `competency`**
+      (A12), sans quoi « m'entraîner » reste mort — est **déjà fait** (#118) ; il ne se rouvre que
+      si un distracteur ne trouve aucune entrée qui le décrive.
       ⚠️ Le champ est **optionnel par conception** (arena#707) : une confusion de vocabulaire ou
       une erreur de lecture d'énoncé n'a pas de compétence propre, et il vaut mieux ne rien
       proposer qu'un exercice au hasard. Ne pas en inventer une pour remplir la colonne.
@@ -486,7 +602,28 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
 - [ ] C6. **Illustration — backlog é18 (ordre petites-classes-d'abord)** : 4ᵉ puis 5ᵉ année (toutes matières visuelles) → maths 7ᵉ (5 ch.) → maths 9ᵉ fonctions+stats (2) → iq-training (3) → français (1). **Entamé le 2026-07-26** : 10 figures « objet réel » remplacées par des illustrations libres en `eveil-2eme` (#10) et **23 figures** de la campagne animaux sur 1ᵉʳ → 4ᵉ année (#11), outillées par l'import du moteur (arena#623). Le reste de la liste est inchangé
 - [ ] C7. **é19 lot 1 — doctrine + gate figures questions** _(A3 rendu : SVG seul, vérification intégrale, lots ≤ ~40 figures)_, puis campagne questions illustrées (concours d'abord : 6ᵉ/9ᵉ/bac)
 - [ ] C8. **é21 lot 1 — doctrine manuels** _(A4 rendu : verbatim court non créatif toléré ; provenance NON affichée à l'élève, lot 3 abandonné)_, puis pilote `math-1ere-sec` (exercices tracés `manuel_ref`, rapport de couverture)
-- [ ] C9. **Transcriptions secondaire (fil continu, METHODE-GENERATION-CONTENU)** : finir `math-2eme-sec-sciences` (12/19 ch. transcrits) · `3eme-sec-anglais` (wip) · suite du lycée. **La campagne de GÉNÉRATION lycée massive est débloquée** depuis l'exécution des lots 3b/4 de é24 (#544) — elle n'attendait pas le lot 5.
+- [ ] C9. **Transcriptions secondaire (fil continu, METHODE-GENERATION-CONTENU).**
+      ⚠️ **Cette ligne décrivait l'état du 2026-07-20 — une campagne lycée entière s'est jouée
+      depuis, sans jamais repasser ici. Rattrapée le 2026-08-10.**
+      **Transcrit du 2026-08-04 au 2026-08-06** : `anglais 2ème sec` tranche 1, et le montage
+      ⚭×4 sous un nœud legacy (#126) · `français 2ème sec`, chapitrage des 18 séquences, palier
+      partiel honnête (#128) · **`anglais 3ème sec`** — la seule matière du lycée qui sert
+      **six classes d'un coup** (#129, #131), R-7 rendue et ses trois écarts (#133) ·
+      **`anglais bac`** — un manuel, six terminales (#130), second palier **84 % → 92 %** (#134),
+      le WORD LIST qui ne s'extrait pas mais se lit (#135), R-7 rendue et ses **huit** écarts
+      (#142) · **`français bac`** (#132), avec l'éco-gestion tranchée par constat ·
+      **`philosophie bac`** — ossature + chapitrage mutualisé ×5 (#127), puis le **مبحث 2**
+      transcrit en entier, premier chapitre générable (#143).
+      **Généré dans la foulée** (même fenêtre, matières ci-dessus) : `english-3eme-sec` ch.01-06
+      (#136, #139, #144) et `english-bac` ch.01-06 — ch.01-03 (#137) puis la **tranche 2**
+      ch.04-06 le 2026-08-10 (**#145**, « la fuite que je ne mesurais que d'un côté ») — **un
+      dossier authored une fois, six terminales servies** — puis `french-bac` ch.01-03 (#141).
+      Les correctifs d'audit qui ont suivi comptent autant que les tranches : #138, #140, #146,
+      #147, #148 — **le manuel officiel s'est contredit plusieurs fois**, et c'est un audit en
+      session qui l'a vu, pas un gate (voir **F10**).
+      **Reste** : `math-2eme-sec-sciences` (12/19 ch.) · le **محور 3 d'arabe 1ère sec**, seul
+      verrou de C3 · la suite du lycée. **La campagne de GÉNÉRATION lycée massive est débloquée**
+      depuis l'exécution des lots 3b/4 de é24 (#544) — elle n'attendait pas le lot 5.
 - [ ] C10. **Campagne petites classes — EN COURS depuis le 2026-07-26, hors roadmap.** Elle
       tournait sans ligne ici ; la voici, avec son état constaté au 2026-07-27 :
       **`french-4eme`** chapitres 00→05, en deux tranches (#24, #28 qui ajoute le chapitrage au
@@ -506,16 +643,57 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
       (#105 → #109) · **`math-bac-math`** ch.16-19, le manuel couvert en entier (#100), puis la
       correction de 4 épisodes qui clonaient l'annale (#104) · `arabic-2eme-sec-lettres` ·
       `arabic-6eme` (suite).
-      ⚠️⚠️ **ET GÉNÉRER N'EST PAS APPLIQUER — un stock s'accumule.** Contenu ajouté au corpus
-      **depuis la dernière application vérifiée en base** (2026-07-29) : `education-islamique-5eme`,
-      `math-bac-math`, `arabic-6eme`, `arabic-2eme-sec-lettres` — auxquels s'ajoutent les trois
-      déjà en attente (figures `eveil`, `math-8eme` dé-LaTeXé, corrections `french-8eme`).
-      Nuance à ne pas confondre avec le « générer n'est pas ouvrir » ci-dessus : le parcours
-      **5ᵉ base est ouvert depuis le 2026-06-20** (`20260620140000_open_5eme_base_parcours.sql`),
-      donc l'islamique 5ᵉ ne demande **aucune PR moteur** — seulement un run `apply-content.yml`.
-      Rien ici ne peut vérifier l'état réel de la prod : cette liste dit ce qui a été **produit**
-      depuis la dernière application, pas ce qui manque en base. **Du contenu généré et jamais
-      appliqué est du travail invisible pour l'élève.**
+      **Suite constatée le 2026-08-10** : `education-islamique-5eme` a reçu les **huit retouches
+      d'un audit indépendant** — et le blocker que cet audit avait **inventé** (#123, à lire :
+      un audit peut se tromper dans les deux sens).
+      ⚠️⚠️ **ET GÉNÉRER N'EST PAS APPLIQUER.** Ce paragraphe listait à la main ce qui avait été
+      produit depuis la dernière application, en prévenant que « rien ici ne peut vérifier l'état
+      réel de la prod ». **Ce n'est plus vrai** : la garde `content-drift` le mesure depuis le
+      2026-08-04, et l'écart a désormais **sa propre ligne, C11**, avec un chiffre au lieu d'une
+      liste. Nuance conservée, à ne pas confondre avec le « générer n'est pas ouvrir » ci-dessus :
+      le parcours **5ᵉ base est ouvert depuis le 2026-06-20**
+      (`20260620140000_open_5eme_base_parcours.sql`), donc l'islamique 5ᵉ ne demande **aucune PR
+      moteur** — seulement un run `apply-content.yml`. **Du contenu généré et jamais appliqué est
+      du travail invisible pour l'élève.**
+- [ ] C11. **PUBLIER CE QUI EST DÉJÀ MERGÉ — 18 sujets en retard sur la prod.**
+      🔴 **PREMIÈRE LIGNE DE TOUTE LA ROADMAP au 2026-08-10**, toutes files confondues, et la
+      seule qui **ne produit rien** : tout est écrit, audité, mergé. Ligne ouverte ce jour ;
+      l'écart, lui, est mesuré et **visible depuis le 2026-08-04** — personne ne l'a pris.
+      **Le fait** : l'issue **#124** (`content-drift`, ouverte le 2026-08-04, régénérée le
+      2026-08-06) liste **18 sujets** dont `main` porte du contenu que la production n'a pas.
+      Le détail est plus dur que le nombre — **la campagne lycée anglais/français n'a jamais
+      atteint un élève, pas un chapitre** : `english-3eme-sec` ×6 sections, `english-bac` ×6,
+      `french-bac` ×5, tous **« jamais publié · tout le sujet »**, plus le correctif
+      `education-islamique-5eme` (#123). C'est **C9 en entier** — dix jours d'écriture et cinq
+      correctifs d'audit — invisible, **à J-22 de la rentrée**.
+      **Le geste, et il tient en une ligne** : Actions → *Apply content (PROD)* → `dry_run: false`,
+      **`subjects` laissé vide** (applique tout le corpus : idempotent, journalisé dans
+      `content_releases`, et c'est le geste le plus sûr quand plusieurs sujets sont en retard).
+      L'issue se referme **d'elle-même** au passage suivant de la garde. C'est un des dispatches
+      **explicitement autorisés** à un agent par la politique d'exécution — il ne publie rien de
+      neuf, seulement le SQL compilé d'un corpus déjà mergé et validé.
+      🚨 **PRÉREQUIS DÉCOUVERT EN ÉCRIVANT CETTE LIGNE — le dispatch était INEXÉCUTABLE.**
+      `apply-content.yml` fait `npm ci` sur le moteur, et **ce `npm ci` échouait** :
+      `Missing: typescript@5.9.3 from lock file`. Cause : **arena#688 a monté le moteur à Node 24**
+      (`.nvmrc` + ses 11 workflows) le 2026-08-03, mais les **six workflows de CE dépôt qui
+      checkoutent le moteur** sont restés à **Node 22** — et aucun gate ne traverse les deux
+      dépôts pour le voir. Tant que l'écart tenait, npm 10 refusait un lockfile régénéré sous
+      npm 11 (arena#716, le bump `undici`, qui a supprimé au passage l'entrée imbriquée
+      `vite-tsconfig-paths/node_modules/typescript` dont le peer `tsconfck ^5.0.0` a besoin).
+      **Corrigé dans la même PR que cette ligne** : les six workflows passent à Node 24.
+      ⚠️ **À retenir, parce que ça se reproduira** : le moteur a bumpé sa version de Node **dans
+      son dépôt**, ce qui est correct et complet **de son point de vue** — les workflows d'ici qui
+      exécutent ses scripts sont invisibles à sa CI. C'est le **même angle mort** que celui qui
+      tenait la roadmap périmée : un gate ne voit qu'un dépôt.
+      ⚠️ **Le piège de lecture qui a laissé passer dix jours** : `apply-content.yml` est désarmé
+      **volontairement** (é24 lot 3a). Ni la CI verte, ni l'automerge, ni `content_releases` — qui
+      ne sait que ce qui a été appliqué, jamais ce qui manque — ne signalent le geste absent. La
+      garde #124 est précisément ce qui rend l'écart **visible** ; elle ne le **referme** pas, et
+      une issue ouverte qu'on croise sans la prendre coûte autant qu'une garde en panne (**F10**).
+      **Ce qui supprimerait le risque à la racine reste le lot 3b d'é24** (répétition sur TEST +
+      arbitrage §4.3) — armer le déclencheur. Une garde ne re-designe pas le canal qu'elle
+      surveille : entre un merge et le passage suivant, la prod est en retard sans que personne ne
+      le sache.
 
 ## 6. FILES DIFFÉRÉES (ne rien lancer avant leur porte d'entrée)
 
@@ -528,17 +706,18 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
 
 ## 7. Vue jalon — ce qui doit être vrai le 1ᵉʳ septembre 2026
 
-| Axe        | Cible rentrée                                                                                                                                                                                                  | État au **2026-08-03 (J-29)**                                                                                                              |
+| Axe        | Cible rentrée                                                                                                                                                                                                  | État au **2026-08-10 (J-22)**                                                                                                              |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Produit    | File V1 étapes **1-16** livrées (é22 complet dont bannière rentrée · Révision du jour · correction riche · Rappel tolérant lot 1 · maîtrise visible · points faibles + rapport parent)                         | **14/19 lignes faites** (11/19 au 2026-07-27). La **9 est close** (arena#707). Restent **15-16** (é04 A2) et 17-19 (é11, hors file). ⛔ **La 15 est bloquée par C4bis, pas par du code** : elle livrerait un écran vide |
-| IA         | A5 **rendu le 2026-07-20** : é11 dégelée (lots 0-2, pilote math 9ᵉ, budget 5 $/j, tuteur « El Ostedh »). Lots 0-1 à la rentrée **seulement si une session les prend hors file V1** — sinon octobre             | non commencé — conforme au plan                                                                                                           |
-| Contenu    | Classes existantes à la barre é18 · 1ère sec complète (5 matières) · vidéos 9ᵉ · Tier A `acceptedAnswers` corpus entier · cible arbitrée (A1-Q2) = **statu quo consolidé à la barre é18**, sans classe vitrine | **C4bis est le nouveau point dur** — il allume **quatre lots déjà sur `main`** ; C4 (compétences) est fait depuis le 2026-07-27 et appliqué. **Tier A est fait** (arena#652, 13 017/13 049). Toujours rien sur : **1ère sec** (C3), **vidéos 9ᵉ** (C2). Aussi bougé : petites classes (C10, + `education-islamique-5eme` et `math-bac-math` complet), illustration (C6). ⚠️ **Un stock généré attend son application** depuis le 2026-07-29 — voir C10 |
-| Fondations | Domaine câblé + monitoring + sitemap (F4) · légal F5 · triage ops F6 en route · `main` verte (§1)                                                                                                              | **`main` verte ✅** et **F4 soldée**. **F6 n'a plus aucun blocage technique** — son motif de report (arena#638) est **réfuté et clos** ; reste le seul geste opérateur. **F5 reste le vrai bloqueur de la Porte 1**, dont **un volet est du code** : GAP-024 « droits des personnes » (suppression de compte + export) n'existe nulle part dans `src/` |
+| Produit    | File V1 étapes **1-16** livrées (é22 complet dont bannière rentrée · Révision du jour · correction riche · Rappel tolérant lot 1 · maîtrise visible · points faibles + rapport parent)                         | **14/19 lignes faites — inchangé depuis le 2026-08-03** (11/19 au 2026-07-27). Restent **15-16** (é04 A2) et 17-19 (é11, hors file). ⛔ **La 15 est bloquée par C4bis, pas par du code** : elle livrerait un écran vide. La semaine écoulée a été **entièrement contenu + transcription** — ce n'est pas une dérive, c'est C9 qui a tourné |
+| IA         | A5 **rendu le 2026-07-20** : é11 dégelée (lots 0-2, pilote math 9ᵉ, budget 5 $/j, tuteur « El Ostedh »). Lots 0-1 à la rentrée **seulement si une session les prend hors file V1** — sinon octobre             | non commencé — conforme au plan. À J-22, la cible **octobre** est désormais l'hypothèse par défaut, pas le repli                          |
+| Contenu    | Classes existantes à la barre é18 · 1ère sec complète (5 matières) · vidéos 9ᵉ · Tier A `acceptedAnswers` corpus entier · cible arbitrée (A1-Q2) = **statu quo consolidé à la barre é18**, sans classe vitrine | 🔴 **Le point dur n'est plus C4bis : c'est la PUBLICATION (C11)** — **18 sujets mergés jamais appliqués**, dont la campagne lycée anglais/français **en entier**. Du travail fini, invisible. **C3 est à 4/5** (reste l'arabe, bloqué par sa transcription) et la 1ère sec compte **6 matières en ligne**. **C9 a beaucoup avancé** (anglais 2ᵉ/3ᵉ/bac, français 2ᵉ/bac, philo bac). **C4bis étape 0 faite** (#118, registre 5 → 56, tous avec `competency`) ; étape 1 à prendre. **Tier A fait** (arena#652). Toujours rien sur : **vidéos 9ᵉ** (C2) |
+| Fondations | Domaine câblé + monitoring + sitemap (F4) · légal F5 · triage ops F6 en route · `main` verte (§1)                                                                                                              | **`main` verte ✅** et **F4 soldée**. 🔴 **Nouveau : le garde pédagogique est en panne depuis 12 jours** (F10, #81 — 4 runs échoués) ; toute la campagne C9 a été écrite sans lui. **F6 n'a plus aucun blocage technique** ; reste le seul geste opérateur. **F5 reste le vrai bloqueur de la Porte 1**, et **un volet est du CODE** : GAP-024 « droits des personnes » (suppression de compte + export) n'existe nulle part dans `src/` — re-vérifié le 2026-08-10 |
 
 ## 8. Journal de la roadmap
 
 | Date       | Événement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-08-10 | **Resynchronisation contre les DEUX dépôts (#709 → #716 au moteur, #116 → #148 ici) — 37 PR n'étaient citées nulle part, et le gate était vert.** C'est le constat de méthode de la passe : `roadmap-sync` ne lit que les sujets de commit du **moteur** en forme « étude/lot ». Les sept jours écoulés se sont joués **au privé**, sur du contenu et de la transcription — deux catégories qu'il ne regarde pas et qu'il n'a jamais prétendu regarder. **Un gate vert veut dire « rien de ce que je sais lire ne manque », jamais « la roadmap est à jour »** ; l'écrire ici parce qu'une session qui voit le vert conclut l'inverse. **Deux chantiers ouverts n'avaient AUCUNE ligne**, alors que leurs deux issues étaient ouvertes, étiquetées et visibles : **C11** — #124, `content-drift`, **18 sujets mergés jamais publiés**, dont `english-3eme-sec` ×6, `english-bac` ×6 et `french-bac` ×5, soit **la campagne lycée en entier**, à J-22 — et **F10** — #81, le **garde pédagogique en panne depuis le 2026-07-29**, quatre runs échoués (07-29, 08-01, 08-05, 08-08), donc **toute cette campagne écrite sans filet**. Les deux se referment seules une fois le geste fait ; aucune ne s'est refermée, faute de geste. **Quatre lignes décrivaient un état faux** : **C4bis** (son étape 0 est faite — #118, registre de **5 à 56 entrées, toutes avec `competency`** ; une session l'aurait refaite), **C3** (**4 matières sur 5 en prod** au 2026-08-04, seul l'arabe manque et c'est un blocage de **transcription**, pas de génération — arena#714 ; la 1ère sec compte **6 matières en ligne**), **C9** (une campagne lycée entière livrée : #126 → #144, plus les correctifs d'audit #146/#147/#148), **F5** (« reste, et c'est humain » — faux : la suppression de compte et l'export **n'existent pas dans `src/`**, re-vérifié ce jour ; c'est le seul bloqueur légal qu'un agent peut lever, et le classer humain l'a gelé une semaine). **Priorité inter-files ré-arbitrée au §0** : **C11 → F10 → C4bis**. C11 d'abord parce que c'est le seul geste qui **ne produit rien et livre tout**. **Aussi au moteur, non repris ailleurs** : le topo resynchronisé deux fois (arena#710, #714) · l'admin rebondi hors du Hall, chaque « Retour au hall » le ramenant sur Suivi (arena#711) · le tableau de cours qui se coupait en deux et dont les colonnes arabes se lisaient à l'envers (arena#712), puis son en-tête qui n'en était pas un pour un lecteur d'écran (arena#713) · un secret malformé qui annonçait le nom d'une librairie à la place du sien (arena#715) · le bump `undici` (arena#716). **Et ici** : le doublon de gabarit, défaut n°1 de l'écriture parallèle, qui n'était écrit nulle part (#121) · la clôture de session du 2026-08-03 (#122) · la garde `content-drift` consignée là où on la cherchera (#125) — consignée, et pourtant non prise pendant six jours : **documenter une garde ne la fait pas exécuter**. **ENFIN, TROUVÉ EN VÉRIFIANT CETTE PR — la CI de contenu de ce dépôt était MORTE, et le geste de C11 avec elle.** La PR de resynchronisation a fait rougir `content-ci` sur `npm ci`, pas sur son diff : `Missing: typescript@5.9.3 from lock file`. Reproduit en local, bissecté à **arena#716** (bump `undici` par Dependabot, qui a supprimé au passage l'entrée imbriquée `vite-tsconfig-paths/node_modules/typescript` que le peer `tsconfck ^5.0.0` réclame). **Mais #716 était VERTE au moteur** — et c'est là que se trouve la vraie cause : le moteur tourne sur **Node 24 depuis arena#688** (`.nvmrc` + ses 11 workflows), tandis que **les six workflows d'ici qui le checkoutent étaient restés à Node 22**. Même arbre, deux npm majeurs, deux verdicts : npm 11 accepte ce lockfile, npm 10 le refuse. **Portée réelle de la panne** : `content-ci` (toute PR de contenu), `content-audit`, `video-health`, `apply-content-test` et surtout **`apply-content`** — donc **la publication des 18 sujets de C11 était impossible** au moment même où cette PR la déclarait « un dispatch ». Corrigé ici : les six passent à Node 24. **La leçon est la même que celle de toute la passe, sous un troisième costume : un gate ne voit qu'un dépôt.** Le moteur a bumpé Node chez lui, complètement et correctement de son point de vue ; les workflows d'ici, qui exécutent ses scripts, lui sont invisibles. **POST-SCRIPTUM — `main` a avancé pendant la rédaction de cette entrée, ce qui est sa meilleure illustration** : **#145** (`english-bac` ch.04-06, la tranche 2) et **#149** ont mergé pendant la session, portant la base à `77a7736`. Les deux sont inscrites (C9 pour la première, F10 pour la seconde). **#149 mérite mieux qu'une citation** : `video-health.yml` avait été exécuté **trois fois** depuis son portage et avait échoué les trois fois au même endroit — un **troisième** garde qui n'avait jamais rendu de verdict, après les deux pannes du garde pédagogique. Sa sonde marchait ; c'est l'étape `gh` d'après qui tombait, faute de `GH_REPO` dans un workspace dont la racine n'est pas un dépôt git. Et l'étape qui **ouvre** l'issue portait le même défaut sans jamais s'exécuter, gardée par `broken != '0'` : elle aurait cassé le jour du premier vrai incident. F10 cesse donc de décrire un incident et décrit une **série** — trois gardes, trois pannes muettes : ce qui manque n'est jamais la garde, c'est que **sa panne n'atteint personne**. |
 | 2026-08-03 | **Le désarmement du canal de contenu avait un angle mort : rien ne disait qu'un merge n'était pas publié — et 23 sujets l'étaient depuis des jours.** Point de départ : un audit du ch.19 de `math-bac-math` relevait quatre paires de questions clonées entre `06-histoire-statistiques` et `07-annales-bac` (mêmes gabarits, mêmes triplets de distracteurs) — réécrites sur place, sans réordonner ni changer une lettre de clé (#104). **Mais la PR a révélé pire que son objet** : appliquée à 19:11 le 2026-08-01 depuis `891c864`, elle a été mergée à 19:27 en `67e3dd7` — **seize minutes**, deux jours de contenu périmé servi en prod, et rien pour le dire. `apply-content.yml` est désarmé (lot 3a) : aucun merge ne publie, et ni la CI verte, ni l'automerge, ni `content_releases` — qui ne sait que ce qui a été appliqué, jamais ce qui manque — ne signalent le geste absent. **Livré : `content-drift.yml`** (#112, corrigée par #116), garde en **lecture seule** qui compare `content_releases` à `main` et tient **une** issue `content-drift` ouverte tant qu'un sujet est en retard, refermée d'elle-même — mécanique de `video-health.yml`. Pas de run rouge : une issue ouverte survit à l'onglet Actions. **Son premier passage a trouvé 23 sujets**, dont `0e17aab` (« les explications citent la valeur de l'option, pas sa lettre »), correctif transverse mergé le 29 juillet, jamais publié sur une dizaine de matières — le stock que la ligne précédente signalait est donc **soldé** : corpus complet appliqué (run 30819985947, 49 min, backup + vérification en base verts), puis `chimie-1ere-sec`, mergé *pendant* cette application, soit exactement la course d'origine. Cycle complet exercé en prod : ouverture (23) → mises à jour (23 → 2 → 1) → **clôture automatique** (0). **Le piège pour la suite** : le nom du dossier de `content/` n'est pas l'identifiant en base — `compileTo` fait compiler un dossier vers plusieurs sujets, et la v1 de la garde criait « jamais publié » sur un dossier fraîchement appliqué, faux positif **éternel** qui l'aurait fait ignorer en quelques semaines (#116). **Ce qui n'est PAS fait, délibérément** : armer le déclencheur automatique. Ça reste le **lot 3b** d'é24 (répétition sur TEST + arbitrage §4.3) — une garde ne re-designe pas le canal qu'elle surveille. Le risque résiduel est donc entier : entre un merge et le passage suivant de la garde, la prod est en retard sans que personne ne le sache. C'est ce risque-là, pas la visibilité, que 3b supprimerait. |
 | 2026-08-03 | **Resynchronisation contre `main` (base #702 → #709) — et deux motifs périmés retirés.** Trois lots livrés les 2026-08-02/03 manquaient : **arena#707** (le geste « m'entraîner », qui **ferme la ligne 9** — ce fichier la donnait encore ouverte, donc une session « première ligne non cochée » aurait réimplémenté du code déjà sur `main`), **arena#708** (é09 lot 2, le simulateur) et **arena#706** (le canonique SEO tranché : `SITE_URL` passe à `www`, balise `rel=canonical` posée sur toute la coquille publique — les 1 541 URL du sitemap pointaient vers une redirection). **Deux arbitrages NEUFS, A15/A16 au §2** : le simulateur casse G-1 et G-4 dès son premier run, ce qui est son métier — A9 les avait ratifiés comme hypothèses de départ, les corriger est le protocole, pas un revirement. Le lot rend aussi trois corrections de fond, dont **le lot 1 encodait une règle de demi-coins qui n'existe pas dans le moteur** — donc la prémisse de D-5 tombe et le flux de coins se **calcule** au lieu d'être estimé. **Deux motifs de report réfutés** : F6 justifiait l'inaction du triage par arena#638, **close depuis le 2026-07-27** (l'e2e n'a jamais écrit en prod ; la vraie panne était l'inverse — la boucle de triage était aveugle à la prod pendant dix jours) ; F7 citait encore #593, remplacée par #660, et « Node 26 » là où la CI est à **Node 24**. **Q-5 d'é04** était donnée « à trancher » alors qu'A10 l'a tranchée. **Constat contenu ajouté à C10** : un stock généré depuis le 2026-07-29 (`education-islamique-5eme`, `math-bac-math`, `arabic-6eme`, `arabic-2eme-sec-lettres`) attend son application — et le parcours 5ᵉ étant ouvert depuis juin, l'islamique ne demande aucune PR moteur. **Rien n'a bougé sur la file PRODUIT au-delà de la 9** : la prochaine ligne prenable reste **C4bis**, pas la 15. |
 | 2026-07-20 | Création (déclinaison de l'étude 26, état consolidé post #525/#526/#527/#529/#531)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
