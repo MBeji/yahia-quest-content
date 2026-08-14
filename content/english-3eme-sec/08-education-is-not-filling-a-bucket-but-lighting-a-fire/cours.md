@@ -16,7 +16,7 @@ Your book puts two pictures of school side by side. The old one is a room: a **b
 | **CALT** — Computer Assisted Language Teaching         | the teacher's side: using a computer to teach one                                 |
 | **a non-credit course**                                | a course that counts for no qualification — you take it for the skill alone       |
 
-**The ladder of qualifications** distance learning offers, from the lowest step up: a **GED** (General Educational Development) test, an **associate degree**, a **bachelor's degree**, a **graduate certificate**, a **master's degree**, a **doctoral degree**, and **training courses** that carry no credit at all. A **bachelor** here is a first university degree — not the other sense of the word, an unmarried man.
+**The qualifications** distance learning offers, in the order your book prints them and rising step by step: a **GED** (General Educational Development) test, an **associate degree**, a **bachelor's degree**, a **graduate certificate**, a **master's degree**, a **doctoral degree** — and, **outside that ladder altogether**, **training courses** that carry no credit at all. A **bachelor** here is somebody who holds a first university degree — not the other sense of the word, an unmarried man.
 
 **Why people choose it.** Your book lists eight advantages and asks you to find five of them yourself: no formal class **attendance** · privacy · convenience · a flexible **schedule** · working at your own pace, going slowly or accelerating · a lower cost · no unnecessary travel · being able to balance a job and a family. A ninth idea sums the whole list up: **learn while you earn**.
 
@@ -232,7 +232,7 @@ The pronouns and the words of time and place move with the speaker, exactly as i
 | -------------------- | -------------------------------- | -------------------------------------- |
 | /ð/ — voiced *th*    | *th*                             | **the**m · **th**is · toge**th**er     |
 | /θ/ — voiceless *th* | *th*                             | sou**th** · **th**ought · mon**th**    |
-| /ɔː/                 | *ough*, *our*, *aw*, *al*        | th**ough**t · c**our**se · t**au**ght  |
+| /ɔː/                 | *ough*, *our*, *au*              | th**ough**t · c**our**se · t**au**ght  |
 | /aɪ/                 | *i*, *i…e*, *y*                  | b**i**-lingual · l**i**fe · m**y**     |
 
 Two spellings hide more than one sound each, and both are in the module's own word lists:
@@ -240,11 +240,11 @@ Two spellings hide more than one sound each, and both are in the module's own wo
 - **th** is voiced /ð/ in the small grammar words (*the*, *this*, *they*, *them*, *there*) and in a handful of common ones (*mother*, *together*, *weather*); it is voiceless /θ/ in most other words (*thought*, *south*, *month*, *three*).
 - **ch** is /tʃ/ in *bachelor*, *check*, *French* and *teacher*; /k/ in *chronic*, *school* and *technology*; /ʃ/ in *machine* and *brochure*.
 
-> 🗡️ And one small regularity worth the ten seconds: **-tion** and a **-sion** that follows a consonant are said /ʃn/ — *educa**tion***, *suspen**sion*** — while a **-sion** that follows a vowel is said /ʒn/ — *exclu**sion***, *deci**sion***. Two of those are punishments in the next section, and they are not pronounced the same way.
+> 🗡️ And one small regularity worth the ten seconds: **-tion** and a **-sion** that follows a consonant are said /ʃn/ — with one exception you meet in this very module: after **s** the ending is /stʃən/, as in *ques**tion*** and *sugges**tion*** — *educa**tion***, *suspen**sion*** — while a **-sion** that follows a vowel is said /ʒn/ — *exclu**sion***, *deci**sion***. Two of those are punishments in the next section, and they are not pronounced the same way.
 
 ## 🏫 School discipline — four punishments, and an article that argues about praise
 
-**The vocabulary of an unruly class.** A pupil who will not obey is **disobedient**; one whose behaviour breaks up the lesson for everybody is **disruptive**; a whole class that will not be controlled is **unruly**. To **muck around** is to waste time instead of working; to **quarrel** is to argue angrily; **youngsters** are young people; to **praise** somebody is to say publicly that they have done well, and to **heap** praise is to pile it on. **Prior to** something means before it; a **shift** is a change; **prestigious** means widely respected; **ridiculous** means deserving to be laughed at.
+**The vocabulary of an unruly class.** A pupil who will not obey is **disobedient**; one whose behaviour breaks up the lesson for everybody is **disruptive**; a pupil — or a whole class — that cannot be controlled at all is **unruly**, which is why your book's own headline says *unruly **pupils***. To **muck around** is to waste time instead of working; to **quarrel** is to argue angrily; **youngsters** are young people; to **praise** somebody is to say that they have done well, and to **heap** praise is to pile it on. **Prior to** something means before it; a **shift** is a change; **prestigious** means widely respected; **ridiculous** means deserving to be laughed at.
 
 **The four punishments**, ranged from the lightest to the heaviest — a page to copy, then time taken from you, then lessons taken from you, then the school itself taken from you:
 
