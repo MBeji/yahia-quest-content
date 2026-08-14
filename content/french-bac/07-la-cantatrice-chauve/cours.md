@@ -33,7 +33,7 @@ L'encadré du bas de page est la seule consigne de l'ouverture. Le voici mot pou
 
 _(Le manuel écrit « Seconde Guerre Mondiale » puis « deuxième guerre mondiale » dans la même liste — la source hésite, on ne corrige pas.)_
 
-**Pourquoi ce détour ?** La pièce ne raconte aucun de ces événements : il n'y est question ni de guerre, ni de camps, ni de bombe. Mais elle vient **après** eux. Le goulag, la guerre d'Espagne, Hiroshima, le nazisme : ce sont les faits qui, au milieu du XXe siècle, ont fait vaciller l'idée que l'existence humaine avait un sens donné d'avance. C'est cette **crise des valeurs** — le dernier axe de la liste — qui rend pensables les deux courants nommés juste avant, la littérature de l'absurde et l'existentialisme. Se documenter, ici, ce n'est pas chercher le décor de la pièce : c'est comprendre d'où elle sort.
+**Pourquoi ce détour ?** La pièce ne raconte aucun de ces événements : il n'y est question ni de guerre, ni de camps, ni de bombe. Mais elle vient **après** eux. Le goulag, la guerre d'Espagne, Hiroshima, le nazisme : ce sont les faits qui, au milieu du XXe siècle, ont fait vaciller l'idée que l'existence humaine avait un sens donné d'avance. C'est cette **crise des valeurs** — le dernier axe de la liste — qui donne leur urgence, au moment où Ionesco écrit, aux deux courants nommés juste avant : la littérature de l'absurde et l'existentialisme (le glossaire, lui, date le courant « du début du XXe siècle » — c'est sa formulation, à reprendre telle quelle). Se documenter, ici, ce n'est pas chercher le décor de la pièce : c'est comprendre d'où elle sort.
 
 ## 🎭 Une « anti-pièce » : ce que le mot refuse
 
@@ -74,7 +74,7 @@ Le préfixe dit un refus, et il faut savoir de quoi :
 
 L'activité 1 nomme les deux grandes familles de procédés : « **le comique de situation et les jeux sur la langue** ». Sache les distinguer — c'est la question qu'on te posera.
 
-**Le comique de situation** naît de la situation elle-même, avant qu'un mot d'esprit soit prononcé : deux époux qui ont besoin d'une enquête pour se reconnaître ; un pompier qui cherche un incendie et n'en trouve pas ; une bonne qui se déclare détective. **Les jeux sur la langue** portent sur la matière verbale : proverbes détournés, rapprochements de sons inattendus, assonances, mots qui se défont.
+**Le comique de situation** naît de la situation elle-même, avant qu'un mot d'esprit soit prononcé : deux époux qui ont besoin d'une enquête pour se reconnaître ; un pompier qui cherche un incendie et n'en trouve pas ; une bonne qui se déclare détective. **Les jeux sur la langue** portent sur la matière verbale : proverbes détournés, rapprochements inattendus, assonances, mots qui se défont.
 
 Quatre mécanismes reviennent, et ce sont eux qu'on te demandera d'expliquer.
 
@@ -110,7 +110,7 @@ Puis la lumière revient, et les **Martin sont assis à la place des Smith**, di
 
 ## 🗝️ Le titre, et son unique occurrence
 
-Aucun personnage ne s'appelle ainsi. Aucune cantatrice ne paraît. Le titre n'est prononcé **qu'une seule fois dans toute la pièce**, à la scène XI, par le Pompier qui est déjà sur le départ — et il tombe si loin de tout ce qui précède que le manuel imprime, juste après, la didascalie « Silence général, gêne ».
+Aucun personnage ne s'appelle ainsi. Aucune cantatrice ne paraît. Le titre n'est prononcé **qu'une seule fois dans toute la pièce**, tout à la fin, par le Pompier qui est déjà sur le départ — et il tombe si loin de tout ce qui précède que le manuel imprime, juste après, la didascalie « Silence général, gêne ».
 
 L'activité 1 ouvre le module sur une « émission d'hypothèses à partir du titre de la pièce », **avant** de lire. C'est un exercice qui se retourne : toutes les hypothèses seront déçues, et cette déception fait partie de la leçon. Le titre ne résume rien, n'annonce rien, ne désigne personne. Il **promet un sujet que la pièce ne traite pas** — dernier trait d'absurde, et le plus retors, puisqu'il est en couverture.
 
@@ -122,7 +122,7 @@ La réponse n'est pas « en alternant ». Le théâtre traditionnel sépare : de
 
 Ionesco l'a formulé lui-même : il s'agit de « faire un théâtre de violence : violemment comique, violemment dramatique ». La violence dont il parle n'est pas celle des coups — il n'y a ni combat ni mort dans la pièce — c'est un **degré d'intensité**, exigé des deux côtés à la fois.
 
-L'activité 2 ajoute le mot qui tient tout : l'**incommunicabilité**. Elle décrit ainsi le mouvement d'ensemble — « un faux monologue, un dialogue, une conversation à quatre ou cinq voix : cette évolution apparente ne fait qu'accentuer l'incommunicabilité entre les personnages ; cela se réduit en fait à une pure cacophonie ». Le nombre des voix augmente ; ce qui se transmet diminue. L'évolution est **apparente**, et c'est le manuel qui souligne le mot.
+L'activité 2 ajoute le mot qui tient tout : l'**incommunicabilité**. Elle décrit ainsi le mouvement d'ensemble — « un faux monologue, un dialogue, une conversation à quatre ou cinq voix : cette évolution apparente ne fait qu'accentuer l'incommunicabilité entre les personnages ; cela se réduit en fait à une pure cacophonie ». Le nombre des voix augmente ; ce qui se transmet diminue. L'évolution est **apparente**, et c'est le manuel qui choisit ce mot.
 
 ## 👑 Les notions du glossaire à mobiliser
 
@@ -164,7 +164,7 @@ Trois choses à en retenir, et elles éclairent tout le reste :
 
 - **le point de départ est un manuel de langue.** Ionesco apprend l'anglais avec la Méthode Assimil et s'aperçoit que les phrases d'exercice ne disent rien — elles ont la forme d'énoncés sans en avoir la fonction. C'est de là que vient l'intérieur si obstinément **anglais** de la première didascalie, et le ton des dialogues ;
 - **le projet est un dévoilement par amplification.** Il ne s'agit pas d'inventer des conversations absurdes, mais de grossir celles qui existent jusqu'à ce que leur vide devienne visible. D'où le mot du Repère : « le vide inquiétant et incessant des conversations » ;
-- **la réception fut un scandale**, et le scandale a fait la légende.
+- **la réception fut un scandale**, et la pièce choque, dit le Repère, « mais Ionesco entre dans la légende » — le manuel écrit « mais », et n'en dit pas plus.
 
 ## 🏅 Quatre phrases d'Eugène Ionesco (p. 262)
 
