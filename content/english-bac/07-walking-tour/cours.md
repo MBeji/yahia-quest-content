@@ -50,7 +50,7 @@ Three moves, always in the same order:
 2. **Say where it sits inside that whole** — _the northern third of the island of Great Britain_.
 3. **Name its neighbours, and on which side** — _shares a land border to the south with England_.
 
-Imitating a model means keeping the three moves **and** getting the map right. If you write the same sentence about Wales, only the geography changes: Wales occupies the **western** side of the island of Great Britain and shares a land border to the **east** with England.
+Imitating a model means keeping the three moves **and** getting the map right — and the map is the half that candidates lose. Settle the geography before you write a word: **Scotland sits at the top of the island, England fills everything south of it, and Wales is the block on the west coast**, pressed against England's western flank. So England is the only one of the three with **two** land neighbours — Scotland above it, Wales beside it — while Scotland and Wales have one each, and it is England both times. Pour those facts into the three moves and the sentence writes itself. Get the compass the wrong way round and every word of the model is still in place while the map is upside down.
 
 > ⚠️ A **land border** is a line you can walk across. Two countries on two different islands share **no land border**, however close they look on a map — between them there is sea.
 

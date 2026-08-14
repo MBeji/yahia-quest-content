@@ -67,7 +67,7 @@ An ad answers the questions it wants to answer. You have four of your own, and y
 3. **What must I still do?** Book in advance, pay a deposit, show a card, come before a date, be a member.
 4. **What has the ad not told me at all?** The price. The size of the group. The dates. **What is missing is information too**, and it is the reason you will write.
 
-> ⚠️ **A promise is not information.** _"Three days you will remember, and a welcome you will not find anywhere else"_ is a fine sentence and tells you nothing whatever: there is not one fact in it you could check, book or budget for. Praise fills the space where the facts should be — that is exactly when you reach for your pen.
+> ⚠️ **A promise is not information.** _"An evening you will still be talking about next winter, and a welcome no guidebook has ever managed to put into words"_ is a fine sentence and tells you nothing whatever: there is not one fact in it you could check, book or budget for. Praise fills the space where the facts should be — that is exactly when you reach for your pen.
 
 The words an ad uses to make its promises:
 
@@ -123,7 +123,7 @@ English has five short frames for saying that something attracts you. What matte
 
 > 🗡️ Two of the five frames **ask**; three only **state**. _I'd like to know more about…_ and _Please tell me about…_ put a question to your reader and oblige him to reply. _Sounds interesting_, _I'm interested in_ and _I'm keen on_ simply place you: they open the door, they do not walk through it. An e-mail that never gets past the door comes back empty.
 
-> ⚠️ **Interest is not an order.** Saying that you are interested commits you to nothing at all — you are looking, and you may still walk away. Three other verbs do commit you, and they cost money: _we'll **take** four of the family cards_ and _we'd like to **book** two coaches_ buy them outright, and _please **put** the last six rooms **aside** for us_ has them held in your name, which an office may charge you for. When all you are doing is asking questions, none of the three belongs in your message: place yourself, put your questions, and keep your signature for the day the answers are on the table.
+> ⚠️ **Interest is not an order.** Saying that you are interested commits you to nothing at all — you are looking, and you may still walk away. Three other verbs do commit you, and they cost money: _we'll **take** four of the family cards_ and _we'd like to **book** two coaches_ buy them outright, and _please **put** the last six rooms **aside** for us_ has them held under your name, and an office may charge you for that. When all you are doing is asking questions, none of the three belongs in your message: place yourself, put your questions, and keep your signature for the day the answers are on the table.
 
 ## ✉️ Writing the e-mail
 
@@ -201,7 +201,7 @@ Three steps, and the whole lesson comes back in them.
 | **2** | Choose a festival you know well, and write it up for strangers so that they decide to come; find pictures that show what makes it different |
 | **3** | Invite your classmates to the school's Internet room, show them your festival, and be ready to explain **how you worked** |
 
-Step 2 is this lesson wearing another hat. A page that works carries **the facts a reader needs** — what, when, where, who may come, what it costs and who pays less — and **the one detail no rival festival could copy onto its own page**. A picture of a crowd could be any crowd; photograph instead whatever it is that your town does and nobody else does. And what does not belong there is anything that sends your reader elsewhere: the festivals your neighbours run are their own business.
+Step 2 is this lesson wearing another hat, and a page that works needs two things, not one. The first is **fact**: nobody sets out for something whose day, whose town, whose opening hours and whose price he would have to guess at — and the concessions belong on the page as much as the full price does. The second is **difference**: your reader has ten other pages open and is choosing between them, so somewhere on yours there has to be the thing that could not be written, or photographed, about the festival in the next town. Whatever could be said just as truly of that one is taking up room without doing any work — and whatever points your reader towards it is doing worse than none.
 
 > 🗡️ Describing a festival attractively is **persuading with the truth**. You do not invent anything: you choose what to show, you speak to the reader, and you tell him what he will get. "The most beautiful festival in the country" persuades nobody, because anyone can write it about anything. "For three days in April, a whole town puts its sky to work" can be written about one festival only.
 
