@@ -1,6 +1,7 @@
 # Étude 28 — Stratégie de référence : de la profondeur technique à la position de marché
 
-> **Statut** : **validée** — les cinq questions arbitrées le **2026-08-13** par Mohamed,
+> **Statut** : **livrée** — les 3 lots mergés le 2026-08-13 (#155, #156, arena#726). Les cinq
+> questions ont été arbitrées le **2026-08-13** par Mohamed,
 > **toutes sur les recommandations** : position P-3 et renoncement à la vidéo actés (Q-1) ;
 > couverture amendée en « classe de concours entière d'abord » (Q-2) ; canal enseignant confié à
 > é08 re-scopée (Q-3) ; é02 sortie du différé avec un examen blanc v1 sans annales (Q-4) ;
@@ -263,9 +264,9 @@ positionnement de marque (`go-live/05` S1 est bon et validé, il est **inexécut
 | 2 | **Le re-séquencement des files** : ROADMAP §5 repriorisée (C4bis → `french-6eme` → reste) ; é02 sortie de la file différée §6 ; é08 re-scopée et sortie de sa porte V4 ; index `FableEtudes/README.md` resynchronisé | privé | `FableEtudes/ROADMAP.md`, `FableEtudes/README.md`, en-têtes `02-*/ETUDE.md` et `08-*/ETUDE.md` | cohérence index ↔ en-têtes ; `check-roadmap-sync` vert | Q-2, Q-3, Q-4 |
 | 3 | **La scorecard de position** : STATUS.md gagne un bloc court « position » (les 5 KPI de §1.3, datés) — pas un fichier de plus (règle du topo, 2026-08-02) | **public** | `STATUS.md` | `npm run verify` vert | lot 1 |
 
-- [ ] Lot 1 — la position + la fenêtre rentrée (privé, exécutable immédiatement)
-- [ ] Lot 2 — le re-séquencement des files (privé, après Q-2/Q-3/Q-4)
-- [ ] Lot 3 — la scorecard de position (public)
+- [x] Lot 1 — la position + la fenêtre rentrée — **livré le 2026-08-13, PR #155**
+- [x] Lot 2 — le re-séquencement des files — **livré le 2026-08-13, PR #156**
+- [x] Lot 3 — la scorecard de position — **livré le 2026-08-13, arena#726**
 
 **Stop-points.** Le lot 1 **ne touche à aucune file** et ne préjuge d'aucun arbitrage : il
 inscrit la position et requalifie des actions déjà écrites. Le lot 2 ne déplace **que** ce que
@@ -398,6 +399,7 @@ argumentée, et son §1.3 doit être relu à la première mesure réelle.
 | date | lot | PR | écarts acceptés / dettes notées |
 | --- | --- | --- | --- |
 | 2026-08-10 | — | (cette PR) | Étude créée. Statut `brouillon` : Q-1…Q-5 ouvertes. Aucun lot exécuté — le lot 1 est exécutable dès Q-1 arbitrée. |
+| 2026-08-13 | 1·2·3 | #155 · #156 · arena#726 | **Les trois lots sont mergés — l'étude passe `livrée`.** Lot 1 : D5 (position + renoncement à la vidéo) et **D6** (soutenabilité B2B) dans C5, condition de position sur la Porte 1, bloc D des 91-actions requalifié « chemin critique rentrée » avec la précondition D-5 sur D2. Lot 2 : critère « classe de concours entière d'abord », ligne **C4ter `french-6eme`** en 2ᵉ position du fil contenu, é02 et é08 sorties de leurs files différées, marqueur `roadmap-sync` porté à 721 puis 724. Lot 3 : `STATUS.md` §1bis, position + scorecard à 5 indicateurs (**4 rouges sur 5**, c'est le diagnostic assumé). ⚠️ **UN ÉCART RESTE À RATIFIER** : le lot 1 ne prévoyait que D-1, D-2 et la requalification — **D6 y a été ajoutée** parce qu'aucun lot ne donne de toit à Q-5 et que la table des décisions de C5 est sa place naturelle. C'est une incomplétude de l'étude, signalée dans la PR #155 et ici, jamais glissée en silence ; elle se retire en une ligne. |
 | 2026-08-13 | — | (cette PR) | **§7 vidée le même jour : Q-3, Q-4 et Q-5 arbitrées à leur tour, toutes sur les recommandations.** Q-3 : canal enseignant confié à **é08 re-scopée** hors de sa porte V4, aucune é29 ouverte, réserve D-5 ferme. Q-4 : **é02 sort de la file différée V2** avec un v1 **sans annales** explicitement borné. Q-5 : soutenabilité = **B2B établissement**, l'élève reste gratuit, mise en œuvre suspendue au dégel de é01 (l'arbitrage fixe la direction, pas la date). **L'étude passe `validée` et ses 3 lots sont fermes.** |
 | 2026-08-13 | — | (cette PR) | **Q-1 et Q-2 arbitrées par Mohamed, toutes deux sur la recommandation.** Q-1 : position P-3 retenue **et renoncement à la vidéo acté**. Q-2 : critère de couverture amendé en « classe de concours entière d'abord », barre é18 et refus de la classe vitrine inchangés — ce qui **amende é26 A1-Q2 du 2026-07-20**. Le lot 1 devient ferme ; le lot 2 l'est sur son seul volet critère (ses volets é02/é08 attendent Q-4/Q-3). ⚠️ **Les deux lots restent à livrer dans leurs PR propres** (règle « un lot = une PR à file set distinct ») — cette PR-ci ne porte que l'étude. |
 | 2026-08-13 | — | (cette PR) | **Renumérotée 27 → 28.** L'étude 27 « Enrichissement par sources web tierces » a été ouverte et **mergée sur `main` le 2026-08-13** (#153) pendant que cette branche vivait ; première mergée, premier servie. Collision de **numéro** seulement : les deux sujets sont distincts et complémentaires (la 27 traite l'approvisionnement en contenu, celle-ci la position de marché — elle sert d'ailleurs M-2). Rien du fond n'a bougé. Leçon pour le protocole de réservation (`CONTRIBUER.md`) : **un numéro d'étude ne vaut que mergé**, et une branche longue doit re-sonder l'index avant de pousser. |
