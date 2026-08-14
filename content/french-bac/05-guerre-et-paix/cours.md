@@ -4,7 +4,7 @@
 
 Quatrième module d'apprentissage. Les objectifs affichés sur la page d'ouverture sont **affiner son esprit critique** et **apprécier son cheminement individuel** ; l'illustration est un tableau de Turner intitulé _Paix_.
 
-Le centre d'intérêt est celui qui fait le plus écrire, et le point de langue qui l'accompagne est **le plus employé de toute l'année** : le **conditionnel et le subjonctif**. Trois choses de plus ne se trouvent que dans ce module : les **registres de langue**, la **méthodologie complète de l'exposé** — le module 5 y renverra explicitement — et, à l'écrit, l'art d'assurer les **transitions**.
+Le centre d'intérêt est celui qui fait le plus écrire, et le point de langue qui l'accompagne est **le plus sollicité par l'épreuve** : le **conditionnel et le subjonctif**. Trois choses de plus s'y ajoutent : l'unique encadré « Repères » qui **définit les registres de langue** — d'autres modules les font travailler, aucun ne les explique —, la **méthodologie complète de l'exposé**, donnée ici et nulle part ailleurs (le module 5 y renverra explicitement), et, à l'écrit, l'art d'assurer les **transitions**.
 
 ## 🏰 L'encadré « Repères » : le conditionnel et le subjonctif
 
@@ -35,7 +35,7 @@ Retiens la première phrase : le mode n'est pas un ornement grammatical, c'est u
 
 Les deux exemples du Repère illustrent la première valeur, et le premier vient du poème du module : chez Rimbaud, le soldat sourit _comme sourirait_ un enfant malade — la comparaison est imaginaire, l'enfant n'existe pas.
 
-> 🗡️ **Le test décisif : remplace le conditionnel par le futur, et regarde ce qui change.** _Les négociations reprendront_ annonce un fait ; _les négociations reprendraient_ n'annonce plus rien, cela l'envisage. C'est exactement l'exercice du manuel — remplacer le futur par le conditionnel dans un texte et dire quel changement de sens cela introduit. Le futur engage celui qui parle sur ce qui arrivera ; le conditionnel le désengage.
+> 🗡️ **Le test décisif : remplace le futur par le conditionnel, et regarde ce qui change.** _Les négociations reprendront_ annonce un fait ; _les négociations reprendraient_ n'annonce plus rien, cela l'envisage. C'est exactement l'exercice du manuel — remplacer le futur par le conditionnel dans un texte et dire quel changement de sens cela introduit. Le futur engage celui qui parle sur ce qui arrivera ; le conditionnel le désengage.
 
 Attention à la seule ressemblance qui piège : à la première personne, _je partirai_ (futur) et _je partirais_ (conditionnel) ne diffèrent que d'une lettre. Le sens, lui, change du tout au tout.
 
@@ -54,7 +54,7 @@ Le subjonctif présente l'action « comme étant **envisagée par l'esprit** » 
 
 L'expression **il faut que** appartient à la même famille : elle ouvre une complétive au subjonctif, et le manuel demande de la réemployer à chaque phrase d'un paragraphe « pour lui donner plus de force ».
 
-> 🗡️ Le déclencheur est **le verbe de la principale**, pas le sens général de la phrase. _Je crois qu'il viendra_ affirme une certitude : indicatif. _Je ne crois pas qu'il vienne_ pose un doute : subjonctif. Même verbe, même personne — c'est la nuance de pensée qui commande le mode.
+> 🗡️ Le déclencheur n'est pas le verbe pris seul, c'est **ce qu'il pose**. _Je crois qu'il viendra_ affirme une certitude : indicatif. _Je ne crois pas qu'il vienne_ pose un doute : subjonctif. Même verbe, même personne — seule la négation a bougé, et le mode a suivi.
 
 Un exercice entier du module ne demande rien d'autre : « Repérez tous les verbes au subjonctif et **justifiez chaque fois l'emploi de ce mode**. » Justifier, ici, c'est nommer le déclencheur : tel verbe de sentiment, telle locution conjonctive.
 
@@ -135,7 +135,7 @@ Cinq sujets sont proposés : « Les conflits actuels dans le monde », « Les mo
 
 **Quatre mots pour un déplacement de population** — _exode, émigration, immigration, migration_. Le manuel demande de préciser le sens de chacun et **dans quel contexte il s'emploie** : _migration_ est le terme général ; _émigration_ et _immigration_ désignent le même trajet vu du pays qu'on quitte ou du pays où l'on arrive ; _exode_ ajoute l'idée d'un départ massif et précipité — c'est le mot du texte de Saint-Exupéry.
 
-**Les verbes passe-partout.** Partant d'une phrase où un auteur a choisi _léguer_ plutôt que _donner_, le manuel fait remplacer _avoir_, _dire_ et _faire_ par des verbes précis : une division blindée n'_a_ pas plusieurs dizaines de chars, elle en **aligne** ; on ne _dit_ pas une mauvaise nouvelle, on l'**annonce**. Un verbe passe-partout convient partout et ne signifie presque rien : à l'écrit, c'est le premier signe d'une langue pauvre.
+**Les verbes passe-partout.** Partant d'une phrase où un auteur a écrit « les ancêtres qui lui ont légué le nom qu'il **porte** » — et non « qu'il a » —, le manuel fait remplacer _avoir_, _dire_ et _faire_ par des verbes précis : une division blindée n'_a_ pas plusieurs dizaines de chars, elle en **aligne** ; on ne _dit_ pas une mauvaise nouvelle, on l'**annonce**. Un verbe passe-partout convient partout et ne signifie presque rien : à l'écrit, c'est le premier signe d'une langue pauvre.
 
 Le module fait travailler aussi le mot **uniforme** (nom, dans _endosser_ ou _quitter l'uniforme_ ; adjectif, formé du préfixe _uni-_ que l'on retrouve dans _unicellulaire, unicolore, unifilaire, unisexe, uniflore_), les emplois du mot **feu** (_un anneau de feu_, _les feux de la rampe_, _les feux de la circulation_) et une série de noms qui **changent de sens au pluriel** — _fer, honneur, curiosité, instruction, humanité_.
 

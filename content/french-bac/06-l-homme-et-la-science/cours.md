@@ -22,7 +22,7 @@ Le manuel distingue ensuite **trois manières** de le faire :
 | **en adoptant l'opinion d'autrui** | approuver, partager le point de vue de… |
 | **en réfutant une opinion qu'on désapprouve** | au contraire, en revanche, il est inadmissible, dénoncer, contester… |
 
-Chaque cas est illustré, dans l'encadré, par une phrase d'**Albert Camus** empruntée à son éditorial du 8 août 1945.
+Deux de ces trois cas — revendiquer, réfuter — sont illustrés dans l'encadré par une phrase d'**Albert Camus** empruntée à son éditorial du 8 août 1945 ; l'adoption de l'opinion d'autrui, elle, n'y reçoit pas d'exemple.
 
 Et le manuel ferme l'encadré sur une **remarque** décisive :
 
@@ -144,7 +144,7 @@ Le manuel ajoute une troisième consigne, qui vaut méthode : « Choisissez dans
 
 ## 🗣️ L'oral — débat et exposé
 
-Le **débat** s'ouvre sur cinq notices documentaires — le clonage d'embryons et le clonage d'un individu adulte, la FIV, l'ICSI, les O.G.M — et sur une caricature. Les pistes de réflexion sont données : quels exploits scientifiques ont marqué ces dernières années, quelles sont les orientations actuelles de la recherche, quelles devraient être ses priorités, les progrès profitent-ils à tout le monde, quels problèmes d'ordre éthique ou environnemental posent-ils.
+Le **débat** s'ouvre sur cinq supports : une notice sur le clonage — celui d'embryons, celui d'un individu adulte —, la FIV, l'ICSI, les O.G.M, et une caricature. Les pistes de réflexion sont données : quels exploits scientifiques ont marqué ces dernières années, quelles sont les orientations actuelles de la recherche, quelles devraient être ses priorités, les progrès profitent-ils à tout le monde, quels problèmes d'ordre éthique ou environnemental posent-ils.
 
 L'**exposé** porte sur « La science : enjeux et perspectives », avec quatre sujets possibles : science et bien-être matériel, réchauffement de la planète, priorités de la recherche, exode des cerveaux. ⚠️ Pour la **méthode** de l'exposé — préparation, présentation, discussion —, le manuel **renvoie au module 4** et ne la redonne pas ici : c'est là qu'il faut aller la chercher.
 

@@ -56,12 +56,12 @@ Deux détails, minuscules et décisifs, disent tout du rapport entre les trois :
 
 ## 📜 Les monologues de l'officier
 
-Six mois durant, l'officier parle de son pays, de la musique et de la France. Le récit appelle cela un **interminable monologue** — et c'est le mot exact : **un monologue est une parole qui ne reçoit pas de réponse**. Ce n'est pas la longueur qui fait le monologue ici, c'est le silence d'en face. L'officier s'adresse bel et bien à ses hôtes ; ce sont eux qui refusent d'en faire un dialogue.
+Six mois durant, l'officier parle de son pays, de la musique et de la France. Le récit appelle cela un **interminable monologue**. Le manuel t'a donné l'outil au module 2 : les paroles d'un personnage sont soit **dialogue**, soit **monologue**, et une réplique longue à l'intérieur d'un dialogue s'appelle une **tirade**. Ici aucun dialogue ne s'installe jamais : ce n'est donc pas la longueur qui fait le monologue — le récit note même que ces prises de parole n'étaient jamais longues —, c'est le silence d'en face. L'officier s'adresse bel et bien à ses hôtes ; ce sont eux qui refusent d'en faire un dialogue.
 
 Ce qu'il dit, en substance :
 
 - **la France aimée de loin**, « comme la Princesse Lointaine », à cause d'un père patriote qui lui fit promettre de n'y entrer que botté et casqué ;
-- **l'inventaire de la bibliothèque** — il égrène les écrivains français par ordre alphabétique, de Balzac à Voltaire, et construit son opposition : à l'Angleterre Shakespeare, à l'Italie Dante, à l'Espagne Cervantès, à l'Allemagne Goethe, mais à la France une foule d'écrivains dont on ne sait lequel faire entrer d'abord ; en revanche, pour la musique, c'est l'Allemagne — Bach, Haendel, Beethoven, Wagner, Mozart. D'où sa thèse, résumée d'une formule : les deux peuples ne se battront plus, ils se marieront ;
+- **l'inventaire de la bibliothèque** — il égrène les écrivains français en les égrenant presque par ordre alphabétique, de Balzac à Montaigne, et construit son opposition : à l'Angleterre Shakespeare, à l'Italie Dante, à l'Espagne Cervantès, à l'Allemagne Goethe, mais à la France une foule d'écrivains dont on ne sait lequel faire entrer d'abord ; en revanche, pour la musique, c'est l'Allemagne — Bach, Haendel, Beethoven, Wagner, Mozart. D'où sa thèse, résumée d'une formule : les deux peuples ne se battront plus, ils se marieront ;
 - **son programme**, qui donne au livre son titre : « **Il faudra vaincre le silence de la France.** » Il ne croit pas si bien dire — ce silence est précisément ce qu'il ne vaincra pas ;
 - **Bach à l'harmonium** : il joue le prélude que la nièce travaillait avant la débâcle, dit que rien n'est plus grand mais que c'est une musique inhumaine, et qu'il veut, lui, faire une musique à la mesure de l'homme ;
 - **l'anecdote du moustique** : une jeune fille qu'il devait épouser arrache une à une les pattes d'un moustique qui l'a piquée, en disant qu'elle le punit. Il en tire sa lecture politique — ainsi sont, dit-il, les hommes politiques de son pays, et jusqu'à ses amis les plus nobles ; mais ils ne sont plus seuls, ils sont en France, et la France les guérira. « Mais pour cela il faut l'amour », ajoute-t-il en regardant la nuque de la nièce, « **un amour partagé** ».
@@ -74,7 +74,7 @@ Le glossaire appelle **intertextualité** le « rapprochement de mots ou d'idée
 | --- | --- | --- |
 | **La Belle et la Bête** | l'officier raconte le conte de bout en bout | c'est un **apologue** : la Bête, c'est l'Allemagne qui tient la France à sa merci ; la Belle finit par voir un cœur derrière le geôlier haï, et leur union donne le bonheur. C'est **sa thèse mise en image** — il dit d'ailleurs avoir toujours préféré la Bête, parce qu'il comprenait sa peine |
 | **Macbeth** | il descend un soir avec le livre, et le manuel imprime la réplique d'ANGUS en encadré | le portrait du tyran dont les hommes obéissent **par crainte et non par amour**, et dont le titre flotte sur lui comme la robe d'un géant sur le nain qui l'a volée. L'officier l'applique aussitôt au chef qui a livré la France |
-| **Othello** | une réplique isolée, centrée **en haut d'une page**, sans qu'aucun personnage ne la prononce | c'est une **épigraphe** : elle parle d'éteindre une lumière puis une vie, et elle **annonce le dénouement** de la dernière partie |
+| **Othello** | une réplique isolée, centrée **en haut d'une page**, sans qu'aucun personnage ne la prononce | c'est une **épigraphe** — une citation placée en tête d'un texte, par l'auteur et non par un personnage, pour en donner la clé — : elle parle d'éteindre une lumière puis une vie, et elle **annonce le dénouement** de la dernière partie |
 
 > 🗡️ Distingue bien les deux régimes. _La Belle et la Bête_ et _Macbeth_ sont **cités par un personnage**, à l'intérieur de l'histoire, et servent son argumentation. _Othello_ est posé **par le livre lui-même**, au-dessus de l'histoire, et sert d'avertissement au lecteur.
 
@@ -91,7 +91,7 @@ Le récit bascule en trois temps.
 Ce qui s'y dit, dans l'ordre :
 
 - il annonce qu'il doit adresser à ses hôtes des paroles graves, puis **l'aveu** : tout ce qu'il a dit pendant six mois, **il faut l'oublier** ;
-- **la nièce lève enfin les yeux** — pour la première et unique fois du récit — et il murmure en allemand qu'il voit une lumière ;
+- **la nièce lève enfin les yeux** — pour la première fois du récit — et il murmure en allemand qu'il voit une lumière ;
 - **ce qu'il a découvert à Paris** : ses camarades ont ri de lui. Il n'avait pas compris qu'ils bernaient les Français. Personne n'a jamais voulu de l'union : le but est de détruire non seulement la puissance de la France mais **son âme**, et de le faire par les sourires et les ménagements. Ils lui ont même jeté qu'ils ne sont pas des musiciens ;
 - **le blocus culturel** : plus aucun livre français ne passe dans les pays occupés, sauf les publications techniques. Son regard balaie les rayons, et il dit qu'ils éteindront la flamme tout à fait ;
 - **l'ami perdu** : son frère d'études, poète sensible, retrouvé à Paris le plus enragé de tous. Et le constat qui l'accable : cet homme était sincère, et c'est cela le plus terrible ;
@@ -100,11 +100,11 @@ Ce qui s'y dit, dans l'ordre :
 
 Le manuel commente la formule sans détour dans sa piste 5, et pose la question qui fait toute la scène : « Le départ annoncé n'équivaut-il pas à un suicide ? (« Pour l'enfer » : pour le front) ». Ce n'est pas une désertion — il obtient son affectation par la voie régulière — c'est un homme qui, n'ayant plus d'espoir, va chercher la mort du bon côté de son devoir.
 
-**Les adieux.** Le visage de la nièce est d'une pâleur lunaire, ses lèvres esquissent la moue des masques grecs ; les regards des deux jeunes gens sont amarrés l'un à l'autre. L'officier dit d'abord sa formule de tous les soirs, puis un mot qu'il n'avait jamais dit : « **Adieu.** » Et la jeune fille — **pour l'unique fois du récit** — répond : « **Adieu.** » Il sourit ; la dernière image que le narrateur garde de lui est souriante.
+**Les adieux.** Le visage de la nièce est d'une pâleur lunaire, ses lèvres esquissent la moue des masques grecs ; les regards des deux jeunes gens sont amarrés l'un à l'autre. L'officier dit d'abord sa formule de tous les soirs, puis un mot qu'il n'avait jamais dit : « **Adieu.** » Et la jeune fille — **pour l'unique fois du récit où elle lui adresse la parole** — répond : « **Adieu.** » Il sourit ; la dernière image que le narrateur garde de lui est souriante.
 
 **La clôture.** Le lendemain, il est parti. La nièce sert le déjeuner ; on boit en silence ; un pâle soleil luit à travers la brume, et le narrateur a l'impression qu'il fait très froid. Puis la date : « Octobre 1941. »
 
-> 🗡️ Le mot de la nièce est le sommet du livre. Pendant six mois, elle n'a pas dit une syllabe : son silence était son arme. Le rompre **une seule fois**, et pour dire adieu, c'est avouer tout ce qu'elle a tu — sans rien céder, puisque ce mot-là dit aussi la séparation définitive.
+> 🗡️ Le mot de la nièce est le sommet du livre. Pendant six mois, elle n'a pas dit une syllabe devant lui : son silence était son arme. Le rompre **une seule fois**, et pour dire adieu, c'est avouer tout ce qu'elle a tu — sans rien céder, puisque ce mot-là dit aussi la séparation définitive.
 
 ## 👑 Les notions du glossaire à mobiliser
 
