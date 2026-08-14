@@ -2,7 +2,7 @@
 
 > 💡 "A holiday is bought twice: once from a brochure that promises, and once from a hotel that delivers. When the two do not match, only language is left."
 
-Two months separate the two halves of this lesson. In the first, a customer sits at a counter and listens to everything a travel agent promises her. In the second, she comes back — and every promise has to be produced again, word for word, in front of the person who made it. That is why the grammar of this lesson is **reported speech**: a complaint is a promise repeated aloud by somebody who did not get it.
+Two months separate the two halves of this lesson. In the first, a customer sits at a counter and listens to everything a travel agent promises her. In the second, she comes back to complain — and a complaint lives or dies on the promises she can put back, word for word, in front of the person who made them. That is why the grammar of this lesson is **reported speech**: a complaint is a promise repeated aloud by somebody who did not get it.
 
 You will learn to **say you are dissatisfied**, to **complain** without being rude, to **report what was promised**, and to hear where an English word puts its **stress** — because at a counter, a word stressed on the wrong syllable is a word nobody understands.
 
@@ -27,13 +27,13 @@ Then comes the second warm-up, and it is the real subject of the lesson: _What d
 | **to book** | to reserve and pay for a place in advance | _She booked the holiday in April._ |
 | **a booking / a reservation** | the place kept for you once you have booked | _I have a reservation in the name of Ward._ |
 | **a deposit** | the first part of the price, paid to hold the booking | _They asked for a deposit of 20 %._ |
-| **the balance** | the rest of the price, paid later | _The balance is due thirty days before departure._ |
+| **the balance** | the rest of the price, paid later | _The balance is due six weeks before you fly._ |
 | **a refund** | your money given back to you | _She asked for a full refund._ |
 | **a discount** | money taken **off** a price you are still going to pay | _Students get a 15 % discount._ |
-| **a voucher** | a printed paper you exchange for a service already paid for | _Show this voucher at the hotel desk._ |
+| **a voucher** | a printed paper you exchange for a service already paid for | _Show this voucher when you check in._ |
 | **a receipt** | the paper that proves you have paid | _Keep the receipt as proof of payment._ |
-| **a package holiday** | flight, hotel and transfers sold together at one price | _A package holiday is cheaper than three separate bookings._ |
-| **a transfer** | the journey between the airport and the hotel | _The transfer is included; you will be met at the airport._ |
+| **a package holiday** | flight, hotel and transfers sold together at one price | _A package holiday costs less than booking the three parts yourself._ |
+| **a transfer** | the journey between the airport and the hotel | _The transfer is included; someone will meet your plane._ |
 | **an excursion** | a short organised trip during a holiday | _There is an excursion to the volcano on Fridays._ |
 | **airport taxes** | what an airport charges every passenger | _Airport taxes are not always included in the price._ |
 | **facilities** | the equipment and services a hotel puts at your disposal | _The hotel's facilities include a lift, a laundry and a children's club._ |
@@ -57,7 +57,7 @@ Everything in this lesson turns on one small word. Before you sign, ask the ques
 
 | Usually included in a package | Often **not** included |
 | --- | --- |
-| the flight, the hotel, the transfers | airport taxes |
+| the hotel, the flights and the transfers | airport taxes |
 | breakfast, sometimes half board | drinks with meals |
 | the services of a local representative | excursions |
 | — | travel insurance, tips |
@@ -80,7 +80,7 @@ English grades dissatisfaction very finely, and the grade you choose says how fa
 
 Two habits of English make dissatisfaction sound different from the way it sounds in other languages.
 
-**Understatement.** A British guest very often says less than she means, and the listener is expected to hear the rest: _The coach was **not exactly** punctual._ (= it was always late) · _The food was **nothing to write home about**._ (= it was poor) · _We were **not entirely** happy with the arrangements._ (= we were angry). A polite sentence is not a soft complaint; it is a strong complaint in a quiet voice — and the guest who says "not exactly what you promised" is telling you that it was nothing like it.
+**Understatement.** A British guest very often says less than she means, and the listener is expected to hear the rest: _The coach was **not exactly** punctual._ (= it was always late) · _The food was **nothing to write home about**._ (= it was poor) · _We were **not entirely** happy with the arrangements._ (= we were angry). A polite sentence is not a soft complaint; it is a strong complaint in a quiet voice — and the guest who says "**not exactly** what was promised" is telling you that it was nothing like it.
 
 **Adding up.** One problem is bad luck; three problems are a case. English strings them with _and what is more_, _on top of that_, and above all **_to make matters worse_**: _Our luggage arrived a day late, and **to make matters worse**, the air conditioning broke down on the second night._
 
@@ -92,7 +92,7 @@ A complaint that works is never one sentence. It has four moves, always in this 
 | --- | --- | --- |
 | **1. Open it** | announce that this is a complaint, and name its subject | _I'd like to make a complaint about…_ · _I'm afraid there's a problem with…_ · _I'm calling about the trip I took last week._ |
 | **2. State the facts** | say what actually happened, with dates and figures | _Our room was still occupied when we arrived at eleven at night._ |
-| **3. Recall the promise** | quote what you were told — **this is where reported speech lives** | _You said that half board was included in the price._ · _Your brochure promised a quiet residential area._ |
+| **3. Recall the promise** | quote what you were told — **this is where reported speech lives** | _You said that half board was included in the price._ · _Your brochure described the area as quiet and residential._ |
 | **4. Say what you want** | ask for something precise | _I'd like the two extra dinners refunded._ · _I expect some compensation for the night we lost._ |
 
 Move 4 decides whether you will be taken seriously. Ask for **what matches what you lost**: the price of the two nights you spent in a room you had not booked, not the price of the whole week. A claim bigger than the loss lets the agency argue about the claim instead of the loss.
@@ -127,8 +127,11 @@ Two things move at once, and the second is the one this lesson adds.
 | _You **will** love the food._ | _You said that we **would** love the food._ |
 | _All the hotel staff **are** friendly._ | _You said that all the hotel staff **were** friendly._ |
 | _The rooms **have** air conditioning._ | _You said that the rooms **had** air conditioning._ |
+| _We **booked** your rooms in April._ | _You said that you **had booked** our rooms in April._ |
 | _You **can** hear the sea from the terrace._ | _You said that we **could** hear the sea from the terrace._ |
 | _You **must** reserve the sauna in advance._ | _You said that we **had to** reserve the sauna in advance._ |
+
+A past that is already past goes one step further back, to the **past perfect**: a plain _we booked_ becomes _you said you **had booked**_. And the **time words travel with the tenses**, because the day of the promise is no longer the day of the complaint: _today_ → **that day**, _yesterday_ → **the day before**, _last week_ → **the week before**, _tomorrow_ → **the next day**, _this afternoon_ → **that afternoon**, _now_ → **then**.
 
 **The people change sides.** This is the trap of the lesson. In the advertisement, **you** means the reader — the future guest. In the complaint, that reader is speaking, so the advertisement's **you** becomes **we** or **I**, and the word **you** is now free for a new job: it names **the person who made the promise**.
 
@@ -151,14 +154,12 @@ _Say_ and _tell_ report the words. The verbs below report the words **and the fo
 
 | Verb | When you use it | Example |
 | --- | --- | --- |
-| **complain that** | the speaker was expressing dissatisfaction | _She complained that the pool had been closed all week._ |
-| **insist that** | the speaker refused to give way | _He insisted that the taxes were included._ |
-| **point out that** | the speaker brought a fact into the argument | _She pointed out that the brochure said "sea view"._ |
-| **promise that** | the speaker committed himself | _He promised that the vouchers would arrive on Monday._ |
-| **admit that** | the speaker accepted an unpleasant truth | _The agent admitted that the hotel was still being built._ |
-| **deny that** | the speaker said it was not true | _He denied that anything had been promised._ |
-| **apologise for** | the speaker said sorry (+ noun or -ing) | _He apologised for the delay._ · _He apologised for keeping us waiting._ |
+| **complain that** | the speaker was expressing dissatisfaction | _He complained that nobody had warned him about the taxes._ |
 | **add that** | the speaker went on to a further point | _She added that she would never travel with them again._ |
+| **point out that** | the speaker brought a fact into the argument | _She pointed out that the small print said nothing about it._ |
+| **promise that** | the speaker committed himself | _He promised that the balance could be paid in September._ |
+
+Four verbs are enough, and they are the four your own book uses when it reports a complaint. Resist the longer list you may have met elsewhere: _insist_, _admit_ and _deny_ are taught in other lessons and in other constructions, and a verb used in the wrong construction costs you more marks than _say_ ever will.
 
 ### Report faithfully
 
@@ -197,7 +198,7 @@ And you have to answer the offer:
 - **accepting** — _That seems fair, thank you._ · _Yes, that would be acceptable._
 - **refusing politely** — _I'm afraid that isn't good enough._ · _I'd rather have a refund._
 
-> ⚠️ **I'm afraid** looks like an apology and is not one: it is the cushion English puts under a piece of bad news, and what follows it is a refusal. Weigh an offer before you take it — a **discount** lowers the price of a trip you are still going to take, so it is worth nothing to a customer who will never come back, while a **refund** returns money you have already spent.
+> ⚠️ **I'm afraid** looks like an apology and is not one: it is the cushion English puts under a piece of bad news, and what follows it is a refusal. Weigh an offer before you take it — a **discount** only makes a future holiday cheaper, so it buys nothing at all for someone who has no intention of coming back, while a **refund** returns money you have already spent.
 
 ## 🔊 8. Word stress
 
@@ -212,8 +213,8 @@ Every English word of more than one syllable has **one** syllable said louder, l
 Three things to notice:
 
 1. The endings you already met in _Art Shows_ still work: **-tion** pulls the stress onto the syllable just before it (_reser**VA**tion_, _compen**SA**tion_).
-2. In two-syllable words there is a **tendency**, not a law: the noun is often stressed first (_**PACK**age_, _**TRAV**el_, _**LUGG**age_) and the verb second (_re-**LAX**_, _com-**PLAIN**_, _in-**CLUDE**_). _Ho**TEL**_ is the famous exception; you simply learn it.
-3. Some words **move** between the two, exactly like _a **REC**ord_ and _to re**CORD**_: **a REfund** but **to reFUND**, **a TRANSfer** but **to transFER**, **a DIScount** but **to disCOUNT**. Your book's table sorts _discount_ with the words stressed on the second syllable — the pronunciation of the verb.
+2. In two-syllable words there is a **tendency**, not a law: the noun is often stressed first (_**PACK**age_, _**LUGG**age_, _**BOOK**ing_) and the verb second (_re-**LAX**_, _com-**PLAIN**_, _in-**CLUDE**_). _Ho**TEL**_ is the famous exception; you simply learn it.
+3. Some words **move** between the two, exactly like _a **REC**ord_ and _to re**CORD**_: **a REfund** but **to reFUND**, **a TRANSfer** but **to transFER**, **a DIScount** but **to disCOUNT**. Your book's table sorts _discount_ among the words whose stress falls second — the pronunciation of the verb.
 
 > 💡 Stress is part of the word, like a letter. Learn it the day you learn the word, or you will learn it twice.
 

@@ -68,43 +68,35 @@ Imitating a model means keeping the three moves **and** getting the map right. I
 | **former**               | the one before — not the one now                                      |
 | **spectacular**          | so impressive to look at that people stop to watch                    |
 
-> 🗡️ **official residence** is a pair of words that carries a whole idea: the house comes with the **job**, not with the person. A president lives in one while he holds the post and leaves it when he stops. And put **former** in front of it and the fact turns round completely: *the former official residence of a prince* tells you that the prince **does not live there any more**. One small word, one whole change of tense.
+> 🗡️ **official residence** is a pair of words that carries a whole idea: the house comes with the **job**, not with the person. A president lives in one while he holds the post and leaves it when he stops. And put **former** in front of the pair and the sentence changes tense under your eyes: the post-holder had that house once, and somebody else has it today. One small word, one whole change of tense.
 
 Five more words come from the speaking task at the end of the lesson, and they are all words of praise. They are **not** interchangeable:
 
 | Word                | What it says exactly                                                    |
 | ------------------- | ----------------------------------------------------------------------- |
-| **captivating**     | it holds you — you meant to stay ten minutes and you stayed two hours    |
+| **captivating**     | it holds you — you sit down for a moment and the afternoon has gone      |
 | **breathtaking**    | it takes your breath away — for a second you cannot speak                |
 | **magnificent**     | grand, large and impressive — a building, a hall, a view                 |
 | **splendid**        | brilliant and fine, a warm word of general praise                        |
 | **to revive**       | to bring back to life something that had gone quiet                      |
 
-> ⚠️ **to revive** carries a hidden fact. If a festival *revives* the old town every August, then for the other eleven months the old town is **quiet**. You only revive what had gone still.
+> ⚠️ **to revive** carries a hidden fact. A street that a Saturday market *revives* was **half asleep** on the six other days — nothing is brought back unless it had first gone away. Watch for verbs of this kind: they smuggle in a fact the writer never printed.
 
 ## 📣 Reading an ad
 
-An ad is not a text that informs you. It is a text that **wants something from you**, and it is built to get it. The walking-tour ad in your book prints five lines and no more:
+An ad is not a text that informs you. It is a text that **wants something from you**, and it is built to get it. Turn to the walking-tour ad in your book and count what it actually prints: a **name** for the walk, a **day and a time** (it goes every day, mid-morning), the **square it leaves from**, the **one thing it wants you to come for** (the changing of the guard), **how long it lasts** (an hour and a half to two hours) — and, in a circle of its own, the **price: nothing at all**. Five lines, and not a word more.
 
-```
-ROYAL LONDON WALK — SEE MORE OF LONDON ON FOOT
-Daily at 10.00 am · Departs from Trafalgar Square
-Includes the Changing of the Guard
-All walking tours last approximately 1½–2 hours
-FREE!
-```
+Every one of those lines is an answer. Here is the question each of them answers:
 
-Read it as five answers:
+| The line                     | The question it answers    |
+| ---------------------------- | -------------------------- |
+| the title                    | **What** is it?            |
+| the day and the time         | **When** does it go?       |
+| the departure point          | **Where** do I turn up?    |
+| the length of the walk       | **How long** will it take? |
+| the price, in its own circle | **How much** do I pay?     |
 
-| The line          | The question it answers      |
-| ----------------- | ---------------------------- |
-| the title         | **What** is it?              |
-| _Daily at 10.00_  | **When** does it go?         |
-| _Departs from…_   | **Where** do I turn up?      |
-| _1½–2 hours_      | **How long** will it take?   |
-| _FREE!_           | **How much** do I pay?       |
-
-Then read it a second time for what it **does not** print. An ad never prints what would put you off: what happens if it rains, how many people will be in the group, where exactly you will be standing when it ends. **What is missing from an ad is information too** — and at the bac it is often the question you are asked.
+Then read it a second time for what it **does not** print. An ad never prints what would put you off: what happens if it rains, how many people will be in the group, how steep the streets are, whether there is anywhere to sit down on the way. **What is missing from an ad is information too** — and at the bac it is often the question you are asked.
 
 Three habits of the writer are worth naming, because you will use them yourself:
 
@@ -112,17 +104,17 @@ Three habits of the writer are worth naming, because you will use them yourself:
 - **Objections are removed in advance.** _Daily_ means you cannot come on the wrong day. _FREE!_ means you cannot say it is too expensive.
 - **The praise is put where the reader has to walk past it.** _Spectacular_, _celebrated_, _one of the world's most…_ — the adjectives do the selling.
 
-> ⚠️ **What an ad says and what it proves are two different things.** An ad that reads *On the way: the fish market* proves that the walk passes the fish market. It does **not** prove that the market is open. Only what is printed is proved; the rest is what the reader kindly imagines.
+> ⚠️ **What an ad says and what it proves are two different things.** A line that promises *On the way: the cathedral* proves that the route goes past the cathedral. It does **not** prove that the door will be open when you get there. Only what is printed is proved; the rest is what the reader kindly imagines.
 
 ## 🎯 Three jobs a sentence can do: describe, persuade, give an opinion
 
-The same castle, three sentences, three different jobs:
+The same old bridge, three sentences, three different jobs:
 
-| Job                    | The sentence                                                          | How you recognise it                              |
-| ---------------------- | --------------------------------------------------------------------- | ------------------------------------------------- |
-| **describing**         | _The castle stands on a rock above the harbour and dates from 1420._  | facts anybody can check — no reader in sight      |
-| **persuading**         | _Come up at sunset and give the castle one hour of your holiday._     | aimed at **you** — imperative, benefit, promise   |
-| **expressing opinion** | _To me, the view from the terrace is the best thing in the town._     | it has an **owner** — _I think, to me, personally_ |
+| Job                    | The sentence                                                              | How you recognise it                               |
+| ---------------------- | ------------------------------------------------------------------------- | -------------------------------------------------- |
+| **describing**         | _The old bridge crosses the river in five arches and dates from 1610._    | facts anybody can check — no reader in sight       |
+| **persuading**         | _Walk out to the middle of the bridge at sunset: the river turns gold._   | aimed at **you** — imperative, benefit, promise    |
+| **expressing opinion** | _Personally, I find the old bridge finer than the cathedral._             | it has an **owner** — _I think, to me, personally_ |
 
 The exponents, all short and all worth learning by heart:
 
@@ -132,11 +124,11 @@ The exponents, all short and all worth learning by heart:
 | persuading        | _Don't miss… · Come and see… · You will never forget… · It is well worth…_          |
 | giving an opinion | _I think… · To me… · In my opinion… · Personally, I'd say…_                          |
 
-> 🗡️ A **superlative is not the same thing as persuasion**. *The rooms on the north side are the coldest in the building* is a plain description that happens to use a superlative: it is checkable, and nobody is being invited anywhere. What persuades is the sentence that turns towards **you**.
+> 🗡️ A **superlative is not the same thing as persuasion**. *The northern arch is the oldest of the five* is a plain description that happens to use a superlative: it is checkable with a date, and nobody is being invited anywhere. What persuades is the sentence that turns towards **you**.
 
 And a text has a **purpose** in the same way a sentence has a job. Ask yourself which of the three it is:
 
-- **to inform** — it puts checkable facts in front of the reader (an encyclopaedia entry, a timetable, the text about Edinburgh in your book);
+- **to inform** — it puts checkable facts in front of the reader (an encyclopaedia entry, a timetable, a notice at a station);
 - **to persuade** — it pushes the reader to do something (the walking-tour ad);
 - **to narrate** — it tells what happened, in the order it happened (a story, a report of a journey).
 
@@ -164,7 +156,7 @@ And four adjectives refuse both shapes and must be learnt:
 
 ### Three things the superlative always needs
 
-**1. A range.** A superlative compares one thing with a **group**, and the group has to be named — otherwise the sentence says nothing. _Loch Ness is the most famous_ ✗ is not English; _Loch Ness is the most famous lake **in Britain**_ ✓ is. The range comes in with **in** (in the world, in Scotland), **of** (of the three, of them all) or a relative clause (that I have ever seen).
+**1. A range.** A superlative compares one thing with a **group**, and the group has to be named — otherwise the sentence says nothing. _This street is the narrowest_ ✗ is not English; _this street is the narrowest **in the old town**_ ✓ is. You bring the group in with **in** (in Europe, in the whole country), with **of** (of the four of us), or with a relative clause of its own: _that anybody here remembers_.
 
 **2. A group of at least three.** With two things you compare — _the older **of the two** brothers_. With three or more you use the superlative.
 
@@ -176,7 +168,7 @@ And four adjectives refuse both shapes and must be learnt:
 | _the **second** largest city in Scotland_      | **exactly one** city is larger                      |
 | _**one of the** most spectacular ceremonies in the world_ | it belongs to the **top group** — others may be above it |
 
-An **ordinal** in front (_second, third, fourth_) tells you exactly how many stand above: _the third largest_ means two are larger. And **one of the** + superlative + a **plural** noun is the safest claim a writer can make: it sounds enormous, and nobody can prove it wrong by producing a more spectacular ceremony somewhere else — the sentence never said there was none. To damage that claim you would have to show that the thing does not belong to the top group at all.
+An **ordinal** in front (_second, third, fourth_) tells you exactly how many stand above: _the fourth oldest_ means three are older. And **one of the** + superlative + a **plural** noun is the safest claim a writer can make: it sounds enormous, and nobody can prove it wrong by producing a more spectacular ceremony somewhere else — the sentence never said there was none. To damage that claim you would have to show that the thing does not belong to the top group at all.
 
 > ⚠️ **Never mark the superlative twice.** _the most oldest_ ✗ · _the most splendidest_ ✗ · _more older_ ✗. Choose **one** of the two shapes and stop there. And do not lose the little word **the**: the superlative almost always carries it.
 
@@ -212,18 +204,18 @@ Two words of the map hide a change of sound inside them:
 | **north**, **south** | voiceless — no voice in the throat | **three**   |
 | **northern**, **southern** | voiced — the throat buzzes  | **the**     |
 
-Add **-ern** and the **th** wakes up and becomes voiced. (In _southern_ the vowel changes as well: /saʊθ/ becomes /ˈsʌðən/, so the word sounds much shorter than it looks.)
+Add **-ern** and the **th** wakes up and becomes voiced. (In _southern_ the vowel changes as well: /saʊθ/ becomes /ˈsʌðən/, so the word is far shorter in the mouth than on the page.)
 
 ## 🚶 Planning a guided tour of your own town
 
-The task at the end of the lesson: foreign visitors are coming, you have about **two hours on foot**, and you are the guide. Four decisions make a tour work:
+The task at the end of the lesson: foreign visitors are coming, you have about **two hours** and no car, and you are the guide. Four decisions make a tour work:
 
-1. **Start where nobody can get lost.** A square, a gate, a station — a place a stranger can find alone. Say the time and the place in the same breath: _We meet at half past nine under the stone arch._
+1. **Start where nobody can get lost.** A square, a gate, a station — a place a stranger can find alone. Say the time and the place in the same breath: _We meet at half past nine outside the post office._
 2. **Order the stops so that you never walk back over the same ground.** Group the places that stand together, then move on. The route is a line, not a star.
 3. **Give each place one thing to be famous for.** Not its whole history — one fact and one adjective. _This is the oldest house in the town, and the only one with its original door._
 4. **End somewhere useful** — a café, a bus stop, a taxi rank. Your visitors have to get home.
 
-And when you describe the route out loud, the small relational words carry everything: _we meet at… · before we reach… · on the way… · once X is behind us… · we come out at… · the walk ends at…_
+And when you describe the route out loud, the little joining words carry everything: _we meet at… · before we reach… · on the way… · once X is behind us… · we come out at… · the walk ends at…_
 
 > 🗡️ Your turn: pick five places in your town and write six sentences — one for the meeting point, one for each stop, one for the end — using **the most**, **the best**, and two of _captivating, breathtaking, magnificent, splendid, revive_. Read it aloud and time it. If it takes you more than three minutes to say, your tour is too long to walk.
 
@@ -233,10 +225,10 @@ And when you describe the route out loud, the small relational words carry every
 - _Dublin is a city of the United Kingdom._ ✗ → Dublin is the capital of the **Republic of Ireland**, an independent country.
 - _Wales shares a land border with Ireland._ ✗ → there is sea between them; a **land** border is one you can walk across.
 - _the most oldest church_ ✗ → **the oldest church** — one mark, never two.
-- _Loch Ness is the most famous._ ✗ → name the **range**: _the most famous lake in Britain_.
+- _This street is the narrowest._ ✗ → name the **range**: _the narrowest street in the old town_.
 - _the second largest city_ means it is the largest ✗ → exactly **one** city is larger.
 - _one of the most spectacular ceremonies_ means it is the most spectacular ✗ → it is in the **top group**, and the sentence never said more.
-- _The ad mentions the fish market, so the market is open._ ✗ → an ad **proves** only what it prints.
+- _The ad mentions the cathedral, so we shall be going inside._ ✗ → an ad **proves** only what it prints.
 - _walk_ said /wɜːk/ ✗ → /wɔːk/, with the vowel of **north**; /wɜːk/ is **work**.
 - _the th of northern is the th of three_ ✗ → adding **-ern** makes it the **voiced** th of _the_.
 
