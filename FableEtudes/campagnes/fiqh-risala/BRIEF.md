@@ -152,11 +152,15 @@ Markdown standard uniquement (titres, listes, tableaux, gras, citations `>`), pa
    de l'option.
 7. **N'utilise ni `misconceptionTag` ni `competencies` ni `acceptedAnswers`** : les registres
    ne couvrent pas cette matière, un tag inconnu fait échouer le gate.
-8. Type : `mcq` uniquement (n'écris pas de champ `type`, c'est le défaut). `options` : ids
+8. **Aucun Markdown dans les champs d'une question.** `prompt`, `explanation` et le `text`
+   d'une option sont rendus par `RichField` en **nœud de texte brut** : un double-astérisque
+   arrive à l'élève **avec ses astérisques**. Le Markdown ne vaut que pour `cours.md` et
+   `resume.md`. (Piège n°6 du pipeline — 22 champs à nettoyer sur la première vague.)
+9. Type : `mcq` uniquement (n'écris pas de champ `type`, c'est le défaut). `options` : ids
    `"a"`, `"b"`, `"c"`, `"d"` ; `correctOption` pointe l'un d'eux. **Varie la position de la
    bonne réponse** d'une question à l'autre.
-9. Les nombres restent en chiffres standards (٥ → 5).
-10. Pas de contenu polémique, pas de takfīr, pas d'attaque d'un autre madhhab. On enseigne
+10. Les nombres restent en chiffres standards (٥ → 5).
+11. Pas de contenu polémique, pas de takfīr, pas d'attaque d'un autre madhhab. On enseigne
     le malikite **tel que le livre l'expose**, sereinement.
 
 ## 6. Avant de rendre
