@@ -28,6 +28,10 @@ La matière suit **الرسالة d'ابن أبي زيد القيرواني** (m
   au lieu de combler.
 - Le matn est écrit **sans ponctuation ni découpage** : ton travail est de le **découper,
   ordonner et expliquer**, pas de le réécrire.
+- **« … » est RÉSERVÉ au matn.** Les guillemets français ne servent à rien d'autre : ni à un
+  locuteur fictif (« يقول التلميذ: … »), ni à une paraphrase, ni à une formule de ton cru.
+  Sinon le contrôle de fidélité mesure autre chose que ce qu'on croit, et l'élève ne sait plus
+  ce qui vient du livre. Pour ta propre voix : pas de guillemets.
 - Tu **cites** le matn (phrases courtes, entre guillemets « … ») puis tu expliques en
   langue d'aujourd'hui. Le lecteur doit toujours voir ce que dit l'auteur ET ce que ça veut dire.
 - ⚠️ Si un verset coranique apparaît : **رواية قالون عن نافع** (مصحف الجمهورية التونسية),
@@ -92,7 +96,12 @@ N'ajoute **ni** `manuel`, **ni** `videos`, **ni** `gradeSlugs`.
 
 ### cours.md
 
-Le cours complet, en markdown, ~6 000–10 000 caractères. Structure attendue
+Le cours complet, en markdown. **Sa longueur suit celle du باب, pas une cible fixe** :
+~6 000–10 000 caractères pour un باب de 2–3 pages, jusqu'à ~14 000 pour un باب de 5 pages
+ou plus. (Mesuré sur les 24 premiers chapitres : la cible unique de 10 000 était fausse —
+les longs أبواب la dépassaient tous, et la tenir aurait coûté des citations ou un tableau.)
+Au-delà de 14 000, c'est possible mais tu le **justifies** dans ton rapport : dis quel
+matériau tu as refusé de couper et pourquoi. Structure attendue
 (inspire-toi du modèle, adapte les titres au sujet) :
 
 - un titre `#` et une accroche d'une ou deux phrases (pourquoi ce باب) ;
