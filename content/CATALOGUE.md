@@ -5,7 +5,7 @@
 > with `chapter.json`; a subject with 0 chapters is a ⚠ stub). Check here whether a subject /
 > grade already exists before creating one, and which slugs are taken.
 
-**84 subjects · 641 chapters · 3084 exercises · 6 themes · 0 stub(s)**
+**90 subjects · 689 chapters · 3236 exercises · 6 themes · 0 stub(s)**
 
 ## anglais
 
@@ -44,13 +44,19 @@
 | subject id | name | grade | lang | chapters | exercises | quiz |
 | --- | --- | --- | --- | --: | --: | --: |
 | `math-2eme-sec-sciences-info` | Mathématiques | — | fr | 3 | 9 | 3 |
+| `french-bac` | Français | — | fr | 7 | 21 | 7 |
+| `english-3eme-sec` | English | — | en | 8 | 24 | 8 |
+| `english-bac` | English | — | en | 9 | 27 | 9 |
 | `arabic-1ere` | اللغة العربية | 1ere-base | ar | 8 | 40 | 8 |
 | `math-1ere` | الرياضيات | 1ere-base | ar | 9 | 36 | 9 |
 | `eveil-scientifique-1ere` | الإيقاظ العلمي | 1ere-base | ar | 9 | 45 | 9 |
 | `education-islamique-1ere` | التربية الإسلامية | 1ere-base | ar | 8 | 40 | 8 |
 | `math-1ere-sec` | Mathématiques | 1ere-sec | fr | 16 | 32 | 16 |
 | `physique-1ere-sec` | Sciences Physiques | 1ere-sec | fr | 17 | 34 | 17 |
+| `chimie-1ere-sec` | Chimie | 1ere-sec | fr | 7 | 14 | 7 |
 | `svt-1ere-sec` | Sciences de la Vie et de la Terre | 1ere-sec | fr | 8 | 16 | 8 |
+| `french-1ere-sec` | Français | 1ere-sec | fr | 7 | 28 | 7 |
+| `english-1ere-sec` | English | 1ere-sec | en | 6 | 18 | 6 |
 | `arabic-2eme` | اللغة العربية | 2eme-base | ar | 8 | 40 | 8 |
 | `math-2eme` | الرياضيات | 2eme-base | ar | 9 | 39 | 9 |
 | `eveil-scientifique-2eme` | الإيقاظ العلمي | 2eme-base | ar | 10 | 50 | 10 |
@@ -98,7 +104,7 @@
 
 | subject id | name | grade | lang | chapters | exercises | quiz |
 | --- | --- | --- | --- | --: | --: | --: |
-| `fiqh` | الفقه | — | ar | 12 | 60 | 12 |
+| `fiqh` | الفقه | — | ar | 16 | 80 | 16 |
 
 ## francais
 
