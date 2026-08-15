@@ -5,7 +5,7 @@
 > with `chapter.json`; a subject with 0 chapters is a ⚠ stub). Check here whether a subject /
 > grade already exists before creating one, and which slugs are taken.
 
-**90 subjects · 697 chapters · 3276 exercises · 6 themes · 0 stub(s)**
+**90 subjects · 699 chapters · 3286 exercises · 6 themes · 0 stub(s)**
 
 ## anglais
 
@@ -104,7 +104,7 @@
 
 | subject id | name | grade | lang | chapters | exercises | quiz |
 | --- | --- | --- | --- | --: | --: | --: |
-| `fiqh` | الفقه | — | ar | 24 | 120 | 24 |
+| `fiqh` | الفقه | — | ar | 26 | 130 | 26 |
 
 ## francais
 

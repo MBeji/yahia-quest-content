@@ -1,4 +1,8 @@
 /**
+ * ⚠️ Les seuils sont BAS À DESSEIN (6 caractères par citation, 5 par fragment) : un seuil de
+ * 12 laissait passer « أربع فأقلّ » (11 car.), contraction silencieuse de « أربع ركعات فأقل ».
+ * Les remonter recrée l'angle mort — ne le fais pas pour réduire le bruit.
+ *
  * Fidélité au matn : chaque citation « … » d'un cours/résumé de `fiqh` doit être une
  * sous-chaîne CONTIGUË du باب dont le chapitre est tiré. Attrape la citation recousue
  * (deux fragments non contigus collés) et la citation retouchée (coquille OCR corrigée
@@ -51,8 +55,8 @@ for (const ch of readdirSync(S, { withFileTypes: true }).filter((d) => d.isDirec
   for (const f of ["cours.md", "resume.md"]) {
     const p = join(S, ch, f);
     if (!existsSync(p)) continue;
-    for (const m of readFileSync(p, "utf8").matchAll(/«([^»]{12,})»/g)) {
-      const parts = m[1].split(/\s*(?:\.\.\.|…)\s*/).map(norm).filter((x) => x.length >= 10);
+    for (const m of readFileSync(p, "utf8").matchAll(/«([^»]{6,})»/g)) {
+      const parts = m[1].split(/\s*(?:\.\.\.|…)\s*/).map(norm).filter((x) => x.length >= 5);
       if (parts.length === 0) continue;
       totalQuotes++;
       const missing = parts.find((part) => !matn.includes(part));
