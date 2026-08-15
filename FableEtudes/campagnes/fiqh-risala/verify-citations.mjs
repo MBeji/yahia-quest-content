@@ -31,6 +31,36 @@ const norm = (s) =>
     .replace(/\s+/g, " ")
     .trim();
 
+/**
+ * Les textes d'un chapitre rendus à l'élève et susceptibles de porter des « … » :
+ * l'énoncé, le texte de chaque option, l'explication. Ils comptent exactement autant
+ * que le cours — c'est là qu'un locuteur fictif ou une formule coranique tronquée passe
+ * le plus facilement pour du matn.
+ */
+function collectQuestionFields(chDir) {
+  const out = [];
+  const files = ["quiz.json"];
+  const exDir = join(chDir, "exercices");
+  if (existsSync(exDir)) for (const f of readdirSync(exDir)) files.push(`exercices/${f}`);
+  for (const rel of files) {
+    const fp = join(chDir, rel);
+    if (!existsSync(fp)) continue;
+    let j;
+    try {
+      j = JSON.parse(readFileSync(fp, "utf8"));
+    } catch {
+      continue;
+    }
+    (j.questions ?? []).forEach((q, i) => {
+      const where = `${rel}#${i + 1}`;
+      if (q.prompt) out.push([`${where}.prompt`, q.prompt]);
+      if (q.explanation) out.push([`${where}.explanation`, q.explanation]);
+      for (const o of q.options ?? []) if (o.text) out.push([`${where}.option.${o.id}`, o.text]);
+    });
+  }
+  return out;
+}
+
 const perChapter = new Map();
 let totalQuotes = 0;
 const samples = [];
@@ -52,10 +82,19 @@ for (const ch of readdirSync(S, { withFileTypes: true }).filter((d) => d.isDirec
   const matn = norm(rawMatn);
   let ok = 0, bad = 0;
 
+  // ⚠️ Les CHAMPS DE QUESTIONS comptent autant que le cours. Ne lire que cours.md et
+  // resume.md cachait la moitié des emplois fautifs de « … » (audit du 2026-08-15) :
+  // locuteurs fictifs, mots isolés, formules coraniques tronquées vivaient dans les
+  // énoncés et les explications, hors de portée du contrôle.
+  const sources = [];
   for (const f of ["cours.md", "resume.md"]) {
-    const p = join(S, ch, f);
-    if (!existsSync(p)) continue;
-    for (const m of readFileSync(p, "utf8").matchAll(/«([^»]{6,})»/g)) {
+    const fp = join(S, ch, f);
+    if (existsSync(fp)) sources.push([f, readFileSync(fp, "utf8")]);
+  }
+  sources.push(...collectQuestionFields(join(S, ch)));
+
+  for (const [f, body] of sources) {
+    for (const m of body.matchAll(/«([^»]{6,})»/g)) {
       const parts = m[1].split(/\s*(?:\.\.\.|…)\s*/).map(norm).filter((x) => x.length >= 5);
       if (parts.length === 0) continue;
       totalQuotes++;
