@@ -30,10 +30,18 @@ const norm = (s) =>
 const perChapter = new Map();
 let totalQuotes = 0;
 const samples = [];
+const missingMatn = [];
 
 for (const ch of readdirSync(S, { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name).sort()) {
   const matnPath = join(BABS, `${ch.slice(0, 2)}.md`);
-  if (!existsSync(matnPath)) continue;
+  // Un matn manquant NE DOIT PAS être un chapitre sauté en silence : sans cette
+  // garde, le chapitre compte 0 écart et le rapport passe au vert sans avoir rien
+  // comparé. Le dossier risala/babs/ n'est pas versionné — il se produit par
+  // `node extract-risala.mjs` — donc le cas est la règle, pas l'exception.
+  if (!existsSync(matnPath)) {
+    missingMatn.push(`${ch} (attendu : ${matnPath})`);
+    continue;
+  }
   // Les marqueurs de page de l'extracteur coupent les citations qui enjambent
   // une page : les retirer AVANT de normaliser, sinon on invente des écarts.
   const rawMatn = readFileSync(matnPath, "utf8").replace(/<!--[^>]*-->/g, " ");
@@ -64,3 +72,5 @@ for (const [ch, { ok, bad }] of perChapter) {
 }
 console.log("\nÉchantillon des écarts :");
 for (const s of samples) console.log("  • " + s);
+
+if (missingMatn.length) process.exit(2);

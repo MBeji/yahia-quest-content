@@ -13,7 +13,10 @@
           "id": "a",
           "text": "The inhabitants must have left in a hurry; they can't have had time to prepare."
         },
-        { "id": "b", "text": "The inhabitants might have planned a festival and returned later." },
+        {
+          "id": "b",
+          "text": "The inhabitants might have planned a festival and returned later."
+        },
         {
           "id": "c",
           "text": "The inhabitants couldn't have left; someone must have locked the doors from outside."
@@ -38,7 +41,10 @@
           "id": "b",
           "text": "The modal contradicts the evidence — 11:58 p.m. is before midnight, so she DID finish on time. It should be \"She must have finished just in time.\""
         },
-        { "id": "c", "text": "The tense is wrong — it should be \"must not finish\" (present)." },
+        {
+          "id": "c",
+          "text": "The tense is wrong — it should be \"must not finish\" (present)."
+        },
         {
           "id": "d",
           "text": "\"must have not\" should be \"couldn't have\" — the form is incorrect."
@@ -51,10 +57,22 @@
     {
       "prompt": "Complete the formal incident report: \"The fire alarm was triggered at 02:47. Given the absence of any visible fire, the activation ___ caused by a sensor malfunction.\"",
       "options": [
-        { "id": "a", "text": "must be" },
-        { "id": "b", "text": "may have been" },
-        { "id": "c", "text": "should have been" },
-        { "id": "d", "text": "had to be" }
+        {
+          "id": "a",
+          "text": "must be"
+        },
+        {
+          "id": "b",
+          "text": "may have been"
+        },
+        {
+          "id": "c",
+          "text": "should have been"
+        },
+        {
+          "id": "d",
+          "text": "had to be"
+        }
       ],
       "correctOption": "b",
       "explanation": "A formal incident report about a past event (the alarm triggered) that lacks certainty (\"Given the absence of visible fire\" implies we are inferring, not certain) uses the formal past possibility: may have been caused. \"Must be\" is present deduction — wrong for past. \"Should have been\" implies the malfunction was expected — not the intended meaning. \"Had to be\" suggests obligation — not a deduction.",
@@ -63,22 +81,46 @@
     {
       "prompt": "Rank the deductions from most to least certain (strongest = near-certainty; weakest = mere possibility):\n1. She must have known about the plan.\n2. She could have known about the plan.\n3. She can't have known about the plan.\n4. She might have known about the plan.\n\nWhich ranking is correct?",
       "options": [
-        { "id": "a", "text": "1 (most certain positive) → 4 → 2 → 3 (most certain negative)" },
-        { "id": "b", "text": "3 (most certain) → 1 → 4 → 2 (least certain)" },
-        { "id": "c", "text": "1 (most certain positive) → 2 → 4 → 3 (most certain negative)" },
-        { "id": "d", "text": "4 → 2 → 1 → 3" }
+        {
+          "id": "a",
+          "text": "1 (most certain positive) → 4 → 2 → 3 (most certain negative)"
+        },
+        {
+          "id": "b",
+          "text": "3 (most certain) → 1 → 4 → 2 (least certain)"
+        },
+        {
+          "id": "c",
+          "text": "1 (most certain positive) → 2 → 4 → 3 (most certain negative)"
+        },
+        {
+          "id": "d",
+          "text": "4 → 2 → 1 → 3"
+        }
       ],
       "correctOption": "a",
-      "explanation": "Certainty scale: **must have** = near-certain YES (1) → **might have** = possible (4) → **could have** = logically possible/slightly more tentative (2) → **can't have** = near-certain NO (3). The scale runs from near-certain positive through decreasing positive possibility to near-certain negative. Option (c) reverses the order of might/could — might is slightly stronger than could in terms of speaker commitment. Option (b) starts with the negative. Option (d) is random.",
+      "explanation": "Certainty scale: must have = near-certain YES (1) → might have = possible (4) → could have = logically possible/slightly more tentative (2) → can't have = near-certain NO (3). The scale runs from near-certain positive through decreasing positive possibility to near-certain negative. Option (c) reverses the order of might/could — might is slightly stronger than could in terms of speaker commitment. Option (b) starts with the negative. Option (d) is random.",
       "difficulty": 3
     },
     {
       "prompt": "Complete this detective's reasoning in a formal report: \"The victim's phone showed a call made at 10:15 p.m. The coroner places time of death between 9:00 and 10:00 p.m. Therefore, the call ___ made by the victim.\"",
       "options": [
-        { "id": "a", "text": "might not have been" },
-        { "id": "b", "text": "must not have been" },
-        { "id": "c", "text": "can't have been" },
-        { "id": "d", "text": "couldn't be" }
+        {
+          "id": "a",
+          "text": "might not have been"
+        },
+        {
+          "id": "b",
+          "text": "must not have been"
+        },
+        {
+          "id": "c",
+          "text": "can't have been"
+        },
+        {
+          "id": "d",
+          "text": "couldn't be"
+        }
       ],
       "correctOption": "c",
       "explanation": "If death occurred between 9:00–10:00 p.m. and the call was at 10:15 p.m., it is logically impossible for the victim to have made that call: The call can't have been made by the victim. \"Might not have been\" is too weak — the timeline makes it impossible, not just uncertain. \"Must not have been\" is not standard for past deduction of impossibility. \"Couldn't be\" is present tense — wrong for this past forensic context.",
