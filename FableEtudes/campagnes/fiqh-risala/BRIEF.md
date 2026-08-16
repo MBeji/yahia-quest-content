@@ -48,7 +48,18 @@ La matière suit **الرسالة d'ابن أبي زيد القيرواني** (m
 - Ni infantilisant, ni savant : un élève de 10 ans doit suivre, un adulte ne doit pas s'ennuyer.
 - Des exemples concrets de la vie d'aujourd'hui (l'école, la maison, le voyage, le ramadan).
 
-## 3. Chapitres à sujet adulte (on te dira si le tien en fait partie)
+## 3. Chapitres à sujet adulte
+
+⚠️ **La liste qu'on te donne est un plancher, pas un plafond.** Six أبواب sont classés
+« sujet adulte » (30, 32, 33, 35, 37, 39), mais des passages de droit des personnes —
+statut servile, droit familial — apparaissent aussi dans des أبواب qui ne le sont pas :
+le 34 (البيوع) et le 36 (الشفعة والهبة) en portent. **Applique cette section dès que tu en
+rencontres un, même si ton chapitre n'est pas dans la liste**, et dis-le dans ton rapport.
+Deux agents l'ont fait d'eux-mêmes le 2026-08-16 ; c'est le bon réflexe.
+
+Quand tu écartes un passage, **déclare-le en situ** — dans le cours et dans
+`chapter.json` `sources[]` — avec sa raison. Un silence non déclaré se lit plus tard
+comme un oubli, et personne ne saura s'il était voulu.
 
 Certains أبواب relèvent du droit adulte : mariage/divorce, `العدّة`, peines (`الحدود`),
 `الجهاد`, l'affranchissement et le statut servile, les successions.
