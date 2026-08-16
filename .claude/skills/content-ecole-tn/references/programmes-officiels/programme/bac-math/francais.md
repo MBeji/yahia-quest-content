@@ -1185,7 +1185,7 @@ _Page d'ouverture (p. 189) : titre imprimé en bandeau vertical « L'Homme et la
     démarche scientifique ? » 4/ « Que pensez-vous de la stratégie argumentative développée par
     l'auteur ? » 5/ « Partagez-vous son point de vue ? Pourquoi ? »
   - _Les mots pour le dire_ (p. 211, 3 exercices) — **la formation des mots savants**. 1/ Tableau de
-    18 composants à exploiter, reproduit intégralement : Bio = vie (biologie) · Auto = soi-même
+    17 composants à exploiter, reproduit intégralement : Bio = vie (biologie) · Auto = soi-même
     (automate) · Biblio = livre (bibliographie) · Algie = douleur (antalgique) · Logie = science
     (géologie) · Géo = terre (géométrie) · Iso = égal (isocèle) · Hydro = eau (déshydratation) ·
     Homo = semblable (homologue) · Hélio = soleil (héliotrope) · Gone = angle (polygone) · Photo =

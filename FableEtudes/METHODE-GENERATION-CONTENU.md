@@ -131,7 +131,9 @@ Règles de boucle (non négociables) :
 - **R-2 — Provenance & droits.** Le corpus officiel (CNP / manuels scolaires) est la source
   prévue ; tout autre document porte auteur / origine / autorisation, sinon **refus**. Doute ⇒
   STOP. Pas de verbatim d'œuvres périphériques sous droits (chansons, textes littéraires
-  longs) : résumer + citer la référence.
+  longs) : résumer + citer la référence. **Une source du web se qualifie en plus par son
+  _tier_** (§ Profils → `source-web`) : ce qu'on prend à un lien décide de tout, et un seul des
+  quatre tiers exige une autorisation.
 - **R-3 — Programme d'abord.** Pour une matière scolaire, confronter la fiche à la
   transcription CNP du couple si elle existe ; divergence de scope ⇒ le **programme officiel
   gagne**, écart signalé.
@@ -232,6 +234,7 @@ publié le chapitre suivant.
 | **ecole-cnp**        | cycle de base (`1ere-base` → `9eme-base`)                            | guide enseignant CNP (`5…`) **+** manuel élève (`1…`), **combinés**                                                       | `programme/<niveau>/<matière>.md` + `manifest/<niveau>.json`                                                                                                                        | `programme/_INDEX.md` (couples `[ ]`)                                                                    |
 | **ecole-secondaire** | lycée (`1ere-sec` → `bac-*`)                                         | manuel élève du secondaire (`2…`) + programme officiel du ministère s'il est publié ; **manuel seul ⇒ il fait référence** | idem ecole-cnp (les sections sont des nœuds `grades` ; slugs de [`docs/lycee-architecture.md`](https://github.com/MBeji/yahia-quest-arena/blob/main/docs/lycee-architecture.md))    | matrice sections × matières de `docs/lycee-architecture.md` ; **créer** la ligne `_INDEX.md` dans le lot |
 | **document-libre**   | PDF d'enseignant, polycopié, annales papier — tout doc hors corpus   | le document lui-même (**droits R-2 vérifiés** : auteur, origine, autorisation)                                            | école : `programmes-officiels/sources-externes/<slug>/fiche.md` ; hors école : `content/_sources/<theme>/<slug>/fiche.md` — **même gabarit** `_TEMPLATE.md` + en-tête de provenance | — (la PR trace ; pas de ligne `_INDEX.md`)                                                               |
+| **source-web**       | une source **en ligne** : site de devoirs/séries, blog d'enseignant, portail d'annales | la page publique elle-même (**tier déclaré avant tout token**, étude 27 R-1)                                              | école : `programmes-officiels/sources-externes/web-<slug>/fiche.md` ; hors école : `content/_sources/<theme>/web-<slug>/fiche.md` — gabarit `_TEMPLATE.md` + **en-tête de provenance en 8 champs** | — (la PR trace ; jamais de ligne `_INDEX.md` : une source web n'est pas un programme)                     |
 | **sans-source**      | la fiche existe (`[~]`/`[x]`) mais le contenu manque sous `content/` | aucune (la fiche mergée)                                                                                                  | — (sauter le LOT A)                                                                                                                                                                 | `content/CATALOGUE.md` (sujets existants)                                                                |
 
 Notes par profil :
@@ -257,8 +260,69 @@ Notes par profil :
   provenance (auteur, origine, autorisation, date) ; les `sources[]` du chapitre généré
   citeront le document. R-3 : si une transcription CNP du couple existe, confronter — le
   programme gagne.
+- **source-web.** Voir la section dédiée ci-dessous : le tier se déclare **avant** le premier
+  token, et il est opposable pour toute session ultérieure.
 - **sans-source.** Vérifier que la fiche est bien à **profondeur de génération** (R-5 — une
   first-pass ne se génère pas), puis dérouler directement le LOT B.
+
+### Le profil `source-web` — ce qu'on prend, exactement, à un lien (étude 27)
+
+Il existe un écosystème tunisien de sites gratuits qui publient devoirs de contrôle et de
+synthèse, séries par chapitre et corrigés. C'est le seul gisement qui dise **à quel niveau
+d'exigence un chapitre tombe vraiment** : le manuel officiel donne le périmètre, le devoir de
+prof donne le plafond. Mais selon ce qu'on y prend, on est dans du calibrage sans risque ou dans
+de la contrefaçon — d'où **quatre tiers, dont un seul exige une autorisation** :
+
+| tier      | ce qu'on prend                                                                       | copie     | autorisation écrite |
+| --------- | ------------------------------------------------------------------------------------ | --------- | ------------------- |
+| **T0**    | des **faits** : années servies, typologie DC1/DC2/DS, plafond d'exigence, vocabulaire | aucune    | non                 |
+| **T1**    | **rien** — on pointe (lien sortant curé, si la feature existe)                       | aucune    | non                 |
+| **T2′**   | la **carte notionnelle et typologique**, puis les `prof-*` écrivent des énoncés neufs | aucune    | non                 |
+| **T2**    | le **contenu** (énoncés, corrigés) — transcription fidèle                            | intégrale | **OUI, bloquante**  |
+
+**La ligne T2′, à connaître par cœur** : *un énoncé est une expression protégée, une notion ne
+l'est pas.* « Calculer la résultante de deux forces concourantes » se reprend librement ; la
+phrase de l'auteur, ses valeurs numériques, son contexte narratif et la formulation de son
+corrigé, non. Contexte et nombres sont **réinventés**, jamais transposés. `content:qa` le
+**vérifie** (recouvrement de 8 mots avec toute fiche non autorisée ⇒ `[error]`) — ce n'est pas
+une consigne d'honneur.
+
+Cinq règles qui s'ajoutent au socle R :
+
+- **Un site tiers n'est JAMAIS une référence de programme.** Extension de R-3 : le
+  manuel/guide officiel fait foi ; un devoir reflète ce qu'un établissement a choisi d'évaluer,
+  pas le périmètre officiel. « Aucune source officielle trouvable ⇒ STOP » reste entier — une
+  source web ne comble pas ce STOP.
+- **Le défaut est la surveillance.** Fiche sans en-tête, autorisation `aucune` ou `demandée` :
+  surveillée. Seule une autorisation `accordée` la lève.
+- **Le snapshot ne rentre pas dans le dépôt.** Le PDF/HTML consulté vit dans le wrapper hors git
+  (`YahiaAcademy/sources-web/<slug>/`), jamais sous `content/`. Un corpus tiers dans notre git
+  est exactement ce que `leak:check` protège dans l'autre sens.
+- **Robots & CGU.** Un site qui interdit l'accès automatisé se lit **à la main** ou pas du tout.
+  Aucun contournement de WAF, jamais (même réflexe que le 403 du site CNP).
+- **Réciprocité.** `LICENSE-CONTENT.md` interdit contre notre contenu ce qu'une aspiration ferait
+  à celui d'autrui. En cas de doute, applique la décision à nous-mêmes : si elle nous
+  scandaliserait, elle est refusée.
+
+**En-tête de provenance — 8 champs, tous obligatoires.** Un champ manquant ⇒ la fiche n'est pas
+exploitable et la session s'arrête (même sévérité que la checklist droits de `document-libre`) :
+
+```yaml
+url: https://<domaine>/<chemin>        # la PAGE consultée, jamais le fichier
+titulaire: <personne morale ou physique identifiée, ou "inconnu">
+consulte_le: 2026-08-13                # date de consultation (le web bouge)
+cgu: <URL des CGU/mentions légales, ou "absentes">
+robots: <"autorise" | "interdit" | "absent">
+autorisation: <"aucune" | "demandee le JJ/MM" | "accordee le JJ/MM par <qui>">
+tier: <"T0" | "T1" | "T2-prime" | "T2">        # opposable
+snapshot: YahiaAcademy/sources-web/<slug>/     # hors git + empreinte
+```
+
+⚠️ **Deux pièges avant d'espérer un T2.** Un site qui **ré-héberge des PDF d'enseignants tiers**
+— cas dominant dans cet écosystème — **n'a pas les droits à céder** : son tier plafonne à T2′
+quelle que soit sa bonne volonté. Et l'accès lui-même n'est pas acquis : une session cloud voit
+ces domaines **bloqués par la politique d'egress** (constaté le 2026-08-13) — la qualification se
+fait depuis le poste Windows, ou en autorisant le domaine dans l'environnement.
 
 ## Phase 0 — bootstrap (une fois par campagne, T-6)
 

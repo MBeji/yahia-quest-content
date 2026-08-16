@@ -329,7 +329,8 @@ tétraèdres) suspendus sur des orbites elliptiques autour d'un soleil, sur fond
 
 Deux illustrations : (a) une silhouette de tête d'homme sur fond bleu portant un grand **point
 d'interrogation** ; (b) une image colorée d'un tableau noir portant la formule
-`α = (√5 − 1) / 2`.
+`α = √(5 − 1) / 2` — **tel qu'imprimé** : la barre du radical couvre « 5−1 »,
+et non le seul 5.
 
 **Encadré de citation** (verbatim) :
 
@@ -424,7 +425,7 @@ Deux **encadrés de citation** (verbatim) :
 > للذات ماض من اللاقيمة تقتضي معارضته مع حاضر من القيمة ".
 > — ▲ **غاستون باشلار، العقلانيّة المطبّقة**
 
-> " إذا كنت تـفـرّق هكـذا بين الاكتـشـاف والاختراع، فأين تضع إذن هذه النتيجة المفزعة للتقدّم
+> " إذا كنت تـفـرّق هكـذا بين الاكتـشـاف والاختراع، فأين تضع إذن هذه النتيجة الجديدة المفزعة للتقدّم
 > التكنلوجي [sic]، أعني القنبلة الذريّة؟ ".
 > — **هيزنبرغ**
 
@@ -448,11 +449,11 @@ Deux **encadrés de citation** (verbatim) :
 
 **التمهيد** (verbatim) :
 
-> ساد اعتقاد بأنّ العمل العلمي هو مجرّد وصف للوقائع يكون بتوفّر شرط موضوعيّة النقل عبر قراءة
+> ساد اعتقاد بأنّ العمل العلمي هو مجرّد وصف للوقائع يكون كماله بتوفّر شرط موضوعيّة النقل عبر قراءة
 > للأحداث قوامها حياد الذّات. ومع ذلك، لنا أن نرتاب في اعتقاد كهذا، تهزّه تصوّرات جديدة لعمل
 > العقل العلمي حين يُدرك فاعليّة لا تكتفي بالمعرفة بل تذهب إلى توفير شروط المعرفة.
 
-**الهوامش** (verbatim resserré) :
+**الهامشان** (verbatim resserré) :
 
 1. **نموذج** `Paradigme` : المقصود هنا النموذج **الإرشادي** للعلم بالمعنى الذي يقدمه **توماس
    كوهن** في *بنية الثورات العلمية*. (انظر تحديدات وتمييزات مفهوميّة)
@@ -528,6 +529,39 @@ conclusion : les modèles visuels aident (l'esprit travaille par intuition), mai
 visuel réussi n'est **pas** une garantie de vérité de la théorie, et son absence n'est pas un
 motif de réfutation.
 
+**الهامشان** (verbatim) :
+
+1. **سلسلة ماركوف** : تسمية لمقولة سلسلة الأحداث التي بنى عليها ماركوف أندري أندريفيتش
+   (1856—1922) الرّياضي الروسي نظريّته في الكسور المتّصلة.
+2. **الثابتات** `Paramètres` : عنصر يؤخذ بعين الاعتبار لتقييم وضعية خاصة وفهم ظاهرة في
+   جزئيّاتها، مرادف لعامل `facteur` والثّابتة في الرياضيات كميّة محدّدة تتوقّف عليها دالّة من
+   المتغيّرات المستقلّة.
+
+**الكاتب — رودولف كارناب (1891 — 1970)** : ولد في ألمانيا وهو فيلسوف ومنطقي وأحد أبرز مؤسّسي
+حلقة فيينا. ينتمي في الآن نفسه إلى الفلسفة الألمانية والأنجلوسكسونية. عالج القضايا الأساسيّة
+لإبستيمولوجيا الرياضيات والعلوم الصحيحة. وفي أبرز كتبه « البناء المنطقي للعالم » (1928)، حاول
+تطبيق برنامج الظواهرية وهو إعادة بناء العالم من خلال علاقة وحيدة معطاة في التجربة المباشرة.
+وقد جعلته عنايته الخاصة بلغة العلوم والفلسفة أحد أبرز الفاعلين في المنعرج اللغوي للفلسفة. من
+مؤلّفاته أيضا : « التركيب المنطقي للغة » (1934)، « مدخل إلى علم الدّلالة » (1942)، « الأسس
+الفلسفيّة للفيزياء » (1966)…
+
+**المهام** (verbatim) :
+
+- أستخرج دلالة النموذج الرياضي من النص وأبين الفرق بينه وبين النموذج الفيزيائي في القرن التاسع
+  عشر، مستحضرا مثالا من تاريخ العلوم.
+- ما الذي يفسّر الطابع التبسيطي للنموذج ؟ هل من قيمة لذلك ؟
+- بم أفسر تغيّر النموذج ؟ ما هي استتباعات ذلك على قدرة العلم على تفسير الواقع ؟
+- كيف أفهم قول الكاتب « إنّ العقل يعمل بالحدس، وغالبا ما يكون مفيدا أن يفكّر العالم بمساعدة
+  الصور البصرية » ؟
+- أحدّد تبعا لهذا القول، وحسب سياق النص، منزلة التجربة في العلم.
+- يتحدث الكاتب عن لزوم الحذر من النموذج، كيف أفهم هذا التّحذير وما الذي يبرره ؟
+
+**Encadré-citation (p.226)** : « إنّ العقل يعمل بالحدس، وغالبا ما يكون مفيدا أن يفكّر العالم
+بمساعدة الصور البصريّة » — **كارناب**.
+
+**Illustrations** : p.225 portrait photographique de Carnap ; p.226 atome stylisé (noyau jaune,
+orbites bleues) accolé à l'encadré-citation.
+
 ##### 2.2 نافذة سندات — suite : سندات 4-16 (p.227-250)
 
 > **Pages lues** : p.227–250 (intégral). **Source** : manuel élève `210402`
@@ -538,8 +572,8 @@ motif de réfutation.
 > **Convention constatée** : chaque سند s'ouvre par un **تمهيد** (chapeau problématisant imprimé
 > sur fond rose) suivi du texte et de sa référence bibliographique, puis des encadrés
 > **الهامش / الهوامش / الهامشان** (notes), **الكاتب** (notice d'auteur) et **المهام** (consignes de
-> travail). ⚠️ L'extension n'est **pas** systématiquement une double page : les سندات 9, 10, 14 et
-> 16 tiennent en une page ou débordent différemment — la colonne « ص. » ci-dessous donne
+> travail). ⚠️ L'extension n'est **pas** systématiquement une double page : les سندات 9 (p.237) et 13
+> (p.244) tiennent sur une seule page, et le سند 10 déborde sur p.238–239 — la colonne « ص. » ci-dessous donne
 > l'étendue réellement imprimée.
 
 ###### Tableau récapitulatif des سندات 4–16
@@ -651,7 +685,7 @@ découvre dans chaque champ de recherche.
 
 **الهامش** (verbatim) :
 
-1. **تحكّمي (سيبارنيطيقي)** : نسبة إلى السيبارنيطيقا `Cybernétique` وهو علم حديث ظهر في بداية
+1. **تحكّمي (سيبارنيطيقي)** : نسبة إلى السيبارنيطيقا `Cybernétique` وهو علم حديث ظهر نوعيا في بداية
    الأربعينيات من القرن الـ20 ويعتبر الرياضي نوربرت فينر من أهمّ مؤسسيه وقد عرّف فينر
    السيبارنيطيقا على أنّه علم القيادة والتحكّم `control` في الأحياء والآلات ودراسة آليات التواصل
    `communication` في كلّ منهما. **(انظر سياقات فكريّة)**
@@ -758,7 +792,7 @@ qui semblaient complexes, exactement comme la force, l'énergie ou l'efficacité
 **nouveau code (ou langage) purement conceptuel**, le phénomène d'hier, extrêmement compliqué,
 nous devient intelligible et même simple. Exemple imprimé : l'orbite de la planète **Mars**, dont
 la détermination coûta à **Kepler** 900 feuilles de calcul, devient d'un coup facile à décrire et
-à interpréter par une équation périodique du second ordre, dès lors qu'on remplace les symboles
+à interpréter par une équation périodique « فوقية » (transcendante) et « مخصوصة التعقيد », dès lors qu'on remplace les symboles
 ptoléméens et coperniciens des sphères célestes (« des cercles qui tournent dans des cercles, qui
 tournent autour de… ») par le **symbole de l'ellipse** — au prix de l'audace de renoncer à
 « **التماثل الإلهي** » du cercle. La première loi de Kepler (« les orbites des planètes sont des
@@ -825,7 +859,8 @@ ceci » : ainsi les choses deviennent claires. La stratégie de la négligence e
 **فهم**, et non à la mise en évidence : elle est l'**opération inverse de la métaphore** — la
 métaphore montre en cachant peu, le modèle cache pour ne garder que peu. Si la science se
 reconnaît dans son usage du modèle, c'est qu'elle tient à l'idée d'une **simplification** des
-phénomènes. La deuxième loi de Newton, écrite `f = m.a` (« القوة هي حاصل ضارب الكتلة في التسارع »),
+phénomènes. La deuxième loi de Newton — le corps du texte l'écrit en notation **arabe**, `ق = ك.س`
+(« القوة هي حاصل ضارب الكتلة في التسارع ») ; la forme latine `f = m.a` n'apparaît que dans le **هامش 2** —
 est donnée comme modèle exemplaire : elle simplifie une situation réelle en la ramenant à une
 situation simple. Newton dit en effet : « ne regardez que ceci, oubliez tout le reste ». C'est un
 modèle parce que cela **ne se produit jamais** dans la nature (forces de frottement) : il faut
@@ -995,8 +1030,8 @@ paraît justifier un partage relatif et pacifique des rôles sociaux entre **ا�
 `René THOM, Paraboles et catastrophes ; éd. Flammarion, Paris, 1983, pp 521-621`
 *(pagination reproduite telle qu'imprimée — vraisemblablement une coquille de la source)*.
 
-**Points saillants du texte** (reformulés) : il est difficile d'expliquer ce que veut dire
-**النموذج العلمي**. Nous nous trouvons devant une situation qui présente une propriété
+**Points saillants du texte** (reformulés) : il **n'est pas** difficile d'expliquer ce que veut dire
+**النموذج العلمي** (« ليس من الصّعب أن نفسّر ما يعنيه النموذج العلمي »). Nous nous trouvons devant une situation qui présente une propriété
 **surprenante** pour l'observateur : elle évolue de façon imprévue, quelque chose s'y produit par
 pur hasard, ou des facteurs y agissent de manière non objective — action à distance. On cherche
 alors à maîtriser ces situations **à l'aide de la modélisation**, c'est-à-dire en construisant un
@@ -1386,7 +1421,8 @@ au-dessus d'une **sphère wireframe**.
   Flammarion ; lecture **confirmée** sur rendu 300 dpi — c'est une coquille de la source, pas une
   erreur de transcription.
 - **Nom de Freudenthal** : le manuel l'écrit « **فرودونتال** » (سند 9, p.237) et
-  « **فرودنتال** » (سند 13, p.244) ; le فهرس, lui, donne « فرويندتال ». Trois graphies pour un
+  « **فرودنتال** » (سند 13, p.244) ; le فهرس, lui, donne « فرويندتال » à son entrée n° 9 — mais
+  « فرودنتال » à son entrée n° 13 (p.406). Trois graphies pour un
   seul auteur, `Hans FREUDENTHAL` en latin dans les deux سندات.
 - **p.248, هامش 2** : le nom latin est imprimé `Maxwel` (un seul `l`) et les deux verbes du
   هامش 1 sont imprimés « أكتشف » (hamza de coupure) au lieu de « اكتشف » — reproduits tels quels.
@@ -1418,7 +1454,7 @@ Deux concepts seulement sont définis dans cette نافذة : **الواقع** (
 (p.254-255). Chacun suit le même gabarit en trois entrées — **لغة** / **اصطلاحا** /
 **فلسفيا وإبستمولوجيا** — puis une rubrique **« قيل في … »** (florilège de citations attribuées).
 
-**1 — الواقع · `La Réalité` — p.252-253**
+**1 — الواقع · `LA Réalité` — p.252-253**
 
 **■ لغة (verbatim)** :
 
@@ -1696,7 +1732,7 @@ cantonner à une discipline ou un secteur scientifique déterminé — « ولذ
   puis **بيرون** `Pyrrhon` **والريبيين عموما**, pour qui **النظام الذي ندركه قد لا يكون نظام
   الطبيعة الواقعي** : nous ne pouvons connaître le réel en soi, seulement **أسماء هذا الواقع
   وتمثلاته**.
-- **باشلار**, connu pour avoir forgé **مفهوم العائق الإبستيمولوجي** — ce qui empêche qu'un
+- **بشلار** (graphie de la p.257), connu pour avoir forgé **مفهوم العائق الإبستيمولوجي** — ce qui empêche qu'un
   changement se produise **في بنية العقل العلمي** — et pour avoir affirmé **أسبقية المشكل العلمي
   على أي إنشاء نظري**, aboutissant à : **« لا شيء معطى، الكلّ منشأ »**. Raison donnée : les
   problèmes scientifiques ne se posent pas d'eux-mêmes ; la connaissance scientifique est, pour
@@ -1756,7 +1792,7 @@ commanditaires ou les chercheurs pouvant avoir **أهداف أو مصالح خا
 > والفوضى والتنظيم** ».
 
 Glose imprimée : la pensée complexe est **بناية ذات طوابق عديدة** dont la base se compose de
-**نظرية الإعلام** + **السييارنيطيقا أو نظرية التحكم** + **نظرية الأنساق**, et qui contient les
+**نظرية الإعلام** + **السيبارنيطيقا أو نظرية التحكم** (graphie de la p.258) + **نظرية الأنساق**, et qui contient les
 moyens nécessaires pour construire **نظرية في التنظيم**. Par contraste avec la vision classique,
 Morin insiste sur **ضرورة تجاوز كلّ محاولة لتأسيس منطق واحد** : **العقلانيّة الحق هي التي تدرك
 حدودها وتكون قادرة على التفكير فيها وتجاوزها** tout en reconnaissant **وجود ما لا يمكن تعقله**.
@@ -1908,7 +1944,7 @@ flottant au-dessus d'un damier vert sur fond étoilé (sans légende imprimée).
 - **Chapitre** : **الفصل الثامن : النّماذج والأدوات والصدق**.
 - **Traduction** : **ترجمة : أ.د. يمنى طريف الخولي** — **( عالم المعرفة، أفريل/ماي 2003 )**.
 - **Couverture reproduite p.264** : collection **عالم المعرفة**, n° **292**, **أبريل/مايو 2003** ;
-  **تأليف : كارل. ر. بوبر** · **تحرير : مارك أ. نوترنو** `[?]` · **ترجمة : أ.د. يمنى طريف
+  **تأليف : كارل. ر. بوبر** · **تحرير : مارك أ. نوترنو** · **ترجمة : أ.د. يمنى طريف
   الخولي**.
 - **Note de bas de page (1) imprimée en marge, p.265** : **« عنوان المحاضرة : منهجيّة البحث في
   العلوم الاجتماعيّة »** — l'extrait s'ouvre sur « في هذا الجزء الثاني من محاضرتي(1) ».
@@ -1981,7 +2017,7 @@ de problèmes)** :
 **■ Encadré 3 — البعد الدلالي**
 
 > أدركت أنّ **النمذجة** تتحقق أيضا في **بعد دلالي** على نحو **اختزالي، تبسيطي، تمثيلي لواقع
-> معقّد** قوامه **قدرة تخييلية وإنشائيّة للعقل العلمي** تسمح له بابتكار **بنية مفهومية
+> معقّد** قوامه **قدرة تخيلية وإنشائيّة للعقل العلمي** تسمح له بابتكار **بنية مفهومية
 > ونظريّات** تفسّر الواقع **لا كما يحدث أو كما يبدو**، وإنّما **تفسيرا افتراضيّا** بشفرات أو
 > بعبارات جبريّة، **تفسير ما يوجد بما لا يوجد أو تفسير المرئي باللامرئي**.
 
@@ -2035,8 +2071,8 @@ de problèmes)** :
   « ونظم **غير خطية لا يعتمد في معالجتها طريقة خاصة** ». Vérifié à 300 dpi : la lecture est
   certaine, mais l'énoncé est **contre-intuitif** (on attendrait « … *بد أن* يعتمد … طريقة خاصة »
   ou « … طريقة *عامة* »). Transcrit **verbatim** ; possible coquille de la source `[sic]`.
-- **p.264** — couverture reproduite : le nom de l'éditeur scientifique se lit **مارك أ. نوترنو**
-  `[?]` (scan de couverture usé ; la graphie pourrait être نوثرنو). Le millésime **2003** est
+- **p.264** — couverture reproduite : le nom de l'éditeur scientifique se lit **مارك أ. نوترنو** —
+  lecture **confirmée à 900 dpi** par la R-7, le `[?]` est levé. Le millésime **2003** est
   confirmé par la mention imprimée p.265 (« أفريل/ماي 2003 ») ; sur la couverture le dernier
   chiffre est peu net.
 - **p.255 / p.257 / p.259** — les listes **لمزيد التعمّق** sont transcrites telles qu'imprimées,
@@ -2229,16 +2265,68 @@ Cinq chapitres = les cinq **مباحث** du programme. Les plages de pages sont 
     contrairement au gabarit habituel ; le guidage tient aux seules annotations marginales et à la
     numérotation des lignes. La p.269 n'est que deux illustrations légendées ;
   - la double page par سند **n'est pas systématique** : les سندات 9 et 13 tiennent sur une seule
-    page, le 10 déborde sur p.238–239 ; les سندات 11, 12, 13 et 16 n'ont **aucun** encadré هامش.
+    page, le 10 déborde sur p.238–239 ; les سندات 2, 11, 12, 13 et 16 n'ont **aucun** encadré هامش.
 - **Quatre notices d'auteur sont des renvois** à un autre سند (10→7, 13→9, 14→7, et le هامش 3 du
   سند 14→11) : la génération devra les résoudre plutôt que de les citer telles quelles.
 - `[?]` p.245 : portrait non légendé sur un texte à deux voix (فانفلي / لوموانيو) — attribution
   indéterminable. `[sic]` relevés : « الأنساق العلامات » (p.228) et la pagination `pp 521-621`
   de René Thom (p.241), tous deux confirmés à 300 dpi ; « Karl POPER » avec un seul P (p.264) ;
   `Van Frassen`, `Maxwel`, « أكتشف », « البشرى », « هيّ ».
-- ⚠️ **R-7 NON FAITE sur le مبحث 2.** La relecture indépendante par sondage dirigé (T-8) n'a pas
-  eu lieu : le registre porte donc `r7: null` et le statut reste `partielle` — jamais
-  `validee-r7`. Elle doit être menée **avant toute promotion**, et de préférence avant le LOT B.
+- ✅ **R-7 FAITE sur le مبحث 2 — 2026-08-13, portée INTÉGRALE (56/56 pages).** Relecture
+  indépendante, contexte vierge, **contre les images du PDF**. Le protocole T-8 prévoyait un
+  sondage (≥15 %) ; le relecteur a collationné **41 pages mot à mot** et vérifié les **15 autres**
+  au niveau thèse/référence/non-invention, plus 22 re-rendus 300–900 dpi sur les zones douteuses.
+  **Verdict : 3 constats substantiels, 5 écarts de fidélité verbatim, 10 constats de forme — les
+  18 corrigés.** Le seuil d'escalade (≥3 substantiels) était atteint, mais la relecture intégrale
+  qu'il déclenche **avait déjà été faite dans la même passe** : la liste est exhaustive.
+
+  Les 3 substantiels, tous **revérifiés sur la page par l'orchestrateur avant application** (la
+  correction prescrite peut elle-même être fautive) :
+  1. **p.226 entièrement manquante** — le سند 3 (كارناب) n'avait ni ses 2 هوامش, ni sa notice
+     d'auteur, ni ses 6 مهامّ, ni son encadré-citation, alors que la page était déclarée lue.
+     **Omission, désormais comblée.**
+  2. **p.240, contresens** — la fiche disait « il est difficile d'expliquer ce que veut dire le
+     modèle scientifique » ; la page imprime « **ليس من الصّعب** » — *il n'est **pas** difficile*.
+     La négation était tombée : le sens était **inversé**.
+  3. **p.233, détail inventé** — « équation périodique **du second ordre** » n'est pas imprimé ;
+     la page dit « معادلة دوريّة **فوقية مخصوصة التعقيد** ».
+
+  Ce que la R-7 a **confirmé sans écart** : les 16 lignes du tableau des سندات (auteur, titre,
+  pages), les 2 تحديدات avec leur gabarit et leurs 6 citations « قيل في … », les 6 مختصرات, les 4
+  encadrés توضيح, les 15 repères marginaux du نصّ مطوّل, la numérotation des نوافذ, l'absence de
+  chiffres arabo-indiens, et la conformité **R-2** (aucun texte de سند recopié).
+
+  ⚠️ Le statut reste **`partielle`** malgré la R-7 : elle ne porte que sur le مبحث 2, et 4
+  chapitres sur 5 restent en ossature. `validee-r7` supposerait la fiche entière.
+
+- **Contrôle par sondage de l'orchestrateur — ce n'est PAS une R-7.** Faute de pouvoir lancer la
+  relecture indépendante, 5 pages ont été re-vérifiées **contre les images du PDF** par
+  l'orchestrateur. Ce contrôle ne vaut pas R-7 pour deux raisons qu'il faut garder en tête : son
+  contexte **n'est pas vierge** (il a lu les rapports des transcripteurs) et l'échantillon — 5
+  pages sur 56, ~9 % — est **sous le seuil T-8** (100 % du critique + ≥15 % du reste).
+  Résultat : **5 vérifications, 0 erreur.**
+  - p.237 — سند 9 : titre « كيف ينشأ النموذج؟ », auteur imprimé **هانز فرودونتال**, référence
+    latine `Hans FREUDENTHAL, La sémantique du terme modèle, Paris 1978, pp 159-160`, et le سند
+    tient bien **sur une seule page** (تمهيد + texte + الكاتب + المهام), **sans encadré هامش**.
+    ✅ conforme, y compris la troisième graphie du nom.
+  - p.255 — البراديغم s'étend bien jusqu'à p.255, avec la rubrique **قيل في البراديغم**
+    (توماس كوهن, رولان أومناس) et l'encadré **لمزيد التعمّق**. ✅ conforme : le فهرس était bien
+    inexact, pas la fiche.
+  - p.264 — **`Karl POPER`** est bien imprimé avec **un seul P** (le `[sic]` est justifié) ;
+    la page ne porte **aucun questionnaire** ; la couverture reproduite indique
+    **عالم المعرفة n° 292 · أبريل/مايو · 2003**. ✅ conforme — le millésime 2003 a été reconfirmé
+    à 400 dpi après un doute de lecture à 150 dpi.
+  - p.270 — les **6 encadrés de مختصرات** sont bien au nombre de 6. ✅ conforme.
+  Ce que ce contrôle **ne dit rien** de : les 13 autres سندات, les thèses reformulées, le gabarit
+  لغة/اصطلاحا/فلسفيا des تحديدات, les سياقات فكريّة et les 4 exercices de كيفيّات التفكير.
+
+  > 📌 **Ce que la R-7 a montré ensuite — à retenir pour les prochains chapitres.** Ce contrôle de
+  > 5 pages n'a vu **aucun** des 3 constats substantiels que la R-7 a trouvés huit jours plus tard
+  > (page entière manquante, contresens par négation tombée, détail inventé). Il n'était pourtant
+  > pas bâclé : il était **au mauvais endroit** — il a re-vérifié des faits déjà signalés par les
+  > transcripteurs, c'est-à-dire précisément ce qu'ils avaient regardé. Un relecteur en contexte
+  > non vierge cherche là où on lui a dit de chercher ; c'est exactement ce que R-7 est faite pour
+  > éviter. **Un contrôle d'orchestrateur ne remplace pas une R-7 — il en donne l'illusion.**
 - **Motif de l'arrêt** : limite d'usage de session atteinte (2026-08-04), qui a tué les deux
   sous-agents de transcription avant leur première écriture. Arrêt propre au dernier palier
   poussable (méthode, T-9/T-10) plutôt que fiche bâclée.
