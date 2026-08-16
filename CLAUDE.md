@@ -36,8 +36,16 @@
   liens). `content-audit.yml` (garde pédagogique) tourne mer. + sam. et exige le secret
   `CLAUDE_CODE_OAUTH_TOKEN` valide.
 - **Chaîne de merge** : `.github/workflows/automerge.yml` merge (squash) toute PR dont **tous**
-  les checks sont verts, dès la fin du dernier workflow de PR. On s'y soustrait comme sur le
-  moteur : PR en draft, branche `wip/`/`draft/`/`rescue/`, ou label `no-automerge`. ⚠️ Ce n'est
+  les checks sont verts. Il raisonne par **état, pas par événement** : chaque déclenchement (fin
+  d'un workflow de PR, événement `pull_request`, push sur `main`) rebalaye l'état complet de
+  TOUTES les PR ouvertes, et le merge lui-même réessaie sur les échecs transitoires. La première
+  version n'évaluait une PR qu'une fois, à la fin du dernier workflow de PR : #167 (marquée
+  « ready » 54 s après avoir été vue en draft) et #162 (merge perdu sur `Base branch was
+  modified`, une autre PR ayant merge entre-temps) sont restées vertes et ouvertes deux jours,
+  sans que rien ne les relise jamais — corrigé par #182. En touchant à ce workflow, garder
+  l'invariant : **l'événement dit quand regarder, jamais quoi regarder.** On s'y soustrait
+  comme sur le moteur : PR en draft, branche `wip/`/`draft/`/`rescue/`, ou label
+  `no-automerge`. ⚠️ Ce n'est
   pas un gate **opposable** : sur un compte Free, les rulesets ne sont pas disponibles sur un
   dépôt privé (`403 — Upgrade to GitHub Pro or make this repository public`), donc aucun check
   n'est *requis* et une PR rouge reste mergeable à la main. Le workflow automatise le bon
