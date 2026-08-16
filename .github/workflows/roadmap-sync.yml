@@ -15,6 +15,24 @@ name: Roadmap sync
 #     exactement ce qui s'est produit). Un déclencheur sur PR seul ne l'aurait
 #     jamais vue.
 #   • `pull_request` sur la roadmap — valide l'édition au moment où on la fait.
+#
+# ⚠️ UN CRON ROUGE N'ATTEINT PERSONNE — et ce workflow l'a prouvé sur lui-même.
+# Le 2026-08-16, il échouait sur `main` depuis TROIS nuits (08-14, 08-15, 08-16) :
+# trois lots du moteur n'étaient cités nulle part, dont arena#743 et arena#746, qui
+# font passer l'étude 02 en exécution pendant que le §6 disait encore « é02 se
+# re-scope maintenant ». Le gate avait raison, il le répétait chaque nuit, et il le
+# répétait à un onglet que personne n'ouvre. Il aura fallu qu'une session vienne
+# débloquer une PR sans rapport pour que quelqu'un le lise.
+#
+# C'est la leçon F10 mot pour mot — « ce qui manque n'est jamais la garde, c'est
+# que sa panne n'atteint personne » — donc on l'applique ici, comme
+# `content-drift.yml` et `video-health.yml` l'appliquent déjà :
+#   • `pull_request` → le **check rouge** suffit : il est sous les yeux de la
+#     session qui édite la roadmap, à l'instant où elle l'édite ;
+#   • `schedule` / `workflow_dispatch` → une **issue** tenue à jour et refermée
+#     d'elle-même. Une issue ouverte survit à l'onglet Actions ; un run rouge non.
+#     Le run reste vert dans ce cas, délibérément : un rouge permanent est
+#     exactement ce qu'on apprend à ignorer — c'est ce qui vient de se produire.
 
 on:
   pull_request:
@@ -27,6 +45,11 @@ on:
 
 permissions:
   contents: read
+  # Ouvrir, commenter et refermer l'issue de suivi (chemin `schedule`). C'est une portée
+  # à part entière : un bloc `permissions:` explicite REMPLACE le défaut du dépôt, il ne
+  # s'y ajoute pas — sans cette ligne `gh issue` répondrait `403 Resource not accessible
+  # by integration`, la panne qui avait tué la chaîne d'automerge le 2026-07-26.
+  issues: write
 
 concurrency:
   group: roadmap-sync-${{ github.ref }}
@@ -59,8 +82,103 @@ jobs:
 
       # Aucun `npm ci` : le gate n'utilise que des modules natifs de Node.
       - name: roadmap-sync
+        id: sync
         working-directory: engine
-        run: >-
-          node scripts/ci/check-roadmap-sync.mjs
-          --ref HEAD
-          --roadmap "$GITHUB_WORKSPACE/corpus/FableEtudes/ROADMAP.md"
+        # Ne doit PAS tuer le job : sur `schedule`, tout le travail utile — ouvrir ou
+        # refermer l'issue — vient après. Le verdict est rétabli en dernière étape pour
+        # les PR. `code` est écrit AVANT le `exit`, donc l'output survit à l'échec.
+        continue-on-error: true
+        run: |
+          set -uo pipefail
+          code=0
+          node scripts/ci/check-roadmap-sync.mjs \
+            --ref HEAD \
+            --roadmap "$GITHUB_WORKSPACE/corpus/FableEtudes/ROADMAP.md" \
+            > "$GITHUB_WORKSPACE/roadmap-sync.txt" 2>&1 || code=$?
+          cat "$GITHUB_WORKSPACE/roadmap-sync.txt"
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          exit "$code"
+
+      - name: Rapport
+        id: report
+        run: |
+          set -euo pipefail
+          cat "$GITHUB_WORKSPACE/roadmap-sync.txt" >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo "body<<ROADMAPSYNCEOF"
+            cat "$GITHUB_WORKSPACE/roadmap-sync.txt"
+            echo "ROADMAPSYNCEOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Ouvrir ou mettre à jour l'issue de suivi
+        if: github.event_name != 'pull_request' && steps.sync.outputs.code != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          REPORT: ${{ steps.report.outputs.body }}
+        run: |
+          set -euo pipefail
+          gh label create roadmap-drift \
+            --color D4C5F9 \
+            --description "La roadmap ignore des lots déjà livrés au moteur (gate roadmap-sync)" \
+            --force
+          # ⚠️ Le corps du heredoc est indenté au niveau du bloc YAML, et ce n'est pas
+          # cosmétique : YAML retire l'indentation commune, donc ces lignes retombent en
+          # colonne 0 dans le script — mais laissées en colonne 0 DANS LE FICHIER, le
+          # `---` du séparateur Markdown serait lu par YAML comme un début de second
+          # document et casserait le workflow entier. (`<<-` ne remplace pas cette
+          # indentation : il ne retire que les tabulations, pas les espaces.)
+          FOOTER="$(cat <<'MDEOF'
+
+          ---
+
+          **Quoi faire.** Citer chaque PR ci-dessus dans `FableEtudes/ROADMAP.md` — cochée,
+          reportée ou sans objet : le gate a un avis sur la **connaissance**, jamais sur le
+          statut. Puis porter le marqueur d'en-tête `<!-- roadmap-sync: since-pr=N -->` au
+          numéro le plus haut cité ; l'usage est de les grouper au **§0bis**.
+
+          ⚠️ Un lot cité « hors file » mérite quand même une lecture : c'est ainsi qu'une étude
+          passée en exécution au moteur peut laisser derrière elle une ligne de roadmap qui la
+          dit encore à ouvrir.
+
+          Cette issue se referme **d'elle-même** au passage suivant du cron (05:30 UTC).
+          MDEOF
+          )"
+          # Le rapport part dans un bloc de code : il garde son alignement, et surtout
+          # il ne colle pas au `---` du séparateur — un `---` collé à une ligne de texte
+          # est un soulignement setext, qui transformerait la dernière ligne du rapport
+          # en titre de niveau 2.
+          BODY="$(printf '```\n%s\n```\n' "$REPORT")$FOOTER"
+          EXISTING="$(gh issue list --label roadmap-drift --state open --limit 1 --json number --jq '.[0].number')"
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+            echo "Issue #$EXISTING mise à jour."
+          else
+            gh issue create --title "La roadmap ignore des lots déjà livrés" \
+              --label roadmap-drift --body "$BODY"
+          fi
+
+      - name: Refermer l'issue quand la roadmap a rattrapé
+        if: github.event_name != 'pull_request' && steps.sync.outputs.code == '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          EXISTING="$(gh issue list --label roadmap-drift --state open --limit 1 --json number --jq '.[0].number')"
+          if [ -n "$EXISTING" ]; then
+            gh issue close "$EXISTING" \
+              --comment "Chaque lot livré au moteur est de nouveau cité dans la roadmap — clôture automatique."
+            echo "Issue #$EXISTING refermée."
+          else
+            echo "Rien à refermer : la roadmap connaît tout ce qui est livré."
+          fi
+
+      # Sur une PR, l'issue n'a pas lieu d'être : le check rouge EST le canal, et il
+      # arrive à quelqu'un. `continue-on-error` ayant neutralisé l'étape du gate, on
+      # rétablit son verdict ici.
+      - name: Sur une PR, un écart doit rougir le check
+        if: github.event_name == 'pull_request' && steps.sync.outputs.code != '0'
+        run: |
+          echo "::error title=Roadmap en retard::La roadmap ignore des lots déjà livrés au moteur — rapport dans l'étape « roadmap-sync » et dans le résumé du run."
+          exit 1
