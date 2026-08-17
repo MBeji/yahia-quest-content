@@ -2,44 +2,326 @@
   "grade": "bac-math",
   "sealed": false,
   "source": "CNP — manuels élèves officiels de mathématiques, 4ème année de l'enseignement secondaire, section Mathématiques (Bac). Tome 1 « Analyse » (code 222445P00, 207 p.) : ch.1–9. Tome 2 « Algèbre · Géométrie · Probabilités » (code 222446P00, 230 p.) : ch.1–10. Aucun guide enseignant au corpus pour ce couple ⇒ le manuel élève fait référence (profil ecole-secondaire). Langue d'enseignement : français (bascule ar→fr acquise depuis la 1ère secondaire). Transcriptions sous programme/bac-math/mathematiques.md.",
-  "note": "sealed=false (advisory). Carte des chapitres = table des matières des deux tomes (page PDF = page imprimée, offset 0). Campagne terminée : LOT A (transcription des deux tomes) validé R-7 le 2026-07-19 (registre suivi/bac-math.json, statut 'validee-r7', profondeur 'generation', couverture 100 %), puis LOT B mené à terme — le sujet math-bac-math est complet à 19/19 chapitres. Plus aucun verrou de campagne sur ce manifeste. Le mapping manuel↔pages par chapitre vit dans §4 de la fiche.",
+  "note": "sealed=false (advisory). Carte des chapitres = table des matières des deux tomes (page PDF = page imprimée, offset 0). Campagne terminée : LOT A (transcription des deux tomes) validé R-7 le 2026-07-19 (registre suivi/bac-math.json, statut 'validee-r7', profondeur 'generation', couverture 100 %), puis LOT B mené à terme — le sujet math-bac-math est complet à 19/19 chapitres. Plus aucun verrou de campagne sur ce manifeste pour les mathématiques. Le mapping manuel↔pages par chapitre vit dans §4 de la fiche. ▸ PHILOSOPHIE (ajoutée le 2026-08-04) : ⚠️ CHAPITRAGE CODIFIÉ, CONTENU NON GÉNÉRABLE. Les 5 chapitres sont les 5 مباحث du programme, relevés sur le فهرس du manuel 210402 (p.404-408, lu intégralement) ; les plages de pages sont exactes. MAIS la fiche programme/bac-math/philosophie.md est en profondeur « first-pass » (ossature seule : page de titre, التقديم, خارطة الكتاب, فهرس) — le contenu enseigné des p.7-402 n'est pas transcrit, donc chapitresGeneration est vide au registre et le LOT B est interdit sur ces 5 chapitres (R-5). Ce manuel dessert les CINQ sections non-Lettres (mutualisation par compileTo depuis content/philosophie-bac/) ; bac-math en est le grade porteur. Reprise : voir §6 de la fiche. — ANGLAIS (241403/641404) : sealed=false (advisory). Carte des chapitres = table des matières des deux tomes (page PDF = page imprimée, offset 0). Campagne terminée : LOT A (transcription des deux tomes) validé R-7 le 2026-07-19 (registre suivi/bac-math.json, statut 'validee-r7', profondeur 'generation', couverture 100 %), puis LOT B mené à terme — le sujet math-bac-math est complet à 19/19 chapitres. Plus aucun verrou de campagne sur ce manifeste. Le mapping manuel↔pages par chapitre vit dans §4 de la fiche. ▸ FRANÇAIS (ajouté le 2026-08-05) : manuel élève 221402 « Au gré des textes » (264 p.), transcrit INTÉGRALEMENT à profondeur de génération — fiche programme/bac-math/francais.md, LOT B autorisé. Ce manuel dessert les CINQ sections non-Lettres, et c'est un CONSTAT et non une déduction : sa page de titre (p. 1) les nomme une par une — Mathématiques, Sciences techniques, Économie et gestion, Sciences expérimentales, Sciences de l'informatique. Contenu mutualisé par compileTo depuis content/french-bac/ ; chapitrage (7 modules) IDENTIQUE dans les 5 manifestes bac-*, toute évolution à répercuter sur les 5 à la fois. bac-lettres (manuel 221421) n'est PAS desservi.",
   "subjects": [
     {
       "id": "math-bac-math",
       "name": "Mathématiques",
       "contentLanguage": "fr",
       "chapters": [
-        { "slug": "01-continuite-limites", "notion": "Continuité et limites (tome 1, ch.1)" },
-        { "slug": "02-suites-reelles", "notion": "Suites réelles (tome 1, ch.2)" },
-        { "slug": "03-derivabilite", "notion": "Dérivabilité (tome 1, ch.3)" },
-        { "slug": "04-fonctions-reciproques", "notion": "Fonctions réciproques (tome 1, ch.4)" },
-        { "slug": "05-primitives", "notion": "Primitives (tome 1, ch.5)" },
-        { "slug": "06-integrales", "notion": "Intégrales (tome 1, ch.6)" },
+        {
+          "slug": "01-continuite-limites",
+          "notion": "Continuité et limites (tome 1, ch.1)"
+        },
+        {
+          "slug": "02-suites-reelles",
+          "notion": "Suites réelles (tome 1, ch.2)"
+        },
+        {
+          "slug": "03-derivabilite",
+          "notion": "Dérivabilité (tome 1, ch.3)"
+        },
+        {
+          "slug": "04-fonctions-reciproques",
+          "notion": "Fonctions réciproques (tome 1, ch.4)"
+        },
+        {
+          "slug": "05-primitives",
+          "notion": "Primitives (tome 1, ch.5)"
+        },
+        {
+          "slug": "06-integrales",
+          "notion": "Intégrales (tome 1, ch.6)"
+        },
         {
           "slug": "07-fonction-logarithme-neperien",
           "notion": "Fonction logarithme népérien (tome 1, ch.7)"
         },
-        { "slug": "08-fonction-exponentielle", "notion": "Fonction exponentielle (tome 1, ch.8)" },
+        {
+          "slug": "08-fonction-exponentielle",
+          "notion": "Fonction exponentielle (tome 1, ch.8)"
+        },
         {
           "slug": "09-equations-differentielles",
           "notion": "Équations différentielles (tome 1, ch.9)"
         },
-        { "slug": "10-nombres-complexes", "notion": "Nombres complexes (tome 2, ch.1)" },
-        { "slug": "11-isometries-du-plan", "notion": "Isométries du plan (tome 2, ch.2)" },
+        {
+          "slug": "10-nombres-complexes",
+          "notion": "Nombres complexes (tome 2, ch.1)"
+        },
+        {
+          "slug": "11-isometries-du-plan",
+          "notion": "Isométries du plan (tome 2, ch.2)"
+        },
         {
           "slug": "12-deplacements-antideplacements",
           "notion": "Déplacements – Antidéplacements (tome 2, ch.3)"
         },
-        { "slug": "13-similitudes", "notion": "Similitudes (tome 2, ch.4)" },
-        { "slug": "14-coniques", "notion": "Coniques (tome 2, ch.5)" },
+        {
+          "slug": "13-similitudes",
+          "notion": "Similitudes (tome 2, ch.4)"
+        },
+        {
+          "slug": "14-coniques",
+          "notion": "Coniques (tome 2, ch.5)"
+        },
         {
           "slug": "15-geometrie-dans-l-espace",
           "notion": "Géométrie dans l'espace (tome 2, ch.6)"
         },
-        { "slug": "16-divisibilite-dans-z", "notion": "Divisibilité dans ℤ (tome 2, ch.7)" },
-        { "slug": "17-identite-de-bezout", "notion": "Identité de Bézout (tome 2, ch.8)" },
-        { "slug": "18-probabilites", "notion": "Probabilités (tome 2, ch.9)" },
-        { "slug": "19-statistiques", "notion": "Statistiques (tome 2, ch.10)" }
+        {
+          "slug": "16-divisibilite-dans-z",
+          "notion": "Divisibilité dans ℤ (tome 2, ch.7)"
+        },
+        {
+          "slug": "17-identite-de-bezout",
+          "notion": "Identité de Bézout (tome 2, ch.8)"
+        },
+        {
+          "slug": "18-probabilites",
+          "notion": "Probabilités (tome 2, ch.9)"
+        },
+        {
+          "slug": "19-statistiques",
+          "notion": "Statistiques (tome 2, ch.10)"
+        }
+      ]
+    },
+    {
+      "id": "philosophie-bac-math",
+      "name": "الفلسفة",
+      "contentLanguage": "ar",
+      "chapters": [
+        {
+          "slug": "01-aniyya-ghayriyya",
+          "notion": "المحور 1 : الإنساني بين الكثرة والوحدة — الآنيّة والغيريّة"
+        },
+        {
+          "slug": "02-khususiyya-kawniyya",
+          "notion": "المحور 1 : الإنساني بين الكثرة والوحدة — الخصوصيّة والكونيّة"
+        },
+        {
+          "slug": "03-ilm-haqiqa-namdhaja",
+          "notion": "المحور 2 : العلم بين الحقيقة والنمذجة"
+        },
+        {
+          "slug": "04-dawla-siyada-muwatana",
+          "notion": "المحور 3 : القيم بين النسبي والمطلق — الدّولة : السّيادة والمواطنة"
+        },
+        {
+          "slug": "05-akhlaq-khayr-saada",
+          "notion": "المحور 3 : القيم بين النسبي والمطلق — الأخلاق : الخير والسّعادة"
+        }
+      ]
+    },
+    {
+      "id": "english-bac-math",
+      "name": "English",
+      "contentLanguage": "en",
+      "chapters": [
+        {
+          "slug": "01-checking-year-3-programme",
+          "notion": "Checking Year 3 Programme — révision d'entrée + writing as a process (p. 10-15)"
+        },
+        {
+          "slug": "02-first-impressions",
+          "notion": "Introductory Unit — First Impressions (p. 16-34)"
+        },
+        {
+          "slug": "03-holidaying",
+          "notion": "Unit 1, Lesson 1 — Holidaying (p. 37-40)"
+        },
+        {
+          "slug": "04-space-tourism",
+          "notion": "Unit 1, Lesson 2 — Space Tourism (p. 41-46)"
+        },
+        {
+          "slug": "05-art-shows",
+          "notion": "Unit 1, Lesson 3 — Art Shows, Strings (p. 47-53)"
+        },
+        {
+          "slug": "06-exploring-a-song",
+          "notion": "Unit 1, Lesson 4 — Exploring a Song: Immortality (p. 54-58)"
+        },
+        {
+          "slug": "07-walking-tour",
+          "notion": "Unit 1, Lesson 5 — Walking Tour (p. 59-63)"
+        },
+        {
+          "slug": "08-a-package-tour",
+          "notion": "Unit 1, Lesson 6 — A Package Tour + Project Work 1 (p. 64-67)"
+        },
+        {
+          "slug": "09-at-the-travel-agency",
+          "notion": "Unit 1, Lesson 7 — At the Travel Agency (p. 68-73)"
+        },
+        {
+          "slug": "10-put-a-little-drama-in-your-travel",
+          "notion": "Unit 1, Lesson 8 — Put a little drama in your travel (p. 74-76)"
+        },
+        {
+          "slug": "11-the-winters-tale",
+          "notion": "Unit 1, Lesson 9 — The Winter's Tale, Part 1 (p. 77-81)"
+        },
+        {
+          "slug": "12-school-related-words",
+          "notion": "Unit 2, Lesson 1 — School-related Words (p. 88-92)"
+        },
+        {
+          "slug": "13-education-for-all",
+          "notion": "Unit 2, Lesson 2 — Education for all (p. 93-96)"
+        },
+        {
+          "slug": "14-virtual-schools",
+          "notion": "Unit 2, Lesson 3 — Virtual Schools (p. 97-100)"
+        },
+        {
+          "slug": "15-online-learning",
+          "notion": "Unit 2, Lesson 4 — Online Learning (p. 101-102)"
+        },
+        {
+          "slug": "16-comparing-educational-systems",
+          "notion": "Unit 2, Lesson 5 — Comparing Educational Systems (p. 103-106)"
+        },
+        {
+          "slug": "17-age-or-ability",
+          "notion": "Unit 2, Lesson 6 — Age or …? (p. 107-110)"
+        },
+        {
+          "slug": "18-lifelong-learning",
+          "notion": "Unit 2, Lesson 7 — Lifelong Learning (p. 111-114)"
+        },
+        {
+          "slug": "19-reading-the-back-cover-of-a-book",
+          "notion": "Unit 2, Lesson 8 — Reading the Back Cover of a Book (p. 115-117)"
+        },
+        {
+          "slug": "20-alexander-graham-bell",
+          "notion": "Unit 2, Lesson 9 — Alexander Graham Bell + Project Work 2 (p. 118-123)"
+        },
+        {
+          "slug": "21-check-your-language-and-skills-1",
+          "notion": "Consolidation — Check your Language and Skills 1 (p. 129-133)"
+        },
+        {
+          "slug": "22-inventions-related-words",
+          "notion": "Unit 3, Lesson 1 — Inventions-related Words + Webquest 5 (p. 136-141)"
+        },
+        {
+          "slug": "23-technology-a-blessing-in-disguise",
+          "notion": "Unit 3, Lesson 2 — Technology: A Blessing in Disguise? (p. 142-146)"
+        },
+        {
+          "slug": "24-the-father-of-playstation",
+          "notion": "Unit 3, Lesson 3 — The Father of PlayStation (p. 147-150)"
+        },
+        {
+          "slug": "25-prize-winners",
+          "notion": "Unit 3, Lesson 4 — Prize Winners (p. 151-155)"
+        },
+        {
+          "slug": "26-women-choose-to-opt-out",
+          "notion": "Unit 3, Lesson 5 — Women choose to opt out (p. 156-160)"
+        },
+        {
+          "slug": "27-the-brain-drain",
+          "notion": "Unit 3, Lesson 6 — The Brain Drain (p. 161-167)"
+        },
+        {
+          "slug": "28-scientists-achievements",
+          "notion": "Unit 3, Lesson 7 — Scientists' Achievements (p. 168-173)"
+        },
+        {
+          "slug": "29-the-daffodils",
+          "notion": "Unit 3, Lesson 8 — The Daffodils (p. 174-179)"
+        },
+        {
+          "slug": "30-writing-an-argumentative-text",
+          "notion": "Unit 3, Lesson 9 — Writing as a Process: Argumentative Text (p. 180-181)"
+        },
+        {
+          "slug": "31-check-your-punctuation",
+          "notion": "Check your Punctuation — « TO BE DONE WITH ALL STUDENTS » (p. 184-185)"
+        },
+        {
+          "slug": "32-life-concerns",
+          "notion": "Unit 4, Lesson 1 — Life Concerns (p. 193-197)"
+        },
+        {
+          "slug": "33-attitudes",
+          "notion": "Unit 4, Lesson 2 — Attitudes (p. 198-201)"
+        },
+        {
+          "slug": "34-if-a-poem-by-kipling",
+          "notion": "Unit 4, Lesson 3 — If…, a poem by Kipling (p. 202-204)"
+        },
+        {
+          "slug": "35-consumerism",
+          "notion": "Unit 4, Lesson 4 — Consumerism (p. 205-210)"
+        },
+        {
+          "slug": "36-ecodriving",
+          "notion": "Unit 4, Lesson 5 — Ecodriving (p. 211-217)"
+        },
+        {
+          "slug": "37-urban-exodus",
+          "notion": "Unit 4, Lesson 6 — Urban Exodus (p. 218-221)"
+        },
+        {
+          "slug": "38-a-newscast",
+          "notion": "Unit 4, Lesson 7 — A Newscast (p. 222-226)"
+        },
+        {
+          "slug": "39-staff-management",
+          "notion": "Unit 4, Lesson 8 — Staff Management (p. 227-231)"
+        },
+        {
+          "slug": "40-job-ads",
+          "notion": "Unit 4, Lesson 9 — Job Ads (p. 232-234)"
+        },
+        {
+          "slug": "41-check-your-language-and-skills-2",
+          "notion": "Consolidation — Check your Language and Skills 2 (p. 248-253)"
+        },
+        {
+          "slug": "42-before-we-say-good-bye",
+          "notion": "Before we say 'Good Bye' — préparation à l'examen, PORTFOLIO (p. 254-260)"
+        }
+      ]
+    },
+    {
+      "id": "french-bac-math",
+      "name": "Français",
+      "contentLanguage": "fr",
+      "chapters": [
+        {
+          "slug": "01-souvenirs-et-nostalgie",
+          "notion": "Module d'apprentissage N°1 « Souvenirs et nostalgie » — le discours rapporté ; l'étude de texte (répondre à une question de compréhension) ; l'essai (p. 6-50)"
+        },
+        {
+          "slug": "02-histoires-d-amour",
+          "notion": "Module d'apprentissage N°2 « Histoires d'amour » — récit et discours ; la caractérisation (p. 51-94)"
+        },
+        {
+          "slug": "03-liberte-j-ecris-ton-nom",
+          "notion": "Module d'apprentissage N°3 « Liberté, j'écris ton nom… » — la comparaison et la métaphore ; la nominalisation (p. 95-130)"
+        },
+        {
+          "slug": "04-le-silence-de-la-mer",
+          "notion": "Module de lecture 1 — « Le silence de la mer » de Vercors : lecture d'une œuvre intégrale (p. 131-149)"
+        },
+        {
+          "slug": "05-guerre-et-paix",
+          "notion": "Module d'apprentissage N°4 « Guerre et Paix » — le conditionnel et le subjonctif (p. 150-188)"
+        },
+        {
+          "slug": "06-l-homme-et-la-science",
+          "notion": "Module d'apprentissage N°5 « L'Homme et la Science » — l'expression de l'opinion ; bilan des apprentissages de l'étude de texte (p. 189-222)"
+        },
+        {
+          "slug": "07-la-cantatrice-chauve",
+          "notion": "Module de lecture 2 — « La Cantatrice chauve » d'Eugène Ionesco : lecture d'une œuvre intégrale, théâtre de l'absurde (p. 223-262)"
+        }
       ]
     }
   ]

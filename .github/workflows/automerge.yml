@@ -6,9 +6,9 @@ name: Automerge (corpus)
 # POURQUOI PAS L'AUTO-MERGE NATIF DE GITHUB. Sur un compte Free, les rulesets et la protection
 # de branche ne sont **pas disponibles sur un dépôt privé** : l'API répond `403 — Upgrade to
 # GitHub Pro or make this repository public`. Sans check REQUIS, GitHub n'a rien à attendre,
-# donc l'auto-merge natif ne peut pas s'armer (et `allow_auto_merge` est à `false` ici). Le
-# moteur, lui, est public : ses rulesets sont gratuits, et c'était un bénéfice explicitement
-# acté par l'étude 24 avant la scission.
+# donc l'auto-merge natif ne peut pas s'armer (et `allow_auto_merge` est toujours à `false` ici,
+# revérifié le 2026-08-16). Le moteur, lui, est public : ses rulesets sont gratuits, et c'était
+# un bénéfice explicitement acté par l'étude 24 avant la scission.
 #
 # CE QUE CE WORKFLOW EST — ET N'EST PAS. Il **automatise** le merge d'une PR verte ; il ne
 # l'**interdit** pas quand elle est rouge. Sans protection de branche, une PR rouge reste
@@ -16,10 +16,30 @@ name: Automerge (corpus)
 # directive « zéro intervention », pas un gate opposable — seul GitHub Pro (rulesets sur dépôt
 # privé) rendrait le gate réellement contraignant. À relire le jour où l'on décide d'upgrader.
 #
-# COMMENT IL DÉCIDE. Il se déclenche à la FIN de chaque workflow de PR, puis relit l'état
-# complet du commit de tête : il ne merge que si **tous** les check runs de ce SHA sont
-# conclus au vert. Rien n'est codé en dur — un futur workflow de PR entre dans le calcul tout
-# seul, sans qu'on ait à l'ajouter ici (le piège classique d'une liste figée).
+# ⚠️ ÉTAT, PAS ÉVÉNEMENT — la leçon du 2026-08-16, et la clé de lecture de tout ce fichier.
+# La première version n'évaluait une PR qu'à l'instant précis où « Content CI » ou « Pin check »
+# finissait, et une seule fois. Une évaluation unique, sans reprise : tout ce qui rendait la PR
+# éligible APRÈS ce coup d'œil était perdu pour de bon. Deux PR vertes, propres, sans conflit et
+# sans label sont restées ouvertes deux jours pour cette seule raison :
+#   • #167 — draft à l'instant de l'évaluation, marquée « ready » 54 secondes plus tard. Le
+#     journal dit « PR en draft — savepoint volontaire, pas de merge », puis plus rien ne l'a
+#     jamais relue : aucun événement `pull_request` n'était écouté.
+#   • #162 — verte, évaluée, jugée mergeable… et le merge lui-même a perdu une course :
+#     `GraphQL: Base branch was modified. Review and try the merge again.` — une autre PR avait
+#     merge entre la lecture de `mergeable` et l'appel. Le job est mort en erreur, sans reprise.
+# Le correctif n'est pas d'ajouter un cas particulier par symptôme, c'est d'inverser le modèle :
+# **l'événement dit QUAND regarder, jamais QUOI regarder.** Chaque déclenchement, quel qu'il
+# soit, rebalaye l'état complet de TOUTES les PR ouvertes, et le merge réessaie de lui-même sur
+# les échecs transitoires. Un run perdu (annulé par la concurrence, déclencheur manqué, workflow
+# absent de la liste `workflow_run`) ne coûte donc plus une PR bloquée : le balayage suivant
+# repart de l'état réel, pas d'un souvenir.
+#
+# COMMENT IL DÉCIDE. Il relit l'état complet du commit de tête de chaque PR : il ne merge que si
+# **tous** les check runs de ce SHA sont conclus au vert. Rien n'est codé en dur — un futur
+# workflow de PR entre dans le calcul tout seul, sans qu'on ait à l'ajouter ici (le piège
+# classique d'une liste figée). La liste `workflows:` ci-dessous ne dit que quand se réveiller,
+# jamais quoi attendre ; la tenir à jour fait merger plus vite, l'oublier ne coûte qu'un délai
+# (le balayage sur `push: main` rattrape).
 #
 # COMMENT S'Y SOUSTRAIRE (mêmes conventions que le moteur, DoD §8) :
 #   • PR en draft ;
@@ -27,133 +47,226 @@ name: Automerge (corpus)
 #   • label `no-automerge` (gel d'une PR déjà ouverte).
 
 on:
+  # Fin d'un workflow de PR : le moment où une PR peut devenir verte. La liste n'a pas besoin
+  # d'être exhaustive (voir « COMMENT IL DÉCIDE »), mais la tenir à jour fait merger plus vite.
   workflow_run:
-    workflows: ["Content CI", "Pin check"]
+    workflows: ["Content CI", "Pin check", "Roadmap sync"]
     types: [completed]
+  # Changement d'éligibilité SANS nouveau check — le trou qui a bloqué #167 : passage de draft à
+  # « ready », retrait du label `no-automerge`, réouverture. Aucun check ne repasse dans ces
+  # cas-là, donc `workflow_run` seul ne voit jamais rien.
+  pull_request:
+    types: [opened, reopened, ready_for_review, labeled, unlabeled]
+  # `main` a bougé : l'instant exact où se dénoue la course « Base branch was modified » (#162),
+  # et le filet de sécurité général — toute PR verte laissée en arrière par un déclencheur
+  # manqué repart d'ici. Pas de `schedule` : sur un dépôt PRIVÉ les minutes Actions sont
+  # facturées, et pendant une campagne `main` bouge plusieurs fois par jour.
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       pr:
-        description: "Numéro de PR à réévaluer (si un déclenchement a été manqué)"
+        description: "Restreindre à une PR (vide = balayer toutes les PR ouvertes)"
         type: string
-        required: true
+        required: false
+        default: ""
 
 permissions:
   # ⚠️ Un bloc `permissions:` explicite n'AJOUTE pas au défaut du dépôt : il le REMPLACE. Toute
   # portée non listée ici tombe à `none`, pas à `read` — même si le dépôt est réglé sur
   # `default_workflow_permissions: read`. C'est ce qui a cassé le premier usage réel de cette
-  # chaîne (PR #18, puis #22, le 2026-07-26) : `checks` manquait, donc l'étape 3 (« l'état RÉEL
-  # du commit ») recevait `403 Resource not accessible by integration` sur
+  # chaîne (PR #18, puis #22, le 2026-07-26) : `checks` manquait, donc l'étape « l'état RÉEL du
+  # commit » recevait `403 Resource not accessible by integration` sur
   # `repos/:repo/commits/:sha/check-runs`, et le job mourait avant tout merge.
   contents: write
   pull-requests: write
-  # Lire les check runs du SHA — l'étape 3, le cœur de la décision. C'est une portée à part
-  # entière : ni `contents` ni `pull-requests` ne la couvrent.
+  # Lire les check runs du SHA — le cœur de la décision. C'est une portée à part entière : ni
+  # `contents` ni `pull-requests` ne la couvrent.
   checks: read
   # Pas de `issues:` ici, et ce n'est pas un oubli : `gh label create` / `gh pr edit --add-label`
-  # (étape 4, chemin de conflit) passent avec `pull-requests: write` seul — vérifié sur ce dépôt
-  # le 2026-07-26. Ajouter `issues: write` élargirait le jeton sans rien débloquer.
+  # (chemin de conflit) passent avec `pull-requests: write` seul — vérifié sur ce dépôt le
+  # 2026-07-26. Ajouter `issues: write` élargirait le jeton sans rien débloquer.
 
 concurrency:
-  # Une seule évaluation à la fois par commit de tête : les deux workflows de PR finissent à
-  # quelques secondes d'écart et déclencheraient deux merges concurrents.
-  group: automerge-${{ github.event.workflow_run.head_sha || inputs.pr }}
+  # UN SEUL groupe pour tout le dépôt : merger change la base des autres PR, donc les merges
+  # doivent se sérialiser. Ni clé par PR, ni clé par SHA : GitHub ne garde qu'UN run en attente
+  # par groupe et annule le précédent — inoffensif ici, précisément parce que chaque run
+  # rebalaye l'état complet et refait donc le travail du run annulé (« ÉTAT, PAS ÉVÉNEMENT »).
+  group: automerge-corpus
   cancel-in-progress: false
 
 jobs:
   automerge:
-    # Les runs de `push: main` déclenchent aussi `workflow_run` — seules les PR nous intéressent.
+    # Les runs de `push: main` déclenchent aussi `workflow_run` — seules les PR nous intéressent
+    # de ce côté-là (le balayage `push: main` couvre déjà le cas « main a bougé »). Les autres
+    # déclencheurs passent tous.
     if: >-
-      github.event_name == 'workflow_dispatch' ||
+      github.event_name != 'workflow_run' ||
       github.event.workflow_run.event == 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Merger la PR si tout est vert
+      - name: Merger les PR vertes
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Ce job tourne SANS checkout (déclencheur `workflow_run`) : `gh` n'a aucun dépôt
-          # git à déduire, et un `gh pr view` échouerait sur « not a git repository ».
-          # `GH_REPO` le lui dit une fois pour toutes.
+          # Ce job tourne SANS checkout : `gh` n'a aucun dépôt git à déduire, et un `gh pr view`
+          # échouerait sur « not a git repository ». `GH_REPO` le lui dit une fois pour toutes.
           GH_REPO: ${{ github.repository }}
           REPO: ${{ github.repository }}
-          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
           INPUT_PR: ${{ inputs.pr }}
-          # Nom de check à ignorer dans le calcul : le nôtre. Sans ça, ce job s'attendrait
-          # lui-même indéfiniment s'il apparaît comme check run du SHA.
+          # S'exclure du calcul. Depuis l'ajout du déclencheur `pull_request`, ce job apparaît
+          # RÉELLEMENT comme check run du SHA de la PR : sans exclusion il se verrait lui-même
+          # « in_progress », conclurait « un check encore en cours » et ne mergerait jamais — la
+          # panne de #167 reproduite à l'identique sur le chemin qui la corrige.
+          # Deux filets, parce que le premier est fragile :
+          #   • par NOM — un check run Actions porte le `name:` du job, à défaut son id. Ce job
+          #     n'a pas de `name:`, donc « automerge ». Lui en donner un casserait ce filet.
+          #   • par RUN ID — `details_url` d'un check run Actions vaut
+          #     .../actions/runs/<run_id>/job/<job_id>. Insensible à tout renommage, donc c'est
+          #     lui qui tient si quelqu'un nomme le job un jour.
           SELF_CHECK: automerge
+          SELF_RUN: "/runs/${{ github.run_id }}/"
         run: |
           set -euo pipefail
 
-          # 1) Quelle PR porte ce commit ? (l'API commits/:sha/pulls est plus fiable que
-          #    `workflow_run.pull_requests`, vide dans plusieurs cas documentés)
+          # ═══ Note d'écriture, à lire avant de toucher au script ═════════════════════════════
+          # `set -e` est SUSPENDU dans le corps d'une fonction appelée en contexte de condition
+          # (`if ! f`) — un `gh` qui y échoue ne tuerait donc pas le job, il continuerait sur une
+          # décision fausse. Toute commande dont le résultat décide de quelque chose est donc
+          # testée explicitement (`if ! x="$(...)"`), jamais laissée à `set -e`.
+          # Même raison pour ne pas écrire `read -r a b c <<<"$(cmd)"` : l'échec de `cmd` n'y est
+          # pas vu (le statut retenu est celui de `read`, qui réussit en lisant du vide).
+
+          process_pr() {
+            local pr="$1"
+            local meta state draft branch base sha labels runs pending red mergeable attempt out
+
+            if ! meta="$(gh pr view "$pr" \
+                  --json state,isDraft,headRefName,baseRefName,headRefOid,labels \
+                  --jq '[.state, .isDraft, .headRefName, .baseRefName, .headRefOid,
+                         ([.labels[].name] | join(","))] | @tsv')"; then
+              echo "  PR #$pr illisible (gh pr view a échoué) — on repassera."
+              return 0
+            fi
+            IFS=$'\t' read -r state draft branch base sha labels <<<"$meta"
+            echo "  tête $sha"
+
+            # Un run concurrent (ou un humain) a pu la traiter entre le listing et ici.
+            [ "$state" = "OPEN" ] || { echo "  PR #$pr n'est plus ouverte ($state)."; return 0; }
+            [ "$base" = "main" ] || { echo "  Base $base ≠ main — pas de merge."; return 0; }
+            [ "$draft" = "false" ] || { echo "  PR en draft — savepoint volontaire, pas de merge."; return 0; }
+            case ",$labels," in
+              *",no-automerge,"*) echo "  Label no-automerge — pas de merge."; return 0 ;;
+            esac
+            case "$branch" in
+              wip/*|draft/*|rescue/*) echo "  Branche $branch — savepoint volontaire, pas de merge."; return 0 ;;
+            esac
+
+            # L'état RÉEL du commit : tous les checks, pas une liste figée.
+            if ! runs="$(gh api "repos/$REPO/commits/$sha/check-runs" --paginate \
+                  --jq ".check_runs[]
+                        | select(.name != \"$SELF_CHECK\"
+                                 and (((.details_url // \"\") | contains(\"$SELF_RUN\")) | not))
+                        | \"\(.name)|\(.status)|\(.conclusion // \"\")\"")"; then
+              echo "  Lecture des check runs de $sha impossible — on repassera."
+              return 0
+            fi
+            if [ -z "$runs" ]; then
+              echo "  Aucun check sur $sha — rien ne prouve que la PR est verte, pas de merge."
+              return 0
+            fi
+            echo "$runs" | sed 's/^/    /'
+
+            pending="$(echo "$runs" | awk -F'|' '$2 != "completed"' | wc -l)"
+            if [ "$pending" -gt 0 ]; then
+              echo "  $pending check(s) encore en cours — le prochain balayage reprendra."
+              return 0
+            fi
+            # `neutral` et `skipped` comptent comme verts : un job conditionnel qui ne s'exécute
+            # pas n'est pas un échec.
+            red="$(echo "$runs" | awk -F'|' '$3 != "success" && $3 != "skipped" && $3 != "neutral"' || true)"
+            if [ -n "$red" ]; then
+              echo "  Check(s) non verts — pas de merge :"; echo "$red" | sed 's/^/    /'
+              return 0
+            fi
+
+            # Mergeable ? GitHub calcule paresseusement : on laisse jusqu'à ~30 s.
+            mergeable=""
+            for _ in 1 2 3 4 5 6; do
+              mergeable="$(gh pr view "$pr" --json mergeable --jq .mergeable || echo "")"
+              [ "$mergeable" = "UNKNOWN" ] || [ -z "$mergeable" ] || break
+              sleep 5
+            done
+            if [ "$mergeable" = "CONFLICTING" ]; then
+              echo "  Conflit avec main — label needs-rebase, la session propriétaire reprend."
+              # Poser le label seulement s'il manque : `pull_request: [labeled]` nous redéclenche,
+              # et une pose inconditionnelle tournerait en rond.
+              case ",$labels," in
+                *",needs-rebase,"*) echo "  (label needs-rebase déjà présent)" ;;
+                *)
+                  gh label create needs-rebase --color D93F0B \
+                    --description "PR en conflit avec main — à rebaser par sa session" --force >/dev/null 2>&1 || true
+                  gh pr edit "$pr" --add-label needs-rebase >/dev/null || true
+                  ;;
+              esac
+              return 0
+            fi
+            [ "$mergeable" = "MERGEABLE" ] || { echo "  État de merge « ${mergeable:-inconnu} » — on repassera."; return 0; }
+
+            # Plus de conflit : retirer le label posé par un passage précédent (même prudence).
+            case ",$labels," in
+              *",needs-rebase,"*) gh pr edit "$pr" --remove-label needs-rebase >/dev/null 2>&1 || true ;;
+            esac
+
+            # Merge. Squash, comme le moteur : le sujet du commit unique devient celui de main.
+            # Avec reprise : « Base branch was modified » veut dire qu'une autre PR a merge entre
+            # la lecture de `mergeable` et ici — c'est une course, pas un refus (c'est elle qui a
+            # laissé #162 ouverte deux jours). On relit l'état et on retente.
+            attempt=1
+            while [ "$attempt" -le 3 ]; do
+              if out="$(gh pr merge "$pr" --squash --delete-branch 2>&1)"; then
+                echo "  ✅ PR #$pr mergée."
+                return 0
+              fi
+              echo "$out" | sed 's/^/    /'
+              case "$out" in
+                *"Base branch was modified"*|*"Head branch was modified"*|*"not mergeable"*|*"Pull Request is not mergeable"*)
+                  if ! state="$(gh pr view "$pr" --json state --jq .state)" || [ "$state" != "OPEN" ]; then
+                    echo "  PR #$pr n'est plus ouverte — un run concurrent l'a traitée."
+                    return 0
+                  fi
+                  echo "  Course avec un merge concurrent (tentative $attempt/3) — on retente dans 10 s."
+                  sleep 10
+                  ;;
+                *)
+                  echo "::warning title=Merge refusé::PR #$pr : $(echo "$out" | head -1)"
+                  return 1
+                  ;;
+              esac
+              attempt=$((attempt + 1))
+            done
+            echo "::error title=Merge impossible::PR #$pr : 3 tentatives, la base bouge à chaque fois. Le prochain balayage reprendra."
+            return 1
+          }
+
+          # Quelles PR examiner ? L'événement ne restreint RIEN : on rebalaye tout l'état ouvert.
+          # `workflow_dispatch` avec un numéro reste la porte de sortie pour un diagnostic ciblé.
           if [ -n "${INPUT_PR:-}" ]; then
-            pr="$INPUT_PR"
-            sha="$(gh pr view "$pr" --json headRefOid --jq .headRefOid)"
-          else
-            sha="$HEAD_SHA"
-            pr="$(gh api "repos/$REPO/commits/$sha/pulls" \
-                    --jq '[.[] | select(.state == "open")][0].number // empty')"
+            prs="$INPUT_PR"
+            echo "Balayage restreint à la PR #$prs (déclenchement manuel)."
+          elif ! prs="$(gh pr list --state open --base main --limit 100 --json number --jq '.[].number')"; then
+            echo "::error title=Listing impossible::gh pr list a échoué — rien n'a été évalué."
+            exit 1
           fi
-          if [ -z "${pr:-}" ]; then
-            echo "Aucune PR ouverte ne porte $sha — rien à faire."; exit 0
-          fi
-          echo "PR #$pr, tête $sha"
-
-          # 2) Les opt-out, dans l'ordre du moins cher au plus cher.
-          #    L'affectation est SÉPARÉE du `read` volontairement : dans
-          #    `read -r a b c <<<"$(cmd)"`, l'échec de `cmd` n'est PAS vu par `set -e` (le statut
-          #    retenu est celui de `read`, qui réussit en lisant du vide) — les variables partent
-          #    vides et le script continue sur une décision fausse. En passant par une variable,
-          #    un `gh` qui échoue tue le job ici, à la bonne ligne.
-          meta="$(gh pr view "$pr" \
-            --json isDraft,headRefName,baseRefName \
-            --jq '[.isDraft, .headRefName, .baseRefName] | @tsv')"
-          read -r draft branch base <<<"$meta"
-          opted_out="$(gh pr view "$pr" --json labels \
-            --jq 'any(.labels[]; .name == "no-automerge")')"
-
-          [ "$base" = "main" ] || { echo "Base $base ≠ main — pas de merge."; exit 0; }
-          [ "$draft" = "false" ] || { echo "PR en draft — savepoint volontaire, pas de merge."; exit 0; }
-          [ "$opted_out" = "false" ] || { echo "Label no-automerge — pas de merge."; exit 0; }
-          case "$branch" in
-            wip/*|draft/*|rescue/*) echo "Branche $branch — savepoint volontaire, pas de merge."; exit 0 ;;
-          esac
-
-          # 3) L'état RÉEL du commit : tous les checks, pas une liste figée.
-          runs="$(gh api "repos/$REPO/commits/$sha/check-runs" --paginate \
-                    --jq ".check_runs[] | select(.name != \"$SELF_CHECK\") | \"\(.name)|\(.status)|\(.conclusion // \"\")\"")"
-          if [ -z "$runs" ]; then
-            echo "Aucun check sur $sha — rien ne prouve que la PR est verte, pas de merge."; exit 0
-          fi
-          echo "$runs" | sed 's/^/  /'
-
-          pending="$(echo "$runs" | awk -F'|' '$2 != "completed"' | wc -l)"
-          if [ "$pending" -gt 0 ]; then
-            echo "$pending check(s) encore en cours — le prochain déclenchement reprendra."; exit 0
-          fi
-          # `neutral` et `skipped` comptent comme verts : un job conditionnel qui ne s'exécute
-          # pas n'est pas un échec.
-          red="$(echo "$runs" | awk -F'|' '$3 != "success" && $3 != "skipped" && $3 != "neutral"' || true)"
-          if [ -n "$red" ]; then
-            echo "Check(s) non verts — pas de merge :"; echo "$red" | sed 's/^/  /'; exit 0
-          fi
-
-          # 4) Mergeable ? GitHub calcule paresseusement : on laisse jusqu'à ~30 s.
-          state=""
-          for _ in 1 2 3 4 5 6; do
-            state="$(gh pr view "$pr" --json mergeable --jq .mergeable)"
-            [ "$state" = "UNKNOWN" ] || break
-            sleep 5
-          done
-          if [ "$state" = "CONFLICTING" ]; then
-            echo "Conflit avec main — label needs-rebase, la session propriétaire reprend."
-            gh label create needs-rebase --color D93F0B \
-              --description "PR en conflit avec main — à rebaser par sa session" --force
-            gh pr edit "$pr" --add-label needs-rebase
+          if [ -z "${prs:-}" ]; then
+            echo "Aucune PR ouverte sur main — rien à faire."
             exit 0
           fi
-          [ "$state" = "MERGEABLE" ] || { echo "État de merge « $state » — on repassera."; exit 0; }
 
-          # 5) Merge. Squash, comme le moteur : le sujet du commit unique devient celui de main.
-          echo "Tout est vert et sans conflit — merge de #$pr."
-          gh pr merge "$pr" --squash --delete-branch
+          failed=0
+          for pr in $prs; do
+            echo "::group::PR #$pr"
+            if ! process_pr "$pr"; then failed=1; fi
+            echo "::endgroup::"
+          done
+          exit "$failed"

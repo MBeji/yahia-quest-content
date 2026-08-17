@@ -1,8 +1,8 @@
 {
   "grade": "2eme-sec-info",
   "sealed": false,
-  "source": "CNP — programme national 2ème année secondaire, section Technologies de l'informatique. Manuel de mathématiques : « الرياضيات — شعبتا العلوم وتكنولوجيا الإعلامية » (222231 tome 1, 222232 tome 2) — le MÊME manuel officiel que la section Sciences, son titre nommant les deux sections. Le scope est donc porté par la fiche `programme/2eme-sec-sciences/mathematiques.md` (R-4 : un code source, une seule fiche), et le contenu est mutualisé par `compileTo` (étude 16 D-4).",
-  "note": "sealed=false. Seul le chapitrage de mathématiques est codifié, à l'identique de 2eme-sec-sciences : c'est le même manuel, le même programme, les mêmes 19 chapitres — d'où le sujet compilé `math-2eme-sec-info`, produit par `compileTo` depuis le sujet physique partagé, sans retranscription ni duplication de contenu. Les autres matières de la section ne sont PAS encore codifiées et sont donc rapportées manquantes : الفيزياء (223272) et الكيمياء (224271), tous deux propres à la section, et surtout « Technologie — Manuel d'activités » (228233, 3 tomes), la matière emblématique de la filière, qui demandera son propre LOT A. Ouverture de la classe décidée le 2026-07-30 sur les mathématiques (R-8 : la première tranche ouvre, on n'attend pas la matière complète) ; la technologie s'ajoutera sous un parcours déjà visible.",
+  "source": "CNP — programme national 2ème année secondaire, section Technologies de l'informatique. Manuel de mathématiques : « الرياضيات — شعبتا العلوم وتكنولوجيا الإعلامية » (222231 tome 1, 222232 tome 2) — le MÊME manuel officiel que la section Sciences, son titre nommant les deux sections. Le scope est donc porté par la fiche `programme/2eme-sec-sciences/mathematiques.md` (R-4 : un code source, une seule fiche), et le contenu est mutualisé par `compileTo` (étude 16 D-4). || Français : manuel élève OFFICIEL CNP « Le français en situation — 2e année de l'Enseignement Secondaire » (221203P00.pdf, 288 p. ; auteurs Mansouri/ben Zineb-Zitouni/Souab/Kheder-Ben Salem ; pas de guide enseignant au corpus, le manuel élève fait donc référence). Le manuel ne nomme AUCUNE شعبة et dessert les quatre orientations de 2ème sec : le contenu est écrit une fois sous content/french-2eme-sec/ et compilé vers un sujet par orientation (compileTo, étude 16 D-4). Transcription sous programme/2eme-sec/francais.md — LA fiche qui revendique le code 221203 (R-4).",
+  "note": "sealed=false. Seul le chapitrage de mathématiques est codifié, à l'identique de 2eme-sec-sciences : c'est le même manuel, le même programme, les mêmes 19 chapitres — d'où le sujet compilé `math-2eme-sec-info`, produit par `compileTo` depuis le sujet physique partagé, sans retranscription ni duplication de contenu. Les autres matières de la section ne sont PAS encore codifiées et sont donc rapportées manquantes : الفيزياء (223272) et الكيمياء (224271), tous deux propres à la section, et surtout « Technologie — Manuel d'activités » (228233, 3 tomes), la matière emblématique de la filière, qui demandera son propre LOT A. Ouverture de la classe décidée le 2026-07-30 sur les mathématiques (R-8 : la première tranche ouvre, on n'attend pas la matière complète) ; la technologie s'ajoutera sous un parcours déjà visible. ▸ FRANÇAIS (ajouté le 2026-08-04) : chapitrage COMPLET codifié — 18 chapitres = les 18 SÉQUENCES du manuel, l'unité de compétence que la préface déclare elle-même (p. 3 : « La répartition d'un même module en plusieurs séquences — trois ou quatre — permet de mieux cerner les capacités et les compétences à développer »). Chaque séquence porte exactement un objectif de vocabulaire, un de grammaire et un d'expression écrite ; un chapitre = un module en cumulerait trois à quatre de chaque et rendrait le cours superficiel. Le 19e chapitre (nouvelles en lecture suivie) est `optional: true` : les deux nouvelles n'ont aucun appareil de rubriques, et « La reine de beauté » (S. Prou, 1920-1995) est sous droits, donc non servable à l'élève (R-2). ✅ La fiche est COMPLÈTE au 2026-08-05 : les 18 séquences sont transcrites à profondeur de génération et déclarées dans `chapitresGeneration`. R-7 faite (280/288 pages à 100 %) — cf. programme/2eme-sec-sciences/francais.md §8 et suivi/2eme-sec-sciences.json, LA source de vérité de la couverture.",
   "subjects": [
     {
       "id": "math-2eme-sec-info",
@@ -135,6 +135,90 @@
         {
           "slug": "11-ecology",
           "notion": "Theme XI — Ecology (Lessons 27–29 + Progress Check 3: adverbs of degree, not only… but also)"
+        }
+      ]
+    },
+    {
+      "id": "french-2eme-sec-info",
+      "name": "Français",
+      "contentLanguage": "fr",
+      "chapters": [
+        {
+          "slug": "01-champ-lexical-et-rapports-logiques",
+          "notion": "Module 1 « Pages d'amour » séq. 1 (Flaubert, « Perdus dans la rêverie ») — reconnaître le thème à travers le champ lexical ; relier les idées par des rapports logiques ; exprimer et justifier une opinion, un sentiment (p. 7-19)"
+        },
+        {
+          "slug": "02-subjectivite-cause-consequence-but",
+          "notion": "Module 1 séq. 2 (Géraldy, « Méditation ») — exprimer la subjectivité au moyen des verbes ; construire des explications : la cause, la conséquence, le but (p. 20-32)"
+        },
+        {
+          "slug": "03-comparaison-metaphore-hypothese",
+          "notion": "Module 1 séq. 3 (Marivaux, « L'amoureux éconduit ») — établir une analogie : la comparaison, la métaphore ; raisonner à partir de faits imaginés : l'hypothèse (p. 33-45)"
+        },
+        {
+          "slug": "04-antithese-opposition-concession",
+          "notion": "Module 1 séq. 4 (Carco, « Il pleut ») — exprimer un contraste : l'antithèse ; exprimer et nuancer une divergence d'idées : l'opposition, la concession (p. 46-60)"
+        },
+        {
+          "slug": "05-association-idees-types-de-phrases",
+          "notion": "Module 2 « Toi, mon semblable » séq. 1 (Sully Prudhomme, « Un songe ») — explorer les aspects du thème : l'association d'idées ; reconnaître les types de phrases ; peser le pour et le contre (p. 65-80)"
+        },
+        {
+          "slug": "06-sens-voisins-actes-de-parole",
+          "notion": "Module 2 séq. 2 (R. Merle, « Solitude au milieu des hommes ») — différencier ou rapprocher des mots de sens voisin en contexte ; identifier les actes de parole (p. 81-97)"
+        },
+        {
+          "slug": "07-polysemie-et-enonciation",
+          "notion": "Module 2 séq. 3 (Stendhal, « La peur du mépris ») — distinguer les sens d'un mot polysémique ; repérer les marques de la situation d'énonciation (p. 98-112)"
+        },
+        {
+          "slug": "08-modalisation-et-indices-du-locuteur",
+          "notion": "Module 2 séq. 4 (A. Touraine, « Une affaire de conscience ») — la modalisation ; repérer les indices de la présence du locuteur (p. 113-129)"
+        },
+        {
+          "slug": "09-verbes-introducteurs-discours-rapporte",
+          "notion": "Module 3 « Femme et société » séq. 1 (C. Rochefort, « Je n'aimerais pas être un mari ! ») — citer les paroles d'autrui : les verbes introducteurs ; les formes du discours rapporté (p. 134-150)"
+        },
+        {
+          "slug": "10-verbes-d-opinion-recit-et-discours",
+          "notion": "Module 3 séq. 2 (G. Navel, « Ainsi était ma mère... ») — reconnaître l'opinion d'autrui : les verbes d'opinion ; différencier récit et discours : les temps verbaux (p. 151-165)"
+        },
+        {
+          "slug": "11-melioratif-et-arguments-de-la-these",
+          "notion": "Module 3 séq. 3 (Giraudoux, « Un roi déchu ») — recourir au vocabulaire mélioratif ; repérer des arguments en rapport avec la thèse ; la technique du résumé (p. 166-177)"
+        },
+        {
+          "slug": "12-pejoratif-et-raisonnement-implicite",
+          "notion": "Module 3 séq. 4 (F. de Lagarde, « Monsieur ou Mondamoiseau ? ») — recourir au vocabulaire péjoratif ; reconstituer un raisonnement à partir d'une information implicite (p. 178-190)"
+        },
+        {
+          "slug": "13-enchainer-des-arguments",
+          "notion": "Module 4 « Travail et bien-être » séq. 1 (R.M. du Gard, « Une existence exemplaire ») — explorer le lexique du thème ; enchaîner des arguments ; relier les arguments à la thèse (p. 195-206)"
+        },
+        {
+          "slug": "14-procedes-de-reprise",
+          "notion": "Module 4 séq. 2 (M. Tournier, « Des millions de petites flammes ») — le lexique des métiers ; maîtriser les procédés de reprise nominale et pronominale (p. 207-219)"
+        },
+        {
+          "slug": "15-exemple-et-information-nouvelle",
+          "notion": "Module 4 séq. 3 (Lamartine, « Le chant de la pierre ») — insérer un exemple ; introduire une information nouvelle dans un énoncé ; analyser des plans d'argumentation (p. 220-231)"
+        },
+        {
+          "slug": "16-modes-verbaux-et-analyse-de-la-consigne",
+          "notion": "Module 5 « Images d'ici, images d'ailleurs » séq. 1 (Cesbron, « Sur les routes du monde ») — envisager les faits dans la pensée : les modes verbaux ; comprendre et analyser une consigne (p. 236-247)"
+        },
+        {
+          "slug": "17-polysemie-grammaticale-et-problematique",
+          "notion": "Module 5 séq. 2 (Rimbaud, « Sensation ») — réduire des énoncés ; exploiter la polysémie de certains mots grammaticaux ; dégager une problématique (p. 248-258)"
+        },
+        {
+          "slug": "18-progression-thematique-et-plan",
+          "notion": "Module 5 séq. 3 (A. Jouffroy, « Le pouvoir de l'image ») — interpréter des titres ; analyser les types de progression thématique ; construire un plan (p. 259-271)"
+        },
+        {
+          "slug": "19-nouvelles-lecture-suivie",
+          "notion": "Nouvelles en lecture suivie — « La ficelle » (Maupassant, domaine public) et « La reine de beauté » (S. Prou, sous droits) : texte et « Pistes de recherche » seuls, aucun appareil de rubriques (p. 274-286)",
+          "optional": true
         }
       ]
     }
