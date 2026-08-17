@@ -1,0 +1,94 @@
+{
+  "title": "⚔️ زعيم الفصل ⭐⭐⭐: القيمة المطلقة وخاصيّاتها",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "باستعمال خاصيّة القيمة المطلقة لجذاء، ما قيمة |(−4) × 6| ؟",
+      "options": [
+        { "id": "a", "text": "−24" },
+        { "id": "b", "text": "2" },
+        { "id": "c", "text": "24" },
+        { "id": "d", "text": "10" }
+      ],
+      "correctOption": "c",
+      "explanation": "نطبّق الخاصيّة: |(−4) × 6| = |−4| × |6| = 4 × 6 = 24 . ويمكن كذلك حساب الجذاء أوّلًا فنجد (−4) × 6 = −24 ثمّ |−24| = 24 .",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.num.relatifs-operations"
+      ]
+    },
+    {
+      "prompt": "أوجد القيمة المطلقة للجذاء (π − 1)(π − 4) .",
+      "options": [
+        { "id": "a", "text": "(π − 1)(π − 4)" },
+        { "id": "b", "text": "(1 − π)(4 − π)" },
+        { "id": "c", "text": "(π − 1) + (4 − π)" },
+        { "id": "d", "text": "(π − 1)(4 − π)" }
+      ],
+      "correctOption": "d",
+      "explanation": "ندرس إشارة كلّ عامل بالقيمة التقريبية: بما أنّ π ≈ 3,14 فإنّ π − 1 عدد موجب ومنه |π − 1| = π − 1 ، بينما π − 4 عدد سالب ومنه |π − 4| = 4 − π . وبتطبيق خاصيّة القيمة المطلقة لجذاء: |(π − 1)(π − 4)| = |π − 1| × |π − 4| = (π − 1)(4 − π) . والخاصيّة تخصّ الجذاء لا المجموع، فلا يصحّ جمع القيمتين المطلقتين.",
+      "difficulty": 3,
+      "competencies": ["math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "عددان حقيقيان a و b بحيث |a| = 3 و |b| = 7 . ما قيمة |a × b| ؟",
+      "options": [
+        { "id": "a", "text": "21" },
+        { "id": "b", "text": "−21" },
+        { "id": "c", "text": "10" },
+        { "id": "d", "text": "4" }
+      ],
+      "correctOption": "a",
+      "explanation": "القيمة المطلقة لجذاء تساوي جذاء القيمتين المطلقتين: |a × b| = |a| × |b| = 3 × 7 = 21 . لاحظ أنّ الجذاء a × b قد يكون 21 أو −21 حسب إشارتَي العددين، لكنّ قيمته المطلقة تساوي 21 في كلّ الحالات.",
+      "difficulty": 3,
+      "competencies": ["math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "على المستقيم المدرّج التالي، فاصلة A هي −5 وفاصلة B هي 3 . ما هو البعد AB ؟\n<svg viewBox=\"0 0 320 110\"><title>النقطتان A و B على مستقيم مدرّج</title><line x1=\"8\" y1=\"60\" x2=\"300\" y2=\"60\" stroke=\"#334155\" stroke-width=\"2\"/><polygon points=\"308,60 298,55 298,65\" fill=\"#334155\"/><line x1=\"40\" y1=\"55\" x2=\"40\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"180\" y1=\"55\" x2=\"180\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"264\" y1=\"55\" x2=\"264\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"180\" y=\"80\" text-anchor=\"middle\" font-size=\"10\" fill=\"#64748b\" direction=\"ltr\" unicode-bidi=\"isolate\">0</text><text x=\"180\" y=\"97\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">O</text><circle cx=\"40\" cy=\"60\" r=\"4.5\" fill=\"#dc2626\"/><circle cx=\"264\" cy=\"60\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"40\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\" direction=\"ltr\" unicode-bidi=\"isolate\">A</text><text x=\"264\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\" direction=\"ltr\" unicode-bidi=\"isolate\">B</text><text x=\"40\" y=\"80\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#dc2626\" direction=\"ltr\" unicode-bidi=\"isolate\">−5</text><text x=\"264\" y=\"80\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\" direction=\"ltr\" unicode-bidi=\"isolate\">3</text></svg>",
+      "options": [
+        { "id": "a", "text": "2" },
+        { "id": "b", "text": "−2" },
+        { "id": "c", "text": "−8" },
+        { "id": "d", "text": "8" }
+      ],
+      "correctOption": "d",
+      "explanation": "البعد بين نقطتين هو القيمة المطلقة للفرق بين فاصلتيهما: AB = |3 − (−5)| = |8| = 8 . الخطأ الشائع هو حساب 3 − 5 = −2 بإهمال إشارة الفاصلة −5 ؛ كما أنّ البعد لا يكون سالبًا أبدًا.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.num.relatifs-operations"
+      ]
+    },
+    {
+      "prompt": "أوجد كلّ الأعداد الحقيقية x بحيث |−x| = |−π| .",
+      "options": [
+        { "id": "a", "text": "x = π أو x = −π" },
+        { "id": "b", "text": "x = π فقط لا غير" },
+        { "id": "c", "text": "x = −π فقط لا غير" },
+        { "id": "d", "text": "لا يوجد أيّ حلّ في ℝ" }
+      ],
+      "correctOption": "a",
+      "explanation": "العددان x و −x لهما البعد نفسه عن المبدأ، إذن |−x| = |x| . ومن جهة أخرى العدد −π سالب فـ |−π| = π . تصبح المساواة |x| = π ولها حلّان: x = π أو x = −π .",
+      "difficulty": 3,
+      "competencies": ["math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "أيّ زوج من الأعداد يبيّن أنّ المساواة |a + b| = |a| + |b| ليست صحيحة دائمًا ؟",
+      "options": [
+        { "id": "a", "text": "a = 3 و b = 5" },
+        { "id": "b", "text": "a = −3 و b = −5" },
+        { "id": "c", "text": "a = 3 و b = −5" },
+        { "id": "d", "text": "a = 0 و b = 5" }
+      ],
+      "correctOption": "c",
+      "explanation": "المثال المضادّ هو a = 3 و b = −5 : من جهة |a + b| = |3 + (−5)| = |−2| = 2 ، ومن جهة أخرى |a| + |b| = 3 + 5 = 8 ، والعددان مختلفان فالمساواة تسقط. أمّا الأزواج الأخرى فتحقّق المساواة ولا تصلح مثالًا مضادًّا: مع a = 3 و b = 5 نجد 8 من الجهتين، ومع a = −3 و b = −5 نجد 8 من الجهتين أيضًا، ومع a = 0 و b = 5 نجد 5 من الجهتين. المساواة تصحّ فقط لمّا يكون للعددين نفس الإشارة أو يكون أحدهما معدومًا.",
+      "difficulty": 3,
+      "competencies": ["math.num.valeur-absolue"]
+    }
+  ]
+}

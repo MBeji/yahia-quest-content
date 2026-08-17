@@ -1,0 +1,88 @@
+{
+  "title": "👑 تحدّي المناظرة ⭐⭐⭐⭐: التعداد والحساب — أرقام ناقصة وأقطار",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 6,
+  "questions": [
+    {
+      "prompt": "في العدد 6283ab، يمثّل a رقم العشرات و b رقم الآحاد. ما هي كلّ القيم التي تجعل العدد قابلا للقسمة على 12 وعلى 15 في نفس الوقت؟",
+      "options": [
+        { "id": "a", "text": "b = 0 و a من بين 2 و 8" },
+        { "id": "b", "text": "b = 0 و a من بين 0 و 6" },
+        { "id": "c", "text": "b = 5 و a من بين 2 و 8" },
+        { "id": "d", "text": "b = 0 و a من بين 2 و 5 و 8" }
+      ],
+      "correctOption": "a",
+      "explanation": "ليقبل العدد القسمة على 12 وعلى 15 معا يكفي أن يقبل القسمة على 3 و4 و5. القسمة على 5 تفرض b = 0، والقسمة على 4 تفرض أن يكون العدد a0 المكوّن من آخر رقمين مضاعفا للعدد 4، أي a زوجي. مجموع الأرقام المعروفة هو 6 + 2 + 8 + 3 = 19، فيجب أن يكون 19 + a مضاعفا للعدد 3، أي a من بين 2 و5 و8؛ وبشرط أن يكون a زوجيا نحتفظ بـ 2 و8. العددان هما 628 320 و628 380.",
+      "difficulty": 3,
+      "competencies": ["math.num.criteres-divisibilite"]
+    },
+    {
+      "prompt": "نعتبر العدد A = 2⁵⁰ + 8¹⁷. ما التحليل الذي يبرّر أنّ A يقبل القسمة على 12؟",
+      "options": [
+        { "id": "a", "text": "A = 2⁵⁰ × 5، والعامل 2⁵⁰ يعطي القسمة على 4 والعامل 5 يعطي القسمة على 3" },
+        { "id": "b", "text": "A = 2⁵⁰ × 3، والعامل 2⁵⁰ يعطي القسمة على 4 والعامل 3 يعطي القسمة على 3" },
+        { "id": "c", "text": "A = 2⁶⁷، وكلّ قوّة للعدد 2 تقبل القسمة على 12 مهما كان الأسّ" },
+        { "id": "d", "text": "A = 2⁵¹ × 3، والعامل 2⁵¹ يعطي القسمة على 3 والعامل 3 يعطي القسمة على 4" }
+      ],
+      "correctOption": "b",
+      "explanation": "نوحّد الأساس: 8¹⁷ = (2³)¹⁷ = 2⁵¹، إذن A = 2⁵⁰ + 2⁵¹ = 2⁵⁰ × (1 + 2) = 2⁵⁰ × 3. العامل 2⁵⁰ يقبل القسمة على 4 والعامل 3 يقبل القسمة على 3، فـ A يقبل القسمة على 12. (تحقّق على مثال صغير: 2² + 8 = 12.)",
+      "difficulty": 3,
+      "competencies": ["math.num.operations-entiers", "math.num.criteres-divisibilite"]
+    },
+    {
+      "prompt": "نعتبر العدد N المكوّن من كتابة الأعداد من 1 إلى 20 متتالية، أي N = 1234567891011…20. كم رقما يحوي N؟",
+      "options": [
+        { "id": "a", "text": "20" },
+        { "id": "b", "text": "29" },
+        { "id": "c", "text": "31" },
+        { "id": "d", "text": "40" }
+      ],
+      "correctOption": "c",
+      "explanation": "الأعداد من 1 إلى 9 عددها 9 ولكلّ منها رقم واحد: 9 أرقام. والأعداد من 10 إلى 20 عددها 11 ولكلّ منها رقمان: 11 × 2 = 22 رقما. المجموع هو 9 + 22 = 31 رقما. (الخطأ الشائع: 40 يوافق اعتبار كلّ الأعداد العشرين برقمين.)",
+      "difficulty": 3,
+      "competencies": ["math.num.entiers-lecture-ecriture"]
+    },
+    {
+      "prompt": "الشكل التالي مثمّن ABCDEFGH. كم قطرا له؟ (القطر قطعة مستقيم تربط قمّتين غير متتاليتين)\n<svg viewBox=\"0 0 210 210\"><polygon points=\"105,30 158,52 180,105 158,158 105,180 52,158 30,105 52,52\" fill=\"#f5f3ff\" stroke=\"#6d28d9\" stroke-width=\"2.5\"/><circle cx=\"105\" cy=\"30\" r=\"4\" fill=\"#6d28d9\"/><circle cx=\"158\" cy=\"52\" r=\"4\" fill=\"#6d28d9\"/><circle cx=\"180\" cy=\"105\" r=\"4\" fill=\"#6d28d9\"/><circle cx=\"158\" cy=\"158\" r=\"4\" fill=\"#6d28d9\"/><circle cx=\"105\" cy=\"180\" r=\"4\" fill=\"#6d28d9\"/><circle cx=\"52\" cy=\"158\" r=\"4\" fill=\"#6d28d9\"/><circle cx=\"30\" cy=\"105\" r=\"4\" fill=\"#6d28d9\"/><circle cx=\"52\" cy=\"52\" r=\"4\" fill=\"#6d28d9\"/><text x=\"105\" y=\"20\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#6d28d9\" direction=\"ltr\" unicode-bidi=\"isolate\">A</text><text x=\"172\" y=\"42\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#6d28d9\" direction=\"ltr\" unicode-bidi=\"isolate\">B</text><text x=\"195\" y=\"109\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#6d28d9\" direction=\"ltr\" unicode-bidi=\"isolate\">C</text><text x=\"172\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#6d28d9\" direction=\"ltr\" unicode-bidi=\"isolate\">D</text><text x=\"105\" y=\"197\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#6d28d9\" direction=\"ltr\" unicode-bidi=\"isolate\">E</text><text x=\"38\" y=\"174\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#6d28d9\" direction=\"ltr\" unicode-bidi=\"isolate\">F</text><text x=\"15\" y=\"109\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#6d28d9\" direction=\"ltr\" unicode-bidi=\"isolate\">G</text><text x=\"38\" y=\"42\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#6d28d9\" direction=\"ltr\" unicode-bidi=\"isolate\">H</text></svg>",
+      "options": [
+        { "id": "a", "text": "16" },
+        { "id": "b", "text": "24" },
+        { "id": "c", "text": "28" },
+        { "id": "d", "text": "20" }
+      ],
+      "correctOption": "d",
+      "explanation": "للمثمّن 8 قمم. من كلّ قمّة نستبعد القمّة نفسها وجارتيها، فيبقى 5 قمم تُربط بأقطار: 5 أقطار من كلّ قمّة. ذلك يعطي 8 × 5 = 40، لكنّ كلّ قطر عُدّ مرّتين (مرّة من كلّ طرف)، فالعدد هو 40 ÷ 2 = 20. (العدد 28 هو عدد كلّ القطع الرابطة بين قمّتين، أي الأقطار مضافا إليها الأضلاع الثمانية.)",
+      "difficulty": 3,
+      "competencies": ["math.num.operations-entiers"]
+    },
+    {
+      "prompt": "مجموعة مضاعفات العدد 12 المحصورة بين 100 و 160: ما كمّها؟",
+      "options": [
+        { "id": "a", "text": "5" },
+        { "id": "b", "text": "4" },
+        { "id": "c", "text": "6" },
+        { "id": "d", "text": "0" }
+      ],
+      "correctOption": "a",
+      "explanation": "مضاعفات العدد 12 المحصورة بين 100 و160 هي 108 و120 و132 و144 و156، أي خمسة أعداد. المجموعة منتهية وكمّها 5. (العدد 96 أصغر من 100 والعدد 168 أكبر من 160، فلا يُحتسبان.)",
+      "difficulty": 3,
+      "competencies": ["math.num.multiples-diviseurs"]
+    },
+    {
+      "prompt": "عمارة بها 4 أجنحة، وبكلّ جناح 6 طوابق، وبكلّ طابق شقّتان. كم شقّة تحوي العمارة؟",
+      "options": [
+        { "id": "a", "text": "24" },
+        { "id": "b", "text": "12" },
+        { "id": "c", "text": "48" },
+        { "id": "d", "text": "36" }
+      ],
+      "correctOption": "c",
+      "explanation": "شجرة الاختيار على ثلاثة مستويات: الجناح له 4 اختيارات، ثمّ الطابق 6 اختيارات، ثمّ الشقّة داخل الطابق اختياران. عدد الأغصان النهائية هو 4 × 6 × 2 = 48 شقّة. (الخطأ الشائع: 24 يوافق نسيان المستوى الثالث.)",
+      "difficulty": 3,
+      "competencies": ["math.num.operations-entiers"]
+    }
+  ]
+}
