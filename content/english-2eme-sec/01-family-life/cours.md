@@ -18,9 +18,9 @@ A wish, in English, is built with **a verb of wanting + to + a base verb**. That
 | Structure                  | Example                                     | What it sounds like           |
 | -------------------------- | ------------------------------------------- | ----------------------------- |
 | **I want to** + base verb  | _I **want to** study medicine._             | direct, plain, a real wish    |
-| **I'd like to** + base verb| _I **'d like to** work with children._      | softer, more polite           |
+| **I'd like to** + base verb | _I**'d like to** work with children._     | softer, more polite           |
 | **I want** + noun          | _I **want** a quiet room to revise in._     | you want a thing, not an act  |
-| **I'd like** + noun        | _I **'d like** a word with you, please._    | a polite request              |
+| **I'd like** + noun        | _I**'d like** a word with you, please._     | a polite request              |
 
 **I'd like** is the short form of **I would like**. Use it whenever you are asking somebody — a parent, a teacher, an employer — for something. _I want a scholarship_ is not rude, but _I'd like to apply for a scholarship_ opens far more doors.
 
@@ -43,6 +43,8 @@ Families come in many shapes, and English has a precise word for each link.
 | **Nan**                  | the affectionate name many children give their grandmother       |
 
 > ⚠️ **stepmother** and **mother-in-law** are two different people. Many languages cover both with one single word; English does not, and mixing them is the classic mistake of this lesson. Your father's new wife is your **stepmother**. Your husband's mother is your **mother-in-law**.
+
+> 🗡️ Two of these words, **siblings** and **mother-in-law**, go beyond the list the lesson itself gives you — learn them all the same, because you will meet both of them constantly.
 
 And these are the words the lesson uses for **what a family gives you** — you will need them to speak about your own:
 
@@ -99,6 +101,8 @@ The present perfect is a bridge: one foot in the past, one foot in **now**. It i
 2. **An experience in your life up to now**, without saying when. _We **have never** been to Djerba._ · _**Have** you **ever** met your cousins from Nabeul?_
 3. **A past event whose result matters now.** _I **have lost** my keys._ (So I cannot get in — now.)
 
+> 🗡️ For the first of these three uses English also has a second form, which you will meet in Theme III. Until then, **have / has + past participle** is the form to write and the form to expect.
+
 Its markers are the fastest way to recognise it.
 
 | Marker                 | What it introduces                  | Example                                            |
@@ -118,11 +122,13 @@ Two more places where the present perfect is compulsory, and where nobody expect
 
 > ⚠️ **since** takes a **point**, **for** takes a **duration**. _since 2020_ ✓ · "since four years" ✗ · _for four years_ ✓. The test is simple: if you can answer _when did it start?_, use **since**; if you can answer _how long?_, use **for**.
 
+> 🗡️ Note that **since** has a second job outside this chapter — it can also introduce a **reason**, and Theme II will show you that use.
+
 ## ⚖️ Present perfect or past simple? — the one decision that matters
 
 This is the heart of the chapter, and it comes down to a single question: **is the moment named and over?**
 
-- **Yes → past simple.** _yesterday_, _last winter_, _in 2015_, _two months ago_, _when he was a child_, _on Sunday_ — all of them close the door on the present.
+- **Yes → past simple.** _yesterday_, _last winter_, _in 2015_, _two months ago_, _when he was a child_, _last Sunday_ — all of them close the door on the present.
 - **No, or it still reaches today → present perfect.**
 
 | Past simple — the moment is named and finished | Present perfect — the moment is not named, or it reaches now |
@@ -168,6 +174,8 @@ A real-life story is written with strong words. These are the ones the lesson gi
 | **to weigh somebody up** | to observe a person carefully before deciding what you think of them |
 
 _When Bilel walked in with a **bunch** of roses, his grandmother **shrieked** with **delight**, **clutched** his arm and **stared** at him, **astonished**._
+
+_The little boy **weighed** me **up** for a long moment; then he **grinned**, held out his hand — and I simply **melted**._
 
 ## ⚠️ The trap wall
 

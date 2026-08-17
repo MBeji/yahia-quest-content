@@ -21,7 +21,7 @@ French covers a lot of ground with one or two words. English cuts the same groun
 | **travel**       | the **general idea** of going from one place to another, especially far    | _**Travel** broadens the mind._                       |
 | **a journey**    | the movement itself, from the moment you leave to the moment you arrive    | _a three-hour **journey** by coach_                   |
 
-> ⚠️ **travel** is almost always **uncountable**: _I love **travel**_ ✓ / "I made a travel to Sousse" ✗ → _I made a **trip** to Sousse._ And you do not "make" a journey with _do_: you **make** a journey, you **take** a trip, you **go on** an excursion, you **catch** a flight.
+> ⚠️ **travel** is almost always **uncountable**: _I love **travel**_ ✓ / "I made a travel to Sousse" ✗ → _I made a **trip** to Sousse._ And each word keeps its own verb: you **make** a journey, you **take** a trip, you **go on** an excursion, you **catch** a flight.
 
 And the words you meet on the paper the agency hands you:
 
@@ -65,7 +65,7 @@ A leaflet never orders you about. It tells you what you **can** do, and it **sug
 
 Start with a sentence, the way the lesson does.
 
-> Getting close to the players has never been easy. It has never been cheap **either**.
+> The night bus to the south has never been fast. It has never been comfortable **either**.
 
 Ask the three questions. **Where is *either*?** At the very **end** of the sentence. **Is the sentence affirmative or negative?** **Negative** — _has never been_. **What is it doing there?** It adds a **second negative fact** to the first one.
 
@@ -89,9 +89,9 @@ In a **short reply**, English changes tools again — and this time the subject 
 
 > 🗡️ **Rewriting with *either*** is a classic exam task. Three shapes turn up again and again:
 >
-> - _Both Sana **and** Mehdi were absent._ → _Sana was absent, and Mehdi was absent **too**._ (affirmative → **too**)
-> - _**Neither** Sana **nor** Mehdi came._ → _Sana didn't come, and Mehdi didn't come **either**._
-> - _The old man has **no** home and **no** family._ → _The old man hasn't got a home, and he hasn't got a family **either**._
+> - _Both Salma **and** Amine arrived late._ → _Salma arrived late, and Amine arrived late **too**._ (affirmative → **too**)
+> - _**Neither** Salma **nor** Amine phoned the hostel._ → _Salma didn't phone the hostel, and Amine didn't phone it **either**._
+> - _The little station has **no** cafe and **no** waiting room._ → _The little station hasn't got a cafe, and it hasn't got a waiting room **either**._
 
 > ⚠️ **Four traps.** "I don't like it **too**." ✗ — _too_ never lives in a negative sentence. "I don't like it **neither**." ✗ — one negative per clause is enough; _neither_ already carries its own. "**Either** I don't like it." ✗ — in this use _either_ stands at the **end**, never at the front. "**Neither I do.**" ✗ — after _neither_, the auxiliary jumps in front of the subject: _**Neither do I**._
 
@@ -114,7 +114,7 @@ The words the interview is made of:
 | ------------------- | ------------------------------------------------------------------- |
 | **a league**        | the competition in which the clubs of one country play each other   |
 | **teammates**       | the players of your own side                                        |
-| **a coach**         | the person who trains the team and picks it                          |
+| **a coach**         | the person who trains the team and picks it — and also the long-distance bus you travel in |
 | **a career**        | the working life of a person, taken as a whole                       |
 | **to cheer**        | to shout to encourage a player or a team                             |
 | **to miss (somebody)** | to feel sad because that person is far away                       |
@@ -173,9 +173,9 @@ Both tenses are present perfects, both reach the present. The difference is what
 | _She **has been writing** letters all afternoon._                       | _She **has written** four letters._                              |
 | _They **have been building** that stadium for two years._               | _They **have built** three stadiums in the region._              |
 | _I **have been reading** your brochure._ (I am still on it)             | _I **have read** your brochure._ (I have finished it)            |
-| answers **How long…?**                                                  | answers **How many…?** / **What have you done?**                 |
+| the usual answer to **How long…?**                                      | the only answer to **How many…?** / **What have you done?**      |
 
-The test takes one second: if the sentence carries a **number of finished things**, use the **simple**; if it carries a **duration**, use the **progressive**.
+Two tests, not one. A **number of finished things** forbids the progressive: write the **simple**. A **duration** forbids nothing — _I have lived in Sfax for ten years_ and _I have been living in Sfax for ten years_ are both correct English, and the progressive simply insists that the activity has never stopped. (The one family of verbs that refuses it anyway is three lines below.)
 
 > 🗡️ The two very often sit in the same sentence, one clause each: _Sami **has been driving** the Sfax to Gabes coach for nine years, and he **has carried** thousands of passengers._ The duration takes the progressive, the count takes the simple.
 
@@ -204,7 +204,7 @@ Every English word of more than one syllable has **one** strong syllable. Hit th
 Four rules cover most of the work:
 
 1. Most **two-syllable nouns and adjectives** take the beat on the **first** syllable: _**GRATE**-ful_, _**EA**-ger_, _**JOUR**-ney_. _ca-**REER**_ is a famous exception.
-2. Words ending in **-tion / -sion / -cial** take the beat on the syllable **just before** the ending: _ex-**CUR**-sion_, _in-for-**MA**-tion_.
+2. Words ending in **-tion / -sion / -cial** nearly always take the beat on the syllable **just before** the ending: _ex-**CUR**-sion_, _in-for-**MA**-tion_. (A handful of long words built on a shorter one keep the beat of that shorter word: _**TE**-le-vi-sion_.)
 3. Words ending in **-ity** take the beat **two syllables before** the ending: _op-por-**TU**-ni-ty_, _pos-si-**BI**-li-ty_.
 4. **Compound nouns** are stressed on their **first** part: _**TEAM**-mates_, _**FOOT**-ball_, _**TIME**-table_.
 
@@ -226,9 +226,11 @@ The checkpoint at the end of the theme does not test travel or football: it look
 
 After a **modal** (_can, should, will_) you need a **base verb**; after _the_, _my_, _your_ you need a **noun**; before a noun you need an **adjective**.
 
-**Punctuation and capitals.** A capital opens every sentence; proper nouns (Tabarka, Emna, English, March) keep theirs wherever they stand; the pronoun **I** is always a capital; a comma closes an opening clause; and a question mark that belongs to quoted words stays **inside** the quotation marks.
+**Punctuation and capitals.** A capital opens every sentence; proper nouns (Tabarka, Emna, English, March) keep theirs wherever they stand; the pronoun **I** is always a capital; a comma closes an opening clause; a **comma** also introduces the words somebody actually said (_Mouna asked, "Where is the office?"_); and a question mark that belongs to quoted words stays **inside** the quotation marks.
 
-**Linkers.** Choose them by the **relation**, not by the sound: **and, moreover, in addition** join two ideas that go the same way; **but, however, although, yet** turn the sentence round; **so, therefore, that is why** draw a consequence; **because, since, due to** give the reason.
+**Linkers.** Choose them by the **relation**, not by the sound: **and, moreover, in addition** join two ideas that go the same way; **but, however, although, yet** turn the sentence round; **so, therefore, that is why** draw a consequence; **because** + a whole clause and **because of** + a noun give the reason.
+
+> ⚠️ _since_ has a second life as a linker meaning _because_ (_Since it was raining, we stayed in_). Do not let it blur the _since_ of this chapter: next to a present perfect, _since_ always gives the **starting point** of a duration, never a reason.
 
 ## ⚠️ The trap wall
 
