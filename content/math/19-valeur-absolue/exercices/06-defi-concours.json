@@ -1,0 +1,100 @@
+{
+  "title": "👑 تحدّي المناظرة ⭐⭐⭐⭐: القيمة المطلقة — بُعد وإشارة",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 6,
+  "questions": [
+    {
+      "prompt": "عدد حقيقي x يحقّق |x| = 5 ، وهو عدد سالب. ما قيمة x ؟",
+      "options": [
+        { "id": "a", "text": "5" },
+        { "id": "b", "text": "5 أو −5" },
+        { "id": "c", "text": "−5" },
+        { "id": "d", "text": "لا يوجد عدد يحقّق الشرطين" }
+      ],
+      "correctOption": "c",
+      "explanation": "المساواة |x| = 5 لها حلّان: 5 و −5 . وبما أنّ الشرط الإضافي يفرض أن يكون x سالبًا، فالحلّ الوحيد المقبول هو x = −5 .",
+      "difficulty": 2,
+      "competencies": ["math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "ما قيمة المجموع |√5 − 3| + |1 − √5| ؟",
+      "options": [
+        { "id": "a", "text": "−2" },
+        { "id": "b", "text": "2" },
+        { "id": "c", "text": "4" },
+        { "id": "d", "text": "3 − √5" }
+      ],
+      "correctOption": "b",
+      "explanation": "ندرس إشارة كلّ عبارة بالقيمة التقريبية: بما أنّ √5 ≈ 2,24 فإنّ √5 − 3 عدد سالب، و 1 − √5 عدد سالب أيضًا. إذن |√5 − 3| = 3 − √5 و |1 − √5| = √5 − 1 ، فيكون المجموع (3 − √5) + (√5 − 1) = 2 بعد اختصار √5 . الفخّ هو حذف الأقواس دون دراسة إشارة كلّ عبارة، وهو يعطي −2 : وهذا مستحيل لأنّ مجموع قيمتين مطلقتين لا يكون سالبًا.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.num.relatifs-operations"
+      ]
+    },
+    {
+      "prompt": "ما قيمة |(1 − √5)(1 + √2)| ؟",
+      "options": [
+        { "id": "a", "text": "(1 − √5)(1 + √2)" },
+        { "id": "b", "text": "(√5 − 1)(1 + √2)" },
+        { "id": "c", "text": "(√5 − 1)(√2 − 1)" },
+        { "id": "d", "text": "(1 − √5)(√2 − 1)" }
+      ],
+      "correctOption": "b",
+      "explanation": "ندرس إشارة كلّ عامل. بما أنّ √5 ≈ 2,24 فإنّ 1 − √5 سالب ومنه |1 − √5| = √5 − 1 ، بينما 1 + √2 موجب ومنه |1 + √2| = 1 + √2 . وبتطبيق القيمة المطلقة لجذاء نجد (√5 − 1)(1 + √2) .",
+      "difficulty": 3,
+      "competencies": ["math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "على المستقيم المدرّج التالي، N نقطة فاصلتها −3 ، و P نظيرة N بالنسبة إلى النقطة I . ما هي فاصلة P ؟\n<svg viewBox=\"0 0 320 105\"><title>المستقيم المدرّج والنقطتان O و I والنقطة N ذات الفاصلة −3</title><line x1=\"10\" y1=\"55\" x2=\"305\" y2=\"55\" stroke=\"#334155\" stroke-width=\"2\"/><polygon points=\"313,55 303,50 303,60\" fill=\"#334155\"/><line x1=\"36\" y1=\"50\" x2=\"36\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"62\" y1=\"50\" x2=\"62\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"88\" y1=\"50\" x2=\"88\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"114\" y1=\"50\" x2=\"114\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"140\" y1=\"50\" x2=\"140\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"166\" y1=\"50\" x2=\"166\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"50\" x2=\"192\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"218\" y1=\"50\" x2=\"218\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"244\" y1=\"50\" x2=\"244\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"270\" y1=\"50\" x2=\"270\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"296\" y1=\"50\" x2=\"296\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><circle cx=\"140\" cy=\"55\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"166\" cy=\"55\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"62\" cy=\"55\" r=\"4.5\" fill=\"#dc2626\"/><text x=\"62\" y=\"40\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\" direction=\"ltr\" unicode-bidi=\"isolate\">N</text><text x=\"62\" y=\"76\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#dc2626\" direction=\"ltr\" unicode-bidi=\"isolate\">−3</text><text x=\"140\" y=\"76\" text-anchor=\"middle\" font-size=\"10\" fill=\"#64748b\" direction=\"ltr\" unicode-bidi=\"isolate\">0</text><text x=\"166\" y=\"76\" text-anchor=\"middle\" font-size=\"10\" fill=\"#64748b\" direction=\"ltr\" unicode-bidi=\"isolate\">1</text><text x=\"140\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">O</text><text x=\"166\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">I</text></svg>",
+      "options": [
+        { "id": "a", "text": "3" },
+        { "id": "b", "text": "4" },
+        { "id": "c", "text": "5" },
+        { "id": "d", "text": "−5" }
+      ],
+      "correctOption": "c",
+      "explanation": "كون P نظيرة N بالنسبة إلى I يعني أنّ I منتصف [NP] ، أي IN = IP . نحسب البعد IN = |1 − (−3)| = 4 ، إذن تقع P على بُعد 4 من I في الجهة الأخرى وفاصلتها 1 + 4 = 5 . الخطأ الشائع هو أخذ مقابل الفاصلة −3 والاكتفاء بالعدد 3 .",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.num.relatifs-operations"
+      ]
+    },
+    {
+      "prompt": "عددان حقيقيان a و b بحيث |a| = 3 و |b| = 5 ، مع a سالب و b موجب. ما قيمة الجذاء a × b ؟",
+      "options": [
+        { "id": "a", "text": "−15" },
+        { "id": "b", "text": "15" },
+        { "id": "c", "text": "−8" },
+        { "id": "d", "text": "8" }
+      ],
+      "correctOption": "a",
+      "explanation": "من |a| = 3 مع a سالب نستنتج a = −3 ، ومن |b| = 5 مع b موجب نستنتج b = 5 . إذن a × b = (−3) × 5 = −15 . ولاحظ أنّ |a × b| = |a| × |b| = 15 : القيمة المطلقة لا تحفظ الإشارة.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.num.relatifs-operations"
+      ]
+    },
+    {
+      "prompt": "على مستقيم مدرّج (OI) ، النقاط A و B و C فاصلاتها على التوالي 3 و −4 و 1 . ما هو البعد BC ؟",
+      "options": [
+        { "id": "a", "text": "7" },
+        { "id": "b", "text": "2" },
+        { "id": "c", "text": "3" },
+        { "id": "d", "text": "5" }
+      ],
+      "correctOption": "d",
+      "explanation": "نبدأ بتحديد النقطتين المطلوبتين: B فاصلتها −4 و C فاصلتها 1 . والبعد بين نقطتين هو القيمة المطلقة للفرق بين فاصلتيهما: BC = |1 − (−4)| = |5| = 5 . أمّا الأبعاد الأخرى فهي AB = |−4 − 3| = 7 و AC = |1 − 3| = 2 ، ومن أهمل إشارة الفاصلة −4 حسب |1 − 4| = 3 .",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.num.relatifs-operations"
+      ]
+    }
+  ]
+}
