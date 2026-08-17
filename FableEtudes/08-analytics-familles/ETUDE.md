@@ -15,7 +15,7 @@
 > **Priorité** : 08 · **Valeur** : rendre la progression visible et honnête pour les familles — le rapport parent devient un tableau de bord descriptif (temps, progression, matières, points faibles, examens blancs) · **Complexité** : moyenne
 > **Architecte** : Fable (claude-fable-5), 2026-07-04 · **Exécuteur cible** : Sonnet (ou équiv.)
 > **Dépend de** : étude 04 lot A0 (télémétrie `question_attempts`) pour les vues compétences ; étude 07 (knowledge graph — **en cours de rédaction** : table `user_competency_mastery`, maîtrise 0–100 par compétence) pour les points faibles ; étude 02 (examen blanc) pour le percentile · **Bloque** : —
-> **Docs normatifs liés** : CLAUDE.md (RLS, DoD §7, gotcha grants), ARCHITECTURE.md, FableEtudes/02-examen-blanc/ETUDE.md, FableEtudes/04-moteur-adaptatif/ETUDE.md
+> **Docs normatifs liés** : CLAUDE.md (RLS, DoD §7, gotcha grants), ARCHITECTURE.md, FableEtudes/EtudeRealisé/02-examen-blanc/ETUDE.md, FableEtudes/04-moteur-adaptatif/ETUDE.md
 
 ## 1. Contexte & objectif produit
 
