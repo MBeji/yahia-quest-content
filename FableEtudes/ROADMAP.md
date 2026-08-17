@@ -67,12 +67,16 @@ précisément pourquoi ils n'y figuraient pas.
 échouait sur `main` les 08-14, 08-15 et 08-16 ; personne ne lit un cron rouge) :
 
 - **arena#726** — étude 28 lot 3 : la position et sa scorecard. Hors file (documentaire).
-- **arena#743 · arena#746** — ⚠️ **l'étude 02 est passée en EXÉCUTION** : le schéma et le
+- **arena#743 · arena#746** — ⚠️ **l'étude 02 est LIVRÉE** : le schéma et le
   moteur SQL de l'examen blanc (lots 1-2), puis l'écran passer / rendre / se corriger
-  (lots 3-4), livrés tous les deux le **2026-08-16**. **Ce n'est pas hors file** : le §6 dit
+  (lots 3-4), livrés tous les deux le **2026-08-16**. **Ce n'est pas hors file** : le §6 disait
   encore « **é02 se re-scope maintenant** » (sortie du différé le 2026-08-13, é28 Q-4) —
-  quatre lots plus tard, cette phrase décrit un état révolu. Le re-scope est fait et exécuté ;
-  ce qui reste à écrire est **où s'arrête son v1**, pas s'il faut l'ouvrir.
+  quatre lots plus tard, cette phrase décrivait un état révolu ; **corrigé le 2026-08-17**, en
+  même temps que la clôture de l'étude, qui passe dans `EtudeRealisé/`. Ce qui restait à écrire
+  — **où s'arrête son v1** — l'est désormais dans son §8 : trois écarts assumés (R-7 rescopé pour
+  la phase gratuite, lot 5 remplacé par un seed **par requête**, US-3 partielle) et cinq questions
+  dont **Q-2, la cadence éditoriale, qui est la mitigation de RISK-1**, et **Q-5, à vérifier en
+  base avant tout le reste : la session 1 est-elle réellement `published` ?**
 
 ## 0. Mode d'emploi (comment exécuter cette roadmap)
 
@@ -800,7 +804,7 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
 
 | File                                                             | Porte d'entrée                                                      | Contenu                                                                           |
 | ---------------------------------------------------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| ~~**V2 — concours**~~ **SORTIE DU DIFFÉRÉ le 2026-08-13** (é28 Q-4) | ~~V1 ≥ M3 **et** annales transcrites~~ — **porte levée** | **é02 se re-scope maintenant**, avec un **v1 explicitement borné SANS annales** : assemblage chronométré du corpus existant + rang relatif. Les annales redeviennent un **enrichissement**, pas un prérequis — c'était précisément la porte qui tenait l'étude fermée. Motif (é28 M-2) : un parent tunisien juge sur « est-ce que ça prépare au concours », et c'est le plus gros écart produit face au marché. Wording premium toujours proscrit (phase gratuite) |
+| ~~**V2 — concours**~~ **SORTIE DU DIFFÉRÉ le 2026-08-13** (é28 Q-4), **puis LIVRÉE le 2026-08-16** | ~~V1 ≥ M3 **et** annales transcrites~~ — **porte levée** | ~~**é02 se re-scope maintenant**~~ → **é02 est re-scopée, exécutée et close** (arena#743 lots 1-2, arena#746 lots 3-4 ; [étude](./EtudeRealisé/02-examen-blanc/ETUDE.md)). Le v1 est bien **borné SANS annales** : assemblage chronométré du corpus existant + rang relatif, et le barème porte les **coefficients réels du concours** (maths 4, arabe 2+2, français 3, sciences 3, anglais 1) dont la note /20 dérive. Les annales restent un **enrichissement** — chantier de **contenu**, **non ouvert** : si quelqu'un le lance, il entre en file CONTENU (§5), pas ici. Motif (é28 M-2) : un parent tunisien juge sur « est-ce que ça prépare au concours », et c'est le plus gros écart produit face au marché. Wording premium toujours proscrit (phase gratuite) — R-7 a d'ailleurs été **rescopé** pour cette raison : le mode est ouvert à tout compte. ⚠️ **Reliquat à porter par qui reprend** : Q-2 (cadence éditoriale = mitigation de RISK-1), Q-4 (lot 6 optionnel : détail par chapitre + remédiation) et **Q-5 (vérifier en base que la session 1 est `published`)** |
 | ~~**V4 — parent**~~ **SORTIE DU DIFFÉRÉ le 2026-08-13** (é28 Q-3) | ~~é04-A2.2 livré (ligne 16)~~ — **porte levée** | **é08 se re-scope maintenant** sur son **volet enseignant** : code de classe, liste d'élèves, taux de réussite par chapitre — la mécanique existe déjà (le rapport parent par code alliance est le même objet). Motif (é28 M-3) : c'est le seul canal à **CAC ≈ 0** au budget réel (1 000-2 000 TND/an). Le volet parent + digest hebdo IA reste, lui, derrière é04-A2.2. ⛔ **Précondition dure é28 D-5** : aucune démarche vers un établissement avant **GAP-024 livré** et **GAP-003 tranché** |
 | **Gels — actés (A1-Q3, 2026-07-20)** ; application par é26 lot 2 | Dégel par décision humaine explicite uniquement                     | é06 (PWA offline) · é10 (anti-fraude — se dégèle au volume) · é12 (studio in-app) |
 | **Gelée (phase)**                                                | Sortie de la phase gratuite (décision humaine)                      | é01 (paiement en ligne — véhicule de réactivation du premium)                     |

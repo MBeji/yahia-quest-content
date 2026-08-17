@@ -3,7 +3,7 @@
 > **Statut** : brouillon
 > **Priorité** : 10 · **Valeur** : protéger la crédibilité de tout ce qui classe (leaderboard, percentiles d'examen blanc, duels/ligues) — un classement triché tue la motivation des élèves honnêtes · **Complexité** : moyenne
 > **Architecte** : Fable (claude-fable-5), 2026-07-04 · **Exécuteur cible** : Sonnet
-> **Dépend de** : montée des enjeux compétitifs (études [02](../02-examen-blanc/ETUDE.md) et [05](../EtudeRealisé/05-duels-ligues/ETUDE.md) livrées) — les lots 1–3 peuvent se préparer avant, le lot 4 ne s'active qu'après · **Bloque** : —
+> **Dépend de** : montée des enjeux compétitifs (études [02](../EtudeRealisé/02-examen-blanc/ETUDE.md) et [05](../EtudeRealisé/05-duels-ligues/ETUDE.md) livrées) — les lots 1–3 peuvent se préparer avant, le lot 4 ne s'active qu'après · **Bloque** : —
 > **Docs normatifs liés** : CLAUDE.md (anti-farm, gotcha grants, DoD §7), ARCHITECTURE.md, `docs/logging-standard.md`
 
 ## 1. Contexte & objectif produit
