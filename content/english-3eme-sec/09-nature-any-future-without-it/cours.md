@@ -42,8 +42,14 @@ Your book gives you five definitions to match with five words. Learn the definit
 | a **drought**                | a period of dry weather, especially a long one, that damages the crops                                                                |
 | a **flood**                  | a great flowing or overflowing of water over land                                                                                     |
 | a **tsunami** (a tidal wave) | an unusually large sea wave produced by a seaquake or an undersea volcanic eruption. In Japanese, *tsu* = harbour and *nami* = wave   |
-| an **earthquake**            | a series of vibrations in the earth's crust, caused when rocks under slowly building strain break and rebound abruptly, and measured on the Richter scale from 1 to 10 |
+| an **earthquake**            | a series of vibrations in the earth's crust, caused when rocks under slowly building strain break and rebound abruptly, and measured on the Richter scale from 1 to 10 _(see the note below)_ |
 | a **volcano**                | a vent — a hole — in the earth's crust through which lava, steam and ash are expelled, either continuously or at irregular intervals   |
+
+> 🗡️ One figure in that table is the book's, and the science reads it differently. The **Richter
+> scale has no upper limit**: it is logarithmic, so it simply keeps counting. The strongest
+> earthquake ever recorded measured **9.5** (Chile, 1960), and the very large ones are now given in
+> **moment magnitude** rather than in Richter. Answer *1 to 10* if your book asks — and know that the
+> ceiling is the book's, not the earth's.
 
 Two of them are easy to confuse, and the definitions tell you why. A **volcano** is the opening; an **eruption** is what comes out of it. A **tsunami** may be *set off* by an undersea eruption or by a seaquake, but the tsunami itself is the **wave**, not the thing that started it.
 
@@ -172,7 +178,7 @@ must  +  have  +  past participle
 
 > 🗡️ **Do not confuse `must have + participle` with `should have + participle`.** *The warning **must have** reached the village* concludes that it did. *The warning **should have** reached the village* says that it ought to have — and, nine times out of ten, that it did not. One is a deduction; the other is a reproach.
 
-> ⚠️ **One booby trap in the reading, and it is not grammar at all.** The words *must have* also turn up in sentences where `have` is the ordinary verb: *We **must have** the road cleared before the lorries come* means we must **get somebody to clear** it. Read what follows: a **past participle after `must have`** gives you a deduction; a **noun** after it gives you an obligation.
+> ⚠️ **One booby trap in the reading, and it is not grammar at all.** The words *must have* also turn up in sentences where `have` is the ordinary verb: *We **must have** the road cleared before the lorries come* means we must **get somebody to clear** it. Read what follows. `must have` + a **past participle alone** (_must have left_) is the deduction. A **noun** after it means *have* is the ordinary verb — and the sentence then obliges only when a **past participle follows that noun**: _we must have the road **cleared**_ = we must get it cleared. A noun on its own settles nothing: _You **must have** a lot of patience_ concludes, it does not oblige.
 
 ## 🔥 Global warming is human made — the study your book makes you read
 
@@ -180,7 +186,7 @@ The reading section is a short, study-based text, and it is worth knowing what i
 
 **What the study found.** Researchers at the Scripps Institute of Oceanography found clear evidence of **human-produced warming in the world's oceans**, likely to affect water resources in regions all round the globe. Those **findings** remove much of the **uncertainty** that surrounded the debate: global warming is caused by human activity and not by natural environmental factors.
 
-**Why it is resisted.** Many world leaders, the text says, have closed their ears to this fact **so that they do not have to limit their economic activity or introduce expensive pollution controls** — and that, it adds, is one of the reasons America has not signed the Kyoto Treaty on climate change. The US government prefers to believe that global warming is a natural phenomenon caused by volcanoes and solar energy.
+**Why it is resisted.** Many world leaders, the text says, have closed their ears to this fact **so that they do not have to limit their economic activity or introduce expensive pollution controls** — and that, it adds, is one of the reasons America has not signed the Kyoto Treaty on climate change. _(The exact word is **ratified**: the United States signed the protocol in 1998, never ratified it, and announced in 2001 that it would not apply it.)_ The US government prefers to believe that global warming is a natural phenomenon caused by volcanoes and solar energy.
 
 **What comes next.** Professor **Tim Barnett** calls it perhaps the most **compelling** evidence yet that global warming is happening now, and says that we can successfully **simulate** its past and its likely future evolution. The consequences he names are about water: in the decades immediately ahead, **accelerated** glacier **melting** in the South American Andes and in western China will change regional water supplies and put millions of people at risk of having no **adequate** summertime water.
 
@@ -352,7 +358,7 @@ The pronunciation work of this module is **rhythm and intonation**, and your boo
 
 **English is spoken on a beat.** The beats fall at roughly regular intervals, and they land on the words that carry the **meaning** — nouns, main verbs, adjectives, adverbs, question words, demonstratives, negatives. The words that only hold the sentence together — articles, prepositions, ordinary pronouns, auxiliaries, conjunctions — are squeezed in between, fast and quiet.
 
-> _The **wa**ter came through the **door** before we could **reach** it._
+> _The **wa**ter **came** through the **door** before we could **reach** it._
 
 Four beats: *water*, *came*, *door*, *reach*. The number of small words between two beats changes nothing — they are compressed to fit, which is why they are so hard to catch when somebody speaks quickly. That is the whole difference between English and a language in which every syllable takes about the same time; it is not a detail of accent, it is the shape of the language.
 
