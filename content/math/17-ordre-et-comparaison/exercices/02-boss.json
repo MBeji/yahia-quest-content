@@ -1,0 +1,91 @@
+{
+  "title": "⚔️ زعيم الفصل ⭐⭐⭐: الترتيب والعمليّات في ℝ",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "قارن العددين a = 3√7 + 1/4 و b = 3√7 + 2/7 .",
+      "options": [
+        { "id": "a", "text": "a < b لأنّ 1/4 < 2/7" },
+        { "id": "b", "text": "a > b لأنّ 1/4 > 2/7" },
+        { "id": "c", "text": "a = b لأنّ 3√7 مشترك" },
+        { "id": "d", "text": "a > b لأنّ 4 < 7" }
+      ],
+      "correctOption": "a",
+      "explanation": "الحدّ 3√7 مشترك بين العددين فيكفي مقارنة 1/4 و 2/7 . نوحّد المقامين: 1/4 = 7/28 و 2/7 = 8/28 ، ومنه 1/4 < 2/7 . إذن الفرق a − b = −1/28 سالب و a < b . والخطأ الشائع هو مقارنة المقامين وحدهما: مقام أصغر لا يعني كسرًا أصغر.",
+      "difficulty": 2,
+      "competencies": ["math.num.ordre-encadrement", "math.num.racines-calcul"]
+    },
+    {
+      "prompt": "لتكن x و y و z و t أعدادًا حقيقية حيث x ≤ y و z ≤ t . أيّ مقارنة صحيحة دائمًا؟",
+      "options": [
+        { "id": "a", "text": "x + z ≥ y + t" },
+        { "id": "b", "text": "x − z ≤ y − t" },
+        { "id": "c", "text": "x + z ≤ y + t" },
+        { "id": "d", "text": "xz ≤ yt" }
+      ],
+      "correctOption": "c",
+      "explanation": "جمع متباينتين لهما نفس الاتّجاه طرفًا بطرف مشروع: من x ≤ y و z ≤ t نستنتج x + z ≤ y + t . أمّا الطرح طرفًا بطرف فغير مشروع: مع x = 0 و y = 1 و z = 0 و t = 5 نجد x − z = 0 و y − t = −4 فتنقلب المقارنة. وكذلك الجداء: مع x = −5 و y = 1 و z = −5 و t = 1 نجد xz = 25 و yt = 1 .",
+      "difficulty": 3,
+      "competencies": ["math.num.ordre-encadrement"]
+    },
+    {
+      "prompt": "نعلم أنّ a ≤ b . قارن العبارتين (−4/5)a + 3 و (−4/5)b + 3 .",
+      "options": [
+        { "id": "a", "text": "(−4/5)a + 3 ≤ (−4/5)b + 3" },
+        { "id": "b", "text": "(−4/5)a + 3 = (−4/5)b + 3" },
+        { "id": "c", "text": "المقارنة تتوقّف على إشارتي a و b" },
+        { "id": "d", "text": "(−4/5)a + 3 ≥ (−4/5)b + 3" }
+      ],
+      "correctOption": "d",
+      "explanation": "خطوتان. أوّلًا الضرب في −4/5 وهو سالب قطعًا يقلب الاتّجاه: من a ≤ b نستنتج (−4/5)a ≥ (−4/5)b . ثمّ إضافة 3 إلى الطرفين تحفظ هذا الاتّجاه الجديد. إذن (−4/5)a + 3 ≥ (−4/5)b + 3 ، وإشارتا a و b لا تتدخّلان إطلاقًا.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.relatifs-operations"
+      ]
+    },
+    {
+      "prompt": "ليكن x و y عددين حقيقيين مخالفين للصفر حيث x ≤ y . ما الشرط الكامل الذي يسمح باستنتاج أنّ 1/x ≥ 1/y ؟",
+      "options": [
+        { "id": "a", "text": "أن تكون لـ x و y إشارتان مختلفتان" },
+        { "id": "b", "text": "أن يكون لـ x و y نفس العلامة" },
+        { "id": "c", "text": "لا شرط: الاستنتاج صحيح دائمًا" },
+        { "id": "d", "text": "أن يكون x و y موجبين وحدهما" }
+      ],
+      "correctOption": "b",
+      "explanation": "القاعدة تشترط أن يكون العددان مخالفين للصفر ولهما نفس العلامة، سواء كانا موجبين معًا أو سالبين معًا. وحين تختلف الإشارتان تسقط القاعدة: مع x = −2 و y = 3 لدينا x < y لكنّ 1/x = −0,5 أصغر من 1/y ≈ 0,33 . أمّا حصر الشرط في الموجبين وحدهما فناقص، لأنّه يهمل الحالة السالبة وهي صحيحة أيضًا.",
+      "difficulty": 3,
+      "competencies": ["math.num.ordre-encadrement"]
+    },
+    {
+      "prompt": "ليكن x و y عددين حقيقيين حيث x ≤ y ≤ 0 . أيّ مقارنة صحيحة؟",
+      "options": [
+        { "id": "a", "text": "x² ≤ y²" },
+        { "id": "b", "text": "x² = y²" },
+        { "id": "c", "text": "x² ≥ y²" },
+        { "id": "d", "text": "|x| ≤ |y|" }
+      ],
+      "correctOption": "c",
+      "explanation": "العددان سالبان أو معدومان، وفي هذه الحالة يقلب التربيع الترتيب: من x ≤ y نستنتج x² ≥ y² . مثال: مع x = −6 و y = −1 نجد 36 ≥ 1 . والقيمة المطلقة تنقلب بدورها فيكون |x| ≥ |y| ، أي 6 ≥ 1 .",
+      "difficulty": 3,
+      "competencies": ["math.num.ordre-encadrement", "math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "تذكير: حجم مخروط دائري قائم شعاع قاعدته R وارتفاعه H هو πR²H/3 . نعتبر المخروطين التاليين، الأوّل شعاع قاعدته r وارتفاعه 2h ، والثاني شعاع قاعدته 2r وارتفاعه h ، مع r > 0 و h > 0 . أيّ مقارنة صحيحة لحجميهما V1 و V2 ؟\n<svg viewBox=\"0 0 340 215\"><ellipse cx=\"80\" cy=\"168\" rx=\"32\" ry=\"11\" fill=\"#0f6e56\" opacity=\"0.12\"/><ellipse cx=\"80\" cy=\"168\" rx=\"32\" ry=\"11\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M48 168 L80 78 L112 168\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"80\" y1=\"78\" x2=\"80\" y2=\"168\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"80\" y1=\"168\" x2=\"112\" y2=\"168\" stroke=\"#0f6e56\" stroke-width=\"2.5\"/><line x1=\"34\" y1=\"78\" x2=\"34\" y2=\"168\" stroke=\"#0f6e56\" stroke-width=\"1.5\"/><line x1=\"29\" y1=\"78\" x2=\"39\" y2=\"78\" stroke=\"#0f6e56\" stroke-width=\"1.5\"/><line x1=\"29\" y1=\"168\" x2=\"39\" y2=\"168\" stroke=\"#0f6e56\" stroke-width=\"1.5\"/><ellipse cx=\"240\" cy=\"168\" rx=\"64\" ry=\"22\" fill=\"#0f6e56\" opacity=\"0.12\"/><ellipse cx=\"240\" cy=\"168\" rx=\"64\" ry=\"22\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M176 168 L240 123 L304 168\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"240\" y1=\"123\" x2=\"240\" y2=\"168\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"240\" y1=\"168\" x2=\"304\" y2=\"168\" stroke=\"#0f6e56\" stroke-width=\"2.5\"/><line x1=\"162\" y1=\"123\" x2=\"162\" y2=\"168\" stroke=\"#0f6e56\" stroke-width=\"1.5\"/><line x1=\"157\" y1=\"123\" x2=\"167\" y2=\"123\" stroke=\"#0f6e56\" stroke-width=\"1.5\"/><line x1=\"157\" y1=\"168\" x2=\"167\" y2=\"168\" stroke=\"#0f6e56\" stroke-width=\"1.5\"/><g font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" direction=\"ltr\" unicode-bidi=\"isolate\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"20\" y=\"127\">2h</text><text x=\"98\" y=\"187\">r</text><text x=\"150\" y=\"149\">h</text><text x=\"272\" y=\"203\">2r</text></g><g font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" direction=\"ltr\" unicode-bidi=\"isolate\" fill=\"#0f172a\"><text x=\"80\" y=\"62\">(1)</text><text x=\"240\" y=\"107\">(2)</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "V2 = 2 × V1 ومنه V1 < V2" },
+        { "id": "b", "text": "V1 = 2 × V2 ومنه V1 > V2" },
+        { "id": "c", "text": "V2 = 4 × V1 ومنه V1 < V2" },
+        { "id": "d", "text": "V1 = V2 فالحجمان متساويان" }
+      ],
+      "correctOption": "a",
+      "explanation": "نكتب العبارتين ثمّ نقارنهما. الأوّل: V1 = πr²(2h)/3 = 2πr²h/3 . الثاني: V2 = π(2r)²h/3 = 4πr²h/3 . بقسمة الثاني على الأوّل نجد V2 = 2 × V1 ، ومنه V1 < V2 . الفخّ هو التوقّف عند العامل 4 الناتج عن تربيع 2r ، ونسيان أنّ المخروط الأوّل يكسب بدوره عاملًا 2 من ارتفاعه.",
+      "difficulty": 3,
+      "competencies": ["math.num.ordre-encadrement"]
+    }
+  ]
+}

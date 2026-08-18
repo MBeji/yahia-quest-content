@@ -1,0 +1,88 @@
+{
+  "title": "📝 تدريب ⭐⭐⭐: الرباعيات (مراجعة شاملة)",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "ABCD معيّن مركزه O، والنقطة H هي المسقط العمودي لـ A على (CD). أيّ التعابير التالية يساوي مساحة المعيّن؟\n<svg viewBox=\"0 0 320 225\"><path d=\"M160 60 L240 120 L160 180 L80 120 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M160 60 L240 120 L160 180 L80 120 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M160 60 L160 180 M80 120 L240 120\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\"/><path d=\"M160 108 L172 108 L172 120\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M160 60 L102.4 136.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><path d=\"M109.6 127.2 L119.2 134.4 L112 144\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g fill=\"#0f172a\"><circle cx=\"160\" cy=\"60\" r=\"4\"/><circle cx=\"240\" cy=\"120\" r=\"4\"/><circle cx=\"160\" cy=\"180\" r=\"4\"/><circle cx=\"80\" cy=\"120\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"160\" cy=\"120\" r=\"4.5\"/><circle cx=\"102.4\" cy=\"136.8\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"160\" y=\"48\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"256\" y=\"124\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"160\" y=\"202\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"66\" y=\"112\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"148\" y=\"136\" text-anchor=\"middle\" fill=\"#0f6e56\">O</text><text x=\"94\" y=\"156\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "OA × OB" },
+        { "id": "b", "text": "AH × OB" },
+        { "id": "c", "text": "AC × BD" },
+        { "id": "d", "text": "AC × OB" }
+      ],
+      "correctOption": "d",
+      "explanation": "مساحة المعيّن تساوي (جذاء القطرين)/2، أي (AC × BD)/2. وبما أنّ O منتصف [BD] فإنّ OB = BD/2، ومنه المساحة تساوي AC × OB. أمّا AC × BD فهو ضعف المساحة، و OA × OB = (AC/2) × (BD/2) = ربع الجذاء أي نصف المساحة، و AH × OB خليط بين ارتفاع ونصف قطر لا يمثّل شيئا. (المساحة تُكتب كذلك CD × AH أي القاعدة × الارتفاع.)",
+      "difficulty": 2,
+      "competencies": ["math.mes.aires"]
+    },
+    {
+      "prompt": "في المثلث ABC، النقطة I منتصف [AB]. المستقيم المارّ من I والموازي لـ (BC) يقطع [AC] في النقطة J. إذا كان AC = 22 فما طول [AJ]؟\n<svg viewBox=\"0 0 340 230\"><path d=\"M160 40 L60 200 L280 200 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M160 40 L60 200 L280 200 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M110 120 L220 120\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\"/><g fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M158 113 L166 120 L158 127\"/><path d=\"M163 193 L171 200 L163 207\"/></g><g stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" fill=\"none\"><path d=\"M130 77 L140 83\"/><path d=\"M80 157 L90 163\"/></g><g fill=\"#0f172a\"><circle cx=\"160\" cy=\"40\" r=\"4\"/><circle cx=\"60\" cy=\"200\" r=\"4\"/><circle cx=\"280\" cy=\"200\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"110\" cy=\"120\" r=\"4.5\"/><circle cx=\"220\" cy=\"120\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"160\" y=\"28\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"46\" y=\"216\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"294\" y=\"216\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"94\" y=\"114\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"236\" y=\"114\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text><text x=\"258\" y=\"170\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">22</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "5,5" },
+        { "id": "b", "text": "11" },
+        { "id": "c", "text": "22" },
+        { "id": "d", "text": "44" }
+      ],
+      "correctOption": "b",
+      "explanation": "حسب عكس خاصيّة المنتصفات: في المثلث، المستقيم المارّ من منتصف ضلع والموازي لضلع آخر يمرّ من منتصف الضلع الثالث. إذن J منتصف [AC] و AJ = AC/2 = 22/2 = 11. (من ينصّف مرّتين يجد 5,5، ومن يضاعف بدل أن ينصّف يجد 44.)",
+      "difficulty": 2,
+      "competencies": ["math.geo.triangles-base"]
+    },
+    {
+      "prompt": "ABCD متوازي أضلاع، والنقطة M منتصف [AB] والنقطة N منتصف [DC]. ما أدقّ وصف للرباعي AMND؟\n<svg viewBox=\"0 0 340 230\"><path d=\"M70 70 L250 70 L290 190 L110 190 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M70 70 L250 70 L290 190 L110 190 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><g stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" fill=\"none\"><path d=\"M115 64 L115 76\"/><path d=\"M205 64 L205 76\"/><path d=\"M155 184 L155 196\"/><path d=\"M245 184 L245 196\"/></g><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"70\" r=\"4\"/><circle cx=\"250\" cy=\"70\" r=\"4\"/><circle cx=\"290\" cy=\"190\" r=\"4\"/><circle cx=\"110\" cy=\"190\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"160\" cy=\"70\" r=\"4.5\"/><circle cx=\"200\" cy=\"190\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"58\" y=\"62\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"262\" y=\"62\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"304\" y=\"206\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"98\" y=\"206\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"160\" y=\"58\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"200\" y=\"210\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "متوازي أضلاع" },
+        { "id": "b", "text": "مستطيل" },
+        { "id": "c", "text": "معيّن" },
+        { "id": "d", "text": "مربّع" }
+      ],
+      "correctOption": "a",
+      "explanation": "الضلعان [AM] و[DN] محمولان على المستقيمين (AB) و(DC) وهما متوازيان لأنّ ABCD متوازي أضلاع، كما أنّ AM = AB/2 و DN = DC/2 و AB = DC، إذن AM = DN. للرباعي AMND إذن ضلعان متقابلان متوازيان ومتقايسان: فهو متوازي أضلاع. ولا شيء يفرض تقايس أضلاعه ولا وجود زاوية قائمة فيه.",
+      "difficulty": 2,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "MNP مثلث حيث MN = NP = 10 و MP = 12، والنقطة K منتصف [MP]، والنقطة R هي النقطة التي تجعل K منتصف [NR]. ما مساحة الرباعي MNPR؟\n<svg viewBox=\"0 0 320 242\"><path d=\"M80 190 L155 90 L230 190 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M80 190 L155 90 L230 190 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M155 90 L155 190\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><path d=\"M143 178 L143 190 L155 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" fill=\"none\"><path d=\"M112 135 L124 143\"/><path d=\"M186 143 L198 135\"/><path d=\"M115 184 L115 196\"/><path d=\"M195 184 L195 196\"/></g><path d=\"M80 214 L230 214 M80 210 L80 218 M230 210 L230 218\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><g fill=\"#0f172a\"><circle cx=\"80\" cy=\"190\" r=\"4\"/><circle cx=\"155\" cy=\"90\" r=\"4\"/><circle cx=\"230\" cy=\"190\" r=\"4\"/></g><circle cx=\"155\" cy=\"190\" r=\"4.5\" fill=\"#0f6e56\"/><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"66\" y=\"204\" text-anchor=\"middle\" fill=\"#0f172a\">M</text><text x=\"155\" y=\"78\" text-anchor=\"middle\" fill=\"#0f172a\">N</text><text x=\"244\" y=\"204\" text-anchor=\"middle\" fill=\"#0f172a\">P</text><text x=\"170\" y=\"204\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text><text x=\"100\" y=\"128\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">10</text><text x=\"212\" y=\"128\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">10</text><text x=\"145\" y=\"234\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">12</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "48" },
+        { "id": "b", "text": "60" },
+        { "id": "c", "text": "96" },
+        { "id": "d", "text": "192" }
+      ],
+      "correctOption": "c",
+      "explanation": "للرباعي MNPR قطران [MP] و[NR] لهما نفس المنتصف K، إذن هو متوازي أضلاع؛ وله ضلعان متتاليان متقايسان MN = NP = 10، إذن هو معيّن. ولحساب مساحته نحتاج طول القطر [NR]: بما أنّ NM = NP فالنقطة N تنتمي إلى الموسط العمودي للقطعة [MP]، وهو المستقيم المارّ من منتصفها K والعمودي عليها، إذن المثلث NKM قائم الزاوية في K. و MK = MP/2 = 6، ومنه NK² = 10² − 6² = 100 − 36 = 64 أي NK = 8 و NR = 2 × 8 = 16. فالمساحة تساوي (جذاء القطرين)/2 = (12 × 16)/2 = 96. (من يقف عند مساحة المثلث MNP يجد 12 × 8/2 = 48، ومن يضرب الضلع في نصف القاعدة يجد 10 × 6 = 60، ومن ينسى القسمة على 2 يجد 192.)",
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
+    },
+    {
+      "prompt": "في معلّم متعامد، A(1 ; 1) و B(5 ; 3) و C(7 ; 7) و D(3 ; 5). ما أدقّ وصف للرباعي ABCD؟\n<svg viewBox=\"0 0 280 225\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\"><path d=\"M84 14 V200 M108 14 V200 M132 14 V200 M156 14 V200 M180 14 V200 M204 14 V200 M228 14 V200 M252 14 V200\"/><path d=\"M48 176 H262 M48 152 H262 M48 128 H262 M48 104 H262 M48 80 H262 M48 56 H262 M48 32 H262\"/></g><path d=\"M48 200 H266 M60 212 V14\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M260 194 L269 200 L260 206 Z M54 23 L60 12 L66 23 Z\" fill=\"#0f172a\"/><path d=\"M84 176 L180 128 L228 32 L132 80 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M84 176 L180 128 L228 32 L132 80 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><g fill=\"#0f6e56\"><circle cx=\"84\" cy=\"176\" r=\"5\"/><circle cx=\"180\" cy=\"128\" r=\"5\"/><circle cx=\"228\" cy=\"32\" r=\"5\"/><circle cx=\"132\" cy=\"80\" r=\"5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"72\" y=\"192\" text-anchor=\"middle\" fill=\"#0f6e56\">A</text><text x=\"192\" y=\"142\" text-anchor=\"middle\" fill=\"#0f6e56\">B</text><text x=\"240\" y=\"28\" text-anchor=\"middle\" fill=\"#0f6e56\">C</text><text x=\"120\" y=\"74\" text-anchor=\"middle\" fill=\"#0f6e56\">D</text><text x=\"48\" y=\"216\" text-anchor=\"middle\" fill=\"#0f172a\">O</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "متوازي أضلاع" },
+        { "id": "b", "text": "مستطيل" },
+        { "id": "c", "text": "معيّن" },
+        { "id": "d", "text": "مربّع" }
+      ],
+      "correctOption": "c",
+      "explanation": "منتصف [AC] هو (4 ; 4) ومنتصف [BD] هو (4 ; 4) أيضا، إذن ABCD متوازي أضلاع. ثمّ AB = √(4² + 2²) = √20 و AD = √(2² + 4²) = √20: الضلعان المتتاليان متقايسان فهو معيّن. ولا يكون مربّعا لأنّ القطرين غير متقايسين: AC = √72 و BD = √8.",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "جدار على شكل المضلّع AEDCB في الرسم، حيث (AE) و(BC) عموديان على (AB)، والنقطة H من [AB] و(HD) عمودي على (AB). الأبعاد بالمتر: AE = 2 و AH = 3 و HD = 6 و HB = 5 و BC = 4. إذا كان المتر المربّع الواحد يستهلك 0,5 kg من الدهن، فما كميّة الدهن اللازمة؟\n<svg viewBox=\"0 0 280 245\"><path d=\"M60 200 L60 160 L120 80 L220 120 L220 200 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M60 200 L60 160 L120 80 L220 120 L220 200 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M120 80 L120 200\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><path d=\"M120 188 L132 188 L132 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M60 188 L72 188 L72 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M208 188 L220 188 L220 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"200\" r=\"4\"/><circle cx=\"60\" cy=\"160\" r=\"4\"/><circle cx=\"120\" cy=\"80\" r=\"4\"/><circle cx=\"220\" cy=\"120\" r=\"4\"/><circle cx=\"220\" cy=\"200\" r=\"4\"/></g><circle cx=\"120\" cy=\"200\" r=\"4.5\" fill=\"#0f6e56\"/><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"48\" y=\"216\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"232\" y=\"216\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"46\" y=\"156\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"120\" y=\"68\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"234\" y=\"116\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"120\" y=\"220\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text><text x=\"46\" y=\"186\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">2</text><text x=\"106\" y=\"146\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">6</text><text x=\"236\" y=\"166\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">4</text><text x=\"90\" y=\"222\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">3</text><text x=\"170\" y=\"222\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">5</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "18,5 kg" },
+        { "id": "b", "text": "24 kg" },
+        { "id": "c", "text": "37 kg" },
+        { "id": "d", "text": "48 kg" }
+      ],
+      "correctOption": "a",
+      "explanation": "نقسّم الجدار إلى شبهي منحرف قائمين: AHDE قاعدتاه AE = 2 و HD = 6 وارتفاعه AH = 3، فمساحته (2 + 6) × 3/2 = 12 m²؛ و HBCD قاعدتاه HD = 6 و BC = 4 وارتفاعه HB = 5، فمساحته (6 + 4) × 5/2 = 25 m². إذن مساحة الجدار 12 + 25 = 37 m²، وكميّة الدهن 37 × 0,5 = 18,5 kg. (من يحسب مساحة المستطيل المحيط 8 × 6 = 48 m² يجد 24 kg، ومن يعطي المساحة بدل الكتلة يجد 37.)",
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
+    }
+  ]
+}

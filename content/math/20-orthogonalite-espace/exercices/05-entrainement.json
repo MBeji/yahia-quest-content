@@ -1,0 +1,88 @@
+{
+  "title": "📝 تدريب ⭐⭐⭐: التعامد في الفضاء (مراجعة شاملة)",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "ABCDEF موشور قائم قاعدتاه ABC و DEF وأحرفه الجانبية [AD] و[BE] و[CF] . أيّ من المستقيمات التالية عمودي على المستوي (DEF) ؟\n<svg viewBox=\"0 0 250 220\"><path d=\"M60 90 L190 90 L115 48 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M60 90 L190 90 L115 48 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M60 185 L190 185 M60 185 L60 90 M190 185 L190 90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M60 185 L115 143 L190 185 M115 143 L115 48\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"201\" y=\"200\" text-anchor=\"middle\">A</text><text x=\"48\" y=\"200\" text-anchor=\"middle\">B</text><text x=\"105\" y=\"159\" text-anchor=\"middle\">C</text><text x=\"203\" y=\"86\" text-anchor=\"middle\">D</text><text x=\"48\" y=\"86\" text-anchor=\"middle\">E</text><text x=\"115\" y=\"40\" text-anchor=\"middle\">F</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "المستقيم (AB)" },
+        { "id": "b", "text": "المستقيم (AC)" },
+        { "id": "c", "text": "المستقيم (DE)" },
+        { "id": "d", "text": "المستقيم (CF)" }
+      ],
+      "correctOption": "d",
+      "explanation": "في الموشور القائم كلّ حرف جانبي عمودي على مستوي كلّ من القاعدتين: المستقيم (CF) عمودي على (FD) وعلى (FE) وهما متقاطعان في F ومحتويان في المستوي (DEF) . أمّا (AB) و(AC) فهما ضلعان في القاعدة السفلى، والمستقيم (DE) محتوى في المستوي (DEF) نفسه فلا يمكن أن يكون عموديًا عليه.",
+      "difficulty": 2,
+      "competencies": ["math.geo.droites-perp-para", "math.esp.solides-espace"]
+    },
+    {
+      "prompt": "في متوازي المستطيلات ABCDEFGH ، لماذا يكون المستقيم (AE) موازيًا للمستقيم (CG) ؟\n<svg viewBox=\"0 0 215 210\"><path d=\"M45 180 L140 180 L185 148 M45 180 L45 70 M140 180 L140 70 M185 148 L185 38 M45 70 L140 70 L185 38 L90 38 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M45 180 L90 148 L185 148 M90 148 L90 38\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"34\" y=\"196\" text-anchor=\"middle\">A</text><text x=\"149\" y=\"196\" text-anchor=\"middle\">B</text><text x=\"197\" y=\"145\" text-anchor=\"middle\">C</text><text x=\"79\" y=\"161\" text-anchor=\"middle\">D</text><text x=\"34\" y=\"66\" text-anchor=\"middle\">E</text><text x=\"150\" y=\"66\" text-anchor=\"middle\">F</text><text x=\"197\" y=\"35\" text-anchor=\"middle\">G</text><text x=\"79\" y=\"33\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "لأنّهما عموديان على نفس المستوي (ABC)" },
+        { "id": "b", "text": "لأنّهما محتويان في نفس الوجه من المجسّم" },
+        { "id": "c", "text": "لأنّهما يقطعان المستوي (ABC) في نقطتين" },
+        { "id": "d", "text": "لأنّ المستويين (ABC) و(EFG) متوازيان" }
+      ],
+      "correctOption": "a",
+      "explanation": "كلّ من (AE) و(CG) حرف رأسي، فهو عمودي على ضلعين متقاطعين من القاعدة، ومنه عمودي على المستوي (ABC) . ومستقيمان عموديان على نفس المستوي هما متوازيان. والمستقيمان ليسا في نفس الوجه (فـ [AE] و[CG] حرفان متقابلان)، ومجرّد قطع مستوٍ في نقطتين لا يعطي توازيًا، وتوازي القاعدتين لا يستنتج منه توازي مستقيمين.",
+      "difficulty": 2,
+      "competencies": ["math.geo.droites-perp-para", "math.esp.solides-espace"]
+    },
+    {
+      "prompt": "ABCDEFGH متوازي مستطيلات بحيث AD = 3 و AE = 4 وقطره DF = 13 (بالصنتمتر). ما قيس البعد الثالث AB ؟\n<svg viewBox=\"0 0 215 210\"><path d=\"M45 180 L140 180 L185 148 M45 180 L45 70 M140 180 L140 70 M185 148 L185 38 M45 70 L140 70 L185 38 L90 38 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M45 180 L90 148 L185 148 M90 148 L90 38\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"34\" y=\"196\" text-anchor=\"middle\">A</text><text x=\"149\" y=\"196\" text-anchor=\"middle\">B</text><text x=\"197\" y=\"145\" text-anchor=\"middle\">C</text><text x=\"79\" y=\"161\" text-anchor=\"middle\">D</text><text x=\"34\" y=\"66\" text-anchor=\"middle\">E</text><text x=\"150\" y=\"66\" text-anchor=\"middle\">F</text><text x=\"197\" y=\"35\" text-anchor=\"middle\">G</text><text x=\"79\" y=\"33\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "6" },
+        { "id": "b", "text": "9" },
+        { "id": "c", "text": "12" },
+        { "id": "d", "text": "144" }
+      ],
+      "correctOption": "c",
+      "explanation": "الأقطار الأربعة متقايسة وقيس كلّ منها √(AB² + AE² + AD²) ، و[DF] واحد منها. نعوّض ونحلّ: 169 = AB² + 16 + 9 ومنه AB² = 144 و AB = 12 cm . والقيمة 144 هي المربّع ولم يُستخرج جذره، والقيمة 9 ناتج طرح الأطوال 13 − 4 بدل طرح المربّعات، والقيمة 6 ناتج الفخّ الأشهر: 13 − 3 − 4 ، أي معاملة القطر كمجموع الأبعاد بدل جمع مربّعاتها.",
+      "difficulty": 2,
+      "competencies": ["math.geo.pythagore", "math.esp.solides-espace"]
+    },
+    {
+      "prompt": "SABC هرم منتظم قاعدته المثلث المتقايس الأضلاع ABC ومركز دائرته المحيطة O ، بحيث AB = 6 و SO = 4 (بالصنتمتر). ما قيس الحرف SA ؟\n<svg viewBox=\"0 0 250 210\"><path d=\"M125 55 L55 180 L195 180 Z\" fill=\"#0f6e56\" opacity=\"0.08\"/><path d=\"M125 55 L55 180 M125 55 L195 180 M55 180 L195 180\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M55 180 L125 140 L195 180 M125 55 L125 140 M125 55 L125 166.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M125 153.7 L138 156 L138 169\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"166.7\" r=\"3.5\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"125\" y=\"46\" text-anchor=\"middle\">S</text><text x=\"44\" y=\"195\" text-anchor=\"middle\">A</text><text x=\"206\" y=\"195\" text-anchor=\"middle\">B</text><text x=\"136\" y=\"133\" text-anchor=\"middle\">C</text><text x=\"111\" y=\"180\" text-anchor=\"middle\">O</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "5" },
+        { "id": "b", "text": "2√7" },
+        { "id": "c", "text": "7" },
+        { "id": "d", "text": "2√13" }
+      ],
+      "correctOption": "b",
+      "explanation": "شعاع الدائرة المحيطة بمثلث متقايس الأضلاع ضلعه 6 هو OA = (6√3)/3 = 2√3 ومنه OA² = 12 . والمثلث SOA قائم في O لأنّ (SO) عمودي على مستوي القاعدة، فبنظرية بيتاغور: SA² = 16 + 12 = 28 و SA = 2√7 cm . والقيمة 2√13 ناتج استعمال الضلع 6 بدل الشعاع، والقيمة 5 ناتج استعمال نصف الضلع 3 ، والقيمة 7 ناتج جمع الطولين 4 و 3 بدل تطبيق بيتاغور.",
+      "difficulty": 3,
+      "competencies": ["math.geo.pythagore", "math.esp.solides-espace"]
+    },
+    {
+      "prompt": "SABCD هرم منتظم قاعدته المربّع ABCD مركزه O ، بحيث AB = 12 و SA = 6√3 (بالصنتمتر). ما قيس ارتفاعه SO ؟\n<svg viewBox=\"0 0 245 210\"><path d=\"M135 50 L55 180 L175 180 Z\" fill=\"#0f6e56\" opacity=\"0.08\"/><path d=\"M135 50 L55 180 M135 50 L175 180 M135 50 L215 145 M55 180 L175 180 M175 180 L215 145\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M55 180 L95 145 L215 145 M135 50 L95 145 M55 180 L215 145 M175 180 L95 145 M135 50 L135 162.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M135 149.5 L148 147 L148 160\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><g fill=\"#0f172a\"><circle cx=\"135\" cy=\"162.5\" r=\"3.5\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"135\" y=\"41\" text-anchor=\"middle\">S</text><text x=\"44\" y=\"196\" text-anchor=\"middle\">A</text><text x=\"185\" y=\"196\" text-anchor=\"middle\">B</text><text x=\"227\" y=\"141\" text-anchor=\"middle\">C</text><text x=\"84\" y=\"138\" text-anchor=\"middle\">D</text><text x=\"146\" y=\"177\" text-anchor=\"middle\">O</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "6" },
+        { "id": "b", "text": "6√2" },
+        { "id": "c", "text": "6√5" },
+        { "id": "d", "text": "36" }
+      ],
+      "correctOption": "a",
+      "explanation": "شعاع الدائرة المحيطة بالمربّع هو نصف قطره: OA = (12√2)/2 = 6√2 ومنه OA² = 72 . والمثلث SOA قائم في O ، فحسب بيتاغور SO² = SA² − OA² = 108 − 72 = 36 ومنه SO = 6 cm . والقيمة 36 هي المربّع ولم يُستخرج جذره، والقيمة 6√5 ناتج جمع 72 بدل طرحها، والقيمة 6√2 ناتج طرح مربّع نصف الضلع 36 بدل مربّع الشعاع 72 .",
+      "difficulty": 3,
+      "competencies": ["math.geo.pythagore", "math.esp.solides-espace"]
+    },
+    {
+      "prompt": "SABCD هرم منتظم قاعدته المربّع ABCD ، بحيث AB = 10 و SA = 13 (بالصنتمتر). ما مساحة الوجه الجانبي SAB ؟\n<svg viewBox=\"0 0 245 210\"><path d=\"M135 50 L55 180 L175 180 Z\" fill=\"#0f6e56\" opacity=\"0.18\"/><path d=\"M135 50 L55 180 M135 50 L175 180 M135 50 L215 145 M55 180 L175 180 M175 180 L215 145\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M55 180 L95 145 L215 145 M135 50 L95 145\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"135\" y=\"41\" text-anchor=\"middle\">S</text><text x=\"44\" y=\"196\" text-anchor=\"middle\">A</text><text x=\"185\" y=\"196\" text-anchor=\"middle\">B</text><text x=\"227\" y=\"141\" text-anchor=\"middle\">C</text><text x=\"84\" y=\"138\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "30" },
+        { "id": "b", "text": "60" },
+        { "id": "c", "text": "65" },
+        { "id": "d", "text": "120" }
+      ],
+      "correctOption": "b",
+      "explanation": "في الهرم المنتظم الأوجه الجانبية مثلثات متقايسة الضلعين، إذن SA = SB = 13 . نسمّي I منتصف [AB] فيكون [SI] ارتفاع المثلث SAB ، والمثلث SIA قائم في I : SI² = 169 − 25 = 144 ومنه SI = 12 . والمساحة تساوي (1/2) × AB × SI = (1/2) × 10 × 12 = 60 cm² . والقيمة 120 ناتج نسيان النصف، والقيمة 65 ناتج استعمال الحرف 13 بدل الارتفاع 12 ، والقيمة 30 ناتج استعمال نصف القاعدة 5 مع القسمة على 2 مرّة ثانية.",
+      "difficulty": 3,
+      "competencies": ["math.geo.pythagore", "math.esp.solides-espace"]
+    }
+  ]
+}

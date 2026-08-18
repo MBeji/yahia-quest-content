@@ -1,0 +1,100 @@
+{
+  "title": "⭐⭐ تمرين مراجعة: التعامد في الفضاء (نمط امتحان)",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 70,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "في الهرم SABC ، ما وضعية المستقيمين (SA) و(BC) ؟\n<svg viewBox=\"0 0 250 210\"><path d=\"M125 55 L55 180 L195 180 Z\" fill=\"#0f6e56\" opacity=\"0.08\"/><path d=\"M125 55 L195 180 M55 180 L195 180\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M55 180 L125 140 M125 55 L125 140\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M125 55 L55 180\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\"/><path d=\"M195 180 L125 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-dasharray=\"6 4\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"125\" y=\"46\" text-anchor=\"middle\">S</text><text x=\"44\" y=\"195\" text-anchor=\"middle\">A</text><text x=\"206\" y=\"195\" text-anchor=\"middle\">B</text><text x=\"135\" y=\"133\" text-anchor=\"middle\">C</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "ليسا في نفس المستوي" },
+        { "id": "b", "text": "متوازيان" },
+        { "id": "c", "text": "متقاطعان في منتصف [BC]" },
+        { "id": "d", "text": "محتويان في المستوي (SBC)" }
+      ],
+      "correctOption": "a",
+      "explanation": "المستقيمان (SA) و(BC) لا يلتقيان في أيّ نقطة: النقطة الوحيدة المشتركة الممكنة كانت ستكون على القاعدة، و(SA) لا يقطع مستوي القاعدة إلّا في A التي لا تنتمي إلى (BC) . وهما ليسا متوازيين لأنّ (BC) في مستوي القاعدة بينما (SA) يخرج منه. إذن هما ليسا في نفس المستوي، وهي الحالة الثالثة الخاصّة بالفضاء.",
+      "difficulty": 1,
+      "competencies": ["math.esp.solides-espace"]
+    },
+    {
+      "prompt": "في متوازي المستطيلات ABCDEFGH ، كم مستقيمًا يمرّ من الرأس A ويكون عموديًا على مستوي القاعدة (ABC) ؟\n<svg viewBox=\"0 0 215 210\"><path d=\"M45 180 L140 180 L185 148 M45 180 L45 70 M140 180 L140 70 M185 148 L185 38 M45 70 L140 70 L185 38 L90 38 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M45 180 L90 148 L185 148 M90 148 L90 38\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"34\" y=\"196\" text-anchor=\"middle\">A</text><text x=\"149\" y=\"196\" text-anchor=\"middle\">B</text><text x=\"197\" y=\"145\" text-anchor=\"middle\">C</text><text x=\"79\" y=\"161\" text-anchor=\"middle\">D</text><text x=\"34\" y=\"66\" text-anchor=\"middle\">E</text><text x=\"150\" y=\"66\" text-anchor=\"middle\">F</text><text x=\"197\" y=\"35\" text-anchor=\"middle\">G</text><text x=\"79\" y=\"33\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "لا يوجد أيّ مستقيم يحقّق هذه الخاصيّة" },
+        { "id": "b", "text": "مستقيم واحد فقط، هو المستقيم (AE)" },
+        { "id": "c", "text": "مستقيمان اثنان، هما (AB) و(AD)" },
+        { "id": "d", "text": "عدد لا نهائي من المستقيمات" }
+      ],
+      "correctOption": "b",
+      "explanation": "من نقطة معلومة من الفضاء يمرّ مستقيم واحد فقط عمودي على مستوٍ معلوم، وهنا هذا المستقيم موجود فعلًا: إنّه الحرف (AE) لأنّه عمودي على (AB) وعلى (AD) المتقاطعين في A . أمّا (AB) و(AD) فهما محتويان في القاعدة نفسها فلا يكونان عموديين عليها.",
+      "difficulty": 2,
+      "competencies": ["math.geo.droites-perp-para", "math.esp.solides-espace"]
+    },
+    {
+      "prompt": "متى يكون هرم قاعدته مضلّع منتظم هرمًا منتظمًا ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "إذا كانت أوجهه الجانبية مثلثات متقايسة الأضلاع دائمًا"
+        },
+        {
+          "id": "b",
+          "text": "إذا كان ارتفاعه يساوي تمامًا شعاع الدائرة المحيطة بقاعدته المنتظمة"
+        },
+        {
+          "id": "c",
+          "text": "إذا كانت كلّ أحرفه الجانبية عمودية على مستوي القاعدة تمامًا"
+        },
+        {
+          "id": "d",
+          "text": "إذا كان رأسه على العمودي على القاعدة في مركز دائرتها المحيطة"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "الهرم المنتظم هو هرم قاعدته مضلّع منتظم وينتمي رأسه إلى المستقيم العمودي على مستوي القاعدة في مركز الدائرة المحيطة بهذا المضلّع. أمّا تساوي الارتفاع بشعاع الدائرة فحالة عددية خاصّة لا علاقة لها بالتعريف، وتقايس أضلاع الأوجه الجانبية نتيجة ممكنة لا شرطًا، ولا يمكن لحرف جانبي أن يكون عموديًا على القاعدة إلّا إذا انطبق على الارتفاع.",
+      "difficulty": 2,
+      "competencies": ["math.esp.solides-espace"]
+    },
+    {
+      "prompt": "SABCD هرم منتظم قاعدته المربّع ABCD مركزه O ، بحيث AB = 6 cm . ما قيس OB ؟\n<svg viewBox=\"0 0 245 210\"><path d=\"M135 50 L55 180 L175 180 Z\" fill=\"#0f6e56\" opacity=\"0.08\"/><path d=\"M135 50 L55 180 M135 50 L175 180 M135 50 L215 145 M55 180 L175 180 M175 180 L215 145\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M55 180 L95 145 L215 145 M135 50 L95 145 M55 180 L215 145 M175 180 L95 145 M135 50 L135 162.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M135 149.5 L148 147 L148 160\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><g fill=\"#0f172a\"><circle cx=\"135\" cy=\"162.5\" r=\"3.5\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"135\" y=\"41\" text-anchor=\"middle\">S</text><text x=\"44\" y=\"196\" text-anchor=\"middle\">A</text><text x=\"185\" y=\"196\" text-anchor=\"middle\">B</text><text x=\"227\" y=\"141\" text-anchor=\"middle\">C</text><text x=\"84\" y=\"138\" text-anchor=\"middle\">D</text><text x=\"146\" y=\"177\" text-anchor=\"middle\">O</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "3" },
+        { "id": "b", "text": "3√2" },
+        { "id": "c", "text": "6" },
+        { "id": "d", "text": "6√2" }
+      ],
+      "correctOption": "b",
+      "explanation": "النقطة O مركز المربّع، فهي منتصف القطر [BD] . وقطر مربّع ضلعه 6 يساوي 6√2 ، إذن OB = (6√2)/2 = 3√2 cm . والقيمة 6√2 هي القطر كاملًا لا نصفه، والقيمة 3 هي نصف الضلع لا نصف القطر.",
+      "difficulty": 2,
+      "competencies": ["math.geo.pythagore", "math.esp.solides-espace"]
+    },
+    {
+      "prompt": "في متوازي المستطيلات ABCDEFGH ، على أيّ من المستويات التالية يكون المستقيم (AB) عموديًا ؟\n<svg viewBox=\"0 0 215 210\"><path d=\"M45 180 L140 180 L185 148 M45 180 L45 70 M140 180 L140 70 M185 148 L185 38 M45 70 L140 70 L185 38 L90 38 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M45 180 L90 148 L185 148 M90 148 L90 38\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"34\" y=\"196\" text-anchor=\"middle\">A</text><text x=\"149\" y=\"196\" text-anchor=\"middle\">B</text><text x=\"197\" y=\"145\" text-anchor=\"middle\">C</text><text x=\"79\" y=\"161\" text-anchor=\"middle\">D</text><text x=\"34\" y=\"66\" text-anchor=\"middle\">E</text><text x=\"150\" y=\"66\" text-anchor=\"middle\">F</text><text x=\"197\" y=\"35\" text-anchor=\"middle\">G</text><text x=\"79\" y=\"33\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "المستوي (ABC)" },
+        { "id": "b", "text": "المستوي (ABF)" },
+        { "id": "c", "text": "المستوي (ADH)" },
+        { "id": "d", "text": "المستوي (ACG)" }
+      ],
+      "correctOption": "c",
+      "explanation": "المستقيم (AB) عمودي على (AD) وعلى (AE) ، وهما مستقيمان متقاطعان في A ومحتويان في المستوي (ADH) ، إذن (AB) عمودي على المستوي (ADH) . أمّا المستويان (ABC) و(ABF) فيحتويان المستقيم (AB) نفسه فلا يمكن أن يكون عموديًا عليهما، والمستوي (ACG) يحتوي القطر [AC] الذي لا يعامد (AB) .",
+      "difficulty": 2,
+      "competencies": ["math.geo.droites-perp-para", "math.esp.solides-espace"]
+    },
+    {
+      "prompt": "SABC هرم بحيث SA = 12 و SB = 16 و AB = 20 (بالصنتمتر). ما طبيعة المثلث SAB ؟",
+      "options": [
+        { "id": "a", "text": "قائم الزاوية في S" },
+        { "id": "b", "text": "قائم الزاوية في A" },
+        { "id": "c", "text": "قائم الزاوية في B" },
+        { "id": "d", "text": "ليس قائم الزاوية في أيّ رأس" }
+      ],
+      "correctOption": "a",
+      "explanation": "أطول ضلع هو [AB] . نحسب SA² + SB² = 144 + 256 = 400 و AB² = 400 ، فهما متساويان، وحسب عكس نظرية بيتاغور يكون المثلث SAB قائم الزاوية في S وهو الرأس المقابل لأطول ضلع. الزاوية القائمة لا تكون أبدًا مقابلة لضلع أقصر من الوتر.",
+      "difficulty": 2,
+      "competencies": ["math.geo.pythagore", "math.geo.triangles-base"]
+    }
+  ]
+}
