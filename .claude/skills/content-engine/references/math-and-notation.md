@@ -21,6 +21,16 @@ the precedent: Arabic prose around standard math. Never "arabize" the math itsel
 - **Operators/symbols**: true minus `−` (U+2212, not the hyphen `-`), `×` for multiplication
   (never the letter x), `÷` or fraction bars, `=`, `≠`, `<`, `>`, `≤`, `≥`, `√`, `π`, `∈`, `⊂`,
   `⟺`, `→`. Exponents as `x²`, `10³` (Unicode superscripts).
+- **Exposants et indices SIGNÉS — sûrs depuis le 2026-08-18 seulement.** `10⁻⁴`, `(√3)⁻⁸`,
+  `u₋₁` s'écrivent en Unicode comme les autres. Ils ne l'étaient PAS auparavant : ni
+  `isMathExpression` (qui décide la direction du texte d'une **option**) ni `SIGNED_NUMBER`
+  (qui isole les runs mathématiques dans la **prose**) ne connaissaient `⁻` (U+207B) ni `₋`
+  (U+208B), si bien qu'une option comme `(√3)⁻⁸` se rendait **`⁸⁻(3√)`** en contexte RTL —
+  y compris quand c'était la bonne réponse. Corrigé par arena #765 ; 234 options du corpus
+  étaient concernées. **Piège de diagnostic à connaître si le symptôme réapparaît** : sans
+  parenthèse ni radical, `10⁻³` s'affiche correctement tout seul (la règle W4 de l'algorithme
+  bidi le sauve). C'est la PRÉSENCE de `(` ou `√` qui déclenchait la casse — donc envelopper
+  de parenthèses, réflexe naturel, aggravait le problème au lieu de le résoudre.
 - **Keep each formula a contiguous LTR run** inside RTL text: never interleave Arabic words
   _inside_ an equation; write the Arabic sentence, then the full expression, then resume Arabic
   (as the production math content does). In cours.md, put substantial formulas on their own line.
