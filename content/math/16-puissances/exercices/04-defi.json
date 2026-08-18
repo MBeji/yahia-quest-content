@@ -1,0 +1,88 @@
+{
+  "title": "👑 تحدّي النخبة ⭐⭐⭐⭐: القوى بلا أخطاء",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "ما قيمة (−3/4)⁻³ ؟",
+      "options": [
+        { "id": "a", "text": "−27/64" },
+        { "id": "b", "text": "64/27" },
+        { "id": "c", "text": "−64/27" },
+        { "id": "d", "text": "−12/9" }
+      ],
+      "correctOption": "c",
+      "explanation": "الدليل السالب يقلب الكسر: (−3/4)⁻³ = (−4/3)³. ثمّ نرفع البسط والمقام إلى القوّة 3، فنجد (−4)³ = −64 و 3³ = 27، إذن الناتج هو −64/27. الدليل فردي فالإشارة تبقى سالبة.",
+      "difficulty": 3,
+      "competencies": ["math.num.puissances", "math.num.relatifs-operations"]
+    },
+    {
+      "prompt": "ما قيمة ((√3)⁵ × (√3)⁻³)² ؟",
+      "options": [
+        { "id": "a", "text": "3" },
+        { "id": "b", "text": "9" },
+        { "id": "c", "text": "81" },
+        { "id": "d", "text": "√3" }
+      ],
+      "correctOption": "b",
+      "explanation": "نبدأ بما داخل القوسين: الأساس نفسه فنجمع الدليلين، 5 + (−3) = 2، أي (√3)² = 3. ثمّ نرفع النتيجة إلى القوّة 2 فنحصل على 3² = 9.",
+      "difficulty": 3,
+      "competencies": ["math.num.puissances"]
+    },
+    {
+      "prompt": "ما قيمة (0,3 × 10⁵)/(3 × 10⁻²) ؟",
+      "options": [
+        { "id": "a", "text": "10⁵" },
+        { "id": "b", "text": "10⁷" },
+        { "id": "c", "text": "10⁸" },
+        { "id": "d", "text": "10⁶" }
+      ],
+      "correctOption": "d",
+      "explanation": "نقسم الأعداد ثمّ القوى: 0,3/3 = 0,1 وهو 1/(10¹)، وخارج قسمة قوّتي العدد 10 هو 10⁷ لأنّ 5 − (−2) = 7. إذن الناتج هو 10⁷/10 أي 10⁶.",
+      "difficulty": 3,
+      "competencies": ["math.num.puissances"]
+    },
+    {
+      "prompt": "نعتبر a = (√2/3)⁴. ما قيمة الجذاء a × (3/√2)⁴ ؟",
+      "options": [
+        { "id": "a", "text": "1" },
+        { "id": "b", "text": "4/81" },
+        { "id": "c", "text": "81/4" },
+        { "id": "d", "text": "(√2/3)⁸" }
+      ],
+      "correctOption": "a",
+      "explanation": "الدليل نفسه في العاملين، فنجمّع الأساسين تحت دليل واحد: الجذاء يساوي ((√2/3) × (3/√2))⁴. وبما أنّ الكسرين مقلوبان فجذاؤهما يساوي 1، ومنه النتيجة هي 1.",
+      "difficulty": 3,
+      "competencies": ["math.num.puissances"]
+    },
+    {
+      "prompt": "أيّ من الكتابات التالية تساوي (√6)¹² ؟",
+      "options": [
+        { "id": "a", "text": "6¹²" },
+        { "id": "b", "text": "36⁶" },
+        { "id": "c", "text": "6⁶" },
+        { "id": "d", "text": "6³" }
+      ],
+      "correctOption": "c",
+      "explanation": "نستعمل قوّة داخل قوّة: (√6)¹² = ((√6)²)⁶، وبما أنّ (√6)² = 6 فالنتيجة هي 6⁶. أمّا 36⁶ فيساوي 6¹² لأنّ 36 هو 6².",
+      "difficulty": 3,
+      "competencies": ["math.num.puissances"]
+    },
+    {
+      "prompt": "الأعداد التالية متساوية ما عدا واحدًا. حدّد العدد الدخيل.",
+      "options": [
+        { "id": "a", "text": "3⁴" },
+        { "id": "b", "text": "9³" },
+        { "id": "c", "text": "(√3)⁸" },
+        { "id": "d", "text": "(3²)²" }
+      ],
+      "correctOption": "b",
+      "explanation": "نُرجع كلّ عدد إلى قوّة للعدد 3: العبارة (√3)⁸ تساوي 3⁴، والعبارة (3²)² تساوي 3⁴ أيضًا، وكلّها تساوي 81. أمّا 9³ فيساوي (3²)³ أي 3⁶ وهو 729، فهو الدخيل.",
+      "difficulty": 3,
+      "competencies": ["math.num.puissances"]
+    }
+  ]
+}

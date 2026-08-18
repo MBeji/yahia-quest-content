@@ -1,0 +1,88 @@
+{
+  "title": "👑 تحدّي المناظرة ⭐⭐⭐⭐: القوى في وضعيات مركّبة",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 6,
+  "questions": [
+    {
+      "prompt": "ما قيمة (√3 ÷ (1/√3))⁶ ؟",
+      "options": [
+        { "id": "a", "text": "27" },
+        { "id": "b", "text": "729" },
+        { "id": "c", "text": "243" },
+        { "id": "d", "text": "81" }
+      ],
+      "correctOption": "b",
+      "explanation": "القسمة على كسر هي الضرب في مقلوبه: √3 ÷ (1/√3) = √3 × √3 = 3. إذن العبارة تساوي 3⁶، والحساب يعطي 729.",
+      "difficulty": 3,
+      "competencies": ["math.num.puissances"]
+    },
+    {
+      "prompt": "نعتبر a = (√2/5)³ و b = (5/√2)⁵. ما قيمة الجذاء a × b ؟",
+      "options": [
+        { "id": "a", "text": "2/25" },
+        { "id": "b", "text": "5/√2" },
+        { "id": "c", "text": "25/2" },
+        { "id": "d", "text": "(√2/5)⁸" }
+      ],
+      "correctOption": "c",
+      "explanation": "الكسران مقلوبان، إذن b = (√2/5)⁻⁵. وبجمع الدليلين نجد a × b = (√2/5)⁻² لأنّ 3 + (−5) = −2. وأخيرًا (√2/5)⁻² = (5/√2)² = 25/2.",
+      "difficulty": 3,
+      "competencies": ["math.num.puissances"]
+    },
+    {
+      "prompt": "ما قيمة (3 × 10⁻²)³ ؟",
+      "options": [
+        { "id": "a", "text": "27 × 10⁻⁶" },
+        { "id": "b", "text": "9 × 10⁻⁶" },
+        { "id": "c", "text": "27 × 10⁻⁵" },
+        { "id": "d", "text": "3 × 10⁻⁶" }
+      ],
+      "correctOption": "a",
+      "explanation": "نوزّع الدليل على العاملين: (3 × 10⁻²)³ = 3³ × (10⁻²)³. ثمّ 3³ = 27 و (10⁻²)³ = 10⁻⁶ لأنّ (−2) × 3 = −6، ومنه (3 × 10⁻²)³ = 27 × 10⁻⁶.",
+      "difficulty": 3,
+      "competencies": ["math.num.puissances"]
+    },
+    {
+      "prompt": "اكتب [(−√7)⁵]²/(−√7)⁻⁴ في صيغة قوّة أساسها (−√7).",
+      "options": [
+        { "id": "a", "text": "(−√7)⁶" },
+        { "id": "b", "text": "(−√7)¹¹" },
+        { "id": "c", "text": "(−√7)⁻⁴⁰" },
+        { "id": "d", "text": "(−√7)¹⁴" }
+      ],
+      "correctOption": "d",
+      "explanation": "أوّلًا قوّة داخل قوّة: [(−√7)⁵]² = (−√7)¹⁰ لأنّ 5 × 2 = 10. ثمّ في القسمة نطرح الدليلين: 10 − (−4)، وطرح عدد سالب يعني الإضافة، أي 10 + 4 = 14. إذن الناتج هو (−√7)¹⁴. من يطرح 4 بدل إضافتها يجد الدليل 6، ومن يجمع دليلَي القوّة داخل القوّة بدل ضربهما يجد 5 + 2 = 7 ثمّ 11، ومن يضرب الدليلين في القسمة يجد −40.",
+      "difficulty": 3,
+      "competencies": ["math.num.puissances", "math.num.relatifs-operations"]
+    },
+    {
+      "prompt": "كم عددًا موجبًا يوجد بين الأعداد التالية: (−3/2)⁻⁷ و −(3/2)⁶ و (−3/2)⁰ و (−3/2)⁻⁴ ؟",
+      "options": [
+        { "id": "a", "text": "2" },
+        { "id": "b", "text": "1" },
+        { "id": "c", "text": "3" },
+        { "id": "d", "text": "4" }
+      ],
+      "correctOption": "a",
+      "explanation": "نفحص الأعداد الأربعة واحدًا واحدًا. العدد (−3/2)⁻⁷ أساسه سالب ودليله (−7) فردي فهو سالب. والعدد −(3/2)⁶ إشارته السالبة موضوعة خارج القوّة فهو سالب. والعدد (−3/2)⁰ يساوي 1 فهو موجب. والعدد (−3/2)⁻⁴ أساسه سالب ودليله (−4) زوجي فهو موجب. إذن عدد الأعداد الموجبة هو 2. تذكّر أنّ إشارة الدليل لا تحدّد إشارة النتيجة، إنّما زوجيّته وحدها.",
+      "difficulty": 3,
+      "competencies": ["math.num.puissances", "math.num.relatifs-operations"]
+    },
+    {
+      "prompt": "متوازي مستطيلات أبعاده (√5)/2 و √5 و 2√5. ما حجمه؟\n<svg viewBox=\"0 0 240 145\">\n<title>متوازي مستطيلات أبعاده معطاة</title>\n<polygon points=\"40,70 160,70 160,110 40,110\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2.4\"/><line x1=\"40\" y1=\"70\" x2=\"70\" y2=\"42\" stroke=\"#1d4ed8\" stroke-width=\"2.2\"/><line x1=\"160\" y1=\"70\" x2=\"190\" y2=\"42\" stroke=\"#1d4ed8\" stroke-width=\"2.2\"/><line x1=\"160\" y1=\"110\" x2=\"190\" y2=\"82\" stroke=\"#1d4ed8\" stroke-width=\"2.2\"/><line x1=\"70\" y1=\"42\" x2=\"190\" y2=\"42\" stroke=\"#1d4ed8\" stroke-width=\"2.2\"/><line x1=\"190\" y1=\"42\" x2=\"190\" y2=\"82\" stroke=\"#1d4ed8\" stroke-width=\"2.2\"/><line x1=\"40\" y1=\"110\" x2=\"70\" y2=\"82\" stroke=\"#1d4ed8\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/><line x1=\"70\" y1=\"42\" x2=\"70\" y2=\"82\" stroke=\"#1d4ed8\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/><line x1=\"190\" y1=\"82\" x2=\"70\" y2=\"82\" stroke=\"#1d4ed8\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/><text x=\"100\" y=\"132\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">(√5)/2</text><text x=\"26\" y=\"95\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2√5</text><text x=\"208\" y=\"58\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">√5</text>\n</svg>",
+      "options": [
+        { "id": "a", "text": "10√5" },
+        { "id": "b", "text": "5√5/2" },
+        { "id": "c", "text": "5" },
+        { "id": "d", "text": "5√5" }
+      ],
+      "correctOption": "d",
+      "explanation": "الحجم هو جذاء الأبعاد الثلاثة: (√5)/2 × √5 × 2√5. نجمّع الأعداد من جهة والجذور من جهة: (1/2) × 2 = 1، فيبقى √5 × √5 × √5 أي (√5)³. ثمّ (√5)³ = 5 × √5 = 5√5، إذن الحجم يساوي 5√5. من ينسى القسمة على 2 يجد 10√5، ومن يقف عند √5 × √5 = 5 يفقد الجذر الباقي.",
+      "difficulty": 3,
+      "competencies": ["math.num.puissances"]
+    }
+  ]
+}
