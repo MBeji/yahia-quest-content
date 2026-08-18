@@ -7,56 +7,56 @@
   "displayOrder": 3,
   "questions": [
     {
-      "prompt": "ما الكتابة العلمية الصحيحة للعدد 2500؟",
+      "prompt": "الكتابة العشرية الدوريّة للعدد الكسري 1/27 هي 0,(037). ما الرقم الذي رتبته 19 بعد الفاصل؟",
       "options": [
-        { "id": "a", "text": "25 × 10²" },
-        { "id": "b", "text": "0,25 × 10⁴" },
-        { "id": "c", "text": "2,5 × 10³" },
-        { "id": "d", "text": "2,5 × 10⁻³" }
-      ],
-      "correctOption": "c",
-      "explanation": "الكتابة العلمية تشترط أن يكون المعامل بين 1 و10 (غير مشمول). 2500 = 2,5 × 1000 = 2,5 × 10³. أمّا 25 × 10² فمعامله 25 ≥ 10 فلا يُقبل، و0,25 × 10⁴ معامله أقلّ من 1، و2,5 × 10⁻³ يعطي عددًا أقلّ من 1.",
-      "difficulty": 2,
-      "competencies": ["math.num.puissances"]
-    },
-    {
-      "prompt": "ما قيم x الحقيقية التي تحقّق |2x − 3| = 5؟",
-      "options": [
-        { "id": "a", "text": "x = 4 فقط" },
-        { "id": "b", "text": "x = 4 أو x = −1" },
-        { "id": "c", "text": "x = 1 أو x = −4" },
-        { "id": "d", "text": "لا يوجد حلّ" }
-      ],
-      "correctOption": "b",
-      "explanation": "|2x − 3| = 5 يعني: إمّا 2x − 3 = 5 فنجد 2x = 8 أي x = 4، وإمّا 2x − 3 = −5 فنجد 2x = −2 أي x = −1. التحقّق: |2(4)−3| = |5| = 5 ✓ و |2(−1)−3| = |−5| = 5 ✓.",
-      "difficulty": 3,
-      "competencies": ["math.num.valeur-absolue", "math.alg.equations-premier-degre"]
-    },
-    {
-      "prompt": "أيّ مجال يكافئ عدم المساواة −1 ≤ x < 4 ؟",
-      "options": [
-        { "id": "a", "text": "]−1 ; 4[" },
-        { "id": "b", "text": "[−1 ; 4[" },
-        { "id": "c", "text": "]−1 ; 4]" },
-        { "id": "d", "text": "[−1 ; 4]" }
-      ],
-      "correctOption": "b",
-      "explanation": "الرمز ≤ عند −1 يعني أنّ −1 مشمول فنكتب قوسًا مربّعًا [−1، والرمز < عند 4 يعني أنّ 4 غير مشمول فنكتب قوسًا متّجهًا 4[. إذن −1 ≤ x < 4 يكافئ المجال [−1 ; 4[. الخطأ الشائع: عكس اتّجاه القوسين أو شمول الطرفين معًا.",
-      "difficulty": 1,
-      "competencies": ["math.num.ordre-encadrement"]
-    },
-    {
-      "prompt": "حدّد الأكبر من بين الأعداد التالية: 2,2 ، √5 ، 9/4 ، 2,3",
-      "options": [
-        { "id": "a", "text": "2,3" },
-        { "id": "b", "text": "√5" },
-        { "id": "c", "text": "9/4" },
-        { "id": "d", "text": "2,2" }
+        { "id": "a", "text": "0" },
+        { "id": "b", "text": "1" },
+        { "id": "c", "text": "3" },
+        { "id": "d", "text": "7" }
       ],
       "correctOption": "a",
-      "explanation": "نُقارن القيم: 2,2 = 2,2 ، √5 ≈ 2,236 ، 9/4 = 2,25 ، 2,3 = 2,3. الترتيب التصاعدي: 2,2 < √5 < 9/4 < 2,3. إذن الأكبر هو 2,3.",
+      "explanation": "طول الدور 3 لأنّ المجموعة 037 هي التي تتكرّر. نقسم الرتبة على طول الدور: 19 = 3 × 6 + 1، والباقي 1 يدلّ على الرقم الأوّل من الدور، وهو 0. تحقّق: الرتب 1 و4 و7 و10 و13 و16 و19 تحمل كلّها الرقم 0. الأخطاء الشائعة: إعطاء الباقي 1 نفسه بدل الرقم الذي يدلّ عليه، أو بدء العدّ من الرقم الثاني من الدور فيقع الاختيار على 3 أو على 7.",
+      "difficulty": 2,
+      "competencies": ["math.frac.sens"]
+    },
+    {
+      "prompt": "نعتبر العدد A = √36 + 1/3. أيّ العبارات التالية صحيحة؟",
+      "options": [
+        { "id": "a", "text": "A عدد صحيح طبيعي يساوي 6" },
+        { "id": "b", "text": "A عدد عشري كتابته العشرية متناهية" },
+        { "id": "c", "text": "A عدد كسري كتابته العشرية دوريّة" },
+        { "id": "d", "text": "A عدد أصمّ لأنّ في كتابته رمز الجذر" }
+      ],
+      "correctOption": "c",
+      "explanation": "أوّلًا √36 = 6 لأنّ 6² = 36، إذن A = 6 + 1/3 = 19/3. وقسمة 19 على 3 تعطي 6,333… أي 6,(3): كتابة دوريّة غير متناهية، فالعدد A كسري وليس عشريًّا. الأخطاء الشائعة: إهمال الجزء 1/3 والاكتفاء بالعدد 6، أو الظنّ أنّ وجود رمز الجذر يجعل A أصمّ مع أنّ 36 مربّع كامل.",
       "difficulty": 3,
-      "competencies": ["math.num.ordre-encadrement", "math.num.racines-calcul"]
+      "competencies": ["math.num.ensembles-nombres", "math.num.racines-definition", "math.frac.sens"]
+    },
+    {
+      "prompt": "أيّ من علاقات الاحتواء التالية صحيحة؟",
+      "options": [
+        { "id": "a", "text": "ℤ ⊂ ℚ" },
+        { "id": "b", "text": "𝔻 ⊂ ℤ" },
+        { "id": "c", "text": "ℚ ⊂ 𝔻" },
+        { "id": "d", "text": "ℝ ⊂ ℚ" }
+      ],
+      "correctOption": "a",
+      "explanation": "سلسلة الاحتواء هي ℕ ⊂ ℤ ⊂ 𝔻 ⊂ ℚ ⊂ ℝ. إذن العلاقة ℤ ⊂ ℚ صحيحة: كلّ عدد صحيح نسبي يُكتب على شكل كسر، مثلًا 5 = 5/1. أمّا العلاقات الثلاث الأخرى فمقلوبة الاتّجاه؛ الصحيح فيها هو ℤ ⊂ 𝔻 و𝔻 ⊂ ℚ وℚ ⊂ ℝ.",
+      "difficulty": 1,
+      "competencies": ["math.num.ensembles-nombres"]
+    },
+    {
+      "prompt": "يمثّل الرسم مستقيمًا مدرّجًا أصله O ووحدته 1. فاصلات النقاط A وB وC وD هي عناصر المجموعة E = { −√5 ; −4/3 ; 0,(6) ; √2 }. ما فاصلة النقطة D ؟\n<svg viewBox=\"0 0 440 110\">\n<title>مستقيم مدرّج من −3 إلى 3 عليه أربع نقاط A وB وC وD</title>\n<line x1=\"20\" y1=\"64\" x2=\"424\" y2=\"64\" stroke=\"#0f172a\" stroke-width=\"2\"/><polygon points=\"424,58 438,64 424,70\" fill=\"#0f172a\"/><line x1=\"40\" y1=\"58\" x2=\"40\" y2=\"70\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"100\" y1=\"58\" x2=\"100\" y2=\"70\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"160\" y1=\"58\" x2=\"160\" y2=\"70\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"220\" y1=\"58\" x2=\"220\" y2=\"70\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"280\" y1=\"58\" x2=\"280\" y2=\"70\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"340\" y1=\"58\" x2=\"340\" y2=\"70\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"400\" y1=\"58\" x2=\"400\" y2=\"70\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"85.8\" cy=\"64\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"140\" cy=\"64\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"260\" cy=\"64\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"304.9\" cy=\"64\" r=\"4.5\" fill=\"#0f6e56\"/><text x=\"85.8\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">A</text><text x=\"140\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">B</text><text x=\"260\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">C</text><text x=\"304.9\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">D</text><text x=\"220\" y=\"50\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">O</text><text x=\"40\" y=\"86\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">−3</text><text x=\"100\" y=\"86\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">−2</text><text x=\"160\" y=\"86\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">−1</text><text x=\"220\" y=\"86\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0</text><text x=\"280\" y=\"86\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">1</text><text x=\"340\" y=\"86\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">2</text><text x=\"400\" y=\"86\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">3</text>\n</svg>",
+      "options": [
+        { "id": "a", "text": "−√5" },
+        { "id": "b", "text": "−4/3" },
+        { "id": "c", "text": "0,(6)" },
+        { "id": "d", "text": "√2" }
+      ],
+      "correctOption": "d",
+      "explanation": "نحسب قيمة تقريبية لكلّ عنصر: −√5 ≈ −2,24 و−4/3 ≈ −1,33 و0,(6) ≈ 0,67 و√2 ≈ 1,41. النقطة D تقع بين 1 و2 وهي قريبة من 1، إذن فاصلتها √2. وبالمقابل: A فاصلتها −√5 وB فاصلتها −4/3 وC فاصلتها 0,(6). الخطأ الشائع: الظنّ أنّ √2 يقارب 2 فتُوضع النقطة بعد 2.",
+      "difficulty": 3,
+      "competencies": ["math.num.ensembles-nombres", "math.num.racines-definition"]
     },
     {
       "prompt": "كانت درجة الحرارة عند الفجر −3°C، ثمّ ارتفعت بمقدار 8 درجات. ما درجة الحرارة الجديدة؟",
@@ -72,17 +72,17 @@
       "competencies": ["math.num.relatifs-operations"]
     },
     {
-      "prompt": "إذا كان x ∈ ℝ وكان x² = 16، فما مجموعة الحلول؟",
+      "prompt": "ما العددان الحقيقيان اللذان مربّعهما 16 ؟",
       "options": [
-        { "id": "a", "text": "{4}" },
-        { "id": "b", "text": "{−4 ; 4}" },
-        { "id": "c", "text": "{−16 ; 16}" },
-        { "id": "d", "text": "{8 ; −8}" }
+        { "id": "a", "text": "4 فقط" },
+        { "id": "b", "text": "4 و−4" },
+        { "id": "c", "text": "16 و−16" },
+        { "id": "d", "text": "8 و−8" }
       ],
       "correctOption": "b",
-      "explanation": "x² = 16 يعني x = 4 أو x = −4، لأنّ (4)² = 16 و(−4)² = 16. لا تنسَ الحلّ السالب! مجموعة الحلول هي {−4 ; 4}.",
+      "explanation": "نبحث عن الأعداد الحقيقية التي مربّعها 16: لدينا 4² = 16 و(−4)² = 16 لأنّ العددين المتقابلين لهما المربّع نفسه، إذن العددان هما 4 و−4. أمّا الرمز √16 فلا يدلّ إلّا على العدد الموجب 4. الأخطاء الشائعة: نسيان العدد السالب والاكتفاء بالعدد 4 ؛ مضاعفة العدد بدل تربيعه فيُقترح 8 و−8 مع أنّ 8² = 64 ؛ أو الاحتفاظ بالعدد 16 نفسه مع أنّ 16² = 256.",
       "difficulty": 2,
-      "competencies": ["math.num.racines-definition", "math.alg.equations-produit"]
+      "competencies": ["math.num.racines-definition"]
     }
   ]
 }
