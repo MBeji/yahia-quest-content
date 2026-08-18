@@ -9917,6 +9917,40 @@ de fin sont déduites de la page de début du chapitre suivant, et confirmées p
 > Il se nourrit des 13 chapitres officiels et n'introduit **aucune notion** hors programme ;
 > il n'a donc pas de plage de manuel.
 
+### 4 bis. Pour la future notion de « section » du moteur — la donnée est déjà ici
+
+Une session parallèle travaille (2026-08-18, non poussé à cette date) sur un **regroupement des
+chapitres par section** dans le moteur — géométrie, algèbre, etc. Le tableau du §4 ci-dessus
+porte **déjà** l'information dont ce mécanisme a besoin pour cette matière : la colonne `مجال`
+donne, chapitre par chapitre, le domaine officiel du programme. Il n'y a rien à re-décider ni à
+re-lire dans le manuel.
+
+Les **4 مجالات officiels** du فهرس p.4, dans l'ordre :
+
+| # | مجال | chapitres |
+| --- | --- | --- |
+| 1 | **أنشطة عددية** (activités numériques) | `15-numeration-et-calcul`, `01-nombres-reels`, `19-valeur-absolue`, `02-racines-carrees`, `16-puissances`, `17-ordre-et-comparaison` |
+| 2 | **أنشطة جبرية** (activités algébriques) | `03-calcul-litteral`, `04-equations-inequations` |
+| 3 | **الإحصاء والاحتمالات** | `07-statistiques` |
+| 4 | **أنشطة هندسية** (activités géométriques) | `12-repere-plan`, `08-thales`, `09-triangle-rectangle-trigo`, `18-quadrilateres`, `20-orthogonalite-espace` |
+
+⚠️ **Et un 5ᵉ groupe, qui n'est pas un مجال** : les cinq chapitres **hors programme officiel**
+(`05-systemes`, `06-fonctions-lineaires-affines`, `10-angles-cercle`, `11-vecteurs-translation`,
+`13-geometrie-espace`), conservés sur décision du 2026-08-17 et aujourd'hui identifiables au
+marqueur `⚠️ خارج البرنامج الرسمي` en tête de leur `description`. La demande explicite de Mohamed
+(2026-08-18) est qu'ils apparaissent dans une **section séparée**, pas mêlés aux quatre domaines.
+Le palier `14-annales-sujets-types` n'appartient à aucun مجال non plus : c'est un palier de
+révision transverse.
+
+> ⛔ **Pourquoi ce n'est pas fait ici.** Le moteur n'a aujourd'hui aucune notion de section, et la
+> seule façon d'en simuler une serait de déplacer ces chapitres vers un **sujet distinct**. Or
+> l'identité d'un chapitre est `uuidV5(sujet + "/" + slug)` et l'application du contenu est
+> *subject-scoped* : le `DELETE FROM public.exercises … AND source = 'admin' AND id NOT IN (…)`
+> est **sans garde**, et les clés étrangères de `attempts`, `question_attempts`, de la répétition
+> espacée et des sessions de quête sont en **`ON DELETE CASCADE`**. Déplacer ces 5 chapitres
+> **détruirait tout l'historique des élèves** qui les ont travaillés — silencieusement, tous
+> gates au vert. C'est pourquoi la séparation attend la vraie notion de section.
+
 ## 5. Sources croisées
 
 - **Guide enseignant** : **aucun**. Le CNP ne publie pas de الدليل المرجعي في الرياضيات pour le
