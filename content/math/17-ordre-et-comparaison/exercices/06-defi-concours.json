@@ -1,0 +1,97 @@
+{
+  "title": "👑 تحدّي المناظرة ⭐⭐⭐⭐: الترتيب والمقارنة — حصر واستنتاج",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 6,
+  "questions": [
+    {
+      "prompt": "نعلم أنّ 1 ≤ x ≤ 2 و −3 ≤ z ≤ −2 . أعطِ حصرًا للعدد (x + z)² .",
+      "options": [
+        { "id": "a", "text": "1 ≤ (x + z)² ≤ 4" },
+        { "id": "b", "text": "4 ≤ (x + z)² ≤ 9" },
+        { "id": "c", "text": "0 ≤ (x + z)² ≤ 4" },
+        { "id": "d", "text": "−4 ≤ (x + z)² ≤ 0" }
+      ],
+      "correctOption": "c",
+      "explanation": "خطوتان. أوّلًا نجمع الحصرين طرفًا بطرف: الحدّ الأدنى 1 + (−3) = −2 والحدّ الأعلى 2 + (−2) = 0 ، إذن −2 ≤ x + z ≤ 0 . ثانيًا حدّا هذا الحصر سالبان أو معدومان، وفي هذه الحالة يقلب التربيع الترتيب ويتبادل الحدّان موقعهما: من −2 ≤ x + z ≤ 0 نستنتج 0 ≤ (x + z)² ≤ 4 . والحدّان مبلوغان فعلًا: x = 2 و z = −2 يعطيان 0 ، و x = 1 و z = −3 يعطيان 4 . والأخطاء الشائعة هي تربيع حصري x و z كلًّا على حدة ثمّ خلط النتيجتين، أو الاحتفاظ بحدّ سالب في حصر مربّع وهو مستحيل لأنّ المربّع موجب دائمًا.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.relatifs-operations"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ 2 ≤ x ≤ 5 و −3 ≤ z ≤ −1 . أعطِ حصرًا للجداء xz .",
+      "options": [
+        { "id": "a", "text": "−6 ≤ xz ≤ −5" },
+        { "id": "b", "text": "−6 ≤ xz ≤ −2" },
+        { "id": "c", "text": "−15 ≤ xz ≤ −5" },
+        { "id": "d", "text": "−15 ≤ xz ≤ −2" }
+      ],
+      "correctOption": "d",
+      "explanation": "العامل z سالب فلا يجوز ضرب الحصرين طرفًا بطرف. نحسب الجداءات الأربعة لحدود الحصرين: 2 × (−3) = −6 و 2 × (−1) = −2 و 5 × (−3) = −15 و 5 × (−1) = −5 . أصغرها −15 وأكبرها −2 ، إذن −15 ≤ xz ≤ −2 . أمّا ضرب الحدّين الأدنيين ثمّ الأعليين فيعطي −6 و −5 وهو خطأ لا يصلح إلّا حين تكون كلّ الحدود موجبة.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.relatifs-operations"
+      ]
+    },
+    {
+      "prompt": "نعتبر عددين حقيقيين a و b حيث a ≥ b . قارن العبارتين −3a + √2 و −3b + 2 .",
+      "options": [
+        { "id": "a", "text": "−3a + √2 = −3b + 2" },
+        { "id": "b", "text": "−3a + √2 < −3b + 2" },
+        { "id": "c", "text": "−3a + √2 > −3b + 2" },
+        { "id": "d", "text": "الترتيب هو نفسه ترتيب العددين a و b" }
+      ],
+      "correctOption": "b",
+      "explanation": "الثابتان مختلفان، فلا يكفي قلب الاتّجاه: لا بدّ من متباينة ثانية ثمّ جمع طرفًا بطرف. أوّلًا الضرب في −3 وهو سالب قطعًا يقلب الاتّجاه: من a ≥ b نستنتج −3a ≤ −3b . ثانيًا نقارن الثابتين: 2 = √4 ، ومن 2 < 4 نستنتج √2 < √4 أي √2 < 2 . والمتباينتان في الاتّجاه نفسه فنجمعهما طرفًا بطرف: −3a + √2 < −3b + 2 . والمتباينة قاطعة لأنّ √2 < 2 قاطعة، حتّى في حالة a = b .",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.relatifs-operations"
+      ]
+    },
+    {
+      "prompt": "ليكن A = (−√5 − √3)/2 . أيّ حصر صحيح للعدد A ؟",
+      "options": [
+        { "id": "a", "text": "−√3 < A < −√5" },
+        { "id": "b", "text": "√3 < A < √5" },
+        { "id": "c", "text": "−√5 < A < −√3" },
+        { "id": "d", "text": "−2√5 < A < −2√3" }
+      ],
+      "correctOption": "c",
+      "explanation": "العدد A هو نصف مجموع −√5 و −√3 ، أي متوسّطهما، فهو محصور بينهما. البرهان: من √3 < √5 نستنتج −√5 < −√3 . بإضافة −√5 إلى الطرفين نجد −2√5 < −√5 − √3 ، ثمّ القسمة على 2 الموجب تعطي −√5 < A . وبإضافة −√3 إلى الطرفين نجد −√5 − √3 < −2√3 ، ومنه A < −√3 . ونتحقّق: A ≈ −1,98 و −√5 ≈ −2,24 و −√3 ≈ −1,73 .",
+      "difficulty": 3,
+      "competencies": ["math.num.ordre-encadrement", "math.num.racines-calcul"]
+    },
+    {
+      "prompt": "ليكن x و y عددين حقيقيين. أيّ تكافؤ يبقى صحيحًا مهما تكن إشارتاهما؟",
+      "options": [
+        { "id": "a", "text": "|x| ≤ |y| يعني x² ≤ y²" },
+        { "id": "b", "text": "x ≤ y يعني x² ≤ y²" },
+        { "id": "c", "text": "x ≤ y يعني |x| ≤ |y|" },
+        { "id": "d", "text": "x² ≤ y² يعني x ≤ y" }
+      ],
+      "correctOption": "a",
+      "explanation": "التكافؤ الصحيح دائمًا يمرّ بالقيمة المطلقة: |x| ≤ |y| يعني x² ≤ y² ، لأنّ التربيع لا يرى إلّا البعد عن الصفر. أمّا الصيغ التي تنطلق من x ≤ y مباشرة فتسقط عند اختلاف الإشارتين: مع x = −5 و y = 1 لدينا x < y بينما x² = 25 أكبر من y² = 1 ، و |x| = 5 أكبر من |y| = 1 . وبالعكس مع x = 1 و y = −5 نجد x² ≤ y² دون أن يكون x ≤ y .",
+      "difficulty": 3,
+      "competencies": ["math.num.ordre-encadrement", "math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "في الشكل التالي ABCD مستطيل حيث AB = a و BC = b ، مع 2 < a < 5 و 1 < b < 3 . أعطِ حصرًا لمحيطه P .\n<svg viewBox=\"0 0 300 200\"><path d=\"M60 150 L230 150 L230 60 L60 60 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M60 150 L230 150 L230 60 L60 60 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"150\" r=\"3.5\"/><circle cx=\"230\" cy=\"150\" r=\"3.5\"/><circle cx=\"230\" cy=\"60\" r=\"3.5\"/><circle cx=\"60\" cy=\"60\" r=\"3.5\"/></g><g font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\" direction=\"ltr\" unicode-bidi=\"isolate\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"48\" y=\"167\">A</text><text x=\"242\" y=\"167\">B</text><text x=\"242\" y=\"54\">C</text><text x=\"48\" y=\"54\">D</text></g><g font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\" direction=\"ltr\" unicode-bidi=\"isolate\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"145\" y=\"172\">a</text><text x=\"252\" y=\"110\">b</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "3 < P < 8" },
+        { "id": "b", "text": "6 < P < 16" },
+        { "id": "c", "text": "6 < P < 8" },
+        { "id": "d", "text": "2 < P < 15" }
+      ],
+      "correctOption": "b",
+      "explanation": "محيط المستطيل هو P = 2a + 2b . نضرب كلّ حصر في 2 وهو موجب فيبقى الاتّجاه: من 2 < a < 5 نجد 4 < 2a < 10 ، ومن 1 < b < 3 نجد 2 < 2b < 6 . ثمّ نجمع طرفًا بطرف: 6 < P < 16 . والأخطاء الشائعة هي حصر a + b وحده دون مضاعفة فنجد 3 و 8 ، أو حصر الجداء ab فنجد 2 و 15 وهو حصر للمساحة لا للمحيط.",
+      "difficulty": 3,
+      "competencies": ["math.num.ordre-encadrement"]
+    }
+  ]
+}

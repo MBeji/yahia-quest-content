@@ -1,0 +1,88 @@
+{
+  "title": "👑 تحدّي المناظرة ⭐⭐⭐⭐: الرباعيات في وضعيات مركّبة",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 6,
+  "questions": [
+    {
+      "prompt": "ABCD رباعي محدّب. ما الشرط اللازم والكافي حتى يكون رباعي منتصفات أضلاعه مربّعا؟",
+      "options": [
+        { "id": "a", "text": "قطراه متقايسان ومتعامدان" },
+        { "id": "b", "text": "قطراه متقايسان فقط" },
+        { "id": "c", "text": "قطراه متعامدان فقط" },
+        { "id": "d", "text": "قطراه يتقاطعان في منتصفيهما" }
+      ],
+      "correctOption": "a",
+      "explanation": "أضلاع رباعي المنتصفات توازي القطرين وأطوالها أنصافهما. فتقايس القطرين يجعل أضلاعه الأربعة متقايسة (معيّن)، وتعامد القطرين يجعل زواياه قائمة (مستطيل). والمربّع هو معيّن ومستطيل معا، فيلزم الشرطان معا لا أحدهما. أمّا تقاطع القطرين في منتصفيهما فيعني فقط أنّ ABCD نفسه متوازي أضلاع ولا أثر له على شكل رباعي المنتصفات.",
+      "difficulty": 2,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "ABCD شبه منحرف قائم الزاوية في A و D حيث AB = 9 و AD = 12 و DC = 14، والنقطة E من [AB] حيث AE = 5. ما أدقّ وصف للرباعي EBCD؟\n<svg viewBox=\"0 0 300 245\"><path d=\"M60 60 L168 60 L228 204 L60 204 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M60 60 L168 60 L228 204 L60 204 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M60 78 L78 78 L78 60\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M60 186 L78 186 L78 204\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g stroke=\"#94a3b8\" stroke-width=\"1.5\" fill=\"none\"><path d=\"M60 44 L168 44 M60 40 L60 48 M168 40 L168 48\"/><path d=\"M60 76 L120 76 M60 72 L60 80 M120 72 L120 80\"/><path d=\"M44 60 L44 204 M40 60 L48 60 M40 204 L48 204\"/><path d=\"M60 220 L228 220 M60 216 L60 224 M228 216 L228 224\"/></g><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"60\" r=\"4\"/><circle cx=\"168\" cy=\"60\" r=\"4\"/><circle cx=\"228\" cy=\"204\" r=\"4\"/><circle cx=\"60\" cy=\"204\" r=\"4\"/></g><circle cx=\"120\" cy=\"60\" r=\"4.5\" fill=\"#0f6e56\"/><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"50\" y=\"54\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"180\" y=\"54\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"242\" y=\"220\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"48\" y=\"222\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"120\" y=\"48\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text><text x=\"114\" y=\"34\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">9</text><text x=\"90\" y=\"94\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">5</text><text x=\"32\" y=\"136\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">12</text><text x=\"144\" y=\"236\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">14</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "متوازي أضلاع" },
+        { "id": "b", "text": "معيّن" },
+        { "id": "c", "text": "شبه منحرف قائم الزاوية" },
+        { "id": "d", "text": "شبه منحرف متقايس الضلعين" }
+      ],
+      "correctOption": "d",
+      "explanation": "في المثلث ADE القائم الزاوية في A: ED² = 5² + 12² = 25 + 144 = 169 أي ED = 13. ولحساب BC نُسقط B على (DC) في H فنجد DH = AB = 9 و BH = AD = 12 و HC = 14 − 9 = 5، ومنه BC² = 12² + 5² = 169 أي BC = 13. الآن في الرباعي EBCD: (EB) و(DC) متوازيان لأنّهما محمولان على قاعدتي شبه المنحرف، لكنّ EB = 9 − 5 = 4 بينما DC = 14 فليس متوازي أضلاع؛ وساقاه ED = BC = 13 متقايستان: إنّه شبه منحرف متقايس الضلعين.",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "ABCD مستطيل حيث AB = 16 و BC = 12، والنقاط I وJ وK وL منتصفات أضلاعه [AB] و[BC] و[CD] و[DA] بالتتالي. ما محيط الرباعي IJKL؟\n<svg viewBox=\"0 0 300 215\"><path d=\"M60 50 L252 50 L252 194 L60 194 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M60 50 L252 50 L252 194 L60 194 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M60 68 L78 68 L78 50\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"50\" r=\"4\"/><circle cx=\"252\" cy=\"50\" r=\"4\"/><circle cx=\"252\" cy=\"194\" r=\"4\"/><circle cx=\"60\" cy=\"194\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"156\" cy=\"50\" r=\"4.5\"/><circle cx=\"252\" cy=\"122\" r=\"4.5\"/><circle cx=\"156\" cy=\"194\" r=\"4.5\"/><circle cx=\"60\" cy=\"122\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"50\" y=\"44\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"262\" y=\"44\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"262\" y=\"212\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"50\" y=\"212\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"156\" y=\"40\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"268\" y=\"128\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text><text x=\"156\" y=\"212\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text><text x=\"44\" y=\"128\" text-anchor=\"middle\" fill=\"#0f6e56\">L</text><text x=\"110\" y=\"40\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">16</text><text x=\"284\" y=\"90\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">12</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "20" },
+        { "id": "b", "text": "40" },
+        { "id": "c", "text": "56" },
+        { "id": "d", "text": "80" }
+      ],
+      "correctOption": "b",
+      "explanation": "قطر المستطيل يحقّق AC² = 16² + 12² = 256 + 144 = 400 أي AC = 20، وكذلك BD = 20. وكلّ ضلع من أضلاع IJKL طوله نصف قطر لأنّه يربط منتصفي ضلعين في مثلث: 20/2 = 10. وأضلاعه الأربعة متقايسة (IJKL معيّن)، فالمحيط يساوي 4 × 10 = 40. (من يعطي طول القطر يجد 20، ومن يحسب محيط المستطيل يجد 2 × (16 + 12) = 56، ومن يضرب القطر نفسه في 4 بدل نصفه يجد 4 × 20 = 80.)",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "في معلّم متعامد، A(−3 ; 1) و B(1 ; 4) و C(4 ; 0) و D(0 ; −3). ما مساحة الرباعي ABCD؟\n<svg viewBox=\"0 0 270 230\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\"><path d=\"M42 26 V214 M64 26 V214 M86 26 V214 M108 26 V214 M152 26 V214 M174 26 V214 M196 26 V214 M218 26 V214 M240 26 V214\"/><path d=\"M34 218 H248 M34 196 H248 M34 174 H248 M34 152 H248 M34 108 H248 M34 86 H248 M34 64 H248 M34 42 H248\"/></g><path d=\"M32 130 H252 M130 216 V24\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M246 124 L255 130 L246 136 Z M124 33 L130 22 L136 33 Z\" fill=\"#0f172a\"/><path d=\"M64 108 L152 42 L218 130 L130 196 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M64 108 L152 42 L218 130 L130 196 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><g fill=\"#0f6e56\"><circle cx=\"64\" cy=\"108\" r=\"5\"/><circle cx=\"152\" cy=\"42\" r=\"5\"/><circle cx=\"218\" cy=\"130\" r=\"5\"/><circle cx=\"130\" cy=\"196\" r=\"5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"52\" y=\"102\" text-anchor=\"middle\" fill=\"#0f6e56\">A</text><text x=\"162\" y=\"36\" text-anchor=\"middle\" fill=\"#0f6e56\">B</text><text x=\"230\" y=\"126\" text-anchor=\"middle\" fill=\"#0f6e56\">C</text><text x=\"142\" y=\"210\" text-anchor=\"middle\" fill=\"#0f6e56\">D</text><text x=\"118\" y=\"146\" text-anchor=\"middle\" fill=\"#0f172a\">O</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "12,5" },
+        { "id": "b", "text": "20" },
+        { "id": "c", "text": "25" },
+        { "id": "d", "text": "50" }
+      ],
+      "correctOption": "c",
+      "explanation": "نحسب أطوال الأضلاع: AB = √(4² + 3²) = 5 وكذلك BC = √(3² + 4²) = 5 و CD = 5 و DA = 5، فالرباعي معيّن. ونحسب القطرين: AC = √(7² + 1²) = √50 و BD = √(1² + 7²) = √50، وهما متقايسان فالمعيّن مربّع ضلعه 5، ومساحته 5 × 5 = 25. (ويمكن أيضا استعمال قانون المعيّن: (√50 × √50)/2 = 50/2 = 25. أمّا 50 فهو جذاء القطرين قبل القسمة على 2.)",
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
+    },
+    {
+      "prompt": "ABC مثلث قائم الزاوية في B، والنقطة E هي النقطة التي تجعل B منتصف [AE]. ما طبيعة المثلث AEC؟\n<svg viewBox=\"0 0 340 235\"><path d=\"M60 80 L180 80 L180 200 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M60 80 L180 80 L180 200 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M162 80 L162 98 L180 98\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M180 80 L300 80 M180 200 L300 80\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><g stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" fill=\"none\"><path d=\"M120 74 L120 86\"/><path d=\"M240 74 L240 86\"/></g><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"80\" r=\"4\"/><circle cx=\"180\" cy=\"80\" r=\"4\"/><circle cx=\"180\" cy=\"200\" r=\"4\"/></g><circle cx=\"300\" cy=\"80\" r=\"4.5\" fill=\"#0f6e56\"/><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"50\" y=\"72\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"178\" y=\"68\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"180\" y=\"220\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"310\" y=\"70\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "متقايس الضلعين" },
+        { "id": "b", "text": "متقايس الأضلاع" },
+        { "id": "c", "text": "قائم الزاوية في A" },
+        { "id": "d", "text": "قائم الزاوية في C" }
+      ],
+      "correctOption": "a",
+      "explanation": "النقاط A و B و E على نفس الاستقامة لأنّ B منتصف [AE]، والمستقيم (BC) عمودي على (AB) لأنّ المثلث ABC قائم الزاوية في B. إذن (BC) يمرّ من منتصف [AE] وهو عمودي عليه: إنّه الموسط العمودي للقطعة [AE]. وكلّ نقطة من الموسط العمودي متساوية البعد عن طرفي القطعة، إذن CA = CE والمثلث AEC متقايس الضلعين قمّته الرئيسية C. ولا شيء يجعله متقايس الأضلاع إلاّ إذا كانت AE = CA أيضا.",
+      "difficulty": 3,
+      "competencies": ["math.geo.triangles-base"]
+    },
+    {
+      "prompt": "ABCD مستطيل، والنقاط I وJ وK وL منتصفات أضلاعه بالتتالي، ثمّ E وF وG وH منتصفات أضلاع الرباعي IJKL بالتتالي. ما أدقّ وصف للرباعي EFGH؟\n<svg viewBox=\"0 0 340 220\"><path d=\"M60 50 L280 50 L280 190 L60 190 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M170 50 L280 120 L170 190 L60 120 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M170 50 L280 120 L170 190 L60 120 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"50\" r=\"4\"/><circle cx=\"280\" cy=\"50\" r=\"4\"/><circle cx=\"280\" cy=\"190\" r=\"4\"/><circle cx=\"60\" cy=\"190\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"170\" cy=\"50\" r=\"4\"/><circle cx=\"280\" cy=\"120\" r=\"4\"/><circle cx=\"170\" cy=\"190\" r=\"4\"/><circle cx=\"60\" cy=\"120\" r=\"4\"/></g><g fill=\"#b45309\"><circle cx=\"225\" cy=\"85\" r=\"4.5\"/><circle cx=\"225\" cy=\"155\" r=\"4.5\"/><circle cx=\"115\" cy=\"155\" r=\"4.5\"/><circle cx=\"115\" cy=\"85\" r=\"4.5\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"50\" y=\"44\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"290\" y=\"44\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"290\" y=\"206\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"50\" y=\"206\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"170\" y=\"40\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"296\" y=\"126\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text><text x=\"170\" y=\"208\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text><text x=\"44\" y=\"126\" text-anchor=\"middle\" fill=\"#0f6e56\">L</text><text x=\"239\" y=\"80\" text-anchor=\"middle\" fill=\"#b45309\">E</text><text x=\"239\" y=\"166\" text-anchor=\"middle\" fill=\"#b45309\">F</text><text x=\"101\" y=\"166\" text-anchor=\"middle\" fill=\"#b45309\">G</text><text x=\"101\" y=\"80\" text-anchor=\"middle\" fill=\"#b45309\">H</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "متوازي أضلاع" },
+        { "id": "b", "text": "مستطيل" },
+        { "id": "c", "text": "معيّن" },
+        { "id": "d", "text": "مربّع" }
+      ],
+      "correctOption": "b",
+      "explanation": "الخطوة الأولى: قطرا المستطيل ABCD متقايسان، فأضلاع IJKL الأربعة متقايسة أي أنّ IJKL معيّن. الخطوة الثانية: قطرا المعيّن IJKL متعامدان، وأضلاع EFGH توازي هذين القطرين، فزوايا EFGH قائمة أي أنّ EFGH مستطيل. ولا يكون مربّعا إلاّ إذا كان قطرا IJKL متقايسين أيضا، أي إذا كان ABCD مربّعا.",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    }
+  ]
+}

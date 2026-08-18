@@ -532,6 +532,33 @@
         "ar": "تمثيل المجسّمات: الهرم والمخروط والكرة"
       },
       "prereqs": ["math.esp.cube-pave"]
+    },
+    {
+      "id": "math.prob.experience-aleatoire",
+      "labels": {
+        "fr": "Expérience aléatoire : issues, événement certain, impossible, possible",
+        "en": "Random experiment: outcomes, certain, impossible and possible events",
+        "ar": "التجربة العشوائية: الإمكانيات، الحدث الأكيد والمستحيل والممكن"
+      },
+      "prereqs": []
+    },
+    {
+      "id": "math.prob.denombrement-issues",
+      "labels": {
+        "fr": "Dénombrer les issues d'une expérience (arbre de choix ; avec remise, sans remise, simultané)",
+        "en": "Counting the outcomes of an experiment (choice tree; with/without replacement, simultaneous)",
+        "ar": "إحصاء إمكانيات تجربة (شجرة الاختيار؛ بإرجاع، بدون إرجاع، في آن واحد)"
+      },
+      "prereqs": ["math.prob.experience-aleatoire"]
+    },
+    {
+      "id": "math.prob.frequence-et-chance",
+      "labels": {
+        "fr": "Du tableau de fréquences observées à la comparaison des chances d'un événement",
+        "en": "From observed frequencies to comparing the likelihood of events",
+        "ar": "من التواتر الملاحظ إلى مقارنة حظوظ حدث"
+      },
+      "prereqs": ["math.prob.experience-aleatoire", "math.stat.effectifs-frequences"]
     }
   ]
 }

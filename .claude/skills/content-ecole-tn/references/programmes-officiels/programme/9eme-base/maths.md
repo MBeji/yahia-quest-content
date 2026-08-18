@@ -10900,7 +10900,7 @@ impressionnistes.
 | `04-equations-inequations`        | ✅ couvert                       | = ch.7 officiel (p.93–110), y compris son bloc « الحصر والمجالات »                                                                                     |
 | `05-systemes`                     | ⛔ **hors programme**            | `جملة` et `بمجهولين` absents des 221 p. ; les **trois** encadrés de définition du ch.7 disent « **ذات مجهول واحد** »                                   |
 | `06-fonctions-lineaires-affines`  | ⛔ **hors programme**            | `دالة`/`دوال`/`خطية`/`تآلفية` : 0 occurrence sur les 221 p. ; ni `معادلة مستقيم`, ni `معامل التوجيه`, ni courbe                                        |
-| `07-statistiques`                 | ⚠️ **plus pauvre que la source** | = ch.8 §I seulement ; **toute la §II الاحتمالات (p.121–123 + 5 exercices) manque**                                                                     |
+| `07-statistiques`                 | ✅ **complété le 2026-08-18**    | = ch.8 **entier** : la §II الاحتمالات (p.121–123) a été ajoutée (12 questions, 2 exercices) et le titre est passé à « الإحصاء والاحتمالات »            |
 | `08-thales`                       | ✅ couvert                       | = ch.10 officiel (p.147–169). ⚠️ mais il enseigne une **réciproque que le manuel n'énonce pas** (§A bis)                                               |
 | `09-triangle-rectangle-trigo`     | ⚠️ **moitié sans source**        | volet « المثلث القائم » = ch.11, intégralement couvert ; volet **trigonométrie sans aucune source** dans le manuel                                     |
 | `10-angles-cercle`                | ⛔ **hors programme**            | `زاوية محيطية` 0, `زاوية مركزية` 0, `قوس` 0, `وتر` 0 sur les 221 p. ; le ch.10 n'a **aucune mesure d'angle en degrés**                                 |
@@ -10909,16 +10909,24 @@ impressionnistes.
 | `13-geometrie-espace` (المجسّمات) | ⚠️ **hors sujet du chapitre**    | le ch.13 officiel est « **التعامد في الفضاء** » (droite⊥droite, droite⊥plan) ; plan⊥plan n'y est jamais défini, et **aucun volume, patron ou section** |
 | `14-annales-sujets-types`         | ✅ conservé                      | hors manuel par nature, convention du projet pour les années d'examen                                                                                  |
 
-**Notions officielles sans aucun chapitre en production** (à créer) :
+**Notions officielles qui n'avaient aucun chapitre — TOUTES COMBLÉES depuis** (état 2026-08-18) :
 
-1. **ch.1 — التعداد والحساب** (p.5–17) : divisibilité par 6, 12, 15 ; activités de dénombrement.
-2. **ch.4 — القوى** (p.49–60) : puissances d'exposant entier relatif et leurs propriétés.
-3. **ch.5 — الترتيب والمقارنة** (p.61–77) : ordre et addition, ordre et multiplication, comparaison
-   des carrés.
-4. **ch.12 — أنشطة حول الرباعيات** (p.189–200).
-5. **القيمة المطلقة** (ch.3 §III, p.38–39) : définition et propriétés encadrées — aucun chapitre en
-   production n'en porte trace.
-6. **الاحتمالات** (ch.8 §II, p.121–123) : moitié officielle d'un chapitre existant.
+| notion officielle                        | chapitre créé                  | état                                              |
+| ---------------------------------------- | ------------------------------ | ------------------------------------------------- |
+| ch.1 — التعداد والحساب (p.5–17)          | `15-numeration-et-calcul`      | ✅ livré, audité, **en production**               |
+| القيمة المطلقة (ch.3 §III, p.38–39)      | `19-valeur-absolue`            | ✅ livré, audité, **en production**               |
+| ch.4 — القوى (p.49–60)                   | `16-puissances`                | ⏸️ écrit et audité, **retenu** (bug moteur, ci-dessous) |
+| ch.5 — الترتيب والمقارنة (p.61–77)       | `17-ordre-et-comparaison`      | ✅ livré, audité, corrigé                         |
+| ch.8 §II — الاحتمالات (p.121–123)        | ajouté à `07-statistiques`     | ✅ livré (le chapitre porte désormais les DEUX sections) |
+| ch.12 — أنشطة حول الرباعيات (p.189–200)  | `18-quadrilateres`             | ✅ livré, audité, corrigé                         |
+| ch.13 — التعامد في الفضاء (p.201–221)    | `20-orthogonalite-espace`      | ✅ livré, audité, corrigé                         |
+
+> ⏸️ **`16-puissances` est retenu pour une raison qui n'est pas de contenu.** Son audit le donne au
+> meilleur niveau de la campagne (41/41 clés justes, fuite par la longueur à 1/41, borne « écriture
+> scientifique » tenue au millimètre). Il est bloqué par une lacune du **moteur** :
+> `isMathExpression` (`src/shared/lib/utils.ts`) ignore `⁻` (U+207B), si bien qu'une option comme
+> `(√3)⁻⁸` s'affiche `⁸⁻(3√)`. Deux **bonnes réponses** sont concernées. 234 options du corpus le
+> sont aussi, déjà en production. Le chapitre attend sur la branche `wip/9eme-maths-puissances`.
 
 **Notion que la production ajoute et que le manuel n'enseigne pas** : l'**écriture scientifique**
 n'est pas au ch.4 (le terme `الكتابة العلمية` est absent, aucun encadré `a × 10ⁿ`).
@@ -10928,6 +10936,38 @@ n'est pas au ch.4 (le terme `الكتابة العلمية` est absent, aucun en
 > peut pas distinguer « le CNP ne l'enseigne pas en 9ème » de « le manuel a fait un choix
 > éditorial ». C'est précisément pourquoi ces constats se **signalent** et ne se traduisent pas
 > d'office en suppressions.
+
+#### 6.2 bis — Un troisième type d'écart, découvert par les audits : du hors-scope À L'INTÉRIEUR d'un chapitre légitime
+
+Le tableau ci-dessus compare **chapitre à chapitre** : le bon chapitre officiel existe-t-il en face ?
+Il ne dit rien du contenu **item par item**. Les audits pédagogiques de la campagne du 2026-08-17/18
+ont révélé un écart que cette maille ne peut pas voir.
+
+**`01-nombres-reels` (✅ « couvert » ci-dessus, et en production) déborde largement de son chapitre
+officiel.** Trois auditeurs indépendants, travaillant sur trois chapitres différents et sans se
+concerter, l'ont chacun signalé **sans avoir mandat de l'examiner** — ils l'ont croisé en cherchant
+des doublons chez les voisins :
+
+- des **équations et inéquations à valeur absolue** (`|2x − 3| = 5`, `|2x − 1| ≤ 5`, `|x − 3| < 4`,
+  `|x| ≤ 3`) — or le §6 du ch.3 pose « aucune inégalité, aucun signe `<`/`>` dans tout le
+  chapitre », et le chapitre `19-valeur-absolue` s'y tient, lui ;
+- de l'**écriture scientifique** (`03-revision` q1 : « ما الكتابة العلمية الصحيحة للعدد 2500 ؟ ») —
+  or le §6 du ch.3 la renvoie au ch.4, et le ch.4 **ne l'enseigne pas non plus** (cf. plus haut) ;
+- des sections entières **ordre**, **مجالات** (intervalles) et **valeur absolue**, qui relèvent des
+  chapitres 5, 7 et 3 §III du manuel.
+
+Signalé aussi, plus léger : `02-racines-carrees` nomme des **identités remarquables**
+(« الفرق بين مربّعين », `04-defi` q4), que le §6 du ch.3 réserve au ch.6.
+
+⚠️ **Conséquence à connaître avant toute campagne suivante** : plusieurs notions sont désormais
+enseignées **deux fois, avec deux scopes contradictoires** — et c'est le chapitre **neuf** qui est
+fidèle au manuel. Aucun gate ne le voit : les deux chapitres sont valides, leurs clés sont justes.
+
+**Ni tranché ni corrigé** : cela touche du contenu déjà servi aux élèves, et la consigne humaine du
+2026-08-17 est « on ne supprime rien pour le moment ». Trois options ouvertes — laisser coexister,
+faire céder à `01-nombres-reels` ses items excédentaires, ou les marquer comme le sont les cinq
+chapitres hors-programme. **Aucun de ces chapitres n'a été audité contre sa propre section de
+scope** : la qualification définitive demande ce passage, qui reste à faire.
 
 ### 6.3 Preuves d'absence, chapitre par chapitre
 
