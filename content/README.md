@@ -39,13 +39,11 @@ content/
   `manuels?` (**manuel élève officiel CNP**, un objet par tome :
   `[{ "code": "102306" }]` ou
   `[{ "code": "102105P01", "label": "الجزء الأول" }, …]` — compilé dans
-  `subjects.manuel_refs`. Ce `code` sert **deux** surfaces : la carte « Manuel
-  officiel » de la page matière, qui ouvre le PDF que **nous** hébergeons
-  (bucket privé `manuel-eleve`, uploadé hors-bande par
-  `scripts/manuel/upload-pdf.mjs`, connexion requise) ; et le lien « Manuel
-  officiel » **sous le cours**, qui ouvre le document **chez le CNP** — sans
-  compte, sans upload, sans stockage, l'adresse étant rebâtie depuis le code
-  seul. Rien de plus à écrire pour l'obtenir),
+  `subjects.manuel_refs` et affiché en carte « Manuel officiel » sur la page
+  matière. Le manuel est le livre de la **matière**, pas du chapitre : il se
+  nomme donc ici, une fois. Le lien ouvre le document **chez le CNP**, sans
+  compte et sans upload — l'adresse est rebâtie à partir du `code` seul, rien
+  de plus à écrire pour l'obtenir),
   `compileTo?` (mutualisation lycée — voir plus bas).
 - **`chapter.json`** : `title`, `description`, `displayOrder`, `sources` (liste
   d'URLs / références — traçabilité des sources), `gradeSlugs?` (dossier partagé
@@ -53,9 +51,9 @@ content/
   programme — libellé dans la langue de la matière), `manuel?`
   (`{ "code": "102905", "pages": "18-30" }` — les pages du manuel qui couvrent
   CE chapitre. Compilé dans `chapters.manuel_ref`, il sert la galerie « Pages du
-  manuel » (images hébergées, connexion requise) **et** ancre le lien
-  « Manuel officiel » sous le cours directement sur ces pages : mieux vaut donc
-  le déclarer que le laisser à la matière, qui ouvrirait le PDF à la couverture),
+  manuel » sous le cours : des images que **nous** hébergeons, connexion requise.
+  À ne pas confondre avec le lien vers le manuel entier, qui vit au niveau de la
+  matière),
   `videos?` (0-3 ids du registre `content/videos.json`).
 - **`quiz.json`** (obligatoire) : `title?` + `questions[]` (même forme que les
   questions d'exercice). Compilé en exercice `mode='quiz'` ; l'élève doit le
@@ -68,8 +66,8 @@ content/
 > ⚠️ **Un `code` de manuel n'est pas du texte libre.** Il est confronté au registre CNP
 > (`suivi/corpus-cnp.json`) par `content:qa` : un code absent du corpus est une **erreur**, pas un
 > avertissement. Avant, une coquille se soldait par une carte restée vide ; depuis que le code sert
-> aussi à construire un lien public, elle se solderait par un 404 devant l'élève. Le nom de fichier
-> se déduit du code — tome épelé (`102105P01`) pris tel quel, code nu (`102905`) complété en `P00`.
+> à construire un lien public, elle se solderait par un 404 devant l'élève. Le nom de fichier se
+> déduit du code — tome épelé (`102105P01`) pris tel quel, code nu (`102905`) complété en `P00`.
 
 ### Mutualisation entre sections (`compileTo` — étude 16)
 
