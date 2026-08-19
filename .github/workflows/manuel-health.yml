@@ -98,7 +98,21 @@ jobs:
         # Sort 1 quand un lien est mort ou a changé — c'est un constat, pas une
         # panne du job.
         continue-on-error: true
-        run: npm run --silent content:manuel:check > "$GITHUB_WORKSPACE/manuel-health.json"
+        run: |
+          # `shell: bash -e` couperait le script sur le code 1 de la sonde — celui
+          # qui signale un lien mort ou modifié. Or c'est le cas où le rapport doit le
+          # plus sûrement finir dans le journal. On désarme donc -e le temps de
+          # l'appel, on journalise, puis on rend le code tel quel.
+          set +e
+          npm run --silent content:manuel:check > "$GITHUB_WORKSPACE/manuel-health.json"
+          code=$?
+          set -e
+          # Le rapport BRUT dans le journal, pas seulement dans le résumé du job : le
+          # résumé ne se lit qu'à l'écran, alors que `gh run view --log` est le seul
+          # canal disponible en ligne de commande — et c'est justement quand la sonde
+          # est aveugle qu'il faut lire la CAUSE de chaque `unknown`.
+          cat "$GITHUB_WORKSPACE/manuel-health.json"
+          exit $code
 
       - name: Résumer
         id: report
