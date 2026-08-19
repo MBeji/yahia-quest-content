@@ -102,25 +102,35 @@ jobs:
 
       - name: Résumer
         id: report
+        # Le script passe par un HEREDOC ENTRE QUOTES, pas par `node -e '…'`.
+        # Raison vécue au tout premier run (2026-08-19, #32259493287) : le texte
+        # français de l'avertissement « aucun lien n'a pu être vérifié » porte une
+        # apostrophe, qui refermait la chaîne shell simple-quotée. Le reste du script
+        # partait alors en pâture au shell — « syntax error near unexpected token ( »
+        # — et l'étape échouait à TOUS les coups, quels que soient les verdicts : la
+        # ligne qui grippait la machine était précisément le garde-fou « sonde
+        # aveugle ». Un heredoc quoté est littéral (apostrophes, backticks, $ sans
+        # danger), donc le prochain texte français ne rejouera pas la scène.
         run: |
-          node --input-type=module -e '
-            import { readFileSync, appendFileSync } from "node:fs";
-            const r = JSON.parse(readFileSync("manuel-health.json", "utf8"));
-            const lines = [];
-            lines.push(`Sondé **${r.total}** manuel(s) déclaré(s) — ${r.ok} ok, ${r.broken.length} mort(s), ${r.changed.length} modifié(s), ${r.unknown.length} non vérifié(s).`);
-            if (r.blind) {
-              lines.push("", "> ⚠️ **Sonde aveugle** : aucun lien n'a pu être vérifié ce coup-ci. Ce passage ne prouve rien — il ne dit PAS que les liens vont bien.");
-            }
-            const list = (rows) => rows.map((x) => `- \\`${x.code}\\` (${x.subjects.join(", ")}) — ${x.reason}`);
-            if (r.broken.length) lines.push("", "### Manuels morts — le lien tombe en 404", "", ...list(r.broken));
-            if (r.changed.length) lines.push("", "### Manuels republiés à la source — taille différente du registre", "", ...list(r.changed), "", "Vérifier que le document sert toujours le bon programme, puis régénérer `suivi/corpus-cnp.json` pour réaligner la taille de référence.");
-            if (r.unknown.length) lines.push("", "### Non vérifiés ce coup-ci (PAS un défaut)", "", ...list(r.unknown));
-            const body = lines.join("\n");
-            appendFileSync(process.env.GITHUB_STEP_SUMMARY, body + "\n");
-            appendFileSync(process.env.GITHUB_OUTPUT, `findings=${r.broken.length + r.changed.length}\n`);
-            appendFileSync(process.env.GITHUB_OUTPUT, `blind=${r.blind ? 1 : 0}\n`);
-            appendFileSync(process.env.GITHUB_OUTPUT, "body<<MANUELEOF\n" + body + "\nMANUELEOF\n");
-          '
+          cat > summarize.mjs <<'JS'
+          import { readFileSync, appendFileSync } from "node:fs";
+          const r = JSON.parse(readFileSync("manuel-health.json", "utf8"));
+          const lines = [];
+          lines.push(`Sondé **${r.total}** manuel(s) déclaré(s) — ${r.ok} ok, ${r.broken.length} mort(s), ${r.changed.length} modifié(s), ${r.unknown.length} non vérifié(s).`);
+          if (r.blind) {
+            lines.push("", "> ⚠️ **Sonde aveugle** : aucun lien n'a pu être vérifié ce coup-ci. Ce passage ne prouve rien — il ne dit PAS que les liens vont bien.");
+          }
+          const list = (rows) => rows.map((x) => `- \`${x.code}\` (${x.subjects.join(", ")}) — ${x.reason}`);
+          if (r.broken.length) lines.push("", "### Manuels morts — le lien tombe en 404", "", ...list(r.broken));
+          if (r.changed.length) lines.push("", "### Manuels republiés à la source — taille différente du registre", "", ...list(r.changed), "", "Vérifier que le document sert toujours le bon programme, puis régénérer `suivi/corpus-cnp.json` pour réaligner la taille de référence.");
+          if (r.unknown.length) lines.push("", "### Non vérifiés ce coup-ci (PAS un défaut)", "", ...list(r.unknown));
+          const body = lines.join("\n");
+          appendFileSync(process.env.GITHUB_STEP_SUMMARY, body + "\n");
+          appendFileSync(process.env.GITHUB_OUTPUT, `findings=${r.broken.length + r.changed.length}\n`);
+          appendFileSync(process.env.GITHUB_OUTPUT, `blind=${r.blind ? 1 : 0}\n`);
+          appendFileSync(process.env.GITHUB_OUTPUT, "body<<MANUELEOF\n" + body + "\nMANUELEOF\n");
+          JS
+          node summarize.mjs
 
       - name: Ouvrir ou actualiser l'issue de suivi
         if: steps.report.outputs.findings != '0'
