@@ -98,6 +98,19 @@ jobs:
         # Sort 1 quand un lien est mort ou a changé — c'est un constat, pas une
         # panne du job.
         continue-on-error: true
+        env:
+          # Le serveur du CNP présente un certificat Sectigo valide mais N'ENVOIE PAS
+          # l'intermédiaire qui le signe. Un navigateur s'en sort (AIA / cache) ; un
+          # client TLS correct, non — mesuré ici même le 2026-08-19 : openssl code 21,
+          # curl « unable to get local issuer certificate », node
+          # UNABLE_TO_VERIFY_LEAF_SIGNATURE. La sonde était donc structurellement
+          # AVEUGLE en CI : 82 `unknown` sur 82, à chaque passage.
+          #
+          # On fournit le maillon manquant, on ne désarme pas la vérification : la
+          # racine qui signe cet intermédiaire est déjà dans le magasin de Node.
+          # `NODE_TLS_REJECT_UNAUTHORIZED=0` aurait laissé n'importe qui répondre à la
+          # place du CNP — ce que la sonde a précisément pour métier de détecter.
+          NODE_EXTRA_CA_CERTS: ${{ github.workspace }}/corpus/.github/certs/sectigo-server-auth-ca-dv-r36.pem
         run: |
           # `shell: bash -e` couperait le script sur le code 1 de la sonde — celui
           # qui signale un lien mort ou modifié. Or c'est le cas où le rapport doit le
