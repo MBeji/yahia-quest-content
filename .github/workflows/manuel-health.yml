@@ -118,6 +118,7 @@ jobs:
             const body = lines.join("\n");
             appendFileSync(process.env.GITHUB_STEP_SUMMARY, body + "\n");
             appendFileSync(process.env.GITHUB_OUTPUT, `findings=${r.broken.length + r.changed.length}\n`);
+            appendFileSync(process.env.GITHUB_OUTPUT, `blind=${r.blind ? 1 : 0}\n`);
             appendFileSync(process.env.GITHUB_OUTPUT, "body<<MANUELEOF\n" + body + "\nMANUELEOF\n");
           '
 
@@ -148,8 +149,14 @@ jobs:
             gh issue create --title "$TITLE" --label manuel-health --body "$FULL"
           fi
 
+      # `findings == 0` ne veut PAS dire « tout va bien » : un passage aveugle
+      # (aucun code vérifié — réseau, proxy, WAF) n'a ni mort ni modifié à
+      # déclarer, et refermait donc l'issue en affirmant que tout répondait de
+      # nouveau. C'est le contresens que le drapeau `blind` existe pour empêcher —
+      # il était calculé et affiché, mais rien ne s'en servait. Aveugle ⇒ on ne
+      # touche à rien : l'issue reste ouverte, et le résumé dit pourquoi.
       - name: Refermer l'issue quand tout répond de nouveau
-        if: steps.report.outputs.findings == '0'
+        if: steps.report.outputs.findings == '0' && steps.report.outputs.blind == '0'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
