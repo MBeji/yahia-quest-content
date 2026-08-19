@@ -24,7 +24,7 @@ on:
   workflow_dispatch:
     inputs:
       subjects:
-        description: "ids de sujets séparés par des espaces (vide = tout le corpus — sûr, l'application est idempotente)"
+        description: "ids de sujets séparés par des espaces. VIDE = tout le corpus : ~45 min d'écriture continue en prod (vs ~2 min ciblé) — sûr pour les données, PAS pour la charge. Hors heures d'usage."
         type: string
         default: ""
       dry_run:
