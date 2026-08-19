@@ -1,0 +1,160 @@
+name: Manuel health (liens vers les manuels élèves)
+
+# Sonde hebdomadaire des liens « Manuel officiel » des pages matière.
+#
+# Ces liens ne pointent RIEN que nous hébergions : ils ouvrent le manuel élève
+# chez son éditeur. Personne ne nous prévient donc si un document est retiré,
+# déplacé ou republié — l'élève tomberait sur un 404 sans que ça se voie. Cette
+# garde l'apprend en ≤ 7 jours.
+#
+# ⚠️ Elle NE TÉLÉCHARGE AUCUN MANUEL. Un `HEAD` par code DISTINCT (14
+# aujourd'hui) suffit, et il rend deux choses qui, ensemble, valent bien mieux
+# qu'un simple « ça répond » :
+#   - le statut HTTP dit si le document est encore là ;
+#   - `Content-Length` dit sa TAILLE, que `suivi/corpus-cnp.json` connaît déjà
+#     (champ `octets`, relevé au téléchargement du corpus). Même taille ⇒ même
+#     document ; taille différente ⇒ il a bougé à la source.
+# Quelques secondes, zéro octet de corps téléchargé.
+#
+# Même partage que video-health.yml : le CHECKER est du moteur et vit dans le
+# repo public ; ce workflow vit ici, avec les données qu'il lit, et checkout le
+# moteur à côté.
+#
+# Elle n'a rien à faire dans les checks REQUIS d'une PR : la disponibilité d'un
+# site tiers ne doit jamais bloquer la file de merge (leçon `audit:deps`,
+# AGENTS.md). Sa place est la non-régression périodique — ici.
+#
+# Verdicts : `broken` UNIQUEMENT sur 404/410, les deux seuls statuts où le
+# serveur affirme que la ressource n'est plus là. 401/403 (proxy, WAF, blocage
+# géographique), 5xx, corps non-PDF et pannes réseau tombent en `unknown` :
+# jamais de faux `broken`. Éprouvé le 2026-08-19 — lancée depuis un réseau dont
+# la passerelle refuse le domaine, une première version déclarait morts les 14
+# manuels d'un coup.
+#
+# `blind: true` = AUCUN code n'a pu être vérifié. Sans ce drapeau, un tel
+# passage se lirait « 0 broken », donc « tout va bien », alors qu'il n'a rien
+# prouvé — il est signalé explicitement.
+#
+# schedule ne se déclenche que sur la branche par défaut (main).
+
+on:
+  schedule:
+    # Dimanche 06:30 UTC — 30 min après video-health, aucun autre garde à cette
+    # heure (regression lun/jeu 23:00, nightly 01:00, upgrade mar/ven,
+    # content-audit mer/sam 22:07, content-drift 06:40).
+    - cron: "30 6 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: manuel-health
+  cancel-in-progress: false
+
+jobs:
+  check:
+    name: Sonder chaque manuel déclaré
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout corpus (ce repo)
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          path: corpus
+
+      - name: Checkout moteur (repo public)
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          repository: MBeji/yahia-quest-arena
+          path: engine
+
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: engine/package-lock.json
+
+      - name: Install dependencies
+        working-directory: engine
+        run: npm ci --no-audit --no-fund
+
+      # DEUX liens, pas un : le checker lit `content/` ET le registre CNP sous
+      # `.claude/skills/…/programmes-officiels/`, tous deux résolus depuis la
+      # racine du moteur (même recette que content-ci.yml).
+      - name: Brancher le corpus privé dans le moteur
+        run: |
+          set -euo pipefail
+          rm -rf engine/content engine/.claude/skills
+          ln -s "$GITHUB_WORKSPACE/corpus/content" engine/content
+          ln -s "$GITHUB_WORKSPACE/corpus/.claude/skills" engine/.claude/skills
+          test -f engine/.claude/skills/content-ecole-tn/references/programmes-officiels/suivi/corpus-cnp.json \
+            || { echo "::error::registre CNP non branché"; exit 1; }
+
+      - name: Sonder les liens
+        id: probe
+        working-directory: engine
+        # Sort 1 quand un lien est mort ou a changé — c'est un constat, pas une
+        # panne du job.
+        continue-on-error: true
+        run: npm run --silent content:manuel:check > "$GITHUB_WORKSPACE/manuel-health.json"
+
+      - name: Résumer
+        id: report
+        run: |
+          node --input-type=module -e '
+            import { readFileSync, appendFileSync } from "node:fs";
+            const r = JSON.parse(readFileSync("manuel-health.json", "utf8"));
+            const lines = [];
+            lines.push(`Sondé **${r.total}** manuel(s) déclaré(s) — ${r.ok} ok, ${r.broken.length} mort(s), ${r.changed.length} modifié(s), ${r.unknown.length} non vérifié(s).`);
+            if (r.blind) {
+              lines.push("", "> ⚠️ **Sonde aveugle** : aucun lien n'a pu être vérifié ce coup-ci. Ce passage ne prouve rien — il ne dit PAS que les liens vont bien.");
+            }
+            const list = (rows) => rows.map((x) => `- \\`${x.code}\\` (${x.subjects.join(", ")}) — ${x.reason}`);
+            if (r.broken.length) lines.push("", "### Manuels morts — le lien tombe en 404", "", ...list(r.broken));
+            if (r.changed.length) lines.push("", "### Manuels republiés à la source — taille différente du registre", "", ...list(r.changed), "", "Vérifier que le document sert toujours le bon programme, puis régénérer `suivi/corpus-cnp.json` pour réaligner la taille de référence.");
+            if (r.unknown.length) lines.push("", "### Non vérifiés ce coup-ci (PAS un défaut)", "", ...list(r.unknown));
+            const body = lines.join("\n");
+            appendFileSync(process.env.GITHUB_STEP_SUMMARY, body + "\n");
+            appendFileSync(process.env.GITHUB_OUTPUT, `findings=${r.broken.length + r.changed.length}\n`);
+            appendFileSync(process.env.GITHUB_OUTPUT, "body<<MANUELEOF\n" + body + "\nMANUELEOF\n");
+          '
+
+      - name: Ouvrir ou actualiser l'issue de suivi
+        if: steps.report.outputs.findings != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Les DEUX checkouts sont dans un sous-dossier : la racine du workspace
+          # n'est pas un dépôt git et `gh` n'a rien à déduire. Même remède que
+          # dans video-health.yml et automerge.yml.
+          GH_REPO: ${{ github.repository }}
+          BODY: ${{ steps.report.outputs.body }}
+        run: |
+          gh label create manuel-health \
+            --color BFD4F2 \
+            --description "Lien vers un manuel élève cassé ou modifié à la source" \
+            --force
+          TITLE="Liens manuels cassés ou modifiés — sonde hebdomadaire"
+          EXISTING=$(gh issue list --label manuel-health --state open --limit 1 --json number --jq '.[0].number')
+          FULL="$BODY
+
+          > La sonde ne modifie **jamais** \`content/\`. Une session humaine corrige le
+          > \`code\` de la matière concernée (ou retire son \`manuels[]\`), puis la Content CI
+          > revalide contre le registre CNP."
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$FULL"
+          else
+            gh issue create --title "$TITLE" --label manuel-health --body "$FULL"
+          fi
+
+      - name: Refermer l'issue quand tout répond de nouveau
+        if: steps.report.outputs.findings == '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          EXISTING=$(gh issue list --label manuel-health --state open --limit 1 --json number --jq '.[0].number')
+          if [ -n "$EXISTING" ]; then
+            gh issue close "$EXISTING" --comment "Tous les manuels déclarés répondent de nouveau — clôture automatique."
+          fi
