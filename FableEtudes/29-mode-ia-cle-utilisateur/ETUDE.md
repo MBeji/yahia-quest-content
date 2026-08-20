@@ -150,14 +150,30 @@ Tous calculables depuis les tables de cette étude — aucun tracker tiers.
 | **Admin**               | Couper globalement ou par famille ; lire l'agrégat (jamais un transcript, jamais une clé) ; voir les taux de rebut et de 👎 par modèle.                                    |
 | **Anonyme**             | Rien. Aucune surface IA hors `_authenticated`.                                                                                                                             |
 
-Surfaces nouvelles : **`/ia`** (console famille, route `_authenticated`, réservée aux rôles
-`parent`/`admin`) et **la Forge** (§2.3), atteignable depuis le hub d'un chapitre et depuis le
-dashboard élève. Les surfaces IA de é11 (panneau de review, chat, plan, bilans) restent chez é11
-et n'apparaissent pas ici.
+Surfaces nouvelles : **la rubrique « Réglages » (`/settings`)**, dont le **Mode IA** est une
+section — c'est là, et nulle part ailleurs, que la clé se saisit (D-16) — et **la Forge** (§2.3),
+atteignable depuis le hub d'un chapitre et depuis le dashboard élève. Les surfaces IA de é11
+(panneau de review, chat, plan, bilans) restent chez é11 et n'apparaissent pas ici.
+
+⚠️ **La rubrique Réglages n'existe pas encore** — constaté dans le moteur le 2026-08-17 : aucune
+route `settings`/`réglages`/`profil` sous `_authenticated`, et les préférences d'aujourd'hui sont
+éparpillées hors de toute page (sélecteur de langue et de thème dans l'en-tête, carte d'opt-in
+push dans la feature `notifications`). Le lot 2 la **crée**, avec le Mode IA pour première
+section. Deux conséquences fermes :
+
+1. **Le lot 2 crée la page, pas le déménagement.** Langue, thème, notifications et compte ont
+   vocation à y venir — ils **n'y viennent pas dans ce lot** (ce serait une refonte UX déguisée,
+   territoire é14/é15). Ils sont nommés ici pour que personne ne construise une seconde page de
+   réglages six semaines plus tard.
+2. **`/settings` doit être atteignable dans le shell parent.** Vérifié dans
+   `src/routes/_authenticated.tsx` : le parent a un shell **Suivi-only** (pas de nav de jeu, un
+   seul lien vers `/parent-report`). Si l'entrée Réglages n'est ajoutée qu'à la nav élève, le
+   propriétaire de la clé ne peut littéralement pas atteindre l'écran où il la saisit. C'est un
+   critère d'acceptation du lot 2, pas un détail d'intégration.
 
 ### 2.2 Parcours (user stories)
 
-- **US-1 — Attacher une clé.** `/ia` → « Activer le mode IA » → écran de consentement (§3.8,
+- **US-1 — Attacher une clé.** Réglages → section « Mode IA » → « Activer le mode IA » → écran de consentement (§3.8,
   texte versionné) → choix du fournisseur → collage de la clé → choix des modèles (liste curée +
   saisie libre d'un id) → plafonds (défauts proposés) → « Vérifier et enregistrer ».
 - **US-2 — Vérification.** À l'enregistrement, l'app émet **un** appel minimal (≤ 16 tokens de
@@ -175,7 +191,7 @@ et n'apparaissent pas ici.
   s'affiche. Aucune mention de clé, de fournisseur, de coût. Si le mode est éteint, **rien ne
   s'affiche du tout** — pas de bouton grisé, pas de teasing (R-1, R-14).
 - **US-6 — Forger un quiz** (§2.3).
-- **US-7 — Suivre la dépense.** `/ia` : dépense estimée du jour / du mois, par enfant et par
+- **US-7 — Suivre la dépense.** Réglages › Mode IA : dépense estimée du jour / du mois, par enfant et par
   surface, nombre d'appels, tokens, taux de rebut de la Forge, ratio 👍/👎, et l'avertissement
   permanent : **« estimation — la facture qui fait foi est celle de votre fournisseur »** (R-12).
 - **US-8 — Révoquer.** Un bouton, un effet immédiat : la ligne chiffrée est **supprimée**
@@ -301,9 +317,10 @@ jamais.
 
 ### 2.5 i18n & RTL
 
-- **Console `/ia` et Forge** : microcopy FR/EN/AR livrée **dans la même PR** que le code
-  (é11 R-18), namespace `ai.*`, registre parent pour `/ia` (vouvoiement, é15) et registre élève
-  pour la Forge (tutoiement). Fichiers : `src/lib/i18n/{fr,en,ar}.ts`.
+- **Réglages › Mode IA et Forge** : microcopy FR/EN/AR livrée **dans la même PR** que le code
+  (é11 R-18), namespace `ai.*` (plus `settings.*` pour la coquille de la rubrique), registre
+  parent pour les Réglages (vouvoiement, é15) et registre élève pour la Forge (tutoiement).
+  Fichiers : `src/lib/i18n/{fr,en,ar}.ts`.
 - **RTL** : la console est un formulaire dense (clé, plafonds, tableaux de dépense) — captures FR
   **et** AR exigées à la revue (é15 R-5). La clé masquée `sk-…4f2a` est du contenu **LTR** dans un
   contexte RTL : `dir="ltr"` explicite sur ces champs, sinon le masque se lit à l'envers (piège
@@ -329,7 +346,7 @@ jamais.
 ### 3.1 Vue d'ensemble
 
 ```
-Parent ── /ia (console)                         Élève ── surfaces IA (é11) + Forge (é29)
+Parent ── /settings › Mode IA                   Élève ── surfaces IA (é11) + Forge (é29)
    │  server fns : createServerFn                  │  server fns / SSE (é11 lot 3)
    │  + requireSupabaseAuth + zod                  │
    ▼                                               ▼
@@ -681,7 +698,7 @@ le fournisseur fait des données après réception.
   `ai.budget` `{owner, threshold, action:'warn'|'cut'}` · `ai.forge` `{requested, kept, discarded}`.
   **Jamais** : la clé, un fragment de clé au-delà de `last4`, le texte de l'élève, la sortie du
   modèle (`docs/logging-standard.md`).
-- **Console parent `/ia`** : statut de la clé, dépense, activations, qualité par modèle, journal
+- **Réglages › Mode IA (parent)** : statut de la clé, dépense, activations, qualité par modèle, journal
   des 20 derniers appels (surface, date, statut, coût estimé — jamais le contenu).
 - **Console admin** (motif existant `_authenticated` + `useMyRole` + `is_admin()`) : agrégats
   plateforme, répartition des fournisseurs et modèles, taux de rebut et de 👎 **par modèle**
@@ -757,6 +774,17 @@ Aucun id de modèle en dur ailleurs (é11 D-2 étendu).
   élargie à `attempts` et `spaced_repetition_schedule`. Rejeté : compter les quiz forgés dans la
   progression (du contenu non revu piloterait l'adaptativité et le SM-2).
 - **D-14 — Pas de framework de feature flags** (é11 D-15) : kill-switch par env + données.
+- **D-16 — La clé se saisit dans les Réglages, pas sur une page à elle.** Une clé d'API est un
+  réglage de compte, au même titre que la langue, le thème ou les notifications : elle appartient
+  à la rubrique où l'on va quand on cherche « où est-ce que je change ça ? ». Une route dédiée
+  `/ia` la rendrait introuvable pour qui ne sait pas déjà qu'elle existe, et créerait une
+  quatrième adresse de préférences dans une app qui en a déjà trois éparpillées (en-tête,
+  en-tête, feature notifications). Conséquence : le lot 2 **crée la rubrique** — elle n'existe
+  pas — et le Mode IA en est la première section, pas l'unique raison d'être. Rejetés : une page
+  `/ia` autonome (invisible, et une adresse de plus) ; un onglet du rapport parent (le rapport
+  est une lecture de l'activité de l'enfant, pas un lieu de configuration, et l'admin en serait
+  exclu) ; une modale depuis l'en-tête (un formulaire à consentement, plafonds et tableau de
+  dépense ne tient pas dans une pop-over, et rien ne s'y partage par lien).
 - **D-15 — Le mode éteint est l'état par défaut et un état testé.** Rejeté : un « mode découverte »
   offrant quelques appels sur la clé plateforme à qui n'en a pas — c'est une promotion déguisée,
   un coût non borné, et une déception programmée à la fin de l'essai.
@@ -773,7 +801,7 @@ puis 4 → 5.
 | lot | contenu (résumé)                                                                       | fichiers/objets créés (principaux)                                                                                                                                                                                                                                                                | tests exigés                                                                                                                                                                    | dépend de                    |
 | --- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
 | 1   | **La porte IA** : adaptateur multi-fournisseur, comptabilité, kill-switches (remplace é11 lot 0) | dép. `@anthropic-ai/sdk` ; `src/shared/integrations/ai/{index,anthropic.server,openai-compatible.server,fake.server}.ts` ; `src/shared/constants/ai.ts` ; migration `ai_usage_events` + `log_ai_usage` + purge ; MAJ `docs/environment-variables.md`                                            | unit adaptateur (Fake + `fetch` mocké : usage→coût, retries 429/5xx, **pas de retry sur 401**, timeout, re-typage d'erreur) ; unit liste blanche R-6 ; pgTAP grants/RLS ; `build:check` (SDK hors bundle client) | —                            |
-| 2   | **Le coffre & la console** : chiffrement, saisie, vérification, révocation, consentement | `src/features/ai/` (barrel, `ai-credentials.server.ts`, `crypto.server.ts`) ; migration `ai_credentials` + RPCs meta/revoke ; route `/ia` ; i18n `ai.*` FR/EN/AR ; section « Mode IA » de `/confidentialite`                                                                                       | unit crypto (round-trip, AAD refusé si déplacé, rotation KEK, IV unique) ; **pgTAP : `has_table_privilege('authenticated','ai_credentials','SELECT') = false`** ; unit R-2 (un `student` est refusé côté RPC) ; captures FR + AR | 1                            |
+| 2   | **Le coffre & la console** : chiffrement, saisie, vérification, révocation, consentement | `src/features/ai/` (barrel, `ai-credentials.server.ts`, `crypto.server.ts`) ; migration `ai_credentials` + RPCs meta/revoke ; **route `/settings` (la rubrique Réglages, créée ici) + sa section « Mode IA »** + son entrée de nav dans les DEUX shells (élève et parent) ; i18n `ai.*` + `settings.*` FR/EN/AR ; section « Mode IA » de `/confidentialite`                                                                                       | unit crypto (round-trip, AAD refusé si déplacé, rotation KEK, IV unique) ; **pgTAP : `has_table_privilege('authenticated','ai_credentials','SELECT') = false`** ; unit R-2 (un `student` est refusé côté RPC) ; captures FR + AR | 1                            |
 | 3   | **Activation, énergie & budgets** : le mode s'allume, et il ne peut pas déraper          | migration `ai_student_access` + `ai_spend_ledger` + `resolve_ai_access` + `reserve/settle_ai_spend` + `set_ai_student_access` ; UI activation par enfant ; alertes 50/80/100 % ; badge « mode IA » élève                                                                                          | **pgTAP : matrice de `resolve_ai_access`** (lien rompu, clé révoquée, feature non activée, énergie épuisée, plafond atteint, chemin plateforme) ; pgTAP réservation atomique (double dépense concurrente) ; unit dégradé silencieux | 2                            |
 | 4   | **La Forge** : le générateur de quiz personnalisé                                       | migration `ai_forged_quizzes` + `serve_forged_quiz` + `grade_forged_quiz` ; chaîne §3.6 (schéma zod, filtres, double-solve) ; écran Forge + lecture dans le lecteur existant ; étiquetage + 👍/👎                                                                                                | unit chaîne complète avec Fake (candidat invalide rejeté, doublon rejeté, désaccord de double-solve ⇒ rebut) ; **pgTAP : `serve_forged_quiz` ne rend jamais la clé** ; pgTAP zéro récompense (R-16) ; e2e forge→jouer avec `AI_FAKE_PROVIDER=1` | 3                            |
 | 5   | **Qualité & pilotage** : console de dépense et de qualité, conseil de modèle, admin      | `get_ai_console` ; tableaux dépense/qualité par enfant, surface et modèle ; bandeau R-19 ; `/admin/ai` (agrégats, kill-switches, familles en coupure) ; purges cron ; `ai_feedback`                                                                                                              | unit agrégats (par surface/modèle) ; pgTAP RLS `ai_feedback` + purges ; unit R-19 (seuil de rebut) ; captures FR + AR                                                              | 4 (utile dès 3, complet à 4) |
@@ -817,7 +845,9 @@ puis 4 → 5.
   `grade_forged_quiz` sans récompense ; RLS de chaque table ; purges.
 - **Playwright (projet TEST dédié, `AI_FAKE_PROVIDER=1`)** : parcours parent complet (attacher →
   vérifier → activer → révoquer) ; parcours élève (Forge → jouer → 👎) ; **parcours mode éteint**
-  (aucune surface IA visible) ; RTL sur `/ia`.
+  (aucune surface IA visible, et la section « Mode IA » des Réglages absente) ; **accès à
+  `/settings` depuis le shell PARENT** (le shell Suivi-only : c'est le test qui garde le point 2
+  du §2.1) ; RTL sur `/settings`.
 - **`smoke:shell`** : la coquille publique reste crash-free (le bundle prod ne doit rien importer
   de la chaîne IA).
 - **Non-régression de l'existant** — c'est le test qui compte le plus : la suite complète tourne
