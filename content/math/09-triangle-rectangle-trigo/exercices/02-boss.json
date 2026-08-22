@@ -10,9 +10,9 @@
       "prompt": "في المثلث ABC القائم في B، AB = 5 cm وBC = 12 cm. ما طول الوتر AC؟",
       "options": [
         { "id": "a", "text": "13 cm" },
-        { "id": "b", "text": "17 cm" },
-        { "id": "c", "text": "√17 cm" },
-        { "id": "d", "text": "169 cm" }
+        { "id": "b", "text": "17 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" },
+        { "id": "c", "text": "√17 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" },
+        { "id": "d", "text": "169 cm", "misconceptionTag": "math.geo.pythagore-racine-oubliee" }
       ],
       "correctOption": "a",
       "explanation": "بنظرية فيثاغورس: AC² = AB² + BC² = 25 + 144 = 169، إذن AC = √169 = 13 cm. هذه هي الثلاثية المشهورة (5 ; 12 ; 13).",
@@ -22,7 +22,7 @@
     {
       "prompt": "في المثلث ABC القائم في B، AB = 3 cm وAC = 6 cm. ما قيمة الزاوية A؟",
       "options": [
-        { "id": "a", "text": "30°" },
+        { "id": "a", "text": "30°", "misconceptionTag": "math.geo.cosinus-sinus-confondus" },
         { "id": "b", "text": "45°" },
         { "id": "c", "text": "60°" },
         { "id": "d", "text": "90°" }
@@ -36,8 +36,8 @@
       "prompt": "مثلث أضلاعه 7 cm و24 cm و25 cm. هل هو قائم الزاوية؟",
       "options": [
         { "id": "a", "text": "نعم، لأنّ 7² + 24² = 25²" },
-        { "id": "b", "text": "لا، لأنّ 7 + 24 ≠ 25" },
-        { "id": "c", "text": "نعم، لأنّ 7 + 24 > 25" },
+        { "id": "b", "text": "لا، لأنّ 7 + 24 ≠ 25", "misconceptionTag": "math.geo.pythagore-sans-carres" },
+        { "id": "c", "text": "نعم، لأنّ 7 + 24 > 25", "misconceptionTag": "math.geo.pythagore-sans-carres" },
         { "id": "d", "text": "لا، لأنّ 7² + 24² ≠ 25²" }
       ],
       "correctOption": "a",
@@ -48,8 +48,8 @@
     {
       "prompt": "في مثلث قائم، الزاوية A حادّة وظا(A) = √3. ما قيمة الزاوية A؟",
       "options": [
-        { "id": "a", "text": "30°" },
-        { "id": "b", "text": "45°" },
+        { "id": "a", "text": "30°", "misconceptionTag": "math.geo.valeurs-remarquables-confondues" },
+        { "id": "b", "text": "45°", "misconceptionTag": "math.geo.valeurs-remarquables-confondues" },
         { "id": "c", "text": "60°" },
         { "id": "d", "text": "90°" }
       ],
@@ -61,9 +61,9 @@
     {
       "prompt": "إذا كانت جا(x) = √3/2 وكانت x زاوية حادّة، فما قيمة جتا(x)؟",
       "options": [
-        { "id": "a", "text": "√3/2" },
+        { "id": "a", "text": "√3/2", "misconceptionTag": "math.geo.cosinus-sinus-confondus" },
         { "id": "b", "text": "1/2" },
-        { "id": "c", "text": "√2/2" },
+        { "id": "c", "text": "√2/2", "misconceptionTag": "math.geo.valeurs-remarquables-confondues" },
         { "id": "d", "text": "1" }
       ],
       "correctOption": "b",

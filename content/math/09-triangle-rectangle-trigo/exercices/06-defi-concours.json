@@ -9,10 +9,10 @@
     {
       "prompt": "المثلّث ABC قائم الزاوية في A، مع AB = 5 cm وAC = 12 cm. ما قيمة جتا(∠ABC)؟",
       "options": [
-        { "id": "a", "text": "12/13" },
+        { "id": "a", "text": "12/13", "misconceptionTag": "math.geo.cosinus-sinus-confondus" },
         { "id": "b", "text": "5/13" },
-        { "id": "c", "text": "5/12" },
-        { "id": "d", "text": "12/5" }
+        { "id": "c", "text": "5/12", "misconceptionTag": "math.geo.trigo-rapport-inverse" },
+        { "id": "d", "text": "12/5", "misconceptionTag": "math.geo.trigo-rapport-inverse" }
       ],
       "correctOption": "b",
       "explanation": "أوّلًا نحسب الوتر بنظرية بيثاغورس: BC² = AB² + AC² = 25 + 144 = 169، إذن BC = 13 cm. بالنسبة للزاوية B في المثلّث القائم في A: الضلع المجاور هو AB والوتر هو BC، إذن جتا(B) = المجاور/الوتر = AB/BC = 5/13. ✓ (5-12-13 ثلاثي فيثاغوري). الخطأ الشائع: أخذ الضلع المقابل AC بدل المجاور (12/13، وهو جا(B))؛ أو حساب ظا = AB/AC = 5/12؛ أو قلب النسبة (12/5).",
@@ -22,7 +22,7 @@
     {
       "prompt": "زاوية حادّة x حيث جتا(x) = 3/5. ما قيمة ظا(x)؟",
       "options": [
-        { "id": "a", "text": "3/4" },
+        { "id": "a", "text": "3/4", "misconceptionTag": "math.geo.trigo-rapport-inverse" },
         { "id": "b", "text": "2/3" },
         { "id": "c", "text": "4/3" },
         { "id": "d", "text": "5/4" }
@@ -75,9 +75,9 @@
       "prompt": "في مثلّث قائم في A بزاوية B، كتب تلميذ: «جتا(B) = الضلع المقابل / الوتر». هل من خطأ، وما الصواب؟",
       "options": [
         { "id": "a", "text": "نعم، جتا = المجاور/الوتر (لا المقابل)" },
-        { "id": "b", "text": "نعم، جتا = المقابل/المجاور" },
-        { "id": "c", "text": "نعم، جتا = الوتر/المجاور" },
-        { "id": "d", "text": "لا خطأ، التعريف صحيح" }
+        { "id": "b", "text": "نعم، جتا = المقابل/المجاور", "misconceptionTag": "math.geo.cosinus-sinus-confondus" },
+        { "id": "c", "text": "نعم، جتا = الوتر/المجاور", "misconceptionTag": "math.geo.trigo-rapport-inverse" },
+        { "id": "d", "text": "لا خطأ، التعريف صحيح", "misconceptionTag": "math.geo.cosinus-sinus-confondus" }
       ],
       "correctOption": "a",
       "explanation": "جيب التمام جتا = الضلع المجاور / الوتر. أمّا المقابل/الوتر فهو الجيب جا. (تمرين «صيد الخطأ».) الخطأ الشائع: الخلط في ثلاثيّة النسب — جتا للمجاور، جا للمقابل، ظا = المقابل/المجاور.",
