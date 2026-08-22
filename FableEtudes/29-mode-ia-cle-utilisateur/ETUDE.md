@@ -1,6 +1,7 @@
 # Étude 29 — Mode IA « à la clé de la famille » (BYOK) : la porte, le coffre et la Forge
 
-> **Statut** : **validée** — Q-1…Q-9 arbitrées le 2026-08-20 par Mohamed (§7 ; **cinq contre la
+> **Statut** : **LIVRÉE** — les 5 lots le 2026-08-22 (arena#807), écarts et reste-à-faire au §8.
+> Validée — Q-1…Q-9 arbitrées le 2026-08-20 par Mohamed (§7 ; **cinq contre la
 > recommandation** : Q-2, Q-3, Q-4, Q-6, Q-7 — l'étude est réécrite en conséquence, mitigations
 > comprises). Prête à exécuter, lot 1 en premier.
 > **Priorité** : 29 · **Valeur** : l'étage IA du produit s'allume **sans budget plateforme et
@@ -903,11 +904,11 @@ lui (Q-1 — il n'existe qu'un socle).
 | 4   | **La Forge** : le générateur de quiz personnalisé                                       | migration `ai_forged_quizzes` + `serve_forged_quiz` + `grade_forged_quiz` ; chaîne §3.6 (schéma zod, filtres, double-solve) ; écran Forge + lecture dans le lecteur existant ; étiquetage + 👍/👎                                                                                                | unit chaîne complète avec Fake (candidat invalide rejeté, doublon rejeté, désaccord de double-solve ⇒ rebut) ; **pgTAP : `serve_forged_quiz` ne rend jamais la clé** ; pgTAP zéro récompense (R-16) ; e2e forge→jouer avec `AI_FAKE_PROVIDER=1` | 3                            |
 | 5   | **Qualité & pilotage** : console de dépense et de qualité, conseil de modèle, admin      | `get_ai_console` ; tableaux dépense/qualité par enfant, surface et modèle ; bandeau R-19 ; `/admin/ai` (agrégats, kill-switches, familles en coupure) ; purges cron ; `ai_feedback`                                                                                                              | unit agrégats (par surface/modèle) ; pgTAP RLS `ai_feedback` + purges ; unit R-19 (seuil de rebut) ; captures FR + AR                                                              | 4 (utile dès 3, complet à 4) |
 
-- [ ] Lot 1 — la porte IA (adaptateur multi-fournisseur, comptabilité, kill-switches)
-- [ ] Lot 2 — le coffre & la console parent (chiffrement, vérification, consentement, révocation)
-- [ ] Lot 3 — activation par élève, énergie et budgets famille (coupure atomique)
-- [ ] Lot 4 — la Forge (générateur de quiz personnalisé, double-solve, éphémère)
-- [ ] Lot 5 — console de dépense et de qualité, conseil de modèle, admin, purges
+- [x] Lot 1 — la porte IA (adaptateur multi-fournisseur, comptabilité, kill-switches) — **livré le 2026-08-22** (arena#807)
+- [x] Lot 2 — le coffre & la console parent (chiffrement, vérification, consentement, révocation) — **livré le 2026-08-22** (arena#807)
+- [x] Lot 3 — activation par élève, énergie et budgets famille (coupure atomique) — **livré le 2026-08-22** (arena#807)
+- [x] Lot 4 — la Forge (générateur de quiz personnalisé, double-solve, éphémère) — **livré le 2026-08-22** (arena#807)
+- [x] Lot 5 — console de dépense et de qualité, conseil de modèle, admin, purges — **livré le 2026-08-22** (arena#807)
 
 **Stop-points (non négociables pour l'exécuteur)** :
 
@@ -1008,9 +1009,52 @@ sinon on paie une mesure que personne ne lit.
 
 ## 8. Journal d'exécution
 
+> **Les cinq lots sont livrés le 2026-08-22**, dans une seule PR au moteur
+> ([arena#807](https://github.com/MBeji/yahia-quest-arena/pull/807)), un commit par lot.
+> ⚠️ **L'ordre de Q-9 n'a pas été suivi**, et c'est le premier écart à connaître : l'arbitrage
+> plaçait **é11 lot 1** entre le lot 1 et le lot 2 d'ici, pour que la valeur pédagogique arrive
+> au deuxième lot livré et que la chaîne soit éprouvée sur une clé maîtrisée. La demande reçue
+> était « implémente l'étude 29 » : é11 n'en fait pas partie, et l'insérer aurait été élargir le
+> périmètre demandé. Les cinq lots de é29 sont donc livrés d'affilée. **Ce que cela coûte** : la
+> chaîne n'a été éprouvée sur aucune clé réelle avant d'être ouverte aux adresses libres de Q-4
+> et aux modèles inconnus de Q-7 — le pilote de mesure de deux semaines reste entièrement à
+> faire, et il devrait précéder toute activation d'une famille.
+
 | date | lot | PR | écarts acceptés / dettes notées |
 | ---- | --- | -- | ------------------------------- |
-| —    | —   | —  | _(à remplir par l'exécuteur, à chaque lot)_ |
+| 2026-08-22 | 1 — la porte | arena#807 | **Adaptateur asymétrique, assumé** : `anthropic` passe par le SDK (adresse FIXE, surface SSRF nulle, cache de prompt exploité), `openai_compatible` par `node:https` et les sept conditions de R-6 — aucun SDK ne permet d'épingler une IP. · `openai_compatible` déclare `streaming: false` : le protocole sait streamer, mais R-6 plafonne la TAILLE d'une réponse, ce qui ne se marie pas avec une lecture au fil de l'eau ; le chat de é11 y retombera en réponse entière (dégradation prévue, §3.5). · Les RPC neuves sont postérieures aux types Supabase générés (non régénérables sans accès base) : leur contrat est figé en TypeScript, motif `exam.server.ts`, **à supprimer à la prochaine régénération**. |
+| 2026-08-22 | 2 — le coffre | arena#807 | **D-16 est caduque sur son constat, pas sur sa décision** : « la rubrique Réglages n'existe pas encore » était vrai le 2026-08-17 ; `/parametrage` a été livrée depuis (arena#798, étude 15 lot 5). Le lot ajoute donc une **section**, il ne crée pas la page — et le critère d'acceptation du §2.1 point 2 (« atteignable dans le shell parent ») est **déjà tenu** : l'engrenage du header est hors de la nav scrollable, donc présent dans les deux coquilles. Un e2e le garde. · `set_ai_credential_meta` devient **`set_ai_credential`** : `secret_enc` est NOT NULL, donc « écrire tout sauf le secret » exigerait deux écritures et une fenêtre où une ligne existe sans sa clé. La fonction reçoit le CHIFFRÉ — le SQL ne voit toujours pas le clair (§3.1). · **Le §4 demandait un test « un `student` est refusé côté RPC »** : il contredit R-2 telle que Q-2 l'a réécrite. Le test livré affirme l'**inverse** (un `student` PEUT attacher sa clé), pour que personne ne « rétablisse » le filtre que l'arbitrage a retiré. · **Captures FR + AR non produites** : elles supposent l'application lancée et un relecteur humain. Les invariants RTL sont couverts par le gate `check-rtl-classes` et par `dir="ltr"` explicite sur clé masquée, montants et ids de modèles. |
+| 2026-08-22 | 3 — activation & budgets | arena#807 | **L'e-mail de R-11 n'est pas envoyé** : le moteur n'a AUCUN transport e-mail (le mailer de Supabase Auth sert l'authentification, pas la messagerie produit). L'alerte part par le **canal push existant**, qui atteint bien l'appareil du porteur, et la console affiche l'état. Ajouter un e-mail suppose d'introduire un prestataire — décision hors de cette étude. · Le transport push **remonte dans `shared/`** (`sendPushToUsers`) : une feature n'en importe pas une autre, et il a maintenant deux clients. · Deux tables non prévues au §3.3, exigées par l'atomicité de R-11 : `ai_energy_ledger` (l'énergie doit être réservée dans la MÊME transaction que l'argent, et l'élève doit pouvoir la lire sans atteindre `ai_spend_ledger`) et `ai_budget_alerts` (le dédoublonnage « une fois par seuil et par mois » doit survivre à un redéploiement). Plus `ai_admin_state` / `ai_owner_suspensions` pour le kill-switch data-driven de D-14. |
+| 2026-08-22 | 4 — la Forge | arena#807 | **Le quiz forgé n'est PAS joué dans `ExercisePlayer`**, contrairement à la lettre du §4. Deux raisons venues de l'étude elle-même : ce lecteur vit dans `@/features/quest` et une feature n'en importe pas une autre ; et il EST une machine à récompenses (session, XP, badges, chrono de boss, SM-2) dont **R-16 interdit chaque effet**. Y brancher la Forge reviendrait à désarmer une à une ses fonctions en espérant n'en oublier aucune. Le lecteur livré ne peut RIEN verser — il n'appelle qu'une RPC qui n'a rien à donner. · **Périmètres `competency` et `mistakes` : schéma prêt, UI non livrée.** Seul `chapter` est proposé à l'élève ; les deux autres exigent le référentiel de compétences (é07) et les tags actifs (é04) côté requête. La colonne et le CHECK les attendent. · **Types natifs hors v1** (conforme §2.3) : QCM 4 options uniquement. |
+| 2026-08-22 | 5 — console & qualité | arena#807 | **La console admin ne liste pas nominativement les familles en coupure** : elle en donne le NOMBRE, et la suspension se pose par RPC (`set_ai_owner_suspension`). Le §3.9 dit « familles en coupure » ; en donner la liste nominative dans un écran d'agrégats contredirait la phrase suivante du même paragraphe (« aucun montant nominatif au-delà de l'agrégat »). · **Le cache mutualisé d'explications (R-15, D-9) n'est PAS livré** : il appartient à la surface `explain`, qui est **é11 lot 1**. Ce qu'é29 devait lui fournir est en place — la liste curée `AI_CURATED_MODELS` existe (condition d'entrée du pot commun), et le §7 exigeait qu'elle existe AVANT le lot où le cache devient mutualisé. |
+
+### Ce qui reste ouvert après ces cinq lots
+
+1. **Le pilote de mesure de deux semaines** (Q-9) n'a pas eu lieu, et aucune clé réelle n'a été
+   branchée : le seul appel réel du système est celui de la vérification (US-2), déclenché par un
+   humain. **Rien dans ce qui est livré n'a jamais parlé à un vrai fournisseur.** Les adaptateurs
+   sont testés contre un transport mocké et un fournisseur factice — c'est la règle du §5, et
+   c'est aussi sa limite : le premier contact réel reste à faire, sur une clé maîtrisée.
+2. **`AI_KEY_ENC_KEY` n'est posée nulle part.** Tant qu'elle manque, le chemin famille est éteint
+   et la section « Mode IA » n'apparaît pas — c'est l'état par défaut voulu (R-1), et c'est aussi
+   ce qui rend le déploiement de ces cinq lots sans effet visible tant qu'un humain n'a pas décidé
+   de les allumer.
+3. **Les lots 1-7 de l'étude 11** restent à écrire. C'est le KPI honnête de cette étude (§1.4) :
+   elle réussit si é11 démarre, pas si des clés sont saisies.
+4. **Les captures FR + AR** et le **registre de traitement INPDP** (§3.8) demandent un geste
+   humain. La page `/confidentialite` a sa section « Mode IA », elle.
+
+### Ce qui a été validé, et comment
+
+Les cinq migrations et les cinq fichiers pgTAP ont été **rejoués sur un PostgreSQL 16 réel**
+(harnais local : rôles Supabase, schéma `auth`, catalogue minimal), faute de Docker et du CLI
+Supabase dans l'environnement d'exécution : **112 assertions vertes**. La passe a trouvé trois
+défauts des tests eux-mêmes — un `throws_ok` à trois arguments prenait la description pour le
+message attendu, et une sonde `information_schema` sous rôle `authenticated` était vraie pour la
+mauvaise raison. Ils sont corrigés. Côté moteur : `verify`, `ci:verify`, `build:check`,
+`smoke:shell`, `audit:deps` et `harness:check` sont verts, et le budget de bundle a rattrapé une
+régression réelle de 58 Ko (un `validateSearch: z.object(…)` faisait entrer zod dans le chunk
+d'index).
 
 ---
 

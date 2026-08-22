@@ -1,6 +1,6 @@
 # ROADMAP — ordre d'exécution du reste-à-faire (études, lots, contenu)
 
-<!-- roadmap-sync: since-pr=746 -->
+<!-- roadmap-sync: since-pr=807 -->
 
 > **Instantané du 2026-08-10** (créé le 2026-07-20, resynchronisé contre `main` les 2026-07-25,
 > 2026-07-27, 2026-07-29, 2026-08-01, 2026-08-03 puis le **2026-08-10**) — déclinaison opérationnelle de l'**étude 26 (doctrine verticale : profondeur
@@ -77,6 +77,14 @@ précisément pourquoi ils n'y figuraient pas.
   la phase gratuite, lot 5 remplacé par un seed **par requête**, US-3 partielle) et cinq questions
   dont **Q-2, la cadence éditoriale, qui est la mitigation de RISK-1**, et **Q-5, à vérifier en
   base avant tout le reste : la session 1 est-elle réellement `published` ?**
+
+**Ajout du 2026-08-22** — une PR, cinq lots, et une ligne de file qui change de propriétaire :
+
+- **arena#807** — ⚠️ **l'étude 29 est LIVRÉE** (mode IA « à la clé de la famille », 5 lots).
+  **Ce n'est pas hors file** : elle **remplace la ligne 17** (é11 lot 0), que Q-1 a rayée au
+  profit d'un socle unique. §3 étape E réécrite en conséquence, et la ligne 18 (é11 lot 1)
+  devient prenable — c'est le KPI que é29 se donne à elle-même. Reste entier : le **pilote de
+  mesure de deux semaines**, et le fait qu'**aucune clé réelle n'a encore été branchée**.
 
 ## 0. Mode d'emploi (comment exécuter cette roadmap)
 
@@ -335,16 +343,39 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
       Même dépendance de fond à C4bis pour les « points faibles » ; la **tendance**, elle, se
       calcule sur la télémétrie existante
 
-**Étape E — l'étage IA (étude 11) — A5 rendu le 2026-07-20 : exécution dégelée pour les lots 0-2**
+**Étape E — l'étage IA — ⚠️ RÉÉCRITE le 2026-08-22 : la porte est livrée, par é29**
 
-> ⚠️ **Tension à arbitrer par le calendrier, pas par une décision** : A5 dégèle é11, mais A1
-> lui assigne le **rang 9** du pipeline V1. Les lots 0-1 ne seront donc à la rentrée que si une
-> session s'y consacre **hors de la file PRODUIT** ; sinon la cible reste octobre (§7), sans
-> impact sur la rentrée.
+> ⚠️ **Ce que la ligne 17 disait n'existe plus.** L'étude 29 (validée le 2026-08-20, Q-1) **raye
+> le lot 0 de é11** : il n'y a qu'un socle, et c'est le lot 1 de é29 — le même adaptateur, la même
+> comptabilité, les mêmes kill-switches, **plus le payeur**. Laisser la ligne 17 ouverte
+> conduirait une session à écrire un SECOND socle, ce que RISK-9 nomme précisément.
+>
+> ⚠️ **Et la tension de calendrier a changé de nature.** A5 dégelait é11 mais A1 lui donnait le
+> rang 9, et ce qui la tenait là n'était ni la conception ni la faisabilité : **une dépense
+> récurrente à engager par une plateforme sans revenu**. é29 retire cet obstacle — la famille qui
+> veut l'IA branche sa propre clé. La cible d'octobre n'est plus commandée par la trésorerie ;
+> elle l'est par l'ingénierie, et par un pilote de mesure qui n'a pas encore eu lieu.
+>
+> ⚠️ **Ce que é29 n'a PAS livré, et qu'aucune ligne ne doit laisser croire acquis** : aucune clé
+> réelle n'a été branchée. Le seul appel réel du système est la vérification d'une clé à sa
+> saisie, déclenchée par un humain — tout le reste est testé contre un fournisseur factice, ce
+> qui est la règle du §5 de l'étude et aussi sa limite. **Le pilote de deux semaines de Q-9
+> précède toute activation d'une famille.**
 
-- [ ] 17. **é11 lot 0 — socle IA** (adaptateur unique, comptabilité `ai_usage_events`, quotas/énergie, kill-switch) — la **porte LLM unique** (é26 D-8)
-- [ ] 18. **é11 lot 1 — explication personnalisée post-review** (la brique signature : ancrée sur l'item + distracteur + tag)
+- [x] 17. ~~é11 lot 0 — socle IA~~ → **REMPLACÉ par é29 lot 1** (Q-1 : socle unique). **Livré le
+      2026-08-22**, arena#807 : adaptateur multi-fournisseur, `ai_usage_events` **avec `payer`**,
+      kill-switches, et les **sept conditions de sortie** de R-6 que l'adresse libre de Q-4 exige
+- [ ] 18. **é11 lot 1 — explication personnalisée post-review** (la brique signature : ancrée sur
+      l'item + distracteur + tag). **Prenable maintenant** : la porte existe, les deux payeurs sont
+      câblés, `callAi()` attend son premier appelant pédagogique. C'est **le KPI honnête de é29**
+      (§1.4) — elle réussit si é11 démarre, pas si des clés sont saisies
 - [ ] 19. **é11 lots 2 → 7** dans l'ordre de l'étude (plan du jour · chat cadré · boucle de compréhension · exercices ciblés · bilans hebdo · énergie UI) — une PR par lot, cadence selon usage/coûts observés
+- [x] 19bis. **é29 — mode IA « à la clé de la famille », 5 lots** — **livrée le 2026-08-22**
+      (arena#807). Porte · coffre chiffré · activation par élève · coupure atomique · **la Forge**
+      · consoles de dépense et d'admin. **Éteinte tant qu'`AI_KEY_ENC_KEY` n'est pas posée** : le
+      produit sans clé est le produit d'aujourd'hui (R-1). Écarts et reste-à-faire au §8 de
+      [son étude](./29-mode-ia-cle-utilisateur/ETUDE.md) — dont l'**ordre de Q-9 non suivi**
+      (é11 lot 1 devait s'intercaler entre les lots 1 et 2 de é29)
 
 ## 4. FILE FONDATIONS (parallèle — ne bloque pas la file produit)
 
@@ -814,7 +845,7 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
 | Axe        | Cible rentrée                                                                                                                                                                                                  | État au **2026-08-10 (J-22)**                                                                                                              |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | Produit    | File V1 étapes **1-16** livrées (é22 complet dont bannière rentrée · Révision du jour · correction riche · Rappel tolérant lot 1 · maîtrise visible · points faibles + rapport parent)                         | **14/19 lignes faites — inchangé depuis le 2026-08-03** (11/19 au 2026-07-27). Restent **15-16** (é04 A2) et 17-19 (é11, hors file). ⛔ **La 15 est bloquée par C4bis, pas par du code** : elle livrerait un écran vide. La semaine écoulée a été **entièrement contenu + transcription** — ce n'est pas une dérive, c'est C9 qui a tourné |
-| IA         | A5 **rendu le 2026-07-20** : é11 dégelée (lots 0-2, pilote math 9ᵉ, budget 5 $/j, tuteur « El Ostedh »). Lots 0-1 à la rentrée **seulement si une session les prend hors file V1** — sinon octobre             | non commencé — conforme au plan. À J-22, la cible **octobre** est désormais l'hypothèse par défaut, pas le repli                          |
+| IA         | A5 **rendu le 2026-07-20** : é11 dégelée (lots 0-2, pilote math 9ᵉ, budget 5 $/j, tuteur « El Ostedh »). ⚠️ **Le socle n'attend plus** : é29 l'a livré le 2026-08-22 (arena#807), avec un second payeur — la famille | **la PORTE est faite, l'étage pédagogique non.** Ce qui tenait é11 au rang 9 était une dépense à engager sans revenu ; é29 la retire. Restent é11 lots 1-7, et un **pilote de mesure de deux semaines** qui n'a pas eu lieu — aucune clé réelle n'a encore été branchée |
 | Contenu    | Classes existantes à la barre é18 · 1ère sec complète (5 matières) · vidéos 9ᵉ · Tier A `acceptedAnswers` corpus entier · cible arbitrée (A1-Q2) = **statu quo consolidé à la barre é18**, sans classe vitrine | 🔴 **Le point dur n'est plus C4bis : c'est la PUBLICATION (C11)** — **18 sujets mergés jamais appliqués**, dont la campagne lycée anglais/français **en entier**. Du travail fini, invisible. **C3 est à 4/5** (reste l'arabe, bloqué par sa transcription) et la 1ère sec compte **6 matières en ligne**. **C9 a beaucoup avancé** (anglais 2ᵉ/3ᵉ/bac, français 2ᵉ/bac, philo bac). **C4bis étape 0 faite** (#118, registre 5 → 56, tous avec `competency`) ; étape 1 à prendre. **Tier A fait** (arena#652). Toujours rien sur : **vidéos 9ᵉ** (C2) |
 | Fondations | Domaine câblé + monitoring + sitemap (F4) · légal F5 · triage ops F6 en route · `main` verte (§1)                                                                                                              | **`main` verte ✅** et **F4 soldée**. 🔴 **Nouveau : le garde pédagogique est en panne depuis 12 jours** (F10, #81 — 4 runs échoués) ; toute la campagne C9 a été écrite sans lui. **F6 n'a plus aucun blocage technique** ; reste le seul geste opérateur. **F5 reste le vrai bloqueur de la Porte 1**, et **un volet est du CODE** : GAP-024 « droits des personnes » (suppression de compte + export) n'existe nulle part dans `src/` — re-vérifié le 2026-08-10 |
 
