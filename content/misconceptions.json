@@ -17,6 +17,15 @@
     },
     "competency": "math.frac.add-sous"
   },
+  "math.frac.comparaison-par-denominateur": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu compares deux fractions par leurs dénominateurs : un plus grand dénominateur ne fait pas un plus grand nombre, au contraire à numérateur égal",
+      "en": "You compare two fractions by their denominators: a larger denominator does not make a larger number — the opposite, for equal numerators",
+      "ar": "تقارن كسرَين بمقامَيهما: المقام الأكبر لا يعطي عددًا أكبر، بل العكس إذا تساوى البسطان"
+    },
+    "competency": "math.frac.comparaison"
+  },
   "math.dec.compare-by-length": {
     "subject": "math",
     "labels": {
@@ -131,6 +140,78 @@
       "fr": "Tu te trompes sur les bornes de l'intervalle : le crochet ouvert exclut la borne, le crochet fermé l'inclut",
       "en": "You get the interval's endpoints wrong: an open bracket excludes the endpoint, a closed one includes it",
       "ar": "تخطئ في حدود المجال: القوس المفتوح يُقصي الحدّ والقوس المغلق يشمله"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.num.ordre-inverse-a-tort": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu inverses le sens de l'inégalité sans raison : ajouter ou soustraire le même nombre aux deux membres ne le change jamais",
+      "en": "You flip the inequality for no reason: adding or subtracting the same number on both sides never changes it",
+      "ar": "تعكس اتّجاه المتراجحة بلا سبب: إضافة العدد نفسه إلى الطرفَين أو طرحه منهما لا يغيّره أبدًا"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.num.ordre-des-negatifs-inverse": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu ranges les nombres négatifs comme les positifs : plus la valeur absolue est grande, plus le nombre négatif est PETIT",
+      "en": "You order negative numbers like positive ones: the larger the absolute value, the SMALLER the negative number",
+      "ar": "ترتّب الأعداد السالبة كما ترتّب الموجبة: كلّما كبرت القيمة المطلقة صغر العدد السالب"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.num.inverse-conserve-l-ordre": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu crois que passer aux inverses garde l'ordre : pour deux nombres de MÊME signe, il s'inverse",
+      "en": "You think taking reciprocals keeps the order: for two numbers of the SAME sign, it reverses",
+      "ar": "تظنّ أنّ الانتقال إلى المقلوبَين يحفظ الترتيب: لعددَين لهما الإشارة نفسها ينقلب الترتيب"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.num.carre-conserve-l-ordre": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu crois que x ≤ y donne toujours x² ≤ y² : ce n'est vrai que si les deux nombres sont positifs",
+      "en": "You think x ≤ y always gives x² ≤ y²: that holds only when both numbers are positive",
+      "ar": "تظنّ أنّ x ≤ y تعطي دائمًا x² ≤ y²: هذا لا يصحّ إلّا إذا كان العددان موجبَين"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.num.produit-conserve-l-ordre-sans-signe": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu multiplies deux inégalités membre à membre sans regarder les signes : ce geste n'est permis que si tous les termes sont positifs",
+      "en": "You multiply two inequalities side by side without checking signs: that step is allowed only when every term is positive",
+      "ar": "تضرب متراجحتَين طرفًا بطرف دون النظر إلى الإشارات: هذا لا يجوز إلّا إذا كانت كلّ الحدود موجبة"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.num.encadrement-bornes-mal-appariees": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu apparies les bornes dans le mauvais ordre : pour une différence, le minorant se calcule avec le PLUS GRAND de ce qu'on retranche",
+      "en": "You pair the bounds the wrong way round: for a difference, the lower bound uses the LARGEST value being subtracted",
+      "ar": "تقرن الحدّين بترتيب خاطئ: في الفرق، يُحسب الحدّ الأدنى بأكبر ما يُطرح"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.num.comparaison-radical-et-entier": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu compares un radical à un entier au jugé : compare les CARRÉS des deux nombres, c'est le seul geste sûr",
+      "en": "You compare a root with a whole number by eye: compare the SQUARES of the two numbers — that is the only safe move",
+      "ar": "تقارن جذرًا بعدد صحيح بالتخمين: قارن مربّعَي العددين، فهو الطريق الوحيد المضمون"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.num.grandeurs-inversement-proportionnelles": {
+    "subject": "math",
+    "labels": {
+      "fr": "Quand le produit de deux grandeurs est constant, plus l'une grandit, plus l'autre DIMINUE : une base plus large donne une hauteur plus faible",
+      "en": "When the product of two quantities is fixed, the larger one grows, the SMALLER the other gets: a wider base means a lower height",
+      "ar": "إذا كان جداء مقدارَين ثابتًا فكلّما كبر أحدهما صغر الآخر: قاعدة أوسع تعطي ارتفاعًا أقلّ"
     },
     "competency": "math.num.ordre-encadrement"
   },
