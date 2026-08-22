@@ -9,10 +9,10 @@
     {
       "prompt": "بسّط مجموع الأشعّة (علاقة شال): AB + BC + CD.",
       "options": [
-        { "id": "a", "text": "AC" },
-        { "id": "b", "text": "BD" },
+        { "id": "a", "text": "AC", "misconceptionTag": "math.vec.chasles-relais-incomplet" },
+        { "id": "b", "text": "BD", "misconceptionTag": "math.vec.chasles-relais-incomplet" },
         { "id": "c", "text": "AD" },
-        { "id": "d", "text": "DA" }
+        { "id": "d", "text": "DA", "misconceptionTag": "math.vec.chasles-sens-inverse" }
       ],
       "correctOption": "c",
       "explanation": "بعلاقة شال نجمع الأشعّة المتتالية: AB + BC = AC، ثمّ AC + CD = AD. إذن المجموع = AD. ✓ الخطأ الشائع: التوقّف عند AC (نسيان الحدّ الأخير)؛ أو قلب الاتّجاه فيُكتب DA (وهو الشعاع المعاكس −AD).",
@@ -22,7 +22,7 @@
     {
       "prompt": "بسّط الشعاع: AB − AC.",
       "options": [
-        { "id": "a", "text": "BC" },
+        { "id": "a", "text": "BC", "misconceptionTag": "math.vec.chasles-sens-inverse" },
         { "id": "b", "text": "CB" },
         { "id": "c", "text": "CA" },
         { "id": "d", "text": "BA" }
@@ -36,7 +36,7 @@
       "prompt": "I منتصف القطعة [AB]. بسّط الشعاع IA + IB.",
       "options": [
         { "id": "a", "text": "AB" },
-        { "id": "b", "text": "2 IA" },
+        { "id": "b", "text": "2 IA", "misconceptionTag": "math.vec.egalite-longueur-seule" },
         { "id": "c", "text": "BA" },
         { "id": "d", "text": "الشعاع المعدوم 0" }
       ],
@@ -49,7 +49,7 @@
       "prompt": "ABCD متوازي أضلاع. بسّط مجموع الأشعّة AB + AD.",
       "options": [
         { "id": "a", "text": "AC" },
-        { "id": "b", "text": "BD" },
+        { "id": "b", "text": "BD", "misconceptionTag": "math.vec.parallelogramme-sommets-mal-ordonnes" },
         { "id": "c", "text": "2 AB" },
         { "id": "d", "text": "DB" }
       ],
@@ -61,8 +61,8 @@
     {
       "prompt": "مركّبة الانسحاب ذي الشعاع AB متبوعةً بالانسحاب ذي الشعاع CA. ما الشعاع الناتج (صورة أيّ نقطة M إلى M'')؟",
       "options": [
-        { "id": "a", "text": "AC" },
-        { "id": "b", "text": "BA" },
+        { "id": "a", "text": "AC", "misconceptionTag": "math.vec.chasles-sens-inverse" },
+        { "id": "b", "text": "BA", "misconceptionTag": "math.vec.chasles-sens-inverse" },
         { "id": "c", "text": "CB" },
         { "id": "d", "text": "الشعاع المعدوم 0" }
       ],
@@ -76,7 +76,7 @@
       "options": [
         { "id": "a", "text": "BA = −AB فالمجموع = الشعاع المعدوم 0" },
         { "id": "b", "text": "الصواب 2 BA" },
-        { "id": "c", "text": "لا خطأ، الحساب صحيح" },
+        { "id": "c", "text": "لا خطأ، الحساب صحيح", "misconceptionTag": "math.vec.chasles-sens-inverse" },
         { "id": "d", "text": "الصواب AB" }
       ],
       "correctOption": "a",
