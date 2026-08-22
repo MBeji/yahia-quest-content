@@ -503,6 +503,87 @@
     },
     "competency": "math.stat.effectifs-frequences"
   },
+  "math.stat.population-et-caractere-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds la population et le caractère : la population est l'ensemble étudié, le caractère est ce qu'on observe sur chacun de ses individus",
+      "en": "You confuse the population with the variable: the population is the group studied, the variable is what you observe on each of its members",
+      "ar": "تخلط بين المجتمع والميزة: المجتمع هو المجموعة المدروسة، والميزة هي ما نلاحظه على كلّ فرد منها"
+    },
+    "competency": "math.stat.effectifs-frequences"
+  },
+  "math.prob.experience-deterministe-prise-pour-aleatoire": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends pour aléatoire une opération dont le résultat est certain : une expérience aléatoire a plusieurs issues possibles et on ne sait pas laquelle sortira",
+      "en": "You treat an operation with a certain outcome as random: a random experiment has several possible outcomes and you cannot tell which will occur",
+      "ar": "تعدّ عمليةً نتيجتُها أكيدة تجربةً عشوائية: التجربة العشوائية لها عدّة إمكانيات ولا يُعرف أيّها سيقع"
+    },
+    "competency": "math.prob.experience-aleatoire"
+  },
+  "math.prob.evenement-certain-et-impossible-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds l'événement certain et l'événement impossible : le certain a pour probabilité 1, l'impossible 0",
+      "en": "You confuse the certain event with the impossible one: certain has probability 1, impossible has 0",
+      "ar": "تخلط بين الحدث الأكيد والحدث المستحيل: الأكيد احتماله 1 والمستحيل احتماله 0"
+    },
+    "competency": "math.prob.frequence-et-chance"
+  },
+  "math.prob.chance-comparee-sur-effectif-brut": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu compares les nombres bruts au lieu des proportions : une chance se mesure toujours par rapport au total",
+      "en": "You compare raw counts instead of proportions: a chance is always measured against the total",
+      "ar": "تقارن الأعداد الخام بدل النسب: الحظّ يُقاس دائمًا بالنسبة إلى المجموع"
+    },
+    "competency": "math.prob.frequence-et-chance"
+  },
+  "math.prob.equiprobabilite-supposee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu supposes que toutes les issues ont la même chance : ce n'est vrai que si l'énoncé le garantit, sinon il faut compter",
+      "en": "You assume every outcome is equally likely: that holds only when the problem says so — otherwise you must count",
+      "ar": "تفترض أنّ كلّ الإمكانيات متساوية الحظّ: هذا لا يصحّ إلّا إذا نصّ عليه النصّ، وإلّا وجب الإحصاء"
+    },
+    "competency": "math.prob.frequence-et-chance"
+  },
+  "math.prob.tirage-avec-et-sans-remise-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds tirage avec remise et sans remise : avec remise l'objet revient et le nombre de choix ne diminue pas",
+      "en": "You confuse drawing with and without replacement: with replacement the item goes back and the number of choices does not shrink",
+      "ar": "تخلط بين السحب مع الإرجاع والسحب بدون إرجاع: مع الإرجاع يعود القرص فلا ينقص عدد الاختيارات"
+    },
+    "competency": "math.prob.denombrement-issues"
+  },
+  "math.prob.tirage-simultane-et-successif-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu comptes l'ordre alors que le tirage est simultané : tirer 1 puis 2 et tirer 2 puis 1 sont alors la même possibilité",
+      "en": "You count the order although the draw is simultaneous: taking 1 then 2 and 2 then 1 are then the same outcome",
+      "ar": "تحسب الترتيب والسحب متزامن: سحب 1 ثمّ 2 وسحب 2 ثمّ 1 إمكانية واحدة حينئذٍ"
+    },
+    "competency": "math.prob.denombrement-issues"
+  },
+  "math.stat.effectif-cumule-non-cumule": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu donnes l'effectif de la valeur au lieu de son effectif cumulé : le cumulé additionne tous les effectifs jusqu'à elle",
+      "en": "You give the value's own count instead of its cumulative count: the cumulative adds up every count down to it",
+      "ar": "تعطي تكرار القيمة بدل تكرارها المجمّع: المجمّع يجمع كلّ التكرارات إلى غاية تلك القيمة"
+    },
+    "competency": "math.stat.effectifs-frequences"
+  },
+  "math.stat.pourcentage-et-angle-de-secteur-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends le pourcentage pour la mesure de l'angle : un secteur se calcule sur 360°, pas sur 100",
+      "en": "You take the percentage as the angle: a pie slice is computed out of 360°, not out of 100",
+      "ar": "تأخذ النسبة المائوية قيسًا للزاوية: القطاع يُحسب على 360° لا على 100"
+    },
+    "competency": "math.stat.effectifs-frequences"
+  },
   "math.stat.moyenne-sans-ponderation": {
     "subject": "math",
     "labels": {
@@ -521,12 +602,48 @@
     },
     "competency": "math.stat.moyenne-mediane"
   },
+  "math.stat.mediane-effectif-pair-sans-moyenne": {
+    "subject": "math",
+    "labels": {
+      "fr": "Avec un effectif pair, tu ne gardes qu'une des deux valeurs centrales : la médiane est leur moyenne",
+      "en": "With an even count you keep only one of the two middle values: the median is their average",
+      "ar": "عند التكرار الزوجي تحتفظ بإحدى القيمتَين الوسطيَّين: الوسيط هو معدّلهما"
+    },
+    "competency": "math.stat.moyenne-mediane"
+  },
+  "math.stat.moyenne-et-mediane-confondues": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds la moyenne et la médiane : la moyenne partage le total, la médiane partage l'effectif en deux",
+      "en": "You confuse the mean with the median: the mean shares out the total, the median splits the count in two",
+      "ar": "تخلط بين المعدّل والوسيط: المعدّل يقسم المجموع، والوسيط يقسم العدد إلى نصفين"
+    },
+    "competency": "math.stat.moyenne-mediane"
+  },
   "math.stat.mode-mediane-confondus": {
     "subject": "math",
     "labels": {
       "fr": "Tu confonds le mode et la médiane : le mode est la valeur la plus fréquente, la médiane celle du milieu",
       "en": "You confuse the mode with the median: the mode is the most frequent value, the median the middle one",
       "ar": "تخلط بين المنوال والوسيط: المنوال هو القيمة الأكثر تكرارًا، والوسيط هو القيمة المتوسّطة"
+    },
+    "competency": "math.stat.mode"
+  },
+  "math.stat.mode-et-valeur-maximale-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends la plus grande valeur au lieu de la plus fréquente : le mode se lit dans la colonne des effectifs, pas dans celle des valeurs",
+      "en": "You take the largest value instead of the most frequent one: the mode is read in the counts column, not the values column",
+      "ar": "تأخذ أكبر قيمة بدل الأكثر تكرارًا: المنوال يُقرأ في عمود التكرارات لا في عمود القيم"
+    },
+    "competency": "math.stat.mode"
+  },
+  "math.stat.moyenne-et-mode-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds la moyenne et le mode : le mode est la valeur la plus fréquente, la moyenne se calcule sur toutes les valeurs",
+      "en": "You confuse the mean with the mode: the mode is the most frequent value, the mean is computed over every value",
+      "ar": "تخلط بين المعدّل والمنوال: المنوال هو القيمة الأكثر تكرارًا، والمعدّل يُحسب على كلّ القيم"
     },
     "competency": "math.stat.mode"
   },

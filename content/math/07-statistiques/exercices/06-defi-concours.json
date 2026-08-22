@@ -48,7 +48,7 @@
     {
       "prompt": "المجموعة أ فيها 20 تلميذًا معدّلهم 11، والمجموعة ب فيها 30 تلميذًا معدّلهم 16. ما معدّل المجموعتَين معًا؟",
       "options": [
-        { "id": "a", "text": "13,5" },
+        { "id": "a", "text": "13,5", "misconceptionTag": "math.stat.moyenne-sans-ponderation" },
         { "id": "b", "text": "14" },
         { "id": "c", "text": "27" },
         { "id": "d", "text": "13" }
@@ -61,8 +61,8 @@
     {
       "prompt": "رُتّبت ستّ قيم تصاعديًّا: 4 ، 7 ، 8 ، 10 ، 15 ، 20. ما الوسيط؟",
       "options": [
-        { "id": "a", "text": "8" },
-        { "id": "b", "text": "10" },
+        { "id": "a", "text": "8", "misconceptionTag": "math.stat.mediane-effectif-pair-sans-moyenne" },
+        { "id": "b", "text": "10", "misconceptionTag": "math.stat.mediane-effectif-pair-sans-moyenne" },
         { "id": "c", "text": "9" },
         { "id": "d", "text": "12" }
       ],
@@ -75,9 +75,9 @@
       "prompt": "حسب تلميذ معدّل السلسلة {2 ; 4 ; 4 ; 10} فكتب: «(2 + 4 + 10) ÷ 3 = 5,33 لأنّ 4 مكرّرة فتُحسب مرّة واحدة». ما الخطأ؟",
       "options": [
         { "id": "a", "text": "تُحسب كلّ القيم بتكرارها: (2 + 4 + 4 + 10) ÷ 4 = 5" },
-        { "id": "b", "text": "الصواب فعلًا 5,33" },
-        { "id": "c", "text": "لا خطأ، القيمة المكرّرة تُحسب مرّة" },
-        { "id": "d", "text": "الوسيط هو 4 فالمعدّل مثله" }
+        { "id": "b", "text": "الصواب فعلًا 5,33", "misconceptionTag": "math.stat.moyenne-sans-ponderation" },
+        { "id": "c", "text": "لا خطأ، القيمة المكرّرة تُحسب مرّة", "misconceptionTag": "math.stat.moyenne-sans-ponderation" },
+        { "id": "d", "text": "الوسيط هو 4 فالمعدّل مثله", "misconceptionTag": "math.stat.moyenne-et-mediane-confondues" }
       ],
       "correctOption": "a",
       "explanation": "في حساب المعدّل تُحسب كلّ قيمة بعدد تكرارها، فالقيمة 4 المكرّرة تُجمع مرّتَين والعدد الكلّي 4: (2 + 4 + 4 + 10) ÷ 4 = 20 ÷ 4 = 5. (تمرين «صيد الخطأ».) الخطأ الشائع: حذف القيم المكرّرة من المجموع أو من العدد الكلّي.",

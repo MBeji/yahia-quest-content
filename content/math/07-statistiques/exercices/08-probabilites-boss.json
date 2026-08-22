@@ -10,8 +10,8 @@
       "prompt": "ألقى تلميذ قطعة نقود 40 مرّة، فظهر الوجه P في 22 مرّة والوجه F في 18 مرّة. ما هو تواتر الوجه P في هذه التجربة، بالنسبة المائوية؟",
       "options": [
         { "id": "a", "text": "45%" },
-        { "id": "b", "text": "22%" },
-        { "id": "c", "text": "50%" },
+        { "id": "b", "text": "22%", "misconceptionTag": "math.stat.effectif-frequence-confondus" },
+        { "id": "c", "text": "50%", "misconceptionTag": "math.prob.equiprobabilite-supposee" },
         { "id": "d", "text": "55%" }
       ],
       "correctOption": "d",
@@ -25,7 +25,7 @@
     {
       "prompt": "صندوق به 5 أقراص مرقّمة 1 و2 و3 و4 و5. نسحب قرصين في آن واحد (سحب متزامن). ما هو عدد إمكانيات هذا السحب؟",
       "options": [
-        { "id": "a", "text": "20" },
+        { "id": "a", "text": "20", "misconceptionTag": "math.prob.tirage-simultane-et-successif-confondus" },
         { "id": "b", "text": "10" },
         { "id": "c", "text": "25" },
         { "id": "d", "text": "5" }
@@ -39,7 +39,7 @@
       "prompt": "في تجربة عشوائية نسحب فيها قرصًا يحمل عددًا صحيحًا، بيّن إحصاء كلّ الإمكانيات أنّ احتمال الحصول على عدد فردي يساوي 35%. ما هو احتمال الحصول على عدد زوجي؟",
       "options": [
         { "id": "a", "text": "35%" },
-        { "id": "b", "text": "50%" },
+        { "id": "b", "text": "50%", "misconceptionTag": "math.prob.equiprobabilite-supposee" },
         { "id": "c", "text": "70%" },
         { "id": "d", "text": "65%" }
       ],
@@ -100,7 +100,7 @@
       "prompt": "يمثّل الرسم المقابل أوجه نردين: يحمل النرد الأوّل الأرقام 1 و1 و1 و5 و5 و5، ويحمل النرد الثاني الأرقام 2 و2 و2 و6 و6 و6. نعتبر اللعبة التالية بين لاعبين اثنين: يختار كلّ لاعب نردًا، ثمّ يرمي اللاعبان نرديهما، ويفوز اللاعب الذي يظهر على الوجه الفوقي لنرده العدد الأكبر. أيّ نرد تختار لتكون حظوظك في الفوز أوفر؟\n<svg viewBox=\"0 0 366 165\">\n<title>أوجه نردين: أوجه النرد الأوّل تحمل الأرقام 1 و1 و1 و5 و5 و5، وأوجه النرد الثاني تحمل الأرقام 2 و2 و2 و6 و6 و6</title>\n<g fill=\"#64748b\" stroke=\"#0f172a\" stroke-width=\"2\">\n<rect x=\"12\" y=\"60\" width=\"34\" height=\"34\"/><rect x=\"46\" y=\"60\" width=\"34\" height=\"34\"/><rect x=\"80\" y=\"60\" width=\"34\" height=\"34\"/><rect x=\"114\" y=\"60\" width=\"34\" height=\"34\"/><rect x=\"46\" y=\"26\" width=\"34\" height=\"34\"/><rect x=\"46\" y=\"94\" width=\"34\" height=\"34\"/>\n<rect x=\"218\" y=\"60\" width=\"34\" height=\"34\"/><rect x=\"252\" y=\"60\" width=\"34\" height=\"34\"/><rect x=\"286\" y=\"60\" width=\"34\" height=\"34\"/><rect x=\"320\" y=\"60\" width=\"34\" height=\"34\"/><rect x=\"252\" y=\"26\" width=\"34\" height=\"34\"/><rect x=\"252\" y=\"94\" width=\"34\" height=\"34\"/>\n</g>\n<g font-size=\"17\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#ffffff\">\n<text x=\"29\" y=\"83\">2</text><text x=\"63\" y=\"83\">6</text><text x=\"97\" y=\"83\">2</text><text x=\"131\" y=\"83\">2</text><text x=\"63\" y=\"49\">6</text><text x=\"63\" y=\"117\">6</text>\n<text x=\"235\" y=\"83\">5</text><text x=\"269\" y=\"83\">1</text><text x=\"303\" y=\"83\">5</text><text x=\"337\" y=\"83\">5</text><text x=\"269\" y=\"49\">1</text><text x=\"269\" y=\"117\">1</text>\n</g>\n<g font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\">\n<text x=\"80\" y=\"150\">النرد الثاني</text><text x=\"286\" y=\"150\">النرد الأوّل</text>\n</g>\n</svg>",
       "options": [
         { "id": "a", "text": "النرد الأوّل" },
-        { "id": "b", "text": "لا فرق بين النردين" },
+        { "id": "b", "text": "لا فرق بين النردين", "misconceptionTag": "math.prob.equiprobabilite-supposee" },
         { "id": "c", "text": "النرد الثاني" },
         { "id": "d", "text": "يتوقّف على من يرمي أوّلًا" }
       ],
