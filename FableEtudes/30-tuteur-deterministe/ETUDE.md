@@ -1,0 +1,1400 @@
+# Étude 30 — Le tuteur déterministe : porter le moteur adaptatif au rang des références (ALEKS · Squirrel AI · CENTURY)
+
+> **Statut** : brouillon — Q-1…Q-7 ouvertes (§7), aucune n'empêche de lancer le lot 1
+> **Priorité** : 30 · **Valeur** : le produit sait déjà _si_ l'élève a raté et _à quel point_ une
+> compétence est faible ; il ne sait pas **ce qu'il croit**, **ce qu'il peut en déduire**, ni **quoi
+> servir ensuite**. Cette étude ferme les quatre organes manquants d'un système tutoriel
+> intelligent — croyance calibrée, inférence dans le graphe, diagnostic d'entrée, prochaine
+> meilleure action — et les rend **tous déterministes**, donc vivants sans clé d'IA ·
+> **Complexité** : très haute (transverse DB + moteur + corpus)
+> **Architecte** : Opus 5 (claude-opus-5), 2026-08-22 · **Exécuteur cible** : Sonnet (ou équiv.)
+> **Dépend de** : é04 A0 ✅ (télémétrie `question_attempts`) · é07 lots 1/2/4/5 ✅ (graphe, maîtrise
+> EWMA, RPCs de lecture, plan compétence-aware) · é22 ✅ (parcours, `resolveNextAction`) ·
+> **et d'un chantier de contenu hors de ce périmètre** : C4bis (tagging des distracteurs) et
+> l'extension du registre de compétences hors `math` — §6 RISK-1
+> **Bloque** : rien de démarré ; **fournit** à é11 (tuteur IA) le `p_known` et la frontière que
+> ses prompts citeront, à é08 (rapport parent/enseignant) la maîtrise déclarable, à é02 (examen
+> blanc) le percentile par compétence
+> **Docs normatifs liés** : AGENTS.md · ARCHITECTURE.md · STATUS.md §1bis (scorecard é28) ·
+> é26 (doctrine verticale — **P-5a gouverne cette étude**) · é04 §9 (correction riche, décisions
+> fermées) · é07 (R-1…R-6, non rouvertes) · é22 (« carte honnête, pas de faux verrou ») ·
+> é29 (la porte IA) · `docs/content-generation-pipeline.md`
+
+---
+
+## 1. Contexte & objectif produit
+
+### 1.1 La commande humaine (mandat du 2026-08-22)
+
+Mohamed demande que la plateforme atteigne le niveau méthodologique des trois références
+citées — **Squirrel AI** (Chine), **ALEKS** (McGraw-Hill, États-Unis), **CENTURY Tech**
+(Royaume-Uni) — sur six mécanismes, repris ici comme cahier des charges :
+
+1. **cartographie atomique du savoir** — micro-compétences, dépendances strictes, niveaux
+   d'objectifs, batterie d'activités graduées ;
+2. **diagnostic initial adaptatif** — situer sans faire passer tout le programme : déduire les
+   prérequis d'une réussite complexe, isoler immédiatement la lacune d'un échec de base ;
+3. **suivi dynamique de la maîtrise** — recalculer après chaque réponse, en tenant compte de
+   **la faute d'inattention** et de **la bonne réponse due au hasard** ; ne déclarer « maîtrisé »
+   qu'après validation **répétée et variée** ;
+4. **moteur de décision (ZPD)** — la prochaine meilleure action : monter, varier le format, ou
+   déclencher une **boucle de remédiation qui remonte la chaîne des prérequis** ;
+5. **guidage socratique & échafaudage** — jamais la solution brute ; trois paliers (question
+   réflexive → règle/analogie → décomposition) ; ton adapté ;
+6. **gestion du rythme et de la charge cognitive** — détecter surcharge et fatigue (latence
+   anormale, hésitations, série d'erreurs inhabituelle) et réagir.
+
+Cadre théorique posé par le mandat : Bloom (mastery learning), Vygotsky (ZPD), Bruner
+(échafaudage), Sweller (charge cognitive).
+
+**Ce que cette étude fait de ce mandat.** Elle le prend en entier, et elle en **traduit** cinq
+points sur six en mécanique déterministe spécifiée ici. Le sixième — le **ton** et la
+**formulation** du guidage socratique (point 5, second alinéa) — n'est pas de son ressort : il
+appartient à l'étude 11, derrière la porte de l'étude 29. Cette étude lui livre l'échafaudage
+**écrit**, qui fonctionne sans clé ; é11 lui ajoutera la voix. C'est la doctrine é26 P-5b, pas
+un renoncement : **le déterministe décide, le LLM parle.**
+
+### 1.2 L'état réel, mesuré dans le code et le corpus le 2026-08-22
+
+Rien de ce qui suit n'est de mémoire. Chaque ligne a été relue dans `main` (moteur) et sur
+`origin/main` (corpus) le jour de la rédaction.
+
+**Ce qui existe déjà, et qui est en avance sur sa réputation :**
+
+| Organe | Où | État vérifié |
+| --- | --- | --- |
+| Télémétrie par question | `question_attempts` (é04 A0.1) | ✅ (élève, question, chapitre, **session**, choix, correct, tag résolu à l'insert, source) — append-only, écriture RPC seule |
+| Erreur nommée par option | `questions.distractor_tags` JSONB **serveur seul** | ✅ colonne + `REVOKE SELECT` ; **0 valeur dans le corpus** |
+| Registre des erreurs | `content/misconceptions.json` | ✅ **56 entrées, 56 pourvues de `competency`** (mesuré) |
+| Graphe de compétences | `competencies` / `competency_prereqs` / `question_competencies` | ✅ **62 compétences, 80 arêtes, 11 domaines, profondeur 6, 5 racines, 1,29 prérequis en moyenne, max 3 directs, fan-out max 7** (mesuré sur `content/competences/math.json` ; STATUS.md dit encore 59 — écart signalé au §8) |
+| Maîtrise par compétence | `user_competency_mastery` (é07 lot 2) | ✅ EWMA `m ← m + α(r − m)`, α = .15/.20/.25/.30 selon le palier de difficulté, init 50, **oubli à la lecture** (−1 pt/semaine, plancher 30) |
+| Lectures du graphe | `get_my_competency_map`, `get_competency_blockers`, `get_exercises_for_competency` | ✅ (é07 lot 4) |
+| Ordonnanceur quotidien | `get_daily_plan` | ✅ score = retard SM-2 (0→1) + 0,5 × poids misconceptions + 0,5 × faiblesse de compétence, **plafond 3** |
+| Répétition espacée | `spaced_repetition_schedule` | ✅ paliers 1/3/7 j, boucle refermée à la réussite (é22 lot 2) |
+| Correction riche à l'échec | `get_attempt_review` (é04 A1.2) | ✅ erreur nommée + « revoir le cours » + « m'entraîner » |
+| Types d'items | `questions.question_type` | ✅ **6 natifs** : `mcq`, `numeric`, `ordering`, `matching`, `multi`, `short_answer` + la **variante rappel** (é17, saisie libre) |
+| Porte d'accès | `resolve_exercise_access` | ✅ arbitre unique, jamais contourné |
+
+**Ce qui manque, et qui est exactement le mandat :**
+
+| Manque (mesuré) | Conséquence | Point du mandat |
+| --- | --- | --- |
+| **0 occurrence de `misconceptionTag` sur 22 146 questions** (re-mesuré ici sur tout `content/`) | tout l'étage « erreur nommée » est alimenté par du vide | 2, 4 |
+| Compétences taggées sur **`math` (9ᵉ) et `math-6eme` seulement** — 234 fichiers, ~2 matières sur 90 | le graphe n'éclaire que deux matières | 1 |
+| **Aucun modèle de croyance** : l'EWMA traite toute erreur comme une preuve pleine | ni inattention, ni hasard ; un QCM à 4 options réussi au hasard pèse autant qu'une saisie libre juste | **3** |
+| **Aucune inférence dans le graphe** : réussir une compétence avancée n'apprend rien sur ses prérequis | il faut tout jouer pour tout savoir | **2** |
+| **Aucun diagnostic d'entrée** : tout élève démarre à 50 partout | la première semaine est aveugle | **2** |
+| **Aucune autorité de séquencement à l'item** : `computeNextExerciseId` trie par `display_order` ; un exercice est servi et soumis **en bloc** | pas de « prochaine meilleure action » | **4** |
+| **Aucun échafaudage** : le seul secours est `consume_hint`, qui révèle **l'explication entière** contre un consommable | tout ou rien, et payant | **5** |
+| **Aucune latence par item** : `question_attempts` n'a que `created_at` ; le temps n'existe qu'au niveau de l'exercice (`attempts.duration_seconds`, `exercise_sessions.started_at/completed_at`) | la surcharge est indétectable | **6** |
+| `difficulty_adaptation` **écrite par les RPC de soumission, lue par aucun sélecteur** | une boucle morte de plus | 4 |
+
+> **Le diagnostic tient en une phrase.** Le moteur n'est pas en retard sur l'intelligence — il
+> est en retard sur **la preuve** (le corpus ne dit pas ce que chaque erreur signifie) et sur
+> **la décision** (personne ne choisit l'item suivant). Il manque **six organes**, numérotés ici et repris tels
+> quels au §3 : une **croyance calibrée** ❶ · une **inférence** ❷ · un **diagnostic d'entrée** ❸ ·
+> une **frontière « prêt à apprendre »** ❹, d'où se déduit la prochaine action · un
+> **échafaudage** ❺ · une **gestion de la charge** ❻. Les organes ❶ ❷ ❹ sont la charpente — ce
+> sont eux, avec le tagging du corpus, que livre le sous-ensemble minimal du §4.1.
+
+### 1.3 Le référentiel : ce que font les trois systèmes cités
+
+Détail sourcé en **annexe B**. Le condensé qui commande l'architecture :
+
+| Référence | Le mécanisme qui fait sa réputation | Ce qu'on en retient ici |
+| --- | --- | --- |
+| **ALEKS** | _Knowledge Space Theory_ : l'état de connaissance est un **ensemble** dans la structure ordonnée du domaine ; le diagnostic situe l'élève sur 200–300 items en **~25–30 questions**, chacune choisie d'après la précédente ; la « frange extérieure » nomme ce que l'élève est **prêt à apprendre** | **la frontière** (§3.4) et **l'inférence** (§3.3) — l'organe le plus rentable et le plus absent |
+| **Squirrel AI** | découpage **nano** (jusqu'à ~10 000 points pour les maths collège, contre 2 000–3 000 dans un manuel) + moteur à trois étages (carte de l'élève / gestion d'objectifs / recommandation) | **la granularité est un choix de corpus, pas de code** — 62 compétences par matière-année est la maille retenue (Q-2) ; on ne copie **pas** le nano |
+| **CENTURY** | micro-apprentissage explicitement conçu pour **ne pas surcharger** ; entrelacement, récupération fréquente, intervalles espacés | valide l'existant (SM-2, rappel actif) et donne sa raison d'être au **lot 8** (charge cognitive) |
+
+Les trois partagent la même colonne vertébrale — un **modèle du domaine** (graphe), un **modèle
+de l'apprenant** (croyance), un **modèle pédagogique** (décision) : la définition canonique d'un
+ITS. L'arena possède le premier, une ébauche du deuxième, et rien du troisième.
+
+### 1.4 Objectif & indicateurs de succès
+
+**Objectif** : qu'à tout instant, pour un élève et une matière taggée, le système sache dire —
+et prouver — **trois phrases** :
+
+> « Voilà ce que tu maîtrises, et pourquoi j'en suis sûr. Voilà ce que tu es prêt à apprendre
+> maintenant. Voilà ce qui te bloque, et par où on reprend. »
+
+**KPI** (mesurés sur la matière pilote `math` 9ᵉ) :
+
+- **KPI-1 — couverture de preuve** : % d'items servis dont la compétence **et** les distracteurs
+  sont taggés. Cible **100 % sur `math` 9ᵉ** avant le lot 4. Il commande tous les autres.
+- **KPI-2 — économie du diagnostic** : nombre médian d'items pour déclarer une première
+  compétence maîtrisée. Référence ALEKS : ~30 questions pour situer 200–300 items. Cible ici :
+  **≤ 6 items par compétence déclarée**, inférence comprise.
+- **KPI-3 — calibration** : parmi les items où le modèle annonçait `p_known ∈ [0,7 ; 0,8]`, le
+  taux de réussite observé doit tomber dans **[0,65 ; 0,85]**. Un modèle non calibré est un
+  modèle qui ment poliment : c'est le seul KPI qui peut **invalider** l'étude.
+- **KPI-4 — piétinement** (_wheel-spinning_) : part des élèves accumulant ≥ 10 tentatives sur une
+  compétence sans jamais la maîtriser. Mesure de départ établie au lot 8 ; cible : **en baisse**
+  après le lot 5 (la remédiation attaque la cause, pas le symptôme).
+- **KPI-5 — la frontière est jouée** : % des exercices lancés qui appartiennent à la frontière
+  « prêt à apprendre ». Sans cible chiffrée en v1 : on veut la **tendance**, pas un quota.
+
+### 1.5 Ce que cette étude ne cherche PAS à faire
+
+- **Aucun LLM dans le chemin de décision** (é26 P-5a). Tout ce qui est spécifié ici tourne avec
+  `AI_KEY_ENC_KEY` absente — c'est-à-dire **dans le produit d'aujourd'hui**.
+- **Aucun apprentissage automatique de paramètres.** Les paramètres du modèle de croyance sont
+  **écrits dans le registre** et versionnés, pas ajustés par descente de gradient (D-2 — le
+  problème d'identifiabilité de BKT, annexe B.4, explique pourquoi).
+- **Aucun verrou de progression.** L'étude 22 a retiré les faux verrous séquentiels ; on ne les
+  remet pas. La maîtrise **conseille**, elle n'interdit pas (D-3, arbitrage Q-1).
+- **Aucune génération d'exercices à la volée** (é04 A3, gelée ; é29 la Forge couvre le besoin
+  ponctuel, hors récompense).
+- **Aucune refonte de é04 / é07 / é22.** Leurs décisions sont fermées et tenues. Cette étude
+  **ajoute des organes** ; les deux seuls amendements nécessaires sont nommés au §3.9 et passent
+  par leur étude propriétaire.
+- **Pas de nano-découpage à la Squirrel AI.** Multiplier la maille par 100 multiplierait la dette
+  de tagging par 100 pour un gain non démontré.
+- **Pas de tableau de bord enseignant** (é08, propriétaire du canal enseignant depuis é28 Q-3).
+
+---
+
+## 2. Spécification fonctionnelle
+
+### 2.1 Acteurs & user stories
+
+- **US-1 (élève, diagnostic)** — à mon entrée dans une matière taggée, on me propose « **On te
+  situe en 5 minutes** » : 12 à 20 questions, une à la fois, choisies d'après mes réponses. À la
+  fin je vois une carte : ce que je maîtrise déjà, ce que je peux attaquer, ce qui manque en
+  amont. Je peux **refuser** ou **arrêter** à tout moment, sans perdre ce qui a été mesuré.
+- **US-2 (élève, croyance)** — sur ma carte de compétences, chaque compétence porte un état
+  lisible — **maîtrisée · en cours · fragile · lacune** — et non un pourcentage nu. Une
+  compétence n'est **maîtrisée** que si je l'ai prouvée **plusieurs fois et sous plusieurs
+  formes**.
+- **US-3 (élève, inférence)** — quand je réussis une compétence avancée, le système **ne me
+  refait pas passer** ses prérequis : il me le dit (« _tu as réussi Thalès : je considère la
+  proportionnalité acquise, dis-moi si je me trompe_ ») et je peux **contester en un geste**.
+- **US-4 (élève, prochaine action)** — après chaque exercice, une seule proposition, motivée :
+  monter d'un cran, refaire **la même compétence sous une autre forme**, ou **redescendre au
+  prérequis** qui bloque. Jamais une liste : **une** action, avec sa raison en une phrase.
+- **US-5 (élève, échafaudage)** — quand je bute, je peux demander de l'aide **par paliers** :
+  d'abord une question qui oriente mon attention, puis la règle ou une analogie, puis la
+  décomposition en une sous-étape. **Jamais la réponse.** Gratuit, et ça ne consomme aucun objet.
+- **US-6 (élève, rythme)** — quand j'enchaîne les erreurs ou que je traîne anormalement, le
+  système **baisse d'un cran**, change de format ou me propose une pause — sans jamais me
+  bloquer ni me sanctionner.
+- **US-7 (parent)** — le rapport nomme les compétences **déclarées maîtrisées** (avec « prouvé
+  N fois, sous M formes »), et non un pourcentage moyen. _(Livré par é08, qui consomme les
+  lectures de cette étude ; hors périmètre ici.)_
+- **US-8 (admin)** — une console de **calibration** : distribution de `p_known`, courbe de
+  calibration (KPI-3), liste des compétences dont les paramètres semblent faux. Sans elle, le
+  modèle est invérifiable.
+
+### 2.2 Règles métier
+
+**Croyance et preuve**
+
+- **R-1** — la croyance `p_known ∈ [0,01 ; 0,99]` est la **variable de décision** ; la maîtrise
+  EWMA `mastery ∈ [0,100]` de é07 reste la **variable d'affichage** et n'est pas modifiée. Les
+  deux sont entretenues par le même trigger, sur le même événement, dans la même transaction.
+- **R-2** — la probabilité de **hasard** `p(G)` n'est pas une constante d'auteur : c'est la
+  **géométrie de l'item** (§3.2). Un `mcq` à 4 options a un plancher de hasard de 0,25 ; une
+  saisie libre (`short_answer`, variante **rappel**) tombe à 0,02. **Conséquence produite, pas
+  décrétée : une réponse juste en saisie libre vaut plusieurs QCM justes.**
+- **R-3** — la probabilité d'**inattention** `p(S)` est plafonnée à **0,10** et ne peut être
+  relevée que par un **signal de charge** (lot 8), jamais par l'élève, jamais au-delà de 0,20.
+- **R-4** — une compétence est **déclarée maîtrisée** si et seulement si les cinq conditions
+  tiennent ensemble : `p_known ≥ 0,95` · `evidence_count ≥ 4` · `distinct_sessions ≥ 2` ·
+  `distinct_forms ≥ 2` (deux types d'items distincts, la variante rappel comptant pour un type)
+  · dernière preuve **datant de moins de 30 jours**. Le mandat dit « répétée et variée » : ce
+  sont ces cinq conditions.
+- **R-5** — une **lacune est confirmée** si `p_known ≤ 0,25` avec `evidence_count ≥ 3`. En deçà
+  de 3 preuves, on dit « fragile », jamais « lacune » : accuser sur deux items est une erreur de
+  mesure, pas un diagnostic.
+- **R-6** — **neutralité du non-taggé**, non négociable (é07 R-2 étendu) : un item sans
+  compétence ne crée ni ne modifie aucune croyance ; une compétence sans preuve n'a aucune ligne.
+  Sur les ~88 matières non taggées, **tout ce que spécifie cette étude est silencieux et le
+  produit rend exactement ce qu'il rend aujourd'hui**.
+
+**Inférence dans le graphe**
+
+- **R-7** — l'inférence **monte** : établir `p_known(C) ≥ 0,85` **relève** la croyance de chaque
+  prérequis `P` à `max(p_known(P), γ^d · p_known(C))`, `γ = 0,7`, profondeur `d ≤ 2`.
+- **R-8** — l'inférence **ne descend jamais une croyance**. Une lacune confirmée sur `C` ne baisse
+  pas ses prérequis : elle les marque `suspect`, ce qui les **fait sonder en priorité** (lot 3,
+  lot 5). Motif : relever par déduction est charitable et fait gagner du temps ; abaisser par
+  déduction fabrique des lacunes que l'élève n'a jamais commises.
+- **R-9** — **l'inférence ne déclare jamais la maîtrise** : elle plafonne à `p_known = 0,90`,
+  sous le seuil de 0,95 de R-4, et n'incrémente **ni** `evidence_count` **ni** `distinct_forms`.
+  On ne peut être déclaré maître que de ce qu'on a fait soi-même.
+- **R-10** — toute croyance issue d'une inférence est **traçable et contestable** : elle porte sa
+  source (`inferred_from`) et l'élève peut la refuser en un geste (US-3), ce qui la ramène à sa
+  valeur d'avant inférence et pose `suspect = true`.
+
+**Diagnostic d'entrée**
+
+- **R-11** — le bilan d'entrée est **facultatif, interruptible, rejouable** (une fois par matière
+  et par 60 jours) et **borné à 20 items**. Il s'arrête plus tôt dès que la frontière est
+  stabilisée (§3.5).
+- **R-12** — il **ne donne aucune note** et ne se compare à personne : sa sortie est une carte,
+  pas un score. Il rapporte l'XP d'une session normale, jamais davantage — ce n'est pas une
+  nouvelle économie (é04 R-4 étendu).
+- **R-13** — les croyances écrites par le bilan portent `source = 'placement'` et un
+  `evidence_count` qui **ne compte que pour 1** quel que soit le nombre d'items : un mauvais jour
+  ne doit pas marquer un élève. Elles sont écrasables par la première preuve de jeu réel.
+
+**Décision & remédiation**
+
+- **R-14** — la **prochaine meilleure action** est calculée serveur, rendue **une** à la fois, et
+  toujours accompagnée de **sa raison** en langage élève. Trois branches, dans cet ordre de
+  priorité : `remédiation` (une lacune confirmée existe en amont) → `consolidation` (compétence
+  en cours) → `progression` (frontière).
+- **R-15** — la **boucle de remédiation** remonte la chaîne des prérequis **jusqu'à la première
+  compétence non maîtrisée en partant du bas** (la cause racine, pas le symptôme), en réutilisant
+  `get_competency_blockers` (é07 lot 4), borné à **profondeur 3** et à **une seule** remontée par
+  session.
+- **R-16** — la décision ne propose **que** des exercices que `resolve_exercise_access` autorise
+  (é04 R-3 tenu, repli d1–2 du même chapitre inchangé).
+- **R-17** — la maîtrise **ne verrouille rien**. Une compétence non maîtrisée en amont produit un
+  **avertissement motivé** et une action de remédiation proposée ; l'élève reste libre de jouer
+  ce qu'il veut (é22). _Arbitrage Q-1._
+
+**Échafaudage**
+
+- **R-18** — l'échafaudage est **du contenu écrit**, versionné et validé par les gates, jamais
+  généré à la volée (é26 P-5c). Trois paliers, dans l'ordre : `orient` (question réflexive) →
+  `rule` (règle ou analogie) → `decompose` (sous-étape).
+- **R-19** — un palier ne se révèle **qu'un à la fois**, dans l'ordre, et **jamais le palier
+  suivant sans que le précédent ait été lu**. Aucun palier ne contient la réponse : le gate
+  contenu le vérifie (§5).
+- **R-20** — l'échafaudage est **gratuit** et **ne consomme aucun consommable**. Il vit dans le
+  **chemin de correction et de reprise**, pas dans la première tentative : la couture de
+  soumission atomique n'est pas rouverte (é04 §9 Q-4, décision tenue).
+- **R-21** — l'échafaudage **n'affecte pas la croyance de l'item en cours** ; il déclasse en
+  revanche la preuve de la **reprise** : une réussite après palier 3 compte comme une preuve à
+  poids réduit (§3.2), jamais comme une preuve pleine.
+
+**Charge cognitive**
+
+- **R-22** — la latence par item (`elapsed_ms`) est **rapportée par le client**, bornée
+  serveur à `[0 ; 300 000]` ms, et **n'entre dans aucun calcul de récompense** — jamais. C'est un
+  signal de charge, pas une mesure de performance (le chrono récompensé du boss reste serveur et
+  n'est pas touché).
+- **R-23** — trois signaux, tous relatifs **à l'élève lui-même**, jamais à une moyenne de
+  cohorte : latence > 3 × sa médiane personnelle sur la compétence · ≥ 3 erreurs consécutives
+  dans la session · **piétinement** (≥ 10 tentatives sur une compétence sans 3 réussites
+  consécutives — seuil repris de la littérature, annexe B.3).
+- **R-24** — la réaction est **graduée et jamais bloquante** : baisser d'un palier de difficulté,
+  changer de type d'item, proposer une pause. Le message est une **proposition**, refusable, et
+  n'apparaît **pas plus d'une fois par session**.
+- **R-25** — un signal de charge actif **relève `p(S)`** vers son plafond de 0,20 (R-3) : le
+  système devient **plus indulgent quand il détecte la fatigue**. C'est l'unique couplage entre
+  les points 3 et 6 du mandat, et il va dans le seul sens acceptable — jamais l'inverse.
+
+### 2.3 i18n & RTL
+
+Toutes les nouvelles surfaces sont trilingues **FR/EN/AR** avec RTL, comme le reste. Trois
+familles de libellés :
+
+- **états de maîtrise** (4 valeurs) et **raisons de décision** (≈ 8 valeurs) : le serveur rend un
+  **identifiant**, le client le met en langue — même posture que é04 A1.2b (« la fonction SQL rend
+  un ID, le registre reste source unique »). Aucune phrase française en base.
+- **paliers d'échafaudage** : ils viennent du **corpus**, donc trilingues à l'authoring, validés
+  par le gate contenu au même titre que `explanation`.
+- **libellés de compétences** : déjà trilingues dans `competencies` (é07 lot 1) — rien à faire.
+
+⚠️ Deux pièges connus, à rappeler à l'exécuteur : une phrase arabe mêlant texte, chiffres et
+unités est **un seul nœud de texte** (sinon elle s'inverse), et un pourcentage suivi d'un signe
+se compose avec les marques bidi explicites. Voir `docs/design-surfaces.md`.
+
+### 2.4 Hors périmètre (v1)
+
+- La **voix** du tuteur (reformulation, dialogue socratique génératif) → é11.
+- Le **rapport parent** consommant la maîtrise déclarée → é08.
+- Le **percentile par compétence** dans l'examen blanc → é02.
+- Le **tagging** lui-même (C4bis et l'extension hors math) → fil contenu, dépôt privé.
+- L'**IRT / Elo** et tout modèle à difficulté latente estimée : `p(G)` par géométrie d'item est
+  la version pauvre et honnête qu'on peut tenir sans données. Porte de réouverture en Q-6.
+---
+
+## 3. Architecture technique (décisions fermées)
+
+### 3.1 Vue d'ensemble — où s'insèrent les six organes
+
+```
+                 ┌───────────────────────────────────────────────┐
+   une réponse   │  submit_exercise_attempt / submit_placement…  │  (RPC SECURITY DEFINER
+                 │                          ▲ ❸ le bilan d'entrée │   existantes, inchangées
+   ───────────▶  │      ↓ INSERT question_attempts (+elapsed_ms) │   sauf la colonne ajoutée)
+                 └───────────────────────────────────────────────┘
+                                    │ AFTER INSERT (triggers, même transaction)
+             ┌──────────────────────┼──────────────────────┬────────────────────────┐
+             ▼                      ▼                      ▼                        ▼
+   record_user_misconception  record_competency_    ❶ record_competency_    ❷ propagate_competency_
+        (é04, inchangé)         mastery (é07 EWMA,     belief  (BKT)            belief  (graphe, ≤2)
+                                   inchangé)          ─ NOUVEAU ─               ─ NOUVEAU ─
+                                                            │                        │
+                                                            └────────┬───────────────┘
+                                                                     ▼
+                                              user_competency_mastery  — une ligne par (élève, compétence)
+                                              mastery 0-100  ← AFFICHAGE (é07, intouché)
+                                              p_known 0-1    ← DÉCISION  (nouveau)
+                                                                     │
+                    ┌────────────────────────────────────────────────┼────────────────────┐
+                    ▼                             ▼                  ▼                    ▼
+          get_learning_state()       ❹ get_learning_frontier()   get_daily_plan()   get_competency_
+           (carte + états)              (« prêt à apprendre »)     (é04, inchangé)    blockers (é07)
+                    └──────────────┬──────────────┘                                        │
+                                   ▼                                                       │
+                        resolveNextAction()  ◀───────────────────────────────────────────┘
+                        (é22 D-8 : TS partagé, PAS une RPC — deux priorités ajoutées)
+```
+
+Quatre principes de greffe, qui expliquent chaque choix ci-dessous :
+
+1. **On n'ajoute pas de second écrivain.** Les croyances vivent dans la table qui porte déjà la
+   maîtrise, écrites par un trigger de plus sur le même événement, dans la même transaction. Deux
+   tables entretenues par deux triggers sur le même fait, c'est une divergence programmée.
+2. **On n'ajoute pas de second décideur.** `resolveNextAction` reste **le** moteur de décision
+   (é22 D-8) ; le serveur lui livre des **faits** de plus, pas un verdict concurrent.
+3. **On ne change aucune signature existante.** Toute lecture nouvelle est une **nouvelle**
+   fonction ; aucune `DROP FUNCTION` sur une RPC que le client appelle (DoD §7).
+4. **Tout dégrade au silence.** Sans tag, sans preuve, sans clé : le produit rend exactement ce
+   qu'il rend aujourd'hui (R-6).
+
+### 3.2 Le modèle de croyance (organe ❶)
+
+**Le modèle.** Bayesian Knowledge Tracing (Corbett & Anderson, 1994), quatre paramètres :
+`p(L₀)` initial, `p(T)` apprentissage, `p(G)` hasard, `p(S)` inattention. Après une observation :
+
+```
+correct :  p⁺ = p(1−S) / [ p(1−S) + (1−p)G ]
+faux    :  p⁺ = p·S    / [ p·S    + (1−p)(1−G) ]
+puis      p' = p⁺ + (1−p⁺)·T                       (l'élève peut avoir appris en répondant)
+```
+
+**D-1 — deux nombres, une seule vérité.** `p_known` (0–1) devient la variable de **décision** ;
+`mastery` (0–100, EWMA de é07) reste la variable d'**affichage** et n'est pas touchée.
+_Alternatives rejetées_ : (a) remplacer l'EWMA — casse la carte é07 lot 4, le terme « faiblesse
+de compétence » de `get_daily_plan`, le rapport parent et 40+ assertions pgTAP, pour un gain nul
+côté écran (un élève ne lit pas une probabilité) ; (b) une table de croyance séparée — deux
+écrivains sur le même fait. La règle de coexistence est simple et testable : **l'EWMA se montre,
+la croyance décide** ; aucune surface n'affiche `p_known` en clair sauf la console d'admin.
+
+**D-2 — deux paramètres dérivés, deux paramètres écrits : BKT sans ajustement.** C'est la
+décision qui rend ce modèle tenable ici.
+
+- `p(G)` **n'est pas un paramètre libre : c'est la géométrie de l'item.** Un QCM à 4 options a un
+  plancher de hasard de 1/4. Une saisie libre n'en a pas.
+- `p(S)` **n'est pas un paramètre libre non plus** : il dépend du palier de difficulté (une erreur
+  sur un item facile est plus probablement une étourderie) et du **signal de charge** (R-25).
+- `p(L₀)` et `p(T)` sont **écrits dans le registre de compétences**, versionnés, avec des défauts
+  de famille — jamais estimés.
+
+_Pourquoi c'est décisif_ : le reproche classique fait à BKT est l'**identifiabilité** (Beck) —
+plusieurs jeux de paramètres expliquent également bien les mêmes données, et l'ajustement dérive
+vers des valeurs dégénérées (annexe B.4). Ici **rien n'est ajusté** : deux paramètres sont
+déduits de la forme de l'item, deux sont déclarés par un auteur. Le problème d'identifiabilité
+ne se pose pas, parce qu'il n'y a pas d'estimation. Les bornes de la littérature —
+`p(G) ≤ 0,30`, `p(S) ≤ 0,10` hors charge — sont conservées **comme garde-fous d'écriture**, pas
+comme contraintes d'optimisation.
+
+Les deux fonctions de constantes, sur le modèle de `competency_mastery_alpha` (é07 R-4 :
+« constantes centralisées, jamais en ligne à l'appel ») :
+
+```sql
+-- Le hasard est la géométrie de l'item (D-2). mcq : 1/k, borné [0,15 ; 0,30] — la borne haute
+-- est celle de la littérature (anti-dégénérescence), la borne basse dit qu'un QCM reste un QCM.
+CREATE OR REPLACE FUNCTION public.belief_guess(
+  p_question_type TEXT, p_option_count INT, p_variant TEXT
+) RETURNS NUMERIC LANGUAGE sql IMMUTABLE AS $$
+  SELECT (CASE
+    WHEN p_variant = 'recall'          THEN 0.02   -- é17 : saisie libre de mémoire
+    WHEN p_question_type = 'short_answer' THEN 0.02
+    WHEN p_question_type = 'numeric'   THEN 0.05
+    WHEN p_question_type IN ('ordering','matching') THEN 0.05
+    WHEN p_question_type = 'multi'     THEN 0.08
+    WHEN p_question_type = 'mcq'       THEN
+      LEAST(0.30, GREATEST(0.15, 1.0 / GREATEST(COALESCE(p_option_count, 4), 2)))
+    ELSE 0.25
+  END)::NUMERIC;
+$$;
+
+-- L'inattention décroît avec la difficulté : rater un item facile ressemble à une étourderie,
+-- rater un item dur ressemble à une lacune. Le palier de charge (lot 8) la pousse au plafond.
+CREATE OR REPLACE FUNCTION public.belief_slip(p_difficulty INT, p_under_load BOOLEAN)
+RETURNS NUMERIC LANGUAGE sql IMMUTABLE AS $$
+  SELECT (CASE WHEN p_under_load THEN 0.20 ELSE
+    CASE COALESCE(p_difficulty, 2)
+      WHEN 1 THEN 0.10 WHEN 2 THEN 0.08 WHEN 3 THEN 0.06 WHEN 4 THEN 0.05 ELSE 0.08 END
+  END)::NUMERIC;
+$$;
+```
+
+> **Le corollaire produit, qui n'a pas été décrété mais calculé** (table complète en annexe A.1).
+> Une réponse juste en **rappel actif** (é17) fait passer une croyance de 0,20 à **0,932** en un
+> item ; il faut **trois** QCM à 4 options justes pour atteindre le même niveau (0,961). Le
+> mandat demande une validation « répétée
+> **et variée** » : la variété n'est pas un ornement, c'est **la quantité d'information**. C'est
+> aussi la justification quantitative des 6 types natifs (é03) et du rappel actif (é17) — deux
+> études qui deviennent rétroactivement des investissements dans le diagnostic.
+
+**Le poids de la preuve.** Un item résolu **après échafaudage** n'est pas la même preuve qu'un
+item résolu seul (R-21). La mise à jour est mélangée :
+`p_final = p_avant + w · (p_après − p_avant)`, avec `w = 1,0` sans aide, `0,5` après les paliers
+1–2, `0,25` après le palier 3. C'est l'échafaudage de Bruner rendu mesurable : **l'aide se retire
+à mesure que l'autonomie se prouve**, et le système sait de quelle autonomie il parle.
+
+**Constantes centralisées** — un seul fichier TS isomorphe `src/shared/constants/adaptive.ts`
+(les seuils lus côté client pour l'affichage) et les fonctions SQL ci-dessus (les seuils lus côté
+décision). Aucune valeur en ligne à un site d'appel :
+
+| constante | valeur | d'où elle vient |
+| --- | --- | --- |
+| `MASTERY_THRESHOLD` | `0,95` | seuil canonique de Corbett & Anderson (annexe B.4) |
+| `GAP_THRESHOLD` | `0,25` | symétrique bas ; en deçà, on parle de lacune |
+| `FRAGILE_THRESHOLD` | `0,60` | borne basse de la ZPD affichée |
+| `MIN_EVIDENCE` / `MIN_SESSIONS` / `MIN_FORMS` | `4` / `2` / `2` | « répétée et variée » (R-4) |
+| `EVIDENCE_STALE_DAYS` | `30` | aligné sur la fenêtre des misconceptions (é04 R-2) |
+| `INFERENCE_DAMPING` γ | `0,70` | R-7 |
+| `INFERENCE_MAX_DEPTH` | `2` | R-7 · perf (§3.8) |
+| `INFERENCE_CEILING` | `0,90` | R-9 — sous le seuil de maîtrise, par construction |
+| `PLACEMENT_MAX_ITEMS` | `20` | R-11 |
+| `LOAD_LATENCY_FACTOR` | `3,0` | R-23 (× la médiane personnelle) |
+| `LOAD_ERROR_STREAK` | `3` | R-23 |
+| `WHEEL_SPIN_ATTEMPTS` | `10` | seuil de la littérature (annexe B.3) |
+
+### 3.3 L'inférence dans le graphe (organe ❷)
+
+Le mandat, point 2 : « _si l'élève valide une notion complexe, le système en déduit la maîtrise
+probable des prérequis sous-jacents_ ». C'est le cœur de l'économie d'ALEKS — et c'est
+exactement ce que le graphe de é07 permet **sans rien ajouter au corpus**.
+
+**D-3 — l'inférence monte, elle ne descend jamais.** Une croyance haute sur `C` **relève** ses
+prérequis (R-7). Une lacune confirmée sur `C` **ne baisse pas** ses prérequis : elle les marque
+`suspect`, ce qui les fait **sonder en priorité** (R-8). _Motif_ : relever par déduction est
+charitable — au pire on fait sauter des exercices redondants, et la première preuve contraire
+corrige. Abaisser par déduction est accusatoire — on fabrique dans le dossier de l'élève des
+lacunes qu'il n'a jamais commises, et le rapport parent les affichera. L'asymétrie n'est pas une
+timidité : c'est la seule qui reste vraie quand on se trompe.
+
+**D-4 — l'inférence ne déclare jamais la maîtrise** (R-9) : plafond `0,90 < 0,95`, et
+`evidence_count` / `distinct_forms` restent inchangés. On peut être **dispensé** d'un prérequis ;
+on n'est **déclaré maître** que de ce qu'on a fait.
+
+**D-5 — l'inférence est traçable et contestable** (R-10) : la ligne porte `belief_source`
+(`'evidence' | 'inference' | 'placement'`) et `inferred_from` (la compétence qui a déduit). Un
+geste « je ne suis pas d'accord » ramène la croyance à sa valeur d'avant inférence et pose
+`suspect = true`. Le mandat parle de tuteur autonome, pas d'un tuteur qui a toujours raison.
+
+**Déclenchement et coût.** La propagation ne tourne **pas à chaque réponse** : elle tourne à la
+**traversée de bande**, quand `p_known` franchit `0,85` vers le haut (et, pour le marquage
+`suspect`, `0,25` vers le bas). Sur le graphe mesuré — 62 compétences, 80 arêtes, **1,29 prérequis
+en moyenne, 3 au maximum en direct** — une propagation de profondeur 2 touche **≈ 3 lignes en
+régime courant, 12 dans le pire cas théorique**. C'est un ordre de grandeur, pas une promesse :
+le lot 2 doit **mesurer** le coût réel du trigger avant/après sur la RPC de soumission (§4,
+critère d'acceptation), parce que dans ce dépôt une réécriture SQL a déjà guéri un appelant et
+empoisonné l'autre.
+
+### 3.4 La frontière « prêt à apprendre » (organe ❹)
+
+C'est la lecture la plus rentable de toute l'étude, et elle ne coûte qu'une requête.
+
+```
+intérieur    : state(C) = 'maitrisee'
+frontière    : state(C) ≠ 'maitrisee'  ET  tous les prérequis directs de C sont 'maitrisee'
+hors-portée  : state(C) ≠ 'maitrisee'  ET  au moins un prérequis direct ne l'est pas
+```
+
+La **frontière** est ce que l'élève peut attaquer maintenant : c'est la ZPD de Vygotsky, rendue
+calculable par le graphe. Le **hors-portée** n'est pas une zone interdite (R-17) : c'est la zone
+où toute proposition du système commence par une **remontée**. Et une compétence hors-portée sur
+laquelle l'élève insiste malgré l'avertissement reste jouable — c'est son droit, et c'est parfois
+lui qui a raison.
+
+`get_learning_frontier(p_family TEXT DEFAULT NULL, p_limit INT DEFAULT 5)` rend, par ordre de
+valeur décroissante : la compétence, son état, son `p_known`, le nombre de compétences qu'elle
+**débloque** (fan-out — mesuré jusqu'à **7** sur le graphe math), et un exercice d'entrée résolu
+par `get_exercises_for_competency` (é07 lot 4, réutilisée, jamais réécrite).
+
+> Le tri par fan-out est le seul endroit où cette étude fait un pari pédagogique explicite :
+> **à croyance égale, on propose d'abord ce qui ouvre le plus de portes**. C'est ce qui distingue
+> un plan d'un tirage, et c'est vérifiable — KPI-5.
+
+### 3.5 Le bilan d'entrée (organe ❸)
+
+**Le principe ALEKS, transposé** : ne pas balayer le programme, mais **choisir chaque question
+pour ce qu'elle apprend au système**. À chaque étape, l'item retenu est celui dont on ignore le
+plus le résultat — la compétence dont `p_known` est **la plus proche de 0,5**, prise dans la
+**frontière** courante, en préférant les fort-fan-out et les `suspect`.
+
+```
+répéter jusqu'à (items ≥ 20)  ou  (aucune compétence avec 0,25 < p_known < 0,80)  ou  abandon :
+    C  ← argmax sur la frontière ∪ suspects  de   info(C) = 1 − |p_known(C) − 0,5| × 2
+                                                  départage : fan-out ↓, puis aléatoire stable
+    q  ← un item de C non encore servi, accessible (resolve_exercise_access), difficulté 2 de préf.
+    servir q, lire la réponse, mettre à jour la croyance (BKT normal, w = 1,0)
+    propager (§3.3) — c'est CE pas qui rend le bilan court
+```
+
+La condition d'arrêt « plus aucune compétence dans l'intervalle d'incertitude » est ce qui permet
+de finir en **8 items** sur un élève net, et de ne jamais dépasser 20 sur un élève difficile à
+situer. Référence : ALEKS situe 200–300 items en ~25–30 questions ; ici, 62 compétences en **≤ 20**
+(KPI-2). La borne dure de 20 est un choix de produit, pas une limite d'algorithme : au-delà,
+l'abandon coûte plus cher que l'imprécision (RISK-3).
+
+**Anti-abus & vie privée.** `submit_placement_answer` est `SECURITY DEFINER` et corrige côté
+serveur (la clé ne sort jamais, ici comme partout) ; le bilan n'accepte qu'**une** session
+`running` par (élève, matière) ; les items servis sont écrits dans `question_attempts` avec
+`source = 'placement'` — donc soumis à la même purge à 12 mois, à la même RLS, aux mêmes
+agrégats. Aucune nouvelle surface de données personnelles.
+
+### 3.6 L'échafaudage (organe ❺, mandat point 5)
+
+**D-6 — l'échafaudage est du contenu écrit, servi palier par palier, gratuit, hors de la
+première tentative.** Trois décisions en une, chacune contrainte par une décision antérieure :
+
+- **écrit, pas généré** : é26 P-5c (la génération runtime non vérifiée en maths est
+  l'anti-pattern documenté). Il vit dans le corpus, passe les gates, se relit.
+- **hors de la première tentative** : é04 §9 Q-4 a explicitement refusé un retour
+  question-par-question qui rouvrirait la couture de soumission atomique. **Cette décision est
+  tenue.** L'échafaudage apparaît dans le **bloc de correction** (é04 A1.2b, déjà là) et dans la
+  **reprise** — c'est-à-dire exactement au moment où le mandat le demande (« en cas de blocage »).
+- **gratuit** : `consume_hint` (révélation payante de l'explication **avant** réponse) n'est pas
+  touché — c'est une autre mécanique, dans un autre moment, avec une autre économie. Deux aides
+  qui ne se rencontrent jamais : é04 R-4 (« pas de nouvelle économie ») reste vrai.
+
+**D-6bis — deux paliers appartiennent à la COMPÉTENCE, un seul à la question.** C'est la
+décision qui rend l'échafaudage réalisable, et elle vient d'un calcul, pas d'un goût : écrire
+trois paliers pour **22 146 questions** représente ~66 000 textes à rédiger, relire et traduire.
+C'est hors d'atteinte, et ce serait du gaspillage — parce que **les deux premiers paliers ne
+dépendent pas de l'item**.
+
+- Palier 1 `orient` (« où regarder ») et palier 2 `rule` (la règle, l'analogie) décrivent la
+  **compétence**. « Regarde les dénominateurs : sont-ils les mêmes ? » est vrai de toutes les
+  additions de fractions. → **62 × 2 = 124 textes pour toute la matière `math`**, et ils
+  couvrent alors **chaque question taggée**, gratuitement.
+- Palier 3 `decompose` (« fais seulement la première étape ») est le seul qui parle de **cet
+  item-là**. → optionnel, par question, réservé aux d3–d4 où il change quelque chose.
+
+_Alternative rejetée_ : tout au niveau de la question — pédagogiquement à peine meilleur,
+économiquement impossible, et il aurait produit ce que produisent toujours les champs
+obligatoires trop chers : des remplissages génériques copiés d'une question à l'autre.
+
+**Authoring**, dans la langue de la matière (comme `explanation` — les matières sont monolingues
+par construction, `subjects.content_language`) :
+
+```jsonc
+// content/competences/math.json — le registre, deux textes par compétence
+{ "id": "math.frac.add-sous",
+  "labels": { "fr": "…", "en": "…", "ar": "…" },
+  "prereqs": ["math.frac.equivalentes"],
+  "scaffold": {
+    "orient": "Regarde les dénominateurs : sont-ils les mêmes ?",                 // palier 1
+    "rule":   "On n'additionne des fractions que sur un dénominateur commun."     // palier 2
+  }
+}
+
+// content/math/11-addition-soustraction-fractions/exercices/04-defi.json — le palier 3, optionnel
+{ "prompt": "…", "explanation": "…",
+  "competencies": ["math.frac.add-sous"],
+  "scaffoldDecompose": "Ne fais que l'étape 1 : réduis 1/3 et 1/4 au même dénominateur." }
+```
+
+**Gate contenu (nouveau, `content:qa`)** — trois contrôles, tous mécaniques :
+
+1. **appariement** : `scaffoldDecompose` sur une question **sans** `competencies` est une erreur —
+   le palier 3 sans les paliers 1–2 est un escalier qui commence à la dernière marche.
+2. **complétude du registre** : `orient` et `rule` vont ensemble (l'un sans l'autre est refusé) ;
+   une compétence sans `scaffold` est **légale** et simplement muette (R-6).
+3. **anti-solution** : la chaîne normalisée de la bonne option (et, pour les types numériques, sa
+   valeur) ne doit apparaître dans aucun palier. Le contrôle ne mord en pratique que sur le
+   palier 3 — les deux premiers, étant génériques, ne peuvent structurellement pas contenir la
+   réponse d'un item particulier. **Niveau à calibrer sur le corpus commité avant de choisir
+   `error` ou `warn`** (patron du gate « options citées par lettre », arena #680).
+
+**Service.** `reveal_scaffold_tier(p_question UUID)` (`SECURITY DEFINER`) rend **le palier
+suivant seulement**, écrit `scaffold_reveals`, et refuse de sauter un palier (R-19). Il compose
+les paliers 1–2 depuis la compétence **principale** de la question (`question_competencies.
+is_primary`, é07 R-2) et le palier 3 depuis la question. Une question non taggée n'a aucun
+palier : l'escalier est simplement absent, sans message d'erreur (R-6). Aucun coût, aucun
+consommable, aucun effet sur la croyance de l'item courant — seulement sur le poids de la preuve
+de la **reprise** (R-21).
+
+**Ce que é11 en fera, et ce qu'elle n'en fera pas.** Ces paliers sont **la substance** ; l'étude
+11 apporte **la voix**. Son « escalier de registres » (é11 US-3 : concret/analogie → visuel-verbal
+→ formel) ne remplace pas cet escalier-ci, il le **reformule** : le LLM reçoit le palier à
+délivrer et le dit autrement, dans la bande d'âge et la langue de l'élève. Il ne choisit ni quel
+palier servir, ni ce qu'il contient. Sans clé, l'élève lit le texte écrit ; avec clé, il lit le
+même contenu dans ses mots à lui. C'est é26 P-5b appliqué à la lettre, et c'est ce qui garantit
+que **l'échafaudage existe dans le produit d'aujourd'hui** (§3.13).
+
+### 3.7 La charge cognitive (organe ❻, mandat point 6)
+
+**Le constat qui commande le lot** : il n'existe **aucune latence par item** dans ce dépôt. Le
+temps est mesuré à l'exercice (`attempts.duration_seconds`, `exercise_sessions`), et le chrono
+récompensé du boss est serveur. Le mandat demande de détecter « un temps de réponse anormalement
+long » : cela suppose une donnée qui n'est pas collectée.
+
+**D-7 — `elapsed_ms` est rapporté par le client, borné serveur, et interdit de récompense.**
+Le client mesure le temps passé sur chaque item et le joint à la soumission ; le serveur le borne
+à `[0 ; 300 000]` ms et le range dans `question_attempts.elapsed_ms`. _Alternative rejetée_ : une
+horloge serveur par item — elle exigerait un aller-retour **par question**, donc précisément la
+couture que é04 Q-4 a refusé de rouvrir. Le prix de ce choix est qu'un client hostile peut mentir
+sur son temps ; c'est acceptable **parce que ce champ n'entre dans aucun barème, aucun XP, aucun
+classement, aucun anti-farm** — un mensonge n'achète rien. Il ne sert qu'à rendre le système
+**plus indulgent** (R-25), et l'indulgence est bornée par le plafond `p(S) = 0,20`.
+
+**Les trois signaux** (R-23), tous relatifs à l'élève lui-même — jamais à une moyenne de cohorte,
+qui punirait les lents :
+
+| signal | détection | réaction (R-24) |
+| --- | --- | --- |
+| **lenteur** | `elapsed_ms > 3 ×` médiane personnelle sur la compétence (≥ 5 mesures, sinon inactif) | `p(S)` au plafond ; proposition de changer de format |
+| **série d'erreurs** | ≥ 3 erreurs consécutives dans la session | `p(S)` au plafond ; baisse d'un palier de difficulté sur la proposition suivante |
+| **piétinement** | ≥ 10 tentatives sur une compétence sans 3 réussites consécutives | remédiation forcée en tête de `resolveNextAction` + proposition de pause |
+
+Le **piétinement** est le seul des trois qui décrive un échec **du système**, pas de l'élève :
+dix tentatives sans maîtrise veulent dire que ce qu'on lui sert ne marche pas. C'est aussi le
+seul qui soit un KPI (KPI-4). Sa définition est reprise de la littérature (annexe B.3), et **sa
+valeur de départ doit être mesurée avant d'être ciblée** : on ne pose pas d'objectif sur une
+grandeur qu'on n'a jamais observée.
+
+**Une proposition, une fois.** Le message de charge est une proposition refusable, plafonnée à
+**une par session** (R-24). Un système qui dit trois fois « tu sembles fatigué » devient
+l'agression qu'il prétendait éviter.
+
+### 3.8 Modèle de données (migrations, toutes additives)
+
+**(a) `user_competency_mastery` — la croyance rejoint la maîtrise** _(amendement é07, §3.9)_
+
+```sql
+ALTER TABLE public.user_competency_mastery
+  ADD COLUMN IF NOT EXISTS p_known          NUMERIC NOT NULL DEFAULT 0.20
+      CHECK (p_known BETWEEN 0.01 AND 0.99),
+  ADD COLUMN IF NOT EXISTS evidence_count   INT     NOT NULL DEFAULT 0,
+  ADD COLUMN IF NOT EXISTS sessions_seen    INT     NOT NULL DEFAULT 0,
+  ADD COLUMN IF NOT EXISTS forms_seen       TEXT[]  NOT NULL DEFAULT '{}',
+  ADD COLUMN IF NOT EXISTS last_evidence_at TIMESTAMPTZ,
+  ADD COLUMN IF NOT EXISTS belief_source    TEXT    NOT NULL DEFAULT 'evidence'
+      CHECK (belief_source IN ('evidence','inference','placement')),
+  ADD COLUMN IF NOT EXISTS inferred_from    UUID REFERENCES public.competencies(id) ON DELETE SET NULL,
+  ADD COLUMN IF NOT EXISTS suspect          BOOLEAN NOT NULL DEFAULT false,
+  ADD COLUMN IF NOT EXISTS disputed_at      TIMESTAMPTZ;
+
+-- « les compétences dont je suis le moins sûr » (bilan d'entrée, §3.5) : l'incertitude est une
+-- distance à 0,5, donc un index sur l'expression, pas sur la colonne.
+CREATE INDEX IF NOT EXISTS idx_ucm_user_uncertainty
+  ON public.user_competency_mastery (user_id, (abs(p_known - 0.5)));
+```
+
+⚠️ **Deux pièges tenus.** (1) Une ligne créée **par inférence** ne touche pas `mastery` : elle
+reste à son 50 neutre avec `attempts = 0`, parce que é07 RISK-2 interdit de traiter ce 50 comme
+un diagnostic — c'est `belief_source` qui dit à l'écran de rendre « déduit » et non une barre.
+(2) `forms_seen` est un tableau et non un compteur : « varié » se vérifie sur des **types
+distincts**, et un compteur ne saurait pas si les 4 preuves sont 4 fois le même QCM.
+
+**(b) `question_attempts` — la latence et la source `placement`** _(amendement é04, §3.9)_
+
+```sql
+ALTER TABLE public.question_attempts
+  ADD COLUMN IF NOT EXISTS elapsed_ms INT CHECK (elapsed_ms BETWEEN 0 AND 300000);
+
+ALTER TABLE public.question_attempts DROP CONSTRAINT IF EXISTS question_attempts_source_check;
+ALTER TABLE public.question_attempts
+  ADD CONSTRAINT question_attempts_source_check
+  CHECK (source IN ('exercise','quiz','dungeon','exam','placement'));
+```
+
+Aucun `GRANT` ne bouge : la table est déjà `SELECT`-seule pour `authenticated`, écriture par les
+RPC `SECURITY DEFINER` uniquement.
+
+**(c) `competencies` — les deux paramètres écrits** _(amendement é07)_
+
+```sql
+ALTER TABLE public.competencies
+  ADD COLUMN IF NOT EXISTS p_init    NUMERIC NOT NULL DEFAULT 0.20 CHECK (p_init    BETWEEN 0.02 AND 0.60),
+  ADD COLUMN IF NOT EXISTS p_transit NUMERIC NOT NULL DEFAULT 0.15 CHECK (p_transit BETWEEN 0.02 AND 0.40);
+```
+
+Compilés depuis `content/competences/<famille>.json` (champs optionnels `pInit` / `pTransit`,
+défauts de famille) par `sql-builder` — **jamais écrits à la main en base**.
+
+**(d) `placement_sessions` — le bilan d'entrée** _(nouvelle table)_
+
+```sql
+CREATE TABLE IF NOT EXISTS public.placement_sessions (
+  id           UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  user_id      UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
+  subject_id   TEXT NOT NULL REFERENCES public.subjects(id) ON DELETE CASCADE,
+  family       TEXT NOT NULL,
+  status       TEXT NOT NULL DEFAULT 'running'
+               CHECK (status IN ('running','completed','abandoned','expired')),
+  items_served INT  NOT NULL DEFAULT 0,
+  started_at   TIMESTAMPTZ NOT NULL DEFAULT now(),
+  ended_at     TIMESTAMPTZ
+);
+
+-- Une seule session vivante par (élève, matière) — l'unicité partielle est le garde-fou, pas
+-- une vérification applicative qui perd la course.
+CREATE UNIQUE INDEX IF NOT EXISTS uq_placement_running
+  ON public.placement_sessions (user_id, subject_id) WHERE status = 'running';
+CREATE INDEX IF NOT EXISTS idx_placement_user_recent
+  ON public.placement_sessions (user_id, started_at DESC);
+
+ALTER TABLE public.placement_sessions ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Users read own placement sessions" ON public.placement_sessions
+  FOR SELECT USING (user_id = (SELECT auth.uid()) OR public.is_admin());
+-- Aucune policy d'écriture : les seuls écrivains sont les RPC SECURITY DEFINER (gotcha grants).
+REVOKE ALL ON public.placement_sessions FROM anon, authenticated;
+GRANT SELECT ON public.placement_sessions TO authenticated;
+GRANT ALL    ON public.placement_sessions TO service_role;
+```
+
+Les items servis ne créent **pas** de table : ils vont dans `question_attempts`
+(`source = 'placement'`, `session_id = placement_sessions.id`), exactement comme le donjon y va
+avec `dungeon_runs.id` — le `session_id` est polymorphe par conception (é04 A0.1).
+
+**(e) `scaffold_reveals` — l'échafaudage consommé** _(nouvelle table)_
+
+```sql
+CREATE TABLE IF NOT EXISTS public.scaffold_reveals (
+  user_id     UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
+  question_id UUID NOT NULL REFERENCES public.questions(id) ON DELETE CASCADE,
+  max_tier    INT  NOT NULL DEFAULT 0 CHECK (max_tier BETWEEN 0 AND 3),
+  first_at    TIMESTAMPTZ NOT NULL DEFAULT now(),
+  last_at     TIMESTAMPTZ NOT NULL DEFAULT now(),
+  PRIMARY KEY (user_id, question_id)
+);
+ALTER TABLE public.scaffold_reveals ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Users read own scaffold reveals" ON public.scaffold_reveals
+  FOR SELECT USING (user_id = (SELECT auth.uid()) OR public.is_admin());
+REVOKE ALL ON public.scaffold_reveals FROM anon, authenticated;
+GRANT SELECT ON public.scaffold_reveals TO authenticated;
+GRANT ALL    ON public.scaffold_reveals TO service_role;
+```
+
+**(f) Les paliers d'échafaudage — deux colonnes au registre, une à la question** _(D-6bis)_
+
+```sql
+ALTER TABLE public.competencies
+  ADD COLUMN IF NOT EXISTS scaffold_orient TEXT,
+  ADD COLUMN IF NOT EXISTS scaffold_rule   TEXT;
+
+ALTER TABLE public.questions
+  ADD COLUMN IF NOT EXISTS scaffold_decompose TEXT;
+REVOKE SELECT (scaffold_decompose) ON public.questions FROM anon, authenticated;
+```
+
+⚠️ **L'asymétrie de grant est voulue et il faut la comprendre avant d'y toucher.** Les deux
+paliers du registre sont **génériques** : les rendre lisibles ne révèle la réponse d'aucun item,
+exactement comme les libellés de compétences (é07 lot 1, client-readable). Le palier 3 est
+**spécifique à l'item** : il décrit sa première étape, donc il entre dans la même whitelist
+d'exclusion que `correct_option` et `distractor_tags` (`20260610170000_hide_answer_key`). Il ne
+sort **que** par `reveal_scaffold_tier`, un palier à la fois. Livrer les trois d'un coup au
+client, c'est livrer la décomposition complète — donc, sur beaucoup d'items, la réponse.
+
+### 3.9 Les trois amendements (et rien d'autre)
+
+Cette étude ne rouvre aucune décision. Elle amende trois objets, chacun par une modification
+**additive** dont le comportement par défaut est **identique à aujourd'hui** :
+
+| # | Étude propriétaire | Amendement | Comportement sans tag / sans donnée |
+| --- | --- | --- | --- |
+| **A** | **é07** | `user_competency_mastery` et `competencies` gagnent des colonnes ; `competency_mastery_alpha` / `_with_decay` / la carte / `get_daily_plan` sont **intouchés** | identique |
+| **B** | **é04** | `question_attempts` gagne `elapsed_ms` et la source `placement` | identique |
+| **C** | **é22** | `resolveNextAction` gagne deux priorités : `remediate` (rang 2) et `strengthen` (rang 4) | identique — les deux ne peuvent pas se déclencher sans croyance |
+
+L'amendement **C** est le seul qui touche une règle de produit (R-31 de é22). Sa justification :
+l'ordre actuel place `retry` au rang 2 parce que « reprendre un échec récent vaut mieux
+qu'avancer sur du neuf » — c'était **le meilleur proxy disponible d'une cause quand aucune cause
+n'était connue**. `remediate` est la même intention avec la cause à la place du symptôme, et
+rejouer l'exercice raté sans traiter le prérequis manquant est la définition même du
+piétinement. Le nouvel ordre :
+
+```
+1. review       (SM-2 dû — la mémoire prime, inchangé)
+2. remediate    ← NOUVEAU : une lacune confirmée bloque la frontière ; on remonte à la cause
+3. retry        (le dernier exercice raté, inchangé)
+4. strengthen   ← NOUVEAU : une compétence « en cours », servie sous une AUTRE forme
+5. continue     (la mission suivante du chemin, inchangé)
+6. discover     (une matière jamais ouverte, inchangé)
+```
+
+Les rangs 2 et 4 rendent `null` dès que la matière n'est pas taggée ; le test de non-régression
+exigé est littéral : **sur des données non taggées, `resolveNextAction` rend exactement ce
+qu'elle rendait** (§5).
+
+### 3.10 Contrats des lectures (nouvelles RPC, aucune signature existante modifiée)
+
+| RPC | sécurité | rend |
+| --- | --- | --- |
+| `get_learning_state(p_family TEXT DEFAULT NULL)` | **DEFINER** (appelle les helpers non exécutables) | par compétence : `slug`, libellés, `state` (`maitrisee`/`en-cours`/`fragile`/`lacune`/`inconnue`), `p_known`, `evidence_count`, `sessions_seen`, `forms_count`, `belief_source`, `suspect`, `zone` (`interieur`/`frontiere`/`hors-portee`) |
+| `get_learning_frontier(p_family TEXT DEFAULT NULL, p_limit INT DEFAULT 5)` | **DEFINER** | la frontière triée : compétence, `p_known`, `unlocks` (fan-out), `entry_exercise_id` (via `get_exercises_for_competency`) |
+| `get_remediation_path(p_competency TEXT)` | **DEFINER** | la chaîne de remontée jusqu'à la première compétence non maîtrisée en partant du bas (profondeur ≤ 3), en réutilisant `get_competency_blockers` |
+| `start_placement(p_subject TEXT)` | **DEFINER** | la session (ou l'existante `running`) |
+| `next_placement_item(p_session UUID)` | **DEFINER** | **un** item : `question_id`, `prompt`, `options` (jamais la clé), `ordinal`, `total_max` |
+| `submit_placement_answer(p_session UUID, p_question UUID, p_choice TEXT, p_elapsed_ms INT)` | **DEFINER** | `{ is_correct, done }` — corrige, écrit la télémétrie, met à jour la croyance, propage |
+| `finish_placement(p_session UUID)` | **DEFINER** | le résumé : maîtrisées / frontière / lacunes |
+| `reveal_scaffold_tier(p_question UUID)` | **DEFINER** | `{ tier, text }` — le palier **suivant** uniquement |
+| `get_calibration_report(p_days INT DEFAULT 30)` | **DEFINER + `is_admin()`** | KPI-3 : histogramme (bande de `p_known` prédite × taux de réussite observé) |
+
+**Invariants de sécurité, sans exception** : aucune de ces fonctions ne prend d'identifiant
+d'élève en paramètre — le périmètre est `(SELECT auth.uid())` **en dur**, dans chaque requête
+(é07 R-6) ; sans session, `auth.uid()` est `NULL`, le filtre ne rend rien et la fonction renvoie
+vide au lieu de lever. La clé de correction ne sort d'aucune : `next_placement_item` sélectionne
+`prompt` et `options`, deux colonnes de la whitelist de `20260610170000_hide_answer_key`. La map
+`distractor_tags` n'est jamais rendue (é04 D-A1.2-2 : l'option correcte étant la seule sans tag,
+la rendre désignerait la bonne réponse par élimination). Et `scaffold` suit la même règle.
+
+### 3.11 Client
+
+```
+src/shared/constants/adaptive.ts        ← seuils isomorphes (§3.2), zéro secret, zéro import .server
+src/shared/lib/next-action.ts           ← +2 priorités (amendement C), toujours une fonction pure
+src/features/progression/
+  progression.server.ts                 ← +getLearningState, +getLearningFrontier, +disputeInference
+  components/learning-state-map.tsx     ← la carte à 4 états (remplace l'affichage % de é07 lot 4)
+  components/frontier-card.tsx          ← « prêt à apprendre » (≤ 3 cartes, jamais une liste)
+src/features/quest/
+  quest.scaffold.ts                     ← revealScaffoldTier (fichier séparé : é04 A1.2 a montré
+                                          qu'importer quest.server tire tout le serveur dans le chunk)
+  components/scaffold-ladder.tsx        ← les 3 paliers, dans le bloc de correction existant
+  components/load-nudge.tsx             ← la proposition de charge, une fois par session
+src/features/placement/                 ← NOUVELLE feature (13 → 14)
+  index.ts · placement.server.ts · components/{placement-runner,placement-summary}.tsx
+src/routes/_authenticated/bilan.$subjectId.tsx      ← le bilan d'entrée
+src/routes/_authenticated/admin.calibration.tsx     ← la console KPI-3
+```
+
+⚠️ **Frontière de feature tenue** : `placement` ne peut pas importer `quest` (AGENTS.md — les
+features ne s'importent pas). Ce qu'elles partagent — le rendu d'un item et la saisie d'une
+réponse — descend dans `@/components/ui` ou `@/shared/lib` **au moment où le lot 3 en a besoin**,
+pas avant. Si ce partage s'avère coûteux, le repli est de **ne pas partager** : le bilan sert des
+items d'un seul type (`mcq` + `numeric`), la surface est petite.
+
+États TanStack Query : `['learning-state', family]` et `['frontier', family]` invalidés par la
+soumission d'un exercice ; le bilan n'utilise **pas** de cache (chaque item est un aller-retour
+qui écrit — c'est le seul endroit de l'app où c'est justifié).
+
+### 3.12 Observabilité
+
+Événements structurés via `@/shared/lib/logger` (jamais `console`) :
+`belief.updated` (compétence, avant, après, `w`, type d'item) · `belief.inferred` (source, cible,
+profondeur) · `belief.disputed` · `placement.started|item|finished|abandoned` (durée, items) ·
+`scaffold.revealed` (palier) · `load.detected` (signal, réaction) · `nextaction.resolved` (rang
+retenu). Aucun contenu d'item, aucun libellé, **jamais le nom de l'élève** (é26 P-5e).
+
+Deux tableaux d'admin : **calibration** (KPI-3, la courbe qui peut invalider le modèle) et
+**piétinement** (KPI-4, la liste des couples (élève, compétence) au-delà du seuil — c'est là que
+se lisent les trous du corpus, pas ceux de l'élève).
+### 3.13 Articulation avec l'étude 11 (le tuteur) et l'étude 29 (la porte)
+
+Cette section n'est pas un rappel de courtoisie : c'est le contrat qui empêche d'écrire deux fois
+la même ligne, et il prolonge la règle de tranchage que é29 a posée en annexe B.
+
+> **É29 dit** : « si la brique parle de pédagogie, elle est à é11 ; si elle parle de qui paie, de
+> quel modèle répond, ou de ce que l'élève demande lui-même, elle est à é29. »
+>
+> **É30 la complète d'un cran** : **ce qui DÉCIDE est ici (é30) · ce qui PARLE est à é11 · ce qui
+> PAIE est à é29.** Une brique qui choisit un item, un chemin, un palier ou un moment appartient
+> à cette étude, avec ou sans IA. Une brique qui met une décision en mots appartient à é11. Une
+> brique qui ouvre un coffre, compte des jetons ou coupe une dépense appartient à é29.
+
+#### (a) Ce que é30 **prend** de l'existant (et ne réécrit pas)
+
+| Brique réutilisée telle quelle | Origine | Ce que é30 en fait |
+| --- | --- | --- |
+| `question_attempts` (+ trigger misconceptions) | é04 A0 | y branche un **troisième** trigger, sur le même événement |
+| `user_competency_mastery`, EWMA, oubli à la lecture | é07 lot 2 | y ajoute des colonnes ; **n'en modifie aucune formule** |
+| `get_competency_blockers`, `get_exercises_for_competency` | é07 lot 4 | les **appelle** pour la remédiation et la frontière |
+| `get_daily_plan` (score à 3 termes, plafond 3) | é04 A1.1 + é07 lot 5 | **intouchée** — la révision reste le rang 1 |
+| `get_attempt_review` (erreur nommée, « revoir le cours », « m'entraîner ») | é04 A1.2 | y **accroche** l'escalier d'échafaudage |
+| `resolve_exercise_access` | — | reste l'arbitre unique (R-16) |
+| `normalize_recall_text`, variante rappel | é17 / é20 | fournissent les items **à faible hasard** du §3.2 |
+| `resolveNextAction` | é22 | **amendée** (+2 priorités), jamais dupliquée en RPC (é22 D-8) |
+
+#### (b) Ce que é30 **donne** à l'étude 11
+
+L'étude 11 est écrite, validée, et son exécution est débloquée par é29. Ses lots 1-7 restent à
+écrire — et **chacun d'eux devient meilleur, ou moins cher, avec les organes de cette étude** :
+
+| Surface é11 | Ce qu'elle prévoit aujourd'hui | Ce que é30 lui fournit |
+| --- | --- | --- |
+| **Learner Context Pack** (é11 §2.2, lot 1) | « `user_competency_mastery` **si livré, sinon proxy** : 3 compétences les plus faibles + 3 les plus fortes, bucket faible/moyen/fort » | `get_learning_state` : **états** (`maitrisee`/`en-cours`/`fragile`/`lacune`), la **frontière**, le **prérequis bloquant**. Le proxy disparaît, et le pack gagne la seule information qu'un tuteur humain utiliserait vraiment : _où l'élève est prêt à aller_ |
+| **P5 — difficulté & rythme** (US-13) | « la politique de sélection vise la zone proximale (**probabilité de réussite estimée** 60–80 %) » — estimée par `difficulty_adaptation`, table dormante | la probabilité **cesse d'être estimée** : `P(correct) = p·(1−S) + (1−p)·G`, calculée par item, avec les paramètres du §3.2. La ZPD de é11 devient une inégalité vérifiable, pas une intention |
+| **P4 — exercices ciblés** (US-11, lot 5) | « le serveur choisit 1–3 questions ciblant le tag / la compétence faible » | `get_remediation_path` cible la **cause racine** au lieu du symptôme : le tuteur entraîne sur le prérequis manquant, pas sur la compétence où l'erreur s'est vue |
+| **P1 — explications & reformulations** (US-3) | escalier de **registres** : concret → visuel-verbal → formel | l'escalier de **substance** (orient → rule → decompose, §3.6). Les deux se composent : é11 reformule un palier qu'on lui donne, il n'invente pas son contenu |
+| **P2 — plan du jour commenté** (US-6) | raisons issues du registre de misconceptions + prérequis faibles | la raison gagne un état et une cible (« _tu es prêt pour Thalès : il ne te manque que la proportionnalité, 6 minutes_ ») |
+| **P6 — bilans** (US-16/17, lot 6) | agrégats de `get_student_report` | des compétences **déclarées maîtrisées** avec leur preuve (« prouvé 4 fois, sous 3 formes ») — ce qu'un parent peut lire sans y croire sur parole |
+
+**Deux règles que é30 pose pour que é11 n'ait pas à les re-décider** :
+
+- **la vérification du tuteur est une preuve à poids réduit.** Le mini-check de é11 US-4 est une
+  vraie question du stock, posée **juste après une explication** : c'est exactement la situation
+  d'une reprise après échafaudage. Elle vaut donc `w = 0,5` (§3.2). Quand é11 lot 4 ajoutera la
+  source `'tutor'` au CHECK de `question_attempts.source`, le poids est déjà décidé.
+- **rien de ce que le tuteur écrit n'entre dans une croyance.** Une explication, une reformulation,
+  un encouragement ne sont pas des preuves. Seule une **réponse à un item du corpus** l'est.
+
+#### (c) Ce que é30 **doit** à l'étude 29 — et l'invariant qu'elle tient
+
+**D-8 — é30 n'ouvre aucune surface IA, et ne peut pas en ouvrir par accident.** Aucun des dix
+lots n'ajoute de valeur à `AI_FEATURES` (`src/shared/constants/ai.ts`), n'appelle
+`resolve_ai_access`, ne touche `ai_usage_events`, ni ne consomme d'énergie. La vérification est
+mécanique et gratuite : le CHECK de `ai_usage_events.feature` **refuse** en base toute surface
+non déclarée par une migration (é29 §3.3) — une dérive n'échouerait pas en revue, elle
+échouerait à l'écriture.
+
+**Conséquence produite, et c'est la raison d'être de cette étude** : les six mécanismes du mandat
+fonctionnent **avec `AI_KEY_ENC_KEY` absente**, c'est-à-dire dans le produit qui tourne
+aujourd'hui en production. Une famille qui branche sa clé n'obtient pas un autre produit : elle
+obtient **le même, mis en mots**. C'est é29 R-1 (« le produit sans clé est le produit
+d'aujourd'hui ») appliqué à l'adaptatif.
+
+**Le seul point de contact, et il va dans le bon sens : la Forge.** `ai_forged_quizzes` accepte
+déjà `scope = 'competency'` avec un `competency_id TEXT` **volontairement sans clé étrangère**
+(é29 §3.3). É30 lui donne **laquelle** : la compétence de la frontière, ou celle du prérequis
+bloquant. Aucune ligne de é29 ne change ; c'est un paramètre mieux choisi, rien de plus.
+
+⚠️ **Et une conséquence contre-intuitive qu'il faut assumer** : un quiz de la Forge **ne fait
+bouger aucune croyance**. Ce n'est pas un oubli, c'est structurel — `question_attempts.question_id`
+porte une clé étrangère vers `public.questions`, et un item forgé n'y existe pas ; é29 l'écrit
+d'ailleurs en toutes lettres (« aucune écriture dans `question_attempts`, `attempts` ni
+`spaced_repetition_schedule` »). Un élève peut donc enchaîner vingt questions forgées sans voir
+sa carte bouger. **L'UI doit le dire** — « _cet entraînement ne compte pas dans ta progression_ »
+— sinon c'est vécu comme un bug. C'est le prix, accepté, d'un contenu que personne n'a relu.
+
+#### (d) Le quatrième amendement (documentaire, é11 §2.2)
+
+| # | Étude | Amendement | Nature |
+| --- | --- | --- | --- |
+| **D** | **é11** | la ligne « Maîtrise par compétence » du Learner Context Pack (§2.2) cite `get_learning_state` au lieu du couple « 3 faibles / 3 fortes + proxy » ; US-13 cite `P(correct)` au lieu de `difficulty_adaptation` | **documentaire** — é11 lot 1 n'est pas écrit, aucun code n'existe à modifier. À porter dans é11 au moment où é30 lot 3 est mergé, pas avant |
+
+---
+
+## 4. Plan d'exécution en lots
+
+Chaque lot est **une PR mergeable, gate verte, utile seule**. Deux lots sont du **contenu** et se
+livrent dans le dépôt **privé** ; les huit autres sont du **moteur** et se livrent dans l'arena.
+
+| lot | contenu (résumé) | objets créés | tests exigés | dépend de |
+| --- | --- | --- | --- | --- |
+| **0** _(contenu, privé)_ | **C4bis étape 1** : tagger les distracteurs de `math` 9ᵉ (13 chapitres) avec les 56 entrées du registre déjà prêt | `content/math/**` | `content:check`, `content:qa:strict`, `content:audit:strict` | — |
+| **1** _(moteur)_ | **Le socle de croyance** : colonnes, `belief_guess`/`belief_slip`, trigger `record_competency_belief`, script de calibration | migration + 3 fonctions SQL + `adaptive.ts` | pgTAP (≥ 14 assertions), Vitest constantes | — |
+| **2** _(moteur)_ | **L'inférence** : `propagate_competency_belief`, `belief_source`/`inferred_from`/`suspect`, **mesure de perf avant/après** | 1 fonction + 1 trigger | pgTAP (≥ 10), **relevé de perf** | 1 |
+| **3** _(moteur)_ | **Les lectures & la carte** : `get_learning_state`, `get_learning_frontier`, la carte à 4 états, « prêt à apprendre » | 2 RPC + 2 composants + i18n ×3 | pgTAP (≥ 8), Vitest composants, `build:check` | 2 |
+| **4** _(moteur)_ | **La décision** : amendement C (`resolveNextAction` +2 priorités), `get_remediation_path` | 1 RPC + `next-action.ts` | Vitest **non-régression littérale**, pgTAP (≥ 6) | 3 |
+| **5** _(moteur)_ | **L'échafaudage** : schéma contenu, gate anti-solution, colonnes, `reveal_scaffold_tier`, l'escalier dans le bloc de correction, poids de preuve | migration + RPC + `quest.scaffold.ts` + composant + gate | pgTAP (≥ 8), Vitest gate + composant, e2e | 1 (poids) · 4 (reprise) |
+| **6** _(moteur)_ | **La charge cognitive** : `elapsed_ms`, les 3 signaux, la réaction graduée, `p(S)` sous charge, **mesure de départ de KPI-4** | migration + détecteur + composant | pgTAP (≥ 6), Vitest détecteur | 1 |
+| **7** _(moteur)_ | **Le bilan d'entrée** : `placement_sessions`, les 4 RPC, la feature `placement`, la route | migration + 4 RPC + feature + route | pgTAP (≥ 12), Vitest, **e2e Playwright** | 3 |
+| **8** _(moteur)_ | **Les consoles** : calibration (KPI-3) et piétinement (KPI-4) | 1 RPC + 1 route admin | pgTAP (≥ 4), Vitest | 1 · 6 |
+| **9** _(contenu, privé)_ | **L'échafaudage écrit** : `orient` + `rule` sur les 62 compétences `math` ; palier 3 sur les d3–d4 | `content/competences/math.json`, `content/math/**` | gates contenu (dont le nouveau) | 5 |
+
+- [ ] Lot 0 — tagger les distracteurs de `math` 9ᵉ _(contenu, dépôt privé)_
+- [ ] Lot 1 — le socle de croyance
+- [ ] Lot 2 — l'inférence dans le graphe
+- [ ] Lot 3 — les lectures & la carte à 4 états
+- [ ] Lot 4 — la décision (amendement é22)
+- [ ] Lot 5 — l'échafaudage
+- [ ] Lot 6 — la charge cognitive
+- [ ] Lot 7 — le bilan d'entrée
+- [ ] Lot 8 — les consoles de calibration et de piétinement
+- [ ] Lot 9 — l'échafaudage écrit _(contenu, dépôt privé)_
+
+### 4.1 Le sous-ensemble minimal, si la file se resserre
+
+Si la rentrée ou une autre priorité rogne le programme, **les lots 0 · 1 · 2 · 3 · 4** suffisent
+à tenir la promesse principale (« ce que tu maîtrises · ce que tu es prêt à apprendre · ce qui te
+bloque ») et à rallumer le différenciateur éteint de la scorecard é28 (sa **ligne 3**, STATUS §1bis — à ne pas
+confondre avec le KPI-3 de calibration du §1.4).
+Ce sont les organes ❶ ❷ ❹ plus la preuve qui les alimente ; les lots 5 à 9 sont des
+approfondissements, chacun autonome. **Le lot 0 n'est jamais négociable :
+sans lui, les huit autres sont du code qui tourne sur du vide.**
+
+### 4.2 Détail, critères d'acceptation et stop-points
+
+**Lot 0 — tagger les distracteurs (`math` 9ᵉ)** · _dépôt privé_
+Périmètre : les 13 chapitres de `content/math/**`, chaque distracteur de QCM recevant son
+`misconceptionTag` parmi les 56 entrées existantes (le registre est **déjà** complet et pourvu de
+ses `competency` — ne pas le refaire).
+Acceptation : `content:qa:strict` vert · **0 distracteur non taggé** sur les d3–d4 · l'option
+correcte n'en porte jamais (le schéma le refuse déjà).
+Stop-point : ne pas étendre à d'autres matières dans cette PR ; ne pas toucher au registre.
+
+**Lot 1 — le socle de croyance**
+Acceptation : sur un corpus taggé, une réponse juste en `short_answer` fait passer une croyance
+de 0,20 à ≥ 0,90 en **un** item ; il faut **≥ 3** QCM à 4 options pour le même résultat · sur un
+corpus **non taggé**, `user_competency_mastery` est strictement inchangée (aucune ligne créée) ·
+`get_daily_plan` rend le **même** plan qu'avant le lot (assertion littérale) · le script
+`scripts/adaptive/calibration.mjs` produit le tableau de KPI-3 en lecture seule.
+Stop-point : **ne pas** écrire l'inférence, **ne pas** afficher `p_known` dans une surface élève.
+
+**Lot 2 — l'inférence**
+Acceptation : établir `p_known ≥ 0,85` sur une compétence de profondeur 3 relève ses prérequis de
+profondeur 1 et 2, **jamais** au-delà de 0,90, **sans** toucher `evidence_count` ni `forms_seen` ·
+une lacune confirmée ne baisse **aucune** croyance et pose `suspect` · **relevé de performance
+obligatoire** : temps de `submit_exercise_attempt` avant/après le lot, sur un jeu d'au moins 20
+questions, mesuré **sur les deux appelants** (soumission d'exercice **et** donjon).
+Stop-point : profondeur 2, pas 3 ; pas de recalcul par lot nocturne.
+
+**Lot 3 — les lectures & la carte**
+Acceptation : la carte affiche 4 états et **jamais** un pourcentage de croyance · une compétence
+`belief_source = 'inference'` est rendue « déduit » avec le geste « je ne suis pas d'accord »
+(US-3/R-10) · sur une matière non taggée, l'écran est **identique** à celui d'aujourd'hui · FR/EN/AR
++ RTL vérifiés au pixel sur une phrase mixte texte/chiffres.
+Stop-point : **ne pas** modifier `get_my_competency_map` (é07 lot 4 reste servie ; sa retraite est
+une décision de é07, pas d'ici).
+
+**Lot 4 — la décision**
+Acceptation : le test de non-régression est **littéral** — sur les fixtures existantes de
+`next-action.test.ts`, `resolveNextAction` rend **exactement** ce qu'elle rendait · `remediate`
+ne se déclenche qu'avec une lacune confirmée en amont d'une compétence de la frontière ·
+`strengthen` propose un item d'un **type différent** de celui déjà réussi · les deux rendent
+`null` sans croyance.
+Stop-point : pas de nouvelle RPC de décision (é22 D-8) ; le moteur reste la fonction TS partagée.
+
+**Lot 5 — l'échafaudage**
+Acceptation : les paliers se révèlent dans l'ordre et un seul à la fois · le palier 3 ne quitte
+jamais le serveur autrement que par la RPC · **le gate anti-solution est calibré sur le corpus
+commité avant de choisir son niveau** · une réussite après palier 3 pèse `w = 0,25` (vérifié en
+pgTAP sur la croyance résultante) · aucun consommable n'est débité (assertion explicite).
+Stop-point : ne rien écrire dans le corpus (c'est le lot 9) ; ne pas toucher `consume_hint`.
+
+**Lot 6 — la charge cognitive**
+Acceptation : `elapsed_ms` hors bornes est **clampé**, jamais rejeté (une soumission ne doit
+jamais échouer pour un chrono) · aucune valeur de `elapsed_ms` n'atteint un calcul d'XP, de
+classement ou d'anti-farm (assertion par recherche dans le code, pas seulement par test) · le
+message de charge n'apparaît **pas deux fois** dans une session · KPI-4 a une valeur de départ
+mesurée et écrite au §8.
+Stop-point : ne pas toucher le chrono serveur du boss (é09) ; pas de détection d'émotion, pas de
+webcam, pas de signal comportemental hors des trois listés.
+
+**Lot 7 — le bilan d'entrée**
+Acceptation : ≤ 20 items, arrêt anticipé effectif (médiane mesurée et écrite au §8) · abandon à
+l'item _n_ conserve les _n_ croyances déjà écrites · aucune note, aucun classement, XP d'une
+session normale · une seule session `running` par (élève, matière), garantie par l'index unique
+partiel · e2e Playwright : démarrer, répondre 5 items, quitter, revenir, terminer.
+Stop-point : une seule matière à la fois ; pas de bilan multi-matières ; pas de re-passage avant
+60 jours.
+
+**Lot 8 — les consoles**
+Acceptation : la courbe de calibration est lisible et la bande `[0,7 ; 0,8]` affiche son taux
+observé (KPI-3) · le tableau de piétinement trie par (compétence, nombre d'élèves) — **c'est un
+outil de diagnostic du corpus, et l'écran doit le dire.**
+Stop-point : réservé à `is_admin()` ; aucune donnée nominative.
+
+**Lot 9 — l'échafaudage écrit** · _dépôt privé_
+Acceptation : 62 `orient` + 62 `rule` · palier 3 sur **au moins** les d4 · gate vert · relecture
+indépendante (l'auto-relecture de l'auteur ne compte pas).
+Stop-point : ne pas écrire de paliers pour une matière non taggée en compétences.
+
+---
+
+## 5. Stratégie de test
+
+**pgTAP (le gros du poids — toute la logique est en SQL).** Suite dédiée
+`supabase/tests/adaptive_belief_test.sql` et suivantes. Les assertions qui comptent :
+
+1. **La table de vérité BKT** — pour chaque type d'item, la croyance après une réponse juste et
+   après une réponse fausse, comparée à la valeur calculée à la main dans le commentaire du test.
+   C'est le seul endroit du dépôt où un nombre magique est légitime : il est **dérivé et montré**.
+2. **La borne d'inférence** — aucune séquence d'inférences, si longue soit-elle, ne porte une
+   croyance au-dessus de `0,90` ni ne crée une compétence `maitrisee`. Test par **attaque** :
+   on cherche à faire déclarer une maîtrise sans preuve, on vérifie que c'est impossible.
+3. **L'asymétrie** — une lacune confirmée ne baisse aucune croyance de prérequis (D-3).
+4. **La neutralité du non-taggé** (R-6) — le test central de non-régression : sur un jeu de
+   fixtures **sans** compétence et **sans** tag, `get_daily_plan`, `get_my_competency_map` et le
+   contenu de `user_competency_mastery` sont **identiques** avant et après toute la série de lots.
+5. **La clé ne sort pas** — `next_placement_item` et `reveal_scaffold_tier` jouées en attaque :
+   ni `correct_option`, ni `distractor_tags`, ni `scaffold_decompose` d'un autre palier. Trois
+   assertions d'attaque, pas le cas nominal (patron é04 A1.2a).
+6. **RLS** — aucune fonction ne rend la ligne d'un autre élève, y compris avec un identifiant
+   forgé en paramètre (elles n'en prennent pas : le test le prouve par la signature).
+7. **Grants** — chaque table nouvelle a ses `GRANT` explicites (le piège documenté d'AGENTS.md :
+   un `CREATE TABLE` sans grant passe en cloud et casse la suite sur une base fraîche).
+
+**Vitest (co-localisé).** `next-action.test.ts` étendu — dont **la non-régression littérale** sur
+les fixtures existantes ; les constantes de `adaptive.ts` ; le détecteur de charge (fonction
+pure) ; le gate anti-solution ; les composants de carte et d'escalier (Testing Library, dont RTL).
+
+**Playwright (e2e, projet TEST dédié).** Un seul parcours, mais complet : lancer un bilan
+d'entrée, répondre, quitter en cours, revenir, terminer, voir la carte. C'est le seul flux de
+l'étude qui traverse tout, et le seul qu'un test unitaire ne peut pas prouver.
+⚠️ Rappel opératoire : `verify` ne voit **aucun** fichier de `e2e/` — un libellé renommé casse
+Playwright et fusionne vert. Le lot 7 doit donc **lire le décompte** du run e2e, pas sa conclusion.
+
+**`db:check-chain`.** Chaque migration de cette étude doit rejouer sur une base **vierge** : les
+`ALTER TABLE` de `competencies` et `user_competency_mastery` arrivent après les migrations é07
+qui les créent, et aucun INSERT ne dépend de lignes absentes du dépôt public.
+
+**Ce qui prouve la non-régression de l'existant**, en une phrase : **les trois quarts des
+assertions de cette étude portent sur ce qui ne doit PAS changer.** C'est voulu. Une étude qui
+greffe quatre organes sur un moteur en production se juge d'abord à ce qu'elle n'a pas cassé.
+
+---
+
+## 6. Risques & mitigations
+
+- **RISK-1 — le moteur est en avance sur son corpus, et cette étude aggrave l'écart.**
+  _Probabilité : certaine. Impact : elle est inerte._ Sans le lot 0, huit lots de code tournent
+  sur du vide — c'est exactement l'histoire de é04 A1.2, livrée complète et éteinte depuis trois
+  semaines, et de é07 lot 5, correcte et sans effet. **Mitigation** : le lot 0 est le premier, il
+  est **non négociable** (§4.1), et chaque lot moteur porte un critère d'acceptation mesuré **sur
+  la matière taggée**. Un lot dont l'effet n'est pas observable sur `math` 9ᵉ n'est pas livré.
+- **RISK-2 — le modèle est mal calibré et ment poliment.** _Probabilité : moyenne. Impact :
+  grave — un diagnostic faux est pire que pas de diagnostic._ **Mitigation** : KPI-3 est un
+  **critère d'invalidation**, pas un indicateur de confort ; le script de calibration est livré
+  **au lot 1**, avant toute surface élève ; et parce que rien n'est ajusté (D-2), une dérive se
+  corrige en changeant une constante montrée, pas en ré-entraînant une boîte noire.
+- **RISK-3 — le bilan d'entrée décourage.** _Probabilité : haute (c'est le reproche classique
+  fait à ALEKS). Impact : abandon à l'entrée._ **Mitigation** : facultatif, interruptible,
+  ≤ 20 items, **aucune note**, arrêt anticipé, XP normal, et une sortie qui montre ce qu'on
+  **sait déjà** avant ce qui manque. Si la médiane d'abandon dépasse 30 % au lot 7, le bilan
+  passe à ≤ 12 items — décision prise d'avance, pas à étudier.
+- **RISK-4 — « maîtrise » sans verrou déçoit l'attente du mandat.** _Probabilité : moyenne._
+  Bloom demande de ne pas avancer avant 80–90 % ; é22 a retiré les faux verrous. **Mitigation** :
+  D-3 (avertissement motivé + remédiation proposée, jamais un blocage), et **Q-1** porte
+  l'arbitrage à l'humain plutôt que de le trancher dans le dos de é22.
+- **RISK-5 — le trigger d'inférence coûte cher sur le chemin chaud.** _Probabilité : moyenne._
+  La soumission d'exercice est déjà le chemin le plus sollicité. **Mitigation** : propagation à
+  la **traversée de bande** seulement, profondeur 2, index dédié, et une **mesure obligatoire sur
+  les deux appelants** au lot 2 — parce que dans ce dépôt une réécriture SQL a déjà guéri un
+  appelant en empoisonnant l'autre.
+- **RISK-6 — l'inférence se trompe sur un élève qui a bien deviné.** _Probabilité : faible mais
+  certaine à l'échelle._ **Mitigation** : plafond 0,90, jamais de maîtrise déclarée (D-4),
+  contestation en un geste (D-5), et la première preuve contraire écrase l'inférence.
+- **RISK-7 — `elapsed_ms` est falsifiable.** _Probabilité : haute. Impact : nul par
+  construction._ Le champ n'ouvre sur aucune récompense (D-7) et son seul effet est de rendre le
+  système **plus indulgent**, dans une borne. **Mitigation** : l'assertion « aucun chemin de
+  `elapsed_ms` vers un barème » est un test, pas une intention.
+- **RISK-8 — la dette d'échafaudage devient infinie.** _Probabilité : elle l'était._ 22 146
+  questions × 3 paliers = ~66 000 textes. **Mitigation** : D-6bis ramène la dette à **124 textes
+  pour toute la matière** + un palier 3 optionnel sur les seuls d3–d4.
+- **RISK-9 — quatre organes de plus, quatre boucles mortes de plus.** _Probabilité : réelle —
+  c'est le diagnostic de é26 sur ce dépôt._ **Mitigation** : chaque lot livre **sa surface
+  visible dans la même PR** (la doctrine é26 P-1), et les deux consoles du lot 8 existent pour
+  qu'un organe éteint se voie.
+- **RISK-10 — l'étude est écrite pendant que le vrai goulot est ailleurs.** _Probabilité :
+  certaine._ La scorecard é28 dit que le point dur du projet est **zéro canal d'acquisition**,
+  pas la finesse du moteur. **Mitigation** : c'est dit ici, en toutes lettres (§7 Q-7), et le
+  lot 0 est précisément la ligne M-1 de é28 — le seul point où cette étude et la scorecard se
+  rejoignent.
+
+---
+
+## 7. Questions ouvertes (pour l'humain)
+
+- **Q-1 — la maîtrise verrouille-t-elle ?** Le mandat cite Bloom (« ne pas progresser tant que
+  80–90 % ne sont pas atteints ») ; é22 a retiré les faux verrous et le produit est en phase
+  gratuite. **Recommandation : non — avertissement motivé + remédiation proposée, jamais un
+  blocage** (D-3, R-17). Un verrou dans un produit où personne ne paie et où l'élève vient de son
+  plein gré ne produit pas de la maîtrise, il produit un départ.
+- **Q-2 — la maille des compétences.** Squirrel AI descend au « nano » (≈ 10 000 points pour les
+  maths collège) ; on en a **62** par matière-année. **Recommandation : ne pas descendre.** Le
+  coût est en tagging, pas en code, et la dette serait multipliée par le même facteur. À
+  rediscuter seulement si KPI-3 montre que 62 compétences sont trop grossières pour prédire.
+- **Q-3 — le bilan d'entrée est-il proposé à tous, ou seulement aux nouveaux ?**
+  **Recommandation : à tous, une fois par matière**, avec une entrée discrète pour les élèves
+  déjà actifs (leur croyance est déjà écrite par le jeu ; le bilan la complète surtout sur les
+  compétences jamais touchées).
+- **Q-4 — que devient `difficulty_adaptation` ?** Elle est écrite par les RPC de soumission et
+  lue par **personne** ; `p_known` fait mieux, par compétence plutôt que par matière.
+  **Recommandation : la laisser vivre** (elle est écrite, elle ne coûte rien, é11 US-13 la cite)
+  et décider de son sort **après** le lot 4, quand on saura si quelqu'un la lit encore. Une
+  suppression est une migration destructive : elle se ferait en merge séparé, après le code.
+- **Q-5 — quelle matière après `math` 9ᵉ ?** Le tagging des compétences existe pour `math` et
+  `math-6eme`. **Recommandation : `math-6eme`** — le registre est déjà écrit, seuls les
+  distracteurs manquent, et la 6ᵉ est une classe de concours (é28 M-1).
+- **Q-6 — quand rouvrir la porte IRT/Elo ?** `p(G)` par géométrie d'item est la version pauvre
+  et honnête. **Recommandation : jamais avant d'avoir 12 mois de télémétrie sur une matière
+  taggée**, et seulement si KPI-3 est mauvais — l'état de l'art dit que les modèles classiques de
+  _knowledge tracing_ suffisent, et que le coût par décision d'un modèle appris est sans commune
+  mesure.
+- **Q-7 — cette étude passe-t-elle avant l'acquisition ?** La scorecard é28 place le goulot sur
+  le canal d'acquisition, pas sur le moteur. **Recommandation : lancer le lot 0 (qui EST la ligne
+  M-1 de é28) et les lots 1 · 3 · 4, puis réévaluer.** Le reste du programme est excellent et peut
+  attendre un premier public — un tuteur parfait sans élèves reste un tuteur sans élèves.
+
+---
+
+## 8. Journal d'exécution
+
+_(rempli au fil des lots par l'exécuteur : date, lot, PR, écarts acceptés, dettes notées)_
+
+| date | lot | PR | écarts / dettes |
+| --- | --- | --- | --- |
+| 2026-08-22 | — | — | Étude rédigée. **Trois mesures à reporter dans STATUS.md** : le registre de compétences `math` compte **62** entrées (STATUS annonce encore 59) ; le corpus porte **0** `misconceptionTag` (re-mesuré, inchangé depuis le 2026-07-31) ; le tagging de compétences couvre **`math` + `math-6eme`**, 234 fichiers. |
+---
+
+## Annexe A — Le modèle de croyance en nombres (la table de vérité du pgTAP)
+
+Paramètres : `p(L₀) = 0,20`, `p(T) = 0,15` (défauts de famille, §3.8c) · `p(S) = 0,08`
+(difficulté 2, hors charge) · `p(G)` selon le type (§3.2). Valeurs arrondies à 3 décimales ;
+ce sont **exactement** les assertions attendues au lot 1.
+
+**A.1 — La même bonne réponse ne vaut pas la même chose selon la forme de l'item**
+
+| n° | type d'item | `p(G)` | croyance avant | après | commentaire |
+| --- | --- | --- | --- | --- | --- |
+| 1 | `short_answer` / rappel | 0,02 | 0,200 | **0,932** | une seule réponse juste, et on y est presque |
+| 2 | `numeric` | 0,05 | 0,200 | 0,861 | |
+| 3 | `mcq` 4 options | 0,25 | 0,200 | 0,557 | |
+| 4 | `mcq` 4 options (2ᵉ juste) | 0,25 | 0,557 | 0,849 | |
+| 5 | `mcq` 4 options (3ᵉ juste) | 0,25 | 0,849 | **0,961** | il en a fallu **trois** pour dépasser le n° 1 |
+| 6 | `mcq` 4 options (4ᵉ juste) | 0,25 | 0,961 | 0,991 | |
+
+> **Et pourtant, au n° 6, la compétence n'est PAS déclarée maîtrisée.** `p_known = 0,991` passe le
+> seuil, `evidence_count = 4` passe, mais `distinct_forms = 1` : quatre fois le même QCM.
+> R-4 refuse. C'est le mandat — « validation répétée **et variée** » — rendu opposable par une
+> condition, pas par une bonne intention.
+
+**A.2 — L'erreur, et le pardon**
+
+| n° | situation | `p(S)` | avant | après | lecture |
+| --- | --- | --- | --- | --- | --- |
+| 7 | débutant, `mcq` faux | 0,08 | 0,200 | 0,172 | l'erreur d'un débutant n'apprend presque rien : on le savait déjà |
+| 8 | **quasi-maître, `mcq` faux** | 0,08 | 0,960 | **0,761** | une seule erreur fait sortir de la maîtrise — et c'est correct : la maîtrise se re-prouve |
+| 9 | **le même, sous signal de charge** | 0,20 | 0,960 | **0,885** | R-25 : le système **pardonne** parce qu'il a détecté la fatigue. L'écart entre 8 et 9 est toute la différence entre « tu ne sais pas » et « tu es fatigué » |
+
+**A.3 — Le poids de la preuve après échafaudage** (R-21) — `p_final = p_avant + w·(p_après − p_avant)`
+
+| aide reçue | `w` | exemple : `mcq` juste depuis 0,200 | croyance finale |
+| --- | --- | --- | --- |
+| aucune | 1,00 | 0,200 → 0,557 | **0,557** |
+| paliers 1–2 (orienter, la règle) | 0,50 | | 0,379 |
+| palier 3 (décomposer) | 0,25 | | 0,289 |
+
+C'est Bruner rendu arithmétique : **l'aide se retire à mesure que l'autonomie se prouve**, et le
+système sait toujours de quelle autonomie il parle.
+
+**A.4 — L'inférence** (§3.3) — un élève établit `p_known = 0,88` sur `math.geo.thales-direct`
+
+| compétence | profondeur | croyance avant | après inférence | plafond |
+| --- | --- | --- | --- | --- |
+| `math.prop.quatrieme-proportionnelle` | 1 | 0,300 | **0,616** (= 0,7 × 0,88) | ≤ 0,90 |
+| `math.num.operations-entiers` | 2 | 0,500 | **0,500** (0,49 × 0,88 = 0,431 < 0,500 : on ne baisse jamais) | ≤ 0,90 |
+
+Deux propriétés à retenir de ce tableau : l'inférence **prend le maximum**, donc elle ne peut
+jamais dégrader une croyance existante (D-3) ; et elle ne touche ni `evidence_count` ni
+`forms_seen`, donc aucune des deux lignes ne peut devenir `maitrisee` (D-4).
+
+**A.5 — Ce que le système annonce avant de servir un item** (é11 US-13 devient calculable)
+
+`P(réussite) = p·(1−S) + (1−p)·G`
+
+| croyance | `mcq` 4 options | `short_answer` | zone |
+| --- | --- | --- | --- |
+| 0,20 | 0,384 | 0,200 | trop dur — frustration |
+| 0,50 | 0,585 | 0,470 | **ZPD** |
+| 0,70 | 0,719 | 0,650 | **ZPD** |
+| 0,95 | 0,886 | 0,880 | trop facile — ennui |
+
+La ZPD de Vygotsky n'est plus une métaphore : c'est l'intervalle `P(réussite) ∈ [0,55 ; 0,80]`,
+et le sélecteur peut la viser. On y lit aussi, en creux, pourquoi un QCM ennuie plus tard qu'une
+saisie libre : à croyance égale, il est toujours plus facile — de `p(G)` exactement.
+
+---
+
+## Annexe B — Les trois références, sourcées (recherche du 2026-08-22)
+
+Convention de l'annexe B de é26, reprise ici : **⚠ signale un fait de source secondaire ou
+promotionnelle**, à manier avec précaution ; les faits sans marque sont académiques ou recoupés.
+Cette étude n'appuie **aucune décision** sur un fait marqué ⚠.
+
+### B.1 ALEKS (McGraw Hill, États-Unis) — la théorie des espaces de connaissances
+
+| Fait | Source |
+| --- | --- |
+| ALEKS repose sur la **Knowledge Space Theory** : l'état de connaissance d'un élève est un **ensemble** dans une structure **partiellement ordonnée** — maîtriser un concept suppose ses prérequis | [aleks.com — Research behind ALEKS](https://www.aleks.com/about_aleks/knowledge_space_theory) (éditeur) ; [Matayoshi & al., _A practical perspective on knowledge space theory_, J. Math. Psych. 2021](https://jmatayoshi.github.io/publications/JMP2021_KST_ALEKS_preprint.pdf) (académique) |
+| Le diagnostic d'entrée situe l'élève sur un domaine de **200 à 300 items** en **~25–30 questions**, chacune choisie d'après la précédente | mêmes sources, recoupées |
+| Le placement lui-même a fait l'objet d'une évaluation publiée à EDM | [EDM 2024, industry track](https://educationaldatamining.org/edm2024/proceedings/2024.EDM-industry.61/) |
+| La **frange extérieure** de l'état de connaissance nomme ce que l'élève est « prêt à apprendre » | littérature KST |
+
+**Ce qu'on en prend** : l'inférence dans l'ordre partiel (§3.3) et la frontière (§3.4) — les deux
+organes qui font l'économie du diagnostic. **Ce qu'on n'en prend pas** : la combinatoire complète
+des espaces de connaissances, hors de proportion pour 62 compétences ; et le ton du produit, dont
+le caractère décourageant est le reproche le plus constant qui lui soit fait (RISK-3).
+
+### B.2 Squirrel AI (Yixue, Chine) — le nano-découpage
+
+| Fait | Source |
+| --- | --- |
+| Découpage **nano** : les maths collège découpées en **plus de 10 000 points de connaissance**, contre 2 000–3 000 dans un manuel ⚠ | communications de l'entreprise ([PR Newswire](https://www.prnewswire.com/news-releases/squirrel-ai-learning-by-yixue-group-attends-the-hottest-technology-event-of-north-america-collision-tech-conference-300884608.html), [Forbes 02/2025](https://www.forbes.com/sites/forbeschina/2025/02/18/derek-li-and-squirrel-ai-aim-to-lead-the-future-of-ai-driven-education/)) |
+| Moteur à **trois étages** : carte de l'apprenant + carte des contenus · gestion d'objectifs, état de l'utilisateur, moteur de recommandation · stratégies différenciées ⚠ | mêmes communications |
+| Système **MCM** (_thinking, capacity, method_) : à performance d'examen égale, distinguer capacités et rythmes ⚠ | mêmes communications |
+| **Essai randomisé** : des élèves chinois de 8ᵉ année, deux provinces, tirés au sort vers Squirrel AI, progressent davantage en mathématiques que ceux affectés à un cours en classe entière ou en petit groupe **mené par des enseignants experts** | Cui, Tong, Yarnall, Shear, Feng — _Interactive Learning Environments_ 31(2), 793-803, en ligne le 31/08/2020 ([éditeur](https://www.tandfonline.com/doi/abs/10.1080/10494820.2020.1808794)) ⚠ **co-signé par l'entreprise**, mais avec des chercheurs de SRI International — indépendance partielle |
+
+**Ce qu'on en prend** : la démonstration qu'un moteur adaptatif discipliné peut battre
+l'enseignement collectif — et la **structure** à trois étages, qu'on retrouve trait pour trait
+dans le §3.1. **Ce qu'on n'en prend pas** : le nano (Q-2). Il déplace tout le coût sur le
+tagging, et rien dans les sources disponibles ne permet d'attribuer le résultat de l'essai à la
+granularité plutôt qu'à la boucle.
+
+### B.3 CENTURY Tech (Royaume-Uni) — la charge cognitive comme contrainte de design
+
+| Fait | Source |
+| --- | --- |
+| Plateforme combinant IA, **neurosciences cognitives** et données massives pour un parcours personnalisé ⚠ | [BESA](https://www.besa.org.uk/news/artificially-intelligent-platform-learns-every-brain-learn/), [HundrED](https://hundred.org/en/innovations/century-tech) — profils éditeur/écosystème |
+| **Micro-apprentissage** explicitement destiné à limiter la surcharge cognitive : modules courts, construction incrémentale ⚠ | revues et pages produit secondaires |
+| Techniques revendiquées : **entrelacement**, récupération fréquente, retour adaptatif, **répétition espacée** ⚠ | mêmes sources |
+
+⚠⚠ **C'est la référence la plus faiblement sourcée des trois** : aucune évaluation indépendante
+n'a été trouvée dans cette passe. Elle est retenue pour ce qu'elle **nomme** — la charge cognitive
+comme contrainte de conception, et non comme une intention — pas pour ce qu'elle prouve. Le lot 6
+s'appuie sur Sweller et sur la littérature du piétinement (B.4), pas sur CENTURY.
+
+### B.4 Le socle académique du modèle (ce sur quoi les décisions s'appuient réellement)
+
+| Fait | Source |
+| --- | --- |
+| **BKT** (Corbett & Anderson, 1994) : quatre paramètres — `p(L₀)`, `p(T)`, `p(G)`, `p(S)` — estiment la probabilité de maîtrise d'une compétence latente ; seuil canonique de maîtrise **0,95** | littérature ITS ; [synthèse](https://www.emergentmind.com/topics/bayesian-knowledge-tracing-bkt) |
+| **Bornes anti-dégénérescence** : la littérature propose `p(G) + p(S) ≤ 1`, `p(G)` et `p(S) ≤ 0,50`, ou encore `p(S) = 0,10` / `p(G) = 0,30` | [Baker, Corbett & Aleven — _Contextual estimation of slip and guess_, ITS 2008](https://link.springer.com/chapter/10.1007/978-3-540-69132-7_44) |
+| **Problème d'identifiabilité** (Beck) : les mêmes données s'ajustent également bien avec des paramètres différents ; les correctifs par a priori de Dirichlet exposent à la **dégénérescence** | [Baker & al., _Degree of error in BKT estimates_](https://learninganalytics.upenn.edu/ryanbaker/behaviormetrika_vfinal.pdf) |
+| **Piétinement** (_wheel-spinning_, Beck & Gong) : élève qui pratique une même compétence **plus de 10 fois** sans parvenir à **trois réponses justes consécutives** ; détectable dès les premières opportunités | [Beck & Gong, AIED 2013](https://link.springer.com/chapter/10.1007/978-3-642-39112-5_44) |
+| Le **retour élaboré** (qui explique) écrase le simple juste/faux — `d ≈ 0,99` sur 435 études | Wisniewski, Zierer & Hattie 2020 — **déjà retenu par é26 annexe B.2**, non re-sourcé ici |
+| Le déterministe décide, le LLM parle : les modèles classiques de _knowledge tracing_ battent les LLM en prédiction de maîtrise, pour un coût par décision sans commune mesure | é26 annexe B.2 (EDM 2024) — **c'est P-5a**, et c'est pourquoi cette étude n'a pas de LLM |
+
+**Ce que B.4 change pour D-2** : le reproche récurrent fait à BKT porte sur **l'estimation** des
+paramètres, jamais sur la mise à jour bayésienne elle-même. En dérivant `p(G)` de la géométrie de
+l'item et `p(S)` du palier de difficulté, et en **écrivant** `p(L₀)`/`p(T)` dans un registre
+versionné, cette étude ne fait aucune estimation — et le problème ne se pose pas. Ce n'est pas
+une version affaiblie de BKT : c'est BKT **privé de sa seule partie contestée**.
+
+---
+
+## Annexe C — Le mandat, ligne à ligne : ce qui existe déjà, ce que ce document ajoute
+
+Lecture directe du cahier des charges du §1.1. **« Déjà »** signifie : vérifié dans `main` le
+2026-08-22.
+
+| # | Ce que demande le mandat | Déjà en place | Ce que cette étude ajoute | Lot |
+| --- | --- | --- | --- | --- |
+| **1** | micro-compétences atomiques | ✅ `competencies` — **62**, 11 domaines (é07 lot 1) | rien : la maille est bonne (Q-2) | — |
+| **1** | dépendances strictes | ✅ `competency_prereqs` — 80 arêtes, profondeur 6, acyclicité vérifiée au pipeline | rien | — |
+| **1** | niveaux d'objectifs (comprendre / appliquer / analyser) | 🟠 approximé par la difficulté d1–d4 et les 6 modes d'exercice | rien en v1 — la difficulté joue déjà ce rôle et un troisième axe alourdirait le tagging | — |
+| **1** | batterie d'activités graduées | ✅ 6 modes (pratique, boss, révision, défi, entraînement, défi-concours) + 6 types natifs + rappel actif | rien | — |
+| **2** | ne pas faire passer tout le programme | ❌ | **bilan adaptatif ≤ 20 items**, arrêt anticipé sur incertitude résiduelle | 7 |
+| **2** | déduire les prérequis d'une réussite complexe | ❌ | **inférence montante** dans le DAG, γ = 0,7, profondeur 2, plafond 0,90 | 2 |
+| **2** | isoler la lacune d'un échec de base | 🟠 `get_competency_blockers` sait remonter, mais **rien ne l'appelle** | **`get_remediation_path`** + la priorité `remediate` en tête de la décision | 2 · 4 |
+| **3** | recalculer après chaque réponse | ✅ EWMA au trigger (é07 lot 2) | la **croyance** BKT, entretenue par le même événement | 1 |
+| **3** | **probabilité d'inattention** | ❌ | `p(S)` par difficulté, plafonnée 0,10 — **relevée à 0,20 sous charge** | 1 · 6 |
+| **3** | **probabilité de hasard** | ❌ | `p(G)` **par géométrie de l'item** : 0,25 pour un QCM à 4 options, 0,02 en saisie libre | 1 |
+| **3** | maîtrise « répétée et variée » | ❌ (l'EWMA est une moyenne mobile : rien n'y est « déclaré ») | **R-4** : 5 conditions conjointes, dont `distinct_forms ≥ 2` et `distinct_sessions ≥ 2` | 1 · 3 |
+| **4** | réussite facile → monter | 🟠 `difficulty_adaptation` calcule, **personne ne lit** | la **frontière** triée par fan-out, et `P(réussite)` pour viser la ZPD | 3 · 4 |
+| **4** | difficulté légère → même notion, autre format | ❌ | priorité **`strengthen`** : même compétence, **type d'item différent** | 4 |
+| **4** | échec répété → remonter la chaîne des prérequis | ❌ | priorité **`remediate`**, cause racine, profondeur ≤ 3, une remontée par session | 4 |
+| **5** | jamais la solution brute | ✅ la clé ne quitte jamais le serveur | le gate **anti-solution** sur les paliers | 5 |
+| **5** | palier 1 — question réflexive | ❌ (seul `consume_hint` existe : tout ou rien, et payant) | `scaffold.orient`, **au niveau de la compétence** | 5 · 9 |
+| **5** | palier 2 — règle ou analogie | ❌ | `scaffold.rule`, au niveau de la compétence | 5 · 9 |
+| **5** | palier 3 — décomposition | ❌ | `scaffoldDecompose`, au niveau de la question, serveur seul | 5 · 9 |
+| **5** | adapter le ton et le vocabulaire | ❌ | **délégué à é11** (P-5b) — é30 fournit la substance, é11 la voix | é11 |
+| **6** | détecter la latence anormale | ❌ **la donnée n'existe pas** | `question_attempts.elapsed_ms`, comparé à la **médiane personnelle** | 6 |
+| **6** | détecter l'enchaînement d'erreurs | ❌ | série de 3 dans la session | 6 |
+| **6** | détecter le blocage durable | ❌ | **piétinement** : ≥ 10 tentatives sans 3 réussites consécutives (KPI-4) | 6 |
+| **6** | baisser la difficulté, varier, proposer une pause | ❌ | réaction graduée, **jamais bloquante, une fois par session** | 6 |
+| **P2·1** | Bloom — ne pas progresser avant 80–90 % | 🟠 le seuil existe (0,95), **le verrou n'existe pas et é22 l'a retiré** | avertissement motivé + remédiation ; **Q-1** porte l'arbitrage | 4 · Q-1 |
+| **P2·2** | Vygotsky — la ZPD | ❌ | `P(réussite) ∈ [0,55 ; 0,80]`, calculée (annexe A.5) | 3 · 4 |
+| **P2·3** | Bruner — l'échafaudage se retire | ❌ | le **poids de la preuve** décroît avec l'aide reçue (`w` = 1 / 0,5 / 0,25) | 5 |
+| **P2·4** | Sweller — la charge cognitive | 🟠 le découpage en missions courtes y concourt déjà | les 3 signaux + `p(S)` indulgente sous charge | 6 |
+
+**Le tableau se lit dans les deux sens.** Sur 27 lignes, **9 sont déjà tenues** et 4 le sont à
+moitié : le mandat n'est pas un chantier à ouvrir, c'est un chantier **aux deux tiers construit
+dont personne n'a posé la charpente**. Les quatre organes du §1.2 — croyance, inférence,
+diagnostic, décision — sont cette charpente, et ils tiennent en quatre lots (0 · 1 · 3 · 4).
