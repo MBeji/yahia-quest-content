@@ -422,12 +422,39 @@
     },
     "competency": "math.fn.fonction-lineaire"
   },
+  "math.fn.image-calculee-par-somme": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu additionnes au lieu de multiplier : f(x) = 3x se lit « 3 multiplié par x »",
+      "en": "You add instead of multiplying: f(x) = 3x reads \"3 times x\"",
+      "ar": "تجمع بدل أن تضرب: f(x) = 3x تُقرأ «3 مضروبًا في x»"
+    },
+    "competency": "math.fn.fonction-lineaire"
+  },
+  "math.fn.coefficient-obtenu-sans-division": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu combines les deux coordonnées au lieu de diviser : dans f(x) = ax, a vaut l'image divisée par l'antécédent",
+      "en": "You combine the two coordinates instead of dividing: in f(x) = ax, a is the image divided by the input",
+      "ar": "تجمع الإحداثيَّين أو تطرحهما بدل القسمة: في f(x) = ax، a تساوي الصورة مقسومة على السابقة"
+    },
+    "competency": "math.fn.fonction-lineaire"
+  },
   "math.fn.pente-ordonnee-origine-confondues": {
     "subject": "math",
     "labels": {
       "fr": "Tu confonds le coefficient directeur et l'ordonnée à l'origine : l'un donne la pente, l'autre le point où la droite coupe l'axe des ordonnées",
       "en": "You swap the slope and the y-intercept: one gives the steepness, the other where the line crosses the vertical axis",
       "ar": "تخلط بين معامل التوجيه والقطع: الأوّل يعطي الانحدار، والثاني نقطة تقاطع المستقيم مع محور التراتيب"
+    },
+    "competency": "math.fn.fonction-affine"
+  },
+  "math.fn.zero-et-ordonnee-origine-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends le terme constant comme antécédent de zéro : cet antécédent est la solution de ax + b = 0",
+      "en": "You take the constant term as the input giving zero: that input solves ax + b = 0",
+      "ar": "تأخذ الحدّ الثابت سابقةً للصفر: سابقة الصفر هي حلّ المعادلة ax + b = 0"
     },
     "competency": "math.fn.fonction-affine"
   },
@@ -440,12 +467,30 @@
     },
     "competency": "math.fn.representation-droites"
   },
+  "math.fn.pente-sans-quotient": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu gardes seulement l'écart des ordonnées, ou seulement celui des abscisses : le coefficient directeur est leur QUOTIENT",
+      "en": "You keep only the change in y, or only the change in x: the slope is their QUOTIENT",
+      "ar": "تحتفظ بفرق التراتيب وحده أو بفرق الفواصل وحده: معامل التوجيه هو خارج قسمتهما"
+    },
+    "competency": "math.fn.representation-droites"
+  },
   "math.fn.pente-somme-au-lieu-de-difference": {
     "subject": "math",
     "labels": {
       "fr": "Tu additionnes les coordonnées au lieu de les soustraire pour calculer le coefficient directeur",
       "en": "You add the coordinates instead of subtracting them when computing the slope",
       "ar": "تجمع الإحداثيّات بدل طرحها عند حساب معامل التوجيه"
+    },
+    "competency": "math.fn.representation-droites"
+  },
+  "math.fn.sens-variation-et-signe-de-a": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu cherches le sens de variation ailleurs que dans le signe de a : la droite monte si a > 0 et descend si a < 0",
+      "en": "You look for the direction of change somewhere other than the sign of a: the line rises if a > 0 and falls if a < 0",
+      "ar": "تبحث عن اتّجاه المستقيم في غير إشارة a: المستقيم صاعد إذا كان a > 0 ونازل إذا كان a < 0"
     },
     "competency": "math.fn.representation-droites"
   },
@@ -617,6 +662,15 @@
       "fr": "Tu soustrais dans le mauvais ordre : les coordonnées d'un vecteur sont celles de son extrémité moins celles de son origine",
       "en": "You subtract the wrong way round: a vector's coordinates are its endpoint's minus its starting point's",
       "ar": "تطرح بترتيب معكوس: إحداثيّات الشعاع هي إحداثيّات نهايته ناقص إحداثيّات منشئه"
+    },
+    "competency": "math.vec.repere-coordonnees"
+  },
+  "math.vec.coordonnees-point-inversees": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu échanges l'abscisse et l'ordonnée : un couple de coordonnées s'écrit (abscisse ; ordonnée), dans cet ordre",
+      "en": "You swap the x- and y-coordinates: a coordinate pair is written (x ; y), in that order",
+      "ar": "تعكس الفاصلة والترتيب: الثنائية تُكتب (الفاصلة ؛ الترتيب) بهذا الترتيب"
     },
     "competency": "math.vec.repere-coordonnees"
   },

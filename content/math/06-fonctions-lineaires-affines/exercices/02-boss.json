@@ -9,7 +9,7 @@
     {
       "prompt": "الدالة التآلفية f تُعرَّف بـ f(x) = −x + 4. ما قيمة f(2) ؟",
       "options": [
-        { "id": "a", "text": "6" },
+        { "id": "a", "text": "6", "misconceptionTag": "math.int.signe-ignore-dans-somme" },
         { "id": "b", "text": "2" },
         { "id": "c", "text": "−2" },
         { "id": "d", "text": "4" }
@@ -22,10 +22,10 @@
     {
       "prompt": "بيان دالة تآلفية يمرّ بالنقطتَين A(1 ; 5) و B(3 ; 11). ما قيمة معامل التوجيه a ؟",
       "options": [
-        { "id": "a", "text": "2" },
+        { "id": "a", "text": "2", "misconceptionTag": "math.fn.pente-sans-quotient" },
         { "id": "b", "text": "5" },
         { "id": "c", "text": "3" },
-        { "id": "d", "text": "6" }
+        { "id": "d", "text": "6", "misconceptionTag": "math.fn.pente-sans-quotient" }
       ],
       "correctOption": "c",
       "explanation": "a = (y_B − y_A) ÷ (x_B − x_A) = (11 − 5) ÷ (3 − 1) = 6 ÷ 2 = 3.",
@@ -38,7 +38,7 @@
         { "id": "a", "text": "(3 ; 7)" },
         { "id": "b", "text": "(3 ; 17)" },
         { "id": "c", "text": "(5 ; 15)" },
-        { "id": "d", "text": "(7 ; 3)" }
+        { "id": "d", "text": "(7 ; 3)", "misconceptionTag": "math.vec.coordonnees-point-inversees" }
       ],
       "correctOption": "a",
       "explanation": "نحلّ 4x − 5 = −x + 10، إذن 4x + x = 10 + 5، 5x = 15، x = 3. الصورة: f(3) = 4(3) − 5 = 7. نقطة التقاطع هي (3 ; 7). التحقّق: g(3) = −3 + 10 = 7 ✓. الخطأ الشائع: نقل −x دون قلب إشارته فيُحسب 4x − x = 15 ونحصل خطأً على x = 5.",
@@ -51,7 +51,7 @@
         { "id": "a", "text": "1" },
         { "id": "b", "text": "2" },
         { "id": "c", "text": "0" },
-        { "id": "d", "text": "−4" }
+        { "id": "d", "text": "−4", "misconceptionTag": "math.alg.transposition-sans-changer-signe" }
       ],
       "correctOption": "b",
       "explanation": "نحلّ 5x − 7 = 3، إذن 5x = 10، x = 2. التحقّق: f(2) = 5(2) − 7 = 10 − 7 = 3 ✓.",
@@ -62,7 +62,7 @@
       "prompt": "الدالة الخطية f تُعرَّف بـ f(x) = ax وتحقّق f(6) = 18. ما قيمة f(10) ؟",
       "options": [
         { "id": "a", "text": "20" },
-        { "id": "b", "text": "28" },
+        { "id": "b", "text": "28", "misconceptionTag": "math.fn.image-calculee-par-somme" },
         { "id": "c", "text": "180" },
         { "id": "d", "text": "30" }
       ],
