@@ -1,6 +1,6 @@
 # ROADMAP — ordre d'exécution du reste-à-faire (études, lots, contenu)
 
-<!-- roadmap-sync: since-pr=807 -->
+<!-- roadmap-sync: since-pr=816 -->
 
 > **Instantané du 2026-08-22** (créé le 2026-07-20, resynchronisé contre `main` les 2026-07-25,
 > 2026-07-27, 2026-07-29, 2026-08-01, 2026-08-03, 2026-08-10, 2026-08-16/17 puis le
@@ -149,6 +149,25 @@ quatre groupes ne le sont pas.
 #798 — sans conséquence sur sa décision (D-16 est bien caduque sur son constat), mais à ne pas
 recopier.
 
+**Ajout du 2026-08-22, troisième passe — les deux premières lignes de l'ordre sont livrées.**
+
+- **arena#816 — é11 LOT 1 EST LIVRÉ** : « Demander au Prof », la première brique
+  PÉDAGOGIQUE de l'étage IA. **Ce n'est pas hors file** : c'est la **ligne 18**,
+  et elle se coche. Le lot ne recrée aucun objet de é29 (Q-1, socle unique) et
+  livre la pièce que é29 lot 5 lui avait laissée en toutes lettres — le **cache
+  mutualisé d'explications** (R-15.2), dont `AI_CURATED_MODELS` était la
+  condition d'entrée et n'était jusque-là référencé nulle part.
+- **arena#815 · arena#799 · arena#812** — doc d'agents, e2e, correctif de console
+  IA. Hors file.
+- Côté corpus : **#219 — C4bis ÉTAPE 1 EST LIVRÉE** (1 049 distracteurs tagués,
+  registre 56 → 154). Elle se coche au §5.
+
+⚠️ **Et le fait qui relie les deux, à ne pas perdre** : le tagging est **mergé**
+mais **pas appliqué en production**. Tant qu'`apply-content.yml` n'a pas tourné,
+`get_tutor_question_context` rend `misconception = NULL` et l'explication du
+tuteur se tait sur l'erreur nommée. Les deux lots sont bons ; c'est le geste
+d'application qui les relie, et il tient en un dispatch (voir **C11**).
+
 ## 0. Mode d'emploi (comment exécuter cette roadmap)
 
 1. **Une ligne = une session = un lot = une PR** (règles FableEtudes inchangées : cadre fermé,
@@ -166,15 +185,17 @@ recopier.
    2026-08-10 était **C11 → F10 → C4bis** ; **C11 et F10 sont faites** (vérifiées, §5 et §4), et
    C4bis n'a pas bougé. L'ordre à prendre est donc :
 
-   1. **C4bis étape 1** (§5) — taguer les distracteurs de `math` 9ᵉ. Elle **allume quatre lots
-      déjà mergés** (é04 A1.2a, A1.2b, « m'entraîner », le terme misconception d'A1.1),
-      **débloque les lignes 15 et 16**, et depuis é29 elle **conditionne la ligne 18** : é11 lot 1
-      promet une explication ancrée sur le tag, et le tag n'existe nulle part. Une seule ligne de
-      contenu, quatre lots produit et la première brique IA derrière elle.
-   2. **Ligne 18** (§3) — é11 lot 1, la première brique pédagogique de l'étage IA. Prenable dès
-      maintenant (la porte é29 est livrée, et `AI_KEY_ENC_KEY` est posée depuis le 2026-08-22) ;
-      sa *personnalisation*, elle, attend 1.
-   3. **C4ter** (§5) — `french-6eme`, la complétude de la classe de concours (é28 D-4).
+   ~~1. **C4bis étape 1**~~ · ~~2. **Ligne 18**~~ — **LES DEUX SONT LIVRÉES le 2026-08-22**
+   (#219 et arena#816). L'ordre à prendre devient :
+
+   1. **APPLIQUER LE CORPUS EN PRODUCTION** — un dispatch, zéro écriture (voir **C11**). Les
+      1 049 tags de C4bis sont sur `main` et **invisibles pour l'élève** ; tant qu'ils n'y sont
+      pas, les quatre lots é04/é07 restent inertes ET l'explication du tuteur se tait sur
+      l'erreur nommée. C'est redevenu, pour un instant, le geste qui ne produit rien et livre
+      tout — la leçon de C11, deux semaines plus tard.
+   2. **C4ter** (§5) — `french-6eme`, la complétude de la classe de concours (é28 D-4).
+   3. **Ligne 15** (§3) — é04 A2.1 « Points faibles », désormais **débloquée** : l'écran a enfin
+      des lignes à afficher. ⚠️ Après l'application, pas avant.
 
    La règle « PRODUIT d'abord » suppose que la file PRODUIT a une ligne prenable : la 15
    livrerait toujours un écran vide, la 9 est close, et la 18 est la seule qui le soit — d'où
@@ -443,8 +464,26 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
 - [x] 17. ~~é11 lot 0 — socle IA~~ → **REMPLACÉ par é29 lot 1** (Q-1 : socle unique). **Livré le
       2026-08-22**, arena#807 : adaptateur multi-fournisseur, `ai_usage_events` **avec `payer`**,
       kill-switches, et les **sept conditions de sortie** de R-6 que l'adresse libre de Q-4 exige
-- [ ] 18. **é11 lot 1 — explication personnalisée post-review** (la brique signature : ancrée sur
-      l'item + distracteur + tag). **Prenable maintenant** : la porte existe, les deux payeurs sont
+- [x] 18. **é11 lot 1 — explication personnalisée post-review — LIVRÉE le 2026-08-22**
+      (arena#816). « Demander au Prof » sous une question ratée : quatre tables, neuf RPC, trois
+      prompts système écrits **nativement** FR/EN/AR, le validateur de sortie du §3.4, et le
+      **cache mutualisé** que é29 lot 5 lui avait laissé (R-15.2 — une explication d'un modèle
+      curé est resservie gratuitement à tout élève ; un modèle hors liste reste privé à son
+      payeur). L'écran occupe l'emplacement que é04 A1.2b avait posé (D-A1.2-5) : le lot
+      **remplace un contenu**, il n'a pas refondu un écran.
+      **Ce qui n'y est pas** : le mini-check (US-4) et l'escalade R-8 sont au lot 4, le chat à
+      champ libre au lot 3 — la hiérarchie de confiance R-5 est déjà écrite dans les prompts,
+      pour qu'elle y soit **avant** le premier texte libre.
+      ⚠️ **Deux réserves à ne pas perdre.** (1) **Aucune clé de fournisseur n'a été branchée** :
+      le lot est testé contre un transport mocké, comme é29 avant lui ; le **pilote Q-9** reste
+      entier. (2) La **personnalisation attend l'application du corpus** — les tags de C4bis sont
+      mergés, pas en prod ; d'ici là le tuteur explique sans nommer l'erreur, ce qui est une
+      dégradation prévue et pas une panne.
+      ⚠️⚠️ **La PR a mergé avec `pgTAP suite` ROUGE** : ses 18 assertions avortaient sur une
+      fixture (`source = 'authored'`, refusé par le CHECK). Ce n'est pas un check requis — les
+      quatre requis étaient verts, l'automerge a fait son travail. Correctif : arena#817, poussé
+      sur une branche `wip/` **à dessein**, hors automerge, jusqu'à ce que la suite soit
+      vraiment verte. ~~**Prenable maintenant**~~ : la porte existe, les deux payeurs sont
       câblés, `callAi()` attend son premier appelant pédagogique. C'est **le KPI honnête de é29**
       (§1.4) — elle réussit si é11 démarre, pas si des clés sont saisies.
       🔴 **Mais sa personnalisation dépend de C4bis, et personne ne l'a écrit jusqu'ici.** Le lot
@@ -788,7 +827,31 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
       **Vagues suivantes** (hors périmètre de ce lot) : les autres matières et les autres niveaux
       restent non tagués — la famille `math` couvre `math*`, une famille `physique`/`svt` reste à
       écrire par l'architecte avant tout tagging scientifique.
-- [ ] C4bis. **Tagging des MISCONCEPTIONS — pilote `math` 9ᵉ** _(A11 rendu le 2026-08-02)_.
+- [x] C4bis. **Tagging des MISCONCEPTIONS — LIVRÉ le 2026-08-22** (#219) _(A11 rendu le
+      2026-08-02)_.
+      **1 049 distracteurs tagués sur 2 454 (43 %), sur les VINGT chapitres** — et le périmètre
+      n'était plus celui qu'A11 décrivait : le corpus comptait 818 questions sur 20 chapitres,
+      pas 557 sur 13. Sept chapitres sont arrivés depuis l'étape 0 ; s'arrêter à 13 aurait laissé
+      un tiers de la matière muette.
+      **Registre 56 → 154 entrées**, 149 mobilisées, **154/154 déclarant leur `competency`**.
+      Trois domaines entiers n'avaient **aucun mot** — probabilités, puissances, quadrilatères —
+      et un quatrième n'en avait qu'un (orthogonalité dans l'espace) : ils sont arrivés APRÈS
+      l'étape 0, qui avait couvert les 13 chapitres d'alors.
+      **43 % n'est pas un travail à moitié fait** : c'est la part des distracteurs qui portent une
+      erreur NOMMABLE. Les systèmes plafonnent à 10 % (leurs mauvaises réponses sont des couples
+      numériques faux), la valeur absolue atteint 75 % (presque chaque option fausse y est une
+      règle mal appliquée). Un distracteur sans erreur nommable **reste sans tag** — le champ est
+      optionnel par conception, et nommer une erreur au hasard afficherait un diagnostic faux à
+      un enfant de 9ᵉ.
+      🔜 **Ce qui reste, et c'est un geste, pas un chantier** : **appliquer le corpus en prod**.
+      Les tags sont sur `main` et n'atteignent aucun élève ; les quatre lots qu'ils allument
+      restent inertes tant que `apply-content.yml` n'a pas tourné.
+      **Vague suivante** : `math-6eme` (805 questions déjà taguées en compétences par C4) — les
+      5 entrées non mobilisées du registre décrivent précisément ce bout-là de la famille.
+      ⚠️ Un défaut de contenu croisé en chemin, non corrigé : `08-thales/quiz` Q1, l'option `d`
+      est mathématiquement ÉQUIVALENTE à la bonne réponse. À traiter par `content-audit`.
+
+<details><summary>L'état d'avant le 2026-08-22 (conservé : il porte l'arbitrage A11 et l'étape 0)</summary>
       🔴 **ÉTAPE 0 FAITE le 2026-08-04 (#118), ÉTAPE 1 À PRENDRE — PREMIÈRE LIGNE DE TOUTE LA
       ROADMAP au 2026-08-22**, toutes files confondues. Elle était **troisième** au 2026-08-10,
       derrière C11 et F10 : **les deux sont tombées** (et aucune n'a été prise — voir leur ligne),
@@ -833,6 +896,8 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
       ⚠️ Le champ est **optionnel par conception** (arena#707) : une confusion de vocabulaire ou
       une erreur de lecture d'énoncé n'a pas de compétence propre, et il vaut mieux ne rien
       proposer qu'un exercice au hasard. Ne pas en inventer une pour remplir la colonne.
+</details>
+
 - [ ] C4ter. **`french-6eme` — compléter la 6ᵉ, classe de CONCOURS** _(é28 Q-2/D-4, arbitré le
       2026-08-13)_.
       🔴 **DEUXIÈME LIGNE DE CETTE FILE, juste après C4bis** — l'amendement de é28 Q-2 la place
@@ -1024,15 +1089,16 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
 
 | Axe        | Cible rentrée                                                                                                                                                                                                  | État au **2026-08-22 (J-10)**                                                                                                              |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Produit    | File V1 étapes **1-16** livrées (é22 complet dont bannière rentrée · Révision du jour · correction riche · Rappel tolérant lot 1 · maîtrise visible · points faibles + rapport parent)                         | **16/20 lignes faites** (14/19 au 2026-08-10 — la 20ᵉ, 19bis, est é29). La **17 est close par substitution** (é29 lot 1 remplace é11 lot 0) et la **19bis livrée**. Restent **15-16** (é04 A2) et **18-19** (é11). ⛔ **La 15 est toujours bloquée par C4bis, pas par du code** — et le tagging n'a pas avancé d'une question depuis le 2026-07-31. ⚠️ **La ligne 16 est à relire avant d'être prise** : le suivi parental quotidien (**F11**) a changé la surface qu'elle vise. Les douze derniers jours ont beaucoup produit, mais **hors de cette file** : é02 close, F11, F12, F13, é29 |
-| IA         | A5 **rendu le 2026-07-20** : é11 dégelée (lots 0-2, pilote math 9ᵉ, budget 5 $/j, tuteur « El Ostedh »). ⚠️ **Le socle n'attend plus** : é29 l'a livré le 2026-08-22 (arena#807), avec un second payeur — la famille | 🟢 **LA PORTE EST FAITE, ET ELLE EST ALLUMÉE.** é29 livrée le 2026-08-22 (arena#807) et **déployée en production** (`/api/health` → commit `548a429`, relevé le 2026-08-22) ; **`AI_KEY_ENC_KEY` est posée** (Mohamed, 2026-08-22) — l'effet vaut pour le déploiement suivant sa pose, seul point que cette roadmap ne mesure pas d'elle-même. **Restent, et l'étage pédagogique est entier** : le **pilote de mesure de deux semaines** (Q-9) — **aucune clé de fournisseur n'a jamais été branchée**, le seul appel réel du système est la vérification d'une clé à sa saisie — puis **é11 lots 1-7**. ⚠️ **La ligne 18 est prenable ; sa promesse ne l'est pas** : « ancrée sur l'item + distracteur + **tag** » suppose **C4bis**, qui est à **zéro tag** |
-| Contenu    | Classes existantes à la barre é18 · 1ère sec complète (5 matières) · vidéos 9ᵉ · Tier A `acceptedAnswers` corpus entier · cible arbitrée (A1-Q2) = **statu quo consolidé à la barre é18**, sans classe vitrine | 🟢 **Le point dur du 2026-08-10 est refermé** : **C11 faite** (les 18 sujets sont publiés, #124 close le 2026-08-10, `content-drift` vert jusqu'au 2026-08-22) et **F10 réparée** (2026-08-14). 🔴 **Le nouveau point dur est C4bis** — **0 tag de misconception**, re-mesuré le 2026-08-22. **Corpus au 2026-08-22 : 92 sujets, 719 chapitres, 24 045 questions** (comptage structurel sur la clé `prompt` de `origin/main`, pas le décompte du loader ; 659 chapitres / 22 146 questions au 2026-08-10). **Nouveau et sans ligne jusqu'ici** : la campagne **فقه** (37 أبواب sur 45, rubrique ouverte aux élèves — **C12**) et le rattachement de **446 chapitres** à leur domaine (**F12**). **C3 toujours à 4/5** — `arabic-1ere-sec` n'existe pas, son verrou reste la transcription du محور 3. Toujours rien sur : **vidéos 9ᵉ** (C2) |
+| Produit    | File V1 étapes **1-16** livrées (é22 complet dont bannière rentrée · Révision du jour · correction riche · Rappel tolérant lot 1 · maîtrise visible · points faibles + rapport parent)                         | **17/20 lignes faites.** La **18 est livrée le 2026-08-22** (arena#816) — é11 lot 1, « Demander au Prof ». Restent **15-16** (é04 A2) et **19** (é11 lots 2-7). 🟢 **La 15 est DÉBLOQUÉE** : C4bis a livré 1 049 tags le même jour, l'écran a enfin des lignes à afficher. ⚠️ **Après l'application du corpus en prod, pas avant** — les tags sont mergés, pas appliqués |
+| IA         | A5 **rendu le 2026-07-20** : é11 dégelée (lots 0-2, pilote math 9ᵉ, budget 5 $/j, tuteur « El Ostedh »). ⚠️ **Le socle n'attend plus** : é29 l'a livré le 2026-08-22 (arena#807), avec un second payeur — la famille | 🟢 **LA PORTE EST ALLUMÉE, ET L'ÉTAGE PÉDAGOGIQUE A COMMENCÉ.** é29 déployée (`/api/health` → `548a429`), `AI_KEY_ENC_KEY` posée (Mohamed, 2026-08-22), et **é11 lot 1 livré le même jour** (arena#816) : explication personnalisée, escalier de reformulation, cache mutualisé, retour 👍/👎. Le KPI que é29 se donnait — « elle réussit si é11 démarre » — est atteint. **Restent** : le **pilote Q-9** (aucune clé de fournisseur n'a jamais été branchée) et **é11 lots 2-7** |
+| Contenu    | Classes existantes à la barre é18 · 1ère sec complète (5 matières) · vidéos 9ᵉ · Tier A `acceptedAnswers` corpus entier · cible arbitrée (A1-Q2) = **statu quo consolidé à la barre é18**, sans classe vitrine | 🟢 **C4bis EST LIVRÉE** (#219, 2026-08-22) : 1 049 distracteurs tagués sur 2 454, registre 56 → 154 entrées toutes pourvues de leur `competency`, sur les vingt chapitres de `math` 9ᵉ. C11 et F10 restent faites. 🔜 **Le point dur redevient l'APPLICATION** : les tags sont sur `main` et n'atteignent aucun élève — un dispatch les allume. **C3 toujours à 4/5**. Toujours rien sur : **vidéos 9ᵉ** (C2). **Prochaine ligne : C4ter** (`french-6eme`, classe de concours) |
 | Fondations | Domaine câblé + monitoring + sitemap (F4) · légal F5 · triage ops F6 en route · `main` verte (§1)                                                                                                              | **`main` verte ✅**, **F4 soldée**, et **F10 réparée** le 2026-08-14 — la panne de douze jours est close. **F5 bouge à moitié** : la **suppression de compte est livrée** (arena#791), **l'export/portabilité reste à zéro occurrence** — c'est désormais le seul volet code de GAP-024, et il tient encore la Porte 1 avec l'INPDP (côté humain ; é29 §3.8 y ajoute son registre de traitement). **F6** : plus aucun blocage technique, une seule issue de triage ouverte (arena#673) — le geste opérateur manque toujours. **F7** : deux majeures (arena#660 TypeScript v7 gate rouge, arena#595 `@types/node`). **Trois lignes neuves** : F11, F12, F13 — livrées, consignées, pas rouvertes |
 
 ## 8. Journal de la roadmap
 
 | Date       | Événement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-08-22 | **Les deux premières lignes de l'ordre sont livrées le même jour — et le lien entre elles n'est pas encore fait.** **C4bis étape 1** (#219) : 1 049 distracteurs tagués sur 2 454 (43 %), registre 56 → 154 entrées, sur les VINGT chapitres — le périmètre d'A11 (« 557 questions, 13 chapitres ») décrivait un corpus qui a grandi de sept chapitres depuis l'étape 0. Trois domaines entiers n'avaient AUCUN mot (probabilités, puissances, quadrilatères) et un quatrième un seul : ils sont arrivés après. **43 % est la part des distracteurs NOMMABLES**, pas un travail à moitié fait — 10 % sur les systèmes (des couples numériques faux), 75 % sur la valeur absolue (des règles mal appliquées). **é11 lot 1** (arena#816) le même jour : « Demander au Prof », avec le cache mutualisé que é29 lot 5 lui avait laissé — `AI_CURATED_MODELS` n'était référencé nulle part avant. ⚠️ **Ce qui manque est un GESTE, pas un chantier** : les tags sont mergés et pas appliqués, donc le tuteur explique sans nommer l'erreur, et les quatre lots é04/é07 restent inertes. C11 avait appris exactement ça il y a douze jours. ⚠️⚠️ **Et arena#816 a mergé avec `pgTAP suite` ROUGE** : ses 18 assertions avortaient sur une fixture (`source = 'authored'`, refusé par un CHECK), donc 0 test exécuté sur 18 planifiés. Les quatre checks REQUIS étaient verts, l'automerge a fait son travail — c'est le piège de 2026-07-31 (#689), à l'identique. `db:check-chain` était vert lui aussi, et il avait raison : il rejoue la CHAÎNE, il n'exécute pas les contraintes d'un INSERT. Correctif arena#817, poussé sur une branche `wip/` À DESSEIN pour qu'il ne merge pas avant que la suite soit vraiment verte. |
 | 2026-08-22 | **Les DEUX premières lignes de cette roadmap étaient déjà faites quand elles y sont arrivées — et 60 PR moteur sont entrées « connues » sans être citées.** Resynchronisation contre les deux dépôts, base #746 → #807. **(1) La base a sauté de 61 PR d'un coup** : la citation de é29 (#216) a porté le pointeur à #807, déclarant connues les 60 PR intermédiaires (#747 → #810) sans en citer une. Le gate est resté vert — aucune ne porte la forme « étude/lot ». Même angle mort que le 2026-08-10, dans l'autre sens : là c'était le dépôt privé qu'il ne regarde pas, ici c'est le pointeur qui a sauté par-dessus. **(2) C11 et F10, les deux priorités proclamées, sont tombées sans qu'aucune session ne les prenne.** #124 close le **2026-08-10 à 17 h 46** — le jour même de la rédaction de C11, **six jours avant** que la ligne n'atteigne `main` (#152/#184, restées en draft). #81 close le **2026-08-14**, deux jours avant l'arrivée de F10. **La leçon est neuve et elle est simple : une priorité écrite le jour J et mergée à J+6 n'est pas une priorité, c'est un instantané périmé. Relire l'issue avant de prendre la ligne.** **(3) F5 était fausse à moitié** : arena#791 a livré la suppression de compte le 2026-08-19, sous un titre qui ne cite pas GAP-024 — le symétrique du piège que cette même ligne documentait (« une PR qui cite un GAP ne le clôt pas » ⟶ « un GAP qu'aucune PR ne cite peut être livré »). **(4) Quatre chantiers entiers n'avaient aucune ligne** : suivi parental quotidien (**F11**, 15 PR), programme officiel devenu structure du produit (**F12**), manuels déclarés et liés (**F13**), campagne فقه (**C12**, 37 أبواب sur 45, rubrique ouverte). **(5) Le point dur change encore, et il change de nature** : c'est **C4bis**, qui ne commande plus seulement l'axe adaptatif mais aussi **l'étage IA** — la ligne 18 promet une explication ancrée sur un tag qui n'existe nulle part (0 occurrence sur 719 chapitres). **(6) Côté IA, le prérequis d'exploitation est levé** : `AI_KEY_ENC_KEY` est posée en production (Mohamed, 2026-08-22) ; é29 est déployée (`/api/health` → `548a429`). Restent le pilote Q-9 — **aucune clé de fournisseur n'a jamais été branchée** — et é11 lots 1-7. **(7) Une garde de plus dans la série des muettes** : la sonde des manuels ne tournait pas sous Windows et **refermait son issue en affirmant que tout allait bien** (arena#785, #211/#212) — quatrième cas, consigné en **F10**. |
 | 2026-08-16 | **Cette correction est restée SIX JOURS en draft, verte, à un rebase du merge — et le gate `roadmap-sync` rougissait sur `main` depuis trois nuits sans que personne ne le voie.** La PR #152 (rédigée le 08-10) portait A17 et la réécriture de C11 ; elle a été ouverte **en draft**, jamais promue, puis `main` a avancé de 31 commits et elle est passée en conflit. Deux gardes distinctes ont donc échoué au même endroit — **la sortie**. (1) **La chaîne d'automerge d'ici était événementielle** : elle n'évaluait une PR qu'à l'instant où un workflow de PR finissait, une fois, sans reprise — donc une PR promue après ce coup d'œil, ou un merge perdant une course, n'était **plus jamais relu**. Deux PR vertes en sont restées ouvertes deux jours (#167, #162) ; corrigé par **#182**, qui rebalaye l'état complet à chaque déclenchement (**l'événement dit quand regarder, jamais quoi**). (2) **`roadmap-sync` échouait sur `main`** les 08-14, 08-15 et 08-16 : trois lots moteur n'étaient cités nulle part — **arena#726** (é28 lot 3) et surtout **arena#743 · arena#746**, qui font passer **l'étude 02 en exécution** (schéma + moteur SQL, puis l'écran de l'examen blanc). Le §6 dit toujours « é02 se re-scope maintenant » : quatre lots plus tard, c'est faux. Cités au **§0bis**, base portée à **#746**. **La leçon commune aux deux** : un cron qui rougit n'atteint personne, exactement comme les trois gardes muettes du 2026-08-10 ci-dessous. Ce qui manque n'est toujours pas la garde — c'est que **sa panne arrive à quelqu'un**. |
 | 2026-08-10 | **Correction — la cause n'était pas l'écart de Node, et le correctif n'était pas le mien.** L'entrée suivante (même jour) affirme que la panne `npm ci` venait de ce que les six workflows d'ici étaient restés à Node 22 pendant que le moteur passait à 24, et que leur alignement l'a réparée. **Les deux sont faux.** La cause est **arena#716** : une PR intitulée « bump undici · dependency-type: **indirect** » qui modifiait en réalité `package.json` et faisait passer `@cloudflare/vite-plugin` de `^1.40.2` à `^1.51.1`, entraînant **miniflare 4 → 5 alpha**, workerd et wrangler — un saut de **majeure** et une **alpha** dans la chaîne de build, sous un intitulé de bump indirect, soit exactement ce que la politique de montée de version refuse. Le correctif est **arena#718**, qui la **revert** : resynchroniser le lockfile (`npm install --package-lock-only`) suffisait à reverdir `npm ci` — essayé, ça marche — mais gardait l'alpha et la majeure que personne n'avait arbitrées. **Ce que l'écart de Node explique vraiment est l'INVERSE d'une cause** : npm 11 (Node 24) acceptait ce lockfile, npm 10 (Node 22) le refusait — donc la CI du moteur était **verte** sur #716 et **la Content CI d'ici a été le seul détecteur du système**. Elle n'a pas échoué par mauvaise configuration : elle a échoué **parce qu'elle avait raison**. **Conséquence assumée, et c'est le vrai enseignement** : en alignant les six workflows sur Node 24, la PR #150 **a supprimé ce détecteur**. L'alignement se défend pour lui-même — le `.nvmrc` du moteur dit 24, et exécuter ses scripts sur un Node qu'il n'utilise pas est un risque — mais il a été **présenté comme un correctif qu'il n'était pas**, et son coût n'était écrit nulle part. La propriété perdue était de toute façon **accidentelle** (la sévérité de npm 10, pas une intention) : s'y fier était fragile, et c'est pourquoi la question posée en **A17** n'est pas seulement « 22 ou 24 » mais **quelle garde refuse une PR de dépendance dont le diff dépasse ce que son titre annonce**. **Méthode, pour la prochaine fois** : le premier diagnostic tenait parce qu'il expliquait le symptôme observé (deux CI, deux verdicts) — il n'a pas été confronté à la question « et si l'autre côté avait simplement tort ? ». Un écart entre deux environnements désigne rarement le plus strict comme fautif. |
