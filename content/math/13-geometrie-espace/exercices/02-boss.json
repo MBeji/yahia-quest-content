@@ -22,8 +22,8 @@
     {
       "prompt": "مخروط نصف قطر قاعدته 6 cm وارتفاعه 9 cm. ما حجمه؟ (π ≈ 3,14)",
       "options": [
-        { "id": "a", "text": "1017,36 cm³" },
-        { "id": "b", "text": "678,24 cm³" },
+        { "id": "a", "text": "1017,36 cm³", "misconceptionTag": "math.mes.volume-pyramide-sans-tiers" },
+        { "id": "b", "text": "678,24 cm³", "misconceptionTag": "math.mes.volume-pyramide-sans-tiers" },
         { "id": "c", "text": "169,56 cm³" },
         { "id": "d", "text": "339,12 cm³" }
       ],
@@ -35,7 +35,7 @@
     {
       "prompt": "هرم قاعدته مثلّث قائم ساقاه 3 cm و4 cm، وارتفاع الهرم 10 cm. ما حجم الهرم؟",
       "options": [
-        { "id": "a", "text": "60 cm³" },
+        { "id": "a", "text": "60 cm³", "misconceptionTag": "math.mes.volume-pyramide-sans-tiers" },
         { "id": "b", "text": "40 cm³" },
         { "id": "c", "text": "30 cm³" },
         { "id": "d", "text": "20 cm³" }
@@ -49,9 +49,9 @@
       "prompt": "كرة نصف قطرها 3 cm وأسطوانة نصف قطرها 3 cm وارتفاعها 4 cm. أيّهما حجمه أكبر؟",
       "options": [
         { "id": "a", "text": "الكرة أكبر" },
-        { "id": "b", "text": "الأسطوانة أكبر بوضوح (36π مقابل 27π)" },
+        { "id": "b", "text": "الأسطوانة أكبر بوضوح (36π مقابل 27π)", "misconceptionTag": "math.mes.formules-solides-confondues" },
         { "id": "c", "text": "حجماهما متساويان" },
-        { "id": "d", "text": "الأسطوانة أكبر بقليل (48π مقابل 36π)" }
+        { "id": "d", "text": "الأسطوانة أكبر بقليل (48π مقابل 36π)", "misconceptionTag": "math.mes.formules-solides-confondues" }
       ],
       "correctOption": "c",
       "explanation": "حجم الكرة: V = (4/3)π × 3³ = (4/3) × 27π = 36π cm³. حجم الأسطوانة: V = π × 3² × 4 = 36π cm³. الحجمان متساويان! هذه نتيجة مدهشة تستحقّ الحفظ. الخطأ الشائع: نسيان المعامل 4/3 في صيغة الكرة فيُحصل على πr³ = 27π مقابل 36π فيُظنّ أنّ الأسطوانة أكبر بوضوح، أو تطبيق 4/3 على الأسطوانة فيُحصل على 48π مقابل 36π فيُظنّ أنّها أكبر بقليل.",

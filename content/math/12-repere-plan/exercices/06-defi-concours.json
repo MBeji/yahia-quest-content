@@ -10,9 +10,9 @@
       "prompt": "في معلّم متعامد ومتجانس، A(1 ; 2) وB(4 ; 6). ما المسافة AB؟",
       "options": [
         { "id": "a", "text": "5" },
-        { "id": "b", "text": "7" },
-        { "id": "c", "text": "25" },
-        { "id": "d", "text": "√7" }
+        { "id": "b", "text": "7", "misconceptionTag": "math.geo.pythagore-sans-carres" },
+        { "id": "c", "text": "25", "misconceptionTag": "math.vec.distance-sans-racine" },
+        { "id": "d", "text": "√7", "misconceptionTag": "math.geo.pythagore-sans-carres" }
       ],
       "correctOption": "a",
       "explanation": "المسافة AB = √((xB − xA)² + (yB − yA)²) = √((4 − 1)² + (6 − 2)²) = √(9 + 16) = √25 = 5. ✓ (3-4-5). الخطأ الشائع: جمع الفروق دون تربيع (3 + 4 = 7)؛ أو نسيان الجذر (25)؛ أو جمع تحت الجذر دون تربيع (√7).",
@@ -25,7 +25,7 @@
         { "id": "a", "text": "(4 ; 2)" },
         { "id": "b", "text": "(2 ; 2)" },
         { "id": "c", "text": "(2 ; 1)" },
-        { "id": "d", "text": "(8 ; −4)" }
+        { "id": "d", "text": "(8 ; −4)", "misconceptionTag": "math.vec.milieu-sans-moitie" }
       ],
       "correctOption": "c",
       "explanation": "إحداثيّات المنتصف = معدّل إحداثيّات الطرفَين: I((xA + xB)/2 ; (yA + yB)/2) = ((−2 + 6)/2 ; (3 + (−1))/2) = (4/2 ; 2/2) = (2 ; 1). ✓ الخطأ الشائع: جمع الإحداثيّات دون القسمة على 2 (4 ; 2)؛ أو خطأ في جمع الأعداد النسبية (2 ; 2).",
@@ -64,7 +64,7 @@
         { "id": "a", "text": "(2 ; 3)" },
         { "id": "b", "text": "(−2 ; −3)" },
         { "id": "c", "text": "(−2 ; 3)" },
-        { "id": "d", "text": "(3 ; −2)" }
+        { "id": "d", "text": "(3 ; −2)", "misconceptionTag": "math.vec.coordonnees-point-inversees" }
       ],
       "correctOption": "c",
       "explanation": "التماثل بالنسبة إلى المبدأ O يقلب إشارتَي الإحداثيَّين معًا: A'(−xA ; −yA) = (−2 ; 3). ✓ (O منتصف [AA']: ((2 + (−2))/2 ; (−3 + 3)/2) = (0 ; 0) صحيح). الخطأ الشائع: قلب إشارة إحداثيّ واحد فقط (2 ; 3) أو (−2 ; −3)؛ أو تبديل الإحداثيَّين (3 ; −2).",
@@ -75,8 +75,8 @@
       "prompt": "حسب تلميذ المسافة AB حيث A(0 ; 0) وB(6 ; 8) فكتب: «AB = (6 + 8)/2 = 7». ما الخطأ؟",
       "options": [
         { "id": "a", "text": "المسافة = √(6² + 8²) = 10" },
-        { "id": "b", "text": "المسافة = 6 + 8 = 14" },
-        { "id": "c", "text": "لا خطأ، الحساب صحيح" },
+        { "id": "b", "text": "المسافة = 6 + 8 = 14", "misconceptionTag": "math.geo.pythagore-sans-carres" },
+        { "id": "c", "text": "لا خطأ، الحساب صحيح", "misconceptionTag": "math.geo.pythagore-sans-carres" },
         { "id": "d", "text": "المسافة = 6 × 8 = 48" }
       ],
       "correctOption": "a",

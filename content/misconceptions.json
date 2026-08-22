@@ -872,6 +872,15 @@
     },
     "competency": "math.vec.repere-coordonnees"
   },
+  "math.vec.coordonnees-vecteur-somme-au-lieu-de-difference": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu additionnes les coordonnées au lieu de les soustraire : celles d'un vecteur sont celles de l'extrémité MOINS celles de l'origine",
+      "en": "You add the coordinates instead of subtracting them: a vector's coordinates are the endpoint's MINUS the start point's",
+      "ar": "تجمع الإحداثيّات بدل طرحها: إحداثيّا الشعاع هما إحداثيّا الطرف ناقص إحداثيَّي المبدأ"
+    },
+    "competency": "math.vec.repere-coordonnees"
+  },
   "math.vec.coordonnees-point-inversees": {
     "subject": "math",
     "labels": {
@@ -887,6 +896,15 @@
       "fr": "Tu te trompes de quadrant : c'est le couple de signes de l'abscisse et de l'ordonnée qui le détermine",
       "en": "You pick the wrong quadrant: it is decided by the pair of signs of the x- and y-coordinates",
       "ar": "تخطئ في الربع: الربع تحدّده إشارتا الفاصلة والترتيبة معًا"
+    },
+    "competency": "math.vec.repere-coordonnees"
+  },
+  "math.vec.repere-orthogonal-et-homogene-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds « orthogonal » et « homogène » : orthogonal dit que les deux axes sont perpendiculaires, homogène que l'unité est la même sur les deux",
+      "en": "You confuse \"orthogonal\" with \"same-scale\": orthogonal means the two axes are perpendicular, same-scale means the unit is identical on both",
+      "ar": "تخلط بين «متعامد» و«متجانس»: المتعامد يعني أنّ المحورَين عموديّان، والمتجانس أنّ الوحدة واحدة عليهما"
     },
     "competency": "math.vec.repere-coordonnees"
   },
@@ -926,6 +944,15 @@
     },
     "competency": "math.mes.volumes"
   },
+  "math.mes.tiers-applique-a-tort": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu divises par 3 un volume de prisme ou de cylindre : le tiers ne concerne que la pyramide et le cône",
+      "en": "You divide a prism or cylinder volume by 3: the third belongs to the pyramid and the cone only",
+      "ar": "تقسم حجم موشور أو أسطوانة على 3: الثلث خاصّ بالهرم والمخروط وحدهما"
+    },
+    "competency": "math.mes.volumes"
+  },
   "math.mes.aire-utilisee-comme-volume": {
     "subject": "math",
     "labels": {
@@ -935,12 +962,48 @@
     },
     "competency": "math.mes.volumes"
   },
+  "math.mes.volume-utilise-comme-aire": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu donnes un volume là où on demande une aire : une aire est en cm², un volume en cm³",
+      "en": "You give a volume where an area is asked for: an area is in cm², a volume in cm³",
+      "ar": "تعطي حجمًا حيث تُطلب مساحة: المساحة بـ cm² والحجم بـ cm³"
+    },
+    "competency": "math.mes.aires"
+  },
+  "math.mes.formules-solides-confondues": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu appliques la formule d'un autre solide : chaque solide a la sienne, et un r³ ne remplace pas un r²h",
+      "en": "You apply another solid's formula: each solid has its own, and an r³ does not stand in for an r²h",
+      "ar": "تطبّق صيغة مجسّم آخر: لكلّ مجسّم صيغته، وr³ لا تحلّ محلّ r²h"
+    },
+    "competency": "math.esp.solides-espace"
+  },
+  "math.mes.agrandissement-volume-non-cube": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu multiplies le volume par le rapport d'agrandissement : un volume est multiplié par le CUBE de ce rapport",
+      "en": "You multiply the volume by the scale factor: a volume is multiplied by the CUBE of that factor",
+      "ar": "تضرب الحجم في معامل التكبير: الحجم يُضرب في مكعّب ذلك المعامل"
+    },
+    "competency": "math.mes.volumes"
+  },
   "math.mes.aire-et-perimetre-confondus": {
     "subject": "math",
     "labels": {
       "fr": "Tu confonds l'aire et le périmètre : le périmètre s'additionne le long du contour, l'aire se calcule en multipliant deux dimensions",
       "en": "You confuse area with perimeter: perimeter adds up along the outline, area multiplies two dimensions",
       "ar": "تخلط بين المساحة والمحيط: المحيط يُجمع على طول الحدود، والمساحة تُحسب بضرب بعدين"
+    },
+    "competency": "math.mes.aires"
+  },
+  "math.mes.aire-triangle-sans-moitie": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu oublies de diviser par 2 l'aire du triangle : c'est la moitié du produit de la base par la hauteur",
+      "en": "You forget to halve the triangle area: it is half the base times the height",
+      "ar": "تنسى القسمة على 2 في مساحة المثلّث: هي نصف جداء القاعدة في الارتفاع"
     },
     "competency": "math.mes.aires"
   }

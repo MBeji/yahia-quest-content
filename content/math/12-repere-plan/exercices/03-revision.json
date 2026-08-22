@@ -9,9 +9,9 @@
     {
       "prompt": "A(−2 ; 3) وB(4 ; −1). ما إحداثيّا الشعاع AB؟",
       "options": [
-        { "id": "a", "text": "AB(−6 ; 4)" },
+        { "id": "a", "text": "AB(−6 ; 4)", "misconceptionTag": "math.vec.coordonnees-vecteur-inversees" },
         { "id": "b", "text": "AB(6 ; −4)" },
-        { "id": "c", "text": "AB(2 ; 2)" },
+        { "id": "c", "text": "AB(2 ; 2)", "misconceptionTag": "math.vec.coordonnees-vecteur-somme-au-lieu-de-difference" },
         { "id": "d", "text": "AB(4 ; −2)" }
       ],
       "correctOption": "b",
@@ -24,7 +24,7 @@
       "options": [
         { "id": "a", "text": "I(1 ; 6)" },
         { "id": "b", "text": "I(2 ; 6)" },
-        { "id": "c", "text": "I(4 ; 12)" },
+        { "id": "c", "text": "I(4 ; 12)", "misconceptionTag": "math.vec.milieu-sans-moitie" },
         { "id": "d", "text": "I(1 ; 1)" }
       ],
       "correctOption": "a",
@@ -36,7 +36,7 @@
       "prompt": "A(0 ; 0) وB(5 ; 12). ما قيمة المسافة AB؟",
       "options": [
         { "id": "a", "text": "AB = 7" },
-        { "id": "b", "text": "AB = 17" },
+        { "id": "b", "text": "AB = 17", "misconceptionTag": "math.geo.pythagore-sans-carres" },
         { "id": "c", "text": "AB = √119" },
         { "id": "d", "text": "AB = 13" }
       ],
@@ -61,7 +61,7 @@
     {
       "prompt": "A(2 ; −4) وB(6 ; 8). ما إحداثيّا منتصف I للقطعة [AB]؟",
       "options": [
-        { "id": "a", "text": "I(8 ; 4)" },
+        { "id": "a", "text": "I(8 ; 4)", "misconceptionTag": "math.vec.milieu-sans-moitie" },
         { "id": "b", "text": "I(4 ; 2)" },
         { "id": "c", "text": "I(2 ; 2)" },
         { "id": "d", "text": "I(4 ; −2)" }
@@ -74,8 +74,8 @@
     {
       "prompt": "A(−1 ; 2) وB(3 ; 5). احسب المسافة AB.",
       "options": [
-        { "id": "a", "text": "AB = 7" },
-        { "id": "b", "text": "AB = √7" },
+        { "id": "a", "text": "AB = 7", "misconceptionTag": "math.geo.pythagore-sans-carres" },
+        { "id": "b", "text": "AB = √7", "misconceptionTag": "math.geo.pythagore-sans-carres" },
         { "id": "c", "text": "AB = √41" },
         { "id": "d", "text": "AB = 5" }
       ],
