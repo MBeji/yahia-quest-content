@@ -5,10 +5,11 @@
       "prompt": "لتكن M نقطة من مستقيم مدرّج (OI) فاصلتها عدد حقيقي x . ما هي القيمة المطلقة |x| ؟",
       "options": [
         { "id": "a", "text": "هي البعد OM بين النقطة M والمبدأ O" },
-        { "id": "b", "text": "هي فاصلة النقطة M نفسها مهما كانت إشارتها" },
+        { "id": "b", "text": "هي فاصلة النقطة M نفسها مهما كانت إشارتها", "misconceptionTag": "math.num.valeur-absolue-negative" },
         {
           "id": "c",
-          "text": "هي مقابل الفاصلة x ، أي العدد −x في كلّ الحالات"
+          "text": "هي مقابل الفاصلة x ، أي العدد −x في كلّ الحالات",
+          "misconceptionTag": "math.num.valeur-absolue-toujours-oppose"
         },
         { "id": "d", "text": "هي البعد OI المتّخذ وحدةً على المستقيم المدرّج" }
       ],
@@ -20,10 +21,10 @@
     {
       "prompt": "ما قيمة |−12| ؟",
       "options": [
-        { "id": "a", "text": "−12" },
+        { "id": "a", "text": "−12", "misconceptionTag": "math.num.valeur-absolue-negative" },
         { "id": "b", "text": "12" },
-        { "id": "c", "text": "−1/12" },
-        { "id": "d", "text": "1/12" }
+        { "id": "c", "text": "−1/12", "misconceptionTag": "math.num.oppose-inverse-confondus" },
+        { "id": "d", "text": "1/12", "misconceptionTag": "math.num.oppose-inverse-confondus" }
       ],
       "correctOption": "b",
       "explanation": "العدد −12 سالب، والقيمة المطلقة لعدد سالب هي مقابله: |−12| = −(−12) = 12 . القيمة المطلقة تقيس البعد عن الصفر فهي موجبة، وهي تحذف الإشارة ولا تعطي المقلوب.",
@@ -33,8 +34,8 @@
     {
       "prompt": "إذا كان a عددًا موجبًا، فماذا تعني المساواة |x| = a ؟",
       "options": [
-        { "id": "a", "text": "تعني أنّ x = a فقط لا غير" },
-        { "id": "b", "text": "تعني أنّ x = −a فقط لا غير" },
+        { "id": "a", "text": "تعني أنّ x = a فقط لا غير", "misconceptionTag": "math.num.valeur-absolue-solution-unique" },
+        { "id": "b", "text": "تعني أنّ x = −a فقط لا غير", "misconceptionTag": "math.num.valeur-absolue-solution-unique" },
         { "id": "c", "text": "تعني أنّ x = a أو x = −a" },
         { "id": "d", "text": "تعني أنّ x = a وكذلك x = 0" }
       ],
@@ -47,9 +48,9 @@
       "prompt": "أيّ من الخاصيّات التالية صحيحة مهما كان العددان الحقيقيان a و b ؟",
       "options": [
         { "id": "a", "text": "|a × b| = |a| × |b|" },
-        { "id": "b", "text": "|a + b| = |a| + |b|" },
-        { "id": "c", "text": "|a − b| = |a| − |b|" },
-        { "id": "d", "text": "|−a| = −|a|" }
+        { "id": "b", "text": "|a + b| = |a| + |b|", "misconceptionTag": "math.num.valeur-absolue-somme-additive" },
+        { "id": "c", "text": "|a − b| = |a| − |b|", "misconceptionTag": "math.num.valeur-absolue-somme-additive" },
+        { "id": "d", "text": "|−a| = −|a|", "misconceptionTag": "math.num.valeur-absolue-negative" }
       ],
       "correctOption": "a",
       "explanation": "القيمة المطلقة لجذاء تساوي جذاء القيمتين المطلقتين: |a × b| = |a| × |b| . أمّا الخاصيّة المزعومة للمجموع فخاطئة: مع a = 7 و b = −7 نجد |a + b| = 0 بينما |a| + |b| = 14 . وكذلك |−a| = |a| وهي موجبة، لا سالبة.",
@@ -59,9 +60,9 @@
     {
       "prompt": "ما قيمة |√3 − 2| ؟",
       "options": [
-        { "id": "a", "text": "√3 − 2" },
-        { "id": "b", "text": "2 + √3" },
-        { "id": "c", "text": "−2 − √3" },
+        { "id": "a", "text": "√3 − 2", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
+        { "id": "b", "text": "2 + √3", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
+        { "id": "c", "text": "−2 − √3", "misconceptionTag": "math.num.valeur-absolue-negative" },
         { "id": "d", "text": "2 − √3" }
       ],
       "correctOption": "d",

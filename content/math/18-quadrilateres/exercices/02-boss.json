@@ -23,9 +23,9 @@
       "prompt": "أيّ العبارات التالية صحيحة؟",
       "options": [
         { "id": "a", "text": "قطرا متوازي الأضلاع يتقاطعان في منتصفيهما" },
-        { "id": "b", "text": "قطرا المستطيل متعامدان" },
-        { "id": "c", "text": "قطرا المعيّن متقايسان" },
-        { "id": "d", "text": "قطرا شبه المنحرف يتقاطعان في منتصفيهما" }
+        { "id": "b", "text": "قطرا المستطيل متعامدان", "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees" },
+        { "id": "c", "text": "قطرا المعيّن متقايسان", "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees" },
+        { "id": "d", "text": "قطرا شبه المنحرف يتقاطعان في منتصفيهما", "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees" }
       ],
       "correctOption": "a",
       "explanation": "تقاطع القطرين في منتصفيهما خاصيّة أساسيّة لكلّ متوازي أضلاع. أمّا قطرا المستطيل فمتقايسان ولا يتعامدان، وقطرا المعيّن متعامدان ولا يتقايسان، ولا يجتمع الوصفان إلاّ في المربّع. وشبه المنحرف العامّ ليس له أيّ خاصيّة على قطريه.",
@@ -35,7 +35,7 @@
     {
       "prompt": "MNP مثلث، والنقطة K منتصف [MP]، والنقطة R نظيرة N بالنسبة إلى K. النقطة S منتصف [MN] والنقطة T منتصف [PR]. لماذا يكون الرباعي MSPT متوازي أضلاع؟\n<svg viewBox=\"0 0 280 235\"><path d=\"M85 205 L241 153 L189 49 L33 101 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M85 205 L189 49 M241 153 L33 101\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M85 205 L163 179 L189 49 L111 75 Z\" fill=\"#0f6e56\" opacity=\"0.15\"/><path d=\"M85 205 L163 179 L189 49 L111 75 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"85\" cy=\"205\" r=\"4\"/><circle cx=\"241\" cy=\"153\" r=\"4\"/><circle cx=\"189\" cy=\"49\" r=\"4\"/><circle cx=\"33\" cy=\"101\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"137\" cy=\"127\" r=\"4.5\"/><circle cx=\"163\" cy=\"179\" r=\"4.5\"/><circle cx=\"111\" cy=\"75\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"73\" y=\"222\" text-anchor=\"middle\" fill=\"#0f172a\">M</text><text x=\"255\" y=\"162\" text-anchor=\"middle\" fill=\"#0f172a\">N</text><text x=\"199\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">P</text><text x=\"20\" y=\"94\" text-anchor=\"middle\" fill=\"#0f172a\">R</text><text x=\"126\" y=\"120\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text><text x=\"174\" y=\"194\" text-anchor=\"middle\" fill=\"#0f6e56\">S</text><text x=\"99\" y=\"68\" text-anchor=\"middle\" fill=\"#0f6e56\">T</text></g></svg>",
       "options": [
-        { "id": "a", "text": "لأنّ MS = SP" },
+        { "id": "a", "text": "لأنّ MS = SP", "misconceptionTag": "math.geo.condition-suffisante-supposee" },
         { "id": "b", "text": "لأنّ القطرين [MP] و[ST] متعامدان" },
         { "id": "c", "text": "لأنّ النقاط M وS وP على نفس الاستقامة" },
         { "id": "d", "text": "لأنّ الضلعين [MS] و[PT] متوازيان ومتقايسان" }
@@ -61,9 +61,9 @@
     {
       "prompt": "A وB وC وD أربع نقاط، والقطعتان [AC] و[BD] لهما نفس المنتصف. بأيّ ترتيب نكتب اسم متوازي الأضلاع المتحصّل عليه؟\n<svg viewBox=\"0 0 320 220\"><path d=\"M70 70 L250 170 M240 60 L80 180\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\"/><g stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" fill=\"none\"><path d=\"M118 90 L112 100\"/><path d=\"M208 140 L202 150\"/><path d=\"M204 95 L196 85\"/><path d=\"M200 98 L192 88\"/><path d=\"M124 155 L116 145\"/><path d=\"M120 158 L112 148\"/></g><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"70\" r=\"4\"/><circle cx=\"240\" cy=\"60\" r=\"4\"/><circle cx=\"250\" cy=\"170\" r=\"4\"/><circle cx=\"80\" cy=\"180\" r=\"4\"/></g><circle cx=\"160\" cy=\"120\" r=\"4.5\" fill=\"#0f6e56\"/><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"58\" y=\"64\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"252\" y=\"52\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"262\" y=\"176\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"68\" y=\"194\" text-anchor=\"middle\" fill=\"#0f172a\">D</text></g></svg>",
       "options": [
-        { "id": "a", "text": "ABDC" },
-        { "id": "b", "text": "ACBD" },
-        { "id": "c", "text": "أيّ ترتيب للحروف الأربعة يصلح" },
+        { "id": "a", "text": "ABDC", "misconceptionTag": "math.vec.parallelogramme-sommets-mal-ordonnes" },
+        { "id": "b", "text": "ACBD", "misconceptionTag": "math.vec.parallelogramme-sommets-mal-ordonnes" },
+        { "id": "c", "text": "أيّ ترتيب للحروف الأربعة يصلح", "misconceptionTag": "math.vec.parallelogramme-sommets-mal-ordonnes" },
         { "id": "d", "text": "ABCD" }
       ],
       "correctOption": "d",

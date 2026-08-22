@@ -242,6 +242,33 @@
     },
     "competency": "math.num.valeur-absolue"
   },
+  "math.num.valeur-absolue-solution-unique": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu ne gardes qu'une solution à |x| = a : il y en a DEUX, opposées, dès que a est strictement positif",
+      "en": "You keep only one solution to |x| = a: there are TWO, opposite, as soon as a is strictly positive",
+      "ar": "تحتفظ بحلّ واحد للمعادلة |x| = a: هناك حلّان متقابلان ما دام a موجبًا تمامًا"
+    },
+    "competency": "math.num.valeur-absolue"
+  },
+  "math.num.valeur-absolue-signe-du-contenu-non-teste": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu enlèves les barres sans tester le signe de ce qu'elles contiennent : |a − b| vaut b − a quand a est plus petit que b",
+      "en": "You drop the bars without checking the sign of what is inside: |a − b| is b − a when a is smaller than b",
+      "ar": "ترفع الشريطَين دون اختبار إشارة ما بينهما: |a − b| تساوي b − a إذا كان a أصغر من b"
+    },
+    "competency": "math.num.valeur-absolue"
+  },
+  "math.num.valeur-absolue-somme-additive": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu distribues la valeur absolue sur une somme : |a + b| n'est pas |a| + |b| en général — elle ne se distribue que sur un produit ou un quotient",
+      "en": "You spread absolute value over a sum: |a + b| is not |a| + |b| in general — it distributes only over a product or a quotient",
+      "ar": "توزّع القيمة المطلقة على مجموع: |a + b| ليست |a| + |b| عمومًا، فهي لا توزَّع إلّا على جداء أو خارج قسمة"
+    },
+    "competency": "math.num.valeur-absolue"
+  },
   "math.num.oppose-inverse-confondus": {
     "subject": "math",
     "labels": {
@@ -1016,6 +1043,51 @@
     },
     "competency": "math.geo.angles-inscrits"
   },
+  "math.geo.diagonales-proprietes-mal-attribuees": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu attribues à un quadrilatère les diagonales d'un autre : même milieu pour tout parallélogramme, égales pour le rectangle, perpendiculaires pour le losange",
+      "en": "You give a quadrilateral the diagonals of another: same midpoint for every parallelogram, equal for the rectangle, perpendicular for the rhombus",
+      "ar": "تنسب إلى رباعيّ قطرَي رباعيّ آخر: المنتصف نفسه لكلّ متوازي أضلاع، والتقايس للمستطيل، والتعامد للمعيّن"
+    },
+    "competency": "math.geo.quadrilateres"
+  },
+  "math.geo.condition-suffisante-supposee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends une seule propriété pour une preuve : des diagonales perpendiculaires ne suffisent pas au losange, il leur faut aussi le même milieu",
+      "en": "You take a single property as proof: perpendicular diagonals are not enough for a rhombus — they must also share a midpoint",
+      "ar": "تعدّ خاصيّة واحدة برهانًا: تعامد القطرَين لا يكفي للمعيّن، بل يلزم كذلك أن يكون لهما المنتصف نفسه"
+    },
+    "competency": "math.geo.quadrilateres"
+  },
+  "math.geo.description-la-plus-precise-manquee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu t'arrêtes à une description vraie mais pas la plus précise — ou tu en ajoutes une que rien ne prouve : un carré est un losange, l'inverse est faux",
+      "en": "You stop at a true but not the most precise description — or you add one nothing proves: a square is a rhombus, the converse is false",
+      "ar": "تكتفي بوصف صحيح لكنّه ليس الأدقّ، أو تضيف وصفًا لا يُثبته شيء: المربّع معيّن، والعكس غير صحيح"
+    },
+    "competency": "math.geo.quadrilateres"
+  },
+  "math.geo.droite-des-milieux-facteur-deux": {
+    "subject": "math",
+    "labels": {
+      "fr": "Le segment qui joint deux milieux vaut la MOITIÉ du troisième côté : le côté est son double, pas sa moitié",
+      "en": "The segment joining two midpoints is HALF the third side: the side is its double, not its half",
+      "ar": "القطعة الواصلة بين منتصفَي ضلعَين تساوي نصف الضلع الثالث: الضلع ضعفها لا نصفها"
+    },
+    "competency": "math.geo.triangles-base"
+  },
+  "math.geo.mediane-hypotenuse-demi": {
+    "subject": "math",
+    "labels": {
+      "fr": "Dans un triangle rectangle, la médiane issue de l'angle droit vaut la MOITIÉ de l'hypoténuse — et le milieu de l'hypoténuse est à égale distance des trois sommets",
+      "en": "In a right triangle the median from the right angle is HALF the hypotenuse — and the hypotenuse midpoint is equidistant from all three vertices",
+      "ar": "في المثلّث القائم، المتوسّط الصادر من الزاوية القائمة يساوي نصف الوتر، ومنتصف الوتر يبعد المسافة نفسها عن الرؤوس الثلاثة"
+    },
+    "competency": "math.geo.triangles-base"
+  },
   "math.vec.egalite-exige-meme-origine": {
     "subject": "math",
     "labels": {
@@ -1220,6 +1292,24 @@
       "fr": "Tu oublies de diviser par 2 l'aire du triangle : c'est la moitié du produit de la base par la hauteur",
       "en": "You forget to halve the triangle area: it is half the base times the height",
       "ar": "تنسى القسمة على 2 في مساحة المثلّث: هي نصف جداء القاعدة في الارتفاع"
+    },
+    "competency": "math.mes.aires"
+  },
+  "math.mes.aire-trapeze-sans-demi-somme": {
+    "subject": "math",
+    "labels": {
+      "fr": "L'aire d'un trapèze est la DEMI-somme des deux bases multipliée par la hauteur : une seule base, ou la somme entière, ne convient pas",
+      "en": "A trapezium area is HALF the sum of the two parallel sides times the height: one side alone, or the whole sum, will not do",
+      "ar": "مساحة شبه المنحرف هي نصف مجموع القاعدتَين مضروبًا في الارتفاع: قاعدة واحدة أو المجموع كاملًا لا يصلحان"
+    },
+    "competency": "math.mes.aires"
+  },
+  "math.mes.aire-losange-sans-moitie": {
+    "subject": "math",
+    "labels": {
+      "fr": "L'aire d'un losange est le DEMI-produit de ses diagonales : oublier la moitié double le résultat",
+      "en": "A rhombus area is HALF the product of its diagonals: forgetting the half doubles the answer",
+      "ar": "مساحة المعيّن هي نصف جداء قطرَيه: نسيان النصف يضاعف النتيجة"
     },
     "competency": "math.mes.aires"
   }

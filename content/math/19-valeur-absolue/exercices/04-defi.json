@@ -9,7 +9,7 @@
     {
       "prompt": "ما قيمة |√10 − 3| ؟",
       "options": [
-        { "id": "a", "text": "3 − √10" },
+        { "id": "a", "text": "3 − √10", "misconceptionTag": "math.num.valeur-absolue-toujours-oppose" },
         { "id": "b", "text": "√10 − 3" },
         { "id": "c", "text": "√10 + 3" },
         { "id": "d", "text": "−√10 − 3" }
@@ -22,10 +22,10 @@
     {
       "prompt": "ما قيمة |−5 − √2| ؟",
       "options": [
-        { "id": "a", "text": "5 − √2" },
-        { "id": "b", "text": "√2 − 5" },
+        { "id": "a", "text": "5 − √2", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
+        { "id": "b", "text": "√2 − 5", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
         { "id": "c", "text": "5 + √2" },
-        { "id": "d", "text": "−5 − √2" }
+        { "id": "d", "text": "−5 − √2", "misconceptionTag": "math.num.valeur-absolue-negative" }
       ],
       "correctOption": "c",
       "explanation": "العددان −5 و −√2 سالبان، فمجموعهما −5 − √2 سالب. وقيمته المطلقة هي مقابله: −(−5 − √2) = 5 + √2 . الخطأ الشائع هو تغيير إشارة الحدّ الأوّل وحده.",
@@ -39,9 +39,9 @@
       "prompt": "ما قيمة |(2 − √5)(3 + √5)| ؟",
       "options": [
         { "id": "a", "text": "(√5 − 2)(3 + √5)" },
-        { "id": "b", "text": "(2 − √5)(3 + √5)" },
-        { "id": "c", "text": "(2 − √5)(√5 − 3)" },
-        { "id": "d", "text": "(√5 − 2)(√5 − 3)" }
+        { "id": "b", "text": "(2 − √5)(3 + √5)", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
+        { "id": "c", "text": "(2 − √5)(√5 − 3)", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
+        { "id": "d", "text": "(√5 − 2)(√5 − 3)", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" }
       ],
       "correctOption": "a",
       "explanation": "نطبّق خاصيّة الجذاء بعد دراسة إشارة كلّ عامل. بما أنّ √5 ≈ 2,24 فإنّ 2 − √5 سالب ومنه |2 − √5| = √5 − 2 ، بينما 3 + √5 موجب ومنه |3 + √5| = 3 + √5 . إذن القيمة المطلقة تساوي (√5 − 2)(3 + √5) .",
@@ -51,9 +51,9 @@
     {
       "prompt": "أوجد كلّ الأعداد الحقيقية x بحيث |x| = |3 − √3| .",
       "options": [
-        { "id": "a", "text": "x = 3 − √3 فقط لا غير" },
-        { "id": "b", "text": "x = √3 − 3 فقط لا غير" },
-        { "id": "c", "text": "x = 3 + √3 أو x = −3 − √3" },
+        { "id": "a", "text": "x = 3 − √3 فقط لا غير", "misconceptionTag": "math.num.valeur-absolue-solution-unique" },
+        { "id": "b", "text": "x = √3 − 3 فقط لا غير", "misconceptionTag": "math.num.valeur-absolue-solution-unique" },
+        { "id": "c", "text": "x = 3 + √3 أو x = −3 − √3", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
         { "id": "d", "text": "x = 3 − √3 أو x = √3 − 3" }
       ],
       "correctOption": "d",
@@ -64,9 +64,9 @@
     {
       "prompt": "ما قيمة |(√2 − 2)(√2 − 1)| ؟",
       "options": [
-        { "id": "a", "text": "(√2 − 2)(√2 − 1)" },
-        { "id": "b", "text": "(2 − √2)(1 − √2)" },
-        { "id": "c", "text": "(2 + √2)(√2 − 1)" },
+        { "id": "a", "text": "(√2 − 2)(√2 − 1)", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
+        { "id": "b", "text": "(2 − √2)(1 − √2)", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
+        { "id": "c", "text": "(2 + √2)(√2 − 1)", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
         { "id": "d", "text": "(2 − √2)(√2 − 1)" }
       ],
       "correctOption": "d",
@@ -77,10 +77,10 @@
     {
       "prompt": "ما هي كلّ الأعداد الحقيقية x التي تحقّق المساواة |x| = x ؟",
       "options": [
-        { "id": "a", "text": "الأعداد السالبة وحدها لا غير" },
+        { "id": "a", "text": "الأعداد السالبة وحدها لا غير", "misconceptionTag": "math.num.valeur-absolue-toujours-oppose" },
         { "id": "b", "text": "الأعداد الموجبة والعدد 0" },
         { "id": "c", "text": "العدد 0 وحده لا غير" },
-        { "id": "d", "text": "كلّ الأعداد الحقيقية بلا استثناء" }
+        { "id": "d", "text": "كلّ الأعداد الحقيقية بلا استثناء", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" }
       ],
       "correctOption": "b",
       "explanation": "إذا كان x موجبًا أو معدومًا فإنّ |x| = x وتتحقّق المساواة. أمّا إذا كان x سالبًا فإنّ |x| = −x وهو مقابل x لا x نفسه: مثلًا |−4| = 4 وليس −4 . إذن المساواة تصحّ للأعداد الموجبة وللعدد 0 .",

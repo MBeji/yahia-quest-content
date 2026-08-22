@@ -9,10 +9,10 @@
     {
       "prompt": "إذا كان x عددًا حقيقيًّا سالبًا، فما هي القيمة المطلقة |x| ؟",
       "options": [
-        { "id": "a", "text": "تساوي العدد x نفسه" },
+        { "id": "a", "text": "تساوي العدد x نفسه", "misconceptionTag": "math.num.valeur-absolue-negative" },
         { "id": "b", "text": "تساوي −x وهو عدد موجب" },
         { "id": "c", "text": "تساوي 0 مهما كان x" },
-        { "id": "d", "text": "تساوي عددًا سالبًا أيضًا" }
+        { "id": "d", "text": "تساوي عددًا سالبًا أيضًا", "misconceptionTag": "math.num.valeur-absolue-negative" }
       ],
       "correctOption": "b",
       "explanation": "إذا كان x سالبًا فإنّ |x| = −x . والكتابة −x هنا ليست عددًا سالبًا: مع x = −6 نجد −x = 6 . القيمة المطلقة موجبة أو معدومة دائمًا.",
@@ -22,10 +22,10 @@
     {
       "prompt": "أوجد كلّ الأعداد الحقيقية x بحيث |−x| = |2/3| .",
       "options": [
-        { "id": "a", "text": "x = 3/2 أو x = −3/2" },
+        { "id": "a", "text": "x = 3/2 أو x = −3/2", "misconceptionTag": "math.num.oppose-inverse-confondus" },
         { "id": "b", "text": "x = 2/3 أو x = −2/3" },
-        { "id": "c", "text": "x = −2/3 فقط لا غير" },
-        { "id": "d", "text": "لا يوجد أيّ حلّ بسبب إشارة الناقص في −x" }
+        { "id": "c", "text": "x = −2/3 فقط لا غير", "misconceptionTag": "math.num.valeur-absolue-solution-unique" },
+        { "id": "d", "text": "لا يوجد أيّ حلّ بسبب إشارة الناقص في −x", "misconceptionTag": "math.num.valeur-absolue-negative" }
       ],
       "correctOption": "b",
       "explanation": "العددان x و −x لهما البعد نفسه عن المبدأ، إذن |−x| = |x| . والعدد 2/3 موجب فـ |2/3| = 2/3 . تصبح المساواة |x| = 2/3 ولها حلّان: x = 2/3 أو x = −2/3 . والخطآن الشائعان هما قلب الكسر، والاكتفاء بالحلّ السالب بسبب إشارة الناقص في −x .",
@@ -35,10 +35,10 @@
     {
       "prompt": "أوجد كلّ الأعداد الحقيقية x بحيث |x| = √11 .",
       "options": [
-        { "id": "a", "text": "x = 11 أو x = −11" },
-        { "id": "b", "text": "x = √11 فقط لا غير" },
+        { "id": "a", "text": "x = 11 أو x = −11", "misconceptionTag": "math.num.racine-et-carre-confondus" },
+        { "id": "b", "text": "x = √11 فقط لا غير", "misconceptionTag": "math.num.valeur-absolue-solution-unique" },
         { "id": "c", "text": "x = √11 أو x = −√11" },
-        { "id": "d", "text": "لا يوجد أيّ حلّ في ℝ" }
+        { "id": "d", "text": "لا يوجد أيّ حلّ في ℝ", "misconceptionTag": "math.num.valeur-absolue-negative" }
       ],
       "correctOption": "c",
       "explanation": "العدد √11 موجب، إذن للمساواة حلّان: x = √11 أو x = −√11 ، وهما العددان اللذان بعدهما عن المبدأ يساوي √11 . الخطأ الشائع هو تربيع الطرف الأيمن.",
@@ -49,7 +49,7 @@
       "prompt": "أيّ من الأعداد التالية هو الأبعد عن المبدأ على المستقيم المدرّج؟",
       "options": [
         { "id": "a", "text": "−8" },
-        { "id": "b", "text": "7" },
+        { "id": "b", "text": "7", "misconceptionTag": "math.num.ordre-des-negatifs-inverse" },
         { "id": "c", "text": "5" },
         { "id": "d", "text": "−3" }
       ],
@@ -61,9 +61,9 @@
     {
       "prompt": "ما قيمة |1/(−7)| ؟",
       "options": [
-        { "id": "a", "text": "−1/7" },
-        { "id": "b", "text": "7" },
-        { "id": "c", "text": "−7" },
+        { "id": "a", "text": "−1/7", "misconceptionTag": "math.num.valeur-absolue-negative" },
+        { "id": "b", "text": "7", "misconceptionTag": "math.num.oppose-inverse-confondus" },
+        { "id": "c", "text": "−7", "misconceptionTag": "math.num.oppose-inverse-confondus" },
         { "id": "d", "text": "1/7" }
       ],
       "correctOption": "d",
@@ -76,7 +76,7 @@
       "options": [
         { "id": "a", "text": "7/2" },
         { "id": "b", "text": "1/2" },
-        { "id": "c", "text": "−7/2" },
+        { "id": "c", "text": "−7/2", "misconceptionTag": "math.num.valeur-absolue-negative" },
         { "id": "d", "text": "3" }
       ],
       "correctOption": "a",

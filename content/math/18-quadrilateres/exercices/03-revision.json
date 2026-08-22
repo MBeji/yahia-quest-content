@@ -9,10 +9,10 @@
     {
       "prompt": "رباعي أضلاعه المتقابلة متوازية مثنى مثنى وله زاوية قائمة. ما أدقّ وصف له؟",
       "options": [
-        { "id": "a", "text": "متوازي أضلاع" },
+        { "id": "a", "text": "متوازي أضلاع", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" },
         { "id": "b", "text": "مستطيل" },
-        { "id": "c", "text": "معيّن" },
-        { "id": "d", "text": "مربّع" }
+        { "id": "c", "text": "معيّن", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" },
+        { "id": "d", "text": "مربّع", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" }
       ],
       "correctOption": "b",
       "explanation": "توازي الأضلاع المتقابلة مثنى مثنى يعني أنّ الرباعي متوازي أضلاع، ووجود زاوية قائمة فيه يجعله مستطيلا. ولا يكون معيّنا أو مربّعا إلاّ إذا تقايست أضلاعه أيضا، وهو شرط غير مذكور. ووصف «متوازي أضلاع» صحيح لكنّه أقلّ دقّة.",
@@ -23,9 +23,9 @@
       "prompt": "ABC مثلث والنقطة I منتصف [BC] حيث IA = IB = IC. ماذا نستنتج؟",
       "options": [
         { "id": "a", "text": "المثلث ABC قائم الزاوية في A" },
-        { "id": "b", "text": "المثلث ABC قائم الزاوية في B" },
-        { "id": "c", "text": "المثلث ABC متقايس الضلعين" },
-        { "id": "d", "text": "المثلث ABC متقايس الأضلاع" }
+        { "id": "b", "text": "المثلث ABC قائم الزاوية في B", "misconceptionTag": "math.geo.mediane-hypotenuse-demi" },
+        { "id": "c", "text": "المثلث ABC متقايس الضلعين", "misconceptionTag": "math.geo.mediane-hypotenuse-demi" },
+        { "id": "d", "text": "المثلث ABC متقايس الأضلاع", "misconceptionTag": "math.geo.mediane-hypotenuse-demi" }
       ],
       "correctOption": "a",
       "explanation": "هذا هو عكس خاصيّة الموسط المتعلّق بالوتر: إذا كان منتصف ضلع متساوي البعد عن الرؤوس الثلاثة فإنّ ذلك الضلع هو الوتر والزاوية القائمة في الرأس المقابل له. وبما أنّ I منتصف [BC] فإنّ [BC] هو الوتر والمثلث قائم الزاوية في A. ولا شيء في المعطيات يفرض تقايس الأضلاع.",
@@ -48,7 +48,7 @@
     {
       "prompt": "ABC مثلث والنقطة M منتصف [BC]. النقطتان H وK هما المسقطان العموديان لـ B وC على المستقيم (AM). ما العلاقة الصحيحة بين [BH] و[CK]؟\n<svg viewBox=\"0 0 320 230\"><path d=\"M160 35 L60 200 L260 140 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M160 35 L60 200 L260 140 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M160 35 L160 208\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><path d=\"M60 200 L160 200 M260 140 L160 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\"/><path d=\"M148 200 L148 188 L160 188\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M172 140 L172 152 L160 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" fill=\"none\"><path d=\"M108 179 L112 191\"/><path d=\"M208 149 L212 161\"/></g><g fill=\"#0f172a\"><circle cx=\"160\" cy=\"35\" r=\"4\"/><circle cx=\"60\" cy=\"200\" r=\"4\"/><circle cx=\"260\" cy=\"140\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"160\" cy=\"170\" r=\"4.5\"/><circle cx=\"160\" cy=\"200\" r=\"4.5\"/><circle cx=\"160\" cy=\"140\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"160\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"48\" y=\"214\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"274\" y=\"136\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"144\" y=\"166\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"176\" y=\"214\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text><text x=\"180\" y=\"132\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
       "options": [
-        { "id": "a", "text": "BH = 2 CK" },
+        { "id": "a", "text": "BH = 2 CK", "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux" },
         { "id": "b", "text": "BH = CK والقطعتان [BH] و[CK] متعامدتان" },
         { "id": "c", "text": "BH = HM" },
         { "id": "d", "text": "BH = CK والقطعتان [BH] و[CK] متوازيتان" }
