@@ -9,10 +9,10 @@
     {
       "prompt": "المسألة الأولى (هندسة): ABC مثلّث قائم في A حيث AB = 8 cm والوتر BC = 10 cm.\n\nالسؤال (1): احسب طول الضلع AC.",
       "options": [
-        { "id": "a", "text": "2 cm" },
+        { "id": "a", "text": "2 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" },
         { "id": "b", "text": "6 cm" },
-        { "id": "c", "text": "√164 cm" },
-        { "id": "d", "text": "18 cm" }
+        { "id": "c", "text": "√164 cm", "misconceptionTag": "math.geo.hypotenuse-mal-choisie" },
+        { "id": "d", "text": "18 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" }
       ],
       "correctOption": "b",
       "explanation": "بنظرية فيثاغورس في المثلّث القائم في A: BC² = AB² + AC². نعزل الضلع المجهول: AC² = BC² − AB² = 100 − 64 = 36، إذن AC = √36 = 6 cm. الخطأ الشائع: جمع المربّعين √(100 + 64) = √164 مع أنّ BC وتر، أو طرح الطولين مباشرةً 10 − 8 = 2.",

@@ -80,6 +80,33 @@
     },
     "competency": "math.num.ensembles-nombres"
   },
+  "math.num.divisibilite-un-seul-critere": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu n'appliques qu'un des deux critères : être divisible par 6 exige de l'être par 2 ET par 3, pas par l'un des deux",
+      "en": "You check only one of the two rules: being divisible by 6 requires divisibility by 2 AND by 3, not by either one",
+      "ar": "تطبّق أحد المعيارَين فقط: القسمة على 6 تقتضي القسمة على 2 وعلى 3 معًا، لا على أحدهما"
+    },
+    "competency": "math.num.criteres-divisibilite"
+  },
+  "math.num.divisibilite-composee-facteurs-non-premiers": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu multiplies deux diviseurs sans vérifier que rien ne leur est commun : divisible par 2 et par 6 ne donne PAS divisible par 12",
+      "en": "You multiply two divisors without checking they share no factor: divisible by 2 and by 6 does NOT give divisible by 12",
+      "ar": "تضرب قاسمَين دون التأكّد من عدم اشتراكهما في عامل: القسمة على 2 وعلى 6 لا تعطي القسمة على 12"
+    },
+    "competency": "math.num.criteres-divisibilite"
+  },
+  "math.num.critere-divisibilite-mal-choisi": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu appliques le critère d'un autre diviseur : celui de 9 ne prouve rien sur 12, et le dernier chiffre ne prouve rien sur 3",
+      "en": "You use another divisor's rule: the rule for 9 proves nothing about 12, and the last digit proves nothing about 3",
+      "ar": "تطبّق معيار قاسم آخر: معيار 9 لا يُثبت شيئًا عن 12، ورقم الآحاد لا يُثبت شيئًا عن 3"
+    },
+    "competency": "math.num.criteres-divisibilite"
+  },
   "math.num.irrationnel-traite-comme-rationnel": {
     "subject": "math",
     "labels": {
@@ -563,6 +590,24 @@
       "fr": "Tu comptes l'ordre alors que le tirage est simultané : tirer 1 puis 2 et tirer 2 puis 1 sont alors la même possibilité",
       "en": "You count the order although the draw is simultaneous: taking 1 then 2 and 2 then 1 are then the same outcome",
       "ar": "تحسب الترتيب والسحب متزامن: سحب 1 ثمّ 2 وسحب 2 ثمّ 1 إمكانية واحدة حينئذٍ"
+    },
+    "competency": "math.prob.denombrement-issues"
+  },
+  "math.prob.denombrement-somme-au-lieu-de-produit": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu additionnes les choix au lieu de les multiplier : quand des étapes se succèdent, le nombre de possibilités se MULTIPLIE",
+      "en": "You add the choices instead of multiplying them: when steps follow one another, the number of possibilities MULTIPLIES",
+      "ar": "تجمع الاختيارات بدل ضربها: عندما تتوالى المراحل، يُضرب عدد الإمكانيات لا يُجمع"
+    },
+    "competency": "math.prob.denombrement-issues"
+  },
+  "math.prob.denombrement-repetition-ignoree": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu comptes une répétition que l'énoncé interdit (ou tu l'interdis quand il l'autorise) : « chiffres différents » enlève un choix à chaque rang",
+      "en": "You allow a repetition the problem forbids (or forbid one it allows): \"different digits\" removes one choice at each position",
+      "ar": "تسمح بتكرار يمنعه النصّ (أو تمنعه وهو مسموح): «أرقام مختلفة» تُنقص اختيارًا في كلّ مرتبة"
     },
     "competency": "math.prob.denombrement-issues"
   },
