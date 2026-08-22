@@ -251,6 +251,96 @@
     },
     "competency": "math.num.racines-calcul"
   },
+  "math.num.puissance-confondue-avec-produit": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu multiplies la base par l'exposant : a³ veut dire a × a × a, pas a × 3",
+      "en": "You multiply the base by the exponent: a³ means a × a × a, not a × 3",
+      "ar": "تضرب الأساس في الدليل: a³ تعني a × a × a لا a × 3"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.puissance-signe-parite-exposant": {
+    "subject": "math",
+    "labels": {
+      "fr": "Le signe d'une puissance de base négative dépend de la PARITÉ de l'exposant : exposant pair, résultat positif ; exposant impair, résultat négatif",
+      "en": "The sign of a power with a negative base depends on the PARITY of the exponent: even exponent gives a positive result, odd gives a negative one",
+      "ar": "إشارة القوّة ذات الأساس السالب تتوقّف على زوجية الدليل: الدليل الزوجي يعطي نتيجة موجبة والفردي نتيجة سالبة"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.exposant-negatif-donne-nombre-negatif": {
+    "subject": "math",
+    "labels": {
+      "fr": "Un exposant négatif ne rend pas le nombre négatif : il donne l'INVERSE, et il ne s'efface pas non plus dans un calcul",
+      "en": "A negative exponent does not make the number negative: it gives the RECIPROCAL — and it does not simply vanish in a computation",
+      "ar": "الدليل السالب لا يجعل العدد سالبًا: هو يعطي المقلوب، ولا يسقط من الحساب كذلك"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.puissance-zero-vaut-zero": {
+    "subject": "math",
+    "labels": {
+      "fr": "Toute puissance d'exposant 0 vaut 1, jamais 0 — quelle que soit la base, dès qu'elle n'est pas nulle",
+      "en": "Any power with exponent 0 equals 1, never 0 — whatever the base, as long as it is non-zero",
+      "ar": "كلّ قوّة دليلها 0 تساوي 1 لا 0، مهما كان الأساس ما دام غير معدوم"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.puissances-produit-exposants-multiplies": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu multiplies les exposants dans un produit : aᵐ × aⁿ vaut a^(m + n), on les ADDITIONNE",
+      "en": "You multiply the exponents in a product: aᵐ × aⁿ is a^(m + n) — you ADD them",
+      "ar": "تضرب الدليلَين في الجداء: aᵐ × aⁿ تساوي a^(m + n)، والدليلان يُجمعان"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.puissances-quotient-exposants-additionnes": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu additionnes les exposants dans un quotient : aᵐ ÷ aⁿ vaut a^(m − n), on les SOUSTRAIT",
+      "en": "You add the exponents in a quotient: aᵐ ÷ aⁿ is a^(m − n) — you SUBTRACT them",
+      "ar": "تجمع الدليلَين في القسمة: aᵐ ÷ aⁿ تساوي a^(m − n)، والدليلان يُطرحان"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.puissances-puissance-exposants-additionnes": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu additionnes les exposants dans une puissance de puissance : (aᵐ)ⁿ vaut a^(m × n), on les MULTIPLIE",
+      "en": "You add the exponents in a power of a power: (aᵐ)ⁿ is a^(m × n) — you MULTIPLY them",
+      "ar": "تجمع الدليلَين في قوّة القوّة: (aᵐ)ⁿ تساوي a^(m × n)، والدليلان يُضربان"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.puissances-base-multipliee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu multiplies aussi les bases : dans aᵐ × aⁿ, la base ne bouge pas, seuls les exposants se combinent",
+      "en": "You multiply the bases as well: in aᵐ × aⁿ the base stays put, only the exponents combine",
+      "ar": "تضرب الأساسَين كذلك: في aᵐ × aⁿ يبقى الأساس كما هو، والدليلان وحدهما يتركّبان"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.puissance-fraction-numerateur-seul": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu n'élèves qu'une partie de la fraction : (a/b)ⁿ vaut aⁿ/bⁿ — le numérateur ET le dénominateur prennent l'exposant",
+      "en": "You raise only part of the fraction: (a/b)ⁿ is aⁿ/bⁿ — numerator AND denominator both take the exponent",
+      "ar": "ترفع جزءًا من الكسر فقط: (a/b)ⁿ تساوي aⁿ/bⁿ، فالبسط والمقام يأخذان الدليل معًا"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.notation-scientifique-exposant-decale": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu te trompes d'un rang dans l'exposant de 10, ou tu laisses une mantisse hors de [1 ; 10[ : compte les déplacements de la virgule",
+      "en": "You are off by one in the power of 10, or you leave a mantissa outside [1 ; 10): count how many places the decimal point moves",
+      "ar": "تخطئ بمرتبة في دليل 10، أو تترك العدد المرافق خارج [1 ؛ 10[: عُدّ انتقالات الفاصلة"
+    },
+    "competency": "math.num.puissances"
+  },
   "math.num.racine-extraction-facteur-inversee": {
     "subject": "math",
     "labels": {

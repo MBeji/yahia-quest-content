@@ -10,8 +10,8 @@
       "prompt": "اكتب 4⁵/4⁸ في صيغة قوّة للعدد 4.",
       "options": [
         { "id": "a", "text": "4³" },
-        { "id": "b", "text": "4¹³" },
-        { "id": "c", "text": "4⁻¹³" },
+        { "id": "b", "text": "4¹³", "misconceptionTag": "math.num.puissances-quotient-exposants-additionnes" },
+        { "id": "c", "text": "4⁻¹³", "misconceptionTag": "math.num.puissances-quotient-exposants-additionnes" },
         { "id": "d", "text": "4⁻³" }
       ],
       "correctOption": "d",
@@ -22,9 +22,9 @@
     {
       "prompt": "أيّ كتابة تساوي العدد 0,00072 ؟",
       "options": [
-        { "id": "a", "text": "7,2 × 10⁻³" },
-        { "id": "b", "text": "72 × 10⁻³" },
-        { "id": "c", "text": "7,2 × 10⁻⁵" },
+        { "id": "a", "text": "7,2 × 10⁻³", "misconceptionTag": "math.num.notation-scientifique-exposant-decale" },
+        { "id": "b", "text": "72 × 10⁻³", "misconceptionTag": "math.num.notation-scientifique-exposant-decale" },
+        { "id": "c", "text": "7,2 × 10⁻⁵", "misconceptionTag": "math.num.notation-scientifique-exposant-decale" },
         { "id": "d", "text": "7,2 × 10⁻⁴" }
       ],
       "correctOption": "d",
@@ -37,7 +37,7 @@
       "options": [
         { "id": "a", "text": "4/25" },
         { "id": "b", "text": "2/5" },
-        { "id": "c", "text": "16/625" },
+        { "id": "c", "text": "16/625", "misconceptionTag": "math.num.racine-et-carre-confondus" },
         { "id": "d", "text": "8/125" }
       ],
       "correctOption": "a",
@@ -48,10 +48,10 @@
     {
       "prompt": "ما علامة العدد (−7/2)⁻¹⁰⁰ ؟",
       "options": [
-        { "id": "a", "text": "سالبة لأنّ الأساس كسر سالب" },
+        { "id": "a", "text": "سالبة لأنّ الأساس كسر سالب", "misconceptionTag": "math.num.puissance-signe-parite-exposant" },
         { "id": "b", "text": "موجبة لأنّ الدليل عدد زوجي" },
-        { "id": "c", "text": "سالبة لأنّ الدليل عدد سالب" },
-        { "id": "d", "text": "موجبة لأنّ كلّ قوّة دليلها سالب تكون موجبة" }
+        { "id": "c", "text": "سالبة لأنّ الدليل عدد سالب", "misconceptionTag": "math.num.exposant-negatif-donne-nombre-negatif" },
+        { "id": "d", "text": "موجبة لأنّ كلّ قوّة دليلها سالب تكون موجبة", "misconceptionTag": "math.num.exposant-negatif-donne-nombre-negatif" }
       ],
       "correctOption": "b",
       "explanation": "الأساس (−7/2) سالب، فالعلامة تتوقّف على زوجيّة الدليل وحده، والدليل (−100) زوجي، إذن القوّة موجبة. إشارة الدليل لا تغيّر علامة النتيجة، إنّما تعني أخذ المقلوب: لو كان الدليل (−101) لكانت القوّة سالبة رغم أنّ دليلها سالب أيضًا.",
@@ -61,10 +61,10 @@
     {
       "prompt": "ما قيمة (−√5)⁶ × (−√5)⁻⁴ ؟",
       "options": [
-        { "id": "a", "text": "−5" },
+        { "id": "a", "text": "−5", "misconceptionTag": "math.num.puissance-signe-parite-exposant" },
         { "id": "b", "text": "25" },
         { "id": "c", "text": "5" },
-        { "id": "d", "text": "1/25" }
+        { "id": "d", "text": "1/25", "misconceptionTag": "math.num.exposant-negatif-donne-nombre-negatif" }
       ],
       "correctOption": "c",
       "explanation": "الأساس نفسه، فنجمع الدليلين: 6 + (−4) = 2، إذن العبارة تساوي (−√5)². والدليل زوجي فالنتيجة موجبة، ومربّع (−√5) يساوي 5.",
@@ -75,9 +75,9 @@
       "prompt": "ما قيمة ((−2)³)² × (−2)⁻⁵ ؟",
       "options": [
         { "id": "a", "text": "−2" },
-        { "id": "b", "text": "2" },
+        { "id": "b", "text": "2", "misconceptionTag": "math.num.puissance-signe-parite-exposant" },
         { "id": "c", "text": "−32" },
-        { "id": "d", "text": "1/2" }
+        { "id": "d", "text": "1/2", "misconceptionTag": "math.num.exposant-negatif-donne-nombre-negatif" }
       ],
       "correctOption": "a",
       "explanation": "أوّلًا قوّة داخل قوّة: ((−2)³)² = (−2)⁶ لأنّ 3 × 2 = 6. ثمّ نجمع الدليلين لأنّ الأساس واحد: 6 + (−5) = 1، إذن النتيجة هي (−2)¹ أي −2.",
