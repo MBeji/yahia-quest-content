@@ -2,24 +2,58 @@
 
 <!-- roadmap-sync: since-pr=807 -->
 
-> **Instantané du 2026-08-10** (créé le 2026-07-20, resynchronisé contre `main` les 2026-07-25,
-> 2026-07-27, 2026-07-29, 2026-08-01, 2026-08-03 puis le **2026-08-10**) — déclinaison opérationnelle de l'**étude 26 (doctrine verticale : profondeur
+> **Instantané du 2026-08-22** (créé le 2026-07-20, resynchronisé contre `main` les 2026-07-25,
+> 2026-07-27, 2026-07-29, 2026-08-01, 2026-08-03, 2026-08-10, 2026-08-16/17 puis le
+> **2026-08-22**) — déclinaison opérationnelle de l'**étude 26 (doctrine verticale : profondeur
 > avant largeur)**. Les Q-1…Q-5 de l'étude 26 ayant été **arbitrées le 2026-07-20**, cet ordre
 > n'est plus une recommandation d'architecte : il est **officiel**. Les arbitrages **A1→A8**
 > (2026-07-20) puis **A9→A14** (2026-08-02) sont rendus : cette seconde session a vidé les
 > questions internes des études 04 et 09, et tranché le périmètre du tagging, le lien
 > misconception → compétence et le statut du check pgTAP. L'état de référence reste
 > [STATUS.md](../STATUS.md) + l'[index des études](./README.md).
-> **Jalon produit : rentrée scolaire, 1ᵉʳ septembre 2026** (§7) — **J-22**.
+> **Jalon produit : rentrée scolaire, 1ᵉʳ septembre 2026** (§7) — **J-10**.
 >
-> ⚠️ **Ce que la resynchronisation du 2026-08-10 a corrigé — et le fait qui commande la file
-> aujourd'hui.** **37 PR livrées n'étaient citées nulle part** : 30 ici (#117 → #148) et 7 au
+> ⚠️⚠️⚠️ **CE QUE LA PASSE DU 2026-08-22 A TROUVÉ — et les deux premières lignes de la roadmap
+> sont tombées sans qu'aucune session ne les prenne.** La citation de é29 au §0bis a déplacé la
+> base de **#746 à #807** : elle a donc déclaré « connues » les **60 PR moteur livrées entre les
+> deux** (#747 → #810) sans en citer une seule, et le gate est resté vert — aucune ne porte la
+> forme « étude/lot » qu'il sait lire. C'est le **même angle mort** que le 2026-08-10, dans
+> l'autre sens : là c'était le privé qu'il ne regarde pas, ici c'est le pointeur qui a sauté.
+>
+> **Trois lignes décrivaient un état factuellement faux — corrigées ici.** **C11**, désignée
+> « PREMIÈRE LIGNE DE TOUTE LA ROADMAP », est **faite** : son issue #124 est close depuis le
+> **2026-08-10 à 17 h 46**, c'est-à-dire *le jour même où la ligne a été écrite* et **six jours
+> avant qu'elle n'atteigne `main`** (#152/#184, mergées le 2026-08-16). **F10**, deuxième
+> priorité, est **faite** aussi : #81 close le 2026-08-14, `content-audit.yml` vert depuis.
+> **F5** enfin : la suppression de compte **existe** (arena#791) — la moitié « code » de GAP-024
+> que cette roadmap donnait pour inexistante. Vérifié le 2026-08-22, pas déduit.
+>
+> **Et quatre chantiers entiers n'avaient aucune ligne** : le **suivi parental quotidien**
+> (15 PR — **F11**), le **programme officiel devenu structure du produit** (**F12**), les
+> **manuels officiels déclarés et liés** (**F13**), et la campagne **فقه** côté corpus
+> (37 chapitres, rubrique ouverte aux élèves — **C12**).
+>
+> 🔴 **Le point dur a changé, encore : c'est C4bis, et il commande désormais aussi l'IA.**
+> Le corpus ne porte toujours **aucun** tag de misconception (0 occurrence, re-mesuré le
+> 2026-08-22 sur 719 chapitres). Ce qui est neuf, c'est que la ligne 18 (é11 lot 1) promet une
+> explication « ancrée sur l'item + distracteur + **tag** » : le même travail de contenu bloque
+> maintenant quatre lots é04/é07 déjà mergés **et** la première brique pédagogique de l'étage IA.
+>
+> ⚠️ **La leçon de méthode, et elle est nouvelle.** Le 2026-08-10 disait « un gate vert ne veut
+> pas dire à jour ». Le 2026-08-22 ajoute : **une priorité écrite le jour J et mergée à J+6 n'est
+> pas une priorité, c'est un instantané périmé.** Les deux premières lignes de cette roadmap ont
+> été refermées par d'autres pendant que le fichier les proclamait urgentes. **Relire l'issue
+> avant de prendre la ligne** — c'est trente secondes, et ça vient d'en coûter deux.
+>
+> ⚠️ **[HISTORIQUE — passe du 2026-08-10] Ce qu'elle avait corrigé, et ce qu'elle croyait
+> commander.** **37 PR livrées n'étaient citées nulle part** : 30 ici (#117 → #148) et 7 au
 > moteur (arena#710 → #716). Le gate `roadmap-sync` était **vert** pendant tout ce temps, et il
 > avait raison de l'être : il ne lit que les sujets de commit du **moteur** en forme
 > « étude/lot » — or ces sept jours se sont joués **au privé**, où il ne regarde pas. Un gate vert
 > n'a jamais voulu dire « la roadmap est à jour » ; il veut dire « rien de ce que je sais lire ne
 > manque ».
 >
+> **[Verdict du 2026-08-10, PÉRIMÉ le 2026-08-22 — les deux lignes qu'il a créées sont faites.]**
 > **Le point dur a changé de nature.** Ce n'est plus C4bis : c'est que **du contenu mergé,
 > audité et validé n'atteint aucun élève**. La garde `content-drift` tient l'issue **#124**
 > ouverte depuis le 2026-08-04 sur **18 sujets** — dont la campagne lycée anglais/français
@@ -86,6 +120,35 @@ précisément pourquoi ils n'y figuraient pas.
   devient prenable — c'est le KPI que é29 se donne à elle-même. Reste entier : le **pilote de
   mesure de deux semaines**, et le fait qu'**aucune clé réelle n'a encore été branchée**.
 
+**Ajout du 2026-08-22, seconde passe — 60 PR moteur d'un coup, et quatre chantiers sans ligne.**
+La citation de é29 ci-dessus a porté la base de **#746 à #807**, déclarant « connues » les 60 PR
+livrées entre les deux sans en citer une. Les voici, groupées. La plupart sont **hors file** ;
+quatre groupes ne le sont pas.
+
+- ⚠️ **Suivi parental quotidien — un axe produit entier, aucune ligne** : arena#744 · #748 ·
+  #750 → #754 · #759 · #762 → #764 · #769 · #777 · #779 · #782. Nouvelle ligne **F11** (§4).
+- ⚠️ **Le programme officiel devient une structure du produit** : arena#749 · #766 · #767 ·
+  #770 (et au corpus #197 → #202). Nouvelle ligne **F12** (§4).
+- ⚠️ **Manuels officiels déclarés et liés, plus hébergés** : arena#778 · #785 · #808 · #810
+  (et au corpus #205 → #212). Nouvelle ligne **F13** (§4) — elle **ne clôt pas C8**.
+- ⚠️ **arena#791 — la suppression de compte est livrée.** Elle ferme la moitié « code » de
+  **GAP-024** que **F5** donnait pour inexistante. L'export/portabilité, lui, reste à **zéro
+  occurrence** dans `src/` (re-vérifié le 2026-08-22). **F5 corrigée.**
+- **arena#760** — les **4 sections bac** dont le contenu était prêt sont **ouvertes aux élèves**
+  (R-8) ; avec **arena#741** (rubrique « Éducation islamique », migrations `20260814120000` /
+  `20260815120000`), c'est le geste « ouvrir » que **C10** distingue de « générer ». Cités en
+  **C11** et **C12**.
+- **Hors file** — auth et robustesse (#747, #772, #773, #775, #776) · e2e (#755, #796, #797,
+  #801, #802) · perf et mesure (#780) · domaine et CSP (#783, #784 — l'issue **arena#804**,
+  ouverte le 2026-08-22, reste sans ligne et n'en demande pas) · a11y et bidi (#765, #786) ·
+  navigation et réglages (#787, #790, #798) · CI (#792) · doc d'agents et de passation (#756,
+  #757, #758, #761, #768, #774, #781, #794, #806).
+
+⚠️ **Une précision qui vaut pour é29** : `/parametrage` est créée par **arena#787** ;
+**arena#798** ne fait qu'y déplacer le Code Alliance. Le §8 de l'étude 29 attribue la page à
+#798 — sans conséquence sur sa décision (D-16 est bien caduque sur son constat), mais à ne pas
+recopier.
+
 ## 0. Mode d'emploi (comment exécuter cette roadmap)
 
 1. **Une ligne = une session = un lot = une PR** (règles FableEtudes inchangées : cadre fermé,
@@ -99,17 +162,23 @@ précisément pourquoi ils n'y figuraient pas.
    jusqu'au 2026-08-01 — voir l'encart du §2.
 4. Priorité inter-files en cas de choix : finir l'en-vol (§1) > PRODUIT > FONDATIONS >
    CONTENU nouveau (les corrections qualité contenu passent, elles, avant tout — P-4).
-   ⚠️ **Exception constatée au 2026-08-03, ré-arbitrée le 2026-08-10 — elle prime sur cet
-   ordre.** L'ordre à prendre est **C11 → F10 → C4bis**, trois lignes hors file PRODUIT.
-   La règle « PRODUIT d'abord » suppose que la file PRODUIT a une ligne prenable — or la 15
-   livrerait un écran vide et la 9 est close.
-   **C11 d'abord parce que c'est le seul geste qui ne produit rien et livre tout** : 18 sujets
-   sont écrits, audités, mergés — et invisibles. À J-22, publier ce qui existe bat écrire ce qui
-   n'existe pas, quelle que soit la file. **F10 ensuite** : le garde pédagogique est en panne
-   depuis le 2026-07-29, donc tout ce qui s'écrit d'ici là s'écrit sans filet — le réparer avant
-   la campagne suivante coûte un jeton, après coûte un audit. **C4bis en troisième**, inchangée
-   sur le fond : elle reste la ligne qui **allume quatre lots déjà mergés**.
-   L'ordre sert la valeur livrée ; il ne la remplace pas.
+   ⚠️ **Exception ré-arbitrée le 2026-08-22 — elle prime sur cet ordre.** L'ordre du
+   2026-08-10 était **C11 → F10 → C4bis** ; **C11 et F10 sont faites** (vérifiées, §5 et §4), et
+   C4bis n'a pas bougé. L'ordre à prendre est donc :
+
+   1. **C4bis étape 1** (§5) — taguer les distracteurs de `math` 9ᵉ. Elle **allume quatre lots
+      déjà mergés** (é04 A1.2a, A1.2b, « m'entraîner », le terme misconception d'A1.1),
+      **débloque les lignes 15 et 16**, et depuis é29 elle **conditionne la ligne 18** : é11 lot 1
+      promet une explication ancrée sur le tag, et le tag n'existe nulle part. Une seule ligne de
+      contenu, quatre lots produit et la première brique IA derrière elle.
+   2. **Ligne 18** (§3) — é11 lot 1, la première brique pédagogique de l'étage IA. Prenable dès
+      maintenant (la porte é29 est livrée, et `AI_KEY_ENC_KEY` est posée depuis le 2026-08-22) ;
+      sa *personnalisation*, elle, attend 1.
+   3. **C4ter** (§5) — `french-6eme`, la complétude de la classe de concours (é28 D-4).
+
+   La règle « PRODUIT d'abord » suppose que la file PRODUIT a une ligne prenable : la 15
+   livrerait toujours un écran vide, la 9 est close, et la 18 est la seule qui le soit — d'où
+   son rang 2. L'ordre sert la valeur livrée ; il ne la remplace pas.
 
 ### Comment cet ordre reste vrai (règle amendée le 2026-07-25)
 
@@ -233,11 +302,14 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
 
 > Objectif : refermer les trois boucles mortes (SM-2, misconceptions, adaptativité) et porter
 > la boucle d'apprentissage à M3 avant la rentrée.
-> **État au 2026-08-10 : 14 des 19 lignes livrées, inchangé depuis le 2026-08-03.** La ligne 9
-> est CLOSE (arena#689, #691, #695, **#707**) — son reliquat, le geste « m'entraîner », est livré
-> le 2026-08-03 sur l'arbitrage A12. Restent **15, 16** (é04 A2) et **17-19** (é11, hors file
-> par A1). **Aucune ligne PRODUIT n'a bougé cette semaine** : les 37 PR de la période sont du
-> contenu, de la transcription et des correctifs de moteur.
+> **État au 2026-08-22 : 16 des 20 lignes livrées** (la 20ᵉ est la 19bis, créée le 2026-08-22).
+> La ligne 9 est CLOSE (arena#689, #691, #695, **#707**). La **17 est close par substitution** —
+> é29 lot 1 remplace é11 lot 0 — et la **19bis** est livrée. Restent **15, 16** (é04 A2) et
+> **18, 19** (é11).
+> ⚠️ **Ce que les douze derniers jours ont produit hors de cette file** : é02 close (arena#743,
+> #746), tout le **suivi parental quotidien** (**F11**), le **programme officiel** comme
+> structure (**F12**), les **manuels** (**F13**) et é29 (19bis). Ce n'est pas une dérive — mais
+> aucune de ces lignes-ci n'a bougé depuis le 2026-08-03, et la raison est toujours la même.
 > ⚠️ **La 15 n'est PAS prenable telle quelle** : **le corpus ne porte toujours aucun tag de
 > misconception** — 0 occurrence sur ~18 700 questions, re-mesuré **inchangé le 2026-08-10**.
 > Tout l'étage « erreur nommée / points faibles » est alimenté par du vide, y compris le geste
@@ -341,7 +413,13 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
       pas une réserve de prudence, c'est arithmétique : l'écran n'a aucune ligne à afficher
 - [ ] 16. **é04 lot A2.2 — rapport parent enrichi** (3 points faibles majeurs + tendance).
       Même dépendance de fond à C4bis pour les « points faibles » ; la **tendance**, elle, se
-      calcule sur la télémétrie existante
+      calcule sur la télémétrie existante.
+      ⚠️ **À relire avant de la prendre — la surface a changé sous elle.** Cette ligne a été
+      écrite contre le rapport parent de #335. Depuis, quinze PR ont livré le **suivi parental
+      quotidien** (**F11**, §4) : socle de temps mesuré (`learning_pulses`), tableau de bord jour
+      par jour, couverture du programme par matière, rapport public par code. Une partie de ce
+      que « rapport parent enrichi » désignait existe peut-être déjà, ailleurs — **mesurer avant
+      d'écrire**, sinon on livre deux fois le même écran
 
 **Étape E — l'étage IA — ⚠️ RÉÉCRITE le 2026-08-22 : la porte est livrée, par é29**
 
@@ -368,12 +446,30 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
 - [ ] 18. **é11 lot 1 — explication personnalisée post-review** (la brique signature : ancrée sur
       l'item + distracteur + tag). **Prenable maintenant** : la porte existe, les deux payeurs sont
       câblés, `callAi()` attend son premier appelant pédagogique. C'est **le KPI honnête de é29**
-      (§1.4) — elle réussit si é11 démarre, pas si des clés sont saisies
+      (§1.4) — elle réussit si é11 démarre, pas si des clés sont saisies.
+      🔴 **Mais sa personnalisation dépend de C4bis, et personne ne l'a écrit jusqu'ici.** Le lot
+      promet une explication « ancrée sur l'item + **distracteur** + **tag** ». Le tag n'existe
+      **nulle part** dans le corpus — 0 occurrence de `misconceptionTag`, re-mesuré le
+      2026-08-22. Prise telle quelle, la ligne livrera une explication contextualisée par l'item
+      et l'option choisie, et **rien de ce que le mot « personnalisée » promet en plus**. Deux
+      voies, à trancher par qui la prend : livrer d'abord **C4bis étape 1** (recommandé — c'est
+      le rang 1 du §0), ou livrer le lot en **nommant l'écart** dans son étude plutôt qu'en
+      laissant croire le contraire.
+      ✅ **Prérequis d'exploitation levé le 2026-08-22** : `AI_KEY_ENC_KEY` **est posée** dans
+      l'environnement de production (Mohamed). Le chemin famille n'est donc plus éteint par
+      défaut. ⚠️ Une variable Vercel ne prend effet qu'au **déploiement suivant** sa pose
+      (`docs/environment-variables.md`, § rotation de la KEK) : avant de conclure « le mode est
+      allumé », vérifier que le déploiement courant lui est postérieur — c'est le seul point que
+      cette roadmap ne peut pas mesurer d'elle-même
 - [ ] 19. **é11 lots 2 → 7** dans l'ordre de l'étude (plan du jour · chat cadré · boucle de compréhension · exercices ciblés · bilans hebdo · énergie UI) — une PR par lot, cadence selon usage/coûts observés
 - [x] 19bis. **é29 — mode IA « à la clé de la famille », 5 lots** — **livrée le 2026-08-22**
       (arena#807). Porte · coffre chiffré · activation par élève · coupure atomique · **la Forge**
-      · consoles de dépense et d'admin. **Éteinte tant qu'`AI_KEY_ENC_KEY` n'est pas posée** : le
-      produit sans clé est le produit d'aujourd'hui (R-1). Écarts et reste-à-faire au §8 de
+      · consoles de dépense et d'admin. R-1 la voulait **éteinte tant qu'`AI_KEY_ENC_KEY` n'est
+      pas posée** — ✅ **elle l'est depuis le 2026-08-22** (Mohamed, posée dans l'environnement de
+      production ; effet au déploiement suivant sa pose). Le §8 de l'étude dit encore
+      « `AI_KEY_ENC_KEY` n'est posée nulle part » : c'était vrai à sa rédaction, plus depuis.
+      **Ce qui reste vrai, et c'est ce qui compte** : aucune clé de fournisseur n'a été branchée,
+      et **le pilote de mesure de deux semaines (Q-9) n'a pas eu lieu**. Écarts et reste-à-faire au §8 de
       [son étude](./29-mode-ia-cle-utilisateur/ETUDE.md) — dont l'**ordre de Q-9 non suivi**
       (é11 lot 1 devait s'intercaler entre les lots 1 et 2 de é29)
 
@@ -456,15 +552,21 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
       sans lesquels `rollback-prod.yml` était **inopérant depuis son écriture**.
       **Règle qui en sort** : une action faite hors du repo n'y laisse aucune trace — « pas écrit
       fait » ≠ « pas fait ».
-- [ ] F5. **Légal avant rentrée.** ⚠️ **Cette entrée disait « GAP-024 livré » et « reste, et c'est
-      humain » — les deux sont faux, corrigé le 2026-08-10.** **GAP-024 est à MOITIÉ fait**, et
-      la moitié qui manque est **du code** : ni suppression de compte ni export/portabilité
-      n'existent dans `src/` (`deleteAccount`, `export_user_data` : zéro occurrence, vérifié sur
-      `main` au 2026-08-10). C'est **le seul bloqueur légal de la Porte 1 qu'un agent peut
-      lever**, et le classer « humain » l'a gelé une semaine (constat déjà porté par STATUS §5 le
-      2026-08-03 — cette roadmap ne l'avait pas repris, ce qui est exactement la dérive que le §0
-      cherche à empêcher). **Rappel du piège qui a produit l'erreur : une PR qui cite un GAP dans
-      son titre ne le clôt pas.**
+- [ ] F5. **Légal avant rentrée — GAP-024 est passé d'une moitié à trois quarts.**
+      ✅ **Corrigé le 2026-08-22 : la suppression de compte EXISTE** (arena#791, le 2026-08-19 —
+      migration `20260819170000_account_deletion_fk.sql`, `src/features/auth/auth.server.ts`,
+      le geste dans `/parametrage`, ses tests). Cette entrée affirmait le 2026-08-10 qu'aucun des
+      deux volets n'existait dans `src/` : c'était vrai ce jour-là, faux depuis neuf jours.
+      🔜 **Ce qui manque vraiment, et c'est tout ce qui manque côté code** : l'**export /
+      portabilité** — `export_user_data`, `exportUserData`, « portabilité » : **zéro occurrence**
+      dans `src/` et `supabase/migrations/`, re-vérifié sur `main` le 2026-08-22. C'est **le
+      seul bloqueur légal de la Porte 1 qu'un agent peut lever**.
+      ⚠️ **Le piège d'origine reste le bon** : une PR qui cite un GAP dans son titre ne le clôt
+      pas — et son symétrique vient de coûter douze jours dans l'autre sens : **un GAP qu'aucune
+      PR ne cite peut avoir été livré quand même.** arena#791 s'intitule « un compte peut enfin
+      être supprimé », sans un mot de GAP-024.
+      ⚠️ **é29 ajoute une pièce à ce dossier** : son §3.8 demande un **registre de traitement
+      INPDP** pour le mode IA. Il rejoint la démarche INPDP ci-dessous plutôt que d'en ouvrir une.
       **Ce qui EST livré le 2026-07-31** (arena#701) : `/confidentialite`
       et `/conditions`, deux **URL stables** — c'est le point : la déclaration « child-directed »
       auprès de Google (é23 Q-3) comme la conformité mineurs exigent une politique **atteignable**,
@@ -475,9 +577,8 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
       **Reste côté humain** : la démarche **INPDP** (GAP-003), l'identité d'éditeur pour des
       mentions légales complètes, et la décision « français seul ou trilingue » — traduire un
       engagement juridique sans relecture ferait dire autre chose à une version.
-      **Reste côté code, et c'est prenable dès maintenant** : le volet « droits des personnes »
-      ci-dessus (suppression de compte + export). Une ligne de session à part entière, pas un
-      reliquat.
+      **Reste côté code, et c'est prenable dès maintenant** : **l'export / portabilité seul**
+      (la suppression est livrée). Une ligne de session à part entière, pas un reliquat.
 - [ ] F6. **Ops récurrent** : le triage hebdo des signalements. **Le volet technique est fait** —
       le pré-gate déterministe (#611) ne réveille l'agent que sur du nouveau, avec une soupape
       à 14 jours. Reste le **geste opérateur** : appliquer depuis `/admin/content-reports` et
@@ -541,13 +642,16 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
       classe aux élèves est une PR moteur, pas un geste de campagne »** (#44) · registre rattaché
       aux sujets du programme (#23) · méthode à jour de la scission (#18) · études livrées
       regroupées dans `EtudeRealisé/` (#20/#22) · workflow `roadmap-sync.yml`.
-- [ ] F10. **LE GARDE PÉDAGOGIQUE EST EN PANNE DEPUIS LE 2026-07-29 — ligne ouverte le
-      2026-08-10, deuxième priorité de toutes files.** L'issue **#81** est ouverte depuis douze
-      jours et **quatre runs consécutifs ont échoué** : 07-29, 08-01, **08-05**, **08-08**.
-      Cause connue et écrite dans l'issue elle-même : le secret `CLAUDE_CODE_OAUTH_TOKEN` est
-      invalide ou expiré (`API Error: Header 'Authorization' has invalid value`) — le geste est
-      `claude setup-token` puis remise en secret du dépôt. L'issue se referme seule au premier
-      run vert.
+- [x] F10. **LE GARDE PÉDAGOGIQUE — RÉPARÉ le 2026-08-14, quatre jours après l'ouverture de la
+      ligne, et par personne qui l'ait prise.** L'issue **#81** est **close depuis le 2026-08-14
+      à 16 h 32** et `content-audit.yml` est **vert depuis** : 08-14, 08-15, 08-19 (un dernier
+      échec le 08-12, avant le correctif). Le geste était bien celui que l'issue décrivait —
+      `CLAUDE_CODE_OAUTH_TOKEN` renouvelé puis remis en secret du dépôt. **Vérifié le
+      2026-08-22**, pas déduit.
+      ⚠️ Cette ligne a été écrite le 2026-08-10 comme **deuxième priorité de toutes files** et
+      elle est arrivée sur `main` le 2026-08-16 — deux jours **après** sa propre résolution.
+      Même défaut que C11, même remède : **relire l'issue avant de prendre la ligne**.
+      **Ce qui suit reste vrai et vaut d'être gardé** : la leçon, pas l'état.
       **Pourquoi ça mérite une ligne et pas une note de bas de page** : `content-audit.yml` est
       la **seule** garde pédagogique de la chaîne — les gates déterministes (`content:check`,
       `content:qa:strict`, `content:audit:strict`) valident le schéma, la notation, les doublons,
@@ -576,6 +680,51 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
       ce qui manque n'est jamais la garde — c'est que **sa panne n'atteint personne**. Trois
       gardes sur trois l'ont montré ; il faut cesser de traiter chacune comme une surprise.
       **Le geste est humain** (renouveler le jeton, §2) ; le suivi est ici.
+      ⚠️⚠️ **ET IL Y A UN QUATRIÈME CAS, trouvé depuis — la série ne s'arrête pas à trois.**
+      (4) **La sonde des manuels ne tournait pas du tout sous Windows, et taisait ses pannes**
+      (arena#785, 2026-08-19) ; pire, **un passage aveugle REFERMAIT l'issue en affirmant que
+      tout allait bien** (#211), avant que le vrai motif ne soit trouvé — le CNP n'envoie pas son
+      certificat intermédiaire (#212). Une garde qui se tait est indistinguable d'une garde qui
+      passe ; une garde qui **certifie faussement** est pire que pas de garde du tout. Quatre
+      gardes sur quatre ont fait l'une ou l'autre. La question à porter à l'étude « IA vs
+      déterministe » ne change pas — elle s'aggrave.
+- [x] F11. **Suivi parental quotidien — livré du 2026-08-16 au 2026-08-19, hors roadmap.**
+      Consigné ici pour que la file le sache, pas pour rouvrir un chantier (motif F9). **Quinze
+      PR** : socle de mesure du temps (arena#751 — table `learning_pulses`, pouls d'activité
+      écrêté à l'horloge murale ; **avant lui, lire un cours ne laissait aucune trace**) ·
+      tableau de bord jour par jour, temps / engagement / efficacité / alertes (#752) ·
+      couverture du programme par matière et matières désambiguïsées (#753, #754) · filtres et
+      sélecteurs de classe (#759, #762, #763, #764) · la session enfin rattachée à la tentative
+      (#748, #750) · le code d'alliance retenu sur l'appareil du parent (#744) · quatre lots de
+      perf et de vérité mesurée (#769, #777, #779, #782).
+      Spec : `docs/suivi-parental-quotidien.md` (moteur).
+      ⚠️ **Ce que ça change pour deux lignes d'ici — c'est la raison d'être de l'entrée** :
+      (1) la **ligne 16** (é04 A2.2, « rapport parent enrichi ») a été écrite contre un rapport
+      parent qui n'a plus la même surface — **la relire et mesurer avant de l'écrire** ; (2) le
+      **volet parent de é08** (§6) ne part plus de zéro.
+- [x] F12. **Le programme officiel devient une structure du produit — livré les 2026-08-16/18,
+      hors roadmap.** Le menu d'un niveau liste **tout** le programme, matières à venir comprises
+      (arena#749) · les chapitres se rangent sous les **sections** de leur programme (#766) · le
+      fil du cours nomme la section où l'on se trouve (#767) · et `content:qa` **vérifie** qu'une
+      section déclarée est bien une notion du programme (#770). Côté corpus : les 5 sections du
+      programme de maths 9ᵉ (#197) et le rattachement de **446 chapitres** à leur domaine
+      (#198 : 231 en maths et arabe · #199 : 178 en sciences et éducation islamique · #201 : 37
+      en fiqh), la règle « les sections ne valent que pour le programme scolaire » (#202).
+      ⚠️ **Ce que ça change** : la couverture d'une matière se lit désormais **contre les sections
+      du programme**, plus contre un décompte de chapitres. À savoir avant de prendre **C3**,
+      **C4ter** ou **C9** — et `programme:etat` n'est plus la seule lecture possible.
+- [x] F13. **Manuels officiels : déclarés, liés, plus hébergés — livré les 2026-08-19/22, hors
+      roadmap.** Le manuel remonte **au niveau matière** et n'est plus stocké chez nous : un lien
+      vers le document là où il est déjà publié, l'adresse rebâtie **par gabarit** depuis le
+      `code` que le contenu déclare — aucune URL libre ne traverse le pipeline (arena#778,
+      doctrine é23 D-10 appliquée telle quelle). Côté corpus, **60 volumes déclarés** en trois
+      lots (#208 primaire : 13 matières / 24 volumes · #209 collège : 15 / 30 · #210 lycée :
+      3 / 6), après les 8 matières dont le code était déjà là (#206), plus une sonde hebdomadaire
+      des liens (#205, #211, #212 — voir **F10**). Le bucket `manuel-eleve` est démonté
+      (arena#808, débloqué par #810).
+      ⚠️ **Ceci ne clôt PAS C8.** é21 lot 1 vise la **doctrine** et le pilote `manuel_ref` —
+      des **exercices tracés au manuel** et un rapport de couverture. Ce qui est livré est la
+      **déclaration** et la **surface de lien**. Le point de départ de C8 a changé ; sa ligne non.
 
 ## 5. FIL CONTENU (parallèle — sessions de campagne dédiées)
 
@@ -640,9 +789,16 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
       restent non tagués — la famille `math` couvre `math*`, une famille `physique`/`svt` reste à
       écrire par l'architecte avant tout tagging scientifique.
 - [ ] C4bis. **Tagging des MISCONCEPTIONS — pilote `math` 9ᵉ** _(A11 rendu le 2026-08-02)_.
-      🟠 **ÉTAPE 0 FAITE le 2026-08-04 (#118), ÉTAPE 1 À PRENDRE** — troisième ligne de la
-      roadmap au 2026-08-10 (derrière C11 et F10), et toujours la seule qui **allume du code déjà
-      livré**.
+      🔴 **ÉTAPE 0 FAITE le 2026-08-04 (#118), ÉTAPE 1 À PRENDRE — PREMIÈRE LIGNE DE TOUTE LA
+      ROADMAP au 2026-08-22**, toutes files confondues. Elle était **troisième** au 2026-08-10,
+      derrière C11 et F10 : **les deux sont tombées** (et aucune n'a été prise — voir leur ligne),
+      celle-ci n'a pas bougé d'un tag en douze jours.
+      🆕 **Ce qui est neuf, et qui la fait changer de catégorie** : depuis é29, elle ne commande
+      plus seulement l'axe adaptatif — elle commande aussi **l'étage IA**. La **ligne 18** (é11
+      lot 1) promet une explication « ancrée sur l'item + distracteur + **tag** ». Le tag n'existe
+      nulle part : **0 occurrence de `misconceptionTag`**, re-mesuré le **2026-08-22** sur les
+      **719 chapitres** du corpus. Un seul travail de contenu débloque désormais **quatre lots
+      é04/é07 déjà mergés, les lignes 15 et 16, et la première brique pédagogique de l'IA**.
       ✅ **Ce qui est fait — une étape 0 que l'arbitrage ne prévoyait pas, et elle avait raison
       d'exister.** A11 décrivait C4bis comme « deux gestes par question ratée : le tag sur le
       distracteur et l'entrée correspondante au registre ». Vérifié avant de commencer, l'énoncé
@@ -774,23 +930,31 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
       (`20260620140000_open_5eme_base_parcours.sql`), donc l'islamique 5ᵉ ne demande **aucune PR
       moteur** — seulement un run `apply-content.yml`. **Du contenu généré et jamais appliqué est
       du travail invisible pour l'élève.**
-- [ ] C11. **PUBLIER CE QUI EST DÉJÀ MERGÉ — 18 sujets en retard sur la prod.**
-      🔴 **PREMIÈRE LIGNE DE TOUTE LA ROADMAP au 2026-08-10**, toutes files confondues, et la
-      seule qui **ne produit rien** : tout est écrit, audité, mergé. Ligne ouverte ce jour ;
-      l'écart, lui, est mesuré et **visible depuis le 2026-08-04** — personne ne l'a pris.
-      **Le fait** : l'issue **#124** (`content-drift`, ouverte le 2026-08-04, régénérée le
-      2026-08-06) liste **18 sujets** dont `main` porte du contenu que la production n'a pas.
-      Le détail est plus dur que le nombre — **la campagne lycée anglais/français n'a jamais
-      atteint un élève, pas un chapitre** : `english-3eme-sec` ×6 sections, `english-bac` ×6,
-      `french-bac` ×5, tous **« jamais publié · tout le sujet »**, plus le correctif
-      `education-islamique-5eme` (#123). C'est **C9 en entier** — dix jours d'écriture et cinq
-      correctifs d'audit — invisible, **à J-22 de la rentrée**.
-      **Le geste, et il tient en une ligne** : Actions → *Apply content (PROD)* → `dry_run: false`,
+- [x] C11. **PUBLIER CE QUI EST DÉJÀ MERGÉ — FAIT, et la ligne était déjà fausse en arrivant.**
+      🟢 **L'écart est refermé, vérifié le 2026-08-22.** L'issue **#124** est **close depuis le
+      2026-08-10 à 17 h 46** — soit *le jour même où cette ligne a été écrite*, et **six jours
+      avant qu'elle n'atteigne `main`** (#152/#184, mergées le 2026-08-16). Depuis :
+      `content-drift` **vert tous les jours** (dernier passage le 2026-08-22), **aucune issue
+      ouverte dans ce dépôt**, et `apply-content.yml` a tourné avec succès le 2026-08-20 et
+      **cinq fois le 2026-08-22**. Les 18 sujets sont en production.
+      ⚠️ **La leçon n'est pas « la ligne était inutile ».** L'écart de 18 sujets était réel, et la
+      garde l'a rendu visible — c'est exactement ce pour quoi elle existe. La leçon est que cette
+      roadmap a désigné comme **PREMIÈRE LIGNE DE TOUTE LA FILE un chantier déjà refermé**, parce
+      que la PR qui la portait est restée **six jours en draft** (§8, 2026-08-16). Une priorité
+      écrite le jour J et mergée à J+6 n'est pas une priorité : c'est un instantané périmé.
+      **Relire l'issue avant de prendre la ligne.**
+      **Ouvrir n'est pas publier — et les deux ont eu lieu** : arena#741 ouvre la rubrique
+      « Éducation islamique » (migrations `20260814120000` / `20260815120000`) et **arena#760**
+      les **4 sections bac** dont le contenu était prêt (R-8). C'est le geste **moteur** que
+      **C10** distingue de la génération, et il a été fait sans qu'aucune ligne ne le demande.
+      **Le geste, s'il faut le refaire un jour, tient en une ligne** : Actions → *Apply content
+      (PROD)* → `dry_run: false`,
       **`subjects` laissé vide** (applique tout le corpus : idempotent, journalisé dans
       `content_releases`, et c'est le geste le plus sûr quand plusieurs sujets sont en retard).
       L'issue se referme **d'elle-même** au passage suivant de la garde. C'est un des dispatches
       **explicitement autorisés** à un agent par la politique d'exécution — il ne publie rien de
       neuf, seulement le SQL compilé d'un corpus déjà mergé et validé.
+      **Ce qui suit est l'historique du prérequis, gardé parce qu'il porte A17, toujours ouvert.**
       🚨 **PRÉREQUIS RENCONTRÉ EN ÉCRIVANT CETTE LIGNE — le dispatch a été inexécutable
       quelques heures.** `apply-content.yml` fait `npm ci` sur le moteur, et ce `npm ci`
       échouait : `Missing: typescript@5.9.3 from lock file`.
@@ -830,29 +994,46 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
       arbitrage §4.3) — armer le déclencheur. Une garde ne re-designe pas le canal qu'elle
       surveille : entre un merge et le passage suivant, la prod est en retard sans que personne ne
       le sache.
+- [ ] C12. **Sous-rubrique فقه — « الرسالة » d'Ibn Abî Zayd. EN COURS depuis le 2026-08-13,
+      hors roadmap.** Elle tournait sans ligne ici ; la voici, état constaté au **2026-08-22** :
+      **37 chapitres sur `main`** en neuf tranches (#172 → #181), rattachés à leur livre (#201),
+      et **la rubrique est ouverte aux élèves** — arena#738 (thème) puis **arena#741** (parcours
+      `education-islamique` passé `coming_soon` → `available`).
+      **Ce que la campagne a produit au-delà des chapitres, et qui vaut la ligne** : un contrôle
+      de fidélité au texte source (#174) · une tranche **arrêtée au contrôle, corrigée, puis
+      livrée** (#175) · et des audits qui ont **corrigé trois faussetés déjà en production**
+      (#178) avant de ramener trois chapitres à zéro écart (#179). C'est précisément la boucle
+      que la panne de **F10** rendait impossible ailleurs pendant la même période.
+      **Reste — huit أبواب sur 45.** Les 37 chapitres couvrent les أبواب **01 → 32, 34, 36, 38,
+      41 et 42** ; manquent les **33, 35, 37, 39, 40, 43, 44, 45** (relevé sur les préfixes de
+      `content/fiqh/` au 2026-08-22, un dossier par باب).
+      ⚠️ **À ne pas relire comme C10** : ce n'est pas une classe de l'école, c'est une rubrique
+      **Extras**. Elle ne concourt donc ni à la barre é18 par classe, ni à la priorité « classe de
+      concours entière d'abord » (é28 D-4) — elle ne passe **pas** devant **C4bis** ni **C4ter**.
 
 ## 6. FILES DIFFÉRÉES (ne rien lancer avant leur porte d'entrée)
 
 | File                                                             | Porte d'entrée                                                      | Contenu                                                                           |
 | ---------------------------------------------------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | ~~**V2 — concours**~~ **SORTIE DU DIFFÉRÉ le 2026-08-13** (é28 Q-4), **puis LIVRÉE le 2026-08-16** | ~~V1 ≥ M3 **et** annales transcrites~~ — **porte levée** | ~~**é02 se re-scope maintenant**~~ → **é02 est re-scopée, exécutée et close** (arena#743 lots 1-2, arena#746 lots 3-4 ; [étude](./EtudeRealisé/02-examen-blanc/ETUDE.md)). Le v1 est bien **borné SANS annales** : assemblage chronométré du corpus existant + rang relatif, et le barème porte les **coefficients réels du concours** (maths 4, arabe 2+2, français 3, sciences 3, anglais 1) dont la note /20 dérive. Les annales restent un **enrichissement** — chantier de **contenu**, **non ouvert** : si quelqu'un le lance, il entre en file CONTENU (§5), pas ici. Motif (é28 M-2) : un parent tunisien juge sur « est-ce que ça prépare au concours », et c'est le plus gros écart produit face au marché. Wording premium toujours proscrit (phase gratuite) — R-7 a d'ailleurs été **rescopé** pour cette raison : le mode est ouvert à tout compte. ⚠️ **Reliquat à porter par qui reprend** : Q-2 (cadence éditoriale = mitigation de RISK-1), Q-4 (lot 6 optionnel : détail par chapitre + remédiation) et **Q-5 (vérifier en base que la session 1 est `published`)** |
-| ~~**V4 — parent**~~ **SORTIE DU DIFFÉRÉ le 2026-08-13** (é28 Q-3) | ~~é04-A2.2 livré (ligne 16)~~ — **porte levée** | **é08 se re-scope maintenant** sur son **volet enseignant** : code de classe, liste d'élèves, taux de réussite par chapitre — la mécanique existe déjà (le rapport parent par code alliance est le même objet). Motif (é28 M-3) : c'est le seul canal à **CAC ≈ 0** au budget réel (1 000-2 000 TND/an). Le volet parent + digest hebdo IA reste, lui, derrière é04-A2.2. ⛔ **Précondition dure é28 D-5** : aucune démarche vers un établissement avant **GAP-024 livré** et **GAP-003 tranché** |
+| ~~**V4 — parent**~~ **SORTIE DU DIFFÉRÉ le 2026-08-13** (é28 Q-3) | ~~é04-A2.2 livré (ligne 16)~~ — **porte levée** | **é08 se re-scope maintenant** sur son **volet enseignant** : code de classe, liste d'élèves, taux de réussite par chapitre — la mécanique existe déjà (le rapport parent par code alliance est le même objet). Motif (é28 M-3) : c'est le seul canal à **CAC ≈ 0** au budget réel (1 000-2 000 TND/an). ⚠️⚠️ **MAIS LE VOLET PARENT NE PART PLUS DE ZÉRO — ajouté le 2026-08-22.** Quinze PR ont livré le **suivi parental quotidien** hors file entre les 2026-08-16 et 08-19 (**F11**, §4) : socle de temps mesuré (`learning_pulses`), tableau de bord jour par jour, couverture du programme par matière, niveau scolaire affiché, et le tableau de bord **ouvert au rapport public par code**. é08 doit se re-scoper contre **ce** point de départ, pas contre celui de sa rédaction — sous peine de spécifier des écrans qui existent. Le digest hebdo IA reste, lui, derrière é04-A2.2 (ligne 16) — elle-même à relire pour la même raison. ⛔ **Précondition dure é28 D-5, et elle bouge à moitié** : **GAP-024 est aux trois quarts** — la suppression de compte est livrée (arena#791), **l'export/portabilité non** (**F5**) ; **GAP-003** reste à trancher. Aucune démarche vers un établissement avant les deux |
 | **Gels — actés (A1-Q3, 2026-07-20)** ; application par é26 lot 2 | Dégel par décision humaine explicite uniquement                     | é06 (PWA offline) · é10 (anti-fraude — se dégèle au volume) · é12 (studio in-app) |
 | **Gelée (phase)**                                                | Sortie de la phase gratuite (décision humaine)                      | é01 (paiement en ligne — véhicule de réactivation du premium)                     |
 
 ## 7. Vue jalon — ce qui doit être vrai le 1ᵉʳ septembre 2026
 
-| Axe        | Cible rentrée                                                                                                                                                                                                  | État au **2026-08-10 (J-22)**                                                                                                              |
+| Axe        | Cible rentrée                                                                                                                                                                                                  | État au **2026-08-22 (J-10)**                                                                                                              |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Produit    | File V1 étapes **1-16** livrées (é22 complet dont bannière rentrée · Révision du jour · correction riche · Rappel tolérant lot 1 · maîtrise visible · points faibles + rapport parent)                         | **14/19 lignes faites — inchangé depuis le 2026-08-03** (11/19 au 2026-07-27). Restent **15-16** (é04 A2) et 17-19 (é11, hors file). ⛔ **La 15 est bloquée par C4bis, pas par du code** : elle livrerait un écran vide. La semaine écoulée a été **entièrement contenu + transcription** — ce n'est pas une dérive, c'est C9 qui a tourné |
-| IA         | A5 **rendu le 2026-07-20** : é11 dégelée (lots 0-2, pilote math 9ᵉ, budget 5 $/j, tuteur « El Ostedh »). ⚠️ **Le socle n'attend plus** : é29 l'a livré le 2026-08-22 (arena#807), avec un second payeur — la famille | **la PORTE est faite, l'étage pédagogique non.** Ce qui tenait é11 au rang 9 était une dépense à engager sans revenu ; é29 la retire. Restent é11 lots 1-7, et un **pilote de mesure de deux semaines** qui n'a pas eu lieu — aucune clé réelle n'a encore été branchée |
-| Contenu    | Classes existantes à la barre é18 · 1ère sec complète (5 matières) · vidéos 9ᵉ · Tier A `acceptedAnswers` corpus entier · cible arbitrée (A1-Q2) = **statu quo consolidé à la barre é18**, sans classe vitrine | 🔴 **Le point dur n'est plus C4bis : c'est la PUBLICATION (C11)** — **18 sujets mergés jamais appliqués**, dont la campagne lycée anglais/français **en entier**. Du travail fini, invisible. **C3 est à 4/5** (reste l'arabe, bloqué par sa transcription) et la 1ère sec compte **6 matières en ligne**. **C9 a beaucoup avancé** (anglais 2ᵉ/3ᵉ/bac, français 2ᵉ/bac, philo bac). **C4bis étape 0 faite** (#118, registre 5 → 56, tous avec `competency`) ; étape 1 à prendre. **Tier A fait** (arena#652). Toujours rien sur : **vidéos 9ᵉ** (C2) |
-| Fondations | Domaine câblé + monitoring + sitemap (F4) · légal F5 · triage ops F6 en route · `main` verte (§1)                                                                                                              | **`main` verte ✅** et **F4 soldée**. 🔴 **Nouveau : le garde pédagogique est en panne depuis 12 jours** (F10, #81 — 4 runs échoués) ; toute la campagne C9 a été écrite sans lui. **F6 n'a plus aucun blocage technique** ; reste le seul geste opérateur. **F5 reste le vrai bloqueur de la Porte 1**, et **un volet est du CODE** : GAP-024 « droits des personnes » (suppression de compte + export) n'existe nulle part dans `src/` — re-vérifié le 2026-08-10 |
+| Produit    | File V1 étapes **1-16** livrées (é22 complet dont bannière rentrée · Révision du jour · correction riche · Rappel tolérant lot 1 · maîtrise visible · points faibles + rapport parent)                         | **16/20 lignes faites** (14/19 au 2026-08-10 — la 20ᵉ, 19bis, est é29). La **17 est close par substitution** (é29 lot 1 remplace é11 lot 0) et la **19bis livrée**. Restent **15-16** (é04 A2) et **18-19** (é11). ⛔ **La 15 est toujours bloquée par C4bis, pas par du code** — et le tagging n'a pas avancé d'une question depuis le 2026-07-31. ⚠️ **La ligne 16 est à relire avant d'être prise** : le suivi parental quotidien (**F11**) a changé la surface qu'elle vise. Les douze derniers jours ont beaucoup produit, mais **hors de cette file** : é02 close, F11, F12, F13, é29 |
+| IA         | A5 **rendu le 2026-07-20** : é11 dégelée (lots 0-2, pilote math 9ᵉ, budget 5 $/j, tuteur « El Ostedh »). ⚠️ **Le socle n'attend plus** : é29 l'a livré le 2026-08-22 (arena#807), avec un second payeur — la famille | 🟢 **LA PORTE EST FAITE, ET ELLE EST ALLUMÉE.** é29 livrée le 2026-08-22 (arena#807) et **déployée en production** (`/api/health` → commit `548a429`, relevé le 2026-08-22) ; **`AI_KEY_ENC_KEY` est posée** (Mohamed, 2026-08-22) — l'effet vaut pour le déploiement suivant sa pose, seul point que cette roadmap ne mesure pas d'elle-même. **Restent, et l'étage pédagogique est entier** : le **pilote de mesure de deux semaines** (Q-9) — **aucune clé de fournisseur n'a jamais été branchée**, le seul appel réel du système est la vérification d'une clé à sa saisie — puis **é11 lots 1-7**. ⚠️ **La ligne 18 est prenable ; sa promesse ne l'est pas** : « ancrée sur l'item + distracteur + **tag** » suppose **C4bis**, qui est à **zéro tag** |
+| Contenu    | Classes existantes à la barre é18 · 1ère sec complète (5 matières) · vidéos 9ᵉ · Tier A `acceptedAnswers` corpus entier · cible arbitrée (A1-Q2) = **statu quo consolidé à la barre é18**, sans classe vitrine | 🟢 **Le point dur du 2026-08-10 est refermé** : **C11 faite** (les 18 sujets sont publiés, #124 close le 2026-08-10, `content-drift` vert jusqu'au 2026-08-22) et **F10 réparée** (2026-08-14). 🔴 **Le nouveau point dur est C4bis** — **0 tag de misconception**, re-mesuré le 2026-08-22. **Corpus au 2026-08-22 : 92 sujets, 719 chapitres, 24 045 questions** (comptage structurel sur la clé `prompt` de `origin/main`, pas le décompte du loader ; 659 chapitres / 22 146 questions au 2026-08-10). **Nouveau et sans ligne jusqu'ici** : la campagne **فقه** (37 أبواب sur 45, rubrique ouverte aux élèves — **C12**) et le rattachement de **446 chapitres** à leur domaine (**F12**). **C3 toujours à 4/5** — `arabic-1ere-sec` n'existe pas, son verrou reste la transcription du محور 3. Toujours rien sur : **vidéos 9ᵉ** (C2) |
+| Fondations | Domaine câblé + monitoring + sitemap (F4) · légal F5 · triage ops F6 en route · `main` verte (§1)                                                                                                              | **`main` verte ✅**, **F4 soldée**, et **F10 réparée** le 2026-08-14 — la panne de douze jours est close. **F5 bouge à moitié** : la **suppression de compte est livrée** (arena#791), **l'export/portabilité reste à zéro occurrence** — c'est désormais le seul volet code de GAP-024, et il tient encore la Porte 1 avec l'INPDP (côté humain ; é29 §3.8 y ajoute son registre de traitement). **F6** : plus aucun blocage technique, une seule issue de triage ouverte (arena#673) — le geste opérateur manque toujours. **F7** : deux majeures (arena#660 TypeScript v7 gate rouge, arena#595 `@types/node`). **Trois lignes neuves** : F11, F12, F13 — livrées, consignées, pas rouvertes |
 
 ## 8. Journal de la roadmap
 
 | Date       | Événement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-08-22 | **Les DEUX premières lignes de cette roadmap étaient déjà faites quand elles y sont arrivées — et 60 PR moteur sont entrées « connues » sans être citées.** Resynchronisation contre les deux dépôts, base #746 → #807. **(1) La base a sauté de 61 PR d'un coup** : la citation de é29 (#216) a porté le pointeur à #807, déclarant connues les 60 PR intermédiaires (#747 → #810) sans en citer une. Le gate est resté vert — aucune ne porte la forme « étude/lot ». Même angle mort que le 2026-08-10, dans l'autre sens : là c'était le dépôt privé qu'il ne regarde pas, ici c'est le pointeur qui a sauté par-dessus. **(2) C11 et F10, les deux priorités proclamées, sont tombées sans qu'aucune session ne les prenne.** #124 close le **2026-08-10 à 17 h 46** — le jour même de la rédaction de C11, **six jours avant** que la ligne n'atteigne `main` (#152/#184, restées en draft). #81 close le **2026-08-14**, deux jours avant l'arrivée de F10. **La leçon est neuve et elle est simple : une priorité écrite le jour J et mergée à J+6 n'est pas une priorité, c'est un instantané périmé. Relire l'issue avant de prendre la ligne.** **(3) F5 était fausse à moitié** : arena#791 a livré la suppression de compte le 2026-08-19, sous un titre qui ne cite pas GAP-024 — le symétrique du piège que cette même ligne documentait (« une PR qui cite un GAP ne le clôt pas » ⟶ « un GAP qu'aucune PR ne cite peut être livré »). **(4) Quatre chantiers entiers n'avaient aucune ligne** : suivi parental quotidien (**F11**, 15 PR), programme officiel devenu structure du produit (**F12**), manuels déclarés et liés (**F13**), campagne فقه (**C12**, 37 أبواب sur 45, rubrique ouverte). **(5) Le point dur change encore, et il change de nature** : c'est **C4bis**, qui ne commande plus seulement l'axe adaptatif mais aussi **l'étage IA** — la ligne 18 promet une explication ancrée sur un tag qui n'existe nulle part (0 occurrence sur 719 chapitres). **(6) Côté IA, le prérequis d'exploitation est levé** : `AI_KEY_ENC_KEY` est posée en production (Mohamed, 2026-08-22) ; é29 est déployée (`/api/health` → `548a429`). Restent le pilote Q-9 — **aucune clé de fournisseur n'a jamais été branchée** — et é11 lots 1-7. **(7) Une garde de plus dans la série des muettes** : la sonde des manuels ne tournait pas sous Windows et **refermait son issue en affirmant que tout allait bien** (arena#785, #211/#212) — quatrième cas, consigné en **F10**. |
 | 2026-08-16 | **Cette correction est restée SIX JOURS en draft, verte, à un rebase du merge — et le gate `roadmap-sync` rougissait sur `main` depuis trois nuits sans que personne ne le voie.** La PR #152 (rédigée le 08-10) portait A17 et la réécriture de C11 ; elle a été ouverte **en draft**, jamais promue, puis `main` a avancé de 31 commits et elle est passée en conflit. Deux gardes distinctes ont donc échoué au même endroit — **la sortie**. (1) **La chaîne d'automerge d'ici était événementielle** : elle n'évaluait une PR qu'à l'instant où un workflow de PR finissait, une fois, sans reprise — donc une PR promue après ce coup d'œil, ou un merge perdant une course, n'était **plus jamais relu**. Deux PR vertes en sont restées ouvertes deux jours (#167, #162) ; corrigé par **#182**, qui rebalaye l'état complet à chaque déclenchement (**l'événement dit quand regarder, jamais quoi**). (2) **`roadmap-sync` échouait sur `main`** les 08-14, 08-15 et 08-16 : trois lots moteur n'étaient cités nulle part — **arena#726** (é28 lot 3) et surtout **arena#743 · arena#746**, qui font passer **l'étude 02 en exécution** (schéma + moteur SQL, puis l'écran de l'examen blanc). Le §6 dit toujours « é02 se re-scope maintenant » : quatre lots plus tard, c'est faux. Cités au **§0bis**, base portée à **#746**. **La leçon commune aux deux** : un cron qui rougit n'atteint personne, exactement comme les trois gardes muettes du 2026-08-10 ci-dessous. Ce qui manque n'est toujours pas la garde — c'est que **sa panne arrive à quelqu'un**. |
 | 2026-08-10 | **Correction — la cause n'était pas l'écart de Node, et le correctif n'était pas le mien.** L'entrée suivante (même jour) affirme que la panne `npm ci` venait de ce que les six workflows d'ici étaient restés à Node 22 pendant que le moteur passait à 24, et que leur alignement l'a réparée. **Les deux sont faux.** La cause est **arena#716** : une PR intitulée « bump undici · dependency-type: **indirect** » qui modifiait en réalité `package.json` et faisait passer `@cloudflare/vite-plugin` de `^1.40.2` à `^1.51.1`, entraînant **miniflare 4 → 5 alpha**, workerd et wrangler — un saut de **majeure** et une **alpha** dans la chaîne de build, sous un intitulé de bump indirect, soit exactement ce que la politique de montée de version refuse. Le correctif est **arena#718**, qui la **revert** : resynchroniser le lockfile (`npm install --package-lock-only`) suffisait à reverdir `npm ci` — essayé, ça marche — mais gardait l'alpha et la majeure que personne n'avait arbitrées. **Ce que l'écart de Node explique vraiment est l'INVERSE d'une cause** : npm 11 (Node 24) acceptait ce lockfile, npm 10 (Node 22) le refusait — donc la CI du moteur était **verte** sur #716 et **la Content CI d'ici a été le seul détecteur du système**. Elle n'a pas échoué par mauvaise configuration : elle a échoué **parce qu'elle avait raison**. **Conséquence assumée, et c'est le vrai enseignement** : en alignant les six workflows sur Node 24, la PR #150 **a supprimé ce détecteur**. L'alignement se défend pour lui-même — le `.nvmrc` du moteur dit 24, et exécuter ses scripts sur un Node qu'il n'utilise pas est un risque — mais il a été **présenté comme un correctif qu'il n'était pas**, et son coût n'était écrit nulle part. La propriété perdue était de toute façon **accidentelle** (la sévérité de npm 10, pas une intention) : s'y fier était fragile, et c'est pourquoi la question posée en **A17** n'est pas seulement « 22 ou 24 » mais **quelle garde refuse une PR de dépendance dont le diff dépasse ce que son titre annonce**. **Méthode, pour la prochaine fois** : le premier diagnostic tenait parce qu'il expliquait le symptôme observé (deux CI, deux verdicts) — il n'a pas été confronté à la question « et si l'autre côté avait simplement tort ? ». Un écart entre deux environnements désigne rarement le plus strict comme fautif. |
 | 2026-08-10 | **Resynchronisation contre les DEUX dépôts (#709 → #716 au moteur, #116 → #148 ici) — 37 PR n'étaient citées nulle part, et le gate était vert.** C'est le constat de méthode de la passe : `roadmap-sync` ne lit que les sujets de commit du **moteur** en forme « étude/lot ». Les sept jours écoulés se sont joués **au privé**, sur du contenu et de la transcription — deux catégories qu'il ne regarde pas et qu'il n'a jamais prétendu regarder. **Un gate vert veut dire « rien de ce que je sais lire ne manque », jamais « la roadmap est à jour »** ; l'écrire ici parce qu'une session qui voit le vert conclut l'inverse. **Deux chantiers ouverts n'avaient AUCUNE ligne**, alors que leurs deux issues étaient ouvertes, étiquetées et visibles : **C11** — #124, `content-drift`, **18 sujets mergés jamais publiés**, dont `english-3eme-sec` ×6, `english-bac` ×6 et `french-bac` ×5, soit **la campagne lycée en entier**, à J-22 — et **F10** — #81, le **garde pédagogique en panne depuis le 2026-07-29**, quatre runs échoués (07-29, 08-01, 08-05, 08-08), donc **toute cette campagne écrite sans filet**. Les deux se referment seules une fois le geste fait ; aucune ne s'est refermée, faute de geste. **Quatre lignes décrivaient un état faux** : **C4bis** (son étape 0 est faite — #118, registre de **5 à 56 entrées, toutes avec `competency`** ; une session l'aurait refaite), **C3** (**4 matières sur 5 en prod** au 2026-08-04, seul l'arabe manque et c'est un blocage de **transcription**, pas de génération — arena#714 ; la 1ère sec compte **6 matières en ligne**), **C9** (une campagne lycée entière livrée : #126 → #144, plus les correctifs d'audit #146/#147/#148), **F5** (« reste, et c'est humain » — faux : la suppression de compte et l'export **n'existent pas dans `src/`**, re-vérifié ce jour ; c'est le seul bloqueur légal qu'un agent peut lever, et le classer humain l'a gelé une semaine). **Priorité inter-files ré-arbitrée au §0** : **C11 → F10 → C4bis**. C11 d'abord parce que c'est le seul geste qui **ne produit rien et livre tout**. **Aussi au moteur, non repris ailleurs** : le topo resynchronisé deux fois (arena#710, #714) · l'admin rebondi hors du Hall, chaque « Retour au hall » le ramenant sur Suivi (arena#711) · le tableau de cours qui se coupait en deux et dont les colonnes arabes se lisaient à l'envers (arena#712), puis son en-tête qui n'en était pas un pour un lecteur d'écran (arena#713) · un secret malformé qui annonçait le nom d'une librairie à la place du sien (arena#715) · le bump `undici` (arena#716). **Et ici** : le doublon de gabarit, défaut n°1 de l'écriture parallèle, qui n'était écrit nulle part (#121) · la clôture de session du 2026-08-03 (#122) · la garde `content-drift` consignée là où on la cherchera (#125) — consignée, et pourtant non prise pendant six jours : **documenter une garde ne la fait pas exécuter**. **ENFIN, TROUVÉ EN VÉRIFIANT CETTE PR — la CI de contenu de ce dépôt était MORTE, et le geste de C11 avec elle.** La PR de resynchronisation a fait rougir `content-ci` sur `npm ci`, pas sur son diff : `Missing: typescript@5.9.3 from lock file`. Reproduit en local, bissecté à **arena#716** (bump `undici` par Dependabot, qui a supprimé au passage l'entrée imbriquée `vite-tsconfig-paths/node_modules/typescript` que le peer `tsconfck ^5.0.0` réclame). **Mais #716 était VERTE au moteur** — et c'est là que se trouve la vraie cause : le moteur tourne sur **Node 24 depuis arena#688** (`.nvmrc` + ses 11 workflows), tandis que **les six workflows d'ici qui le checkoutent étaient restés à Node 22**. Même arbre, deux npm majeurs, deux verdicts : npm 11 accepte ce lockfile, npm 10 le refuse. **Portée réelle de la panne** : `content-ci` (toute PR de contenu), `content-audit`, `video-health`, `apply-content-test` et surtout **`apply-content`** — donc **la publication des 18 sujets de C11 était impossible** au moment même où cette PR la déclarait « un dispatch ». Corrigé ici : les six passent à Node 24. **La leçon est la même que celle de toute la passe, sous un troisième costume : un gate ne voit qu'un dépôt.** Le moteur a bumpé Node chez lui, complètement et correctement de son point de vue ; les workflows d'ici, qui exécutent ses scripts, lui sont invisibles. **POST-SCRIPTUM — `main` a avancé pendant la rédaction de cette entrée, ce qui est sa meilleure illustration** : **#145** (`english-bac` ch.04-06, la tranche 2) et **#149** ont mergé pendant la session, portant la base à `77a7736`. Les deux sont inscrites (C9 pour la première, F10 pour la seconde). **#149 mérite mieux qu'une citation** : `video-health.yml` avait été exécuté **trois fois** depuis son portage et avait échoué les trois fois au même endroit — un **troisième** garde qui n'avait jamais rendu de verdict, après les deux pannes du garde pédagogique. Sa sonde marchait ; c'est l'étape `gh` d'après qui tombait, faute de `GH_REPO` dans un workspace dont la racine n'est pas un dépôt git. Et l'étape qui **ouvre** l'issue portait le même défaut sans jamais s'exécuter, gardée par `broken != '0'` : elle aurait cassé le jour du premier vrai incident. F10 cesse donc de décrire un incident et décrit une **série** — trois gardes, trois pannes muettes : ce qui manque n'est jamais la garde, c'est que **sa panne n'atteint personne**. ⚠️⚠️ **DEUX AFFIRMATIONS DE CETTE ENTRÉE SONT FAUSSES** — la cause de la panne `npm ci` et l'identité de son correctif. Elles ne sont pas réécrites ici (ce journal ne se réécrit pas) : la correction est l'entrée **« Correction — la cause n'était pas l'écart de Node »** du 2026-08-10, ci-dessus. |
