@@ -9,10 +9,10 @@
     {
       "prompt": "ما قيمة (−3/4)⁻³ ؟",
       "options": [
-        { "id": "a", "text": "−27/64" },
-        { "id": "b", "text": "64/27" },
+        { "id": "a", "text": "−27/64", "misconceptionTag": "math.num.exposant-negatif-donne-nombre-negatif" },
+        { "id": "b", "text": "64/27", "misconceptionTag": "math.num.puissance-signe-parite-exposant" },
         { "id": "c", "text": "−64/27" },
-        { "id": "d", "text": "−12/9" }
+        { "id": "d", "text": "−12/9", "misconceptionTag": "math.num.puissance-confondue-avec-produit" }
       ],
       "correctOption": "c",
       "explanation": "الدليل السالب يقلب الكسر: (−3/4)⁻³ = (−4/3)³. ثمّ نرفع البسط والمقام إلى القوّة 3، فنجد (−4)³ = −64 و 3³ = 27، إذن الناتج هو −64/27. الدليل فردي فالإشارة تبقى سالبة.",
@@ -61,8 +61,8 @@
     {
       "prompt": "أيّ من الكتابات التالية تساوي (√6)¹² ؟",
       "options": [
-        { "id": "a", "text": "6¹²" },
-        { "id": "b", "text": "36⁶" },
+        { "id": "a", "text": "6¹²", "misconceptionTag": "math.num.racine-et-carre-confondus" },
+        { "id": "b", "text": "36⁶", "misconceptionTag": "math.num.puissances-base-multipliee" },
         { "id": "c", "text": "6⁶" },
         { "id": "d", "text": "6³" }
       ],

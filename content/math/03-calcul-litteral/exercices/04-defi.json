@@ -22,10 +22,10 @@
     {
       "prompt": "عمِّل (فلِّل) العبارة التالية تعميلًا تامًّا: 5x³ − 20x",
       "options": [
-        { "id": "a", "text": "5x(x² − 4)" },
+        { "id": "a", "text": "5x(x² − 4)", "misconceptionTag": "math.alg.factorisation-partielle" },
         { "id": "b", "text": "5x(x − 2)(x + 2)" },
         { "id": "c", "text": "(5x − 4)(x + 5)" },
-        { "id": "d", "text": "x(5x² − 20)" }
+        { "id": "d", "text": "x(5x² − 20)", "misconceptionTag": "math.alg.factorisation-partielle" }
       ],
       "correctOption": "b",
       "explanation": "الخطوة 1 — نُخرج العامل المشترك الأكبر: 5x³ − 20x = 5x(x² − 4).\nالخطوة 2 — نلاحظ أنّ x² − 4 = x² − 2² وهو فرق مربّعين، فنعمِّله: x² − 4 = (x − 2)(x + 2).\nإذن 5x³ − 20x = 5x(x − 2)(x + 2).\nأمّا 5x(x² − 4) فتعميل جزئي فقط (لم نعمِّل x² − 4)، والصيغتان (5x − 4)(x + 5) وx(5x² − 20) خاطئتان.",

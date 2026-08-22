@@ -11,7 +11,8 @@
       "options": [
         {
           "id": "a",
-          "text": "لأنّ التعريف يشترط ثلاثة مستقيمات على الأقلّ من هذا المستوي"
+          "text": "لأنّ التعريف يشترط ثلاثة مستقيمات على الأقلّ من هذا المستوي",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
         },
         {
           "id": "b",
@@ -19,11 +20,13 @@
         },
         {
           "id": "c",
-          "text": "لأنّ التعريف يشترط أن يكون المستقيمان متعامدين فيما بينهما أيضًا"
+          "text": "لأنّ التعريف يشترط أن يكون المستقيمان متعامدين فيما بينهما أيضًا",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
         },
         {
           "id": "d",
-          "text": "لأنّ التعريف يشترط أن يكون المستقيم محتوى في هذا المستوي"
+          "text": "لأنّ التعريف يشترط أن يكون المستقيم محتوى في هذا المستوي",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
         }
       ],
       "correctOption": "b",
@@ -35,8 +38,8 @@
       "prompt": "المستقيم (SO) عمودي على المستوي (ABC) في O ، و M نقطة من هذا المستوي مخالفة لـ O . ما طبيعة المثلث SOM ؟",
       "options": [
         { "id": "a", "text": "قائم الزاوية في O" },
-        { "id": "b", "text": "قائم الزاوية في M" },
-        { "id": "c", "text": "قائم الزاوية في S" },
+        { "id": "b", "text": "قائم الزاوية في M", "misconceptionTag": "math.geo.hypotenuse-mal-choisie" },
+        { "id": "c", "text": "قائم الزاوية في S", "misconceptionTag": "math.geo.hypotenuse-mal-choisie" },
         { "id": "d", "text": "متقايس الأضلاع مهما كانت M" }
       ],
       "correctOption": "a",
@@ -50,7 +53,7 @@
         { "id": "a", "text": "4" },
         { "id": "b", "text": "6" },
         { "id": "c", "text": "8" },
-        { "id": "d", "text": "36" }
+        { "id": "d", "text": "36", "misconceptionTag": "math.geo.thales-rapport-inverse" }
       ],
       "correctOption": "a",
       "explanation": "في المثلث SAB لدينا M نقطة من [SA] و N نقطة من [SB] و(MN) موازٍ لـ (AB) ، فحسب نظرية طاليس: MN/AB = SM/SA = 1/3 ، ومنه MN = 12/3 = 4 cm . والقيمة 8 تقابل النسبة MA/SA = 2/3 ، والقيمة 6 تقابل نصفًا بدل ثلث، والقيمة 36 ناتج ضرب في 3 بدل القسمة عليه.",
@@ -62,8 +65,8 @@
       "options": [
         { "id": "a", "text": "1" },
         { "id": "b", "text": "7" },
-        { "id": "c", "text": "√65" },
-        { "id": "d", "text": "√113" }
+        { "id": "c", "text": "√65", "misconceptionTag": "math.esp.diagonale-du-pave-en-deux-dimensions" },
+        { "id": "d", "text": "√113", "misconceptionTag": "math.esp.diagonale-du-pave-en-deux-dimensions" }
       ],
       "correctOption": "b",
       "explanation": "نطبّق قاعدة القطر بالمقلوب: EC² = AB² + AE² + AD² إذن 81 = 16 + AE² + 16 ومنه AE² = 49 و AE = 7 cm . والقيمة 1 ناتج طرح الأطوال 9 − 4 − 4 بدل طرح المربّعات، و√65 ناتج نسيان أحد البعدين، و√113 ناتج جمع 32 بدل طرحها.",
@@ -73,10 +76,10 @@
     {
       "prompt": "ABCDEFGH متوازي مستطيلات بحيث AB = 6 و AD = 8 و AE = 10 (بالصنتمتر). ما طبيعة المثلث ACE ؟\n<svg viewBox=\"0 0 215 210\"><path d=\"M45 180 L140 180 L185 148 M45 180 L45 70 M140 180 L140 70 M185 148 L185 38 M45 70 L140 70 L185 38 L90 38 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M45 180 L90 148 L185 148 M90 148 L90 38\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M45 180 L185 148 L45 70 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M45 180 L45 70\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\"/><path d=\"M45 180 L185 148 L45 70\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\" stroke-linejoin=\"round\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"34\" y=\"196\" text-anchor=\"middle\">A</text><text x=\"149\" y=\"196\" text-anchor=\"middle\">B</text><text x=\"197\" y=\"145\" text-anchor=\"middle\">C</text><text x=\"79\" y=\"161\" text-anchor=\"middle\">D</text><text x=\"34\" y=\"66\" text-anchor=\"middle\">E</text><text x=\"150\" y=\"66\" text-anchor=\"middle\">F</text><text x=\"197\" y=\"35\" text-anchor=\"middle\">G</text><text x=\"79\" y=\"33\" text-anchor=\"middle\">H</text></g></svg>",
       "options": [
-        { "id": "a", "text": "متقايس الأضلاع" },
-        { "id": "b", "text": "قائم الزاوية في C ولا غير" },
+        { "id": "a", "text": "متقايس الأضلاع", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" },
+        { "id": "b", "text": "قائم الزاوية في C ولا غير", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" },
         { "id": "c", "text": "قائم الزاوية ومتقايس الضلعين في A" },
-        { "id": "d", "text": "قائم الزاوية في E ومتقايس الضلعين" }
+        { "id": "d", "text": "قائم الزاوية في E ومتقايس الضلعين", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" }
       ],
       "correctOption": "c",
       "explanation": "أوّلًا AC² = AB² + AD² = 36 + 64 = 100 إذن AC = 10 . وثانيًا (AE) عمودي على مستوي القاعدة فهو عمودي على (AC) : المثلث ACE قائم الزاوية في A . وبما أنّ AE = AC = 10 فهو أيضًا متقايس الضلعين في A . وهو ليس متقايس الأضلاع لأنّ الوتر EC = √(100 + 100) = 10√2 يختلف عن 10 .",
@@ -86,9 +89,9 @@
     {
       "prompt": "في المكعّب ABCDEFGH ، ما طبيعة المثلث ACF ؟\n<svg viewBox=\"0 0 235 205\"><path d=\"M40 175 L150 175 L195 140 M40 175 L40 65 M150 175 L150 65 M195 140 L195 30 M40 65 L150 65 L195 30 L85 30 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M40 175 L85 140 L195 140 M85 140 L85 30\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M40 175 L195 140 L150 65 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M195 140 L150 65 L40 175\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M40 175 L195 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"30\" y=\"192\" text-anchor=\"middle\">A</text><text x=\"158\" y=\"192\" text-anchor=\"middle\">B</text><text x=\"207\" y=\"137\" text-anchor=\"middle\">C</text><text x=\"74\" y=\"154\" text-anchor=\"middle\">D</text><text x=\"29\" y=\"60\" text-anchor=\"middle\">E</text><text x=\"161\" y=\"58\" text-anchor=\"middle\">F</text><text x=\"207\" y=\"26\" text-anchor=\"middle\">G</text><text x=\"74\" y=\"24\" text-anchor=\"middle\">H</text></g></svg>",
       "options": [
-        { "id": "a", "text": "مثلث قائم الزاوية في A" },
-        { "id": "b", "text": "مثلث قائم الزاوية في F" },
-        { "id": "c", "text": "مثلث متقايس الضلعين وليس متقايس الأضلاع" },
+        { "id": "a", "text": "مثلث قائم الزاوية في A", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" },
+        { "id": "b", "text": "مثلث قائم الزاوية في F", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" },
+        { "id": "c", "text": "مثلث متقايس الضلعين وليس متقايس الأضلاع", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" },
         { "id": "d", "text": "مثلث متقايس الأضلاع" }
       ],
       "correctOption": "d",

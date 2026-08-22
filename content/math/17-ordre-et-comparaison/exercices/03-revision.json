@@ -22,8 +22,8 @@
     {
       "prompt": "ليكن a عددًا حقيقيًا حيث −3 ≤ a ≤ 5 . ما مدى هذا الحصر؟",
       "options": [
-        { "id": "a", "text": "2 لأنّ 5 + (−3) = 2" },
-        { "id": "b", "text": "−8 لأنّ −3 − 5 = −8" },
+        { "id": "a", "text": "2 لأنّ 5 + (−3) = 2", "misconceptionTag": "math.int.signe-ignore-dans-somme" },
+        { "id": "b", "text": "−8 لأنّ −3 − 5 = −8", "misconceptionTag": "math.int.signe-ignore-dans-somme" },
         { "id": "c", "text": "8 لأنّ 5 − (−3) = 8" },
         { "id": "d", "text": "5 لأنّه أكبر حدّي الحصر" }
       ],
@@ -38,10 +38,10 @@
     {
       "prompt": "نعلم أنّ 1 ≤ x ≤ 4 . أعطِ حصرًا للعدد −2x + 5 .",
       "options": [
-        { "id": "a", "text": "3 ≤ −2x + 5 ≤ −3" },
+        { "id": "a", "text": "3 ≤ −2x + 5 ≤ −3", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
         { "id": "b", "text": "−3 ≤ −2x + 5 ≤ 3" },
-        { "id": "c", "text": "7 ≤ −2x + 5 ≤ 13" },
-        { "id": "d", "text": "−8 ≤ −2x + 5 ≤ −2" }
+        { "id": "c", "text": "7 ≤ −2x + 5 ≤ 13", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
+        { "id": "d", "text": "−8 ≤ −2x + 5 ≤ −2", "misconceptionTag": "math.alg.inequation-sens-non-inverse" }
       ],
       "correctOption": "b",
       "explanation": "الضرب في −2 وهو سالب يقلب الحصر ويبادل موقع الحدّين: من 1 ≤ x ≤ 4 نستنتج −8 ≤ −2x ≤ −2 . ثمّ نضيف 5 إلى الأطراف الثلاثة فنجد −3 ≤ −2x + 5 ≤ 3 . والأخطاء الثلاثة الشائعة هي: عدم تبادل الحدّين فتُكتب متباينة مقلوبة، أو إهمال إشارة العامل فيُحصر 2x + 5 ، أو نسيان إضافة 5 .",
@@ -55,9 +55,9 @@
       "prompt": "رتّب تصاعديا الأعداد الموجبة التالية: 2√11 ، 3√5 ، √47 .",
       "options": [
         { "id": "a", "text": "2√11 < 3√5 < √47" },
-        { "id": "b", "text": "3√5 < 2√11 < √47" },
-        { "id": "c", "text": "√47 < 2√11 < 3√5" },
-        { "id": "d", "text": "2√11 < √47 < 3√5" }
+        { "id": "b", "text": "3√5 < 2√11 < √47", "misconceptionTag": "math.num.comparaison-radical-et-entier" },
+        { "id": "c", "text": "√47 < 2√11 < 3√5", "misconceptionTag": "math.num.comparaison-radical-et-entier" },
+        { "id": "d", "text": "2√11 < √47 < 3√5", "misconceptionTag": "math.num.comparaison-radical-et-entier" }
       ],
       "correctOption": "a",
       "explanation": "كلّ الأعداد موجبة فنقارن مربّعاتها: (2√11)² = 4 × 11 = 44 و (3√5)² = 9 × 5 = 45 و (√47)² = 47 . ومن 44 < 45 < 47 نستنتج الترتيب التصاعدي: 2√11 ثمّ 3√5 ثمّ √47 . الأعداد الثلاثة متقاربة جدًّا، والتربيع وحده هو الذي يفصل بينها.",
@@ -67,9 +67,9 @@
     {
       "prompt": "قارن العددين 3√7 و 2√13 ثمّ استنتج المقارنة بين مقلوبيهما.",
       "options": [
-        { "id": "a", "text": "3√7 < 2√13 و 1/(3√7) > 1/(2√13)" },
-        { "id": "b", "text": "3√7 > 2√13 و 1/(3√7) > 1/(2√13)" },
-        { "id": "c", "text": "3√7 < 2√13 و 1/(3√7) < 1/(2√13)" },
+        { "id": "a", "text": "3√7 < 2√13 و 1/(3√7) > 1/(2√13)", "misconceptionTag": "math.num.comparaison-radical-et-entier" },
+        { "id": "b", "text": "3√7 > 2√13 و 1/(3√7) > 1/(2√13)", "misconceptionTag": "math.num.inverse-conserve-l-ordre" },
+        { "id": "c", "text": "3√7 < 2√13 و 1/(3√7) < 1/(2√13)", "misconceptionTag": "math.num.comparaison-radical-et-entier" },
         { "id": "d", "text": "3√7 > 2√13 و 1/(3√7) < 1/(2√13)" }
       ],
       "correctOption": "d",
@@ -80,8 +80,8 @@
     {
       "prompt": "حوضان على شكل متوازي مستطيلات يحتويان على الكمّية نفسها من الزيت. بعدا قاعدة الأوّل هما 4 m و 2 m ، وبعدا قاعدة الثاني هما 3 m و 2 m . قارن ارتفاعي الزيت في الحوضين.",
       "options": [
-        { "id": "a", "text": "الارتفاع في الأوّل أكبر لأنّ قاعدته أوسع" },
-        { "id": "b", "text": "الارتفاعان متساويان لأنّ الكمّيتين متساويتان" },
+        { "id": "a", "text": "الارتفاع في الأوّل أكبر لأنّ قاعدته أوسع", "misconceptionTag": "math.num.grandeurs-inversement-proportionnelles" },
+        { "id": "b", "text": "الارتفاعان متساويان لأنّ الكمّيتين متساويتان", "misconceptionTag": "math.num.grandeurs-inversement-proportionnelles" },
         { "id": "c", "text": "الارتفاع في الأوّل أصغر لأنّ قاعدته أوسع" },
         {
           "id": "d",

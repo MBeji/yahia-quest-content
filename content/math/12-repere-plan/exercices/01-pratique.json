@@ -10,8 +10,8 @@
       "prompt": "في المعلّم (O ; i ; j)، النقطتان A(1 ; 3) وB(5 ; −1). ما إحداثيّات الشعاع AB؟",
       "options": [
         { "id": "a", "text": "(4 ; −4)" },
-        { "id": "b", "text": "(−4 ; 4)" },
-        { "id": "c", "text": "(6 ; 2)" },
+        { "id": "b", "text": "(−4 ; 4)", "misconceptionTag": "math.vec.coordonnees-vecteur-inversees" },
+        { "id": "c", "text": "(6 ; 2)", "misconceptionTag": "math.vec.coordonnees-vecteur-somme-au-lieu-de-difference" },
         { "id": "d", "text": "(4 ; 4)" }
       ],
       "correctOption": "a",
@@ -24,7 +24,7 @@
       "options": [
         { "id": "a", "text": "(4 ; 4)" },
         { "id": "b", "text": "(5 ; 4)" },
-        { "id": "c", "text": "(5 ; 8)" },
+        { "id": "c", "text": "(5 ; 8)", "misconceptionTag": "math.vec.milieu-sans-moitie" },
         { "id": "d", "text": "(3 ; 4)" }
       ],
       "correctOption": "b",
@@ -35,8 +35,8 @@
     {
       "prompt": "A(0 ; 0) وB(3 ; 4). ما المسافة AB؟",
       "options": [
-        { "id": "a", "text": "7" },
-        { "id": "b", "text": "√7" },
+        { "id": "a", "text": "7", "misconceptionTag": "math.geo.pythagore-sans-carres" },
+        { "id": "b", "text": "√7", "misconceptionTag": "math.geo.pythagore-sans-carres" },
         { "id": "c", "text": "5" },
         { "id": "d", "text": "√5" }
       ],
@@ -50,8 +50,8 @@
       "options": [
         { "id": "a", "text": "(2 ; 3,5)" },
         { "id": "b", "text": "(1 ; 3,5)" },
-        { "id": "c", "text": "(1 ; 7)" },
-        { "id": "d", "text": "(4 ; 7)" }
+        { "id": "c", "text": "(1 ; 7)", "misconceptionTag": "math.vec.milieu-sans-moitie" },
+        { "id": "d", "text": "(4 ; 7)", "misconceptionTag": "math.vec.milieu-sans-moitie" }
       ],
       "correctOption": "b",
       "explanation": "صيغة المنتصف: I = ((xA + xB)/2 ; (yA + yB)/2) = ((−1 + 3)/2 ; (2 + 5)/2) = (1 ; 3,5). الخطأ الشائع: الجمع دون القسمة على 2، أو الخلط بين الإحداثيّتين.",
@@ -61,8 +61,8 @@
     {
       "prompt": "A(1 ; 1) وB(4 ; 5). ما المسافة AB؟",
       "options": [
-        { "id": "a", "text": "7" },
-        { "id": "b", "text": "√7" },
+        { "id": "a", "text": "7", "misconceptionTag": "math.geo.pythagore-sans-carres" },
+        { "id": "b", "text": "√7", "misconceptionTag": "math.geo.pythagore-sans-carres" },
         { "id": "c", "text": "√34" },
         { "id": "d", "text": "5" }
       ],
@@ -74,10 +74,10 @@
     {
       "prompt": "أيّ من النقاط التالية تقع في الربع الثالث (فاصلتها سالبة وترتيبتها سالبة)؟",
       "options": [
-        { "id": "a", "text": "A(3 ; −2)" },
-        { "id": "b", "text": "B(−1 ; 4)" },
+        { "id": "a", "text": "A(3 ; −2)", "misconceptionTag": "math.vec.quadrant-signes-confondus" },
+        { "id": "b", "text": "B(−1 ; 4)", "misconceptionTag": "math.vec.quadrant-signes-confondus" },
         { "id": "c", "text": "C(−2 ; −5)" },
-        { "id": "d", "text": "D(0 ; −3)" }
+        { "id": "d", "text": "D(0 ; −3)", "misconceptionTag": "math.vec.quadrant-signes-confondus" }
       ],
       "correctOption": "c",
       "explanation": "الربع الثالث هو حيث x < 0 وy < 0. النقطة C(−2 ; −5) تحقّق ذلك. أمّا A فربع رابع، وB ربع ثانٍ، وD على محور الترتيبات.",

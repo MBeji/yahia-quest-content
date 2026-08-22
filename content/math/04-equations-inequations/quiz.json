@@ -17,8 +17,8 @@
     {
       "prompt": "ما ينصّ عليه مبدأ الجداء المعدوم؟",
       "options": [
-        { "id": "a", "text": "إذا كان a + b = 0 فإنّ a = 0 أو b = 0" },
-        { "id": "b", "text": "إذا كان a × b = 0 فإنّ a = 0 وb = 0 معًا بالضرورة" },
+        { "id": "a", "text": "إذا كان a + b = 0 فإنّ a = 0 أو b = 0", "misconceptionTag": "math.alg.produit-nul-applique-a-une-somme" },
+        { "id": "b", "text": "إذا كان a × b = 0 فإنّ a = 0 وb = 0 معًا بالضرورة", "misconceptionTag": "math.alg.produit-nul-et-au-lieu-de-ou" },
         { "id": "c", "text": "إذا كان a × b = 0 فإنّ a = 0 أو b = 0 (أو كلاهما)" },
         { "id": "d", "text": "إذا كان a × b = 0 فإنّ a = b" }
       ],
@@ -36,7 +36,7 @@
           "text": "المعادلة حلّها عدد محدّد؛ أمّا المتراجحة فحلّها مجموعة لا نهائية من الأعداد (مجال)"
         },
         { "id": "c", "text": "المتراجحة تستخدم علامة = بينما المعادلة تستخدم < أو >" },
-        { "id": "d", "text": "لا فرق بينهما من حيث طبيعة الحلّ" }
+        { "id": "d", "text": "لا فرق بينهما من حيث طبيعة الحلّ", "misconceptionTag": "math.alg.inequation-solution-unique" }
       ],
       "correctOption": "b",
       "explanation": "المعادلة تُعطي عددًا واحدًا (أو عددًا محدودًا من الحلول)، بينما المتراجحة تُعطي مجموعةً من الأعداد تُمثَّل بمجال على المستقيم العددي، مثل x ∈ ]−∞ ؛ 5[.",
@@ -46,9 +46,9 @@
     {
       "prompt": "متى تنقلب إشارة التراجح عند حلّ متراجحة من الدرجة الأولى؟",
       "options": [
-        { "id": "a", "text": "عند إضافة عدد موجب إلى طرفَيها" },
-        { "id": "b", "text": "عند طرح عدد من طرفَيها" },
-        { "id": "c", "text": "عند نقل حدّ من طرف إلى الطرف الآخر" },
+        { "id": "a", "text": "عند إضافة عدد موجب إلى طرفَيها", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
+        { "id": "b", "text": "عند طرح عدد من طرفَيها", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
+        { "id": "c", "text": "عند نقل حدّ من طرف إلى الطرف الآخر", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
         { "id": "d", "text": "عند الضرب أو القسمة على عدد سالب" }
       ],
       "correctOption": "d",
@@ -59,8 +59,8 @@
     {
       "prompt": "ما التمثيل البياني الصحيح لحلّ المتراجحة x ≥ −3؟",
       "options": [
-        { "id": "a", "text": "سهم إلى اليسار من −3 مع دائرة مفتوحة عند −3" },
-        { "id": "b", "text": "سهم إلى اليمين من −3 مع دائرة مفتوحة عند −3" },
+        { "id": "a", "text": "سهم إلى اليسار من −3 مع دائرة مفتوحة عند −3", "misconceptionTag": "math.num.intervalle-borne-mal-incluse" },
+        { "id": "b", "text": "سهم إلى اليمين من −3 مع دائرة مفتوحة عند −3", "misconceptionTag": "math.num.intervalle-borne-mal-incluse" },
         { "id": "c", "text": "سهم إلى اليسار من −3 مع دائرة مملوءة عند −3" },
         { "id": "d", "text": "سهم إلى اليمين من −3 مع دائرة مملوءة عند −3" }
       ],

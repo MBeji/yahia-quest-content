@@ -24,8 +24,8 @@
       "options": [
         { "id": "a", "text": "نعم، لأنّ AM/AB = AN/AC = 2/3" },
         { "id": "b", "text": "لا، لأنّ 4/6 ≠ 6/9 فالنسبتان مختلفتان" },
-        { "id": "c", "text": "نعم، لأنّ AM + AN = 4 + 6 = 10" },
-        { "id": "d", "text": "لا، لأنّ AB − AM = 2 وAC − AN = 3" }
+        { "id": "c", "text": "نعم، لأنّ AM + AN = 4 + 6 = 10", "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports" },
+        { "id": "d", "text": "لا، لأنّ AB − AM = 2 وAC − AN = 3", "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports" }
       ],
       "correctOption": "a",
       "explanation": "AM/AB = 4/6 = 2/3 وAN/AC = 6/9 = 2/3. النسبتان متساويتان، فبالنظرية العكسية لطاليس (MN) ∥ (BC). الخطأ الشائع: الحكم على 4/6 و6/9 بأنّهما مختلفان دون اختزال — كلاهما 2/3. والنظرية تقارن النسب لا الفروق (MB = 2 وNC = 3 لا يمنعان التوازي).",
@@ -75,9 +75,9 @@
       "prompt": "أيّ من العبارات التالية تعبّر بشكل صحيح عن النظرية العكسية لطاليس؟",
       "options": [
         { "id": "a", "text": "إذا كان AM/AB = AN/AC وM وN داخل الضلعين، فإنّ (MN) ∥ (BC)" },
-        { "id": "b", "text": "إذا كانت (MN) ∥ (BC)، فإنّ AM = AN وMB = NC في كلّ الحالات" },
-        { "id": "c", "text": "إذا كان MN = BC وكانت M وN داخل الضلعين، فإنّ (MN) ∥ (BC)" },
-        { "id": "d", "text": "إذا كان AM/MB = AN/AC، فإنّ (MN) ∥ (BC) مهما كان موضع M وN" }
+        { "id": "b", "text": "إذا كانت (MN) ∥ (BC)، فإنّ AM = AN وMB = NC في كلّ الحالات", "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports" },
+        { "id": "c", "text": "إذا كان MN = BC وكانت M وN داخل الضلعين، فإنّ (MN) ∥ (BC)", "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports" },
+        { "id": "d", "text": "إذا كان AM/MB = AN/AC، فإنّ (MN) ∥ (BC) مهما كان موضع M وN", "misconceptionTag": "math.geo.thales-formes-melangees" }
       ],
       "correctOption": "a",
       "explanation": "النظرية العكسية لطاليس تنصّ على: إذا تحقّق AM/AB = AN/AC مع كون M وN على نفس الجانب من الرأس A (داخل الضلعين)، فإنّ (MN) ∥ (BC). الخطأ الشائع: مزج الصيغتين بكتابة AM/MB = AN/AC — يجب مقارنة «جزء على كلّ» مع «جزء على كلّ» (أو «جزء على جزء» مع «جزء على جزء»).",

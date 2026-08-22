@@ -25,7 +25,7 @@
         { "id": "a", "text": "288π cm³" },
         { "id": "b", "text": "144π cm³" },
         { "id": "c", "text": "48π cm³" },
-        { "id": "d", "text": "864π cm³" }
+        { "id": "d", "text": "864π cm³", "misconceptionTag": "math.mes.formules-solides-confondues" }
       ],
       "correctOption": "a",
       "explanation": "حجم الكرة = (4/3) π r³ = (4/3) × π × 6³ = (4/3) × π × 216 = 288π cm³. ✓ الخطأ الشائع: استعمال r² بدل r³ ((4/3)π × 36 = 48π)؛ أو نسيان القسمة على 3 (4π × 216 = 864π)؛ أو حساب المساحة 4π r² = 144π بدل الحجم.",
@@ -35,8 +35,8 @@
     {
       "prompt": "إذا كبّرنا مجسّمًا بمعامل k = 3 (ضُربت كلّ أبعاده في 3)، فبكم يُضرب حجمه؟",
       "options": [
-        { "id": "a", "text": "3" },
-        { "id": "b", "text": "9" },
+        { "id": "a", "text": "3", "misconceptionTag": "math.mes.agrandissement-volume-non-cube" },
+        { "id": "b", "text": "9", "misconceptionTag": "math.mes.agrandissement-volume-non-cube" },
         { "id": "c", "text": "27" },
         { "id": "d", "text": "81" }
       ],
@@ -48,7 +48,7 @@
     {
       "prompt": "مخروط نصف قطر قاعدته 6 cm وارتفاعه 10 cm. ما حجمه؟ (استعمل π رمزيًّا)",
       "options": [
-        { "id": "a", "text": "360π cm³" },
+        { "id": "a", "text": "360π cm³", "misconceptionTag": "math.mes.volume-pyramide-sans-tiers" },
         { "id": "b", "text": "120π cm³" },
         { "id": "c", "text": "20π cm³" },
         { "id": "d", "text": "60π cm³" }
@@ -75,8 +75,8 @@
       "prompt": "قال تلميذ: «إذا ضاعفنا أبعاد مكعّب (ضربناها في 2)، تضاعف حجمه أيضًا». ما الخطأ؟",
       "options": [
         { "id": "a", "text": "الحجم يُضرب في 2³ = 8 لا في 2" },
-        { "id": "b", "text": "الحجم يُضرب في 2² = 4" },
-        { "id": "c", "text": "لا خطأ، يتضاعف فعلًا" },
+        { "id": "b", "text": "الحجم يُضرب في 2² = 4", "misconceptionTag": "math.mes.agrandissement-volume-non-cube" },
+        { "id": "c", "text": "لا خطأ، يتضاعف فعلًا", "misconceptionTag": "math.mes.agrandissement-volume-non-cube" },
         { "id": "d", "text": "الحجم يبقى كما هو" }
       ],
       "correctOption": "a",

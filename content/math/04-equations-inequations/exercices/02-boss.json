@@ -22,10 +22,10 @@
     {
       "prompt": "ما مجموعة حلول المعادلة: x(2x − 8) = 0 ؟",
       "options": [
-        { "id": "a", "text": "{ 0 ; −4 }" },
+        { "id": "a", "text": "{ 0 ; −4 }", "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose" },
         { "id": "b", "text": "{ 0 ; 4 }" },
-        { "id": "c", "text": "{ 0 ; 8 }" },
-        { "id": "d", "text": "{ 4 ; 8 }" }
+        { "id": "c", "text": "{ 0 ; 8 }", "misconceptionTag": "math.alg.coefficient-non-divise" },
+        { "id": "d", "text": "{ 4 ; 8 }", "misconceptionTag": "math.alg.division-par-inconnue-perd-solution" }
       ],
       "correctOption": "b",
       "explanation": "x(2x − 8) = 0 → إمّا x = 0 أو 2x − 8 = 0 أي 2x = 8 فـ x = 4. مجموعة الحلول: {0 ; 4}.",
@@ -36,7 +36,7 @@
       "prompt": "ما حلّ المتراجحة: 2(x − 3) < 4x + 2 ؟",
       "options": [
         { "id": "a", "text": "x > −4" },
-        { "id": "b", "text": "x < −4" },
+        { "id": "b", "text": "x < −4", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
         { "id": "c", "text": "x > 4" },
         { "id": "d", "text": "x < 4" }
       ],
@@ -50,7 +50,7 @@
       "options": [
         { "id": "a", "text": "x ≥ −3" },
         { "id": "b", "text": "x ≤ −3" },
-        { "id": "c", "text": "x ≥ 3" },
+        { "id": "c", "text": "x ≥ 3", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
         { "id": "d", "text": "x ≤ 3" }
       ],
       "correctOption": "d",
@@ -61,10 +61,10 @@
     {
       "prompt": "إذا كان (x + 7)(3 − x) = 0، فما مجموعة الحلول ؟",
       "options": [
-        { "id": "a", "text": "{ −7 ; −3 }" },
+        { "id": "a", "text": "{ −7 ; −3 }", "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose" },
         { "id": "b", "text": "{ −7 ; 3 }" },
-        { "id": "c", "text": "{ 7 ; −3 }" },
-        { "id": "d", "text": "{ 7 ; 3 }" }
+        { "id": "c", "text": "{ 7 ; −3 }", "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose" },
+        { "id": "d", "text": "{ 7 ; 3 }", "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose" }
       ],
       "correctOption": "b",
       "explanation": "(x + 7)(3 − x) = 0 → إمّا x + 7 = 0 فـ x = −7، أو 3 − x = 0 فـ x = 3. مجموعة الحلول: {−7 ; 3}.",
@@ -75,7 +75,7 @@
       "prompt": "ما الحلّ الصحيح للمتراجحة: 5 − 2x > 11 ؟",
       "options": [
         { "id": "a", "text": "x < −3" },
-        { "id": "b", "text": "x > −3" },
+        { "id": "b", "text": "x > −3", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
         { "id": "c", "text": "x < 3" },
         { "id": "d", "text": "x > 3" }
       ],

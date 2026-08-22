@@ -36,8 +36,8 @@
       "prompt": "ما قيمة (3 × 10⁻²)³ ؟",
       "options": [
         { "id": "a", "text": "27 × 10⁻⁶" },
-        { "id": "b", "text": "9 × 10⁻⁶" },
-        { "id": "c", "text": "27 × 10⁻⁵" },
+        { "id": "b", "text": "9 × 10⁻⁶", "misconceptionTag": "math.num.puissance-confondue-avec-produit" },
+        { "id": "c", "text": "27 × 10⁻⁵", "misconceptionTag": "math.num.notation-scientifique-exposant-decale" },
         { "id": "d", "text": "3 × 10⁻⁶" }
       ],
       "correctOption": "a",
@@ -48,9 +48,9 @@
     {
       "prompt": "اكتب [(−√7)⁵]²/(−√7)⁻⁴ في صيغة قوّة أساسها (−√7).",
       "options": [
-        { "id": "a", "text": "(−√7)⁶" },
-        { "id": "b", "text": "(−√7)¹¹" },
-        { "id": "c", "text": "(−√7)⁻⁴⁰" },
+        { "id": "a", "text": "(−√7)⁶", "misconceptionTag": "math.num.exposant-negatif-donne-nombre-negatif" },
+        { "id": "b", "text": "(−√7)¹¹", "misconceptionTag": "math.num.puissances-puissance-exposants-additionnes" },
+        { "id": "c", "text": "(−√7)⁻⁴⁰", "misconceptionTag": "math.num.puissances-produit-exposants-multiplies" },
         { "id": "d", "text": "(−√7)¹⁴" }
       ],
       "correctOption": "d",

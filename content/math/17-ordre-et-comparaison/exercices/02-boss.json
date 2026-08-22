@@ -10,9 +10,9 @@
       "prompt": "قارن العددين a = 3√7 + 1/4 و b = 3√7 + 2/7 .",
       "options": [
         { "id": "a", "text": "a < b لأنّ 1/4 < 2/7" },
-        { "id": "b", "text": "a > b لأنّ 1/4 > 2/7" },
+        { "id": "b", "text": "a > b لأنّ 1/4 > 2/7", "misconceptionTag": "math.frac.comparaison-par-denominateur" },
         { "id": "c", "text": "a = b لأنّ 3√7 مشترك" },
-        { "id": "d", "text": "a > b لأنّ 4 < 7" }
+        { "id": "d", "text": "a > b لأنّ 4 < 7", "misconceptionTag": "math.frac.comparaison-par-denominateur" }
       ],
       "correctOption": "a",
       "explanation": "الحدّ 3√7 مشترك بين العددين فيكفي مقارنة 1/4 و 2/7 . نوحّد المقامين: 1/4 = 7/28 و 2/7 = 8/28 ، ومنه 1/4 < 2/7 . إذن الفرق a − b = −1/28 سالب و a < b . والخطأ الشائع هو مقارنة المقامين وحدهما: مقام أصغر لا يعني كسرًا أصغر.",
@@ -22,10 +22,10 @@
     {
       "prompt": "لتكن x و y و z و t أعدادًا حقيقية حيث x ≤ y و z ≤ t . أيّ مقارنة صحيحة دائمًا؟",
       "options": [
-        { "id": "a", "text": "x + z ≥ y + t" },
-        { "id": "b", "text": "x − z ≤ y − t" },
+        { "id": "a", "text": "x + z ≥ y + t", "misconceptionTag": "math.num.ordre-inverse-a-tort" },
+        { "id": "b", "text": "x − z ≤ y − t", "misconceptionTag": "math.num.encadrement-bornes-mal-appariees" },
         { "id": "c", "text": "x + z ≤ y + t" },
-        { "id": "d", "text": "xz ≤ yt" }
+        { "id": "d", "text": "xz ≤ yt", "misconceptionTag": "math.num.produit-conserve-l-ordre-sans-signe" }
       ],
       "correctOption": "c",
       "explanation": "جمع متباينتين لهما نفس الاتّجاه طرفًا بطرف مشروع: من x ≤ y و z ≤ t نستنتج x + z ≤ y + t . أمّا الطرح طرفًا بطرف فغير مشروع: مع x = 0 و y = 1 و z = 0 و t = 5 نجد x − z = 0 و y − t = −4 فتنقلب المقارنة. وكذلك الجداء: مع x = −5 و y = 1 و z = −5 و t = 1 نجد xz = 25 و yt = 1 .",
@@ -35,7 +35,7 @@
     {
       "prompt": "نعلم أنّ a ≤ b . قارن العبارتين (−4/5)a + 3 و (−4/5)b + 3 .",
       "options": [
-        { "id": "a", "text": "(−4/5)a + 3 ≤ (−4/5)b + 3" },
+        { "id": "a", "text": "(−4/5)a + 3 ≤ (−4/5)b + 3", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
         { "id": "b", "text": "(−4/5)a + 3 = (−4/5)b + 3" },
         { "id": "c", "text": "المقارنة تتوقّف على إشارتي a و b" },
         { "id": "d", "text": "(−4/5)a + 3 ≥ (−4/5)b + 3" }
@@ -53,7 +53,7 @@
       "options": [
         { "id": "a", "text": "أن تكون لـ x و y إشارتان مختلفتان" },
         { "id": "b", "text": "أن يكون لـ x و y نفس العلامة" },
-        { "id": "c", "text": "لا شرط: الاستنتاج صحيح دائمًا" },
+        { "id": "c", "text": "لا شرط: الاستنتاج صحيح دائمًا", "misconceptionTag": "math.num.inverse-conserve-l-ordre" },
         { "id": "d", "text": "أن يكون x و y موجبين وحدهما" }
       ],
       "correctOption": "b",
@@ -64,10 +64,10 @@
     {
       "prompt": "ليكن x و y عددين حقيقيين حيث x ≤ y ≤ 0 . أيّ مقارنة صحيحة؟",
       "options": [
-        { "id": "a", "text": "x² ≤ y²" },
+        { "id": "a", "text": "x² ≤ y²", "misconceptionTag": "math.num.carre-conserve-l-ordre" },
         { "id": "b", "text": "x² = y²" },
         { "id": "c", "text": "x² ≥ y²" },
-        { "id": "d", "text": "|x| ≤ |y|" }
+        { "id": "d", "text": "|x| ≤ |y|", "misconceptionTag": "math.num.ordre-des-negatifs-inverse" }
       ],
       "correctOption": "c",
       "explanation": "العددان سالبان أو معدومان، وفي هذه الحالة يقلب التربيع الترتيب: من x ≤ y نستنتج x² ≥ y² . مثال: مع x = −6 و y = −1 نجد 36 ≥ 1 . والقيمة المطلقة تنقلب بدورها فيكون |x| ≥ |y| ، أي 6 ≥ 1 .",

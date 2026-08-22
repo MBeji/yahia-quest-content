@@ -22,10 +22,10 @@
     {
       "prompt": "ما مجموعة حلول المعادلة: (x − 5)(2x + 6) = 0 ؟",
       "options": [
-        { "id": "a", "text": "{ −5 ; −3 }" },
-        { "id": "b", "text": "{ −5 ; 6 }" },
+        { "id": "a", "text": "{ −5 ; −3 }", "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose" },
+        { "id": "b", "text": "{ −5 ; 6 }", "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose" },
         { "id": "c", "text": "{ 5 ; −3 }" },
-        { "id": "d", "text": "{ 5 ; 3 }" }
+        { "id": "d", "text": "{ 5 ; 3 }", "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose" }
       ],
       "correctOption": "c",
       "explanation": "جداء معدوم: إمّا x − 5 = 0 فـ x = 5، أو 2x + 6 = 0 أي 2x = −6 فـ x = −3. مجموعة الحلول {5 ; −3}.",
@@ -49,7 +49,7 @@
       "prompt": "ما حلّ المتراجحة: 4 − 3x ≥ 19 ؟",
       "options": [
         { "id": "a", "text": "x ≤ −5" },
-        { "id": "b", "text": "x ≥ −5" },
+        { "id": "b", "text": "x ≥ −5", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
         { "id": "c", "text": "x ≤ 5" },
         { "id": "d", "text": "x ≥ 5" }
       ],
@@ -74,8 +74,8 @@
     {
       "prompt": "ما مجموعة الأعداد الصحيحة x التي تحقّق في آنٍ واحد: x > −2 و2x ≤ 6 ؟",
       "options": [
-        { "id": "a", "text": "{ −2 ; −1 ; 0 ; 1 ; 2 ; 3 }" },
-        { "id": "b", "text": "{ −1 ; 0 ; 1 ; 2 }" },
+        { "id": "a", "text": "{ −2 ; −1 ; 0 ; 1 ; 2 ; 3 }", "misconceptionTag": "math.num.intervalle-borne-mal-incluse" },
+        { "id": "b", "text": "{ −1 ; 0 ; 1 ; 2 }", "misconceptionTag": "math.num.intervalle-borne-mal-incluse" },
         { "id": "c", "text": "{ −1 ; 0 ; 1 ; 2 ; 3 }" },
         { "id": "d", "text": "{ 0 ; 1 ; 2 ; 3 }" }
       ],

@@ -9,9 +9,9 @@
     {
       "prompt": "في المكعّب ABCDEFGH ، أيّ التصريحات التالية صحيح ؟\n<svg viewBox=\"0 0 235 205\"><path d=\"M40 175 L150 175 L195 140 M40 175 L40 65 M150 175 L150 65 M195 140 L195 30 M40 65 L150 65 L195 30 L85 30 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M40 175 L85 140 L195 140 M85 140 L85 30\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"30\" y=\"192\" text-anchor=\"middle\">A</text><text x=\"158\" y=\"192\" text-anchor=\"middle\">B</text><text x=\"207\" y=\"137\" text-anchor=\"middle\">C</text><text x=\"73\" y=\"155\" text-anchor=\"middle\">D</text><text x=\"29\" y=\"60\" text-anchor=\"middle\">E</text><text x=\"161\" y=\"58\" text-anchor=\"middle\">F</text><text x=\"207\" y=\"26\" text-anchor=\"middle\">G</text><text x=\"74\" y=\"24\" text-anchor=\"middle\">H</text></g></svg>",
       "options": [
-        { "id": "a", "text": "(AC) عمودي على المستوي (ABF)" },
-        { "id": "b", "text": "(AG) عمودي على المستوي (BCD)" },
-        { "id": "c", "text": "(BD) عمودي على المستوي (ABF)" },
+        { "id": "a", "text": "(AC) عمودي على المستوي (ABF)", "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes" },
+        { "id": "b", "text": "(AG) عمودي على المستوي (BCD)", "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes" },
+        { "id": "c", "text": "(BD) عمودي على المستوي (ABF)", "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes" },
         { "id": "d", "text": "(AE) عمودي على المستوي (EFG)" }
       ],
       "correctOption": "d",
@@ -25,7 +25,7 @@
         { "id": "a", "text": "متوازيان" },
         { "id": "b", "text": "متعامدان في I" },
         { "id": "c", "text": "متقاطعان في مركز القاعدة" },
-        { "id": "d", "text": "ليسا في نفس المستوي" }
+        { "id": "d", "text": "ليسا في نفس المستوي", "misconceptionTag": "math.esp.droites-non-coplanaires-crues-secantes" }
       ],
       "correctOption": "a",
       "explanation": "النقطتان I و J منتصفا الضلعين [SA] و[SC] من المثلث SAC ، فالمستقيم (IJ) هو مستقيم المنتصفين وهو موازٍ للضلع الثالث (AC) . وهما في نفس المستوي (SAC) فلا يمكن أن يكونا خارج مستوٍ واحد، ولا يتقاطعان لأنّهما متوازيان، ولا شيء في المعطيات يفرض تعامدًا.",
@@ -64,7 +64,7 @@
         { "id": "a", "text": "√119" },
         { "id": "b", "text": "13" },
         { "id": "c", "text": "2√61" },
-        { "id": "d", "text": "17" }
+        { "id": "d", "text": "17", "misconceptionTag": "math.geo.pythagore-sans-carres" }
       ],
       "correctOption": "b",
       "explanation": "أوّلًا قطر القاعدة: BD² = AB² + AD² = 64 + 36 = 100 ومنه BD = 10 ، و O منتصفه فـ OD = 5 . وثانيًا (DH) عمودي على مستوي القاعدة فهو عمودي على (DO) ، والمثلث ODH قائم في D مع DH = AE = 12 : OH² = 25 + 144 = 169 ومنه OH = 13 cm . والقيمة 2√61 ناتج استعمال القطر 10 بدل نصفه، والقيمة 17 مجموع 5 و 12 ، والقيمة √119 ناتج طرح المربّعين بدل جمعهما.",

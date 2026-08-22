@@ -42,9 +42,9 @@
       "prompt": "ما قيمة كلّ من العددين (√20)² و√((−8)²) ؟",
       "options": [
         { "id": "a", "text": "400 و8" },
-        { "id": "b", "text": "400 و−8" },
+        { "id": "b", "text": "400 و−8", "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue" },
         { "id": "c", "text": "20 و8" },
-        { "id": "d", "text": "20 و−8" }
+        { "id": "d", "text": "20 و−8", "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue" }
       ],
       "correctOption": "c",
       "explanation": "نعود إلى تعريف الجذر التربيعي: العدد √20 هو العدد الموجب الذي مربّعه 20، إذن (√20)² = 20 مباشرة، دون حاجة إلى أيّ قيمة تقريبية. وفي الكتابة الثانية نبدأ بما تحت الجذر: (−8)² = 64 لأنّ سالب × سالب = موجب، ثمّ √64 = 8 لأنّ 8 موجب و8² = 64. فالقيمتان هما 20 و8. الأخطاء الشائعة: تربيع العدد 20 فينتج 400 بدل 20 ؛ أو الإجابة بالعدد −8 مع أنّ رمز الجذر لا يدلّ إلّا على العدد الموجب.",
@@ -71,8 +71,8 @@
     {
       "prompt": "ما طبيعة العدد الناتج عن العملية (√2 + 3) + (2 − √2) ؟",
       "options": [
-        { "id": "a", "text": "عدد أصمّ يساوي 5 + √2" },
-        { "id": "b", "text": "عدد أصمّ يساوي 2√2 + 5" },
+        { "id": "a", "text": "عدد أصمّ يساوي 5 + √2", "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel" },
+        { "id": "b", "text": "عدد أصمّ يساوي 2√2 + 5", "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel" },
         { "id": "c", "text": "عدد عشري يساوي 5,5" },
         { "id": "d", "text": "عدد صحيح طبيعي يساوي 5" }
       ],

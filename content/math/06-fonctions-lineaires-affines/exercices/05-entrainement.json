@@ -23,9 +23,9 @@
       "prompt": "الدالة الخطية f تُعرَّف بـ f(x) = ax وتحقّق f(4) = 12. ما هو تعبير f؟",
       "options": [
         { "id": "a", "text": "f(x) = 3x" },
-        { "id": "b", "text": "f(x) = 4x" },
-        { "id": "c", "text": "f(x) = 8x" },
-        { "id": "d", "text": "f(x) = 48x" }
+        { "id": "b", "text": "f(x) = 4x", "misconceptionTag": "math.fn.coefficient-obtenu-sans-division" },
+        { "id": "c", "text": "f(x) = 8x", "misconceptionTag": "math.fn.coefficient-obtenu-sans-division" },
+        { "id": "d", "text": "f(x) = 48x", "misconceptionTag": "math.fn.coefficient-obtenu-sans-division" }
       ],
       "correctOption": "a",
       "explanation": "من f(4) = 12 نجد a = 12 ÷ 4 = 3. إذن f(x) = 3x. التحقّق: f(4) = 3 × 4 = 12 ✓.",
@@ -35,7 +35,7 @@
     {
       "prompt": "بيان دالة تآلفية يمرّ بالنقطتَين A(1 ; 7) وB(3 ; 11). ما هو تعبيرها؟",
       "options": [
-        { "id": "a", "text": "f(x) = 4x + 3" },
+        { "id": "a", "text": "f(x) = 4x + 3", "misconceptionTag": "math.fn.pente-sans-quotient" },
         { "id": "b", "text": "f(x) = 2x + 7" },
         { "id": "c", "text": "f(x) = 2x + 5" },
         { "id": "d", "text": "f(x) = −2x + 9" }
@@ -48,9 +48,9 @@
     {
       "prompt": "الدالة f تُعرَّف بـ f(x) = 3x − 12. ما قيمة x حين f(x) = 0 (الصفر)؟",
       "options": [
-        { "id": "a", "text": "−4" },
+        { "id": "a", "text": "−4", "misconceptionTag": "math.alg.transposition-sans-changer-signe" },
         { "id": "b", "text": "4" },
-        { "id": "c", "text": "12" },
+        { "id": "c", "text": "12", "misconceptionTag": "math.alg.coefficient-non-divise" },
         { "id": "d", "text": "36" }
       ],
       "correctOption": "b",
@@ -61,9 +61,9 @@
     {
       "prompt": "أيّ مستقيم من المستقيمات التالية نازل (تناقصي)؟",
       "options": [
-        { "id": "a", "text": "f(x) = 2x − 3" },
-        { "id": "b", "text": "f(x) = x" },
-        { "id": "c", "text": "f(x) = 4x + 2" },
+        { "id": "a", "text": "f(x) = 2x − 3", "misconceptionTag": "math.fn.sens-variation-et-signe-de-a" },
+        { "id": "b", "text": "f(x) = x", "misconceptionTag": "math.fn.sens-variation-et-signe-de-a" },
+        { "id": "c", "text": "f(x) = 4x + 2", "misconceptionTag": "math.fn.sens-variation-et-signe-de-a" },
         { "id": "d", "text": "f(x) = −0,5x + 1" }
       ],
       "correctOption": "d",

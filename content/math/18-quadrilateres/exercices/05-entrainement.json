@@ -11,7 +11,7 @@
       "options": [
         { "id": "a", "text": "OA × OB" },
         { "id": "b", "text": "AH × OB" },
-        { "id": "c", "text": "AC × BD" },
+        { "id": "c", "text": "AC × BD", "misconceptionTag": "math.mes.aire-losange-sans-moitie" },
         { "id": "d", "text": "AC × OB" }
       ],
       "correctOption": "d",
@@ -22,10 +22,10 @@
     {
       "prompt": "في المثلث ABC، النقطة I منتصف [AB]. المستقيم المارّ من I والموازي لـ (BC) يقطع [AC] في النقطة J. إذا كان AC = 22 فما طول [AJ]؟\n<svg viewBox=\"0 0 340 230\"><path d=\"M160 40 L60 200 L280 200 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M160 40 L60 200 L280 200 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M110 120 L220 120\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\"/><g fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M158 113 L166 120 L158 127\"/><path d=\"M163 193 L171 200 L163 207\"/></g><g stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" fill=\"none\"><path d=\"M130 77 L140 83\"/><path d=\"M80 157 L90 163\"/></g><g fill=\"#0f172a\"><circle cx=\"160\" cy=\"40\" r=\"4\"/><circle cx=\"60\" cy=\"200\" r=\"4\"/><circle cx=\"280\" cy=\"200\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"110\" cy=\"120\" r=\"4.5\"/><circle cx=\"220\" cy=\"120\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"160\" y=\"28\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"46\" y=\"216\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"294\" y=\"216\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"94\" y=\"114\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"236\" y=\"114\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text><text x=\"258\" y=\"170\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">22</text></g></svg>",
       "options": [
-        { "id": "a", "text": "5,5" },
+        { "id": "a", "text": "5,5", "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux" },
         { "id": "b", "text": "11" },
-        { "id": "c", "text": "22" },
-        { "id": "d", "text": "44" }
+        { "id": "c", "text": "22", "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux" },
+        { "id": "d", "text": "44", "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux" }
       ],
       "correctOption": "b",
       "explanation": "حسب عكس خاصيّة المنتصفات: في المثلث، المستقيم المارّ من منتصف ضلع والموازي لضلع آخر يمرّ من منتصف الضلع الثالث. إذن J منتصف [AC] و AJ = AC/2 = 22/2 = 11. (من ينصّف مرّتين يجد 5,5، ومن يضاعف بدل أن ينصّف يجد 44.)",
@@ -36,9 +36,9 @@
       "prompt": "ABCD متوازي أضلاع، والنقطة M منتصف [AB] والنقطة N منتصف [DC]. ما أدقّ وصف للرباعي AMND؟\n<svg viewBox=\"0 0 340 230\"><path d=\"M70 70 L250 70 L290 190 L110 190 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M70 70 L250 70 L290 190 L110 190 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><g stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" fill=\"none\"><path d=\"M115 64 L115 76\"/><path d=\"M205 64 L205 76\"/><path d=\"M155 184 L155 196\"/><path d=\"M245 184 L245 196\"/></g><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"70\" r=\"4\"/><circle cx=\"250\" cy=\"70\" r=\"4\"/><circle cx=\"290\" cy=\"190\" r=\"4\"/><circle cx=\"110\" cy=\"190\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"160\" cy=\"70\" r=\"4.5\"/><circle cx=\"200\" cy=\"190\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"58\" y=\"62\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"262\" y=\"62\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"304\" y=\"206\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"98\" y=\"206\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"160\" y=\"58\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"200\" y=\"210\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text></g></svg>",
       "options": [
         { "id": "a", "text": "متوازي أضلاع" },
-        { "id": "b", "text": "مستطيل" },
-        { "id": "c", "text": "معيّن" },
-        { "id": "d", "text": "مربّع" }
+        { "id": "b", "text": "مستطيل", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" },
+        { "id": "c", "text": "معيّن", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" },
+        { "id": "d", "text": "مربّع", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" }
       ],
       "correctOption": "a",
       "explanation": "الضلعان [AM] و[DN] محمولان على المستقيمين (AB) و(DC) وهما متوازيان لأنّ ABCD متوازي أضلاع، كما أنّ AM = AB/2 و DN = DC/2 و AB = DC، إذن AM = DN. للرباعي AMND إذن ضلعان متقابلان متوازيان ومتقايسان: فهو متوازي أضلاع. ولا شيء يفرض تقايس أضلاعه ولا وجود زاوية قائمة فيه.",
@@ -61,10 +61,10 @@
     {
       "prompt": "في معلّم متعامد، A(1 ; 1) و B(5 ; 3) و C(7 ; 7) و D(3 ; 5). ما أدقّ وصف للرباعي ABCD؟\n<svg viewBox=\"0 0 280 225\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\"><path d=\"M84 14 V200 M108 14 V200 M132 14 V200 M156 14 V200 M180 14 V200 M204 14 V200 M228 14 V200 M252 14 V200\"/><path d=\"M48 176 H262 M48 152 H262 M48 128 H262 M48 104 H262 M48 80 H262 M48 56 H262 M48 32 H262\"/></g><path d=\"M48 200 H266 M60 212 V14\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M260 194 L269 200 L260 206 Z M54 23 L60 12 L66 23 Z\" fill=\"#0f172a\"/><path d=\"M84 176 L180 128 L228 32 L132 80 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M84 176 L180 128 L228 32 L132 80 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><g fill=\"#0f6e56\"><circle cx=\"84\" cy=\"176\" r=\"5\"/><circle cx=\"180\" cy=\"128\" r=\"5\"/><circle cx=\"228\" cy=\"32\" r=\"5\"/><circle cx=\"132\" cy=\"80\" r=\"5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"72\" y=\"192\" text-anchor=\"middle\" fill=\"#0f6e56\">A</text><text x=\"192\" y=\"142\" text-anchor=\"middle\" fill=\"#0f6e56\">B</text><text x=\"240\" y=\"28\" text-anchor=\"middle\" fill=\"#0f6e56\">C</text><text x=\"120\" y=\"74\" text-anchor=\"middle\" fill=\"#0f6e56\">D</text><text x=\"48\" y=\"216\" text-anchor=\"middle\" fill=\"#0f172a\">O</text></g></svg>",
       "options": [
-        { "id": "a", "text": "متوازي أضلاع" },
-        { "id": "b", "text": "مستطيل" },
+        { "id": "a", "text": "متوازي أضلاع", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" },
+        { "id": "b", "text": "مستطيل", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" },
         { "id": "c", "text": "معيّن" },
-        { "id": "d", "text": "مربّع" }
+        { "id": "d", "text": "مربّع", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" }
       ],
       "correctOption": "c",
       "explanation": "منتصف [AC] هو (4 ; 4) ومنتصف [BD] هو (4 ; 4) أيضا، إذن ABCD متوازي أضلاع. ثمّ AB = √(4² + 2²) = √20 و AD = √(2² + 4²) = √20: الضلعان المتتاليان متقايسان فهو معيّن. ولا يكون مربّعا لأنّ القطرين غير متقايسين: AC = √72 و BD = √8.",

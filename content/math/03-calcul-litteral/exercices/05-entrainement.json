@@ -10,8 +10,8 @@
       "prompt": "انشر العبارة: −2(3x − 4) ؟",
       "options": [
         { "id": "a", "text": "−6x + 8" },
-        { "id": "b", "text": "−6x − 8" },
-        { "id": "c", "text": "−6x + 4" },
+        { "id": "b", "text": "−6x − 8", "misconceptionTag": "math.alg.moins-devant-parenthese" },
+        { "id": "c", "text": "−6x + 4", "misconceptionTag": "math.alg.distribution-partielle" },
         { "id": "d", "text": "6x − 8" }
       ],
       "correctOption": "a",
@@ -22,8 +22,8 @@
     {
       "prompt": "انشر العبارة: (3x + 2)² ؟",
       "options": [
-        { "id": "a", "text": "9x² + 4" },
-        { "id": "b", "text": "9x² + 6x + 4" },
+        { "id": "a", "text": "9x² + 4", "misconceptionTag": "math.alg.carre-somme-sans-double-produit" },
+        { "id": "b", "text": "9x² + 6x + 4", "misconceptionTag": "math.alg.carre-somme-sans-double-produit" },
         { "id": "c", "text": "9x² + 12x + 4" },
         { "id": "d", "text": "6x² + 12x + 4" }
       ],
@@ -77,7 +77,7 @@
         { "id": "a", "text": "4a² + 4b²" },
         { "id": "b", "text": "8ab" },
         { "id": "c", "text": "4ab" },
-        { "id": "d", "text": "0" }
+        { "id": "d", "text": "0", "misconceptionTag": "math.alg.carre-difference-signes" }
       ],
       "correctOption": "b",
       "explanation": "(a + b)² = a² + 2ab + b² و(a − b)² = a² − 2ab + b². الفرق (a+b)² − (a−b)² = 4ab. نضرب في 2: 2 × 4ab = 8ab. الخطأ الشائع: نسيان المعامل 2 أمام كلّ مربّع فيُحصل على 4ab، أو الظنّ أنّ الفرق يساوي 0 لأنّ المربّعين «متشابهان».",

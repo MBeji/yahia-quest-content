@@ -10,9 +10,9 @@
       "prompt": "أكمل التفكيك وفق علاقة شال بإدخال النقطة M: الشعاع AC = ؟",
       "options": [
         { "id": "a", "text": "AM + MC" },
-        { "id": "b", "text": "AM + CM" },
-        { "id": "c", "text": "MA + MC" },
-        { "id": "d", "text": "MA + CM" }
+        { "id": "b", "text": "AM + CM", "misconceptionTag": "math.vec.chasles-sens-inverse" },
+        { "id": "c", "text": "MA + MC", "misconceptionTag": "math.vec.chasles-sens-inverse" },
+        { "id": "d", "text": "MA + CM", "misconceptionTag": "math.vec.chasles-sens-inverse" }
       ],
       "correctOption": "a",
       "explanation": "علاقة شال تُقرأ أيضًا بالعكس: يمكن تفكيك أيّ شعاع بإدخال نقطة وسيطة: AC = AM + MC (من A إلى M ثمّ من M إلى C). الترتيب مهمّ: طرف الشعاع الأوّل يجب أن يكون منشأ الثاني.",
@@ -22,9 +22,9 @@
     {
       "prompt": "بسّط مجموع الأشعّة: AB + BC + CD + DA",
       "options": [
-        { "id": "a", "text": "AD" },
+        { "id": "a", "text": "AD", "misconceptionTag": "math.vec.chasles-relais-incomplet" },
         { "id": "b", "text": "الشعاع الصفري" },
-        { "id": "c", "text": "AC" },
+        { "id": "c", "text": "AC", "misconceptionTag": "math.vec.chasles-relais-incomplet" },
         { "id": "d", "text": "DA" }
       ],
       "correctOption": "b",
@@ -48,9 +48,9 @@
     {
       "prompt": "في الانسحاب ذي الشعاع u، النقطة N هي صورة النقطة P (أي P هي سابقة N). أيّ علاقة شعاعية صحيحة؟",
       "options": [
-        { "id": "a", "text": "NP = u" },
-        { "id": "b", "text": "PN = الشعاع الصفري" },
-        { "id": "c", "text": "N = P" },
+        { "id": "a", "text": "NP = u", "misconceptionTag": "math.vec.chasles-sens-inverse" },
+        { "id": "b", "text": "PN = الشعاع الصفري", "misconceptionTag": "math.vec.translation-points-fixes" },
+        { "id": "c", "text": "N = P", "misconceptionTag": "math.vec.translation-points-fixes" },
         { "id": "d", "text": "PN = u" }
       ],
       "correctOption": "d",
@@ -62,9 +62,9 @@
       "prompt": "I منتصف القطعة [AB]. أيّ مساواة شعاعية صحيحة؟",
       "options": [
         { "id": "a", "text": "IA + IB = الشعاع الصفري" },
-        { "id": "b", "text": "IA = IB" },
-        { "id": "c", "text": "AI = BI" },
-        { "id": "d", "text": "IA + IB = AB" }
+        { "id": "b", "text": "IA = IB", "misconceptionTag": "math.vec.egalite-longueur-seule" },
+        { "id": "c", "text": "AI = BI", "misconceptionTag": "math.vec.egalite-longueur-seule" },
+        { "id": "d", "text": "IA + IB = AB", "misconceptionTag": "math.vec.chasles-sens-inverse" }
       ],
       "correctOption": "a",
       "explanation": "بما أنّ I منتصف [AB] فإنّ الشعاعين IA وIB متساويان في الطول ومتعاكسان في المنحى، أي IB هو معاكس IA، ومجموعهما الشعاع الصفري. الخطأ الشائع: كتابة IA = IB — الطولان متساويان لكنّ المنحيين متعاكسان فالشعاعان غير متساويين.",
@@ -76,7 +76,7 @@
       "options": [
         { "id": "a", "text": "BA" },
         { "id": "b", "text": "AC" },
-        { "id": "c", "text": "CA" },
+        { "id": "c", "text": "CA", "misconceptionTag": "math.vec.chasles-sens-inverse" },
         { "id": "d", "text": "CB" }
       ],
       "correctOption": "b",

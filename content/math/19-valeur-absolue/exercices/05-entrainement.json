@@ -12,7 +12,7 @@
         { "id": "a", "text": "كلّ عدد حقيقي هو حلّ" },
         { "id": "b", "text": "x = 0 وهو الحلّ الوحيد" },
         { "id": "c", "text": "x = 0 أو x = 1 كلاهما حلّ" },
-        { "id": "d", "text": "لا يوجد أيّ حلّ في ℝ" }
+        { "id": "d", "text": "لا يوجد أيّ حلّ في ℝ", "misconceptionTag": "math.num.valeur-absolue-negative" }
       ],
       "correctOption": "b",
       "explanation": "المساواة |x| = 0 تعني أنّ x = 0 : النقطة الوحيدة التي بعدها عن المبدأ معدوم هي المبدأ نفسه. وهي الحالة الوحيدة التي لا تعطي فيها المساواة حلّين.",
@@ -23,9 +23,9 @@
       "prompt": "ما قيمة |1 + √7| ؟",
       "options": [
         { "id": "a", "text": "1 + √7" },
-        { "id": "b", "text": "√7 − 1" },
-        { "id": "c", "text": "1 − √7" },
-        { "id": "d", "text": "−1 − √7" }
+        { "id": "b", "text": "√7 − 1", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
+        { "id": "c", "text": "1 − √7", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
+        { "id": "d", "text": "−1 − √7", "misconceptionTag": "math.num.valeur-absolue-negative" }
       ],
       "correctOption": "a",
       "explanation": "العددان 1 و √7 موجبان فمجموعهما موجب، والقيمة المطلقة لعدد موجب هي العدد نفسه: |1 + √7| = 1 + √7 . لا داعي لأيّ تغيير في الإشارة هنا.",
@@ -35,8 +35,8 @@
     {
       "prompt": "ما قيمة |−72|/|−8| ؟",
       "options": [
-        { "id": "a", "text": "−9" },
-        { "id": "b", "text": "1/9" },
+        { "id": "a", "text": "−9", "misconceptionTag": "math.num.valeur-absolue-negative" },
+        { "id": "b", "text": "1/9", "misconceptionTag": "math.num.oppose-inverse-confondus" },
         { "id": "c", "text": "9" },
         { "id": "d", "text": "64" }
       ],
@@ -52,8 +52,8 @@
       "prompt": "عددان حقيقيان a و b مخالف للصفر بحيث |a| = 4 و |b| = 5 . ما قيمة |a/b| ؟",
       "options": [
         { "id": "a", "text": "20" },
-        { "id": "b", "text": "5/4" },
-        { "id": "c", "text": "−4/5" },
+        { "id": "b", "text": "5/4", "misconceptionTag": "math.num.oppose-inverse-confondus" },
+        { "id": "c", "text": "−4/5", "misconceptionTag": "math.num.valeur-absolue-negative" },
         { "id": "d", "text": "4/5" }
       ],
       "correctOption": "d",
@@ -64,10 +64,10 @@
     {
       "prompt": "ما قيمة |3 − π| ؟",
       "options": [
-        { "id": "a", "text": "3 − π" },
-        { "id": "b", "text": "π + 3" },
+        { "id": "a", "text": "3 − π", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
+        { "id": "b", "text": "π + 3", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
         { "id": "c", "text": "π − 3" },
-        { "id": "d", "text": "−π − 3" }
+        { "id": "d", "text": "−π − 3", "misconceptionTag": "math.num.valeur-absolue-negative" }
       ],
       "correctOption": "c",
       "explanation": "بما أنّ π ≈ 3,14 فإنّ π أكبر من 3 ، ومنه العبارة 3 − π سالبة. والقيمة المطلقة لعدد سالب هي مقابله: |3 − π| = π − 3 .",
@@ -78,9 +78,9 @@
       "prompt": "على مستقيم مدرّج (OI) ، فاصلة A هي −1 وفاصلة B هي √2 . ما هو البعد AB ؟",
       "options": [
         { "id": "a", "text": "√2 + 1" },
-        { "id": "b", "text": "√2 − 1" },
-        { "id": "c", "text": "1 − √2" },
-        { "id": "d", "text": "−√2 − 1" }
+        { "id": "b", "text": "√2 − 1", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
+        { "id": "c", "text": "1 − √2", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
+        { "id": "d", "text": "−√2 − 1", "misconceptionTag": "math.num.valeur-absolue-negative" }
       ],
       "correctOption": "a",
       "explanation": "البعد هو القيمة المطلقة للفرق بين الفاصلتين: AB = |√2 − (−1)| = |√2 + 1| = √2 + 1 لأنّ هذا العدد موجب. الخطأ الشائع هو نسيان أنّ طرح عدد سالب يكافئ إضافة مقابله.",

@@ -25,9 +25,9 @@
     {
       "prompt": "نعلم أنّ 2 ≤ x ≤ 5 و −3 ≤ z ≤ −1 . أعطِ حصرًا للجداء xz .",
       "options": [
-        { "id": "a", "text": "−6 ≤ xz ≤ −5" },
-        { "id": "b", "text": "−6 ≤ xz ≤ −2" },
-        { "id": "c", "text": "−15 ≤ xz ≤ −5" },
+        { "id": "a", "text": "−6 ≤ xz ≤ −5", "misconceptionTag": "math.num.encadrement-bornes-mal-appariees" },
+        { "id": "b", "text": "−6 ≤ xz ≤ −2", "misconceptionTag": "math.num.encadrement-bornes-mal-appariees" },
+        { "id": "c", "text": "−15 ≤ xz ≤ −5", "misconceptionTag": "math.num.encadrement-bornes-mal-appariees" },
         { "id": "d", "text": "−15 ≤ xz ≤ −2" }
       ],
       "correctOption": "d",
@@ -43,8 +43,8 @@
       "options": [
         { "id": "a", "text": "−3a + √2 = −3b + 2" },
         { "id": "b", "text": "−3a + √2 < −3b + 2" },
-        { "id": "c", "text": "−3a + √2 > −3b + 2" },
-        { "id": "d", "text": "الترتيب هو نفسه ترتيب العددين a و b" }
+        { "id": "c", "text": "−3a + √2 > −3b + 2", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
+        { "id": "d", "text": "الترتيب هو نفسه ترتيب العددين a و b", "misconceptionTag": "math.alg.inequation-sens-non-inverse" }
       ],
       "correctOption": "b",
       "explanation": "الثابتان مختلفان، فلا يكفي قلب الاتّجاه: لا بدّ من متباينة ثانية ثمّ جمع طرفًا بطرف. أوّلًا الضرب في −3 وهو سالب قطعًا يقلب الاتّجاه: من a ≥ b نستنتج −3a ≤ −3b . ثانيًا نقارن الثابتين: 2 = √4 ، ومن 2 < 4 نستنتج √2 < √4 أي √2 < 2 . والمتباينتان في الاتّجاه نفسه فنجمعهما طرفًا بطرف: −3a + √2 < −3b + 2 . والمتباينة قاطعة لأنّ √2 < 2 قاطعة، حتّى في حالة a = b .",
@@ -57,8 +57,8 @@
     {
       "prompt": "ليكن A = (−√5 − √3)/2 . أيّ حصر صحيح للعدد A ؟",
       "options": [
-        { "id": "a", "text": "−√3 < A < −√5" },
-        { "id": "b", "text": "√3 < A < √5" },
+        { "id": "a", "text": "−√3 < A < −√5", "misconceptionTag": "math.num.ordre-des-negatifs-inverse" },
+        { "id": "b", "text": "√3 < A < √5", "misconceptionTag": "math.num.ordre-des-negatifs-inverse" },
         { "id": "c", "text": "−√5 < A < −√3" },
         { "id": "d", "text": "−2√5 < A < −2√3" }
       ],
@@ -71,9 +71,9 @@
       "prompt": "ليكن x و y عددين حقيقيين. أيّ تكافؤ يبقى صحيحًا مهما تكن إشارتاهما؟",
       "options": [
         { "id": "a", "text": "|x| ≤ |y| يعني x² ≤ y²" },
-        { "id": "b", "text": "x ≤ y يعني x² ≤ y²" },
-        { "id": "c", "text": "x ≤ y يعني |x| ≤ |y|" },
-        { "id": "d", "text": "x² ≤ y² يعني x ≤ y" }
+        { "id": "b", "text": "x ≤ y يعني x² ≤ y²", "misconceptionTag": "math.num.carre-conserve-l-ordre" },
+        { "id": "c", "text": "x ≤ y يعني |x| ≤ |y|", "misconceptionTag": "math.num.carre-conserve-l-ordre" },
+        { "id": "d", "text": "x² ≤ y² يعني x ≤ y", "misconceptionTag": "math.num.carre-conserve-l-ordre" }
       ],
       "correctOption": "a",
       "explanation": "التكافؤ الصحيح دائمًا يمرّ بالقيمة المطلقة: |x| ≤ |y| يعني x² ≤ y² ، لأنّ التربيع لا يرى إلّا البعد عن الصفر. أمّا الصيغ التي تنطلق من x ≤ y مباشرة فتسقط عند اختلاف الإشارتين: مع x = −5 و y = 1 لدينا x < y بينما x² = 25 أكبر من y² = 1 ، و |x| = 5 أكبر من |y| = 1 . وبالعكس مع x = 1 و y = −5 نجد x² ≤ y² دون أن يكون x ≤ y .",
@@ -85,7 +85,7 @@
       "options": [
         { "id": "a", "text": "3 < P < 8" },
         { "id": "b", "text": "6 < P < 16" },
-        { "id": "c", "text": "6 < P < 8" },
+        { "id": "c", "text": "6 < P < 8", "misconceptionTag": "math.num.encadrement-bornes-mal-appariees" },
         { "id": "d", "text": "2 < P < 15" }
       ],
       "correctOption": "b",

@@ -40,9 +40,9 @@
       "prompt": "ما مجموعة حلول المعادلة: (3x − 9)(2x + 4) = 0 ؟",
       "options": [
         { "id": "a", "text": "{ 3 ; −2 }" },
-        { "id": "b", "text": "{ −3 ; 2 }" },
-        { "id": "c", "text": "{ 3 ; 2 }" },
-        { "id": "d", "text": "{ 9 ; −4 }" }
+        { "id": "b", "text": "{ −3 ; 2 }", "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose" },
+        { "id": "c", "text": "{ 3 ; 2 }", "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose" },
+        { "id": "d", "text": "{ 9 ; −4 }", "misconceptionTag": "math.alg.coefficient-non-divise" }
       ],
       "correctOption": "a",
       "explanation": "نطبّق مبدأ الجداء المعدوم: (3x − 9)(2x + 4) = 0. إمّا 3x − 9 = 0، أي 3x = 9، فـ x = 3. أو 2x + 4 = 0، أي 2x = −4، فـ x = −2. مجموعة الحلول: {3 ; −2}. تنبيه: الأخطاء الشائعة هي أخذ 9 و−4 مباشرةً دون الحلّ، أو نسيان إشارة −2.",
@@ -65,8 +65,8 @@
     {
       "prompt": "ما مجموعة حلول المتراجحة المزدوجة: −3 ≤ 2x − 5 < 7 ؟",
       "options": [
-        { "id": "a", "text": "x ∈ ]1 ; 6[" },
-        { "id": "b", "text": "x ∈ [1 ; 6]" },
+        { "id": "a", "text": "x ∈ ]1 ; 6[", "misconceptionTag": "math.num.intervalle-borne-mal-incluse" },
+        { "id": "b", "text": "x ∈ [1 ; 6]", "misconceptionTag": "math.num.intervalle-borne-mal-incluse" },
         { "id": "c", "text": "x ∈ [−1 ; 6[" },
         { "id": "d", "text": "x ∈ [1 ; 6[" }
       ],

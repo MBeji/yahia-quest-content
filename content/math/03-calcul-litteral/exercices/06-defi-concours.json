@@ -11,7 +11,7 @@
       "options": [
         { "id": "a", "text": "19" },
         { "id": "b", "text": "31" },
-        { "id": "c", "text": "25" },
+        { "id": "c", "text": "25", "misconceptionTag": "math.alg.carre-somme-sans-double-produit" },
         { "id": "d", "text": "28" }
       ],
       "correctOption": "b",
@@ -50,7 +50,7 @@
       "options": [
         { "id": "a", "text": "{−2 ; 0 ; 2}" },
         { "id": "b", "text": "{−2 ; 2}" },
-        { "id": "c", "text": "{0 ; 2}" },
+        { "id": "c", "text": "{0 ; 2}", "misconceptionTag": "math.num.racine-carree-negative-oubliee" },
         { "id": "d", "text": "{2}" }
       ],
       "correctOption": "a",
@@ -75,9 +75,9 @@
       "prompt": "عمّل تلميذ العبارة 4x² − 25 فكتب: «4x² − 25 = (2x − 5)²». هل من خطأ، وما الصواب؟",
       "options": [
         { "id": "a", "text": "نعم، الصواب (2x − 5)(2x + 5) — فرق مربّعين" },
-        { "id": "b", "text": "نعم، الصواب (2x + 5)²" },
+        { "id": "b", "text": "نعم، الصواب (2x + 5)²", "misconceptionTag": "math.alg.difference-carres-confondue" },
         { "id": "c", "text": "نعم، الصواب (4x − 5)(4x + 5)" },
-        { "id": "d", "text": "لا خطأ، التعميل صحيح" }
+        { "id": "d", "text": "لا خطأ، التعميل صحيح", "misconceptionTag": "math.alg.difference-carres-confondue" }
       ],
       "correctOption": "a",
       "explanation": "4x² − 25 = (2x)² − 5² وهي فرق مربّعين، تُعمَّل إلى (2x − 5)(2x + 5)، لا (2x − 5)². (تمرين «صيد الخطأ».) الخطأ الشائع: الخلط بين فرق المربّعين a² − b² = (a−b)(a+b) والمربّع الكامل (a−b)² = a² − 2ab + b²؛ للتحقّق: (2x − 5)² = 4x² − 20x + 25 ≠ 4x² − 25.",

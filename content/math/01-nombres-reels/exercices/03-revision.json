@@ -25,7 +25,7 @@
         { "id": "a", "text": "A عدد صحيح طبيعي يساوي 6" },
         { "id": "b", "text": "A عدد عشري كتابته العشرية متناهية" },
         { "id": "c", "text": "A عدد كسري كتابته العشرية دوريّة" },
-        { "id": "d", "text": "A عدد أصمّ لأنّ في كتابته رمز الجذر" }
+        { "id": "d", "text": "A عدد أصمّ لأنّ في كتابته رمز الجذر", "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel" }
       ],
       "correctOption": "c",
       "explanation": "أوّلًا √36 = 6 لأنّ 6² = 36، إذن A = 6 + 1/3 = 19/3. وقسمة 19 على 3 تعطي 6,333… أي 6,(3): كتابة دوريّة غير متناهية، فالعدد A كسري وليس عشريًّا. الأخطاء الشائعة: إهمال الجزء 1/3 والاكتفاء بالعدد 6، أو الظنّ أنّ وجود رمز الجذر يجعل A أصمّ مع أنّ 36 مربّع كامل.",
@@ -36,9 +36,9 @@
       "prompt": "أيّ من علاقات الاحتواء التالية صحيحة؟",
       "options": [
         { "id": "a", "text": "ℤ ⊂ ℚ" },
-        { "id": "b", "text": "𝔻 ⊂ ℤ" },
-        { "id": "c", "text": "ℚ ⊂ 𝔻" },
-        { "id": "d", "text": "ℝ ⊂ ℚ" }
+        { "id": "b", "text": "𝔻 ⊂ ℤ", "misconceptionTag": "math.num.inclusion-ensembles-inversee" },
+        { "id": "c", "text": "ℚ ⊂ 𝔻", "misconceptionTag": "math.num.inclusion-ensembles-inversee" },
+        { "id": "d", "text": "ℝ ⊂ ℚ", "misconceptionTag": "math.num.inclusion-ensembles-inversee" }
       ],
       "correctOption": "a",
       "explanation": "سلسلة الاحتواء هي ℕ ⊂ ℤ ⊂ 𝔻 ⊂ ℚ ⊂ ℝ. إذن العلاقة ℤ ⊂ ℚ صحيحة: كلّ عدد صحيح نسبي يُكتب على شكل كسر، مثلًا 5 = 5/1. أمّا العلاقات الثلاث الأخرى فمقلوبة الاتّجاه؛ الصحيح فيها هو ℤ ⊂ 𝔻 و𝔻 ⊂ ℚ وℚ ⊂ ℝ.",
@@ -61,10 +61,10 @@
     {
       "prompt": "كانت درجة الحرارة عند الفجر −3°C، ثمّ ارتفعت بمقدار 8 درجات. ما درجة الحرارة الجديدة؟",
       "options": [
-        { "id": "a", "text": "11°C" },
-        { "id": "b", "text": "−11°C" },
+        { "id": "a", "text": "11°C", "misconceptionTag": "math.int.signe-ignore-dans-somme" },
+        { "id": "b", "text": "−11°C", "misconceptionTag": "math.int.signe-ignore-dans-somme" },
         { "id": "c", "text": "5°C" },
-        { "id": "d", "text": "−5°C" }
+        { "id": "d", "text": "−5°C", "misconceptionTag": "math.int.subtract-smaller-from-larger" }
       ],
       "correctOption": "c",
       "explanation": "درجة الحرارة الجديدة = −3 + 8 = 5°C. الارتفاع بمقدار 8 يعني إضافة 8 إلى القيمة السالبة: −3 + 8 = 5.",
@@ -74,7 +74,7 @@
     {
       "prompt": "ما العددان الحقيقيان اللذان مربّعهما 16 ؟",
       "options": [
-        { "id": "a", "text": "4 فقط" },
+        { "id": "a", "text": "4 فقط", "misconceptionTag": "math.num.racine-carree-negative-oubliee" },
         { "id": "b", "text": "4 و−4" },
         { "id": "c", "text": "16 و−16" },
         { "id": "d", "text": "8 و−8" }

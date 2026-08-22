@@ -10,9 +10,9 @@
       "prompt": "أيّ الشروط التالية يكفي وحده لإثبات أنّ الرباعي ABCD متوازي أضلاع؟",
       "options": [
         { "id": "a", "text": "قطراه [AC] و[BD] لهما نفس المنتصف" },
-        { "id": "b", "text": "قطراه [AC] و[BD] متقايسان" },
-        { "id": "c", "text": "قطراه [AC] و[BD] متعامدان" },
-        { "id": "d", "text": "الضلعان [AB] و[DC] متوازيان فقط" }
+        { "id": "b", "text": "قطراه [AC] و[BD] متقايسان", "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees" },
+        { "id": "c", "text": "قطراه [AC] و[BD] متعامدان", "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees" },
+        { "id": "d", "text": "الضلعان [AB] و[DC] متوازيان فقط", "misconceptionTag": "math.geo.condition-suffisante-supposee" }
       ],
       "correctOption": "a",
       "explanation": "أن يكون للقطرين نفس المنتصف هو بالضبط أحد شروط متوازي الأضلاع. أمّا تقايس القطرين وحده أو تعامدهما وحده فلا يعطي حتّى متوازي أضلاع، وضلعان متوازيان فقط يعطيان شبه منحرف لا متوازي أضلاع.",
@@ -22,9 +22,9 @@
     {
       "prompt": "رباعي أضلاعه الأربعة متقايسة وقطراه متقايسان. ما أدقّ وصف له؟",
       "options": [
-        { "id": "a", "text": "متوازي أضلاع" },
-        { "id": "b", "text": "مستطيل" },
-        { "id": "c", "text": "معيّن" },
+        { "id": "a", "text": "متوازي أضلاع", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" },
+        { "id": "b", "text": "مستطيل", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" },
+        { "id": "c", "text": "معيّن", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" },
         { "id": "d", "text": "مربّع" }
       ],
       "correctOption": "d",
@@ -35,10 +35,10 @@
     {
       "prompt": "شبه منحرف قاعدتاه 7 و 11 وارتفاعه 4. ما مساحته؟\n<svg viewBox=\"0 0 340 215\"><path d=\"M100 90 L240 90 L280 170 L60 170 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M100 90 L240 90 L280 170 L60 170 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M100 90 L100 170\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><path d=\"M100 158 L112 158 L112 170\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g fill=\"#0f172a\"><circle cx=\"100\" cy=\"90\" r=\"4\"/><circle cx=\"240\" cy=\"90\" r=\"4\"/><circle cx=\"280\" cy=\"170\" r=\"4\"/><circle cx=\"60\" cy=\"170\" r=\"4\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"90\" y=\"80\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"250\" y=\"80\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"292\" y=\"188\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"48\" y=\"188\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"170\" y=\"80\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">7</text><text x=\"170\" y=\"192\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">11</text><text x=\"86\" y=\"136\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">4</text></g></svg>",
       "options": [
-        { "id": "a", "text": "28" },
+        { "id": "a", "text": "28", "misconceptionTag": "math.mes.aire-trapeze-sans-demi-somme" },
         { "id": "b", "text": "36" },
-        { "id": "c", "text": "44" },
-        { "id": "d", "text": "72" }
+        { "id": "c", "text": "44", "misconceptionTag": "math.mes.aire-trapeze-sans-demi-somme" },
+        { "id": "d", "text": "72", "misconceptionTag": "math.mes.aire-trapeze-sans-demi-somme" }
       ],
       "correctOption": "b",
       "explanation": "مساحة شبه المنحرف تساوي (مجموع القاعدتين) × الارتفاع/2، أي (7 + 11) × 4/2 = 18 × 2 = 36. (من ينسى القسمة على 2 يجد 72، ومن يضرب قاعدة واحدة في الارتفاع يجد 28 أو 44.)",
@@ -48,10 +48,10 @@
     {
       "prompt": "ABCD مستطيل، والنقاط I وJ وK وL منتصفات أضلاعه [AB] و[BC] و[CD] و[DA] بالتتالي. ما أدقّ وصف للرباعي IJKL؟\n<svg viewBox=\"0 0 340 220\"><path d=\"M60 60 L280 60 L280 180 L60 180 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M60 60 L280 60 L280 180 L60 180 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M60 78 L78 78 L78 60\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"60\" r=\"4\"/><circle cx=\"280\" cy=\"60\" r=\"4\"/><circle cx=\"280\" cy=\"180\" r=\"4\"/><circle cx=\"60\" cy=\"180\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"170\" cy=\"60\" r=\"4.5\"/><circle cx=\"280\" cy=\"120\" r=\"4.5\"/><circle cx=\"170\" cy=\"180\" r=\"4.5\"/><circle cx=\"60\" cy=\"120\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"48\" y=\"52\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"292\" y=\"52\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"292\" y=\"198\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"48\" y=\"198\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"170\" y=\"48\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"298\" y=\"126\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text><text x=\"170\" y=\"202\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text><text x=\"44\" y=\"126\" text-anchor=\"middle\" fill=\"#0f6e56\">L</text></g></svg>",
       "options": [
-        { "id": "a", "text": "متوازي أضلاع" },
-        { "id": "b", "text": "مستطيل" },
+        { "id": "a", "text": "متوازي أضلاع", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" },
+        { "id": "b", "text": "مستطيل", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" },
         { "id": "c", "text": "معيّن" },
-        { "id": "d", "text": "مربّع" }
+        { "id": "d", "text": "مربّع", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" }
       ],
       "correctOption": "c",
       "explanation": "أضلاع رباعي المنتصفات توازي قطري المستطيل وأطوالها أنصافهما. وبما أنّ قطري المستطيل متقايسان (AC = BD) فإنّ الأضلاع الأربعة لـ IJKL متقايسة: إنّه معيّن. ولا يكون مربّعا إلاّ إذا كان قطرا المستطيل متعامدين أيضا، أي إذا كان ABCD مربّعا.",
@@ -61,10 +61,10 @@
     {
       "prompt": "ABC مثلث قائم الزاوية في A حيث AB = 9 و AC = 12، والنقطة O منتصف [BC]. ما طول [OA]؟\n<svg viewBox=\"0 0 300 245\"><path d=\"M70 200 L70 65 L250 200 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M70 200 L70 65 L250 200 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M70 182 L88 182 L88 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M70 200 L160 132.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"200\" r=\"4\"/><circle cx=\"70\" cy=\"65\" r=\"4\"/><circle cx=\"250\" cy=\"200\" r=\"4\"/></g><circle cx=\"160\" cy=\"132.5\" r=\"4.5\" fill=\"#0f6e56\"/><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"58\" y=\"218\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"58\" y=\"58\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"264\" y=\"218\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"174\" y=\"126\" text-anchor=\"middle\" fill=\"#0f6e56\">O</text><text x=\"54\" y=\"136\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">9</text><text x=\"160\" y=\"222\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">12</text></g></svg>",
       "options": [
-        { "id": "a", "text": "4,5" },
+        { "id": "a", "text": "4,5", "misconceptionTag": "math.geo.mediane-hypotenuse-demi" },
         { "id": "b", "text": "6" },
         { "id": "c", "text": "7,5" },
-        { "id": "d", "text": "15" }
+        { "id": "d", "text": "15", "misconceptionTag": "math.geo.mediane-hypotenuse-demi" }
       ],
       "correctOption": "c",
       "explanation": "بمبرهنة فيثاغورس: BC² = 9² + 12² = 81 + 144 = 225، إذن BC = 15. وبما أنّ O منتصف الوتر [BC] في مثلث قائم الزاوية في A فإنّ OA = BC/2 = 15/2 = 7,5. (الخطأ الشائع هو تنصيف ضلع قائم بدل الوتر فيعطي 4,5 أو 6، أو الاكتفاء بطول الوتر 15.)",
@@ -74,7 +74,7 @@
     {
       "prompt": "معيّن ABCD مساحته 84 وطول أحد قطريه 14. ما طول القطر الآخر؟\n<svg viewBox=\"0 0 320 235\"><path d=\"M160 60 L230 120 L160 180 L90 120 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M160 60 L230 120 L160 180 L90 120 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M160 60 L160 180 M90 120 L230 120\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\"/><path d=\"M160 108 L172 108 L172 120\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M90 200 L230 200 M90 196 L90 204 M230 196 L230 204\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><g fill=\"#0f172a\"><circle cx=\"160\" cy=\"60\" r=\"4\"/><circle cx=\"230\" cy=\"120\" r=\"4\"/><circle cx=\"160\" cy=\"180\" r=\"4\"/><circle cx=\"90\" cy=\"120\" r=\"4\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"160\" y=\"48\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"246\" y=\"124\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"160\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"74\" y=\"124\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"160\" y=\"220\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">14</text></g></svg>",
       "options": [
-        { "id": "a", "text": "6" },
+        { "id": "a", "text": "6", "misconceptionTag": "math.mes.aire-losange-sans-moitie" },
         { "id": "b", "text": "12" },
         { "id": "c", "text": "28" },
         { "id": "d", "text": "42" }

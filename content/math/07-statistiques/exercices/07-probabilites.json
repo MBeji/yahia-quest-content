@@ -9,10 +9,10 @@
     {
       "prompt": "أيّ التجارب التالية تجربة عشوائية؟",
       "options": [
-        { "id": "a", "text": "قيس طول طاولة بالمتر وتدوين النتيجة" },
-        { "id": "b", "text": "حساب مجموع العددين 17 و24" },
+        { "id": "a", "text": "قيس طول طاولة بالمتر وتدوين النتيجة", "misconceptionTag": "math.prob.experience-deterministe-prise-pour-aleatoire" },
+        { "id": "b", "text": "حساب مجموع العددين 17 و24", "misconceptionTag": "math.prob.experience-deterministe-prise-pour-aleatoire" },
         { "id": "c", "text": "سحب كرة من كيس مغلق وتسجيل لونها" },
-        { "id": "d", "text": "ترتيب سلسلة أعداد تصاعديًّا" }
+        { "id": "d", "text": "ترتيب سلسلة أعداد تصاعديًّا", "misconceptionTag": "math.prob.experience-deterministe-prise-pour-aleatoire" }
       ],
       "correctOption": "c",
       "explanation": "التجربة العشوائية هي تجربة نعرف كلّ نتائجها الممكنة لكنّنا لا نستطيع التنبّؤ بالنتيجة التي ستقع. سحب كرة من كيس مغلق كذلك: نعرف الألوان الموجودة داخله، ولا نعرف مسبقًا لون الكرة التي سنسحبها. أمّا القيس وحساب المجموع وترتيب الأعداد فتعطي في كلّ مرّة النتيجة نفسها، فلا صدفة فيها.",
@@ -23,9 +23,9 @@
       "prompt": "كيس يحتوي على 7 كريات حمراء فقط. نسحب منه كرية واحدة بصفة عشوائية. أيّ العبارات التالية صحيحة؟",
       "options": [
         { "id": "a", "text": "«سحب كرية حمراء» حدث أكيد احتماله 1" },
-        { "id": "b", "text": "«سحب كرية حمراء» حدث ممكن غير أكيد" },
-        { "id": "c", "text": "«سحب كرية خضراء» حدث ممكن احتماله موجب" },
-        { "id": "d", "text": "«سحب كرية حمراء» حدث مستحيل احتماله 0" }
+        { "id": "b", "text": "«سحب كرية حمراء» حدث ممكن غير أكيد", "misconceptionTag": "math.prob.evenement-certain-et-impossible-confondus" },
+        { "id": "c", "text": "«سحب كرية خضراء» حدث ممكن احتماله موجب", "misconceptionTag": "math.prob.evenement-certain-et-impossible-confondus" },
+        { "id": "d", "text": "«سحب كرية حمراء» حدث مستحيل احتماله 0", "misconceptionTag": "math.prob.evenement-certain-et-impossible-confondus" }
       ],
       "correctOption": "a",
       "explanation": "كلّ كريات الكيس حمراء، فمهما كانت الكرية المسحوبة تكون حمراء: الحدث يقع في كلّ مرّة، إذن هو حدث أكيد واحتماله يساوي 1. وبالمقابل «سحب كرية خضراء» حدث مستحيل واحتماله 0، لأنّ الكيس لا يحتوي على أيّ كرية خضراء.",
@@ -35,8 +35,8 @@
     {
       "prompt": "في الصندوق A توجد 7 كريات حمراء و3 كريات صفراء، وفي الصندوق B توجد 9 كريات حمراء و11 كرية صفراء. نسحب كرية واحدة من صندوق واحد. في أيّ صندوق يكون احتمال سحب كرية حمراء أكبر؟",
       "options": [
-        { "id": "a", "text": "من الصندوق B" },
-        { "id": "b", "text": "الاحتمالان متساويان" },
+        { "id": "a", "text": "من الصندوق B", "misconceptionTag": "math.prob.chance-comparee-sur-effectif-brut" },
+        { "id": "b", "text": "الاحتمالان متساويان", "misconceptionTag": "math.prob.chance-comparee-sur-effectif-brut" },
         { "id": "c", "text": "لا يمكن المقارنة دون تجربة" },
         { "id": "d", "text": "من الصندوق A" }
       ],
@@ -51,7 +51,7 @@
     {
       "prompt": "صندوق به 4 أقراص مرقّمة 1 و2 و3 و4. نسحب قرصًا ونسجّل رقمه ثمّ نُرجعه إلى الصندوق، ثمّ نسحب قرصًا ثانيًا ونسجّل رقمه (سحب متتالٍ مع الإرجاع). ما هو عدد إمكانيات هذا السحب؟\n<svg viewBox=\"0 0 200 110\">\n<title>صندوق به أربعة أقراص مرقّمة من 1 إلى 4</title>\n<rect x=\"10\" y=\"18\" width=\"180\" height=\"74\" rx=\"12\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><circle cx=\"43\" cy=\"55\" r=\"16\" fill=\"#bae6fd\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"81\" cy=\"55\" r=\"16\" fill=\"#bae6fd\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"119\" cy=\"55\" r=\"16\" fill=\"#bae6fd\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"157\" cy=\"55\" r=\"16\" fill=\"#bae6fd\" stroke=\"#0f172a\" stroke-width=\"2\"/><g font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"43\" y=\"61\">1</text><text x=\"81\" y=\"61\">2</text><text x=\"119\" y=\"61\">3</text><text x=\"157\" y=\"61\">4</text></g>\n</svg>",
       "options": [
-        { "id": "a", "text": "12" },
+        { "id": "a", "text": "12", "misconceptionTag": "math.prob.tirage-avec-et-sans-remise-confondus" },
         { "id": "b", "text": "16" },
         { "id": "c", "text": "8" },
         { "id": "d", "text": "6" }
@@ -64,7 +64,7 @@
     {
       "prompt": "نُعيد التجربة بنفس الصندوق (4 أقراص مرقّمة من 1 إلى 4)، لكن هذه المرّة لا نُرجع القرص المسحوب أوّلًا قبل السحب الثاني (سحب متتالٍ بدون إرجاع). ما هو عدد إمكانيات هذا السحب؟",
       "options": [
-        { "id": "a", "text": "16" },
+        { "id": "a", "text": "16", "misconceptionTag": "math.prob.tirage-avec-et-sans-remise-confondus" },
         { "id": "b", "text": "8" },
         { "id": "c", "text": "12" },
         { "id": "d", "text": "6" }

@@ -22,9 +22,9 @@
     {
       "prompt": "بتطبيق مبدأ الجداء المعدوم، ما مجموعة حلول المعادلة: (2x − 6)(x + 4) = 0 ؟",
       "options": [
-        { "id": "a", "text": "{ 6 ; −4 }" },
-        { "id": "b", "text": "{ −3 ; 4 }" },
-        { "id": "c", "text": "{ −6 ; 4 }" },
+        { "id": "a", "text": "{ 6 ; −4 }", "misconceptionTag": "math.alg.coefficient-non-divise" },
+        { "id": "b", "text": "{ −3 ; 4 }", "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose" },
+        { "id": "c", "text": "{ −6 ; 4 }", "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose" },
         { "id": "d", "text": "{ 3 ; −4 }" }
       ],
       "correctOption": "d",
@@ -76,7 +76,7 @@
       "options": [
         { "id": "a", "text": "x < −2" },
         { "id": "b", "text": "x > 2" },
-        { "id": "c", "text": "x < 2" },
+        { "id": "c", "text": "x < 2", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
         { "id": "d", "text": "x > −2" }
       ],
       "correctOption": "b",

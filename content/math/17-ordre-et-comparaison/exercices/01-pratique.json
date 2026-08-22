@@ -9,7 +9,7 @@
     {
       "prompt": "لتكن a و b عددين حقيقيين حيث a − b = √3 − 2 . ما العلاقة بين a و b ؟",
       "options": [
-        { "id": "a", "text": "a > b لأنّ الفرق موجب" },
+        { "id": "a", "text": "a > b لأنّ الفرق موجب", "misconceptionTag": "math.num.comparaison-radical-et-entier" },
         { "id": "b", "text": "a < b لأنّ الفرق سالب" },
         { "id": "c", "text": "a = b لأنّ الفرق معدوم" },
         { "id": "d", "text": "a > b لأنّ الفرق سالب" }
@@ -22,9 +22,9 @@
     {
       "prompt": "نعلم أنّ π < 22/7 . أيّ مقارنة صحيحة؟",
       "options": [
-        { "id": "a", "text": "π + 4 > 22/7 + 4" },
-        { "id": "b", "text": "π − 4 > 22/7 − 4" },
-        { "id": "c", "text": "4π > 4 × 22/7" },
+        { "id": "a", "text": "π + 4 > 22/7 + 4", "misconceptionTag": "math.num.ordre-inverse-a-tort" },
+        { "id": "b", "text": "π − 4 > 22/7 − 4", "misconceptionTag": "math.num.ordre-inverse-a-tort" },
+        { "id": "c", "text": "4π > 4 × 22/7", "misconceptionTag": "math.num.ordre-inverse-a-tort" },
         { "id": "d", "text": "π + 4 < 22/7 + 4" }
       ],
       "correctOption": "d",
@@ -36,9 +36,9 @@
       "prompt": "رتّب تصاعديا الأعداد الحقيقية التالية: −3 ، −√3 ، −√10 .",
       "options": [
         { "id": "a", "text": "−√10 < −3 < −√3" },
-        { "id": "b", "text": "−√3 < −3 < −√10" },
-        { "id": "c", "text": "−3 < −√10 < −√3" },
-        { "id": "d", "text": "−√10 < −√3 < −3" }
+        { "id": "b", "text": "−√3 < −3 < −√10", "misconceptionTag": "math.num.ordre-des-negatifs-inverse" },
+        { "id": "c", "text": "−3 < −√10 < −√3", "misconceptionTag": "math.num.ordre-des-negatifs-inverse" },
+        { "id": "d", "text": "−√10 < −√3 < −3", "misconceptionTag": "math.num.ordre-des-negatifs-inverse" }
       ],
       "correctOption": "a",
       "explanation": "نقارن أوّلًا الأعداد الموجبة المقابلة بمربّعاتها، بلا آلة حاسبة: 3 = √9 ، ومن 3 < 9 نستنتج √3 < 3 ، ومن 9 < 10 نستنتج 3 < √10 . إذن √3 < 3 < √10 . ثمّ الضرب في −1 وهو سالب يقلب الترتيب كلّه، فيصبح الترتيب التصاعدي: −√10 ثمّ −3 ثمّ −√3 . وللتحقّق فقط: √3 ≈ 1,73 و √10 ≈ 3,16 . والخطأ الشائع هو ترتيب الأعداد السالبة كما لو كانت موجبة، فينقلب الترتيب كلّه.",
@@ -51,8 +51,8 @@
     {
       "prompt": "نعلم أنّ 2 < √7 . ما نتيجة ضرب طرفَي هذه المتباينة في العدد −3 ؟",
       "options": [
-        { "id": "a", "text": "−6 < −3√7" },
-        { "id": "b", "text": "3√7 < 6" },
+        { "id": "a", "text": "−6 < −3√7", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
+        { "id": "b", "text": "3√7 < 6", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
         { "id": "c", "text": "−6 > −3√7" },
         { "id": "d", "text": "−6 = −3√7" }
       ],
@@ -68,9 +68,9 @@
       "prompt": "قارن العددين −1/9 و −1/13 .",
       "options": [
         { "id": "a", "text": "−1/9 < −1/13" },
-        { "id": "b", "text": "−1/9 > −1/13" },
+        { "id": "b", "text": "−1/9 > −1/13", "misconceptionTag": "math.num.ordre-des-negatifs-inverse" },
         { "id": "c", "text": "−1/9 = −1/13" },
-        { "id": "d", "text": "المقابلان يحفظان ترتيب العددين 1/9 و 1/13" }
+        { "id": "d", "text": "المقابلان يحفظان ترتيب العددين 1/9 و 1/13", "misconceptionTag": "math.num.ordre-des-negatifs-inverse" }
       ],
       "correctOption": "a",
       "explanation": "طريقان يؤدّيان إلى النتيجة نفسها. الأوّل: العددان −9 و −13 سالبان فلهما نفس العلامة، ومن −13 ≤ −9 يقلب المقلوب الترتيب فنجد 1/(−13) ≥ 1/(−9) ، أي −1/13 > −1/9 . الثاني في خطوتين: من 9 < 13 والعددان موجبان يقلب المقلوب الترتيب فنجد 1/9 > 1/13 ، ثمّ الضرب في −1 وهو سالب يقلبه مرّة ثانية فنجد −1/9 < −1/13 . والفخّ هو نقل ترتيب 1/9 و 1/13 كما هو إلى مقابليهما، وهو ما يجعل السالب الأبعد عن الصفر يبدو الأكبر.",
@@ -83,9 +83,9 @@
     {
       "prompt": "رتّب تنازليا الأعداد الموجبة التالية: 4√3 ، 3√5 ، 7 .",
       "options": [
-        { "id": "a", "text": "4√3 > 3√5 > 7" },
-        { "id": "b", "text": "3√5 > 4√3 > 7" },
-        { "id": "c", "text": "7 > 3√5 > 4√3" },
+        { "id": "a", "text": "4√3 > 3√5 > 7", "misconceptionTag": "math.num.comparaison-radical-et-entier" },
+        { "id": "b", "text": "3√5 > 4√3 > 7", "misconceptionTag": "math.num.comparaison-radical-et-entier" },
+        { "id": "c", "text": "7 > 3√5 > 4√3", "misconceptionTag": "math.num.comparaison-radical-et-entier" },
         { "id": "d", "text": "7 > 4√3 > 3√5" }
       ],
       "correctOption": "d",

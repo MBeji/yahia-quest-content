@@ -22,7 +22,7 @@
     {
       "prompt": "ما مجموعة حلول المعادلة (x − 4)² = 9؟",
       "options": [
-        { "id": "a", "text": "{7}" },
+        { "id": "a", "text": "{7}", "misconceptionTag": "math.num.racine-carree-negative-oubliee" },
         { "id": "b", "text": "{13}" },
         { "id": "c", "text": "{1 ; 7}" },
         { "id": "d", "text": "{−1 ; 7}" }
@@ -35,7 +35,7 @@
     {
       "prompt": "ما مجموعة حلول المتراجحة −3(x − 1) > 2x + 8؟",
       "options": [
-        { "id": "a", "text": "x > −1" },
+        { "id": "a", "text": "x > −1", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
         { "id": "b", "text": "x < −1" },
         { "id": "c", "text": "x < 1" },
         { "id": "d", "text": "x > 1" }
@@ -77,7 +77,7 @@
         { "id": "a", "text": "نعم، القسمة على سالب تعكس الاتّجاه، الصواب x < −3" },
         { "id": "b", "text": "نعم، الصواب x > 3" },
         { "id": "c", "text": "نعم، الصواب x < 3" },
-        { "id": "d", "text": "لا خطأ، الحلّ صحيح" }
+        { "id": "d", "text": "لا خطأ، الحلّ صحيح", "misconceptionTag": "math.alg.inequation-sens-non-inverse" }
       ],
       "correctOption": "a",
       "explanation": "من −2x > 6 نقسم الطرفين على −2، وبما أنّه عدد سالب يُعكَس اتّجاه المتراجحة: x < −3. (تمرين «صيد الخطأ».) التلميذ نسي عكس الاتّجاه. تحقّق بـ x = −4: −2(−4) = 8 > 6 صحيح، بينما x = 0 يعطي 0 > 6 خطأ، فالحلول فعلًا x < −3.",

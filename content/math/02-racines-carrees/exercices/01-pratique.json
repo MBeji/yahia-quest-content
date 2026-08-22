@@ -11,7 +11,7 @@
       "options": [
         { "id": "a", "text": "8" },
         { "id": "b", "text": "6" },
-        { "id": "c", "text": "32" },
+        { "id": "c", "text": "32", "misconceptionTag": "math.num.racine-confondue-avec-moitie" },
         { "id": "d", "text": "16" }
       ],
       "correctOption": "a",
@@ -22,9 +22,9 @@
     {
       "prompt": "ما قيمة √((−6)²) ؟",
       "options": [
-        { "id": "a", "text": "−6" },
+        { "id": "a", "text": "−6", "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue" },
         { "id": "b", "text": "6" },
-        { "id": "c", "text": "36" },
+        { "id": "c", "text": "36", "misconceptionTag": "math.num.racine-et-carre-confondus" },
         { "id": "d", "text": "غير معرّف" }
       ],
       "correctOption": "b",
@@ -36,7 +36,7 @@
       "prompt": "ما هو الشكل المبسّط للعدد √50 ؟",
       "options": [
         { "id": "a", "text": "5√2" },
-        { "id": "b", "text": "2√5" },
+        { "id": "b", "text": "2√5", "misconceptionTag": "math.num.racine-extraction-facteur-inversee" },
         { "id": "c", "text": "25√2" },
         { "id": "d", "text": "10√5" }
       ],
@@ -49,8 +49,8 @@
       "prompt": "ما ناتج √3 × √12 ؟",
       "options": [
         { "id": "a", "text": "6" },
-        { "id": "b", "text": "√15" },
-        { "id": "c", "text": "36" },
+        { "id": "b", "text": "√15", "misconceptionTag": "math.num.racine-produit-transforme-en-somme" },
+        { "id": "c", "text": "36", "misconceptionTag": "math.num.racine-et-carre-confondus" },
         { "id": "d", "text": "6√3" }
       ],
       "correctOption": "a",
@@ -61,10 +61,10 @@
     {
       "prompt": "أيّ من العبارات التالية صحيحة؟",
       "options": [
-        { "id": "a", "text": "√(36 + 64) = 6 + 8" },
+        { "id": "a", "text": "√(36 + 64) = 6 + 8", "misconceptionTag": "math.num.racine-distribuee-sur-somme" },
         { "id": "b", "text": "√(36 × 64) = 6 × 8" },
-        { "id": "c", "text": "√(−4) = 2" },
-        { "id": "d", "text": "√(a²) = a دائمًا" }
+        { "id": "c", "text": "√(−4) = 2", "misconceptionTag": "math.num.racine-negatif-existe" },
+        { "id": "d", "text": "√(a²) = a دائمًا", "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue" }
       ],
       "correctOption": "b",
       "explanation": "خاصيّة جذر الجداء: √(36 × 64) = √36 × √64 = 6 × 8 = 48 ✓. أمّا الجمع فلا خاصيّة له (√(36 + 64) = √100 = 10 بينما 6 + 8 = 14)، ولا وجود لجذر عدد سالب في ℝ، و√(a²) = |a| وليس a دائمًا.",
