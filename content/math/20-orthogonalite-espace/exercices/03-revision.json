@@ -10,9 +10,9 @@
       "prompt": "في الهرم SABC ، ما وضعية المستقيمين (SA) و(BC) ؟\n<svg viewBox=\"0 0 250 210\"><path d=\"M125 55 L55 180 L195 180 Z\" fill=\"#0f6e56\" opacity=\"0.08\"/><path d=\"M125 55 L195 180 M55 180 L195 180\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M55 180 L125 140 M125 55 L125 140\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M125 55 L55 180\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\"/><path d=\"M195 180 L125 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-dasharray=\"6 4\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"125\" y=\"46\" text-anchor=\"middle\">S</text><text x=\"44\" y=\"195\" text-anchor=\"middle\">A</text><text x=\"206\" y=\"195\" text-anchor=\"middle\">B</text><text x=\"135\" y=\"133\" text-anchor=\"middle\">C</text></g></svg>",
       "options": [
         { "id": "a", "text": "ليسا في نفس المستوي" },
-        { "id": "b", "text": "متوازيان" },
-        { "id": "c", "text": "متقاطعان في منتصف [BC]" },
-        { "id": "d", "text": "محتويان في المستوي (SBC)" }
+        { "id": "b", "text": "متوازيان", "misconceptionTag": "math.esp.droites-non-coplanaires-crues-secantes" },
+        { "id": "c", "text": "متقاطعان في منتصف [BC]", "misconceptionTag": "math.esp.droites-non-coplanaires-crues-secantes" },
+        { "id": "d", "text": "محتويان في المستوي (SBC)", "misconceptionTag": "math.esp.droites-non-coplanaires-crues-secantes" }
       ],
       "correctOption": "a",
       "explanation": "المستقيمان (SA) و(BC) لا يلتقيان في أيّ نقطة: النقطة الوحيدة المشتركة الممكنة كانت ستكون على القاعدة، و(SA) لا يقطع مستوي القاعدة إلّا في A التي لا تنتمي إلى (BC) . وهما ليسا متوازيين لأنّ (BC) في مستوي القاعدة بينما (SA) يخرج منه. إذن هما ليسا في نفس المستوي، وهي الحالة الثالثة الخاصّة بالفضاء.",
@@ -22,10 +22,10 @@
     {
       "prompt": "في متوازي المستطيلات ABCDEFGH ، كم مستقيمًا يمرّ من الرأس A ويكون عموديًا على مستوي القاعدة (ABC) ؟\n<svg viewBox=\"0 0 215 210\"><path d=\"M45 180 L140 180 L185 148 M45 180 L45 70 M140 180 L140 70 M185 148 L185 38 M45 70 L140 70 L185 38 L90 38 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M45 180 L90 148 L185 148 M90 148 L90 38\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"34\" y=\"196\" text-anchor=\"middle\">A</text><text x=\"149\" y=\"196\" text-anchor=\"middle\">B</text><text x=\"197\" y=\"145\" text-anchor=\"middle\">C</text><text x=\"79\" y=\"161\" text-anchor=\"middle\">D</text><text x=\"34\" y=\"66\" text-anchor=\"middle\">E</text><text x=\"150\" y=\"66\" text-anchor=\"middle\">F</text><text x=\"197\" y=\"35\" text-anchor=\"middle\">G</text><text x=\"79\" y=\"33\" text-anchor=\"middle\">H</text></g></svg>",
       "options": [
-        { "id": "a", "text": "لا يوجد أيّ مستقيم يحقّق هذه الخاصيّة" },
+        { "id": "a", "text": "لا يوجد أيّ مستقيم يحقّق هذه الخاصيّة", "misconceptionTag": "math.esp.perpendiculaire-au-plan-unicite" },
         { "id": "b", "text": "مستقيم واحد فقط، هو المستقيم (AE)" },
-        { "id": "c", "text": "مستقيمان اثنان، هما (AB) و(AD)" },
-        { "id": "d", "text": "عدد لا نهائي من المستقيمات" }
+        { "id": "c", "text": "مستقيمان اثنان، هما (AB) و(AD)", "misconceptionTag": "math.esp.perpendiculaire-au-plan-unicite" },
+        { "id": "d", "text": "عدد لا نهائي من المستقيمات", "misconceptionTag": "math.esp.perpendiculaire-au-plan-unicite" }
       ],
       "correctOption": "b",
       "explanation": "من نقطة معلومة من الفضاء يمرّ مستقيم واحد فقط عمودي على مستوٍ معلوم، وهنا هذا المستقيم موجود فعلًا: إنّه الحرف (AE) لأنّه عمودي على (AB) وعلى (AD) المتقاطعين في A . أمّا (AB) و(AD) فهما محتويان في القاعدة نفسها فلا يكونان عموديين عليها.",
@@ -37,7 +37,8 @@
       "options": [
         {
           "id": "a",
-          "text": "إذا كانت أوجهه الجانبية مثلثات متقايسة الأضلاع دائمًا"
+          "text": "إذا كانت أوجهه الجانبية مثلثات متقايسة الأضلاع دائمًا",
+          "misconceptionTag": "math.esp.pyramide-reguliere-faces-equilaterales"
         },
         {
           "id": "b",
@@ -45,7 +46,8 @@
         },
         {
           "id": "c",
-          "text": "إذا كانت كلّ أحرفه الجانبية عمودية على مستوي القاعدة تمامًا"
+          "text": "إذا كانت كلّ أحرفه الجانبية عمودية على مستوي القاعدة تمامًا",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-unicite"
         },
         {
           "id": "d",
@@ -73,10 +75,10 @@
     {
       "prompt": "في متوازي المستطيلات ABCDEFGH ، على أيّ من المستويات التالية يكون المستقيم (AB) عموديًا ؟\n<svg viewBox=\"0 0 215 210\"><path d=\"M45 180 L140 180 L185 148 M45 180 L45 70 M140 180 L140 70 M185 148 L185 38 M45 70 L140 70 L185 38 L90 38 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M45 180 L90 148 L185 148 M90 148 L90 38\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"34\" y=\"196\" text-anchor=\"middle\">A</text><text x=\"149\" y=\"196\" text-anchor=\"middle\">B</text><text x=\"197\" y=\"145\" text-anchor=\"middle\">C</text><text x=\"79\" y=\"161\" text-anchor=\"middle\">D</text><text x=\"34\" y=\"66\" text-anchor=\"middle\">E</text><text x=\"150\" y=\"66\" text-anchor=\"middle\">F</text><text x=\"197\" y=\"35\" text-anchor=\"middle\">G</text><text x=\"79\" y=\"33\" text-anchor=\"middle\">H</text></g></svg>",
       "options": [
-        { "id": "a", "text": "المستوي (ABC)" },
-        { "id": "b", "text": "المستوي (ABF)" },
+        { "id": "a", "text": "المستوي (ABC)", "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes" },
+        { "id": "b", "text": "المستوي (ABF)", "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes" },
         { "id": "c", "text": "المستوي (ADH)" },
-        { "id": "d", "text": "المستوي (ACG)" }
+        { "id": "d", "text": "المستوي (ACG)", "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes" }
       ],
       "correctOption": "c",
       "explanation": "المستقيم (AB) عمودي على (AD) وعلى (AE) ، وهما مستقيمان متقاطعان في A ومحتويان في المستوي (ADH) ، إذن (AB) عمودي على المستوي (ADH) . أمّا المستويان (ABC) و(ABF) فيحتويان المستقيم (AB) نفسه فلا يمكن أن يكون عموديًا عليهما، والمستوي (ACG) يحتوي القطر [AC] الذي لا يعامد (AB) .",
@@ -87,9 +89,9 @@
       "prompt": "SABC هرم بحيث SA = 12 و SB = 16 و AB = 20 (بالصنتمتر). ما طبيعة المثلث SAB ؟",
       "options": [
         { "id": "a", "text": "قائم الزاوية في S" },
-        { "id": "b", "text": "قائم الزاوية في A" },
-        { "id": "c", "text": "قائم الزاوية في B" },
-        { "id": "d", "text": "ليس قائم الزاوية في أيّ رأس" }
+        { "id": "b", "text": "قائم الزاوية في A", "misconceptionTag": "math.geo.hypotenuse-mal-choisie" },
+        { "id": "c", "text": "قائم الزاوية في B", "misconceptionTag": "math.geo.hypotenuse-mal-choisie" },
+        { "id": "d", "text": "ليس قائم الزاوية في أيّ رأس", "misconceptionTag": "math.geo.pythagore-sans-carres" }
       ],
       "correctOption": "a",
       "explanation": "أطول ضلع هو [AB] . نحسب SA² + SB² = 144 + 256 = 400 و AB² = 400 ، فهما متساويان، وحسب عكس نظرية بيتاغور يكون المثلث SAB قائم الزاوية في S وهو الرأس المقابل لأطول ضلع. الزاوية القائمة لا تكون أبدًا مقابلة لضلع أقصر من الوتر.",

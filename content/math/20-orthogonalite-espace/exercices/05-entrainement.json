@@ -9,9 +9,9 @@
     {
       "prompt": "ABCDEF موشور قائم قاعدتاه ABC و DEF وأحرفه الجانبية [AD] و[BE] و[CF] . أيّ من المستقيمات التالية عمودي على المستوي (DEF) ؟\n<svg viewBox=\"0 0 250 220\"><path d=\"M60 90 L190 90 L115 48 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M60 90 L190 90 L115 48 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M60 185 L190 185 M60 185 L60 90 M190 185 L190 90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M60 185 L115 143 L190 185 M115 143 L115 48\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"201\" y=\"200\" text-anchor=\"middle\">A</text><text x=\"48\" y=\"200\" text-anchor=\"middle\">B</text><text x=\"105\" y=\"159\" text-anchor=\"middle\">C</text><text x=\"203\" y=\"86\" text-anchor=\"middle\">D</text><text x=\"48\" y=\"86\" text-anchor=\"middle\">E</text><text x=\"115\" y=\"40\" text-anchor=\"middle\">F</text></g></svg>",
       "options": [
-        { "id": "a", "text": "المستقيم (AB)" },
-        { "id": "b", "text": "المستقيم (AC)" },
-        { "id": "c", "text": "المستقيم (DE)" },
+        { "id": "a", "text": "المستقيم (AB)", "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes" },
+        { "id": "b", "text": "المستقيم (AC)", "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes" },
+        { "id": "c", "text": "المستقيم (DE)", "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes" },
         { "id": "d", "text": "المستقيم (CF)" }
       ],
       "correctOption": "d",
@@ -23,9 +23,9 @@
       "prompt": "في متوازي المستطيلات ABCDEFGH ، لماذا يكون المستقيم (AE) موازيًا للمستقيم (CG) ؟\n<svg viewBox=\"0 0 215 210\"><path d=\"M45 180 L140 180 L185 148 M45 180 L45 70 M140 180 L140 70 M185 148 L185 38 M45 70 L140 70 L185 38 L90 38 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M45 180 L90 148 L185 148 M90 148 L90 38\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"34\" y=\"196\" text-anchor=\"middle\">A</text><text x=\"149\" y=\"196\" text-anchor=\"middle\">B</text><text x=\"197\" y=\"145\" text-anchor=\"middle\">C</text><text x=\"79\" y=\"161\" text-anchor=\"middle\">D</text><text x=\"34\" y=\"66\" text-anchor=\"middle\">E</text><text x=\"150\" y=\"66\" text-anchor=\"middle\">F</text><text x=\"197\" y=\"35\" text-anchor=\"middle\">G</text><text x=\"79\" y=\"33\" text-anchor=\"middle\">H</text></g></svg>",
       "options": [
         { "id": "a", "text": "لأنّهما عموديان على نفس المستوي (ABC)" },
-        { "id": "b", "text": "لأنّهما محتويان في نفس الوجه من المجسّم" },
-        { "id": "c", "text": "لأنّهما يقطعان المستوي (ABC) في نقطتين" },
-        { "id": "d", "text": "لأنّ المستويين (ABC) و(EFG) متوازيان" }
+        { "id": "b", "text": "لأنّهما محتويان في نفس الوجه من المجسّم", "misconceptionTag": "math.esp.deux-perpendiculaires-au-meme-plan" },
+        { "id": "c", "text": "لأنّهما يقطعان المستوي (ABC) في نقطتين", "misconceptionTag": "math.esp.deux-perpendiculaires-au-meme-plan" },
+        { "id": "d", "text": "لأنّ المستويين (ABC) و(EFG) متوازيان", "misconceptionTag": "math.esp.deux-perpendiculaires-au-meme-plan" }
       ],
       "correctOption": "a",
       "explanation": "كلّ من (AE) و(CG) حرف رأسي، فهو عمودي على ضلعين متقاطعين من القاعدة، ومنه عمودي على المستوي (ABC) . ومستقيمان عموديان على نفس المستوي هما متوازيان. والمستقيمان ليسا في نفس الوجه (فـ [AE] و[CG] حرفان متقابلان)، ومجرّد قطع مستوٍ في نقطتين لا يعطي توازيًا، وتوازي القاعدتين لا يستنتج منه توازي مستقيمين.",
@@ -38,7 +38,7 @@
         { "id": "a", "text": "6" },
         { "id": "b", "text": "9" },
         { "id": "c", "text": "12" },
-        { "id": "d", "text": "144" }
+        { "id": "d", "text": "144", "misconceptionTag": "math.geo.pythagore-racine-oubliee" }
       ],
       "correctOption": "c",
       "explanation": "الأقطار الأربعة متقايسة وقيس كلّ منها √(AB² + AE² + AD²) ، و[DF] واحد منها. نعوّض ونحلّ: 169 = AB² + 16 + 9 ومنه AB² = 144 و AB = 12 cm . والقيمة 144 هي المربّع ولم يُستخرج جذره، والقيمة 9 ناتج طرح الأطوال 13 − 4 بدل طرح المربّعات، والقيمة 6 ناتج الفخّ الأشهر: 13 − 3 − 4 ، أي معاملة القطر كمجموع الأبعاد بدل جمع مربّعاتها.",
@@ -64,7 +64,7 @@
         { "id": "a", "text": "6" },
         { "id": "b", "text": "6√2" },
         { "id": "c", "text": "6√5" },
-        { "id": "d", "text": "36" }
+        { "id": "d", "text": "36", "misconceptionTag": "math.geo.pythagore-racine-oubliee" }
       ],
       "correctOption": "a",
       "explanation": "شعاع الدائرة المحيطة بالمربّع هو نصف قطره: OA = (12√2)/2 = 6√2 ومنه OA² = 72 . والمثلث SOA قائم في O ، فحسب بيتاغور SO² = SA² − OA² = 108 − 72 = 36 ومنه SO = 6 cm . والقيمة 36 هي المربّع ولم يُستخرج جذره، والقيمة 6√5 ناتج جمع 72 بدل طرحها، والقيمة 6√2 ناتج طرح مربّع نصف الضلع 36 بدل مربّع الشعاع 72 .",
@@ -77,7 +77,7 @@
         { "id": "a", "text": "30" },
         { "id": "b", "text": "60" },
         { "id": "c", "text": "65" },
-        { "id": "d", "text": "120" }
+        { "id": "d", "text": "120", "misconceptionTag": "math.mes.aire-triangle-sans-moitie" }
       ],
       "correctOption": "b",
       "explanation": "في الهرم المنتظم الأوجه الجانبية مثلثات متقايسة الضلعين، إذن SA = SB = 13 . نسمّي I منتصف [AB] فيكون [SI] ارتفاع المثلث SAB ، والمثلث SIA قائم في I : SI² = 169 − 25 = 144 ومنه SI = 12 . والمساحة تساوي (1/2) × AB × SI = (1/2) × 10 × 12 = 60 cm² . والقيمة 120 ناتج نسيان النصف، والقيمة 65 ناتج استعمال الحرف 13 بدل الارتفاع 12 ، والقيمة 30 ناتج استعمال نصف القاعدة 5 مع القسمة على 2 مرّة ثانية.",
