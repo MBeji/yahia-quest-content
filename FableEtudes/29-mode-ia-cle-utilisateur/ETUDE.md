@@ -1047,14 +1047,38 @@ sinon on paie une mesure que personne ne lit.
 ### Ce qui a été validé, et comment
 
 Les cinq migrations et les cinq fichiers pgTAP ont été **rejoués sur un PostgreSQL 16 réel**
-(harnais local : rôles Supabase, schéma `auth`, catalogue minimal), faute de Docker et du CLI
-Supabase dans l'environnement d'exécution : **112 assertions vertes**. La passe a trouvé trois
-défauts des tests eux-mêmes — un `throws_ok` à trois arguments prenait la description pour le
-message attendu, et une sonde `information_schema` sous rôle `authenticated` était vraie pour la
-mauvaise raison. Ils sont corrigés. Côté moteur : `verify`, `ci:verify`, `build:check`,
-`smoke:shell`, `audit:deps` et `harness:check` sont verts, et le budget de bundle a rattrapé une
-régression réelle de 58 Ko (un `validateSearch: z.object(…)` faisait entrer zod dans le chunk
-d'index).
+(harnais local monté à la main : rôles Supabase, schéma `auth`, catalogue), faute de Docker et du
+CLI Supabase dans l'environnement d'exécution : **112 assertions vertes**, puis **confirmées par
+`pgTAP suite` en CI**, sur la vraie pile Supabase.
+
+Cette double passe a trouvé **cinq** défauts des tests eux-mêmes, et la distinction entre les deux
+groupes vaut d'être notée — c'est une leçon sur les harnais, pas sur cette étude.
+
+**Trois vus par le harnais local**, parce qu'ils ne dépendaient que de pgTAP : un `throws_ok` à
+trois arguments prenait la description pour le message attendu (deux fois), et une sonde
+`information_schema` sous rôle `authenticated` était vraie pour la mauvaise raison — sous ce rôle,
+la table n'a aucune colonne visible.
+
+**Deux vus SEULEMENT par la CI**, parce qu'ils dépendaient du schéma réel :
+1. les fixtures du fichier 64 omettaient des colonnes `NOT NULL` du catalogue (`name_fr`,
+   `attribute`, `color_token`, `icon`) — le fichier avortait **avant sa première assertion** ;
+2. l'assertion « jouer un quiz forgé ne rapporte RIEN » (R-16, la plus importante du fichier)
+   interrogeait une colonne `coins` qui n'existe pas : elle s'appelle `yahia_coins`. Une erreur de
+   colonne avorte la transaction au lieu de vérifier quoi que ce soit — **l'assertion était
+   muette**, ce qui est le pire état possible pour une garde d'invariant.
+
+C'est exactement l'angle mort que le moteur venait de documenter le même jour sur `db:check-chain`
+(arena#810) : « un Postgres nu n'a pas les gardes que Supabase installe ». Un harnais approximatif
+prouve ce qu'il sait modéliser, et se tait sur le reste. Le harnais a été durci en conséquence
+(DDL réel de `themes`/`subjects`/`chapters`/`exercises`/`questions`/`profiles`, copié des
+migrations), mais la conclusion tient au-delà de cette session : **`pgTAP suite` fait foi, pas un
+Postgres monté à côté.**
+
+Côté moteur : `verify`, `ci:verify`, `build:check`, `smoke:shell`, `audit:deps` et `harness:check`
+sont verts, et le budget de bundle a rattrapé une régression réelle de 58 Ko (un
+`validateSearch: z.object(…)` faisait entrer zod dans le chunk d'index). Le `Migration order` a
+lui aussi parlé : arena#810 a merge pendant la session et a rendu trois de mes horodatages
+antérieurs au dernier appliqué — les cinq ont été re-horodatés.
 
 ---
 
