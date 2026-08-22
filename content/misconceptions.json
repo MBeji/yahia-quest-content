@@ -35,6 +35,24 @@
     },
     "competency": "math.num.relatifs-operations"
   },
+  "math.int.signe-ignore-dans-somme": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu ignores le signe d'un nombre relatif dans une somme : ajouter 8 à −3 ne revient pas à l'ajouter à 3",
+      "en": "You ignore the sign of a signed number in a sum: adding 8 to −3 is not adding it to 3",
+      "ar": "تهمل إشارة العدد النسبي في الجمع: إضافة 8 إلى −3 ليست إضافتها إلى 3"
+    },
+    "competency": "math.num.relatifs-operations"
+  },
+  "math.int.produit-signes-negatifs": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu te trompes sur le signe d'un produit : le produit de deux nombres négatifs est positif",
+      "en": "You get the sign of a product wrong: the product of two negative numbers is positive",
+      "ar": "تخطئ في إشارة الجداء: جداء عددين سالبين موجب"
+    },
+    "competency": "math.num.relatifs-operations"
+  },
   "math.percent.of-confused-with-off": {
     "subject": "math",
     "labels": {
@@ -53,6 +71,15 @@
     },
     "competency": "math.num.ensembles-nombres"
   },
+  "math.num.appartenance-ensemble-confondue": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu te trompes sur ce que contient un ensemble : ℤ contient les entiers négatifs, 𝔻 les nombres à écriture décimale finie, ℚ les quotients d'entiers",
+      "en": "You mistake what a set contains: ℤ holds negative integers, 𝔻 numbers with a terminating decimal form, ℚ quotients of integers",
+      "ar": "تخطئ في ما تحتويه المجموعة: ℤ تضمّ الأعداد الصحيحة السالبة، و𝔻 الأعداد ذات الكتابة العشرية المتناهية، وℚ خارج قسمة عددين صحيحين"
+    },
+    "competency": "math.num.ensembles-nombres"
+  },
   "math.num.irrationnel-traite-comme-rationnel": {
     "subject": "math",
     "labels": {
@@ -62,12 +89,30 @@
     },
     "competency": "math.num.ensembles-nombres"
   },
+  "math.num.rationnel-traite-comme-irrationnel": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends un nombre rationnel pour un irrationnel : un radical qui se simplifie, ou une écriture décimale périodique, restent rationnels",
+      "en": "You take a rational number for an irrational one: a root that simplifies, or a repeating decimal, is still rational",
+      "ar": "تحسب عددًا ناطقًا أصمّ: الجذر الذي يُبسَّط، والكتابة العشرية الدوريّة، يبقيان ناطقين"
+    },
+    "competency": "math.num.ensembles-nombres"
+  },
   "math.num.intervalle-borne-mal-incluse": {
     "subject": "math",
     "labels": {
       "fr": "Tu te trompes sur les bornes de l'intervalle : le crochet ouvert exclut la borne, le crochet fermé l'inclut",
       "en": "You get the interval's endpoints wrong: an open bracket excludes the endpoint, a closed one includes it",
       "ar": "تخطئ في حدود المجال: القوس المفتوح يُقصي الحدّ والقوس المغلق يشمله"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.num.approximation-defaut-exces-confondues": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds l'approximation par défaut et par excès : par défaut on reste en dessous du nombre, par excès on passe au-dessus",
+      "en": "You confuse rounding down with rounding up: down stays below the number, up goes above it",
+      "ar": "تخلط بين القيمة التقريبية بالنقصان وبالزيادة: بالنقصان تبقى تحت العدد، وبالزيادة تتجاوزه"
     },
     "competency": "math.num.ordre-encadrement"
   },
@@ -89,6 +134,15 @@
     },
     "competency": "math.num.valeur-absolue"
   },
+  "math.num.oppose-inverse-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds l'opposé et l'inverse : l'opposé change le signe, l'inverse retourne la fraction",
+      "en": "You confuse the opposite with the reciprocal: the opposite flips the sign, the reciprocal flips the fraction",
+      "ar": "تخلط بين المقابل والمقلوب: المقابل يغيّر الإشارة، والمقلوب يقلب الكسر"
+    },
+    "competency": "math.num.relatifs-operations"
+  },
   "math.num.racine-carre-sans-valeur-absolue": {
     "subject": "math",
     "labels": {
@@ -104,6 +158,15 @@
       "fr": "Tu prends la racine carrée d'un nombre négatif : elle n'existe pas dans l'ensemble des réels",
       "en": "You take the square root of a negative number: it does not exist among the real numbers",
       "ar": "تأخذ الجذر التربيعي لعدد سالب: وهو غير موجود في مجموعة الأعداد الحقيقية"
+    },
+    "competency": "math.num.racines-definition"
+  },
+  "math.num.racine-carree-negative-oubliee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu ne gardes qu'une solution à x² = a : un carré positif a deux racines opposées",
+      "en": "You keep only one solution to x² = a: a positive square has two opposite roots",
+      "ar": "تحتفظ بحلّ واحد للمعادلة x² = a: للمربّع الموجب جذران متقابلان"
     },
     "competency": "math.num.racines-definition"
   },
