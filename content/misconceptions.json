@@ -161,6 +161,24 @@
     },
     "competency": "math.num.racines-definition"
   },
+  "math.num.racine-confondue-avec-moitie": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends la moitié du nombre au lieu de sa racine carrée : la racine de 64 est 8, pas 32",
+      "en": "You halve the number instead of taking its square root: the root of 64 is 8, not 32",
+      "ar": "تأخذ نصف العدد بدل جذره التربيعي: جذر 64 هو 8 وليس 32"
+    },
+    "competency": "math.num.racines-definition"
+  },
+  "math.num.racine-et-carre-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds la racine carrée et le carré : l'une défait l'autre, elles ne donnent pas le même résultat",
+      "en": "You confuse the square root with the square: one undoes the other, they do not give the same result",
+      "ar": "تخلط بين الجذر التربيعي والمربّع: كلّ واحد يُبطل الآخر، وناتجهما ليس واحدًا"
+    },
+    "competency": "math.num.racines-definition"
+  },
   "math.num.racine-carree-negative-oubliee": {
     "subject": "math",
     "labels": {
@@ -179,6 +197,24 @@
     },
     "competency": "math.num.racines-calcul"
   },
+  "math.num.racine-produit-transforme-en-somme": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu additionnes les nombres sous les racines au lieu de les multiplier : √a × √b vaut √(a × b)",
+      "en": "You add the numbers under the roots instead of multiplying them: √a × √b is √(a × b)",
+      "ar": "تجمع العددين تحت الجذرين بدل ضربهما: √a × √b تساوي √(a × b)"
+    },
+    "competency": "math.num.racines-calcul"
+  },
+  "math.num.radicaux-semblables-radicande-additionne": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu additionnes aussi les nombres sous la racine : entre radicaux semblables, seuls les coefficients s'additionnent",
+      "en": "You add the numbers under the root as well: with like radicals, only the coefficients add up",
+      "ar": "تجمع كذلك العددين تحت الجذر: بين الجذور المتشابهة، المعاملات وحدها تُجمع"
+    },
+    "competency": "math.num.racines-calcul"
+  },
   "math.num.racine-simplification-additive": {
     "subject": "math",
     "labels": {
@@ -188,12 +224,30 @@
     },
     "competency": "math.num.racines-calcul"
   },
+  "math.num.racine-extraction-facteur-inversee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu échanges le facteur sorti de la racine et celui qui reste dessous : c'est le carré parfait qui sort, √50 = 5√2 et non 2√5",
+      "en": "You swap the factor taken out of the root with the one left inside: the perfect square comes out, √50 = 5√2 not 2√5",
+      "ar": "تعكس العامل الخارج من الجذر والباقي تحته: المربّع الكامل هو الذي يخرج، √50 = 5√2 لا 2√5"
+    },
+    "competency": "math.num.racines-calcul"
+  },
   "math.alg.moins-devant-parenthese": {
     "subject": "math",
     "labels": {
       "fr": "Tu n'appliques le signe moins qu'au premier terme de la parenthèse : il change le signe de tous les termes",
       "en": "You apply the minus sign to the first term only: it flips the sign of every term inside the brackets",
       "ar": "تطبّق إشارة الطرح على الحدّ الأوّل فقط: هي تغيّر إشارة كلّ الحدود داخل القوسين"
+    },
+    "competency": "math.alg.developpement"
+  },
+  "math.alg.distribution-partielle": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu ne multiplies que le premier terme de la parenthèse : le facteur se distribue sur tous les termes",
+      "en": "You multiply only the first term in the bracket: the factor distributes over every term",
+      "ar": "تضرب الحدّ الأوّل من القوس وحده: العامل يتوزّع على كلّ الحدود"
     },
     "competency": "math.alg.developpement"
   },
@@ -242,6 +296,15 @@
     },
     "competency": "math.alg.factorisation"
   },
+  "math.alg.factorisation-partielle": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu n'extrais qu'une partie du facteur commun : il doit être le plus grand possible, sinon l'expression reste factorisable",
+      "en": "You pull out only part of the common factor: it must be the largest one, otherwise the expression can still be factored",
+      "ar": "تُخرج جزءًا من العامل المشترك فقط: يجب أن يكون الأكبر، وإلّا بقيت العبارة قابلة للتعميل"
+    },
+    "competency": "math.alg.factorisation"
+  },
   "math.alg.transposition-sans-changer-signe": {
     "subject": "math",
     "labels": {
@@ -266,6 +329,15 @@
       "fr": "Tu appliques la règle du produit nul à une somme : elle ne vaut que pour un produit de facteurs",
       "en": "You apply the zero-product rule to a sum: it only holds for a product of factors",
       "ar": "تطبّق قاعدة الجداء المعدوم على مجموع: وهي لا تصحّ إلّا مع جداء عوامل"
+    },
+    "competency": "math.alg.equations-produit"
+  },
+  "math.alg.division-par-inconnue-perd-solution": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu divises les deux membres par l'inconnue : tu perds la solution zéro, il faut factoriser puis appliquer la règle du produit nul",
+      "en": "You divide both sides by the unknown: you lose the zero solution — factor first, then use the zero-product rule",
+      "ar": "تقسم طرفَي المعادلة على المجهول: تفقد الحلّ صفر، والصواب أن تُعمّل ثمّ تطبّق قاعدة الجداء المعدوم"
     },
     "competency": "math.alg.equations-produit"
   },
@@ -565,5 +637,14 @@
       "ar": "تستعمل صيغة مساحة حيث يُطلب حجم: الحجم يشمل ثلاثة أبعاد"
     },
     "competency": "math.mes.volumes"
+  },
+  "math.mes.aire-et-perimetre-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds l'aire et le périmètre : le périmètre s'additionne le long du contour, l'aire se calcule en multipliant deux dimensions",
+      "en": "You confuse area with perimeter: perimeter adds up along the outline, area multiplies two dimensions",
+      "ar": "تخلط بين المساحة والمحيط: المحيط يُجمع على طول الحدود، والمساحة تُحسب بضرب بعدين"
+    },
+    "competency": "math.mes.aires"
   }
 }

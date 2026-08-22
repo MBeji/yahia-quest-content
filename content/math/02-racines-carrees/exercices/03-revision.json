@@ -11,7 +11,7 @@
       "options": [
         { "id": "a", "text": "9√5" },
         { "id": "b", "text": "3√15" },
-        { "id": "c", "text": "5√3" },
+        { "id": "c", "text": "5√3", "misconceptionTag": "math.num.racine-extraction-facteur-inversee" },
         { "id": "d", "text": "3√5" }
       ],
       "correctOption": "d",
@@ -35,7 +35,7 @@
     {
       "prompt": "ما قيمة √8 + √18 ؟",
       "options": [
-        { "id": "a", "text": "√26" },
+        { "id": "a", "text": "√26", "misconceptionTag": "math.num.racine-distribuee-sur-somme" },
         { "id": "b", "text": "3√6" },
         { "id": "c", "text": "5√2" },
         { "id": "d", "text": "2√26" }
@@ -48,9 +48,9 @@
     {
       "prompt": "ما قيمة √((−5)²) ؟",
       "options": [
-        { "id": "a", "text": "−5" },
+        { "id": "a", "text": "−5", "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue" },
         { "id": "b", "text": "5" },
-        { "id": "c", "text": "25" },
+        { "id": "c", "text": "25", "misconceptionTag": "math.num.racine-et-carre-confondus" },
         { "id": "d", "text": "−25" }
       ],
       "correctOption": "b",
@@ -61,7 +61,7 @@
     {
       "prompt": "في مثلّث قائم الزاوية، ضلعاه القائمان يساويان 6 cm و8 cm. ما طول الوتر؟",
       "options": [
-        { "id": "a", "text": "√14 cm" },
+        { "id": "a", "text": "√14 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" },
         { "id": "b", "text": "7 cm" },
         { "id": "c", "text": "√48 cm" },
         { "id": "d", "text": "10 cm" }
@@ -76,7 +76,7 @@
       "options": [
         { "id": "a", "text": "3" },
         { "id": "b", "text": "9" },
-        { "id": "c", "text": "√48" },
+        { "id": "c", "text": "√48", "misconceptionTag": "math.num.racine-distribuee-sur-somme" },
         { "id": "d", "text": "3√6" }
       ],
       "correctOption": "a",

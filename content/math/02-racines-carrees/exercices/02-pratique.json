@@ -22,7 +22,7 @@
     {
       "prompt": "ما ناتج 3√2 + 5√2 ؟",
       "options": [
-        { "id": "a", "text": "8√4" },
+        { "id": "a", "text": "8√4", "misconceptionTag": "math.num.radicaux-semblables-radicande-additionne" },
         { "id": "b", "text": "15√2" },
         { "id": "c", "text": "8" },
         { "id": "d", "text": "8√2" }
@@ -35,7 +35,7 @@
     {
       "prompt": "ما هو الشكل المبسّط للعدد √75 ؟",
       "options": [
-        { "id": "a", "text": "3√5" },
+        { "id": "a", "text": "3√5", "misconceptionTag": "math.num.racine-extraction-facteur-inversee" },
         { "id": "b", "text": "5√3" },
         { "id": "c", "text": "15" },
         { "id": "d", "text": "25√3" }
@@ -62,8 +62,8 @@
       "prompt": "هل يمكن جمع √2 + √3 في عدد واحد على شكل k√n ؟",
       "options": [
         { "id": "a", "text": "لا، لأنّ الجذرين غير متشابهين" },
-        { "id": "b", "text": "نعم، يساوي √5 لأنّ 2 + 3 = 5" },
-        { "id": "c", "text": "نعم، يساوي √6 لأنّ 2 × 3 = 6" },
+        { "id": "b", "text": "نعم، يساوي √5 لأنّ 2 + 3 = 5", "misconceptionTag": "math.num.racine-distribuee-sur-somme" },
+        { "id": "c", "text": "نعم، يساوي √6 لأنّ 2 × 3 = 6", "misconceptionTag": "math.num.racine-produit-transforme-en-somme" },
         { "id": "d", "text": "لا، لأنّ الجذور لا تُجمع مطلقًا ولو كانت متشابهة" }
       ],
       "correctOption": "a",

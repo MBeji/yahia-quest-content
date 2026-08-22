@@ -9,10 +9,10 @@
     {
       "prompt": "انشر وبسّط: (x + 3)²",
       "options": [
-        { "id": "a", "text": "x² + 9" },
+        { "id": "a", "text": "x² + 9", "misconceptionTag": "math.alg.carre-somme-sans-double-produit" },
         { "id": "b", "text": "x² + 6x + 9" },
-        { "id": "c", "text": "x² + 3x + 9" },
-        { "id": "d", "text": "x² − 6x + 9" }
+        { "id": "c", "text": "x² + 3x + 9", "misconceptionTag": "math.alg.carre-somme-sans-double-produit" },
+        { "id": "d", "text": "x² − 6x + 9", "misconceptionTag": "math.alg.carre-difference-signes" }
       ],
       "correctOption": "b",
       "explanation": "باستعمال المتطابقة الأولى: (a + b)² = a² + 2ab + b². هنا a = x وb = 3، إذن (x+3)² = x² + 2(x)(3) + 3² = x² + 6x + 9. الخطأ الشائع (a) هو نسيان الحدّ الأوسط 2ab.",
@@ -23,7 +23,7 @@
       "prompt": "عمّل (حلّل): 4x² − 9",
       "options": [
         { "id": "a", "text": "(2x − 9)(2x + 1)" },
-        { "id": "b", "text": "(2x − 3)²" },
+        { "id": "b", "text": "(2x − 3)²", "misconceptionTag": "math.alg.difference-carres-confondue" },
         { "id": "c", "text": "(2x − 3)(2x + 3)" },
         { "id": "d", "text": "4(x² − 9)" }
       ],
@@ -48,9 +48,9 @@
     {
       "prompt": "انشر وبسّط: (3x − 1)²",
       "options": [
-        { "id": "a", "text": "9x² + 1" },
-        { "id": "b", "text": "9x² − 1" },
-        { "id": "c", "text": "9x² + 6x + 1" },
+        { "id": "a", "text": "9x² + 1", "misconceptionTag": "math.alg.carre-somme-sans-double-produit" },
+        { "id": "b", "text": "9x² − 1", "misconceptionTag": "math.alg.difference-carres-confondue" },
+        { "id": "c", "text": "9x² + 6x + 1", "misconceptionTag": "math.alg.carre-difference-signes" },
         { "id": "d", "text": "9x² − 6x + 1" }
       ],
       "correctOption": "d",
@@ -64,7 +64,7 @@
         { "id": "a", "text": "x² + 3x − 10 cm²" },
         { "id": "b", "text": "x² + 7x − 10 cm²" },
         { "id": "c", "text": "x² − 3x + 10 cm²" },
-        { "id": "d", "text": "2x + 3 cm²" }
+        { "id": "d", "text": "2x + 3 cm²", "misconceptionTag": "math.mes.aire-et-perimetre-confondus" }
       ],
       "correctOption": "a",
       "explanation": "المساحة = الطول × العرض = (x+5)(x−2). نوسّع: x(x−2) + 5(x−2) = x² − 2x + 5x − 10 = x² + 3x − 10 cm². أمّا 2x + 3 cm² فخاطئ لأنّه يجمع الطول والعرض عوضًا عن ضربهما.",
@@ -75,9 +75,9 @@
       "prompt": "أيّ من العبارات التالية يمثّل تعميلًا (تحليلًا) للعبارة x² − 6x + 9 ؟",
       "options": [
         { "id": "a", "text": "(x − 6)²" },
-        { "id": "b", "text": "(x + 3)²" },
+        { "id": "b", "text": "(x + 3)²", "misconceptionTag": "math.alg.carre-difference-signes" },
         { "id": "c", "text": "(x − 3)²" },
-        { "id": "d", "text": "(x − 3)(x + 3)" }
+        { "id": "d", "text": "(x − 3)(x + 3)", "misconceptionTag": "math.alg.difference-carres-confondue" }
       ],
       "correctOption": "c",
       "explanation": "x² − 6x + 9 = x² − 2(x)(3) + 3² هو مربّع الفرق (a−b)² مع a = x وb = 3. إذن x² − 6x + 9 = (x − 3)². التحقّق بالنشر: (x−3)² = x² − 6x + 9 ✓. أمّا (x + 3)² فيعطي x² + 6x + 9 (خطأ إشارة)، و(x − 3)(x + 3) فرق مربّعين يعطي x² − 9، و(x − 6)² يعطي x² − 12x + 36.",

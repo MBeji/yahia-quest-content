@@ -4,7 +4,7 @@
     {
       "prompt": "ما المقصود بالحدود المتشابهة في عبارة حرفية؟",
       "options": [
-        { "id": "a", "text": "الحدود التي لها نفس المعامل العددي" },
+        { "id": "a", "text": "الحدود التي لها نفس المعامل العددي", "misconceptionTag": "math.alg.termes-semblables-par-coefficient" },
         { "id": "b", "text": "الحدود التي لها نفس الجزء الحرفي" },
         { "id": "c", "text": "الحدود التي لها نفس الإشارة" },
         { "id": "d", "text": "الحدود التي تساوي الصفر" }
@@ -17,8 +17,8 @@
     {
       "prompt": "ما نتيجة توزيع −(a − b) وفق قاعدة التوزيع؟",
       "options": [
-        { "id": "a", "text": "−a − b" },
-        { "id": "b", "text": "a − b" },
+        { "id": "a", "text": "−a − b", "misconceptionTag": "math.alg.moins-devant-parenthese" },
+        { "id": "b", "text": "a − b", "misconceptionTag": "math.alg.moins-devant-parenthese" },
         { "id": "c", "text": "−a + b" },
         { "id": "d", "text": "a + b" }
       ],
@@ -30,9 +30,9 @@
     {
       "prompt": "أيّ من المتطابقات التالية تُعبّر عن مربّع الفرق بشكل صحيح؟",
       "options": [
-        { "id": "a", "text": "(a − b)² = a² + 2ab + b²" },
-        { "id": "b", "text": "(a − b)² = a² − b²" },
-        { "id": "c", "text": "(a − b)² = a² − 2ab − b²" },
+        { "id": "a", "text": "(a − b)² = a² + 2ab + b²", "misconceptionTag": "math.alg.carre-difference-signes" },
+        { "id": "b", "text": "(a − b)² = a² − b²", "misconceptionTag": "math.alg.difference-carres-confondue" },
+        { "id": "c", "text": "(a − b)² = a² − 2ab − b²", "misconceptionTag": "math.alg.carre-difference-signes" },
         { "id": "d", "text": "(a − b)² = a² − 2ab + b²" }
       ],
       "correctOption": "d",
@@ -43,10 +43,10 @@
     {
       "prompt": "ما المتطابقة الشهيرة التي تُعطي a² − b²؟",
       "options": [
-        { "id": "a", "text": "(a + b)² = a² − b²" },
-        { "id": "b", "text": "(a − b)² = a² − b²" },
+        { "id": "a", "text": "(a + b)² = a² − b²", "misconceptionTag": "math.alg.difference-carres-confondue" },
+        { "id": "b", "text": "(a − b)² = a² − b²", "misconceptionTag": "math.alg.difference-carres-confondue" },
         { "id": "c", "text": "(a − b)(a + b) = a² − b²" },
-        { "id": "d", "text": "(a + b)(a + b) = a² − b²" }
+        { "id": "d", "text": "(a + b)(a + b) = a² − b²", "misconceptionTag": "math.alg.difference-carres-confondue" }
       ],
       "correctOption": "c",
       "explanation": "متطابقة فرق المربّعين: (a − b)(a + b) = a² − b². تُستخدم كثيرًا في الحساب الذهني، مثلًا: 99 × 101 = (100−1)(100+1) = 10000 − 1 = 9999.",
@@ -56,7 +56,7 @@
     {
       "prompt": "ما الهدف من التعميل (إخراج عامل مشترك) في الحساب الحرفي؟",
       "options": [
-        { "id": "a", "text": "تحويل الجداء إلى مجموع بنشر الأقواس" },
+        { "id": "a", "text": "تحويل الجداء إلى مجموع بنشر الأقواس", "misconceptionTag": "math.alg.factoriser-et-developper-confondus" },
         { "id": "b", "text": "تحويل المجموع إلى جداء بإخراج القاسم المشترك الأكبر" },
         { "id": "c", "text": "حذف الحدود السالبة من العبارة" },
         { "id": "d", "text": "إضافة حدود جديدة إلى العبارة" }
