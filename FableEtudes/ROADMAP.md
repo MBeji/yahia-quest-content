@@ -157,8 +157,20 @@ recopier.
   livre la pièce que é29 lot 5 lui avait laissée en toutes lettres — le **cache
   mutualisé d'explications** (R-15.2), dont `AI_CURATED_MODELS` était la
   condition d'entrée et n'était jusque-là référencé nulle part.
-- **arena#815 · arena#799 · arena#812** — doc d'agents, e2e, correctif de console
-  IA. Hors file.
+- **arena#799 · arena#812 · arena#815** — e2e, correctif de console IA, doc
+  d'agents. Hors file.
+- **arena#811 · arena#813** — ⚠️ **manquaient à cette liste**, et #811 n'est pas
+  un correctif d'écran : elle porte une **décision produit**. Les plafonds de
+  consommation de é29 (argent **et** énergie) **ne coupent plus par défaut** ;
+  ils mesurent et alertent, et le porteur les réarme d'un interrupteur
+  (`limits_enforced`). RISK-2 n'est donc plus arrêté par la machine — seule
+  l'alerte d'anomalie à 3× la médiane subsiste comme signal automatique. Le
+  reste des deux PR est de la même classe : l'écran n'annonçait que deux
+  fournisseurs quand le moteur en accepte n'importe lequel (DeepSeek, Kimi, GLM
+  nommés ; grille de prix élargie, sans quoi une famille DeepSeek était coupée à
+  ~4 % de sa dépense), et le panneau d'activation proposait huit surfaces pour
+  un seul écran livré. Détail au §8 de l'étude 29. **Sans objet pour les trois
+  files**, mais à connaître avant toute reprise de l'étage IA.
 - Côté corpus : **#219 — C4bis ÉTAPE 1 EST LIVRÉE** (1 049 distracteurs tagués,
   registre 56 → 154). Elle se coche au §5.
 
