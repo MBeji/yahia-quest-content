@@ -1,6 +1,6 @@
 # ROADMAP — ordre d'exécution du reste-à-faire (études, lots, contenu)
 
-<!-- roadmap-sync: since-pr=816 -->
+<!-- roadmap-sync: since-pr=818 -->
 
 > **Instantané du 2026-08-22** (créé le 2026-07-20, resynchronisé contre `main` les 2026-07-25,
 > 2026-07-27, 2026-07-29, 2026-08-01, 2026-08-03, 2026-08-10, 2026-08-16/17 puis le
@@ -194,12 +194,23 @@ d'application qui les relie, et il tient en un dispatch (voir **C11**).
       l'erreur nommée. C'est redevenu, pour un instant, le geste qui ne produit rien et livre
       tout — la leçon de C11, deux semaines plus tard.
    2. **C4ter** (§5) — `french-6eme`, la complétude de la classe de concours (é28 D-4).
-   3. **Ligne 15** (§3) — é04 A2.1 « Points faibles », désormais **débloquée** : l'écran a enfin
-      des lignes à afficher. ⚠️ Après l'application, pas avant.
+   3. ~~**Ligne 15** (§3) — é04 A2.1 « Points faibles »~~ — **LIVRÉE le 2026-08-23** (arena#818),
+      avec la **16** dans la même PR : l'étude 04 est finie.
 
    La règle « PRODUIT d'abord » suppose que la file PRODUIT a une ligne prenable : la 15
    livrerait toujours un écran vide, la 9 est close, et la 18 est la seule qui le soit — d'où
    son rang 2. L'ordre sert la valeur livrée ; il ne la remplace pas.
+
+   ⚠️ **Ordre du 2026-08-23 — deux des trois rangs ci-dessus sont consommés** (l'application
+   le 2026-08-22, les lignes 15/16 le 2026-08-23) ; **seul C4ter y survit**, et il passe premier.
+   L'ordre à prendre devient :
+
+   1. **C4ter** (§5) — `french-6eme`, la complétude de la classe de concours (é28 D-4).
+   2. **Ligne 19** (§3) — é11 lots 2 → 7, **la dernière ligne non cochée de toute la file
+      PRODUIT**. Elle n'a plus de dépendance : le socle é29 est en prod, le lot 1 aussi, et
+      `math` 9ᵉ est tagué. La cadence, elle, dépend des coûts observés — pas d'un blocage.
+   3. **C4bis étape 2** (§5) — étendre le tagging aux autres matières : `math` 9ᵉ démontre
+      la chaîne complète, les autres n'en ont encore rien.
 
 ### Comment cet ordre reste vrai (règle amendée le 2026-07-25)
 
@@ -323,15 +334,25 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
 
 > Objectif : refermer les trois boucles mortes (SM-2, misconceptions, adaptativité) et porter
 > la boucle d'apprentissage à M3 avant la rentrée.
-> **État au 2026-08-22 : 16 des 20 lignes livrées** (la 20ᵉ est la 19bis, créée le 2026-08-22).
-> La ligne 9 est CLOSE (arena#689, #691, #695, **#707**). La **17 est close par substitution** —
-> é29 lot 1 remplace é11 lot 0 — et la **19bis** est livrée. Restent **15, 16** (é04 A2) et
-> **18, 19** (é11).
-> ⚠️ **Ce que les douze derniers jours ont produit hors de cette file** : é02 close (arena#743,
-> #746), tout le **suivi parental quotidien** (**F11**), le **programme officiel** comme
-> structure (**F12**), les **manuels** (**F13**) et é29 (19bis). Ce n'est pas une dérive — mais
-> aucune de ces lignes-ci n'a bougé depuis le 2026-08-03, et la raison est toujours la même.
-> ⚠️ **La 15 n'est PAS prenable telle quelle** : **le corpus ne porte toujours aucun tag de
+> **État au 2026-08-23 : 19 des 20 lignes livrées.** La ligne 9 est CLOSE (arena#689, #691,
+> #695, **#707**). La **17 est close par substitution** — é29 lot 1 remplace é11 lot 0 — la
+> **19bis** est livrée, la **18** l'est depuis le 2026-08-22 (arena#816) et les **15 et 16**
+> depuis le 2026-08-23 (arena#818). **Il ne reste que la 19** — é11 lots 2 → 7.
+> ⭐ **Et avec les 15 et 16, l'ÉTUDE 04 EST FINIE** : les quatre phases sont closes (A0, A1.1,
+> A1.2, A2), l'étude est passée en `EtudeRealisé/`. La verticale « apprendre & maîtriser » n'a
+> donc plus de dette adaptative — ce qui reste dans cette file est **entièrement** de l'IA.
+> ⚠️ **Ce que les douze jours du 2026-08-03 au 2026-08-21 ont produit hors de cette file** : é02
+> close (arena#743, #746), tout le **suivi parental quotidien** (**F11**), le **programme
+> officiel** comme structure (**F12**), les **manuels** (**F13**) et é29 (19bis). Ce n'était pas
+> une dérive : aucune ligne d'ici ne pouvait bouger tant que le corpus n'était pas tagué.
+> ✅ **Le gel a cessé le 2026-08-22** — trois lignes (18, 15, 16) en deux jours, dès que C4bis
+> étape 1 a levé le blocage. **Dix-huit jours d'immobilité de la file PRODUIT tenaient à un
+> travail de CONTENU**, et c'est la leçon à ne pas perdre au moment de trancher une priorité.
+> ✅ **LEVÉ le 2026-08-22 — le paragraphe qui suit est conservé pour son histoire, pas pour son
+> verdict.** `math` 9ᵉ porte **1 049 tags** (#219), appliqués en prod le 2026-08-22, et la 15 a
+> été prise le lendemain. La leçon reste : ce blocage a tenu **dix-huit jours** une ligne PRODUIT
+> que rien n'empêchait techniquement d'écrire, et il n'était levable que par du **contenu**.
+> ⚠️ ~~**La 15 n'est PAS prenable telle quelle**~~ : **le corpus ne porte toujours aucun tag de
 > misconception** — 0 occurrence sur ~18 700 questions, re-mesuré **inchangé le 2026-08-10**.
 > Tout l'étage « erreur nommée / points faibles » est alimenté par du vide, y compris le geste
 > que #707 a livré. Le déblocage est **C4bis** (§5), un travail de contenu, pas de code.
@@ -428,19 +449,44 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
 - [x] 12. **é07 lot 2 — DB de maîtrise** (`user_competency_mastery` EWMA + oubli, trigger sur télémétrie) — #579
 - [x] 13. **é07 lot 4 — panneau compétences** (« ce qui te bloque », RPCs map/blockers) — #588. ⚠️ Livré **avant** le tagging C4 : inerte par construction tant que le corpus n'est pas tagué, jamais faux
 - [x] 14. **é07 lot 5 — plan compétence-aware** (`get_daily_plan` priorise par compétence) — #616, correctif de GRANT #617. Même réserve : inerte sans C4
-- [ ] 15. **é04 lot A2.1 — « Points faibles »** (misconceptions en langage élève + « S'entraîner »).
-      ⛔ **NE PAS PRENDRE AVANT C4bis** : `user_misconceptions` est vide en prod depuis l'origine
-      (la chaîne est mécanique — voir ligne 9), donc ce lot **livrerait un écran vide**. Ce n'est
-      pas une réserve de prudence, c'est arithmétique : l'écran n'a aucune ligne à afficher
-- [ ] 16. **é04 lot A2.2 — rapport parent enrichi** (3 points faibles majeurs + tendance).
-      Même dépendance de fond à C4bis pour les « points faibles » ; la **tendance**, elle, se
-      calcule sur la télémétrie existante.
-      ⚠️ **À relire avant de la prendre — la surface a changé sous elle.** Cette ligne a été
-      écrite contre le rapport parent de #335. Depuis, quinze PR ont livré le **suivi parental
-      quotidien** (**F11**, §4) : socle de temps mesuré (`learning_pulses`), tableau de bord jour
-      par jour, couverture du programme par matière, rapport public par code. Une partie de ce
-      que « rapport parent enrichi » désignait existe peut-être déjà, ailleurs — **mesurer avant
-      d'écrire**, sinon on livre deux fois le même écran
+- [x] 15. **é04 lot A2.1 — « Points faibles » — LIVRÉE le 2026-08-23** (arena#818).
+      `get_my_weaknesses` rend les erreurs actives en langage élève, dans les trois langues, avec
+      la compétence qui arme « S'entraîner » (le **même** `get_exercises_for_competency` que la
+      correction riche : un seul chemin de remédiation), le chapitre où l'erreur se commet le plus,
+      et une **tendance mesurée** sur deux fenêtres de 7 jours de `question_attempts` —
+      `user_misconceptions` étant un agrégat sans histoire. Sous trois occurrences : `stable`, et
+      un tiret à l'écran, parce qu'une flèche sur deux points ment.
+      ⛔ Le blocage C4bis **est levé** : les 1 049 tags sont appliqués en prod depuis le 2026-08-22
+      (`apply-content` : `✓ misconceptions: 154 tag(s)`). L'écran a des lignes à afficher — mais
+      seulement pour qui a répondu : une erreur exige **3 occurrences sur 2 séances**, donc les deux
+      surfaces de A2 restent vides chez presque tous les comptes, et **c'est correct**. Elles ne
+      rendent alors **rien** — pas d'encadré « aucune erreur détectée », qui se lirait comme un
+      satisfecit sur un compte neuf alors qu'il ne dit que « on n'a pas encore assez joué »
+- [x] 16. **é04 lot A2.2 — rapport parent enrichi — LIVRÉE le 2026-08-23** (arena#818).
+      ⚠️ **L'avertissement de cette ligne a servi, et il avait à moitié raison.** Mesuré avant
+      d'écrire : le rapport portait **déjà** `chapterInsights.weaknesses` — mais **par CHAPITRE**.
+      Ce n'est pas le même axe, et les deux cohabitent : « **Fractions : 45 %** » dit _où_ ça
+      coince, « **il additionne les dénominateurs** » dit _quoi_ réviser, et seul le second se
+      traite le soir même. `misconceptionInsights` s'ajoute donc sous l'autre, dans le même
+      encadré, sans le remplacer.
+      `_student_weakness_insights` lit les erreurs d'un **autre** utilisateur : SECURITY DEFINER,
+      **REVOKE de `authenticated`**, appelée seulement par `_student_report_json` une fois le
+      lien parent-élève vérifié — une assertion pgTAP tient cette frontière
+
+> ⭐ **Ce que le lot a fait EN PLUS des deux lignes, et qu'aucune des deux ne demandait — R-2
+> cesse d'être recopié.** L'étude 04 promet en R-2 des « constantes **centralisées**, ajustables » ;
+> elles ne l'avaient jamais été. Le triplet (3 occurrences, 2 séances, 30 jours) était écrit à la
+> main dans `get_daily_plan` **et** dans `get_tutor_learner_context` (ligne 18). La 15 en aurait
+> fait une troisième copie, la 16 une quatrième — un seuil pédagogique dupliqué quatre fois n'est
+> plus ajustable, il est juste faux à trois endroits le jour où on y touche.
+> `misconception_active_thresholds()` porte les trois nombres, `active_misconceptions()` la
+> définition, et **les deux appelants vivants sont rebranchés dans la même migration**.
+> ⚠️ **Et la réécriture de `get_daily_plan` a failli coûter la bande focus du tableau de bord** :
+> retapée à la main, elle sortait un algorithme **entièrement réinventé** — score normalisé perdu,
+> `DISTINCT ON` anti-doublon perdu, exclusion des quiz du repli perdue. C'est le `diff` contre sa
+> révision vivante qui l'a montré, pas un test. La version livrée est une **substitution par
+> script** sur le texte extrait, et `35_daily_plan.test.sql` — **inchangée, restée verte** — en est
+> la preuve. **Une fonction SQL vivante se substitue, elle ne se retape pas.**
 
 **Étape E — l'étage IA — ⚠️ RÉÉCRITE le 2026-08-22 : la porte est livrée, par é29**
 
@@ -1089,7 +1135,7 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
 
 | Axe        | Cible rentrée                                                                                                                                                                                                  | État au **2026-08-22 (J-10)**                                                                                                              |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Produit    | File V1 étapes **1-16** livrées (é22 complet dont bannière rentrée · Révision du jour · correction riche · Rappel tolérant lot 1 · maîtrise visible · points faibles + rapport parent)                         | **17/20 lignes faites.** La **18 est livrée le 2026-08-22** (arena#816) — é11 lot 1, « Demander au Prof ». Restent **15-16** (é04 A2) et **19** (é11 lots 2-7). 🟢 **La 15 est DÉBLOQUÉE** : C4bis a livré 1 049 tags le même jour, l'écran a enfin des lignes à afficher. ⚠️ **Après l'application du corpus en prod, pas avant** — les tags sont mergés, pas appliqués |
+| Produit    | File V1 étapes **1-16** livrées (é22 complet dont bannière rentrée · Révision du jour · correction riche · Rappel tolérant lot 1 · maîtrise visible · points faibles + rapport parent)                         | **19/20 lignes faites.** Les **15 et 16 sont livrées le 2026-08-23** (arena#818) — é04 A2, et avec elles **l'étude 04 est finie**. La **18** l'est depuis le 2026-08-22 (arena#816). Ne reste que la **19** (é11 lots 2-7). La cible « points faibles + rapport parent » est donc **atteinte**. 🟢 **La 15 est DÉBLOQUÉE** : C4bis a livré 1 049 tags le même jour, l'écran a enfin des lignes à afficher. ⚠️ **Après l'application du corpus en prod, pas avant** — les tags sont mergés, pas appliqués |
 | IA         | A5 **rendu le 2026-07-20** : é11 dégelée (lots 0-2, pilote math 9ᵉ, budget 5 $/j, tuteur « El Ostedh »). ⚠️ **Le socle n'attend plus** : é29 l'a livré le 2026-08-22 (arena#807), avec un second payeur — la famille | 🟢 **LA PORTE EST ALLUMÉE, ET L'ÉTAGE PÉDAGOGIQUE A COMMENCÉ.** é29 déployée (`/api/health` → `548a429`), `AI_KEY_ENC_KEY` posée (Mohamed, 2026-08-22), et **é11 lot 1 livré le même jour** (arena#816) : explication personnalisée, escalier de reformulation, cache mutualisé, retour 👍/👎. Le KPI que é29 se donnait — « elle réussit si é11 démarre » — est atteint. **Restent** : le **pilote Q-9** (aucune clé de fournisseur n'a jamais été branchée) et **é11 lots 2-7** |
 | Contenu    | Classes existantes à la barre é18 · 1ère sec complète (5 matières) · vidéos 9ᵉ · Tier A `acceptedAnswers` corpus entier · cible arbitrée (A1-Q2) = **statu quo consolidé à la barre é18**, sans classe vitrine | 🟢 **C4bis EST LIVRÉE** (#219, 2026-08-22) : 1 049 distracteurs tagués sur 2 454, registre 56 → 154 entrées toutes pourvues de leur `competency`, sur les vingt chapitres de `math` 9ᵉ. C11 et F10 restent faites. 🔜 **Le point dur redevient l'APPLICATION** : les tags sont sur `main` et n'atteignent aucun élève — un dispatch les allume. **C3 toujours à 4/5**. Toujours rien sur : **vidéos 9ᵉ** (C2). **Prochaine ligne : C4ter** (`french-6eme`, classe de concours) |
 | Fondations | Domaine câblé + monitoring + sitemap (F4) · légal F5 · triage ops F6 en route · `main` verte (§1)                                                                                                              | **`main` verte ✅**, **F4 soldée**, et **F10 réparée** le 2026-08-14 — la panne de douze jours est close. **F5 bouge à moitié** : la **suppression de compte est livrée** (arena#791), **l'export/portabilité reste à zéro occurrence** — c'est désormais le seul volet code de GAP-024, et il tient encore la Porte 1 avec l'INPDP (côté humain ; é29 §3.8 y ajoute son registre de traitement). **F6** : plus aucun blocage technique, une seule issue de triage ouverte (arena#673) — le geste opérateur manque toujours. **F7** : deux majeures (arena#660 TypeScript v7 gate rouge, arena#595 `@types/node`). **Trois lignes neuves** : F11, F12, F13 — livrées, consignées, pas rouvertes |
@@ -1098,6 +1144,7 @@ avec `XP_PER_LEVEL = 200` le niveau 5 est à **800 XP** — le simulateur suit l
 
 | Date       | Événement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-08-23 | **L'ÉTUDE 04 EST FINIE — et le lot qui la ferme a passé la moitié de son temps sur une promesse que l'étude avait faite trois fois sans jamais la tenir.** Les lignes **15** et **16** livrées ensemble (arena#818), phase A2 close, étude passée en `EtudeRealisé/`. **Ce que les deux lignes demandaient** : l'élève voit ses erreurs nommées, en langage d'élève, avec un geste (« S'entraîner », via le **même** `get_exercises_for_competency` que la correction riche — un seul chemin de remédiation) ; le parent les voit aussi, **sans doublonner** `chapterInsights.weaknesses` qui existait déjà — l'un dit « Fractions : 45 % », _où_ ça coince, l'autre « il additionne les dénominateurs », _quoi_ réviser, et seul le second se traite le soir même. La mise en garde de la ligne 16 (« mesurer avant d'écrire, sinon on livre deux fois le même écran ») a donc **servi** : elle avait raison de faire mesurer, et tort de supposer un doublon. **⭐ Ce qu'aucune des deux ne demandait, et qui était le vrai travail : R-2 cesse d'être recopié.** L'étude 04 promet en R-2 des « constantes **centralisées**, ajustables ». Elles ne l'ont jamais été : le triplet (3 occurrences, 2 séances, 30 jours) était écrit **à la main** dans `get_daily_plan` et dans `get_tutor_learner_context` (livré la veille par la ligne 18). La 15 en aurait fait une **troisième** copie, la 16 une **quatrième**. Un seuil pédagogique dupliqué quatre fois n'est pas « ajustable » : il est faux à trois endroits le jour où on l'ajuste. `misconception_active_thresholds()` et `active_misconceptions()` portent désormais la définition, les deux appelants vivants sont rebranchés **dans la même migration**, et le triplet n'existe plus qu'à un seul endroit. **La leçon de méthode, elle, n'est pas sur R-2** : une exigence peut être écrite, relue, citée dans quatre lots et **jamais vérifiée**, parce que rien ne la teste — les surfaces marchaient toutes. Ce qui l'a révélée n'est pas un gate, c'est d'avoir voulu en écrire la quatrième copie. **⚠️⚠️ ET LE PLUS COÛTEUX A FAILLI PASSER : `get_daily_plan` retapée sortait un algorithme ENTIÈREMENT RÉINVENTÉ.** Il fallait y insérer un CTE ; je l'ai d'abord **retapée**. Le `diff` contre sa révision vivante a montré : score normalisé perdu, `DISTINCT ON` anti-doublon perdu, exclusion des quiz du repli perdue — la bande focus du tableau de bord serait devenue une autre fonctionnalité, sans un seul test rouge. **Ce n'est pas un gate qui l'a attrapé, c'est le `diff`** ; la version livrée est une **substitution par script** sur le texte extrait, et `35_daily_plan.test.sql` — **inchangée, restée verte** — est la preuve de non-régression. La règle à retenir vaut au-delà de ce lot : **une fonction SQL vivante se substitue, elle ne se retape pas** — et sa dernière révision n'est pas dans la migration qui l'a créée, mais dans le dernier `CREATE OR REPLACE` de `main`, souvent sous un nom sans rapport. **Ce qui s'affiche aujourd'hui : rien, chez presque tout le monde — et c'est correct.** Une erreur n'est active qu'après 3 occurrences sur 2 séances, et seul `math` 9ᵉ est tagué (appliqué en prod le 2026-08-22). Les deux surfaces rendent alors **rien du tout** — délibérément pas d'encadré « aucune erreur détectée », qui se lirait comme un satisfecit sur un compte neuf alors qu'il ne dit que « on n'a pas encore assez joué ». Le « GO humain » que le plan de lots attendait (« ≥ 4 semaines de télémétrie ») portait sur les **données**, jamais sur le code : les écrans se remplissent seuls. **État de la file PRODUIT : 19 lignes sur 20.** Ne reste que la **19** (é11 lots 2 → 7) — plus aucune dépendance, seulement une cadence à régler sur les coûts observés. **La verticale « apprendre & maîtriser » n'a plus de dette adaptative : tout ce qui reste dans cette file est de l'IA.** Aussi au moteur, hors file : **arena#817** — les 18 assertions pgTAP du tuteur ne s'exécutaient **pas** (un `source` inventé faisait avorter le fichier avant sa première assertion, et le `throws_ok` à 4 arguments comparait le message au SQLSTATE) ; **arena#805**, troisième instance du sélecteur e2e de #733. ⚠️ **#817 mérite d'être lue avec #816** : la PR du lot 1 a mergé **par-dessus un pgTAP rouge**, parce que `pgTAP suite` **n'est pas un check requis** — les quatre requis étaient verts et l'auto-merge a tiré. Le lot d'aujourd'hui est donc parti en `wip/`, promu seulement une fois la suite vraiment verte (`Files=69, Tests=886`, +14 = les siennes). **Un gate non requis ne garde rien ; il informe qui va le lire.** |
 | 2026-08-22 | **Les deux premières lignes de l'ordre sont livrées le même jour — et le lien entre elles n'est pas encore fait.** **C4bis étape 1** (#219) : 1 049 distracteurs tagués sur 2 454 (43 %), registre 56 → 154 entrées, sur les VINGT chapitres — le périmètre d'A11 (« 557 questions, 13 chapitres ») décrivait un corpus qui a grandi de sept chapitres depuis l'étape 0. Trois domaines entiers n'avaient AUCUN mot (probabilités, puissances, quadrilatères) et un quatrième un seul : ils sont arrivés après. **43 % est la part des distracteurs NOMMABLES**, pas un travail à moitié fait — 10 % sur les systèmes (des couples numériques faux), 75 % sur la valeur absolue (des règles mal appliquées). **é11 lot 1** (arena#816) le même jour : « Demander au Prof », avec le cache mutualisé que é29 lot 5 lui avait laissé — `AI_CURATED_MODELS` n'était référencé nulle part avant. ⚠️ **Ce qui manque est un GESTE, pas un chantier** : les tags sont mergés et pas appliqués, donc le tuteur explique sans nommer l'erreur, et les quatre lots é04/é07 restent inertes. C11 avait appris exactement ça il y a douze jours. ⚠️⚠️ **Et arena#816 a mergé avec `pgTAP suite` ROUGE** : ses 18 assertions avortaient sur une fixture (`source = 'authored'`, refusé par un CHECK), donc 0 test exécuté sur 18 planifiés. Les quatre checks REQUIS étaient verts, l'automerge a fait son travail — c'est le piège de 2026-07-31 (#689), à l'identique. `db:check-chain` était vert lui aussi, et il avait raison : il rejoue la CHAÎNE, il n'exécute pas les contraintes d'un INSERT. Correctif arena#817, poussé sur une branche `wip/` À DESSEIN pour qu'il ne merge pas avant que la suite soit vraiment verte. |
 | 2026-08-22 | **Les DEUX premières lignes de cette roadmap étaient déjà faites quand elles y sont arrivées — et 60 PR moteur sont entrées « connues » sans être citées.** Resynchronisation contre les deux dépôts, base #746 → #807. **(1) La base a sauté de 61 PR d'un coup** : la citation de é29 (#216) a porté le pointeur à #807, déclarant connues les 60 PR intermédiaires (#747 → #810) sans en citer une. Le gate est resté vert — aucune ne porte la forme « étude/lot ». Même angle mort que le 2026-08-10, dans l'autre sens : là c'était le dépôt privé qu'il ne regarde pas, ici c'est le pointeur qui a sauté par-dessus. **(2) C11 et F10, les deux priorités proclamées, sont tombées sans qu'aucune session ne les prenne.** #124 close le **2026-08-10 à 17 h 46** — le jour même de la rédaction de C11, **six jours avant** que la ligne n'atteigne `main` (#152/#184, restées en draft). #81 close le **2026-08-14**, deux jours avant l'arrivée de F10. **La leçon est neuve et elle est simple : une priorité écrite le jour J et mergée à J+6 n'est pas une priorité, c'est un instantané périmé. Relire l'issue avant de prendre la ligne.** **(3) F5 était fausse à moitié** : arena#791 a livré la suppression de compte le 2026-08-19, sous un titre qui ne cite pas GAP-024 — le symétrique du piège que cette même ligne documentait (« une PR qui cite un GAP ne le clôt pas » ⟶ « un GAP qu'aucune PR ne cite peut être livré »). **(4) Quatre chantiers entiers n'avaient aucune ligne** : suivi parental quotidien (**F11**, 15 PR), programme officiel devenu structure du produit (**F12**), manuels déclarés et liés (**F13**), campagne فقه (**C12**, 37 أبواب sur 45, rubrique ouverte). **(5) Le point dur change encore, et il change de nature** : c'est **C4bis**, qui ne commande plus seulement l'axe adaptatif mais aussi **l'étage IA** — la ligne 18 promet une explication ancrée sur un tag qui n'existe nulle part (0 occurrence sur 719 chapitres). **(6) Côté IA, le prérequis d'exploitation est levé** : `AI_KEY_ENC_KEY` est posée en production (Mohamed, 2026-08-22) ; é29 est déployée (`/api/health` → `548a429`). Restent le pilote Q-9 — **aucune clé de fournisseur n'a jamais été branchée** — et é11 lots 1-7. **(7) Une garde de plus dans la série des muettes** : la sonde des manuels ne tournait pas sous Windows et **refermait son issue en affirmant que tout allait bien** (arena#785, #211/#212) — quatrième cas, consigné en **F10**. |
 | 2026-08-16 | **Cette correction est restée SIX JOURS en draft, verte, à un rebase du merge — et le gate `roadmap-sync` rougissait sur `main` depuis trois nuits sans que personne ne le voie.** La PR #152 (rédigée le 08-10) portait A17 et la réécriture de C11 ; elle a été ouverte **en draft**, jamais promue, puis `main` a avancé de 31 commits et elle est passée en conflit. Deux gardes distinctes ont donc échoué au même endroit — **la sortie**. (1) **La chaîne d'automerge d'ici était événementielle** : elle n'évaluait une PR qu'à l'instant où un workflow de PR finissait, une fois, sans reprise — donc une PR promue après ce coup d'œil, ou un merge perdant une course, n'était **plus jamais relu**. Deux PR vertes en sont restées ouvertes deux jours (#167, #162) ; corrigé par **#182**, qui rebalaye l'état complet à chaque déclenchement (**l'événement dit quand regarder, jamais quoi**). (2) **`roadmap-sync` échouait sur `main`** les 08-14, 08-15 et 08-16 : trois lots moteur n'étaient cités nulle part — **arena#726** (é28 lot 3) et surtout **arena#743 · arena#746**, qui font passer **l'étude 02 en exécution** (schéma + moteur SQL, puis l'écran de l'examen blanc). Le §6 dit toujours « é02 se re-scope maintenant » : quatre lots plus tard, c'est faux. Cités au **§0bis**, base portée à **#746**. **La leçon commune aux deux** : un cron qui rougit n'atteint personne, exactement comme les trois gardes muettes du 2026-08-10 ci-dessous. Ce qui manque n'est toujours pas la garde — c'est que **sa panne arrive à quelqu'un**. |
