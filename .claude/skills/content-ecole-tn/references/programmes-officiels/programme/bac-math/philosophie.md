@@ -9,9 +9,11 @@
 >   التّعليم الثانوي — الشّعب العلميّة ». **408 pages** (page PDF = page imprimée, **offset 0**).
 >   **Pages lues** : p.1–6 (page de titre, copyright, التقديم, خارطة الكتاب, ouverture du محور 1),
 >   **p.215–270 — le مبحث 2 en entier, à profondeur de génération**,
+>   **p.271–402 — tout le محور 3 (مبحث 3.1 الدّولة et مبحث 3.2 الأخلاق), à profondeur de génération**,
 >   p.404–408 (فهرس الكتاب intégral).
->   **Transcrit le** : 2026-08-04 → 2026-08-05. **Statut** : **`partielle` / profondeur `mixte`** —
->   ossature sur tout le programme, **profondeur de génération sur le seul مبحث 2** (voir §6).
+>   **Transcrit le** : 2026-08-04 → 2026-08-23. **Statut** : **`partielle` / profondeur `mixte`** —
+>   ossature sur tout le programme, **profondeur de génération sur 3 chapitres sur 5** : le مبحث 2
+>   et les deux مباحث du محور 3. ⚠️ Le محور 3 **n'a pas encore passé sa R-7** (voir §6).
 >   **Langue d'enseignement** : `ar`. **gradeSlug porteur** : `bac-math`.
 >   **subject ids** attendus : `philosophie-bac-math`, `philosophie-bac-sciences-exp`,
 >   `philosophie-bac-eco-gestion`, `philosophie-bac-techniques`, `philosophie-bac-info`
@@ -2133,6 +2135,3258 @@ de problèmes)** :
   - ✅ INCLUS : الدّولة · السّيادة · المواطنة · السّلطة · الحقّ · القانون · العدالة · الشرعيّة · الدّيمقراطيّة ; السّياسة, اللائكيّة, الكليانيّة ; libéralisme, anarchisme, philosophie du contrat social.
   - ⛔ EXCLU : idem — le programme de شعبة الآداب.
 
+#### مبحث 3.1 — الدّولة : السّيادة والمواطنة — transcription p.271-318
+
+> ✅ **Portée : p.271-318, intégral** — page d'ouverture du **محور 3** et du مبحث, la
+> **نافذة مدخل إلى التفكير في المسألة** (p.272-277) et la **نافذة سندات للتفكير في المسألة**
+> (p.278-318, **22 سندات**).
+> **Source** : manuel élève `210402` (كتاب الفلسفة — السّنة الرّابعة من التّعليم الثانوي —
+> الشّعب العلميّة, CNP).
+>
+> ⚠️ **Le brief commun `BRIEF-TRANSCRIPTION.md` annoncé par la consigne n'existait pas** dans le
+> scratchpad au moment de la transcription. Les conventions appliquées ici sont celles,
+> **constatées**, de `SECTION-mabhath2.md` (même manuel, même gabarit de fiche) et de
+> `BRIEF-MATIERE-philosophie-bac.md` : chiffres occidentaux, graphies arabes **telles
+> qu'imprimées**, extraits **jamais recopiés** (R-2 — thèse reformulée), تمهيد / هوامش /
+> notices / مهامّ **verbatim**.
+>
+> ⚠️ **Numérotation** : le manuel n'imprime **jamais** « 3.1 ». Il imprime un **`1`** en pastille
+> bleue à côté du titre `الدّولة : السّيادة والمواطنة` (p.271) — ce مبحث est le **مبحث 1 du
+> محور 3**. Le repère « 3.1 » est une convention de la fiche, pas du manuel.
+>
+> ⚠️ **Le gabarit « double page par سند » n'est PAS le gabarit de ce مبحث.** Constat : la
+> très grande majorité des سندات tiennent sur **une seule page** (texte + تمهيد), et la page
+> suivante porte **الكاتب / الهوامش / المهامّ**. Le nombre d'encadrés varie d'un سند à l'autre :
+> plusieurs n'ont **aucun** هامش. Le détail page par page est donné plus bas.
+
+---
+
+##### Page d'ouverture du محور 3 et du مبحث — p.271
+
+Bandeau du **محور** (en haut de page, sur fond crème) : **القيم بين النسبي والمطلق**.
+
+Titre du **مبحث**, dans une ellipse verte, précédé d'une pastille bleue portant **`1`** :
+**الدّولة : السّيادة والمواطنة**.
+
+**Les 5 concepts du مبحث**, imprimés dans le cartouche bleu sous le titre (dans cet ordre) :
+
+| ordre | concept imprimé |
+| --- | --- |
+| 1 | **الحقّ** |
+| 2 | **الدّيمقراطيّة** |
+| 3 | **السّلطة** |
+| 4 | **العدالة** |
+| 5 | **المواطن العالمي** |
+
+**Encadré de citation** (verbatim) :
+
+> إذا قيل لنا إنّه لأمْر جيّد أن يهلك واحد من أجل الجميع، فإنّي سأُعجب بهذا الحكم إذا صدر عن
+> وطني فاضل ووقور يكرّس نفسه طوعا، وبدافع الواجب للموت في سبيل خلاص بلاده. ولكن إذا قصد بذلك
+> أنّه من المسموح به للحكومة أن تضحّي ببريء من أجل خلاص الجمهور ـ فإنّي سأعتبر هذه الحكمة إحدى
+> أكثر الحِكَم التي اخترعها الطغيان حقارة على الإطلاق، وأكثرها خطأ… وأكثرها خطرا.. وأكثرها
+> تعارضا بشكل مباشر مع القوانين الأساسيّة للمجتمع.
+> — ▲ **ج. جاك روسّو، الاعترافات**
+
+Illustration : gravure monochrome de la **statue de la Liberté** (torche levée, tablette au
+bras), foule à son pied.
+
+---
+
+##### 3.1.1 نافذة مدخل إلى التفكير في المسألة — p.272-277
+
+###### Page de titre de la نافذة — p.272
+
+Titre imprimé : **مدخل إلى التفكير في المسألة**.
+
+**Encadré de citation** (verbatim) :
+
+> "ماذا كانت طبيعة التمايز، وماذا كان طابع التواصل؟ هل يوجد أيّ تعارض بين الغرائز الطبيعيّة
+> للفرد والمتطلبات الدائمة للدولة؟ أكان ما يعتبره الفرد عادلا بشكل طبيعي، شيئا آخر غير الذي
+> كانت الدولة تفرضه، بصفة دائمة، باعتباره كذلك؟ وإذا كان مثل هذا الاختلاف موجودا، فكيف ظهر ؟…"
+> — ▲ **أرنست باركر، أفلاطون وسابقوه**
+
+Illustrations : (a) photomontage surréaliste — un homme souriant en costume, une **chaussure
+noire géante** suspendue au-dessus de personnages courbés ou à demi enfouis dans le sable ;
+(b) tableau : une **tête de plâtre antique** sur un socle, face à un **plateau de balance** doré
+(composition à la Magritte).
+
+###### 1 — وضعية استكشاف أولى — p.273-274
+
+**Consigne imprimée** (verbatim) : *أقرأ النص وأتابع الحوار الدائر بين كليلة ودمنة:*
+
+**Support (p.273)** — un fragment de **dialogue entre كليلة et دمنة** (réplique de كليلة,
+réplique de دمنة, réplique finale de كليلة).
+
+**Référence imprimée** (verbatim) :
+
+> الفيلسوف الهندي بيدباً، كليلة ودمنة
+> نقله من الفهلويّة إلى العربيّة: **عبد الله بن المقفّع**
+> المكتبة الثقافيّة، بيروت — لبنان، ص 115—116
+
+**Thèse (reformulée, R-2)** : كليلة met en garde contre la fréquentation du **سلطان**, comparée
+à l'ascension d'une montagne escarpée dont les fruits sont précieux mais qui est le repaire des
+fauves — trois choses ne s'y risquent que des téméraires (fréquenter le sultan, confier ses
+secrets aux femmes, boire le poison pour l'éprouver). دمنة lui répond que **qui ne s'expose pas
+aux dangers n'obtient pas ce qu'il désire**, et que trois entreprises sont hors de portée sans
+grande ambition, dont **le service du sultan** ; l'homme vertueux, comme l'éléphant, n'a que
+deux places dignes de lui — honoré auprès des rois, ou dévot auprès des ascètes. Le débat
+oppose donc **retrait** et **engagement** dans la chose publique.
+
+**هوامش** (encadré `هوامـش :` p.273 — 3 entrées, verbatim resserré) :
+
+1. **كليلة ودمنة** : هما ابنا آوى، كانا ذوي دهاء وأدب. وكان دمنة أشرّهما نفسا وأقلّهما رضاً
+   بحاله.
+2. **عبد الله بن المقفّع** : كاتب أبي جعفر المنصور العباسي. فارسي الأصل، نشأ بالبصرة في النصف
+   الأوّل من القرن الثاني للهجرة. كان عريقا في الفارسيّة وعارفا باللغتين الفهلويّة واليونانيّة.
+   توفي في أواسط القرن الثاني للهجرة.
+3. **كليلة ودمنة** : هو كتاب في إصلاح الأخلاق وتهذيب النفوس وضعه فيلسوف هندي اسمه **بيدبا** من
+   واحد وعشرين قرنا للملك من ملوك الهند اسمه **دبشليم** ذكروا أنّه تولّى الهند بعد فتح
+   الاسكندر وطغى وبغى فأراد **بيدبا** إصلاحه وتدريه فألّف هذا الكتاب، وجعل النصح فيه على ألسنة
+   البهائم والطيور على عادة الهنود البراهمة في عصورهم القديمة. (انظر تمهيد الكتاب لمحمد
+   المرصفي؛ القاهرة، أكتوبر 1912)
+
+**المهام (p.274) — `أتقمّص الأدوار`**, deux colonnes (verbatim) :
+
+**أتقمّص دور كليلة..**
+
+- دمنة، هذا الغرّ؛ كيف لي أن أقنعه بالابتعاد عن الشأن السياسي حتّى لا يحترق بناره؟
+- أيّة مخاطر عليّ أن أسوقها حتّى أثنيه عن عزمه؟
+- كيف أقنعه بأنّ إصلاح السلطان هو بمثابة طلب ما لا يُطلب؟
+
+**أتقمّص دور دمنة.**
+
+- كليلة، هذا البائس؛ لماذا هو على هذه الحال من الاستسلام؟
+- كيف لي أن أقنعه بحقّي في المشاركة في الشأن السياسي؟
+- ما العمل حتّى يدرك الغنم الحاصل عن هذا التدخّل؟
+
+**`أستعيد موقعي وأفكّر من جديد…`** (verbatim) :
+
+- فيم يختلف كليلة ودمنة وفيم يتّفقان؟
+- أيّهما على صواب: السياسة شأن عام أم شأن خاص؟
+- ماذا يترتّب على اللامبالاة بالحياة السياسيّة؟
+- ماذا يترتب على المشاركة العامّة في الحياة السياسيّة؟
+- هل من منزلة أخرى غير منزلة "السياسي" ومنزلة "الناسك"؟
+
+Illustration (p.274) : photomontage — un **vautour** perché sur une table où est posé un livre
+rouge portant `CODE CIVIL`, un **pigeon** à côté.
+Encadré-citation (p.274) : « إنّي أخاف عليك من السلطان فإنّ صحبته خطرة » — **كليلة**.
+
+###### 2 — وضعية استكشاف ثانية — p.275-276
+
+**Consigne imprimée** (verbatim) : *أقرأ الوثيقة وأتثبّت في مضامينها…*
+
+**Support (p.275)** — encadré **وثيقة** : **الإعلان العالمي لحقوق الإنسان**, daté en bas
+**10 ديسمبر 1948**.
+
+⚠️ **Le manuel n'imprime PAS la Déclaration entière** : il en donne **9 articles choisis**, dans
+cet ordre (repérage — le texte lui-même n'est pas recopié ici) :
+
+| article imprimé | objet |
+| --- | --- |
+| **المادّة الأولى** | naissance libre et égale en dignité et en droits ; raison et conscience ; esprit de fraternité |
+| **المادّة الثانية** | jouissance de tous les droits **sans distinction** (race, couleur, sexe, langue, religion, opinion politique, origine, fortune, naissance…), et **sans distinction fondée sur le statut du pays** (indépendant, sous tutelle, non autonome, souveraineté limitée) |
+| **المادّة الثالثة** | droit à la vie, à la liberté et à la sûreté de la personne |
+| **المادّة الخامسة** | interdiction de la torture et des peines ou traitements cruels, inhumains ou dégradants |
+| **المادة الثامنة عشرة** | liberté de pensée, de conscience et de religion — y compris changer de religion, et la manifester seul ou en commun |
+| **المادّة التاسعة عشرة** | liberté d'opinion et d'expression, **sans considération de frontières** |
+| **المادّة العشرون** | liberté de réunion et d'association pacifiques ; nul ne peut être **obligé** de faire partie d'une association |
+| **المادة الثامنة والعشرون** | droit à ce que règne un **ordre social et international** permettant la pleine réalisation des droits proclamés |
+| **المادة الثلاثون** | aucune disposition ne peut être interprétée comme autorisant un État, un groupement ou un individu à **détruire** ces droits |
+
+**المهامّ (p.276) — 12 consignes** (verbatim) :
+
+- ما هوّ الإعلان العالمي لحقوق الإنسان؟ وهل اطلعت عليه من قبل؟
+- أحدّد، من بين المواد المذكورة، المواد التي لا أقبلها؟ أبرّر جوابي.
+- لماذا تحتاج مثل هذه الحقوق إلى تقنين؟
+- أستخرج أهمّ الحقوق التي تنصّ عليها الوثيقة وأرتّبها حسب الأهميّة. أبرّر ترتيبي.
+- أقارن نتيجة عملي بنتيجة عمل صديقي أو صديقتي وأناقشه (ها) في الأمر.
+- أتفق معه (ها) على ترتيب موحّد.
+- هل يمكن الاستغناء عن بعض هذه الحقوق؟ ماذا يترتب على ذلك؟
+- لو دُعيتُ إلى إثراء هذه الوثيقة بإضافة حقوق أخرى، ماذا أقترح؟
+- هل يمكن أن أشكّك في الطابع الكوني لهذه الحقوق؟
+- هل أحترم في علاقتي مع محيطي هذه الحقوق؟ أذكر بعض الوقائع.
+- ما هيّ المشاكل النظريّة والعمليّة التي يمكن حلّها باحترامنا لهذه الحقوق؟
+- من أراه أهلا لحماية هذه الحقوق؟
+
+Illustration (p.276) : reproduction de la **Déclaration des droits de l'homme et du citoyen**
+(deux figures allégoriques, œil dans le triangle rayonnant, tables de la Loi) — légende
+imprimée en français sous l'image : `Déclaration des droits de l'homme et du citoyen, Musée
+Carnavalet, Paris.`
+Encadré-citation (p.276) : « لكلّ إنسان حقّ التمتّع بكافّة الحقوق والحريّات الواردة في هذا
+الإعلان ».
+
+###### الأبعاد الإشكاليّة للمسألة — p.277
+
+⚠️ Comme au مبحث 2, cette page **n'imprime aucune liste rédigée de dimensions problématiques** :
+c'est une **page de méthode + espace de travail vierge** (cadres pointillés à remplir).
+
+**Bloc `1`** — le titre du مبحث éclaté en trois cases : **السّيادة** — **و** — **المواطنة**
+(flèche descendante depuis la case centrale « و »), puis les consignes (verbatim) :
+
+- أركّز على أداة العطف وأستحضر العلاقات المنطقيّة التي تفترضها.
+- أقيم هذه العلاقات بين "السّيادة" و"المواطنة".
+- ماذا يترتّب على كلّ واحدة منها؟
+
+Cadre à remplir : **أستخلص أهمّ الأسئلة التي يمكن أن توجهني في التفكير في هذه العلاقات**
+(5 lignes numérotées 1-5, vides).
+
+**Bloc `2`** — les 5 concepts rappelés en bandeau : **الحقّ – الديمقراطيّة – السلطة – العدالة –
+المواطن العالمي**, avec deux consignes fléchées (verbatim) :
+
+- ▲ أنتبه إلى هذه المعاني وأتثبّت فيها
+- ▼ أستحضر المعاني التي تناقضها
+
+puis deux colonnes à remplir : **أصلها بالسيادة وأستخلص ما يترتب من أسئلة أساسيّة:** /
+**أصلها بالمواطنة وأستخلص ما يترتب من أسئلة أساسيّة:** (4 lignes vides chacune).
+
+Cadre final : **أستخلص المشكلات الفلسفيّة وأبيّن الرهان من وراء التفكير فيها.** (5 lignes vides).
+
+---
+
+##### 3.1.2 نافذة سندات للتفكير في المسألة — p.278-318
+
+###### Page de titre de la نافذة — p.278
+
+Titre imprimé (vérifié au zoom) : **نافذة سندات للتفكير في المسألة**.
+
+Deux **encadrés de citation** (verbatim) :
+
+> "… ثمّ إنّ هذا الاجتماع إذا حصل للبشر كما قرّرناه، وتمّ عُمران العالَم بهم، فلا بدّ من وازع
+> يدفع بعضَهم عن بعض، لما في طِباعِهم الحيوانيّة من العدوان والظلم… فيكون ذلك الوازع واحدا منهم
+> يكون له عليهم الغلبة والسلطان واليد القاهرة حتّى لا يصل أحدٌ إلى غيره بعدوان؛ وهذا هو معنى
+> الملك ".
+> — ▲ **ابن خلدون، المقدّمة**
+
+> " تستطيع القوّة العسكريّة ممارسة الإكراه على الجسد، لكن تأثيرها على العقول والقلوب يظلّ موضع
+> شك ".
+> — **تودوروف**
+
+Illustrations : (a) nature morte — codes juridiques rouges, un livre ouvert, des lunettes et une
+**balance** dorée ; (b) un **poing menotté** à côté d'une **rose** rose.
+
+###### سند 1 — في السياسي — p.279-280
+
+**التمهيد** (verbatim) :
+
+> إن الاشتغال على مجال ما يقتضي رسم حدوده بتعيين ما يختصّ به وما يفرّقه عمّا سواه. وإذا كان من
+> شأن الفكر الفلسفي فهم مجالات الممارسة بوجوهها فإنّه عليه، في حال اهتمامه بالمجال السياسي
+> تحديدا، بيان ما يعنيه " السياسي " بالذات وما يميّزه عن الأخلاقي والجمالي…
+
+**Référence imprimée** : **كارل شميت، معنى السّياسي** — `Carl SCHMITT, La notion de politique,
+"Coll champs", éd Flammarion, 1992, pp 63-65`.
+
+**Thèse (reformulée, R-2)** : on ne peut définir « le politique » qu'en dégageant ses catégories
+propres. Or les autres domaines ont chacun leur couple fondateur — **bien/mal** (moral),
+**beau/laid** (esthétique), **utile/nuisible** ou **rentable/non rentable** (économique). Le
+critère spécifique du politique, auquel se ramènent les actes politiques et leurs mobiles, est la
+**distinction ami/ennemi** (`التمييز بين الصديق والعدو`) : elle a **valeur de critère, non de
+définition exhaustive**. Elle est **autonome** — sans se déduire des autres oppositions ni s'y
+réduire. L'**ennemi politique** n'est pas nécessairement mauvais moralement, ni laid, ni même un
+concurrent économique (on peut avoir intérêt à commercer avec lui) : il suffit qu'il soit
+**l'autre, l'étranger**, dont l'existence rend possible un conflit que **les normes générales
+préétablies** ne peuvent trancher et qu'**aucun tiers neutre** ne peut arbitrer.
+
+**الهوامش** : ⚠️ **aucun** encadré de note sur ce سند.
+
+**الكاتب — كارل شميت (1888-1985)** (verbatim resserré) : فيلسوف وسياسي وعالم قانون ألماني.
+شغل فلاسفة القرن العشرين ولُقّب "بالعقل المعادي لليبراليّة". ينحدر من أسرة كاثوليكيّة ودرس في
+برلين ثمّ ستراسبورغ حيث حصل على شهادة الدكتوراه في مجال نظريّة الدّولة. وبداية من 1928 انتقل إلى
+التدريس بجامعة برلين التي ألّف فيها أهمّ مؤلّفاته **"معنى السياسي"** (1932) وفيه نقد
+الديمقراطيّة والليبراليّة ورأى فيهما إضعافا لسلطة الدّولة. دافع منذ سنة **1930** عن النظام
+السياسي القائم على مبدأ الرئاسة الديكتاتوريّة لذلك اعتبره **كارل بوبير** عدوّا لدودا للمجتمع
+الليبرالي المفتوح. كتب أيضا : **"اللاهوت السياسي"** (1922)، **"نظرية التشريع"** (1928)،
+**"البرلمانية والديمقراطية"** (1923). كما صدر له كتاب **"لوفياتان في نظرية الدولة لتوماس هوبس"**
+(1938)، و**"الحرب الأهلية العالمية"** (1953—1973).
+
+**المهام** (verbatim) :
+
+- لِمَ نحتاج إلى التمييز، في مجال الممارسة الإنسانية، بين مجالات مختلفة؟
+- أحدّد شروط إمكان تعريف السياسي حسب الكاتب.
+- ما هو المعيار المميّز للسياسي وما علاقته بمعايير المجالات الأخرى؟
+- أتبيّن دلالة هذا المعيار وأحدّد قيمته في نظر الكاتب.
+- أستخلص السمات المميزة للسياسي في ضوء هذا التحديد.
+- هل في التمييز بين السياسي والأخلاقي والاقتصادي والجمالي ما ينفي الصّلة بينها؟
+- هل تساعدني مقاربة الكاتب على التمييز بين السياسة والسياسي؟
+
+**Encadré-citation (p.280)** : « إن ما يختصّ به السياسي، والذي تُردّ إليه الأفعال السياسية
+ودوافعها، هو التمييز بين الصديق والعدو » — **شميت**.
+
+**Illustrations** : p.279 — petit **portrait gravé** en médaillon. ⚠️ **Anomalie** : la gravure
+montre un homme âgé du **XIX<sup>e</sup> siècle** (longs favoris blancs, col haut et cravate
+nouée) ; ce **n'est pas** Carl Schmitt (1888-1985), et le manuel ne la légende pas.
+p.280 — photomontage : un **pistolet** et un **revolver** tenus au-dessus d'une **poignée de
+main**, sur fond orangé.
+
+###### سند 2 — حدّ السلطة — p.281
+
+⚠️ **سند tenant sur une seule page** : تمهيد + texte + الكاتب + المهامّ, tout est sur p.281.
+
+**التمهيد** (verbatim) :
+
+> قد تغرينا بداهة الحياة كما اعتاد الناس أن يروها، لكن ما أن ندقّق النظر حتّى نكتشف تهافت ما
+> ألفناه، ذلك هو حال علاقتنا بالسلطة ، فلحظة تصوّرناها في الدّولة اكتشفنا أنّها أوسع مدى وأدَقّ
+> معنى.
+
+**Référence imprimée** : **ميشال فوكو، إرادة المعرفة** — ترجمة مطاع صفدي وجورج أبي صالح، مركز
+الإنماء القومي، 1990، ص 101 — 102. `Michel FOUCAULT; La volonté de savoir, éd. Gallimard, 1976,
+pp 121-122`.
+
+**Thèse (reformulée, R-2)** : Foucault écarte **trois** identifications courantes du mot
+« pouvoir » — (a) l'ensemble des **institutions et appareils** qui garantissent la soumission des
+citoyens dans un État, (b) un **mode d'assujettissement** qui, à la différence de la violence,
+prendrait la forme d'une **règle**, (c) un **système général de domination** exercé par un
+élément ou un groupe sur un autre et traversant tout le corps social. Souveraineté de l'État,
+forme de la loi, unité globale d'une domination ne sont que des **formes terminales** du pouvoir,
+non ses données premières. Le pouvoir est **la multiplicité des rapports de force** immanents au
+domaine où ils s'exercent ; **le jeu** qui, par affrontements et luttes incessants, les
+transforme, les renforce ou les inverse ; les **appuis** que ces rapports trouvent les uns dans
+les autres, formant chaîne ou système, ou au contraire les **décalages et contradictions** qui
+les isolent ; enfin les **stratégies** dont le dessin général se cristallise dans les appareils
+d'État, la formulation de la loi et les hégémonies sociales. Conclusion : *le pouvoir n'est ni
+une institution, ni une structure, ni une capacité dont certains seraient dotés — c'est le nom
+donné à une situation stratégique complexe dans une société donnée.*
+
+**الهوامش** : ⚠️ **aucun** encadré de note.
+
+**الكاتب** : ⚠️ **renvoi, pas de notice** — imprimé verbatim :
+**ميشال فوكو : انظر التعريف بالكاتب المصاحب للسند عدد 21 ( الإنيّة والغيريّة )**.
+
+**المهام** (verbatim) :
+
+- أبدأ بتعريف السّلطة كما أتصوّرها.
+- يستبعد الكاتب تحديدات مختلفة للسّلطة: أضبطها وأكشف عن المجال المشترك بينها.
+- أكشف عن المنطق الذي قاد الكاتب في هذا الاستبعاد.
+- أتتبّع النصّ وأتقصّى دلالة السلطة عند الكاتب.
+- كيف أفهم، في ضوء التحديدات السابقة، العبارة الأخيرة من النصّ؟
+- في ضوء مقاربة الكاتب، هل يمكن اختزال السلطة في الدّولة؟
+- أقترح تعريفا جديدا للسلطة وأقارنه بتصوّري السابق.
+
+**Illustration** : p.281 — **photographie de Michel Foucault** (crâne chauve, lunettes, col roulé
+blanc), en médaillon.
+
+###### سند 3 — التفكير في السلطة — p.282-283
+
+**التمهيد** (verbatim) :
+
+> السّلطة اختراع بشري، اقترن وجودها بالقوة، يمارسها الإنسان وتمارس عليه، ينجذب إليها بصفتها
+> موضوع إغراء وينفر منها كما لو كانت طاعونا مميتا حتى غدت أمرا ملتبسا التفكير فيه" يفقد الصواب ".
+
+*(⚠️ le guillemet fermant de la dernière ligne est **imprimé tel quel**, sans guillemet ouvrant
+correspondant.)*
+
+**Référence imprimée** : **بول ريكور، التاريخ والحقيقة** — `Paul RICŒUR; Histoire et Vérité, éd.
+Ceres, 1995, pp 133-134`.
+
+**Thèse (reformulée, R-2)** : le pouvoir est **la structure fondamentale du politique** — il
+s'insinue dans tous les rapports gouvernant/gouverné, et même à la limite d'une communauté qui
+se gouvernerait elle-même sans médiation ni délégation, subsisterait l'écart entre **commandement
+et obéissance**. C'est grâce au pouvoir qu'une communauté historique s'organise en État et
+devient **capable de décider**. Or c'est aussi le rapport humain le plus **fragile** : il bâtit le
+pouvoir de l'homme sur l'homme comme une communication **inégale**, non réciproque, hiérarchique
+et non fraternelle. Cette relation est pourtant **fondatrice** de l'histoire — c'est par le
+pouvoir que l'homme fait l'histoire — et c'est **la relation même qui forme l'homme et qui n'a
+jamais cessé de l'égarer** : d'où la plainte immémoriale des sages contre les grands et les
+puissants ; Socrate dessine les traits du **tyran** et concentre en lui l'hostilité à la
+philosophie, avant de tomber victime de la **cité injuste**. Alain résume : *« السّلطة تُفقِد
+الصّواب »*. Le désir de pouvoir n'est pas orienté vers le **plaisir** : l'amour véritable du
+pouvoir a quelque chose de l'**ascèse**, on lui sacrifie le plaisir. Enfin, penser le pouvoir ne
+s'épuise pas dans une **méditation morale** sur les passions du pouvoir et leur extirpation :
+chacun sent que la pensée tourne ici dans un champ étroit si elle s'emprisonne dans les seuls
+mobiles individuels — le problème du despote *« n'est que la projection subjective du problème du
+pouvoir »*. Il existe une **maladie du pouvoir** irréductible à la mauvaise volonté des individus,
+qui ne se ramène ni à la violence du prince ni à la lâcheté des sujets : violence de l'un et
+lâcheté de tous se **conjuguent** en une figure corrompue unique, se renforçant l'une l'autre,
+et façonnant en retour **le despote et son vis-à-vis, l'humilié**.
+
+**الهامشان** (verbatim) :
+
+1. **المدينة الجائرة** : إشارة إلى أثينا التي حوكم فيها سقراط وأعدم.
+2. **آلان** `Alain` : كنية للفيلسوف الفرنسي إيميل أوغست شارتييه `Emile Auguste CHARTIER
+   (1868-1951)`.
+
+**الكاتب** : ⚠️ **renvoi, pas de notice** — imprimé verbatim :
+**بول ريكور: انظر التعريف بالكاتب المصاحب للسند عدد 21 ( الخصوصيّة والكونيّة )**.
+
+*(⚠️ à noter : les سندان 2 et 3 renvoient tous deux à « السند عدد 21 », mais de **مباحث
+différents** — الإنيّة والغيريّة pour Foucault, الخصوصيّة والكونيّة pour Ricœur.)*
+
+**المهام** (p.283, verbatim) :
+
+- ماذا يعني الكاتب حين يعرّف السلطة بما هي " البنية الأساسية للسياسي"؟
+- أيّة علاقة بين السلطة وتاريخ الإنسان ؟
+- كيف تشكّل السلطة الإنسان و تضلّه في الوقت نفسه ؟
+- كيف أفهم استحضار الكاتب لشخصيّة سقراط؟
+- ما قيمة مقاربة السلطة من زاويّة أخلاقيّة؟
+- أيّة دلالة لمرض السلطة في نظر الكاتب وهل يعدّه هيكليّا أم عرضيّا؟
+- أيّ غنم أحصله من مقاربة الكاتب بشأن التفكير في السّلطة؟
+
+**Encadré-citation (p.283)** : « السّلطة هي البنية الأساسية للسّياسي » — **بول ريكور**.
+
+**Illustrations** : p.282 — **photographie de Paul Ricœur** (homme âgé à lunettes, veste, devant
+une bibliothèque). p.283 — reproduction du **Sacre de Napoléon** (David) : l'empereur couronné de
+laurier élevant la couronne au-dessus de Joséphine agenouillée.
+
+###### سند 4 — العصبيّة والمُلْك — p.284
+
+⚠️ **سند tenant sur une seule page**.
+
+**التمهيد** (verbatim) :
+
+> لم يخل واقع البشر من سلطان ينشدّون إليه رغبة ورهبة، به يحتمون ومنه يخشون وهم في ذلك لا يدركون
+> له أصلا ولا كنها ولا يعلمون من حقيقة فعله إلا أن له غلبةً يطلبُ الجميعُ وُدَّها ومنها يأمنون.
+
+**Titre courant imprimé au-dessus du texte** (intitulé du chapitre de la المقدّمة, verbatim) :
+**في أنّ الملك والدولة العامة إنّما يحصلان بالقبيل والعصبيّة**.
+
+**Référence imprimée** : **ابن خلدون، المقدّمة** — طبعة دار العودة 1981، ص 121—122.
+
+**Thèse (reformulée, R-2)** : la **مغالبة** et la **ممانعة** ne s'obtiennent que par la
+**عصبيّة** — parce qu'elle seule produit la solidarité du groupe et fait que chacun se sente
+atteint par ce qui atteint son compagnon. Or le **مُلْك** est une position **honorée et
+convoitée**, qui donne accès à tous les biens et plaisirs de ce monde : il est donc l'objet d'une
+**compétition** où nul ne cède à autrui sans y être contraint, d'où conflits, guerre et combats —
+et rien de tout cela n'advient sans عصبيّة. Ce fait échappe au **grand nombre** et est
+« oublié » : les générations qui vivent longtemps sous une dynastie déjà civilisée ne savent plus
+comment Dieu l'a instaurée ; les sujets ne connaissent que les **maîtres de l'État** installés, la
+soumission leur est devenue une seconde nature et ils croient pouvoir se passer de la عصبيّة —
+c'est le cas, en particulier, des **أهل الأندلس**, chez qui l'oubli de cette عصبيّة, la longueur
+de la durée et l'affranchissement de son emprise ont fait s'évanouir la patrie même.
+
+**الهوامش** : ⚠️ **aucun** encadré de note.
+
+**الكاتب** : ⚠️ **renvoi, pas de notice** — imprimé verbatim :
+**ابن خلدون : انظر التعريف بالكاتب المصاحب للسند عدد 16 ( الخصوصيّة والكونيّة )**.
+
+**المهام** (verbatim) :
+
+- أحدّد علاقة العصبية بالملك أو الدولة.
+- هل من تمييز في النص بين الملك والدولة، بين الدولة والسلطة؟
+- ما دلالة القول: " الملك منصب شريف ملذوذ "؟
+- هل من تناقض بين القول بشرف الملك واقتضائه الغلبة؟
+- يقرن ابن خلدون تعاقب الأجيال وتحولات الدولة: ماذا أفهم من هذه العلاقة؟
+- أبحث عن طرافة التفسير الخلدوني لسيادة الدولة في ضوء ما عرفت عن هذا الأمر.
+- أمتحن وجاهة القول بفعالية العصبية والقبلية في الحياة السياسية في ضوء واقع الدولة المعاصرة.
+
+**Illustration** : p.284 — **portrait enluminé d'Ibn Khaldoun** (turban blanc, robe bleue, livre
+ouvert), en médaillon.
+
+###### سند 5 — الحاجة إلى الدولة — p.285-286
+
+**التمهيد** (verbatim) :
+
+> لم ينشغل الإنسان بالخضوع للدولة من عدمه بقدر انشغاله بتبرير هذا الخضوع. واقتضى التبرير مساءلة
+> الدولة عن أصلها وعلّة نشأتها عسانا نتعقّل غايتها وندرك طبيعة حاجتنا إليها.
+
+**Référence imprimée** : **هيوم، رسالة في الطبيعة البشريّة** — `D. HUME; Traité de la nature
+humaine. éd Aubier Montaigne, pp 660 - 661`.
+
+**Thèse (reformulée, R-2)** : le **gouvernement** est une invention **très utile**, et même dans
+certaines circonstances une nécessité absolue pour l'homme — mais **pas dans toutes** les
+circonstances. Il n'est pas impossible que des hommes se maintiennent quelque temps en société
+**sans** y recourir. Les hommes préfèrent certes toujours un intérêt **immédiat** à un intérêt
+**lointain**, et il leur est difficile de résister à la tentation d'un gain saisissable tout de
+suite par crainte d'un mal éloigné ; mais ce défaut est **d'autant moins manifeste** que les biens
+et les plaisirs de la vie sont **rares et de peu de valeur**, comme ils le sont toujours à
+l'**enfance de la société** — un Indien qui n'a envie ni d'arracher la hutte d'autrui ni de lui
+voler son arc jouit déjà de ce qu'il possède, et la chance à la chasse ou à la pêche n'est
+qu'accidentelle et passagère, donc peu propre à ébranler la société. Hume se démarque alors
+expressément de « certains philosophes » : il est **très loin de croire** que les hommes sont
+incapables de vivre en société **sans gouvernement**, et il soutient que les **premières
+origines** du gouvernement sont nées de conflits **non pas entre membres d'une même société**
+mais **entre sociétés différentes**. Une richesse même faible suffit à produire ce second effet,
+alors qu'elle ne suffit pas à produire le premier : les hommes ne redoutent rien tant, de la
+guerre et de la violence collective, que la **résistance** qu'ils y rencontrent — et comme cette
+résistance est **partagée**, elle leur paraît moins terrible ; comme elle vient d'**étrangers**,
+elle leur semble avoir des suites **moins graves** que celle d'hommes qu'ils affrontent seuls,
+avec lesquels ils ont d'ordinaire un commerce profitable et sans la société desquels il leur
+serait impossible de continuer à vivre. **Ainsi une guerre extérieure, dans une société sans
+gouvernement, produit nécessairement la guerre civile.**
+
+**الهوامش** : ⚠️ **aucun** encadré de note.
+
+**الكاتب** : ⚠️ **renvoi, pas de notice** — imprimé verbatim :
+**هيوم : انظر التعريف بالكاتب المصاحب للسند عدد 17 ( الإنيّة والغيريّة )**.
+
+**المهام** (p.286, verbatim) :
+
+- بأيّ معنى تعدّ الحكومة اختراعا مفيدا؟
+- ما هيّ الحجج التي يسوقها الكاتب لاستبعاد القول بأنّ الدولة ضرورة مطلقة؟
+- استثمر نافذة سياقات فكريّة ( فلسفة التعاقد ) للكشف عن ضمنيات موقف الكاتب.
+- أتبيّن دلالة " مثال الهندي " وأوضّح وظيفته الحجاجيّة.
+- أيّ ضرب من الصراع يوجب قيام الدولة؟
+- " إنّ حربا خارجيّة في مجتمع بلا حكومة تحدث بالضرورة الحرب الأهليّة ": هل حافظ هذا الحكم على
+  راهنيّة ما؟
+
+**Encadré-citation (p.286)** : « إنّني بعيد كلّ البعد عن الاعتقاد، شأن بعض الفلاسفة، أنّ البشر
+عاجزون كل العجز على العيش في مجتمع دون حكومة » — **هيوم**.
+
+**Illustrations** : p.285 — **portrait gravé de David Hume** (perruque, habit XVIII<sup>e</sup>).
+p.286 — **Napoléon I<sup>er</sup> en costume de sacre** (manteau d'hermine, sceptre, couronne de
+laurier), devant un globe et un livre ouvert.
+
+> 🔎 **Renvoi utile pour la génération** : la 3<sup>e</sup> مهمّة de ce سند renvoie explicitement à
+> une **نافذة دعائم — سياقات فكريّة : فلسفة التعاقد**. Cette نافذة existe donc dans le مبحث,
+> **au-delà de la p.318** (hors de cette tranche).
+
+###### سند 6 — في الدولة — p.287-288
+
+**التمهيد** (verbatim) :
+
+> تحمل الدولة آمال البشر في الذّود عن حقوقهم ودرء الأذيّة عنهم بما يمكّن الإنسان من تحقيق كمال هو
+> جدير به. لكن قد لا يكون ذلك أكثر من تمويه تتسلّل من خلاله الرغبة في الاستحواذ على كل شيء
+> فيؤول الحقّ الذي تدّعي حفظه إلى مجرّد إجراء يحضر قولا ويغيب فعلا وكأنّ الخير المطلق يُنذِر بشرّ
+> مطلق.
+
+**Référence imprimée** : **ميخاييل باكونين، الأعمال الكاملة** — `Mikhaïl BAKOUNINE; In BAKOUNINE,
+présentation, choix de textes, Henri Arvon Michel, Seghers. 1996. pp.98 - 99`.
+
+**Thèse (reformulée, R-2)** : à la question « qu'est-ce que l'État ? », métaphysiciens et
+juristes répondent : la **chose publique**, les intérêts et le bien communs, le droit de tous,
+opposés à la conduite destructrice née des intérêts et des caprices égoïstes de chacun ; l'État
+serait **la justice et la moralité incarnées** — d'où l'idée qu'il n'est pas d'acte plus haut ni
+de devoir plus grand, pour l'individu, que de se vouer et de se sacrifier, jusqu'à mourir, pour
+la victoire et la puissance de l'État. Bakounine renverse la thèse : cette « théologie
+politique », exactement comme la théologie religieuse, **dissimule sous de belles apparences des
+faits ordinaires et sordides**. L'idée d'État exige en réalité le **sacrifice de la liberté
+naturelle** et des intérêts de chacun, ainsi que des intérêts des groupements **relativement
+petits** (associations, communes, régions), au nom de l'intérêt et de la liberté de tous et de la
+prospérité du « grand tout ». Mais ce « grand tout », qu'est-il en réalité ? Il devrait être la
+somme de tous les individus et de toutes les communautés humaines les plus étroites — or il ne
+peut l'être, puisqu'on exige justement le sacrifice de tous les intérêts individuels et locaux
+pour le composer. Ce n'est donc pas un **ensemble vivant** où chacun respire à son aise et devient
+d'autant plus fécond et fort que la liberté de chacun y est plus large ; ce n'est pas la société
+humaine naturelle, celle qui **confirme et développe** la vie de chacun par la vie de tous ; c'est
+au contraire l'**immolation** de l'individu et des associations locales, la **limite**, la
+**négation** de la vie et du droit de toutes les parties qui le constituent, au nom du prétendu
+bien de tous. Conclusion : *ce tout, c'est l'État — l'autel de la religion politique sur lequel la
+société naturelle est toujours sacrifiée : une universalité prédatrice qui vit d'offrandes
+humaines.*
+
+**الهوامش** : ⚠️ **aucun** encadré de note.
+
+**الكاتب — ميخاييل باكونين (1814-1876)** (verbatim resserré) : مفكّر وثوري روسي. التقى
+**بماركس وبرودون** بباريس والتحق نهائيّا **بالفوضويّة** (1864) وأنشأ "الحلف العالمي للديمقراطيّة
+الاجتماعيّة". أطرده ماركس وأتباعه من " الأمميّة الأولى " (1872). كان من أنصار الملكيّة المشتركة
+لوسائل الإنتاج وعارض ملكيّة الدولة. من أهمّ كتاباته: **" في التعاضد "** (1869)، **" كومنة باريس
+ومفهوم الدولة "** (1871)، ويبقى كتابه **" الإله والدّولة "** (1871) أهمّ مؤلَّفاته، وفيه دافع عن
+فكرته الأساسيّة الرّافضة لكلّ أشكال السلطة ومؤكدا على أن الإنسان لن ينال حريّته إلاّ في مجتمع
+حرّ أي مجتمع دون سلطة الدولة. وفي رأيه وُجدت القوانين السياسيّة لإخضاع الإنسان لسلطة الدولة.
+والإنسان الحرّ هو الإنسان الذي لا يخضع إلاّ لنفسه وذلك بفضل معرفته بقوانين الطبيعة. فإذا كانت
+القوانين السياسيّة تستعبده فإنّ قوانين الطبيعة تحرّره.
+**( لمزيد التعمّق انظر نافذة دعائم للتفكير في المسألة، سياقات فكريّة: الفوضويّة )**.
+
+**المهام** (verbatim) :
+
+- أيّ تصوّر للدولة يناقشه الكاتب؟
+- ما دلالة عبارة " اللاهوت السياسي " التي يستعملها الكاتب؟
+- ما مصير الحقّ في ظلّ الدولة حسب توجّه الكاتب؟
+- كيف أفهم التقابل الذي يقيمه الكاتب بين الدولة والمجتمع الطبيعي؟
+- أستخلص تصوّر الكاتب للدولة وأفكّر في وجاهته. أحرّر فقرة في الغرض.
+
+**Encadré-citation (p.288)** : « إن هذا الكلّ هو الدولة، مذبح الدين السياسي الذي يُذبح فوقه دوما
+المجتمع الطبيعي: إنّه كليّة مفترسة تعيش على قرابين بشريّة » — **باكونين**.
+
+**Illustrations** : p.287 — **portrait peint de Bakounine** (barbe fournie, cheveux longs), en
+médaillon. p.288 — photographie d'une **foule de jeunes gens le bras tendu** en salut collectif.
+
+> 🔎 **Second renvoi à la نافذة دعائم** : la notice de Bakounine renvoie à
+> **سياقات فكريّة : الفوضويّة** — deuxième سياق فكري attesté du مبحث, également au-delà de p.318.
+
+###### سند 7 — حدّث زرادشت عن الدولة قال… — p.289-290
+
+**التمهيد** (verbatim) :
+
+> كثيرا ما ننشدّ إلى الدولة ونعتبرها شرط إمكان وجودنا، فهي التي حددت ماضينا وتؤمن حاضرنا وترسم
+> أفق مستقبلنا، لذلك يربكنا القول بميلاد الإنسان حين تفنى الدولة، فتنقلب خشيتنا من التيه في صورة
+> غيابها إلى وهم نسينا أنه كذلك وكأن بين الوهم والحقيقة خيطا رفيعا نسجته عنكبوت.
+
+**Référence imprimée** : **نيتشه، هكذا حدّث زرادشت (1)** — ترجمة فليكس فارس، منشورات المكتبة
+الأهليّة — بيروت، ص72— 73 — 47 — 57 ( بتصرّف لجنة التأليف ). `NIETZSCHE; Ainsi parlait
+Zarathoustra. éd. Mercure de France, pp 66 -70`.
+
+*(⚠️ la mention **« بتصرّف لجنة التأليف »** — texte remanié par la commission de rédaction — est
+imprimée sur ce سند ; c'est le seul de la tranche à la porter.)*
+
+**Thèse (reformulée, R-2)** : Zarathoustra oppose **peuple** et **État**. Il subsiste en quelques
+lieux de la terre des peuples et des communautés, mais « chez nous » il n'y a plus que des
+États. L'État est **le plus froid des monstres froids** ; il ment froidement, et son mensonge
+est celui-ci : *« moi, l'État, je suis le peuple »*. Or les peuples ont été créés par les
+**créateurs**, ceux qui ont répandu la foi et l'amour et ont ainsi servi la vie ; ceux qui
+tendent des pièges à la multitude, au contraire, **détruisent** pour bâtir des États sur les
+ruines, hissent une épée au-dessus du peuple et dressent devant lui cent convoitises. Là où il y
+a encore un peuple, l'État n'est pas compris — il est haï comme un **mauvais œil** et vu comme une
+transgression des coutumes et des lois. Preuve : chaque peuple a son propre **langage du bien et
+du mal**, langage qu'il s'est forgé lui-même dans ses lois et coutumes ; l'État, lui, **ment** en
+tout ce qu'il dit du bien et du mal, et **rien de ce qu'il possède ne lui appartient** — tout est
+volé. Tout en lui est **faux** : il mord avec des dents empruntées, ses entrailles sont
+fabriquées, son emblème n'est qu'un « discours confus » sur le bien et le mal — il tend vers
+l'anéantissement et le proclame en appelant ouvertement les prophètes de mort. Trop de gens
+viennent au monde, et l'État n'a été inventé que **pour les superflus**, les intrus dans la vie :
+voyez comme il les attire, les serre contre sa poitrine, les étouffe de baisers, tandis qu'il
+gronde : *« il n'y a rien de plus grand que moi sur la face de la terre, car je suis la main de
+la divinité ordonnatrice »*. Ces intrus amassent l'argent : plus leurs trésors grossissent, plus
+leur misère grandit ; ils aspirent au pouvoir et se saisissent d'abord de son premier moteur,
+**l'argent** — impuissants pourtant. Ils grimpent les uns sur les autres comme des **singes**,
+se bousculant dans la boue vers l'**abîme** : chacun rêve du trône, croyant le bonheur assis là,
+alors que souvent c'est la boue qui monte au trône, et le trône qui tombe dans la boue. Ce sont
+tous des fous furieux, des singes agités escaladant le socle de leur **idole froide**. Là où
+finit l'État commence l'homme véritable : y monte le **chant de la nécessité**, mélodie unique et
+sans réplique. **Là où finissent les États, regardez, mes frères : ne voyez-vous pas
+l'arc-en-ciel et les ponts du surhumain ?**
+
+**الهامش** (une seule note, verbatim resserré) :
+
+1. **زرادشت** `Zarathoustra` : نبي آري ولد حوالي سنة 630 قبل الميلاد، تنسب إليه الديانة
+   الزرادشتية وهو دين معظم الفرس قبل الإسلام، أما اليوم فتدين له أقليات في إيران والهند.
+   اختلطت حياته بكثير من الأساطير جعلته أسطورة ورمزا. لا شكّ أن في اختيار نيتشه لزرادشت عنوانا
+   لمؤلفه دلالة رمزية إذ يُعرَف عن زرادشت النبي نبوغه ونفوره من العادات والتقاليد فضلا عن دعوته
+   لإقامة علاقة محبة وتعاون وصداقة بين الإنسان والآلهة بدل علاقة الخوف.
+
+**الكاتب** : ⚠️ **renvoi, pas de notice** — imprimé verbatim :
+**نيتشه : انظر التعريف بالكاتب المصاحب للسند عدد 19 ( الإنيّة والغيريّة )**.
+
+**المهام** (p.290, verbatim) :
+
+- أنتبه إلى الأسلوب الذي كُتب به النصّ وأبيّن طرافته شكلا ممكنا للكتابة الفلسفيّة.
+- أستخرج جملة المجازات المتصلة بالدولة وأتبيّن دلالتها الرمزيّة.
+- من يحتاج الدولة؟ و لِمَ يحتاجها؟
+- هل ابتكر الإنسان الدولة من أجل الإنسان؟
+- أيّة علاقة يقيمها نيتشه بين فناء الدولة وظهور الإنسان الأسمى؟
+- استعمل الكاتب معجميّة أخلاقيّة في وصف الدولة: ألا يعبّر هذا على خرق للسياسي؟
+- هل تفضي مقاربة الكاتب إليّ ضرب من العدميّة السياسيّة؟
+
+**Illustration** : p.289 — **photographie de Nietzsche** (moustache, veste sombre), en médaillon.
+p.290 : ⚠️ **aucune illustration, aucun encadré-citation**.
+
+###### سند 8 — مراتب الرئاسة — p.291-292
+
+**التمهيد** (verbatim) :
+
+> لأن واقع البشر لا يرتقي أصلا إلى ما ينشدون، فإنهم لا ينفكون عن الحلم يبحثون فيه عن إمكان
+> لمدينة "فاضلة" لا مكان فيها للظلم وحافظة لاستمرار السيادة، لكلٍّ فيها حدُّه، يتوحّد فيها الشيء
+> وضدّه؛ مدينة يرضاها العقل كاملةً، تحاكي كمالَ ما هو أصلا في السّماء.
+
+**Référence imprimée** : **الفارابي، السياسة المدنية** — سلسلة " عناصر "، دار سيراس للنشر،.
+ص 72—73.
+
+**Thèse (reformulée, R-2)** : dans la cité, les rangs de **رئاسة** et de **خدمة** sont
+**hiérarchisés** selon la nature (فِطَر) des habitants et selon l'éducation reçue. Le **chef
+premier** (الرئيس الأوّل) ordonne les groupes et assigne à chacun le rang qui lui revient — rang
+de service ou rang de commandement — de sorte qu'il existe des degrés plus ou moins proches du
+sien, jusqu'aux rangs de pur service sans aucune part de commandement. Le chef, après avoir
+ordonné ces degrés, fixe une **وصيّة** pour ce qu'il veut imposer aux habitants et la confie aux
+plus proches de lui, qui la transmettent à leur tour à ceux qui les suivent, jusqu'au dernier
+serviteur. La cité devient alors **un tout dont les parties sont liées, ordonnées, hiérarchisées
+en antériorité et postériorité** — elle **ressemble aux existants** (الموجودات), qui commencent au
+Premier et descendent jusqu'à la **matière première** et aux **أسطقسات**, liés eux aussi selon la
+même solidarité ; et **le gouvernant de la cité est semblable à la Cause première** par laquelle
+existent tous les autres existants. Ainsi les rangs de l'existence s'abaissent-ils
+progressivement, chacun étant à la fois chef et subordonné, jusqu'aux existants qui n'ont
+**aucune** part de commandement et qui sont purement au service d'autrui : la matière première et
+les أسطقسات.
+
+**الهامش** (une seule note, verbatim) :
+
+1. **الأسطقسات** : جمع اسطقس، وهو العنصر غير القابل للقسمة.
+
+**الكاتب — أبو نصر الفارابي (257هـ —870م / 393هـ —950م)** (verbatim resserré) : هو **أبو نصر
+محمد بن محمد بن أوزلغ** المعروف باسم الفارابي نسبة إلى مكان مولده (فاراب) وهي مدينة تركية. كان
+أبوه فارسيا وأمه تركية. تلقى علومه الأولى في مدينة فاراب. ثم انتقل مع أبيه إلى بغداد فصحب
+**متى بن يونس النحوي وابن السراج** وتتلمذ **على يوحنا بن حيلان**. ثم صار من دمشق إلى مصر
+(338هـ) ثم رجع إلى الشّام وقدم على سيف الدولة الذي أكرمه وضمه إلى بلاطه حتى مات وله من العمر
+ثمانين عاما. لُقّب **بالمعلّم الثاني** بعد أرسطو تعبيرا عن منزلته الخاصة. كان أرسطيا في بعض
+آرائه المنطقية والطبيعية وأفلاطونيا في الأخلاق والإلهيات والسياسة دون أن يعني هذا عدم تفرده
+بآراء حفظت له مكانة متميزة من بين فلاسفة الإسلام. ترك مؤلفات عديدة منها مقدمات ومختصرات ومنها
+شروح وتعليقات ومنها تصنيفات خاصة نذكر منها **"كتاب الجمع بين رأيي الحكيمين أفلاطون وأرسطو"**
+وقد تعلّق بمحاولة التوفيق بين آراء هذين الفيلسوفين في الطبيعة والإلهيات وغيرها، توفيقا كان
+موضوع نقد. وكتابه **" فصوص الحكم "** وكتاب **" آراء أهل المدينة الفاضلة "** وهو كتاب في السياسة،
+في أسس المدينة ومراتبها،. ثم **" كتاب السياسة المدنية "** و**" رسالة في السياسة "** و**" تحصيل
+السعادة "** و**" كتاب الموسيقى الكبير ورسالة في إحصاء العلوم "** و**" كتاب الحروف "** وغير ذلك…
+
+**المهام** (p.292, verbatim) :
+
+- أستخرج من النص تصور الفارابي للمدينة وأحدد أساس التراتبية فيها.
+- ما هو مدلول السيادة لدى الفارابي وإلى من يجب أن تؤول ؟
+- أستخلص من تصوّر الفارابي للسيادة دلالة العدالة.
+- هل يمكن أن أستخلص أنّ تصوّر الفارابي يعبّر عن منزع طوباويّ لنظام المدينة ؟
+
+**Encadré-citation (p.292)** : « ومراتب أهل المدينة في الرئاسة والخدمة تتفاضل » — **الفارابي**.
+
+**Illustrations** : p.291 — **portrait enluminé d'al-Fârâbî** (turban bleu, barbe blanche), en
+médaillon. p.292 — tableau orientaliste, légende imprimée en français :
+`Benjamin CONSTANT, Présents d'un pacha. Mulhouse, Musée des Beaux-Arts.`
+⚠️ **Homonymie à ne pas confondre** : ce **Benjamin Constant** est le **peintre** Jean-Joseph
+Benjamin-Constant, pas le **كونستون** auteur du سند 10.
+
+###### سند 9 — الراعي والرعيّة — p.293-294
+
+**التمهيد** (verbatim) :
+
+> الدولة، كسائر الأجسام، عرضة للأمراض والعلل. علّتها العضال انقلاب السلطة إلى تسلّط وتحوّل
+> القوّة إلى استقواء. وجرى المثل " كما تكونون يُولَّى عليكم " دليلا على استكانة في الرعيّة تقبل
+> معه جور السلطان.
+
+**Référence imprimée** : **الكواكبي، طبائع الاستبداد** — دار النفائس، بيروت. 1984. ص 52 — 53.
+
+**Thèse (reformulée, R-2)** : le **peuple (العوام)** est la force et la puissance même du
+despote : c'est par lui qu'il les assaille, et par eux qu'il domine les autres. Le mécanisme est
+une **complicité** : il les capture et ils l'acclament, il confisque leurs biens et ils le
+remercient de leur laisser la vie, il les humilie et ils vantent son élévation, il les dresse les
+uns contre les autres et ils s'enorgueillissent de sa politique ; s'il dilapide leur argent, ils
+disent « il est généreux », s'il tue sans mutiler ils le disent « clément », et il les conduit au
+danger de mort et ils lui obéissent par crainte du châtiment — et si quelques **أباة** se
+révoltent, la foule les tue elle-même comme s'ils étaient des **بغاة**. Le ressort de tout cela
+est **l'ignorance** : le peuple s'égorge de ses propres mains par une peur née de l'ignorance ;
+que l'ignorance se lève et la peur disparaît, et **la situation se renverse** — le despote se
+mue, en dépit de sa nature, en un intendant honnête qui redoute les comptes, un chef juste qui
+craint la vengeance, un père indulgent qui prend plaisir à l'affection. Alors la nation obtient
+une vie agréable et douce, prospérité et croissance, gloire et bonheur ; et **le gouvernant y
+gagne le plus grand des lots**, lui qui, au temps du despotisme, était le plus malheureux des
+hommes, perpétuellement entouré d'ennemis, guetté par la haine, jamais sûr de sa vie un instant.
+Car — c'est la thèse centrale — **la peur qu'a le despote de son peuple est plus grande que la
+peur qu'a le peuple de sa violence** : sa peur à lui naît d'un **savoir**, la leur d'une
+**ignorance** ; il craint une vengeance légitime, ils craignent son emportement ; il craint de
+perdre sa vie et son pouvoir, ils craignent pour des miettes de nourriture et pour une patrie que
+d'autres, en quelques jours, sauront habiter à leur place. Et plus le despote accroît injustice
+et arbitraire, plus grandit sa peur — de ses sujets, de son entourage, et jusqu'à ses propres
+hantises et fantasmes ; souvent la vie des despotes faibles de cœur s'achève dans la **folie**.
+
+**الهامشان** (verbatim) :
+
+1. **أباة** : جمع آبٍ وهو الأبيّ أي من يترفّع عن الدنايا وهو أيضا من يعتزّ بنفسه.
+2. **بُغاة** : جمع باغٍ وهو الباغي أي الظالم والخارج على القانون.
+
+**الكاتب — عبد الرحمان الكواكبي (1842 — 1902)** (verbatim resserré) : ولد في مدينة حلب. تلقى
+دروسه الأولى في حلب وفي أنطاكية تعلم العربية والفارسية وعلوم الدين واطلع على أمهات الكتب في علوم
+الطبيعة والرياضيات والتاريخ والفلسفة… واطلع على تراجم لكتب بلغات أجنبية خاصة في مجال السياسة…
+شارك في الحياة العامة كصحفي ومحرر في جريدة **" الفرات "** ليصدر صحيفتين **" الشهباء "** و**"
+الاعتدال "** نشر فيهما أفكاره الإصلاحية فأزعج السلطات التركية فأقفلت جريدته بعد صدورها بخمسة
+أشهر في عام 1887. تقلّد الكواكبي مناصب متعددة واشتغل في المشاريع العمرانية والتجارية. هاجر وتنقل
+في سواحل إفريقيا الشرقية والغربية وسواحل آسيا وبلاد العرب والهند حتى سواحل الصين. استقر أساسا
+بمصر. اتصل بمعاصريه من رجالات الإصلاح ( محمد رشيد رضا ومحمد كرد علي وغيرهما ). وفي هذه المرحلة
+ألّف الكواكبي كتابيه المهمين : **" طبائع الاستبداد "** الذي حلل فيه ظاهرة الاستبداد في صلتها
+بالمال والأخلاق والدين وغيرها… ثم كتابه **" أم القرى "** الذي بين فيه أحوال المسلمين وآراءه في
+الإصلاح… و في سنة 1902 توفي في القاهرة متأثرا بسم دُسَّ في طعامه بإيعاز من الأتراك.
+
+**المهام** (p.294, verbatim) :
+
+- أتقصّى مظاهر الاستبداد واستتباعاته كما وردت في النص.
+- كيف يفسّر الكاتب الاستبداد؟ هل يردّه إلى الرّاعي أم إلى الرعيّة؟
+- هل من مستفيد من الاستبداد؟
+- هل الاستبداد طبيعة متأصّلة في الدولة أم هو عارض يتّصل بنظام الحكم؟
+- هل من حقّ الإنسان أن يقاوم الاستبداد؟ هل من حدود لهذه المقاومة؟
+- ما هي شروط الإصلاح السياسي في نظر الكاتب؟ أحدّد مدى وجاهتها في القضاء على الاستبداد.
+- هل في تاريخ البشريّة ما يشهد بقبولها للاستبداد أم برفضه؟ أدعّم جوابي بشواهد مختلفة.
+- فيمَ تساعدني مقاربة الكاتب على التمييز بين " الرعيّ " و" المواطن "؟
+
+**Illustration** : p.293 — **portrait peint d'al-Kawâkibî** (turban blanc, barbe noire, habit
+sombre), en médaillon. p.294 : ⚠️ **aucune illustration, aucun encadré-citation**.
+
+###### سند 10 — في الديمقراطيّة — p.295-296
+
+**التمهيد** (verbatim) :
+
+> تستند الديمقراطيّة على إرادة الشعب وسيادته: يبدو أن هذا أمر محلّ إجماع. لكن أن نجعل سيادته
+> مطلقة وغير قابلة للمراجعة، هذا شأن آخر نخشى معه أن نخسر ما جعلنا سلطة الشعب أمينة عليه:
+> " حريتنا الشخصيّة ".
+
+**Référence imprimée** : **كونستون ، في الحرية عند المحدثين** — `Benjamin CONSTANT; De la liberté
+chez les modernes, éd, Pluriel, Paris 1980`.
+
+⚠️ **Graphie du nom** : le manuel imprime **كونستون** (et non كونستان) partout — dans le corps du
+texte, la notice et l'encadré-citation. À conserver telle quelle.
+
+**Thèse (reformulée, R-2)** : reconnaître à la souveraineté du peuple des **limites** n'est pas
+la nier — c'est la sauver. Quand on admet qu'elle est **sans bornes**, on crée et on jette dans
+la société un degré **excessif** de puissance, un mal en soi **quelles que soient les mains** qui
+le détiennent : qu'on le confie à un seul homme, à un groupe ou à tous, on le trouvera également
+mauvais. Ce sont les **dépositaires** qu'on accusera, et ils se succéderont selon les
+circonstances — monarchie, aristocratie, démocratie, gouvernements mixtes, régime représentatif —
+mais l'accusation portera à faux : **ce qu'il faut condamner, ce n'est pas les dépositaires du
+pouvoir, c'est son degré**. Il faut frapper l'arme, non le bras qui la tient. Ceux qui, de bonne
+foi et par amour de la liberté, ont accordé à la souveraineté du peuple un pouvoir **sans
+frontières** se sont trompés par la manière dont leurs idées se sont formées en politique : ils
+avaient vu dans l'histoire un petit nombre d'hommes, voire un seul, détenir un pouvoir énorme et
+en abuser — mais leur colère s'est portée sur **les détenteurs** du pouvoir et non sur **le
+pouvoir lui-même** ; au lieu de le détruire, ils n'ont songé qu'à le **déplacer**. Ce fut une
+catastrophe qu'ils prirent pour une conquête : ils ont fait don du pouvoir à la société tout
+entière — et naturellement il a transité de la société vers la **majorité**, puis s'est concentré
+entre les mains de quelques personnes, souvent d'une seule, et il a commis autant de mal qu'avant.
+La conclusion : **il n'existe de souveraineté que limitée et relative**. Là où commence
+l'indépendance et l'existence **personnelle** de l'individu s'arrête la juridiction de cette
+souveraineté ; si la société franchit cette ligne, elle se rend **plus coupable que le despote**,
+lequel n'a d'autre argument que le sabre tranchant — la société ne peut outrepasser sa compétence
+sans être **usurpatrice**, ni la majorité sans être **conspiratrice**.
+
+**الهوامش** : ⚠️ **aucun** encadré de note.
+
+**الكاتب — كونستون (1767-1830)** (verbatim resserré) : فيلسوف وروائي ورجل سياسة فرنسي من أصل
+سويسري،. لعب دورا سياسيا أكّد فيه معارضته لنابليون وشغل منصب الأمانة العامة للحزب الليبرالي وحظي
+بشعبية كبيرة. من مؤلفاته كتاب **" في الحرية عند المحدثيّن "** (1818) الذي عرض فيه الخصائص
+المميزة للحرية في معناها الحديث التي تقوم على عدم التعارض بين حرية الفرد ومقتضيات الوجود
+الاجتماعي مؤكدا على قيمة **فولتير** كنموذج للحرية في معناها الحديث؛ كما ألف **" الحرية بين
+القدامى والمحدثين "** (1819) الذي كشف فيه عن موقفه الليبرالي عارضا مشاهد الرعب التي ميزت فرنسا
+سنة 1793 وما تولّد عنها من آلام مؤكدا على تعارضها مع مبادئ الثورة الفرنسية المستوحاة من كتابات
+روسو، كما صدر له كتاب **" الدين مأخوذ في أصله وأشكاله وتطوراته "** (1824—1830) دون أن يتمكن من
+إتمامه وقد أكّد فيه على الطابع الكوني للظاهرة الدينية وعلى منزلة الدين بما هو قانون أساسي
+للطبيعة الإنسانية واعتبره صرخة الروح تجاه المجهول واللانهائي.
+
+**المهام** (p.296, verbatim) :
+
+- ما نسبة سيادة الشعب إلى النظم الديمقراطيّة؟
+- ما دلالة سلطة الشعب وما وجه اعتراض الكاتب عليها؟
+- ما الغنم الحاصل من الحدّ من سيادة الشعب في نظر الكاتب؟
+- كيف يمكن أن يتحقّق التوافق بين السيادة والمواطنة؟
+- ما منزلة الأقليّة في حكم الأغلبيّة؟
+- "إنسانيّتي " و" مواطنتي ": أيّهما يستلزم الآخر؟
+
+**Encadré-citation (p.296)** : « لا توجد السيادة إلاّ على نمط محدود ونسبي » — **كونستون**.
+
+**Illustrations** : p.295 — **portrait peint de Benjamin Constant** (habit et cravate
+XIX<sup>e</sup>), en médaillon. p.296 — photographie d'un **hémicycle parlementaire** en séance.
+
+###### سند 11 — الدولة والشرعيّة — p.297-298
+
+**التمهيد** (verbatim) :
+
+> تعمل كلّ سلطة على تبرير ذاتها حتى يكون لنفوذها القول الفصل فيما يتعلّق بالشأن الإنساني،
+> والتمست في ذلك أكثر من سبيل. وكثيرا ما نذهل نحن جميعا، حكّاما ومحكومين، عن كون السلطة، مهما
+> بحثنا لها عمّا يشرّعها، تبقى ممارسة؛ ولأنّها ممارسة، يحسن أن ننشدّ إلى أسلوب عملها قبل النظر
+> في صفاء حسبها ونبل غرضها.
+
+**Référence imprimée** : **تزفيتان تودوروف، اللانظام العالمي الجديد** — ترجمة وليد السويركي؛
+أزمنة، عمّان. ص 52 — 53.
+
+**Thèse (reformulée, R-2)** : qu'est-ce qui rend une politique **légitime** ? Ce n'est pas la
+simple **possession** du pouvoir — celui-ci s'obtient le plus souvent par la **violence** (la
+guerre d'indépendance a précédé la démocratie américaine comme la révolution de **1789** a précédé
+la démocratie française). Et même lorsque le pouvoir est légitime en tant qu'expression de la
+**volonté populaire**, il peut s'égarer : l'avis de la **majorité** n'est pas nécessairement
+l'avis **éclairé**, et il peut aller à l'encontre de l'esprit de **justice**. La légitimité ne
+vient pas non plus des **fins**, si nobles soient-elles, que nous nous fixons nous-mêmes : il y a
+toujours le soupçon que les puissants brandissent ces fins pour masquer leurs convoitises réelles.
+Où réside donc la légitimité ? Tudorov reprend **Montesquieu** : *« tout pouvoir sans limites ne
+saurait être légitime »*. Ce n'est ni l'origine du pouvoir ni sa finalité qui lui confère
+légitimité, mais **la manière dont il s'exerce** — c'est-à-dire le fait qu'il **s'impose à
+lui-même des bornes** en le **partageant** avec d'autres. Deux conceptions s'affrontent :
+l'une relève de l'**unité**, l'autre de la **pluralité** ; la première croit détenir le bien et
+en conclut qu'elle a le droit de l'imposer à tous ; la seconde espère elle aussi être la
+meilleure, mais **s'y refuse** et estime que le partage et la séparation des pouvoirs valent mieux
+que leur réunion — plusieurs partis valent mieux qu'un seul, **même si ce seul était le
+meilleur**. À l'intérieur de l'État, la limitation vient de l'**indépendance** des pouvoirs
+exécutif, législatif et judiciaire, du **pluralisme partisan**, de la **pluralité des sources
+d'information** et de la **reconnaissance des droits des minorités**. À l'échelle
+**internationale**, elle vient du respect de la **souveraineté des autres États** — même quand on
+a les moyens de les soumettre — et du respect des **accords et traités** — même quand on a les
+moyens de les violer. Accepter cette pluralité est le meilleur moyen de protéger
+l'**indépendance de chacun** et de s'assurer, à terme, son soutien.
+
+**الهامشان** (verbatim) :
+
+1. **منتسكيو** `(1689 — 1755) Montesquieu`، كاتب ومفكّر فرنسي من عائلة ثريّة يعدّ من مؤسّسي علم
+   الاجتماع السكوني، مكّنته سفراته المتعدّدة إلى البلدان الأوروبيّة من التعرّف على مختلف النظم
+   السياسيّة وتبيّن أساليب إدارة الحكم ممّا مكّنه من تأليف أهمّ كتبه **" روح القوانين "** (1748)
+   الذي حرص فيه على بيان معقوليّة التنوّع التاريخي وتحليل أسس نظم الحكم. من كتاباته أيضا
+   **" رسائل فارسيّة "** (1721).
+2. ورد في **" رسائل فارسيّة "** لمنتسكيو
+
+*(⚠️ la note 2 est **imprimée sans point final** et sans énoncé complet — elle indique seulement
+la provenance de la citation de Montesquieu.)*
+
+**الكاتب** : ⚠️ **renvoi, pas de notice** — imprimé verbatim :
+**تزفيتان تودوروف : انظر التعريف بالكاتب المصاحب للسند عدد 8 ( الخصوصيّة والكونيّة )**.
+
+**المهام** (p.298, verbatim) :
+
+- أحدّد المشكل الذي يثيره الكاتب وأتبيّن قيمته.
+- أحدّد المواقف التي يستبعدها الكاتب وأتبيّن الحجج التي ساقها في ذلك.
+- أعود إلى موقف منتسكيو وأفكّر في قيمة استحضاره من طرف الكاتب.
+- ما هو المبدأ الذي تستمدّ منه السلطة شرعيّتها في نظر الكاتب؟
+- يميّز الكاتب بين اتّجاهين، يقول الأول بالوحدة والثاني بالتعدّدية: أحلّل حقيقة الفارق بينهما.
+- ما هي شروط السياسة الشرعيّة التي يحدّدها الكاتب؟
+- هل من تعارض بين شروط سياسة شرعيّة داخلية وشروط سياسة شرعيّة على المستوى الدولي؟
+- هل تساعدني مواقف الكاتب على تعقّل بعض ظواهر الوجود الإنساني؟ أحرّر فقرة في الغرض.
+- هل أميل إلى القول بالوحدة أم بالتعدديّة؟ أبرّر جوابي.
+
+**Encadré-citation (p.298)** : « يأتي تحديد السلطة، داخل الدولة، من استقلاليّة كلّ من السلطات
+التنفيذيّة والتشريعيّة والقضائيّة…. من التعدديّة الحزبيّة وتعدّد مصادر المعلومات ومن الإقرار
+بحقوق الأقليات » — **تودوروف**.
+
+**Illustrations** : p.297 — **photographie de Tzvetan Todorov** (cheveux blancs, lunettes), en
+médaillon. p.298 — photographie d'une **manifestation** portant une banderole en français
+`LIBERTÉ CHÉRIE !`.
+
+###### سند 12 — الحقّ والقانون — p.299-300
+
+**التمهيد** (verbatim) :
+
+> الإفراط في السّلطة والتفريط في الحقّ: حدّان يشغلان الإنسان ويرسمان مجال عِراكه السياسي المنفتح
+> دوما على الممكن. عراك يغذّيه أمل الإنسان في اعتدالٍ يقرّ للسّلطة حقّها ويؤمّن للحقّ سلطتَه في
+> فضاء سياسي يعمّره مواطنون أحرار لا رعايا مستعبدين.
+
+**Référence imprimée** : **سبينوزا، رسالة في اللاّهوت والسياسة، الفصل 16** — ترجمة . حسن حنفي؛
+مراجعة . فؤاد زكريا — دار الهيئة المصريّة العامّة للتأليف والنشر، 1977. ص 384— 385.
+
+**Thèse (reformulée, R-2)** : chaque individu doit **déléguer** à la société toute la puissance
+qu'il détient, de sorte que la société possède **seule** le droit naturel absolu sur toute chose,
+c'est-à-dire le pouvoir souverain de donner les ordres auxquels chacun doit obéir — soit par
+libre choix, soit par crainte du châtiment sévère. Un tel régime s'appelle **démocratie** : elle
+est l'**union des hommes en un corps qui détient collectivement un droit absolu sur tout ce qui
+est en son pouvoir**. Il en résulte que le détenteur du pouvoir n'est lié par **aucune loi** et
+que tous lui doivent obéissance en tout, car ils lui ont délégué — par contrat exprès ou tacite —
+toute la puissance qu'ils avaient de se conserver, c'est-à-dire leur droit naturel. S'ils avaient
+voulu en garder une part, ils auraient dû se donner en même temps les moyens de la défendre ; ne
+l'ayant pas fait, sans quoi la discorde eût éclaté et le pouvoir se serait effondré, ils se sont
+soumis à la volonté du souverain, **quelle qu'elle soit**. Mais — c'est le renversement — *le
+gouvernant n'acquiert le droit d'ordonner ce qu'il veut qu'**autant qu'il détient réellement le
+pouvoir suprême** ; s'il le perd, il perd du même coup le droit d'ordonner, et ce droit passe à
+celui — ou à ceux — qui sont capables de s'en emparer et de le conserver.* Voilà pourquoi il est
+**rare** que les gouvernants donnent des ordres pleinement contradictoires : leur intelligence et
+leur souci de conserver le pouvoir les conduisent à veiller au maximum sur l'**intérêt général** et
+à conduire toutes choses selon les **jugements de la raison** — car, comme on l'a dit, nul n'a pu
+gouverner longtemps par la **violence**. Quant à l'**État**, le régime qui ne prend pour règle
+suprême que l'intérêt de celui qui commande ne respecte pas l'intérêt du peuple tout entier : le
+devoir est de ne pas compter comme **esclave** celui qui obéit à des ordres servant l'intérêt
+**particulier** du maître, mais comme **citoyen**. Sur cette base, **les États les plus libres sont
+ceux dont les lois s'appuient sur la saine raison** — car chacun y peut, s'il le veut, être libre,
+c'est-à-dire vivre par pur choix selon la raison. De même, les **enfants** ne sont pas des
+esclaves bien qu'ils doivent obéir aux ordres de leurs parents, parce que les ordres des parents
+visent l'intérêt de l'enfant avant tout. La distinction se formule ainsi : **l'esclave** est
+contraint d'obéir à des ordres qui servent l'intérêt du maître ; **le fils** exécute des ordres
+de ses parents qui servent son propre intérêt ; **le citoyen** exécute les ordres du gouvernant,
+lesquels servent l'intérêt **général** — et par conséquent son intérêt propre.
+
+**الهوامش** : ⚠️ **aucun** encadré de note.
+
+**الكاتب** : ⚠️ **renvoi, pas de notice** — imprimé verbatim :
+**سبينوزا : انظر التعريف بالكاتب المصاحب للسند عدد 11. ( الإنيّة والغيريّة )**.
+
+**المهام** (p.300, verbatim) :
+
+- عن أيّ تفويض يتحدّث الكاتب؟ أستثمر ما ورد في نافذة دعائم للتفكير في المسألة، سياقات فكريّة،
+  فلسفات التعاقد.
+- كيف يعرّف الكاتب الديمقراطيّة؟ أحدّد مستلزمات ممارسة السلطة التي تلائمها.
+- حقّ الفرد والمصلحة العامّة: هل من تعارض بينهما في دولة ديمقراطيّة؟
+- هل في الخضوع للقانون نفي للحريّة؟
+- أيّة علاقة بين سيادة القانون وسيادة العقل؟
+- " لم يستطع أحد أن يستمرّ في الحكم طويلا عن طريق العنف ": أحلّل هذا الحكم وأمتحن راهنيّته.
+- ما وجه التمييز بين العبد والطفل والمواطن؟
+- أستخلص مفهوم المواطن ومنزلته في الدولة الديمقراطيّة.
+
+**Encadré-citation (p.300)** : « تكون أكثر الدول حرية تلك التي تعتمد قوانينها على العقل السليم »
+— **سبينوزا**.
+
+**Illustrations** : p.299 — **portrait gravé de Spinoza** (cheveux longs, col blanc), en
+médaillon. p.300 — nature morte : **codes juridiques rouges** (`CODE CIVIL`), livre ouvert,
+lunettes et **balance** dorée.
+
+> 🔎 **Troisième renvoi à la نافذة دعائم** : la 1<sup>re</sup> مهمّة de ce سند renvoie à
+> **سياقات فكريّة, فلسفات التعاقد** (au pluriel ici ; le سند 5 écrivait *فلسفة التعاقد*).
+
+###### سند 13 — حريّة الرأي — p.301-302
+
+**التمهيد** (verbatim) :
+
+> إذا كانت الحياة داخل المجتمع شرط تحقّق إنسانية الإنسان فإنّ الانصياع كليّة إلى قوانين سلطة
+> المجتمع وضوابطه قد يصادر حق الفرد، وحق الأقلية في الاختلاف، باسم أغلبيّة حقيقيّة أو مزعومة،
+> مما يقتضي رسم حدود حقّ السلطة اعترافا بحق امتلاك حيز شخصي للحياة.
+
+**Référence imprimée** : **ستيوارت ميل، الحرية (الفصل الثاني)** — عن " الفلسفة الحديثة: نصوص
+مختارة "، ط: أفريقيا الشرق، ص 113. ترجمة: محمد سبيلا وعبد السلام بن عبد العالي.
+
+**Thèse (reformulée, R-2)** : à supposer même un gouvernement en **accord complet** avec le
+peuple, et qui ne songerait à imposer son pouvoir que par la volonté même du peuple, Mill nie
+que le peuple ait **le droit** d'exercer ce pouvoir, qu'il l'exerce lui-même ou par son
+gouvernement : un tel pouvoir est **illégitime en soi**. Il n'est pas plus légitime chez le
+meilleur gouvernement que chez le pire — il est même plus nuisible, et plus nocif encore
+lorsqu'il s'impose en **accord** avec l'opinion publique que lorsqu'il la contredit. **Si
+l'humanité entière, à l'exception d'un seul homme, partageait un avis, et que cet homme seul
+soutenait le contraire, l'humanité n'aurait pas plus le droit de lui imposer le silence que lui
+n'aurait le droit d'imposer le sien si le pouvoir était entre ses mains.** Et si une opinion
+n'avait de valeur que pour son auteur, en sorte que l'empêcher d'en jouir ne nuirait qu'à lui,
+il resterait une différence entre le préjudice qui frappe **le plus grand nombre** et celui qui en
+frappe **le plus petit**. Mais empêcher l'homme d'exprimer son opinion est un **mal**, car c'est
+dépouiller **l'humanité tout entière** — les générations futures autant que la génération
+présente, et ceux qui contestent cette opinion plus encore que ceux qui l'acceptent. Car **si
+l'opinion est vraie**, on les prive de la chance d'échanger l'erreur contre le vrai ; **si elle
+est fausse**, ils perdent un avantage non moins grand — la perception plus claire et plus vive de
+la vérité, produite par le **choc de la vérité avec l'erreur**.
+
+**الهوامش** : ⚠️ **aucun** encadré de note.
+
+**الكاتب — ستيوارت ميل (1806 — 1873 )** (verbatim resserré) : فيلسوف وعالم اقتصاد أنجليزي ،
+امتلك ثقافة تاريخية واسعة وتشبّع بدراسة العلوم والقانون. كان للثورة الفرنسية سنة 1830 دور في
+إنتاج تيار سياسي ليبرالي النزعة في بريطانيا وعُدَّ ميل أحد أبرز رموزه؛ ظل إلى عدة أعوام يكتب في
+صحف تتسم بطابع ليبرالي راديكالي. أشرف طيلة خمس سنوات على إدارة مجلة لندن ووستمنستر الناطقة بلسان
+الحزب الراديكالي. تميز ميل بوفرة عطائه، وانكبابه الدائم على العمل والتأليف. من أهم أعماله
+**" مذهب المنطق "** (1843)، **" في النفعية "** (1863)، و**" فلسفة ويليام هاملتون "** (1865)، ثم
+**" أوغيست كونت والوضعية "** (1865) وفيه جدد المذهب التجريبي على أساس السيكولوجيا، وفي الأخلاق،
+عدّل نفعية بنتام ليكيفها مع القانون والسياسة. كتب أيضا **" مقالات في بعض مشاكل الاقتصاد
+السياسي "** (1844) و**" مبادئ الاقتصاد السياسي "** (1848)، وفيهما عرض لمبادئ الاقتصاد السياسي،
+منظورا إليه بوجه خاص من خلال تطبيقاته على قضايا العصر السياسية والاجتماعية الكبرى. أصدر أيضا
+كتاب **" الحرية "** (1859)، وهو كتاب مفعم بالنزعة الليبرالية. شارك في سياسة بريطانيا
+وانتُخِب عضوا في مجلس العموم (1865)، وأثار على منبره مسألة حق النساء في الانتخاب وهي مسألة كان
+قد طرحها في كتابه **" عبودية النساء "** (1861) الذي أصدره سنة 1869 وهو بمثابة إعلان عقلاني
+وبليغ عن الوضع الفعلي للمرأة في التاريخ، وبمثابة هجوم على الاستعباد القانوني التي هي من ضحاياه،
+وعلى الأخلاق الإكراهية التي ترغمها على الخضوع للرجل.
+
+*(⚠️ **incohérence imprimée** : le livre `" عبودية النساء "` est daté **(1861)** puis dit publié
+**سنة 1869** dans la même phrase. Constat, pas correction.)*
+
+**المهام** (p.302, verbatim) :
+
+- بأيّ معنى ينكر الكاتب على الشّعب الحق في فرض سلطته؟
+- ما وجه الضرر في منع الفرد من التعبير عن رأيه؟
+- أيّ غُنم يمكن أن يترتّب على تمكين الفرد من حقّه في التعبير عن رأيه؟
+- هل من حقّ سلطة الأغلبيّة أن تقصي حقوق الأقليّات؟ أعلّل جوابي في فقرة قصيرة.
+- هل يمكن أن نتصوّر حدّا لحقّ الفرد في التعبير عن رأيه دون إخلال بمقوّمات النظام الديمقراطي؟
+
+**Encadré-citation (p.302)** : « ولكن منع الإنسان من التعبير عن رأيه شر، لأنّ فيه سلب الإنسانية
+كلها » — **ميل**.
+
+**Illustrations** : p.301 — **portrait gravé de John Stuart Mill**, en médaillon. p.302 —
+illustration : trois écoliers dont la **bouche est fermée par un cadenas**, une clé et une pomme
+rouge tendue au-dessus d'eux.
+
+###### سند 14 — الحقّ والعنف — p.303-304
+
+**التمهيد** (verbatim) :
+
+> كثيرا ما نرفض العنف باسم الحق ونعتبرهما ضدّين لا يجتمعان. ومع هذا قد يحتاج أحدهما الآخر حين
+> تقضي الظروف وصلا بينهما لتحقيق غرض لا يؤمّنه الفصل.
+
+**Référence imprimée** : **إيف ميشو، العنف والسياسة، 1978** — `Yves MICHAUD; Violence et
+politique, Gallimard. 1978. pp 127 - 129`.
+
+**Thèse (reformulée, R-2)** : on comprend toujours le droit, dans son principe, comme
+l'**exclusion de la violence** — ce qui rend légitimes certaines fins, c'est l'usage de moyens
+que la **loi** autorise, et la violence ne peut exister qu'**en dehors** du droit. Il subsiste
+pourtant une **frayeur** que la violence traverse le droit, lequel l'écarte au nom d'un principe
+de **paix des rapports**. Mais il apparaît vite que le droit **redoute** dans la violence le
+dommage qu'elle inflige à la paix **moins** qu'il ne redoute la **possibilité d'être violé**.
+L'**appareil judiciaire** est l'un des moyens — peut-être le plus efficace — de se prémunir contre
+la **vengeance** interminable. Or son principe de justice **contraignante** libère les hommes du
+devoir de vengeance tout en étant lui-même, **en son fond, une vengeance** — mais une vengeance
+si dense et si puissante qu'elle ne laisse place à aucune contre-vengeance ni à aucune
+alimentation de la violence. Là où rites et sacrifices travaillent à empêcher la violence en
+« l'adoucissant, en l'évitant, en l'orientant vers un but secondaire », le **droit la rationalise,
+la divise et en fait une technique thérapeutique cachée** — c'est-à-dire, lui aussi, **un système
+violent contre la violence**. Pour que le droit remplisse sa fonction, cela doit rester
+**dissimulé** : nous devons le percevoir comme concerné par la **justice**, et non le percevoir
+comme une violence semblable à celle qu'il réprime. C'est pour cette raison que le droit **ne
+tolère pas** qu'existe un champ où il puisse être enfreint ; c'est pour cette raison aussi qu'il
+doit apparaître **inviolable**. En ce sens, les peines rendent au droit sa **plénitude** : la
+férocité des châtiments et l'enflure de l'administration de la loi ont pour fonction de
+**montrer l'incongruité du droit** et les défis qui lui sont lancés — **il faut que la force
+reste à la loi**.
+
+**الهوامش** : ⚠️ **aucun** encadré de note.
+
+**الكاتب — إيف ميشو : (1944)** (verbatim resserré) : فيلسوف فرنسي معاصر، يُعدُّ مختصّا في فلسفة
+**هيوم ولوك** والفلسفة السياسيّة عامّة وبصورة خاصة حول ظاهرة العنف.. نشر العديد من المؤلفات منها
+بالخصوص **" العنف "** (1973) و**" العنف والسياسة "** (1978) تناول فيهما العلاقة بين العنف والحق
+ومنزلة العنف في الحياة السياسية؛ له أيضا **" تغيّرات في العنف "** (2002) قدّم فيه تشخيصا للواقع
+مؤكّدا على المفارقات التي تميز واقعنا المعاصر، واقع تقلص فيه العنف مع أن حضوره أصبح أكثر شدة،
+وتيسرت فيه ظروف الحياة ولكنها أصبحت في نفس الوقت أشد عسرا. أمّا كتاب **" إنساني، لا إنساني، مفرط
+في الإنساني "** (2002) فقد تناول واقع الإعلام والإشهار الذي ينقلنا إلى واقع سائل وغازي يمنحنا
+اللذة وضربا من الرفاه ولكننا مع ذلك نعيش في الغامض واللامحدد.
+
+**المهام** (p.304, verbatim) :
+
+- أحدّد معنى القول " الحق نظام عنيف ضد العنف ".
+- ما الذي يحرص الحق على إخفائه؟ هل يعبّر بذلك عن خشيته على نفسه من العنف؟
+- كيف أفهم قول الكاتب بأن حرص الحق على الانتصار على العنف أكثر من حرصه على السلم؟
+- كيف يكون العنف تقنية علاجية ؟ أستحضر أمثلة عن ذلك.
+- أحدّد الفرق بين القوة والعنف. وأبيّن هل يمكن للحق أن يكون نافذا دون قوة.
+
+**Encadré-citation (p.304)** : « يُفهم الحق دوما من جهة مبدئه بصفته إقصاء للعنف » — **إيف ميشو**.
+
+**Illustrations** : p.303 — **photographie d'Yves Michaud** (cheveux gris, chemise bleue), en
+médaillon. p.304 — dessin stylisé d'un **juge en robe brandissant un maillet** derrière son
+pupitre.
+
+###### سند 15 — في نقد الحقّ — p.305-306
+
+**Auteur tel qu'imprimé** : titre du bloc `الكاتب` → **ماركس** ; ligne de référence →
+**كارل ماركس**.
+
+**التمهيد** (verbatim) :
+
+> يُدرَك الإنسان بحقّه، أمّا التشريع فيُفترض فيه أنّه ما به يُكتَسب الحقّ تأنيسا فعليّا للإنسان.
+> ومن الغريب أن يغفل التشريع عن تحديد المقصود بالإنسان وتنزيله في سياق عيشه وضغط ظرفه. إذا صحّ
+> هذا ألا تتحوّل غرابة النسيان إلى اغتراب للإنسان؟
+
+**Référence imprimée** (verbatim) :
+
+> **كارل ماركس**، المسألة اليهوديّة
+> ترجمة . نايلة الصالحي، منشورات الجمل، ألمانيا، 2003. ص 37—41 (بتصرّف لجنة التأليف)
+> `Karl MARX; La question juive, 1844. in '' Pages choisies" par M. Rubel, Rivière, p 165`
+
+**Thèse (reformulée, R-2)** : les « droits de l'homme », distingués des droits du citoyen, ne
+sont que les droits du membre de la **société bourgeoise** — l'homme **égoïste**, séparé de
+l'homme et de la communauté ; la liberté qu'ils consacrent (art. 2, 6 et 16 de la Constitution
+de 1793) se fonde sur la **séparation** des hommes, non sur leur lien, et trouve son usage
+pratique dans la **propriété privée**. L'émancipation politique fait donc de la communauté
+politique un simple **moyen** de conserver ces droits et du **citoyen le serviteur** de l'homme
+égoïste : l'homme réel y est le **bourgeois**, non le citoyen.
+
+**الهوامش** : ⚠️ **aucun** encadré de note — ni p.305 ni p.306.
+
+**الكاتب** : ⚠️ **renvoi**, pas de notice. Imprimé (verbatim) :
+**ماركس : انظر التعريف بالكاتب المصاحب للسند عدد 18 ( الإنيّة والغيريّة )**
+→ renvoie au سند 18 du **مبحث الإنيّة والغيريّة** (محور 1), pas au سند 18 du présent مبحث.
+
+**المهام** (p.306, verbatim) :
+
+- من هو الإنسان المتميز عن المواطن حسب النص؟
+- ما دلالة الحق في الحرية؟ وما علاقة هذا الحق بالحق في الملكية؟
+- من هو إنسان حقوق الإنسان؟
+- ما المواطن؟ وما منزلته في إعلان حقوق الإنسان؟
+- هل ينبغي أن نستبدل الحديث عن حقوق الإنسان بالحديث عن حقوق المواطن؟
+- هل يفيد نقد حقوق الإنسان نقد فكرة الحق ذاتها؟
+- أي صورة للإنسان يدافع عنها الكاتب؟
+
+**Encadré-citation (p.306)** : « فلا يتجاوز أيّ ممّا يُسمّى حقوق الإنسان، الإنسان الأناني….
+وأخيرا يصبح الإنسان الحقيقي في الواقع ليس الإنسان بما هو مواطن ولكن الإنسان بما هو بورجوازي » —
+**ماركس**.
+
+**Illustrations** : p.305 — **portrait photographique de Karl Marx** (cheveux et barbe blancs),
+en médaillon en tête de texte. p.306 — photographie couleur : un **passeport bleu de
+l'ONU** (emblème du globe et rameaux d'olivier) pincé dans la mâchoire d'un **pied à coulisse**
+métallique, sur fond noir.
+
+**Constats de mise en page** : le سند occupe **deux pages**, mais le texte déborde jusqu'au tiers
+haut de la p.306 ; `الكاتب` (renvoi) et `المهام` sont sur la p.306. Pas de bloc `الهوامش`.
+
+###### سند 16 — العدالة والإنصاف — p.307-308
+
+**Auteur tel qu'imprimé** : **أرسطو** (bloc `الكاتب` : `أرسطو : ( 384—322 .ق.م):`).
+
+**التمهيد** (verbatim) :
+
+> إنّ أحوال معيشنا تكشف عن وجوه من الظلم والاجحاف تبرر حاجتنا إلى العدالة. وإذا كنا نرغب في
+> العدالة في جميع معاملاتنا ونعظّم العادل، فإننا نتطلع مع ذلك إلى الإنصاف ونرتاح إليه دون أن
+> ندرك لذلك موجبا ودون أن نتبين فرقا بينهما.
+
+*(⚠️ « الاجحاف » est imprimé sans hamza — graphie de la source, conservée.)*
+
+**Référence imprimée** (verbatim) :
+
+> **أرسطو**، أخلاق نيقوماخوس
+> `ARISTOTE; Ethique de Nicomaque. G. F, 1965. p1137 a -1137b`
+
+**Thèse (reformulée, R-2)** : **équitable (المنصف)** et **juste (العادل)** ne sont ni identiques
+ni de genres différents — d'où la gêne : on loue l'équité comme supérieure au juste, alors que
+l'équitable est **lui-même une espèce du juste**, et non un autre genre. Ce qui crée l'embarras,
+c'est que l'équitable est juste **sans l'être selon la loi** : il est la **correction
+(تحسين)** de ce qui est juste légalement. Car **toute loi est générale** et ne peut parler avec
+exactitude des cas particuliers ; parler en général étant inévitable, la loi ne retient que les
+**cas ordinaires**, sans ignorer pour autant sa propre insuffisance.
+
+**الهوامش** : ⚠️ **aucun** encadré de note — ni p.307 ni p.308.
+
+**الكاتب — أرسطو : ( 384—322 .ق.م)** (verbatim resserré ; commence p.307, se poursuit p.308) :
+أرسطوطاليس ولد في أسطاجيرا، بشمال اليونان. وكان والده نيقوماخوس طبيب آمينتاس الثاني جد الإسكندر
+المقدوني. لما بلغ أرسطو سن الثامنة عشرة التحق بأكاديمية أفلاطون في أثينا (سنة 366 ق.م) ولم يغادر
+الأكاديمية إلا عند وفاة معلمه (347 ق. م). وكان أرسطو قد أخذ يتحول قبل ذلك التاريخ شيئا فشيئا عن
+مثالية أستاذه وينزع إلى المباحث الطبيعية. وحوالي سنة 342 ق.م أرسل فيليب المقدوني في طلبه ليتولى
+تعليم ابنه الإسكندر وهو لم يتجاوز الثالثة عشرة حينذاك. عاد إلى أثينا مرة ثانية حوالي سنة 343 ق.م
+وأسّس مدرسته الخاصة أين ألقى أرسطو دروسه في شتى أغراض المعرفة وفي غضون ما يقرب عن 21 سنة فقط ألف
+أهم آثاره العلمية والفلسفية والتي شكلت إنتاجا متفردا في تاريخ العقل البشري. وتنقسم آثاره إلى
+قسمين: قسم المحاورات والمواعظ والتي اقتفى فيها أسلوب أفلاطون والتي لم يصل منها إلا شذرات أو بعض
+أسمائها وقسم ثان هو عبارة عن مباحث في المنطق مثلا **" المقولات "** و**"العبارة"**
+و**" التحليلات الأولى والثانية "** و**" الجدل "** و**"المغالطات"**؛ وفي الطبيعيات نذكر مثلا
+**" مقالة الطبيعة "** أو ( السماع الطبيعي) و**" كتاب السماء "** … وفي علم النفس كتاب
+**" في النفس "** و**" في النوم "** و**" في الأحلام "** و**" تعبير الرؤيا "**؛ وفي البيولوجيا
+كتاب **" في علم الحيوان "** …؛ وفي الإلهيات كتابه **" ما بعد الطبيعة "** وفي الأخلاق والسياسة
+كتاب **" أخلاق نيقوماخوس "** و**" الأخلاق إلى يوديموس "** وكتاب **"الأخلاق الكبير "**
+و**" كتاب السياسة "** و**"دستور أثينا"**؛ أما في الخطابة والشعر فقد ألّف **" في الشعر "**
+و**" في الخطابة "** وقد أثرت فلسفة أرسطو تأثيرا واسعا وعميقا في الحضارة العربية والغربية حتى
+نهاية القرون الوسطى.
+
+*(⚠️ **incohérence imprimée** : Philippe l'envoie chercher « حوالي سنة 342 ق.م », et le retour à
+Athènes est daté **« حوالي سنة 343 ق.م »** — donc *après* coup mais avec une date *antérieure*.
+Constat, pas correction.)*
+
+**المهام** (p.308, verbatim) :
+
+- أبيّن وجوه التطابق والاختلاف بين العدالة والإنصاف وأتبيّن من النص موجب تفوق المنصف على العادل.
+- يشير النص إلى حرج في التمييز بين العادل والمنصف: أحدّد دواعي هذا الإحراج.
+- إذا كانت العدالة مرغوبا فيها، فإن الإنصاف محبذ. كيف أفهم هذا الحكم؟
+- أستحضر في سياق معيشي أمثلة للتدليل على حدود التمايز بين العدالة والإنصاف.
+- هل يمكن أن أختار بين العدل والإنصاف؟
+
+**Encadré-citation (p.308)** : « إن ما يسبب حرجنا، هو أن من هو منصف وعادل في ذات الوقت، لا يكون
+كذلك طبقا للقانون » — **أرسطو**.
+
+**Illustrations** : p.307 — **buste antique d'Aristote** (marbre, monochrome), en médaillon en
+tête de texte. p.308 — photographie couleur d'une **balance à deux plateaux en laiton**, chaque
+plateau chargé de **livres anciens**, devant une bibliothèque.
+
+**Constats de mise en page** : le texte, la référence et le **début** de la notice d'auteur
+tiennent sur la p.307 ; la p.308 porte la **fin** de la notice, les `المهام`, l'illustration et
+l'encadré-citation. Pas de bloc `الهوامش`.
+
+###### سند 17 — العدالة والقانون — p.309-310
+
+**Auteur tel qu'imprimé** : **أفلاطون** (référence : `أفلاطون، غورجياس (5)`).
+⚠️ Le هامش 1 précise que le texte **expose la position de غورجياس par la bouche de كاليكلاس** —
+la thèse défendue n'est donc **pas** celle de Platon.
+
+**التمهيد** (verbatim) :
+
+> إذا كان العيش وفق نظام العقل يعني فيما يعنيه العيش بالتوافق مع نظام الطبيعة وإذا كانت الطبيعة
+> تعطي لكبار الأسماك حقّ التهام الصّغير منها، أفلا يقود ذلك إلى الإقرار بحقّ القويّ في الهيمنة
+> على الضعيف وكأنّ العقل يضفي مشروعيّة على التفاوت ويجعل من اللامساواة مبدأ العدالة؟
+
+**Référence imprimée** (verbatim) :
+
+> **أفلاطون**، غورجياس (5)
+> `PLATON; Gorgias, 483bc-484a. Belles Lettres`
+
+**Thèse (reformulée, R-2)** : la **loi** est l'œuvre des **faibles** et du **grand nombre** ;
+c'est pour effrayer les plus forts et les empêcher de l'emporter qu'ils décrètent que toute
+supériorité est laide et que l'injustice consiste à vouloir dominer autrui — car il leur suffit
+d'être au niveau des autres, faute de pouvoir les égaler en valeur. Or la **nature** montre
+partout l'inverse, chez les animaux comme chez les hommes : le **juste**, c'est que le **plus
+fort domine le plus faible**, et le supérieur l'emporte. Ceux qui agissent ainsi (Xerxès
+attaquant la Grèce) suivent la **vraie nature du droit**, la **loi de la nature** — fût-elle
+contraire à la loi que **nous** posons pour dresser, dès l'enfance et comme des lionceaux, les
+meilleurs et les plus forts d'entre nous, afin de les asservir par la force de la **prédication
+et de l'endoctrinement**.
+
+**الهوامش** (encadré `الهوامش` — **5 entrées** : 1-3 p.309, 4-5 p.310 ; verbatim resserré) :
+
+1. يعرض هذا النصّ موقف **غورجياس** على لسان **كاليكلاس** وهو محاور خيالي **لسقراط**
+2. **كزاركساس** `Xerxès` : (519—465ق.م) ملك الفرس (486—465ق.م) ابن داريوس`(Darios)`. الأكبر
+   وأتوسّا `Atossa` ابنة سيريس الأكبر `Syrus Le Grand`. اعتلى العرش بعد موت أبيه وقمع الثورة في
+   مصر ثم قضى ثلاث سنوات في إعداد أسطول وجيش كبير لمعاقبة الإغريقيين على مساعدتهم الأيونية في
+   حربهم مع الفرس. أحرق أثينا بعد فرار اليونانيين منها.
+3. **السيث** `Les Scythes` اسم يطلق على سكان منطقة تدعى `Scythie` في شمال البحر الأسود، بلد مقسم
+   اليوم بين مولدافيا وأوكرانيا وروسيا الشمالية، وهم قبائل رحل يسكنون سباسب كائنة بين البحر
+   الحالية وجبال تركستان.
+4. **زوس** `ZEUS` : في الميثولوجيا الإغريقية، إله السماء ورب أرباب الأولمب.
+5. **غورجياس** `Gorgias` : (487 —380 ق.م)، سفسطائي يوناني من أصل صقلّي قدم إلى أثينا للدفاع عن
+   صقليّة ضدّ أطماع سرقسطة. بقي في أثينا معلّما الخطابة. من أهمّ مؤلّفاته **" اللاوجود "** أو
+   **" في الطبيعة "** وفيه نقد فكرة الوجود عند بارمنيدس. و**" غورجياس "** هيّ أيضا محاورة
+   أفلاطونيّة موضوعها الخطابة أو فنّ الإقناع الذي يدافع عنه غورجياس في مقابل سقراط الذي يؤسّس
+   خطاب الحقيقة.
+
+*(⚠️ deux oddités imprimées dans le هامش 2 : le point après `(Darios)` coupe la phrase
+(`ابن داريوس الأكبر وأتوسّا` est la lecture attendue), et **Cyrus le Grand** est orthographié
+`سيريس الأكبر / Syrus Le Grand`. Dans le هامش 3, `سباسب` pour `سباسب/سهوب` et « بين البحر
+الحالية » sont imprimés tels quels. Constats, pas corrections.)*
+
+**الكاتب** : ⚠️ **renvoi**, pas de notice. Imprimé (verbatim) :
+**أفلاطون : انظر التعريف بالكاتب المصاحب للسند عدد 9. ( الإنيّة والغيريّة )**
+
+**المهام** (p.310, verbatim) :
+
+- كيف أفهم القول بأن القانون جُعل من أجل الضعفاء؟
+- هل تجد في هذا وجاهة بالنظر إلى واقع البشر؟
+- أستخرج من النص فهم غورجياس للعدالة.
+- يفضّل غورجياس عدالة القانون الطبيعيّ على عدالة القانون الوضعي: أتتبّع الحجج التي ساقها
+  الغورجياس لتأكيد موقفه.
+- كيف تتحوّل المساواة إلى جور؟
+- أفكّر فيما يستتبع تأسيس العدالة على قانون الطبيعة.
+
+*(⚠️ la 4ᵉ مهمّة imprime bien **« الغورجياس »**, avec article, là où les autres écrivent
+« غورجياس ». Constat.)*
+
+**Encadré-citation (p.310)** : « جُعِلَ القانون من أجل الضعفاء ومن أجل الكثرة » — **أفلاطون**.
+
+**Illustrations** : p.309 — **buste antique de Platon** (marbre, monochrome), en médaillon en
+tête de texte. p.310 — reproduction d'un tableau, légendée en français
+`Jules ADLER, La grève (1899). Pau, Musée des Beaux-Arts.` : une **foule d'ouvriers en grève**
+marchant derrière des drapeaux rouges, cheminées d'usine à l'arrière-plan.
+
+**Constats de mise en page** : texte, référence et les **3 premiers** هوامش sur la p.309 ; les
+**2 derniers** هوامش, le renvoi `الكاتب`, les `المهام`, l'illustration et l'encadré-citation sur
+la p.310. **C'est le premier سند de la tranche à porter un bloc `الهوامش`.**
+
+###### سند 18 — العدل والقوّة — p.311
+
+**Auteur tel qu'imprimé** : **باسكال** (bloc `الكاتب` : `باسكال : (1623 — 1662)`).
+
+**التمهيد** (verbatim) :
+
+> قد يبدو العدل مطلبا إنسانيّا نتمنّى سيادته، وبين ورديّة الأمنيّات وقتامة الواقع نصطدم بسلطان
+> القوّة إلى حدّ يغدو معه تحقيق العدل حلم استحالة مادام الضّد يستبعد ضدّه.
+
+**Référence imprimée** (verbatim) :
+
+> **باسكال**، خواطر
+> `B. PASCAL; Les Pensées. éd.Gallimard, 1976, pp 1160 - 1161.`
+
+**Thèse (reformulée, R-2)** : il est **juste** de suivre le juste et **nécessaire** de suivre le
+plus fort ; or **justice sans force est impuissante** et **force sans justice est tyrannique**.
+Il faut donc **joindre** justice et force — rendre le juste fort ou le fort juste. Mais la
+justice est **sujette à dispute** tandis que la force est **aisément reconnue et incontestée** :
+on n'a donc pas pu donner la force à la justice, la force ayant contesté la justice en la
+déclarant injuste et en se déclarant juste elle-même. Faute de pouvoir rendre fort ce qui est
+juste, **on a rendu juste ce qui est fort**.
+
+**الهوامش** : ⚠️ **aucun** encadré de note.
+
+**الكاتب — باسكال : (1623 — 1662)** (verbatim resserré) : فيلسوف وعالم فرنسي نبغ منذ حداثة سنّه
+إذ بدأ الكتابة و لم يتجاوز عمره السادسة عشر عاما بمقالة في المخروطات ثم ابتكر الآلة الحاسبة بعد
+ذلك بسنتين. دافع عن شرعيّة التفكير والتجربة في البحث عن الحقيقة العلميّة، طالما أنّ الفرد،
+والإنسانيّة يتطوّران بتراكم المعارف. ويعتبر أنّ غزارة المعرفة لا ترتكز على منهج كوني كما يعتقد
+ديكارت. من أهمّ مؤلّفاته **" خواطر "** (1670) قدّم فيه تصوّره للإنسان على خلفيّة دينيّة مسيحيّة
+ومن مؤلّفاته أيضا **"في فن الإقناع "** (1728) ثمّ **"في العقل الهندسي "** و**" رسالة في
+الخلاء "**.
+
+**المهام** (p.311, verbatim) :
+
+- ما الفرق بين الإقتداء بالقوي والإقتداء بالعادل؟
+- ماذا يحدث حين تعوزنا القوّة على فرض قرار عادل؟
+- ماذا يحدث حين نلجأ إلى القوّة دون موجبات عادلة؟
+- ما الفرق بين أن نجعل القويّ عادلا وبين أن نجعل العادل قويّا؟ أبلور جوابي منتبها إلى استتباعات
+  الموقفين.
+- لِمَ اعتبر الكاتب الاعتراف بالقوة أيسر والعدالة فضاء نزاع؟
+- هل القوّة وحدها قادرة على وضع حدّ للصراع بين البشر؟ أحرّر فقرة في الغرض.
+
+*(⚠️ « الإقتداء » est imprimé avec hamzat qaṭʿ dans les deux occurrences de la 1ʳᵉ مهمّة.
+Constat.)*
+
+**Encadré-citation** : ⚠️ **aucun** — la page se referme sur les `المهام`.
+
+**Illustrations** : p.311 — **portrait gravé de Blaise Pascal** (main au menton, cheveux
+longs), en médaillon en tête de texte. **Aucune autre illustration.**
+
+**Constats de mise en page** : ⚠️ **سند intégralement contenu sur UNE page** — titre, تمهيد,
+texte, référence, `الكاتب` et `المهام` tiennent tous sur la p.311. Pas de `الهوامش`, pas
+d'encadré-citation.
+
+###### سند 19 — العدل أساس الطاعة — p.312-313
+
+**Auteur tel qu'imprimé** : **راولس** (bloc `الكاتب` : `راولس : (1921—2002)`).
+
+**التمهيد** (verbatim) :
+
+> بين الحاجة إلى الدولة وواجب الامتثال إلى قوانينها والدعوة إلى التمرّد عليها وعصيانها صورةُ
+> جدلٍ مستمر بين الإنسان والدولة أصبح معه الخضوع المطلق والسلطان المطلق بلا معنى إذ لا خير في
+> مدينة لا حكم فيها ولا خير في دولة لا تحقّق ما ننشده منها.
+
+**Référence imprimée** (verbatim) :
+
+> **راولس**، نظريّة العدالة
+> `J. RAWLS; Théorie de la justice. éd. Seuil, 1985, pp 391 -392.`
+
+**Thèse (reformulée, R-2)** : la question est de savoir **dans quelles circonstances** et
+**jusqu'où** nous sommes tenus d'obéir à un régime injuste. Dire qu'on n'y est jamais tenu est
+**faux** : l'injustice d'une loi n'est pas, en général, une raison suffisante de ne pas s'y
+soumettre — pas plus que la **validité juridique** d'une législation (celle que fixe la
+constitution en vigueur) n'est une raison suffisante de s'y conformer. Lorsque la **structure de
+base** de la société est suffisamment juste, il faut reconnaître les lois injustes comme
+**obligatoires**, à condition qu'elles ne dépassent pas **un certain degré d'injustice**. Tracer
+cette limite conduit au problème plus profond de l'**obligation et du devoir politiques**, où
+des principes s'opposent — les uns conseillant l'obéissance, les autres le contraire : il faut
+donc affronter ces exigences par une **conception des priorités** appropriée.
+
+**الهوامش** : ⚠️ **aucun** encadré de note — ni p.312 ni p.313.
+
+**الكاتب — راولس : (1921—2002)** (verbatim resserré) : مفكّر أمريكي ولد ببالطيمور. كان شاهدا على
+كارثة **هيروشيما** أثناء قصفها بالقنبلة الذريّة. بعد هذه التجربة رفض أن يصبح ضابطا وغادر الجيش
+وأكمل شهادة الدكتوراه في الفلسفة والأخلاق (1946) . أصبح أستاذا بجامعة هافارد `Havard.` و درّس ألى
+حدود سنة 1952. من مؤلّفاته **" نظرية العدالة "** (1971)، وقد أعد هذه النظرية في ظروف كانت فيها
+شرعية الولايات المتحدة موضع تساؤل مرتبطة بحرب الفيتنام، واحتدام الصراع من أجل الحقوق المدنية،
+ولأجل ذلك اعتبرت النص الأهم في الفلسفة السياسية. يتمحور هذا الكتاب حول معاني القيم، والعدالة
+والليبرالية. وترتكز نظريته هذه على مبدأين: مبدأ الحرية، أي المساواة وتكافؤ الفرص مع ضمان حريّة
+الآخرين. ومبدأ الاختلاف، الذي يجيز التفاوت ولا يتعارض مع مبدأ العدالة. ومن مؤلّفاته أيضا
+**" الفرد والعدالة الاجتماعية "** (1988)، **" الليبرالية السياسية "** (1993) وتناول فيهما معاني
+الحرية، والعدالة، وحقوق الإنسان وحقوق المواطن…
+
+*(⚠️ trois anomalies imprimées : `هافارد Havard.` — **Havard** pour Harvard ; `ألى` pour `إلى` ;
+et « درّس ألى حدود سنة **1952** » placé **après** un doctorat daté 1946 et une chaire à Harvard,
+ce qui ne s'ordonne pas. Constats, pas corrections.)*
+
+**المهام** (p.313, verbatim) :
+
+- هل نكون على صواب حين نرفض طاعة نظام جائر؟
+- هل في صلاحية قانونية لتشريع ما سبب كاف للامتثال للقانون؟
+- ضمن أيّة شروط يمكن الامتثال لقانون جائر؟
+- القوانين العادلة والقوانين الجائرة: هل من حدود واضحة للفصل بينها؟ ما معيار هذا التمييز؟
+- أستخلص معيار العدل وشروط الطاعة. أحرر فقرة في الغرض.
+- ما قيمة التمييز بين مطالب الواجب والإلزام؟
+- ما أساس القول بترتيب الأولويات في حلّ مشكل المواجهة بين مطالب الواجب والإلزام السياسيين؟
+
+**Encadré-citation (p.313)** : « يتعلّق الأمر بمعرفة في أي الأحوال و إلى أي مدى نكون ملزمين
+بالخضوع إلى نظام جائر » — **راولس**.
+
+**Illustrations** : p.312 — **photographie de John Rawls** (casquette à carreaux, lunettes),
+en médaillon en tête de texte. p.313 — photographie couleur : un **loup gueule ouverte** face à
+un **ours brun**, en forêt.
+
+**Constats de mise en page** : texte, référence et **toute** la notice d'auteur sur la p.312 ;
+la p.313 ne porte **que** les `المهام`, l'illustration et l'encadré-citation. Pas de `الهوامش`.
+
+###### سند 20 — المواطن العالمي — p.314
+
+**Auteur tel qu'imprimé** : ⚠️ **إيبكتات** — et non « إيبكتاتس » comme l'annonce le فهرس
+(vérifié au zoom sur la ligne de référence **et** sur le bloc `الكاتب`). Translittération latine
+imprimée : `EPICTETE`.
+
+**التمهيد** (verbatim) :
+
+> قد يكون النظر إلى الإنسان بما هو شخصية قانونية أساس التعامل معه باعتباره مواطنا، غير أن اختزال
+> النظر في الإنسان في حدود الوطن الذي ينتمي إليه قد لا يستوفيه حقه أمام تداخل العلاقات والمصالح
+> بين الأوطان وأمام نزوعه نحو الكلية والكونية وهو ما يدعونا إلى التفكير في منزلة الإنسان
+> السياسية بين النظر إليه بماهو مواطن محلي وبين اعتباره مواطنا عالميا.
+
+**Référence imprimée** (verbatim) :
+
+> **إيبكتات**، محادثات
+> `EPICTETE; Entretiens, I,9. éd. Budé, p37`
+
+**Thèse (reformulée, R-2)** : s'il est vrai qu'une **parenté** unit le dieu et les hommes, comme
+le prétendent les philosophes, il ne reste aux hommes qu'à **imiter Socrate** — se refuser
+toujours à répondre « d'Athènes » ou « de Corinthe » à qui demande leur pays, et dire : **« je
+suis citoyen du monde »**. Car on ne doit pas son nom au **coin de terre** où le corps fut jeté à
+la naissance, mais à une origine **plus haute**, qui déborde ce coin, la maison et jusqu'au pays
+des ancêtres. Et dès lors qu'on a compris que le plus fondamental, le plus important et le plus
+**universel** de tout est l'**ordre composé du dieu et des hommes**, rien n'empêche plus de se
+dire **citoyen du monde**.
+
+**الهامش** (encadré au **singulier** — `الهامش` — car **une seule** entrée ; verbatim) :
+
+1. **كورنثيّا** : `Corinthie` نسبة إلى كورانثوس أو كورنث `Corinthus` وهي مدينة في بلاد اليونان.
+
+**الكاتب** : ⚠️ **renvoi**, pas de notice. Imprimé (verbatim) :
+**إيبكتات : انظر التعريف بالكاتب المصاحب للوضعيّة الاستكشافيّة الثانيّة. ( الإنيّة والغيريّة )**
+→ ⚠️ le renvoi vise une **وضعيّة استكشافيّة**, pas un سند ; « انظر » y est imprimé avec une
+césure visible (`ا نظر`).
+
+**المهام** (p.314, verbatim) :
+
+- ماذا يعني تعريف الإنسان بأنه مواطن؟ أحدد خصائص المواطنة.
+- كيف أفهم إشارة الكاتب إلى القرابة بين الإله والبشر وما علاقتها بالمواطن العالمي؟
+- كيف برهن الكاتب على مشروعية قول الإنسان عن نفسه بأنه مواطن عالمي؟
+- هل من تعارض بين انتمائي إلى وطن بعينه وبين انتمائي للعالم بما هو وطن للجميع؟
+- أيّ قيم تؤسّس لفكرة المواطن العالمي؟
+- في أيّ معنى يكون سقراط الأثيني نموذجا للمواطن العالمي؟
+- هل حصل أن أحسست بأنّي مواطن عالمي؟ أعلّل جوابي في فقرة.
+
+**Encadré-citation** : ⚠️ **aucun**.
+
+**Illustrations** : p.314 — **portrait gravé d'Épictète** (vieillard barbu, tête voilée), en
+médaillon en tête de texte. **Aucune autre illustration.**
+
+**Constats de mise en page** : ⚠️ **سند intégralement contenu sur UNE page** — titre, تمهيد,
+texte, référence, `الهامش`, `الكاتب` (renvoi) et `المهام` tiennent tous sur la p.314.
+
+###### سند 21 — مواطن العالم المشترك — p.315-316
+
+**التمهيد** (verbatim) :
+
+> الهويّة الفرديّة، الهويّة الثقافيّة والهويّة السياسيّة: هويّات مختلفة تتقاطع في الإنسان فردا
+> وجماعة ويزيدها العيش المشترك تعقيدا فتتعدّد خيارات المرء بحثا عن توازن منشود يعدّ شرط معاودة
+> النظر في دلالة مواطنة عالميّة يُفترض فيها تحقّق الإنساني في الإنسان.
+
+**Référence imprimée** : إتيان تاسان، ما الذات السياسيّة؟ —
+`Etienne TASSIN; Qu'est-ce qu'un sujet politique? Revue Esprit; Avril 1997. pp 149-150.`
+
+**Thèse (reformulée)** : être citoyen du monde ne signifie pas appartenir à une communauté mondiale
+— l'humanité ne s'est jamais voulue une seule communauté. Cela signifie **penser son inscription
+particulière dans une communauté à l'horizon du monde commun** : rattacher les droits civils et
+politiques au principe « الحقّ في أن يكون لنا حقوق », lequel n'a de sens que rapporté à un monde
+commun. Le citoyen mondial n'est donc **pas l'individu privé** mais le **sujet politique** (الذات
+السياسيّة), qui découvre et déclare son existence singulière **dans les relations politiques**, en
+exposant ses actes et ses paroles dans des espaces publics. Il préfère les principes aux
+particularismes, le bien commun au bien du groupe — bref, l'institution républicaine à la réserve
+autoritaire des communautés culturelles.
+
+**الهامش** (verbatim) :
+
+> 1 — **حنّا آرنت** `H. ARENDT` انظر " أصول الكليانيّة "، نيويورك 1975. ص 296 وكذلك كتابها
+> " الامبرياليّة "، باريس 1982، ص 281؛ تعرّف فيهما الحق في أن يكون لنا حق بقولها " العيش داخل
+> بنية حيث يُحكم على المرء في ضوء أفعاله وآرائه ".
+
+**الكاتبة** (notice, verbatim resserré) : **إتيان تاسان** — مفكّرة وأستاذة فلسفة معاصرة، نشرت في
+مجلّة « الفكر » مقالا عنوانه « أوروبا : هل هي جماعة سياسيّة؟ » (نوفمبر 1991)؛ كما نشرت فيها
+« الهويّة القوميّة والمواطنة السياسيّة » (جانفي 1994). المقال المقتطف منه النصّ reprend des
+questions traitées lors de séminaires et conférences aux universités nationales de Bouficha et
+Carthage, à l'université de Colombie et à celle du Chili, et lors d'un colloque tenu à Paris sous
+le titre « **الحق، الديمقراطيّة والفضاء العمومي** » (جانفي 1997).
+
+> ⚠️ **Anomalie de la source, non arbitrée** : le manuel intitule l'encadré « **الكاتبة** » et
+> emploie le **féminin** tout du long (« مفكّرة وأستاذة … نشرت … تناولتها »). Étienne Tassin est un
+> philosophe **masculin**. L'imprimé est recopié tel quel ; ne pas « corriger » en génération, mais
+> ne pas non plus bâtir une question sur le genre de l'auteur.
+
+**المهامّ** (verbatim) :
+
+- أيّة دلالة للمواطن العالمي تستبعدها الكاتبة؟ كيف أفسّر هذا الاستبعاد؟
+- ما دلالة " العالم المشترك " وما قيمته الإجرائيّة في سياق مقاربة الكاتبة؟
+- في أيّ معنى تمثّل كثرة البشر خطرا على الحقّ؟
+- لِمَ اعتبرت الكاتبة اكتمال قدر الدولة مشروطا بتجاوز الأمّة لا بتجسّدها؟
+- ما دلالة المفاضلات التي تتحدّث عنها الكاتبة؟ أحلّلها وأحدّد قيمتها في تحديد دلالة المواطن العالمي.
+- أيّة قرابة بين مفهومي " الذات السياسيّة " و " المواطن العالمي "؟
+- هل تتعارض فكرة " المواطن العالمي " مع كوني " مواطنا تونسيا "؟ أحرّر فقرة في الغرض.
+
+**Encadré-citation (p.316)** : « يكون، إذن، مواطنا عالميّا، لا الفرد الخاصّ… بل الذّات السياسيّة
+وهي تكشف وجودها الخصوصي وتعلنه داخل العلاقات السياسيّة » — **إتيان تاسان**.
+
+**Illustrations** : p.315 — croquis au trait d'un visage. p.316 — photographie d'un alignement de
+**statuettes de la statue de la Liberté** en série.
+
+###### سند 22 — المواطن العالمي الجديد — p.317-318
+
+**التمهيد** (verbatim) :
+
+> اهتزّت في عالمنا اليوم أركان السيادة الوطنيّة في دلالتها التقليديّة واهتزّ معها الشعور بالانتماء
+> إلى جماعة ضيّقة بعد أن فقد العالم ذاته اتساعه الذي كان عليه وأضاع حدوده التي رسمها الجنس والعرق
+> والدّين. من تبعات ذلك جرى البحث في الجغرافيا السياسيّة الجديدة عن مواطنة جديدة تلائمها.
+
+**Référence imprimée** : ستيفان كاستلاس، العولمة والهجرة، المجلّة الدوليّة للعلوم الاجتماعيّة؛
+العدد 156، جوان 1998، ص 209 — `Stephen CASTLES; Mondialisation et migration; Revue internationale
+des sciences sociales; N 156, Juin 1998, p 209.`
+
+**Thèse (reformulée)** : le grand succès du modèle de l'État-nation fut le **citoyen démocratique**
+— membre de la société, porteur de droits, participant à la législation et à la conduite du
+gouvernement. Mais la citoyenneté démocratique porte une **ambiguïté** : elle mêle l'appartenance à
+une communauté **politique** (où tous sont égaux, abstraction faite du sexe, de la race, de la
+religion) et l'appartenance à une communauté **nationale** (fondée sur des traits culturels
+supposés communs). D'où, historiquement, l'absorption de groupes ethniques par effacement de leurs
+cultures. Or l'homogénéité culturelle est devenue **impossible** au « temps des migrations » :
+frontières poreuses, diversité ethnoculturelle, identités multiples, doubles nationalités. Il faut
+donc un **modèle nouveau de citoyenneté mondiale** qui rompe le lien entre appartenance et
+territoire : que les individus exercent leurs droits **en tant qu'êtres humains** et non en tant
+qu'êtres nationaux — un modèle multiculturel où la diversité ethnique et les identités plurielles
+soient reconnues.
+
+**Pas d'encadré الهامش sur ce سند** (constaté).
+
+**الكاتب** (notice, verbatim resserré) : **ستيفان كاستلاس (1947)** — باحث أنجليزي معاصر وأستاذ
+بجامعة أكسفورد. شغل منصب مدير للبحوث المتعلّقة بتعليم المهاجرين وعُرف ببحوثه المتّصلة بالهجرة
+وتعدّد الثقافات في المجتمع الأوروبي وأستراليا وآسيا. شغل منصب سفير بريطانيا ومسؤولا في الاتّحاد
+الأوروبي. من مؤلّفاته : « العملة المهاجرين والبنية الطبقيّة في أوروبا الشرقيّة » (1973) [sic —
+« العملة » pour « العمالة »]، « الإتنيّة والعولمة » (2000)، « ماضي الهجرة والحركة الشعبيّة العالميّة
+في العالم المعاصر » (2003).
+
+**المهامّ** (verbatim) :
+
+- ما دلالة " المواطن الديمقراطي " ولِمَ اعتبر طموحا مشتركا؟
+- ما هو الغموض الذي يحيط بمفهوم المواطنة الديمقراطيّة وهل يضعنا هذا الغموض أمام مفارقة؟
+- لِمَ يظلّ هدف التجانس الثقافي مستشكلا؟ أستحضر مكاسبي المعرفيّة التي حصّلتها في مسألة " الخصوصيّة والكونيّة ".
+- هل يمكن تناسي الاختلاف وهل في ذلك غُنْمٌ ما؟
+- ما الذي دعا إلى ضرورة البحث عن صيغة جديدة لمفهوم المواطنة ضمن الواقع السياسي الرّاهن؟
+- هل تمثّل فكرة المواطنة العالميّة حلاًّ لمشكل الأقليّات والمهاجرين؟
+- أستخلص، في ضوء ما ورد في النصّ، دلالة " المواطن العالمي ".
+
+**Encadré-citation (p.318)** : « يلزمنا نموذج جديد للمواطنة العالميّة يمكنه أن يحطّم الرّابطة بين
+الانتماء والإقليميّة » — **كاستلاس**.
+
+**Illustrations** : p.317 — portrait photographique de l'auteur. p.318 — photomontage d'un homme en
+chemise et cravate dont la tête est un **globe terrestre**, tenant un journal.
+
+> ✅ **Fin de la نافذة سندات du مبحث 3.1** : 22 سندات, p.278-318.
+> ⚠️ Le **مهامّ** du سند 22 renvoie explicitement à la مسألة « الخصوصيّة والكونيّة » — c'est-à-dire
+> au **مبحث 1.2**, non encore transcrit. Renvoi inter-chapitres imprimé par le manuel.
+
+##### 3.1.3 نافذة دعائم للتفكير في المسألة — p.319-334
+
+> **Pages lues** : p.319–334 (intégral, rendu 200 dpi ; passages douteux revérifiés à 400-450 dpi).
+> **Source** : manuel élève `210402P00`, مبحث 3.1 « الدّولة : السّيادة والمواطنة ».
+> ⚠️ La numérotation du فهرس et celle imprimée **ne coïncident pas partout** — voir § Écarts
+> relevés en fin de section.
+
+**p.319 — page d'ouverture de la نافذة.** Titre imprimé en écriture calligraphique :
+**نافذة دعائم للتفكير في المسألة**. Image : une pile de livres reliés rouge avec une paire de
+lunettes posée dessus, sur fond de feuillage (**c'est exactement la même image qu'à la p.251 du
+مبحث 2** — le manuel réutilise le visuel d'ouverture des نوافذ دعائم). Encadré-citation
+(verbatim) :
+
+> « إن الغاية القصوي من تأسيس الدّولة ليست السيطرة والتسلّط أو إرهاب النّاس وجعلهم يقعون تحت
+> نير الآخرين، بل هي تحريرهم من الخوف بحيث يعيش كل فرد في أمان بقدر الإمكان، أي يحتفظ قدر
+> الإمكان بحقّه الطبيعي في الحياة دون إلحاق ضرر بغيره ».
+> — سبينوزا، *رسالة في اللاهوت والسياسة*
+
+⇒ **Cette citation d'ouverture est la thèse que le نصّ مطوّل (Spinoza, p.339-345) viendra
+développer** : la fin de l'État n'est pas la domination mais la libération de la peur.
+`[« القصوي »` est imprimé ainsi, avec ي final au lieu de ى — coquille de la source.`]`
+
+Sommaire imprimé en bas de page (deux entrées numérotées, de droite à gauche) :
+**1 — تحديدات وتمييزات مفهوميّة** · **2 — سياقات فكريّة**.
+
+⚠️ **Le sommaire n'annonce que 2 entrées**, alors que la فلسفة العقد الاجتماعي (p.332-334) est
+imprimée **à l'intérieur de la 2ᵉ** comme son **3ᵉ item** (« 3 – فلسفة العقد الاجتماعي »).
+Ce n'est donc **pas** une troisième rubrique de la نافذة.
+
+---
+
+###### 3.1.3.1 تحديدات وتمييزات مفهوميّة — p.320-326
+
+Trois concepts sont définis : **السّياسة** (p.320-321), **اللائكيّة** (p.322-323),
+**الكليانية أو التوتاليتارية** (p.324-326).
+
+**Gabarit — il n'est PAS uniforme, contrairement au مبحث 2** :
+
+| Concept | Entrées imprimées | Rubrique « قيل في … » | Tableau مجاورة/مناقضة |
+| --- | --- | --- | --- |
+| **السّياسة** | ■ لغة · ■ اصطلاحا · ■ فلسفيا | ✅ 6 citations | ⛔ **absent** |
+| **اللائكيّة** | ■ لغة · ■ اصطلاحا · ■ فلسفيا | ✅ 6 citations | ✅ p.323 |
+| **الكليانية** | **\* التعريف** → ■ لغة · ■ فلسفيا (**pas de اصطلاحا**) | ✅ 8 citations | ✅ p.326 |
+
+Un encadré **\* لمزيد التعمّق** commun aux trois concepts clôt la sous-partie (p.326).
+
+---
+
+**1 — السّياسة · `La politique` — p.320-321**
+
+**■ لغة (verbatim)** :
+
+> **السّياسة** في اللّغة العربية مصدر **« ساس »**، وهي **تنظيم أمور الدّولة وتدبير شؤونها**. وفي
+> الإغريقية `Politiké` من `Polis` **وهي المدينة**، وتعني **النشاط الذي ينظّم ويسيّر شؤون
+> المدينة** وبشكل عام المجموعة التي **يكوّن أفرادها جسما له نفس المصير**.
+
+*Distinction grecque imprimée — la plus testable de la page* :
+
+> وقد ميّز الإغريق بين **« البوليتيكه »** أو **النّشاط السّياسي الواقعي** و**« البوليتيا »** أو
+> **تأسيس نظام ما لتسيير شؤون المدينة**.
+
+⇒ **البوليتيكه = la pratique politique effective** ≠ **البوليتيا = l'institution d'un régime**.
+
+*Côté latin (verbatim)* : أمّا اللاّتينيين فقد استعملوا بشكل تفضيلي عبارات **« بوليكوس »**
+`Policus` و**« سيفيليس »** `Civilis` من عبارة **« بوليتكوس »** `Politicus`
+و**« الرسبوبليكا »** `Res-Publica` والتي تعني **مجموع الشّؤون السّياسيّة**.
+
+**■ اصطلاحا (verbatim)** :
+
+> تعني **السّياسة** بوجه عام **ما يتّصل بالحكومة والدّولة** في مقابل **أشكال الحياة الاجتماعية
+> الأخرى** (إدارة، عدالة، فنّ…) وهي **في طبيعتها نشاط بشريّ**.
+
+⇒ Distinction posée : **السياسة ≠ les autres formes de la vie sociale** (administration,
+justice, art).
+
+**■ فلسفيا (verbatim resserré)** :
+
+> تعدّ **السياسة** موضوع **« علم السياسة »** بما هو، في عرف الفلاسفة القدامى، **البحث في أنواع
+> الدّول والحكومات، وعلاقة بعضها ببعض، والكلام على المراتب المدنيّة وأحكامها، والاجتماعات
+> الإنسانية الفاضلة والرّديئة، ووجوه استبقاء كلّ منها وعلّة زواله**…
+
+Œuvres citées comme sources de ce علم (verbatim, avec les dates imprimées) :
+**« كتاب السياسة » لأرسطو (384–322 ق.م)** · **« اللوفياثان » `Léviathan` لهوبس `Hobbes`
+(1588–1679)** · **« روح القوانين » لمنتسكيو `Montesquieu` (1689–1755)**.
+
+Suite (verbatim) : وتمثّل السّياسة أيضا مجالا للنشاط الفلسفي تكوّن ما يسمّى **فلسفة السّياسة**
+التي تعنى بـ**تحليل مختلف أشكال السّلطة وعلاقتها بالمواطنين وأنظمة الحكم** أو بصورة أضيق
+**إنشاء تصور خاصّ للتاريخ والدّولة**.
+
+⇒ **Distinction : علم السياسة ≠ فلسفة السياسة.**
+
+**Les trois distinctions internes que le manuel imprime ensuite (p.320) — le cœur testable** :
+
+1. **الفارابي** : **السّياسة الشرعيّة** (والتي **تستمدّ أحكامها من الدّين**) ≠ **السّياسة
+   المدنيّة** (وهي **قسم من الحكمة العمليّة** أي **الحكمة السياسيّة أو علم السّياسة**).
+2. **السياسة النّظرية** (تعنى بـ**دراسة الظواهر السّياسيّة المتعلّقة بأحوال الدّول والحكومات**)
+   ≠ **السّياسة العمليّة** (تعنى بـ**أساليب ممارسة الحكم في الدّولة لرعاية مصالح النّاس، وتدبير
+   شؤونهم وأحوالهم**).
+3. **السّياسة** (le substantif) ≠ **السّياسي** : « يطلق على **المنسوب إلى السّياسة**، وإذا كان
+   **نعتا لأمر** كان يعني **الأمر المدني المشترك بين المواطنين الخاضعين لقوانين واحدة** ».
+
+**Le présupposé de la politique (verbatim)** :
+
+> **تفترض السّياسة إذن فكرة التّجمع أو الوحدة**، وقد فهم **إيريك فايل** `Eric Weil` (1904–1977)
+> السّياسة بما هي **« حياة مشتركة بين البشر حسب البنى الأساسيّة لهذه الحياة »**.
+
+**Les trois métaphores de l'unité politique (p.320-321, verbatim, à cheval sur les deux pages)** :
+
+> تستعمل عبارة **وحدة سياسيّة** و**مجتمع سياسي** للتّدليل على وحدة أو **« جسم متمفصل »** استعارة
+> لعبارة **هوبس** أو **« كلية عضويّة »** حسب عبارة **هيغل** `Hegel` (1770–1831)، **وحدة اجتماعية
+> لها حياة سياسيّة في إطار علاقة بين حكّام ومحكومين أو بين سلطة حكم ومواطنين**.
+
+**Le glissement péjoratif du mot depuis le 16ᵉ siècle (p.321, verbatim resserré)** :
+
+> غير أنّه ومنذ **القرن السّادس عشر** ظهر استخدام لكلمة **السّياسة** كنعت يستخدم **بغرض المدح
+> أحيانا والتحقير أحيانا أخرى** معبّرا عن **الغاية السّياسيّة الحقيرة**، فيحمل على معاني
+> **الحيلة والمكيدة وعدم الذمّة**. **والاستعمال الرّاهن للمفهوم لا ينفصل عن هذا الموروث**.
+
+Deux emplois actuels signalés :
+- **كنعت** — pour des domaines variés : شؤون السياسة، **الاقتصاد السّياسي**، **الحقوق
+  السّياسيّة**…
+- **دلالة مجازيّة** — « تعني **الفارق القائم بين مجموع المواطنين ورجال السّياسة** الذين ينظر
+  إليهم **كاختصاصيّين منشغلين بالسّلطة** ممّا يطرح مشاكل يعسر حلّها تتصل بالدّيمقراطيات
+  (**مشاكل الإعلام والمشاركة**…) ».
+
+**■ قيل في السّياسة (p.321, verbatim, 6 citations)** :
+
+| Auteur (tel qu'imprimé) | Citation |
+| --- | --- |
+| **أرسطو** | « **الإنسان حيوان سياسي** ». |
+| **مورا** | « **السّياسة فنّ الإبقاء على الدّول** ». |
+| **بول فاليري** | « السّياسة **فنّ يمنع النّاس من التّدخل في شؤون هي شؤونهم** ». |
+| **روسو** | « إنّ الذين يريدون **معالجة الأخلاق والسّياسة كلاهما على حدة** لن يفقهوا من أيّهما شيئا ». |
+| **فولتير** | « للأسف يبدو أنّ **السّياسة والحرب** هما **المهنتان الأقرب إلى طبيعة الإنسان** : فإمّا **التفاوض** أو **التّحارب** ». |
+| **كانط** | « تقول السّياسة : **كن حذرا كالأفعى**، ولكنّ الأخلاق تضيف (**شرطا مقيّدا**) : **دون رياء، كاليمامة** ». |
+
+Illustrations : p.320, photo d'un défilé de masse en chemises jaunes sur une place, devant un
+immeuble portant le visage de **Che Guevara** en ferronnerie (Place de la Révolution, La Havane) ;
+p.321, photo d'une manifestation étudiante brandissant des drapeaux rouges et des banderoles en
+caractères chinois. Aucune des deux ne porte de légende imprimée.
+
+---
+
+**2 — اللائكيّة · `Laïcité` — p.322-323**
+
+**■ لغة (verbatim)** :
+
+> **اللائكيّة** لفظة **مستحدثة في اللغة العربيّة**، تعرف كذلك **بالعلمانية**، وهي المقابل العربي
+> لكلمة `Laïcité` الفرنسية المشتقة من اليونانية `Laikos` أو `Laos` ومن اللاتينية `Laicus` والتي
+> تعني **العاميّ أو ابن الشعب أو المدنيّ غير المتعلّم** في مقابل **الكاهن** أو `Le Clerc` التي
+> تُطلق على **رجل الدّين الذي تلقى تعليما**.
+
+*Distinctions posées ici — les deux les plus testables de l'entrée* :
+
+1. **اللائكي ≠ الكاهن / `Le Clerc`** (l'homme du peuple non instruit ≠ le clerc formé).
+2. **اللائكيّة ≠ الاكليريكية** (verbatim) : « **واللائكيّة هي نقيض الاكليريكية** التي تُعرف
+   **كتوجه يقول بضرورة تدخل رجال الدّين في الشؤون العامّة** ».
+
+Sens grec complémentaire imprimé : `Laos` = **وحدة المتساكنين الذين يُنظر لهم ككلّ لا يقبل
+القسمة أو التمييز** — d'où : « **تُطلق صفة اللائكي على رجل من الشعب دون أن تميزه أو تجعله في
+مقام رفيع : فلا دور معترف به له من قائد المدينة ولا سلطة له لكي يفرض قناعاته على الآخرين** ».
+
+**■ اصطلاحا (verbatim)** :
+
+> تعني **اللائكيّة فصل الدّين عن الدولة** ؛ وعلى هذا الأساس **يتحرّك المفهوم ضمن الحقل السياسي**.
+> تسمح لنا الدلالة الاشتقاقية من بيان الدلالة الاصطلاحية إذ **تعلن اللائكيّة وحدة الشعب على أساس
+> من الحريّة والمساواة في الحقوق** : **حريّة الاعتقاد التي لا تخضع لأيّ توجيه** و**المساواة فيما
+> يتّصل بالقناعات الذاتيّة أو الشخصيّة**، فليس ثمّة **أية أفضلية بين التوحيد أو الإيمان بتعدد
+> الآلهة، أو بين الفكر الحرّ والتصوّف**.
+
+**■ فلسفيا (verbatim)** :
+
+> تحيل **اللائكيّة** على **معنى سياسي قانوني**، كما تحيل على **جملة الإشكالات التي تتصل بالتنظيم
+> السياسي للمجتمع، وأساس الحقّ المدني** وبصورة خاصّة **بعلاقة الدين بالدولة أو السّلطة الزمنية
+> بالسلطة الروحية**.
+
+Développement imprimé (p.322, à cheval sur les deux colonnes) :
+
+- Dans une société laïque **يتم الاعتراف بأي مذهب أو قناعة** mais tout choix religieux ou
+  confessionnel reste **مسألة خاصة** ; et ce « privé » se prend **en deux sens** :
+  **المعنى الأوّل شخصي وفردي** ; **أمّا الثاني فيكون جمعيّا** — mais **دون أن يحقّ لهذه الجماعة
+  أن تكون لسان الشعب أو أن تحتلّ الفضاء السياسي وتمارس من خلاله سلطة إكراه لإتّباع معتقداتها**,
+  « إذ يتعلّق الأمر **بتجمّع خاص وليس بالمجتمع في عمومه** ».
+- **وحدة الشعب** = **مبدأ للمساواة بين الجميع**, mais une égalité **تتأسس على الوعي الحر**, « بما
+  أن **الوعي لا ينبغي ولا يمكن أن يخضع للإكراه** ».
+- **وحدة الشّعب se comprend par opposition à** : الاعتراف **بمجموعة أو فريق بامتياز أو حقوق
+  استثنائيّة أو خاصّة أو دور قيادي بالنسبة إلى الشعب ككل**.
+- Conclusion imprimée (verbatim) : وحدة الشعب **ليس لها من أساس سوى المساواة في حقّ تبني أي عقيدة
+  أو مذهب أو اتجاه**، والتي **تمنع أن تصبح عقيدة خاصة معيارا عاما أو أن يكون هذا المعيار قاعدة
+  لممارسة النفوذ**.
+
+**Reprise de la définition philosophique et les deux étapes historiques (p.323, verbatim)** :
+
+> تفيد **اللائكية فلسفيا إذن فصل الدّين عن الدولة**، إذ يتمثل **مرجع اللائكية وأساسها** فيما
+> **يوحّد الجميع** وما يُعدّ **قاسما مشتركا بين الجميع** بقطع النظر عن **الاختلافات المذهبية أو
+> العقدية**.
+
+> لقد اعتبرت **اللائكية سيرورة تحرّر تاريخية**، وهو تحرّر عرف **مرحلتين أساسيتين** :
+> **المرحلة الأولى** شهدت **انتقالا من التّسامح المحدود إلى التسامح العام** ؛
+> أمّا **المرحلة الثانيّة** فقد شهدت **قطعا مع الحدود والغموض السياسيين لمفهوم التسامح** و**إقامة
+> المبدأ التشريعي لأسس الدولة اللائكية**، والذي اعتبر **بمثابة الاعتراف القانوني بحريّة الاعتقاد
+> من ناحية وبالمساواة بين المواطنين**، وهو ما أنتج **نقلة حاسمة وضعت الحقوق الأساسية خارج كل
+> نفوذ ديني أو اعتباطي**.
+
+**■ قيل في اللائكيّة (p.323, verbatim, 6 citations)** :
+
+| Auteur (tel qu'imprimé) | Citation |
+| --- | --- |
+| **مونتسكيو** | « **لا ينبغي أبدا أن نحتكم إلى القوانين الإلهيّة فيما ينبغي أن نحتكم فيه إلى القوانين الإنسانية**… فهذان الضربان من القوانين **يختلفان في أصلهما، وفي موضوعهما وفي طبيعتهما** ». |
+| **جون لوك** | « إنّ كلّ **سلطة الدولة لا تتعلق إلا بالخيرات المدنية**، وأنّها **مقصورة على رعاية شؤون هذه الدنيا**، وأنّه **لا يحقّ لها أن تمسّ أي شيء يتعلّق بحياة الآخرة** ». |
+| **جون جاك روسو** | « يمكن أن نقسّم **الدّين الذي يأخذه المجتمع بعين الاعتبار** إلى **صنفين : دين الإنسان ودين المواطن** ». |
+| **باور** | « **يجب إلغاء كل امتياز ديني بوجه عام** بما في ذلك احتكار كنيسة تتمتّع بالامتيازات، وإذا كان البعض أو العديد أو الغالبية العظمى لا تزال تعتقد أنّ عليها أن تؤدّي واجبات دينية، فإنّ هذا الأداء **مسألة خاصّة تماما ومتروكة إليها** ». |
+| **ماركس** | « إنّ **تفكيك الإنسان… إلى متديّن ومواطن**، هذا التفكيك **ليس كذبة ضدّ المواطن**، ولا **التفافا على التحرّر السياسي**، إنّه **التحرّر السياسي نفسه**، إنّه **الطريقة السياسية للتحرر من الدين** ». |
+| **هنري بينارويز** | « إن **قوة عموميّة متحرّرة من كل تبعية عقديّة** وقادرة تبعا لذلك على **توحيد البشر رغم اختلافاتهم**، **ذاك هو المثل الأعلى للائكية** ». |
+
+**Tableau imprimé p.323 — مفاهيم مجاورة / مفاهيم مناقضة (اللائكيّة)** — l'un des deux tableaux
+de distinction de la نافذة, donc du matériau de question directement objectivé :
+
+| **مفاهيم مجاورة** (voisins) | **مفاهيم مناقضة** (contraires) |
+| --- | --- |
+| العلمانية | الدولة الدينية |
+| الليبيرالية | السلطة الروحيّة |
+| السلطة الزمنيّة | الطائفية |
+| الحق الوضعي | الحقّ الإلهي |
+| المواطنة | الرعيّة |
+
+⚠️ Le tableau est en **vis-à-vis ligne à ligne** dans la source ; les couples se lisent
+naturellement (**السلطة الزمنيّة ↔ السلطة الروحيّة**, **الحق الوضعي ↔ الحقّ الإلهي**,
+**المواطنة ↔ الرعيّة**), mais le manuel **n'imprime aucune flèche d'appariement** : ce sont deux
+listes en regard, pas un tableau d'oppositions deux à deux déclaré.
+
+Illustrations : p.322, photo de la statue monumentale **« L'Ouvrier et la Kolkhozienne »** (deux
+figures de bronze brandissant faucille et marteau sur fond de ciel) ; p.323, reproduction d'une
+peinture allégorique révolutionnaire française (portrait ovale en médaillon au ciel, œil de la
+Providence, deux drapeaux tricolores, bonnet phrygien sur une pique, colonne portant des tables
+inscrites, obélisque, personnages au premier plan). Aucune légende imprimée.
+
+---
+
+**3 — الكُليانية أو التوتاليتارية · `Totalitarisme` — p.324-326**
+
+⚠️ **Gabarit différent** : la rubrique s'ouvre par un titre **\* التعريف :** puis n'a que
+**deux** entrées — **■ لغة** et **■ فلسفيا**. **Il n'y a pas de ■ اصطلاحا.**
+
+**■ لغة (verbatim)** :
+
+> كلمة من **أصل لاتيني `Totus`** وتعني **الكلّ** أو **النسق الذي يرنو نحو الكليّة أو الشموليّة
+> والوحدة**، كما تفيد في اللغة العربية **الصفة التي تطلق على أنظمة حكم معينة وأحيانا على فلسفة
+> سياسية محددة**.
+
+**■ فلسفيا (verbatim resserré — c'est la définition officielle du chapitre)** :
+
+> تفيد **الكليانية** وصفا يُطلق على **نظريّة اجتماعيّة سياسيّة** أو على **إيديولوجيا** وعلى
+> **صورة للتنظيم السياسي للمجتمع** تقوم على **ذوبان الأفراد والمؤسسات والجماعات وانصهارها في
+> الكلّ الاجتماعي**، ويمثّل هذا الكلّ **قائد واحد يجمع كل السلطات**، وبذلك تعكس **الكليانيّة
+> تجربة هيمنة سياسية بقيادة حزب واحد** إذ يقدّم **النّظام الكلياني صورة اتحاد الدولة والحزب
+> لتكون الدولة أداة لتجسيد مشاريع الهيمنة** عبر **نسق من المعتقدات والقناعات والأساطير والطقوس
+> والرموز** التي تعكس **معنى الوجود الاجتماعي وغايته**، وهي التي **تُعرّف الخير والشر بشكل قطعي
+> وفق مبادئ وقيم الحزب وأهدافه**.
+
+Suite imprimée (p.324) :
+
+- Le régime appelle à **وحدة وطنية ذات طابع صوفي** ; au nom de cette unité, le **الزّعيم** est
+  regardé comme **المصدر الأعلى للقوة وكأنّه يمثل إرادة الشّعب**.
+- Sur cette base, **أجهزة الرّقابة السياسيّة** écrasent **كل معارض أو مخالف باعتباره يهدد الوحدة
+  الوطنية**.
+- **لا معنى في صلب هذا النظام لاستقلاليّة أي ميدان من ميادين الحياة الاجتماعية** — الإعلام، الفنّ،
+  الدّين، الأخلاق… — « إذ **يجب أن يخضع كل شيء لنفوذ الدولة وتنظيمها فلاشيء يمكن أن يوجد خارج
+  الدولة كما لا مكان للفرد خارج تنظيمها** ».
+
+**L'opposition frontale que le manuel imprime (p.324, verbatim) — la distinction la plus
+testable** :
+
+> لتبدو **مبادئ الكليانية الضدّ المقابل لما جاءت به الثّورات البرجوازيّة الديمقراطيّة**، مثل
+> مبادئ **حقوق الفرد الثابتة كالحرية والمساواة والمواطنة** وغيرها، وهي مبادئ **ترفضها الكليانية
+> رفضا قطعيا** إذ **لا معنى لحرية الفرد والمعتقد**، بل ثمة فقط **أفكار صحيحة وأفكار خاطئة وأخرى
+> ينبغي استئصالها**.
+
+**Les signes distinctifs du régime totalitaire (p.324, liste imprimée — 9 items)** :
+**الإيديولوجيا الرسمية** · **الحزب الواحد الذي يقوده مستبد** · **جهاز الرقابة البوليسي** ·
+**إلغاء المنظّمات غير الرسمية** · **العنف العسكري أو شبه العسكري** · **محاصرة وسائل الإعلام
+وتوجيهها** · **الرقابة المركزية** · **توجيه الاقتصاد في كليته** · **المشاركة الإلزامية للناس في
+مشاريع الدولة**.
+
+**Le trait commun malgré les écarts (verbatim)** : « يُشار بهذه التسمية إلى **أنظمة تتفاوت في عدد
+من الخصائص**، إلاّ أنّها **تشترك في صفة احتكار قائد أو زعيم للسّلطة والنفوذ** » — exemples
+imprimés : **ايطاليا موسوليني** · **ألمانيا هتلر** · **اسبانيا فرانكو**… وغيرها.
+
+**دولة القائد (verbatim)** : « **لا تعني سوى غياب أية مقاييس واضحة ومعلنة لما هو شرعي أو قانوني
+وطغيان مشيئة القائد**، ممّا يجعل **نمط الحكم الكلياني نمطا اعتباطيا نزويا كيفيا**، ممّا **يلغي
+مبدأ حكم القانون وسيادته لتحل محله إرادة الفرد** ».
+
+**Le prolongement contemporain — 4 relais nommés (p.324-325)** :
+
+| Penseur (graphie imprimée + latin) | Ce que le manuel lui fait dire |
+| --- | --- |
+| **ريمون أرون** `Raymond Aron` (1905 – 1983) | Le **المجتمع الصناعي** est une cause de consolidation du pouvoir de l'État, par les changements des **قوى الإنتاج وخاصة التكنولوجيا** ; l'État tend **بحكم طبيعتها إلى الكلية أو الشمولية** parce qu'il est un **« مركبّ عسكري صناعي »** mêlant politique et économie dans un champ **إداري وتقني سلطوي**. L'État moderne **يستوعب المجتمع في كليته** ; l'idéologie du parti **لا تسلّم بوجود نزاعات** ; le régime monopolistique **يعمل بالخوف وبالإيمان**. |
+| **هوركهايمر** `Horkheimer` (1895–1973), **مدرسة فرانكفورت** | Les sociétés totalitaires sont **شبيهة بنموذج المجتمع العبودي** — **القسمة النهائية بين القيادة والخضوع** ; la كليانية **تتطابق مع انتصار الأسطورة على العقل** ; critique de la raison contemporaine devenue **كليانيّة** puisque **استحال العقل عقل الدولة، عقلا علميا حسابيا**. |
+| **يورغن هابرماس** `Habermas` (1929) | **العلم والتقنية** remplissent aujourd'hui la fonction **إضفاء الشرعيّة على الهيمنة** — que celle-ci s'exerce **باسم الديمقراطيات الليبيرالية أو باسم الأنظمة الاشتراكية** ; dans les deux cas on aboutit à **إلغاء كل احتمال نقدي ورفض القوّة التحررية التي يطلقها الفكر الجدلي**, si bien que la distinction entre régimes démocratiques et totalitaires devient **من قبيل التلاعب بالمصطلحات**. |
+| **فوكو** `Foucault` (1926-1984) | Les **المجتمعات الانضباطية** — **مجتمعات مراقبة ومعاقبة واستثمار للإنسان واستعباده** ; on parle désormais de **مجتمعات سلطوية** où le pouvoir est **لامرئيّة** et se définit comme **إستراتيجيا** ou **« فعل في فعل في أفعال راهنة أو مستقبلية »**. |
+
+**ريكور `Ricœur` (1913–2005) — citation imprimée en couleur (verbatim)** :
+
+> « ومن هنا يكون لقولنا **إن الدولة سلطة أو إنها سلطة إرغام** معنى واحد، **لا أتكلم عن دولة قاسية
+> ولا عن دولة مستبدة وإنما أتكلم عن الدولة في حد ذاتها** أي **عما يجعل الدولة دولة من خلال أنظمة
+> وأشكال مختلفة وحتى متضادة** ».
+
+**جيل دولوز `Deleuze` (1925-1995) — le pas de plus (p.325, verbatim resserré)** :
+
+> بل لعلّنا **تجاوزنا … المجتمعات الانضباطية نحو مجتمعات المراقبة** : فإذا كان الفرد في
+> **المجتمعات الانضباطية** يعرف **بإمضائه وبرقم أو عدد تسجيله**، ففي **مجتمع المراقبة** لا يهم
+> الإمضاء ولا العدد **وإنما الرقم الذي يعد بمثابة كلمة السر** ؛ ففي حين **تنتظم المجتمعات
+> الانضباطية عن طريق الأوامر** فإن **اللغة الرقمية للمراقبة تتحدد عبر الأرقام التي ترسم المنفذ
+> إلى المعلومة**. **لم نعد نجد أنفسنا أمام الزوج الفرد – الجمهور** : فالأفراد **أصبحوا أجزاء**
+> والجماهير **أصبحت نماذج أو معطيات سوق**.
+
+⇒ **Distinction imprimée : المجتمعات الانضباطية (Foucault) ≠ مجتمعات المراقبة (Deleuze)** —
+signature/numéro d'inscription ≠ **chiffre-mot de passe** ; ordres ≠ **langage numérique** ;
+couple individu–masse ≠ **« أجزاء » / « معطيات سوق »**. C'est la distinction la plus fine de la
+sous-partie.
+
+**■ قيل في الكليانيّة (p.325-326, verbatim, 8 citations)** :
+
+| Auteur (tel qu'imprimé) | Citation |
+| --- | --- |
+| **منتسكيو** | « يوجد **نوعان من الاستبداد** : الأوّل **مادي** ويتمثل في **العنف الذي تمارسه الدولة**، والثاني هو **الاستبداد بالرأي**، ويتجلى عندما **تفرض الدولة أمورا تزعج الطرق المألوفة في التفكير** ». |
+| **دي لابينيه** | « **النظام الكلياني** هو الذي تظهر فيه **السلطات العامّة**، في تنظيمها للبلاد، **نزوعا مستمرا إلى استبدال المبادرات الشخصية للمحكومين بمبادراتها التحكمية الخاصة** ». |
+| **لوفور** | « **الدولة الكليانية ليست دولة حيث تسود الاعتباطية**، بل هي **دولة تقوم على مبدأ يرفض الحق، يرفض الممارسة الحرة للتفكير** ». |
+| **ماكس فيبر** | « **الدولة هي مجموع الأجهزة والمؤسسات التي تسعى إلى الهيمنة** مدعية أنها تحافظ على التوازن والوحدة في المجتمع لتكون **كل دولة كلية ومركزية حتى وإن ادعت أنها ضمان الحرية** ». |
+| **حنّا أرنت** | « **تختلف النظم الكليانية في جوهرها عن مختلف أشكال القمع السياسي الأخرى**… فالنظام الكلياني **يحوّل دوما الطبقات إلى كتل**، **ولا يحل محل نظام الأحزاب دكتاتورية الحزب الواحد وإنما حركة جماهيرية**، **تنقل مركز سلطة الجيش إلى الشرطة** ». |
+| **كيرزيو مالبرت** | « في ظل النظام الكلياني، **ما لا يعد ممنوعا يكون إجباريا** ». |
+| **ريمون أرون** | « يفترض النظام الكلياني **خمس خصائص أساسية** : **1 –** هو نظام **يحتكر فيه حزب واحد النشاط السياسي**. **2 –** يكون هذا الحزب **مسلحا بإيديولوجيا رسمية** تتسم **بإطلاقية النفوذ** وتمثل **الحقيقة الرسمية للدولة**. **3 –** لنشر هذه الحقيقة الرسمية **تستأثر الدولة بوسائل القوة والإقناع ومجموع وسائل الاتصال** مثل الصحافة المكتوبة والمرئية والمسموعة **لتكون موجهة من قبل الدولة ومن يمثلها**. **4 –** **تخضع الدولة كل الأنشطة والفعاليات الاقتصادية والمهنية** لتكون معبرة عن الدولة، وبما أن الدّولة لا تنفصل عن إيديولوجيتها فإن هذه الأنشطة **تلون بلون الحقيقة الرسمية**. **5 –** بما أن كل نشاط يغدو **فعالية من فعاليات الدولة** وخاضعا للإيديولوجيا الرسمية فإن النظام الكلياني **يقترن بضرورة بسيادة العنف أو الرعب السياسي والإيديولوجي** ». |
+| **موسوليني** | « **إن كل شيء في الدولة، لا شيء خارج الدولة، ولا شيء ضدّ الدّولة** ». |
+
+⇒ Les **5 caractéristiques de Raymond Aron** sont numérotées dans la source : c'est la liste
+fermée la plus sûre du chapitre.
+
+**Tableau imprimé p.326 — مفاهيم مجاورة / مفاهيم مناقضة (الكليانية)** :
+
+| **مفاهيم مجاورة** (voisins) | **مفاهيم مناقضة** (contraires) |
+| --- | --- |
+| الشمولية | الديمقراطية |
+| الديكتاتورية | الليبيرالية |
+| الفاشية | الفوضوية |
+| الاستبداد | الفصل بين السلط |
+| الحكم المطلق | المواطنة |
+| الطغيان | — |
+
+⚠️ **Les deux colonnes n'ont pas le même nombre d'entrées** : **6 voisins** contre **5
+contraires** — vérifié à 200 dpi, ce n'est pas une ligne coupée. Aucun appariement ligne à ligne
+n'est donc possible ici.
+
+**\* لمزيد التعمّق (p.326)** — un encadré unique à **trois onglets** (bande latérale bleue
+portant les mots **السياسة** · **اللائكية** · **الكليانية**), avec les listes de sites telles
+qu'imprimées (fautes de frappe de la source comprises) :
+
+- **السياسة** : `Fr.wikipedia.org/wiki/politique` · `Fr.wikipedia.org/wiki/la politique(Aristote)`
+  · `www.olats.org/schoffer/defpol.htm` ·
+  `Fr.encarta.mcn.com/dictionary/2016024631/politique.html` ·
+  `www.aquadesign.be/news/article/8420php`
+- **اللائكية** : `Fr.wikipedia.org/wiki/laicité` ·
+  `www.assemblée-nationale.fr/cite/jeune/laicité/acceuil/acceuil.asp` · `http://www.laicite.be/`
+- **الكليانية** : `www.wikipedia.org/wiki/totalitarisme` ·
+  `www.wikibéral.org/wiki/index.php?title=totalitarisme` ·
+  `Hypo.ge/dip.etat/ge.ch/www/cliotexte/html/definition_.totalitarisme`
+
+Illustrations p.326 : petite photo (dans la bande d'onglets) d'une employée devant un écran
+d'ordinateur ; grande photo d'un **échiquier** dont une main déplace une pièce. Sans légende.
+
+---
+
+###### 3.1.3.2 سياقات فكريّة — p.327-334
+
+Trois courants exposés, **numérotés par le manuel** : **1 – الليبيراليّة** (p.327-329),
+**2 – الفوضويّة** (p.330-331), **3 – فلسفة العقد الاجتماعي** (p.332-334).
+
+**Gabarit imprimé (commun aux trois)** : **\* التعريف** → **\* الجهاز المفهومي** →
+**\* تنبيهات** → **\* لمزيد التعمّق**. Deux écarts : الليبيرالية met **الجهاز المفهومي avant
+تنبيهات** comme les autres, mais **فلسفة العقد** remplace la fin de ses تنبيهات par un renvoi
+imprimé **« ( انظر الجدول المصاحب ) »** vers le **tableau comparatif de la p.334**.
+
+---
+
+**1 — الليبيراليّة · `Libéralisme` — p.327-329**
+
+**\* التعريف (verbatim)** :
+
+> **مذهب فكري أو فلسفي سياسي** يعتبر أن **الإجماع الديني لا يمثل شرطا ضروريا لتنظيم اجتماعي
+> سليم**، ويدعو إلى **حريّة الفكر حقّا للجميع**، كما يؤكّد على **ضرورة الحدّ من سلطة الدولة قياسا
+> لحريات الأفراد**، وظهرت **الليبيراليّة السياسيّة في القرن الثامن عشر نقيضا للمُلكية المطلقة
+> والاستبداديّة** وهو ما يعكس موقفا يقوم على **احترام استقلاليّة الآخرين** ويدعو إلى **التسامح
+> والثقة في آثار الحرية ونتائجها**. وعلاوة على طابعها السياسي، تُفهم الليبيرالية أيضا بما هي
+> **مذهب اقتصادي للمؤسسة الحرّة**، بحيث **لا يمكن للدّولة أن تتدخل في عرقلة قوانين لعبة التنافس**.
+
+⇒ **Deux faces déclarées d'emblée : ليبيرالية سياسيّة / مذهب اقتصادي للمؤسسة الحرّة** — la
+distinction sera reprise et systématisée dans les تنبيهات (p.329).
+
+**Les fondateurs (verbatim, dates imprimées)** : **جون لوك (1632 – 1704)** · **روسّو
+(1712–1778)** · **ستيوارت ميل (1806 – 1873)**.
+
+**Le noyau commun (verbatim)** : « ورغم الاختلاف القائم بين هؤلاء المنظرين، توجد **قواسم مشتركة
+تتمحور حول حرية الفرد** التي تعتبر **جوهر التيار الليبيرالي** ».
+
+**La distinction des deux despotismes (verbatim) — très testable** :
+
+> فالليبيرالي يصبو على نحو خاص إلى **التحرر من التسلط بنوعيه** : **تسلط الدولة (الاستبداد
+> السياسي)**، و**تسلط الجماعة (الاستبداد الاجتماعي)**.
+
+**La généalogie tracée par le manuel (p.327)** :
+
+- **ديمقراطيي أثينا في القرن الخامس قبل الميلاد** — ils ont insisté sur **أهمية الفرد والحريات
+  الفردية**, avec **بروتاغوراس** : **« الإنسان مقياس كل شيء »**.
+- **الرواقيين** — mais sur un autre principe : **وحدة الطبيعة والإنسان ومشاركة جميع البشر فيها** ;
+  et surtout l'importance de découvrir **حيزا في الذات الإنسانية لا تستطيع أن تنفذ إليه سلطة
+  المجتمع أو أي شكل آخر من أشكال السلطة** — une fois ce for intérieur découvert, l'individu jouit
+  d'**قدر من السيادة والحرية لا يتأثر بأي عوامل**.
+- **Note de vocabulaire imprimée (verbatim)** : « **ولئن نشأت الليبيرالية وتطورت في القرن السابع
+  عشر، فإن لفظتي ليبيرالية وليبرالي لم تصبحا متداولتين إلاّ بداية من القرن التاسع عشر** ».
+  ⇒ **Distinction chose / mot** : la doctrine est du 17ᵉ, les mots du 19ᵉ.
+
+**Locke — le raisonnement reconstruit par le manuel (p.327, verbatim resserré)** :
+
+- Contexte : **تاريخ انكلترا في القرن 17** = histoire d'un conflit entre **الملكية الساعية إلى
+  الحفاظ على ما اعتبرته حقها المطلق في الحكم** et **القوى البرلمانية المصرّة على الحد من سلطة
+  الملوك وإخضاع هذه السلطة لحكم الدستور** ; conflit aggravé par **تداخل النزعات الدينية
+  والمذهبية** et par le refus parlementaire de tenir que **الملك يحكم بمشيئة إلهية**.
+- L'argument : « **وإذا افترضنا مع لوك أن للإنسان حقوقا طبيعية في الحرية والكرامة، وجب أن نقر
+  بأن نسق الحكم الوحيد الذي لا يتعارض مع هذا الافتراض هو الحكم المبني على رضا المحكوم
+  وموافقته** ».
+- La conséquence institutionnelle : si **الشعب مصدر السلطة الشرعية**, alors **يصبح الحكم مسألة
+  أمانة لا مسألة حق** — que le gouvernant prétende ce droit **متوارثا أو هبة من الإله** ; et le
+  pouvoir devient **مشروطا حيث يكون الحاكم خاضعا لرقابة المحكوم بشكل دائم**.
+
+⇒ **Distinction imprimée : الحكم أمانة ≠ الحكم حق.**
+
+**La loi que le manuel dégage (p.327-328, verbatim)** : « فكأن **الليبيرالي يفترض وجود علاقة
+عكسية بين سلطة الدولة وحرية الفرد** : فكلما **ازدادت سلطة الدولة أصبحت حريات الفرد ضيقة** ».
+
+**Adam Smith — le versant économique (p.328, verbatim resserré)** :
+
+- **أدام سميث (1723 – 1790)** — أكد على **ضرورة الالتزام بالحريات الفردية وخصوصا الحرية
+  الاقتصادية** ; **اختزل مهمة الدولة في حماية حقوق المواطن، خصوصا حق الملكية الفردية وتسهيل
+  تعامله مع الآخرين**.
+- **المحرك الوحيد للإنسان في تصرفاته هو خدمة مصالحه، وإرضاء ذاته** ⇒ le meilleur service de
+  l'État est **تسهيل سعي الأفراد خدمة لمصالحهم الخاصة، دون تدخل مفتعل**, « **وكأن هناك يدا خفية
+  تحدد الأدوات وتنسق الحركات** ».
+- ⇒ **أدرج أدام سميث مبدأ الاقتصاد الحر مبدأ التنافس الحر في الليبيرالية كنظام اقتصادي**.
+
+**Stuart Mill — la réserve sur la loi majoritaire (p.328, verbatim)** :
+
+> ويعتبر الليبيراليون أنه **لا يكفي أن نطلق « شعار الحرية الفردية في ظل سيادة القانون »** إذ
+> **يخشى أن يؤدي وضع القانون في يد الأغلبية الديمقراطية إلى تقلص مجال الحرية الفردية وتعاظم شأن
+> الدولة** ؛ لذلك دافع **ستيوارت ميل** على ضرورة **الاعتراف بمجال خاص بالفرد** مانحا بذلك الفرد
+> **حريّة مطلقة في الحيز الذي يخصه** كما يمنح **الدولة حق التدخل فقط فيما يتعلق بالحيز العام**.
+
+⇒ **Distinction imprimée : الحيز الخاص (liberté absolue de l'individu) ≠ الحيز العام (seul champ
+d'intervention légitime de l'État).**
+
+**\* الجهاز المفهومي (p.328, 6 entrées, verbatim)** :
+
+| Concept | Définition imprimée |
+| --- | --- |
+| **■ الحرية** | « هي **حالة من يفعل ما يشاء وليس ما يشاء الآخر بدلا منه**، وهي أيضا **غياب القيود الخارجيّة**. **فالإنسان الحرّ هو ذاك الذي لا يكون عبدا أو سجينا**. والحريّة من وجهة نظر اجتماعيّة وسياسيّة ليبراليّة هي **حالة الفرد في صلاته مع المجتمع والسّلطة السياسيّة**، وهي **الحقّ المعترف به للفرد وتحدّ من نفوذ الدولة** : **حريّة التفكير، الحرية الشّخصيّة وحريّة الاجتماع**، وهي **تقتضى ما لا يلحق الضرر بالآخرين** ». |
+| **■ الفرد** | « هو **الشّخص الذي يعترف له بوجود مستقل وبحقّ التّصرّف وفق إرادته الخاصة والمطلقة**. ويفيد في التصّور اللّيبرالي **الشّكل الأهمّ للواقع والقيمة الأسمى** ». |
+| **■ الحق** | Distinction en deux : **الحق الطبيعي** = « ما **يخوّل للإنسان الفرد بموجب طبيعته**، وهو حقّه في **الحريّة والملكيّة** وكلّ ما يعدّ جزءا ممّا يعتبر **حيّزا شخصيا في حياة الفرد** » ; **الحق المدني** = « **التصرّف وفق ما يشرّعه القانون وما يبيحه أو يمنعه** ». |
+| **■ التسامح** | « **حالة للفكر وقاعدة للسّلوك** تقضي بالسّماح **لكلّ واحد أن يعبّر عن رأيه بحريّة حتّى وإن كنّا لا نشاركه الرّأي أو نعارضه فيه**، فلا يحق لأحد أن يكون له **امتياز يفرض بموجبه الصمت على الآخر** ». |
+| **■ المنافسة** | « **مفهوم اقتصادي بالخصوص**، ويقال أساسا على **العلاقة التي تقوم بين المنتجين والتجّار** والتي تحكمها **قيم المصلحة الخاصة والربح**، ولا يحق للدولة في التصور الليبيرالي **التّدخل إلاّ لتأمين حق الفرد في الملكية والثروة التي يحصّلها من المنافسة الحرّة** ». |
+| **■ العدالة** | « **لا تفيد إلغاء التفاوت** وإنما تعني **تكافؤ الفرص** من ناحية و**توفير ما يساعد الفرد على تحقيق الثراء ومزيد الرّفاه** ». |
+
+⇒ **العدالة ≠ إلغاء التفاوت** : c'est la définition la plus contre-intuitive de la liste, donc la
+plus discriminante.
+
+**\* تنبيهات (p.328-329, verbatim)** — l'avertissement porte sur la distinction des deux
+libéralismes : « **رغم الصلات العضوية القائمة بين الاقتصادي والسّياسي، ورغم القواسم المشتركة
+التي توجد بين اللّيبيراليّة السّياسيّة واللّيبيرالية الاقتصاديّة، فبالإمكان التمييز بينهما** » :
+
+- **■ في السّياق السياسي** : la ليبيرالية exprime une position qui, **مع لوك `Locke` ومنتسكيو
+  `Montesquieu` (1689 – 1755)**, **يعظّم التّسامح، ويمتدح الحريّة الفرديّة سيّما حرّية التفكير**
+  et exige de la protéger **بالحدّ من نفوذ الدّولة وذلك بالتّفرقة بين السّلطات التّشريعيّة
+  والتّنفيذيّة والقضائيّة**.
+- **■ في السّياق الاقتصادي** : la **اللّيبيرالية الكلاسيكيّة** — **آدم سميث `Adam Smith`**,
+  **مالتوس `Malthus` (1766 – 1834)**, **ريكاردو `Ricardo` (1772–1823)**, **ستيوارت ميل
+  `John Stuart Mill`** — forme un courant qui **يرفض تدخّل الدّولة في قانون اللّعبة الاقتصاديّة**
+  et pose l'existence de **قوانين طبيعيّة بما هي نظام تسيير ذاتي قادر على تأمين التّوازن بين
+  العرض والطّلب**, à condition de respecter **المنافسة والملكيّة الخاصّة لوسائل الإنتاج**.
+- **على خلاف اللّيبيراليّة الجديدة مع هاياك `Hayek` (1899 – 1992)** — celle-ci **تجيز تدخّلا ما
+  للدّولة في الشّأن الاقتصادي، دون أن تلغي مبدأ المنافسة الحرّة أو حريّة المؤسّسة، ودون أن
+  تتراجع عن رفضها للخيار الاشتراكي وللدّولانية**.
+
+⇒ **Distinction imprimée : الليبيرالية الكلاسيكيّة ≠ الليبيراليّة الجديدة (هاياك)** — la
+seconde **autorise une intervention** de l'État sans renoncer à la concurrence libre ni accepter
+le socialisme.
+
+**\* لمزيد التعمّق (p.329, verbatim)** :
+**ج. ستيوارت ميل** : *مبادئ الاقتصاد السياسي* ; *في الحريّة* ; *النفعية* ·
+**ج. ج. روسّو** : *في العقد الاجتماعي* · **ج. لوك** : *مقالة في الحكم المدني* ;
+*رسالة في التسامح* · **أ. سميث** : *بحوث حول طبيعة ثروة الامم وأسبابها* ·
+**توكفيل** : *الديمقراطيّة في أمريكا* · **منتسكيو** : *روح القوانين*.
+
+Illustration p.329 : bas-relief circulaire en pierre — figure féminine drapée assise, la main
+posée sur une tablette portant l'inscription **`LOI`** (allégorie de la Loi). Sans légende.
+
+---
+
+**2 — الفوضويّة · `Anarchisme` — p.330-331**
+
+**\* التعريف (verbatim)** :
+
+> **تصور سياسي يهدف إلى إنشاء مجتمع دون سلطة أو هيمنة** حيث يكون للأفراد **حرية التصرف والتعاون
+> فيما بينهم**.
+
+**Étymologie imprimée (verbatim)** : ويُردّ أصل المصطلح إلى اللغة اللاتينية `Anarcia` المشتق من
+اليونانية `An` (**دون**) و`arkhe` والذي يعني **المبدأ الذي يقوم عليه شيء ما والذي يتكوّن منه، أي
+جوهره أو طبيعته التي تمنحه قانون صيرورته ووجوده**. ⇒ « **فإن الأصل الاشتقاقي للكلمة يفيد عموما ما
+ليس له أصل أو مبدأ موجه**، وهو ما يترجم **بغياب النفوذ أو غياب السلطة السياسية** ».
+
+**La formule-clef (verbatim)** : « في ضوء هذا التحديد يمكننا القول إنّ **الفوضوية تعني النظام دون
+قيادة أو قائد** ».
+
+**Ce que le manuel pose comme cœur de toute philosophie anarchiste** : **إرادة تحرير فردية
+أو/وجماعية** ; « **فعشق الحرية المتأصل لدى الفوضويين يقودهم للنضال من أجل تحقيق مجتمع أكثر عدلا
+حيث تجد الحريات فضاء تحققها بشكل متناغم وتشكل أساس التنظيم الاجتماعي والعلاقات الاقتصادية
+والسياسية** ».
+
+**Ce que l'anarchisme refuse et ce qu'il défend (verbatim)** :
+
+> **ترفض الفوضوية بشكل قطعي الفكرة القائلة بضرورة السلطة القهرية والمهيمنة في المجتمع**، وتدافع
+> في المقابل على **شكل من التنظيم الاجتماعي والاقتصادي فوضوي، نصير الحرية المطلقة** أي **مؤسس
+> على التعاون والمشاركة بدل القهر والهيمنة**.
+
+**L'ennemi commun (verbatim)** : **السلطة والنفوذ والهيمنة والقهر** — d'où **تُعدّ الدولة العدو
+الأساسي للفوضويين** : la définition retenue de l'État est ici **« الجهاز الذي يحتكر حق ممارسة
+العنف وحق التحكم في الأفراد ( القهر، الإخضاع، الخدمة العسكرية ) »**.
+
+**Le principe philosophique — ce qui fait déborder l'anarchisme hors de la théorie politique
+(verbatim)** :
+
+> ولعل أساس هذا الموقف الفوضوي إنما يتحدد في **مبدأ يقوم على رفض كلي لكل ضروب الدوغمائية**، وبهذا
+> المبدأ **تتجاوز الفوضوية حدود النظرية السياسية لتعلن انخراطها في الفكر الفلسفي**. وبرفضها كل
+> عقيدة **تدعو الفوضوية إلى استقلالية الوعي الأخلاقي**، وتعلن **رفضا للقواعد الأخلاقية التي تحدد
+> الفعل وتوجهه**. **فالفعل فيما وراء الخير والشر هو المبدأ الأساسي للسلوك**، إذ **يريد الفوضوي
+> أن يكون حرا في أن يفكر بذاته وأن يعبر بحرية عن أفكاره وآرائه**.
+
+**La mise au point contre le contresens (p.330, verbatim) — la distinction la plus testable de la
+rubrique** :
+
+> **فلا ينبغي أن تفهم الفوضوية على معنى رفض النظام بل ينبغي أن تفهم على معنى « النظام دون
+> سلطة »** على حد عبارة **برودون**.
+
+Précisions imprimées autour :
+- Les anarchistes dits **تلقائيين أو عفويين** tiennent que la société **يتحوّل إلى نظام طبيعي
+  بشكل تلقائي بمجرّد تحرره من العوائق والموانع الاصطناعية التي تفرضها الدّولة**.
+- D'autres jugent que **مفهوم النظام ليس أقل اصطناعا من مفهوم الدولة ذاته** ; d'où : la seule
+  manière de sortir de **تراتبية السلطة** est **القضاء على النظام القهري والعمل على منع قيامه**.
+- Le moyen proposé : **إقامة تنظيم ذاتي للأفراد عن طريق الفيدراليات** — moyen qui permet
+  **مراقبة المؤسسات الاجتماعية الاستبدادية وفضح تبريراتها الإعلامية بصورة مستمرة**.
+- **لامركزية النفوذ** signifie **مشاركة كل طرف في الحياة العامّة مع الحفاظ على الاستقلالية
+  الفردية**.
+
+**\* الجهاز المفهومي (p.330-331, 5 entrées, verbatim)** :
+
+| Concept | Définition imprimée |
+| --- | --- |
+| **■ الحرية** | « تُفهم على معنى **استقلالية الإرادة وغياب كل أشكال القهر والإلزام**، وهي بهذا المعنى **حرية مطلقة** ». |
+| **■ الدولة** | « **سلطة قهر وهيمنة** بما هي **مؤسسة أو جهاز يحتكر حق ممارسة العنف وحق التحكم في الأفراد وتسييرهم** ». |
+| **■ الفرد** | « **كيان سياسي يتحدد وجوده باستقلالية عن كل أشكال الهيمنة**، أو هو **كائن مستقل بذاته، ويتمتع بحرية مطلقة** ». |
+| **■ النظام الطبيعي** | « هو **نظام دون سلطة**، أو هو **نظام تسيير ذاتي** سواء عن طريق **التعاونيات أو الفيدراليات**، وهو أيضا ضرب من النظام القائم على **التصرف المباشر في الحياة الخاصة** وعلى **مشاركة الأفراد في الحياة العامة دون أن تمثل هذه المشاركة نفيا للاستقلالية الفردية** ». |
+| **■ الملكية** | « هي في عرف الفوضويين **سرقة** » — et surtout la distinction ci-dessous. |
+
+**La distinction الملكية الخاصة / الملكية الفردية (p.331, verbatim) — le point le plus
+contre-intuitif de toute la نافذة** :
+
+> ويميّز الفوضويون بين **الملكية الخاصة** و**الملكية الفردية** ؛ وإن كان الفوضويون **لا يرفضون
+> الملكية الخاصة بما هي الخير الضروري والحيوي للأفراد** فإنهم **يرفضون الملكية الفردية التي تمثل
+> قوام استغلال الإنسان للإنسان وأساس الهيمنة والنفوذ**، بحيث **تفهم الملكية الخاصة على معنى تملك
+> شخص ما لذاته** في حين **تفيد الملكية الفردية تملك الآخرين بغاية الحصول على الثروة**.
+
+⚠️ **L'emploi des deux termes est ici l'inverse de l'usage courant** (« الملكية الخاصة » y est
+acceptée, « الملكية الفردية » rejetée). C'est bien ce qu'imprime la source, vérifié à 200 dpi.
+Toute question sur ce couple doit citer les deux gloses du manuel, pas les mots seuls.
+
+**\* تنبيهات (p.331) — les 3 courants de l'anarchisme (verbatim)** :
+
+> توجد **اتّجاهات فوضويّة عديدة**، ويعدّ **التيّار الفوضوي الاجتماعي** و**التيّار الفوضوي
+> الفرداني** و**التيّار الفوضوي البيئوي** **أهم التيّارات في صلب الحركة الفوضوية**.
+
+| Courant | Ce que le manuel lui attribue |
+| --- | --- |
+| **● التيار الاجتماعي** | La société anarchiste **يمكن أن يتشكّل عبر التعاونيات أو النّظم الجماعية أو المؤسّسات النقابية أو المجالس الاستشاريّة**. Point central : **إلغاء الملكيّة والاستحواذ الجماعي على وسائل الإنتاج**. La فوضويّة اجتماعيّة a été tenue pour **جسرا بين الاشتراكيّة والفردانيّة** (via coopératives, fédérations, conseils) ; son combat : **مقاومة الرأسماليّة من جهة وكل النّظم الاستبداديّة من جهة أخرى**. Chefs de file : **برودون `Proudhon` (1809–1865)** puis **باكونين `Bakounine` (1814 – 1876)**, qui représenta **اتجاه الأغلبية في صلب الأمميّة الأولى** jusqu'à la scission conduite par **ماركس `Marx` (1818 – 1883)**, laquelle **أقصى الفوضويّين البرودونيّين والباكونينيّين**. |
+| **● التيّار الفرداني** | **الفرد فقط يمكنه أن يمتلك بشكل مشروع ما يعدّ خيرا خاصّا** ; défense du **حقّ الفرد في التّملّك الخاص والفردي** ; suppression des **المؤسّسات السّلطوية** soit **بالتخلّي عنها** soit **بمحاربتها** ; la **حرّية الفرد** est vue **ضدّا مقابلا لهيمنة المجتمع ومؤسّساته** ; confiance dans les **المؤسّسات الوسيطة المتولّدة عن النّشاط التعاوني بين الأفراد** pour **إفشال مخطّطات الدولة**, **شريطة ألاّ تساهم في فعل الهيمنة**. |
+| **● التيار البيئوي أو الايكولوجي** | **يرفض كل أشكال الاقتصاد الصّناعي وكل أشكال الاستغلال التكنولوجي للطبيعة والعالم** ; **قطب ثالث للفكر الفوضوي** proposant **إمّا العودة إلى الطبيعة (العيش في مجتمع بدائي) أو مراقبة الأفراد للتكنولوجيا ومواجهة أشكال استغلالها للطبيعة**. |
+
+**\* لمزيد التعمّق (p.331, verbatim)** : **ريمون آرون** : *من عائلة مقدسة إلى أخرى* ·
+**بيار كلاستير** : *المجتمع ضد الدولة* · **كارل ماركس** : *بيان الحزب الشيوعي* ·
+**برودون** : *ما الملكية ؟* · **باكونين** : *الإله والدولة*.
+
+---
+
+**3 — فلسفة العقد الاجتماعي · `La philosophie du contrat` — p.332-334**
+
+**\* التعريف (verbatim resserré)** :
+
+> **فلسفة التعاقد أو فلسفة العقد** هي **فلسفة سياسية بالأساس** أو **اتجاه فلسفي سياسي يمتد بين
+> القرنين 17 و18**. وتتميز، **رغم الاختلاف بين ممثليها**، بـ**رفض تأسيس الدولة على الحق الإلهي**
+> وبالتالي **رفض الدولة الدينية أو اللاهوتية**، كما تعلن **رفضا للطبيعة المدنية للإنسان أي رفض
+> الأساس الطبيعي للدولة**.
+
+⇒ **Double refus déclaré : ni fondement divin, ni fondement naturel de l'État.** C'est la
+définition la plus discriminante de la rubrique.
+
+**La مسلّمة fondatrice (verbatim)** :
+
+> إذ تتمثل **المسلمة الأساسية التي تقوم عليها فلسفة التعاقد** في اعتبار **الاجتماع الإنساني
+> اصطناعا إراديا وليس ظاهرة طبيعية**، وهو ما يقتضي الإقرار بأن **إنشاء المجتمع تم بموجب قرار
+> إنساني يتمثل في التعاقد**.
+
+**Les trois définitions emboîtées (verbatim)** :
+
+| Terme | Définition imprimée |
+| --- | --- |
+| **التعاقد** | « **اتفاق يلتزم بمقتضاه شخص أو عدة أشخاص تجاه شخص أو عدة أشخاص بتقديم شيء ما، أو بعدم القيام بشيء ما** ». |
+| **العقد** | « ما يكون **ثنائي الطرف أو متعدد الأطراف**، أي **ما يتضمن التزامات أو تعهدات متبادلة** ». |
+| **العقد الاجتماعي** | « **مجموع المواثيق أو المواضعات الأساسية، التي تتضمنها الحياة في المجتمع** على الرغم من كونها **لم تعلن وربما لم تضبط أبدا ضبطا شكليا** ». |
+
+**Ce que vise la philosophie du contrat (verbatim)** : « ولعل الفلسفة السياسية التي تنادي بتأسيس
+الدولة على التعاقد إنما تقصد **عقلنة الفعل السياسي** » — l'organisation requise repose sur le
+fait que **يضع كل واحد شخصه وما له من قوة أو كامل قدرته على أساس الشراكة، تحت تصرف القيادة العليا
+أو الإرادة العامة** en échange d'être traité **بصفته عضوا في الجسم السياسي أو جزءا من كل**.
+
+**La formule du troc contractuel (verbatim)** :
+
+> وهو ما يعني أن **فلسفة التعاقد تستدعي تنازل الأفراد بمقتضى العقد عن بعض حقوقهم الطبيعية أو
+> كلّها مقابل اكتسابهم لحقوق مدنية أساسها المساواة والعدل** وما يترتّب عليهما من **شعور بالأمن
+> والطمأنينة**.
+
+**Reformulation-synthèse (p.332, verbatim)** :
+
+> إن **فلسفة العقد** إذن **نظرية في نشوء الدولة والقانون** تردّ الاجتماع إلى **اتفاق بين الأفراد،
+> يدخلونه بمحض إرادتهم**، و**يتنازلون بمقتضاه عن بعض حقوقهم**، و**يتعهدون فيه باحترام حقوق
+> الآخرين وحرياتهم وملكيتهم**.
+
+**حالة الطبيعة — le concept sans lequel rien ne se comprend (p.332, verbatim)** :
+
+- Statut du concept : **فلئن اعتبر لوك `Locke` أن هذه الحالة واقعة تاريخية فإن بقية فلاسفة العقد
+  اتخذوا منها فرضية عمل** لإضفاء مشروعية على leur conception politique, donc pour **تأسيس الدولة
+  وتأسيس الحاجة إليها وتشريع نفوذها**.
+  ⇒ **Distinction imprimée : Locke = fait historique / les autres = hypothèse de travail.**
+- Sens : **حالة غياب الدولة أو حالة ما قبل نشأة المجتمع المدني**.
+- Contraste : « وإذا كان **نظام الحياة في المجتمع المدني عقلانيا** فإنه في **حالة الطبيعة قائم
+  على غلبة الأهواء والانفعالات** ».
+- Les deux appuis de la doctrine : **حالة الطبيعة من ناحية** و**طبيعة الإنسان وحقوقه الطبيعية من
+  ناحية أخرى**.
+- Le double moteur du passage : (1) **طبيعته العدوانية أو طبعه العاطفي أو خضوعه للدوافع
+  والانفعالات** ; (2) **حاجة الأفراد إلى الاتحاد في مجتمع بحكم عجزهم على حفظ بقائهم بشكل فردي
+  ومستقل** — c'est ce qui **يبرر حتمية الانتقال من حالة الطبيعة إلى الحالة المدنية**.
+- Ce que le passage change (verbatim) : **من وضع تغيب فيه الدولة إلى وضع يحتكم إلى سلطة الدولة**,
+  ou **من وضع يحتكم إلى سيادة الحق الطبيعي إلى آخر قوامه القانون المدني أو الحق المدني أي الحق
+  الذي يضمنه القانون**.
+- La logique du contrat (verbatim) : **تعاقد قوامه المنطق الحسابي أو حساب المصالح الذي يقوم على
+  جدلية التنازل مقابل تحقيق مكاسب** — mekasib qui **تختلف باختلاف النظر إلى طبيعة الإنسان
+  وحاجاته الملحة**.
+
+**\* الجهاز المفهومي (p.333, 8 entrées, verbatim)** :
+
+| Concept | Définition imprimée |
+| --- | --- |
+| **■ حالة الطبيعة** | « هي **الوضع الذي كان عليه الناس قبل نشأة المجتمع المدني والدولة**، وتقال **في مقابل الحالة المدنية**. وهي **حالة مفترضة أو متصورة تصوّرا عقليا وليست مرحلة تاريخية** ». ⚠️ Contredit en apparence la note de la p.332 sur Locke — voir § Écarts relevés. |
+| **■ الحق الطبيعي** | « هو **القوة الطبيعية ذاتها** أي **جملة القوى التي منحتها الطبيعة للإنسان**، وهو أيضا **ما يخوّل للإنسان القيام به بموجب الطبيعة أو بموجب القانون الطبيعي** ». |
+| **■ الإرادة العامة** | « هي **عمل محض للإدراك** الذي ينظر، **في صمت الأهواء**، إلى **ما يمكن الإنسان أن يطلبه من نظيره، وما يحق لهذا الإنسان أن يطلبه من نظيره، وما يحق لهذا النظير أن يطلبه منه**، كما تفيد **إرادة الجسم الاجتماعي المتحد في مصلحة مشتركة**. والإرادة العامة هي **الأساس الشرعي لكلّ سيادة عند روسو** ». |
+| **■ الطبيعة البشرية** | « **مقولة تحيل على معطيات الإنسان الطبيعية والتي تحدد أفعاله وعلاقاته** ». |
+| **■ المجتمع المدني** | « **مجتمع القانون والمؤسسات المدنية** في مقابل **المجتمع الذي تحكمه السلطة الدينية أي المجتمع الثيوقراطي**. وتعدّ **الدولة في فلسفة التعاقد مؤسسة من مؤسسات المجتمع المدني ووسيلته لتحقيق مصالح أعضائه**، ويتجسّد المجتمع المدني في **تشريعات تنظم الملكية، وعلاقات الإنتاج، وتوزيع الثروة في المجتمع** ». |
+| **■ القانون** | « هو **النظام والنّاموس أو التشريع** الذي يفيد **مجموع القواعد العامة الملزمة والمفروضة على الإنسان** والتي **تحدد حقوقه وواجباته** أو **ما يحق له المطالبة به وما يجب عليه الامتناع عن القيام به** ». |
+| **■ القوة** | « **القدرة والشّدة ويقابلها الضعف**، والقوّة **مقابلة للحقّ لأنّها ليست حقّا، وإنّما هي وسيلة للدّفاع عن الحقّ، أو لمنع صاحب الحقّ من التمّتع بحقّه** ». |
+| **■ الحرية** | « **نميز بين الحرية الطبيعية بما هي حرية مطلقة والحرية المدنية بما هي حرية نسبية ترتبط بطاعة القانون** ». |
+
+**Les deux distinctions imprimées à l'intérieur de ces entrées — les plus testables** :
+
+1. **الإرادة العامة ≠ إرادة الجميع** (Rousseau, verbatim) : « إذ **تهتمّ الأولى بالمصلحة
+   المشتركة، والثانية بالمصلحة الخاصة**، وسميت خاصة لأنها **تفكر في الجزء لا في الكل** وهي لأجل
+   ذلك **لا تعبرّ عن المواطنة وإنما عن الأنانية** ».
+2. **الطاعة ≠ الخضوع** (verbatim) : « **الطاعة في هذا المعنى تختلف عن الخضوع، إذ أن الإنسان حين
+   يطيع القانون لا يطيع سيدا بل يطيع سلطان العقل أو يطيع سلطان نفسه من جهة كونه ساهم في تشريع
+   القانون**، إذ أن **الإنسان أنشأ القانون لكي لا يطيع أحدا** ». ⇒ conclusion imprimée :
+   **« وعلى هذا الأساس لا تمثل الحرية نقيض الضرورة وإنما نقيض العبودية »**.
+
+**Précision imprimée sur القوة / العنف (p.333, verbatim)** : « **والإفراط في استعمال القوة هو
+العنف** إذ يُعدّ **العنف مضادا للرفق، ومرادفا للشدة والقسوة**، **وكلّ فعل شديد يخالف طبيعة الشيء،
+ويكون مفروضا عليه من خارج فهو، بمعنى ما، فعل عنيف**، والعنف **يمكن أن يُعدّ شرعيا إذا ما كان
+مطابقا للقانون وغير شرعي إذا ما انتهك القانون** ».
+
+**\* تنبيهات (p.333, verbatim)** :
+
+> **رغم وجود قواسم مشتركة بين فلاسفة العقد الاجتماعي، ينبغي التأكيد على ضروب الاختلاف بينهم، وهو
+> اختلاف يبلغ حد التناقض أحيانا** سواء في **تحديد طبيعة الدولة** أو في **بلورة غايتها**، وهو ما
+> يتجلى من خلال **هذا الجدول المقارن بين نماذج من فلاسفة العقد**.
+> **( انظر الجدول المصاحب )**
+
+**\* لمزيد التعمّق (p.333, verbatim)** : **سبينوزا** : *رسالة في اللاهوت والسياسة* ;
+*رسالة السياسة* · **روسو** : *في العقد الإجتماعي* ; *في أصل التفاوت بين البشر وأسسه* ·
+**هوبس** : *التنين* ; *في المواطن* · **هيغل** : *مبادئ في فلسقة الحق* `[sic — « فلسقة » pour
+« فلسفة », coquille de la source]`.
+
+⇒ **Noter** : *رسالة السياسة* (Spinoza) est **l'œuvre du نصّ مطوّل** de la p.339-345, annoncée
+ici. Et **هيغل n'est pas un philosophe du contrat** — il figure pourtant dans cette
+bibliographie ; le manuel ne le justifie pas.
+
+---
+
+###### Le tableau comparatif des 4 philosophes du contrat — p.334 (pleine page, verbatim)
+
+C'est **la page la plus dense en matière testable de toute la tranche** : 4 auteurs × 6 rubriques,
+imprimée sans un mot de commentaire.
+
+En-têtes imprimés (de droite à gauche) : **الفلسفة** ·
+**هوبس `Hobbes` 1588-1679** · **روسو `Rousseau` 1712-1778** ·
+**لوك `Locke` 1632-1704** · **سبينوزا `Spinoza` 1632-1677**.
+
+**■ حالة الطبيعة**
+
+| Auteur | Cellule (verbatim) |
+| --- | --- |
+| **هوبس** | حالة **صراع وحرب الكل ضد الكل**، ناتجة عن **طبيعة الإنسان المولع بالحرية والهيمنة**. إذ يُعدُّ **عدوانيا وشريرا بطبعه**. |
+| **روسو** | حالة **سلم**، يتميز فيها الإنسان **بضمير عاطفي**، وهو **مسالم وفزع** وأمام كل خطر **يكون الفرار حركته الأولى**، فضلا عن تميزه **بالحرية المطلقة**. |
+| **لوك** | حالة **تمتع بالحقوق الطبيعية في ظل سيادة القانون الطبيعي** الذي يضمن **حق الحياة والحرية والملكية**. |
+| **سبينوزا** | حالة **تتسم بهيمنة القوي على الضعيف، وسيادة قانون الغاب**، بحكم أن **الحق الطبيعي هو القوة الطبيعية ذاتها**، ولذلك **يمتد الحق بقدر ما تمتد القوة**. |
+
+**■ العقد الاجتماعي**
+
+| Auteur | Cellule (verbatim) |
+| --- | --- |
+| **هوبس** | **تنازل الأفراد كليا عن كل ما لهم من قوة وحقوق طبيعية لصاحب السيادة**. |
+| **روسو** | **تنازل الأفراد عن حقوقهم الطبيعية لصالح الإرادة العامة**. |
+| **لوك** | **تنازل الأفراد عن بعض حقوقهم لصالح السلطة المدنية**. |
+| **سبينوزا** | **تنازل الأفراد عن تسيير شؤونهم بأنفسهم وفق منطق الانفعال وتنظيم الحياة وفق مقتضيات العقل**، لذلك **لا يمثل العقد تنازلا عن الحق الطبيعي بل تأمينا له**. |
+
+**■ أطراف العقد**
+
+| Auteur | Cellule (verbatim) |
+| --- | --- |
+| **هوبس** | **الأفراد دون صاحب السيادة**. |
+| **روسو** | **بين الأفراد والإرادة العامة التي تعبر عن المجموع**. |
+| **لوك** | **بين الأفراد والسلطة الحاكمة**. |
+| **سبينوزا** | **بين الأفراد والسلطة الحاكمة**. |
+
+⚠️ **لوك et سبينوزا ont ici la même cellule, mot pour mot** — c'est la seule ligne où deux colonnes
+coïncident ; toute question de type « qui dit quoi » doit éviter cette ligne, ou l'utiliser
+précisément pour ce qu'elle est (le point où les deux ne se distinguent pas).
+
+**■ التزامات العقد**
+
+| Auteur | Cellule (verbatim) |
+| --- | --- |
+| **هوبس** | **على الأفراد طاعة الحاكم والذوبان في إرادته مقابل تأمين الأمن والسلام**. |
+| **روسو** | **وجوب طاعة الجميع للإرادة العامة مقابل تأمين الحقوق المدنية مثل الحرية والملكية**. |
+| **لوك** | **على الحاكم مثل الأفراد الالتزام بالعقد واحترام حق الجميع في الحرية والملكية**. |
+| **سبينوزا** | **على الأفراد طاعة القانون مثلما على الحاكم أن يحترم حق الأفراد في الحرية**. |
+
+**■ نظام الحكم**
+
+| Auteur | Cellule (verbatim) |
+| --- | --- |
+| **هوبس** | **نظام استبدادي والسلطة فيه مطلقة**. **نظام دولة التنين** أو **نظام رئاسي**. |
+| **روسو** | **نظام الحكم ديمقراطي مباشر والسلطة فيه مطلقة للإرادة العامة**. **نظام دولة الحق**. |
+| **لوك** | **نظام الحكم تمثيلي والسلطة فيه مقيدة برأي الأغلبية في برلمان تقتصر عضويته على أصحاب الممتلكات**. **نظام دولة الوفاق**. |
+| **سبينوزا** | **نظام الحكم ديمقراطي**. **نظام دولة الحرية**. |
+
+⇒ Les quatre « noms d'État » sont un quadruplet parfaitement disjoint :
+**دولة التنين (هوبس)** · **دولة الحق (روسو)** · **دولة الوفاق (لوك)** · **دولة الحرية
+(سبينوزا)**.
+
+**■ غاية الدولة**
+
+| Auteur | Cellule (verbatim) |
+| --- | --- |
+| **هوبس** | **حفظ الحياة وضمان الأمن والسلام**. |
+| **روسو** | **سيادة الشعب وتأمين المصلحة العامة**. |
+| **لوك** | **تأمين الخيرات المدنية : الحرية الفردية والملكية الخاصة**. |
+| **سبينوزا** | **العيش وفق نظام العقل وضمان الأمن والحرية**. |
+
+⇒ **غاية الدولة عند سبينوزا** est exactement ce que dit la citation d'ouverture de la نافذة
+(p.319) et ce que développera le نصّ مطوّل (p.339-345) : la boucle est imprimée par le manuel
+lui-même.
+
+##### 3.1.4 نافذة كيفيّات التفكير — p.335-338
+
+> **Pages lues** : p.335–338 (intégral, rendu `hi/t-3xx.png` ≈ 200 dpi ; chaque encadré revérifié
+> par recadrage ×3).
+> **Source** : manuel élève `210402P00`, مبحث 3.1 « الدّولة : السّيادة والمواطنة ».
+> ⚠️ **Écart de gabarit à signaler d'emblée** : la نافذة ne porte **aucun sommaire imprimé** sur sa
+> page d'ouverture (contrairement à la نافذة دعائم, p.319, qui en imprime un). Les تمارين ne sont
+> pas annoncés : on ne les découvre qu'en tournant la page.
+
+**p.335 — page d'ouverture de la نافذة.** Titre imprimé en écriture calligraphique sur deux lignes,
+séparées par un filet rouge : **كيفيات** / **التفكير**. ⚠️ Le mot **نافذة n'est pas imprimé** dans
+le titre de la page (il n'apparaît que dans le فهرس) — la page ne dit que « كيفيات التفكير ».
+
+Image pleine page (cadre orange) : **une chouette effraie posée dans l'embrasure d'une vieille
+fenêtre à six carreaux**, l'intérieur noir. C'est le visuel d'ouverture de la نافذة كيفيات التفكير
+— **la chouette de Minerve**, allusion classique à la philosophie. Aucune légende imprimée.
+
+Encadré-citation en bas de page, avec **portrait photographique de باشلار** (verbatim) :
+
+> « **إنّ فتنة الوضوح السريع فتنة عظمى** ».
+> — **باشلار**, *الفكر العلمي الجديد*
+
+⇒ La citation d'ouverture donne le **mot d'ordre méthodologique** de toute la نافذة : se défier de
+l'évidence rapide. C'est exactement ce que les quatre مهارات vont opérationnaliser (reconstruire la
+question au lieu de la recevoir toute faite).
+
+---
+
+###### Gabarit imprimé des تمارين
+
+La نافذة enchaîne **4 تمارين numérotés** (le chiffre est imprimé en rouge dans un bandeau
+« تمرين N » à losanges orangés, en haut à droite). ⚠️ **Le gabarit n'est PAS uniforme** — aucun des
+quatre n'a exactement la même composition :
+
+| Bloc imprimé | 1 (p.336) | 2 (p.336-337) | 3 (p.337) | 4 (p.338) |
+| --- | :-: | :-: | :-: | :-: |
+| **المهارة المستهدفة** | ✅ | ✅ | ✅ | ✅ |
+| *consigne dans un encadré propre* | ⛔ | ✅ (« ما دلالة… ») | ⛔ | ✅ (**المهمّة**) |
+| **توضيح** | ✅ | ✅ | ✅ | ⛔ |
+| **السند** | ✅ (دولوز–قاتاري) | ⛔ | ✅ (هوبس) | ⛔ |
+| **المهام** | ✅ (4) | ⛔ | ✅ (5) | ⛔ (**المهمّة**, au singulier) |
+| **التمشّيات** | ⛔ | ✅ (4 étapes, cadre jaune) | ⛔ | ✅ (3 مراحل, bulles) |
+
+Trois écarts à retenir :
+
+1. **Le تمرين 2 n'a ni سند ni مهام** : il enchaîne **المهارة → question → توضيح → التمشّيات**.
+   C'est le seul purement méthodologique, sans texte à travailler.
+2. **Le تمرين 4 est le seul sans توضيح** — et le seul dont la consigne s'appelle **المهمّة** (au
+   singulier) et non **المهام**.
+3. Les **تمشّيات ne sont imprimées que sur 2 et 4** — et sous **deux formes graphiques
+   différentes** : cadre jaune à 4 lignes numérotées implicitement (تمرين 2, p.337) vs **3 bulles
+   nommées** (تمرين 4, p.338).
+
+⇒ Les **trois توضيح (تمارين 1, 2, 3) sont la matière la plus directement enseignée de la نافذة** :
+ce sont les seuls endroits du chapitre où le manuel dit *comment* on pense, et non *ce que* pense
+un auteur.
+
+---
+
+###### تمرين 1 — p.336 · الكشف عمّا يبرّر طرح مشكل فلسفي
+
+**■ المهارة المستهدفة (verbatim)** :
+
+> **الكشف عمّا يبرّر طرح مشكل فلسفي.**
+
+**■ توضيح (verbatim intégral)** :
+
+> تُعرّف **الفلسفة** بكونها **فنّ طرح المشاكل**؛ ومعنى هذا أن **المشكل لا يُطرح بذاته بل يُبنى في
+> ضوء جملة من الاعتبارات** من بينها **« المبرّرات »** أي **الدواعي النظريّة والعمليّة** وكذلك
+> **الرّهان من وراء التفكير فيه**. وهذا ما يجعل **المشكل الفلسفي مشكلا ذا معنى بالنسبة إلى
+> الإنسان**.
+
+⇒ **La distinction la plus testable de la page** : **المشكل لا يُطرح بذاته، بل يُبنى** — le
+problème n'est pas donné, il est *construit*. Et les trois composantes de cette construction sont
+nommées : **الدواعي النظريّة** · **الدواعي العمليّة** · **الرّهان**.
+
+**■ السند (p.336)** — extrait de **جيل دولوز – قاتاري**, *الرأسماليّة والفُصام*.
+Référence imprimée en toutes lettres sous l'encadré :
+**G. DELEUZE, F. GUATTARI ; *Capitalisme et Schizophrénie*, t I, éd. de Minuit, 1972, pp. 36-37.**
+
+⛔ Texte sous droits — **non recopié** (R-2). Ce qu'il pose, restitué :
+
+- Le texte part de ce qu'il désigne comme **مشكل الفلسفة السياسيّة الأساسي** — et il l'attribue
+  nommément : **« المشكل الذي أحسن سبينوزا طرحه »**, redécouvert ensuite par **رايش** (Reich).
+- La formule de ce problème, telle que le manuel l'imprime entre guillemets :
+  « **لماذا يناضل الناس من أجل عبوديتهم كما لو كان الأمر متعلّقا بخلاصهم ؟** »
+- Le mouvement du texte : ce qui doit étonner n'est **pas** la révolte (voler, faire grève) mais
+  **son absence** — que les affamés ne volent pas, que les écrasés ne fassent pas grève ; et que
+  les hommes supportent depuis des siècles **الاستغلال والإذلال والاستعباد** au point de les
+  **réclamer**, « **لا فقط للآخرين بل لأنفسهم أيضا** ».
+
+⇒ **Ce que le سند illustre de la مهارة** : le problème philosophique n'est pas « la servitude
+est-elle un mal ? » (question déjà tranchée), c'est **le renversement de l'étonnement** — c'est le
+*désir* de servitude qui est le problème. Le texte est là pour montrer un problème **construit**,
+pas reçu.
+
+**■ المهام (p.336, verbatim, telles qu'imprimées)** :
+
+> **المهام :**
+> أعيد صياغة المشكل بوضوح.
+> – أستحضر بعض الوقائع من المجال السياسي تدفع إلى التفكير فيه
+> – ما هيّ الإحراجات النظريّة الكامنة وراء طرحه ؟
+> – فيم تساعدني صياغة المشكل كما وردت في النصّ على : **تعقّل الوقائع التي استحضرتها** و**فكّ
+> الإحراجات النظريّة التي انتبهت إليها** ؟
+
+⚠️ Typographie de la source : la **première tâche n'a pas de tiret**, les trois suivantes en ont
+un ; et « **ما هيّ** » est imprimé avec une **شدّة sur le ي** (pour « ما هي ») — coquille de la
+source, laissée telle quelle.
+
+⇒ Les المهام dessinent le **تمشّي (la démarche) en 4 temps** que la مهارة exige :
+**1) reformuler le problème** → **2) convoquer des faits politiques qui y poussent** →
+**3) dégager les impasses théoriques (الإحراجات) qui le sous-tendent** →
+**4) éprouver le gain de la formulation** sur les deux plans à la fois (les faits *et* les
+impasses). C'est le seul endroit du chapitre où un تمشّي de ce type est imprimé pas à pas.
+
+---
+
+###### تمرين 2 — p.336 · تحديد دلالة مفهوم
+
+**■ المهارة المستهدفة (verbatim)** :
+
+> **تحديد دلالة مفهوم.**
+
+**■ La consigne, dans son encadré propre (verbatim)** :
+
+> **ما دلالة « المجتمع المدني » ؟**
+
+**■ توضيح (verbatim intégral)** :
+
+> **تقتضي هذه المهارة :**
+> – **استبعاد دلالة سابقة** ( سائدة مثلا )
+> – **اختيار مرجعيّة نظريّة لاعتمادها في التحديد**.
+> – **إبراز الطابع الإجرائي للمفهوم** على اعتبار أن **دلالته تسمح بحلّ مشكل ما**.
+
+⇒ **Les 3 opérations de la définition philosophique, telles que le manuel les numérote** :
+**1) écarter un sens antérieur** (typiquement le sens **سائد**, dominant) → **2) choisir une
+référence théorique** sur laquelle adosser la définition → **3) faire apparaître le caractère
+opératoire (إجرائي) du concept**, c'est-à-dire ce qu'il permet de *résoudre*.
+
+⚠️ C'est la liste fermée la plus sûre de la نافذة : **3 opérations, ni plus ni moins**, et la
+troisième porte le critère de validité (**une bonne définition est celle qui résout un problème**).
+
+⚠️ **Aucun سند, aucune مهام pour ce تمرين** — c'est le seul des quatre dans ce cas.
+Le concept mis en travail (**المجتمع المدني**) n'est **pas** défini par le manuel ici : il est
+donné **comme exercice**, pas comme contenu. ⇒ Ne jamais traiter « المجتمع المدني » comme une
+تحديدة du chapitre : le manuel n'en donne aucune.
+
+**■ التمشّيات (p.337, cadre jaune à 4 lignes encadrées, verbatim)** — la démarche s'imprime **en
+haut de la page suivante**, détachée de son تمرين :
+
+> **التمشّيات :**
+>
+> 1. **أستحضر دلالة شائعة للمجتمع المدني**.
+> 2. **أبحث عن بعض المؤشّرات وأبيّن بها هشاشة هذه الدلالة**.
+> 3. **أختار مرجعيّة نظريّة وأحدّد من خلالها دلالة المجتمع المدني**. أراعي في ذلك **التوافق مع
+>    المؤشرات التي أثرتها في التمشّي الثاني**.
+> 4. **أبيّن إجرائيّة هذه الدلالة من خلال بيان ما تستطيعه لمعالجة مشكل ما**.
+
+⚠️ **Piège de mise en page** : ces التمشّيات ouvrent la p.337, **avant** le bandeau « تمرين 3 ».
+Elles appartiennent au **تمرين 2** (le mot **المجتمع المدني** y revient trois fois) — une lecture
+page à page les rattacherait à tort au تمرين 3.
+
+⇒ **Correspondance exacte توضيح ↔ تمشّيات** (le manuel opérationnalise ses 3 opérations en 4 pas) :
+
+| Opération du توضيح | Pas de la تمشّية |
+| --- | --- |
+| **استبعاد دلالة سابقة (سائدة)** | **1** convoquer le sens courant → **2** en montrer la **هشاشة** par des **مؤشّرات** |
+| **اختيار مرجعيّة نظريّة** | **3** — avec l'exigence supplémentaire de **cohérence avec les مؤشّرات du pas 2** |
+| **إبراز الطابع الإجرائي** | **4** — montrer ce que la définition **permet de traiter** |
+
+⚠️ Le pas 2 est **dédoublé** par rapport au توضيح : écarter le sens dominant ne suffit pas, il faut
+**établir sa fragilité par des indices**. C'est la seule exigence que le توضيح ne dit pas et que la
+تمشّية ajoute.
+
+---
+
+###### تمرين 3 — p.337 · بيان حدود أطروحة
+
+**■ المهارة المستهدفة (verbatim)** :
+
+> **بيان حدود أطروحة.**
+
+**■ توضيح (verbatim intégral)** :
+
+> – **الأطروحة هي الموقف الذي يدافع عنه الكاتب ويسعى إلى إقامة الحجّة على وجاهته باعتباره حلاًّ
+> لمشكل فلسفي مستبعدا بذلك أطروحات أخرى**.
+> – **يقتضي بيان حدود الأطروحة في حلّ المشكل :**
+> **مواجهتها بوقائع تكذبها**.
+> **بيان تناقض داخلي فيها**.
+> **بيان تهافت أساسها**.
+> **بيان استتباعاتها الخارقة**
+
+⚠️ La quatrième ligne est imprimée **sans point final** — la liste s'arrête net. Vérifié à ×3, ce
+n'est pas une ligne coupée.
+
+⇒ **La définition de l'أطروحة est la plus complète du chapitre** — elle tient en 4 traits :
+c'est **موقف** · **défendu par un auteur** · **argumenté comme حلّ لمشكل فلسفي** · **et qui, ce
+faisant, en écarte d'autres** (`مستبعدا بذلك أطروحات أخرى`). Ce dernier trait est celui qu'on
+oublie : une thèse n'est pas seulement ce qu'on soutient, c'est ce qui exclut.
+
+⇒ **Les 4 voies pour montrer les limites d'une thèse — liste fermée, la plus testable de la
+نافذة** :
+
+| # | Voie (verbatim) | Ce qu'on attaque |
+| :-: | --- | --- |
+| 1 | **مواجهتها بوقائع تكذبها** | les **faits** — la thèse est démentie par le réel |
+| 2 | **بيان تناقض داخلي فيها** | la **cohérence** — elle se contredit elle-même |
+| 3 | **بيان تهافت أساسها** | le **fondement** — son point de départ ne tient pas |
+| 4 | **بيان استتباعاتها الخارقة** | les **conséquences** — ce qu'elle entraîne est inacceptable |
+
+⇒ Les 4 sont **disjointes et complètes** : fait / cohérence / fondement / conséquence. C'est le
+quadruplet le plus sûr de la tranche, et il vaut pour **n'importe quelle** thèse — donc il est
+réutilisable hors du chapitre.
+
+**■ السند (p.337)** — **هوبس**, *اللوفياثان* **(الفصل 30)**.
+
+⛔ Texte sous droits — **non recopié** (R-2). Ce qu'il pose : ôtez l'obéissance (donc la concorde
+du peuple) à n'importe quelle forme d'État, et le peuple se dissoudra en peu de temps ; ceux qui se
+révoltent **en croyant réformer** la république découvriront qu'ils la **détruisent**. La formule
+que retient le manuel : « **أنّهم بذلك يهدمونها** ».
+
+⇒ **Ce que le سند illustre de la مهارة** : une thèse forte (l'obéissance est la condition
+d'existence du corps politique) posée assez nettement pour qu'on puisse en chercher les
+**حدود** — c'est le matériau, pas la leçon.
+
+**■ المهام (p.337, verbatim, 5 tâches)** :
+
+> **المهام :**
+> – **أحدّد القضيّة الخلافيّة التي يدور حولها الجدل**.
+> – **أصوغ هذه القضية في شكل سؤال إشكالي**.
+> – **أحدّد أطروحة هوبز وأطروحة خصومه**.
+> – **أستخلص حجّته على وجاهة موقفه**.
+> – **أتبيّن حدود الأطروحة**.
+
+⚠️ **Coquille de la source à ne pas propager** : la référence sous le texte imprime **هوبس** (avec
+س), alors que la 3ᵉ tâche, six lignes plus bas, imprime **هوبز** (avec ز). **Les deux graphies
+cohabitent sur la même page.** Le reste du chapitre (نافذة دعائم, tableau du contrat p.334) emploie
+**هوبس** — c'est la graphie à retenir pour tout le chapitre.
+
+⇒ Le تمشّي des 5 مهام : **isoler la question litigieuse** → **la mettre en forme de سؤال إشكالي**
+→ **identifier les deux thèses en présence** (celle de l'auteur *et* celle de ses adversaires) →
+**dégager son argument** → **seulement alors, en montrer les limites**. ⇒ **Les limites viennent en
+dernier** : le manuel interdit de critiquer avant d'avoir reconstruit.
+
+---
+
+###### تمرين 4 — p.338 · القدرة على التأليف
+
+**■ المهارة المستهدفة (verbatim)** :
+
+> **القدرة على التأليف**
+
+**■ المهمّة (verbatim intégral)** — au singulier, dans son propre encadré :
+
+> **هل تبرّر حاجتنا إلى الأمن التضحيّة بالحريّة ؟**
+> **أجيب عن هذا السؤال في فقرة لا تتجاوز العشرين سطرا متبعا في ذلك التمشيات المصاحبة**.
+
+⚠️ **Contrainte de format imprimée** : **20 lignes maximum**. C'est le seul endroit du chapitre où
+le manuel chiffre la longueur attendue d'une production.
+
+⇒ La question posée est **exactement le nœud du chapitre** (الأمن ↔ الحريّة) : c'est l'arbitrage
+qui oppose la lecture hobbesienne à la lecture spinoziste du contrat, et que le نصّ مطوّل (p.339-345)
+va trancher côté Spinoza. Le manuel place donc la production écrite **entre** le سند de هوبس (p.337)
+et le texte long de سبينوزا (p.339).
+
+**■ Les 3 مراحل (p.338, bulles orangées, verbatim)** — ce sont les « **التمشيات المصاحبة** »
+annoncées par la مهمّة :
+
+**● مرحلة بناء المشكل**
+
+> – **أبيّن ما يبرر معالجة هذا السؤال**.
+> – **أشير إلى أهميّة السؤال**.
+> – **أستخلص مشكلا فلسفيّا أصوغه بوضوح**.
+
+**● مرحلة بلورة الجواب**
+
+> – **أبيّن دلالة القول بالتضحية بالحريّة من أجل الأمن**.
+> – **أستحضر بعض المؤيّدات** ( **تقديم حجة على الأقل** )
+> – **أعترض عليه ببيان حدود وجاهته** ( من خلال **الكشف عن ضمنية أو استتباع أو تناقض مع الواقع** ).
+> – **أقترح بديلا وأوضّحه**.
+> – **أستدل على وجاهته**.
+
+**● مرحلة الاستخلاص**
+
+> – **أستخلص الموقف النهائي**.
+> – **أشير إلى قيمته**.
+
+⇒ **C'est le plan officiel de la production philosophique**, en 3 étapes et 10 gestes :
+**بناء المشكل (3)** → **بلورة الجواب (5)** → **الاستخلاص (2)**. Rien d'autre dans le chapitre ne
+donne ce squelette.
+
+⇒ **Le point le plus fin** : la مرحلة بلورة الجواب est **dialectique et obligatoirement complète** —
+elle exige les cinq gestes dans l'ordre : *expliciter* la thèse → *l'appuyer* (au moins **une**
+preuve) → *l'objecter* → *proposer une alternative* → *la prouver à son tour*. Un devoir qui
+s'arrête à l'objection n'a pas fait la moitié de l'étape.
+
+⚠️ **Le rappel des 3 modes d'objection reprend le توضيح du تمرين 3, mais pas à l'identique** :
+ici la parenthèse en nomme **trois** — **ضمنية** (un implicite) · **استتباع** (une conséquence) ·
+**تناقض مع الواقع** (un démenti par le réel) — alors que le تمرين 3 en imprimait **quatre**
+(faits / contradiction interne / fondement / conséquences). Les listes **ne coïncident pas** :
+l'objection par le **تهافت الأساس** disparaît, et le **تناقض داخلي** est remplacé par un
+**تناقض مع الواقع**, tandis que la **ضمنية** apparaît ici pour la première fois.
+⇒ Ne jamais présenter ces deux listes comme une seule.
+
+⚠️ **La moitié basse de la p.338 est vide** — la نافذة s'arrête là. Aucun encadré
+« لمزيد التعمّق », aucune illustration : contrairement à la نافذة دعائم, cette نافذة **ne comporte
+ni bibliographie ni sitographie**.
+
+---
+
+##### 3.1.5 نافذة نصّ مطوّل — سبينوزا, *كتاب السّياسة*, الفصل الثّالث — p.339-345
+
+> **Pages lues** : p.339–345 (intégral).
+> ⛔ **Le texte de Spinoza n'est pas recopié** (R-2). Ce qui est transcrit ici, c'est
+> **l'appareil du manuel** : titre, référence, découpage en paragraphes numérotés, numérotation des
+> lignes, et **les repères marginaux — mot pour mot**, car ce sont eux, et non le texte, qui
+> constituent la lecture officielle imposée par le manuel.
+
+**p.339 — page d'ouverture.** Titre imprimé en calligraphie sur deux lignes séparées d'un filet
+rouge : **نافذة** / **نصّ مطوّل**. ⚠️ Contrairement à la نافذة كيفيات التفكير (p.335), **le mot
+« نافذة » EST imprimé ici** — les deux pages d'ouverture du chapitre ne sont pas titrées de la
+même façon.
+
+Trois images, dont deux légendées :
+
+| Image | Légende imprimée |
+| --- | --- |
+| Détail de peinture : **deux mains tournant les pages d'un livre enluminé** (manche rouge, reliure dorée, page ornée d'une miniature) | *aucune* |
+| **Couverture du livre** : collection en calligraphie en haut, **كتاب السياسة** · **سبينوزا** · **ترجمة وتقديم جلال الدين سعيد** · **دار الجنوب للنشر** · **تونس** | **▲ رسالة السياسة** |
+| **Portrait gravé de Spinoza** (buste, cheveux longs, jabot blanc) | **سبينوزا (1632 – 1677) ► SPINOZA** |
+
+⚠️ **Incohérence de la source, à ne pas lisser** : la **couverture reproduite porte
+« كتاب السياسة »**, mais la **légende du manuel dit « رسالة السياسة »**. Le titre courant des
+p.340-345 dit, lui aussi, **كتاب السّياسة**. ⇒ **Titre de référence à retenir : كتاب السّياسة** ;
+« رسالة السياسة » n'apparaît qu'une fois, dans cette légende.
+
+Encadré-citation (cadre rouge, verbatim) :
+
+> « **يبدو جليّا أنّ الدولة أي حقّ السلطة العليا ، لا يعدو أن يكون إلا حقّ الطبيعة الذي لا يتحدّد
+> بقوّة كل شخص بمفرده ، و إنّما بقوّة الجمهور الذي يسلك كما لو كان بدافع روح واحدة** ».
+> — **سبينوزا**
+
+⚠️ **Cette citation d'ouverture n'est pas un hors-texte** : c'est **le paragraphe 2 du texte
+lui-même** (p.340, lignes 11-13), reproduit à l'identique en vitrine. Le manuel affiche donc
+d'avance **la thèse-clef** : *le droit de l'État = le droit de nature déterminé par la puissance de
+la multitude, non par celle de chaque individu séparé*.
+
+⚠️ Coquilles de la source dans cet encadré : espaces avant les virgules et le point final, et
+**« بمفرده »** est imprimé précédé d'un **point parasite** (`شخص .بمفرده`) — même accident qu'à la
+p.340, ligne 12.
+
+---
+
+###### La mise en page du texte long — l'appareil de lecture (p.340-345)
+
+C'est **la strate la plus exploitable de la tranche** : le manuel ne se contente pas de donner un
+texte, il **impose son découpage**. Trois dispositifs superposés :
+
+1. **Titre courant + référence.** Sur chaque page : **نصّ مطوّل** en haut à droite, le titre
+   **كتاب السّياسة** en calligraphie rose au centre, **الفصل الثالث** à gauche. Sous le titre, un
+   encadré jaune de référence (p.340, verbatim) :
+
+   > **ترجمة جلا ل الدّين سعيد**
+   > **دار الجنوب للنشر تونس ص48-57**
+
+   ⚠️ Le nom du traducteur est imprimé avec une **coupure parasite** : « جلا ل » au lieu de
+   « جلال ». ⇒ Lire **جلال الدّين سعيد**. La pagination de l'édition source est **ص 48-57**.
+
+2. **Paragraphes numérotés en rose** : `1–`, `2–`, `3–`… en tête de chaque paragraphe, dans la
+   marge intérieure de la colonne. **C'est la numérotation d'articles de Spinoza lui-même** (le
+   *Traité politique* est écrit en articles), reprise telle quelle.
+
+3. **Numérotation des lignes de 5 en 5** (`5`, `10`, `15`, `20`, `25`…) dans la marge de la
+   colonne. ⇒ **La citation d'une ligne précise est possible**, et c'est ce que le manuel attend.
+
+4. **Repères marginaux dans une bande jaune**, chacun pointé par **un triangle jaune** vers
+   l'endroit exact du texte qu'il commente. ⚠️ Ces repères **ne sont pas des titres de
+   paragraphe** : ils ne coïncident pas avec la numérotation en rose. Ce sont les **étapes du
+   mouvement argumentatif** telles que le manuel les découpe — c'est **le plan de lecture
+   officiel**.
+
+⇒ **Réponse à la question posée par le brief** : oui, le dispositif du مبحث 2 est reconduit ici
+(repères marginaux + numérotation des lignes), et il est même **plus riche** : s'y ajoute la
+**numérotation des paragraphes en rose**, absente du مبحث 2.
+
+---
+
+###### Le plan de lecture, repère par repère
+
+**p.340 — الفصل الثالث · paragraphes 1 à 3 (lignes 1 à ~28)**
+
+| Repère marginal (verbatim) | Ce qu'il commande |
+| --- | --- |
+| **تحديد مفهومي : الدولة، المجتمع المدني، المواطن والرعيّ.** | ¶1 — le texte s'ouvre sur **quatre définitions**, pas sur une thèse. |
+| **الإعلان عن المبحث الأوّل : حقّ الدولة على المواطنين.** — **– تحديد طبيعة حقّ الدولة وأساسه : قوّة الجمهور.** | ¶1 fin / ¶2 — annonce de l'objet, puis **la thèse-clef** (celle de l'encadré p.339). |
+| **تناسب الحق والقوة في علاقة بالفرد والدولة.** | ¶2 fin — le **rapport de proportion** droit/puissance. |
+| **المجتمع المدني لا يحتكم إلى سلطة الأهواء.** | ¶3 — ce que la société civile **exclut**. |
+| **مخاطر سلطة الأهواء على الفرد والدولة.** | ¶3 fin — les conséquences. |
+
+⇒ **Les 4 définitions liminaires du ¶1, telles que le texte les pose** (c'est le matériau
+conceptuel le plus sûr de la page, et il recoupe les تحديدات de la نافذة دعائم) :
+
+| Terme | Ce qu'il désigne dans le texte |
+| --- | --- |
+| **المجتمع المدني** | le nom donné à **toute دولة**. |
+| **المدينة** | le nom donné au **corps de l'État dans son ensemble** (هيئة الدولة بأكملها). |
+| **الشؤون العامة** | ce que **صاحب السلطة** administre. |
+| **مواطنون** | les hommes **en tant qu'ils jouissent de tous les avantages de la cité selon le droit civil**. |
+| **رعايا** | les mêmes, **en tant qu'ils sont tenus d'obéir aux lois de la cité et de se soumettre à ses institutions**. |
+
+⚠️ **La distinction مواطن / رعيّ est la plus testable du texte** : ce ne sont **pas deux groupes de
+personnes**, ce sont **deux rapports** — *les mêmes hommes*, considérés du côté du **bénéfice**
+(مواطن) ou du côté de l'**obligation** (رعيّ). Une question qui en fait deux populations distinctes
+est fausse.
+
+⇒ Le ¶1 annonce aussi les **3 types d'الاجتماع المدني** : **الديمقراطي** · **الارستقراطي** ·
+**الملكي** — mais **le texte les met de côté** pour traiter d'abord **الحق الأعلى للمدينة، أي حق
+السلطة العليا**. ⇒ Les trois régimes sont **annoncés et non traités** dans l'extrait retenu.
+
+⇒ **¶2, la thèse** : le droit de l'État **ne dépasse pas le droit de nature**, mais ce droit
+n'est **pas** mesuré par la puissance de chaque individu séparé — il l'est par **قوّة الجمهور**
+agissant « comme mû par un seul esprit ». Conséquence imprimée : le droit de chaque citoyen
+**décroît à proportion de l'excès de la puissance de la cité sur la sienne**
+(`يتضاءل بقدر تفوّق قوة المدينة على قوّته الشخصية`).
+
+⇒ **¶3, le raisonnement par les trois cas** — c'est un raisonnement **par disjonction exhaustive**,
+donc parfaitement restituable : si la cité accorde à quelqu'un le pouvoir de vivre à sa guise,
+elle **abdique son propre droit** ; si elle l'accorde à **deux ou plus**, elle introduit **الشقاق**
+en elle ; si elle l'accorde à **chacun des citoyens**, elle **se détruit elle-même** et tout
+« retourne à l'état de nature » (`تعود الأشياء جميعا إلى طور الطبيعة`).
+
+---
+
+**p.341 — paragraphes 4 à 6 (lignes ~29 à 66)**
+
+| Repère marginal (verbatim) | Ce qu'il commande |
+| --- | --- |
+| **نشأة الدولة لا تستوجب التنازل عن الطبيعي بل شرط حفظه.** | ¶3 fin — **le point anti-hobbesien du texte**. |
+| **تحديد منزلة المواطن في المدينة.** | ¶5 |
+| **اعتماد منهج فرضي استنتاجي لبيانها.** | ¶5 — **un repère de méthode**, pas de contenu. |
+| **ألاحظ الأسلوب السجالي الذي يعتمده الكاتب** | ¶6 — idem, et **à la 1ʳᵉ personne**. |
+| **اعتماد أسلوب الدحض** | ¶6 — idem. |
+| **طاعة القانون لا تتعارض مع الحريّة.** | ¶6 fin |
+
+⚠️ **Trois des six repères de cette page ne portent pas sur le contenu mais sur la MANIÈRE** —
+`منهج فرضي استنتاجي` · `الأسلوب السجالي` · `أسلوب الدحض`. Et l'un d'eux, **ألاحظ…**, est écrit
+**à la première personne** : c'est une **consigne au lecteur**, pas un titre. ⇒ La bande jaune
+mélange **deux régimes** : des intertitres analytiques (majoritaires) et de rares **instructions de
+lecture**. Ne pas les traiter comme une liste homogène.
+
+⇒ **Le repère le plus important du texte est ici** :
+**« نشأة الدولة لا تستوجب التنازل عن الطبيعي بل شرط حفظه »** — la naissance de l'État **n'exige
+pas** l'abandon du droit naturel, elle en est la **condition de conservation**. C'est **la ligne de
+partage entre Spinoza et Hobbes**, et elle est **imprimée par le manuel lui-même**, donc
+objectivée : le tableau de la p.334 le disait déjà (`لا يمثل العقد تنازلا عن الحق الطبيعي بل
+تأمينا له`). ⇒ **La boucle p.334 ↔ p.341 est la plus sûre du chapitre.**
+
+Le mouvement des ¶4-6, restitué :
+
+- **¶4** — absurdité de laisser chaque citoyen **interpréter les lois à sa guise** : chacun
+  deviendrait **حَكَمًا على أعماله الشخصية**, pourrait justifier n'importe quoi sur un **حقّ وهمي**,
+  et organiserait sa vie **على هواه** — « **وهذا مُحال** ».
+- **¶5** — d'où le statut du citoyen : **ليس مستقلاًّ وإنّما هو يخضع للمدينة** ; nul n'a le droit de
+  décider **par lui-même** ce qui est juste ou injuste, louable ou blâmable, car le corps de l'État
+  doit **agir selon une pensée unifiée** et **exprimer la volonté de tous**.
+- **¶6 — l'objection et sa réfutation** (c'est là que le repère `أسلوب الدحض` s'applique) :
+  *objection* — n'est-il pas contraire à la raison de se soumettre entièrement au jugement d'autrui ?
+  *réfutation* — si c'était vrai, l'état civil serait **déraisonnable** et n'aurait pu être institué
+  que par des êtres **sans raison** ; or la raison n'enseigne rien de contraire à la nature, et elle
+  enseigne **التوق إلى السّلم**. D'où le **renversement** : **كلّما كان عيش المرء على مقتضى العقل،
+  أي كلّما كان حرّا، زاد مراعاة لشرائع المدينة** — *plus on est libre, plus on obéit aux lois*.
+
+⇒ **La formule la plus contre-intuitive du texte, donc la plus discriminante** :
+**حرّية ↑ ⇒ obéissance aux lois ↑**. Une question qui pose l'inverse (liberté = moins de lois) est
+fausse *pour ce texte*, alors qu'elle serait juste pour la ليبيرالية de la p.327
+(`علاقة عكسية بين سلطة الدولة وحرية الفرد`). ⇒ **Le chapitre contient les deux thèses opposées, et
+c'est exploitable comme tel.**
+
+---
+
+**p.342 — paragraphes 7 et 8 (lignes ~67 à 104)**
+
+| Repère marginal (verbatim) | Portée |
+| --- | --- |
+| **اثبات توافق قوانين الطبيعة مع قوانين العقل :** | titre de la séquence |
+| **– حجّة 1 : على التوافق : الإنسان الأكثر قوّة في حالة الطبيعة هو الذي يحيا بمقتضى العقل.** | ¶7 |
+| **– حجّة 2 : منطق الوعد والوعيد بما هو منطق شرائع المدينة ذاته منطق العقل.** | ¶8 |
+
+⚠️ **اثبات** est imprimé **sans hamza** (pour **إثبات**) — coquille de la source.
+
+⇒ **Les حجج sont NUMÉROTÉES par le manuel** (1, 2, puis 3 à la p.343). C'est le seul texte long du
+chapitre à recevoir une **numérotation d'arguments** dans la marge : **3 arguments**, tous au
+service d'une seule et même conclusion — **قوانين الطبيعة ⇔ قوانين العقل**.
+
+- **¶7 / حجّة 1** — l'homme **le plus puissant et le plus indépendant** à l'état de nature est celui
+  qui **vit selon la raison** ; il en va de même de la cité : elle possède puissance et
+  indépendance **بقدر ما تتأسس على مبدأ العقل**. La fin la plus haute de la cité est celle que
+  **العقل السليم** recommande comme **ما يفيد الناس جميعا**.
+- **¶8 / حجّة 2** — les sujets se soumettent **إمّا خوفا … أو حبّا** ; d'où : **les actes que ni
+  promesse ni menace ne peuvent obtenir ne relèvent pas des lois de la cité**. Exemples imprimés :
+  nul ne peut renoncer à sa **ملكة التمييز والحكم** ; aucune promesse ni menace ne fera croire que
+  **الكلّ ليس أعظم من الجزء** ou que **الله غير موجود** ; ni témoigner contre soi, se torturer, tuer
+  son père ou sa mère, ou ne pas fuir la mort. ⇒ Prescrire l'impossible, c'est **هذيان** : ce ne
+  serait « pas moins vain que de dire qu'un homme a le droit d'être fou et de délirer ».
+
+⇒ **La distinction la plus fine du ¶8** : entre ce que la cité **peut** commander et ce qu'elle
+peut seulement **prétendre** commander. La limite n'est pas morale, elle est **de puissance** — et
+c'est exactement pourquoi elle est *de droit*, puisque droit et puissance coïncident.
+
+---
+
+**p.343 — paragraphes 9 à 11 (lignes 105 à ~141)**
+
+| Repère marginal (verbatim) | Portée |
+| --- | --- |
+| **استنتاج : ضرورة استخدام القوّة لردع من يعترض على منطق العقل** | ¶9 (⚠️ imprimé **sans point final**) |
+| **– حجّة 3 : شرعيّة الدولة مشروطة باحترام حقّ الجمهور.** | ¶9 |
+| **إعلان عن مشكل علاقة الدولة بالدين** (en gras) | ¶10 |
+| **طاعة الدولة لا تفضي إلى القضاء على الدين مادامت تستخدم العقل.** | ¶10 |
+| **– الدين شأن شخصي.** | ¶10 fin |
+
+- **¶9 / حجّة 3** — les mesures qui provoquent **اغتياظ الجمهور** ne relèvent **pas** du droit de la
+  cité : puisque son droit **يتحدّد بقوّة الجمهور**, sa puissance **et** son droit **يضعفان بقدر
+  استثارتها للناس ضدّها**. ⇒ **La révolte n'est pas seulement un danger : elle est une diminution du
+  DROIT.** C'est la conséquence la plus forte de l'équation droit = puissance.
+- ⚠️ **Le texte affirme aussi que la cité craint** : « **إنّ المدينة تخشى بعض المخاطر** », et elle
+  est **d'autant moins indépendante que ses motifs de crainte sont plus forts** — exactement comme
+  un individu à l'état de nature.
+- **¶10 — la question religieuse.** Objection : la vie civile n'abolit-elle pas le culte ?
+  Réfutation : **النّفس، من حيث إنّها تستخدم العقل، لا تخضع للسلطة الحاكمة، بل هي مستقلّة** ; ni la
+  connaissance ni l'amour de Dieu ne peuvent être soumis à une autorité. La vraie **البرّ والإحسان**
+  se manifeste dans **السعي للمحافظة على السّلم وتحقيق الوئام**. Les **الشعائر الدينية** ne servent
+  ni ne nuisent à la vraie connaissance de Dieu ⇒ il ne faut pas leur donner une importance qui en
+  ferait une cause de **الإخلال بالسلم والأمن العام**. Conclusion imprimée : chacun peut adorer son
+  Dieu et travailler à son salut **كفرد** ; mais **نشر الدين** relève **de Dieu ou de l'autorité
+  souveraine**.
+
+⚠️ **Ce ¶10 est le point de contact direct avec la تحديدة « اللائكيّة » (p.322-323)** : le texte de
+Spinoza dit *littéralement* ce que la نافذة دعائم définissait — la conviction religieuse comme
+**مسألة خاصة**, et l'unité du peuple fondée sur ce qui est commun. ⇒ La boucle p.323 ↔ p.343 est
+imprimée, et c'est le seul endroit du chapitre où une تحديدة est illustrée par un texte long.
+
+- **¶11** — transition explicite : après le droit de l'autorité souveraine **sur les citoyens**,
+  reste à examiner son droit **envers les autres puissances**. ⇒ **C'est la charnière du texte.**
+
+---
+
+**p.344 — paragraphes 12 à 14 (lignes ~142 à 180)**
+
+| Repère marginal (verbatim) | Portée |
+| --- | --- |
+| **الإعلان عن المبحث الثاني : حقّ الدولة تجاه الدول الأخرى.** (en gras) | ¶11-12 |
+| **– استخدام أسلوب المقارنة لتحديد أوجه التماثل والاختلاف بين علاقات الأفراد في « حالة الطبيعة » وعلاقات الدول.** | ¶12 — repère **de méthode** |
+| **تعيين حقوق الدّولة :** — **– حقّ الاستقلاليّة.** — **– حقّ مقاومة الاضطهاد.** | ¶12 |
+| **تأكيد التناسب بين الحق والقوّة** | ¶13 (⚠️ **sans point final**) |
+| **– حقّ الحرب وحقّ السلم** | ¶13 (⚠️ **sans point final**) |
+
+⇒ **La structure du texte est donc explicitement BIPARTITE**, et le manuel l'imprime deux fois :
+**المبحث الأوّل = حقّ الدولة على المواطنين** (p.340, ¶1-10) · **المبحث الثاني = حقّ الدولة تجاه
+الدول الأخرى** (p.344-345, ¶11-18). C'est **le plan du texte**, donné par la marge — la réponse la
+plus sûre à toute question sur « le mouvement du texte ».
+
+⇒ **L'analogie qui commande toute la seconde partie** (repère `أسلوب المقارنة`) : le rapport
+**cité ↔ cité** est **comme** le rapport **individu ↔ individu à l'état de nature**. ⚠️ Mais le
+texte imprime aussitôt **la limite de l'analogie** — l'écart, pas seulement la ressemblance :
+la cité **تبقى قادرة على التصدّي لاضطهاد مدينة أخرى**, alors que l'individu à l'état de nature en
+est **incapable** : il est vaincu chaque jour par **النوم**, épuisé par **المرض أو الكرب**, et
+finit par céder à **هرم الشيخوخة**. ⇒ **Une comparaison à deux versants** — la question qui ne
+retiendrait que la ressemblance manquerait la moitié du repère, qui dit bien
+**أوجه التماثل *والاختلاف***.
+
+- **¶12 — les deux droits de l'État, nommés par la marge** : **حقّ الاستقلاليّة** (la cité est
+  indépendante quand elle **peut se conserver** et **résister à l'oppression**) et **حقّ مقاومة
+  الاضطهاد**. Une cité est **تابعة** dès qu'elle vit dans **الخوف من جبروت** d'une autre, ou qu'elle
+  ne peut agir **بمحض إرادتها**, ou qu'elle **a besoin de l'aide** d'une autre pour se conserver.
+  ⇒ Corollaire imprimé : deux cités solidaires ont **ensemble** plus de puissance — **et donc plus
+  de droit** — que chacune séparément.
+- **¶13 — الدّول أعداء بالطبع.** Ceux qui restent au droit de nature et n'entrent pas dans
+  **نطاق التمدّن** demeurent **في حالة عداوة**. D'où l'asymétrie décisive :
+
+  | | Ce qu'il faut pour l'exercer |
+  | --- | --- |
+  | **حقّ الحرب** | **une seule** cité — « **حقّ تملكه كلّ مدينة بصورة فردية** » |
+  | **حقّ السّلم** | **deux** cités au moins — « **متوقّفا على رغبة مدينتين اثنتين على الأقل** » |
+
+  ⇒ **C'est la distinction la plus testable de la seconde partie** : la guerre est un droit
+  *unilatéral*, la paix un droit *conditionnel*. Une question qui les met sur le même plan est
+  fausse.
+- **¶14 — la durée de l'alliance.** Elle dure **autant que durent les circonstances qui l'ont fait
+  naître** — c'est-à-dire **الخوف** d'un dommage ou **الأمل** d'un avantage. Dès que l'une des deux
+  cités **se libère de sa crainte** ou **perd son espoir**, elle redevient libre : chaque cité a
+  **الحقّ المطلق كي تنقض التحالف متى شاءت**, et **on ne peut l'accuser de perfidie** — parce que
+  **الوضع واحد بالنسبة إلى كلتي المدينتين**, et que **nul ne s'engage pour l'avenir qu'au vu des
+  circonstances présentes**.
+
+---
+
+**p.345 — paragraphes 15 à 18 (lignes ~181 à 213) · fin du texte**
+
+| Repère marginal (verbatim) | Portée |
+| --- | --- |
+| **شروط صلاحيّة التحالفات و حقّ نقضها.** | ¶14-15 |
+| **– حقّ المدن في الالتزام المتبادل بقوانين السلم المتّفق عليها.** | ¶15 |
+| **البقاء على العهد من جهة الحقّ مبدأ جامع بين الدين والعقل، ومن جهة الواقع متروك لحساب الظرف.** | ¶17 |
+| **التأكيد على منزلة مفهوم الطبيعة الإنسانيّة كأساس للتفكير السياسي.** | ¶18 |
+
+- **¶15** — les cités qui ont conclu la paix ont le droit de **trancher les différends** relatifs à
+  ses conditions ; **قوانين السّلم ليست خاصّة بإحدى هذه المدن، بل هي شاملة لجميع المدن المتحالفة** ;
+  faute d'accord, elles **retournent à l'état de guerre**.
+- **¶16 — la loi de proportion inverse, imprimée** : *plus le nombre de cités contractantes
+  augmente*, **moins chacune est redoutable** (`قلّ جبروت كل منها على حدة`), **moins elle peut faire
+  la guerre**, et **plus son obligation de respecter les clauses de la paix est grande** — donc
+  **أقلّ استقلالية وأكثر خضوعا للإرادة العامة للمدن المتحالفة**.
+  ⇒ **Formule à retenir : nombre d'alliés ↑ ⇒ puissance de chacun ↓ ⇒ obligation ↑ ⇒ indépendance ↓.**
+- **¶17 — tenir parole.** Le respect du pacte est commandé **par la religion et par la saine
+  raison** (`يأمر به الدين والعقل السّليم`) — **c'est le principe qui joint les deux**, comme le dit
+  le repère. **Mais** : rien dans **الكتاب** n'ordonne de tenir *n'importe quelle* promesse. Exemple
+  imprimé : si j'ai promis de garder secrètement un dépôt et que j'apprends qu'il est
+  **حصيلة السّرقة**, je ne suis pas tenu ; mon conduite sera droite si je **rends le dépôt à son
+  véritable propriétaire**. De même pour l'autorité souveraine : si la raison ou les circonstances
+  montrent que l'engagement **يضرّ بسلامة المواطنين عموما**, **من واجبها أن تنقض عهدها**.
+  Conclusion : **الكتاب لم يأمر إلاّ على وجه العموم بالبقاء على العهد وترك لكل شخص حريّة الحكم في
+  الحالات الاستثنائية**.
+  ⚠️ **Le mot الكتاب est imprimé EN GRAS trois fois** dans ce paragraphe (l.196, 203, 206) — seul
+  mot du texte à recevoir un enrichissement typographique. Il désigne **l'Écriture**.
+  ⇒ **Distinction imprimée : من جهة الحقّ (principe joignant religion et raison) ≠ من جهة الواقع
+  (laissé au calcul de la circonstance).** C'est exactement ce que dit le repère marginal, et c'est
+  la formule la plus dense de la page.
+- **¶18 — la conclusion.** Tout ce qui précède a été établi **انطلاقا من الطبيعة الإنسانيّة
+  الضروريّة**, à savoir **الجهد الكوني الذي يسعى بفضله كل البشر إلى حفظ كيانهم** — un effort
+  **شائع يبذله الجميع، حكماء كانوا أو جهلاء**. D'où le dernier mot : que l'on tienne les hommes pour
+  **يهتدون بالعقل** ou pour **ينقادون للأهواء**, **فالنتيجة واحدة، لأنّ البرهان كليٌّ**.
+
+⇒ **La clef de voûte** : la démonstration ne repose **pas** sur une hypothèse optimiste sur
+l'homme. Elle vaut **quelle que soit** l'image qu'on s'en fait — c'est ce que veut dire
+**البرهان كليّ**. Une question qui prête à Spinoza une anthropologie « optimiste » manque le
+paragraphe final.
+
+---
+
+###### Questions d'accompagnement : il n'y en a AUCUNE
+
+⛔ **La نافذة نصّ مطوّل ne comporte aucun questionnaire imprimé.** Le texte s'arrête à la ligne
+~213 (¶18) et **la moitié basse de la p.345 est blanche** : pas de « أسئلة », pas de « مهام »,
+pas de « تمشّيات », rien.
+
+⇒ C'est **le même écart de gabarit que sur le مبحث 2** (نصّ مطوّل de بوبير, également sans
+questionnaire) : ce n'est donc **pas un accident local**, mais **la règle du manuel pour cette
+نافذة**. Vérifié ici sans le présupposer. ⇒ **Il n'y a pas de « questions du manuel » à reprendre
+pour Spinoza** — le seul appareil de travail imprimé est **la bande de repères marginaux**.
+
+---
+
+###### Synthèse du plan officiel du texte (à partir de la seule marge)
+
+**Le texte compte 18 paragraphes numérotés et 213 lignes numérotées.** Découpage des pages
+(déduit des repères de 5 en 5, vérifié aux quatre charnières) :
+**p.340 = l.1-28** · **p.341 = l.29-66** · **p.342 = l.67-104** · **p.343 = l.105-142** ·
+**p.344 = l.143-180** · **p.345 = l.181-213**.
+
+| Partie | Repère qui l'ouvre | ¶ | Lignes |
+| --- | --- | :-: | --- |
+| Préambule — définitions et annonce | **تحديد مفهومي** | 1 | 1-10 |
+| **المبحث الأوّل — حقّ الدولة على المواطنين** | **الإعلان عن المبحث الأوّل** | 2-10 | 11-141 |
+| … la thèse (droit = puissance de la multitude) | **تحديد طبيعة حقّ الدولة وأساسه : قوّة الجمهور** · puis **تناسب الحق والقوة** | 2 | 11-18 |
+| … la société civile ne se règle pas sur les passions | **المجتمع المدني لا يحتكم إلى سلطة الأهواء** · **مخاطر سلطة الأهواء** | 3 | 19-39 |
+| … le pacte ne fait pas renoncer au naturel | **نشأة الدولة لا تستوجب التنازل عن الطبيعي بل شرط حفظه** | 3 fin | ~30-39 |
+| … absurdité de l'interprétation privée des lois | *(pas de repère propre)* | 4 | 40-44 |
+| … le statut du citoyen | **تحديد منزلة المواطن في المدينة** · **اعتماد منهج فرضي استنتاجي** | 5 | 45-52 |
+| … réfutation : obéir n'est pas perdre sa liberté | **الأسلوب السجالي** · **أسلوب الدحض** · **طاعة القانون لا تتعارض مع الحريّة** | 6 | 53-73 |
+| … preuve de l'accord nature / raison | **اثبات توافق قوانين الطبيعة مع قوانين العقل** → **حجّة 1** | 7 | 74-81 |
+| … la limite de ce que la cité peut commander | **حجّة 2** | 8 | 82-106 |
+| … la limite du droit de l'État | **استنتاج** + **حجّة 3** | 9 | 107-116 |
+| … le cas de la religion | **إعلان عن مشكل علاقة الدولة بالدين** · **طاعة الدولة لا تفضي…** · **الدين شأن شخصي** | 10 | 117-141 |
+| **المبحث الثاني — حقّ الدولة تجاه الدول الأخرى** | **الإعلان عن المبحث الثاني** (+ **أسلوب المقارنة**) | 11-18 | 142-213 |
+| … charnière | *(annonce)* | 11 | 142-151 |
+| … droits de la cité | **تعيين حقوق الدّولة** (استقلاليّة · مقاومة الاضطهاد) | 12 | 152-158 |
+| … guerre et paix | **تأكيد التناسب بين الحق والقوّة** · **حقّ الحرب وحقّ السلم** | 13 | 159-168 |
+| … durée de l'alliance et droit de la rompre | **شروط صلاحيّة التحالفات و حقّ نقضها** | 14 | 169-185 |
+| … lois de paix communes aux alliés | **حقّ المدن في الالتزام المتبادل بقوانين السلم** | 15-16 | 186-194 |
+| … tenir parole | **البقاء على العهد من جهة الحقّ … ومن جهة الواقع…** | 17 | 195-206 |
+| **Conclusion** | **التأكيد على منزلة مفهوم الطبيعة الإنسانيّة كأساس للتفكير السياسي** | 18 | 207-213 |
+
+⚠️ Les bornes de paragraphe sont **exactes** (relevées sur le numéro rose) ; les regroupements de
+repères dans une même ligne du tableau sont **de la fiche** — dans la source, chaque repère a sa
+propre flèche vers une ligne précise.
+
+⚠️ **Coquille systématique du rendu de la source, valable sur TOUTES les pages du texte** : un
+**point parasite précède les mots amorcés par la préposition بـ** — `شخص .بمفرده` (p.339, p.340
+l.12), `يفعل شيئا أو يملك شيئا .بموجب الحق المدني` (p.340), `على القيام .بما يعلم` (p.341),
+`يحيا .بمقتضى العقل` (p.342, marge), `.بما هو منطق شرائع المدينة` (p.342, marge),
+`فتُقالان .بموجب ذلك` (p.344), `عادت هذه المدن .بموجب ذلك` (p.345). Ce n'est **pas** une
+ponctuation : c'est un **artefact de rendu**, à ignorer partout et à ne jamais reproduire.
+
+---
+
+##### 3.1.6 مختصرات — p.346
+
+> **Page lue** : p.346 (intégral, chaque encadré recadré ×2,6 à ×3).
+> ⚠️ **C'est le récapitulatif officiel du chapitre** — la matière la plus directement testable de
+> toute la tranche. Transcrit **verbatim, encadré par encadré, dans l'ordre imprimé**.
+
+**Mise en page.** Titre **مختصرات** en calligraphie, dans un cartouche blanc posé sur des carrés
+vert / rouge / noir (haut de page, à droite). En haut à gauche, une photo encadrée de rouge :
+**une plume d'oie noire posée sur des documents anciens** (feuillets manuscrits et imprimés aux
+tons dorés) — sans légende. Le tout est enfermé dans **un grand cadre jaune arrondi** qui contient
+**7 encadrés blancs à filet noir**, empilés verticalement.
+
+⚠️ **Les encadrés ne sont NI numérotés NI titrés.** Aucun intertitre, aucune puce : sept blocs
+successifs, séparés par le seul filet. La numérotation ci-dessous est **de la fiche**, pas du
+manuel — elle sert à les citer, elle n'est pas imprimée.
+
+⚠️ **Régime d'énonciation** : tous les encadrés sont écrits **à la première personne du bilan**,
+avec trois verbes qui reviennent — **تبيّن لي / تبيّنت** · **أدركت** · **تحقّقت**. Ce n'est pas un
+résumé de leçon, c'est **le relevé de ce que l'élève est censé avoir acquis**. C'est aussi ce qui
+en fait un excellent gisement de questions : chaque encadré est déjà formulé comme un **acquis
+vérifiable**.
+
+---
+
+**■ Encadré 1 — الوجود السياسي et السلطة (verbatim)**
+
+> تبين لي أن **صورة الإنسان لا يمكن أن تكتمل ما لم أستحضر وجوده السياسي**. وأدركت أن **السلطة** هي
+> **البنية الأساسية للسياسي**، سواء فهمت السلطة **على معنى القوة** أو **على معنى ما يطلق على وضع
+> استراتيجي معين في مجتمع معين**.
+
+Termes en gras dans la source : **وجوده السياسي** · **السلطة**.
+⇒ **Deux acquis distincts** : *(a)* l'image de l'homme est **incomplète** sans son existence
+politique ; *(b)* **السلطة est la structure de base du politique**, et elle se comprend **de deux
+façons** — comme **قوة**, ou comme **وضع استراتيجي** dans une société donnée.
+⇒ **La bifurcation قوة / وضع استراتيجي est la distinction la plus testable de l'encadré** — et elle
+renvoie à فوكو (p.325 : le pouvoir défini comme **إستراتيجيا**).
+
+---
+
+**■ Encadré 2 — سلطة الدولة, un débat sans fin (verbatim)**
+
+> تبينت أن الحديث عن **سلطة الدولة** **مثير لجدل لا ينتهي**، إذ أدركت **وجهات نظر مختلفة في شأن
+> الحاجة إليها، أو في شأن وعودها وحقيقتها**، وهو جدل يدعونا إلى **مزيد تقليب النظر في أساسها وآلية
+> فعلها وغاياتها** علنا نظفر بما يسمح لنا **بتقييمها وبيان قيمتها**.
+
+Termes en gras : **سلطة الدولة** · **أساسها وآلية فعلها**.
+⇒ **Les 3 axes d'examen que l'encadré ferme** : **الأساس** · **آلية الفعل** · **الغايات** — et
+la finalité de cet examen est double : **التقييم** et **بيان القيمة**.
+⇒ Les objets de désaccord recensés sont eux aussi au nombre de trois : **الحاجة إليها** ·
+**وعودها** · **حقيقتها**.
+
+---
+
+**■ Encadré 3 — la tâche de l'État, c'est le الحق (verbatim)**
+
+> أدركت أن **كل خطاب يتعلّق بالدولة لا يمكن أن يهمل فكرة الحق**، إذ تبين لي أن **مهمة الدولة
+> والدور الموكول لها إنما هو تأمين الحق** سواء عدّ هذا الحق **طبيعيا**، أو **مدنيا** أي سواء اعتبر
+> الحق حقا **بالنظر إلى طبيعة الإنسان**، أو **بالنظر إلى منزلته المدنية التي يرتضيها لنفسه بما هو
+> مواطن**.
+
+Termes en gras : **الحق** · **طبيعيا** · **مدنيا** · **مواطن**.
+⇒ **La distinction الحق الطبيعي / الحق المدني est reprise ici telle que la posait le
+الجهاز المفهومي de la ليبيرالية (p.328)** — mais avec **le critère explicite de la différence** :
+- **طبيعي** = considéré **بالنظر إلى طبيعة الإنسان** ;
+- **مدني** = considéré **بالنظر إلى منزلته المدنية التي يرتضيها لنفسه بما هو مواطن**.
+⇒ **C'est la formulation la plus nette du chapitre** sur ce couple, parce qu'elle nomme le
+**point de vue** qui les sépare, et non seulement leur contenu. Le mot **يرتضيها** est décisif :
+le droit civil suppose **un consentement**.
+
+---
+
+**■ Encadré 4 — دولة الحق, démocratie et ses limites (verbatim)**
+
+> أدركت أن **دولة الحق لا يمكن أن تنشأ على القوة**، كما تبينت أن **دولة الحق لا يمكن أن تكون على
+> صورة نظام استبدادي**، وهو ما مكنني من **إدراك قيمة الديمقراطية بماهي نظام حكم سياسي**، مثلما
+> مكنني من **بيان حدود مثل هذا النظام إذا ما اتخذ من منطق الأغلبية ذريعة لممارسة الهيمنة على
+> الأقليات أو الأفراد** ، وأدركت أن **مشروعية سياسة ما تكمن في قبولها للتعددية بما هي خير وسيلة
+> لحماية استقلال كل طرف** .
+
+Terme en gras : **الديمقراطية**. ⚠️ La source imprime **espace avant les deux virgules finales**
+et **avant le point final** — coquilles de composition.
+⇒ **L'encadré le plus dense de la page, et le plus contre-intuitif** : il valorise la démocratie
+**et** en marque la limite dans la même phrase. La limite est nommée précisément :
+**quand la logique de la majorité (منطق الأغلبية) devient un prétexte (ذريعة) à la domination sur
+les minorités ou les individus.**
+⇒ **Le critère final de légitimité qu'il pose n'est PAS la majorité, c'est التعدديّة** :
+« مشروعية سياسة ما تكمن في **قبولها للتعددية** بما هي **خير وسيلة لحماية استقلال كل طرف** ».
+⚠️ Une question qui ferait de la règle majoritaire le critère de légitimité **contredit cet
+encadré**. C'est le piège le plus rentable de la page.
+⇒ Deux exclusions posées d'entrée, à ne pas confondre : **دولة الحق ≠ née de la force** et
+**دولة الحق ≠ régime despotique**.
+
+---
+
+**■ Encadré 5 — la critique doit atteindre jusqu'à l'image de l'homme (verbatim)**
+
+> تبينت أن **الإنسان في حاجة إلى فعل نقد لا ينصب على الواقع السياسي فحسب بل يطال الحق**، ويمتد
+> **إلى صورة الإنسان ذاتها** تلك التي **يتغنى بها خطاب الحق وإعلانات حقوق الإنسان**، إذ أدركت أن
+> **إنسان حقوق الإنسان قد لا يعني سوى الإنسان الأناني لا الإنسان بما هو مواطن**.
+
+Termes en gras : **حقوق الإنسان** · **مواطن**. ⚠️ La source imprime un **double espace** entre
+« ذاتها » et « تلك ».
+⇒ **Les 3 degrés de la critique, en gradation imprimée** : **الواقع السياسي** → **الحق** →
+**صورة الإنسان ذاتها**. C'est une **échelle**, donc un excellent matériau de remise en ordre.
+⇒ **La thèse la plus tranchée de la page** — et elle est marxienne d'inspiration (cf. la citation
+de ماركس, p.323) : **إنسان حقوق الإنسان** risque de n'être que **الإنسان الأناني**, non
+**الإنسان بما هو مواطن**.
+⚠️ Le manuel écrit **قد لا يعني** (« il se peut qu'il ne signifie que… ») — **une modalisation, pas
+une affirmation**. Une question qui la durcirait en « les droits de l'homme *sont* l'homme
+égoïste » trahirait la source.
+
+---
+
+**■ Encadré 6 — الطاعة contre العدل, et l'équivoque de la justice (verbatim)**
+
+> أدركت أن **علاقة المواطن بالدولة تقوم على واجب الطاعة مقابل تأمينها العدل**، وتبينت ما يثيره
+> **الخضوع لنظام جائر** من إشكال، **نظرا للطابع الملتبس للعدل**، إذ بين **العدل** و**المساواة**
+> و**الإنصاف** **علاقة تتراوح بين الوصل والفصل**، وتحققت بأن **الإنصاف، وإن كان مرغوبا فيه، فإنه قد
+> لا يكون قانونيا**، وأن **العدل قد يشرع للاّمساواة قانونا وللقوة سلطانا** مادام **القانون يعترف
+> بالقوي العادل، أكثر من اعترافه بالعادل القوي**.
+
+Termes en gras : **الطاعة** · **العدل** · **المساواة** · **الإنصاف**.
+⇒ **L'équation de base du rapport politique, telle que l'encadré la pose** :
+**واجب الطاعة ↔ تأمين العدل** — un **échange**, pas une soumission. D'où le problème nommé :
+**الخضوع لنظام جائر** (un régime qui n'assure pas sa part).
+⇒ **Le triangle العدل / المساواة / الإنصاف** — et la formule exacte du rapport :
+**« علاقة تتراوح بين الوصل والفصل »** (ils tantôt se rejoignent, tantôt se séparent). ⚠️ Ni
+identité, ni opposition : **une relation variable**. C'est la nuance que toute question doit
+respecter.
+⇒ **Deux thèses fortes, à retenir mot pour mot** :
+1. **الإنصاف قد لا يكون قانونيا** — l'équité peut être désirable **sans être légale**.
+2. **العدل قد يشرع للاّمساواة قانونا وللقوة سلطانا** — la justice peut **légaliser l'inégalité** et
+   **donner pouvoir à la force**.
+⇒ **Le chiasme final est la phrase la plus fine du chapitre entier** :
+**« القانون يعترف بالقوي العادل، أكثر من اعترافه بالعادل القوي »** —
+la loi reconnaît **le puissant qui est juste** plus que **le juste qui est puissant**.
+⚠️ Les deux syntagmes sont composés **des mêmes deux mots dans l'ordre inverse** : c'est
+exactement ce qui les rend discriminants — et exactement ce qui les rend faciles à inverser par
+erreur. Toute question portant là-dessus doit citer l'ordre imprimé.
+
+---
+
+**■ Encadré 7 — المواطنة, locale et universelle (verbatim)**
+
+> تبينت أنّ **المواطنة هي القيمة التي تحدد منزلة الإنسان السياسية**، وأدركت أنّ **منزلة الإنسان
+> بصفته مواطنا محليا لا تنفي أن يكون مواطنا عالميا** وأدركت أن **المواطن العالمي لا يحمل على معنى
+> انتمائه إلى جماعة عالمية، إلى إنسانية بلا جنسية**، بل **يحمل على معنى الإنسان الذي يمارس حقوقه من
+> جهة كونه كائنا كونيا وليس من جهة كونه كائنا قوميا فقط**.
+
+Termes en gras : **المواطنة** · **مواطنا محليا** · **مواطنا عالميا** · **المواطن العالمي** ·
+**كائنا كونيا** · **كائنا قوميا**.
+⇒ **La définition officielle de la citoyenneté**, en une ligne :
+**المواطنة = القيمة التي تحدد منزلة الإنسان السياسية.**
+⇒ **La thèse de compatibilité** : **مواطن محلي et مواطن عالمي ne s'excluent pas** — le second
+**ne nie pas** le premier.
+⇒ **La correction du contresens, imprimée noir sur blanc** — et c'est le point le plus testable de
+l'encadré :
+
+| Ce que le **مواطن عالمي** n'est **PAS** | Ce qu'il **EST** |
+| --- | --- |
+| **الانتماء إلى جماعة عالمية** | l'homme qui **exerce ses droits** |
+| **إنسانية بلا جنسية** | **من جهة كونه كائنا كونيا**, et non **من جهة كونه كائنا قوميا فقط** |
+
+⚠️ **La citoyenneté mondiale n'est donc pas une appartenance mais un POINT DE VUE sur l'exercice
+des droits.** Une question qui en ferait une communauté supranationale, ou une apatridie, tombe
+exactement dans ce que l'encadré réfute.
+⚠️ Noter le **فقط** final : le manuel ne nie pas l'être national, il refuse qu'il soit **le seul**
+point de vue.
+
+---
+
+###### Ce que les 7 مختصرات posent, en un tableau
+
+| # | Le nœud de l'encadré | La distinction / formule à retenir |
+| :-: | --- | --- |
+| 1 | l'homme est incomplet sans son **وجود سياسي** ; **السلطة** = structure de base du politique | **السلطة كقوة** ≠ **السلطة كوضع استراتيجي** |
+| 2 | **سلطة الدولة** = objet d'un **جدل لا ينتهي** | à examiner sous 3 angles : **الأساس / آلية الفعل / الغايات** |
+| 3 | la tâche de l'État = **تأمين الحق** | **الحق الطبيعي** (طبيعة الإنسان) ≠ **الحق المدني** (المنزلة المدنية المُرتضاة) |
+| 4 | **دولة الحق** ≠ force, ≠ despotisme ; valeur **et** limites de la **ديمقراطية** | légitimité = **قبول التعددية**, pas **منطق الأغلبية** |
+| 5 | la critique doit atteindre **صورة الإنسان** elle-même | **إنسان حقوق الإنسان** risque d'être **الإنسان الأناني**, non **المواطن** |
+| 6 | **الطاعة ↔ العدل** ; caractère **ملتبس** de la justice | **الإنصاف قد لا يكون قانونيا** · **القوي العادل** ≠ **العادل القوي** |
+| 7 | **المواطنة** = la valeur qui fixe la place politique de l'homme | **مواطن محلي** compatible avec **مواطن عالمي** ; **كائن كوني** ≠ **كائن قومي فقط** |
+
+⚠️ **Ce que les مختصرات NE reprennent PAS** — et c'est aussi net que ce qu'elles reprennent :
+- **rien** sur **اللائكيّة** (تحديدة p.322-323) ;
+- **rien** sur **الكليانية** (تحديدة p.324-326) ni sur **الفوضويّة** (p.330-331) ;
+- **rien** sur **فلسفة العقد الاجتماعي** ni sur les 4 philosophes du tableau p.334 ;
+- **rien** sur **سبينوزا** ni sur le نصّ مطوّل.
+
+En revanche elles introduisent **des couples que la نافذة دعائم n'avait pas traités** :
+**العدل / المساواة / الإنصاف**, **الطاعة**, **الديمقراطية / التعدديّة**, **حقوق الإنسان**,
+**المواطنة المحليّة / العالميّة**. ⇒ **Les مختصرات ne résument pas les نوافذ : elles bouclent
+le مبحث entier**, cours compris. Une fiche qui ne lirait que les نوافذ manquerait la moitié de ce
+que ce récapitulatif tient pour acquis.
+
+---
+
+###### Écarts et coquilles relevés sur la tranche p.335-346
+
+| p. | Ce qui est imprimé | Lecture / remarque |
+| --- | --- | --- |
+| 335 | titre **« كيفيات التفكير »** sans le mot **نافذة** | alors que la p.339 imprime bien **« نافذة / نصّ مطوّل »** |
+| 336 | **« ما هيّ الإحراجات »** | شدّة parasite sur le ي — lire **ما هي** |
+| 337 | **هوبس** (référence) / **هوبز** (مهام), sur la même page | retenir **هوبس** (graphie du reste du chapitre) |
+| 337 | dernière ligne du توضيح 3 (**بيان استتباعاتها الخارقة**) sans point final | non coupée : vérifié |
+| 338 | 3 modes d'objection (**ضمنية / استتباع / تناقض مع الواقع**) ≠ les 4 du توضيح 3 | **deux listes distinctes**, à ne pas fusionner |
+| 339 | couverture **« كتاب السياسة »** / légende **« رسالة السياسة »** | titre de référence : **كتاب السّياسة** |
+| 340 | **« ترجمة جلا ل الدّين سعيد »** | coupure parasite — lire **جلال الدّين سعيد** |
+| 342 | **« اثبات »** (marge) | sans hamza — lire **إثبات** |
+| 343-345 | plusieurs repères marginaux sans point final | **استنتاج…**, **تأكيد التناسب…**, **حقّ الحرب وحقّ السلم** |
+| 340-345 | **point parasite devant les mots en بـ** (`.بمفرده`, `.بمقتضى`, `.بموجب`, `.بما`) | artefact de rendu, systématique, **jamais** à reproduire |
+| 346 | espaces avant virgule / point dans l'encadré 4 ; double espace dans l'encadré 5 | composition |
+| 335-338 | la نافذة كيفيات التفكير **n'a ni لمزيد التعمّق ni sitographie** | contrairement à la نافذة دعائم |
+| 345 | **aucune question d'accompagnement** après le نصّ مطوّل | conforme au مبحث 2 — vérifié, non présupposé |
+| 346 | les 7 encadrés des مختصرات **ne sont ni numérotés ni titrés** | la numérotation de cette fiche est ajoutée |
+
+---
+
+###### Fin du مبحث 3.1
+
+La p.346 **clôt le chapitre**. La p.347 ouvre le مبحث suivant
+(**الأخلاق : الخير والسّعادة**) avec sa page-titre et sa citation d'ouverture — hors périmètre de
+cette tranche.
+
 #### مبحث 3.2 : الأخلاق — الخير والسّعادة — p.347–402
 
 - **Structure (فهرس, p.408)** :
@@ -2173,6 +5427,2073 @@ de problèmes)** :
 - **Bornes de scope** :
   - ✅ INCLUS : الأخلاق · الخير · السّعادة · الفضيلة · الواجب · المنفعة · اللذة · الحريّة الأخلاقيّة ; الآداب vs الإيتيقا ; nihilisme, utilitarisme.
   - ⛔ EXCLU : idem — le programme de شعبة الآداب.
+
+#### مبحث 3.2 — الأخلاق : الخير والسّعادة — transcription p.347-381
+
+> **Portée de ce fragment** : pages imprimées **347 → 381**, intégral — page d'ouverture du مبحث,
+> `3.2.1` نافذة مدخل إلى التفكير في المسألة (p.348-351) et `3.2.2` نافذة سندات للتفكير في المسألة
+> (p.352-381), soit les **18 سندات** annoncés par le فهرس.
+> **Source** : manuel élève `210402` (كتاب الفلسفة — السّنة الرّابعة من التّعليم الثانوي —
+> الشّعب العلميّة, CNP), pages rendues en image ; le PDF n'a **pas** de couche texte exploitable
+> (encodage de police hérité, glyphes non-Unicode) — tout ce qui suit est de la lecture d'image.
+> **Numérotation** : page PDF = page imprimée (vérifié sur p.347, p.348…).
+> ⚠️ Ce fragment est une **transcription**, pas une fiche relue : il n'a pas passé sa R-7.
+> Un point qui paraît étrange est **signalé**, jamais « corrigé » par déduction.
+
+---
+
+##### Cadre : où ce مبحث se situe dans le manuel
+
+Le bandeau de محور imprimé en haut de la page d'ouverture est **القيم بين النسبي والمطلق** ;
+le مبحث y porte le chiffre **2** dans le carré bleu. La désignation « **3.2** » du فهرس se lit donc
+« مبحث 2 du محور 3 », et non un titre imprimé sur la page.
+
+⚠️ **Variante de graphie sur le titre lui-même** : la page d'ouverture (p.347) imprime
+**« الأخلاق : الخير والسعادة »** — **sans شدّة** sur `السعادة` (vérifié par agrandissement).
+Le فهرس écrit `السّعادة`. Les deux formes coexistent dans le manuel ; retenir une graphie et s'y
+tenir dans tout le chapitre.
+
+⚠️ Le titre de la seconde نافذة est imprimé **« نافذة سندات / للتفكير في المسألة »** — avec
+`للتفكير` (lâm), pas `التفكير` (vérifié par agrandissement p.352).
+
+---
+
+##### Page d'ouverture du مبحث — p.347
+
+- **Bandeau de محور** (en haut, sur fond crème) : **القيم بين النسبي والمطلق**.
+- **Titre du مبحث**, dans un ovale vert, précédé du carré bleu **2** :
+  **الأخلاق : الخير والسعادة**.
+- **Liste de notions** imprimée dans un cartouche bleu vertical sous le titre, dans cet ordre :
+
+  | ordre | notion imprimée |
+  | --- | --- |
+  | 1 | الحرّية |
+  | 2 | الرّفاه |
+  | 3 | الفضيلة |
+  | 4 | الواجب |
+  | 5 | المنفعة |
+
+  ⚠️ Ce cartouche est la seule « carte » du مبحث sur la page d'ouverture : **il n'y a pas
+  d'organigramme** ici, contrairement au مبحث 2 (p.215) qui en portait deux. **Constaté, pas déduit.**
+
+- **Illustration** : photographie — silhouette d'un homme bras levés au sommet d'une montagne,
+  découpée en noir sur un soleil couchant (dégradé jaune / orange / rouge).
+
+- **Encadré de citation** (cadre rouge, à droite — verbatim) :
+
+  > « فينوس : ما نحن إلاّ سجناء هذه الذات وأنت الذي قالها قبلي يا أبولون.. ألا تذكر.. ألست أنت
+  > القائل بجماليون استطاع ما لم نستطع، فسما على ذاته، وحطّم أسوارها — يوم أبدع — وهو الهالك —
+  > ذلك الخلود! »
+  > — ▲ **توفيق الحكيم، بجماليون**
+
+---
+
+##### `3.2.1` نافذة مدخل إلى التفكير في المسألة — p.348-351
+
+###### Page de titre de la نافذة — p.348
+
+Titre imprimé sur deux lignes séparées par un filet rouge : **مدخل إلى / التفكير في المسألة**.
+
+Deux illustrations : (a) photographie d'un enfant en manifestation portant une pancarte
+« **LAISSEZ NOUS RESPIRER** » (texte français, en rouge sur fond blanc) ; (b) photographie d'un
+**mannequin articulé en bois** (mannequin de dessinateur) en position de marche, sur fond blanc.
+
+**Encadré de citation** (cadre rouge — verbatim) :
+
+> " قد يعمل بعض النّاس عمل العدول وليس بعادل، ويعمل عمل الشّجعان وليس بشجاع، ويعمل عمل الأعفّاء
+> وليس بعفيف. "
+> — ▲ **أحمد بن مسكويه، تهذيب الأخلاق**
+
+⚠️ **Graphie** : ici **« أحمد بن مسكويه »**. Le سند 2 (p.354) porte une autre forme du même nom —
+voir la fiche de ce سند.
+
+###### وضعية استكشاف أولي — p.349
+
+⚠️ **Tel qu'imprimé** : « **وضعية استكشاف أولي :** » — avec `أولي` (yâ' final), non `أولى`
+(vérifié par agrandissement). Le carré rouge en tête porte le chiffre **1**.
+
+- **Bandeau « أستحضر تمثلاتي… »** (encadré vert à droite, consigne à compléter par l'élève sur
+  pointillés) — verbatim :
+  > … وأقترح جوابا عن السؤال "متى يكون فعلي فعلا أخلاقيّا؟" :
+
+- **Bandeau de consigne** : « أتابع التفكير : أقرأ النص قراءة متأنّية وأفكّر في مضمونه … »
+
+- **Texte support** — **ابن حزم**, *طوق الحمامة في الألفة والألاّف*, دار البحار، بيروت 2000، ص 153.
+
+  **Thèse (reformulée)** : beaucoup d'hommes obéissent à leur âme et désobéissent à leur raison,
+  suivant leurs passions contre ce que la religion et la raison saine prescrivent ; c'est que Dieu
+  a composé en l'homme **deux natures opposées** — l'une qui ne porte qu'au bien et au beau, dont
+  le guide (`قائدها`) est **العدل** et l'organe **العقل** ; l'autre qui ne porte qu'aux appétits et
+  ne mène qu'au mal, dont le guide est **الشهوة** et l'organe **النفس**.
+
+- **Notice « الكاتب »** (encadré vert, verbatim resserré) :
+  **أبو محمّد علي بن أحمد بن سعيد بن حزم الاندلسي** : ولد بقرطبة سنة 384 هـ/ 994 م وتوفي سنة
+  456 هـ/ 1064 م. هو فقيه وأديب ومشارك في التأريخ والأنساب والنحو واللغة والشعر والطب والمنطق
+  والفلسفة وغيرها. يعدّ كتابه " طوق الحمامة " من أشهر مؤلّفاته واشتمل على أحاديث طريفة في الحبّ
+  ومعانيه وحالاته وأسبابه وأغراضه.
+
+  ⚠️ Imprimé **« الاندلسي »** sans hamza (et non `الأندلسي`).
+
+- **المهامّ** (encadré rose — **verbatim**, 8 puces) :
+  - أرصد المفاهيم الواردة في النصّ وأحدّد المجال الذي تتحرّك فيه.
+  - أبني جدولا بخانتين أصنّف فيه مختلف المفاهيم وأراعي في ذلك انسجام المفاهيم الواردة في كلّ خانة.
+  - أبني أزواجا مفهوميّة متناقضة وأتساءل عن سبيل رفع التناقض القائم بينها.
+  - أستخلص السؤال الذي يجيب عنه النصّ.
+  - أيّ تصوّر للإنسان تقترحه مقاربة ابن حزم في جوابه عن السؤال؟
+  - متى يكون الفعل أخلاقيّا حسب أطروحة الكاتب؟
+  - أقارن جوابي الأوّل بما ذهب إليه ابن حزم وأتساءل عن المشكل الذي يمكن أن يترتّب على هذه المقارنة
+  - هل من مبرّر للتفكير في الحياة الأخلاقيّة من جديد؟
+
+###### وضعية استكشاف ثانية — p.350
+
+⚠️ **Anomalie de numérotation constatée** : le carré rouge en tête de cette وضعية porte lui aussi
+le chiffre **1**, exactement comme celui de la وضعية précédente (p.349) — alors que le titre dit
+« ثانية ». **Constaté, non corrigé.**
+
+- **Bandeau « أستحضر تمثلاتي… »** — verbatim :
+  > … وأقترح جوابا عن السؤال " هل أحتاج إلى إعادة التفكير في القيم التي تتحكّم في سلوكي؟ "
+  > أبرّر جوابي.
+
+- **Bandeau de consigne** : « أتابع التفكير : أقرأ النص قراءة متأنّية وأفكّر في مضمونه … »
+
+- **Texte support** — **روبار مسراهي**, *مقالة في السّعادة، ج 2 (الإيتيقا والسياسة والسّعادة)*.
+  Ligne de référence latine imprimée sous la ligne arabe, **verbatim** :
+  `Robert MISRAHI; Traité du bonheur, II, Ethique, politique et bonheur. Ed. Seuil, Paris 1983, p 35`
+
+  **Thèse (reformulée)** : la réflexion sur les **fins** est aujourd'hui paralysée par un préjugé
+  si banal et si enraciné dans la culture qu'il s'impose comme une évidence — préjugé qui ne porte
+  pas sur telle valeur traditionnelle mais sur **la définition même de la morale et de sa
+  fonction** : on croit que la fonction de l'éthique est de suivre l'évolution historique des
+  valeurs et de dire, à chaque époque, ce qui s'impose. Or sa tâche est **toujours la même** :
+  déterminer les **conditions internes** qui rendent un acte pur et authentique. C'est par
+  l'**authenticité de l'intention** (`أصالة القصد`) seule qu'un acte devient bon, digne d'estime, et
+  **susceptible d'être universel** (`قابلا لأن يكون كونيّا`).
+
+- **Notice « الكاتب »** (encadré vert, verbatim) :
+  **روبار ميسراهي** 1926 : فيلسوف فرنسي من أصل تركي، متحصل على شهادة التبريز ودرّس طيلة ثلاثين سنة
+  في جامعة باريس الأولى، عرف بكتاباته المتصلة خاصّة بالأخلاق والسياسة.
+
+  ⚠️ **Variante de graphie dans la même page** : la ligne de source imprime **« روبار مسراهي »**,
+  la notice imprime **« روبار ميسراهي »**. Le فهرس annonce « مسراهي ». Le سند 18 (p.380) est du même
+  auteur — voir sa fiche pour la graphie qui y est retenue.
+
+- **المهامّ** (encadré rose — **verbatim**, 8 puces) :
+  - ما معنى أن يكون التفكير في الغايات معطّلا اليوم؟ أحدّد سبب ذلك.
+  - ما المقصود بالقيم التقليديّة؟ هل أعثر على مثيل لها في ثقافتي الرّاهنة؟
+  - ما وظيفة الأخلاق؟
+  - كيف أفهم التعارض بين تغيّر القيم وثبات وظيفة الأخلاق؟
+  - ما المقصود بنقاء الفعل وأصالته؟
+  - ما هو العنصر الأخلاقي القابل لأن يصير عنصرا كونيّا؟
+  - أستحضر مكاسبي من الدروس السابقة وأفكّر في إمكانيّة التوفيق بين الخصوصيّة الثقافيّة وبين ما هو
+    كوني في الأخلاق؟
+  - أعيد التفكير في جوابي الأوّل في ضوء ما غنمته من المهام التي أنجزتها.
+
+###### الأبعاد الإشكاليّة للمسألة — p.351
+
+Page-outil entièrement à remplir par l'élève (cadres vides et pointillés). Elle est organisée en
+**deux blocs numérotés**.
+
+**Bloc 1** — une ligne de trois pastilles vertes, lue de droite à gauche :
+**الخير** — **و** (pastille centrale, vert foncé) — **السعادة**, avec une flèche descendante partant
+de la pastille centrale vers un bandeau gris de consignes (**verbatim**) :
+
+- أركّز على أداة العطف وأستحضر العلاقات المنطقيّة التي تفترضها.
+- أقيم هذه العلاقات بين " الخير " و " السعادة ".
+- ماذا يترتّب على كلّ واحدة منها؟
+
+Puis un cadre à 5 lignes numérotées 1→5, avec l'intitulé latéral (encadré vert) :
+**أستخلص أهمّ الأسئلة التي يمكن أن توجّهني في التفكير في هذه العلاقات.**
+
+**Bloc 2** — un organigramme à remplir. En tête, un cadre imprime la liste des cinq notions
+(la même que la page d'ouverture, sur une seule ligne) :
+**الحرّية – الرّفاه – الفضيلة – الواجب – المنفعة**
+
+Sous ce cadre, deux consignes fléchées (**verbatim**) :
+- ▲ أنتبه إلى هذه المعاني وأتثبّت فيها.
+- ▼ أستحضر المعاني التي تناقضها.
+
+Puis deux colonnes de travail, chacune surmontée de sa consigne et suivie d'un cadre à 4 lignes :
+- (à droite) **أصلها بالخير وأستخلص ما يترتّب من أسئلة أساسيّة :**
+- (à gauche) **أصلها بالسعادة وأستخلص ما يترتب من أسئلة أساسيّة :**
+
+En bas de page, un dernier cadre à 5 lignes, intitulé latéral (encadré vert) :
+**أستخلص المشكلات الفلسفيّة وأبيّن الرهان من وراء التفكير فيها.**
+
+⚠️ **Aucune problématique n'est imprimée en toutes lettres sur cette page** : le manuel fait
+formuler les problèmes par l'élève. Il n'y a donc **pas** de « أبعاد إشكاليّة » verbatim à citer
+pour ce مبحث, seulement la matrice ci-dessus. **Constaté.**
+
+---
+
+##### `3.2.2` نافذة سندات للتفكير في المسألة — p.352-381
+
+###### Page de titre de la نافذة — p.352
+
+Titre imprimé sur deux lignes séparées par un filet rouge : **نافذة سندات / للتفكير في المسألة**.
+
+Deux illustrations : (a) photographie d'un lecteur seul à une table, au milieu d'une grande
+bibliothèque aux rayonnages pleins ; (b) photographie très saturée (jaune/orange) d'une jeune femme
+souriante entourée de sacs, vêtements et objets de consommation.
+
+**Deux encadrés de citation** (cadres rouges — verbatim) :
+
+> " ثمّة ما يدعو إلى التخوّف من أن ينكر زماننا هو أيضا الفيلسوف في حدّ ذاته وألاّ تكون الفلسفة مرّة
+> أخرى إلاّ دخانا في هذا الزّمان. ذلك أنّ التفلسف بحث وهو يقتضي أن تكون ثمّة أشياء تُرى وتُقال ".
+> — ▲ **موريس مرلوبونتي، تقريظ الحكمة**
+
+> " إنّ مفاهيم " الجمال " و " العدالة " و " السعادة " العامة، غير القابلة للترجمة، تعكس في الحقيقة
+> الضمير التعيس لعالم منقسم على نفسه، يتعالى فيه " ما هو كائن " على " ما يجب أن يكون "، بل
+> " يرفضه وينبذه ". "
+> — **هربارت ماركوز**
+
+⚠️ Le second encadré est attribué à **هربارت ماركوز** **sans titre d'ouvrage** — contrairement à
+tous les autres encadrés de citation du مبحث. **Constaté.**
+
+###### Gabarit réellement observé sur les سندات de ce مبحث
+
+Constaté page par page (pas déduit du مبحث 2) :
+
+- En-tête : carré magenta portant le **numéro**, la mention **« السند : »**, et le **titre du سند**
+  en gros caractères.
+- **« التمهيد : »** — encadré rose pâle, systématique jusqu'ici, **verbatim** ci-dessous.
+- Le texte de l'extrait, appels de note entre parenthèses `(1)`, `(2)`… quand il y a des notes.
+- Ligne(s) de source : arabe, parfois **doublée d'une ligne latine** (auteur + titre français + éd.).
+- **« الكاتب »** — bandeau magenta : soit une **notice** en encadré vert/blanc, soit un simple
+  **renvoi** à un سند d'un autre مبحث (déjà 3 renvois sur les 4 premiers سندات).
+- **Encadré de notes** : son titre **s'accorde en nombre** — **« الهامش »** quand il y a une note,
+  **« الهامشان »** quand il y en a deux. Plusieurs سندات n'en ont **aucun**.
+- **« المهام »** — bandeau magenta + liste à puces carrées, **verbatim** ci-dessous.
+  ⚠️ Le bandeau est imprimé **« المهام »** (sans شدّة) dans la نافذة سندات, alors que la نافذة مدخل
+  (p.349, p.350) imprime **« المهامّ »**. Variante constatée.
+- Beaucoup de سندات se terminent par une **illustration + un encadré de citation** reprenant une
+  phrase du texte, attribuée au **seul nom de famille** (« مسكويه », « سبينوزا », « ميل »…).
+
+**La double page n'est pas systématique** : certains سندات tiennent sur une page (سند 1, p.353),
+d'autres débordent sur la suivante (سند 2 : p.354-355 ; سند 3 : p.356-357 ; سند 4 : p.358-359).
+
+---
+
+###### سند 1 — أرسطو — « حدّ الفضيلة » — p.353
+
+- **Auteur tel qu'imprimé** : **أرسطو** (ligne de source) ; ligne latine **`ARISTOTE`**.
+- **Titre du سند** : **حدّ الفضيلة**
+- **Source** : أرسطو؛ أخلاق نيقوماخوس، الكتاب 2. الفصل 1 —
+  `ARISTOTE, Ethique de Nicomaque, livre II ch 1, éd. GF, 1965, pp 54-55.`
+- **Illustration** : buste antique en marbre (vignette dans le texte).
+
+**التمهيد (verbatim)** :
+> فيبدو الإنسان كائنا تتقاذفه الميول والأهواء من جهة، و إرادة الترفع والتسامي من جهة أخرى، وتجعل
+> من التوتر سمة وجوده، فبقدر ما يرفض الاستكانة إلى وضع لا يرتضيه، يعمل على أن يرتفع إلى منزلة
+> يستحيل معها من إنسان بالقوة إلى إنسان بالفعل، سعي لا يبلغ أوجه ما لم يمتلك مفاتيح الفضيلة
+> ومعيارها وآلية تحققها.
+
+**Thèse (reformulée)** : la vertu est une **disposition acquise volontairement**, stable, consistant
+à se tenir au **milieu** (`الوسط`) entre deux extrêmes — l'excès (`إفراط`) et le défaut (`تفريط`) —
+milieu déterminé par la raison telle que la fixerait l'homme avisé ; ce milieu est un
+**sommet quant au bien** (`الحدّ الأقصى` par rapport à la perfection). Mais **tout acte n'admet pas
+de milieu** : certains actes (adultère, vol, meurtre, envie, impudence) et certains vices sont
+mauvais **en eux-mêmes**, non par excès ou par défaut — il n'y a pas de « juste milieu » du meurtre,
+comme il n'y a pas d'excès ni de défaut de tempérance ou de courage.
+
+**هوامش** : **aucun encadré de notes sur cette page.**
+
+**الكاتب** — ⚠️ **ce n'est pas une notice mais un RENVOI**, imprimé verbatim :
+> **أرسطو** راجع التعريف بأرسطو في السند عدد 16 ( الدولة: السيادة والمواطنة )
+
+(Renvoi hors de ce مبحث : vers le سند 16 du مبحث « الدولة : السيادة والمواطنة ». À résoudre depuis
+la tranche correspondante.)
+
+**المهام (verbatim, 4 puces)** :
+- أي معنى للفضيلة يستبعده الكاتب؟ أستخلص تحديده الخاص للفضيلة.
+- ماذا يعني تقدير الفضيلة عند أرسطو : هل يكشف عن أخلاق حسابية؟ وأي دلالة لها، أهي رياضية كمية أم
+  معياريّة كيفية؟
+- أحدّد دلالة " الوسط العدل " مستثمرا أمثلة النص وأكشف عن آلية تحديده.
+- أمتحن قيمة التصور الأرسطي للفضيلة ومبدأ الوسط العدل وأتبين حدوده على صعيد التجربة والممارسة.
+
+---
+
+###### سند 2 — أحمد بن مسكويه — « ما الخير؟ » — p.354-355
+
+- **Auteur tel qu'imprimé** : **أحمد بن مسكويه** (ligne de source et notice) ; l'encadré de citation
+  final (p.355) l'abrège en **« مسكويه »**. ⚠️ Le فهرس annonce « ابن مسكويه » ; la page de titre de
+  la نافذة مدخل (p.348) imprime elle aussi « أحمد بن مسكويه ». **Aucune ligne latine** pour ce سند.
+- **Titre du سند** : **ما الخير؟**
+- **Source** : أحمد بن مسكويه؛ تهذيب الأخلاق، ص 78—79، منشورات دار مكتبة الحياة، بيروت 1961
+- **Illustrations** : (p.354) gravure d'un savant en turban, debout, un livre à la main ;
+  (p.355) mosaïque antique — un groupe de philosophes drapés autour d'un maître assis.
+
+**التمهيد (verbatim)** :
+> ينشد البشر السعادة بسبل متعددة ولكل له منها نصيب. غير أن إجماعهم عليها غاية قصوى تُطلب في فعل
+> الخير هو بقدر اختلافهم حول حقيقتها اختلافا يُردُّ إلى ما يكونه الخير عندهم وصلته بالسعادة.
+
+**Thèse (reformulée)** : le bien, au sens que les Anciens lui donnaient, est **la fin dernière
+visée par tous** ; le **bonheur** est un bien, mais un bien **relatif à celui qui l'éprouve** — il y
+a un bonheur du cheval distinct de celui de l'homme, chaque être ayant sa perfection propre. D'où
+la distinction : le **bien** que tous désirent est un bien **général et par soi**, tandis que le
+**bonheur** est **relatif** et diffère selon ceux qui le visent, ce qui rend le **bien absolu**
+lui-même objet de désaccord. Le bonheur au sens propre suppose **intention, réflexion et volonté**
+et n'appartient donc qu'aux êtres doués de parole/raison (`النّاطقين`) — ce que l'animal atteint
+relève du hasard, non du bonheur. La raison ne pouvant se mouvoir à l'infini, il **faut** une fin
+dernière, et le devoir est de **connaître** cette fin ultime des biens pour en faire notre but,
+sous peine d'user notre vie à poursuivre ce qui n'est pas un bien.
+
+**الهامشان** (titre de l'encadré imprimé **au duel** — verbatim) :
+1. **حدّه**: من التحديد، وهو التعريف.
+2. **المتقدمين**: المقصود بالخصوص أرسطوطاليس.
+
+⚠️ La notice appelle Aristote **« أرسطوطاليس »** ici, alors que le سند 1 l'imprime **« أرسطو »**.
+Variante constatée dans le même مبحث.
+
+**الكاتب** (p.355 — notice pleine, verbatim resserré) :
+> **أحمد بن مسكويه** : هوّ أحمد بن محمّد بن يعقوب مسكويه، فيلسوف معاصر للبيروني وابن سينا، وُلد في
+> الريّ وتوفّي في أصفهان سنة 421هـ / 1030 م. اشتغل بالطبّ والكيمياء علاوة على الفلسفة، كانت له
+> منزلة كبيرة في بلاط البويهيين. كتب بالعربيّة وبالفارسيّة وترك زهاء عشرين مصنّفا. له في الفلسفة
+> الأخلاقيّة " تهذيب الأخلاق وتطهير الأعراق "، اهتمّ فيه بصناعة الأفعال الجميلة، وقد كال له نصير
+> الدّين الطّوسي الثناء الكبير في مقدّمة كتابه عن الأخلاق. وفي التاريخ له " تجارب الأمم وتعاقد الهمم "
+> ولامس فيه أحوال البشر وقد قدّم له بكتاب " الحكمة الخالدة " واشترك مع التوحيدي في كتاب
+> " الهوامل والشوامل " وكتب في الأخلاق " الفوز الكبير " و " الفوز الصغير ".
+
+(Les titres d'ouvrages sont imprimés en **bleu** dans la notice.)
+
+**المهام (verbatim, 5 puces)** :
+- ما هو تحديد الخير الذي ينسبه الكاتب إلى الأقدمين؟
+- ما هي علاقة الخير بالسعادة؟
+- كيف أفهم اختلاف السعادة باختلاف قاصديها؟
+- هل السعادة شأن الإنسان أم الحيوان؟ أعلل جوابي.
+- أفهم الصلة بين الخير المطلق والعقل.
+
+**Encadré de citation final** (p.355, verbatim) :
+> " إنّ الخير على ما حدّه وأستحسنه من آراء المتقدّمين هو المقصود من الكلّ، وهو الغاية الأخيرة ".
+> — **مسكويه**
+
+---
+
+###### سند 3 — سبينوزا — « الفاضل » — p.356-357
+
+- **Auteur tel qu'imprimé** : **سبينوزا** ; ligne latine **`SPINOZA`**.
+- **Titre du سند** : **الفاضل**
+- **Source** : سبينوزا، علم الأخلاق، الجزء الرابع، ص 280—284، ترجمة جلال الدّين سعيد، دار الجنوب
+  للنشر (1991) — `SPINOZA, Ethique, Partie IV, Coll GF, Flammarion, 1965, pp 238-241`
+- **Illustrations** : (p.356) portrait gravé de Spinoza ; (p.357) photographie d'une girouette —
+  un homme en costume jaune, chapeau melon et serviette, juché sur la flèche, points cardinaux
+  `W N S E`.
+
+**التمهيد (verbatim)** :
+> لا غرابة أن ننشد الفضيلة بقدر ما ننبذ الرذيلة، غير أن الطابع الملتبس لمعاني الفضيلة والرذيلة،
+> يجعل من المنشود قيمة فضفاضة تحتاج منا نظرا وتدقيقا علّنا نتجاوز الإرباك الذي ينتابنا حين نسأل عن
+> الخيط الفاصل بينهما، أو علنا نمسك بالخيط الذي يجعلنا نتحقق مِن الفضيلة دون أن نضطر إلى التغافل
+> عن طبيعتنا الخاصة، ودون أن نغض الطرف عن منفعتنا الخاصة.
+
+**Thèse (reformulée)** : nous sommes **vertueux dans l'exacte mesure** où nous cherchons ce qui nous
+est utile, c'est-à-dire ce qui **conserve notre être** (`حفظ كياننا`), et impuissants dans la mesure
+où nous le négligeons. La vertu **est** la puissance même de l'homme, définie par sa seule essence,
+c'est-à-dire par l'effort qu'il déploie pour **persévérer dans son existence**. Agir par vertu, agir
+selon la raison, vivre et conserver son être, chercher son utilité propre : ce sont des
+**expressions synonymes**. Et l'on n'agit véritablement — au lieu de pâtir — que **par la
+connaissance** : mû par des idées inadéquates on est passif, mû par la connaissance on est actif,
+et l'acte découle alors de sa **vertu propre**.
+
+**هوامش** : **aucun encadré de notes.**
+
+**الكاتب** — ⚠️ **RENVOI**, imprimé verbatim :
+> **سبينوزا** راجع التعريف بسبينوزا في السند عدد 11 (الإنيّة والغيرية)
+
+**المهام** (p.357 — verbatim, 6 puces) :
+- أتبين الصلة بين الجهد والفضيلة.
+- أي دلالة للمنفعة تتحدد بها الفضيلة حسب الكاتب؟
+- يقحم الكاتب المعرفة والعيش وفق ما يمليه العقل في تحقيق الفضيلة. كيف تفهم هذه الصلة؟
+- ألا يبدو من التناقض تعريف الفضيلة بالمنفعة وحفظ الكيان وربط تحقيقها بالعيش وفق ما يمليه العقل؟
+- أستخلص دلالة الفضيلة.
+- أي تصوّر للسعادة يتولّد عن تحديد الكاتب للفضيلة؟
+
+**Encadré de citation final** (p.357, verbatim) :
+> " فبقدر ما يجدّ المرء في حفظ كيانه وبقدر ما تكون له القدرة على ذلك، يكون فاضلا ".
+> — **سبينوزا**
+
+---
+
+###### سند 4 — ستيوارت ميل — « المنفعة أساس الأخلاق » — p.358-359
+
+- **Auteur tel qu'imprimé** : ⚠️ **deux graphies dans le même سند** — la ligne de source (p.358)
+  imprime **« ستيوارت ميل »**, le renvoi الكاتب (p.359) imprime **« ستيوارت مل »** (sans yâ'),
+  et l'encadré de citation final abrège en **« ميل »**. Ligne latine : **`Stuart MILL`**.
+- **Titre du سند** : **المنفعة أساس الأخلاق**
+- **Source** : ستيوارت ميل؛ في النفعية — `Stuart MILL; De l'utilitarisme, 2, p 191`
+- **Illustrations** : (p.358) portrait photographique ancien de Mill ; (p.359) photographie —
+  quatre silhouettes se tenant par la main courent sur une passerelle, sur fond de ciel orange.
+
+**التمهيد (verbatim)** :
+> قد تبدو حياة الإنسان تجربة قوامها جدليّة الألم واللذّة، البؤس والغبطة، نقائض قد لا تفيد استحالة
+> أن يكون المرء سعيدا، وإنّما قد تجعل من السعادة جدارة هيّ محصّلة الوعي والجسارة.
+
+**Thèse (reformulée)** : la doctrine qui fait de l'utilité — ou du **principe du plus grand
+bonheur** — le fondement de la morale tient les actes pour **bons dans la mesure où ils produisent
+du bonheur**, mauvais dans la mesure où ils produisent son contraire ; bonheur signifiant plaisir
+et absence de douleur. Contre l'objection qui y voit une « doctrine de pourceaux », Mill répond que
+les utilitaristes reconnaissent aux plaisirs de l'**esprit** une supériorité **de qualité**, non
+seulement de durée ou d'intensité : l'être doté de facultés supérieures est plus difficile à
+satisfaire, mais ne consentirait pas à descendre — d'où la formule reprise en encadré, mieux vaut
+être **un homme insatisfait qu'un porc satisfait**, car celui qui ne connaît qu'un côté de la
+question ne peut arbitrer. En résumé, la fin suprême est une vie **aussi exempte de douleur que
+possible et aussi riche que possible en plaisirs, en quantité comme en qualité** — que l'intérêt
+en cause soit le nôtre ou celui d'autrui.
+
+**الهامش** (titre de l'encadré **au singulier** — une seule note, verbatim) :
+1. **أبيقور** `Epicure` : ( 270 — 341 ق م) من أبرز الفلاسفة الذريين وهو أحد روّاد ما يسمّى بأخلاق
+   اللّذة باعتبار أنّ الخير الأسمى عنده هو اللّذة.
+
+   ⚠️ **Tel qu'imprimé, l'intervalle se présente `( 270 — 341 ق م)`** — l'ordre visuel donne 270
+   puis 341, alors que lu comme un intervalle de dates il devrait se lire « 341 — 270 ق م ».
+   Vérifié par agrandissement : c'est bien la disposition imprimée. **Signalé, non corrigé.**
+
+**الكاتب** — ⚠️ **RENVOI**, imprimé verbatim :
+> **ستيوارت مل** راجع التعريف بالكاتب في السند عدد 13 (الدولة : السيادة والمواطنة)
+
+**المهام (verbatim, 6 puces)** :
+- أستخرج تحديد الكاتب للسعادة وأحدّد المعيار الذي أقيسها به.
+- بأيّ معنى تكون المنفعة مبدأ للسعادة وأساسا للفعل الأخلاقي؟
+- ما هو أساس المفاضلة بين لذّات العقل ولذّات الجسد؟
+- كيف يكون صاحب ملكات تلذّذ أقل أوفر حظّا في تلبية رغباته؟
+- هل في جعل المنفعة مبدأ للأخلاق ما يفيد الإفراط في طلب اللذة؟
+- كيف أفهم القول " من الأفضل إذن، أن يكون المرء إنسانا غاضبا على أن يكون خنزيرا راضيا "؟
+
+**Encadré de citation final** (p.359, verbatim) :
+> " يكون الهدف الأسمى هو حياة خالية أكثر ما يكون من الألم، ثرية قدر المستطاع باللذات كمّا وكيفا ".
+> — **ميل**
+
+---
+
+###### سند 5 — كانط — « الإنسان غاية » — p.360-361
+
+- **Auteur tel qu'imprimé** : **أ. كانط** (ligne de source ET renvoi الكاتب) ; l'encadré de citation
+  final abrège en **« كانط »**. ⚠️ Le سند 7 (p.364), du même auteur, imprime **« إ. كانط »** —
+  initiale différente. **Aucune ligne latine** pour ce سند.
+- **Titre du سند** : **الإنسان غاية**
+- **Source** : أ. كانط؛ تأسيس ميتافيزيقا الأخلاق — ترجمة عبد الغفّار مكّاوي، منشورات الجمل 2002.
+  **ص107 — 901**
+
+  ⚠️ **Tel qu'imprimé : `ص107 — 901`** (vérifié par agrandissement). Le second nombre, `901`, ne peut
+  pas être une page de fin après 107 ; il s'agit très probablement de `109` dont les chiffres ont
+  été inversés à la composition. **Signalé, non corrigé.**
+
+- **Illustrations** : (p.360) portrait gravé de Kant ; (p.361) illustration en pastel — deux hommes
+  aux bras démesurément allongés, l'un remettant une liasse de billets à l'autre.
+
+**التمهيد (verbatim)** :
+> قد لا يفهم الأخلاقي إلاّ بما هو شأن إنساني، يرسم صورة الإنسان باعتباره كائنا أخلاقيا في علاقة
+> بذاته وبالآخرين، صورة قد تهتزّ حين نستيقظ على ما يجب أن تكون عليه هذه الصّورة من جهة ما هو كائن.
+
+**Thèse (reformulée)** : l'homme — et tout être raisonnable en général — existe comme **fin en soi**,
+non comme simple **moyen** dont telle ou telle volonté pourrait user à sa guise ; dans chacun de ses
+actes il doit être considéré **en même temps comme une fin**. Les objets des inclinations n'ont
+qu'une valeur **conditionnée** — sans les besoins qui les fondent ils n'auraient aucune valeur, et
+les inclinations elles-mêmes, sources de besoin, sont si peu désirables que le vœu de tout être
+raisonnable est d'en être **entièrement affranchi**. D'où la partition : les êtres **non**
+raisonnables, dont l'existence ne dépend pas de notre volonté mais de la nature, n'ont qu'une valeur
+**relative** de moyens et se nomment **أشياء** ; les êtres raisonnables se nomment **أشخاص**, parce
+que leur nature même les désigne comme **fins en soi**, donc comme ce dont on ne peut user comme
+d'un simple moyen — ce qui limite tout arbitraire et fait d'eux **objets de respect**. Ce ne sont
+pas des fins **subjectives** (dont la valeur nous viendrait de nos actes) mais des fins
+**objectives**, dont l'existence est en elle-même une fin **irremplaçable** ; sans quoi rien
+n'aurait jamais de valeur absolue. D'où la formule pratique : **agis de telle sorte que tu traites
+l'humanité, en ta personne comme en celle des autres, toujours comme une fin et jamais simplement
+comme un moyen.**
+
+**هوامش** : **aucun encadré de notes.**
+
+**الكاتب** — ⚠️ **RENVOI**, imprimé verbatim :
+> **أ. كانط** راجع التعريف بكانط في السند عدد 4 (الخصوصيّة والكونيّة)
+
+**المهام** (p.361 — verbatim, 5 puces) :
+- في أيّ معنى يكون الإنسان غاية في حدّ ذاته؟
+- ما الذي يميّز الشّخص عن الشّيء؟
+- ما أساس جدارة فعل يكون موضوعا للاحترام؟
+- أحدّد دلالة " غاية " وأميّز بين غاية موضوعية وغاية في حدّ ذاتها.
+- هل لا تكونُ القيم أخلاقية بحق، إلا إذا كانت مطلقة؟
+
+**Encadré de citation final** (p.361, verbatim) :
+> " الإنسان… يوجد من جهة ما هو هدف في ذاته لا من جهة ماهو مجرّد وسيلة يمكن لهذه الإرادة أو تلك أن
+> تستخدمه على هواها ".
+> — **كانط**
+
+---
+
+###### سند 6 — كيركغارد — « ما الواجب؟ » — p.362-363
+
+- **Auteur tel qu'imprimé** : **كيركغارد** (ligne de source, notice et encadré final) ;
+  ligne latine **`KIERKEGAARD`**.
+- **Titre du سند** : **ما الواجب؟**
+- **Source** : كيركغارد، مقالة في القلق —
+  `KIERKEGAARD, Traité de l'angoisse. éd. Gallimard, 1962, p 92`
+- **Illustrations** : (p.362) portrait gravé de Kierkegaard ; (p.363) dessin humoristique — un
+  personnage blanc au torse marqué **`MORALE`**, deux petits hommes en noir accrochés à ses bras.
+
+**التمهيد (verbatim)** :
+> كثيرا ما يستدعي الحديث عن الأخلاق استحضار مفهوم الواجب الذي يقترن في الأذهان بمنطق الإلزام
+> والقهرية بما أنّه يخاطبنا بمنطق الأمر والنهي، غير أنّ النظر إلى الإنسان بما هو كائن أخلاقي قد
+> يجعل من هذا التحديد للواجب ملتبسا وإشكاليا سواء من جهة علاقة الإنسان بذاته أو من جهة علاقته
+> بالآخرين.
+
+**Thèse (reformulée)** : il est étonnant qu'en parlant du **devoir** nous parlions de quelque chose
+d'**extérieur**, alors que le mot lui-même renvoie à quelque chose d'**intérieur** : ce qui m'oblige
+selon ma vraie nature, en tant que je suis un individu, entretient avec moi une relation
+**intime**. Le devoir n'est pas un simple ordre reçu, c'est ce qui **s'impose au soi** ; l'individu
+qui le regarde ainsi prouve qu'il **se tourne vers lui-même**. Le devoir est donc **indivisible**
+par rapport à l'individu, en ce qu'il n'existe jamais que dans une relation d'extériorité à des
+dispositions particulières, alors qu'il devrait exprimer sa nature propre. Quand l'individu
+**enracine le devoir en lui-même**, il approfondit la morale : il n'est plus contraint, l'individu
+moral est **réel** et se sent en sécurité et en paix parce que son devoir n'est pas hors de lui mais
+en lui. Et plus un homme fonde sa vie en profondeur sur la morale, **moins** il éprouve le besoin
+d'en parler sans cesse, de savoir ce qu'elle signifie, ou de revenir à chaque fois vers les autres
+pour le savoir.
+
+**هوامش** : **aucun encadré de notes.**
+
+**الكاتب** (p.362 — **notice pleine**, verbatim resserré) :
+> **كيركغارد** ( 1855-1813 ) : فيلسوف دنماركي، كانت طفولته فريدة وتنبؤُ عن حياة فريدة، ومن الممكن
+> تمييز ثلاثة أطوار في هذه الحياة: الطور الجمالي والطور الأخلاقي والطور الديني، وهو التقسيم الذي
+> وضعه بنفسه، وهي لا تفيد تعاقبا في طرائق التفكير طبقا لقاعدة فنّية ولا لقانون أخلاقي أو لإيمان
+> ديني، بقدر ما تفيد علاقة وثيقة بين أنماط الفكر وأساليب العيش. بدأ حياته ماجنا، وكان يردّد قول
+> **أوغستين** `St. Augustin` (430—354) " كانت أشواك اللذات تنمو فوق رأسي "، ولأنّه كان رجل لذّة،
+> فقد كان متمرّدا على الكنيسة، إذ يعتبرها أداة لتبليد العقل. يتمحور تفكيره الفلسفي حول " دراما "
+> الوجود الإنساني، قلق الفرد ووحدته إزاء المجموعة، وحول الهيمنة الجليدية للعقل. يعدّ كتاب
+> " إمّا…وإمّا " (1843) أحد أبرز مؤلّفاته وقد أثّر في الفكر الوجودي المعاصر الذي استمدّه من تجارب
+> حياته. ومن مؤلّفاته سلسلة من المقالات المختلفة حول القلق والنقد والجمال والأدب والموسيقى. ألّف
+> أيضا " خوف وزلزال " (1843) و " مقالة في اليأس " (1849). وهي مؤلّفات تتمحور حول تعابيره المباشرة
+> وغير المباشرة للصراع اليائس، واللامعقول والمتشنّج الذي يخوض الإنسان غماره ضدّ الخطيئة وضدّ أهوال
+> الحياة التي تتأتّى منها.
+
+⚠️ **Dates telles qu'imprimées** : `( 1855-1813 )` pour Kierkegaard et `(430—354)` pour Augustin —
+dans les deux cas l'ordre visuel donne la borne haute puis la borne basse. Même phénomène de
+composition qu'au سند 4. **Signalé, non corrigé.**
+
+**المهام** (p.363 — verbatim, 6 puces) :
+- ما هي طبيعة الواجب في نظر الكاتب؟ أحدّد الفرق بين ضربين من الواجب.
+- أيّ غنم يحصل لنا عند توجّهنا لذواتنا؟
+- ما الذي ينجرّ عن واجب يُفرَضُ علينا من خارج؟
+- أستثمر مكتسباتي حول الواجب وأستخلص طرافة تصوّر الكاتب له.
+- ما الذي يستتبع ردّ الواجب إلى نداء الذات في شأن علاقتي بالآخرين؟
+- هل أجد صلة بين الحريّة ومفهوم الواجب كما حدده الكاتب؟
+
+**Encadré de citation final** (p.363, verbatim) :
+> " يبدو مدهشا جدّا، أنّه حين نتحدّث عن الواجب، نتحدّث عن شيء خارجي ".
+> — **كيركغارد**
+
+---
+
+###### سند 7 — كانط — « الأمر الأخلاقي » — p.364-365
+
+- **Auteur tel qu'imprimé** : **إ. كانط** dans la ligne de source (p.364), **أ. كانط** dans le
+  renvoi الكاتب (p.365), **كانط** dans l'encadré final. ⚠️ Trois formes pour le même auteur, dans le
+  même سند. **Aucune ligne latine.**
+- **Titre du سند** : **الأمر الأخلاقي**
+- **Source** : إ. كانط؛ تأسيس ميتافيزيقا الأخلاق — ترجمة عبد الغفّار مكّاوي، منشورات الجمل ، 2002.
+  ص 113— 115
+- **Illustrations** : (p.364) portrait gravé de Kant (autre gravure que celle du سند 5) ;
+  (p.365) image de synthèse — une figure humaine métallique agenouillée, bras levés, devant un
+  **doigt jaune géant** pointé sur elle.
+
+**التمهيد (verbatim)** :
+> قد لا يفهم الضابط الأخلاقي إلاّ بما هو إلزام نخضع له آليّا بموجب مقتضيات الحياة الاجتماعية، أو
+> بموجب الانشداد إلى مصلحة ذاتية أو منفعة خاصّة، غير أن اقتران الحديث عن الأخلاقيّ باستحضار معاني
+> السموّ والرفعة قد يثير فينا السؤال عن مدى إمكان أن يستحيل الإلزام التزاما، والخضوع طاعة إراديّة،
+> تجعل للفعل الأخلاقي حقيقة مغايرة.
+
+**Thèse (reformulée)** : les **impératifs moraux** — qu'ils exigent la conformité des actes à une
+législation universelle analogue à l'ordre de la nature, ou qu'ils veuillent que les êtres
+raisonnables aient le privilège d'être des **fins en soi** — excluent de leur autorité **tout
+mélange d'intérêt** (`كلّ خليط من منفعة`), quel qu'il soit : c'est cette exclusion qui nous les fait
+concevoir comme **absolus** (catégoriques). L'affranchissement de tout intérêt est précisément la
+**marque distinctive** qui sépare l'impératif absolu de l'impératif **hypothétique** (`الشّرطيّة`).
+Une volonté qui obéirait à des lois liées à un intérêt ne pourrait pas être **législatrice
+suprême** : elle aurait besoin d'une autre loi pour limiter l'amour de soi et conditionner sa
+validité. Le principe de toute volonté humaine comme volonté **universellement législatrice** est
+donc, s'il est exact, apte à être un impératif **catégorique** — parce qu'il ne repose sur aucun
+intérêt et qu'il est le seul, parmi tous les impératifs possibles, à être **inconditionné**. Ou,
+mieux : s'il existe un impératif moral absolu, il ne peut qu'ordonner que tous les actes de l'homme
+dérivent d'une volonté qui puisse **en même temps** se prendre elle-même pour objet en tant que
+législatrice universelle — alors seulement le principe pratique et l'ordre auquel l'homme obéit sont
+**inconditionnés**, parce qu'il n'y a **aucun intérêt** sur lequel ils puissent se fonder.
+
+**هوامش** : **aucun encadré de notes.**
+
+**الكاتب** — ⚠️ **RENVOI**, imprimé verbatim (identique à celui du سند 5) :
+> **أ. كانط** راجع التعريف بكانط في السند عدد 4 (الخصوصيّة والكونيّة)
+
+**المهام** (p.365 — verbatim, 7 puces) :
+- أحدّد معنى الأمر الأخلاقي وأميّز بين الأمر الشرطي والأمر القطعي.
+- كيف أفهم الواجب الأخلاقي في ضوء تحديد الكاتب للأمر الأخلاقي؟
+- ما هو المشرّع الأعلى للأمر الأخلاقي؟
+- ما الذي يبرّر استبعاد الكاتب للمنفعة في تحديد الفعل الأخلاقي؟
+- هل من تعارض بين طاعة الواجب وحريّة الذاّت؟
+- إذا سلّمنا بضرورة الفصل بين المنفعة والفعل الأخلاقي، فهل يمكن أن تكون السعادة غاية لهذا الفعل؟
+- أمتحن وجاهة الفصل بين الواجب الأخلاقي والمنفعة في ضوء واقع تجربتي بما أنا ذات في علاقة بالآخرين.
+
+**Encadré de citation final** (p.365, verbatim) :
+> " إنّ الأوامر الأخلاقيّة…قد استبعدت حقًّا عن سلطانها الآمر، كلّ خليط من منفعة، أيّا كان نوعها ".
+> — **كانط**
+
+---
+
+###### سند 8 — إميل دوركايم — « في نقد الواجب » — p.366
+
+⚠️ **سند sur une seule page** — التمهيد, texte, source, الكاتب et المهام tiennent tous sur p.366.
+**Ni encadré de notes, ni illustration finale, ni encadré de citation.** La double page n'est donc
+décidément pas le gabarit.
+
+- **Auteur tel qu'imprimé** : **إميل دوركايم** ; ligne latine **`E. DURKHEIM`**.
+- **Titre du سند** : **في نقد الواجب**
+- **Source** : إميل دوركايم، علم الاجتماع والفلسفة —
+  `E. DURKHEIM; Sociologie et philosophie, éd. PUF, 1924 pp 63-65.`
+- **Illustration** : portrait photographique ancien de Durkheim (vignette dans le texte).
+
+**التمهيد (verbatim)** :
+> عادة ما نُجمع على أنّ الخير هو معيار الفعل الأخلاقي، ونسلّم به بداهة. غير أنّ التجربة الأخلاقيّة
+> تكشف التباسه حينما تطرح شروط تحققه، التباسا يجعله موضع جدال لا ينتهي.
+
+**Thèse (reformulée)** : l'analyse kantienne de l'acte moral, si juste soit-elle, reste
+**insuffisante et inachevée**, car elle n'en découvre qu'**une seule face**. De fait, nous ne pouvons
+accomplir un acte qui ne signifierait rien pour nous sous prétexte qu'il est simplement imposé :
+poursuivre une fin qui ne nous meut pas, ne nous paraît pas bonne et ne touche pas notre
+sensibilité est **psychologiquement impossible**. Il faut donc que la fin morale soit, outre son
+caractère **obligatoire** (`الإلزامية`), **désirable et désirée** (`مرغوبا فيها ومطلوبة`) — cette
+désirabilité est une propriété **constante de tout acte moral**. Le devoir, ou l'impératif kantien,
+n'est qu'**un des deux visages** du réel moral : les deux sont toujours présents et **inséparables**.
+Il n'est jamais arrivé qu'un acte procède du seul devoir, car un acte doit toujours se montrer bon
+d'une manière ou d'une autre ; inversement, il est peu probable que les deux faces soient **également
+désirables**, elles se soutiennent l'une l'autre. De même, la notion d'**obligation** — première
+caractéristique de la vie morale — permet de **critiquer l'utilitarisme**, tandis que la seconde
+caractéristique fait apercevoir les **limites de l'explication kantienne** : l'hypothèse kantienne
+d'une **hétérogénéité radicale** entre raison et sensibilité rend malaisé de concilier cette
+hétérogénéité avec le fait que les fins morales sont, par un de leurs visages, **objets de désir** ;
+et si la sensibilité a la même fin que la raison, elle ne s'amoindrit pas en s'y soumettant.
+
+**هوامش** : **aucun encadré de notes.**
+
+**الكاتب** — ⚠️ **RENVOI**, imprimé verbatim :
+> **إميل دوركايم** : راجع التعريف بدوركايم في السند عدد 20 ( الخصوصيّة والكونيّة )
+
+**المهام (verbatim, 7 puces)** :
+- أستحضر التصوّر الكانطي للفعل الأخلاقي، وأتبيّن وجه اعتراض الكاتب عليه.
+- يتحدّث الكاتب عن وجهين للفعل الأخلاقي : أحدّدهما وأتبيّن الصّلة بينهما.
+- هل أنّ أخلاقيّة الفعل في ما يستحسنه العقل أم في ما تنشده الرّغبة؟
+- هل من تناقض بين اعتبار الخير موضوع إلزام وموضوع رغبة في آن؟
+- أستخلص خصائص الظّاهرة الأخلاقيّة حسب الكاتب في ضوء نقده للتصوّر الكانطي.
+- أي تصوّر للعقل يفترضه القول إنّ للحساسية الغاية نفسها التي للعقل؟
+- أستخلص دلالة الواجب وطبيعته في نظر الكاتب.
+
+---
+
+###### ⚠️ Avertissement transversal — les intervalles de dates sont composés à l'envers
+
+Dans ce مبحث, presque **tous** les intervalles en chiffres latins insérés dans un texte arabe
+apparaissent **dans l'ordre visuel inverse** de l'ordre logique attendu :
+
+| page | tel qu'imprimé | lecture attendue |
+| --- | --- | --- |
+| p.358 (هامش, أبيقور) | `( 270 — 341 ق م)` | 341 — 270 ق م |
+| p.360 (source, كانط) | `ص107 — 901` | ص 107 — 109 |
+| p.362 (notice, كيركغارد) | `( 1855-1813 )` | 1813 — 1855 |
+| p.362 (notice, أوغستين) | `(430—354)` | 354 — 430 |
+| p.375 (notice, دو أولباخ) | `(1789-1723)` | 1723 — 1789 |
+
+**Exception** : p.371 (notice, أبيقور) imprime `(341—271 ق.م)` — dans l'ordre attendu.
+Et ⚠️ **cette notice donne 271 là où le هامش de la p.358 donne 270** pour la mort d'Épicure :
+**contradiction interne du manuel**, sur deux pages du même مبحث.
+
+Tout ce qui suit **reproduit la chaîne telle qu'elle est imprimée**, sans la remettre à l'endroit.
+
+---
+
+###### سند 9 — نيتشه — « أخلاق القوّة » — p.367-368
+
+- **Auteur tel qu'imprimé** : **نيتشه** ; ligne latine **`NIETZSCHE`**.
+- **Titre du سند** : **أخلاق القوّة**
+- **Source** : نيتشه، ما وراء الخير والشر —
+  `NIETZSCHE. Par- delà le bien et le mal. Mercure de France, p 216 - 217`
+- **Illustrations** : (p.367) portrait photographique de Nietzsche ; (p.368) sculpture — un homme
+  nu de pierre, jambes écartées au-dessus d'une faille, soutenant une **sphère** au-dessus de sa
+  tête, sur ciel violet.
+
+**التمهيد (verbatim)** :
+> يتراوح حال النّاس بين قويّ ينزع إلى الغلبة وضعيف يميل إلى الخضوع وكلّ يبرّر حاله، ويتخفّى وراء
+> قيم من صنعه، فيلتبس على الناظر أمر الأخلاق فيكون مطلب السؤال عن حقيقة القيم وجدارتها.
+
+**Thèse (reformulée)** : il existe une **morale des maîtres** et une **morale des esclaves**.
+L'homme noble se sépare des êtres en qui les sentiments de grandeur et de fierté paraissent niés :
+il les méprise. La première opposition morale — noble / vil — n'a pas la même origine que
+l'opposition bien / mal, qui vient d'ailleurs. Est méprisé le lâche, le craintif, l'homme du regard
+inquiet qui se rabaisse, le chien qui se laisse maltraiter, le mendiant flatteur, et surtout le
+**menteur** : c'est un lieu commun de l'aristocratie que le peuple est menteur — « nous, à leur
+différence, sommes les véridiques ». L'homme noble possède le sentiment profond qu'il a le **droit
+de fixer la valeur** : il ne demande l'assentiment de personne, il décrète que « ce qui m'est
+nuisible est nuisible en soi », il sait que c'est lui qui **confère l'honneur** aux choses, il est
+**créateur de valeurs** — une telle morale est une **glorification de soi**. On y trouve le sentiment
+de plénitude, la puissance qui déborde d'activité, le bonheur de la haute tension, la conscience
+d'une richesse qui aime à donner : l'homme noble secourt aussi le malheureux, mais **non par pitié**
+— par surabondance de force. Le noble honore en lui la puissance et le pouvoir de se maîtriser ;
+inversement, les morales qui font de la pitié, de l'abnégation ou du désintéressement le signe
+distinctif de l'acte moral sont l'**exact contraire** de cette morale des nobles, laquelle tient
+plutôt à la foi en soi, à la fierté, à l'hostilité et à l'ironie envers l'abnégation et les
+« cœurs chaleureux ».
+
+**الهامش** (une note, verbatim) :
+1. **فيكينغ** `Wiking` : قراصنة سكندنافيين إجتاحوا أوروبا في القرنين 10 و 11 م .
+
+   ⚠️ **Tel qu'imprimé** : la translittération latine est **`Wiking`** (et non *Viking*), l'arabe
+   **`سكندنافيين`** (sans alif initial) et **`إجتاحوا`** (avec hamzat qaṭ'). **Non corrigé.**
+
+**الكاتب** — ⚠️ **RENVOI**, imprimé verbatim :
+> **نيتشه** : راجع التعريف بنيتشه في السند عدد 19 (الإنيّة والغيريّة )
+
+**المهام** (p.368 — verbatim, 4 puces) :
+- يميّز الكاتب بين أخلاق للأسياد وأخرى للعبيد : أيّ دلالة لهذا التمييز وما أساسه؟
+- كيف أفهم علاقة التساوي بين زوج " حسن – سيء " وبين زوج " نبيل – حقير "؟
+- ما أصل نقيضة " خير – شر " في نظر الكاتب؟
+- هل تمثل المقاربة النيتشوية تكريسا للمفاضلة الأخلاقية أم دعوة للانعتاق والتحرر؟
+
+**Encadré de citation final** (p.368, verbatim) :
+> " توجد أخلاق للأسياد وأخرى للعبيد.(…) والإنسان النبيل ينفصل عن الكائنات التي تبدو نقيضا لمشاعر
+> العظمة والفخر؛ فهو يحتقرها ".
+> — **نيتشه**
+
+---
+
+###### سند 10 — كارل ماركس وانغلز — « الأخلاق والمجتمع » — p.369
+
+⚠️ **سند sur une seule page.** Ni encadré de notes, ni illustration finale, ni encadré de citation.
+
+- **Auteurs tels qu'imprimés** : **كارل ماركس وانغلز** ; ligne latine **`Karl MARX et F. ENGELS`**.
+  (Engels rendu **انغلز** en arabe ; le renvoi الكاتب écrit **« ماركس وانغلز »**.)
+- **Titre du سند** : **الأخلاق والمجتمع**
+- **Source** : كارل ماركس وانغلز، الإيديولوجيا الألمانية —
+  `Karl MARX et F. ENGELS; Idéologie allemande, III, p. 77.`
+- **Illustration** : portrait photographique de Marx (vignette dans le texte).
+
+**التمهيد (verbatim)** :
+> دأب الموروث الفلسفي الكلاسيكي على اعتبار الإنسان ماهية مجرّدة، مما اقتضى استبعاد الأهواء
+> واعتبارها أمرا عارضا، غير أن واقع البشر قد يسمح بالتظنّن على هذا التصوّر ويفسح المجال لمساءلة
+> دور الأهواء في تأصيل علاقة الإنسان بالحياة والعالم، بل وتحديد منزلته الأخلاقية.
+
+**Thèse (reformulée)** : c'est une **absurdité** de supposer qu'on puisse satisfaire une passion
+isolément des autres, ou satisfaire l'individu sans le satisfaire tout entier. Si cette passion
+prend un caractère **abstrait et autonome**, si elle m'apparaît comme une force **étrangère** et
+que la satisfaction de l'individu se réduit à **une seule** de ses faces, la cause n'est ni la
+conscience ni la « bonne volonté », ni un défaut de pensée sur la signification des facultés
+morales. La cause doit être rapportée non à la **conscience** mais à l'**existence**, non à la
+pensée mais à la **vie** : la cause est la vie concrète de l'individu, elle-même **suspendue aux
+conditions matérielles du monde**. Quand les conditions dans lesquelles l'individu vit ne
+permettent le développement que d'**une seule** de ses facultés aux dépens des autres, cet individu
+ne peut se développer que **d'un seul côté**, mutilé — et **aucune prédication morale n'y changera
+rien**. Pour un individu dont la vie couvre un large cercle d'activités et de rapports pratiques
+avec le monde, la pensée possède la même **universalité** que tout autre trait de sa vie ;
+inversement, l'individu misérable, dont les rapports au monde sont étroits, n'a d'autre issue que de
+se réfugier dans la pensée, dont l'abstraction croît à mesure que sa vie s'appauvrit — pensée
+désarmée, séparée de lui comme une **force extérieure** qui ne lui offre que la fuite momentanée
+hors d'un « monde mauvais » et un plaisir provisoire ; il ne lui reste alors que des désirs qui ne
+lui viennent pas de ses rapports au monde mais de sa **constitution physique**, et qui ne se
+manifestent que comme **réaction**.
+
+**هوامش** : **aucun encadré de notes.**
+
+**الكاتب** — ⚠️ **RENVOI**, imprimé verbatim :
+> راجع التعريف بماركس وانغلز في السند عدد 18 ( الإنيّة والغيريّة )
+
+**المهام (verbatim, 6 puces)** :
+- أتبيّن التصوّر الذي ينقده الكاتب بشأن صلة الإنسان بأهوائه.
+- أيّة وجاهة للموقف الأخلاقي الذي يقوم على منظور سلبي للأهواء؟
+- أحدّد شروط الإشباع الحقيقي للأهواء حسب النص.
+- " لن تغيّر أيّة موعظة أخلاقية من الحياة شيئا : " كيف أفهم هذا القول؟
+- بأيّ معنى تكون الشروط المادية محددا لنوعية تلبية الرغبة؟
+- كيف يمكن لفرد يعيش واقعا بائسا أن يحقق ضربا من المتعة؟
+
+---
+
+###### سند 11 — برغسون — « الحريّة الأخلاقيّة » — p.370
+
+⚠️ **سند sur une seule page.** Ni encadré de notes, ni illustration finale, ni encadré de citation.
+
+- **Auteur tel qu'imprimé** : **برغسون**. **Aucune ligne latine** pour ce سند.
+- **Titre du سند** : **الحريّة الأخلاقيّة**
+- **Source** (vérifiée par agrandissement) : برغسون، منبعا الأخلاق والدّين، ترجمة **عبد الدّايم** و
+  سامي الدّروبي — دار الهيئة المصرية العامة للتأليف والنشر 1971. ص88
+
+  ⚠️ Le traducteur est imprimé **« عبد الدّايم »** (avec yâ'). ⚠️ L'éditeur est imprimé
+  **« دار الهيئة المصرية العامة للتأليف والنشر »** — avec un `دار` en tête devant `الهيئة`.
+  **Signalé, non corrigé.**
+
+- **Illustration** : portrait photographique de Bergson (vignette dans le texte).
+
+**التمهيد (verbatim)** :
+> إذا كانت الحرية شأنا إنسانيا ، بل ما به يكون الإنسان إنسانا، فإن تجربتها على صعيد واقع البشر
+> المتسم بالتنوع والتعدد كثيرا ما يفضي إلى الاصطدام بمشكل العلاقة بين حرية الفرد وحرية الغير ؛
+> مشكلا قد يكون حله إصلاح المجتمع أو بالأحرى إبداع " أخلاق الامتياز ".
+
+**Thèse (reformulée)** : on dit d'ordinaire que l'individu a droit à la liberté qui **ne nuit pas**
+à celle d'autrui ; mais autoriser une liberté nouvelle peut avoir pour effet que les libertés
+**empiètent** les unes sur les autres dans la société actuelle, sans qu'il en aille de même dans une
+autre société où cette réforme aurait changé les affects et les mœurs. Il est donc **impossible** de
+juger a priori, et **quantitativement**, la mesure de liberté qu'on peut accorder à un individu sans
+nuire à celle de ses semblables : dès que la quantité change, **la qualité** cesse d'être la même.
+De plus, l'**égalité** ne s'obtient qu'aux dépens de la liberté, ce qui obligerait à trancher
+laquelle des deux on préfère — question sans réponse générale, puisque sacrifier une liberté est
+encore un fait de liberté dès lors que les citoyens y consentent, et que les libertés qui subsistent
+après le sacrifice **valent davantage** si l'égalité obtenue a produit une société où l'on respire
+mieux et où l'on travaille avec joie. Il faut donc revenir aux **créateurs de morale**
+(`مبدعي الأخلاق`), qui pensent par la **pensée** un espace social nouveau, un milieu de vie
+meilleur, tel qu'une société qui en aurait fait l'épreuve refuserait de revenir à son état
+antérieur : par là seulement se définit le **progrès moral** — qu'on ne peut d'ailleurs reconnaître
+qu'**après coup**, quand un sentiment moral neuf est apparu, comparable à une **musique** nouvelle
+qui se transmet aux hommes et leur imprime sa marque.
+
+**هوامش** : **aucun encadré de notes.**
+
+**الكاتب** — ⚠️ **RENVOI**, imprimé verbatim :
+> **برغسون** راجع التعريف ببرغسون في السند عدد 8 (الإنيّة والغيريّة )
+
+**المهام (verbatim, 6 puces)** :
+- أيّ تصوّر للحريّة يضعه النص موضع نقد؟
+- بأيّ معنى تعسر المفاضلة بين الحرية والمساواة؟
+- أبيّن كيف أن إصلاح المجتمع في اتجاه المساواة له أثر على منزلة الحرية.
+- أحدّد مفهوم التقدّم الأخلاقي في النص. هل يحمل على معنى النسبيّة الأخلاقيّة؟
+- ماذا يعني النص " بالرجال مبدعي الأخلاق "؟
+- هل من تعارض بين أخلاق إبداع وفكرة التزام أخلاقي؟
+
+---
+
+###### سند 12 — أبيقور — « اللذة والسعادة » — p.371
+
+⚠️ **سند sur une seule page.** Ni encadré de notes, ni illustration finale, ni encadré de citation.
+
+- **Auteur tel qu'imprimé** : **أبيقور** ; ligne latine **`EPICURE`**.
+- **Titre du سند** : **اللذة والسعادة**
+- **Source** : أبيقور، مذهب وقواعد. —
+  `EPICURE, Doctrine et maximes. Coll. L'esprit et la main. éd. Hermann, Paris,1965, pp. 77-78.`
+- **Illustration** : buste antique en marbre (vignette dans le texte).
+
+**التمهيد (verbatim)** :
+> يسعى الإنسان بموجب طبيعته إلى طلب النفع وتجنب الضرر. وإذا كان فيما يحصل له من ضرر ألم، وبالتالي
+> شر، فإن في نفعه لذة هي الخير الأسمى، يطلبها غاية لفعله ، كأنّما هي سعادته، وهو الكائن الذي لم
+> يوجد ليشقى.
+
+**Thèse (reformulée)** : le **plaisir** est le commencement et la fin de la vie heureuse ; nous
+l'avons reconnu comme un bien **premier et conforme à notre nature**, et c'est de lui que nous
+partons pour déterminer ce qu'il faut choisir et ce qu'il faut fuir — c'est à lui que nous revenons
+quand nous prenons la **sensation** pour règle d'évaluation de tout bien. Mais précisément **parce
+que** le plaisir est notre bien premier et naturel, nous **ne recherchons pas tout plaisir** : il
+arrive que nous en écartions beaucoup, quand il en résulte pour nous des désagréments plus grands ;
+et nous jugeons souvent des douleurs préférables à des plaisirs, lorsqu'un plaisir plus élevé suit
+une longue souffrance endurée. Tout plaisir est donc, par sa nature propre, un **bien**, sans qu'il
+faille pour autant rechercher tout plaisir ; de même toute douleur est un **mal**, sans qu'il faille
+pour autant fuir toute douleur. Dans tous les cas la décision se prend par **comparaison** et par
+**examen précis** de l'utile et du nuisible, car il nous arrive de traiter le bien comme s'il était
+un mal, et le mal comme s'il était un bien.
+
+**هوامش** : **aucun encadré de notes.**
+
+**الكاتب** (**notice pleine**, verbatim) :
+> **أبيقور** (341—271 ق.م) من أبرز الفلاسفة الذريين الإغريق. ظهر شغفه بالفلسفة مبكرا. يمكن اختزال
+> حياته في مرحلتين: بدأ حوالي 310 ق.م التدريس وعرف صعوبات حملته على الخروج من أثينا إلى آسيا ليعرف
+> نجاحا ويجمع حوله أتباعا جددا متميزين وذوي تأثير. وحوالي 306 ق.م استقر بأثينا و لم يفارقها حتى
+> موته. وقد عُدَّ أحد روّاد ما يُسمّى بأخلاق اللّذة.
+
+⚠️ **Ce سند est le seul du مبحث à donner une notice pleine pour un auteur déjà présenté ailleurs
+dans le manuel** — Épicure avait déjà été défini dans le **هامش du سند 4** (p.358). Les deux
+notices **ne donnent pas la même date de mort** (270 vs 271) : voir l'avertissement transversal
+ci-dessus.
+
+**المهام (verbatim, 6 puces)** :
+- بأيّ معنى تكون اللّذة خيرا أساسيا وفطريا؟ هل يعني هذا اعتبارها مبدأ للفعل الأخلاقي؟
+- أتمثّل حدود التمييز بين اللّذة والألم، وأفهم معنى أن يكون في الألم لذّة.
+- أستخرج من النص المعيار الذي يقرّه الكاتب لتقدير الخير والشر. هل يستند هذا المعيار على العقل
+  والإرادة أم على الأهواء؟
+- على أي أساس يعتبر الكاتب اللّذة " مبدأ وغاية للحياة السعيدة "؟ أحدّد معنى اللّذة التي يعنيها النص.
+- أحدّد معنى السعادة من خلال النص وطبيعة علاقتها بالخير.
+- هل يحمل القول باللّذة مبدأ للفعل الأخلاقي على معنى الدعوة إلى الإفراط في طلبها؟
+
+---
+
+###### سند 13 — أرسطو — « الخير الأسمى » — p.372
+
+⚠️ **سند sur une seule page.** Ni encadré de notes, ni illustration finale, ni encadré de citation.
+
+- **Auteur tel qu'imprimé** : **أرسطو** ; ligne latine **`ARISTOTE`**.
+- **Titre du سند** : **الخير الأسمى**
+- **Source** : أرسطو؛ أخلاق نيقوماخوس — `ARISTOTE, Ethique à Nicomaque, VII, 13(2-5), éd. Vrin`
+
+  ⚠️ **Le titre latin diffère de celui du سند 1** : ici **`Ethique à Nicomaque`**, là-bas
+  **`Ethique de Nicomaque`** (p.353). Deux formes pour le même ouvrage dans le même مبحث.
+
+- **Illustration** : dessin au trait d'un buste barbu d'Aristote (différent de la vignette du سند 1).
+
+**التمهيد (verbatim)** :
+> يبدو أن السعادة قيمة وغاية قصوى يسعى الإنسان إلى تحقيقها، وإذا كان الجميع يشترك في طلبها فإن
+> تحديدها وبيان السبل إلى تحقيقها يمثل معضلة شغلت ولا تزال تشغل الفكر الإنساني.
+
+**Thèse (reformulée)** : rien n'empêche que le **bien suprême** soit un certain **plaisir**, même en
+admettant que certains plaisirs soient mauvais — de même que le savoir suprême peut porter sur un
+objet déterminé alors que certaines sciences sont mauvaises. Puisque chaque disposition a une
+activité qui lui convient et qui s'exerce sans obstacle, le bien suprême est nécessairement une
+**activité** — celle de l'ensemble de nos dispositions ou celle de l'une d'elles, exercée
+**sans entrave** ; et cette activité est un **plaisir**. Aussi la plupart des hommes ont-ils raison
+de tenir que la **vie heureuse est une vie de jouissance** et d'établir un lien étroit entre plaisir
+et bonheur, car aucune activité n'est achevée si elle est empêchée. Mais le bonheur relève des
+activités **complètes**, et l'homme heureux a de surcroît besoin des **biens du corps**, des **biens
+extérieurs** et de la **fortune** (`الحظ`), afin que rien ne fasse obstacle de ce côté-là. Contre
+ceux qui prétendent qu'on est heureux même sous la torture ou dans les pires malheurs pourvu qu'on
+soit bon — thèse que Aristote juge dite « sans intention ou sans intention réfléchie », donc vide de
+sens —, il faut admettre qu'on a **besoin de la fortune**, tout en se gardant de la confondre avec
+le bonheur : ce sont deux choses **profondément différentes**, la fortune, dès qu'elle excède ses
+bornes, faisant même **obstacle** à l'activité. Le plus juste est donc de la nommer **حظّا ملائما**,
+dont la définition se dessine à partir de son rapport au bonheur.
+
+**هوامش** : **aucun encadré de notes.**
+
+**الكاتب** — ⚠️ **RENVOI**, imprimé verbatim (identique à celui du سند 1) :
+> **أرسطو** : راجع التعريف بأرسطو في السند عدد 16 ( الدولة: السيادة والمواطنة )
+
+**المهام (verbatim, 6 puces)** :
+- بأيّ معنى يكون الخير الأسمى لذّة؟
+- كيف أفهم قول الكاتب بأنّ " الحياة السّعيدة هي حياة ممتعة "؟
+- هل السّعادة شأن العقل أم الرغبة؟ النفس أم الجسد؟
+- أيّة صلة بين السّعادة والحظ؟ بأيّ معنى يكون الحظ الملائم شرطا وعائقا؟
+- أستخلص قيمة فكرة القدر في تصوّر أرسطو للسعادة، وشروط إمكان تحقّقها؟
+- هل في القول بوجود موانع ما يفضي إلى التشكيك في إمكان تحصيلها؟
+
+---
+
+###### سند 14 — ج. ج. روسّو — « سبيل السعادة » — p.373
+
+⚠️ **سند sur une seule page.** Ni encadré de notes, ni illustration finale, ni encadré de citation.
+
+- **Auteur tel qu'imprimé** : **ج. ج. روسّو** ; ligne latine **`J-J.ROUSSEAU`**.
+- **Titre du سند** : **سبيل السعادة**
+- **Source** : ج. ج. روسّو؛ إميل أو في التربيّة، ترجمة عادل زعيتر، دار المعارف بمصر 1956. ص 109 — 110
+  — `J-J.ROUSSEAU; Emile ou de l'éducation, GF, 1966, p 93`
+
+  ⚠️ Les deux lignes de source ne renvoient pas à la même édition ni à la même pagination
+  (ص 109—110 de la traduction arabe / p 93 de l'édition GF). **Constaté.**
+
+- **Illustration** : portrait peint de Rousseau (vignette dans le texte).
+
+**التمهيد (verbatim)** :
+> يسعى الإنسان إلى السعادة قدر مستطاعه ووفق طاقاته، بيد أنّه كثيرا ما يصطدم، في واقعه الاجتماعي،
+> بعوائق تحوّل مسعاه إلى صراع مرير يخلّف، غالبا، آلاما تتفاوت حدّتها بين البشر، إلى حدّ قد نحمل
+> فيه على اليأس من إدراك سعادة تامّة خاليّة من الألم، فيكون مبلغ سعادتنا، أن نخفّف من الألم،
+> كلّما، وجدنا إلى ذلك سبيلا.
+
+**Thèse (reformulée)** : nous ne connaissons **ni bonheur absolu ni malheur absolu** ; tout est
+mêlé en cette vie, on n'y goûte aucun sentiment pur, on n'y demeure pas deux instants dans le même
+état, les affections de l'âme ont leurs variations comme le corps ses transformations. Le bien et le
+mal nous sont **communs à tous**, mais en **proportions différentes** : le plus heureux est celui
+qui souffre le **moins** de peines, le plus malheureux celui qui éprouve le **moins** de joies. Le
+bonheur de l'homme ici-bas n'est donc **jamais qu'un état négatif** : il doit se mesurer à la
+**moindre quantité de maux** qu'il endure. Tout sentiment de manque dont on ne peut se défaire est
+douleur, tout désir suppose une privation, et l'on ne peut être privé sans souffrir : notre misère
+tient donc à l'**écart entre nos désirs et nos facultés**, et l'être dont les désirs et les
+facultés **s'égalent** est absolument heureux. La sagesse — le chemin du bonheur véritable —
+ne consiste **ni** à diminuer nos désirs (car s'ils tombaient au-dessous de notre pouvoir une part
+de nos forces resterait inemployée et nous ne jouirions pas de tout notre être), **ni** à étendre
+nos facultés (car nos désirs croîtraient d'autant plus, nous rendant plus malheureux) : elle
+consiste à **réduire l'écart** entre désirs et puissances, à rendre **égales** la puissance et la
+volonté. Alors seulement toutes les forces sont en acte, l'âme reste en paix et l'homme se trouve
+dans son meilleur état.
+
+**هوامش** : **aucun encadré de notes.**
+
+**الكاتب** — ⚠️ **RENVOI**, imprimé verbatim :
+> **ج. ج. روسّو** : راجع التعريف بروسّو في السند عدد 6 ( الإنيّة والغيريّة )
+
+**المهام (verbatim, 6 puces)** :
+- أحدّد من خلال النص ما يعيق تحقيق السّعادة.
+- كيف أفهم قول الكاتب " لا تكون سعادة الإنسان في هذه الدنيا، إذن، غير حالة سلبيّة " ؟
+- يتحدّث الكاتب عن تقدير للسعادة، وفق أي معيارٍ يجري هذا التقدير؟
+- ما شروط تحصيل السعادة حسب روسّو؟
+- أفهم معنى " تقليل الفرق بين الرغبات والطاقات " شرطا للسعادة؟
+- إذا كان الألم يملأ حياتنا فهل يؤدّي ذلك إلى اليأس من السعادة؟
+
+---
+
+###### سند 15 — دوأولباخ / بارون دو أولباخ — « في مدح التقدم و الرفاه » — p.374-375
+
+- **Auteur tel qu'imprimé** : ⚠️ **trois formes dans le même سند** — la ligne d'attribution (p.374)
+  et l'encadré final (p.375) impriment **« دوأولباخ »** en **un seul mot** (vérifié par
+  agrandissement) ; la notice (p.375) est titrée **« بارون دو أولباخ »** en trois mots.
+  Ligne latine de source : **`Baron d'HOLBACH`** ; ⚠️ la parenthèse latine de la notice imprime
+  **`HOLBACH (Paul-Henri DIETRICH, Boron d')`** — **`Boron`**, non *Baron*. **Non corrigé.**
+- **Titre du سند** : **في مدح التقدم و الرفاه**
+- **Source** : دوأولباخ، نسق الطبيعة، الجزء الأول، الفصل 16. —
+  `Baron d'HOLBACH; Le système de la Nature, P I, chap. XVI`
+- **Illustrations** : (p.374) portrait gravé de d'Holbach ; (p.375) photomontage — un homme en
+  costume clair, bras écartés, **flottant en apesanteur** devant la Terre vue de l'espace.
+
+**التمهيد (verbatim)** :
+> إذا كان غنيّا عن البيان التأكيد على ما بذله الإنسان من جهود في اتجاه تحصيل المعارف والعلوم بما
+> ينزّله منزلة السّيادة على الطبيعة والعالم، فإنّه لا يمكننا أن ننكر أن هذا السعي الدائم للمعرفة
+> يوجّهه مطلب أساسي من داخل الذّات هو إدراك الرفاه سبيلا للسعادة.
+
+**Thèse (reformulée)** : l'homme a commencé par manger les fruits du chêne en disputant les glands
+aux bêtes, et il a fini par mesurer le mouvement des astres ; il a inventé le labour, la semaille,
+la géométrie ; il s'est couvert de peaux, et en quelques siècles s'est vêtu d'or et de soie ; il
+habitait grottes et troncs d'arbres, il est devenu ingénieur et bâtisseur de palais. Son activité
+industrieuse croît à mesure que ses **besoins se multiplient** : il est contraint de mettre sa
+raison au travail, et l'enchaînement des connaissances le conduit à la **découverte graduelle** de
+toutes les sciences et de tous les arts. Ainsi les savoirs qui ne répondaient pas à un besoin sont
+devenus nécessaires pour satisfaire une **curiosité née** de ce que rien ne peut rassasier l'homme
+tout entier. À toutes les étapes de ce parcours, l'homme est **poussé par sa nature** à améliorer
+sans cesse son sort et à accroître son **رفاه**. À ceux qui prétendent que le **sauvage** serait
+plus heureux que l'homme **civilisé**, il faut demander : **où serait donc son bonheur ?** Le
+sauvage est un enfant robuste mais privé de ressources, d'expérience, de raison et d'industrie ;
+il souffre en permanence de la faim et de la misère, il se trouve à chaque instant contraint de
+lutter contre les bêtes, il ne connaît d'autre loi que ses désirs, d'autres règles que ses
+impulsions du moment, d'autre droit que la force, d'autre vertu que la témérité — c'est un être
+impulsif, cruel, brutal, sans frein ni horizon, exposé à chaque instant à devenir victime de sa
+propre folie ou de la férocité de ses semblables. La notion de **vie sauvage**, ou d'**état de
+nature** vers lequel des rêveurs mélancoliques ont voulu ramener l'humanité et que les poètes ont
+chanté comme un **âge d'or**, n'est en vérité que le nom d'états de misère, de sottise et de folie.
+Nous ramener à ce stade, ce serait un **retour à l'enfance**, l'oubli de tout savoir et l'abandon
+de toutes les lumières que notre raison a su acquérir — et cela alors même que, hélas, notre raison
+ne s'est que **fort peu** développée, même chez les nations les plus civilisées.
+
+**هوامش** : **aucun encadré de notes.**
+
+**الكاتب** (p.375 — **notice pleine**, verbatim) :
+> **بارون دو أولباخ** : (1789-1723) — `HOLBACH (Paul-Henri DIETRICH, Boron d')` هو فيلسوف فرنسي
+> من أصل ألماني موسوعي ومادي النّزعة، كان صديقا لديدرو `Diderot`. ألّف كتاب " نظام الطبيعة "
+> وترجم آثار علميّة وفلسفيّة من اللاتينيّة والألمانيّة وغيرها. وهو أيضا جيولوجي وكيميائي. كان
+> يلتقي في صالونه الخاص بأبرز وجوه الفلسفة في عصره. مكّنته ثروته الكبيرة من الانصراف إلى التأليف
+> فساهم بـ 375 مقالا في موسوعة **ديدرو** (1751) وقد ترك إضافة إلى ذلك مراسلات عديدة في العلم
+> والفلسفة..
+
+⚠️ La notice arabe donne le titre du livre **« نظام الطبيعة »** alors que la ligne de source
+(p.374) donne **« نسق الطبيعة »** — deux traductions différentes du même titre dans le même سند.
+
+**المهام** (p.375 — verbatim, 5 puces) :
+- أتبيّن نمط عيش الإنسان البدائي، ثم أستخلص ما كان يعوزه للسير على درب التطور.
+- أكشف عن مكانة العقل والذكاء في الرفع من مستوى العيش.
+- أحدّد مميزات الحياة المتحضرة وأقارنها بمفهوم الحياة المتوحشة.
+- أي معنى يعطيه الكاتب للرفاه؟
+- الرفاه مولّد للسّعادة: أمتحن هذا التشريط في ضوء الحياة الراهنة.
+
+**Encadré de citation final** (p.375, verbatim) :
+> " ففي كل المراحل المتطورة والمتباعدة بعضها عن بعض يكون الإنسان مُوجّها بطبيعته، تحثّه باستمرار
+> على تحسين مصيره وجعله أكثر رفاه ".
+> — **دوأولباخ**
+
+###### سند 16 — حدود السعادة — p.376-377
+
+**التمهيد** (verbatim) :
+
+> إننا لا نفعل غير التذكير بشائع الآراء عند القول: إنّ الناس، كل الناس، يرغبون في السعادة، لكننا
+> أيضا قد لا نفعل غير تذكيرهم بواقع الحياة، عند التأكيد على ما يصادفونه من عوائق تنغص عليهم، فإذا
+> هم في التعاسة أو يشارفون، بحيث لا مناص لهم إلاّ الطمع في التردد بين هذه وتلك، وضع تقاوم فيه
+> الذات متى تألمت، وآخر تسعد فيه متى استمتعت.
+
+**Référence imprimée** : سغموند فرويد، قلق في الحضارة —
+`Sigmund FREUD, Malaise dans la civilisation, 1929, Puf.1971.`
+
+**Thèse (reformulée)** : ce que les hommes demandent à la vie, c'est **le bonheur** — et ce but a
+deux versants, l'un **négatif** (éviter la douleur et le déplaisir), l'autre **positif** (éprouver
+des jouissances intenses) ; au sens étroit, « bonheur » ne désigne que le second. Or ce programme
+est **irréalisable** : rien dans l'ordre du monde ne prévoit que l'homme soit « heureux ». Le
+plaisir naît d'une satisfaction **brusque** d'un besoin accumulé, donc par nature **épisodique** ;
+sa continuation ne donne qu'un contentement tiède. Nos possibilités de bonheur sont **limitées par
+notre constitution même**. Le malheur, lui, est bien plus facile à éprouver : il nous menace de
+**trois côtés** — notre **corps**, voué au déclin, qui ne peut se passer de la douleur et de
+l'angoisse ; le **monde extérieur**, force implacable et destructrice ; et surtout nos **relations
+aux autres hommes** — cette dernière souffrance étant peut-être ressentie comme la plus cruelle,
+bien qu'on tende à la considérer comme secondaire.
+
+**Pas d'encadré الهامش sur ce سند** (constaté).
+
+**الكاتب** — ⚠️ **RENVOI, pas une notice** : le manuel imprime
+« **سغموند فرويد : راجع التعريف بفرويد في السند عدد 24 (الإنيّة والغيرية)** ».
+
+> ⚠️ Ce renvoi pointe vers le **مبحث 1.1**, **non encore transcrit**. La génération ne pourra pas
+> le résoudre tant que ce chapitre ne l'est pas.
+
+**المهامّ** (verbatim) :
+
+- أحدّد جواب الكاتب عن السؤال الذي طرحه في بداية النص.
+- يتحدث الكاتب عن أهداف لطموح الإنسان ينم عنها بسلوكه. أكشفها وأتبين هل من فارق بينها؟
+- يربط الكاتب السّعادة باللّذة، أتبيّن في ضوء هذا الاقتران العوائق التي تحول دون سعادة الإنسان.
+- يعتبر الكاتب " أنّ ملكات سعادتنا محدودة أساسا بتكويننا "، أكشف عن أسباب هذه المحدودية باستثمار مكتسباتي من التحليل النفسي.
+- " إنّه أيسر علينا بكثير أن نحيا تجربة التعاسة "، أحدد دلالة هذا القول وأتبيّن علاقة السّعادة بالألم.
+- أرصد مبررات اعتبار الحضارة عائقا أمام تحقيق السّعادة. هل في هذا القول ما يفيد اليأس من السعادة؟
+
+**Encadré-citation (p.377)** : « لم يدخل في خطة " الخلق " البتة أن يكون الإنسان سعيدا » — **فرويد**.
+
+**Illustrations** : p.376 — portrait photographique de Freud. p.377 — photographie en couleurs
+saturées d'un homme la main sur le visage, l'air accablé.
+
+###### سند 17 — في السعادة الجديدة — p.378-379
+
+**التمهيد** (verbatim) :
+
+> كثيرا ما تعرف الحضارة المعاصرة بما هي حضارة الوفرة والرفاه، لكل فيها حظ، لكأنّ الإنسان المعاصر
+> حقق ما سعى إليه الأوائل وعجزوا عن تحقيقه، وكأنّ ما كان يعدّ مثلا أعلى غدا واقعا متعيّنا، ذاك ما
+> تظهره صورة المجتمع المعاصر، صورة سرعان ما تتهاوى، حين نتجاوز السطح، لتنكشف صورة قاتمة تبدو من
+> خلالها الحقائق أوهاما، والانتصارات انكسارات.
+
+**Référence imprimée** : جان بودريار، المجتمع الاستهلاكي —
+`Jean BEAUDRILLARD, la société de consommation (1970), Gallimard, coll, Idees 1976; pp 59-61`
+*(graphie « BEAUDRILLARD » telle qu'imprimée — [sic], l'usage étant « BAUDRILLARD ».)*
+
+**Thèse (reformulée)** : la charge idéologique du mot « bonheur » ne vient pas d'un penchant
+naturel de chacun à le rechercher, mais du fait que, **sur le plan socio-historique**, le mythe du
+bonheur **recueille et incarne le mythe de l'Égalité** dans les sociétés modernes — toute la fièvre
+politique et sociale depuis la révolution industrielle a été convertie en bonheur. D'où une
+exigence redoutable : pour porter le mythe de l'égalité, **le bonheur doit être mesurable** — un
+bien-être mesurable par des objets et des signes. Le bonheur **intérieur**, celui qui n'a pas
+besoin de preuves visibles, est donc d'emblée **exclu** de l'idéal consumériste ; il faut qu'il
+« se signifie » selon des critères visibles. De même il est écarté de toute fête ou ferveur
+collective, car il s'adosse aux principes individualistes de la Déclaration des droits de l'homme,
+qui reconnaît explicitement le droit de **chacun** au bonheur. La « révolution du bien-être » est
+l'héritière de la révolution bourgeoise : ayant posé le principe d'égalité sans pouvoir le
+réaliser, elle a converti le principe **démocratique** — égalité réelle, capacités,
+responsabilités, chances sociales — en **égalité devant l'objet**. C'est une démocratie de la
+télévision, de la voiture et de la chaîne stéréo : démocratie apparente et **formelle**, qui masque
+l'absence de la démocratie réelle et de l'égalité perdue.
+
+**الهامشان** (verbatim) :
+
+> 1 — **توكفيل** : `Alexis de Tocqueville (1805-1853)` فيلسوف فرنسي، عرف بدفاعه عن الفكر
+> الأرستقراطي، وبتأثره بالتجربة الديمقراطية الأمريكية، وبتأكيده على قيم الفردانية التي يميزها عن
+> الأنانية.
+> 2 — **لائحة حقوق الإنسان** : جملة المبادئ التي أقرها المجلس التأسيسي لسنة 1789 بفرنسا (أنظر نص
+> ماركس الوارد في مسألة الدولة: السيادة والمواطنة)
+
+> ⚠️ Le هامش 2 **renvoie au مبحث 3.1**, سند 15 (ماركس, p.305) — renvoi inter-chapitres imprimé,
+> celui-ci résoluble puisque le chapitre est transcrit.
+> ⚠️ Les dates de Tocqueville sont imprimées **`(1805-1853)`** — l'usage donne 1805-1859. Recopié
+> tel quel, à ne pas « corriger » en génération, et à ne pas transformer en question.
+
+**الكاتب** — ⚠️ **RENVOI** : « **جان بودريار: راجع التعريف ببودريار في السند عدد 22 (الإنيّة
+والغيريّة)** » → **مبحث 1.1, non encore transcrit.**
+
+**المهامّ** (verbatim) :
+
+- أتبيّن الدلالة الإيديولوجية للسّعادة في المجتمع المعاصر.
+- أي تحديد للسّعادة يتمّ إقصاؤه في حضارة الاستهلاك؟
+- هل يمكن اختزال السّعادة في ما تروّجه الحضارة المعاصرة من علامات؟
+- هل تؤمّن الحضارة المعاصرة حقّ الإنسان في السّعادة؟
+- أتبيّن العلاقة بين صورة السّعادة والديمقراطية الغائبة والمساواة المفقودة؟
+- أستخلص قيمة السّعادة اليوم وسبيل تحقيقها. أحرر فقرة في الغرض.
+
+**Encadré-citation (p.379)** : « لكي تكون حاملة أسطورة المساواة، يجب أن تكون السّعادة قابلة للقيس.
+ويجب أن تكون رغد عيش قابلا للقيس بواسطة أشياء وعلامات، ورفاها » — **بودريار**.
+
+**Illustrations** : p.378 — portrait photographique de Baudrillard. p.379 — photographie d'un homme
+avachi dans un fauteuil devant un téléviseur, d'où jaillit une gerbe de friandises et d'emballages.
+
+###### سند 18 — الحريّة السعيدة — p.380-381
+
+**التمهيد** (verbatim) :
+
+> اعتاد الناس على طلب الخير نشدانا للسعادة لكأنها لا تفهم إلا في سياق هذا الاقتران، أمر قد لا
+> يحافظ على بداهته حالما نفكر في وضع للإنسان يكون فيه فاقدا لحريته، مما قد يبرر مساءلة السعادة من
+> جهة علاقتها بالحرية.
+
+**Référence imprimée** : روبير مسراهي؛ مقالة في السعادة، 2: الإيتيقا والسياسة والسعادة —
+`Robert Misrahi, Traité du bonheur, II Ethique, politique et bonheur, éd. seuil, Paris p-281-282`
+
+**Thèse (reformulée)** : une société du **bonheur libre** ne décrète pas de façon autoritaire et
+sélective l'encouragement d'une culture positive ; elle **décide librement**, selon une logique
+interne, de se constituer comme société de **liberté et de joie**. Elle exprime alors par sa culture
+un désir de joie, la découverte des voies qui peuvent y mener, et les visages que prend le bien
+dans chaque circonstance — car la culture est, pour nous, l'expression du désir le plus profond.
+Une culture **fataliste et tragique** traduit un désir de mort ; une société **libérée** traduira
+sa lutte contre la mort, la guerre et la servitude, et cherchera en même temps sa liberté agissante
+et sa capacité de construire — toujours sous des formes multiples, imprévues, plus riches dans le
+réel effectif que dans le discours. Ce **glorieux absolu**, l'auteur l'appelle aussi la **vie vraie**.
+
+**Pas d'encadré الهامش sur ce سند** (constaté).
+
+**الكاتب** (notice, verbatim resserré) : **روبار مسراهي (1926)** — فيلسوف فرنسي من أصل تركي تحصّل
+على شهادة التبريز بعد أن تابع دروس « **جانكليفيتش** » و« **بشلار** » و« **مرلوبونتي** ». درّس طيلة
+ثلاثين سنة في جامعة باريس الأولى وتميّز بنزعة لائكية وبدفاعه على الحرية كما عرف بكتاباته حول
+سبينوزا وخاصة علم الأخلاق (1990). ومن بين أهم مؤلّفاته « **مقالة في السعادة** » (1981-1983) وقد
+صدر في جزئين قدّم فيهما نظريّة تؤسس لإيتيقا الحرية السعيدة في علاقة بالإنسان بما هو حرية ورغبة،
+كما ألّف « **الوجود والديمقراطية** » (1995) والذي نقد فيه بشكل جذري التصورات التقليدية حول الفرد
+والسياسة.
+
+> ⚠️ Graphie du nom **flottante dans le même chapitre** : « **مسراهي** » au titre du سند et à la
+> citation, « **روبار مسراهي** » à la notice, « **روبير مسراهي** » à la référence bibliographique.
+> ⚠️ **مسراهي apparaît deux fois dans le chapitre** : il est aussi la 2ᵉ وضعيّة استكشافيّة (p.350).
+> Le manuel **ne relie pas explicitement** les deux textes.
+> ⚠️ **بشلار** est ici orthographié ainsi (et non « باشلار ») — cohérent avec la p.257 du مبحث 2,
+> divergent de la graphie retenue par le cours du chapitre 03. À trancher au moment de générer.
+
+**المهامّ** (verbatim) :
+
+- أحدد دلالة الثقافة وأشكالها حسب الكاتب.
+- وفق أي منطق يقرر المجتمع إنشاء ثقافة السّعادة؟
+- بأي معنى نفهم أن الظرف محدد للخير؟
+- ما هي أشكال تعبير المجتمع المتحرر عن ثقافة السعادة؟
+- أي معنى أعطيه للحياة الحقيقية؟
+
+**Encadré-citation (p.381)** : « إنّ المجتمع سيقرّر أن يتشكل بما هو مجتمع حرية وفرح، يقرر بحرية وفق
+منطق داخلي؛ فيعبر من خلال ثقافته عن رغبة في الفرح » — **مسراهي**.
+
+**Illustrations** : p.380 — portrait photographique de Misrahi. p.381 — photographie d'une femme
+en robe blanche bondissant sur une plage.
+
+> ✅ **Fin de la نافذة سندات du مبحث 3.2** : 18 سندات, p.352-381.
+> ⚠️ **Deux notices d'auteur sur trois sont des RENVOIS au مبحث 1.1** (سند 16 → سند 24 ; سند 17 →
+> سند 22), chapitre **non transcrit** : ces deux renvois resteront irrésolus jusque-là.
+
+##### 3.2.3 نافذة دعائم للتفكير في المسألة — p.382-396
+
+> **Pages lues** : p.382–396 (intégral). **Source** : manuel élève `210402` (CNP,
+> `210402P00.pdf`), مبحث 3.2 « الأخلاق : الخير والسّعادة ». Images de travail : rendu 150 dpi,
+> passages douteux revérifiés à 300 dpi.
+
+**p.382 — page d'ouverture de la نافذة.** Titre imprimé sur deux lignes :
+**نافذة دعائم** / **للتفكير في المسألة**. Image : une pile de livres à couverture orange vif,
+une paire de lunettes rondes posée dessus, sur un fond de feuillage. Encadré-citation
+(verbatim) :
+
+> « وفيما نحن نسأل : **القيم إلى أين ؟** لا يمكننا أن نتجاهل السّؤال الآخر : ماالذي سنصنعه نحن
+> بالقيم ؟ إنّ **التهيّؤ للمستقبل يتطلّب بلورة أخلاقيّات من أجل المستقبل**، أخلاقيّات
+> للزمن… إنّها **الأخلاقيّات هنا والآن**، لكي يبقى هناك فيما بعد هنا والآن. »
+> — ▲ **جييروم بندي**, *القيم إلى أين؟*
+
+Sommaire imprimé en bas de page — **deux entrées numérotées seulement** :
+**1 — تحديدات وتمييزات مفهوميّة** · **2 — سياقات فكريّة**.
+
+⚠️ **Écart avec le فهرس (à retenir)** : le sommaire de la page d'ouverture **n'annonce pas** de
+troisième entrée « كيفيّات التفكير ». Voir le § *Écart فهرس / pages imprimées* en fin de tranche.
+
+---
+
+###### 3.2.3.1 تحديدات وتمييزات مفهوميّة — p.383-388
+
+Deux concepts sont définis : **الآداب** (p.383-384) et **الإيتيقا** (p.385-388). Bandeau de tête
+imprimé en haut de chaque page : **نافذة دعائم للتفكير في المسألة**, puis le sous-titre en
+encadré crème **: تحديدات و تمييزات مفهوميّة**.
+
+⚠️ **Le gabarit n'est PAS celui du مبحث 2.** Ici il n'y a que **deux** entrées, pas trois :
+**■ لغة** puis **■ فلسفيا** — **il n'y a aucune rubrique « اصطلاحا »** (alors que الواقع et
+البراديغم, p.252-255, en avaient une). La rubrique **« ■ قيل في … »** existe bien, en revanche,
+et clôt chacun des deux concepts. Le titre de chaque concept est imprimé dans un cartouche rouge
+avec, à côté, un cartouche bleu portant l'équivalent latin : **1– الآداب** `Mœurs` ·
+**2– الإيتيقا** `Éthique`.
+
+**1 — الآداب · `Mœurs` — p.383-384**
+
+**■ لغة (verbatim, intégral)** :
+
+> **الآداب** جمع **أدب** من **أدب يأدب** وتعني **حسن التربيّة والأخلاق**. ويُستعمل اللفظ
+> للدلالة على **معان عدّة** ؛ فيُقال **أدب الكلام**، و**أدب الطّعام**، ويُقصد به **ما يُستحسن
+> في طريقة الكلام والطّعام**…
+
+**■ فلسفيا (verbatim, intégral — c'est la définition officielle du concept)** :
+
+> تُطلق عبارة **الآداب** للدلالة على « **الآداب العامّة** » وتدلّ (`Moeurs`) في اللسان الفرنسي
+> على **طريقة في الوجود والفعل والإحساس والتفكير**. وهي، من منظور أخلاقي صرف، **طريقة في
+> التصرّف وفق ضوابط أخلاقيّة مسلّم بها في وسط اجتماعي معيّن**، وتكون « **آدابا حسنة** » و
+> « **آداب سيّئة** » ؛. وتمثّل الآداب، حين تتصل **بشعب أو بفرد**، **خاصيّة مميّزة له**.
+
+Suite de l'entrée (p.383, colonne de droite puis colonne de gauche) — les **quatre thèses** que
+le manuel tire de cette définition :
+
+1. **La non-homogénéité des mœurs (لا تجانس الآداب)** — « يؤكّد هذا التحديد الأوّل على **لا
+   تجانس الآداب** ». Exemples imprimés : **تاسيت** `Tacite` parle des « **آداب الجرمانيين** »,
+   **لابروويار** `La Bruyère` des « **طبائع أو آداب هذا القرن** » ; et le contraste
+   ethnographique : nous sourions pour exprimer notre joie d'accueillir un visiteur, alors que
+   les **التيبيينبا** `Tupinamba` (« سكّان "تيبي" بالبرازيل ») l'expriment **بالبكاء**.
+2. **Deux relativismes en chaîne** :
+   - **نسبيّة اتنوغرافيّة، نوعا ما ريبيّة** — les voyageurs (الرحّالة) puis les
+     **الإتنولوجيون** y ont conclu en mesurant l'écart des mœurs entre les nations. Formule
+     de **باسكال** `Pascal` citée verbatim par le manuel :
+     > « **حقيقة من ناحية البيريني، خطأ من ورائه** »
+   - **نسبيّة تاريخية أو بالأحرى تاريخانيّة** — « **فآداب معاصرينا ليست آداب أجدادنا** » ; chez
+     les **اللاتينيين**, ce qui passe aujourd'hui pour un **انحلال أخلاقي** est mis en regard
+     des **آداب الأجداد**.
+   - **À l'inverse, dans une perspective évolutionniste** (« ومن منظور تطوّري ( هيمن طويلا
+     بموجب ارتباطه **بفكرة التّقدّم** ) ») : les mœurs des **الشّعوب المتحضّرة** sont **أكثر
+     رقّة وأكثر « إنسانيّة » من آداب الأوّلين البربريّة** — exemples imprimés : la
+     **monogamie (الزّواج الأحاديّ)** comme progrès par rapport à la **polygamie (تعدّد
+     الزّوجات)** ; la **soumission et la dépendance (الخنوع والتبعيّة)** qui caractérisaient le
+     rapport du **الإقطاعي** à ses **فلاّحين**, rangées parmi les **الآداب السّخيفة** que
+     l'homme contemporain a dépassées avec les **أفكار مسبّقة** qui les fondaient.
+3. **الآداب ≠ الأخلاق de la philosophie ancienne** — « وتجدر الملاحظة أنّ **الآداب** حينما تكون
+   **ممارسة عارضة خاصّة وظرفيّة**، فإنّها **لا تملك أيّة خاصيّة ممّا تسنده الفلسفة القديمة
+   للأخلاق** ». Illustration explicite : **فلا علاقة للآداب مثلا بـ« الأمر القطعي » عند كانط**.
+4. **La distinction de ليفي بريل — le couple structurant de la page (verbatim)** :
+
+   > وعلى أساس هذه الملاحظة أقام **ليفي بريل** `Lévy - Bruhl` **تقابلا جوهريّا** بين
+   > « **المابعد أخلاق** » (`Métamorales`) أو « **الأخلاق النظريّة** » التي تبحث عن « **تأسيس**
+   > » قواعد السّلوك على **مبادئ عامّة ما قبليّة وصوريّة**، وبين « **علم الآداب** » الذي يُعنى
+   > **بالشروط الموضوعيّة العينيّة للتجربة الأخلاقيّة**، أو هو **الدراسة الاجتماعيّة والوضعيّة
+   > للآداب** من حيث هي **آداب أخلاقيّة تنظّم مجتمعا معيّنا**.
+
+   ⇒ **المابعد أخلاق / الأخلاق النظريّة** (fondation *a priori*, formelle, universelle) **≠**
+   **علم الآداب** (étude sociale et positive des conditions objectives et concrètes).
+
+5. **La lecture classique — les mœurs comme « règles de vie » (p.383-384)** : à cette
+   signification des mœurs *comme principes moraux* s'en ajoute une autre, élaborée par les
+   **الفلاسفة الكلاسيكيون** — **أفلاطون**, **منتسكيو**, **هيغل** : les mœurs ne sont pas
+   **مجموعا شاذّا غريبا من الممارسات الاعتباطيّة**, elles sont l'ensemble des
+   « **قواعد حياة** » qui aident l'individu à maintenir **تفاوتا مناسبا بين مختلف نشاطاته**,
+   l'empêchent de **الاستسلام للأهواء** ou de **يتيه في حريّة موهومة**, et assurent en même
+   temps **الأمن والانسجام بين الأفراد والجماعات التي تكوّن المجتمع**. D'où l'interdit de
+   lecture posé par le manuel : **« فيجب ألاّ ننظر إلى الآداب بصفتها مجموع غير منسجم من العادات
+   الغريبة. إنّها تمثّل شروط الحياة الفاضلة »**.
+
+**La distinction décisive de la page — الفضيلة ≠ الآداب (p.384, verbatim)** :
+
+> غير أنّه **يجب أن نميّز الفضيلة عن الآداب**، رغم أنّنا **نحكم على الآداب في علاقتها
+> بالفضيلة**. إذ **يمكن للآداب أن تكون سيّئة** حينما **لا تقوم على قصد سليم** أو كانت **لغاية
+> السيطرة والتملّك**، فهي بهذا **تتعارض مع الفضيلة**، **والآداب الحسنة لا تتطابق مع الفضيلة**،
+> فهي **تقتصر على تطابق بين تصرّف ونموذج ما**، أمّا **الفضيلة فليست مجرّد استعداد للقيام
+> بأفعال**، إنّما **تقوم على الذّكاء والدقّة أي القدرة على الاختيار**.
+
+⇒ Le manuel rattache aussitôt cette conception : **« وهذا هو التصوّر الذي وسّعه أرسطو والذي سبق
+أن أكّد عليه أفلاطون، وهو ما سمّاه الفارابي بالتعقّل »**.
+
+| Ce qui est distingué | الآداب (même « حسنة ») | الفضيلة |
+| --- | --- | --- |
+| Ce en quoi elle consiste | **تطابق بين تصرّف ونموذج ما** | **الذّكاء والدقّة أي القدرة على الاختيار** |
+| Statut | **استعداد / ممارسة** conforme | **ليست مجرّد استعداد للقيام بأفعال** |
+| Peut être mauvaise ? | **oui** (قصد غير سليم · غاية السيطرة والتملّك) | non — c'est le critère du jugement porté sur les mœurs |
+| Noms rattachés | — | **أرسطو** (وسّعه) · **أفلاطون** (سبق أن أكّد عليه) · **الفارابي** (سمّاه **التعقّل**) |
+
+**■ قيل في الآداب (p.384, verbatim — 3 encadrés de citation)** :
+
+| Auteur (tel qu'imprimé) | Citation |
+| --- | --- |
+| **كورنو** | « في **المفهوم الأوسع للكلمة** تشتمل الآداب على **كلّ ما يكاد يتّصل بالاتنولوجيا**، لكننا **لا نعني هنا بالآداب إلاّ ما هو في نظام الوقائع المألوفة والغريزيّة مقابلا في نظام الأفكار** ». |
+| *(sans nom imprimé — la citation suit immédiatement celle de كورنو)* | « إنّ **التشريفات المخفّفة للشيخوخة** و**احترام الضيافة** و**تكافل اعضاء الأسرة** `[sic — sans hamza]` هي **سمات من الآداب المتعلّقة تعلّقا واضحا ببعض الأفكار الأخلاقيّة** ». |
+| **جون جوبار** | « **تتكوّن الآداب من عادات وتقاليد. تصنع التقاليد الآداب العامّة وتصنع العادات الآداب الخاصّة** ». |
+
+Illustration p.384 (bas de page, pleine largeur, sans légende imprimée) : peinture — un vieil
+homme coiffé d'un chapeau et une fillette en robe claire portant ensemble un seau, dans un
+sous-bois sombre.
+
+**2 — الإيتيقا · `Ethique` — p.385-388**
+
+**■ لغة (verbatim, intégral)** :
+
+> عبارة من **أصل إغريقي** `Ethikos` من `Ethos` التي تعني **سلوكا أو عادة**، وكان **أرسطو أوّل
+> من أدمجها في اللغة الفلسفية**، إذ كان أوّل من تحدّث عن « **إيتيقا نظريّة** » في **التحليلات
+> الثانية**، وتعني **الفرع من الفلسفة الذي يهتمّ بدراسة تصرّف الإنسان، والمعايير الأساسيّة
+> لتقييم السّلوكات والإختيارات**.
+
+**■ فلسفيّا (verbatim — définition officielle + les trois distinctions qu'elle porte)** :
+
+> **الإيتيقا فرع من الفلسفة موضوعه الأحكام القيمية المتعلّقة بالتمييز بين الخير والشرّ**.
+> وتكون **نظريّة ومتّصلة في الغالب ببحث ميتافيزيقي** ( خاصة مع **كانط** )، وتتميّز عن
+> « **الإيتيقا المطبّقة** » التي تعنى **بالبحث عن نتائج النظريات الإيتيقية في ظروف معطاة**.
+
+Puis, dans le même paragraphe (p.385) — ce que la philosophie fait, et **ne se contente pas** de
+faire : si la philosophie, dans son souci éthique, s'est surtout intéressée à **وصف السّلوك
+الأخلاقي والقيم التي توجّهه**, « **فإنّها لم تكتف بذلك، إذ عملت على توفير علامات عن المعايير
+والقيم التي يجب احترامها في الفعل** ».
+
+**Les trois distinctions explicites de l'entrée (c'est le cœur testable)** :
+
+| # | Distinction | Ce que le manuel en dit (verbatim resserré) |
+| --- | --- | --- |
+| 1 | **الإيتيقا (النظريّة) ≠ الإيتيقا المطبّقة** | l'éthique est **نظريّة ومتّصلة في الغالب ببحث ميتافيزيقي** (خاصة مع كانط) ; l'éthique **appliquée** « تعنى بالبحث عن **نتائج النظريات الإيتيقية في ظروف معطاة** ». |
+| 2 | **طابع وصفي ≠ طابع معياري** (à l'intérieur de l'éthique) | « ويمكن أن نميّز في **الإيتيقا** بين **طابع وصفي وطابع معياري** ؛ **غير أنّ هذا التمييز هو تمييز منهجي فحسب**، لأنّ **النظريّات الإيتيقية الفلسفية في الواقع تخلط دوما بين هذين الطّابعين** ». ⚠️ distinction **méthodique seulement**, pas réelle. |
+| 3 | **الإيتيقا ≠ الأخلاقيّة `Moralité`** — **la distinction de هيغل** | « ويمكن أن نضيف **تمييزا منهجيّا آخر** : تمييز **الإيتيقا** عن **الأخلاقيّة** `Moralité`، وهو **التمييز الذي أقرّه هيغل في كتابه "مبادئ فلسفة الحقّ"** ؛ حيث ذهب إلى أنّ **الأخلاقية تشير إلى الطابع الذاتي للسلوك**، مثال ذلك **نيّة الذات واستعدادها الداخلي** ؛ في حين أنّ **الإيتيقا تشير إلى مجموع القيم الأخلاقية الفاعلة في التاريخ** ( **وتعدّ المؤسّسات مثل الأسرة والمجتمع المدني والدولة لدى هيغل، أشكالا من الإيتيقا** ) ». |
+
+⇒ Récapitulatif de la distinction hégélienne, telle qu'imprimée :
+
+| | **الأخلاقيّة** `Moralité` | **الإيتيقا** |
+| --- | --- | --- |
+| Ce qu'elle vise | **الطابع الذاتي للسلوك** | **مجموع القيم الأخلاقية الفاعلة في التاريخ** |
+| Exemple imprimé | **نيّة الذات واستعدادها الداخلي** | **المؤسّسات** : **الأسرة**, **المجتمع المدني**, **الدولة** |
+
+**L'histoire de l'éthique telle que le manuel la découpe (p.385-387)** — « أمّا في خصوص **نشأة
+الإيتيقا** … ». C'est un récit continu, en huit temps :
+
+1. **سقراط والسفسطائيون — l'origine (p.385)** : « يمكن اعتبار **سقراط والسفسطائيين أوّل من طرح
+   المشكل الأخلاقي في دلالة فلسفية في القرن الخامس ق.م.** », **نتيجة صعود طبقة من أثرياء
+   التجارة هيمنت على طبقة النبلاء الذين لهم حقّ النبالة بالوراثة**. Le point d'appui lexical
+   imprimé : **« أغاتوس »** (`agathos`) signifie en grec à la fois **الخير والنبيل**, et
+   **« أريت »** (`arete`) signifie **إمّا الفضيلة أو النبل بالدم والوراثة** — « وهذه **مطابقات
+   غير بديهية** لدى الفلاسفة في القرن 5 ق.م. ».
+2. **Le partage السفسطائيون / سقراط وأفلاطون (p.385)** — l'opposition la plus nette de la page :
+   - **السفسطائيون** défendent que **la vertu s'apprend (تعلّم الفضيلة)** parce qu'elle consiste
+     en **مجموع قواعد تقنية للحياة في المجتمع** ; le critère de légitimité n'est donc **pas la
+     noblesse héréditaire** mais **الوظيفة الإجتماعية للسلوكات وما تضمنه من نجاحات**.
+   - **سقراط وأفلاطون**, à l'inverse de cette légitimité **مرتبطة بالظروف وبعوامل عرضية (الغنى
+     والحظّ وحذق صناعة الخطابة)**, exigent **وضع معايير أخلاقية على أسس ثابتة يقينية : أفكار
+     بفضلها يتعرّف كلّ إنسان عاقل على العادل والجائر**.
+   - Nuance imprimée sur **أفلاطون** : il reste attentif au lien vertu/politique souligné par les
+     sophistes, **jusqu'à admettre que « الفضائل ليست في متناول الجميع فلكلّ فضيلة ما يناسبها من
+     الوظيفة الإجتماعية »** ; mais le critère du bien reste lié **بالأفكار أو المثل** donc
+     **ثابتا بثباتها**, et **الخير الأسمى للإنسان أن يترفّع بتأمّل المثل دون غايات عمليّة**.
+   - **Postérité imprimée de la thèse platonicienne** : elle a été **منطلقا لنزعة صوفية أو
+     زهدية** ; on en trouve la trace **في الفلسفة الإسلامية لدى الفارابي وابن سينا وفي الفلسفة
+     المشرقية لدى ابن طفيل وابن باجة**…
+3. **أرسطو — la fondation sur la nature (p.386)** : si **أفلاطون** avait fondé l'éthique
+   **على شاكلة الرياضيات**, **أرسطو** « **أقرّ بوضوح بأنّ الإيتيقا لا يمكن أن تماثل الرياضيات في
+   دقّتها** » et a bâti sa théorie **في صلة بالعادات والتقاليد الموجودة والمؤسّسات السياسية**.
+   Son critère n'est **ni** l'efficacité pratique et politique de la conduite (les sophistes)
+   **ni** la structure métaphysique de l'être (Platon), mais **مبدأ يجب البحث عنه في
+   الإستعدادات والملكات التي لدى البشر بالطبع**. D'où (verbatim) :
+   > وهكذا **وللأوّل مرّة تتأسّس الإيتيقا على الطبيعة** في معنى إمّا **المبدأ الداخلي** الذي
+   > يحرّك كلّ فرد أو **نظام الكسموس** الذي يحكم حركته وميولاته.
+
+   Corollaire imprimé : **العقل** étant **أرفع الملكات لدى البشر**, « فإنّ **الخير الأسمى
+   والكمال والسعادة تتمثّل في استخدامه، أي في فعل التعقّل** وبخاصّة **تعقّل ما هو أسمى وجدير أي
+   الإله ذاته** ». Ce que cette fondation résout : **مشكل عدم التمييز بين شرعية ميتافيزيقية وبين
+   شرعية مدنية–سياسية لأخلاقية السلوك** — « المشكلات التي عجز عن حلّها المفكّرون قبله ؛
+   (**أفلاطون** بالذات) ».
+4. **Après la cité — الرواقيّون / الأبيقوريّون (p.386)** : la fin de la **المدينة القديمة** et
+   la naissance des empires (**إمبراطورية الإسكندر الأكبر** puis **الإمبراطورية الرومانية**)
+   mettent l'éthique en position de chercher sa légitimité **في الجماعة السياسية** ; mais
+   **الطبيعة** reste une référence décisive.
+   - **الرواقيّون** : la vertu, c'est **أن نحيا وفق الطبيعة**, la nature restant **نظاما صارما
+     مرتبطا بعلاقات الضرورة التي لا يمكن الإنفلات عنها** ; d'où un **مثل أعلى إيتيقي** qui durera
+     **حتّى سبينوزا** — lequel « حافظ على معنى **إيتيقا كونية تتّجه إلى الإنسانية** على طريقة
+     **ابيكتات** و**شيشرون** ».
+   - **الأبيقوريّة** : garde le principe de nature **ولكن لا بمعنى النظام وإنّما لعبة قوى
+     اعتباطية لا ينتظر منها الإنسان ثوابا ولا عقابا** ; d'où **« البحث عن اللّذة هو الحكمة
+     الوحيدة »**, et le principe éthique épicurien : **غياب الإضطرابات أي السكينة**.
+5. **L'entrée dans l'éthique moderne (p.386)** : elle commence **حينما انفصلت عن الكلّيات
+   الشاملة التي تضمن الشرعية** et qu'apparaît **تصوّر جديد للفرد** (« تشهد بهذا أعمال
+   **مونتانيو** مثلا ») ; la conduite morale devient justiciable d'une analyse qui découvre
+   **الحركات المتخفيّة** porteuses d'un **خطاب إيتيقي ممكن**. **الإيتيقا الحديثة متجذرة في
+   الواقع**, elle cherche **غايات بنّاءة للإلتزام الإنساني**. Son problème propre :
+   **العلاقة بين القانون الأخلاقي والقانون الوضعي، أو بين الطبيعة والمجتمع**.
+6. **الحقّ الطبيعي · هوبس · لوك · روسو (p.386-387)** :
+   - **مذهب الحقّ الطبيعي** fait de la nature **أصلا لقانون فوق القوانين الوضعية، وأساسا
+     لتطوّرها**.
+   - **هوبس** : la loi est à l'origine **اختراع بشري وضعه الإنسان في حساب المنافع والمضار** ; en
+     tenant la conduite humaine pour mue par **غريزة أساسية**, l'éthique pourrait décrire ce que
+     l'homme doit suivre **كما تقدر الفيزياء على وصف حركة الأجسام**.
+   - **لوك** : une éthique **أقلّ صرامة**, liée aux **تجارب اللّذة والألم المشروطة بالمجتمع
+     والثقافة**.
+   - **روسو** : il rapporte **الفساد لا إلى طبيعة البشر بل إلى نشأة المجتمع وحقّ الملكية** —
+     « بهذا **تردّ الإيتيقا من جديد إلى الطبيعة كما كانت منذ أرسطو ولكن دون أن يكون الإنسان
+     حيوانا سياسيا** ؛ ذلك أنّ **حالة المدنيّة هي الأصل في الفساد والشرّ** ». La distinction
+     nature/société y recouvre l'opposition **قانون الطبيعة ≠ القوانين الوضعية التي تضعها الدولة
+     والتي تختلف حسب الأماكن والأزمان**.
+7. **كانط — la charnière (p.387)** : « **ومن هذه الزاوية بالذات يستفيد كانط من روسو في بناء
+   إيتيقا مغلقة دشّنت العصر الحديث وفتحت الباب لمرحلة معاصرة طرحت فيها قضايا جديدة** ». Par
+   **القول بالطابع الصوري للأمر الأخلاقي** il pousse **à son maximum** la distinction loi de la
+   nature / loi positive ; et par ses théories **في الجمال وفلسفة التاريخ** il inaugure
+   **التفكير الإيتيقي المعاصر** — celui **الذي لا يشغله التمييز بين الطبيعة والمجتمع وإنّما
+   علاقة الإيتيقا بالتاريخ**.
+8. **La crise contemporaine (p.387)** — quatre coups portés, dans l'ordre imprimé :
+   - **الوضعيّون** (**كونت**, **دوركايم**…) et **الماركسية**, qui introduit l'élément ouvrant
+     « **أزمة عامّة** » : **الأيديولوجيا**.
+   - **نيتشه**, dans **« جينيالوجيا الأخلاق »** : il réduit les catégories majeures de l'éthique
+     — **الخيّر والسيّء، العادل والجائر** — à des **علاقات قوّة ليست إجتماعية بالضرورة بل هي
+     فاعلة من داخل الفرد** ; l'individu est **مجال لصراعات ودوافع متناقضة**, et
+     **« ليس الوعي إلاّ حاصل هذه الصراعات »**.
+   - **التحليل النفسي**, dans le même horizon : le tournant a eu **أثره الحاسم على الإيتيقا**
+     car il l'a menée à **ذوبانها بغياب الذات القادرة على الإختيار الأخلاقي** — « فالفرد المسؤول
+     الذي يقصده الأمر الأخلاقي **أضحى غير قابل للإمساك به** ».
+   - **La riposte** : défendre **مجال التجربة الخلقية** — glosé en marge **( مجال الإعتراف
+     الداخلي بالقيم )** — comme **لا يمكن عزله عن حرّية الفرد**. Elle se lit dans
+     **الحوار القائم في بداية القرن 20** entre **العلوم الإنسانية** (**ديلتاي**, **ريكور**,
+     **جورج سيمال**…) et **فلسفة القيم وحدسية برجسون** — « التي تدعّمت مع **"ج.مور"** ». Ce
+     travail rejoint deux courants opposés sur les effets de la société industrielle :
+     **مدرسة فرانكفورت** (mise en garde contre **مخاطر اغتراب الذات**) et **هيدغر** (solution
+     philosophique pour dépasser **أزمة الذات المتّصلة بالميراث الميتافيزيقي**). Point d'arrivée
+     imprimé : **« وفي حقل الهرمينوطيقا أصبحت الإيتيقا مذهبا لتواصل اجتماعي تتفاعل فيه القيم
+     والقواعد الفردية والجماعية »**.
+
+**■ قيل في الإيتيقا (p.387, verbatim, 2 citations)** :
+
+| Auteur (tel qu'imprimé) | Citation |
+| --- | --- |
+| **اينشتاين** | « إنْ أمكن لنا الاتّفاق حول بعض **القضايا الإيتيقيّة الأساسيّة** التي ينتج عنها قضايا أخرى… هذه **الأوّليات الإيتيقيّة تلعب في الأخلاق دورا موازيا للدور الذي تلعبه الأوليات في الرياضيات** ». |
+| **رونيه لوسان** | « إنّ **برنامجا كاملا لإيتيقا عقلانيّة كان من قبيل الوعد أكثر منه متحقّقا** بفضل الأخلاق العقلانيّة لأنه، **شأن العلم الإستنتاجي**، اعترض هذه العقلانيّة **تنوّع شديد للتجارب** ». |
+
+**Encadré `* لمزيد التعمّق` (p.388)** — bandeau bleu portant deux onglets, **الآداب** (en haut)
+et **الإتيقا** `[sic — orthographié sans le ي, alors que le corps du texte écrit الإيتيقا]`
+(en bas), et deux boîtes de liens en regard :
+
+- **Boîte en regard de l'onglet الآداب** : `fr.wikipedia.org/wiki/Éthique` ·
+  `www.hapmap.org/ethicalconcerns.html.fr` · `www.fidh.org/rubrique.php3?id_rubrique=252` ·
+  `www.evene.fr/citation/mot.ph?mot=ethiques` ·
+  `www.unesco.org/courier/2000_03/fr/ethique/intro.htm`
+- **Boîte en regard de l'onglet الإتيقا** : `www.evene.fr /ciation/mot/php?mot=moeurs-54k`
+  `[sic — espace après .fr, et « ciation »]` · `fr.wikipedia.org/wiki/Coutume-48k` ·
+  `www.voltaire-integral.com/Html/00Table/11.html-52k` ·
+  `www.linternaute.com/histoire/categorie/112/a/1/histoire_des_m_urs.shtml-79k`
+
+⚠️ **Les deux listes sont interverties par rapport à leurs onglets** : la boîte alignée sur
+**الآداب** ne contient que des liens sur l'**éthique**, celle alignée sur **الإتيقا** que des
+liens sur les **mœurs** (`moeurs`, `Coutume`, `histoire_des_mœurs`). Relevé tel quel — voir
+§ Incertitudes.
+
+Illustrations p.388 : (a) dans le bandeau bleu, photo couleur d'une femme en blouse blanche de
+profil devant un écran, dans un laboratoire à stores vénitiens ; (b) en bas de page, pleine
+largeur, peinture d'une assemblée ecclésiastique — un homme debout en chaire, bras tendu,
+haranguant une assistance d'évêques et de moines en robes blanches, un greffier écrivant au
+premier plan (sans légende imprimée).
+
+###### 3.2.3.2 سياقات فكريّة — p.389-392
+
+> **Pages lues** : p.389–392 (intégral). **Source** : manuel élève `210402` (CNP,
+> `210402P00.pdf`), مبحث 3.2 « الأخلاق : الخير والسّعادة ». Rendus 300 dpi, colonne par colonne.
+> Le folio imprimé = la page PDF (vérifié sur les 15 pages de la tranche).
+
+Deux courants sont exposés : **العدميّة** (p.389-390) et **النفعيّة** (p.391-392). Bandeau de
+tête imprimé en haut de p.389 : **نافذة دعائم للتفكير في المسألة**, puis le sous-titre en
+encadré crème **سياقات فكريّة**. Chaque courant porte un cartouche bleu numéroté avec son
+équivalent latin : **1– العدميّة** `Le nihilisme` · **2- النفعية** `Utilitarisme`.
+
+⚠️ **Le gabarit n'est pas symétrique entre les deux entrées, et il diffère de celui du مبحث 2.**
+Sur le مبحث 2 (p.256-259) le gabarit était **\* التعريف → \* الجهاز المفهومي → \* لمزيد التعمّق**.
+Ici :
+
+| | **1– العدميّة** (p.389-390) | **2- النفعية** (p.391-392) |
+| --- | --- | --- |
+| `* التعريف` | **oui** (p.389) | **oui** (p.391) |
+| `* الجهاز المفهومي` | **absent** | **oui** (p.392, 3 entrées) |
+| `* تنبيهات` | **absent** | **oui** (p.392) — **rubrique inédite**, elle n'existait pas au مبحث 2 |
+| `* لمزيد التعمّق` | **absent** | **oui** (p.392, 4 références bibliographiques) |
+
+⚠️ **Ni généalogie datée ni tableau d'opposition** ici — contrairement à
+`الإبستيمولوجيا البنائيّة` (مبحث 2, p.257-259) qui imprimait les deux. L'entrée **العدميّة** est
+un récit historique continu sans schéma ; l'entrée **النفعية** est un exposé doctrinal suivi
+d'un dialogue avec ses adversaires, sans tableau. **Rien à en déduire par analogie** : ce que la
+page imprime est ci-dessous.
+
+---
+
+**1 — العدميّة · `Le nihilisme` — p.389-390**
+
+**\* التعريف (p.389)** — l'entrée s'ouvre sur l'étymologie arabe, puis énumère **cinq
+significations étiquetées أ / ب / ج / د** (la 5ᵉ n'est pas lettrée : elle enchaîne en haut de la
+colonne de gauche).
+
+**■ Étymologie (verbatim, intégral)** :
+
+> **العدمية**: من "**العَدَمُ والعُدْمُ**"، و**العُدْمُ**: فقدان الشيء وذهابه، يعْدُمُه عُدْما،
+> فهو عَدِمٌ، و**أَعْدَمَ**، إذا افتقر، و**أَعْدَمَ غيره**، و**العَدَمُ**: الفقر، نقول رجل
+> عديم، لا عقل له، وأعدمني الشيء: لم أجده. و**العديم**: الفقير الذي لا مال له… ولا شيء عنده.
+
+**■ Les significations (verbatim — « يمكن أن نعثر على أكثر من دلالة للعدمية »)** :
+
+| # | Sens, tel qu'imprimé |
+| --- | --- |
+| **أ** | « **مذهب يقول بعدم وجود أي شيء**. » |
+| **ب** | « **مذهب ينفي وجود أية حقيقة أخلاقية، أية هيكلية للقيم**. حالة الفكر الذي يفتقر الي هذه الهيكلية، والذي يتساءل: " **ما جدوى ذلك؟** " ولا يمكنه الجواب. » |
+| **ج** | **le sens politique russe** — « مذهب **حزب سياسي وفلسفي روسي**، يسمى للمرة الأولى بهذا الاسم في رواية "**تورغنيف**" (**أباء وأبناء**) "**1862**" لجاكوبي » `[sic — « أباء » sans hamza sur le alif]`. |
+| **د** | **le sens épistémologique** — « في **نظرية المعرفة** تقوم العدمية على نفي "**كل احتمال معرفي، كل حقيقة عامة يقينية**"، وتقوم **العدمية الميتافيزيقية** على نفي "**كل حقيقة للعالم الخارجي كما هو، نفي كثرة الأشياء**". » |
+| *(non lettré, p.389 col. gauche)* | **le sens ontologique** — « **العدميّة هي النظرية التي من خلالها لا وجود للمطلق** ». |
+
+Développement du sens **ج** (p.389, verbatim resserré) : en Russie les **الرجعيون** donnaient le
+nom d'**العدميين** aux **الديمقراطيين الثوريين**, leur imputant **انكارا غير مشروط لكل الحضارة
+السابقة** ; or ces démocrates révolutionnaires, « **بينما كانوا يرفضون القنانة والنظام
+البرجوازي كانوا يضعون برنامجهم الايجابي الخاص ذا المثل العليا الاشتراكية** ». Puis la
+distinction attribuée à **لينين** — c'est le seul partage explicite de la page :
+
+> وقد **فرق لينين** بين **العدمية الثورية** كسلب طبيعي لموقف الأنظمة الاجتماعية الرجعية، وبين
+> **العدمية الفوضوية لدى المثقفين** الذين اعلنوا "**اعادة تقييم القيم**" أي **انكار كل قواعد
+> الأخلاق والعدالة التي وضعتها الحضارة الانسانية**.
+
+⇒ **العدمية الثورية** (négation naturelle du régime réactionnaire) **≠** **العدمية الفوضوية**
+(intellectuels — « réévaluation de toutes les valeurs », négation de toute règle morale).
+
+**■ L'histoire du nihilisme telle que le manuel la trace (p.389, col. gauche)** — pas de
+généalogie encadrée, mais un récit daté :
+
+1. **Racine antique** : le nihilisme, en tant que « لا وجود للمطلق », **تتجذر في المنظور القديم
+   كما يؤكده السفسطائي "غورجياس" وبصفة عامة الشكاك اليونان**.
+2. **XIXᵉ siècle — le courant russe** : « **وفي حدود القرن التاسع عشر بدأت العدمية تتشكل كتيار
+   فكري قاده مفكرون روس فيما بين 1860 و1870** », marqué par **التشاؤم الميتافيزيقي** face au
+   prolongement positiviste d'**أوغست كونت**, et par **الريبية** à l'égard des **القيم التقليدية
+   (الأخلاقية، الدينية، الفنية)** ; le tout accompagné d'un **مشروع بناء المجتمع على أسس علمية**.
+   Formule imprimée qui résume ce moment :
+   > « **إذا كان الله غير موجود، فكل شيء جائز.** »
+
+   ⇒ Conséquence tirée par le manuel : « **تتطابق العدمية لاحقا مع الفردانية الفوضوية التي تهدف
+   الي تقويض كل شيء، بما في ذلك الدولة** ».
+3. **نيتشه (1844–1900)** — « **أهم مفكر في هذا الصدد** », « **فهو بحق مفكر ما بعد حديث سابق
+   لأوانه** ». Deux formules datées, imprimées **en bleu** dans la page :
+   > « (1888) **أن العدمية أضحت تدق على الأبواب** »
+
+   > « **الحقيقة هي فقط تبلور أو تصلب الصور المجازية القديمة** »
+
+   Le manuel commente : cette déclaration de 1888 **شكّل مثارا للشكوك والمخاوف في أوروبا** ; et
+   la seconde doit se comprendre **في سياق أوروبا التنويرية** comme une exigence de
+   **اعادة تذويب الصور المجازية لنبين انها معتقدات بشرية أو وجهة نظر هذه الفئة الاجتماعية أو
+   تلك**. Enfin : « **لقد كرس نيتشه حياته للكشف عن خواء الآمال التنويرية** », et le nihilisme a
+   représenté **المفهوم النيتشوي الأكثر مطابقة للتعبير عن سيلان الحقيقة أو الواقع
+   ولامحدوديتهما**.
+4. **Le retournement du soupçon (p.389 fin → p.390)** : « **وعندما تنصب نظرة العقل الحديث،
+   المشككة، على العقل نفسه، تتولد العدمية وهي تهاجم العقلانية أينما كانت، في الفن أو في الفلسفة
+   أو في العلوم** » — car les systèmes qui se disent rationnels « **هي في الحقيقة أنظمة اقناع** ».
+   Et ainsi tombe le masque : la vérité, **كما يقول نيتشه ويستعيدها فوكو**, apparaît **فقط
+   كتجليات "لإرادة السلطة"** — celle des « **الذين يدعون يضعون أنفسهم في منزلة أعلى من أولئك
+   الذين يدعى عليهم وبذلك يهيمنون عليهم** ».
+
+**■ « موت الإله » et le choix dionysiaque (p.390, verbatim resserré)** :
+
+> لقد **اكتسب نيتشه شهرة كبيرة عندما صرح "بموت الإله"**، ولو أن الكثير يرى ان هذه الصيغة
+> **ليست الا تعبيرا مجازيا عن فقدان الأسس الفلسفية ولكنها أيضا تمثل شكلا جادا من أشكال ضد
+> الألوهية**. وعلى كل حال فإن نيتشه يعني أنه **لم يعد بإمكاننا التأكد من أي شيء، فالأخلاق كذبة
+> والحقيقة وهم**، ولا يبقى أمامنا الا **الخيار الدايونايسي** ( **نسبة الى الإله الإغريقي
+> دايونايسوس، إلاه المسرح والخمر** ) `[sic — « إلاه »]` المتمثل في **تقبل العدمية والعيش بدون
+> أوهام أو ادعاءات ولكن بتحمس وفرح**.
+
+**■ La distinction structurante de la p.390 — العدمية السلبية ≠ العدمية الايجابية** (c'est le
+couple le plus directement testable de l'entrée) :
+
+Le manuel pose d'abord les **deux versants du nihilisme nietzschéen** (p.390, col. droite, bas) :
+
+> إنّ **العدمية في المنظور النيتشوي ذات وجهين**: تعنى في **المقام الأوّل غياب الأهداف التي تسمح
+> بإعطاء معنى للحياة الإنسانيّة بشكل قبلي**: " **لا هدف للمستقبل** "، سيما وأن " **الله قد مات**
+> ". وهو أمر يتناسب مع ما يلاحظه نيتشه من "**انحدار**" و"**تقهقر القوة الروحية**" لدى الغرب.
+
+Puis, p.390 col. gauche, le **versant actif** et le tableau qu'il permet :
+
+> **على نقيض هذا المعنى السلبي للعدمية يتجلى الوجه النشيط أو الايجابي للعدمية** والمتمثل في أن
+> **تحطيم القيم التقليدية والانقلاب عليها يكون بخلق عالم جديد** حيث يتأكد " **اتساع وثراء قوة
+> الفكر** ".
+
+| | **العدمية السيئة / السلبية** | **العدمية الايجابية / النشيطة** |
+| --- | --- | --- |
+| Ce qu'elle fait à l'homme | **تذل وتهمش الإنسان من العمق** · **تصرف كل قوة الإنسان وتعزله إزاء العالم** | **تصغي لصيحات معاناة الانسان** · **تنقذه، وتحرره، تمنحه القوة، تعيد خلق معنى وجوده** |
+| Ce qu'elle fait de lui | **تجعل من الإنسان معطى ومن الطبيعة مجال ريبة** ; **كائنا لا يتساءل، لا يهتم الا بصياغة العالم بحسب صورته، ومزاجه** | — |
+| Sa formule | « **لم يعد الإنسان كائنا في أفق الصيرورة: إنّه " الإنسان الأخير "** » (imprimé en bleu) | « **يجب تخيل سيزيف سعيدا** » (imprimé entre guillemets) |
+| Verdict du manuel | — | « **وقتئذ تكون العدمية فعلا، وفلسفة حكمة** » |
+
+**■ Le nihilisme comme problème, et la lecture marxienne (p.390, col. gauche, verbatim
+resserré)** :
+
+> إنّ ما اعتبره **نيتشه** مشكلة بالنسبة إلى **العلوم والفلسفة والميتافيزيقا والأخلاق**، أوعزه
+> **ماركس** إلى **آليات النظام البرجوازي**، وبمعنى آخر: في **النظام الرأسمالي** يسمح للسوق
+> بتنظيم حياتهم، وحتى حياتهم الداخلية، **وبمعادلة كل شيء بقيمته التجارية — أي التسليع** — نجد
+> أنفسنا **نبحث عن الأجوبة المناسبة للأسئلة التي تتعلق بالنجاعة والشرف وحتى الحقيقة في ساحة
+> السوق** ؛ ويمكن أيضا أن **نفهم العدمية بهذا المعنى العملي اليومي**.
+
+⇒ **نيتشه** (le nihilisme comme problème des sciences, de la philosophie, de la métaphysique et
+de la morale) **↔** **ماركس** (il l'impute aux **آليات النظام البرجوازي** / à la
+**تسليع**) — c'est la seule confrontation d'auteurs explicitement construite dans l'entrée.
+
+Illustrations p.390 : (a) col. droite, gravure en noir et blanc — une grande cloche penchée, une
+corde nouée, et un crâne en bas à gauche, sur un fond gris texturé (sans légende imprimée) ;
+(b) col. gauche, bas de page, photo couleur — une piste de terre rectiligne traversant un
+plateau désertique ocre sous un ciel bleu uni, avec **une silhouette humaine seule** au milieu de
+la route (sans légende imprimée).
+
+---
+
+**2 — النفعية · `Utilitarisme` — p.391-392**
+
+**\* التعريف (p.391, verbatim, intégral pour la phrase de définition)** :
+
+> **النفعية** مذهب فلسفي **ارتبط بالفلسفة الإنكليزية** وبصورة خاصة بالفيلسوف **جيرمي بنتام**
+> `J.Bentham` (1748–1832) **وبتلميذه جون ستيوارت ميل** `J.S.Mill` (1806–1837). **يدافع هذا
+> المذهب عن مبدأ المنفعة وأولويته في الحياة الأخلاقية بشكل خاص والحياة الإنسانية عامة**، كما
+> **يطلق اسم النفعية على النسق الذي يكمن في إرجاع معنى الصحيح العادل، إلى معنى النافع، وفي جعل
+> المنفعة أساسا للحق وللأخلاق**.
+
+⚠️ **Erreur de dates dans la source** : le manuel imprime **(1806–1837)** pour
+**جون ستيوارت ميل** `J.S.Mill`. Relevé tel quel — voir § Incertitudes.
+
+**■ Ce que la منفعة n'est pas (verbatim)** :
+
+> **لا يحمل مفهوم المنفعة على معنى المصلحة الشخصية، ولا يفيد تشريعا لمنطق انتهازي** كما قد
+> يتبادر إلى الأذهان، إذ **يعتبر مفهوما " هيدونيا "** أي **يتحرك ضمن سياق المذاهب الفلسفية التي
+> تجعل من اللذة المحرك الأساسي للتصرفات الإنسانية**، وهي **مذاهب عريقة في تاريخ الفلسفة** يمكن
+> أن نستحضر منها **الأبيقورية** على سبيل الذكر.
+
+**■ Le postulat de بنتام — les deux maîtres (verbatim)** :
+
+> إذ **يؤسس بنتام تصوره على التسليم بأن الطبيعة وضعتنا تحت سيطرة سيدين هما اللذة والألم**،
+> **يتحكمان في تصرف البشر وسلوكهم**، في **أفعالهم وأقوالهم وتفكيرهم**، **ويمليان علينا ما يجب
+> فعله** كما **يحددان معيار الصواب والخطأ، والخير والشرّ**.
+
+**■ Les deux faces de la منفعة (p.391, verbatim — c'est la distinction la plus testable de
+l'entrée)** :
+
+| | **الوجه الإيجابي للمنفعة** | **الوجه السلبي (النافع في سلبيته)** |
+| --- | --- | --- |
+| Définition imprimée | « **القدرة الكافية في غرض معيّن على إنتاج ربح أو نفع أو امتياز أو لذة، أو خير أو سعادة** » | « **القدرة على منع حصول خسارة أو سوء أو ألم أو شرّ أو حزن** » |
+| Statut de ces termes | « **وهي معاني مترادفة في لغة دعاة النفعية** » | « **من جهة علاقته بما نعتبره مصلحة** » |
+
+⇒ D'où le **principe** tel que le manuel le formule : « **يعدّ مبدأ المنفعة ما به نكون قادرين
+على جلب لذّة لا يعكّرها ألم أو مصاب. وبذلك فالفعل الذي يجلب السّعادة يعدّ فعلا جيّدا وما
+يتعارض معها يعدّ سيّئا يجب تجنّبه** ».
+
+**■ Individuel / collectif — le passage à la نفعية اجتماعيّة (p.391, verbatim)** :
+
+> **لا ينبغي أن يفهم من النفعية دفاعا عن المصلحة الفردية في مقابل المصلحة العليا للمجتمع**، إذ
+> أنّ **مصلحة المجموعة ليست سوى " مجموع مصالح الأفراد العديدين الذين يؤلفونها "**.
+
+*(la citation entre guillemets est imprimée en bleu dans la page)*
+
+⇒ « **لذلك يغدو من الخلف الحديث عن مصلحة المجموعة دون استحضار مصلحة الفرد، وبذلك فإنّ النفعيّة
+تفيد مصلحة الفرد كما المجموعة، وحين تتحوّل إلى نفعية اجتماعيّة، تصبح مبدأ أساسيّا يتمثّل في
+مبدأ البحث عن السعادة القصوى للمجموع** ». Et le critère qui en découle : « **على هذا الأساس
+يكون تحصيل سعادة الفرد أي لذّة كل فرد من أفراد المجتمع وتحصينه ضدّ الألم الغاية القصوى التي
+ينشدها الفرد بأفعاله والمشرّع بقانونه** ».
+
+**■ L'apport propre de ميل `Mill` — la قضيّة الكيفيّة (p.391, verbatim resserré)** :
+
+> **وإذا كان ميل قد تبنى مذهب معلّمه بنتام فإنّه أضاف إليه مفهوم الكيفيّة** أي **مسألة صفات
+> اللذات ونوعيّتها**، كما **حرص على تجذير النفعية في التقليد الفلسفي الموغل في القدم معتبرا
+> سقراط لا أب الفلسفة وإنّما أب النفعيّة**.
+
+⇒ Deux gestes de Mill, imprimés comme distincts : (1) **ajouter la qualité** (le *combien* de
+Bentham devient aussi un *quelle sorte*) ; (2) **enraciner** la doctrine dans la tradition — avec
+la formule frappante **سقراط ليس أب الفلسفة بل أب النفعيّة**.
+
+**■ Le dialogue avec les adversaires — trois objections et leurs réponses (p.391, chacune
+introduite par un astérisque imprimé `*`)** :
+
+| # | L'objection (telle que le manuel la formule) | La réponse imprimée |
+| --- | --- | --- |
+| 1 | La نفعية comprise **بما هي إدانة للذّة** | « **فإنّ ميل لا يرى في المنفعة ما يفيد شيئا مناقضا للذّة، بل هي اللذة ذاتها وغياب الألم، إذ يشمل النافع اللذيذ والأنيق والجميل والممتع** ». |
+| 2 | La نفعية comprise **بدفاعها عن اللذة بما هي دفاع عن مبدأ غير أخلاقي، عن مبدأ وضيع وأناني** | « **فإنّ إدخال ميل مفهوم الكيف أي مفهوم نوعية اللذات يفيد إقرارا بأنّ هناك لذّات أكثر قيمة من غيرها** » ; en outre **النفعية لا تشرع للأنانية، لأنّ مثلها الأعلى هو تحقيق قدر أكبر من السعادة لقدر أكبر من النّاس**, et « **بالتالي لا تستطيع أن تبلغ مثلها الأعلى، إلاّ حين تدعو إلى النبل الأخلاقي** ». |
+| 3 | **السعادة لا يمكن أن تكون غاية الحياة والنشاط البشري، مادامت حلما بعيد المنال** | « **ولكن ميل لا يكتفي بالتبشير بإمكان الوجود السعيد بل يتنبأ بمجتمع سعيد آت بفضل التقدّم** ». |
+
+**■ La conclusion de l'entrée (p.392, verbatim)** :
+
+> **هكذا تؤكد النفعية أن مبدأ المنفعة شأن إنساني يتوافق مع الفضيلة ويتصالح معها، ويتنزل في إطار
+> التقدّم الحضاري والعلمي، فتجعله مركز الإيمان بالإنسان وعلمه.**
+
+**\* الجهاز المفهومي (p.392, verbatim, 3 entrées)** :
+
+| Terme | Définition imprimée |
+| --- | --- |
+| **■ المنفعة** | **القدرة الكافية في غرض معيّن على إنتاج ربح أو نفع أو امتياز أو لذة، أو خير أو سعادة.** |
+| **■ اللذة** | **حالة وجدانية من طبيعة حسية تتخذ دلالة إيجابية في السجل الأخلاقي النفعي لتتماهى مع الخير والامتياز والمصلحة والنفع في مقابل الألم بما هو شر أو حزن أو خسارة.** |
+| **■ السعادة** | **تفيد تحقيق اللذة وتجنب الألم، وهي حالة رضى تام تستأثر بمجامع الوعي، عبر إرضاء الميول وإشباعها سواء بالتوسع أو بالتكثّف.** |
+
+**\* تنبيهات (p.392)** — rubrique **inédite** (pas de `تنبيهات` au مبحث 2). Elle sert à ne pas
+confondre la نفعية avec les doctrines voisines :
+
+> **يتعيّن في إطار تحديد النفعية بما هي نسق فلسفي له خصوصيته تمييزه عن أنساق أخرى تختلف عنه وإن
+> تقاطعت معه** مثل **البراغماتية أو الذرائعية**، **ومذهب اللذة كما يعرف مع أبيقور** على سبيل
+> المثال.
+
+Puis deux notices, chacune sous puce **■** :
+
+**■ الذرائعية (p.392, verbatim resserré)** — « **مذهب من بين أعلامه شارل بيرس وويليام جيمس
+وموريس بلوندال** ». Sa thèse, telle que le manuel la ramasse :
+
+> **يمكن أن نختزل أطروحته في تخليص الفلسفة من اللغو والسفسطة، وذلك بالتفريق، وبمعيار دقيق، بين
+> الصيغ الفارغة والصيغ الدّالة حقّا**، كما يرى أنّ **الحقيقة علاقة ملازمة كلّيا للاختبار
+> البشري، بحيث تكون المعرفة في خدمة الفعالية**، ويكون **للفكر طابع غائي بالأساس**، إذ أنّ
+> **حقيقة قضية ما تكمن في كونها " مفيدة " و" مرضية " و" ناجحة "**، **ويفيد النجاح التوافق الفطري
+> بين العقول على ما تؤكد صحته الوقائع الموضوعية الملحوظة جماعيا**.
+
+⇒ Ce que le manuel en conclut (p.392, col. gauche) : « **لذلك تحيل الذرائعية على موقف قريب من
+موقف العقلانية، كما يطلق اسم المذهب الذرائعي على عقيدة تقوم على إظهار الحقيقة من خلال الفعل،
+تتخطى الظاهرة العادية، وتبيان واقعة لا يمكن تجاهلها، ويؤدّي تحليلها بالضرورة، إلى الانتقال من
+المسألة العلمية إلى المسألة الميتافيزيقية** ». Et la raison de la distinguer : « **حيث تتّحد
+مبادرة الفاعل وما يعانيه من ردود الفعل ليتخطى الإنسان الظواهر بفعله الإرادي، لذلك يفترض بها أن
+تكون موضوع دراسة خاصة، مميزة عن علم الفعالية، أي مميزة عن التقنية النفعية ومنطقها** ».
+
+**■ الأبيقورية (p.392, verbatim resserré)** :
+
+> **تقر الأبيقورية أنّه يتعذّر أن يكون الإنسان سعيدا إن لم يكن حكيما وشريفا وعادلا**، والحكيم
+> **يبتغي غاية رفيعة يهدف إليها والمتمثلة في اللذة التي تعد الخير الأول وهو خير يصدر عن ذاته**،
+> **وتعد اللذة مبدأ الحياة وغايتها**، أمّا **الألم فشر محض**.
+
+Puis la mise au point qui fait toute la valeur de la notice — **la لذّة épicurienne n'est pas la
+منفعة nor le plaisir des sens** :
+
+> **ولكن اللذة مع الأبيقوريين لا تفيد المنفعة، ولا تحيل على الانسياق وراء التمتع بالشهوات، إذ
+> تكمن اللذّة القصوى في التقيد بالفضيلة واتباعها** وهو ما يعني **ضرورة الترفع عن طلب بعض الملذات
+> كما ليس من الواجب اجتناب الآلام كلّها**، إذ **ما يهم الأبيقوري هو تحقيق سكينة النفس وسلامة
+> البدن** حيث **يمتزج الشعور بالطمأنينة والسلام بفاعلية النفس وفاعلية الجسد على نحو يدعوه
+> أبيقور بالمزاج الطيب المرح**.
+
+**\* لمزيد التعمّق (p.392, verbatim — 4 références, graphie de la source)** :
+
+| Auteur (tel qu'imprimé) | Ouvrage |
+| --- | --- |
+| **جيرمي بنتام** | *مدخل إلى مبادئ الأخلاق والتشريع.* |
+| **ستيوارت ميل** | *النفعية.* |
+| **إيلي هالافي** | *تكوّن الفلسفة الجذرية (الجزء الثاني) تطور المذهب النفعي.* |
+| **رنوفييه** | *علم الأخلاق.* |
+
+⚠️ Contrairement au مبحث 2 (p.255 / p.257 / p.259), le `لمزيد التعمّق` de cette page est une
+**bibliographie**, pas une liste de sites web. Aucun `لمزيد التعمّق` n'accompagne العدمية.
+
+⚠️ **Aucune illustration sur p.391 ni p.392** — les deux pages sont en texte plein.
+
+---
+
+###### 3.2.3.3 نافذة كيفيّات التفكير — p.393-396
+
+> **Pages lues** : p.393–396 (intégral).
+
+⚠️⚠️ **Écart confirmé entre le فهرس et les pages imprimées — et il va dans le sens inverse de
+celui annoncé.** Le فهرس range cette نافذة **à l'intérieur** de la نافذة دعائم. **Les pages
+imprimées ne le font pas** : p.393 est une **page d'ouverture de نافذة à part entière** (grand
+titre sur deux lignes **كيفيات** / **التفكير**, filet rouge, carrés rose/carmin — la signature
+graphique d'une nouvelle نافذة), et **le bandeau vert de tête y est vide** — il ne porte plus
+« نافذة دعائم للتفكير في المسألة » comme sur p.383-389. **p.394, p.395 et p.396 ne portent aucun
+bandeau de tête du tout.** C'est le même traitement qu'au مبحث 2, où la fiche l'a numérotée
+`2.4`, **autonome**, à côté de `2.3` (نافذة دعائم). Je conserve ici la numérotation `3.2.3.3`
+demandée par le brief, mais **la source ne la subordonne pas** : à arbitrer à la relecture.
+
+Autres écarts relevés par rapport au مبحث 2 (p.260-263) :
+
+- Le titre imprimé est **كيفيات التفكير** — au مبحث 2 c'était **كيفيات للتفكير** (avec le لـ).
+- **La photo d'ouverture est la même** qu'au مبحث 2 (p.260) : une **chouette effraie** perchée
+  dans l'encadrement d'une vieille fenêtre en bois, la nuit. Seul l'encadré-citation change.
+- **Aucune illustration en p.396** : la moitié basse de la page est vide (au مبحث 2, p.263
+  portait une illustration).
+
+**p.393 — page d'ouverture.** Encadré-citation crème avec portrait photographique en noir et
+blanc, et le nom **برغسون** sur un onglet orange (verbatim) :
+
+> « **لكي نقاوم المقاومة ونستمسك بالطريق السوي، لا يغوينا عنه هوى أو رغبة أو فائدة، لا بدّ لنا
+> أن نقنع أنفسنا بحجج** ».
+> — **برغسون**, *منبعا الأخلاق والدّين*
+
+La نافذة comporte **4 تمارين** (p.394-396). Gabarit imprimé, en cartouches orange :
+**المهارة المستهدفة** → **توضيح** (l'encadré de méthode) → un support (**السند** / **القضية** /
+**المسألة** / **المهمّة**) → **المهام** ou **التمشّيات**. Chaque exercice est ouvert par
+**تمرين** suivi de son numéro en rouge, avec le motif de carrés orange.
+
+###### تمرين 1 — p.394
+
+- **المهارة المستهدفة** : **تحديد سياقي للمفاهيم**.
+- **توضيح (encadré de méthode, verbatim, intégral)** :
+  > تُعدّ **الفلسفة حقلا تنشأ فيه المفاهيم من الكلمات** عبر **عمليّات التحليل والتفكيك
+  > والمقارنة وتبيُّن الخواص** بالتمييز فيها بين **الضّروري والعرضي** قصد **بناء معنى وضبط
+  > دلالة**.
+- **السند** — **ج. ج. روسّو**, *أميل أو التربية*, **ص 111**, **ترجمة عادل زعيتر** ; référence
+  latine imprimée sous la référence arabe : **`J. J. ROUSSEAU; Emile ou de l'éducation`**.
+  *Thèse du passage* : **« ضعيف » et « قوي » ne sont pas des propriétés mais des rapports**
+  (نسبة) — le rapport entre la puissance d'un être et ses besoins. Est **fort** celui dont la
+  force excède les besoins, « **ولو كان حشرة أو دودة** » ; est **faible** celui dont les besoins
+  excèdent la force, « **ولو كان فيلا أو أسدا أو فاتحا أو بطلا أو إلها** ». Le manuel imprime
+  l'exemple contrasté du **الملك العاصي الذي أنكر طبيعته**, plus faible que **الفاني السّعيد
+  الذي يعيش مطمئنّا وفق طبيعته**. Formule pivot citée verbatim :
+  > « **ويكون الإنسان قويّا جدّا إذا ما رضي بما هو عليه، ويكون ضعيفا جدّا إذا ما أراد أن يعلو
+  > الإنسانيّة** ».
+
+  Conséquence pratique tirée dans le texte : « **ولذا لا تظنّوا أنّكم تزيدون قوّاتكم بزيادة
+  طاقاتكم، وعلى العكس تقلّلونها إذا ما زاد زهوكم** » ⇒ le conseil **ولنـنقص قطر دائرتنا، ولنبق
+  في المركز كالحشرة في وسط نسيجها** ; alors « **سنكون من الكفاية ما نقضي معه حاجاتنا، ولا يكون
+  لدينا من الأسباب ما نتوجّع معه من ضعف، وذلك لأنّنا لن نشعر به مطلقا** ».
+
+  *Concepts mobilisés par le support* (c'est ce que l'exercice fait chercher) : **الضّعف · القوّة
+  · النسبة · الحاجة · الطاقة · الطبيعة · السّعادة · الزهو · الإنسانيّة**.
+- **المهام (verbatim, 6 consignes)** :
+  1. أرصد **المفاهيم الواردة في النص**.
+  2. أتبين **العلاقات المنطقيّة القائمة بينها**.
+  3. أستأنس **بالأمثلة للمقارنة بينها**.
+  4. أستخلص **المفهوم المحوري الذي تنشدّ إليه كل هذه المفاهيم**.
+  5. **أحدّد دلالته**.
+  6. أتبيّن **طرافته بالمقارنة مع دلالته السائدة**.
+
+###### تمرين 2 — p.394-395
+
+- **المهارة المستهدفة** : **اتّخاذ موقف من قضيّة خلافيّة**.
+- **القضية (verbatim)** : « **متى أكون سعيدا** ؟ »
+- **توضيح (encadré de méthode, p.394, verbatim, intégral)** :
+  > **تقتضي هذه المهارة** :
+  > – **تحديد موقف من القضيّة.**
+  > – **تقديم بعض الحجج الداعمة لهذا الموقف.**
+  > – **استحضار بعض الاعتراضات الممكنة.**
+  > – **بيان ما يمكّن من تجاوز هذه الاعتراضات.**
+- **التمشّيات (p.395, verbatim — 4 étapes, chacune dans sa propre boîte)** :
+  1. **أحدّد دلالة السّعادة وأبيّن شروط إمكان تحقّقها.**
+  2. **أسوق بعض الحجج التي تدعم هذه الدلالة.**
+  3. **أستحضر بعض الاعتراضات على هذا الموقف وأردّ عليها واحدا واحدا**
+     `[sic — pas de point final imprimé]`
+  4. **أستخلص ما يمثّل طرافة في الموقف الذي اتخذته.**
+
+###### تمرين 3 — p.395
+
+- **المهارة المستهدفة** : **تحديد الرهان من وراء التفكير في مسألة**.
+- **المسألة (verbatim)** : « **هل تكمن أخلاقيّة أفعالي في اتّباع القيم الاجتماعيّة ؟** »
+- **توضيح (encadré de méthode, verbatim, intégral — 2 entrées à astérisque)** :
+  > \* **الرهان** هو **الخطورة والأهمية** التي يكتسيها **التفكير في مشكل ما**، وما **للموقف الذي
+  > سنتخذه منه من طابع حاسم ومصيري** سواء على مستوى **نظري** أو **عملي**.
+  > \* يتعلق **بالتبعات النظرية والعملية** الني `[sic — pour « التي »]` يمكن أن يؤول إليها
+  > التفكير في هذا المشكل **وانعكاساته المحتملة والمصيرية سياسيا وأخلاقيّا** على مجرى الحياة
+  > الواقعية.
+
+  ⇒ Définition officielle du **رهان** : la *gravité* et l'*importance* que prend le fait de
+  penser un problème, plus le caractère **décisif et déterminant (حاسم ومصيري)** de la position
+  qu'on y prendra, sur le plan **théorique** comme **pratique**.
+- **المهام (verbatim, 5 consignes — les 4 dernières sont des questions)** :
+  1. **أحدّد الأجوبة المحتملة عن هذا السؤال.**
+  2. **أيّة خطورة يمكن أن تترتّب على هذه الأجوبة المحتملة ؟**
+  3. **ما صورة المجتمع التي تفترضها هذه الأجوبة ؟**
+  4. **هل من شروط سياسيّة تلزم عن هذه الأجوبة ؟**
+  5. **ماذا يحصل لو عملت الإنسانيّة جمعاء بجواب من هذه الأجوبة ؟**
+
+###### تمرين 4 — p.396
+
+- **المهارة المستهدفة** : **القدرة على التأليف**.
+- ⚠️ **Pas d'encadré `توضيح`** ici : le cartouche **المهمّة** en tient lieu.
+- **المهمّة (verbatim)** :
+  > **هل نحتاج إلى قيم كونيّة ؟**
+  > أجيب عن هذا السؤال في **فقرة لا تتجاوز العشرين سطرا** متبعا في ذلك **التمشيات المصاحبة**.
+- **التمشّيات — la méthode de rédaction en 3 مراحل, chacune dans un cartouche orange arrondi
+  (verbatim)** :
+
+  **■ مرحلة بناء المشكل**
+  - أبيّن **ما يبرر معالجة هذا السؤال**.
+  - أشير إلى **أهميّة السؤال**.
+  - أستخلص **مشكلا فلسفيّا أصوغه بوضوح**.
+
+  **■ مرحلة بلورة الجواب**
+  - أبيّن **دلالة القول بالحاجة إلى قيم كونيّة**.
+  - أستحضر **بعض المؤيّدات** ( **تقديم حجة على الأقل** ).
+  - **أعترض عليه ببيان حدود وجاهته** ( **من خلال الكشف عن ضمنية أو استتباع أو تناقض مع الواقع** ).
+  - **أقترح بديلا وأوضّحه.**
+  - **أستدل على وجاهته.**
+
+  **■ مرحلة الاستخلاص**
+  - **أستخلص الموقف النهائي.**
+  - **أشير إلى قيمته.**
+
+⚠️ **Le gabarit des 3 مراحل est exactement celui du مبحث 2 (p.263)** — mêmes intitulés d'étapes,
+même découpage. Seul le contenu de la 2ᵉ étape change (là-bas : النمذجة / الكوني ; ici : les
+valeurs universelles) — et il s'y ajoute ici deux consignes que le مبحث 2 n'avait pas :
+**أقترح بديلا وأوضّحه** et **أستدل على وجاهته**.
+
+##### 3.2.4 نافذة نصّ مطوّل — نيتشه : أفول الأصنام — p.397-401
+
+**Page d'ouverture (p.397)** — bandeau « نافذة / نصّ مطوّل ». Illustrations : enluminure de mains
+feuilletant un livre d'heures ; **couverture du livre** reproduite — `NIETZSCHE` / **فريدريك نيتشه**,
+**أفول الأصنام**, ترجمة **حسان بورقيّة** و **محمد الناجي**, éditions **أفريقيا الشرق** ; portrait
+photographique de Nietzsche. Légendes : « ▲ أفول الأصنام » et « ▶ **نيتشه (1844-1900)** `NIETZSCHE` ».
+
+**Encadré-citation (p.397, verbatim)** :
+
+> لا يمكن أن نظلّ " شبابا " إلاّ شريطة ألاّ تخلد النّفس للرّاحة، ألاّ يشدّها الشّوق إلى
+> الطمأنينة… لا شيء أغرب علينا مما كان يبدو جدّ مطلوب فيما مضى: طمأنينة النّفس
+> — **نيتشه**
+
+> ⚠️ Le titre du chapitre annoncé par le فهرس — « الأخلاق فضيلة مضادّة » — est à **vérifier sur
+> les p.398-401**, non couvertes ici. Le corps du texte, sa structure argumentative et
+> l'éventuelle présence de questions d'accompagnement restent **à transcrire** (sur le مبحث 2, la
+> نافذة نصّ مطوّل ne portait **aucun** questionnaire — ne rien présupposer).
+
+###### Le texte de نيتشه — p.398-401 (corps, structure argumentative)
+
+**Titre imprimé en tête de page** : **أفول الأصنام** (en rouge), et en regard, à gauche :
+**الأخلاق فضيلة مضادّة**.
+✅ Le titre annoncé par le فهرس est **confirmé sur la page**.
+
+**Encadré de référence (p.398, verbatim)** :
+
+> ترجمة
+> **حسّان بورقية** — **محمد الناجي**
+> **أفريقيا الشرق**
+> **الدار البيضاء، ص 35-43**
+
+⚠️ **Droits (R-2)** : le texte de Nietzsche n'est **pas** reproduit ici. Il est restitué par le
+**découpage que le manuel imprime lui-même** — 6 sections numérotées et 11 repères marginaux — plus
+de courtes citations attribuées.
+
+**Dispositif de lecture** (constaté, identique à celui du مبحث 2) : texte continu **numéroté de 5
+en 5 lignes** (l.1 à l.135), découpé en **6 sections numérotées** (1 à 6, en rose), et accompagné en
+marge de **11 repères** qui explicitent le mouvement de l'argumentation.
+⛔ **Aucun questionnaire imprimé** — ni أسئلة ni مهامّ, comme au مبحث 2. Le seul guidage est
+constitué des repères marginaux et de la numérotation des lignes.
+
+**Les 11 repères marginaux, verbatim, dans l'ordre** — c'est le découpage officiel de
+l'argumentation :
+
+| # | section | repère (verbatim) | lignes |
+| --- | --- | --- | --- |
+| 1 | 1 | تحديد مبررات إعادة النّظر في الأخلاق: التّصوّر السّلبي للنزوة واعتبارها ضررا. | ~1-10 |
+| 2 | 1 | اعتماد المثال لتدعيم هذه المبررات: تأكيد قيام الأخلاق المسيحية على هذه النظرة السلبية للنزوة وإخصاءها. | ~10-18 |
+| 3 | 1 | بيان موجبات الموقف الإستئصالي للنزوة. | ~18-23 |
+| 4 | 2 | بيان قيمة هذا الموقف من خلال تقييمه وبيان أصل قيمته وقيمة هذا الأصل. | ~25-40 |
+| 5 | 3 | تحديد دلالة الرّوحنة الشبقية على أنّها حبّ. | ~41-50 |
+| 6 | 3 | تأكيد إيجابيّة الموقف السلبي من النّزوة من جهة كونه أساسا يشرّع النقد ويجعله أكثر خصوبة. | ~53-66 |
+| 7 | 3-4 | تقديم أمثلة على أنّ المثل الأعلى الزّهدي يقوم على وهم وسوء فهم للحياة. | ~67-75 |
+| 8 | 4 | تقديم دلالة نقيض للطمأنينة تتمثّل في أنّها تتحقق في الاستجابة للنزوات. | ~75-77 |
+| 9 | 4 | النظر إلى فكرة الواجب بما هو عائق عبر بيان التناقض بين الموقف الأخلاقي وغرائز الحياة. | ~82-87 |
+| 10 | 5 | تأكيد عقم الموقف الأخلاقي بالنظر إلى قيامه على شروط تضاد الحياة. | ~90-103 |
+| 11 | 5 | تأكيد موقف الكاتب بأنّ الأخلاق طبيعة مضادّة للحياة وللإنسان. | ~100-103 |
+| 12 | 6 | استخلاص سذاجة أخلاق الواجب. | ~110-120 |
+| 13 | 6 | التأكيد على أنّ أخلاق الواجب تفصح عن عرض مرضي نقيض الحياة. | ~120-130 |
+| 14 | 6 | الانتهاء إلى تثمين الموقف اللاأخلاقي من جهة انحيازه إلى الإنسان والحياة. | ~135 |
+
+> ⚠️ **14 repères et non 11** après recomptage sur les quatre pages (p.398 en porte 4, p.399 deux,
+> p.400 quatre, p.401 trois plus un). Le décompte fait foi sur les pages, pas sur une attente de
+> régularité.
+
+**Le mouvement d'ensemble (reformulé)** : Nietzsche part du **procédé** de la morale à l'égard des
+passions (النزوات) — l'Église ne les *spiritualise* pas, elle les **extirpe** (استئصال), et
+« attaquer les passions à la racine, c'est attaquer la vie à la racine » ; sa pratique est donc
+**hostile à la vie**. Il montre ensuite que ce remède radical n'est nécessaire qu'aux **dégénérés**,
+aux volontés trop faibles pour se modérer. Il oppose à cela la **spiritualisation de la sensualité**
+— nommée **amour** — et la spiritualisation de l'**inimitié**, qui fait comprendre la valeur d'avoir
+des ennemis : l'Église a toujours voulu détruire ses ennemis, là où « nous, les immoralistes »,
+trouvons notre avantage à ce qu'elle subsiste. De là une critique de la « **paix de l'âme** »
+(طمأنينة النفس), dont il énumère les visages possibles — souvent un simple malentendu, parfois la
+fatigue, la satiété, ou la sécheresse. Puis vient la thèse centrale : toute morale saine est régie
+par un **instinct de vie**, tandis que la **morale contre-nature** (الأخلاق المضادّة للطبيعة), celle
+qu'on enseigne et vénère, se tourne **contre** les instincts de vie et les condamne. Enfin il
+retourne l'accusation : condamner la vie n'est jamais qu'un **symptôme** d'une certaine sorte de
+vie — celle qui décline, s'affaiblit, se lasse — et la morale du devoir, en disant à l'homme
+« sois ainsi », est une **naïveté**, puisque la réalité offre une profusion inouïe de types et de
+formes. « Nous, les immoralistes, sommes la réponse à cette question. »
+
+**Citations courtes, attribuées** (verbatim, extraites du texte imprimé) :
+
+- « إنّ مهاجمة النّزوات من الجذر تعني مهاجمة الحياة من الجذر، إنّ براكسيس الكنيسة معاد للحياة. » (l.22-23)
+- « الأخلاق المضادّة للطبيعة، أي تقريبا الأخلاق الملقّنة، الممجّدة، المنصوح بها إلى هذا اليوم، تسير، على العكس تماما، ضدّ غرائز الحياة. » (l.81-83)
+- « إنّنا نحن، نحن اللاأخلاقيين، هم الجواب عن هذا السؤال… » (l.135, dernière ligne)
+
+**Noms cités dans le texte** : المسيحية · الكنيسة · العهد الجديد · موعظة على الجبل · براكسيس ·
+الشيطان · **شوبنهاور** (l.105) · مملكة الرّبّ.
+
+> ✅ **FIN DU مبحث 3.2 ET DU CORPS DU MANUEL.** La p.402 porte les مختصرات (déjà transcrites) ;
+> p.403 est blanche ou non paginée ; le فهرس occupe p.404-408.
+> ✅ **Le محور 3 est intégralement transcrit** : مبحث 3.1 (p.271-346) et مبحث 3.2 (p.347-402).
+
+##### 3.2.5 مختصرات — p.402
+
+> **Page lue** : p.402 (intégral). **Récapitulatif officiel du مبحث — reproduit verbatim**, dans
+> l'ordre des **5** encadrés imprimés. Illustration : plume d'oie noire sur un manuscrit ancien
+> (même vignette que les مختصرات du مبحث 2, p.270).
+
+**■ Encadré 1 — le cadre : l'existence humaine est chargée de valeurs**
+
+> تبيّن لي أن الوجود الإنساني مثقل **بالقيم**، وأنّ صورة الإنسان تظل مبتورة ما لم نقاربها من جهة
+> **الوجود الأخلاقي**. وأدركت أن هذا الوجود يقوم على جملة نقائض: **الخير والشرّ**، النافع والضار،
+> اللذة والألم، الفضيلة والرّذيلة، السعادة والشقاء…، وهو ما يؤكد جدارة هذا المبحث بالنظر سواء من
+> جهة صلته بالإنسان أو من جهة التباس بنية معانيه.
+
+**■ Encadré 2 — الأخلاق et la فضيلة comme juste milieu**
+
+> تبينت أنّ الحديث عن **الأخلاق** يقترن بالحديث عن مطلب **الفضيلة** بما هي استعداد يكتسب
+> **إراديّا**، وتقوم على مبدأ الوسط **العدل** الذي لا يقبل إفراطا ولا تفريطا، وأنّ الإنسان الفاضل
+> تبعا لذلك هو الذي يحتكم في سلوكه إلى مطلب حفظ كيانه بالتوافق مع ما يمليه **العقل** أي وفقا
+> لطبيعته الخاصة.
+
+**■ Encadré 3 — الخير, concept central et litigieux**
+
+> أدركت أنّ **الخير** هو المفهوم المركزي الذي يدور حوله النظر في الأخلاق، وتبيّن لي أنّ لهذا
+> المفهوم من الالتباس ما يجعله مثيرا لجدل بين منظّري الأخلاق: بين اعتباره يتماهى مع **المنفعة** مع
+> ما يثيره هذا المفهوم من جدل في علاقته بالأخلاقي، واعتباره مبدأ أو غاية في ذاته، مادام الإنسان
+> وكلّ كائن عاقل بوجه عام يوجد **كهدف** في ذاته لا كمجرّد وسيلة.
+
+**■ Encadré 4 — الواجب : contrainte externe ou principe intérieur**
+
+> تبينت أن التساؤل عن أساس الفعل الأخلاقي وطبيعته يقتضي استحضار مفهوم **الواجب** الذي قد يقترن
+> بمعاني الإلزام والقهريّة بالنظر إلى أساسه الاجتماعي المتعالي والخارجي عن الذّات، مثلما قد ينظر
+> إليه بما هو **مبدأ ذاتي** يتأصل ذاتيا، يكون معه الأمر الأخلاقي قطعيا، ولا تتعارض طاعته مع حريّة
+> الإنسان واستقلاليّة إرادته، ليستحيل **الإلزام** التزاما والخضوع طاعة والنفور إرادة، مادامت
+> الذات هي المشرّعة للواجب، ومادام هذا التشريع يتّخذ من الإنسان غاية قصوى.
+
+**■ Encadré 5 — السّعادة, valeur morale aux sens enchevêtrés**
+
+> أدركت أن **السّعادة** قيمة أخلاقيّة تتداخل في معناها مع معاني الخير والفضيلة واللذة والمنفعة
+> بحسب تعدد زوايا النظر وطبيعة المقاربات، إذ قد ينظر إليها بما هي **خير أسمى**، كما قد تفيد معنى
+> تحقيق **اللذة** وتجنب الألم، دون أن يحمل هذا المعنى على طلب اللذّة أو تجنّب الألم بكل السبل، أو
+> دون أن تفهم السّعادة على معنى الإطلاقية، إذ لا نعرف سعادة مطلقة أو شقاء مطلقا.
+
+> ⚠️ **Cinq encadrés**, et non six comme au مبحث 2 — le nombre n'est pas un invariant du gabarit.
+> ✅ **Fin du corps du manuel** : p.402 est la dernière page de contenu ; le فهرس occupe p.404-408.
 
 ## 3. Notes pédagogiques / méthode
 
