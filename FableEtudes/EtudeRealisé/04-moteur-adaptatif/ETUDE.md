@@ -1,7 +1,11 @@
 # Étude 04 — Moteur adaptatif & diagnostic de misconceptions
 
-> **Statut** : en exécution — phase A0 **livrée** (2026-07-06), **A1.1 livrée** (2026-07-20, #581),
-> **A1.2 spécifiée** (§9, 2026-07-25) et exécutable ; A2 derrière le seuil de données de Q-1
+> **Statut** : **LIVRÉE** — les quatre phases sont closes (A0 le 2026-07-06, A1.1 le
+> 2026-07-20, A1.2 le 2026-07-31/08-03, A2 le 2026-08-23 par arena#818). Historique :
+> phase A0 **livrée** (2026-07-06), **A1.1 livrée** (2026-07-20, #581), **A1.2 livrée**
+> (§9 ; arena#689, #691, #695, #707) et **A2 livrée** — le « seuil de données » que Q-1 posait
+> devant A2 portait sur le CORPUS, pas sur le temps : il est tombé le jour où `math` 9ᵉ a été
+> tagué (corpus#219, appliqué en prod le 2026-08-22)
 > **Priorité** : 04 · **Valeur** : le différenciateur défendable — chaque distracteur du contenu encode déjà une erreur nommée (protocole « erreur exécutée ») ; personne n'exploite ce signal. Diagnostic par élève → révision/remédiation personnalisées → progression mesurable (l'argument de vente parents) · **Complexité** : haute
 > **Architecte** : Fable (claude-fable-5), 2026-07-04 · **Exécuteur cible** : Sonnet
 > **Dépend de** : volume d'usage (la télémétrie A0 doit tourner quelques semaines avant A2) ; le tagging de contenu (pipeline) monte en charge progressivement
@@ -121,10 +125,10 @@ progression, extension du rapport parent. États vides soignés (« Rien à rév
 - [x] A0.2 — capture (RPCs) + purge
 - [x] A0.3 — pipeline tags + registre
 - [x] A1.1 — révision du jour (PR #581 ; rendue compétence-aware par é07 lot 5, PR #616/#617)
-- [ ] A1.2a — serveur : l'erreur nommée dans la correction (§9)
-- [ ] A1.2b — client : le bloc de correction riche (§9)
-- [ ] A2.1 — points faibles (GO humain : ≥4 semaines de télémétrie ou seuil de volume)
-- [ ] A2.2 — rapport parent
+- [x] A1.2a — serveur : l'erreur nommée dans la correction (§9) — arena#689/#691
+- [x] A1.2b — client : le bloc de correction riche (§9) — arena#695
+- [x] A2.1 — points faibles (arena#818, 2026-08-23)
+- [x] A2.2 — rapport parent (arena#818, 2026-08-23)
 
 **Stop-points** : A0.2 ne change AUCUN barème/gate de récompense (pgTAP de régression obligatoire
 avant merge) ; les tags ne transitent jamais dans `options` (D-1) ; **A1.2a ne rend jamais que le
@@ -341,7 +345,42 @@ capté server-side à chaque soumission.
 > V1 mandaté), **A1.1 est livrée** (#581) puis rendue compétence-aware par é07 lot 5 (#616/#617).
 > Seule **A2.1** reste derrière le seuil de données de Q-1.
 
-### Phase A1 (la révision devient un produit) — EN COURS
+### Phase A2 (les points faibles deviennent visibles) — LIVRÉE le 2026-08-23
+
+- **2026-08-23 — A2.1 et A2.2 livrées** (arena#818), et l'étude se ferme.
+  **Le socle a été refait avant les surfaces** : R-2 promettait des « constantes
+  centralisées, ajustables » et elles ne l'avaient jamais été — le triplet
+  (3, 2, 30 jours) était recopié dans `get_daily_plan` et dans
+  `get_tutor_learner_context` (é11 lot 1). A2.1 en aurait fait une troisième
+  copie, A2.2 une quatrième. `misconception_active_thresholds()` et
+  `active_misconceptions()` portent désormais la définition, et les deux
+  appelants vivants ont été rebranchés dans la même migration.
+  ⚠️ **La réécriture de `get_daily_plan` a failli coûter cher** : retapée à la
+  main, elle sortait un algorithme entièrement réinventé (score normalisé perdu,
+  `DISTINCT ON` anti-doublon perdu, exclusion du quiz dans le repli perdue). Le
+  diff contre la révision vivante l'a montré ; la version livrée est une
+  SUBSTITUTION par script, et `35_daily_plan.test.sql` en est la preuve —
+  restée verte, inchangée. Leçon à garder : une fonction SQL vivante se substitue,
+  elle ne se retape pas.
+  **A2.1** : `get_my_weaknesses` rend les erreurs actives en langage élève, dans
+  les trois langues, avec la compétence (qui arme « S'entraîner » par le MÊME
+  `get_exercises_for_competency` que la correction riche — un seul chemin de
+  remédiation), le chapitre où l'erreur se commet le plus, et une tendance
+  **mesurée** sur deux fenêtres de 7 jours de `question_attempts` —
+  `user_misconceptions` étant un agrégat sans histoire. Sous trois occurrences
+  cumulées : `stable`, et un tiret à l'écran. Une flèche sur deux points ment.
+  **A2.2** : le rapport parent gagne `misconceptionInsights`. Vérifié avant
+  d'écrire : il portait DÉJÀ `chapterInsights.weaknesses` — mais par CHAPITRE.
+  Les deux axes cohabitent, parce qu'ils ne disent pas la même chose : « Fractions
+  45 % » dit OÙ ça coince, « il additionne les dénominateurs » dit QUOI réviser,
+  et seul le second se traite le soir même.
+  ⚠️ **Le GO humain attendu par le plan de lots portait sur les DONNÉES, pas sur
+  le code** : les deux surfaces ne rendent rien tant qu'aucune erreur n'est
+  active, ce qui est l'état de presque tous les comptes — une erreur exige 3
+  occurrences sur 2 sessions, et seul `math` 9ᵉ est tagué (appliqué en prod le
+  2026-08-22). Elles se rempliront seules.
+
+### Phase A1 (la révision devient un produit) — LIVRÉE
 
 - **2026-07-31 — A1.2a livrée** (arena#689, correctif de test arena#691) : `get_attempt_review`
   rend `misconception_tag` (le tag de l'option **choisie**, et seulement sur une réponse fausse)
