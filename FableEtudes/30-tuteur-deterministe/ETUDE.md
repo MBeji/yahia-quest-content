@@ -75,7 +75,9 @@ Rien de ce qui suit n'est de mémoire. Chaque ligne a été relue dans `main` (m
 | Types d'items | `questions.question_type` | ✅ **6 natifs** : `mcq`, `numeric`, `ordering`, `matching`, `multi`, `short_answer` + la **variante rappel** (é17, saisie libre) |
 | Porte d'accès | `resolve_exercise_access` | ✅ arbitre unique, jamais contourné |
 
-**Ce qui manque, et qui est exactement le mandat :**
+**Ce qui manque, et qui est exactement le mandat** — ⚠️ **la première ligne de ce tableau n'est
+plus vraie depuis le 2026-08-23** : C4bis a été livré le soir de la rédaction puis appliqué en
+prod. Le reste du tableau tient. Le §8 dit ce qui a changé, et ce que ça n'a **pas** réglé :
 
 | Manque (mesuré) | Conséquence | Point du mandat |
 | --- | --- | --- |
@@ -1221,6 +1223,7 @@ _(rempli au fil des lots par l'exécuteur : date, lot, PR, écarts acceptés, de
 | date | lot | PR | écarts / dettes |
 | --- | --- | --- | --- |
 | 2026-08-22 | — | — | Étude rédigée. **Trois mesures à reporter dans STATUS.md** : le registre de compétences `math` compte **62** entrées (STATUS annonce encore 59) ; le corpus porte **0** `misconceptionTag` (re-mesuré, inchangé depuis le 2026-07-31) ; le tagging de compétences couvre **`math` + `math-6eme`**, 234 fichiers. |
+| 2026-08-23 | **0** | privé #219 · dispatch 32629700267 | ⚠️ **La deuxième mesure ci-dessus était périmée trois heures après avoir été écrite, et c'est une bonne nouvelle : le lot 0 est LIVRÉ.** #219 a posé **1 049 tags** sur les **20 chapitres** de `math` 9ᵉ (l'étude en annonçait 13 — elle sous-estimait le périmètre), registre des misconceptions **56 → 154 entrées**, puis le corpus a été **appliqué en prod** (`apply-content.yml` ciblé `math`, `pg_dump` préalable, journalisé). Vérifié hors du workflow : 20 chapitres et **818 questions** `math` en base = le corpus. **Le sous-ensemble minimal du §4.1 démarre donc au lot 1.** — **Écart à connaître : KPI-1 n'est PAS atteint.** La couverture est de **521 / 818 questions, soit 64 %**, pas 100 %. Les 297 restantes sont soit légitimes (`misconceptionTag` est optionnel par conception — tout distracteur n'encode pas une erreur nommable), soit un reliquat ; **personne n'a tranché**, et le lot 4 en dépend. Concentration des non-tagués : `05-systemes` (33), `08-thales` (27), `15-numeration-et-calcul` (24). — **Et un fait qui renforce l'amendement D** : é11 lot 1 a été livré le 2026-08-22 (arena#816) et son `get_tutor_learner_context()` ne porte **aucune** ligne de maîtrise — ni compétences faibles, ni proxy. Le trou que comble le lot 3 est donc réel et mesuré, pas théorique. |
 ---
 
 ## Annexe A — Le modèle de croyance en nombres (la table de vérité du pgTAP)

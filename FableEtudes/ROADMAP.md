@@ -33,11 +33,14 @@
 > **manuels officiels déclarés et liés** (**F13**), et la campagne **فقه** côté corpus
 > (37 chapitres, rubrique ouverte aux élèves — **C12**).
 >
-> 🔴 **Le point dur a changé, encore : c'est C4bis, et il commande désormais aussi l'IA.**
-> Le corpus ne porte toujours **aucun** tag de misconception (0 occurrence, re-mesuré le
-> 2026-08-22 sur 719 chapitres). Ce qui est neuf, c'est que la ligne 18 (é11 lot 1) promet une
-> explication « ancrée sur l'item + distracteur + **tag** » : le même travail de contenu bloque
-> maintenant quatre lots é04/é07 déjà mergés **et** la première brique pédagogique de l'étage IA.
+> ✅ **Le point dur de ce paragraphe est TOMBÉ le 2026-08-23 — 24 h après avoir été écrit.**
+> Il disait : « c'est C4bis, et il commande désormais aussi l'IA · le corpus ne porte toujours
+> **aucun** tag de misconception (0 occurrence, re-mesuré le 2026-08-22 sur 719 chapitres) ».
+> C4bis a été livré le soir même (#219, **1 049 tags**) puis **appliqué en prod** le lendemain
+> (`apply-content.yml`, run 32629700267). Les quatre lots é04/é07 et l'ancrage du tuteur
+> (arena#816) sont donc alimentés. **Ce qui reste du point dur** : le tagging couvre **64 %**
+> des questions de `math` 9ᵉ et **s'arrête à cette matière** ; et `user_misconceptions` est
+> encore vide — elle ne se remplira qu'avec des élèves. **Armé n'est pas prouvé.**
 >
 > ⚠️ **La leçon de méthode, et elle est nouvelle.** Le 2026-08-10 disait « un gate vert ne veut
 > pas dire à jour ». Le 2026-08-22 ajoute : **une priorité écrite le jour J et mergée à J+6 n'est
@@ -188,18 +191,33 @@ d'application qui les relie, et il tient en un dispatch (voir **C11**).
    ~~1. **C4bis étape 1**~~ · ~~2. **Ligne 18**~~ — **LES DEUX SONT LIVRÉES le 2026-08-22**
    (#219 et arena#816). L'ordre à prendre devient :
 
-   1. **APPLIQUER LE CORPUS EN PRODUCTION** — un dispatch, zéro écriture (voir **C11**). Les
-      1 049 tags de C4bis sont sur `main` et **invisibles pour l'élève** ; tant qu'ils n'y sont
-      pas, les quatre lots é04/é07 restent inertes ET l'explication du tuteur se tait sur
-      l'erreur nommée. C'est redevenu, pour un instant, le geste qui ne produit rien et livre
-      tout — la leçon de C11, deux semaines plus tard.
-   2. **C4ter** (§5) — `french-6eme`, la complétude de la classe de concours (é28 D-4).
-   3. **Ligne 15** (§3) — é04 A2.1 « Points faibles », désormais **débloquée** : l'écran a enfin
-      des lignes à afficher. ⚠️ Après l'application, pas avant.
+   ~~1. **APPLIQUER LE CORPUS EN PRODUCTION**~~ — **FAIT le 2026-08-23**, et c'est la ligne la
+   plus vite refermée de cette roadmap : `apply-content.yml` dispatché sur `math`
+   (run 32629700267, `pg_dump` préalable, journalisé dans `content_releases`). Vérifié **hors
+   du workflow**, en anon : 20 chapitres et **818 questions** `math` en base, à l'identique du
+   corpus. Les 1 049 tags sont donc atteignables par un élève, et s'allument d'un coup les
+   quatre lots é04/é07 restés inertes depuis l'origine **plus** l'ancrage de l'explication du
+   tuteur (arena#816, livrée la veille sans avoir jamais eu un tag à citer).
+   ⚠️ **La leçon vaut d'être notée, parce qu'elle ne s'attrapait pas au vert** : l'étape de
+   contrôle du workflow compte les **chapitres et les questions**, jamais les colonnes
+   **serveur-seul** — `distractor_tags` en fait partie. Un run vert n'aurait donc pas prouvé
+   que les tags étaient arrivés ; c'est le décompte externe qui le prouve. Écrit dans le
+   moteur : `docs/agents/campagnes-contenu.md`.
 
-   La règle « PRODUIT d'abord » suppose que la file PRODUIT a une ligne prenable : la 15
-   livrerait toujours un écran vide, la 9 est close, et la 18 est la seule qui le soit — d'où
-   son rang 2. L'ordre sert la valeur livrée ; il ne la remplace pas.
+   L'ordre à prendre devient :
+
+   1. **C4ter** (§5) — `french-6eme`, la complétude de la classe de concours (é28 D-4).
+   2. **Ligne 15** (§3) — é04 A2.1 « Points faibles », **débloquée pour de bon** : l'écran a des
+      lignes à afficher, et le corpus est appliqué. C'est désormais la ligne PRODUIT prenable.
+   3. **Trancher les 36 % non tagués** — le tagging couvre **521 des 818 questions** de `math`
+      9ᵉ. Les 297 restantes sont soit légitimes (tout distracteur n'encode pas une erreur
+      nommable — le champ est optionnel par conception), soit un reliquat de C4bis. Personne
+      n'a regardé. Une vingtaine de distracteurs suffisent à trancher, et le KPI-1 de é30 en
+      dépend.
+
+   La règle « PRODUIT d'abord » suppose que la file PRODUIT a une ligne prenable : depuis
+   l'application, **la 15 en est une** — elle ne livrerait plus un écran vide. L'ordre sert la
+   valeur livrée ; il ne la remplace pas.
 
 ### Comment cet ordre reste vrai (règle amendée le 2026-07-25)
 
