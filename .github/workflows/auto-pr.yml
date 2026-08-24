@@ -2,13 +2,34 @@ name: Auto PR (corpus)
 
 # Ouvre une PR pour toute branche poussée, puis lance ses checks.
 #
-# POURQUOI CE FICHIER EXISTE — le trou qu'il bouche, mesuré le 2026-08-24 :
-# huit branches `claude/*` portaient du travail JAMAIS livré, vieux de 4 à 5
-# semaines (automerge-corpus, etude-25-cloture-lot5c, etude-25-journal-lots-3-5,
-# etude-ia-deterministe-contenu, figures-eveil-2eme, figures-eveil-campagne,
-# lc2-lc4-garde-contenu, reorganiser-etudes-backlog). Aucune n'avait de PR.
-# Une session avait poussé puis s'était arrêtée, et RIEN ne ramassait derrière
-# elle : `automerge.yml` sait merger une PR verte, il ne sait pas en ouvrir une.
+# POURQUOI CE FICHIER EXISTE — et la version corrigée du constat, parce que la
+# première était fausse et mérite d'être conservée comme leçon.
+#
+# Le 2026-08-24, huit branches `claude/*` traînaient sans AUCUNE PR, vieilles de
+# 4 à 5 semaines (automerge-corpus, etude-25-cloture-lot5c,
+# etude-25-journal-lots-3-5, etude-ia-deterministe-contenu, figures-eveil-2eme,
+# figures-eveil-campagne, lc2-lc4-garde-contenu, reorganiser-etudes-backlog).
+# Ce fichier a d'abord affirmé qu'elles portaient du travail « JAMAIS livré ».
+# C'ÉTAIT FAUX : le tri du même jour a montré que les huit étaient livrées —
+# `EtudeRealisé/` est sur main, les 24 fichiers de figures y sont à l'octet près,
+# et pour les trois où main diffère, c'est main qui est EN AVANCE (automerge.yml
+# y fait 310 lignes contre 141, et les deux seuls écarts de content-audit.yml
+# sont des régressions : chemin d'avant la réorganisation, Node 22 au lieu de 24).
+#
+# L'erreur de méthode vaut mieux que le chiffre : `git rev-list origin/main..<branche>`
+# ne prouve RIEN sur un dépôt qui merge en SQUASH — les commits d'origine ne sont
+# jamais des ancêtres de `main`, livrés ou pas. Une livraison se constate par le
+# CONTENU. Les huit branches ont été supprimées après vérification.
+#
+# Ce qui justifie ce fichier n'en sort pas affaibli, il change de nature : le
+# problème n'était pas huit lots perdus, c'est que RIEN ne permettait de
+# distinguer une branche livrée-mais-non-nettoyée d'un lot réellement perdu.
+# Il a fallu un audit forensique un mois après pour trancher. Avec une PR ouverte
+# dès la poussée, la distinction est visible sur le moment, par tout le monde.
+# (Le vrai travail non livré était ailleurs, et là où il devait être : dans les
+# savepoints `wip/`, dont c'est précisément le rôle.)
+#
+# `automerge.yml` sait merger une PR verte, il ne sait pas en ouvrir une.
 # L'arena a `auto-pr.yml` depuis le 2026-07-12 et n'a pas ce problème.
 #
 # CE QUI DIFFÈRE DE LA VERSION ARENA, et pourquoi :
