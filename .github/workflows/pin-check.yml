@@ -12,6 +12,10 @@ on:
   pull_request:
   push:
     branches: [main]
+  # Même raison que dans content-ci.yml : `auto-pr.yml` dispatche ce workflow
+  # sur la branche, parce qu'une PR ouverte par le GITHUB_TOKEN n'émet pas
+  # d'événement `pull_request` et n'aurait donc aucun check.
+  workflow_dispatch:
 
 permissions:
   contents: read
