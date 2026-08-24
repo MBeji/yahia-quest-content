@@ -2099,9 +2099,8 @@ de problèmes)** :
   - `3.1.2` نافذة سندات التفكير في المسألة — p.278–318 — **22 سندات**
   - `3.1.3` نافذة دعائم للتفكير في المسألة — p.319
     - `3.1.3.1` تحديدات وتمييزات مفهوميّة — p.320 : **السّياسة** p.320 · **اللائكيّة** p.322 · **الكليانيّة** p.324
-    - `3.1.3.2` سياقات فكريّة — p.327 : **الليبراليّة** p.327 · **الفوضويّة** p.330
-    - **فلسفة العقد الاجتماعي** — p.332
-  - `3.1.4` نافذة كيفيّات التفكير — p.335
+    - `3.1.3.2` سياقات فكريّة — p.327 : **1 الليبيراليّة** p.327 · **2 الفوضويّة** p.330 · **3 فلسفة العقد الاجتماعي** p.332
+  - `3.1.4` نافذة كيفيّات للتفكير — p.335 *(libellé du فهرس ; la page 335 imprime `كيفيات التفكير`, sans `نافذة`)*
   - `3.1.5` نافذة نصّ مطوّل — **سبينوزا** : *كتاب السّياسة*, الفصل الثّالث — p.339
   - `3.1.6` مختصرات — p.346
 - **Inventaire des 22 سندات** (فهرس p.407) :
@@ -2120,14 +2119,14 @@ de problèmes)** :
   | 10  | كونستون     | في الدّيمقراطيّة              | 295 |
   | 11  | تودوروف     | الدّولة والشرعيّة             | 297 |
   | 12  | سبينوزا     | الحقّ والقانون                | 299 |
-  | 13  | ستيوارت ميل | حريّة الرّأي                  | 301 |
+  | 13  | ستيورات ميل | حريّة الرّأي                  | 301 |
   | 14  | ميشو        | الحق والعنف                   | 303 |
   | 15  | ماركس       | في نقد الحقّ                  | 305 |
   | 16  | أرسطو       | العدالة والإنصاف              | 307 |
   | 17  | أفلاطون     | العدالة والقانون              | 309 |
   | 18  | باسكال      | العدل والقوّة                 | 311 |
   | 19  | راولس       | العدل أساس الطاعة             | 312 |
-  | 20  | إيبكتاتس    | المواطن العالمي               | 314 |
+  | 20  | إيبكتات     | المواطن العالمي               | 314 |
   | 21  | تاسّان      | مواطن العالم المشترك          | 315 |
   | 22  | كاستلاس     | المواطن العالمي الجديد        | 317 |
 
@@ -2423,8 +2422,8 @@ main**, sur fond orangé.
 
 **التمهيد** (verbatim) :
 
-> قد تغرينا بداهة الحياة كما اعتاد الناس أن يروها، لكن ما أن ندقّق النظر حتّى نكتشف تهافت ما
-> ألفناه، ذلك هو حال علاقتنا بالسلطة ، فلحظة تصوّرناها في الدّولة اكتشفنا أنّها أوسع مدى وأدَقّ
+> قد تغرينا بداهة الحياة فنخالها كما اعتاد الناس أن يروها، لكن ما أن ندقّق النظر حتّى نكتشف تهافت ما
+> ألفناه، ذك [sic] هو حال علاقتنا بالسلطة ، فلحظة تصوّرناها في الدّولة اكتشفنا أنّها أوسع مدى وأدَقّ
 > معنى.
 
 **Référence imprimée** : **ميشال فوكو، إرادة المعرفة** — ترجمة مطاع صفدي وجورج أبي صالح، مركز
@@ -2501,7 +2500,7 @@ et façonnant en retour **le despote et son vis-à-vis, l'humilié**.
 **الهامشان** (verbatim) :
 
 1. **المدينة الجائرة** : إشارة إلى أثينا التي حوكم فيها سقراط وأعدم.
-2. **آلان** `Alain` : كنية للفيلسوف الفرنسي إيميل أوغست شارتييه `Emile Auguste CHARTIER
+2. **آلان** `Alain` : كنية للفيلسوف الفرنسي إيميل شارتييه `Emile Auguste CHARTIER
    (1868-1951)`.
 
 **الكاتب** : ⚠️ **renvoi, pas de notice** — imprimé verbatim :
@@ -2512,7 +2511,7 @@ différents** — الإنيّة والغيريّة pour Foucault, الخصوص�
 
 **المهام** (p.283, verbatim) :
 
-- ماذا يعني الكاتب حين يعرّف السلطة بما هي " البنية الأساسية للسياسي"؟
+- ماذا يعني الكاتب حين يعرّف السلطة.بما هي " البنية الأساسية للسياسي"؟
 - أيّة علاقة بين السلطة وتاريخ الإنسان ؟
 - كيف تشكّل السلطة الإنسان و تضلّه في الوقت نفسه ؟
 - كيف أفهم استحضار الكاتب لشخصيّة سقراط؟
@@ -2610,7 +2609,7 @@ gouvernement, produit nécessairement la guerre civile.**
 **المهام** (p.286, verbatim) :
 
 - بأيّ معنى تعدّ الحكومة اختراعا مفيدا؟
-- ما هيّ الحجج التي يسوقها الكاتب لاستبعاد القول بأنّ الدولة ضرورة مطلقة؟
+- ما هيّ الحجج التي يسوقها الكاتب لاستبعاد القول بانّ الدولة ضرورة مطلقة؟
 - استثمر نافذة سياقات فكريّة ( فلسفة التعاقد ) للكشف عن ضمنيات موقف الكاتب.
 - أتبيّن دلالة " مثال الهندي " وأوضّح وظيفته الحجاجيّة.
 - أيّ ضرب من الصراع يوجب قيام الدولة؟
@@ -2729,10 +2728,29 @@ leur misère grandit ; ils aspirent au pouvoir et se saisissent d'abord de son p
 **l'argent** — impuissants pourtant. Ils grimpent les uns sur les autres comme des **singes**,
 se bousculant dans la boue vers l'**abîme** : chacun rêve du trône, croyant le bonheur assis là,
 alors que souvent c'est la boue qui monte au trône, et le trône qui tombe dans la boue. Ce sont
-tous des fous furieux, des singes agités escaladant le socle de leur **idole froide**. Là où
-finit l'État commence l'homme véritable : y monte le **chant de la nécessité**, mélodie unique et
-sans réplique. **Là où finissent les États, regardez, mes frères : ne voyez-vous pas
-l'arc-en-ciel et les ponts du surhumain ?**
+tous des fous furieux, des singes agités escaladant le socle de leur **idole froide**. D'où
+l'appel imprimé en fin de page : **« brisez les fenêtres et sautez-en pour vous sauver »**
+(`حطّموا النوافذ واقفزوا منها لتنجوا بأنفسكم`) — fuyez le **culte des idoles**, cette
+« religion des intrus de la vie » (`عبادة الأصنام … دين الدخلاء على الحياة`) ; c'est **hors** de
+l'État que les **grandes âmes** (`كبار النفوس`) trouvent refuge, et la page se clôt sur
+**« bienheureux les petits, les pauvres ! »** (`فطوبى لصغار الفقراء!`). ⇒ Ce motif — **retraite
+hors de l'État / bénédiction des petits** — porte la مهمّة n° 3 : ne pas le laisser tomber au
+resserrement. Là où
+finit l'État commence l'homme véritable : y monte le **chant de la nécessité**, aux accents
+affranchis de toute soumission et de toute entrave. **Là-bas, aux dernières frontières des États,
+arrêtez-vous et levez les yeux, mes frères : ce que vous voyez sous l'arc-en-ciel, c'est le
+passage que franchit l'homme supérieur.**
+
+> ⚠️ **Traduction : celle du manuel, et elle seule.** Le manuel imprime la version arabe de
+> **فليكس فارس**, explicitement `( بتصرّف لجنة التأليف )` — remaniée par la commission. Les deux
+> phrases ci-dessus rendent l'arabe imprimé
+> (`فهنالك يتعالى نشيد الضرورة بنغماته المحررة من كلّ مطاوعة وتقييد` ·
+> `هنالك عند آخر حدود الدول، قفوا وتطلّعوا، يا إخوتي، إنّما ترون تحت قوس قزح المعبر الذي يجتازه الإنسان الأسمى.`),
+> **pas** les formules du Nietzsche français courant (« la mélodie unique et irremplaçable », « les
+> ponts du surhumain » au pluriel, l'interrogation rhétorique) : celles-là ne sont **pas** sur la
+> page. ⇒ **Ne jamais générer de question à partir d'une autre traduction** : la مهمّة n° 5
+> (`أيّة علاقة يقيمها نيتشه بين فناء الدولة وظهور الإنسان الأسمى؟`) porte sur **ce** texte-ci,
+> affirmatif et au singulier (`المعبر`).
 
 **الهامش** (une seule note, verbatim resserré) :
 
@@ -3044,10 +3062,10 @@ celui — ou à ceux — qui sont capables de s'en emparer et de le conserver.* 
 **rare** que les gouvernants donnent des ordres pleinement contradictoires : leur intelligence et
 leur souci de conserver le pouvoir les conduisent à veiller au maximum sur l'**intérêt général** et
 à conduire toutes choses selon les **jugements de la raison** — car, comme on l'a dit, nul n'a pu
-gouverner longtemps par la **violence**. Quant à l'**État**, le régime qui ne prend pour règle
-suprême que l'intérêt de celui qui commande ne respecte pas l'intérêt du peuple tout entier : le
-devoir est de ne pas compter comme **esclave** celui qui obéit à des ordres servant l'intérêt
-**particulier** du maître, mais comme **citoyen**. Sur cette base, **les États les plus libres sont
+gouverner longtemps par la **violence**. Quant à l'**État** — le régime où l'intérêt de celui qui
+commande **n'est pas** pris pour loi suprême, mais qui veille au contraire à l'intérêt du peuple
+**tout entier** — le devoir y est de ne pas compter pour **esclave** celui qui lui obéit, comme
+s'il n'y trouvait pas son intérêt propre, mais de le tenir pour **citoyen**. Sur cette base, **les États les plus libres sont
 ceux dont les lois s'appuient sur la saine raison** — car chacun y peut, s'il le veut, être libre,
 c'est-à-dire vivre par pur choix selon la raison. De même, les **enfants** ne sont pas des
 esclaves bien qu'ils doivent obéir aux ordres de leurs parents, parce que les ordres des parents
@@ -3055,6 +3073,15 @@ visent l'intérêt de l'enfant avant tout. La distinction se formule ainsi : **l
 contraint d'obéir à des ordres qui servent l'intérêt du maître ; **le fils** exécute des ordres
 de ses parents qui servent son propre intérêt ; **le citoyen** exécute les ordres du gouvernant,
 lesquels servent l'intérêt **général** — et par conséquent son intérêt propre.
+
+> ⚠️ **Le pivot du سند, à ne pas retourner.** La phrase sur l'État est une **définition positive**
+> du régime légitime, pas la description d'un mauvais régime. Texte imprimé (p.299) :
+> `أمّا الدولة ونظام الحكم الذي لا تؤخذ فيه مصلحة الأمر بوصفها قانونا أسمى، بل يراعي مصلحة الشعب كله`
+> `— فمن الواجب ألاّ يُعدّ من يطيعه عبدا لا يحقّق مصلحته الخاصّة، بل مواطنا.`
+> La négation `لا تؤخذ` porte sur **l'intérêt du gouvernant** (il n'est *pas* pris pour loi suprême)
+> et `بل يراعي مصلحة الشعب كله` dit ce que ce régime fait **au contraire**. C'est la clé de la 7ᵉ
+> مهمّة (`ما وجه التمييز بين العبد والطفل والمواطن؟`) : dans **cet** État-là, celui qui obéit est
+> **citoyen**, non esclave.
 
 **الهوامش** : ⚠️ **aucun** encadré de note.
 
@@ -3137,9 +3164,9 @@ la vérité, produite par le **choc de la vérité avec l'erreur**.
 
 - بأيّ معنى ينكر الكاتب على الشّعب الحق في فرض سلطته؟
 - ما وجه الضرر في منع الفرد من التعبير عن رأيه؟
-- أيّ غُنم يمكن أن يترتّب على تمكين الفرد من حقّه في التعبير عن رأيه؟
+- أيّ غُنُم يمكن أن يترتّب على تمكين الفرد من حقّه في التعبير عن رأيه؟
 - هل من حقّ سلطة الأغلبيّة أن تقصي حقوق الأقليّات؟ أعلّل جوابي في فقرة قصيرة.
-- هل يمكن أن نتصوّر حدّا لحقّ الفرد في التعبير عن رأيه دون إخلال بمقوّمات النظام الديمقراطي؟
+- هل يمكن أن نتصوّر حدّا لحقّ الفرد في التعبير عن رأيه دون إخلال.بمقوّمات النظام الديمقراطي؟
 
 **Encadré-citation (p.302)** : « ولكن منع الإنسان من التعبير عن رأيه شر، لأنّ فيه سلب الإنسانية
 كلها » — **ميل**.
@@ -3222,10 +3249,20 @@ pupitre.
 > ترجمة . نايلة الصالحي، منشورات الجمل، ألمانيا، 2003. ص 37—41 (بتصرّف لجنة التأليف)
 > `Karl MARX; La question juive, 1844. in '' Pages choisies" par M. Rubel, Rivière, p 165`
 
+**Les trois articles cités par le manuel** (reproduits textuellement p.305 — ils occupent près de
+la moitié de la page et portent directement 3 des 7 مهامّ) :
+
+> **المادة 2** : « هذه الحقوق (الحقوق الطبيعية والحقوق التي لا تسقط بالتقادم) هي : المساواة، الحريّة، الأمن، والملكيّة ».
+> **المادة 6** : « الحريّة هي القدرة التي للإنسان على فعل ما لا يُلحق ضررا بحقوق الآخرين » — ou, selon la formule de l'**إعلان حقوق الإنسان لسنة 1791**, « القدرة على فعل ما لا يلحق ضررا بالآخرين ».
+> **المادة 16 (دستور 1793)** : « إن الحقّ في الملكيّة هو الحقّ الذي لكلّ مواطن في أن يتمتّع بممتلكاته والتصرّف فيها على هواه، بعائداته، بثمرة عمله وجهده ».
+
+La limite que la loi trace à la liberté est imagée par le manuel : `كما يرسم وتدُّ السّور الحدودَ
+بين حقلين` — « comme le piquet d'une clôture trace la limite entre deux champs ».
+
 **Thèse (reformulée, R-2)** : les « droits de l'homme », distingués des droits du citoyen, ne
 sont que les droits du membre de la **société bourgeoise** — l'homme **égoïste**, séparé de
-l'homme et de la communauté ; la liberté qu'ils consacrent (art. 2, 6 et 16 de la Constitution
-de 1793) se fonde sur la **séparation** des hommes, non sur leur lien, et trouve son usage
+l'homme et de la communauté ; la liberté qu'ils consacrent (art. 2, 6 et 16 ci-dessus, de la
+Constitution de 1793) se fonde sur la **séparation** des hommes, non sur leur lien, et trouve son usage
 pratique dans la **propriété privée**. L'émancipation politique fait donc de la communauté
 politique un simple **moyen** de conserver ces droits et du **citoyen le serviteur** de l'homme
 égoïste : l'homme réel y est le **bourgeois**, non le citoyen.
@@ -3350,7 +3387,8 @@ supériorité est laide et que l'injustice consiste à vouloir dominer autrui �
 d'être au niveau des autres, faute de pouvoir les égaler en valeur. Or la **nature** montre
 partout l'inverse, chez les animaux comme chez les hommes : le **juste**, c'est que le **plus
 fort domine le plus faible**, et le supérieur l'emporte. Ceux qui agissent ainsi (Xerxès
-attaquant la Grèce) suivent la **vraie nature du droit**, la **loi de la nature** — fût-elle
+attaquant la Grèce, **ou son père attaquant les « Scythes »** — `أوأبوه "السيثيين"`, ce qui donne
+son objet au هامش 3) suivent la **vraie nature du droit**, la **loi de la nature** — fût-elle
 contraire à la loi que **nous** posons pour dresser, dès l'enfance et comme des lionceaux, les
 meilleurs et les plus forts d'entre nous, afin de les asservir par la force de la **prédication
 et de l'endoctrinement**.
@@ -3363,7 +3401,7 @@ et de l'endoctrinement**.
    مصر ثم قضى ثلاث سنوات في إعداد أسطول وجيش كبير لمعاقبة الإغريقيين على مساعدتهم الأيونية في
    حربهم مع الفرس. أحرق أثينا بعد فرار اليونانيين منها.
 3. **السيث** `Les Scythes` اسم يطلق على سكان منطقة تدعى `Scythie` في شمال البحر الأسود، بلد مقسم
-   اليوم بين مولدافيا وأوكرانيا وروسيا الشمالية، وهم قبائل رحل يسكنون سباسب كائنة بين البحر
+   اليوم بين مولدافيا وأوكرانيا وروسيا الشمالية، وهم قبائل رحل يسكنون سباسب كائنة بين المجر
    الحالية وجبال تركستان.
 4. **زوس** `ZEUS` : في الميثولوجيا الإغريقية، إله السماء ورب أرباب الأولمب.
 5. **غورجياس** `Gorgias` : (487 —380 ق.م)، سفسطائي يوناني من أصل صقلّي قدم إلى أثينا للدفاع عن
@@ -3372,10 +3410,13 @@ et de l'endoctrinement**.
    أفلاطونيّة موضوعها الخطابة أو فنّ الإقناع الذي يدافع عنه غورجياس في مقابل سقراط الذي يؤسّس
    خطاب الحقيقة.
 
-*(⚠️ deux oddités imprimées dans le هامش 2 : le point après `(Darios)` coupe la phrase
-(`ابن داريوس الأكبر وأتوسّا` est la lecture attendue), et **Cyrus le Grand** est orthographié
-`سيريس الأكبر / Syrus Le Grand`. Dans le هامش 3, `سباسب` pour `سباسب/سهوب` et « بين البحر
-الحالية » sont imprimés tels quels. Constats, pas corrections.)*
+*(⚠️ deux oddités imprimées, toutes deux dans le هامش 2 : le point après `(Darios)` coupe la
+phrase (`ابن داريوس الأكبر وأتوسّا` est la lecture attendue), et **Cyrus le Grand** est
+orthographié `سيريس الأكبر / Syrus Le Grand`. Constats, pas corrections.
+Le هامش 3 ne porte **aucune** anomalie : `سباسب` est un pluriel arabe régulier de `سبسب`
+(« steppe, désert »), et `المجر الحالية` désigne la **Hongrie** actuelle — vérifié au rendu
+600 dpi, à comparer au `البحر الأسود` imprimé deux lignes plus haut dans la même note, dont le
+tracé est tout autre.)*
 
 **الكاتب** : ⚠️ **renvoi**, pas de notice. Imprimé (verbatim) :
 **أفلاطون : انظر التعريف بالكاتب المصاحب للسند عدد 9. ( الإنيّة والغيريّة )**
@@ -3482,7 +3523,9 @@ base** de la société est suffisamment juste, il faut reconnaître les lois inj
 **obligatoires**, à condition qu'elles ne dépassent pas **un certain degré d'injustice**. Tracer
 cette limite conduit au problème plus profond de l'**obligation et du devoir politiques**, où
 des principes s'opposent — les uns conseillant l'obéissance, les autres le contraire : il faut
-donc affronter ces exigences par une **conception des priorités** appropriée.
+donc affronter ces exigences par une **conception des priorités** appropriée, **et dans les
+limites du contexte que nous avons retenu** (`وضمن حدود السّياق الذي رجحناه` — restriction
+imprimée, à ne pas laisser tomber).
 
 **الهوامش** : ⚠️ **aucun** encadré de note — ni p.312 ni p.313.
 
@@ -3523,9 +3566,9 @@ la p.313 ne porte **que** les `المهام`, l'illustration et l'encadré-citat
 
 ###### سند 20 — المواطن العالمي — p.314
 
-**Auteur tel qu'imprimé** : ⚠️ **إيبكتات** — et non « إيبكتاتس » comme l'annonce le فهرس
-(vérifié au zoom sur la ligne de référence **et** sur le bloc `الكاتب`). Translittération latine
-imprimée : `EPICTETE`.
+**Auteur tel qu'imprimé** : **إيبكتات** — **même graphie au فهرس** (p.407, ligne 20), sur la ligne
+de référence et dans le bloc `الكاتب`. Il n'y a **aucune divergence** فهرس/page ici (revérifié au
+rendu 600 dpi sur les trois occurrences). Translittération latine imprimée : `EPICTETE`.
 
 **التمهيد** (verbatim) :
 
@@ -3604,10 +3647,18 @@ autoritaire des communautés culturelles.
 
 **الكاتبة** (notice, verbatim resserré) : **إتيان تاسان** — مفكّرة وأستاذة فلسفة معاصرة، نشرت في
 مجلّة « الفكر » مقالا عنوانه « أوروبا : هل هي جماعة سياسيّة؟ » (نوفمبر 1991)؛ كما نشرت فيها
-« الهويّة القوميّة والمواطنة السياسيّة » (جانفي 1994). المقال المقتطف منه النصّ reprend des
-questions traitées lors de séminaires et conférences aux universités nationales de Bouficha et
-Carthage, à l'université de Colombie et à celle du Chili, et lors d'un colloque tenu à Paris sous
-le titre « **الحق، الديمقراطيّة والفضاء العمومي** » (جانفي 1997).
+« الهويّة القوميّة والمواطنة السياسيّة » (جانفي 1994). وفي المقال الذي اقتطف منه النصّ تستعيد
+مسائل سبقت أن تناولتها في ندوات ومحاضرات ألقتها بالجامعات الوطنيّة **ببوفوتا وقرطاجنّة بكولومبيا**
+وجامعة الشيلي وخلال ملتقى عُقد بباريس تحت عنوان « **الحق، الديمقراطيّة والفضاء العمومي** »
+(جانفي 1997).
+
+> ⚠️ **Les trois lieux sont sud-américains, pas tunisiens.** `بوفوتا` = **Bogotá** ;
+> `قرطاجنّة` = **Cartagena** — la ville **colombienne**, Carthage s'écrivant `قرطاج` ;
+> `بكولومبيا` est un locatif (« **en Colombie** ») qui régit les **deux** villes et n'est pas
+> le nom d'une université. Lire donc : « les universités nationales de **Bogotá** et de
+> **Cartagena, en Colombie**, et l'université du **Chili** ». Vérifié au rendu 600 dpi.
+> ⇒ La notice imprimée est **intégralement en arabe** : ne jamais la restituer en français au
+> milieu d'un bloc annoncé verbatim — c'est ce basculement qui avait fait dériver les toponymes.
 
 > ⚠️ **Anomalie de la source, non arbitrée** : le manuel intitule l'encadré « **الكاتبة** » et
 > emploie le **féminin** tout du long (« مفكّرة وأستاذة … نشرت … تناولتها »). Étienne Tassin est un
@@ -3655,6 +3706,12 @@ territoire : que les individus exercent leurs droits **en tant qu'êtres humains
 qu'êtres nationaux — un modèle multiculturel où la diversité ethnique et les identités plurielles
 soient reconnues.
 
+⚠️ **Passage à ne pas perdre** — c'est la réponse à la 1ʳᵉ مهمّة (`ولِمَ اعتبر طموحا مشتركا؟`).
+Le manuel imprime : `ولم تتحقّق المواطنة الديمقراطيّة إلاّ في عدد محدود من البلدان، وفوق ذلك، حصل
+هذا الأمر في الغالب ضمن قيود. لكنّ هذا الطّموح تتقاسمه معظم شعوب العالم.` — la citoyenneté
+démocratique **n'a été réalisée que dans un nombre restreint de pays**, et le plus souvent
+**sous contraintes** ; mais **cette aspiration, la plupart des peuples du monde la partagent**.
+
 **Pas d'encadré الهامش sur ce سند** (constaté).
 
 **الكاتب** (notice, verbatim resserré) : **ستيفان كاستلاس (1947)** — باحث أنجليزي معاصر وأستاذ
@@ -3688,8 +3745,11 @@ chemise et cravate dont la tête est un **globe terrestre**, tenant un journal.
 
 > **Pages lues** : p.319–334 (intégral, rendu 200 dpi ; passages douteux revérifiés à 400-450 dpi).
 > **Source** : manuel élève `210402P00`, مبحث 3.1 « الدّولة : السّيادة والمواطنة ».
-> ⚠️ La numérotation du فهرس et celle imprimée **ne coïncident pas partout** — voir § Écarts
-> relevés en fin de section.
+> ⚠️ Ce ne sont **pas les numéros** qui divergent entre le فهرس et les pages, mais les
+> **libellés** : le فهرس (p.408) imprime `نافذة كيفيّات للتفكير` (avec le لـ) là où la page 335
+> imprime `كيفيات التفكير`, **sans** le mot `نافذة` ; de même le فهرس (p.407) imprime
+> `نافذة سندات التفكير في المسألة` là où la page 278 imprime `نافذة سندات للتفكير في المسألة`.
+> Les numéros, eux, concordent.
 
 **p.319 — page d'ouverture de la نافذة.** Titre imprimé en écriture calligraphique :
 **نافذة دعائم للتفكير في المسألة**. Image : une pile de livres reliés rouge avec une paire de
@@ -4350,7 +4410,7 @@ fait que **يضع كل واحد شخصه وما له من قوة أو كامل �
 
 | Concept | Définition imprimée |
 | --- | --- |
-| **■ حالة الطبيعة** | « هي **الوضع الذي كان عليه الناس قبل نشأة المجتمع المدني والدولة**، وتقال **في مقابل الحالة المدنية**. وهي **حالة مفترضة أو متصورة تصوّرا عقليا وليست مرحلة تاريخية** ». ⚠️ Contredit en apparence la note de la p.332 sur Locke — voir § Écarts relevés. |
+| **■ حالة الطبيعة** | « هي **الوضع الذي كان عليه الناس قبل نشأة المجتمع المدني والدولة**، وتقال **في مقابل الحالة المدنية**. وهي **حالة مفترضة أو متصورة تصوّرا عقليا وليست مرحلة تاريخية** ». ⚠️ **Contradiction imprimée, arbitrée ici** : la p.332 écrit que **لوك** tient حالة الطبيعة pour une `واقعة تاريخية` et que **les autres** philosophes du contrat en font une `فرضية عمل` ; la glose du جهاز المفهومي (p.333) énonce en revanche, sans réserve, `وليست مرحلة تاريخية`. La glose vaut donc pour la **doctrine générale du contrat**, **pas** pour Locke. ⚠️ **Ne jamais poser de question fermée** du type « حالة الطبيعة : historique ou hypothétique ? » sans nommer l'auteur. |
 | **■ الحق الطبيعي** | « هو **القوة الطبيعية ذاتها** أي **جملة القوى التي منحتها الطبيعة للإنسان**، وهو أيضا **ما يخوّل للإنسان القيام به بموجب الطبيعة أو بموجب القانون الطبيعي** ». |
 | **■ الإرادة العامة** | « هي **عمل محض للإدراك** الذي ينظر، **في صمت الأهواء**، إلى **ما يمكن الإنسان أن يطلبه من نظيره، وما يحق لهذا الإنسان أن يطلبه من نظيره، وما يحق لهذا النظير أن يطلبه منه**، كما تفيد **إرادة الجسم الاجتماعي المتحد في مصلحة مشتركة**. والإرادة العامة هي **الأساس الشرعي لكلّ سيادة عند روسو** ». |
 | **■ الطبيعة البشرية** | « **مقولة تحيل على معطيات الإنسان الطبيعية والتي تحدد أفعاله وعلاقاته** ». |
@@ -4611,8 +4671,11 @@ troisième porte le critère de validité (**une bonne définition est celle qui
 
 ⚠️ **Aucun سند, aucune مهام pour ce تمرين** — c'est le seul des quatre dans ce cas.
 Le concept mis en travail (**المجتمع المدني**) n'est **pas** défini par le manuel ici : il est
-donné **comme exercice**, pas comme contenu. ⇒ Ne jamais traiter « المجتمع المدني » comme une
-تحديدة du chapitre : le manuel n'en donne aucune.
+donné **comme exercice**, pas comme contenu. ⇒ **La p.336 ne définit pas** المجتمع المدني — elle
+le donne à définir. Mais le مبحث le définit **ailleurs**, deux fois : au `الجهاز المفهومي` de
+فلسفة العقد (**p.333**) et au ¶1 du نصّ مطوّل (**p.340**). ⇒ C'est **exactement** la
+`مرجعيّة نظريّة` que la تمشّية 3 du تمرين 2 demande d'aller chercher : renvoyer l'élève à la
+p.333, pas lui dire que la notion n'est pas traitée.
 
 **■ التمشّيات (p.337, cadre jaune à 4 lignes encadrées, verbatim)** — la démarche s'imprime **en
 haut de la page suivante**, détachée de son تمرين :
@@ -4873,7 +4936,7 @@ conceptuel le plus sûr de la page, et il recoupe les تحديدات de la نا�
 | --- | --- |
 | **المجتمع المدني** | le nom donné à **toute دولة**. |
 | **المدينة** | le nom donné au **corps de l'État dans son ensemble** (هيئة الدولة بأكملها). |
-| **الشؤون العامة** | ce que **صاحب السلطة** administre. |
+| **شؤون الدولة** | les **الشؤون العامة** administrées par **صاحب السلطة**. *(Imprimé : `وتُسمَّى الشؤون العامة التي يديرها صاحب السلطة شؤون الدولة.` — le terme **défini** est `شؤون الدولة`, le reste en est la définition.)* |
 | **مواطنون** | les hommes **en tant qu'ils jouissent de tous les avantages de la cité selon le droit civil**. |
 | **رعايا** | les mêmes, **en tant qu'ils sont tenus d'obéir aux lois de la cité et de se soumettre à ses institutions**. |
 
@@ -5563,11 +5626,22 @@ le chiffre **1**, exactement comme celui de la وضعية précédente (p.349) �
   **Thèse (reformulée)** : la réflexion sur les **fins** est aujourd'hui paralysée par un préjugé
   si banal et si enraciné dans la culture qu'il s'impose comme une évidence — préjugé qui ne porte
   pas sur telle valeur traditionnelle mais sur **la définition même de la morale et de sa
-  fonction** : on croit que la fonction de l'éthique est de suivre l'évolution historique des
-  valeurs et de dire, à chaque époque, ce qui s'impose. Or sa tâche est **toujours la même** :
-  déterminer les **conditions internes** qui rendent un acte pur et authentique. C'est par
+  fonction** : on croit d'ordinaire, en vertu de ce préjugé, que la fonction de la morale
+  **reste la même** (`تظلّ هي هي`) à travers l'évolution des idéologies et des mœurs et
+  l'évolution historique des valeurs et des idéaux, et qu'elle consiste à **énoncer ce qui
+  s'impose** (`بيان ما يلزم`) sur le plan de l'acte, lui-même soumis à l'ordre des fins. Or la
+  tâche de la morale consiste, en somme et de façon permanente, à **énoncer la pureté de l'acte
+  et son authenticité**, en déterminant les **conditions internes** requises pour qu'il soit tenu
+  pour pur et authentique. C'est par
   l'**authenticité de l'intention** (`أصالة القصد`) seule qu'un acte devient bon, digne d'estime, et
   **susceptible d'être universel** (`قابلا لأن يكون كونيّا`).
+
+  ⚠️ **Ne pas intervertir les deux membres.** Ce que la page range du côté du **préjugé**
+  (`الحكم المسبق`), c'est la **permanence** de la fonction de la morale à travers l'évolution des
+  valeurs, et sa réduction à `بيان ما يلزم`. Le seul « permanent » que la page assume
+  (`وبشكل دائم`) porte sur `بيان نقاء الفعل`. Une مهمّة comme
+  `كيف أفهم التعارض بين تغيّر القيم وثبات وظيفة الأخلاق؟` devient insoluble si l'on retourne
+  l'attribution.
 
 - **Notice « الكاتب »** (encadré vert, verbatim) :
   **روبار ميسراهي** 1926 : فيلسوف فرنسي من أصل تركي، متحصل على شهادة التبريز ودرّس طيلة ثلاثين سنة
@@ -5590,6 +5664,9 @@ le chiffre **1**, exactement comme celui de la وضعية précédente (p.349) �
 
 ###### الأبعاد الإشكاليّة للمسألة — p.351
 
+Le titre est encadré à gauche par un **carré rose portant « ؟ »** (pictogramme de la rubrique),
+symétrique du carré rouge/rose de droite.
+
 Page-outil entièrement à remplir par l'élève (cadres vides et pointillés). Elle est organisée en
 **deux blocs numérotés**.
 
@@ -5611,6 +5688,9 @@ Puis un cadre à 5 lignes numérotées 1→5, avec l'intitulé latéral (encadr�
 Sous ce cadre, deux consignes fléchées (**verbatim**) :
 - ▲ أنتبه إلى هذه المعاني وأتثبّت فيها.
 - ▼ أستحضر المعاني التي تناقضها.
+
+Entre les deux consignes et les colonnes, un **champ blanc à une ligne pointillée** (à remplir)
+reçoit les معاني contraires ; deux flèches en repartent vers les colonnes.
 
 Puis deux colonnes de travail, chacune surmontée de sa consigne et suivie d'un cadre à 4 lignes :
 - (à droite) **أصلها بالخير وأستخلص ما يترتّب من أسئلة أساسيّة :**
@@ -5730,19 +5810,26 @@ la tranche correspondante.)
 visée par tous** ; le **bonheur** est un bien, mais un bien **relatif à celui qui l'éprouve** — il y
 a un bonheur du cheval distinct de celui de l'homme, chaque être ayant sa perfection propre. D'où
 la distinction : le **bien** que tous désirent est un bien **général et par soi**, tandis que le
-**bonheur** est **relatif** et diffère selon ceux qui le visent, ce qui rend le **bien absolu**
-lui-même objet de désaccord. Le bonheur au sens propre suppose **intention, réflexion et volonté**
+**bonheur** est **relatif** et diffère selon ceux qui le visent, tandis que le **bien absolu**,
+lui, **n'est pas objet de désaccord** (`الخير المطلق غير مختلف فيه`).
+Le bonheur au sens propre suppose **intention, réflexion et volonté**
 et n'appartient donc qu'aux êtres doués de parole/raison (`النّاطقين`) — ce que l'animal atteint
 relève du hasard, non du bonheur. La raison ne pouvant se mouvoir à l'infini, il **faut** une fin
 dernière, et le devoir est de **connaître** cette fin ultime des biens pour en faire notre but,
 sous peine d'user notre vie à poursuivre ce qui n'est pas un bien.
 
+⚠️ **La négation `غير` porte tout l'argument.** C'est **parce que** le bonheur est relatif à celui
+qui le vise (`وهي تختلف بالإضافة إلى قاصديها`) que le bien absolu, lui, **ne l'est pas**
+(`فلذلك يكون الخير المطلق غير مختلف فيه`). La laisser tomber renverse la thèse de ابن مسكويه et
+détruit le raisonnement.
+
 **الهامشان** (titre de l'encadré imprimé **au duel** — verbatim) :
 1. **حدّه**: من التحديد، وهو التعريف.
 2. **المتقدمين**: المقصود بالخصوص أرسطوطاليس.
 
-⚠️ La notice appelle Aristote **« أرسطوطاليس »** ici, alors que le سند 1 l'imprime **« أرسطو »**.
-Variante constatée dans le même مبحث.
+⚠️ Le **هامش n° 2** appelle Aristote **« أرسطوطاليس »** ici, alors que le سند 1 l'imprime
+**« أرسطو »**. Variante constatée dans le même مبحث. *(La notice `الكاتب`, p.355, ne nomme jamais
+Aristote.)*
 
 **الكاتب** (p.355 — notice pleine, verbatim resserré) :
 > **أحمد بن مسكويه** : هوّ أحمد بن محمّد بن يعقوب مسكويه، فيلسوف معاصر للبيروني وابن سينا، وُلد في
@@ -5842,9 +5929,8 @@ en cause soit le nôtre ou celui d'autrui.
 1. **أبيقور** `Epicure` : ( 270 — 341 ق م) من أبرز الفلاسفة الذريين وهو أحد روّاد ما يسمّى بأخلاق
    اللّذة باعتبار أنّ الخير الأسمى عنده هو اللّذة.
 
-   ⚠️ **Tel qu'imprimé, l'intervalle se présente `( 270 — 341 ق م)`** — l'ordre visuel donne 270
-   puis 341, alors que lu comme un intervalle de dates il devrait se lire « 341 — 270 ق م ».
-   Vérifié par agrandissement : c'est bien la disposition imprimée. **Signalé, non corrigé.**
+   *(Intervalle composé mort → naissance, comme partout dans ce مبحث — voir
+   § Avertissement transversal sur les intervalles de dates. Valeur à retenir : 341 — 270 ق.م.)*
 
 **الكاتب** — ⚠️ **RENVOI**, imprimé verbatim :
 > **ستيوارت مل** راجع التعريف بالكاتب في السند عدد 13 (الدولة : السيادة والمواطنة)
@@ -5963,9 +6049,9 @@ pour le savoir.
 > وغير المباشرة للصراع اليائس، واللامعقول والمتشنّج الذي يخوض الإنسان غماره ضدّ الخطيئة وضدّ أهوال
 > الحياة التي تتأتّى منها.
 
-⚠️ **Dates telles qu'imprimées** : `( 1855-1813 )` pour Kierkegaard et `(430—354)` pour Augustin —
-dans les deux cas l'ordre visuel donne la borne haute puis la borne basse. Même phénomène de
-composition qu'au سند 4. **Signalé, non corrigé.**
+*(Les deux intervalles sont composés mort → naissance, comme partout dans ce مبحث — voir
+§ Avertissement transversal sur les intervalles de dates. Valeurs à retenir : Kierkegaard
+1813 — 1855, Augustin 354 — 430.)*
 
 **المهام** (p.363 — verbatim, 6 puces) :
 - ما هي طبيعة الواجب في نظر الكاتب؟ أحدّد الفرق بين ضربين من الواجب.
@@ -6060,13 +6146,21 @@ caractère **obligatoire** (`الإلزامية`), **désirable et désirée** (
 désirabilité est une propriété **constante de tout acte moral**. Le devoir, ou l'impératif kantien,
 n'est qu'**un des deux visages** du réel moral : les deux sont toujours présents et **inséparables**.
 Il n'est jamais arrivé qu'un acte procède du seul devoir, car un acte doit toujours se montrer bon
-d'une manière ou d'une autre ; inversement, il est peu probable que les deux faces soient **également
-désirables**, elles se soutiennent l'une l'autre. De même, la notion d'**obligation** — première
+d'une manière ou d'une autre ; inversement, il est peu probable que les deux faces **ne soient pas
+désirées**, **puisqu'elles appellent toujours un effort** (`إذ يستدعيان جهدا على الدوام`).
+De même, la notion d'**obligation** — première
 caractéristique de la vie morale — permet de **critiquer l'utilitarisme**, tandis que la seconde
 caractéristique fait apercevoir les **limites de l'explication kantienne** : l'hypothèse kantienne
 d'une **hétérogénéité radicale** entre raison et sensibilité rend malaisé de concilier cette
 hétérogénéité avec le fait que les fins morales sont, par un de leurs visages, **objets de désir** ;
 et si la sensibilité a la même fin que la raison, elle ne s'amoindrit pas en s'y soumettant.
+
+⚠️ **Double garde sur la phrase « inversement… ».** Le manuel imprime
+`وبالمقابل ليس من المحتمل ألاّ يكون الوجهان مرغوبا فيهما إذ يستدعيان جهدا على الدوام.` :
+(a) la négation `ألاّ` porte sur `يكون … مرغوبا فيهما` — il est peu probable que les deux faces **ne
+soient PAS** désirées, ce qui rend leur désirabilité **probable**, non improbable ;
+(b) la raison donnée est `إذ يستدعيان جهدا على الدوام` (« puisqu'elles appellent toujours un
+effort »), **pas** un soutien mutuel des deux faces, formule absente de la page.
 
 **هوامش** : **aucun encadré de notes.**
 
@@ -6086,22 +6180,40 @@ et si la sensibilité a la même fin que la raison, elle ne s'amoindrit pas en s
 
 ###### ⚠️ Avertissement transversal — les intervalles de dates sont composés à l'envers
 
-Dans ce مبحث, presque **tous** les intervalles en chiffres latins insérés dans un texte arabe
-apparaissent **dans l'ordre visuel inverse** de l'ordre logique attendu :
+Ce n'est **pas** une anomalie ponctuelle page par page : c'est **une seule convention de
+composition** du manuel (couche QuarkXPress en ordre visuel). Partout où un intervalle de dates est
+inséré dans ce مبحث, **la borne haute est écrite la première** — autrement dit **mort → naissance**,
+l'inverse de l'usage. **Sept** occurrences, une seule exception.
 
-| page | tel qu'imprimé | lecture attendue |
-| --- | --- | --- |
-| p.358 (هامش, أبيقور) | `( 270 — 341 ق م)` | 341 — 270 ق م |
-| p.360 (source, كانط) | `ص107 — 901` | ص 107 — 109 |
-| p.362 (notice, كيركغارد) | `( 1855-1813 )` | 1813 — 1855 |
-| p.362 (notice, أوغستين) | `(430—354)` | 354 — 430 |
-| p.375 (notice, دو أولباخ) | `(1789-1723)` | 1723 — 1789 |
+**Convention de ce tableau** : la colonne « ordre imprimé » **nomme** les bornes au lieu de les
+recopier. Une chaîne de chiffres recopiée dans un contexte arabe est elle-même retournée par
+l'algorithme bidi, si bien qu'un relevé littéral n'est ni lisible ni reproductible — c'est ce qui
+avait fait cohabiter ici deux conventions contradictoires. La colonne « valeur à retenir » est
+celle que la fiche emploie partout ailleurs.
 
-**Exception** : p.371 (notice, أبيقور) imprime `(341—271 ق.م)` — dans l'ordre attendu.
+| page | occurrence | ordre imprimé | valeur à retenir |
+| --- | --- | --- | --- |
+| p.358 | هامش, أبيقور | mort (270) puis naissance (341) | 341 — 270 ق.م |
+| p.362 | notice, كيركغارد | mort (1855) puis naissance (1813) | 1813 — 1855 |
+| p.362 | notice, أوغستين | mort (430) puis naissance (354) | 354 — 430 |
+| p.375 | notice, دو أولباخ | mort (1789) puis naissance (1723) | 1723 — 1789 |
+| p.379 | هامش, توكفيل | mort (1853) puis naissance (1805) | 1805 — 1853 ⚠️ *le manuel donne **1853** ; l'usage donne **1859*** |
+| p.389 | سياقات فكريّة, العدميّة, نيتشه | mort (1900) puis naissance (1844) | 1844 — 1900 |
+| p.397 | légende de la couverture, نيتشه | mort (1900) puis naissance (1844) | 1844 — 1900 |
+
+**Exception** : p.371 (notice, أبيقور) est le **seul** intervalle composé dans l'ordre attendu —
+naissance (341) puis mort (271).
 Et ⚠️ **cette notice donne 271 là où le هامش de la p.358 donne 270** pour la mort d'Épicure :
 **contradiction interne du manuel**, sur deux pages du même مبحث.
 
-Tout ce qui suit **reproduit la chaîne telle qu'elle est imprimée**, sans la remettre à l'endroit.
+**Cas distinct — ce n'est pas un intervalle de dates** : p.360, ligne de source de كانط, imprime
+**`ص107 — 901`**. `901` est la pagination **109** dont les chiffres sont retournés ; la référence
+réelle est **ص 107 — 109**. Consigné ici pour qu'on ne le range pas avec les intervalles ci-dessus.
+
+⚠️ **Règle unique, à appliquer partout** : les **blocs verbatim** (هوامش, notices, lignes de
+source) **reproduisent l'imprimé** ; le **texte courant et les reformulations normalisent**
+(naissance → mort) ; **ce tableau est le seul registre de l'anomalie**. Ne pas rouvrir de ⚠️
+locale sur un سند pour ce motif, et **ne jamais bâtir de question sur l'ordre des bornes**.
 
 ---
 
@@ -6482,6 +6594,9 @@ ne s'est que **fort peu** développée, même chez les nations les plus civilis�
 
 ###### سند 16 — حدود السعادة — p.376-377
 
+- **Auteur tel qu'imprimé** : **سغموند فرويد** ; ligne latine **`Sigmund FREUD`**.
+- **Titre du سند** : **حدود السعادة**
+
 **التمهيد** (verbatim) :
 
 > إننا لا نفعل غير التذكير بشائع الآراء عند القول: إنّ الناس، كل الناس، يرغبون في السعادة، لكننا
@@ -6528,6 +6643,10 @@ saturées d'un homme la main sur le visage, l'air accablé.
 
 ###### سند 17 — في السعادة الجديدة — p.378-379
 
+- **Auteur tel qu'imprimé** : **جان بودريار** ; ligne latine **`Jean BEAUDRILLARD`** ([sic],
+  l'usage étant *BAUDRILLARD*).
+- **Titre du سند** : **في السعادة الجديدة**
+
 **التمهيد** (verbatim) :
 
 > كثيرا ما تعرف الحضارة المعاصرة بما هي حضارة الوفرة والرفاه، لكل فيها حظ، لكأنّ الإنسان المعاصر
@@ -6557,7 +6676,7 @@ l'absence de la démocratie réelle et de l'égalité perdue.
 
 **الهامشان** (verbatim) :
 
-> 1 — **توكفيل** : `Alexis de Tocqueville (1805-1853)` فيلسوف فرنسي، عرف بدفاعه عن الفكر
+> 1 — **توكفيل** : `Alexis de Tocqueville(1853-1805)` فيلسوف فرنسي، عرف بدفاعه عن الفكر
 > الأرستقراطي، وبتأثره بالتجربة الديمقراطية الأمريكية، وبتأكيده على قيم الفردانية التي يميزها عن
 > الأنانية.
 > 2 — **لائحة حقوق الإنسان** : جملة المبادئ التي أقرها المجلس التأسيسي لسنة 1789 بفرنسا (أنظر نص
@@ -6565,8 +6684,12 @@ l'absence de la démocratie réelle et de l'égalité perdue.
 
 > ⚠️ Le هامش 2 **renvoie au مبحث 3.1**, سند 15 (ماركس, p.305) — renvoi inter-chapitres imprimé,
 > celui-ci résoluble puisque le chapitre est transcrit.
-> ⚠️ Les dates de Tocqueville sont imprimées **`(1805-1853)`** — l'usage donne 1805-1859. Recopié
-> tel quel, à ne pas « corriger » en génération, et à ne pas transformer en question.
+> ⚠️ Les dates de Tocqueville sont imprimées **`(1853-1805)`** — sans espace après le nom latin,
+> et **mort avant naissance**, comme tous les intervalles de ce مبحث (voir § Avertissement
+> transversal). Deux choses distinctes s'y superposent : l'**ordre** des bornes, qui n'est
+> qu'une convention de composition, et la borne elle-même — **le manuel donne 1853**, là où
+> l'usage donne **1859**. Valeur à retenir : 1805 — 1853, telle que le manuel la fixe. À ne pas
+> « corriger » en génération, et à ne pas transformer en question.
 
 **الكاتب** — ⚠️ **RENVOI** : « **جان بودريار: راجع التعريف ببودريار في السند عدد 22 (الإنيّة
 والغيريّة)** » → **مبحث 1.1, non encore transcrit.**
@@ -6594,6 +6717,10 @@ avachi dans un fauteuil devant un téléviseur, d'où jaillit une gerbe de frian
 > يحافظ على بداهته حالما نفكر في وضع للإنسان يكون فيه فاقدا لحريته، مما قد يبرر مساءلة السعادة من
 > جهة علاقتها بالحرية.
 
+- **Auteur tel qu'imprimé** : **روبير مسراهي** (ligne de source) / **روبار مسراهي** (notice) ;
+  ligne latine **`Robert Misrahi`**. Voir la note sur les **quatre** graphies, plus bas.
+- **Titre du سند** : **الحريّة السعيدة**
+
 **Référence imprimée** : روبير مسراهي؛ مقالة في السعادة، 2: الإيتيقا والسياسة والسعادة —
 `Robert Misrahi, Traité du bonheur, II Ethique, politique et bonheur, éd. seuil, Paris p-281-282`
 
@@ -6617,8 +6744,11 @@ réel effectif que dans le discours. Ce **glorieux absolu**, l'auteur l'appelle 
 كما ألّف « **الوجود والديمقراطية** » (1995) والذي نقد فيه بشكل جذري التصورات التقليدية حول الفرد
 والسياسة.
 
-> ⚠️ Graphie du nom **flottante dans le même chapitre** : « **مسراهي** » au titre du سند et à la
-> citation, « **روبار مسراهي** » à la notice, « **روبير مسراهي** » à la référence bibliographique.
+> ⚠️ Graphie du nom **flottante dans le même chapitre — quatre formes** : « **مسراهي** » au titre
+> du سند et à la citation (p.381), « **روبار مسراهي** » à la notice (p.380), « **روبير مسراهي** »
+> à la référence bibliographique (p.380), et — en amont — « **روبار ميسراهي** » à la notice de la
+> 2ᵉ وضعيّة استكشافيّة (**p.350**), où la ligne de source imprime pourtant « روبار مسراهي ».
+> Le فهرس annonce « مسراهي ».
 > ⚠️ **مسراهي apparaît deux fois dans le chapitre** : il est aussi la 2ᵉ وضعيّة استكشافيّة (p.350).
 > Le manuel **ne relie pas explicitement** les deux textes.
 > ⚠️ **بشلار** est ici orthographié ainsi (et non « باشلار ») — cohérent avec la p.257 du مبحث 2,
@@ -6639,10 +6769,19 @@ réel effectif que dans le discours. Ce **glorieux absolu**, l'auteur l'appelle 
 en robe blanche bondissant sur une plage.
 
 > ✅ **Fin de la نافذة سندات du مبحث 3.2** : 18 سندات, p.352-381.
-> ⚠️ **Deux notices d'auteur sur trois sont des RENVOIS au مبحث 1.1** (سند 16 → سند 24 ; سند 17 →
-> سند 22), chapitre **non transcrit** : ces deux renvois resteront irrésolus jusque-là.
+> ⚠️ **Deux des trois derniers سندات (16 et 17) ont pour notice un RENVOI au مبحث 1.1**
+> (سند 16 → سند 24 ; سند 17 → سند 22), chapitre **non transcrit** : ces deux renvois resteront
+> irrésolus jusque-là. Sur l'ensemble du مبحث, **13 des 18 سندات renvoient** (1, 3, 4, 5, 7, 8, 9,
+> 10, 11, 13, 14, 16, 17) et **5 seulement portent une notice pleine** (2, 6, 12, 15, 18).
 
 ##### 3.2.3 نافذة دعائم للتفكير في المسألة — p.382-396
+
+> ⚠️ **La plage p.382-396 est celle du فهرس, pas celle des pages.** La نافذة دعائم proprement dite
+> couvre **p.382-392** ; **كيفيات التفكير (p.393-396) est traitée par le manuel comme une نافذة
+> autonome**, avec son propre bandeau de titre dans le gabarit des autres نوافذ, et le sommaire de
+> la p.382 n'annonce que **deux** entrées. Le `3.2.3.3` est une **classification du sommaire
+> (فهرس, p.408), pas une donnée de la page** — voir le § *Écart فهرس / pages imprimées* en fin de
+> tranche.
 
 > **Pages lues** : p.382–396 (intégral). **Source** : manuel élève `210402` (CNP,
 > `210402P00.pdf`), مبحث 3.2 « الأخلاق : الخير والسّعادة ». Images de travail : rendu 150 dpi,
@@ -7262,6 +7401,8 @@ La نافذة comporte **4 تمارين** (p.394-396). Gabarit imprimé, en cart
   > دلالة**.
 - **السند** — **ج. ج. روسّو**, *أميل أو التربية*, **ص 111**, **ترجمة عادل زعيتر** ; référence
   latine imprimée sous la référence arabe : **`J. J. ROUSSEAU; Emile ou de l'éducation`**.
+  ⚠️ Le même ouvrage est cité **إميل أو في التربيّة** au سند 14 (p.373) et **أميل أو التربية** ici
+  (p.394) — deux graphies **et** deux traductions du titre dans le même مبحث. Signalé, non corrigé.
   *Thèse du passage* : **« ضعيف » et « قوي » ne sont pas des propriétés mais des rapports**
   (نسبة) — le rapport entre la puissance d'un être et ses besoins. Est **fort** celui dont la
   force excède les besoins, « **ولو كان حشرة أو دودة** » ; est **faible** celui dont les besoins
@@ -7368,10 +7509,8 @@ photographique de Nietzsche. Légendes : « ▲ أفول الأصنام » et «
 > الطمأنينة… لا شيء أغرب علينا مما كان يبدو جدّ مطلوب فيما مضى: طمأنينة النّفس
 > — **نيتشه**
 
-> ⚠️ Le titre du chapitre annoncé par le فهرس — « الأخلاق فضيلة مضادّة » — est à **vérifier sur
-> les p.398-401**, non couvertes ici. Le corps du texte, sa structure argumentative et
-> l'éventuelle présence de questions d'accompagnement restent **à transcrire** (sur le مبحث 2, la
-> نافذة نصّ مطوّل ne portait **aucun** questionnaire — ne rien présupposer).
+> ➡️ Le titre annoncé par le فهرس, le corps du texte, sa structure argumentative et la question du
+> questionnaire d'accompagnement sont traités dans la section suivante (p.398-401).
 
 ###### Le texte de نيتشه — p.398-401 (corps, structure argumentative)
 
@@ -7387,16 +7526,16 @@ photographique de Nietzsche. Légendes : « ▲ أفول الأصنام » et «
 > **الدار البيضاء، ص 35-43**
 
 ⚠️ **Droits (R-2)** : le texte de Nietzsche n'est **pas** reproduit ici. Il est restitué par le
-**découpage que le manuel imprime lui-même** — 6 sections numérotées et 11 repères marginaux — plus
+**découpage que le manuel imprime lui-même** — 6 sections numérotées et 14 repères marginaux — plus
 de courtes citations attribuées.
 
 **Dispositif de lecture** (constaté, identique à celui du مبحث 2) : texte continu **numéroté de 5
 en 5 lignes** (l.1 à l.135), découpé en **6 sections numérotées** (1 à 6, en rose), et accompagné en
-marge de **11 repères** qui explicitent le mouvement de l'argumentation.
+marge de **14 repères** qui explicitent le mouvement de l'argumentation.
 ⛔ **Aucun questionnaire imprimé** — ni أسئلة ni مهامّ, comme au مبحث 2. Le seul guidage est
 constitué des repères marginaux et de la numérotation des lignes.
 
-**Les 11 repères marginaux, verbatim, dans l'ordre** — c'est le découpage officiel de
+**Les 14 repères marginaux, verbatim, dans l'ordre** — c'est le découpage officiel de
 l'argumentation :
 
 | # | section | repère (verbatim) | lignes |
@@ -7416,8 +7555,8 @@ l'argumentation :
 | 13 | 6 | التأكيد على أنّ أخلاق الواجب تفصح عن عرض مرضي نقيض الحياة. | ~120-130 |
 | 14 | 6 | الانتهاء إلى تثمين الموقف اللاأخلاقي من جهة انحيازه إلى الإنسان والحياة. | ~135 |
 
-> ⚠️ **14 repères et non 11** après recomptage sur les quatre pages (p.398 en porte 4, p.399 deux,
-> p.400 quatre, p.401 trois plus un). Le décompte fait foi sur les pages, pas sur une attente de
+> ⚠️ **14 repères** après recomptage sur les quatre pages (p.398 en porte 4, p.399 deux,
+> p.400 cinq, p.401 trois). Le décompte fait foi sur les pages, pas sur une attente de
 > régularité.
 
 **Le mouvement d'ensemble (reformulé)** : Nietzsche part du **procédé** de la morale à l'égard des
