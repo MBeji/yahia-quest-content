@@ -58,6 +58,9 @@ permissions:
   pull-requests: write
   # Dispatcher content-ci.yml / pin-check.yml sur la branche.
   actions: write
+  # Ouvrir/refermer l'issue d'alarme quand l'ouverture de PR est impossible —
+  # c'est elle qui remplace le check rouge (voir l'étape de création).
+  issues: write
 
 jobs:
   open-pr:
@@ -112,10 +115,60 @@ jobs:
             echo "\`automerge.yml\` mergera dès qu'ils seront tous verts."
           } > "$body_file"
 
+          # Échec = ALARME VISIBLE, jamais un check rouge. La nuance décide du
+          # sort du dépôt : `automerge.yml` ne merge que si TOUS les check runs
+          # du SHA sont verts, et ce workflow tourne sur CHAQUE poussée de
+          # branche. Le laisser sortir en 1 quand le réglage manque ne bloquerait
+          # pas une PR, il les bloquerait TOUTES — la chaîne entière à l'arrêt,
+          # pour un bouton non coché. On rend donc le problème visible par une
+          # issue et on sort en 0. Vérifié en vrai : ce workflow a échoué ainsi
+          # sur sa propre PR d'introduction (#226), et c'est ce qui a mis le
+          # défaut au jour avant qu'il ne fasse des dégâts.
           if ! url="$(gh pr create --repo "$REPO" --base main --head "$BRANCH" \
             $draft_flag --title "$subject" --body-file "$body_file")"; then
-            echo "::error title=Auto-PR impossible::Activez Settings > Actions > General > Workflow permissions > « Allow GitHub Actions to create and approve pull requests », puis relancez ce workflow. Sans ce réglage le GITHUB_TOKEN ne peut pas créer de PR."
-            exit 1
+            echo "::warning title=Auto-PR impossible::La PR de '$BRANCH' n'a pas pu être ouverte — une issue de suivi est ouverte."
+            alarme="$(mktemp)"
+            {
+              echo "### 🤖 \`auto-pr.yml\` n'arrive pas à ouvrir les PR"
+              echo ""
+              echo "Dernière branche concernée : \`$BRANCH\`"
+              echo ""
+              echo "**Cause la plus probable** — le réglage n'est pas actif :"
+              echo "\`Settings > Actions > General > Workflow permissions >\`"
+              echo "\`« Allow GitHub Actions to create and approve pull requests »\`"
+              echo ""
+              echo "Sans lui, GitHub répond \`GitHub Actions is not permitted to create or"
+              echo "approve pull requests (createPullRequest)\` et le \`GITHUB_TOKEN\` ne peut"
+              echo "rien ouvrir."
+              echo ""
+              echo "**Ce que ça coûte tant que ce n'est pas fait** : on revient à l'état"
+              echo "d'avant ce workflow — une branche poussée par une session qui s'arrête"
+              echo "reste sans PR, indéfiniment. Huit branches étaient dans ce cas au"
+              echo "2026-08-24, dont la plus vieille datait de cinq semaines."
+              echo ""
+              echo "Ce workflow **ne rougit pas** pour autant, à dessein : \`automerge.yml\`"
+              echo "exige que tous les checks soient verts, donc un échec ici bloquerait"
+              echo "**toutes** les PR du dépôt. Cette issue est le canal ; elle se referme"
+              echo "toute seule à la première PR ouverte avec succès."
+            } > "$alarme"
+            gh label create auto-pr-hs --color b60205 \
+              --description "auto-pr.yml ne peut pas ouvrir de PR" 2>/dev/null || true
+            ex="$(gh issue list --label auto-pr-hs --state open --limit 1 --json number --jq '.[0].number // empty')"
+            if [ -n "$ex" ]; then
+              gh issue edit "$ex" --body-file "$alarme" >/dev/null
+            else
+              gh issue create --title "🤖 auto-pr.yml ne peut pas ouvrir de PR" \
+                --label auto-pr-hs --body-file "$alarme" >/dev/null
+            fi
+            echo "created=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # Une ouverture réussie prouve que le réglage est en place : on referme
+          # l'alarme si elle traînait, sinon elle survivrait à sa propre cause.
+          ex="$(gh issue list --label auto-pr-hs --state open --limit 1 --json number --jq '.[0].number // empty')"
+          if [ -n "$ex" ]; then
+            gh issue close "$ex" --comment "✅ Une PR vient d'être ouverte automatiquement ($url) — le réglage est en place. Fermeture automatique." >/dev/null || true
           fi
 
           if [ -n "$draft_flag" ]; then
@@ -145,6 +198,8 @@ jobs:
             fi
           done
           if [ "$failed" = "1" ]; then
-            echo "::error title=PR sans checks::Au moins un check n'a pas démarré. automerge.yml ne mergera pas un SHA sans check run — la PR resterait ouverte indéfiniment."
-            exit 1
+            # Même raison qu'à l'étape précédente : rougir ici bloquerait toutes
+            # les PR du dépôt. La PR concernée restera simplement ouverte sans
+            # checks — visible, et rattrapable par une relance de ce workflow.
+            echo "::warning title=PR sans checks::Au moins un check n'a pas démarré sur '$BRANCH'. automerge.yml ne merge pas un SHA sans check run : cette PR restera ouverte jusqu'à ce que ses checks tournent."
           fi
