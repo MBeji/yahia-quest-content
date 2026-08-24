@@ -21,6 +21,12 @@ on:
   pull_request:
   push:
     branches: [main]
+  # Indispensable à `auto-pr.yml`, pas un confort : une PR ouverte par le
+  # GITHUB_TOKEN n'émet PAS d'événement `pull_request` (garde anti-boucle de
+  # GitHub), donc ce workflow ne démarrerait jamais sur elle. `automerge.yml`
+  # refusant — à raison — de merger un SHA sans aucun check run, la PR
+  # dormirait indéfiniment. auto-pr.yml dispatche donc ce workflow lui-même.
+  workflow_dispatch:
 
 permissions:
   contents: read

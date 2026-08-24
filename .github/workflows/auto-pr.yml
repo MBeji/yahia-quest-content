@@ -1,0 +1,205 @@
+name: Auto PR (corpus)
+
+# Ouvre une PR pour toute branche poussée, puis lance ses checks.
+#
+# POURQUOI CE FICHIER EXISTE — le trou qu'il bouche, mesuré le 2026-08-24 :
+# huit branches `claude/*` portaient du travail JAMAIS livré, vieux de 4 à 5
+# semaines (automerge-corpus, etude-25-cloture-lot5c, etude-25-journal-lots-3-5,
+# etude-ia-deterministe-contenu, figures-eveil-2eme, figures-eveil-campagne,
+# lc2-lc4-garde-contenu, reorganiser-etudes-backlog). Aucune n'avait de PR.
+# Une session avait poussé puis s'était arrêtée, et RIEN ne ramassait derrière
+# elle : `automerge.yml` sait merger une PR verte, il ne sait pas en ouvrir une.
+# L'arena a `auto-pr.yml` depuis le 2026-07-12 et n'a pas ce problème.
+#
+# CE QUI DIFFÈRE DE LA VERSION ARENA, et pourquoi :
+#
+#   1. PAS d'armement d'auto-merge natif. Ce dépôt est PRIVÉ sur un compte
+#      GitHub Free : rulesets et protection de branche y sont indisponibles
+#      (403 « Upgrade to GitHub Pro or make this repository public »), donc
+#      aucun check n'est REQUIS, donc `gh pr merge --auto` n'a rien à attendre
+#      et ne peut pas s'armer. Décision du propriétaire, 2026-08-24 : on reste
+#      en gratuit. C'est `automerge.yml` (maison, sur `workflow_run`) qui merge
+#      quand tous les check runs du SHA sont verts.
+#
+#   2. Les checks sont DÉCLENCHÉS explicitement (dernière étape). Sans cela
+#      rien ne tournerait : une PR ouverte par le `GITHUB_TOKEN` n'émet PAS
+#      d'événement `pull_request` — c'est la garde anti-boucle de GitHub — et
+#      `content-ci.yml` / `pin-check.yml` ne se déclenchent que là-dessus.
+#      Zéro check ⇒ `automerge.yml` refuse de merger (à raison), et la PR
+#      dormirait. L'arena contourne ça avec un PAT ; ce dépôt n'en a pas, donc
+#      on dispatche. C'est pour cette dispatch que les deux workflows ont
+#      gagné un `workflow_dispatch` dans la même PR que ce fichier.
+#
+#   3. Pas de corps depuis `.github/pull_request_template.md` : ce dépôt n'en
+#      a pas. Le corps est écrit ici.
+#
+# PRÉREQUIS DE RÉGLAGE (sinon l'ouverture échoue, fort et nommée) :
+# Settings > Actions > General > Workflow permissions >
+# « Allow GitHub Actions to create and approve pull requests » doit être ACTIF.
+# Il ne l'était pas au 2026-08-24 (`can_approve_pull_request_reviews: false`).
+# L'étape de création dit exactement ça si elle est rejetée — un échec qui
+# s'explique lui-même vaut mieux qu'une PR qui n'apparaît jamais.
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+# Une exécution par branche ; une seconde poussée rapide remplace la première.
+concurrency:
+  group: auto-pr-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  # `read` par défaut au niveau du dépôt — c'est ce bloc qui donne l'écriture
+  # au job, et il suffit (automerge.yml merge de la même façon depuis le
+  # 2026-07-25). Créer la PR demande en plus le réglage cité en en-tête.
+  contents: write
+  pull-requests: write
+  # Dispatcher content-ci.yml / pin-check.yml sur la branche.
+  actions: write
+  # Ouvrir/refermer l'issue d'alarme quand l'ouverture de PR est impossible —
+  # c'est elle qui remplace le check rouge (voir l'étape de création).
+  issues: write
+
+jobs:
+  open-pr:
+    name: Ouvrir la PR de la branche poussée
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      REPO: ${{ github.repository }}
+      BRANCH: ${{ github.ref_name }}
+      HEAD_SHA: ${{ github.sha }}
+    steps:
+      - name: Checkout (sujet du commit de tête)
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          fetch-depth: 2
+
+      - name: Ouvrir la PR si aucune n'est ouverte
+        id: pr
+        run: |
+          set -euo pipefail
+
+          existing="$(gh pr list --repo "$REPO" --head "$BRANCH" --state open \
+            --json number --jq '.[0].number // empty')"
+          if [ -n "$existing" ]; then
+            echo "PR #$existing déjà ouverte pour $BRANCH — rien à créer."
+            echo "created=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          subject="$(git log -1 --pretty=%s "$HEAD_SHA")"
+
+          # Défaut : PR normale, qu'automerge.yml mergera si les checks passent.
+          # Opt-out en savepoint (draft) par PRÉFIXE DE BRANCHE. Le jeton
+          # `[wip]` dans le sujet est accepté pour compatibilité mais NE DOIT
+          # PLUS servir : une branche à commit unique squashe sur son sujet,
+          # donc le jeton fuit dans `main` (vécu deux fois dans l'arena).
+          draft_flag=""
+          case "$BRANCH" in
+            wip/*|draft/*|rescue/*) draft_flag="--draft" ;;
+          esac
+          case "$subject" in
+            *"[wip]"*|*"[WIP]"*|*"[draft]"*|*"[no-automerge]"*) draft_flag="--draft" ;;
+          esac
+
+          body_file="$(mktemp)"
+          {
+            echo "_PR ouverte automatiquement par \`auto-pr.yml\` pour la branche \`$BRANCH\`._"
+            echo ""
+            echo "Les checks sont dispatchés par ce même workflow (voir son en-tête :"
+            echo "une PR ouverte par le \`GITHUB_TOKEN\` n'émet pas d'événement \`pull_request\`)."
+            echo "\`automerge.yml\` mergera dès qu'ils seront tous verts."
+          } > "$body_file"
+
+          # Échec = ALARME VISIBLE, jamais un check rouge. La nuance décide du
+          # sort du dépôt : `automerge.yml` ne merge que si TOUS les check runs
+          # du SHA sont verts, et ce workflow tourne sur CHAQUE poussée de
+          # branche. Le laisser sortir en 1 quand le réglage manque ne bloquerait
+          # pas une PR, il les bloquerait TOUTES — la chaîne entière à l'arrêt,
+          # pour un bouton non coché. On rend donc le problème visible par une
+          # issue et on sort en 0. Vérifié en vrai : ce workflow a échoué ainsi
+          # sur sa propre PR d'introduction (#226), et c'est ce qui a mis le
+          # défaut au jour avant qu'il ne fasse des dégâts.
+          if ! url="$(gh pr create --repo "$REPO" --base main --head "$BRANCH" \
+            $draft_flag --title "$subject" --body-file "$body_file")"; then
+            echo "::warning title=Auto-PR impossible::La PR de '$BRANCH' n'a pas pu être ouverte — une issue de suivi est ouverte."
+            alarme="$(mktemp)"
+            {
+              echo "### 🤖 \`auto-pr.yml\` n'arrive pas à ouvrir les PR"
+              echo ""
+              echo "Dernière branche concernée : \`$BRANCH\`"
+              echo ""
+              echo "**Cause la plus probable** — le réglage n'est pas actif :"
+              echo "\`Settings > Actions > General > Workflow permissions >\`"
+              echo "\`« Allow GitHub Actions to create and approve pull requests »\`"
+              echo ""
+              echo "Sans lui, GitHub répond \`GitHub Actions is not permitted to create or"
+              echo "approve pull requests (createPullRequest)\` et le \`GITHUB_TOKEN\` ne peut"
+              echo "rien ouvrir."
+              echo ""
+              echo "**Ce que ça coûte tant que ce n'est pas fait** : on revient à l'état"
+              echo "d'avant ce workflow — une branche poussée par une session qui s'arrête"
+              echo "reste sans PR, indéfiniment. Huit branches étaient dans ce cas au"
+              echo "2026-08-24, dont la plus vieille datait de cinq semaines."
+              echo ""
+              echo "Ce workflow **ne rougit pas** pour autant, à dessein : \`automerge.yml\`"
+              echo "exige que tous les checks soient verts, donc un échec ici bloquerait"
+              echo "**toutes** les PR du dépôt. Cette issue est le canal ; elle se referme"
+              echo "toute seule à la première PR ouverte avec succès."
+            } > "$alarme"
+            gh label create auto-pr-hs --color b60205 \
+              --description "auto-pr.yml ne peut pas ouvrir de PR" 2>/dev/null || true
+            ex="$(gh issue list --label auto-pr-hs --state open --limit 1 --json number --jq '.[0].number // empty')"
+            if [ -n "$ex" ]; then
+              gh issue edit "$ex" --body-file "$alarme" >/dev/null
+            else
+              gh issue create --title "🤖 auto-pr.yml ne peut pas ouvrir de PR" \
+                --label auto-pr-hs --body-file "$alarme" >/dev/null
+            fi
+            echo "created=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # Une ouverture réussie prouve que le réglage est en place : on referme
+          # l'alarme si elle traînait, sinon elle survivrait à sa propre cause.
+          ex="$(gh issue list --label auto-pr-hs --state open --limit 1 --json number --jq '.[0].number // empty')"
+          if [ -n "$ex" ]; then
+            gh issue close "$ex" --comment "✅ Une PR vient d'être ouverte automatiquement ($url) — le réglage est en place. Fermeture automatique." >/dev/null || true
+          fi
+
+          if [ -n "$draft_flag" ]; then
+            echo "Créée $url en DRAFT (savepoint volontaire) — automerge.yml l'ignorera."
+          else
+            echo "Créée $url — automerge.yml la mergera dès que les checks seront verts."
+          fi
+          echo "created=true" >> "$GITHUB_OUTPUT"
+
+      # Sans cette étape, une PR ouverte ci-dessus n'aurait AUCUN check et
+      # dormirait pour toujours : `automerge.yml` refuse de merger un SHA sans
+      # check run (« zéro check = pas de merge »), ce qui est la bonne
+      # prudence. On ne dispatche que si on vient d'ouvrir la PR : quand une
+      # session ouvre la sienne par `gh pr create`, l'événement `pull_request`
+      # a déjà fait le travail et un second run serait du gaspillage.
+      - name: Lancer les checks sur la branche
+        if: steps.pr.outputs.created == 'true'
+        run: |
+          set -uo pipefail
+          failed=0
+          for wf in content-ci.yml pin-check.yml; do
+            if gh workflow run "$wf" --repo "$REPO" --ref "$BRANCH"; then
+              echo "Dispatché $wf sur $BRANCH."
+            else
+              echo "::warning title=Dispatch impossible::$wf n'a pas pu être lancé sur $BRANCH — vérifiez qu'il déclare bien `workflow_dispatch` sur la branche par défaut."
+              failed=1
+            fi
+          done
+          if [ "$failed" = "1" ]; then
+            # Même raison qu'à l'étape précédente : rougir ici bloquerait toutes
+            # les PR du dépôt. La PR concernée restera simplement ouverte sans
+            # checks — visible, et rattrapable par une relance de ce workflow.
+            echo "::warning title=PR sans checks::Au moins un check n'a pas démarré sur '$BRANCH'. automerge.yml ne merge pas un SHA sans check run : cette PR restera ouverte jusqu'à ce que ses checks tournent."
+          fi
