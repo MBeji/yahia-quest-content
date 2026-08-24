@@ -1,6 +1,15 @@
 # Étude 11 — Tuteur IA pédagogique « El Ostedh » (v2 — mode d'accompagnement personnalisé)
 
-> **Statut** : validée — Q-1…Q-9 arbitrées le 2026-07-20 par Mohamed (§7 ; huit sur les
+> **Statut** : **EN EXÉCUTION — 6 lots sur 8 livrés**, constatés sur `main` le 2026-08-24.
+> ⚠️ **L'état de cette étude ne se lit PAS dans ce document** : une grande partie de son
+> périmètre a été livrée sous D'AUTRES numéros (é29, é04, é07) et ses cases §4 sont restées
+> vides jusqu'ici. L'inventaire qui fait foi est celui de `STATUS.md` (arena#823). Livrés :
+> **lot 0** par é29 lot 1, **lot 1** (arena#816, correctif #817), **lots 2·3·4·5** (arena#823),
+> **lot 7 pour moitié** (la console admin vient de é29 lot 5). **Restent** : le **lot 6**
+> (bilans hebdo batch — `tutor_digests` et son workflow : zéro occurrence dans le dépôt) et la
+> seconde moitié du **lot 7** (compteur d'énergie côté élève, hit-rate du cache) — 🚧 **une
+> session y travaille depuis le 2026-08-24**. Voir le §8.
+> Validée — Q-1…Q-9 arbitrées le 2026-07-20 par Mohamed (§7 ; huit sur les
 > recommandations, **Q-4 écartée** : le tuteur s'appelle « El Ostedh »). Réécriture v2 du
 > 2026-07-17 commandée par l'humain, remplaçant la v1 du 2026-07-04 (gelée le 2026-07-11 avec
 > l'étude 01). Le **dégel de la conception** était acté par cette commande ; **la condition
@@ -782,14 +791,14 @@ Q-1), puis 3 → 4, et seulement ensuite 5/6/7 selon les KPI et les arbitrages Q
 | 6   | **Bilans hebdo batch** : digests élève + parent + push                                                 | migration `tutor_digests` ; workflow `.github/workflows/tutor-digests.yml` (dimanche 05:00 UTC : compose depuis `get_student_report`, Batch API, écrit via `PROD_SUPABASE_DB_URL`) ; UI dashboard + rapport parent                                                                                                                                                                                                 | unit composition des entrées (agrégats→prompt) ; pgTAP RLS `tutor_digests` (parent lié) ; dry-run workflow avec Fake                                                                                                                              | 2                                                                  |
 | 7   | **Énergie UI complète + admin avancé** : compteur, recharge via `hints`, écran limite, hit-rates, 👎   | UI énergie (compteur, recharge, état « reviens demain ») ; `recharge_tutor_energy` branchée ; admin : hit-rates, taux discard, échantillon qualité                                                                                                                                                                                                                                                                 | pgTAP recharge atomique (pas de double-consommation d'item) ; unit UI états ; captures FR + AR                                                                                                                                                    | 1                                                                  |
 
-- [ ] Lot 0 — socle IA (adaptateur, comptabilité, kill-switch, admin v0)
-- [ ] Lot 1 — explication personnalisée post-review (+ énergie, feedback)
-- [ ] Lot 2 — plan du jour personnalisé (+ push)
-- [ ] Lot 3 — chat streaming cadré (+ historique)
-- [ ] Lot 4 — boucle de compréhension & escalades (+ compteur parent)
-- [ ] Lot 5 — exercices ciblés (sélection ; génération gated Q-8)
-- [ ] Lot 6 — bilans hebdo batch (élève + parent)
-- [ ] Lot 7 — énergie UI complète + admin avancé
+- [x] Lot 0 — socle IA — **rayé et repris par é29 lot 1** (Q-1 : socle unique), arena#807. Le budget et l'énergie du chemin PLATEFORME, restés ouverts, sont branchés par arena#823 (R-12/R-13)
+- [x] Lot 1 — explication personnalisée post-review — arena#816, correctif pgTAP arena#817 (2026-08-22)
+- [x] Lot 2 — plan du jour personnalisé — arena#823 (2026-08-23). Le moteur venait de é04 A1.1 + é07 lot 5 ; le lot livre la **voix** (bibliothèque de coaching i18n, zéro token — R-10) et le rappel push opt-in
+- [x] Lot 3 — chat streaming cadré — arena#823. `/api/tutor/stream`, `resolveSupabaseAuth` extrait du middleware, champ libre borné réservé au collège (Q-6), catégorie bien-être qui n'atteint jamais le modèle (R-6)
+- [x] Lot 4 — boucle de compréhension & escalades — arena#823. Mini-check servi depuis le STOCK, corrigé serveur sans XP ni pièce ni SM-2 (R-11), les trois signaux R-8, escalade ordonnée en 5 marches, compteur parent en agrégats seuls
+- [x] Lot 5 — exercices ciblés — sélection par arena#823 ; **la chaîne §3.8 EST la Forge de é29 lot 4** (schéma zod, double résolution, éphémère 30 j, 0 XP, clé jamais cliente). Reste le fallback conditionnel de Q-8
+- [ ] Lot 6 — bilans hebdo batch (élève + parent) — **non commencé** : `tutor_digests` et `tutor-digests.yml` n'existent nulle part (vérifié le 2026-08-24)
+- [~] Lot 7 — énergie UI + admin avancé — **à moitié** : la console admin vient de é29 lot 5, et `recharge_tutor_energy` existe en SQL depuis arena#823. **Restent** le compteur d'énergie côté élève, l'écran « reviens demain » et le hit-rate du cache d'explications
 
 **Stop-points (non négociables pour l'exécuteur)** :
 
@@ -1091,3 +1100,34 @@ l'erreur {tag} » ; _double-solve_ : « résous, réponds par la lettre seule »
 
 Lecture : tout ce qui peut être déterministe l'est (colonne 1) ; le LLM temps réel n'est
 que la **dernière** colonne, et chaque case y est bornée (tokens, énergie, budget).
+
+### Inventaire du 2026-08-24 — pourquoi ce document a menti pendant six semaines
+
+Le 2026-08-23, les huit cases du §4 étaient **toutes vides** et ce journal disait « aucun lot
+commencé » — alors que six lots sur huit tournaient en production. La cause n'est pas une
+négligence de session : c'est que **le périmètre de cette étude a été livré sous d'autres
+numéros**, et qu'aucune règle ne demandait à ces numéros-là de revenir cocher ici.
+
+| lot | livré par | date |
+| --- | --- | --- |
+| 0 — socle IA | **é29 lot 1** (arena#807) + le chemin plateforme (arena#823) | 2026-08-22 / 08-23 |
+| 1 — explication post-review | arena#816 (+ correctif pgTAP #817) | 2026-08-22 |
+| 2 — plan du jour | moteur par **é04 A1.1** + **é07 lot 5** ; voix et push par arena#823 | 2026-07-21 / 08-23 |
+| 3 — chat streamé | arena#823 | 2026-08-23 |
+| 4 — boucle de compréhension | arena#823 ; sélection ciblée réutilisée de **é07 lot 4** | 2026-08-23 |
+| 5 — exercices ciblés | sélection arena#823 ; génération = **la Forge, é29 lot 4** | 2026-08-22/23 |
+| 6 — bilans hebdo | — | **non commencé** |
+| 7 — énergie UI + admin | console admin par **é29 lot 5** ; le reste ouvert | partiel |
+
+**La règle qui en sort, et elle vaut pour toute étude dont un tiers livre le périmètre** :
+`STATUS.md` fait foi sur l'**état** (AGENTS.md) ; ce document fait foi sur le **contrat**. Quand
+les deux divergent, c'est ce document qu'on corrige — et une étude dont l'état ne se lit que dans
+son propre document est une étude qu'on réécrit deux fois.
+
+**Deux réserves qui restent entières, quel que soit le compte de lots** :
+1. **Aucune clé de fournisseur n'a jamais été branchée.** Tout est testé contre un transport
+   factice. Le **pilote Q-9 de deux semaines** n'a pas eu lieu — il précède toute activation
+   d'une famille.
+2. **La personnalisation dépend du corpus.** Les tags de misconception sont appliqués en prod
+   depuis le 2026-08-23, mais sur **64 % d'une seule matière** (`math` 9ᵉ). Hors de là, le
+   tuteur explique sans nommer l'erreur : dégradation prévue, pas panne.
