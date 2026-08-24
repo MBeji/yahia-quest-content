@@ -225,11 +225,17 @@ son étude et dans les citations qu'on en fait.
       Sortie de la file différée V4 le 2026-08-13 (é28 Q-3) : code de classe, liste d'élèves,
       taux de réussite par chapitre. Motif — c'est le **seul canal à CAC ≈ 0** au budget réel
       (1 000-2 000 TND/an), donc le chemin le plus court vers KPI-1.
-      ⚠️ **Le volet parent ne part plus de zéro** : quinze PR ont livré le suivi parental
-      quotidien entre les 2026-08-16 et 08-19 (§8, F11). é08 doit se re-scoper contre **ce**
-      point de départ, sous peine de spécifier des écrans qui existent.
-      ⚠️ Elle garde une justification rédigée « premium », à re-scoper avant validation
-      (phase gratuite).
+      ✅ **Re-scopage FAIT le 2026-08-24.** Le §0 de l'étude trie les huit US de 2026-07-04
+      ligne à ligne — **six sont livrées ou périmées** — et renvoie l'écran livré à
+      `docs/suivi-parental-quotidien.md`, qui en est désormais la spec normative ; le wording
+      « premium » est supprimé. **Ce qui reste de P5** = les lots 4·5·6 de l'étude (classes +
+      code + adhésion, puis liste + taux par chapitre, puis le devoir). La portée exacte de
+      D-5 — prospection seule, ou aussi construction ? — est posée en **Q-4**, à trancher
+      avant le lot 4.
+      💡 **Trois lots parent en sont sortis, sans précondition et exécutables tout de suite** :
+      l'examen blanc au rapport (é02 est livrée, `get_mock_exam_percentile` existe et rien ne
+      le montre au parent), le digest hebdo enrichi opt-in (le push dominical est toujours le
+      générique), et le comparatif de parcours seuillé (jamais construit).
 
 - [ ] **P6. é26 lots 1 et 2 — écrire la doctrine qu'on applique.**
       **Lot 1** : `docs/doctrine-verticale.md` (P-1…7, grille M0-M4, Definition of Excellence,
@@ -446,7 +452,7 @@ auprès de Google — le paragraphe « vidéos YouTube » a désormais une page 
 | File                                  | Porte d'entrée                                 | Contenu                                                                                                                                                                                                                                                                                                                                                   |
 | ------------------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **V2 — concours**                     | ~~levée le 2026-08-13~~                        | **é02 est livrée et close** (arena#743, #746). Les **annales** restent un enrichissement, chantier de **contenu non ouvert** : qui le lance entre en file CONTENU (§5), pas ici. Reliquats portés par son §8 : Q-2 (cadence éditoriale = mitigation de RISK-1), Q-4 (lot 6 optionnel) et **Q-5 — vérifier en base que la session 1 est bien `published`** |
-| **V4 — parent**                       | ~~levée le 2026-08-13~~                        | **é08 se re-scope** sur son volet enseignant → §3 P5. Le volet **parent** ne part plus de zéro (F11 au §8). ⛔ Précondition dure é28 D-5 : **F1 + F2**                                                                                                                                                                                                    |
+| **V4 — parent**                       | ~~levée le 2026-08-13~~                        | **é08 s'est re-scopée le 2026-08-24** sur son volet enseignant → §3 P5. Le volet **parent** ne part plus de zéro (F11 au §8) : il ne lui reste que quatre reliquats, dont trois sans précondition. ⛔ Précondition dure é28 D-5 : **F1 + F2**                                                                                                                                                                                                    |
 | **Gels doctrine** (A1-Q3, 2026-07-20) | Dégel par décision humaine explicite           | é06 (PWA offline) · é10 (anti-fraude — se dégèle au **volume réel** de V3) · é12 (studio d'ingestion in-app)                                                                                                                                                                                                                                              |
 | **Gel de phase**                      | Sortie de la phase gratuite (décision humaine) | é01 (paiement en ligne — véhicule de réactivation du premium)                                                                                                                                                                                                                                                                                             |
 | **Brouillon non ouvert**              | Q-1…Q-5 à arbitrer                             | é27 (sources web tierces) — sert le trou physique-chimie lycée ; **ne dégèle pas é12** ; son lot 2 (garde anti-verbatim) est **déjà livré** dans `content:qa` (arena#722)                                                                                                                                                                                 |
