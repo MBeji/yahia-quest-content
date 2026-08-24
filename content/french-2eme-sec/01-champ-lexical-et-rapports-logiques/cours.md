@@ -43,7 +43,7 @@ Repérer un champ lexical se fait en trois temps.
 2. **Classer** les termes relevés selon la **catégorie grammaticale** à laquelle ils appartiennent : **groupe nominal**, **verbe**, **adjectif**. Un champ lexical n'est jamais fait de noms seulement.
 3. **Nommer** l'idée vers laquelle tout converge : c'est le **thème dominant**.
 
-Ainsi, dans la page de Victor Hugo où le prêtre Frollo avoue son amour à Esméralda, deux champs lexicaux se relèvent en parallèle — celui de **l'ensorcellement** (_le maléfice_, _ensorcelé_, _un charme_) et celui du **trouble physiologique** (_les pieds de glace_, _la tête bouillonnante_, _plus roide et plus faible qu'une statue_). Leur rencontre désigne le thème dominant : le **sentiment d'impuissance** que Frollo éprouve face à un pouvoir qu'il croit surnaturel.
+Ainsi, dans la page de Victor Hugo où le prêtre Frollo avoue son amour à Esméralda, deux champs lexicaux se relèvent en parallèle — celui de **l'ensorcellement** (_le maléfice_, _le charme_, _le pouvoir ensorcelant_) et celui du **trouble physiologique** (_les pieds de glace_, _la tête bouillonnante_, _plus roide et plus faible qu'une statue_). Leur rencontre désigne le thème dominant : le **sentiment d'impuissance** que Frollo éprouve face à un pouvoir qu'il croit surnaturel.
 
 > 🗡️ Un texte peut porter **deux champs lexicaux contradictoires** à la fois : l'attente et l'espoir d'un côté, l'appréhension et les épreuves pénibles de l'autre. Ce n'est pas une incohérence — c'est la marque d'un **combat intérieur**, et c'est souvent là que se loge le vrai thème.
 
@@ -79,6 +79,17 @@ Cinq noms à retenir, et une question à se poser pour chacun.
 
 > ⚠️ Ne confonds pas la **cause** et la **conséquence** : ce sont les deux faces du même lien, mais dans l'ordre inverse. Le même couple de faits se dit dans les deux sens — c'est le **moyen employé**, non la place des mots dans la phrase, qui indique lequel des deux est présenté comme l'origine.
 
+**Transformer un rapport en un autre : la manœuvre, pas à pas.** Un seul couple de faits — _l'encre avait pâli_ et _il a recopié la lettre_ — et quatre rapports.
+
+| Rapport voulu      | La phrase obtenue                                            | Ce que la phrase affirme alors                        |
+| ------------------ | ------------------------------------------------------------ | ----------------------------------------------------- |
+| la **cause**       | _Il a recopié la lettre **parce que** l'encre avait pâli._   | les deux faits sont réels ; le second explique le premier |
+| la **conséquence** | _L'encre avait pâli, **si bien qu'**il a recopié la lettre._ | les mêmes deux faits, lus dans l'autre sens           |
+| le **but**         | _Il a recopié la lettre **pour** qu'on puisse encore la lire._ | le second fait devient une intention, non un fait     |
+| la **condition**   | _**Si** l'encre avait pâli, il aurait recopié la lettre._    | le premier fait n'est plus donné pour vrai            |
+
+> ⚠️ Changer de rapport, ce n'est jamais changer seulement le mot de liaison : c'est changer **ce que la phrase affirme**. Avec _si_, l'encre n'est plus donnée pour ayant pâli.
+
 ## 🛡️ Les trois familles de moyens
 
 > Ces rapports peuvent être marqués par divers moyens : **des constructions particulières de la phrase** ; **des articulateurs logiques** distribués en **mots grammaticaux** et en **mots lexicaux**.
@@ -87,11 +98,19 @@ Cinq noms à retenir, et une question à se poser pour chacun.
 | ---------------------------------------------- | ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
 | **Constructions particulières de la phrase**   | le **gérondif** (_en_ + participe présent), le **participe présent**, le **participe passé** | _**En apercevant** sa lettre…_ · _**Ressentant** une forte émotion…_ · _**Ébloui** par Christine…_ |
 | **Articulateurs grammaticaux** (mots grammaticaux) | conjonctions, adverbes, **locutions prépositives**                    | _car, parce que, d'abord, ensuite, de manière à, d'une part, d'autre part, malgré…_            |
-| **Articulateurs lexicaux** (mots lexicaux)     | expressions et formules **à valeur logique**                             | _être à l'origine de, s'expliquer par, il en résulte, c'est, voilà, le premier, le deuxième…_  |
+| **Articulateurs lexicaux** (mots lexicaux)     | mots, expressions et formules **à valeur logique**                       | _être à l'origine de, s'expliquer par, il en résulte, c'est, voilà, le premier, le deuxième…_  |
 
-> 🗡️ Pour nommer la famille, regarde la **forme** du moyen, pas son sens. Un mot-outil court et invariable (_car_, _donc_, _malgré_) est **grammatical** ; une expression construite sur un verbe ou un nom (_s'expliquer par_, _être à l'origine de_) est **lexicale** ; un verbe en _-ant_ ou en _-é_ placé en tête de phrase signale une **construction**.
+> 🗡️ Pour nommer la famille, regarde la **forme** du moyen, pas son sens. Une conjonction, un adverbe ou une locution prépositive (_car_, _donc_, _malgré_) est **grammatical** ; tout ce qui porte le lien par son sens propre — verbe, nom, présentatif (_s'expliquer par_, _être à l'origine de_, _c'est_, _voilà_) — est **lexical** ; un verbe en _-ant_ ou en _-é_ placé en tête de phrase signale une **construction**.
 
 Entre ces trois constructions, une seule chose est à surveiller : **qui fait l'action**. Le **participe passé** présente un sujet qui **subit** — _**Ébloui** par Christine, Jean ressent une forte émotion_ : c'est Christine qui éblouit. Le **participe présent** et le **gérondif** présentent au contraire un sujet qui **agit** — _**Ressentant** une forte émotion, Jean…_ / _**En ressentant** cette émotion, Jean…_ Passer de l'un à l'autre sans y prendre garde **inverse le sens de la phrase**.
+
+Un dernier moyen, qui ne porte aucun mot de liaison : la **proposition subordonnée relative**. Le pronom _qui_ est toujours le même ; c'est le **mode du verbe** et le détachement par des virgules qui font entendre le rapport.
+
+| La phrase                                                        | Le rapport porté par la relative |
+| ---------------------------------------------------------------- | -------------------------------- |
+| _Il cherche un ami qui le **comprenne** sans qu'il ait à parler._ | le **but** (subjonctif)          |
+| _Un ami qui le **comprendrait** lui serait précieux._             | l'**hypothèse** (conditionnel)   |
+| _Sa timidité, qui risque de le trahir, ne l'empêche pas d'oser._  | l'**opposition** (détachée)      |
 
 ## 🔮 Deux principes qui font toute la difficulté
 
@@ -102,6 +121,8 @@ Entre ces trois constructions, une seule chose est à surveiller : **qui fait l'
 | _**Si troublé qu'**il soit, il arrive à se maîtriser._                | l'**opposition**    |
 | _Il est **si** troublé **qu'**il a peur de crier d'admiration._       | la **conséquence**  |
 | _**S'**il ne se retenait pas, Jean pousserait un cri d'admiration._   | la **condition**    |
+
+Deux indices suffisent à trancher, et toujours dans cet ordre. **Que suit _si_ ?** Une proposition entière (_S'il ne se retenait pas…_) : c'est la **condition**, l'affaire est réglée. Un adjectif ou un adverbe (_si troublé…_, _si bas…_) : il faut alors un second indice. **À quel mode est le verbe qui suit _que_ ?** Au **subjonctif** (_si troublé qu'il **soit**_), c'est l'**opposition** ; à l'**indicatif** (_si troublé qu'il **a** peur_), c'est la **conséquence**.
 
 **Un même rapport logique peut être introduit par des moyens différents.** La **cause**, ici, dite quatre fois.
 
@@ -130,4 +151,4 @@ Reste une question que le rapport logique aide à trancher : **l'intention du lo
 
 > 🗡️ Une opinion sans justification n'est qu'une affirmation. Le mot de liaison n'est pas un ornement : c'est lui qui transforme deux phrases voisines en un **raisonnement**.
 
-> 🏆 Première porte franchie : tu sais faire parler le vocabulaire d'un texte et lire les liens qui en tiennent les idées ensemble. Dans les séquences suivantes, chaque rapport reprendra la parole pour son compte — la conséquence, puis l'hypothèse, puis l'opposition et la concession — et tu découvriras alors leurs constructions dans le détail.
+> 🏆 Première porte franchie : tu sais faire parler le vocabulaire d'un texte et lire les liens qui en tiennent les idées ensemble. Dans les séquences suivantes, chaque rapport reprendra la parole pour son compte — la cause, la conséquence et le but, puis l'hypothèse, puis l'opposition et la concession — et tu découvriras alors leurs constructions dans le détail.

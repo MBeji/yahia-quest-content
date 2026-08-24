@@ -6,7 +6,7 @@
 
 ## 🎭 Une méditation qui raisonne au lieu de chanter
 
-Le texte de la séquence est « **Méditation** », de **Paul Géraldy** (1885-1983), poète français dont le recueil _Toi et Moi_ (1913) a connu un vif succès. Seize vers, quatre quatrains, un vocabulaire délibérément prosaïque : ni comparaison, ni métaphore, aucun élan lyrique. En quatre étapes marquées par les articulateurs « d'abord », « et puis », « et alors », le poème décrit la **genèse mécanique du sentiment amoureux** : on aime par hasard, par jeu, par curiosité ; on aime celui qui vous aime ; on prend l'habitude d'échanger de petits mots ; et l'on finit par aimer **parce qu'on a commencé**. Le sujet est le pronom indéfini « **on** », le temps le **présent de l'indicatif** : deux marques qui donnent au texte sa **portée générale** — il ne parle de personne en particulier, donc il parle de tout le monde. Le manuel le met en regard d'une page de **Lamartine**, élégiaque et pleine d'images : deux « méditations », deux effets opposés sur le lecteur.
+Le texte de la séquence est « **Méditation** », de **Paul Géraldy** (1885-1983), poète français dont le recueil _Toi et Moi_ (1913) a connu un vif succès. Seize vers, quatre quatrains, un vocabulaire délibérément prosaïque : ni comparaison, ni métaphore, aucun élan lyrique. En quatre étapes marquées par les articulateurs « d'abord », « et puis », « et alors », le poème décrit la **genèse mécanique du sentiment amoureux** : on aime d'abord sans raison — « par hasard, par jeu, par curiosité », écrit Géraldy ; on aime ensuite celui qui vous aime ; on prend l'habitude d'échanger de petits mots ; et l'on finit par aimer **pour la seule raison qu'on a commencé**. Le sujet est le pronom indéfini « **on** », le temps le **présent de l'indicatif** : deux marques qui donnent au texte sa **portée générale** — il ne parle de personne en particulier, donc il parle de tout le monde. Le manuel le met en regard d'une page de **Lamartine**, élégiaque et pleine d'images : deux « méditations », deux effets opposés sur le lecteur.
 
 ## 🗣️ Exprimer la subjectivité au moyen des verbes
 
@@ -37,7 +37,7 @@ Huit verbes du vocabulaire de l'amour et de l'estime, que l'usage courant confon
 | **admirer** | contempler avec extase |
 | **apprécier**, **estimer** | porter un jugement |
 | **charmer** | exercer une action magique |
-| **désirer** | éveiller une envie physique |
+| **désirer** | éprouver une envie physique (c'est la colonne « éveiller une envie physique » du tableau du manuel) |
 | **plaire** | être au goût de quelqu'un |
 | **séduire** | détourner du bon chemin |
 
@@ -77,7 +77,7 @@ C'est **une seule et même relation**, lue dans les deux sens. Ce qui change d'u
 | **la cause** | **C'est parce que** Narcisse les traite avec mépris **que** les jeunes filles sont malheureuses. |
 | **la conséquence** | Narcisse les traite avec mépris, **c'est pourquoi** les jeunes filles sont malheureuses. |
 
-Un **degré d'intensité** met à son tour la cause en relief : _Narcisse était **si** beau **que** toutes les filles étaient amoureuses de lui._ La même idée se dit sous forme nominale avec **tel que**, et l'accent se déplace alors sur la qualité elle-même : _La beauté de Narcisse était **telle que** toutes les filles étaient amoureuses de lui._
+Un **degré d'intensité** posé sur la cause met en relief, lui, la **conséquence** : _Narcisse était **si** beau **que** toutes les filles étaient amoureuses de lui._ Pour mettre en valeur le rapport de cause et non plus celui de conséquence, il faut changer de tour : _**Comme** Narcisse était très beau, toutes les filles étaient amoureuses de lui._ En conservant l'idée de conséquence, la même phrase se dit sous forme nominale avec **tel que**, et l'accent se déplace alors sur la qualité elle-même : _La beauté de Narcisse était **telle que** toutes les filles étaient amoureuses de lui._
 
 ## 🧭 « Parce que » ou « puisque » ? Ce que sait le destinataire
 
@@ -92,6 +92,7 @@ Les deux locutions introduisent une cause, mais pas dans la même situation de c
 
 - _**Comme** Narcisse les traite avec mépris_, les jeunes filles sont malheureuses.
 - _Narcisse **les traitant** avec mépris_, les jeunes filles sont malheureuses.
+- Si le verbe de la subordonnée est _être_, c'est _étant_ qui apparaît : _puisque la porte **était** fermée_ → _la porte **étant** fermée_, nous avons attendu dehors.
 
 > ⚠️ « Puisque » ne se choisit pas parce que la cause te paraît évidente **à toi** : il se choisit parce qu'elle est déjà acquise **pour celui à qui tu parles**. C'est une règle de communication avant d'être une règle de grammaire.
 
@@ -99,7 +100,7 @@ Les deux locutions introduisent une cause, mais pas dans la même situation de c
 
 Une même locution peut introduire deux rapports différents. Compare les deux phrases de l'Explicitation (p. 27) :
 
-- **A.** L'eau est limpide **de sorte qu'**on **peut** y apercevoir son image. → un **résultat obtenu, acquis** : c'est une **conséquence**. Substituts, sans changer le mode (l'indicatif) : _c'est pourquoi_, _de ce fait_, _donc_, _si… que_.
+- **A.** L'eau est limpide **de sorte qu'**on **peut** y apercevoir son image. → un **résultat obtenu, acquis** : c'est une **conséquence**. Substituts, sans changer le mode (l'indicatif) : _c'est pourquoi_, _de ce fait_, _donc_, _si… que_ (attention : les trois premiers ne sont pas des conjonctions de subordination — ils relient deux propositions indépendantes, séparées par une ponctuation, et non une principale et sa subordonnée).
 - **B.** L'eau a été épurée **de sorte qu'**on **puisse** y apercevoir son image. → un **résultat visé, recherché** : c'est un **but**. Substituts, sans changer le mode (le subjonctif) : _afin que_, _pour que_.
 
 | Rapport | Le résultat est… | Mode | Locutions |

@@ -29,13 +29,13 @@ Dorante emprunte ce **langage tragique** — son malheur, son désespoir, les «
 
 Dans l'**Ode à Cassandre**, **Ronsard** invite « Mignonne » à voir la rose qui, ouverte le matin, a perdu le soir sa robe de pourpre, puis l'exhorte à cueillir sa jeunesse avant que la vieillesse ne la ternisse. Il établit ainsi un **rapport de similitude** (ressemblance, **analogie**) entre la femme et la rose, et dans les deux sens : dans la 1re strophe, la **rose** est comparée à la **femme** (la fleur reçoit une « robe » et un teint « au vôtre pareil ») ; dans la 3e, c'est la **femme** qui est comparée à la **rose** (son âge « fleuronne »).
 
-Ronsard emploie pour cela un **langage imagé** et recourt aux **figures d'analogie** : personnification, **comparaison**, **métaphore**. Toute figure d'analogie repose sur quatre éléments :
+Ronsard emploie pour cela un **langage imagé** et recourt aux **figures d'analogie** : personnification (faire agir ou parler une chose comme une personne), **comparaison**, **métaphore**. Toute figure d'analogie repose sur quatre éléments :
 
 | Élément                      | Ce qu'il désigne                                                             |
 | ---------------------------- | ---------------------------------------------------------------------------- |
 | le **comparé**               | ce dont on parle réellement                                                  |
 | le **comparant**             | le terme auquel on l'assimile et dont on emprunte les qualités               |
-| le **point commun**          | la qualité partagée — ce que le manuel appelle le **sens transféré**         |
+| le **point commun**          | la qualité que le comparé reçoit du comparant — le **sens transféré**        |
 | l'**outil de comparaison**   | le mot qui relie les deux termes — présent, ou effacé                        |
 
 > 🗡️ Dans une figure d'analogie, il se produit toujours un **transfert de sens** (déplacement de sens), et il va **toujours du comparant vers le comparé**, jamais l'inverse. Comparer une femme à une fleur, c'est parler d'elle en employant les termes ordinairement réservés à la fleur.
@@ -66,7 +66,7 @@ Certains qualifiants de l'or sont transmis aux cheveux : l'or est brillant → l
 
 Le transfert ne retient d'ailleurs pas **toutes** les qualités du comparant, mais seulement celles qui servent l'effet recherché : dans _un silence de plomb_, on garde du plomb la lourdeur et l'immobilité, non sa couleur grise.
 
-Dans la métaphore, l'assimilation peut devenir **totale** : c'est tout le **champ lexical du comparant** qui passe dans le texte. Quand le Dom Juan de Molière dit qu'il a l'ambition des **conquérants**, volant de **victoire** en victoire, et qu'il voudrait d'autres mondes pour y étendre ses **conquêtes** amoureuses, le comparant n'est plus un mot isolé : c'est le champ lexical de la **guerre** tout entier. De même, chez **Jacques Brel**, « des perles de pluie » ou « le cœur du bonheur ».
+Dans la métaphore, l'assimilation peut devenir **totale** : c'est tout le **champ lexical du comparant** qui passe dans le texte. Quand le Dom Juan de Molière dit qu'il a l'ambition des **conquérants**, volant de **victoire** en victoire, et qu'il voudrait d'autres mondes pour y étendre ses **conquêtes** amoureuses, le comparant n'est plus un mot isolé : c'est le champ lexical de la **guerre** tout entier. De même, dans la chanson de **Jacques Brel** que la séquence étudie, la pluie devient joaillerie et le bonheur reçoit un cœur.
 
 > 🗡️ Pour analyser une métaphore, pose-toi trois questions dans l'ordre : **quel est le comparé ?** (ce dont on parle) — **quel est le comparant ?** (le mot emprunté) — **à quel champ lexical appartient ce comparant ?** La réponse à la troisième question donne l'effet recherché.
 
@@ -95,11 +95,11 @@ Selon le temps de la subordonnée en « si », on obtient deux valeurs :
 - **l'irréel du présent** — si + **imparfait** → **conditionnel présent** : _Si je parlais l'italien, je lirais ce roman dans le texte._ (je ne parle pas l'italien, je ne le lis pas dans le texte)
 - **l'irréel du passé** — si + **plus-que-parfait** → **conditionnel passé** : _Si la pluie était tombée en mars, la récolte aurait été meilleure._ (il n'a pas plu en mars, la récolte a été mauvaise)
 
-L'exemple même du manuel combine les deux : _S'il **n'était pas mort** en 1978, il **aurait connu** P. Kaas_ — l'état supposé dure, la conséquence appartient au passé.
+L'exemple même du manuel combine les deux : _S'il **n'était pas mort** en 1978, il **aurait connu** P. Kaas_ — « n'était pas mort » suppose un état qui **durerait encore**, « aurait connu » place la conséquence **dans le passé**. Les deux temps peuvent ainsi se croiser quand le fait supposé et sa conséquence n'appartiennent pas au même moment.
 
 ## ↩️ De l'hypothèse au fait réel
 
-Une phrase hypothétique ne dit pas seulement ce qu'on imagine : elle laisse entendre ce qui **est**. Ce sont ses **présupposés**, ses implications dans le réel. Pour les rétablir, il suffit de **nier chacun des deux membres** :
+Une phrase à l'irréel ne dit pas seulement ce qu'on imagine : elle laisse entendre ce qui **est**. Ce sont ses **présupposés**, ses implications dans le réel. Pour les rétablir, il suffit de **nier chacun des deux membres** :
 
 | Faits hypothétiques                                | Faits réels                                        |
 | -------------------------------------------------- | ---------------------------------------------------- |
@@ -127,7 +127,7 @@ Pour t'exprimer de la même façon, le manuel donne les outils :
 | **écarter** une hypothèse      | il n'est pas possible · il ne semble pas possible · cela est improbable                                                  |
 | **justifier** par la cause     | car · en effet · parce que · puisque                                                                                    |
 
-Une hypothèse rejetée sans justification ne vaut rien : _elle n'a pu changer d'avis, **puisque** c'est elle qui tenait à ce rendez-vous._
+Une hypothèse rejetée sans justification ne vaut rien : _elle n'a pu changer d'avis, **puisque** c'est elle qui tenait à ce rendez-vous._ Et un rejet n'est jamais définitif : dès qu'un argument contraire se présente, l'hypothèse écartée peut être **de nouveau envisagée** — « Oui, mais… ».
 
 La séquence met ces outils en œuvre dans des **activités orales** — l'échange d'hypothèses sur les causes d'un retard — puis dans la **production de l'écrit** : répondre à une question en formulant des hypothèses justifiées par la cause, ou, **à la manière de Thérèse**, s'interroger sur les causes profondes d'une décision passée en écartant les hypothèses l'une après l'autre pour ne retenir que la plus plausible.
 
