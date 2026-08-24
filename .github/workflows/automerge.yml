@@ -60,7 +60,18 @@ on:
   # `main` a bougé : l'instant exact où se dénoue la course « Base branch was modified » (#162),
   # et le filet de sécurité général — toute PR verte laissée en arrière par un déclencheur
   # manqué repart d'ici. Pas de `schedule` : sur un dépôt PRIVÉ les minutes Actions sont
-  # facturées, et pendant une campagne `main` bouge plusieurs fois par jour.
+  # facturées, et pendant une campagne `main` bouge plusieurs fois par jour. Ce choix tient.
+  #
+  # ⚠️ Mais ce filet a une limite, trouvée sur la PR #231 (2026-08-24) : il suppose que `main`
+  # BOUGE. Quand la PR bloquée est la seule activité du dépôt, rien ne pousse sur `main`, donc
+  # rien ne la rattrape — elle dort indéfiniment avec ses check runs VERTS. C'est précisément
+  # le cas d'une PR ouverte par `auto-pr.yml` : GitHub n'émet pas de `workflow_run` pour un run
+  # déclenché par le `GITHUB_TOKEN` (garde anti-récursion), et les runs `pull_request` d'une PR
+  # du bot sont en `action_required`. Aucun des trois déclencheurs ci-dessus ne se produit.
+  # Le trou est bouché à la SOURCE, sans cron : `content-ci.yml` et `pin-check.yml` dispatchent
+  # ce workflow en fin de course, mais UNIQUEMENT quand ils ont eux-mêmes été dispatchés —
+  # c'est-à-dire uniquement sur le chemin qui casse, une poussée de nouvelle branche. Le chemin
+  # `pull_request` normal continue de passer par `workflow_run`, sans run supplémentaire.
   push:
     branches: [main]
   workflow_dispatch:
