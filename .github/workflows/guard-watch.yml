@@ -69,8 +69,15 @@ jobs:
           since="$(date -u -d "-${WINDOW_HOURS} hours" +%Y-%m-%dT%H:%M:%SZ)"
           echo "Fenêtre : depuis $since (UTC)."
 
-          # `--json` puis filtrage local : `gh run list` ne sait pas filtrer sur
-          # une date.
+          # Le filtrage est fait par le SERVEUR (`--created`, `--status`), pas en
+          # local après un `--limit`. Correction, pas raffinement : mesuré le
+          # 2026-08-24 sur le dépôt moteur, les 100 runs les plus récents ne
+          # couvraient qu'1 h 13. Une fenêtre de 8 h filtrée en local n'y aurait
+          # rien vu de ses 7 dernières heures — et aurait rendu « 0 rouge » d'un
+          # air parfaitement vert. Ce dépôt-ci est bien moins actif, donc le bug
+          # y dormait ; il se serait réveillé le jour d'une grosse campagne,
+          # c'est-à-dire exactement le jour où la garde compte. Une garde qui se
+          # trompe en silence est pire que pas de garde.
           #
           # Ce workflow ne s'exclut PAS de son propre scan, et c'est délibéré.
           # L'exclusion semble prudente (« éviter qu'un échec d'ici se rapporte
@@ -81,11 +88,18 @@ jobs:
           # relevé par le passage SUIVANT, qui lui aboutit. Pas de boucle
           # possible : un run en cours n'a pas encore de conclusion, il ne peut
           # donc jamais se voir lui-même.
-          all="$(gh run list --limit 100 \
-            --json workflowName,conclusion,createdAt,event,displayTitle,url \
-            --jq "[.[]
-                   | select(.conclusion == \"failure\" or .conclusion == \"timed_out\")
-                   | select(.createdAt >= \"$since\")]")"
+          fields=workflowName,conclusion,createdAt,event,url
+          failed="$(gh run list --created ">=$since" --status failure --limit 200 --json "$fields")"
+          timed="$(gh run list --created ">=$since" --status timed_out --limit 200 --json "$fields")"
+
+          # Contrairement à la version du dépôt moteur, les échecs sur
+          # `pull_request` sont GARDÉS ici, et c'est la seule divergence entre
+          # les deux fichiers. Là-bas une PR rouge a un propriétaire (DoD §8) et
+          # les checks requis la bloquent visiblement. Ici il n'y a AUCUN check
+          # requis — plan gratuit, dépôt privé — donc une PR rouge ne bloque
+          # rien d'ostensible : elle dort, et c'est précisément le genre de
+          # silence que cette garde existe pour rompre.
+          all="$(printf '%s\n%s\n' "$failed" "$timed" | jq -s 'add')"
 
           count="$(echo "$all" | jq 'length')"
           echo "count=$count" >> "$GITHUB_OUTPUT"
