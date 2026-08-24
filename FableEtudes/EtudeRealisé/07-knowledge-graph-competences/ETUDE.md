@@ -1,6 +1,10 @@
 # Étude 07 — Knowledge Graph & profils de maîtrise par compétence
 
-> **Statut** : en exécution (validée par l'humain 2026-07-11 — Q-1/Q-2/Q-3 tranchées ; lot 1 lancé)
+> **Statut** : **LIVRÉE** — **les 5 lots sur 5**, constatés sur `main` le 2026-08-24.
+> Validée par l'humain le 2026-07-11 (Q-1/Q-2/Q-3 tranchées). ⚠️ **Ce document a annoncé
+> « en exécution » pendant un mois après la fin de son exécution** : les lots 4 et 5 sont
+> livrés depuis les 2026-07-21 et 2026-07-25 (arena#588, arena#616, correctif de GRANT
+> arena#617) et leurs cases étaient restées décochées. Voir le §8.
 > **Priorité** : 07 (exécutable dès que l'étude 04 lot A0 tourne) · **Valeur** : passer de « Math = 72 % » à une carte de maîtrise par compétence avec prérequis — le socle qui rend l'adaptatif (04), l'analytics (08) et le tuteur (11) réellement intelligents · **Complexité** : haute (transverse pipeline contenu + DB + agrégats)
 > **Architecte** : Fable (claude-fable-5), 2026-07-04 · **Exécuteur cible** : Sonnet
 > **Dépend de** : étude 04 lots A0.1–A0.3 (télémétrie `question_attempts` + patron de registre) ; tagging de contenu progressif (chantier contenu parallèle) · **Bloque** : étude 08 (points faibles), étude 11 (exercice similaire), étude 04 phase A2+ (reco par compétence)
@@ -137,8 +141,8 @@ v1 (joli mais sans valeur pédagogique directe).
 - [x] Lot 1 — pipeline + registre math (merge seul)
 - [x] Lot 2 — DB + maîtrise
 - [x] Lot 3 — tagging vague 1 (chantier contenu, PR séparée du code)
-- [ ] Lot 4 — RPCs + UI
-- [ ] Lot 5 — intégration plan quotidien
+- [x] Lot 4 — RPCs + UI — arena#588 (2026-07-21)
+- [x] Lot 5 — intégration plan quotidien — arena#616, correctif de GRANT arena#617 (2026-07-25)
 
 **Stop-points** : ne jamais renommer un id de compétence (R-1 — créer/déprécier seulement) ; le
 lot 2 ne touche pas aux barèmes de récompense ; l'exécuteur ne rédige PAS les registres de
@@ -285,3 +289,28 @@ carte.
     part et la jointure `question_competencies` n'aurait rien retenu, **sans que rien n'échoue**.
   - **Reste** : le tagging des autres matières et niveaux. La famille `math` couvre `math*` ;
     une famille `physique`/`svt` reste à écrire par l'architecte avant tout tagging scientifique.
+
+### Clôture — 2026-08-24
+
+**L'étude est livrée : 5 lots sur 5.** Le constat a été fait en relisant `main`, pas ce document —
+qui portait encore « en exécution » et deux cases vides pour des lots en production depuis un mois.
+
+| lot | livré par | preuve sur `main` |
+| --- | --- | --- |
+| 1 — pipeline + registre `math` | arena#366 | `content/competences/*.json`, schéma zod, `sql-builder` |
+| 2 — DB + maîtrise EWMA | arena#579 | `20260721100000_competency_mastery.sql` |
+| 3 — tagging vague 1 | privé#51/#53/#54/#55 (9ᵉ) · #56→#61 (6ᵉ) | **1 362 questions**, `math` 557/557 et `math-6eme` 805/805 |
+| 4 — RPCs map/blockers + panneau | arena#588 | `20260721140000_competency_map_rpcs.sql`, `competency-map-panel.tsx` |
+| 5 — plan quotidien compétence-aware | arena#616 · #617 | `20260725140000_daily_plan_competency_aware.sql` |
+
+**Ce que la clôture n'emporte pas, et qu'il ne faut pas relire comme un manque de l'étude** : le
+tagging **hors de `math`** (une famille `physique`/`svt` reste à écrire par l'architecte avant
+tout tagging scientifique). Ce n'est pas un lot de é07 — le lot 3 visait la **vague 1**, et elle
+est faite. C'est une ligne du **fil CONTENU** de la roadmap, où elle vit désormais aux côtés de
+C4bis (tagging des misconceptions), qui a exactement la même forme et le même angle mort : un
+registre livré n'allume rien tant que le corpus ne le référence pas.
+
+**Ce qu'elle fournit à la suite** : é30 (tuteur déterministe) prend le DAG et la maîtrise EWMA
+comme socle de son inférence montante ; é11 lot 4 appelle `get_competency_blockers` pour son
+escalade ; é04 A1.2 et A2.1 résolvent leur bouton « S'entraîner » par l'unique
+`get_exercises_for_competency` — un seul chemin de remédiation, jamais recopié.
