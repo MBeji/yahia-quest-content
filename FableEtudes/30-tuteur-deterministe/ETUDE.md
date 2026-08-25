@@ -171,7 +171,13 @@ et prouver — **trois phrases** :
 **KPI** (mesurés sur la matière pilote `math` 9ᵉ) :
 
 - **KPI-1 — couverture de preuve** : % d'items servis dont la compétence **et** les distracteurs
-  sont taggés. Cible **100 % sur `math` 9ᵉ** avant le lot 4. Il commande tous les autres.
+  sont **statués** — taggés, ou déclarés légitimement muets par la règle du lot 0bis. Cible
+  relue : **« 0 distracteur non statué » sur `math` 9ᵉ** — **ATTEINTE le 2026-08-25** (§8) :
+  818/818 questions statuées, **662 taguées (81 %)**, 156 muettes **par décision**, pas par
+  oubli. _(La cible d'origine « 100 % taggés » est abandonnée sur la mesure du lot 0bis : la
+  règle « taggé ssi reconstructible » plafonne à 81 %, et au-delà le chiffre compterait des
+  tags posés au jugé — or un mauvais tag enseigne une fausse erreur, il coûte plus cher que
+  pas de tag.)_ Il commande tous les autres.
 - **KPI-2 — économie du diagnostic** : nombre médian d'items pour déclarer une première
   compétence maîtrisée. Référence ALEKS : ~30 questions pour situer 200–300 items. Cible ici :
   **≤ 6 items par compétence déclarée**, inférence comprise.
