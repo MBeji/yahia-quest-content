@@ -22,8 +22,16 @@
     {
       "prompt": "انشر العبارة: (3x + 2)² ؟",
       "options": [
-        { "id": "a", "text": "9x² + 4", "misconceptionTag": "math.alg.carre-somme-sans-double-produit" },
-        { "id": "b", "text": "9x² + 6x + 4", "misconceptionTag": "math.alg.carre-somme-sans-double-produit" },
+        {
+          "id": "a",
+          "text": "9x² + 4",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "b",
+          "text": "9x² + 6x + 4",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
         { "id": "c", "text": "9x² + 12x + 4" },
         { "id": "d", "text": "6x² + 12x + 4" }
       ],
@@ -50,8 +58,16 @@
       "options": [
         { "id": "a", "text": "9992" },
         { "id": "b", "text": "9996" },
-        { "id": "c", "text": "9998" },
-        { "id": "d", "text": "10004" }
+        {
+          "id": "c",
+          "text": "9998",
+          "misconceptionTag": "math.alg.difference-carres-second-terme-non-eleve-au-carre"
+        },
+        {
+          "id": "d",
+          "text": "10004",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        }
       ],
       "correctOption": "b",
       "explanation": "102 × 98 = (100 + 2)(100 − 2) = 100² − 2² = 10000 − 4 = 9996. هذه متطابقة فرق المربّعين. الخطأ الشائع: طرح 2 بدل 2² فيُحصل على 9998، أو جمع 4 بدل طرحها.",

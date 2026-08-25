@@ -48,7 +48,7 @@
     {
       "prompt": "كرة حجمها 972π cm³. ما نصف قطرها r؟",
       "options": [
-        { "id": "a", "text": "729 cm" },
+        { "id": "a", "text": "729 cm", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "b", "text": "243 cm" },
         { "id": "c", "text": "18 cm" },
         { "id": "d", "text": "9 cm" }
@@ -62,7 +62,11 @@
       "prompt": "أسطوانة نصف قطرها 4 cm وارتفاعها 7 cm. ما مساحتها الجانبية؟ (π ≈ 3,14)",
       "options": [
         { "id": "a", "text": "87,92 cm²" },
-        { "id": "b", "text": "100,48 cm²", "misconceptionTag": "math.mes.formules-solides-confondues" },
+        {
+          "id": "b",
+          "text": "100,48 cm²",
+          "misconceptionTag": "math.mes.formules-solides-confondues"
+        },
         { "id": "c", "text": "175,84 cm²" },
         { "id": "d", "text": "351,68 cm²" }
       ],
@@ -74,8 +78,16 @@
     {
       "prompt": "إذا ضُرب نصف قطر كرة في 3 (ليصبح 3r بدل r)، فبكم يتضاعف حجمها؟",
       "options": [
-        { "id": "a", "text": "3 مرّات (×3)", "misconceptionTag": "math.mes.agrandissement-volume-non-cube" },
-        { "id": "b", "text": "9 مرّات (×9)", "misconceptionTag": "math.mes.agrandissement-volume-non-cube" },
+        {
+          "id": "a",
+          "text": "3 مرّات (×3)",
+          "misconceptionTag": "math.mes.agrandissement-volume-non-cube"
+        },
+        {
+          "id": "b",
+          "text": "9 مرّات (×9)",
+          "misconceptionTag": "math.mes.agrandissement-volume-non-cube"
+        },
         { "id": "c", "text": "12 مرّة (×12)" },
         { "id": "d", "text": "27 مرّة (×27)" }
       ],

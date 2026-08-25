@@ -9,8 +9,16 @@
     {
       "prompt": "عدد حقيقي x يحقّق |x| = 5 ، وهو عدد سالب. ما قيمة x ؟",
       "options": [
-        { "id": "a", "text": "5", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
-        { "id": "b", "text": "5 أو −5", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
+        {
+          "id": "a",
+          "text": "5",
+          "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste"
+        },
+        {
+          "id": "b",
+          "text": "5 أو −5",
+          "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste"
+        },
         { "id": "c", "text": "−5" },
         { "id": "d", "text": "لا يوجد عدد يحقّق الشرطين" }
       ],
@@ -25,23 +33,36 @@
         { "id": "a", "text": "−2", "misconceptionTag": "math.num.valeur-absolue-negative" },
         { "id": "b", "text": "2" },
         { "id": "c", "text": "4" },
-        { "id": "d", "text": "3 − √5", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" }
+        {
+          "id": "d",
+          "text": "3 − √5",
+          "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste"
+        }
       ],
       "correctOption": "b",
       "explanation": "ندرس إشارة كلّ عبارة بالقيمة التقريبية: بما أنّ √5 ≈ 2,24 فإنّ √5 − 3 عدد سالب، و 1 − √5 عدد سالب أيضًا. إذن |√5 − 3| = 3 − √5 و |1 − √5| = √5 − 1 ، فيكون المجموع (3 − √5) + (√5 − 1) = 2 بعد اختصار √5 . الفخّ هو حذف الأقواس دون دراسة إشارة كلّ عبارة، وهو يعطي −2 : وهذا مستحيل لأنّ مجموع قيمتين مطلقتين لا يكون سالبًا.",
       "difficulty": 3,
-      "competencies": [
-        "math.num.valeur-absolue",
-        "math.num.relatifs-operations"
-      ]
+      "competencies": ["math.num.valeur-absolue", "math.num.relatifs-operations"]
     },
     {
       "prompt": "ما قيمة |(1 − √5)(1 + √2)| ؟",
       "options": [
-        { "id": "a", "text": "(1 − √5)(1 + √2)", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
+        {
+          "id": "a",
+          "text": "(1 − √5)(1 + √2)",
+          "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste"
+        },
         { "id": "b", "text": "(√5 − 1)(1 + √2)" },
-        { "id": "c", "text": "(√5 − 1)(√2 − 1)", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
-        { "id": "d", "text": "(1 − √5)(√2 − 1)", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" }
+        {
+          "id": "c",
+          "text": "(√5 − 1)(√2 − 1)",
+          "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste"
+        },
+        {
+          "id": "d",
+          "text": "(1 − √5)(√2 − 1)",
+          "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste"
+        }
       ],
       "correctOption": "b",
       "explanation": "ندرس إشارة كلّ عامل. بما أنّ √5 ≈ 2,24 فإنّ 1 − √5 سالب ومنه |1 − √5| = √5 − 1 ، بينما 1 + √2 موجب ومنه |1 + √2| = 1 + √2 . وبتطبيق القيمة المطلقة لجذاء نجد (√5 − 1)(1 + √2) .",
@@ -59,10 +80,7 @@
       "correctOption": "c",
       "explanation": "كون P نظيرة N بالنسبة إلى I يعني أنّ I منتصف [NP] ، أي IN = IP . نحسب البعد IN = |1 − (−3)| = 4 ، إذن تقع P على بُعد 4 من I في الجهة الأخرى وفاصلتها 1 + 4 = 5 . الخطأ الشائع هو أخذ مقابل الفاصلة −3 والاكتفاء بالعدد 3 .",
       "difficulty": 3,
-      "competencies": [
-        "math.num.valeur-absolue",
-        "math.num.relatifs-operations"
-      ]
+      "competencies": ["math.num.valeur-absolue", "math.num.relatifs-operations"]
     },
     {
       "prompt": "عددان حقيقيان a و b بحيث |a| = 3 و |b| = 5 ، مع a سالب و b موجب. ما قيمة الجذاء a × b ؟",
@@ -75,26 +93,20 @@
       "correctOption": "a",
       "explanation": "من |a| = 3 مع a سالب نستنتج a = −3 ، ومن |b| = 5 مع b موجب نستنتج b = 5 . إذن a × b = (−3) × 5 = −15 . ولاحظ أنّ |a × b| = |a| × |b| = 15 : القيمة المطلقة لا تحفظ الإشارة.",
       "difficulty": 3,
-      "competencies": [
-        "math.num.valeur-absolue",
-        "math.num.relatifs-operations"
-      ]
+      "competencies": ["math.num.valeur-absolue", "math.num.relatifs-operations"]
     },
     {
       "prompt": "على مستقيم مدرّج (OI) ، النقاط A و B و C فاصلاتها على التوالي 3 و −4 و 1 . ما هو البعد BC ؟",
       "options": [
         { "id": "a", "text": "7" },
         { "id": "b", "text": "2" },
-        { "id": "c", "text": "3" },
+        { "id": "c", "text": "3", "misconceptionTag": "math.int.signe-ignore-dans-somme" },
         { "id": "d", "text": "5" }
       ],
       "correctOption": "d",
       "explanation": "نبدأ بتحديد النقطتين المطلوبتين: B فاصلتها −4 و C فاصلتها 1 . والبعد بين نقطتين هو القيمة المطلقة للفرق بين فاصلتيهما: BC = |1 − (−4)| = |5| = 5 . أمّا الأبعاد الأخرى فهي AB = |−4 − 3| = 7 و AC = |1 − 3| = 2 ، ومن أهمل إشارة الفاصلة −4 حسب |1 − 4| = 3 .",
       "difficulty": 3,
-      "competencies": [
-        "math.num.valeur-absolue",
-        "math.num.relatifs-operations"
-      ]
+      "competencies": ["math.num.valeur-absolue", "math.num.relatifs-operations"]
     }
   ]
 }

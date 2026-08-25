@@ -9,9 +9,21 @@
     {
       "prompt": "في المكعّب ABCDEFGH ، أيّ التصريحات التالية صحيح ؟\n<svg viewBox=\"0 0 235 205\"><path d=\"M40 175 L150 175 L195 140 M40 175 L40 65 M150 175 L150 65 M195 140 L195 30 M40 65 L150 65 L195 30 L85 30 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M40 175 L85 140 L195 140 M85 140 L85 30\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"30\" y=\"192\" text-anchor=\"middle\">A</text><text x=\"158\" y=\"192\" text-anchor=\"middle\">B</text><text x=\"207\" y=\"137\" text-anchor=\"middle\">C</text><text x=\"73\" y=\"155\" text-anchor=\"middle\">D</text><text x=\"29\" y=\"60\" text-anchor=\"middle\">E</text><text x=\"161\" y=\"58\" text-anchor=\"middle\">F</text><text x=\"207\" y=\"26\" text-anchor=\"middle\">G</text><text x=\"74\" y=\"24\" text-anchor=\"middle\">H</text></g></svg>",
       "options": [
-        { "id": "a", "text": "(AC) عمودي على المستوي (ABF)", "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes" },
-        { "id": "b", "text": "(AG) عمودي على المستوي (BCD)", "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes" },
-        { "id": "c", "text": "(BD) عمودي على المستوي (ABF)", "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes" },
+        {
+          "id": "a",
+          "text": "(AC) عمودي على المستوي (ABF)",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "b",
+          "text": "(AG) عمودي على المستوي (BCD)",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "c",
+          "text": "(BD) عمودي على المستوي (ABF)",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
         { "id": "d", "text": "(AE) عمودي على المستوي (EFG)" }
       ],
       "correctOption": "d",
@@ -25,7 +37,11 @@
         { "id": "a", "text": "متوازيان" },
         { "id": "b", "text": "متعامدان في I" },
         { "id": "c", "text": "متقاطعان في مركز القاعدة" },
-        { "id": "d", "text": "ليسا في نفس المستوي", "misconceptionTag": "math.esp.droites-non-coplanaires-crues-secantes" }
+        {
+          "id": "d",
+          "text": "ليسا في نفس المستوي",
+          "misconceptionTag": "math.esp.droites-non-coplanaires-crues-secantes"
+        }
       ],
       "correctOption": "a",
       "explanation": "النقطتان I و J منتصفا الضلعين [SA] و[SC] من المثلث SAC ، فالمستقيم (IJ) هو مستقيم المنتصفين وهو موازٍ للضلع الثالث (AC) . وهما في نفس المستوي (SAC) فلا يمكن أن يكونا خارج مستوٍ واحد، ولا يتقاطعان لأنّهما متوازيان، ولا شيء في المعطيات يفرض تعامدًا.",
@@ -35,10 +51,10 @@
     {
       "prompt": "SABC هرم منتظم قاعدته المثلث المتقايس الأضلاع ABC ومركز دائرته المحيطة O ، و H منتصف [AC] . إذا كان AB = 9 cm فما قيس BO ؟\n<svg viewBox=\"0 0 250 210\"><path d=\"M125 55 L55 180 L195 180 Z\" fill=\"#0f6e56\" opacity=\"0.08\"/><path d=\"M125 55 L55 180 M125 55 L195 180 M55 180 L195 180\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M55 180 L125 140 L195 180 M125 55 L125 140\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M195 180 L90 160\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/><g fill=\"#0f6e56\"><circle cx=\"90\" cy=\"160\" r=\"4\"/><circle cx=\"125\" cy=\"166.7\" r=\"4\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"125\" y=\"46\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"44\" y=\"195\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"206\" y=\"195\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"136\" y=\"133\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"79\" y=\"154\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text><text x=\"130\" y=\"181\" text-anchor=\"middle\" fill=\"#0f6e56\">O</text></g></svg>",
       "options": [
-        { "id": "a", "text": "(3√3)/2" },
+        { "id": "a", "text": "(3√3)/2", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "b", "text": "3" },
         { "id": "c", "text": "3√3" },
-        { "id": "d", "text": "(9√3)/2" }
+        { "id": "d", "text": "(9√3)/2", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" }
       ],
       "correctOption": "c",
       "explanation": "المثلث ABC متقايس الأضلاع ضلعه 9 و H منتصف [AC] ، فـ [BH] متوسّط وارتفاع في آن، وقيسه (9√3)/2 . والمركز O يبعد عن الرأس B بثلثي المتوسّط: BO = (2/3) × (9√3)/2 = 3√3 cm ، وهو نفسه شعاع الدائرة المحيطة (9√3)/3 . والقيمة (9√3)/2 هي المتوسّط كاملًا لا ثلثاه، والقيمة (3√3)/2 هي OH أي ثلث المتوسّط، والقيمة 3 ناتج قسمة الضلع على 3 مع نسيان الجذر √3 .",
@@ -49,8 +65,8 @@
       "prompt": "SABC هرم منتظم قاعدته المثلث المتقايس الأضلاع ABC مركزه O ، و H منتصف [AC] ، بحيث AB = 6√3 و SO = 4 (بالصنتمتر). ما قيس عمد الهرم SH ؟\n<svg viewBox=\"0 0 250 210\"><path d=\"M125 55 L55 180 L195 180 Z\" fill=\"#0f6e56\" opacity=\"0.08\"/><path d=\"M125 55 L55 180 M125 55 L195 180 M55 180 L195 180\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M55 180 L125 140 L195 180 M125 55 L125 140 M125 55 L125 166.7 M125 166.7 L90 160\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M125 55 L90 160\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\"/><path d=\"M125 153.7 L112 151 L112 164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><g fill=\"#0f6e56\"><circle cx=\"90\" cy=\"160\" r=\"4\"/><circle cx=\"125\" cy=\"166.7\" r=\"4\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"125\" y=\"46\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"44\" y=\"195\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"206\" y=\"195\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"136\" y=\"133\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"79\" y=\"154\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text><text x=\"133\" y=\"182\" text-anchor=\"middle\" fill=\"#0f6e56\">O</text></g></svg>",
       "options": [
         { "id": "a", "text": "5" },
-        { "id": "b", "text": "7" },
-        { "id": "c", "text": "2√13" },
+        { "id": "b", "text": "7", "misconceptionTag": "math.geo.pythagore-sans-carres" },
+        { "id": "c", "text": "2√13", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "d", "text": "√97" }
       ],
       "correctOption": "a",
@@ -77,7 +93,7 @@
         { "id": "a", "text": "(m²√3)/4" },
         { "id": "b", "text": "(m²√2)/2" },
         { "id": "c", "text": "(m²√3)/2" },
-        { "id": "d", "text": "m²√3" }
+        { "id": "d", "text": "m²√3", "misconceptionTag": "math.mes.aire-triangle-sans-moitie" }
       ],
       "correctOption": "c",
       "explanation": "كلّ من [BD] و[DE] و[EB] قطر لوجه مربّع ضلعه m ، إذن BD = DE = EB = m√2 والمثلث BDE متقايس الأضلاع. ارتفاعه يساوي (m√2) × (√3/2) ، ومساحته (1/2) × (m√2) × (m√2 × √3/2) = (m²√3)/2 . والقيمة (m²√3)/4 هي مساحة مثلث متقايس الأضلاع ضلعه m لا m√2 ، والقيمة m²√3 ناتج نسيان النصف.",

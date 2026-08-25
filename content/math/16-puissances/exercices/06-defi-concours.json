@@ -25,7 +25,11 @@
         { "id": "a", "text": "2/25" },
         { "id": "b", "text": "5/√2" },
         { "id": "c", "text": "25/2" },
-        { "id": "d", "text": "(√2/5)⁸" }
+        {
+          "id": "d",
+          "text": "(√2/5)⁸",
+          "misconceptionTag": "math.num.puissances-quotient-exposants-additionnes"
+        }
       ],
       "correctOption": "c",
       "explanation": "الكسران مقلوبان، إذن b = (√2/5)⁻⁵. وبجمع الدليلين نجد a × b = (√2/5)⁻² لأنّ 3 + (−5) = −2. وأخيرًا (√2/5)⁻² = (5/√2)² = 25/2.",
@@ -36,8 +40,16 @@
       "prompt": "ما قيمة (3 × 10⁻²)³ ؟",
       "options": [
         { "id": "a", "text": "27 × 10⁻⁶" },
-        { "id": "b", "text": "9 × 10⁻⁶", "misconceptionTag": "math.num.puissance-confondue-avec-produit" },
-        { "id": "c", "text": "27 × 10⁻⁵", "misconceptionTag": "math.num.notation-scientifique-exposant-decale" },
+        {
+          "id": "b",
+          "text": "9 × 10⁻⁶",
+          "misconceptionTag": "math.num.puissance-confondue-avec-produit"
+        },
+        {
+          "id": "c",
+          "text": "27 × 10⁻⁵",
+          "misconceptionTag": "math.num.notation-scientifique-exposant-decale"
+        },
         { "id": "d", "text": "3 × 10⁻⁶" }
       ],
       "correctOption": "a",
@@ -48,9 +60,21 @@
     {
       "prompt": "اكتب [(−√7)⁵]²/(−√7)⁻⁴ في صيغة قوّة أساسها (−√7).",
       "options": [
-        { "id": "a", "text": "(−√7)⁶", "misconceptionTag": "math.num.exposant-negatif-donne-nombre-negatif" },
-        { "id": "b", "text": "(−√7)¹¹", "misconceptionTag": "math.num.puissances-puissance-exposants-additionnes" },
-        { "id": "c", "text": "(−√7)⁻⁴⁰", "misconceptionTag": "math.num.puissances-produit-exposants-multiplies" },
+        {
+          "id": "a",
+          "text": "(−√7)⁶",
+          "misconceptionTag": "math.num.exposant-negatif-donne-nombre-negatif"
+        },
+        {
+          "id": "b",
+          "text": "(−√7)¹¹",
+          "misconceptionTag": "math.num.puissances-puissance-exposants-additionnes"
+        },
+        {
+          "id": "c",
+          "text": "(−√7)⁻⁴⁰",
+          "misconceptionTag": "math.num.puissances-produit-exposants-multiplies"
+        },
         { "id": "d", "text": "(−√7)¹⁴" }
       ],
       "correctOption": "d",
@@ -62,7 +86,11 @@
       "prompt": "كم عددًا موجبًا يوجد بين الأعداد التالية: (−3/2)⁻⁷ و −(3/2)⁶ و (−3/2)⁰ و (−3/2)⁻⁴ ؟",
       "options": [
         { "id": "a", "text": "2" },
-        { "id": "b", "text": "1" },
+        {
+          "id": "b",
+          "text": "1",
+          "misconceptionTag": "math.num.exposant-negatif-donne-nombre-negatif"
+        },
         { "id": "c", "text": "3" },
         { "id": "d", "text": "4" }
       ],

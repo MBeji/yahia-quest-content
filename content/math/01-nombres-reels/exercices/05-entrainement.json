@@ -9,10 +9,10 @@
     {
       "prompt": "ما ناتج العملية: (−2) × 4 + (−5) × (−3) ؟",
       "options": [
-        { "id": "a", "text": "−23" },
+        { "id": "a", "text": "−23", "misconceptionTag": "math.int.produit-signes-negatifs" },
         { "id": "b", "text": "1" },
         { "id": "c", "text": "7" },
-        { "id": "d", "text": "23" }
+        { "id": "d", "text": "23", "misconceptionTag": "math.int.signe-ignore-dans-somme" }
       ],
       "correctOption": "c",
       "explanation": "ننجز الجداءين أوّلًا ثمّ الجمع، ونطبّق قاعدة الإشارات: سالب × موجب = سالب، وسالب × سالب = موجب. إذن (−2) × 4 = −8 و(−5) × (−3) = 15، ومنه −8 + 15 = 7. الأخطاء الشائعة: إهمال إشارة الجداء الأوّل فينتج 8 + 15 = 23، أو جعل جداء عددين سالبين سالبًا فينتج −8 + (−15) = −23.",
@@ -25,7 +25,11 @@
         { "id": "a", "text": "ℕ" },
         { "id": "b", "text": "ℤ" },
         { "id": "c", "text": "ℚ" },
-        { "id": "d", "text": "مجموعة الأعداد الصمّاء", "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel" }
+        {
+          "id": "d",
+          "text": "مجموعة الأعداد الصمّاء",
+          "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel"
+        }
       ],
       "correctOption": "a",
       "explanation": "√16 = 4 بالضبط لأنّ 4² = 16، والعدد 4 عدد صحيح طبيعي. إذن أصغر مجموعة تحتويه هي ℕ (وهو ينتمي أيضًا إلى ℤ وℚ وℝ بالاحتواء)، ولا ينتمي إلى مجموعة الأعداد الصمّاء لأنّه عدد ناطق. الخطأ الشائع: الظنّ أنّ وجود رمز الجذر يجعل العدد أصمّ — هذا صحيح فقط إذا لم يكن ما تحت الجذر مربّعًا كاملًا.",
@@ -38,7 +42,11 @@
         { "id": "a", "text": "العددان متساويان" },
         { "id": "b", "text": "الأكبر هو 2,8" },
         { "id": "c", "text": "الأكبر هو 2,(8)" },
-        { "id": "d", "text": "العدد 2,(8) أصمّ", "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel" }
+        {
+          "id": "d",
+          "text": "العدد 2,(8) أصمّ",
+          "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel"
+        }
       ],
       "correctOption": "c",
       "explanation": "الكتابة 2,(8) تعني أنّ الرقم 8 يتكرّر بلا توقّف: 2,8888… أمّا الكتابة 2,8 فمتناهية، ونكملها بالأصفار: 2,8000… نقارن رقمًا برقم بعد الفاصل: الرقمان الأوّلان متساويان، وفي الرتبة الثانية نجد 0 مقابل 8، إذن الأكبر هو 2,(8). ومع ذلك فالعددان كسريان معًا: لكلّ كتابة عشرية دوريّة عدد كسري وحيد، والكتابة المتناهية ليست إلّا حالة خاصّة دورها 0. الأخطاء الشائعة: قراءة القوسين كأنّهما زينة لا تغيّر القيمة، أو الظنّ أنّ الكتابة غير المتناهية تكفي لجعل العدد أصمّ.",
@@ -48,9 +56,17 @@
     {
       "prompt": "أيّ من الأعداد التالية ينتمي إلى ℚ ولا ينتمي إلى 𝔻 ؟",
       "options": [
-        { "id": "a", "text": "−2,5", "misconceptionTag": "math.num.appartenance-ensemble-confondue" },
+        {
+          "id": "a",
+          "text": "−2,5",
+          "misconceptionTag": "math.num.appartenance-ensemble-confondue"
+        },
         { "id": "b", "text": "5/9" },
-        { "id": "c", "text": "3/4", "misconceptionTag": "math.num.appartenance-ensemble-confondue" },
+        {
+          "id": "c",
+          "text": "3/4",
+          "misconceptionTag": "math.num.appartenance-ensemble-confondue"
+        },
         { "id": "d", "text": "7", "misconceptionTag": "math.num.appartenance-ensemble-confondue" }
       ],
       "correctOption": "b",
@@ -63,7 +79,11 @@
       "options": [
         { "id": "a", "text": "5 cm وهو عدد صحيح" },
         { "id": "b", "text": "2,5 cm وهو عدد عشري" },
-        { "id": "c", "text": "√5 cm وهو عدد كسري", "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel" },
+        {
+          "id": "c",
+          "text": "√5 cm وهو عدد كسري",
+          "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel"
+        },
         { "id": "d", "text": "√5 cm وهو عدد أصمّ" }
       ],
       "correctOption": "d",
@@ -74,10 +94,22 @@
     {
       "prompt": "نعتبر المجموعة التالية:\nA = { −3/4 ; √64 ; π ; 0,6 ; √3 }\nكم عنصرًا من A ينتمي إلى ℚ ؟",
       "options": [
-        { "id": "a", "text": "2", "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel" },
+        {
+          "id": "a",
+          "text": "2",
+          "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel"
+        },
         { "id": "b", "text": "3" },
-        { "id": "c", "text": "4", "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel" },
-        { "id": "d", "text": "5", "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel" }
+        {
+          "id": "c",
+          "text": "4",
+          "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel"
+        },
+        {
+          "id": "d",
+          "text": "5",
+          "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel"
+        }
       ],
       "correctOption": "b",
       "explanation": "نفحص العناصر واحدًا واحدًا: −3/4 كسر إذن في ℚ ؛ √64 = 8 لأنّ 8² = 64 فهو عدد صحيح وبالتالي في ℚ ؛ π عدد أصمّ فهو خارج ℚ ؛ 0,6 = 6/10 في ℚ ؛ √3 عدد أصمّ لأنّ 3 ليس مربّعًا كاملًا. إذن العناصر المنتمية إلى ℚ هي 3: العدد −3/4 والعدد √64 والعدد 0,6. الخطأ الشائع: عدّ √64 مع الأعداد الصمّاء لمجرّد وجود رمز الجذر.",

@@ -48,7 +48,7 @@
     {
       "prompt": "مجموع عددين 30 والفرق بينهما 8. ما هو العدد الأكبر؟",
       "options": [
-        { "id": "a", "text": "11" },
+        { "id": "a", "text": "11", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "b", "text": "15" },
         { "id": "c", "text": "19" },
         { "id": "d", "text": "22" }
@@ -63,7 +63,11 @@
       "options": [
         { "id": "a", "text": "لا حلّ للجملة: إنّها جملة مستحيلة" },
         { "id": "b", "text": "للجملة حلّ وحيد هو (3 ; 2)" },
-        { "id": "c", "text": "للجملة عدد لا نهائيّ من الحلول", "misconceptionTag": "math.alg.systeme-impossible-et-indetermine-confondus" },
+        {
+          "id": "c",
+          "text": "للجملة عدد لا نهائيّ من الحلول",
+          "misconceptionTag": "math.alg.systeme-impossible-et-indetermine-confondus"
+        },
         { "id": "d", "text": "للجملة حلّ وحيد هو (0 ; 4)" }
       ],
       "correctOption": "a",
@@ -75,7 +79,7 @@
       "prompt": "اشترى أحمد 3 دفاتر وقلمَين بـ 13 دينارًا، واشترى دفترًا واحدًا وقلمَين بـ 7 دنانير. ما ثمن الدفتر الواحد؟",
       "options": [
         { "id": "a", "text": "1 دينار" },
-        { "id": "b", "text": "2 دينار" },
+        { "id": "b", "text": "2 دينار", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "c", "text": "3 دنانير" },
         { "id": "d", "text": "4 دنانير" }
       ],

@@ -24,7 +24,11 @@
       "options": [
         { "id": "a", "text": "110°" },
         { "id": "b", "text": "95°" },
-        { "id": "c", "text": "70°", "misconceptionTag": "math.geo.quadrilatere-inscrit-angles-opposes" },
+        {
+          "id": "c",
+          "text": "70°",
+          "misconceptionTag": "math.geo.quadrilatere-inscrit-angles-opposes"
+        },
         { "id": "d", "text": "20°" }
       ],
       "correctOption": "a",
@@ -36,7 +40,7 @@
       "prompt": "في دائرة، [AB] قطر والنقطة C على الدائرة. إذا كانت الزاوية BAC = 35°، فما قيس الزاوية ABC؟",
       "options": [
         { "id": "a", "text": "90°" },
-        { "id": "b", "text": "35°" },
+        { "id": "b", "text": "35°", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "c", "text": "55°" },
         { "id": "d", "text": "145°" }
       ],
@@ -48,7 +52,11 @@
     {
       "prompt": "في دائرة مركزها O، الزاوية المركزية AOB (للقوس الصغير AB) قيسها 100°. النقطة C على القوس الكبير والنقطة D على القوس الصغير. ما قيس الزاوية المحيطية ADB؟",
       "options": [
-        { "id": "a", "text": "50°", "misconceptionTag": "math.geo.angle-inscrit-arc-oppose-ignore" },
+        {
+          "id": "a",
+          "text": "50°",
+          "misconceptionTag": "math.geo.angle-inscrit-arc-oppose-ignore"
+        },
         { "id": "b", "text": "100°", "misconceptionTag": "math.geo.angle-inscrit-egal-au-centre" },
         { "id": "c", "text": "130°" },
         { "id": "d", "text": "80°" }
@@ -61,7 +69,7 @@
     {
       "prompt": "ما قيس الزاوية الداخلية لسداسيّ منتظم (مرسوم في دائرة)؟",
       "options": [
-        { "id": "a", "text": "60°" },
+        { "id": "a", "text": "60°", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "b", "text": "108°" },
         { "id": "c", "text": "90°" },
         { "id": "d", "text": "120°" }
@@ -75,8 +83,16 @@
       "prompt": "قال تلميذ: «الزاوية المحيطية التي تحصر قوسًا قيسه 80° تساوي 160° لأنّ المحيطية ضعف القوس». ما الخطأ؟",
       "options": [
         { "id": "a", "text": "المحيطية = نصف القوس = 40°" },
-        { "id": "b", "text": "المحيطية = القوس = 80°", "misconceptionTag": "math.geo.angle-inscrit-egal-au-centre" },
-        { "id": "c", "text": "لا خطأ، الحساب صحيح", "misconceptionTag": "math.geo.angle-inscrit-double-du-centre" },
+        {
+          "id": "b",
+          "text": "المحيطية = القوس = 80°",
+          "misconceptionTag": "math.geo.angle-inscrit-egal-au-centre"
+        },
+        {
+          "id": "c",
+          "text": "لا خطأ، الحساب صحيح",
+          "misconceptionTag": "math.geo.angle-inscrit-double-du-centre"
+        },
         { "id": "d", "text": "المحيطية = ربع القوس = 20°" }
       ],
       "correctOption": "a",

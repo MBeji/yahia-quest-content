@@ -48,7 +48,11 @@
     {
       "prompt": "ABCD متوازي أضلاع (بهذا الترتيب) حيث A(1 ; 1) وB(4 ; 2) وC(6 ; 5). ما إحداثيّات D؟",
       "options": [
-        { "id": "a", "text": "(9 ; 6)" },
+        {
+          "id": "a",
+          "text": "(9 ; 6)",
+          "misconceptionTag": "math.vec.parallelogramme-sommets-mal-ordonnes"
+        },
         { "id": "b", "text": "(3 ; 4)" },
         { "id": "c", "text": "(3 ; 6)" },
         { "id": "d", "text": "(9 ; 4)" }
@@ -64,7 +68,11 @@
         { "id": "a", "text": "(2 ; 3)" },
         { "id": "b", "text": "(−2 ; −3)" },
         { "id": "c", "text": "(−2 ; 3)" },
-        { "id": "d", "text": "(3 ; −2)", "misconceptionTag": "math.vec.coordonnees-point-inversees" }
+        {
+          "id": "d",
+          "text": "(3 ; −2)",
+          "misconceptionTag": "math.vec.coordonnees-point-inversees"
+        }
       ],
       "correctOption": "c",
       "explanation": "التماثل بالنسبة إلى المبدأ O يقلب إشارتَي الإحداثيَّين معًا: A'(−xA ; −yA) = (−2 ; 3). ✓ (O منتصف [AA']: ((2 + (−2))/2 ; (−3 + 3)/2) = (0 ; 0) صحيح). الخطأ الشائع: قلب إشارة إحداثيّ واحد فقط (2 ; 3) أو (−2 ; −3)؛ أو تبديل الإحداثيَّين (3 ; −2).",
@@ -75,8 +83,16 @@
       "prompt": "حسب تلميذ المسافة AB حيث A(0 ; 0) وB(6 ; 8) فكتب: «AB = (6 + 8)/2 = 7». ما الخطأ؟",
       "options": [
         { "id": "a", "text": "المسافة = √(6² + 8²) = 10" },
-        { "id": "b", "text": "المسافة = 6 + 8 = 14", "misconceptionTag": "math.geo.pythagore-sans-carres" },
-        { "id": "c", "text": "لا خطأ، الحساب صحيح", "misconceptionTag": "math.geo.pythagore-sans-carres" },
+        {
+          "id": "b",
+          "text": "المسافة = 6 + 8 = 14",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "لا خطأ، الحساب صحيح",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
         { "id": "d", "text": "المسافة = 6 × 8 = 48" }
       ],
       "correctOption": "a",

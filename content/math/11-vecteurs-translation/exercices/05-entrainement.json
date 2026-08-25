@@ -35,8 +35,16 @@
     {
       "prompt": "الرباعي ABCD يحقّق المساواة الشعاعية AB = DC. ماذا نستنتج عن قطريه [AC] و[BD]؟",
       "options": [
-        { "id": "a", "text": "متعامدان" },
-        { "id": "b", "text": "متساويان في الطول" },
+        {
+          "id": "a",
+          "text": "متعامدان",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        {
+          "id": "b",
+          "text": "متساويان في الطول",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
         { "id": "c", "text": "لهما المنتصف نفسه" },
         { "id": "d", "text": "لا توجد بينهما علاقة خاصّة" }
       ],
@@ -49,7 +57,11 @@
       "prompt": "في الانسحاب ذي الشعاع u، النقطة N هي صورة النقطة P (أي P هي سابقة N). أيّ علاقة شعاعية صحيحة؟",
       "options": [
         { "id": "a", "text": "NP = u", "misconceptionTag": "math.vec.chasles-sens-inverse" },
-        { "id": "b", "text": "PN = الشعاع الصفري", "misconceptionTag": "math.vec.translation-points-fixes" },
+        {
+          "id": "b",
+          "text": "PN = الشعاع الصفري",
+          "misconceptionTag": "math.vec.translation-points-fixes"
+        },
         { "id": "c", "text": "N = P", "misconceptionTag": "math.vec.translation-points-fixes" },
         { "id": "d", "text": "PN = u" }
       ],

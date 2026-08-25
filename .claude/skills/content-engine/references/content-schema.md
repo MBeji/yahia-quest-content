@@ -125,6 +125,42 @@ wording; the tag itself is never displayed). Tagging is **optional and progressi
 untagged when the error isn't crisp; the `prof-*` trap taxonomies are the natural source of tags. Only
 `mcq` resolves telemetry (the wire choice equals the option id), so only `mcq` options take the field.
 
+**La règle de décision — tagger ou laisser muet (étude 30, lot 0bis).** « Optionnel et progressif »
+ne veut pas dire « au jugé » : le champ vide est une **décision**, pas un reste de campagne. Le lot 0
+de é30 avait taggé `math` 9ᵉ sans trancher les 297 questions restées muettes ; le lot 0bis les a lues
+une à une et en a fixé la règle. Un distracteur reçoit son `misconceptionTag` **si et seulement s'il
+est reconstructible** : on sait nommer une erreur du registre ET montrer le chemin qui mène **de
+l'énoncé à CETTE option exactement**. Trois portes donnent ce oui, dans cet ordre :
+
+| porte  | ce qui la déclenche                                                                                                                                                          | exemple mesuré                                                                                                                            |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **R1** | l'`explanation` **nomme déjà** l'erreur et dit quelle option elle produit (« الخطأ الشائع … فيخرج X »)                                                                        | « قلب النسبة (AM = 12 × 9/6 = 18) » ⇒ l'option `18 cm` prend `math.geo.thales-rapport-inverse`                                             |
+| **R2** | **tout le jeu** de distracteurs est construit sur une seule erreur                                                                                                            | les trois couples faux d'un système vérifient **exactement une** des deux équations ⇒ `math.alg.systeme-verification-partielle` sur les trois |
+| **R3** | l'option est le calcul juste avec **une** opération nommée inversée ou omise, sans autre lecture possible                                                                     | `πrh` au lieu de `πr²h` ⇒ `math.mes.rayon-non-eleve-au-carre`                                                                              |
+
+Et on **laisse muet** — sans y revenir — dans ces trois cas, qui ne sont pas des échecs :
+
+- le **nombre de remplissage** : une valeur proche qu'aucun geste identifiable ne produit (elle
+  n'est là que pour faire quatre options) ;
+- l'**ambiguïté** : deux erreurs différentes mènent à la même option. Un mauvais tag enseigne une
+  fausse erreur — il coûte plus cher que pas de tag du tout ;
+- l'**erreur réelle mais sans entrée** au registre, et **non récurrente**. Le registre est un
+  vocabulaire fermé : on ne l'étend que si l'erreur revient dans **≥ 3 questions distinctes** et se
+  dit en **une phrase adressée à l'élève**. En dessous du seuil : muet, et on note l'erreur pour la
+  campagne suivante.
+
+Deux conséquences à connaître avant de viser un chiffre :
+
+1. **100 % n'est pas la cible.** Sur `math` 9ᵉ, la règle appliquée aux 818 questions plafonne à
+   **81 % (662/818)** — les 156 restantes sont des muettes **statuées**, pas des impayés. Une
+   couverture qui monterait au-delà signalerait un tag posé au jugé, pas un corpus mieux tenu.
+2. **Le premier tag manquant est souvent le plus commun.** Le lot 0bis a dû ouvrir
+   `math.alg.reponse-a-l-autre-inconnue` — « tu donnes une autre grandeur que celle demandée » — qui
+   sert **54 fois** à lui seul. C'est une erreur de **lecture d'énoncé**, pas de compétence : elle est
+   donc déclarée **sans** `competency` (le champ est optionnel exactement pour ça), et le bloc de
+   correction nomme l'erreur sans proposer d'exercice. Avant d'écarter une erreur parce qu'elle
+   « n'est pas mathématique », vérifier qu'elle n'est pas simplement de ce type-là.
+
 **`numeric` — native free numeric entry (no options, no elimination):**
 
 | Field                 | Type   | Required | Constraint                                                                                                                                       |

@@ -30,20 +30,20 @@
       "correctOption": "b",
       "explanation": "العدد 5 124 رقم آحاده 4 (زوجي) ومجموع أرقامه 5 + 1 + 2 + 4 = 12 مضاعف للعدد 3، إذن 5 124 = 6 × 854. أمّا 3 217 و4 351 ففرديان، والعدد 2 638 زوجي لكنّ مجموع أرقامه 19 ليس مضاعفا للعدد 3.",
       "difficulty": 1,
-      "competencies": [
-        "math.num.criteres-divisibilite"
-      ]
+      "competencies": ["math.num.criteres-divisibilite"]
     },
     {
       "prompt": "ما كمّ مجموعة قواسم العدد 16؟",
       "options": [
         {
           "id": "a",
-          "text": "3"
+          "text": "3",
+          "misconceptionTag": "math.num.diviseurs-un-et-lui-meme-oublies"
         },
         {
           "id": "b",
-          "text": "4"
+          "text": "4",
+          "misconceptionTag": "math.num.diviseurs-un-et-lui-meme-oublies"
         },
         {
           "id": "c",
@@ -57,9 +57,7 @@
       "correctOption": "c",
       "explanation": "قواسم العدد 16 هي 1 و2 و4 و8 و16، أي خمسة قواسم، إذن كمّ المجموعة هو 5. (الخطأ الشائع: نسيان العدد 1 أو العدد 16 نفسه يعطي 4، والاكتفاء بـ 2 و4 و8 يعطي 3.)",
       "difficulty": 1,
-      "competencies": [
-        "math.num.multiples-diviseurs"
-      ]
+      "competencies": ["math.num.multiples-diviseurs"]
     },
     {
       "prompt": "لماذا يقبل العدد 8 316 القسمة على 12؟",
@@ -87,9 +85,7 @@
       "correctOption": "d",
       "explanation": "شرطا القسمة على 12 هما القسمة على 3 والقسمة على 4. هنا مجموع الأرقام 8 + 3 + 1 + 6 = 18 مضاعف للعدد 3، وآخر رقمين يكوّنان 16 = 4 × 4، إذن 8 316 = 12 × 693. والعدد 18 مثال مضادّ يبيّن أنّ القسمة على 6 أو أنّ كون الآحاد زوجيا لا يكفي.",
       "difficulty": 2,
-      "competencies": [
-        "math.num.criteres-divisibilite"
-      ]
+      "competencies": ["math.num.criteres-divisibilite"]
     },
     {
       "prompt": "أيّ الأعداد التالية يقبل القسمة على 15؟",
@@ -117,9 +113,7 @@
       "correctOption": "c",
       "explanation": "العدد 2 070 رقم آحاده 0 ومجموع أرقامه 2 + 0 + 7 + 0 = 9 مضاعف للعدد 3، إذن 2 070 = 15 × 138. أمّا 1 435 فمجموع أرقامه 13 و6 250 مجموع أرقامه 13 أيضا (وكلاهما ليس مضاعفا للعدد 3)، والعدد 8 124 رقم آحاده 4 فلا يقبل القسمة على 5.",
       "difficulty": 2,
-      "competencies": [
-        "math.num.criteres-divisibilite"
-      ]
+      "competencies": ["math.num.criteres-divisibilite"]
     },
     {
       "prompt": "في العدد 845a، حيث a رقم الآحاد، ما هي كلّ قيم a التي تجعل العدد قابلا للقسمة على 6؟",
@@ -138,15 +132,14 @@
         },
         {
           "id": "d",
-          "text": "الأرقام 1 و 4 و 7"
+          "text": "الأرقام 1 و 4 و 7",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
         }
       ],
       "correctOption": "a",
       "explanation": "مجموع الأرقام المعروفة هو 8 + 4 + 5 = 17؛ ليقبل العدد القسمة على 3 يجب أن يكون 17 + a مضاعفا للعدد 3، أي a من بين 1 و4 و7. وليقبل القسمة على 2 يجب أن يكون a زوجيا. القيمة المشتركة الوحيدة هي a = 4، والعدد هو 8 454 = 6 × 1 409.",
       "difficulty": 2,
-      "competencies": [
-        "math.num.criteres-divisibilite"
-      ]
+      "competencies": ["math.num.criteres-divisibilite"]
     },
     {
       "prompt": "كم عددا يتكوّن من رقمين ويقبل القسمة على 12؟",
@@ -171,9 +164,7 @@
       "correctOption": "b",
       "explanation": "مضاعفات العدد 12 المكوّنة من رقمين هي 12 و24 و36 و48 و60 و72 و84 و96، أي 8 أعداد. (العدد 108 يتكوّن من ثلاثة أرقام فلا يُحتسب.)",
       "difficulty": 2,
-      "competencies": [
-        "math.num.multiples-diviseurs"
-      ]
+      "competencies": ["math.num.multiples-diviseurs"]
     }
   ]
 }

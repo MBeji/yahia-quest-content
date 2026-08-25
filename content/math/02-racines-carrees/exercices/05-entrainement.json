@@ -9,7 +9,11 @@
     {
       "prompt": "أبسّط √98 :",
       "options": [
-        { "id": "a", "text": "2√7", "misconceptionTag": "math.num.racine-extraction-facteur-inversee" },
+        {
+          "id": "a",
+          "text": "2√7",
+          "misconceptionTag": "math.num.racine-extraction-facteur-inversee"
+        },
         { "id": "b", "text": "7√2" },
         { "id": "c", "text": "14√2" },
         { "id": "d", "text": "49√2" }
@@ -64,7 +68,11 @@
         { "id": "a", "text": "4" },
         { "id": "b", "text": "6" },
         { "id": "c", "text": "9 + √5" },
-        { "id": "d", "text": "14" }
+        {
+          "id": "d",
+          "text": "14",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        }
       ],
       "correctOption": "a",
       "explanation": "هذا فرق مربّعين: (a+b)(a−b) = a² − b² مع a = 3 وb = √5. إذن = 3² − (√5)² = 9 − 5 = 4 ✓. الخطأ الشائع: جمع المربّعين بدل طرحهما (9 + 5 = 14)، أو حساب (√5)² = 25 بدل 5.",

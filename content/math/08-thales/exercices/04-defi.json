@@ -63,8 +63,12 @@
       "options": [
         { "id": "a", "text": "FG = 6 cm" },
         { "id": "b", "text": "FG = 10 cm" },
-        { "id": "c", "text": "FG = 12 cm" },
-        { "id": "d", "text": "FG = 24 cm" }
+        {
+          "id": "c",
+          "text": "FG = 12 cm",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        { "id": "d", "text": "FG = 24 cm", "misconceptionTag": "math.geo.thales-rapport-inverse" }
       ],
       "correctOption": "a",
       "explanation": "نطبّق طاليس مرّتين. الخطوة 1 — في المثلّث ABC مع (DE) ∥ (BC): DE/BC = AD/AB = 6/10 = 3/5، إذن DE = 20 × (3/5) = 12 cm. الخطوة 2 — في المثلّث ADE مع (FG) ∥ (DE): FG/DE = AF/AD = 3/6 = 1/2، إذن FG = 12 × (1/2) = 6 cm. التحقّق: بما أنّ (FG) ∥ (BC) أيضًا، فمباشرةً FG = BC × AF/AB = 20 × 3/10 = 6 cm ✓. الخطأ الشائع: التوقّف عند DE = 12 واعتباره الجواب، أو قلب النسبة الثانية (FG = DE × AD/AF = 24).",
@@ -74,7 +78,7 @@
     {
       "prompt": "في وضعية الفراشة، يتقاطع مستقيمان في O بحيث (AB) ∥ (CD). المعطيات: OA = k cm وOC = (k + 6) cm وOB = 4 cm وOD = 8 cm وAB = 7 cm. أوجد k، ثمّ استنتج طول CD.",
       "options": [
-        { "id": "a", "text": "CD = 3,5 cm" },
+        { "id": "a", "text": "CD = 3,5 cm", "misconceptionTag": "math.geo.thales-rapport-inverse" },
         { "id": "b", "text": "CD = 14 cm" },
         { "id": "c", "text": "CD = 21 cm" },
         { "id": "d", "text": "CD = 28 cm" }

@@ -98,6 +98,15 @@
     },
     "competency": "math.num.criteres-divisibilite"
   },
+  "math.num.diviseurs-un-et-lui-meme-oublies": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu oublies 1 et le nombre lui-même dans la liste de ses diviseurs : ils en font toujours partie",
+      "en": "You leave 1 and the number itself out of its list of divisors: both always count",
+      "ar": "تنسى العدد 1 والعدد نفسه في قائمة قواسمه: كلاهما من القواسم دائمًا"
+    },
+    "competency": "math.num.multiples-diviseurs"
+  },
   "math.num.divisibilite-composee-facteurs-non-premiers": {
     "subject": "math",
     "labels": {
@@ -113,6 +122,15 @@
       "fr": "Tu appliques le critère d'un autre diviseur : celui de 9 ne prouve rien sur 12, et le dernier chiffre ne prouve rien sur 3",
       "en": "You use another divisor's rule: the rule for 9 proves nothing about 12, and the last digit proves nothing about 3",
       "ar": "تطبّق معيار قاسم آخر: معيار 9 لا يُثبت شيئًا عن 12، ورقم الآحاد لا يُثبت شيئًا عن 3"
+    },
+    "competency": "math.num.criteres-divisibilite"
+  },
+  "math.num.critere-somme-applique-au-chiffre": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu appliques le critère de 3 (ou de 9) au chiffre inconnu au lieu de la SOMME de tous les chiffres du nombre",
+      "en": "You apply the rule for 3 (or 9) to the unknown digit instead of to the SUM of all the number's digits",
+      "ar": "تطبّق معيار القسمة على 3 (أو 9) على الرقم المجهول بدل مجموع أرقام العدد كلّها"
     },
     "competency": "math.num.criteres-divisibilite"
   },
@@ -509,6 +527,24 @@
       "fr": "Tu confonds une différence de deux carrés avec un carré : elle se factorise en un produit de la somme par la différence",
       "en": "You confuse a difference of two squares with a square: it factors as the sum times the difference",
       "ar": "تخلط بين فرق مربّعَين والمربّع: فرق المربّعَين يُعمَّل إلى جداء المجموع في الفرق"
+    },
+    "competency": "math.alg.identites-remarquables"
+  },
+  "math.alg.difference-carres-somme-au-lieu-de-difference": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu additionnes les deux carrés au lieu de les soustraire : (a + b)(a − b) vaut a² − b², jamais a² + b²",
+      "en": "You add the two squares instead of subtracting them: (a + b)(a − b) is a² − b², never a² + b²",
+      "ar": "تجمع المربّعين بدل طرحهما: (a + b)(a − b) تساوي a² − b² لا a² + b²"
+    },
+    "competency": "math.alg.identites-remarquables"
+  },
+  "math.alg.difference-carres-second-terme-non-eleve-au-carre": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu retranches le second terme sans l'élever au carré : dans (√7 − 2)(√7 + 2) le dénominateur vaut 7 − 4, pas 7 − 2",
+      "en": "You subtract the second term without squaring it: in (√7 − 2)(√7 + 2) the result is 7 − 4, not 7 − 2",
+      "ar": "تطرح الحدّ الثاني دون تربيعه: في (√7 − 2)(√7 + 2) الناتج هو 7 − 4 لا 7 − 2"
     },
     "competency": "math.alg.identites-remarquables"
   },
@@ -1340,6 +1376,15 @@
     },
     "competency": "math.esp.solides-espace"
   },
+  "math.mes.rayon-non-eleve-au-carre": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu oublies d'élever le rayon au carré : l'aire du disque vaut πr², donc le volume du cylindre πr²h et non πrh",
+      "en": "You forget to square the radius: a disc's area is πr², so a cylinder's volume is πr²h, not πrh",
+      "ar": "تنسى تربيع نصف القطر: مساحة القرص πr²، فحجم الأسطوانة πr²h لا πrh"
+    },
+    "competency": "math.mes.volumes"
+  },
   "math.mes.agrandissement-volume-non-cube": {
     "subject": "math",
     "labels": {
@@ -1384,5 +1429,13 @@
       "ar": "مساحة المعيّن هي نصف جداء قطرَيه: نسيان النصف يضاعف النتيجة"
     },
     "competency": "math.mes.aires"
+  },
+  "math.alg.reponse-a-l-autre-inconnue": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu donnes une autre grandeur que celle demandée — l'autre inconnue, ou un résultat intermédiaire : relis la question avant de choisir",
+      "en": "You give a different quantity from the one asked — the other unknown, or an intermediate result: read the question again before choosing",
+      "ar": "تعطي مقدارًا غير المطلوب — المجهول الآخر أو نتيجة وسيطة: أعد قراءة السؤال قبل الاختيار"
+    }
   }
 }

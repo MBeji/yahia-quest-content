@@ -22,8 +22,16 @@
     {
       "prompt": "مثلث أضلاعه 8 cm و15 cm و17 cm. هل هو قائم الزاوية؟",
       "options": [
-        { "id": "a", "text": "لا، لأنّ 8 + 15 ≠ 17", "misconceptionTag": "math.geo.pythagore-sans-carres" },
-        { "id": "b", "text": "لا، لأنّ 8² + 17² ≠ 15²", "misconceptionTag": "math.geo.hypotenuse-mal-choisie" },
+        {
+          "id": "a",
+          "text": "لا، لأنّ 8 + 15 ≠ 17",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "b",
+          "text": "لا، لأنّ 8² + 17² ≠ 15²",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
         { "id": "c", "text": "لا يمكن التحقّق بدون رسم" },
         { "id": "d", "text": "نعم، لأنّ 8² + 15² = 17²" }
       ],
@@ -35,10 +43,22 @@
     {
       "prompt": "في مثلّث ABC قائم الزاوية في B، زاوية A = 45°. أيّ من القيم التالية صحيحة؟",
       "options": [
-        { "id": "a", "text": "جتا(45°) = 1", "misconceptionTag": "math.geo.valeurs-remarquables-confondues" },
-        { "id": "b", "text": "جا(45°) = √3/2", "misconceptionTag": "math.geo.valeurs-remarquables-confondues" },
+        {
+          "id": "a",
+          "text": "جتا(45°) = 1",
+          "misconceptionTag": "math.geo.valeurs-remarquables-confondues"
+        },
+        {
+          "id": "b",
+          "text": "جا(45°) = √3/2",
+          "misconceptionTag": "math.geo.valeurs-remarquables-confondues"
+        },
         { "id": "c", "text": "جتا(45°) = √2/2" },
-        { "id": "d", "text": "ظا(45°) = √3", "misconceptionTag": "math.geo.valeurs-remarquables-confondues" }
+        {
+          "id": "d",
+          "text": "ظا(45°) = √3",
+          "misconceptionTag": "math.geo.valeurs-remarquables-confondues"
+        }
       ],
       "correctOption": "c",
       "explanation": "الزوايا المشهورة: جا(45°) = جتا(45°) = √2/2 ≈ 0,707، وظا(45°) = 1. إذن جتا(45°) = √2/2 هي الإجابة الصحيحة.",
@@ -50,7 +70,11 @@
       "options": [
         { "id": "a", "text": "7 cm" },
         { "id": "b", "text": "7√2 cm" },
-        { "id": "c", "text": "7√3 cm" },
+        {
+          "id": "c",
+          "text": "7√3 cm",
+          "misconceptionTag": "math.geo.valeurs-remarquables-confondues"
+        },
         { "id": "d", "text": "3,5 cm" }
       ],
       "correctOption": "a",

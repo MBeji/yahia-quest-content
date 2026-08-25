@@ -11,7 +11,11 @@
       "options": [
         { "id": "a", "text": "لأنّ رؤوس القاعدة تبعد نفس البعد عن مركزها" },
         { "id": "b", "text": "لأنّ قاعدته مضلّع منتظم فأضلاعه متقايسة" },
-        { "id": "c", "text": "لأنّ أوجهه الجانبية مثلثات متقايسة الأضلاع", "misconceptionTag": "math.esp.pyramide-reguliere-faces-equilaterales" },
+        {
+          "id": "c",
+          "text": "لأنّ أوجهه الجانبية مثلثات متقايسة الأضلاع",
+          "misconceptionTag": "math.esp.pyramide-reguliere-faces-equilaterales"
+        },
         { "id": "d", "text": "لأنّ ارتفاعه يساوي شعاع الدائرة المحيطة بقاعدته" }
       ],
       "correctOption": "a",
@@ -22,8 +26,8 @@
     {
       "prompt": "ABCD هرم منتظم أوجهه الأربعة مثلثات متقايسة الأضلاع طول حرفها a ، و I منتصف [BC] . ما قيس AI ؟\n<svg viewBox=\"0 0 250 210\"><path d=\"M130 55 L55 180 L195 180 Z\" fill=\"#0f6e56\" opacity=\"0.08\"/><path d=\"M130 55 L55 180 M130 55 L195 180 M55 180 L195 180\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M55 180 L140 138 L195 180 M130 55 L140 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M130 55 L125 180\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\"/><g fill=\"#0f6e56\"><circle cx=\"125\" cy=\"180\" r=\"4\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"130\" y=\"46\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"44\" y=\"195\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"206\" y=\"195\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"152\" y=\"133\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"116\" y=\"197\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text></g></svg>",
       "options": [
-        { "id": "a", "text": "a/2" },
-        { "id": "b", "text": "(a√3)/3" },
+        { "id": "a", "text": "a/2", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
+        { "id": "b", "text": "(a√3)/3", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "c", "text": "(a√2)/2" },
         { "id": "d", "text": "(a√3)/2" }
       ],
@@ -35,10 +39,22 @@
     {
       "prompt": "ABCD هرم منتظم أوجهه الأربعة مثلثات متقايسة الأضلاع، و I منتصف [BC] . على أيّ مستقيمين متقاطعين نستند لنبيّن أنّ (BC) عمودي على المستوي (AID) ؟\n<svg viewBox=\"0 0 250 210\"><path d=\"M130 55 L55 180 L195 180 Z\" fill=\"#0f6e56\" opacity=\"0.08\"/><path d=\"M130 55 L55 180 M130 55 L195 180 M55 180 L195 180\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M55 180 L140 138 L195 180 M130 55 L140 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M130 55 L125 180\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\"/><path d=\"M140 138 L125 180\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-dasharray=\"6 4\"/><g fill=\"#0f6e56\"><circle cx=\"125\" cy=\"180\" r=\"4\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"130\" y=\"46\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"44\" y=\"195\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"206\" y=\"195\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"152\" y=\"133\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"116\" y=\"197\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text></g></svg>",
       "options": [
-        { "id": "a", "text": "على (AB) و(AC) المتقاطعين في A", "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes" },
+        {
+          "id": "a",
+          "text": "على (AB) و(AC) المتقاطعين في A",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
         { "id": "b", "text": "على (AI) و(DI) المتقاطعين في I" },
-        { "id": "c", "text": "على (AD) و(BC) المتقاطعين في I", "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes" },
-        { "id": "d", "text": "على (AI) و(BC) المتقاطعين في I", "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes" }
+        {
+          "id": "c",
+          "text": "على (AD) و(BC) المتقاطعين في I",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "d",
+          "text": "على (AI) و(BC) المتقاطعين في I",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        }
       ],
       "correctOption": "b",
       "explanation": "المثلثان ABC و DBC متقايسا الأضلاع و I منتصف [BC] ، فـ [AI] و[DI] ارتفاعان ومنه (BC) عمودي على (AI) وعلى (DI) . وهذان المستقيمان متقاطعان في I ومحتويان في المستوي (AID) ، فالشرط مستوفى. أمّا (AB) و(AC) فلا يعامدهما (BC) ، والمستقيم (AD) لا يمرّ من I ، و(BC) لا يمكن أن يخدم في إثبات عمودية نفسه.",
@@ -51,7 +67,7 @@
         { "id": "a", "text": "a/3" },
         { "id": "b", "text": "(a√3)/3" },
         { "id": "c", "text": "(a√2)/2" },
-        { "id": "d", "text": "(a√3)/2" }
+        { "id": "d", "text": "(a√3)/2", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" }
       ],
       "correctOption": "b",
       "explanation": "المستقيم (AH) عمودي على المستوي (BCD) ، فالمثلثات AHB و AHC و AHD قائمة في H وأوتارها متقايسة (AB = AC = AD = a) ، ومنه HB = HC = HD : النقطة H هي مركز الدائرة المحيطة بالمثلث المتقايس الأضلاع BCD ، و HD شعاعها. ولمّا كان الارتفاع في هذا المثلث يساوي (a√3)/2 والمركز يبعد عن الرأس بثلثيه، نجد HD = (2/3) × (a√3)/2 = (a√3)/3 . أمّا (a√3)/2 فهو الارتفاع كاملًا لا ثلثاه.",
@@ -64,7 +80,7 @@
         { "id": "a", "text": "(a√3)/3" },
         { "id": "b", "text": "(a√2)/2" },
         { "id": "c", "text": "(a√6)/3" },
-        { "id": "d", "text": "(a√3)/2" }
+        { "id": "d", "text": "(a√3)/2", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" }
       ],
       "correctOption": "c",
       "explanation": "بما أنّ H مركز الدائرة المحيطة بالقاعدة، فإنّ HD = (a√3)/3 ومنه HD² = a²/3 . والمستقيم (AH) عمودي على مستوي القاعدة فالمثلث AHD قائم في H ، وبنظرية بيتاغور: AH² = AD² − HD² = a² − a²/3 = (2a²)/3 ومنه AH = (a√6)/3 . والخطأ الشائع هو أخذ (a√3)/2 وهو ارتفاع وجه من الأوجه لا ارتفاع الهرم.",
@@ -75,9 +91,21 @@
       "prompt": "P مستوٍ، و A نقطة لا تنتمي إليه، و H المسقط العمودي لـ A على P . إذا كانت M نقطة من P مخالفة لـ H ، فما العلاقة الصحيحة بين AM و AH ؟\n<svg viewBox=\"0 0 300 205\"><path d=\"M30 180 L220 180 L275 130 L85 130 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M30 180 L220 180 L275 130 L85 130 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M130 60 L130 158\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><path d=\"M130 158 L215 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M130 60 L215 152\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\"/><path d=\"M130 145 L143 144 L143 157\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><g fill=\"#0f172a\"><circle cx=\"130\" cy=\"60\" r=\"4\"/><circle cx=\"130\" cy=\"158\" r=\"4\"/><circle cx=\"215\" cy=\"152\" r=\"4\"/></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"130\" y=\"51\" text-anchor=\"middle\">A</text><text x=\"120\" y=\"174\" text-anchor=\"middle\">H</text><text x=\"222\" y=\"170\" text-anchor=\"middle\">M</text><text x=\"52\" y=\"172\" text-anchor=\"middle\">P</text></g></svg>",
       "options": [
         { "id": "a", "text": "AM > AH مهما كانت النقطة M" },
-        { "id": "b", "text": "AM < AH مهما كانت النقطة M", "misconceptionTag": "math.esp.distance-au-plan-est-la-plus-courte" },
-        { "id": "c", "text": "AM = AH لأنّ H هو المسقط العمودي", "misconceptionTag": "math.esp.distance-au-plan-est-la-plus-courte" },
-        { "id": "d", "text": "AM = AH + HM مهما كانت النقطة M", "misconceptionTag": "math.esp.distance-au-plan-est-la-plus-courte" }
+        {
+          "id": "b",
+          "text": "AM < AH مهما كانت النقطة M",
+          "misconceptionTag": "math.esp.distance-au-plan-est-la-plus-courte"
+        },
+        {
+          "id": "c",
+          "text": "AM = AH لأنّ H هو المسقط العمودي",
+          "misconceptionTag": "math.esp.distance-au-plan-est-la-plus-courte"
+        },
+        {
+          "id": "d",
+          "text": "AM = AH + HM مهما كانت النقطة M",
+          "misconceptionTag": "math.esp.distance-au-plan-est-la-plus-courte"
+        }
       ],
       "correctOption": "a",
       "explanation": "المستقيم (AH) عمودي على المستوي P في H ، فهو عمودي على (HM) والمثلث AHM قائم في H . بنظرية بيتاغور: AM² = AH² + HM² ، وبما أنّ M مخالفة لـ H فإنّ HM > 0 ومنه AM² > AH² أي AM > AH . والمساواة AM = AH + HM خاطئة لأنّها مساواة أطوال في خطّ مستقيم بينما النقاط A و H و M ليست على استقامة واحدة.",
