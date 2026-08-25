@@ -35,7 +35,7 @@
     {
       "prompt": "أعطيت الدالتان f(x) = 2x − 3 وg(x) = −x + 6. ما أفصول نقطة تقاطع بيانَيهما؟",
       "options": [
-        { "id": "a", "text": "9" },
+        { "id": "a", "text": "9", "misconceptionTag": "math.alg.coefficient-non-divise" },
         { "id": "b", "text": "3" },
         { "id": "c", "text": "1" },
         { "id": "d", "text": "−3" }
@@ -64,7 +64,7 @@
         { "id": "a", "text": "4" },
         { "id": "b", "text": "0" },
         { "id": "c", "text": "−4" },
-        { "id": "d", "text": "2" }
+        { "id": "d", "text": "2", "misconceptionTag": "math.fn.lineaire-affine-confondues" }
       ],
       "correctOption": "a",
       "explanation": "من مرور المستقيم بـ (3 ; −4): −4 = 3a + 2 ⟹ 3a = −6 ⟹ a = −2، فالمعادلة y = −2x + 2. عند x = −1: y = −2 × (−1) + 2 = 2 + 2 = 4. ✓ الخطأ الشائع: خطأ إشارة a = 2 فيخرج y = 0؛ أو نسيان الحدّ الثابت +2.",
@@ -76,7 +76,11 @@
       "options": [
         { "id": "a", "text": "هي تآلفية لا خطية (لأنّ الحدّ الثابت b = 2 ≠ 0)" },
         { "id": "b", "text": "معاملها هو 2 لا 3" },
-        { "id": "c", "text": "لا خطأ، هي خطية فعلًا", "misconceptionTag": "math.fn.lineaire-affine-confondues" },
+        {
+          "id": "c",
+          "text": "لا خطأ، هي خطية فعلًا",
+          "misconceptionTag": "math.fn.lineaire-affine-confondues"
+        },
         { "id": "d", "text": "هي دالة ثابتة" }
       ],
       "correctOption": "a",

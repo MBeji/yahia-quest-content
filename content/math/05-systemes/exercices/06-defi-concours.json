@@ -9,8 +9,8 @@
     {
       "prompt": "إذا كان x + y = 10 وx − y = 4، فما قيمة الجداء x × y؟",
       "options": [
-        { "id": "a", "text": "7" },
-        { "id": "b", "text": "10" },
+        { "id": "a", "text": "7", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
+        { "id": "b", "text": "10", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "c", "text": "21" },
         { "id": "d", "text": "24" }
       ],
@@ -35,7 +35,7 @@
     {
       "prompt": "لدى عليّ 20 قطعة نقديّة، منها من فئة 1 دينار ومن فئة 5 دنانير، مجموعها 76 دينارًا. كم قطعة من فئة 5 دنانير لديه؟",
       "options": [
-        { "id": "a", "text": "6" },
+        { "id": "a", "text": "6", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "b", "text": "14" },
         { "id": "c", "text": "15" },
         { "id": "d", "text": "4" }
@@ -48,7 +48,7 @@
     {
       "prompt": "الفرق بين عددَين هو 7، وثلاثة أمثال العدد الأصغر تساوي ضِعف العدد الأكبر منقوصًا منه 1. ما العدد الأكبر؟",
       "options": [
-        { "id": "a", "text": "13" },
+        { "id": "a", "text": "13", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "b", "text": "20" },
         { "id": "c", "text": "27" },
         { "id": "d", "text": "6" }
@@ -76,7 +76,11 @@
       "options": [
         { "id": "a", "text": "الصواب y = 10 − 6 = 4 (خطأ في عزل y)" },
         { "id": "b", "text": "الصواب x = 8" },
-        { "id": "c", "text": "لا خطأ، الحلّ صحيح", "misconceptionTag": "math.alg.transposition-sans-changer-signe" },
+        {
+          "id": "c",
+          "text": "لا خطأ، الحلّ صحيح",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
         { "id": "d", "text": "الصواب 2x = 8" }
       ],
       "correctOption": "a",

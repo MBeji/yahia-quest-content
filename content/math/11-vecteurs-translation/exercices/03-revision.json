@@ -22,8 +22,16 @@
     {
       "prompt": "A وB وC وD أربع نقاط ليست على استقامة واحدة، والشعاعان AB وDC متساويان: AB = DC. ما طبيعة الرباعي ABCD؟",
       "options": [
-        { "id": "a", "text": "معيّن" },
-        { "id": "b", "text": "مربّع" },
+        {
+          "id": "a",
+          "text": "معيّن",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "id": "b",
+          "text": "مربّع",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
         { "id": "c", "text": "متوازي أضلاع" },
         { "id": "d", "text": "شبه منحرف ليس متوازي أضلاع" }
       ],
@@ -35,9 +43,17 @@
     {
       "prompt": "ما صورة الدائرة التي مركزها O ونصف قطرها 3 cm بالانسحاب ذي الشعاع u غير الصفري؟",
       "options": [
-        { "id": "a", "text": "الدائرة نفسها، لأنّ الانسحاب لا يحرّك المركز", "misconceptionTag": "math.vec.translation-points-fixes" },
+        {
+          "id": "a",
+          "text": "الدائرة نفسها، لأنّ الانسحاب لا يحرّك المركز",
+          "misconceptionTag": "math.vec.translation-points-fixes"
+        },
         { "id": "b", "text": "دائرة مركزها O' صورة O، ونصف قطرها 3 cm" },
-        { "id": "c", "text": "دائرة مركزها O' صورة O، ونصف قطرها 6 cm", "misconceptionTag": "math.vec.translation-modifie-les-longueurs" },
+        {
+          "id": "c",
+          "text": "دائرة مركزها O' صورة O، ونصف قطرها 6 cm",
+          "misconceptionTag": "math.vec.translation-modifie-les-longueurs"
+        },
         { "id": "d", "text": "قطعة مستقيم طولها 3 cm تصل O بصورته" }
       ],
       "correctOption": "b",

@@ -36,8 +36,16 @@
       "prompt": "مثلث أضلاعه 7 cm و24 cm و25 cm. هل هو قائم الزاوية؟",
       "options": [
         { "id": "a", "text": "نعم، لأنّ 7² + 24² = 25²" },
-        { "id": "b", "text": "لا، لأنّ 7 + 24 ≠ 25", "misconceptionTag": "math.geo.pythagore-sans-carres" },
-        { "id": "c", "text": "نعم، لأنّ 7 + 24 > 25", "misconceptionTag": "math.geo.pythagore-sans-carres" },
+        {
+          "id": "b",
+          "text": "لا، لأنّ 7 + 24 ≠ 25",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "نعم، لأنّ 7 + 24 > 25",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
         { "id": "d", "text": "لا، لأنّ 7² + 24² ≠ 25²" }
       ],
       "correctOption": "a",
@@ -48,8 +56,16 @@
     {
       "prompt": "في مثلث قائم، الزاوية A حادّة وظا(A) = √3. ما قيمة الزاوية A؟",
       "options": [
-        { "id": "a", "text": "30°", "misconceptionTag": "math.geo.valeurs-remarquables-confondues" },
-        { "id": "b", "text": "45°", "misconceptionTag": "math.geo.valeurs-remarquables-confondues" },
+        {
+          "id": "a",
+          "text": "30°",
+          "misconceptionTag": "math.geo.valeurs-remarquables-confondues"
+        },
+        {
+          "id": "b",
+          "text": "45°",
+          "misconceptionTag": "math.geo.valeurs-remarquables-confondues"
+        },
         { "id": "c", "text": "60°" },
         { "id": "d", "text": "90°" }
       ],
@@ -63,7 +79,11 @@
       "options": [
         { "id": "a", "text": "√3/2", "misconceptionTag": "math.geo.cosinus-sinus-confondus" },
         { "id": "b", "text": "1/2" },
-        { "id": "c", "text": "√2/2", "misconceptionTag": "math.geo.valeurs-remarquables-confondues" },
+        {
+          "id": "c",
+          "text": "√2/2",
+          "misconceptionTag": "math.geo.valeurs-remarquables-confondues"
+        },
         { "id": "d", "text": "1" }
       ],
       "correctOption": "b",
@@ -74,9 +94,17 @@
     {
       "prompt": "في المثلث ABC القائم في B، الزاوية C = 45° والوتر AC = 10 cm. ما طول الضلع BC؟",
       "options": [
-        { "id": "a", "text": "5 cm" },
+        {
+          "id": "a",
+          "text": "5 cm",
+          "misconceptionTag": "math.geo.valeurs-remarquables-confondues"
+        },
         { "id": "b", "text": "5√2 cm" },
-        { "id": "c", "text": "10√2 cm" },
+        {
+          "id": "c",
+          "text": "10√2 cm",
+          "misconceptionTag": "math.geo.valeurs-remarquables-confondues"
+        },
         { "id": "d", "text": "10 cm" }
       ],
       "correctOption": "b",

@@ -12,7 +12,7 @@
         { "id": "a", "text": "4 cm" },
         { "id": "b", "text": "5 cm" },
         { "id": "c", "text": "6 cm" },
-        { "id": "d", "text": "4,5 cm" }
+        { "id": "d", "text": "4,5 cm", "misconceptionTag": "math.geo.thales-formes-melangees" }
       ],
       "correctOption": "b",
       "explanation": "AB = AM + MB = 6 + 4 = 10 cm. نسبة التشابه = AM/AB = 6/10 = 3/5. إذن MN/BC = 3/5، ومنه BC = MN ÷ (3/5) = 3 × 5/3 = 5 cm.",
@@ -50,8 +50,16 @@
       "options": [
         { "id": "a", "text": "نعم، لأنّ AM/AB = AN/AC = 1/4" },
         { "id": "b", "text": "لا، لأنّ 2/8 ≠ 3/12 فالنسبتان مختلفتان" },
-        { "id": "c", "text": "نعم، لأنّ AM + AN = 2 + 3 = 5", "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports" },
-        { "id": "d", "text": "لا، لأنّ NC − MB = 9 − 6 = 3 ≠ 0", "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports" }
+        {
+          "id": "c",
+          "text": "نعم، لأنّ AM + AN = 2 + 3 = 5",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "d",
+          "text": "لا، لأنّ NC − MB = 9 − 6 = 3 ≠ 0",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        }
       ],
       "correctOption": "a",
       "explanation": "AB = AM + MB = 2 + 6 = 8 cm، فـ AM/AB = 2/8 = 1/4. AC = AN + NC = 3 + 9 = 12 cm، فـ AN/AC = 3/12 = 1/4. النسبتان متساويتان، إذن بالنظرية العكسية (MN) ∥ (BC). الخطأ الشائع: الحكم على 2/8 و3/12 بأنّهما مختلفان دون اختزال، أو مقارنة الفروق بدل النسب — التوازي لا يتطلّب MB = NC.",
@@ -77,7 +85,7 @@
         { "id": "a", "text": "x = 5" },
         { "id": "b", "text": "x = 6" },
         { "id": "c", "text": "x = 7" },
-        { "id": "d", "text": "x = 3" }
+        { "id": "d", "text": "x = 3", "misconceptionTag": "math.alg.distribution-partielle" }
       ],
       "correctOption": "c",
       "explanation": "بنظرية طاليس: PS/PQ = PT/PR، أي (x+1)/(3x−1) = 4/10 = 2/5. بالتقاطع: 5(x+1) = 2(3x−1)، أي 5x + 5 = 6x − 2، ومنه x = 7. التحقّق: PS = 8، PQ = 20، فـ 8/20 = 2/5. وPT/PR = 4/10 = 2/5. ✓ الخطأ الشائع: عدم توزيع الضرب على الحدّين (كتابة 5(x+1) = 5x + 1)، ممّا يقود إلى الجواب الخاطئ x = 3.",

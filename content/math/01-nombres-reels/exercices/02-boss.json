@@ -32,9 +32,7 @@
       "correctOption": "c",
       "explanation": "(−3) × (−4) = 12 (سالب × سالب = موجب)، ثمّ 12 + (−2) = 10.",
       "difficulty": 2,
-      "competencies": [
-        "math.num.relatifs-operations"
-      ]
+      "competencies": ["math.num.relatifs-operations"]
     },
     {
       "prompt": "أيّ من الأعداد التالية عددٌ ناطق؟",
@@ -62,9 +60,7 @@
       "correctOption": "a",
       "explanation": "√9 = 3 وهو عدد صحيح ناطق، أمّا √2 و√5 وπ فأعداد صمّاء.",
       "difficulty": 1,
-      "competencies": [
-        "math.num.ensembles-nombres"
-      ]
+      "competencies": ["math.num.ensembles-nombres"]
     },
     {
       "prompt": "على مستقيم مدرّج أصله O، فاصلة النقطة C هي 12/5 وفاصلة النقطة D هي 19/4. ما البعد CD ؟",
@@ -79,7 +75,8 @@
         },
         {
           "id": "c",
-          "text": "4,75"
+          "text": "4,75",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
         },
         {
           "id": "d",
@@ -89,10 +86,7 @@
       "correctOption": "b",
       "explanation": "نحوّل الفاصلتين إلى كتابة عشرية لنقرأهما على التدريج: 12/5 = 2,4 و19/4 = 4,75، فالنقطتان تقعان في الجهة نفسها من الأصل O. والبعد بين نقطتين هو الفرق بين الفاصلتين: CD = 19/4 − 12/5 = 95/20 − 48/20 = 47/20 = 2,35. الأخطاء الشائعة: أخذ المقام 20 وطرح البسطين كما هما (19 − 12) دون تحويلهما فينتج 7/20 = 0,35 ؛ جمع الفاصلتين كما لو كانت النقطتان على جهتي الأصل فينتج 7,15 ؛ الاكتفاء بالبعد OD فينتج 4,75.",
       "difficulty": 2,
-      "competencies": [
-        "math.frac.add-sous",
-        "math.frac.sens"
-      ]
+      "competencies": ["math.frac.add-sous", "math.frac.sens"]
     },
     {
       "prompt": "أيّ الكتابات العشرية التالية تمثّل عددًا أصمّ؟",
@@ -120,24 +114,25 @@
       "correctOption": "b",
       "explanation": "العدد الأصمّ كتابته العشرية غير متناهية وغير دوريّة معًا. في 1,234567891011121… نكتب الأعداد الصحيحة 1 ثمّ 2 ثمّ 3 … تباعًا، فلا تتكرّر أيّ مجموعة بانتظام: إذن هو عدد أصمّ. أمّا 0,777777777777777… فدورها 7، و2,345454545454545… فدورها 45، و5,250000000000000… فدورها 0 (كتابة متناهية)، وهذه الثلاثة أعداد كسرية.",
       "difficulty": 1,
-      "competencies": [
-        "math.num.ensembles-nombres"
-      ]
+      "competencies": ["math.num.ensembles-nombres"]
     },
     {
       "prompt": "أيّ من الأعداد التالية أكبر من √2 ؟",
       "options": [
         {
           "id": "a",
-          "text": "1,4"
+          "text": "1,4",
+          "misconceptionTag": "math.num.comparaison-radical-et-entier"
         },
         {
           "id": "b",
-          "text": "1,41"
+          "text": "1,41",
+          "misconceptionTag": "math.num.comparaison-radical-et-entier"
         },
         {
           "id": "c",
-          "text": "1,414"
+          "text": "1,414",
+          "misconceptionTag": "math.num.comparaison-radical-et-entier"
         },
         {
           "id": "d",
@@ -147,9 +142,7 @@
       "correctOption": "d",
       "explanation": "نقارن كلّ عدد موجب بالعدد √2 بمقارنة المربّعات، لأنّ الأكبر من عددين موجبين هو صاحب المربّع الأكبر، ومربّع √2 هو 2. نحسب: (1,4)² = 1,96 و(1,41)² = 1,9881 و(1,414)² = 1,999396، وكلّها أصغر من 2، فهذه الأعداد الثلاثة أصغر من √2. أمّا (1,5)² = 2,25 فأكبر من 2، إذن 1,5 أكبر من √2. ونستنتج الحصر 1,4 < √2 < 1,5.",
       "difficulty": 2,
-      "competencies": [
-        "math.num.racines-definition"
-      ]
+      "competencies": ["math.num.racines-definition"]
     },
     {
       "prompt": "ليكن a عددًا أصمّ. أيّ من العمليات التالية تعطي ناتجًا كسريًّا بالضرورة؟",
@@ -177,10 +170,7 @@
       "correctOption": "d",
       "explanation": "مهما كان العدد a فإنّ a − a = 0، والعدد 0 عدد كسري (0 = 0/1)، إذن الناتج كسري بالضرورة. أمّا a + 1 وa + a وa × 3 فتبقى كلّها أعدادًا صمّاء: إضافة عدد كسري أو الضرب في عدد كسري غير معدوم لا يُلغي الكتابة العشرية غير المتناهية وغير الدوريّة. مثال: √2 = 1,414213562… فـ √2 + 1 = 2,414213562… وهي أيضًا غير دوريّة.",
       "difficulty": 3,
-      "competencies": [
-        "math.num.ensembles-nombres",
-        "math.num.relatifs-operations"
-      ]
+      "competencies": ["math.num.ensembles-nombres", "math.num.relatifs-operations"]
     }
   ]
 }

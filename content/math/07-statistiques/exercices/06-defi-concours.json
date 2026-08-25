@@ -11,7 +11,7 @@
       "options": [
         { "id": "a", "text": "60" },
         { "id": "b", "text": "2,4" },
-        { "id": "c", "text": "12" },
+        { "id": "c", "text": "12", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "d", "text": "17" }
       ],
       "correctOption": "a",
@@ -22,7 +22,7 @@
     {
       "prompt": "معدّل 6 علامات هو 13. خمس منها هي: 10 ، 12 ، 14 ، 15 ، 11. ما العلامة السادسة؟",
       "options": [
-        { "id": "a", "text": "13" },
+        { "id": "a", "text": "13", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "b", "text": "26" },
         { "id": "c", "text": "16" },
         { "id": "d", "text": "15" }
@@ -36,7 +36,7 @@
       "prompt": "معدّل 4 أعداد هو 9. أُضيف عدد خامس فصار المعدّل الجديد 10. ما العدد المُضاف؟",
       "options": [
         { "id": "a", "text": "14" },
-        { "id": "b", "text": "10" },
+        { "id": "b", "text": "10", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "c", "text": "1" },
         { "id": "d", "text": "11" }
       ],
@@ -61,8 +61,16 @@
     {
       "prompt": "رُتّبت ستّ قيم تصاعديًّا: 4 ، 7 ، 8 ، 10 ، 15 ، 20. ما الوسيط؟",
       "options": [
-        { "id": "a", "text": "8", "misconceptionTag": "math.stat.mediane-effectif-pair-sans-moyenne" },
-        { "id": "b", "text": "10", "misconceptionTag": "math.stat.mediane-effectif-pair-sans-moyenne" },
+        {
+          "id": "a",
+          "text": "8",
+          "misconceptionTag": "math.stat.mediane-effectif-pair-sans-moyenne"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "misconceptionTag": "math.stat.mediane-effectif-pair-sans-moyenne"
+        },
         { "id": "c", "text": "9" },
         { "id": "d", "text": "12" }
       ],
@@ -75,9 +83,21 @@
       "prompt": "حسب تلميذ معدّل السلسلة {2 ; 4 ; 4 ; 10} فكتب: «(2 + 4 + 10) ÷ 3 = 5,33 لأنّ 4 مكرّرة فتُحسب مرّة واحدة». ما الخطأ؟",
       "options": [
         { "id": "a", "text": "تُحسب كلّ القيم بتكرارها: (2 + 4 + 4 + 10) ÷ 4 = 5" },
-        { "id": "b", "text": "الصواب فعلًا 5,33", "misconceptionTag": "math.stat.moyenne-sans-ponderation" },
-        { "id": "c", "text": "لا خطأ، القيمة المكرّرة تُحسب مرّة", "misconceptionTag": "math.stat.moyenne-sans-ponderation" },
-        { "id": "d", "text": "الوسيط هو 4 فالمعدّل مثله", "misconceptionTag": "math.stat.moyenne-et-mediane-confondues" }
+        {
+          "id": "b",
+          "text": "الصواب فعلًا 5,33",
+          "misconceptionTag": "math.stat.moyenne-sans-ponderation"
+        },
+        {
+          "id": "c",
+          "text": "لا خطأ، القيمة المكرّرة تُحسب مرّة",
+          "misconceptionTag": "math.stat.moyenne-sans-ponderation"
+        },
+        {
+          "id": "d",
+          "text": "الوسيط هو 4 فالمعدّل مثله",
+          "misconceptionTag": "math.stat.moyenne-et-mediane-confondues"
+        }
       ],
       "correctOption": "a",
       "explanation": "في حساب المعدّل تُحسب كلّ قيمة بعدد تكرارها، فالقيمة 4 المكرّرة تُجمع مرّتَين والعدد الكلّي 4: (2 + 4 + 4 + 10) ÷ 4 = 20 ÷ 4 = 5. (تمرين «صيد الخطأ».) الخطأ الشائع: حذف القيم المكرّرة من المجموع أو من العدد الكلّي.",

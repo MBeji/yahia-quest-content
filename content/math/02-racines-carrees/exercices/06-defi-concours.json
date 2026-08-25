@@ -9,7 +9,7 @@
     {
       "prompt": "بسّط العبارة: (√7 + √3)² − (√7 − √3)².",
       "options": [
-        { "id": "a", "text": "0" },
+        { "id": "a", "text": "0", "misconceptionTag": "math.alg.carre-somme-sans-double-produit" },
         { "id": "b", "text": "4√21" },
         { "id": "c", "text": "2√21" },
         { "id": "d", "text": "20" }
@@ -22,7 +22,11 @@
     {
       "prompt": "احسب القيمة المبسّطة للعبارة: √((√5 − 3)²).",
       "options": [
-        { "id": "a", "text": "√5 − 3", "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue" },
+        {
+          "id": "a",
+          "text": "√5 − 3",
+          "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
+        },
         { "id": "b", "text": "3 + √5" },
         { "id": "c", "text": "3 − √5" },
         { "id": "d", "text": "9 − √5" }
@@ -50,7 +54,11 @@
       "options": [
         { "id": "a", "text": "√7 − 2" },
         { "id": "b", "text": "3√7 + 6" },
-        { "id": "c", "text": "(3√7 + 6) / 5" },
+        {
+          "id": "c",
+          "text": "(3√7 + 6) / 5",
+          "misconceptionTag": "math.alg.difference-carres-second-terme-non-eleve-au-carre"
+        },
         { "id": "d", "text": "√7 + 2" }
       ],
       "correctOption": "d",
@@ -61,7 +69,11 @@
     {
       "prompt": "ليكن x = √3 + 1. احسب قيمة x² − 2x.",
       "options": [
-        { "id": "a", "text": "2 − 2√3" },
+        {
+          "id": "a",
+          "text": "2 − 2√3",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
         { "id": "b", "text": "4" },
         { "id": "c", "text": "2" },
         { "id": "d", "text": "2√3" }

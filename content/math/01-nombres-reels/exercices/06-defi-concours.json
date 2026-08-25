@@ -9,10 +9,22 @@
     {
       "prompt": "يُستعمل العدد 22/7 أحيانًا كقيمة تقريبية للعدد π. ما طبيعة كلّ من العددين؟",
       "options": [
-        { "id": "a", "text": "22/7 كسري وπ كسري", "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel" },
-        { "id": "b", "text": "22/7 أصمّ وπ أصمّ", "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel" },
+        {
+          "id": "a",
+          "text": "22/7 كسري وπ كسري",
+          "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel"
+        },
+        {
+          "id": "b",
+          "text": "22/7 أصمّ وπ أصمّ",
+          "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel"
+        },
         { "id": "c", "text": "22/7 كسري وπ أصمّ" },
-        { "id": "d", "text": "22/7 أصمّ وπ كسري", "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel" }
+        {
+          "id": "d",
+          "text": "22/7 أصمّ وπ كسري",
+          "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel"
+        }
       ],
       "correctOption": "c",
       "explanation": "كلّ عدد يُكتب على شكل كسر هو عدد كسري، إذن 22/7 كسري وكتابته العشرية دوريّة: 22/7 = 3,(142857). أمّا π فكتابته العشرية 3,141592653… غير متناهية وغير دوريّة، فهو عدد أصمّ. العددان متقاربان جدًّا ويتّفقان في أوّل رقمين بعد الفاصل، لكنّهما ليسا متساويين ولا من الطبيعة نفسها.",
@@ -23,9 +35,21 @@
       "prompt": "أيّ من العبارات التالية صحيحة بشأن مجموعة الأعداد الحقيقية ℝ ؟",
       "options": [
         { "id": "a", "text": "كلّ عدد أصمّ ينتمي إلى ℝ ولا ينتمي إلى ℚ" },
-        { "id": "b", "text": "كلّ عدد حقيقي إمّا صحيح وإمّا أصمّ", "misconceptionTag": "math.num.appartenance-ensemble-confondue" },
-        { "id": "c", "text": "كلّ عدد تحتوي كتابته على رمز الجذر هو عدد أصمّ", "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel" },
-        { "id": "d", "text": "كلّ عدد كسري له كتابة عشرية متناهية", "misconceptionTag": "math.num.appartenance-ensemble-confondue" }
+        {
+          "id": "b",
+          "text": "كلّ عدد حقيقي إمّا صحيح وإمّا أصمّ",
+          "misconceptionTag": "math.num.appartenance-ensemble-confondue"
+        },
+        {
+          "id": "c",
+          "text": "كلّ عدد تحتوي كتابته على رمز الجذر هو عدد أصمّ",
+          "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel"
+        },
+        {
+          "id": "d",
+          "text": "كلّ عدد كسري له كتابة عشرية متناهية",
+          "misconceptionTag": "math.num.appartenance-ensemble-confondue"
+        }
       ],
       "correctOption": "a",
       "explanation": "مجموعة الأعداد الحقيقية هي اتّحاد الأعداد الكسرية والأعداد الصمّاء، فالعدد الأصمّ حقيقي بالتعريف ولا يمكن أن يكون كسريًّا في الوقت نفسه. أمّا القول إنّ كلّ حقيقي إمّا صحيح وإمّا أصمّ فيُهمل الكسور مثل 3/4 ؛ ورمز الجذر لا يعني الصمم لأنّ √81 = 9 ؛ ولكلّ عدد كسري كتابة دوريّة لكنّها ليست متناهية دائمًا، مثل 4/11 = 0,(36).",
@@ -48,8 +72,16 @@
     {
       "prompt": "نعلم أنّ √7 = 2,6457513… ما القيمة التقريبية بالزيادة للعدد √7 برقمين بعد الفاصل؟",
       "options": [
-        { "id": "a", "text": "2,6", "misconceptionTag": "math.num.approximation-defaut-exces-confondues" },
-        { "id": "b", "text": "2,64", "misconceptionTag": "math.num.approximation-defaut-exces-confondues" },
+        {
+          "id": "a",
+          "text": "2,6",
+          "misconceptionTag": "math.num.approximation-defaut-exces-confondues"
+        },
+        {
+          "id": "b",
+          "text": "2,64",
+          "misconceptionTag": "math.num.approximation-defaut-exces-confondues"
+        },
         { "id": "c", "text": "2,646" },
         { "id": "d", "text": "2,65" }
       ],
@@ -61,10 +93,22 @@
     {
       "prompt": "أيّ من الأعداد التالية ينتمي إلى ℝ− ؟",
       "options": [
-        { "id": "a", "text": "2 − √3" },
+        {
+          "id": "a",
+          "text": "2 − √3",
+          "misconceptionTag": "math.num.comparaison-radical-et-entier"
+        },
         { "id": "b", "text": "√3 − 2" },
-        { "id": "c", "text": "√5 − 2" },
-        { "id": "d", "text": "3 − √5" }
+        {
+          "id": "c",
+          "text": "√5 − 2",
+          "misconceptionTag": "math.num.comparaison-radical-et-entier"
+        },
+        {
+          "id": "d",
+          "text": "3 − √5",
+          "misconceptionTag": "math.num.comparaison-radical-et-entier"
+        }
       ],
       "correctOption": "b",
       "explanation": "ℝ− هي مجموعة الأعداد الحقيقية السالبة وℝ+ مجموعة الموجبة، ولنا ℝ = ℝ+ ∪ ℝ−، فيكفي أن نعرف إشارة كلّ فرق. نحصر كلّ جذر بين عددين صحيحين متتاليين بمقارنة المربّعات: بما أنّ 1² = 1 و2² = 4 و1 < 3 < 4 فإنّ 1 < √3 < 2، وبما أنّ 2² = 4 و3² = 9 و4 < 5 < 9 فإنّ 2 < √5 < 3. إذن √3 أصغر من 2، فالفرق √3 − 2 سالب وهو وحده ينتمي إلى ℝ−. أمّا 2 − √3 فموجب للسبب نفسه، و√5 − 2 موجب لأنّ √5 أكبر من 2، و3 − √5 موجب لأنّ √5 أصغر من 3.",
@@ -76,7 +120,11 @@
       "options": [
         { "id": "a", "text": "الكتابة غير المتناهية لا تكفي: يجب أن تكون غير دوريّة أيضًا" },
         { "id": "b", "text": "الكتابة 0,3333… متناهية لأنّها تتوقّف عند الرقم الرابع" },
-        { "id": "c", "text": "لا خطأ في استدلاله: كلّ كتابة عشرية غير متناهية تمثّل عددًا أصمّ", "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel" },
+        {
+          "id": "c",
+          "text": "لا خطأ في استدلاله: كلّ كتابة عشرية غير متناهية تمثّل عددًا أصمّ",
+          "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel"
+        },
         { "id": "d", "text": "الخطأ أنّ 0,3333… عدد صحيح طبيعي وليس عددًا حقيقيًّا" }
       ],
       "correctOption": "a",
