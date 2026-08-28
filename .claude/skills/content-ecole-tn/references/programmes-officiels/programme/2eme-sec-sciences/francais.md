@@ -177,7 +177,11 @@ d'objectif imprimé ; la page porte seulement le bandeau « Lecture puis débat 
 
   - **Extrait** : Gustave Flaubert, _Madame Bovary_ — référence imprimée en fin de texte :
     « Gustave Flaubert, Madame Bovary. ». Texte d'environ 27 lignes, numérotées de 5 en 5 dans la
-    marge (5, 10, 15, 20, 25). **Résumé fidèle (le texte littéraire n'est pas reproduit, R-2)** :
+    marge (5, 10, 15, 20, 25). **Résumé — œuvre du domaine public (Flaubert † 1880).** ⚠️ Le texte
+    n'est pas reproduit intégralement, mais le résumé en conserve des groupes de mots (jusqu'à
+    9 mots d'affilée, ≈ 25 % de l'extrait), les plus saillants entre guillemets : **R-2 n'y est
+    donc pas satisfait au sens strict** — sans conséquence juridique ici, mais l'étiquette
+    antérieure (« le texte littéraire n'est pas reproduit ») était fausse. Le résumé :
 
     - _Ouverture dialoguée (l. 1–3, hors numérotation)_ : Rodolphe complimente Emma en la prenant
       dans ses bras ; elle rit de volupté, lui demande s'il l'aime et exige un serment ; il répond
@@ -193,14 +197,15 @@ d'objectif imprimé ; la page porte seulement le bandeau « Lecture puis débat 
     - _Le cadre nocturne (l. 13–14)_ : la nuit douce s'étale autour du couple ; des nappes d'ombre
       emplissent les feuillages.
     - _Les personnages dans le paysage (l. 15–17)_ : Emma, les yeux à demi clos, aspire à grands
-      soupirs le vent frais ; ils **ne se parlent pas**, « trop perdus qu'ils étaient dans
-      l'envahissement de leur rêverie » — la phrase qui donne son titre à la page.
-    - _Le retour du passé (l. 17–22)_ : la tendresse des anciens jours leur revient au cœur,
-      « abondante et silencieuse comme la rivière qui coulait », avec autant de mollesse qu'en
-      apporte le parfum des seringas ; elle projette dans leur souvenir des ombres plus démesurées
-      et plus mélancoliques que celles des saules immobiles allongés sur l'herbe.
+      soupirs le vent frais ; ils **ne se parlent pas**, « trop perdus […] dans l'envahissement de
+      leur rêverie » — c'est de cette phrase que le titre imprimé « Perdus dans la rêverie » paraît
+      tiré (rapprochement de transcription, non énoncé par la source).
+    - _Le retour du passé (l. 17–22)_ : la tendresse d'autrefois leur remonte au cœur, comparée à
+      la rivière — « abondante et silencieuse » — puis à la douceur du parfum des seringas ; elle
+      jette dans leur mémoire des ombres plus vastes et plus tristes que celles des saules couchés
+      sur l'herbe.
     - _Les bruits de la nuit (l. 22–25)_ : une bête nocturne — hérisson ou belette — qui se met en
-      chasse dérange les feuilles ; par moments une pêche mûre tombe seule de l'espalier.
+      chasse dérange les feuilles ; on entend par moments tomber une pêche mûre de l'espalier.
     - _Clôture dialoguée (l. 26–27)_ : Rodolphe : « Ah ! la belle nuit ! » ; Emma : « Nous en
       aurons d'autres ! » — réplique qui referme le texte sur une projection dans l'avenir.
     - _Structure d'ensemble_ : dialogue → description → dialogue ; le silence central est encadré
@@ -235,21 +240,22 @@ d'objectif imprimé ; la page porte seulement le bandeau « Lecture puis débat 
 - **Débat** (p. 9) : bandeau imprimé « Lecture puis débat ».
 
   - **Support** : article de Pascal Thomas, référence imprimée « Pascal Thomas, (Rev. Réalités, mai
-    1971) ». **Résumé fidèle (texte de presse, non reproduit)** : les gens vont chercher au cinéma
-    ce qu'ils allaient jadis trouver dans les romans, c'est-à-dire ce que la vie ne leur offre pas.
-    Les romans d'amour continuent certes de fleurir, mais avec la chance de survie d'un acacia de
-    square parisien replanté sur un parking. Le cinéma, lui, grave dans l'éternité de la pellicule
-    ce que la vie actuelle menace chaque jour de ses plans, de ses organigrammes et de ses schémas
-    directeurs. Dans un monde affolant le cinéma de sentiment rassure ; dans un monde aseptisé et
-    monotone il nous remue en dedans ; il tranquillise ceux qui n'ont plus la force d'aimer quant à
-    la pérennité de leurs sentiments profonds. Suit (après une coupe « […] » imprimée) l'idée que
-    chaque époque a le romantisme qui lui convient : celui du siècle dernier était volontiers
-    explosif — on pleurait abondamment, on se regardait pleurer et on en rajoutait, des torrents de
-    larmes trempaient les mouchoirs de _la Nouvelle Héloïse_ et de _la Dame aux camélias_. De
-    stricte obédience romantique, les mélodrames hollywoodiens de Douglas Sirk (« Ecrit sur du
-    vent », « Le Temps d'aimer et le temps de mourir »), de Vincente Minelli [sic], de George Cukor
-    « ou de Samuel » [sic — patronyme manquant dans la source] surent conserver, en le respectant,
-    ce sentimentalisme de robuste naïveté.
+    1971) ». ⚠️ **Article de presse sous droits — aucune phrase n'en est reproduite (R-2) ; seuls
+    la thèse, le plan et les noms propres sont donnés.** **Thèse** : le public demanderait
+    aujourd'hui au cinéma la compensation que le roman lui apportait autrefois. **Concession puis
+    antithèse** : l'édition sentimentale prospère encore, mais l'auteur lui prête une survie
+    dérisoire (image d'un arbre de square repiqué sur un parking) et lui oppose la durabilité de
+    l'image filmée, qui fixerait ce qu'une vie planifiée — plans, organigrammes, schémas
+    directeurs — menace quotidiennement. **Trois effets** lui sont prêtés : apaiser un monde jugé
+    affolant, remuer un monde jugé aseptisé, rassurer sur la durée des sentiments ceux qui s'en
+    croient incapables. Après une coupe « […] » imprimée, la fin **historicise** : à chaque époque
+    son romantisme ; celui du XIXᵉ siècle, dit démonstratif et lacrymal (deux titres à l'appui :
+    _la Nouvelle Héloïse_, _la Dame aux camélias_), aurait été repris sans ironie par le mélodrame
+    hollywoodien. **Quatre cinéastes sont nommés** : Douglas Sirk, suivi de deux titres de films —
+    « Ecrit sur du vent » [sic, sans accent] et « Le Temps d'aimer et le temps de mourir » ;
+    « Vincente Minelli » [sic pour Minnelli] ; George Cukor ; et un quatrième réduit au seul prénom
+    « Samuel » [sic — patronyme manquant dans la source, non complété]. **Rôle** : unique support
+    du Débat de la p. 9 ; il alimente les encadrés « Thèmes » et « Idées » ci-dessous.
 
   - **Encadré « Thèmes » (verbatim)** :
 
@@ -297,9 +303,10 @@ d'objectif imprimé ; la page porte seulement le bandeau « Lecture puis débat 
       alors qu'il vivait près d'elle depuis plus de dix-huit mois, et que pour la première fois il
       venait de la regarder « comme on regarde quand on veut voir » ; la phrase finale du fragment
       énonce que Madeleine était charmante. (Extrait de 5 lignes, non reproduit intégralement, R-2.)
-    - **Extrait 2** — signé « V. Hugo » : le locuteur dit que le charme opérait peu à peu, que la
-      danse de son interlocutrice lui tournoyait dans le cerveau et qu'il sentait un mystérieux
-      maléfice s'accomplir en lui. (3 lignes ; c'est l'incipit du long extrait repris p. 11.)
+    - **Extrait 2** — signé « V. Hugo » : le locuteur constate que le charme agissait par degrés,
+      que la danse de son interlocutrice lui tournoyait dans le cerveau et qu'il sentait un
+      mystérieux maléfice s'accomplir en lui. (3 lignes ; c'est l'incipit du long extrait repris
+      p. 11.)
     - **Questions (verbatim)** :
       - 1) Lisez le premier article de dictionnaire et dites dans quel sens le mot "charme" est
         employé dans chacun des deux extraits.
@@ -346,18 +353,18 @@ d'objectif imprimé ; la page porte seulement le bandeau « Lecture puis débat 
         injustement accusée de meurtre et condamnée à être pendue. Frollo, prêtre, a fait partie des
         juges qui l'ont condamnée. Il va la voir dans sa cellule et lui avoue son amour. »
       - **Support** : V. Hugo, _Notre-Dame de Paris_ (référence imprimée : « V. Hugo, Notre-Dame de
-        Paris. »). Extrait de 17 lignes, numérotées de 5 en 5 (1, 5, 10, 15). **Résumé fidèle
-        (non reproduit, R-2)** : Frollo, s'adressant à Esméralda à la deuxième personne, décrit
-        l'emprise progressive du « charme » — la danse qui lui tournoie dans le cerveau, le
-        mystérieux maléfice qui s'accomplit en lui, sa vigilance intérieure qui s'endort comme
-        celle de ceux qui meurent dans la neige, avec le plaisir trouvé à se laisser aller à ce
-        sommeil. Puis vient le chant, jugé plus charmant encore que la danse ; il veut fuir, ne le
-        peut pas, se dit cloué, enraciné dans le sol, le marbre de la dalle lui semblant monté
-        jusqu'aux genoux ; il lui faut rester jusqu'au bout, les pieds de glace et la tête
-        bouillonnante. Quand elle cesse de chanter et disparaît, le reflet de la vision et le
-        retentissement de la musique s'évanouissent par degrés dans ses yeux et ses oreilles ; il
-        tombe alors dans l'encoignure de la fenêtre, plus roide et plus faible qu'une statue
-        descellée.
+        Paris. »). Extrait de 17 lignes, numérotées de 5 en 5 (1, 5, 10, 15). **Résumé — œuvre du
+        domaine public (Hugo † 1885) ; le texte n'est pas reproduit** : Frollo, s'adressant à
+        Esméralda à la deuxième personne, décrit l'emprise progressive du « charme » — la danse qui
+        lui tournoie dans le cerveau, le mystérieux maléfice qui s'accomplit en lui, sa vigilance
+        intérieure qui s'endort, et le plaisir qu'il trouve à se laisser gagner par ce sommeil —
+        plaisir que la source compare à celui des personnes qui meurent de froid. Puis vient le
+        chant, jugé plus charmant encore que la danse ; il veut fuir, ne le peut pas, se dit cloué,
+        enraciné dans le sol, le marbre du dallage lui semblant monté jusqu'aux genoux ; il lui
+        faut rester jusqu'au bout, les pieds de glace et la tête bouillonnante. Quand elle cesse de
+        chanter et disparaît, le reflet de la vision et l'écho de la musique s'évanouissent par
+        degrés dans ses yeux et ses oreilles ; il s'effondre alors dans le renfoncement de la
+        fenêtre, aussi raide et aussi faible qu'une statue arrachée à son socle.
       - **Question 1) (verbatim)** : « Le prêtre croit être sous l'emprise d'un pouvoir ensorcelant
         exercé par Esméralda. Profondément perturbé, il en arrive à ressentir des troubles d'ordre
         physiologique. »
@@ -386,26 +393,27 @@ d'objectif imprimé ; la page porte seulement le bandeau « Lecture puis débat 
     - **Chapeau de situation (verbatim)** : « Jean, un enfant de treize ans, vient d'être présenté à
       Christine, une petite fille de son âge. Il ressent une très forte émotion à sa vue. »
     - **Support** : Julien Green, _Le Voyageur sur la terre_ (référence imprimée : « Julien Green,
-      Le Voyageur sur la terre. »). **Résumé fidèle (non reproduit, R-2)** : Jean, narrateur adulte
-      revenant sur son enfance, raconte qu'en s'approchant de Christine il dut se retenir pour ne
-      pas pousser un cri d'admiration. Il explique ensuite, au présent, que la beauté l'a toujours
-      ému des sentiments les plus forts et les plus divers, d'où résulte une sorte de combat
-      intérieur qui le fait passer dans le même instant de la joie au désir et du désir au
-      désespoir ; il souhaite et redoute à la fois de découvrir cette beauté qui doit le tourmenter
-      et le ravir, la cherche avec une inquiétude douloureuse et l'envie secrète de ne pas la
-      trouver. La beauté de Christine le transporte. Suit le portrait, à l'imparfait : à
-      contre-jour les yeux paraissaient noirs, agrandis par des ombres autour des paupières ; la
-      bouche accusait sur une peau mate et pure des contours dessinés avec force ; une immense
-      auréole de cheveux blonds semblait recueillir toute la lumière venue de la fenêtre et donnait
-      au front et aux joues une teinte presque surnaturelle. Le narrateur contemple en silence
-      cette petite fille dont il aurait été prêt à croire qu'elle était une apparition, s'il
-      n'avait pris dans sa main la main qu'elle lui avait tendue.
+      Le Voyageur sur la terre. »). ⚠️ **Œuvre sous droits — aucune phrase n'en est reproduite
+      (R-2) ; seuls la structure et le contenu notionnel sont donnés.** Trois mouvements, annoncés
+      par le chapeau de la consigne. **(1) Récit, au passé simple** : à l'approche de la fillette,
+      le narrateur doit réprimer une exclamation d'admiration — c'est le « but » de la question
+      1) b), porté par une infinitive négative en « pour ». **(2) Explication, au présent de vérité
+      générale** : il généralise sur son rapport à la beauté, qui déclenche chez lui des émotions
+      intenses et hétérogènes, d'où un conflit intérieur rendu par deux glissements en chaîne
+      (joie → désir, désir → désespoir) et par un couple d'antonymes (désirer / craindre), la quête
+      étant contredite par le souhait de ne rien trouver. C'est le passage visé par la question
+      2) a) : **conséquence** (« il en résulte », relayée par « Ainsi ») et **opposition**
+      (« mais ») y sont marquées ; la troisième relation demandée, l'**idée de but**, n'est pas
+      tranchée ici. **(3) Description, à l'imparfait** : portrait en trois touches — le regard,
+      assombri et agrandi par le contre-jour ; la bouche, au dessin net sur un teint mat ; la
+      chevelure blonde en auréole, qui capte la lumière de la fenêtre et irréalise le visage. La
+      phrase finale, au passé simple, noue les trois registres — contemplation muette, hypothèse
+      d'une apparition, démenti par un détail tactile (la main serrée) — et fournit le « si » +
+      conditionnel de la question 1) c).
     - _Repère utile_ : les **trois phrases au passé simple** que la consigne dit soulignées sont les
-      trois seules du texte à ce temps — celle de l'approche (« je dus me retenir… »), celle du
-      transport (« Celle de Christine me transporta. ») et celle de la contemplation
-      (« Je contemplai en silence cette petite fille… »). Le soulignement lui-même n'est pas porté
-      par la couche-texte (voir Incertitudes) : cette identification est une reconstitution
-      grammaticale, pas un relevé typographique.
+      trois seules du texte à ce temps (l'approche, la bascule sur « transporta », la contemplation
+      finale). Le soulignement n'étant pas porté par la couche-texte (voir Incertitudes), cette
+      identification est une reconstitution grammaticale, non un relevé typographique.
 
     - **Consigne d'entrée (verbatim, point par point)** :
       - Chapeau : « Dans ce texte, Jean raconte, explique et décrit. »
@@ -474,8 +482,8 @@ d'objectif imprimé ; la page porte seulement le bandeau « Lecture puis débat 
     _Note de transcription_ : dans la page imprimée, les étiquettes « Participe passé. », « Mot
     lexical. », « Mot grammatical. », « Participe présent. » sont placées sous le segment de
     l'exemple qu'elles désignent (respectivement « Ebloui par Christine », « est provoquée par »,
-    « parce que », « Ressentant ») ; le calage horizontal exact est perdu par l'extraction, l'ordre
-    et l'appariement exemple ↔ étiquette ne le sont pas.
+    « parce qu'il », « Ressentant ») ; le calage horizontal exact est perdu par l'extraction,
+    l'ordre et l'appariement exemple ↔ étiquette ne le sont pas.
 
   - _Application_ (p. 15–16) :
 
@@ -515,7 +523,7 @@ d'objectif imprimé ; la page porte seulement le bandeau « Lecture puis débat 
 
     - **Exercice 3 — « Faire des hypothèses pour dégager des informations implicites (voir
       p. 38). »**
-      - Support cité (2 lignes) : Rousseau, _La Nouvelle Héloïse_ — référence imprimée
+      - Support cité (3 lignes) : Rousseau, _La Nouvelle Héloïse_ — référence imprimée
         « Rousseau, (lettre de Julie à Saint-Preux) La Nouvelle Héloïse ». Julie y déclare à
         Saint-Preux qu'elle ne l'épousera jamais sans le consentement de son père, mais qu'elle
         n'en épousera jamais un autre sans le consentement de Saint-Preux.
@@ -546,17 +554,21 @@ d'objectif imprimé ; la page porte seulement le bandeau « Lecture puis débat 
   - _Compréhension de l'écrit_ (p. 17) — titre du bloc de questions imprimé en tête de colonne :
     « Combats intérieurs : champs lexicaux contradictoires ».
 
-    - **Support 1 — « Jean.. »** [sic, deux points de suspension] : reprise du début du texte de
-      Julien Green de la p. 13, signée « J. Green. ». Le fragment s'arrête à la phrase où la beauté
-      de Christine transporte le narrateur ; il ne comprend donc **pas** le portrait à l'imparfait.
-    - **Support 2 — « Frollo… »** : nouvel extrait de V. Hugo (_Notre-Dame de Paris_), signé
-      « V. Hugo », **distinct** de celui de la p. 11. **Résumé fidèle (non reproduit, R-2)** :
+    - **Support 1 — « Jean.. »** [sic — deux points seulement, là où le support voisin porte
+      « Frollo… » avec des points de suspension] : reprise du début du texte de Julien Green de la
+      p. 13, signée « J. Green. ». Le fragment s'arrête à la phrase où la beauté de Christine
+      transporte le narrateur ; il ne comprend donc **pas** le portrait à l'imparfait.
+    - **Support 2 — « Frollo… »** : nouvel extrait signé « V. Hugo » — la p. 17 n'imprime aucun
+      titre d'œuvre ; le rapprochement avec _Notre-Dame de Paris_ vient de la p. 11 —, **distinct**
+      de l'extrait de la p. 11. **Résumé — œuvre du domaine public (Hugo † 1885) ; le texte n'est
+      pas reproduit, hors la gradation finale citée entre guillemets, sur laquelle porte précisément
+      la question 2) d) (R-2)** :
       Frollo, s'adressant toujours à Esméralda, dit n'avoir pu se débarrasser d'elle — entendant
       sans cesse sa chanson bourdonner dans sa tête, voyant ses pieds danser sur son bréviaire,
       sentant la nuit en songe sa forme glisser sur sa chair. Il a donc voulu la revoir, la
-      toucher, savoir qui elle était, vérifier si elle serait bien pareille à l'image idéale
-      restée de elle, briser peut-être son rêve avec la réalité ; il espérait qu'une impression
-      nouvelle effacerait la première, devenue insupportable. Il l'a cherchée, revue — puis, ayant
+      toucher, savoir qui elle était, vérifier si elle serait bien conforme à l'image idéale qu'il
+      gardait d'elle, briser peut-être son rêve avec la réalité ; il espérait qu'une impression
+      neuve chasserait la première, devenue insupportable. Il l'a cherchée, revue — puis, ayant
       voulu la voir mille fois et toujours, il ne s'appartint plus, comparant sa chute à une pente
       de l'enfer et se disant relié à elle par le fil que le démon lui avait attaché aux ailes et
       noué au pied de la jeune fille. Devenu vague et errant comme elle, il l'attendait sous les
@@ -646,17 +658,18 @@ d'objectif imprimé ; la page porte seulement le bandeau « Lecture puis débat 
     - **Supports du Sujet 2 (p. 19, imprimés côte à côte, non reproduits — R-2 / œuvres protégées)**
       :
       - « Il faut savoir », chanson de **Charles Aznavour** (signature imprimée « Charles Aznavour »
-        en fin de texte, plus la mention « Aznavour » sous le poème voisin). Sept strophes de quatre
+        en fin de texte, plus la mention « Aznavour » sous le poème voisin). Six strophes de quatre
         vers et une coda de trois vers. Le texte énumère ce qu'il « faut savoir » faire quand
         l'amour est fini — sourire encore, garder sa dignité, partir sans se retourner, cacher ses
-        larmes et sa peine, quitter la table, retenir les cris de haine, rester de glace et garder
-        la face — et chaque fois le locuteur avoue qu'il n'a pas su, qu'il aime trop, qu'il ne peut
-        pas et ne sait pas.
+        larmes et sa peine, quitter la table, étouffer les cris de haine, rester de glace et garder
+        la face — mais à trois reprises seulement, à la fin de la troisième strophe, à la fin de la
+        sixième et dans la coda, le locuteur retourne l'énumération contre lui-même et avoue qu'il
+        n'a pas su, qu'il aime trop, qu'il ne peut pas et ne sait pas.
       - « Aveu », poème de **Paul Géraldy** (signature imprimée « Paul Géraldy »). Deux quatrains.
         Le locuteur reconnaît qu'irritable, exigeant, morose, insatisfait, jaloux, il cherche
         querelle sans cause à celle qu'il aime — et que s'il l'aime si mal, c'est qu'il l'aime
-        trop ; il la poursuit, la tourmente, la gronde, et admet qu'elle serait plus heureuse et
-        mieux aimée s'il ne mettait pas en elle tout ce qui compte au monde.
+        trop ; il la poursuit, la tourmente, la gronde, et admet que sa compagne vivrait mieux, et
+        serait mieux aimée, s'il cessait de faire d'elle son unique raison d'être.
 
 #### Vocabulaire & terminologie officielle de la séquence
 
@@ -724,7 +737,11 @@ Termes métalinguistiques employés tels quels par le manuel dans ces pages :
   n'est nommée dans la séquence.
 - Le **discours rapporté**, la **modalisation** et l'**argumentation formelle** (thèse, argument,
   exemple) ne sont nommés nulle part dans ces pages.
-- **Auto-évaluation** et **Projet** : rubriques de **fin de module**, hors du périmètre p. 7–19.
+- **Auto-évaluation** et **Projet** : aucune de ces deux rubriques n'apparaît dans les p. 7–19. Ce
+  sont des rubriques de **fin de module** — pour le module 1, Auto-évaluation p. 61 et Projet p. 62,
+  transcrites plus loin dans cette fiche. Le fait n'est donc **pas** attesté par les pages de la
+  séquence elle-même, mais il l'est ailleurs dans la fiche : à ne pas présenter comme une donnée de
+  ces treize pages.
 
 #### Incertitudes de la séquence
 
@@ -750,10 +767,10 @@ Termes métalinguistiques employés tels quels par le manuel dans ces pages :
     (une seule subordonnée en « si » figure dans la citation de Laclos) ;
   - p. 17, questions 1) et 2) b) : « les termes en bleu » / « Les verbes en bleu » — la couleur
     n'est pas portée par la couche-texte.
-- **p. 9 — « ou de Samuel surent conserver » [sic]** : le patronyme du réalisateur est manquant dans
-  la source imprimée (la liste énumère Douglas Sirk, Vincente Minelli, George Cukor, puis
-  « Samuel »). Transcrit tel quel, non complété. Dans la même phrase, « Vincente Minelli » est la
-  graphie de la source (le réalisateur s'écrit habituellement Minnelli).
+- **p. 9 — « ou de Samuel » [sic]** : le patronyme du réalisateur est manquant dans la source
+  imprimée (la liste énumère Douglas Sirk, Vincente Minelli, George Cukor, puis « Samuel »).
+  Transcrit tel quel, non complété. Dans la même phrase, « Vincente Minelli » est la graphie de la
+  source (le réalisateur s'écrit habituellement Minnelli).
 - **p. 14 — deux points à signaler dans l'Explicitation** :
   - « phases avec participe présent » [sic] : coquille pour « phrases », recopiée telle quelle ;
   - « • Des articulateurs logiques distribués en » : la phrase s'arrête là dans la source, l'accolade
@@ -769,9 +786,13 @@ Termes métalinguistiques employés tels quels par le manuel dans ces pages :
 - **Typographie des guillemets** : la source mêle « … », «…» (sans espaces), "…" et “…”. La
   transcription conserve le caractère employé mais rétablit les espaces là où l'extraction les avait
   supprimées (ex. « leur«fuite» » → « leur « fuite » »).
+- **Espaces avant ponctuation double** : l'extraction laisse par endroits une espace parasite avant
+  la virgule ou à l'intérieur d'un mot composé (« contemplant la lune , Caspar David Friedrich »,
+  p. 8 ; « sur- le-champ », p. 16). Ces espaces ont été supprimées silencieusement ; elles ne
+  portent aucune information.
 - **Titre du support de la p. 13** : le manuel titre « Je la contemplai en silence » alors que la
-  phrase du texte est « Je contemplai en silence cette petite fille… ». Écart présent dans la
-  source, non corrigé.
+  phrase correspondante du texte ne porte pas le pronom « la » et se poursuit par un complément.
+  Écart présent dans la source, non corrigé.
 - **p. 17, support 1** : le manuel écrit « Jean.. » (deux points seulement) face à « Frollo… »
   (points de suspension). Transcrit tel quel.
 - Aucune autre zone n'est illisible : les pages 7 à 19 sont intégralement présentes dans la couche-
@@ -7477,16 +7498,28 @@ Les deux matières du tronc de ce niveau font le même montage ⚭×4 (un dossie
 - Deux incohérences internes dans « La reine de beauté » (Mondoloni / Mondolini ; « Joan Harlow »), qui sont de la source.
 - Le manuel ne donne à Suzanne Prou **ni encadré biographique, ni référence bibliographique, ni date** — contrairement à tous les autres auteurs de l'ouvrage.
 
-### 7.5 Incident R-2 — le résumé de « La reine de beauté » reproduisait l'œuvre
+### 7.5 Incident R-2 — deux fois : « La reine de beauté », puis la séquence 1.1
 
 Le premier état de cette fiche (2026-08-05, avant vérification) portait, pour la nouvelle de **Suzanne Prou** (1920-1995, **sous droits**), un résumé en douze étapes qui n'en était pas un : la vérification R-7 y a mesuré **35 % des mots en suites de cinq mots ou plus identiques au texte source** (79 suites, 566 mots), dont **une clausule de dix-neuf mots reproduite telle quelle**, et six passages entre guillemets — deux d'entre eux avec des guillemets que la source ne porte pas. Le reste décalquait l'ordre des phrases de l'original avec un simple changement de temps. **Et la fiche déclarait quatre fois le contraire** (« aucun passage n'est reproduit », « aucune citation — R-2 renforcé », etc.).
 
 Le paragraphe a été **entièrement réécrit** le 2026-08-05 et les quatre déclarations corrigées. Le synopsis actuel ne partage **aucune suite de huit mots** avec la source (vérifié mécaniquement).
 
-Deux leçons, qui valent au-delà de cette fiche :
+**Récidive — séquence 1.1 (p. 7–19), constatée par la R-7 v2 et corrigée le 2026-08-28.** Le même défaut, sur deux autres œuvres protégées, dans une séquence que la même vérification juge par ailleurs irréprochable sur l'appareil pédagogique du CNP (32 blocs annoncés verbatim, contrôlés mot à mot, **0 déviation**) :
+
+| œuvre protégée | étiquette que portait la fiche | mesuré avant | après correction |
+| --- | --- | ---: | ---: |
+| Pascal Thomas, article de _Rev. Réalités_ (mai 1971), support du Débat p. 9 | « Résumé fidèle (texte de presse, **non reproduit**) » | **86,1 %** de l'article repris en suites ≥ 5 mots ; plus longue suite **71 mots** | **4,0 %** — une seule suite, et c'est un **titre de film** |
+| Julien Green, _Le Voyageur sur la terre_, support de grammaire p. 13 | « Résumé fidèle (**non reproduit**, R-2) » | **63,4 %** ; plus longue suite **23 mots** ; c'était le texte original avec « je » changé en « il » | **0,0 %** — aucune suite ≥ 5 mots |
+
+Les deux autres œuvres protégées de la séquence franchissaient aussi le seuil des cinq mots — Géraldy, _Aveu_ (15,5 %) et Aznavour, _Il faut savoir_ (une suite de 5 mots), p. 19 : elles sont l'une et l'autre à **0,0 %** après correction. Mesure : suites maximales de jetons communes, texte normalisé, césures de fin de ligne recollées ; balayage de **toute** la section, pas seulement des blocs « résumé ». La R-7 annonçait 86,1 % / 40 mots et 43,6 % / 11 mots : le constat est le même, les longueurs sont plus grandes parce qu'elle coupait les suites aux virgules et ne recollait pas la césure « d'admi-/ration ».
+
+**Le domaine public était atteint aussi**, sans risque juridique mais avec la même étiquette fausse : Flaubert p. 7 (42,1 % de l'extrait, une suite de 15 mots) et Hugo p. 11 (18,2 %, une suite de 13 mots) portaient « le texte littéraire n'est pas reproduit ». Hugo p. 11 a été allégé jusqu'à **0,0 %** — l'étiquette y redevient vraie ; celle de Flaubert a été corrigée pour dire ce qui est, chiffres à l'appui.
+
+Trois leçons, qui valent au-delà de cette fiche :
 
 1. **Un « résumé détaillé » d'une œuvre sous droits glisse naturellement vers la reproduction.** Plus la consigne demande du détail — et c'est exactement ce que R-5 demande — plus l'auteur se rapproche du texte. Sur une œuvre du domaine public c'est sans conséquence ; sur une œuvre protégée, c'est une infraction. La consigne de transcription doit donc **plafonner la longueur** du résumé d'une œuvre protégée, pas seulement interdire la citation.
 2. **Une déclaration de conformité écrite par celui qui produit ne vaut rien.** Ici la fiche affirmait sa propre conformité quatre fois, et elle avait tort quatre fois. Seul un tiers mesurant les recouvrements l'a vu. C'est le sens même de R-7.
+3. **La leçon 1 était déjà écrite quand la séquence 1.1 a été transcrite, et elle n'a rien empêché** : un constat ne change pas un comportement, il lui faut une règle opposable. D'où le plafond, désormais chiffré : le résumé d'une **œuvre protégée** ne dépasse pas la longueur du texte qu'il résume et vise nettement moins ; il ne partage **aucune suite de cinq mots ou plus** avec la source, hors titres, noms propres et termes techniques inévitables ; et cette mesure est produite par un **script ou un tiers**, jamais affirmée par l'auteur du résumé. Ce qu'on écrit à la place du décalque : la thèse, le plan, les noms propres, le rôle du texte dans la séquence, les marqueurs grammaticaux sur lesquels portent les questions — de quoi générer cours et exercices sans rouvrir le manuel, et sans une phrase de l'original. Les deux blocs réécrits ici (p. 9 et p. 13) servent de modèle ; le résumé Frollo de la p. 17 montrait déjà le bon niveau. Corollaire, valable **quel que soit le statut de l'œuvre** : ne jamais écrire « non reproduit » sans l'avoir mesuré.
 
 ### 7.6 Dette assumée — 34 corrections de forme non appliquées
 
