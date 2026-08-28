@@ -6,6 +6,17 @@
 > dans le repo public [MBeji/yahia-quest-arena](https://github.com/MBeji/yahia-quest-arena) —
 > son CLAUDE.md reste canonique pour tout ce qui est code, conventions et Definition of Done.
 
+> ⭐ **Règle qui prime sur tout le reste — zéro intervention technique du propriétaire**
+> (posée le 2026-08-23, valable sur les trois dépôts) : Mohamed donne le besoin, les priorités,
+> les choix et les arbitrages ; la session exécute de bout en bout — commandes, code, base,
+> tests, PR, garde-fous. Une **demande de permission est une validation manuelle** : si une
+> action est autorisée, on la fait et on rend compte. Texte canonique, avec le test
+> décision/exécution, l'échelle de traitement (faire → **supprimer le besoin** → harnais →
+> rendre visible → remonter) et le tableau des murs :
+> [`docs/agents/zero-intervention.md`](https://github.com/MBeji/yahia-quest-arena/blob/main/docs/agents/zero-intervention.md)
+> du moteur. Corollaire vérifié ici : une ligne « en attente d'un humain » se **constate**
+> avant d'être crue — sur les cinq de `STATUS.md`, deux étaient fausses.
+
 - **Propriété intellectuelle** : tous droits réservés — le `LICENSE-CONTENT.md` du moteur
   s'applique intégralement à ce dépôt.
 - **Authoring** : le flux de référence est `FableEtudes/METHODE-GENERATION-CONTENU.md` — ouvrir
@@ -35,6 +46,26 @@
 - **CI** : `.github/workflows/content-ci.yml` fait exactement cela (double checkout + les deux
   liens). `content-audit.yml` (garde pédagogique) tourne mer. + sam. et exige le secret
   `CLAUDE_CODE_OAUTH_TOKEN` valide.
+- **Ouverture des PR** : `.github/workflows/auto-pr.yml` (depuis #226) ouvre la PR de **toute**
+  branche poussée, puis **dispatche ses checks**. Cette dispatch n'est pas un confort : une PR
+  ouverte par le `GITHUB_TOKEN` n'émet **pas** d'événement `pull_request`, donc `content-ci` et
+  `pin-check` ne démarreraient jamais sur elle — et `automerge` refusant, à raison, de merger un
+  SHA sans aucun check run, la PR dormirait. D'où le `workflow_dispatch` de ces deux workflows.
+  Sans ce ramassage, une session qui pousse puis s'arrête laisse sa branche sans PR :
+  **8 branches `claude/*` étaient dans ce cas au 2026-08-24, jusqu'à cinq semaines.**
+  ⚠️ Il exige le réglage `Settings > Actions > General > Workflow permissions >`
+  « Allow GitHub Actions to create and approve pull requests » (activé le 2026-08-24). S'il
+  manque, auto-pr **n'échoue pas** — il ouvre une issue `auto-pr-hs` et sort en 0, à dessein :
+  `automerge` exigeant tous les checks verts, un rouge permanent ici bloquerait **toutes** les
+  PR du dépôt.
+- **Un rouge programmé se voit** : `.github/workflows/guard-watch.yml` (#226) relève toutes les
+  6 h les runs rouges des 8 dernières heures et tient **une** issue `garde-rouge`, refermée dès
+  qu'une fenêtre est verte. Il existe parce que quatre des cinq gardes d'ici savent ouvrir une
+  issue pour ce qu'elles **constatent**, mais aucune n'a de filet pour son propre **plantage** —
+  et parce que le moteur a laissé `report-triage.yml` mourir 26 jours en criant dans un onglet
+  que personne n'ouvrait. ⚠️ Il filtre **côté serveur** (`--created` + `--status`) : filtrer une
+  fenêtre en local après `gh run list --limit 100` rend « 0 rouge » d'un air vert, ces 100 runs
+  ne couvrant qu'**1 h 13** sur un dépôt actif (mesuré sur le moteur, #230).
 - **Chaîne de merge** : `.github/workflows/automerge.yml` merge (squash) toute PR dont **tous**
   les checks sont verts. Il raisonne par **état, pas par événement** : chaque déclenchement (fin
   d'un workflow de PR, événement `pull_request`, push sur `main`) rebalaye l'état complet de

@@ -21,9 +21,46 @@ the precedent: Arabic prose around standard math. Never "arabize" the math itsel
 - **Operators/symbols**: true minus `−` (U+2212, not the hyphen `-`), `×` for multiplication
   (never the letter x), `÷` or fraction bars, `=`, `≠`, `<`, `>`, `≤`, `≥`, `√`, `π`, `∈`, `⊂`,
   `⟺`, `→`. Exponents as `x²`, `10³` (Unicode superscripts).
+- **Exposants et indices SIGNÉS — sûrs depuis le 2026-08-18 seulement.** `10⁻⁴`, `(√3)⁻⁸`,
+  `u₋₁` s'écrivent en Unicode comme les autres. Ils ne l'étaient PAS auparavant : ni
+  `isMathExpression` (qui décide la direction du texte d'une **option**) ni `SIGNED_NUMBER`
+  (qui isole les runs mathématiques dans la **prose**) ne connaissaient `⁻` (U+207B) ni `₋`
+  (U+208B), si bien qu'une option comme `(√3)⁻⁸` se rendait **`⁸⁻(3√)`** en contexte RTL —
+  y compris quand c'était la bonne réponse. Corrigé par arena #765 ; 234 options du corpus
+  étaient concernées. **Piège de diagnostic à connaître si le symptôme réapparaît** : sans
+  parenthèse ni radical, `10⁻³` s'affiche correctement tout seul (la règle W4 de l'algorithme
+  bidi le sauve). C'est la PRÉSENCE de `(` ou `√` qui déclenchait la casse — donc envelopper
+  de parenthèses, réflexe naturel, aggravait le problème au lieu de le résoudre.
 - **Keep each formula a contiguous LTR run** inside RTL text: never interleave Arabic words
   _inside_ an equation; write the Arabic sentence, then the full expression, then resume Arabic
   (as the production math content does). In cours.md, put substantial formulas on their own line.
+- **UNE FORMULE, UNE LIGNE — l'objet que l'énoncé donne à traiter ne se mêle pas à sa phrase.**
+  Quand un énoncé NOMME l'objet mathématique qu'il pose — « المعادلة », « المتراجحة »,
+  « العبارة », « الجملة », « الدالة … تُعرَّف بـ », « المجموعة », « قانون », « علاقة »,
+  « الحصر » — cette formule s'écrit **seule sur sa ligne**, un `\n` avant, et un autre après si
+  la phrase continue. Le player rend alors cette ligne en bloc centré LTR (`.math-equation`),
+  détaché du texte de la question.
+
+  ```jsonc
+  // ✗ l'équation se mêle à la phrase
+  "prompt": "بتطبيق مبدأ الجداء المعدوم، ما حلول المعادلة (x − 4)(x + 2) = 0 ؟"
+  // ✓ l'équation est posée seule
+  "prompt": "بتطبيق مبدأ الجداء المعدوم، ما حلول المعادلة التالية؟\n(x − 4)(x + 2) = 0"
+  // ✓ la phrase continue après la formule → un saut de chaque côté
+  "prompt": "الدالة التآلفية f تُعرَّف بـ:\nf(x) = 2x + 1\nما قيمة f(3) ؟"
+  ```
+
+  Signalé en capture le 2026-08-24 : mêlée à la phrase, une équation un peu longue était
+  **coupée entre deux lignes** par le navigateur, et comme l'algorithme bidi réordonne chaque
+  ligne pour elle-même, l'élève lisait deux moitiés de formule mélangées à l'arabe. Le rendu ne
+  coupe plus une formule (arena, `.math-run`) — mais la règle d'écriture reste, pour la
+  lisibilité. `content:qa` la porte (`auditInlineEquation`), en `[warn]` le temps de la campagne.
+
+  **Ce qui n'est PAS visé, et doit rester dans la phrase** : la DONNÉE citée dans le récit d'un
+  problème — `صخرة كتلتها m = 1500 g`, `ρ = 0.7 g/cm³`, `M(S) = 32 g/mol`, `BC = 10 cm` — et
+  l'arithmétique d'un énoncé de primaire (`في العمليّة 40 + 25 = 65، ما هما الحدّان؟`). Elles font
+  partie de la phrase ; les isoler la casserait. C'est le mot qui introduit la formule, pas sa
+  forme, qui décide.
 - **Arabic units in plain arithmetic are fine — don't fear them.** A quantity that repeats an
   Arabic-script unit across a linear chain (`10 مي + 2 مي + 2 مي = ؟`, `5 د + 200 مي`) renders
   **correctly natively**: digits and the linear operators (`+ − × ÷ = % °`) anchor as LTR runs, so

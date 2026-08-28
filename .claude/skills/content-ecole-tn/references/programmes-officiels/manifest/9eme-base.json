@@ -1,25 +1,125 @@
 {
   "grade": "9eme-base",
   "sealed": false,
-  "source": "CNP — programme national 9ème année de base (3e année collège, année de concours/ختم التعليم الأساسي). Guides enseignant cnp-officiel/c9, OFFICIELS : arabe 501902 « النحو العربي — كتاب الأستاذ » (إشراف المهيري), français 521902 « Pratique du Français — Document de l'enseignant » (CNP, reproduit le programme officiel intégral + instructions 7-8-9ème), anglais 541905 « Proceed with English — Teacher's Book » (prog. MoE sept. 2006). Transcriptions sous programme/9eme-base/.",
-  "note": "MANIFESTE PARTIEL — ne code que les 3 matières-langues (arabe/français/anglais) dont le guide enseignant est au corpus + dont le contenu existe sous des ids NON-SUFFIXÉS (arabic/french/english, le 9ème étant le grade d'origine). Les autres matières 9ème (math, svt, sciences-physiques, histoire-géo, islamique…) ont du contenu mais pas de guide enseignant au corpus → non codées ici. Écarts de scope (programme/9eme-base/*.md §6) : (arabe) le guide 501902 est نحو PUR → arabic ch.5-10 (صرف/بلاغة/إنتاج/فهم) viennent d'autres sources, hors ce guide ; (anglais) english/06-passive-voice & 07-reported-speech non tabulés dans le Teacher's Book (peut-être au programme MoE, ou léger sur-scope) ; (français) french/08-09 effleurent le niveau 1ère secondaire.",
+  "source": "CNP — programme national 9ème année de base (3e année collège, année de concours/ختم التعليم الأساسي). Deux natures de source selon la matière. (a) Guides enseignant cnp-officiel/c9, OFFICIELS : arabe 501902 « النحو العربي — كتاب الأستاذ » (إشراف المهيري), français 521902 « Pratique du Français — Document de l'enseignant » (CNP, reproduit le programme officiel intégral + instructions 7-8-9ème), anglais 541905 « Proceed with English — Teacher's Book » (prog. MoE sept. 2006). (b) Manuel élève SEUL, faute de guide publié : maths 102905 « الرياضيات » (221 p.) — le CNP ne publie aucun الدليل المرجعي de mathématiques pour le cycle collège (les guides de maths s'arrêtent à la 6ème ; vérifié 2026-08-17 sur le catalogue, le disque et download.log). Transcriptions sous programme/9eme-base/.",
+  "note": "MANIFESTE PARTIEL. Codent leur chapitrage : les 3 matières-langues (arabe/français/anglais), dont le guide enseignant est au corpus, et depuis 2026-08-17 les MATHS, transcrites depuis le manuel élève seul (règle « sources combinées » : une seule source disponible ⇒ elle fait référence ; précédents 1ere-sec/mathematiques, chimie, sciences-physiques). Les ids sont NON-SUFFIXÉS (arabic/french/english/math), le 9ème étant le grade d'origine. Les autres matières 9ème (svt, sciences-physiques, histoire-géo, islamique…) ont du contenu mais pas encore de fiche → non codées ici. Écarts de scope (programme/9eme-base/*.md §6) : (arabe) le guide 501902 est نحو PUR → arabic ch.5-10 (صرف/بلاغة/إنتاج/فهم) viennent d'autres sources, hors ce guide ; (anglais) english/06-passive-voice & 07-reported-speech non tabulés dans le Teacher's Book ; (français) french/08-09 effleurent le niveau 1ère secondaire. (maths) Le chapitrage ci-dessous liste les 13 chapitres officiels sous les slugs RÉELS du sujet, plus le palier annales. Décision du 2026-08-17 : AUCUN slug existant n'est renommé — un slug est l'identité d'un chapitre en base, le renommer orpheline la progression déjà enregistrée des élèves ; les chapitres à créer prennent donc les numéros 15 à 20 et c'est `displayOrder` qui porte l'ordre du programme. Cinq chapitres du sujet n'ont AUCUN ancrage dans le manuel (05-systemes, 06-fonctions-lineaires-affines, 10-angles-cercle, 11-vecteurs-translation, 13-geometrie-espace) : ils sont CONSERVÉS et MARQUÉS « hors programme officiel » (marqueur en tête de description + provenance en sources[]), et volontairement ABSENTS de ce manifeste — ainsi content:audit continue de les signaler, ce qui tient lieu de rappel que la décision est provisoire. La trigonométrie de 09-triangle-rectangle-trigo est également sans source (le manuel n'enseigne aucun rapport trigonométrique) : marquée dans le chapitre, pas exclue. Preuves terme à terme : programme/9eme-base/maths.md §6.2 et §6.3.",
   "subjects": [
+    {
+      "id": "math",
+      "name": "الرياضيات",
+      "contentLanguage": "ar",
+      "chapters": [
+        {
+          "slug": "15-numeration-et-calcul",
+          "notion": "التعداد والحساب — manuel ch.1, p.5–17"
+        },
+        {
+          "slug": "01-nombres-reels",
+          "notion": "مجموعة الأعداد الحقيقية IR — manuel ch.2, p.18–30"
+        },
+        {
+          "slug": "19-valeur-absolue",
+          "notion": "القيمة المطلقة لعدد حقيقي وخاصياتها — manuel ch.3 §III, p.38–39"
+        },
+        {
+          "slug": "02-racines-carrees",
+          "notion": "الجذور التربيعية وحساب العبارات — manuel ch.3 §IV, p.39–40 (déf. p.27)"
+        },
+        {
+          "slug": "16-puissances",
+          "notion": "القوى في مجموعة الأعداد الحقيقية — manuel ch.4, p.49–60"
+        },
+        {
+          "slug": "17-ordre-et-comparaison",
+          "notion": "الترتيب والمقارنة في مجموعة الأعداد الحقيقية — manuel ch.5, p.61–77"
+        },
+        {
+          "slug": "03-calcul-litteral",
+          "notion": "الجذاءات المعتبرة والعبارات الجبرية — manuel ch.6, p.78–92"
+        },
+        {
+          "slug": "04-equations-inequations",
+          "notion": "المعادلات والمتراجحات من الدرجة الأولى ذات مجهول واحد — manuel ch.7, p.93–110"
+        },
+        {
+          "slug": "07-statistiques",
+          "notion": "الإحصاء والاحتمالات — manuel ch.8, p.111–129 (les DEUX sections)"
+        },
+        {
+          "slug": "12-repere-plan",
+          "notion": "التعيين في المستوي — manuel ch.9, p.130–146"
+        },
+        {
+          "slug": "08-thales",
+          "notion": "مبرهنة طالس وتطبيقاتها — manuel ch.10, p.147–169"
+        },
+        {
+          "slug": "09-triangle-rectangle-trigo",
+          "notion": "العلاقات القياسية في المثلث القائم — manuel ch.11, p.170–188"
+        },
+        {
+          "slug": "18-quadrilateres",
+          "notion": "أنشطة حول الرباعيات — manuel ch.12, p.189–200"
+        },
+        {
+          "slug": "20-orthogonalite-espace",
+          "notion": "التعامد في الفضاء — manuel ch.13, p.201–221"
+        },
+        {
+          "slug": "14-annales-sujets-types",
+          "notion": "سُبُر نموذجيّة ومراجعة شاملة (hors manuel — palier annales du projet)"
+        }
+      ]
+    },
     {
       "id": "arabic",
       "name": "اللغة العربية",
       "contentLanguage": "ar",
       "chapters": [
-        { "slug": "01-i3rab-wal-bina", "notion": "الإعراب والبناء" },
-        { "slug": "02-an-nawasikh", "notion": "النواسخ" },
-        { "slug": "03-al-mansoubat", "notion": "المنصوبات" },
-        { "slug": "04-al-asalib", "notion": "الأساليب النحوية" },
-        { "slug": "05-sarf-al-mizan", "notion": "الصرف (الميزان الصرفي)" },
-        { "slug": "06-al-mushtaqqat", "notion": "المشتقّات" },
-        { "slug": "07-as-suwar-al-bayania", "notion": "الصور البيانية" },
-        { "slug": "08-al-muhassinat-al-badi3ia", "notion": "المحسّنات البديعية" },
-        { "slug": "09-al-intaj-al-kitabi", "notion": "الإنتاج الكتابي" },
-        { "slug": "10-fahm-wa-intaj", "notion": "فهم المقروء والإنتاج" },
-        { "slug": "11-annales-subur", "notion": "سُبُر نموذجيّة (الختم)" }
+        {
+          "slug": "01-i3rab-wal-bina",
+          "notion": "الإعراب والبناء"
+        },
+        {
+          "slug": "02-an-nawasikh",
+          "notion": "النواسخ"
+        },
+        {
+          "slug": "03-al-mansoubat",
+          "notion": "المنصوبات"
+        },
+        {
+          "slug": "04-al-asalib",
+          "notion": "الأساليب النحوية"
+        },
+        {
+          "slug": "05-sarf-al-mizan",
+          "notion": "الصرف (الميزان الصرفي)"
+        },
+        {
+          "slug": "06-al-mushtaqqat",
+          "notion": "المشتقّات"
+        },
+        {
+          "slug": "07-as-suwar-al-bayania",
+          "notion": "الصور البيانية"
+        },
+        {
+          "slug": "08-al-muhassinat-al-badi3ia",
+          "notion": "المحسّنات البديعية"
+        },
+        {
+          "slug": "09-al-intaj-al-kitabi",
+          "notion": "الإنتاج الكتابي"
+        },
+        {
+          "slug": "10-fahm-wa-intaj",
+          "notion": "فهم المقروء والإنتاج"
+        },
+        {
+          "slug": "11-annales-subur",
+          "notion": "سُبُر نموذجيّة (الختم)"
+        }
       ]
     },
     {
@@ -31,12 +131,30 @@
           "slug": "01-types-et-formes-de-phrases",
           "notion": "Types et formes de phrases (+ voix passive)"
         },
-        { "slug": "02-propositions-subordonnees", "notion": "Propositions subordonnées" },
-        { "slug": "03-voix-active-et-passive", "notion": "Voix active et passive" },
-        { "slug": "04-discours-direct-et-indirect", "notion": "Discours direct et indirect" },
-        { "slug": "05-modes-et-temps-verbaux", "notion": "Modes et temps verbaux" },
-        { "slug": "06-concordance-des-temps", "notion": "Concordance des temps" },
-        { "slug": "07-lexique-et-figures-de-style", "notion": "Lexique et figures de style" },
+        {
+          "slug": "02-propositions-subordonnees",
+          "notion": "Propositions subordonnées"
+        },
+        {
+          "slug": "03-voix-active-et-passive",
+          "notion": "Voix active et passive"
+        },
+        {
+          "slug": "04-discours-direct-et-indirect",
+          "notion": "Discours direct et indirect"
+        },
+        {
+          "slug": "05-modes-et-temps-verbaux",
+          "notion": "Modes et temps verbaux"
+        },
+        {
+          "slug": "06-concordance-des-temps",
+          "notion": "Concordance des temps"
+        },
+        {
+          "slug": "07-lexique-et-figures-de-style",
+          "notion": "Lexique et figures de style"
+        },
         {
           "slug": "08-types-de-textes-et-production-ecrite",
           "notion": "Types de textes et production écrite"
@@ -45,7 +163,10 @@
           "slug": "09-comprehension-production-ecrite",
           "notion": "Compréhension et production écrite"
         },
-        { "slug": "10-annales-sujets-types", "notion": "Annales / sujets types" }
+        {
+          "slug": "10-annales-sujets-types",
+          "notion": "Annales / sujets types"
+        }
       ]
     },
     {
@@ -53,16 +174,46 @@
       "name": "English",
       "contentLanguage": "en",
       "chapters": [
-        { "slug": "01-present-tenses", "notion": "Present tenses" },
-        { "slug": "02-past-tenses", "notion": "Past tenses (+ present perfect)" },
-        { "slug": "03-future", "notion": "Future" },
-        { "slug": "04-modals", "notion": "Modals" },
-        { "slug": "05-conditionals", "notion": "Conditionals (first)" },
-        { "slug": "06-passive-voice", "notion": "Passive voice" },
-        { "slug": "07-reported-speech", "notion": "Reported speech" },
-        { "slug": "08-relative-clauses-comparatives", "notion": "Relative clauses & comparatives" },
-        { "slug": "09-reading-comprehension-writing", "notion": "Reading comprehension & writing" },
-        { "slug": "10-exam-style-papers", "notion": "Exam-style papers" }
+        {
+          "slug": "01-present-tenses",
+          "notion": "Present tenses"
+        },
+        {
+          "slug": "02-past-tenses",
+          "notion": "Past tenses (+ present perfect)"
+        },
+        {
+          "slug": "03-future",
+          "notion": "Future"
+        },
+        {
+          "slug": "04-modals",
+          "notion": "Modals"
+        },
+        {
+          "slug": "05-conditionals",
+          "notion": "Conditionals (first)"
+        },
+        {
+          "slug": "06-passive-voice",
+          "notion": "Passive voice"
+        },
+        {
+          "slug": "07-reported-speech",
+          "notion": "Reported speech"
+        },
+        {
+          "slug": "08-relative-clauses-comparatives",
+          "notion": "Relative clauses & comparatives"
+        },
+        {
+          "slug": "09-reading-comprehension-writing",
+          "notion": "Reading comprehension & writing"
+        },
+        {
+          "slug": "10-exam-style-papers",
+          "notion": "Exam-style papers"
+        }
       ]
     }
   ]

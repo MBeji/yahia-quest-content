@@ -1,0 +1,85 @@
+{
+  "title": "اختبار فهم الدرس ⭐",
+  "questions": [
+    {
+      "prompt": "ما هو المستقيم العمودي على مستوٍ ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "هو مستقيم يقطع هذا المستوي في نقطة واحدة دون أن يكون موازيًا له",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "b",
+          "text": "هو مستقيم عمودي على مستقيم واحد فقط من مستقيمات هذا المستوي",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "c",
+          "text": "هو مستقيم عمودي على مستقيمين متوازيين اثنين من هذا المستوي",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "d",
+          "text": "هو مستقيم عمودي على مستقيمين متقاطعين من المستوي في نفس النقطة"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "التعريف يشترط شرطين معًا: مستقيمان اثنان من المستوي، وأن يكونا متقاطعين في نفس النقطة. مستقيم واحد لا يكفي لأنّ حول أيّ مستقيم عددًا لا نهائيًّا من المستقيمات العمودية عليه، ومستقيمان متوازيان يعطيان نفس الاتّجاه فلا يضيفان شيئًا. أمّا مجرّد قطع المستوي في نقطة فلا علاقة له بالتعامد.",
+      "difficulty": 1,
+      "competencies": ["math.geo.droites-perp-para"]
+    },
+    {
+      "prompt": "المستقيم (AS) عمودي على المستوي P في النقطة A ، و B نقطة من P مخالفة لـ A . ما وضعية المستقيمين (AS) و(AB) ؟",
+      "options": [
+        { "id": "a", "text": "متقاطعان في A ومتعامدان" },
+        { "id": "b", "text": "متقاطعان في A وغير متعامدين", "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes" },
+        { "id": "c", "text": "متقاطعان في A ومتعامدان فقط لبعض مواضع B", "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes" },
+        { "id": "d", "text": "ليسا في نفس المستوي لأنّ (AS) غير محتوى في P", "misconceptionTag": "math.esp.droites-non-coplanaires-crues-secantes" }
+      ],
+      "correctOption": "a",
+      "explanation": "المستقيم العمودي على مستوٍ في نقطة يكون عموديًا على كلّ مستقيمات هذا المستوي المارّة من تلك النقطة — على كلّها لا على بعضها فقط، فالتعامد قائم مهما كان موضع B من P . وبما أنّ (AB) محتوى في P ويمرّ من A ، فإنّ (AS) و(AB) متقاطعان في A ومتعامدان. وهما ليسا خارج نفس المستوي: لهما النقطة A مشتركة فهما متقاطعان، والحالة «ليسا في نفس المستوي» لا تقع إلّا لمستقيمين لا يتقاطعان ولا يتوازيان، وكون (AS) غير محتوى في P لا يمنع وجود مستوٍ يحتويهما معًا.",
+      "difficulty": 1,
+      "competencies": ["math.geo.droites-perp-para"]
+    },
+    {
+      "prompt": "ABCDEFGH متوازي مستطيلات أبعاده AB = 2 و AD = 3 و AE = 6 (بالصنتمتر). ما قيس قطره EC ؟\n<svg viewBox=\"0 0 215 210\"><path d=\"M45 180 L140 180 L185 148 M45 180 L45 70 M140 180 L140 70 M185 148 L185 38 M45 70 L140 70 L185 38 L90 38 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M45 180 L90 148 L185 148 M90 148 L90 38\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M45 70 L185 148\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"34\" y=\"196\" text-anchor=\"middle\">A</text><text x=\"149\" y=\"196\" text-anchor=\"middle\">B</text><text x=\"197\" y=\"145\" text-anchor=\"middle\">C</text><text x=\"79\" y=\"161\" text-anchor=\"middle\">D</text><text x=\"34\" y=\"66\" text-anchor=\"middle\">E</text><text x=\"150\" y=\"66\" text-anchor=\"middle\">F</text><text x=\"197\" y=\"35\" text-anchor=\"middle\">G</text><text x=\"79\" y=\"33\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "√13" },
+        { "id": "b", "text": "3√5", "misconceptionTag": "math.esp.diagonale-du-pave-en-deux-dimensions" },
+        { "id": "c", "text": "7" },
+        { "id": "d", "text": "11", "misconceptionTag": "math.geo.pythagore-sans-carres" }
+      ],
+      "correctOption": "c",
+      "explanation": "قطر متوازي المستطيلات يساوي √(AB² + AE² + AD²) = √(4 + 36 + 9) = √49 = 7 cm . الخطأ الشائع هو جمع الأبعاد فنحصل على 11 بدل 7 ، أو نسيان أحد الأبعاد فنحصل على √13 (بدون AE) أو على 3√5 (بدون AB).",
+      "difficulty": 2,
+      "competencies": ["math.geo.pythagore", "math.esp.solides-espace"]
+    },
+    {
+      "prompt": "في الهرم المنتظم، ما طبيعة الأوجه الجانبية ؟",
+      "options": [
+        { "id": "a", "text": "مربّعات متقايسة قاعدتها أحرف القاعدة", "misconceptionTag": "math.esp.pyramide-reguliere-faces-equilaterales" },
+        { "id": "b", "text": "مثلثات متقايسة الأضلاع في كلّ الحالات", "misconceptionTag": "math.esp.pyramide-reguliere-faces-equilaterales" },
+        { "id": "c", "text": "مثلثات قائمة الزاوية في رأس الهرم المشترك" },
+        { "id": "d", "text": "مثلثات متقايسة وكلّ منها متقايس الضلعين" }
+      ],
+      "correctOption": "d",
+      "explanation": "في الهرم المنتظم كلّ الأحرف الجانبية متقايسة، فالأوجه الجانبية مثلثات متقايسة، وكلّ واحد منها متقايس الضلعين قمّته الرئيسية هي رأس الهرم. وهي ليست متقايسة الأضلاع إلّا في حالة خاصّة (لمّا يساوي الحرف الجانبي ضلع القاعدة)، ولا هي قائمة في الرأس.",
+      "difficulty": 2,
+      "competencies": ["math.esp.solides-espace", "math.geo.triangles-base"]
+    },
+    {
+      "prompt": "المستقيمان (D1) و(D2) عموديان على نفس المستوي P . ما وضعيّتهما النسبية ؟",
+      "options": [
+        { "id": "a", "text": "متقاطعان في نقطة من المستوي P", "misconceptionTag": "math.esp.deux-perpendiculaires-au-meme-plan" },
+        { "id": "b", "text": "متوازيان مهما كانت وضعيّتهما" },
+        { "id": "c", "text": "متعامدان في نقطة خارج المستوي P", "misconceptionTag": "math.esp.deux-perpendiculaires-au-meme-plan" },
+        { "id": "d", "text": "ليسا في نفس المستوي بالضرورة", "misconceptionTag": "math.esp.deux-perpendiculaires-au-meme-plan" }
+      ],
+      "correctOption": "b",
+      "explanation": "من قواعد الفصل: مستقيمان عموديان على نفس المستوي هما مستقيمان متوازيان. ولو كانا متقاطعين لمرّ من نقطة تقاطعهما مستقيمان عموديان على P ، وهذا يناقض قاعدة الوحدانية التي تقول إنّه من كلّ نقطة يمرّ مستقيم واحد فقط عمودي على مستوٍ معلوم.",
+      "difficulty": 2,
+      "competencies": ["math.geo.droites-perp-para"]
+    }
+  ]
+}

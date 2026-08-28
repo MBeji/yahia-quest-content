@@ -1,0 +1,88 @@
+{
+  "title": "⭐ تمرين: القيمة المطلقة — الخطوات الأولى",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "ما قيمة |−9| ؟",
+      "options": [
+        { "id": "a", "text": "−9", "misconceptionTag": "math.num.valeur-absolue-negative" },
+        { "id": "b", "text": "−1/9", "misconceptionTag": "math.num.oppose-inverse-confondus" },
+        { "id": "c", "text": "9" },
+        { "id": "d", "text": "1/9", "misconceptionTag": "math.num.oppose-inverse-confondus" }
+      ],
+      "correctOption": "c",
+      "explanation": "العدد −9 سالب، والقيمة المطلقة لعدد سالب هي مقابله: |−9| = −(−9) = 9 . وهو أيضًا بُعد النقطة ذات الفاصلة −9 عن المبدأ: القيمة المطلقة تحذف الإشارة ولا تعطي المقلوب.",
+      "difficulty": 1,
+      "competencies": ["math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "ما قيمة |−3,21| ؟",
+      "options": [
+        { "id": "a", "text": "3,21" },
+        { "id": "b", "text": "−3,21", "misconceptionTag": "math.num.valeur-absolue-negative" },
+        { "id": "c", "text": "3,12" },
+        { "id": "d", "text": "0,21" }
+      ],
+      "correctOption": "a",
+      "explanation": "القيمة المطلقة لعدد سالب هي مقابله: |−3,21| = 3,21 . الأرقام لا تتغيّر ولا يتغيّر ترتيبها، تُحذف الإشارة فقط.",
+      "difficulty": 1,
+      "competencies": ["math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "ما قيمة |−2/5| ؟",
+      "options": [
+        { "id": "a", "text": "−2/5", "misconceptionTag": "math.num.valeur-absolue-negative" },
+        { "id": "b", "text": "5/2", "misconceptionTag": "math.num.oppose-inverse-confondus" },
+        { "id": "c", "text": "−5/2", "misconceptionTag": "math.num.oppose-inverse-confondus" },
+        { "id": "d", "text": "2/5" }
+      ],
+      "correctOption": "d",
+      "explanation": "القيمة المطلقة هي بُعد العدد −2/5 عن الصفر، أي 2/5 . الخطأ الشائع هو قلب الكسر: القيمة المطلقة تحذف الإشارة ولا تعطي المقلوب.",
+      "difficulty": 1,
+      "competencies": ["math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "ما قيمة |−√11| ؟",
+      "options": [
+        { "id": "a", "text": "11", "misconceptionTag": "math.num.racine-et-carre-confondus" },
+        { "id": "b", "text": "√11" },
+        { "id": "c", "text": "−√11", "misconceptionTag": "math.num.valeur-absolue-negative" },
+        { "id": "d", "text": "−11", "misconceptionTag": "math.num.valeur-absolue-negative" }
+      ],
+      "correctOption": "b",
+      "explanation": "العدد −√11 سالب، فقيمته المطلقة هي مقابله: |−√11| = √11 . الخطأ الشائع هو حذف الجذر أيضًا؛ القيمة المطلقة لا تمسّ إلّا الإشارة.",
+      "difficulty": 1,
+      "competencies": ["math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "أوجد كلّ الأعداد الحقيقية x بحيث |x| = 6 .",
+      "options": [
+        { "id": "a", "text": "x = 6 فقط لا غير", "misconceptionTag": "math.num.valeur-absolue-solution-unique" },
+        { "id": "b", "text": "x = −6 فقط لا غير", "misconceptionTag": "math.num.valeur-absolue-solution-unique" },
+        { "id": "c", "text": "x = 6 أو x = −6" },
+        { "id": "d", "text": "x = 3 أو x = −3" }
+      ],
+      "correctOption": "c",
+      "explanation": "يوجد على المستقيم المدرّج عددان بعدهما عن المبدأ يساوي 6 : العدد 6 والعدد −6 . إذن المساواة |x| = 6 لها حلّان: x = 6 أو x = −6 .",
+      "difficulty": 2,
+      "competencies": ["math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "أوجد العدد الحقيقي x بحيث |x| = −4 .",
+      "options": [
+        { "id": "a", "text": "x = 4 أو x = −4 كلاهما يحقّق ذلك", "misconceptionTag": "math.num.valeur-absolue-negative" },
+        { "id": "b", "text": "لا يوجد حلّ لأنّ البعد ليس سالبًا" },
+        { "id": "c", "text": "x = −4 وحده يحقّق هذه المساواة", "misconceptionTag": "math.num.valeur-absolue-negative" },
+        { "id": "d", "text": "x = 4 وحده يحقّق هذه المساواة", "misconceptionTag": "math.num.valeur-absolue-negative" }
+      ],
+      "correctOption": "b",
+      "explanation": "القيمة المطلقة بُعد، والبعد لا يكون سالبًا أبدًا. إذن المساواة |x| = −4 مستحيلة ولا تقبل أيّ حلّ في ℝ .",
+      "difficulty": 2,
+      "competencies": ["math.num.valeur-absolue"]
+    }
+  ]
+}

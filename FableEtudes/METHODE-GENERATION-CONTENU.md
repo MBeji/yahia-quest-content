@@ -669,6 +669,16 @@ contexte : **brief matière + la section de la fiche de CE chapitre** :
   (1ère–3ème) ⇒ presque tout illustré, coloré ;
 - auto-vérification par chapitre : re-résolution à l'aveugle, distracteurs = erreurs exécutées,
   équilibre des clés, notation standard (0-9, LTR ; milliers arabes en U+00A0 **cohérent**) ;
+- **`misconceptionTag` : tagger ou laisser muet se DÉCIDE, question par question** (étude 30, lot
+  0bis). Un distracteur prend son tag s'il est **reconstructible** — une erreur nommable du registre
+  `content/misconceptions.json` **et** le chemin de l'énoncé à cette option exactement : R1
+  l'`explanation` nomme déjà l'erreur et l'option qu'elle produit · R2 tout le jeu de distracteurs
+  est bâti sur une seule erreur · R3 une seule opération inversée ou omise, sans autre lecture.
+  Sinon **muet**, et c'est une décision, pas un impayé : nombre de remplissage, ambiguïté (un
+  mauvais tag enseigne une fausse erreur), ou erreur réelle absente du registre et vue **< 3 fois**
+  — le registre ne s'étend qu'au-delà de ce seuil. **Ne pas viser 100 %** : la règle plafonne à
+  **81 %** sur `math` 9ᵉ (662/818, lot 0bis), le reste étant des muettes statuées. Barème complet et
+  exemples : `.claude/skills/content-engine/references/content-schema.md` § `misconceptionTag` ;
 - **périmètre nommé par agent, et interdiction du gabarit** : les fichiers d'un chapitre
   s'écrivent en parallèle par des agents qui ne se voient pas. Donner à chacun (a) la liste
   **exacte** des fichiers qu'il écrit, (b) le périmètre enseigné par le cours, (c) le chemin des

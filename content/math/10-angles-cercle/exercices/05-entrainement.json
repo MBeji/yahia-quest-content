@@ -11,8 +11,8 @@
       "options": [
         { "id": "a", "text": "55°" },
         { "id": "b", "text": "70°" },
-        { "id": "c", "text": "110°" },
-        { "id": "d", "text": "220°" }
+        { "id": "c", "text": "110°", "misconceptionTag": "math.geo.angle-inscrit-egal-au-centre" },
+        { "id": "d", "text": "220°", "misconceptionTag": "math.geo.angle-inscrit-double-du-centre" }
       ],
       "correctOption": "a",
       "explanation": "الزاوية المحيطية = نصف الزاوية المركزية المقابلة لنفس القوس. ACB = 110° ÷ 2 = 55°.",
@@ -22,10 +22,10 @@
     {
       "prompt": "في دائرة مركزها O، الزاوية المركزية AOB = 60° والزاوية المركزية BOC = 40° حيث B بين A وC على الدائرة، وD نقطة على القوس الكبير AC. ما قيمة الزاوية ADC؟",
       "options": [
-        { "id": "a", "text": "25°" },
+        { "id": "a", "text": "25°", "misconceptionTag": "math.geo.angle-inscrit-double-du-centre" },
         { "id": "b", "text": "30°" },
         { "id": "c", "text": "50°" },
-        { "id": "d", "text": "100°" }
+        { "id": "d", "text": "100°", "misconceptionTag": "math.geo.angle-inscrit-egal-au-centre" }
       ],
       "correctOption": "c",
       "explanation": "الزاوية المركزية AOC = AOB + BOC = 60° + 40° = 100°. الزاوية المحيطية ADC = نصف الزاوية المركزية = 100° ÷ 2 = 50°. اختيار 100° يعني نسيان القسمة على 2، واختيار 30° يعني قسمة زاوية واحدة فقط.",
@@ -35,7 +35,7 @@
     {
       "prompt": "في دائرة مركزها O، [AB] قطر وC نقطة على الدائرة بحيث الزاوية ABC = 30°. ما قيمة الزاوية المركزية AOC؟",
       "options": [
-        { "id": "a", "text": "30°" },
+        { "id": "a", "text": "30°", "misconceptionTag": "math.geo.angle-inscrit-egal-au-centre" },
         { "id": "b", "text": "60°" },
         { "id": "c", "text": "90°" },
         { "id": "d", "text": "120°" }
@@ -48,9 +48,13 @@
     {
       "prompt": "في دائرة، الزاويتان المحيطيتان ACB وADB تحصران القوس الصغير AB نفسه، وقيس كلّ منهما 31°. ما قيس القوس الصغير AB؟",
       "options": [
-        { "id": "a", "text": "31°" },
+        { "id": "a", "text": "31°", "misconceptionTag": "math.geo.angle-inscrit-egal-au-centre" },
         { "id": "b", "text": "62°" },
-        { "id": "c", "text": "124°" },
+        {
+          "id": "c",
+          "text": "124°",
+          "misconceptionTag": "math.geo.angle-inscrit-double-du-centre"
+        },
         { "id": "d", "text": "298°" }
       ],
       "correctOption": "b",
@@ -62,7 +66,7 @@
       "prompt": "في دائرة مركزها O، الزاوية المركزية AOB = 120°. ما قيس القوس الصغير AB؟",
       "options": [
         { "id": "a", "text": "30°" },
-        { "id": "b", "text": "60°" },
+        { "id": "b", "text": "60°", "misconceptionTag": "math.geo.angle-inscrit-double-du-centre" },
         { "id": "c", "text": "120°" },
         { "id": "d", "text": "240°" }
       ],
@@ -74,7 +78,7 @@
     {
       "prompt": "في دائرة، الزاوية المحيطية ACB = 54°. ما قيس القوس الكبير AB (الذي لا يحوي C)؟",
       "options": [
-        { "id": "a", "text": "108°" },
+        { "id": "a", "text": "108°", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "b", "text": "126°" },
         { "id": "c", "text": "252°" },
         { "id": "d", "text": "306°" }

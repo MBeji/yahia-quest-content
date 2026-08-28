@@ -152,8 +152,41 @@ demandes à personne de merger) :
 3. Le merge sur `main` **déclenche le déploiement Vercel** et **applique les migrations** en prod.
 
 **Tu possèdes ta PR jusqu'au merge réel** (Definition of Done §8) : surveille les checks
-(`gh pr checks <n> --watch`), corrige tout rouge et re-pousse, confirme que le merge a bien eu
-lieu, puis nettoie ta branche locale (la distante s'auto-supprime).
+(`gh pr checks <n> --watch`), corrige tout rouge et re-pousse, **confirme le merge par le
+contenu sur `main`** (encadré ci-dessous), puis nettoie ta branche locale (la distante
+s'auto-supprime).
+
+> ⚠️ **Le statut `MERGED` ne prouve rien — vécu ici le 2026-07-26.** La PR #10 (base `main`) et
+> la PR #11 (base `claude/figures-eveil-2eme`, c'est-à-dire **la branche de #10**) ont mergé à
+> **10 secondes d'intervalle**. #10 a été squashée et sa branche supprimée dans la foulée : #11
+> s'est donc appliquée sur une **branche morte**. GitHub affiche `MERGED` et `mergedAt` pour
+> elle en toute bonne foi, mais ses **23 figures ne sont jamais arrivées sur `main`**, donc
+> jamais en production — sans un seul check rouge, sans la moindre alerte.
+>
+> Le test qui marche porte sur le **contenu**, jamais sur la topologie :
+>
+> ```bash
+> git fetch origin main
+> git log --oneline origin/main -1                        # le squash, suffixé (#NNN)
+> git ls-tree -d --name-only origin/main content/<sujet>/ # les dossiers livrés sont là…
+> MSYS_NO_PATHCONV=1 git show "origin/main:<fichier>"     # …et leur contenu aussi
+> ```
+>
+> (Sous Git Bash, le préfixe `MSYS_NO_PATHCONV=1` n'est indispensable que si le chemin commence
+> par un point : sans lui, `origin/main:.claude/…` est mutilé et git répond « ambiguous
+> argument ». Il ne gêne jamais ailleurs — garde-le.)
+>
+> **Surtout pas `git merge-base --is-ancestor`, ni `git branch --merged`.** Ce dépôt
+> squash-merge (`gh pr merge --squash --delete-branch`) : `main` reçoit un commit **neuf**, le
+> SHA de ta branche n'est donc ancêtre de rien, et ces tests échouent sur **toutes** les
+> livraisons — y compris parfaitement réelles. Faux négatif vécu le 2026-08-04 sur la PR #119 :
+> la vérification criait « merge fantôme » sur un merge impeccable. La branche étant supprimée
+> au merge, la commande peut même sortir en `fatal: Not a valid commit name`.
+>
+> **La vraie prévention est en amont : ta PR se base toujours sur `main`** (DoD §7), jamais sur
+> la branche d'une autre PR — même quand ton lot dépend d'elle. Attends son merge, puis repars
+> de `main` (`git checkout -b <suite> origin/main` puis `git cherry-pick`). Un
+> `gh pr view <n> --json baseRefName` doit répondre `main`.
 
 **Opt-out volontaire** (travail non fini que tu ne veux PAS voir mergé) : mets `[wip]`, `[draft]`
 ou `[no-automerge]` dans le sujet du commit de tête, **ou** préfixe ta branche `wip/`/`draft/`/
@@ -264,4 +297,7 @@ Beji) et intégrée sous ces licences — condition pour que le projet puisse d�
 - [ ] Migrations (le cas échéant) : additives, horodatées après `main`, grants inclus, pgTAP écrit.
 - [ ] La case du lot est cochée dans l'`ETUDE.md` ; le journal d'exécution est à jour.
 - [ ] Message conventionnel qui référence `FableEtudes/NN-<slug>#lot-X`.
-- [ ] Je surveille ma PR jusqu'au **merge réel**, puis je nettoie ma branche.
+- [ ] Ma PR est basée sur **`main`**, jamais sur la branche d'une autre PR
+      (`gh pr view <n> --json baseRefName`).
+- [ ] Je surveille ma PR jusqu'au **merge réel**, vérifié par le **contenu sur `main`** (§5) et
+      jamais par le statut `MERGED`, puis je nettoie ma branche.

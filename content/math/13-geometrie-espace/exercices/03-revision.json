@@ -10,7 +10,7 @@
       "prompt": "أسطوانة نصف قطرها 5 cm وارتفاعها 4 cm. ما حجمها تقريبًا؟ (π ≈ 3,14)",
       "options": [
         { "id": "a", "text": "314 cm³" },
-        { "id": "b", "text": "62,8 cm³" },
+        { "id": "b", "text": "62,8 cm³", "misconceptionTag": "math.mes.rayon-non-eleve-au-carre" },
         { "id": "c", "text": "125,6 cm³" },
         { "id": "d", "text": "628 cm³" }
       ],
@@ -22,8 +22,8 @@
     {
       "prompt": "هرم قاعدته مربّع ضلعه 6 cm وارتفاعه 8 cm. ما حجمه؟",
       "options": [
-        { "id": "a", "text": "288 cm³" },
-        { "id": "b", "text": "144 cm³" },
+        { "id": "a", "text": "288 cm³", "misconceptionTag": "math.mes.volume-pyramide-sans-tiers" },
+        { "id": "b", "text": "144 cm³", "misconceptionTag": "math.mes.volume-pyramide-sans-tiers" },
         { "id": "c", "text": "96 cm³" },
         { "id": "d", "text": "48 cm³" }
       ],
@@ -37,11 +37,11 @@
       "options": [
         { "id": "a", "text": "3 cm" },
         { "id": "b", "text": "9 cm" },
-        { "id": "c", "text": "27 cm" },
+        { "id": "c", "text": "27 cm", "misconceptionTag": "math.mes.volume-pyramide-sans-tiers" },
         { "id": "d", "text": "54 cm" }
       ],
       "correctOption": "b",
-      "explanation": "V = (1/3)πr²h، إذن 108π = (1/3) × π × 36 × h = 12πh. نعزل الارتفاع: h = 108π ÷ 12π = 9 cm. تحقّق: (1/3) × π × 36 × 9 = 108π ✓. انتبه: نسيان معامل الثلث يعطي h = 108/36 = 3 (الخيار أ)، ونسيان تربيع نصف القطر يعطي h = 54 (الخيار د).",
+      "explanation": "V = (1/3)πr²h، إذن 108π = (1/3) × π × 36 × h = 12πh. نعزل الارتفاع: h = 108π ÷ 12π = 9 cm. تحقّق: (1/3) × π × 36 × 9 = 108π ✓. انتبه: نسيان معامل الثلث يعطي h = 108/36 = 3 cm، ونسيان تربيع نصف القطر يعطي h = 54 cm.",
       "difficulty": 2,
       "competencies": ["math.mes.volumes", "math.alg.equations-premier-degre"]
     },
@@ -62,7 +62,7 @@
       "prompt": "موشور قائم قاعدته مثلّث قائم ساقاه 6 cm و8 cm، وارتفاعه 10 cm. ما حجمه؟",
       "options": [
         { "id": "a", "text": "240 cm³" },
-        { "id": "b", "text": "480 cm³" },
+        { "id": "b", "text": "480 cm³", "misconceptionTag": "math.mes.aire-triangle-sans-moitie" },
         { "id": "c", "text": "120 cm³" },
         { "id": "d", "text": "400 cm³" }
       ],
@@ -75,7 +75,7 @@
       "prompt": "أسطوانة نصف قطرها 4 cm وارتفاعها 5 cm. ما حجمها تقريبًا؟ (π ≈ 3,14)",
       "options": [
         { "id": "a", "text": "125,6 cm³" },
-        { "id": "b", "text": "62,8 cm³" },
+        { "id": "b", "text": "62,8 cm³", "misconceptionTag": "math.mes.rayon-non-eleve-au-carre" },
         { "id": "c", "text": "251,2 cm³" },
         { "id": "d", "text": "502,4 cm³" }
       ],

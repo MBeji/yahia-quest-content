@@ -9,7 +9,7 @@
     {
       "prompt": "سجّل معلّم علامات 5 تلاميذ في مادّة الرياضيات: 8 ، 12 ، 15 ، 10 ، 10. ما هو المعدّل الحسابي لهذه العلامات؟",
       "options": [
-        { "id": "a", "text": "10" },
+        { "id": "a", "text": "10", "misconceptionTag": "math.stat.moyenne-et-mediane-confondues" },
         { "id": "b", "text": "11" },
         { "id": "c", "text": "12" },
         { "id": "d", "text": "9" }
@@ -25,7 +25,7 @@
         { "id": "a", "text": "8" },
         { "id": "b", "text": "12" },
         { "id": "c", "text": "10" },
-        { "id": "d", "text": "11" }
+        { "id": "d", "text": "11", "misconceptionTag": "math.stat.moyenne-et-mediane-confondues" }
       ],
       "correctOption": "c",
       "explanation": "n = 5 (فردي)، الوسيط هو قيمة الرتبة (5+1)÷2 = 3. القيمة الثالثة في السلسلة المرتّبة هي 10.",
@@ -35,7 +35,7 @@
     {
       "prompt": "في السلسلة ذاتها: 8 ، 10 ، 10 ، 12 ، 15. ما هو المنوال؟",
       "options": [
-        { "id": "a", "text": "15" },
+        { "id": "a", "text": "15", "misconceptionTag": "math.stat.mode-et-valeur-maximale-confondus" },
         { "id": "b", "text": "8" },
         { "id": "c", "text": "12" },
         { "id": "d", "text": "10" }
@@ -49,8 +49,8 @@
       "prompt": "في فصل من 40 تلميذًا، حصل 10 تلاميذ على علامة 14. ما هو التواتر بالمائة لعلامة 14؟",
       "options": [
         { "id": "a", "text": "20 %" },
-        { "id": "b", "text": "14 %" },
-        { "id": "c", "text": "40 %" },
+        { "id": "b", "text": "14 %", "misconceptionTag": "math.stat.effectif-frequence-confondus" },
+        { "id": "c", "text": "40 %", "misconceptionTag": "math.stat.effectif-frequence-confondus" },
         { "id": "d", "text": "25 %" }
       ],
       "correctOption": "d",
@@ -61,7 +61,7 @@
     {
       "prompt": "في تمثيل بيانيّ على شكل قطاع دائري، فئة تمثّل 40 % من المجتمع. ما هي زاوية القطاع المقابل لها؟",
       "options": [
-        { "id": "a", "text": "40°" },
+        { "id": "a", "text": "40°", "misconceptionTag": "math.stat.pourcentage-et-angle-de-secteur-confondus" },
         { "id": "b", "text": "144°" },
         { "id": "c", "text": "120°" },
         { "id": "d", "text": "80°" }
@@ -78,7 +78,7 @@
     {
       "prompt": "جدول تكرارات لعلامات: 10 (تكرار 3)، 12 (تكرار 5)، 14 (تكرار 2). ما هو التكرار المجمّع عند علامة 12؟",
       "options": [
-        { "id": "a", "text": "5" },
+        { "id": "a", "text": "5", "misconceptionTag": "math.stat.effectif-cumule-non-cumule" },
         { "id": "b", "text": "8" },
         { "id": "c", "text": "10" },
         { "id": "d", "text": "3" }

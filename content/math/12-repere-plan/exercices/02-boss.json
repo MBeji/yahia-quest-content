@@ -22,8 +22,8 @@
     {
       "prompt": "A(0 ; 3) وB(4 ; 0). ما المسافة AB؟",
       "options": [
-        { "id": "a", "text": "7" },
-        { "id": "b", "text": "√7" },
+        { "id": "a", "text": "7", "misconceptionTag": "math.geo.pythagore-sans-carres" },
+        { "id": "b", "text": "√7", "misconceptionTag": "math.geo.pythagore-sans-carres" },
         { "id": "c", "text": "√5" },
         { "id": "d", "text": "5" }
       ],
@@ -48,10 +48,18 @@
     {
       "prompt": "A(2 ; −1) وB(6 ; −1) وC(6 ; 4). هل المثلّث ABC قائم الزاوية؟ وأين القائمة؟",
       "options": [
-        { "id": "a", "text": "نعم، القائمة في A لأنّ AB² + AC² = BC²" },
+        {
+          "id": "a",
+          "text": "نعم، القائمة في A لأنّ AB² + AC² = BC²",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
         { "id": "b", "text": "لا، ليس قائمًا" },
         { "id": "c", "text": "نعم، القائمة في B لأنّ AB² + BC² = AC²" },
-        { "id": "d", "text": "نعم، القائمة في C لأنّ AC² + BC² = AB²" }
+        {
+          "id": "d",
+          "text": "نعم، القائمة في C لأنّ AC² + BC² = AB²",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        }
       ],
       "correctOption": "c",
       "explanation": "AB = √((6 − 2)² + 0²) = 4، وBC = √(0² + (4 + 1)²) = 5، وAC = √((6 − 2)² + (4 + 1)²) = √(16 + 25) = √41. نتحقّق: AB² + BC² = 16 + 25 = 41 = AC² ✓ (عكس فيثاغورس). إذن القائمة في B. لاحظ أيضًا: [AB] أفقي و[BC] عمودي فهما متعامدان عند B. الخطأ الشائع: نسبة القائمة إلى الرأس المقابل للوتر بدل الرأس الذي تلتقي عنده الساقان.",
@@ -75,7 +83,11 @@
       "prompt": "ما صورة النقطة C(4 ; 2) بالانسحاب الذي ينقل A(−3 ; 1) إلى B(1 ; 4)؟",
       "options": [
         { "id": "a", "text": "C'(8 ; 5)" },
-        { "id": "b", "text": "C'(7 ; 6)" },
+        {
+          "id": "b",
+          "text": "C'(7 ; 6)",
+          "misconceptionTag": "math.vec.coordonnees-point-inversees"
+        },
         { "id": "c", "text": "C'(4 ; 3)" },
         { "id": "d", "text": "C'(0 ; −1)" }
       ],

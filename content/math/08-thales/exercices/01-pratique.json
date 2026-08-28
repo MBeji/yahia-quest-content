@@ -12,7 +12,7 @@
         { "id": "a", "text": "6 cm" },
         { "id": "b", "text": "8 cm" },
         { "id": "c", "text": "12 cm" },
-        { "id": "d", "text": "2 cm" }
+        { "id": "d", "text": "2 cm", "misconceptionTag": "math.geo.thales-rapport-inverse" }
       ],
       "correctOption": "b",
       "explanation": "بتطبيق نظرية طاليس: AM/AB = AN/AC. إذن 3/6 = 4/AC، ومنه AC = 4 × 6 ÷ 3 = 8 cm.",
@@ -22,10 +22,10 @@
     {
       "prompt": "في مثلّث ABC، (MN) ∥ (BC)، وM على [AB] بحيث AM = 5 cm وMB = 3 cm. ما هي نسبة AM/AB؟",
       "options": [
-        { "id": "a", "text": "5/3" },
+        { "id": "a", "text": "5/3", "misconceptionTag": "math.geo.thales-formes-melangees" },
         { "id": "b", "text": "3/8" },
         { "id": "c", "text": "5/8" },
-        { "id": "d", "text": "3/5" }
+        { "id": "d", "text": "3/5", "misconceptionTag": "math.geo.thales-rapport-inverse" }
       ],
       "correctOption": "c",
       "explanation": "AB = AM + MB = 5 + 3 = 8 cm. إذن AM/AB = 5/8.",
@@ -35,8 +35,8 @@
     {
       "prompt": "في وضعية طاليس (في مثلّث ABC مع (MN) ∥ (BC))، أيّ النسب التالية تساوي AM/AB؟",
       "options": [
-        { "id": "a", "text": "AB/AM" },
-        { "id": "b", "text": "BC/MN" },
+        { "id": "a", "text": "AB/AM", "misconceptionTag": "math.geo.thales-rapport-inverse" },
+        { "id": "b", "text": "BC/MN", "misconceptionTag": "math.geo.thales-rapport-inverse" },
         { "id": "c", "text": "MN/BC" },
         { "id": "d", "text": "AN/AB" }
       ],
@@ -61,10 +61,14 @@
     {
       "prompt": "في مثلّث ABC، M على [AB] وN على [AC]. إذا تحقّق AM/AB = AN/AC، ما الذي يمكن الاستنتاج بمقتضى النظرية العكسية لطاليس؟",
       "options": [
-        { "id": "a", "text": "(MN) ∥ (AB)" },
-        { "id": "b", "text": "(MN) ⊥ (BC)" },
+        { "id": "a", "text": "(MN) ∥ (AB)", "misconceptionTag": "math.geo.thales-reciproque-role" },
+        { "id": "b", "text": "(MN) ⊥ (BC)", "misconceptionTag": "math.geo.thales-reciproque-role" },
         { "id": "c", "text": "(MN) ∥ (BC)" },
-        { "id": "d", "text": "المثلّثَ AMN متساوي الأضلاع" }
+        {
+          "id": "d",
+          "text": "المثلّثَ AMN متساوي الأضلاع",
+          "misconceptionTag": "math.geo.thales-reciproque-role"
+        }
       ],
       "correctOption": "c",
       "explanation": "بمقتضى النظرية العكسية لطاليس: إذا كانت AM/AB = AN/AC وM وN على نفس الجانب من A، فإنّ (MN) ∥ (BC).",
@@ -76,8 +80,16 @@
       "options": [
         { "id": "a", "text": "نعم، لأنّ DM/DE = DN/DF = 2/3" },
         { "id": "b", "text": "لا، لأنّ 6/9 ≠ 4/6 فالنسبتان مختلفتان" },
-        { "id": "c", "text": "نعم، لأنّ DE − DM = DF − DN" },
-        { "id": "d", "text": "لا، لأنّ DM ≠ DN فالشرط غير متحقّق" }
+        {
+          "id": "c",
+          "text": "نعم، لأنّ DE − DM = DF − DN",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "d",
+          "text": "لا، لأنّ DM ≠ DN فالشرط غير متحقّق",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        }
       ],
       "correctOption": "a",
       "explanation": "DM/DE = 6/9 = 2/3 وDN/DF = 4/6 = 2/3. النسبتان متساويتان، فبالنظرية العكسية لطاليس (MN) ∥ (EF). الخطأ الشائع: الحكم على 6/9 و4/6 بأنّهما مختلفان دون اختزال — كلاهما يساوي 2/3. ولاحظ أنّ الفرقين DE − DM = 3 وDF − DN = 2 مختلفان: النظرية تقارن النسب لا الفروق.",

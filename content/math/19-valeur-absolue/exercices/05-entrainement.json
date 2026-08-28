@@ -1,0 +1,94 @@
+{
+  "title": "📝 تدريب ⭐⭐⭐: القيمة المطلقة (مراجعة شاملة)",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "أوجد كلّ الأعداد الحقيقية x بحيث |x| = 0 .",
+      "options": [
+        { "id": "a", "text": "كلّ عدد حقيقي هو حلّ" },
+        { "id": "b", "text": "x = 0 وهو الحلّ الوحيد" },
+        { "id": "c", "text": "x = 0 أو x = 1 كلاهما حلّ" },
+        { "id": "d", "text": "لا يوجد أيّ حلّ في ℝ", "misconceptionTag": "math.num.valeur-absolue-negative" }
+      ],
+      "correctOption": "b",
+      "explanation": "المساواة |x| = 0 تعني أنّ x = 0 : النقطة الوحيدة التي بعدها عن المبدأ معدوم هي المبدأ نفسه. وهي الحالة الوحيدة التي لا تعطي فيها المساواة حلّين.",
+      "difficulty": 1,
+      "competencies": ["math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "ما قيمة |1 + √7| ؟",
+      "options": [
+        { "id": "a", "text": "1 + √7" },
+        { "id": "b", "text": "√7 − 1", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
+        { "id": "c", "text": "1 − √7", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
+        { "id": "d", "text": "−1 − √7", "misconceptionTag": "math.num.valeur-absolue-negative" }
+      ],
+      "correctOption": "a",
+      "explanation": "العددان 1 و √7 موجبان فمجموعهما موجب، والقيمة المطلقة لعدد موجب هي العدد نفسه: |1 + √7| = 1 + √7 . لا داعي لأيّ تغيير في الإشارة هنا.",
+      "difficulty": 2,
+      "competencies": ["math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "ما قيمة |−72|/|−8| ؟",
+      "options": [
+        { "id": "a", "text": "−9", "misconceptionTag": "math.num.valeur-absolue-negative" },
+        { "id": "b", "text": "1/9", "misconceptionTag": "math.num.oppose-inverse-confondus" },
+        { "id": "c", "text": "9" },
+        { "id": "d", "text": "64" }
+      ],
+      "correctOption": "c",
+      "explanation": "نحسب كلّ قيمة مطلقة: |−72| = 72 و |−8| = 8 ، ومنه الخارج يساوي 72/8 = 9 . ونتحقّق بالخاصيّة: −72/(−8) = 9 ثمّ |9| = 9 .",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.num.relatifs-operations"
+      ]
+    },
+    {
+      "prompt": "عددان حقيقيان a و b مخالف للصفر بحيث |a| = 4 و |b| = 5 . ما قيمة |a/b| ؟",
+      "options": [
+        { "id": "a", "text": "20" },
+        { "id": "b", "text": "5/4", "misconceptionTag": "math.num.oppose-inverse-confondus" },
+        { "id": "c", "text": "−4/5", "misconceptionTag": "math.num.valeur-absolue-negative" },
+        { "id": "d", "text": "4/5" }
+      ],
+      "correctOption": "d",
+      "explanation": "نطبّق خاصيّة الخارج: |a/b| = |a|/|b| = 4/5 . لاحظ أنّ الخارج a/b قد يكون 4/5 أو −4/5 حسب إشارتَي العددين، لكنّ قيمته المطلقة تساوي 4/5 دائمًا لأنّها لا تكون سالبة.",
+      "difficulty": 2,
+      "competencies": ["math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "ما قيمة |3 − π| ؟",
+      "options": [
+        { "id": "a", "text": "3 − π", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
+        { "id": "b", "text": "π + 3", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
+        { "id": "c", "text": "π − 3" },
+        { "id": "d", "text": "−π − 3", "misconceptionTag": "math.num.valeur-absolue-negative" }
+      ],
+      "correctOption": "c",
+      "explanation": "بما أنّ π ≈ 3,14 فإنّ π أكبر من 3 ، ومنه العبارة 3 − π سالبة. والقيمة المطلقة لعدد سالب هي مقابله: |3 − π| = π − 3 .",
+      "difficulty": 3,
+      "competencies": ["math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "على مستقيم مدرّج (OI) ، فاصلة A هي −1 وفاصلة B هي √2 . ما هو البعد AB ؟",
+      "options": [
+        { "id": "a", "text": "√2 + 1" },
+        { "id": "b", "text": "√2 − 1", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
+        { "id": "c", "text": "1 − √2", "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste" },
+        { "id": "d", "text": "−√2 − 1", "misconceptionTag": "math.num.valeur-absolue-negative" }
+      ],
+      "correctOption": "a",
+      "explanation": "البعد هو القيمة المطلقة للفرق بين الفاصلتين: AB = |√2 − (−1)| = |√2 + 1| = √2 + 1 لأنّ هذا العدد موجب. الخطأ الشائع هو نسيان أنّ طرح عدد سالب يكافئ إضافة مقابله.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.num.relatifs-operations"
+      ]
+    }
+  ]
+}

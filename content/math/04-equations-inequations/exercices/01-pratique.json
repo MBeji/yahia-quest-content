@@ -7,12 +7,12 @@
   "displayOrder": 1,
   "questions": [
     {
-      "prompt": "ما حلّ المعادلة: 2x + 5 = 13 ؟",
+      "prompt": "ما حلّ المعادلة التالية؟\n2x + 5 = 13",
       "options": [
         { "id": "a", "text": "x = 3" },
         { "id": "b", "text": "x = 4" },
-        { "id": "c", "text": "x = 8" },
-        { "id": "d", "text": "x = 9" }
+        { "id": "c", "text": "x = 8", "misconceptionTag": "math.alg.coefficient-non-divise" },
+        { "id": "d", "text": "x = 9", "misconceptionTag": "math.alg.transposition-sans-changer-signe" }
       ],
       "correctOption": "b",
       "explanation": "2x + 5 = 13 → 2x = 13 − 5 = 8 → x = 4. تحقّق: 2(4) + 5 = 13 ✓",
@@ -20,12 +20,12 @@
       "competencies": ["math.alg.equations-premier-degre"]
     },
     {
-      "prompt": "ما حلّ المعادلة: 5x − 3 = 3x + 7 ؟",
+      "prompt": "ما حلّ المعادلة التالية؟\n5x − 3 = 3x + 7",
       "options": [
         { "id": "a", "text": "x = 1" },
-        { "id": "b", "text": "x = 2" },
+        { "id": "b", "text": "x = 2", "misconceptionTag": "math.alg.transposition-sans-changer-signe" },
         { "id": "c", "text": "x = 5" },
-        { "id": "d", "text": "x = 10" }
+        { "id": "d", "text": "x = 10", "misconceptionTag": "math.alg.coefficient-non-divise" }
       ],
       "correctOption": "c",
       "explanation": "5x − 3 = 3x + 7 → 5x − 3x = 7 + 3 → 2x = 10 → x = 5. تحقّق: 5(5)−3 = 22 و 3(5)+7 = 22 ✓",
@@ -33,12 +33,12 @@
       "competencies": ["math.alg.equations-premier-degre"]
     },
     {
-      "prompt": "بتطبيق مبدأ الجداء المعدوم، ما حلول المعادلة (x − 4)(x + 2) = 0 ؟",
+      "prompt": "بتطبيق مبدأ الجداء المعدوم، ما حلول المعادلة التالية؟\n(x − 4)(x + 2) = 0",
       "options": [
         { "id": "a", "text": "x = 4 أو x = −2" },
-        { "id": "b", "text": "x = 4 أو x = 2" },
-        { "id": "c", "text": "x = −4 أو x = 2" },
-        { "id": "d", "text": "x = −4 أو x = −2" }
+        { "id": "b", "text": "x = 4 أو x = 2", "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose" },
+        { "id": "c", "text": "x = −4 أو x = 2", "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose" },
+        { "id": "d", "text": "x = −4 أو x = −2", "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose" }
       ],
       "correctOption": "a",
       "explanation": "a × b = 0 ⟺ a = 0 أو b = 0. إمّا x − 4 = 0 فـ x = 4، وإمّا x + 2 = 0 فـ x = −2.",
@@ -46,12 +46,12 @@
       "competencies": ["math.alg.equations-produit"]
     },
     {
-      "prompt": "ما حلّ المتراجحة: 3x + 6 > 0 ؟",
+      "prompt": "ما حلّ المتراجحة التالية؟\n3x + 6 > 0",
       "options": [
         { "id": "a", "text": "x < −2" },
         { "id": "b", "text": "x < 2" },
         { "id": "c", "text": "x > −2" },
-        { "id": "d", "text": "x > 2" }
+        { "id": "d", "text": "x > 2", "misconceptionTag": "math.alg.transposition-sans-changer-signe" }
       ],
       "correctOption": "c",
       "explanation": "3x + 6 > 0 → 3x > −6 → نقسم على 3 (موجب، لا قلب) → x > −2. الحلّ: x ∈ ]−2 ; +∞[.",
@@ -61,9 +61,9 @@
     {
       "prompt": "ما حلّ المتراجحة: −4x ≤ 12 ؟",
       "options": [
-        { "id": "a", "text": "x ≤ −3" },
+        { "id": "a", "text": "x ≤ −3", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
         { "id": "b", "text": "x ≥ −3" },
-        { "id": "c", "text": "x ≤ 3" },
+        { "id": "c", "text": "x ≤ 3", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
         { "id": "d", "text": "x ≥ 3" }
       ],
       "correctOption": "b",
@@ -72,10 +72,10 @@
       "competencies": ["math.alg.inequations"]
     },
     {
-      "prompt": "ما حلّ المعادلة: 3(x − 2) = 2x + 1 ؟",
+      "prompt": "ما حلّ المعادلة التالية؟\n3(x − 2) = 2x + 1",
       "options": [
         { "id": "a", "text": "x = 1" },
-        { "id": "b", "text": "x = 3" },
+        { "id": "b", "text": "x = 3", "misconceptionTag": "math.alg.distribution-partielle" },
         { "id": "c", "text": "x = 5" },
         { "id": "d", "text": "x = 7" }
       ],

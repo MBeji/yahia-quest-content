@@ -1,0 +1,116 @@
+{
+  "title": "⚔️ زعيم الفصل ⭐⭐⭐: إثبات طبيعة الرباعيات",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "ABCD متوازي أضلاع، والنقطة R منتصف [AB] والنقطة S منتصف [CD]. القطعتان [DR] و[BS] تقطعان القطر [AC] في النقطتين E وF على التوالي. إذا كان AC = 12 فما طول [EF]؟\n<svg viewBox=\"0 0 340 215\"><path d=\"M60 180 L220 180 L280 70 L120 70 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M60 180 L220 180 L280 70 L120 70 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M60 180 L280 70\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\"/><path d=\"M120 70 L140 180 M220 180 L200 70\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"180\" r=\"4\"/><circle cx=\"220\" cy=\"180\" r=\"4\"/><circle cx=\"280\" cy=\"70\" r=\"4\"/><circle cx=\"120\" cy=\"70\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"140\" cy=\"180\" r=\"4.5\"/><circle cx=\"200\" cy=\"70\" r=\"4.5\"/><circle cx=\"133.3\" cy=\"143.3\" r=\"4.5\"/><circle cx=\"206.7\" cy=\"106.7\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"50\" y=\"197\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"230\" y=\"197\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"292\" y=\"62\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"110\" y=\"62\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"142\" y=\"202\" text-anchor=\"middle\" fill=\"#0f6e56\">R</text><text x=\"198\" y=\"58\" text-anchor=\"middle\" fill=\"#0f6e56\">S</text><text x=\"120\" y=\"138\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text><text x=\"221\" y=\"102\" text-anchor=\"middle\" fill=\"#0f6e56\">F</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "3" },
+        { "id": "b", "text": "4" },
+        { "id": "c", "text": "6" },
+        { "id": "d", "text": "12", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" }
+      ],
+      "correctOption": "b",
+      "explanation": "أوّلا (DR) و(BS) متوازيان: فـ DS = CD/2 و RB = AB/2 و AB = CD، إذن DS = RB، ومع (DS) ∥ (RB) يكون الرباعي DSBR متوازي أضلاع فضلعاه [DR] و[SB] متوازيان. ثمّ في المثلث ABF: النقطة R منتصف [AB] و(RE) ∥ (BF)، فحسب عكس خاصيّة المنتصفات تكون E منتصف [AF] أي AE = EF. وفي المثلث CDE: النقطة S منتصف [CD] و(SF) ∥ (DE)، فتكون F منتصف [EC] أي EF = FC. إذن القطر [AC] مقسّم إلى ثلاث قطع متقايسة ومنه EF = 12/3 = 4. (من يقسم على 4 يجد 3، ومن ينصّف القطر يجد 6، ومن يعطي طول القطر كلّه يجد 12.)",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "أيّ العبارات التالية صحيحة؟",
+      "options": [
+        { "id": "a", "text": "قطرا متوازي الأضلاع يتقاطعان في منتصفيهما" },
+        {
+          "id": "b",
+          "text": "قطرا المستطيل متعامدان",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        {
+          "id": "c",
+          "text": "قطرا المعيّن متقايسان",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        {
+          "id": "d",
+          "text": "قطرا شبه المنحرف يتقاطعان في منتصفيهما",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "تقاطع القطرين في منتصفيهما خاصيّة أساسيّة لكلّ متوازي أضلاع. أمّا قطرا المستطيل فمتقايسان ولا يتعامدان، وقطرا المعيّن متعامدان ولا يتقايسان، ولا يجتمع الوصفان إلاّ في المربّع. وشبه المنحرف العامّ ليس له أيّ خاصيّة على قطريه.",
+      "difficulty": 2,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "MNP مثلث، والنقطة K منتصف [MP]، والنقطة R نظيرة N بالنسبة إلى K. النقطة S منتصف [MN] والنقطة T منتصف [PR]. لماذا يكون الرباعي MSPT متوازي أضلاع؟\n<svg viewBox=\"0 0 280 235\"><path d=\"M85 205 L241 153 L189 49 L33 101 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M85 205 L189 49 M241 153 L33 101\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M85 205 L163 179 L189 49 L111 75 Z\" fill=\"#0f6e56\" opacity=\"0.15\"/><path d=\"M85 205 L163 179 L189 49 L111 75 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"85\" cy=\"205\" r=\"4\"/><circle cx=\"241\" cy=\"153\" r=\"4\"/><circle cx=\"189\" cy=\"49\" r=\"4\"/><circle cx=\"33\" cy=\"101\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"137\" cy=\"127\" r=\"4.5\"/><circle cx=\"163\" cy=\"179\" r=\"4.5\"/><circle cx=\"111\" cy=\"75\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"73\" y=\"222\" text-anchor=\"middle\" fill=\"#0f172a\">M</text><text x=\"255\" y=\"162\" text-anchor=\"middle\" fill=\"#0f172a\">N</text><text x=\"199\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">P</text><text x=\"20\" y=\"94\" text-anchor=\"middle\" fill=\"#0f172a\">R</text><text x=\"126\" y=\"120\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text><text x=\"174\" y=\"194\" text-anchor=\"middle\" fill=\"#0f6e56\">S</text><text x=\"99\" y=\"68\" text-anchor=\"middle\" fill=\"#0f6e56\">T</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "لأنّ MS = SP",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        { "id": "b", "text": "لأنّ القطرين [MP] و[ST] متعامدان" },
+        { "id": "c", "text": "لأنّ النقاط M وS وP على نفس الاستقامة" },
+        { "id": "d", "text": "لأنّ الضلعين [MS] و[PT] متوازيان ومتقايسان" }
+      ],
+      "correctOption": "d",
+      "explanation": "النقطة K منتصف [MP]، وهي أيضا منتصف [NR] لأنّ R نظيرة N بالنسبة إليها: فللرباعي MNPR قطران لهما نفس المنتصف، إذن هو متوازي أضلاع ومنه (MN) ∥ (PR) و MN = PR. والنقطتان S وT منتصفا [MN] و[PR]، إذن MS = MN/2 و PT = PR/2 أي MS = PT، والقطعتان محمولتان على مستقيمين متوازيين فـ (MS) ∥ (PT). فللرباعي MSPT ضلعان متقابلان متوازيان ومتقايسان: إنّه متوازي أضلاع (الطريقة الثالثة). أمّا MS = SP فلا شيء في المعطيات يفرضه، والقطران [MP] و[ST] ليسا متعامدين بالضرورة، ولو كانت M وS وP على نفس الاستقامة لما وُجد رباعي أصلا.",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "ABCD متوازي أضلاع حيث BC = 20 و CD = 15. المسقط العمودي لـ A على (BC) هو H حيث AH = 12، والمسقط العمودي لـ A على (CD) هو L. ما طول [AL]؟\n<svg viewBox=\"0 0 370 245\"><path d=\"M151 92 L70 200 L250 200 L331 92 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M151 92 L70 200 L250 200 L331 92 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M151 92 L151 200\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><path d=\"M151 92 L266.2 178.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><path d=\"M151 188 L163 188 L163 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M256.6 171.2 L263.8 161.6 L273.4 168.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g fill=\"#0f172a\"><circle cx=\"151\" cy=\"92\" r=\"4\"/><circle cx=\"70\" cy=\"200\" r=\"4\"/><circle cx=\"250\" cy=\"200\" r=\"4\"/><circle cx=\"331\" cy=\"92\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"151\" cy=\"200\" r=\"4.5\"/><circle cx=\"266.2\" cy=\"178.4\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"139\" y=\"82\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"56\" y=\"216\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"248\" y=\"220\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"345\" y=\"82\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"141\" y=\"222\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text><text x=\"282\" y=\"182\" text-anchor=\"middle\" fill=\"#0f6e56\">L</text><text x=\"128\" y=\"152\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">12</text><text x=\"207\" y=\"220\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">20</text><text x=\"302\" y=\"140\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">15</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "5" },
+        { "id": "b", "text": "12" },
+        { "id": "c", "text": "16" },
+        { "id": "d", "text": "25" }
+      ],
+      "correctOption": "c",
+      "explanation": "مساحة متوازي الأضلاع واحدة مهما اخترنا القاعدة: AH × BC = AL × CD. إذن 12 × 20 = AL × 15، أي 240 = 15 AL ومنه AL = 16. (من يظنّ الارتفاعين متقايسين يجد 12، ومن يطرح القاعدتين يجد 20 − 15 = 5، ومن يقسم جذاء القاعدتين على الارتفاع يجد 300 ÷ 12 = 25.)",
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
+    },
+    {
+      "prompt": "A وB وC وD أربع نقاط، والقطعتان [AC] و[BD] لهما نفس المنتصف. بأيّ ترتيب نكتب اسم متوازي الأضلاع المتحصّل عليه؟\n<svg viewBox=\"0 0 320 220\"><path d=\"M70 70 L250 170 M240 60 L80 180\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\"/><g stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" fill=\"none\"><path d=\"M118 90 L112 100\"/><path d=\"M208 140 L202 150\"/><path d=\"M204 95 L196 85\"/><path d=\"M200 98 L192 88\"/><path d=\"M124 155 L116 145\"/><path d=\"M120 158 L112 148\"/></g><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"70\" r=\"4\"/><circle cx=\"240\" cy=\"60\" r=\"4\"/><circle cx=\"250\" cy=\"170\" r=\"4\"/><circle cx=\"80\" cy=\"180\" r=\"4\"/></g><circle cx=\"160\" cy=\"120\" r=\"4.5\" fill=\"#0f6e56\"/><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"58\" y=\"64\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"252\" y=\"52\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"262\" y=\"176\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"68\" y=\"194\" text-anchor=\"middle\" fill=\"#0f172a\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "ABDC",
+          "misconceptionTag": "math.vec.parallelogramme-sommets-mal-ordonnes"
+        },
+        {
+          "id": "b",
+          "text": "ACBD",
+          "misconceptionTag": "math.vec.parallelogramme-sommets-mal-ordonnes"
+        },
+        {
+          "id": "c",
+          "text": "أيّ ترتيب للحروف الأربعة يصلح",
+          "misconceptionTag": "math.vec.parallelogramme-sommets-mal-ordonnes"
+        },
+        { "id": "d", "text": "ABCD" }
+      ],
+      "correctOption": "d",
+      "explanation": "في اسم أيّ رباعي، القطران هما الحرفان المتقابلان: ففي الرباعي WXYZ القطران هما [WY] و[XZ]. وبما أنّ القطعتين اللتين لهما نفس المنتصف هما [AC] و[BD]، وجب أن يكون A مقابلا لـ C وB مقابلا لـ D في الاسم، أي الترتيب ABCD. أمّا الترتيب ABDC فيجعل القطرين [AD] و[BC]، والترتيب ACBD يجعلهما [AB] و[CD]، وكلاهما يعطي رباعيا متقاطع الأضلاع لا معنى له: فالترتيب ليس تفصيلا شكليّا.",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "ξ دائرة مركزها O وقطرها [AB] حيث AB = 8، والموسط العمودي للقطعة [AB] يقطع الدائرة ξ في النقطة C. ما طول [CB]؟\n<svg viewBox=\"0 0 320 232\"><circle cx=\"160\" cy=\"120\" r=\"80\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M160 25 L160 205\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><path d=\"M80 120 L240 120\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M160 40 L80 120 M160 40 L240 120\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\"/><path d=\"M160 108 L172 108 L172 120\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" fill=\"none\"><path d=\"M120 114 L120 126\"/><path d=\"M200 114 L200 126\"/></g><path d=\"M80 215 L240 215 M80 211 L80 219 M240 211 L240 219\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><g fill=\"#0f172a\"><circle cx=\"80\" cy=\"120\" r=\"4\"/><circle cx=\"240\" cy=\"120\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"160\" cy=\"40\" r=\"4.5\"/><circle cx=\"160\" cy=\"120\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"66\" y=\"138\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"254\" y=\"138\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"160\" y=\"30\" text-anchor=\"middle\" fill=\"#0f6e56\">C</text><text x=\"146\" y=\"138\" text-anchor=\"middle\" fill=\"#0f6e56\">O</text><text x=\"205\" y=\"208\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">8</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "4", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
+        { "id": "b", "text": "4√2" },
+        { "id": "c", "text": "8", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
+        { "id": "d", "text": "8√2" }
+      ],
+      "correctOption": "b",
+      "explanation": "مركز الدائرة O هو منتصف قطرها [AB]، والموسط العمودي لـ [AB] يمرّ من منتصفها ويعامدها: فهو المستقيم (OC)، ومنه المثلث OCB قائم الزاوية في O. وطول OC هو شعاع الدائرة أي 8/2 = 4، وكذلك OB = 4. بمبرهنة فيثاغورس: CB² = 4² + 4² = 16 + 16 = 32، إذن CB = √32 = 4√2. (من يكتفي بالشعاع يجد 4، ومن يعطي طول القطر يجد 8، ومن يستعمل القطر 8 بدل الشعاع في الحساب يجد √128 = 8√2.)",
+      "difficulty": 3,
+      "competencies": ["math.geo.triangles-base"]
+    }
+  ]
+}

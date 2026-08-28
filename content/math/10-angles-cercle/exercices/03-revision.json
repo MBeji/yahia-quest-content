@@ -9,9 +9,13 @@
     {
       "prompt": "في دائرة مركزها O، الزاوية المركزية AOB = 120°. النقطة C على الدائرة في الجهة المقابلة للقوس الصغير AB. ما قيمة الزاوية المحيطية ACB؟",
       "options": [
-        { "id": "a", "text": "120°" },
+        { "id": "a", "text": "120°", "misconceptionTag": "math.geo.angle-inscrit-egal-au-centre" },
         { "id": "b", "text": "60°" },
-        { "id": "c", "text": "240°" },
+        {
+          "id": "c",
+          "text": "240°",
+          "misconceptionTag": "math.geo.angle-inscrit-double-du-centre"
+        },
         { "id": "d", "text": "30°" }
       ],
       "correctOption": "b",
@@ -23,8 +27,12 @@
       "prompt": "في دائرة مركزها O، الزاوية المحيطية MKN = 41° تحصر القوس MN. ما قيمة الزاوية المركزية MON؟",
       "options": [
         { "id": "a", "text": "82°" },
-        { "id": "b", "text": "41°" },
-        { "id": "c", "text": "20,5°" },
+        { "id": "b", "text": "41°", "misconceptionTag": "math.geo.angle-inscrit-egal-au-centre" },
+        {
+          "id": "c",
+          "text": "20,5°",
+          "misconceptionTag": "math.geo.angle-inscrit-double-du-centre"
+        },
         { "id": "d", "text": "139°" }
       ],
       "correctOption": "a",
@@ -38,7 +46,7 @@
         { "id": "a", "text": "22,5°" },
         { "id": "b", "text": "30°" },
         { "id": "c", "text": "45°" },
-        { "id": "d", "text": "90°" }
+        { "id": "d", "text": "90°", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" }
       ],
       "correctOption": "c",
       "explanation": "بما أنّ [AB] قطر، فالزاوية ACB = 90° (زاوية محيطية محصورة في نصف دائرة). والمثلث ACB متساوي الساقين (CA = CB)، فزاويتا القاعدة متقايستان: CAB = CBA = (180° − 90°) ÷ 2 = 45°. الخطأ الشائع: اختيار 90° وهي زاوية الرأس C لا زاوية القاعدة، أو قسمة 45° مرّة أخرى فاختيار 22,5°.",
@@ -49,7 +57,7 @@
       "prompt": "في دائرة مركزها O، الزاوية المركزية AOB = 140°. ما قيس القوس الكبير AB؟",
       "options": [
         { "id": "a", "text": "70°" },
-        { "id": "b", "text": "140°" },
+        { "id": "b", "text": "140°", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "c", "text": "180°" },
         { "id": "d", "text": "220°" }
       ],
@@ -61,10 +69,14 @@
     {
       "prompt": "في دائرة مركزها O، الزاوية المركزية AOB = 150°. النقطة C على القوس الكبير (الجهة المقابلة). ما قيمة الزاوية ACB؟",
       "options": [
-        { "id": "a", "text": "300°" },
+        {
+          "id": "a",
+          "text": "300°",
+          "misconceptionTag": "math.geo.angle-inscrit-double-du-centre"
+        },
         { "id": "b", "text": "75°" },
         { "id": "c", "text": "30°" },
-        { "id": "d", "text": "150°" }
+        { "id": "d", "text": "150°", "misconceptionTag": "math.geo.angle-inscrit-egal-au-centre" }
       ],
       "correctOption": "b",
       "explanation": "الزاوية المحيطية = نصف الزاوية المركزية المقابلة لنفس القوس. إذن الزاوية ACB = 150° ÷ 2 = 75°.",

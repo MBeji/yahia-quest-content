@@ -17,6 +17,15 @@
     },
     "competency": "math.frac.add-sous"
   },
+  "math.frac.comparaison-par-denominateur": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu compares deux fractions par leurs dénominateurs : un plus grand dénominateur ne fait pas un plus grand nombre, au contraire à numérateur égal",
+      "en": "You compare two fractions by their denominators: a larger denominator does not make a larger number — the opposite, for equal numerators",
+      "ar": "تقارن كسرَين بمقامَيهما: المقام الأكبر لا يعطي عددًا أكبر، بل العكس إذا تساوى البسطان"
+    },
+    "competency": "math.frac.comparaison"
+  },
   "math.dec.compare-by-length": {
     "subject": "math",
     "labels": {
@@ -32,6 +41,24 @@
       "fr": "Tu retranches toujours le plus petit du plus grand en ignorant le signe",
       "en": "You always subtract the smaller from the larger, ignoring the sign",
       "ar": "تطرح دائمًا الأصغر من الأكبر متجاهلًا الإشارة"
+    },
+    "competency": "math.num.relatifs-operations"
+  },
+  "math.int.signe-ignore-dans-somme": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu ignores le signe d'un nombre relatif dans une somme : ajouter 8 à −3 ne revient pas à l'ajouter à 3",
+      "en": "You ignore the sign of a signed number in a sum: adding 8 to −3 is not adding it to 3",
+      "ar": "تهمل إشارة العدد النسبي في الجمع: إضافة 8 إلى −3 ليست إضافتها إلى 3"
+    },
+    "competency": "math.num.relatifs-operations"
+  },
+  "math.int.produit-signes-negatifs": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu te trompes sur le signe d'un produit : le produit de deux nombres négatifs est positif",
+      "en": "You get the sign of a product wrong: the product of two negative numbers is positive",
+      "ar": "تخطئ في إشارة الجداء: جداء عددين سالبين موجب"
     },
     "competency": "math.num.relatifs-operations"
   },
@@ -53,6 +80,60 @@
     },
     "competency": "math.num.ensembles-nombres"
   },
+  "math.num.appartenance-ensemble-confondue": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu te trompes sur ce que contient un ensemble : ℤ contient les entiers négatifs, 𝔻 les nombres à écriture décimale finie, ℚ les quotients d'entiers",
+      "en": "You mistake what a set contains: ℤ holds negative integers, 𝔻 numbers with a terminating decimal form, ℚ quotients of integers",
+      "ar": "تخطئ في ما تحتويه المجموعة: ℤ تضمّ الأعداد الصحيحة السالبة، و𝔻 الأعداد ذات الكتابة العشرية المتناهية، وℚ خارج قسمة عددين صحيحين"
+    },
+    "competency": "math.num.ensembles-nombres"
+  },
+  "math.num.divisibilite-un-seul-critere": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu n'appliques qu'un des deux critères : être divisible par 6 exige de l'être par 2 ET par 3, pas par l'un des deux",
+      "en": "You check only one of the two rules: being divisible by 6 requires divisibility by 2 AND by 3, not by either one",
+      "ar": "تطبّق أحد المعيارَين فقط: القسمة على 6 تقتضي القسمة على 2 وعلى 3 معًا، لا على أحدهما"
+    },
+    "competency": "math.num.criteres-divisibilite"
+  },
+  "math.num.diviseurs-un-et-lui-meme-oublies": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu oublies 1 et le nombre lui-même dans la liste de ses diviseurs : ils en font toujours partie",
+      "en": "You leave 1 and the number itself out of its list of divisors: both always count",
+      "ar": "تنسى العدد 1 والعدد نفسه في قائمة قواسمه: كلاهما من القواسم دائمًا"
+    },
+    "competency": "math.num.multiples-diviseurs"
+  },
+  "math.num.divisibilite-composee-facteurs-non-premiers": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu multiplies deux diviseurs sans vérifier que rien ne leur est commun : divisible par 2 et par 6 ne donne PAS divisible par 12",
+      "en": "You multiply two divisors without checking they share no factor: divisible by 2 and by 6 does NOT give divisible by 12",
+      "ar": "تضرب قاسمَين دون التأكّد من عدم اشتراكهما في عامل: القسمة على 2 وعلى 6 لا تعطي القسمة على 12"
+    },
+    "competency": "math.num.criteres-divisibilite"
+  },
+  "math.num.critere-divisibilite-mal-choisi": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu appliques le critère d'un autre diviseur : celui de 9 ne prouve rien sur 12, et le dernier chiffre ne prouve rien sur 3",
+      "en": "You use another divisor's rule: the rule for 9 proves nothing about 12, and the last digit proves nothing about 3",
+      "ar": "تطبّق معيار قاسم آخر: معيار 9 لا يُثبت شيئًا عن 12، ورقم الآحاد لا يُثبت شيئًا عن 3"
+    },
+    "competency": "math.num.criteres-divisibilite"
+  },
+  "math.num.critere-somme-applique-au-chiffre": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu appliques le critère de 3 (ou de 9) au chiffre inconnu au lieu de la SOMME de tous les chiffres du nombre",
+      "en": "You apply the rule for 3 (or 9) to the unknown digit instead of to the SUM of all the number's digits",
+      "ar": "تطبّق معيار القسمة على 3 (أو 9) على الرقم المجهول بدل مجموع أرقام العدد كلّها"
+    },
+    "competency": "math.num.criteres-divisibilite"
+  },
   "math.num.irrationnel-traite-comme-rationnel": {
     "subject": "math",
     "labels": {
@@ -62,12 +143,102 @@
     },
     "competency": "math.num.ensembles-nombres"
   },
+  "math.num.rationnel-traite-comme-irrationnel": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends un nombre rationnel pour un irrationnel : un radical qui se simplifie, ou une écriture décimale périodique, restent rationnels",
+      "en": "You take a rational number for an irrational one: a root that simplifies, or a repeating decimal, is still rational",
+      "ar": "تحسب عددًا ناطقًا أصمّ: الجذر الذي يُبسَّط، والكتابة العشرية الدوريّة، يبقيان ناطقين"
+    },
+    "competency": "math.num.ensembles-nombres"
+  },
   "math.num.intervalle-borne-mal-incluse": {
     "subject": "math",
     "labels": {
       "fr": "Tu te trompes sur les bornes de l'intervalle : le crochet ouvert exclut la borne, le crochet fermé l'inclut",
       "en": "You get the interval's endpoints wrong: an open bracket excludes the endpoint, a closed one includes it",
       "ar": "تخطئ في حدود المجال: القوس المفتوح يُقصي الحدّ والقوس المغلق يشمله"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.num.ordre-inverse-a-tort": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu inverses le sens de l'inégalité sans raison : ajouter ou soustraire le même nombre aux deux membres ne le change jamais",
+      "en": "You flip the inequality for no reason: adding or subtracting the same number on both sides never changes it",
+      "ar": "تعكس اتّجاه المتراجحة بلا سبب: إضافة العدد نفسه إلى الطرفَين أو طرحه منهما لا يغيّره أبدًا"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.num.ordre-des-negatifs-inverse": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu ranges les nombres négatifs comme les positifs : plus la valeur absolue est grande, plus le nombre négatif est PETIT",
+      "en": "You order negative numbers like positive ones: the larger the absolute value, the SMALLER the negative number",
+      "ar": "ترتّب الأعداد السالبة كما ترتّب الموجبة: كلّما كبرت القيمة المطلقة صغر العدد السالب"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.num.inverse-conserve-l-ordre": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu crois que passer aux inverses garde l'ordre : pour deux nombres de MÊME signe, il s'inverse",
+      "en": "You think taking reciprocals keeps the order: for two numbers of the SAME sign, it reverses",
+      "ar": "تظنّ أنّ الانتقال إلى المقلوبَين يحفظ الترتيب: لعددَين لهما الإشارة نفسها ينقلب الترتيب"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.num.carre-conserve-l-ordre": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu crois que x ≤ y donne toujours x² ≤ y² : ce n'est vrai que si les deux nombres sont positifs",
+      "en": "You think x ≤ y always gives x² ≤ y²: that holds only when both numbers are positive",
+      "ar": "تظنّ أنّ x ≤ y تعطي دائمًا x² ≤ y²: هذا لا يصحّ إلّا إذا كان العددان موجبَين"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.num.produit-conserve-l-ordre-sans-signe": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu multiplies deux inégalités membre à membre sans regarder les signes : ce geste n'est permis que si tous les termes sont positifs",
+      "en": "You multiply two inequalities side by side without checking signs: that step is allowed only when every term is positive",
+      "ar": "تضرب متراجحتَين طرفًا بطرف دون النظر إلى الإشارات: هذا لا يجوز إلّا إذا كانت كلّ الحدود موجبة"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.num.encadrement-bornes-mal-appariees": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu apparies les bornes dans le mauvais ordre : pour une différence, le minorant se calcule avec le PLUS GRAND de ce qu'on retranche",
+      "en": "You pair the bounds the wrong way round: for a difference, the lower bound uses the LARGEST value being subtracted",
+      "ar": "تقرن الحدّين بترتيب خاطئ: في الفرق، يُحسب الحدّ الأدنى بأكبر ما يُطرح"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.num.comparaison-radical-et-entier": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu compares un radical à un entier au jugé : compare les CARRÉS des deux nombres, c'est le seul geste sûr",
+      "en": "You compare a root with a whole number by eye: compare the SQUARES of the two numbers — that is the only safe move",
+      "ar": "تقارن جذرًا بعدد صحيح بالتخمين: قارن مربّعَي العددين، فهو الطريق الوحيد المضمون"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.num.grandeurs-inversement-proportionnelles": {
+    "subject": "math",
+    "labels": {
+      "fr": "Quand le produit de deux grandeurs est constant, plus l'une grandit, plus l'autre DIMINUE : une base plus large donne une hauteur plus faible",
+      "en": "When the product of two quantities is fixed, the larger one grows, the SMALLER the other gets: a wider base means a lower height",
+      "ar": "إذا كان جداء مقدارَين ثابتًا فكلّما كبر أحدهما صغر الآخر: قاعدة أوسع تعطي ارتفاعًا أقلّ"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.num.approximation-defaut-exces-confondues": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds l'approximation par défaut et par excès : par défaut on reste en dessous du nombre, par excès on passe au-dessus",
+      "en": "You confuse rounding down with rounding up: down stays below the number, up goes above it",
+      "ar": "تخلط بين القيمة التقريبية بالنقصان وبالزيادة: بالنقصان تبقى تحت العدد، وبالزيادة تتجاوزه"
     },
     "competency": "math.num.ordre-encadrement"
   },
@@ -89,6 +260,42 @@
     },
     "competency": "math.num.valeur-absolue"
   },
+  "math.num.valeur-absolue-solution-unique": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu ne gardes qu'une solution à |x| = a : il y en a DEUX, opposées, dès que a est strictement positif",
+      "en": "You keep only one solution to |x| = a: there are TWO, opposite, as soon as a is strictly positive",
+      "ar": "تحتفظ بحلّ واحد للمعادلة |x| = a: هناك حلّان متقابلان ما دام a موجبًا تمامًا"
+    },
+    "competency": "math.num.valeur-absolue"
+  },
+  "math.num.valeur-absolue-signe-du-contenu-non-teste": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu enlèves les barres sans tester le signe de ce qu'elles contiennent : |a − b| vaut b − a quand a est plus petit que b",
+      "en": "You drop the bars without checking the sign of what is inside: |a − b| is b − a when a is smaller than b",
+      "ar": "ترفع الشريطَين دون اختبار إشارة ما بينهما: |a − b| تساوي b − a إذا كان a أصغر من b"
+    },
+    "competency": "math.num.valeur-absolue"
+  },
+  "math.num.valeur-absolue-somme-additive": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu distribues la valeur absolue sur une somme : |a + b| n'est pas |a| + |b| en général — elle ne se distribue que sur un produit ou un quotient",
+      "en": "You spread absolute value over a sum: |a + b| is not |a| + |b| in general — it distributes only over a product or a quotient",
+      "ar": "توزّع القيمة المطلقة على مجموع: |a + b| ليست |a| + |b| عمومًا، فهي لا توزَّع إلّا على جداء أو خارج قسمة"
+    },
+    "competency": "math.num.valeur-absolue"
+  },
+  "math.num.oppose-inverse-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds l'opposé et l'inverse : l'opposé change le signe, l'inverse retourne la fraction",
+      "en": "You confuse the opposite with the reciprocal: the opposite flips the sign, the reciprocal flips the fraction",
+      "ar": "تخلط بين المقابل والمقلوب: المقابل يغيّر الإشارة، والمقلوب يقلب الكسر"
+    },
+    "competency": "math.num.relatifs-operations"
+  },
   "math.num.racine-carre-sans-valeur-absolue": {
     "subject": "math",
     "labels": {
@@ -107,12 +314,57 @@
     },
     "competency": "math.num.racines-definition"
   },
+  "math.num.racine-confondue-avec-moitie": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends la moitié du nombre au lieu de sa racine carrée : la racine de 64 est 8, pas 32",
+      "en": "You halve the number instead of taking its square root: the root of 64 is 8, not 32",
+      "ar": "تأخذ نصف العدد بدل جذره التربيعي: جذر 64 هو 8 وليس 32"
+    },
+    "competency": "math.num.racines-definition"
+  },
+  "math.num.racine-et-carre-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds la racine carrée et le carré : l'une défait l'autre, elles ne donnent pas le même résultat",
+      "en": "You confuse the square root with the square: one undoes the other, they do not give the same result",
+      "ar": "تخلط بين الجذر التربيعي والمربّع: كلّ واحد يُبطل الآخر، وناتجهما ليس واحدًا"
+    },
+    "competency": "math.num.racines-definition"
+  },
+  "math.num.racine-carree-negative-oubliee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu ne gardes qu'une solution à x² = a : un carré positif a deux racines opposées",
+      "en": "You keep only one solution to x² = a: a positive square has two opposite roots",
+      "ar": "تحتفظ بحلّ واحد للمعادلة x² = a: للمربّع الموجب جذران متقابلان"
+    },
+    "competency": "math.num.racines-definition"
+  },
   "math.num.racine-distribuee-sur-somme": {
     "subject": "math",
     "labels": {
       "fr": "Tu distribues la racine sur une somme : la règle ne vaut que pour un produit ou un quotient, jamais pour une addition",
       "en": "You spread the root across a sum: the rule only holds for a product or a quotient, never for an addition",
       "ar": "توزّع الجذر على مجموع: القاعدة لا تصحّ إلّا مع الجداء أو خارج القسمة، لا مع الجمع"
+    },
+    "competency": "math.num.racines-calcul"
+  },
+  "math.num.racine-produit-transforme-en-somme": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu additionnes les nombres sous les racines au lieu de les multiplier : √a × √b vaut √(a × b)",
+      "en": "You add the numbers under the roots instead of multiplying them: √a × √b is √(a × b)",
+      "ar": "تجمع العددين تحت الجذرين بدل ضربهما: √a × √b تساوي √(a × b)"
+    },
+    "competency": "math.num.racines-calcul"
+  },
+  "math.num.radicaux-semblables-radicande-additionne": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu additionnes aussi les nombres sous la racine : entre radicaux semblables, seuls les coefficients s'additionnent",
+      "en": "You add the numbers under the root as well: with like radicals, only the coefficients add up",
+      "ar": "تجمع كذلك العددين تحت الجذر: بين الجذور المتشابهة، المعاملات وحدها تُجمع"
     },
     "competency": "math.num.racines-calcul"
   },
@@ -125,12 +377,120 @@
     },
     "competency": "math.num.racines-calcul"
   },
+  "math.num.puissance-confondue-avec-produit": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu multiplies la base par l'exposant : a³ veut dire a × a × a, pas a × 3",
+      "en": "You multiply the base by the exponent: a³ means a × a × a, not a × 3",
+      "ar": "تضرب الأساس في الدليل: a³ تعني a × a × a لا a × 3"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.puissance-signe-parite-exposant": {
+    "subject": "math",
+    "labels": {
+      "fr": "Le signe d'une puissance de base négative dépend de la PARITÉ de l'exposant : exposant pair, résultat positif ; exposant impair, résultat négatif",
+      "en": "The sign of a power with a negative base depends on the PARITY of the exponent: even exponent gives a positive result, odd gives a negative one",
+      "ar": "إشارة القوّة ذات الأساس السالب تتوقّف على زوجية الدليل: الدليل الزوجي يعطي نتيجة موجبة والفردي نتيجة سالبة"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.exposant-negatif-donne-nombre-negatif": {
+    "subject": "math",
+    "labels": {
+      "fr": "Un exposant négatif ne rend pas le nombre négatif : il donne l'INVERSE, et il ne s'efface pas non plus dans un calcul",
+      "en": "A negative exponent does not make the number negative: it gives the RECIPROCAL — and it does not simply vanish in a computation",
+      "ar": "الدليل السالب لا يجعل العدد سالبًا: هو يعطي المقلوب، ولا يسقط من الحساب كذلك"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.puissance-zero-vaut-zero": {
+    "subject": "math",
+    "labels": {
+      "fr": "Toute puissance d'exposant 0 vaut 1, jamais 0 — quelle que soit la base, dès qu'elle n'est pas nulle",
+      "en": "Any power with exponent 0 equals 1, never 0 — whatever the base, as long as it is non-zero",
+      "ar": "كلّ قوّة دليلها 0 تساوي 1 لا 0، مهما كان الأساس ما دام غير معدوم"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.puissances-produit-exposants-multiplies": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu multiplies les exposants dans un produit : aᵐ × aⁿ vaut a^(m + n), on les ADDITIONNE",
+      "en": "You multiply the exponents in a product: aᵐ × aⁿ is a^(m + n) — you ADD them",
+      "ar": "تضرب الدليلَين في الجداء: aᵐ × aⁿ تساوي a^(m + n)، والدليلان يُجمعان"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.puissances-quotient-exposants-additionnes": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu additionnes les exposants dans un quotient : aᵐ ÷ aⁿ vaut a^(m − n), on les SOUSTRAIT",
+      "en": "You add the exponents in a quotient: aᵐ ÷ aⁿ is a^(m − n) — you SUBTRACT them",
+      "ar": "تجمع الدليلَين في القسمة: aᵐ ÷ aⁿ تساوي a^(m − n)، والدليلان يُطرحان"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.puissances-puissance-exposants-additionnes": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu additionnes les exposants dans une puissance de puissance : (aᵐ)ⁿ vaut a^(m × n), on les MULTIPLIE",
+      "en": "You add the exponents in a power of a power: (aᵐ)ⁿ is a^(m × n) — you MULTIPLY them",
+      "ar": "تجمع الدليلَين في قوّة القوّة: (aᵐ)ⁿ تساوي a^(m × n)، والدليلان يُضربان"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.puissances-base-multipliee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu multiplies aussi les bases : dans aᵐ × aⁿ, la base ne bouge pas, seuls les exposants se combinent",
+      "en": "You multiply the bases as well: in aᵐ × aⁿ the base stays put, only the exponents combine",
+      "ar": "تضرب الأساسَين كذلك: في aᵐ × aⁿ يبقى الأساس كما هو، والدليلان وحدهما يتركّبان"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.puissance-fraction-numerateur-seul": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu n'élèves qu'une partie de la fraction : (a/b)ⁿ vaut aⁿ/bⁿ — le numérateur ET le dénominateur prennent l'exposant",
+      "en": "You raise only part of the fraction: (a/b)ⁿ is aⁿ/bⁿ — numerator AND denominator both take the exponent",
+      "ar": "ترفع جزءًا من الكسر فقط: (a/b)ⁿ تساوي aⁿ/bⁿ، فالبسط والمقام يأخذان الدليل معًا"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.notation-scientifique-exposant-decale": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu te trompes d'un rang dans l'exposant de 10, ou tu laisses une mantisse hors de [1 ; 10[ : compte les déplacements de la virgule",
+      "en": "You are off by one in the power of 10, or you leave a mantissa outside [1 ; 10): count how many places the decimal point moves",
+      "ar": "تخطئ بمرتبة في دليل 10، أو تترك العدد المرافق خارج [1 ؛ 10[: عُدّ انتقالات الفاصلة"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.racine-extraction-facteur-inversee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu échanges le facteur sorti de la racine et celui qui reste dessous : c'est le carré parfait qui sort, √50 = 5√2 et non 2√5",
+      "en": "You swap the factor taken out of the root with the one left inside: the perfect square comes out, √50 = 5√2 not 2√5",
+      "ar": "تعكس العامل الخارج من الجذر والباقي تحته: المربّع الكامل هو الذي يخرج، √50 = 5√2 لا 2√5"
+    },
+    "competency": "math.num.racines-calcul"
+  },
   "math.alg.moins-devant-parenthese": {
     "subject": "math",
     "labels": {
       "fr": "Tu n'appliques le signe moins qu'au premier terme de la parenthèse : il change le signe de tous les termes",
       "en": "You apply the minus sign to the first term only: it flips the sign of every term inside the brackets",
       "ar": "تطبّق إشارة الطرح على الحدّ الأوّل فقط: هي تغيّر إشارة كلّ الحدود داخل القوسين"
+    },
+    "competency": "math.alg.developpement"
+  },
+  "math.alg.distribution-partielle": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu ne multiplies que le premier terme de la parenthèse : le facteur se distribue sur tous les termes",
+      "en": "You multiply only the first term in the bracket: the factor distributes over every term",
+      "ar": "تضرب الحدّ الأوّل من القوس وحده: العامل يتوزّع على كلّ الحدود"
     },
     "competency": "math.alg.developpement"
   },
@@ -170,12 +530,39 @@
     },
     "competency": "math.alg.identites-remarquables"
   },
+  "math.alg.difference-carres-somme-au-lieu-de-difference": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu additionnes les deux carrés au lieu de les soustraire : (a + b)(a − b) vaut a² − b², jamais a² + b²",
+      "en": "You add the two squares instead of subtracting them: (a + b)(a − b) is a² − b², never a² + b²",
+      "ar": "تجمع المربّعين بدل طرحهما: (a + b)(a − b) تساوي a² − b² لا a² + b²"
+    },
+    "competency": "math.alg.identites-remarquables"
+  },
+  "math.alg.difference-carres-second-terme-non-eleve-au-carre": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu retranches le second terme sans l'élever au carré : dans (√7 − 2)(√7 + 2) le dénominateur vaut 7 − 4, pas 7 − 2",
+      "en": "You subtract the second term without squaring it: in (√7 − 2)(√7 + 2) the result is 7 − 4, not 7 − 2",
+      "ar": "تطرح الحدّ الثاني دون تربيعه: في (√7 − 2)(√7 + 2) الناتج هو 7 − 4 لا 7 − 2"
+    },
+    "competency": "math.alg.identites-remarquables"
+  },
   "math.alg.factoriser-et-developper-confondus": {
     "subject": "math",
     "labels": {
       "fr": "Tu développes là où on demande de factoriser : factoriser transforme une somme en produit, développer fait l'inverse",
       "en": "You expand where the task asks you to factorise: factorising turns a sum into a product, expanding does the opposite",
       "ar": "تنشر حيث يُطلب التعميل: التعميل يحوّل المجموع إلى جداء، والنشر يفعل العكس"
+    },
+    "competency": "math.alg.factorisation"
+  },
+  "math.alg.factorisation-partielle": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu n'extrais qu'une partie du facteur commun : il doit être le plus grand possible, sinon l'expression reste factorisable",
+      "en": "You pull out only part of the common factor: it must be the largest one, otherwise the expression can still be factored",
+      "ar": "تُخرج جزءًا من العامل المشترك فقط: يجب أن يكون الأكبر، وإلّا بقيت العبارة قابلة للتعميل"
     },
     "competency": "math.alg.factorisation"
   },
@@ -188,6 +575,15 @@
     },
     "competency": "math.alg.equations-premier-degre"
   },
+  "math.alg.coefficient-non-divise": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu t'arrêtes avant de diviser par le coefficient de l'inconnue : 2x = 8 donne x = 4, pas x = 8",
+      "en": "You stop before dividing by the coefficient of the unknown: 2x = 8 gives x = 4, not x = 8",
+      "ar": "تتوقّف قبل القسمة على معامل المجهول: 2x = 8 تعطي x = 4 لا x = 8"
+    },
+    "competency": "math.alg.equations-premier-degre"
+  },
   "math.alg.produit-nul-et-au-lieu-de-ou": {
     "subject": "math",
     "labels": {
@@ -197,12 +593,30 @@
     },
     "competency": "math.alg.equations-produit"
   },
+  "math.alg.produit-nul-racine-signe-non-oppose": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu lis la racine telle qu'elle apparaît dans la parenthèse : (x − 4) s'annule pour x = 4, mais (x + 2) s'annule pour x = −2",
+      "en": "You read the root as it appears in the bracket: (x − 4) vanishes at x = 4, but (x + 2) vanishes at x = −2",
+      "ar": "تقرأ الحلّ كما يظهر داخل القوس: (x − 4) تنعدم عند x = 4، أمّا (x + 2) فتنعدم عند x = −2"
+    },
+    "competency": "math.alg.equations-produit"
+  },
   "math.alg.produit-nul-applique-a-une-somme": {
     "subject": "math",
     "labels": {
       "fr": "Tu appliques la règle du produit nul à une somme : elle ne vaut que pour un produit de facteurs",
       "en": "You apply the zero-product rule to a sum: it only holds for a product of factors",
       "ar": "تطبّق قاعدة الجداء المعدوم على مجموع: وهي لا تصحّ إلّا مع جداء عوامل"
+    },
+    "competency": "math.alg.equations-produit"
+  },
+  "math.alg.division-par-inconnue-perd-solution": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu divises les deux membres par l'inconnue : tu perds la solution zéro, il faut factoriser puis appliquer la règle du produit nul",
+      "en": "You divide both sides by the unknown: you lose the zero solution — factor first, then use the zero-product rule",
+      "ar": "تقسم طرفَي المعادلة على المجهول: تفقد الحلّ صفر، والصواب أن تُعمّل ثمّ تطبّق قاعدة الجداء المعدوم"
     },
     "competency": "math.alg.equations-produit"
   },
@@ -233,12 +647,30 @@
     },
     "competency": "math.alg.systemes"
   },
+  "math.alg.systeme-methodes-confondues": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu appliques les gestes de la méthode par combinaison à la méthode par substitution : la substitution commence par isoler un inconnu, elle ne multiplie ni ne additionne les équations",
+      "en": "You apply the elimination steps to the substitution method: substitution starts by isolating one unknown, it neither multiplies nor adds the equations",
+      "ar": "تطبّق خطوات طريقة التأليف على طريقة التعويض: التعويض يبدأ بعزل أحد المجهولَين، ولا يضرب المعادلتَين ولا يجمعهما"
+    },
+    "competency": "math.alg.systemes"
+  },
   "math.alg.systeme-verification-partielle": {
     "subject": "math",
     "labels": {
       "fr": "Tu vérifies le couple solution dans une seule équation : il faut le substituer dans les deux",
       "en": "You check the candidate pair in one equation only: it must be substituted into both",
       "ar": "تتحقّق من الثنائية في معادلة واحدة فقط: يجب تعويضها في كلتا المعادلتَين"
+    },
+    "competency": "math.alg.systemes"
+  },
+  "math.alg.systeme-impossible-et-indetermine-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds une jonction impossible et une jonction indéterminée : deux équations proportionnelles dont les constantes ne le sont pas n'ont AUCUN couple solution",
+      "en": "You confuse an inconsistent system with an indeterminate one: two proportional equations whose constants are not proportional have NO solution pair",
+      "ar": "تخلط بين الجملة المستحيلة والجملة غير المحدّدة: معادلتان متناسبتان وثوابتهما غير متناسبة لا حلّ لهما إطلاقًا"
     },
     "competency": "math.alg.systemes"
   },
@@ -251,12 +683,39 @@
     },
     "competency": "math.fn.fonction-lineaire"
   },
+  "math.fn.image-calculee-par-somme": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu additionnes au lieu de multiplier : f(x) = 3x se lit « 3 multiplié par x »",
+      "en": "You add instead of multiplying: f(x) = 3x reads \"3 times x\"",
+      "ar": "تجمع بدل أن تضرب: f(x) = 3x تُقرأ «3 مضروبًا في x»"
+    },
+    "competency": "math.fn.fonction-lineaire"
+  },
+  "math.fn.coefficient-obtenu-sans-division": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu combines les deux coordonnées au lieu de diviser : dans f(x) = ax, a vaut l'image divisée par l'antécédent",
+      "en": "You combine the two coordinates instead of dividing: in f(x) = ax, a is the image divided by the input",
+      "ar": "تجمع الإحداثيَّين أو تطرحهما بدل القسمة: في f(x) = ax، a تساوي الصورة مقسومة على السابقة"
+    },
+    "competency": "math.fn.fonction-lineaire"
+  },
   "math.fn.pente-ordonnee-origine-confondues": {
     "subject": "math",
     "labels": {
       "fr": "Tu confonds le coefficient directeur et l'ordonnée à l'origine : l'un donne la pente, l'autre le point où la droite coupe l'axe des ordonnées",
       "en": "You swap the slope and the y-intercept: one gives the steepness, the other where the line crosses the vertical axis",
       "ar": "تخلط بين معامل التوجيه والقطع: الأوّل يعطي الانحدار، والثاني نقطة تقاطع المستقيم مع محور التراتيب"
+    },
+    "competency": "math.fn.fonction-affine"
+  },
+  "math.fn.zero-et-ordonnee-origine-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends le terme constant comme antécédent de zéro : cet antécédent est la solution de ax + b = 0",
+      "en": "You take the constant term as the input giving zero: that input solves ax + b = 0",
+      "ar": "تأخذ الحدّ الثابت سابقةً للصفر: سابقة الصفر هي حلّ المعادلة ax + b = 0"
     },
     "competency": "math.fn.fonction-affine"
   },
@@ -269,6 +728,15 @@
     },
     "competency": "math.fn.representation-droites"
   },
+  "math.fn.pente-sans-quotient": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu gardes seulement l'écart des ordonnées, ou seulement celui des abscisses : le coefficient directeur est leur QUOTIENT",
+      "en": "You keep only the change in y, or only the change in x: the slope is their QUOTIENT",
+      "ar": "تحتفظ بفرق التراتيب وحده أو بفرق الفواصل وحده: معامل التوجيه هو خارج قسمتهما"
+    },
+    "competency": "math.fn.representation-droites"
+  },
   "math.fn.pente-somme-au-lieu-de-difference": {
     "subject": "math",
     "labels": {
@@ -278,12 +746,120 @@
     },
     "competency": "math.fn.representation-droites"
   },
+  "math.fn.sens-variation-et-signe-de-a": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu cherches le sens de variation ailleurs que dans le signe de a : la droite monte si a > 0 et descend si a < 0",
+      "en": "You look for the direction of change somewhere other than the sign of a: the line rises if a > 0 and falls if a < 0",
+      "ar": "تبحث عن اتّجاه المستقيم في غير إشارة a: المستقيم صاعد إذا كان a > 0 ونازل إذا كان a < 0"
+    },
+    "competency": "math.fn.representation-droites"
+  },
   "math.stat.effectif-frequence-confondus": {
     "subject": "math",
     "labels": {
       "fr": "Tu confonds l'effectif et la fréquence : l'effectif compte les apparitions, la fréquence en donne la part du total",
       "en": "You confuse the count with the relative frequency: the count is how many times a value appears, the frequency is its share of the total",
       "ar": "تخلط بين التكرار والتواتر: التكرار عدد مرّات الظهور، والتواتر نسبتها من التكرار الكلّي"
+    },
+    "competency": "math.stat.effectifs-frequences"
+  },
+  "math.stat.population-et-caractere-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds la population et le caractère : la population est l'ensemble étudié, le caractère est ce qu'on observe sur chacun de ses individus",
+      "en": "You confuse the population with the variable: the population is the group studied, the variable is what you observe on each of its members",
+      "ar": "تخلط بين المجتمع والميزة: المجتمع هو المجموعة المدروسة، والميزة هي ما نلاحظه على كلّ فرد منها"
+    },
+    "competency": "math.stat.effectifs-frequences"
+  },
+  "math.prob.experience-deterministe-prise-pour-aleatoire": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends pour aléatoire une opération dont le résultat est certain : une expérience aléatoire a plusieurs issues possibles et on ne sait pas laquelle sortira",
+      "en": "You treat an operation with a certain outcome as random: a random experiment has several possible outcomes and you cannot tell which will occur",
+      "ar": "تعدّ عمليةً نتيجتُها أكيدة تجربةً عشوائية: التجربة العشوائية لها عدّة إمكانيات ولا يُعرف أيّها سيقع"
+    },
+    "competency": "math.prob.experience-aleatoire"
+  },
+  "math.prob.evenement-certain-et-impossible-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds l'événement certain et l'événement impossible : le certain a pour probabilité 1, l'impossible 0",
+      "en": "You confuse the certain event with the impossible one: certain has probability 1, impossible has 0",
+      "ar": "تخلط بين الحدث الأكيد والحدث المستحيل: الأكيد احتماله 1 والمستحيل احتماله 0"
+    },
+    "competency": "math.prob.frequence-et-chance"
+  },
+  "math.prob.chance-comparee-sur-effectif-brut": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu compares les nombres bruts au lieu des proportions : une chance se mesure toujours par rapport au total",
+      "en": "You compare raw counts instead of proportions: a chance is always measured against the total",
+      "ar": "تقارن الأعداد الخام بدل النسب: الحظّ يُقاس دائمًا بالنسبة إلى المجموع"
+    },
+    "competency": "math.prob.frequence-et-chance"
+  },
+  "math.prob.equiprobabilite-supposee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu supposes que toutes les issues ont la même chance : ce n'est vrai que si l'énoncé le garantit, sinon il faut compter",
+      "en": "You assume every outcome is equally likely: that holds only when the problem says so — otherwise you must count",
+      "ar": "تفترض أنّ كلّ الإمكانيات متساوية الحظّ: هذا لا يصحّ إلّا إذا نصّ عليه النصّ، وإلّا وجب الإحصاء"
+    },
+    "competency": "math.prob.frequence-et-chance"
+  },
+  "math.prob.tirage-avec-et-sans-remise-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds tirage avec remise et sans remise : avec remise l'objet revient et le nombre de choix ne diminue pas",
+      "en": "You confuse drawing with and without replacement: with replacement the item goes back and the number of choices does not shrink",
+      "ar": "تخلط بين السحب مع الإرجاع والسحب بدون إرجاع: مع الإرجاع يعود القرص فلا ينقص عدد الاختيارات"
+    },
+    "competency": "math.prob.denombrement-issues"
+  },
+  "math.prob.tirage-simultane-et-successif-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu comptes l'ordre alors que le tirage est simultané : tirer 1 puis 2 et tirer 2 puis 1 sont alors la même possibilité",
+      "en": "You count the order although the draw is simultaneous: taking 1 then 2 and 2 then 1 are then the same outcome",
+      "ar": "تحسب الترتيب والسحب متزامن: سحب 1 ثمّ 2 وسحب 2 ثمّ 1 إمكانية واحدة حينئذٍ"
+    },
+    "competency": "math.prob.denombrement-issues"
+  },
+  "math.prob.denombrement-somme-au-lieu-de-produit": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu additionnes les choix au lieu de les multiplier : quand des étapes se succèdent, le nombre de possibilités se MULTIPLIE",
+      "en": "You add the choices instead of multiplying them: when steps follow one another, the number of possibilities MULTIPLIES",
+      "ar": "تجمع الاختيارات بدل ضربها: عندما تتوالى المراحل، يُضرب عدد الإمكانيات لا يُجمع"
+    },
+    "competency": "math.prob.denombrement-issues"
+  },
+  "math.prob.denombrement-repetition-ignoree": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu comptes une répétition que l'énoncé interdit (ou tu l'interdis quand il l'autorise) : « chiffres différents » enlève un choix à chaque rang",
+      "en": "You allow a repetition the problem forbids (or forbid one it allows): \"different digits\" removes one choice at each position",
+      "ar": "تسمح بتكرار يمنعه النصّ (أو تمنعه وهو مسموح): «أرقام مختلفة» تُنقص اختيارًا في كلّ مرتبة"
+    },
+    "competency": "math.prob.denombrement-issues"
+  },
+  "math.stat.effectif-cumule-non-cumule": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu donnes l'effectif de la valeur au lieu de son effectif cumulé : le cumulé additionne tous les effectifs jusqu'à elle",
+      "en": "You give the value's own count instead of its cumulative count: the cumulative adds up every count down to it",
+      "ar": "تعطي تكرار القيمة بدل تكرارها المجمّع: المجمّع يجمع كلّ التكرارات إلى غاية تلك القيمة"
+    },
+    "competency": "math.stat.effectifs-frequences"
+  },
+  "math.stat.pourcentage-et-angle-de-secteur-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends le pourcentage pour la mesure de l'angle : un secteur se calcule sur 360°, pas sur 100",
+      "en": "You take the percentage as the angle: a pie slice is computed out of 360°, not out of 100",
+      "ar": "تأخذ النسبة المائوية قيسًا للزاوية: القطاع يُحسب على 360° لا على 100"
     },
     "competency": "math.stat.effectifs-frequences"
   },
@@ -305,12 +881,48 @@
     },
     "competency": "math.stat.moyenne-mediane"
   },
+  "math.stat.mediane-effectif-pair-sans-moyenne": {
+    "subject": "math",
+    "labels": {
+      "fr": "Avec un effectif pair, tu ne gardes qu'une des deux valeurs centrales : la médiane est leur moyenne",
+      "en": "With an even count you keep only one of the two middle values: the median is their average",
+      "ar": "عند التكرار الزوجي تحتفظ بإحدى القيمتَين الوسطيَّين: الوسيط هو معدّلهما"
+    },
+    "competency": "math.stat.moyenne-mediane"
+  },
+  "math.stat.moyenne-et-mediane-confondues": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds la moyenne et la médiane : la moyenne partage le total, la médiane partage l'effectif en deux",
+      "en": "You confuse the mean with the median: the mean shares out the total, the median splits the count in two",
+      "ar": "تخلط بين المعدّل والوسيط: المعدّل يقسم المجموع، والوسيط يقسم العدد إلى نصفين"
+    },
+    "competency": "math.stat.moyenne-mediane"
+  },
   "math.stat.mode-mediane-confondus": {
     "subject": "math",
     "labels": {
       "fr": "Tu confonds le mode et la médiane : le mode est la valeur la plus fréquente, la médiane celle du milieu",
       "en": "You confuse the mode with the median: the mode is the most frequent value, the median the middle one",
       "ar": "تخلط بين المنوال والوسيط: المنوال هو القيمة الأكثر تكرارًا، والوسيط هو القيمة المتوسّطة"
+    },
+    "competency": "math.stat.mode"
+  },
+  "math.stat.mode-et-valeur-maximale-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends la plus grande valeur au lieu de la plus fréquente : le mode se lit dans la colonne des effectifs, pas dans celle des valeurs",
+      "en": "You take the largest value instead of the most frequent one: the mode is read in the counts column, not the values column",
+      "ar": "تأخذ أكبر قيمة بدل الأكثر تكرارًا: المنوال يُقرأ في عمود التكرارات لا في عمود القيم"
+    },
+    "competency": "math.stat.mode"
+  },
+  "math.stat.moyenne-et-mode-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds la moyenne et le mode : le mode est la valeur la plus fréquente, la moyenne se calcule sur toutes les valeurs",
+      "en": "You confuse the mean with the mode: the mode is the most frequent value, the mean is computed over every value",
+      "ar": "تخلط بين المعدّل والمنوال: المنوال هو القيمة الأكثر تكرارًا، والمعدّل يُحسب على كلّ القيم"
     },
     "competency": "math.stat.mode"
   },
@@ -341,6 +953,15 @@
     },
     "competency": "math.geo.thales-direct"
   },
+  "math.geo.thales-longueurs-au-lieu-de-rapports": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu compares des longueurs ou leurs différences au lieu des rapports : Thalès met en jeu des QUOTIENTS égaux, pas des segments égaux",
+      "en": "You compare lengths or their differences instead of ratios: Thales is about equal QUOTIENTS, not equal segments",
+      "ar": "تقارن الأطوال أو فروقها بدل النسب: طاليس يقوم على تساوي خارج القسمة، لا على تساوي القطع"
+    },
+    "competency": "math.geo.thales-direct"
+  },
   "math.geo.thales-reciproque-role": {
     "subject": "math",
     "labels": {
@@ -368,6 +989,15 @@
     },
     "competency": "math.geo.pythagore"
   },
+  "math.geo.pythagore-racine-oubliee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu t'arrêtes au carré : Pythagore donne le CARRÉ de la longueur, il reste à en prendre la racine",
+      "en": "You stop at the square: Pythagoras gives the SQUARE of the length — you still have to take its root",
+      "ar": "تتوقّف عند المربّع: فيثاغورس يعطي مربّع الطول، ويبقى أن تأخذ جذره"
+    },
+    "competency": "math.geo.pythagore"
+  },
   "math.geo.cosinus-sinus-confondus": {
     "subject": "math",
     "labels": {
@@ -377,12 +1007,30 @@
     },
     "competency": "math.geo.trigonometrie"
   },
+  "math.geo.valeurs-remarquables-confondues": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds les valeurs remarquables : 30°, 45° et 60° n'ont pas les mêmes sinus, cosinus ni tangentes",
+      "en": "You mix up the special values: 30°, 45° and 60° do not share the same sine, cosine or tangent",
+      "ar": "تخلط بين القيم المتميّزة: 30° و45° و60° ليست لها الجيوب ولا جيوب التمام ولا الظلال نفسها"
+    },
+    "competency": "math.geo.trigonometrie"
+  },
   "math.geo.trigo-rapport-inverse": {
     "subject": "math",
     "labels": {
       "fr": "Tu inverses le rapport trigonométrique : pour le sinus et le cosinus, l'hypoténuse est au dénominateur",
       "en": "You flip the trigonometric ratio: for sine and cosine the hypotenuse belongs in the denominator",
       "ar": "تعكس النسبة المثلّثية: في الجيب وجيب التمام يكون الوتر في المقام"
+    },
+    "competency": "math.geo.trigonometrie"
+  },
+  "math.geo.identite-trigo-sans-carres": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu oublies les carrés dans l'identité fondamentale : c'est sin²x + cos²x qui vaut 1, pas sin x + cos x",
+      "en": "You drop the squares in the fundamental identity: it is sin²x + cos²x that equals 1, not sin x + cos x",
+      "ar": "تُسقط المربّعات من المتطابقة الأساسية: جا²س + جتا²س هي التي تساوي 1، لا جا س + جتا س"
     },
     "competency": "math.geo.trigonometrie"
   },
@@ -403,6 +1051,78 @@
       "ar": "تضاعف بدل أن تقسم: الزاوية المركزية هي ضعف المحيطية وليس العكس"
     },
     "competency": "math.geo.angles-inscrits"
+  },
+  "math.geo.angles-inscrits-cotes-opposes": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu appliques l'égalité des angles inscrits alors que les deux sommets sont de part et d'autre de la corde : ils sont alors supplémentaires",
+      "en": "You use the equal-inscribed-angles rule although the two vertices lie on opposite sides of the chord: they are then supplementary",
+      "ar": "تطبّق تقايس الزاويتَين المحيطيتَين والرأسان على جهتَين مختلفتَين من الوتر: الزاويتان حينئذٍ متكاملتان"
+    },
+    "competency": "math.geo.angles-inscrits"
+  },
+  "math.geo.quadrilatere-inscrit-angles-opposes": {
+    "subject": "math",
+    "labels": {
+      "fr": "Dans un quadrilatère inscrit dans un cercle, les angles opposés sont SUPPLÉMENTAIRES, pas égaux : leur somme fait 180°",
+      "en": "In a cyclic quadrilateral, opposite angles are SUPPLEMENTARY, not equal: they add up to 180°",
+      "ar": "في الرباعيّ الدائريّ، الزاويتان المتقابلتان متكاملتان لا متقايستان: مجموعهما 180°"
+    },
+    "competency": "math.geo.angles-inscrits"
+  },
+  "math.geo.angle-inscrit-arc-oppose-ignore": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends toujours la moitié de l'angle au centre : quand le sommet est sur le PETIT arc, l'angle inscrit intercepte l'arc opposé",
+      "en": "You always halve the central angle: when the vertex sits on the MINOR arc, the inscribed angle subtends the opposite arc",
+      "ar": "تأخذ دائمًا نصف الزاوية المركزية: إذا كان الرأس على القوس الصغير فالزاوية المحيطية تحصر القوس المقابل"
+    },
+    "competency": "math.geo.angles-inscrits"
+  },
+  "math.geo.diagonales-proprietes-mal-attribuees": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu attribues à un quadrilatère les diagonales d'un autre : même milieu pour tout parallélogramme, égales pour le rectangle, perpendiculaires pour le losange",
+      "en": "You give a quadrilateral the diagonals of another: same midpoint for every parallelogram, equal for the rectangle, perpendicular for the rhombus",
+      "ar": "تنسب إلى رباعيّ قطرَي رباعيّ آخر: المنتصف نفسه لكلّ متوازي أضلاع، والتقايس للمستطيل، والتعامد للمعيّن"
+    },
+    "competency": "math.geo.quadrilateres"
+  },
+  "math.geo.condition-suffisante-supposee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends une seule propriété pour une preuve : des diagonales perpendiculaires ne suffisent pas au losange, il leur faut aussi le même milieu",
+      "en": "You take a single property as proof: perpendicular diagonals are not enough for a rhombus — they must also share a midpoint",
+      "ar": "تعدّ خاصيّة واحدة برهانًا: تعامد القطرَين لا يكفي للمعيّن، بل يلزم كذلك أن يكون لهما المنتصف نفسه"
+    },
+    "competency": "math.geo.quadrilateres"
+  },
+  "math.geo.description-la-plus-precise-manquee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu t'arrêtes à une description vraie mais pas la plus précise — ou tu en ajoutes une que rien ne prouve : un carré est un losange, l'inverse est faux",
+      "en": "You stop at a true but not the most precise description — or you add one nothing proves: a square is a rhombus, the converse is false",
+      "ar": "تكتفي بوصف صحيح لكنّه ليس الأدقّ، أو تضيف وصفًا لا يُثبته شيء: المربّع معيّن، والعكس غير صحيح"
+    },
+    "competency": "math.geo.quadrilateres"
+  },
+  "math.geo.droite-des-milieux-facteur-deux": {
+    "subject": "math",
+    "labels": {
+      "fr": "Le segment qui joint deux milieux vaut la MOITIÉ du troisième côté : le côté est son double, pas sa moitié",
+      "en": "The segment joining two midpoints is HALF the third side: the side is its double, not its half",
+      "ar": "القطعة الواصلة بين منتصفَي ضلعَين تساوي نصف الضلع الثالث: الضلع ضعفها لا نصفها"
+    },
+    "competency": "math.geo.triangles-base"
+  },
+  "math.geo.mediane-hypotenuse-demi": {
+    "subject": "math",
+    "labels": {
+      "fr": "Dans un triangle rectangle, la médiane issue de l'angle droit vaut la MOITIÉ de l'hypoténuse — et le milieu de l'hypoténuse est à égale distance des trois sommets",
+      "en": "In a right triangle the median from the right angle is HALF the hypotenuse — and the hypotenuse midpoint is equidistant from all three vertices",
+      "ar": "في المثلّث القائم، المتوسّط الصادر من الزاوية القائمة يساوي نصف الوتر، ومنتصف الوتر يبعد المسافة نفسها عن الرؤوس الثلاثة"
+    },
+    "competency": "math.geo.triangles-base"
   },
   "math.vec.egalite-exige-meme-origine": {
     "subject": "math",
@@ -440,6 +1160,33 @@
     },
     "competency": "math.vec.somme"
   },
+  "math.vec.chasles-relais-incomplet": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu t'arrêtes en chemin : la relation de Chasles enchaîne TOUS les relais, du tout premier point au tout dernier",
+      "en": "You stop partway: the Chasles relation links EVERY step, from the very first point to the very last",
+      "ar": "تتوقّف في منتصف الطريق: علاقة شال تربط كلّ المحطّات، من النقطة الأولى إلى الأخيرة"
+    },
+    "competency": "math.vec.somme"
+  },
+  "math.vec.translation-points-fixes": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu crois qu'un point peut rester en place : une translation de vecteur non nul ne laisse AUCUN point fixe, le centre d'un cercle compris",
+      "en": "You think some point can stay put: a translation by a non-zero vector leaves NO point fixed, not even a circle centre",
+      "ar": "تظنّ أنّ نقطة قد تبقى مكانها: الانسحاب بشعاع غير معدوم لا يترك أيّ نقطة ثابتة، ولا حتّى مركز الدائرة"
+    },
+    "competency": "math.vec.translation-vecteur"
+  },
+  "math.vec.translation-modifie-les-longueurs": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu crois que la translation déforme la figure : elle conserve les longueurs et les angles, l'image est superposable à l'originale",
+      "en": "You think a translation distorts the figure: it preserves lengths and angles — the image is congruent to the original",
+      "ar": "تظنّ أنّ الانسحاب يشوّه الشكل: هو يحفظ الأطوال والزوايا، والصورة تنطبق على الأصل"
+    },
+    "competency": "math.vec.translation-vecteur"
+  },
   "math.vec.coordonnees-vecteur-inversees": {
     "subject": "math",
     "labels": {
@@ -449,12 +1196,39 @@
     },
     "competency": "math.vec.repere-coordonnees"
   },
+  "math.vec.coordonnees-vecteur-somme-au-lieu-de-difference": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu additionnes les coordonnées au lieu de les soustraire : celles d'un vecteur sont celles de l'extrémité MOINS celles de l'origine",
+      "en": "You add the coordinates instead of subtracting them: a vector's coordinates are the endpoint's MINUS the start point's",
+      "ar": "تجمع الإحداثيّات بدل طرحها: إحداثيّا الشعاع هما إحداثيّا الطرف ناقص إحداثيَّي المبدأ"
+    },
+    "competency": "math.vec.repere-coordonnees"
+  },
+  "math.vec.coordonnees-point-inversees": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu échanges l'abscisse et l'ordonnée : un couple de coordonnées s'écrit (abscisse ; ordonnée), dans cet ordre",
+      "en": "You swap the x- and y-coordinates: a coordinate pair is written (x ; y), in that order",
+      "ar": "تعكس الفاصلة والترتيب: الثنائية تُكتب (الفاصلة ؛ الترتيب) بهذا الترتيب"
+    },
+    "competency": "math.vec.repere-coordonnees"
+  },
   "math.vec.quadrant-signes-confondus": {
     "subject": "math",
     "labels": {
       "fr": "Tu te trompes de quadrant : c'est le couple de signes de l'abscisse et de l'ordonnée qui le détermine",
       "en": "You pick the wrong quadrant: it is decided by the pair of signs of the x- and y-coordinates",
       "ar": "تخطئ في الربع: الربع تحدّده إشارتا الفاصلة والترتيبة معًا"
+    },
+    "competency": "math.vec.repere-coordonnees"
+  },
+  "math.vec.repere-orthogonal-et-homogene-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds « orthogonal » et « homogène » : orthogonal dit que les deux axes sont perpendiculaires, homogène que l'unité est la même sur les deux",
+      "en": "You confuse \"orthogonal\" with \"same-scale\": orthogonal means the two axes are perpendicular, same-scale means the unit is identical on both",
+      "ar": "تخلط بين «متعامد» و«متجانس»: المتعامد يعني أنّ المحورَين عموديّان، والمتجانس أنّ الوحدة واحدة عليهما"
     },
     "competency": "math.vec.repere-coordonnees"
   },
@@ -485,12 +1259,93 @@
     },
     "competency": "math.esp.solides-espace"
   },
+  "math.esp.perpendiculaire-au-plan-deux-secantes": {
+    "subject": "math",
+    "labels": {
+      "fr": "Être perpendiculaire à UNE droite du plan — ou à deux droites parallèles — ne suffit pas : il faut deux droites SÉCANTES du plan",
+      "en": "Being perpendicular to ONE line of the plane — or to two parallel lines — is not enough: you need two INTERSECTING lines of the plane",
+      "ar": "التعامد مع مستقيم واحد من المستوي، أو مع مستقيمَين متوازيَين، لا يكفي: يلزم مستقيمان متقاطعان من المستوي"
+    },
+    "competency": "math.esp.solides-espace"
+  },
+  "math.esp.perpendiculaire-au-plan-unicite": {
+    "subject": "math",
+    "labels": {
+      "fr": "Par un point de l'espace il passe UNE seule droite perpendiculaire à un plan donné — que ce point soit dans le plan ou hors de lui",
+      "en": "Through any point of space there is exactly ONE line perpendicular to a given plane — whether the point lies in the plane or outside it",
+      "ar": "من كلّ نقطة في الفضاء يمرّ مستقيم واحد فقط عموديّ على مستوٍ معلوم، سواء أكانت النقطة في المستوي أم خارجه"
+    },
+    "competency": "math.esp.solides-espace"
+  },
+  "math.esp.deux-perpendiculaires-au-meme-plan": {
+    "subject": "math",
+    "labels": {
+      "fr": "Deux droites perpendiculaires au même plan sont PARALLÈLES entre elles — et deux plans perpendiculaires à la même droite sont parallèles",
+      "en": "Two lines perpendicular to the same plane are PARALLEL to each other — and two planes perpendicular to the same line are parallel",
+      "ar": "المستقيمان العموديّان على المستوي نفسه متوازيان، والمستويان العموديّان على المستقيم نفسه متوازيان كذلك"
+    },
+    "competency": "math.esp.solides-espace"
+  },
+  "math.esp.droites-non-coplanaires-crues-secantes": {
+    "subject": "math",
+    "labels": {
+      "fr": "Dans l'espace, deux droites peuvent n'être ni parallèles ni sécantes : elles ne sont alors dans aucun plan commun",
+      "en": "In space two lines can be neither parallel nor intersecting: they then lie in no common plane",
+      "ar": "في الفضاء قد لا يكون المستقيمان متوازيَين ولا متقاطعَين: فلا يجمعهما حينئذٍ مستوٍ واحد"
+    },
+    "competency": "math.esp.solides-espace"
+  },
+  "math.esp.pyramide-reguliere-faces-equilaterales": {
+    "subject": "math",
+    "labels": {
+      "fr": "Les faces latérales d'une pyramide régulière sont des triangles ISOCÈLES et superposables — équilatéraux seulement dans un cas particulier",
+      "en": "The lateral faces of a regular pyramid are congruent ISOSCELES triangles — equilateral only in one special case",
+      "ar": "الأوجه الجانبية للهرم المنتظم مثلّثات متقايسة الضلعَين ومتطابقة، ولا تكون متقايسة الأضلاع إلّا في حالة خاصّة"
+    },
+    "competency": "math.esp.solides-espace"
+  },
+  "math.esp.diagonale-du-pave-en-deux-dimensions": {
+    "subject": "math",
+    "labels": {
+      "fr": "La diagonale d'un pavé fait intervenir les TROIS dimensions : deux applications successives de Pythagore, pas une seule",
+      "en": "A cuboid's long diagonal involves all THREE dimensions: two successive uses of Pythagoras, not one",
+      "ar": "قطر متوازي المستطيلات يشمل الأبعاد الثلاثة: تطبيقان متتاليان لفيثاغورس لا تطبيق واحد"
+    },
+    "competency": "math.esp.solides-espace"
+  },
+  "math.esp.distance-au-plan-est-la-plus-courte": {
+    "subject": "math",
+    "labels": {
+      "fr": "La distance d'un point à un plan est la longueur de la perpendiculaire : toute autre oblique partant du même point est PLUS LONGUE",
+      "en": "The distance from a point to a plane is the length of the perpendicular: every other slanted segment from that point is LONGER",
+      "ar": "بُعد نقطة عن مستوٍ هو طول العمود: وكلّ قطعة مائلة أخرى من النقطة نفسها أطول منه"
+    },
+    "competency": "math.esp.solides-espace"
+  },
+  "math.esp.appartenance-et-inclusion-confondues": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds ∈ et ⊂ : le premier relie un POINT à une droite ou à un plan, le second relie une droite à un plan",
+      "en": "You confuse ∈ with ⊂: the first links a POINT to a line or a plane, the second links a line to a plane",
+      "ar": "تخلط بين ∈ و⊂: الأوّل يربط نقطةً بمستقيم أو مستوٍ، والثاني يربط مستقيمًا بمستوٍ"
+    },
+    "competency": "math.esp.solides-espace"
+  },
   "math.mes.volume-pyramide-sans-tiers": {
     "subject": "math",
     "labels": {
       "fr": "Tu oublies le tiers dans le volume d'une pyramide ou d'un cône",
       "en": "You leave out the one-third factor in the volume of a pyramid or a cone",
       "ar": "تنسى الثلث في حجم الهرم أو المخروط"
+    },
+    "competency": "math.mes.volumes"
+  },
+  "math.mes.tiers-applique-a-tort": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu divises par 3 un volume de prisme ou de cylindre : le tiers ne concerne que la pyramide et le cône",
+      "en": "You divide a prism or cylinder volume by 3: the third belongs to the pyramid and the cone only",
+      "ar": "تقسم حجم موشور أو أسطوانة على 3: الثلث خاصّ بالهرم والمخروط وحدهما"
     },
     "competency": "math.mes.volumes"
   },
@@ -502,5 +1357,85 @@
       "ar": "تستعمل صيغة مساحة حيث يُطلب حجم: الحجم يشمل ثلاثة أبعاد"
     },
     "competency": "math.mes.volumes"
+  },
+  "math.mes.volume-utilise-comme-aire": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu donnes un volume là où on demande une aire : une aire est en cm², un volume en cm³",
+      "en": "You give a volume where an area is asked for: an area is in cm², a volume in cm³",
+      "ar": "تعطي حجمًا حيث تُطلب مساحة: المساحة بـ cm² والحجم بـ cm³"
+    },
+    "competency": "math.mes.aires"
+  },
+  "math.mes.formules-solides-confondues": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu appliques la formule d'un autre solide : chaque solide a la sienne, et un r³ ne remplace pas un r²h",
+      "en": "You apply another solid's formula: each solid has its own, and an r³ does not stand in for an r²h",
+      "ar": "تطبّق صيغة مجسّم آخر: لكلّ مجسّم صيغته، وr³ لا تحلّ محلّ r²h"
+    },
+    "competency": "math.esp.solides-espace"
+  },
+  "math.mes.rayon-non-eleve-au-carre": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu oublies d'élever le rayon au carré : l'aire du disque vaut πr², donc le volume du cylindre πr²h et non πrh",
+      "en": "You forget to square the radius: a disc's area is πr², so a cylinder's volume is πr²h, not πrh",
+      "ar": "تنسى تربيع نصف القطر: مساحة القرص πr²، فحجم الأسطوانة πr²h لا πrh"
+    },
+    "competency": "math.mes.volumes"
+  },
+  "math.mes.agrandissement-volume-non-cube": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu multiplies le volume par le rapport d'agrandissement : un volume est multiplié par le CUBE de ce rapport",
+      "en": "You multiply the volume by the scale factor: a volume is multiplied by the CUBE of that factor",
+      "ar": "تضرب الحجم في معامل التكبير: الحجم يُضرب في مكعّب ذلك المعامل"
+    },
+    "competency": "math.mes.volumes"
+  },
+  "math.mes.aire-et-perimetre-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds l'aire et le périmètre : le périmètre s'additionne le long du contour, l'aire se calcule en multipliant deux dimensions",
+      "en": "You confuse area with perimeter: perimeter adds up along the outline, area multiplies two dimensions",
+      "ar": "تخلط بين المساحة والمحيط: المحيط يُجمع على طول الحدود، والمساحة تُحسب بضرب بعدين"
+    },
+    "competency": "math.mes.aires"
+  },
+  "math.mes.aire-triangle-sans-moitie": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu oublies de diviser par 2 l'aire du triangle : c'est la moitié du produit de la base par la hauteur",
+      "en": "You forget to halve the triangle area: it is half the base times the height",
+      "ar": "تنسى القسمة على 2 في مساحة المثلّث: هي نصف جداء القاعدة في الارتفاع"
+    },
+    "competency": "math.mes.aires"
+  },
+  "math.mes.aire-trapeze-sans-demi-somme": {
+    "subject": "math",
+    "labels": {
+      "fr": "L'aire d'un trapèze est la DEMI-somme des deux bases multipliée par la hauteur : une seule base, ou la somme entière, ne convient pas",
+      "en": "A trapezium area is HALF the sum of the two parallel sides times the height: one side alone, or the whole sum, will not do",
+      "ar": "مساحة شبه المنحرف هي نصف مجموع القاعدتَين مضروبًا في الارتفاع: قاعدة واحدة أو المجموع كاملًا لا يصلحان"
+    },
+    "competency": "math.mes.aires"
+  },
+  "math.mes.aire-losange-sans-moitie": {
+    "subject": "math",
+    "labels": {
+      "fr": "L'aire d'un losange est le DEMI-produit de ses diagonales : oublier la moitié double le résultat",
+      "en": "A rhombus area is HALF the product of its diagonals: forgetting the half doubles the answer",
+      "ar": "مساحة المعيّن هي نصف جداء قطرَيه: نسيان النصف يضاعف النتيجة"
+    },
+    "competency": "math.mes.aires"
+  },
+  "math.alg.reponse-a-l-autre-inconnue": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu donnes une autre grandeur que celle demandée — l'autre inconnue, ou un résultat intermédiaire : relis la question avant de choisir",
+      "en": "You give a different quantity from the one asked — the other unknown, or an intermediate result: read the question again before choosing",
+      "ar": "تعطي مقدارًا غير المطلوب — المجهول الآخر أو نتيجة وسيطة: أعد قراءة السؤال قبل الاختيار"
+    }
   }
 }

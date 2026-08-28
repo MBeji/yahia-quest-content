@@ -1,0 +1,91 @@
+{
+  "title": "⭐⭐ تمرين مراجعة: القيمة المطلقة (نمط امتحان)",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 70,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "إذا كان x عددًا حقيقيًّا سالبًا، فما هي القيمة المطلقة |x| ؟",
+      "options": [
+        { "id": "a", "text": "تساوي العدد x نفسه", "misconceptionTag": "math.num.valeur-absolue-negative" },
+        { "id": "b", "text": "تساوي −x وهو عدد موجب" },
+        { "id": "c", "text": "تساوي 0 مهما كان x" },
+        { "id": "d", "text": "تساوي عددًا سالبًا أيضًا", "misconceptionTag": "math.num.valeur-absolue-negative" }
+      ],
+      "correctOption": "b",
+      "explanation": "إذا كان x سالبًا فإنّ |x| = −x . والكتابة −x هنا ليست عددًا سالبًا: مع x = −6 نجد −x = 6 . القيمة المطلقة موجبة أو معدومة دائمًا.",
+      "difficulty": 1,
+      "competencies": ["math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "أوجد كلّ الأعداد الحقيقية x بحيث |−x| = |2/3| .",
+      "options": [
+        { "id": "a", "text": "x = 3/2 أو x = −3/2", "misconceptionTag": "math.num.oppose-inverse-confondus" },
+        { "id": "b", "text": "x = 2/3 أو x = −2/3" },
+        { "id": "c", "text": "x = −2/3 فقط لا غير", "misconceptionTag": "math.num.valeur-absolue-solution-unique" },
+        { "id": "d", "text": "لا يوجد أيّ حلّ بسبب إشارة الناقص في −x", "misconceptionTag": "math.num.valeur-absolue-negative" }
+      ],
+      "correctOption": "b",
+      "explanation": "العددان x و −x لهما البعد نفسه عن المبدأ، إذن |−x| = |x| . والعدد 2/3 موجب فـ |2/3| = 2/3 . تصبح المساواة |x| = 2/3 ولها حلّان: x = 2/3 أو x = −2/3 . والخطآن الشائعان هما قلب الكسر، والاكتفاء بالحلّ السالب بسبب إشارة الناقص في −x .",
+      "difficulty": 2,
+      "competencies": ["math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "أوجد كلّ الأعداد الحقيقية x بحيث |x| = √11 .",
+      "options": [
+        { "id": "a", "text": "x = 11 أو x = −11", "misconceptionTag": "math.num.racine-et-carre-confondus" },
+        { "id": "b", "text": "x = √11 فقط لا غير", "misconceptionTag": "math.num.valeur-absolue-solution-unique" },
+        { "id": "c", "text": "x = √11 أو x = −√11" },
+        { "id": "d", "text": "لا يوجد أيّ حلّ في ℝ", "misconceptionTag": "math.num.valeur-absolue-negative" }
+      ],
+      "correctOption": "c",
+      "explanation": "العدد √11 موجب، إذن للمساواة حلّان: x = √11 أو x = −√11 ، وهما العددان اللذان بعدهما عن المبدأ يساوي √11 . الخطأ الشائع هو تربيع الطرف الأيمن.",
+      "difficulty": 2,
+      "competencies": ["math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "أيّ من الأعداد التالية هو الأبعد عن المبدأ على المستقيم المدرّج؟",
+      "options": [
+        { "id": "a", "text": "−8" },
+        { "id": "b", "text": "7", "misconceptionTag": "math.num.ordre-des-negatifs-inverse" },
+        { "id": "c", "text": "5" },
+        { "id": "d", "text": "−3" }
+      ],
+      "correctOption": "a",
+      "explanation": "البعد عن المبدأ هو القيمة المطلقة: |−8| = 8 و |7| = 7 و |5| = 5 و |−3| = 3 . إذن العدد −8 هو الأبعد، رغم أنّه الأصغر ترتيبًا: البعد لا يهتمّ بالجهة.",
+      "difficulty": 2,
+      "competencies": ["math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "ما قيمة |1/(−7)| ؟",
+      "options": [
+        { "id": "a", "text": "−1/7", "misconceptionTag": "math.num.valeur-absolue-negative" },
+        { "id": "b", "text": "7", "misconceptionTag": "math.num.oppose-inverse-confondus" },
+        { "id": "c", "text": "−7", "misconceptionTag": "math.num.oppose-inverse-confondus" },
+        { "id": "d", "text": "1/7" }
+      ],
+      "correctOption": "d",
+      "explanation": "نطبّق خاصيّة المقلوب: |1/b| = 1/|b| ، ومنه |1/(−7)| = 1/|−7| = 1/7 . القيمة المطلقة تحذف الإشارة ولا تقلب الكسر.",
+      "difficulty": 2,
+      "competencies": ["math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "على مستقيم مدرّج (OI) ، فاصلة A هي 2 وفاصلة B هي −3/2 . ما هو البعد AB ؟",
+      "options": [
+        { "id": "a", "text": "7/2" },
+        { "id": "b", "text": "1/2" },
+        { "id": "c", "text": "−7/2", "misconceptionTag": "math.num.valeur-absolue-negative" },
+        { "id": "d", "text": "3" }
+      ],
+      "correctOption": "a",
+      "explanation": "البعد هو القيمة المطلقة للفرق بين الفاصلتين: AB = |−3/2 − 2| = |−7/2| = 7/2 . الخطأ الشائع هو حساب 2 − 3/2 = 1/2 بإهمال إشارة الفاصلة −3/2 .",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.num.relatifs-operations"
+      ]
+    }
+  ]
+}

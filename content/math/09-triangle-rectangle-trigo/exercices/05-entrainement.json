@@ -9,10 +9,10 @@
     {
       "prompt": "في المثلث ABC القائم في B، AB = 8 cm وBC = 6 cm. ما طول الوتر AC؟",
       "options": [
-        { "id": "a", "text": "√14 cm" },
-        { "id": "b", "text": "100 cm" },
+        { "id": "a", "text": "√14 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" },
+        { "id": "b", "text": "100 cm", "misconceptionTag": "math.geo.pythagore-racine-oubliee" },
         { "id": "c", "text": "10 cm" },
-        { "id": "d", "text": "14 cm" }
+        { "id": "d", "text": "14 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" }
       ],
       "correctOption": "c",
       "explanation": "بنظرية فيثاغورس: AC² = AB² + BC² = 64 + 36 = 100، إذن AC = √100 = 10 cm. هذه الثلاثية المشهورة (6 ; 8 ; 10) من مضاعفات (3 ; 4 ; 5).",
@@ -22,10 +22,10 @@
     {
       "prompt": "في المثلث ABC القائم في B، AC = 13 cm وAB = 5 cm. ما طول BC؟",
       "options": [
-        { "id": "a", "text": "8 cm" },
+        { "id": "a", "text": "8 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" },
         { "id": "b", "text": "12 cm" },
-        { "id": "c", "text": "18 cm" },
-        { "id": "d", "text": "√194 cm" }
+        { "id": "c", "text": "18 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" },
+        { "id": "d", "text": "√194 cm", "misconceptionTag": "math.geo.hypotenuse-mal-choisie" }
       ],
       "correctOption": "b",
       "explanation": "AC هو الوتر. بفيثاغورس: AC² = AB² + BC² → 13² = 5² + BC² → 169 = 25 + BC² → BC² = 144 → BC = 12 cm. الثلاثية (5 ; 12 ; 13).",
@@ -35,9 +35,9 @@
     {
       "prompt": "مثلث أضلاعه 7 cm و9 cm و11 cm. هل هو قائم الزاوية؟",
       "options": [
-        { "id": "a", "text": "نعم، لأنّ 7 + 9 > 11" },
+        { "id": "a", "text": "نعم، لأنّ 7 + 9 > 11", "misconceptionTag": "math.geo.pythagore-sans-carres" },
         { "id": "b", "text": "نعم، لأنّ 7² + 9² ≈ 11² والفرق ضئيل" },
-        { "id": "c", "text": "لا، لأنّ 7 + 9 ≠ 11" },
+        { "id": "c", "text": "لا، لأنّ 7 + 9 ≠ 11", "misconceptionTag": "math.geo.pythagore-sans-carres" },
         { "id": "d", "text": "لا، لأنّ 7² + 9² ≠ 11²" }
       ],
       "correctOption": "d",
@@ -49,8 +49,8 @@
       "prompt": "في مثلث قائم، الزاوية الحادّة A تحقّق جا(A) = 1/2. ما قيمة A؟",
       "options": [
         { "id": "a", "text": "30°" },
-        { "id": "b", "text": "45°" },
-        { "id": "c", "text": "60°" },
+        { "id": "b", "text": "45°", "misconceptionTag": "math.geo.valeurs-remarquables-confondues" },
+        { "id": "c", "text": "60°", "misconceptionTag": "math.geo.valeurs-remarquables-confondues" },
         { "id": "d", "text": "90°" }
       ],
       "correctOption": "a",
@@ -63,7 +63,7 @@
       "options": [
         { "id": "a", "text": "7 cm" },
         { "id": "b", "text": "7√2 cm" },
-        { "id": "c", "text": "7√3 cm" },
+        { "id": "c", "text": "7√3 cm", "misconceptionTag": "math.geo.cosinus-sinus-confondus" },
         { "id": "d", "text": "28 cm" }
       ],
       "correctOption": "a",
@@ -76,8 +76,8 @@
       "options": [
         { "id": "a", "text": "1" },
         { "id": "b", "text": "√2/2" },
-        { "id": "c", "text": "1/2" },
-        { "id": "d", "text": "√3/2" }
+        { "id": "c", "text": "1/2", "misconceptionTag": "math.geo.valeurs-remarquables-confondues" },
+        { "id": "d", "text": "√3/2", "misconceptionTag": "math.geo.valeurs-remarquables-confondues" }
       ],
       "correctOption": "b",
       "explanation": "جتا(x) = √2/2 يعني x = 45°. إذن جا(45°) = √2/2. التحقّق بالعلاقة الأساسية: جا²(x) + جتا²(x) = 1/2 + 1/2 = 1 ✓. الخطأ الشائع: الظنّ أنّ جا(x) يجب أن يخالف جتا(x) فاختيار 1/2 — عند 45° (وعندها فقط) يتساوى الجيب وجيب التمام.",

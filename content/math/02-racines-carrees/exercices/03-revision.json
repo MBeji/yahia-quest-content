@@ -11,11 +11,11 @@
       "options": [
         { "id": "a", "text": "9√5" },
         { "id": "b", "text": "3√15" },
-        { "id": "c", "text": "5√3" },
+        { "id": "c", "text": "5√3", "misconceptionTag": "math.num.racine-extraction-facteur-inversee" },
         { "id": "d", "text": "3√5" }
       ],
       "correctOption": "d",
-      "explanation": "نحلّل 45 إلى جداء يحتوي مربّعًا كاملًا: 45 = 9 × 5. إذن √45 = √(9 × 5) = √9 × √5 = 3√5. تحقّق: (3√5)² = 9 × 5 = 45 ✓. الخيار (a) نسي أنّ √9 = 3، و(c) بدّل العاملين، و(b) حلّل 45 = 3 × 15 وأخرج 3 رغم أنّه ليس مربّعًا كاملًا.",
+      "explanation": "نحلّل 45 إلى جداء يحتوي مربّعًا كاملًا: 45 = 9 × 5. إذن √45 = √(9 × 5) = √9 × √5 = 3√5. تحقّق: (3√5)² = 9 × 5 = 45 ✓. أمّا 9√5 فقد نسي أنّ √9 = 3، و5√3 بدّل العاملين، و3√15 حلّل 45 = 3 × 15 وأخرج 3 رغم أنّه ليس مربّعًا كاملًا.",
       "difficulty": 2,
       "competencies": ["math.num.racines-calcul"]
     },
@@ -35,22 +35,22 @@
     {
       "prompt": "ما قيمة √8 + √18 ؟",
       "options": [
-        { "id": "a", "text": "√26" },
+        { "id": "a", "text": "√26", "misconceptionTag": "math.num.racine-distribuee-sur-somme" },
         { "id": "b", "text": "3√6" },
         { "id": "c", "text": "5√2" },
         { "id": "d", "text": "2√26" }
       ],
       "correctOption": "c",
-      "explanation": "نبسّط كلّ جذر: √8 = √(4×2) = 2√2 ، و√18 = √(9×2) = 3√2. إذن √8 + √18 = 2√2 + 3√2 = 5√2. الخيار (a) خاطئ لأنّ √(a)+√(b) ≠ √(a+b).",
+      "explanation": "نبسّط كلّ جذر: √8 = √(4×2) = 2√2 ، و√18 = √(9×2) = 3√2. إذن √8 + √18 = 2√2 + 3√2 = 5√2. أمّا √26 فخاطئ لأنّ √(a)+√(b) ≠ √(a+b).",
       "difficulty": 3,
       "competencies": ["math.num.racines-calcul"]
     },
     {
       "prompt": "ما قيمة √((−5)²) ؟",
       "options": [
-        { "id": "a", "text": "−5" },
+        { "id": "a", "text": "−5", "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue" },
         { "id": "b", "text": "5" },
-        { "id": "c", "text": "25" },
+        { "id": "c", "text": "25", "misconceptionTag": "math.num.racine-et-carre-confondus" },
         { "id": "d", "text": "−25" }
       ],
       "correctOption": "b",
@@ -61,7 +61,7 @@
     {
       "prompt": "في مثلّث قائم الزاوية، ضلعاه القائمان يساويان 6 cm و8 cm. ما طول الوتر؟",
       "options": [
-        { "id": "a", "text": "√14 cm" },
+        { "id": "a", "text": "√14 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" },
         { "id": "b", "text": "7 cm" },
         { "id": "c", "text": "√48 cm" },
         { "id": "d", "text": "10 cm" }
@@ -76,11 +76,11 @@
       "options": [
         { "id": "a", "text": "3" },
         { "id": "b", "text": "9" },
-        { "id": "c", "text": "√48" },
+        { "id": "c", "text": "√48", "misconceptionTag": "math.num.racine-distribuee-sur-somme" },
         { "id": "d", "text": "3√6" }
       ],
       "correctOption": "a",
-      "explanation": "نطبّق خاصيّة جذر خارج القسمة: √54 / √6 = √(54 / 6) = √9 = 3 ✓. الخيار (b) نسي أخذ الجذر بعد القسمة، و(c) طرح ما تحت الجذرين (54 − 6 = 48) وهو خطأ شائع، و(d) بسّط √54 = 3√6 ثمّ نسي القسمة على √6.",
+      "explanation": "نطبّق خاصيّة جذر خارج القسمة: √54 / √6 = √(54 / 6) = √9 = 3 ✓. أمّا 9 فقد نسي أخذ الجذر بعد القسمة، و√48 طرح ما تحت الجذرين (54 − 6 = 48) وهو خطأ شائع، و3√6 بسّط √54 = 3√6 ثمّ نسي القسمة على √6.",
       "difficulty": 2,
       "competencies": ["math.num.racines-calcul"]
     }

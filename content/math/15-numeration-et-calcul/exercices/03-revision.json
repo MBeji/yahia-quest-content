@@ -1,0 +1,104 @@
+{
+  "title": "⭐⭐ تمرين مراجعة: التعداد والحساب (نمط امتحان)",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 70,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "كم عددا يتكوّن من رقمين مختلفين مأخوذين من بين الأرقام 3 و 5 و 8؟",
+      "options": [
+        { "id": "a", "text": "3" },
+        { "id": "b", "text": "9", "misconceptionTag": "math.prob.denombrement-repetition-ignoree" },
+        { "id": "c", "text": "6" },
+        { "id": "d", "text": "8" }
+      ],
+      "correctOption": "c",
+      "explanation": "رقم العشرات له 3 اختيارات، ثمّ رقم الآحاد له اختياران فقط لأنّ الرقمين مختلفان: 3 × 2 = 6 أعداد، وهي 35 و38 و53 و58 و83 و85. (الخطأ الشائع: 9 يوافق حالة السماح بتكرار الرقم.)",
+      "difficulty": 2,
+      "competencies": ["math.num.entiers-lecture-ecriture"]
+    },
+    {
+      "prompt": "للذهاب من المدينة A إلى المدينة B توجد 3 طرقات، ومن المدينة B إلى المدينة C توجد 4 طرقات. كم مسارا مختلفا يمكن أن يسلكه مسافر من A إلى C مرورا بـ B؟\n<svg viewBox=\"0 0 300 160\"><path d=\"M 45 80 Q 97 -8 150 80\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2.5\"/><path d=\"M 45 80 L 150 80\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2.5\"/><path d=\"M 45 80 Q 97 168 150 80\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2.5\"/><path d=\"M 150 80 Q 202 -28 255 80\" fill=\"none\" stroke=\"#6d28d9\" stroke-width=\"2.5\"/><path d=\"M 150 80 Q 202 36 255 80\" fill=\"none\" stroke=\"#6d28d9\" stroke-width=\"2.5\"/><path d=\"M 150 80 Q 202 124 255 80\" fill=\"none\" stroke=\"#6d28d9\" stroke-width=\"2.5\"/><path d=\"M 150 80 Q 202 188 255 80\" fill=\"none\" stroke=\"#6d28d9\" stroke-width=\"2.5\"/><circle cx=\"45\" cy=\"80\" r=\"18\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><circle cx=\"150\" cy=\"80\" r=\"18\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><circle cx=\"255\" cy=\"80\" r=\"18\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><text x=\"45\" y=\"86\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">A</text><text x=\"150\" y=\"86\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">B</text><text x=\"255\" y=\"86\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">C</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "7",
+          "misconceptionTag": "math.prob.denombrement-somme-au-lieu-de-produit"
+        },
+        { "id": "b", "text": "12" },
+        { "id": "c", "text": "16" },
+        { "id": "d", "text": "24" }
+      ],
+      "correctOption": "b",
+      "explanation": "شجرة الاختيار على مستويين: المرحلة الأولى فيها 3 اختيارات، ويتفرّع كلّ اختيار منها إلى 4 اختيارات في المرحلة الثانية. عدد الأغصان النهائية هو 3 × 4 = 12 مسارا. (الأخطاء الشائعة: 7 يوافق جمع الاختيارات بدل ضربها، و16 يوافق استعمال العدد 4 في المرحلتين، و24 يوافق إضافة مسارات العودة.)",
+      "difficulty": 2,
+      "competencies": ["math.num.operations-entiers"]
+    },
+    {
+      "prompt": "نعتبر العدد 48 = 2⁴ × 3. كم قاسما له؟",
+      "options": [
+        { "id": "a", "text": "8", "misconceptionTag": "math.num.diviseurs-un-et-lui-meme-oublies" },
+        { "id": "b", "text": "10" },
+        { "id": "c", "text": "9" },
+        { "id": "d", "text": "12" }
+      ],
+      "correctOption": "b",
+      "explanation": "بما أنّ 48 = 2⁴ × 3، فكلّ قاسم للعدد 48 هو جذاء عامل من بين 1 و2 و4 و8 و16 (خمسة اختيارات) في عامل من بين 1 و3 (اختياران): شجرة الاختيار تعطي 5 × 2 = 10 قواسم، وهي 1 و2 و3 و4 و6 و8 و12 و16 و24 و48.",
+      "difficulty": 2,
+      "competencies": ["math.num.multiples-diviseurs"]
+    },
+    {
+      "prompt": "في العدد 419ab، يمثّل a رقم العشرات و b رقم الآحاد. ما هي كلّ القيم التي تجعل العدد قابلا للقسمة على 12 وعلى 15 في نفس الوقت؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "b = 0 و a من بين 1 و 4 و 7",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "b",
+          "text": "b = 0 و a من بين 0 و 6",
+          "misconceptionTag": "math.num.critere-somme-applique-au-chiffre"
+        },
+        {
+          "id": "c",
+          "text": "b = 5 و a = 4",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        { "id": "d", "text": "b = 0 و a = 4" }
+      ],
+      "correctOption": "d",
+      "explanation": "ليقبل العدد القسمة على 12 وعلى 15 معا يكفي أن يقبل القسمة على 3 و4 و5. القسمة على 5 تفرض b = 0. القسمة على 4 تفرض أن يكون العدد المكوّن من آخر رقمين، أي الذي عشراته a وآحاده 0، مضاعفا للعدد 4، فيجب أن يكون a زوجيا. القسمة على 3: مجموع الأرقام المعروفة هو 4 + 1 + 9 = 14، فيجب أن يكون 14 + a مضاعفا للعدد 3، أي a من بين 1 و4 و7. المشترك مع «a زوجي» هو a = 4 وحده، والعدد هو 41 940 = 12 × 3 495 = 15 × 2 796.",
+      "difficulty": 3,
+      "competencies": ["math.num.criteres-divisibilite"]
+    },
+    {
+      "prompt": "نعتبر العدد M المكوّن من كتابة الأعداد من 1 إلى 12 متتالية، أي M = 123456789101112. أيّ العبارات صحيحة؟",
+      "options": [
+        { "id": "a", "text": "M يقبل القسمة على 12 ولا يقبل القسمة على 15" },
+        { "id": "b", "text": "M يقبل القسمة على 15 ولا يقبل القسمة على 12" },
+        { "id": "c", "text": "M يقبل القسمة على 12 وعلى 15 في نفس الوقت" },
+        { "id": "d", "text": "M لا يقبل القسمة على 12 ولا على 15" }
+      ],
+      "correctOption": "a",
+      "explanation": "مجموع أرقام M هو 51: الأرقام من 1 إلى 9 مجموعها 45، ثمّ 1 + 0 + 1 + 1 + 1 + 2 = 6. والعدد 51 مضاعف للعدد 3. والعدد المكوّن من آخر رقمين هو 12 وهو مضاعف للعدد 4، إذن M يقبل القسمة على 12. لكنّ رقم آحاده 2 ليس 0 ولا 5، فلا يقبل القسمة على 5، وبالتالي لا يقبل القسمة على 15.",
+      "difficulty": 3,
+      "competencies": ["math.num.criteres-divisibilite", "math.num.entiers-lecture-ecriture"]
+    },
+    {
+      "prompt": "الشكل التالي سداسي ABCDEF. كم قطرا له؟ (القطر قطعة مستقيم تربط قمّتين غير متتاليتين)\n<svg viewBox=\"0 0 210 200\"><polygon points=\"105,30 165.6,65 165.6,135 105,170 44.4,135 44.4,65\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2.5\"/><circle cx=\"105\" cy=\"30\" r=\"4\" fill=\"#1d4ed8\"/><circle cx=\"165.6\" cy=\"65\" r=\"4\" fill=\"#1d4ed8\"/><circle cx=\"165.6\" cy=\"135\" r=\"4\" fill=\"#1d4ed8\"/><circle cx=\"105\" cy=\"170\" r=\"4\" fill=\"#1d4ed8\"/><circle cx=\"44.4\" cy=\"135\" r=\"4\" fill=\"#1d4ed8\"/><circle cx=\"44.4\" cy=\"65\" r=\"4\" fill=\"#1d4ed8\"/><text x=\"105\" y=\"20\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\" direction=\"ltr\" unicode-bidi=\"isolate\">A</text><text x=\"184\" y=\"60\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\" direction=\"ltr\" unicode-bidi=\"isolate\">B</text><text x=\"184\" y=\"146\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\" direction=\"ltr\" unicode-bidi=\"isolate\">C</text><text x=\"105\" y=\"188\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\" direction=\"ltr\" unicode-bidi=\"isolate\">D</text><text x=\"27\" y=\"146\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\" direction=\"ltr\" unicode-bidi=\"isolate\">E</text><text x=\"27\" y=\"60\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\" direction=\"ltr\" unicode-bidi=\"isolate\">F</text></svg>",
+      "options": [
+        { "id": "a", "text": "6" },
+        { "id": "b", "text": "12" },
+        { "id": "c", "text": "9" },
+        { "id": "d", "text": "15" }
+      ],
+      "correctOption": "c",
+      "explanation": "من كلّ قمّة نستبعد القمّة نفسها وجارتيها، فيبقى 3 قمم يمكن ربطها بقطر: 3 أقطار من كلّ قمّة. عدد القمم 6، فنحصل على 6 × 3 = 18، لكنّ كلّ قطر عُدّ مرّتين (مرّة من كلّ طرف)، فالعدد هو 18 ÷ 2 = 9.",
+      "difficulty": 3,
+      "competencies": ["math.num.operations-entiers"]
+    }
+  ]
+}

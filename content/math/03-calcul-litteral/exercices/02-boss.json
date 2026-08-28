@@ -9,13 +9,13 @@
     {
       "prompt": "ما الصورة المعمَّلة للعبارة x² − 25 ؟",
       "options": [
-        { "id": "a", "text": "(x − 5)²" },
+        { "id": "a", "text": "(x − 5)²", "misconceptionTag": "math.alg.difference-carres-confondue" },
         { "id": "b", "text": "(x + 5)(x − 5)" },
         { "id": "c", "text": "x(x − 25)" },
         { "id": "d", "text": "(x + 25)(x − 1)" }
       ],
       "correctOption": "b",
-      "explanation": "x² − 25 = x² − 5²، وهذا فرق مربّعين: a² − b² = (a − b)(a + b) حيث a = x و b = 5، إذن النتيجة (x − 5)(x + 5). الخيار (c) يعامل x وكأنّه عامل مشترك، لكنّ نشره يعطي x² − 25x لا x² − 25.",
+      "explanation": "x² − 25 = x² − 5²، وهذا فرق مربّعين: a² − b² = (a − b)(a + b) حيث a = x و b = 5، إذن النتيجة (x − 5)(x + 5). أمّا x(x − 25) فيعامل x وكأنّه عامل مشترك، لكنّ نشره يعطي x² − 25x لا x² − 25.",
       "difficulty": 2,
       "competencies": ["math.alg.factorisation", "math.alg.identites-remarquables"]
     },
@@ -23,8 +23,8 @@
       "prompt": "ما الصورة المعمَّلة للعبارة x² + 10x + 25 ؟",
       "options": [
         { "id": "a", "text": "(x + 5)²" },
-        { "id": "b", "text": "(x − 5)²" },
-        { "id": "c", "text": "(x + 5)(x − 5)" },
+        { "id": "b", "text": "(x − 5)²", "misconceptionTag": "math.alg.carre-difference-signes" },
+        { "id": "c", "text": "(x + 5)(x − 5)", "misconceptionTag": "math.alg.difference-carres-confondue" },
         { "id": "d", "text": "(x + 10)(x + 15)" }
       ],
       "correctOption": "a",
@@ -35,7 +35,7 @@
     {
       "prompt": "ما قيمة (x + 3)² − (x − 3)² ؟",
       "options": [
-        { "id": "a", "text": "0" },
+        { "id": "a", "text": "0", "misconceptionTag": "math.alg.carre-difference-signes" },
         { "id": "b", "text": "12x" },
         { "id": "c", "text": "18" },
         { "id": "d", "text": "2x² + 18" }
@@ -62,9 +62,9 @@
       "prompt": "ما الصورة المعمَّلة للعبارة 4x² − 12x + 9 ؟",
       "options": [
         { "id": "a", "text": "(2x − 3)²" },
-        { "id": "b", "text": "(2x + 3)²" },
+        { "id": "b", "text": "(2x + 3)²", "misconceptionTag": "math.alg.carre-difference-signes" },
         { "id": "c", "text": "(4x − 3)(x − 3)" },
-        { "id": "d", "text": "(2x − 3)(2x + 3)" }
+        { "id": "d", "text": "(2x − 3)(2x + 3)", "misconceptionTag": "math.alg.difference-carres-confondue" }
       ],
       "correctOption": "a",
       "explanation": "4x² − 12x + 9 = (2x)² − 2(2x)(3) + 3²، وهذه مربّع الفرق: (a − b)² حيث a = 2x و b = 3، إذن (2x − 3)².",
@@ -74,13 +74,13 @@
     {
       "prompt": "أيّ العبارتين التاليتين متساويتان لـ (a + b)² ؟",
       "options": [
-        { "id": "a", "text": "a² + b²" },
+        { "id": "a", "text": "a² + b²", "misconceptionTag": "math.alg.carre-somme-sans-double-produit" },
         { "id": "b", "text": "a² + 2ab + b²" },
-        { "id": "c", "text": "a² − 2ab + b²" },
-        { "id": "d", "text": "(a − b)(a + b)" }
+        { "id": "c", "text": "a² − 2ab + b²", "misconceptionTag": "math.alg.carre-difference-signes" },
+        { "id": "d", "text": "(a − b)(a + b)", "misconceptionTag": "math.alg.difference-carres-confondue" }
       ],
       "correctOption": "b",
-      "explanation": "(a + b)² = a² + 2ab + b² بالبرهان المباشر. الخيار (a) ناقصه الحدّ 2ab، و(c) هو (a−b)²، و(d) هو a²−b².",
+      "explanation": "(a + b)² = a² + 2ab + b² بالبرهان المباشر. أمّا a² + b² فناقصه الحدّ 2ab، وa² − 2ab + b² هو (a−b)²، و(a − b)(a + b) هو a²−b².",
       "difficulty": 1,
       "competencies": ["math.alg.identites-remarquables"]
     }

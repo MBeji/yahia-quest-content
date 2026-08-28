@@ -1,0 +1,88 @@
+{
+  "title": "📝 تدريب ⭐⭐⭐: التعداد والحساب (مراجعة شاملة)",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "ما كمّ مجموعة الحروف المكوّنة لكلمة «تعداد»؟",
+      "options": [
+        { "id": "a", "text": "5", "misconceptionTag": "math.prob.denombrement-repetition-ignoree" },
+        { "id": "b", "text": "3" },
+        { "id": "c", "text": "6" },
+        { "id": "d", "text": "4" }
+      ],
+      "correctOption": "d",
+      "explanation": "كلمة «تعداد» تُكتب بخمسة حروف لكنّ الحرف د يتكرّر، والمجموعة لا تحوي العنصر نفسه مرّتين. المجموعة هي { ت، ع، د، ا } وكمّها 4.",
+      "difficulty": 2,
+      "competencies": ["math.num.multiples-diviseurs"]
+    },
+    {
+      "prompt": "أيّ الأعداد التالية يقبل القسمة على 6 وعلى 15 في نفس الوقت؟",
+      "options": [
+        { "id": "a", "text": "1 725", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
+        { "id": "b", "text": "2 340" },
+        { "id": "c", "text": "4 512", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
+        { "id": "d", "text": "3 350", "misconceptionTag": "math.num.divisibilite-un-seul-critere" }
+      ],
+      "correctOption": "b",
+      "explanation": "ليقبل عدد القسمة على 6 وعلى 15 معا يكفي أن يقبل القسمة على 2 و3 و5. العدد 2 340 رقم آحاده 0 (زوجي ومضاعف للعدد 5) ومجموع أرقامه 9 مضاعف للعدد 3، إذن 2 340 = 30 × 78. أمّا 1 725 ففردي، و4 512 لا يقبل القسمة على 5، و3 350 مجموع أرقامه 11 ليس مضاعفا للعدد 3.",
+      "difficulty": 3,
+      "competencies": ["math.num.criteres-divisibilite"]
+    },
+    {
+      "prompt": "في العدد 928a، حيث a رقم الآحاد، ما هي كلّ قيم a التي تجعل العدد قابلا للقسمة على 15؟",
+      "options": [
+        { "id": "a", "text": "الرقم 0 فقط" },
+        { "id": "b", "text": "الرقمان 0 و 5", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
+        { "id": "c", "text": "الأرقام 2 و 5 و 8" },
+        { "id": "d", "text": "الرقم 5 فقط" }
+      ],
+      "correctOption": "d",
+      "explanation": "القسمة على 5 تفرض أن يكون a إمّا 0 وإمّا 5. والقسمة على 3: مجموع الأرقام المعروفة هو 9 + 2 + 8 = 19، فيجب أن يكون 19 + a مضاعفا للعدد 3، أي a من بين 2 و5 و8. القيمة المشتركة الوحيدة هي a = 5، والعدد هو 9 285 = 15 × 619.",
+      "difficulty": 3,
+      "competencies": ["math.num.criteres-divisibilite"]
+    },
+    {
+      "prompt": "نعتبر العدد A = 5⁴⁰ + 5³⁹. ما التحليل الذي يبرّر أنّ A يقبل القسمة على 15؟",
+      "options": [
+        { "id": "a", "text": "A = 5³⁹ × 6، والعامل 5³⁹ يعطي القسمة على 5 والعامل 6 يعطي القسمة على 3" },
+        { "id": "b", "text": "A = 5³⁹ × 5، والعامل 5³⁹ يعطي القسمة على 5 والعامل 5 يعطي القسمة على 3" },
+        { "id": "c", "text": "A = 5⁷⁹، وكلّ قوّة للعدد 5 تقبل القسمة على 15 مهما كان الأسّ", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
+        { "id": "d", "text": "A = 5³⁹ × 4، والعامل 5³⁹ يعطي القسمة على 5 والعامل 4 يعطي القسمة على 3" }
+      ],
+      "correctOption": "a",
+      "explanation": "نُخرج 5³⁹ عاملا مشتركا: 5⁴⁰ + 5³⁹ = 5³⁹ × 5 + 5³⁹ × 1 = 5³⁹ × (5 + 1) = 5³⁹ × 6. العامل 5³⁹ يضمن القسمة على 5، والعامل 6 يضمن القسمة على 3، فـ A يقبل القسمة على 15. (تحقّق على مثال صغير: 5² + 5 = 30 = 15 × 2.) وتذكّر أنّ جمع قوّتين لا يجمع الأسّين.",
+      "difficulty": 3,
+      "competencies": ["math.num.operations-entiers", "math.num.criteres-divisibilite"]
+    },
+    {
+      "prompt": "كم عددا يتكوّن من رقمين فرديين مختلفين؟",
+      "options": [
+        { "id": "a", "text": "25", "misconceptionTag": "math.prob.denombrement-repetition-ignoree" },
+        { "id": "b", "text": "20" },
+        { "id": "c", "text": "45" },
+        { "id": "d", "text": "10", "misconceptionTag": "math.prob.tirage-simultane-et-successif-confondus" }
+      ],
+      "correctOption": "b",
+      "explanation": "رقم العشرات فردي: 5 اختيارات (1 و3 و5 و7 و9). ورقم الآحاد فردي ومختلف عن رقم العشرات: 4 اختيارات. شجرة الاختيار تعطي 5 × 4 = 20 عددا. (الخطأ الشائع: نسيان شرط الاختلاف يعطي 25.)",
+      "difficulty": 3,
+      "competencies": ["math.num.entiers-lecture-ecriture"]
+    },
+    {
+      "prompt": "من بين الأعداد التالية، أيّها «لا يقسم» الجذاء 3 × 5 × 7 × 8؟",
+      "options": [
+        { "id": "a", "text": "6" },
+        { "id": "b", "text": "8" },
+        { "id": "c", "text": "9" },
+        { "id": "d", "text": "4" }
+      ],
+      "correctOption": "c",
+      "explanation": "نقرأ العوامل مباشرة: الجذاء هو 3 × 5 × 7 × 8 = 840. العدد 9 = 3 × 3 يحتاج إلى عاملين اثنين من 3، والجذاء لا يحوي العامل 3 إلاّ مرّة واحدة (والعوامل 5 و7 و8 لا تعطي أيّ 3)، إذن 9 لا يقسم 840. أمّا البقيّة فتقسمه: العدد 6 = 2 × 3 (العامل 3 موجود والعامل 2 يأتي من 8)، والعدد 8 عامل من عوامل الجذاء، والعدد 4 يقسم العامل 8.",
+      "difficulty": 3,
+      "competencies": ["math.num.multiples-diviseurs"]
+    }
+  ]
+}

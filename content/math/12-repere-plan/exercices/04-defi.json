@@ -9,13 +9,25 @@
     {
       "prompt": "في معلّم متعامد ومتجانس، لدينا A(1 ; 1) وB(5 ; 2) وC(7 ; 6) وD(3 ; 5). احسب الشعاعين AB وDC ثمّ AD وBC، واستنتج طبيعة ABCD.",
       "options": [
-        { "id": "a", "text": "ABCD معيّن (لوزيّ الشكل) لأنّ AB = AD" },
-        { "id": "b", "text": "ABCD مستطيل لأنّ AB = DC وزواياه قائمة" },
+        {
+          "id": "a",
+          "text": "ABCD معيّن (لوزيّ الشكل) لأنّ AB = AD",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "id": "b",
+          "text": "ABCD مستطيل لأنّ AB = DC وزواياه قائمة",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
         {
           "id": "c",
           "text": "ABCD متوازي أضلاع لأنّ AB = DC (شعاعان)، وليس معيّنًا ولا مستطيلًا"
         },
-        { "id": "d", "text": "ABCD شبه منحرف فقط لأنّ ضلعًا واحدًا موازٍ للآخر" }
+        {
+          "id": "d",
+          "text": "ABCD شبه منحرف فقط لأنّ ضلعًا واحدًا موازٍ للآخر",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        }
       ],
       "correctOption": "c",
       "explanation": "نحسب: AB(5 − 1 ; 2 − 1) = AB(4 ; 1) وDC(7 − 3 ; 6 − 5) = DC(4 ; 1)، إذن AB = DC. كذلك AD(2 ; 4) وBC(2 ; 4) متساويان. استنتاج: ABCD متوازي أضلاع. — هل هو معيّن؟ AB = √(4² + 1²) = √17 وAD = √(2² + 4²) = √20، فالضلعان المتجاوران غير متساويين، ليس معيّنًا. — هل هو مستطيل؟ نختبر الزاوية A بعكس فيثاغورس في المثلّث ABD: AB² + AD² = 17 + 20 = 37، بينما BD² = (3 − 5)² + (5 − 2)² = 4 + 9 = 13. بما أنّ 37 ≠ 13 فالزاوية A ليست قائمة، ليس مستطيلًا. إذن ABCD متوازي أضلاع فحسب.",
@@ -25,7 +37,11 @@
     {
       "prompt": "I هي منتصف القطعة [AC] حيث I(2 ; 3) وA(−1 ; 1). أوجد إحداثيّات C، ثمّ احسب المسافة AC.",
       "options": [
-        { "id": "a", "text": "C(5 ; 5) والمسافة AC = √13" },
+        {
+          "id": "a",
+          "text": "C(5 ; 5) والمسافة AC = √13",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
         { "id": "b", "text": "C(5 ; 5) والمسافة AC = 2√13" },
         { "id": "c", "text": "C(3 ; 5) والمسافة AC = √20" },
         { "id": "d", "text": "C(5 ; 3) والمسافة AC = √40" }
@@ -82,7 +98,11 @@
       "prompt": "A(−3 ; 2) وB(1 ; −2). النقطة M هي مماثلة A بالنسبة إلى B (أي B منتصف [AM]). أوجد إحداثيّات M ثمّ احسب المسافة OM حيث O أصل المعلّم.",
       "options": [
         { "id": "a", "text": "M(5 ; −6) والمسافة OM = √61" },
-        { "id": "b", "text": "M(5 ; −6) والمسافة OM = 11" },
+        {
+          "id": "b",
+          "text": "M(5 ; −6) والمسافة OM = 11",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
         { "id": "c", "text": "M(−1 ; 0) والمسافة OM = 1" },
         { "id": "d", "text": "M(−7 ; 6) والمسافة OM = √85" }
       ],

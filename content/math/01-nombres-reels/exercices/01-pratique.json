@@ -15,38 +15,42 @@
         },
         {
           "id": "b",
-          "text": "ℤ"
+          "text": "ℤ",
+          "misconceptionTag": "math.num.appartenance-ensemble-confondue"
         },
         {
           "id": "c",
-          "text": "ℚ"
+          "text": "ℚ",
+          "misconceptionTag": "math.num.appartenance-ensemble-confondue"
         },
         {
           "id": "d",
-          "text": "ℝ"
+          "text": "ℝ",
+          "misconceptionTag": "math.num.appartenance-ensemble-confondue"
         }
       ],
       "correctOption": "a",
       "explanation": "ℕ هي مجموعة الأعداد الطبيعية (0 ; 1 ; 2 ; …) ولا تحتوي الأعداد السالبة، فالعدد −3 لا ينتمي إليها. أمّا ℤ وℚ وℝ فتحتوي جميعها العدد −3.",
       "difficulty": 1,
-      "competencies": [
-        "math.num.ensembles-nombres"
-      ]
+      "competencies": ["math.num.ensembles-nombres"]
     },
     {
       "prompt": "أيّ من الأعداد التالية عددٌ أصمّ (غير ناطق)؟",
       "options": [
         {
           "id": "a",
-          "text": "−5"
+          "text": "−5",
+          "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel"
         },
         {
           "id": "b",
-          "text": "0,25"
+          "text": "0,25",
+          "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel"
         },
         {
           "id": "c",
-          "text": "2/3"
+          "text": "2/3",
+          "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel"
         },
         {
           "id": "d",
@@ -56,17 +60,65 @@
       "correctOption": "d",
       "explanation": "√2 كتابته العشرية غير متناهية وغير دوريّة، فلا يمكن كتابته على شكل كسر، إذن هو عدد أصمّ. أمّا −5 فعدد صحيح، و0,25 = 1/4 و2/3 عددان ناطقان.",
       "difficulty": 1,
-      "competencies": [
-        "math.num.ensembles-nombres",
-        "math.num.racines-definition"
-      ]
+      "competencies": ["math.num.ensembles-nombres", "math.num.racines-definition"]
     },
     {
-      "prompt": "ما قيمة |−7| ؟",
+      "prompt": "ما الجذر التربيعي للعدد الكسري 9/25 ؟",
       "options": [
         {
           "id": "a",
-          "text": "−7"
+          "text": "3/25"
+        },
+        {
+          "id": "b",
+          "text": "9/50",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
+        },
+        {
+          "id": "c",
+          "text": "3/5"
+        },
+        {
+          "id": "d",
+          "text": "9/5"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الجذر التربيعي لعدد موجب هو العدد الموجب الذي مربّعه يساوي هذا العدد. نبحث إذن عن العدد الذي مربّعه 9/25، فنجد 3/5 لأنّ (3/5)² = 9/25. الأخطاء الشائعة: أخذ جذر البسط وحده وترك المقام كما هو فينتج 3/25، أو جذر المقام وحده فينتج 9/5، أو قسمة العدد على 2 بدل استخراج جذره فينتج 9/50.",
+      "difficulty": 1,
+      "competencies": ["math.num.racines-definition", "math.frac.sens"]
+    },
+    {
+      "prompt": "ما دور الكتابة العشرية الدوريّة للعدد الكسري 8/33 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "24"
+        },
+        {
+          "id": "c",
+          "text": "42"
+        },
+        {
+          "id": "d",
+          "text": "242"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نُنجز القسمة: 8 على 33 يعطي 0,242424… والمجموعة التي تتكرّر بانتظام هي 24، إذن الدور هو 24 ونكتب 8/33 = 0,(24). الخطأ الشائع: الاكتفاء بالرقم الأوّل 2، أو بدء القراءة من الرقم الثاني فيُظنّ أنّ الدور 42.",
+      "difficulty": 2,
+      "competencies": ["math.frac.sens"]
+    },
+    {
+      "prompt": "على المستقيم العددي، النقطة M فاصلتها 3. ما فاصلة النقطة M′ مناظرة M بالنسبة إلى أصل التدريج O ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3"
         },
         {
           "id": "b",
@@ -74,89 +126,36 @@
         },
         {
           "id": "c",
-          "text": "7"
+          "text": "1/3",
+          "misconceptionTag": "math.num.oppose-inverse-confondus"
         },
         {
           "id": "d",
-          "text": "14"
+          "text": "3"
         }
       ],
-      "correctOption": "c",
-      "explanation": "القيمة المطلقة هي البعد عن الصفر، وهي دائمًا موجبة: |−7| = 7 ✓. أمّا 14 فهو ضعف العدد، و−7 يخالف كون القيمة المطلقة لا تكون سالبة أبدًا.",
+      "correctOption": "a",
+      "explanation": "مناظر نقطة بالنسبة إلى الأصل O يقع على البعد نفسه من O لكن في الجهة الأخرى، فتنقلب إشارة الفاصلة: فاصلة M′ هي −3. أمّا 0 ففاصلة النقطة O نفسها، و1/3 هو مقلوب العدد لا مقابله، و3 هي فاصلة M.",
       "difficulty": 1,
-      "competencies": [
-        "math.num.valeur-absolue"
-      ]
-    },
-    {
-      "prompt": "إذا كان x < 5، فما الذي نحصل عليه بالضرب في (−2) ؟",
-      "options": [
-        {
-          "id": "a",
-          "text": "−2x < −10"
-        },
-        {
-          "id": "b",
-          "text": "−2x > −10"
-        },
-        {
-          "id": "c",
-          "text": "−2x = −10"
-        },
-        {
-          "id": "d",
-          "text": "−2x < 10"
-        }
-      ],
-      "correctOption": "b",
-      "explanation": "الضرب في عدد سالب يقلب اتّجاه عدم المساواة: من x < 5 نستنتج −2x > −10.",
-      "difficulty": 2,
-      "competencies": [
-        "math.num.ordre-encadrement",
-        "math.num.relatifs-operations"
-      ]
-    },
-    {
-      "prompt": "أيّ عدد ينتمي إلى المجال ]2 ; 5] ؟",
-      "options": [
-        {
-          "id": "a",
-          "text": "1"
-        },
-        {
-          "id": "b",
-          "text": "2"
-        },
-        {
-          "id": "c",
-          "text": "5"
-        },
-        {
-          "id": "d",
-          "text": "6"
-        }
-      ],
-      "correctOption": "c",
-      "explanation": "المجال ]2 ; 5] يعني 2 < x ≤ 5: العدد 2 غير مشمول (قوس متّجه) بينما 5 مشمول (قوس مربّع)، إذن 5 ينتمي إلى المجال بينما 1 و6 خارجه.",
-      "difficulty": 1,
-      "competencies": [
-        "math.num.ordre-encadrement"
-      ]
+      "competencies": ["math.num.relatifs-operations"]
     },
     {
       "prompt": "أيّ العبارات التالية صحيحة؟",
       "options": [
         {
           "id": "a",
-          "text": "كلّ عدد كسري هو عدد صحيح"
+          "text": "كلّ عدد كسري هو عدد صحيح",
+          "misconceptionTag": "math.num.inclusion-ensembles-inversee"
         },
         {
           "id": "b",
-          "text": "ℝ ⊂ ℚ"
+          "text": "ℝ ⊂ ℚ",
+          "misconceptionTag": "math.num.inclusion-ensembles-inversee"
         },
         {
           "id": "c",
-          "text": "كلّ عدد حقيقي هو عدد ناطق"
+          "text": "كلّ عدد حقيقي هو عدد ناطق",
+          "misconceptionTag": "math.num.inclusion-ensembles-inversee"
         },
         {
           "id": "d",
@@ -166,9 +165,7 @@
       "correctOption": "d",
       "explanation": "بما أنّ ℤ ⊂ ℚ، فإنّ كلّ عدد صحيح يمكن كتابته كسرًا (مثلًا 4 = 4/1)، لكن العكس غير صحيح، والاحتواء الصحيح هو ℚ ⊂ ℝ لا العكس.",
       "difficulty": 2,
-      "competencies": [
-        "math.num.ensembles-nombres"
-      ]
+      "competencies": ["math.num.ensembles-nombres"]
     }
   ]
 }

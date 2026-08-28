@@ -1,6 +1,9 @@
 # Étude 29 — Mode IA « à la clé de la famille » (BYOK) : la porte, le coffre et la Forge
 
-> **Statut** : brouillon — Q-1…Q-9 à arbitrer (§7)
+> **Statut** : **LIVRÉE** — les 5 lots le 2026-08-22 (arena#807), écarts et reste-à-faire au §8.
+> Validée — Q-1…Q-9 arbitrées le 2026-08-20 par Mohamed (§7 ; **cinq contre la
+> recommandation** : Q-2, Q-3, Q-4, Q-6, Q-7 — l'étude est réécrite en conséquence, mitigations
+> comprises). Prête à exécuter, lot 1 en premier.
 > **Priorité** : 29 · **Valeur** : l'étage IA du produit s'allume **sans budget plateforme et
 > sans sortir de la phase gratuite** — la famille qui veut l'IA branche sa propre clé et paie
 > son propre modèle ; le produit reste entier, à l'identique, pour celles qui n'en branchent
@@ -48,7 +51,8 @@ décision non prise se traduit par un rang 9 dans une file qui en compte plus.
 Le mode IA n'a pas besoin d'être financé par la plateforme pour exister. Il a besoin d'**une
 clé d'API valide**. Cette étude ouvre la voie où **c'est la famille qui la fournit** :
 
-- le parent colle sa clé (Anthropic, OpenAI, ou tout fournisseur compatible de la liste blanche)
+- le porteur colle sa clé (Anthropic, OpenAI, ou toute adresse compatible qui passe les
+  conditions de sortie de R-6)
   dans une console dédiée, choisit son modèle, pose un plafond mensuel ;
 - il **active** le mode pour tel ou tel de ses enfants liés ;
 - côté élève, le mode IA s'allume : explications personnalisées, chat cadré, plan commenté,
@@ -145,19 +149,35 @@ Tous calculables depuis les tables de cette étude — aucun tracker tiers.
 
 | Acteur                  | Ce qu'il peut faire                                                                                                                                                     |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Parent** (`role='parent'`) | Attacher / vérifier / remplacer / révoquer **une** clé ; choisir fournisseur + modèles ; poser les plafonds ; activer le mode par enfant lié ; lire la dépense et la qualité ; couper. **Seul acteur autorisé à saisir une clé en v1** (R-2, Q-2). |
-| **Élève** (`role='student'`) | Utiliser les surfaces IA **si** un parent lié les a activées pour lui ; voir son énergie ; ne voit **jamais** ni clé, ni fournisseur en clair, ni montant (R-14).      |
+| **Porteur de clé** (tout compte authentifié — Q-2) | Attacher / vérifier / remplacer / révoquer **une** clé ; choisir fournisseur + modèles ; poser les plafonds ; activer le mode pour ses élèves liés **et/ou pour lui-même** ; lire **sa** dépense et la qualité ; couper. Aucun filtre de rôle (R-2) ; l'avertissement est calibré sur le niveau scolaire du compte. |
+| **Élève sans clé à lui** (le cas d'un enfant) | Utiliser les surfaces IA **si** un porteur lié les a activées pour lui ; voir son énergie ; ne voit **jamais** ni clé, ni fournisseur en clair, ni montant (R-14a). |
 | **Admin**               | Couper globalement ou par famille ; lire l'agrégat (jamais un transcript, jamais une clé) ; voir les taux de rebut et de 👎 par modèle.                                    |
 | **Anonyme**             | Rien. Aucune surface IA hors `_authenticated`.                                                                                                                             |
 
-Surfaces nouvelles : **`/ia`** (console famille, route `_authenticated`, réservée aux rôles
-`parent`/`admin`) et **la Forge** (§2.3), atteignable depuis le hub d'un chapitre et depuis le
-dashboard élève. Les surfaces IA de é11 (panneau de review, chat, plan, bilans) restent chez é11
-et n'apparaissent pas ici.
+Surfaces nouvelles : **la rubrique « Réglages » (`/settings`)**, dont le **Mode IA** est une
+section — c'est là, et nulle part ailleurs, que la clé se saisit (D-16) — et **la Forge** (§2.3),
+atteignable depuis le hub d'un chapitre et depuis le dashboard élève. Les surfaces IA de é11
+(panneau de review, chat, plan, bilans) restent chez é11 et n'apparaissent pas ici.
+
+⚠️ **La rubrique Réglages n'existe pas encore** — constaté dans le moteur le 2026-08-17 : aucune
+route `settings`/`réglages`/`profil` sous `_authenticated`, et les préférences d'aujourd'hui sont
+éparpillées hors de toute page (sélecteur de langue et de thème dans l'en-tête, carte d'opt-in
+push dans la feature `notifications`). Le lot 2 la **crée**, avec le Mode IA pour première
+section. Deux conséquences fermes :
+
+1. **Le lot 2 crée la page, pas le déménagement.** Langue, thème, notifications et compte ont
+   vocation à y venir — ils **n'y viennent pas dans ce lot** (ce serait une refonte UX déguisée,
+   territoire é14/é15). Ils sont nommés ici pour que personne ne construise une seconde page de
+   réglages six semaines plus tard.
+2. **`/settings` doit être atteignable dans le shell parent.** Vérifié dans
+   `src/routes/_authenticated.tsx` : le parent a un shell **Suivi-only** (pas de nav de jeu, un
+   seul lien vers `/parent-report`). Si l'entrée Réglages n'est ajoutée qu'à la nav élève, le
+   propriétaire de la clé ne peut littéralement pas atteindre l'écran où il la saisit. C'est un
+   critère d'acceptation du lot 2, pas un détail d'intégration.
 
 ### 2.2 Parcours (user stories)
 
-- **US-1 — Attacher une clé.** `/ia` → « Activer le mode IA » → écran de consentement (§3.8,
+- **US-1 — Attacher une clé.** Réglages → section « Mode IA » → « Activer le mode IA » → écran de consentement (§3.8,
   texte versionné) → choix du fournisseur → collage de la clé → choix des modèles (liste curée +
   saisie libre d'un id) → plafonds (défauts proposés) → « Vérifier et enregistrer ».
 - **US-2 — Vérification.** À l'enregistrement, l'app émet **un** appel minimal (≤ 16 tokens de
@@ -175,7 +195,7 @@ et n'apparaissent pas ici.
   s'affiche. Aucune mention de clé, de fournisseur, de coût. Si le mode est éteint, **rien ne
   s'affiche du tout** — pas de bouton grisé, pas de teasing (R-1, R-14).
 - **US-6 — Forger un quiz** (§2.3).
-- **US-7 — Suivre la dépense.** `/ia` : dépense estimée du jour / du mois, par enfant et par
+- **US-7 — Suivre la dépense.** Réglages › Mode IA : dépense estimée du jour / du mois, par enfant et par
   surface, nombre d'appels, tokens, taux de rebut de la Forge, ratio 👍/👎, et l'avertissement
   permanent : **« estimation — la facture qui fait foi est celle de votre fournisseur »** (R-12).
 - **US-8 — Révoquer.** Un bouton, un effet immédiat : la ligne chiffrée est **supprimée**
@@ -234,12 +254,20 @@ jamais.
   devient conditionnée par une clé. Aucune surface IA n'est visible sans mode actif : pas de
   bouton grisé, pas d'appel à l'action, pas de « bientôt ». Testé : le rendu de chaque écran
   touché est identique, à l'octet de DOM près sur les zones concernées, mode éteint.
-- **R-2 — Seul un adulte lié attache une clé.** `role IN ('parent','admin')`, vérifié **en SQL**
-  dans la RPC d'écriture, jamais seulement dans l'UI. Un compte `student` ne peut pas en attacher
-  une, même en appelant la RPC directement (pgTAP obligatoire).
-- **R-3 — L'activation est explicite, par enfant, par surface.** Une clé enregistrée n'allume
-  rien. Le défaut de toute activation est **éteint**. Un enfant délié (`parent_student_links`
-  supprimé) perd l'accès **immédiatement** (résolu à chaque appel, jamais mis en cache côté client).
+- **R-2 — Tout compte authentifié peut attacher une clé, et l'avertissement est calibré sur ce
+  que l'app sait de lui** (Q-2, arbitrée le 2026-08-20 contre la recommandation, assumé). Aucun
+  filtre de rôle : un `student` comme un `parent` peut coller la sienne. En contrepartie, deux
+  choses ne sont pas négociables. **(a)** L'écran de saisie lit le **niveau scolaire du compte**
+  (`grades`, déjà en base) et, sous la 4ᵉ année secondaire, exige une confirmation explicite
+  qu'un adulte responsable est présent — un signal que l'app possède, au lieu d'un « je certifie
+  être majeur » que personne ne lit. **(b)** Le texte de consentement (R-20) est signé par
+  **celui qui attache**, et l'écran nomme la conséquence en une phrase : cette clé engage de
+  l'argent réel sur un compte qui n'est pas celui de l'app.
+- **R-3 — L'activation est explicite, par élève, par surface — y compris pour soi-même.** Une
+  clé enregistrée n'allume rien. Le défaut de toute activation est **éteint**. Deux formes
+  d'activation, une seule mécanique : le porteur de la clé active **ses élèves liés**
+  (`parent_student_links`), ou **lui-même** (auto-détention, ouverte par Q-2). Un élève délié
+  perd l'accès **immédiatement** (résolu à chaque appel, jamais mis en cache côté client).
 - **R-4 — La clé n'est jamais lisible.** Aucune API, aucune RPC, aucun log, aucune réponse
   d'erreur, aucun export ne rend la clé, en clair ou chiffrée. La console affiche `sk-…4f2a`
   (4 derniers caractères) et rien d'autre. Une clé enregistrée ne peut être que **remplacée**.
@@ -248,10 +276,26 @@ jamais.
   variable de module, ni trace d'erreur. Toute exception remontant d'un appel fournisseur est
   **re-typée** avant de sortir (annexe C) : le corps d'erreur brut du fournisseur n'est jamais
   propagé (certains y répètent un fragment de clé).
-- **R-6 — Le fournisseur est dans la liste blanche.** Fournisseur ∈ liste fermée ; `base_url`
-  d'un fournisseur compatible ∈ `AI_ALLOWED_HOSTS` (constante serveur), **https** obligatoire,
-  pas de littéral IP, pas de plage privée, aucune redirection suivie. Un hôte hors liste est
-  refusé à l'enregistrement **et** re-vérifié à chaque appel (RISK-7).
+- **R-6 — L'adresse est libre, la sortie est durcie** (Q-4, arbitrée le 2026-08-20 : liste
+  blanche écartée). Il n'y a **pas** de liste d'hôtes autorisés — mais un appel sortant n'est
+  émis que si **toutes** ces conditions tiennent, vérifiées à l'enregistrement **et** à chaque
+  appel :
+  1. **https**, port **443**, aucun autre schéma ni port ;
+  2. **pas de littéral IP** dans l'URL (ni v4, ni v6, ni forme décimale/octale) ;
+  3. **résolution DNS avant connexion**, et rejet si l'IP résolue tombe dans une plage privée,
+     loopback, lien-local, CGNAT, multicast, ou sur `169.254.169.254` — l'adresse de métadonnées
+     du cloud, la cible n° 1 d'un SSRF ;
+  4. **IP épinglée pour la connexion** : on se connecte à l'IP validée, pas au nom. Sans cela un
+     domaine peut changer de cible entre la vérification et l'appel (DNS rebinding) ;
+  5. **aucune redirection suivie** — un `302` vers l'adresse de métadonnées annulerait les
+     quatre points précédents à lui seul ;
+  6. **délai** (30 s) et **taille de réponse** (2 Mio) plafonnés ;
+  7. la requête ne porte **aucun identifiant de la plateforme** — seulement la clé de
+     l'utilisateur (déjà vrai, réaffirmé ici parce que c'est ce qui rend le reste supportable).
+  Une **liste de refus** (hôtes signalés) reste possible côté admin ; elle ne remplace aucune
+  des sept conditions. Conséquence à assumer et à écrire dans l'UI : **un modèle tournant sur la
+  machine de l'utilisateur ne marchera pas**, sauf exposé publiquement en https — l'interdiction
+  des réseaux privés ne se lève pas, c'est elle qui tient tout l'édifice (RISK-7).
 - **R-7 — Un appel IA porte toujours un payeur.** `payer ∈ ('family','platform')` est résolu
   server-side avant l'appel et écrit dans `ai_usage_events`. Aucun appel n'est émis sans payeur
   identifié — c'est la condition pour qu'aucune dépense ne soit orpheline.
@@ -265,10 +309,16 @@ jamais.
 - **R-10 — Bornes de tokens non négociables.** `maxTokens` par surface est une constante serveur
   (é11 §3.11) ; ni le parent, ni l'élève, ni le modèle configuré ne les modifient. Un contexte
   qui dépasse est tronqué par la règle de découpage, jamais élargi.
-- **R-11 — Double plafond monétaire, coupure atomique.** Avant **chaque** appel, la dépense
-  estimée du jour et du mois pour cette famille est comparée à ses plafonds, dans la même
-  transaction que la réservation d'énergie. Dépassement ⇒ appel non émis, dégradé é11 R-15,
-  parent notifié une fois. Le plafond mensuel par défaut n'est pas nul (Q-6).
+- **R-11 — Double plafond monétaire, coupure atomique, plus une alerte d'anomalie.** Avant
+  **chaque** appel, la dépense estimée du jour et du mois pour ce porteur de clé est comparée à
+  ses plafonds, dans la même transaction que la réservation d'énergie. Dépassement ⇒ appel non
+  émis, dégradé é11 R-15, porteur notifié une fois. Défauts arbitrés (Q-6) : **2 $/jour et
+  20 $/mois**. **Parce que ces plafonds sont larges, les alertes en pourcentage arrivent trop
+  tard** — 80 % de 20 $ se déclenche après 16 $ dépensés. S'y ajoute donc une **alerte
+  d'anomalie**, indépendante du plafond : une journée dont la dépense dépasse **3× la médiane
+  des sept jours précédents** (plancher : 0,50 $, pour ne pas alerter sur du bruit à faible
+  volume) prévient le porteur **le jour même**. C'est elle qui attrape une boucle, un abus ou un
+  bug — le plafond mensuel, lui, n'attrape que la conséquence.
 - **R-12 — Le montant affiché est une estimation, et le dit.** Calculé depuis les tokens
   rapportés par le fournisseur × une table de prix **datée** en code. Aucune surface ne le
   présente comme une facture ; la mention de renvoi au fournisseur est permanente, pas une
@@ -276,13 +326,33 @@ jamais.
 - **R-13 — Traçabilité du payeur dans la qualité.** `ai_usage_events` porte le `provider` et le
   `model` réels de chaque appel. Un 👎 ou un rebut est imputable au modèle qui l'a produit — sinon
   la console qualité mélange les fournisseurs et ne veut plus rien dire.
-- **R-14 — L'élève ne voit jamais d'argent.** Ni montant, ni token, ni nom de fournisseur, ni
-  « il te reste X appels ». Il voit l'énergie (mécanique de jeu, é11 R-12) et le contenu. Cette
-  règle est absolue, y compris dans les états d'erreur et les e-mails.
-- **R-15 — Le cache d'explications est privé à la famille** (D-9, Q-3). Une réponse produite par
-  la clé d'une famille n'est jamais servie à une autre. Le cache partagé de é11 (D-6) reste
-  valable pour le **payeur plateforme** uniquement ; les deux espaces sont disjoints, séparés par
-  une colonne, pas par une convention.
+- **R-14 — Celui qui paie voit sa dépense ; celui dont un autre paie ne voit que l'énergie.**
+  La règle initiale (« l'élève ne voit jamais d'argent ») devient contradictoire dès lors qu'un
+  élève peut porter sa propre clé (Q-2) : lui cacher ce qu'il dépense de son propre argent
+  serait pire que le lui montrer. Elle se scinde donc, sans rien perdre de sa protection :
+  **(a)** un élève dont la clé appartient à **quelqu'un d'autre** — le cas d'un enfant — ne voit
+  ni montant, ni token, ni nom de fournisseur, ni « il te reste X appels » : il voit l'énergie
+  (mécanique de jeu, é11 R-12) et le contenu, y compris dans les états d'erreur et les e-mails ;
+  **(b)** le **porteur** de la clé, quel que soit son rôle, voit sa dépense en entier. La
+  frontière est `ai_credentials.owner_user_id`, pas le rôle — donc elle est vérifiable en SQL et
+  testée comme telle.
+- **R-15 — Le cache d'explications est mutualisé, sous double condition d'entrée** (D-9 inversée
+  par Q-3, arbitrée le 2026-08-20). Une explication produite par n'importe quelle clé peut être
+  resservie à n'importe quel élève : le cache partagé de é11 (D-6) devient la règle unique, et
+  le cloisonnement par payeur disparaît. Trois garde-fous, sans lesquels le choix ne tient pas :
+  1. **Ce qui est mutualisé ne contient aucune donnée personnelle** — l'unité de cache est
+     *(question × option choisie × langue × bande d'âge × variante)*, dérivée du **contenu**, pas
+     de l'élève. Le pack d'apprentissage est volatil et reste **hors** du cache (é11 §3.4 le
+     place après la césure de cache). C'est ce fait, et lui seul, qui rend la mutualisation
+     défendable en vie privée ; il est écrit dans le texte de consentement (R-20).
+  2. **Condition d'entrée dans le pot commun** : l'explication vient d'un modèle de la liste
+     curée (`AI_CURATED_MODELS`) **et** a passé le validateur de sortie (é11 §3.4). À défaut
+     elle est servie à son demandeur et **reste privée à son payeur** — sans quoi la clé la moins
+     chère du parc fixerait la qualité pour tous les enfants.
+  3. **Éviction sur signal** : deux 👎 sur une entrée partagée la retirent du pot et forcent une
+     régénération. Le taux d'éviction est un indicateur de la console admin.
+  Les **quiz forgés**, eux, restent privés à leur payeur (R-17) : ils sont produits pour un
+  périmètre demandé par un élève, et les partager serait une autre décision que celle-ci.
 - **R-16 — Le contenu forgé ne rapporte rien.** Aucun XP, pièce, badge, série, classement,
   progression de chapitre, ni écriture dans `question_attempts` / `attempts` / `spaced_repetition_schedule`.
 - **R-17 — Le contenu forgé ne quitte pas la famille.** Non promu, non partagé, non indexé, absent
@@ -290,20 +360,40 @@ jamais.
   item forgé va au canal IA (§3.9), **jamais** dans la file `content_reports` du catalogue.
 - **R-18 — La Forge est bornée.** ≤ 10 questions par quiz, ≤ N+2 candidats générés, ≤ 3 quiz
   forgés par élève et par jour (constante), 1 génération concurrente par élève (verrou), énergie 3.
+- **R-18bis — La double résolution est active par défaut et désactivable par le porteur de la
+  clé** (Q-7, arbitrée le 2026-08-20 contre la recommandation, assumé). Quatre conditions
+  encadrent la désactivation, et aucune n'est cosmétique :
+  1. **Défaut = activée.** La désactiver est un geste délibéré, dans les Réglages, avec le
+     risque énoncé en une phrase : une correction fausse ne se voit pas, elle s'apprend.
+  2. **Étiquetage porté par le contenu, pas par l'écran de création** : chaque question d'un quiz
+     produit sans vérification affiche « non vérifié » **au moment où elle est jouée et
+     corrigée**, et son bouton « signaler une erreur » est mis en avant.
+  3. **Échantillon obligatoire de 20 %** : même désactivée, une question sur cinq est résolue
+     une seconde fois. Ce n'est pas un demi-compromis — sans lui on perd le **taux de rebut**,
+     donc l'avertissement R-19 n'a plus de données et un mauvais modèle devient indétectable.
+     Coût : un cinquième de la vérification complète.
+  4. **La désactivation ne s'hérite pas** : elle vaut pour la clé de son porteur, jamais pour un
+     autre porteur, et jamais pour le chemin plateforme (où la vérification est **toujours**
+     complète — c'est nous qui payons, et c'est notre nom sur le contenu).
 - **R-19 — Un modèle qui ne tient pas la barre est nommé.** Taux de rebut > 50 % sur 7 jours pour
-  une famille ⇒ bandeau dans la console parent : ce modèle échoue trop souvent, voici ceux qui
-  passent. Jamais de bascule automatique vers un autre modèle : c'est la clé du parent, donc son
-  choix (D-11).
+  un porteur de clé ⇒ bandeau dans ses Réglages : ce modèle échoue trop souvent, voici ceux qui
+  passent. La mesure reste alimentée même quand la double résolution est désactivée, grâce à
+  l'échantillon de 20 % (R-18bis). Jamais de bascule automatique vers un autre modèle : c'est sa
+  clé, donc son choix (D-11).
 - **R-20 — Consentement versionné, préalable, révocable.** Aucune donnée d'élève n'est transmise
-  à un fournisseur avant que le parent ait accepté un texte **versionné** listant ce qui part et
-  ce qui ne part pas (§3.8). Un changement de fournisseur ou de version du texte redemande le
-  consentement. La révocation coupe tout, immédiatement.
+  à un fournisseur avant que **celui qui attache la clé** ait accepté un texte **versionné**
+  listant ce qui part et ce qui ne part pas (§3.8). Depuis Q-3, ce texte dit aussi **ce qui est
+  mutualisé** — l'explication produite, dérivée de la question et non de l'élève — et depuis
+  Q-2, il est signé par un compte qui peut être celui d'un mineur : sa formulation vise donc un
+  lecteur de 15 ans, pas un juriste (registre é15). Un changement de fournisseur ou de version du
+  texte redemande le consentement. La révocation coupe tout, immédiatement.
 
 ### 2.5 i18n & RTL
 
-- **Console `/ia` et Forge** : microcopy FR/EN/AR livrée **dans la même PR** que le code
-  (é11 R-18), namespace `ai.*`, registre parent pour `/ia` (vouvoiement, é15) et registre élève
-  pour la Forge (tutoiement). Fichiers : `src/lib/i18n/{fr,en,ar}.ts`.
+- **Réglages › Mode IA et Forge** : microcopy FR/EN/AR livrée **dans la même PR** que le code
+  (é11 R-18), namespace `ai.*` (plus `settings.*` pour la coquille de la rubrique), registre
+  parent pour les Réglages (vouvoiement, é15) et registre élève pour la Forge (tutoiement).
+  Fichiers : `src/lib/i18n/{fr,en,ar}.ts`.
 - **RTL** : la console est un formulaire dense (clé, plafonds, tableaux de dépense) — captures FR
   **et** AR exigées à la revue (é15 R-5). La clé masquée `sk-…4f2a` est du contenu **LTR** dans un
   contexte RTL : `dir="ltr"` explicite sur ces champs, sinon le masque se lit à l'envers (piège
@@ -313,10 +403,12 @@ jamais.
 
 ### 2.6 Hors périmètre (v1)
 
-- Clé attachée par un **élève majeur** (Q-2) · clé de **session** non persistée (D-4 alt.) ·
-  clé d'**enseignant** ou de classe (c'est é08) · **plusieurs clés** par famille ou par matière.
-- **Fournisseurs locaux** (Ollama, LM Studio) : un `base_url` privé est structurellement
-  incompatible avec R-6 et avec un serveur hébergé (RISK-7).
+- Clé de **session** non persistée (Q-8 : écartée, le stockage chiffré est l'unique mode) ·
+  clé d'**enseignant** ou de classe (c'est é08) · **plusieurs clés** par porteur ou par matière.
+- **Fournisseurs locaux** (Ollama, LM Studio) sur une adresse privée : l'adresse est libre depuis
+  Q-4, mais les plages privées restent refusées — un modèle local n'est joignable **que** s'il est
+  exposé publiquement en https (R-6, RISK-7). Ce n'est pas un oubli, c'est la condition qui rend
+  l'adresse libre supportable.
 - **Multimodal** (photo d'énoncé, voix), **types natifs** dans la Forge, **promotion** d'un item
   forgé au catalogue, **correction par LLM d'une réponse libre** (é20 tranche déterministe —
   laisser un modèle noter serait la seule surface où l'IA déciderait, ce que D-3 de é11 interdit).
@@ -329,7 +421,7 @@ jamais.
 ### 3.1 Vue d'ensemble
 
 ```
-Parent ── /ia (console)                         Élève ── surfaces IA (é11) + Forge (é29)
+Parent ── /settings › Mode IA                   Élève ── surfaces IA (é11) + Forge (é29)
    │  server fns : createServerFn                  │  server fns / SSE (é11 lot 3)
    │  + requireSupabaseAuth + zod                  │
    ▼                                               ▼
@@ -415,11 +507,12 @@ CREATE TABLE public.ai_student_access (
   enabled         boolean NOT NULL DEFAULT false,          -- R-3 : défaut éteint
   features        text[]  NOT NULL DEFAULT '{}',           -- sous-ensemble de AI_FEATURES (constante)
   daily_energy_max int    NOT NULL DEFAULT 10 CHECK (daily_energy_max BETWEEN 0 AND 30),  -- R-9
-  updated_at      timestamptz NOT NULL DEFAULT now(),
-  CHECK (owner_user_id <> student_user_id)
+  updated_at      timestamptz NOT NULL DEFAULT now()
+  -- PAS de CHECK (owner <> student) : depuis Q-2 un compte peut porter SA propre clé et
+  -- s'auto-activer. La contrainte de la v1 interdisait précisément ce cas.
 );
 ALTER TABLE public.ai_student_access ENABLE ROW LEVEL SECURITY;
--- SELECT : l'élève lit SA ligne ; le parent lit celles de ses enfants liés ; admin tout.
+-- SELECT : l'élève lit SA ligne ; le porteur lit celles de ses élèves liés (et la sienne) ; admin tout.
 CREATE POLICY ai_access_select_self ON public.ai_student_access FOR SELECT TO authenticated
   USING (student_user_id = (SELECT auth.uid())
       OR (owner_user_id  = (SELECT auth.uid()) AND public.is_parent_of_student((SELECT auth.uid()), student_user_id))
@@ -591,7 +684,7 @@ Implémentations v1 — **deux**, pas cinq (D-6) :
 | Id                  | Transport                                                  | Couvre                                                                                     |
 | ------------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | `anthropic`         | SDK `@anthropic-ai/sdk` (server-only), API Messages         | Anthropic. Seul chemin qui exploite le prompt caching et les paliers de é11                 |
-| `openai_compatible` | `fetch` sur `POST {base_url}/chat/completions`              | OpenAI, OpenRouter, Groq, DeepSeek, Mistral, et l'endpoint compatible de Google — **si et seulement si** l'hôte est dans `AI_ALLOWED_HOSTS` (R-6) |
+| `openai_compatible` | `fetch` sur `POST {base_url}/chat/completions`              | OpenAI, OpenRouter, Groq, DeepSeek, Mistral, l'endpoint compatible de Google — et **toute autre adresse saisie par l'utilisateur** (Q-4), sous les sept conditions de sortie de R-6 |
 | `fake`              | déterministe, par feature                                   | CI, e2e, dev sans clé (`AI_FAKE_PROVIDER=1`) — coût zéro, sortie stable                     |
 
 `capabilities` n'est pas décoratif : un fournisseur sans `structuredOutput` fait tourner la Forge
@@ -644,8 +737,12 @@ est **oui, jamais désactivable**).
   réservation (timeout de nettoyage 5 min).
 - **Coupure** : `reserved + spent + estimate > plafond` ⇒ appel non émis. Le plafond **journalier**
   protège de l'emballement, le **mensuel** protège la facture. Les deux sont vérifiés.
-- **Alertes** : 50 % / 80 % / 100 % du plafond mensuel, une notification par seuil et par mois
-  (pas par appel), sur le canal notifications existant + e-mail parent.
+- **Alertes, deux mécaniques et pas une** (R-11, conséquence de Q-6) : **(a)** seuils de plafond
+  — 50 % / 80 % / 100 % du mensuel, une notification par seuil et par mois, pas par appel ;
+  **(b)** **anomalie** — une journée au-delà de 3× la médiane des sept précédentes (plancher
+  0,50 $) prévient le jour même. Sur des plafonds larges (2 $/j, 20 $/mois), (a) seul arriverait
+  après 16 $ dépensés : c'est (b) qui attrape une boucle ou un abus. Canal notifications existant
+  + e-mail au porteur de la clé.
 - **Ce que la plateforme ne fait pas** : ni provisionnement, ni crédit, ni avance, ni facturation.
   L'app n'a **aucune** vue sur le solde réel du compte fournisseur (aucun fournisseur ne l'expose
   de façon fiable via l'API) — donc « crédit épuisé » est un état constaté *a posteriori*, sur une
@@ -665,7 +762,7 @@ est **oui, jamais désactivable**).
 | Le fournisseur est un sous-traitant **choisi par le parent** | Le texte le dit : la politique de rétention et d'entraînement du fournisseur **échappe à la plateforme**, et certains paliers gratuits entraînent sur les données envoyées — recommandation explicite d'un palier payant |
 | Minorité                                             | La clé appartient à un adulte (R-2) ; l'usage est supervisé ; aucune surface IA n'existe hors activation parentale |
 | Injection de prompt                                  | é11 R-5 (entrée élève = donnée, bornée, jamais concaténée aux instructions) + rendu sanitizé (`markdown.ts`, `docs/xss-rendering-policy.md`) |
-| SSRF                                                 | R-6 : liste blanche d'hôtes, https, pas d'IP, pas de redirection                                          |
+| SSRF                                                 | R-6 : sept conditions de sortie — DNS pré-résolu, IP épinglée, zéro redirection, https/443, pas d'IP littérale, plafonds délai/taille, aucun identifiant plateforme |
 | Conservation                                         | Quiz forgés 30 j · comptabilité 12 mois · retours 12 mois · clé : jusqu'à révocation                      |
 
 **À faire dans le lot 2, pas « plus tard »** : la page `/confidentialite` (route publique
@@ -681,7 +778,7 @@ le fournisseur fait des données après réception.
   `ai.budget` `{owner, threshold, action:'warn'|'cut'}` · `ai.forge` `{requested, kept, discarded}`.
   **Jamais** : la clé, un fragment de clé au-delà de `last4`, le texte de l'élève, la sortie du
   modèle (`docs/logging-standard.md`).
-- **Console parent `/ia`** : statut de la clé, dépense, activations, qualité par modèle, journal
+- **Réglages › Mode IA (parent)** : statut de la clé, dépense, activations, qualité par modèle, journal
   des 20 derniers appels (surface, date, statut, coût estimé — jamais le contenu).
 - **Console admin** (motif existant `_authenticated` + `useMyRole` + `is_admin()`) : agrégats
   plateforme, répartition des fournisseurs et modèles, taux de rebut et de 👎 **par modèle**
@@ -700,9 +797,12 @@ le fournisseur fait des données après réception.
 | `ANTHROPIC_API_KEY`         | serveur uniquement    | **secret** — clé **plateforme** (chemin é11, budget A5). Absente ⇒ seul le BYOK fonctionne  |
 | `AI_PLATFORM_DAILY_BUDGET_USD` | serveur            | Plafond plateforme/jour (5 — A5). Ne s'applique **jamais** au payeur `family`                |
 
-Tout le reste est constante de code (`src/shared/constants/ai.ts`) : `AI_ALLOWED_HOSTS`,
+Tout le reste est constante de code (`src/shared/constants/ai.ts`) : `AI_HOST_DENYLIST` (liste de
+**refus**, pas d'autorisation — Q-4) et `AI_EGRESS_RULES` (les sept conditions de R-6),
 `AI_FEATURES`, `AI_MODEL_PRICES` (datée), `AI_CURATED_MODELS` (liste proposée par fournisseur),
-`AI_MAX_TOKENS` par surface, `AI_FORGE_LIMITS`, `AI_DEFAULT_BUDGETS`, `AI_CONSENT_VERSION`.
+`AI_MAX_TOKENS` par surface, `AI_FORGE_LIMITS`, `AI_DEFAULT_BUDGETS` (**2 $/jour, 20 $/mois** —
+Q-6), `AI_ANOMALY_FACTOR` (3× la médiane 7 j, plancher 0,50 $), `AI_VERIFY_SAMPLE_RATE` (0,2 —
+R-18bis), `AI_CONSENT_VERSION`.
 Aucun id de modèle en dur ailleurs (é11 D-2 étendu).
 
 ### 3.11 Décisions d'architecture (ADR)
@@ -729,27 +829,36 @@ Aucun id de modèle en dur ailleurs (é11 D-2 étendu).
   `pgcrypto` (la clé de chiffrement finirait dans une fonction SQL, donc dans le dump) ;
   `pgsodium`/Vault Supabase (surface d'exploitation supplémentaire, et une dépendance de plus à
   une capacité gérée) ; un KMS tiers (aucun précédent dans le projet, coût et latence).
-- **D-6 — Deux implémentations, pas cinq.** `anthropic` + `openai_compatible` couvrent l'essentiel
-  du marché avec un seul protocole à maintenir en plus. Rejetés : une passerelle multi-fournisseur
-  tierce (un intermédiaire de plus qui verrait les clés) ; un SDK par fournisseur (autant de
-  chemins de mise à jour, pour un gain marginal).
+- **D-6 — Deux implémentations, une adresse libre.** `anthropic` + `openai_compatible` couvrent
+  l'essentiel du marché avec un seul protocole à maintenir en plus ; depuis Q-4, l'adresse du
+  second n'est plus contrainte à une liste, mais à sept conditions de sortie (R-6). Rejetés : une
+  passerelle multi-fournisseur tierce (un intermédiaire de plus qui verrait les clés) ; un SDK par
+  fournisseur (autant de chemins de mise à jour, pour un gain marginal). Un service qui ne répond
+  pas au format compatible échoue proprement sur un code typé (annexe C) — l'app ne devine pas.
 - **D-7 — Le payeur est une colonne, pas un mode de déploiement.** Toutes les surfaces, tous les
   quotas, toute la comptabilité sont écrits une fois et lisent `payer`. Rejeté : deux chemins de
   code parallèles (la divergence serait garantie au troisième lot).
 - **D-8 — La coupure est dans le chemin de requête.** Comme é11 R-13 : pas de job d'alerte séparé,
   la vérification est atomique avec la réservation. Rejeté : un cron de surveillance (il découvre
   le dépassement une fois qu'il est payé).
-- **D-9 — Le cache d'explications est cloisonné par payeur.** Le cache partagé de é11 (D-6) reste
-  la règle pour le payeur plateforme ; le payeur famille a son propre espace, privé. Motifs : la
-  qualité (un modèle libre ne doit pas alimenter les autres enfants), l'équité (une famille ne
-  finance pas la plateforme sans le savoir), la vie privée. Conséquence assumée : **le taux de
-  réutilisation d'une famille est faible, donc son coût unitaire est plus élevé que celui de é11**
-  (annexe A). Alternative offerte en Q-3 : un don explicite, opt-in, jamais par défaut.
+- **D-9 — Le cache d'explications est mutualisé, quel que soit le payeur** (inversée par Q-3, le
+  2026-08-20 ; la version « cloisonnée » de la v1 est écartée). Le cache partagé de é11 (D-6)
+  devient la règle unique. Ce qui rend la mutualisation défendable n'est pas une préférence, c'est
+  un fait technique : **l'unité de cache est dérivée du contenu, pas de l'élève** — le pack
+  d'apprentissage est volatil et reste hors du cache. Contreparties inscrites en R-15 : condition
+  d'entrée (modèle curé + validateur), éviction sur deux 👎, et les quiz forgés qui, eux, restent
+  privés à leur payeur. Effet économique, dans le bon sens cette fois : le taux de réutilisation
+  remonte vers celui de é11 (60 % visé à S+4), donc **la facture d'un porteur de clé baisse à
+  mesure que le pot commun se remplit** (annexe A). Rejetés : le cloisonnement (chaque famille
+  repaie ce que la précédente a déjà payé) ; le don opt-in (un pot commun qui ne se remplit qu'à
+  la marge n'atteint jamais le taux qui le rend utile).
 - **D-10 — Un seul crédential par adulte en v1.** Rejeté : une clé par matière ou par enfant
   (complexité de résolution sans besoin démontré ; le multi-clé viendra si le besoin apparaît).
-- **D-11 — Le choix du modèle appartient au parent, la mesure appartient à l'app.** L'app conseille
-  (R-19), n'impose ni ne bascule. Rejeté : forcer un modèle minimal (c'est sa clé, son argent) ;
-  taire la mesure (ce serait laisser un enfant réviser sur des quiz faux).
+- **D-11 — Le choix du modèle appartient au porteur de la clé, la mesure appartient à l'app.**
+  L'app conseille (R-19), n'impose ni ne bascule. Depuis Q-7, cela vaut aussi pour la double
+  résolution : le porteur peut la couper, l'app continue de mesurer (échantillon 20 %, R-18bis) et
+  de le dire. Rejetés : forcer un modèle minimal (c'est sa clé, son argent) ; taire la mesure (ce
+  serait laisser un enfant réviser sur des quiz faux).
 - **D-12 — Aucun flux financier ne passe par la plateforme.** Rejeté : revendre des crédits ou
   proposer un « pack tokens » — cela ferait de nous un intermédiaire de paiement, ouvrirait la
   question fiscale, et contredirait la phase gratuite. La clé du parent, chez son fournisseur.
@@ -757,6 +866,17 @@ Aucun id de modèle en dur ailleurs (é11 D-2 étendu).
   élargie à `attempts` et `spaced_repetition_schedule`. Rejeté : compter les quiz forgés dans la
   progression (du contenu non revu piloterait l'adaptativité et le SM-2).
 - **D-14 — Pas de framework de feature flags** (é11 D-15) : kill-switch par env + données.
+- **D-16 — La clé se saisit dans les Réglages, pas sur une page à elle.** Une clé d'API est un
+  réglage de compte, au même titre que la langue, le thème ou les notifications : elle appartient
+  à la rubrique où l'on va quand on cherche « où est-ce que je change ça ? ». Une route dédiée
+  `/ia` la rendrait introuvable pour qui ne sait pas déjà qu'elle existe, et créerait une
+  quatrième adresse de préférences dans une app qui en a déjà trois éparpillées (en-tête,
+  en-tête, feature notifications). Conséquence : le lot 2 **crée la rubrique** — elle n'existe
+  pas — et le Mode IA en est la première section, pas l'unique raison d'être. Rejetés : une page
+  `/ia` autonome (invisible, et une adresse de plus) ; un onglet du rapport parent (le rapport
+  est une lecture de l'activité de l'enfant, pas un lieu de configuration, et l'admin en serait
+  exclu) ; une modale depuis l'en-tête (un formulaire à consentement, plafonds et tableau de
+  dépense ne tient pas dans une pop-over, et rien ne s'y partage par lien).
 - **D-15 — Le mode éteint est l'état par défaut et un état testé.** Rejeté : un « mode découverte »
   offrant quelques appels sur la clé plateforme à qui n'en a pas — c'est une promotion déguisée,
   un coût non borné, et une déception programmée à la fin de l'essai.
@@ -766,23 +886,29 @@ Aucun id de modèle en dur ailleurs (é11 D-2 étendu).
 ## 4. Plan d'exécution en lots
 
 Chaque lot = **une PR mergeable, gate verte, utile seul** (`FableEtudes/29-…#lot-N`).
-Recommandation : livrer 1 → 2 → 3 (à ce stade le mode existe et é11 peut démarrer), **mesurer
-2 semaines sur une famille pilote** (celle de l'humain — la seule dont la clé est disponible),
-puis 4 → 5.
+**Ordre arbitré le 2026-08-20 (Q-9), et il n'est pas celui que la v1 recommandait** :
+**lot 1 (la porte) → é11 lot 1 (l'explication personnalisée, sur le budget plateforme de A5) →
+é29 lots 2-3 (coffre + activation) → lot 4 (la Forge) → lot 5**. Deux raisons, dans cet ordre
+d'importance : la valeur **pédagogique** arrive dès le deuxième lot livré au lieu du cinquième —
+un élève qui se trompe reçoit une explication adaptée ; et toute la chaîne est **éprouvée sur une
+clé maîtrisée** avant d'être ouverte aux adresses libres de Q-4 et aux modèles inconnus de Q-7.
+Le pilote de mesure (2 semaines) se place après é11 lot 1, pas après é29 lot 3.
+⚠️ Ce qui **ne change pas** : le lot 1 reste le premier de tout, et rien de é11 ne démarre avant
+lui (Q-1 — il n'existe qu'un socle).
 
 | lot | contenu (résumé)                                                                       | fichiers/objets créés (principaux)                                                                                                                                                                                                                                                                | tests exigés                                                                                                                                                                    | dépend de                    |
 | --- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
-| 1   | **La porte IA** : adaptateur multi-fournisseur, comptabilité, kill-switches (remplace é11 lot 0) | dép. `@anthropic-ai/sdk` ; `src/shared/integrations/ai/{index,anthropic.server,openai-compatible.server,fake.server}.ts` ; `src/shared/constants/ai.ts` ; migration `ai_usage_events` + `log_ai_usage` + purge ; MAJ `docs/environment-variables.md`                                            | unit adaptateur (Fake + `fetch` mocké : usage→coût, retries 429/5xx, **pas de retry sur 401**, timeout, re-typage d'erreur) ; unit liste blanche R-6 ; pgTAP grants/RLS ; `build:check` (SDK hors bundle client) | —                            |
-| 2   | **Le coffre & la console** : chiffrement, saisie, vérification, révocation, consentement | `src/features/ai/` (barrel, `ai-credentials.server.ts`, `crypto.server.ts`) ; migration `ai_credentials` + RPCs meta/revoke ; route `/ia` ; i18n `ai.*` FR/EN/AR ; section « Mode IA » de `/confidentialite`                                                                                       | unit crypto (round-trip, AAD refusé si déplacé, rotation KEK, IV unique) ; **pgTAP : `has_table_privilege('authenticated','ai_credentials','SELECT') = false`** ; unit R-2 (un `student` est refusé côté RPC) ; captures FR + AR | 1                            |
+| 1   | **La porte IA** : adaptateur multi-fournisseur, comptabilité, kill-switches (remplace é11 lot 0) | dép. `@anthropic-ai/sdk` ; `src/shared/integrations/ai/{index,anthropic.server,openai-compatible.server,fake.server}.ts` ; `src/shared/constants/ai.ts` ; migration `ai_usage_events` + `log_ai_usage` + purge ; MAJ `docs/environment-variables.md`                                            | unit adaptateur (Fake + `fetch` mocké : usage→coût, retries 429/5xx, **pas de retry sur 401**, timeout, re-typage d'erreur) ; unit **conditions de sortie R-6** (dont DNS rebinding et redirection non suivie) ; pgTAP grants/RLS ; `build:check` (SDK hors bundle client) | —                            |
+| 2   | **Le coffre & la console** : chiffrement, saisie, vérification, révocation, consentement | `src/features/ai/` (barrel, `ai-credentials.server.ts`, `crypto.server.ts`) ; migration `ai_credentials` + RPCs meta/revoke ; **route `/settings` (la rubrique Réglages, créée ici) + sa section « Mode IA »** + son entrée de nav dans les DEUX shells (élève et parent) ; i18n `ai.*` + `settings.*` FR/EN/AR ; section « Mode IA » de `/confidentialite`                                                                                       | unit crypto (round-trip, AAD refusé si déplacé, rotation KEK, IV unique) ; **pgTAP : `has_table_privilege('authenticated','ai_credentials','SELECT') = false`** ; unit R-2 (un `student` est refusé côté RPC) ; captures FR + AR | 1                            |
 | 3   | **Activation, énergie & budgets** : le mode s'allume, et il ne peut pas déraper          | migration `ai_student_access` + `ai_spend_ledger` + `resolve_ai_access` + `reserve/settle_ai_spend` + `set_ai_student_access` ; UI activation par enfant ; alertes 50/80/100 % ; badge « mode IA » élève                                                                                          | **pgTAP : matrice de `resolve_ai_access`** (lien rompu, clé révoquée, feature non activée, énergie épuisée, plafond atteint, chemin plateforme) ; pgTAP réservation atomique (double dépense concurrente) ; unit dégradé silencieux | 2                            |
 | 4   | **La Forge** : le générateur de quiz personnalisé                                       | migration `ai_forged_quizzes` + `serve_forged_quiz` + `grade_forged_quiz` ; chaîne §3.6 (schéma zod, filtres, double-solve) ; écran Forge + lecture dans le lecteur existant ; étiquetage + 👍/👎                                                                                                | unit chaîne complète avec Fake (candidat invalide rejeté, doublon rejeté, désaccord de double-solve ⇒ rebut) ; **pgTAP : `serve_forged_quiz` ne rend jamais la clé** ; pgTAP zéro récompense (R-16) ; e2e forge→jouer avec `AI_FAKE_PROVIDER=1` | 3                            |
 | 5   | **Qualité & pilotage** : console de dépense et de qualité, conseil de modèle, admin      | `get_ai_console` ; tableaux dépense/qualité par enfant, surface et modèle ; bandeau R-19 ; `/admin/ai` (agrégats, kill-switches, familles en coupure) ; purges cron ; `ai_feedback`                                                                                                              | unit agrégats (par surface/modèle) ; pgTAP RLS `ai_feedback` + purges ; unit R-19 (seuil de rebut) ; captures FR + AR                                                              | 4 (utile dès 3, complet à 4) |
 
-- [ ] Lot 1 — la porte IA (adaptateur multi-fournisseur, comptabilité, kill-switches)
-- [ ] Lot 2 — le coffre & la console parent (chiffrement, vérification, consentement, révocation)
-- [ ] Lot 3 — activation par élève, énergie et budgets famille (coupure atomique)
-- [ ] Lot 4 — la Forge (générateur de quiz personnalisé, double-solve, éphémère)
-- [ ] Lot 5 — console de dépense et de qualité, conseil de modèle, admin, purges
+- [x] Lot 1 — la porte IA (adaptateur multi-fournisseur, comptabilité, kill-switches) — **livré le 2026-08-22** (arena#807)
+- [x] Lot 2 — le coffre & la console parent (chiffrement, vérification, consentement, révocation) — **livré le 2026-08-22** (arena#807)
+- [x] Lot 3 — activation par élève, énergie et budgets famille (coupure atomique) — **livré le 2026-08-22** (arena#807)
+- [x] Lot 4 — la Forge (générateur de quiz personnalisé, double-solve, éphémère) — **livré le 2026-08-22** (arena#807)
+- [x] Lot 5 — console de dépense et de qualité, conseil de modèle, admin, purges — **livré le 2026-08-22** (arena#807)
 
 **Stop-points (non négociables pour l'exécuteur)** :
 
@@ -807,7 +933,14 @@ puis 4 → 5.
 - **Vitest (co-localisés `src/features/ai/__tests__/`, `src/shared/integrations/ai/__tests__/`)** :
   chiffrement (round-trip, AAD, rotation, IV distinct à chaque écriture) ; adaptateur par
   fournisseur avec `fetch` mocké (usage→coût, codes d'erreur, absence de retry sur 401/403,
-  timeout) ; liste blanche R-6 (hôte hors liste, http, IP littérale, plage privée, redirection) ;
+  timeout) ; **les sept conditions de sortie de R-6** — et pas seulement les faciles : http
+  refusé, port ≠ 443, IP littérale (v4, v6, décimale, octale), nom qui résout vers une plage
+  privée ou vers `169.254.169.254`, **changement de résolution entre la vérification et l'appel**
+  (DNS rebinding — le test qui prouve l'épinglage), **redirection `302` non suivie**, réponse
+  au-delà de 2 Mio ; entrée conditionnelle au cache mutualisé (R-15 : un modèle hors liste curée
+  n'y entre pas, deux 👎 évincent) ; échantillon de vérification à 20 % quand la double résolution
+  est coupée (R-18bis) ; scission de R-14 (le porteur voit sa dépense, l'élève d'un autre ne la
+  voit pas — y compris par PostgREST) ;
   chaîne de la Forge avec `FakeAiProvider` (candidat hors schéma, doublon, désaccord de
   double-solve) ; dégradation (aucune surface IA rendue mode éteint — R-1).
 - **pgTAP (obligatoire, toute logique SQL — DoD)** : **absence de privilège client sur
@@ -817,7 +950,9 @@ puis 4 → 5.
   `grade_forged_quiz` sans récompense ; RLS de chaque table ; purges.
 - **Playwright (projet TEST dédié, `AI_FAKE_PROVIDER=1`)** : parcours parent complet (attacher →
   vérifier → activer → révoquer) ; parcours élève (Forge → jouer → 👎) ; **parcours mode éteint**
-  (aucune surface IA visible) ; RTL sur `/ia`.
+  (aucune surface IA visible, et la section « Mode IA » des Réglages absente) ; **accès à
+  `/settings` depuis le shell PARENT** (le shell Suivi-only : c'est le test qui garde le point 2
+  du §2.1) ; RTL sur `/settings`.
 - **`smoke:shell`** : la coquille publique reste crash-free (le bundle prod ne doit rien importer
   de la chaîne IA).
 - **Non-régression de l'existant** — c'est le test qui compte le plus : la suite complète tourne
@@ -832,38 +967,123 @@ puis 4 → 5.
 | #       | Risque                                                                                                      | P × I         | Mitigation **décidée**                                                                                                                                                                          |
 | ------- | ----------------------------------------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | RISK-1  | **Fuite d'une clé** (dump de base, log, réponse d'API, bundle)                                              | faible × **critique** | Chiffrement enveloppe, KEK hors base (§3.2) · `REVOKE ALL` · aucun chemin de sortie (D-3) · logger redacteur · erreurs re-typées · pgTAP de privilège · revue de bundle. Procédure d'incident : révocation côté fournisseur par le parent (nous ne pouvons pas la faire), purge de la ligne, rotation de la KEK |
-| RISK-2  | **Facture surprise** pour une famille                                                                       | moyenne × **élevé** | Double plafond vérifié **avant** chaque appel, atomiquement (R-11) · alertes 50/80/100 % · estimation affichée avant la Forge · défauts prudents (Q-6) · KPI « dépassements non stoppés : 0 »   |
+| RISK-2  | **Facture surprise** pour une famille                                                                       | moyenne × **élevé** | ⚠️ **MITIGATION DÉSARMÉE LE 2026-08-22** (arena#811, décision produit) : le double plafond EXISTE et reste vérifié avant chaque appel, mais il ne **coupe** que si le porteur l'a armé (`limits_enforced`, `false` par défaut). Restent actifs : alertes 50/80/100 %, **alerte d'anomalie à 3× la médiane** (le seul signal automatique désormais), estimation affichée avant la Forge, révocation en un geste. Le KPI « dépassements non stoppés : 0 » **n'est plus mesurable** — plus rien ne stoppe. Voir le §8. |
 | RISK-3  | **Le mode reste une porte pour privilégiés** — une clé suppose un compte fournisseur et une carte internationale, rare en Tunisie | **élevée** × moyen | Assumé et nommé : le BYOK est une voie *supplémentaire*, jamais l'unique (D-2, Q-5). Le chemin plateforme reste, avec le budget A5. Aucune fonctionnalité pédagogique du produit ne migre derrière la porte IA (R-1) |
-| RISK-4  | **Un modèle faible dégrade la pédagogie** (quiz faux, explication erronée)                                  | moyenne × élevé | Filtres déterministes + double-solve (§3.6) · cache cloisonné (D-9 : le voisin n'hérite pas) · mesure du rebut et du 👎 **par modèle** · conseil explicite (R-19) · étiquetage systématique du contenu IA |
-| RISK-5  | **CGU des fournisseurs / usage par un mineur**                                                              | moyenne × moyen | La clé appartient à un adulte (R-2), l'usage est activé et supervisé par lui (R-3), le consentement le dit (R-20). Aucune surface ne s'adresse à un mineur sans ce chemin                        |
+| RISK-4  | **Un modèle faible dégrade la pédagogie** (quiz faux, explication erronée) — **aggravé par Q-3 et Q-7** : le cache est désormais mutualisé, et la double résolution peut être coupée | **élevée** × élevé | Condition d'entrée au pot commun (modèle curé + validateur, R-15) · éviction sur deux 👎 · échantillon de vérification 20 % même en mode coupé (R-18bis) · étiquetage « non vérifié » porté par la question jouée · mesure du rebut et du 👎 **par modèle** (R-13) · conseil explicite (R-19). **C'est le risque n° 1 de l'étude après les arbitrages du 2026-08-20**, et le seul dont la mitigation dépend d'un réglage que l'utilisateur peut désactiver |
+| RISK-5  | **CGU des fournisseurs / usage par un mineur** — **aggravé par Q-2** : tout compte peut attacher une clé, mineur compris | **élevée** × moyen | Avertissement calibré sur le **niveau scolaire réel** du compte, pas sur une case déclarative (R-2a) · consentement versionné écrit pour un lecteur de 15 ans (R-20) · ~~plafonds par défaut appliqués dès la première minute (R-11)~~ **— caduc depuis arena#811 : ils sont mesurés, plus appliqués** · alerte d'anomalie le jour même · révocation en un geste. **Ce que la mitigation ne fait pas** : elle n'empêche pas un mineur d'engager de l'argent sur un compte fournisseur — c'est la conséquence assumée de Q-2, et elle est écrite ici pour qu'elle ne soit jamais découverte après coup |
 | RISK-6  | **Injection de prompt** via le champ libre ou via du contenu forgé rendu                                    | moyenne × moyen | é11 R-5 (entrée = donnée bornée, hiérarchie système) · validateur de sortie · sanitizer de rendu (`markdown.ts`) · zéro URL sortante dans une sortie de modèle                                   |
-| RISK-7  | **SSRF via `base_url`**                                                                                     | faible × élevé | Liste blanche fermée en constante serveur, https, pas d'IP littérale, pas de plage privée, pas de redirection suivie (R-6), re-vérifiée à chaque appel et pas seulement à la saisie              |
+| RISK-7  | **SSRF via `base_url`** — **aggravé par Q-4** : l'adresse est libre, donc la liste blanche ne protège plus rien | moyenne × **élevé** | Les **sept conditions de sortie** de R-6, en particulier celles que l'on oublie : résolution DNS **avant** connexion, **IP épinglée** pour la connexion (sinon DNS rebinding), **aucune redirection suivie** (sinon un `302` vers `169.254.169.254` annule tout), et le refus explicite de l'adresse de métadonnées du cloud. Vérifié à l'enregistrement **et** à chaque appel · liste de **refus** administrable · tests unitaires dédiés listés au §5 |
 | RISK-8  | **Support** : « ma clé ne marche pas »                                                                       | **élevée** × faible | Vérification à l'enregistrement (US-2) · codes d'erreur stables et traduits (annexe C) · console qui affiche le dernier état et sa date · périmètre annoncé : nous ne dépannons pas le compte fournisseur |
 | RISK-9  | **Deux socles IA finissent par exister** (é11 lot 0 livré ailleurs, é29 lot 1 ici)                          | moyenne × élevé | D-1 + Q-1 arbitrée **avant** le premier lot · stop-point explicite si l'ordre s'inverse · la ROADMAP ligne 17 pointe cette étude une fois Q-1 rendue                                             |
 | RISK-10 | **Perte de la KEK** (variable d'environnement effacée ou remplacée sans rotation)                            | faible × moyen | Aucune donnée d'apprentissage n'est perdue : seules les clés deviennent illisibles ⇒ statut `invalid`, invitation à re-saisir. `AI_KEY_ENC_KEY_PREVIOUS` couvre la rotation. Documenté dans le runbook de sauvegarde |
 
-## 7. Questions ouvertes (pour l'humain)
+## 7. Questions ouvertes — **toutes arbitrées le 2026-08-20 par Mohamed**
 
-Une étude passe `validée` quand cette section est arbitrée. Chaque question porte une
-**recommandation** — l'exécuteur ne tranche aucune d'entre elles.
+> **Cinq des neuf décisions vont contre la recommandation de l'architecte** (Q-2, Q-3, Q-4, Q-6,
+> Q-7), et toutes dans le même sens : plus d'ouverture, moins de contrainte. Ce n'est pas une
+> anomalie à corriger, c'est un arbitrage de produit, et l'étude a été **réécrite pour le rendre
+> tenable** plutôt que pour le regretter — chaque décision « ouverte » est repartie avec la
+> mitigation qu'elle exige (colonne de droite). Deux risques changent de rang au §6 : **RISK-4**
+> (modèle faible) et **RISK-5** (mineur porteur de clé) passent en probabilité **élevée**, et
+> RISK-7 (SSRF) change de nature. L'exécuteur ne rouvre aucune de ces neuf lignes.
 
-| #   | Question                                                                                                                              | Recommandation                                                                                                                                                       |
-| --- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Q-1 | **Le lot 1 de é29 remplace-t-il le lot 0 de é11 ?** (D-1)                                                                              | **Oui.** Le socle n'existe pas encore ; le livrer deux fois, ou le livrer puis le refactorer, coûte plus que de l'écrire une fois avec le payeur dedans                    |
-| Q-2 | **Qui peut attacher une clé ?** Parent/admin seuls, ou aussi un élève majeur (bac, parcours libre, adulte de `muscle-cerveau`) ?      | **Parent/admin en v1.** L'élève majeur est réel mais minoritaire, et sa prise en charge demande une déclaration d'âge fiable que le produit n'a pas. À rouvrir en v2 (Q-8) |
-| Q-3 | **Le cache d'explications d'une famille reste-t-il privé ?** (D-9)                                                                     | **Privé par défaut.** Un don explicite et opt-in (« partager mes explications avec les autres élèves ») est acceptable en lot 5, jamais activé par défaut, jamais rétroactif |
-| Q-4 | **Quels fournisseurs en v1 ?**                                                                                                        | **Anthropic + compatibles OpenAI par liste blanche** (D-6). La liste blanche exacte est un réglage de constante, pas une décision d'architecture — mais son contenu initial est une décision produit |
-| Q-5 | **Le chemin plateforme reste-t-il allumé en parallèle ?** (budget 5 $/j de A5)                                                        | **Oui.** Le couper ferait du BYOK l'unique accès à l'IA, donc un produit à deux vitesses (RISK-3). Le garder coûte au plus ce que A5 a déjà arbitré                       |
-| Q-6 | **Plafonds famille par défaut ?**                                                                                                     | **0,50 $/jour et 5 $/mois** (annexe A : couvre un usage régulier avec marge, et reste sous le rechargement minimal habituel d'un compte fournisseur). Réglables par le parent, dans les bornes du schéma |
-| Q-7 | **Le double-solve de la Forge est-il désactivable** (moitié moins cher) ?                                                             | **Non, jamais.** C'est la seule barrière entre un modèle bon marché et un enfant qui révise sur une clé de réponse fausse. Le coût est le prix d'entrée du BYOK              |
-| Q-8 | **Mode « clé de session » non persistée** pour l'apprenant adulte — v2 ?                                                              | **v2**, en même temps que Q-2. Le spécifier maintenant ajouterait un second chemin de crédential pour un public que la v1 n'ouvre pas                                       |
-| Q-9 | **Ordre d'exécution** : é29 lots 1-3 **avant** é11 lots 1-2, ou en parallèle ?                                                        | **Avant, strictement.** é11 lot 1 sans la porte n'a pas de clé à utiliser ; la porte sans é11 a déjà la Forge comme surface utile. Conséquence roadmap : la ligne 17 change de contenu, pas de rang |
+| #   | Question | Décision rendue | Ce qui a été réécrit en conséquence |
+| --- | -------- | --------------- | ----------------------------------- |
+| Q-1 | Le lot 1 de é29 remplace-t-il le lot 0 de é11 ? | ✅ **Oui, socle unique.** Le lot 0 de é11 est **rayé** ; ses lots 1-7 sont intacts | D-1 confirmée · le lot 1 porte le payeur dès l'écriture · RISK-9 (deux socles) tombe |
+| Q-2 | Qui peut attacher une clé ? | ⚠️ **N'importe quel compte authentifié**, avec avertissement — recommandation (parent/admin seuls) **écartée** | **R-2 réécrite** (aucun filtre de rôle ; avertissement calibré sur le **niveau scolaire réel**, pas une case déclarative) · **R-3** (auto-activation) · **R-14 scindée** (voir ci-dessous) · `CHECK (owner <> student)` **retiré** du schéma · **RISK-5 relevé** |
+| Q-3 | Le cache d'explications reste-t-il privé au payeur ? | ⚠️ **Mutualisé pour tous, par défaut** — recommandation (privé) **écartée** | **D-9 inversée** · **R-15 réécrite** : condition d'entrée au pot commun (modèle curé **et** validateur), éviction sur deux 👎, quiz forgés toujours privés · annexe A revue à la **baisse** · **RISK-4 relevé** |
+| Q-4 | Quels fournisseurs ? | ⚠️ **Adresse libre saisie par l'utilisateur** — recommandation (liste blanche) **écartée** | **R-6 entièrement réécrite** en sept conditions de sortie (DNS pré-résolu, IP épinglée, zéro redirection, https/443, pas d'IP littérale, plafonds de délai et de taille, aucun identifiant plateforme) · `AI_ALLOWED_HOSTS` devient `AI_HOST_DENYLIST` · **RISK-7 requalifié** · tests dédiés au §5 |
+| Q-5 | Le chemin plateforme reste-t-il allumé ? | ✅ **Oui, les deux payeurs coexistent** (budget A5 : 5 $/j) | D-2 confirmée · RISK-3 (produit à deux vitesses) reste mitigé · rend Q-9 possible |
+| Q-6 | Plafonds par défaut ? | ⚠️ **2 $/jour et 20 $/mois** (option large) — recommandation (0,50 / 5) **écartée**. ⚠️⚠️ **Puis DÉSARMÉS le 2026-08-22** (arena#811) : ces montants sont devenus un **repère** qui alimente les alertes, plus un plafond qui coupe | **R-11 complétée** d'une **alerte d'anomalie** (3× la médiane 7 j, plancher 0,50 $) : sur un plafond large, 80 % de 20 $ alerterait après 16 $ dépensés · `AI_DEFAULT_BUDGETS` + `AI_ANOMALY_FACTOR` |
+| Q-7 | La double résolution de la Forge est-elle désactivable ? | ⚠️ **Oui, par le porteur de la clé** — recommandation (jamais) **écartée** | **R-18bis créée** : activée par défaut · étiquette « non vérifié » portée par **la question jouée**, pas par l'écran de création · **échantillon obligatoire de 20 %** (sans lui, plus de taux de rebut, donc plus d'avertissement R-19) · vérification **toujours complète** sur le chemin plateforme · **RISK-4 relevé** |
+| Q-8 | Mode « clé de session » non persistée ? | ✅ **Non — stockage chiffré uniquement** | Un seul chemin de credential · §2.6 mis à jour |
+| Q-9 | Ordre d'exécution | ✅ **Porte → é11 lot 1 → coffre/activation → Forge → console.** Recommandation **révisée par l'architecte** au moment de l'arbitrage, sur la base de Q-1 et Q-5 | §4 réordonné · la valeur pédagogique arrive au 2ᵉ lot au lieu du 5ᵉ · la chaîne est éprouvée sur une clé maîtrisée avant l'ouverture de Q-4 et Q-7 · le pilote de 2 semaines se place après é11 lot 1 |
+
+**Ce que l'arbitrage ne dispense pas de faire** — trois points où la mitigation dépend d'un geste
+et pas d'une ligne de code : la liste curée `AI_CURATED_MODELS` doit exister **avant** le lot où
+le cache devient mutualisé (sans elle, la condition d'entrée de R-15 est vide et laisse tout
+passer) ; l'avertissement de R-2 suppose que le niveau scolaire du compte est renseigné (il l'est
+à l'inscription, mais un compte ancien peut ne pas l'avoir — dans ce cas, traiter comme mineur) ;
+et la vérification à 20 % de R-18bis n'a de sens que si son résultat **remonte** dans la console,
+sinon on paie une mesure que personne ne lit.
 
 ## 8. Journal d'exécution
 
+> **Les cinq lots sont livrés le 2026-08-22**, dans une seule PR au moteur
+> ([arena#807](https://github.com/MBeji/yahia-quest-arena/pull/807)), un commit par lot.
+> ⚠️ **L'ordre de Q-9 n'a pas été suivi**, et c'est le premier écart à connaître : l'arbitrage
+> plaçait **é11 lot 1** entre le lot 1 et le lot 2 d'ici, pour que la valeur pédagogique arrive
+> au deuxième lot livré et que la chaîne soit éprouvée sur une clé maîtrisée. La demande reçue
+> était « implémente l'étude 29 » : é11 n'en fait pas partie, et l'insérer aurait été élargir le
+> périmètre demandé. Les cinq lots de é29 sont donc livrés d'affilée. **Ce que cela coûte** : la
+> chaîne n'a été éprouvée sur aucune clé réelle avant d'être ouverte aux adresses libres de Q-4
+> et aux modèles inconnus de Q-7 — le pilote de mesure de deux semaines reste entièrement à
+> faire, et il devrait précéder toute activation d'une famille.
+
 | date | lot | PR | écarts acceptés / dettes notées |
 | ---- | --- | -- | ------------------------------- |
-| —    | —   | —  | _(à remplir par l'exécuteur, à chaque lot)_ |
+| 2026-08-22 | 1 — la porte | arena#807 | **Adaptateur asymétrique, assumé** : `anthropic` passe par le SDK (adresse FIXE, surface SSRF nulle, cache de prompt exploité), `openai_compatible` par `node:https` et les sept conditions de R-6 — aucun SDK ne permet d'épingler une IP. · `openai_compatible` déclare `streaming: false` : le protocole sait streamer, mais R-6 plafonne la TAILLE d'une réponse, ce qui ne se marie pas avec une lecture au fil de l'eau ; le chat de é11 y retombera en réponse entière (dégradation prévue, §3.5). · Les RPC neuves sont postérieures aux types Supabase générés (non régénérables sans accès base) : leur contrat est figé en TypeScript, motif `exam.server.ts`, **à supprimer à la prochaine régénération**. |
+| 2026-08-22 | 2 — le coffre | arena#807 | **D-16 est caduque sur son constat, pas sur sa décision** : « la rubrique Réglages n'existe pas encore » était vrai le 2026-08-17 ; `/parametrage` a été livrée depuis (arena#798, étude 15 lot 5). Le lot ajoute donc une **section**, il ne crée pas la page — et le critère d'acceptation du §2.1 point 2 (« atteignable dans le shell parent ») est **déjà tenu** : l'engrenage du header est hors de la nav scrollable, donc présent dans les deux coquilles. Un e2e le garde. · `set_ai_credential_meta` devient **`set_ai_credential`** : `secret_enc` est NOT NULL, donc « écrire tout sauf le secret » exigerait deux écritures et une fenêtre où une ligne existe sans sa clé. La fonction reçoit le CHIFFRÉ — le SQL ne voit toujours pas le clair (§3.1). · **Le §4 demandait un test « un `student` est refusé côté RPC »** : il contredit R-2 telle que Q-2 l'a réécrite. Le test livré affirme l'**inverse** (un `student` PEUT attacher sa clé), pour que personne ne « rétablisse » le filtre que l'arbitrage a retiré. · **Captures FR + AR non produites** : elles supposent l'application lancée et un relecteur humain. Les invariants RTL sont couverts par le gate `check-rtl-classes` et par `dir="ltr"` explicite sur clé masquée, montants et ids de modèles. |
+| 2026-08-22 | 3 — activation & budgets | arena#807 | **L'e-mail de R-11 n'est pas envoyé** : le moteur n'a AUCUN transport e-mail (le mailer de Supabase Auth sert l'authentification, pas la messagerie produit). L'alerte part par le **canal push existant**, qui atteint bien l'appareil du porteur, et la console affiche l'état. Ajouter un e-mail suppose d'introduire un prestataire — décision hors de cette étude. · Le transport push **remonte dans `shared/`** (`sendPushToUsers`) : une feature n'en importe pas une autre, et il a maintenant deux clients. · Deux tables non prévues au §3.3, exigées par l'atomicité de R-11 : `ai_energy_ledger` (l'énergie doit être réservée dans la MÊME transaction que l'argent, et l'élève doit pouvoir la lire sans atteindre `ai_spend_ledger`) et `ai_budget_alerts` (le dédoublonnage « une fois par seuil et par mois » doit survivre à un redéploiement). Plus `ai_admin_state` / `ai_owner_suspensions` pour le kill-switch data-driven de D-14. |
+| 2026-08-22 | 4 — la Forge | arena#807 | **Le quiz forgé n'est PAS joué dans `ExercisePlayer`**, contrairement à la lettre du §4. Deux raisons venues de l'étude elle-même : ce lecteur vit dans `@/features/quest` et une feature n'en importe pas une autre ; et il EST une machine à récompenses (session, XP, badges, chrono de boss, SM-2) dont **R-16 interdit chaque effet**. Y brancher la Forge reviendrait à désarmer une à une ses fonctions en espérant n'en oublier aucune. Le lecteur livré ne peut RIEN verser — il n'appelle qu'une RPC qui n'a rien à donner. · **Périmètres `competency` et `mistakes` : schéma prêt, UI non livrée.** Seul `chapter` est proposé à l'élève ; les deux autres exigent le référentiel de compétences (é07) et les tags actifs (é04) côté requête. La colonne et le CHECK les attendent. · **Types natifs hors v1** (conforme §2.3) : QCM 4 options uniquement. |
+| 2026-08-22 | 5 — console & qualité | arena#807 | **La console admin ne liste pas nominativement les familles en coupure** : elle en donne le NOMBRE, et la suspension se pose par RPC (`set_ai_owner_suspension`). Le §3.9 dit « familles en coupure » ; en donner la liste nominative dans un écran d'agrégats contredirait la phrase suivante du même paragraphe (« aucun montant nominatif au-delà de l'agrégat »). · **Le cache mutualisé d'explications (R-15, D-9) n'est PAS livré** : il appartient à la surface `explain`, qui est **é11 lot 1**. Ce qu'é29 devait lui fournir est en place — la liste curée `AI_CURATED_MODELS` existe (condition d'entrée du pot commun), et le §7 exigeait qu'elle existe AVANT le lot où le cache devient mutualisé. |
+| 2026-08-22 | suite — l'usage | arena#811 · #812 · #813 · #815 | **Quatre correctifs le soir même, tous de la MÊME classe : un écran qui promet ce que le moteur ne fait pas.** Aucun n'a été trouvé par un test — les trois premiers ont été trouvés par le porteur du produit en regardant l'écran. · **arena#811** — l'écran n'annonçait que « Compatible OpenAI » alors que Q-4 ouvre l'adresse à la saisie libre : DeepSeek, Kimi et GLM étaient branchables depuis le lot 1 sans que rien ne le dise. `AI_PROVIDER_PRESETS` les NOMME (adresses vérifiées, « Autre » restant la porte de Q-4). ⚠️ **Le défaut sérieux était le PRIX** : un modèle absent de `AI_MODEL_PRICES` est estimé au tarif de repli (5 $/25 $ le Mtok), et `reserve_ai_spend` coupe sur l'ESTIMATION — une famille sur DeepSeek V4-Flash (0,22 $/Mtok réels) aurait été coupée après **~4 %** de sa dépense. Grille élargie ; DeepSeek au tarif heures PLEINES, une grille statique ne sachant pas l'heure de la réservation. La grille d'origine était **périmée avant d'être écrite** (`deepseek-chat`/`deepseek-reasoner` retirés le 2026-07-24) : les identifiants de modèle ont une date de péremption, et `AI_MODEL_PRICES_AS_OF` ne la porte que pour les prix. · **R-19 visait faux** : l'avis déduisait le fournisseur du préfixe `claude-` et conseillait `gpt-5` à tout le reste — inexistant sur un endpoint DeepSeek. `get_ai_console` rend l'adresse, les suggestions suivent le préréglage. `preset.suggested` reste SÉPARÉ de `AI_CURATED_MODELS`, qui n'est pas une liste d'affichage mais la condition d'entrée du cache mutualisé (R-15.2). · **arena#813** — le panneau d'activation proposait **huit** surfaces alors qu'une seule a un écran : `AI_LIVE_FEATURES` (`["forge"]`) le borne, **et le serveur applique la même liste** (sinon une requête forgée inscrit une activation vers nulle part). Un test affirme volontairement `=== ["forge"]` : il cassera au premier lot d'é11, ce qui oblige à vérifier que l'écran existe avant d'élargir. · **arena#812** — la console affichait `/ 2,00 $` comme un plafond qui ne coupe plus. · **arena#815** — le piège de la branche déjà mergée en squash, écrit dans `docs/agents/collaboration.md`. |
+| 2026-08-22 | ⚠️ **décision produit** | arena#811 | **LES PLAFONDS DE CONSOMMATION NE COUPENT PLUS PAR DÉFAUT** — argent **et** énergie. Décision du porteur du produit, prise en connaissance de cause, contre l'avis que R-11 portait. `ai_credentials.limits_enforced` vaut `false` à la création ; le porteur réarme depuis `/parametrage`, sans redéploiement. **Ce qui survit** : la réservation (elle sérialise deux appels concurrents, ce n'est pas un frein mais la comptabilité), `log_ai_usage`, les seuils 50/80/100 % et l'alerte d'anomalie à 3× la médiane — désormais **le seul signal automatique** sur une facture qui dérape, et elle passe par le push, pas par e-mail. **Ce que cela coûte, et qui est écrit ici pour ne jamais être découvert après coup** : RISK-2 n'est plus arrêté par la machine, seulement signalé ; et le plafond d'énergie de R-9, qui était un garde-fou **pédagogique** (é09 anti-farm) et non de coût, tombe avec le reste — la décision portait explicitement sur les deux. Les assertions de R-11 dans pgTAP S63 arment désormais le plafond explicitement, sinon chacune serait passée au vert **pour la mauvaise raison**. |
+
+### Ce qui reste ouvert après ces cinq lots
+
+1. **Le pilote de mesure de deux semaines** (Q-9) n'a pas eu lieu, et aucune clé réelle n'a été
+   branchée : le seul appel réel du système est celui de la vérification (US-2), déclenché par un
+   humain. **Rien dans ce qui est livré n'a jamais parlé à un vrai fournisseur.** Les adaptateurs
+   sont testés contre un transport mocké et un fournisseur factice — c'est la règle du §5, et
+   c'est aussi sa limite : le premier contact réel reste à faire, sur une clé maîtrisée.
+2. ~~**`AI_KEY_ENC_KEY` n'est posée nulle part.**~~ **Posée le 2026-08-22 au soir** : le coffre est
+   ouvert et la section « Mode IA » s'affiche en production. Ce qu'il faut en retenir pour la
+   suite, c'est le chemin qu'il a fallu pour y arriver — la clé absente ne produit **aucun
+   message** (R-1 fait disparaître la section entière, en-tête comprise) et une valeur base64
+   tronquée au copier-coller échoue **exactement de la même façon**, en silence. Une ligne d'état
+   du coffre dans `/admin/ia` reste à écrire : c'est une surface admin, donc elle ne rouvre pas le
+   « bientôt » que R-1 interdit côté élève.
+3. **Les lots 1-7 de l'étude 11** restent à écrire. C'est le KPI honnête de cette étude (§1.4) :
+   elle réussit si é11 démarre, pas si des clés sont saisies.
+4. **Les captures FR + AR** et le **registre de traitement INPDP** (§3.8) demandent un geste
+   humain. La page `/confidentialite` a sa section « Mode IA », elle.
+
+### Ce qui a été validé, et comment
+
+Les cinq migrations et les cinq fichiers pgTAP ont été **rejoués sur un PostgreSQL 16 réel**
+(harnais local monté à la main : rôles Supabase, schéma `auth`, catalogue), faute de Docker et du
+CLI Supabase dans l'environnement d'exécution : **112 assertions vertes**, puis **confirmées par
+`pgTAP suite` en CI**, sur la vraie pile Supabase.
+
+Cette double passe a trouvé **cinq** défauts des tests eux-mêmes, et la distinction entre les deux
+groupes vaut d'être notée — c'est une leçon sur les harnais, pas sur cette étude.
+
+**Trois vus par le harnais local**, parce qu'ils ne dépendaient que de pgTAP : un `throws_ok` à
+trois arguments prenait la description pour le message attendu (deux fois), et une sonde
+`information_schema` sous rôle `authenticated` était vraie pour la mauvaise raison — sous ce rôle,
+la table n'a aucune colonne visible.
+
+**Deux vus SEULEMENT par la CI**, parce qu'ils dépendaient du schéma réel :
+1. les fixtures du fichier 64 omettaient des colonnes `NOT NULL` du catalogue (`name_fr`,
+   `attribute`, `color_token`, `icon`) — le fichier avortait **avant sa première assertion** ;
+2. l'assertion « jouer un quiz forgé ne rapporte RIEN » (R-16, la plus importante du fichier)
+   interrogeait une colonne `coins` qui n'existe pas : elle s'appelle `yahia_coins`. Une erreur de
+   colonne avorte la transaction au lieu de vérifier quoi que ce soit — **l'assertion était
+   muette**, ce qui est le pire état possible pour une garde d'invariant.
+
+C'est exactement l'angle mort que le moteur venait de documenter le même jour sur `db:check-chain`
+(arena#810) : « un Postgres nu n'a pas les gardes que Supabase installe ». Un harnais approximatif
+prouve ce qu'il sait modéliser, et se tait sur le reste. Le harnais a été durci en conséquence
+(DDL réel de `themes`/`subjects`/`chapters`/`exercises`/`questions`/`profiles`, copié des
+migrations), mais la conclusion tient au-delà de cette session : **`pgTAP suite` fait foi, pas un
+Postgres monté à côté.**
+
+Côté moteur : `verify`, `ci:verify`, `build:check`, `smoke:shell`, `audit:deps` et `harness:check`
+sont verts, et le budget de bundle a rattrapé une régression réelle de 58 Ko (un
+`validateSearch: z.object(…)` faisait entrer zod dans le chunk d'index). Le `Migration order` a
+lui aussi parlé : arena#810 a merge pendant la session et a rendu trois de mes horodatages
+antérieurs au dernier appliqué — les cinq ont été re-horodatés.
 
 ---
 
@@ -875,10 +1095,14 @@ change ici n'est pas le prix : c'est **le dénominateur**.
 
 **Deux effets, en sens contraires** :
 
-1. **Le cache privé renchérit** (D-9). é11 compte sur un taux de réutilisation de 60 % obtenu en
-   mutualisant les explications entre tous les élèves. Une famille seule ne réutilise que ses
-   propres répétitions : **10 à 20 %**. Le poste « explications » d'une famille coûte donc environ
-   **le double** de la ligne équivalente de é11.
+1. **Le cache mutualisé allège, une fois qu'il est plein** (D-9, inversée par Q-3 le 2026-08-20).
+   La v1 de cette annexe supposait un cache privé, donc un taux de réutilisation de 10-20 % et un
+   poste « explications » deux fois plus lourd que chez é11. L'arbitrage change ce chiffre :
+   le taux visé redevient celui de é11 (**60 % à S+4**), et le poste « explications » **converge
+   vers celui de é11**. Les colonnes ci-dessous restent volontairement calculées **au pire cas**,
+   c'est-à-dire cache froid : ce sont les chiffres des **premières semaines** et des premiers
+   porteurs de clé, pas ceux du régime établi. À mesure que le pot se remplit, la ligne
+   « explication fraîche » se raréfie et seule la Forge subsiste.
 2. **La Forge est le poste dominant**, et il n'existe pas chez é11. Un quiz de 8 questions =
    1 appel de génération groupée + 8 à 10 double-solves.
 
@@ -943,7 +1167,7 @@ FR/EN/AR côté client (motif des codes stables de `parent-code-errors.ts`).
 | `AI_CREDIT_EXHAUSTED` | 402 / 429 « insufficient quota »    | Le compte fournisseur n'a plus de crédit | Mode éteint, e-mail parent (une fois)             |
 | `AI_RATE_LIMITED`     | 429 (débit)                         | Trop d'appels d'un coup               | 2 retries, puis dégradé silencieux côté élève        |
 | `AI_PROVIDER_DOWN`    | 5xx, timeout                        | Le fournisseur ne répond pas          | Dégradé silencieux (é11 R-15), énergie remboursée    |
-| `AI_HOST_NOT_ALLOWED` | `base_url` hors liste blanche       | Cette adresse n'est pas autorisée     | Enregistrement refusé (R-6)                          |
+| `AI_HOST_NOT_ALLOWED` | adresse recalée par R-6 (schéma, port, IP littérale, plage privée, métadonnées cloud, redirection, liste de refus) | Cette adresse ne peut pas être appelée depuis le serveur, et pourquoi | Enregistrement refusé, et appel refusé s'il survient plus tard (R-6) |
 | `AI_BUDGET_REACHED`   | interne (R-11)                      | Plafond atteint, date et montant      | Appel non émis, dégradé, alerte 100 %                |
 | `AI_OUTPUT_REJECTED`  | validateur de sortie (é11 §3.4)     | Compté dans le taux de rebut          | 1 retry, puis dégradé                                |
 | `AI_FORGE_NO_QUORUM`  | < N items validés (§3.6)            | Compté dans le taux de rebut          | Échec honnête, énergie remboursée                    |

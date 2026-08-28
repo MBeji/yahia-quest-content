@@ -9,8 +9,8 @@
           "id": "b",
           "text": "الزاوية المركزية رأسها مركز الدائرة وضلعاها نصفا قطرين؛ والمحيطية رأسها نقطة على الدائرة وضلعاها وتران"
         },
-        { "id": "c", "text": "لا فرق؛ كلتاهما تساوي قيس القوس ذاته" },
-        { "id": "d", "text": "الزاوية المحيطية دائمًا أكبر من المركزية لنفس القوس" }
+        { "id": "c", "text": "لا فرق؛ كلتاهما تساوي قيس القوس ذاته", "misconceptionTag": "math.geo.angle-inscrit-egal-au-centre" },
+        { "id": "d", "text": "الزاوية المحيطية دائمًا أكبر من المركزية لنفس القوس", "misconceptionTag": "math.geo.angle-inscrit-double-du-centre" }
       ],
       "correctOption": "b",
       "explanation": "الزاوية المركزية: رأسها المركز O وضلعاها نصفا قطرَين. الزاوية المحيطية: رأسها نقطة على الدائرة وضلعاها وتران. هذا هو التمييز التعريفي بينهما.",
@@ -20,8 +20,8 @@
     {
       "prompt": "ما العلاقة الرياضية بين الزاوية المحيطية والزاوية المركزية المقابلتَين لنفس القوس؟",
       "options": [
-        { "id": "a", "text": "الزاوية المحيطية = الزاوية المركزية" },
-        { "id": "b", "text": "الزاوية المحيطية = 2 × الزاوية المركزية" },
+        { "id": "a", "text": "الزاوية المحيطية = الزاوية المركزية", "misconceptionTag": "math.geo.angle-inscrit-egal-au-centre" },
+        { "id": "b", "text": "الزاوية المحيطية = 2 × الزاوية المركزية", "misconceptionTag": "math.geo.angle-inscrit-double-du-centre" },
         { "id": "c", "text": "الزاوية المحيطية = نصف الزاوية المركزية" },
         { "id": "d", "text": "الزاوية المحيطية + الزاوية المركزية = 180°" }
       ],
@@ -33,8 +33,8 @@
     {
       "prompt": "في دائرة مركزها O، إذا كانت الزاوية المركزية AOB = 140°، فما قيمة الزاوية المحيطية ACB (حيث C على القوس الكبير)؟",
       "options": [
-        { "id": "a", "text": "280°" },
-        { "id": "b", "text": "140°" },
+        { "id": "a", "text": "280°", "misconceptionTag": "math.geo.angle-inscrit-double-du-centre" },
+        { "id": "b", "text": "140°", "misconceptionTag": "math.geo.angle-inscrit-egal-au-centre" },
         { "id": "c", "text": "70°" },
         { "id": "d", "text": "40°" }
       ],
@@ -61,7 +61,7 @@
       "options": [
         { "id": "a", "text": "ACB + ADB = 360°" },
         { "id": "b", "text": "ACB = ADB (الزاويتان متقايستان)" },
-        { "id": "c", "text": "ACB = 2 × ADB" },
+        { "id": "c", "text": "ACB = 2 × ADB", "misconceptionTag": "math.geo.angle-inscrit-double-du-centre" },
         { "id": "d", "text": "لا علاقة تربطهما" }
       ],
       "correctOption": "b",

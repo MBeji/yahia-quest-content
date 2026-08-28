@@ -1,0 +1,107 @@
+{
+  "title": "👑 تحدّي النخبة ⭐⭐⭐⭐: الرباعيات — من القطرين إلى المساحة",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "ABCD متوازي أضلاع، والنقطة E نظيرة A بالنسبة إلى B، والنقطة F نظيرة A بالنسبة إلى D. ما العبارة الصحيحة؟\n<svg viewBox=\"0 0 290 260\"><path d=\"M60 50 L150 75 L180 165 L90 140 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M60 50 L150 75 L180 165 L90 140 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M60 50 L240 100 M60 50 L120 230\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><g stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" fill=\"none\"><path d=\"M107 57 L103 68\"/><path d=\"M197 82 L193 93\"/><path d=\"M81 93 L69 97\"/><path d=\"M83 98 L71 102\"/><path d=\"M111 183 L99 187\"/><path d=\"M113 188 L101 192\"/></g><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"50\" r=\"4\"/><circle cx=\"150\" cy=\"75\" r=\"4\"/><circle cx=\"180\" cy=\"165\" r=\"4\"/><circle cx=\"90\" cy=\"140\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"240\" cy=\"100\" r=\"4.5\"/><circle cx=\"120\" cy=\"230\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"48\" y=\"44\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"156\" y=\"64\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"194\" y=\"180\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"76\" y=\"148\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"252\" y=\"94\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text><text x=\"132\" y=\"246\" text-anchor=\"middle\" fill=\"#0f6e56\">F</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "النقطة A منتصف [EF]" },
+        { "id": "b", "text": "الرباعي AECF متوازي أضلاع" },
+        { "id": "c", "text": "النقطة C منتصف [EF]" },
+        { "id": "d", "text": "EF = 2 AC" }
+      ],
+      "correctOption": "c",
+      "explanation": "بما أنّ B منتصف [AE] و D منتصف [AF] فإنّ BE = AB و DF = AD. وفي متوازي الأضلاع ABCD نجد (CB) ∥ (AD) و CB = AD = DF: فللرباعي BDFC ضلعان متقابلان متوازيان ومتقايسان هما [CB] و[DF]، إذن هو متوازي أضلاع ومنه CF = BD و(CF) ∥ (BD). وبنفس الطريقة (DC) ∥ (AB) و DC = AB = BE، فالرباعي DBEC متوازي أضلاع ومنه CE = BD و(CE) ∥ (BD). فالمستقيمان (CE) و(CF) يمرّان كلاهما من C ويوازيان (BD): إنّهما نفس المستقيم، إذن E وC وF على نفس الاستقامة، ومع CE = CF تكون C منتصف [EF]. أمّا A فبعيدة عن منتصف [EF]، و AECF ليس رباعيا أصلا لأنّ ثلاثا من نقاطه على استقامة واحدة، والعلاقة الصحيحة على الأطوال هي EF = 2 BD لا 2 AC.",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "ABCD مستطيل حيث AB = 9 و AD = 6. النقطة P من [AD] والنقطة M من [AB] حيث AP = AM = x. المستقيم المارّ من P والموازي لـ (AB) يقطع [BC] في N، والمستقيم المارّ من M والموازي لـ (AD) يقطع [DC] في Q، ويتقاطع هذان المستقيمان في I. إذا كانت S مساحة الرباعي AMIP و S' مساحة الرباعي CQIN، فما قيمة x التي تحقّق S = S' ؟\n<svg viewBox=\"0 0 340 235\"><path d=\"M60 50 L112 50 L112 102 L60 102 Z\" fill=\"#0f6e56\" opacity=\"0.22\"/><path d=\"M112 102 L294 102 L294 206 L112 206 Z\" fill=\"#0f6e56\" opacity=\"0.22\"/><path d=\"M112 50 L294 50 L294 102 L112 102 Z\" fill=\"#94a3b8\" opacity=\"0.15\"/><path d=\"M60 102 L112 102 L112 206 L60 206 Z\" fill=\"#94a3b8\" opacity=\"0.15\"/><path d=\"M60 50 L294 50 L294 206 L60 206 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M60 102 L294 102 M112 50 L112 206\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M42 50 L42 102 M38 50 L46 50 M38 102 L46 102\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M60 34 L294 34 M60 30 L60 38 M294 30 L294 38\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M312 50 L312 206 M308 50 L316 50 M308 206 L316 206\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"50\" r=\"4\"/><circle cx=\"294\" cy=\"50\" r=\"4\"/><circle cx=\"294\" cy=\"206\" r=\"4\"/><circle cx=\"60\" cy=\"206\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"112\" cy=\"50\" r=\"4.5\"/><circle cx=\"60\" cy=\"102\" r=\"4.5\"/><circle cx=\"112\" cy=\"102\" r=\"4.5\"/><circle cx=\"294\" cy=\"102\" r=\"4.5\"/><circle cx=\"112\" cy=\"206\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"58\" y=\"64\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"286\" y=\"64\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"286\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"58\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"112\" y=\"64\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"74\" y=\"96\" text-anchor=\"middle\" fill=\"#0f6e56\">P</text><text x=\"126\" y=\"96\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"280\" y=\"96\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text><text x=\"112\" y=\"224\" text-anchor=\"middle\" fill=\"#0f6e56\">Q</text><text x=\"30\" y=\"82\" text-anchor=\"middle\" fill=\"#0f172a\">x</text><text x=\"177\" y=\"24\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">9</text><text x=\"326\" y=\"132\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">6</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "2,4" },
+        { "id": "b", "text": "3,6" },
+        { "id": "c", "text": "4,5" },
+        { "id": "d", "text": "5,4" }
+      ],
+      "correctOption": "b",
+      "explanation": "الرباعي AMIP مربّع ضلعه x لأنّ AM = AP = x، إذن S = x². والرباعي CQIN مستطيل بعداه 9 − x و 6 − x، إذن S' = (9 − x)(6 − x) = 54 − 15x + x². وتعطي المعادلة S = S' العلاقة x² = 54 − 15x + x²، أي 15x = 54 ومنه x = 3,6 (وهي مقبولة لأنّ 3,6 ≤ 6). تحقّق: S = 12,96 و S' = 5,4 × 2,4 = 12,96 ✓",
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
+    },
+    {
+      "prompt": "قطرا الرباعي EFGH متقايسان ومتعامدان، لكنّهما لا يتقاطعان في منتصفيهما. ما الاستنتاج الصحيح؟\n<svg viewBox=\"0 0 280 250\"><path d=\"M60 150 L110 60 L220 150 L110 220 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M60 150 L110 60 L220 150 L110 220 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M60 150 L220 150 M110 60 L110 220\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\"/><path d=\"M110 138 L122 138 L122 150\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"150\" r=\"4\"/><circle cx=\"110\" cy=\"60\" r=\"4\"/><circle cx=\"220\" cy=\"150\" r=\"4\"/><circle cx=\"110\" cy=\"220\" r=\"4\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"46\" y=\"154\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"110\" y=\"48\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"234\" y=\"154\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"110\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "لا يمكن أن يكون مربّعا لأنّ قطري المربّع لهما نفس المنتصف"
+        },
+        {
+          "id": "b",
+          "text": "هو مربّع لأنّ تقايس القطرين وتعامدهما شرطان كافيان",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "c",
+          "text": "هو معيّن لأنّ قطريه متعامدان وهذا يكفي للمعيّن",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "d",
+          "text": "هو مستطيل لأنّ قطريه متقايسان وهذا يكفي للمستطيل",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "كلّ من المستطيل والمعيّن والمربّع هو أوّلا متوازي أضلاع، وشرط متوازي الأضلاع هو أن يتقاطع القطران في منتصفيهما. وبما أنّ هذا الشرط غير متحقّق هنا فالرباعي EFGH ليس متوازي أضلاع أصلا، فلا هو مستطيل ولا معيّن ولا مربّع — مهما كان قطراه متقايسين ومتعامدين. والرسم يبيّن رباعيا يستجيب للمعطيات: قطراه [EG] و[FH] متقايسان ومتعامدان، لكنّ نقطة تقاطعهما ليست منتصف أيّ منهما.",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "EFG مثلث قائم الزاوية في F حيث FG = 12 و FE = 5، والنقطة O منتصف [EG]. ما شعاع الدائرة التي مركزها O وتمرّ بالنقاط E و F و G؟\n<svg viewBox=\"0 0 240 245\"><circle cx=\"140\" cy=\"165\" r=\"65\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M80 140 L80 190 L200 190 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M80 140 L80 190 L200 190 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M80 176 L94 176 L94 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g fill=\"#0f172a\"><circle cx=\"80\" cy=\"140\" r=\"4\"/><circle cx=\"80\" cy=\"190\" r=\"4\"/><circle cx=\"200\" cy=\"190\" r=\"4\"/></g><circle cx=\"140\" cy=\"165\" r=\"4.5\" fill=\"#0f6e56\"/><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"66\" y=\"134\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"66\" y=\"206\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"214\" y=\"206\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"156\" y=\"160\" text-anchor=\"middle\" fill=\"#0f6e56\">O</text><text x=\"140\" y=\"206\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">12</text><text x=\"64\" y=\"170\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">5</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "6" },
+        { "id": "b", "text": "6,5" },
+        { "id": "c", "text": "8,5" },
+        { "id": "d", "text": "13", "misconceptionTag": "math.geo.mediane-hypotenuse-demi" }
+      ],
+      "correctOption": "b",
+      "explanation": "بمبرهنة فيثاغورس في المثلث القائم الزاوية في F: EG² = 12² + 5² = 144 + 25 = 169، إذن EG = 13. وبما أنّ O منتصف الوتر [EG] فإنّ OE = OG = OF = EG/2 = 6,5: النقاط الثلاث على دائرة مركزها O وشعاعها 6,5، وهي الدائرة التي قطرها [EG]. (من ينصّف ضلعا قائما يجد 6، ومن يحسب معدّل الضلعين القائمين يجد 8,5، ومن يعطي طول الوتر نفسه يجد 13.)",
+      "difficulty": 3,
+      "competencies": ["math.geo.triangles-base"]
+    },
+    {
+      "prompt": "معيّن ABCD قطراه 16 و 30. ما محيطه؟\n<svg viewBox=\"0 0 340 210\"><path d=\"M170 72 L260 120 L170 168 L80 120 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M170 72 L260 120 L170 168 L80 120 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M170 72 L170 168 M80 120 L260 120\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\"/><path d=\"M170 108 L182 108 L182 120\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g fill=\"#0f172a\"><circle cx=\"170\" cy=\"72\" r=\"4\"/><circle cx=\"260\" cy=\"120\" r=\"4\"/><circle cx=\"170\" cy=\"168\" r=\"4\"/><circle cx=\"80\" cy=\"120\" r=\"4\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"170\" y=\"60\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"276\" y=\"124\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"170\" y=\"188\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"64\" y=\"124\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"152\" y=\"100\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">16</text><text x=\"222\" y=\"138\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">30</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "34" },
+        { "id": "b", "text": "46" },
+        { "id": "c", "text": "62" },
+        { "id": "d", "text": "68" }
+      ],
+      "correctOption": "d",
+      "explanation": "القطران متعامدان ويتقاطعان في منتصفيهما، فنصفاهما 16/2 = 8 و 30/2 = 15، وهما الضلعان القائمان لمثلث وتره ضلع المعيّن: الضلع² = 8² + 15² = 64 + 225 = 289، أي الضلع = 17. وأضلاع المعيّن الأربعة متقايسة، فالمحيط يساوي 4 × 17 = 68. (من يجمع القطرين يجد 16 + 30 = 46، ومن يكتفي بضلعين يجد 2 × 17 = 34، ومن يعامل الشكل كأنّه مستطيل بعداه 16 و 15 يجد 2 × (16 + 15) = 62.)",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "في معلّم متعامد، النقطة A(−3 ; 2). النقطة B هي مناظرة A بالنسبة إلى محور الفواصل (OI)، والنقطة C هي نظيرة B بالنسبة إلى النقطة D(1 ; 0). ما إحداثيات C؟\n<svg viewBox=\"0 0 300 235\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\"><path d=\"M52 30 V212 M74 30 V212 M96 30 V212 M118 30 V212 M162 30 V212 M184 30 V212 M206 30 V212 M228 30 V212 M250 30 V212 M272 30 V212\"/><path d=\"M46 208 H278 M46 186 H278 M46 164 H278 M46 142 H278 M46 98 H278 M46 76 H278 M46 54 H278 M46 32 H278\"/></g><path d=\"M40 120 H285 M140 218 V26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M279 114 L288 120 L279 126 Z M134 35 L140 24 L146 35 Z\" fill=\"#0f172a\"/><path d=\"M74 76 L74 164\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><g fill=\"#0f6e56\"><circle cx=\"74\" cy=\"76\" r=\"5\"/><circle cx=\"74\" cy=\"164\" r=\"5\"/></g><circle cx=\"162\" cy=\"120\" r=\"5\" fill=\"#0f172a\"/><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"62\" y=\"70\" text-anchor=\"middle\" fill=\"#0f6e56\">A</text><text x=\"62\" y=\"180\" text-anchor=\"middle\" fill=\"#0f6e56\">B</text><text x=\"170\" y=\"138\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"128\" y=\"138\" text-anchor=\"middle\" fill=\"#0f172a\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−3 ; −2)",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        { "id": "b", "text": "(3 ; 2)" },
+        { "id": "c", "text": "(5 ; −2)" },
+        { "id": "d", "text": "(5 ; 2)" }
+      ],
+      "correctOption": "d",
+      "explanation": "المناظرة بالنسبة إلى محور الفواصل تُبقي الفاصلة وتغيّر إشارة الترتيبة، إذن B(−3 ; −2). ثمّ نظير B بالنسبة إلى النقطة D هو النقطة C التي تجعل D منتصف [BC]: xC = 2xD − xB = 2 × 1 − (−3) = 5 و yC = 2yD − yB = 2 × 0 − (−2) = 2، إذن C(5 ; 2). (من يقف عند B يجد (−3 ; −2)، ومن يأخذ نظير B بالنسبة إلى النقطة O بدل D يجد (3 ; 2)، ومن ينسى المناظرة المحوريّة ويأخذ نظير A مباشرة بالنسبة إلى D يجد (5 ; −2).)",
+      "difficulty": 3,
+      "competencies": ["math.vec.repere-coordonnees"]
+    }
+  ]
+}

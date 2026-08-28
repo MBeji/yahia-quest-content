@@ -1,0 +1,88 @@
+{
+  "title": "⭐ تمرين: التعامد في الفضاء — الخطوات الأولى",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "في متوازي المستطيلات ABCDEFGH ، المستقيم (BF) عمودي على (BA) وعلى (BC) . ماذا نستنتج ؟\n<svg viewBox=\"0 0 215 210\"><path d=\"M45 180 L140 180 L185 148 M45 180 L45 70 M140 180 L140 70 M185 148 L185 38 M45 70 L140 70 L185 38 L90 38 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M45 180 L90 148 L185 148 M90 148 L90 38\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M140 168 L128 168 L128 180\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><path d=\"M140 162 L155 152 L155 170\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"34\" y=\"196\" text-anchor=\"middle\">A</text><text x=\"149\" y=\"196\" text-anchor=\"middle\">B</text><text x=\"197\" y=\"145\" text-anchor=\"middle\">C</text><text x=\"79\" y=\"161\" text-anchor=\"middle\">D</text><text x=\"34\" y=\"66\" text-anchor=\"middle\">E</text><text x=\"150\" y=\"66\" text-anchor=\"middle\">F</text><text x=\"197\" y=\"35\" text-anchor=\"middle\">G</text><text x=\"79\" y=\"33\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "(BF) عمودي على المستوي (ABC)" },
+        { "id": "b", "text": "(BF) عمودي على المستوي (ABF)" },
+        { "id": "c", "text": "(BF) موازٍ للمستوي (ABC)" },
+        { "id": "d", "text": "(BF) محتوى في المستوي (ABC)" }
+      ],
+      "correctOption": "a",
+      "explanation": "المستقيمان (BA) و(BC) متقاطعان في B ومحتويان في المستوي (ABC) ، والمستقيم (BF) عمودي عليهما في نفس النقطة B : هذا هو تعريف العمودي على مستوٍ، إذن (BF) عمودي على المستوي (ABC) . ولا يمكن أن يكون عموديًا على المستوي (ABF) لأنّه محتوى فيه، ولا موازيًا للقاعدة أو محتوى فيها لأنّه يقطعها في B .",
+      "difficulty": 1,
+      "competencies": ["math.geo.droites-perp-para", "math.esp.solides-espace"]
+    },
+    {
+      "prompt": "في متوازي المستطيلات ABCDEFGH ، ما الرمز الذي يجعل الكتابة التالية صحيحة: (AE) … (ABF) ؟\n<svg viewBox=\"0 0 215 210\"><path d=\"M45 180 L140 180 L185 148 M45 180 L45 70 M140 180 L140 70 M185 148 L185 38 M45 70 L140 70 L185 38 L90 38 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M45 180 L90 148 L185 148 M90 148 L90 38\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"34\" y=\"196\" text-anchor=\"middle\">A</text><text x=\"149\" y=\"196\" text-anchor=\"middle\">B</text><text x=\"197\" y=\"145\" text-anchor=\"middle\">C</text><text x=\"79\" y=\"161\" text-anchor=\"middle\">D</text><text x=\"34\" y=\"66\" text-anchor=\"middle\">E</text><text x=\"150\" y=\"66\" text-anchor=\"middle\">F</text><text x=\"197\" y=\"35\" text-anchor=\"middle\">G</text><text x=\"79\" y=\"33\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "الرمز ∈", "misconceptionTag": "math.esp.appartenance-et-inclusion-confondues" },
+        { "id": "b", "text": "الرمز ∉", "misconceptionTag": "math.esp.appartenance-et-inclusion-confondues" },
+        { "id": "c", "text": "الرمز ⊂" },
+        { "id": "d", "text": "الرمز ⊄", "misconceptionTag": "math.esp.appartenance-et-inclusion-confondues" }
+      ],
+      "correctOption": "c",
+      "explanation": "النقاط A و B و F و E تنتمي إلى نفس الوجه، فالمستوي (ABF) يحتوي النقطتين A و E ، ومنه يحتوي المستقيم (AE) بأكمله: نكتب (AE) ⊂ (ABF) . الرمزان ∈ و ∉ يخصّان انتماء نقطة، لا احتواء مستقيم، والرمز ⊄ يعني عدم الاحتواء وهو خاطئ هنا.",
+      "difficulty": 1,
+      "competencies": ["math.esp.solides-espace"]
+    },
+    {
+      "prompt": "مكعّب طول حرفه 5 cm . ما قيس قطره ؟",
+      "options": [
+        { "id": "a", "text": "5√2", "misconceptionTag": "math.esp.diagonale-du-pave-en-deux-dimensions" },
+        { "id": "b", "text": "5√3" },
+        { "id": "c", "text": "15", "misconceptionTag": "math.geo.pythagore-sans-carres" },
+        { "id": "d", "text": "25√3" }
+      ],
+      "correctOption": "b",
+      "explanation": "أبعاد المكعّب الثلاثة متساوية، إذن القطر يساوي √(5² + 5² + 5²) = √75 = 5√3 cm . والقيمة 5√2 هي قطر وجه من أوجه المكعّب لا قطر المجسّم، والقيمة 15 هي مجموع الأبعاد، والقيمة 25√3 ناتج تربيع الحرف قبل ضربه في √3 بدل ضرب الحرف نفسه فيه.",
+      "difficulty": 1,
+      "competencies": ["math.geo.pythagore", "math.esp.solides-espace"]
+    },
+    {
+      "prompt": "المستويان P و Q عموديان على نفس المستقيم (D) . ماذا نستنتج ؟",
+      "options": [
+        { "id": "a", "text": "المستويان P و Q منطبقان", "misconceptionTag": "math.esp.deux-perpendiculaires-au-meme-plan" },
+        { "id": "b", "text": "المستويان P و Q متقاطعان وفق مستقيم", "misconceptionTag": "math.esp.deux-perpendiculaires-au-meme-plan" },
+        { "id": "c", "text": "المستويان P و Q يقطعان (D) في نفس النقطة", "misconceptionTag": "math.esp.deux-perpendiculaires-au-meme-plan" },
+        { "id": "d", "text": "المستويان P و Q متوازيان" }
+      ],
+      "correctOption": "d",
+      "explanation": "من قواعد الفصل: مستويان عموديان على نفس المستقيم هما مستويان متوازيان. وهما ليسا منطبقين بالضرورة لأنّ (D) يقطع كلًّا منهما في نقطة قد تختلف عن الأخرى، ولو كانا متقاطعين لتناقض ذلك مع توازيهما. ولا يمكن أن يقطعا (D) في نفس النقطة إلّا إذا انطبقا، لأنّ من كلّ نقطة من الفضاء يمرّ مستوٍ واحد فقط عمودي على مستقيم معلوم.",
+      "difficulty": 1,
+      "competencies": ["math.geo.droites-perp-para"]
+    },
+    {
+      "prompt": "لتكن P مستويًا و A نقطة من الفضاء. كم مستقيمًا يمرّ من A ويكون عموديًا على P ؟",
+      "options": [
+        { "id": "a", "text": "لا يوجد إلّا إذا كانت A تنتمي إلى P", "misconceptionTag": "math.esp.perpendiculaire-au-plan-unicite" },
+        { "id": "b", "text": "مستقيم واحد فقط لا غير" },
+        { "id": "c", "text": "مستقيمان اثنان على الأكثر", "misconceptionTag": "math.esp.perpendiculaire-au-plan-unicite" },
+        { "id": "d", "text": "عدد لا نهائي من المستقيمات", "misconceptionTag": "math.esp.perpendiculaire-au-plan-unicite" }
+      ],
+      "correctOption": "b",
+      "explanation": "من نقطة معلومة من الفضاء يمرّ مستقيم واحد فقط عمودي على مستوٍ معلوم: العبارة تعني أنّه يوجد دائمًا، وأنّه وحيد. والقاعدة صحيحة سواء انتمت A إلى المستوي P أو كانت خارجه.",
+      "difficulty": 1,
+      "competencies": ["math.geo.droites-perp-para"]
+    },
+    {
+      "prompt": "ABCDEFGH متوازي مستطيلات بحيث AB = 9 و BC = 12 (بالصنتمتر). ما قيس القطر AC لقاعدته ABCD ؟\n<svg viewBox=\"0 0 215 210\"><path d=\"M45 180 L140 180 L185 148 M45 180 L45 70 M140 180 L140 70 M185 148 L185 38 M45 70 L140 70 L185 38 L90 38 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M45 180 L90 148 L185 148 M90 148 L90 38\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M45 180 L185 148\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"34\" y=\"196\" text-anchor=\"middle\">A</text><text x=\"149\" y=\"196\" text-anchor=\"middle\">B</text><text x=\"197\" y=\"145\" text-anchor=\"middle\">C</text><text x=\"79\" y=\"161\" text-anchor=\"middle\">D</text><text x=\"34\" y=\"66\" text-anchor=\"middle\">E</text><text x=\"150\" y=\"66\" text-anchor=\"middle\">F</text><text x=\"197\" y=\"35\" text-anchor=\"middle\">G</text><text x=\"79\" y=\"33\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "3√7", "misconceptionTag": "math.geo.pythagore-sans-carres" },
+        { "id": "b", "text": "9√2" },
+        { "id": "c", "text": "15" },
+        { "id": "d", "text": "21", "misconceptionTag": "math.geo.pythagore-sans-carres" }
+      ],
+      "correctOption": "c",
+      "explanation": "القاعدة ABCD مستطيل قائم في B ، فبنظرية بيتاغور: AC² = AB² + BC² = 81 + 144 = 225 ومنه AC = 15 cm . أمّا 21 فهو مجموع الطولين، والقطر أصغر دائمًا من هذا المجموع، والقيمة 3√7 = √63 ناتج طرح المربّعين بدل جمعهما، والقيمة 9√2 ناتج تطبيق قاعدة قطر المربّع a√2 على مستطيل ليس مربّعًا.",
+      "difficulty": 2,
+      "competencies": ["math.geo.pythagore", "math.esp.solides-espace"]
+    }
+  ]
+}

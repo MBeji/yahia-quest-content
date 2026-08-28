@@ -12,7 +12,7 @@
         { "id": "a", "text": "AD" },
         { "id": "b", "text": "AC" },
         { "id": "c", "text": "BC" },
-        { "id": "d", "text": "CA" }
+        { "id": "d", "text": "CA", "misconceptionTag": "math.vec.chasles-sens-inverse" }
       ],
       "correctOption": "b",
       "explanation": "نحوّل الطرح إلى جمع بالشعاع المعاكس: −DB = BD، فالمجموع يصبح AB + BD + DC. بشال: AB + BD = AD، ثمّ AD + DC = AC. إذن الناتج هو AC. الخطأ الشائع: نسيان قلب الحرفين عند أخذ المعاكس فيتعطّل تسلسل شال، أو التوقّف عند AD بإهمال الحدّ الأخير.",
@@ -22,10 +22,10 @@
     {
       "prompt": "M نقطة في المستوي. صورة M بالانسحاب ذي الشعاع AB هي M'، وصورة M' بالانسحاب ذي الشعاع BC هي M''. ما هو الشعاع MM''؟",
       "options": [
-        { "id": "a", "text": "AB" },
+        { "id": "a", "text": "AB", "misconceptionTag": "math.vec.chasles-relais-incomplet" },
         { "id": "b", "text": "MB" },
         { "id": "c", "text": "AC" },
-        { "id": "d", "text": "BC" }
+        { "id": "d", "text": "BC", "misconceptionTag": "math.vec.chasles-relais-incomplet" }
       ],
       "correctOption": "c",
       "explanation": "من تعريف الانسحاب: MM' = AB وM'M'' = BC. بتطبيق شال: MM'' = MM' + M'M'' = AB + BC = AC. إذن تركيب انسحابَين متتاليَين يعطي انسحابًا شعاعه مجموع الشعاعَين. الخطأ الشائع: الاكتفاء بأحد الشعاعين AB أو BC دون تركيب الانسحابَين.",
@@ -35,7 +35,7 @@
     {
       "prompt": "A وB وC وD وE خمس نقاط. بسّط: AC − BC + BD − ED",
       "options": [
-        { "id": "a", "text": "AB" },
+        { "id": "a", "text": "AB", "misconceptionTag": "math.vec.chasles-relais-incomplet" },
         { "id": "b", "text": "CE" },
         { "id": "c", "text": "AD" },
         { "id": "d", "text": "AE" }
@@ -51,7 +51,7 @@
         { "id": "a", "text": "الشعاع الصفري" },
         { "id": "b", "text": "2u" },
         { "id": "c", "text": "u" },
-        { "id": "d", "text": "−u" }
+        { "id": "d", "text": "−u", "misconceptionTag": "math.vec.chasles-sens-inverse" }
       ],
       "correctOption": "a",
       "explanation": "من تعريف الانسحاب: MM' = u وM'M'' = −u. بتطبيق شال: MM'' = MM' + M'M'' = u + (−u) = الشعاع الصفري. هذا يعني أنّ M'' = M: تطبيق انسحاب ثمّ معاكسه يعيد كلّ نقطة إلى مكانها. الخطأ الشائع: جمع الطولين فاختيار 2u — الشعاعان متعاكسان فيُلغي أحدهما الآخر.",
@@ -61,7 +61,7 @@
     {
       "prompt": "ABCD متوازي أضلاع مركزه O. بسّط مجموع الأشعّة: AO + OC + CB",
       "options": [
-        { "id": "a", "text": "AC" },
+        { "id": "a", "text": "AC", "misconceptionTag": "math.vec.chasles-relais-incomplet" },
         { "id": "b", "text": "AB" },
         { "id": "c", "text": "AD" },
         { "id": "d", "text": "الشعاع الصفري" }

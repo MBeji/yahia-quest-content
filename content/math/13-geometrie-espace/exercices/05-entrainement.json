@@ -9,7 +9,7 @@
     {
       "prompt": "أسطوانة نصف قطرها 3 cm وارتفاعها 10 cm. ما حجمها؟ (π ≈ 3,14)",
       "options": [
-        { "id": "a", "text": "94,2 cm³" },
+        { "id": "a", "text": "94,2 cm³", "misconceptionTag": "math.mes.tiers-applique-a-tort" },
         { "id": "b", "text": "188,4 cm³" },
         { "id": "c", "text": "282,6 cm³" },
         { "id": "d", "text": "565,2 cm³" }
@@ -23,8 +23,8 @@
       "prompt": "مخروط نصف قطر قاعدته 3 cm وارتفاعه 4 cm. ما طوله المائل l؟",
       "options": [
         { "id": "a", "text": "5 cm" },
-        { "id": "b", "text": "7 cm" },
-        { "id": "c", "text": "√7 cm" },
+        { "id": "b", "text": "7 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" },
+        { "id": "c", "text": "√7 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" },
         { "id": "d", "text": "12 cm" }
       ],
       "correctOption": "a",
@@ -38,7 +38,7 @@
         { "id": "a", "text": "60 cm³" },
         { "id": "b", "text": "100 cm³" },
         { "id": "c", "text": "120 cm³" },
-        { "id": "d", "text": "360 cm³" }
+        { "id": "d", "text": "360 cm³", "misconceptionTag": "math.mes.volume-pyramide-sans-tiers" }
       ],
       "correctOption": "c",
       "explanation": "مساحة القاعدة المربّعة S = 6² = 36 cm². حجم الهرم V = (1/3) × S × h = (1/3) × 36 × 10 = 360/3 = 120 cm³.",
@@ -48,13 +48,13 @@
     {
       "prompt": "كرة حجمها 972π cm³. ما نصف قطرها r؟",
       "options": [
-        { "id": "a", "text": "729 cm" },
+        { "id": "a", "text": "729 cm", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "b", "text": "243 cm" },
         { "id": "c", "text": "18 cm" },
         { "id": "d", "text": "9 cm" }
       ],
       "correctOption": "d",
-      "explanation": "V = (4/3)πr³، إذن 972π = (4/3)πr³. نعزل: r³ = 972 × 3/4 = 729، ثمّ نأخذ الجذر التكعيبي: r = 9 cm لأنّ 9³ = 729. تحقّق: (4/3)π × 729 = 972π ✓. الخطأ الشائع: التوقّف عند r³ = 729 (الخيار أ) أو القسمة على 3 بدل الجذر التكعيبي: 729/3 = 243 (الخيار ب).",
+      "explanation": "V = (4/3)πr³، إذن 972π = (4/3)πr³. نعزل: r³ = 972 × 3/4 = 729، ثمّ نأخذ الجذر التكعيبي: r = 9 cm لأنّ 9³ = 729. تحقّق: (4/3)π × 729 = 972π ✓. الخطأ الشائع: التوقّف عند r³ = 729 فيُعلن r = 729 cm، أو القسمة على 3 بدل الجذر التكعيبي: 729/3 = 243 cm.",
       "difficulty": 3,
       "competencies": ["math.mes.volumes", "math.alg.equations-premier-degre"]
     },
@@ -62,25 +62,37 @@
       "prompt": "أسطوانة نصف قطرها 4 cm وارتفاعها 7 cm. ما مساحتها الجانبية؟ (π ≈ 3,14)",
       "options": [
         { "id": "a", "text": "87,92 cm²" },
-        { "id": "b", "text": "100,48 cm²" },
+        {
+          "id": "b",
+          "text": "100,48 cm²",
+          "misconceptionTag": "math.mes.formules-solides-confondues"
+        },
         { "id": "c", "text": "175,84 cm²" },
         { "id": "d", "text": "351,68 cm²" }
       ],
       "correctOption": "c",
-      "explanation": "المساحة الجانبية للأسطوانة = محيط القاعدة × الارتفاع = 2πrh = 2 × 3,14 × 4 × 7 = 6,28 × 28 = 175,84 cm². الخطأ الشائع: نسيان المعامل 2 (محيط الدائرة 2πr وليس πr) فيُحصل على 87,92 cm² (الخيار أ).",
+      "explanation": "المساحة الجانبية للأسطوانة = محيط القاعدة × الارتفاع = 2πrh = 2 × 3,14 × 4 × 7 = 6,28 × 28 = 175,84 cm². الخطأ الشائع: نسيان المعامل 2 (محيط الدائرة 2πr وليس πr) فيُحصل على 87,92 cm² بدل 175,84 cm².",
       "difficulty": 3,
       "competencies": ["math.mes.aires", "math.esp.solides-espace"]
     },
     {
       "prompt": "إذا ضُرب نصف قطر كرة في 3 (ليصبح 3r بدل r)، فبكم يتضاعف حجمها؟",
       "options": [
-        { "id": "a", "text": "3 مرّات (×3)" },
-        { "id": "b", "text": "9 مرّات (×9)" },
+        {
+          "id": "a",
+          "text": "3 مرّات (×3)",
+          "misconceptionTag": "math.mes.agrandissement-volume-non-cube"
+        },
+        {
+          "id": "b",
+          "text": "9 مرّات (×9)",
+          "misconceptionTag": "math.mes.agrandissement-volume-non-cube"
+        },
         { "id": "c", "text": "12 مرّة (×12)" },
         { "id": "d", "text": "27 مرّة (×27)" }
       ],
       "correctOption": "d",
-      "explanation": "حجم الكرة V = (4/3)πr³ متناسب مع مكعّب نصف القطر. عند ضرب r في 3: (3r)³ = 27r³، إذن الحجم يتضاعف 27 مرّة. الخطأ الشائع: الضرب في 3 فقط (تفكير خطّي، الخيار أ) أو في 3² = 9 (قاعدة المساحات لا الحجوم، الخيار ب).",
+      "explanation": "حجم الكرة V = (4/3)πr³ متناسب مع مكعّب نصف القطر. عند ضرب r في 3: (3r)³ = 27r³، إذن الحجم يتضاعف 27 مرّة. الخطأ الشائع: الضرب في 3 فقط (تفكير خطّي) أو في 3² = 9 (قاعدة المساحات لا الحجوم).",
       "difficulty": 3,
       "competencies": ["math.mes.volumes", "math.esp.solides-espace"]
     }

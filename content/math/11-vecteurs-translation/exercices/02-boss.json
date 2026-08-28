@@ -11,7 +11,7 @@
       "options": [
         { "id": "a", "text": "CD" },
         { "id": "b", "text": "AD" },
-        { "id": "c", "text": "CB" },
+        { "id": "c", "text": "CB", "misconceptionTag": "math.vec.chasles-relais-incomplet" },
         { "id": "d", "text": "الشعاع الصفري" }
       ],
       "correctOption": "a",
@@ -23,8 +23,8 @@
       "prompt": "في متوازي الأضلاع ABCD، ما ناتج مجموع الشعاعين BA + BC؟",
       "options": [
         { "id": "a", "text": "BD" },
-        { "id": "b", "text": "DB" },
-        { "id": "c", "text": "AC" },
+        { "id": "b", "text": "DB", "misconceptionTag": "math.vec.chasles-sens-inverse" },
+        { "id": "c", "text": "AC", "misconceptionTag": "math.vec.parallelogramme-sommets-mal-ordonnes" },
         { "id": "d", "text": "الشعاع الصفري" }
       ],
       "correctOption": "a",
@@ -36,8 +36,8 @@
       "prompt": "A وB وC ثلاث نقاط، والشعاع u يحقّق: AB + CA = u. ما هو الشعاع u؟",
       "options": [
         { "id": "a", "text": "CB" },
-        { "id": "b", "text": "BC" },
-        { "id": "c", "text": "AC" },
+        { "id": "b", "text": "BC", "misconceptionTag": "math.vec.chasles-sens-inverse" },
+        { "id": "c", "text": "AC", "misconceptionTag": "math.vec.chasles-sens-inverse" },
         { "id": "d", "text": "الشعاع الصفري" }
       ],
       "correctOption": "a",
@@ -49,7 +49,7 @@
       "prompt": "صورة المثلث ABC بالانسحاب ذي الشعاع AB هي المثلث A'B'C'. ماذا يساوي الشعاع AA'؟",
       "options": [
         { "id": "a", "text": "AC" },
-        { "id": "b", "text": "BA" },
+        { "id": "b", "text": "BA", "misconceptionTag": "math.vec.chasles-sens-inverse" },
         { "id": "c", "text": "AB" },
         { "id": "d", "text": "الشعاع الصفري" }
       ],
@@ -63,8 +63,8 @@
       "options": [
         { "id": "a", "text": "AB" },
         { "id": "b", "text": "BC" },
-        { "id": "c", "text": "CA" },
-        { "id": "d", "text": "CB" }
+        { "id": "c", "text": "CA", "misconceptionTag": "math.vec.chasles-sens-inverse" },
+        { "id": "d", "text": "CB", "misconceptionTag": "math.vec.chasles-sens-inverse" }
       ],
       "correctOption": "b",
       "explanation": "نعزل v: v = AC − AB = AC + BA (لأنّ معاكس AB هو BA). بالترتيب وتطبيق شال: BA + AC = BC. إذن v = BC. التحقّق: AB + BC = AC ✓. الخطأ الشائع: عكس المنحى فاختيار CB — عوّض دائمًا في المساواة الأصلية للتأكّد.",

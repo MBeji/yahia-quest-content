@@ -9,7 +9,11 @@
     {
       "prompt": "أبسّط √98 :",
       "options": [
-        { "id": "a", "text": "2√7" },
+        {
+          "id": "a",
+          "text": "2√7",
+          "misconceptionTag": "math.num.racine-extraction-facteur-inversee"
+        },
         { "id": "b", "text": "7√2" },
         { "id": "c", "text": "14√2" },
         { "id": "d", "text": "49√2" }
@@ -22,7 +26,7 @@
     {
       "prompt": "ما قيمة √50 − √18 ؟",
       "options": [
-        { "id": "a", "text": "√32" },
+        { "id": "a", "text": "√32", "misconceptionTag": "math.num.racine-distribuee-sur-somme" },
         { "id": "b", "text": "8√2" },
         { "id": "c", "text": "√2" },
         { "id": "d", "text": "2√2" }
@@ -51,7 +55,7 @@
         { "id": "a", "text": "12" },
         { "id": "b", "text": "4" },
         { "id": "c", "text": "0" },
-        { "id": "d", "text": "−8" }
+        { "id": "d", "text": "−8", "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue" }
       ],
       "correctOption": "c",
       "explanation": "√(x²) = |x| وليس x: هنا √((−4)²) = √16 = 4 = |−4|. إذن √(x²) + x = 4 + (−4) = 0 ✓. الخطأ الشائع: كتابة √(x²) = x فيُحصل خطأً على −4 + (−4) = −8؛ و(a) حسب x² = 16 دون أخذ الجذر، و(b) نسي إضافة x.",
@@ -64,7 +68,11 @@
         { "id": "a", "text": "4" },
         { "id": "b", "text": "6" },
         { "id": "c", "text": "9 + √5" },
-        { "id": "d", "text": "14" }
+        {
+          "id": "d",
+          "text": "14",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        }
       ],
       "correctOption": "a",
       "explanation": "هذا فرق مربّعين: (a+b)(a−b) = a² − b² مع a = 3 وb = √5. إذن = 3² − (√5)² = 9 − 5 = 4 ✓. الخطأ الشائع: جمع المربّعين بدل طرحهما (9 + 5 = 14)، أو حساب (√5)² = 25 بدل 5.",
@@ -77,7 +85,7 @@
         { "id": "a", "text": "2√2 cm" },
         { "id": "b", "text": "4√2 cm" },
         { "id": "c", "text": "8√2 cm" },
-        { "id": "d", "text": "16 cm" }
+        { "id": "d", "text": "16 cm", "misconceptionTag": "math.num.racine-confondue-avec-moitie" }
       ],
       "correctOption": "b",
       "explanation": "ضلع المربّع = جذر المساحة = √32. نبسّط: √32 = √(16 × 2) = 4√2 cm. التحقّق: (4√2)² = 16 × 2 = 32 ✓. أمّا 2√2 فمربّعه 8، و8√2 مربّعه 128، و16 ناتج عن قسمة المساحة على 2 وهو خطأ شائع.",

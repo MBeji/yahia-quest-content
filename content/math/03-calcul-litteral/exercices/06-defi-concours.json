@@ -11,7 +11,7 @@
       "options": [
         { "id": "a", "text": "19" },
         { "id": "b", "text": "31" },
-        { "id": "c", "text": "25" },
+        { "id": "c", "text": "25", "misconceptionTag": "math.alg.carre-somme-sans-double-produit" },
         { "id": "d", "text": "28" }
       ],
       "correctOption": "b",
@@ -24,7 +24,7 @@
       "options": [
         { "id": "a", "text": "6" },
         { "id": "b", "text": "−6" },
-        { "id": "c", "text": "16" },
+        { "id": "c", "text": "16", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "d", "text": "−16" }
       ],
       "correctOption": "b",
@@ -33,10 +33,10 @@
       "competencies": ["math.alg.factorisation", "math.alg.identites-remarquables"]
     },
     {
-      "prompt": "بيّن أنّ العبارة A = (x + 3)² − (x + 1)(x + 5) لا تتعلّق بـ x، وأوجد قيمتها.",
+      "prompt": "بيّن أنّ العبارة التالية لا تتعلّق بـ x، ثمّ أوجد قيمتها:\nA = (x + 3)² − (x + 1)(x + 5)",
       "options": [
         { "id": "a", "text": "14" },
-        { "id": "b", "text": "−4" },
+        { "id": "b", "text": "−4", "misconceptionTag": "math.alg.carre-somme-sans-double-produit" },
         { "id": "c", "text": "4" },
         { "id": "d", "text": "8" }
       ],
@@ -50,7 +50,11 @@
       "options": [
         { "id": "a", "text": "{−2 ; 0 ; 2}" },
         { "id": "b", "text": "{−2 ; 2}" },
-        { "id": "c", "text": "{0 ; 2}" },
+        {
+          "id": "c",
+          "text": "{0 ; 2}",
+          "misconceptionTag": "math.num.racine-carree-negative-oubliee"
+        },
         { "id": "d", "text": "{2}" }
       ],
       "correctOption": "a",
@@ -61,7 +65,7 @@
     {
       "prompt": "إذا كان x + 1/x = 3 (مع x ≠ 0)، فما قيمة x² + 1/x²؟",
       "options": [
-        { "id": "a", "text": "9" },
+        { "id": "a", "text": "9", "misconceptionTag": "math.alg.carre-somme-sans-double-produit" },
         { "id": "b", "text": "11" },
         { "id": "c", "text": "6" },
         { "id": "d", "text": "7" }
@@ -72,12 +76,20 @@
       "competencies": ["math.alg.identites-remarquables"]
     },
     {
-      "prompt": "عمّل تلميذ العبارة 4x² − 25 فكتب: «4x² − 25 = (2x − 5)²». هل من خطأ، وما الصواب؟",
+      "prompt": "عمّل تلميذ العبارة 4x² − 25 فكتب:\n«4x² − 25 = (2x − 5)²»\nهل من خطأ، وما الصواب؟",
       "options": [
         { "id": "a", "text": "نعم، الصواب (2x − 5)(2x + 5) — فرق مربّعين" },
-        { "id": "b", "text": "نعم، الصواب (2x + 5)²" },
+        {
+          "id": "b",
+          "text": "نعم، الصواب (2x + 5)²",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        },
         { "id": "c", "text": "نعم، الصواب (4x − 5)(4x + 5)" },
-        { "id": "d", "text": "لا خطأ، التعميل صحيح" }
+        {
+          "id": "d",
+          "text": "لا خطأ، التعميل صحيح",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        }
       ],
       "correctOption": "a",
       "explanation": "4x² − 25 = (2x)² − 5² وهي فرق مربّعين، تُعمَّل إلى (2x − 5)(2x + 5)، لا (2x − 5)². (تمرين «صيد الخطأ».) الخطأ الشائع: الخلط بين فرق المربّعين a² − b² = (a−b)(a+b) والمربّع الكامل (a−b)² = a² − 2ab + b²؛ للتحقّق: (2x − 5)² = 4x² − 20x + 25 ≠ 4x² − 25.",

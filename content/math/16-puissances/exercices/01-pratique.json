@@ -1,0 +1,88 @@
+{
+  "title": "⭐ تمرين: أوّل الخطوات مع القوى",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "ما قيمة (−4)³ ؟",
+      "options": [
+        { "id": "a", "text": "−64" },
+        { "id": "b", "text": "64", "misconceptionTag": "math.num.puissance-signe-parite-exposant" },
+        { "id": "c", "text": "−12", "misconceptionTag": "math.num.puissance-confondue-avec-produit" },
+        { "id": "d", "text": "−7", "misconceptionTag": "math.num.puissance-confondue-avec-produit" }
+      ],
+      "correctOption": "a",
+      "explanation": "حسب التعريف (−4)³ = (−4) × (−4) × (−4). أوّلًا (−4) × (−4) = 16، ثمّ 16 × (−4) = −64. الأساس سالب والدليل 3 فردي، فالنتيجة سالبة.",
+      "difficulty": 1,
+      "competencies": ["math.num.puissances", "math.num.relatifs-operations"]
+    },
+    {
+      "prompt": "ما قيمة (√11)² ؟",
+      "options": [
+        { "id": "a", "text": "√22", "misconceptionTag": "math.num.puissance-confondue-avec-produit" },
+        { "id": "b", "text": "22", "misconceptionTag": "math.num.puissance-confondue-avec-produit" },
+        { "id": "c", "text": "121", "misconceptionTag": "math.num.racine-et-carre-confondus" },
+        { "id": "d", "text": "11" }
+      ],
+      "correctOption": "d",
+      "explanation": "حسب التعريف (√11)² = √11 × √11 = 11، لأنّ مربّع جذر عدد موجب يعيد العدد نفسه. الدليل 2 ليس عاملًا يُضرب في 11، ولا يعني تربيع العدد 11.",
+      "difficulty": 1,
+      "competencies": ["math.num.puissances"]
+    },
+    {
+      "prompt": "ما قيمة (−√6)¹ ؟",
+      "options": [
+        { "id": "a", "text": "√6", "misconceptionTag": "math.num.puissance-signe-parite-exposant" },
+        { "id": "b", "text": "1" },
+        { "id": "c", "text": "−√6" },
+        { "id": "d", "text": "−6" }
+      ],
+      "correctOption": "c",
+      "explanation": "كلّ عدد حقيقي مرفوع إلى الدليل 1 يبقى كما هو، إذن (−√6)¹ = −√6. لا نغيّر الإشارة ولا نحذف الجذر، والدليل 1 ليس هو الدليل 0 الذي يعطي 1.",
+      "difficulty": 1,
+      "competencies": ["math.num.puissances"]
+    },
+    {
+      "prompt": "العدد 0,0001 يُكتب في صيغة قوّة للعدد 10. ما هو دليل هذه القوّة؟",
+      "options": [
+        { "id": "a", "text": "−3", "misconceptionTag": "math.num.notation-scientifique-exposant-decale" },
+        { "id": "b", "text": "−4" },
+        { "id": "c", "text": "4", "misconceptionTag": "math.num.notation-scientifique-exposant-decale" },
+        { "id": "d", "text": "−5", "misconceptionTag": "math.num.notation-scientifique-exposant-decale" }
+      ],
+      "correctOption": "b",
+      "explanation": "العدد 0,0001 فيه أربع مراتب بعد الفاصلة، أي أنّه يساوي 1/(10⁴). والدليل السالب يعني المقلوب، إذن 0,0001 = 10⁻⁴ ودليل هذه القوّة هو −4. أمّا 1/(10³) فيساوي 0,001 و 1/(10⁵) فيساوي 0,00001، والدليل الموجب 4 يعطي 10000 وهو عدد كبير لا صغير.",
+      "difficulty": 2,
+      "competencies": ["math.num.puissances"]
+    },
+    {
+      "prompt": "اكتب 7⁴ × 7² في صيغة قوّة للعدد 7.",
+      "options": [
+        { "id": "a", "text": "7⁶" },
+        { "id": "b", "text": "7⁸", "misconceptionTag": "math.num.puissances-produit-exposants-multiplies" },
+        { "id": "c", "text": "49⁶", "misconceptionTag": "math.num.puissances-base-multipliee" },
+        { "id": "d", "text": "7²" }
+      ],
+      "correctOption": "a",
+      "explanation": "الأساس نفسه في العاملين، فنجمع الدليلين: 4 + 2 = 6، إذن الناتج هو 7⁶. لا نضرب الدليلين، ولا نضرب الأساسين لأنّ الأساس واحد لا اثنان.",
+      "difficulty": 2,
+      "competencies": ["math.num.puissances"]
+    },
+    {
+      "prompt": "ما علامة العدد (−9)⁴ ؟",
+      "options": [
+        { "id": "a", "text": "سالبة لأنّ الأساس (−9) عدد سالب", "misconceptionTag": "math.num.puissance-signe-parite-exposant" },
+        { "id": "b", "text": "موجبة لأنّ دليل القوّة عدد موجب", "misconceptionTag": "math.num.puissance-signe-parite-exposant" },
+        { "id": "c", "text": "سالبة لأنّ (−9)⁴ هي نفس العدد −(9⁴)", "misconceptionTag": "math.num.puissance-signe-parite-exposant" },
+        { "id": "d", "text": "موجبة لأنّ الأساس سالب ودليله زوجي" }
+      ],
+      "correctOption": "d",
+      "explanation": "الأساس (−9) سالب والدليل 4 زوجي، فالجذاء يضمّ أربعة عوامل سالبة تتقاسم إلى زوجين، وكلّ زوج يعطي عددًا موجبًا: (−9)⁴ = 6561. ولا حاجة إلى إتمام الحساب لمعرفة العلامة. انتبه إلى الفرق بين (−9)⁴ الموجب و −(9⁴) السالب، إذ في الثاني الإشارة موضوعة خارج القوّة. وإشارة الدليل نفسه لا دخل لها في تحديد العلامة.",
+      "difficulty": 2,
+      "competencies": ["math.num.puissances", "math.num.relatifs-operations"]
+    }
+  ]
+}

@@ -7,12 +7,24 @@
   "displayOrder": 1,
   "questions": [
     {
-      "prompt": "احلل بطريقة التأليف الجملة المكوّنة من المعادلتَين: x + y = 10 و x − y = 4. ما هو الحلّ؟",
+      "prompt": "احلل بطريقة التأليف الجملة المكوّنة من المعادلتَين التاليتَين:\nx + y = 10\nx − y = 4\nما هو الحلّ؟",
       "options": [
         { "id": "a", "text": "(7 ; 3)" },
-        { "id": "b", "text": "(6 ; 4)" },
-        { "id": "c", "text": "(8 ; 2)" },
-        { "id": "d", "text": "(5 ; 5)" }
+        {
+          "id": "b",
+          "text": "(6 ; 4)",
+          "misconceptionTag": "math.alg.systeme-verification-partielle"
+        },
+        {
+          "id": "c",
+          "text": "(8 ; 2)",
+          "misconceptionTag": "math.alg.systeme-verification-partielle"
+        },
+        {
+          "id": "d",
+          "text": "(5 ; 5)",
+          "misconceptionTag": "math.alg.systeme-verification-partielle"
+        }
       ],
       "correctOption": "a",
       "explanation": "بجمع المعادلتَين: (x+y) + (x−y) = 10+4، إذن 2x = 14، x = 7. نعوّض: 7 + y = 10، y = 3. الحلّ هو (7 ; 3). التحقّق: 7+3=10 ✓، 7−3=4 ✓.",
@@ -20,11 +32,15 @@
       "competencies": ["math.alg.systemes"]
     },
     {
-      "prompt": "احلل بطريقة التعويض الجملة المكوّنة من المعادلتَين: x = 3 و 2x + y = 8. ما قيمة y ؟",
+      "prompt": "احلل بطريقة التعويض الجملة المكوّنة من المعادلتَين التاليتَين:\nx = 3\n2x + y = 8\nما قيمة y ؟",
       "options": [
         { "id": "a", "text": "5" },
         { "id": "b", "text": "2" },
-        { "id": "c", "text": "14" },
+        {
+          "id": "c",
+          "text": "14",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
         { "id": "d", "text": "1" }
       ],
       "correctOption": "b",
@@ -33,10 +49,18 @@
       "competencies": ["math.alg.systemes"]
     },
     {
-      "prompt": "احلل الجملة المكوّنة من المعادلتَين: x + 3y = 9 و 2x + 3y = 12. ما هو الحلّ؟",
+      "prompt": "احلل الجملة المكوّنة من المعادلتَين التاليتَين:\nx + 3y = 9\n2x + 3y = 12\nما هو الحلّ؟",
       "options": [
-        { "id": "a", "text": "(6 ; 1)" },
-        { "id": "b", "text": "(0 ; 3)" },
+        {
+          "id": "a",
+          "text": "(6 ; 1)",
+          "misconceptionTag": "math.alg.systeme-verification-partielle"
+        },
+        {
+          "id": "b",
+          "text": "(0 ; 3)",
+          "misconceptionTag": "math.alg.systeme-verification-partielle"
+        },
         { "id": "c", "text": "(3 ; 2)" },
         { "id": "d", "text": "(4 ; 2)" }
       ],
@@ -46,7 +70,7 @@
       "competencies": ["math.alg.systemes"]
     },
     {
-      "prompt": "احلل الجملة المكوّنة من المعادلتَين: 2x + 3y = 12 و 2x − y = 4. ما هو الحلّ؟",
+      "prompt": "احلل الجملة المكوّنة من المعادلتَين التاليتَين:\n2x + 3y = 12\n2x − y = 4\nما هو الحلّ؟",
       "options": [
         { "id": "a", "text": "(2 ; 3)" },
         { "id": "b", "text": "(4 ; 0)" },
@@ -61,10 +85,22 @@
     {
       "prompt": "مجموع عددَين يساوي 20، والعدد الأوّل يزيد عن الثاني بـ 6. ما هذان العددان؟",
       "options": [
-        { "id": "a", "text": "14 و 6" },
-        { "id": "b", "text": "12 و 8" },
+        {
+          "id": "a",
+          "text": "14 و 6",
+          "misconceptionTag": "math.alg.systeme-verification-partielle"
+        },
+        {
+          "id": "b",
+          "text": "12 و 8",
+          "misconceptionTag": "math.alg.systeme-verification-partielle"
+        },
         { "id": "c", "text": "13 و 7" },
-        { "id": "d", "text": "15 و 5" }
+        {
+          "id": "d",
+          "text": "15 و 5",
+          "misconceptionTag": "math.alg.systeme-verification-partielle"
+        }
       ],
       "correctOption": "c",
       "explanation": "نُسمّي العددَين x وy. الشرطان: x + y = 20 و x = y + 6. بالتعويض: (y+6) + y = 20، إذن 2y = 14، y = 7، x = 13. التحقّق: 13+7=20 ✓، 13−7=6 ✓.",
@@ -72,10 +108,18 @@
       "competencies": ["math.alg.mise-en-equation", "math.alg.systemes"]
     },
     {
-      "prompt": "الثنائية (3 ; 1) هي حلّ الجملة المكوّنة من المعادلتَين: 2x + y = 7 و x − y = 2. هل هذا صحيح؟",
+      "prompt": "الثنائية (3 ; 1) هي حلّ الجملة المكوّنة من المعادلتَين التاليتَين:\n2x + y = 7\nx − y = 2\nهل هذا صحيح؟",
       "options": [
-        { "id": "a", "text": "لا، لأنّ المعادلة الأولى فقط محقَّقة" },
-        { "id": "b", "text": "لا، لأنّ المعادلة الثانية فقط محقَّقة" },
+        {
+          "id": "a",
+          "text": "لا، لأنّ المعادلة الأولى فقط محقَّقة",
+          "misconceptionTag": "math.alg.systeme-verification-partielle"
+        },
+        {
+          "id": "b",
+          "text": "لا، لأنّ المعادلة الثانية فقط محقَّقة",
+          "misconceptionTag": "math.alg.systeme-verification-partielle"
+        },
         { "id": "c", "text": "لا، لأنّ الثنائية الصحيحة هي (4 ; −1)" },
         { "id": "d", "text": "نعم، لأنّ كلتا المعادلتَين محقَّقتان" }
       ],

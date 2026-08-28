@@ -232,10 +232,25 @@ jobs:
             cat stale.md
             cat <<'PIED'
 
-          **Pour refermer :** Actions → *Apply content (PROD)* → `dry_run: false`.
-          Laisser `subjects` **vide** applique tout le corpus — c'est idempotent, et
-          c'est le geste le plus sûr quand plusieurs sujets sont en retard. Pour n'en
-          viser qu'un : `subjects: <slug>`.
+          **Pour refermer :** Actions → *Apply content (PROD)* → `subjects: <slug ...>`,
+          `dry_run: false`. Les slugs sont ceux de la colonne « sujet » ci-dessus,
+          séparés par des espaces.
+
+          ⚠️ **Laisser `subjects` VIDE applique tout le corpus** : ~45 min d'écriture
+          CONTINUE sur la base de production, contre ~2 min pour un sujet ciblé. Ne pas
+          confondre deux propriétés :
+
+          * **Intégrité** — sûre dans les deux cas (`psql --single-transaction` par
+            fichier : un sujet passe en entier ou pas du tout, interruption comprise).
+          * **Charge** — pas du tout la même. Une application intégrale tient la base
+            sous écriture assez longtemps pour dégrader les lectures de l'app. Vécu le
+            2026-08-18 : corpus complet lancé à 18:39 UTC en pleine utilisation, le
+            tableau de bord des élèves est tombé sur « Failed to load dashboard » ;
+            l'annulation du run a suffi à tout rétablir, sans perte.
+
+          Donc : **cibler les sujets listés** — c'est le geste normal pour refermer
+          cette issue. Le corpus complet se réserve à une réconciliation, **hors des
+          heures d'usage**.
 
           Cette issue se referme toute seule au prochain passage de la garde, une fois
           l'écart comblé. Vérifiée chaque jour à 06:40 UTC et à chaque push sur `main`

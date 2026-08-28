@@ -24,7 +24,7 @@ on:
   workflow_dispatch:
     inputs:
       subjects:
-        description: "ids de sujets séparés par des espaces (vide = tout le corpus — sûr, l'application est idempotente)"
+        description: "ids de sujets séparés par des espaces. VIDE = tout le corpus : ~45 min d'écriture continue en prod (vs ~2 min ciblé) — sûr pour les données, PAS pour la charge. Hors heures d'usage."
         type: string
         default: ""
       dry_run:
@@ -208,6 +208,27 @@ jobs:
           node --experimental-strip-types scripts/content/build.ts --competences \
             --sql-dir "$GITHUB_WORKSPACE/corpus/sql/content"
 
+      # TROISIÈME appel, et le même oubli que ci-dessus, découvert le 2026-08-25.
+      # `--misconceptions` émet le registre des erreurs nommées SEUL (étude 04
+      # A1.2b). Sans cette étape il n'était JAMAIS produit — donc jamais appliqué :
+      # la table `misconceptions` n'est semée par AUCUNE migration (elle est vide
+      # sur une base reconstruite à neuf), et son seul canal historique était une
+      # migration GÉNÉRÉE, que l'étude 24 a sortie du dépôt public et que le gate
+      # anti-fuite interdit d'y faire revenir.
+      #
+      # Conséquence mesurée le jour de la découverte, après l'application de
+      # `math` : le lot 0bis de é30 avait porté le registre de 154 à 160 entrées,
+      # et ces 6 entrées-là portaient 73 des 1 244 placements de tags du sujet —
+      # dont 54 pour la seule `math.alg.reponse-a-l-autre-inconnue`. Les
+      # distracteurs étaient tagués, mais `get_attempt_review` ne trouvait aucune
+      # ligne pour NOMMER l'erreur : le bloc de correction s'affichait sans elle.
+      # Un canal muet qui s'affiche vert, exactement comme pour les compétences.
+      - name: Émettre le registre de misconceptions
+        working-directory: engine
+        run: |
+          node --experimental-strip-types scripts/content/build.ts --misconceptions \
+            --sql-dir "$GITHUB_WORKSPACE/corpus/sql/content"
+
       - name: Établir le plan d'application
         id: plan
         run: |
@@ -219,16 +240,23 @@ jobs:
           # encore. Il est idempotent — l'appliquer à chaque fois coûte quelques
           # secondes et supprime une classe entière de « appliqué sans effet ».
           REGISTRY="_competences_registry.sql"
+          # Le registre des ERREURS NOMMÉES suit la même règle et pour la même
+          # raison : un sujet peut taguer un distracteur avec une entrée toute
+          # neuve, et `get_attempt_review` ne trouverait rien à afficher.
+          MISCONCEPTIONS="_misconceptions_registry.sql"
           [ -f "${REGISTRY}" ] || { echo "::error::${REGISTRY} absent — l'étape d'émission du registre a-t-elle tourné ?"; exit 1; }
+          [ -f "${MISCONCEPTIONS}" ] || { echo "::error::${MISCONCEPTIONS} absent — l'étape d'émission du registre de misconceptions a-t-elle tourné ?"; exit 1; }
+          REGISTRIES="${REGISTRY} ${MISCONCEPTIONS}"
           if [ -n "${SUBJECTS}" ]; then
-            FILES="${REGISTRY}"
+            FILES="${REGISTRIES}"
             for s in ${SUBJECTS}; do
               [ "${s}.sql" = "${REGISTRY}" ] && continue
+              [ "${s}.sql" = "${MISCONCEPTIONS}" ] && continue
               [ -f "${s}.sql" ] || { echo "::error::Sujet inconnu : ${s}.sql introuvable."; exit 1; }
               FILES="${FILES} ${s}.sql"
             done
           else
-            FILES="${REGISTRY} $(ls *.sql | grep -v "^${REGISTRY}$" | tr '\n' ' ')"
+            FILES="${REGISTRIES} $(ls *.sql | grep -vE "^(${REGISTRY}|${MISCONCEPTIONS})$" | tr '\n' ' ')"
           fi
           echo "files=${FILES}" >> "$GITHUB_OUTPUT"
           echo "### Plan d'application" >> "$GITHUB_STEP_SUMMARY"
@@ -320,6 +348,22 @@ jobs:
                 -c "SELECT count(*) FROM public.competencies;")
               echo "| \`registre de compétences\` | — | ${EN_BASE} en base / ${DECLARE} déclarées |" >> "$GITHUB_STEP_SUMMARY"
               [ "${EN_BASE:-0}" -ge "${DECLARE:-1}" ] || VIDES="${VIDES} registre(${EN_BASE}<${DECLARE})"
+              continue
+            fi
+            # Idem pour les erreurs nommées : ce n'est pas un sujet non plus, et
+            # sans cette branche il serait compté comme tel — zéro chapitre, zéro
+            # question, « appliqué sans effet », et la release ne serait jamais
+            # journalisée. C'est le bug du 2026-08-01 (run 30692259709), qu'on ne
+            # rejoue pas en ajoutant un second registre au plan.
+            if [ "$f" = "_misconceptions_registry.sql" ]; then
+              DECLARE=$(node -e "
+                const fs = require('fs');
+                const f = process.env.GITHUB_WORKSPACE + '/corpus/content/misconceptions.json';
+                process.stdout.write(String(Object.keys(JSON.parse(fs.readFileSync(f, 'utf8'))).length));")
+              EN_BASE=$(psql "${PROD_SUPABASE_DB_URL}" --set ON_ERROR_STOP=1 -tAq \
+                -c "SELECT count(*) FROM public.misconceptions;")
+              echo "| \`registre d'erreurs nommées\` | — | ${EN_BASE} en base / ${DECLARE} déclarées |" >> "$GITHUB_STEP_SUMMARY"
+              [ "${EN_BASE:-0}" -ge "${DECLARE:-1}" ] || VIDES="${VIDES} misconceptions(${EN_BASE}<${DECLARE})"
               continue
             fi
             # `subjects.id` EST le slug du sujet (et donc le nom du fichier) —

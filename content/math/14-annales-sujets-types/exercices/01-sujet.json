@@ -9,10 +9,10 @@
     {
       "prompt": "المسألة الأولى (هندسة): ABC مثلّث قائم في A حيث AB = 8 cm والوتر BC = 10 cm.\n\nالسؤال (1): احسب طول الضلع AC.",
       "options": [
-        { "id": "a", "text": "2 cm" },
+        { "id": "a", "text": "2 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" },
         { "id": "b", "text": "6 cm" },
-        { "id": "c", "text": "√164 cm" },
-        { "id": "d", "text": "18 cm" }
+        { "id": "c", "text": "√164 cm", "misconceptionTag": "math.geo.hypotenuse-mal-choisie" },
+        { "id": "d", "text": "18 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" }
       ],
       "correctOption": "b",
       "explanation": "بنظرية فيثاغورس في المثلّث القائم في A: BC² = AB² + AC². نعزل الضلع المجهول: AC² = BC² − AB² = 100 − 64 = 36، إذن AC = √36 = 6 cm. الخطأ الشائع: جمع المربّعين √(100 + 64) = √164 مع أنّ BC وتر، أو طرح الطولين مباشرةً 10 − 8 = 2.",
@@ -25,7 +25,7 @@
         { "id": "a", "text": "2,5 cm" },
         { "id": "b", "text": "4 cm" },
         { "id": "c", "text": "5 cm" },
-        { "id": "d", "text": "6 cm" }
+        { "id": "d", "text": "6 cm", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" }
       ],
       "correctOption": "c",
       "explanation": "بما أنّ (MN) ∥ (BC) نطبّق نظرية طاليس: MN/BC = AM/AB = 4/8 = 1/2. إذن MN = BC × 1/2 = 10 × 1/2 = 5 cm. الخطأ الشائع: الإجابة بـ 6 cm وهو طول AC وليس MN.",
@@ -38,7 +38,7 @@
         { "id": "a", "text": "4,5 cm" },
         { "id": "b", "text": "6 cm" },
         { "id": "c", "text": "7,5 cm" },
-        { "id": "d", "text": "10,7 cm" }
+        { "id": "d", "text": "10,7 cm", "misconceptionTag": "math.geo.thales-rapport-inverse" }
       ],
       "correctOption": "b",
       "explanation": "بطاليس: AD/AB = DE/BC = 7,5/10 = 3/4. هذه المرّة المجهول على الضلع [AB]: AD = AB × 3/4 = 8 × 3/4 = 6 cm. الخطأ الشائع: استعمال AC بدل AB فيُحصل على AE = 6 × 3/4 = 4,5 cm، أو قلب النسبة 8 × 10/7,5 ≈ 10,7 cm.",
@@ -59,7 +59,7 @@
       "competencies": ["math.alg.mise-en-equation", "math.alg.systemes"]
     },
     {
-      "prompt": "تابع المسألة الثانية: المعادلتان: 3x + 2y = 13 و 2x + 2y = 10.\n\nالسؤال (2): ما ثمن الكرّاسة الواحدة x؟",
+      "prompt": "تابع المسألة الثانية — المعادلتان التاليتان:\n3x + 2y = 13\n2x + 2y = 10\nالسؤال (2): ما ثمن الكرّاسة الواحدة x؟",
       "options": [
         { "id": "a", "text": "2 دينار" },
         { "id": "b", "text": "3 دنانير" },

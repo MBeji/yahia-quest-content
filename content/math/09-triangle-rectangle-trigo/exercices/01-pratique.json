@@ -10,9 +10,9 @@
       "prompt": "في المثلث ABC القائم في B، AB = 3 cm وBC = 4 cm. ما طول الوتر AC؟",
       "options": [
         { "id": "a", "text": "5 cm" },
-        { "id": "b", "text": "7 cm" },
-        { "id": "c", "text": "√7 cm" },
-        { "id": "d", "text": "25 cm" }
+        { "id": "b", "text": "7 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" },
+        { "id": "c", "text": "√7 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" },
+        { "id": "d", "text": "25 cm", "misconceptionTag": "math.geo.pythagore-racine-oubliee" }
       ],
       "correctOption": "a",
       "explanation": "بتطبيق فيثاغورس: AC² = AB² + BC² = 9 + 16 = 25، إذن AC = √25 = 5 cm. هذه هي الثلاثية الفيثاغورية (3 ; 4 ; 5).",
@@ -23,8 +23,16 @@
       "prompt": "ما قيمة جا(45°)؟",
       "options": [
         { "id": "a", "text": "√2/2" },
-        { "id": "b", "text": "1/2" },
-        { "id": "c", "text": "√3/2" },
+        {
+          "id": "b",
+          "text": "1/2",
+          "misconceptionTag": "math.geo.valeurs-remarquables-confondues"
+        },
+        {
+          "id": "c",
+          "text": "√3/2",
+          "misconceptionTag": "math.geo.valeurs-remarquables-confondues"
+        },
         { "id": "d", "text": "1" }
       ],
       "correctOption": "a",
@@ -35,9 +43,17 @@
     {
       "prompt": "ما قيمة جتا(60°)؟",
       "options": [
-        { "id": "a", "text": "√3/2" },
+        {
+          "id": "a",
+          "text": "√3/2",
+          "misconceptionTag": "math.geo.valeurs-remarquables-confondues"
+        },
         { "id": "b", "text": "1/2" },
-        { "id": "c", "text": "√2/2" },
+        {
+          "id": "c",
+          "text": "√2/2",
+          "misconceptionTag": "math.geo.valeurs-remarquables-confondues"
+        },
         { "id": "d", "text": "√3" }
       ],
       "correctOption": "b",
@@ -48,8 +64,8 @@
     {
       "prompt": "ما قيمة ظا(30°)؟",
       "options": [
-        { "id": "a", "text": "1" },
-        { "id": "b", "text": "√3" },
+        { "id": "a", "text": "1", "misconceptionTag": "math.geo.valeurs-remarquables-confondues" },
+        { "id": "b", "text": "√3", "misconceptionTag": "math.geo.valeurs-remarquables-confondues" },
         { "id": "c", "text": "√3/3" },
         { "id": "d", "text": "1/2" }
       ],
@@ -62,9 +78,9 @@
       "prompt": "في المثلث ABC القائم في B، الزاوية A = 30° والوتر AC = 8 cm. ما طول الضلع BC؟",
       "options": [
         { "id": "a", "text": "4 cm" },
-        { "id": "b", "text": "4√3 cm" },
+        { "id": "b", "text": "4√3 cm", "misconceptionTag": "math.geo.cosinus-sinus-confondus" },
         { "id": "c", "text": "8√3 cm" },
-        { "id": "d", "text": "16 cm" }
+        { "id": "d", "text": "16 cm", "misconceptionTag": "math.geo.trigo-rapport-inverse" }
       ],
       "correctOption": "a",
       "explanation": "BC يقابل الزاوية A، إذن جا(A) = BC/AC. نكتب: جا(30°) = BC/8، أي 1/2 = BC/8، فينتج BC = 4 cm.",
@@ -74,10 +90,22 @@
     {
       "prompt": "أيّ العلاقات التالية صحيحة دائمًا لأيّ زاوية حادّة x؟",
       "options": [
-        { "id": "a", "text": "جا(x) + جتا(x) = 1" },
+        {
+          "id": "a",
+          "text": "جا(x) + جتا(x) = 1",
+          "misconceptionTag": "math.geo.identite-trigo-sans-carres"
+        },
         { "id": "b", "text": "جا²(x) + جتا²(x) = 1" },
-        { "id": "c", "text": "جا(x) × جتا(x) = 1" },
-        { "id": "d", "text": "ظا(x) = جتا(x) ÷ جا(x)" }
+        {
+          "id": "c",
+          "text": "جا(x) × جتا(x) = 1",
+          "misconceptionTag": "math.geo.identite-trigo-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "ظا(x) = جتا(x) ÷ جا(x)",
+          "misconceptionTag": "math.geo.trigo-rapport-inverse"
+        }
       ],
       "correctOption": "b",
       "explanation": "العلاقة المثلثية الأساسية المشتقّة من فيثاغورس: جا²(x) + جتا²(x) = 1. يمكن التحقّق: جا²(30°) + جتا²(30°) = (1/2)² + (√3/2)² = 1/4 + 3/4 = 1.",

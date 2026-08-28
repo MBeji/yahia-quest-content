@@ -7,7 +7,7 @@
   "displayOrder": 3,
   "questions": [
     {
-      "prompt": "ما حلّ المعادلة: 2(3x − 1) + 4 = 3(x + 2) ؟",
+      "prompt": "ما حلّ المعادلة التالية؟\n2(3x − 1) + 4 = 3(x + 2)",
       "options": [
         { "id": "a", "text": "x = 2" },
         { "id": "b", "text": "x = 1" },
@@ -20,11 +20,19 @@
       "competencies": ["math.alg.equations-premier-degre", "math.alg.developpement"]
     },
     {
-      "prompt": "بتطبيق مبدأ الجداء المعدوم، ما مجموعة حلول المعادلة: (2x − 6)(x + 4) = 0 ؟",
+      "prompt": "بتطبيق مبدأ الجداء المعدوم، ما مجموعة حلول المعادلة التالية؟\n(2x − 6)(x + 4) = 0",
       "options": [
-        { "id": "a", "text": "{ 6 ; −4 }" },
-        { "id": "b", "text": "{ −3 ; 4 }" },
-        { "id": "c", "text": "{ −6 ; 4 }" },
+        { "id": "a", "text": "{ 6 ; −4 }", "misconceptionTag": "math.alg.coefficient-non-divise" },
+        {
+          "id": "b",
+          "text": "{ −3 ; 4 }",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "c",
+          "text": "{ −6 ; 4 }",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
         { "id": "d", "text": "{ 3 ; −4 }" }
       ],
       "correctOption": "d",
@@ -33,11 +41,11 @@
       "competencies": ["math.alg.equations-produit"]
     },
     {
-      "prompt": "ما حلّ المتراجحة: 4x + 3 < 2x − 5 ؟",
+      "prompt": "ما حلّ المتراجحة التالية؟\n4x + 3 < 2x − 5",
       "options": [
         { "id": "a", "text": "x < 4" },
         { "id": "b", "text": "x < −4" },
-        { "id": "c", "text": "x > −4" },
+        { "id": "c", "text": "x > −4", "misconceptionTag": "math.num.ordre-inverse-a-tort" },
         { "id": "d", "text": "x > 4" }
       ],
       "correctOption": "b",
@@ -49,9 +57,9 @@
       "prompt": "قطع متسابق ثلاث مراحل من سباق: طول المرحلة الثانية ضعف طول الأولى، وطول الثالثة يزيد عن الأولى بـ 6 km. إذا كان طول السباق كاملًا 46 km، فما طول المرحلة الأولى؟",
       "options": [
         { "id": "a", "text": "10 km" },
-        { "id": "b", "text": "16 km" },
-        { "id": "c", "text": "20 km" },
-        { "id": "d", "text": "40 km" }
+        { "id": "b", "text": "16 km", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
+        { "id": "c", "text": "20 km", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
+        { "id": "d", "text": "40 km", "misconceptionTag": "math.alg.coefficient-non-divise" }
       ],
       "correctOption": "a",
       "explanation": "ليكن x طول المرحلة الأولى. الثانية 2x والثالثة x + 6. المعادلة: x + 2x + (x + 6) = 46، أي 4x + 6 = 46، فـ 4x = 40، إذن x = 10 km. التحقّق: 10 + 20 + 16 = 46 ✓. الخطأ الشائع: اختيار 16 (طول الثالثة) أو 20 (طول الثانية) بدل المطلوب، أو 40 وهو قيمة 4x قبل القسمة على 4.",
@@ -63,7 +71,7 @@
       "options": [
         { "id": "a", "text": "8 سم" },
         { "id": "b", "text": "10 سم" },
-        { "id": "c", "text": "12 سم" },
+        { "id": "c", "text": "12 سم", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "d", "text": "18 سم" }
       ],
       "correctOption": "a",
@@ -72,11 +80,11 @@
       "competencies": ["math.alg.mise-en-equation", "math.mes.perimetres"]
     },
     {
-      "prompt": "ما مجموعة حلول المتراجحة: −5x + 3 < 2x − 11 ؟",
+      "prompt": "ما مجموعة حلول المتراجحة التالية؟\n−5x + 3 < 2x − 11",
       "options": [
         { "id": "a", "text": "x < −2" },
         { "id": "b", "text": "x > 2" },
-        { "id": "c", "text": "x < 2" },
+        { "id": "c", "text": "x < 2", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
         { "id": "d", "text": "x > −2" }
       ],
       "correctOption": "b",

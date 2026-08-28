@@ -36,16 +36,25 @@ content/
   d'un niveau — le slug est résolu en UUID `grades` à la compilation, jamais
   codé en dur), `isPremium?` (dormant : en phase gratuite, la migration
   `20260711100000` force `is_premium = false` sur tous les parcours),
-  `manuels?` (lien vers le **manuel élève officiel CNP en PDF complet**, un
-  objet par tome : `[{ "code": "102306" }]` ou
+  `manuels?` (**manuel élève officiel CNP**, un objet par tome :
+  `[{ "code": "102306" }]` ou
   `[{ "code": "102105P01", "label": "الجزء الأول" }, …]` — compilé dans
   `subjects.manuel_refs` et affiché en carte « Manuel officiel » sur la page
-  matière, connexion requise pour ouvrir ; les PDF sont uploadés hors-bande
-  dans le bucket privé `manuel-eleve` via `scripts/manuel/upload-pdf.mjs`),
+  matière. Le manuel est le livre de la **matière**, pas du chapitre : il se
+  nomme donc ici, une fois. Le lien ouvre le document **chez le CNP**, sans
+  compte et sans upload — l'adresse est rebâtie à partir du `code` seul, rien
+  de plus à écrire pour l'obtenir),
   `compileTo?` (mutualisation lycée — voir plus bas).
 - **`chapter.json`** : `title`, `description`, `displayOrder`, `sources` (liste
   d'URLs / références — traçabilité des sources), `gradeSlugs?` (dossier partagé
-  uniquement : sections destinataires du chapitre).
+  uniquement : sections destinataires du chapitre), `domain?` (« section » du
+  programme — libellé dans la langue de la matière), `manuel?`
+  (`{ "code": "102905", "pages": "18-30" }` — les pages du manuel qui couvrent
+  CE chapitre. Compilé dans `chapters.manuel_ref`, il sert la galerie « Pages du
+  manuel » sous le cours : des images que **nous** hébergeons, connexion requise.
+  À ne pas confondre avec le lien vers le manuel entier, qui vit au niveau de la
+  matière),
+  `videos?` (0-3 ids du registre `content/videos.json`).
 - **`quiz.json`** (obligatoire) : `title?` + `questions[]` (même forme que les
   questions d'exercice). Compilé en exercice `mode='quiz'` ; l'élève doit le
   réussir (≥ `QUIZ_PASS_THRESHOLD_PCT`) pour débloquer les exercices du chapitre.
@@ -53,6 +62,12 @@ content/
   (`practice` | `boss` | `challenge`), `xpReward`, `rewardCoins`, `displayOrder`,
   `gradeSlugs?` (dossier partagé uniquement), et
   `questions[]` : `{ prompt, options:[{id,text}], correctOption, explanation, difficulty? (1-3) }`.
+
+> ⚠️ **Un `code` de manuel n'est pas du texte libre.** Il est confronté au registre CNP
+> (`suivi/corpus-cnp.json`) par `content:qa` : un code absent du corpus est une **erreur**, pas un
+> avertissement. Avant, une coquille se soldait par une carte restée vide ; depuis que le code sert
+> à construire un lien public, elle se solderait par un 404 devant l'élève. Le nom de fichier se
+> déduit du code — tome épelé (`102105P01`) pris tel quel, code nu (`102905`) complété en `P00`.
 
 ### Mutualisation entre sections (`compileTo` — étude 16)
 

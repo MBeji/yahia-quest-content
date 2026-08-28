@@ -17,10 +17,10 @@
     {
       "prompt": "متى يكون الشعاعان AB و CD متساويَين؟",
       "options": [
-        { "id": "a", "text": "حين يكون لهما نفس المنشأ فقط" },
-        { "id": "b", "text": "حين يكون لهما نفس الطول فحسب" },
+        { "id": "a", "text": "حين يكون لهما نفس المنشأ فقط", "misconceptionTag": "math.vec.egalite-exige-meme-origine" },
+        { "id": "b", "text": "حين يكون لهما نفس الطول فحسب", "misconceptionTag": "math.vec.egalite-longueur-seule" },
         { "id": "c", "text": "حين يكون لهما نفس الاتجاه ونفس المنحى ونفس الطول" },
-        { "id": "d", "text": "حين يقعان على نفس المستقيم" }
+        { "id": "d", "text": "حين يقعان على نفس المستقيم", "misconceptionTag": "math.vec.egalite-longueur-seule" }
       ],
       "correctOption": "c",
       "explanation": "تساوي الشعاعين يشترط ثلاثة أمور معًا: نفس الاتجاه، نفس المنحى، ونفس الطول. المنشأ قد يختلف — في متوازي الأضلاع AB = DC رغم اختلاف نقطتَي الانطلاق.",
@@ -28,11 +28,11 @@
       "competencies": ["math.vec.translation-vecteur"]
     },
     {
-      "prompt": "تنصّ علاقة شال (Chasles) على أنّ: AB + BC = ?",
+      "prompt": "تنصّ علاقة شال (Chasles) على أنّ:\nAB + BC = ?",
       "options": [
-        { "id": "a", "text": "BA" },
+        { "id": "a", "text": "BA", "misconceptionTag": "math.vec.chasles-sens-inverse" },
         { "id": "b", "text": "AC" },
-        { "id": "c", "text": "CA" },
+        { "id": "c", "text": "CA", "misconceptionTag": "math.vec.chasles-sens-inverse" },
         { "id": "d", "text": "صفر دائمًا" }
       ],
       "correctOption": "b",
@@ -43,10 +43,10 @@
     {
       "prompt": "الانسحاب ذو الشعاع u ينقل النقطة M إلى M'. أيّ العبارات التالية وصف صحيح لهذا التحويل؟",
       "options": [
-        { "id": "a", "text": "MM' = u، ويُغيّر الأطوال والزوايا" },
+        { "id": "a", "text": "MM' = u، ويُغيّر الأطوال والزوايا", "misconceptionTag": "math.vec.translation-modifie-les-longueurs" },
         { "id": "b", "text": "MM' = u، ويحفظ الأطوال والزوايا، وصورة أيّ مستقيم مستقيمٌ موازٍ له" },
-        { "id": "c", "text": "يضاعف المسافة بمعامل ثابت" },
-        { "id": "d", "text": "يُبقي بعض النقاط ثابتة حتى لو كان الشعاع غير صفري" }
+        { "id": "c", "text": "يضاعف المسافة بمعامل ثابت", "misconceptionTag": "math.vec.translation-modifie-les-longueurs" },
+        { "id": "d", "text": "يُبقي بعض النقاط ثابتة حتى لو كان الشعاع غير صفري", "misconceptionTag": "math.vec.translation-points-fixes" }
       ],
       "correctOption": "b",
       "explanation": "الانسحاب: MM' = u. خصائصه: يحفظ الأطوال والزوايا والأشكال (يُبقي الشكل دون تغيير حجمه)، وصورة أيّ مستقيم هي مستقيم مواٍز له.",
@@ -56,10 +56,10 @@
     {
       "prompt": "إذا كان ABCD متوازي أضلاع، فأيّ المعادلات التالية صحيحة بين الأشعّة؟",
       "options": [
-        { "id": "a", "text": "AB = CD" },
+        { "id": "a", "text": "AB = CD", "misconceptionTag": "math.vec.parallelogramme-sommets-mal-ordonnes" },
         { "id": "b", "text": "AB = DC" },
-        { "id": "c", "text": "AB = −BC" },
-        { "id": "d", "text": "AB = BD" }
+        { "id": "c", "text": "AB = −BC", "misconceptionTag": "math.vec.parallelogramme-sommets-mal-ordonnes" },
+        { "id": "d", "text": "AB = BD", "misconceptionTag": "math.vec.parallelogramme-sommets-mal-ordonnes" }
       ],
       "correctOption": "b",
       "explanation": "في متوازي الأضلاع ABCD: AB = DC (لا CD!). الضلعان المتوازيان AB وDC لهما نفس الاتجاه ونفس المنحى ونفس الطول. أمّا AB = CD فيعكس المنحى، وهو خطأ.",

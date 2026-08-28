@@ -1,0 +1,95 @@
+{
+  "title": "👑 تحدّي النخبة ⭐⭐⭐⭐: الحصر وقلب الاتّجاه",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "نعلم أنّ 1 ≤ x ≤ 4 و 3 ≤ y ≤ 5 ، وكلّ الحدود موجبة. أعطِ حصرًا للجداء xy .",
+      "options": [
+        { "id": "a", "text": "4 ≤ xy ≤ 9", "misconceptionTag": "math.num.encadrement-bornes-mal-appariees" },
+        { "id": "b", "text": "3 ≤ xy ≤ 20" },
+        { "id": "c", "text": "5 ≤ xy ≤ 12", "misconceptionTag": "math.num.encadrement-bornes-mal-appariees" },
+        { "id": "d", "text": "3 ≤ xy ≤ 9", "misconceptionTag": "math.num.encadrement-bornes-mal-appariees" }
+      ],
+      "correctOption": "b",
+      "explanation": "بما أنّ كلّ الحدود موجبة، نضرب الحصرين طرفًا بطرف: الحدّ الأدنى هو جداء الأدنيين 1 × 3 = 3 ، والحدّ الأعلى هو جداء الأعليين 4 × 5 = 20 . إذن 3 ≤ xy ≤ 20 . والأخطاء الشائعة هي جمع الحدود بدل ضربها فنجد 4 و 9 ، أو تزويج الحدّ الأدنى لأحدهما بالحدّ الأعلى للآخر فنجد 5 و 12 .",
+      "difficulty": 3,
+      "competencies": ["math.num.ordre-encadrement"]
+    },
+    {
+      "prompt": "نعلم أنّ 2 ≤ x ≤ 7 و 3 ≤ y ≤ 5 . أعطِ حصرًا للفرق x − y .",
+      "options": [
+        { "id": "a", "text": "−3 ≤ x − y ≤ 4" },
+        { "id": "b", "text": "−1 ≤ x − y ≤ 2", "misconceptionTag": "math.num.encadrement-bornes-mal-appariees" },
+        { "id": "c", "text": "−3 ≤ x − y ≤ 2", "misconceptionTag": "math.num.encadrement-bornes-mal-appariees" },
+        { "id": "d", "text": "−1 ≤ x − y ≤ 4", "misconceptionTag": "math.num.encadrement-bornes-mal-appariees" }
+      ],
+      "correctOption": "a",
+      "explanation": "لا نطرح الحصرين طرفًا بطرف. نحصر أوّلًا المقابل: من 3 ≤ y ≤ 5 نستنتج بالضرب في −1 أنّ −5 ≤ −y ≤ −3 . ثمّ نجمع مع حصر x طرفًا بطرف: 2 + (−5) = −3 و 7 + (−3) = 4 ، إذن −3 ≤ x − y ≤ 4 . والطرح المباشر للحدود يعطي −1 و 2 وهو خطأ لأنّ الطرح طرفًا بطرف غير مشروع.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.relatifs-operations"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ 4 ≤ a ≤ 9 . أعطِ حصرًا للعدد a² − 10 .",
+      "options": [
+        { "id": "a", "text": "16 ≤ a² − 10 ≤ 81" },
+        { "id": "b", "text": "−2 ≤ a² − 10 ≤ 8" },
+        { "id": "c", "text": "6 ≤ a² − 10 ≤ 71" },
+        { "id": "d", "text": "16 ≤ a² − 10 ≤ 71" }
+      ],
+      "correctOption": "c",
+      "explanation": "حدّا الحصر موجبان، والتربيع يحفظ ترتيب الموجبين: من 4 ≤ a ≤ 9 نستنتج 16 ≤ a² ≤ 81 . ثمّ نطرح 10 من الأطراف الثلاثة، والطرح يحفظ الترتيب: 6 ≤ a² − 10 ≤ 71 . والأخطاء الشائعة هي نسيان طرح 10 من الحدّين معًا فنجد 16 و 81 ، أو من الحدّ الأدنى وحده، أو ضرب a في 2 بدل تربيعه فنجد 8 و 18 .",
+      "difficulty": 3,
+      "competencies": ["math.num.ordre-encadrement"]
+    },
+    {
+      "prompt": "نعتبر عددين حقيقيين a و b حيث a ≥ b . قارن العبارتين 8a + 3b و 3a + 8b .",
+      "options": [
+        { "id": "a", "text": "8a + 3b ≤ 3a + 8b", "misconceptionTag": "math.num.ordre-inverse-a-tort" },
+        { "id": "b", "text": "8a + 3b > 3a + 8b قطعًا" },
+        { "id": "c", "text": "8a + 3b = 3a + 8b" },
+        { "id": "d", "text": "8a + 3b ≥ 3a + 8b" }
+      ],
+      "correctOption": "d",
+      "explanation": "ندرس إشارة الفرق: (8a + 3b) − (3a + 8b) = 5a − 5b = 5(a − b) . وبما أنّ a ≥ b فإنّ a − b موجب أو معدوم، والضرب في 5 الموجب يحفظ الإشارة. إذن الفرق موجب أو معدوم، أي 8a + 3b ≥ 3a + 8b . ولا يمكن الجزم بمتباينة قاطعة، لأنّ الحالة a = b تعطي تساويًا.",
+      "difficulty": 3,
+      "competencies": ["math.num.ordre-encadrement"]
+    },
+    {
+      "prompt": "قارن العددين √(20 − √11) و √(20 − √13) .",
+      "options": [
+        { "id": "a", "text": "√(20 − √11) < √(20 − √13)", "misconceptionTag": "math.num.ordre-des-negatifs-inverse" },
+        { "id": "b", "text": "√(20 − √11) > √(20 − √13)" },
+        { "id": "c", "text": "√(20 − √11) = √(20 − √13)" },
+        {
+          "id": "d",
+          "text": "20 − √11 < 20 − √13 ومنه √(20 − √11) < √(20 − √13)",
+          "misconceptionTag": "math.num.ordre-des-negatifs-inverse"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نبدأ من الداخل. بما أنّ 11 < 13 فإنّ √11 < √13 . والضرب في −1 يقلب الاتّجاه: −√11 > −√13 ، ثمّ إضافة 20 تحفظه: 20 − √11 > 20 − √13 ، والعددان موجبان. وأخيرًا الجذر يحفظ ترتيب العددين الموجبين، إذن √(20 − √11) > √(20 − √13) . الفخّ هو نقل الترتيب 11 < 13 مباشرة إلى النتيجة، فتُكتب 20 − √11 < 20 − √13 ، والتحقّق العددي يكشف خطأها: 20 − √11 ≈ 16,68 بينما 20 − √13 ≈ 16,39 . الطرح يقلب الترتيب مرّة واحدة، والجذر بعده يحفظه.",
+      "difficulty": 3,
+      "competencies": ["math.num.ordre-encadrement", "math.num.racines-calcul"]
+    },
+    {
+      "prompt": "نعلم أنّ 2√7 > 3√3 > 0 . استنتج المقارنة بين −1/(2√7) و −1/(3√3) .",
+      "options": [
+        { "id": "a", "text": "−1/(2√7) > −1/(3√3)" },
+        { "id": "b", "text": "−1/(2√7) < −1/(3√3)", "misconceptionTag": "math.num.inverse-conserve-l-ordre" },
+        { "id": "c", "text": "−1/(2√7) = −1/(3√3)" },
+        { "id": "d", "text": "1/(2√7) > 1/(3√3) ومنه −1/(2√7) < −1/(3√3)", "misconceptionTag": "math.num.inverse-conserve-l-ordre" }
+      ],
+      "correctOption": "a",
+      "explanation": "قلبان متتاليان. أوّلًا العددان موجبان ولهما نفس العلامة، فأخذ المقلوب يقلب الترتيب: من 2√7 > 3√3 نستنتج 1/(2√7) < 1/(3√3) . ثمّ الضرب في −1 وهو سالب يقلبه مرّة ثانية: −1/(2√7) > −1/(3√3) . ونتحقّق: 2√7 ≈ 5,29 و 3√3 ≈ 5,20 ، فمقلوباهما 0,189 و 0,192 ، ومقابلاهما −0,189 و −0,192 ، والأوّل هو الأكبر. والخطأ الشائع هو نقل ترتيب 2√7 و 3√3 كما هو إلى مقلوبيهما فتُكتب 1/(2√7) > 1/(3√3) ، أي قلب واحد بدل قلبين.",
+      "difficulty": 3,
+      "competencies": ["math.num.ordre-encadrement", "math.num.racines-calcul"]
+    }
+  ]
+}

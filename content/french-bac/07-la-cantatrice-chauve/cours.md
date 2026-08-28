@@ -67,8 +67,8 @@ Le préfixe dit un refus, et il faut savoir de quoi :
 | **VII** | **Conversation à quatre** : anecdotes, banalités, désaccords sur des évidences. |
 | **VIII** | **Le Pompier** — la plus longue scène. Il cherche des incendies, n'en trouve aucun, et raconte : l'anecdote emboîtée du rhume (les parents, puis les grands-parents, puis leurs parents encore), et des **fables** — « Le Chien et le Bœuf », « Le Coq ». |
 | **IX** | **Retrouvailles de Mary et du Pompier** : seconde scène de reconnaissance, en écho à la scène IV. Mary dit un poème, « Le feu ». |
-| **X** | Départ du Pompier. |
-| **XI** | **Paroxysme et chute.** Au moment de sortir, le Pompier lance « A propos, et la Cantatrice chauve ? » — didascalie : « **Silence général, gêne** ». Puis la conversation se défait : proverbes détournés, phrases toutes faites, mots isolés, enfin **phonèmes purs** hurlés. La lumière s'éteint ; dans le noir, tous scandent « c'est pas par là, c'est par ici ». Elle revient sur **M. et Mme Martin assis comme les Smith au début**, redisant exactement leurs répliques, tandis que le rideau se ferme. |
+| **X** | **Départ du Pompier.** C'est ici — et non à la scène suivante — qu'au moment de sortir il lance « A propos, et la Cantatrice chauve ? », sur quoi tombe la didascalie « **Silence général, gêne** », puis la réplique de Mme Smith : « Elle se coiffe toujours de la même façon. » **Seule occurrence du titre dans toute la pièce.** |
+| **XI** | **Paroxysme et chute.** La conversation se défait : proverbes détournés, phrases toutes faites, mots isolés, enfin **phonèmes purs** hurlés. La lumière s'éteint ; dans le noir, tous scandent « c'est pas par là, c'est par ici ». Elle revient sur **M. et Mme Martin assis comme les Smith au début**, redisant exactement leurs répliques, tandis que le rideau se ferme. |
 
 ## 🔮 Les machines de la pièce
 

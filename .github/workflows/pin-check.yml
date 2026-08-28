@@ -12,9 +12,17 @@ on:
   pull_request:
   push:
     branches: [main]
+  # Même raison que dans content-ci.yml : `auto-pr.yml` dispatche ce workflow
+  # sur la branche, parce qu'une PR ouverte par le GITHUB_TOKEN n'émet pas
+  # d'événement `pull_request` et n'aurait donc aucun check.
+  workflow_dispatch:
 
 permissions:
   contents: read
+  # Réveiller `automerge.yml` en fin de course — voir la dernière étape. Le bloc
+  # `permissions:` REMPLACE le défaut du dépôt : une portée non listée tombe à
+  # `none`, pas à `read`.
+  actions: write
 
 jobs:
   pinned:
@@ -40,3 +48,24 @@ jobs:
             exit 1
           fi
           echo "OK — toutes les Actions de .github/workflows/** sont épinglées au SHA."
+
+      # Même filet que dans content-ci.yml, et même condition : voir le
+      # commentaire détaillé là-bas et l'en-tête de automerge.yml. En deux mots :
+      # GitHub n'émet pas de `workflow_run` pour un run déclenché par le
+      # GITHUB_TOKEN, donc une PR ouverte par auto-pr.yml devient verte sans que
+      # rien ne réveille automerge (PR #231, restée ouverte avec ses trois checks
+      # au vert). La condition `workflow_dispatch` limite le coût au seul chemin
+      # qui casse — sur un dépôt privé, chaque job est facturé à la minute
+      # entamée.
+      - name: Réveiller automerge (chemin dispatché seulement)
+        if: always() && github.event_name == 'workflow_dispatch'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -uo pipefail
+          if gh workflow run automerge.yml --ref main; then
+            echo "automerge.yml réveillé."
+          else
+            echo "::warning title=Réveil impossible::automerge.yml n'a pas pu être dispatché ; la PR restera ouverte jusqu'au prochain push sur main."
+          fi

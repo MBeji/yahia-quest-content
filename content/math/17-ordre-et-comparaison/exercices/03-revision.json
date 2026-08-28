@@ -1,0 +1,97 @@
+{
+  "title": "⭐⭐ تمرين مراجعة: الترتيب والحصر (نمط امتحان)",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 70,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "نعلم أنّ 2 ≤ x ≤ 6 و 3 ≤ y ≤ 4 . أعطِ حصرًا للمجموع x + y .",
+      "options": [
+        { "id": "a", "text": "6 ≤ x + y ≤ 24" },
+        { "id": "b", "text": "2 ≤ x + y ≤ 6" },
+        { "id": "c", "text": "−2 ≤ x + y ≤ 3" },
+        { "id": "d", "text": "5 ≤ x + y ≤ 10" }
+      ],
+      "correctOption": "d",
+      "explanation": "نجمع الحصرين طرفًا بطرف: الحدّ الأدنى هو مجموع الحدّين الأدنيين 2 + 3 = 5 ، والحدّ الأعلى هو مجموع الحدّين الأعليين 6 + 4 = 10 . إذن 5 ≤ x + y ≤ 10 . والأخطاء الشائعة هي ضرب الحدود بدل جمعها فنجد 6 و 24 ، أو طرحها فنجد −2 و 3 ، أو الاكتفاء بحصر x وحده وإهمال y .",
+      "difficulty": 2,
+      "competencies": ["math.num.ordre-encadrement"]
+    },
+    {
+      "prompt": "ليكن a عددًا حقيقيًا حيث:\n−3 ≤ a ≤ 5\nما مدى هذا الحصر؟",
+      "options": [
+        { "id": "a", "text": "2 لأنّ 5 + (−3) = 2", "misconceptionTag": "math.int.signe-ignore-dans-somme" },
+        { "id": "b", "text": "−8 لأنّ −3 − 5 = −8", "misconceptionTag": "math.int.signe-ignore-dans-somme" },
+        { "id": "c", "text": "8 لأنّ 5 − (−3) = 8" },
+        { "id": "d", "text": "5 لأنّه أكبر حدّي الحصر" }
+      ],
+      "correctOption": "c",
+      "explanation": "مدى الحصر هو الفرق بين الحدّ الأعلى والحدّ الأدنى: 5 − (−3) = 5 + 3 = 8 . وهو طول القطعة التي يتحرّك فيها العدد a على المستقيم المدرّج، فهو دائمًا موجب. الجمع بدل الطرح يعطي 2 ، وعكس ترتيب الطرح يعطي −8 وهو سالب فلا يصلح أن يكون طولًا.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.relatifs-operations"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ 1 ≤ x ≤ 4 . أعطِ حصرًا للعدد −2x + 5 .",
+      "options": [
+        { "id": "a", "text": "3 ≤ −2x + 5 ≤ −3", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
+        { "id": "b", "text": "−3 ≤ −2x + 5 ≤ 3" },
+        { "id": "c", "text": "7 ≤ −2x + 5 ≤ 13", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
+        { "id": "d", "text": "−8 ≤ −2x + 5 ≤ −2", "misconceptionTag": "math.alg.inequation-sens-non-inverse" }
+      ],
+      "correctOption": "b",
+      "explanation": "الضرب في −2 وهو سالب يقلب الحصر ويبادل موقع الحدّين: من 1 ≤ x ≤ 4 نستنتج −8 ≤ −2x ≤ −2 . ثمّ نضيف 5 إلى الأطراف الثلاثة فنجد −3 ≤ −2x + 5 ≤ 3 . والأخطاء الثلاثة الشائعة هي: عدم تبادل الحدّين فتُكتب متباينة مقلوبة، أو إهمال إشارة العامل فيُحصر 2x + 5 ، أو نسيان إضافة 5 .",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.relatifs-operations"
+      ]
+    },
+    {
+      "prompt": "رتّب تصاعديا الأعداد الموجبة التالية: 2√11 ، 3√5 ، √47 .",
+      "options": [
+        { "id": "a", "text": "2√11 < 3√5 < √47" },
+        { "id": "b", "text": "3√5 < 2√11 < √47", "misconceptionTag": "math.num.comparaison-radical-et-entier" },
+        { "id": "c", "text": "√47 < 2√11 < 3√5", "misconceptionTag": "math.num.comparaison-radical-et-entier" },
+        { "id": "d", "text": "2√11 < √47 < 3√5", "misconceptionTag": "math.num.comparaison-radical-et-entier" }
+      ],
+      "correctOption": "a",
+      "explanation": "كلّ الأعداد موجبة فنقارن مربّعاتها: (2√11)² = 4 × 11 = 44 و (3√5)² = 9 × 5 = 45 و (√47)² = 47 . ومن 44 < 45 < 47 نستنتج الترتيب التصاعدي: 2√11 ثمّ 3√5 ثمّ √47 . الأعداد الثلاثة متقاربة جدًّا، والتربيع وحده هو الذي يفصل بينها.",
+      "difficulty": 3,
+      "competencies": ["math.num.ordre-encadrement", "math.num.racines-calcul"]
+    },
+    {
+      "prompt": "قارن العددين 3√7 و 2√13 ثمّ استنتج المقارنة بين مقلوبيهما.",
+      "options": [
+        { "id": "a", "text": "3√7 < 2√13 و 1/(3√7) > 1/(2√13)", "misconceptionTag": "math.num.comparaison-radical-et-entier" },
+        { "id": "b", "text": "3√7 > 2√13 و 1/(3√7) > 1/(2√13)", "misconceptionTag": "math.num.inverse-conserve-l-ordre" },
+        { "id": "c", "text": "3√7 < 2√13 و 1/(3√7) < 1/(2√13)", "misconceptionTag": "math.num.comparaison-radical-et-entier" },
+        { "id": "d", "text": "3√7 > 2√13 و 1/(3√7) < 1/(2√13)" }
+      ],
+      "correctOption": "d",
+      "explanation": "العددان موجبان فنقارن مربّعيهما: (3√7)² = 9 × 7 = 63 و (2√13)² = 4 × 13 = 52 . ومن 63 > 52 نستنتج 3√7 > 2√13 . وبما أنّ للعددين نفس العلامة فأخذ المقلوب يقلب الترتيب: 1/(3√7) < 1/(2√13) . الخطأ المتكرّر هنا هو نقل الترتيب كما هو إلى المقلوبين.",
+      "difficulty": 3,
+      "competencies": ["math.num.ordre-encadrement", "math.num.racines-calcul"]
+    },
+    {
+      "prompt": "حوضان على شكل متوازي مستطيلات يحتويان على الكمّية نفسها من الزيت. بعدا قاعدة الأوّل هما 4 m و 2 m ، وبعدا قاعدة الثاني هما 3 m و 2 m . قارن ارتفاعي الزيت في الحوضين.",
+      "options": [
+        { "id": "a", "text": "الارتفاع في الأوّل أكبر لأنّ قاعدته أوسع", "misconceptionTag": "math.num.grandeurs-inversement-proportionnelles" },
+        { "id": "b", "text": "الارتفاعان متساويان لأنّ الكمّيتين متساويتان", "misconceptionTag": "math.num.grandeurs-inversement-proportionnelles" },
+        { "id": "c", "text": "الارتفاع في الأوّل أصغر لأنّ قاعدته أوسع" },
+        {
+          "id": "d",
+          "text": "الارتفاع في الثاني أصغر لأنّ مساحة قاعدته 6 m² أصغر من 8 m²"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ارتفاع الزيت هو خارج قسمة حجمه على مساحة القاعدة. مساحة القاعدة الأولى 4 × 2 = 8 m² والثانية 3 × 2 = 6 m² ، فالأولى أوسع. وبما أنّ الحجم واحد، فالقسمة على العدد الأكبر تعطي النتيجة الأصغر: الارتفاع في الحوض الأوّل أصغر. والخطأ الأكثر جاذبية هو حساب المساحتين حسابًا صحيحًا ثمّ عكس اتّجاه القسمة، فيُظنّ أنّ القاعدة الأضيق تعطي الارتفاع الأصغر. أمّا قيمة الكمّية فلا حاجة إليها لأنّها مشتركة وتزول من المقارنة.",
+      "difficulty": 3,
+      "competencies": ["math.num.ordre-encadrement"]
+    }
+  ]
+}

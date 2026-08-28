@@ -10,9 +10,9 @@
       "prompt": "الدالة الخطية f تُعرَّف بـ f(x) = 3x. ما قيمة f(4) ؟",
       "options": [
         { "id": "a", "text": "12" },
-        { "id": "b", "text": "7" },
+        { "id": "b", "text": "7", "misconceptionTag": "math.fn.image-calculee-par-somme" },
         { "id": "c", "text": "16" },
-        { "id": "d", "text": "34" }
+        { "id": "d", "text": "34", "misconceptionTag": "math.fn.image-calculee-par-somme" }
       ],
       "correctOption": "a",
       "explanation": "f(4) = 3 × 4 = 12. الدالة الخطية f(x) = ax تعمل بضرب x في معامل التناسب a = 3.",
@@ -20,9 +20,9 @@
       "competencies": ["math.fn.fonction-lineaire"]
     },
     {
-      "prompt": "الدالة التآلفية f تُعرَّف بـ f(x) = 2x + 1. ما قيمة f(3) ؟",
+      "prompt": "الدالة التآلفية f تُعرَّف بـ:\nf(x) = 2x + 1\nما قيمة f(3) ؟",
       "options": [
-        { "id": "a", "text": "5" },
+        { "id": "a", "text": "5", "misconceptionTag": "math.fn.image-calculee-par-somme" },
         { "id": "b", "text": "7" },
         { "id": "c", "text": "9" },
         { "id": "d", "text": "4" }
@@ -36,9 +36,9 @@
       "prompt": "الدالة الخطية f تُعرَّف بـ f(x) = ax وتمرّ بياناتها بالنقطة (2 ; 8). ما قيمة a ؟",
       "options": [
         { "id": "a", "text": "2" },
-        { "id": "b", "text": "6" },
+        { "id": "b", "text": "6", "misconceptionTag": "math.fn.coefficient-obtenu-sans-division" },
         { "id": "c", "text": "4" },
-        { "id": "d", "text": "16" }
+        { "id": "d", "text": "16", "misconceptionTag": "math.fn.coefficient-obtenu-sans-division" }
       ],
       "correctOption": "c",
       "explanation": "بما أنّ النقطة (2 ; 8) تنتمي للبيان، فإنّ f(2) = 8، أي a × 2 = 8، إذن a = 8 ÷ 2 = 4.",
@@ -46,10 +46,10 @@
       "competencies": ["math.fn.fonction-lineaire"]
     },
     {
-      "prompt": "الدالة التآلفية f تُعرَّف بـ f(x) = −2x + 5. ما قيمة x حين f(x) = 0 (أي سابقة الصفر) ؟",
+      "prompt": "الدالة التآلفية f تُعرَّف بـ:\nf(x) = −2x + 5\nما قيمة x حين f(x) = 0 (أي سابقة الصفر) ؟",
       "options": [
-        { "id": "a", "text": "5" },
-        { "id": "b", "text": "−5" },
+        { "id": "a", "text": "5", "misconceptionTag": "math.fn.zero-et-ordonnee-origine-confondus" },
+        { "id": "b", "text": "−5", "misconceptionTag": "math.fn.zero-et-ordonnee-origine-confondus" },
         { "id": "c", "text": "2,5" },
         { "id": "d", "text": "10" }
       ],
@@ -61,7 +61,7 @@
     {
       "prompt": "بيان دالة تآلفية يمرّ بالنقطتَين (0 ; 3) و (1 ; 5). ما هي الدالة؟",
       "options": [
-        { "id": "a", "text": "f(x) = 3x + 5" },
+        { "id": "a", "text": "f(x) = 3x + 5", "misconceptionTag": "math.fn.pente-ordonnee-origine-confondues" },
         { "id": "b", "text": "f(x) = 2x + 3" },
         { "id": "c", "text": "f(x) = 5x" },
         { "id": "d", "text": "f(x) = 3x − 2" }
@@ -72,7 +72,7 @@
       "competencies": ["math.fn.fonction-affine", "math.fn.representation-droites"]
     },
     {
-      "prompt": "الدالة التآلفية f تُعرَّف بـ f(x) = 3x + 2. ما قيمة x إذا كانت f(x) = 14 ؟",
+      "prompt": "الدالة التآلفية f تُعرَّف بـ:\nf(x) = 3x + 2\nما قيمة x إذا كانت f(x) = 14 ؟",
       "options": [
         { "id": "a", "text": "5" },
         { "id": "b", "text": "6" },

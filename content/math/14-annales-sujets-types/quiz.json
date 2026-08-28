@@ -17,8 +17,16 @@
     {
       "prompt": "انشر وبسّط العبارة (2x − 3)².",
       "options": [
-        { "id": "a", "text": "4x² − 9" },
-        { "id": "b", "text": "4x² + 9" },
+        {
+          "id": "a",
+          "text": "4x² − 9",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        },
+        {
+          "id": "b",
+          "text": "4x² + 9",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
         { "id": "c", "text": "4x² − 12x + 9" },
         { "id": "d", "text": "2x² − 12x + 9" }
       ],
@@ -28,7 +36,7 @@
       "competencies": ["math.alg.identites-remarquables"]
     },
     {
-      "prompt": "حلّ المعادلة 3(x − 2) = 2x + 1.",
+      "prompt": "حلّ المعادلة التالية:\n3(x − 2) = 2x + 1",
       "options": [
         { "id": "a", "text": "x = 5" },
         { "id": "b", "text": "x = 7" },
@@ -57,7 +65,7 @@
       "prompt": "مثلّث قائم في B، ضلعاه القائمان AB = 6 cm وBC = 8 cm. ما طول الوتر AC؟",
       "options": [
         { "id": "a", "text": "10 cm" },
-        { "id": "b", "text": "14 cm" },
+        { "id": "b", "text": "14 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" },
         { "id": "c", "text": "√28 cm" },
         { "id": "d", "text": "48 cm" }
       ],
@@ -69,8 +77,12 @@
     {
       "prompt": "مثلّث قائم في B، الزاوية في A قياسها x. الضلع المجاور لـ x هو AB = 5 cm والوتر AC = 10 cm. ما قياس الزاوية x؟",
       "options": [
-        { "id": "a", "text": "30°" },
-        { "id": "b", "text": "45°" },
+        { "id": "a", "text": "30°", "misconceptionTag": "math.geo.cosinus-sinus-confondus" },
+        {
+          "id": "b",
+          "text": "45°",
+          "misconceptionTag": "math.geo.valeurs-remarquables-confondues"
+        },
         { "id": "c", "text": "60°" },
         { "id": "d", "text": "90°" }
       ],
@@ -80,10 +92,10 @@
       "competencies": ["math.geo.trigonometrie"]
     },
     {
-      "prompt": "لتكن الدالّة التآلفية f(x) = 3x − 2. ما صورة العدد 4 بهذه الدالّة، أي f(4)؟",
+      "prompt": "لتكن الدالّة التآلفية f المعرّفة بـ:\nf(x) = 3x − 2\nما صورة العدد 4 بهذه الدالّة، أي f(4)؟",
       "options": [
         { "id": "a", "text": "10" },
-        { "id": "b", "text": "12" },
+        { "id": "b", "text": "12", "misconceptionTag": "math.fn.lineaire-affine-confondues" },
         { "id": "c", "text": "5" },
         { "id": "d", "text": "14" }
       ],
@@ -97,7 +109,7 @@
       "options": [
         { "id": "a", "text": "8" },
         { "id": "b", "text": "10" },
-        { "id": "c", "text": "40" },
+        { "id": "c", "text": "40", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "d", "text": "7" }
       ],
       "correctOption": "a",

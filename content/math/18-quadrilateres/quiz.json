@@ -1,0 +1,70 @@
+{
+  "title": "اختبار فهم الدرس ⭐",
+  "questions": [
+    {
+      "prompt": "ما الخاصيّة التي تميّز المستطيل عن بقيّة متوازيات الأضلاع؟",
+      "options": [
+        { "id": "a", "text": "قطراه متقايسان" },
+        { "id": "b", "text": "قطراه متعامدان", "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees" },
+        { "id": "c", "text": "قطراه يتقاطعان في منتصفيهما", "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees" },
+        { "id": "d", "text": "أضلاعه الأربعة متقايسة", "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees" }
+      ],
+      "correctOption": "a",
+      "explanation": "تقاطع القطرين في منتصفيهما خاصيّة كلّ متوازي أضلاع، فهي لا تميّز أحدا. أمّا تعامد القطرين وتقايس الأضلاع الأربعة فخاصيّتان للمعيّن. المستطيل وحده هو متوازي الأضلاع الذي يكون فيه AC = BD.",
+      "difficulty": 1,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "رباعي قطراه يتقاطعان في منتصفيهما وهما متعامدان. ما أدقّ وصف له؟",
+      "options": [
+        { "id": "a", "text": "مستطيل", "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees" },
+        { "id": "b", "text": "معيّن" },
+        { "id": "c", "text": "مربّع", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" },
+        { "id": "d", "text": "شبه منحرف", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" }
+      ],
+      "correctOption": "b",
+      "explanation": "تقاطع القطرين في منتصفيهما يجعل الرباعي متوازي أضلاع، وتعامدهما يجعل هذا المتوازي معيّنا. ولا يكون مربّعا إلاّ إذا كان القطران متقايسين أيضا، وهو شرط لم يُذكر في النصّ. ولا شيء يفرض وجود زاوية قائمة فيه ليكون مستطيلا. أمّا «شبه منحرف» فوصف صحيح لكنّه أقلّ دقّة، لأنّ كلّ معيّن هو متوازي أضلاع وكلّ متوازي أضلاع هو شبه منحرف.",
+      "difficulty": 1,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "في المثلث ABC، النقطة I منتصف [AB] والنقطة J منتصف [AC]، و IJ = 6,5. ما طول [BC]؟\n<svg viewBox=\"0 0 340 220\"><path d=\"M160 40 L60 190 L280 190 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M160 40 L60 190 L280 190 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M110 115 L220 115\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\"/><g stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" fill=\"none\"><path d=\"M130 73 L140 79\"/><path d=\"M80 148 L90 154\"/><path d=\"M186 78 L194 72\"/><path d=\"M190 81 L198 75\"/><path d=\"M244 153 L252 147\"/><path d=\"M248 156 L256 150\"/></g><g fill=\"#0f172a\"><circle cx=\"160\" cy=\"40\" r=\"4\"/><circle cx=\"60\" cy=\"190\" r=\"4\"/><circle cx=\"280\" cy=\"190\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"110\" cy=\"115\" r=\"4.5\"/><circle cx=\"220\" cy=\"115\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"160\" y=\"28\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"46\" y=\"206\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"294\" y=\"206\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"94\" y=\"110\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"236\" y=\"110\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text><text x=\"165\" y=\"106\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\">6,5</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "3,25", "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux" },
+        { "id": "b", "text": "6,5", "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux" },
+        { "id": "c", "text": "13" },
+        { "id": "d", "text": "26", "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux" }
+      ],
+      "correctOption": "c",
+      "explanation": "القطعة الرابطة بين منتصفي ضلعين في مثلث طولها نصف طول الضلع الثالث، إذن BC = 2 × IJ = 2 × 6,5 = 13. (من ينصّف بدل أن يضاعف يجد 3,25، ومن يضاعف مرّتين يجد 26.)",
+      "difficulty": 2,
+      "competencies": ["math.geo.triangles-base"]
+    },
+    {
+      "prompt": "متوازي أضلاع قاعدته 9 والارتفاع المتعلّق بها 6. ما مساحته؟\n<svg viewBox=\"0 0 360 235\"><path d=\"M120 60 L60 192 L258 192 L318 60 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M120 60 L60 192 L258 192 L318 60 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M120 60 L120 192\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><path d=\"M120 180 L132 180 L132 192\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g fill=\"#0f172a\"><circle cx=\"120\" cy=\"60\" r=\"4\"/><circle cx=\"60\" cy=\"192\" r=\"4\"/><circle cx=\"258\" cy=\"192\" r=\"4\"/><circle cx=\"318\" cy=\"60\" r=\"4\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"108\" y=\"50\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"46\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"264\" y=\"212\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"332\" y=\"50\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"159\" y=\"214\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">9</text><text x=\"106\" y=\"130\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">6</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "15", "misconceptionTag": "math.mes.aire-et-perimetre-confondus" },
+        { "id": "b", "text": "27" },
+        { "id": "c", "text": "30", "misconceptionTag": "math.mes.aire-et-perimetre-confondus" },
+        { "id": "d", "text": "54" }
+      ],
+      "correctOption": "d",
+      "explanation": "مساحة متوازي الأضلاع تساوي القاعدة × الارتفاع المتعلّق بها: 9 × 6 = 54. (جمع البعدين يعطي 15، ونصف الجذاء 27 وهو قانون مساحة المثلث لا متوازي الأضلاع، و 30 هو محيط مستطيل بعداه 9 و 6.)",
+      "difficulty": 2,
+      "competencies": ["math.mes.aires"]
+    },
+    {
+      "prompt": "ABCD رباعي محدّب، والنقاط I وJ وK وL منتصفات أضلاعه [AB] و[BC] و[CD] و[DA] بالتتالي. ما طبيعة الرباعي IJKL مهما كان شكل ABCD؟\n<svg viewBox=\"0 0 320 250\"><path d=\"M80 40 L270 90 L230 215 L50 175 Z\" fill=\"#0f6e56\" opacity=\"0.08\"/><path d=\"M80 40 L270 90 L230 215 L50 175 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"80\" cy=\"40\" r=\"4\"/><circle cx=\"270\" cy=\"90\" r=\"4\"/><circle cx=\"230\" cy=\"215\" r=\"4\"/><circle cx=\"50\" cy=\"175\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"175\" cy=\"65\" r=\"4.5\"/><circle cx=\"250\" cy=\"152.5\" r=\"4.5\"/><circle cx=\"140\" cy=\"195\" r=\"4.5\"/><circle cx=\"65\" cy=\"107.5\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"70\" y=\"30\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"284\" y=\"84\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"242\" y=\"234\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"38\" y=\"188\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"180\" y=\"54\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"266\" y=\"152\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text><text x=\"140\" y=\"214\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text><text x=\"50\" y=\"102\" text-anchor=\"middle\" fill=\"#0f6e56\">L</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "متوازي أضلاع" },
+        { "id": "b", "text": "مستطيل", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" },
+        { "id": "c", "text": "معيّن", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" },
+        { "id": "d", "text": "مربّع", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" }
+      ],
+      "correctOption": "a",
+      "explanation": "في المثلث ABC نجد (IJ) ∥ (AC) و IJ = AC/2، وفي المثلث ACD نجد (LK) ∥ (AC) و LK = AC/2. للرباعي IJKL إذن ضلعان متقابلان متوازيان ومتقايسان، فهو متوازي أضلاع دائما. ولا يصبح معيّنا إلاّ إذا تقايس قطرا ABCD، ولا مستطيلا إلاّ إذا تعامدا.",
+      "difficulty": 2,
+      "competencies": ["math.geo.quadrilateres"]
+    }
+  ]
+}

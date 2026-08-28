@@ -10,8 +10,12 @@
       "prompt": "في دائرة مركزها O، الزاوية المركزية AOB = 130°، وC نقطة على القوس الكبير. ما قيمة الزاوية ACB؟",
       "options": [
         { "id": "a", "text": "65°" },
-        { "id": "b", "text": "130°" },
-        { "id": "c", "text": "260°" },
+        { "id": "b", "text": "130°", "misconceptionTag": "math.geo.angle-inscrit-egal-au-centre" },
+        {
+          "id": "c",
+          "text": "260°",
+          "misconceptionTag": "math.geo.angle-inscrit-double-du-centre"
+        },
         { "id": "d", "text": "115°" }
       ],
       "correctOption": "a",
@@ -22,8 +26,8 @@
     {
       "prompt": "في دائرة مركزها O، C وD وE ثلاث نقاط على الدائرة. الزاوية المحيطية DCE = 48°. ما قيمة الزاوية المركزية DOE؟",
       "options": [
-        { "id": "a", "text": "24°" },
-        { "id": "b", "text": "48°" },
+        { "id": "a", "text": "24°", "misconceptionTag": "math.geo.angle-inscrit-double-du-centre" },
+        { "id": "b", "text": "48°", "misconceptionTag": "math.geo.angle-inscrit-egal-au-centre" },
         { "id": "c", "text": "96°" },
         { "id": "d", "text": "144°" }
       ],
@@ -49,7 +53,7 @@
       "prompt": "في دائرة، الزاوية المحيطية ACB = 38°. وD نقطة على القوس الكبير (من نفس الجهة). ما مجموع الزاويتين ACB وADB؟",
       "options": [
         { "id": "a", "text": "76°" },
-        { "id": "b", "text": "180°" },
+        { "id": "b", "text": "180°", "misconceptionTag": "math.geo.angles-inscrits-cotes-opposes" },
         { "id": "c", "text": "38°" },
         { "id": "d", "text": "90°" }
       ],
@@ -62,8 +66,12 @@
       "prompt": "في دائرة، C وD نقطتان على جهتَين مختلفتَين من الوتر [AB]. الزاوية ACB = 70° حيث C على القوس الكبير. ما قيمة الزاوية ADB؟",
       "options": [
         { "id": "a", "text": "110°" },
-        { "id": "b", "text": "70°" },
-        { "id": "c", "text": "140°" },
+        { "id": "b", "text": "70°", "misconceptionTag": "math.geo.angles-inscrits-cotes-opposes" },
+        {
+          "id": "c",
+          "text": "140°",
+          "misconceptionTag": "math.geo.angle-inscrit-double-du-centre"
+        },
         { "id": "d", "text": "220°" }
       ],
       "correctOption": "a",
@@ -74,9 +82,13 @@
     {
       "prompt": "في دائرة، الزاوية المحيطية ACB = 63°. ما قيس القوس الصغير AB الذي تحصره هذه الزاوية؟",
       "options": [
-        { "id": "a", "text": "63°" },
+        { "id": "a", "text": "63°", "misconceptionTag": "math.geo.angle-inscrit-egal-au-centre" },
         { "id": "b", "text": "126°" },
-        { "id": "c", "text": "31,5°" },
+        {
+          "id": "c",
+          "text": "31,5°",
+          "misconceptionTag": "math.geo.angle-inscrit-double-du-centre"
+        },
         { "id": "d", "text": "297°" }
       ],
       "correctOption": "b",

@@ -7,17 +7,17 @@
   "displayOrder": 5,
   "questions": [
     {
-      "prompt": "ما ناتج العملية: (−2)³ + (−5) × (−3) ؟",
+      "prompt": "ما ناتج العملية: (−2) × 4 + (−5) × (−3) ؟",
       "options": [
-        { "id": "a", "text": "−23" },
+        { "id": "a", "text": "−23", "misconceptionTag": "math.int.produit-signes-negatifs" },
         { "id": "b", "text": "1" },
         { "id": "c", "text": "7" },
-        { "id": "d", "text": "23" }
+        { "id": "d", "text": "23", "misconceptionTag": "math.int.signe-ignore-dans-somme" }
       ],
       "correctOption": "c",
-      "explanation": "نحسب القوّة أوّلًا: (−2)³ = −8، ثمّ الضرب: (−5) × (−3) = 15. أخيرًا الجمع: −8 + 15 = 7. التحقّق: −8 + 15 = 7 ✓.",
+      "explanation": "ننجز الجداءين أوّلًا ثمّ الجمع، ونطبّق قاعدة الإشارات: سالب × موجب = سالب، وسالب × سالب = موجب. إذن (−2) × 4 = −8 و(−5) × (−3) = 15، ومنه −8 + 15 = 7. الأخطاء الشائعة: إهمال إشارة الجداء الأوّل فينتج 8 + 15 = 23، أو جعل جداء عددين سالبين سالبًا فينتج −8 + (−15) = −23.",
       "difficulty": 2,
-      "competencies": ["math.num.relatifs-operations", "math.num.puissances"]
+      "competencies": ["math.num.relatifs-operations"]
     },
     {
       "prompt": "ما أصغر مجموعة عدديّة ينتمي إليها العدد √16 ؟",
@@ -25,64 +25,96 @@
         { "id": "a", "text": "ℕ" },
         { "id": "b", "text": "ℤ" },
         { "id": "c", "text": "ℚ" },
-        { "id": "d", "text": "ℝ \\ ℚ" }
+        {
+          "id": "d",
+          "text": "مجموعة الأعداد الصمّاء",
+          "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel"
+        }
       ],
       "correctOption": "a",
-      "explanation": "√16 = 4 بالضبط لأنّ 4² = 16، والعدد 4 عدد طبيعي. إذن أصغر مجموعة تحتويه هي ℕ (وهو ينتمي أيضًا إلى ℤ وℚ وℝ بالاحتواء). الخطأ الشائع: الظنّ أنّ وجود رمز الجذر يجعل العدد أصمّ — هذا صحيح فقط إذا لم يكن ما تحت الجذر مربّعًا كاملًا.",
+      "explanation": "√16 = 4 بالضبط لأنّ 4² = 16، والعدد 4 عدد صحيح طبيعي. إذن أصغر مجموعة تحتويه هي ℕ (وهو ينتمي أيضًا إلى ℤ وℚ وℝ بالاحتواء)، ولا ينتمي إلى مجموعة الأعداد الصمّاء لأنّه عدد ناطق. الخطأ الشائع: الظنّ أنّ وجود رمز الجذر يجعل العدد أصمّ — هذا صحيح فقط إذا لم يكن ما تحت الجذر مربّعًا كاملًا.",
       "difficulty": 1,
       "competencies": ["math.num.ensembles-nombres", "math.num.racines-definition"]
     },
     {
-      "prompt": "ما قيمة |2 − 9| + |−3| ؟",
+      "prompt": "أيّ العبارات التالية صحيحة بشأن الكتابتين العشريتين 2,8 و2,(8) ؟",
       "options": [
-        { "id": "a", "text": "−10" },
-        { "id": "b", "text": "−4" },
-        { "id": "c", "text": "4" },
-        { "id": "d", "text": "10" }
-      ],
-      "correctOption": "d",
-      "explanation": "2 − 9 = −7 إذن |2 − 9| = 7، و|−3| = 3. المجموع = 7 + 3 = 10. القيمة المطلقة دائمًا موجبة أو معدومة.",
-      "difficulty": 2,
-      "competencies": ["math.num.valeur-absolue"]
-    },
-    {
-      "prompt": "أيّ مجال يمثّل مجموعة الأعداد الحقيقية x التي تحقّق |x| ≤ 3 ؟",
-      "options": [
-        { "id": "a", "text": "[0 ; 3]" },
-        { "id": "b", "text": "]−3 ; 3[" },
-        { "id": "c", "text": "[−3 ; 3]" },
-        { "id": "d", "text": "]−∞ ; 3]" }
+        { "id": "a", "text": "العددان متساويان" },
+        { "id": "b", "text": "الأكبر هو 2,8" },
+        { "id": "c", "text": "الأكبر هو 2,(8)" },
+        {
+          "id": "d",
+          "text": "العدد 2,(8) أصمّ",
+          "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel"
+        }
       ],
       "correctOption": "c",
-      "explanation": "|x| ≤ 3 يعني أنّ بُعد x عن الصفر لا يتجاوز 3، أي −3 ≤ x ≤ 3، وهو المجال المغلق [−3 ; 3]. الخيار (a) يهمل الأعداد السالبة، و(b) يستثني الطرفين رغم أنّ الرمز ≤ يشملهما، و(d) ينسى الشرط x ≥ −3.",
+      "explanation": "الكتابة 2,(8) تعني أنّ الرقم 8 يتكرّر بلا توقّف: 2,8888… أمّا الكتابة 2,8 فمتناهية، ونكملها بالأصفار: 2,8000… نقارن رقمًا برقم بعد الفاصل: الرقمان الأوّلان متساويان، وفي الرتبة الثانية نجد 0 مقابل 8، إذن الأكبر هو 2,(8). ومع ذلك فالعددان كسريان معًا: لكلّ كتابة عشرية دوريّة عدد كسري وحيد، والكتابة المتناهية ليست إلّا حالة خاصّة دورها 0. الأخطاء الشائعة: قراءة القوسين كأنّهما زينة لا تغيّر القيمة، أو الظنّ أنّ الكتابة غير المتناهية تكفي لجعل العدد أصمّ.",
       "difficulty": 2,
-      "competencies": ["math.num.valeur-absolue"]
+      "competencies": ["math.frac.sens", "math.num.ensembles-nombres"]
     },
     {
-      "prompt": "رتّب الأعداد التالية تصاعديًّا: √2 ، 1 ، 1,5 ، √3 . ما الترتيب الصحيح؟",
+      "prompt": "أيّ من الأعداد التالية ينتمي إلى ℚ ولا ينتمي إلى 𝔻 ؟",
       "options": [
-        { "id": "a", "text": "1 < √3 < √2 < 1,5" },
-        { "id": "b", "text": "1 < √2 < 1,5 < √3" },
-        { "id": "c", "text": "1 < 1,5 < √2 < √3" },
-        { "id": "d", "text": "√2 < 1 < √3 < 1,5" }
+        {
+          "id": "a",
+          "text": "−2,5",
+          "misconceptionTag": "math.num.appartenance-ensemble-confondue"
+        },
+        { "id": "b", "text": "5/9" },
+        {
+          "id": "c",
+          "text": "3/4",
+          "misconceptionTag": "math.num.appartenance-ensemble-confondue"
+        },
+        { "id": "d", "text": "7", "misconceptionTag": "math.num.appartenance-ensemble-confondue" }
       ],
       "correctOption": "b",
-      "explanation": "√2 ≈ 1,414 و√3 ≈ 1,732. إذن الترتيب التصاعدي: 1 < 1,414 < 1,5 < 1,732، أي 1 < √2 < 1,5 < √3. الخطأ الشائع: الظنّ أنّ √2 > 1,5 — قارن المربّعين: (1,5)² = 2,25 > 2، إذن 1,5 > √2.",
-      "difficulty": 3,
-      "competencies": ["math.num.ordre-encadrement", "math.num.racines-calcul"]
+      "explanation": "𝔻 هي مجموعة الأعداد ذات الكتابة العشرية المتناهية. نُنجز القسمة: 5/9 = 0,(5) أي 0,5555… وهي كتابة دوريّة لا تتوقّف، إذن 5/9 عدد كسري لكنّه ليس عشريًّا. أمّا −2,5 و3/4 = 0,75 و7 = 7,0 فكتاباتها العشرية متناهية، فكلّها تنتمي إلى 𝔻.",
+      "difficulty": 2,
+      "competencies": ["math.num.ensembles-nombres", "math.frac.sens"]
     },
     {
-      "prompt": "إذا كان 0 < a < b، فأيّ عبارة صحيحة دائمًا؟",
+      "prompt": "مربّع مساحته 5 cm². ما طول ضلعه وما طبيعة هذا العدد؟\n<svg viewBox=\"0 0 220 180\">\n<title>مربّع معلومة مساحته ومجهول طول ضلعه</title>\n<rect x=\"60\" y=\"25\" width=\"110\" height=\"110\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"60\" y1=\"146\" x2=\"170\" y2=\"146\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polygon points=\"60,146 69,142 69,150\" fill=\"#0f172a\"/><polygon points=\"170,146 161,142 161,150\" fill=\"#0f172a\"/><text x=\"115\" y=\"86\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">5 cm²</text><text x=\"115\" y=\"168\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">?</text>\n</svg>",
       "options": [
-        { "id": "a", "text": "a² < b²" },
-        { "id": "b", "text": "a² > b²" },
-        { "id": "c", "text": "−a < −b" },
-        { "id": "d", "text": "a − b > 0" }
+        { "id": "a", "text": "5 cm وهو عدد صحيح" },
+        { "id": "b", "text": "2,5 cm وهو عدد عشري" },
+        {
+          "id": "c",
+          "text": "√5 cm وهو عدد كسري",
+          "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel"
+        },
+        { "id": "d", "text": "√5 cm وهو عدد أصمّ" }
       ],
-      "correctOption": "a",
-      "explanation": "بما أنّ a وb موجبان، فالضرب في عدد موجب يحفظ الترتيب: نضرب a < b في a فنجد a² < ab، ونضربها في b فنجد ab < b²، إذن a² < b². مثال: 2 < 3 يعطي 4 < 9 ✓. الخطأ الشائع: اختيار −a < −b، والصحيح أنّ الضرب في −1 يقلب الترتيب فـ −a > −b؛ كما أنّ a − b سالب لأنّ a < b.",
+      "correctOption": "d",
+      "explanation": "مساحة المربّع تساوي مربّع طول ضلعه، فإذا كان a طول الضلع فإنّ a² = 5 ومنه a = √5 cm. والعدد 5 ليس مربّعًا كاملًا (2² = 4 و3² = 9)، إذن √5 لا يُكتب على شكل كسر: كتابته العشرية 2,2360679… غير متناهية وغير دوريّة، فهو عدد أصمّ. الأخطاء الشائعة: قسمة المساحة على 2 فيُظنّ أنّ الضلع 2,5 cm — لكنّ (2,5)² = 6,25 وليس 5 — أو الظنّ أنّ جذر كلّ عدد صحيح هو عدد كسري.",
       "difficulty": 3,
-      "competencies": ["math.num.ordre-encadrement"]
+      "competencies": ["math.num.racines-definition", "math.num.ensembles-nombres"]
+    },
+    {
+      "prompt": "نعتبر المجموعة التالية:\nA = { −3/4 ; √64 ; π ; 0,6 ; √3 }\nكم عنصرًا من A ينتمي إلى ℚ ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2",
+          "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel"
+        },
+        { "id": "b", "text": "3" },
+        {
+          "id": "c",
+          "text": "4",
+          "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel"
+        },
+        {
+          "id": "d",
+          "text": "5",
+          "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نفحص العناصر واحدًا واحدًا: −3/4 كسر إذن في ℚ ؛ √64 = 8 لأنّ 8² = 64 فهو عدد صحيح وبالتالي في ℚ ؛ π عدد أصمّ فهو خارج ℚ ؛ 0,6 = 6/10 في ℚ ؛ √3 عدد أصمّ لأنّ 3 ليس مربّعًا كاملًا. إذن العناصر المنتمية إلى ℚ هي 3: العدد −3/4 والعدد √64 والعدد 0,6. الخطأ الشائع: عدّ √64 مع الأعداد الصمّاء لمجرّد وجود رمز الجذر.",
+      "difficulty": 3,
+      "competencies": ["math.num.ensembles-nombres", "math.num.racines-definition"]
     }
   ]
 }

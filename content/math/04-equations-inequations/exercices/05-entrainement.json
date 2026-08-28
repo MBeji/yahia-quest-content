@@ -7,7 +7,7 @@
   "displayOrder": 5,
   "questions": [
     {
-      "prompt": "ما حلّ المعادلة: 3(x − 2) + 5 = 2x + 4 ؟",
+      "prompt": "ما حلّ المعادلة التالية؟\n3(x − 2) + 5 = 2x + 4",
       "options": [
         { "id": "a", "text": "x = −5" },
         { "id": "b", "text": "x = 1" },
@@ -20,12 +20,24 @@
       "competencies": ["math.alg.equations-premier-degre", "math.alg.developpement"]
     },
     {
-      "prompt": "ما مجموعة حلول المعادلة: (x − 5)(2x + 6) = 0 ؟",
+      "prompt": "ما مجموعة حلول المعادلة التالية؟\n(x − 5)(2x + 6) = 0",
       "options": [
-        { "id": "a", "text": "{ −5 ; −3 }" },
-        { "id": "b", "text": "{ −5 ; 6 }" },
+        {
+          "id": "a",
+          "text": "{ −5 ; −3 }",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "b",
+          "text": "{ −5 ; 6 }",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
         { "id": "c", "text": "{ 5 ; −3 }" },
-        { "id": "d", "text": "{ 5 ; 3 }" }
+        {
+          "id": "d",
+          "text": "{ 5 ; 3 }",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        }
       ],
       "correctOption": "c",
       "explanation": "جداء معدوم: إمّا x − 5 = 0 فـ x = 5، أو 2x + 6 = 0 أي 2x = −6 فـ x = −3. مجموعة الحلول {5 ; −3}.",
@@ -33,12 +45,12 @@
       "competencies": ["math.alg.equations-produit"]
     },
     {
-      "prompt": "ما حلّ المتراجحة: 3x − 7 < x + 5 ؟",
+      "prompt": "ما حلّ المتراجحة التالية؟\n3x − 7 < x + 5",
       "options": [
         { "id": "a", "text": "x < 1" },
         { "id": "b", "text": "x < 6" },
         { "id": "c", "text": "x > −6" },
-        { "id": "d", "text": "x > 6" }
+        { "id": "d", "text": "x > 6", "misconceptionTag": "math.num.ordre-inverse-a-tort" }
       ],
       "correctOption": "b",
       "explanation": "3x − 7 < x + 5 → 3x − x < 5 + 7 → 2x < 12 → نقسم على 2 (موجب) → x < 6. لا قلب للإشارة لأنّ المعامل موجب.",
@@ -46,10 +58,10 @@
       "competencies": ["math.alg.inequations"]
     },
     {
-      "prompt": "ما حلّ المتراجحة: 4 − 3x ≥ 19 ؟",
+      "prompt": "ما حلّ المتراجحة التالية؟\n4 − 3x ≥ 19",
       "options": [
         { "id": "a", "text": "x ≤ −5" },
-        { "id": "b", "text": "x ≥ −5" },
+        { "id": "b", "text": "x ≥ −5", "misconceptionTag": "math.alg.inequation-sens-non-inverse" },
         { "id": "c", "text": "x ≤ 5" },
         { "id": "d", "text": "x ≥ 5" }
       ],
@@ -63,7 +75,7 @@
       "options": [
         { "id": "a", "text": "8" },
         { "id": "b", "text": "15" },
-        { "id": "c", "text": "16" },
+        { "id": "c", "text": "16", "misconceptionTag": "math.alg.coefficient-non-divise" },
         { "id": "d", "text": "30" }
       ],
       "correctOption": "a",
@@ -74,8 +86,16 @@
     {
       "prompt": "ما مجموعة الأعداد الصحيحة x التي تحقّق في آنٍ واحد: x > −2 و2x ≤ 6 ؟",
       "options": [
-        { "id": "a", "text": "{ −2 ; −1 ; 0 ; 1 ; 2 ; 3 }" },
-        { "id": "b", "text": "{ −1 ; 0 ; 1 ; 2 }" },
+        {
+          "id": "a",
+          "text": "{ −2 ; −1 ; 0 ; 1 ; 2 ; 3 }",
+          "misconceptionTag": "math.num.intervalle-borne-mal-incluse"
+        },
+        {
+          "id": "b",
+          "text": "{ −1 ; 0 ; 1 ; 2 }",
+          "misconceptionTag": "math.num.intervalle-borne-mal-incluse"
+        },
         { "id": "c", "text": "{ −1 ; 0 ; 1 ; 2 ; 3 }" },
         { "id": "d", "text": "{ 0 ; 1 ; 2 ; 3 }" }
       ],

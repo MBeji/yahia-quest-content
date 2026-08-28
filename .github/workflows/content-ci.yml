@@ -21,9 +21,19 @@ on:
   pull_request:
   push:
     branches: [main]
+  # Indispensable à `auto-pr.yml`, pas un confort : une PR ouverte par le
+  # GITHUB_TOKEN n'émet PAS d'événement `pull_request` (garde anti-boucle de
+  # GitHub), donc ce workflow ne démarrerait jamais sur elle. `automerge.yml`
+  # refusant — à raison — de merger un SHA sans aucun check run, la PR
+  # dormirait indéfiniment. auto-pr.yml dispatche donc ce workflow lui-même.
+  workflow_dispatch:
 
 permissions:
   contents: read
+  # Réveiller `automerge.yml` en fin de course — voir la dernière étape. Le bloc
+  # `permissions:` REMPLACE le défaut du dépôt, il ne s'y ajoute pas : toute
+  # portée non listée tombe à `none`, pas à `read`.
+  actions: write
 
 concurrency:
   group: content-ci-${{ github.ref }}
@@ -85,3 +95,36 @@ jobs:
       - name: programme:check
         working-directory: engine
         run: npm run programme:check
+
+      # Réveiller automerge — UNIQUEMENT quand ce run vient d'une dispatch.
+      #
+      # Le trou, constaté sur la PR #231 : GitHub n'émet PAS d'événement
+      # `workflow_run` pour un run déclenché par le `GITHUB_TOKEN` (garde
+      # anti-récursion). Or c'est exactement le chemin d'une PR ouverte par
+      # `auto-pr.yml` : il dispatche ce workflow, ce workflow passe au vert…
+      # et `automerge.yml`, qui n'écoute que `workflow_run`, ne se réveille
+      # jamais. #231 est restée ouverte avec ses trois check runs VERTS ; un
+      # simple `gh workflow run automerge.yml` l'a mergée en quinze secondes.
+      # Les runs `pull_request` de la même PR étaient en `action_required` — la
+      # garde « Approve and run » que GitHub pose sur les PR du bot — donc ce
+      # chemin-là ne réveillait rien non plus.
+      #
+      # La condition `workflow_dispatch` est ce qui rend ce filet quasi gratuit.
+      # Sans elle, CHAQUE run de ce workflow (pushes sur main, événements de PR)
+      # ajouterait un run d'automerge — or sur un dépôt PRIVÉ chaque job est
+      # facturé à la minute entamée, et le plan gratuit n'en donne que 2 000 par
+      # mois. Sur le chemin normal `pull_request`, `workflow_run` fonctionne
+      # déjà : il n'y a rien à réveiller. On ne paie donc que le cas qui casse,
+      # soit une poussée de nouvelle branche.
+      - name: Réveiller automerge (chemin dispatché seulement)
+        if: always() && github.event_name == 'workflow_dispatch'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -uo pipefail
+          if gh workflow run automerge.yml --ref main; then
+            echo "automerge.yml réveillé."
+          else
+            echo "::warning title=Réveil impossible::automerge.yml n'a pas pu être dispatché ; la PR restera ouverte jusqu'au filet horaire d'automerge."
+          fi
