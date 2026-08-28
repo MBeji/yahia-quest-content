@@ -1,42 +1,674 @@
-# Rapport d'audit — **english-bac**, tranche 4 — chapitre 11 (PARTIEL)
+# Rapport d'audit — **english-bac**, tranche 4 (chapitres 10 et 11)
 
-> **Généré** : 2026-08-17 · **Empreinte** : `wip/content-english-bac-ch10-12@c2847886`.
-> **Périmètre** : `11-the-winters-tale` seul — 23 questions.
-> ⚠️ **La tranche 4 n'est auditée QU'À UN TIERS.** Les chapitres `10-put-a-little-drama-in-your-travel`
-> et `12-school-related-words` **n'ont pas d'audit** : trois auditeurs ont été tués par une panne
-> réseau avant d'écrire un seul constat. **Ne pas merger la tranche sur la foi de ce seul rapport.**
-> **Méthode** : auditeur en contexte vierge, n'ayant écrit aucune ligne de ce qu'il relit, avec les
-> onze autres chapitres en croisement. Re-résolution **à l'aveugle** de chaque clé.
+> **Généré** : 2026-08-17 · **Empreinte** : `wip/content-english-bac-ch10-12@5741a1ba`.
+> **Périmètre audité** : `10-put-a-little-drama-in-your-travel` et `11-the-winters-tale` — 46 questions.
+> ⚠️ **`12-school-related-words` N'A PAS D'AUDIT.** Ne pas merger la tranche sans le sien.
+> **Méthode** : un auditeur par chapitre, contexte vierge, n'ayant écrit aucune ligne de ce qu'il
+> relit, avec les onze autres chapitres en croisement. Re-résolution **à l'aveugle** de chaque clé.
 > **Lecture seule — aucune correction appliquée.** Ce document est la **worklist**.
 
 ## Synthèse
 
-**23/23 clés re-résolues, 0 divergence, 0 seconde réponse défendable.** La justesse est intacte ;
-le défaut est **l'origine des items** — 2 BLOCKER et 6 MAJOR.
+| | ch.10 | ch.11 |
+| --- | --- | --- |
+| clés re-résolues à l'aveugle | 23 | 23 |
+| **clés fausses** | **0** | **0** |
+| BLOCKER | 0 | **2** |
+| MAJOR | 9 | 6 |
 
-Les deux blockers sont d'un type que le scan lexical ne suffit pas à qualifier : l'item **est**
-l'exemple du cours. Dans un cas, la clé et son distracteur sont mot pour mot les colonnes *Right*
-et *Wrong* d'une même ligne du mur des pièges.
+## ⚠️ Ce que ces deux audits apprennent sur l'INSTRUMENT
 
-**Quatre corrections côté cours font tomber 11 des 27 fragments d'un coup** — les quatre plus lourds.
+`fragments.py` (fragments communs ≥ 20 caractères entre questions et cours) **sous-détecte le
+recyclage de plus de la moitié**. Sur le chapitre 10, l'auditeur a confronté chaque item aux
+exemples du cours un par un : **10 items sur 23 rejouent un exemple**, quand le scan n'en voit
+que **4**. C'est précisément pourquoi l'auteur a pu croire sa passe finie.
 
-### Points tranchés
+**Conséquence pour les tranches suivantes** : un compte de fragments bas ne vaut pas quitus. Il
+attrape la copie littérale, pas la reprise avec un mot changé. Deux signatures lui échappent
+entièrement, et ce sont les pires :
 
-- **Droits : conforme.** Aucune phrase de l'adaptation Lamb nulle part. Deux réserves neuves : 144
-  caractères de la liste des genres (act. 3 p.77) verbatim dans `cours.md` **et** `resume.md`, et une
-  glose du corrigé du guide recopiée telle quelle.
-- **« such thick » est un distracteur VOLONTAIRE**, pas une faute recopiée — `such` + adjectif nu est
-  une erreur d'apprenant classique. Le défaut n'est pas le distracteur : c'est que le cours imprime
-  la paire complète.
-- **Noms propres du récit : zéro occurrence** dans les quatre fichiers de questions. Le piège
-  (`Pauline`/`Paulina`, `Proxilenes`) a été évité.
-- ⚠️ **Correction d'un chiffre de mon brief** : la matière compte **12** `ordering`, pas 7, dont
-  quatre déjà « remets les événements dans l'ordre ». L'absence d'`ordering` ici est donc un bon choix.
-- **Les trois retouches de forme de l'orchestrateur sont valides** (chapitre passé de 19 % à 10 % de
-  clé la plus longue), avec deux réserves : l'une ajoute du lexique hors leçon, l'autre approfondit
-  une invention **préexistante** qui rend l'explication inexacte sur l'option qu'elle décrit.
+1. **la clé ET son distracteur sont les colonnes ✓/✗ d'une même ligne du cours** — l'élève qui a
+   relu le mur des pièges reconnaît la paire sans lire la grammaire. Trouvée **3 fois** au ch.10,
+   **1 fois** au ch.11 ;
+2. **l'item EST l'exemple du cours, avec un détail glissé** (un lieu, une date, un nom changé).
+   Trouvée **2 fois** au ch.10, **1 fois** au ch.11 — dont une sur la question-porte d'un chapitre.
+
+Seule une lecture item par item contre le cours les voit. Le scan reste utile comme filet bas,
+jamais comme critère.
+
+## Deux chiffres de brief corrigés par les auditeurs
+
+La matière compte **12 `ordering` et 13 `matching`** — mes briefs annonçaient 7 puis 8. Un auteur
+à qui l'on dit « sept existent déjà » n'a pas la même prudence que celui à qui l'on dit « douze ».
+
+## Ce qui est acquitté
+
+- **Droits (ch.11, le plus exposé)** : aucune phrase de l'adaptation Lamb nulle part.
+- **Piège du guide (`theatre`/`theater`)** : évité au ch.10, la bonne paire est enseignée.
+- **Noms propres du récit (ch.11)** : zéro occurrence dans les fichiers de questions.
+- **Les quatre retouches de forme de l'orchestrateur** : validées par les deux auditeurs.
+- **Aucun point de grammaire inventé** au ch.10, dont la colonne *Functions* est vide au syllabus.
 
 ---
+
+# AUDIT — chapitre 10
+
+# AUDIT — `content/english-bac/10-put-a-little-drama-in-your-travel/`
+
+Auditeur : agent indépendant, n'a écrit aucune ligne du chapitre.
+Périmètre : 23 questions (quiz 5 · 01-pratique 6 · 02-boss 6 · 03-revision 6).
+Branche : `feat/content-english-bac-ch10-12` (worktree `wip/content-english-bac-ch10-12`).
+Statut : **TERMINÉ** — 23/23 questions re-résolues à l'aveugle. 0 BLOCKER · 9 MAJOR · 12 MINOR.
+Aucun fichier du corpus n'a été modifié : toutes les corrections ci-dessous sont prêtes à coller.
+
+---
+
+## 0. Mesures muettes — RE-MESURÉES par moi, pas reprises de l'en-tête
+
+```
+23 questions · 19 mcq + 2 multi + 1 matching + 1 ordering
+
+1a. clé strictement la plus LONGUE : 0/19  (0 %)   — cible 0 %          OK
+1b. clé strictement la plus COURTE : 4/19 (21 %)   — cible ≤ 25 %       OK global
+    MAIS localement : 02-boss = 3 clés courtes sur 5 mcq (60 %)         -> MINOR-6
+2.  distribution des clés : a=4 (21 %) b=5 (26 %) c=6 (32 %) d=4 (21 %)  OK
+4.  fragments ≥ 20 car. partagés avec cours.md/resume.md : 23            cible 0 -> MAJOR-1..4
+```
+
+Les quatre clés « la plus courte » : `quiz#Q1`, `02-boss#Q3`, `02-boss#Q4`, `02-boss#Q5`.
+Les chiffres de l'en-tête pré-existante sont exacts, je les ai recalculés.
+
+**La passe finale annoncée par l'auteur n'a PAS été faite sur le point 6 (recyclage du cours) :
+les 23 fragments subsistent, et quatre d'entre eux ne sont pas des définitions partagées mais
+des EXEMPLES du cours rejoués tels quels.**
+
+---
+
+## 1. Ce que je retiens en priorité
+
+Aucune clé fausse (19 QCM + 2 multi + 1 matching + 1 ordering re-résolus à l'aveugle).
+**Le défaut central n'est pas la justesse : c'est que quatre items ne testent plus une
+compétence mais la mémoire d'une lecture** — et deux d'entre eux sont exactement la forme que
+la consigne demandait de chercher : la clé ET son distracteur sont les colonnes ✓/✗ d'une même
+ligne du cours.
+
+S'y ajoutent une fuite inter-items dans le boss (l'énoncé de Q3 contient la réponse de Q4) et
+une clé d'`ordering` qui n'est pas forcée.
+
+---
+
+## 2. Constats
+
+### MAJOR-1 — `03-revision` Q5 : la clé ET son distracteur sont le couple ✓/✗ du cours
+
+**Le pire item du chapitre.** Trois recyclages empilés dans un seul item.
+
+`cours.md`, § « The first line » :
+
+> A biography does not open on a date. Its first line says **who the person was and why a
+> stranger should read on**
+> ✗ *Habib Ferjani was born in 1931 in a village that had no theatre.*
+> ✓ *Habib Ferjani, born in 1931, took Tunisian theatre out of the capital.*
+
+L'item, `content/english-bac/10-put-a-little-drama-in-your-travel/exercices/03-revision.json` Q5 :
+
+- **l'énoncé recopie la règle sur 52 caractères** (« who the person was and why a stranger
+  should read on ») — l'élève n'a plus à se souvenir du critère, on le lui donne dans l'énoncé ;
+- **le distracteur `a`** = la ligne ✗ du cours, nom propre changé :
+  « Leïla Mansour was born in 1928, in a town that had no company at all. »
+  (moule : `Nom was born in ANNÉE, in a <lieu> that had no <X>.`)
+- **la clé `c`** = la ligne ✓ du cours, nom propre changé :
+  « Leïla Mansour, born in 1928, was the first woman to run a national company. »
+  (moule : `Nom, born in ANNÉE, <fait notable>.`)
+
+Un élève qui a lu le cours reconnaît les deux moules sans jamais raisonner. Correction :
+**réécrire le côté COURS** (règle 6 du brief : un exemple de cours se remplace sans coût, un
+item calibré non), et desserrer l'énoncé.
+
+**Correction 1** — `content/english-bac/10-put-a-little-drama-in-your-travel/cours.md`,
+§ « The first line », les deux lignes d'exemple :
+
+`ancien texte`
+```
+> ✗ *Habib Ferjani was born in 1931 in a village that had no theatre.* (an opening date, and no reason to continue)
+> ✓ *Habib Ferjani, born in 1931, took Tunisian theatre out of the capital.* (who he was, and why he matters)
+```
+`nouveau texte`
+```
+> ✗ *Habib Ferjani started school in Kairouan in 1938.* (an opening date, and no reason to continue)
+> ✓ *Habib Ferjani spent forty years teaching a town of farmers to act.* (who he was, and why he matters)
+```
+
+**Correction 2** — `.../exercices/03-revision.json` Q5, énoncé :
+
+`ancien texte`
+`A biography does not open on its first date: its first line says who the person was and why a stranger should read on. Which of these opening lines does that job?`
+
+`nouveau texte`
+`Four pupils have written the first line of the same biography. Only one of them opens it the way a first line should. Which one?`
+
+---
+
+### MAJOR-2 — `quiz` Q4 : l'item EST l'exemple du cours, avec un détail ajouté
+
+`cours.md`, § « Opening a dictionary properly », étape 2 :
+
+> In *The company is staging the play in a shed*, the word is what the company **does**, so
+> you read the verb half and ignore the five noun senses printed above it.
+
+`content/english-bac/10-put-a-little-drama-in-your-travel/quiz.json` Q4 :
+
+- énoncé : « The company is staging the play in a disused railway shed. » — la phrase du cours
+  **mot pour mot**, avec deux mots glissés devant `shed` (37 car. de recouvrement mesurés) ;
+- clé `d` : « the verb part, since staging is what the company does » — la justification du
+  cours mot pour mot (21 car. : « is what the company »).
+
+C'est la forme exacte que l'audit du chapitre 11 a trouvée deux fois : *l'item est l'exemple du
+cours avec un détail ajouté*. La clé est juste ; l'item ne teste plus le choix de la moitié
+d'entrée, il teste si on a lu le paragraphe. **Et c'est un item du QUIZ, donc de la porte du
+chapitre (≥ 80 % pour ouvrir) : la porte s'ouvre sur une reconnaissance, pas sur une lecture.**
+
+**Correction** (côté cours — l'item est bon, on ne le touche pas) — `cours.md` :
+
+`ancien texte`
+`In *The company is staging the play in a shed*, the word is what the company **does**, so you read the verb half and ignore the five noun senses printed above it.`
+
+`nouveau texte`
+`In *The festival stages nine plays a summer*, the word is what the festival **carries out**, so you read the verb half and ignore the five noun senses printed above it.`
+
+*(Le tableau « The trap wall » porte déjà la même règle sous une autre forme — « Reading sense 1
+of the noun for a verb » — la leçon ne perd rien.)*
+
+---
+
+### MAJOR-3 — `03-revision` Q3 : la phrase fautive du cours, un nom changé — et le même véhicule deux fois dans le chapitre
+
+`cours.md`, § « What else an entry gives you » :
+
+> When an entry prints **head for / towards sth**, it is telling you that this verb cannot
+> touch its destination directly. ✗ *They were heading the station.* → ✓ *They were heading
+> **for** the station.*
+
+…et le même couple une seconde fois dans « The trap wall ».
+
+`.../exercices/03-revision.json` Q3 reprend :
+
+- l'entrée de dictionnaire **verbatim** : `"head for / towards sth — to move in the direction
+  of"` (28 car. partagés) ;
+- la phrase fautive du cours avec `station` → `ruins` : « The crowd was heading the ruins. »
+
+L'élève qui a lu le cours a la réponse écrite en gras devant lui (`for`).
+
+**Aggravant :** `01-pratique` Q3 utilise « the audience was heading for the ruins » — même
+verbe, même nom `ruins`, même entrée de dictionnaire. **Deux des 23 items tournent autour de
+`head for` + `ruins`**, tous deux tirés du même paragraphe du cours.
+
+**Correction A** — désolidariser les deux items : `.../exercices/01-pratique.json` Q3, énoncé :
+
+`ancien texte`
+`Reading the programme you meet this line: "By eight o'clock the audience was heading for the ruins." You do not know the expression "heading for". Which word do you go looking for in your dictionary?`
+
+`nouveau texte`
+`Reading the programme you meet this line: "The two troupes rehearsed in the same hall for a fortnight." You do not know the verb "rehearsed". Which word do you go looking for in your dictionary?`
+
+et les options (la clé reste `c`) :
+
+`ancien texte` `a: "heading"` · `b: "was heading"` · `c: "head"` · `d: "for"`
+`nouveau texte` `a: "rehearsed"` · `b: "rehearsed in"` · `c: "rehearse"` · `d: "in"`
+
+*(L'explication demande alors deux substitutions : `head` → `rehearse`, et la dernière phrase
+« qui vous dira la direction en général » → « qui vous dira le lieu en général ».)*
+
+**Correction B** — `cours.md`, changer la phrase fautive :
+
+`ancien texte`
+`✗ *They were heading the station.* → ✓ *They were heading **for** the station.*`
+
+`nouveau texte`
+`✗ *The buses head the festival gate.* → ✓ *The buses head **for** the festival gate.*`
+
+…et la ligne homologue du tableau « The trap wall » :
+
+`ancien texte`
+`| "They were heading the station." | *They were heading **for** the station.* | The entry's little example carries the preposition |`
+
+`nouveau texte`
+`| "The buses head the festival gate." | *The buses head **for** the festival gate.* | The entry's little example carries the preposition |`
+
+---
+
+### MAJOR-4 — `03-revision` Q2 : clé et distracteur `b` = les deux colonnes d'une même ligne du « trap wall »
+
+Dernière ligne du tableau « The trap wall » de `cours.md` :
+
+| Wrong | Right |
+| --- | --- |
+| "…, **but** two winters later she reopened it." | *…, **and** two winters later she reopened it.* |
+
+`.../exercices/03-revision.json` Q2 :
+
+- distracteur `b` : « In 1958 he took over the family printing shop, **but** three years later
+  he wrote his first play. »
+- clé `c` : « In 1958 he took over the family printing shop, **and** three years later he wrote
+  his first play. »
+
+Le moule est identique au caractère près — `X, but/and <N unités de temps> later <sujet> <verbe>` —
+seuls le fait et l'unité de temps changent. **Deuxième occurrence dans le chapitre du motif
+« clé + distracteur = les deux colonnes d'une même ligne du cours ».** Le scan lexical ne le voit
+pas (aucun fragment de 20 caractères), c'est le gabarit qui fuit.
+
+**Correction** — `cours.md`, dernière ligne du « trap wall » :
+
+`ancien texte`
+`| "…, **but** two winters later she reopened it." | *…, **and** two winters later she reopened it.* | **but** promises a contradiction that has to be really there |`
+
+`nouveau texte`
+`| "He learned the trade from his father, **but** he set up on his own." | *He learned the trade from his father, **and** he set up on his own.* | **but** promises a contradiction that has to be really there |`
+
+…et la puce jumelle du § 4 :
+
+`ancien texte`
+`- **but** where nothing is contradicted: *She bought the old cinema, **but** two winters later she reopened it* — nothing suggests that a buyer is not expected to reopen the place.`
+
+`nouveau texte`
+`- **but** where nothing is contradicted: *He learned the trade from his father, **but** he set up on his own* — nothing suggests that a son taught by his father is not expected to open his own workshop.`
+
+⚠️ Ne pas toucher au tableau des linkers du § 4, qui utilise « She bought the old cinema, **and**
+two winters later she reopened it. » comme exemple **positif isolé** de `and` : une fois la ligne
+✗ supprimée, il ne fait plus paire avec rien.
+
+---
+
+### MAJOR-5 — `02-boss` Q3 et Q4 : l'énoncé de Q3 contient la réponse de Q4
+
+Les deux items consécutifs du boss travaillent sur **les mêmes données inventées** (Sundial
+Players · *A Winter Night* · the old fort · Kef · 2 to 16 August · 8 dinars), et l'un donne la
+réponse de l'autre.
+
+`02-boss.json` **Q3**, énoncé :
+
+> A festival page prints one line for each show: **"KEF — the Sundial Players in A Winter Night,
+> directed by Nadia Ferchichi — the old fort — 2 to 16 August — tickets 8 dinars"**
+
+`02-boss.json` **Q4**, question : *« Which of these lines has been lifted from the programme
+itself? »* — clé `c` : **« A Winter Night — the old fort, Kef — 2 to 16 August — 8 dinars »**
+
+Q3 a déjà **affirmé** que la ligne à tirets est ce qu'« une page de festival imprime pour chaque
+spectacle ». Q4 ne demande donc plus de reconnaître un enregistrement contre de la prose : il
+demande de retrouver la ligne qu'on vient de lire, avec les mêmes quatre données. Le boss compte
+6 items ; il en mesure 5.
+
+Aggravant : la clé `c` est aussi **la plus courte des quatre options** (62 car. contre 71/66/63),
+et la seule sans majuscule initiale de phrase — deux indices de forme qui pointent dans le même
+sens.
+
+**Correction** — `.../exercices/02-boss.json` Q4 : changer entièrement les données, et allonger
+la clé pour la sortir de la position « la plus courte ».
+
+`ancien texte` (option `c`)
+`A Winter Night — the old fort, Kef — 2 to 16 August — 8 dinars`
+
+`nouveau texte` (option `c`)
+`Ashes of a Crown — the Roman cisterns, Le Kram — 9 to 24 May — 12 dinars, students 6`
+
+et, pour rester cohérent, les trois autres options :
+
+`ancien texte`
+`a: The play will be given at the old fort every night from 2 to 16 August.`
+`b: The Sundial Players open their season at the old fort on 2 August.`
+`d: Tickets for the performances at the old fort cost eight dinars.`
+
+`nouveau texte`
+`a: The play will be given in the Roman cisterns every night from 9 to 24 May.`
+`b: The Rope Dancers open their season in the Roman cisterns on 9 May.`
+`d: A student pays six dinars for any of the performances at the cisterns.`
+
+*(L'explication ne cite aucune donnée nommément : elle reste valable telle quelle.)*
+
+---
+
+### MAJOR-6 — `03-revision` Q1 (`ordering`) : la clé n'est pas forcée
+
+Clé : `b` (né) → `e` (apprend à dessiner de son père) → `d` (peintre de décors dans un atelier)
+→ `a` (quitte l'atelier pour enseigner à l'académie) → `c` (écrit le manuel que l'académie
+utilise encore).
+
+Trois des quatre contraintes sont réellement forcées par le sens : la naissance ouvre ; on
+apprend de son père avant d'être payé ; on ne quitte pas un atelier qu'on n'a pas rejoint.
+**La quatrième ne l'est pas.**
+
+`c` = « wrote the handbook **the academy still uses** ». La relative décrit un **état présent**
+(« l'académie s'en sert encore »), pas le moment de l'écriture. Rien n'interdit qu'il ait écrit
+le manuel du temps de l'atelier et que l'académie l'ait adopté — voire qu'elle l'ait recruté pour
+cela. L'ordre `b · e · d · c · a` est donc défendable, et l'explication de l'item le concède
+elle-même (« The last one is the subtlest »).
+
+Un `ordering` est noté **tout ou rien** : une contrainte molle sur cinq éléments suffit à
+sanctionner un raisonnement juste.
+
+**Correction** — `.../exercices/03-revision.json` Q1, option `c`, ancrer explicitement la
+dépendance :
+
+`ancien texte`
+`wrote the handbook the academy still uses`
+
+`nouveau texte`
+`wrote the handbook for the students of his own class`
+
+*(La dépendance devient stricte : on n'a pas d'élèves avant d'enseigner. L'explication doit alors
+lire : « The last one is the subtlest: the handbook was written for his own students, so it
+belongs to the years after he began to teach, not before. »)*
+
+---
+
+### MAJOR-7 — `quiz` Q3 : le distracteur `a` porte un « but » concessif défendable
+
+Question : *« In which of these pairs of notes does [but] really have that work to do? »*
+Clé `b` : « trained for four years as a lawyer · never argued a single case » — contradiction
+franche, la clé est juste.
+
+Mais `a` : « left school at fifteen · found work in a printing shop the same year ».
+L'anglais écrit **couramment** cette concession : *He left school at fifteen, **but** found work
+in a printing shop the same year* — quitter l'école à quinze ans fait attendre des difficultés,
+en trouver du travail la même année les dément. Un élève qui raisonne ainsi raisonne **juste** et
+perd le point. L'explication de l'item l'écarte d'autorité (« Leaving school and finding work
+belong together »), ce qui n'est pas évident.
+
+Ce n'est pas un BLOCKER — `b` reste nettement la plus forte — mais l'item demande « really »,
+donc il exige que les trois autres n'aient **aucune** lecture concessive.
+
+**Correction** — `.../quiz.json` Q3, option `a` :
+
+`ancien texte`
+`left school at fifteen · found work in a printing shop the same year`
+
+`nouveau texte`
+`toured with the company for ten years · played in every town of the south`
+
+*(Pure addition, aucune attente à démentir. Longueur 72 car. contre 68 : la clé `b` (63) reste
+non-extrême. L'explication doit lire : « Touring for ten years and playing everywhere in the
+south say the same thing twice over, as do being born in a town and growing up there, and both
+call for a simple addition. »)*
+
+---
+
+### MAJOR-8 — `02-boss` Q6 (`multi`) : le distracteur `a` ajoute un lieu que les notes ne donnent pas
+
+Notes : « **1946 born in Sousse** · **1964 left for Tunis to study law** · 1967 … »
+Clé : cocher `b`, `c`, `e` — juste sur les trois.
+
+Mais l'option `a` — *« In 1964 he **left Sousse** for Tunis, where he began to study law. »* — 
+affirme qu'il **était à Sousse en 1964**. Les notes disent seulement qu'il y est né dix-huit ans
+plus tôt et qu'il est parti pour Tunis. C'est une hypothèse de continuité, pas un fait noté, et
+la règle 3 du cours (« add nothing the notes do not carry ») a été enseignée avec des exemples de
+pure **arithmétique**, jamais de continuité géographique. Un élève rigoureux coche `a` — et,
+dans un `multi` noté tout ou rien, perd l'item entier pour avoir appliqué la règle plus
+strictement que l'auteur.
+
+**Correction** — `.../exercices/02-boss.json` Q6, option `a` :
+
+`ancien texte`
+`In 1964 he left Sousse for Tunis, where he began to study law.`
+
+`nouveau texte`
+`In 1964 he left for Tunis, where he began to study law.`
+
+**Durcissement recommandé dans le même item** — l'option `d` (*« after nearly thirty years at
+the head of his own company »*) infère une **continuité de direction** entre 1970 et 1998 que les
+notes ne portent pas davantage (fonder ≠ diriger jusqu'au bout). L'explication la défend comme
+« du calcul » ; ce n'en est qu'à moitié. La rendre purement arithmétique lève le doute :
+
+`ancien texte`
+`He retired in 1998, after nearly thirty years at the head of his own company.`
+
+`nouveau texte`
+`He retired in 1998, twenty-eight years after he had founded the company.`
+
+---
+
+### MAJOR-9 — le chiffre réel du recyclage : **10 items sur 23**, et le boss est le plus atteint
+
+Le scan lexical trouve 23 fragments, mais la plupart sont des **définitions** (légitimes : ce
+chapitre travaille le dictionnaire). Le vrai défaut est **au gabarit**, invisible au scan.
+J'ai confronté chaque item aux exemples de `cours.md` un par un. Inventaire complet :
+
+| Item | Exemple du cours rejoué | Ce qui change | Vu par le scan ? |
+| --- | --- | --- | --- |
+| `quiz` Q4 | l.62 « The company is staging the play in **a shed** » | +« disused railway » | oui (37 c.) — **MAJOR-2** |
+| `01-pratique` Q2 | l.158 trap wall « The troupe was restored last winter » → venue | prédicat | non |
+| `01-pratique` Q3 | l.71 « head **for** » + l.161 « heading the station » | station → ruins | non |
+| `01-pratique` Q4 | l.94+164 « Occupations: schoolmaster; printer; dyer » → « He worked as a X, a Y and a Z » | les 3 métiers | non |
+| `02-boss` Q3 | l.25 + l.157 trap wall « Venue: *Mahdia* » → « the vaulted cellar, Mahdia » | Mahdia → Kef, cellier → vieux fort | non |
+| `02-boss` Q4 | l.49 le contraste article / entrée : « The Rope Dancers · vaulted cellar, Mahdia · 4-19 June · 6 D. » | mêmes 4 champs, même ordre, données changées | non |
+| `02-boss` Q5 | l.47 « *By Roger Petterson*, *Associated Press*, *Oct. 11, 2006* » | **seul le nom change** : agence et date sont verbatim | oui (34 c. sur l'explication) |
+| `02-boss` Q6 | l.110-112, les **trois** lignes du tableau ✓/✗ | voir ci-dessous | non |
+| `03-revision` Q2 | l.169 trap wall, ligne `but`/`and` | véhicule | non — **MAJOR-4** |
+| `03-revision` Q3 | l.71 + l.161, la phrase fautive | station → ruins | oui (28 c.) — **MAJOR-3** |
+| `03-revision` Q5 | l.140-141, le couple ✗/✓ du § « The first line » | nom propre | oui (52 c.) — **MAJOR-1** |
+
+**11 lignes, 10 items distincts** (`01-pratique` Q3 et `03-revision` Q3 partagent le même
+exemple). Soit **43 % du chapitre**, dans la bande des tranches précédentes (11, 12, 7 et 7
+items sur 23). **Le scan de 20 caractères n'en voit que 4 sur 10** : c'est pourquoi l'auteur a
+pu croire sa passe finie.
+
+**Le boss ⭐⭐⭐ est l'exercice le plus atteint : 4 items sur 6** (Q3, Q4, Q5, Q6) rejouent un
+exemple du cours. Seuls Q1 (prose → notes, direction inverse de celle du cours : bon item, tâche
+neuve) et Q2 (idiome *set the stage for*, absent du cours : bon item, la compétence est testée sur
+un matériau neuf) sont propres. **C'est l'exercice le plus dur qui note le plus la mémoire d'une
+lecture.**
+
+#### Le cas `02-boss` Q6 — le tableau ✓/✗ du cours restitué en entier
+
+`cours.md` l.110-112, tableau « The notes say / You write / Verdict » :
+
+| Le cours | L'item, option par option |
+| --- | --- |
+| ✓ *« He handed it on in 1981, **after thirty-two years** behind the desk. »* | `d` *« He retired in 1998, **after nearly thirty years** at the head of his own company. »* |
+| ✗ *« He opened the lending library **because** the town had none. »* | `b` *« He gave up law in 1967 **because** his family had lost its money. »* |
+| ✗ *« He opened the **finest** lending library on the coast. »* | `c` *« … the Carthage Players, the **finest** troupe in the country. »* |
+
+Les trois lignes du cours, dans l'ordre, avec le même adjectif `finest` recopié. C'est la
+troisième occurrence du motif « clé et distracteurs = les colonnes d'un tableau du cours », et
+elle porte sur l'item le plus lourd du chapitre (`multi`, boss ⭐⭐⭐).
+
+**Correction** — côté cours, changer les trois lignes du tableau de la règle 3 (`cours.md`) :
+
+`ancien texte`
+```
+| *1949 opened the lending library · 1981 handed it on* | *He handed it on in 1981, after thirty-two years behind the desk.* | ✓ worked out — the two years say so |
+| *1949 opened the lending library* | *He opened the lending library because the town had none.* | ✗ invented — no note gives a reason |
+| *1949 opened the lending library* | *He opened the finest lending library on the coast.* | ✗ invented — a judgement is a fact too |
+```
+`nouveau texte`
+```
+| *1949 opened the lending library · 1981 handed it on* | *He kept the library for thirty-two years.* | ✓ worked out — the two years say so |
+| *1949 opened the lending library* | *He opened the lending library to please his mother.* | ✗ invented — no note gives a purpose |
+| *1949 opened the lending library* | *He opened a library the whole coast came to envy.* | ✗ invented — a judgement is a fact too |
+```
+
+*(`finest` disparaît, la structure `after N years <gérondif>` disparaît, et `because` cesse d'être
+le mot-signal partagé avec l'item.)*
+
+**Corrections des trois autres items du boss** — même principe, côté cours cette fois pour Q3/Q4/Q5,
+puisque ce sont les items qui sont calibrés :
+
+`cours.md` l.25 :
+`ancien texte` `*Mahdia* is where the bus takes you; *the vaulted cellar under the fish market* is the venue.`
+`nouveau texte` `*Tozeur* is where the bus takes you; *the courtyard of the old caravanserai* is the venue.`
+
+`cours.md` l.49 :
+`ancien texte` `*The Rope Dancers · vaulted cellar, Mahdia · 4-19 June · 6 D.*`
+`nouveau texte` `*The Rope Dancers · caravanserai, Tozeur · 4-19 June · 6 D.*`
+
+`cours.md` l.47 : remplacer l'agence et la date, qui sont les deux champs que `02-boss` Q5 garde
+verbatim :
+`ancien texte` `where it came from (**the agency**, *Associated Press*), and when it was written (**the date**, *Oct. 11, 2006*)`
+`nouveau texte` `where it came from (**the agency**, *Reuters*), and when it was written (**the date**, *March 3, 2011*)`
+
+`cours.md` l.157-158 et l.164 (tableau « The trap wall »), aligner sur les mêmes substitutions et
+changer le véhicule de la ligne « troupe » :
+`ancien texte` `| "The troupe was restored last winter." | *The **venue** was restored last winter.* |`
+`nouveau texte` `| "The troupe seats nine hundred people." | *The **venue** seats nine hundred people.* |`
+
+⚠️ Cette dernière substitution **entre en collision** avec `01-pratique` Q2 clé `a` (« The troupe
+was built in 1927 and **holds nine hundred** »). Prendre plutôt :
+`nouveau texte` `| "The troupe has stood there since 1890." | *The **venue** has stood there since 1890.* |`
+
+---
+
+## 3. Constats MINOR
+
+**MINOR-1 — `venue` est enseigné trois fois dans le corpus, et déjà testé au chapitre 07.**
+`05-art-shows/cours.md` l.34 (« **venue** — the place where an event is held »),
+`07-walking-tour/cours.md` l.64 (« **venue** | a place where a show, a match or a concert is
+held ») **et** `07-walking-tour/exercices/01-pratique.json` Q3 option `b` (« The old harbour is a
+busy venue: three concerts are held there each week », avec l'explication « A venue is a place
+where shows are held »). Le chapitre 10 le redéfinit une troisième fois et **cinq de ses 23 items
+tournent autour de ce mot** (`quiz` Q1, `01-pratique` Q1 l2, `01-pratique` Q2, `02-boss` Q3,
+`03-revision` Q4). Le mot est au programme de la leçon 8, donc il a sa place ; mais cinq items sur
+un mot déjà acquis deux chapitres plus tôt, c'est du poids perdu. Suggestion : ramener à trois
+items (supprimer la redite entre `quiz` Q1 et `03-revision` Q4, qui posent la même question —
+« que nomme la colonne / le crédit *venue* ? » — sous deux habillages).
+
+**MINOR-2 — `cours.md` refait le travail du chapitre 02 sur GB/US, sur le couple exact que le
+02 utilise comme item.** `cours.md` § « What else an entry gives you » : « British **theatre**,
+American **theater** ». Or `02-first-impressions/cours.md` l.133 donne déjà la règle `-re → -er`
+avec **theatre/theater** en tête d'exemple, l.237 la reprend, et
+`02-first-impressions/exercices/01-pratique.json` en fait un item complet (« Our neighbour walked
+to the theatre. » → « Our neighbor walked to the theater. »). Suggestion : garder l'information
+(elle est requise par l'activité 6 de la leçon) mais la rattacher explicitement, p. ex.
+`ancien texte` `- **The other spelling.** A dictionary flags the form used on the far side of the Atlantic: British **theatre**, American **theater**.`
+`nouveau texte` `- **The other spelling.** A dictionary flags the form used on the far side of the Atlantic — the same **-re → -er** switch you met in *First Impressions*, here met inside an entry rather than in a list: British **centre**, American **center**.`
+
+✅ **Le piège de la source est évité.** Le guide écrit « theatre (US spelling of GB theatre » — 
+graphie identique des deux côtés, parenthèse non fermée. `cours.md` et `resume.md` donnent tous
+deux la bonne paire (*theatre* GB / *theater* US), **aucune clé du chapitre ne recopie l'erreur**,
+et `chapter.json` la documente explicitement dans `sources[]`. Vérifié sur les 23 items.
+
+**MINOR-3 — `03-revision` Q1 teste une compétence que le cours n'enseigne pas.** L'item demande
+de reconstruire une chronologie **sans aucune date**, par dépendance logique. Le cours ne parle
+d'ordre que sous la règle 2 (« the years stay in line ») et suppose partout que les notes portent
+des années (« Notes normally arrive in the right sequence »). La méthode sans dates n'apparaît que
+dans **l'explication de l'item** (« when they are not, you rebuild it before you write a word ») —
+c'est-à-dire après coup, pour celui qui a déjà répondu. Suggestion : ajouter deux phrases à la
+règle 2 de `cours.md` :
+`ancien texte` `**Rule 2 — the years stay in line.** Notes normally arrive in the right sequence and your paragraph has to keep it.`
+`nouveau texte` `**Rule 2 — the years stay in line.** Notes normally arrive in the right sequence and your paragraph has to keep it. When they carry no years at all, the notes still tell you their own order: a birth opens, what is learned comes before what is paid for, and a man cannot leave a place he has not yet joined. Read them for those locks before you write a word.`
+
+**MINOR-4 — l'étape 3 du dictionnaire n'est testée par aucun item.** Le cours donne quatre
+étapes ; les items testent l'étape 1 (`01-pratique` Q3, forme de base), l'étape 2 (`quiz` Q4,
+moitié nom / moitié verbe) et l'étape 4 (`02-boss` Q2, idiomes classés en fin d'entrée).
+**L'étape 3 — « read down the numbered senses inside your half » — n'est jamais mise à
+l'épreuve**, alors que c'est celle que l'activité 7 du manuel demande littéralement (trouver
+*quel sens* est employé au paragraphe 3). C'est le trou de couverture le plus net du chapitre.
+
+**MINOR-5 — les deux `multi` du chapitre ont le même gabarit exact.** `01-pratique` Q6 et
+`02-boss` Q6 : cinq options, trois clés, « Tick EVERY… », toutes deux sur des notes de biographie.
+Le brief demande de varier le **type de tâche**, pas seulement le décor. Ici, ni le type ni le
+décor ne varient : seul le critère de tri change (« est-ce encore une note ? » / « est-ce
+inventé ? »).
+
+**MINOR-6 — dans le boss, la clé est la plus courte 3 fois sur 5 QCM (60 %).** `02-boss` Q3
+(51 c. contre 54/56/55), Q4 (62 contre 71/66/63), Q5 (51 contre 55/57/56). Le chapitre est bon
+globalement (21 %, cible ≤ 25 %) mais la stratégie « prendre la plus courte » gagne dans
+l'exercice noté le plus cher. Les corrections proposées en MAJOR-5 (allongement de Q4 `c`) en
+règlent un tiers ; allonger de quelques mots les clés de Q3 et Q5 suffirait pour le reste.
+
+**MINOR-7 — le correctif humain sur `02-boss` Q2 tient, mais laisse un écho.** Vérifié :
+`a` (« at the side of the **wooden** stage ») reste **plausible** (un acteur attend bien au bord
+du plateau) et **faux** (aucun idiome, c'est le sens 1 du nom) ✅. Il devient même l'option la
+plus longue (76 c.), ce qui écarte la clé `d` (70 c.) de toute position extrême ✅. Deux réserves
+sans gravité : (i) `a` et `b` portent désormais **tous deux** « wooden stage » et testent
+**tous deux** le sens 1 du nom — un des trois distracteurs est redondant ; (ii) l'adjectif
+« wooden » est immotivé dans `a`, il se lit comme une rustine. Alternative qui allonge sans
+répéter : `nouveau texte` `The actors were already waiting in the dark at the side of the crowded stage.`
+
+**MINOR-8 — `quiz` Q1, distracteur `d` mort.** L'énoncé **énumère** les quatre colonnes (Play ·
+Troupe · Venue · Dates) ; `d` (« For which age group is the play intended? ») ne correspond à
+aucune d'elles et s'élimine sans rien savoir de la leçon. Suggestion :
+`ancien texte` `For which age group is the play intended?`
+`nouveau texte` `Which company's name is printed on the poster?`
+*(faux — c'est la colonne Troupe — mais il faut avoir compris que « venue » ne nomme pas des gens.
+L'explication doit alors renoncer à sa dernière phrase sur l'âge.)*
+
+**MINOR-9 — `01-pratique` Q4, deux distracteurs sur trois éliminables sur la forme seule.**
+L'énoncé demande « **a single sentence** » : `c` en compte quatre, `a` garde les deux-points du
+fichier. Restent `b` (invention) et `d` (clé). L'item se joue à deux options.
+
+**MINOR-10 — `03-revision` Q6, deux distracteurs faibles.** `c` (« journeys through the countries
+that **ban** the internet ») et `d` (« journeys described in printed newspapers **and nowhere
+else** ») sont absurdes plutôt qu'erronés : personne n'a jamais lu *cyber-* ainsi. Seul `a`
+(« staff of the big computer firms ») est une vraie erreur d'élève.
+
+**MINOR-11 — gabarit `ordering` très proche de celui du chapitre 09.**
+`09-at-the-travel-agency/exercices/03-revision.json` Q1 : cinq phrases sur une même personne, à
+remettre dans l'ordre des événements. `10/03-revision` Q1 : cinq notes sur une même personne, à
+remettre dans l'ordre des événements. **Même position dans le fichier (Q1 du même exercice), même
+longueur (5), même consigne.** Le différenciateur est réel — le 09 donne des repères temporels
+explicites (« in the spring », « thirty days before departure »), le 10 les supprime — mais il est
+mince pour deux chapitres consécutifs. Le corpus compte **12 `ordering` et 13 `matching`**
+(recompté : le chiffre de 8 `matching` annoncé dans la consigne est sous-estimé de 5).
+Le `matching` du 10, lui, est le seul du corpus à **classer un fragment dans un champ de tableau**
+plutôt qu'à apparier deux listes de sens : il est bien différencié ✅.
+
+**MINOR-12 — `03-revision` Q2 porte `difficulty: 3` dans un exercice `difficulty: 2`.** Autorisé
+par le moteur, mais c'est aussi l'item le plus recyclé de l'exercice (MAJOR-4) : difficulté
+annoncée haute, exigence réelle basse.
+
+---
+
+## 4. Points explicitement demandés — réponses
+
+- **« La passe finale de l'auteur »** — **non faite.** Mesuré, pas supposé : les 23 fragments
+  annoncés sont toujours là, et surtout **10 items sur 23 rejouent un exemple du cours**
+  (MAJOR-9), dont 6 que le scan de 20 caractères ne voit pas.
+- **Les trois pires fragments du scan** — tranchés un par un :
+  `03-revision` Q5 (52 c.) : **coupable, le pire item du chapitre** — ce n'est pas une définition,
+  c'est la règle du cours recopiée dans l'énoncé, doublée du couple ✓/✗ en clé et distracteur
+  (MAJOR-1).
+  `03-revision` Q4 (42 c.) : **acquitté** — « the art of inventing the steps of a dance » est la
+  glose de `choreography`, dans l'**explication**, et ce chapitre travaille précisément la lecture
+  d'entrées de dictionnaire. Une définition partagée est ici la matière de la leçon.
+  `quiz` Q1 (39 c.) : **acquitté** — même raison (« the place where a public event is held », glose
+  de `venue`, dans l'explication).
+- **Le type de défaut prioritaire (clé + distracteur = colonnes ✓/✗ d'une ligne du cours)** —
+  **trouvé trois fois** : `03-revision` Q5 (MAJOR-1), `03-revision` Q2 (MAJOR-4), `02-boss` Q6
+  (MAJOR-9). Et **l'item qui EST l'exemple du cours avec un détail ajouté** — trouvé deux fois :
+  `quiz` Q4 (MAJOR-2) et `03-revision` Q3 (MAJOR-3).
+- **Le correctif humain sur `02-boss` Q2** — **il tient** : `a` reste plausible et faux, et la clé
+  sort de la position « la plus longue ». Deux réserves cosmétiques en MINOR-7.
+- **Point de grammaire inventé** — **aucun.** La colonne *Functions* est bien vide au UNIT OUTLINE
+  p.36 (vérifié dans la fiche de programme). Le cours n'introduit aucune règle : le passé est de la
+  révision consolidée, les huit linkers sont imprimés par le manuel p.76, et le schéma
+  `head for sth` est présenté comme une **information d'entrée de dictionnaire** — c'est-à-dire la
+  compétence même de la leçon — et non comme une règle nouvelle. ✅
+- **Refait-il le travail du 09 (lettre en quatre mouvements) ?** — **non.** Aucune lettre, aucun
+  mouvement épistolaire. Le seul chevauchement est le gabarit `ordering` (MINOR-11), pas le
+  contenu.
+- **Refait-il le travail du 02 (GB/US) ?** — **oui, dans le cours** (MINOR-2), sur le couple
+  *theatre/theater* que le 02 emploie déjà comme item complet. **Non dans les questions** : aucun
+  item du 10 ne teste l'orthographe américaine. Le choix de ne pas la tester est le bon ; c'est le
+  paragraphe du cours qui devrait renvoyer au 02 au lieu de rejouer son exemple.
+- **`ordering` / `matching`** — recensés : **12 `ordering` et 13 `matching`** dans la matière. Voir
+  MINOR-11.
+
+---
+
+## 5. Compte final
+
+- **Clés re-résolues à l'aveugle : 23 / 23** (19 `mcq` + 2 `multi` + 1 `matching` + 1 `ordering`).
+- **Clés divergentes : 0.** Aucune clé fausse.
+- **Clés fragiles : 2** — `03-revision` Q1 (`ordering` dont une contrainte sur quatre n'est pas
+  forcée, MAJOR-6) et `02-boss` Q6 (`multi` dont un distracteur est défendable, MAJOR-8).
+- **BLOCKER : 0** · **MAJOR : 9** · **MINOR : 12**.
+
+Ordre de traitement conseillé : **MAJOR-9 d'abord** (il porte les corrections côté `cours.md` qui
+règlent en une passe MAJOR-1, -2, -3, -4 et la moitié des items du boss), puis MAJOR-5 (fuite
+inter-items), puis MAJOR-6, -7, -8 (les trois retouches d'options).
+
+---
+
+# AUDIT — chapitre 11
 
 # AUDIT — `content/english-bac/11-the-winters-tale/` (23 questions)
 
