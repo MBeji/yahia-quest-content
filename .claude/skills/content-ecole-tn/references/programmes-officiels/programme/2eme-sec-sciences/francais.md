@@ -67,7 +67,7 @@ Débats : p. 74, 90, 107, 123. Auto-évaluation : p. 130. Projet : p. 131.
 
 ### Module 3 — « Femme et société » · Thèse et arguments (p. 132–192)
 
-Épigraphe (p. 132) : « Cette infériorité morale attribuée à la femme a révolté mon jeune orgueil. » — G. Sand. **La page 133 porte un vrai tableau « Activités × Séquences »** (lisible en couche-texte), dont les renvois de pages sont **exacts** ; il ajoute une cinquième colonne, **Expression orale**, absente des modules 1 et 2 en tant que rubrique tabulée.
+Épigraphe (p. 132) : « Cette infériorité morale attribuée à la femme a révolté mon jeune orgueil ». — G.Sand [sic]. **La page 133 porte un vrai tableau « Activités × Séquences »** (lisible en couche-texte), dont les renvois de pages sont **exacts** ; il ajoute une cinquième colonne, **Expression orale**, absente des modules 1 et 2 en tant que rubrique tabulée.
 
 | séq. | texte d'étude                                            | pages   | Vocabulaire et sens                                     | Grammaire et sens                                                                 | Expression écrite                                            | Expression orale                                                  |
 | ---- | -------------------------------------------------------- | ------- | ------------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------ | ----------------------------------------------------------------- |
@@ -103,6 +103,8 @@ Auto-évaluation : p. 232. Projet (p. 233) : « Enquêter sur votre futur métie
 Auto-évaluation : p. 272. Projet (p. 273) : « Enquêter sur les lieux qui fascinent. »
 
 ### Nouvelles en lecture suivie (p. 274–286)
+
+⚠️ « **Nouvelles en lecture suivie** » est une **étiquette de cette fiche**, pas un intitulé du manuel : l'expression « lecture suivie » n'apparaît dans aucune des 289 pages. Le manuel ne donne à cet ensemble aucun titre de section ; le sommaire p. 288 le liste en deux entrées autonomes, « Nouvelle : La ficelle » et « Nouvelle : La reine de beauté ».
 
 Deux nouvelles closent l'ouvrage, **hors de l'appareil de rubriques des séquences** : elles n'ont ni Vocabulaire et sens, ni Grammaire et sens, ni Expression écrite — seulement le texte puis un encadré « Pistes de recherche ».
 
@@ -800,8 +802,8 @@ Termes métalinguistiques employés tels quels par le manuel dans ces pages :
     15. Le poème décrit, en quatre étapes chronologiques marquées par des articulateurs
     (« d'abord », « et puis », puis un temps sans marqueur, enfin « et alors »), la **genèse
     mécanique du sentiment amoureux**, sujet impersonnel « on », présent de l'indicatif de valeur
-    générale. Strophe 1 : on aime d'abord par hasard, par jeu, par curiosité, parce qu'on a cru
-    lire des possibilités dans un regard. Strophe 2 : comme au fond de soi-même on s'aime beaucoup,
+    générale. Strophe 1 : on aime d'abord par hasard, par jeu, par curiosité, pour avoir lu
+    des possibilités dans un regard. Strophe 2 : comme au fond de soi-même on s'aime beaucoup,
     on aime en retour celui qui vous aime — par conformité de goût. Strophe 3 : on se remercie, on
     s'invite, on se met à partager ses moindres maux, on prend vite l'habitude d'échanger de petits
     mots. Strophe 4 : à force de redire longtemps les mêmes mots, on les répète sans y penser, et
@@ -843,7 +845,7 @@ Termes métalinguistiques employés tels quels par le manuel dans ces pages :
   - _Support littéraire_ : douze vers de **Lamartine**, attribués par le manuel à « *Méditations
     poétiques* » (R-2 : non reproduits). Résumé fidèle : un locuteur mourant, à la première
     personne, déclare vouloir vider jusqu'à la lie la coupe de la vie, mêlée de nectar et de fiel,
-    en songeant qu'il restait peut-être au fond une goutte de miel ; trois hypothèses successives
+    en songeant qu'il restait peut-être au fond une goutte de miel ; deux autres hypothèses
     introduites par « Peut-être » évoquent un retour de bonheur désormais sans espoir, et une âme
     inconnue, dans la foule, qui aurait pu comprendre la sienne et lui répondre. La dernière
     strophe compare sa mort à la fleur qui tombe en livrant ses parfums au zéphyr — adieux à la vie
@@ -883,7 +885,8 @@ Termes métalinguistiques employés tels quels par le manuel dans ces pages :
       rien vu de mal, alors même qu'elle entendait chaque syllabe qu'ils échangeaient. Othello
       revient à la charge sur trois points — n'ont-ils jamais chuchoté ? ne l'ont-ils jamais
       éloignée ? sous aucun prétexte (aller chercher l'éventail, les gants, le masque) ? — et
-      Emilia oppose à chaque fois le même « Jamais, monseigneur. » Othello conclut : « C'est
+      Emilia oppose trois dénégations : « Jamais, monseigneur. », puis « Jamais. », puis de nouveau
+      « Jamais, monseigneur. » Othello conclut : « C'est
       étrange. » Emilia jure alors qu'elle parierait son âme que Desdémone est honnête, et invite
       Othello à chasser sa pensée contraire, qui abuse son cœur.
     - Questions (verbatim, colonne de droite) :
@@ -1424,7 +1427,8 @@ métaphore » (p. 35) · Grammaire et sens — « Raisonner à partir de faits i
 
     **Exercice 2 — Récapituler les traits spécifiques de la métaphore.**
     « Lisez les deux extraits suivants et répondez aux questions. »
-    - **Extrait 1** — « Promettre l'impossible », signé « J. Brel » (chanson *Ne me quitte pas*).
+    - **Extrait 1** — « Promettre l'impossible », signé « J. Brel » (le manuel ne nomme pas la
+      chanson ; l'incipit « Ne me quitte pas » l'identifie — inférence, non un fait imprimé).
       R-2 : non reproduit. Résumé fidèle : le locuteur supplie qu'on ne le quitte pas, dit qu'il
       faut oublier le temps perdu, et savoir comment oublier ces heures qui tuaient parfois, à
       coups de « pourquoi », le cœur du bonheur ; il promet en retour d'offrir « des perles de
@@ -1452,7 +1456,8 @@ métaphore » (p. 35) · Grammaire et sens — « Raisonner à partir de faits i
 - **Grammaire et sens — « Raisonner à partir de faits imaginés : l'hypothèse »** (p. 38-41) :
 
   - _La grammaire en situation_ (p. 38) — support « **Promettre ... la poésie** », signé « Jacques
-    Brel » (suite de *Ne me quitte pas*), 12 vers, numérotation marginale 1, 5, 10. R-2 : non
+    Brel » (suite de la même chanson que l'Extrait 1 p. 37 — que le manuel ne nomme pas
+    davantage ici), 12 vers, numérotation marginale 1, 5, 10. R-2 : non
     reproduit. Résumé fidèle : le locuteur supplie qu'on ne le quitte pas et promet, au futur,
     d'inventer pour l'aimée des mots insensés qu'elle comprendra, de lui parler de ces amants qui
     ont vu parfois leurs cœurs s'embraser, et de lui raconter l'histoire de ce roi mort de n'avoir
@@ -1854,7 +1859,8 @@ rencontres amoureuses » (p. 57).
     pour de mauvais « ribouis² ». Strophe 3 : il n'eut pas la raison d'aller chez « Walk over » ;
     là, point de trahison — il n'eut point de raison. Strophe 4 : c'est bien la pire « empeigne³ »
     que celle qu'on vend hors de chez « Walk over », noble enseigne : ses pieds ont tant de peine.
-    Le comique naît de la rime homophone détournée (peine/empeigne, cœur/bottes) et du passage du
+    Le comique naît de la rime détournée (peine/empeigne) et de la substitution lexicale d'un poème
+    à l'autre au même endroit du vers (cœur → bottes), ainsi que du passage du
     registre élégiaque au registre publicitaire.
   - Chapeau et questions (verbatim) : « Ariette III, le poème de Verlaine, a inspiré F. Carco et
     Apollinaire à la fois.
@@ -1868,7 +1874,7 @@ rencontres amoureuses » (p. 57).
 
   - _Le vocabulaire en situation_ (p. 49) — support « **Les effets contradictoires de l'amour** »,
     poème « **Je vis, je meurs...** », signé « Louise Labé ». Huit vers (deux quatrains),
-    numérotation marginale 1 et 5. R-2 : non reproduit. Résumé fidèle : sonnet d'oxymores où la
+    numérotation marginale 1 et 5. R-2 : non reproduit. Résumé fidèle : accumulation d'antithèses où la
     locutrice dit vivre et mourir, se brûler et se noyer ; avoir chaud à l'extrême tout en endurant
     la froidure ; trouver la vie trop molle et trop dure ; avoir de grands ennuis entremêlés de
     joie. Second quatrain : tout à coup elle rit et « larmoie » ; en plaisir elle endure maint grief
@@ -1973,14 +1979,14 @@ rencontres amoureuses » (p. 57).
     prolifération du préfixe/mot « contre ». Le couple ne se voit qu'à contre-jour, vit à
     contre-courant, joue ensemble à contrecœur, affiche devant les autres « la contrefaçon du
     bonheur » ; en contrepoint de leurs sourires ils ressemblent de plus en plus à de « fats
-    mannequins de cire » en vitrine, pour dérision. La vie a changé de cours, l'autre « se
-    contrefout » de ce qu'ils sont devenus ; le locuteur sait qu'il n'y a qu'un pas de l'amour à la
+    mannequins de cire » en vitrine, pour dérision. La vie a changé de cours, et le locuteur
+    reproche à l'autre : « tu te contrefous » de ce qu'ils sont devenus ; il sait qu'il n'y a qu'un pas de l'amour à la
     haine, qu'on franchit sans réfléchir, et qu'on passe du bonheur à la peine ; il se retrouve
     chargé des chaînes forgées par trop de souvenirs. Le refrain-titre « À contre-amour » revient
     en clausule de strophe, et la chanson se ferme sur « Moi contre toi, toi contre moi ».
     Données de l'exercice (le relevé demandé par la question 1) — mots construits avec « contre » :
     contretemps, contre-jour, contre-courant, contre-amour, contrecœur, contrefaçon, contrepoint,
-    contre-pied, contre-pas, (se) contrefout, contre-voie, le contre (opposé à « le pour »),
+    contre-pied, contre-pas, (se) contrefoutre (imprimé « tu te contrefous », deux fois), contre-voie, le contre (opposé à « le pour »),
     contre-chant, contresens, et l'emploi prépositionnel « moi contre toi, toi contre moi ».
     Questions (verbatim) :
     1) Relevez tous les mots construits avec «contre» et dites quel champ lexical ils constituent.
@@ -2475,7 +2481,8 @@ Expression orale — « Organiser un débat sur la chanson engagée » (p. 74) �
     (1, 5, 10) comme un poème.
   - _Note lexicale en marge (verbatim)_ : « * Anathème : condamnation, réprobation sévère,
     malédiction. »
-  - _Résumé fidèle et détaillé_ : poème de 14 vers (sonnet) à la première personne. Dans un songe,
+  - _Résumé fidèle et détaillé_ : poème de 14 vers à la première personne (le manuel n'emploie
+    jamais le mot « sonnet »). Dans un songe,
     trois travailleurs s'adressent tour à tour au poète pour lui signifier qu'ils cessent de
     travailler pour lui : le laboureur lui ordonne de faire son pain lui-même, de gratter la terre
     et de semer ; le tisserand, de faire ses habits ; le maçon, de prendre la truelle en main. Le
@@ -2485,8 +2492,9 @@ Expression orale — « Organiser un débat sur la chanson engagée » (p. 74) �
     de hardis compagnons sifflent sur leurs échelles, les métiers bourdonnent, les champs sont
     semés — le monde des hommes a repris son cours. Il conclut sur la leçon du songe : dans le
     monde où nous sommes, « Nul ne peut se vanter de se passer des hommes », et depuis ce jour-là
-    il les a tous aimés. Structure explicite en deux mouvements — le songe (v. 1–8) et le réveil
-    (v. 9–14) — que la première question de compréhension fait délimiter.
+    il les a tous aimés. Le manuel annonce deux parties — le songe et le réveil — mais **n'en
+    imprime pas les bornes** : les délimiter (v. 1–8 / v. 9–14) est précisément le travail demandé
+    par la première question de compréhension.
   - _Légende d'illustration imprimée (p. 66, verbatim)_ : « Il arrive que nos rêves nous ouvrent
     les yeux sur des évidences que nous ne voyions pas... les yeux ouverts. »
 
@@ -2756,8 +2764,8 @@ Expression orale — « Organiser un débat sur la chanson engagée » (p. 74) �
     strophe conclut que, sans rien d'autre que la force d'aimer, « Nous aurons dans nos mains /
     Amis le monde entier. »
 
-  - _Sujet imprimé (verbatim)_ : « Sujet : La chanson au service d'une cause : ses
-    caractéristiques, son pouvoir et ses limites. »
+  - _Sujet imprimé (verbatim)_ : « Sujet : La chanson au service d'une cause [blanc de mise en
+    page, aucune ponctuation imprimée] ses caractéristiques, son pouvoir et ses limites. »
 
   - _Pistes de recherche (verbatim, p. 74–75)_ :
     1) « Lisez (ou écoutez) la chanson.
@@ -2894,11 +2902,13 @@ Expression orale — « Organiser un débat sur la chanson engagée » (p. 74) �
     Support intitulé « Lequel des deux envoyer à la mort ? », extrait d'Albert Camus, _La Chute_
     (référence imprimée : « Albert Camus, La Chute. »). _Résumé fidèle_ : le narrateur demande à
     son interlocuteur s'il sait que, dans son petit village, au cours d'une action de représailles,
-    un officier allemand a « courtoisement » prié une vieille femme de choisir celui de ses deux
+    un officier allemand a courtoisement prié une vieille femme de choisir celui de ses deux
     fils qui serait fusillé comme otage ; il relance — choisir, imaginez-vous cela ? celui-là ?
-    non, celui-ci — et le voir partir, puis coupe court : n'insistons pas. Le passage est
-    intégralement composé d'interrogatives ; une phrase est soulignée dans le manuel (support de la
-    question 3).
+    non, celui-ci — et le voir partir, puis coupe court : n'insistons pas. La question 1 du manuel
+    pose que « L'histoire est racontée sous forme d'interrogatives » ; le passage n'est pas pour
+    autant intégralement interrogatif — trois phrases ne le sont pas (« Non, celui-ci. », « Et le
+    voir partir. », « N'insistons pas [...] »). Une phrase est soulignée dans le manuel (support de
+    la question 3).
     Questions (verbatim) :
     1) « L'histoire est racontée sous forme d'interrogatives. Imaginez le contexte qui explique ce
        choix. »
@@ -3007,8 +3017,8 @@ discours à l'interlocuteur » (p. 92).
     s'exclamer en eux-mêmes qu'il est un orang-outang, et il se sent aussitôt objet de dérision.
     L'ironie, dit-il, est qu'étant si laid il soit si sensible à la beauté humaine : une jolie fille,
     un enfant gracieux le ravissent, mais de peur de les effrayer il n'ose approcher les enfants, et
-    très rarement les femmes. Il note en revanche que les animaux, dont il raffole, n'ont pas ce
-    préjugé ; il se sent à l'aise avec eux, ne lit rien d'humiliant dans leurs yeux, uniquement de
+    très rarement les femmes. Il note en revanche que les animaux, dont il raffole, n'ont
+    aucunement peur de lui et s'apprivoisent très vite ; il se sent à l'aise avec eux, ne lit rien d'humiliant dans leurs yeux, uniquement de
     l'affection — demandée, reçue, rendue. Il conclut par un souhait : quel beau monde ce serait, et
     combien il s'y sentirait heureux, si les hommes pouvaient avoir le regard des chevaux.
 
@@ -3156,7 +3166,8 @@ discours à l'interlocuteur » (p. 92).
     Philombé (référence imprimée : « René Philombé. »). _Texte non reproduit intégralement
     (droits)._ _Résumé fidèle_ : cinq strophes. Le locuteur dit avoir frappé à la porte et au cœur
     de son destinataire pour avoir bon lit et bon feu, et demande pourquoi on le repousse ; le
-    refrain « Ouvre-moi mon frère !... » clôt chaque strophe. Il demande ensuite pourquoi on lui
+    refrain « Ouvre-moi mon frère !... » clôt les strophes 1 à 4 — la cinquième s'achevant, elle,
+    sur « l'homme qui te ressemble !... ». Il demande ensuite pourquoi on lui
     demande s'il est d'Afrique, d'Amérique, d'Asie ou d'Europe ; puis pourquoi on l'interroge sur la
     longueur de son nez, l'épaisseur de sa bouche, la couleur de sa peau et le nom de ses dieux. Il
     nie ensuite être un noir, un rouge, un jaune ou un blanc, affirmant n'être qu'un homme. La
@@ -3881,8 +3892,9 @@ Expression écrite — « Suggérer un sentiment, une idée, une action » (p. 1
     – Chaque année 14 000 000 d'enfants du tiers-monde meurent de malnutrition et de maladies.
     – Entre 1990 et 1993, la famine a provoqué 400 000 morts. »
 
-  ⚠️ Cette rubrique ne comporte ni « Thèmes », ni « Idées », ni « Lexique utile » : uniquement
-  « Photo-support », « Sujet », « Quelques fonctions de l'image » et « Informations utiles ».
+  ⚠️ Cette rubrique ne comporte ni « Thèmes », ni « Idées », ni « Lexique utile » : uniquement le
+  sous-titre « Débat », puis « Photo-support », « Sujet », « Quelques fonctions de l'image » et
+  « Informations utiles ».
 
 - **Expression écrite — « Suggérer un sentiment, une idée, une action »** (p. 108–112) :
 
@@ -4676,8 +4688,8 @@ d'économie, d'éducation civique... / - Internet, journaux, revues... »
 - **Rubrique orale : deux libellés selon les séquences.** Les séquences 1 (p. 74) et 2 (p. 90) sont
   intitulées « **Expression orale** » **sans** le mot « Débat » ; les séquences 3 (p. 107) et 4
   (p. 123) portent « Expression orale » **puis** un sous-titre « **Débat** ». Aucune des quatre ne
-  comporte de sous-rubrique « Thèmes » ; les sous-rubriques réelles varient : « Sujet / Pistes de
-  recherche / Idées / Lexique utile » (p. 74-75), « Supports / Lecture des documents / Pistes de
+  comporte de sous-rubrique « Thèmes » ; les sous-rubriques réelles varient : « Support / Sujet /
+  Pistes de recherche / Idées / Lexique utile » (p. 74-75), « Supports / Lecture des documents / Pistes de
   réflexion / Lexique utile / Quelques citations » (p. 90-91), « Photo-support / Sujet / Quelques
   fonctions de l'image / Informations utiles » (p. 107), « Support / Exploitation du support / Sujet
   du débat / Lexique utile » (p. 123).
@@ -4753,7 +4765,7 @@ d'économie, d'éducation civique... / - Internet, journaux, revues... »
 - p. 121 : « les indicateurs temporels et spaciaux » (pour « spatiaux »).
 - p. 124, réplique de Juliette : « Je vis mal, Seigneur.. » — deux points au lieu d'un.
 - p. 66, note 3 : « Les Fables de la Fontaine » — minuscule à « de » dans le nom de La Fontaine.
-- p. 105 : « Montreuil sur Mer » écrit sans traits d'union (p. 104).
+- p. 104 : « Montreuil sur Mer » écrit sans traits d'union.
 
 **Autres remarques de mise en page**
 
@@ -4761,15 +4773,16 @@ d'économie, d'éducation civique... / - Internet, journaux, revues... »
   pour les séquences 1, 2 et 4 elle apparaît à droite, sous l'en-tête. Simple variation de maquette.
 - Les pages d'ouverture de rubrique alternent deux maquettes (en-tête à gauche ou à droite) sans
   conséquence sur le contenu.
-- Toutes les pages du module comportent des illustrations légendées ; ces légendes, souvent
-  proverbiales ou ironiques, ont été relevées verbatim car elles font partie de l'appareil du manuel
-  (p. 66, 68, 73, 75, 77, 80, 82, 84, 87, 89, 99, 101, 103, 110, 112, 114, 118, 122, 125).
+- **21 pages** du module — et non toutes — portent des illustrations légendées ; ces légendes,
+  souvent proverbiales ou ironiques, ont été relevées verbatim car elles font partie de l'appareil
+  du manuel (p. 66, 68, 73, 75, 77, 80, 82, 84, 87, 89, 97, 99, 101, 103, 107, 110, 112, 114, 118,
+  122, 125). La majorité des pages du module n'en porte aucune.
 
 ---
 
 ### MODULE 3 — FEMME ET SOCIÉTÉ · Thèse et arguments (p. 132–192)
 
-_Épigraphe (p. 132, verbatim)_ : « Cette infériorité morale attribuée à la femme a révolté mon jeune orgueil ». — G. Sand.
+_Épigraphe (p. 132, verbatim)_ : « Cette infériorité morale attribuée à la femme a révolté mon jeune orgueil ». — G.Sand [sic — sans espace après l'initiale].
 
 **Tableau « Activités × Séquences » (p. 133)** : la page porte un **vrai tableau** lisible en couche-texte, à cinq colonnes d'activités. En-tête : « Module 3 — Femme et société » ; case d'angle : « Activités / Séquences ». Restitution intégrale, renvois de pages compris :
 
@@ -4818,7 +4831,7 @@ Ligne finale du tableau (hors colonnes d'activités) : **Projet — « Recueilli
     Le choix du verbe introducteur se fait selon :
 
     • le type de phrase que ce verbe doit introduire (voir p.70) ;
-    • le rôle de ce verbe dans la progression du dialogue rapporté (voir exercice 4) ;
+    • le rôle de ce verbe dans la progression du dialogue rapporté (voir exercice 4); [sic — pas d'espace avant le point-virgule, contrairement aux autres puces]
     • le degré d'objectivité ou de subjectivité du locuteur rapporteur (voir p.23),
     • l'état psychologique et la voix du locuteur cité.
 
@@ -5018,10 +5031,10 @@ Ligne finale du tableau (hors colonnes d'activités) : **Projet — « Recueilli
 
     [Schéma p. 154, autour du noyau central « La rémunération du travail de la femme au foyer » :]
 
-    | Être « pour » | ← noyau → | Être « contre » |
+    | Etre «pour» | ← noyau → | Etre «contre» |
     | --- | --- | --- |
     | Approuver | Exprimer son approbation / sa désapprobation | Désapprouver |
-    | (Être) favorable | Avoir, donner, émettre, exprimer une opinion / un point de vue / un avis ... | (Être) défavorable |
+    | (Etre) favorable | Avoir, donner, émettre, exprimer une opinion / un point de vue / un avis ... | (Etre) défavorable |
 
     Lorsque le locuteur veut amener quelqu'un à adopter la même opinion (=thèse, point de vue) que lui,
 
@@ -5147,7 +5160,7 @@ Ligne finale du tableau (hors colonnes d'activités) : **Projet — « Recueilli
   - **Chapeau de situation** : ⚠️ **il n'y en a pas** — la p. 166 attaque directement sur le texte.
   - **Notes de bas de page (verbatim)** : « 1. Toge : ample pièce d'étoffe sans coutures dans laquelle les Romains se drapaient. » · « 2. Hector : personnage de l'Iliade, chef de l'armée troyenne tué pendant la guerre de Troie. » · « 3. Mammouth : grand éléphant fossile du quaternaire. »
   - **Référence de l'extrait** : J. Giraudoux, *La Française et la France*. Texte numéroté par lignes de 5 en 5 (l. 5, 10, 15, 20, 25).
-  - **Résumé fidèle et détaillé de l'extrait** : texte argumentatif. Giraudoux part d'un constat — la femme d'aujourd'hui croit moins à l'homme, « à la royauté de l'homme », qu'autrefois. Il décrit alors la « convention tacite » d'autrefois : il était entendu entre eux que l'homme quittait chaque jour le foyer pour des affaires extrêmement importantes et au-dessus de la compréhension de la femme. En lui passant sa toge, son pardessus et son chapeau melon après le petit déjeuner ou le déjeuner, la femme jouait une comédie — sans qu'elle décide si elle y croyait sincèrement — consistant à faire comme si le mari était « lâché dans un monde épineux, dangereux » où il assurait à la fois la vie de sa famille, la vie de la nation et « la marche générale de l'univers ». De l'épouse du général à celle du petit comptable, ce départ « bijournalier » comportait une séparation qui rappelait, en pathétique, le départ d'Hector pour sauver Troie — sans l'égaler. Vient ensuite une gradation historique : la femme de l'homme préhistorique avait raison de croire davantage à l'homme sorti que resté dans la caverne, sachant qu'il était aux prises avec un lion ou un mammouth ; la femme du paysan a raison encore de croire qu'il se livre à des opérations d'intérêt primordial — il laboure, il sème le blé, il mène les bêtes à l'abreuvoir. Mais la femme du comptable, de l'ouvrier, du banquier, ayant elle-même pris au-dehors une fonction ou un métier, « voit bientôt à quelle comédie se livre l'homme ». Chute symétrique : lui, de son côté, a rencontré des femmes dans sa vie de travail, il les a vues « astucieuses, zélées, résistantes », de sorte qu'au moment où elle cesse de croire à la force de l'homme, l'homme cesse de croire à la faiblesse de la femme.
+  - **Résumé fidèle et détaillé de l'extrait** : texte argumentatif. Giraudoux part d'un constat — la femme d'aujourd'hui croit moins à l'homme, « à la royauté de l'homme », qu'autrefois. Il décrit alors la « convention tacite » d'autrefois : il était entendu entre eux que l'homme quittait chaque jour le foyer pour des affaires extrêmement importantes et au-dessus de la compréhension de la femme. En lui passant sa toge, son par-dessus et son chapeau melon après le petit déjeuner ou le déjeuner, la femme jouait une comédie — sans qu'elle décide si elle y croyait sincèrement — consistant à faire comme si le mari était « lâché dans un monde épineux, dangereux » où il assurait à la fois la vie de sa famille, la vie de la nation et « la marche générale de l'univers ». De l'épouse du général à celle du petit comptable, ce départ « bijournalier » comportait une séparation qui rappelait, en pathétique, le départ d'Hector pour sauver Troie — sans l'égaler. Vient ensuite une gradation historique : la femme de l'homme préhistorique avait raison de croire davantage à l'homme sorti que resté dans la caverne, sachant qu'il était aux prises avec un lion ou un mammouth ; la femme du paysan a raison encore de croire qu'il se livre à des opérations d'intérêt primordial — il laboure, il sème le blé, il mène les bêtes à l'abreuvoir. Mais la femme du comptable, de l'ouvrier, du banquier, ayant elle-même pris au-dehors une fonction ou un métier, « voit bientôt à quelle comédie se livre l'homme ». Chute symétrique : lui, de son côté, a rencontré des femmes dans sa vie de travail, il les a vues « astucieuses, zélées, résistantes », de sorte qu'au moment où elle cesse de croire à la force de l'homme, l'homme cesse de croire à la faiblesse de la femme.
 
 - **Compréhension** (p. 167) : questions groupées en deux axes de lecture.
   - _Axe « L'homme de tous les temps »_
@@ -5418,7 +5431,7 @@ Ligne finale du tableau (hors colonnes d'activités) : **Projet — « Recueilli
 
 - **Expression écrite — « Argumenter dans un texte »** (p. 188–190) :
   - _Compréhension de l'écrit_ (p. 188) :
-    - **Support** : « Deux fardeaux au lieu d'un ! » — **Alfred Sauvy, *La Nature sociale***. Résumé : on affirme que la femme doit être libérée de l'esclavage ménager résumé par le slogan wilhelmien « Kinder, Kirche, Küche » ; aucune voix discordante sur le principe, mais l'application diffère. Les traditionalistes s'efforcent d'en rester au principe vague et de prolonger la soumission féminine ; les progressistes vont plus loin — la femme doit exercer comme l'homme un métier rémunéré et sera soulagée, sinon remplacée, dans sa tâche ménagère par un système de crèches, garderies et autres formes d'assistance sociale. Telles sont les intentions ; en fait, dans la majorité des cas, la femme a deux fardeaux au lieu d'un. Un effort modeste a été fait par la société pour briser de tenaces préjugés et lui ouvrir certaines carrières, le plus souvent subalternes, mais « le beau programme de crèches, etc., qui devait faire le pendant est resté en suspens » — et ceci vaut aussi bien pour les États-Unis ou l'Union Soviétique que pour la France. Conclusion : la femme est soumise à « une intense suractivité ». Note (verbatim) : « * Enfants, église, cuisine. »
+    - **Support** : « Deux fardeaux au lieu d'un ! » — **Alfred Sauvy, *La Nature sociale***. Résumé : on affirme que la femme doit être libérée de l'esclavage ménager résumé par le slogan wilhelmien « Kinder, Kirche, Küche » ; aucune voix discordante sur le principe, mais l'application diffère. Les traditionalistes s'efforcent d'en rester sur le principe vague et de prolonger la soumission féminine ; les progressistes vont plus loin — la femme doit exercer comme l'homme un métier rémunéré et sera soulagée, sinon remplacée, dans sa tâche ménagère par un système de crèches, garderies et autres formes d'assistance sociale. Telles sont les intentions ; en fait, dans la majorité des cas, la femme a deux fardeaux au lieu d'un. Un effort modeste a été fait par la société pour briser de tenaces préjugés et lui ouvrir certaines carrières, le plus souvent subalternes, mais « le beau programme de crèches, etc., qui devait faire le pendant est resté en suspens » — et ceci vaut aussi bien pour les États-Unis ou l'Union Soviétique que pour la France. Conclusion : la femme est soumise à « une intense suractivité ». Note (verbatim) : « * Enfants, église, cuisine. »
     - **Encadré de méthode (verbatim)** — ⚠️ non intitulé « Explicitation », mais il en tient lieu :
 
       « Pour comprendre un texte argumentatif, il faut :
@@ -5548,7 +5561,7 @@ Intitulé exact imprimé : « **Projet** — Recueillir et traiter des informati
 
 **Autres**
 
-- p. 178 : le manuel écrit « il ne s'agit pour vous que d'un salaire d'appoint » avec une apostrophe droite dans la source extraite (`s'agit`), là où le reste du module utilise l'apostrophe courbe. Sans incidence de sens.
+- p. 178 : le manuel écrit « il ne s'agit pour vous que d'un salaire d'appoint » avec une apostrophe droite dans la source extraite (`s'agit`). Ce n'est **pas** un cas isolé : le module 3 en compte **cinq** — p. 172 (`l'exige`), p. 175 (`d'héréditaire`), p. 178 (`s'agit`), p. 180 (`à l'égard`), p. 182 (`l'héroïne`) — contre 1 049 apostrophes courbes. Sans incidence de sens.
 - p. 169 : le support de l'exercice 1 imprime un guillemet fermant orphelin — « Championnes exceptionnelles des trois-huit» -boulot-enfant-mari- » : le guillemet ouvrant manque dans la couche-texte.
 - p. 133 : le folio « 133 » est imprimé **à l'intérieur** du tableau (colonne de gauche, hauteur de la ligne Séquence 2) et non en pied de page comme partout ailleurs. Il ne fait pas partie du tableau et n'a pas été restitué comme donnée.
 - Les épigraphes et citations d'ouverture (G. Sand p. 132, N. Sarraute p. 135, Montesquieu p. 145) ne portent **aucune question ni consigne** : elles sont décoratives / d'ambiance, mais font partie du scope imprimé.
@@ -5736,7 +5749,7 @@ Dernière ligne du tableau : **Projet** — « Enquêter sur votre futur métier
 
 - **Expression écrite — « Relier les arguments à la thèse »** (p. 204–206)
   - _Compréhension de l'écrit_ (p. 204)
-    - Support intitulé « **L'impossible bien-être !** » — **Roger Garaudy, _Grammaire de la liberté_**. Contenu (résumé fidèle, R-2) : Bernard a appris le métier de son père, tailleur d'habits pour la confection ; au chômage depuis cinq mois, il a épuisé petites annonces, escaliers et rebuffades, et ses vêtements sont devenus de telles loques qu'il n'ose plus sortir. Le narrateur interpelle le lecteur (« Etes-vous resté des jours entiers sur votre lit avec le sentiment de n'avoir plus figure d'homme dans un monde qui refuse vos bras ? »). Bernard écoute les casseroles de sa mère de l'autre côté de la cloison : il est à sa charge. Il ressort : à l'usine on l'a refusé comme manœuvre parce qu'il est trop faible ; au bureau un chef de service a regardé, goguenard, ses souliers troués : pas d'emploi. À sept heures du matin, le lendemain, il se faufile dans le métro Saint-Lazare à l'heure de la rentrée du travail ; tous sont tenus par l'horloge, affairés à leur tâche — lui est libre, libre d'aller au musée ou parmi les fleurs des parcs, libre de penser à la physique d'Einstein ou à l'Immaculée Conception, et surtout, pour le moment, libre de choisir entre le robinet à gaz et la rame de métro. Le texte s'achève sur la mort : une journée d'homme libre commence, un homme a été broyé par la rame 131 — « Bernard, un homme libre parmi des hommes libres, a été broyé par cette liberté. »
+    - Support intitulé « **L'impossible bien-être !** » — **Roger Garaudy, _Grammaire de la liberté_**. Contenu (résumé fidèle, R-2) : Bernard a appris le métier de son père, tailleur d'habits pour la confection ; au chômage depuis cinq mois, il a épuisé petites annonces, escaliers et rebuffades, et ses vêtements sont devenus de telles loques qu'il n'ose plus sortir. Le narrateur interpelle le lecteur (« Etes-vous resté des jours entiers sur votre lit avec le sentiment de n'avoir plus figure d'homme dans un monde qui refuse vos bras ? »). Bernard écoute les casseroles de sa mère de l'autre côté de la cloison : il est à sa charge. Il ressort : à l'usine on l'a refusé comme manœuvre parce qu'il est trop faible ; au bureau un chef de service a regardé, goguenard, ses souliers troués : pas d'emploi. À sept heures du matin, le lendemain, il se faufile dans le métro Saint-Lazare à l'heure de la rentrée du travail ; tous sont tenus par l'horloge, affairés à leur tâche — lui est libre, libre d'aller au musée ou parmi les fleurs des parcs, libre de penser à la physique d'Einstein ou à l'immaculée Conception, et surtout, pour le moment, libre de choisir entre le robinet à gaz et la rame de métro. Le texte s'achève sur la mort : une journée d'homme libre commence, un homme a été broyé par la rame 131 — « Bernard, un homme libre parmi des hommes libres, a été broyé par cette liberté. »
     - Appareil pédagogique (verbatim) :
       « Dans l'extrait de R. Garaudy, il existe deux types de rapports entre les phrases :
       • des rapports chronologiques,
@@ -5979,7 +5992,7 @@ Dernière ligne du tableau : **Projet** — « Enquêter sur votre futur métier
   - _Compréhension de l'écrit_ (p. 216–217)
     - Support intitulé « **Une concierge querelleuse** » — **Marguerite Duras, _Des Journées entières dans les arbres_**.
       Chapeau de situation (verbatim) : « Les locataires d'un immeuble se font "engueuler" fréquemment par leur concierge, Madame Dodin, qui leur en veut de ne pas vider leur poubelle tous les jours. »
-      Contenu de l'extrait (résumé fidèle, R-2) : la narratrice enchaîne les équivalences — on se fait engueuler parce qu'on a une poubelle à vider ; autrement dit parce que l'on mange, donc parce que l'on vit encore, donc parce que l'on n'est pas encore mort. Autant, dit-elle, vous engueuler parce que vous ne vous abstenez pas de manger, de vivre : tant qu'on n'est pas mort, on n'en sort pas, on aura des poubelles et, à moins de s'en laisser submerger jusqu'à l'asphyxie, on sera bien obligé de les vider. C'est d'ailleurs là, en général, « quand on l'ose », ce qu'on répond à Mme Dodin.
+      Contenu de l'extrait (résumé fidèle, R-2) : la narratrice enchaîne les équivalences — on se fait engueuler parce qu'on a une poubelle à vider ; autrement dit parce que l'on mange, donc parce que l'on vit encore, donc que l'on n'est pas encore mort. Autant, dit-elle, vous engueuler parce que vous ne vous abstenez pas de manger, de vivre : tant qu'on n'est pas mort, on n'en sort pas, on aura des poubelles et, à moins de s'en laisser submerger jusqu'à l'asphyxie, on sera bien obligé de les vider. C'est d'ailleurs là, en général, « quand on l'ose », ce qu'on répond à Mme Dodin.
       Note de bas de page (verbatim) : « * Engueuler (terme familier) : adresser une vive réprimande à quelqu'un pour exprimer son mécontentement. »
       Questions en marge (verbatim) :
       « 1) Dans quelle mesure le raisonnement reconstitué par la narratrice nous renseigne-t-il sur le caractère et la personnalité de Mme Dodin ? Faites, en quelques phrases, le portrait de ce personnage.
@@ -6354,7 +6367,7 @@ Travail demandé (verbatim) :
 - p. 200, titre de la rubrique Grammaire : « Enchaîner des arguments **(voir pp. 171-173)** » — renvoi hors module 4, non vérifiable sur la source fournie (p. 193–233).
 - p. 229, titre de la rubrique Expression écrite : « Analyser des plans d'argumentation **(Voir pp. 176-177, 269-271)** » — renvoi hors module 4, non vérifiable sur la source fournie.
 - p. 232, note de l'auto-évaluation : « Tenir compte des critères retenus pour les modules précédents : **pp 61, 130, 191** » — renvois hors module 4, non vérifiables ici.
-- p. 231, question 4 de l'exercice 2 : « **voir exercice 4, p. 218** » — l'exercice 4 commence bien p. 218, mais la **définition** du raisonnement dialectique à laquelle la question renvoie se trouve p. 219 (question 4 de cet exercice). Renvoi imprécis d'une page.
+- p. 231, question 4 de l'exercice 2 : « **voir exercice 4, p. 218** » — renvoi **exact**, vérifié : l'exercice 4 (« Analyser la structure d'un raisonnement dialectique. ») commence bien p. 218. Sa question 4, qui porte la définition du raisonnement dialectique, est p. 219 ; le renvoi vise l'exercice et non la définition, il n'est donc pas fautif.
 
 **Coquilles de la source (recopiées `[sic]` dans la fiche)**
 
@@ -6422,7 +6435,7 @@ Dernière ligne du tableau : **Projet** — « Enquêter sur les lieux qui fasci
   - _Texte numéroté par lignes de 5 en 5_ (repères 5, 10, 15, 20, 25 visibles ; les questions de compréhension ne renvoient pas explicitement à cette numérotation dans cette séquence).
   - _Résumé fidèle et détaillé de l'extrait (R-2 : le texte littéraire n'est pas reproduit)_ : quatre mouvements.
     1. (l. 1-10) Chez les jeunes, la quête d'un ailleurs est **pathétique** : elle les mène sur les routes du monde, « de stop en stop », et ils la poursuivent en se déguisant chaque jour — en Indiens, en Hindous, en apôtres. Cette parade, que l'auteur nomme un « musée Grévin du temps et de l'espace » dans les rues transies de nos villes, prête à sourire alors qu'elle devrait donner à réfléchir : car « on ne se déguise jamais qu'en soi-même » — le jeune qui se travestit ainsi ne révèle que son rêve et son immense dégoût de tout ce qui ressemble aux adultes. Et c'est nous, les adultes, dit Cesbron, que son ridicule tue.
-    2. (l. 11-16) Ils s'apercevront un jour qu'errance et déguisements ne rassasient pas cette grande faim d'ailleurs. Alors, « voyageurs imprudents », ils en arrivent à la drogue : dépaysement passager et coûteux, au terme duquel on rencontre assez vite la mort — celle qui n'ose pas dire son nom, ou bien la vraie, « l'Ailleurs définitif ».
+    2. (l. 11-16) Ils s'apercevront un jour qu'« errance **ou** déguisements ne **rassasie** pas » cette grande faim d'ailleurs — le manuel imprime bien « ou » et le verbe au singulier `[sic]`, non régularisés ici. Alors, « voyageurs imprudents », ils en arrivent à la drogue : dépaysement passager et coûteux, au terme duquel on rencontre assez vite la mort — celle qui n'ose pas dire son nom, ou bien la vraie, « l'Ailleurs définitif ».
     3. (l. 17-23) Question rhétorique : faut-il avoir pénétré dans les eaux profondes, avoir atteint le désespoir allègre qui confine à l'espérance, pour comprendre que cette soif d'Ailleurs, « écrite en nous », ne pourra jamais se satisfaire de pareils artifices ? Au regard de cette soif, l'errance, le carnaval, l'érotisme, la drogue et l'utopie ne sont que des sirops empoisonnés ou insipides : c'est d'eau vive qu'elle veut s'étancher. (C'est la métaphore filée sur laquelle porte la question 5 de la Compréhension.)
     4. (l. 24-28) Conclusion : faut-il attendre qu'il soit un peu trop tard pour comprendre que le véritable ailleurs est en nous, au fond de soi, au fond de l'autre ? Les uns l'appellent Dieu, les autres l'Amour — et le grand secret, c'est que c'est la même chose.
   - _Notes de bas de page (verbatim)_ : « * Les jeunes se déguisent en Indiens, en Hindous, en apôtres1 ... Ces déguisements rappelant les temps passés, les jeunes donnent l'impression d'être "sortis" du Musée Grévin2. / 1) Apôtre : celui qui se voue à la propagation et à la défense d'une doctrine. / 2) Musée Grévin : galeries de figures de cire à Paris. »
@@ -6645,7 +6658,7 @@ Dernière ligne du tableau : **Projet** — « Enquêter sur les lieux qui fasci
       6) Dites en quoi, dans ce poème, M.Carême traite, à sa manière, le sujet d'essai proposé dans la 2e question de l'exercice 2. »
       `[?]` Les soulignements du poème (question 4) ne sont pas portés par la couche-texte.
     - **Exercice 5 — « Analyser plusieurs textes à la lumière du sujet de l'essai. »** (p. 246)
-      Support : **Baudelaire, « L'invitation au voyage »** (titre imprimé « L'invitation au voyage » ; signature « Baudelaire »). Contenu (résumé fidèle, R-2) : les deux premières strophes du poème, numérotées par vers (repères 5, 10, 15, 20, 25) et suivies du refrain. Le poète s'adresse à « mon enfant, ma sœur » et l'invite à songer à la douceur d'aller vivre ensemble là-bas, d'aimer à loisir et de mourir au pays qui lui ressemble ; les soleils mouillés de ces ciels brouillés ont pour son esprit les charmes mystérieux de ses yeux traîtres brillant à travers les larmes. Puis la chambre rêvée : meubles luisants polis par les ans, fleurs rares mêlant leurs odeurs aux vagues senteurs de l'ambre, riches plafonds, miroirs profonds, splendeur orientale — tout y parlerait à l'âme en secret sa douce langue natale. Refrain (2 vers, cité tel quel dans le manuel ; **il n'est pas repris en légende p. 247**, dont le texte est tout autre) : « Là, tout n'est qu'ordre et beauté, / Luxe, calme et volupté. »
+      Support : **Baudelaire, « L'invitation au voyage »** (titre imprimé « L'invitation au voyage » ; signature « Baudelaire »). Contenu (résumé fidèle, R-2) : les deux premières strophes du poème, numérotées par vers (repères 5, 10, 15, 20, 25), **chacune suivie du refrain**. Le poète s'adresse à « mon enfant, ma sœur » et l'invite à songer à la douceur d'aller vivre ensemble là-bas, d'aimer à loisir et de mourir au pays qui lui ressemble ; les soleils mouillés de ces ciels brouillés ont pour son esprit les charmes mystérieux de ses yeux traîtres brillant à travers les larmes. Puis la chambre rêvée : meubles luisants polis par les ans, fleurs rares mêlant leurs odeurs aux vagues senteurs de l'ambre, riches plafonds, miroirs profonds, splendeur orientale — tout y parlerait à l'âme en secret sa douce langue natale. Refrain (2 vers) — **imprimé deux fois, une fois après chacune des deux strophes**, la première occurrence **sans point final**, la seconde avec ; **il n'est pas repris en légende p. 247**, dont le texte est tout autre : « Là, tout n'est qu'ordre et beauté, / Luxe, calme et volupté. »
       Consigne (verbatim) : « Les trois poèmes, celui de Baudelaire, celui de M.Carême et celui de Colette ( = poème en prose) mettent en oeuvre un langage imagé. En quoi ce type de langage est-il adapté au thème du sujet d'essai proposé plus haut ? Permet-il cependant une réflexion vraiment objective sur le sujet ? Expliquez pourquoi. »
   - _Production de l'écrit_ (p. 247)
     - « **Sujet 1** — Dans le souvenir, les lieux où nous avons été heureux sont plus beaux encore qu'ils ne le sont en réalité. Qu'en pensez-vous ? »
@@ -7013,7 +7026,7 @@ Dernière ligne du tableau : **Projet** — « Enquêter sur les lieux qui fasci
     - **Exercice 6 — « Donner un titre significatif au texte. »** (p. 263)
       Consigne (verbatim) : « Choisissez un titre pour chacun des extraits suivants et justifiez votre choix. (Attention ! le titre n'est pas obligatoirement un résumé du texte). »
       - **Extrait 1** — **Alain, _Propos sur le bonheur_** (référence telle qu'imprimée : « Alain, Propos sur le bonheur. »). Contenu (résumé fidèle, R-2) : en ce temps de vacances, le monde est plein de gens qui courent d'un spectacle à l'autre avec le désir de voir beaucoup de choses en peu de temps. Si c'est pour en parler, rien de mieux, car il vaut mieux avoir plusieurs noms de lieux à citer : cela remplit le temps. Mais si c'est pour eux-mêmes et pour réellement voir, l'auteur ne les comprend pas bien : quand on voit les choses en courant, elles se ressemblent beaucoup — un torrent, c'est toujours un torrent. Ainsi celui qui parcourt le monde à toute vitesse n'est guère plus riche de souvenirs à la fin qu'au commencement.
-      - **Extrait 2** — **H. Bosco, _Un Rameau de la nuit_** (référence telle qu'imprimée : « H. Bosco, un Rameau de la nuit. »). Contenu (résumé fidèle, R-2) : le narrateur explique pourquoi il a voyagé à pied — par simple amour du vent et de la terre ; pour être seul aussi, tout seul, sur un plateau, dans une gorge, au bord d'une rivière ; par horreur du véhicule (de presque tous les véhicules) ; enfin pour aller justement où personne ne va jamais et qui est quelquefois lieu caché de merveilles. Les lieux les plus humbles lui sont les plus chers ; il y tient depuis son enfance, par un goût inné et obsédant de la vie secrète des hommes et des choses.
+      - **Extrait 2** — **H. Bosco, _Un Rameau de la nuit_** (référence telle qu'imprimée : « H. Bosco, un Rameau de la nuit. »). Contenu (résumé fidèle, R-2) : le narrateur explique pourquoi il a voyagé à pied — par simple amour du vent et de la terre ; pour être seul aussi, tout seul, sur un plateau, dans une gorge, au bord d'une rivière ; par horreur du véhicule (de presque tous les véhicules) ; enfin pour aller justement où personne ne va jamais et qui est quelquefois lieu caché de merveilles. Le manuel enchaîne alors, tel quel : « Les plus humbles me sont les plus **chères**. » — accord au féminin, sans substantif exprimé (l'antécédent le plus proche est « merveilles ») et retour brusque à la 1ʳᵉ personne ; **transcrit sans régularisation**. Il y tient depuis son enfance, par un goût inné et obsédant de la vie secrète des hommes et des choses.
     - _Iconographie_ (p. 263) : légende seule — « La vie secrète des hommes et des choses. »
 
 - **Grammaire et sens — « Analyser les types de progression thématique »** (p. 264–267)
@@ -7104,7 +7117,7 @@ Dernière ligne du tableau : **Projet** — « Enquêter sur les lieux qui fasci
     • L'état d'esprit pendant les "visites" (Rapprochements avec "le connu").
     • L'état d'esprit après le voyage (Désillusion ? Enthousiasme ?). »
   - _La B.D. elle-même_ : les dessins ne sont pas transcriptibles, mais **les bulles et les légendes figurent en couche-texte** ; les voici, verbatim, dans l'ordre où l'extraction les livre.
-    - Bulles : « ON DIRAIT LES ARÈNES DE NÎMES » · « ÇA RESSEMBLE À LA MADELEINE » · « C'EST COMME L'ARC DE TRIOMPHE » · « ET ÇA, AU LION DE BELFORT » · « J'AI CRU VOIR NOTRE DAME... ... AVEC DES BULBES » · « ÇA, C'EST EXACTEMENT LES VOYAGES MAIS À PLAT » · « ÇA ME RAPPELLE LE MONT SAINT-MICHEL » · « FINALEMENT, ON POURRA PREVENIR LES COPAINS QUE ÇA N'EST PAS LA PEINE D'ALLER SI LOIN » · « RIEN QU'EN FRANCE, ILS ONT DÉJA TOUT VU ! »
+    - Bulles : « ON DIRAIT LES ARÈNES DE NÎMES » · « ÇA RESSEMBLE À LA MADELEINE » · « C'EST COMME L'ARC DE TRIOMPHE » · « ET ÇA, AU LION DE BELFORT » · « J'AI CRU VOIR NOTRE DAME... ... AVEC DES BULBES » · « ÇA, C'EST EXACTEMENT LES VOYAGES MAIS À PLAT » · « ÇA ME RAPPELLE LE MONT SAINT-MICHEL » · « FINALEMENT, ON POURRA PREVENIR LES COPAINS QUE ÇA N'EST PAS LA PEINE DALLER [sic — pour « D'ALLER »] SI LOIN » · « RIEN QU'EN FRANCE, ILS ONT DÉJA TOUT VU ! »
     - Légendes des monuments français figurés en marge : « L'Arc de triomphe » · « Lion de Belfort » · « Notre-Dame de Paris » · « Les Vosges » · « Mont Saint-Michel ».
     - `[?]` L'appariement bulle ↔ vignette et l'identification des pays visités ne sont pas déterminables depuis la couche-texte (les images manquent) ; l'ordre ci-dessus est celui de l'extraction, en deux colonnes aplaties.
 
@@ -7210,6 +7223,8 @@ Titre imprimé : **Projet** · intitulé exact : **« Enquêter sur les lieux qu
 
 ### Nouvelles en lecture suivie (p. 274–286)
 
+⚠️ Rappel : « **Nouvelles en lecture suivie** » est le titre **de cette fiche**, non du manuel — « lecture suivie » n'apparaît nulle part dans les 289 pages, et le manuel ne donne à cet ensemble aucun titre de section.
+
 **Constat sur l'appareil pédagogique** — question posée explicitement : **NON**, les deux nouvelles **ne portent aucun appareil de rubriques** comparable à celui des séquences. Il n'y a **ni** « Vocabulaire et sens », **ni** « Grammaire et sens », **ni** « Expression écrite », **ni** « Expression orale », **ni** encadré « Explicitation », **ni** « Application » avec exercices numérotés, **ni** « Compréhension » avec axes de lecture. Le seul appareil est un bloc final intitulé **« Pistes de recherche : »** (p. 281 pour Maupassant, p. 286 pour Prou), sans numérotation d'exercices, transcrit verbatim ci-dessous. Les deux nouvelles sont données **hors modules**, après l'auto-évaluation et le projet du module 5, et le sommaire les liste comme deux entrées autonomes (« Nouvelle : La ficelle », « Nouvelle : La reine de beauté »). Chacune s'ouvre sur une **page de garde illustrée** (p. 274, p. 282) portant le titre, le nom de l'auteur et une légende empruntée au texte lui-même.
 
 #### 1. « La ficelle », Guy de Maupassant (p. 274–281)
@@ -7260,7 +7275,7 @@ Titre imprimé : **Projet** · intitulé exact : **« Enquêter sur les lieux qu
 ⚠️ **Œuvre sous droits.** Le synopsis ci-dessous est reformulé et ne reproduit aucun passage — ce **n'était pas le cas** du premier état de cette fiche, corrigé le 2026-08-05 après la vérification R-7 (§ 7.5). Suzanne Prou (1920-1995) ; les dates ne sont pas imprimées dans le manuel, qui ne donne pour cette nouvelle **ni encadré biographique, ni référence bibliographique de fin, ni date de publication** : seuls le titre et le nom de l'autrice figurent, sur la page de garde p. 282. Le sommaire p. 288 porte « Nouvelle : La reine de beauté — Suzanne Prou — 282 ».
 
 - **Page de garde (p. 282)** : titre « La reine de beauté », autrice « Suzanne Prou », plus une légende d'illustration empruntée au texte de la nouvelle (non reprise ici — œuvre sous droits).
-- **Mise en page** : texte courant p. 283–286, **numéroté par lignes de 5 en 5** (repères 5 à 170 ; le texte compte environ 171 lignes). Aucune note de bas de page, aucun lexique en marge. **Aucune** ligne n'est appelée par les « Pistes de recherche » (contrairement à Maupassant).
+- **Mise en page** : texte courant p. 283–286, **numéroté par lignes de 5 en 5** (repères 5 à 170 ; le texte compte exactement 171 lignes). Aucune note de bas de page, aucun lexique en marge. **Aucune** ligne n'est appelée par les « Pistes de recherche » (contrairement à Maupassant).
 - **Synopsis** — ⚠️ délibérément **bref et intégralement reformulé**. Un premier état de cette fiche portait un résumé en douze étapes qui décalquait la nouvelle phrase à phrase : la vérification R-7 du 2026-08-05 y a mesuré 35 % des mots en suites de cinq mots ou plus identiques au texte, dont une clausule de dix-neuf mots reproduite telle quelle. C'était une reproduction déguisée en résumé, sur une œuvre sous droits. Le texte ci-dessous la remplace. Il situe la nouvelle ; il ne la remplace pas et ne prétend pas s'y substituer.
 
   Une narratrice du village se souvient d'une jeune femme de vingt ans, petite-fille d'immigrés piémontais établis dans un bourg du Midi. Modiste, belle et sachant l'être, admirée sans être aimée, elle éconduit les partis qu'on lui présente et attend du cinéma une vie que son milieu ne peut lui offrir. Un concours de beauté organisé dans la ville voisine, dont le jury comprend des gens de cinéma, lui paraît l'occasion attendue ; le bourg s'associe à ses préparatifs et tient son élection pour acquise. Elle est écartée sur des critères de mensurations, au terme d'une sélection qu'elle éprouve comme une humiliation physique, et rentre le soir même. La nouvelle se referme sur un second portrait qui défait terme à terme le premier : la beauté évanouie avec la certitude de la posséder, le prestige perdu, une vieillesse solitaire passée à coudre sans plus rien espérer. **Un demi-siècle sépare les deux portraits** — c'est le ressort de la chute, et l'objet des « Pistes de recherche ».
@@ -7324,7 +7339,7 @@ Titre imprimé : **SOMMAIRE**. Colonne de droite intitulée « Pages ». Les mod
 Observations sur le sommaire :
 - Il ne recense **que** les textes d'explication de texte : ni les rubriques Vocabulaire / Grammaire / Expression écrite / Expression orale, ni les auto-évaluations, ni les projets n'y figurent.
 - Ses renvois de pages pour le module 5 (**236**, **248**, **259**, ouverture **234**) **contredisent frontalement le tableau de la p. 235** (244, 256, 267) et **coïncident avec les pages réelles**. C'est la deuxième preuve du décalage de +8 (voir Incertitudes).
-- « Mondamoiseau » `[sic]` (l'usage donnerait « Mondemoiseau ») ; « R.M. Du Gard » avec majuscule à « Du » ici, contre « R.M.du Gard » dans le module 4.
+- « Mondamoiseau » `[sic]` (l'usage donnerait « Mondemoiseau ») ; « R.M. **Du** Gard » — le sommaire est la **seule** occurrence de la majuscule à « Du » dans tout l'ouvrage. Le module 4 imprime « R.M. **du** Gard » (avec espace) p. 194 et p. 202, et « R.M.**du** Gard » (sans espace) p. 195, deux fois : la divergence du sommaire porte donc sur la majuscule, celle de la p. 195 sur l'espace — ce sont deux variations distinctes.
 
 ---
 
@@ -7369,7 +7384,7 @@ Observations sur le sommaire :
 - **Nouvelles — points de détail** :
   - « La ficelle » : la numérotation des lignes est imprimée de 5 en 5 (repères 5 à 220). Les « Pistes de recherche » citent « L. 218 → L. 221 » ; les numéros 218 et 221 ne sont **pas** imprimés en marge — ils s'interpolent entre les repères 215 et 220. Sur cette interpolation, L. 218 correspond à la phrase où Hauchecorne s'alite (fin décembre) et L. 221 à sa dernière réplique dans le délire de l'agonie. L'appariement est cohérent mais **déduit**, non lu.
   - « La reine de beauté » : le nom de famille de l'héroïne est orthographié **« Mondoloni »** au début (p. 283) et **« Mondolini »** pour la mère (p. 285) — incohérence de la source, non corrigée ici. Par ailleurs, la liste d'actrices des années 1930 comporte un nom qui paraît fautif (« Joan Harlow » là où l'usage donne « Jean Harlow ») ; l'observation est consignée sans reproduction du passage, l'œuvre étant sous droits.
-  - Le nombre exact de lignes de « La reine de beauté » (repères imprimés jusqu'à 170) est donné à ± 2 lignes : aucun appel des « Pistes de recherche » n'y renvoie, donc rien n'en dépend.
+  - Le nombre de lignes de « La reine de beauté » est **exactement 171** : le dernier repère imprimé est 170, et une seule ligne le suit avant le bloc « Pistes de recherche ». Point tranché, plus une incertitude.
 - **Choix de transcription assumés** : (a) la numérotation des séquences suit le gabarit (5.1, 5.2, 5.3) alors que les bandeaux du manuel impriment « Séquence 1 », « Séquence 2 », « Séquence 3 » ; (b) dans ce module, il n'existe **pas** de rubrique « Débat » autonome comme dans certains autres modules : le débat est **entièrement contenu dans « Expression orale »** (p. 243, 255, 268) — la fiche l'a donc rattaché à cette rubrique ; (c) les textes littéraires sont identifiés et résumés, jamais reproduits (R-2), y compris ceux du domaine public (Baudelaire, Hugo, Vigny, Flaubert, Rimbaud, Maupassant) ; seul l'appareil pédagogique du CNP est transcrit verbatim ; (d) l'œuvre de Suzanne Prou, sous droits, ne devait faire l'objet d'**aucune** citation — cette règle a été **enfreinte** par le premier état de la fiche et rétablie le 2026-08-05 (§ 7.5).
 
 ---
@@ -7439,7 +7454,7 @@ Chaque module porte, en fin de sa section au § 4, une sous-section **« Incerti
 
 1. **Le tableau du module 5 (p. 235) est faux de +8 pages sur ses 16 renvois, sans exception.** Il annonce l'explication de texte de la séquence 1 « p. 244 » (réelle : p. 236), Rimbaud « p. 256 » (réelle : p. 248), Jouffroy « p. 267 » (réelle : p. 259), le projet « p. 281 » (réel : p. 273). Deux preuves internes le contredisent : le sommaire de l'ouvrage (p. 288) et les bandeaux des pages elles-mêmes. Le défaut est **localisé à ce seul tableau** — vérifié : la note d'auto-évaluation p. 272 (« pp. 61, 130, 191, 232 ») tombe exactement juste, et les tableaux homologues des modules 3 (p. 133) et 4 (p. 194) sont exacts. **La fiche retient partout les pages réelles constatées ; à ne pas « corriger » dans l'autre sens.**
 2. **Référence de pied fausse sous « Sensation » (p. 248)** : le manuel crédite le poème à « Ma bohème », qui est un autre poème de Rimbaud.
-3. **Coquilles du tableau p. 194 uniquement** : « Maîtiser le lexique des métiers » et « Recourir à diffférents modes de raisonnement ». Les rubriques elles-mêmes impriment correctement « Maîtriser » (p. 209) et « différents » (p. 216). Au total, **70 occurrences de `[sic]`** marquent des coquilles de la source dans les cinq modules (comptage mécanique des occurrences, pas des coquilles distinctes — une même coquille répétée est marquée à chaque fois).
+3. **Coquilles du tableau p. 194 uniquement** : « Maîtiser le lexique des métiers » et « Recourir à diffférents modes de raisonnement ». Les rubriques elles-mêmes impriment correctement « Maîtriser » (p. 209) et « différents » (p. 216). Au total, la fiche pose **74 marqueurs** (mention *sic* entre crochets) — comptage reproductible : occurrences de cette chaîne littérale dans la fiche. ⚠️ Ne pas compter le mot seul sans crochets : il apparaît comme sous-chaîne dans d'autres mots et gonfle le total de moitié. Quelques occurrences sont des mentions de la convention elle-même, pas des coquilles. 235. Comptage mécanique des marqueurs effectivement posés dans le corps de la fiche, pas des coquilles distinctes — une même coquille répétée est marquée à chaque fois. Pour refaire le compte : le jeton apparaît **125** fois dans le fichier, dont **11** occurrences réparties dans les **10** phrases qui parlent de la convention `[sic]` elle-même (titres de sous-sections, cette phrase-ci) et qui ne marquent donc rien ; 125 − 11 = 114.
 4. **Divergences tableau ↔ page de rubrique** sur quelques intitulés (ponctuation, majuscule : « Monsieur ou **m**ondamoiseau ? » vs « **M**ondamoiseau ») : les deux formes sont données là où elles diffèrent.
 
 ### 7.2 Ce que la couche-texte ne porte pas — la seule vraie limite pour le LOT B
@@ -7456,7 +7471,7 @@ Les deux matières du tronc de ce niveau font le même montage ⚭×4 (un dossie
 
 ### 7.4 Points ouverts, mineurs
 
-- Trois renvois du module 4 pointent hors de son périmètre et n'ont pas été rouverts (pp. 171-173, 176-177, 269-271) ; « voir exercice 4, p. 218 » (p. 231) pointe une page trop tôt par rapport à la définition visée.
+- Trois renvois du module 4 pointent hors de son périmètre et n'ont pas été rouverts (pp. 171-173, 176-177, 269-271).
 - Deux incohérences internes dans « La reine de beauté » (Mondoloni / Mondolini ; « Joan Harlow »), qui sont de la source.
 - Le manuel ne donne à Suzanne Prou **ni encadré biographique, ni référence bibliographique, ni date** — contrairement à tous les autres auteurs de l'ouvrage.
 
