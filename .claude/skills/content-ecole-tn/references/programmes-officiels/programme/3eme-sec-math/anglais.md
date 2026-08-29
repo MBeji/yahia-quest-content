@@ -6495,7 +6495,7 @@ inquiétude sur le point d'arrêt des scientifiques autorisés à « play God »
 contrôler ce qu'ils déclenchent ; enfin l'usage que des gouvernements pourraient faire de la
 génétique — tenter de créer « the perfect baby » ou de concevoir une « master-race ».
 
-Les huit jeux d'alternatives : _(has evolved / evolves / **evolved**)_ · _(stones / **blocks** /
+Les huit jeux d'alternatives : _(**has evolved** / evolves / evolved)_ · _(stones / **blocks** /
 bricks)_ · _(are / have been / **will**)_ · _(**how** / why / when)_ · _(**might** / must / need to)_ ·
 _(heads / **hands** / eyes)_ · _(in / by / **on**)_ · _(**before** / while / after)_.
 
@@ -6504,7 +6504,12 @@ d'énumération : _To begin with… · furthermore… · Lastly…_).
 
 _Corrigé du guide (p.57)_ : « has loved [sic] – blocks – will – how – hands – on – before ».
 ⚠️ Le corrigé imprime « **has loved** » là où le texte propose _(has evolved / evolves / evolved)_ :
-coquille manifeste du guide, et le corrigé ne donne que **7** formes pour 8 trous. Voir §6.
+coquille manifeste du guide pour **has evolved** — c'est bien le present perfect qui est la clé, la
+phrase décrivant un processus commencé il y a des milliers d'années et qui se poursuit. _(Corrigé le
+2026-08-17 : cette fiche mettait initialement en gras `evolved` seul, ce qui était le jugement du
+transcripteur et non celui du guide.)_
+⚠️ Et le corrigé ne donne que **7** formes pour **8** trous : le trou sans réponse est le **cinquième**,
+_(might / must / need to)_ — les sept formes données couvrent les trous 1, 2, 3, 4, 6, 7 et 8. Voir §6.
 
 #### Activity 5 (manuel p.150–151) — formation des mots (opinion favorable au génie génétique)
 
@@ -9545,7 +9550,7 @@ dans les blocs de module) :
 | Consolidation 1, Activity 13   | le corrigé ne traite que **11** des **12** lignes : la ligne `cooperate` du manuel n'a pas de clé |
 | Consolidation 1, Activity 9    | glose « cause someone to become very angry » corrigée par « set off » — emploi inattendu       |
 | Consolidation 2, Activity 3    | `genes` (banque du manuel) n'est classé dans **aucune** des deux colonnes du corrigé           |
-| Consolidation 2, Activity 4    | corrigé « has **loved** » là où le choix imprimé est _has evolved / evolves / evolved_ ; **7** formes pour **8** trous |
+| Consolidation 2, Activity 4    | corrigé « has **loved** » là où le choix imprimé est _has evolved / evolves / evolved_ — coquille pour **has evolved**, qui est la clé ; et **7** formes pour **8** trous, le trou non traité étant le **cinquième**, _(might / must / need to)_ |
 | Consolidation 2, Activity 7    | corrigé « moves » là où le manuel imprime `(love)`                                             |
 | Consolidation 2, Activity 9    | corrigé « as we had **expected** » ; le manuel imprime « as we had **anticipated** »           |
 | Module Two (Exploring grammar) | « She has done so since she was five » est rangé en colonne **simple past** dans le manuel **et** dans le guide — c'est un **present perfect**. Erreur de fond **commune aux deux sources** |
