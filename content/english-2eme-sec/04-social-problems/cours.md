@@ -89,7 +89,7 @@ Lesson 10 opens on a statistical table, and the exam does the same. Four reflexe
 3. **Read a row across, and a column down.** Across the years, a row that grows shows an **increase**, a row that shrinks shows a **decrease**. Down a column, you find **the highest** and **the lowest** figure of that year.
 4. **`na` means not available.** Where a cell says _na_, you cannot conclude anything at all about it — not even that the figure is small.
 
-A conclusion is a sentence the **figures** support. _Most working children are in Asia, and the share of Europe is very small_ is a conclusion. _People in Asia do not care about their children_ is not: no figure says it, and it accuses a whole population.
+A conclusion is a sentence the **figures** support. _One region holds most of the working children, and another holds almost none_ is a conclusion: every word of it can be read off the table. A judgement on the families behind those figures is not a conclusion: no table has ever counted what a family feels, and blaming a whole population is not reading a table — it is accusing one. Say what the figures count, and stop there.
 
 ## 🥇 Comparing: the comparative and the superlative
 
@@ -112,10 +112,11 @@ Six pairs are **irregular**, and they are the ones the reading text uses.
 | **good**           | better                   | the best                             |
 | **bad**            | worse                    | the worst                            |
 | **little**         | less                     | the least                            |
-| **much** (uncountable) / **many** (countable) | more    | the most                             |
+| **much** (uncountable) | more                     | the most                             |
+| **many** (countable)   | more                     | the most                             |
 | **far**            | farther / further        | the farthest / the furthest          |
 
-Three rules of use finish the point. The superlative always keeps **the** in front of it: _the fastest_, never "fastest" alone. It takes **in** before a place or a group seen as a place (_the largest town **in** the north_) and **of** before a number or a period (_the largest **of** the three_, _the best **of** all_). And it works on adverbs as well: _They work **the longest** hours_ — same forms, same _the_.
+Three rules of use finish the point. The superlative always keeps **the** in front of it: _the fastest_, never "fastest" alone. It takes **in** before a place or a group seen as a place (_the largest town **in** the north_) and **of** before a number or a period (_the largest **of** the three_, _the best **of** all_). And it works on **adverbs** as well, where the word that carries the mark says how the action was done and never names a thing: _Of the three, Rania **worked the hardest**_ · _Nizar **explained the most clearly**_ — same forms, same _the_, and an adverb in _-ly_ always takes **the most**.
 
 > ⚠️ Never mark the comparison twice: "more better" ✗, "the most largest" ✗. One mark is enough — either the ending or the word in front of it, never both.
 
@@ -129,7 +130,7 @@ Lesson 11 ends on a table that names three intentions. Here it is, with the exam
 | **let** somebody **do** something  | **permission** — the choice is granted | _Her parents **let** her **join** the drama club._ |
 | **have** somebody **do** something | **request** or weak obligation — you arrange it with somebody whose job it is | _The head teacher **had** the caretaker **open** the hall._ |
 
-The one form to remember: after _make_, _let_ and _have_, the second verb is a **bare infinitive** — the infinitive **without _to_**. _He made me **write** it again._ ✓ · "He made me to write it again." ✗
+The one form to remember: after _make_, _let_ and _have_, the second verb is a **bare infinitive** — the infinitive **without _to_**. _The nurse made him **sit** down._ ✓ · "The nurse made him to sit down." ✗
 
 > 🗡️ **let** and **allow** mean the same thing and are built the opposite way: _They **let** him **leave** early._ ✓ · _They **allowed** him **to leave** early._ ✓ · "They allowed him leave early" ✗ · "They let him to leave early" ✗.
 
@@ -137,7 +138,7 @@ Two more details worth marks. _make_ + object + **adjective** exists too, and th
 
 ## 🔊 One note on stress
 
-The long nouns of this theme all end in **-tion** or **-sion**, and they all put the strong beat on the syllable **just before** that ending: _educ**a**tion_, _construc**tion**_ — more precisely _edu-**ca**-tion_, _con-**struc**-tion_, _depri-**va**-tion_, _exploi-**ta**-tion_. Find the ending, step back one syllable, and you have the stress.
+The long nouns of this theme all end in **-tion** or **-sion**, and they all put the strong beat on the syllable **just before** that ending: _educ**a**tion_, _con**struc**tion_ — more precisely _edu-**ca**-tion_, _con-**struc**-tion_, _depri-**va**-tion_, _exploi-**ta**-tion_. Find the ending, step back one syllable, and you have the stress.
 
 ## ⚠️ The trap wall
 
@@ -151,6 +152,6 @@ The long nouns of this theme all end in **-tion** or **-sion**, and they all put
 | "This is the more difficult exercise."   | _This is the **most** difficult exercise._     | _more_ compares two, _most_ ranks among several        |
 | "It was the most bad result of the year."| _It was **the worst** result of the year._     | _bad_ is irregular: worse, the worst                   |
 | "My father let me to drive his car."     | _My father **let** me **drive** his car._      | after _make_, _let_, _have_: no _to_                   |
-| "The teacher made him to apologize."     | _The teacher **made** him **apologize**._      | same rule, same bare infinitive                        |
+| "She is the best pupil of the school."   | _She is the best pupil **in** the school._     | _in_ before a place, _of_ before a number or a period  |
 
 > 🏆 You can now sort a noun before you write it, put the right quantifier in front of it, read a table of figures without saying more than they say, rank three things instead of two, and tell an obligation from a permission. Next quest: **Attitudes and Values** — money, rights and the words that judge them.

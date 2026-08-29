@@ -26,7 +26,7 @@ What is not easy is seeing the border. A **fact** is something anybody can check
 
 ## 🔗 Naming a result — the conjunctive adverbs
 
-In Theme II you learnt to name the **cause** (_because_, _since_, _as_, _because of_) and to name the **result** with **so**. Here you look at the same link from the other end, and at a higher level of language: the **conjunctive adverbs** — the name the book itself gives them.
+In Theme II you met this link once already: the **cause** (_because_, _since_, _as_, _because of_) and the **result** (_so_, and a first look at _therefore_, _as a result_ and _that's why_). Here you take the result end apart — what these three really are, how they are punctuated, where they may stand, and which of them belongs to which register. The book gives them their name: the **conjunctive adverbs**.
 
 | Linker          | Relation           | Example                                                             |
 | --------------- | ------------------ | ------------------------------------------------------------------- |
@@ -43,7 +43,7 @@ In Theme II you learnt to name the **cause** (_because_, _since_, _as_, _because
 | with the conjunction **so**      | _The line was cut**, so** we waited._ (comma before, nothing after)         |
 | with **therefore / as a result** | _The line was cut**;** **therefore,** we waited._ (semicolon, then a comma) |
 | with **therefore / as a result** | _The line was cut**.** **Therefore,** we waited._ (full stop, then a comma) |
-| with **that's why**              | _The line was cut**.** **That's why** we waited._ (no comma after it)       |
+| with **that's why**              | _The line was cut**.** **That's why** we waited._ · _The line was cut**;** **that's why** we waited._ (full stop or semicolon in front, no comma after it) |
 
 > ⚠️ **The comma splice — the mistake that costs most marks here.** "The line was cut, therefore we waited." ✗ Two complete clauses separated by nothing but a comma. Your own language allows exactly this; English does not. Close the first clause: **;** or **.**
 
@@ -54,9 +54,9 @@ An adverb moves; a conjunction never does. **therefore** and **as a result** hav
 - at the **head** of the clause: _**Therefore,** the coach turned back._
 - between the **subject and the verb**: _The coach **therefore** turned back._
 - between **two commas** around the subject: _The coach**, therefore,** turned back._
-- ✗ **never** between the verb and what follows it: "The coach turned **therefore** back at Fernana." ✗ — that slot belongs to your own language, not to English.
+- ✗ **never** between the verb and what follows it: "The coach turned **therefore** back at Fernana." ✗ — English keeps that slot closed.
 
-**that's why** is the exception: it is a whole little clause (_that is why_), so it stays at the **head** of its sentence and moves nowhere.
+**that's why** is the exception: it is a whole little clause (_that is why_), so it stays at the **head** of its own clause and moves nowhere. And because it opens a **clause** and not an adverb slot, careful writing closes what comes before it with a full stop or a **semicolon**: _It's Sunday**;** **that's why** most shops are closed._ The comma you hear in speech (_He was ill, that's why the training was cancelled_) goes with the spoken register this linker belongs to anyway; it has no place in a report or a composition.
 
 ### Which one, and where — the register
 
@@ -70,9 +70,9 @@ The three linkers say the same relation and do **not** live in the same places.
 
 _In her report Mouna wrote: "The workshop lost two of its three customers. **Therefore,** it closed in June." In the corridor she told her friend: "They lost two customers out of three — **that's why** they closed in June." Same fact, same link, two registers._
 
-> 🗡️ **One link, one linker.** "Because the coach was ill, that's why the training was cancelled" ✗ names the same link twice. Choose one end and stay there.
+> 🗡️ **One link, one linker** — the rule you met in Theme II, and it bites here too. "Because the price of paper rose, therefore the magazine stopped" ✗ names the same link twice. Choose one end and stay there: _Because the price of paper rose, the magazine stopped._ ✓ or _The price of paper rose; therefore, the magazine stopped._ ✓
 
-## 🕊️ Songs of freedom — the words of lesson 13
+## 🕊️ The words of freedom — lesson 13
 
 Lesson 13 is a listening lesson built on a song, and its vocabulary is the vocabulary of a community that decides how to live together.
 
@@ -84,7 +84,7 @@ Lesson 13 is a listening lesson built on a song, and its vocabulary is the vocab
 
 | Sound    | Heard in                          | The trap                                                             |
 | -------- | --------------------------------- | ---------------------------------------------------------------------- |
-| **/ʌ/**  | l**o**ve, **o**ther, m**o**ney, tr**ou**ble | the letter _o_ very often says /ʌ/, never the /o/ of your own language |
+| **/ʌ/**  | l**o**ve, **o**ther, m**o**ney, tr**ou**ble | the letter _o_ very often says /ʌ/, never the pure /o/ you may expect from the letter |
 | **/aʊ/** | s**ou**nd, ar**ou**nd, d**ou**bt, pr**ou**d | a wide-open mouth that closes: two sounds run into one                |
 | **/ʃ/**  | pre**c**ious, expre**ss**ion, ma**ch**ine, **s**ure | the same hushing sound written _c_, _ss_, _ch_ or _s_          |
 
@@ -99,14 +99,15 @@ This is the form English uses to tell somebody to do something. It is the shorte
 | tell somebody to do it     | **base verb**                  | _**Close** the window._          |
 | tell somebody not to do it | **don't + base verb**          | _**Don't close** the window._    |
 | include yourself in it     | **let's + base verb**          | _**Let's close** the window._    |
-| exclude yourself from it   | **let's not + base verb**      | _**Let's not** waste the time._  |
+| exclude yourself from it   | **let's not + base verb**      | _**Let's not** waste any more time._ |
 
 The subject is not written because it is understood: the person in front of you. Add **please** at the head or at the end to soften it (_**Please** sit down._ · _Sit down, **please**._), and **do** in front of the verb to insist (_**Do** be careful._).
 
-**Four values, one form.** The words are the same; the situation decides.
+**Five values, one form.** The words are the same; the situation decides.
 
 - an **instruction**: _Take one tablet after each meal._
 - a piece of **advice**: _Revise the irregular verbs first._
+- a **warning**: _Mind the step._ · _Be careful with that door._
 - a **prohibition**: _Don't leave your bag in the doorway._
 - an **invitation or a suggestion** that includes the speaker: _Let's start again from the top._
 
@@ -122,7 +123,7 @@ A **question tag** is the short question stuck to the end of a statement to ask 
 
 **The rule in three moves.**
 
-1. **The auxiliary of the statement comes back** in the tag — _be_, _have_, _will_, _would_, _can_, _should_, _must_. If the statement has **no auxiliary**, the tag borrows **do / does / did**: _The bank lent him the money, **didn't it**?_
+1. **The auxiliary of the statement comes back** in the tag — _be_, _have_, _will_, _would_, _can_, _should_, _must_. If the statement has **no auxiliary**, the tag borrows **do / does / did**: _The school lent her the projector, **didn't it**?_
 2. **The polarity turns over**: positive statement → **negative** tag; negative statement → **positive** tag.
 3. **The subject becomes a pronoun**: _Wassim and Rania have left, haven't **they**?_
 
@@ -130,12 +131,12 @@ A **question tag** is the short question stuck to the end of a statement to ask 
 | ---------------------------------- | ------------------ |
 | The letter has come,               | **hasn't it?**     |
 | The letter hasn't come,            | **has it?**        |
-| You shouldn't sign that,           | **should you?**    |
-| He isn't coming back,              | **is he?**         |
+| You shouldn't answer that,         | **should you?**    |
+| She isn't coming back,             | **is she?**        |
 
 **The special cases the summary does not print — and the exam does ask.**
 
-- **I am** → **aren't I**: _I'm late, **aren't I**?_ (there is no _amn't_ in English). But _I'm not late, **am I**?_
+- **I am** → **aren't I**: _I'm late, **aren't I**?_ (there is no _amn't_ in English). But _I'm not ready, **am I**?_
 - an **imperative** → **will you**: _Close the door, **will you**?_ · a **let's** sentence → **shall we**: _Let's leave at six, **shall we**?_
 - **there is / there are** keep **there**: _There's a problem, **isn't there**?_
 - **everybody, somebody, nobody, no one** → **they**, even though the verb was singular: _Everybody has signed the form, **haven't they**?_
@@ -172,6 +173,8 @@ Lesson 14 closes on a discussion, and gives you the three moves it needs.
 | **give your reasons**   | _To start with…_ · _That's the reason why…_ · _For this reason…_ · _When you consider that…_ |
 
 Notice the shape of a real disagreement: you never begin with the refusal. You grant something (_You have a point_), then you turn (_but_), then you explain (_To start with…_). Refusing without explaining is not a viewpoint; it is a wall.
+
+> ⚠️ **Every sentence must earn its place.** A paragraph defends **one** idea. A sentence may be perfectly true and still have to go, because it proves nothing about that idea. Before you keep a line, ask what it adds to the point you are making — if the answer is nothing, cross it out.
 
 ## ⚠️ The trap wall
 
