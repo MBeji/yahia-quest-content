@@ -1,20 +1,20 @@
 # Rapport d'audit — **english-bac**, tranche 4 (chapitres 10 et 11)
 
 > **Généré** : 2026-08-17 · **Empreinte** : `wip/content-english-bac-ch10-12@5741a1ba`.
-> **Périmètre audité** : `10-put-a-little-drama-in-your-travel` et `11-the-winters-tale` — 46 questions.
-> ⚠️ **`12-school-related-words` N'A PAS D'AUDIT.** Ne pas merger la tranche sans le sien.
+> **Périmètre audité** : les **trois** chapitres de la tranche — 69 questions. Audit complet.
 > **Méthode** : un auditeur par chapitre, contexte vierge, n'ayant écrit aucune ligne de ce qu'il
 > relit, avec les onze autres chapitres en croisement. Re-résolution **à l'aveugle** de chaque clé.
 > **Lecture seule — aucune correction appliquée.** Ce document est la **worklist**.
 
 ## Synthèse
 
-| | ch.10 | ch.11 |
-| --- | --- | --- |
-| clés re-résolues à l'aveugle | 23 | 23 |
-| **clés fausses** | **0** | **0** |
-| BLOCKER | 0 | **2** |
-| MAJOR | 9 | 6 |
+| | ch.10 | ch.11 | ch.12 |
+| --- | --- | --- | --- |
+| clés re-résolues à l'aveugle | 23 | 23 | 23 |
+| **clés fausses** | **0** | **0** | **0** |
+| BLOCKER | 0 | 2 | **4** |
+| MAJOR | 9 | 6 | **14** |
+| items rejouant un exemple du cours (**compte LU**) | **10/23** | — | **16/23** |
 
 ## ⚠️ Ce que ces deux audits apprennent sur l'INSTRUMENT
 
@@ -48,6 +48,34 @@ La matière compte **12 `ordering` et 13 `matching`** — mes briefs annonçaien
 - **Noms propres du récit (ch.11)** : zéro occurrence dans les fichiers de questions.
 - **Les quatre retouches de forme de l'orchestrateur** : validées par les deux auditeurs.
 - **Aucun point de grammaire inventé** au ch.10, dont la colonne *Functions* est vide au syllabus.
+
+## Le chapitre 12 — la forme la meilleure, le fond le pire
+
+Clés parfaitement réparties (5/5/5/5), 0 % de clé la plus courte, deux `ordering` strictement
+forcés, aucun distracteur défendable — et **16 items sur 23 (70 %) rejouent un exemple du cours**.
+`01-pratique` est recyclé **6 fois sur 6**. C'est la démonstration la plus nette que les mesures de
+forme et la qualité du fond sont deux axes indépendants.
+
+Ses quatre blockers sont tous de la famille « l'item vient du cours » :
+les quatre options d'un item sont **les quatre mots d'une seule phrase du cours**, avec son
+classement ; une clé est **les deux titres en gras du cours mis bout à bout**, ses distracteurs
+étant les non-mots que le cours énumère ; trois options sur quatre d'un autre sont **les trois
+phrases d'exemple du cours**, un mot glissé dans chacune.
+
+⚠️ **Le quatrième blocker était le mien.** En ramenant un `multi` de 8 à 6 options pour le schéma,
+j'ai laissé **l'explication de la version supprimée** : elle annonçait « Four words… The four
+others… Two are adjectives » pour un item devenu 3 clés / 3 distracteurs / 1 adjectif. Seule erreur
+de fait délivrée à l'élève de toute la tranche, sur un item noté tout ou rien. **Corrigée le
+2026-08-17.** Le fond du correctif, lui, est validé par l'audit : les trois clés sont indiscutables
+et les trois distracteurs indiscutablement faux.
+
+**Arbitrages confirmés** : mon jugement sur `attendance` (+1 caractère, faux positif de la mesure
+sur une question de formation de mots) est **confirmé** — mais l'item a un autre défaut, il rejoue
+le paragraphe du cours, sur la porte du chapitre. Les **deux mains** qui ont écrit ce chapitre sont
+cohérentes, et la seconde est nettement la plus propre (3 items recyclés sur 6, contre 13 sur 17).
+
+**Le geste le plus rentable, chiffré par l'auditeur** : onze constats se corrigent **entièrement
+côté `cours.md`/`resume.md`**, sans toucher un seul item calibré.
 
 ---
 
@@ -1568,3 +1596,956 @@ plus longue » et l'ont bien supprimée (chapitre passé de 19 % à 10 %) :
 | `02-boss` Q3 `c` (+ « , each one dated in pencil ») | clé `b` 189 était la plus longue (c=180) → c=206 | ✅ | faux ✅, plausible ✅ | ⚠️ valide, mais approfondit une invention préexistante — **m-2** |
 | `02-boss` Q6 `a` (« before dawn » → « before first light ») | clé `c` 55 était la plus longue (a=53) → a=60 | ✅ | l'option reste **vraie** (donc reste un bon leurre) ✅ | ⚠️ valide, mais ajoute du lexique hors leçon — **m-3** |
 | `quiz` Q2 `b` (« has just arrived » → « has only just arrived ») | clé `a` 58 était la plus longue (b=56) → b=61 | ✅ | faux ✅, plausible ✅ | ✅ valide sans réserve |
+
+---
+
+# AUDIT — chapitre 12
+
+# AUDIT — `content/english-bac/12-school-related-words/` (23 questions)
+
+Auditeur indépendant, contexte vierge, n'a écrit aucune ligne de ce chapitre.
+**Aucun fichier du corpus modifié.** Toutes les corrections ci-dessous sont prêtes à coller.
+
+Périmètre : `quiz.json` (5) · `exercices/01-pratique.json` (6) · `exercices/02-boss.json` (6) ·
+`exercices/03-revision.json` (6) = **23 questions**.
+Racine : `D:\11-coding\YahiaAcademy\campagnes-tronc-commun\wt\anglais-bac\corpus` ·
+branche `wip/content-english-bac-ch10-12`.
+
+Statut : **TERMINÉ** — 23/23 clés re-résolues à l'aveugle.
+**4 BLOCKER · 14 MAJOR · 14 MINOR · 0 clé fausse.**
+
+---
+
+## En une phrase
+
+**La forme est la meilleure de la tranche ; le fond est le pire.** Clés parfaitement réparties
+(a=5 b=5 c=5 d=5), zéro clé la plus courte, une seule clé la plus longue — et **16 items sur 23
+rejouent un exemple du cours**, contre 10/23 au chapitre 10. Deux exercices sur trois se laissent
+résoudre en ayant relu `cours.md` sans jamais raisonner. Un item du boss délivre en plus une
+**explication factuellement fausse** depuis la correction de schéma.
+
+---
+
+## 0. Mesures mécaniques — recalculées par moi, pas reprises de l'en-tête
+
+```
+23 questions · 20 mcq + 2 ordering + 1 multi
+
+1a. clé strictement la plus LONGUE : 1/20 ( 5 %)  — cible 0 %     OK (le cas est discuté §4)
+1b. clé strictement la plus COURTE : 0/20 ( 0 %)  — cible ≤ 25 %  OK — le meilleur de la matière
+2.  répartition des clés : a=5 · b=5 · c=5 · d=5  (25 % chacune)  PARFAIT
+3.  difficulté des questions : 1–3 partout                        OK
+4.  fragments ≥ 20 car. partagés avec cours.md / resume.md : 40   cible 0 -> le plus haut
+                                                                  de la matière (ch.10 : 23, ch.11 : 27)
+5.  formats : 2 ordering, 0 matching, 1 multi                     -> MAJOR-14
+6.  fichiers, titres, xpReward/rewardCoins/displayOrder            conformes au brief
+```
+
+Les cinq plus gros fragments :
+
+| # car. | Où | Verdict |
+| --- | --- | --- |
+| 54 | `02-boss` Q1, **énoncé** | 🟥 **BLOCKER-3** — signalé par l'orchestrateur, confirmé |
+| 39 | `01-pratique` Q2, explication | 🟧 **MAJOR-6** — signalé, confirmé |
+| 38 | `02-boss` Q1, **énoncé** | 🟥 même item (deuxième fragment) |
+| 36 | `quiz` Q3, explication | 🟨 minor-12 — reprise de la règle enseignée, tolérée |
+| 35 | `quiz` Q5, **énoncé** | 🟧 **MAJOR-8** |
+
+⚠️ Le scan flague **16 items**. Ma lecture item par item en trouve **16 aussi — mais pas les
+mêmes**. 13 seulement sont communs : le scan **rate** `02-boss` Q2, `03-revision` Q1 et
+`03-revision` Q4, et **lève** `quiz` Q1/Q2/Q3 que j'acquitte (gloses d'une règle enseignée, dans
+l'explication). Confirmation de l'avertissement de la tranche : **un compte de fragments ne dit
+jamais quels items sont malades.**
+
+---
+
+## 1. Journal de re-résolution à l'aveugle — 23/23
+
+| Item | Ma réponse | Clé | Accord | Recycle le cours ? |
+| --- | --- | --- | --- | --- |
+| `quiz` Q1 | c | c | ✅ | non (définition appliquée à un cas neuf) |
+| `quiz` Q2 | a | a | ✅ | non |
+| `quiz` Q3 | d | d | ✅ | non (l'explication seule) |
+| `quiz` Q4 | b | b | ✅ | **oui** — MAJOR-7 |
+| `quiz` Q5 | c | c | ✅ | **oui** — MAJOR-8 |
+| `01-pratique` Q1 | c·e·a·d·b | idem | ✅ | **oui** — MAJOR-5 |
+| `01-pratique` Q2 | d | d | ✅ | **oui** — MAJOR-6 |
+| `01-pratique` Q3 | a | a | ✅ | **oui** — MAJOR-4 |
+| `01-pratique` Q4 | b | b | ✅ | **oui** — MAJOR-3 |
+| `01-pratique` Q5 | c | c | ✅ | **oui** — BLOCKER-2 |
+| `01-pratique` Q6 | a | a | ✅ | **oui** — MAJOR-2 |
+| `02-boss` Q1 | b | b | ✅ | **oui** — BLOCKER-3 |
+| `02-boss` Q2 | a·c·d | a·c·d | ✅ | **oui** — BLOCKER-1 / MAJOR-10 |
+| `02-boss` Q3 | d | d | ✅ | non |
+| `02-boss` Q4 | c | c | ✅ | **oui** — MAJOR-9 |
+| `02-boss` Q5 | a | a | ✅ | **oui** — BLOCKER-4 |
+| `02-boss` Q6 | d | d | ✅ | **oui** (léger) — minor-4 |
+| `03-revision` Q1 | d | d | ✅ | **oui** — MAJOR-11 |
+| `03-revision` Q2 | b | b | ✅ | non |
+| `03-revision` Q3 | b·a·d·c | idem | ✅ | **oui** (explication) — minor |
+| `03-revision` Q4 | a | a | ✅ | **oui** — MAJOR-12 |
+| `03-revision` Q5 | c | c | ✅ | non |
+| `03-revision` Q6 | b | b | ✅ | non |
+
+**Clés divergentes : 0.** **Clés fragiles : 0** — les deux `ordering` sont strictement forcés
+(vérifié contrainte par contrainte, §3), et le `multi` n'a aucun distracteur défendable.
+**Items rejouant un exemple du cours : 16 / 23 (70 %).**
+
+---
+
+## 2. BLOCKER
+
+### 🟥 BLOCKER-1 — `02-boss` Q2 : l'explication décrit l'item **supprimé**, pas l'item servi
+
+C'est le seul constat du chapitre qui soit une **erreur de fait délivrée à l'élève**, et il est né
+de la correction de schéma 8 options → 6.
+
+`content/english-bac/12-school-related-words/exercices/02-boss.json` — Q2.
+L'item sert **6 options** et **3 clés** (`provision`, `denial`, `reduction`), un seul adjectif
+(`expectant`). L'explication, restée celle de la version à 8 options, dit :
+
+> **Four** words here are the noun of a verb the lesson uses […] The **four others** all belong to
+> the same lesson […] **Two are adjectives** — one of them sits on the adjective branch […]
+
+Trois affirmations fausses sur l'item réel : *four* clés (il y en a 3), *four* distracteurs (3), et
+*two* adjectifs (1). Un élève qui coche correctement les trois clés lit ensuite qu'il en fallait
+quatre : il croit avoir raté un item qu'il a réussi. Sur un `multi` noté tout ou rien, dans le boss,
+c'est le pire endroit possible pour un mensonge de correction.
+
+**Correction 1 — l'explication** (`.../exercices/02-boss.json` Q2) :
+
+`ancien texte`
+`Four words here are the noun of a verb the lesson uses, and each wears a different tail, which is exactly the point of the diagram: the family is learnt one member at a time. The four others all belong to the same lesson, and none of them belongs on that diagram. Two are adjectives — one of them sits on the adjective branch of the very same family and describes somebody who is waiting for something. One is a verb in its bare form, and the last is that same kind of verb wearing a past ending, which is still a verb.`
+
+`nouveau texte`
+`Three words here are the noun of a verb the lesson uses, and each wears a different tail, which is exactly the point of the diagram: the family is learnt one member at a time. The three others all belong to the same lesson, and none of them belongs on that diagram. One is an adjective, and it sits on the adjective branch of a family whose noun branch you could have filled instead: it describes somebody who is waiting for something. One is a verb in its bare form. And the last is that same kind of verb wearing a past ending, which leaves it a verb still.`
+
+**Sur la question posée par l'orchestrateur — les trois clés et les trois distracteurs :**
+
+- `provision` (← *provide*), `denial` (← *deny*), `reduction` (← *reduce*) : **indiscutables**.
+  Les trois verbes sont bien de la leçon (*provide* et *deny* sont dans MY NEW WORDS ; *reduce* est
+  l'amorce imprimée du spidergramme **Verb** du manuel et le cours l.136/163 l'enseigne).
+- `expectant` : adjectif, jamais nom → **indiscutablement faux** ✅
+- `reduce` : verbe nu → **indiscutablement faux** ✅
+- `provided` : participe passé — et aussi conjonction (*provided that*). **Ni l'un ni l'autre n'est
+  un nom** → **indiscutablement faux** ✅
+
+Le correctif de schéma **tient sur le fond**. Il n'a laissé qu'une chose derrière lui :
+l'explication. (Voir aussi MAJOR-10 : Q1 donne deux des trois clés de Q2.)
+
+---
+
+### 🟥 BLOCKER-2 — `01-pratique` Q5 : les **quatre** options sont les quatre mots d'**une seule phrase** du cours, avec son classement
+
+`cours.md` l.227, § « An acrostic about school » :
+
+> On an O line waiting for a verb, *often* (an adverb), *ordinary* (an adjective) and *opinion*
+> (a noun) all fail, however well they begin. Only *offer*, *organise*, *open* and their kind may
+> stand there.
+
+`.../exercices/01-pratique.json` Q5, les quatre options : `Often` · `Ordinary` · `Offer` (clé) ·
+`Opinion`. **Mot pour mot, dans le même rôle.** Le cours nomme les trois ✗ et le ✓.
+
+C'est la signature n°1 poussée à son maximum : au chapitre 11 le motif portait sur **deux**
+colonnes d'une ligne ; ici il porte sur **les quatre options**. L'élève qui a lu la dernière
+section du cours ne classe rien — il se souvient d'une liste. Quatre fragments du scan tombent
+d'ailleurs sur ce seul item (33, 24, 22, 20 car.).
+
+Le résumé rejoue la même liste (l.15) : « *offer* and *organise* qualify, *often*, *ordinary* and
+*opinion* do not ».
+
+**Correction — côté COURS** (l'item est excellent : contrainte double, distracteurs de trois
+classes grammaticales différentes ; règle 6 du brief, on réécrit le cours) :
+
+`cours.md`, l.227 — `ancien texte`
+`The constraint is double, and that is what makes the exercise worth doing: the word must **start with the right letter** *and* **belong to the right class**. On an O line waiting for a verb, *often* (an adverb), *ordinary* (an adjective) and *opinion* (a noun) all fail, however well they begin. Only *offer*, *organise*, *open* and their kind may stand there.`
+
+`nouveau texte`
+`The constraint is double, and that is what makes the exercise worth doing: the word must **start with the right letter** *and* **belong to the right class**. Test the second constraint the quick way: drop the word into the frame *a school will …* . *A school will help*, *a school will teach*, *a school will feed* — those go in, and they are verbs. A word that refuses the frame has no business at the head of the line, however well it begins.`
+
+`resume.md`, l.15 — `ancien texte`
+`- **An acrostic** spells a word downwards, one letter per line — and if the model asks for verbs, the letter alone is not enough: on an O line, *offer* and *organise* qualify, *often*, *ordinary* and *opinion* do not.`
+
+`nouveau texte`
+`- **An acrostic** spells a word downwards, one letter per line — and if the model asks for verbs, the letter alone is not enough: test each candidate in the frame *a school will …* , and keep only what fits.`
+
+---
+
+### 🟥 BLOCKER-3 — `02-boss` Q1 : 54 caractères d'énoncé, la clé imprimée **en gras majuscules** dans le cours, et les trois distracteurs nommés par le cours
+
+Le défaut signalé par l'orchestrateur. **Confirmé, et il est plus large que les 54 caractères.**
+
+`cours.md` l.146 :
+
+> **Why nouns matter: the headline.** A newspaper has one line and no room for verbs, so it turns
+> them into nouns and stacks them up. *The government has provided free meals* becomes
+> **FREE MEALS PROVISION**; *children are denied a place* becomes **THE DENIAL OF SCHOOL PLACES**.
+
+`cours.md` l.142 :
+
+> English says *provision*, never "providation" and never "providment"; it says *denial*, never
+> "deniation" and never "denyal".
+
+L'item `.../exercices/02-boss.json` Q1 :
+
+- **énoncé** : « A newspaper has one line and no room for verbs, so it… » (**54 car. verbatim**)
+  + « The government has provided free meals » (**38 car. verbatim**) ;
+- **clé `b`** : `FREE MEALS PROVISION ENDS THE DENIAL OF SCHOOL PLACES` = les **deux titres en gras
+  du cours mis bout à bout** ;
+- **les trois distracteurs** : `PROVIDMENT`, `PROVIDATION`, `DENIATION`, `DENYAL` — **les quatre
+  non-mots que le cours énumère**, dans le même paragraphe, et repris une seconde fois par
+  `resume.md` l.11 et une troisième par le mur des pièges l.236 (« the providation of meals »).
+
+Le grillage de l'item est pourtant excellent (une erreur dans `a` et `d`, deux dans `c`, zéro dans
+`b`). **C'est le cours qui l'a désarmé** : il n'y a rien à décider, tout est imprimé. Et c'est la
+**Q1 du boss ⭐⭐⭐**, difficulté 3.
+
+**Correction — côté COURS**, trois endroits :
+
+`cours.md` l.142 — `ancien texte`
+`> ⚠️ **You cannot pick the ending by rule — each word keeps the one it has always had.** English says *provision*, never "providation" and never "providment"; it says *denial*, never "deniation" and never "denyal". The learner who invents an ending is not being creative, only wrong: a word either exists or it does not, and the only witness is the dictionary. Learn the family, not the recipe.`
+
+`nouveau texte`
+`> ⚠️ **You cannot pick the ending by rule — each word keeps the one it has always had.** *Reduce* takes **-tion** and *attend* takes **-ance**, and neither will accept the other's tail: "reducance" and "attendation" are not English words, however reasonable they look. The learner who invents an ending is not being creative, only wrong: a word either exists or it does not, and the only witness is the dictionary. Learn the family, not the recipe.`
+
+`cours.md` l.146 — `ancien texte`
+`*The government has provided free meals* becomes **FREE MEALS PROVISION**; *children are denied a place* becomes **THE DENIAL OF SCHOOL PLACES**.`
+
+`nouveau texte`
+`*The council has reduced the fees* becomes **FEE REDUCTION**; *parents expect more of the school* becomes **RISING PARENTAL EXPECTATIONS**.`
+
+`cours.md` l.236 (mur des pièges) — `ancien texte`
+`| "the providation of meals"                   | _the **provision** of meals_              | each word keeps its own ending; none of them can be invented     |`
+
+`nouveau texte`
+`| "the attendation figures"                    | _the **attendance** figures_              | each word keeps its own ending; none of them can be invented     |`
+
+`resume.md` l.11 — `ancien texte`
+`⚠️ **The ending cannot be guessed** — "providation", "providment", "deniation", "denyal" do not exist. And **attendance** (being there) ≠ **attention** (listening). Headlines run on these nouns: _the government provided meals_ → **MEALS PROVISION**.`
+
+`nouveau texte`
+`⚠️ **The ending cannot be guessed** — a tail cannot be borrowed from a neighbour ("reducance", "attendation" do not exist). And **attendance** (being there) ≠ **attention** (listening). Headlines run on these nouns: _the council reduced the fees_ → **FEE REDUCTION**.`
+
+⚠️ **Le tableau des familles (l.132-138) reste intact** — il doit enseigner *provision* et *denial*.
+Ce qui disparaît, c'est le **titre tout fait** et la **liste des non-mots**, c'est-à-dire les quatre
+options de l'item.
+
+---
+
+### 🟥 BLOCKER-4 — `02-boss` Q5 : trois options sur quatre sont les trois phrases d'exemple du cours, un mot glissé dedans
+
+`cours.md` l.119-126, règles 1 et 2 du jeu des contraires :
+
+> - _The last question was **hard**._ → its opposite is **easy** (difficulty).
+> - _The bench in the corridor is **hard**._ → its opposite is **soft** (what it is made of).
+> …
+> **Rule 2** — In _She works hard_, the word is no longer an adjective […] it is an adverb…
+
+`.../exercices/02-boss.json` Q5 :
+
+| Option | Phrase du cours rejouée | Ce qui change |
+| --- | --- | --- |
+| **`a` (clé)** | « The bench in the corridor is hard. » | + *wooden*, + *very* (26 car. verbatim au scan) |
+| `b` | « The last question was hard. » | + *on the paper* |
+| `c` | « She works hard » | + *on the days she has no lessons* |
+| `d` | — | seule option neuve |
+
+Et l'explication reprend 32 car. du mur des pièges (« an opposite answers a meaning, n… ») et 20 de
+la règle 2 (« how she works, and »).
+
+C'est **exactement** la signature n°2 (« l'item EST l'exemple du cours, avec un détail glissé »),
+appliquée trois fois dans un même item, sur le **boss ⭐⭐⭐ difficulté 3**. L'élève qui a relu la
+section reconnaît le banc et la dernière question sans jamais se demander de quelle *acception* il
+s'agit — ce qui est pourtant toute la compétence visée.
+
+**Correction — côté COURS** (l'item est bien construit : il oppose l'acception matérielle, deux
+acceptions figurées et un adverbe ; on ne le touche pas).
+
+`cours.md` l.120-121 — `ancien texte`
+```
+- _The last question was **hard**._ → its opposite is **easy** (difficulty).
+- _The bench in the corridor is **hard**._ → its opposite is **soft** (what it is made of).
+```
+`nouveau texte`
+```
+- _The examiner set a **hard** paper this year._ → its opposite is **easy** (difficulty).
+- _The playground is **hard** after a month without rain._ → its opposite is **soft** (what it is made of).
+```
+
+`cours.md` l.126 — `ancien texte`
+`**Rule 2 — check what part of speech you are looking at.** In _She works hard_, the word is no longer an adjective describing a thing; it is an adverb saying how she works, and neither *soft* nor *easy* can be pushed into its place.`
+
+`nouveau texte`
+`**Rule 2 — check what part of speech you are looking at.** In _He tried hard all term_, the word is no longer an adjective describing a thing; it is an adverb saying in what manner he tried, and neither *soft* nor *easy* can be pushed into its place.`
+
+`cours.md` l.237 (mur des pièges) — `ancien texte`
+`| "the bench is hard, so its opposite is easy" | _the bench is hard → **soft**_            | an opposite answers a meaning, not a word on a list              |`
+
+`nouveau texte`
+`| "the ground is hard, so its opposite is easy" | _the ground is hard → **soft**_           | an opposite answers a meaning, not a word on a list              |`
+
+`resume.md` l.10 — `ancien texte`
+`**1)** an opposite answers a **meaning**, not a word: _a hard question_ → **easy**, but _a hard bench_ → **soft**. **2)** watch the **part of speech**: in _she works hard_, *hard* is an adverb and neither opposite fits.`
+
+`nouveau texte`
+`**1)** an opposite answers a **meaning**, not a word: _a hard paper_ → **easy**, but _hard ground_ → **soft**. **2)** watch the **part of speech**: in _he tried hard_, *hard* is an adverb and neither opposite fits.`
+
+---
+
+## 3. MAJOR
+
+### 🟧 MAJOR-1 — `01-pratique` Q6 : l'explication cite une option **par son rang**
+
+Défaut signalé par l'orchestrateur. **Confirmé** — règle 4 du brief (les options sont mélangées à
+l'affichage, on cite la **valeur**, jamais la position).
+
+`.../exercices/01-pratique.json` Q6, dernière phrase de l'explication :
+
+`ancien texte`
+`And the fourth answer promotes him: the person who presents the lesson is the one giving it.`
+
+`nouveau texte`
+`And promoting him to the one who presents the lesson would make him the person giving it, not the person sitting through it.`
+
+*(Les « The first / The second » de la même explication sont acceptables : ils numérotent les
+**deux pièges** annoncés par la phrase précédente, pas les options.)*
+
+---
+
+### 🟧 MAJOR-2 — `01-pratique` Q6 : l'énoncé est la ligne ✗ du cours, la clé sa ligne ✓
+
+Même item. `cours.md` l.29 :
+
+> ~~_Yesterday I **assisted at** the biology lesson._~~ ✗ — this comes straight from a French verb
+> that looks the same. In English, **to assist somebody is to help them**. If you were merely
+> sitting there with your class, you **attended** the lesson.
+
+L'énoncé : « Yesterday I assisted at the **science** lesson. » — **28 car. verbatim**, un seul mot
+changé. La clé `a` : « Yesterday I attended the science lesson. » = la sortie prescrite par le
+cours. Le mur des pièges l.235 réimprime la paire (« I assisted at the lesson » / *I **attended**
+the lesson*), et `resume.md` l.3 imprime le distracteur `c` (« "attend at the lesson" ✗ »).
+
+Signature n°1 **et** n°2 sur le même item : les quatre options sortent toutes du même paragraphe.
+
+**Correction — côté COURS** (l'item est bon : quatre erreurs réelles de francophone) :
+
+`cours.md` l.29 — `ancien texte`
+`- ~~_Yesterday I **assisted at** the biology lesson._~~ ✗ — this comes straight from a French verb that looks the same. In English, **to assist somebody is to help them**. If you were merely sitting there with your class, you **attended** the lesson.`
+
+`nouveau texte`
+`- ~~_Two hundred parents **assisted at** the prize-giving._~~ ✗ — this comes straight from a French verb that looks the same. In English, **to assist somebody is to help them**. Parents who only sat and watched **attended** the ceremony; the two who carried the chairs assisted the caretaker.`
+
+`cours.md` l.235 — `ancien texte`
+`| "I assisted at the lesson"                   | _I **attended** the lesson_               | to assist is to help; and *attend* takes no preposition          |`
+
+`nouveau texte`
+`| "the parents assisted at the ceremony"       | _the parents **attended** the ceremony_   | to assist is to help; and *attend* takes no preposition          |`
+
+`resume.md` l.3 — `ancien texte`
+`(**no preposition**: _attend the lesson_ ✓, "attend at the lesson" ✗ — and *to assist* means *to help*, never *to be present*)`
+
+`nouveau texte`
+`(**no preposition**: _attend a ceremony_ ✓, "attend at a ceremony" ✗ — and *to assist* means *to help*, never *to be present*)`
+
+---
+
+### 🟧 MAJOR-3 — `01-pratique` Q4 : l'item est l'exemple du cours, et ses deux distracteurs sont les deux exclusions que le cours énonce
+
+`cours.md` l.209 :
+
+> - _The shelf is too high **for the little ones** to reach._ → **the little ones** are the ones who
+>   cannot reach. **Not the shelf, and not you.**
+
+L'item : « These books are too high up **for the youngest readers** to reach on their own. »
+— même hauteur, même verbe *reach*, même structure. Et :
+
+- distracteur `a` « the librarian cannot reach the books » = « **not you** » ;
+- distracteur `d` « the books cannot reach the youngest readers » = « **not the shelf** ».
+
+Le cours a écrit les deux mauvaises réponses avant que l'élève ne les lise. L'explication reprend en
+outre 24 car. de la règle (« hands the second verb… »).
+
+**Correction — côté COURS** (l'item est bon ; c'est le seul du chapitre qui teste le rôle du *for*) :
+
+`cours.md` l.209 — `ancien texte`
+`- _The shelf is too high **for the little ones** to reach._ → **the little ones** are the ones who cannot reach. Not the shelf, and not you.`
+
+`nouveau texte`
+`- _The corridor is too narrow **for two classes** to pass at once._ → **the two classes** are the ones that cannot pass. Not the corridor, and not the caretaker who built it.`
+
+`resume.md` l.14 — `ancien texte`
+`**3)** with **for + somebody**, that person is the one who acts: _too high for the little ones to reach_ = **the little ones** cannot reach.`
+
+`nouveau texte`
+`**3)** with **for + somebody**, that person is the one who acts: _too narrow for two classes to pass_ = **the two classes** cannot pass.`
+
+---
+
+### 🟧 MAJOR-4 — `01-pratique` Q3 : l'exemple travaillé du cours, avec les nombres changés
+
+`cours.md` l.68 :
+
+> 🗡️ Listen for the order, not only for the verbs. *Take three from twelve, then share the rest
+> between three* asks you to **subtract** and then to **divide** — in that order. Reverse the two
+> and you get a different number, and a wrong answer to a question you understood perfectly.
+
+L'item : « Take **four** away from **twenty**, then share what is left equally among the **four**
+pupils in the front row. » → **subtract puis divide**, et l'explication rejoue le raisonnement du
+cours (« reverse and you get a different number ») en le chiffrant.
+
+Même couple d'opérations, même ordre, même mise en garde. Seuls les nombres bougent.
+*(L'arithmétique de l'explication est juste : (20−4)/4 = 4, et 20/4−4 = 1. ✅)*
+
+**Correction — côté COURS** (l'item est bon et le seul à tester les périphrases orales) :
+
+`cours.md` l.68 — `ancien texte`
+`> 🗡️ Listen for the order, not only for the verbs. *Take three from twelve, then share the rest between three* asks you to **subtract** and then to **divide** — in that order. Reverse the two and you get a different number, and a wrong answer to a question you understood perfectly.`
+
+`nouveau texte`
+`> 🗡️ Listen for the order, not only for the verbs. *Three lots of eight, and then put six more on top* asks you to **multiply** and then to **add** — in that order. Reverse the two and you get thirty in one direction and forty-two in the other, and a wrong answer to a question you understood perfectly.`
+
+*(Vérifié : 3×8 = 24, +6 = 30 ; et 8+6 = 14, ×3 = 42. Le couple soustraction/division est ainsi
+libéré pour l'item, et le cours illustre les deux autres signes, qui n'apparaissaient jusque-là que
+dans le tableau.)*
+
+---
+
+### 🟧 MAJOR-5 — `01-pratique` Q1 (`ordering`) : **l'ordre lui-même est imprimé**, dans le cours ET dans le résumé
+
+C'est le cas que le brief nomme « le pire cas rencontré ».
+
+`cours.md` l.72-80 : un tableau dont les cinq lignes sont, dans l'ordre, `a book` · `a chapter` ·
+`a paragraph` · `a sentence` · `a full stop`. Précédé de la phrase l.72 : « A written text is a set
+of boxes inside boxes, **from the widest down to the smallest mark**. »
+`resume.md` l.7 : « **On the page**, from the widest to the smallest: **a book** → **a chapter** →
+**a paragraph** → **a sentence** → **a full stop**. »
+
+L'item demande : « Put these five back in order, from the one that holds all the others **down to
+the smallest mark** printed on the page. » (**26 car. verbatim de l.72**), clé
+`c·e·a·d·b` = l'ordre du tableau, = l'ordre de la flèche du résumé.
+
+Un `ordering` est noté tout ou rien : ici il note une ligne du résumé. La clé est **strictement
+forcée** par l'emboîtement (vérifié) — le problème n'est pas la justesse, c'est qu'il n'y a rien à
+faire.
+
+**Correction — côté ITEM.** Ici le brief ne s'applique pas à la lettre (« réécris le côté COURS si
+la question est bonne ») : la question **n'est pas bonne**, et la hiérarchie livre→chapitre→
+paragraphe→phrase→point est un fait que le cours *doit* imprimer et le résumé *doit* rappeler la
+veille du bac. C'est l'item qu'il faut changer.
+
+**Et le meilleur remplacement règle trois constats d'un coup** (MAJOR-5, MAJOR-13, MAJOR-14) :
+remplacer cet `ordering` par le **`matching` que le chapitre n'a pas** et qui couvre le jeu des
+contraires — l'activité 2 du manuel, aujourd'hui testée par un seul item.
+
+`.../exercices/01-pratique.json` Q1 — remplacer intégralement la question par :
+
+```json
+{
+  "prompt": "Your partner throws you a word from the school field and waits for the word that answers it. Match each one with its opposite.",
+  "type": "matching",
+  "options": [
+    { "id": "l1", "text": "to teach" },
+    { "id": "l2", "text": "a candidate" },
+    { "id": "l3", "text": "to attend a school" },
+    { "id": "l4", "text": "the working weeks" },
+    { "id": "r1", "text": "an examiner" },
+    { "id": "r2", "text": "the holidays" },
+    { "id": "r3", "text": "to learn" },
+    { "id": "r4", "text": "to leave it" }
+  ],
+  "answerKey": { "pairs": [["l1", "r3"], ["l2", "r1"], ["l3", "r4"], ["l4", "r2"]] },
+  "explanation": "Four pairs, and each one turns on a different kind of contrast. Two of them are the two ends of the same act seen from the two sides of the desk: one person passes the knowledge on, the other takes it in; one person sits the paper, the other sets it and marks it. The third is a matter of staying or going: you are on the register for years, and then one day you are not. And the fourth divides the calendar in two, since every week of a school year is either one or the other. Notice that none of the eight can be paired by its shape — only by what it means.",
+  "difficulty": 1
+}
+```
+
+*(Schéma vérifié sur `11-the-winters-tale/exercices/01-pratique.json` : `options` avec ids `l1…`/
+`r1…` et `answerKey.pairs`. Les paires sont volontairement décroisées — `l1→r3`, `l3→r4` — pour que
+l'appariement par rang d'identifiant ne donne rien. Les quatre couples sont ceux du guide
+enseignant, p.24.)*
+
+Si l'on tient à garder l'`ordering`, la correction de repli est de **désordonner le tableau du
+cours** (le présenter du plus petit au plus grand, ou par ordre alphabétique) et de **remplacer la
+chaîne fléchée du résumé** par les deux discriminations utiles (« un chapitre découpe un livre,
+jamais une dissertation ; un point clôt une phrase, jamais une idée »). C'est un moindre mal :
+l'item reste de la récitation.
+
+---
+
+### 🟧 MAJOR-6 — `01-pratique` Q2 : 39 caractères, et l'item **est** le tableau du cours, ses deux colonnes
+
+Défaut signalé par l'orchestrateur. **Confirmé, et plus large que le fragment.**
+
+`cours.md` l.36-43 : un tableau à deux lignes — « **three** → a **term** → Tunisia, Britain… » /
+« **two** → a **semester** → the United States… » — suivi de « it is divided, and **the number of
+pieces decides the word** » et de « a report card that reaches your **family three times** a year
+closes three terms ».
+
+L'item : l'énoncé **donne les deux nombres et les deux pays** (« Tunisian and British schools
+usually cut the year into three; American schools usually cut it into two ») ; l'explication reprend
+39 car. (« the number of pieces decides the word. ») et 20 de plus (« family three times »).
+
+L'énoncé fournit donc le **discriminant** que le tableau utilise ; il ne reste qu'à lire la colonne
+d'à côté. La bonne addition de l'item (*semicircle*, *semifinal*) est dans l'explication, après coup.
+
+**Correction — côté ITEM** (faire compter l'élève au lieu de lui donner le nombre) et **côté COURS**
+(retirer le carnet de notes, qui est le véhicule partagé) :
+
+`.../exercices/01-pratique.json` Q2, énoncé — `ancien texte`
+`Tunisian and British schools usually cut the year into three; American schools usually cut it into two. What is one of those pieces called in each system?`
+
+`nouveau texte`
+`Sami takes a report home in December, in March and in June, and that is his whole year in Sfax. His cousin in Boston takes one home in January and one in May, and that is her whole year. What is one of those pieces of the year called in each of the two systems?`
+
+*(Les options et la clé `d` sont inchangées. L'explication doit alors renoncer à sa première phrase
+« The number of pieces decides the word » au profit de : « Count the reports and you have counted
+the pieces: three of them in Sfax, two in Boston. »)*
+
+`cours.md` l.43 — `ancien texte`
+`So a report card that reaches your family three times a year closes three **terms**; a report card that comes twice closes two **semesters**. Notice how honest the second word is: *semester* holds *semi*, and half of a year is what it names.`
+
+`nouveau texte`
+`So a British pupil sits down to three sets of end-of-**term** examinations, and an American student to two sets of end-of-**semester** ones. Notice how honest the second word is: *semester* holds *semi*, and half of a year is what it names.`
+
+---
+
+### 🟧 MAJOR-7 — `quiz` Q4 : la porte du chapitre s'ouvre sur un paragraphe relu
+
+`cours.md` l.144 :
+
+> **Attendance** is the fact of being there — **the office counts it every morning**. **Attention**
+> is what you give the lesson once you are in your seat.
+
+`quiz.json` Q4 : « **Every morning the school office** notes which pupils are present and which are
+missing […] What is the office keeping a record of? » — clé `attendance`, distracteur `attention`.
+
+Même acteur (*the office*), même fréquence (*every morning*), et **le distracteur est le terme de
+contraste du cours**. L'explication reprend « the fact of being there » (24 car.). Signature n°1 +
+n°2 — et c'est un item du **quiz, la porte du chapitre (≥ 80 % pour ouvrir)**, exactement le grief
+MAJOR-2 de l'audit du chapitre 10.
+
+**Correction — côté COURS** (l'item est bon : quatre formes d'une même famille, trois classes
+grammaticales) :
+
+`cours.md` l.144 — `ancien texte`
+`Beware, too, of two branches of the same tree that do not mean the same thing. **Attendance** is the fact of being there — the office counts it every morning. **Attention** is what you give the lesson once you are in your seat. A register of attendance says nothing about whether anybody was listening.`
+
+`nouveau texte`
+`Beware, too, of two branches of the same tree that do not mean the same thing. **Attendance** is the fact of being there — a figure that climbs when a new bus route reaches the outlying villages. **Attention** is what you give the lesson once you are in your seat. The first can be counted, the second never has been, and no register has ever pretended otherwise.`
+
+---
+
+### 🟧 MAJOR-8 — `quiz` Q5 : l'item est le paragraphe du cours, sa photo comprise
+
+`cours.md` l.177 et l.179 :
+
+> A page headed *The real wealth of a country is …* above **a photograph of children eating** tells
+> you […]
+> A web address ending in **.org** belongs to an **organisation**, not to a shop; an e-mail
+> **address beginning with fundraising** belongs to somebody whose work is to collect gifts.
+> **Two lines nobody looks at** have just told you who is speaking and what they want from you.
+
+`quiz.json` Q5 : « A full page in a magazine shows **a photograph of children eating** at school
+[…] a web address of the form www.…org, and an e-mail **address beginning with fundraising@**. »
+(deux fragments de 33 et 35 car. **dans l'énoncé**) — clé `c` : « the page was placed by an
+**organisation** that is asking for **gifts** » = la conclusion du cours ; explication : « the two
+lines that almost no reader looks at » = l.179.
+
+Le cours a résolu l'item avant qu'il soit posé. Deuxième item de la **porte** dans ce cas.
+
+**Correction — côté COURS.** L'information est exigée par le programme (activité 3a du manuel :
+« Focus on the website and e-mail address to find out ») : elle **doit** rester enseignée. Ce qui
+doit partir, c'est la **conclusion toute faite** et la photo partagée. Enseigner la méthode, pas la
+réponse :
+
+`cours.md` l.177 — `ancien texte`
+`**Read the paratext first.** From a headline, a subtitle and a photograph you can already predict what the body will say — that is a skill, not a guess. A page headed *The real wealth of a country is …* above a photograph of children eating tells you, before a single line of the body, that its ending will not be *its oil*: an appeal built on children ends its headline on **its children**.`
+
+`nouveau texte`
+`**Read the paratext first.** From a headline, a subtitle and a photograph you can already predict what the body will say — that is a skill, not a guess. A page headed *What a village loses when the well runs dry* above a picture of an empty classroom has already told you, before a single line of the body, that the two are about to be tied together — and which of them the page will ask you to pay for.`
+
+`cours.md` l.179 — `ancien texte`
+`**And read the last lines, because they name the sender.** A web address ending in **.org** belongs to an **organisation**, not to a shop; an e-mail address whose first word is **fundraising** belongs to somebody whose work is to collect gifts. Two lines nobody looks at have just told you who is speaking and what they want from you.`
+
+`nouveau texte`
+`**And read the last lines, because they name the sender.** Nobody looks at the small print at the foot of a page, and it is the one part of an advertisement that cannot lie about who is speaking: the tail of a web address says what kind of body owns it, and the first word of an e-mail address names the desk you would be writing to. Ask those two questions of any page that is asking you for something, and you will know who wants what from you before you have read a line of the body.`
+
+`resume.md` l.13 — `ancien texte`
+`The last lines name the sender: **.org** = an organisation, and an address beginning with **fundraising** = somebody collecting gifts.`
+
+`nouveau texte`
+`The last lines name the sender: read the **tail** of the web address (what kind of body owns it) and the **first word** of the e-mail address (which desk you would be writing to).`
+
+---
+
+### 🟧 MAJOR-9 — `02-boss` Q4 : la chaîne du cours, y compris le sens interdit
+
+`cours.md` l.183 :
+
+> 🗡️ **The chain of consequences.** A good appeal never asks you to believe a miracle; it shows you
+> a chain, link by link. **A plate of food at midday brings a child through the gate**; a child who
+> is in the classroom hears the lesson; and a child who hears the lessons all year comes out of the
+> year knowing more. […] check that it is **not running backwards**.
+
+`.../exercices/02-boss.json` Q4 : énoncé « how **a plate of food at midday** can change a child's
+marks » (27 car.) ; clé `c` = la chaîne du cours en deux maillons ; distracteur `a` = **la chaîne à
+l'envers**, c'est-à-dire précisément le piège que le cours annonce ; explication « never asks its
+reader to believe a miracle » (21 car.).
+
+Boss ⭐⭐⭐ difficulté 3. L'élève qui a lu l'encadré n'a rien à reconstruire.
+
+**Correction — côté COURS** (l'item est bon, et la chaîne repas → présence → résultats est le
+diagramme de l'activité 6 du manuel : elle doit rester la chose *testée*, donc il faut qu'elle cesse
+d'être la chose *montrée*) :
+
+`cours.md` l.183 — `ancien texte`
+`A plate of food at midday brings a child through the gate; a child who is in the classroom hears the lesson; and a child who hears the lessons all year comes out of the year knowing more. Feeding, attendance, results: three links, each one holding the next.`
+
+`nouveau texte`
+`A well sunk in a village gives a girl back the four hours she spent fetching water; a girl who has her mornings free can be put on the register; and a girl on the register sits the same papers as her brothers. Water, time, schooling: three links, each one holding the next.`
+
+*(Le distracteur `d` de l'item — « the meal makes the lessons shorter » — reste faible, voir
+minor-2.)*
+
+---
+
+### 🟧 MAJOR-10 — `02-boss` : **Q1 donne deux des trois clés de Q2**
+
+Fuite inter-items, du même type que MAJOR-5 du chapitre 10.
+
+- Q1, clé `b` : « FREE MEALS **PROVISION** ENDS THE **DENIAL** OF SCHOOL PLACES » — l'item établit
+  que *provision* et *denial* sont les noms qui existent.
+- Q2, immédiatement après : « Tick EVERY word that belongs on [the Noun spidergram] » — clés
+  `provision`, `denial`, `reduction`.
+
+Deux des trois clés de Q2 viennent d'être imprimées comme la bonne réponse de Q1 — et le distracteur
+`d` de Q1 (`DENYAL`) confirme même l'orthographe attendue. Le boss compte six items ; il en mesure
+cinq et demi.
+
+**Correction** — changer le matériel de Q2 pour les **autres** familles du tableau du cours (les
+trois types de distracteur voulus par l'orchestrateur sont conservés : adjectif, verbe nu, participe) :
+
+`.../exercices/02-boss.json` Q2, options — `ancien texte`
+`a: provision` · `b: expectant` · `c: denial` · `d: reduction` · `e: reduce` · `f: provided`
+
+`nouveau texte`
+`a: attendance` · `b: expectant` · `c: expectation` · `d: reduction` · `e: attend` · `f: provided`
+
+`answerKey.correct` — `ancien texte` `["a","c","d"]` · `nouveau texte` `["a","c","d"]` *(inchangé :
+`attendance`, `expectation`, `reduction`)*
+
+*(Les trois distracteurs gardent leurs rôles : `expectant` adjectif, `attend` verbe nu, `provided`
+participe. `expectant` et `expectation` se retrouvent dans le même item, ce qui rend à nouveau vraie
+la phrase de l'explication sur « the adjective branch of the very same family » — voir la réécriture
+en BLOCKER-1. ⚠️ Écho résiduel à surveiller : `attendance` est déjà la clé de `quiz` Q4 et le mot
+travaillé de `03-revision` Q5.)*
+
+---
+
+### 🟧 MAJOR-11 — `03-revision` Q1 : le cours nomme lui-même la mauvaise réponse
+
+`cours.md` l.51-55 :
+
+> - **the sciences** — the heading over **physics**, **chemistry** and **biology** […]
+> - **languages** — the heading over **English**, **French**, **German**, **Spanish** […]
+> ⚠️ Answering **"chemistry"** when you are asked what physics, chemistry and biology are
+> **together** does not answer the question…
+
+L'item : les deux listes de matières du cours (une matière retirée, l'ordre inversé), et le
+distracteur `a` = « Spanish, and then **chemistry** » — le mot que le cours écrit entre guillemets
+comme *la* mauvaise réponse. Clé `d` = les deux intitulés en gras du cours.
+
+L'explication se termine en outre sur « geometry is a branch of maths, and art belongs to no heading
+at all » — vrai, enseigné, mais **aucune option ne mentionne ni geometry ni art** : c'est du cours
+collé dans une explication (voir minor-6).
+
+**Correction — côté COURS** (l'item est bon : il oppose l'intitulé, la matière isolée, l'inversion
+et le singulier) :
+
+`cours.md` l.55 — `ancien texte`
+`> ⚠️ *Sciences* and *languages* are **collective names**: each one covers several subjects at once. Answering "chemistry" when you are asked what physics, chemistry and biology are **together** does not answer the question — you were asked for the heading, not for one line under it.`
+
+`nouveau texte`
+`> ⚠️ *Sciences* and *languages* are **collective names**: each one covers several subjects at once. A heading is never one of the things it stands over. Asked what several subjects are called **together**, you owe the name of the group; naming any single one of them, however correctly spelt, answers a much smaller question than the one you were put.`
+
+---
+
+### 🟧 MAJOR-12 — `03-revision` Q4 : la clé est l'exemple de vocabulaire du cours
+
+`cours.md` l.154, tableau des cinq mots :
+
+> | **nutritious** | nourishing — food that feeds the body properly | _**Bread and lentils** are
+> cheap and nutritious._ |
+
+L'item : « Which of these four changes earns her that word? » — clé `a` : « **lentils, brown bread**
+and an orange replace a plate of chips ». Le scan ne l'attrape pas (ordre des mots changé) ; c'est
+exactement le doublon invisible à la mesure lexicale.
+
+Les trois distracteurs sont excellents et distincts (quantité / goût / prix), et le résumé l.12 les
+annonce d'ailleurs (« **not** *tasty*, **not** *plentiful* »). L'item survivrait à la correction ;
+c'est la clé qu'il faut sortir du cours.
+
+**Correction — côté COURS** :
+
+`cours.md` l.154 — `ancien texte`
+`| **nutritious** | nourishing — food that feeds the body properly        | _Bread and lentils are cheap and nutritious._            |`
+
+`nouveau texte`
+`| **nutritious** | nourishing — food that feeds the body properly        | _A boiled egg is a more nutritious break than a biscuit._ |`
+
+---
+
+### 🟧 MAJOR-13 — couverture : le JEU DES CONTRAIRES, activité 2 du manuel, est testé par **un** item — et pas sur les paires
+
+La leçon a **deux** compétences nommées au UNIT OUTLINE : *Reading — Exploiting an ad* et
+***Speaking — Expanding vocabulary***. La seconde, côté manuel, c'est l'activité 2 (THE OPPOSITES
+GAME) et sa boîte de 24 mots, plus les 15 bulles-questions de l'activité 1.
+
+Le cours enseigne les **12 paires** (l.108-115) et le résumé les réimprime (l.9). Or :
+
+- **un seul item** (`02-boss` Q5) travaille le jeu des contraires — et il porte sur l'**exception**
+  (la polysémie de *hard*), pas sur les paires ;
+- **huit paires sur douze ne paraissent nulle part** dans les 23 items : *teach/learn*,
+  *clever/stupid*, *good/bad*, *pass/fail*, *worse/better*, *last/first*, *work/holiday*,
+  *candidate/examiner* ;
+- *candidate* et *examiner* sont enseignés sur une section entière (l.88-102) et testés **zéro
+  fois** ;
+- même remarque, plus légère, pour **timetable** (bulle « Where can you find the days of the
+  week? ») qui n'apparaît qu'en distracteur de `01-pratique` Q2, et pour **multiply** / **add** qui
+  n'apparaissent qu'en distracteurs de `01-pratique` Q3.
+
+À l'inverse, tout ce qui est testé est bien enseigné : **23/23 items ont leur notion dans
+`cours.md`** (vérifié un par un). Le déséquilibre est donc unilatéral — pas d'item orphelin, mais un
+gros pan de la leçon non mis à l'épreuve.
+
+**Correction** : le `matching` proposé en MAJOR-5 couvre quatre de ces huit paires en un item et
+libère le seul format qui convient à un chapitre lexical.
+
+---
+
+### 🟧 MAJOR-14 — format : **2 `ordering`, 0 `matching`** — dans le seul chapitre où l'appariement s'imposait
+
+Recomptage sur toute la matière (chiffre du brief confirmé) : **12 `ordering` · 13 `matching` ·
+15 `multi`**. Le chapitre 12 apporte **2 des 12 `ordering` et 0 des 13 `matching`**.
+
+C'est le **deuxième chapitre du corpus** à porter deux `ordering` (avec `06-exploring-a-song`), et
+le seul chapitre purement **lexical** de la matière — celui où « mot ↔ définition », « mot ↔
+contraire », « verbe ↔ nom » sont l'instrument naturel, comme le dit le brief. Les deux `ordering`
+retenus sont par ailleurs les deux items les plus proches d'une récitation : l'un remet en ordre un
+tableau imprimé (MAJOR-5), l'autre — bon item, lui — classe un budget.
+
+**Correction** : voir MAJOR-5 (conversion de `01-pratique` Q1 en `matching`). Elle ramène le
+chapitre à 1 `ordering` + 1 `matching`, et la matière à 11/14.
+
+---
+
+## 4. MINOR
+
+**minor-1 — `02-boss` Q3 : deux distracteurs encodent la même erreur.** `a` (« so careful that she
+never finishes her work on time ») et `c` (« she spends so long checking her work that it always
+arrives late ») sont la même lecture fautive — *too* entendu comme un reproche — écrite deux fois.
+L'item se joue à trois options. Suggestion pour `c` :
+`ancien texte` `she spends so long checking her work that it always arrives late`
+`nouveau texte` `she has been asked twice to check her work before handing it in`
+*(erreur différente : la phrase lue comme une consigne reçue et non comme une garantie donnée.)*
+
+**minor-2 — distracteurs quasi morts.** `01-pratique` Q2 `a` (« a chapter » comme fraction de
+l'année) et `c` (« a timetable ») s'éliminent sans la leçon ; `02-boss` Q4 `d` (« the meal makes the
+lessons shorter ») n'est l'erreur de personne ; `03-revision` Q2 `a` **se contredit lui-même**
+(« the O is short for **Outstanding** and beats an **ordinary** pass » — il concède ce qu'il nie).
+Trois items se jouent en pratique à trois options.
+
+**minor-3 — `02-boss` Q6 : l'énoncé est le jumeau de l'exemple du cours.** `cours.md` l.153 :
+« _No one here is denied a library card._ » → item : « No child in this town is denied a place at
+our school. » Même négation, même passif, même verbe, nom changé. L'item reste bon (il exige de
+trancher entre les deux sens de *deny* **et** de lire le passif, ce que la phrase du cours ne
+demande pas). Correction bon marché, `cours.md` l.153 :
+`ancien texte` `_No one here is denied a library card._`
+`nouveau texte` `_The office denied her the certificate until the fee was paid._`
+
+**minor-4 — `03-revision` Q5 : « rose from 58 to 91 » sans unité.** Élèves ou pourcentage ? Le
+chiffre du manuel est un taux de fréquentation. Suggestion :
+`ancien texte` `the pupils in class every day rose from 58 to 91`
+`nouveau texte` `the pupils in class every day rose from 58 % to 91 %`
+
+**minor-5 — `03-revision` Q5 : les quatre options font exactement 54 caractères.** Aucune n'est
+maladroite, l'anglais tient (vérifié) — mais c'est l'empreinte d'un calibrage à la longueur, et le
+chapitre en porte d'autres traces (`03-revision` Q1 : 26/27/32/32 ; `quiz` Q1 : 38/38/41/41). Rien à
+corriger, à savoir.
+
+**minor-6 — `03-revision` Q1 : l'explication finit sur du hors-sujet.** « geometry is a branch of
+maths, and art belongs to no heading at all » — ni *geometry* ni *art* n'apparaissent dans les
+options. C'est `cours.md` l.53 collé là. Supprimer la dernière phrase.
+
+**minor-7 — trois items `too … to` sur le même moule.** `quiz` Q3, `01-pratique` Q4 et `02-boss` Q3
+sont trois QCM « voici une phrase, que dit-elle ? ». Les trois angles diffèrent réellement (le
+blocage, le rôle du *for*, l'éloge), mais la **tâche** ne varie pas — règle 5 du brief. Une
+transformation (« joins these two sentences with *too … to* ») aurait couvert l'exercice du manuel
+(GRAMMAR FOCUS activité 1, qui est un exercice de **production**) et diversifié le lot. Aucun item
+du chapitre ne demande de **produire** une structure.
+
+**minor-8 — la même règle enseignée deux fois dans deux explications.** `quiz` Q2 (« chapters cut up
+a book, never a three-page essay ») et `01-pratique` Q1 (« a book is never cut into paragraphs and
+[…] an essay is never cut into chapters »).
+
+**minor-9 — `chapter.json` : description de 2306 caractères**, la plus longue de la matière de 28 %
+(la suivante, `07-walking-tour`, fait 1801 ; la médiane est à ~1200). Elle est exacte et sans faute,
+mais c'est une phrase unique de plus de deux mille signes.
+
+**minor-10 — `03-revision` Q3 porte `difficulty: 3` dans un exercice `difficulty: 2`.** Autorisé par
+le moteur, cohérent ici (c'est bien l'item le plus dur du fichier), signalé pour l'homogénéité avec
+le constat MINOR-12 de l'audit du chapitre 10. Idem `03-revision` Q6.
+
+**minor-11 — `quiz` Q3 : 36 caractères de la règle recopiés dans l'explication** (« quality has
+passed the point where »). Acquitté au titre de la réserve de la règle 6 (« formules enseignées
+explicitement comme telles »), mais c'est le plus gros fragment de cette classe.
+
+**minor-12 — `03-revision` Q1 option `c` : la justification du cours est un peu raide.** Le cours
+(l.240) écarte « science » au motif que « the heading is a collective name, **and it is plural** ».
+En anglais scolaire britannique réel, *Science* au singulier **est** un intitulé d'emploi du temps
+courant. L'option `c` reste fausse par son autre moitié (« **Language** » au singulier), donc l'item
+tient — mais la raison affichée est plus absolue que l'usage. Le manuel imprime *sciences* /
+*languages* : s'y tenir, sans en faire une loi de l'anglais. Suggestion, `cours.md` l.240 :
+`ancien texte` `| "physics, chemistry and biology are science" | _they are **the sciences**_               | the heading is a collective name, and it is plural               |`
+`nouveau texte` `| "physics, chemistry and biology are science" | _they are **the sciences**_               | your book's heading is the plural one, and it names a group      |`
+
+**minor-13 — `resume.md` l.12 pré-annonce les distracteurs de `03-revision` Q4** (« **not** *tasty*,
+**not** *plentiful* » — soit exactement les options `c` et `b`). C'est le travail légitime d'un
+résumé ; noté pour mémoire.
+
+**minor-14 — écho `attendance`.** Le mot est la clé de `quiz` Q4, le mot travaillé de
+`03-revision` Q5, et le deviendrait dans `02-boss` Q2 après la correction MAJOR-10. Trois items sur
+un même mot : si l'on applique MAJOR-10, préférer `provision` à `attendance` dans la nouvelle liste
+de Q2 — mais cela réactive alors la fuite depuis Q1. Le mieux est d'accepter l'écho, `attendance`
+étant travaillé sous trois angles différents (forme du nom / famille du verbe / direction du
+mouvement).
+
+---
+
+## 5. Ce qui est acquitté — vérifié, pas supposé
+
+- **Aucune clé fausse : 0 / 23.** 20 QCM, 2 `ordering`, 1 `multi` re-résolus à l'aveugle.
+- **Les deux `ordering` sont strictement forcés.** `01-pratique` Q1 : l'emboîtement livre ⊃ chapitre
+  ⊃ paragraphe ⊃ phrase ⊃ point ne laisse aucune permutation. `03-revision` Q3 : *priority* place le
+  bus en tête (le cours définit le mot comme « ce qui vient **d'abord** »), une phrase place les
+  bancs avant le toit, une condition (« only if there is anything left in June ») envoie la peinture
+  en dernier — les quatre positions sont contraintes, aucun ordre alternatif n'est défendable. C'est
+  le meilleur item du chapitre.
+- **Le `multi` n'a aucun distracteur défendable** (voir BLOCKER-1 pour le détail des six options).
+- **Forme : la meilleure de la tranche.** a=5 b=5 c=5 d=5 exactement ; 0 % de clé la plus courte ;
+  5 % de clé la plus longue.
+- **Droits (R-2) : rien à signaler.** Aucune ligne de l'annonce du WFP n'est reproduite. Le titre
+  imprimé du manuel n'apparaît nulle part dans les questions ; `cours.md` l.177 en cite une variante
+  altérée (*a country* pour *a nation*) et la correction MAJOR-8 la fait disparaître de toute façon.
+  Les deux items sur l'annonce (`quiz` Q5, `03-revision` Q6) sont écrits sur des pages inventées.
+- **Aucun point de grammaire inventé.** La colonne *Functions and linguistic exponents* du UNIT
+  OUTLINE p.87 donne « Persuasion ; Word building » : le cours enseigne exactement le spidergramme
+  (word building), la mécanique de la persuasion, et `too + adjective + to`, qui est l'encadré
+  MY GRAMMAR p.92 mot pour mot. Rien au-delà. Les mentions de *so … that* et *not … enough*
+  (l.219) sont présentées comme des voisins, pas enseignées — et ne sont testées par aucun item ✅.
+- **Le piège du guide enseignant est évité.** La KEY p.24 donne onze paires de contraires et
+  **omet silencieusement *written / oral***, pourtant imprimée dans la boîte de l'élève. Le
+  chapitre **enseigne la paire** (`cours.md` l.99, `resume.md` l.8-9), la **teste** (`quiz` Q1) et
+  **documente la divergence dans `chapter.json` `sources[]`** ✅. Même traitement pour les trois
+  spidergrammes, que le guide laisse sans corrigé : les familles ont été reconstruites sur les
+  amorces imprimées (*denial, provision, attend, reduce, expectant*) et le fichier le dit ✅.
+- **Aucun doublon avec le chapitre 02.** Le 02 possède le **métalangage** (qu'est-ce qu'un synonyme,
+  un antonyme, quel dictionnaire les donne) ; le 12 ne le renomme jamais et l'**emploie** sur le
+  champ scolaire. Le cours pose lui-même la frontière (l.9 : « Here you do not name the tool: you
+  **use** it »). Aucun item du 12 ne demande la définition d'un antonyme, aucun item du 02 ne porte
+  sur le lexique scolaire. **Vérifié sur les 23 items du 12 et sur le cours + les quatre fichiers du
+  02.** ✅ Et la **règle 1 du jeu des contraires** (un contraire répond à une acception) est une
+  vraie nouveauté : le 02 n'a rien d'équivalent.
+- **`quiz` Q4 (`attendance` / `attention` / `attending` / `attendant`) : l'arbitrage de
+  l'orchestrateur est CONFIRMÉ.** La clé est la plus longue d'un caractère (10 contre 9/9/9) parce
+  que l'anglais écrit *attendance* ainsi. Quatre mots isolés de neuf à dix lettres ne présentent
+  aucun indice de longueur perceptible : la mesure « clé strictement la plus longue » vise le cas où
+  la clé est une proposition et les distracteurs des syntagmes courts. **Faux positif — laisser en
+  l'état.** (L'item a un tout autre défaut, réel : MAJOR-7.)
+- **Le chapitre a bien été écrit en deux mains, et les deux moitiés sont cohérentes.**
+  `03-revision.json` (second agent) comble exactement ce que la consigne annonçait, et tout y est
+  enseigné par le cours : l'échelle scolaire (Q2 ↔ `cours.md` §« The ladder »), les intitulés
+  collectifs (Q1 ↔ §« What the timetable prints »), et les trois MY NEW WORDS jamais testés ailleurs
+  — *priority* (Q3), *nutritious* (Q4), *boost* (Q5, avec son contraire *reduce*). **Aucune
+  contradiction de fond, aucune divergence de registre**, et pas de doublon de notion entre les deux
+  moitiés (l'annonce est vue par la porte sous l'angle des coordonnées et par la révision sous
+  l'angle de l'appel : deux parties différentes de la même page). Les **trois meilleurs items du
+  chapitre — `03-revision` Q2, Q3 et Q6 — sont de la seconde main**, et ce sont aussi trois des
+  sept items qui ne recyclent rien. Le second agent a mieux résisté au cours que le premier.
+
+---
+
+## 6. Réponses aux pistes explicitement demandées
+
+| Piste | Verdict |
+| --- | --- |
+| Cohérence des **deux mains** | ✅ cohérentes sur le fond, le registre et la couverture — **sauf** que la seconde moitié est la plus propre : **3 items recyclés sur 6 (50 %)** contre **13 sur 17 (76 %)** dans la première |
+| Le `multi` ramené de 8 à 6 options : **3 clés indiscutables ?** | ✅ oui — *provision*, *denial*, *reduction* sont les noms attestés de trois verbes de la leçon |
+| … **3 distracteurs indiscutablement faux ?** | ✅ oui — *expectant* (adjectif), *reduce* (verbe nu), *provided* (participe / conjonction) ne sont des noms dans aucun emploi |
+| … **mais** | 🟥 **BLOCKER-1** : l'explication n'a pas suivi et décrit toujours 4 clés, 4 distracteurs et 2 adjectifs. Et 🟧 **MAJOR-10** : Q1 imprime deux des trois clés de Q2 |
+| `02-boss` Q1 — **54 car. du cours** | 🟥 confirmé, **BLOCKER-3** — et le défaut dépasse le fragment : la clé et les quatre non-mots des distracteurs sont tous imprimés dans `cours.md` |
+| `01-pratique` Q2 — **39 car.** | 🟧 confirmé, **MAJOR-6** — l'énoncé donne en outre le discriminant du tableau |
+| `01-pratique` Q6 — **« the fourth answer »** | 🟧 confirmé, **MAJOR-1**, correction fournie |
+| `quiz` Q4 — clé la plus longue d'un caractère | ✅ **faux positif confirmé**, laisser en l'état (mais MAJOR-7 sur le même item) |
+| Comblements du second agent (échelle, intitulés collectifs, *priority* / *nutritious* / *boost*) | ✅ **justes et tous enseignés par `cours.md`** — vérifié un par un |
+| Le chapitre **02** refait-il ce travail ? | ❌ non — frontière métalangage / emploi tenue des deux côtés |
+| `ordering` / `matching` dans la matière | ✅ recomptés : **12 `ordering`, 13 `matching`** (+ 15 `multi`). Le ch.12 apporte **2 ordering, 0 matching** → MAJOR-14 |
+| Le cours enseigne-t-il tout ce qui est testé ? | ✅ **23/23** |
+| … et l'inverse ? | ❌ non — le **jeu des contraires** (8 paires sur 12), *candidate*/*examiner*, *timetable*, *multiply* ne sont jamais testés → MAJOR-13 |
+
+---
+
+## 7. L'inventaire du recyclage — le compte lu, pas le compte du script
+
+| Item | Ce qui est rejoué (`cours.md` / `resume.md`) | Ce qui change | Vu par le scan ? |
+| --- | --- | --- | --- |
+| `quiz` Q4 | l.144 « the office counts it every morning » + le contraste *attention* | rien (mise en scène) | partiellement (24 c., explication) |
+| `quiz` Q5 | l.177 la photo d'enfants qui mangent + l.179 `.org` / `fundraising` + la conclusion | rien | **oui** (35 et 33 c., **énoncé**) |
+| `01-pratique` Q1 | l.72-80 le tableau **dans l'ordre** + `resume.md` l.7 la chaîne fléchée | rien | partiellement (26 c.) |
+| `01-pratique` Q2 | l.36-43 le tableau, **ses deux colonnes** + le carnet de notes | rien | **oui** (39 + 20 c.) |
+| `01-pratique` Q3 | l.68 l'exemple travaillé *soustraire puis diviser* | les nombres | non |
+| `01-pratique` Q4 | l.209 « too high for the little ones to reach » + ses deux exclusions | l'objet | partiellement (24 c.) |
+| `01-pratique` Q5 | l.227 : **les quatre options sont les quatre mots d'une phrase** | rien | **oui** (4 fragments) |
+| `01-pratique` Q6 | l.29 la ligne ✗ + la ligne ✓ + l.235 le mur des pièges + `resume.md` l.3 | *biology* → *science* | **oui** (28 c.) |
+| `02-boss` Q1 | l.146 le paragraphe et les deux titres en gras + l.142 les quatre non-mots | rien | **oui** (54 + 38 + 29 c.) |
+| `02-boss` Q2 | l.132-138 le tableau des familles, lu ligne à ligne | rien | **non** |
+| `02-boss` Q4 | l.183 la chaîne, y compris le sens interdit devenu distracteur | rien | **oui** (27 + 21 c.) |
+| `02-boss` Q5 | l.120, l.121 et l.126 : **trois phrases d'exemple sur quatre options** | un mot par phrase | partiellement (26 c.) |
+| `02-boss` Q6 | l.153 « No one here is denied a library card » | le nom | non |
+| `03-revision` Q1 | l.51-52 les deux listes + l.55 **la mauvaise réponse nommée** | une matière retirée | **non** |
+| `03-revision` Q3 | l.161 « not a polite way of saying important » (explication) | — | **oui** (25 c.) |
+| `03-revision` Q4 | l.154 « Bread and lentils are cheap and nutritious » = **la clé** | + une orange | **non** |
+
+**16 items sur 23 — 70 % du chapitre.** Les tranches précédentes : 11, 12, 7, 7 puis 10 sur 23.
+**C'est le chapitre le plus recyclé de la matière.**
+
+Le scan de 20 caractères en désigne 16 lui aussi, mais **seulement 13 sont les bons** : il rate
+`02-boss` Q2, `03-revision` Q1 et `03-revision` Q4 (mots réagencés), et il lève `quiz` Q1, `quiz` Q2
+et `quiz` Q3, où la reprise est une glose de règle dans l'explication — légitime.
+
+**Les sept items propres** : `quiz` Q1, `quiz` Q2, `quiz` Q3, `02-boss` Q3, `03-revision` Q2,
+`03-revision` Q5, `03-revision` Q6. Trois sont dans la porte, **trois sur six** dans `03-revision`
+— l'exercice de la seconde main. Réparti par moitié : **13 items recyclés sur les 17 de la première
+main (76 %)** contre **3 sur les 6 de la seconde (50 %)**. Et **`01-pratique` est recyclé
+intégralement : 6 items sur 6.**
+
+---
+
+## 8. Ordre de traitement conseillé
+
+1. **BLOCKER-1** (`02-boss` Q2, explication fausse) — c'est le seul constat qui trompe activement un
+   élève, et la correction tient en un paragraphe.
+2. **MAJOR-10** dans la foulée (mêmes deux items du boss).
+3. **BLOCKER-3, BLOCKER-4, BLOCKER-2** puis **MAJOR-2/-3/-4/-7/-8/-9/-11/-12** : **onze constats,
+   toutes les corrections du côté `cours.md`/`resume.md`, aucun item calibré touché.** Une seule
+   passe sur le cours les règle tous — c'est le geste le plus rentable du chapitre.
+4. **MAJOR-5** (conversion de `01-pratique` Q1 en `matching`) — règle du même coup MAJOR-13 et
+   MAJOR-14.
+5. **MAJOR-1** (« the fourth answer ») et **MAJOR-6** (l'énoncé de `01-pratique` Q2) : deux retouches
+   d'item, indépendantes.
+6. Les MINOR, en dernier.
+
+⚠️ **Après la passe sur le cours, relancer le scan de fragments** : les corrections ci-dessus
+suppriment 15 des 40 fragments, dont les cinq plus longs. Un compte résiduel autour de 20 est
+attendu et normal (gloses de règles dans les explications) — **il ne vaut toujours pas quitus**, et
+la seule vérification qui compte reste la confrontation item par item.
