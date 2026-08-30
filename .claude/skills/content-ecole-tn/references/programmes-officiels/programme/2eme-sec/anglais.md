@@ -5,7 +5,7 @@
 > **Sources** (combinées — voir README) :
 > - **Guide enseignant** (programme) : `641203P00.pdf` (`cnp-officiel/manuels/secondaire/c2/enseignant/`) — page de titre imprimée : **« Perform to Learn — Second Year Secondary Education — Teacher's Book »** (Republic of Tunisia · Ministry of Education · **National Pedagogic Centre**). **Authors** : Ezzeddine Ammar (Inspector), M'hammed Merdessi (Inspector), Ali Omrane (Advisor), M<sup>ed</sup> Habib Raddaoui (Senior teacher). **Evaluators** : Jaouida Ben Afia (General Inspector), Abdennour Khemiri (Inspector). **96 pages.** **Pages lues** : intégralement (1→96).
 > - **Manuel élève** (contenu/exemples/exercices) : `241203P00.pdf` (`…/eleve/`) — « **Perform to Learn — Second Year Secondary Education — Student's Book** » (mêmes auteurs/évaluateurs, National Pedagogic Centre). **184 pages.** **Pages lues** : couverture, remerciements, préface, **Table of Contents intégrale** (p.4–5, avec pagination précise de chaque leçon) ; puis **125 pages à profondeur de génération** : le **2026-08-04**, les thèmes I à III — **p.20–27** (leçons 1–2), **p.33–41** (leçons 3–5), **p.45–54** (leçons 6–8) ; le **2026-08-28**, les thèmes IV à VI — **p.60–68** (leçons 9–11), **p.73–81** (leçons 12–14), **p.86–95** (leçons 15–17) — **et l'APPENDICE INTÉGRAL p.166–184** (Grammar summary, lexique par leçon, verbes irréguliers, table phonétique) ; le **2026-08-30**, les thèmes VII à XI — **p.100–107** (leçons 18–19), **p.112–120** (leçons 20–22), **p.125–132** (leçons 23–24), **p.138–144** (leçons 25–26), **p.147–154 et p.160–165** (leçons 27–30). **Le tronc commun est intégralement transcrit.** Voir **§4 bis**. La pagination du manuel élève **est directement exploitable** (voir §4 — table des matières recopiée telle quelle, PDF page = page imprimée, vérifié p.20 et p.25).
-> **Transcrit le** : 2026-07-07 (guide enseignant) · **2026-08-04** (manuel élève, tranche 1 — chapitres 01 à 03) · **2026-08-28** (tranche 2 — chapitres 04 à 06 + appendice) · **2026-08-30** (tranche 3 — chapitres 07 à 11, le solde du tronc commun). **Statut** : `partielle` / profondeur `generation` — *partielle* parce que 59 pages du manuel restent volontairement non lues (les 20 leçons Arts/Économie, supplément optionnel par filière hors tronc commun, et le diagnostic test / review module p.6–19) ; *generation* parce que **tout ce qui est couvert l'est à profondeur de génération**. Les onze chapitres du programme codifié sont générables — transcription fidèle du guide (cadre méthodologique complet + **Book Map** — grilles Functions/Grammar/Vocabulary — des **11 thèmes / 30 leçons + 20 leçons supplémentaires (Arts/Économie)**, lus intégralement p.12–73 + référentiel **« Communicative Functions and Exponents »** p.88–93 + **Timeline** p.94–95), et du manuel élève **pour les ONZE chapitres du tronc commun + l'appendice** (§4 bis). **Aucun chapitre ne reste non transcrit** : les 11 sont générables (R-5 lu au chapitre — la liste opposable est `chapitresGeneration` dans `suivi/2eme-sec.json`). Le détail « Suggested Procedure »/« Answer key » de chaque leçon du guide (méthode pas-à-pas, corrigés) n'est **pas** recopié exhaustivement — non nécessaire au scope (voir §6).
+> **Transcrit le** : 2026-07-07 (guide enseignant) · **2026-08-04** (manuel élève, tranche 1 — chapitres 01 à 03) · **2026-08-28** (tranche 2 — chapitres 04 à 06 + appendice) · **2026-08-30** (tranche 3 — chapitres 07 à 11, le solde du tronc commun) · **2026-08-30** (§4 ter — **la couche du GUIDE ENSEIGNANT sur les thèmes VII à XI** : ses corrigés imprimés, les **transcriptions intégrales des deux documents sonores** des L21 et L26, et sept divergences corrigé ↔ énoncé. Le §4 bis transcrit le manuel élève et a raison d’écrire « corrigé : réponse non imprimée » — le manuel n’en imprime pas ; le corrigé, quand il existe, est au **guide**, et c’est ce que §4 ter apporte). **Statut** : `partielle` / profondeur `generation` — *partielle* parce que 59 pages du manuel restent volontairement non lues (les 20 leçons Arts/Économie, supplément optionnel par filière hors tronc commun, et le diagnostic test / review module p.6–19) ; *generation* parce que **tout ce qui est couvert l'est à profondeur de génération**. Les onze chapitres du programme codifié sont générables — transcription fidèle du guide (cadre méthodologique complet + **Book Map** — grilles Functions/Grammar/Vocabulary — des **11 thèmes / 30 leçons + 20 leçons supplémentaires (Arts/Économie)**, lus intégralement p.12–73 + référentiel **« Communicative Functions and Exponents »** p.88–93 + **Timeline** p.94–95), et du manuel élève **pour les ONZE chapitres du tronc commun + l'appendice** (§4 bis). **Aucun chapitre ne reste non transcrit** : les 11 sont générables (R-5 lu au chapitre — la liste opposable est `chapitresGeneration` dans `suivi/2eme-sec.json`). Le détail « Suggested Procedure »/« Answer key » de chaque leçon du guide (méthode pas-à-pas, corrigés) n'est **pas** recopié exhaustivement — non nécessaire au scope (voir §6).
 > **Langue d'enseignement** : `en` (monolingue — le guide et le programme sont **en anglais**, langue cible). **gradeSlug** : `2eme-sec`. **subject id** attendu : `english-2eme-sec` (aucun subject `english-*` existant pour le secondaire dans `content/` au moment de la transcription — id choisi par analogie avec la convention primaire `<matière>-<niveau>`, cf. README « Convention d'identifiants » ; à confirmer/ajuster si une convention secondaire différente émerge). **La 2ème année secondaire est la 2ème année du lycée** : elle **suit la 1ère année secondaire** (post-9ème/collège, transition A2→B1) et **précède la 3ème année secondaire** (spécialisation par section) et le **Bac**. Manuel/matériel : **« Perform to Learn » — Second Year Secondary Education** (Student's Book + Teacher's Book). Le Student's Book sert **toutes les sections** (tronc commun) avec **20 leçons supplémentaires optionnelles** pour les sections **Arts** (10) et **Économie & Services/Gestion** (10) — cf. §2 note sur les branches.
 
 ## 1. Cadre & compétences (les objectifs généraux / theoretical framework)
@@ -8800,6 +8800,412 @@ la table des verbes irréguliers), p.184 (PHONETIC SYMBOLS, dernière page du ma
 
 **Pages NON ouvertes :** p.155 à 159 (leçon « Arts » A10 — exclues par consigne) ; p.167–176 et
 p.181–182 (annexes intermédiaires, hors périmètre).
+
+## 4 ter. Le guide enseignant sur les thèmes VII à XI — les corrigés imprimés, les transcriptions sonores, et six divergences que le §4 bis ne pouvait pas voir
+
+> **Ce que cette section est, et pourquoi elle ne fait double emploi avec rien.** Le §4 bis
+> ci-dessus transcrit le **manuel élève** (`241203P00`) chapitre par chapitre, et il a raison
+> d'écrire « corrigé : réponse non imprimée » là où il l'écrit : **le manuel n'imprime presque
+> jamais de corrigé.** Mais le **guide enseignant** (`641203P00`), lui, en imprime — et pour les
+> chapitres 07 à 11 il imprime aussi **la transcription intégrale de deux documents sonores** et
+> **une grille de mots croisés résolue**. Cette section ajoute cette couche-là, et elle seule.
+> Elle ne corrige pas le §4 bis : elle lui donne ce qui manquait pour fermer une question.
+>
+> **Portée** : guide p.45–73 (thèmes VII à XI), p.77 (annexe de corrigés), p.83–86 (annexe des
+> transcriptions).
+> **Méthode** : lecture de la **couche de texte** du PDF, sans OCR ni vision — méthode différente
+> de celle du §4 bis, qui lit des rendus 150/300/600 dpi. Chacune voit ce que l'autre ne voit pas :
+> le §4 bis voit les **soulignements, les gras et les glyphes phonétiques** ; cette section-ci lit
+> le **texte des corrigés** sans risque de lecture erronée. Là où les deux se recoupent, elles
+> concordent.
+
+---
+
+### 4 ter.0 — Comment ces corrigés ont pu être lus : les chiffres du guide sont des glyphes non mappés
+
+**Le piège, d'abord.** Extraits tels quels, les corrigés du guide paraissent amputés : les numéros
+d'items ont disparu, la ponctuation aussi, et il ne subsiste que des suites de lettres orphelines.
+On conclut naturellement que « l'alignement n'a pas survécu à l'extraction ». **C'est faux.**
+
+Les chiffres et une partie de la ponctuation ne sont pas absents : ils sont encodés dans une
+**police sous-ensemble** dont les glyphes ne sont pas mappés vers Unicode, et l'extracteur les rend
+en **caractères de contrôle**. La table se déduit du corrigé du **Progress Check** (p.73), dont
+l'ordre des items est auto-vérifiable — son exercice 1 numérote onze réponses, ce qui donne les
+dizaines et donc la clé :
+
+| Chiffre imprimé | Rendu à l'extraction |
+| --- | --- |
+| `1` | `\x01` |
+| `2` | `\x06` |
+| `3` | `\x07` |
+| `4` | `\x08` |
+| `8` | `\x0e` |
+| `9` | `\x0f` |
+| `0`, `5`, `6`, `7` | **une espace** — indistinguables |
+| `.` (point) | `\x02` |
+| `,` (virgule) | `\x05` |
+| `-` (trait d'union) | `\x04` |
+
+**La preuve interne** : dans le corrigé de l'exercice 1, le dixième item se lit `\x01` + espace
+(= « 1 » + « 0 ») et le onzième `\x01\x01` (= « 11 »). Aucune autre table ne produirait cela.
+
+⚠️ **Limite à connaître avant de s'en servir.** Les chiffres **0, 5, 6 et 7** étant rendus par une
+espace, un corrigé ne se décode entièrement que si **sa structure le contraint** — par exemple une
+suite de six items dont quatre numéros sont lisibles. Là où la structure ne contraint pas, la
+section le dit et **ne comble pas**.
+
+⚠️ **À ne pas confondre avec les glyphes du §4 bis.** Celui-ci signale, aux p.38, 77 et 91 du
+*manuel*, des **glyphes phonétiques** non-API (`ƒ` pour `ʃ`, `Λ` pour `ʌ`, `∂` pour `ə`) : ce sont
+des substitutions de police **visibles à l'image**, un défaut d'impression du manuel. Ici il s'agit
+d'un défaut d'**encodage** du guide, invisible à l'image et visible seulement à l'extraction. Deux
+problèmes distincts, deux sources distinctes.
+
+---
+
+### 4 ter.1 — Les corrigés imprimés du guide, thème par thème
+
+Tout ce qui suit est **imprimé au guide**. La colonne « décodé » signale les clés qui n'étaient
+lisibles qu'après application de la table ci-dessus.
+
+#### Thème VII — Education (guide p.46–47)
+
+| Leçon / activité | Corrigé imprimé | Décodé |
+| --- | --- | --- |
+| **L18**, Stage Two act. 2 (pour / contre) | Rachel *for* · Anita *for* · **Emma** *against* · Katie *against* · Sue *for* · Sarah *for ∧ against* | — |
+| **L18**, Stage Two act. 3 (appariement) | six appariements citant les lettres **g** et **h** | — |
+| **L19**, Stage Two act. 2 (conseils ↔ personnages) | a: Jane · b: Andy · c: Paul · d: Steve · e: **Terry** · f: **Chunk** · g: Mary | — |
+| **L19**, act. 3.2 (modaux) | a: should've · b: will · c: shouldn't have · d: needn't · e: had better · f: must · g: ought to | — |
+| **L19**, act. 3.c (valeurs) | a: regret · b: **future** · c: reproach · d: unnecessary action · e: advice · f: deduction/logical conclusion · g: advice | — |
+
+⚠️ Trois de ces cinq clés portent une divergence — voir **§4 ter.3**, points 1, 2 et 3.
+
+#### Thème VIII — Professional Life (guide p.51, 53, 54)
+
+| Leçon / activité | Corrigé imprimé | Décodé |
+| --- | --- | --- |
+| **L20**, act. 3 (valeur communicative) | « How could you…? » → **disapproval** · « He would make himself beans **and** toast » → **habit in the past** | — |
+| **L20**, act. 4 (émotions) | a: proud · b: guilty · c: relieved · d: envious/jealous · e: guilty · f: **sorry** | — |
+| **L21**, `The Lighter Side` (mots croisés) | *Across* : hospital · physicians · office · stage · degree · fun — *Down* : diplomat · stitches · training · study · **earn** | — |
+| **L21**, Stage Two act. 2 (mots à compléter) | assistant · schooling · internship · embassy · competitive · world | — |
+| **L22**, Stage Two act. 4 (appariement) | **1→d · 2→f · 3→a · 4→e · 5→b · 6→c** | ✔ |
+| **L22**, act. 6.e (caravanes de chameaux) | didn't use to · used to carry · put · carried · travel · used to be · **were called** | ✔ |
+
+⭐ **La grille de mots croisés est imprimée RÉSOLUE au guide p.77**, en plus de sa clé p.53. Les onze
+mots sont donc vérifiés deux fois, par la clé et par les lettres de la grille. C'est ce recoupement
+qui établit **`EARN`** au 9-vertical, là où la clé de la p.53 le rend tronqué (« ear ») : c'est la
+seule forme qui réponde à « Money or a living » **et** remplisse les quatre cases.
+
+⭐ **Les sept réponses de l'exercice des chameaux (L22) sont le corrigé le plus discriminant de tout
+le lot** : elles font alterner `used to` (items 2 et 6), le **prétérit simple** (3 et 4),
+l'**infinitif nu après un modal** (5), la **négation de `used to`** (1) et le **passif** (7).
+⚠️ L'item 3 (**put**) est invisible à l'écrit — *put* est identique au présent et au prétérit ; un
+QCM bâti dessus ne discriminerait rien.
+
+#### Thème IX — Media and Arts (guide p.58, 60)
+
+| Leçon / activité | Corrigé imprimé | Décodé |
+| --- | --- | --- |
+| **L23**, Stage One act. 1 (schéma) | books *(pré-rempli)* · **monographs · dictionary · catalogue · newspapers · journals · magazine · videotape · atlas · encyclopedia** | — |
+| **L23**, Stage Two act. 1 (type de texte) | **c** — argumentatif | ✔ |
+| **L23**, Stage Two act. 4 (appariement lexical) | **1→c · 2→d · 3→a · 4→e · 5→b · 6→f** | ✔ |
+| **L24**, Stage Two act. 1 (causes) | a: **the internet** · b: **MTV** · c: **mobile phones** | ✔ |
+| **L24**, Stage Two act. 3 (synonymes) | victim → **casualty** (§5) · great love → **passion** (§1) · to accuse → **to blame** (§4) · rejecting/refusing → **shunning** (§4) · the fall/the drop → **decline** (§3) | ✔ |
+
+⭐ **Le corrigé de la L23 act. 4 n'était lisible qu'après décodage** : il est disposé en deux
+rangées — les définitions `a`→`f` au-dessus, le numéro du mot en dessous — et se lit
+**a→3 · b→5 · c→1 · d→2 · e→4 · f→6**. Deux de ces six numéros (5 et 6) sont rendus par une espace ;
+c'est la **bijection** qui les rétablit sans ambiguïté.
+
+⚠️ **Le guide n'imprime AUCUN corrigé** pour les activités **2, 3 et 5** de la L23 (idée principale
+par paragraphe, moyens de l'argumentation, question d'opinion). C'est une **absence**, pas une
+perte : le bloc `Answer key` de la p.58 ne contient que les deux clés ci-dessus. Ces trois exercices
+se résolvent par leurs énoncés, ce qui est différent d'être corrigés.
+
+⭐ **Les cinq synonymes de la L24 se trouvent chacun dans le paragraphe que l'énoncé annonce** —
+vérifié un par un. C'est le seul exercice de la tranche dont le corrigé soit complet, exact **et**
+vérifiable renvoi par renvoi.
+
+#### Thème X — Science and Technology (guide p.65–66)
+
+| Leçon / activité | Corrigé imprimé | Décodé |
+| --- | --- | --- |
+| **L25**, act. 4.b (discours indirect) | « **Manal said that she was one of those who had met her fiancé through cyberspace** » | — |
+| **L26**, Stage Two act. 1 (QCM d'écoute) | **look · never stops changing · be in constant use · see better · stops growing completely** | ✔ |
+
+⭐ Le corrigé de la L25 est le **seul** de cette leçon, et il expose à lui seul les trois changements
+du discours indirect : le **pronom** (*I* → *she*), le **temps du verbe** (*am* → *was*) et le
+**recul du passé** (*met* → *had met*).
+⚠️ Il **reconduit une faute de l'énoncé** : « one of those **who met her fiancé** » — le relatif
+porte sur *those* (pluriel) et devrait donner *their fiancés*. La phrase reste bonne pour enseigner
+la concordance des temps, **jamais** comme modèle d'accord du relatif.
+
+⭐ Les cinq clés de la L26 s'alignent exactement sur les cinq questions, dans l'ordre. C'est le
+corrigé d'écoute le plus propre du lot.
+
+#### Thème XI — Ecology (guide p.69, 70, 72, 73)
+
+| Leçon / activité | Corrigé imprimé | Décodé |
+| --- | --- | --- |
+| **L27**, Stage One (appariement) | **1→d · 2→c · 3→a · 4→f · 5→e · 6→b** — intrus : **g** (la zoologie) | ✔ |
+| **L28**, Stage Two act. 1 (paragraphes) | **C / B / A / F / E** | ✔ |
+| **L29**, Stage One act. 1 (schéma) | hits · albums · lyrics · compact discs · tunes · melodies | ✔ |
+| **L30** — Progress Check 3 | **corrigé intégral des douze exercices**, ci-dessous | ✔ |
+
+> ⚠️ **R-2 — leçon 29.** La seule chose reprise ici de cette leçon est le corrigé de son **schéma
+> lexical**, qui ne touche pas à l'œuvre. Le §4 bis a raison de refuser toute description fine des
+> strophes, et **cette section ne l'élargit pas** : la chanson support est une œuvre tierce sous
+> droits, et le guide en imprime les paroles p.86 — elles ne sont ni reproduites, ni paraphrasées,
+> ni décrites vers par vers. Le point de langue de la leçon (la comparaison introduite par `like` —
+> le *simile*, opposé à la métaphore et à la personnification) s'enseigne intégralement avec des
+> exemples libres de droits.
+
+##### Le corrigé intégral du Progress Check 3 (guide p.73)
+
+⚠️ **Attention à la numérotation : elle ne correspond pas à celle du manuel.** Voir **§4 ter.3,
+point 6**. Les numéros ci-dessous sont ceux du **manuel**.
+
+| Ex. (manuel) | Corrigé imprimé au guide |
+| --- | --- |
+| **1** — écoute à trous | washing · fridge · freed · women · housework · light · transformed · industry · manufacturing |
+| **2** — mots de la boîte | who · reached · caring · life · school · occasionally · choose · of *(non utilisés : `programs`, `addicted`)* |
+| **3** — choix de forme | have taught · witnessed · can · full · were rapidly followed · using |
+| **4** — temps et formes | *(trou 1 : `read`, déduit du texte)* · reach · marking · use · choose · significant · don't overdo · better |
+| **5** — classement thématique | **education** : subject, qualifications, distance learning, studies, virtual universities, literature — **employment** : career, manager, training, hard work, promotion — **family** : offspring, generation, niece, nephew, relatives — **entertainment** : music, art, theatre, cinema |
+| **6** — intrus | a: **education** · b: **unemployment** · c: **promotion** · d: **tyranny** |
+| **7** — amorces à développer | *paragraphe modèle imprimé en entier* : la musique a de nombreux avantages ; elle donne aux élèves l'occasion d'écouter, réagir, voir, toucher et bouger ; elle améliore leurs capacités de lecture, d'écriture et de réflexion ; l'écoute aide à réfléchir, apprendre ou travailler ; la musique doit être **douce**, faute de quoi apprendre ou penser devient difficile ; son but premier est d'agir **positivement** sur la personne |
+| **8** — phrases à insérer | (1) → **b** · (2) → **c** · (3) → **a** |
+| **9** — ponctuer et capitaliser | *« Personal responsibility and active participation are the key principles of employment**.** Jobless people are expected to look for work**.** People receiving income assistance are supposed to seek work or participate in job training programs**.** By doing so**,** they may reach self**-**sufficiency. »* — **quatre phrases, une seule virgule, un trait d'union** |
+| **10** — phrase-sujet | *« The world's population will soon reach a level where there will not be enough resources to sustain life as we know it. »* — puis le texte enchaîne sur « Growth must be checked… » |
+| **11** — corriger les fautes | causes · rivers · heart · at · shortened · polluted areas |
+| **12** — accentuation | **1<sup>re</sup>** : internet, healthier, medicine, newspaper — **2<sup>e</sup>** : addiction, research, repeatedly, supported, scientific — **3<sup>e</sup>** : education, technologically, mathematics — **4<sup>e</sup>** : environmental, communications, availability, impossibility |
+
+⭐ **L'exercice 9 est intégralement récupérable** — c'est le décodage qui le rend lisible, la
+ponctuation étant précisément ce que l'encodage masquait. Quatre phrases, une virgule après « By
+doing so », et **self-sufficiency** avec trait d'union là où le manuel imprime « self sufficiency ».
+
+⚠️ **L'exercice 11 laisse une septième faute non corrigée** : le paragraphe imprime « by one or two
+years **in** average » (l'anglais dit *on average*), et le corrigé n'en donne que six. Les
+soulignements ne survivant pas à cette lecture, on ne peut pas trancher si elle était soulignée et
+oubliée, ou non soulignée. **Six corrections attestées, une septième signalée sans être imputée.**
+
+⚠️ **L'exercice 12 range `research` sur la 2<sup>e</sup> syllabe** (*reSEARCH*) — accentuation
+britannique et celle du verbe ; le nom s'accentue couramment sur la **1<sup>re</sup>** en anglais
+américain. **À ne pas transformer en question fermée.**
+
+---
+
+### 4 ter.2 — Les deux transcriptions sonores (guide p.83–86) — ce qu'elles débloquent
+
+Le guide imprime la **transcription intégrale** des documents sonores de la **L21** et de la
+**L26**. Sans elles, la compréhension orale de ces deux leçons ne serait **pas générable du tout** :
+le manuel imprime les questions, jamais les réponses, et l'enregistrement n'est pas dans le corpus.
+
+#### L21 — « What's Your Dream Job? » (guide p.83–84, source imprimée : `www.ello.org`)
+
+*Situation* : **Heidrun** et **Thorson**, deux étudiants **norvégiens** au Japon, sont interviewés
+par une radio locale **anglophone**, dans une émission quotidienne de **quinze minutes** intitulée
+« Meet the people ».
+
+- **Section 1** — la présentation par l'animateur.
+- **Section 2 — Heidrun** : elle veut être **assistante de médecin** ; l'assistant s'occupe des
+  petits actes (bilans, retrait de points de suture) **pour que** le médecin n'ait pas à les faire ;
+  la formation est « a lot of schooling », **4 à 6 ans** minimum dont **2 à l'hôpital** comme
+  stagiaire ; elle espère ensuite avoir sa **petite clinique** ou travailler avec un médecin.
+- **Section 3 — Thorson** : il veut devenir **diplomate**, de préférence au Japon ; il est venu
+  apprendre le japonais et vise un **master en relations internationales**, puis l'école
+  diplomatique du ministère des Affaires étrangères — un programme de **trois ans** — avant de
+  revenir travailler à l'**ambassade de Norvège à Tokyo**. C'est **très compétitif**, mais connaître
+  une langue rare donne un avantage : il n'y a que **300** Norvégiens vivant au Japon. Enfant, il
+  n'avait pas de métier de rêve du type **pompier** ou policier — il voulait être **joueur de
+  baseball**, **pour** devenir célèbre dans le monde entier.
+
+⭐ **Les dix QCM de l'activité 1 se ferment tous sur cette transcription** (le guide n'en imprime
+pas la clé) : 2 étudiants · en **anglais** · **un quart d'heure** · assistante de médecin · **aide
+les médecins** · **4 à 6 ans** · **en clinique** · **relations internationales** · **3 ans** ·
+**joueur de baseball**.
+
+⭐ **Trois pièges sont posés par la transcription elle-même, et ils sont bons** : *hospital* est bien
+dans le texte, mais comme lieu du **stage**, pas de travail final ; *fireman* y est **nommé et
+démenti** ; *a diplomat* est le métier **visé**, pas le rêve d'enfant — seul « when he was a kid »
+départage.
+
+⚠️ **Deux écarts entre l'énoncé du manuel et l'enregistrement**, qui piègent involontairement
+l'élève qui écoute : le manuel écrit « I could **become** famous the world over » là où
+l'enregistrement dit « I could **be** famous » ; et « for **2** years » là où il dit « for **two**
+years ».
+
+⚠️ **La troisième phrase du `LANGUAGE PRACTICE` de la L21 n'est pas un exercice à trou** : c'est une
+**troncature** de la phrase de Thorson, dont la transcription donne la version entière. Ne pas la
+traiter comme une question.
+
+#### L26 — « What will man be like? » (guide p.85, attribution imprimée : « Donne Byrne », « (Adapted) »)
+
+*Cadre* : interrogé sur l'homme du futur, le **Dr Franklin Gruber**, directeur du département
+d'études futuristes de l'université de **Durban**, répond.
+
+- **Section 1** — dans **5 000**, voire **50 000** ans, l'homme sera **différent**, car il **change
+  lentement en permanence**. Il y a **cinq cents ans** il était plus petit ; aujourd'hui les hommes
+  sont **environ trois pouces** plus grands, et cinq cents ans étant une période **relativement
+  courte**, la croissance devrait continuer. Nous n'utilisons que **20 %** de la capacité du
+  cerveau ; il faudra s'en servir **de plus en plus souvent**, il deviendra **de plus en plus
+  substantiel**, et la tête — surtout le **front** — s'élargira.
+- **Section 2** — les **yeux**, constamment sollicités, s'affaiblissent et imposent des lunettes,
+  mais sur une très longue période ils **deviendront plus forts**. **Bras et jambes**, moins
+  sollicités, deviendront **de moins en moins puissants** ; les **doigts**, très sollicités,
+  **de plus en plus sensibles**. Les **cheveux et poils** disparaîtront **du corps entier**, faute
+  d'utilité : hommes et femmes seront vraisemblablement **chauves**. L'homme du futur ne sera
+  peut-être pas très **attirant** — mais il aura **beaucoup en commun avec nous** : il restera un
+  être humain, avec des pensées et des **émotions** semblables aux nôtres.
+
+⭐ **Les cinq vrai/faux de l'activité 2 se ferment sur cette transcription** (le guide n'en imprime
+pas la clé) : *vrai* pour la taille il y a 500 ans ; **faux** pour « 23 % » — la transcription dit
+**20 %** ; **faux** pour des doigts « de moins en moins sensibles » ; **faux** pour un homme futur
+plus attirant ; **faux** pour un homme futur sans sentiments.
+⚠️ **Quatre des cinq énoncés sont faux** — un élève répondant « faux » partout obtiendrait 80 %. À
+rééquilibrer si l'on s'en inspire.
+⭐ L'item **23 % contre 20 %** est excellent : il ne se tranche que par l'écoute d'un chiffre.
+
+⚠️ **Attributions à ne pas transformer en question** : « Donne Byrne » (l'auteur d'ELT dont le nom
+est le plus proche s'écrit *Donn Byrne*) et le « Centre for Online Addiction » de l'encadré de la
+L25 ne sont vérifiables par aucune des deux sources.
+
+---
+
+### 4 ter.3 — Six divergences corrigé ↔ énoncé, et leur signature commune
+
+Les six ont la même cause, et c'est la conclusion la plus utile de cette section :
+**le guide corrige une édition du manuel qui n'est pas celle-ci.** Elles ne rendent aucun exercice
+faux — elles rendent le **corrigé** faux, ce qui est plus dangereux, puisqu'un enseignant pressé le
+recopie.
+
+1. **L18, act. 2 (guide p.46) — une élève de trop.** Le corrigé donne **six** noms ; le manuel n'en
+   imprime que **cinq**, et **« Emma » n'existe nulle part** dans le manuel. Les cinq lignes
+   exploitables : Rachel *for*, Anita *for*, Katie *against*, Sue *for*, Sarah *for **et** against*.
+
+2. **L18, act. 3 (guide p.46) — un corrigé pour un exercice plus long.** Il donne **six**
+   appariements alors que la colonne A n'a que **cinq** entrées, et cite les lettres **g** et **h**,
+   qui **ne sont pas imprimées** (la colonne B s'arrête à **f**). **Inutilisable tel quel.**
+   L'exercice imprimé, lui, se résout seul : **1→c · 2→e · 3→a · 4→f · 5→b**, intrus **d**.
+
+3. **L19, act. 2 (guide p.47) — deux personnages qui n'existent pas.** Le manuel imprime **Paul,
+   Jane, Mary, Beth, Andy, Barbara, Steve** ; le corrigé cite **« Terry »** et **« Chunk »**, et ne
+   cite **ni Beth ni Barbara**. La correspondance est pourtant forcée par les légendes :
+   **e → Beth** (« *I've spent ten minutes on this question* » ↔ « *Don't waste time on one
+   question* ») et **f → Barbara** (« *I wish I'd started my revision before last week. I was up so
+   late last night* » ↔ « *Don't revise heavily at the last minute. Get a good night's sleep* »).
+   ⚠️ **Ne pas confondre `c` et `g`** : les deux parlent de vérifier ses réponses — `c` s'adresse à
+   qui **manque de temps** (Paul), `g` à qui **en a de reste** et le gaspille (Mary).
+
+4. **L19, act. 3.c (guide p.47) — une catégorie hors tableau.** Le corrigé range la phrase **b** sous
+   « **future** » ; or « future » **n'est pas une colonne** du tableau imprimé. La colonne prévue est
+   **`Offering help`** — et c'est bien ce que fait la phrase (« I **will** be glad to help you… any
+   time you ask »). Avec cette correction, **les six colonnes sont toutes servies et l'exercice se
+   referme** : regret (a) · offering help (b) · reproach (c) · unnecessary action (d) · advice
+   (e **et** g) · deduction (f).
+   ⚠️ **Réserve sur l'item c.** Le corrigé (`shouldn't have` = *reproach*) est cohérent avec la
+   colonne visée, mais la phrase est bâtie **comme une déduction** — une preuve d'abord (« Look!
+   It's raining and Mr. Johnson is all wet »), une conclusion ensuite. L'anglais naturel serait
+   *He **must have** forgotten his umbrella*, forme **non proposée**. Item **discutable, à ne pas
+   fermer**.
+
+5. **L20, act. 4 (guide p.51) — une réponse hors tableau, et la ligne devient insoluble.** Le
+   corrigé répond « **sorry** » pour la ligne f ; le tableau imprimé n'offre que *proud*, *guilty*,
+   *envious/jealous* et *relieved*. **Le tableau est court d'une colonne** : le texte parle d'un
+   **regret**, qui n'est aucune des quatre. **La ligne f est à écarter de toute génération fermée.**
+   Les cinq autres lignes sont entièrement justifiées par le texte, et **`guilty` sert deux fois**
+   (b et e) — un QCM ne peut donc pas demander « quelle émotion n'apparaît qu'une fois ».
+   ⚠️ Le même corrigé cite « beans **and** toast » là où le manuel imprime « beans **on** toast » —
+   *beans on toast* est le plat, *beans and toast* n'est pas la même chose.
+
+6. **L28, act. 1 (guide p.70) — deux paragraphes qui n'existent pas.** Le corrigé, entièrement
+   lisible une fois décodé, se lit « **C / B / A / F / E** » : il nomme **cinq** paragraphes, dont
+   **E** et **F** que le manuel **n'imprime pas**, et il ne mentionne **jamais D**, qui est pourtant
+   l'un des quatre imprimés. Le guide corrige un exercice à **six** paragraphes.
+   ⭐ **Ce qui reste opposable** : le paragraphe à rayer est **C**, première lettre de la clé. Et
+   **l'ordre est verrouillé par les connecteurs, indépendamment du corrigé** : **B** annonce
+   « pressure from **several directions** » (il ouvre la liste), **A** commence par « Population
+   growth is **the main cause** », **D** commence par « **All that's bad enough. But** what's
+   increasing the stress **still further** ». Donc **B → A → D**, et **C** rayé.
+   ⚠️ **Pourquoi C est hors sujet, et c'est subtil** : il parle bien d'eau, et il en parle
+   **positivement** — le texte traite de la **pénurie** et de ses **causes**, C des **bienfaits de
+   l'irrigation**. L'intrus n'est pas hors thème, il est **hors argument**.
+
+**Et une septième, d'une autre nature — la plus lourde des sept.**
+
+7. **Progress Check (guide p.73) — le corrigé numérote QUATORZE items pour DOUZE exercices.** Ses
+   items **7** (`1→c 2→a 3→b 4→f 5→g 6→e`) et **8** (`1→e 2→b 3→c 4→a 5→d`) ne correspondent à
+   **aucun exercice imprimé** : ils s'intercalent entre l'exercice 6 (« odd man out ») et le
+   paragraphe modèle sur la musique. La correspondance réelle est donc **décalée de deux à partir de
+   l'exercice 7 du manuel** :
+
+   | Clé du guide | Exercice du manuel |
+   | --- | --- |
+   | 1 → 6 | 1 → 6 (identiques) |
+   | **7 et 8** | **aucun** — deux exercices fantômes |
+   | 9 | 7 (paragraphe sur la musique) |
+   | 10 | 8 (phrases à insérer) |
+   | 11 | 9 (ponctuation) |
+   | 12 | 10 (phrase-sujet) |
+   | 13 | 11 (corriger les fautes) |
+   | 14 | 12 (accentuation) |
+
+   Un enseignant qui suit la numérotation du guide décale ses corrigés de deux à partir de
+   l'exercice 7. **Les correspondances du §4 ter.1 sont celles du manuel**, rétablies.
+   ⚠️ Le même décalage joue **à l'intérieur** de deux exercices : la clé de l'**exercice 1** aligne
+   **onze** mots pour **neuf** trous (ses deux premières entrées, *childhood* et *hours*, sont des
+   mots **imprimés** dans le manuel), et celle de l'**exercice 4** aligne **neuf** entrées pour
+   **huit** items, dont *reach* deux fois.
+   ⚠️ Et l'énoncé de l'**exercice 2** annonce « **one** extra word » alors que huit trous pour dix
+   mots en laissent **deux** (*programs* et *addicted*).
+
+---
+
+### 4 ter.4 — Trois entrées du lexique actif du guide n'existent pas dans les leçons
+
+Le guide déclare un `ACTIVE VOCABULARY` par leçon. Pour les thèmes X et XI, **quatre mots n'y
+figurent nulle part** dans les pages de la leçon concernée :
+
+| Mot déclaré | Leçon | Constat |
+| --- | --- | --- |
+| **microslave** (fiche p.64) / **micro slave** (Book Map p.63) | L25 | introuvable dans les p.138–141 |
+| **a bill** | L28 | introuvable dans les p.152–154 |
+| **dump** | L28 | introuvable dans les p.152–154 |
+| **reverse** | L28 | introuvable dans les p.152–154 |
+
+**Ne pas les enseigner comme vocabulaire de ces chapitres.**
+⚠️ À l'inverse, *reduction* (L28) n'apparaît que dans le paragraphe **C** — celui que l'exercice
+demande de rayer comme hors sujet.
+⚠️ Le Book Map et la fiche de leçon donnent aussi **deux listes différentes** pour la L20 et pour la
+L22 : la liste opposable est leur **union**.
+
+---
+
+### 4 ter.5 — Ce que cette couche débloque, et ce qu'elle ne débloque pas
+
+**Elle débloque** :
+
+- la **compréhension orale des L21 et L26 en entier** — dix QCM et six mots à compléter d'un côté,
+  cinq QCM et cinq vrai/faux de l'autre : sans les transcriptions, aucune de ces vingt-six questions
+  n'aurait de réponse connaissable ;
+- **onze corrigés complets** que le manuel n'imprime pas (appariements des L18, L22, L23, L27 ;
+  synonymes de la L24 ; modaux de la L19 ; émotions de la L20 ; formes des chameaux de la L22 ;
+  schémas lexicaux des L23 et L29 ; grille de mots croisés de la L21) ;
+- **les douze exercices du Progress Check**, dont le corrigé intégral est imprimé — le gisement le
+  plus dense et le plus fiable du lot ;
+- la **ponctuation attendue** de l'exercice 9 du Progress Check, que seul le décodage rend lisible.
+
+**Elle ne débloque pas** :
+
+- l'**exercice de prononciation de la L18** (p.102) : les sons visés reposent sur un soulignement,
+  et **le guide n'imprime aucun corrigé** pour cet exercice ;
+- les **activités 2, 3 et 5 de la L23** : le guide n'imprime pas de clé pour elles ;
+- les **paroles de la chanson de la L29** : R-2, définitivement ;
+- la **ligne f du tableau des émotions de la L20** et l'**item c de l'exercice 3.2 de la L19** : la
+  réponse du guide est hors tableau pour l'une, contestable pour l'autre ;
+- toute question s'appuyant sur **« Emma »**, **« Terry »**, **« Chunk »**, ou sur les paragraphes
+  **E** et **F** de la L28 : ces cinq objets n'existent pas dans le manuel de l'élève.
+
+---
 
 ## 5. Sources croisées
 
