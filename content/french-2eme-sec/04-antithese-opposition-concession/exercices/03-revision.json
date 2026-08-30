@@ -63,7 +63,7 @@
         { "id": "d", "text": "« ancien » / « le renouveau »" }
       ],
       "correctOption": "b",
-      "explanation": "Les deux conditions sont d'être de sens contraire et d'appartenir à la même catégorie grammaticale. « La richesse » et « la misère » sont deux noms, et ils sont antonymes : le couple est symétrique. Les trois autres sont bien opposés par le sens, mais chacun mêle deux catégories différentes — un nom et un adjectif, un verbe et un nom, un adjectif et un nom. La symétrie que réclame l'antithèse s'y trouve rompue avant même qu'on ait écrit la phrase.",
+      "explanation": "Les deux conditions sont d'être de sens contraire et d'appartenir à la même catégorie grammaticale. « La richesse » et « la misère » sont deux noms, et ils sont antonymes : le couple est symétrique. Les trois autres sont bien opposés par le sens, mais chacun mêle deux catégories différentes : « silence » est un nom et « assourdissant » un adjectif, « courir » un verbe et « la lenteur » un nom, « ancien » un adjectif et « le renouveau » un nom. La symétrie que réclame l'antithèse s'y trouve rompue avant même qu'on ait écrit la phrase.",
       "difficulty": 2
     },
     {
@@ -115,23 +115,32 @@
       "difficulty": 3
     },
     {
-      "prompt": "« Le puits est à deux pas de la maison, mais elles vont chercher l'eau à la source. » À quelle conséquence attendue la seconde proposition s'oppose-t-elle ?",
-      "options": [
-        { "id": "a", "text": "que la source soit plus proche que le puits" },
-        { "id": "b", "text": "que le puits ait été creusé récemment" },
-        { "id": "c", "text": "qu'elles se servent du puits, le plus proche" },
-        { "id": "d", "text": "qu'elles renoncent tout à fait à chercher de l'eau" }
-      ],
-      "correctOption": "c",
-      "explanation": "Un puits situé à deux pas fait attendre qu'on s'en serve : c'est la conséquence implicite, celle que la phrase ne formule jamais et que « mais » vient démentir. Le reste ne s'oppose à rien. Que la source soit plus proche contredirait l'énoncé lui-même, et non l'attente qu'il fait naître ; la date à laquelle le puits a été creusé ne change rien à l'affaire ; et renoncer à chercher de l'eau serait un troisième comportement, alors qu'elles en cherchent bel et bien.",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Un élève a écrit : « Le premier personnage aime dès le premier regard, de même que le second refuse de voir celle qu'il aime. » Pourquoi son articulateur est-il fautif ?",
+      "prompt": "« Le puits est à deux pas de la maison, mais les femmes du village vont chercher l'eau à la source. » Pour concéder dès le début de la phrase, on remplace « mais » par « malgré ». Qu'est-ce que cet articulateur impose d'écrire juste après lui ?",
       "options": [
         {
           "id": "a",
-          "text": "« de même que » rapproche, or les deux attitudes sont contraires"
+          "text": "une proposition à l'indicatif : « Malgré le puits est à deux pas… »"
+        },
+        {
+          "id": "b",
+          "text": "un verbe à l'infinitif : « Malgré avoir un puits à deux pas… »"
+        },
+        { "id": "c", "text": "un groupe nominal : « Malgré la proximité du puits… »" },
+        {
+          "id": "d",
+          "text": "une proposition au subjonctif : « Malgré le puits soit à deux pas… »"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le tableau des constructions est formel : « malgré » et « en dépit de » se font suivre d'un groupe nominal. Il faut donc transformer le fait concédé en nom — la proximité du puits — au lieu de le laisser sous forme de proposition. C'est ce qui distingue cet articulateur de « bien que », qui demande une proposition au subjonctif, et de « pourtant » ou « cependant », qui introduisent une proposition indépendante après le fait concédé. Faire suivre « malgré » d'une proposition, qu'elle soit à l'indicatif ou au subjonctif, ne correspond à aucune de ces constructions, et l'infinitif ne convient pas davantage. Le sens, lui, ne bouge pas : un puits à deux pas fait attendre qu'on s'en serve, et la suite dément cette attente.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une élève met en parallèle deux façons de se rencontrer et écrit : « Certains couples se sont connus au cours d'une fête, de même que d'autres ne se sont jamais vus avant leurs fiançailles. » Pourquoi son articulateur est-il fautif ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "« de même que » rapproche, or les deux situations sont contraires"
         },
         {
           "id": "b",
@@ -147,7 +156,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "L'encadré d'outils de la séquence sépare deux séries qu'il ne faut jamais confondre : « comme » et « de même que » servent à la comparaison, donc à rapprocher ; « alors que », « tandis que », « mais », « en revanche », « par contre », « contrairement à » servent à l'opposition, donc à distinguer. Aimer au premier regard et refuser de voir sont deux attitudes contraires : elles appellent la seconde série. « De même que » relie pourtant sans difficulté deux propositions, et n'impose ni un temps particulier ni un rapport de cause — c'est bien le sens, ici, qui est fautif.",
+      "explanation": "L'encadré d'outils de la séquence sépare deux séries qu'il ne faut jamais confondre : « comme » et « de même que » servent à la comparaison, donc à rapprocher ; « alors que », « tandis que », « mais », « en revanche », « par contre », « contrairement à » servent à l'opposition, donc à distinguer. Se connaître au cours d'une fête et ne s'être jamais vus avant les fiançailles sont deux situations contraires : elles appellent la seconde série. « De même que » relie pourtant sans difficulté deux propositions, et n'impose ni un temps particulier ni un rapport de cause — c'est bien le sens, ici, qui est fautif.",
       "difficulty": 3
     }
   ]
