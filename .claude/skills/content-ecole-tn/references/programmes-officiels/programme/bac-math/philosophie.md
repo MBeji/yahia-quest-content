@@ -183,6 +183,1146 @@ titre « ما التوجّه في التفكير؟ », et la liste des concepts 
   - ✅ INCLUS : الوعي · اللاّوعي · الذات · الجسد · التّاريخ ; التأويل, الزّمان, الجوهر ; psychanalyse, phénoménologie, existentialisme, philosophie de l'histoire ; les « philosophes du soupçon » (فلاسفة الظنّة).
   - ⛔ EXCLU : tout ce que le manuel de **شعبة الآداب** (`210422`/`210423`) ajoute et que celui-ci ne porte pas — ce manuel-ci est le programme **des sections non-Lettres**, et il est le seul scope de cette fiche.
 
+#### مبحث 1.1 — الآنيّة والغيريّة — transcription PARTIELLE (p.47–74, سندات 17→29)
+
+> ⚠️ **Portée : p.47–74 seulement** — la **deuxième moitié** de la نافذة سندات du مبحث 1.1
+> (سندات **17 à 29**), plus la fin du سند 16 qui déborde sur la p.47. Les **سندات 1 à 16**
+> (p.15–46), la نافذة مدخل (p.7–14), la نافذة دعائم (p.75–99), la نافذة كيفيّات (p.100–103),
+> le نصّ مطوّل de **ديكارت** (p.104–112) et les مختصرات (p.113) **ne sont pas transcrits**.
+> Ce مبحث **n'est donc pas générable** : il ne figure pas dans `chapitresGeneration`.
+> **Source** : manuel élève `210402` (كتاب الفلسفة — السّنة الرّابعة من التّعليم الثانوي —
+> الشّعب العلميّة, CNP).
+>
+> ✅ **Ce que cette tranche débloque quand même** : les notices d'auteur de **بودريار** (p.60) et de
+> **فرويد** (p.64), cibles des deux renvois du مبحث 3.2 qui pointaient jusqu'ici dans le vide.
+>
+> ⚠️ **Numérotation** : « 1.1 » est une convention de la fiche. Le manuel imprime une pastille
+> **`1`** à côté du titre `الآنيّة والغيريّة` — c'est le **مبحث 1 du محور 1**.
+
+---
+
+##### 1.1.2 نافذة سندات للتفكير في المسألة — p.47–74 (deuxième moitié : سندات 17→29)
+
+###### سند 17 — د. هيوم / دافيد هيوم — « هل الأنا وهم؟ » — p.48-49
+
+- **Auteur tel qu'imprimé** : ligne de source **د. هيوم** ; ligne latine **`D. HUME`** ; notice
+  **الكاتب** : **دافيد هيوم ( 1711 – 1776 )**. Encadré-citation signé **هيوم**.
+  ⚠️ Trois graphies pour le même auteur sur deux pages (`د. هيوم` / `هيوم` / `دافيد هيوم`).
+- **Titre du سند** : **هل الأنا وهم؟**
+- **Source imprimée** :
+  **د. هيوم، رسالة في الطبيعة االبشريّة** — `االبشريّة` [sic] : **alif doublé**, vérifié à 600 dpi.
+  `D. HUME Traité de la nature humaine, 1737; L 1,éd. Aubier- Montaigne t1; 1973; pp 342 -343`
+  ⚠️ Le millésime **1737** de la ligne latine **diverge** de la notice de la page suivante, qui
+  date la *رسالة في الطبيعة البشريّة* de **1739-1740**. Divergence **imprimée**, constatée, non corrigée.
+- **Illustration** : portrait gravé/peint de Hume (vignette insérée dans le texte, p.48).
+
+**التمهيد (verbatim)** :
+> يستمد الأنا يقينه بذاته من الفكر بما هو جوهر سمته الثبات و الديمومة حتّى صار بداهة لا يرقى إليها
+> الشك، لكن لَوْ جاز أن نمتحن الأنا على قاعدة التجربة أو الانطباعات الحسيّة ، مجال التعاقب والتحوّل ،
+> لانحلّت حينها فكرة البداهة وحلّ الارتياب محلّ اليقين .
+
+**Thèse (reformulée)** : contre les philosophes qui croient saisir à chaque instant, avec une
+évidence supérieure à toute démonstration, un « moi » simple et identique, Hume oppose l'expérience
+même dont ils se réclament : **aucune impression constante et invariable** ne peut fonder cette
+idée — douleur, plaisir, passions et sensations **se succèdent** et ne coexistent jamais toutes.
+L'idée du moi **ne peut donc dériver d'aucune de ces impressions ni d'aucune autre** : une telle
+idée **n'existe pas**. Quand il pénètre au plus profond de ce qu'il nomme « moi », Hume ne rencontre
+jamais qu'une perception sensible particulière ; là où les perceptions s'interrompent (sommeil
+profond), il n'a plus le sentiment de soi et peut dire qu'il n'existe pas.
+
+**هوامش** : **aucun encadré de notes** pour ce سند (ni p.48 ni p.49).
+
+**الكاتب (notice, p.49)** :
+> **دافيد هيوم ( 1711 – 1776 )** — فيلسوف انقليزي، ولد في إدمبرة ويعدّ أحد وجوه المذهب الخبري.
+> وكانت فلسفته نقديّة تتجه نحو نقد العقلانيّة كما تُفهم لدى ديكارت خاصّة. ضمّن هيوم كتابه
+> « رسالة في الطبيعة البشريّة » (1739 – 1740) أهمّ أفكاره واعتبره « محاولة لتطبيق المنهج التجريبي على
+> الموضوعات الأخلاقيّة ». فقد وضع في هذا المؤلَّف أسس « علم بالإنسان » موضوعه الطبيعة البشرية وبسط فيه
+> أيضا آراءه في « أصل الأفكار » والإدراكات ليساهم بقول متفرّد في أهمّ انشغالات الخبريين من قبله، وذلك
+> بالإقرار بأن الأفكار ليست إلا نسخ للانطباعات الحسيّة، ممّا يعني رفض القول بالأفكار المجرّدة والفطريّة
+> وفكرة الهويّة الخالصة وذلك على أساس ما يُجمع عليه سائر الخبريين بأنّ التجربة هي مصدر المعرفة الوحيد.
+> أمّا في خصوص معرفتنا بالطبيعة فلا تتعدى الوقائع الجزئيّة ممّا ينتج عنه ريبيّة بشأن العلم
+> والميتافيزيقا. وفي مؤلَّف عن الدين « محاورات حول التاريخ الطبيعي للدين » (1779) عالج هيوم مسألة
+> الاعتقاد الديني بروحه الريبيّة رافعا لبسا شائعا بين « الدين الوضعي » و« الدين الطبيعي ». لهيوم
+> مصنّفات فلسفيّة أخرى أهمّها « محاولات فلسفيّة في الذهن البشري » أو « بحث في الذهن البشري » (1748)…
+
+**المهام (verbatim, 5 puces)** :
+- أستحضر التصوّرات التي يعتزم الكاتب دحضها من خلال عيّنة سبق أن درستها؟
+- أحلل دلالة التناقض الذي يواجه به الكاتب خصومه.
+- ما الذي يشرّع للكاتب رفض اعتبار الأنا فكرة أو انطباعا؟
+- إذا أنكرت أن يكون الفكر قوام وجودي، فما الذي يشهد على وجودي؟ أستأنس بالنصّ لفكّ هذا الحرج؟
+- هل يستوجب تصوّر الكاتب مراجعة لدلالة الإنيّة؟
+
+**Encadré-citation (p.49, cadre rose, à côté d'une photographie — silhouette noire d'un homme bras
+écartés sur fond orange granuleux)** :
+> " فلا تستطيع فكرة الأنا أن تنتُج عن أيّ من هذه الانطباعات ولا من غيرها، وبالنتيجة لا وجود لمثل
+> تلك الفكرة ".
+> — **هيوم**
+
+⚠️ Le corps du texte (p.48) porte la **même** phrase sous une forme légèrement différente
+(`فلا يمكن أن تنتُج فكرة الأنا عن أيّ من هذه الانطباعات ولا عن غيرها`) : l'encadré n'est donc **pas**
+un copier-coller strict du texte. Vérifié à 600 dpi.
+
+---
+
+###### سند 18 — كارل ماركس و ف. انغلز — « هل الوعي كيان مستقل؟ » — p.50-52
+
+⚠️ **Ce سند occupe TROIS pages** (50, 51, 52) : texte + تمهيد p.50, notice **الكاتبان** p.51,
+هامشان + مهامّ + encadré p.52. La double page n'est pas la règle.
+
+- **Auteurs tels qu'imprimés** : ligne de source **كارل ماركس وف. انغلز** ; ligne latine
+  **`Karl MARX et F. ENGELS`**. Notice : titre **الكاتبان** (duel), puis **ماركس: (1818 – 1883)** et
+  **فيدريك انغلز (1820 – 1895)**. Encadré-citation signé **ماركس**.
+- **Titre du سند** : **هل الوعي كيان مستقل؟**
+- **Source imprimée** : **كارل ماركس وف. انغلز، الايديولوجيا الألمانيّة** —
+  `Karl MARX et F. ENGELS; L'Idéologie allemande, éd. sociales` (pas de pagination imprimée).
+- **Illustration** : portrait photographique de Marx (vignette dans le texte, p.50) ; portrait
+  photographique d'Engels (vignette dans la notice, p.51).
+
+**التمهيد (verbatim)** :
+> إذا كان الموقف التأمّلي قد أولى الوعي منزلة الجوهر والمبدأ والمحدّد لماهيّة الإنسان فإنّ معاينة واقع
+> الإنسان تدفعنا إلى التظنّن على الوعي حين نكتشف شروط تكوّنه والارتياب في صورة للإنسان تتحدّد باستقلال
+> عن نشاطه المادي.
+
+**Thèse (reformulée)** : la production des idées, des représentations et de la conscience est
+d'emblée liée à l'activité matérielle et aux rapports matériels entre les hommes — elle est
+« la langue de la vie réelle ». Ce sont les hommes **réels et agissants**, conditionnés par un
+développement déterminé de leurs forces productives, qui produisent leurs représentations ; la
+conscience **ne peut jamais être autre chose que l'être conscient**, et l'être des hommes est le
+procès réel de leur vie. À l'inverse de la philosophie allemande, qui descend du ciel sur la terre,
+Marx et Engels **montent de la terre au ciel** : ils partent de l'activité réelle. Morale, religion,
+métaphysique et formes de la conscience **perdent alors toute autonomie : elles n'ont ni histoire
+ni développement propres**. Conclusion imprimée : **ce n'est pas la conscience qui détermine la
+vie, mais la vie qui détermine la conscience.**
+
+**الهامشان (verbatim, p.52 — 2 notes, appelées `(1)` et `(2)` dans le texte p.50)** :
+> 1– **الايديولوجيا**: هي منظومة من الأفكار تدعي الحياد ولكنها بالنسبة إلى ماركس تترجم في الحقيقة
+> واقعا اقتصاديا واجتماعيا. وتستعمل في هذا السياق للدلالة على الوعي الزائف بهذا الواقع.
+> 2– **الفلسفة الألمانية**: المقصود بها فلسفة هيغل التي تؤكد على أولوية الوعي بما هو محدّد للوجود الواقعي.
+
+**الكاتبان (notice, p.51 — deux notices distinctes)** :
+> **ماركس: (1818 – 1883)** — فيلسوف ألماني من عائلة ثرية، درس القانون والفلسفة وانتمى إلى حلقة
+> الهيغليين اليساريين مما يدلّل على أنّ الفكر الماركسي تطوّر كنتاج لنقد الإرث الهيغلي. بدأ ماركس في
+> كتابه « نقد فلسفة الحق عند هيغل » (1844) إلى قلب الجدل الهيغلي بإبراز
+> أن أشكال الوعي هي نتاج العلاقات والشروط المادية للبشر. عرف النفي منذ سنة 1845 إذ نفي إلى باريس ومنها
+> إلى بروكسال ثم إلى لندن حيث توفي سنة 1883. أنتج، استنادا إلى أطروحات فيورباخ، تصورا ماديا للتاريخ
+> طوّره بمعيّة رفيقه أنغلز في نقد الفلسفة الألمانية (« الإيديولوجيا الألمانية »، 1846) وحدّد فيه الأسس
+> الفلسفية للماركسية وللمادية التاريخية وبلور نظريّته في الملكيّة الخاصّة والصراع الطبقي. في حين تعلق
+> الأمر في « بؤس الفلسفة » (1847) بنقد فلسفة البؤس لبرودون. كما أصدر مع **أنغلز** « بيان الحزب
+> الشيوعي » (1848) لخّص فيه الأطروحات الأساسية للماركسية في لغة مبسطة ( العمل المأجور – رأس المال –
+> التبادل الحر – تاريخ المجتمع – تاريخ الصراع الطبقي ). يُعدُّ « رأس المال » ( الكتاب الأول منه نشر
+> في حياته 1867) أهم أثر **لماركس** أما الكتاب الثاني والثالث فقد نشرهما أنغلز سنتي 1885 و1894 نقد
+> فيه الاقتصاديين الإنقليزيين ( **سميث وريكاردو** ) وحدد فيه دلالة الربح وفائض القيمة مؤكدا على مظاهر
+> استغلال العمل وواقع اغترابه الذي رصده ماركس في كل المجالات: الاقتصادي والديني والسياسي والإيديولوجي.
+> غير أن الاغتراب الاقتصادي اعتبر الصورة الجوهرية للاغتراب مادام يمسّ الشروط المادية للوجود ولذلك أكد
+> **ماركس** أن تحليل التحولات التاريخية ينبغي أن يكون بالأساس تحليلا للبنى التحتية ( علاقات وأدوات
+> وقوى الإنتاج ) التي تحدد البنية الفوقية ( أشكال الوعي المختلفة ). كتب أيضا و في نفس القضايا:
+> « العمل المأجور ورأس المال » (1848)؛ « أسس نقد الاقتصاد السياسي » (1857 – 1858)؛ « مخطوطات 1848 » ؛
+> ومع رفيقه أنغلز كتب أيضا « العائلة المقدّسة » (1845). وانتهى في معظم كتاباته إلى التأكيد على أنّ
+> الصراع الاجتماعي الراهن بين طبقة الرأسماليين والطبقة العاملة ( البروليتاريا ) سيفضي إلى ثورة عارمة
+> تقود الطبقة العاملة إلى السلطة لتأسيس المجتمع الشيوعي الذي ينتفي فيه الصراع الطبقي بانتفاء الملكيّة
+> الخاصّة لوسائل الانتاج وتحلّ الحريّة محلّ الاستعباد والاغتراب.
+>
+> **فيدريك انغلز (1820 – 1895)** — فيلسوف وعالم اقتصاد ألماني، التقى بماركس سنة 1844 وأسّس معه
+> الأمميّة الأولى (1864). ساهم معه في تأليف بعض الكتب، كما كانت له مؤلَّفاته الخاصّة ونذكر منها
+> « ضدّ دوهرينغ » (1878) الذي بيّن فيه دور العنف في التاريخ واعتبره عاملا رئيسيّا في تحقيق التوافق بين
+> البنية الفوقيّة السياسيّة والبنية التحتيّة الاقتصاديّة؛ وكذلك « أصل العائلة والملكيّة الخاصّة والدّولة »
+> (1884) الذي قرأ فيه المعطيات الأنثروبولوجيّة المتوفّرة في عصره قراءة تستند إلى مبادئ الماركسيّة.
+
+**Renvoi imprimé sous la notice (p.51, en bleu — verbatim)** :
+> لمزيد التعمّق انظر نافذة دعائم للتفكير، سياقات فكريّة: فلسفة التاريخ.
+
+**المهام (verbatim, 6 puces, p.52)** :
+- ما المقصود بـ " علاقات الناس الماديّة" وبأيّ معنىتمثّل أساس إنتاج الوعي؟ *(`معنىتمثّل` collé [sic],
+  vérifié à 600 dpi)*
+- ما معنى أن يكون كيان البشر سيرورة الحياة الواقعيّة؟
+- كيف أفهم هذه المماثلة التي يقيمها الكاتب بين الإيديولوجيا وشبكيّة العين؟
+- فيم تختلف نظريّة ماركس عن السائد في الفلسفةالألمانيّة؟ *(`الفلسفةالألمانيّة` collé [sic])*
+- ما دلالة استعمال الكاتب لمفهوم " الدماغ "؟
+- " ليس الوعي هو الذي يحدد الحياة بل إنّ الحياة هي التي تحدد الوعي ": هل يدفعونا هذا القول إلى
+  مراجعة مشكل العلاقة بين الإنيّة والغيريّة في تحديد الإنسان؟ *(`يدفعونا` [sic] pour `يدفعنا`,
+  vérifié à 600 dpi)*
+
+**Encadré-citation (p.52, à côté d'une image — visage humain composé de vues aériennes de villes et
+de circuits imprimés)** :
+> " ليس الوعي هو الذي يحدد الحياة بل إنّ الحياة هي التي تحدّد الوعي. "
+> — **ماركس**
+
+---
+
+###### سند 19 — فريدريك نيتشه — « الوعي نتاج التواصل » — p.53-54
+
+- **Auteur tel qu'imprimé** : ligne de source **فريدريك نيتشه** ; ligne latine
+  **`Friedrich NIETZSCHE`** ; notice **الكاتب** : **نيتشه: ( 1844 – 1900 )**. Encadré signé **نيتشه**.
+  ✅ Ordre des dates **vérifié à 600 dpi** : il est **correct** (1844 puis 1900), ce n'est **pas** un
+  des intervalles inversés du manuel.
+- **Titre du سند** : **الوعي نتاج التواصل**
+- **Source imprimée** (trois lignes) :
+  **فريدريك نيتشه، المعرفة المرحة**
+  `ترجمة حسان بورقية – محمد الناجي، أفريقيا الشرق، 2000، ص 216 – 217 ( مع مراجعة لجنة التأليف )`
+  `Friedrich NIETZSCHE; Le Gai Savoir, Gallimard, 1982, pp 252 - 253`
+  ⚠️ Mention explicite d'une **révision de la traduction par la commission de rédaction du manuel** —
+  le texte arabe imprimé n'est donc pas strictement celui de l'édition citée.
+- **Illustration** : portrait photographique de Nietzsche (vignette dans le texte, p.53).
+
+**التمهيد (verbatim)** :
+> على افتراض أن حضور الوعي سمة وجودنا المميّزة فإنّ مشكل الوعي لا يُختزل في حضوره من عدمه وإنّما
+> يتّصل أساسا بأصله وقيمة هذا الأصل وكيفيّة تقييمه: أساس للوجود أو عرض من أعراضه، مبدأ أو نتاج،
+> حقيقة وجود أو وهم فلاسفة.
+
+**Thèse (reformulée)** : nous pouvons penser, sentir, vouloir, nous souvenir, agir — **sans que
+rien de cela ait besoin d'« entrer dans notre conscience »** ; la vie entière est possible sans se
+réfléchir. Si la conscience est pourtant là, c'est que sa finesse et sa force sont toujours
+proportionnelles à la **faculté de communiquer** (`ملكة التواصل`), elle-même dépendante du **besoin
+de communiquer** (`حاجة التواصل`) — non celui de l'individu isolé, mais celui d'espèces entières et
+de générations que la nécessité a contraintes à s'entendre vite et finement. La conscience
+**ne s'est développée que sous la pression du besoin de communication**, et **n'a été nécessaire et
+utile que dans les relations d'homme à homme**, singulièrement entre celui qui commande et celui
+qui obéit. Elle **n'est donc, en gros, qu'un réseau de liens entre les hommes** ; un homme vivant
+isolé, comme un fauve, aurait pu s'en passer.
+
+**هوامش** : **aucun encadré de notes** pour ce سند (ni p.53 ni p.54).
+
+**الكاتب (notice, p.54)** :
+> **نيتشه: ( 1844 – 1900 )** — فيلسوف ألماني، من أسرة من القساوسة، لكنه كان شديد الإلحاد. تأثر
+> **بشبنهاور** لتشاؤمه ولكنه انقلب عليه ليعتنق فلسفة الحياة. عُيّن سنة 1869 أستاذا في جامعة « بال »
+> ليدرس **الفيلولوجيا** و لم يكن قد حصل على الدكتوراه، ولكنه سرعان ما قطع مع مسيرته الجامعية لأسباب
+> صحية، والتي انتهت به بعد عطاء غزير في الكتابة إلى الجنون. وتعد كتاباته أحد أهم الكتابات في تاريخ
+> الفلسفة، التي أحدثت قلبا جذريا لمفاهيم كانت سائدة في الفكر الفلسفي وبصورة خاصة ما تعلق منها بالأخلاق.
+> « ولادة التراجيديا » (1872) أول كتاب له ضمنه أهم محاور اهتماماته الفلسفية، إذ يتناول التراجيديا
+> الإغريقية ليؤكد مجد الإغريق لأنهم واجهوا مآسي الحياة و لم يهربوا منها بإنكار إرادتهم مثلما
+> فعل « بوذا ». ويتناول في كتابه « المعرفة المرحة » (1882) مسائل تتصل بهدف الحياة والعلم، ومعنى الخلق
+> الفني، وأصل المنطق، كما يعرض تصورا لحياة جديدة أكثر نبلا و قوة. ويعد كتابه « هكذا حدث زراديشت »
+> (1885) الأكثر شهرة وأبلغ ما كتب في مجال الفلسفة والذي تميز فيه نيتشه بأسلوب كتابة استثنائي ويتعلــق
+> الكتاب بالنبــي « زراديشت » [لسان حال نيتشه] يتوجه بالخطاب إلى الناس لتنويرهم وإنقاذهم، والناس ليسوا
+> سوى معاصري نيتشه الضعفاء، الذين لا طموح لهم، والذين يخشون مغامرات العقل الكبرى، وقد عُد كتاب
+> « ما وراء الخير والشر » (1886) التأسيس النيتشوي لأخلاق جديدة والتي تتجاوز التصورات القديمة للأخلاق
+> وللخير والشر، ويتضمن الكتاب نقدا لاذعا للمسيحية التي لا ترى في الأخلاق سوى نفيا للحياة وإعداما لها،
+> ويتواصل نظره الأخلاقي في كتابه « جنيالوجيا الأخلاق » (1887) والذي بحث فيه نيتشه عن أصل القيم
+> الأخلاقية التي تعلن الزهد في الحياة وتنكر الغرائز والتي جعلت من العبيد أسيادا، ليقدم بذلك جنيالوجيا
+> نقدا للدين وللقيم الحضارية السائدة، ويميز في هذا المجال بين ثقافة الأقوياء أو السادة التي ترد إلى
+> القوى الفعالة والتي تعبر عن نفسها في إرادة الاقتدار وثقافة العبيد والضعفاء التي ترد إلى القوى
+> الإرتكاسية وتعبر عن نفسها في إرادة الانحطاط والعدم، ليبشر بالإنسان الأسمى، المقابل الأرضي للإله.
+
+**المهام (verbatim, 5 puces)** :
+- ما دلالة التفكير عند نيتشه؟ و لم لا تحتاجه الحياة حتّى تكون ممكنة؟
+- فيم يحرج موقف نيتشه الفيلسوف الحديث؟
+- من يتبع الآخر: الوعي أم التواصل؟ أعلّل جوابي استنادا على حجج الكاتب.
+- أيّ تعريف للوعي ينتهي إليه الكاتب؟
+- في ضوء أطروحة الكاتب وحجاجه: أيّة منزلة بقيت للوعي في تحديد الإنيّة؟
+
+**Encadré-citation (p.54, à gauche des مهامّ, sous une reproduction picturale — grappe de visages
+d'époque baroque)** :
+> " فالوعي ليس إجمالا إلاّ شبكة من الروابط بين النّاس ".
+> — **نيتشه**
+
+---
+
+###### سند 20 — لويس ألتوسير — « الاعتراف الإيديولوجي » — p.55-56
+
+- **Auteur tel qu'imprimé** : ligne de source **لويس ألتوسير** ; ligne latine
+  **`Louis ALTHUSSER`** ; notice **الكاتب** : **ألتوسير: (1918 – 1990)**. Encadré signé **ألتوسير**.
+- **Titre du سند** : **الاعتراف الإيديولوجي**
+- **Source imprimée** : **لويس ألتوسير، الإيديولوجيا وأجهزة الدولة الإيديولوجيّة** —
+  `Louis ALTHUSSER; Idéologie et appareils idéologiques de l'Etat, in Position, Editions sociales, pp. 111 - 113`
+- **Illustration** : portrait photographique d'Althusser (vignette dans le texte, p.55).
+
+**التمهيد (verbatim)** :
+> نعيش تجربتنا مع الآخر بعفويّة من خلال ممارسة يوميّة سمتها العفويّة دون أن ننتبه إلى حقيقة هذه
+> الممارسة وطبيعة الوعي الذي يتشكّل بفعلها، وحين نسائلها نكتشف أن ما خفي كان أعظم
+
+*(la phrase du تمهيد est imprimée **sans point final** ; constaté, non corrigé.)*
+
+**Thèse (reformulée)** : nos gestes quotidiens les plus banals — répondre « c'est moi ! » derrière
+une porte fermée, saluer une connaissance dans la rue en lui serrant la main — sont des
+**rituels matériels de la reconnaissance idéologique**. Par eux, « vous » et « moi » sommes
+**toujours-déjà** des sujets : des sujets au plein sens du mot, individuels, réels, distincts et
+irremplaçables. Écrire et lire ce texte relève du même rituel. Mais cette reconnaissance
+ininterrompue **ne nous donne que la « conscience » de notre pratique perpétuelle des rituels de la
+reconnaissance idéologique — elle ne nous en donne pas la connaissance (la science) du mécanisme**.
+
+**هوامش** : **aucun encadré de notes** pour ce سند (ni p.55 ni p.56).
+
+**الكاتب (notice, commencée p.55 et terminée p.56 — verbatim)** :
+> **ألتوسير: (1918 – 1990)** — ولد بالجزائر، نال التبريز في الفلسفة سنة 1948. اشتغل بالتدريس إلى حدود
+> سنة1980. قضى سنواته العشر الأخيرة بمصحة نفسية حيث توفي سنة 1990. انتمى **ألتوسير** إلى الحزب الشيوعي
+> الفرنسي سنة 1948 وعُدَّ قارئا مجددا للماركسية في كتابه من « أجل ماركس » (1960 – 1965) وكتابه
+> « قــراءة رأس المــال » (1965) – أهم مؤلَّفاته على الصعيد السياسي والفلسفي –. ركز في أعماله هذه لا على
+> الدور الذي على الفلسفة أن تضطلـع به فقط، وإنما على بيــان أن الفلسفة الماركسيــة، وبصورة خاصة نظرية
+> التاريخ، تحتاج إلى إعادة تشكيل في قسم كبير منها، حيث يتوسل ألتوسير مفاهيم البنية والسببية البنيوية،
+> إذ توجد في نظره بنية خاصة للعلم، والمجتمع في كليته يتكون من بنى متعددة وجب إدراك العلاقات القائمة
+> بينها. كما نشر **ألتوسير** مؤلفين لتوضيح كتاباته « الفلسفة وفلسفة العلماء العفوية » و « عناصر نقد ذاتي »
+> (1974) الأول استعاد دروسا قدمها سنة 1967 وفيها يعرّف الفلسفة في مقابل العلم وعمل على بيان كيف أن
+> ممارسة العلماء تتضمن فلسفة عفوية. أما في كتابه الثاني فقد قدم قراءة نقدية لأطروحات كتابيه من أجل
+> ماركس و قراءة رأس المال. كما جمع ألتوسير مختلف مقالاته في مؤلف بعنوان « مواقف » (1976).
+
+**المهام (verbatim, 4 puces, p.56)** :
+- " الاعتراف ": وضعيّة نعيشها، أيّ معنى لها في علاقة بالآخر وما هيّ تجلياتها من خلال الأمثلة الواردة
+  في النصّ؟
+- ما دلالة ممارستنا لطقوس الاعتراف الإيديولوجي؟ وهل تمنحنا هذه الممارسة وعيا بذواتنا؟
+- ما الفارق بين أن نحقّق الوعي بالاعتراف الإيديولوجي وبين أن نتمكّن من معرفة آليّة هذا الاعتراف؟
+- فيم يغيّر هذا الموقف لألتوسير من فكرة الغيريّة التي تكوّنت لديّ؟
+
+**Encadré-citation (p.56, à côté d'une photographie en fausses couleurs — deux mains qui se serrent)** :
+> المصافحة " ممارسة طقوسيّة ماديّة تعبّر عن الاعتراف الإيديولوجي في الحياة اليوميّة ".
+> — **ألتوسير**
+
+⚠️ Cet encadré est le seul du chapitre à **commencer hors guillemets** (`المصافحة`, le mot du
+manuel) avant d'ouvrir la citation d'Althusser.
+
+---
+
+###### سند 21 — م. فوكو / ميشال فوكو — « الجسد في لعبة السلطة » — p.57-58
+
+- **Auteur tel qu'imprimé** : ligne de source **م. فوكو** ; ligne latine **`M. FOUCAULT`** ;
+  notice **الكاتب** : **ميشال فوكو: ( 1926 – 1984 )**.
+- **Titre du سند** : **الجسد في لعبة السلطة**
+- **Source imprimée** : **م. فوكو، المراقبة والمعاقبة** —
+  `M. FOUCAULT, Surveiller et punir, éd. Gallimard 1975, pp. 32 - 33`
+- **Illustration** : portrait photographique de Foucault (vignette dans le texte, p.57).
+
+**التمهيد (verbatim)** :
+> قد يتبادر إلى الأذهان أنّ عصر إقصاء الجسد وتهميشه قد ولّى، فصورة الجسد أو الجسد بما هو صورة تملأ
+> المكان، ولكنّها صورة بقدر ما توحي بالاحتفاء به وإنعاشه تضمر استبعاده واستعباده سبيلا للسيطرة على
+> الإنسان وتدجينه.
+
+**Thèse (reformulée)** : l'histoire de la micro-physique du pouvoir pénal est une **généalogie de
+l'âme moderne**. ⚠️ **Il ne faut PAS dire que l'âme est une illusion ou un effet idéologique** :
+elle est **réellement existante**, produite en permanence autour du corps, à sa surface et en lui,
+par le fonctionnement d'un pouvoir exercé sur ceux qu'on punit — et plus largement sur ceux qu'on
+surveille, dresse et corrige : fous, enfants, écoliers, colonisés, et tous ceux qu'on fixe à un
+appareil de production et qu'on surveille leur vie durant. Cette âme **ne naît pas** pécheresse et
+punissable, comme celle de la théologie chrétienne : elle naît **des procédures mêmes** du châtiment,
+de la surveillance, de la punition et de la contrainte. Elle **n'est pas une substance** : elle est
+l'élément où s'articulent des effets de pouvoir et la référence d'un savoir — et ce savoir, à son
+tour, conduit et soutient les effets de ce pouvoir. Sur cette base ont été construits les concepts
+de `نفس`, `ذاتية`, `شخصيّة`, `وعي`, puis des techniques et des discours scientifiques, et enfin les
+revendications de l'humanisme moral. ⚠️ **Erreur à ne pas commettre** : on n'a **pas** remplacé
+l'âme, illusion des théologiens, par un homme réel. **L'homme dont on nous parle et qu'on nous
+invite à libérer est lui-même l'effet d'un assujettissement bien plus profond.** Une « âme »
+l'habite et le pousse à l'existence, elle-même pièce de la maîtrise que le pouvoir exerce sur le
+corps. L'âme est le **produit et l'instrument d'une anatomie politique** : **l'âme est la prison du
+corps.**
+
+**الهامشان (verbatim, p.58 — 2 notes, appelées `(1)` et `(2)` dans le texte p.57)** :
+> 1– **الجينيالوجيا**: أو النِسَابيّة وهي البحث في قيمة الأصل وأصل القيمة، وهو منهج اعتمده نيتشه في نقده
+> للفلسفات الميتافيزيقيّة.
+> 2– **اللاهوتيون**: إشارة إلى أصحاب الفكر الديني في نظرهم إلى الإنسان بما هو نفس وتحديدهم للنفس بما
+> هي روح إلهي.
+
+**الكاتب (notice, p.58)** :
+> **ميشال فوكو: ( 1926 – 1984 )** — فيلسوف فرنسي، مارس تفكيرا فلسفيا قريبا من الابستمولوجيا لكن
+> تحكمه خلفية تاريخيّة تعنى بتاريخ الفكر وتكونه. تكشف كتاباته الأولى: « تاريخ الجنون في العصر
+> الكلاسيكي » (1961)، « ولادة المصحة » (1963)، « الكلمات والأشياء » (1966)، « حفريات المعرفة » (1969)،
+> عن انشغال ثابت: تكوّن العلوم الإنسانية والدور الذي تقوم به الممارسات السلطوية. اعتبر كتاب
+> « الكلمات والأشياء » الكتاب الذي منح فوكو الشهرة، فعلاوة على ما تضمنه من نقد لمفهوم الإنسان وصورته
+> في العلوم الإنسانية، تمّيز بالتطرق إلى تاريخ الأفكار الذي يسميه **فوكو بالأركيولوجيا**. والأرضية التي
+> تتجذّر فيها امكانات التفكير هذه يسميها **فوكو « الابستيمي »** والذي يصفها بعرض الضوابط المفهومية
+> المستخدمة في كل خطاب. ولعل قيمة هذه المعالجة تكمن في الاهتمام بشبكة العلاقات التي تشكل الحياة
+> الإنسانية، فما يبيّنه **فوكو** في كتاباته هو انبثاث السلطة اللامتناهي في المجتمعات المعاصرة، وولادة
+> الانضباط الذي يحدد الأفعال ويفصلها وفي نفس الوقت يولّد المعرفة (« المراقبة والمعاقبة »، 1975). أمّا
+> كتابه « إرادة المعرفة » (1976) فيمثل الجزء الأول من مؤلف ضخم لتاريخ الجنسانية، والذي حال موته دون
+> إتمامه، ويتضمن أطروحة جدّ مجددة مفادها أنّ الغرب لم يكبت الجنسانية فحسب وإنما جعل منها موضوع علم،
+> لينتهي بوضع التحليل النفسي ضمن منطوق إرادة المعرفة وإرادة المراقبة ما دام منطوق الجنسانيّة لا يتمّ
+> التفكير فيه إلا انطلاقا من تقنيات السلطة. هكذا يبدو أن **فوكو** يحتل في الفلسفة المعاصرة منزلة جد
+> هامة، إذ يعد أول مفكر منح للفلسفة مواضيع جديدة.
+
+**المهام (verbatim, 5 puces, p.58)** :
+- أستحضر تصوّري لدلالة السلطة وأمتحنه من خلال النظر في مفهوم السلطة كما يرد في النصّ.
+- أتبيّن دلالة النفس كما وردت في النص وأنتبه إلى طرافة مقاربة الكاتب.
+- أحدّد علاقة التلازم بين مفهوم النفس وما يسمّيه الكاتب " تكنولوجيا السلطة على الجسد ".
+- أتبيّن العلاقة التي يقيمها الكاتب بين المعرفة والسلطة وأستحضر أمثلة من معيشي توضّح هذه العلاقة.
+- قيل " الجسد قبر النفس " ويقول فوكو " النفس سجن الجسد ": أقارن بين الموقفين وأكشف عن ضمنيات
+  كليهما. ماذا أستخلص؟
+
+**Encadré-citation** : **AUCUN**. La p.58 se termine sur les مهامّ ; ce سند est **le premier du
+chapitre sans encadré-citation**. Constaté, pas déduit.
+
+---
+
+###### سند 22 — ج. بودريار / جون بودريار — « استثمار الجسد » — p.59-60
+
+> ⭐ **سند de référence** : deux notices d'auteur du **مبحث 3.2** renvoient explicitement ici
+> (« راجع التعريف … في السند عدد 22 »). **La notice ci-dessous est celle qu'elles appellent.**
+
+- **Auteur tel qu'imprimé** : ligne de source **ج. بودريار** ; ligne latine **`Jean  BAUDRILLARD`**
+  (double espace imprimé) ; notice **الكاتب** : **جون بودريار: (1929 – 2007 )**. Encadré signé
+  **ج. بودريار**.
+  ⚠️ Trois graphies dans le même سند : `ج. بودريار` / `جون بودريار` / `Jean BAUDRILLARD`.
+  La forme de la notice est **جون** (et non `جان`).
+- **Titre du سند** : **استثمار الجسد**
+- **Source imprimée** : **ج. بودريار، مجتمع الاستهلاك** —
+  `Jean  BAUDRILLARD, Société de consommation,Folilo - Essais  1975, p.201`
+  ⚠️ **`Folilo`** [sic] — vérifié à 600 dpi ; il s'agit manifestement de la collection **Folio**,
+  mais le manuel imprime bien `Folilo`. Anomalie **réelle** de la source, pas une erreur de lecture.
+- **Illustration** : portrait photographique de Baudrillard (vignette dans le texte, p.59).
+
+**التمهيد (verbatim)** :
+> يمثّل الجسد اليوم المشهد الأكثر حضورا في ثقافة الإشهار والاستهلاك، ممّا يؤشّر على ضرب من الاعتراف به
+> و كأنّه غدا جزءا من الأنظمة الرمزيّة لا من جهة كونه فضاء حريّة وحقل معنى بل من جهة كونه قلعة استعباد
+> وفضاء استثمار .
+
+**Thèse (reformulée)** : parmi toutes les armes de la consommation, la plus belle, la plus précieuse
+et la plus éclatante — celle qui les résume toutes — c'est **le corps**. Sa « redécouverte », après
+des siècles de puritanisme, sous le signe de la libération physique et sexuelle, sa présence
+massive dans la publicité et la mode, le culte de l'hygiène, de la diététique et de la thérapeutique,
+l'obsession de la jeunesse, de l'élégance, de la virilité et de la féminité, les soins, les régimes
+et les pratiques sacrificielles qui s'y attachent, le mythe du **plaisir** (`اللذة`) qui les enveloppe :
+tout atteste que le corps est devenu **objet de salut** et qu'il **a pris la place de l'âme** dans sa
+fonction morale et idéologique. La publicité nous rappelle sans cesse, à la manière des cantiques
+religieux, que **nous ne possédons qu'un corps et qu'il nous faut le sauver**. Pendant des siècles on
+s'est acharné à persuader les hommes qu'ils **n'avaient pas** de corps — sans jamais y parvenir
+vraiment — ; aujourd'hui on s'acharne, avec méthode, à les persuader **de** leur corps. Mais
+l'évidence du corps **n'en est pas une** : le statut du corps est **un fait de culture**, et le mode
+d'organisation du rapport au corps reflète, dans toute culture, le mode d'organisation du rapport
+aux choses et aux rapports sociaux — dans une société capitaliste, le statut de la propriété privée
+s'applique aussi au corps. Dans le contexte traditionnel, on **ne trouve pas** chez le paysan
+d'investissement **narcissique** de son corps ni de perception spectaculaire de celui-ci, mais une
+vision **instrumentale / magique** liée au travail et au rapport à la nature. Ce que Baudrillard veut
+établir : les structures actuelles de production/consommation induisent chez le sujet une pratique
+**double et disjointe (mais très liée)** de son propre corps — le corps comme **capital** et le corps
+comme **fétiche** (ou objet de consommation). Dans les deux cas, **loin d'être exclu ou oublié, le
+corps est investi** — aux deux sens du mot `الاستثمار` : **économique et psychique**.
+
+**الهامش (verbatim, p.60 — UNE seule note, appelée `(1)` dans le texte p.59)** :
+> 1– **النرجسيّة**: لفظ مشتق من نرجس وهو عند اليونان اسم لفتى جميل الصّورة أعجب بجمال صورته المنعكسة
+> على صفحة الماء فعشقها وأراد معانقتها فغرق. وتُحمل النرجسيّة في أيّامنا على من يغرق في عشق ذاته.
+> والمقصود في النص أنّ علاقة القروي بجسده ليست علاقة إعجاب وتعشّق بل ينظر إلى جسده على أنّه مجرّد أداة
+> تصله بالطبيعة أثناء عمله.
+
+**الكاتب (notice, p.60 — transcription intégrale, vérifiée à 600 dpi)** :
+> **جون بودريار: (1929 – 2007 )** — عالم اجتماع فرنسي اكتست كتاباته طابعا فلسفيّا بارزا حاول فيها
+> تشريح المجتمعات المعاصرة بما هي مجتمعات استهلاكيّة. في « نظام الأشياء » (1968) تناول بالدراسة علاقة
+> الإنسان بالأشياء مبيّنا أن للشيء بنية خاصّة لوظيفتها دلالة مستقلّة عن استعمالنا للشيء نفسه، ويتساءل
+> في سياق ذلك كيف يمكن لنظام منسجم تكنولوجيّا أن يفقد هذا الانسجام في الواقع؟ واصل تأملاته هذه في
+> « من أجل نقد الاقتصاد السياسي للعلامة » (1972) ليبني نظريّة في الشيء - العلامة، نقد من خلالها منطق
+> الطبقة وبرهن على تكوّن إيديولوجيا الحاجيات وما يتّصل بها من تعظيم يبلغ حد التقديس، وهي إيديولوجيا
+> بصدد التوسّع حتّى أنّها تشمل الآثار الفنيّة. وفي « مجتمع الاستهلاك » (1975) تحدّث عن آليات الترغيب في
+> الاستهلاك ويخصّ الجسد بالمشهد الأكثر إبهارا من كل الوسائل التي يعتمدها الترويج للاستهلاك. وانتهى في
+> « التبادل الرمزي والموت » (1976) إلى التأكيد أنه لم يعد هنالك من تبادل رمزي بين التشكيلات
+> الاجتماعيّة الراهنة إلاّ في شكله التسلّطي.
+
+⚠️ Cette notice **ne comporte aucun renvoi sortant** : c'est une notice **autonome et complète**.
+Les quatre ouvrages qu'elle nomme, dans l'ordre imprimé : `نظام الأشياء` (1968) ·
+`من أجل نقد الاقتصاد السياسي للعلامة` (1972) · `مجتمع الاستهلاك` (1975) · `التبادل الرمزي والموت` (1976).
+
+**المهام (verbatim, 5 puces, p.60)** :
+- ما الذي يجعل من الجسد أثمن أسلحة الاستهلاك ؟ أذكر أمثلة على ذلك.
+- ما الذي يعنيه الكاتب بأن " منزلة الجسد هي أنّه حدث ثقافة "؟
+- ما الفرق بين الاستثمار النرجسي والاستثمار الأداتي للجسد؟
+- هل في استثمار الجسد في الدعاية للاستهلاك علامة تحرر أو استلاب؟
+- أرصد تأثير ثقافة الإشهار على رؤيتي لذاتي. أحرّر فقرة في الغرض.
+
+**Encadré-citation (p.60, à côté d'une photographie publicitaire — femme en maillot appuyée sur une
+berline noire, palmiers et coucher de soleil)** :
+> " توجد دعاية تذكرنا بلا انقطاع، على طريقة التراتيل الدينيّة، بأنّنا لا نمتلك إلاّ جسدا وعلينا إنقاذه ".
+> — **ج. بودريار**
+
+⚠️ **Mise en page particulière** : la p.60 porte **deux encadrés côte à côte**, `المهام` **à droite**
+et `الهامش` **à gauche** (au singulier — une seule note). C'est la seule page de la tranche où les
+deux blocs sont ainsi juxtaposés en colonnes.
+
+---
+
+###### سند 23 — ميشال فوكو — « مساءلة الكوجيتو » — p.61-62
+
+- **Auteur tel qu'imprimé** : ligne de source **ميشال فوكو** ; ligne latine **`Michel FOUCAULT`**.
+  Encadré signé **فوكو**.
+- **Titre du سند** : **مساءلة الكوجيتو**
+- **Source imprimée** (trois lignes) :
+  **ميشال فوكو، الكلمات والاشياء، ترجمة فريق بإدارة مطاع صفدي، مركز الإنماء القومي، 1989–1990، ص 268 — 2 69 (مراجعة لجنة التأليف )**
+  `Michel FOUCAULT, Les mots et les choses, Gallimard, 1966, pp 335 -336`
+  ⚠️ Deux anomalies **réelles**, vérifiées à 600 dpi : le titre arabe est imprimé ici
+  **`الكلمات والاشياء`** (sans hamza) alors que la notice p.58 imprime `الكلمات والأشياء` ; et la
+  pagination arabe est composée **`ص 268 — 2 69`** — espace parasite à l'intérieur de `269` [sic].
+  Comme au سند 19, la traduction est déclarée **revue par la commission de rédaction**.
+- **Illustration** : le **même** portrait photographique de Foucault qu'au سند 21 (p.57), réemployé.
+
+**التمهيد (verbatim)** :
+> لعلّ أهميّة تجربة الشك الديكارتيّة لا تكمن فيما توصّلت إليه من نتائج وأهمّها الكوجيتو فقط، وإنّما كذلك
+> في مدّ الفكر الفلسفي بآليّة للتظنّن على كل ما يقدّم كبداهة، فإذا بالشكّ يغزو الحصن الذي لم يطله الشكّ
+> الديكارتي لُينقَل الشك في الأشياء إلى الشكّ في الذات نفسها وليستحيل ما كان واضحا وما عُدّ يقينا
+> مستشكلا يستوجب النظر والنقد والمساءلة.
+
+**Thèse (reformulée)** : le « je pense » **ne conduit pas** à l'évidence du « je suis ». Dès que
+l'« il pense » (`أنا أفكّر`) surgit dans la profondeur — quasi présent, mais mû sur le mode d'une
+somnolence trouble —, il devient **impossible** de le faire suivre de « donc je suis ». Foucault peut
+dire qu'il est ce langage qu'il parle, où sa pensée se glisse jusqu'à y trouver tout le système de
+ses possibilités propres — mais il **n'y est que sous le poids de sédimentations** qu'il ne pourra
+jamais rassembler entièrement ; qu'il est ce travail que ses mains accomplissent mais qui lui
+échappe, non seulement une fois achevé, mais **avant même d'être commencé** ; qu'il est cette vie
+qu'il sent en lui, mais qui l'engloutit dans le temps profond qu'elle traîne, le hisse un instant à
+son sommet et l'y noie du même mouvement dans le temps imminent qui annonce sa mort. Il peut dire
+tout cela, et **il n'est aucune de ces choses également**. **Le cogito ne mène donc pas à
+l'affirmation de l'être ; il ouvre sur une série d'interrogations qui portent sur la question de
+l'être** : que dois-je être, moi qui pense et qui suis ma pensée, pour être ce que je ne pense pas,
+pour que ma pensée soit ce que je ne suis pas ? Cet être qui scintille — ou plutôt qui luit par
+intermittence — dans l'ouverture du cogito **n'est pas donné avant lui ni entièrement à travers lui**.
+Reste alors la question de la relation et de la difficile appartenance de l'être et de la pensée, et
+celle de l'essence de l'homme — cet être qu'on décrit si aisément comme « ayant une pensée », et qui
+est peut-être seul à posséder ceci : **être en relation essentielle et ineffaçable avec le
+non-pensé** (`اللامفكّر`). Ainsi naît une forme de pensée **entièrement distante du cogito cartésien
+et de l'analyse kantienne**, où l'être de l'homme devient **pour la première fois** objet de la
+question, selon la dimension qui tourne la pensée vers le non-pensé et l'articule sur lui.
+
+**الهامش (verbatim, p.62 — UNE seule note, appelée `(1)` dans le texte p.61)** :
+> 1– **التحليل الكانطي**: يؤكّد كانط على أنّ الأنا يمكنه أن يعرف فيما يفكّر، كيف يفكّر ولكنه لا يستطيع
+> أن يعرف ماهيّة ذاته بذاته إذ أنّ الذات في تصوّره لا تدرك إلاّ من خلال تمثّلاتها.
+
+**الكاتب** — ⚠️ **ce n'est pas une notice mais un RENVOI**, imprimé p.61 sous la référence, verbatim :
+> **فوكو: أنظر التعريف الوارد بالسند 21**
+
+(Renvoi **interne** au chapitre : il pointe vers le سند 21 — *الجسد في لعبة السلطة*, p.57-58 — dont la
+notice **ميشال فوكو: ( 1926 – 1984 )** est transcrite plus haut dans ce même fragment.)
+
+**المهام (verbatim, 6 puces, p.62)** :
+- أستحضر الكوجيتو الديكارتي وأتبيّن العلاقة التي يقيمها بين الفكر والوجود.
+- لماذا يعتبر الكاتب أن الـ " أنا أفكّر " " لا يمكن أن يُتبعَ بـ " أنا موجود "؟
+- إذا كان الكوجيتو لا يؤدّى بداهة إلى تأكيد الكوجيتو فإلام يؤدّي حسب الكاتب؟
+- ماذا يعني القول بأنّ الكوجيتو يجعل الفكر يتّجه إلى اللامفكّر فيه ويتمفصل عليه؟
+- هل يمثّل التشكيك في علاقة الفكر بالوجود تشكيكا في الذاتيّة؟
+- أستخلص ملامح الإنسان كما يرسمها فوكو.
+
+⚠️ La 3ᵉ puce est imprimée **`إذا كان الكوجيتو لا يؤدّى بداهة إلى تأكيد الكوجيتو`** — le mot
+`الكوجيتو` apparaît **deux fois** dans la même question là où le texte source parle de l'aboutissement
+à **l'être** (`تأكيد الوجود`). Anomalie de la source : **constatée, non corrigée**.
+
+**Encadré-citation (p.62, à côté d'une illustration — silhouette noire d'un profil humain sur ciel
+étoilé, avec un « penseur » filaire jaune assis dedans et un globe terrestre)** :
+> " ما يجب أن أكون، أنا الذي يفكّر وأنا الذي أكون فكري، كي أكون ما لا أفكّر وكي يكون فكري ما لست أنا ؟ "
+> — **فوكو**
+
+---
+
+###### سند 24 — فرويد — « بنية الجهاز النفسي » — p.63-64
+
+> ⭐ **سند de référence** : deux notices d'auteur du **مبحث 3.2** renvoient explicitement ici
+> (« راجع التعريف … في السند عدد 24 »). **La notice ci-dessous est celle qu'elles appellent.**
+
+- **Auteur tel qu'imprimé** : ligne de source **فرويد** ; ligne latine **`Sigmund FREUD`** ;
+  notice **الكاتب** : **فرويد: ( 1856 – 1939 )**.
+  ⚠️ Le manuel **n'imprime jamais le prénom en arabe** pour cet auteur : ni `سيغموند` ni
+  `سيجموند` — toujours `فرويد` seul. Le prénom n'existe que dans la ligne latine.
+- **Titre du سند** : **بنية الجهاز النفسي**
+- **Source imprimée** : **فرويد، محاضرات جديدة في التحليل النفسي** —
+  `Sigmund FREUD, Nouvelles conférences d'introduction à la psychanalyse, éd. Gallimard, 1984, pp 104 - 107`
+- **Illustration** : portrait peint de Freud (vignette dans le texte, p.63).
+- **Coupures imprimées** : le texte porte **trois `(...)`** marquant des passages omis (fin du §4,
+  fin du §5, fin du §6), plus un `(...)` d'ouverture implicite. Ce سند est donc explicitement
+  **un montage d'extraits**.
+
+**التمهيد (verbatim)** :
+> تعزّز التظنّن على الوعي ببيان لا إجرائيته بشأن أفعال ظلّت ، تحت وَطْأَتِهِ مستعصية على الفهم و ظلّ معها
+> الإنسان لغزا يتمنّع عن الانكشاف ما لم نعترف بما يسعى الوعي إلى إخفائه و التستّر عليه اعترافا يشي
+> بتحوّل المخفي إلى أساس والظاهر إلى عارض.
+
+**Thèse (reformulée)** : le **moi** (`الأنا`) est **une partie du ça** (`الهو`) modifiée par le
+voisinage du monde extérieur et par son influence, rendue apte à recevoir les excitations et à s'en
+protéger — comme la couche corticale qui entoure une parcelle de matière vivante. Sa fonction est de
+**représenter le monde extérieur auprès du ça**, ce qui est vital pour celui-ci : sans le moi, le ça
+se briserait sur le roc de cette force extérieure supérieure, emporté par sa poussée aveugle vers la
+satisfaction pulsionnelle. Le moi doit observer le monde extérieur, en former une image fidèle, la
+conserver dans ses souvenirs, écarter par l'épreuve de la réalité ce qui vient de sources internes ;
+il place l'action sous son contrôle mais **interpose entre le désir et l'acte un délai de réflexion**.
+Il **détrône ainsi le principe de plaisir**, qui régnait sans partage sur les processus du ça, et lui
+substitue **le principe de réalité**, plus apte à garantir la sécurité et le succès. Grâce au système
+perceptif, le moi entretient avec le temps un rapport difficile à décrire : c'est bien du
+fonctionnement de ce système que naît l'idée du temps. Mais **ce qui distingue surtout le moi du ça,
+c'est sa tendance à la synthèse — à unifier et à totaliser ses processus —, dont le ça est
+totalement incapable**. Le moi croît de la perception des pulsions jusqu'à leur maîtrise, mais **il
+n'y parvient qu'en réussissant à intégrer le représentant de la pulsion dans un ensemble plus large** :
+en langage courant, le moi représente dans la vie psychique la raison et la sagesse, le ça les
+passions échappées à leur bride. **Analogie du cavalier** : le cheval fournit l'énergie du mouvement,
+le cavalier fixe le but et y dirige l'animal puissant — mais leur rapport **n'est pas toujours
+idéal**, car le plus souvent le cavalier se voit contraint d'aller là où sa monture veut le mener.
+Enfin : on dit que nul ne peut servir deux maîtres à la fois — or le moi en a **trois**, dont les
+exigences sont toujours contradictoires et souvent inconciliables : **le monde extérieur, le surmoi
+(`الأنا الأعلى`) et le ça**.
+
+**هوامش** : **aucun encadré de notes** pour ce سند (ni p.63 ni p.64).
+
+**الكاتب (notice, p.64 — transcription intégrale, vérifiée à 600 dpi)** :
+> **فرويد: ( 1856 – 1939 )** — طبيب نفسي نمساوي ومؤسس التحليل النفسي، عاش في فيينّا منذ سنّه الرابعة
+> و لم يتركها إلا مع الاحتلال النازي حين هاجر إلى لندن حيث توفي. درس الطب واختص في أمراض الجهاز
+> العصبي. بدأ حياته العملية في مخبر كباحث في علم أنسجة الجهاز العصبي، ولكن حاجته للمال ألزمته ترك
+> المخبر للقيام بفحوص طبية حيث التقى لأول مرة مع من يُعدُّون مرضى عقليين. قام بتربصات في فرنسا مكنته
+> شيئا فشيئا من تلمس سبل جديدة لمعالجة المرضى العقليين والتي ستكون سببا في ظهور التحليل النفسي
+> ( في حدود سن الأربعين ). قدّم تصوّرا جديدا للإنسان باكتشافه للاّوعي ودور العامل الجنسي في تكوّن
+> الشخصيّة أثار من حوله ضجّة كبيرة. كان انتاجه غزيرا وكتب عدة مؤلفات، نذكر منها:
+> « مخطط من أجل علم نفس علمي » (1895، ظل غير مكتمل)؛ « بحث في الهيستيريا » ( بالتعاون مع عالم الأعصاب
+> جوزيف بروير 1895 )؛ « تفسير الأحلام » (1900)؛ « الحلم وتفسيره » (1901)؛ « الأمراض النفسية في الحياة
+> اليومية » (1901)، « ثلاث مقالات حول النظرية الجنسانية » (1905)؛ « خمسة دروس في التحليل النفسي »
+> (1909)؛ « الطوطم والحرام » (1913)؛ « مقدمة إلى التحليل النفسي » ( 1917)؛ « مستقبل وهم » (1927)؛
+> « قلق في الحضارة » (1929)؛ « موسى والتوحيد » (1939).
+
+**Renvoi imprimé sous la notice (p.64, en bleu — verbatim)** :
+> لمزيد التعمّق انظر نافذة دعائم التفكير؛ سياقات فكريّة: التحليل النفسي.
+
+⚠️ Ce renvoi est libellé **`نافذة دعائم التفكير`** ici, alors que le renvoi analogue du سند 18 (p.51)
+écrit **`نافذة دعائم للتفكير`** (avec `للـ`). Les deux formes coexistent : **constaté, non uniformisé.**
+
+**المهام (verbatim, 8 puces, p.64 — le سند le plus questionné de la tranche)** :
+- أتتبع النص وأحدد مكوّنات الجهاز النفسي.
+- أتبيّن كيفيات تكوّن منظمات الجهاز النفسي مميّزا بين ما هو معطى وما هو مكتسب؟
+- أيّة علاقة يقيمها الكاتب بين الأنا والزمن؟
+- أعتمد المماثلة التي استخدمها الكاتب في النص لأتبيّن طبيعة العلاقة بين الهو والأنا.
+- ماذا يترتب على نجاح الأنا أو إخفاقه في مهمّته؟
+- كيف يمكّن هذا التصوّر للحياة النفسية من فهم بعض مظاهر السلوك الإنساني التي بقيت مستعصية على الفهم؟
+- أستخلص مفهوم اللاوعي وأتبيّن منزلته؟ أحرّر فقرة في الغرض.
+- لم مثّل اكتشاف اللاوعي حرجا لفلسفات الوعي؟
+
+**Encadré (p.63-64)** : ⚠️ **il n'y a PAS d'encadré-citation** pour ce سند. À sa place, la p.64 porte
+un **dispositif d'écriture** : une photographie en fausses couleurs (profil féminin dédoublé — une
+silhouette sombre de profil devant un visage lumineux) surmontant un **cadre rose à quatre lignes de
+pointillés à remplir par l'élève**, relié par une **flèche rouge** à une consigne encadrée en rouge :
+> أعلّق على الصورة مستأنسا بالنصّ.
+
+C'est le **seul dispositif de ce type** rencontré dans la tranche p.47-74.
+
+---
+
+###### سند 25 — فرويد — « سيادة الأنا ؟ » — p.65-66
+
+- **Auteur tel qu'imprimé** : ligne de source **فرويد** ; ligne latine **`FREUD`** (sans prénom).
+- **Titre du سند** : **سيادة الأنا ؟**
+- **Source imprimée** :
+  **فرويد. موسى والتوحيد، ترجمة جورج طرابيشي، دار الطليعة. بيروت. الطبعة الخامسة 2004. ص 161 – 261. (مع مراجعة اللجنة).**
+  `FREUD; Moïse et le Monothéisme, éd,Gallimard`
+  ⚠️ **`ص 161 – 261`** — vérifié à 600 dpi : le manuel imprime bien **261**, soit une plage de 100 pages
+  pour un extrait d'une page. Anomalie **réelle** de la source (très probablement pour `161 – 162`) :
+  **constatée, non corrigée.** Noter aussi `éd,Gallimard` (virgule au lieu du point) et l'absence de
+  toute date pour l'édition française.
+- **Illustration** : portrait photographique de Freud **différent** de celui du سند 24 (ici, Freud âgé,
+  de trois-quarts, en noir et blanc).
+- **Ouverture** : le texte s'ouvre sur un **guillemet ouvrant** (`"حين يحاول…`) et se referme
+  p.66 — c'est une citation continue, sans coupure `(...)`.
+
+**التمهيد (verbatim)** :
+> من النفس بما هي جوهر بسيط إلى الجهاز النفسي بما هو بنية ديناميكيّة: صور تتهاوى وأخرى تنبعث ترجّ
+> يقيننا بذواتنا وتحرج ما خلناه علامة حريّة ومؤشّر إرادة، وتُحَذّرُ من ضياع سيادة كانت لنا على أفعالنا لم
+> نعد ندري إن كنّا ننسبها إلى أنفسنا على وجه التوهّم أم على وجه التملّك…
+
+**Thèse (reformulée)** : quand le **ça** impose à un être humain une exigence pulsionnelle de nature
+**érotique** (`ايروسي`) ou **agressive**, la réponse la plus simple et la plus naturelle du **moi** —
+qui dispose des appareils de la pensée et de la motricité — est de la satisfaire par un acte : cette
+satisfaction est ressentie comme plaisir, sa non-satisfaction engendre sans nul doute peine, angoisse
+et tourment. Le moi peut pourtant **s'abstenir** à cause d'obstacles extérieurs, s'il perçoit que
+l'acte l'exposerait à un danger grave. Or ce renoncement à la pulsion, cette soumission au **principe
+de réalité**, **n'est en aucun cas source de plaisir** pour l'homme et peut produire une tension
+durable, sauf si l'énergie est déchargée en la déplaçant ailleurs. Mais il arrive que le refoulement
+porte sur des mobiles **internes** : au cours du développement de l'individu, une part des forces
+extérieures inhibitrices est **intériorisée**, et se forme dans le moi une instance qui observe,
+surveille et interdit — **le surmoi** (`الأنا الأعلى`). Dès lors, avant de satisfaire les pulsions, le
+moi doit compter **non seulement** avec les dangers extérieurs **mais aussi** avec les exigences du
+surmoi : les motifs d'abstention se redoublent. Et alors que l'abstention due à des causes
+**extérieures** ne produit que de la peine, l'abstention née de causes **internes**, par obéissance au
+surmoi, a un **effet économique différent** : à côté de la peine inévitable, elle apporte un gain et
+une **satisfaction de substitution** — le moi s'éprouve en extase et en ferveur, il tient son renoncement
+à la pulsion sexuelle pour un acte méritoire. Le surmoi est **l'héritier des parents (et des
+éducateurs)** qui ont surveillé les actes et les mouvements de l'individu dans ses premières années,
+et il en est le représentant ; il maintient le moi sous sa tutelle et exerce sur lui une pression
+permanente. Le premier souci du moi reste, comme aux jours de l'enfance, **de ne pas perdre l'amour de
+ce maître** : loué, il s'emplit de quiétude ; blâmé et réprimandé, sa conscience morale l'accable.
+Quand le moi sacrifie une satisfaction pulsionnelle sur l'autel du surmoi, il en attend en retour
+**un surcroît d'amour**, et le sentiment d'avoir mérité cet amour se change en fierté. **Ce sentiment
+de sécurité et de contentement n'a pu prendre son caractère narcissique propre que le jour où
+l'autorité elle-même est devenue une partie du moi.**
+
+**الهامش (verbatim, p.66 — UNE seule note, appelée `(1)` dans le texte p.65)** :
+> 1– **إيروسي**: راجع نافذة دعائم للتفكير، سياقات فكريّة: التحليل النفسي.
+
+⚠️ Cette note est elle-même **un renvoi** vers la نافذة دعائم للتفكير : le manuel ne définit donc
+pas `إيروسي` sur place. À résoudre depuis la tranche qui porte les سياقات فكريّة.
+
+**الكاتب** — ⚠️ **ce n'est pas une notice mais un RENVOI**, imprimé p.66, verbatim :
+> **راجع التعريف بفرويد في السند عدد 24**
+
+(Renvoi **interne** au chapitre : vers le سند 24 — *بنية الجهاز النفسي*, p.63-64 — dont la notice
+**فرويد: ( 1856 – 1939 )** est transcrite plus haut dans ce même fragment.)
+
+**المهام (verbatim, 8 puces, p.66)** :
+- أستحضر مكوّنات الجهاز النفسي وأحدد دلالة اللذة متبيّنا دورها في حياتنا النفسيّة.
+- هل تقوم الحياة النفسيّة على الانسجام أم على الصّراع؟ أعلّل جوابي.
+- يميّز فرويد بين امتناع راجع إلى أسباب خارجيّة وآخر ناشئ عن أسباب داخليّة: أتبيّن الفارق بينهماوأحدد
+  أثر كل منهما على الحياة النفسيّة. *(`بينهماوأحدد` collé [sic])*
+- ما دلالة الإشباع التعويضي؟ أستحضر أمثلة عن تجليّاته؟
+- كيف تولّد التضحيّة بالغرائز مشاعر الاعتزاز والافتخار؟
+- أستخلص مهمّة الأنا مبيّنا معنى أن " تصبح السلطة نفسها جزءا من الأنا ".
+- هل يفضي هذا التحليل إلى إنكار سيادة الأنا على أفعاله؟
+- هل يمكن النظر إلى اللاّوعي بما هو أنا عميق؟
+
+**Encadré (p.66)** : ⚠️ **PAS d'encadré-citation.** À sa place, un **second dispositif d'écriture**
+(après celui du سند 24) : une **caricature en noir et blanc signée `ناجي العليّ`** — une pierre
+tombale portant l'inscription **« أنا أفكر إذاً أنا موجود »**, un croissant de lune, et un enfant vu
+de dos, aux cheveux hérissés, assis parmi les pierres — accompagnée d'une consigne encadrée en rose :
+> أتأمّل هذه الصورة وأتأوّلها مستأنسا بما ورد في النص.
+
+C'est **le seul document iconographique signé d'un auteur arabe** de la tranche.
+
+---
+
+###### سند 26 — جيل دولوز — « الآخر بما هو بنية » — p.67-68
+
+- **Auteur tel qu'imprimé** : ligne de source **جيل دولوز** ; ligne latine **`Gilles DELEUZE`** ;
+  notice **جيل دولوز (1925 – 1995 )**. Encadré signé **دولوز**.
+- **Titre du سند** : **الآخر بما هو بنية**
+- **Source imprimée** : **جيل دولوز، منطق المعنى** —
+  `Gilles DELEUZE; Logique du sens; éd minuit, 1997, pp 356-357 Gilles`
+  ⚠️ **Le prénom `Gilles` est répété en fin de ligne**, après la pagination — vérifié à 600 dpi.
+  Anomalie **réelle** de la source (coquille de composition) : **constatée, non corrigée.**
+- **Illustration** : portrait photographique de Deleuze (vignette dans le texte, p.67).
+- **Coupures imprimées** : le texte porte **quatre `(...)`** — c'est un montage d'extraits.
+
+**التمهيد (verbatim, vérifié à 600 dpi)** :
+> قد تقتضي لحظة العبور إلى الآخر تحويله إلى موضوع نُميته في شيئيّته أو إلى ذات هيّ بمثابة الحدّ الذي
+> تنهكنا مواجهته حدثا مغايرا نكرهه على الانسحاب عنّا، وكأنّ العالم لا يحتضننا إلاّ لُيُنهينا. لكنّ
+> تجربتنا مع الآخر تغيّر وجه حضوره يجعله يعبر إلينا من وراء " ممكن " في تعبيريّة تحوينا حين تحويه.
+
+*(`هيّ` [sic] — shadda parasite sur `هي` ; graphie confirmée à 600 dpi.)*
+
+**Thèse (reformulée)** : on ne peut déterminer ce qu'est autrui qu'en comparant les effets de sa
+**présence** originaire aux effets de son **absence**. L'erreur des théories philosophiques est de le
+réduire tantôt à un objet particulier dans un champ, tantôt à un autre sujet. Or **autrui n'est ni un
+objet de mon champ perceptif, ni un sujet qui me perçoit : il est d'abord la structure du champ
+perceptif lui-même**. Quelle est la nature de cette structure ? Celle d'un **monde possible**. Le
+visage effrayé est l'expression d'un monde possible effrayant, ou l'expression de quelque chose
+d'effrayant dans le monde que je n'ai pas encore perçu. Attention : **le possible n'est pas ici une
+simple catégorie désignant quelque chose d'inexistant** — le monde possible exprimé **existe
+réellement**, mais **il n'existe pas (dans l'instant présent) hors de celui qui l'exprime**. Le visage
+effrayé **ne ressemble pas** à la chose effrayante : il l'enveloppe et la contient comme une chose
+autre, sous une forme tordue qui place l'exprimé dans l'exprimant. Et lorsque je saisis à mon tour, à
+mon compte, la réalité de ce qu'exprime autrui, **je ne fais rien d'autre qu'expliciter autrui,
+développer et incarner le monde possible qui lui correspond**. En somme : **autrui, en tant que
+structure, est expression d'un monde possible**, là où le sujet exprimant n'a pas d'existence hors de
+ce qui le fait exercer l'acte d'expression.
+
+**الهامش (verbatim, p.68 — UNE seule note, appelée `(1)` dans le texte p.67 ; vérifiée à 600 dpi)** :
+> 1– يشير الكاتب هنا إلى ما ذهب إليه ج. ب.، سارتر في " الوجود والعدم " حين جمع بين الحدّين فردّ الآخر
+> إلى مجرّد موضوع لنظرتنا في نفس السياق الذي تتحوّل فيه ذاتنا إلى موضوع أمام نظرة الآخر إلينا.
+
+*(Ponctuation imprimée `ج. ب.، سارتر` — la virgule est bien entre les initiales et le nom.)*
+
+**الكاتب (notice, commencée p.67 et terminée p.68 — verbatim)** :
+> **جيل دولوز (1925 – 1995 )** — فيلسوف فرنسي، بدأ مسيرته الجامعية سنة 1957 بالسوربون حيث درّس تاريخ
+> الفلسفة ثمّ خلف ميشال فوكو بجامعة باريس 8 إلى حدود سنة 1987. اشتهر خاصة بدروسه في الجامعة الشعبية حيث
+> يتدافع رسامون وموسيقيون وغيرهم لمتابعة محاضراته. وعلى غرار ميشال فوكو، عُرف دولوز برفضه للفكر الهيغلي
+> الذي يمحي الاختلاف اعتمادا على الجدل، إذ في مقابل الجدل الهيغلي ينتصر دولوز في « المعاودة والاختلاف »
+> (1968)، وضمن أفق نظر نيتشوي، إلى الإرادة الخلاّقة، إرادة خلق أشكال وقيم أصيلة ووسائط جديدة للخطاب
+> الفلسفي، كما يوؤكد وهمية الأنا أو الذات التي اتخذتها الفلسفة المثالية مركزا، وبالقطع مع الموقف
+> المركزي لا يظهر سوى حقل غير مسمّى [مجهول/غير معروف] لا أثر فيه للذات وحيث تسود كثرة لا تقبل الاختزال،
+> بحيث يمكن للإنسان أن يكون أي شيء ما عدا أن يكون شخصا ولذلك يدعو دولوز إلى تحطيم الأنا وإذابتها لنمكّن
+> الإنسان من أن يتكلـم فينا دون هو أو أنا ودون نعوت لتتجلى الكثرة والاختلافات نسيجا كامنا فينا. أمّا في
+> « منطق المعنى » (1969) فقد تناول دولوز مشكل اللغة والعبارة والمعنى ملاحظا أن ما يوؤاخذه على بعض
+> النظريات الفلسفية هو اختزالها للآخر تارة في موضوع خصوصي وطورا في ذات أخرى، في حين أنّ الآخر أو الغير
+> ليس ذاتا مغايرة لذاتي أو موضوعا لذاتي وإنما هو اقتحام لعالم ممكن في حقل محايث بحيث يدفعني الآخر بمجرد
+> حضوره على حدس تجارب جديدة، وعلى نقلي إلى المواقع التي يسكنها. وفي كتابه « ضدّ أوديب » (1972)، والذي
+> ألفه بمعيّة **فيليكس غاتاري**، يؤكد دولوز على الطابع الإيجابي للرغبة، إذ يرفض اختزال معنى الرغبة في
+> الصراع الدائر بين « الأب والأم والطفل » ويعتبر أن اللاوعي ليس مسرحا بل مصنعا أو آلة وظيفتها الأساسية
+> هي الإنتاج. أمّا في كتاب « ما الفلسفة ؟ » فقد أكّد فيه كل من دولوز وغاتاري أنّ الفلسفة هي إبداع
+> للمفاهيم، وهذا ما يميزها عن العلم والمنطق الذي يشتغل بالدّوال وعن الفن الذي يشتغل بالتمثلات
+> والانفعالات فالمفهوم هو ما يمنع الفلسفة من أن تكون مجرّد رأي أو نقاش أو ثرثرة.
+
+⚠️ Cette notice mentionne quatre titres : `المعاودة والاختلاف` (1968) · `منطق المعنى` (1969) ·
+`ضدّ أوديب` (1972, avec **فيليكس غاتاري**) · `ما الفلسفة ؟` (**sans date imprimée**).
+⚠️ Divergence interne : la ligne de source du سند date `Logique du sens` de **1997** (édition citée),
+la notice de **1969** (parution). Les deux chiffres sont imprimés, chacun à sa place.
+
+**المهام (verbatim, 8 puces, p.68)** :
+- أحدد معنى النظر إلى الآخر بما هو موضوع.
+- أحدد معنى النظر إلى الآخر بما هو ذات أخرى.
+- أتبين مكمن الخطأ في النظر إلى الآخر بما هو موضوع أو بما هو ذات.
+- بأي معنى يكون الآخر بنية الحقل الإدراكي؟ أستثمر المثال الوارد في النص للإجابة.
+- ما دلالة عبارة " العالم الممكن " وكيف تمكّن من معالجة علاقة الذات بالآخر؟
+- أحلّل عناصر " التعبير " وأتبيّن قيمتها في علاقة مع العالم الممكن.
+- أي تصوّر للغيريّة يمكن استخلاصه من النصّ؟
+- هل يمكنني تصور الكاتب من مراجعة طبيعة العلاقة بين الإنية والغيرية؟ أحرر فقرة في الغرض.
+
+**Encadré-citation (p.68, à côté d'une reproduction de tableau — un homme de dos en costume noir et
+chapeau melon devant un rideau rouge, doublé de sa propre silhouette découpée en blanc)** :
+> " غير أنّ الآخر ليس موضوعا في حقل إدراكي، وليس ذاتا تدركني: إنّه في البدء بنية الحقل الإدراكي ".
+> — **دولوز**
+
+---
+
+###### سند 27 — ج. لاكان / جاك لاكان — « في اللاوعي » — p.69-71
+
+⚠️ **Ce سند occupe TROIS pages** (69, 70, 71) : texte + تمهيد + 1ᵉʳ encadré-citation p.69 ; notice
+**الكاتب** + الهوامش (3 notes, très longues) p.70 ; مهامّ + **2ᵉ encadré-citation** p.71.
+⚠️ **C'est le seul سند de la tranche à porter DEUX encadrés-citation.**
+
+- **Auteur tel qu'imprimé** : ligne de source **ج. لاكان** ; ligne latine **`Jacques  LACAN`**
+  (double espace imprimé) ; notice **جاك لاكان : ( 1901 – 1981 )**. Les deux encadrés signés **لاكان**.
+- **Titre du سند** : **في اللاوعي**
+- **Source imprimée** : **ج. لاكان، كتابات** —
+  `Jacques  LACAN, Ecrits, vol,1.1996, éd. du Seuil, coll. Points.  pp. 136 - 137`
+  *(`vol,1.1996` — ponctuation de la source telle quelle.)*
+- **Illustration** : portrait photographique de Lacan (vignette dans le texte, p.69).
+
+**التمهيد (verbatim)** :
+> من " أنا أفكّر أنا موجود " إلى " أفكّر حيث لا أوجد وأوجد حيث لا أفكّر " تنقلب الآفاق لتعلن إزاحة قلعة
+> الإنسان ذاتا وإحلاله بنية لاشعوريّة قوامها رمزيّة لغويّة مفتوحة على القول والتأويل.
+
+**Thèse (reformulée)** : **l'inconscient est ce chapitre de mon histoire qui a été effacé, ou
+qu'occupe un mensonge** — c'est le chapitre soumis à la censure. **Mais la vérité peut être
+retrouvée** : le plus souvent, elle **a été écrite ailleurs**. Lacan énumère **cinq lieux** de cette
+écriture :
+> – dans les **monuments** commémoratifs (`الآثار (1) التذكاريّة`) : mon corps, noyau de la névrose
+>   hystérique, où le symptôme hystérique exhibe la structure d'un langage et se déchiffre comme une
+>   inscription qui, une fois recueillie, peut être détruite sans perte grave ;
+> – dans les **documents d'archives** (`وثائق الأرشيف (2)`) : mes souvenirs d'enfance, impénétrables
+>   comme eux quand je n'en connais pas la provenance ;
+> – dans l'**évolution sémantique** (`التطوّر الدلالي (3)`) : le stock lexical qui m'est propre et ses
+>   significations, à l'image de mon style de vie et de mon caractère ;
+> – dans les **traditions** (`العادات`) : les légendes qui racontent mon histoire sous une forme
+>   héroïque ;
+> – enfin dans les **résidus** (`البقايا`) que conservent nécessairement les distorsions rendues
+>   nécessaires pour raccorder le chapitre falsifié aux chapitres qui l'entourent, et **dont mon
+>   interprétation rétablira le sens**.
+
+**الهوامش (verbatim, p.70 — TROIS notes, appelées `(1)`, `(2)`, `(3)` dans le texte p.69 ;
+vérifiées à 600 dpi)** :
+> 1– **" الآثار "**: تحيلنا إلى ما يسميه **لاكان** " **بمرحلة المرآة** " `le stade du miroir`. مثّل هذا
+> المفهوم إضافة حقيقية بالنسبة إلى التحليل النفسي حيث يرى **لاكان** أن هذه المرحلة، التي تمتد منذ
+> ولادة الطفل حتى الشهر الثامن عشر، تتضمن بدورها ثلاث مراحل هي :
+> أ- يتصرف الطفل وكأن صورته التي تنعكس على المرآة تمثل شخصا آخر حقيقي.
+> ب - بعد ذلك يكف عن التعامل مع هذه الصورة كوجود حقيقي فلن يبحث عن الشخص الذي يتخفّى وراء المرآة، وهو
+> إلى هنا يتصرف كالقرد.
+> ج - في المرحلة الثالثة سيتميز الطفل الإنساني باعترافه أن هذا الآخر ليس إلا صورته.
+> كل هذه المراحل تعلن عن المسار التطوري الذي تتعرف من خلاله الذات على هويتها.
+>
+> 2– **" وثائق الأرشيف "**: يكتسبها الطفل خلال اللحظة الثالثة من مرحلة المرآة حيث يبدأ بالتعرف على
+> الأشياء من حوله و الأشخاص " بتبادل النظرات ".
+>
+> 3– **" التطور الدلالي "** : يعيد **لاكان** التفكير في التصور الفرويدي للمرحلة الأوديبية ويرى أن
+> التماهي مع الأم لا يمثل إلا اللحظة الأولى من المرحلة الاوديبية، فالطفل يتماهى مع رغبة الأم في القضيب
+> ( لا يقصد به لاكان هنا العضو الجنسي بل دلالته المجازية التي ترمز إلى الأب )، وفي لحظة ثانية يتدخل
+> الأب ليحرم الطفل من تماهيه مع الأم ويحرم الأم من القضيب. هذه اللحظة تتمثل في الخضوع لقانون الأب.
+> اللحظة الأوديبية الثالثة يتماهى فيها الطفل مع الأب وهنا يدخل في نظام الرمز أي في نظام اللغة. إن
+> الدور الأساسي للأب ليس الحماية بل الكلام الذي يعني القانون، فعن طريق اللغة تنشأ المنظومة الرمزية
+> للطفل.
+
+⚠️ La graphie du mot « œdipien » **varie dans la même note 3** : `الأوديبية` (avec hamza) puis
+`الاوديبية` (sans). Vérifié à 600 dpi.
+⚠️ Ce bloc de هوامش est **de loin le plus long de la tranche** : il occupe la moitié inférieure de la
+p.70 et constitue à lui seul un **mini-cours sur le stade du miroir et l'Œdipe lacanien**.
+
+**الكاتب (notice, p.70)** :
+> **جاك لاكان : ( 1901 – 1981 )** — وُلد بباريس في عائلة كاثوليكيّة برجوازيّة. نال درجة الدكتوراه
+> بأطروحة حول « في الذهان العصابي وعلاقاته بالشخصية ». سطع نجمه في أوساط التحليل النفسي عبر المنتديات
+> والحلقات الدراسيّة التي شارك فيها. حصل على العضويّة في جمعيّة التحليل النفسي بباريس (1934) وشارك في
+> أشغال المؤتمر العالمي السادس عشر للتحليل النفسي. اهتم **لاكان**، في دعوته العودة إلى **فرويد** بعد أن
+> تزعزعت مكانته، بتصحيح الانحراف الحاصل في الأوساط التحليليّة بفعل تأويل نظريات فرويد الذي حوّلها إلى
+> هيكل مهزوز المضمون. بذلك أعطى بعدا جديدا للتحليل النفسي يعمّق ما ذهب إليه فرويد مستأنسا بمعطيات
+> علميّة ألسنية وبنيويّة ورياضيّة. صدر له مؤلَّف تحت عنوان « كتابات » (`Ecrits` 1966) تضمّن أعماله
+> الأساسيّة، منها « مرحلة المرآة وتكوّن الأنا » الذي بيّن فيه أن الإنسان ليس سيّد نظام دال وأنّ النظام
+> الذي يكوّنه الأنا ينزاح لفائدة ما لم يفلت منه، والشّعار الذي رفعه **لاكان** هو « العودة إلى فرويد »
+> وتمثلت الفكـرة الأساسيـة لـعمـله في الفكرتين التاليتين المتلازمتين: اللاوعي هو « خطاب الآخر » و
+> « اللاوعي مبني كلغة ». على هذا الأساس يطور خاصة ثلاث عبارات: الرغبة هي رغبة الآخر، النظام الخاص
+> يتطور ضمنه كل كائن إنساني تحدده اللغة التي تمثل للفرد دينا يحتاج إلى التسديد، والرغبة هي محرك الحياة
+> وحجر الزاوية للاوعي ولا يمكن أن يوجد إلا بعقدة الإخصاء.
+
+**المهام (verbatim, 5 puces, p.71)** :
+- أتبيّن دلالة اللاّوعي كما حددها الكاتب؟
+- فيم تتميّز هذه الدلالة بالمقارنة مع التحليل الفرويدي؟ أبني جدولا مقارنا.
+- ما دلالة قول الكاتب " الحقيقة يمكن العثور عليها من جديد. وفي أغلب الأحيان تكون قد كتبت في موضع آخر "؟
+  أستحضر بعض هذه المواضع وأستخلص دلالاتها الرمزيّة.
+- من يكون " الآخر " حسب دلالة اللاوعي الواردة في النصّ؟
+- إذا كانت تجليّات اللاّوعي رمزيّة فأيّ منزلة للتأويل في كشفها؟
+
+**Encadré-citation n° 1 (p.69, à côté d'un dessin au trait — un homme de dos devant un miroir dont le
+reflet porte un point d'interrogation à la place de la tête)** :
+> " اللاوعي هو هذا الفصل من تاريخي تمّ محوه أو الذي تحتلّه أكذوبة ".
+> — **لاكان**
+
+**Encadré-citation n° 2 (p.71, à côté d'une gravure ancienne sur fond bleu — une main tenant une
+plume d'oie, entourée d'arabesques calligraphiques et de canifs à tailler numérotés)** :
+> " الحقيقة يمكن العثور عليها من جديد وفي أغلب الأحيان تكون قد كُتبت في موضع آخر ".
+> — **لاكان**
+
+---
+
+###### سند 28 — م. مرلوبونتي — « منزلة اللاوعي » — p.72
+
+⚠️ **Ce سند tient sur UNE SEULE PAGE** : titre, تمهيد, texte, source, **الكاتب** (renvoi),
+**الهامش** et **المهام** sont tous sur la p.72. **C'est le سند le plus court de la tranche** — la
+double page n'est décidément pas la règle.
+
+- **Auteur tel qu'imprimé** : ligne de source **م. مرلوبونتي** ; ligne latine
+  **`M. MERLEAU-PONTY`**.
+- **Titre du سند** : **منزلة اللاوعي**
+- **Source imprimée** : **م. مرلوبونتي، العلامات** —
+  `M. MERLEAU-PONTY, Signes, éd. Gallimard 1960, pp. 290`
+  *(`pp. 290` — pluriel pour une page unique, tel qu'imprimé.)*
+- **Illustration** : portrait photographique de Merleau-Ponty, cigarette à la main (vignette dans le
+  texte).
+- **Coupure imprimée** : un `(...)` dans la dernière phrase.
+
+**التمهيد (verbatim, vérifié à 600 dpi)** :
+> مثّل القول باللاّوعي إهانة لموروث الإنسان عن نفسه أيقضت فيه مطلب معرفة ذاته من جديد، مطلبا لا يحرجه
+> تداخل النفسي و الجسدي و يعدّ لفضاء يُتاح فيه القول و التأويل على التأويل .
+
+⚠️ **`أيقضت`** [sic] — pour `أيقظت`. Confusion ض/ظ **réellement imprimée**, vérifiée à 600 dpi.
+
+**Thèse (reformulée)** : « **les faits psychiques ont un sens** », écrivait Freud dans l'un de ses
+plus anciens ouvrages. Cela signifie qu'**aucun comportement humain n'est le simple résultat d'un
+mécanisme corporel**, et qu'**il n'existe pas non plus, dans la conduite, un noyau spirituel entouré
+d'un milieu fonctionnant machinalement** : tous nos mouvements participent, à leur manière, de cette
+efficience unique d'interprétation et de signification **que nous sommes nous-mêmes**. De toute façon,
+en ramenant les superstructures à des infrastructures pulsionnelles, **Freud s'est efforcé de montrer
+qu'il n'existe, dans la vie humaine, ni « bas » ni « dégradé »** ; on ne peut donc aller bien loin en
+adoptant une interprétation qui s'appuie sur « ce qui est dégradé ». De même, en interprétant la
+conduite par une sorte de fatalité héritée de l'enfance, Freud montre **qu'il y a dans l'enfance une
+vie adulte anticipée** : on trouve ainsi, dans les conduites de l'enfant qui contrôle ses sphincters
+(`sphinctériennes`), une capacité embryonnaire de choisir, dans ses rapports aux autres, entre la
+générosité et l'avarice. Et en interprétant le psychique par le corporel, il dévoile la signification
+du corps psychique comme il en dévoile la logique cachée ou latente : **avec la psychanalyse, l'esprit
+pénètre dans le corps comme, à l'inverse, le corps pénètre dans l'esprit.**
+
+**الهامش (verbatim, p.72 — UNE seule note, appelée `(1)` dans le texte)** :
+> 1– إشارة إلى كتاب فرويد " خمسة دروس في التحليل النفسي" ( 1909 ) حيث كشف في درسه الأوّل أنّ الأعراض
+> المرضيّة تزول بمجرّد الوعي بمعناها.
+
+**الكاتب** — ⚠️ **ce n'est pas une notice mais un RENVOI**, imprimé p.72, verbatim :
+> **راجع التعريف بمرلوبونتي الوارد بالسند 14**
+
+(Renvoi **hors de cette tranche** : le سند 14 est dans les pages p.6-46 du même مبحث. À résoudre
+depuis le fragment ch1a.)
+
+**المهام (verbatim, 6 puces, p.72)** :
+- ماذا استخلص الكاتب من قول فرويد " للوقائع النفسيّة معنى " ؟
+- أتبيّن دلالة ردّ البنى الفوقيّة إلى بنى تحتيّة غريزيّة.
+- أستحضر المثال الوارد في النص وأتبيّن كيف تُخبِرُ الطفولة عن حضور جنيني للرشد.
+- أتبيّن الدرس الذي استخلصه الكاتب من تفسير فرويد للنفسي بالجسدي.
+- أستحضر أمثلة أستدلّ بها على هذا التداخل بين النفسي والجسدي.
+- ألا يفضي القول في الإنسان إلى تأويليّة تضيع فيها حقيقة الإنسان؟ أحرّر فقرة في الغرض.
+
+**Encadré-citation** : **AUCUN**, et **aucune illustration** hors le portrait de l'auteur. Avec le
+سند 21 (Foucault), c'est le second سند de la tranche sans encadré-citation ni image d'accompagnement.
+
+**Terme latin imprimé dans le corps du texte arabe** : `(sphinctériennes)` — inséré tel quel, entre
+parenthèses, après `بعمليات البول والبِراز`.
+
+---
+
+###### سند 29 — سارتر — « الإنسان مشروع » — p.73-74
+
+- **Auteur tel qu'imprimé** : ligne de source **سارتر** ; ligne latine **`SARTRE`** (sans prénom).
+  Encadré signé **سارتر**.
+- **Titre du سند** : **الإنسان مشروع**
+- **Source imprimée** : **سارتر، نقد العقل الجدلي** —
+  `SARTRE; Critique de la raison dialectique, éd. Gallimard, 1960. pp 95 - 96`
+- **Illustration** : portrait photographique de Sartre (vignette dans le texte, p.73).
+- **Coupures imprimées** : le texte porte **trois `(...)`**.
+- **Position** : c'est **le dernier سند** de la نافذة سندات du مبحث 1.1 (n° 29 sur 29).
+
+**التمهيد (verbatim, vérifié à 600 dpi)** :
+> إن كان الدرس الفرويدي قد دفعنا إلى مراجعة صورة الإنسان كما توارثناها فحطم نرجسيته وجنون عظمته، فإنّ
+> ما نخشاه هو أن نفهم هذا الدرس على أنه يحل الخضوع محل الحرية واللاوعي محل الوعي والجنون محل العقل
+> والهشاشة محل المسؤولية. لكّن مادام الإنسان هو من إبداع الإنسان فإنّه لا معنى لإنسان خارج الصورة التي
+> يَرتَضِيها لنفسه.
+
+⚠️ **`لكّن`** [sic] — la shadda est portée par le **ك** au lieu du **ن** (`لكنّ`). Vérifié à 600 dpi.
+
+**Thèse (reformulée)** : **l'homme se définit par son projet**. Cet être matériel dépasse en
+permanence la situation où il se trouve ; il se révèle et se détermine par le **dépassement**
+(`التعالي عليها`) de cette situation, pour s'objectiver par le travail, l'acte et le mouvement.
+**Il ne faut pas confondre le projet et la volonté**, même si le projet peut prendre parfois une
+forme volontaire : la conscience immédiate, distincte de soi, et cette production permanente de soi
+par le travail et la pratique, voilà notre structure propre — **ce n'est ni une volonté, ni un
+besoin, ni une passion**. Mais nos besoins, nos passions et nos pensées les plus abstraites relèvent
+de cette structure : ils sont **toujours hors d'eux-mêmes, vers…** — c'est ce que nous nommons
+l'existence, ce qui **ne désigne pas** une substance stable reposant sur soi, mais une instabilité
+permanente, un arrachement du corps entier hors de soi. Et parce que cet élan vers l'objectivation
+prend des formes diverses selon les individus, et qu'il nous jette dans un champ de possibles dont
+nous réalisons certains à l'exclusion d'autres, nous l'appelons aussi **choix** ou **liberté**.
+⚠️ **Attention à ne pas retourner l'argument** : le manuel imprime que ce serait une **faute grave**
+de reprocher à Sartre d'introduire ici l'irrationnel, de fabriquer un « commencement premier » sans
+lien avec le monde, ou de doter l'homme d'une liberté-**fétiche** (`صنميّة`) — **cette objection ne
+peut venir que d'une philosophie mécaniste**. Celui qui la formule veut réduire la **praxis** et
+l'invention à la reproduction des données premières de notre vie et expliquer l'œuvre ou l'attitude
+par ses seuls facteurs conditionnants ; son désir d'expliquer dissimule une volonté de rendre le
+composé semblable au simple, de **nier** la spécificité des structures et de ramener le changement à
+l'identité — ce qui est **retomber dans le déterminisme scientiste** (`الحتميّة العلمويّة`). À
+l'inverse, la **méthode dialectique** refuse la réduction et procède en sens contraire : elle dépasse
+en conservant. Mais les termes de la contradiction dépassée **sont incapables** de rendre compte du
+dépassement lui-même ni de la synthèse ultérieure — c'est au contraire celle-ci qui les éclaire et
+les rend intelligibles. **La contradiction fondamentale n'est pour nous que l'un des facteurs qui
+délimitent et structurent le champ des possibles.** C'est **le choix** qu'il faut interroger si l'on
+veut expliquer les possibles de la vie dans leur détail, découvrir leur singularité et comprendre
+comment ils ont été vécus : l'effet ou l'acte de l'individu nous révèle le déroulement de ses
+conditionnements — c'est **Voltaire, par son choix d'écrire, qui nous éclaire sur le sens de sa peur
+enfantine de la mort, et non l'inverse**. **L'homme est, à l'égard de lui-même et des autres, un être
+signifiant** (`كائن دالٌّ`), car on ne peut comprendre le moindre de ses mouvements sans dépasser le
+présent pur et l'expliquer par l'avenir. Il est en outre **créateur de signes** dans la mesure où il
+les utilise — toujours en se devançant lui-même — pour nommer certaines choses comme autres, futures
+ou à venir ; mais ces deux opérations se ramènent au dépassement pur et simple. **L'homme produit des
+signes parce qu'il est signifiant dans sa vérité même, et il est signifiant parce qu'il est
+dépassement dialectique de tout ce qui est simplement donné.** Et **ce que nous nommons liberté, c'est
+l'impossibilité de ramener l'ordre culturel à l'ordre naturel.**
+
+**الهوامش (verbatim, p.74 — TROIS notes, appelées `(1)`, `(2)`, `(3)` dans le texte p.73)** :
+> 1– **البراكسيس ( `Praxis`)**: مصطلح ماركسي يفيد الطاقة الإنسانية العملية والاجتماعية.
+> 2– **العلموية**: توجه يرد إلى غوبلو `Goblot` (1858 – 1935 ) ويعتبر أن العلم وحده نموذج الحقيقة
+> والمعرفة وكل ما سواه جهل.
+> 3– **فولتير : `Voltaire`** (1694 – 1778) أديب وفيلسوف فرنسي وأحد أهم ممثلي فلسفة التنوير.
+
+✅ Les deux intervalles de dates de ces notes (`1858 – 1935`, `1694 – 1778`) ont été **vérifiés** : ils
+sont dans le **bon ordre** — ce ne sont pas des cas d'inversion.
+
+**الكاتب** — ⚠️ **ce n'est pas une notice mais un RENVOI**, imprimé p.74, verbatim :
+> **سارتر: انظر التعريف الوارد بالسند 16**
+
+(Renvoi vers le سند 16 du même مبحث, dont la notice **جان بول سارتر: ( 1905 – 1980 )** est imprimée
+**p.47** — donc **à l'intérieur de cette tranche**. Elle est transcrite intégralement au § de fin de
+ce fragment, « Débordement amont — p.47 ». **Ce renvoi est donc résolu.**)
+
+**المهام (verbatim, 7 puces, p.74)** :
+- هل يعد الإنسان لعبة الأحداث والصدفة؟
+- أتبيّن دلالة الوجود التي يقدمها سارتر.
+- أي موقف يدحضه الكاتب في النص ؟
+- ماهيّة الإنسان، هل هي من طبعه أم من إبداعه ؟
+- ما دلالة أن يكون الإنسان مشروعا؟
+- هل تنتفي مسؤولية الإنسان عن أفعاله في بعض الوضعيات التي يعيشها ؟
+- أقارن بين صورة الإنسان كما قدّمها سارتر وصورة الإنسان كما يكشفها اللقاء بالتحليل النفسي؟ أيّ موقع
+  أحتله ضمن هاتين الصورتين؟ أحرّر فقرة في الغرض.
+
+**Encadré-citation (p.74, à côté d'une illustration en pastel — deux visages, l'un de face en clair,
+l'autre de profil en ocre, découpés et emboîtés comme des pièces de puzzle)** :
+> " إنّ الإنسان بالنسبة إلى ذاته وإلى الآخرين كائن دالٌّ ".
+> — **سارتر**
+
+---
+
+##### § Notes, anomalies et incertitudes — fragment ch1b (p.47-74)
+
+###### Ce que la tranche p.47-74 contient réellement — compté, pas déduit
+
+| élément | constat |
+| --- | --- |
+| سندات couverts | **17 → 29**, soit **13 سندات** — plus la fin du سند 16 (p.47) |
+| étendue réelle | 17 : p.48-49 · 18 : p.**50-52** · 19 : p.53-54 · 20 : p.55-56 · 21 : p.57-58 · 22 : p.59-60 · 23 : p.61-62 · 24 : p.63-64 · 25 : p.65-66 · 26 : p.67-68 · 27 : p.**69-71** · 28 : p.**72 seule** · 29 : p.73-74 |
+| pagination du فهرس | **exacte** pour les 13 سندات (page d'ouverture vérifiée une à une) |
+| notices d'auteur complètes | **8** (17, 18 — deux notices, 19, 20, 21, 22, 24, 26, 27) |
+| notices remplacées par un **RENVOI** | **4** : 23 → سند 21 · 25 → سند 24 · 28 → سند 14 · 29 → سند 16 |
+| سندات **avec** encadré هوامش | **9** sur 13 : 18 (2 notes), 21 (2), 22 (1), 23 (1), 25 (1), 26 (1), 27 (3), 28 (1), 29 (3). Les **4 sans** encadré sont 17, 19, 20, 24 |
+| سندات **sans** encadré-citation | **4** : 21 (rien), 24 (dispositif d'écriture à la place), 25 (dispositif d'écriture), 28 (rien) |
+| سند à **deux** encadrés-citation | **1** : le سند 27 (لاكان), p.69 et p.71 |
+| dispositifs d'écriture (consigne + cadre à remplir / image à commenter) | **2** : p.64 (`أعلّق على الصورة مستأنسا بالنصّ.`) et p.66 (`أتأمّل هذه الصورة وأتأوّلها مستأنسا بما ورد في النص.`) |
+| nombre de puces مهامّ | 5 · 6 · 5 · 4 · 5 · 5 · 6 · **8** · **8** · **8** · 5 · 6 · 7 — **il varie de 4 à 8, jamais fixe** |
+| renvois « لمزيد التعمّق » vers une autre نافذة | **2** : p.51 (فلسفة التاريخ) et p.64 (التحليل النفسي) — plus le هامش p.66 (التحليل النفسي) |
+
+###### Anomalies **réelles** de la source (toutes vérifiées par agrandissement à 600 dpi)
+
+1. **p.48** — `رسالة في الطبيعة االبشريّة` : **alif doublé** dans `البشريّة`.
+2. **p.48 / p.49** — divergence de millésime pour la *رسالة في الطبيعة البشريّة* : la ligne latine
+   date **1737**, la notice **1739-1740**. Les deux sont imprimés.
+3. **p.52** — trois mots collés dans les مهامّ : `معنىتمثّل`, `الفلسفةالألمانيّة` ; et **`يدفعونا`**
+   pour `يدفعنا`.
+4. **p.59** — `Folilo - Essais` pour la collection **Folio**.
+5. **p.61** — `الكلمات والاشياء` (sans hamza) alors que la notice p.58 imprime `الكلمات والأشياء` ;
+   et pagination `ص 268 — 2 69` (espace parasite dans `269`).
+6. **p.62** — 3ᵉ puce des مهامّ : `إذا كان الكوجيتو لا يؤدّى بداهة إلى تأكيد الكوجيتو` — `الكوجيتو`
+   répété là où le texte parle de `تأكيد الوجود`.
+7. **p.66** — `ص 161 – 261` : plage de 100 pages pour un extrait d'une page.
+8. **p.66** — `بينهماوأحدد` collé dans les مهامّ.
+9. **p.67** — `pp 356-357 Gilles` : le prénom **`Gilles`** répété en fin de ligne bibliographique.
+10. **p.67** — `ذات هيّ` : shadda parasite sur `هي`.
+11. **p.72** — **`أيقضت`** pour `أيقظت` (confusion ض/ظ) dans le تمهيد.
+12. **p.73** — **`لكّن`** : shadda sur le `ك` au lieu du `ن`.
+13. **p.55** — le تمهيد du سند 20 se termine **sans point final**.
+
+###### Fausses pistes écartées — ce que j'ai cru voir et qui n'y était PAS
+
+Quatre lectures ont été **infirmées** par agrandissement à 600 dpi ; elles auraient chacune produit
+une « anomalie du manuel » **inventée** :
+
+- p.51 — j'avais lu `الجدل الهيغلي الهيغلي` (mot doublé) : **le manuel écrit `الجدل الهيغلي`, une fois.**
+- p.54 — j'avais lu `ليوؤكد` : **le manuel écrit `ليؤكد`.**
+- p.58 — j'avais lu `تفكيرا فلسفيا قريا` : **le manuel écrit `قريبا`.**
+- p.67 — j'avais lu `الحدّ الذي تُهكنا مواجهته` : **le manuel écrit `تنهكنا`** (et `نكرهه`, pas `نكره`).
+
+###### Intervalles de dates — TOUS vérifiés, aucun n'est inversé
+
+Le manuel compose certains intervalles à l'envers ailleurs dans l'ouvrage. **Dans cette tranche, ce
+n'est le cas d'aucun** : `1711 – 1776` (Hume), `1818 – 1883` (Marx), `1820 – 1895` (Engels),
+`1844 – 1900` (Nietzsche), `1918 – 1990` (Althusser), `1926 – 1984` (Foucault), `1929 – 2007`
+(Baudrillard), `1856 – 1939` (Freud), `1925 – 1995` (Deleuze), `1901 – 1981` (Lacan),
+`1905 – 1980` (Sartre), `1858 – 1935` (Goblot), `1694 – 1778` (Voltaire). Le rendu **visuel** de ces
+parenthèses en contexte RTL affiche l'année la plus tardive à gauche : c'est le comportement bidi
+normal, **pas une inversion**. Contrôle croisé fait sur Hume (dates connues, ordre certain).
+
+###### Variantes de graphie des noms propres — à harmoniser en aval
+
+| auteur | formes imprimées dans la tranche |
+| --- | --- |
+| Hume | `د. هيوم` (source p.48) · `هيوم` (encadré p.49) · `دافيد هيوم` (notice p.49) |
+| Marx / Engels | `كارل ماركس وف. انغلز` (source) · `ماركس` / `أنغلز` / `فيدريك انغلز` (notice p.51) — **`انغلز` et `أنغلز` coexistent sur la même page** |
+| Nietzsche | `فريدريك نيتشه` (source p.53) · `نيتشه` (notice, encadré) |
+| Althusser | `لويس ألتوسير` (source) · `ألتوسير` (notice, encadré) |
+| Foucault | `م. فوكو` (source p.57) · `ميشال فوكو` (notice p.58 et source p.61) · `فوكو` (renvoi, encadrés) |
+| Baudrillard | `ج. بودريار` (source, encadré) · **`جون بودريار`** (notice p.60) — pas `جان` |
+| Freud | `فرويد` **partout**, jamais de prénom arabe |
+| Deleuze | `جيل دولوز` (source, notice) · `دولوز` (encadré) |
+| Lacan | `ج. لاكان` (source p.69) · `جاك لاكان` (notice p.70) · `لاكان` (encadrés, هوامش) |
+| Merleau-Ponty | `م. مرلوبونتي` (source p.72) · `مرلوبونتي` (renvoi) — et `مرلوبونتي` dans la notice de Sartre p.47 |
+| Sartre | `سارتر` (source p.73, renvoi, encadré) · **`جان بول سارتر`** (notice p.47) · `ج. ب.، سارتر` (هامش p.68) |
+
+###### Incertitudes résiduelles
+
+- **p.53, ligne 5** : `دون هذا االتفكير` — le mot semble porter un **alif doublé** (`االتفكير`) comme
+  p.48 ; lu à 150 dpi seulement, **non revérifié à 600 dpi**. À contrôler avant toute citation
+  verbatim de cette ligne.
+- **p.67, `لُيُنهينا`** : la vocalisation exacte (damma sur le lâm ou kasra) n'est pas certaine à
+  600 dpi ; le squelette consonantique `لينهينا` est sûr.
+- **p.70, note 3** : `الأودييية` / `الاوديبية` — la forme avec hamza est nette, la seconde l'est
+  moins ; le **fait** de la variation est sûr, la graphie exacte de la seconde occurrence l'est moins.
+- Les **numéros de renvoi** (`السند 14`, `السند 16`, `السند 21`, `السند 24`) sont lus sans ambiguïté ;
+  ce sont **les cibles** qui doivent être vérifiées dans le fragment ch1a pour `14` et `16`.
+
+###### Débordement amont — p.47 : fin du سند 16 (سارتر)
+
+⚠️ La p.47 **n'ouvre pas** le سند 17 : elle **achève le سند précédent (n° 16, سارتر)**, dont le texte
+et le تمهيد sont p.46 (hors de cette tranche). Comme la tranche p.6-46 s'arrête avant, **ce qui suit
+serait perdu** ; il est donc consigné ici.
+
+**الكاتب (notice, p.47 — verbatim)** :
+> **جان بول سارتر: ( 1905 – 1980 )** — فيلسوف وكاتب فرنسي، وجودي النّزعة، ويُعدّ من أهم فلاسفة القرن
+> العشرين. تأثّر بفلسفة **هوسرل وهيدغر** وكذلك بتوجّهات **كيركغارد**. اهتم في البداية بالتحليل النفسي
+> الفينومنولوجي كما ورد في كتاباته: « الخيال » (1936)، و« تعالي الأنا » (1937) و« مخطط لنظرية في
+> الإحساس » (1939) و« المخيال » (1940). حيث يتجلى تأثر سارتر بالفينومينولوجيا التي قادته إلى تأسيس
+> تصور للإنسان بلوره في « الوجود والعدم » (1943)، ويُعدّ هذا الأثر أهم كتابات **سارتر** الفلسفية أكّد
+> فيه أن الإنسان هو الكائن الوحيد الذي يوجد لذاته وهو كائن حرّ ومسؤول وعليه أن يختار طريقه بحرّية.
+> سنة1944 تخلى سارتر عن التدريس لإدارة مجلة « الأزمنة الحديثة »، مع صديقته **سيمون دي بوفوار**
+> والفيلسوف الفينومينولوجي مرلوبونتي، وقد عُرفت هذه المجلة بطابعها السياسي حيث اتخذت من مقاومة كل
+> أشكال الاغتراب هدفا لها، انطلاقا من سنة 1950 اقترب **سارتر** من الحزب الشيوعي حيث اعتبر
+> « **رفيق درب** » نقدي، فأصدر « نقد العقل الجدلي » (1960) بيّن فيه علاقة الوجودية بالماركسية. وإذا
+> كانت الماركسية تنطلق من المجتمع كبنية جدلية مغلقة فإن سارتر يقدم في هذا المؤلف نظرية تعترف بتعقد
+> المجتمع ونظامه ولكنه يبني هذا النظام انطلاقا من الذاتية. بعد رفضه جائزة نوبل صدر له مؤلف عن فلوبير
+> « أحمق العائلة » (1971. 1972. 1973) والذي تميز بخطاب تأويلي حيث بدا سارتر قريبا من التحليل النفسي
+> لكنه على خلاف التحليل النفسي الذي يسلم بوجود لاوعي يستعصي على الذات، يدافع التحليل النفسي الوجودي
+> عن اقتران الحدث النفسي بالوعي الذي يعبر دوما على اختيار الذات. توفي **سارتر** سنة 1980 بعد أن عاش
+> حياة ملتزمة نموذجية، إذ وقف ضدّ حرب الجزائر وأدان التوسّع السوفياتي في شرق أروبا كما سُجن بألمانيا.
+> رفض تسلّم جائزة نوبل (1964). تختزل كتاباته الثقافة الراهنة في مختلف أبعادها إذ تتقاطع في كتاباته
+> عناصر مختلفة: وجوديّة، فينومينولوجيّة، تحليليّة وماركسيّة. كما ترك عديد الكتابات غير المنشورة وبصورة
+> خاصة الجزء الثاني من مؤلف الوجود والعدم والذي ضمنه تصوره للمسألة الأخلاقية، والجزء الثاني من نقد
+> العقل الجدلي والذي لم يُنشر بعدُ. صدر له أيضا في المجال الفلسفي: « الوجوديّة مذهب إنساني » (1946)،
+> « وضعيات » ( في عشرة أجزاء من سنة 1947 إلى سنة 1976). وفي المجال الأدبي صدر له: « الغثيان » (1938)؛
+> « الذباب » (1943)؛ « الأيادي القذرة » (1948)؛ « ما الأدب؟ » (1948)؛ « الكلمات » (1964)…
+
+**المهام du سند 16 (verbatim, 5 puces, p.47)** :
+- عمّ تخبرني تجربة الخجل؟
+- ما منزلة الآخر في تحديد كينونتي؟
+- هل تصيّرني علاقتي مع الآخر إلى شيء بالضرورة؟
+- هل من تطابق بين إحساسي بذاتيتي وبين الصورة التي يحملها الآخر عنّي؟
+- هل من تماثل بين " تجربة الحب " (باسكال، الوضعيّة الاستكشافيّة الثالثة) وبين " تجربة الخجل " كما
+  يعرضها سارتر؟ أحرّر فقرة في هذا الغرض.
+
+**Encadré-citation du سند 16 (p.47, à côté d'une peinture — deux masques de théâtre, l'un blanc,
+l'un noir)** :
+> " أخجل من نفسي كما أظهر للآخرين ".
+> — **سارتر**
+
+*(Ce bloc est à recoller à la fin du fragment ch1a, sous le سند 16.)*
+
 #### مبحث 1.2 : الخصوصيّة والكونيّة — p.115–214
 
 - **Structure (فهرس, p.405–406)** :
@@ -6624,8 +7764,10 @@ bien qu'on tende à la considérer comme secondaire.
 **الكاتب** — ⚠️ **RENVOI, pas une notice** : le manuel imprime
 « **سغموند فرويد : راجع التعريف بفرويد في السند عدد 24 (الإنيّة والغيرية)** ».
 
-> ⚠️ Ce renvoi pointe vers le **مبحث 1.1**, **non encore transcrit**. La génération ne pourra pas
-> le résoudre tant que ce chapitre ne l'est pas.
+> ✅ **Renvoi résolu.** La notice cible est transcrite dans cette même fiche, au
+> **مبحث 1.1, سند 24 (p.64)** : `فرويد: ( 1856 – 1939 )`, طبيب نفسي نمساوي ومؤسس التحليل النفسي.
+> ⚠️ Le manuel **n'imprime jamais le prénom en arabe** dans la notice elle-même (`فرويد` seul) ;
+> c'est **ce renvoi-ci** qui écrit `سغموند فرويد`. Divergence imprimée, à ne pas lisser.
 
 **المهامّ** (verbatim) :
 
@@ -6692,7 +7834,13 @@ l'absence de la démocratie réelle et de l'égalité perdue.
 > « corriger » en génération, et à ne pas transformer en question.
 
 **الكاتب** — ⚠️ **RENVOI** : « **جان بودريار: راجع التعريف ببودريار في السند عدد 22 (الإنيّة
-والغيريّة)** » → **مبحث 1.1, non encore transcrit.**
+والغيريّة)** »
+
+> ✅ **Renvoi résolu.** La notice cible est transcrite dans cette même fiche, au
+> **مبحث 1.1, سند 22 (p.60)** : `جون بودريار: (1929 – 2007 )`, عالم اجتماع فرنسي.
+> ⚠️ **Le prénom diverge d'un مبحث à l'autre** : ce renvoi imprime `جان`, la notice p.60 imprime
+> `جون`. Les deux sont imprimés ; ni l'un ni l'autre ne doit être « corrigé » en génération, et la
+> graphie du nom ne doit pas devenir une question.
 
 **المهامّ** (verbatim) :
 
