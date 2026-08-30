@@ -1,6 +1,6 @@
 # ROADMAP — ordre d'exécution du reste-à-faire (études, lots, contenu)
 
-<!-- roadmap-sync: since-pr=832 -->
+<!-- roadmap-sync: since-pr=912 -->
 
 > **Instantané du 2026-08-24** — déclinaison opérationnelle de l'**étude 26** (doctrine
 > verticale : profondeur avant largeur). L'état de référence reste [STATUS.md](../STATUS.md) +
@@ -82,7 +82,7 @@ flowchart TD
     end
 
     subgraph ADAPT["Adaptatif — le différenciateur"]
-        P3["P3 · é30 lots 0bis→4<br/>tuteur déterministe"]
+        P3["P3 · é30 lots 0bis→4 ✅<br/>tuteur déterministe — livrée"]
         KPI3(["KPI-3 · différenciateur allumé<br/>🟠 armé, pas prouvé"])
     end
 
@@ -158,7 +158,7 @@ flowchart TD
 | Rang | PRODUIT                                  | FONDATIONS                        | CONTENU                             |
 | ---- | ---------------------------------------- | --------------------------------- | ----------------------------------- |
 | 2    | **é11 lots 6-7** (🚧 en vol)             | A15/A16 — recaler G-1/G-4         | C12 — فقه, 8 أبواب (🚧 en vol)      |
-| 3    | **é30 lots 0bis → 4**                    | A17 — Node 22 ou garde de diff    | C9 — محور 3 arabe 1ère sec          |
+| 3    | ~~é30 lots 0bis → 4~~ — **livrée** (§9)  | A17 — Node 22 ou garde de diff    | C9 — محور 3 arabe 1ère sec          |
 | 4    | é08 volet enseignant _(⛔ D-5)_          | é25 L7 — drill de portabilité     | C3 — génération arabe 1ère sec      |
 | 5    | é20 lots 4 · 8 · 6                       | é24 lot 5 — purge historique      | C10 — petites classes (🚧)          |
 | 6    | é26 lots 1-2 — la doctrine, enfin écrite | F7 — deux majeures bloquées amont | C2 — vidéos maths 9ᵉ (é23 lot 5)    |
@@ -199,18 +199,6 @@ son étude et dans les citations qu'on en fait.
       ⚠️ **Une variable Vercel ne prend effet qu'au déploiement suivant sa pose** : vérifier que
       le déploiement courant est postérieur au 2026-08-22 avant de conclure « le mode est allumé ».
       **Le protocole du pilote est au §5 de é29** ; il n'est pas à réinventer ici.
-
-- [ ] **P3. é30 lots 0bis · 1 · 2 · 3 · 4 — le tuteur déterministe** (validée le 2026-08-23,
-      Q-1…Q-7 arbitrées, deux contre la recommandation). Périmètre retenu : **0bis à 4** ; les
-      lots 5 à 9 sont **différés, pas gelés** (Q-7).
-      Elle ferme les quatre organes manquants d'un système tutoriel : croyance calibrée (BKT
-      sans ajustement), inférence montante dans le DAG de é07, bilan d'entrée ≤ 20 items,
-      « prochaine meilleure action ». **Tout est déterministe — rien n'attend une clé d'IA.**
-      ⚠️ **Inerte sans son lot 0**, qui est C4bis : le lot 0 (étape 1) est livré, mais le
-      tagging s'arrête à **64 % d'une seule matière**. Prendre é30 sans finir **C1** revient à
-      calibrer une croyance sur un corpus muet.
-      **Fournit** à é11 le `p_known` et la frontière (son _learner pack_ cesse d'être un proxy),
-      à é08 la maîtrise déclarable, à é02 le percentile par compétence.
 
 - [ ] **P4. é20 — réponses acceptées : lots 4, 8 et 6.**
       **Lot 4** — campagne Tier B, une matière par PR, à décider sur la base du pilote (#96,
@@ -503,6 +491,17 @@ auprès de Google — le paragraphe « vidéos YouTube » a désormais une page 
 
 - **é09** économie du jeu — lots 1 et 2 livrés (arena#703, **arena#708**) ; lot 3 conditionnel (§4).
 - **é11** tuteur IA — lots 0·1·2·3·4·5 et la moitié du 7 (arena#816, #817, **arena#823**) ; §3 P1.
+- **é30** tuteur déterministe — **le périmètre retenu (0bis · 1 · 2 · 3 · 3bis · 4) est LIVRÉ le
+  2026-08-25** : lot 0bis au corpus (privé#241 — les 297 questions muettes tranchées, couverture
+  **64 % → 81 %**, les 156 restantes **statuées** par une règle écrite, pas oubliées), puis les
+  cinq lots moteur (**arena#856** socle de croyance BKT · **#857** inférence + relevé de perf ·
+  **#858** lectures & carte à 4 états · **#859** le pack du tuteur apprend la maîtrise
+  (amendement D) · **#860** la décision + cause racine). **Q-4 tranché et exécuté le 2026-08-30**
+  (arena#910 retire l'écrivain, **arena#911** fait tomber `difficulty_adaptation`, arena#912 le
+  topo ; étude à jour privé#263). **Restent différés, pas gelés** : lots 5·6·7·8·9 (échafaudage,
+  charge cognitive, bilan d'entrée, consoles, échafaudage écrit) — Q-7 les rouvre quand la
+  charpente aura rencontré un public. ⚠️ Deux corrections du **corps** de l'étude restent
+  ouvertes en privé#247.
 - **é16** ouverture lycée — lots 0-3 livrés (arena#367/#369/#371/#375) ; reste la campagne (§5 C6).
 - **é20** réponses acceptées — lots 1·2·3·5·7 livrés (arena#583, #652, privé#96, arena#655, #654).
 - **é23** vidéos explicatives — lots 1-4 livrés (arena#507/#510/#524/#527) ; reste le lot 5 (§5 C7).
@@ -592,6 +591,7 @@ en forme « étude/lot », et sept jours s'étaient joués **au privé**. Un gat
 
 | Date           | Événement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **2026-08-30** | **é30 : le périmètre retenu est livré et Q-4 est exécuté.** Lot 0bis au corpus (privé#241, tagging 64 % → **81 %**, le reste **statué**), cinq lots moteur (arena#856→#860), puis la mort de `difficulty_adaptation` en deux merges (arena#910, **arena#911**) et le topo (arena#912). Base `since-pr` portée de 832 à **912**, tout ce qui est sauté étant cité au §9. Reste ouvert : privé#247 (deux corrections au corps de l'étude, dont une qui demande un arbitrage). |
 | **2026-08-24** | **Élagage et re-cadrage.** 788 lignes → un tiers. Le travail livré passe en index d'une ligne (§9), les leçons en annexe (§10). **Trois ajouts structurels** : un **graphe de dépendances** (§1), la distinction **horloges / chantiers** (§2), et le **chemin critique du goulot** — `export_user_data` → é28 D-5 → é08 → un canal d'acquisition — qui n'avait de ligne dans aucune des trois files. **Trois statuts corrigés en relisant `main`** : **é07 est terminée** (5 lots sur 5 ; son propre document laisse les lots 4 et 5 décochés alors qu'ils sont livrés depuis les 2026-07-21/25), **é29 passe dans `EtudeRealisé/`** (son en-tête disait `LIVRÉE` depuis le 2026-08-22 sans que le dossier bouge), et **é11 est à 6 lots sur 8** — pas « lots 1 à 4 » comme l'annonçait encore l'index. **Un fait neuf** : `docs/doctrine-verticale.md` **n'existe pas** — é26 lots 1 et 2 sont ouverts, la doctrine que tout le monde cite n'a jamais été écrite normativement |
 | 2026-08-23     | **L'étude 04 est finie** (arena#818) : lignes 15 et 16, phase A2 close, étude en `EtudeRealisé/`. **C4bis appliqué en prod** (run 32629700267). **é30 validée**, Q-1…Q-7 arbitrées, périmètre 0bis→4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | 2026-08-22     | **é29 livrée** (arena#807, 5 lots) et **é11 lot 1** (arena#816) le même jour. **C4bis étape 1** livrée au corpus (privé#219, 1 049 tags). `AI_KEY_ENC_KEY` posée en production. Passe de resynchronisation : 60 PR moteur citées d'un coup, quatre chantiers sans ligne rattrapés (F11, F12, F13, C12)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
