@@ -149,6 +149,17 @@ Lesson 22 is the life of **Emma Hutchinson**, 36, who teaches music to children 
 
 > ⚠️⚠️ **The spelling trap.** In the affirmative it is **used** with a *d*; after **did**, the *d* disappears — **didn't use to**, **did you use to**. This is the same rule as any other verb after *did*, and it is the most common written mistake of the whole chapter.
 
+> ⚠️⚠️ **`used to` and `be used to` are two different structures, and the difference is total.**
+>
+> | Structure | Followed by | Meaning |
+> | --- | --- | --- |
+> | **used to** + **base verb** | *used to **work*** | a past habit that has **stopped** |
+> | **be used to** + **noun or -ing** | *am used to **working*** | being **accustomed** to something, now |
+>
+> *I **used to work** at night* = I did, and I no longer do.
+> *I **am used to working** at night* = I do it, and it no longer troubles me.
+> The first has no *be* and no *-ing*; the second always has both. Patricia's text uses only the first — but the second is one syllable away, and it is the commonest confusion of the whole year.
+
 > ⚠️ **Do not use `used to` for everything past.** Your book's own exercise makes the point: *Traders sometimes **put** together camel trains of 15,000 animals* and *Each animal often **carried** 400 pounds* are ordinary past simples — the habit form is not needed once the sentence already says *sometimes* or *often*. And after a modal, no tense at all: *it could **travel** twenty miles a day*.
 
 ### The words of the story

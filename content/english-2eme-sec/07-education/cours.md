@@ -137,6 +137,24 @@ Lesson 19 puts seven pupils in an examination and lets each of them say what is 
 
 > ⚠️ **to pass an exam** is not *passer un examen*. In English, *passing* an exam means **succeeding**. To say only that you were there, use **to sit** or **to take**. A pupil who "passed the exam" got through it; a pupil who "took the exam" may have failed it.
 
+## 😟 Saying that you are afraid — the other function of Lesson 19
+
+The teacher's guide gives Lesson 19 **two** functions, not one: advising, and **expressing fear and worry**. The seven pupils in the examination room are doing the second all the time, and the language is worth having.
+
+| To say you are afraid | Followed by | Example |
+| --- | --- | --- |
+| **I'm afraid of** | a noun or **-ing** | *I'm afraid **of** failing.* |
+| **I'm afraid (that)** | a whole clause | *I'm afraid **that** I'll forget everything.* |
+| **I'm worried about** | a noun or **-ing** | *I'm worried **about** the last section.* |
+| **I'm anxious about** | a noun or **-ing** | *I'm anxious **about** tomorrow.* |
+| **What if…?** | a clause | ***What if** my mind goes blank?* |
+| **I can't stop thinking about…** | a noun or **-ing** | *I can't stop thinking **about** the results.* |
+
+> ⚠️ **`afraid of` and `afraid that` are not interchangeable.** *of* is followed by a **noun or an -ing form** — *afraid of the dark*, *afraid of failing*; *that* is followed by a **subject and a verb** — *afraid that I will fail*. "afraid of I will fail" ✗, "afraid that failing" ✗.
+> ⚠️ And **`I'm afraid`** on its own is not fear at all: it is a polite way of announcing bad news — *I'm afraid the library is closed.*
+
+And to calm somebody down, the language your book puts in the advice column doubles as reassurance: *There's **no need to** panic.* · *Don't **worry**.* · *You'll **be fine**.* · ***Keep calm**.*
+
 ## 🧭 Six ways to give advice, to reproach, and to conclude
 
 This is the grammar of the chapter, and the exercise of Lesson 19 uses **six** forms — two more than the teacher's guide lists. Here they all are, sorted by what they actually do.
