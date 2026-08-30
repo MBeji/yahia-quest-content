@@ -4,8 +4,8 @@
 
 > **Sources** (combinées — voir README) :
 > - **Guide enseignant** (programme) : `641203P00.pdf` (`cnp-officiel/manuels/secondaire/c2/enseignant/`) — page de titre imprimée : **« Perform to Learn — Second Year Secondary Education — Teacher's Book »** (Republic of Tunisia · Ministry of Education · **National Pedagogic Centre**). **Authors** : Ezzeddine Ammar (Inspector), M'hammed Merdessi (Inspector), Ali Omrane (Advisor), M<sup>ed</sup> Habib Raddaoui (Senior teacher). **Evaluators** : Jaouida Ben Afia (General Inspector), Abdennour Khemiri (Inspector). **96 pages.** **Pages lues** : intégralement (1→96).
-> - **Manuel élève** (contenu/exemples/exercices) : `241203P00.pdf` (`…/eleve/`) — « **Perform to Learn — Second Year Secondary Education — Student's Book** » (mêmes auteurs/évaluateurs, National Pedagogic Centre). **184 pages.** **Pages lues** : couverture, remerciements, préface, **Table of Contents intégrale** (p.4–5, avec pagination précise de chaque leçon) ; puis **74 pages à profondeur de génération** : le **2026-08-04**, les thèmes I à III — **p.20–27** (leçons 1–2), **p.33–41** (leçons 3–5), **p.45–54** (leçons 6–8) ; le **2026-08-28**, les thèmes IV à VI — **p.60–68** (leçons 9–11), **p.73–81** (leçons 12–14), **p.86–95** (leçons 15–17) — **et l'APPENDICE INTÉGRAL p.166–184** (Grammar summary, lexique par leçon, verbes irréguliers, table phonétique). Voir **§4 bis**. La pagination du manuel élève **est directement exploitable** (voir §4 — table des matières recopiée telle quelle, PDF page = page imprimée, vérifié p.20 et p.25).
-> **Transcrit le** : 2026-07-07 (guide enseignant) · **2026-08-04** (manuel élève, tranche 1 — chapitres 01 à 03) · **2026-08-28** (tranche 2 — chapitres 04 à 06 + appendice). **Statut** : `partielle` / profondeur `mixte` — transcription fidèle du guide (cadre méthodologique complet + **Book Map** — grilles Functions/Grammar/Vocabulary — des **11 thèmes / 30 leçons + 20 leçons supplémentaires (Arts/Économie)**, lus intégralement p.12–73 + référentiel **« Communicative Functions and Exponents »** p.88–93 + **Timeline** p.94–95), et du manuel élève **pour les chapitres 01 à 06 + l'appendice** (§4 bis). Les chapitres **07 à 11 n'ont pas de section de profondeur** : ils sont chapitrés mais **non générables** (R-5 lu au chapitre — la liste opposable est `chapitresGeneration` dans `suivi/2eme-sec.json`). Le détail « Suggested Procedure »/« Answer key » de chaque leçon du guide (méthode pas-à-pas, corrigés) n'est **pas** recopié exhaustivement — non nécessaire au scope (voir §6).
+> - **Manuel élève** (contenu/exemples/exercices) : `241203P00.pdf` (`…/eleve/`) — « **Perform to Learn — Second Year Secondary Education — Student's Book** » (mêmes auteurs/évaluateurs, National Pedagogic Centre). **184 pages.** **Pages lues** : couverture, remerciements, préface, **Table of Contents intégrale** (p.4–5, avec pagination précise de chaque leçon) ; puis **125 pages à profondeur de génération** : le **2026-08-04**, les thèmes I à III — **p.20–27** (leçons 1–2), **p.33–41** (leçons 3–5), **p.45–54** (leçons 6–8) ; le **2026-08-28**, les thèmes IV à VI — **p.60–68** (leçons 9–11), **p.73–81** (leçons 12–14), **p.86–95** (leçons 15–17) — **et l'APPENDICE INTÉGRAL p.166–184** (Grammar summary, lexique par leçon, verbes irréguliers, table phonétique) ; le **2026-08-30**, les thèmes VII à XI — **p.100–107** (leçons 18–19), **p.112–120** (leçons 20–22), **p.125–132** (leçons 23–24), **p.138–144** (leçons 25–26), **p.147–154 et p.160–165** (leçons 27–30). **Le tronc commun est intégralement transcrit.** Voir **§4 bis**. La pagination du manuel élève **est directement exploitable** (voir §4 — table des matières recopiée telle quelle, PDF page = page imprimée, vérifié p.20 et p.25).
+> **Transcrit le** : 2026-07-07 (guide enseignant) · **2026-08-04** (manuel élève, tranche 1 — chapitres 01 à 03) · **2026-08-28** (tranche 2 — chapitres 04 à 06 + appendice) · **2026-08-30** (tranche 3 — chapitres 07 à 11, le solde du tronc commun). **Statut** : `partielle` / profondeur `generation` — *partielle* parce que 59 pages du manuel restent volontairement non lues (les 20 leçons Arts/Économie, supplément optionnel par filière hors tronc commun, et le diagnostic test / review module p.6–19) ; *generation* parce que **tout ce qui est couvert l'est à profondeur de génération**. Les onze chapitres du programme codifié sont générables — transcription fidèle du guide (cadre méthodologique complet + **Book Map** — grilles Functions/Grammar/Vocabulary — des **11 thèmes / 30 leçons + 20 leçons supplémentaires (Arts/Économie)**, lus intégralement p.12–73 + référentiel **« Communicative Functions and Exponents »** p.88–93 + **Timeline** p.94–95), et du manuel élève **pour les ONZE chapitres du tronc commun + l'appendice** (§4 bis). **Aucun chapitre ne reste non transcrit** : les 11 sont générables (R-5 lu au chapitre — la liste opposable est `chapitresGeneration` dans `suivi/2eme-sec.json`). Le détail « Suggested Procedure »/« Answer key » de chaque leçon du guide (méthode pas-à-pas, corrigés) n'est **pas** recopié exhaustivement — non nécessaire au scope (voir §6).
 > **Langue d'enseignement** : `en` (monolingue — le guide et le programme sont **en anglais**, langue cible). **gradeSlug** : `2eme-sec`. **subject id** attendu : `english-2eme-sec` (aucun subject `english-*` existant pour le secondaire dans `content/` au moment de la transcription — id choisi par analogie avec la convention primaire `<matière>-<niveau>`, cf. README « Convention d'identifiants » ; à confirmer/ajuster si une convention secondaire différente émerge). **La 2ème année secondaire est la 2ème année du lycée** : elle **suit la 1ère année secondaire** (post-9ème/collège, transition A2→B1) et **précède la 3ème année secondaire** (spécialisation par section) et le **Bac**. Manuel/matériel : **« Perform to Learn » — Second Year Secondary Education** (Student's Book + Teacher's Book). Le Student's Book sert **toutes les sections** (tronc commun) avec **20 leçons supplémentaires optionnelles** pour les sections **Arts** (10) et **Économie & Services/Gestion** (10) — cf. §2 note sur les branches.
 
 ## 1. Cadre & compétences (les objectifs généraux / theoretical framework)
@@ -5358,10 +5358,3453 @@ dans ma tranche, de son ouverture (p.86) à sa clôture (p.95).
 *Transcription établie le 2026-08-28 — LOT A, agent de transcription fidèle. Aucun contenu généré :
 tout ce qui n'était pas imprimé est signalé comme « non imprimé ».*
 
+### Chapitre 07 — `07-education` (Thème VII — Education · manuel p.100–107)
+
+> Source : manuel élève CNP « Perform to Learn — Second Year Secondary Education — Student's Book », réf. `241203P00`, rendus 150 dpi (`241203P00-100.png` … `-107.png`). Page PDF = page imprimée.
+> ⚠️ Le manuel n'imprime **aucun intitulé de thème** en tête de la leçon 18 : la page 100 démarre directement sur `LESSON 18 — School Uniforms`. Le rattachement au « Thème VII — Education » vient du guide, pas du manuel (voir « Écarts constatés »).
+
+---
+
+#### L18 — School Uniforms (manuel p.100–103)
+
+**Compétences annoncées dans le manuel** : *(en cours de transcription)*
+
+**Structure de la leçon** : *(en cours de transcription)*
+
+##### Stage One (p.100)
+
+Le manuel imprime `Stage One :` **sans intitulé** après les deux-points (bandeau bleu dégradé, pas de titre de rubrique).
+
+- **Activité (non numérotée)** (p.100) — consigne : « **Answer the questions below with reference to the title and the picture.** » — matériel : cinq questions à puces + une **photographie couleur** d'une salle de classe (élèves en uniforme — pull gris, chemise blanche, cravate rouge — assis en îlots ; une enseignante debout devant un tableau noir portant deux colonnes de mots de vocabulaire de la classe : `board / teacher / window / student / pencil / book` et `chair / table / door / desk / picture` ; affiche « Our Best Handwriting » au mur ; des chiffres 1 à 10 sont surimprimés sur la photo pour désigner des objets). Aucune numérotation d'activité n'est imprimée à ce stade.
+  - Les cinq questions imprimées, dans l'ordre :
+    - « Who are the people? »
+    - « Where are they? »
+    - « What are they wearing? »
+    - « Do you dress in the same way at your school? »
+    - « Would you like to wear school uniforms? »
+  - Corrigé : réponse non imprimée.
+
+##### Stage Two (p.100–…)
+
+Le manuel imprime `Stage Two :` **sans intitulé** après les deux-points.
+
+- **Activité 1** (p.100) — consigne : « **Read the introduction and the beginning of each passage and say whether they are :** » suivie de la liste imprimée « - descriptive / - argumentative / or - expository » — matériel : un chapeau introductif + des encadrés bleus de témoignages d'élèves (suite p.101).
+  - **Introduction imprimée** (chapeau, 3 lignes) — genre : présentation de la situation d'énonciation ; registre neutre informatif ; ≈ 45 mots. Résumé fidèle : les uniformes scolaires restent assez répandus en Grande-Bretagne et sont même devenus plus courants ces dernières années, certaines écoles les ayant réintroduits ; des élèves d'un lycée de filles du centre de l'Angleterre donnent ici leur opinion sur la question.
+  - **Témoignages imprimés en encadrés bleus** (chacun en style oral, à la première personne, présenté avec le prénom en rose gras) :
+    - **Rachel** (p.100, ≈ 60 mots, registre oral familier) — résumé : elle trouve l'uniforme une bonne idée parce qu'on n'a pas à décider quoi porter le matin ; on se lève et on met son uniforme, sans se demander « Oh no, what am I going to wear today? » ; et il n'y a pas de compétition entre les filles.
+    - **Anita** (p.100, ≈ 40 mots, registre oral) — résumé : l'uniforme vous distingue des autres écoles, fait ressembler à une communauté, a l'air vraiment élégant (*smart*), et beaucoup de gens leur disent qu'elles ont belle allure. Deux mots sont mis en évidence typographiquement dans son encadré : **distinguishes** (gras rose) et *smart* (rose) — ce sont visiblement les mots renvoyés au glossaire/vocabulaire.
+    - **Sue** (p.101, ≈ 55 mots, registre oral) — résumé : on ne perd pas nécessairement sa propre **individualité** en portant un uniforme ; il reste quelque chose de spécial en soi comme personne. Porter les mêmes vêtements ne rend pas tout le monde identique ; peu importe ce que pensent les autres, il ne faut pas s'en inquiéter. Mot mis en évidence : **individuality** (gras rose).
+    - **Katie** (p.101, ≈ 50 mots, registre oral) — résumé : en les mettant toutes dans le même uniforme, « ils » **suppriment** leurs identités ; c'est comme dire qu'elles doivent toutes se ressembler et toutes penser pareil. C'est ainsi que cela lui apparaît. Mot mis en évidence : **suppress** (gras rose).
+    - **Sarah** (p.101, ≈ 60 mots, registre oral hésitant — le manuel imprime les hésitations « I think, um… ») — résumé : venant du primaire où l'uniforme n'était pas obligatoire, elle a beaucoup apprécié le porter en arrivant au secondaire et en était fière ; elle reconnaît qu'il y a des défauts, mais aussi des avantages.
+  - **Source imprimée du dossier** (p.101, alignée à droite sous les encadrés) : « **Linguapress. bravepages.com.** »
+  - Corrigé : réponse non imprimée.
+
+- **Activité 2** (p.101) — consigne : « **Read the texts and tick where appropriate.** » — matériel : un tableau à cocher, en-têtes bleus, trois colonnes ; les cellules à remplir sont imprimées vides.
+
+  | Students' names | For school uniforms | Against school uniforms |
+  | --- | --- | --- |
+  | Rachel | | |
+  | Anita | | |
+  | Katie | | |
+  | Sue | | |
+  | Sarah | | |
+
+  - Corrigé : réponse non imprimée (cellules vides).
+
+- **Activité 3** (p.101) — consigne : « **Match words in column "A" with the words closest in meaning in column "B".** » suivie de la note imprimée « NB: There's one extra item in "B". » — matériel : tableau d'appariement à deux colonnes, 5 items en A, 6 items en B.
+
+  | A | B |
+  | --- | --- |
+  | 1- distinguish | a- personality. |
+  | 2- smart | b- follow (rules…) |
+  | 3- individuality | c- recognize the difference. |
+  | 4- suppress | d- state one's opinion. |
+  | 5- to conform to… | e- tidy and well dressed. |
+  | | f- put an end to. |
+
+  - Corrigé : réponse non imprimée.
+  - ⚠️ Noter que l'item **5- to conform to…** n'apparaît dans **aucun** des cinq témoignages transcrits p.100–101 : le mot est introduit ici sans support de lecture préalable.
+
+##### Stage Three (p.102–…)
+
+Le manuel imprime `Stage Three :` **sans intitulé** après les deux-points.
+
+- **Activité 1** (p.102) — compétence annoncée : **Pronunciation** — consigne : « **Pronunciation: Read the following words aloud and say whether the underlined sounds are "similar" or "different".Tick Where  appropiate.** » [sic — « appropiate » pour *appropriate* ; « Where » avec majuscule en milieu de phrase ; espace manquante après le point avant « Tick » et double espace avant « appropiate »] — matériel : tableau à trois colonnes, cellules « Similar » / « different » imprimées vides (⚠️ en-têtes typographiquement incohérents dans le manuel : « Similar » avec majuscule, « different » sans).
+
+  | Words | Similar | different |
+  | --- | --- | --- |
+  | a- <u>u</u>niform – interv<u>iew</u>: | | |
+  | b- w<u>ea</u>r – r<u>ea</u>lly: | | |
+  | c- <u>th</u>ink – clo<u>th</u>es: | | |
+  | d- <u>sh</u>ort – spe<u>c</u>ial: | | |
+
+  - Corrigé : réponse non imprimée.
+
+- **Activité 2 — LANGUAGE PRACTICE** (p.102) — l'activité 2 porte le titre imprimé en capitales `LANGUAGE PRACTICE` et se décompose en quatre sous-activités a, b, c, d.
+
+  - **2.a** (p.102) — consigne : « **Focus on the underlined word in the sentence below.** » — matériel : une phrase support unique, reprise du témoignage de Sue (p.101), avec un mot souligné en gras :
+    > There's still something special about **yourself** as a person.
+
+  - **2.b** (p.102) — consigne : « **Guess whether it is** » — matériel : trois options imprimées (démarche de découverte inductive de la règle) :
+    - « – a personal pronoun »
+    - « – a relative pronoun »
+    - « or   – a reflexive pronoun ? »
+    - Corrigé : réponse non imprimée.
+
+  - **2.c** (p.102) — consigne : « **Fill in the gaps with the suitable reflexive pronouns.** » — matériel : six items à trous à puces, dont deux en format question-réponse :
+    - « I cut ………………… while shaving. »
+    - « You have to blame ………………… for the accident. »
+    - « – Did you enjoy ……………………. on the holidays? » / « – Yes, we enjoyed ………………… very much. »
+    - « – Is he talking to anyone? » / « – No, he's talking to …………………… »
+    - « The children look after ………………….while their parents are away. » [sic — espace manquante après les points de suspension]
+    - Corrigé : réponse non imprimée.
+
+  - **2.d** (p.102) — consigne : « **Complete the table with your teacher's help.** » — matériel : tableau de correspondance à deux colonnes, imprimé **presque entièrement vide** : une seule case est renseignée (`You → yourself`), les huit autres sont des pointillés à compléter par l'élève.
+
+    | Personal pronouns | Reflexive pronouns |
+    | --- | --- |
+    | I | ……………………………. |
+    | You | yourself |
+    | He | ....................................... |
+    | She | …………………………….. |
+    | It | …………………………….. |
+    | One | …………………………….. |
+    | We | …………………………….. |
+    | You | …………………………….. |
+    | They | …………………………….. |
+
+    - ⚠️ **C'est le seul « encadré de règle » de la leçon 18** : il n'existe pas de bloc grammatical rédigé (pas de règle énoncée, pas d'exemple commenté). La règle des pronoms réfléchis est **entièrement déléguée à l'élève et à l'enseignant** (« with your teacher's help »). Voir « Écarts constatés ».
+    - Corrigé : réponse non imprimée (hors la case-amorce `yourself`).
+
+- **Activité 3** (p.103) — compétence annoncée : **Speaking** — consigne (titre) : « **Speaking : A debate.** » puis mise en situation et questions imprimées en gras :
+  > **Some schools in Tunisia are making their students wear special uniforms.**
+  > **- What do you think about that?**
+  > **- Would you accept to wear such uniforms?**
+  > **- Be ready to share your opinion and stand for your argument.**
+  - Aide linguistique imprimée en dessous (non encadrée, entre parenthèses, en corps de texte) : « (Use expressions like – I think that – I believe that – I (dis)agree that…) , I don't think so. » [sic — ponctuation flottante : espace avant la virgule, et le dernier élément « I don't think so. » tombe **hors** de la parenthèse fermante].
+  - ⚠️ C'est le seul embryon d'aide fonctionnelle de la leçon ; ce n'est **pas** un encadré (pas de cadre, pas de fond coloré, pas de titre).
+  - Corrigé : sans objet (production orale ouverte).
+
+##### The Lighter Side (p.103) — rubrique de clôture de la leçon
+
+Rubrique imprimée en fin de leçon sous le titre **« The Lighter Side : »**, sous-titre en rose **« A Joke »**, accompagnée d'une vignette (masque de théâtre souriant jaune sur fond violet/rouge). Ce n'est pas une activité numérotée : aucune consigne n'est imprimée.
+
+- **Blague** (p.103, ≈ 90 mots, dialogue téléphonique, registre familier) — aucune source imprimée. Résumé fidèle (pas de verbatim, R-2) : le téléphone sonne dans le bureau du directeur d'un établissement nommé « Ibn Khaldoun Prep. School » ; une voix annonce qu'un élève, Samy, ne pourra pas venir de toute la semaine suivante ; le directeur demande le motif ; la voix invoque des vacances en famille et espère que cela ne pose pas de problème ; le directeur l'accepte puis demande qui est à l'appareil — la chute est que l'appelant se présente comme étant son propre père.
+- **Bande dessinée** (p.103) — bandeau noir et blanc de trois cases, titre lettré « **SCHOOL DAZE** », signée (paraphe illisible en bas à droite de la dernière case, `[?]`). Œuvre tierce ⇒ pas de verbatim (R-2). Résumé : un garçon se plaint auprès d'une camarade que son enseignante manque d'intelligence ; celle-ci demande pourquoi ; il répond que l'enseignante passe la journée entière à leur poser des questions. Aucune consigne, aucune question d'exploitation n'accompagne la bande dessinée.
+
+**Fin de la leçon 18** — la moitié inférieure de la p.103 est blanche.
+
+---
+
+#### L19 — Coping with exams (manuel p.104–107)
+
+**Compétences annoncées dans le manuel** : *(en cours de transcription)*
+
+**Structure de la leçon** : *(en cours de transcription)*
+
+> ⚠️ Différence structurelle nette avec la L18 : ici, **chaque `Stage` porte un sous-titre imprimé** dans un cartouche rose (`Pre-reading`, `Reading Comprehension`, …), alors que les trois `Stage` de la L18 étaient nus. Les activités sont aussi étiquetées « Activity1. », « Activity2… » et non plus par un simple chiffre en marge.
+
+##### Stage One — Pre-reading (p.104)
+
+- **Activité 1** (p.104) — consigne : deux blocs imprimés en gras, sans support ; c'est une amorce de discussion :
+  > **How do you cope with exams: special arrangements / preparations / revision / feelings before, during and after the exams.**
+
+  > **Which do you think is more difficult, the period before the exam or taking the exam itself?**
+  - Matériel : aucun (pas d'image, pas de tableau).
+  - Corrigé : sans objet (expression libre).
+
+##### Stage Two — Reading Comprehension (p.104–…)
+
+- **Activité 1** (p.104) — consigne : « **Activity1. In pairs look at the illustrations, read the captions and answer the questions that follow.** » [sic — « Activity1. » sans espace] — matériel : **sept illustrations couleur** de collégiens/lycéens en situation d'examen, chacune assortie d'une **bulle de bande dessinée** portant un prénom en gras et une réplique. Ordre de lecture imprimé (colonnes gauche → centre → droite) :
+
+  | # | Bulle (verbatim) | Illustration associée |
+  | --- | --- | --- |
+  | 1 | « **Paul :** I'm not sure whether I've answered questions two and five correctly, and I don't have time to check them. What shall I do ? » | garçon roux, pull vert, stylo près de la bouche, l'air perplexe |
+  | 2 | « **Jane :** Oh no ! I didn't revise the passive. Why did I spend all that time on things I already knew ? » | fille aux longs cheveux, main sur le front, air accablé |
+  | 3 | « **Mary :** this test is rather easy ! I won't even bother to check my answers. » [sic — « this » sans majuscule initiale] | fille souriante en pull violet, écrivant à sa table |
+  | 4 | « **Andy :** Help ! My mind's gone blank. I revised it all but now I can't remember anything. I'm going to fail. » | garçon en chemise grise, main sur la tempe |
+  | 5 | « **Beth** : i've spent ten minutes on this question and I still don't know the answer. I'll never finish all the others » [sic — « i've » avec i minuscule ; pas de point final] | fille aux couettes rousses, penchée sur un livre ouvert |
+  | 6 | « **Barbara:** Oh, I wish I'd started my revision before last week. I was up so late last night and then I couldn't sleep because I was so worried about this. » | fille aux cheveux attachés, air épuisé, feuille à la main |
+  | 7 | « **Steve:** Oh no! Time is almost finished and I haven't even read this last section of the test. » | garçon regardant sa montre, air paniqué |
+
+  - **Questions d'exploitation** (imprimées en haut de la p.105, en continuation de l'activité 1 ; lettres en rose) :
+    - « a- What are the characters in the pictures doing? »
+    - « b- What problem has each one got? »
+    - « c- Which situation do you most identify with? »
+  - Corrigé : réponse non imprimée.
+
+- **Activité 2** (p.105) — titre imprimé : « **Activity 2** » — consigne : « **Below is a series of advice about how to cope with exams. Go through the list and match the appropriate advice with  the corresponding character / situation in activity 1 stage 2. Write your choice as indicated in the table.** » [sic — double espace après « with »] — matériel : sept conseils lettrés a→g + un tableau à remplir + une illustration.
+
+  - **Liste de conseils imprimée** (genre : texte prescriptif / conseils, registre neutre à l'impératif ; ≈ 200 mots au total ; aucune source imprimée) — verbatim, dans l'ordre imprimé :
+    - « a- Use your revision plan to find out which things you still have problems with and which things you know well. Spend most of your time on things that you are not sure of. (But make sure that you revise everything at least once. You may have forgotten something.) »
+    - « b- Keep calm in the exam. If you've done your revision, there's no need to panic. »
+    - « c- Always leave enough time to check all your answers. »
+    - « d- Plan your time in the exam. Look through the whole paper first and work out how much time you need to spend on each section. »
+    - « e- Don't waste time on one question. If you can't do something, leave it and come back to it later. »
+    - « f- Don't revise heavily at the last minute. Get a good night's sleep the night before the exam, so that your mind is fresh. »
+    - « g- Use all the time that you have available in the exam. If you finish early, go back and check everything even the questions you find very easy. »
+
+  - **Tableau à remplir** (p.105) — en-têtes bleus, colonne de droite en pointillés :
+
+    | Advice | Character's name |
+    | --- | --- |
+    | a | ……………………………. |
+    | b | ……………………………. |
+    | c | ……………………………. |
+    | d | ……………………………. |
+    | e | ……………………………. |
+    | f | ……………………………. |
+    | g | ……………………………. |
+
+  - **Illustration** (p.105, à droite du tableau) : dessin humoristique — un gros cahier à spirale rouge personnifié, aux yeux et sourcils menaçants et aux bras musclés, portant l'inscription « Bac Exam », face à deux adolescents (un garçon, une fille) qui reculent effrayés. Aucune consigne ne s'y rapporte.
+  - Corrigé : réponse non imprimée.
+  - ⚠️ La consigne renvoie à « activity 1 stage 2 », c'est-à-dire aux sept personnages de la p.104 — mais il y a **sept conseils pour sept personnages**, alors que la formulation « match the appropriate advice » n'indique pas si l'appariement est bijectif.
+
+- **Activité 3 — LANGUAGE PRACTICE** (p.106) — titres imprimés : « **Activity 3 :** » puis, sur une ligne séparée, « **LANGUAGE PRACTICE** ». Deux sous-activités numérotées 1 et 2.
+
+  - **3.1** (p.106) — consigne : « **Go through the list of advice again and rephrase the sentences using 'had better',' ought to', or 'needn't' wherever possible. The first one has been done for you.** » [sic — apostrophe ouvrante mal placée devant « ought to »] — matériel : l'exemple résolu, seul **corrigé imprimé** de la leçon, sous forme de deux reformulations du conseil `a-` de la p.105 :
+    - « + You had better use your revision plan » [sic — pas de point final]
+    - « +  You ought to use your revision plan. »
+    - Les six autres reformulations (conseils b→g) sont à produire par l'élève ; **aucune ligne de réponse n'est imprimée** (pas de pointillés, pas d'espace balisé).
+    - Corrigé : imprimé pour le seul item `a` (ci-dessus) ; réponse non imprimée pour b→g.
+
+  - **3.2** (p.106) — consigne : « **Read the following sentences, and then circle the correct options to fill in the gaps.** » — matériel : sept items à trous a→g, chacun suivi de **trois** options précédées d'un « + ». Verbatim, dans l'ordre imprimé :
+
+    | Item | Phrase à trou (verbatim) | Options imprimées |
+    | --- | --- | --- |
+    | a | « Yes, I know that I ………………….studied last night, but I decided to watch TV instead. » | + would've / + should've / + must've |
+    | b | « I ……………..be glad to help you with the revision any time you ask. » | + will / + can / + must |
+    | c | « Look! It's raining and Mr. Johnson is all wet. He…………….forgotten his umbrella again! » | + might / + could / + shouldn't have |
+    | d | « You …………….turn off the computer in the lab. It is programmed to switch off automatically. » | + should / + needn't / + might not |
+    | e | « You………………revise the last chapter; because I am sure it will be included in the exam. » | + had better / + needn't / + could |
+    | f | « Mr Bean looks anxious. He ……………. be worried about his sick mother. » | + could / + must / + couldn't |
+    | g | « You ………………..read the whole test at least once before writing any answer. » | + can / + could / + ought to |
+
+    - ⚠️ Les lettres a→g sont imprimées avec une ponctuation irrégulière : `a` est suivi d'une **puce ronde** (`a•`), les autres d'un **point gras rose** (`b.`, `c.`, …). Les espaces après la lettre sont eux aussi irréguliers (`b.I`, `f.Mr`, `g.You` sans espace).
+    - ⚠️ L'item `c` mélange deux valeurs : les deux premières options sont des modaux de déduction au présent (`might`, `could`) alors que la troisième est une forme composée (`shouldn't have`) ; la phrase appelle en fait un `must have` absent de la liste. Signalé en « Écarts constatés » — je ne tranche pas, aucun corrigé n'est imprimé.
+    - Corrigé : réponse non imprimée.
+
+  - ⚠️ **Aucun encadré de règle sur les modaux n'est imprimé p.106** : pas de cadre, pas de tableau récapitulatif, pas de fond coloré. Les modaux annoncés par le guide sont donc **pratiqués sans jamais être énoncés**.
+
+  - **3.c** (p.107) — consigne : « **Now in groups compare your answers and use the table below to find out what each sentence expresses. Put a tick where appropriate.** » — matériel : tableau de classement fonctionnel à sept lignes (a→g, renvoyant aux items de 3.2 p.106) et six colonnes de fonctions, imprimé **entièrement vide**. Bandeau de titre imprimé au-dessus des en-têtes : « What the sentences express ».
+
+    | Sentences | Regret | Advice | Reproach | Deduction/ logical conclusion | Unnecessary action | Offering help |
+    | --- | --- | --- | --- | --- | --- | --- |
+    | a) | | | | | | |
+    | b) | | | | | | |
+    | c) | | | | | | |
+    | d) | | | | | | |
+    | e) | | | | | | |
+    | f) | | | | | | |
+    | g) | | | | | | |
+
+    - ⚠️ **C'est le plus proche équivalent d'un encadré de règle pour la L19** : la colonne d'en-têtes **nomme** les six valeurs des modaux étudiés (regret, conseil, reproche, déduction/conclusion logique, action inutile, offre d'aide) — mais aucune ligne n'est renseignée, aucune forme n'est associée à une valeur. La règle est **à reconstruire par l'élève en groupe**, exactement comme le tableau des pronoms réfléchis de la L18 (p.102) l'était « with your teacher's help ».
+    - ⚠️ **Rupture de numérotation** : l'activité 3 numérote ses deux premières sous-parties `1-` et `2-` (p.106) puis la troisième `c-` (p.107). Le manuel passe des chiffres aux lettres au milieu de la même activité.
+    - Corrigé : réponse non imprimée.
+
+##### Stage Three — Writing (p.107)
+
+Le manuel imprime `Stage Three :` avec le sous-titre en cartouche rose **`Writing`**.
+
+- **Activité (non numérotée)** (p.107) — consigne, en deux blocs gras :
+  > **Go back to your work and develop the ideas to write your paragraph.**
+  > **Read again your paragraph and try to improve it. Exchanging your work with a classmate may be a good idea.**
+  - Matériel : **aucun** — pas de plan, pas de sujet, pas de grille, pas de lignes d'écriture, pas de banque d'expressions.
+  - ⚠️ **La consigne renvoie à un travail qui n'existe pas.** « Go back to your work » et « your paragraph » présupposent une tâche d'écriture antérieure ; or **aucune activité des p.104–107 ne demande de rédiger un paragraphe**, ni n'en pose le sujet. Écart majeur, signalé plus bas.
+  - Corrigé : sans objet (production écrite).
+
+##### The Lighter Side (p.107) — rubrique de clôture de la leçon
+
+Rubrique numérotée **`2`** (chiffre rose en marge) et titrée « **The Lighter Side :** », sous-titre rose « **A Joke** », avec la même vignette de masque de théâtre souriant qu'à la p.103. Aucune consigne n'est imprimée.
+
+- **Blague** (p.107, ≈ 70 mots, récit dialogué, registre familier) — **source imprimée** : « **www.edhelper.com** » (alignée à droite sous le texte). Résumé fidèle (pas de verbatim, R-2) : deux souris observent depuis leur trou un chat nommé Spooky ; la première annonce qu'elle sait comment le faire fuir, la seconde s'en étonne ; la première se met alors à aboyer ; le chat détale de peur ; la chute est une remarque sur l'intérêt de connaître une autre langue.
+- **Illustration** (p.107, sous la blague) : dessin humoristique — un garçon endormi dans son lit ; dans sa bulle de rêve, une copie d'examen rouge personnifiée portant l'inscription « TEST », dotée d'un visage menaçant et de bras, qui se penche vers lui (cauchemar d'examen). Aucune consigne ne s'y rapporte.
+- ⚠️ **Incohérence de numérotation** : la rubrique « The Lighter Side » porte le numéro `2` alors que l'activité de `Stage Three — Writing` qui la précède n'est pas numérotée, et que les activités du `Stage Two` allaient déjà de « Activity1 » à « Activity 3 ».
+
+**Fin de la leçon 19** — la p.108 ouvre une leçon « Arts », hors périmètre (non ouverte).
+
+---
+
+#### Synthèse de structure — chapitre 07
+
+#### L18 — School Uniforms (p.100–103)
+
+**Compétences annoncées dans le manuel** : aucune compétence n'est déclarée en tête de leçon. Elles n'apparaissent qu'**au fil des activités**, dans les intitulés eux-mêmes : *Pronunciation* (Stage Three, act. 1), *LANGUAGE PRACTICE* (Stage Three, act. 2), *Speaking : A debate* (Stage Three, act. 3). Aucun `Stage` ne porte de sous-titre. Aucune compétence n'est nommée pour les Stages One et Two (respectivement, de fait : expression orale d'amorce sur image, puis compréhension écrite).
+
+**Structure de la leçon** :
+- Stage One (p.100) — 1 activité non numérotée (5 questions sur photo).
+- Stage Two (p.100–101) — activités 1 à 3 (typologie de texte, tableau pour/contre, appariement lexical).
+- Stage Three (p.102–103) — activités 1 à 3 (prononciation ; LANGUAGE PRACTICE a/b/c/d sur les pronoms réfléchis ; débat oral).
+- The Lighter Side (p.103) — blague + bande dessinée, hors numérotation.
+- **Total : 8 activités numérotées ou identifiables** (1 + 3 + 3, plus les 4 sous-activités a→d de Stage Three act. 2 comptées comme une seule).
+- Aucune phase d'écriture (**pas de Writing en L18**).
+
+#### L19 — Coping with exams (p.104–107)
+
+**Compétences annoncées dans le manuel** : déclarées cette fois en **sous-titres de Stage**, dans des cartouches roses : *Pre-reading* (Stage One), *Reading Comprehension* (Stage Two), *Writing* (Stage Three). En sus, l'activité 3 du Stage Two porte le titre `LANGUAGE PRACTICE`.
+
+**Structure de la leçon** :
+- Stage One — Pre-reading (p.104) — 1 activité (deux questions d'amorce, sans support).
+- Stage Two — Reading Comprehension (p.104–107) — Activity 1 (7 vignettes + 3 questions), Activity 2 (7 conseils + tableau d'appariement), Activity 3 = LANGUAGE PRACTICE (sous-parties `1-`, `2-`, `c-`).
+- Stage Three — Writing (p.107) — 1 activité non numérotée.
+- The Lighter Side (p.107, numérotée `2`) — blague sourcée `www.edhelper.com` + illustration.
+- **Total : 6 activités de premier niveau**, dont l'activité 3 se décompose en 3 sous-activités.
+
+#### Encadrés de règle / grammaire / vocabulaire — bilan de la tranche
+
+**Aucun encadré de règle rédigé n'est imprimé sur les p.100–107.** Ni cadre grammatical, ni « Language point », ni récapitulatif de formes, ni liste de vocabulaire présentée comme telle. Ce qui s'en approche :
+
+| Page | Objet | Nature réelle |
+| --- | --- | --- |
+| p.101 | Tableau d'appariement A/B (act. 3) | Exercice lexical, pas un glossaire — mais c'est le seul lieu où le vocabulaire de la leçon 18 est défini (*distinguish, smart, individuality, suppress, to conform to…*, avec les gloses `recognize the difference / tidy and well dressed / personality / put an end to / follow (rules…)` + un intrus `state one's opinion`). |
+| p.102 | Tableau `Personal pronouns / Reflexive pronouns` (act. 2.d) | **Encadré à compléter par l'élève**, 1 case amorce sur 9 (`You → yourself`), consigne « with your teacher's help ». Aucune règle énoncée. |
+| p.103 | « (Use expressions like – I think that – I believe that – I (dis)agree that…) , I don't think so. » | Aide fonctionnelle en corps de texte, **non encadrée**. |
+| p.107 | Tableau `What the sentences express` (act. 3.c) | **Encadré à compléter par l'élève**, imprimé entièrement vide ; ses six en-têtes nomment les valeurs (Regret / Advice / Reproach / Deduction-logical conclusion / Unnecessary action / Offering help) mais aucune forme n'y est associée. |
+
+**Listes de vocabulaire** : aucune liste de vocabulaire au sens propre (pas de colonne mot/traduction, pas de glossaire de fin de leçon) sur les p.100–107. Le seul apport lexical explicite est le tableau d'appariement de la p.101, transcrit ci-dessus dans l'ordre imprimé.
+
+---
+
+#### Écarts constatés — chapitre 07
+
+1. **L18 — pronoms réfléchis : présents, mais jamais énoncés.** Le guide annonce « les pronoms réfléchis » ; le manuel les travaille bien (p.102, act. 2.a→2.d), avec une démarche inductive (repérer *yourself* dans le témoignage de Sue → identifier la nature → appliquer → tabuler). Mais **la règle n'est imprimée nulle part** : le tableau récapitulatif est vide à 8 cases sur 9 et sa consigne délègue explicitement à l'enseignant (« Complete the table with your teacher's help. »). L'élève qui travaille seul sur le manuel n'a **aucun** énoncé de règle à sa disposition. Conforme sur le fond, défaillant sur la forme.
+2. **L19 — modaux : les cinq formes annoncées sont là, plus d'autres.** Le guide annonce `ought to` / `needn't` / `had better` / `should have` / `shouldn't have`. Le manuel imprime bien les cinq : `had better` (p.106 act. 1 et act. 2.e), `ought to` (p.106 act. 1 et act. 2.g), `needn't` (p.106 act. 1, act. 2.d et 2.e), `should've` (p.106 act. 2.a), `shouldn't have` (p.106 act. 2.c). **Mais il en ajoute six autres non annoncés** et non enseignés ici : `would've`, `must've`, `will`, `can`, `must`, `might`, `could`, `might not`, `couldn't`. L'exercice 2 est donc **plus large que la leçon annoncée**, et rien ne distingue les formes au programme des distracteurs.
+3. **L19 — aucune règle imprimée non plus.** Comme en L18, la seule structuration est un **tableau vide** (p.107). Aucune correspondance forme↔valeur n'est donnée.
+4. **L19 — la phase Writing renvoie à un travail inexistant.** « Go back to your work and develop the ideas to write your paragraph » (p.107) présuppose un sujet et un premier jet. **Aucune activité des p.104 à 107 ne demande de rédiger, ni n'énonce de sujet de paragraphe.** C'est le défaut le plus lourd de la tranche : la phase d'écriture n'est pas exploitable telle qu'imprimée.
+5. **L18 n'a pas de phase Writing du tout** — la leçon s'arrête sur un débat oral. Asymétrie assumée ou omission, le manuel ne le dit pas.
+6. **Deux systèmes de titrage incompatibles entre les deux leçons de la même tranche.** L18 : `Stage One/Two/Three :` **sans sous-titre**, activités numérotées `1 2 3` en marge. L19 : `Stage` **avec sous-titre en cartouche rose**, activités nommées `Activity1.` / `Activity 2` / `Activity 3 :`. Un chapitre construit sur ces deux leçons devra normaliser.
+7. **Rupture de numérotation interne à l'activité 3 de L19** : sous-parties `1-`, `2-` (p.106) puis `c-` (p.107) — chiffres puis lettre dans la même activité.
+8. **« The Lighter Side » numérotée en L19 (`2`), pas en L18.** Et en L19 elle porte le n° 2 alors que rien ne porte le n° 1 dans le Stage Three.
+9. **Item lexical orphelin** : `5- to conform to…` (p.101, act. 3) ne figure dans aucun des cinq témoignages de lecture — l'élève doit apparier un mot qu'il n'a pas rencontré.
+10. **Item grammaticalement bancal** : p.106 act. 2.c — « Look! It's raining and Mr. Johnson is all wet. He……………forgotten his umbrella again! ». La phrase appelle une déduction au passé (`must have`), forme **absente** des trois options proposées (`might` / `could` / `shouldn't have`) ; les deux premières ne sont pas des formes composées et ne peuvent pas précéder « forgotten ». Aucun corrigé n'étant imprimé, je ne tranche pas.
+11. **Aucun intitulé de thème imprimé.** Le manuel n'écrit « Education » (ni « Theme VII ») nulle part sur les p.100–107 ; le rattachement thématique vient du guide seul.
+12. **Un seul corrigé imprimé sur toute la tranche** : les deux reformulations-modèles de la p.106 (act. 3.1, item `a`). Tout le reste est « réponse non imprimée ».
+13. **Sources imprimées inégales** : le dossier de lecture de la L18 est sourcé (« Linguapress. bravepages.com. », p.101) et la blague de la p.107 aussi (« www.edhelper.com ») ; en revanche la liste de conseils de la p.105, la blague de la p.103 et la bande dessinée « School Daze » (p.103) ne portent **aucune source**.
+14. **Coquilles relevées** (toutes marquées `[sic]` dans le corps du document) : « appropiate » (p.102) ; « Tick Where  appropiate » (majuscule intempestive + double espace) ; en-têtes « Similar » / « different » incohérents (p.102) ; « Activity1. » sans espace (p.104) ; « Mary : this test » sans majuscule (p.104) ; « Beth : i've spent » avec i minuscule et sans point final (p.104) ; parenthèse mal fermée p.103 (« I don't think so. » hors parenthèse) ; apostrophe mal placée p.106 (« ,' ought to' ») ; ponctuation de liste irrégulière p.106 (`a•`, `b.I`, `f.Mr`, `g.You`).
+
+---
+
+#### Incertitudes — chapitre 07
+
+- **p.103, bande dessinée « School Daze »** : le paraphe de l'auteur, en bas à droite de la troisième case, est illisible au rendu 150 dpi — noté `[?]`. Aucune mention d'éditeur ou de copyright n'accompagne le bandeau.
+- **p.100, photographie de classe** : des chiffres 1 à 10 sont surimprimés sur la photo pour désigner des objets, mais **aucune consigne de la page ne les exploite** (les cinq questions ne s'y réfèrent pas). Il s'agit vraisemblablement d'une image reprise telle quelle d'une autre source avec sa numérotation d'origine. Non résolu par le manuel.
+- **p.100 / p.101, ordre de lecture des témoignages** : les encadrés sont disposés en quinconce sur deux pages. L'ordre retenu ci-dessus (Rachel, Anita, Sue, Katie, Sarah) suit la disposition typographique. L'activité 2 de la p.101 énumère les prénoms dans un ordre différent (Rachel, Anita, **Katie, Sue**, Sarah) — Katie et Sue y sont inversés par rapport à la mise en page. Aucune des deux séquences n'est fautive, mais elles divergent.
+- **p.102, soulignements de l'activité 1** : les segments soulignés relevés sont `u`niform / interv`iew`, w`ea`r / r`ea`lly, `th`ink / clo`th`es, `sh`ort / spe`c`ial. Lecture cohérente phonétiquement, mais les soulignements sont fins au rendu 150 dpi ; confiance haute, non recontrôlée à 300 dpi.
+- Aucune autre zone illisible sur la tranche.
+
+---
+
+#### Pages réellement lues — chapitre 07
+
+`100`, `101`, `102`, `103`, `104`, `105`, `106`, `107` — **les 8 pages du périmètre, intégralement, au rendu 150 dpi.** Aucune page hors périmètre n'a été ouverte (p.108 non consultée). Aucun re-rendu à 300 dpi n'a été nécessaire.
+
+---
+
+### Chapitre 08 — `08-professional-life` (Thème VIII — Professional Life · manuel p.112–120)
+
+> Source : manuel élève CNP « Perform to Learn — Second Year Secondary Education — Student's Book »
+> (`241203P00`), pages rendues à 150 dpi, page PDF = page imprimée.
+> Transcription fidèle — aucune génération. Les corrigés ne sont **jamais** imprimés dans ce
+> manuel élève (voir § Écarts).
+
+---
+
+#### L20 — I had no choice (manuel p.112–114)
+
+**En-tête imprimé (p.112)** : bandeau bleu « LESSON 20 » à gauche, titre centré en magenta
+**« I had no choice »**. Aucune mention d'objectif fonctionnel ou grammatical dans l'en-tête —
+le manuel n'annonce **pas** la structure visée en tête de leçon (voir § Écarts).
+
+##### Stage One : Pre-Reading (p.112)
+
+Bandeau gris/bleu **« Stage One : »**, puis sous-titre encadré **« Pre-Reading »**.
+
+- **Activité 1** — consigne verbatim :
+  > « When you think about working mothers, what are the ideas that come first to your mind ?
+  > Jot them down in your notebook. »
+
+  Matériel : à droite, photo couleur d'une femme en tailleur rouge, au téléphone devant une
+  baie vitrée, un document ouvert à la main. Légende imprimée sous la photo, en gras :
+  **« A mother at work »**.
+
+- **Activité 2** — consigne verbatim :
+  > « Now classify your thoughts in the table below. »
+
+  Matériel : tableau vide à deux colonnes, en-têtes en magenta sur fond bleu, **deux** lignes
+  vierges à remplir par l'élève.
+
+  | Positive Aspects | Negative Aspects |
+  | --- | --- |
+  |  |  |
+  |  |  |
+
+##### Stage Two : Reading (p.112–113)
+
+Bandeau **« Stage Two : »**, sous-titre encadré **« Reading »**.
+
+**Texte de lecture** — titre imprimé (magenta, centré) : **« I had no choice »**.
+Source imprimée en fin de texte, alignée à droite (p.113) : *Daily Mail* — **March 12, 1994**.
+Genre : portrait de presse / interview rapportée (récit à la première personne encadré par un
+chapeau à la troisième personne). Longueur : **6 paragraphes numérotés** (1 à 6, numéros en
+magenta), ≈ 300 mots. Registre : journalistique, langue courante, témoignage personnel.
+Matériel iconographique : photo couleur d'une femme âgée embrassant un bébé, légende imprimée
+**« A childminder »** (p.112).
+
+**Résumé structuré fidèle** (pas de recopie — œuvre de presse sous droits, R-2/R-5) :
+
+- **§1** — Présentation à la troisième personne : Patricia Vaz, 48 ans, femme d'affaires de
+  l'année 1994 ; directrice de la division des cabines téléphoniques de British Telecom, elle
+  a redressé un déficit en bénéfice. Elle vit à Herne Bay (Kent) avec son mari Ronald, 52 ans,
+  ingénieur chez BT. Un fils, Donavan [sic — orthographié « Donavan » au §1, puis « Donovan »
+  aux §2 à 6], 28 ans, cadre bancaire à la NatWest.
+- **§2** — Témoignage : elle a repris le travail quand son fils avait deux ans ; c'était
+  inhabituel à l'époque et les collègues la culpabilisaient, mais elle n'avait pas le choix —
+  le foyer avait besoin de l'argent.
+- **§3** — Parcours professionnel : cinq ans à la Printing Federation (jusqu'à la direction de
+  l'administration), entrée chez BT comme employée de bureau en 1975 (son fils avait huit ans),
+  puis planification et enfin management. Elle se sentait mal de ne pas être là au retour de
+  l'école de son fils.
+- **§4** — L'organisation quotidienne : dépose de l'enfant chez la nourrice à 7 h du matin
+  avant de prendre le train ; le garçon l'aimait beaucoup et l'appelait « Auntie Margaret » ;
+  la nourrice le gardait jusqu'à l'école, le récupérait et restait avec lui jusqu'au retour de
+  la mère. Soulagée que la relation soit bonne, elle jalousait ces heures « précieuses ».
+- **§5** — Donovan est devenu très autonome : assez grand pour rester seul entre l'école et le
+  retour de sa mère, il se préparait des haricots sur toast et se mettait à ses devoirs.
+- **§6** — Un regret : elle n'est pas bonne cuisinière ; son mari et son fils garderont le
+  souvenir de repas expédiés en une demi-heure. Ils ne se plaignaient pas, ils y étaient
+  habitués.
+
+**Structure mise en évidence typographiquement dans le texte** : la fin du §4 imprime en
+**gras magenta** le segment « should have been mine » (les 4 mots seulement) — seul relief
+typographique du texte. C'est le porteur imprimé de la structure du regret (voir § Écarts).
+
+##### Exploitation du texte (p.113) — toutes les questions verbatim
+
+- **Activité 1** — consigne verbatim :
+  > « The following statements are false. Justify with details from the text. »
+
+  Items imprimés (lettres a-, b-, c- en magenta) :
+  - « a- Patricia had never worked before her son was two. »
+  - « b- Patricia failed at the head of the British Telecoms »  *(pas de point final imprimé)*
+  - « c- Patricia's office mates were supportive to her. »
+
+  Corrigé : réponse non imprimée.
+
+- **Activité 2** — consigne verbatim :
+  > « Answer the following questions. »
+
+  - « a- Patricia had mixed feelings because of her work when her son was eight and stayed with
+    the childminder Margaret. Could you explain why? »
+  - « b- Patricia's absence from home had a positive effect on her son Donovan. How was that? »
+
+  Corrigé : réponse non imprimée.
+
+- **Activité 3** — consigne verbatim :
+  > « Select the most suitable alternative »  *(pas de point final imprimé)*
+
+  Deux items à puce, chacun suivi de trois alternatives a- / b- / c- :
+
+  | Segment du texte | Alternatives imprimées |
+  | --- | --- |
+  | « How could you (par.2) » | a- asking for information · b- expressing disapproval · c- making a request |
+  | « He would make himself beans on toast (par.5) » | a- expressing a conditional · b- expressing a past action · c- expressing a habit in the past |
+
+  Corrigé : réponse non imprimée.
+
+- **Activité 4** — consigne verbatim :
+  > « Go through the table and tick the most appropriate box. »
+
+  Matériel : grille à double entrée. En-tête supérieur fusionné **« How Patricia felt »** ;
+  colonne de gauche **« Situations »** ; quatre colonnes de sentiments : *proud*, *guilty*,
+  *envious/jealous*, *relieved*. Six situations imprimées (cases toutes vides) :
+
+  | Situations | proud | guilty | envious/jealous | relieved |
+  | --- | --- | --- | --- | --- |
+  | As businesswoman of the year Patricia felt….. |  |  |  |  |
+  | Going to work and leaving her 2-year-old son she felt…….. |  |  |  |  |
+  | Because her son and the childminder had a good relation she felt……… |  |  |  |  |
+  | Because the childminder was with the boy most of the day, Patricia felt……….. |  |  |  |  |
+  | Being at work while her son was back home from school, Patricia felt………… |  |  |  |  |
+  | Looking back at her life and knowing that her family lived on quick meals, Patricia felt… |  |  |  |  |
+
+  Corrigé : réponse non imprimée.
+
+##### Suite de l'exploitation (p.114)
+
+- **Activité 5** — pas de consigne chapeau : le numéro **5** est directement suivi de deux
+  questions a- / b- (composées, en gras) :
+  - « a- Do you think Patricia took the right decision when she went back to work and her child
+    was only two? »
+  - « b- Would you accept to live on terrible meals all your life providing your family income
+    gets better? »
+
+  Corrigé : réponse non imprimée.
+
+##### Stage Three : Writing (p.114)
+
+Bandeau **« Stage Three : »**, sous-titre encadré **« Writing »**.
+
+- **Consigne chapeau verbatim** :
+  > « Now it is time for you to write your final paragraph. »
+
+- Deux consignes de suivi, verbatim :
+  - « a- Read it one more time before you hand it to your teacher for correction. »
+  - « b- Remember to keep your corrected paragraph in a file for future uses. »
+
+  ⚠️ **Aucune tâche d'écriture n'est définie** : ni sujet, ni longueur, ni support. La consigne
+  suppose un paragraphe déjà rédigé (« **your final** paragraph », « **it** ») dont rien, dans
+  les pages 112–114, ne prescrit le contenu. Le bas de la page 114 est **entièrement blanc**
+  (environ les deux tiers de la page). Voir § Écarts.
+
+**Encadré de règle / grammaire / vocabulaire dans la L20 : AUCUN.** Les pages 112, 113 et 114 ne
+portent aucun encadré de langue (ni nu, ni à compléter, ni vide). La seule marque de la
+structure visée est la mise en gras magenta de « should have been mine » à l'intérieur du texte
+de lecture (p.112) et l'item 3 « expressing a habit in the past » (p.113), qui n'est pas une
+règle mais un item de QCM.
+
+---
+
+#### L21 — What's Your Dream Job? (manuel p.115–117)
+
+**En-tête imprimé (p.115)** : bandeau « LESSON 21 », titre centré magenta
+**« What's Your Dream Job? »** (majuscules imprimées ainsi : *What's Your Dream Job?* —
+la lettre de mission écrivait « What's your dream job? »). Aucun objectif fonctionnel ni
+grammatical annoncé en en-tête.
+
+##### Stage One : Speaking (p.115)
+
+- **Activité a-** — consigne verbatim :
+  > « Answer the following questions. »
+
+  Quatre questions à puce, verbatim :
+  - « What is your dream job? »
+  - « Why do you want to do that job in particular? »
+  - « What do you like about it? »
+  - « Why do you think you are fit for that job? »
+
+- **Activité b-** — consigne verbatim :
+  > « Now share your answers with your partner. »
+
+  Matériel : photo couleur d'une femme blonde en blouse blanche, stéthoscope autour du cou,
+  bras croisés. Légende imprimée en gras : **« A physician's assistant »**.
+
+  Corrigé : réponse non imprimée (production personnelle).
+
+##### Stage Two : Listening (p.115–…)
+
+- **Activité 1** — consigne verbatim :
+  > « Listen to the tape and tick the correct option. »
+
+  Le support est un **enregistrement (« the tape »)** : la transcription d'écoute n'est **pas**
+  imprimée dans le manuel élève (voir § Écarts). L'exercice est découpé en **(Section 1)** et
+  **(Section 2)**, chaque item étant un QCM à trois alternatives a- / b- / c-.
+
+  **(Section 1)** — items imprimés :
+
+  | Item | a- | b- | c- |
+  | --- | --- | --- | --- |
+  | Heidrun and Thorson are: | 2 tourists. | 2 university students. | 2 radio presenters *(sans point final)* |
+  | The local radio broadcasts in: | Norwegian. | Japanese . *(espace avant le point [sic])* | English. |
+  | The radio program lasts: | five minutes. | half an hour. | a quarter of an hour. |
+
+  **(Section 2)** — items imprimés :
+
+  | Item | a- | b- | c- |
+  | --- | --- | --- | --- |
+  | What does Heidrun want to be? | a physician's assistant. | a physician. | a nurse. |
+  | What does a physician's assistant do? | helps doctors. | teaches physics. | makes appointments. |
+  | How long does the schooling take? | 3 to 5 years. | 3 to 6 months. | 4 to 6 years. |
+  | Where would Heidrun like to work eventually? | at home. | in a clinic. | in a hospital. |
+
+  Corrigé : réponse non imprimée.
+
+  Ce que le document sonore laisse déduire du contenu (d'après les seuls items imprimés) : une
+  émission de radio locale où deux personnes, **Heidrun** et **Thorson**, s'entretiennent ;
+  Heidrun veut devenir *physician's assistant*, métier dont on précise la fonction, la durée de
+  formation et le lieu d'exercice visé.
+
+  **(Section 3)** (p.116) — items imprimés :
+
+  | Item | a- | b- | c- |
+  | --- | --- | --- | --- |
+  | What does Thorson want a master's degree in? | economics. | law. | international relations. |
+  | How long does the diplomat school course last? | 4 years. | 2 years. | 3 years. |
+  | What was his dream job when he was a kid? | a diplomat. | a baseball player. | a fireman. |
+
+- **Activité 2** (p.116) — consigne verbatim :
+  > « Now Listen to the whole passage again and complete the missing words.
+  > (Each dot stands for a letter). »
+
+  *(« Listen » avec majuscule au milieu de la phrase [sic].)* Six amorces à compléter, les
+  amorces en **gras** suivies de points de suspension ; le nombre de points code le nombre de
+  lettres manquantes :
+
+  - « What is a physician's **a……..**? »
+  - « It's a lot of **sc…….**       . »  *(point final isolé, précédé d'un large blanc [sic])*
+  - « An **int…….** for 2 years at a hospital. »
+  - « Work for the Norwegian **emb….** in Tokyo. »
+  - « It's very **comp…….**   . »  *(idem, point final isolé après un blanc [sic])*
+  - « I could become famous the **w….** over. »
+
+  Matériel : photo couleur d'un homme âgé en costume, au téléphone à son bureau. Légende
+  imprimée en gras : **« A Diplomat »**.
+
+  Corrigé : réponse non imprimée.
+
+##### Stage Three (p.116–117)
+
+⚠️ Le bandeau imprime **« Stage Three : »** **sans sous-titre de compétence** — contrairement aux
+autres stages du chapitre (Pre-Reading / Reading / Writing / Speaking / Listening), aucun libellé
+n'est imprimé sous le bandeau. Voir § Écarts.
+
+Ce stage comporte deux blocs numérotés : **1 PRONUNCIATION** et **2 LANGUAGE PRACTICE**.
+
+###### 1 PRONUNCIATION (p.116)
+
+- **Activité 1.a-** — consigne verbatim :
+  > « Listen to how the words in the box are pronounced, focus on the final sound and classify
+  > them as indicated. »
+
+  **Encadré de vocabulaire (boîte de mots)** — cadre bleu, fond gris, mots séparés par des
+  barres obliques, **dans l'ordre imprimé** :
+
+  > check-ups / stitches / wishes / affairs / gives / schools / goes / streets
+
+  Tableau de classement, **vide** (une seule ligne à remplir), en-têtes imprimés en magenta.
+  ⚠️ Les symboles sont imprimés en **capitales latines entre crochets**, pas en API :
+
+  | [ S ] | [ Z ] | [ IZ ] |
+  | --- | --- | --- |
+  |  |  |  |
+
+- **Activité 1.b-** — consigne verbatim :
+  > « Now, with your teacher, work out the rule. »
+
+  ⚠️ **La règle n'est pas imprimée** : le manuel renvoie explicitement à l'enseignant. Aucun
+  encadré de règle de prononciation n'existe sur la page.
+
+  Corrigé : réponse non imprimée.
+
+###### 2 LANGUAGE PRACTICE (p.116–117)
+
+- **Activité 2.a-** — consigne verbatim :
+  > « Read the following sentences and focus on the bold parts. »
+
+  Trois phrases-supports, les segments en **gras** dans le manuel :
+  - « The assistant would usually do these little things **so that** the doctor does not have to
+    do them. »
+  - « I came to Japan **to** learn Japanese. »
+  - « …………… come back to Japan **in order to** work for the Norwegian embassy. »
+
+  ⚠️ La troisième phrase commence par une **ligne de points** (amorce laissée vide) : le sujet
+  et le verbe conjugué manquent, sans qu'aucune consigne ne demande de les compléter. Voir
+  § Écarts.
+
+- **Activité 2.b-** (p.117) — consigne verbatim :
+  > « Are the bold parts used to express …? »
+
+  Alternatives imprimées sur une seule ligne, séparées par des barres obliques :
+  > « a purpose /    a request    / or a deduction. »
+
+  Corrigé : réponse non imprimée.
+
+- **Activité 2.c- GRAMMAR SUMMARY** (p.117) — **ENCADRÉ DE RÈGLE, transcrit verbatim.**
+  Tableau à deux colonnes, en-têtes magenta sur fond bleu : *Structures* / *Examples*.
+
+  | Structures | Examples |
+  | --- | --- |
+  | **To + Verb** | They went into the fields to pick up mushrooms. |
+  | **In order to + Verb** | She is having evening classes in order to have better qualifications. |
+  | **So that + Clauses of purpose :**<br>**(can / could /shall / should / may / might / will / would)** | She turned down the radio so that she could concentrate.<br><br>They have given him a key so that he can get into the house whenever he likes. |
+
+  *(Reproduit à l'identique, y compris l'espacement irrégulier « could /shall » [sic] et
+  l'espace avant les deux-points.)*
+
+  ⚠️ C'est un encadré **nu** : aucune formulation de règle en prose, seulement structures +
+  exemples. Il **ne mentionne pas** la valeur de but des trois formes autrement que par le
+  libellé « Clauses of purpose ».
+
+###### The Lighter Side (p.117)
+
+- **Titre imprimé** : « The Lighter Side » (gras, hors numérotation de stage).
+- **Consigne verbatim** :
+  > « Complete the puzzle below. »
+
+  Matériel : grille de mots croisés 10 colonnes × 12 lignes environ, cases bleues (noires) et
+  blanches, numéros 1 à 11 imprimés dans les cases de départ. Aucune lettre pré-remplie.
+
+  **ACROSS :** (définitions verbatim)
+  - « 2.  Where nurses and doctors work. »
+  - « 5.  Medical doctors. »
+  - « 7.  Bureau or........... »
+  - « 8.  Level. »
+  - « 10. Diploma. »
+  - « 11. To have a good time or to have...... »
+
+  **DOWN :** (définitions verbatim)
+  - « 1.  Somebody who works in politics. »
+  - « 3.  Still necessary in surgery. »
+  - « 4.  Synonym for practice. »
+  - « 6  At school. »  *(pas de point après le 6 [sic] — seul numéro sans point)*
+  - « 9.  Money or a living. »
+
+  Corrigé : réponse non imprimée (grille vide).
+
+**Encadrés de la L21 — bilan** : **un** encadré de règle imprimé, le *GRAMMAR SUMMARY* de la
+p.117 (structures + exemples, sans prose) ; **un** encadré de vocabulaire (boîte de mots de
+prononciation, p.116) ; **deux** tableaux vides à remplir par l'élève (classement
+[ S ] / [ Z ] / [ IZ ], p.116). La règle de prononciation est explicitement déléguée à
+l'enseignant (« Now, with your teacher, work out the rule. »).
+
+---
+
+#### L22 — A Success Story (manuel p.118–120)
+
+**En-tête imprimé (p.118)** : bandeau « LESSON 22 », titre centré magenta **« A Success Story »**.
+Aucun objectif fonctionnel ni grammatical annoncé en en-tête.
+
+##### Stage One : Pre-Reading (p.118)
+
+- **Activité a-** — consigne verbatim :
+  > « Look at the picture and describe the place and the people. »
+
+  Matériel : photo couleur, une femme debout à côté d'un piano droit devant une fenêtre, un
+  enfant assis au clavier. **Aucune légende imprimée** sous cette photo (contrairement aux
+  autres illustrations du chapitre).
+
+- **Activité b-** — consigne verbatim :
+  > « Ask a partner »  *(pas de point final imprimé)*
+
+  Quatre amorces à puce, verbatim :
+  - « if he/she can play music. »
+  - « if he /she enjoys listening to music. »  *(espace avant le « /she » [sic])*
+  - « if handicapped people can appreciate music. »
+  - « if they know any great musicians who are handicapped. »
+
+  Corrigé : réponse non imprimée.
+
+##### Stage Two : Reading (p.118–120)
+
+- **Consigne chapeau verbatim** :
+  > « Read the text and do the activities below. »
+
+**Texte de lecture** — **sans titre propre** (le titre de la leçon, « A Success Story », en
+tient lieu). Source imprimée en fin de texte, alignée à droite (p.118) :
+**« Emma Hutchinson, 36. »** puis, en italique, **« Woman's Own (adapted) »**.
+Genre : récit de vie / témoignage de presse magazine à la première personne, « adapté » selon
+la mention imprimée. Longueur : **5 paragraphes numérotés** (1 à 5, numéros en magenta),
+≈ 260 mots. Registre : courant, personnel, ton positif.
+
+**Résumé structuré fidèle** (œuvre de presse sous droits — pas de recopie, R-2/R-5) :
+
+- **§1** — La narratrice enseigne la musique aux enfants ; elle est sourde. Née partiellement
+  sourde, elle porte un appareil auditif à chaque oreille. Enfant déjà, elle adorait le piano et
+  le triangle ; excédée par le bruit, sa mère l'a inscrite à des cours de piano.
+- **§2** — Passionnée d'emblée, malgré la difficulté à trouver la bonne hauteur de son ; elle a
+  appris à ne jamais faire de sa surdité une excuse, s'entraînait des heures, et à onze ans a
+  décroché une bourse pour une école de musique.
+- **§3** — Depuis, elle n'a jamais reculé : elle joue du cor d'harmonie, du violon, du piano et
+  de la trompette, et a passé examens et diplômes afin de pouvoir aussi enseigner.
+- **§4** — Elle a travaillé avec des compagnies de théâtre et de danse ; à trente ans, avoir
+  aidé une amie à organiser un concert pour enfants l'a décidée à travailler avec les enfants.
+  Elle a fondé sa propre entreprise, *The Music House for Children*, et donné des cours de piano.
+- **§5** — À trente-six ans, elle emploie trente professeurs de musique et l'entreprise enseigne
+  à près de trois cents enfants dans tout Londres ; elle travaille aussi avec des enfants sourds
+  dans une école spécialisée. Voir ces enfants s'illuminer donne tout son sens à son parcours et
+  lui rappelle le chemin parcouru depuis la petite fille sourde qui martelait le piano.
+
+**Reliefs typographiques du texte** (ce sont les items exploités plus loin) :
+- en **gras magenta** : *fed up* (§1), *hooked* (§2), *pitch* (§2), *set up* (§4),
+  *worthwhile* (§5), *light up* (§5) ;
+- en **gras noir souligné** : *used to work* (§4), *used to bang* (§5) — **c'est le porteur
+  imprimé de la structure de la leçon** ;
+- en *italique* : le nom de l'entreprise, *The Music House for Children*.
+- ⚠️ Coquille imprimée au §4 : « I **set up** my own company.*The Music House for Children* and
+  taught piano lessons. » — point collé au nom, sans espace ni ponctuation cohérente [sic].
+
+##### Exploitation du texte (p.119) — toutes les questions verbatim
+
+- **Activité 1** — consigne verbatim :
+  > « Fill in the table with precise information about the writer. »
+
+  Tableau à cinq colonnes ; seule la première cellule est pré-remplie, les autres sont des
+  lignes de points :
+
+  | Name | age | handicap | occupation | instruments played |
+  | --- | --- | --- | --- | --- |
+  | Emma Hutchinson | …………… | ………........…… | ………........…… | ……...........……..……… |
+
+  Corrigé : réponse non imprimée.
+
+- **Activité 2** — consigne verbatim :
+  > « Say whether the following statements are true or false and justify with precise details
+  > from the text. »
+
+  Quatre affirmations à puce, verbatim :
+  - « Emma has been fond of music since she was a child. »
+  - « Her mother discouraged her from playing music. »
+  - « Emma found it very easy to learn music. »
+  - « She works with deaf children only. »
+
+  Matériel : petite illustration (dessin stylisé) d'une personne jouant du violoncelle, sans
+  légende.
+
+  Corrigé : réponse non imprimée.
+
+- **Activité 3** — consigne verbatim :
+  > « Complete the table with reference to the text. »
+
+  Tableau à deux colonnes ; les âges sont pré-imprimés, la colonne de droite est vide (lignes
+  de points) :
+
+  | Emma's age | Corresponding achievements |
+  | --- | --- |
+  | 11 | …………………………………………………… |
+  | 30 | …………………………………………………… |
+  | 36 | …………………………………………………… |
+
+  Matériel : petite illustration (dessin) de trois enfants jouant de la flûte, sans légende.
+
+  Corrigé : réponse non imprimée.
+
+- **Activité 4** — consigne verbatim :
+  > « Match words or expressions from column A with their meanings in column B.
+  > (There's one extra item in B.) »
+
+  Tableau d'appariement, **six** items en A et **sept** en B (l'intrus annoncé) :
+
+  | A | B |
+  | --- | --- |
+  | 1- Fed up (par.1) | a- musical note/ tune. |
+  | 2- Hooked (par.2) | b- important/ rewarding enough. |
+  | 3- Pitch (par.2) | c- make bright and lively. |
+  | 4- Set up (par.4) | d- tired and bored. |
+  | 5- Worthwhile (par.5) | e- found/establish. |
+  | 6- Light up (par.5) | f- very keen and absorbed. |
+  |  | g- profoundly deaf  *(sans point final [sic])* |
+
+  Corrigé : réponse non imprimée.
+
+- **Activité 5** — consigne verbatim (le proverbe est imprimé en italique entre guillemets) :
+  > « Emma strongly believes in the following proverb: *"Where there's a will, there's a way"*
+  > Do you share the same view? Justify. »
+
+  *(Pas de ponctuation entre la citation et la question suivante [sic].)*
+
+  Corrigé : réponse non imprimée.
+
+##### 6 LANGUAGE PRACTICE (p.119–120)
+
+Bloc numéroté **6**, titré **« LANGUAGE PRACTICE »**, à l'intérieur du Stage Two, découpé en
+six sous-activités a- à f-.
+
+- **6.a-** — consigne verbatim :
+  > « Focus on the underlined part in the 2 sentences below. »
+
+  Deux phrases-supports, précédées d'un « + » imprimé, segment souligné :
+  - « + I <u>used to work</u> with drama and dance companies. »
+  - « + That little boy who <u>used to bang</u> the piano so tunelessly. »
+
+  ⚠️ La seconde phrase est **modifiée par rapport au texte** (le texte imprime « that little
+  deaf **girl** who used to bang the piano so tunelessly », §5) : ici « That little **boy** »,
+  et la phrase est une proposition relative sans principale [sic].
+
+- **6.b-** — consigne verbatim : « What's it made of? »
+- **6.c-** — consigne verbatim : « Guess the function. »
+- **6.d-** — consigne verbatim : « Give examples of your own. »
+
+  Corrigés : réponses non imprimées.
+
+- **6.e-** (p.120) — consigne verbatim :
+  > « Supply the correct tense and / or form of the bracketed verbs. Use "used to" where
+  > necessary. »
+
+  Texte à trous imprimé (un seul paragraphe, ≈ 90 mots, sujet : les caravanes de chameaux
+  comme moyen de transport). Verbatim du support à trous — il porte la structure étudiée et
+  se transcrit intégralement :
+
+  > « Many years ago, camels used to be the only form of transportation. Modern trains (not use
+  > to)……….exist; camel trains (to carry)……all the goods for trading between Central Africa and
+  > Europe. Traders sometimes (to put)….together camel trains with 10000 to 15000 animals. Each
+  > animal often (to carry)…as much as 400 pounds, and it could (to travel)…twenty miles a day.
+  > This form of transportation (to be)…so important that camels (to call)… the "ships of the
+  > desert." »
+
+  *(Sept trous. Nombres imprimés en chiffres latins : 10000, 15000, 400. La forme « (not use
+  to) » est imprimée ainsi, sans « d » [sic].)*
+
+  Corrigé : réponse non imprimée.
+
+- **6.f-** (p.120) — consigne verbatim :
+  > « With your teacher complete the table below. »
+
+  **ENCADRÉ DE RÈGLE À COMPLÉTER PAR L'ÉLÈVE** — seule la colonne « Structure » est remplie ;
+  « Function » et « Examples » sont des lignes de points :
+
+  | Structure | Function | Examples |
+  | --- | --- | --- |
+  | Used to + infinitive | ……………………………… | ……………………………… |
+
+  ⚠️ Comme pour la règle de prononciation de la L21, la formulation est **explicitement
+  déléguée à l'enseignant** ; le manuel n'imprime **aucune** définition de la valeur de
+  « used to ».
+
+##### Stage Three : Writing (p.120)
+
+Bandeau **« Stage Three : »**, sous-titre encadré **« Writing »**.
+
+**Tâche d'écriture 1 — l'interview** (consigne verbatim, en gras, l'italique reproduit) :
+> « Emma Hutchinson's company *"The Music House for Children"* has proved to be very successful.
+> A journalist met Emma and had an interview with her.
+> Imagine the interview.
+> The following hints may help you.
+> (interest - childhood - education-qualification - career - success.) »
+
+*(Les « hints » sont imprimés entre parenthèses, séparés par des tirets ; « education-
+qualification » est coupé par la fin de ligne — l'énumération compte donc soit 6, soit 5 items
+selon qu'on lit « education » et « qualification » séparément ou non. Illisible à lever : le
+manuel n'imprime pas de tiret séparateur clair entre les deux. Voir § Incertitudes.)*
+
+Matériel : photo couleur d'un jeune garçon jouant du violon. Légende imprimée en gras :
+**« A young violonist »** *[sic — orthographe française « violonist » au lieu de « violinist »]*.
+
+Corrigé : réponse non imprimée.
+
+##### Le career research project — ce que le manuel en imprime
+
+Le manuel imprime, **sur la seule page 120**, en dessous de la tâche d'interview et sans
+bandeau de stage propre :
+
+> **CAREER RESEARCH PROJECT**
+>
+> **Step1 :  Your Ideal Job.**
+>
+> **Describe your ideal job by writing a narrative report. Make sure you include all the ideas
+> listed below.**
+>
+> – What type of work would you do all day?
+> – Kind of work environment; indoors, outdoors or both.
+> – Working with people or alone.
+> – Working with your hands, head or both.
+> – Earnings potential.
+> – What qualities do you have to succeed in this career?
+> – How do you know you could do this type of work?
+
+*(Verbatim intégral. « Step1 » est imprimé sans espace avant le chiffre [sic], suivi d'un
+espace puis « : ». Les sept items sont introduits par un tiret demi-cadratin, pas une puce.)*
+
+**Ce que le manuel n'imprime PAS sur ce projet, sur les pages 112–120 :**
+- aucune **grille d'évaluation** ni barème ;
+- aucune **annonce du nombre total d'étapes** ni de la répartition sur les leçons suivantes —
+  la page n'écrit que « Step1 », sans « Step 1 of 4 » ni renvoi vers les leçons 23, 25, 27 ;
+- aucune **consigne de format** (longueur, support, individuel/groupe, délai) ;
+- aucune **introduction** du projet : le titre « CAREER RESEARCH PROJECT » apparaît sans phrase
+  de présentation, directement après la tâche d'interview ;
+- aucun **rappel de conservation** du travail (contrairement à la L20, p.114, qui demande de
+  garder le paragraphe corrigé « in a file for future uses » — c'est le seul indice imprimé,
+  dans tout le chapitre, d'un travail à capitaliser).
+
+**Encadrés de la L22 — bilan** : **un** encadré de règle, mais **à compléter par l'élève avec
+l'enseignant** (le tableau *Structure / Function / Examples* de la p.120, dont seule la case
+« Used to + infinitive » est imprimée). **Aucun** encadré de règle rempli, **aucune** liste de
+vocabulaire en boîte (le lexique est travaillé par appariement, activité 4 p.119).
+
+---
+
+#### Écarts constatés — chapitre 08
+
+1. **L22 — le career project n'est PAS l'écriture d'une interview.** La lettre de mission
+   annonçait « la première [étape] est ici (L22, écriture d'une interview) ». Le manuel imprime
+   **deux tâches distinctes** sur la p.120 : d'abord une tâche d'écriture d'interview
+   (« Imagine the interview »), **puis**, séparément et sous son propre titre,
+   « CAREER RESEARCH PROJECT — Step1 : Your Ideal Job », qui demande **un rapport narratif sur
+   son métier idéal**, avec sept points à couvrir. L'interview et le Step 1 sont deux exercices
+   différents.
+2. **Le manuel n'annonce nulle part que le projet compte quatre étapes** ni sur quelles leçons
+   elles se répartissent. Rien, p.112–120, ne relie « Step1 » à une suite. L'information
+   « 4 étapes sur les leçons 22, 23, 25 et 27 » vient du **guide**, pas du manuel élève.
+3. **L20 — la structure du regret n'est jamais énoncée.** Le guide annonce
+   `should + have + participe passé`. Le manuel se borne à **mettre en gras magenta**
+   « should have been mine » dans le texte (p.112). **Aucun encadré, aucune règle, aucun
+   exercice de langue** ne reprend cette structure dans les p.112–114 : la L20 n'a **ni bloc
+   LANGUAGE PRACTICE, ni GRAMMAR SUMMARY, ni PRONUNCIATION**. C'est la leçon la plus dépouillée
+   des trois.
+4. **L20 — le « Stage Three : Writing » est orphelin.** Il demande d'écrire « your final
+   paragraph » et de le relire « one more time », alors qu'aucune tâche d'écriture n'a été
+   posée dans la leçon (ni sujet, ni consigne, ni brouillon préalable). Les deux tiers inférieurs
+   de la p.114 sont blancs. Le renvoi implicite est probablement à un travail conduit hors du
+   manuel — le manuel ne le dit pas.
+5. **L21 — écart partiel sur les formes annoncées.** Le guide annonce
+   `to + infinitif / in order to / so that`. Le manuel **confirme les trois** (p.116 phrases
+   d'appui, p.117 GRAMMAR SUMMARY). En revanche il ne dit **jamais explicitement** que la valeur
+   est le but : la question 2.b- pose le choix « a purpose / a request / or a deduction » sans
+   corrigé, et le tableau ne l'écrit que dans le libellé « So that + Clauses of purpose ». La
+   ligne « To + Verb » et la ligne « In order to + Verb » n'ont **aucune mention de fonction**.
+6. **L21 — un stage sans compétence.** Le bandeau « Stage Three : » de la p.116 est le seul du
+   chapitre imprimé **sans sous-titre** (pas de « Writing », « Language », etc.), alors que les
+   six autres stages du chapitre en portent un. Il n'y a donc **pas de stage d'écriture dans la
+   L21** : la leçon s'arrête sur le mots croisés « The Lighter Side ».
+7. **L22 — la structure annoncée est confirmée, mais jamais définie.** Le guide annonce
+   `used to + infinitif` (habitude passée). Le manuel l'imprime bien (soulignements dans le
+   texte p.118, activité 6.a- p.119, exercice 6.e- p.120, tableau 6.f- p.120), mais le tableau
+   qui devrait porter la fonction est **imprimé vide** dans ses colonnes *Function* et
+   *Examples* : la valeur « habitude passée » n'est **écrite nulle part** dans le manuel élève.
+8. **L22 — la phrase-support 6.a- ne correspond pas au texte.** Le manuel écrit « That little
+   **boy** who used to bang the piano », alors que le §5 du texte dit « that little deaf
+   **girl** ». La phrase isolée est en outre une relative sans principale.
+9. **Aucun corrigé n'est imprimé** nulle part dans les pages 112–120. Ce manuel est un cahier
+   d'activités élève ; toutes les réponses relèvent du guide de l'enseignant.
+10. **Aucune liste de vocabulaire structurée** (au sens d'un lexique thématique en fin de leçon)
+    dans les trois leçons. Le seul encadré lexical est la boîte de mots de prononciation
+    (p.116), qui n'est pas thématique.
+11. **Incohérence de graphie dans le texte de la L20** : le fils est nommé « Donavan » au §1
+    puis « Donovan » aux §2 à 6 (p.112–113).
+12. **Le thème « Professional Life » n'est pas imprimé** dans les pages 112–120. Aucune page de
+    garde de thème n'ouvre le chapitre à la p.112 : la p.112 démarre directement sur
+    « LESSON 20 ». L'intitulé « Thème VIII — Professional Life » vient du programme/guide, pas
+    de ces pages.
+
+#### Incertitudes — chapitre 08
+
+- **p.120, hints de l'interview** : « (interest - childhood - education-qualification - career -
+  success.) ». Vérifié à 300 dpi : tous les autres séparateurs sont imprimés « espace tiret
+  espace », **celui-ci est collé** (« education- » en fin de ligne, « qualification » au début
+  de la suivante). La lecture littérale donne donc **cinq** hints, « education-qualification »
+  formant un seul item composé ; mais la coupure de ligne empêche d'exclure absolument une
+  césure du séparateur (six hints). Rendu tel quel ci-dessus, sans arbitrage.
+- **p.116, activité 2** : les tirets « It's a lot of **sc…….**       . » et
+  « It's very **comp…….**   . » comportent un blanc typographique avant un point final isolé.
+  Vérifié à 300 dpi : ce sont bien des espaces vides imprimés, pas des points effacés. Le nombre
+  exact de points de suspension (7 pour *sc*, 7 pour *comp*, 8 pour *a*, 7 pour *int*, 4 pour
+  *emb*, 4 pour *w*) a été compté au rendu 300 dpi mais reste à ± 1 point sur les séries de 7 et
+  8, les points étant très serrés.
+- **p.117, mots croisés** : la grille a été décrite (numéros 1 à 11, cases pleines/vides) mais
+  ses dimensions exactes ne sont pas certifiables au rendu 150 dpi (≈ 10 colonnes × 12 lignes).
+  Aucune lettre n'est pré-imprimée, donc rien de verbatim n'y manque.
+- **p.116, en-têtes du tableau de prononciation** : imprimés « [ S ] », « [ Z ] », « [ IZ ] » en
+  **capitales latines**, pas en alphabet phonétique. C'est bien ce que le manuel imprime
+  (vérifié à 300 dpi), pas une limite du rendu.
+
+#### Pages réellement lues — chapitre 08
+
+- **p.112** — 150 dpi. L20, Stage One (Pre-Reading, act. 1–2), Stage Two (Reading, texte §1–4).
+- **p.113** — 150 dpi. L20, fin du texte (§5–6) + source, exploitation act. 1–4.
+- **p.114** — 150 dpi. L20, act. 5, Stage Three (Writing). Bas de page blanc.
+- **p.115** — 150 dpi. L21, Stage One (Speaking a-/b-), Stage Two (Listening, act. 1
+  Sections 1 et 2).
+- **p.116** — 150 dpi **+ 300 dpi** (3 bandes recadrées : act. 2, PRONUNCIATION, LANGUAGE
+  PRACTICE). L21, Section 3, act. 2, Stage Three (1 PRONUNCIATION, 2 LANGUAGE PRACTICE a-).
+- **p.117** — 150 dpi. L21, act. 2.b-, 2.c- GRAMMAR SUMMARY, « The Lighter Side » (mots croisés).
+- **p.118** — 150 dpi. L22, Stage One (Pre-Reading a-/b-), Stage Two (Reading, texte §1–5 +
+  source).
+- **p.119** — 150 dpi. L22, exploitation act. 1–5, bloc 6 LANGUAGE PRACTICE a- à d-.
+- **p.120** — 150 dpi **+ 300 dpi** (3 bandes recadrées : 6.e-, 6.f-, Stage Three). L22, act.
+  6.e-/6.f-, Stage Three (Writing : interview + CAREER RESEARCH PROJECT Step1).
+
+**Pages restantes : aucune.** Le périmètre p.112–120 est couvert intégralement. La p.121
+(nouvelle leçon, thème « Arts ») n'a pas été ouverte, conformément à la consigne.
+
+---
+
+### Chapitre 09 — `09-media-and-arts` (Thème IX — Media and Arts · manuel p.125–132)
+
+> Source : manuel élève CNP « Perform to Learn — Second Year Secondary Education — Student's Book »
+> (`241203P00`), pages imprimées 125 à 132. Transcription fidèle, aucune génération.
+> ⚠️ Le manuel n'imprime **aucun titre de thème** (« Theme IX » / « Media and Arts ») sur les
+> pages 125–132 : les têtes de page portent seulement `LESSON 23` / `LESSON 24` + le titre de leçon.
+> Le rattachement au thème IX vient du guide, pas de ces pages. *(Voir « Écarts constatés ».)*
+
+---
+
+#### L23 — The importance of libraries (manuel p.125–128)
+
+Tête de page 125 : bandeau bleu `LESSON 23` puis, en magenta, **« The importance of libraries »**.
+
+La leçon est organisée en **stages** numérotés, chacun avec un sous-titre de compétence :
+- **Stage One : Pre-Reading** (p.125)
+- **Stage Two : Reading** (p.125–127)
+- *(suite ci-dessous, voir p.127–128)*
+
+---
+
+##### Stage One : Pre-Reading (p.125)
+
+**Activité 1** — *stage* : Stage One / Pre-Reading.
+Consigne verbatim : « **Complete the following diagram with words related to libraries.** »
+
+Matériel : un **diagramme en toile d'araignée** (word web). Bulle centrale bleu foncé :
+**`Library`**. Dix bulles satellites en bleu clair reliées par des traits magenta ; une seule est
+remplie, les neuf autres ne donnent que **l'amorce de la première ou des deux/trois premières
+lettres** suivie de pointillés (l'élève complète). Dans l'ordre de lecture imprimé, en partant du
+haut et en tournant :
+
+| Bulle | Texte imprimé |
+| --- | --- |
+| haut (centre) | `Books` *(seule bulle complète)* |
+| haut-droite | `M...........` |
+| droite-haut | `N...........` |
+| droite-bas | `Ma...........` |
+| bas-droite | `At...........` |
+| bas (centre) | `Enc...........` |
+| bas-gauche | `V...........` |
+| gauche-bas | `Jo...........` |
+| gauche-haut | `Ca...........` |
+| haut-gauche | `D...........` |
+
+Réponses **non imprimées** (amorces seules).
+
+**Activité 2** — *stage* : Stage One / Pre-Reading.
+Consigne verbatim : « **Answer the following questions.** »
+
+Questions verbatim :
+- « a- How often do you go to the library? »
+- « b- How many books do you read »
+  - « – every week? »
+  - « – every month? »
+  - « – every year? »
+- « c- What type of books do you like to read? »
+- « d- Do you usually find them in the library? »
+
+Réponses non imprimées (questions personnelles ouvertes).
+
+---
+
+##### Stage Two : Reading (p.125–127)
+
+Consigne d'entrée verbatim (p.125) : « **Read the text, and then do the activities below.** »
+
+###### Texte de lecture (p.125–126)
+
+- **Titre imprimé** : « The importance of libraries » (magenta, centré).
+- **Source imprimée** : mention d'auteur en fin de texte, en gras et alignée à droite (p.126) :
+  « **By Honorable Lois E. Hole** ». Aucun autre crédit (pas de site, pas de date, pas d'éditeur).
+- **Genre** : texte **argumentatif** — plaidoyer / discours en faveur des bibliothèques, écrit à la
+  première personne (« according to me », « I think we owe it… », « If I could give young people… »).
+  L'activité 1 de la p.126 fait d'ailleurs identifier ce genre.
+- **Longueur** : **5 paragraphes numérotés `1` à `5`** en gros chiffre magenta, environ 340 mots ;
+  il court du bas de la p.125 (paragraphe 1) au haut de la p.126 (paragraphes 2 à 5).
+- **Registre** : soutenu, oratoire, marqué par les tournures d'un discours public
+  (« the heroes of civilization », « let's pay tribute to »), avec des formes contractées
+  (« you've got to », « doesn't ») qui gardent un ton parlé.
+
+**Résumé structuré fidèle** (aucun recopiage) :
+
+1. **§1** — Les bibliothécaires et ceux qui soutiennent les bibliothèques sont présentés comme les
+   héros de la civilisation : discrètement, ils entretiennent l'une de ses grandes traditions,
+   le rassemblement de l'expérience humaine. À ce titre les bibliothèques sont, et resteront, les
+   moteurs du progrès de la civilisation.
+2. **§2** — Sans bibliothèques ce progrès serait impossible, surtout à l'époque moderne : nous en
+   dépendons tous, elles nous donnent accès aux pensées et aux actes d'autrui, et de là un pouvoir
+   remarquable de changer, de grandir et de mieux faire.
+3. **§3** — Les bons films et les bonnes émissions de télévision ont leur place, mais comprendre une
+   question en profondeur oblige à revenir aux livres. Et comme les livres coûtent cher aujourd'hui,
+   les bibliothèques sont devenues essentielles pour que la lecture ne devienne pas un loisir de riches.
+4. **§4** — Les livres sont le sang de la bibliothèque : ils éclairent le monde et encouragent
+   l'expansion de la culture. D'où un devoir envers nous-mêmes et les générations futures — servir les
+   autres en maintenant vivantes l'instruction et l'alphabétisation. L'avenir du pays dépend d'une
+   population lettrée, et cet objectif suppose un soutien fort aux écoles publiques, aux universités
+   et aux bibliothèques publiques.
+5. **§5** — Si l'auteure pouvait offrir un cadeau de valeur aux jeunes, ce serait une bonne éducation,
+   riche en littérature, sciences, mathématiques, histoire, artisanat, sport et beaux-arts — une
+   éducation sans pénurie d'excellents enseignants et pourvue des meilleurs livres du monde. Elle cite
+   alors, entre guillemets, l'adage du **« the more…, the more… »** (voir plus bas, § Contrôle croisé)
+   puis conclut par un appel à rendre hommage aux enseignants et à prendre soin des bibliothèques.
+
+⚠️ **Point de contrôle croisé — le « parallel increase » est bien présent, mais DANS LE TEXTE, pas
+dans un encadré de règle.** Le §5 imprime la citation :
+> « the more you read, the more you know.  The more you know, the smarter you grow…. »
+
+(reproduite ici parce qu'elle est **l'objet grammatical de la leçon** et qu'elle tient en une ligne ;
+le double espace après « know. » est **tel qu'imprimé** [sic], de même que les quatre points de
+suspension finaux). C'est la **seule** occurrence de la structure `the more…, the more…` sur les
+pages 125–128 : **aucune règle, aucun encadré, aucun exercice** ne la reprend. *(Voir « Écarts ».)*
+
+###### Activités d'exploitation du texte (p.126–127)
+
+**Activité 1** (p.126) — *stage* : Stage Two / Reading.
+Consigne verbatim : « **The text is :** »
+Options verbatim, sur une seule ligne : « a- narrative » · « b- descriptive » · « c- argumentative ».
+Réponse non imprimée.
+
+**Activité 2** (p.126) — *stage* : Stage Two / Reading.
+Consigne verbatim : « **Match each of the five paragraphs with its main idea.** »
+Matériel : tableau à deux colonnes, en-têtes magenta sur fond bleu **`Paragraph`** / **`Main idea`**.
+Les paragraphes sont numérotés `1-` à `5-` **dans l'ordre**, les idées `a-` à `e-` sont en face mais
+**délibérément désappariées** (c'est l'exercice) :
+
+| Paragraph | Main idea |
+| --- | --- |
+| 1- | a- Libraries enable poor people to read. |
+| 2- | b- Teachers and libraries are at the core of the educational system. |
+| 3- | c- Librarians keep human experiences. |
+| 4- | d- Libraries are essential for growth and progress. |
+| 5- | e- The future of any society lies in learning. |
+
+Aucune case n'est pré-remplie ; réponse non imprimée.
+
+**Activité 3** (p.126) — *stage* : Stage Two / Reading.
+Consigne verbatim : « **Tick the correct answer(s).** » suivie, en gras sur sa propre ligne, de
+l'amorce : « **To support his argument, the writer uses** »
+Options verbatim :
+- « a- imagination. »
+- « b- reasoning. »
+- « c- quotes. »
+- « d- statistics. »
+
+⚠️ **Coquille signalée** : l'amorce dit « **his** argument » alors que le texte est signé
+**Lois E. Hole** (Honorable Lois E. Hole, femme) et que le §5 est écrit à la première personne — le
+possessif masculin est celui du manuel [sic]. Réponse non imprimée (le pluriel « answer(s) » indique
+plusieurs bonnes réponses attendues).
+
+**Activité 4** (p.127) — *stage* : Stage Two / Reading (suite ; vocabulaire).
+Consigne verbatim : « **Match the words or expressions from the box with their closest meanings.** »
+Matériel : une **boîte** (encadré à bord bleu, fond gris clair) contenant six items numérotés sur une
+seule ligne, **dans l'ordre imprimé** :
+
+> `1- civilization` · `2- lifeblood` · `3- enlighten` · `4-culture` · `5- literacy` · `6- pay tribute`
+
+⚠️ `4-culture` est imprimé **sans espace** après le tiret, contrairement aux cinq autres [sic].
+
+Définitions à apparier, verbatim et dans l'ordre imprimé :
+- « a- explain something to someone. »
+- « b- the state of being able to read and write. »
+- « c- the process in which societies become developed and organized. »
+- « d- the most important thing to continue to exist or develop successfully. »
+- « e- the ideas, beliefs, and customs that are shared and accepted by people in a society. »
+- « f- praise and thank someone publicly. »
+
+Réponse non imprimée.
+
+**Activité 5** (p.127) — *stage* : Stage Two / Reading (réaction personnelle).
+Consigne verbatim : « **Do you share the writer's opinion when he says :** » suivie, en dessous,
+de la citation : « "These days, we all depend on libraries"? »
+
+⚠️ Deux écarts avec le texte source, tous deux **tels qu'imprimés** :
+- « the writer**'s** … when **he** says » — encore le masculin pour Lois E. Hole [sic] ;
+- la citation dit « depend **on** libraries » alors que le §2 du texte, p.126, imprime
+  « we all depend **upon** libraries » [sic].
+
+Réponse non imprimée (question d'opinion).
+
+---
+
+##### Stage Three : Language Practice (p.127)
+
+**Activité 1** (p.127) — *stage* : Stage Three / Language Practice.
+Consigne verbatim : « **Focus on the underlined words of the following sentence.** »
+Phrase support imprimée en dessous : « The more you read, the more you know. »
+⚠️ Le manuel annonce des mots « underlined » mais **aucun soulignement n'est visible** dans la phrase
+imprimée (vérifié à 300 dpi) [sic].
+
+Sous-questions verbatim :
+- « a- The pattern "the more ………,   the more ………" indicates : »
+  - « – 2 superlatives. »
+  - « – 2 comparative constructions. »
+  - « – a comparative of equality. »
+- « b- What do we call this type of structure ? » *(espace avant le point d'interrogation, tel qu'imprimé)*
+
+Réponses non imprimées.
+
+**Activité 2** (p.127) — *stage* : Stage Three / Language Practice.
+Consigne verbatim : « **Put the words in brackets in the comparative form.** »
+Items verbatim, dans l'ordre imprimé :
+
+- « a- The (much) I study, the (much) I know.
+  The (much) I know, the (much) I forget.
+  The (much) I forget, the (little) I know.
+  So, *why study?* » *(« why study? » en italique dans le manuel)*
+- « b- b- The (many) books you read, the (many) ideas you have.
+  The (many) ideas you have, the (much) understanding you become. »
+
+⚠️ **Deux coquilles** vérifiées à 300 dpi : le repère « **b-** » est imprimé **deux fois** au début de
+l'item b [sic] ; et « the (much) understanding you **become** » (au lieu de *have* / *get*) est bien ce
+qu'imprime le manuel [sic]. Réponses non imprimées.
+
+**Activité 3** (p.127) — *stage* : Stage Three / Language Practice.
+Consigne verbatim : « **Complete the table. Ask your teacher for help.** »
+
+C'est l'**encadré de règle de la leçon** — et il est imprimé **quasiment vide** : seuls les trois
+en-têtes et le nom du degré de comparaison sont donnés, les deux cellules à droite ne contiennent
+que des pointillés à compléter par l'élève.
+
+| degree of comparison | structure | meaning |
+| --- | --- | --- |
+| Parallel change | …………………………… | …………………………… |
+
+⚠️ **Aucune règle explicite du « parallel increase » n'est imprimée nulle part dans L23.** Le manuel
+nomme la notion (« Parallel change ») et renvoie l'élève à l'enseignant. Réponse non imprimée.
+
+---
+
+##### Words of wisdom (p.128)
+
+Encadré (sans cadre, simple titre en gras **« Words of wisdom »** suivi de quatre puces magenta) —
+aphorismes, verbatim et dans l'ordre imprimé :
+
+- « When you're arguing with a fool, make sure he isn't doing the same thing. »
+- « Talk is cheap because supply exceeds demand. »
+- « Even a fish wouldn't get into trouble if he kept his mouth shut. »
+- « Teaching children how to count is fine but teaching them what counts is even better. »
+
+**Source imprimée**, en gras et alignée à droite : « **www.developingteachers.com** »
+
+Aucune consigne, aucune question, aucun exercice n'accompagne cet encadré : il est purement
+illustratif / culturel.
+
+---
+
+##### Career research project — étape 2, ce que le manuel en imprime
+
+Sur la **p.128**, sous le titre en gras **« CAREER RESEARCH PROJECT »**, puis le sous-titre
+**« Step 2 : »**. C'est **tout** ce que le manuel imprime du projet dans cette tranche (p.125–132) :
+un paragraphe de cadrage, une phrase d'amorce et quatre puces. **Il n'y a ni grille, ni tableau, ni
+fiche d'interview, ni modèle de questions, ni critères d'évaluation** — et **aucun renvoi de page**
+vers l'étape 1 ou l'étape 3.
+
+**Paragraphe de cadrage, verbatim** :
+
+> « You can get a lot of information about the world of work from people in various occupations.
+> Identify employed individuals who may be able to supply you with current, comprehensive information
+> about your ideal job. Begin with those persons most easily accessible to you; your family, friends,
+> school, and or other resources. »
+
+⚠️ « school, **and or** other resources » est imprimé ainsi, sans barre oblique [sic].
+
+**Phrase d'amorce, verbatim** : « Before you meet for the interview remember to: »
+*(pas de virgule après « interview », tel qu'imprimé)*
+
+**Les quatre consignes, verbatim et dans l'ordre imprimé** :
+
+- « Learn as much as you can about the field of work and the person you will be interviewing. »
+- « Prepare a list of questions you want to ask. »
+- « Be prepared to take notes during the interview. »
+- « Express interest and appreciation. »
+
+Le reste de la p.128 est **blanc** (environ les deux tiers inférieurs de la page). Aucun corrigé,
+aucune réponse imprimée.
+
+**Lecture d'ensemble** : l'étape 2 du projet est l'**étape « entretien »** — identifier des personnes
+en poste dans le métier visé, en commençant par l'entourage accessible, et **préparer** l'entretien
+(se documenter, écrire ses questions, prévoir de prendre des notes, remercier). Le manuel décrit la
+**préparation** de l'interview, pas sa conduite ni son exploitation.
+
+---
+
+#### L24 — Death of the Single (manuel p.129–132)
+
+Tête de page 129 : bandeau bleu `LESSON 24` puis, en magenta, **« Death of the Single »**.
+
+⚠️ **Structure différente de L23.** L24 n'a que **deux bandeaux de stage** — *Stage One : Speaking*
+et *Stage Two : Reading* — et **pas de bandeau « Stage Three »**. Le travail de langue arrive comme
+**l'activité numérotée `6`**, dans la **numérotation continue** des activités du Stage Two, sous un
+titre en petites capitales `LANGUAGE PRACTICE` (et non dans un bandeau de stage).
+
+- **Stage One : Speaking** (p.129) — activités 1 et 2
+- **Stage Two : Reading** (p.129–131) — texte + activités 1 à 6
+- **The Lighter Side** + **Career research project, Step 3** (p.132) — hors stage, non numérotés en
+  continuité (« The Lighter Side » repart à `1` et `2`)
+
+---
+
+##### Stage One : Speaking (p.129)
+
+**Activité 1** — *stage* : Stage One / Speaking.
+Consigne verbatim : « **In pairs discuss the following questions.** »
+Questions verbatim, dans l'ordre imprimé (puces magenta) :
+- « Who is your favourite singer? Why? »
+- « How many hours a week do you listen to music? »
+- « Where and when do you listen to music? »
+- « Do you spend any money on C.Ds ,cassettes and albums? »
+
+⚠️ « C.Ds ,cassettes » : espace **avant** la virgule et pas après, tel qu'imprimé [sic].
+Matériel : illustration en haut à droite — **deux disques compacts** dessinés en doré/orange sur
+fond blanc, sans légende.
+
+Réponses non imprimées (questions personnelles).
+
+**Activité 2** — *stage* : Stage One / Speaking.
+Consigne verbatim : « **Report any differences to the rest of the class.** »
+Aucun support, aucune amorce, aucune réponse imprimée.
+
+---
+
+##### Stage Two : Reading (p.129–131)
+
+⚠️ **Aucune consigne d'entrée n'est imprimée** avant le texte (contrairement à L23 qui imprimait
+« Read the text, and then do the activities below. ») : le bandeau *Stage Two : Reading* est
+immédiatement suivi du titre du texte.
+
+###### Texte de lecture (p.129–130)
+
+- **Titre imprimé** : « Death of the Single » (magenta, centré) — identique au titre de la leçon.
+- **Source imprimée** : en gras, alignée à droite en fin de texte (p.130) :
+  « **www.english-to-go.com** ». Aucun auteur nommé, aucune date de publication.
+- **Genre** : article de presse / texte **informatif et explicatif** à appui chiffré — constat d'un
+  déclin (les ventes de singles) suivi de l'énumération de ses causes. Il inclut une **citation
+  rapportée au style direct** d'un animateur radio (§4).
+- **Longueur** : **5 paragraphes numérotés `1` à `5`** en gros chiffre magenta, environ 400 mots ;
+  §1 à §4 sur la p.129, §5 en haut de la p.130.
+- **Registre** : journalistique courant, britannique (« programmes », « pounds », « £ »), avec
+  images familières (« Another nail in the single's coffin », « boring potential customers to death »).
+
+**Œuvres et personnes tierces nommées dans le texte** (références, telles qu'imprimées, sans
+reproduction d'aucun contenu) : l'émission **Top of the Pops**, la station **Radio One**, l'émission
+de classement **Hit 40 UK**, la chaîne **MTV**, l'artiste **Eminem**, l'animateur **Dr. Fox**.
+**Aucune parole de chanson n'est citée dans la leçon** ; aucun titre de chanson non plus — le texte
+ne nomme que des émissions, des stations et des artistes. *(R-2 : rien à écarter ici.)*
+
+**Résumé structuré fidèle** (aucun recopiage du texte) :
+
+1. **§1** — Les singles furent la passion des adolescents, le premier poste de dépense de leur argent
+   de poche, et des émissions comme *Top of the Pops* ont prospéré sur eux. Mais **plus maintenant** :
+   le single a sans doute fait son temps, tué par internet, MTV et le téléphone portable.
+   *(Le manuel met « **any more** » en gras — voir « Contrôle croisé ».)*
+2. **§2** — Au Royaume-Uni, les ventes de musique baissent régulièrement et les singles sont
+   particulièrement touchés. Le manuel donne trois repères chiffrés, **tels qu'imprimés** :
+   pendant la troisième semaine de janvier 2002, **400.000** singles achetés à travers le
+   Royaume-Uni — la plus mauvaise performance en **35 ans**, et **la moitié** de ce qui s'était vendu
+   la même semaine quatre ans plus tôt ; seulement **10** singles ont dépassé les **10.000**
+   exemplaires, contre **trois fois** ce nombre cinq ans auparavant.
+   *(Séparateur de milliers imprimé par un **point** — `400.000`, `10.000` — [sic].)*
+3. **§3** — La même année, 2002, aux États-Unis, les ventes de musique ont chuté de près de
+   **9 pour cent**. Seule exception : **Eminem**, le rappeur devenu acteur, basé à Detroit — le seul
+   artiste de 2002 à franchir la barre des **5 millions**. Sur l'ensemble du secteur, les ventes
+   totales ont reculé de **8,7 pour cent** depuis 2001, à près de **650 millions** d'unités, soit la
+   **deuxième** baisse annuelle consécutive.
+4. **§4** — **Dr. Fox**, qui anime le classement *Hit 40 UK* le dimanche soir, explique que dans son
+   enfance il n'y avait que *Top of the Pops* et *Radio One* : pour avoir un morceau qu'on aimait il
+   fallait l'acheter, on ne pouvait l'obtenir **nulle part ailleurs** ; aujourd'hui les endroits où
+   écouter sa musique sont innombrables (dix chaînes musicales, trois cents radios pop, ce qui
+   n'existait pas vingt ans plus tôt). Il met aussi en cause le flot ininterrompu d'albums de
+   compilation, dont les maisons de disques sont selon lui seules responsables : presque chaque
+   single sorti se retrouve la même semaine sur une compilation. Il pose la question du prix — payer
+   trois livres pour un titre ou obtenir quarante titres pour un peu plus. Avec des albums CD à
+   **£8.50** contre **£3 à £5** pour un single, la désaffection ne surprend pas. Dernier clou dans le
+   cercueil du single : la vitesse à laquelle les artistes sortent un album après l'entrée du single
+   au classement.
+   *(Le manuel met en gras « **nowhere** », « **something** », « **anywhere** » — voir « Contrôle croisé ».)*
+5. **§5** — Depuis dix ans le monde de la pop est devenu très concurrentiel, et la chute des ventes
+   de singles est la première victime de cette bataille pour la suprématie. Il existe désormais bien
+   plus de façons d'obtenir un morceau que d'acheter le single ou l'album : téléchargement depuis
+   internet, achat comme sonnerie de téléphone, enregistrement depuis MTV. Autre cause du marasme :
+   les radios diffusent les titres jusqu'à **deux mois** avant leur sortie, lassant à mort les
+   acheteurs potentiels avant même que le disque soit en magasin.
+
+###### Encadré « Glossary » (p.130)
+
+Petit encadré nu (pas de cadre, titre en gras et empattements), juste sous la source :
+
+> **Glossary : A single** is a musical record that has only one song on each  side.
+
+*(« **Glossary :** » et « **A single** » en gras ; le double espace dans « each  side » est
+tel qu'imprimé [sic].)* C'est le **seul encadré de vocabulaire** de la leçon, et il ne définit
+qu'un mot.
+
+###### Activités d'exploitation du texte (p.130)
+
+**Activité 1** — *stage* : Stage Two / Reading.
+Consigne verbatim : « **Singles are about to disappear.  Read paragraph 1 and find out the reasons.** »
+*(double espace après « disappear. », tel qu'imprimé)*
+Matériel : trois amorces à compléter sur une seule ligne :
+« a- ……………………………… b- ………………………………c- …………………………… »
+⚠️ Aucune espace n'est imprimée entre la fin des pointillés de `b-` et le repère `c-` [sic].
+Réponse non imprimée.
+
+**Activité 2** — *stage* : Stage Two / Reading.
+Consigne verbatim : « **Are the following statements True or False? Justify with details from the text.** »
+Énoncés verbatim :
+- « a- Nowadays it is easy to get a song.  (      ). »
+- « b- Radio stations never play songs before they are in the market (    ). »
+
+*(Les parenthèses vides sont l'emplacement de la réponse T/F ; leur largeur diffère d'un item à
+l'autre, tel qu'imprimé.)* Réponse non imprimée.
+
+**Activité 3** — *stage* : Stage Two / Reading (vocabulaire en contexte).
+Consigne verbatim : « **Find a word or phrase in the text which, in context, is similar in meaning to :** »
+Items verbatim, dans l'ordre imprimé, chacun suivi de pointillés à compléter et du renvoi de
+paragraphe **entre parenthèses accolées au mot, sans espace** [sic] :
+- « a- victim(par.5)…………………..……………… »
+- « b- great love(par.1)……………………..……… »
+- « c- to accuse(par.4)……………………....…… »
+- « d- rejecting/ refusing(par.4)……......……… »
+- « e- the fall / the drop(par.3)……....………….. »
+
+Matériel : illustration à droite — un **baladeur CD portable** jaune/orange avec ses écouteurs,
+sans légende. Réponse non imprimée.
+
+**Activité 4** — *stage* : Stage Two / Reading.
+Consigne verbatim : « **Read the sentence parts in column A and match them with the correct
+completions in column B.** »
+Matériel : tableau à **trois** colonnes, en-têtes magenta sur fond bleu **`Column A`** /
+**`Column B`** / **`Answers`**. Chaque ligne de la colonne B propose **trois** complétions `a) b) c)`
+parmi lesquelles choisir ; la colonne « Answers » ne contient que le numéro et des pointillés.
+
+| Column A | Column B | Answers |
+| --- | --- | --- |
+| 1/ Different companies are trying to | a) dominate the pop music world.<br>b) share the profits of the pop music industry.<br>c) organise the pop music world. | 1 ………. |
+| 2/ Record companies should blame themselves because they | a) produce too many songs.<br>b) quickly put singles on compilation albums<br>c) no longer care about the quality of singles | 2 ………. |
+| 3/ Compilation albums | a)  are helping to save singles.<br>b)  are not helping to save singles<br>c)  never include singles | 3 ………. |
+
+⚠️ Ponctuation finale **irrégulière**, telle qu'imprimée : dans les lignes 2 et 3, seule l'option
+`a)` porte un point final, `b)` et `c)` n'en ont pas [sic]. Réponse non imprimée.
+
+**Activité 5** — *stage* : Stage Two / Reading (synthèse).
+Consigne verbatim : « **Complete this sentence which summarizes the situation of the music world in
+the USA.** »
+Amorce à trous imprimée en dessous, **avec des tirets** (et non des pointillés), verbatim :
+
+> « --------------------   ------------------------slumped in 2002 in the United States but rap
+> star----------------------was very --------------------. »
+
+⚠️ Les trous sont **collés** aux mots (« star---------- », « ----------slumped ») et le premier trou
+est **double**, tel qu'imprimé [sic]. Réponse non imprimée.
+
+---
+
+##### Activité 6 — LANGUAGE PRACTICE (p.131)
+
+Titre imprimé : chiffre magenta `6` suivi, en petites capitales grasses, de **`LANGUAGE PRACTICE`**.
+Trois sous-activités `a-`, `b-`, `c-`.
+
+**6-a** — Consigne verbatim : « **Read the following sentences, and focus on the underlined parts.** »
+
+Phrases d'observation, verbatim et dans l'ordre imprimé. Le manuel imprime **`some`/`any` en gras**
+et **souligne** le déclencheur (soulignement rendu ici par `_…_`) :
+
+*Premier bloc (`some`) :*
+- « They found **some** _letters_ in the mail box. »
+- « _Did_ you see **some** tall men with long beards_?_ »
+- « _Would_ you like to have **some** coffee_?_ »
+- « _Will_ you carry **some** of these bottles for me, please_?_ »
+
+*Second bloc (`any`), après un blanc :*
+- « The children _don't_ want **any** rice for dinner tonight. »
+- « _Is she_ taking **any** instruction in music this term_?_ »
+- « There was _hardly_ **any** sunshine yesterday. »
+- « _If_ you want to get any coffee, buy it now. »
+- « I _doubt_ that there is **any** coffee in the kettle. »
+- « I _wonder_ whether there are **any** cinemas in this town. »
+- « _Would_ you like to have **any** coffee_?_ »
+
+⚠️ Dans la phrase « If you want to get any coffee », **`any` n'est PAS en gras** alors qu'il l'est
+dans les six autres phrases du bloc [sic] (vérifié à 300 dpi).
+Matériel : illustration à droite — un **disque vinyle** noir stylisé, légendé en gras
+**« A record »**. Aucune réponse imprimée (activité d'observation).
+
+**6-b** — **C'est l'encadré de règle de la leçon**, et il est imprimé **partiellement rempli, à
+compléter par l'élève**.
+Consigne verbatim : « **With your teacher try to complete the following table. (The same rules are
+used with the compounds of some and any: someone, somebody, somewhere, something anyone, anybody,
+anywhere, anything.)** »
+⚠️ « something anyone » : la virgule entre les composés de *some* et ceux de *any* **manque** [sic].
+
+Tableau verbatim (les pointillés sont ceux du manuel ; les cellules laissées **vides** le sont
+également) :
+
+| When do we use any? | When do we use some? |
+| --- | --- |
+| In negative sentences | In positive statements |
+| In interrogative sentences | In questions when……….. |
+| With  …………adverbs | In invitations |
+| After if | in……………………………. |
+| With expressions of……….. | *(vide)* |
+| In questions when………….. | *(vide)* |
+
+⚠️ La colonne `some` a **quatre** lignes remplies ou amorcées et **deux cellules entièrement vides** ;
+« in……………………………. » commence par une **minuscule** contrairement aux autres cellules [sic].
+Réponses non imprimées — le manuel renvoie explicitement à l'enseignant (« With your teacher »).
+
+**6-c** — Consigne verbatim : « **Circle the correct option.** »
+Douze items verbatim, dans l'ordre imprimé (tirets du manuel) :
+
+- « – Are there (some/none/any) people at the shop? »
+- « – There's (no/some/any) coffee left; could you get (any/some) while you're out? »
+- « – I must go to the bank because I haven't got (any/some/no) money left. »
+- « – Would you like to have (any/some) tea? »
+- « – My car stopped because there was (no/any/some) petrol left. »
+- « – You shouldn't take (some/no/any) medicine without reading the instructions first. »
+- « – There's hardly (no/some/any) fax paper left. We need to buy some. »
+- « – Does (someone/anyone/no one) know the answer? »
+- « – Would (anyone/someone) like some more tea? »
+- « – Shouldn't (someone/anyone/no one) ask for help? »
+- « – I doubt whether (anyone: someone: no one) could answer the question. »
+
+⚠️ Le dernier item sépare ses options par des **deux-points** au lieu des barres obliques utilisées
+partout ailleurs [sic]. Réponses non imprimées.
+
+⚠️ Ce compte donne **onze** tirets et non douze : l'item 2 contient **deux** trous sur une même
+ligne. *(Onze lignes, douze choix à faire.)*
+
+---
+
+##### The Lighter Side (p.132)
+
+Titre imprimé en gras : **« The Lighter Side : »**. Deux rubriques numérotées `1` et `2` en magenta —
+la numérotation **repart à 1**, elle ne prolonge pas celle des activités.
+
+**1 — « How to write a limerick »** (titre en gras).
+Texte explicatif verbatim :
+
+> « A limerick is a funny little poem containing five lines. The last words of the first, second and
+> fifth lines rhyme with each other (A), and the last words of the third and fourth lines rhyme with
+> each other (B). Here's an example: »
+
+Puis l'exemple imprimé, un limerick anonyme de cinq vers annoté du schéma de rimes (reproduit ici
+car c'est **l'objet même de l'explication** et qu'aucune source ni auteur n'est revendiqué par le
+manuel) :
+
+> There was an old man from Peru,  (A)
+> Who dreamed he was eating his shoe (A)
+> He woke in the night    (B)
+> With a terrible fright     (B)
+> And found out that it was quite true.(A)
+
+*(Espacements irréguliers et absence de ponctuation en fin des vers 2, 3 et 4 telles qu'imprimées
+[sic].)* Matériel : illustration à droite — **visage de profil d'un homme chauve riant**, bouche
+grande ouverte. **Aucune consigne, aucune activité d'écriture n'accompagne cette rubrique** : le
+manuel explique la forme mais ne demande rien à l'élève.
+
+**2 — « Food for thought : »** (titre en gras). Deux citations, verbatim, chacune avec sa source
+imprimée :
+
+> « To speak and to speak well are two different things. A fool may talk, but a wise man speaks. »
+> — **Benjamin Johnson** *(source en gras, alignée à droite)*
+
+> « Kindness is a language the deaf can hear and the blind can see. »
+> — *Scandinavian proverb* *(source en italique, alignée à droite)*
+
+⚠️ « Benjamin Johnson » est très probablement une coquille du manuel pour le dramaturge
+**Ben Jonson** [sic] — transcrit tel qu'imprimé, sans correction.
+Aucune consigne, aucune question, aucune réponse.
+
+---
+
+##### Career research project — étape 3 (p.132)
+
+⚠️ **Non annoncé dans la commande de tranche** : la **Step 3** du projet est imprimée **ici, dans
+les pages de L24**, et non dans un chapitre ultérieur. Elle est transcrite pour cette raison.
+
+Titre en gras : **« CAREER RESEARCH PROJECT »**, puis **« Step 3 : A sample formal/business letter. »**
+
+**Paragraphe de cadrage, verbatim** :
+
+> « Along with the interview in step 2, you may still need to get more information about your future
+> career. In order to do so, you may use the internet, or/and write directly to the people (company,
+> ministry,……..) you hope to work with. Below is a sample of the letter you will need to write. »
+
+Suit un **modèle de lettre annoté** sous le titre magenta **« Sample formal/business letter »** :
+la lettre est imprimée à gauche, et des **flèches horizontales** partent de chaque bloc vers une
+étiquette explicative à droite. Blocs et étiquettes, verbatim :
+
+| Bloc imprimé (gauche) | Étiquette pointée par la flèche (droite) |
+| --- | --- |
+| Sabry Surgeon<br>854    Yoke Road<br>Elliot, GC    254871 | Your name and address |
+| National Association of Nurses<br>456 Getwell Drive<br>Glenwood, Ill  96000 | Address of the organisation/company….. |
+| March 17, 2005 | The exact date |
+| Sabry Surgeon *(en bas, après « Sincerely, »)* | Your name and signature here |
+
+Corps de la lettre, verbatim (non annoté) :
+
+> « To Whom It May Concern:
+>
+> In our 2nd Secondary English course, we are researching careers. I am very interested in nursing
+> careers and would like more information about the profession. Please send me any information you
+> have available to the above address.
+>
+> Thank you in advance for your attention to this request.
+>
+> Sincerely,
+>
+> Sabry Surgeon »
+
+⚠️ Ni consigne d'écriture, ni grille d'évaluation, ni date de rendu : le manuel **montre** le modèle
+et s'arrête là. Le nom « Sabry Surgeon » et les adresses sont fictifs et imprimés tels quels.
+Aucun corrigé.
+
+---
+
+#### Encadrés de règle / grammaire / vocabulaire — inventaire explicite — chapitre 09
+
+Réponse à la consigne « cherche-les activement et dis explicitement s'il n'y en a pas » :
+
+| Page | Encadré | Nature | État |
+| --- | --- | --- | --- |
+| p.127 | Boîte de vocabulaire de l'activité 4 (L23) | **cadre bleu, fond gris** | rempli — six items à apparier, **support d'exercice**, pas une règle |
+| p.127 | Tableau « degree of comparison / structure / meaning » (activité 3, L23) | **tableau bleu** | ⚠️ **quasi vide** — seul « Parallel change » est donné, les deux autres cellules sont des pointillés ; consigne « **Ask your teacher for help** » |
+| p.128 | « Words of wisdom » (L23) | **nu** (titre gras + puces, sans cadre) | rempli — quatre aphorismes, **culturel**, aucune règle |
+| p.130 | « Glossary » (L24) | **nu** (titre gras, sans cadre) | rempli — **une seule** définition (« A single ») |
+| p.131 | Tableau « When do we use any? / When do we use some? » (activité 6-b, L24) | **tableau bleu** | ⚠️ **partiellement rempli, à compléter** — 4 amorces en pointillés + **2 cellules entièrement vides** ; consigne « **With your teacher try to complete** » |
+| p.132 | « Food for thought » (L24) | **nu** | rempli — deux citations, **culturel** |
+
+**Conclusion nette : sur les huit pages 125–132, le manuel n'imprime AUCUN encadré de règle
+grammaticale complet.** Les deux seuls encadrés qui *portent* la grammaire de la tranche (p.127 pour
+le *parallel change*, p.131 pour *some/any*) sont **imprimés incomplets par construction** et
+renvoient tous les deux explicitement à l'enseignant. La règle n'existe donc nulle part sous forme
+énoncée dans le livre de l'élève : elle est **entièrement à la charge du cours oral**.
+
+---
+
+#### Écarts constatés — chapitre 09
+
+**Par rapport au guide (contrôle croisé demandé)**
+
+1. **L23 — « parallel increase » : ANNONCE CONFIRMÉE, mais sans règle imprimée.** La structure
+   `the more…, the more…` est bien le point de langue de L23 : elle apparaît dans le texte (§5,
+   p.126), fait l'objet de l'activité 1 (identification, p.127) et de l'activité 2 (huit
+   transformations, p.127). ⚠️ **Mais le manuel ne l'appelle jamais « parallel increase »** : le seul
+   nom qu'il imprime est « **Parallel change** » (tableau de l'activité 3, p.127). Et **la règle
+   elle-même n'est pas imprimée** — le tableau censé la porter est vide et renvoie à l'enseignant.
+   *Écart de dénomination + règle absente.*
+2. **L24 — `any / some / no / nobody` : ANNONCE PARTIELLEMENT CONFIRMÉE.** `some` et `any` sont bien
+   le cœur de l'activité 6 (p.131), traités « in interrogative and negative sentences » comme annoncé
+   (le tableau 6-b oppose littéralement « In negative sentences » / « In interrogative sentences » à
+   « In positive statements » / « In questions when… »). `no` est présent dans les options de 6-c
+   (« no/some/any », « no petrol left »). ⚠️ **En revanche `nobody` n'est imprimé NULLE PART dans la
+   tranche.** Le manuel utilise **`no one`** (en deux mots, quatre occurrences en 6-c) et **`none`**
+   (une occurrence), jamais `nobody`. La consigne 6-b liste bien les composés — « someone, somebody,
+   somewhere, something anyone, anybody, anywhere, anything » — donc **`somebody` et `anybody` sont
+   nommés, mais pas `nobody`** : la série négative des composés est absente de la liste.
+   *Écart lexical à ne pas propager tel quel.*
+
+**Par rapport à la commande de tranche**
+
+3. **La Step 3 du career research project est dans mon périmètre.** La commande annonçait l'étape 2
+   en L23 (p.128) — exact — mais la **Step 3** (lettre formelle modèle) est imprimée **p.132**, donc
+   dans les pages de L24. Elle est transcrite ci-dessus. *(Rien n'a été lu au-delà de la p.132 :
+   la p.133 n'a pas été ouverte.)*
+4. **Aucun titre de thème n'est imprimé sur les pages 125–132.** Ni « Theme IX », ni « Media and
+   Arts », ni aucun intercalaire de thème. Les têtes de page ne portent que `LESSON 23` / `LESSON 24`.
+   Le rattachement au chapitre `09-media-and-arts` vient du guide, pas du manuel élève.
+5. **Le lien de L23 avec « Media and Arts » est ténu.** Le texte de L23 porte sur les bibliothèques,
+   la lecture et l'alphabétisation ; il oppose même explicitement les livres aux films et à la
+   télévision (§3). Seule L24 (industrie du disque, radio, MTV, internet) relève clairement du
+   thème média.
+
+**Structure interne (écart entre les deux leçons)**
+
+6. **L23 a trois bandeaux de stage** (One : Pre-Reading / Two : Reading / Three : Language Practice)
+   et **renumérote les activités à `1` à chaque stage**. **L24 n'a que deux bandeaux** (One : Speaking
+   / Two : Reading), **numérote en continu de `1` à `6`**, et loge la langue dans l'activité `6` sous
+   un simple titre `LANGUAGE PRACTICE`. Deux mises en page différentes pour un même chapitre.
+7. **Aucun corrigé n'est imprimé dans la tranche.** Sur les **20 activités** relevées (9 en L23,
+   11 sous-activités en L24), **aucune** ne porte de réponse ; les deux tableaux de règle sont vides.
+   Le livre de l'élève ne contient ni clé ni exemple résolu sur ces huit pages.
+8. **Densité très inégale.** La p.128 est **blanche aux deux tiers inférieurs** ; la p.131 porte à
+   elle seule trois sous-activités et le tableau de règle.
+
+**Coquilles du manuel relevées (toutes marquées `[sic]` à leur place)**
+
+9. p.126 activité 3 et p.127 activité 5 : « **his** argument », « when **he** says » — le texte est
+   signé **Lois E. Hole**, une femme (titre « Honorable »), et rédigé à la première personne.
+10. p.127 activité 5 : la citation dit « depend **on** libraries », le texte source (p.126) imprime
+    « depend **upon** libraries ».
+11. p.127 activité 1 : le manuel dit « the **underlined** words » mais **rien n'est souligné** dans la
+    phrase support (vérifié à 300 dpi).
+12. p.127 activité 2 : le repère « **b-** » est imprimé **deux fois** ; « the (much) understanding you
+    **become** » (au lieu de *have*/*get*).
+13. p.127 activité 4 : « **4-culture** » sans espace, contre « 1- civilization » etc. pour les cinq
+    autres.
+14. p.128 : « school, **and or** other resources » (sans barre oblique).
+15. p.129 §1 : « succeeded on them **.But** not any more. » — espace avant le point, aucune après.
+16. p.129 §2 : séparateurs de milliers par **point** — « 400.000 », « 10.000 ».
+17. p.129 activité 1 : « C.Ds **,cassettes** » — espace avant la virgule, pas après.
+18. p.130 activité 1 : `b-` et `c-` **collés**, sans espace entre les pointillés et le repère suivant.
+19. p.130 activité 4 : ponctuation finale incohérente (seuls les `a)` des lignes 2 et 3 ont un point).
+20. p.131 activité 6-a : « If you want to get **any** coffee » — `any` **non gras**, contrairement aux
+    six autres phrases du bloc.
+21. p.131 activité 6-b : « something **anyone** » — virgule manquante entre les deux séries de composés.
+22. p.131 activité 6-c : dernier item ponctué par des **deux-points** (« anyone: someone: no one »)
+    au lieu des barres obliques employées partout ailleurs.
+23. p.132 : « **Benjamin Johnson** » — très probablement le dramaturge **Ben Jonson**.
+
+---
+
+#### Incertitudes — chapitre 09
+
+**Aucune zone illisible, aucun `[?]` posé.** Les huit pages sont des rendus vectoriels nets (pas des
+scans) ; toutes les chaînes de caractères ont été lues sans ambiguïté.
+
+Trois points ont été **relevés puis levés** par un re-rendu à **300 dpi** :
+
+- p.127 — la duplication « b- b- » de l'activité 2 : **confirmée**, c'est bien le manuel.
+- p.127 — le tableau « Parallel change » : **confirmé vide** (deux cellules de pointillés, aucun texte
+  effacé par la compression).
+- p.131 — le tableau `any`/`some` : **confirmé** — les deux dernières cellules de la colonne `some`
+  sont bien **entièrement vides**, ce n'est pas un artefact de rendu ; et `any` de la ligne « If you
+  want to get any coffee » est bien **non gras**.
+
+Deux réserves de **jugement** (pas de lecture), signalées comme telles ci-dessus :
+
+- Le comptage de mots des deux textes de lecture (~340 et ~400) est une **estimation**, le manuel ne
+  l'imprime pas.
+- « Benjamin Johnson » et l'auteur du limerick : le manuel n'imprime aucune source vérifiable ; la
+  remarque sur Ben Jonson est une **hypothèse signalée**, pas une correction appliquée.
+
+---
+
+#### Pages réellement lues — chapitre 09
+
+| Page | Contenu | Rendu |
+| --- | --- | --- |
+| **125** | L23 — en-tête, Stage One (act. 1–2), Stage Two ouverture + §1 du texte | 150 dpi |
+| **126** | L23 — §2 à §5 du texte + auteur, act. 1–3 | 150 dpi |
+| **127** | L23 — act. 4–5, Stage Three (act. 1–3 + tableau « Parallel change ») | 150 dpi **puis 300 dpi** |
+| **128** | L23 — « Words of wisdom », CAREER RESEARCH PROJECT Step 2 ; bas de page blanc | 150 dpi |
+| **129** | L24 — en-tête, Stage One (act. 1–2), Stage Two + §1 à §4 du texte | 150 dpi |
+| **130** | L24 — §5 + source, « Glossary », act. 1–5 | 150 dpi **puis 300 dpi** |
+| **131** | L24 — act. 6 LANGUAGE PRACTICE (6-a, 6-b tableau, 6-c) | 150 dpi **puis 300 dpi** |
+| **132** | L24 — « The Lighter Side » (1–2), CAREER RESEARCH PROJECT Step 3 + lettre modèle | 150 dpi |
+
+**Périmètre respecté : 8 pages sur 8 (125→132), aucune autre page ouverte.** La p.133 (leçon
+« Arts ») n'a **pas** été rendue ni lue, conformément à la consigne. Aucun autre PDF consulté.
+
+⚠️ **Effet de bord sur le dossier partagé `_render`** : les pages **127, 130 et 131** de
+`241203P00` y sont désormais en **300 dpi** (fichiers plus lourds) au lieu des 150 dpi d'origine ;
+les cinq autres pages de la tranche sont intactes. Le contenu est identique, seule la résolution
+change — mais une session voisine qui compterait sur une taille homogène doit le savoir. Commande de
+remise à l'état initial :
+`bash "D:/11-coding/YahiaAcademy/cnp-officiel/render.sh" "D:/11-coding/YahiaAcademy/cnp-officiel/manuels/secondaire/c2/eleve/241203P00.pdf" 127 131 150`
+
+---
+
+### Chapitre 10 — `10-science-and-technology` (Thème X — Science and Technology · manuel p.138–144)
+
+> Source : manuel élève CNP « Perform to Learn — Second Year Secondary Education — Student's Book »
+> (`241203P00`), pages imprimées 138 à 144. Rendus 150 dpi, page PDF = page imprimée.
+> Transcription fidèle : rien n'est ajouté, rien n'est complété. `[?]` = illisible, `[sic]` = coquille imprimée.
+
+---
+
+#### L25 — Internet addiction (manuel p.138–141)
+
+**En-tête imprimé (p.138)** : bandeau bleu « LESSON 25 » à gauche, titre en rouge/magenta centré
+**« Internet Addiction »**.
+
+##### Stage One : Pre-Reading (p.138)
+
+Bandeau gris dégradé « **Stage One :** », sous-bandeau encadré en rouge « **Pre-Reading** ».
+
+**Activité — Step 1 : Pair work** (p.138)
+- Numéro / stage : Step 1, Stage One (Pre-Reading)
+- Modalité annoncée : **Pair work**
+- Consigne verbatim : « Choose to draw a list either of advantages or disadvantages of using the internet. »
+- Matériel : aucun imprimé.
+
+**Activité — Step 2** (p.138)
+- Numéro / stage : Step 2, Stage One (Pre-Reading)
+- Modalité annoncée : aucune étiquette (le texte dit « With your partners »)
+- Consigne verbatim : « With your partners, discuss the use of internet, with a focus on arguments for and arguments against. » [sic — « the use of internet », sans article devant *internet*]
+- Matériel : aucun imprimé.
+
+**Activité — Step 3 : Individual work** (p.138)
+- Numéro / stage : Step 3, Stage One (Pre-Reading)
+- Modalité annoncée : **Individual work**
+- Consigne verbatim : « Examine the pictures and answer the self-test questions, then define what an internet addict is. Is there a solution to this **problem?** » (les mots « problem? » sont imprimés en gras dans le manuel)
+- Matériel : **quatre photos légendées**, disposées en deux rangées de deux (p.138) :
+
+| # | Image (description) | Légende imprimée (verbatim) |
+|---|---|---|
+| 1 | Main sur une souris d'ordinateur blanche, fond rose/bleu | « Some people just can't stop clicking. » |
+| 2 | Affiche « **Microslave** / YOU'RE **NOT** GOING ANYWHERE TODAY! » — souris d'ordinateur menottée, flammes en fond | « How to survive the internet? » |
+| 3 | Deux mains tapant sur un clavier | « Internet addicts "need help". » |
+| 4 | Gros plan sur la touche **Esc** d'un clavier, fond bleu | « The escape key could provide a way out. » |
+
+> ⚠️ Les « self-test questions » sont **mentionnées** par la consigne du Step 3 mais **ne sont pas imprimées
+> sur la page 138** : la page ne contient que les quatre photos légendées et l'encadré rose ci-dessous.
+> Voir « Écarts constatés ».
+
+**Encadré rose (citation d'accroche), p.138 — verbatim** (police manuscrite, fond rose) :
+
+> « "Internet addiction is a growing problem and doctors should be better equipped to deal with it", a research from the Centre for Online Addiction suggests. »
+
+Source imprimée citée : *the Centre for Online Addiction* (« a research from… »). Pas d'autre référence.
+Remarque : cet encadré est une **phrase au discours direct suivie d'une proposition rapportante** —
+c'est le seul élément de la p.138 qui touche au point de langue de la leçon.
+
+##### Self test reveals all (p.139) — suite du Step 3
+
+Titre imprimé : « **Self test reveals all :** »
+Consigne verbatim : « **Answer the following questions with 'yes' or 'no '.** » [sic — espace avant l'apostrophe fermante de « no »]
+
+Les sept questions du self-test, **verbatim**, dans l'ordre imprimé (puces rondes roses) :
+
+1. « Do you feel preoccupied with the Internet (you think about your previous online activity or anticipate your next session)? »
+2. « Do you feel the need to use the Internet with increasing amounts of time in order to achieve satisfaction? »
+3. « Have you repeatedly made unsuccessful efforts to control, cut back or stop Internet use? »
+4. « Do you stay online longer than originally intended? »
+5. « Have you risked the loss of a significant relation, job, educational or career opportunity because of the Internet? »
+6. « Have you lied to family members, or others to conceal the extent of involvement with the Internet? »
+7. « Do you use the Internet as a way of escaping from problems or of relieving, for example, feelings of helplessness, guilt, anxiety or depression? »
+
+**Barème / corrigé imprimé** (c'est le seul « corrigé » de la leçon) :
+
+> « **Interpretation :** »
+> « **If you answered 'yes 'to at least five of the questions above, you are an addict.** » [sic — espacement des apostrophes fautif dans l'imprimé : « 'yes 'to »]
+
+##### Stage Two : Reading (p.139–140)
+
+Bandeau gris dégradé « **Stage Two :** », sous-bandeau encadré en rouge « **Reading** ».
+
+**Activité 1** (p.139–140)
+- Numéro / stage : activité **1** (numérotée en rouge), Stage Two (Reading)
+- Modalité annoncée : travail **en groupes**
+- Consigne verbatim : « **Join a group to read one of the following passages. After reading, each group answers the following :** »
+- Grille de questions imprimée juste sous la consigne, centrée et en gras : « **Who ? What ? Why ?** »
+  (c'est la seule « grille » d'exploitation imprimée — trois mots-questions, sans tableau ni lignes)
+- Matériel : **quatre témoignages** numérotés 1- à 4-, imprimés chacun dans une bulle bleu clair, signés
+  d'un prénom + pays (p.139 : 1- et 2- ; p.140 : 3- et 4-).
+
+**Les passages (nature et contenu — pas de recopie, R-4)**
+
+Genre : **témoignages de lecteurs / messages de forum**, à la première personne, registre familier à
+courant, anglais britannique. Aucune source imprimée n'est citée pour l'ensemble (ni journal, ni site) :
+seules figurent les signatures individuelles. Chaque passage fait entre ~40 et ~110 mots.
+
+- **Passage 1- — Ian, England** (p.139, ~110 mots). Un mari raconte qu'il pourrait vivre sans internet
+  mais que sa femme, elle, se connecte dès son retour du travail pour cinq heures ou plus, tout en
+  téléphonant aux mêmes personnes qu'elle côtoie en ligne ; elle mène jusqu'à trois conversations
+  parallèles dans trois salons de discussion. Il constate que le couple et la relation mère-fils en
+  souffrent, et se heurte au déni : dès qu'il aborde le sujet, sa femme devient agressive et sur la
+  défensive. Il termine sur une demande d'aide (« so how can I help her? »).
+- **Passage 2- — Sam, UK** (p.139, ~80 mots). Réponse relativisante : rester sept heures par nuit devant
+  un écran d'ordinateur ne serait pas pire que les heures que beaucoup passent devant la télévision,
+  laquelle n'offre en plus aucune interactivité ; l'auteur dit ne pas avoir de téléviseur et juge plus
+  sain de surfer que de rester hébété devant « the one-eyed god » (la télévision).
+
+- **Passage 3- — Janet, UK** (p.140, ~60 mots). Argument sur le deux poids deux mesures : passer des
+  heures au téléphone avec proches et amis vaut à l'auteure une réputation de personne sociable et
+  attentionnée, alors que passer les mêmes heures à écrire des courriels ou à discuter en ligne avec
+  ces mêmes personnes la fait passer pour une « geek » coupée de la « vraie vie » ; elle appelle, en ce
+  siècle technologiquement avancé, à abandonner ces préjugés irrationnels et à valoriser la
+  communication sous toutes ses formes.
+- **Passage 4- — Manel Ali, Egypt** (p.140, ~85 mots). Récit personnel : l'auteure a rencontré son
+  fiancé par internet (« cyberspace ») ; après leur rencontre en personne, son amour excessif du réseau
+  lui a coûté ses fiançailles. Ils s'aimaient beaucoup, à ceci près qu'il était jaloux de ses discussions
+  en ligne ; la jalousie s'est muée en manque de confiance, il a fini par exiger qu'elle cesse de
+  discuter avec d'autres hommes, elle n'a pas pu s'arrêter (elle a besoin de se sentir plus proche du
+  reste du monde), et ils ont rompu.
+  ⚠️ C'est **ce passage 4** qui sert de support à la découverte du discours indirect (activité 4, ci-dessous).
+
+**Activité 2** (p.140)
+- Numéro / stage : activité **2** (numérotée en rouge), Stage Two (Reading)
+- Consigne verbatim : « **Each group leader reports the answers to the others.** »
+- Matériel : aucun.
+
+**Activité 3** (p.140)
+- Numéro / stage : activité **3** (numérotée en rouge), Stage Two (Reading)
+- Consigne verbatim : « **Re-read the four passages and decide whether each speaker is for or against internet excessive use, then pick up the arguments each speaker gives to defend his/her attitude.** » [sic — « internet excessive use » au lieu de *excessive internet use*]
+- Matériel : **tableau à trois colonnes à compléter** (en-têtes sur fond bleu, texte rouge/magenta ;
+  colonnes « For / Against » et « Arguments » **vides**) :
+
+| Speaker | For / Against | Arguments |
+|---|---|---|
+| Sam | | |
+| Janet | | |
+| Ian | | |
+| Manel | | |
+
+(les cases sont imprimées vides — **réponse non imprimée**. Noter l'ordre : Sam, Janet, Ian, Manel —
+qui n'est pas l'ordre des passages 1-Ian, 2-Sam, 3-Janet, 4-Manel.)
+
+##### Le discours indirect — tout ce que la leçon en imprime
+
+**Activité 4 — LANGUAGE PRACTICE** (p.140). Titre imprimé en capitales : « **LANGUAGE PRACTICE** »,
+numérotée **4** en rouge. Quatre sous-consignes a- à d-, verbatim :
+
+- **a-** « **Read the following sentence and focus on the underlined parts.** »
+  Phrase support imprimée sous la consigne, avec **trois parties soulignées** (le soulignement de
+  l'imprimé est rendu ici par des balises `<u>`) :
+  > <u>I'm</u> one of those who <u>met</u> <u>her</u> fiancé through cyberspace.
+
+  (soulignés : **I'm**, **met**, **her** — c'est-à-dire le sujet-pronom, le verbe, et le déterminant
+  possessif : les trois catégories qui changent au discours indirect.)
+- **b-** « **Now rewrite the same sentence and start as given.** »
+  Amorce imprimée avec pointillés à compléter :
+  > Manal said ………………………………………………………
+
+  **Réponse non imprimée.** [sic — « Manal » ici, alors que la signature du passage 4 imprime
+  « **Manel** Ali » et le tableau de l'activité 3 imprime « **Manel** ».]
+- **c-** « **Have you noticed the changes? What are they?** » — **réponse non imprimée** (découverte
+  guidée : c'est à l'élève de formuler la règle).
+- **d-** « **With those changes in mind, now rewrite text number 4.** » — **réponse non imprimée**.
+
+> **Constat de fidélité — capital.** Sur la page 140, la leçon **n'imprime AUCUN encadré de règle**,
+> **aucun tableau de concordance des temps**, **aucune liste de changements** (temps, pronoms,
+> possessifs, marqueurs de temps et de lieu). Le discours indirect est introduit **uniquement par
+> découverte inductive** : une phrase soulignée, une amorce à compléter, et deux questions ouvertes
+> (« What are they? ») dont la réponse n'est pas donnée. Le mot « reported speech » lui-même
+> **n'apparaît nulle part** dans la leçon. Voir « Écarts constatés ».
+>
+> ⚠️ **Vérification faite sur l'intégralité de la leçon 25 (p.138, 139, 140, 141)** : la L25
+> **ne comporte pas de rubrique `GRAMMAR SUMMARY`**, alors que la L26, qui porte un point de
+> langue bien plus léger, en imprime une (p.144, activité `e-`). Le seul encadré graphique de la
+> L25 est l'encadré rose d'accroche de la p.138, qui n'énonce aucune règle.
+>
+> **Bilan des exercices de transformation imprimés en L25 : deux, et deux seulement** —
+> `b-` (transformer *une* phrase, avec l'amorce « Manal said … ») et `d-` (réécrire le texte 4
+> entier). Aucun n'est corrigé. Il n'y a **ni** exercice d'application supplémentaire, **ni**
+> liste de verbes introducteurs (*say / tell / ask / explain*…), **ni** traitement des questions
+> ou des ordres au discours indirect.
+
+##### Stage Three : Writing (p.141)
+
+Bandeau gris dégradé « **Stage Three :** », sous-bandeau encadré en rouge « **Writing** ».
+
+**Activité — tâche d'écriture** (p.141)
+- Numéro / stage : **non numérotée** (aucun chiffre ni lettre imprimé), Stage Three (Writing)
+- Consigne verbatim (un seul paragraphe, corps de texte, en romain) :
+  « Many students in your school are "library-lovers' and keep writing articles in the school magazine where they criticize the overuse of Internet. You have decided to write an article in the same magazine where you highlight the benefits of reasonable use of internet. » [sic — guillemets dépareillés : ouvrant double courbe, fermant apostrophe simple, autour de *library-lovers* ; et alternance *Internet* / *internet* dans la même phrase]
+- Genre demandé : **article de magazine scolaire**, argumentatif, en faveur d'un usage raisonnable
+  d'internet.
+- Matériel : aucun (pas de plan, pas de grille de notation, pas de banque d'expressions).
+
+##### Career research project — étape 3, ce que le manuel en imprime
+
+⚠️ **Écart de numérotation** : le manuel n'imprime **pas** une « étape 3 » ici, mais
+« **Step 4 : Career Presentation.** ». Le rapport écrit y figure bien, mais comme **exigence finale
+de l'étape 4**, pas comme une étape 3 distincte. Tout ce qui suit est verbatim (p.141).
+
+Titre de la rubrique, imprimé en capitales : « **CAREER RESEARCH PROJECT** »
+
+Titre de l'étape : « **Step 4 : Career Presentation.** »
+
+Texte de l'étape (verbatim, en gras dans l'imprimé) :
+
+> « **You have explored various sources to get the maximum information about your favourite career or your dream job. Now you will need to develop a presentation to deliver to your classmates. This will be the assessment of your knowledge of this career.** »
+>
+> « **Following are the requirements of what needs to be included in this presentation :** »
+
+**Les huit exigences du contenu de la présentation**, verbatim, dans l'ordre imprimé (puces rondes roses,
+corps de texte en romain) :
+
+1. « A description of the work. »
+2. « Wage/salary (entry level and after established in career). »
+3. « What characteristics are needed for a person to be most in this career? » [sic — phrase incomplète/fautive dans l'imprimé, sans doute pour *most successful in this career*]
+4. « Educational background needed. »
+5. « Where can you get the education/qualifications needed for this career? »
+6. « Advantages/disadvantages of the job. »
+7. « Career ladder. »
+8. « Employment outlook/ future developments. »
+
+**Note et exigence finale** (verbatim, en gras ; « NB. » imprimé en rouge/magenta) :
+
+> « **NB. Use appropriate visuals and power point, dress up for the job if you can to improve your presentation.** »
+>
+> « **Remember that a written report should be turned in with all the above information.** »
+
+**Aucune grille d'évaluation (rubric) n'est imprimée** : ni barème, ni critères notés, ni nombre de mots,
+ni date de rendu. La liste des huit exigences est le seul cadrage du rapport écrit.
+
+**Fin de la leçon 25** — la p.141 s'arrête là (moitié inférieure blanche). Pas d'encadré, pas de
+vocabulaire, pas de corrigé.
+
+---
+
+#### L26 — What will man be like? (manuel p.142–144)
+
+**En-tête imprimé (p.142)** : bandeau bleu « LESSON 26 » à gauche, titre en rouge/magenta centré
+**« What will man be like? »**. Leçon d'**écoute** (les stages sont Pre-Listening / Listening).
+
+##### Stage One : Pre-Listening (p.142)
+
+Bandeau gris dégradé « **Stage One :** », sous-bandeau encadré en rouge « **Pre-Listening** ».
+
+**Activité a-** (p.142)
+- Numéro / stage : **a-** (lettre en rouge), Stage One (Pre-Listening)
+- Modalité annoncée : **Pair Work**
+- Consigne verbatim : « **Pair Work:  With your partner go through the following statements and tick the ones you mostly agree with.** »
+- Amorce commune imprimée en gras : « **Thanks to the development in science and technology, in the future man will :** »
+- Les six énoncés à cocher, verbatim, dans l'ordre imprimé (puces rondes roses) :
+  1. « Grow stronger and healthier. »
+  2. « Be taller/ shorter. »
+  3. « Live longer. »
+  4. « Have larger brains. »
+  5. « Have more children. »
+  6. « Have weaker senses. »
+- Matériel : une **illustration de style cartoon** à droite de la liste — un extraterrestre vert à grosse
+  tête et grands yeux noirs, armé, accompagné d'un petit congénère, avec deux soucoupes volantes jaunes
+  dans le ciel. **Aucune légende imprimée.**
+- **Réponse non imprimée** (choix personnel).
+
+**Activité b-** (p.142)
+- Numéro / stage : **b-** (lettre en rouge), Stage One (Pre-Listening)
+- Consigne verbatim : « **Now report and explain your choice to the rest of the class.** »
+- Matériel : aucun.
+
+##### Stage Two : Listening (p.142–143)
+
+Bandeau gris dégradé « **Stage Two :** », sous-bandeau encadré en rouge « **Listening** ».
+
+**Activité 1 — QCM d'écoute** (p.142)
+- Numéro / stage : activité **1** (numérotée en rouge), Stage Two (Listening)
+- Compétence annoncée : compréhension de l'oral (écoute globale/sélective)
+- Consigne verbatim : « **Listen and tick the best answer.** »
+- Matériel : support audio (non fourni dans le manuel élève ; **aucune transcription imprimée**)
+- Les cinq items, verbatim, dans l'ordre imprimé (amorce à puce ronde rose, puis trois options
+  a- / b- / c- sur une même ligne, lettres en rouge) — **réponses non imprimées** :
+
+| # | Amorce (verbatim) | a- | b- | c- |
+|---|---|---|---|---|
+| 1 | « The text tells us a great deal about how future man will : » | « look » | « live » | « feel » |
+| 2 | « The reason for believing that future man will be different is that he: » | « never stops changing » | « never stops growing » | « has recently begun to change » |
+| 3 | « People's heads will eventually grow larger. This is because their brains will: » | « grow faster » | « be in constant use » | « work less » |
+| 4 | « Future man will probably: » | « have bigger eyes » | « see better » | « have better glasses » |
+| 5 | « Future man's hair will: » | « stop growing completely » | « fall out more often » | « grow faster » |
+
+**Activité 2 — Vrai / Faux** (p.142–143)
+- Numéro / stage : activité **2** (numérotée en rouge), Stage Two (Listening)
+- Consigne verbatim : « **Listen and say whether the following statements are true or false.** »
+- Le manuel découpe l'écoute en **sections** annoncées en gras : « **(Section1)** », « **(Section2)** »
+  [sic — sans espace avant le chiffre], la suite p.143.
+- Énoncés imprimés p.142, verbatim (puces rondes roses) — **réponses non imprimées** :
+
+  **(Section1)**
+  1. « 500 years ago, man was shorter than he is now. »
+  2. « Today, we use about 23% of the brain's capacity. »
+
+  **(Section2)**
+  3. « In the future, our fingers will grow **less and less** sensitive. » ← seule occurrence de la structure
+     `less and less + adjectif` repérée sur la p.142
+  4. « In the future man will look more attractive. »
+  5. « Future man will no longer have any feelings. »
+
+  ⚠️ Vérifié : l'activité 2 **s'arrête au bas de la p.142**. La p.143 commence directement par
+  l'activité 3 ; il n'y a **pas** de troisième section ni d'énoncés supplémentaires.
+
+##### Activité 3 — PRONUNCIATION (p.143)
+
+- Numéro / stage : activité **3** (numérotée en rouge), titre imprimé en capitales
+  « **PRONUNCIATION** ». Le manuel ne rattache pas explicitement cette activité à un stage
+  (elle suit Stage Two sans nouveau bandeau).
+
+**3-a — sons** (p.143)
+- Consigne verbatim : « **Listen and classify the words below under the corresponding heading.** »
+- Matériel : une **boîte de mots** (cadre bleu, fond gris) où la graphie visée est imprimée en
+  **rouge gras** dans chaque mot. Liste verbatim, dans l'ordre imprimé (graphie visée entre
+  astérisques) :
+
+  > Emo**t**ions / w**ear** / gr**ow** / d**oe**s / res**u**lt / h**air** / fu**t**ure /
+  > impre**ss**ions / **sh**orter / s**o** / **ow**n / **u**s / crea**t**ure / **ch**ange
+
+  (14 mots — séparateur imprimé : « / »)
+- Tableau de classement **à cinq colonnes, cases vides** (en-têtes sur fond bleu, symboles en rouge) —
+  **réponse non imprimée** :
+
+| { ʌ ʼ } | { ou } | { ɛ ə } | { ʃ } | { tʃ } |
+|---|---|---|---|---|
+| | | | | |
+
+  ⚠️ Le premier en-tête porte, après le ʌ, un petit signe en forme d'apostrophe/accent aigu que je ne
+  parviens pas à identifier avec certitude même à 400 dpi : `[?]`. Les quatre autres symboles sont
+  nets. Noter que le manuel utilise des **accolades** `{ }` et non les crochets `/ /` ou `[ ]` de l'API,
+  et la notation américaine `{ ou }` (et non `/əʊ/`).
+
+**3-b — accent de mot** (p.143)
+- Consigne verbatim : « **Listen and classify the words below as indicated in the table.** »
+- Matériel : une **boîte de mots** (cadre bleu, fond gris), liste verbatim dans l'ordre imprimé :
+
+  > Different / example / relatively / continue / capacity / nowadays / disappear / impression /
+  > attractive / probably
+
+  (10 mots ; « Different » imprimé avec une majuscule initiale, les neuf autres en minuscules)
+- Tableau de classement **à trois colonnes, cases vides** (en-têtes sur fond bleu, texte rouge) —
+  **réponse non imprimée** :
+
+| Stress on the first syllable | Stress on the second syllable | Stress on the third syllable |
+|---|---|---|
+| | | |
+
+##### Activité 4 — LANGUAGE PRACTICE (p.143–144) : `more and more` / `less and less`
+
+- Numéro / stage : activité **4** (numérotée en rouge), titre imprimé en capitales
+  « **LANGUAGE PRACTICE** ».
+
+- **a-** Consigne verbatim : « **Read these two sentences and focus on the underlined parts.** »
+  Les deux phrases support, verbatim (puces rondes roses ; les parties **soulignées ET en gras**
+  dans l'imprimé sont rendues ici en gras souligné) :
+  1. « They will become <u>**more and more substantial**</u>. »
+  2. « They are likely to grow <u>**less and less powerful**</u>. »
+- **b-** Consigne verbatim : « **What is the structure of the underlined parts?** » — **réponse non imprimée**.
+- **c-** Consigne verbatim : « **Do you think the two sentences express :** »
+  Trois options imprimées (puces rondes roses ; le mot « Or » est imprimé **hors puce**, à gauche de
+  la troisième) — **réponse non imprimée** :
+  - « a gradual increase/decrease »
+  - « a parallel change »
+  - Or « a comparison of superiority ? »
+
+> **Constat de fidélité (a- à c-).** La structure `more and more / less and less + adjectif` est
+> d'abord amenée par **découverte inductive** : deux exemples soulignés, une question ouverte sur la
+> structure, un QCM à trois entrées sur la valeur — sans réponse imprimée. **Mais, contrairement à
+> L25, la règle finit par être donnée** : voir le `GRAMMAR SUMMARY` de la sous-activité **e-**
+> (p.144) ci-dessous.
+
+- **d-** (p.144) Consigne verbatim : « **Rewrite the sentences below following the examples.** »
+
+  **Deux exemples imprimés** (mot « Examples : » en italique, puis deux couples de phrases en
+  **italique** ; la structure cible est imprimée en **rouge gras**) — ce sont des **corrigés-modèles,
+  les seuls de la leçon 26** :
+
+  > *Examples :*
+  > - *The population of the capital is increasing regularly.*
+  >   *The capital is getting **more and more** populated.*
+  > - *The population of the countryside is decreasing regularly.*
+  >   *The countryside is getting **less and less** populated.*
+
+  **Les quatre phrases à transformer**, verbatim, dans l'ordre imprimé (puces rondes roses, corps de
+  texte en romain) — **réponses non imprimées** :
+  1. « The film series is getting more captivating through the episodes. »
+  2. « He is becoming more interested through the courses. »
+  3. « The classes are becoming less crowded every year. »
+  4. « The neighbourhood is growing less attractive because of the new factories. »
+
+##### Encadré de règle — `e- GRAMMAR SUMMARY` (p.144) — VERBATIM
+
+C'est le **seul encadré de règle imprimé de tout le chapitre** (leçons 25 et 26 confondues).
+Sous-activité **e-** (lettre en rouge), titre imprimé en capitales « **GRAMMAR SUMMARY** ».
+Tableau à deux colonnes, en-têtes sur fond bleu foncé en rouge/magenta, corps sur fond bleu clair :
+
+| Structure | Meaning |
+|---|---|
+| More and More + Adjective<br>Less and Less  + Adjective<br><br>(2 Comparatives joined by and)<br><br>Adjective + er + and + Adjective + er | Gradual Increase<br>Gradual Decrease |
+
+Reproduction ligne à ligne du contenu imprimé de la cellule « Structure » (l'imprimé conserve les
+majuscules et les sauts de ligne) :
+
+> More and More + Adjective
+> Less and Less  + Adjective   [sic — double espace avant le `+`]
+>
+> (2 Comparatives joined by and)
+>
+> Adjective + er + and + Adjective + er
+
+Cellule « Meaning » (deux lignes, alignées sur les deux premières lignes de « Structure ») :
+
+> Gradual Increase
+> Gradual Decrease
+
+⚠️ Le tableau **n'aligne pas** de sens en face des deux dernières lignes de la colonne « Structure » :
+« (2 Comparatives joined by and) » et « Adjective + er + and + Adjective + er » restent **sans
+« Meaning » en regard**, et la variante `Adjective + er + and + Adjective + er` (type *bigger and
+bigger*) **n'est illustrée par aucun exemple** dans la leçon — aucune des phrases des activités a-
+à d- n'utilise cette forme. Aucun exemple n'est imprimé dans l'encadré lui-même.
+
+**Fin de la leçon 26 et du chapitre** — la p.144 s'arrête là (les deux tiers inférieurs sont blancs).
+
+---
+
+---
+
+#### Écarts constatés — chapitre 10
+
+#### 1. L25 — discours indirect : le point est bien là, mais **sans aucune règle imprimée** (écart majeur)
+
+Le guide annonce le **discours indirect (reported speech)** pour la L25. **Le manuel le traite bien** —
+l'activité 4 `LANGUAGE PRACTICE` de la p.140 ne porte que sur cela. **L'écart n'est pas sur la présence
+du point, il est sur son traitement :**
+
+| Ce que le guide/l'appendice laissent attendre | Ce que la leçon 25 imprime réellement (p.138–141) |
+|---|---|
+| Un encadré de règle | **Rien.** Aucun encadré de règle sur les quatre pages. |
+| Un tableau de concordance des temps | **Rien.** Aucun tableau, aucune colonne « direct → indirect ». |
+| La liste des changements (pronoms, possessifs, temps, marqueurs de temps/lieu) | **Rien** — c'est la question `c-` « Have you noticed the changes? What are they? » qui la demande à l'élève, sans réponse imprimée. |
+| Le terme « reported speech » | **Absent du manuel** sur ces pages : ni titre, ni étiquette, ni mention. |
+| Des exercices de transformation | **Deux seulement** : `b-` (une phrase) et `d-` (le texte 4). Non corrigés. |
+| Verbes introducteurs, questions/ordres rapportés | **Absents.** |
+
+Tout le poids de la règle repose donc sur **trois mots soulignés** (`I'm`, `met`, `her`) et sur
+l'amorce « Manal said … ». La leçon est **purement inductive et non refermée** : le manuel élève ne
+donne à aucun moment la réponse.
+
+> ⚠️ **L'appendice grammatical du manuel n'est PAS dans mon périmètre** (p.145 et au-delà). Je ne
+> peux donc ni confirmer ni infirmer qu'il contienne une concordance des temps complète — je constate
+> seulement que **la leçon elle-même n'y renvoie pas** : aucune mention, aucun renvoi de page, aucun
+> « see Appendix » n'est imprimé sur les p.138–141. Si l'appendice traite le point, **rien dans la
+> leçon ne dit à l'élève d'aller l'y chercher.**
+
+#### 2. L26 — `more and more` / `less and less` : conforme au guide, et **la règle, elle, est imprimée**
+
+Le guide annonce `more and more + adjectif` / `less and less + adjectif` (gradual increase/decrease)
+pour la L26. **Conforme, et même au-delà de l'annonce** : le manuel imprime un véritable encadré
+`e- GRAMMAR SUMMARY` (p.144) avec la structure ET le sens, plus deux exemples-modèles corrigés en
+`d-`. L'étiquette « Gradual Increase / Gradual Decrease » du guide est reprise **mot pour mot** dans
+la colonne « Meaning » du tableau.
+
+**Asymétrie à signaler au lot B** : le point de langue **léger** (L26) reçoit un encadré, des exemples
+corrigés et quatre exercices d'application ; le point de langue **lourd** (L25, discours indirect)
+ne reçoit ni encadré, ni exemple corrigé, ni corrigé du tout. C'est l'inverse de ce que la
+progression laisserait attendre.
+
+#### 3. Career research project : le manuel imprime **« Step 4 »**, pas une étape 3
+
+La consigne de mission annonçait « L25 porte l'**étape 3** du career research project (le rapport
+écrit) ». Le manuel imprime en toutes lettres « **Step 4 : Career Presentation.** » (p.141).
+Le **rapport écrit y est bien présent**, mais comme **exigence finale de l'étape 4**
+(« Remember that a written report should be turned in with all the above information. »), et non
+comme une étape 3 distincte. **Aucune grille d'évaluation n'est imprimée** : seules les huit
+exigences de contenu cadrent le rapport.
+
+#### 4. Écarts internes au manuel (cohérence)
+
+- **`Manel` / `Manal`** — le passage 4 est signé « **Manel** Ali » (p.140), le tableau de l'activité 3
+  écrit « **Manel** » (p.140), mais l'amorce de l'activité 4-`b-` écrit « **Manal** said » (p.140).
+  Trois occurrences, deux graphies.
+- **La phrase support de 4-`a-` n'est pas celle du texte** : le texte 4 imprime « I am one of those
+  who met her fiancé through cyberspace. » ; l'activité 4-`a-` la reprend contractée en
+  « **I'm** one of those who met her fiancé through cyberspace. » Le soulignement porte sur la forme
+  contractée.
+- **Self-test annoncé p.138, imprimé p.139** — le Step 3 (p.138) renvoie à des « self-test questions »
+  qui ne figurent pas sur la page ; elles sont sur la page suivante sous le titre
+  « Self test reveals all : ». Pas de renvoi imprimé.
+- **Ordre du tableau ≠ ordre des textes** — activité 3 : Sam, Janet, Ian, Manel ; passages :
+  1-Ian, 2-Sam, 3-Janet, 4-Manel.
+- **`GRAMMAR SUMMARY` incomplet** — la ligne `Adjective + er + and + Adjective + er` (type *bigger and
+  bigger*) est donnée dans la colonne « Structure » **sans « Meaning » en regard** et **sans aucun
+  exemple** ; aucune activité de la leçon ne la met en œuvre.
+- **Coquilles relevées** (toutes marquées `[sic]` dans le corps) : « the use of internet » (p.138) ;
+  « 'yes 'to » (p.139) ; « internet excessive use » (p.140) ; « to be most in this career? » (p.141,
+  phrase tronquée) ; « "library-lovers' » guillemets dépareillés (p.141) ; « (Section1) / (Section2) »
+  sans espace (p.142) ; double espace dans « Less and Less  + Adjective » (p.144).
+- **Alternance `Internet` / `internet`** non normalisée, parfois dans la même phrase (p.138, p.141).
+
+#### 5. Ce que le chapitre **ne contient pas** (constaté, pas déduit)
+
+- **Aucune liste de vocabulaire** n'est imprimée dans les deux leçons — ni glossaire, ni « word bank »,
+  ni lexique thématique. Les seules listes de mots sont les **boîtes de l'activité de prononciation**
+  (p.143), qui sont un matériel de classement phonétique, pas une liste de vocabulaire.
+- **Aucune transcription d'écoute** n'est imprimée pour la L26 : les activités 1 et 2 renvoient à un
+  audio absent du manuel élève. Le contenu de l'enregistrement n'est connu que par ce que les
+  questions présupposent.
+- **Aucun corrigé**, sauf : le barème du self-test (p.139, « Interpretation : … you are an addict. »)
+  et les deux exemples-modèles de l'activité 4-`d-` (p.144). Toutes les autres cases et pointillés
+  sont imprimés vides.
+- **Aucun encadré « nu », « à compléter » ou « imprimé vide »** du type rencontré ailleurs dans ce
+  manuel (pas de « Ask your teacher for help » ici).
+- **Aucune source bibliographique** n'est imprimée pour les quatre témoignages de la L25 (pas de
+  journal, pas de site, pas de date) : seules les signatures prénom + pays figurent.
+
+---
+
+#### Incertitudes — chapitre 10
+
+1. **Le premier symbole phonétique du tableau 3-`a-` (p.143)** — imprimé `{ ʌ ʼ }` : le ʌ est suivi
+   d'un petit signe en forme d'apostrophe ou d'accent aigu. Re-rendu à **400 dpi** en crop dédié,
+   le signe reste présent mais non identifiable avec certitude (marque d'accent tonique ? artefact
+   de fonte ? deuxième symbole tronqué ?). Transcrit tel quel avec `[?]`. Les quatre autres symboles
+   (`{ ou }`, `{ ɛ ə }`, `{ ʃ }`, `{ tʃ }`) sont nets et certains.
+2. **Étendue exacte du soulignement de `I'm` (p.140)** — re-rendu à 300 dpi : le trait court sous
+   l'ensemble `I'm`. Je le transcris comme portant sur `I'm` entier ; une lecture « `'m` seul
+   souligné » n'est pas totalement exclue à cette résolution, mais elle est peu probable.
+3. **Aucune autre zone illisible.** Les sept pages sont des rendus vectoriels nets (couche texte
+   propre), pas des scans : le reste de la transcription est certain.
+4. **Non vérifiable depuis mon périmètre** : le contenu de l'appendice grammatical (p.145+) et le
+   contenu de l'enregistrement audio de la L26. Signalés comme tels, **non comblés**.
+
+---
+
+#### Pages réellement lues — chapitre 10
+
+**Les sept pages du périmètre ont toutes été lues. Aucune page manquante, aucune page hors périmètre
+ouverte.**
+
+| Page imprimée | Fichier lu | Résolution | Contenu |
+|---|---|---|---|
+| 138 | `_render/241203P00-138.png` | 150 dpi | L25 en-tête, Stage One Pre-Reading (Steps 1–3), 4 photos légendées, encadré rose |
+| 139 | `_render/241203P00-139.png` | 150 dpi | Self test (7 questions + Interpretation), Stage Two Reading, activité 1, passages 1- et 2- |
+| 140 | `_render/241203P00-140.png` | 150 dpi **+ crop 300 dpi** | Passages 3- et 4-, activités 2 et 3 (tableau), activité 4 LANGUAGE PRACTICE (discours indirect) |
+| 141 | `_render/241203P00-141.png` | 150 dpi | Stage Three Writing, CAREER RESEARCH PROJECT / Step 4 (8 exigences + NB + rapport écrit) |
+| 142 | `_render/241203P00-142.png` | 150 dpi | L26 en-tête, Stage One Pre-Listening (a-, b-), Stage Two Listening, activités 1 (5 QCM) et 2 (5 V/F) |
+| 143 | `_render/241203P00-143.png` | 150 dpi **+ crop 400 dpi** | Activité 3 PRONUNCIATION (a- sons, b- accent), activité 4 LANGUAGE PRACTICE a- à c- |
+| 144 | `_render/241203P00-144.png` | 150 dpi | Activité 4 d- (2 exemples + 4 phrases), **e- GRAMMAR SUMMARY** (seul encadré de règle du chapitre) |
+
+**Re-rendus haute résolution effectués** (pour lever un doute de verbatim, conformément à la consigne) :
+- p.140, zone `LANGUAGE PRACTICE`, 300 dpi → soulignements `I'm` / `met` / `her` et graphie « Manal ».
+- p.143, zone boîte de mots + tableau phonétique, 400 dpi → symboles API et graphies en rouge.
+
+**Page 145 non ouverte** (leçon « Économie », hors périmètre), conformément à la consigne.
+
+---
+
+#### Récapitulatif des activités transcrites (15) — chapitre 10
+
+| Leçon | Stage | Activité | Objet |
+|---|---|---|---|
+| L25 | One — Pre-Reading | Step 1 | Pair work : liste avantages/inconvénients |
+| L25 | One — Pre-Reading | Step 2 | Discussion arguments pour/contre |
+| L25 | One — Pre-Reading | Step 3 | Photos + self-test (7 questions) + définition |
+| L25 | Two — Reading | 1 | Lecture en groupe des 4 passages, grille « Who ? What ? Why ? » |
+| L25 | Two — Reading | 2 | Restitution par le chef de groupe |
+| L25 | Two — Reading | 3 | Tableau Speaker / For-Against / Arguments |
+| L25 | Two — Reading | 4 (a–d) | **LANGUAGE PRACTICE — discours indirect** |
+| L25 | Three — Writing | (non numérotée) | Article de magazine scolaire |
+| L25 | Three — Writing | Step 4 | **CAREER RESEARCH PROJECT — présentation + rapport écrit** |
+| L26 | One — Pre-Listening | a- | Pair work : cocher 6 énoncés sur l'homme futur |
+| L26 | One — Pre-Listening | b- | Rapporter et expliquer son choix |
+| L26 | Two — Listening | 1 | QCM d'écoute (5 items × 3 options) |
+| L26 | Two — Listening | 2 | Vrai/Faux (5 énoncés, 2 sections) |
+| L26 | — | 3 (a–b) | PRONUNCIATION : sons (14 mots) + accent de mot (10 mots) |
+| L26 | — | 4 (a–e) | **LANGUAGE PRACTICE — `more and more` / `less and less` + GRAMMAR SUMMARY** |
+
+*(transcription des pages 138 à 144 terminée)*
+
+---
+
+### Chapitre 11 — `11-ecology` (Thème XI — Ecology · manuel p.147–154 et p.160–165)
+
+> Source : manuel élève CNP « Perform to Learn — Second Year Secondary Education —
+> Student's Book » (`241203P00`), rendus 150 dpi, page PDF = page imprimée.
+> Périmètre transcrit : p.147–154 et p.160–165. Les p.155–159 (leçon « Arts », A10) sont
+> **hors périmètre** et n'ont pas été ouvertes.
+>
+> ⚠️ Le manuel n'imprime **aucun titre de thème** (« Theme XI » / « Ecology ») sur les pages
+> de ce chapitre : les leçons s'enchaînent par leur seul bandeau `LESSON nn`. Le rattachement
+> au thème XI vient du programme/guide, pas d'un intitulé imprimé ici.
+
+---
+
+#### L27 — Our World, Our Environment (manuel p.147–151)
+
+Bandeau imprimé : `LESSON 27` — titre **Our World, Our Environment** (p.147).
+Structure imprimée : **Stage One : Pre-Reading** (p.147) → **Stage Two : Reading** (p.147–150,
+avec un bloc numéroté `2 LANGUAGE PRACTICE` inclus dans ce stage) → **Stage Three : Speaking**
+(p.151). **Il n'y a pas de « Stage Four » ni de stage Writing dans cette leçon.**
+
+##### Stage One : Pre-Reading (p.147)
+
+**Activité unique (non numérotée)** — appariement mot / définition.
+
+- Stage : Stage One : Pre-Reading
+- Compétence annoncée : *Pre-Reading* (aucune autre compétence n'est nommée)
+- Consigne verbatim : « **Match words in column A with their definitions in column B.
+  (NB: there's one extra item in B)** »
+- Matériel : tableau imprimé à deux colonnes A / B (fond bleu), 6 items en A, 7 en B.
+
+| A | B |
+| --- | --- |
+| 1- Ecology | a- the increase in temperature of the earth's atmosphere caused when certain gases especially carbon dioxide hold and keep the sun's heat. |
+| 2- Environment | b- a thinning in the ozone layer that causes harmful rays from the sun to pass through. |
+| 3- Global warming | c- the natural conditions(land, air, water) in which people, animals and plants live. |
+| 4- Rain forest | d- the study of the relation of plants and living creatures to each other and to their environment. |
+| 5- Wildlife | e- wild animals and birds. |
+| 6- Ozone depletion | f- a thick forest in tropical parts of the world that have a lot of rain: e.g. the Amazon. |
+|  | g- the scientific study of animals and their behaviour. |
+
+*(La colonne A n'a que 6 lignes ; l'item **g** de B est le « extra item » annoncé. Espacement
+imprimé tel quel : `conditions(land, air, water)` sans espace avant la parenthèse [sic].)*
+
+**Corrigé : réponse non imprimée.**
+
+##### Stage Two : Reading (p.147–150)
+
+###### Activité 1 (p.147–150) — Look at the pictures…
+
+- Stage : Stage Two : Reading
+- Consigne verbatim (p.147) : « **Look at the pictures, read the related comments and answer
+  the questions.** »
+- Matériel : quatre photographies avec un commentaire écrit chacune, réparties sur p.148–149,
+  puis les questions p.150.
+
+**Le « texte » n'est pas un texte suivi** : ce sont quatre légendes/commentaires indépendants
+attachés chacun à une image. Genre : encadrés d'information/sensibilisation (registre
+journalistique de vulgarisation). Longueur totale : ~150 mots. **Source imprimée, en fin du
+quatrième commentaire (p.149) : *Time*, October 30, 1995.**
+
+Résumé fidèle, image par image (aucune recopie intégrale) :
+
+1. **p.148, photo d'un affichage « Monitoring the ozone. A laser of love. »** — commentaire sur
+   les CFC : faute de contrôle, les dommages à la couche d'ozone laisseraient passer davantage
+   d'ultraviolets solaires jusqu'au sol, ce qui abîmerait les cultures et provoquerait des
+   cancers chez l'humain. Le manuel met en **italique** le segment *That would be very
+   dangerous* (amorce de la leçon de langue).
+2. **p.148, photo d'un iceberg** — le réchauffement climatique est présenté comme un fait :
+   environ +1 °c en un siècle, possiblement jusqu'à +5 °c au siècle suivant ; conséquence
+   annoncée en italique — *sea levels will be high enough to cover coastal areas* — plus les
+   deltas, mettant en danger plus de 100 millions de personnes.
+3. **p.149, photo d'une plateforme pétrolière en mer** — pollution et surpêche détruisent les
+   océans : récifs coralliens rayés de la carte, baleines, dauphins et autres mammifères marins
+   menacés d'extinction.
+4. **p.149, photo d'une forêt humide dégradée** — les forêts tropicales humides subissent de
+   grands dommages : 6 % de la surface terrestre mais plus de la moitié des espèces mondiales ;
+   segment en italique — *The rate of clearing and burning of rain forests is too high to be
+   ignored* ; 0,25 % ou plus des espèces forestières s'éteignent chaque année.
+   Source imprimée : « *Time*, October 30, 1995 ».
+
+**Questions d'exploitation (p.150), verbatim** — sous l'intitulé « **Questions :** »
+
+- « a- What happens when the ozone layer is damaged? »
+- « b- What are the effects of global warming? Do you know other effects? »
+- « c- Name some victims of sea pollution and over fishing. »
+- « d- What's happening to rainforests? How does that affect wildlife? »
+
+**Corrigé : réponse non imprimée.**
+
+###### Activité 2 — LANGUAGE PRACTICE (p.150)
+
+Bloc numéroté `2`, intitulé imprimé en capitales : « **LANGUAGE PRACTICE** ». Cinq sous-tâches
+a → e.
+
+**a-** Consigne verbatim : « **Focus on the underlined word in the sentence below and guess
+whether it is:** » — trois options imprimées en puces :
+
+- « an adverb of place »
+- « an adverb of degree »
+- (précédé de « or ») « an adverb of manner. »
+
+Phrase support imprimée : « This would be **very** dangerous. » (`very` en gras souligné).
+⚠️ **Écart de fidélité interne au manuel** : le commentaire de la p.148 imprimait *That* would
+be very dangerous ; la p.150 réimprime *This* would be very dangerous [sic].
+
+**b-** Consigne verbatim : « **Do you know other adverbs of the same type?** » (aucun support,
+aucune liste imprimée).
+
+**c-** Consigne verbatim : « **Read the sentences below, notice the place of the adverb, then
+match the adverbs with their corresponding degrees.** »
+
+Phrases support (adverbe souligné dans le manuel) :
+
+- « Your work is <u>quite</u> good. »
+- « He's old <u>enough</u> to get to school. »
+- « The story is <u>very</u> amusing. »
+- « It's still <u>too</u> cold to swim. »
+
+Tableau imprimé à droite (fond bleu) :
+
+| Adverb | Degree |
+| --- | --- |
+| 1- quite | a- high degree |
+| 2- enough | b- excessive degree |
+| 3- very | c- moderate degree |
+| 4- too | d- sufficient degree |
+
+**Corrigé : réponse non imprimée.**
+
+**d-** Consigne verbatim : « **Focus on the following sentences and find out :** » suivie de
+trois tirets :
+
+- « – how many clauses (parts) there are in each one. »
+- « – the relation between the two clauses. »
+- (précédé de « and ») « – whether the action is possible in each sentence. »
+
+Phrases support (segments soulignés) :
+
+- « Sea levels will be <u>high</u> <u>enough</u> to cover coastal areas. »
+- « The rate of clearing and burning of rainforests is <u>too</u> <u>high</u> to be ignored. »
+
+**e-** Consigne verbatim : « **Combine by means of "enough… to" or "too …to." (The first 2
+examples have been done for you.)** »
+
+Deux exemples **corrigés imprimés** (en italique, reliés par une flèche rose) :
+
+| Amorce imprimée | → Réponse imprimée |
+| --- | --- |
+| *You're very young. You can't understand.* | *You're too young to understand.* |
+| *She's old. She can travel by herself.* | *She is old enough to travel by herself.* |
+
+Items à traiter par l'élève (réponses **non imprimées**) :
+
+- « The plate is very hot. I can't touch. »
+- « He's very tall. He can see over the heads of other people. »
+- « The ice is not very thick. We can't walk on it. »
+- « The parcel is very heavy. We can't send it  by post. » *(double espace avant « by » [sic])*
+- « The case is very light. I can carry it. »
+- « The grass is very wet. We can't sit on it. »
+
+##### Stage Three : Speaking (p.151)
+
+- Stage : Stage Three : Speaking
+- Consigne verbatim : « **With a partner  select the most important measures and discuss them
+  to  say whether they're practical and   effective to save the environment. Be ready to share
+  with the rest of the class.** » *(espaces doubles/triples imprimés tels quels [sic] ; il
+  manque la virgule après « With a partner »)*
+- Matériel : liste imprimée de 14 mesures (puces roses), dans l'ordre :
+
+1. « Reduce the number of vehicles and factories. »
+2. « Filter toxic fumes of factories and vehicles. »
+3. « Purify waste water. »
+4. « Look for an alternative non polluting source of energy. »
+5. « Stop producing ozone- damaging chemicals. » *(espace après le tiret [sic])*
+6. « Ban nuclear experiments. »
+7. « Recycle waste products. »
+8. « Safeguard rainforests and ban deforestation. »
+9. « Protect endangered species. »
+10. « Build wildlife conservation areas. »
+11. « Plant trees. »
+12. « Encourage voluntary work and voluntary organizations. »
+13. « Pass laws to regulate the exploitation of the seas and the oceans. »
+14. « Educate people and make them more ecology conscious. »
+
+Bas de page : dessin d'élève (planète sous cloche/bocal, arrosoir, soleil) légendé en italique,
+**légende verbatim** : « *There have always been greenhouse gases in the atmosphere and a
+greenhouse effect on earth. But such gases are building up –we pump millions of tons of carbon
+into the air each year– and scientists are uncertain about the long-term impact on the planet's
+climate.* » Aucune consigne n'est attachée à cette image.
+
+##### Encadré de règle / grammaire / vocabulaire dans L27
+
+**Il n'y a AUCUN encadré de règle explicite dans la leçon 27.** Les deux tableaux imprimés
+(p.147 appariement A/B, p.150 Adverb/Degree) sont des **supports d'exercice à compléter**, pas
+des énoncés de règle : la p.150 ne formule nulle part la règle « too + adj + to » /
+« adj + enough + to » — elle la fait *découvrir* par les questions d-, puis appliquer en e- via
+deux exemples résolus. **Aucune liste de vocabulaire** n'est imprimée non plus (le lexique
+écologique n'apparaît que comme items de l'appariement p.147).
+
+→ ⚠️ **Mais la règle EXISTE dans le manuel, en annexe** : « Lesson twenty seven : Adverbs of
+degree », Grammar summary **p.177–178**, transcrite verbatim plus bas. De même, la liste de
+vocabulaire de la leçon est imprimée en annexe (« NEW WORDS PER LESSON », p.180). Voir la section
+« Les annexes de fin d'ouvrage ».
+
+##### Career research project — étape 4 (clôture) : ce que le manuel en imprime
+
+**RIEN. Aucune trace du « career research project » dans la leçon 27** (p.147–151) : ni encadré
+« project », ni étape numérotée, ni consigne de restitution, ni grille d'évaluation, ni forme
+attendue. Les cinq pages sont intégralement occupées par le pre-reading, les quatre commentaires
+illustrés, les questions, le LANGUAGE PRACTICE et le speaking décrits ci-dessus.
+→ Voir « Écarts constatés » en fin de fichier.
+
+---
+
+#### L28 — Water Scarcity (manuel p.152–154)
+
+Bandeau imprimé : `LESSON 28` — titre **Water Scarcity** (p.152).
+Structure imprimée : **Stage One : Pre-Reading** (p.152) → **Stage Two : Reading** (p.152–153)
+→ **Stage Three :** (p.153–154). ⚠️ **Le bandeau « Stage Three » de la p.153 n'a PAS de
+sous-titre de compétence** (pas de « Speaking » ni « Writing » sous le bandeau, contrairement
+aux stages précédents) : il englobe directement `1 LANGUAGE PRACTICE` puis `2 SPEAKING`.
+**Il n'y a pas de stage Writing dans cette leçon.**
+
+##### Stage One : Pre-Reading (p.152) — A quiz
+
+- Stage : Stage One : Pre-Reading
+- Consigne / titre verbatim : « **A quiz : In your family, are you considerate consumers of
+  water ?** » *(espace avant le point d'interrogation [sic])*
+- Matériel : questions à puces ; à droite, photo d'une femme portant deux seaux à la palanche,
+  légendée en gras **« Water is life »**.
+
+Questions du quiz, dans l'ordre imprimé (verbatim) :
+
+1. « Do you have a bath or a shower when you use the bathroom? »
+2. « Do you water your garden in the evening or in full sunshine? »
+3. « Do you use a vessel or running water when you wash up the dishes? »
+4. « Do you use a bucket of water and a rag or a water hose when you wipe the floor? »
+5. « Do you use a bucket of water and a rag or a water hose when you clean the family's car? »
+6. « Have you got a water well at home? »
+7. « Do you have economical water equipment at home? ( special taps – special meters…) »
+8. « Do you deal with repairs in the water pipes / in the taps as soon as possible? »
+9. « Do you notify the "SONEDE" as soon as you detect any leakage in the water mains? »
+
+*(9 puces imprimées ; référence tunisienne explicite : la **SONEDE**, entre guillemets dans le
+texte. Aucun barème, aucun score, aucun corrigé n'est imprimé pour ce quiz.)*
+
+##### Stage Two : Reading (p.152–153)
+
+###### Activité 1 (p.152–153) — Scrambled paragraphs
+
+- Stage : Stage Two : Reading
+- Consigne verbatim : « **Read the scrambled paragraphs and** / **a- cross out the irrelevant
+  one.** / **b- rearrange the others to get a coherent text.** »
+- Matériel : quatre paragraphes encadrés sur fond bleu, étiquetés **A-**, **B-** (p.152),
+  **C-**, **D-** (p.153).
+- Source imprimée, alignée à droite sous le paragraphe D (p.153) : « **2003 Independent Digital
+  (UK) Ltd.** »
+
+Genre : article de presse en ligne (vulgarisation environnementale), registre journalistique
+informatif. Longueur : ~250 mots au total, 4 paragraphes de 3 à 5 lignes.
+
+Résumé structuré fidèle des quatre paragraphes (pas de recopie) :
+
+- **A-** — La croissance démographique est présentée comme la cause principale : le passage à
+  plus de six milliards d'humains en l'an 2000 a quasi doublé la consommation d'eau en un
+  demi-siècle. La demande ne vient **not only** de la boisson, de l'hygiène et du traitement des
+  déchets humains, **but also** de l'industrie dans le monde développé et de l'agriculture dans
+  le monde en développement. *(Le manuel imprime `not only` et `but also` en **gras rose** dans
+  ce paragraphe — c'est l'amorce de la leçon de langue.)*
+- **B-** — Selon un rapport de l'ONU, le défi majeur de l'humanité au XXI<sup>e</sup> siècle
+  pourrait n'être ni la guerre, ni la faim, ni la maladie, mais le manque d'eau douce : l'eau est
+  la chose la plus commune sur Terre mais 2,5 % seulement en est douce, le reste étant salé ; et
+  ce qui est disponible (lacs, rivières, aquifères/eaux souterraines, ruissellement des pluies)
+  subit une pression croissante venue de plusieurs directions.
+- **C-** — Rôle historique de l'irrigation dans la réduction de la pauvreté : sécurité
+  alimentaire, protection contre la famine, emplois agricoles et non agricoles ; le développement
+  de l'agriculture irriguée est présenté comme un moteur de croissance économique.
+  → C'est vraisemblablement le paragraphe « hors sujet » visé par la consigne a- (bienfaits de
+  l'irrigation, non pénurie), mais **le manuel n'imprime aucun corrigé** : c'est une lecture, pas
+  une réponse imprimée.
+- **D-** — Au-delà de ce qui précède, le changement climatique aggrave encore la tension sur
+  l'approvisionnement, comptant probablement pour un cinquième de l'augmentation de la pénurie ;
+  du fait du réchauffement, les précipitations devraient diminuer **not only** dans les pays
+  sujets à la sécheresse **but also** dans les régions tropicales. *(`not only` / `but also`
+  également en **gras rose**.)*
+
+**Corrigé (ordre correct, paragraphe à barrer) : réponse non imprimée.**
+
+###### Activité 2 (p.153)
+
+- Stage : Stage Two : Reading
+- Consigne verbatim : « **Read  paragraph B and find an expression that explains the title"water
+  scarcity."** » *(double espace après « Read », et guillemet ouvrant collé à « title » [sic])*
+
+**Corrigé : réponse non imprimée.**
+
+##### Stage Three (p.153–154)
+
+###### Activité 1 — LANGUAGE PRACTICE (p.153–154)
+
+Bloc numéroté `1`, intitulé imprimé en capitales : « **LANGUAGE PRACTICE** ». Trois sous-tâches
+a → c.
+
+**a-** (p.153) Consigne verbatim : « **Focus on the underlined parts in the following sentence
+and guess the relation between part 1 and part 2. Do you think the relation shows:** » — trois
+options imprimées :
+
+- « a- addition? »
+- « b- opposition? »
+- (précédé de « or ») « c- result? »
+
+Phrase support imprimée en gros caractères, avec les repères **1** et **2** en rose au-dessus des
+segments soulignés : « Demand comes <u>not only</u>[1] from the need to drink, the need to wash,
+and the need to deal with human waste <u>but also</u>[2] from industry in the developed world and
+from agriculture in the developing world. »
+
+**Corrigé : réponse non imprimée.**
+
+**b-** (p.153) Consigne verbatim : « **Express differently using "not only… but also."(Number 1
+has been done for you.)** » *(pas d'espace avant la parenthèse [sic])*
+
+Exemple **corrigé imprimé** (en italique) :
+
+| Amorce imprimée | Réponse imprimée |
+| --- | --- |
+| *It's cold and wet in the North:* | *It's not only cold but also wet in the North.* |
+
+Items à traiter par l'élève (réponses **non imprimées**), dans l'ordre :
+
+- « He's deaf and dumb. »
+- « Both his father and his mother are dead. »
+- « Both Peter and John are pop fans. »
+- « They both smoke and drink. »
+- « He can speak both English and German. »
+- « She can play the guitar and the drum. »
+- « He has the time and the money to play polo. »
+- « He dislikes the way we speak and disapproves of the way we dress. »
+- « They broke into his office, stole his books and tore up his manuscripts. »
+
+**c-** (p.154) Consigne verbatim : « **With the help of your  teacher complete the table below.** »
+*(double espace après « your » [sic])*
+
+⚠️ **ENCADRÉ DE RÈGLE — imprimé À COMPLÉTER PAR L'ÉLÈVE, deux colonnes sur trois vides :**
+
+| Structure | Meaning/Function | Example |
+| --- | --- | --- |
+| Not only…but also | …………………………............ | …………………………............ |
+
+C'est le seul encadré de règle du chapitre, et il ne contient **aucune règle formulée** : le
+manuel n'imprime que le nom de la structure et délègue explicitement le remplissage à
+l'enseignant. **La règle « not only… but also » n'est donc énoncée nulle part dans le manuel.**
+
+###### Activité 2 — SPEAKING (p.154)
+
+Bloc numéroté `2`, intitulé imprimé en capitales : « **SPEAKING** ».
+
+- Consigne verbatim : « **Pair work : Discuss these points with a partner.** »
+- Cadrage imprimé sous la consigne : « With reference to "Stage One", water scarcity is a serious
+  problem in Tunisia. »
+- Points à discuter :
+  - « **a- Are there any practical efforts to reduce the effects of water scarcity?** »
+    - « – Is the government building any dams, any mountain lakes…? »
+    - « – Is there any drilling for deep sources of ground water? »
+  - « **b- What can you do as individuals?** »
+
+Bas de page : photographie d'un enfant maigre devant une vache morte en terre aride, légendée en
+gras **« Victims of drought »**. Aucune consigne n'est attachée à cette image. La moitié basse de
+la p.154 est vide — la leçon 28 s'arrête là.
+
+##### Encadrés / vocabulaire dans L28
+
+- **Un encadré de règle, mais VIDE côté contenu** : le tableau « Structure / Meaning/Function /
+  Example » (p.154), imprimé avec des pointillés à remplir « with the help of your teacher ».
+- **Aucune liste de vocabulaire** imprimée.
+- Le seul marquage typographique de la notion est le **gras rose** sur `not only` / `but also`
+  dans les paragraphes A et D du texte (p.152–153).
+
+→ ⚠️ **La règle EXISTE dans le manuel, en annexe** : « Lesson twenty eight : Not only……………. but
+also », Grammar summary **p.178**, transcrite verbatim plus bas — avec sa définition
+(« pairs of conjunctions … parallel structure »), trois exemples annotés 1/1/2/2 et un NB. Ce que
+l'encadré vide de la p.154 demande à l'enseignant de dicter est donc **déjà imprimé 24 pages plus
+loin**. Liste de vocabulaire également en annexe (p.180). Voir « Les annexes de fin d'ouvrage ».
+
+##### Career research project dans L28
+
+**Aucune trace** : ni étape, ni consigne de restitution, ni grille. Voir « Écarts constatés ».
+
+---
+
+#### L29 — Time for a Song (manuel p.160–161)
+
+> ⚠️ **Œuvre tierce sous droits — règle R-2 appliquée.** La leçon est bâtie sur une chanson.
+> **Aucune parole, aucun vers, aucun fragment n'est reproduit ici**, y compris sous forme de
+> texte à trous (un vers lacunaire reste une reproduction du vers). Les activités qui portent
+> sur les paroles sont décrites **structurellement**. Les consignes, les questions, le
+> métalangage et les listes de mots hors-paroles sont, eux, transcrits verbatim.
+
+Bandeau imprimé : `LESSON 29` — **titre imprimé : « Time for a Song »**.
+⚠️ **Le manuel n'imprime NI le titre de la chanson NI le nom de l'interprète**, ni sur la p.160
+ni sur la p.161 : aucune mention « Annie's Song », aucun crédit, aucune source, aucun copyright.
+Le seul intitulé imprimé est le titre de leçon « Time for a Song ». (Le libellé « Annie's song »
+vient du guide, pas du manuel — voir « Écarts constatés ».)
+
+Structure imprimée : **Stage One : Pre-Listening** (p.160) → **Stage Two : Listening** (p.160–161)
+→ **Stage Two : Writing** (p.161).
+⚠️ **Coquille de structure du manuel** : le troisième bandeau de la p.161 est imprimé
+« **Stage Two : Writing** » [sic] alors qu'il suit déjà un « Stage Two : Listening » — il devrait
+lire « Stage Three ». Le manuel imprime donc **deux « Stage Two »** dans la même leçon.
+
+##### Stage One : Pre-Listening (p.160)
+
+###### Activité 1 — Spidergram
+
+- Stage : Stage One : Pre-Listening
+- Consigne verbatim : « **Complete the spidergram with words related to songs.** »
+- Matériel : un spidergram (bulles roses reliées à une bulle centrale bleue). Bulle centrale :
+  **SONGS**. Six bulles périphériques, chacune **amorcée par ses premières lettres suivies de
+  points de suspension**, à compléter par l'élève. Amorces imprimées, dans le sens horaire à
+  partir du haut :
+
+| Position | Amorce imprimée |
+| --- | --- |
+| haut | `Hi........` |
+| haut-droite | `Mel......` |
+| bas-droite | `Tu.....` |
+| bas | `Comp....` / `Discs` *(sur deux lignes)* |
+| bas-gauche | `Lyr......` |
+| haut-gauche | `Alb.....` |
+
+**Corrigé : réponse non imprimée** (le manuel ne donne pas les mots attendus).
+
+###### Activité 2 — Tick the statements
+
+- Stage : Stage One : Pre-Listening
+- Consigne verbatim : « **Go through the following statements and tick the ones which best apply
+  to you.** »
+- Amorce imprimée en gras sous la consigne : « **You sing when you :** »
+- Matériel : 9 propositions à puces disposées en trois colonnes. Ordre imprimé, colonne par
+  colonne :
+  - colonne 1 : « Are happy. » · « Are sad. » · « Are alone. »
+  - colonne 2 : « Are in love. » · « Get good news. » · « Walk in the rain. »
+  - colonne 3 : « Take showers. » · « Are working. » · « Have problems. »
+
+Pas de corrigé (réponse personnelle).
+
+##### Stage Two : Listening (p.160–161)
+
+###### Activité 1 (p.160) — Gap-fill sur la première strophe
+
+- Stage : Stage Two : Listening
+- Consigne verbatim : « **Listen to the first stanza and fill in the blanks.** »
+- Matériel (décrit structurellement, **non reproduit** — R-2) : la **première strophe de la
+  chanson est imprimée en version lacunaire sur 8 lignes**, chaque ligne portant **un** blanc
+  matérialisé par une suite de points. Les blancs tombent sur des noms concrets (éléments
+  naturels et lieux) et, pour les deux dernières lignes, sur le complément d'un verbe répété. Six
+  des huit lignes s'ouvrent sur un marqueur de comparaison, ce qui prépare l'activité 3.
+  À droite de l'exercice, photo d'un oiseau jaune posé sur des chardons en fleur (sans légende).
+- Nature de la tâche : écoute + restitution lexicale (8 mots à retrouver).
+
+**Corrigé : réponse non imprimée.**
+
+###### Activité 2 (p.161) — Restauration de la seconde strophe
+
+- Stage : Stage Two : Listening
+- Consigne verbatim : « **Listen to the second stanza and replace the underlined words
+  /expressions with the original ones.** » *(espace avant la barre oblique [sic])*
+- Matériel (décrit structurellement, **non reproduit** — R-2) : la **seconde strophe est imprimée
+  sur 8 lignes dans une version ALTÉRÉE** ; **cinq** lignes contiennent un mot ou une expression
+  **en gras souligné** que l'élève doit remplacer, à l'écoute, par le mot d'origine. Les cinq
+  éléments soulignés sont : un nom abstrait répété sur deux lignes consécutives, un verbe de
+  posture répété sur deux lignes consécutives, un quantifieur, et une expression verbale négative
+  en fin de strophe. Trois lignes sont sans mot souligné (dont la ligne d'ouverture, reprise à
+  l'avant-dernière ligne).
+  À droite, photo d'un couple étendu sur une couverture dans un parc, lisant (sans légende).
+- Nature de la tâche : écoute discriminante + correction lexicale (5 substitutions).
+
+**Corrigé : réponse non imprimée.**
+
+###### Activité 3 (p.161) — Repérage de la figure de style
+
+- Stage : Stage Two : Listening
+- Matériel : aucune nouvelle donnée ; renvoi à la strophe 1.
+- Consignes verbatim, sous-tâches a → d :
+  - « **a- Listen to stanza one again and find out a structure that is repeated.** »
+  - « **b- What is it ?** » *(espace avant le point d'interrogation [sic])*
+  - « **c- Does it express ?** » → trois options à puces : « **a similarity** » ·
+    « **a difference** » · « **a contrast** »
+  - « **d- Is it called ?** » → trois options à puces : « **a metaphor** » · « **a simile** » ·
+    « **a personification** »
+
+⚠️ C'est **le seul endroit du chapitre où le métalangage stylistique est imprimé** : les mots
+*metaphor*, *simile*, *personification*, *similarity*, *difference*, *contrast* n'apparaissent
+qu'ici, **en tant qu'options d'un QCM oral**, jamais définis. **Corrigé : réponse non imprimée**
+— le manuel ne dit nulle part laquelle des trois figures est la bonne, ni ce qu'elles signifient.
+
+##### « Stage Two : Writing » [sic — lire Stage Three] (p.161)
+
+- Stage : bandeau imprimé « Stage Two : », sous-titre « **Writing** »
+- Consigne verbatim (bloc unique, non numéroté) : « **Throughout the year you have dealt with
+  different types of poetry. Now it's time for you to write your first poem. You may write about
+  any theme you like but what is better than writing about love?** »
+- Matériel : **aucun** — pas de canevas, pas de modèle, pas de grille d'évaluation, pas de
+  consigne de longueur, pas de critères. La moitié basse de la p.161 est **vide**.
+
+##### Encadrés / vocabulaire dans L29
+
+**AUCUN encadré de règle, de grammaire ou de vocabulaire dans la leçon 29.** Le spidergram
+(p.160) est un support d'exercice à compléter, pas un encadré de contenu. La notion annoncée
+(comparaison, *simile* / *metaphor*) **n'est ni définie ni exemplifiée** : elle n'existe dans le
+manuel que sous forme des six options du QCM 3-c / 3-d. **Aucune liste de vocabulaire** n'est
+imprimée ; le seul lexique du domaine est constitué des six amorces à compléter du spidergram.
+
+→ ⚠️ Et **contrairement aux leçons 27 et 28, l'annexe ne rattrape RIEN ici** : le Grammar summary
+s'arrête à « Lesson twenty eight » (p.178). **La comparaison n'a de règle nulle part dans le
+manuel.** Seul appui : les mots *metaphor*, *simile*, *lyrics*, *melody*, *tunes*, *compact disc*,
+*drown* figurent dans « NEW WORDS PER LESSON » p.180 — sous l'étiquette « Lesson 30 », les
+étiquettes 29 et 30 étant interverties. Voir « Les annexes de fin d'ouvrage ».
+
+##### Career research project dans L29
+
+**Aucune trace.**
+
+---
+
+#### L30 — Progress check 3 and Self-evaluation (manuel p.162–165)
+
+Bandeau imprimé : `LESSON 30` — **titre imprimé : « Progress check 3 »** (casse exacte : seul
+« Progress » a une capitale [sic]). Pas de bandeau « Stage » : la leçon est une **suite plate de
+12 exercices numérotés** (p.162–164), suivie d'un encadré **« Self-evaluation »** (p.165) qui,
+lui, **n'est pas numéroté comme un exercice** et porte son propre titre sur bandeau rose.
+
+**Aucun corrigé n'est imprimé pour aucun des 12 exercices** ni pour l'auto-évaluation.
+
+##### Les 12 exercices, un par un
+
+###### Exercice 1 (p.162)
+
+- Consigne verbatim : « **Listen and fill in the blanks in this paragraph. Be careful about
+  spelling.** »
+- Compétence : écoute + orthographe.
+- Matériel : un paragraphe suivi de **9 blancs numérotés (1) à (9)**, en pointillés.
+- Contenu du support (résumé, sans recopie) : un souvenir d'enfance — la mère passant des heures
+  interminables à laver couches et vêtements à la main ; puis l'énumération des appareils
+  électriques (machine à laver, aspirateur, robot ménager…) qui ont épargné des corvées ; la
+  lumière et la chaleur apportées par l'électricité ; conclusion sur l'impossibilité de la vie
+  moderne sans électricité.
+- **Corrigé : réponse non imprimée.** (Le texte à dicter n'est pas dans le manuel élève.)
+
+###### Exercice 2 (p.162)
+
+- Consigne verbatim : « **Fill in the blanks with words from the box. There's one extra word.** »
+- Compétence : lexique / cohésion.
+- Matériel : une boîte de mots (fond bleu) + un texte à **8 blancs numérotés (1) à (8)**.
+- **Boîte de mots, verbatim et dans l'ordre imprimé :**
+  « caring – life – who – programs - choose – reached -of – school – addicted – occasionally »
+  *(ponctuation imprimée telle quelle : tirets espacés sauf « programs - choose », « reached -of »
+  et « -of » collé [sic])*
+- ⚠️ **Incohérence imprimée** : la consigne annonce **un** mot en trop, mais la boîte contient
+  **10 mots** pour **8 blancs**, soit **deux** mots en trop. Voir « Écarts constatés ».
+- Contenu du support (résumé, sans recopie) : témoignage à la première personne sur un enseignant
+  d'école du dimanche, **Mr. Abbey**, qui a perçu l'isolement d'un enfant dont le père ne disait
+  pas son amour, et qui est devenu pour lui un modèle paternel ; visites à **Techwood Homes**
+  (logement social où vivaient les Cathy), invitations au chalet du **Lake Jackson** avec son fils
+  **Ted** ; conclusion sur le choix délibéré d'un modèle de vie, celui de **Theo Abbey**.
+- **Corrigé : réponse non imprimée.**
+
+###### Exercice 3 (p.162)
+
+- Consigne verbatim : « **Choose the correct option.** »
+- Compétence : grammaire — temps, modaux, voix passive, formes en -ing.
+- Matériel : un paragraphe continu où **7 triplets d'options** sont imprimés **en gras entre
+  parenthèses**, à même le texte. Triplets, dans l'ordre imprimé :
+  1. « (are teaching - taught -have taught) »
+  2. « (will witness - witnessed - would witness) »
+  3. « (can - could - was able to) »
+  4. « (filled - filling - full) »
+  5. « (had rapidly followed - were rapidly followed - were rapidly following) »
+  6. « (using - used - usage) »
+  *(6 triplets effectivement imprimés.)*
+- Contenu du support (résumé, sans recopie) : l'enseignement à distance existe de longue date —
+  cours par correspondance sur support imprimé, puis cours télévisés aux débuts de la télévision,
+  puis, dans des salles équipées, un formateur touchant plusieurs classes par télévision
+  interactive ; les premiers cours en ligne par courriel ont été suivis de l'enseignement sur le
+  web ; aujourd'hui les modes se mélangent dans un même cours (bibliothèque = site web,
+  discussions par courriel, contenus imprimés et télévisés, examen final surveillé en présentiel).
+- **Corrigé : réponse non imprimée.**
+
+###### Exercice 4 (p.162)
+
+- Consigne verbatim : « **Put the bracketed words in the right tense or form.** »
+- Compétence : grammaire + **dérivation lexicale** (word formation).
+- Matériel : un paragraphe continu avec **8 items numérotés en gras entre parenthèses** :
+  « 1 (read) », « 2 (reach) », « 3 (mark) », « 4 (use) », « 5 (choice) », « 6(significance) »
+  *(sans espace [sic])*, « 7 (not overdo) », « 8 (good) ».
+- Contenu du support (résumé, sans recopie) : conseils de méthode de lecture active — lire avec
+  des questions précises en tête, repérer idées principales et détails importants, revenir en
+  arrière à la fin d'une section pour marquer l'idée maîtresse, se donner un système de marquage
+  personnel et l'utiliser de façon constante (souligner, surligner, mots-clés en marge, crochets),
+  relier les idées par des flèches ou des mots en marge, garder des marques simples et justifiées,
+  et ne pas tout surligner.
+- **Corrigé : réponse non imprimée.**
+
+###### Exercice 5 (p.163)
+
+- Consigne verbatim : « **Write the following words or expressions under the appropriate heading.
+  Some of them may be used under more than one heading.** »
+- Compétence : lexique — classement thématique.
+- Matériel : boîte de mots (fond gris) + tableau vide à 4 colonnes.
+- **Boîte de mots, verbatim et dans l'ordre imprimé :**
+  « career – offsprings – subject – music – manager - qualifications – generation – art – niece –
+  theatre – training – distance learning – cinema – studies – nephew – hard work – studies –
+  relatives – virtual universities – literature – promotion. »
+  ⚠️ **« studies » est imprimé DEUX FOIS** dans la boîte [sic] ; « offsprings » est un pluriel
+  fautif de *offspring* [sic].
+- Tableau à remplir (les quatre en-têtes sont les seuls contenus imprimés ; les cases sont vides) :
+
+| Education | Employment | Family | Entertainment |
+| --- | --- | --- | --- |
+| *(vide)* | *(vide)* | *(vide)* | *(vide)* |
+
+- **Corrigé : réponse non imprimée.**
+
+###### Exercice 6 (p.163)
+
+- Consigne verbatim : « **Circle the odd man out in each set of words.** »
+- Compétence : lexique — intrus / champ sémantique.
+- Matériel : tableau imprimé, 4 lignes de 4 mots (verbatim) :
+
+| | | | |
+| --- | --- | --- | --- |
+| a- T.V | newspaper | education | radio |
+| b- job | unemployment | work | profession |
+| c- movie | film | cinema | promotion |
+| d- tyranny | equality | justice | democracy |
+
+- **Corrigé : réponse non imprimée.**
+
+###### Exercice 7 (p.163)
+
+- Consigne verbatim : « **Develop the following hints into meaningful sentences to get a coherent
+  paragraph. (The hints are in order. Just add what is missing.)** »
+- Compétence : production écrite guidée (expansion de notes en paragraphe).
+- Matériel : 7 séries de mots-repères séparés par des barres obliques, verbatim :
+  - « a- Music / many advantages. »
+  - « b- It / give / students / chance / listen / react / see / touch / move. »
+  - « c- It also / improve / their / read / write /and / think / abilities. »
+  - « d- Listen / music / can help when they / think / learn / or / work. »
+  - « e- Music / need / be soft. »
+  - « f- If it / not to be / it  / be hard / students / learn or think. » *(double espace [sic])*
+  - « g- After all / primary goal / be / affect / person positively. »
+- **Corrigé : réponse non imprimée.**
+
+###### Exercice 8 (p.163)
+
+- Consigne verbatim : « **Insert the missing sentences to complete the following paragraph.** »
+- Compétence : cohérence / cohésion textuelle.
+- Matériel : un encadré de 3 phrases à replacer + un paragraphe portant **3 repères numérotés en
+  gras (1), (2), (3)**.
+- Phrases à replacer, verbatim :
+  - « a- They feel proud of their accomplishment. »
+  - « b- Getting the degree will improve your prospects considerably. »
+  - « c- They might be self- employed or retired. » *(espace après le tiret [sic])*
+- Contenu du paragraphe (résumé, sans recopie) : certains veulent le diplôme pour décrocher un
+  meilleur emploi — à expérience et compétence égales, c'est le diplômé qui est retenu **(1)** ;
+  d'autres ne visent pas l'emploi **(2)** et cherchent la satisfaction personnelle de voir leur
+  savoir converti en diplôme, qu'ils veulent accrocher au mur **(3)**.
+- **Corrigé : réponse non imprimée.**
+
+###### Exercice 9 (p.163)
+
+- Consigne verbatim : « **Punctuate and capitalize the following paragraph.** »
+- Compétence : ponctuation et majuscules.
+- Matériel : un paragraphe imprimé **sans aucune ponctuation ni majuscule**.
+- Contenu (résumé, sans recopie) : responsabilité personnelle et participation active présentées
+  comme les principes clés de l'emploi ; les sans-emploi sont censés chercher du travail ; les
+  bénéficiaires d'une aide au revenu sont censés chercher un emploi ou suivre une formation
+  professionnelle, ce qui doit les mener à l'autonomie.
+- **Corrigé : réponse non imprimée.**
+
+###### Exercice 10 (p.164)
+
+- Consigne verbatim : « **Read the paragraph below and write the topic sentence.** »
+- Compétence : production écrite — phrase-thème d'un paragraphe.
+- Matériel : **deux lignes de pointillés à remplir en tête du paragraphe**, puis le paragraphe
+  imprimé.
+- Contenu (résumé, sans recopie) : la croissance démographique doit être maîtrisée pour éviter la
+  catastrophe ; de nombreux problèmes environnementaux, sociaux et économiques sont causés ou
+  aggravés par la surpopulation et croissent avec elle ; pour stabiliser la population **non
+  seulement** dans les pays du tiers-monde **mais aussi** dans les zones industrialisées, États et
+  individus doivent viser ensemble la croissance démographique zéro.
+  ⚠️ Le paragraphe **réemploie la structure `not only… but also`** de la leçon 28 — c'est le seul
+  point de langue du chapitre hôte réinvesti dans ce Progress Check.
+- **Corrigé : réponse non imprimée.**
+
+###### Exercice 11 (p.164)
+
+- Consigne verbatim : « **Correct the underlined mistakes.** »
+- Compétence : chasse à l'erreur (grammaire, orthographe, ordre des mots).
+- Matériel : un paragraphe portant **5 segments soulignés** à corriger. Segments soulignés,
+  verbatim : « cause » · « river » · « hart » · « shorten » · « areas polluted ».
+- Contenu (résumé, sans recopie) : la pollution de l'air peut tuer même invisible — elle
+  provoquerait des maladies pulmonaires et des cancers, empoisonne rivières et lacs, endommage les
+  arbres et tue la faune sauvage ; elle pèse surtout sur les personnes âgées et les cardiaques,
+  les plus exposés à une mortalité prématurée due aux particules ; leur espérance de vie pourrait
+  être raccourcie d'un à deux ans en moyenne dans les zones les plus polluées.
+- **Corrigé : réponse non imprimée.**
+
+###### Exercice 12 (p.164)
+
+- Consigne verbatim : « **Arrange these words in the table according to the stressed syllable.
+  Then pronounce the words stressing the correct syllable.** »
+- Compétence : **phonologie — accent de mot** (la seule activité de prononciation de tout le
+  Progress Check).
+- Matériel : boîte de 16 mots + tableau vide à 4 colonnes.
+- **Boîte de mots, verbatim et dans l'ordre imprimé :**
+  « addiction – environmental – internet – education – communications – healthier – research –
+  technologically – medicines – availability – repeatedly – mathematics – supported –
+  impossibility – scientific – newspaper. »
+- Tableau à remplir (en-têtes seuls imprimés, cases vides) :
+
+| stress on the first syllable | stress on the second syllable | stress on the third syllable | stress on the fourth syllable |
+| --- | --- | --- | --- |
+| *(vide)* | *(vide)* | *(vide)* | *(vide)* |
+
+- **Corrigé : réponse non imprimée.**
+
+La moitié basse de la p.164 est **vide** — le Progress check 3 s'arrête à l'exercice 12.
+
+##### Self-evaluation (p.165) — questionnaire intégral
+
+Page entièrement occupée par un **encadré à liseré rose**, surmonté d'un bandeau rose portant le
+titre **« Self-evaluation »**. Ce n'est pas numéroté dans la suite des 12 exercices : c'est un
+bloc distinct, avec sa propre numérotation 1 → 8.
+
+**Chapeau verbatim :** « **We have almost finished the last part of the program. Now, it's time
+to think about the progress you've made so far. Read the questions below and tick where
+appropriate.** »
+
+**Item 1** — consigne verbatim : « **Do you feel you have made any progress in the last four
+months in …..?** » *(cinq points de suspension [sic])*
+Matériel : grille à cocher, 6 lignes × 3 colonnes, toutes les cases portant un trait à cocher.
+
+| | a lot | quite a lot | a little |
+| --- | --- | --- | --- |
+| – speaking | ____ | ____ | ____ |
+| – listening | ____ | ____ | ____ |
+| – reading | ____ | ____ | ____ |
+| – writing | ____ | ____ | ____ |
+| – grammar | ____ | ____ | ____ |
+| – vocabulary. | ____ | ____ | ____ |
+
+*(le point final après « vocabulary » est imprimé [sic])*
+
+**Item 2** — « **What skill do you still need to work on?** »
+Options : « a- speaking » · « b- listening » · « c- reading » · « d- writing »
+
+**Item 3** — « **Consult your teacher about how you can best improve your :** »
+Options : « a- speaking » · « b- listening » · « c- reading » · « d- writing »
+
+**Item 4** — « **Did you find the topics …  ?** » *(espace avant le point d'interrogation [sic])*
+Options : « a- very interesting » · « b- interesting » · « c- disinteresting »
+*(« disinteresting » pour *uninteresting* [sic])*
+
+**Item 5** — « **What are the themes** »
+Options : « a- you appreciated most? » · « b- you appreciated least? »
+
+**Item 6** — « **Did you find this  part of the  book…?** » *(doubles espaces [sic])*
+Options : « a- easy » · « b- accessible » · « c- difficult »
+
+**Item 7** — « **Do you feel you learnt …………  from "writing as a process?"** »
+Options : « a- a lot » · « b- quite a lot » · « c- a little. »
+
+**Item 8** — « **Do you feel ……………….   in doing a project. Why?** »
+Options : « a- very satisfied » · « b- just satisfied » · « c- dissatisfied »
+
+**Clôture verbatim, en gras hors numérotation :** « **Decide how you can improve your English.** »
+
+Le bas de l'encadré est **vide** (pas de lignes d'écriture imprimées). **Aucun corrigé, aucun
+barème.** Fin de la page 165.
+
+⚠️ Deux items sont les **seules mentions du projet et de l'écriture-processus** dans tout le
+chapitre : l'item 7 renvoie à « writing as a process » et l'**item 8 à « doing a project »** —
+mais sous forme de question de ressenti (« Do you feel …… in doing a project. Why? »), **pas**
+sous forme d'une étape de projet à réaliser.
+
+##### Ce que révise réellement le Progress Check 3, exercice par exercice
+
+Constat, pas déduction — relevé sur le contenu imprimé de chaque exercice :
+
+| Ex. | Thème du support | Notion / compétence testée | Chapitre hôte (XI — Ecology) ? |
+| --- | --- | --- | --- |
+| 1 | Électricité et appareils ménagers (science & technologie, vie quotidienne) | Écoute + orthographe (dictée à trous, 9 blancs) | ✗ |
+| 2 | Modèle / mentor, figure paternelle de substitution (famille, éducation morale) | Lexique + mot-outil `who`, cohésion (8 blancs, boîte de mots) | ✗ |
+| 3 | Enseignement à distance (éducation) | Temps verbaux, modaux, **voix passive**, formes en -ing (6 QCM en contexte) | ✗ |
+| 4 | Méthode de lecture active / study skills (éducation) | Temps & **dérivation lexicale** (impératif, `choice→`, `significance→`, `good→`) | ✗ |
+| 5 | Boîte lexicale à quatre entrées | Classement lexical : **Education / Employment / Family / Entertainment** | ✗ |
+| 6 | Quatre séries d'intrus | Champs sémantiques : médias · travail · cinéma · démocratie & droits | ✗ |
+| 7 | La musique et ses bienfaits (arts / divertissement) | Expansion de notes en paragraphe cohérent | ✗ |
+| 8 | Diplôme, emploi et satisfaction personnelle (éducation & travail) | Cohérence textuelle (3 phrases à replacer) | ✗ |
+| 9 | Responsabilité individuelle, chômage, formation (monde du travail) | Ponctuation et majuscules | ✗ |
+| 10 | **Surpopulation et croissance démographique zéro (écologie)** | Phrase-thème d'un paragraphe — le support **réemploie `not only… but also`** (L28) | ✅ |
+| 11 | **Pollution de l'air, faune, mortalité prématurée (écologie)** | Chasse à l'erreur (accord, pluriel, orthographe, passif, ordre adj.+nom) | ✅ |
+| 12 | Boîte lexicale transversale (addiction, environnement, internet, éducation, sciences…) | **Accent de mot (phonologie)** | partiel (2 mots sur 16) |
+
+**Verdict — le Progress Check 3 est un bilan de FIN D'ANNÉE, pas une révision du chapitre hôte.**
+
+- **Le thème hôte (XI — Ecology) n'est présent que dans 2 exercices sur 12** (10 et 11), soit
+  ~17 % du bilan. Les 10 autres balaient l'éducation, l'emploi, la famille, le divertissement/les
+  arts, les médias, la démocratie, la santé et la technologie — c'est-à-dire les thèmes des
+  chapitres antérieurs.
+- **Aucun des trois points de langue du chapitre 11 n'est testé en tant que tel** :
+  - **L27 — adverbes de degré (`very`/`quite`, `adj + enough to`, `too + adj + to`) : ABSENTS.**
+    Aucun exercice ne les sollicite (le triplet le plus proche, ex.3 item 4, oppose
+    `filled/filling/full`, pas `too/enough`).
+  - **L28 — `not only… but also` : présent une seule fois, et de façon PASSIVE** — la structure
+    apparaît dans le paragraphe support de l'ex.10, mais l'élève n'a pas à la produire ni à la
+    manipuler : la tâche demandée est d'écrire la phrase-thème.
+  - **L29 — comparaison, `simile` / `metaphor` : ABSENTS.** Aucun exercice de figure de style.
+- Le profil de ce PC 3 est donc **un troisième profil**, distinct des deux autres :
+  - PC 1 : ne révisait pas son thème hôte (il portait sur les thèmes I–II) ;
+  - PC 2 : révisait bien son propre thème ;
+  - **PC 3 : révision transversale de fin d'année (12 exercices, ~8 thèmes), où le thème hôte
+    n'occupe que 2 exercices et où aucune des notions grammaticales du chapitre n'est
+    évaluée.** Le chapeau du Self-evaluation le confirme explicitement en parlant de
+    « the last part of the program » et des « last four months ».
+
+##### Encadrés de règle / vocabulaire dans L30
+
+**AUCUN encadré de règle, de grammaire ni de vocabulaire.** Les trois « boîtes » imprimées (ex.2,
+ex.5, ex.12) sont des **réserves de mots pour l'exercice**, pas du contenu de cours ; les trois
+tableaux (ex.5, ex.6, ex.12) sont des **grilles vides à remplir**. La seule liste de vocabulaire
+au sens strict est celle de l'ex.12, donnée pour un travail phonologique. Rien n'énonce de règle.
+
+##### Où le corps du manuel s'arrête
+
+- **p.162–164** : les 12 exercices du Progress check 3. Rien d'autre (pas d'index, pas de page de
+  clôture) ; le bas de la p.164 est vide.
+- **p.165** : la page **Self-evaluation** seule, dans son encadré rose. **C'est la dernière page
+  du corps du manuel** : elle clôt la leçon 30, donc le thème XI, donc le programme
+  (« We have almost finished the last part of the program »).
+- Aucune page de remerciements, de crédits, de table des matières finale ni d'index ne figure en
+  p.163–165.
+- **Le corps du manuel (les 30 leçons) s'arrête donc à la p.165.** Les 19 pages suivantes
+  (p.166–184) sont des **annexes de fin d'ouvrage** — voir la section dédiée ci-dessous, ouverte
+  parce qu'elle **change le constat sur les encadrés de règle**.
+
+---
+
+#### Les annexes de fin d'ouvrage (p.166–184) — et ce qu'elles changent — chapitre 11
+
+Quatre annexes suivent le corps du manuel. Sondées **uniquement** pour répondre à « où le corps
+s'arrête » et au contrôle croisé sur les trois notions annoncées (p.166, 177, 178, 179, 180, 183,
+184 ouvertes ; les autres pages d'annexe non lues).
+
+| Pages | Annexe |
+| --- | --- |
+| p.166–178 | **Grammar summary** — les règles, leçon par leçon (« Lesson one : … » → « Lesson twenty eight : … ») |
+| p.179–180 | **NEW WORDS PER LESSON** — listes de vocabulaire, leçon par leçon |
+| p.181–183 | Table des verbes irréguliers (INFINITIVE / SIMPLE PAST / PAST PARTICIPLE) |
+| p.184 | **PHONETIC SYMBOLS** — voyelles brèves/longues, diphtongues, triphtongues, consonnes. **Dernière page du manuel.** |
+
+#### ⚠️ Rectification majeure : les règles de L27 et L28 SONT imprimées — mais en annexe
+
+Le constat « aucun encadré de règle dans les leçons » reste **exact page par page** (p.147–154,
+160–165). Mais il serait **faux** d'en conclure que le manuel n'énonce pas ces règles : il les
+**centralise en fin d'ouvrage**, dans le Grammar summary. Verbatim :
+
+**Grammar summary — « Lesson twenty seven : Adverbs of degree » (p.177 bas – p.178 haut)**
+
+Sous-titre imprimé : « **(almost, nearly, quite, just, too ……..)** »
+
+> « **a-** An adverb of degree modifies an adjective or another adverb. It is placed before the
+> adjective or adverb. »
+>
+> Exemples imprimés (adverbe en gras rose) :
+> *It was **too** hot to work..* *(double point final [sic])* · *The film was **fairly** good.* ·
+> *I know him **quite** well.* · *He played **extremely** badly.*
+>
+> « **b-** The infinitive after **too**, **enough**. »
+>
+> - « Too + adjective + infinitive »
+>   *You are too young to understand .(You do **not** understand because you are too young).*
+>   *(espace avant le point [sic])*
+>   *It was too late to do anything. (He could **not** do anything because it was too late).*
+> - « Adjective + enough + infinitive »
+>   *You are old enough to know better. (You should know better at your age).*
+>   *He was intelligent enough to turn off the gas. (He turned off the gas).*
+
+**Grammar summary — « Lesson twenty eight : Not only……………. but also » (p.178)**
+
+> « **Not only ........... but also** are pairs of **conjunctions** that are used together to join
+> the members of  a parallel structure. » *(double espace [sic])*
+>
+> « The first part of the correlative expression comes before the first member and the second part
+> before the second member. »
+>
+> Trois exemples imprimés, chacun surmonté de repères **1 / 1 / 2 / 2** en rose et noir, membres
+> parallèles soulignés :
+> - *Henry **not only** <u>returned</u> the money **but also** <u>paid</u> interest.*
+> - ***Not only** <u>the parents</u> **but also** <u>the children</u> enjoyed the program.*
+> - *She was born **not only** <u>deaf</u> **but also** <u>dumb</u>.*
+>
+> « **NB :**   Correlative conjunction must be followed by the same grammatical structure. »
+
+⚠️ **Le Grammar summary S'ARRÊTE à « Lesson twenty eight ».** Il n'y a **ni « Lesson twenty nine »
+ni « Lesson thirty »** : la moitié basse de la p.178 est vide et la p.179 ouvre déjà
+« NEW WORDS PER LESSON ». **La comparaison (`simile` / `metaphor`) n'a donc de règle nulle part
+dans le manuel** — ni dans la leçon 29, ni en annexe.
+
+#### NEW WORDS PER LESSON (p.180) — et un décalage de numérotation
+
+Les listes de vocabulaire des dernières leçons sont imprimées **verbatim** :
+
+| Étiquette imprimée | Mots imprimés |
+| --- | --- |
+| **Lesson 27** | account for(verb) · ban · bill · consumption · dam · damage · deforestation. · depletion · drill · drought · dump |
+| **Lesson 28** | endanger · extinct · fumes · purify · rainfall · reduction · reverse · thinning · trap · warming · wildlife |
+| **lesson 29** *(minuscule [sic])* | accomplishment · facility · food processor · interactive · promotion · witness |
+| **Lesson 30** | compact disc · drown · lyrics · melody · metaphor · simile · tunes |
+
+**Deux anomalies constatées** dans cette table :
+
+1. **« Lesson 27 » et « Lesson 28 » ne séparent pas les deux leçons : elles découpent le MÊME
+   lot de vocabulaire écologique par ordre alphabétique** — a→d sous « Lesson 27 »
+   (*account for … dump*), e→w sous « Lesson 28 » (*endanger … wildlife*). Des mots qui
+   n'apparaissent que dans la leçon 27 (*depletion*, *thinning*, *wildlife*, *warming*, *fumes*,
+   *purify*) sont ainsi répartis des deux côtés.
+2. **« lesson 29 » et « Lesson 30 » sont INTERVERTIES** par rapport aux bandeaux des leçons :
+   - l'étiquette « lesson 29 » porte le vocabulaire du **Progress check 3** — *food processor*
+     (ex.1), *facility* et *interactive* (ex.2/ex.3), *witness* (ex.3), *promotion* (ex.5/6),
+     *accomplishment* (ex.8) — c'est-à-dire la **leçon 30** ;
+   - l'étiquette « Lesson 30 » porte le vocabulaire de **Time for a Song** — *compact disc*,
+     *lyrics*, *melody*, *tunes* (les amorces du spidergram p.160), *metaphor*, *simile*
+     (le QCM 3-d p.161), *drown* — c'est-à-dire la **leçon 29**.
+
+   → Conséquence utile : **quatre des six amorces du spidergram de la p.160 sont récupérables
+   dans cette liste** (`Comp....Discs` → compact disc, `Lyr......` → lyrics, `Mel......` →
+   melody, `Tu.....` → tunes). Ce **n'est pas un corrigé imprimé** — la liste ne dit pas qu'elle
+   répond au spidergram — mais c'est le seul appui lexical du manuel. Les amorces `Hi........` et
+   `Alb.....` n'ont **aucun** appui imprimé.
+
+---
+
+#### Écarts constatés — chapitre 11
+
+**A. Écarts entre le guide et le manuel (contrôle croisé)**
+
+1. **L27 — adverbes de degré : ANNONCE CONFIRMÉE, avec une nuance de localisation.** La leçon
+   travaille bien `very` / `quite` / `enough` / `too` (p.150, tâches a→e), mais **elle ne formule
+   aucune règle** : elle la fait deviner. La règle n'est imprimée qu'en **annexe p.177–178**
+   (« Adverbs of degree »). Le manuel ajoute deux adverbes non annoncés par le guide dans son
+   sous-titre — *almost*, *nearly*, *just* — et deux dans ses exemples — *fairly*, *extremely*.
+2. **L28 — `not only… but also` : ANNONCE CONFIRMÉE**, même schéma : manipulée p.153–154, énoncée
+   seulement en annexe p.178. L'encadré de la leçon (p.154) est **imprimé vide**, à remplir
+   « with the help of your teacher ».
+3. **L29 — comparaison / `simile` / `metaphor` : ANNONCE PARTIELLEMENT DÉMENTIE.** Les trois mots
+   existent bien dans le manuel, mais **uniquement comme options d'un QCM oral** (p.161, tâches
+   3-c et 3-d) et comme entrées de la liste lexicale (p.180). **Aucune définition, aucun exemple,
+   aucune règle, aucun corrigé** : ni dans la leçon, ni dans le Grammar summary — qui s'arrête à
+   la leçon 28. Un élève travaillant seul sur ce manuel **ne peut pas savoir** ce qu'est une
+   *simile* ni laquelle des trois figures est attendue.
+4. **⚠️ « Career research project — étape 4 » : ANNONCE DÉMENTIE, l'étape est INTROUVABLE.**
+   Le chapitre 11 **ne contient aucune trace** du projet : ni en L27 (où l'étape de clôture était
+   attendue), ni en L28, ni en L29, ni en L30. Aucune consigne de restitution, aucune grille
+   d'évaluation, aucune forme attendue, aucun encadré « project ». La **seule** mention d'un
+   projet dans toute la tranche est l'**item 8 du questionnaire d'auto-évaluation** (p.165) :
+   « Do you feel ………………. in doing a project. Why? » — une question de **ressenti rétrospectif**,
+   pas une étape de travail. **Si les chapitres 08–10 portent les étapes 1 à 3, l'étape 4 n'a pas
+   de support imprimé dans le manuel élève** : elle est soit dans le livre du professeur, soit
+   absente. Constat, pas déduction.
+5. **L29 — le titre et l'interprète de la chanson ne sont PAS imprimés.** Le manuel titre la
+   leçon « **Time for a Song** » et ne nomme jamais l'œuvre ni son auteur, nulle part sur les
+   p.160–161 : aucun crédit, aucune source, aucune mention de copyright. Le libellé « Annie's
+   song » du guide **n'a aucun répondant imprimé** dans la tranche.
+
+**B. Écarts et coquilles internes au manuel**
+
+6. **Le chapitre n'a pas de page de thème.** Aucun intitulé « Theme XI » ni « Ecology » n'est
+   imprimé sur les pages de la tranche ; les leçons s'enchaînent par leurs seuls bandeaux.
+7. **p.148 vs p.150** — le commentaire de la p.148 imprime *That would be very dangerous* ; la
+   p.150 le réimprime en *This would be very dangerous* [sic].
+8. **p.153** — le bandeau « Stage Three : » de la leçon 28 **n'a pas de sous-titre de compétence**
+   (les autres en ont un : Pre-Reading, Reading, Speaking…).
+9. **p.161** — la leçon 29 imprime **deux bandeaux « Stage Two »** : « Stage Two : Listening »
+   (p.160) puis « Stage Two : Writing » (p.161). Le second devrait lire « Stage Three ».
+10. **p.162, exercice 2** — la consigne annonce « There's one extra word », mais la boîte contient
+    **10 mots pour 8 blancs**, soit **deux** mots en trop. *(Vérifié à 300 dpi.)*
+11. **p.163, exercice 5** — le mot **« studies » est imprimé deux fois** dans la même boîte, et
+    « offsprings » est un pluriel fautif de *offspring*. *(Vérifié à 300 dpi.)*
+12. **p.165, item 4** — « disinteresting » est employé pour *uninteresting* [sic].
+13. **p.180** — la table « NEW WORDS PER LESSON » intervertit les leçons 29 et 30 et découpe
+    27/28 alphabétiquement au lieu de les séparer (détail ci-dessus).
+14. **Coquilles de composition** relevées et signalées `[sic]` au fil du fichier : espaces doubles
+    ou triples dans plusieurs consignes (p.151, p.153, p.154, p.163, p.165), espace avant `?`
+    (p.152, p.161, p.164), guillemet collé (`title"water scarcity."`, p.153), tiret suivi d'un
+    espace (`ozone- damaging` p.151, `self- employed` p.163), `6(significance)` sans espace
+    (p.162), `reached -of` (p.162), double point final (`to work..` p.178).
+
+**C. Écart pédagogique de fond**
+
+15. **Le Progress check 3 n'évalue aucune des trois notions de langue du chapitre qui l'héberge.**
+    `too/enough` (L27) et `simile/metaphor` (L29) sont absents ; `not only… but also` (L28)
+    n'apparaît qu'**en passant, dans un texte support** (ex.10), sans que l'élève ait à le
+    produire. Détail exercice par exercice dans le tableau de la section L30.
+16. **Aucun corrigé n'est imprimé dans toute la tranche**, à trois exceptions près, toutes des
+    **exemples résolus servant de modèle** : deux en L27 (p.150, tâche e-) et un en L28 (p.153,
+    tâche b-).
+
+---
+
+#### Incertitudes — chapitre 11
+
+- **Aucune zone illisible.** Aucun `[?]` n'a été posé : les rendus 150 dpi étaient lisibles de
+  bout en bout, et les deux points numériques litigieux (boîtes des exercices 2 et 5 du Progress
+  check) ont été **re-rendus et revérifiés à 300 dpi**.
+- **Compte des puces du quiz p.152** : 9 puces relevées. La mise en page alterne des puces
+  indentées et non indentées, ce qui rend le regroupement visuellement ambigu, mais le compte des
+  marqueurs `•` est ferme.
+- **Exercice 3 du Progress check (p.162)** : 6 triplets d'options comptés (vérifié à 300 dpi).
+- **Identification du paragraphe « hors sujet » de L28** (paragraphe C) : c'est une **lecture**,
+  pas une donnée imprimée — le manuel ne publie aucun corrigé. Signalé comme tel dans le fichier.
+- **Contenu du support audio** de L29 (activités 1 et 2) et de l'exercice 1 du Progress check :
+  non imprimé dans le manuel élève, donc non transcriptible ici.
+- **Annexes p.167–176, p.181–182** : non ouvertes. Le Grammar summary a été sondé sur son début
+  (p.166) et sur sa fin (p.177–178) ; les pages intermédiaires portent les règles des leçons 3 à
+  26, **hors périmètre**. La conclusion « le Grammar summary s'arrête à la leçon 28 » repose sur
+  un constat direct : la p.178 se termine sur la règle de la leçon 28 avec une moitié de page
+  vide, et la p.179 ouvre la table de vocabulaire.
+- **p.155–159 (leçon Arts, A10)** : hors périmètre, **non ouvertes**, conformément à la consigne.
+
+---
+
+#### Pages réellement lues — chapitre 11
+
+**Périmètre assigné — intégralement couvert (14 pages) :**
+
+| Pages | Contenu | Rendu |
+| --- | --- | --- |
+| p.147, 148, 149, 150, 151 | Leçon 27 — Our World, Our Environment | 150 dpi |
+| p.152, 153, 154 | Leçon 28 — Water Scarcity | 150 dpi |
+| p.160, 161 | Leçon 29 — Time for a Song | 150 dpi |
+| p.162, 163 | Leçon 30 — Progress check 3 (ex. 1–9) | 150 dpi **+ 300 dpi** (revérification des boîtes de mots des ex. 2 et 5) |
+| p.164 | Leçon 30 — Progress check 3 (ex. 10–12) | 150 dpi |
+| p.165 | Leçon 30 — Self-evaluation | 150 dpi |
+
+**Pages d'annexe sondées hors périmètre (7 pages), pour situer la fin du corps du manuel et
+trancher le contrôle croisé :** p.166 (début du Grammar summary), p.177 et p.178 (règles des
+leçons 27 et 28, et fin du Grammar summary), p.179 et p.180 (NEW WORDS PER LESSON), p.183 (fin de
+la table des verbes irréguliers), p.184 (PHONETIC SYMBOLS, dernière page du manuel).
+
+**Pages NON ouvertes :** p.155 à 159 (leçon « Arts » A10 — exclues par consigne) ; p.167–176 et
+p.181–182 (annexes intermédiaires, hors périmètre).
+
 ## 5. Sources croisées
 
 - **Guide enseignant** : `641203P00` — « **Perform to Learn — Second Year Secondary Education — Teacher's Book** » (National Pedagogic Centre, authors Ammar / Merdessi / Omrane / Raddaoui). **Autorité de scope** pour ce couple. Structure : **PART I** Introduction (p.5–10) ; **PART II** Book Map / Lesson descriptions / Teaching hints = grilles **Skills/Subskills/Functions/Grammar/Vocabulary(/Pronunciation)** des **11 thèmes × 30 leçons + 20 leçons Arts/Économie** (p.11–73) ; **PART III** Answer Key (diagnostic test, review module, lesson 21 crossword) ; **PART IV** Transcript (chansons/tapescripts : *Bridge Over Troubled Water* L4, *Interview With a Footballer* L7, *Songs of Freedom* L13, *Equality Offers Prosperity* L16, *What's Your Dream Job?* L21, *What Will Man Be Like?* L26, *Annie's Song* L29) ; **PART V** Communicative Functions and Exponents (référentiel transversal, p.88–93) ; **PART VI** Timeline (répartition en périodes de classe, p.94–95).
-- **Manuel élève** : « Perform to Learn — Second Year Secondary Education — Student's Book » (`241203P00`, mêmes auteurs) — **source de contenu combinée** : table des matières intégrale avec pagination exacte par leçon (p.4–5) ; **p.20–27, p.33–41, p.45–54** transcrites à profondeur de génération le 2026-08-04, puis **p.60–68, p.73–81, p.86–95 et l'appendice p.166–184** le 2026-08-28 (§4 bis). L'appendice se décompose ainsi, **bornes constatées** : Grammar summary p.166–178, New words per lesson p.179–180, Irregular verbs p.181–183 (**116 verbes**), Phonetic symbols chart p.184. **184 pages.**
+- **Manuel élève** : « Perform to Learn — Second Year Secondary Education — Student's Book » (`241203P00`, mêmes auteurs) — **source de contenu combinée** : table des matières intégrale avec pagination exacte par leçon (p.4–5) ; **p.20–27, p.33–41, p.45–54** transcrites à profondeur de génération le 2026-08-04, puis **p.60–68, p.73–81, p.86–95 et l'appendice p.166–184** le 2026-08-28, enfin **p.100–107, p.112–120, p.125–132, p.138–144, p.147–154 et p.160–165** le 2026-08-30 (§4 bis) — soit **la totalité du tronc commun**. L'appendice se décompose ainsi, **bornes constatées** : Grammar summary p.166–178, New words per lesson p.179–180, Irregular verbs p.181–183 (**116 verbes**), Phonetic symbols chart p.184. **184 pages.**
 - **Niveaux voisins** : `english` = **9ème-base** (collège, `content/english/` : present/past/future tenses, modals, conditionals (first), passive voice, reported speech, relative clauses & comparatives — introduction) — la 2ème secondaire **consolide et approfondit** (passive, reported speech deviennent formels ; perfect modals, quantifieurs avancés, adverbes de degré s'ajoutent). **1ère année secondaire** (guide non identifié au corpus au moment de cette fiche — code CNP `641103` ou similaire probable, à vérifier/ajouter à `_INDEX.md` si trouvé) : chaînon manquant entre 9ème et 2ème secondaire, non transcrit. **3ème année secondaire** (`641303`) et **Bac** (`641404`) : non transcrits — bornes EXCLU (§2) déduites par défaut/prudence, à revérifier une fois ces guides transcrits.
 - **Divergences signalées** : **aucune divergence de SCOPE** entre guide et manuel élève (source unique cohérente, mêmes auteurs/mêmes tables) — les thèmes, les leçons et leur pagination concordent. En revanche, la lecture du manuel (2026-08-04) révèle des **divergences de FORME** systématiques, toutes documentées au §4 bis et récapitulées ici parce qu'elles gouvernent la génération : (1) le manuel **ne nomme aucune des structures grammaticales** annoncées par le Book Map et n'imprime **aucun encadré de règle** — la grammaire y est purement inductive ; (2) le manuel **ne donne aucun corrigé** ; (3) le **Progress Check 1** (L8) révise les thèmes I–II, **pas** le thème III qui l'héberge ; (4) plusieurs titres de leçon diffèrent de la table des matières (« The stepmum » vs « The Step Mum », « Progress Check 1 » sans « and Self-Evaluation »). **Le guide fait foi pour le scope ; le manuel fait foi pour ce qui est réellement imprimé.** Pas de fichier Taybah pour le secondaire (Taybah ne couvre que le primaire).
 
