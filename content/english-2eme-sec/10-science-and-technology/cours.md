@@ -7,7 +7,7 @@ Lesson 25 opens on a quoted line from a research centre, and the whole theme tur
 - **Lesson 25 — Internet addiction**: four readers argue about time spent online, for and against. You learn to give an opinion, to agree, to disagree — and you meet the heaviest point of grammar of the year: **the reported speech**.
 - **Lesson 26 — What will man be like?**: a listening lesson about the human being of the future. You learn to judge what you hear, and to say that a change **goes on**: **more and more** / **less and less** + adjective.
 
-> ⚠️ Your book teaches the reported speech by asking you to find the rule yourself. Page 140 gives you one sentence with three words underlined, one unfinished line beginning with a name and the verb _said_, and one open question about the changes you are supposed to have noticed — and never answers it. There is no table, no list, no correction. The rule below is that answer, taken from the grammar summary of the appendix (pages 176 and 177) and completed where the appendix stops.
+> ⚠️ Your book teaches the reported speech by asking you to find the rule yourself. Page 140 gives you one sentence with three words underlined, one unfinished line beginning with a name and the verb _said_, one open question about the changes you are supposed to have noticed, and then an instruction to rewrite a whole text with those changes in mind — and it answers none of the four. There is no table, no list, no correction. The rule below is that answer, taken from the grammar summary of the appendix (pages 176 and 177) and completed where the appendix stops.
 
 ## 🌐 The words of the net
 
@@ -26,7 +26,9 @@ Lesson 25 opens on a quoted line from a research centre, and the whole theme tur
 | **to break up**     | (of two people) to end their relationship                                     |
 | **to survive**      | to stay alive, or to come through a difficulty without being destroyed        |
 
-> ⚠️ **to break up** carries other everyday senses, and only the words round it say which one is meant: _the meeting broke up_ (it ended and everybody left), _the signal broke up_ (it became unclear), _he broke up the crate_ (he smashed it into pieces). Note also **an escape key**: the key marked _Esc_ on your keyboard, used in the lesson as an image — a way out.
+> ⚠️ **to break up** carries other everyday senses — more than the three below — and only the words round it say which one is meant: _the meeting broke up_ (it ended and everybody left), _the signal broke up_ (it became unclear), _he broke up the crate_ (he smashed it into pieces). When you meet the verb in a sentence you have not seen before, read what stands beside it before you decide. Note also **an escape key**: the key marked _Esc_ on your keyboard, used in the lesson as an image — a way out.
+
+> 🌐 Two more words of the official list belong here. **A micro slave** is the phrase one of the pictures of the lesson builds out of _micro_, the small machine, and _slave_: a person who has stopped using the computer and begun to serve it. And **depression** appears in the last question of the self-test. It is deliberately left out of the table above: it is a medical word, this chapter does not teach it and does not test it, and it names something no questionnaire and no classmate can diagnose. Recognise it when you read it, and leave the word to a doctor.
 
 > 🧭 **On the self-test of page 139.** The lesson prints seven questions and one line of its own: five _yes_ answers or more, and it calls you an addict. Read that line for what it is — the rule a magazine set for itself. Below its own line it says **nothing**: four _yes_ answers are four _yes_ answers, not a diagnosis, and no questionnaire in a book replaces a doctor. Learning to say what a document does **not** allow you to conclude is part of reading it.
 
@@ -43,26 +45,26 @@ Lesson 25 opens on a quoted line from a research centre, and the whole theme tur
 
 Nothing moves until you have looked at the verb that introduces the report — _say, tell, explain, add, answer, remark_.
 
-**If the reporting verb is in the present, the present perfect or the future, nothing changes at all.**
+**If the reporting verb is in the present, the present perfect or the future, no tense changes at all.**
 
 > He **says**, "The bus will be late." → He **says** the bus **will** be late.
 > She **has just told** me, "I work at the hospital." → She **has just told** me she **works** at the hospital.
 
 That is the case of a live broadcast, of a message you pass on at once, of a rule somebody keeps repeating. Only the pronouns move.
 
-**If the reporting verb is in the past — and it usually is — the verb of the reported words steps back one tense.** This is the table the appendix prints:
+**If the reporting verb is in the past — and it usually is — the verb of the reported words steps back one tense.** Read the table below knowing where each line comes from. **Six of them are the table your appendix prints on p. 176**, where _will_ and _will be_ + _-ing_ are called _future_ and _future continuous_. **_simple past → past perfect_ is on the same page but in a sentence, not in the table.** And **the last two, _can_ and _may_, are added here**: the appendix does not mention them, the lesson does not either, and you cannot report a modal without them.
 
-| In the direct speech        | In the report                |
-| --------------------------- | ---------------------------- |
-| simple present              | simple past                  |
-| present continuous          | past continuous              |
-| present perfect             | past perfect                 |
-| present perfect continuous  | past perfect continuous      |
-| simple past                 | past perfect                 |
-| **will**                    | **would**                    |
-| **will be** + _-ing_        | **would be** + _-ing_        |
-| **can**                     | **could**                    |
-| **may**                     | **might**                    |
+| In the direct speech        | In the report                | Where the line comes from        |
+| --------------------------- | ---------------------------- | -------------------------------- |
+| simple present              | simple past                  | the appendix table               |
+| present continuous          | past continuous              | the appendix table               |
+| present perfect             | past perfect                 | the appendix table               |
+| present perfect continuous  | past perfect continuous      | the appendix table               |
+| simple past                 | past perfect                 | the appendix, in a sentence      |
+| **will**                    | **would**                    | the appendix table               |
+| **will be** + _-ing_        | **would be** + _-ing_        | the appendix table               |
+| **can**                     | **could**                    | **added here**                   |
+| **may**                     | **might**                    | **added here**                   |
 
 > "I **never eat** meat," he explained. → He explained that he **never ate** meat.
 > "The lab **is testing** the water," she said. → She said the lab **was testing** the water.
@@ -70,7 +72,9 @@ That is the case of a live broadcast, of a message you pass on at once, of a rul
 > "I **bought** the parts in Sfax," he said. → He said he **had bought** the parts in Sfax.
 > "Ali **will** be in Tunis on Monday," he said. → He said Ali **would** be in Tunis on Monday.
 
-> ⚠️ The **past perfect** (_had_ + past participle) is not a tense you study for itself this year. Here it is a tool and nothing else: it is simply where a past simple and a present perfect land once the report is made in the past. Build it, recognise it, and do not go looking for other uses of it.
+> ⚠️ The **past perfect** (_had_ + past participle) is not a tense you study for itself this year. Here it is a tool and nothing else: it is simply where a past simple and a present perfect land once the report is made in the past. Build it, recognise it, and do not go looking for other uses of it. The same holds, one notch heavier, for the **past perfect continuous** of the fourth line: recognise it when you meet it (_"I have been waiting since nine," he said._ → _He said he **had been waiting** since nine._) and leave it there.
+>
+> Notice, too, that two different lines of the table arrive at the same place: a **simple past** and a **present perfect** both land on the past perfect. So the table reads safely from left to right, and not always from right to left — a reported _had done_ may come from _did_ or from _has done_, and only the rest of the sentence tells you which.
 
 ## 🧊 What does not move
 
@@ -79,8 +83,11 @@ Four things stay exactly as they were, and knowing them is worth as much as know
 - **The modals that have no past to step into**: **would, should, ought to, had better, might, used to, could** and **must**.
   > "I **might** come back," she said. → She said she **might** come back.
   > "You **should** save your files," he said. → He said we **should** save our files.
-- **A past tense that describes something still true when you report it.**
+  >
+  > 🗡️ **must** is the one to watch, and your appendix names it in this list: the form that does not move is the one to produce here. You will also meet **had to** in its place — _"I must leave now," he said._ → _He said he **had to** leave._ — and that is not a mistake either; English has both, and other courses teach **had to** first. Keep **must** where the duty still holds at the moment of the report, and read **had to** without alarm when somebody else writes it.
+- **A verb that describes something still true when you report it stays where it is**, whatever tense it is in.
   > She said, "I chose that school because it **is** near the station." → She said she had chosen that school because it **is** near the station. The station has not moved.
+  > She said, "I did not take that road because it **was** too narrow." → She said she had not taken that road because it **was** too narrow. The road is still narrow, so the past stays a past instead of stepping back.
 - **A verb inside a clause opening with _when_ or _while_.**
   > He said, "**When** we **lived** in Nabeul we often walked to the port." → He said that **when** they **lived** in Nabeul they often walked to the port.
 - **The verbs of a sentence built on _if I were_, _I wish_, _I'd rather_.**
@@ -122,9 +129,11 @@ A word like **today** or **here** points at the moment and the place of the **sp
 
 ## ✍️ say or tell
 
+> ⚠️ This block is written for you too. Your lesson prints no list of introducing verbs, and the appendix names _say_ and _tell_ only inside a bracket, in passing. What follows is ordinary English, and it is here because almost every report you write will begin with one of these two verbs.
+
 They are not interchangeable, and the difference is not a matter of meaning but of what follows.
 
-- **tell** needs the person it is aimed at, straight after it: _He **told me** that the shop was shut._ · _She **told the class** to sit down._
+- **tell**, when it introduces reported words, needs the person it is aimed at, straight after it: _He **told me** that the shop was shut._ · _She **told the class** to sit down._ Outside a report, on its own, **tell** does take a short list of fixed objects with no person at all: _tell the truth_, _tell a lie_, _tell a story_, _tell the time_, _tell the difference_. Those are set expressions, and they do not open the door to _✗ he told that the shop was shut_.
 - **say** never takes that person straight after it: _He **said** that the shop was shut._ If you want to name the person, you must put **to**: _He **said to me** that the shop was shut._
 
 > ✗ He said me that the shop was shut. · ✗ He told to me that the shop was shut. · ✗ He told that the shop was shut.
@@ -137,7 +146,7 @@ They are not interchangeable, and the difference is not a matter of meaning but 
 A reported question is **no longer a question**. It loses its question mark, it loses the inversion, and it loses the **do / does / did** of the question.
 
 - **A wh- question keeps its question word**: _"Where **do you** work?" she asked._ → _She asked where **I worked**._
-- **A yes/no question needs **if** or **whether**, which are equally correct**: _"**Are you** ready?" he asked._ → _He asked **if I was** ready._ / _He asked **whether I was** ready._
+- **A yes/no question needs _if_ or _whether_, and here the two are equally correct**: _"**Are you** ready?" he asked._ → _He asked **if I was** ready._ / _He asked **whether I was** ready._
 - The tenses and pronouns follow the same rules as a statement, and **ask** takes the person without **to**: _She **asked me** where the lab was._
 
 > ✗ She asked where did I work. · ✗ He asked was I ready. · ✗ He asked that I was ready.
@@ -152,9 +161,9 @@ Lesson 26 does print its rule, in the grammar summary of page 144: **two compara
 - **Short adjective** — the comparative in **-er**, repeated on both sides of **and**:
   > The days are getting **shorter and shorter**. · The queue grew **longer and longer**.
 
-The second line is in the table of your book — _Adjective + er + and + Adjective + er_ — with no example beside it. Choose between the two lines exactly as you choose between _more expensive_ and _cheaper_: one syllable takes **-er**, three take **more**, and the adjectives of two syllables follow their usual habit.
+The second line is in the table of your book — _Adjective + er + and + Adjective + er_ — with no example beside it. Choose between the two lines exactly as you choose between _more expensive_ and _cheaper_: one syllable takes **-er**, three take **more**, and an adjective of two syllables takes **more** as well **unless it ends in _-y_, _-er_, _-ow_ or _-le_** — _happier and happier_, _narrower and narrower_, but _more and more careful_, _more and more crowded_.
 
-> ⚠️ Do not confuse it with the plain comparative. **more and more expensive** says the price keeps climbing; **much more expensive** says it is high today, and says nothing about a change. And do not write ✗ _more expensive and expensive_ or ✗ _longer and long_: both halves must be comparatives.
+> ⚠️ Do not confuse it with the plain comparative. **more and more expensive** says the price keeps climbing; **much more expensive** says it is high today, and says nothing about a change. And do not write ✗ _more expensive and expensive_, ✗ _longer and long_ or ✗ _lesser and lesser_: both halves must be comparatives, and the comparative of _little_ in this pattern is _less_.
 
 ## 🔭 The words of the human being of the future
 
@@ -177,6 +186,8 @@ Lesson 25 is a debate, and a debate has three moves.
 - **Opinion**: _In my opinion…_ · _I strongly believe that…_ · _As far as I am concerned…_ · _It seems to me that…_
 - **Agreement**: _I quite agree._ · _That is exactly my point._ · _You have a point there._ · _I could not agree more._
 - **Disagreement**: _I am afraid I disagree._ · _I see what you mean, but…_ · _That is going a little too far._ · _I would not put it that strongly._
+
+**Lesson 26 asks for a fourth move: judging one particular piece of information.** Not the whole subject — a single figure, claim or prediction — and saying what it is worth. _That figure covers one week only._ · _The page says so, but names nobody who counted._ · _That is likely enough, though nothing here proves it._ · _The document does not let us say that._ Judging is not agreeing or disagreeing with a person: it is weighing one statement against what is offered in support of it, and it is what the self-test of lesson 25 and the predictions of lesson 26 both ask of you.
 
 > 🧭 The most useful of these is the **partial** one. _You are right about the hours, but "they have stopped living" goes much too far_ keeps what is true in the other person's sentence and refuses only what is excessive. It is stronger than a flat _no_, and it is what an argued paragraph is made of.
 

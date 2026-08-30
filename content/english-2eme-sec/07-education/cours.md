@@ -14,7 +14,7 @@ Theme VII is the school looking at itself. Two lessons, and nothing else:
 | Word                       | Meaning                                                                            |
 | -------------------------- | ---------------------------------------------------------------------------------- |
 | **a uniform**              | the set of clothes that every pupil of one school has to wear                       |
-| **to conform to** (a rule) | to follow a rule, to do what the group or the law expects                           |
+| **to conform to** (a rule) | to follow a rule, to do what the group or the law expects — the one word of this list you will not meet in the opinions you read, so learn it here |
 | **to distinguish**         | to see or to show the difference between two things; *this badge distinguishes us from the other schools* = it sets us apart from them |
 | **smart**                  | **tidy and well dressed** — this is the meaning of the lesson, not "clever"          |
 | **to suppress**            | to put an end to something, to stop it from showing itself                          |
@@ -27,7 +27,7 @@ Theme VII is the school looking at itself. Two lessons, and nothing else:
 | **to panic**               | to lose your head suddenly because you are afraid                                    |
 
 > ⚠️ **Four collocations to learn whole, because English fixes them and your own language does not.**
-> _to **cope with** a problem_ (never "cope a problem") · _to **conform to** a rule_ (never "conform a rule") · _to **fail** an exam_ (never "fail in an exam" or "fail at an exam") · _to **check** your answers_ (never "check on your answers" when you simply mean to look at them again).
+> _to **cope with** a problem_ (never "cope a problem") · _to **conform to** a rule_ (never "conform a rule") · _to **fail** an exam_ (never "fail in an exam": *fail in* is real English, but only before an attempt or a duty — *he failed in his attempt to qualify*) · _to **check** your answers_ (never "check on your answers" when you simply mean to look at them again).
 
 > 🗡️ **smart** is the word that catches everybody. In this lesson a pupil who looks smart is **well dressed**; a pupil who is clever is **clever**, **bright** or **intelligent**. Saying "she is very smart at maths" is not the English of your book.
 
@@ -62,13 +62,13 @@ The test is one question: **who receives the action?** If the answer is the subj
 
 ### 2. The emphatic reflexive — you can cross it out
 
-Now the opposite case. The reflexive is not the object of anything; it simply insists that **this person and nobody else** did the action. Cross it out and the sentence still stands, and still means the same thing — it has only lost its emphasis.
+Now the opposite case. The reflexive is not the object of anything; it simply insists that **this person and nobody else** did the action. Cross it out and the sentence still stands: what is left is complete, and it is still true. What goes out with the pronoun is the insistence — and the insistence is the whole of what the pronoun was bringing, so do not tell yourself that the two versions say exactly the same thing.
 
-> _The club members built the shelves **themselves**._ → *The club members built the shelves.* Still true. The reflexive only says: no carpenter was called in.
-> _I wrote the letter **myself**._ → *I wrote the letter.* Still true.
+> _The club members built the shelves **themselves**._ → *The club members built the shelves.* Still complete, still true — but the claim that no carpenter was called in has gone.
+> _I wrote the letter **myself**._ → *I wrote the letter.* Still complete, still true — and no longer a denial that somebody wrote it for me.
 > _The mayor **himself** handed out the certificates._ — the emphatic reflexive may also stand right after the subject.
 
-**So you have a test that never fails.** Take the reflexive out of the sentence. If what is left is still a full, true sentence, the reflexive was **emphatic**. If what is left has a hole in it, or says something else, the reflexive was **obligatory**.
+**So you have a test that never fails.** Take the reflexive out of the sentence. If what is left is still a full, true sentence, the reflexive was **emphatic** — you have lost the insistence, not the action. If what is left has a hole in it, or names somebody else, the reflexive was **obligatory**.
 
 ### 3. *by* + reflexive — with nobody's help
 
@@ -111,6 +111,8 @@ Your book makes you rewrite seven pieces of advice with **had better**, **ought 
 | **had better**     | base verb (no *to*)      | an **urgent** piece of advice, with a bad result hanging over it if you do not follow it | _You **had better** leave now, or you will miss the bus._ |
 | **needn't**        | base verb (no *to*)      | this is **not necessary** — you may do it, but there is no need | _You **needn't** bring a dictionary, because one is provided in every room._ |
 
+> ⚠️ **The grammar summary at the back of your book calls *had better* plain "advice", exactly like *should*.** That is not wrong, it is short. The whole family gives advice; what sets **had better** apart is that it names, or leaves hanging, what goes wrong if you do not follow it. So when a table asks you to tick a column, tick **Advice** for all three — and remember that only *had better* comes with a bill attached.
+
 **Three forms to get right, because they are what a corrector looks at first.**
 
 - **had better** takes a bare verb: _you had better **revise**_, never "had better to revise". It is very often contracted: _you**'d** better revise_. Its negative is **had better not** + bare verb: _You **had better not** argue with the examiner._ Never "you hadn't better", never "you had better don't".
@@ -120,6 +122,24 @@ Your book makes you rewrite seven pieces of advice with **had better**, **ought 
 > ⚠️ **needn't is not mustn't.** _You **needn't** book a seat on the school bus_ says there is always room, so do as you please. _You **mustn't** book a seat on the school bus_ says it is forbidden. One frees you, the other stops you, and confusing them turns a helpful notice into a ban.
 
 > 🗡️ **had better against ought to.** _You had better hand in your file before Friday_ warns you: something unpleasant follows if you do not. _You ought to hand in your file before Friday_ tells you it is the right thing to do. The first has a threat behind it, the second has a duty.
+
+## 🔍 *must* for a deduction, *will* and *can* for an offer
+
+The table on page 107 asks for **six** values, and two of them are not advice at all. Here they are, so that no column of it stays empty.
+
+**must — the conclusion you draw.** Here *must* gives nobody an order: it says that what you can see leaves only one explanation.
+
+> _Her chair has been empty all week; she **must be** ill._
+> _There is chalk all over his sleeve; he **must have been** at the board._
+
+In the present the form is **must** + base verb, very often **must be**; when the thing is already over it becomes **must have** + past participle. And read the meaning, never the two words alone: _The form **must be** signed by a parent_ is still a plain order, built with exactly the same *must be*.
+
+**will and can — the offer of help.** When you propose to do something yourself, for somebody else, English reaches for these two, and the subject is *I* or *we*.
+
+> _I **will** carry those files down to the office for you._
+> _I **can** show you where the past papers are kept._
+
+Neither is a promise about the future, and neither is a boast about what you are able to do. What makes them an offer is that the work falls on the speaker and the good of it on the person spoken to.
 
 ## ⏳ *should have* + past participle — the duty that was not done
 
@@ -137,6 +157,8 @@ The form never varies: **should** + **have** + the third column of your verb lis
 | _I **shouldn't have spent** an hour on question one._ | yourself          | a **regret**       |
 
 **The same form carries both values, and only the subject decides which.** Turn it on yourself and it is a regret; turn it on somebody else and it is a reproach. That is exactly what the empty table on page 107 was asking you to see.
+
+> ⚠️ **A third value of the same three words, and the trap of the lesson.** _Rania posted the form ten days ago, so the club **should have** written back already._ Nothing was left undone here, and nobody is being blamed: you are saying what you **expect** to be true, because you know the calendar. Regret and reproach look back at a choice somebody made; this one only counts the days. The form is identical, so the situation — and nothing else — tells you which of the three you are reading.
 
 > ⚠️ Do not confuse the two time zones. _You **shouldn't revise** all night_ is advice about **next time**, and the night is still to come. _You **shouldn't have revised** all night_ is about a night that is over: it is too late, and the sentence blames. A question that describes something already done and asks for a reproach can never be answered with a present modal.
 
@@ -180,6 +202,8 @@ The uniform file of lesson 18 is a debate, and a debate has a shape.
 - An **argument against**: it suppresses individuality; it makes everybody look and, some say, think alike; it costs a family money it may not have.
 - A **concession** is the sentence where a writer admits that the other side has one good point, before going on with their own: _**It is true that** a uniform saves time in the morning, **but** it takes away the one choice a pupil makes alone._
 
+English keeps a small stock of openings for that move, and you should recognise all of them: _**It is true that**…_ · _**Nobody denies that**…_ · _**Of course**,…_ · _**Admittedly**,…_ · _**I agree that**…_. The writer then turns back to their own side with **but**, **yet**, **still** or **however** — so the linker marks the *return*, never the concession itself.
+
 Spotting the concession is how you find out where a writer really stands: the concession is the sentence that **does not** follow their conclusion. A text is *for* the uniform if its conclusion is for it, even when it admits a defect on the way — and the reverse.
 
 > ⚠️ In a debate you attack the **rule**, never the person. "Pupils who wear a uniform have no personality" is not an argument, it is a judgement on people. "A uniform leaves fewer ways of showing who you are" is an argument, and it can be answered.
@@ -203,4 +227,4 @@ Spotting the concession is how you find out where a writer really stands: the co
 | "He failed in the exam."                    | _He **failed** the exam._                | *fail* takes its object with no preposition                   |
 | "She cannot cope the pressure."             | _She cannot **cope with** the pressure._ | *cope* always keeps *with*                                    |
 
-> 🏆 You can now say who did what to whom when the two are the same person, and hear the difference between being advised, being warned, being released and being blamed. Next quest: **Professional life** — the job you dream of, and the reasons you would give for choosing it.
+> 🏆 You can now say who did what to whom when the two are the same person, and hear the difference between being advised, being warned, being released, being blamed, being offered a hand, and being told what somebody has worked out from what they can see. Six values, six columns, and not one of them left empty. Next quest: **Professional life** — the job you dream of, and the reasons you would give for choosing it.
