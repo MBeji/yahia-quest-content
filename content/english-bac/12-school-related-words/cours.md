@@ -25,8 +25,8 @@ Two letters, two full words, and one clear order: **Ordinary comes first, Advanc
 **Attend** is the verb for being there; **leave** is the verb for going for good. They are opposites, and one of them is a trap:
 
 - _Three hundred pupils **attend** this school._ ✓
-- ~~_Three hundred pupils attend **at** this school._~~ ✗ — **attend takes its object directly**, with no preposition behind it.
-- ~~_Yesterday I **assisted at** the biology lesson._~~ ✗ — this comes straight from a French verb that looks the same. In English, **to assist somebody is to help them**. If you were merely sitting there with your class, you **attended** the lesson.
+- ~~_Three hundred pupils attend **at** this school._~~ ✗ — **attend needs no preposition**: what you attend follows the verb, and nothing stands between them.
+- ~~_Two hundred parents **assisted at** the prize-giving._~~ ✗ — this comes straight from a French word spelt almost identically. In English, **to assist somebody is to help them**. Parents who only sat and watched **attended** the ceremony; the two who carried the chairs assisted the caretaker.
 - _She **left** school at sixteen and found work in a garage._ ✓
 
 A country's **school-leaving age** is the age below which nobody may leave. Push it up, and every child owes the classroom more years before the door opens.
@@ -40,7 +40,7 @@ The school year is not one long block; it is divided, and the number of pieces d
 | **three** | a **term**          | Tunisia, Britain and most of the systems built on theirs |
 | **two**   | a **semester**      | the United States, and most universities |
 
-So a report card that reaches your family three times a year closes three **terms**; a report card that comes twice closes two **semesters**. Notice how honest the second word is: *semester* holds *semi*, and half of a year is what it names.
+So a British pupil sits down to three sets of end-of-**term** examinations, and an American student to two sets of end-of-**semester** ones. Notice how honest the second word is: *semester* holds *semi*, and half of a year is what it names.
 
 Inside the year sits the week, and the week is printed on the **timetable** — the grid where the days run one way and the hours the other, and where you look to find out what Tuesday holds. Facing the terms, across the calendar, stand the **holidays**: *work* and *holiday* are a pair of opposites like any other.
 
@@ -52,11 +52,11 @@ Your subjects have names, and above the names schools print **headings** that ga
 - **languages** — the heading over **English**, **French**, **German**, **Spanish**: several tongues, one heading.
 - and beside them, subjects that belong to neither: **maths** and its branch **geometry**, which measures shapes and angles, and **art**, where you draw.
 
-> ⚠️ *Sciences* and *languages* are **collective names**: each one covers several subjects at once. Answering "chemistry" when you are asked what physics, chemistry and biology are **together** does not answer the question — you were asked for the heading, not for one line under it.
+> ⚠️ *Sciences* and *languages* are **collective names**: each one covers several subjects at once. A heading is never one of the things it stands over. If you are asked what several subjects are called **together**, you owe the name of the group; naming one of them, however correctly spelt, leaves all the others without a roof.
 
 ## 🔢 Saying an operation out loud
 
-A teacher who writes nothing on the board still has to be understood. Each sign has a verb, and each verb has an everyday phrase that hides it.
+A teacher who says the sum aloud instead of chalking it up still has to be understood. Each sign has a verb, and each verb has an everyday phrase that hides it.
 
 | Sign  | The verb           | How it sounds in ordinary speech    |
 | ----- | ------------------ | ----------------------------------- |
@@ -65,7 +65,7 @@ A teacher who writes nothing on the board still has to be understood. Each sign 
 | **×** | to **multiply**    | *times*, *three lots of*            |
 | **÷** | to **divide**      | *share among*, *share between*, *split* |
 
-> 🗡️ Listen for the order, not only for the verbs. *Take three from twelve, then share the rest between three* asks you to **subtract** and then to **divide** — in that order. Reverse the two and you get a different number, and a wrong answer to a question you understood perfectly.
+> 🗡️ Listen for the order, not only for the verbs. *Three lots of eight, and then put six more on top* asks you to **multiply** and then to **add** — in that order. Reverse the two and you get thirty in one direction and forty-two in the other, and a wrong answer to a question you understood perfectly.
 
 ## 📄 Everything that is printed on a page
 
@@ -79,7 +79,7 @@ A written text is a set of boxes inside boxes, from the widest down to the small
 | **a sentence**  | a group of words carrying a subject and a verb                     |
 | **a full stop** | the small point that closes a finished statement                    |
 
-And running down the side of every page, outside the writing, the **margin** — the strip you leave blank so that a teacher can write there and so that the eye has somewhere to rest.
+And running down the side of every page, outside the writing, the **margin** — the strip you leave blank so that whoever marks the page has room to answer you, and so that the eye has somewhere to rest.
 
 > ⚠️ Two confusions cost marks every year. A **chapter** divides a **book**; it never divides an essay, which is divided into **paragraphs**. And a **full stop** closes a **sentence**, not an idea: one idea usually needs several sentences, and it is the new paragraph, not the full stop, that says *I have finished with that and I am starting something else*.
 
@@ -92,14 +92,14 @@ Twenty people writing, two people walking between the desks: two words, and they
 - **a candidate** — the person who sits the paper and hopes.
 - **an examiner** — the person who sets it, watches over it and marks it.
 
-Around them the rest of the vocabulary falls into place. You **sit** a paper; then you **pass** it, or you **fail** it and **sit it again** in the next session. And an examination often comes in two halves that must not be mixed up with each other:
+Around them the rest of the vocabulary falls into place. You **sit** a paper; then you **pass** it, or you **fail** it and **sit it again** in the next session. An examination is often split in two, and its halves must not be mixed up with each other:
 
 | Pair                            | What separates them                                                  |
 | ------------------------------- | --------------------------------------------------------------------- |
 | **written** / **oral**          | the written part is answered **on paper**; the oral is answered **out loud**, in front of the examiner |
-| **practical** / **theoretical** | the practical part is **done** — in a laboratory, with your hands; the theoretical part is **known**, and stays on the page |
+| **practical** / **theoretical** | the practical part is **done** — in a laboratory, with your hands; the theoretical part is **known**, and never leaves the page |
 
-A science examination can perfectly well have a written part and a practical part on the same day. The two pairs answer two different questions: *how do you answer?* and *what is being tested?*
+A chemistry paper can perfectly well have a written part and a practical part on the same day. The two pairs answer two different questions: *how do you answer?* and *what is being tested?*
 
 ## ↔️ The opposites game
 
@@ -118,12 +118,12 @@ Play it twice and you discover the two rules nobody prints in the box.
 
 **Rule 1 — an opposite belongs to a *meaning*, not to a word.** *Hard* has two of them, and only the sentence around it can choose:
 
-- _The last question was **hard**._ → its opposite is **easy** (difficulty).
-- _The bench in the corridor is **hard**._ → its opposite is **soft** (what it is made of).
+- _German is a **hard** language to start at seventeen._ → its opposite is **easy** (difficulty).
+- _The ground in the yard is **hard** after a month without rain._ → its opposite is **soft** (what a surface is like under your feet).
 
 Answer *easy* to the second sentence and you have answered the list you learnt instead of the sentence you were given. The same happens elsewhere: the opposite of *last* is **first** when you are counting a series, but *the last lesson* before the bell is opposed to **the next** one.
 
-**Rule 2 — check what part of speech you are looking at.** In _She works hard_, the word is no longer an adjective describing a thing; it is an adverb saying how she works, and neither *soft* nor *easy* can be pushed into its place.
+**Rule 2 — check what part of speech you are looking at.** In _He tried hard all term_, the word is no longer an adjective describing a thing; it is an adverb saying in what manner he tried, and neither *soft* nor *easy* can be pushed into its place.
 
 ## 🕸️ Word building — how to fill a spidergram
 
@@ -139,19 +139,19 @@ A **spidergram** is a diagram with one label in the middle and empty branches ar
 
 Four endings do most of the work: **-ion / -ation** (*reduce → reduction*), **-al** (*deny → denial*, with the **y turning into an i**), **-ance / -ence** (*attend → attendance*), **-ment** (*govern → government*).
 
-> ⚠️ **You cannot pick the ending by rule — each word keeps the one it has always had.** English says *provision*, never "providation" and never "providment"; it says *denial*, never "deniation" and never "denyal". The learner who invents an ending is not being creative, only wrong: a word either exists or it does not, and the only witness is the dictionary. Learn the family, not the recipe.
+> ⚠️ **You cannot pick the ending by rule — each word keeps the one it has always had.** *Govern* takes **-ment** and *examine* takes **-ation**, and neither will accept the other's tail: "governation" and "examinement" are not English words, however reasonable they look. The learner who invents an ending is not being creative, only wrong: a word either exists or it does not, and the only witness is the dictionary. Learn the family, not the recipe.
 
-Beware, too, of two branches of the same tree that do not mean the same thing. **Attendance** is the fact of being there — the office counts it every morning. **Attention** is what you give the lesson once you are in your seat. A register of attendance says nothing about whether anybody was listening.
+Beware, too, of two branches of the same tree that do not mean the same thing. **Attendance** is the plain fact of turning up — a figure that climbs when a new bus route at last reaches the outlying villages. **Attention** is what you give the lesson once you are in your seat. The first can be counted; the second never has been, and no attendance sheet has ever pretended otherwise.
 
-**Why nouns matter: the headline.** A newspaper has one line and no room for verbs, so it turns them into nouns and stacks them up. *The government has provided free meals* becomes **FREE MEALS PROVISION**; *children are denied a place* becomes **THE DENIAL OF SCHOOL PLACES**. This is called nominalisation, and it is exactly the exercise the spidergram trains you for.
+**Why nouns matter: the headline.** A headline is short because it has no room to be anything else, and the shortest way to say what has happened is to name it rather than to tell it. So the verb disappears into the noun that belongs to it, and the nouns are stacked one against the next: *the head teacher has resigned* becomes **HEAD TEACHER'S RESIGNATION**, and *the ministry has decided to build two new schools* becomes **MINISTRY DECISION ON TWO NEW SCHOOLS**. This is called nominalisation, and it is exactly the exercise the spidergram trains you for.
 
 ## 🍲 Five words to carry away from the lesson
 
 | Word           | What it means                                        | Seen in action                                          |
 | -------------- | ----------------------------------------------------- | -------------------------------------------------------- |
 | **provide**    | to offer, to give what is needed                     | _The council provides a bus for the mountain villages._  |
-| **deny**       | to refuse to give                                    | _No one here is denied a library card._                  |
-| **nutritious** | nourishing — food that feeds the body properly        | _Bread and lentils are cheap and nutritious._            |
+| **deny**       | to refuse to give                                    | _The office denied her the certificate until the fee was paid._ |
+| **nutritious** | nourishing — food that feeds the body properly        | _A boiled egg is a more nutritious break than a biscuit._ |
 | **priority**   | the thing that comes **first**, before the others     | _Repairing the roof is this year's priority._            |
 | **boost**      | to raise, to make better, to push upwards            | _One kind remark can boost a shy pupil for a whole week._ |
 
@@ -174,13 +174,13 @@ An advertisement is not a text you read; it is a text that is aiming at you. Tak
 | **the appeal**       | the line that asks you to *do* something — give, come, write, buy       |
 | **the contact details** | the address, the web address, the e-mail, printed last and read by almost nobody |
 
-**Read the paratext first.** From a headline, a subtitle and a photograph you can already predict what the body will say — that is a skill, not a guess. A page headed *The real wealth of a country is …* above a photograph of children eating tells you, before a single line of the body, that its ending will not be *its oil*: an appeal built on children ends its headline on **its children**.
+**Read the paratext first.** From a headline, a subtitle and a photograph you can already predict what the body will say — that is a skill, not a guess. A page headed *Forty pupils, eleven chairs* above a photograph of a classroom floor has told you, before a single line of the body, what the body will be about and which of the two figures the page intends to change.
 
-**And read the last lines, because they name the sender.** A web address ending in **.org** belongs to an **organisation**, not to a shop; an e-mail address whose first word is **fundraising** belongs to somebody whose work is to collect gifts. Two lines nobody looks at have just told you who is speaking and what they want from you.
+**And read the last lines, because they name the sender.** The small print at the foot of a page is the part nobody reads and the part that cannot lie about who is speaking. Tails are worth learning, because they sort the senders: a **.com** was bought by a business, a **.gov** by a department of state, an **.org** by a body that is not there to sell you anything. And the word printed before the @ — *admissions*, *sales*, *complaints* — tells you which desk your letter would land on. Put those two questions to any page that is asking you for something, and you will know who wants what from you before you have read a line of the body.
 
 **Persuasion** is the function of the whole page. An informative text tells you how things are; a persuasive text tells you how things are **so that you will act**. The same figure serves both: *nine million children are out of school* informs; the very same sentence, placed above a bank account number, persuades.
 
-> 🗡️ **The chain of consequences.** A good appeal never asks you to believe a miracle; it shows you a chain, link by link. A plate of food at midday brings a child through the gate; a child who is in the classroom hears the lesson; and a child who hears the lessons all year comes out of the year knowing more. Feeding, attendance, results: three links, each one holding the next. When you are asked what follows from something, look for the chain — and check that it is not running backwards.
+> 🗡️ **The chain of consequences.** A good appeal never asks you to take a miracle on trust; it shows you a chain, link by link. A well sunk in a village gives a girl back the four hours she spent fetching water; a girl who has her mornings free can be put on the register; and a girl on the register sits the same papers as her brothers. Water, time, schooling: three links, each one holding the next. When you are asked what follows from something, look for the chain — and check that it is not running backwards.
 
 ## 🚫 too + adjective + to
 
@@ -188,12 +188,12 @@ Here is the structure this lesson gives you, in its official shape:
 
 > **too + adjective + to + verb**
 
-It says one thing and one thing only: **the quality has passed the point where the action is still possible.**
+It says one thing and one thing only: **the quality has grown to a point where the action can no longer happen.**
 
 - _The fees were **too high to pay**._ → the fees were not paid. Nobody paid them.
 - _The film was **too long to watch** in one evening._ → it was not watched in one evening.
 
-**1. It contains its own negative.** The action does not happen, and no *not* is needed to say so.
+**1. It contains its own negative.** What has been ruled out simply never happens, and no *not* is needed to say so.
 
 - ~~_The fees were too high not to pay them._~~ ✗ — the impossibility is already inside *too*.
 
@@ -201,12 +201,12 @@ It says one thing and one thing only: **the quality has passed the point where t
 
 | Sentence                            | What it tells you                         |
 | ----------------------------------- | ------------------------------------------ |
-| _The room is **very** small._       | it is small — and everybody may still fit in |
-| _The room is **too** small._        | something cannot be done in it              |
+| _The gate is **very** narrow._      | it is narrow — and the bus may still get through |
+| _The gate is **too** narrow._       | something cannot be done: the bus stays outside |
 
-**3. When a *for* comes in, it names who acts.** *Too … for somebody to do something* keeps the impossibility, and hands the second verb to the person named after *for*.
+**3. When a *for* comes in, it names who acts.** *Too … for somebody to do something* keeps the impossibility, and the second verb takes its subject from there: the person named after *for*.
 
-- _The shelf is too high **for the little ones** to reach._ → **the little ones** are the ones who cannot reach. Not the shelf, and not you.
+- _The corridor is too narrow **for two classes** to pass at once._ → **the two classes** are the ones that cannot pass. Not the corridor, and not the caretaker who has to keep it clear.
 - _The music was too quiet **for the examiner** to hear._ → **the examiner** heard nothing; the singer sang perfectly well.
 
 Read the *for* phrase before you answer: it is the subject of everything that comes after *to*.
@@ -216,15 +216,15 @@ Read the *for* phrase before you answer: it is the subject of everything that co
 - _She is **too honest to** copy an answer._ → her honesty makes copying impossible. That is praise, and it is a promise.
 - _He is **too experienced to** be frightened by a new timetable._ → the same shape, the same admiration.
 
-**5. Two neighbours you may use instead**, when you want the same idea with another shape: *The hall was **so** small **that** we could not all sit in it* · *The hall was **not** big **enough** for us all.* All three say the impossibility; only the first is the one this lesson asks you to produce.
+**5. Two neighbours you may use instead**, when you want the same idea with another shape: *The lift was **so** slow **that** we took the stairs* · *The lift was **not** quick **enough** for us.* All three say the impossibility; only the first is the one this lesson asks you to produce.
 
 ## 🔤 An acrostic about school
 
-An **acrostic** spells a word downwards, one letter per line, each line beginning with the letter that falls to it. Your book prints one on the word SCHOOL, and every line of it opens with a **verb** — a thing a school does for you.
+An **acrostic** spells a word downwards, one letter per line, each line opening on the letter its turn brings. Your book prints one on the word SCHOOL, and every line of it opens with a **verb** — a thing the place does for you. Built here on a shorter word, the same idea looks like this:
 
-> **S**tudy · **C**ommunicate · **H**elp · **O**ffer · **O**rganise · **L**earn
+> **T**each · **E**ncourage · **A**dvise · **C**orrect · **H**elp
 
-The constraint is double, and that is what makes the exercise worth doing: the word must **start with the right letter** *and* **belong to the right class**. On an O line waiting for a verb, *often* (an adverb), *ordinary* (an adjective) and *opinion* (a noun) all fail, however well they begin. Only *offer*, *organise*, *open* and their kind may stand there.
+The constraint is double, and that is what makes the exercise worth doing: the word must **begin on the right letter** *and* **belong to the right class**. Test the second constraint the quick way: drop the word into the frame *a school will …* . *A school will feed*, *a school will explain*, *a school will train* — those go in, and they are verbs. A word that refuses the frame has no business at the head of a line, however well it begins.
 
 Now write your own, and let each line say something true about the place you spend your days in.
 
@@ -232,11 +232,11 @@ Now write your own, and let each line say something true about the place you spe
 
 | Wrong                                        | Right                                    | Why                                                             |
 | -------------------------------------------- | ----------------------------------------- | ---------------------------------------------------------------- |
-| "I assisted at the lesson"                   | _I **attended** the lesson_               | to assist is to help; and *attend* takes no preposition          |
-| "the providation of meals"                   | _the **provision** of meals_              | each word keeps its own ending; none of them can be invented     |
-| "the bench is hard, so its opposite is easy" | _the bench is hard → **soft**_            | an opposite answers a meaning, not a word on a list              |
+| "the parents assisted at the ceremony"      | _the parents **attended** the ceremony_   | to assist is to help; and *attend* takes no preposition          |
+| "the examinement results"                    | _the **examination** results_             | each word keeps its own ending; none of them can be invented     |
+| "the ground is hard, so its opposite is easy" | _the ground is hard → **soft**_          | the sentence chooses which opposite, never the list you learnt   |
 | "too small" = "very small"                   | _too small = something is **impossible**_ | *too* blocks the action; *very* only measures the quality        |
 | "the hall was too small for us to not fit"   | _the hall was too small for us to fit_    | the negative is already inside *too … to*                         |
-| "physics, chemistry and biology are science" | _they are **the sciences**_               | the heading is a collective name, and it is plural               |
+| "physics, chemistry and biology are science" | _they are **the sciences**_               | your book's heading is the plural one, and it names a group      |
 
 > 🏆 You now have the words. The next lesson opens the argument they were made for: **who is left outside the school gate, and what would happen if nobody were.**

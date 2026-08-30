@@ -7,21 +7,24 @@
   "displayOrder": 1,
   "questions": [
     {
-      "prompt": "Put these five back in order, from the one that holds all the others down to the smallest mark printed on the page.",
-      "type": "ordering",
+      "prompt": "Four words from the school day, and the four that answer them. Match each one with its opposite.",
+      "type": "matching",
       "options": [
-        { "id": "a", "text": "a paragraph" },
-        { "id": "b", "text": "a full stop" },
-        { "id": "c", "text": "a book" },
-        { "id": "d", "text": "a sentence" },
-        { "id": "e", "text": "a chapter" }
+        { "id": "l1", "text": "to teach" },
+        { "id": "l2", "text": "a candidate" },
+        { "id": "l3", "text": "to attend a school" },
+        { "id": "l4", "text": "the working weeks" },
+        { "id": "r1", "text": "an examiner" },
+        { "id": "r2", "text": "the holidays" },
+        { "id": "r3", "text": "to learn" },
+        { "id": "r4", "text": "to leave it" }
       ],
-      "answerKey": { "order": ["c", "e", "a", "d", "b"] },
-      "explanation": "Each of these words names a box, and every box sits inside the one before it. The object in your hands is cut into numbered divisions; each division is built of blocks of writing, one idea to a block; each block is made of groups of words that carry a subject and a verb; and every one of those groups is closed by a single point of ink. Learn the chain and two frequent mistakes disappear at once, because it becomes obvious that a book is never cut into paragraphs and that an essay is never cut into chapters.",
+      "answerKey": { "pairs": [["l1", "r3"], ["l2", "r1"], ["l3", "r4"], ["l4", "r2"]] },
+      "explanation": "Four pairs, and each of them turns on a different kind of contrast. Two are the two ends of a single act, seen from the two sides of the desk: one person passes the knowledge on and the other takes it in; one person sits the paper while the other sets it and marks it. The third is a matter of staying or going, since a name stands on the register for years and then one day it is taken off. And the fourth cuts the calendar in two, because every week of a school year falls on one side of it or on the other. Take them by meaning: two of these pairs are verbs and two are nouns, so the shape of a word narrows the field but never finishes the job for you.",
       "difficulty": 1
     },
     {
-      "prompt": "Tunisian and British schools usually cut the year into three; American schools usually cut it into two. What is one of those pieces called in each system?",
+      "prompt": "Sami takes a report home in December, in March and in June, and that is his whole year in Sfax. His cousin in Boston takes one home in January and one in May, and that is her whole year. What is one of those pieces of the year called in each of the two systems?",
       "options": [
         { "id": "a", "text": "a term in the first system, a chapter in the second" },
         { "id": "b", "text": "a semester in the first system, a term in the second" },
@@ -29,7 +32,7 @@
         { "id": "d", "text": "a term in the first system, a semester in the second" }
       ],
       "correctOption": "d",
-      "explanation": "The number of pieces decides the word. Three of them and each one is a term, which is why report cards reach a Tunisian family three times over. Two of them and each one is a semester — a word that admits what it is, since it opens on the same syllable as semicircle and semifinal, and half a year is exactly what it covers. The other two answers borrow words that name something else: one names the grid of the week, the other one of the divisions of a book.",
+      "explanation": "Count the reports and you have counted the pieces: three of them in Sfax, two in Boston. Three pieces and each one is a term; two pieces and each one is a semester — a word that admits what it is, since it opens on the same syllable as semicircle and semifinal, and half a year is exactly what it covers. The other two answers borrow words that name something else: one names the grid of the week, the other one of the divisions of a book.",
       "difficulty": 1
     },
     {
@@ -77,7 +80,7 @@
         { "id": "d", "text": "Yesterday I presented the science lesson." }
       ],
       "correctOption": "a",
-      "explanation": "Being present at a lesson is said with one verb, and that verb reaches its object directly, without any small word in between. Two traps are set around it. The first is a verb that looks the same in French but has crossed the Channel with another job: in English it means to help, so keeping it would claim that the pupil lent the teacher a hand. The second is subtler, because it repairs the verb and keeps the preposition, which English simply does not want there. And the fourth answer promotes him: the person who presents the lesson is the one giving it.",
+      "explanation": "Being present at a lesson is said with one verb, and that verb reaches its object directly, without any small word in between. Two traps are set around it. The first is a verb that looks the same in French but has crossed the Channel with another job: in English it means to help, so keeping it would claim that the pupil lent the teacher a hand. The second is subtler, because it repairs the verb and keeps the preposition, which English simply does not want there. And promoting him to the one who presents the lesson would make him the person giving it, not the person sitting through it.",
       "difficulty": 2
     }
   ]
