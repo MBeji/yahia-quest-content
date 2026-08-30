@@ -13,7 +13,7 @@ An advertisement wants your money. A report wants you informed. A **narrative te
 Four habits follow from that purpose, and you can spot all four in the first paragraph of any tale:
 
 - it grows out of **life as people live it** — even a story about dragons is about fear, loyalty and greed;
-- it is **built round people** (or round animals and creatures who behave like people), not round facts;
+- it is **built round people** (or round animals and creatures given a person's mind and voice), not round facts;
 - it lets its people **speak**, so dialogue runs through it;
 - it uses the **familiar language** of ordinary life, not the technical language of a manual.
 
@@ -32,17 +32,17 @@ Every narrative can be examined through four windows. Learn the four words: an e
 
 Two warnings, and they cover almost every mistake made on this lesson.
 
-**Theme is not plot.** _A fisherman finds a ring and gives it back to its owner_ is the plot: it tells you what happened. _Honesty can cost more than it pays_ is the theme: it tells you what the happening was for. Ask yourself which of the two you could still say if the characters had different names and lived in another country — that one is the theme.
+**Theme is not plot.** _A fisherman finds a ring and gives it back to its owner_ is the plot: it tells you what happened. _Honesty can cost more than it pays_ is the theme: it tells you what the happening was for. Ask yourself which of the two you could still say if the people were renamed and moved to the other side of the world — that one is the theme.
 
-**Theme is sometimes spoken and sometimes not.** A fable prints its lesson in the last line and leaves you no work to do. Most other narratives leave it **between the lines**: nobody in the story ever says it, and you build it yourself out of what the people do and what it costs them.
+**Theme is sometimes spoken and sometimes not.** A fable prints its lesson in the last line and leaves you no work to do. Most other narratives leave it **between the lines**: no character ever pronounces it, and you build it yourself out of what the people do and what it costs them.
 
 One more thing about **setting**: it is never decoration. Move a story from an open hillside to a locked room and the same events will frighten you instead of amusing you. Setting works on the theme, and it works on what the reader feels.
 
 ## 🗂️ 3. Kinds of narrative
 
-A narrative may be **imaginary**, **factual**, or — very often — **a mixture of the two**. A writer who tells her grandmother's true journey but invents the conversations, because nobody wrote them down, has produced a mixture, and that is not a fault.
+A narrative may be **imaginary**, **factual**, or — very often — **a mixture of the two**. A ship's log — the book in which a captain writes the dates, the ports and the weather — never holds a word of what was said on deck; a novelist who builds a story on one has to put the words into the sailors' mouths himself, and what he produces is a mixture, which is no fault at all.
 
-The family is large: fairy stories, mysteries, science fiction, romances, horror stories, adventure stories, fables, myths and legends, historical narratives, ballads, slices of life, personal experience.
+The family is large. Some kinds live on the marvellous — myths and legends, fairy stories, science fiction, horror; some on the ordinary — slices of life, personal experience, romances; some on a puzzle or a chase — mysteries, adventure stories; and some carry a lesson or a record — fables, ballads, historical narratives.
 
 Four of them are regularly confused, so fix them now:
 
@@ -61,17 +61,17 @@ A plot is not a heap of episodes. It has a shape, and the shape has names. Your 
 | --- | --- |
 | **introduction** | the balance before anything goes wrong: who these people are, where, when |
 | **problem** | the single moment that breaks that balance and sets everything moving |
-| **climax** (or **crisis**) | the highest point of the tension, where matters must now turn one way or the other |
+| **climax** (or **crisis**) | the peak of the tension: the story cannot stay here, and the next move decides how it ends |
 | **resolution** | how the trouble is settled |
 | **conclusion** | what is left when it is over |
 
 Here is the shape at work, in five lines:
 
-> For years two brothers picked the same olive grove and divided whatever the harvest brought in. _(introduction)_
-> One autumn the elder found the boundary stones moved by half a metre. _(problem)_
-> Neither would speak first; the village took sides; by September the two families no longer greeted each other in the road. _(episodes of the development)_
-> On the morning of the picking, both families arrived at the gate with their ladders, and nobody moved. _(climax)_
-> The oldest woman of the village walked out and put the stones back with her own hands, and the two families picked the trees together, as they had always done. _(resolution and conclusion)_
+> The old dog had slept on the same step outside the grocer's shop since anyone could remember. _(introduction)_
+> On a Thursday in March the shop changed hands, and the new owner nailed a board across the step. _(problem)_
+> The dog waited in the road; the children of the street fed it there; two old customers stopped coming in. _(episodes of the development)_
+> On the evening when the new owner found it lying in the rain on the far pavement, three of his neighbours were watching him from their doors. _(climax)_
+> He took the board down before dark, and the step was a step again. _(resolution and conclusion)_
 
 > ⚠️ **Telling the introduction from the problem.** The introduction describes what **used to** happen — repeated, stable, no date. The problem happens **once**, and the text usually marks it: _one autumn_, _one night_, _that Tuesday_. When you are asked which event sets the story moving, look for the single occasion, not for the habit.
 
@@ -102,11 +102,11 @@ A tale is read **twice**, and the two readings do different work.
 
 | Characters | Action / event |
 | --- | --- |
-| the elder brother | found the stones moved |
-| the village | took sides |
-| the oldest woman | put the stones back |
+| the new owner | nailed a board across the step |
+| the children of the street | fed the dog in the road |
+| two old customers | stopped coming to the shop |
 
-The rule for this table is short: **hunt the main verbs**. A line earns its place only if it records something somebody **did** — an act that pushes the story on. What the weather was like, how old the house was, what colour the ladders were: all of that is true, all of it is in the text, and none of it belongs in the notes. Those notes are not a private habit, either. They are the raw material of the paragraph you are about to write.
+The rule for this table is short: **hunt the main verbs**. A line earns its place only if it records something somebody **did** — an act that pushes the story on. What the weather was like, how old the shop was, what colour its door was: all of that is true, all of it is in the text, and none of it belongs in the notes. Those notes are not a private habit, either. They are the raw material of the paragraph you are about to write.
 
 ## 🔗 7. Grammar: `so` + adjective + `that`
 
@@ -114,13 +114,13 @@ Read this sentence and watch it work in two moves:
 
 > _The bread was **so** hard **that** the children soaked it in their tea._
 
-The first half tells you **how far** something went — not merely hard, hard to a degree. The second half tells you **what that degree produced**. The pattern names a cause and its consequence in one sentence, and the book's own box records it exactly so:
+The first half tells you **how far** something went — not merely hard, hard to a degree. The second half tells you **what came of it**. The pattern names a cause and its consequence in one sentence, and the book's own box records it exactly so:
 
 > **so + adjective + that + result** — cause and consequence
 
 Three things to hold on to.
 
-**① Join two ideas with it.** The first sentence supplies the adjective, the second becomes the `that`-clause:
+**① Use it to join two ideas.** The first sentence supplies the adjective, the second becomes the `that`-clause:
 
 > _The market was crowded. We lost each other in two minutes._
 > → _The market was **so** crowded **that** we lost each other in two minutes._
@@ -140,11 +140,11 @@ Keep a short list ready for the examination: _fear → frightened_, _shame → a
 **③ The second half must be a consequence, not simply the next fact.** This is where marks are lost:
 
 > ✓ _The lamp was so weak that nobody could read by it._ — the weakness explains the reading.
-> ✗ "The lamp was so weak that my uncle had bought it in Sfax." — true, perhaps, but no degree of weakness could ever produce it.
+> ✗ "The lamp was so weak that my uncle had bought it in Sfax." — true, perhaps, but no degree of weakness could ever bring it about.
 
 ### Three other jobs of the little word `so`
 
-Only one of them is this lesson's pattern. Learn to tell them apart, because the examination mixes them.
+Only one of the four is the one you have just learned. Learn to tell them apart, because the examination mixes them.
 
 | Sentence | What `so` is doing |
 | --- | --- |
@@ -186,25 +186,25 @@ The unit ends here: you turn your notes into a **paragraph of about five lines**
 
 | Word | What it means | In a sentence |
 | --- | --- | --- |
-| **to beg** | to ask for something anxiously, and more than once | _She begged the officer to let her through._ |
-| **evil** | deeply and deliberately cruel; doing harm on purpose | _An evil counsellor whispered against the queen._ |
-| **to rule** | to govern a country or a people, and make its laws | _The same family ruled the city until the war._ |
-| **to send for someone** | to ask someone to come to you | _When the fever rose, they sent for the doctor._ |
-| **shamefully** | in a way that brings disgrace on the person who acts | _The steward behaved shamefully in front of the guests._ |
+| **to beg** | to ask for something anxiously, and more than once | _He begged for work at every door in the street._ |
+| **evil** | deeply and deliberately cruel: the harm is meant, and no remorse follows it | _An evil counsellor whispered against the queen._ |
+| **to rule** | to govern a country or a people, and make its laws | _When the old chief died, nobody knew who would rule in his place._ |
+| **to send for someone** | to send word that you want somebody, so that they come to you | _The judge sent for the witness who had left the room._ |
+| **shamefully** | so badly that the people who saw it were ashamed for him | _She treated the girl who had helped her shamefully, and never apologised._ |
 | **unfaithfulness** | being untrue to the person you are married to | _He accused her of unfaithfulness and would hear nothing._ |
 
-> 💡 **send for** is one of those verbs whose meaning is not the sum of its words: nothing is sent except the message, and the person is expected to arrive. And note that **to beg** is stronger than _to ask_ — it is the word for someone with nothing left to bargain with.
+> 💡 **send for** is one of those verbs whose meaning is not the sum of its words: nothing is sent except word, and it is the person who arrives. Take care with **shamefully** too: it does not mean "in an embarrassing way". Embarrassment is a small discomfort; this word passes a judgement on what somebody did. And **to beg** is stronger than _to ask_: it belongs to a person whose only argument is his need.
 
 ## ⚠️ The trap wall
 
 | Wrong | Right | Why |
 | --- | --- | --- |
 | "The story is about a fisherman who returns a ring." (as a **theme**) | _The story is about what honesty costs._ | The events are the plot; the idea they carry is the theme |
-| "The fog was such thick that the ferry stayed in." | _The fog was **so** thick that the ferry stayed in._ | `such` cannot stand in front of a bare adjective |
+| "The soup was such salty that nobody finished it." | _The soup was **so** salty that nobody finished it._ | `such` must be followed by a noun group (_such salty soup_), never by an adjective on its own |
 | "The crowd had so anger that the gates were shut." | _The crowd was **so angry** that the gates were shut._ | `so` takes an **adjective**; turn the noun into one |
-| "The hall was so cold, we kept our coats on." (written work) | _The hall was so cold **that** we kept our coats on._ | The `that` is what shows which half caused which |
+| "The waiting room was so cold, we kept our coats on." (written work) | _The waiting room was so cold **that** we kept our coats on._ | The `that` is what shows which half caused which |
 | "It rained, so we stayed in." offered as this lesson's pattern | _The rain was **so** heavy **that** we stayed in._ | A plain `so` links two clauses; it names no degree |
-| Notes reading "the ladders were made of chestnut" | _the elder brother found the stones moved_ | Notes record **acts**, not description |
+| Notes reading "the step was of grey stone" | _the new owner nailed a board across the step_ | Notes record **acts**, not description |
 | A five-line summary that retells only the opening | one line per stage, as far as the story goes | A summary must reach the end, not stop at the setting |
 | "The messengers left. Meanwhile they came back." | _The messengers left. **In the end** they came back._ | **meanwhile** = at the same time, not afterwards |
 | Naming the king's daughter in a summary of Part 1 | _the queen gives birth to a daughter_ | Part 1 does not name her; do not add what the text withholds |
