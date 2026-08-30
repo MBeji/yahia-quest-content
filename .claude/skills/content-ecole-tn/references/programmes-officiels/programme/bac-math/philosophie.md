@@ -183,25 +183,1709 @@ titre « ما التوجّه في التفكير؟ », et la liste des concepts 
   - ✅ INCLUS : الوعي · اللاّوعي · الذات · الجسد · التّاريخ ; التأويل, الزّمان, الجوهر ; psychanalyse, phénoménologie, existentialisme, philosophie de l'histoire ; les « philosophes du soupçon » (فلاسفة الظنّة).
   - ⛔ EXCLU : tout ce que le manuel de **شعبة الآداب** (`210422`/`210423`) ajoute et que celui-ci ne porte pas — ce manuel-ci est le programme **des sections non-Lettres**, et il est le seul scope de cette fiche.
 
-#### مبحث 1.1 — الآنيّة والغيريّة — transcription PARTIELLE (p.47–74, سندات 17→29)
+#### مبحث 1.1 — الآنيّة والغيريّة — transcription PARTIELLE (p.6–74, سندات 1→29)
 
-> ⚠️ **Portée : p.47–74 seulement** — la **deuxième moitié** de la نافذة سندات du مبحث 1.1
-> (سندات **17 à 29**), plus la fin du سند 16 qui déborde sur la p.47. Les **سندات 1 à 16**
-> (p.15–46), la نافذة مدخل (p.7–14), la نافذة دعائم (p.75–99), la نافذة كيفيّات (p.100–103),
-> le نصّ مطوّل de **ديكارت** (p.104–112) et les مختصرات (p.113) **ne sont pas transcrits**.
-> Ce مبحث **n'est donc pas générable** : il ne figure pas dans `chapitresGeneration`.
+> ✅ **Portée : p.6–74** — l'ouverture du **محور 1** (p.6), la **نافذة مدخل intégrale** (p.7–14 :
+> les trois وضعيّات استكشافيّة — غرامشي, أبيكتات, باسكال — et الأبعاد الإشكاليّة), et la
+> **نافذة سندات intégrale** (p.15–74) : les **29 سندات**, un par un, à profondeur de génération.
+> ⛔ **Ne sont PAS transcrits** : la نافذة دعائم (p.75–99), la نافذة كيفيّات التفكير (p.100–103),
+> le نصّ مطوّل de **ديكارت** — *التأمّلات الميتافيزيقيّة*, التأمّل الثاني (p.104–112) — et les
+> مختصرات (p.113).
+> Ce مبحث **n'est donc pas encore générable** : il ne figure pas dans `chapitresGeneration`.
 > **Source** : manuel élève `210402` (كتاب الفلسفة — السّنة الرّابعة من التّعليم الثانوي —
 > الشّعب العلميّة, CNP).
 >
-> ✅ **Ce que cette tranche débloque quand même** : les notices d'auteur de **بودريار** (p.60) et de
+> ✅ **Ce que la tranche p.47–74 débloque** : les notices d'auteur de **بودريار** (p.60) et de
 > **فرويد** (p.64), cibles des deux renvois du مبحث 3.2 qui pointaient jusqu'ici dans le vide.
+>
+> ⚠️ **Assemblé de TROIS lectures indépendantes** — p.6–39, p.40–46, p.47–74. Les deux dernières
+> ont livré leur bloc § Notes ; **la première a été coupée avant le sien.** La tranche **p.6–39**
+> n'a donc **pas d'inventaire d'anomalies propre** : c'est le trou connu de ce chapitre, à couvrir
+> en priorité par la R-7.
+>
+> ⚠️ **Un constat né de la confrontation des fragments, qu'aucun lecteur seul ne pouvait faire** :
+> le **سند 16 (سارتر)** porte **deux encadrés-citation, un par page** — « إنّ الخجل هو بالطبيعة
+> اعتراف… » (p.46) et « أخجل من نفسي كما أظهر للآخرين » (p.47). Chacun des deux transcripteurs
+> n'en voyait qu'un et en concluait, à tort, que l'autre page n'en portait pas. Vérifié sur les
+> deux pages. **Le gabarit « un encadré par سند » n'est pas une règle de ce manuel.**
 >
 > ⚠️ **Numérotation** : « 1.1 » est une convention de la fiche. Le manuel imprime une pastille
 > **`1`** à côté du titre `الآنيّة والغيريّة` — c'est le **مبحث 1 du محور 1**.
 
 ---
 
-##### 1.1.2 نافذة سندات للتفكير في المسألة — p.47–74 (deuxième moitié : سندات 17→29)
+##### § Ouverture du محور 1 — الإنساني بين الكثرة والوحدة — p.6
+
+**Page de garde du محور** (page pleine, sans texte courant).
+
+- **Bandeau-titre (crème, en haut)** : **الإنساني بين الكثرة والوحدة**
+- **Illustration** : photographie/peinture de **masques de théâtre** (un grand masque blanc souriant
+  au premier plan sur fond bleu, un masque bleu à bouche ouverte à droite, un petit masque bleu et
+  un losange rouge en bas à gauche). Cadre noir double.
+- **Pastille bleue** : **1** — numéro du مبحث qui s'ouvre.
+- **Cartouche ovale vert** : **الإنيّة والغيرية**
+  ⚠️ Graphie imprimée : `الإنيّة` (avec shadda sur le ي) mais `الغيرية` **sans** shadda. Vérifié à 600 dpi.
+- **Colonne bleue des notions du مبحث** (5 notions, de haut en bas) :
+  **التّاريخ · الجسد · الذات · اللاّوعي · الوعي**
+
+**Encadré-citation d'ouverture (cadre rouge, colonne de droite) — verbatim** :
+> يا أحبّاء الإنسانيّة وأحبّاء ما هو أقدس الأشياء لديها! اقبلوا ما يبدو لكم أنّه الأكثر جدارة
+> بالاعتقاد، وذلك بعد تمحيص صادق، سواء تعلّق الأمر بوقائع أو بمبادئ تعود إلى العقل. لكن لا تنكروا
+> على العقل ما يجعله الخير الأسمى على وجه البسيطة، أي امتيازه بأنه المحكّ الأخير للحقيقة، وإلاّ
+> كنتم غير جديرين بهذه الحرّيّة، وفقدتموها بالتّأكيد وحمّلتم، زيادة على ذلك، عبء هذه النّكبة لتلك
+> الطّائفة الكبيرة من الأبرياء الذين لولا ذلك لكانوا على استعداد لممارسة حرّيتهم بشكل قانونيّ، ومن
+> ثمّ بشكل نهائيّ أيضا من أجل خير هذا العالَم.
+
+**Attribution imprimée sous l'encadré (2 lignes)** :
+> ▲ **امنوال كانط**
+> **ما التوجه في التفكير؟**
+
+⚠️ Graphie du prénom telle qu'imprimée : **`امنوال`** (et non `إمانويل`), vérifié à 600 dpi.
+⚠️ Le titre est imprimé **ما التوجه في التفكير؟** — pas de tashkîl, pas de « ه » d'orientation.
+Aucune référence bibliographique (ni éditeur, ni page, ni ligne latine) n'accompagne cet encadré.
+
+---
+
+##### § نافذة 1.1.1 — مدخل إلى التفكير في المسألة — p.7-14
+
+###### Page d'ouverture de la نافذة — p.7
+
+- **Titre de la نافذة (bandeau en haut à droite, sur deux lignes)** : **مدخل إلى** / **التفكير في المسألة**
+- **Illustration** : sculpture monochrome ocre — **un homme assis sur un rocher, penché en avant,
+  la main au menton** (posture du penseur), un outil/burin posé sur la pierre.
+- **Encadré-citation (cadre rouge, colonne de droite) — verbatim** :
+> " من أنا؟ هل أعرف نفسي؟ وصلوا إلى القمر يفتحون صفحة جديدة في سفر التكوين الإنساني. سرت قليلا،
+> تعلّمت قليلا. امتلكت ثروة كالبحر، وأنا الآن واضع يديَّ على أرض يجري فيها الذهب أنهارا. حاولت أن
+> أخرج من بدائيّتي الزراعيّة إلى عالم الصناعة والآلة. حاولت أن أدخل العالم الحديث... "
+- **Attribution imprimée (2 lignes)** :
+> ▲ **أدونيس**
+> **فاتحة لنهاية القرن**
+
+Aucune référence bibliographique complète, aucune ligne latine.
+
+---
+
+###### وضعيّة استكشاف أولى — أنطونيو غرامشي — p.8-9
+
+- **Numérotation imprimée** : pastille rouge **1**, bandeau gris **وضعية استكشاف أولى :**
+- **Auteur tel qu'imprimé** : signature du texte **أنطونيو غرامشي** ; notice marginale **غرامشي**.
+  Deux graphies sur la même page.
+- **Consigne « أستحضر تمثلاتي… » (encadré vert clair, en haut à droite)** :
+> **أستحضر تمثلاتي…**
+> ... وأقترح جوابا عن السؤال ˝ ما الإنسان؟ ˝ :
+  (suivi de **2 lignes pointillées** à remplir par l'élève.)
+- **Bandeau gris de consigne** : **أتابع التفكير: أقرأ النص بتأنٍّ، أتأمل الصورة، وأفكر…**
+- **Illustrations (p.8)** : (a) **portrait photographique** de Gramsci en médaillon, en tête du
+  texte ; (b) **image en couleurs** (profil de visage humain dessiné par des traits de lumière
+  jaunes et rouges sur fond sombre), avec sa consigne propre.
+- **Consigne de l'image (verbatim)** :
+> ▲أتأمل هذه الصورة، أتأولها وأتثبّت إن كانت تعكس التساؤلات التي طرحها غرامشي.
+
+**Thèse (reformulée)** : la question « qu'est-ce que l'homme ? » est la question première et
+fondamentale de la philosophie, mais elle **ne se laisse pas résoudre en cherchant une définition
+de l'homme dans chaque individu pris à part** : ce qui importe n'est pas l'homme particulier.
+Demander « qu'est-ce que l'homme ? », c'est en réalité demander **ce que l'homme peut devenir** —
+s'il peut maîtriser son propre destin, se « faire » et se créer une vie. Gramsci pose donc que
+**l'homme est le mouvement de ses actes**, que la question **n'est ni abstraite ni « objective »**
+mais naît de notre réflexion sur nous-mêmes et sur les autres, et qu'elle vise à savoir, dans les
+conditions de la vie **présente**, dans quelles limites nous sommes les « fabricants » de nous-mêmes,
+de notre vie et de notre destin.
+
+**Source imprimée (3 lignes, sous le texte)** :
+> **أنطونيو غرامشي**
+> **من كتاب " غرامشي: دراسات مختارة "**
+> **منشورات** وزارة الثقافة، دمشق 1972، ص 184 — 185
+
+⚠️ Ponctuation vérifiée à 1200 dpi : c'est bien une **virgule arabe** `،` après `1972`, non un point.
+⚠️ Aucune ligne bibliographique en caractères latins pour ce texte.
+
+**Notice marginale (verbatim, p.8, à gauche sous l'image)** :
+> ◄ **غرامشي** : (1891—1937) مفكر إيطالي، ماركسي النزعة، حوكم في عهد الفاشية (1926) وأودع السجن
+> حيث توفي.
+
+⚠️ Intervalle **(1891—1937)** — vérifié à 1200 dpi. Ordre **correct** (naissance puis mort) dans le
+sens de lecture arabe. *Aucune* inversion ici (voir § Notes, « fausses pistes »).
+
+**المهامّ (verbatim, p.9 — encadré rose, 6 puces)** :
+- ما الذي يجعل السؤال عن الإنسان يحوز هذه المكانة في الفلسفة؟
+- هل يمثّل هذا السّؤال جزءا من اهتماماتي؟ أعلّل جوابي؟
+- أحدّد الدلالات المختلفة التي يمكن أن يحملها السؤال عن الإنسان؟ أمتضاربة هي أم متكاملة؟
+- إذا كان السّؤال: ما الإنسان؟ " ليس سؤالا مجرّدا وموضوعيّا " فهل يمكن أن أبحث له عن جواب مجرّد وموضوعيّ؟
+- إذا كان هذا السؤال قديما في الفلسفة فما الذي يبرر إعادة طرحه اليوم ؟ أحرر فقرة أبحث فيها عن راهنيّة هذا السؤال.
+- في ضوء المهام التي أنجزتها، هل حافظ جوابي الذي اقترحته في البداية على وجاهته أم أحتاج إلى مراجعته؟ أعلّل جوابي.
+
+**Illustration (p.9, sous l'encadré des مهامّ)** : reproduction d'un **tableau** (fond brun et bleu
+gris, un **œil** émergeant d'un visage partiellement recouvert d'une matière jaune, deux
+**empreintes de pieds** vert-jaune dans la partie droite, cadre jaune ; signature de l'artiste en
+bas à droite, **illisible** à 600 dpi). Aucune légende, aucun cartel imprimé.
+
+---
+
+###### وضعيّة استكشاف ثانية — أبيكتات — p.10-11
+
+- **Numérotation imprimée** : pastille rouge **2**, bandeau gris **وضعية استكشاف ثانية :**
+- **Auteur tel qu'imprimé** : signature **أبيكتات** ; notice **أبيكتات** + ligne latine
+  **`EPICTETE`** ; la ligne latine de source porte **`Epictète`**. Le mot **الطاغيّة** désigne
+  l'interlocuteur, non un auteur.
+- **Bandeau gris de consigne** : **أقرأ النص وأتابع الحوار الدائر بين الطاغيّة وأبيكتات:**
+- **Illustration** : **gravure ancienne** — buste de profil d'un vieillard barbu drapé, portant en
+  haut la légende gravée **`EPICTETVS`** (graphie latine avec V, lisible à 600 dpi).
+
+**Thèse (reformulée)** : ce n'est pas le tyran qui enchaîne l'homme, ce sont **ses propres
+opinions**. Un homme libre par nature **ne peut être troublé ni empêché par un autre que par sa
+propre volonté** ; face à la menace « je vais t'enchaîner la jambe », celui qui donne du prix à sa
+jambe supplie, mais celui pour qui seule sa volonté a du prix répond : « enchaîne-la ». Le maître ne
+peut asservir que le corps : **l'esclave est celui qui prend son corps pour lui-même**, et le tyran
+qui croit posséder un homme ne possède que « ce cadavre qu'est mon corps ».
+
+**Source imprimée (2 lignes)** :
+> **أبيكتات، محاورات، من كتاب " الرواقيون "**
+> `Epictète`, *`Entretiens`*,`in Les Stoïciens, La Pléiade, Gallimard. p. 853`
+
+**هامش (1 note, encadré vert, en marge basse de la p.10) — verbatim** :
+> **(1) زوس** `Zeus` — إله الآلهة في الميثولوجيا الإغريقيّة. يتّصف بالصرامة والعدل.
+
+**الكاتب (notice, p.10 — bandeau rose « الكاتب : ») — verbatim** :
+> **أبيكتات** `EPICTETE` ( 50 — 130 ) : كنية لأحد الفلاسفة الرواقيين، وتعني في اللغة الإغريقيّة
+> العبد أو الخادم. يكمن جوهر مذهبه الأخلاقي في دعوته إلى الحريّة الداخليّة، إذ يعتبر أن السيّد سيّد
+> أهوائه وآرائه والعبد عبد أهوائه وآرائه، لذلك أقرّ بحريّة الإنسان المطلقة سواء كان على العرش أو
+> مقيّدا بالأغلال. وتكمن السعادة لديه في الـ " أتاراكسيا " `Ataraxie` وهي سكينة النفس الناشئة عن
+> العيش وفق مبادئ العقل أي في توافق مع قوانين الطبيعة. وتعبّر فلسفته عن الاحتجاج السلبي للمقهورين
+> ضدّ العبوديّة.
+
+⚠️ Intervalle **( 50 — 130 )** — vérifié à 600 dpi, ordre correct. Aucune mention « ق.م / م ».
+
+**المهامّ (p.11) — bandeau gris : « المهـام: أتقمّص الأدوار »** — trois blocs.
+
+**Bloc de droite — « أتقمّص دور الطاغيّة… » (5 puces, verbatim)** :
+- ما الذي يبرّر قولي: " سأقيّد رجلك ".
+- لِمَ عليَّ أن أنتزع من هذا العبد اعترافه بي سيّدا؟
+- لِمَ يقتضي هذا الانتزاع تعذيب الجسد؟
+- لقد قهرتني لامبالاة هذا العبد. ماذا عليّ أن أفعل حتى أحطّم قدرته على التحمّل، وهو العبد؟
+- لِمَ لا أجد حرجا أخلاقيّا في ممارسة التعذيب؟
+
+**Bloc de gauche — « أتقمّص دور أبيكتات… » (5 puces, verbatim)** :
+- لِمَ لا يزعجني أن يقيّد هذا الطاغية رجلي؟
+- لِمَ يستحيل عليه أن يكون سيّدا عليّ؟
+- كيف لي أن أبدّد أوهامه حول ما تكونه ذاتيّتي؟
+- يعتقدني عبدا وأنا الحرّ، كيف لي أن أُقنعه بهذا؟
+- يعتقد نفسه سيّدا وهو العبد، كيف لي أن أُقنعه بهذا؟
+
+**Bloc vert du bas — « أستعيد موقعي وأفكّر من جديد… » (4 puces, verbatim)** :
+- أستخلص وجه التعارض بين صورتَيْ الإنسان لدى الطاغية وأبيكتات؟
+- أيّ الصورتين تعكس تمثّلي لذاتي؟
+- كيف لي أن أبني صورة أراها جديرة بإنسانيّة الإنسان؟
+- أصوغ بعض الأسئلة التي تمكّنني من التقدّم في اتجاه بناء صورة كلّية للإنسان يرتضيها معي الطاغيّة
+  وأبيكتات في آن.
+
+⚠️ **Le titre du bandeau est imprimé `المهـام` (sans shadda)** en p.11, alors qu'il est `المهـامّ`
+(avec shadda) dans les encadrés roses des p.9 et p.13. Variante imprimée, non corrigée.
+
+---
+
+###### وضعيّة استكشاف ثالثة — باسكال — p.12-13
+
+- **Numérotation imprimée** : pastille rouge **3**, bandeau gris **وضعية استكشاف ثالثة :**
+- **Auteur tel qu'imprimé** : signature **باسكال** ; notice marginale **باسكال** ; ligne latine
+  **`Blaise Pascal`** ; encadré-citation p.13 signé **باسكال**.
+- **Consigne « أستحضر تمثلاتي… » (encadré gris, en haut à droite)** :
+> **أستحضر تمثلاتي…**
+> أحبّ الكثيرين من حولي، لكن ما الذي أحبّه فيهم؟
+  (suivi de **3 lignes pointillées**.)
+- **Bandeau gris de consigne** : **أتابع التفكير: أقرأ النص قراءة متأنيّة وأفكّر في مضمونه ….**
+- **Illustration** : **gravure** — portrait de Blaise Pascal en buste, longue chevelure, main
+  repliée sous le menton (médaillon inséré dans le texte, p.12).
+
+**Thèse (reformulée)** : celui qui, à la fenêtre, regarde passer les gens **n'aime personne « pour
+lui-même »** — il ne pense pas à moi en propre. Aimer quelqu'un pour sa beauté n'est pas l'aimer
+vraiment, puisque la petite vérole, qui tue la beauté **sans** tuer la personne, mettrait fin à cet
+amour ; il en va de même si l'on m'aime pour la justesse de mon jugement ou la vivacité de ma
+mémoire, car **je peux perdre ces qualités sans me perdre moi-même**. Où est donc ce moi, **s'il
+n'est ni dans le corps ni dans l'âme** ? On n'aime jamais **la substance** d'une personne, seulement
+des **qualités empruntées et périssables** ; il ne faut donc pas se moquer de ceux qui recherchent
+les honneurs et les titres.
+
+**Source imprimée (2 lignes)** :
+> **باسكال، خواطر، فقرة 323**
+> `Blaise Pascal`, *`Pensées`*, `in œuvres, Le Seuil, p. 591`
+
+**Notice marginale (encadré vert, p.12) — verbatim** :
+> **باسكال** (1623—1662) — عالم وفيلسوف فرنسي. اهتمّ بالبحث العلمي منذ حداثة سنّه ( 16 سنة ).
+> اخترع آلة حسابية وهو في السنّ 19 من عمره ( 1642 ).
+
+⚠️ Intervalle **(1623—1662)** — ordre correct.
+⚠️ Il n'y a **pas** d'encadré هوامش pour cette وضعيّة (aucune note appelée dans le texte de la p.12).
+
+**المهامّ (verbatim, p.13 — encadré rose, 6 puces)** :
+- " الصفات والخصال ": إلامَ يُحيل هذان المعنيان؟
+- أية علاقة لهما بتجربة الحبّ؟
+- أيّة منزلة لهما في تحديد حقيقة الذات الإنسانيّة؟
+- هل تفترض تجربة الحبّ تصوّرا ضمنيّا للإنسان؟
+- أعود إلى تمثّلاتي الأوّلية وأكشف عمّ تفترضه من تصوّر للإنسان.
+- فيم يُربك موقف باسكال تصوّري للإنسان؟ وفي أيّ اتجاه يمكن إعادة تأسيس هذا التصوّر؟ أعبّر عن هذا
+  الاتجاه في صيغة أسئلة.
+
+**Illustration (p.13)** : image bleue — **silhouette de tête humaine** de profil, sombre, portant en
+son centre un **grand point d'interrogation** clair, sur fond bleu ciel.
+
+**Encadré-citation (p.13, cadre rose, à droite de l'image)** :
+> " أين هيّ إذن هذه الأنا إن لم تكن في الجسم ولا في النفس؟ "
+> — **باسكال**
+
+⚠️ Graphie imprimée **`هيّ`** (avec shadda) dans l'encadré, comme dans le corps du texte p.12.
+
+---
+
+###### الأبعاد الإشكاليّة للمسألة — p.14
+
+Page-atelier entièrement **à remplir par l'élève** (aucun contenu doctrinal imprimé).
+
+- **Titre (bandeau)** : **الأبعاد الإشكاليّة للمسألة** — précédé, à gauche, d'un carré rose portant
+  un **« ؟ »**.
+- **Bandeau gris de consigne** : **أستعيد تأملاتي السابقة تأسيسا للمتابعة وأُنجز المهام التاليّة:**
+
+**Tâche 1 (bandeau rose, n° 1)** :
+> " مَنْ أكون ؟ " ما قيمة هذا السؤال ؟
+  → bloc vert de **3 lignes pointillées**.
+
+**Tâche 2 (bandeau rose, n° 2)** :
+> ما هي أهمّ الأسئلة التي يمكن أن أطرحها في علاقة…
+  → **deux colonnes** vertes, chacune numérotée **1 à 5** (lignes pointillées terminées par « ؟ ») :
+  colonne de droite **مع ذاتي؟** — colonne de gauche **مع الغير؟**
+  → bandeau orange sous les deux colonnes :
+> أنتبه، في صياغة الأسئلة، إلى معاني: التاريخ، الجسد، الذات، اللاوعي، الوعي.
+
+⚠️ Ici les notions sont imprimées **sans shadda** (`التاريخ`, `اللاوعي`), alors que la page
+d'ouverture du محور (p.6) imprime `التّاريخ` et `اللاّوعي`. Variante de graphie interne au chapitre.
+
+**Tâche 3 (bandeau rose, n° 3)** :
+> أشتغل على الأسئلة: أوّلف بينها، أميّز بين مستويات طرحها وأصوغها في مشكلات فلسفية:
+  → bloc vert de **3 lignes** numérotées 1 à 3.
+  → bandeau orange :
+> أنتبه، في صياغة المشكلات، إلى التمفصل المنطقي بينها، راهنيّتها، وانهمامي بها…
+
+**Tâche 4 (bandeau rose, n° 4)** :
+> أحدد رهاناتي من التفكير في هذه المشكلات
+  → bloc vert de **3 lignes** numérotées 1 à 3.
+
+---
+
+##### § نافذة 1.1.2 — سندات للتفكير في المسألة — p.15-46 (et au-delà)
+
+###### Page d'ouverture de la نافذة — p.15
+
+- **Titre de la نافذة (bandeau en haut à droite, sur deux lignes)** : **نافذة سندات** / **للتفكير في المسألة**
+- **Illustration 1 (haut)** : photographie d'un **document manuscrit ancien** (encre brune, écriture
+  anglaise cursive, bord brûlé) sur lequel reposent des **lunettes rondes** à monture noire.
+- **Encadré-citation 1 (cadre rouge)** :
+> " علينا أن نتعلّم من جديد أن نبصر، أن نتصوّر، أن نفكّر وأن نفعل. نحن لا نعرف الدّرب ولكنّنا نعرف
+> أنه يُنحت بفعل المسير .. "
+> ▲ **ادغار موران**
+> **البدء الجديد**
+
+⚠️ Graphie imprimée **`ادغار موران`** (sans hamza sur le alif). Le même auteur reviendra au
+**سند 13** sous la graphie **موران** (voir p.40).
+
+- **Illustration 2 (bas)** : image — **silhouette humaine noire debout à l'intérieur d'un anneau /
+  d'une sphère orange** ouverte, sur fond de ciel bleu et de sol clair.
+- **Encadré-citation 2 (cadre rouge)** :
+> " إنّ قدرة الإنسان على امتلاك الأنا في تمثّله تسمو به غاية السمو فوق سائر الكائنات الحيّة الأخرى
+> على وجه الأرض، وبذلك يكون شخصا ".
+> **كانط**
+
+Aucune des deux citations ne porte de référence bibliographique.
+
+---
+
+###### سند 1 — فويرباخ / Ludwing FEUERBACH — « الوعي ميزة إنسانيّة » — p.16-17
+
+- **Auteur tel qu'imprimé** : signature du texte **فويرباخ** ; ligne latine **`Ludwing FEUERBACH`** ;
+  notice **الكاتب** : **فويرباخ: ( 1804 – 1872 )**. Encadré-citation p.17 signé **فويرباخ**.
+  ⚠️ À l'intérieur même de la notice, la graphie **flotte** : `فويرباخ` et **`فيورباخ`**
+  (dont `فيورباخيين`). Les deux formes coexistent sur la même page. Vérifié à 600 dpi.
+  ⚠️ **`Ludwing`** [sic] sur la ligne latine — vérifié à 600 dpi (la forme usuelle est *Ludwig*).
+- **Titre du سند** : **الوعي ميزة إنسانيّة**
+- **Source imprimée (2 lignes)** :
+  **فويرباخ، ماهيّة المسيحيّة.**
+  `Ludwing FEUERBACH, L'Essence du Christianisme, ch 1, Gallimard, 1960`
+- **Illustrations** : (p.16) **portrait photographique** de Feuerbach, barbu, en médaillon dans le
+  texte ; (p.17) **photographie couleur d'un chimpanzé** en posture de « penseur », main au menton,
+  sur fond de feuillage vert ; à sa droite, **dessin au crayon** du buste d'un homme âgé au front
+  dégarni, de face.
+
+**التمهيد (verbatim)** :
+> يبدو أنّ مطلب تعريف الإنسان مطلب عسير نظرا لطبيعته الملتبسة والملغزة ، و لعلّ في هذا العُسر ما
+> يدفعنا إلى مقارنته بما ليس هو عسانا نمسك بما ينير سبيل البدء في تعريفه.
+
+**Thèse (reformulée)** : à la question « quelle est la différence essentielle entre l'homme et
+l'animal ? », la réponse la plus simple et la plus répandue est : **la conscience**. Mais Feuerbach
+distingue deux sens. Au sens large — sentiment de soi, discrimination des choses sensibles,
+perception et jugement des choses extérieures — **la conscience ne peut pas être refusée à
+l'animal**. Au sens strict, elle **n'appartient qu'à l'être qui prend son propre genre et sa propre
+essence pour objet** : l'animal est bien objet pour lui-même en tant qu'**individu** (d'où son
+sentiment de soi) mais **non** en tant qu'**espèce** — et c'est pourquoi la conscience lui manque.
+D'où : là où il y a conscience il y a science, et la science est conscience des espèces. L'animal
+n'a qu'une vie **simple** (vie intérieure et vie extérieure ne font qu'un), l'homme a une vie
+**double** ; il pense, c'est-à-dire qu'il **s'adresse à autrui et se parle à lui-même**. L'animal ne
+peut accomplir aucune fonction générique sans un autre individu hors de lui ; l'homme, **sans la
+présence d'aucune autre personne**, accomplit la fonction générique de la pensée et de la parole.
+L'homme est donc **à lui-même un « je » et un « tu » à la fois** : s'il peut occuper la place de
+l'autre, c'est précisément parce que son objet n'est pas son individualité mais son genre et son
+essence.
+
+**الهامش (verbatim, p.17 — encadré rose « الهامش », 1 seule note)** :
+> 1– لاحظ التقارب الاشتقاقي في اللسان الفرنسي بين `" science "` `" conscience "`
+
+⚠️ Sur la page, les deux termes latins sont composés **sans « و » ni virgule** entre eux, et le mot
+`conscience` est imprimé **à gauche** de `science` : dans le sens de lecture arabe (droite→gauche),
+`science` vient donc en premier. Vérifié à 600 dpi.
+
+**الكاتب (notice, p.16-17) — verbatim** :
+> **فويرباخ: ( 1804 – 1872 )** — فيلسوف مادي ألماني، وقع فصله من الجامعة بسبب كتابه " أفكار حول
+> الموت والخلود " ( 1830 ). وقد تطورت آراؤه حول الموقف من الدين من أفكار الشبان إلى المادية، وقد
+> أثر إعلانه المادية ودفاعه عنها تأثيرا عظيما على معاصريه. وكتب **أنغلز** عن أثر كتاباته " كان
+> الحماس عاما وصرنا جميعا فيورباخيين دفعة واحدة " .. وكان نقد **فويرباخ** لتصوّر هيغل المثالي لجوهر
+> الإنسان ورده الإنسان إلى وعي الذات النقطة المبدئية في تطور فكر **فيورباخ** الفلسفي كما ظهر في
+> مؤلفه " في نقد الفلسفة الهيغلية " ( 1839 )، غير أنه لم يتابع السير على خط ماديّ متماسك إذ كان
+> يعتبر الإنسان فردا مجردا، كائنا بيولوجيا محضا، وظل **فيورباخ** صاحب مواقف مثالية، وهي مثالية بدت
+> واضحة بشكل خاص في فهمه للتاريخ وللأخلاق، فقد كان يعتبر الدين اغترابا وتحققا موضوعيا للسمات
+> الإنسانية التي كان يعزو إليها جوهرا خارقا للطبيعة في كتابه " جوهر المسيحية " ( 1841 ). فالإنسان
+> يزدوج ويتأمل جوهره في الله، وهكذا يكون الدين وعي الذات اللاواعي لدى الإنسان. وذهب إلى أن التربية
+> هي الملاذ للتحرر من الدين " أسس فلسفة المستقبل " ( 1843 )، أما فيما يتعلق بالأخلاق " الموضوعات
+> الجارية لإصلاح الفلسفة " ( 1842 ) فقد حدد مبادئه الأخلاقية اعتمادا على سعي الإنسان الغريزي إلى
+> السعادة، وكان يعتقد أن تحقيقها ممكن شريطة أن يحدّ كل فرد وبطريقة عقلية من مطالبه وأن يحب الآخرين،
+> والأخلاق التي بناها **فيورباخ** مجرّدة وأبدية.
+
+⚠️ Intervalle **( 1804 – 1872 )** — ordre correct, vérifié à 600 dpi.
+⚠️ Les titres d'œuvres cités dans la notice sont imprimés **en couleur** (bleu ciel), sans ligne
+latine ni éditeur.
+
+**المهام (verbatim, p.17 — encadré rose « المهـام », 7 puces)** :
+- بأيّ معنى يتحدّث فويرباخ عن وعي لدى الحيوان؟
+- هل من تماثل بين الوعي لدى الحيوان والوعي لدى الإنسان؟ أعلّل جوابي.
+- أستخلص دلالة " الوعي الإنساني " وتمظهراته.
+- كيف أفهم قول الكاتب " فالإنسان هو بالنسبة إلى نفسه أنا وأنت في آن " ؟
+- هل من وجاهة في القول بالوعي محدّدا نوعيّا للإنسان؟
+- هل تساعدني مقاربة الكاتب لتفكيك علاقة الكثرة بالوحدة حين تتعلّق بالشأن الإنساني؟
+- أستحضر دلالة " للكلّي " وأتبيّن في ضوئها قيمة الوعي بالنسبة إلى الإنسان. أحرّر فقرة في الغرض.
+
+**Encadré-citation (p.17, cadre rose, entre les deux images)** :
+> " ما الفرق الأساسي بين الإنسان والحيوان؟ "
+> **فويرباخ**
+
+---
+
+###### سند 2 — ابن طفيل — « الذّاتُ نَفْسٌ » — p.18-19
+
+- **Auteur tel qu'imprimé** : signature **ابن طفيل** ; notice **ابن طفيل** ; encadré-citation p.19
+  signé **ابن طفيل**. **Aucune ligne latine** (convention du manuel pour les auteurs arabes).
+  ⚠️ Le corps de la notice écrit une fois **`بن طفيل`** sans « ا » (`استمدّ بن طفيل شهرته`).
+- **Titre du سند** : **الذّاتُ نَفْسٌ** (imprimé entièrement vocalisé).
+- **Source imprimée (1 seule ligne)** :
+  **ابن طفيل. حي بن يقظان؛ منشورات دار الآفاق الجديدة بيروت، ط2, ص 178 — 179**
+  ⚠️ Ponctuation imprimée irrégulière : un **point** après `ابن طفيل`, un **point-virgule** après
+  `حي بن يقظان`, et une **virgule latine `,`** (non arabe) après `ط2`.
+- **Illustration** : **dessin au trait** (encre) d'un visage d'homme de trois quarts, coiffé, avec
+  une **inscription manuscrite arabe** en bas à droite du cadre — non déchiffrable à 600 dpi.
+
+**التمهيد (verbatim)** :
+> اقترن التفكير في الإنسان بالتفكير فيما ليس هو، وكأنّه شرط الذات للمرور إلى ذاتها. قد يتحوّل حينها
+> الوعي بالذات إلى ضرب من استلهام للمطلق يمّحي فيه طلبا للإثبات.
+
+**Thèse (reformulée)** : ayant saisi l'Être absolu nécessaire **par son essence même**, le
+personnage découvre que cette essence par laquelle il l'a saisi **n'est pas corporelle** et
+qu'aucune propriété des corps ne peut lui convenir : tout ce qu'il perçoit du dehors de lui-même,
+du côté de la corporéité, **n'est pas** la vérité de son essence. Son corps lui devient alors sans
+importance. Examinant si cette essence noble peut périr, se corrompre et se dissoudre, il conclut
+que **corruption et dissolution sont des propriétés des corps** — qui quittent une forme pour en
+revêtir une autre (l'eau devenue air, la terre devenue plante). Ce qui **n'est pas un corps**, ce
+qui **n'a pas besoin d'un corps** pour subsister et qui est exempt de toute corporéité, **ne peut
+donc absolument pas être conçu comme corruptible**.
+
+**الهامشان (verbatim, p.19 — encadré rose « الهامشان », 2 notes)** :
+> 1– " حي بن يقظان " هو بطل القصّة الخيالية التي وضعها ابن طفيل.
+> 2– يعود الضمير إلى " واجب الوجود " ويعني الله أو " الموجود الشريف "، ويُسمّى واجب الوجود لأنّ
+> وجوده يكون من ذاته ولا يحتاج إلى شيء أصلا ( الجرجاني، التعريفات ). وهو " الذي لا يمكن أن يكون
+> وجوده من غيره "، ويقابله " ممكن الوجود، " وهو " الذي متى فُرض غير موجود أو موجود لم يعرض عنه
+> محال " ( ابن سينا، رسالة الحدود ).
+
+⚠️ Guillemet mal placé dans la note 2, tel qu'imprimé : **`" ممكن الوجود، "`** — la virgule tombe
+**à l'intérieur** du guillemet fermant.
+
+**الكاتب (notice, p.18) — verbatim** :
+> **ابن طفيل: ( 500 – 581 هـ )؛ ( 1102 – 1185 )** — هو أبو بكر بن محمد بن طفيل القيسي، فيلسوف أندلسي
+> اشتغل بالطبّ وعمل وزيرا لدى الخليفة أبي يعقوب يوسف ثاني خلفاء الموحدين في مراكش. استمدّ بن طفيل
+> شهرته من جهده الشخصي في طلب العلم واستخرج جلّ علمه من الكتب حتّى غدا من أعلام العصر المعدودين. كان
+> سببا في شرح ابن رشد لفلسفة أرسطو وقد ساعده على تأليف كتاب " الكليات في الطب " تميّز بآرائه في
+> الفلك وقيل إنّه كان طبيبا بارعا. ضمّن آراءه الفلسفيّة كتابه المشهور " حي بن يقظان " المصنّف الوحيد
+> الذي عرف عنه لقلة إنتاجه على غزارة علمه، وفيه بسط مبادئ الفلسفة المشرقيّة وبيّن اختلافه عن فلاسفة
+> الإسلام في مسائل عديدة، مما جعله فيلسوفا متفرّدا.
+
+⚠️ **Double intervalle** hégirien puis grégorien : `( 500 – 581 هـ )؛ ( 1102 – 1185 )` — le second
+**sans** la lettre `م` (contrairement à celui d'Ibn Sina, p.20, qui porte `1037م`). Ordres corrects.
+
+**المهام (verbatim, p.19 — encadré rose, 7 puces)** :
+- أيّهما يشترط الآخر: إدراك الذات أم إدراك " واجب الوجود "؟
+- كيف أفهم هذا التشريط؟
+- ما طبيعة الذات عند ابن طفيل؟
+- ما حقيقة الجسم منظورا إليه من جهة النفس؟
+- ماذا يترتّب عن القول بفساد الجسم حين يتعلّق الأمر بحقيقة الإنسان؟
+- بأيّ معنى يُقال عن الجسم إنّه غيريّة؟
+- هل أجد في تمثّلاتي ما يتقارب مع أطروحة ابن طفيل؟ أحرّر فقرة في الغرض.
+
+**Illustration (p.19)** : photographie retravaillée en orange et noir — **silhouettes de personnes
+marchant de face**, cernées de traits de lumière qui évoquent des flammes.
+
+**Encadré-citation (p.19, cadre rose, à droite de l'image)** :
+> " إنّ الفساد والاضمحلال إنّما هو من صفات الأجسام... "
+> **ابن طفيل**
+
+---
+
+###### سند 3 — ابن سينا — « في إثبات الإنيّة » — p.20-21
+
+- **Auteur tel qu'imprimé** : signature **ابن سينا** ; notice **ابن سينا** ; encadré-citation p.21
+  signé **ابن سينا**. **Aucune ligne latine.**
+- **Titre du سند** : **في إثبات الإنيّة**
+- **Source imprimée (1 seule ligne)** :
+  **ابن سينا، الإشارات والتنبيهات، القسم الثاني ( الطبيعيات ). طبعة سليمان دنيا 1957. ص 320**
+- **Illustration** : **portrait peint** d'Avicenne de profil, turban blanc et vêtement sombre
+  (médaillon inséré dans le texte, p.20).
+
+**التمهيد (verbatim)** :
+> تخبرنا التجربة اليوميّة عن وجودٍ ما نحتلّه في العالم، لكنّ تعيين هذا الوجود وإدراكه عقلا يقتضي
+> فيما يقتضي رجوع النفس إلى ذاتها تفحّصا في إنيّتها بما يجعل الذات مليئة بذاتها لا تهزّها عوارض.
+
+**Thèse (reformulée)** : reviens à toi-même et considère — sain, ou même dans certains de tes états
+altérés — que **tu ne peux pas être inattentif à l'existence de ton essence, ni cesser de
+l'affirmer**, pas même dans le sommeil ou l'ivresse. Suppose maintenant que tu aies été créé d'un
+coup, entier et bien constitué, mais **placé de telle sorte que tu ne voies pas tes membres, qu'ils
+ne se touchent pas, écartés et suspendus un instant dans un air libre** : tu te trouverais **ignorant
+de toute chose sauf de l'affirmation de ta propre ipséité**. Ce qui perçoit **n'est donc pas** ce que
+tu perçois par les sens : si tu étais dépouillé de ton apparence et si tes membres changeaient, tu
+resterais **toi**. Ibn Sina écarte enfin l'objection selon laquelle « je n'affirme mon essence que
+par mon acte » : un acte **absolu** ne prouverait qu'un agent quelconque, non toi ; et un acte
+**propre** suppose déjà ton essence, comprise **avant** lui. Donc **ton essence est affirmée non par
+l'acte** — elle est ce par quoi l'acte est affirmé.
+
+**هوامش** : **aucun encadré de notes** pour ce سند (ni p.20 ni p.21). Le texte contient en revanche
+plusieurs **coupes imprimées** notées `( ... )`.
+
+**الكاتب (notice, p.20-21) — verbatim** :
+> **ابن سينا: ( 370 – 429 هـ )؛ ( 980 – 1037م )** — هو أبو علي **الحسن** بن سينا، فيلسوف وطبيب من
+> أصل فارسي. تربّى في بيت له " اشتغال بخدمة الدولة "، وتلقى العلوم العقليّة والشرعيّة في بيت أبيه
+> وحصّل بنفسه علما غزيرا حينما أذن له الأمير نوح بن منصور بالدخول في دار كتبه. كان ابن سينا فيلسوفا
+> موسوعيّا غزير الإنتاج تلتقي في تآليفه جميع المذاهب. فقد مزج بمهارة بين آراء تنوّعت مصادرها من
+> إسلاميّة إلى فارسيّة، إلى آراء اليونانيين وخاصّة أرسطو وأفلاطون وأفلوطين... غير أنّه في كلّ هذا
+> متفرّد بحكمته المشرقيّة أو نظريّته في التصوّف " فلسفة خاصّة به " كما يؤكّد ذلك بنفسه في كتابه
+> " منطق المشرقيين ". كان لابن سينا أثره العميق في الثقافة الإنسانيّة خاصّة بما صنّفه في مجال الطبّ
+> " القانون في الطب " والذي ظل مرجعا للأطباء طيلة قرون. لابن سينا كتاب جامع وموسوعة فلسفيّة سمّاها
+> " الشفاء " وله أيضا كتاب " النجاة " و " الإشارات والتنبيهات " ورسائل عديدة ( رسالة الطير، رسالة
+> القدر، رسالة في النفس الناطقة... ) ومختصرات كتبها في مواضيع شتى.
+
+⚠️ **`أبو علي الحسن بن سينا`** — la notice imprime **`الحسن`**, vérifié à 600 dpi (la forme usuelle
+est *الحسين*). Anomalie de la source, non corrigée ici.
+⚠️ Intervalles `( 370 – 429 هـ )؛ ( 980 – 1037م )` — ordres corrects, vérifiés à 600 dpi.
+
+**المهام (verbatim, p.21 — encadré rose, 7 puces)** :
+- على أيّ وجه تُدرك الذات ذاتها ؟
+- ما دلالة صورة " الإنسان المعلّق " في سياق حجاج الكاتب على ثبوت الإنيّة ؟
+- هل يستلزم تأكيد الإنيّة توسّط الجسم؟
+- ما قيمة التمييز بين " الفعل المطلق " و " الفعل الخاص " في إثبات الإنيّة ؟
+- كيف أفْهَمُ هذه العبارة " إنّ فعلك... هو ذاتك عينها " ؟
+- أيّ معنى للإنيّة يمكن أن أستخلصه من النصّ؟
+- هل لي أن أمتحن وجاهة رؤية ابن سينا في ضوء تمثّلي لذاتي ؟
+
+**Illustration (p.21)** : peinture surréaliste — **un homme en équilibre sur les mains, en appui sur
+une sphère mouchetée** posée au bord de l'eau, ciel violet et nuages jaunes.
+
+**Encadré-citation (p.21, cadre rose, à droite de l'image)** :
+> " ... وفُرِضَ أنّها على جملة من الوضع والهيئة بحيث لا تُبصَرُ أجزاؤها، ولا تتلامس أعضاؤها بل هي
+> منفرجة ومعلقة لحظةً ما في هواء طلق... "
+> **ابن سينا**
+
+---
+
+###### سند 4 — ديكارت / DESCARTES — « في يقين الكوجيتو » — p.22-23
+
+- **Auteur tel qu'imprimé** : signature **ديكارت** ; ligne latine **`DESCARTES`** ; notice
+  **روني ديكارت: ( 1596 – 1650 )**. Encadré-citation p.23 signé **ديكارت**.
+  ⚠️ Trois graphies sur deux pages (`ديكارت` / `DESCARTES` / `روني ديكارت`).
+- **Titre du سند** : **في يقين الكوجيتو**
+- **Source imprimée (2 lignes)** :
+  **ديكارت، التأملات، التأمّل الثاني؛ ترجمة عثمان أمين**
+  `DESCARTES, Méditations, Méditation seconde, in œuvres et Lettres, éd.Gallimard, ,pp 772 - 872`
+  ⚠️ La ligne latine porte **deux virgules consécutives** avant `pp` (`Gallimard, ,pp`) et une
+  pagination **`772 - 872`** (100 pages pour une seule *Méditation*). Les deux vérifiés à 600 dpi ;
+  reproduits tels quels.
+- **Illustrations** : (p.22) **portrait peint** de Descartes en buste, longue chevelure noire et col
+  blanc ; (p.23) **photographie d'une sculpture** — figure humaine nue, ramassée sur elle-même, bras
+  repliés, sur fond de drapé.
+
+**التمهيد (verbatim)** :
+> بدأت الحداثة بإعلان تصوّر جديد للعالم لم يعد الإنسان، في صورته القديمة، قادرا على التوافق معه. وقد
+> كان على الفلسفة أن تضطلع بمهمّة بناء تصوّر جديد للإنسان يؤسّس لذات تجد يقينها في ذاتها وتطلب
+> التوافق مع العالم بالسيادة عليه.
+
+⚠️ Le texte s'ouvre sur une formule **imprimée en couleur (cyan)** dans le corps même du texte :
+**`أنا كائن، وأنا موجود:`** — mise en évidence typographique, non un titre.
+
+**Thèse (reformulée)** : « je suis, j'existe » est certain — mais **combien de temps ?** Aussi
+longtemps que je pense : car s'il se pouvait que je cesse entièrement de penser, **je cesserais du
+même coup d'exister**. Je n'admets donc rien qui ne soit nécessairement vrai : je **ne suis** rien
+d'autre, à parler exactement, qu'**une chose qui pense** — un esprit, un entendement, une raison,
+mots dont j'ignorais le sens auparavant. Et cette chose qui pense est celle qui doute, conçoit,
+affirme, nie, veut, ne veut pas, imagine aussi et sent. Descartes s'objecte le rêve et
+l'imagination : **la puissance d'imaginer ne me fait pas connaître ce que je suis** et n'est pas
+inséparable de mon existence ; de même, sentir, c'est encore **le même moi qui pense**. Même si ce
+que je vois et entends n'était qu'apparence trompeuse, **il reste certain qu'il me semble voir,
+entendre, avoir chaud** — et cela, proprement, s'appelle **sentir**, et ce n'est rien d'autre que
+**penser**. Conclusion imprimée : je commence à me connaître moi-même avec **plus de clarté et de
+distinction** qu'auparavant.
+
+**هوامش** : **aucun encadré de notes** pour ce سند (ni p.22 ni p.23). Deux coupes `(...)` imprimées
+dans le texte.
+
+**الكاتب (notice, p.23) — verbatim** :
+> **روني ديكارت: ( 1596 – 1650 )** — فيلسوف وعالم ( في الفيزياء والرياضيّات ) فرنسي يُعدّ رائد
+> الحداثة ومؤسس العلم الحديث، حصل على الإجازة في الحقوق ( 1616 ) ليتفرّغ للبحوث العلميّة والفلسفيّة
+> بداية من سنة 1618 ˝ مادام لا شيء يستطيع أن يعوّض الرغبة الجامحة في تعلّم كيفيّة التمييز بين
+> الصّواب والخطأ من أجل أن ننظر بوضوح أثناء الممارسة والفعل وأن نمشي بخطى ثابتة كما يقول. اهتمّ
+> بالكشف عن قواعد سداد العقل في أحكامه ( " قواعد لتوجيه العقل "؛ كُتب سنة 1628 ونُشر سنة 1701 ).
+> تواصل اهتمامه بالجانب المنهجي في " مقالة الطريقة " ( 1637 ) الذي كُتب بالفرنسيّة، على غير عادة
+> الفلاسفة، رغبة منه في توسيع دائرة الفكر الفلسفي. رسم ديكارت في هذا الكتاب قواعد التفكير السليم
+> بدءا من البداهة وانتهاء إلى المراجعة مرورا بالتحليل والتركيب. وانتهى في " تأمّلات ميتافيزيقيّة "
+> ( 1641 ) إلى التأكيد على أن العقل ليس عليه إلاّ أن يعوّل على نفسه لبلوغ الحقيقة في خصوص الوعي
+> بالذات وعلاقة النفس بالجسد محدّدا منزلة الإله من خلال ما يسمّيه بـ " الضمان الإلهي ". وفي سنة
+> 1644 صدر كتابه " مبادئ الفلسفة " الذي عرض فيه للعموم نسقه الفلسفي ثمّ في 1649 " انفعالات النفس "
+> الذي طوّر فيه نظريّة في التحكّم في انفعالات النفس على قاعدة تصوّر لعلاقة النفس بالجسد. أمّا في
+> " رسالة في الإنسان " ( 1662 ) فقد سعى ديكارت إلى تحطيم المفاهيم الأساسيّة للفيزياء القديمة وسحب
+> الآليّة على الظواهر البيولوجية بما في ذلك الجسم الإنساني. وفي " رسائله مع الأميرة اليزابيت "
+> ( من 1643 إلى 1649 ) تعرّض إلى أغلب القضايا التي اهتمّ بها ( النفس، الجسد، الاختيار الحرّ،
+> الإلهيات... ).
+
+⚠️ **Guillemet ouvrant jamais refermé** : la citation ouverte après `سنة 1618` (`˝ مادام لا شيء…`)
+ne reçoit **aucun guillemet de fermeture** ; la phrase se poursuit jusqu'à `كما يقول.`. Vérifié à
+600 dpi sur trois lignes consécutives.
+⚠️ Intervalle `( 1596 – 1650 )` — ordre correct.
+
+**المهام (verbatim, p.23 — encadré rose, 6 puces)** :
+- أيّة علاقة يقيمها الكاتب بين الوجود والتفكير؟
+- كيف أفهم الطابع اليقيني للكوجيتو؟
+- أرصد الحجج التي تؤكّد جوهريّة الوعي.
+- أحدِّدُ خصائص طبيعة الأنا.
+- أحدِّدُ منزلةَ كلٍّ من الفكر والجسم في تحديد دلالة الإنيّة.
+- أستخلص دلالة الغيريّة في فلسفة ديكارت.
+
+**Encadré-citation (p.23, cadre rose, à droite de la sculpture)** :
+> " أنا أفكّر إذن أنا موجود ".
+> **ديكارت**
+
+---
+
+###### سند 5 — هيغل / HEGEL — « تحقّقُ الوعي » — p.24-25
+
+- **Auteur tel qu'imprimé** : signature **هيغل** ; ligne latine **`HEGEL`** ; notice
+  **فريديريك هيغل: ( 1770 – 1831 )**. Encadré-citation p.25 signé **هيغل**.
+- **Titre du سند** : **تحقّقُ الوعي**
+- **Source imprimée (2 lignes)** :
+  **هيغل ، علم الجمال**
+  `HEGEL, Esthétique, PUF, p 21`
+  ⚠️ Espace avant la virgule dans la ligne arabe (`هيغل ، علم الجمال`), tel qu'imprimé.
+- **Illustration** : **portrait peint** de Hegel de trois quarts, cheveux gris (médaillon dans le
+  texte, p.24) ; (p.25) **photographie** d'une statue **Chac Mool** (figure allongée, tête tournée)
+  au milieu d'une forêt de **colonnes de pierre** sous un ciel bleu — aucun cartel imprimé.
+
+**التمهيد (verbatim)** :
+> إنّ القول بماهيّة ثابتة للإنسان من شأنه أن يجعل ما لَحِقَ الوعي من تبدلات مستغلقا على الفهم. ولعلّ
+> الانتباه إلى قيمة التاريخ وفعله ما يبدّد بعض ما التبس، خاصّة إذا اعتبرناه مقوّما للوعي لا مجرّد
+> وحدة قيس.
+
+**Thèse (reformulée)** : l'homme est un être doué de conscience et de pensée : quel que soit son
+mode d'existence, **il est un être pour soi**. Les choses de la nature **n'existent que d'une seule
+manière, immédiate** ; l'homme, parce qu'il est esprit, a une **existence double** — il existe
+d'un côté comme les choses de la nature, et de l'autre **il existe aussi pour soi**, il se
+contemple, se représente à lui-même, se pense ; et il n'est esprit que par cette activité. Cette
+conscience de soi s'acquiert de **deux manières** : (1) **théoriquement**, en se repliant sur la
+conscience de tous les mouvements du cœur humain, en se contemplant et en se représentant ce qui le
+caractérise comme essence, puis en ne se reconnaissant que dans ce qu'il tire **de sa propre
+profondeur**, non dans les données reçues du dehors ; (2) **pratiquement**, par son activité —
+poussé à se découvrir dans ce qui lui est immédiatement donné et offert du dehors. Il y parvient en
+**transformant les choses extérieures**, en les marquant du sceau de son intériorité et en n'y
+retrouvant plus que ses propres déterminations. Ainsi l'homme dispose librement de ce qui est
+extérieur **en tant que soi**, **ôte au monde son caractère d'étrangeté** et ne jouit des choses
+**que parce qu'il y trouve une forme extérieure de sa propre réalité**. Ce besoin est déjà inscrit
+dans les premiers penchants de l'enfant : le petit garçon qui jette des pierres dans la rivière et
+s'émerveille des **cercles** qui se forment dans l'eau jouit en réalité d'un spectacle **qu'il a
+obtenu de sa propre activité**.
+
+**هوامش** : **aucun encadré de notes** pour ce سند (ni p.24 ni p.25).
+
+**الكاتب (notice, p.24-25) — verbatim** :
+> **فريديريك هيغل: ( 1770 – 1831 )** — فيلسوف ألماني من أهمّ فلاسفة القرن التاسع عشر وأكثرهم تأثيرا
+> في الفكر المعاصر. اشتغل بالتدريس منذ سنة 1801 بجامعة " يانا " `Iena`. اهتمّ في " فينومينولوجيا
+> الرّوح " ( 1807 ) بتاريخ الوعي بما هو تاريخ النفس وقد أصبحت وعيا، واصفا المراحل التي قطعتها
+> ومحدّدا الصور المختلفة التي اتخذتها والتي تحقّقت بفضل التفكير. وفي الأجزاء الثلاثة من " علم
+> المنطق " ( 1812 – 1816 ) يتخطّى هيغل المنطق الرياضي في اتجاه منطق شامل لكلّ تفكير ممكن ولكلّ صورة
+> من صور الفكر، متجاوزا بذلك التعارض القديم بين صورة التفكير ومادّته. صدر له سنة 1817 كتاب " موسوعة
+> العلوم الفلسفيّة "، وفيه رسم لقرّائه الخيط الناظم لدروسه الفلسفيّة. وسعى، من جهة أخرى، إلى التوحيد
+> بين وجهين في السلوك الإنساني فصلت بينهما الفلسفة الكانطيّة: الحقّ الذي يُلزم الإرادة من خارج
+> والواجب الذي تلتزم به الإرادة من الداخل. وقد أراد بهذا التوحيد الجمع بين الموضوعي والذاتي ضمن ما
+> يسمّيه بالأخلاقيّة الموضوعيّة ( " مبادئ فلسفة الحقّ "؛ 1821 ). وفي " علم الجمال " ( 1832 ) عرّف
+> الفنّ بما هو وحدة بين الواقعي والمجرّد واعتبره تجاوزا للطبيعة والمنطق في آن. واهتمّ كذلك بالدين
+> وبيّن أنه تماما كالفلسفة يطمح إلى التعبير عن المطلق لكنه لا يفعل ذلك باعتماد التأمّل المفهومي شأن
+> الفلسفة بل بواسطة التمثلات والمشاعر ( " دروس في فلسفة الدّين "؛ 1832 ). أمّا في " دروس في تاريخ
+> الفلسفة " ( 1833 – 1836 ) فقد عرض إمكانيّة التفكير في تاريخ الفلسفة عبر إجلاء الوحدة من الكثرة
+> ( كثرة الأنساق الفلسفيّة ) معتبرا الفلسفة أرقى صور الوعي الذي يتمكّن من تجاوز التحقق في الدين
+> والفن. والثابت لدى هيغل أنّ تاريخ الإنسانيّة بأكمله هو تعبير عن صيرورة تحقّق الفكر ( " دروس في
+> فلسفة التاريخ "؛ 1837 ).
+
+⚠️ Intervalles `( 1770 – 1831 )`, `( 1812 – 1816 )`, `( 1833 – 1836 )` — tous dans le bon ordre.
+⚠️ Le nom de l'université est imprimé **`" يانا " Iena`** — translittération arabe + forme latine.
+
+**المهام (verbatim, p.25 — encadré rose, 7 puces)** :
+- بأيّ معنى يقول الكاتب عن الوجود الإنساني إنه " وجود مزدوج " ؟
+- يتحدّث الكاتب عن طريقتين يكتسب بهما الإنسان الوعي بالذات: ما دلالتهما؟
+- هل من تناقض بين القول بأن الإنسان كائن وُهب وعيا وبين القول بأنه يكتسب هذا الوعي؟
+- أستخلص قيمة التاريخ في تشكّل الوعي.
+- أيّة علاقة يقيمها الكاتب بين الحريّة ونزع الغرابة عن العالم والتمتّع بالأشياء؟ أستثمر مثال الولد
+  الصغير في بلورة جوابي.
+- أيّ معنى للإنيّة يمكن استخلاصه من النصّ؟ أتبيّن وجوه الجدّة فيه.
+- هل الحريّة في علاقتها بالوعي شرط أم رهان؟ أحرّر فقرة في الغرض.
+
+**Encadré-citation (p.25, cadre rose, à droite de la photographie)** :
+> " لا يتمتّع (الإنسان) بالأشياء إلاّ لأنّه يعثر فيها على شكل خارجيّ لحقيقته الخاصة ".
+> **هيغل**
+
+⚠️ Le mot **(الإنسان)** est imprimé **entre parenthèses** dans la citation : ajout du manuel pour
+expliciter le sujet, non retiré ici.
+
+---
+
+###### سند 6 — ج. ج. روسّو / J. J. ROUSSEAU — « التوق إلى الاكتمال » — p.26-27
+
+- **Auteur tel qu'imprimé** : signature **ج. ج. روسّو** ; ligne latine **`J. J. ROUSSEAU`** ;
+  notice **ج.ج روسّو : ( 1712 – 1778 )** (sans point après le second `ج`) ; encadré-citation p.27
+  signé **روسّو** ; le corps de la notice écrit **لروسّو**.
+- **Titre du سند** : **التوق إلى الاكتمال**
+- **Source imprimée (3 lignes)** :
+  **ج. ج. روسّو؛ مقالة حول أصل اللامساواة بين البشر وأسسها.**
+  `J. J. ROUSSEAU,`
+  `Discours sur l'origine et les fondements de l'inégalité parmi les hommes,1755`
+  ⚠️ Pas d'espace après la virgule finale (`hommes,1755`), tel qu'imprimé.
+  ⚠️ Le titre arabe de la source (`مقالة حول أصل اللامساواة`) diverge de celui donné dans la notice
+  de la même page (`مقالة في أصل اللامساواة بين البشر وأسسها`) : **حول** vs **في**.
+- **Illustration** : **portrait peint** de Rousseau en buste, perruque blanche, veste sombre
+  (médaillon dans le texte, p.26).
+
+**التمهيد (verbatim)** :
+> اقتضى تحديد الإنسانيّ في الإنسان تمييزه عن الحيوان. وكثيرا ما قام الوعي بأداء هذا الدور. لكنّنا
+> إذا طلبنا مزيد الدقّة والتعمّق في تحديد الإنسانيّ تبيّنت لنا محدوديّة أدائه، ممّا يضطرّنا إلى
+> التفكير في أفق يتجلّى فيه الإنسانيّ على نحو أكثر إشراقا.
+
+**Thèse (reformulée)** : puisque toutes les difficultés qui entourent la question laissent place à
+la discussion sur ce qui distingue l'homme de l'animal, Rousseau met en avant **une autre qualité,
+très spécifique, qui les distingue et sur laquelle on ne peut pas discuter : la faculté de se
+perfectionner** (`ملكة التوق إلى الاكتمال`). Aidée des circonstances, elle développe
+successivement toutes les autres facultés, et **elle réside en nous autant dans l'espèce que dans
+l'individu** — alors que l'animal, au bout de quelques mois, est ce qu'il sera toute sa vie, et son
+espèce au bout de mille ans ce qu'elle était la première année de ces mille ans. Pourquoi
+**l'homme seul est-il sujet à devenir imbécile ?** N'est-ce pas qu'il **retourne** ainsi à son état
+primitif, tandis que la bête, qui **n'a rien acquis** et n'a donc rien à perdre, reste toujours
+avec son instinct ? Rousseau y voit une conséquence **triste** : il faut reconnaître que cette
+faculté distinctive et **illimitée** est **la source de presque tous les malheurs de l'homme** ;
+c'est elle qui l'arrache, avec le temps, à cet état originel où il aurait coulé des jours paisibles
+et innocents ; c'est elle qui, à la longue, **fait de lui le tyran de lui-même et de la nature**,
+en faisant éclore avec les siècles ses lumières et ses erreurs, ses vices et ses vertus.
+
+**الهامش (verbatim, p.27 — encadré rose « الهامش », 1 seule note)** :
+> 1– " المسائل ": ويُقصد بها مجموع القضايا التي دار حولها جدل يتعلّق بما يميّز الإنسان عن الحيوان
+> وما يميّز إنسانا عن آخر.
+
+**الكاتب (notice, p.26-27) — verbatim** :
+> **ج.ج روسّو : ( 1712 – 1778 )** — كاتب وفيلسوف فرنسي من أصل سويسري، عاش في عصر التنوير وكانت له
+> علاقات متينة بالموسوعيين ومع ذلك ناهض تطوّر العلوم وتراكم الثروات خاصّة في كتاباته الأولى
+> ( " مقالة في العلوم والفنون " ؛ 1751 - " مقالة في أصل اللامساواة بين البشر وأسسها "؛ 1755 ). أمّا
+> كتاباته اللاحقة فقد جاءت **أكثرا** تفاؤلا. وفي " في العقد الاجتماعي " ( كُتب سنة 1762 أي قبل عشرين
+> سنة من قيام الثورة الفرنسيّة ) يتجاوز روسّو الفلاسفة القائلين بالحق الطبيعي رافضا أن تكون الحريّة
+> الثمن الذي يدفعه المواطن مقابل الأمن. فالحريّة لا يمكن أن تكون موضوع مبادلة لأنّ التفريط فيها هو
+> بمثابة التفريط في إنسانيّة الإنسان. واستخلص أن الإرادة العامّة هي الأساس الشرعي لكل دولة مدنيّة.
+> أما في " إميل أو في التربيّة " ( 1762 ) فقد عرض روسّو نظريّة معاصرة في التربية جاء فيها أنّ
+> المجتمع يمثل عاملا مؤثرا في تكوين شخصيّة الفرد ودعا إلى تمكين الطفل من الإسهام الفعلي في بناء
+> تكوّنه الشخصي. وكانت لروسّو كتابات عديدة ذات توجّه قبل رومنطيقي منها " هيلويز الجديدة " ( 1761 )
+> و " الاعترافات ".
+
+⚠️ **`أكثرا تفاؤلا`** [sic] — alif surnuméraire (forme attendue `أكثر`). Vérifié à 600 dpi.
+⚠️ **`قبل عشرين سنة من قيام الثورة الفرنسيّة`** — imprimé tel quel et vérifié à 600 dpi ; l'écart
+entre 1762 et 1789 est de **27** ans, non 20. Affirmation de la source, non corrigée.
+⚠️ Intervalle `( 1712 – 1778 )` — ordre correct.
+
+**المهام (verbatim, p.27 — encadré rose, 6 puces)** :
+- عن أيّة ملكة إنسانيّة يتحدّث الكاتب ؟ وما قيمتها ؟
+- أيّة قيمة للمقارنة التي يقيمها الكاتب بين الإنسان والحيوان ؟
+- في أيّ معنى يكون " توق الإنسان إلى الاكتمال " أساسا لجدارته ؟
+- هل من تناقض بين التوق إلى الاكتمال والوضع البائس الذي يمكن أن يكون عليه الإنسان ؟
+- أيّة صورة **للأنيّة** يمكن تحديدها في ضوء توق الإنسان إلى الاكتمال؟
+- هل أرى في محيطي ما يُعَدُّ من تجليات هذه الملكة؟ أحرر فقرة في الغرض ؟
+
+⚠️ 5ᵉ puce : le manuel imprime **`للأنيّة`** (alif **avec hamza au-dessus**), et non `للإنيّة`
+comme partout ailleurs dans le chapitre. Vérifié à 600 dpi.
+⚠️ 6ᵉ puce : elle se termine par un **point d'interrogation** alors qu'elle est une consigne
+(`أحرر فقرة في الغرض ؟`), tel qu'imprimé.
+
+**Illustration (p.27)** : photographie en noir et blanc — **deux silhouettes** en contre-jour sur
+une pente sombre très inclinée (l'une debout, main sur la hanche ; l'autre penchée sur un
+trépied/outil), ciel de nuages clairs.
+
+**Encadré-citation (p.27, cadre rose, à droite de la photographie)** :
+> " ... إنها ملكة التوق إلى الاكتمال... وتكمن لدينا في النوع بقدر ما تكمن في الفرد ".
+> **روسّو**
+
+---
+
+###### سند 7 — أ. شوبنهاور / Arthur SCHOPENHAUER — « التاريخ ذاكرة الوعي » — p.28-29
+
+- **Auteur tel qu'imprimé** : signature **أ. شوبنهاور** ; ligne latine **`Arthur SCHOPENHAUER`** ;
+  notice **شوبنهاور : ( 1788 – 1860 )**. Encadré-citation p.29 signé **شوبنهاور**.
+- **Titre du سند** : **التاريخ ذاكرة الوعي**
+- **Source imprimée (3 lignes)** :
+  **أ. شوبنهاور. العالم بما هو إرادة وتمثّل**
+  `Arthur SCHOPENHAUER, Le Monde comme volonté et représentation,`
+  `supplément au livre III, éd. PUF, ,1978 pp. 1185 - 1186`
+  ⚠️ **Deux virgules consécutives** avant le millésime (`PUF, ,1978`) — même tic typographique qu'au
+  سند 4 (`Gallimard, ,pp`). Vérifié à 600 dpi.
+  ⚠️ Le titre arabe de la source (`العالم بما هو إرادة وتمثّل`) diverge de celui donné dans la notice
+  de la p.29 (`العالم كإرادة وتمثل`).
+- **Illustration** : **portrait peint** de Schopenhauer jeune, chevelure bouclée, col haut
+  (médaillon dans le texte, p.28) ; (p.29) **photomontage** — profil de visage se détachant sur un
+  fond de **ciel étoilé** rose et violet, avec une **horloge** en haut à droite.
+
+**التمهيد (verbatim)** :
+> إذا كانت الحداثة، في بداية تشكّلها، قد اقتضت أن يكون الإنسان " مملكة داخل مملكة " فإنّ الوعي بقيمة
+> التاريخ في تحديد ما هو إنسانيّ في الإنسان أفضى إلى الوعي بتاريخيّة الإنسان وتاريخيّة وعيه، إذ لا
+> معنى لإنسان لا يتأثّر بالتاريخ ولا يؤثّر فيه، وكأنّ تاريخ الوعي يتماهى مع الوعي بالتاريخ.
+
+**Thèse (reformulée)** : **l'histoire est à l'espèce humaine ce que la raison est à l'individu.**
+Grâce à sa raison, l'homme **n'est pas** enfermé dans les limites étroites du présent visible comme
+l'est l'animal : il connaît aussi le passé dans son extension la plus lointaine, comme origine du
+présent auquel il se rattache ; **cette connaissance seule** lui donne l'intelligence claire du
+présent et lui permet même d'anticiper l'avenir. À l'inverse, l'animal — dont la connaissance est
+sans réflexion, bornée à l'intuition donc au présent — reste **ignorant, apathique, désarmé,
+esclave**, même apprivoisé parmi les hommes. De même, **un peuple qui ne connaît pas son histoire**
+est borné au présent de la génération actuelle : il ne comprend ni sa nature ni son existence
+propre et ne peut les rapporter à un passé qui les expliquerait ; il est donc **moins capable
+d'anticiper l'avenir**. **Seule l'histoire donne à un peuple une conscience pleine de lui-même** :
+elle est la conscience réfléchie du genre humain. D'où le rôle de la **langue** (condition
+nécessaire de la raison individuelle) et de l'**écriture** : l'existence effective de cette raison
+de l'humanité **ne commence qu'avec l'écriture**, comme la raison individuelle **ne commence
+qu'avec la parole**. L'écriture restaure l'unité de cette conscience de l'espèce **que la mort
+brise et fragmente sans cesse** : elle permet au petit-fils de reprendre et d'achever la pensée
+conçue par l'aïeul, elle pare à la dissolution du genre humain en une infinité d'individus
+éphémères et, par là, **fait front au temps** dans sa fuite irrésistible, qu'accompagne son
+compagnon, **l'oubli**.
+
+**هوامش** : **aucun encadré de notes** pour ce سند (ni p.28 ni p.29). Une coupe `(...)` imprimée.
+
+**الكاتب (notice, p.29) — verbatim** :
+> **شوبنهاور : ( 1788 – 1860 )** — فيلسوف ألماني من عائلة ثرية، اهتم بالفلسفة وكان تلميذا
+> **لفيخته**، كان للقائه بفلسفة كانط (1810) من ناحية، والبوذية من ناحية أخرى ( 1814 )، أثر كبير على
+> تكوينه الفلسفي، كما عُرف بنقده اللاذع **لهيغل** الذي قال عنه " كاتب لأشياء سخيفة ومفسد للأدمغة ".
+> لم يعرف تدريسه في برلين النجاح ( فقد اختار التدريس في نفس توقيت دروس **هيغل** ) فانقطع عنه سنة
+> 1833 لكتابة " الإرادة في الطبيعة " ( 1836 ). ثم أصدر كتاب " المشكلان الأساسيان للإيتيقا " (1841)،
+> وكان عليه أن ينتظر نهاية حياته ليعرف النجاح مع صدور كتابه الأخير " تكملة وحذف " ( 1851 ) والذي
+> تضمن تأملاته في تاريخ الفلسفة والأخلاق. ضد الأنساق الفلسفية، أراد **شوبنهاور** أن يكون صاحب فكر
+> متفرد، يعتبر أن جوهر العالم يقوم على إرادة الحياة بما هي إرادة كلية وعمياء ( " العالم كإرادة
+> وتمثل "، 1818 ). من الكانطية احتفظ **شوبنهاور** بفكرة أن العالم كما يظهر لنا ليس سوى تمثلات، ولكنه
+> جعل من التمثل واقعا في ذاته قابلا للمعرفة في العالم ويسميه إرادة. فالإرادة هي المعرفة الماقبلية
+> للعالم، والعالم هو المعرفة المابعدية للإرادة. إن فكرة الإرادة الحرة والعمياء واللاعقلانية قادته
+> إلى ضرب من اليأس. وباختزاله الفعل الأخلاقي للإنسان في مبدأي الأنانية والشفقة يكون **شوبنهاور** قد
+> عرّف الإنسان لا كذات واعية بأفعالها، وإنما كمسرح لانفعالات لاواعية، وهو مبحث اهتم به الفكر الفلسفي
+> المعاصر خاصّة مع نيتشه وأفضى إلى قطيعة مع الفكر الفلسفي التقليدي. أثرت كتاباته خاصة في **فاغنار**
+> ونيتشه.
+
+⚠️ Intervalle `( 1788 – 1860 )` — ordre correct. Graphie **`فاغنار`** pour Wagner, telle qu'imprimée.
+
+**المهام (verbatim, p.29 — encadré rose, 5 puces)** :
+- أحلّل وجوه التماثل التي يقيمها الكاتب بين منزلة العقل بالنسبة إلى الفرد ومنزلة التاريخ بالنسبة إلى
+  النوع الإنساني وأتبيّن دلالاتها.
+- في أي معنى أفهم التمييز الذي يُقيمه الكاتب بين الإنسان والحيوان؟
+- " وحده التاريخ يمنح شعبا وعيا تامّا بذاته ": أتبيّن قيمة التاريخ في تحقق الإنيّة.
+- أتبيّن منزلة الكلام بالنسبة إلى وحدة الوعي لدى الفرد ومنزلة الكتابة بالنسبة إلى وحدة الوعي الخاص
+  بالجنس البشري.
+- كيف يكون الوعي تاريخيّا من ناحيّة ويتصدّى للزمن من ناحيّة أخرى؟
+
+⚠️ Dernière puce : `ناحيّة` est imprimé **avec shadda** (deux fois), là où le mot s'écrit
+habituellement `ناحية`.
+
+**Encadré-citation (p.29, cadre rose, à droite du photomontage)** :
+> " يقوم التاريخ بالنسبة إلى النوع الإنساني مقام العقل بالنسبة إلى الفرد ".
+> **شوبنهاور**
+
+---
+
+###### سند 8 — هنري برغسون / Henri BERGSON — « الوعي والديمومة » — p.30-31
+
+- **Auteur tel qu'imprimé** : signature **هنري برغسون** ; ligne latine **`Henri BERGSON`** ;
+  notice **برغسون: (1859 – 1941)**. Encadré-citation p.31 signé **برغسون**.
+- **Titre du سند** : **الوعي والديمومة**
+- **Source imprimée (2 lignes)** :
+  **هنري برغسون، الطاقة الروحيّة**
+  `Henri BERGSON, L'Energie spirituelle, Alcan p 5.`
+  ⚠️ `L'Energie` **sans accent** sur le E, tel qu'imprimé.
+- **Illustration** : **portrait photographique** de Bergson en noir et blanc (médaillon dans le
+  texte, p.30) ; (p.31) **photomontage** — homme en costume, **les yeux bandés**, mains levées
+  paumes en avant, entouré de **cadrans d'horloges**, d'un **avion** et d'un panneau d'aéroport
+  (`TOKYO / NEW… / ATLA… / LOS… / MIAMI`).
+
+**التمهيد (verbatim)** :
+> لأنّ الحيوان لا يملك وعيا، فإنّه لا يقدر على تجاوز أفق لحظته ولا ينشد إلى ماض ولا يستشرف مستقبلا.
+> ولأنّ ما يقع تحت حواسه لا يترك له أثرا لكونه ممتلئا بغريزته، فإنّه لا يملك ذاكرة، ولأنّه كذلك كان
+> حيوانا. ومتى قابلناه بالإنسان أمكن لنا أن نتبيّن بوضوح دور الذاكرة في تشكّل وعي الإنسان. ولأنّه
+> كذلك كان إنسانا.
+
+**Thèse (reformulée)** : sans prétendre définir la conscience par quelque chose de moins clair
+qu'elle-même, Bergson la caractérise par son trait le plus apparent : **conscience signifie d'abord
+mémoire**. Cette mémoire peut être de faible ampleur — ne retenir qu'une mince part du passé, voire
+seulement ce qui vient d'arriver — mais elle est présente dans tous les cas : **sans elle il n'y
+aurait pas de conscience**. Une conscience qui **ne retiendrait rien** de son passé et s'oublierait
+sans cesse s'évanouirait et renaîtrait à chaque instant. **Toute conscience est donc mémoire** :
+conservation et accumulation du passé dans le présent. Mais **toute conscience est aussi
+anticipation de l'avenir** : la pensée s'occupe de ce qui est surtout du côté de ce qui va être,
+l'attention est attente, et **il n'y a pas de conscience sans une certaine attention à la vie** ;
+l'avenir nous attire, et cette attraction ininterrompue qui nous fait avancer sur le chemin du
+temps est aussi ce qui nous fait agir — **tout acte est ouverture sur l'avenir**. Retenir ce qui
+n'est plus et anticiper ce qui n'est pas encore : **telle est la fonction première de la
+conscience**. Il n'y aurait aucun présent pour la conscience si le présent se réduisait à l'instant
+mathématique — pure limite théorique entre passé et avenir, qu'on peut à la rigueur concevoir mais
+jamais percevoir. **Ce que nous percevons réellement est une certaine épaisseur de durée**, faite de
+deux parties : notre passé immédiat et notre avenir imminent.
+
+**الهامش (verbatim, p.31 — encadré rose « الهامش », 1 seule note)** :
+> 1– " الديمومة `La durée` " انظر نافذة دعائم للتفكير؛ تحديدات وتمييزات مفهوميّة: الزّمان.
+
+⚠️ **Renvoi interne au manuel**, transcrit tel quel et **non résolu** : il pointe vers une
+**نافذة دعائم للتفكير** (rubrique « تحديدات وتمييزات مفهوميّة », entrée `الزّمان`), hors de la
+tranche p.6-46.
+
+**الكاتب (notice, p.31) — verbatim** :
+> **برغسون: (1859 – 1941)** — من أبرز الفلاسفة الفرنسيين في بداية القرن العشرين، تحصّل على جائزة
+> نوبل للآداب (1928) جاءت فلسفته ردّا على الثوابت ذات الأصول الكانطيّة والوضعيّة التي هيمنت على
+> الميتافيزيقا في القرن التاسع عشر. ففي أطروحته " مقالة في المعطيات المباشرة للوعي " (1889) يؤكّد
+> برغسون أنّ العلم لا يمكنه تفسير الوعي والحياة الباطنيّة لأنّها من طبيعة غير ماديّة، فالعالم
+> الباطني للوعي يتميّز بالديمومة والصيرورة والحريّة، أي بطابع كيفي، في حين أنّ عالم المادة الخارجي
+> يتميّز بالعطالة والمكان وبصفات كميّة وبالخضوع للقوانين. لم يتخلّ **برغسون** عن هذه الأفكار بل عمل
+> على تطويرها في " المادة والذاكرة " (1896) حيث بيّن أنّ العقل لا يُختزَل في مجرّد نشاط للدماغ الذي
+> ليس إلا حيزا للذكاء العملي أو هو " عضو الانتباه إلى الحياة " العمليّة، في حين أن الأنشطة النفسيّة
+> العليا مثل الذاكرة، تؤكّد اختراق العقل للمادّة. لذلك يؤكّد **برغسون** في " التطوّر الخلاق " ( 1907 )
+> أنّ الحياة قوّة روحيّة، وثبة حيويّة حرّة ومبدعة تنفذ إلى المادة والروح على حدّ السواء. وتبعا لذلك
+> ينقد العقل والذكاء المفهومي، إذ لا يرى في الذكاء سوى أداة عمليّة تمكّن من تمثل الواقع تمثّلا آليّا
+> وكميّا ( العلم ) والسيطرة عليه ( التقنية )، في مقابل الحدس بما هو امتداد للوثبة الحيويّة والذي
+> يمكّن من النفاذ إلى الحقيقة على نحو مباشر. وانتهى في " الديمومة والتزامن " ( 1922 ) إلى التمييز
+> بين الزمن الرياضي والزمن النفسي. كما كانت **لبرغسون** اهتمامات أخلاقيّة ضمّنها كتابه " منبعا
+> الأخلاق والدّين " ( 1932 ) الذي ميّز فيه بين الأخلاق المغلقة (أخلاق الإلزام) والأخلاق المفتوحة
+> ( أخلاق نداء الإنسانيّة ).
+
+⚠️ Intervalle `(1859 – 1941)` — ordre correct.
+
+**المهام (verbatim, p.31 — encadré rose, 5 puces)** :
+- أيّة صلة يقيمها الكاتب بين الوعي وتجربة الحياة؟
+- ما هي وظيفة الوعي؟ هل في الوعي ما يؤسس لهذه الوظيفة؟
+- " ما ندركه فعلا هو نوع من كثافة الديمومة ": كيف أفهم هذا القول؟ وأية علاقة ممكنة بين تحقّق الإنيّة
+  والزمن؟
+- أمتحن تصوّر برغسون بالتساؤل عما إذا كنت قادرا على استحضار كلّ ما خزّنته ذاكرتي؟
+- إذا كان " كلّ وعي ذاكرة " فكيف أفهم حينئذ النسيان؟
+
+**Encadré-citation (p.31, cadre rose, sous le photomontage)** :
+> " الاحتفاظ بما لم يعد موجودا واستباق ما لم يوجد بعدُ، تلك هي إذن وظيفة الوعي الأولى "
+> **برغسون**
+
+⚠️ **Discordance interne au texte imprimé, p.30 (dernière phrase)** : le manuel écrit
+`إنّ الوعي همزة وصل بين ما كان وما سيكون، وجسر يصل الماضي بالحاضر.` — la première moitié dit
+« entre ce qui a été et ce qui sera », la seconde « un pont qui relie le passé **au présent** ».
+Les deux moitiés ne disent pas la même chose. Vérifié mot à mot à 600 dpi ; **non corrigé**.
+
+---
+
+###### سند 9 — أفلاطون / PLATON — « الجسد الوضيع » — p.32-33
+
+- **Auteur tel qu'imprimé** : signature **أفلاطون** ; ligne latine **`PLATON`** ; notice
+  **أفلاطون: ( 427 – 348 ق. م )**. Encadré-citation p.33 signé **أفلاطون**.
+- **Titre du سند** : **الجسد الوضيع**
+- **Source imprimée (2 lignes)** :
+  **أفلاطون، محاورة الفيدون.**
+  `PLATON; Le Phédon, 66 b - 66 e. éd, Les Belles Lettres, 1963`
+  ⚠️ **Point-virgule** après `PLATON` (les autres سندات portent une virgule) et ponctuation
+  irrégulière autour de `66 e. éd,`. Vérifié à 600 dpi.
+- **Illustrations** : (p.32) **photographie d'un buste de marbre** de Platon, barbu, dans le texte ;
+  (p.33) **miniature enluminée médiévale** — un homme allongé, la tête soutenue par un personnage,
+  sous un arbre à **fleurs rouges** où se tient un **oiseau**, fond rouge et cadre grenat ; à sa
+  gauche, **petite vignette bleue** représentant des **mains** jointes/serrées.
+
+**التمهيد (verbatim)** :
+> إذا صحّ أنّ الإنسان كائن وعي وتفكير ألا تهتزّ عندنا هذه القناعة ونحن نشاهد وقائع الجهل والرّذيلة
+> تنتشر من حولنا؟ قد نحتاج في حلّ هذه المفارقة إلى اتهام كيان نجعله غريبا عنا وطارئا علينا.
+
+**Thèse (reformulée)** : tant que nous avons un corps et que notre âme y est mêlée, **nous
+n'obtiendrons jamais assez ce que nous désirons — la vérité**. Le corps apporte mille peines : non
+seulement les nécessités de la vie, mais les maladies, obstacles nouveaux qui barrent notre marche
+vers la vérité. Il nous emplit d'amours, de désirs, de craintes et de chimères innombrables, si
+bien que **nous ne pouvons pas avoir une seule pensée saine**. Guerres, séditions et batailles
+**n'ont pas d'autre cause que le corps et ses exigences** : c'est pour acquérir des biens qu'on se
+bat, et si l'on veut des biens c'est à cause du corps dont nous sommes les esclaves — et voilà
+pourquoi nous n'avons pas le loisir de philosopher. Pire encore : quand nous parvenons enfin à un
+peu de repos et que nous nous tournons vers un objet de pensée, **le corps s'immisce de nouveau
+dans nos recherches** et y sème un trouble qui nous rend **incapables de discerner la vérité**. À
+l'inverse, il est prouvé que **si nous voulons connaître purement quelque chose, il nous faut nous
+en séparer** et regarder les choses en elles-mêmes avec l'âme seule ; alors nous obtiendrons ce que
+nous prétendons aimer — la pensée — **une fois morts, et non durant notre vie**. Ceux qui
+s'adonnent vraiment à la philosophie **s'exercent à mourir**, et l'idée de la mort leur est **moins
+effrayante** qu'aux autres.
+
+**هوامش** : **aucun encadré de notes** pour ce سند (ni p.32 ni p.33).
+
+**الكاتب (notice, p.33) — verbatim** :
+> **أفلاطون: ( 427 – 348 ق. م )** — كنية لفيلسوف يوناني هو **أرسطوكلاس**. ولد في أسرة أرستقراطيّة
+> وتتلمذ في البداية على السفسطائيين و**كراتيل** قبل أن يتعرّف على سقراط وعمره عشرون سنة ويتعلّق به
+> حتى إعدامه. كان لإعدام سقراط التأثير البالغ على شخصيّة أفلاطون ورأى فيه شاهدا على فساد الدولة
+> فاهتمّ بالشأن السياسي وكتب فيه أهمّ محاوراته: " الجمهوريّة " ( 385 – 370 ق م ) بحث فيها عن ماهيّة
+> العدالة وعن أسس جمهوريّة فاضلة أو " دولة عادلة "، كما عرض فيها نظريّته في المعرفة من خلال
+> " أمثولة الكهف " الشهيرة ( الكتاب السابع من الجمهوريّة ). وعمّق نظرياته السياسية في محاورات أخرى
+> ( " القوانين " و " السياسي " ). ونعثر في " الثياتيتوس " و " المينون " و " المأدبة " و " فيدروس "
+> على جوانب من نظريّة أفلاطون في المعرفة التي تقوم على مبدأ " التذكّر " الذي يقتضي " التوليد " ضمن
+> جدل صاعد تسلك فيه النفس طريق العلم بدءا بالظنّ مرورا بالرياضيات وصولا إلى أعلى درجات المعرفة وهي
+> المعرفة الحدسيّة للمعقولات. كتب أفلاطون ثمان وعشرين كتابا على مدى أربعين سنة في شكل محاورات جعل
+> فيها سقراط محاورا دائما وتختصّ كلّ محاورة بموضوع يُصاغ في مستهلّ كل محاورة في شكل سؤال: ما
+> العدالة ؟ ( الجمهوريّة )، ما العلم؟ ( ثياتيتوس ). بعد تجربة فاشلة إلى جانب طاغيّة **سراقسطة** من
+> أجل بناء دولة عادلة تجسّم نظريّته في " حكم الفيلسوف "، استقرّ أفلاطون في أثينا لينشأ
+> " أكاديميّة " للعلوم يدرّس فيها فلسفته دون أن يكفّ عن محاولاته في تحقيق حلمه السياسي قرب
+> " دونيس الشاب ".
+
+⚠️ **`سراقسطة`** — graphie imprimée, vérifiée à 600 dpi lettre à lettre (س ر ا ق س ط ة). Le
+contexte (le tyran, « دونيس الشاب » = Denys le Jeune) désigne **Syracuse**, dont la forme arabe
+usuelle est `سرقوسة` ; `سرقسطة` est habituellement **Saragosse**. Graphie **reproduite telle
+quelle**, non corrigée.
+⚠️ Intervalles `( 427 – 348 ق. م )` et `( 385 – 370 ق م )` — ordres corrects (décroissants, av. J.-C.).
+Noter la **variante interne** : `ق. م` avec point la 1ʳᵉ fois, `ق م` sans point la 2ᵉ.
+⚠️ `لينشأ` [sic] pour `لينشئ`, tel qu'imprimé.
+
+**المهام (verbatim, p.33 — encadré rose, 5 puces)** :
+- بأيّ معنى أفهم " تورّط النفس بالجسد " ؟
+- كيف يكون الجسد عقبة أمام سعينا إلى الحقيقة والفضيلة ؟
+- أستخلص منزلة الجسد من خلال موقف الكاتب، مبيّنا علاقته بإثبات الإنيّة.
+- كيف أفهم دعوة الكاتب إلى " الموت " ؟
+- هل أجد في موقف الكاتب وجاهة أستأنس بها في تعقّل جسدي ؟
+
+**Encadré-citation (p.33, cadre rose)** :
+> " انظر إلى الحروب والفتن والمعارك، ليس لها من باعث غير الجسد ومطالبه ".
+> **أفلاطون**
+
+---
+
+###### سند 10 — مالبرانش / Nicolas De MALEBRANCHE — « الجسم امتداد » — p.34-35
+
+- **Auteur tel qu'imprimé** : signature **مالبرانش** ; ligne latine **`Nicolas De MALEBRANCHE`** ;
+  notice **مالبرانش: (1638 – 1715)**. Encadré-citation p.35 signé **مالبرانش**.
+  ⚠️ La graphie imprimée est **`مالبرانش`** (avec **ا**), vérifiée à 600 dpi — **et non** `مالبرونش`
+  comme l'annonce le **فهرس**. La page fait foi. Le même nom réapparaît sous la forme `لمالبرانش`
+  dans la notice de Spinoza (p.37).
+- **Titre du سند** : **الجسم امتداد**
+- **Source imprimée (3 lignes)** :
+  **مالبرانش، في البحث عن الحقيقة**
+  `Nicolas De MALEBRANCHE ,`
+  `De la recherche de la vérité; Gallimard, Bibliothèque de la Pléïade;  1979; pp 90 - 91`
+  ⚠️ **Espace avant la virgule** (`MALEBRANCHE ,`), **`Pléïade`** avec **tréma sur le i** [sic]
+  (forme attendue *Pléiade*), et **double espace** avant `1979`. Vérifiés à 600 dpi.
+- **Illustration** : (p.34) **portrait peint** de Malebranche, tons orangés, coiffe sombre
+  (médaillon dans le texte) ; (p.35) **photomontage** — buste/bras humain **ouvert sur des circuits
+  électroniques et des câbles** colorés, traversé de traits lumineux jaunes.
+
+**التمهيد (verbatim)** :
+> إنّ الانفعالات التي نعيشها تربك تفكيرنا حين نصرّ على تغييب الجسم وخسّه، حتى التبس علينا نصيب كلّ
+> من النفس والجسم فيما نحسّ. حاجتنا إلى رفع هذا الالتباس قد لا تتحقّق إلاّ بمعاودة التفكير بالجسم من
+> جهة العلاقة التي تصله بالنّفس .
+
+**Thèse (reformulée)** : supposons d'abord que nous distinguions bien l'âme du corps par les
+attributs positifs qui conviennent à ces deux substances. **Le corps n'est qu'étendue en longueur,
+largeur et profondeur**, et toutes ses propriétés se réduisent au repos, au mouvement et à une
+infinité de figures. Deux choses sont alors évidentes : d'abord l'idée d'étendue représente **une
+substance**, puisque nous pouvons penser l'étendue **sans penser à rien d'autre** ; ensuite cette
+idée **ne peut représenter que** des rapports de distance ou des rapports successifs ou continus —
+c'est-à-dire des mouvements et des figures — car dans l'étendue nous **ne voyons que ce qu'elle
+contient**. Divisons donc l'étendue en parties, au repos ou en mouvement les unes par rapport aux
+autres : nous percevons clairement les relations entre ces parties, mais **nous ne pourrons jamais
+concevoir** que ces relations soient joie, douleur, chaleur, saveur, couleur ou quelque autre
+qualité sensible — bien que nous éprouvions ces qualités quand notre corps subit des changements.
+Exemple imprimé : je sens de la douleur quand une épine me pique le doigt ; mais **le trou qu'elle
+y fait n'est pas la douleur** — le trou est dans le doigt et se perçoit clairement, tandis que la
+douleur est **dans l'âme**, car c'est elle qui la ressent profondément et que la douleur altère de
+façon très pénible. Il ne faut donc attribuer au corps **que** les propriétés dites plus haut ;
+inversement, **l'âme est ce « moi » qui pense, sent et veut** : la substance qui contient tous les
+changements dont j'ai un sentiment intérieur et qui **ne peuvent durer que dans l'âme qui les
+ressent**. Ainsi **il ne faut attribuer à l'âme aucune propriété distincte de ses diverses pensées**.
+
+**هوامش** : **aucun encadré de notes** pour ce سند (ni p.34 ni p.35).
+
+**الكاتب (notice, p.35) — verbatim** :
+> **مالبرانش: (1638 – 1715)** — فيلسوف فرنسي، تابع دراسة الفلسفة (1654 – 1656) ثم دراسة علم اللاهوت
+> ( 1656 – 1659)، ليصبح رجل دين ( 1660 ) وأنهى بقيّة حياته في كنيسة. مثّلت قراءته لمؤلفات ديكارت
+> منطلق كتاباته الفلسفية والعلمية التي تُوّجت بنشر كتابه " في البحث عن الحقيقة " ( 1674 ) وركّز فيه
+> على طبيعة الأفكار من ناحية و على كيفية استخدام الإنسان لعقله لتجنب الخطأ. والخطأ في تصوره هو أن
+> نحكم بأن حقيقة الأشياء تكمن فيما تدركه الحواس وفيما تتمثّله المخيلة، قائلا إن مهمّة الحواس ليست
+> الإدراك. كما نشر كتاب " بحث في الأخلاق " (1683) وهو مرجع لقيادة السّلوك حيث حدد واجبات الإنسان بما
+> هو فرد وعضو في عائلة وفي مجتمع وفي دولة. أصدر أيضا كتابا بعنوان " محاورات حول الميتافيزيقا
+> والدّين " (1688) وتضمّن نفس الأفكار التي وردت في مؤلَّفه " البحث عن الحقيقة " ( حقيقة الأفكار
+> وموضوعات العقل المباشرة ومسألة وحدة النفس والجسم وقوانينها ) غير أنه تميّز بطريقة عرضه (الحوار)
+> ومثّل **تيودور** مالبرانش ليقدّم العون لمحاوريه حتّى يكتشفوا الحقيقة. عمل مالبرانش في كتاباته على
+> التوفيق بين فيزياء معلمه **ديكارت** وميتافيزيقا **القديس أوغسطين** حتّى قيل عنه إنّه تبنى
+> الديكارتية ثم كيّفها لتكون متوافقة مع الدين.
+
+⚠️ Intervalles `(1638 – 1715)`, `(1654 – 1656)`, `( 1656 – 1659)` — ordres corrects. Noter
+l'espacement irrégulier des parenthèses, tel qu'imprimé.
+
+**المهام (verbatim, p.35 — encadré rose, 6 puces)** :
+- أيّ دلالة للتمييز بين النفس والجسم في ضوء حديث الكاتب عن " جوهرين "؟
+- ما المقصود " بالامتداد "؟
+- الانفعالات: هل تردّ إلى الجسم أم إلى النفس؟ أعلّل إجابتي.
+- هل يمكن أن نميّز بوضوح بين الإحساس والتفكير؟
+- أيّة رؤية للإنيّة يستبطنها تعريف الجسم بما هو امتداد؟
+- أقارن بين تحديد الإنسان في منظور الكاتب وبين ما اكتسبته من تحديدات أخرى.
+
+**Encadré-citation (p.35, cadre rose, à droite du photomontage)** :
+> " ليس الجسم سوى امتداد بالطول والعرض والعمق ".
+> **مالبرانش**
+
+---
+
+###### سند 11 — سبينوزا / SPINOZA — « في وحدة النفس والجسد » — p.36-37
+
+- **Auteur tel qu'imprimé** : signature **سبينوزا** ; ligne latine **`SPINOZA`** ; notice
+  **سبينوزا: ( 1632 – 1677 )**. Encadré-citation p.37 signé **سبينوزا**.
+- **Titre du سند** : **في وحدة النفس والجسد**
+- **Source imprimée (3 lignes)** :
+  **سبينوزا ؛ علم الأخلاق، الجزء الثاني، حاشيّة القضيّة 13. ص 103 – 104**
+  **ترجمة جلال الدين سعيد.**
+  `SPINOZA,Traité de la nature humaine, 1737; L1 ,ed. Aubier- Montaigne t1; 1973; pp 342 -343`
+
+⚠️⚠️ **ANOMALIE MAJEURE, vérifiée à 600 dpi** : la **ligne latine attribuée à Spinoza est en réalité
+la référence de HUME** — *Traité de la nature humaine*, 1737, L.1, éd. Aubier-Montaigne t.1, 1973,
+pp. 342-343 — **la même référence, au caractère près, que celle imprimée sous le سند 17 (د. هيوم,
+p.48)**. La ligne arabe, elle, est bien celle de Spinoza (*علم الأخلاق*, partie II, scolie de la
+proposition 13, p.103-104, trad. جلال الدين سعيد). Les deux lignes de la même source **ne renvoient
+pas au même livre ni au même auteur**. Constat, non corrigé.
+
+- **Illustration** : (p.36) **portrait dessiné** de Spinoza, longs cheveux noirs et col blanc
+  (médaillon dans le texte) ; (p.37) **peinture** — homme torse nu **assis en tailleur** sur une
+  étoffe rouge, deux **faisceaux de lumière blanche** croisant sa poitrine, fond bleu nuit.
+
+**التمهيد (verbatim)** :
+> يبدو أنّ تفكيرنا في الإنسان قد انبنى على جهل بالجسد ومستطاعه، جهل ولّد أوهاما رسمت صورة تجد
+> أساسها النظري في تصوّر ثنائيّ للإنسان. وقد لا تتبدّد هذه الأوهام إلاّ بإعادة التفكير في الجسد
+> والنفس معا.
+
+**Thèse (reformulée)** : l'homme est composé d'une âme et d'un corps, et **le corps humain existe
+tel que nous le sentons**. De là nous comprenons non seulement que l'âme humaine **est unie au
+corps**, mais aussi ce qu'il faut entendre par cette union — étant entendu que **nul ne peut en
+avoir une idée adéquate et distincte s'il ne connaît d'abord la nature de notre corps**. L'idée de
+toute chose en Dieu, cause de cette chose, se fonde en effet de la même manière que l'idée de
+l'existence du corps humain. Mais **on ne peut nier** que les idées diffèrent entre elles comme
+diffèrent leurs objets, et que certaines sont plus excellentes et supérieures aux autres **dans la
+mesure où leur objet est plus excellent et plus réel**. Déterminer ce qui distingue l'âme humaine
+des autres âmes et ce qui la rend supérieure exige donc de connaître la nature de son objet,
+c'est-à-dire **la nature du corps humain**. Règle générale imprimée : **plus un corps est capable,
+comparé aux autres, d'agir et de pâtir de nombreuses manières à la fois, plus son âme est capable
+de connaissance distincte** ; et plus les actes d'un corps dépendent de lui seul, moins d'autres
+corps l'aidant à agir, plus son âme est capable de connaissance distincte. De là nous pouvons
+connaître la supériorité d'une âme sur les autres — et comprendre pourquoi **nous ne connaissons
+notre propre corps que d'une manière très confuse**.
+
+**الهامش (verbatim, p.37 — encadré rose « الهامش », 1 seule note)** :
+> 1– **الله**: الله والطبيعة في فلسفة سبينوزا شيء واحد، فالله هو الطبيعة منظور إليه من جهة الامتداد
+> والطبيعة هيّ الله منظور إليها من جهة الفكر. وهو جوهر لامتناه يتأسس على فكرة وحدة الوجود التي يقول
+> بها سبينوزا.
+
+**الكاتب (notice, p.36-37) — verbatim** :
+> **سبينوزا: ( 1632 – 1677 )** — " بنيدكت " أو " باروخ " سبينوزا فيلسوف هولاندى أبواه من أصل اسباني
+> وُلد بأمستردام، وتربّى ليتحدث الإسبانية، والبرتغالية، والعبرية. صار فيلسوفا فذا وذلك بشهادة
+> **هيغل** الذي قال فيه " لا وجود للفلسفة دون سبينوزا ". بعد نقده للاهوت تحوّل عنه لدراسة العلوم
+> الإنسانية. تلقى عن طبيب مبدأ وحدة الوجود. طُرد من مقر إقامته بأمستردام من قبل الطائفة اليهودية على
+> خلفية رفضه التخلي عن مبدأ وحدة الوجود وأقام مع أحد أصدقائه في ضواحي المدينة أين غيّر اسمه العبري
+> " باروخ " إلى ما يقابله باللاتينية " بنيدكت " هناك بدأ يكتب ويناقش وشيئا فشيئا ذاع صيته، فعرض
+> عليه الإقامة بفرنسا، ثم منصب أستاذ الفلسفة بجامعة " **هيدلبورغ** " لكنه كان يؤثر العيش في هدوء
+> ويخشى على حريته وتفكيره أن يتأثرا بالسلطان والمنصب. كان ميالا للحياة البسيطة بطبعه وبتأثير فلسفته،
+> حتى لقبوه بالقديس المدني. من أهم مؤلفاته " المبادئ الفلسفية لديكارت " (1660)، فكان سببا في مزيد
+> انتشار صيته، أراد كذلك أن يكتب شيئا يقدم به منهجه من طراز " المنطق الجديد " **لبيكون**، و " مقال في
+> المنهج " **لديكارت**، و " البحث عن الحقيقة " **لمالبرانش**، فكتب " رسالة في إصلاح الذهن " لكنه لم
+> يكملها فنشرت ناقصة بعد وفاته. أما " رسالة في اللاهوت والسياسة " فقد أعلن فيه رأيه في الدين
+> والاجتماع ونشره سنة (1670) رغم نصح أصدقائه بعدم نشره. أما جماع كتبه فقد كان " الأخلاق "
+> (1675 – 1677) كان يطلع أصدقاؤه على ما ينجزه من فصول. سار فيه على منوال هندسي يليق بمذهب وحدة
+> الوجود، وينزل فيه من الواحد إلى الكثرة، ومن الكل إلى الأجزاء. وإذا كان الجزء الذي يتناول الأخلاق
+> لا يفوق خمس الكتاب إلا انه أطلق عليه اسم " الأخلاق " ليدل على اتجاهه الأخلاقي ويرمز بالاسم إلى
+> العمل كغاية لكل نظر. واختياره المنهج الاستدلالي الهندسي ليس تقليدا للفلاسفة الذين كتبوا في المنهج
+> بل لأنه يؤمن بأن صدق القضية لا يظهر إلا إذا عرضت بوصفها جزءا من نظام استدلالي عام.
+
+⚠️ Intervalles `( 1632 – 1677 )` et `(1675 – 1677)` — ordres corrects.
+⚠️ `هولاندى` (avec **ى** final), `اسباني` (sans hamza), `إلا انه` (sans hamza) — tels qu'imprimés.
+⚠️ La notice **mentionne le سند 10** de la même نافذة (`" البحث عن الحقيقة " لمالبرانش`) : lien
+interne au chapitre, imprimé.
+
+**المهام (verbatim, p.37 — encadré rose, 4 puces)** :
+- أيّ معنى للقول باتّحاد النّفس والجسم ؟
+- لماذا تمثّل معرفة طبيعة الجسم شرط إدراك واضح لهذا الاتحاد ؟
+- أستخلص دلالة الجسم عند سبينوزا.
+- هل تمكّنني رؤية الكاتب من وعي أعمق لتصوّري لإنيّتي ؟
+
+⚠️ **4 puces seulement** — c'est le سند le moins doté en مهامّ de la tranche p.6-46.
+
+**Encadré-citation (p.37, cadre rose, à droite de la peinture)** :
+> " لا يعرف أحد تركيبة الجسم بقدر كبير من الدقّة بحيث يمكن له أن يُفسّر كلّ وظائفه ".
+> **سبينوزا**
+
+---
+
+###### سند 12 — هيغل — « الجسد تجسيد للحرية » — p.38-39
+
+- **Auteur tel qu'imprimé** : signature **هيغل** ; **aucune ligne latine** pour ce سند (à la
+  différence du سند 5, qui portait `HEGEL`). Notice **الكاتب** : **RENVOI** (voir ci-dessous).
+  Deux encadrés-citations, p.38 et p.39, tous deux signés **هيغل**.
+- **Titre du سند** : **الجسد تجسيد للحرية**
+- **Source imprimée (2 lignes, arabe seulement)** :
+  **هيغل، أصول فلسفة الحق، ص 158 – 159**
+  **ترجمة إمام عبد الفتاح إمام، المجلّد 1. دار التنوير، لبنان، ط 2. 1983**
+- **Illustrations** : (p.38) **portrait gravé/peint** de Hegel de trois quarts, dans le texte ;
+  **peinture** — une jambe chaussée traînant une **chaîne et un boulet**, sur un **damier**, fond
+  orange incandescent ; (p.39) **photographie noir et blanc** — **deux mains levées, poignets
+  menottés**.
+
+**التمهيد (verbatim)** :
+> قد يكون من الممكن الزعم بأنّ الوعي حينما يباشر نفسه لا يحتاج إلى الجسد وسيطا ولكن حينما يتعلّق
+> الأمر بعلاقة الذات بالآخرين قد يبدو من العسير تمثّل الوعي أساسا لهذه العلاقة دون توسّط الجسم.
+
+**Thèse (reformulée)** : **dans la mesure où le corps est immédiatement existant, il n'est pas
+conforme à l'esprit** ; pour devenir l'organe naturel et le moyen vivant de l'esprit, **il faut
+d'abord que l'esprit en prenne possession**. Mais **aux yeux d'autrui**, quant à l'essence, je suis
+**un être libre dans mon corps**, tant que ma possession de ce corps est immédiate. Parce que je
+suis, en tant que vivant, un être qui vit **à l'intérieur de son corps**, cette existence vivante
+**ne doit pas être maltraitée ni traitée comme une bête de somme**. Et tant que je suis vivant, mon
+âme (concept de l'âme, ou terme plus élevé : **l'être libre**) **et mon corps ne sont pas
+séparés** — car mon corps est **l'incarnation de ma liberté** et c'est par lui que je sens et que
+j'éprouve. Il n'y a donc **qu'un raisonnement vicieux** à séparer l'âme du corps au point de dire
+que « la chose en soi », l'âme, **ne serait ni touchée ni atteinte** quand le corps est maltraité,
+tandis que l'existence incarnée serait soumise au pouvoir d'un autre. Certes, **je peux me replier
+au-dedans de moi**, faire de mon corps quelque chose d'extérieur et regarder les sentiments
+particuliers comme hors de moi : **je peux même être libre tout en étant enchaîné**. Mais cela,
+**c'est ma volonté propre** ; pour autrui, j'existe **dans mon corps**, et ma liberté, du point de
+vue des autres, **se confond avec mon existence déterminée**. Conclusion imprimée : **le mal
+infligé à mon corps est un mal qui m'est infligé à moi aussi**.
+
+**الهامش (verbatim, p.39 — encadré rose « الهامش », 1 seule note)** :
+> 1– **شخص آخر**: يشير هيغل إلى بحث **مارتان لوثر** عنوانه " في الحريّة المسيحيّة " والذي ذهب فيه
+> إلى القول بأنّ " الروح لا تتأثّر ولا تُمسّ عندما تساء معاملة البدن، أو عندما يخضع شخص لقوّة شخص
+> آخر " .
+> ( عن المترجم )
+
+⚠️ Cette note est la seule de la tranche à porter la mention de provenance **( عن المترجم )**.
+
+**الكاتب (p.39) — RENVOI, transcrit tel quel et NON résolu** :
+> **هيغل: أنظر التعريف به المصاحب للسند عدد 5**
+
+⚠️ **Premier et seul RENVOI de la tranche p.6-46** (les 11 autres سندات portent une notice
+complète). Graphie imprimée `أنظر` (avec hamza sur alif), et non `انظر`.
+
+**المهام (verbatim, p.39 — encadré rose, 7 puces)** :
+- أيّة علاقة يراها الكاتب بين الرّوح والجسم؟
+- بأيّ معنى أفهم قول الكاتب أنا " كائن يحيا داخل جسدي "؟
+- لماذا اعتبر الكاتب الاستدلال الذي " يفرّق بين النفس والجسم " استدلالا فاسدا؟
+- على أيّ وجه يكون الجسد تعيّنا للوجود الحر؟
+- هل تتحدّد إنّيتي من خلال الصورة الّتي أحملها عن ذاتي أم من خلال الصورة الّتي يرسمها الآخر عنّي؟
+- أتبيّن منزلة الآخر في تحديد الإنيّة.
+- أستحضر موقف أبيكتات من الطاغيّة ( الوضعيّة الاستكشافيّة الثانيّة ) وأقارنه بموقف هيغل. أحرر فقرة
+  في الغرض.
+
+⚠️ La dernière puce **renvoie explicitement à la وضعيّة استكشاف ثانية (p.10-11)** — lien interne
+imprimé entre les deux نوافذ.
+⚠️ `الثانيّة` avec shadda, tel qu'imprimé (cf. `ناحيّة` p.29).
+
+**Encadré-citation n°1 (p.38, cadre rose, à droite de la peinture)** :
+> " يمكن أن أكون حرّا حتّى وإن كنت مقيّدا بالأغلال ".
+> **هيغل**
+
+**Encadré-citation n°2 (p.39, cadre rose, à droite de la photographie)** :
+> " فالأذى الذي يُوجّه إلى جسدي هو أذى موجّه إليّ أيضا ".
+> **هيغل**
+
+⚠️ **Ce سند porte DEUX encadrés-citations** (un par page). Il n'est pas le seul : le **سند 16**
+en porte deux aussi (p.46 et p.47) — constat établi après coup, en confrontant les deux fragments.
+
+---
+
+###### سند 13 — ادڤار موران / Edgar MORIN — « مركزيّة الذات » — p.40-41
+
+- **Auteur tel qu'imprimé** : ligne de source arabe **ادڤار موران** (avec **ڤ**, fā' à **trois
+  points**, vérifié à 600 dpi) ; ligne latine **`Edgar MORIN`** ; notice **موران: (1921)** ;
+  **موران** dans le corps de la notice (p.40 et p.41) ; **موران** au هامش 2 ; encadré-citation
+  p.41 signé **موران**. Notice **complète** (aucun renvoi).
+- **Titre du سند** : **مركزيّة الذات**
+- **Source imprimée (2 lignes, arabe puis latine)** :
+  **ادڤار موران، مقدمة للتفكير المركّب**
+  **Edgar MORIN;** *Introduction à la pensée complexe,* éd Seuil, 2005, pp 88 - 89
+- **Illustrations** : (p.40) **photographie noir et blanc** insérée dans le corps du texte, en
+  haut à gauche — un homme âgé **assis**, chemise claire, **mains croisées** posées sur la
+  jambe ; (p.41) **image en couleurs** (pastel/photo) en bas à gauche — des **figurines humaines
+  orange et rouges** dressées sur de petits socles ronds sur un fond **jaune vif**, chacune
+  projetant une **longue ombre** ; une figurine **grise** se détache seule en bas à droite.
+
+**التمهيد (verbatim)** :
+> مثّلت " مركزيّة الذات " سمة الحداثة لما تضمنته من تأكيد لمنزلة جديدة للإنسان تلائم وضعه الجديد في
+> العالم. ومع هذا لا تحمل هذه العبارة دلالة واحدة خاصّة حين أصبح الآخر شريكنا الدائم في الوجود.
+
+**Thèse (reformulée)** : être un sujet **ne signifie ni être conscient ni avoir affects et
+sentiments** — et cela **bien que** la subjectivité humaine se développe, de toute évidence, par
+eux. C'est **occuper le centre de son monde propre et remplir la place du « moi »** : tout le monde
+peut dire « أنا », mais **nul ne peut le dire à la place d'un autre**, pas même de son jumeau
+monozygote qui lui ressemble en tout. Cette مركزيّة des sujets est **paradoxale** — le sujet y est
+**autonome et dépendant en même temps**, « presque tout » pour lui-même et **« presque rien » au
+regard de l'univers** —, et elle est assez large pour loger dans ce centre **parents, enfants et
+concitoyens**, jusqu'au sacrifice de sa propre vie ; d'où l'exigence, imprimée en conclusion, d'une
+**conception complexe du sujet**.
+
+⚠️ Les deux **appels de note** sont placés dans le corps : **(1)** après `وجنيسه`, **(2)** après
+`مركزيّة الذات`.
+
+**الهامشان (verbatim, p.41 — encadré rose ; le titre est au DUEL, `الهامشان`, pour 2 notes)** :
+> 1– **جنيسه**: المقصود به توأما حقيقيا ناتجا عن انقسام بويضة واحدة.
+> 2– لا تُفهم عبارة " **مركزيّة الذات**" على المعنى الديكارتي للدلالة على وحدة الذات، وإنّما تُفهم في
+> إطار تصور موران " للمركّب " .
+
+⚠️ Le هامش 2 est une **mise en garde conceptuelle** : il **récuse** la lecture cartésienne de
+l'expression et la rapporte au « **المركّب** » de Morin.
+
+**الكاتب (p.40-41) — notice COMPLÈTE, verbatim** :
+> **موران: (1921)**
+> فيلسوف فرنسي معاصر عُرف بنشاطه السياسي: مناصرة السلام ومناهضة إعادة تسليح ألمانيا ثم اشتراكه
+> فيما بعد في جمعية مناهضي حرب الجزائر. وبمساعدة **جورج فريدمان** انظم إلى " **المركز الوطني
+> للبحوث الاجتماعيّة** " ( 1951 )، حيث تمكن من تطوير أبحاثه وإثرائها. كان شغوفا بالصّحافة فأسس
+> مجلّة "**الحجج**" ( 1956 ) ثمّ " **مركز بحوث الاتصالات الجماهيريّة** " مع **رولان بارت**. كما
+> دفعه شغفه بالسينما ( التي تمثّل عنده البعد اللاعقلاني في المجتمع التقني ) إلى الاهتمام بدراسة
+> أساطير الزمن الراهن التي وجد فيها ما يسميه بإيديولوجــيا العصــر ( " النجوم "، 1957).
+> وكعالم اجتماع خيّر **موران** متابعة الأحداث والتي رأى في تناولها ما يؤسس لعلم اجتماع الحاضر،
+> فركّز اهتمامه على " أزمة الحضارة " الناشئة عن التصنيع الأعمى الذي أدّى إلى انقلاب القيم وضياع
+> الإنسان. من ذلك أنه قام بتحليل أحداث ماي 1968 ونشر دراساته في جريدة " **كاليفورنيا** " (1970).
+> لكنّ طرافة أعماله ستتأكّد بالخصوص في سعيه إلى تأسيس أنثروبولوجيا تجد جذورها في البيولوجي وظّف
+> فيها معطيات علميّة مختلفة من البيولوجيا وعلم الإحاثة وعلم الاجتماع الحيواني والعلوم الإنسانيّة
+> قصد بناء خطاب حول الإنسان يراعي تعقّده ( " وحدة الإنسان "، 1974 ). إنّ هذه الأبحاث ستعيّن
+> إضافته الابستيمولوجيّة الأساسيّة وتتمثل في مفهوم " نموذج المركّب " الذي أورده في " العلم والضمير "
+> (1982) حيث بيّن أنّ العلوم، على اختلاف مواضيعها، تواجه اليوم " المركّب " ممّا يضطرّها إلى وصل
+> الموضوع بمحيطه وربطه بمن يلاحظه وتناوله باعتباره نظاما ومعالجة التناقضات التي تسكنه. هذه القضايا
+> سيعيد تناولها بأكثر عمق في كتابه " المنهج " ( 1977 – 1991 ) حيث ينبّه إلى كون الواقع مركّبا على
+> اعتبار أن الإنسان هو في آن كائن بيولوجي وفاعل اجتماعي وأن في الطبيعة ينشأ النظام من الفوضى كما
+> تنشأ الفوضى من النظام.
+
+⚠️ **Notice la plus longue de la tranche p.6-46** : elle court sur **deux pages** (bas de p.40,
+haut de p.41), séparée par le pied de page — c'est la seule notice du مبحث dans ce cas.
+⚠️ **Quatre titres d'œuvres sont imprimés en BLEU CYAN** (`النجوم`, `وحدة الإنسان`,
+`العلم والضمير`, `المنهج`) alors que `الحجج` et `كاليفورنيا` sont en **noir gras** : la
+distinction typographique n'est pas systématique.
+⚠️ **`انظم`** [sic] — la forme attendue est `انضمّ` (avec ض) ; le manuel imprime bien un **ظ**,
+vérifié à 600 dpi.
+⚠️ **`إيديولوجــيا العصــر`** — kashidas d'allongement dans le corps du mot, tels qu'imprimés
+(justification).
+⚠️ Noms propres cités dans la notice : **جورج فريدمان** (Georges Friedmann), **رولان بارت**
+(Roland Barthes) — **aucune graphie latine** n'est donnée pour eux.
+
+**المهام (verbatim, p.41 — encadré, 5 puces)** :
+- أحدد التعريف الذي يستبعده الكاتب للذاتيّة.
+- ماذا يعني أن يكون المرء ذاتا في نظر الكاتب؟
+- أيّ دلالة لمركزيّة الذات يقدّمها الكاتب؟ هل تفيد تناقضا بين الفردي والكوني؟
+- " أن يكون المرء ذاتا هو أن يكون مستقلا في ذات الوقت الذي يكون فيه تابعا ": هل من سبيل لحلّ هذه
+  المفارقة؟
+- هل يدفعني موقف الكاتب إلى مراجعة نمطحضوري في العالم؟
+
+⚠️ **`نمطحضوري`** [sic] — **espace manquante** entre `نمط` et `حضوري`, vérifiée à 600 dpi puis à
+600 dpi × 3 (les deux mots sont **soudés**, alors que les autres blancs de la même ligne sont
+nets).
+⚠️ La 4ᵉ puce **re-cite le texte du سند entre guillemets** (procédé déjà vu au سند 11) ; la
+citation y est **légèrement reformulée** par rapport au corps (`في ذات الوقت الذي يكون فيه تابعا`
+pour `وتابعا في الوقت ذاته`).
+
+**Encadré-citation (p.41, cadre rose, sous l'image jaune)** :
+> " أن يكون المرء ذاتا معناه أن يحتلّ موقعا " .
+> **موران**
+
+---
+
+###### سند 14 — مرلوبونتي / M. MERLEAU- PONTY — « تجربة الجسد » — p.42-43
+
+- **Auteur tel qu'imprimé** : ligne de source arabe **مرلوبونتي** ; ligne latine
+  **`M. MERLEAU- PONTY`** ; notice **موريس مرلوبونتي (1908—1961)** ; **مرلوبونتي** dans le corps
+  de la notice ; encadré-citation p.43 signé **مرلوبونتي**. Notice **complète** (aucun renvoi
+  d'auteur), mais **close par un renvoi de lecture** vers une autre نافذة (voir ci-dessous).
+- **Titre du سند** : **تجربة الجسد**
+- **Source imprimée (2 lignes, arabe puis latine)** :
+  **مرلوبونتي، فينومينولوجيا الإدراك**
+  **M. MERLEAU- PONTY** ,*Phénoménologie de la perception* , éd. Gallimard, pp.230-231
+- **Illustrations** : (p.42) **photographie noir et blanc** insérée en haut à gauche du corps du
+  texte — **portrait d'homme** en veste et cravate, cheveux plaqués en arrière, regard vers
+  l'objectif ; (p.43) **peinture en couleurs** en bas de page — un **homme nu debout dans un
+  cylindre de verre lumineux**, main levée contre la paroi, et **trois figures nues** debout sur
+  un **sol de bois** à sa gauche, sous un **ciel strié mauve et orangé** ; aucune légende, aucun
+  nom d'artiste imprimé.
+
+**التمهيد (verbatim)** :
+> انتظم القول في الإنسان ضمن أفق يؤسّس الوجود على الفكر ولا يُنزّل الجسد في أفضل الأحوال سوى منزلة
+> موضوع يواصل عيش الغربة التي فرضناها عليه. لم يبدد هذا الأفق كلّ ما استغلق علينا في شأن فهمنا
+> لحقيقة ذواتنا ما دمنا نشعر في معيشنا اليومي بعلاقة حميميّة تصلنا بجسدنا.
+
+**Thèse (reformulée)** : la tradition cartésienne nous a habitués à **congédier l'objet** : la
+posture réflexive « purifie » d'un même coup l'idée du corps et celle de l'âme, en définissant le
+corps comme **somme de parties sans intérieur** et l'âme comme un être **entièrement présent à
+soi, sans distance**. Or l'expérience du **corps propre** (`الجسد الخاص`) révèle, **à l'inverse**,
+un **mode d'existence ambigu** : vision, motricité et sexualité **ne peuvent pas** être reliées
+entre elles ni au monde extérieur par des rapports **causaux**. Donc **le corps n'est pas un
+objet**, et pour la même raison **ma conscience de lui n'est pas une pensée** : je ne peux ni le
+décomposer ni le recomposer pour m'en faire une idée claire, son unité reste **implicite et
+ambiguë**. Il est en permanence **autre que ce qu'il est** — à la fois sexualité et liberté,
+enraciné dans la nature à l'instant même où la culture le transforme, **ni clos sur soi ni jamais
+dépassé**. Il n'y a **pas d'autre voie** pour connaître le corps humain que de **le vivre**, et
+« je suis mon corps » au moins dans la mesure où j'ai un acquis. L'expérience du corps propre
+**s'oppose** ainsi au mouvement réflexif qui **ne nous donne que** la pensée du corps ou le corps
+dans l'idée, **et non** l'expérience du corps ni le corps tel qu'il est.
+
+⚠️ Le texte imprime en toutes lettres l'expression conclusive **« الجسد بمثابة ذات طبيعيّة، مخطّطا
+مؤقّتا لكلّ كياني »** — reprise telle quelle par la 5ᵉ puce des مهامّ.
+
+**هوامش** : **AUCUN encadré هامش** pour ce سند — ni p.42 ni p.43 ; **aucun appel de note** dans le
+corps du texte (vérifié à 600 dpi sur les quatre bandeaux de la page).
+
+**الكاتب (p.43) — notice COMPLÈTE, verbatim** :
+> **موريس مرلوبونتي (1908—1961)**
+> فيلسوف فرنسي معاصر وواحد من أهم فلاسفة الفينومينولوجيا، اشتغل أستاذا بالمعاهد والجامعات. توفي
+> مبكّرا ورغم ذلك ترك موروثا فلسفيا هاما تشهد به أهم مؤلَّفاته التي نذكر منها " فينومينولوجيا
+> الإدراك " ( 1945) وفيه قدّم تصوّره عن فينومينولوجيا وجوديّة تؤكّد أولويّة " **أنا موجود** " على
+> " **أنا أفكّر** " وذلك وجه من استعادة مطلب هوسرل المتمثّل في " **العودة إلى الأشياء** " الذي
+> يعني مع مرلوبونتي العودة إلى العالم قبل معرفته وإلى الذات بما هي حضور في العالم، وهو بذلك يراجع
+> **الكوجيتو الديكارتي** مراجعة مكّنته من التأكيد على أنّ الوجود في العالم هو وجود جسدي. أمّا
+> كتابه " العلامات " ( 1960 ) فمثّل رؤية جديدة للتاريخ والسياسة كما عايشها. وفي كتابه " العين
+> والعقل " ( 1964 ) اهتمّ بمسألة الفنّ عامّة والرسم خاصّة مبيّنا أنّ الرّسم يعبّر عن علاقاتنا
+> بالوجود الذي يصيّره الأثر الفنّي مرئيّا، دون أن يفهم ذلك على أنّ الفنّ محاكاة لشيء ما لأنّ
+> الفنّ ليس شيئا آخر غير التجلّي وما به يحصل التعبير عن دروب الصمت. أمّا في كتابه " المرئي
+> واللامرئي " ( 1964 ) فقد فتح السبيل إلى أنطلوجيا أصيلة تجاوز فيها ثنائيّة الذات – الموضوع
+> مركّزا على وصف انفتاحنا على العالم، ويعدّ مفهوم **الجسد الخاص** مركزيّا في هذا المؤلَّف بما هو
+> تجاوز للتقابل بين الجسد الموضوعي والجسد الظاهراتي.
+> **لمزيد التعمّق انظر نافذة دعائم للتفكير، سياقات فكريّة: الفينومينولوجيا.**
+
+⚠️ **Renvoi de lecture, imprimé en BLEU CYAN, dernière ligne de la notice** :
+`لمزيد التعمّق انظر نافذة دعائم للتفكير، سياقات فكريّة: الفينومينولوجيا.` — **transcrit tel quel,
+non résolu**. C'est le **premier renvoi vers une نافذة** (et non vers un autre سند) de la
+tranche p.6-46.
+⚠️ **Titres en BLEU CYAN** dans la notice : `فينومينولوجيا الإدراك`, `العلامات`, `العين والعقل`,
+`المرئي واللامرئي` ; **`هوسرل`** est lui aussi en bleu (seul nom propre traité ainsi). En **noir
+gras** : `أنا موجود`, `أنا أفكّر`, `العودة إلى الأشياء`, `الكوجيتو الديكارتي`, `الجسد الخاص`.
+⚠️ Graphie **`أنطلوجيا`** (et non `أنطولوجيا`), telle qu'imprimée.
+
+**المهام (verbatim, p.43 — encadré, 5 puces)** :
+- أستحضر التحديد الديكارتي للجسد.
+- أحدّد، انطلاقا من النصّ، دلالتي " الجسد الموضوع " و " الجسد الخاص " .
+- كيف أفهم قول الكاتب " تكشف تجربة الجسد الخاص نمط وجود ملتبس " ؟
+- أيّ فارق بين " الجسد في الفكرة " و " الجسد على حقيقته " ؟
+- الجسد " مخطط مؤقّت لكلّ كياني ": أمتحن هذه الفكرة في ضوء فهمي لجسدي؟ أحرّر فقرة في الغرض.
+
+⚠️ La 1ʳᵉ puce **renvoie implicitement à Descartes** (سند 6) sans le nommer : `التحديد الديكارتي
+للجسد`.
+⚠️ La 5ᵉ puce est composée avec un **point d'interrogation là où l'on attendrait un point**
+(`أمتحن هذه الفكرة في ضوء فهمي لجسدي؟`), tel qu'imprimé.
+
+**Encadré-citation (p.43, cadre rose double filet, à droite de la peinture)** :
+> " تكشـف لنا تجربة الجســد الخاص نمط وجود ملتبس " .
+> **مرلوبونتي**
+
+---
+
+###### سند 15 — إيمانيول ليفيناس / Emmanuel LEVINAS — « الجسد إحساس بالهويّة » — p.44-45
+
+- **Auteur tel qu'imprimé** : ligne de source arabe **إيمانيول ليفيناس** ; ligne latine
+  **`Emmanuel  LEVINAS`** (avec **double espace** entre prénom et nom, vérifié à 600 dpi) ;
+  notice **إيمانيول ليفيناس: ( 1905 )** ; **ليفيناس** dans le corps de la notice (p.45) ;
+  encadré-citation p.45 signé **ليفيناس**. Les **deux** graphies arabes longues sont
+  **identiques** (`إيمانيول`, jamais `إيمانويل`) — vérifié à 600 dpi × 4 sur les deux
+  occurrences. Notice **complète** (aucun renvoi).
+- **Titre du سند** : **الجسد إحساس بالهويّة**
+- **Source imprimée (2 lignes, arabe puis latine)** :
+  **إيمانيول ليفيناس، تأملات حول فلسفة هتلر**
+  **Emmanuel  LEVINAS;** *Quelques réflexions sur la philosophie de l'hitlérisme*
+- **Illustrations** : (p.44) **photographie noir et blanc** insérée en haut à gauche du corps —
+  **portrait d'homme âgé**, cheveux clairs dégarnis, costume sombre et cravate ; (p.45) **image
+  en couleurs** en bas de page — une **silhouette humaine bras écartés**, lumineuse (jaune et
+  blanc), superposée à un **globe terrestre**, cerclée d'**anneaux violets et bleus** sur fond
+  noir ; aucune légende.
+
+**التمهيد (verbatim)** :
+> أُعتبر الجسد ولوقت طويل عرضا يتبع النفس ويثقل كاهلها ولكن رغم هوانه عندها، فقد ظلّ قوة تقاوم
+> احتقارها ويفاجئها باستمرار بغرابته من جهة ما هو جسميّة حتى كان الاعتراف به هويّة للذات ما نزال
+> نطلبها فلا ندركها. فماذا يعني أن نكون أجسادا؟
+
+**Thèse (reformulée)** : le texte **expose d'abord la thèse qu'il combat**. Selon
+« **التأويل القديم** », avoir un corps c'est le **supporter comme un objet du monde extérieur** :
+il pèse sur Socrate comme les chaînes dans la prison d'Athènes, il l'emprisonne « comme le tombeau
+qui l'attend », il **est l'obstacle** qui brise l'élan libre de la pensée et la ramène aux
+conditions terrestres — **mais un obstacle à surmonter**. Ce sentiment de l'**étrangeté éternelle**
+du corps a nourri le christianisme puis le libéralisme moderne, et a maintenu l'idéal ascétique.
+**La thèse de l'auteur commence ici** : le corps **n'est pas seulement** cet intrus éternel, et
+l'interprétation classique **rabaisse** (`يحطّ`) le **sentiment d'identité** qui nous lie à notre
+corps — sentiment que certaines circonstances rendent plus aigu. Le corps **n'est pas seulement**
+le plus proche et le plus familier des objets du monde, il **ne fait pas que** régir notre vie
+psychique, notre humeur et notre activité : **au-delà de ces évidences naïves** se tient le
+sentiment d'identité. Ne nous affirmons-nous pas dans cette **chaleur singulière** qui jaillit de
+notre corps **avant** l'éclosion du moi qui prétendra s'en distinguer ? Les **liens du sang** ne
+résistent-ils pas à toute épreuve bien avant l'éveil de l'intelligence ? D'où la conclusion
+imprimée : dans une **discipline sportive dangereuse**, dans un exercice audacieux poussé jusqu'à
+une perfection presque irréelle et **qui menace de mort**, **toute dualité entre le moi et le corps
+doit disparaître**.
+
+⚠️ **Les négations sont ici des « ne… pas seulement »** (`ليس … فحسب`, `ليس … فقط ولا هو`,
+`فهو لا يتحكّم … فحسب`) : elles **ajoutent** au corps, elles ne le nient pas. Les deux dernières
+questions sont **rhétoriques** (`ألا نُثبت…؟`, `ألا تصمد…؟`) et **affirment** ce qu'elles
+interrogent.
+⚠️ Les deux **appels de note** sont dans le corps : **(1)** après `سقراط`, **(2)** après
+`عصر النهضة`.
+
+**الهامشان (verbatim, p.45 — encadré, titre au DUEL `الهامشان`, 2 notes)** :
+> 1– **سقراط** : فيلسوف يوناني ( 469—399 ق م )، تتلمذ عليه أفلاطون الذي جعله الشخصيّة الأساسيّة
+> لمحاوراته. عرف باستعماله أسلوب الحوار وطريقة التوليد. أُعدم بسبب آرائه.
+> 2– **عصر النهضة** : هو عصر بداية الحداثة الأوروبيّة الذي انطلق مع الإصلاح الديني وتعزّز مع نشأة
+> العلم الحديث.
+
+⚠️ Intervalle `( 469—399 ق م )` — **ordre correct** (décroissant, av. J.-C.), vérifié à 600 dpi.
+Le manuel écrit ici **`ق م`** sans points, alors qu'il écrit **`ق. م`** ailleurs (سند 9).
+⚠️ La note 1 ne donne **aucune graphie latine** pour Socrate, et **ne nomme pas** le dialogue.
+
+**الكاتب (p.44-45) — notice COMPLÈTE, verbatim** :
+> **إيمانيول ليفيناس: ( 1905 )**
+> فيلسوف فرنسي من أصل ليتواني، تأثّر بهوسرل وكتب عنه " نظريّة الحدس في فينومينولوجيا هوسرل "
+> ( 1930 ). فساهم في نشر فكره بفرنسا. احتفظ من فلسفة هوسرل بمنهج التحليلات القصديّة كما تأثّر
+> بهيدغر ثمّ اتخذ منه مسافة نقديّة ليتفرّد، في ضوء تجربته مع النازيّة، بأفكاره في **الإيتيقا**
+> التي يقدّمها على **الأنطلوجيا** خلافا لهيدغر. والفكرة المحوريّة لفلسفته تدور حول مقولة الآخر من
+> حيث هو تجربة أساسيّة ينتفي خارجها كلّ معنى. فالآخر أو " **وجه الآخر** " يمثّل أمرا لا مردّ له
+> لشخصي ولكينونتي، يحملني على احترامه وبدونه لا أعرف منزلتي. من أهمّ كتاباته الأخرى: " اكتشاف
+> الوجود مع هوسرل وهيدغر " (1949) وقد استحضر فيه الجذور الفينومينولوجيّة لفلسفة الوجود كالقول
+> بالعودة إلى الأشياء – هوسرل – والانتباه لمعنى فعل الوجود – هيدغر –. " الشموليّة واللانهائي "
+> (1961) وفيه ينقد الشموليّة من جهة طلبها المعرفة المطلقة كما تظهر خاصّة مع فلسفة هيغل، ويؤكّد أن
+> التجربة الأساسيّة للإنسان إنّما تكمن في العلاقة البيناذاتيّة، ويعدُّ هذا الكتاب دفاعا على
+> الذاتيّة المؤسّسة على فكرة اللاتناهي من جهة علاقة الأنا بالآخر. وفي " إنسانيّة الإنسان الآخر "
+> (1972) يقترح ليفيناس إنشاء إيتيقا جديرة بالإنسان قوامها تبادل المسؤوليّة بين الأنا والآخر. وفي
+> " الإيتيقا واللانهائي " (1982) يستعرض مسيرته الفلسفيّة التي انتهت به إلى اعتبار الإيتيقا الفلسفة
+> الأولى عن جدارة.
+
+⚠️ **`( 1905 )` — année de naissance SEULE**, sans année de mort, alors que la notice cite un
+ouvrage de 1982 : c'est la **seule notice de la tranche p.40-46 dont l'intervalle est ouvert**
+(même cas que `موران: (1921)` au سند 13). Transcrit tel quel, **non complété**.
+⚠️ **Titres en BLEU CYAN** : `نظريّة الحدس في فينومينولوجيا هوسرل`, `اكتشاف الوجود مع هوسرل
+وهيدغر`, `الشموليّة واللانهائي`, `إنسانيّة الإنسان الآخر`, `الإيتيقا واللانهائي`. En **noir
+gras** : `الإيتيقا`, `الأنطلوجيا`, `وجه الآخر`.
+⚠️ Graphie **`الأنطلوجيا`** (comme `أنطلوجيا` au سند 14, et non `الأنطولوجيا`).
+⚠️ **`دفاعا على الذاتيّة`** [sic] tel qu'imprimé (la rection attendue est `دفاعا عن`).
+⚠️ Termes techniques relevés : **البيناذاتيّة** (intersubjectivité), **اللاتناهي** (l'infini),
+**التحليلات القصديّة** (analyses intentionnelles), **مقولة الآخر**.
+
+**المهام (verbatim, p.45 — encadré, 7 puces)** :
+- أستحضر مثالا من تاريخ الفلسفة عن التأويل القديم للجسد.
+- في ضوء الإحالة الواردة في النص على سقراط، أحدد دلالة تشبيه الجسد بالسجن.
+- متى يصبح إحساسنا بالجسد إحساسا حادّا؟
+- أيّ دور للجسد في الإحساس بالهويّة؟
+- أستخرج الحجج التي ساقها الكاتب للتأكيد على ضرورة زوال الثنائيّة بين الأنا والجسد.
+- أيّ دلالة للإنيّة في ضوء دعوة الكاتب إلى ضرورة زوال الثنائيّة؟
+- هل يتوافق شعوري بهويتي مع ما ذهب إليه الكاتب؟
+
+⚠️ **7 puces — le سند le mieux doté en مهامّ de la tranche p.40-46** (à égalité avec le سند 12,
+p.38-39).
+
+**Encadré-citation (p.45, cadre rose double filet, à droite de l'image du globe)** :
+> " ففي مؤسّسة رياضيّة خطرة وفي تمرين جريء تبلغ فيه الحركات درجة إتقان تكاد تكون خياليّة تنذر
+> بالموت، ينبغي أن تزول كلّ ثنائيّة بين الأنا والجسد " .
+> **ليفيناس**
+
+⚠️ **L'encadré-citation le plus long de la tranche p.6-46** — 6 lignes composées ; il reprend
+**mot pour mot la phrase finale du texte** du سند.
+
+---
+
+###### سند 16 — ج. ب. سارتر / SARTRE — « تجربة الخجل » — p.46 (suite p.47)
+
+- **Auteur tel qu'imprimé** : ligne de source arabe **ج. ب. سارتر** (initiales séparées par des
+  points, vérifié à 600 dpi × 3) ; ligne latine **`SARTRE`** **seul, sans prénom ni initiales** ;
+  encadré-citation p.46 signé **سارتر**. La notice **الكاتب** n'est **pas** sur p.46.
+- **Titre du سند** : **تجربة الخجل**
+- **Source imprimée (2 lignes, arabe puis latine)** :
+  **ج. ب. سارتر، الوجود والعدم**
+  **SARTRE;** *L'Etre et le Néant,* 3e partie, I, 1, éd. Gallimard. pp 265 - 266
+- **Illustrations** : (p.46, haut) **photographie en couleurs**, fortement postérisée, insérée
+  dans le corps du texte — **homme âgé à lunettes**, costume sombre et cravate, **parlant dans un
+  micro** ; (p.46, bas) **grande image en couleurs** occupant le bas de page — **visage
+  solarisé** coupé en deux, **magenta/rouge** d'un côté, **bleu-violet** de l'autre, **deux yeux**
+  fortement contrastés (l'un cerclé de bleu, l'autre jaune) et des **traits de lumière**
+  rayonnants ; aucune légende, aucun nom d'artiste imprimé.
+
+**التمهيد (verbatim)** :
+> إذا كانت " نظرة كلب إليّ لا تحرجني " ( مرلوبونتي ) فإنّ نظرة الآخر إليّ تربكني مادام يشاركني
+> الوجود ويحملني على الاعتراف به في الوقت الذي أعمل فيه على تأكيد ذاتيّتي.
+
+⚠️ Ce التمهيد **cite nommément مرلوبونتي** (سند 14, p.42-43) entre parenthèses : **lien interne
+imprimé** entre deux سندات voisins.
+
+**Thèse (reformulée)** : la honte, dans sa **structure originelle**, est **honte devant
+quelqu'un**. Un geste maladroit ou vulgaire me colle à la peau ; **il ne m'appartient pas** de le
+juger ni de le condamner, je n'ai qu'à le vivre. Mais je lève la tête : **quelqu'un était là et
+m'a vu**. Je saisis aussitôt la grossièreté de mon geste et la honte me saisit — **j'ai honte de
+moi tel que j'apparais à autrui**. Par cette apparition d'autrui, je me trouve prêt à me juger
+**comme on juge une chose**, parce que **c'est comme chose que j'apparais aux autres**. Et
+pourtant, cette chose apparue à autrui **n'est pas une image falsifiée dans un esprit** : le texte
+écarte explicitement cette hypothèse, **dont la conséquence serait** que l'image « serait imputée
+tout entière aux autres » et **ne me « toucherait » pas** — je n'éprouverais alors qu'agacement ou
+colère, comme devant un mauvais portrait qui me prête une laideur qui n'est pas la mienne,
+**sans en être remué jusqu'à la moelle**. Conclusion imprimée : **la honte est par nature un
+aveu** — l'aveu que **je suis tel que les autres me voient**.
+
+⚠️ **Piège de lecture signalé** : la phrase `إنّ هذه الصورة ستُسنَدُ كليّا إلى الآخرين ولن
+" تؤثَّر " فيّ` **n'est pas** la thèse de l'auteur — c'est la **conséquence de l'hypothèse qu'il
+vient de rejeter** (`ليس صورة مزيّفة في فكر`). Vérifié à 600 dpi × 3 : les guillemets encadrent
+bien le seul mot `تؤثَّر`, et la négation `ولن` porte sur lui.
+⚠️ Le texte porte **deux coupes éditoriales** notées `( ... )` (après `بكلّ بساطة`, et après
+`فيعتريني الخجل`) et **une insertion entre crochets** `[ بهذا ]` (ajout du traducteur, non
+signalé comme tel).
+⚠️ **Aucun appel de note** dans le corps ; **aucun encadré هامش** sur p.46.
+
+**Encadré-citation (p.46, cadre rose, à droite de la grande image)** :
+> " إن الخجل هو بالطبيعة اعتراف. اعتراف بأنّي أكون كما يراني الآخرون " .
+> **سارتر**
+
+⚠️ **Cet encadré-citation est bien imprimé p.46** (à droite de la grande image du bas) : il
+reprend **mot pour mot les deux dernières phrases du texte**.
+⚠️ **Mais il n'est pas le seul de ce سند.** La p.47 en porte un SECOND, à côté d'une peinture de
+deux masques de théâtre : « أخجل من نفسي كما أظهر للآخرين » — **سارتر**. Vérifié sur les deux
+pages par l'orchestrateur. Le سند 16 porte donc **deux encadrés-citation, un par page**.
+
+⚠️ **Suite p.47 — notice الكاتب, مهامّ et encadré-citation déjà transcrits (fragment ch1b).**
+
+---
+
+##### § Notes, anomalies et incertitudes — fragment ch1a, tranche p.40-46
+
+**Ce que la tranche contient — compté sur les pages, pas déduit**
+
+| سند | auteur imprimé (arabe / latin) | titre | étendue **réelle** | notice الكاتب | encadré هوامش | مهامّ | encadrés-citation |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-: | :-: |
+| 13 | ادڤار موران / `Edgar MORIN` | مركزيّة الذات | **p.40-41** (2 p.) | **complète**, à cheval **p.40→p.41** | **oui** — titre `الهامشان`, **2** notes (p.41) | **5** | **1** (p.41) |
+| 14 | مرلوبونتي / `M. MERLEAU- PONTY` | تجربة الجسد | **p.42-43** (2 p.) | **complète** (p.43) + **renvoi de lecture** vers une نافذة | **AUCUN** | **5** | **1** (p.43) |
+| 15 | إيمانيول ليفيناس / `Emmanuel  LEVINAS` | الجسد إحساس بالهويّة | **p.44-45** (2 p.) | **complète**, à cheval **p.44→p.45** | **oui** — titre `الهامشان`, **2** notes (p.45) | **7** | **1** (p.45) |
+| 16 | ج. ب. سارتر / `SARTRE` | تجربة الخجل | **p.46** (+ suite p.47) | **absente de p.46** → p.47 | **AUCUN** sur p.46 | **0** sur p.46 → p.47 | **1** (p.46) |
+
+- **4 سندات**, **0 renvoi d'auteur** dans cette tranche : les trois notices présentes sont
+  **complètes**. C'est l'inverse du مبحث 3.2 (13 renvois sur 18) et la suite de la tendance du
+  مبحث 1.1 (1 seul renvoi sur les 12 premiers سندات).
+- **2 encadrés هوامش sur 4 سندات** ; **4 notes** au total, toutes p.41 et p.45.
+- **17 puces de مهامّ** comptées (5 + 5 + 7) sur p.41, p.43, p.45.
+- **4 encadrés-citation**, un par سند, tous signés du nom court de l'auteur.
+- **Deux notices sur trois sont à cheval sur deux pages** (13 et 15) : le pied de page les coupe.
+- **Règle du titre des هوامش, vérifiée sur 3 boîtes** : le manuel accorde le titre au **nombre de
+  notes** — `الهامش` (singulier) pour 1 note p.39, `الهامشان` (**duel**) pour 2 notes p.41 et p.45.
+- **Contrôle du فهرس** : pour cette tranche il est **exact** — numéros 13-16, auteurs
+  (موران / مرلوبونتي / ليفيناس / سارتر), titres et pages de départ (40, 42, 44, 46) correspondent
+  tous à la page. Seule nuance : le فهرس n'emploie que les **noms courts**, là où les pages
+  donnent aussi les prénoms.
+
+**Anomalies réelles de la source — chacune vérifiée à 600 dpi**
+
+1. **p.41, مهامّ, 5ᵉ puce — `نمطحضوري`** : **espace manquante** entre `نمط` et `حضوري`. Vérifié à
+   600 dpi puis agrandissement ×3 : les deux mots sont **soudés**, alors que les blancs voisins de
+   la même ligne (`… في العالم؟`) sont nets. **Seule espace réellement absente de la tranche.**
+2. **p.40, notice سند 13 — `انظم`** : composé avec **ظ** ; la forme attendue est `انضمّ` (ض).
+   Vérifié à 600 dpi ×3.
+3. **p.42, ligne latine du سند 14** — quatre défauts de composition sur une seule ligne :
+   `M. MERLEAU- PONTY` (**espace après le trait d'union**), `PONTY ,Phénoménologie` (**virgule
+   collée au titre et précédée d'une espace**), `perception , éd.` (**espace avant la virgule**),
+   `pp.230-231` (**pas d'espace après `pp.`**). Vérifié à 600 dpi ×3.
+4. **p.44, ligne latine du سند 15** — `Emmanuel  LEVINAS` avec **double espace** ; et la référence
+   s'arrête au titre : **ni éditeur, ni date, ni pages**. C'est la **seule référence de la
+   tranche** qui n'en donne aucune.
+5. **p.46, ligne latine du سند 16** — `L'Etre et le Néant` : **`Etre` sans accent circonflexe** ;
+   et `éd. Gallimard.` **point** au lieu de virgule avant `pp 265 - 266`. Vérifié à 600 dpi ×2.
+6. **p.45, notice سند 15 — `دفاعا على الذاتيّة`** : rection attendue `دفاعا عن`.
+7. **p.45, هامش 1 — `ق م` sans points**, là où le manuel écrit `ق. م` au سند 9 (p.32-33). Les deux
+   formes coexistent dans le même مبحث.
+8. **p.43, مهامّ, 5ᵉ puce** — **point d'interrogation** là où un point est attendu :
+   `أمتحن هذه الفكرة في ضوء فهمي لجسدي؟ أحرّر فقرة في الغرض.`
+9. **Écart avec la consigne de tranche (et non avec la source)** : l'**encadré-citation du
+   سند 16 est bien imprimé p.46**, à droite de la grande image, et non p.47. Seuls la notice
+   **الكاتب** et les **مهامّ** de ce سند passent p.47.
+
+**Fausses pistes écartées — ce que j'ai cru voir et qui n'y était pas**
+
+1. **Le « point » avant chaque ب initial — 3 fausses coquilles évitées.** À 150 dpi *et* à 600 dpi
+   en vue large, `الموضوع.بمحيطه` et `وربطه.بمن` (p.41) puis `و.بمساعدة` (p.40) paraissent porter
+   un **point en pleine phrase**. Agrandissement 600 dpi ×5, avec deux témoins sur la même ligne —
+   le ب **médial** de `ربطه` (point sous la lettre) et le ب **initial** de `بالسينما` p.40 — :
+   c'est **le point diacritique du ب lui-même**, posé au bord droit de la lettre, qui tombe dans le
+   blanc inter-mots parce que le ب ne se lie pas à droite. **Aucun point n'est imprimé.**
+2. **`إلىالاهتمام` (p.40) et `فيذات` (p.41)** : lus soudés à 150 dpi. À 600 dpi l'espace est
+   **présente**, seulement resserrée par la justification. C'est le contraste avec ces deux cas
+   qui a permis d'établir que `نمطحضوري` (anomalie 1) l'est réellement.
+3. **`الأيحاث` (p.41)** : lu ainsi à 150 dpi ; à 600 dpi le manuel imprime bien **`الأبحاث`**.
+4. **L'intervalle du « المنهج » (p.41) cru inversé.** Le rendu écran donne `1991` à gauche et
+   `1977` à droite, ce qui ressemble aux intervalles retournés que ce manuel produit ailleurs.
+   **Calibration** : la notice de **مرلوبونتي** (p.43) porte `(1908—1961)` — dates certaines — et
+   se rend visuellement `1961—1908`. Donc, **dans ce PDF, le nombre logiquement premier s'affiche
+   à DROITE**. L'intervalle du « المنهج » est **dans le bon ordre** : `( 1977 – 1991 )`. **Pas de
+   `[sic]`.** ⚠️ Étalon réutilisable pour les tranches suivantes.
+5. **`إيمانويل` vs `إيمانيول` (p.44)** : soupçon de double graphie entre la ligne de source et la
+   tête de notice. À 600 dpi ×4 sur **les deux** occurrences : `إيمانيول` dans les deux cas.
+   **Aucune variante.**
+
+**Intervalles de dates — vérifiés un à un**
+
+| Lieu | Tel qu'imprimé (ordre **logique**) | Rendu **visuel** | Verdict |
+| :-- | :-- | :-- | :-- |
+| p.40, tête de notice سند 13 | `موران: (1921)` | — | **intervalle ouvert** — naissance seule, pas de date de mort |
+| p.41, notice سند 13 (« المنهج ») | `( 1977 – 1991 )` | `1991 – 1977` | **ordre correct** |
+| p.43, tête de notice سند 14 | `(1908—1961)` | `1961—1908` | **ordre correct** — **étalon de la tranche** |
+| p.44, tête de notice سند 15 | `إيمانيول ليفيناس: ( 1905 )` | — | **intervalle ouvert** — naissance seule, alors que la notice cite un ouvrage de 1982 |
+| p.45, هامش 1 سند 15 (سقراط) | `( 469—399 ق م )` | `399—469 ق م` | **ordre correct** (décroissant, av. J.-C.) |
+
+**Aucun intervalle retourné dans cette tranche.** Les dates **isolées** (aucune n'est un
+intervalle) : 1951, 1956, 1957, 1968, 1970, 1974, 1982 (p.40-41) ; 1945, 1960, 1964, 1964 (p.43) ;
+1930, 1949, 1961, 1972, 1982 (p.44-45). Les seuls autres nombres composés en intervalle sont des
+**pages** : `pp 88 - 89` (p.40), `pp.230-231` (p.42), `pp 265 - 266` (p.46).
+
+**Variantes de graphie des noms propres**
+
+- **Morin — 3 formes** : `ادڤار موران` (ligne de source, avec **ڤ** à trois points) · `Edgar MORIN`
+  (latine) · `موران` (tête de notice, corps, هامش 2, encadré).
+- **Merleau-Ponty — 3 formes** : `مرلوبونتي` (ligne de source, corps de notice, encadré, **et
+  التمهيد du سند 16 p.46**) · `موريس مرلوبونتي` (tête de notice) · `M. MERLEAU- PONTY` (latine).
+- **Levinas — 3 formes** : `إيمانيول ليفيناس` (ligne de source **et** tête de notice, identiques) ·
+  `ليفيناس` (corps de notice, encadré) · `Emmanuel  LEVINAS` (latine).
+- **Sartre — 3 formes** : `ج. ب. سارتر` (ligne de source, initiales pointées) · `SARTRE` (latine,
+  **sans prénom ni initiales**) · `سارتر` (encadré).
+- **Cités sans aucune graphie latine** : `جورج فريدمان`, `رولان بارت` (p.40) · `هوسرل` (p.43,
+  p.44-45) · `هيدغر` (p.44-45) · `هيغل` (p.45) · `سقراط`, `أفلاطون` (p.45). Descartes n'apparaît
+  que par l'adjectif : `الديكارتي` (p.41 هامش 2, p.43 مهامّ), `الكوجيتو الديكارتي` (p.43).
+- **Termes translittérés relevés tels quels** : `الإيتيقا` · `أنطلوجيا` / `الأنطلوجيا` (p.43 et
+  p.44 — **même graphie sans و après le ط** aux deux endroits, donc graphie de maison et non
+  coquille isolée) · `الابستيمولوجيّة` · `الفينومينولوجيا` / `فينومينولوجيا` · `البيناذاتيّة` ·
+  `اللاتناهي` · `القصديّة` · `الشموليّة`.
+
+**Incertitudes résiduelles**
+
+- **Aucun `[?]`** : les quatre pages sont entièrement lisibles à 600 dpi ; rien n'a été deviné.
+- **Images non attribuées** : les quatre images en couleurs (p.41, p.43, p.45, p.46) ne portent
+  **ni légende ni nom d'artiste**. Elles sont décrites, **jamais attribuées**.
+- **Renvoi non résolu** (سند 14, p.43) : `لمزيد التعمّق انظر نافذة دعائم للتفكير، سياقات فكريّة:
+  الفينومينولوجيا.` — la نافذة visée est hors de la tranche p.40-46 ; transcrite telle quelle.
+- **Suite du سند 16** : notice **الكاتب** et **مهامّ** sont p.47, hors tranche (fragment ch1b).
+- **Sens du texte du سند 16** : la phrase `ستُسنَدُ كليّا إلى الآخرين ولن " تؤثَّر " فيّ` est la
+  **conséquence de l'hypothèse rejetée**, pas la thèse de l'auteur. Signalé en clair dans le corps
+  de la fiche pour que la génération de contenu ne l'inverse pas.
+
+
+##### § نافذة 1.1.2 — سندات للتفكير في المسألة — p.47–74 (**suite** : سندات 17→29)
 
 ###### سند 17 — د. هيوم / دافيد هيوم — « هل الأنا وهم؟ » — p.48-49
 
