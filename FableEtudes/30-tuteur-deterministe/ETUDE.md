@@ -1498,6 +1498,14 @@ _(rempli au fil des lots par l'exécuteur : date, lot, PR, écarts acceptés, de
 
 ## Annexe A — Le modèle de croyance en nombres (la table de vérité du pgTAP)
 
+> ⚠️ **Deux valeurs corrigées le 2026-08-30** (privé#247, item 1) : la ligne n° 2 de A.1
+> annonçait 0,861 et la case `short_answer` à 0,95 de A.5 annonçait 0,880 — deux erreurs
+> d'arithmétique de rédaction. Les formules et les constantes du §3.2 donnent **0,8482** et
+> **0,875** ; toutes les autres lignes des deux tables se rejouent exactement. **Là où une table
+> contredit le modèle dont elle dérive, le modèle fait foi** : le lot 1 avait déjà tranché ainsi
+> et épinglé 0,8482 dans les deux suites (`supabase/tests/75_adaptive_belief.test.sql` et
+> `scripts/adaptive/__tests__/belief-model.test.mjs`) — le corps de l'étude les rejoint.
+
 Paramètres : `p(L₀) = 0,20`, `p(T) = 0,15` (défauts de famille, §3.8c) · `p(S) = 0,08`
 (difficulté 2, hors charge) · `p(G)` selon le type (§3.2). Valeurs arrondies à 3 décimales ;
 ce sont **exactement** les assertions attendues au lot 1.
@@ -1507,7 +1515,7 @@ ce sont **exactement** les assertions attendues au lot 1.
 | n°  | type d'item                | `p(G)` | croyance avant | après     | commentaire                                   |
 | --- | -------------------------- | ------ | -------------- | --------- | --------------------------------------------- |
 | 1   | `short_answer` / rappel    | 0,02   | 0,200          | **0,932** | une seule réponse juste, et on y est presque  |
-| 2   | `numeric`                  | 0,05   | 0,200          | 0,861     |                                               |
+| 2   | `numeric`                  | 0,05   | 0,200          | **0,8482** |                                              |
 | 3   | `mcq` 4 options            | 0,25   | 0,200          | 0,557     |                                               |
 | 4   | `mcq` 4 options (2ᵉ juste) | 0,25   | 0,557          | 0,849     |                                               |
 | 5   | `mcq` 4 options (3ᵉ juste) | 0,25   | 0,849          | **0,961** | il en a fallu **trois** pour dépasser le n° 1 |
@@ -1558,7 +1566,7 @@ jamais dégrader une croyance existante (D-3) ; et elle ne touche ni `evidence_c
 | 0,20     | 0,384           | 0,200          | trop dur — frustration |
 | 0,50     | 0,585           | 0,470          | **ZPD**                |
 | 0,70     | 0,719           | 0,650          | **ZPD**                |
-| 0,95     | 0,886           | 0,880          | trop facile — ennui    |
+| 0,95     | 0,886           | 0,875          | trop facile — ennui    |
 
 La ZPD de Vygotsky n'est plus une métaphore : c'est l'intervalle `P(réussite) ∈ [0,55 ; 0,80]`,
 et le sélecteur peut la viser. On y lit aussi, en creux, pourquoi un QCM ennuie plus tard qu'une
