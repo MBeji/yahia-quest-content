@@ -64,7 +64,7 @@ The negative and the question are built on **be**, exactly as they always are �
 | **negative**   | _The report **is not published**._     | _The report **was not published**._      |
 | **question**   | _**Is** the report **published**?_     | _**Was** the report **published**?_      |
 
-> ⚠️ **Three broken forms, seen every year.** "The law was pass in March" ✗ — the participle has lost its _-ed_ (_was **passed**_). "The men were took to hospital" ✗ — _took_ is a past simple; the passive needs the **participle**, _were **taken**_. "The report published yesterday by the association" ✗ — **be** is missing altogether; without it there is no passive, only a noun and a verb that no longer agree with the sense (_was **published**_).
+> ⚠️ **Three broken forms, seen every year.** "The law was pass in March" ✗ — the participle has lost its _-ed_ (_was **passed**_). "The men were took to hospital" ✗ — _took_ is a past simple; the passive needs the **participle**, _were **taken**_. "The report published yesterday by the association" ✗ — **be** is missing altogether; without it there is no passive at all, and the sentence, read as it stands, says that the report did the publishing (_was **published**_).
 
 ## 🔧 From active to passive — three steps, always the same three
 
@@ -107,7 +107,9 @@ The two sentences carry the same information; **by + agent** simply gives, at th
 | **obvious**                          | _The two men **were arrested** the same evening._     | of course by the police — who else?       |
 | **unimportant**, or everybody        | _English **is spoken** in all the hotels._            | "by people" adds nothing at all           |
 
-There is a fourth case, and your book uses it constantly: the agent is dropped because the writer wants the sentence to be **about the person who suffered** the action, not about the one who caused it. _"I was not allowed to make any inquiries"_ puts the child first and leaves the master out of the sentence. That silence is a choice, and it is part of the meaning.
+> ⚠️ Dropping an empty agent is a matter of **style**, not of grammar. _My bag **was stolen by somebody**._ breaks no rule at all: it simply spends two words saying what every action already implies, and a careful writer cuts them. Never mark a sentence like that **wrong** — mark it as a sentence that can be **shorter**.
+
+There is a fourth case, and your book uses it constantly: the agent is dropped because the writer wants the sentence to be **about the person who suffered** the action, not about the one who caused it. The autobiography of lesson fifteen writes _"I was not allowed to make any inquiries"_: the sentence puts the child first and leaves the master out of it. That silence is a choice, and it is part of the meaning.
 
 The passive is also the normal voice of two kinds of writing you will meet in exams: **scientific writing** (_The sample **is heated** to 80 degrees._) and **reports of accidents or disasters** where the result matters more than the cause (_Forty houses **were destroyed** by the floods._).
 
@@ -117,7 +119,7 @@ When you meet a passive sentence in a text, two different questions have two dif
 
 > _In 1994, a school for girls **was opened** in the village **by a local association**._
 
-- **What is the subject?** Ask what stands in front of the verb: **a school for girls**. The subject of a passive sentence is what **receives** the action, never what performs it.
+- **What is the subject?** Ask which noun the verb **agrees** with, and which noun the action was **done to**: **a school for girls**. Do not simply take what stands in front of the verb: _In 1994_ stands there too, and a **time phrase** is never a subject. Neither is a **place phrase** such as _in the village_ — a group that opens with a preposition (_in_, _at_, _by_, _for_, _of_) can never be the subject of a sentence. The subject of a passive sentence is what **receives** the action, never what performs it.
 - **Who does the action?** Look after **by**: **a local association**.
 
 Now remove the last three words:
@@ -165,12 +167,12 @@ Lesson 16 asks what people **mean to do** about inequality. English has a small 
 
 ## 🥄 *a little*, *a few*, *a lot of* — how much, how many, and how it feels
 
-Page 92 of your book prints this rule in full — it is one of the rare places where it does. Here it is, with what each quantifier **means**.
+Page 92 of your book prints this rule in full — it is one of the rare places where it does. Here it is, joined to what the grammar summary at the end of your book adds about the **meaning** of each quantifier, and to the form of the noun each one takes.
 
 | Quantifier                                    | Goes in front of…                       | Meaning                       |
 | --------------------------------------------- | ---------------------------------------- | ------------------------------ |
 | **a few** + noun in the **plural**            | a **countable** noun: _minutes, countries, women, laws_ | some — **not many, but enough** |
-| **a little** + noun in the **singular**       | an **uncountable** noun: _time, money, work, help, water_ | some — **not much, but enough** |
+| **a little** + noun with **no plural**        | an **uncountable** noun: _time, money, work, help, water_ | some — **not much, but enough** |
 | **a lot of** + either                          | **countable** _(a lot of mistakes)_ or **uncountable** _(a lot of work)_ | **more than enough**, plenty of |
 
 The four sentences your book prints under the table:
@@ -216,7 +218,6 @@ The second checkpoint really does revise this theme, so nothing here is lost. It
 | "The law was pass last year."                | _The law **was passed** last year._            | the participle keeps its _-ed_                              |
 | "The report published in May."               | _The report **was published** in May._         | no _be_, no passive                                         |
 | "The files was stolen."                      | _The files **were** stolen._                   | _be_ agrees with the passive subject, which is plural       |
-| "My bag was stolen by somebody."             | _My bag **was stolen**._                       | an unknown agent is not named; drop the _by_ phrase         |
 | "English is speaking in the hotels."         | _English **is spoken** in the hotels._         | _-ing_ is an activity; the passive needs the participle     |
 | "a few money"                                | _**a little** money_                            | _money_ is uncountable                                       |
 | "a little friends"                           | _**a few** friends_                             | _friends_ is countable                                       |
