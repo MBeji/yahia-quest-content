@@ -319,6 +319,18 @@ jobs:
       # tous les chapitres ont été prunés). On recompte donc en base ce qu'on
       # vient d'appliquer, sujet par sujet, et on échoue si un sujet appliqué n'a
       # aucune question — pour qu'un canal muet ne puisse plus s'afficher vert.
+      #
+      # ⚠️ CE QUE CE CONTRÔLE NE PROUVE PAS, et il faut le savoir avant d'annoncer
+      # « appliqué » : il compte des LIGNES. Un lot qui ne corrige que du texte —
+      # les explications qui citaient une option par sa lettre, 2026-08-31 — laisse
+      # les effectifs identiques avant et après. Le compte était déjà juste, il l'est
+      # encore : il ne dit rien du nouveau texte.
+      # Et aucune sonde externe ne comble le trou : en anon sur `questions`, `id`,
+      # `options` et `exercise_id` passent, `explanation` rend `42501` (grants par
+      # COLONNE), et la table n'a ni `updated_at` ni `created_at`. Ce qui reste, et
+      # qu'il faut nommer comme tel : le fichier passe en `--single-transaction`
+      # (tout ou rien), il est journalisé, et la garde de drift relit ce journal EN
+      # BASE. Un contrôle du journal, pas du contenu des lignes.
       - name: Vérifier que le contenu est bien en base
         if: ${{ env.DRY_RUN == 'false' }}
         working-directory: corpus/sql/content
