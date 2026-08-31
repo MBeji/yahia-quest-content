@@ -8,18 +8,18 @@
   "questions": [
     {
       "type": "multi",
-      "prompt": "A travel agency reads out this advertisement on the radio. \"Leave the traffic behind for one day. At 12.30 we stop for a picnic on the beach, with bread baked that morning in a wood-fired oven. From 14.00 two open jeeps take you along the rocky coast and through the fields, with a swim stop at the bay. At 18.00 we board a small boat for the lagoon, where you watch the sunset and swim again before the buffet. You are back at your hotel by midnight.\" Which statements does the advertisement let you check?",
+      "prompt": "A hostel pins this notice up in its hall. \"SATURDAY — two guided walks, and you choose one. The LAKE WALK leaves at 8.00, follows the shore for nine kilometres and is back for lunch. The RIDGE WALK leaves at 7.00, climbs through the pine wood and comes home around the far side of the hill; it is four kilometres longer, and walkers on it are asked never to step off the marked path. Both walks are free for guests of the hostel. There is no water on either route, so fill your bottle before you leave.\" Which statements does the notice let you check?",
       "options": [
-        { "id": "a", "text": "The picnic is served before the jeep tour begins." },
-        { "id": "b", "text": "The travellers swim more than once during the day." },
-        { "id": "c", "text": "The jeeps take the travellers as far as the lagoon." },
-        { "id": "d", "text": "The buffet is served before the sunset." },
-        { "id": "e", "text": "The day ends at the hotel." }
+        { "id": "a", "text": "The ridge walk covers more ground than the lake walk." },
+        { "id": "b", "text": "The ridge walk sets off earlier than the lake walk." },
+        { "id": "c", "text": "Walkers on the lake walk are told to keep to a marked path." },
+        { "id": "d", "text": "Guests of the hostel pay nothing for either walk." },
+        { "id": "e", "text": "The ridge walk is back at the hostel in time for lunch." }
       ],
       "answerKey": {
-        "correct": ["a", "b", "e"]
+        "correct": ["a", "b", "d"]
       },
-      "explanation": "The advertisement is built on a timetable, so every claim about the order of the day can be checked against it. The picnic is at 12.30 and the jeeps set off from 14.00, so the picnic does come first. Two swims are announced, the swim stop at the bay during the jeep tour and the second one at the lagoon in the evening, so the travellers do swim more than once. And the last line says they are back at their hotel by midnight, so the day does end there. The two others fail: the lagoon is reached by boat at 18.00, not by the jeeps, which travel along the coast and through the fields; and the buffet comes after the sunset, since the advertisement says you watch the sunset and swim again before it.",
+      "explanation": "A notice like this one is scanned, not read like a story, and every claim about the two walks is held against its own lines. It gives the ridge walk as four kilometres longer, so that walk does cover more ground. It prints 7.00 against 8.00, so the ridge walk does set off first. And it says both walks are free for guests of the hostel, so a guest pays nothing either way. The two others fail, and they fail differently. The instruction never to step off the marked path is attached to the ridge walk alone, so putting it on the lake walk moves an instruction from one walk to the other. And the notice gives a return time for the lake walk only: it never says when the ridge walk comes home, so claiming it is back in time for lunch is not reading the notice but filling in a gap the notice left. What a notice does not say is not yours to assume.",
       "difficulty": 2
     },
     {
@@ -92,15 +92,15 @@
       "difficulty": 3
     },
     {
-      "prompt": "Read this short account. \"We had always taken our holidays in a tent, so renting an apartment by the sea felt like a treat. The photographs had promised a balcony over the bay. What we found, on the first evening, was a building site under the window and a lift that had stopped working a month earlier. We climbed six floors twice a day for a fortnight. My mother said afterwards that she had never been so glad to see our old tent again.\" Which title fits the account best?",
+      "prompt": "Read this short account. \"The coach broke down forty kilometres from the resort we had booked, and the driver told us we would sleep in the nearest village. My sister cried for an hour. The family who kept the village café had already heard about us by the time we walked in, and they opened two rooms above the kitchen. We stayed four days instead of one, and when the coach was mended none of us wanted to get on it.\" Which title fits the account best?",
       "options": [
-        { "id": "a", "text": "A treat that turned into a climb" },
-        { "id": "b", "text": "How to rent an apartment by the sea" },
-        { "id": "c", "text": "The best fortnight we ever spent" },
-        { "id": "d", "text": "Why we will never sleep in a tent" }
+        { "id": "a", "text": "The four days we never booked" },
+        { "id": "b", "text": "How to choose a resort" },
+        { "id": "c", "text": "A breakdown that spoilt the holiday" },
+        { "id": "d", "text": "The night my sister cried" }
       ],
       "correctOption": "a",
-      "explanation": "A title has to hold the whole account, and this one moves from something that felt like a treat to six floors climbed twice a day for two weeks: \"A treat that turned into a climb\" names both ends of that movement. \"How to rent an apartment by the sea\" announces a guide that gives advice, and the account gives none: it tells one family's fortnight. \"The best fortnight we ever spent\" says the opposite of every detail in it, from the building site to the broken lift. \"Why we will never sleep in a tent\" turns the ending upside down, since the last sentence says the mother had never been so glad to see the tent again.",
+      "explanation": "A title has to hold the whole account, and this one runs from a breakdown on the road to four days nobody wanted to leave: \"The four days we never booked\" names both ends of that movement, the stop that was never planned and the stay it turned into. \"A breakdown that spoilt the holiday\" fits the first line and contradicts the last, since the travellers stayed on and then refused to board the mended coach. \"The night my sister cried\" is true, and it is the most striking detail in the account, but it covers one hour out of four days: that is a caption under a photograph, not a title over a text. \"How to choose a resort\" announces a guide that gives advice, and the account gives none — it tells what happened to one family that in the end chose nothing at all.",
       "difficulty": 3
     }
   ]
