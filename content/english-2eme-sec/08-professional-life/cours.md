@@ -106,6 +106,16 @@ The listening of lesson 21 is a job profile, and it answers four questions in or
 3. **Where is the work done?** A hospital, a clinic, an office, a home, outdoors.
 4. **What does it ask of the candidate?** Read the conditions one by one. An advertisement that lists two conditions and joins them with **and** rejects the candidate who meets only one; joined with **or**, one is enough. Read that little word before you read anything else.
 
+## 🎧 What you actually hear in lesson 21
+
+The recording is a fifteen-minute daily radio programme called *Meet the people*, and the two guests are Norwegian students living in Japan. The interview is in **English** — that is the first thing the questions ask you, and it is easy to miss, because the two guests are neither English nor Japanese.
+
+**Heidrun** wants to be a **physician's assistant**. The assistant takes the small acts — the check-ups, taking out the stitches — **so that** the physician does not have to do them himself. The training is long: **four to six years** at the very least, **two of them in a hospital** as a trainee. Afterwards she hopes to have a small **clinic** of her own, or to work alongside a physician.
+
+**Thorson** wants to be a **diplomat**, and if he can, in Japan. He came to learn Japanese; he is aiming at a **master's degree in international relations**, then the diplomatic school of the foreign ministry — a **three-year** programme — and then a post at the **Norwegian embassy in Tokyo**. It is **very competitive**, but a rare language is an advantage: only **three hundred** Norwegians live in Japan. And as a child he wanted to be none of that: he wanted to be a **baseball player**, so that the whole world would know his name.
+
+> ⚠️ **Three traps are laid by the recording itself, and they are good ones.** A **hospital** is named, but as the place of Heidrun's **training**, not of the work she is aiming at — the clinic is that. A **fireman** is named too, and then denied: Thorson says that is exactly what he did **not** dream of. And **diplomat** is the job he wants **now**, not the dream of his childhood — only the words *when he was a kid* separate the two. In a listening test, a word you heard is not the same thing as an answer.
+
 ## 🔊 The final -s, and the three sounds it makes
 
 Lesson 21 asks you to sort words by the sound of their ending and then says: work out the rule with your teacher. The rule is short and it covers plurals and verbs alike.

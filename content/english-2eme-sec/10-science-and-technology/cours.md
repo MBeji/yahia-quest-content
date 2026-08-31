@@ -179,6 +179,20 @@ The second line is in the table of your book — _Adjective + er + and + Adjecti
 
 > ⚠️ **assume** and **prove** are opposites in one respect: you **assume** when you have no evidence, you **prove** when you have. And **substantial** always means large — a sentence that calls three items out of two hundred "substantial" contradicts itself.
 
+## 🎧 What you actually hear in lesson 26
+
+The speaker is **Dr Franklin Gruber**, who heads the department of futuristic studies at the university of **Durban**, and he is asked one question: what will man be like?
+
+**He will be different**, because man changes slowly and never stops. Five hundred years ago he was shorter; today men are about **three inches** taller, and five hundred years is a short period as these things go, so the growth should continue. We use only **twenty per cent** of the brain's capacity; it will have to be used **more and more often**, it will become **more and more substantial**, and the head — the **forehead** above all — will grow wider.
+
+Then, part by part. The **eyes** are used constantly, so they weaken and call for glasses — but over a very long period they will become **stronger**. **Arms and legs** are used less, so they will become **less and less powerful**. The **fingers** are used a great deal, so they will become **more and more sensitive**. **Hair** will go from the whole body for want of any use, and men and women alike will most likely be **bald**.
+
+And then the ending, which is what a listening always asks for. The man of the future may not be very **attractive** — but he will have a great deal in common with us: he will still be a human being, with **thoughts and emotions** like our own.
+
+> 🗡️ Read that description again with the last section in mind: *more and more often*, *more and more substantial*, *less and less powerful*, *more and more sensitive*. The whole prediction is built on the pattern of a change that goes on, which is why this lesson teaches it.
+
+> ⚠️ **Twenty per cent, not twenty-three.** The book's true-or-false exercise prints a figure of **23 %**, and the recording says **20 %**. Nothing but hearing the number settles it — which is exactly what that item is for. In the same exercise, watch the direction of each change: the fingers become **more** sensitive, not less, and the man of the future keeps his **emotions**. Four of the five statements you are given are false, so answering *false* everywhere would look clever and prove nothing.
+
 ## ⚖️ Giving an opinion, agreeing, disagreeing
 
 Lesson 25 is a debate, and a debate has three moves.
