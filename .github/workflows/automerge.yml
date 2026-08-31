@@ -72,6 +72,15 @@ on:
   # ce workflow en fin de course, mais UNIQUEMENT quand ils ont eux-mêmes été dispatchés —
   # c'est-à-dire uniquement sur le chemin qui casse, une poussée de nouvelle branche. Le chemin
   # `pull_request` normal continue de passer par `workflow_run`, sans run supplémentaire.
+  #
+  # ⚠️ Seconde limite, mesurée le 2026-08-31 (#278) : quand c'est CE workflow qui merge, le
+  # `push` qu'il produit sur `main` n'émet AUCUN événement — la même garde anti-récursion du
+  # `GITHUB_TOKEN`. Le filet ne se tend donc que derrière un merge fait à la MAIN. Ici ce
+  # n'est pas grave : chaque run rebalaye toutes les PR ouvertes et le merge retente ses
+  # courses, donc rien n'attend ce push. C'est fatal pour un workflow qui n'écoute QUE
+  # `push: main` — `content-drift.yml` est resté aveugle deux jours pour cette seule raison :
+  # sept commits de contenu sur `main`, zéro run. D'où le réveil explicite en fin
+  # de balayage (dernière étape de ce job) : c'est nous qui savons qu'un merge a eu lieu.
   push:
     branches: [main]
   workflow_dispatch:
@@ -94,6 +103,10 @@ permissions:
   # Lire les check runs du SHA — le cœur de la décision. C'est une portée à part entière : ni
   # `contents` ni `pull-requests` ne la couvrent.
   checks: read
+  # Réveiller `content-drift.yml` après un merge de contenu (dernière étape). Même idiome que
+  # `content-ci.yml` et `pin-check.yml`, et même raison de fond : `workflow_dispatch` est le
+  # SEUL événement que le `GITHUB_TOKEN` a le droit d'émettre.
+  actions: write
   # Pas de `issues:` ici, et ce n'est pas un oubli : `gh label create` / `gh pr edit --add-label`
   # (chemin de conflit) passent avec `pull-requests: write` seul — vérifié sur ce dépôt le
   # 2026-07-26. Ajouter `issues: write` élargirait le jeton sans rien débloquer.
@@ -147,6 +160,28 @@ jobs:
           # testée explicitement (`if ! x="$(...)"`), jamais laissée à `set -e`.
           # Même raison pour ne pas écrire `read -r a b c <<<"$(cmd)"` : l'échec de `cmd` n'y est
           # pas vu (le statut retenu est celui de `read`, qui réussit en lisant du vide).
+
+          # Un merge de contenu met la prod en retard sur `main`, et la seule chose qui le dit
+          # est la garde `content-drift.yml` — déclenchée sur `push: main`, donc jamais quand
+          # c'est nous qui mergeons (voir le bloc `on:`). On le note ici, on la réveille à la fin.
+          CONTENU_MERGE=0
+
+          # Ne réveiller que sur du contenu : la garde ne compare QUE `content/**`, et sur un
+          # dépôt privé chaque job est facturé à la minute entamée. `gh api --paginate` plutôt
+          # que `gh pr view --json files`, qui plafonne à 100 fichiers — une tranche de campagne
+          # en dépasse, et la troncature se lirait « pas de contenu ».
+          pr_touche_contenu() {
+            local fichiers
+            if ! fichiers="$(gh api "repos/$REPO/pulls/$1/files" --paginate --jq '.[].filename')"; then
+              # Liste illisible : on réveille par sûreté. Une minute Actions coûte moins qu'un
+              # écart invisible jusqu'au cron du lendemain.
+              echo "  (fichiers de #$1 illisibles — réveil par sûreté)"
+              return 0
+            fi
+            # Here-string et non pipe : sous `pipefail`, le SIGPIPE que `grep -q` envoie à
+            # l'amont ferait échouer le test alors qu'il vient de RÉUSSIR.
+            grep -q '^content/' <<<"$fichiers"
+          }
 
           process_pr() {
             local pr="$1"
@@ -237,6 +272,10 @@ jobs:
             while [ "$attempt" -le 3 ]; do
               if out="$(gh pr merge "$pr" --squash --delete-branch 2>&1)"; then
                 echo "  ✅ PR #$pr mergée."
+                if pr_touche_contenu "$pr"; then
+                  echo "  (touche content/ — la garde de drift sera réveillée en fin de balayage)"
+                  CONTENU_MERGE=1
+                fi
                 return 0
               fi
               echo "$out" | sed 's/^/    /'
@@ -280,4 +319,15 @@ jobs:
             if ! process_pr "$pr"; then failed=1; fi
             echo "::endgroup::"
           done
+
+          # UNE dispatch pour tout le balayage, pas une par PR : la garde relit l'état complet
+          # de la prod, un second run ne dirait rien de plus et coûterait une minute de plus.
+          if [ "$CONTENU_MERGE" = "1" ]; then
+            if gh workflow run content-drift.yml --ref main; then
+              echo "Garde « Contenu non publié » réveillée."
+            else
+              echo "::warning title=Garde non réveillée::Le dispatch de content-drift.yml a échoué — le cron de 06:40 UTC reprendra."
+            fi
+          fi
+
           exit "$failed"
