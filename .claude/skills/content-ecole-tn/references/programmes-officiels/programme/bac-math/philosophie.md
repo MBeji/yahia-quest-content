@@ -183,15 +183,19 @@ titre « ما التوجّه في التفكير؟ », et la liste des concepts 
   - ✅ INCLUS : الوعي · اللاّوعي · الذات · الجسد · التّاريخ ; التأويل, الزّمان, الجوهر ; psychanalyse, phénoménologie, existentialisme, philosophie de l'histoire ; les « philosophes du soupçon » (فلاسفة الظنّة).
   - ⛔ EXCLU : tout ce que le manuel de **شعبة الآداب** (`210422`/`210423`) ajoute et que celui-ci ne porte pas — ce manuel-ci est le programme **des sections non-Lettres**, et il est le seul scope de cette fiche.
 
-#### مبحث 1.1 — الآنيّة والغيريّة — transcription PARTIELLE (p.6–74, سندات 1→29)
+#### مبحث 1.1 — الآنيّة والغيريّة — transcription INTÉGRALE (p.6–114)
 
-> ✅ **Portée : p.6–74** — l'ouverture du **محور 1** (p.6), la **نافذة مدخل intégrale** (p.7–14 :
-> les trois وضعيّات استكشافيّة — غرامشي, أبيكتات, باسكال — et الأبعاد الإشكاليّة), et la
-> **نافذة سندات intégrale** (p.15–74) : les **29 سندات**, un par un, à profondeur de génération.
-> ⛔ **Ne sont PAS transcrits** : la نافذة دعائم (p.75–99), la نافذة كيفيّات التفكير (p.100–103),
-> le نصّ مطوّل de **ديكارت** — *التأمّلات الميتافيزيقيّة*, التأمّل الثاني (p.104–112) — et les
-> مختصرات (p.113).
-> Ce مبحث **n'est donc pas encore générable** : il ne figure pas dans `chapitresGeneration`.
+> ✅ **Portée : p.6–114 — le مبحث 1.1 EN ENTIER.** L'ouverture du **محور 1** (p.6), la
+> **نافذة مدخل** (p.7–14 : les trois وضعيّات استكشافيّة — غرامشي, أبيكتات, باسكال — et
+> الأبعاد الإشكاليّة), la **نافذة سندات** (p.15–74, les **29 سندات** un par un), la
+> **نافذة دعائم** (p.75–99 : 3 تحديدات مفهوميّة, 4 سياقات فكريّة, le بحث وتحقيق sur
+> مدرسة الظنّة), la **نافذة كيفيّات التفكير** (p.100–103), le **نصّ مطوّل de ديكارت** —
+> *التأمّلات الميتافيزيقيّة*, التأمّل الثاني (p.104–112) — et les **11 مختصرات** (p.113–114).
+>
+> ⛔ **Ce مبحث n'est pourtant PAS encore générable** et ne figure pas dans
+> `chapitresGeneration` : **la R-7 n'est pas faite.** Transcrit ne veut pas dire vérifié — sur
+> ce manuel, trois R-7 ont trouvé une page entière manquante, six contresens par négation et
+> plusieurs détails inventés dans des tranches que leurs transcripteurs donnaient pour sûres.
 > **Source** : manuel élève `210402` (كتاب الفلسفة — السّنة الرّابعة من التّعليم الثانوي —
 > الشّعب العلميّة, CNP).
 >
@@ -3006,6 +3010,2454 @@ l'un noir)** :
 > — **سارتر**
 
 *(Ce bloc est à recoller à la fin du fragment ch1a, sous le سند 16.)*
+
+##### § نافذة 1.1.3 — دعائم للتفكير في المسألة — p.75-99
+
+**Page d'ouverture — p.75.** Titre imprimé sur deux lignes en tête de page :
+`نافذة دعائم` / `التفكير في المسألة`. Le bandeau de la page suivante (p.76) donne la forme
+longue : **`نافذة دعائم للتفكير في المسألة`**.
+
+**Image** — grande photo encadrée, en haut à gauche : une pile de livres à couverture rouge-orangé,
+posée en équilibre torsadé sur un sol de feuillage vert, une paire de **lunettes rondes** posée sur
+le livre du dessus. **Ni légende, ni attribution.**
+
+**Encadré-citation** (cadre rose, colonne de droite), attribué sous l'encadré par un triangle noir
+`▲` : **جيل دولوز – فيلكس غاتاري**, *ما الفلسفة؟* — traduction arabe, aucune référence
+bibliographique imprimée (ni traducteur, ni éditeur, ni page).
+
+> **Thèse (reformulée, R-2)** : on peut légitimement rester platonicien, cartésien ou kantien —
+> non pour répéter ces philosophes, mais parce que leurs concepts peuvent **retrouver leur
+> efficacité au contact de nos propres problèmes** et nous inspirer les concepts qu'il nous
+> revient de créer. La meilleure façon de suivre les grands philosophes n'est donc pas de
+> redire **ce qu'ils ont dit**, mais de refaire **ce qu'ils ont fait** : créer des concepts pour
+> des problèmes qui ne cessent de changer.
+>
+> Citation courte, attribuée : « `وما هي أحسن طريقة لإتباع كبار الفلاسفة` » (Deleuze–Guattari,
+> *ما الفلسفة؟*, p.75). ⚠️ `إتباع` est imprimé avec **alif de coupure** (`إ`), pour `اتباع`.
+
+**Sommaire de la نافذة, imprimé en bas de page sous forme de diagramme** (quatre cases reliées par
+deux traits roses en croix, chaque case portant son numéro dans un carré) — **trois** entrées, pas
+quatre :
+
+| n° | Intitulé imprimé |
+| :-- | :-- |
+| 1 | `تحديدات وتمييزات مفهوميّة` |
+| 2 | `سياقات فكرية` |
+| 3 | `بحث وتحقيق` |
+
+⚠️ La case n° 1 est composée sur **deux lignes** (`تحديدات وتمييزات` / `مفهوميّة`) ; la case n° 3
+également (`بحث` / `وتحقيق`). La case 2 est écrite `سياقات فكرية` **sans شدّة sur le ي** — et le
+bandeau de section de la p.83 l'écrit **de la même façon**, `سياقات فكرية` (vérifié à 600 dpi sur
+les deux pages). La forme `سياقات فكريّة` avec شدّة, que porte la consigne de tranche, **n'est
+imprimée nulle part dans p.75-97**.
+
+---
+
+###### § 1.1.3.1 — تحديدات وتمييزات مفهوميّة — p.76-82
+
+Trois notions y sont traitées, chacune ouverte par un cartouche bleu portant le numéro, le terme
+arabe et son équivalent français dans un second cartouche bleu :
+
+| n° | Terme | Équivalent français imprimé | Pages |
+| :-- | :-- | :-- | :-- |
+| 1 | `التأويل` | `Interprétation` | p.76-78 |
+| 2 | `الزّمان` | `Le Temps` | p.79-80 |
+| 3 | `الجوهر` | `Substance` | p.81-82 |
+
+Le bandeau `تحديدات و تمييزات مفهومية:` (fond crème, colonne de droite) n'apparaît **qu'une fois**,
+p.76, en tête de la sous-section.
+
+---
+
+###### تحديد مفهومي — 1-التأويل / Interprétation — p.76-78
+
+**■ لغة** — verbatim :
+
+> التأويل مصدر من "آل أولا ومآل أي رجع عنه وارتدّ. ويُقال أول الكلام تأويلا أي قدّره وفسّره"
+> (لسان العرب، ابن منظور، ج3 ص 32). والتأويل بهذا المعنى الاشتقاقي هو "المرجع والمصير" كما جاء
+> على لسان أبي القاسم النحوي.
+
+**■ فلسفيّا** — verbatim :
+
+> التأويل عمليّة معرفيّة أو منهج يتمثّل في استيلاد المعنى الأصلي أو استرداده واسترجاعه من حيث هو
+> معنى مفترض وجوده في القول أو الفعل غير أنّه متخفّي وغير ماثل للذات المؤوّلة، يتوارى خلف ظاهر
+> النص أو موضوع التأويل، يطلبه المؤوّل أو يتمثّله ليحقّقه بما هو معنى. وقد ورد في "تعريفات
+> المغاري" أنّ التأويل "ردّ الشيء إلى الغاية المرادة منه قولا أو فعلا". أو هو "حمل الظاهر على
+> المحتمل المرجوع" (جمع الجوامع، السبكي). أما عند اللاهوتيين فهو تفسير الكتب المقدسة تفسيرا رمزيا
+> أو مجازيا يكشف عن معانيها الخفية. فإذا كانت الشريعة، كما يقول بعضهم، مشتملة على ظاهر وباطن
+> لاختلاف فطر الناس وتباين قرائحهم في التصديق كان لابد من إخراج النص من دلالته الظاهرية إلى
+> دلالته الباطنية بطريق التأويل. فالظاهر هو الصور والأمثال المضروبة للمعاني، والباطن هو المعاني
+> الخفية التي لا تنجلي إلا لأهل البرهان. والتأويل هو الطريقة المؤدية إلى رفع التعارض بين ظاهر
+> الأقاويل وباطنها.
+>
+> يحمل إذن مفهوم التأويل على معنى "الفهم" و"القراءة" من حيث هو عمليّة تفكيك للرّمز بحثا عمّا
+> يحمله من معنى. نرادف عادة اللفظ العربي "التأويل" بالعبارات الفرنسيّة : `Interprétation` -
+> `compréhension` - `herméneutique` وذلك على أساس معنى "فهم النص انطلاقا من مقاصده وعلى أساس ما
+> يريد قوله' (بول ريكور، صراع التأويل).
+
+⚠️ Le mot `déchiffrage` est imprimé **en latin, dans la marge de la colonne de droite p.76**, en
+regard de `عمليّة تفكيك للرّمز` : c'est la glose française du terme. Le paragraphe se poursuit
+**sur la colonne de gauche** de la même page (`نرادف عادة اللفظ العربي…`) — l'ordre de lecture est
+donc colonne droite → colonne gauche.
+
+⚠️ Le guillemet **fermant** de la citation de Ricœur (après `قوله`, p.76 col. gauche) est un
+**apostrophe simple `'`**, là où l'ouvrant (avant `فهم النص`) est un guillemet double `"`, et là
+où les guillemets encadrant `" التأويل "` et `"التفسير "` deux lignes plus bas sont **doubles**.
+Vérifié à 600 dpi, avec ces deux témoins doubles sur la même image.
+
+**Distinction explicite posée par le manuel — التأويل ≠ التفسير** (p.76, colonne de gauche),
+verbatim :
+
+> غير أنّنا نميّز اليوم مفهوميّا بين "التأويل" و"التفسير". فإذا كان التفسير يعني "أن نبيّن الصِلات
+> القارة بين عدد من الوقائع وأن نستنتج من ذلك أنّ الظواهر المدروسة متولّدة عنها. ذلك هو منهج
+> الفيزيائي". (ج.غ. غرانجي، العقل، ص 61)، فإنّ التّأويل أو الفهم هو "أن ننتج من جديد/ على نحو
+> حدسي، عاطفة أو انطباعا أو انفعالا" (المصدر نفسه).
+
+- Référence imprimée n° 1 : **بول ريكور**, *صراع التأويل* — sans éditeur ni page.
+- Référence imprimée n° 2 : **ج.غ. غرانجي**, *العقل*, `ص 61` — puis `(المصدر نفسه)`.
+
+**Suite du développement (p.76 fin de colonne gauche → p.77)** — mouvement reformulé :
+
+1. Définir le التأويل / الفهم comme « `حدس لمعنى` » s'accorde avec sa valeur de **méthode des
+   sciences humaines**, sens forgé par le pionnier de l'herméneutique contemporaine, l'historien
+   et philosophe allemand **ولهايم دلتاي**.
+2. D'où : le sens du concept de التأويل **varie** selon les contextes théoriques et culturels,
+   selon les transformations de l'expérience historique, et selon la relation au texte, à son
+   producteur et à ses conditions de production.
+3. Le tournant majeur de ce parcours est le **المنعطف الفرويدي** (imprimé en gras) : il donne au
+   التأويل, dans le cadre de la psychanalyse, le statut de **méthode** par laquelle l'analyste
+   comprend le sens des faits psychiques, normaux comme pathologiques.
+4. Chez **فرويد**, التأويل est défini (citation imprimée entre guillemets) comme la mise en mots
+   d'une relation, dans le sujet, entre un affect éprouvé **au présent** et une expérience vécue
+   **au passé**. Cela suppose d'abord que le sujet ait cette capacité d'affect — supposition qui
+   n'a de sens précis que fondée sur une théorie du rapport passé/présent dans le vécu du sujet.
+5. **p.77** — l'originalité de ce التأويل freudien apparaît dans son interprétation du **rêve** :
+   la structure du rêve est **double** (`ظاهر وباطن`) ; l'interpréter, c'est décoder ses symboles
+   (le rêve manifeste) et dégager le sens latent, **rapporté à une expérience passée du rêveur**.
+   Interpréter le rêve, c'est donc **relier** ce qu'on y voit à une expérience antérieure.
+
+**Le relais Foucault (p.77-78)** — la p.77 enchaîne sur ce que **فوكو** appelle aujourd'hui
+`"التأويليّة"`, et sur sa thèse imprimée **en gras** :
+
+> `وقد أكّد أن كل من` **`ماركس ونيتشه وفرويد غيّروا طبيعة الدليل وبدلوا الكيفية التي كان يؤول بها`**
+
+Suit une longue citation de Foucault en traduction arabe (p.77 col. droite → p.77 col. gauche →
+p.78 col. droite, sans coupure marquée). **R-2 : non recopiée.** Mouvement reformulé :
+
+1. **Avant** : signes et indices se distribuaient de façon **homogène** dans un espace lui-même
+   homogène, et suivant **toutes** les directions de cet espace — les signes de la terre
+   renvoyaient au ciel, mais tout autant au monde souterrain ; de l'homme à l'animal, de l'animal
+   au végétal, et réciproquement.
+2. **À partir du XIXe siècle**, avec Marx, Nietzsche et Freud, les signes s'étagent dans un espace
+   **inégal**, selon une dimension que le manuel nomme `بعد الأعماق` — à condition, précise le
+   texte, de n'y pas entendre une dimension **intérieure** mais **`بعد العمق الخارجي`**.
+3. Conséquence : l'interprète doit descendre le long de la verticale pour montrer que cette
+   prétendue profondeur intérieure n'est, contrairement à ce qu'elle prétend, **qu'une surface
+   repliée**. Plus le monde nous paraît profond, plus on découvre que ce qui faisait les
+   profondeurs de l'homme **n'était que surface**.
+4. Le التأويل cesse d'être **dévoilement d'une vérité** : il devient une tâche **sans fin**. Il ne
+   s'achève jamais et reste indéfiniment révisable.
+5. **Conséquence radicale (p.77 col. gauche)** : aucun objet d'interprétation qui n'ait **déjà été
+   interprété** ; la relation d'interprétation est autant **violence** qu'élucidation ; il n'y a
+   **pas de signifié originel**, et les mots eux-mêmes ne sont que des interprétations. On
+   n'interprète pas parce qu'il existerait des signes premiers obscurs, mais parce que tout ce qui
+   parle **dissimule un tissu d'interprétations**. Le التأويل est donc **au fond du langage**, il
+   lui est antérieur : il n'est pas venu après coup se glisser derrière les mots, il les a
+   **engendrés**. Les signes sont des interprétations qui **tentent de se justifier**, et non
+   l'inverse.
+
+Citations courtes autorisées (≤ 15 mots), attribuées :
+
+- « `إنما أصبح مهمة لا نهاية لها` » — Foucault cité p.77.
+- « `فمهما أغرقنا في التأويل تظل النقطة النهائية للتأويل دوما نقطة تقريبية` » — Foucault, p.77.
+
+**Les deux traits de la lecture foucaldienne, imprimés en deux puces `■` (p.77 col. gauche →
+p.78)** — le manuel les annonce ainsi : `إن الحديث عن التأويل في الفلسفة المعاصرة وبحسب قراءة فوكو
+يقتضي استحضار السمتين التاليتين:`
+
+1. **`أولاهما`** — l'interprétation porte toujours sur **l'inconnu qui a interprété** : on
+   n'interprète pas le sens logé dans le signifié, on interprète **celui qui a interprété**, « le
+   principe de l'interprétation n'est autre que l'interprétant ».
+2. **`أما السمة الثانية`** — l'interprétation est toujours **interprétation d'elle-même** et ne
+   peut que s'interpréter indéfiniment. Face au temps des signes (temps d'un **terme échu**) et au
+   temps de la dialectique (temps **linéaire** malgré tout), le temps de l'interprétation est
+   **circulaire** : il est contraint de repasser par le point d'où il est parti.
+3. **Suite p.78 (même bloc bleu)** : d'où le **seul danger** qui menace l'interprétation — croire
+   qu'il existe des signes dotés d'une existence originelle véritable, comme s'ils étaient des
+   traces cohérentes, saillantes, nettes, ordonnées. À l'inverse, ce qui garantit la **vie** de
+   l'interprétation est de **ne croire qu'à l'existence d'interprétations** — ce qui suppose
+   d'admettre que le التأويل contemporain **ne suppose aucun sens caché tapi dans l'origine** :
+   il se meut « `في فضاء بلا عمق` ».
+
+⚠️ **Point de sens à ne pas inverser** : la phrase `الخطر الوحيد الذي يتهدد التأويل هو أن نؤمن
+بوجود علامات تتمتع بوجود أصلي حقيقي` énonce **le danger**, c'est-à-dire la thèse que le texte
+**rejette** — non la thèse qu'il défend.
+
+**■ قيل في التأويل** (p.78, colonne de droite, bas) — **7 auteurs**, comptés :
+
+| n° | Auteur (tel qu'imprimé) | Teneur |
+| :-- | :-- | :-- |
+| 1 | **الجرجاني** | Le التأويل *في الشرع* : détourner le mot de son sens apparent vers un sens qu'il peut recevoir, à condition que ce sens soit conforme au Coran et à la Sunna. Exemple imprimé : `يخرج الحي من الميت` — entendre la sortie de l'oiseau hors de l'œuf, c'est du **تفسير** ; entendre la sortie du croyant hors de l'incroyant, ou du savant hors de l'ignorant, c'est du **تأويل**. |
+| 2 | **ابن رشد** | Faire passer la signification du mot du sens **propre** au sens **figuré**, sans contrevenir à l'usage de la langue arabe en fait de métonymie : nommer une chose par ce qui lui ressemble, par sa cause, sa conséquence, ce qui l'accompagne, etc. |
+| 3 | **لييبنتز** | Le التأويل est « `مرادف للاستقراء` » : recherche des causes des choses pour remonter jusqu'à la **cause première**, qui est Dieu ; ce que le philosophe nomme induction, le théologien le nomme تأويل. Le but des deux voies est identique : connaître l'intérieur des choses. |
+| 4 | **ريكور** | « `التأويل فهم النص انطلاقا من مقاصده وعلى أساس ما يريد قوله.` » (13 mots — verbatim) |
+| 5 | **ديلتاي** | « `نسمي تأويلا فن فهم التجليات المكتوبة عن الحياة` » (verbatim, 8 mots ; **sans point final** dans la source) |
+| 6 | **نيتشه** | « `المعرفة تؤوّل، تدخل معنى ولا تفسّر.` » (verbatim, 6 mots) |
+| 7 | **فرويد** | « `التأويل هو إيجاد معنى كامن.` » (verbatim, 5 mots) |
+
+⚠️ **Deux graphies pour Dilthey dans la même notion** : `ولهايم دلتاي` (p.76, colonne de gauche,
+en gras) et **`ديلتاي`** (p.78, bloc `قيل في التأويل`). Vérifié à 600 dpi.
+
+**Encadré `مفاهيم مجاورة` / `مفاهيم مناقضة`** (p.78, haut de la colonne de gauche, fond vert
+pâle ; deux cadres blancs emboîtés, le cadre `مجاورة` à droite, le cadre `مناقضة` à gauche et
+débordant vers le haut) — **verbatim, comptés à 600 dpi** :
+
+- **مفاهيم مجاورة (8)** : `الفهم` · `التحليل` · `الرمز` · `المجاز` · `التأمّل` · `الهرمونيتيقا` ·
+  `التأصيل` · `التعبير`
+- **مفاهيم مناقضة (10)** : `التفسير` · `المعرفة` · `التعريف` · `الحد` · `الإختزال` · `الإستقراء` ·
+  `التجريب` · `الإدراك الحسي` · `التعمية` · `التلغيز`
+
+⚠️ `الإختزال` et `الإستقراء` sont imprimés avec **hamza sur l'alif** (`إ`), là où l'orthographe
+attendue est `الاختزال` / `الاستقراء`. Vérifié à 600 dpi.
+
+**Image p.78** (colonne de gauche, sous l'encadré) : photographie encadrée — une **serrure**
+géante découpée dans un fond noir étoilé, laissant voir un ciel bleu nuageux et un faisceau de
+lumière ; un panneau bleu translucide en oblique. **Ni légende, ni attribution.**
+
+---
+
+###### تحديد مفهومي — 2-الزّمان / Le Temps — p.79-80
+
+**Tête de section (p.79)** — le manuel pose d'emblée un **triplet** de notions, imprimé en bleu :
+
+> `الزمان، الديمومة، الصيرورة`: ثلاثة معاني مترابطة الدّلالة حتّى أنّ الواحد منها يستوجب استحضار
+> المعنيين الآخرين:
+
+**■ لغة** — verbatim :
+
+> `الزَّمَنُ والزَّمَانُ`: اسم لقليل الوقت وكثيره (لسان العرب، ابن منظور).
+
+**■ في أساطير اليونان** — verbatim :
+
+> "**كرونوس**" `Cronos` هو الإله الذي يتمّم الأشياء ويقودها إلى منتهاها.
+
+**■ اصطلاحا** — verbatim :
+
+> تغيّر متواصل به يغدو الحاضر ماضيا، أو حقبة تمتدّ من حدث سابق إلى حدث لاحق، أو الوقت كثيره
+> وقليله وهو المدّة الواقعة بين حدثين.
+
+**■ فلسفيّا** — verbatim :
+
+> هو بنية لا محدودة مماثلة للمكان الذي يمكن أن تجري فيه الأحداث حيث يسجّل كلّ منها تاريخا، لكنّه
+> قد يكون هو بذاته معطى بكامله للفكر وبلا تجربة سواء كان موجودا بذاته (**نيوتن وكلارك**) أو لم
+> يكن موجودا إلاّ في الفكر (**لييبنتز وكانط**).
+
+**Développement de la p.79** — mouvement reformulé, en respectant les distinctions imprimées :
+
+1. **Définition de travail** : le الزّمان est l'intervalle entre deux événements, ou un changement
+   continu suivant un **tracé linéaire** par lequel le présent se change en passé et le futur en
+   présent.
+2. **كانط** fait du الزمان, avec le المكان, un **intermédiaire** (`وسيطا`) et le tient pour
+   **condition universelle de toute connaissance** (`شرطا كونيّا لكلّ معرفة`).
+3. **Objection posée par le manuel** : ce sens ne recouvre pas l'usage **instrumental** du temps,
+   où mesurer le temps revient à le déterminer **par l'espace** — la distance parcourue par un
+   mobile d'un mouvement régulier.
+4. Les développements ultérieurs de la logique et des sciences contemporaines ont montré qu'il
+   **n'est pas possible** de penser le temps **indépendamment du mode de vie** ; ce qui ne veut
+   pas dire qu'on ne puisse le tenir que dans un cadre historique et civilisationnel.
+5. C'est ce qui a conduit **برغسون** à tenir le temps que nous mesurons pour un temps mesuré
+   **par comparaison avec** le `الزمن الحقيقي`, lequel coïncide avec `الديمومة` et `المعيش`, et
+   que la conscience saisit **immédiatement**, dans sa qualité propre et dans sa continuité ; le
+   fragmenter en instants séparés est **arbitraire** (`تعسّف`).
+6. **Thèse de برغسون, imprimée en gras** : `الزمن المعيش` est, du fait de la conscience,
+   **entièrement distinct** du `زمن الفيزيائيين`.
+7. Cette idée ouvre une vue **phénoménologique** du temps : la **فينومينولوجيا** contemporaine
+   rattache le temps à l'**activité de la conscience**. Le temps vécu par le sujet n'est pas un
+   temps divisible en secondes, minutes et heures, ni la somme d'instants séparés ; ce n'est pas
+   davantage une chose susceptible d'observation objective : **`إنّه نموّ الديمومة`** (imprimé en
+   gras) qui **fait un** avec l'existence — d'où l'existence, dans la réalité, d'**autant de
+   temps que d'existants**.
+8. Cette acception phénoménologique du temps sert de **tentative de fondation de la `الحرّيّة`**
+   à partir de l'idée de **projet** (**سارتر**), et de **justification de l'angoisse** (`قلق`) de
+   l'homme comme être-pour-la-**mort** (**هيدغر ونيتشه**).
+9. **Renvoi bibliographique imprimé** : `لقد لاحظ هيدغر في "الكينونة والزمن" (1927)` — l'homme,
+   **jeté** dans l'existence sans l'avoir voulu et sans pouvoir y revenir, confère à l'être le
+   sens qu'il juge digne de lui. C'est dans la **souffrance** et dans la compréhension du soi que
+   l'homme se détermine, puisque son existence **anéantit à chaque instant** dans la mort, à
+   laquelle nul autre être n'est soumis ; et c'est là que l'homme vit sa temporalité — ou plutôt
+   **une autre temporalité** (`زمنيّة أخرى` / `محدوديّة زمنيّة`).
+
+**■ الزمن بالديمومة** (p.79, second bloc `■` de la colonne de gauche) — verbatim :
+
+> ويتّصل مفهوم `الزمن بالديمومة` على اعتبار أنّ الديمومة تعني، اصطلاحا، الجزء من الزمن المتناهي
+> المنظور إليه في كليّته. كما تُطلق الديمومة على الزمن المحدود في مقابل الدهر أو هي جزء من الزمن
+> المطلق فتكون حينئذ زمان فعل أو زمانا فاصلا بين فعلين. وقد تعني، فلسفيّا، الزمن النفسي الداخلي
+> كما هو معطى مباشر في الوجدان، أي `الزمن المعيش` أو المشخّص بخلاف الزمن الرياضي المنقسم إلى
+> وحدات متساوية.
+
+**Encadré-citation en tête de la p.80** (texte bleu, sans cadre) — attribué `( برغسون )`,
+sans référence d'ouvrage. **R-2**, thèse reformulée : la **ديمومة** est la succession même, telle
+qu'elle est **immédiatement sentie dans la conscience** ; le **زمن**, lui, est l'idée
+**mathématique** que nous formons à partir du زمان pour raisonner et communiquer avec nos
+semblables, en **traduisant le temps en images spatiales**.
+Citation courte, attribuée : « `الديمومة هي سمة التعاقب بالذات` » (برغسون, p.80).
+
+**Image p.80** (haut de la colonne de droite) : photographie encadrée d'une **horloge
+astronomique** ancienne, cadran doré et bleu, sculptures en façade. **Ni légende, ni attribution.**
+
+**■ الزمن بالصيرورة** (p.80, colonne de droite) — verbatim :
+
+> ويتصل مفهوم `الزمن بالصيرورة` أيضا. وتفيد الصيرورة معاني التغيّر والتحرّك والتحوّل، ويمكن
+> تعريفها، اصطلاحا، بما هي انتقال الشيء من حالة إلى أخرى وهو انتقال متزمّن بالضرورة. كما تدلّ
+> الصيرورة، فلسفيّا، على التبدّل بما هو انتقال من صورة إلى أخرى أو من حال إلى حال. كما تحيل
+> الصيرورة على حال متوسّطة بين الوجود والعدم، وتُفهم على أنّها نتاج صراع بين أضداد وهو المبدأ
+> الذي يفسّر ظاهرة الحركة (**هيغل**).
+
+**Distinction explicite — الصيرورة ≠ المصير** (p.80), verbatim :
+
+> والفــــارق بين الصيرورة `والمصير` أنّ الصيرورة حركة وانتقال وتغيّر في حين أنّ المصير منتهى
+> الأمر وعاقبته.
+
+**■ قيل في الزّمان** (p.80) — **6 auteurs**, comptés (le bloc court sur les deux colonnes : 4
+auteurs en colonne de droite, puis la fin de la citation de لييبنتز et 2 auteurs en colonne de
+gauche) :
+
+| n° | Auteur (tel qu'imprimé) | Teneur |
+| :-- | :-- | :-- |
+| 1 | **أرسطو** | Le زمان est la **mesure du mouvement de la sphère suprême** (`الفلك الأعظم`), parce que le temps varie en plus et en moins ; il est donc mesure d'une forme instable, à savoir le mouvement. |
+| 2 | **الجرجاني** | Le زمان est, chez les philosophes, la mesure du mouvement de la **sphère de l'Atlas** (`الفلك الأطلس`) ; chez les théologiens (المتكلّمين), il est un **renouvelé connu** dont on estime la mesure par un autre, supposé. |
+| 3 | **الرّازي** | Le زمان, comme le mouvement, a **deux sens** : l'un existe **au dehors**, non divisé, et correspond au mouvement ; l'autre est une chose **imaginée**, sans existence au dehors. |
+| 4 | **لييبنتز** | Le مكان est **relatif** au même titre que le زمان : « `فالمكان هو نظام تواجد الأشياء، والزمان هو نظام تعاقبها` » (verbatim, 10 mots) |
+| 5 | **كانط** | L'idée de زمان **n'est pas** une donnée sensible : ce sont les sens qui la **présupposent**, car ce qu'ils perçoivent — instantanéité et succession — est impensable sans l'idée de زمان. Et « `ليس التعاقب هو ما يولّد فكرة الزّمان، بل هو ما يفترضها` ». |
+| 6 | **باشلار** | Le زمان n'a **qu'une seule réalité** : celle de l'**instant** ; il est enfermé dans le maintenant et **suspendu entre deux néants** (`معلّق بين عدمين اثنين`). |
+
+⚠️ **Négation à ne pas perdre (كانط, p.80)** : `ليست فكرة الزمان معطى حسيا` et `وليس التعاقب هو ما
+يولّد فكرة الزّمان، بل هو ما يفترضها` — deux négations, l'argument s'inverse si l'une tombe.
+
+**■ قيل في الديمومة** (p.80, colonne de gauche) — **4 auteurs**, comptés :
+
+| n° | Auteur | Teneur (verbatim si ≤ 15 mots) |
+| :-- | :-- | :-- |
+| 1 | **برغسون** | « `الديمومة هي أساس استمرار ما لم يعد موجودا فيما هو موجود` » |
+| 2 | **سبينوزا** | « `الديمومة هي الاستمرار اللا محدود للوجود` » |
+| 3 | **برانشفيك** | « `إنّ الزمان هو مقياس الديمومة` » |
+| 4 | **لييبنتز** | « `الديمومة هيّ نظام التعاقب بين الإدراكات الحقيقية والواقعيّة` » |
+
+**■ قيل في الصيرورة** (p.80, colonne de gauche, bas) — **2 auteurs**, comptés :
+
+| n° | Auteur | Teneur |
+| :-- | :-- | :-- |
+| 1 | **هيغل** | La صيرورة est l'**idée concrète première**, donc le premier concept, tandis que l'être et le néant sont des « `المجرّدات الجوفاء` » (abstractions vides). |
+| 2 | **برغسون** | L'existence, pour l'être conscient, se **représente dans le changement**, le changement dans la **maturation**, et la maturation dans une **création de soi continue**. |
+
+**Encadré `مفاهيم مجاورة` / `مفاهيم مناقضة`** (p.80, bas de la colonne de gauche, fond vert
+pâle) — verbatim, comptés :
+
+- **مفاهيم مجاورة (6)** : `الصيرورة` · `الديمومة` · `الزمنيّة` · `التاريخ` · `اللحظة` · `الحركة`
+- **مفاهيم مناقضة (5)** : `الأبديّة` · `الثبات` · `العدم` · `الدهر` · `السرمديّة`
+
+⚠️ **Piège de mise en page, tranché à 600 dpi** : les deux cadres blancs sont **emboîtés en
+escalier** et chaque liste est composée **en zigzag sur deux colonnes internes**, si bien qu'à 150
+dpi `الدهر` et `الثبات` paraissent appartenir au cadre `مجاورة`. La verticale du cadre de droite
+passe **à gauche** de ces deux mots : ils sont dans `مناقضة`. Cohérent avec le corps du texte, qui
+oppose `الديمومة` à `الدهر` (p.79 : `الزمن المحدود في مقابل الدهر`).
+
+---
+
+###### تحديد مفهومي — 3-الجوهر / Substance — p.81-82
+
+**■ لغة** — verbatim :
+
+> جوهر الشيء حقيقته أو ماهيته أو قوامه، وجوهر الخطاب لبه أو فحواه.
+
+**■ فلسفيّا** — verbatim :
+
+> يطلق `الجوهر` عند الفلاسفة على معان: منها الموجود القائم بنفسه حادثا كان أو قديما، ويقابله
+> `العرض` القابلة الذات لتوارد الصفات المتضادة عليها، ومنها `الماهية` التي إذا وجدت في الأعيان
+> كانت لا في موضوع، ومنها الموجود الغني عن محل يحل فيه.
+>
+> `الجوهر` إذن هو الموجود لا في موضوع ويقابله **العرض** بمعنى الموجود في موضوع، أي في محل مقوم
+> لما حل فيه. فإن كان الجوهر حالا في جوهر آخر كان صورة، إمّا جسمية وإمّا نوعية، وإن كان محلا
+> لجوهر آخر كان `هيولى`، وإن كان مركبا منهما كان `جسما`، وإن لم يكن كذلك، أي لا حالا ولا محلا
+> ولا مركبا منهما كان `نفسا أو عقلا`.
+
+**Le contre-terme — العرض** (p.81, colonne de droite), verbatim :
+
+> `العرض`، من عرض الشيء ظهر وبدا ولم يدم. والعرب تُطلق لفظ العرض على عدة معان: فهو يدل على الأمر
+> الذي يعرض للمرء من حيث لم يحتسبه، أو على ما يثبت ولا يدوم أو على ما يتصل بغيره ويقوم به أو على
+> ما يكثر ويقل من متاع الدنيا.
+>
+> **العرض** فلسفيا هو ما لا يقوم بذاته وهو الحالّ في موضوع، ويعد العرض اسما مشتركا، إذ يقال لكل
+> موجود في محل، ولكل موجود في موضوع، كما يقال على المعنى الكلي المفرد المحمول على كثيرين حملا
+> غير مقوم، أو على معنى يحمل على الشيء لأجل وجوده في آخر مفارق له.
+>
+> يُقال العرض إذن على ما ليس الماهية، وهو ما لا يدخل في تقويم طبيعة الشيء أو تقويم ذاته، كالقيام
+> والقعود للإنسان، فهما لا يدخلان في تقويم ماهيته.
+
+**Distinction explicite — الجوهر ≠ العرض** (p.81, colonne de gauche), verbatim :
+
+> كما أن العرض نقيض الجوهر. لأن الجوهر هو ما يقوم بذاته، على حين أن العرض هو الذي يفتقر إلى
+> غيره، فالجسم جوهر يقوم بذاته، أما اللون فهو عرض، لأنه لا قيام له إلا بالجسم. وكل ما يعرض في
+> الجوهر من لون، وطعم، وذوق، ولمس، وغيره، فهو عرض لاستحالة قيامه بذاته.
+
+**Quatre lectures doctrinales du الجوهر, dans l'ordre imprimé (p.81 col. gauche → p.82 col. droite)** :
+
+1. **الديكارتية** (imprimé en gras) — distinction **الجوهر الأول / الجوهر الثاني**. Le premier est
+   l'être singulier en tant que **sujet immédiat** de ses attributs, positifs ou négatifs. Le
+   second est ce qui peut être **sujet d'une proposition** — comme l'homme, le cheval, le fer —
+   et les autres universaux : ceux-là ne sont dits « substances » que **par analogie**, et le nom
+   de `الجواهر الثواني` ne leur est appliqué que **par comparaison avec la substance première**.
+2. **Le الجوهر comme ce qui subsiste par soi et se perçoit par soi** (`قائم بذاته والمدرك لذاته`).
+   Ce sens tient à **deux propositions** imprimées comme telles : (i) l'existence de la substance
+   **n'a besoin de rien d'autre** pour être ; (ii) la substance **n'a besoin d'aucun
+   intermédiaire** pour être perçue — d'où l'**impossibilité d'une pluralité de substances**,
+   comme dans le **monisme spinoziste** (`مذهب الواحدية السبينوزية`).
+3. **الكانطية** (imprimé en gras) — le الجوهر est la **première des catégories de la relation**
+   (`مقولات الإضافة`), représentation *a priori* née de la forme du **jugement catégorique** en
+   tant qu'attribution ou retrait d'un prédicat à un sujet. Les catégories de la relation naissent
+   de l'élucidation du rapport sujet/prédicat — rapport entre الجوهر et العرض — dont la forme est
+   la **permanence de la quantité de matière**. Et c'est **l'expérience seule** qui ouvre le champ
+   d'application de la catégorie de substance, là où elle permet de découvrir la permanence de
+   certaines choses présentes à l'esprit.
+4. **الظواهريون** (imprimé en gras, p.81 fin → p.82 début) — ils **invalident** le sens de الجوهر
+   et tiennent le sujet porteur des attributs pour **rien d'autre que ces attributs eux-mêmes**.
+
+**Les deux principes, imprimés p.82 (colonne de droite)** — verbatim :
+
+> ومبدأ الجوهر هو القول أن لكل صفة جوهرا يحملها. ومبدأ دوام الجوهر هو القول أن وراء كل تغير شيئا
+> ثابتا لا تزيد كميته في الطبيعة و لا تنقص.
+
+**Doctrine et dérivés** (p.82), verbatim :
+
+> `والجوهرية` مذهب من يقول بوجود الجوهر أي الشيء القائم بنفسه وهي ضد الظواهرية. والجوهري هو
+> المنسوب إلى الجوهر أو المقوم له، كما في قولنا `الصورة الجوهرية`، وللصورة الجوهرية معنيان:
+> أحدهما الطبيعة المشتركة بين أفراد النوع الواحد من جهة ما هو قائم بنفسه، مستقل عن الأفراد
+> المندرجين فيه، وهذه الصورة إما أن تكون تامة كالصورة التي للإنسان، أو غير تامة كالصورة التي
+> للجنين قبل حدوث النفس الناطقة فيه. أما المعنى الثاني فيتصل بطبيعة الأشياء المفردة من حيث أنها
+> ذات وحدة حقيقية مؤلفة من مجموع الخواص المعقولة. والجوهرية أيضا اسم مجرد دال على كيفية وجود
+> الجوهر من حيث هو جوهر.
+
+**■ قيل في الجوهر والعرض** (p.82) — **5 entrées d'auteur**, comptées ; **ابن سينا** en porte
+**deux** citations distinctes, séparées, la seconde sans nom répété :
+
+| n° | Auteur (tel qu'imprimé) | Teneur |
+| :-- | :-- | :-- |
+| 1 | **أرسطو** | La substance est l'être **individuel**, en tant qu'il est immédiat et se distingue des attributs qu'on lui rapporte ou qu'on lui refuse ; elle n'est elle-même **attribut d'aucun sujet ni d'aucun agent**. |
+| 2 | **الخوارزمي** | « `العرض هو ما يتميز به الشيء عن الشيء لا في ذاته، كالبياض، والسواد، والحرارة، والبرودة` » |
+| 3 | **ابن سينا** (1) | « `الجوهر... هو كل ذات وجوده ليس في موضوع` » (verbatim, 8 mots ; **trois** points de suspension après `الجوهر`, vérifié à 600 dpi) |
+| 4 | **[ابن سينا] (2)** | « `كل ذات لم يكن في موضوع فهو جوهر، وكل ذات قوامها في موضوع فهي عرض` » — imprimé **sans nom d'auteur**, à la suite immédiate du précédent. |
+| 5 | **ديكارت** | « `هو الشيء الدائم الثابت الذي يقبل توارد الصفات المتضادة عليه، من دون أن يتغير` » — ⚠️ le nom est imprimé `ديكارت:"`, **guillemet ouvrant collé aux deux-points et composé dans la même couleur/graisse que le nom** ; ailleurs dans le bloc le guillemet suit une espace et reste noir. |
+| 6 | **لييبنتز** | La **monade** : substance **simple** qui entre dans la composition des composés ; « simple » signifiant qu'elle **ne se divise pas**, qu'elle n'a **pas de parties** et que ni l'étendue, ni la figure, ni la divisibilité n'y sont possibles. |
+
+⚠️ **Décompte** : 6 blocs de citation, **5 noms d'auteur imprimés**. Le 4ᵉ bloc est une seconde
+citation d'ابن سينا laissée sans nom. Vérifié à 600 dpi.
+
+**Encadré `مفاهيم مجاورة` / `مفاهيم مناقضة`** (p.82, haut de la colonne de gauche, fond vert
+pâle) — verbatim, comptés :
+
+- **مفاهيم مجاورة (3)** : `الماهيّة` · `الذات` · `الموجود بذاته`
+- **مفاهيم مناقضة (3)** : `العرض` · `المحمول` · `الكيفيّة`
+
+⚠️ Même piège d'emboîtement qu'à la p.80 : à 150 dpi `المحمول` semble tomber dans le cadre
+`مجاورة`, aligné sur `الذات`. À 600 dpi la verticale du cadre de droite passe **à droite** de
+`المحمول` : il est dans `مناقضة`. Cohérent avec le corps du texte, qui construit le الجوهر contre
+le **prédicat** (p.81, bloc `الكانطية` : `النسبة بين الموضوع والمحمول، وهي النسبة بين الجوهر
+والعرض`).
+
+**Image p.82** (colonne de gauche, milieu) : photographie encadrée — une femme de profil devant un
+store à lamelles, tenant un objet orangé. **Ni légende, ni attribution.**
+
+**Encadré `* لمزيد التعمّق`** (p.82, colonne de gauche) — trois blocs de liens web, chacun en
+regard d'une étiquette blanche sur bandeau bleu vertical portant le nom de la notion
+(`التأويل`, `الزمن`, `الجوهر`). ⚠️ L'étiquette de la 2ᵉ notion porte **`الزمن`**, alors que le
+titre de la section p.79 porte **`الزّمان`**. Vérifié à 600 dpi.
+
+**Bloc `التأويل` — 7 liens, verbatim (600 dpi)** :
+
+```
+www.mapageweb.umontreal.ca/grondinj/pdf/heidegger
+www.psy-desir.com/biblio/spip.php?
+www.diocese-poitiers.com.fr/documents/t-loi.html
+www.amazon.fr/Herméneutique-science-interprétations-interprétation
+www.philagora.net/philo-fac/ricoeur.htm
+www.centresevres.com/XHTML/cours_detail
+www.maphilo.net/interpretation-cours.html
+```
+
+**Bloc `الزمن` — 7 liens, verbatim (600 dpi)** :
+
+```
+www.ac-reunion.fr/pedagogie/philo/
+www.amazon.fr/temps-Elements-dune-philosophie-vivre/
+www.philagora.net/philo-poche/temps
+www.emagister.fr/cours_philosophie_temps
+www.ac-toulouse.fr/philosophie/revphi/tempsphilo.
+www.philocours.com/cours/cours-temps.html
+www.philosophie.ac-versailles.fr/enseignement/Ex-Bergson-temps.pd
+```
+
+**Bloc `الجوهر` — 6 liens, verbatim (600 dpi)** :
+
+```
+www.cerphi.net/lec/subst.htm
+www.metaphilo.lautre.net/wphilo.3htm
+www.cosmovisions.com/philosophie.20htm
+www.philoplus.com/philos/arist.2php
+www.fabula.org/actualites/article.94961php
+www.philosophie-en-ligne.com/page.19htm
+```
+
+⚠️ Dans le 3ᵉ bloc, la séquence `philosophie.` de `www.cosmovisions.com/philosophie.20htm` est
+imprimée **en gras**, le reste de la ligne non. Vérifié à 600 dpi.
+
+---
+
+###### § 1.1.3.2 — سياقات فكرية — p.83-97
+
+Bandeau imprimé (fond crème, colonne de droite, p.83) : **`سياقات فكرية`** — *sans* شدّة, comme la
+case 2 du diagramme de la p.75. Chaque سياق est ouvert par un cartouche bleu numéroté portant le
+terme arabe et son équivalent français.
+
+| n° | Terme | Équivalent français imprimé | Pages |
+| :-- | :-- | :-- | :-- |
+| 1 | `التحليل النفسي` | `Psychanalyse` | p.83-87 |
+| 2 | `الفينومينولوجيا` | `Phénoménologie` | p.87-90 |
+| 3 | `الوجوديّة` | *(voir plus bas)* | p.91-93 |
+| 4 | `فلسفة التاريخ` | *(voir plus bas)* | p.94-97 |
+
+⚠️ **La consigne annonçait p.83-97 pour quatre سياقات ; les frontières réelles ne tombent pas sur
+les pages annoncées.** Le سياق 1 déborde jusqu'au **haut de la p.87** (son encadré
+`* لمزيد التعمّق` s'y achève), et le cartouche de la 2ᵉ notion s'ouvre **au milieu de la p.87**.
+
+Les quatre سياقات suivent un même gabarit, qui n'est pas celui des تحديدات مفهوميّة :
+
+`* التعريف` → `* الجهاز المفهومي` → `* تنبيهات` → `* لمزيد التعمّق`.
+
+---
+
+###### سياق فكري — 1-التحليل النفسي / Psychanalyse — p.83-87
+
+**`* التعريف`**
+
+**لغة** — verbatim :
+
+> أخذت عبارة "تحليل نفسي" عن الكلمة اليونانية `Psuch` وتعني "النفس" والكلمة `Analusis` وتعني
+> "التحليل".
+
+⚠️ Les deux mots grecs sont translittérés `Psuch` et `Analusis` — graphies à recopier telles
+quelles, vérifiées à 600 dpi.
+
+**Suite du التعريف** — verbatim :
+
+> يُعدّ من أهم اكتشافات القرن العشرين في مجال العلوم الإنسانية ولقي معارضة عنيفة من أوساط عديدة
+> لما تضمّنه من جدّة تتعارض مع ما هو سائد حتى لدى العلماء. **لا يعتبر التحليل النفسي علما نظريا
+> ولا هو من المذاهب الفلسفية**، بل هو طريقة اعتمدها **فرويد** (1856 – 1939) لعلاج أمراض نفسية
+> مستعصية كالعصاب والذهان وما يصاحبها من أعراض هيستيرية. فمن حيث النشأة، ظهرت هذه الطريقة في مجال
+> الطب وتبلورت انطلاقا من معاينة فرويد لحالات مرضية اقتضى علاجها الاهتمام بدراسة الظواهر
+> **اللاواعية أي التي تفلت من الوعي**.
+
+⚠️ **Double négation à ne pas perdre** : `لا يعتبر … علما نظريا ولا هو من المذاهب الفلسفية، بل هو
+طريقة`. Le manuel **refuse** au التحليل النفسي le statut de science théorique **et** celui de
+doctrine philosophique : il n'en fait qu'une **méthode** (`طريقة`) thérapeutique. Une thèse
+reformulée qui en ferait « une science » ou « une philosophie » dirait l'inverse de la page.
+
+**Deux citations de فرويد imprimées dans le التعريف, avec leurs références** :
+
+1. Thèse (reformulée, R-2) : ce qui fait la spécificité de la psychanalyse **en tant que science**
+   n'est pas la matière sur laquelle elle travaille, mais la **technique** qu'elle emploie ; son
+   unique but et son unique apport tiennent au **dévoilement de l'inconscient dans la vie
+   psychique**.
+   Citation courte : « `إن هدفه الوحيد وإسهامه الوحيد يتمثلان في كشف اللاوعي في الحياة النفسية` »
+   (فرويد, p.83).
+   **Référence imprimée, verbatim** : `( مقدمة للتحليل النفسي، ج 3. ص 416. المكتبة العلمية )`
+2. Thèse : est appelé psychanalyse le travail qui **conduit à la conscience du malade** les
+   éléments psychiques refoulés.
+   **Référence imprimée, verbatim** : `( تقنية التحليل النفسي، في فرويد، التحليل النفسي: نصوص
+   مختارة، ص 10. )`
+
+**Les quatre niveaux du التحليل النفسي** — le manuel les annonce
+(`تدفعنا إلى أن نميّز فيه بين أربعة مستويات:`) et les numérote `1` à `4`, colonne de gauche p.83.
+**4 niveaux, comptés** :
+
+| n° | Niveau (verbatim de l'amorce) | Teneur |
+| :-- | :-- | :-- |
+| 1 | `تقنية تقصي جملة من الظواهر المختلفة (كلام، حركات، أحلام...)` | Phénomènes pouvant survenir sous la dictée de l'`اللاوعي` ; on y recourt à la technique du `التداعي الحر للأفكار`, par laquelle le sujet met au jour les structures psychiques de l'inconscient. |
+| 2 | `طريقة في العلاج النفسي تستهدف شفاء العصابي` | Par le retour à la conscience de ce qui avait été refoulé dans l'`اللاوعي`. Le fondement de cette thérapeutique est **`الوعي باللاوعي`**. |
+| 3 | `نقصد بالتحليل النفسي مجموع النظرية النفسية والنفسية المرضية` | Et les données théoriques fondamentales tirées des procédés d'investigation et de traitement employés. |
+| 4 | `يتجاوز التحليل النفسي المجال المرضي` | Il propose une conception générale de l'homme, qui entre en conflit — plus ou moins fortement — avec les `"فلسفات الوعي"`, lesquelles tiennent l'homme pour un `"كائن وعي"`. |
+
+**Conclusion du التعريف (p.83, bas de la colonne de gauche)** — mouvement reformulé : la
+psychanalyse **croise** donc la philosophie et devient l'une de ses préoccupations, parce que
+comme elle elle s'intéresse à une face de l'existence humaine et propose une explication et une
+**interprétation** de l'homme et de ses productions — religion, art, affects, morale. De ce point
+de vue, elle montre que l'homme **est loin d'être un maître** (`أن الإنسان بعيد عن أن يكون سيدا`).
+
+**Image p.83** (colonne de gauche) — photographie encadrée d'un praticien assis derrière un patient
+allongé sur un divan. **Légende imprimée** : `طبيب نفساني في حصّة علاج`. C'est la **seule image
+légendée** de la sous-section 1.1.3.1-1.1.3.2 rencontrée jusqu'ici.
+
+**`* الجهاز المفهومي`** (p.84-86) — chaque entrée est une puce `■` portant le terme arabe **en
+bleu** et son équivalent français **en bleu, en caractères latins**. **11 entrées, comptées** :
+
+| n° | Terme arabe | Équivalent latin imprimé | Page | Teneur (reformulée) |
+| :-- | :-- | :-- | :-- | :-- |
+| 1 | `اللاوعي` | `L'inconscient` | 84 | Concept central de la théorie freudienne, présenté par Freud comme une **hypothèse opératoire** permettant d'expliquer un ensemble de phénomènes psychiques. Il désigne l'instance qui rassemble pulsions, représentations et fantasmes **entièrement hors** de la conscience de l'individu, et qui joue un rôle décisif dans la détermination de ses idées, positions et représentations. Il se manifeste surtout dans les **actes manqués**, les **lapsus de langue et de plume**, et les **rêves**. Freud y voit un système psychique fait de ce qui **ne peut pas** accéder à la conscience parce qu'il est le produit du **refoulement** — c'est-à-dire d'un processus défensif par lequel l'`الأنا` renonce à satisfaire pulsions et désirs. |
+| 2 | `الجهاز النفسي` | `L'appareil psychique` | 84 | Substitut freudien du concept de `"النفس"` qui régnait en philosophie. Renvoie à une structure **dynamique** distinguant système conscient et système non conscient. Comprend, dans la **topique adoptée à partir de 1920**, **trois** instances (voir ci-dessous). |
+| 2a | `الهو` | `Le ça` | 84 | La plus ancienne des instances ; porte tout ce qui vient à l'homme **dès la naissance** ; représente le pôle pulsionnel non conscient ; rassemble tous les instincts innés issus de notre constitution biologique, auxquels s'adjoindra ensuite tout ce qui sera refoulé. |
+| 2b | `الأنا` | `Le moi` | 84 | L'instance qui assure la fonction **consciente** et ce qu'elle exige : concilier les exigences du `الهو` et celles du `الأنا الأعلى`. |
+| 2c | `الأنا الأعلى` | `Le sur moi` | 84 | Équivalent de la **conscience sociale** chez l'individu ; se forme par intériorisation, dans l'enfance, de l'autorité parentale ; garant de l'équilibre de la personnalité et de son accord avec le milieu, parce qu'il est **responsable du `الكبت`** par le contrôle qu'il exerce sur les pulsions venues de l'`اللاوعي`. Il est en outre **héritier du `عقدة أوديب`**, en ce qu'il intériorise dans la conscience de l'enfant l'autorité du père et ses commandements ; c'est lui qui **arbitre la satisfaction des `النزوعات`** — l'`الأنا` ne répond à une pulsion qu'après consultation et accord du `الأنا الأعلى`. |
+| 3 | `الجنسانية` | `Sexualité` | 84 | Concept ayant produit un tournant majeur dans la compréhension de la vie sexuelle humaine. **Distinction explicite** posée par le manuel : `"الجنس"` ≠ `"التناسل"`. Chez Freud le sexuel est la **forme fondamentale d'une pulsion de vie** : la vie sexuelle commence **très tôt**, dès la naissance, et prend des expressions variées, **indépendantes des organes génitaux** — tout lieu du corps peut devenir source de `لذّة`. Elle traverse l'enfance en plusieurs stades, marqués d'un équilibre relatif et provisoire entre la pression des `النزوعات` et les positions du milieu familial et social. La succession de ces stades est déterminée par des expériences oscillant entre **réussite heureuse** et **échec malheureux** : c'est une **structure inconsciente** de l'individu, exposée aux secousses, et qui peut prendre des formes violentes allant jusqu'à la **maladie mentale**. |
+| 4 | `النزوع` | `Pulsion` | 84-85 | Processus dynamique ou **énergie débordante** orientant l'appareil organique vers un but. La pulsion prend racine dans l'**excitation sexuelle** au sens large ; d'origine corporelle, elle résulte de la composition physiologique de l'homme et se manifeste dans sa dimension instinctive. Son but est de **se délivrer de l'état d'excitation** en trouvant un objet qui la satisfasse. **Distinction explicite en deux classes** : le **premier genre** est fait des `نزوعات الحياة`, `"الإيروس"` `Eros`, qui inclut le `الليبيدو` et l'instinct de conservation ; le **second** comprend les `نزوعات الموت`, `"تاناتوس"` `Thanatos`, qui se dirige d'abord **vers l'intérieur du sujet, pour le détruire**, puis se retourne, dans un second temps, **vers l'extérieur**, comme pulsion violente et destructrice. |
+| 5 | `الرغبة – الحاجة` | `Désir - Besoin` | 85 | **Distinction explicite.** Le `الرغبة` est une inclination consciente de son objet, un mouvement qui nous pousse vers un réel dont nous estimons qu'il représente une source de satisfaction. Le `الحاجة` s'en distingue : simple poussée physiologique produisant chez le sujet une **tension interne** ; il renvoie à un **manque** qui garantit la vie organique, se manifeste psychiquement dans un **état de douleur** accompagnant la privation, et est tenu pour **nécessaire à la vie**. |
+| 6 | `الليبيدو` | `Libido` | 85 | Concept employé par Freud pour dire l'énergie dynamique de la vie psychique, spécialement inconsciente ; il désigne la pulsion sexuelle et vaut comme l'**énergie orientée vers la réalisation de la `اللذّة`**. |
+| 7 | `مبدأ اللذة – مبدأ الواقع` | `principe de plaisir` / `principe de réalité` | 85 | **Distinction explicite.** Deux principes fondamentaux déterminant l'activité psychique. Le `مبدأ اللذة` vise à **éviter la douleur** et à obtenir du plaisir en réduisant la quantité de tension ; le plaisir est un état affectif né de la satisfaction des désirs. Le `مبدأ الواقع`, dont Freud a adopté l'usage **à partir de 1911**, réside dans une **modification du cours** du principe de plaisir : il infléchit la recherche de la satisfaction par **respect des exigences du milieu familial et social**. |
+| 8 | `الكبت` | `Refoulement` | 85 | Phénomène psychique **non conscient** par lequel l'`الأنا` repousse certaines inclinations ou certains événements vécus dans l'`اللاوعي`, parce qu'il estime que leur satisfaction **contredit les valeurs morales**. C'est le pilier fondamental sur lequel repose la psychanalyse, et Freud y voit un **mécanisme de défense** qu'il tient pour l'**origine du `العصاب` et du `الذهان`** et des divers troubles de la personnalité. L'une des tâches de la cure est de libérer le malade de ces troubles en **ramenant au champ de la conscience** les tendances refoulées. ⚠️ **Le manuel insiste** : `فالمكبوت يظلّ فاعلا ويمكن أن يتجلّى من جديد بعد أن تُجرى عليه تحويرات. (الأحلام، الأعراض المرضيّة تمثّل تجلّ للمكبوت).` — le refoulé **reste actif**. |
+| 9 | `التصعيد أو الإعلاء` | `Sublimation` | 85 | Processus par lequel l'`الأنا` déplace les mobiles — spécialement sexuels — et change leur cours sous la pression du `الكبت`, les convertissant en activités **non sexuelles socialement acceptables**, au premier rang desquelles les activités **artistiques**. C'est la conversion de ce qui est tenu pour inclination vile en **sentiments élevés**. |
+| 10 | `عقدة أوديب` | `Complexe d'OEdipe` | 85 | Désigne chez Freud la relation **triangulaire** nouée entre l'enfant (`بين الثالثة والخامسة من عمره`) et ses parents, et les désirs contradictoires qu'elle enferme, entre **amour** et **haine** : désir de mort du parent **de même sexe**, tenu pour un rival, et désir sexuelle (`بالمعنى النفسي`) envers l'autre. C'est là le **versant positif** du complexe ; son **versant négatif** se déclare dans les inclinations affectives inverses. Le complexe constitue une part majeure de l'histoire inconsciente de la personne, et son **dénouement** (`أفولُها`, `قبيل البلوغ`) annonce le début d'une étape nouvelle. Freud le tient pour l'équivalent d'une **seconde naissance** de l'enfant — une naissance **sociale**, où il apprend les interdits et le respect des lois. À son avis, le complexe d'Œdipe est une **structure universelle** gouvernant la formation de la personnalité de tout individu de l'espèce humaine — thèse que **certains penseurs contestent et n'admettent qu'avec réserve**. |
+| 11 | `الحلُم` | `Le rêve` | 86 | Le mérite en revient à la psychanalyse d'avoir donné au rêve une signification **humaine** et de l'avoir tenu pour **la voie royale** menant à l'inconscient, parce qu'il représente la satisfaction imaginaire, pendant le sommeil, des désirs refoulés. **Distinction explicite** : `محتوى الحُلم الظاهر` ≠ `محتواه الكامن`. Derrière le contenu manifeste — souvent incohérent — la psychanalyse travaille à saisir la logique profonde et cachée (le contenu latent) ; d'où le caractère fortement **symbolique** et le codage extrême du rêve. |
+
+⚠️ **Trois graphies latines fautives dans ce `الجهاز المفهومي`, vérifiées à 600 dpi** :
+`Le sur moi` en **trois mots** (pour *le surmoi*) · `Complexe d'OEdipe` avec **`OE` en deux
+lettres** au lieu de la ligature `Œ` · et voir l'anomalie `Phychanalyse` ci-dessous.
+
+⚠️ **Point de sens de l'entrée 11 (p.86)** : la parenthèse `( إذا كان هذا التقنّع غير كاف أو في
+طريقه إلى الانتهاء كما في حالة الكوابيس، يوقظ الوعيُ النّائم )` décrit le **cas du cauchemar**,
+c'est-à-dire l'**échec** du travail de déguisement — pas le fonctionnement normal du rêve. Le
+manuel conclut sur la formule `الحلم حارس النوم`.
+
+**Images p.84 et p.85** — deux photographies encadrées, en niveaux de gris : (p.84) deux fauteuils
+et un divan dans une pièce vide ; (p.85) une sculpture blanche de deux figures drapées. **Ni
+légende, ni attribution** pour l'une comme pour l'autre.
+
+**`* تنبيهات`** (p.86) — **un seul avertissement**, compté :
+
+> يجب ألاّ نخلط بين **التحليل النفسي الفرويدي** و`التحليل النفسي الوجودي` `Phychanalyse
+> existentielle` كما بلوره **سارتر** `Sartre` (1905 – 1980) والذي يحتل فيه **الوعي، لا اللاوعي**،
+> المكانة الأوّليّة.
+
+⚠️ `Phychanalyse` est imprimé ainsi — **`Phych…`**, non `Psych…` — alors que le cartouche de la
+p.83 porte `Psychanalyse` correctement orthographié. Vérifié à 600 dpi. Voir § Notes, anomalies.
+
+⚠️ **Négation porteuse de la distinction** : c'est le **الوعي**, *et non* le **اللاوعي**, qui
+occupe la place première dans la psychanalyse existentielle sartrienne. L'inverser détruit le
+تنبيه.
+
+**Image p.86** — portrait photographique encadré, **légendé** : `جان بول سارتر`.
+
+**Développement du تنبيه (p.86)**, verbatim pour les termes techniques :
+
+> `التحليل النفسي الوجودي` عبارة استخدمها سارتر للتعبير عن طريقته الخاصة في إجلاء ما يسمّيه
+> `"المشروع الحرّ"` `Libre projet` `"الخيار الأصيل"` `Choix originel` الذي يصبح المرء بفضله
+> `"شخصا"` `Personne`.
+
+Suit une citation de **سارتر** en traduction arabe (bloc bleu, p.86). **R-2 : non recopiée.**
+Thèse reformulée : le **projet libre** est l'espace où s'unifient nos choix partiels ; la
+psychanalyse existentielle est dès lors une méthode particulière pour éclairer — et de façon très
+**objective** — le choix subjectif par lequel chacun **se fait personne**, c'est-à-dire déclare à
+soi-même l'être qui est le sien.
+Citation courte, attribuée : « `الخيار الذاتي الذي به يجعل كل فرد من نفسه شخصا` »
+(سارتر, p.86).
+**Référence imprimée, verbatim** : `( سارتر، الوجود والعدم، ج 4. فصل 2. فقرة 1. ص 634. قاليمار )`
+
+**Second bloc `■` du تنبيه (p.86)** — les développements ultérieurs de la psychanalyse :
+
+> شهد التحليل النفسي تطورات لاحقة راجع فيها بعض المفكرين جملة من مسلمات الموقف الفرويدي ونذكر في
+> هذا الصدد ما قدمته المدرسة `الفرويدو ماركسية` `Freudo-marxisme` وهي اتجاه تبلور خاصة مع
+> **ماركوز** `Marcus` (1898 – 1979) و**رايش** `Reich` (1897 – 1957) ونشأ عن التقارب بين **ماركس
+> وفرويد** في صلة بالحضارة والثقافة.
+
+Thèse retenue de ce courant, reformulée : le conflit entre les pulsions du `الهو`, l'`الأنا` et
+l'`الأنا الأعلى` **reflète en vérité** les conflits qui opposent les désirs de l'individu aux
+pressions de la **société répressive** (`المجتمع القمعي`).
+
+⚠️ `Marcus` est imprimé **sans `e` final** (pour *Marcuse*). Vérifié à 600 dpi.
+
+**`* لمزيد التعمّق`** (p.86 col. gauche → p.87 col. droite) — **3 têtes d'auteur, 6 titres**,
+comptés ; références verbatim :
+
+- **■ فرويد:**
+  1. `خمسة دروس في التحليل النفسي؛ تعريب رضا بن رجب و عبد الرزاق الحليوي، منشورات الجديد. تونس 1979.`
+  2. `موسى والتوحيد؛ تعريب جورج طرابيشي، دار الطليعة بيروت، ط. الخامسة 2004.`
+  3. `مستقبل وهم؛ تعريب جورج طرابيشي، دار الطليعة بيروت، ط. أولى 1974.`
+  4. `الأنا والهذا؛ تعريب جورج طرابيشي، دار الطليعة بيروت، ط. أولى 1983.`
+- **■ كارل غوستاف يونغ:** (p.87)
+  5. `جدليّة الأنا واللاوعي؛ تعريب نبيل محسن، دار الحوار سورية، ط. أولى 1997.`
+- **عدنان حب الله:** (p.87 — tête d'auteur **sans puce `■`**, contrairement aux deux précédentes)
+  6. `التحليل النفسي من فرويد إلى لاكان؛ مركز الإنماء القومي.` — **sans date ni ville.**
+
+**Image p.87** (haut de la colonne de droite) — dessin au trait encadré : un homme assis, de trois
+quarts, mains jointes. **Ni légende, ni attribution.**
+
+---
+
+###### سياق فكري — 2-الفينومينولوجيا / Phénoménologie — p.87-90
+
+**`* التعريف`** (p.87) — verbatim pour la généalogie du terme :
+
+> يجمع الباحثون على أن أول من استعمل لفظ `الفينومينولوجيا` هو الألماني **لامبرت** `Lambert`
+> (1728 – 1777) سنة 1764 ومن بعده **كانط** `Kant` (1724 – 1804) ثمّ **هيغل** `Hegel`
+> (1770 – 1831)؛ لكن أول من استعمل اللفظ للدلالة على منهج فكري واضح المعالم هو الفيلسوف **ادموند
+> هوسرل** `Husserl` (1859 – 1938)؛
+
+**Étymologie imprimée** — verbatim :
+
+> وتتركب `الفينومينولوجيا` من لفظين: `"فينومو"` وتعنى `"الظاهر"` ثم `"لوغوس"` وتعنى **العقل أو
+> العلم**، بما يفضى لاعتبار الفينومينولوجيا `"علم الظهور أو الظاهراتية"` وتعنى في المعنى الفلسفي
+> `"العودة إلى الأشياء ذاتها والكشف عن ماهيتها وبنية وجودها"`.
+
+⚠️ `ادموند` est imprimé **sans hamza** (`أدموند` attendu) ; `وتعنى` / `يفضى` sont composés avec
+**alif maqṣūra finale** (`ى`) là où la forme attendue est `وتعني` / `يفضي`. Trois occurrences dans
+le seul paragraphe étymologique.
+
+**La querelle imprimée (p.87)** — mouvement reformulé :
+
+> L'interprétation de la فينومينولوجيا **avec هوسرل** en fait une doctrine `"متعال"`
+> (`ترنسندنتالي`) — ce qui a **provoqué la controverse** entre lui et les phénoménologues
+> postérieurs, du type de **هيدغر، مرلوبونتي، ريكور وليفيناس**, lesquels y voient une **méthode
+> d'enquête** attachée à dégager la structure de la conscience, et qui porte **non sur l'objet de
+> la perception mais sur l'acte de percevoir lui-même**.
+
+⚠️ **Distinction cardinale à ne pas inverser** : `يركّز لا على موضوع الإدراك بل على فعل الإدراك
+ذاته`.
+
+**Les quatre traits du تحديد فينومينولوجي du الوعي** (p.87, numérotés `1` à `4` par le manuel).
+Amorce verbatim : `يُعدّ الوعي بالنسبة إلى هوسرل دوما "وعيا بشيء ما" وهو بذلك لا يتحقق بالتعالي
+عن العالم، وإنما عبر تجربة معيشة في العالم.` — **4 traits, comptés** :
+
+| n° | Trait | Teneur |
+| :-- | :-- | :-- |
+| 1 | **Suspension du jugement** | Il exige `تعليق الحكم على العالم` — qui **ne signifie pas** nier l'existence du monde, mais **`"وضع العالم بين هلالين"`**, hors des orbites, c'est-à-dire hors de l'attitude commune et des jugements des philosophes sur le monde. Cette suspension libère le pouvoir de l'`الأنا` de conférer le sens, lequel fonde à son tour la conscience que l'`الأنا` prend de soi. |
+| 2 | **Non-clôture sur soi** | La conscience `ليس تفكيرا محضا مغلقا على ذاته` et **ne constitue pas** un autre monde séparé de celui dont on a suspendu le jugement : avec هوسرل elle **n'est pas coupée du monde**, parce qu'elle n'est **pas une substance** mais un **flux** (`سيلان`), et parce que le monde est l'objet de la conscience. |
+| 3 | **Transcendance vers, non hors** | Elle se caractérise par une transcendance `لا عن العالم بل نحو العالم` — vers le **sens** du monde ; elle déclare ainsi une relation au monde qui prend **en même temps** deux sens, celui de la `المفارقة` et celui de la `المحايثة` (ou `الكمون`). Le manuel les définit tous deux, par deux astérisques : **`معنى المفارقة`** — le monde a une existence objective indépendante et séparée `"للأنا الصرف"` ; **`معنى المحايثة`** — tant que les symboles de ce monde **restent sans signification hors de la conscience**. |
+| 4 | **`القصدية`** | Viser quelque chose, se diriger vers quelque chose, le prendre pour cible. Ce trait fondamental **s'étend à tous les actes et vécus** de la conscience : toute perception est perception **de** quelque chose, tout souvenir souvenir **de** quelque chose. ⚠️ Réserve imprimée : ce « quelque chose » **n'est pas nécessairement matériel** ni désignable du doigt — ce peut être un objet moral dont la manière d'être diffère de celle des choses matérielles : `الحب والكراهية، الشغف والنفور ألخ...` |
+
+⚠️ `ألخ` est imprimé avec **hamza sur l'alif** (pour `إلخ`). Vérifié à 600 dpi.
+
+**Images p.87** — (a) colonne de gauche, milieu : portrait **peint** en aplats de couleurs vives
+(vert, jaune, rouge) d'un homme à lunettes ; **ni légende ni attribution**. (b) bas de page :
+**quatre portraits photographiques noir et blanc alignés**, chacun **légendé** ; de droite à
+gauche : `هوسرل` · `مرلوبونتي` · `هيدغر` · `ريكور`.
+
+**Développement مرلوبونتي (p.88-89)** — mouvement reformulé, distinctions conservées :
+
+1. **p.88, ouverture** : ce qui caractérise le concept husserlien de `القصدية` est que la chose
+   visée est **immanente à la structure de l'acte** de conscience — pas d'acte sans son objet, pas
+   d'objet sans son acte. D'où l'unité de l'`الأنا` qui pense et de l'objet pensé : la conscience
+   se détermine **nécessairement par son objet**, l'objet étant présent en permanence dans le
+   monde, sans qu'on puisse **le représenter à part** de lui.
+2. La conscience **ne vient ni du dedans ni du dehors** : elle repose sur une **dialectique
+   dedans/dehors**. Elle ne déclare donc pas une relation de l'homme au monde, mais une relation
+   d'**implication**, dont l'énoncé propre est **`"أنا العالم"`** — retour du monde dans l'`الأنا`
+   et de l'`الأنا` au monde ; chaque conscience est **singulière**, et chaque *cogito* perçoit son
+   objet selon sa manière propre et selon son expérience vécue dans le monde.
+3. Le philosophe a donc pour tâche d'analyser cette **`الألفة`** entre nous et le monde, par des
+   questions du type : `ما معنى الكائن في الوجود؟` · `ما معنى أن نكون أمام الآخر؟` — c'est dire
+   que la فينومينولوجيا pose la question du **`"المعنى"`** comme question **essentielle** : rien
+   n'existe que **relativement à moi**, il n'y a pas de monde sans une vision qui nous y relie, ni
+   d'existence pour un étant sans une vision **humaine** qui s'y porte.
+4. ⚠️ **Réserve imprimée** : `لــكــن لا يـجـوز اختزال الفينومينولوجيا في مجموعة مواقف أو في
+   نســق، إذ تُوجد فينومينولوجيات بقدر ما يُوجد فينومينولوجيين` — il y a **autant de
+   phénoménologies que de phénoménologues**.
+5. Cette méthode a connu sa grande fécondité **en France à partir de 1930**, avec les travaux de
+   **سارتر** et **surtout de مرلوبونتي**.
+6. **Le tournant du corps** : là où, pour سارتر, c'est l'homme qui confère le sens au monde,
+   **مرلوبونتي** cherche le sens **`في عمق الجسد`** — et le corps est **d'abord un corps vécu**
+   (`جسد معيش`). Les autres philosophies (empiriste et rationaliste) ont **échoué** à dire l'essence
+   de la perception parce qu'elles ont **ignoré la nature du corps** : elles ont oublié le corps
+   propre et l'ont occulté. **Distinction cardinale, explicite** : `الجسد الخاص` ≠ `الجسد الموضوع`
+   — le corps dont parlent la science et les philosophies objectivistes est un **corps second**,
+   sans existence propre, un simple corps **pensé**, tandis que le `الجسد الموضوع` est corps
+   **en soi**, qui ne peut être un corps **quelconque**.
+7. D'où, au niveau de la perception, le sujet **est** le corps, ou une **`ذاتا متجسدة`** : je peux
+   dire « je suis mon corps » ou « j'ai un corps conscient », ce corps propre étant pour chacun
+   **une manière singulière d'habiter le monde**.
+   Citation courte, attribuée : « `لسنا فكرا وجسدا لسنا وعيا قبالة العالم` » (مرلوبونتي, p.88).
+8. **p.88 fin** : de ce sens nouveau de la subjectivité consciente naît une idée nouvelle du monde
+   et de l'objet perçu — la théorie du **corps propre** est **implicitement** une théorie de la
+   perception du monde sensible. Il est impossible d'aller d'un moi à un monde qui se détermine de
+   lui-même, car on ne peut définir le sujet comme relation ou présence au monde sans que le monde
+   lui-même soit en relation avec le sujet. Et si percevoir le corps, c'est **en même temps**
+   percevoir le monde, alors percevoir le monde doit être **l'autre face** de la perception du
+   corps : le corps propre est au monde **ce que le cœur est au corps organique**, il maintient en
+   vie le spectacle perçu, l'anime et le nourrit, et forme avec lui un **`"نسقا دائريا"`**.
+9. **p.89** : le corps est ainsi une perspective (`منظورية`) — un mouvement **unifiant** entre le
+   sujet, l'objet, l'`الأنا` et le monde. ⚠️ **Négation à conserver** : cette unification
+   **`ليست فعلا لوعي أو ذات مفكرة`**, mais une unification **corporelle**, qui n'exprime pas
+   seulement l'unité du corps mais aussi l'unité de l'objet. Ce tissage fait apparaître le corps
+   propre comme une **unité ontologique double** : unité de l'âme et du corps, et unité de cette
+   unité **avec le monde** — ce qui fait du corps propre notre **demeure de sens** et la
+   **`"المنظومة الرمزية العامة للعالم"`**.
+10. **ريكور وليفيناس** ont permis à la phénoménologie de prendre des dimensions plus larges en
+    l'orientant vers l'**`الإيتيقا`** et la conduite morale, par l'interrogation du rapport du
+    sujet **`بالآخر`** : l'homme n'est pas seul au monde, il est un sujet **parmi d'autres
+    sujets**, accompli dans un espace humain.
+11. **Retournement final imprimé** : si **سبينوزا** affirmait `"ليس أجدى للإنسان من الإنسان"`, on
+    peut dire avec la phénoménologie `"ليس أجدى للذات من الذات"`, tant que toute subjectivité est
+    **`بيناذاتية`**.
+
+Deux citations en bloc bleu, **R-2, non recopiées** (p.89) : le corps propre `يرى نفسه رائيا
+ويلمس نفسه لامسا` ; et l'argument de l'œil blessé et de la maladie, qui conclut que le corps est
+`بمثابة الشاشة بيننا وبين العالم`.
+
+**`* الجهاز المفهومي`** (p.89-90) — **6 entrées, comptées** ; contrairement au سياق 1, **aucune
+n'est accompagnée de son équivalent latin** :
+
+| n° | Terme | Page | Teneur |
+| :-- | :-- | :-- | :-- |
+| 1 | `القصدية` | 89 | Viser la chose, c'est se diriger vers elle : la conscience va **vers** quelque chose ; la représentation est représentation **de** quelque chose, le souvenir souvenir de quelque chose, l'amour amour de quelque chose, la perception perception de quelque chose. |
+| 2 | `العيان المقولي` | 89-90 | Dans l'usage de **هوسرل**, c'est la perception de la chose **en tant qu'elle est présente elle-même à la conscience**. ⚠️ **Distinction explicite** : `والعيان عنده يختلف عن كانط` — il n'est **pas** un simple عيان sensible, mais un عيان **مقولي**, condition nécessaire à l'obtention du عيان sensible, de sorte que rien ne le précède. Et هوسرل tient l'**a priori** (`القبلي`) pour le sens général : il est **au cœur** de l'objet de la perception et **non hors** de lui — l'a priori est **porteur de contenu**, non une simple forme rationnelle conférant à la conscience un contenu étranger. |
+| 3 | `العالم` | 90 | Dans la phénoménologie, un **horizon ouvert** où l'homme est présent avec son corps et sa pensée, créateur et agissant ; notre relation à lui est faite de solidarité, d'implication et de **familiarité**. Et parfois le monde est présent à nos esprits par la présence du **symbole** et de la **signification**. |
+| 4 | `الآخر` | 90 | Dans le lexique phénoménologique, **nécessaire à la conscience de soi** : `فهو ليس عدوا للأنا ولا هو غريب عنه`. Citation imprimée, verbatim (600 dpi) : « `الآخر يولد منّى كما يولد الأخر الأول من قطعة من ضلع آدم` ». Dans la phénoménologie l'autre est un **sujet**, un homme, une culture, une civilisation, que l'on rencontre sur le plan de la **communication** (`التواصل`). |
+| 5 | `الجسد الخاص` | 90 | Le corps subjectif et vécu, dit **par opposition** au `الجسم` en tant qu'objet, puisqu'il se distingue par un ensemble de propriétés qui le rendent différent du reste des objets — au point qu'il **n'est plus un objet** mais le sujet lui-même, et le sens incarné dans le monde vécu. C'est par lui que nous pouvons éprouver le monde, le comprendre et lui conférer le sens, de sorte que le monde devient **un prolongement de mon corps**, jusqu'à pouvoir dire : « `من حسدي يبدأ العالم` ». |
+| 6 | `المنظورية` | 90 | La conception corporelle : elle **n'apporte pas la connaissance** mais l'ordre des significations que confère au monde l'expérience du corps vécu — elle est **expressivité** du corps. Elle dit aussi le tissu relationnel entre le corps et le monde, et entre le corps et les autres corps : tissu où s'enracine le sens que les corps se partagent, et sur les frontières de cette relation naît le sens. Le corps propre devient ainsi notre **demeure d'interprétation**, porteur d'intentions et de symboles ; il se prolonge **hors** de sa surface matérielle et rejoint les autres sujets incarnés, si bien qu'il devient **non pas un espace d'expression mais la source de tout espace et le mouvement même de l'expression**. |
+
+⚠️ **`من حسدي يبدأ العالم` (p.90)** — le manuel imprime `حسدي` (avec **ح**, sans point) là où le
+sens exige `جسدي` (avec **ج**, pointé), « mon corps ». **Témoin de contrôle sur la même image
+600 dpi** : la ligne immédiatement au-dessus porte `امتدادا لجسدي` avec un **ج nettement pointé**.
+Les deux tracés diffèrent. Anomalie **réelle**. Voir § Notes.
+
+⚠️ **`الآخر` puis `الأخر` dans la même phrase (p.90, entrée 4)** — la première occurrence porte la
+**madda** (`الآخر`), la seconde ne la porte **pas** (`الأخر الأول`). Vérifié à 600 dpi sur la même
+image. Et `منّى` est composé avec **alif maqṣūra** là où le sens veut `منّي` (« de moi »).
+
+**`* تنبيهات`** (p.90) — amorce : `هناك فينومينولوجيات متعدّدة نذكر منها:` — **3 variétés listées
+en puces `■`**, comptées, puis un développement :
+
+| n° | Variété | Teneur |
+| :-- | :-- | :-- |
+| 1 | `الفينومينولوجيا الوصفية` | S'occupe de la **conscience empirique**, en vue de manifester l'objectivité de la connaissance, jusqu'à presque rejoindre `"الوضعية"`. ⚠️ Avertissement imprimé : `وجب عدم الخلط في هذا السياق بين الأنا التجريبي والأنا المتعالي`. |
+| 2 | `الفينومينولوجيا المتعاليّة` | L'objet de la perception (la table, par exemple) **ne l'intéresse plus** — c'est l'**acte de percevoir lui-même** qui l'occupe. C'est pourquoi la phénoménologie est une **méthode d'enquête** permettant de dégager la structure de la conscience. |
+| 3 | `الفينومينولوجيا الما بعد هوسرل` | Elle **ne renie pas** le maître هوسرل, mais pense **avec lui**, et le pousse à percevoir les finalités de l'exigence et à accomplir le déplacement hors de l'héritage, en vue d'enraciner une conscience humaine **réconciliée avec soi**, avec son corps, et avec l'autre — homme ou culture. |
+
+**Développement du 3ᵉ point (p.90)** : ce courant se ramifie à son tour en tendances secondaires.
+**هيدغر**, par exemple, s'occupe de ce que l'effort phénoménologique peut apporter à la solution
+du problème de l'être, par un **règlement de comptes avec l'histoire de la métaphysique**. Quant à
+**مارلوبونتى**, l'affaire tient pour lui à l'effort par lequel nous **retrouvons le monde** dans
+sa vitalité et sa densité, si bien qu'il nous enveloppe dans une sorte de familiarité ou d'amour
+**après séparation**.
+
+⚠️ **`مارلوبونتى` (p.90) — troisième graphie**, avec un `ا` supplémentaire après le م **et** une
+alif maqṣūra finale, là où les p.87, 88 et 89 impriment `مرلوبونتي`. Vérifié à 600 dpi.
+⚠️ De même, `الفينومينولوجى` est composé p.90 avec **alif maqṣūra finale**.
+
+**`* لمزيد التعمّق`** (p.90) — **3 têtes d'auteur, 3 titres**, comptés ; références verbatim :
+
+1. `سوزان بشلار: منطق هوسرل: دراسة حول المنطق الصوري والمنطق الترنسندنتالي. باريس 1957.`
+2. `غاستون بيرجى: الكوجيطو في فلسفة هوسرل، باريس.` — **sans date.**
+3. `ايمانويل ليفيناس: نظرية الحدس في فينومينولوجيا هوسرل، باريس 1930، الطبعة الثانية 1963.`
+
+⚠️ Ces trois entrées **n'ont pas de puce `■`** — le nom d'auteur seul, en bleu, sert de tête.
+⚠️ `ايمانويل` est composé **sans hamza initiale** ; `بيرجى` (Gaston Berger) avec **alif maqṣūra
+finale**. Vérifiés à 600 dpi.
+
+
+---
+
+###### سياق فكري — 3-الوجوديّة / L'Existentialisme — p.91-93
+
+**`* التعريف`** (p.91) — verbatim :
+
+> تعنى `الوجودية` تأمّل الوجود الإنساني، وإبراز قيمة الوجود الفردي. فبما أن الإنسان هو الكائن
+> الوحيد الذي يسبق وجوده ماهيته، فإنّ الوجود هو الواقع اليقيني الأول للفلسفة؛ فالذات تعي نفسها في
+> الوجود كفاعلة ومركز للشعور والوجدان، بهذا تكون الوجودية **نقيضا لكلّ الفلسفات القائلة بالوجود
+> شكلا للجوهر**. فقد نشأت **ردا على المنظومات الفلسفية المجردة**، فهي حين تتخذ من الإنسان وواقعه
+> محورا لها تعمل على **عكس المنطق الهيغلي الشامل**، وعندما تتكلم عن الحرية **لا تربطها بالضرورة**
+> **وترفض** اعتبار الإنسان الفرد نتاج تجريد. بل الوجودية تفهم الإنسان بما هو "جماع" معاناة
+> العلاقات المعاشة في الوجود.
+
+⚠️ **Quatre marques d'opposition dans ce seul paragraphe** (`نقيضا لـ`, `ردا على`, `عكس`, `لا
+تربطها`, `ترفض`). L'existentialisme y est défini **contre** : contre les philosophies qui font de
+l'existence une forme de la substance, contre les systèmes abstraits, contre la logique
+hégélienne totalisante, contre la liaison de la liberté à la nécessité. Une reformulation qui
+laisserait tomber l'une de ces négations retournerait la définition.
+
+**Racines historiques (p.91)** — verbatim pour les faits imprimés :
+
+> للوجودية جذور اجتماعية وتاريخية (الحربين العالميتين، وأزمة الثلاثينيات الاقتصادية) حيث ساد
+> شعور بالقلق على مصير الإنسان الفرد.
+
+Exemples imprimés, reformulés : le **nazisme** (`"فالنازية"`) a imposé à **هيدغر** une forme de
+repli ; l'**occupation nazie** de la France a jeté **جون بول سارتر** dans les rangs de la
+Résistance, jusqu'à la prison ; le **danger nucléaire** a effrayé **كــارل يسبرس**, qui y a vu une
+menace pour l'existence humaine. D'où l'obsession des existentialistes : `الخوف` et `القلق` pour
+l'homme et son destin, dans un décor général plein de bouleversements et cerné de périls.
+
+**Les trois (puis quatre) courants listés** — amorce verbatim :
+`توجد في صلب الوجودية اتجاهات مختلفة نذكر منها:` — **4 courants, comptés**, chacun en puce `■` :
+
+| n° | Courant (verbatim) | Dates imprimées | Page |
+| :-- | :-- | :-- | :-- |
+| 1 | `وجودية كيركغارد` | `(1813 – 1855)` | 91 |
+| 2 | `الوجودية السارترية` | *(aucune date)* | 91 |
+| 3 | `وجوديّة نيتشه` `Nietzsche` | `(1844 – 1900)` | 91-92 |
+| 4 | `وجوديّة هيدغر` `Heidegger` | `(1889 – 1976)` | 92 |
+
+**1. `وجودية كيركغارد`** — elle repose sur la contestation de l'**absence de l'individu** dans les
+systèmes philosophiques, et **spécialement** dans le système hégélien, en affirmant `بالوجود`,
+l'existence de la `الذات الإنسانية`, imposée à l'homme parce qu'elle est déjà au cœur de son
+existence. Le philosophe a jugé l'homme **incapable de porter l'existence sans le secours de la
+foi** ; et la foi ne lève ni l'angoisse ni le doute — qui ruinent la certitude de l'existence —
+tant que l'individu n'accède pas à l'existence véritable, entendue comme **fondation de la
+relation qui lui est imposée**. Cette relation a **deux dimensions**, numérotées par le manuel :
+
+1. `علاقة بالإله الخالق والمخلص.`
+2. `علاقة الذات بالوعي وجهدها في طريق الخلاص.`
+
+> Suite : cette `الوجودية المؤمنة` n'a pas empêché **كيركغارد** de s'opposer à la pénétration du
+> christianisme dans l'État. Le christianisme est chez lui un `مُمْكِن خاص بكل إنسان` : Dieu
+> existe **dans** la subjectivité et **pour** la subjectivité propre.
+
+**Image p.91** (colonne de gauche, milieu) : portrait **dessiné** encadré, un jeune homme aux
+cheveux ondulés. **Ni légende, ni attribution** — le portrait n'est identifié que par la position
+qu'il occupe dans le développement consacré à Kierkegaard.
+
+**2. `الوجودية السارترية`** — verbatim :
+
+> اهتم **سارتر** بتحديد منزلة الإنسان في الوجود بتمييزه عن الأشياء المصنوعة كما رفض النظر إليه
+> مخلوقا الهيا على اعتبار أن وجوده سابق لماهيّتة. يصبح الإنسان عندئذ `مشروع وجود`، مثقل بالحرية،
+> والاختيار والمسؤولية.
+
+⚠️ **Deux anomalies dans cette seule phrase, vérifiées à 600 dpi** : `الهيا` (article défini + هيا)
+là où le sens exige `إلهيّا` (« divin ») ; et `لماهيّتة` terminé par un **tāʾ marbūṭa** là où le
+pronom suffixe demande un `ه` (`لماهيّته`).
+
+**3. `وجوديّة نيتشه`** — mouvement reformulé :
+
+> À l'inverse de **كيركغارد**, **نيتشه** ne va **pas** vers la foi mais vers une forme de
+> **nihilisme** (`العدمية`), c'est-à-dire vers ce qu'il nomme `إرادة القوة`, laquelle dépasse le
+> réel. Elle désigne la **volonté individuelle**, qui n'a d'autre loi que la loi du
+> `الرغبة والقوة`. L'homme libre est **seul** `المقدس`, et Dieu n'a aucune part à la fabrication
+> de la vérité. **نيتشه** voit d'ailleurs **dans le christianisme** (`في المسيحية`) un ennemi de
+> la pensée **et** de l'homme à la fois ; il va, dans ce contexte, jusqu'à tenir les philosophes
+> et penseurs d'inclination religieuse pour des `أنصاف قساوسة`.
+
+⚠️ **`كما يرى نيتشه في المسيحية عدوا للفكر والإنسان في آن`** — le complément `في المسيحية` est
+imprimé et **porte tout le sens** ; l'omettre ferait de Nietzsche lui-même l'ennemi désigné.
+Vérifié à 600 dpi.
+
+**Image p.92** (haut de la colonne de droite) : portrait photographique encadré, un homme à
+moustache fournie, main au visage. **Ni légende, ni attribution.**
+
+**4. `وجوديّة هيدغر`** — amorce verbatim, puis les **trois ضروب** numérotés :
+
+> إذا كان الوجود يعني `"المُلقى به حولنا في مكان ما"` وإذا كان مقصورا على الإنسان بما هو **وجود
+> — في — العالم** في واقعيّته ومع الآخرين، فإن هيدغر يفصّل الوجود ويصنّفه إلى **ثلاثة ضروب**:
+
+| n° | ضرب (verbatim) | Teneur |
+| :-- | :-- | :-- |
+| 1 | `الوجود المتعيّن` | L'existence **ici ou là** ; هيدغر la restreint à l'existence de l'homme sous l'angle de son existence, soit le `الدازاين` `Dasein`. |
+| 2 | `الملقى به حولنا` | La **présence immédiate** ; représente tout ce que l'homme peut rencontrer **par hasard**. |
+| 3 | `الوجود البشري` | En tant qu'il est **détermination de l'être** ; il est réservé au seul `الوجود المتعيّن`. |
+
+⚠️ `Dasein` est la **seule graphie latine** de tout le سياق 3 avec `Nietzsche`, `Heidegger` et
+`L'Existentialisme`.
+
+**Image p.92** (colonne de droite, milieu) : second portrait photographique encadré, un homme
+âgé, chauve. **Ni légende, ni attribution.**
+
+**Conclusion du bloc هيدغر (p.92)** — verbatim pour la charnière négative :
+
+> فالوجود الإنساني هو إذن وجود فردي بالأساس لكنّه **لا يُدرَك على أنّه ذاتيّة أو وعي أو حريّة بل
+> يدرك ذاته كمعيش شخصي وفردي** ويدرك على أنّه `"قدرة على أن يكون"`. هكذا تضع وجوديّة هيدغر
+> الإنسان أمام **خيارين**: إمّا أن يمسك بالحياة الذاتيّة الأصيلة وإما أن يفشل؛ ربح أو خسارة
+> للوجود الحقيقي: يكون مع ذاته وفي ذاته أو ينخرط ويتهاوى بين يدي القوى الأخرى في الحياة اليوميّة.
+
+**Référence imprimée du bloc, verbatim** :
+`( عن الموسوعة الفلسفيّة العربيّة؛ المجلّد الثاني، القسم الثاني، مقال غانم الهنا: الوجوديّة،
+ص 1509 – 1510 )`
+⚠️ `1509 – 1510` est une **pagination**, pas un intervalle de dates. Seule référence de la
+sous-section 1.1.3.2 renvoyant à une **encyclopédie**.
+
+**Bilan des quatre courants (p.92, colonne de gauche)** — verbatim pour la formule-clé :
+
+> نستخلص انطلاقا من هذه النماذج أن **الوجودية وجوديات** لكنها تتقاطع عند العودة إلى السؤال حول
+> الإنسان، **لا بما هو وعي أو وعى الوعي فقط** وإنما من جهة المعاناة والعلاقات التي يعيشها في
+> الوجود، وقد يصح القول `"إنّ الوجودية هي فلسفة الإنسان قبل أن تكون فلسفة إنسانية"`.
+
+**Réception et postérité (p.92)** — mouvement reformulé, noms conservés :
+
+L'existentialisme est devenu une part importante du patrimoine humain ; sa diffusion a transformé
+les représentations que les gens se font de la vie et de leur place en elle, et a nourri chez eux
+le sentiment de la **liberté** et sa défense. Il a marqué des champs de savoir variés —
+**sociologie**, **psychologie**, **sciences de l'éducation** — et, très fortement, le champ
+**littéraire** : roman, nouvelle, poésie, théâtre et autres arts, au point qu'on parle couramment
+d'une littérature existentielle « pleine de souffles sartriens et nietzschéens ». Certains ont
+même parlé de l'existentialisme comme d'une **école et d'une méthode de critique littéraire**, par
+laquelle on lit la nouvelle et le poème.
+
+Cette influence a débordé la culture occidentale jusqu'à la **culture arabe**. Le manuel cite
+nommément :
+
+| Auteur (tel qu'imprimé) | Ce que la page en dit |
+| :-- | :-- |
+| **جبران** | Apparu marqué par la philosophie de la puissance chez **نيتشه** (**`كتاب العواصف`**) ; il y a fait l'éloge du pouvoir d'agir de l'homme. |
+| **محمود المسعدى** | Son œuvre révèle une expérience existentielle **vécue par غيلان** dans `"السدّ"` et **par أبو هريرة** dans `"حدّث أبو هريرة قال"`. |
+| **توفيق الحكيم ونجيب محفوظ** | Littérature égyptienne : on y trouve sans peine des tendances existentielles. |
+| **`"الحمزاوى"`** | Héros du roman `"الشــحاذ"` de محفوظ, donné comme exemple de ces tendances. |
+| **أبى القاسم الشابى** · **أدونيس** · **بدر شاكر السيّاب** | Poésie arabe : traversée d'éclats existentiels, porteuse de questions partagées entre volonté de vie et pouvoir d'agir d'un côté, angoisse, impuissance et échec de l'autre. |
+
+**`* الجهاز المفهومي`** (p.93) — **5 entrées, comptées** ; **aucun équivalent latin** :
+
+| n° | Terme | Teneur |
+| :-- | :-- | :-- |
+| 1 | `الحرية` | L'état de l'être agissant qui sait ce qu'il veut et pourquoi il le veut, et qui n'agit que **selon ce que sa volonté a déterminé** — ce qui revient à dire que la liberté **se conjugue à l'autonomie de la volonté**. Elle s'imagine ainsi sur le modèle de l'existence individuelle déterminée, ou de l'état de l'individu `الذي لا يعيش عبودية ولا يخضع للضرورة غير ضرورة الحرية`. |
+| 2 | `المسؤولية` | L'engagement de l'individu par l'acte volontaire de ce qu'il a voulu, et ce qui lui incombe selon la valeur et la nature de l'acte, et le fait d'**assumer** ce qui s'y attache en blâme ou en éloge. Elle exige donc la conscience qu'a l'homme de ses actes, l'assomption de leurs conséquences, et la **reconnaissance qu'ils émanent de lui et de ses décisions libres**. |
+| 3 | `الوضع` | Une situation ou une limite que la conscience découvre, dont **le retour en arrière est impossible** et qui **n'est pas justifiable** — à la différence des situations circonstancielles, sur lesquelles on peut avoir prise. La découverte du وضع est conditionnée par la **participation** à celui-ci ; le وضع désigne donc la **première limite** que le sujet vit et à laquelle il s'engage — à la fois enfermement et profondeur. |
+| 4 | `الإنسان` | L'axe autour duquel tourne la philosophie existentielle, dans son existence subjective, sociale et morale. C'est cet homme qui ne cesse de poser les questions sur le monde, Dieu, l'histoire, la connaissance, la mort — et **il les pose dans la mesure de sa relation à ces objets**. |
+| 5 | `الوجود` | Se dit en des sens multiples, mais celui qui est visé ici est le sens **existentiel**. **سارتر** tient l'homme pour un être **entre le néant**, qui est son origine et sa source, **et l'existence**, dans laquelle il vit — l'existence s'opposant à la vérité abstraite et théorique. Elle est en même temps la cause de l'**angoisse** et de la **nausée** (`الغثيان`). Non loin de là, **هيدغر** la tient pour fondée sur le sentiment d'angoisse et sur l'oppression qui naissent de la perception que **l'être est promis à la mort**, considéré dans l'horizon temporel. |
+
+**`* تنبيهات`** (p.93) — **un seul avertissement**, compté, **sans puce `■`** :
+
+> **لا تناهض الوجودية الفكر أو تدعو إلى التخلي عنه** بل ما ترفضه هو أن نرد الواقع إلى الفكر
+> المجرد وإقرار الوحدة بين الفكر والوجود على أنهما شيء واحد (رفض المماثلة الهيغليّة الواقع هو
+> العقل والعقل هو الواقع). الوجوديون إذن **لا ينكرون العقل بل ينكرون تعاليه على معاناة العلاقات
+> المعاشة في الوجود**، ولقد كان **ك. يسبرس** حريصا على ربط الفكر بمجموع الوجود البشرى، واعتبر
+> **هيدغر** أن التفكير هو استجابة الإنسان للوجود ومعايشته.
+
+⚠️ **C'est le تنبيه le plus exposé au contresens de toute la tranche** : il porte **deux
+négations suivies chacune d'un `بل`**. Les existentialistes **ne combattent pas** la pensée et
+**ne nient pas** la raison — ils refusent qu'on réduise le réel à la pensée abstraite, et ils
+nient la **transcendance** de la raison au-dessus des relations vécues. Toute reformulation qui
+en ferait des adversaires de la raison dit l'inverse de la page.
+⚠️ **`ك. يسبرس`** — quatrième forme du nom, réduite à l'initiale, contre `كــارل يسبرس` p.91.
+⚠️ `البشرى` composé avec **alif maqṣūra**.
+
+**`* لمزيد التعمّق`** (p.93) — **3 entrées en puce `■`**, comptées ; références verbatim :
+
+1. `بول فولكييه : الوجودية؛ ترجمة جميل جبر، بيروت، 1983.`
+2. `ريجيس أوليفييه : المذاهب الوجودية من كياركيغارد إلى جون بول سارتر؛ ترجمة فؤاد كامل، القاهرة، 1952.`
+3. `هنري لوفيفر : الوجودية؛ باريس 1964.`
+
+⚠️ **`كياركيغارد` (p.93) est bien en UN seul mot** (600 dpi) — c'est la **seconde graphie** de
+Kierkegaard, contre `كيركغارد` p.91.
+
+**Image p.93** (colonne de gauche, bas) : photographie **en couleurs** encadrée — un homme âgé,
+barbu, allongé sur un banc de rue, adossé à un amoncellement de sacs plastique sur un chariot.
+**Ni légende, ni attribution.**
+
+---
+
+###### سياق فكري — 4_ فلسفة التاريخ / La Philosophie de l'Histoire — p.94-97
+
+⚠️ **Le cartouche de ce 4ᵉ سياق ne suit pas la composition des trois autres** : il porte
+`4_ فلسفة التاريخ` — **tiret bas** et **espace** après le numéro — là où les trois précédents
+portent `1-التحليل النفسي`, `2-الفينومينولوجيا`, `3-الوجوديّة`, avec un tiret ordinaire et **sans
+espace**. Vérifié à 600 dpi.
+
+**`* التعريف`** (p.94) — verbatim :
+
+> تطرح `فلسفة التاريخ` السؤال حول جوهر التاريخ ومعناه في كليته، وتواجه في الإجابة عن السؤال
+> صعوبات جمّة تتمثل في تفسير بدء التاريخ ومرماه ودور الإنسان فيه. يعود مصدر هذه الصعوبات إلى تحديد
+> ماهية ما يكشف عنه المؤرّخ وواقعيّة ما يقوله، ووجاهة الفرضيات التي يضعها الفيلسوف.
+
+**Naissance historique de la discipline** — verbatim pour la charnière :
+
+> **لم تعرف فلسفة التاريخ حضورها الفعلي إلا مع** أفول المجتمع الإقطاعي وتضاؤل تأثير الفكر الديني
+> ومع التقدم العلمي والتكنولوجي وبالتالي الاجتماعي الذي حدث في عصر النهضة وحركة التنوير في
+> أوروبا.
+
+⚠️ **`لم … إلا مع`** : construction **restrictive**, non négative. La philosophie de l'histoire
+**n'a connu son effectivité qu'avec** le déclin de la société féodale et l'affaiblissement de
+l'influence de la pensée religieuse — elle n'est pas dite absente de ce moment.
+
+**فولتير** (p.94) — verbatim :
+
+> فقد ذهب **فولتير** (وهو **أول من استخدم** `مصطلح فلسفة التاريخ` واعتبرها قسما من الفلسفة مستقلا
+> بذاته) إلى `"إن محور التاريخ هو الإنسان وكل وجوده الكوسمو سياسي"`.
+
+**Le sens de la discipline (p.94)** — mouvement reformulé : la philosophie de l'histoire s'entend
+d'abord comme **achèvement de l'évolution naturelle** — celle qui a commencé avec la nature et
+abouti à l'homme —, comme un parcours orienté **vers le meilleur**, l'essence de cette évolution
+étant regardée du côté de ce que l'homme a accompli dans la nature et de la singularité de chaque
+peuple et de chaque civilisation. Les peuples, dans leur développement, **ne se séparent pas les
+uns des autres** : ils forment des maillons se complétant organiquement, et c'est dans leur
+plénitude et leur complémentarité que s'accomplit la **perfection de la nature humaine**.
+
+**هيغل (p.94)** — verbatim pour l'attribution :
+
+> اقترنت فلسفة التاريخ **بهيغل** (1770 – 1831) `Hegel` **الذي يُعد أول مؤسس لفلسفة التاريخ** بمعنى
+> أنّه كان أول من أدخل الفكر في التاريخ والتاريخ في الفكر
+
+Puis, reformulé : هيغل a **soumis** la nature, l'humanité et les événements à une logique qui
+représente le réel dans sa totalité. Il détermine l'histoire comme **`صيرورة وعي الروح`** ; tout
+ce qui est vrai est, dans l'autre, une manifestation de cet Esprit. La logique est l'expression de
+son mouvement créateur, `حركة جدلية` à **trois moments** :
+`الإثبات` · `والنفي` · `ونفي النفي` — **3 moments, comptés, verbatim.**
+
+L'apport propre qu'on porte au crédit de هيغل tient à son affirmation que le **`التناقض`** est le
+**moteur** de l'histoire rationnelle et réelle : dès lors, la tâche de la philosophie **n'est plus
+de nier la contradiction mais de la penser et de la comprendre**. La contradiction est pour lui
+le jugement de l'existence des choses et de leurs relations, qui les soumet au mouvement et au
+devenir — ce qui renvoie au concept de `الجدل`, la loi qui gouverne l'évolution des choses et de
+la pensée elle-même, et à la `المنهج الجدلي`, qui reconnaît la `جدلية الأضداد` : chaque chose
+porte en soi son contraire, si bien qu'en toute affirmation il y a négation et en toute négation
+affirmation — et de ce fait le mouvement de l'histoire **ne s'achève qu'en atteignant
+`المطلق`**.
+
+⚠️ **Deux négations à conserver** : `لم تعد مهمة الفلسفة نفي التناقض بل تعقّله وفهمه` et
+`لا تكتمل إلا ببلوغ المطلق`.
+
+**Image p.94** (colonne de gauche, bas) : portrait peint encadré, en camaïeu brun. **Légende
+imprimée** : `هيغل`.
+
+**ماركس (p.94-95)** — verbatim pour l'attribution :
+
+> وعلى نقيض فلسفات التاريخ المبنية على المنظومات الفكرية المجردة تقوم فلسفة التاريخ عند **كارل
+> ماركس** (1818 – 1883) `Marx` على `تفسير مادي جدلي للتاريخ الإنساني`
+
+Mouvement reformulé (p.95) : les **rapports de production** sont le fondement du réel et la base
+de la compréhension de la structure de la société, des formes de son évolution et des modalités de
+son existence matérielle et politique — au passé, au présent et au futur. Dans la perspective
+marxiste, l'histoire **n'est qu'un ensemble de faits** qui sont l'œuvre de l'homme et qui, en
+retour, le font ; et c'est l'existence **sociale et matérielle** qui détermine la conscience
+sociale et les étapes de son développement, tant que la `البنية التحتية` détermine la
+`البنية الفوقية`.
+
+**Image p.95** (colonne de droite, haut) : portrait peint encadré, homme à barbe blanche fournie.
+**Légende imprimée** : `ماركس`.
+
+Suite (p.95), verbatim pour la charnière restrictive :
+
+> إن حركة التاريخ **لا تفهم إلا في إطار** `التناقض والصراع`: صراع الإنسان مع الطبيعة وصراع
+> الإنسان مع الإنسان، وهو صراع **لا يُفهم إلا** بما هو `صراع طبقي`.
+
+Puis : **ماركس** a lié l'économie politique à la philosophie et a trouvé, dans les rapports entre
+l'homme et la nature — c'est-à-dire dans le procès de production et les situations qui en
+résultent, lesquelles déterminent les classes sociales et leurs rapports mutuels —, l'objet
+véritable de la dialectique et son fondement, que **هيغل** avait rapporté à la pensée. Ces
+rapports **ne sont pas** des catégories et des lois issues de la pensée, mais le produit du
+mouvement de l'histoire lui-même ; ils apparaissent dans leur vérité dans la vie des sociétés,
+l'évolution des forces productives, les rapports de production et la lutte des classes. Et toute
+philosophie de l'histoire qui **ne prend pas** ce mouvement et ce réel pour objet est une théorie
+**irréelle**, c'est-à-dire une `وعيا زائفا` ou une `إيديولوجيا`.
+
+**Citation d'ألتوسير imprimée (p.95)**, attribuée entre parenthèses :
+« `قارة التاريخ وشكّل بذلك حدثا نظريا وسياسيا لا مثيل له في التاريخ الإنساني` » (**ألتوسير**) —
+ce que **ماركس** a ouvert par ce geste, en introduisant les concepts nouveaux de
+`القوى المنتجة` · `علاقات الإنتاج` · `أنماط الإنتاج` · `صراع الطبقات` ·
+`البنية التحتية والبنية الفوقية`. **5 concepts, comptés.**
+
+**Les cinq étapes de l'histoire selon ماركس (p.95)** — verbatim, **5 étapes comptées** :
+
+> ويقسم **ماركس** تاريخ البشرية إلى **خمس مراحل متعاقبة** هي: `المشاعية البدائية، العبوديّة،
+> الإقطاعيّة، الرأسماليّة وأخيرا المرحلة الشيوعية`، ويمثل ظهور `الملكية الخاصة` لوسائل الإنتاج
+> العامل المحدد `للصــراع`.
+
+Suite reformulée : selon **ماركس**, cette lutte se poursuivra tant que subsistera la propriété
+privée ; la contradiction qui gouverne les rapports au cœur de la société capitaliste — lutte
+tournant entre la classe capitaliste et la classe ouvrière — produira nécessairement le passage
+au système communiste, où la propriété privée est abolie et remplacée par la propriété collective
+des moyens de production, pour aboutir au `المجتمع اللاطبقي`, où sont réunies les conditions
+objectives de l'accomplissement de l'humanité de l'homme.
+
+⚠️ **Réserve imprimée par le manuel** : `ومهما كانت وجاهة توقّعات ماركس يمكن أن نقول أن فلسفته
+كانت محاولة لرصد قوانين التطوّر الاجتماعي.` — le manuel **ne valide pas** les pronostics, il
+qualifie la démarche.
+
+**Postérité (p.95)** — verbatim pour les noms et dates :
+
+> إن المبحث التاريخي الحالي يولي اهتماما متزايدا بظروف العيش الملموسة للمجتمعات … وقد تأكد هذا
+> التأثير الواسع والمتعدد الأشكال في أعمال متنوعة مثل أعمال **لوفافر** (`Lefebvre` 1901 – 1991)
+> و**بلوخ** (1885 – 1977 `Bloch`) وحتى عند من أعلن اختلافه الصارخ مع الماركسية مثل **فرناند
+> بروديل** (`Braudel` 1902 – 1985).
+
+⚠️ **Composition irrégulière des trois parenthèses** : `Lefebvre` **précède** ses dates, `Bloch`
+les **suit**, `Braudel` les **précède**. Trois ordres pour trois notices consécutives.
+
+**`فلسفة التاريخ في التراث العربي`** (p.96) — sous-titre imprimé en **calligraphie rose**, sans
+numéro ni puce, à l'intérieur du سياق 4.
+
+> يرتبط الحديث عن التاريخ في الفكر العربي **بابن خلدون** (1332 – 1406) من خلال كتابه
+> `العبر وديوان المبتدأ والخبر في أيام العرب والعجم ومن عاشرهم من ذوي السلطان الأكبر`. والتاريخ
+> في نظر **ابن خلدون** هو في حقيقته `"خبر عن الاجتماع الإنساني الذي هو عمران العالم وما يعرض
+> لطبيعة ذلك العمران من أحوال"`.
+
+**Image p.96** (colonne de droite) : photographie encadrée d'une **statue** en bronze d'un homme
+drapé. **Légende imprimée** : `ابن خلدون`.
+
+**Le geste critique d'ابن خلدون (p.96)** — mouvement reformulé, formules imprimées conservées :
+
+1. Sa critique porte au niveau du **fondement premier** de l'histoire arabe ; il institue un
+   concept autre que le concept transmis, résumé par : `"حقيقة التاريخ أنه خبر عن الاجتماع
+   الإنساني"`.
+2. L'histoire en son sens **traditionnel** est « `خبر عن حدث` », parce que l'histoire islamique
+   est **événementielle** : sa naissance s'est liée à la relation de la première période de
+   l'islam, si bien que l'histoire a été fondamentalement une **histoire du hadith**, appuyée sur
+   la méthode de l'`الإسناد`.
+3. La critique qu'ابن خلدون fait de l'`الإسناد` **comme méthode**, et son exclusion du champ de la
+   science de l'histoire, signifie l'**abolition de la distinction** entre une histoire sacrée et
+   une histoire ordinaire — puisqu'il ne reste finalement que l'histoire ordinaire, celle des
+   hommes eux-mêmes.
+4. D'où : ابن خلدون **ne regarde pas** le fait de la prophétie comme un événement sacré
+   **supra-historique**, mais comme un événement **historique**, tant que la prophétie est aussi
+   un **appel politique** — un appel à renverser profondément les équilibres des forces politiques
+   et à changer radicalement la situation des hommes.
+5. Un tel appel doit s'adosser à une **force sociale tribale** qu'ابن خلدون nomme `عصبية`.
+   Citation imprimée, avec sa référence : « `لا تتم دعوة من الدين أو الملك إلا بوجود شوكة عصبية` »
+   `[المقدمة ص582]`. D'où l'explication imprimée : `لذلك كان الرسول من قريش، أقوى العصبيات
+   العربية أنذاك.`
+6. Le concept de **`العصبية`** a permis à ابن خلدون de comprendre l'histoire **autrement** :
+   là où certains voient dans la grande *fitna* un fléau tombé sur les musulmans, elle est, selon
+   la logique historique khaldûnienne, **un fait ordinaire**, qui devait nécessairement se
+   produire par l'effet de la lutte des forces tribales. Citation imprimée :
+   « `ولما وقعت الفتنة بين علي ومعاوية، وهي مقتضى العصبية...` »
+7. La *fitna* est donc un **fait historique** qu'a exigé la lutte des `عصبيات` des tribus ayant
+   adopté l'islam et s'étant disputé le pouvoir — car toute عصبية ne recherche que le pouvoir et
+   tend par nature à fonder un régime.
+8. Le **pouvoir** (`الملك`) est, aux yeux d'ابن خلدون, `"التغلب والحكم بالقهر"` et
+   `"الملك على الحقيقة لمن يستعبد الرعية، ويجبي الأموال، ويبعث البعوث، ويحمي الثغور"`. L'autorité
+   est en vérité **répressive**, mais elle ne se montre d'ordinaire pas à visage découvert : elle
+   le dissimule pour se donner un autre visage, dont elle tire sa **légitimité**.
+9. Selon ابن خلدون, la phase de **faiblesse de l'État** est celle où sa répression **augmente** —
+   comme s'il voulait cacher sa faiblesse par un surcroît de répression. Il fait de l'accroissement
+   des exigences de luxe chez le gouvernant la **cause de la corruption** du pouvoir. Il voit
+   ainsi que l'État et la civilisation ont, exactement comme l'homme, un **âge** :
+   « `إن العمران كله من بداوة وحضارة وملك وسوقة له عمر محسوس كما أن للشخص عمرا محسوسا` »
+10. **Conclusion imprimée (p.96-97)** : par cette critique de la méthode traditionnelle, ابن خلدون
+    a ouvert un **horizon épistémique nouveau** — une **refondation de l'écriture historique**.
+    L'importance de cette opération critique **ne tient pas seulement** à la critique de la
+    conception reçue de l'histoire, mais **essentiellement** à la reconstruction de la relation au
+    passé sur des bases de critique et de renouvellement de la conception, ce qui **libère
+    l'avenir** de la prison de la nostalgie du passé. Et l'apport khaldûnien important tient
+    aussi à ce qu'il fait de la **société** et de l'**histoire** un terrain de recherche et
+    d'examen **objectifs**, tant que le `العمران` a des caractères propres ou est régi par des
+    lois — d'où : le changement de la société **doit s'appuyer sur une connaissance objective**
+    des forces du réel historique et social.
+
+⚠️ **`أنذاك` (p.96)** est composé avec **hamza sur l'alif** là où l'orthographe attendue est
+`آنذاك` (madda). Vérifié à 600 dpi. Et la référence `[المقدمة ص582]` est la **seule de toute la
+sous-section 1.1.3.2 mise entre crochets droits** — et la seule sans espace entre `ص` et le
+numéro.
+
+**`* الجهاز المفهومي`** (p.97) — **5 entrées, comptées** ; **aucun équivalent latin** :
+
+| n° | Terme | Teneur |
+| :-- | :-- | :-- |
+| 1 | `التاريخ` | La connaissance des états divers et successifs dans lesquels se trouvaient, dans le passé, des objets de connaissance — que cet objet soit un peuple, une institution, une espèce vivante, une science… |
+| 2 | `التاريخية` | Caractère de tout ce qui est historique, **distinct du légendaire et de l'imaginaire** ; c'est aussi, d'un autre côté, le propre de l'homme qui vit l'histoire et en prend conscience **en tant qu'il est un être historique**. |
+| 3 | `الحركة` | Le changement qui a lieu dans le monde — `إذ لا توجد مادة دون حركة`. |
+| 4 | `الجدلية` | **Hégéliennement**, le mouvement de la pensée qui pose la question, la nie, puis dépasse l'affirmation et la négation vers une **synthèse** qui les rassemble et les excède. **Marxiennement**, elle privilégie la **lutte** qui gouverne le réel matériel (`الجدلية المادية`). ⚠️ Deux acceptions **explicitement opposées** dans la même entrée. |
+| 5 | `الصيرورة` | Le passage de la chose d'un état à un autre, ou d'un temps à un autre. |
+
+**`* تنبيهات`** (p.97) — **2 avertissements en puce `■`**, comptés :
+
+1. `ضرورة التمييز بين فلسفة التاريخ والتأريخ أي دراسة الماضي.` — **فلسفة التاريخ ≠ التأريخ**.
+2. `ضرورة التمييز بين فلسفة التاريخ والقراءات الدينية واللاهوتية والأسطورية للتاريخ` — celles qui
+   tiennent la **foi** et la **révélation** pour le fait fondamental de l'histoire humaine, toutes
+   les religions croyant à un pouvoir qui a fixé le commencement de l'histoire. Le manuel ajoute
+   que les civilisations anciennes se représentaient l'histoire comme une **arène de lutte entre
+   leurs dieux**, et que des formes de compréhension unifiée de la nature, de l'homme et des dieux
+   sont apparues dans la lutte, en disant la **contradiction entre le ciel et la terre**, et en
+   comprenant l'histoire comme une succession d'événements gouvernée par le **destin**. Enfin :
+   **القديس اغسطين** a partagé l'histoire de l'humanité en **deux royaumes** (`ملكوتين`) :
+   `ملكوت الله` et `ملكوت الشيطان`, en lutte permanente — la lutte du bien et du mal.
+
+⚠️ `اغسطين` est composé **sans hamza initiale** (pour `أغسطين`).
+
+**`* لمزيد التعمّق`** (p.97) — **6 entrées en puce `■`**, comptées ; références verbatim :
+
+1. `هو ركايمر : بداية فلسفة التاريخ البورجوازية ؛ ترجمة محمد علي اليوسفي.`
+2. `جان هيبوليت : مدخل إلى فلسفة التاريخ عند هيغل.`
+3. `غاستون بوتول : ابن خلدون وفلسفته الإجتماعية.`
+4. `ريمون آرون : أبعاد الوعي التاريخي.`
+5. `فرانسوا شاتليه : معرفة التاريخ.`
+6. `ميشال فوكو : أركيولوجيا المعرفة.`
+
+⚠️ **`هو ركايمر` est imprimé en DEUX mots séparés d'une espace** (600 dpi) — Horkheimer coupé.
+⚠️ `الإجتماعية` (entrée 3) avec **hamza sur l'alif**, pour `الاجتماعية`.
+⚠️ C'est le **seul** encadré `لمزيد التعمّق` de la sous-section où **aucune entrée** ne porte
+d'éditeur, de ville ni de date ; **une seule** (la 1ʳᵉ) nomme un traducteur.
+
+**Encadré rose p.97** (colonne de gauche, cadre à filet rose) — verbatim :
+
+> `لك أن تختار الزمن الذي تراه جديرا بك.`
+
+**Image p.97** (colonne de gauche, bas) : photographie **en couleurs** encadrée — un amoncellement
+d'une trentaine d'**horloges rondes** de tailles diverses, empilées en colonne sur la façade d'un
+bâtiment ancien. **Ni légende, ni attribution.**
+
+
+---
+
+###### § 1.1.3.3 — بحث وتحقيق : مدرسة الظنّة / L'école du soupçon — p.98-99
+
+**En-tête (p.98)** — deux titres calligraphiés :
+`نافذة دعائم التفكير في المسألة` (bandeau de la نافذة, filet grenat) puis **`بحث وتحقيق`**
+(titre de la sous-section, en calligraphie).
+
+⚠️ **Le titre imprimé est `مدرسة الظنّة`, pas `فلاسفة الظنّة`** que donne la consigne de tranche.
+Cartouche vert pâle, terme arabe à droite et équivalent français à gauche :
+**`مدرسة الظنّة`** / **`L'école du soupçon`**, suivi d'un **point d'interrogation rouge** dans le
+coin gauche du cartouche. Le titre `فلاسفة الظنّة` n'apparaît **nulle part** dans p.98-99 ; en
+revanche le bandeau gris de la p.99 porte, lui, **`فلاسفة الظنّة`** — les **deux** formes sont
+donc imprimées, à une page d'écart.
+
+**Structure imprimée : deux temps numérotés `أوّلا` / `ثانيّا`**, chacun dans un bandeau vertical
+de couleur.
+
+**`أوّلا` — bandeau vert (p.98)**, avec l'étiquette **`وضعية انطلاق`** :
+
+- **`1– أقرأ النصّ بتأنّ و أتثبّت في معانيه:`** — un سند unique, encadré vert.
+  **Auteur et référence imprimés, verbatim** :
+  `بول ريكور، سجال التأويلات . P.Ricoeur - Le conflit des interprétations`
+  ⚠️ Le titre arabe est ici **`سجال التأويلات`**, alors que la p.76 imprime, pour le même ouvrage,
+  **`صراع التأويل`**. Deux titres arabes pour un même livre, à 22 pages d'écart.
+  **R-2 : texte non recopié.** Thèse reformulée : la rencontre avec la psychanalyse produit une
+  secousse considérable chez quiconque s'est formé dans la **فينومينولوجيا** et la **philosophie
+  existentielle**, dans le contexte du renouvellement des **études hégéliennes** et des recherches
+  **à orientation linguistique** — car il ne s'agit pas de toucher à tel ou tel thème de la
+  réflexion philosophique et d'y revoir la vue, mais bien de viser **le projet philosophique tout
+  entier**. Le philosophe contemporain n'est loin **ni de فرويد ni de نيتشه ni de ماركس** : il a
+  devant lui **trois pôles de la ظنّة**, trois démasqueurs. Un problème neuf naît alors — celui
+  de la **fausseté de la conscience**, et de ce qu'est la fausseté de la conscience.
+  Citation courte, attribuée : « `فيقف ثلاثتهم أمامه أقطاب الظنّة وكاشفي الأقنعة` »
+  (بول ريكور, p.98).
+  ⚠️ **Mots surlignés en bleu dans le سند** (le manuel les met en évidence) :
+  `الفينومينولوجيا والفلسفة الوجوديّة` · `الدّراسات الهيقليّة` · `البحوث ذات المنحى اللّغوي` ·
+  `بفرويد` · `نيتشه` · `ماركس`.
+  ⚠️ **`الهيقليّة`** est imprimé avec un **ق**, là où tout le reste du chapitre écrit
+  `الهيغلي` / `الهيغليّة` avec un **غ** (p.91, p.93). Vérifié à 600 dpi.
+
+- **`2– أنطلق في البحث وأنجز المهام التاليّة:`** — **7 مهامّ numérotées**, comptées, verbatim :
+
+  1. `من يكون بول ريكور؟`
+  2. `ما هيّ أهمّ ملامح عصره: اجتماعيا، سياسيا، فلسفيّا وعلميّا ( أحدّد خاصّة وضع علوم الإنسان )؟`
+  3. `أستحضر مكتسباتي من الدّروس التي تابعتها لأحدّد:`
+     - `أ– أهمّ ملامح المدارس الفكريّة التي ذكرها بول ريكور.`
+     - `ب– دلالة " المشروع الفلسفي " الذي يجمع بينها.`
+  4. `أتوقّف عند كلمتي " لقاء " و" رجّة " وأحدّد دلالتهما.`
+  5. `أفكّر في " المشكل الفلسفي " وأقوم بصياغته بدقّة ووضوح.`
+  6. `أفكّر في " راهنيّة المشكل " وأحدّد " الرهان " من معالجته.`
+  7. `هل يمثّل المشكل الفلسفي المطروح جزءا من اهتماماتي؟ لماذا؟`
+
+  ⚠️ La 7ᵉ est numérotée **`7.`** (point) là où les six premières le sont **`1–` … `6 –`**
+  (tiret). Et les tâches 4, 5 et 6 portent une **espace avant le tiret** (`4 –`, `5 –`, `6 –`),
+  les tâches 1, 2, 3 non.
+
+- **Bandeau `معينات` (p.98, bas)** — trois cases blanches, chacune précédée d'une étiquette
+  verticale verte (`مصادر` / `مراجع` / `أنترنات`, lues de haut en bas). **Verbatim** :
+  1. `أستأنس بالنوافذ السابقة وأضبط قائمة المصادر :`
+  2. `أستأنس بالنوافذ السابقة وأضبط قائمة المراجع:`
+  3. `أجمع بعض المعلومات من العناوين المذكورة في النوافذ السابقة:`
+  Et, dans un cadre à part, à gauche, en vert :
+  `أتعاون مع أحد زملائي أو إحدى زميلاتي في ضبط هذه المعينات وأتبادل معه أو معها الوثائق.`
+
+**`ثانيّا` (p.99)** :
+
+- **`1– أقرأ النصّوص التالية بتأنّ وأتثبّت في معانيها`** — **trois سندات** encadrés bleus, en trois
+  colonnes, chacun surmonté du nom de son auteur **en bleu** et portant, en bas de cadre, un
+  **portrait photographique noir et blanc non légendé**. De droite à gauche : **ماركس** ·
+  **نيتشه** · **فرويد**. Les trois cadres sont reliés par une **flèche rouge** descendant vers un
+  bandeau gris commun portant **`فلاسفة الظنّة`**.
+  ⚠️ **Aucun des trois سندات ne porte de référence bibliographique** — ni ouvrage, ni traducteur,
+  ni page. C'est la seule série de سندات de la tranche dans ce cas.
+
+  | Auteur | Thèse (reformulée, R-2) |
+  | :-- | :-- |
+  | **ماركس** | Dans la vie ordinaire, n'importe quel boutiquier sait parfaitement distinguer entre ce que **chacun prétend être** et ce qu'il est **effectivement** ; mais notre histoire, elle, **n'est pas encore parvenue** à cette connaissance courante. Chaque époque croit à la véracité de ce qu'elle dit d'elle-même, et aux **illusions qu'elle tisse à son propre sujet**. |
+  | **نيتشه** | Interroger directement le sujet sur lui-même et sur les **ombres** que la pensée saisit d'elle-même, c'est une entreprise **pleine de périls** : il peut être utile et important, pour l'activité du sujet, qu'il **produise de soi une interprétation fausse**. |
+  | **فرويد** | Notre expérience quotidienne la plus personnelle nous met devant des idées qui nous viennent **sans que nous en connaissions la source**, et devant le résultat d'une pensée dont les mécanismes de production nous **restent cachés**. Tous ces actes conscients demeurent **incohérents et incompréhensibles** si nous nous obstinons à prétendre que c'est **par la conscience** que se perçoit tout ce qui se passe en nous en fait de faits psychiques. |
+
+  ⚠️ **Négation centrale du سند de ماركس** : `إلاّ أنّ تاريخنا لم يبلغ بعد هذه المعرفة المتداولة`
+  — l'histoire **n'a pas encore atteint** ce savoir de sens commun. La perdre inverse l'ironie du
+  texte.
+  ⚠️ **Le سند de فرويد est une phrase conditionnelle négative** : les actes conscients restent
+  inintelligibles **si** l'on s'obstine (`إن نحن واصلنا العناد في ادّعاء أنّه بواسطة الوعي يحسن
+  إدراك كلّ ما يجري داخلنا من وقائع نفسيّة`). La thèse défendue est donc **l'insuffisance de la
+  conscience**, non le contraire.
+
+- **`2– أنجز المهّام التالية مستعينا بالوثائق التي جمعتها:`** — **6 blocs de tâches**, comptés ;
+  **deux d'entre eux sont composés en bleu et en gras** (les blocs de synthèse), les quatre autres
+  en noir :
+
+  1. `ما المقصود بفلسفات الوعي وما هيّ أهمّ مرتكزات تصوّرها للإنسان؟`
+  2. `ما دلالة الوهم في سياق نص ماركس؟ أستحضر بعض الأوهام التي يشير إليها النص. أيّ معنى يحمله " التظنّن " ؟ ماذا يغيّر في تصوّرنا للإنسان؟`
+  3. `ما دلالة " الظلال " في نص نيتشه؟ أستحضر بعض ما يعدّ " تأويلا خاطئا " في نظره؟ ماذا يغيّر هذا الموقف من تصوّرنا للإنسان؟`
+  4. **`ما الذي يجمع ماركس بنيتشه؟ ما الذي يبعدهما عن فلسفات الوعي؟`** *(en bleu gras)*
+  5. `ما دلالة عجز الوعي عن الفهم في نظر فرويد؟ أستحضر بعض الوقائع النفسيّة للتدليل على هذا العجز. ماذا يغيّر هذا الموقف من تصوّرنا للإنسان؟`
+  6. **`ما الذي يجمع ماركس ونيتشه بفرويد؟ أتبيّن التحوّل الذي أحدثه هؤلاء في تصوّرنا للإنسان.`** *(en bleu gras)*
+
+⚠️ **Les deux pages inversent exactement le placement des شدّات**, vérifié à 600 dpi sur chacune :
+p.98 imprime `وأنجز المهام التاليّة` — `المهام` **sans** شدّة, `التاليّة` **avec** ;
+p.99 imprime `أنجز المهّام التالية` — `المهّام` **avec** une شدّة posée sur le **ه**
+(l'orthographe attendue la met sur le **م** final : `المهامّ`), `التالية` **sans**.
+
+**Fin du مبحث 1.1.3 à la p.99.** La p.100 ouvre une **autre نافذة**.
+
+---
+
+##### § نافذة 1.1.4 — كيفيّات التفكير — p.100-103
+
+**Page d'ouverture — p.100.** Bandeau vert pâle en tête de page, puis titre calligraphié sur deux
+lignes séparées par un filet grenat : **`كيفيات`** / **`التفكير`**.
+
+⚠️ Le titre imprimé est **`كيفيات التفكير`, sans شدّة sur le ي** de `كيفيّات`, contrairement à la
+forme donnée par la consigne de tranche. Vérifié à 600 dpi.
+
+**Image (p.100)** — photographie encadrée d'un filet orange : une **chouette effraie** au plumage
+blanc et fauve, posée dans l'embrasure d'une **fenêtre à six carreaux** au châssis de bois usé,
+sur fond noir. **Ni légende, ni attribution.**
+
+**Encadré-citation (p.100, fond ocre)** — attribué par une **étiquette orange** portant le nom
+**`هيدغر`**, à côté d'un **portrait photographique** de l'auteur. Aucune référence
+bibliographique imprimée : ni ouvrage, ni traducteur, ni page. **R-2 : non recopié.**
+
+> **Thèse reformulée** : même quand la langue impose des **noms** à tout ce qui se répand dans
+> l'être, il faut encore trouver **un seul mot** — car l'être se dit en tout lieu, à chaque
+> instant, et à travers toute langue. Et la difficulté **n'est pas** de trouver dans l'esprit le
+> mot qui s'accorde à l'être : elle est de **tenir ce mot dans la discipline d'une pensée
+> véritable**.
+>
+> Citation courte, attribuée : « `العسر في شدّ هذه الكلمة إلى انضباط تفكير حقيقي` »
+> (هيدغر, p.100).
+
+⚠️ **Négation cardinale** : `وليس العسر في أن نعثر في الذّهن، على الكلمة التي تتوافق والوجود
+وإنّما العسر في شدّ هذه الكلمة…`. La difficulté est **déplacée**, non niée. Une reformulation qui
+la logerait dans la recherche du mot dit l'inverse.
+⚠️ Le manuel signale lui-même une coupe interne par **`[...]`** — les points de suspension
+initiaux `"...` marquent en outre que la citation commence **en cours de phrase**.
+
+**Structure de la نافذة — 4 exercices numérotés `1` à `4`**, comptés (p.101-103), chacun ouvert
+par un cartouche `تمرين` + son numéro, sur un motif de trois carrés orangés.
+
+Gabarit constant : `المهارة المستهدفة` (cartouche ocre) → énoncé encadré → `توضيح` (cartouche
+ocre, encadré d'explication) → puis, selon l'exercice, `السند` + `المهام`, ou `التمشّيات`, ou
+`المهمّة` + les trois étapes.
+
+**`تمرين 1` (p.101)**
+
+- **`المهارة المستهدفة`** : `الكشف عن ضمنيات موقف ونقدها.`
+- **`توضيح`**, verbatim :
+  > الضمنيّة هي ما يفترضه الموقف دون أن يعلن عنه، وهي التي تؤسس وجاهته. يحتاج الفكر النقدي إلى
+  > الكشف عنها للتأكّد من صدقها لأنّه بإثبات وهنها ينهار الموقف ذاته.
+- **`السند`**, verbatim pour le cadre :
+  > تخصّص جريدة يوميّة ركنا لتفسير الأحلام. في أحد أعدادها روت قارئة حلما عاشته أثناء نومها
+  > وتساءلت عن تأويله.
+  - **`الحلم :`** — récit de la lectrice, **R-2 non applicable** (texte du manuel, non un extrait
+    d'œuvre) : « `رأيت في المنام ذئبا يلاحقني في مكان معزول، وفجأة ظهر أشخاص ساعدوني على التخلّص
+    منه. فما تأويل ذلك؟` »
+  - **`التفسير :`** — la réponse du journal : le loup en rêve signifie, pour une femme, un
+    **ennemi** ou une personne querelleuse et obstinée ; d'où la nécessité de la prudence, des
+    mesures nécessaires pour l'affronter et d'empêcher qu'il ne produise son effet. Le rêve
+    indique aussi la **délivrance** de certains problèmes et obstacles que la rêveuse rencontrera
+    dans sa vie affective et familiale.
+- **`المهام:`**, verbatim :
+  > يُضمر هذا التفسير تصوّرا مخصوصا للحلم، المطلوب:
+  > – ما دلالة الحلم في تصوّر المفسّر؟
+  > – أستحضر مكتسباتي من التحليل النفسي وأحكم على وجاهة هذا التفسير.
+
+**`تمرين 2` (p.101-102)**
+
+- **`المهارة المستهدفة`** : `تحديد دلالة مفهوم.` — puis l'énoncé, avec les mots
+  **`الجسد الخاص`** sur fond de trame : `ما دلالة الجسد الخاص؟`
+- **`توضيح`**, verbatim :
+  > تقتضي هذه المهارة:
+  > – استبعاد دلالة سابقة ( سائدة مثلا )
+  > – اختيار مرجعيّة نظريّة لاعتمادها في التحديد.
+  > – إبراز الطابع الإجرائي للمفهوم على اعتبار أن دلالته تسمح بحلّ مشكل ما.
+- **`التمشّيات:`** (p.102, cartouche ocre, quatre cases blanches) — **4 étapes, comptées**,
+  verbatim :
+  1. `أستحضر دلالة شائعة للجسّد.`
+  2. `أبحث عن بعض المؤشّرات وأبيّن بها هشاشة هذه الدلالة.`
+  3. `أختار مرجعيّة نظريّة وأحدّد من خلالها دلالة الجسد الخاص. أراعي في ذلك التوافق مع المؤشرات التي أثرتها في التمشّي الثاني.`
+  4. `أبيّن إجرائيّة هذه الدلالة من خلال بيان ما تستطيعه لمعالجة مشكل ما.`
+
+**`تمرين 3` (p.102)**
+
+- **`المهارة المستهدفة`** : `إجلاء حجّة والنظر في وجاهتها.`
+- **`توضيح`**, verbatim — **deux définitions**, comptées :
+  > – **الحجّة** هي ما يُؤتى به لإثبات ما تمسّ الحاجة إلى إثباته.
+  > – **المماثلة** هي معادلة علائقيّة نستخلص بواسطتها مساواة أو تشابها، **لا بين حدود العلاقة بل
+  > بين العلاقات ذاتها**.
+
+  ⚠️ **Négation-clé de la définition de la `المماثلة`** : l'égalité ou la ressemblance ne porte
+  **pas** sur les termes de la relation mais sur **les relations elles-mêmes**. C'est cette
+  négation qui distingue la مماثلة d'une simple comparaison.
+- **`السند`** — **extrait de ديكارت**, **R-2 : non recopié**. Référence imprimée, verbatim, en
+  bas du cadre : **`ديكارت انفعالات النفس`** — sans traducteur, sans éditeur, sans page.
+  **Thèse reformulée** : la mort **ne survient pas** par une défaillance de l'âme, mais **seulement**
+  par la corruption de l'une des parties principales du corps. Il faut donc admettre que le corps
+  d'un homme **vivant** diffère de celui d'un homme **mort** comme une horloge, ou toute autre
+  machine automatique, diffère d'elle-même quand elle est montée et qu'elle contient en soi le
+  principe corporel des mouvements pour lesquels elle a été faite, avec tout ce que réclame son
+  fonctionnement — et cette même horloge, ou cette même machine, quand elle **se brise** et que
+  son principe de mouvement s'arrête.
+
+  ⚠️ **Négation à conserver absolument** : `لنعتبر بأنّ الموت لا يأتي بسبب هفوة من النفس، ولكن
+  فقط بسبب فساد أحد الأجزاء الرئيسيّة للجسم`. C'est **l'inverse** de la thèse populaire ; la
+  perdre détruit l'argument que l'exercice demande d'évaluer.
+- **`المهام:`**, verbatim :
+  > – أحدد الأطروحة التي يدافع عنها الكاتب باعتبارها تمثّل مرمى الحجاج.
+  > – يعتمد الكاتب مماثلة في حجاجه: أضبط حدودها، أبرز طبيعة العلاقة بين الحدود وأبين ما يُعدّ معادلة بين مختلف هذه الحدود.
+  > – أتثبّت من وجاهة هذه الحجّة.
+
+**`تمرين 4` (p.103)**
+
+- **`المهارة المستهدفة`** : `القدرة على التأليف.`
+- **`المهمّة:`**, verbatim :
+  > **هل من تطابق بين وعيي بذاتي وحقيقة ذاتي؟**
+  > أجيب عن هذا السؤال في فقرة لا تتجاوز العشرين سطرا متبعا في ذلك التمشيات المصاحبة.
+- **Les trois étapes de rédaction, en trois cartouches ocre à droite**, comptées, verbatim :
+
+  | Étape | Consignes imprimées |
+  | :-- | :-- |
+  | **`مرحلة بناء المشكل`** | `– أبيّن ما يبرر معالجة هذا السؤال.` · `– أشير إلى أهميّة السؤال.` · `– أستخلص مشكلا فلسفيّا أصوغه بوضوح.` |
+  | **`مرحلة بلورة الجواب`** | `– أبيّن دلالة القول بالتطابق بين... ( مع تحديد المفاهيم )` · `– أستدل عليه ( تقديم حجة على الأقل )` · `– أعترض عليه ببيان حدود وجاهته ( من خلال الكشف عن ضمنية أو استتباع أو تناقض مع الواقع ).` · `– أقترح بديلا وأوضّحه.` · `– أستدل على وجاهته.` |
+  | **`مرحلة الاستخلاص`** | `– أستخلص الموقف النهائي.` · `– أشير إلى قيمته.` |
+
+⚠️ **La نافذة كيفيّات التفكير ne porte aucun سند de la p.103** : la p.103 se termine sur la
+troisième étape, la moitié inférieure de la page étant **blanche**. Constaté sur la page.
+
+---
+
+##### § نافذة 1.1.5 — نصّ مطوّل — ديكارت, التأمّلات الميتافيزيقيّة — p.104-112
+
+**Page d'ouverture — p.104.** Bandeau vert pâle, puis titre calligraphié sur deux lignes séparées
+d'un filet grenat : **`نافذة`** / **`نص مطوّل`**.
+
+**Trois images (p.104)**, dont **deux légendées** :
+
+1. Haut de page, cadre noir : détail d'une **peinture** — deux mains tournant la page d'un
+   **livre enluminé** ouvert, manche rouge et or, sur fond de tenture rouge. **Ni légende, ni
+   attribution.**
+2. Colonne de droite, cadre noir : reproduction d'une **couverture de livre** portant, imprimé sur
+   la couverture elle-même, `DESCARTES` / `méditations métaphysiques` / `GF-Flammarion`, avec un
+   détail de peinture (personnage vu de dos, tenant des jetons). **Deux légendes imprimées**,
+   chacune précédée d'un triangle :
+   - `▲ التأملات الميتافيزيقية`
+   - `► ديكارت ( 1596 – 1650 )` puis, sur la ligne suivante, **`René DESCARTES`**
+3. Bas de page, sans cadre : **portrait au trait** (dessin à la plume) d'un homme à moustache et
+   cheveux mi-longs. **Ni légende, ni attribution.**
+
+⚠️ La graphie latine du nom, **`René DESCARTES`**, n'apparaît **qu'ici** ; le corps du chapitre
+n'emploie que `ديكارت`.
+⚠️ Le titre arabe de l'œuvre est imprimé **`التأملات الميتافيزيقية`** dans la légende de la p.104
+— **sans شدّة** ni sur le م de `التأمّلات` ni sur le ي de `الميتافيزيقيّة`.
+
+**Encadré-citation (p.104, cadre à filet grenat)** — attribué sous le texte par **`ديكارت`**,
+**sans référence bibliographique** (ni ouvrage, ni traducteur, ni page). **R-2 : non recopié.**
+
+> **Thèse reformulée** : Archimède **ne demandait rien de plus qu'un seul point fixe et immobile**
+> pour déplacer le globe terrestre d'un lieu à un autre. De même, il est permis de concevoir les
+> plus grands espoirs si la chance me fait trouver **une seule chose certaine, hors de doute**.
+>
+> Citation courte, attribuée : « `فوجدت شيئا يقينيّا لا شكّ فيه` » (ديكارت, p.104).
+
+⚠️ **Structure restrictive `لم يكن يطلب إلاّ`** — « ne demandait que » : une reformulation en
+« demandait » sans la restriction perd l'argument, qui repose entièrement sur le caractère
+**minimal** de ce qui est requis.
+
+**Intervalle de dates de la p.104** — vérifié : rendu **visuel** `( 1650 -1596 )`, donc ordre
+**logique** `1596 – 1650`. **Ordre correct**, pas de `[sic]`.
+
+
+---
+
+###### النصّ mis en page — p.105-112
+
+**En-tête de la p.105** — trois niveaux de titre :
+1. `نص مطوّل` (calligraphie, filet grenat) ;
+2. **`التأملات الميتافيزيقيّة`** (calligraphie **rose**) et, dans un cartouche ocre, l'auteur :
+   **`ديكارت`** ;
+3. sur un filet oblique rose, à gauche : **`التأمل الثاني`**.
+
+**Bandeau de sous-titre (p.105, encadré pleine largeur)**, verbatim :
+
+> `في طبيعة النفس الإنسانيّة: وإنّ معرفتها أيسر من معرفة الجسم`
+
+**⚠️ R-2 — ce que je ne fais PAS.** Le texte des p.105-112 est la **traduction arabe de عثمان أمين**,
+sous droits. Je ne la recopie pas. Ce qui suit restitue : la **référence imprimée verbatim**, le
+**découpage que le manuel imprime lui-même** (numérotation des lignes, notes numérotées, repères
+marginaux **tous verbatim**), le **mouvement de l'argumentation reformulé**, et **3 citations
+courtes** au plus.
+
+**Référence bibliographique imprimée (p.112, sous le texte, centrée)** — **verbatim** :
+
+> **`ديكارت، التأملات الميتافيزيقيّة، التأمل الثاني`**
+> `ترجمة عثمان أمين، مكتبة الأنجلو المصريّة، 1974. ص 85 – 111`
+> `(مع مراجعة لجنة التأليف)`
+
+⚠️ La référence donne traducteur, éditeur, année et pages, mais **aucune ville**. La mention
+`(مع مراجعة لجنة التأليف)` signale que la commission de rédaction du manuel **a révisé** la
+traduction : le texte imprimé n'est donc pas exactement celui de l'édition citée.
+⚠️ Le titre est ici **`التأملات الميتافيزيقيّة`** — avec شدّة sur le ي de `الميتافيزيقيّة` —, alors
+que la légende de la p.104 imprime `التأملات الميتافيزيقية` **sans** شدّة. Deux graphies du titre
+à huit pages d'écart.
+⚠️ `ص 85 – 111` — **pagination**, pas un intervalle de dates.
+
+**Numérotation des lignes — comptée, pas présupposée.** Le manuel numérote **de 5 en 5**, dans la
+marge intérieure (côté texte), en petits chiffres. **Aucun questionnaire n'accompagne le texte** —
+convention confirmée ici pour la quatrième fois (après Popper, Spinoza et Nietzsche).
+
+| Page | Numéros de ligne imprimés | Nombre |
+| :-- | :-- | :-- |
+| p.105 | 5 · 10 · 15 · 20 · 25 | 5 |
+| p.106 | 30 · 35 · 40 · 45 · 50 · 55 · 60 · 65 | 8 |
+| p.107 | 70 · 75 · 80 · 85 · 90 · 95 · 100 | 7 |
+| p.108 | 105 · 110 · 115 · 120 · 125 · 130 · 135 · 140 | 8 |
+| p.109 | 145 · 150 · 155 · 160 · 165 · 170 | 6 |
+| p.110 | 175 · 180 · 185 · 190 · 195 · 200 · 205 | 7 |
+| p.111 | 210 · 215 · 220 · 225 · 230 · 235 · 240 · 245 | 8 |
+| p.112 | 250 · 255 · 260 · 265 | 4 |
+| **Total** | **de 5 à 265** | **53 numéros** |
+
+Le texte court donc sur **environ 266 lignes** (il s'achève quelques mots après le repère 265).
+
+**Notes de bas de page numérotées — 2, comptées** (appelées dans le texte par `(1)` et `(2)`,
+développées dans la marge, chacune précédée d'un triangle ocre `▶`) :
+
+| n° | Appel | Note imprimée, verbatim |
+| :-- | :-- | :-- |
+| 1 | l.1, après `أمس` | `1– تمهيد: تحديد دواعي التأمل الثاني.` `(يشير ديكارت إلى التأمل الأول والذي ضمنه البحث عن الأشياء التي يمكن أن توضع موضع شك.)` |
+| 2 | l.11, après `أرخميدس` | `2– أرخميدس (287 – 212 ق م) رياضي وعالم يوناني مخترع الآلة الرافعة.` |
+
+⚠️ La note 1 est en fait **double** : elle sert d'appel de note **et** de premier repère de lecture
+(`تمهيد`). Elle est la seule du texte dans ce cas.
+⚠️ **Intervalle vérifié** : rendu **visuel** `( ق م 212 - 287)`, donc ordre **logique**
+`(287 – 212 ق م)`. **Ordre correct** — décroissant, av. J.-C., exactement comme le
+`( 469—399 ق م )` de Socrate relevé au fragment ch1a. Pas de `[sic]`.
+
+**Repères marginaux — TOUS transcrits verbatim, comptés page par page.**
+La marge de chaque page est un bandeau jaune pâle courant sur toute la hauteur ; chaque bloc y est
+précédé d'un **triangle ocre `▶`** pointé vers la ligne concernée.
+**Compte exact : 27 blocs marginaux au total** — les **26** du tableau ci-dessous, plus le bloc de la
+**note 2** (p.105), qui porte lui aussi son triangle. Comme **R1 est en même temps la note 1**, les
+repères *de lecture* proprement dits sont au nombre de **25**.
+
+| # | Page | ≈ ligne | Repère, **verbatim** |
+| :-- | :-- | :-- | :-- |
+| R1 | 105 | 1 | *(voir note 1)* `تمهيد: تحديد دواعي التأمل الثاني.` |
+| R2 | 105 | 6 | `تأكيد تطابق فعل التفكير الفلسفي مع ممارسة الشك وإبراز الطابع المنهجي للشك.` |
+| R3 | 105 | 13 | `لحظة بلورة المشكل وطرحه: يمكن أن نميز فيه بين لحظتين تنقلنا من العام إلى الخاص، من السؤال عن الحقيقة إلى السؤال عن حقيقة الأنا المستوى الأول.` |
+| R4 | 106 | 30 | `تقديم الموقف أو الأطروحة: تأكيد يقين وجود الذات. البرهنة على الأطروحة: استبعاد فرضية الشيطان الماكر بما هو اعتراض على يقينية وجود الأنا.` |
+| R5 | 106 | 38 | `الانتقال من إثبات وجود الأنا إلى التساؤل عن ماهية الأنا. ( ألاحظ أن المطلب الديكارتي يتمثل في بلوغ اليقين ومعياره البداهة التي تتسم بالوضوح والتميّز بحيث لا يحتمل الشك )` |
+| R6 | 106 | 47 | `تحذير منهجي : أنتبه إلى مخاطر الإنزياح عن المشكل الأساسي للخوض في مسائل جانبيه ( أحذر من متاهات السؤال )` |
+| R7 | 106 | 51 | `تحديد زاوية النظر في الإنسان من جهة طبيعته بما هو إنسان أي من جهة الجسم والنفس` |
+| R8 | 106 | 55 | `التفكير في الإنسان من جهة الجسم / الجثة` |
+| R9 | 106 | 63 | `تعريف الجسم بما هو امتداد` |
+| R10 | 107 | 72 | `استبعاد أن تكون الأنا جسما.` |
+| R11 | 107 | 80 | `استعادة السؤال عن حقيقة الأنا والانتقال من التفكير في الإنسان من جهة الجسم إلى التفكير في الإنسان من جهة النفس وصفاتها` |
+| R12 | 107 | 85 | `استخلاص تميز النفس عن الجسم بصفة الفكر وتأكيد يقينية وجود الأنا` |
+| R13 | 107 | 89 | `تحويل الاستنتاج إلى مشكل لمواصلة التفكير في ماهية الأنا. ( أنتبه إلى تطابق الفكر والوجود )` |
+| R14 | 107 | 94 | `اعتماد الدحض كأسلوب للحجاج` |
+| R15 | 107 | 99 | `اعتماد ديكارت على منهج فرضي استنتاجي مما يؤكد تأثره بالمنهج الرياضي.` |
+| R16 | 107 | 102 | `انتبه إلى تمييز المعرفة بالأنا و الوعي بالأنا` |
+| R17 | 108 | 113 | `أنتبه إلى النتيجة التي يتنهي إليها ديكارت والمتمثلة في تحديد ماهية الأنا شيئا مفكرا` |
+| R18 | 108 | 117 | `تحديد دلالة الأنا أفكر بما هو وعي` |
+| R19 | 108 | 137 | `استخلاص بداهة الأنا أفكر` |
+| R20 | 109 | 146 | `أنتبه إلى أن الإحساس ليس شيئا آخر غير التفكير ( لا يحيل الإحساس على الجسم وإنما على النفس )` |
+| R21 | 109 | 155 | `في إثبات أن معرفة النفس أيسر من معرفة الجسم` |
+| R22 | 109 | 158 | `اعتماد حجة بالخلف: النظر في طبيعة معرفتنا للأجسام (قطعة الشمع مثلا) لتأكيد أن إدراك حقيقتها لا يرد إلى معطيات التجربة وإنما إلى الذهن.` + `الإدراك لمحة من لمحات الذهن` |
+| R23 | 110 | 203 | `الإدراك لمحة من لمحات الذهن` |
+| R24 | 111 | 235 | `إقرار أن معرفة الأنا أيسر وأكثر وضوحا وتميزا من معرفة الجسم` |
+| R25 | 112 | 248 | `إثبات أن معرفة العالم متوقفة على معرفة الأنا دون أن تكون معرفة الأنا متوقفة على معرفة العالم` |
+| R26 | 112 | 260 | `أنتبه إلى أهمية التأني تلافيا للسقوط في إصدار أحكام متسرعة، وهو ما حرص عليه فيلسوفنا.` |
+
+⚠️ **R22 et R23 se recouvrent** : la phrase `الإدراك لمحة من لمحات الذهن` **clôt** le bloc R22
+(p.109) **et** constitue à elle seule le bloc R23 (p.110). Vérifié à 600 dpi : R22 ne porte
+**qu'un seul** triangle, le second triangle est bien celui de la p.110.
+⚠️ **`يتنهي` (R17, p.108)** — métathèse pour `ينتهي` : le ت précède le ن. Tracé net à 600 dpi.
+⚠️ **`الإنزياح`** et **`جانبيه`** (R6, p.106) : hamza sur l'alif pour `الانزياح`, et `جانبيه` pour
+`جانبية`.
+
+**Mouvement de l'argumentation — reformulé, calé sur les repères imprimés**
+
+1. **`تمهيد` (l.1-10)** — la méditation de la veille a jeté l'esprit dans des doutes trop grands
+   pour être oubliés ; l'auteur se compare à quelqu'un tombé dans une eau profonde, qui ne peut ni
+   poser pied au fond ni nager jusqu'à la surface. Il décide pourtant de poursuivre le chemin de
+   la veille, **en écartant tout ce qui admet le moindre doute exactement comme s'il en était
+   avéré faux**, et d'avancer jusqu'à trouver une chose certaine — ou, à défaut, jusqu'à savoir
+   avec certitude qu'**il n'y a rien de certain au monde**.
+   ⚠️ **Négation-charnière** : `حتّى أعلم علم اليقين أنّه ليس في العالم شيء يقيني` — c'est une
+   **branche de l'alternative**, pas la thèse.
+2. **`لحظة بلورة المشكل` (l.11-19)** — Archimède ne demandait qu'un point fixe ; de même, on peut
+   nourrir les plus grands espoirs si l'on trouve une seule chose certaine. Suit l'hypothèse
+   maximale : supposer **fausses** toutes les choses vues, tenir pour illusions la mémoire, les
+   sens, le corps, la figure, l'étendue, le mouvement et le lieu. Que reste-t-il alors de vrai ?
+   Peut-être **une seule chose** : qu'il n'y a rien de certain au monde.
+3. **`تقديم الموقف` (l.20-36)** — objection : peut-être existe-t-il autre chose dont on ne puisse
+   douter. N'y a-t-il pas un dieu, ou une autre puissance, qui met ces pensées dans l'esprit ?
+   Ce n'est même pas nécessaire : je puis en être moi-même l'auteur — **ne suis-je donc pas
+   quelque chose, au moins ?** Puis la **fiction du malin génie** : s'il existe un trompeur très
+   habile qui met tout son art à m'égarer sans relâche, **il ne fait pas de doute que j'existe
+   puisqu'il me trompe** ; qu'il me trompe autant qu'il voudra, il ne pourra jamais faire que je
+   ne sois rien tant que je penserai être quelque chose. D'où la conclusion imprimée **en gras**
+   dans le texte : **`أنا كائن، أنا موجود`** — proposition nécessairement vraie **chaque fois**
+   qu'on la prononce ou qu'on la conçoit en son esprit.
+   Citation courte, attribuée : « `أنا كائن، أنا موجود` » (ديكارت, l.36).
+4. **`الانتقال إلى التساؤل عن ماهية الأنا` (l.37-44)** — mais je ne sais pas encore clairement
+   **ce que je suis, moi qui suis certain d'exister**. Il faut désormais prendre garde à ne pas
+   confondre imprudemment ce moi avec autre chose, et à ne pas s'égarer dans une connaissance que
+   je tiens pour plus certaine et plus évidente que celles acquises auparavant.
+5. **`تحذير منهجي` (l.45-51)** — reprendre l'examen de ce que je croyais être avant ces dernières
+   pensées, et retrancher de mes anciennes opinions tout ce que les raisons du doute peuvent
+   entamer, pour ne laisser subsister que ce qui **ne se laisse pas douter**. Que croyais-je donc
+   être ? Un homme. Mais qu'est-ce qu'un homme ? Dirai-je « un animal raisonnable » ? **`كلاّ
+   بالتأكيد`** — car il faudrait alors chercher ce qu'est l'animal et ce qu'est le raisonnable, et
+   descendre ainsi d'une question à d'autres plus difficiles et plus embrouillées.
+   ⚠️ Le refus est **explicite et catégorique** dans la source (`كلاّ بالتأكيد`) : il s'agit de
+   rejeter la définition scolastique, non de l'adopter.
+6. **`التفكير في الإنسان من جهة الجسم` (l.52-70)** — je me pensais d'abord un visage, des mains,
+   des bras, tout cet appareil d'os et de chair tel qu'il paraît **dans un cadavre**, que je
+   nommais le corps ; puis je me pensais me nourrir, marcher, sentir, penser, et je rapportais ces
+   actions à l'âme. Définition imprimée du corps : **tout ce qui peut être borné par une figure,
+   occuper un lieu et remplir un espace d'où tout autre corps est exclu**, être senti par le
+   toucher, la vue, l'ouïe, le goût ou l'odorat, et être mû de diverses façons **non par soi mais
+   par autre chose** qui le touche.
+   ⚠️ **Négation** : `لا من ذاته بل بشيء خارج عنه` — le corps ne se meut **pas** de lui-même.
+7. **`استبعاد أن تكون الأنا جسما` (l.71-79)** — sous l'hypothèse du trompeur, puis-je affirmer
+   posséder **une seule** des propriétés que j'attribuais au corps ? Après examen, aucune ne
+   subsiste. Passons donc aux propriétés de l'âme : la première serait de me nourrir et de
+   marcher.
+8. **`استعادة السؤال عن حقيقة الأنا` (l.80-84)** — si je n'ai pas de corps, il est vrai aussi que
+   je n'ai le pouvoir **ni de marcher ni de me nourrir**. Une autre propriété est de sentir ;
+   mais sentir sans corps est impossible, et j'ai cru bien des fois sentir en rêve ce que je n'ai
+   pas senti en réalité. Reste une troisième propriété : **penser**.
+9. **`استخلاص تميز النفس عن الجسم بصفة الفكر` (l.85-89)** — je trouve ici que **la pensée est
+   l'attribut qui m'appartient en propre** ; **elle seule** ne peut être détachée de moi. Je suis,
+   j'existe : cela est certain. Mais **combien de temps** ? Autant de temps que je pense — car
+   peut-être, si je cessais entièrement de penser, cesserais-je du même coup d'exister.
+   Citation courte, attribuée : « `أنا موجود مادمت أفكّر` » (ديكارت, l.86-87).
+10. **`تحويل الاستنتاج إلى مشكل` (l.89-93)** — je ne reçois donc rien qui ne soit nécessairement
+    vrai : je ne suis, à parler exactement, **qu'une chose qui pense**, c'est-à-dire un esprit,
+    une intelligence, une raison — mots dont j'ignorais auparavant la signification.
+11. **`اعتماد الدحض كأسلوب للحجاج` (l.94-99)** — je ne suis pas cet assemblage d'organes qu'on
+    nomme corps humain ; je ne suis ni un air subtil répandu dans ces organes, ni un vent, ni un
+    souffle, ni une vapeur, ni rien de ce que je puis feindre — puisque j'ai supposé tout cela
+    inexistant, et que **je demeure certain d'être quelque chose**.
+12. **`اعتماد منهج فرضي استنتاجي` (l.99-102)** — mais peut-être ces choses mêmes que je suppose
+    inexistantes ne sont-elles pas, en vérité, différentes de ce moi que je connais ? Je n'en sais
+    rien, je n'en dispute pas maintenant : **je ne puis juger que de ce qui m'est connu**.
+13. **`تمييز المعرفة بالأنا والوعي بالأنا` (l.102-108)** — je sais que j'existe ; je cherche à
+    savoir **ce que je suis**. Or cette connaissance-là **ne dépend d'aucune des choses que je
+    puis imaginer** : les mots mêmes de « feindre » et d'« imaginer » avertissent de mon erreur,
+    car imaginer, c'est contempler la figure d'une chose **corporelle**.
+14. **`النتيجة: الأنا شيء مفكر` (l.109-120)** — mon imagination ne me sert donc à rien pour me
+    connaître ; il faut détourner l'esprit de cette manière de concevoir. **Qu'est-ce donc que
+    moi ? Une chose qui pense.** Et qu'est-ce qu'une chose qui pense ? — énumération imprimée :
+    **`يشكّ، ويتصوّر، ويُثبت، وينفي، ويريد، ولا يريد، ويتخيّل أيضا ويحسّ`**. **8 verbes, comptés.**
+15. **`استخلاص بداهة الأنا أفكر` (l.121-140)** — n'est-ce pas moi-même qui doute presque de tout,
+    qui pourtant comprend et affirme certaines choses, nie le reste, veut et désire, refuse d'être
+    trompé, imagine beaucoup malgré moi, et sent aussi beaucoup par l'entremise des organes du
+    corps ? Y a-t-il là quoi que ce soit d'aussi certain que le fait que je suis et que j'existe,
+    **même si je dormais toujours** et si celui qui m'a donné l'être employait tout son art à
+    m'égarer ? Et **aucune** de ces propriétés ne peut être distinguée de ma pensée : il est
+    évident que **c'est moi qui doute, moi qui comprends, moi qui désire**.
+16. **`الإحساس يحيل على النفس، لا على الجسم` (l.141-153)** — le sentir aussi appartient à cette
+    pensée : même si je dormais, il est certain qu'il **me semble** voir une lumière, entendre un
+    bruit, sentir une chaleur ; cela ne peut être faux, et c'est précisément ce qu'on nomme en moi
+    **sentir** — lequel, ainsi entendu, **n'est rien d'autre que penser**.
+    ⚠️ **Point cardinal du repère R20** : `الإحساس ليس شيئا آخر غير التفكير` — la sensation est
+    reconduite à la **pensée**, non au corps.
+17. **`في إثبات أن معرفة النفس أيسر من معرفة الجسم` (l.154-157)** — l'esprit se plaît à s'égarer et
+    ne souffre pas d'être tenu dans les bornes du vrai ; qu'on lui lâche donc la bride une fois
+    encore, quitte à la reprendre **au moment opportun** : il sera alors plus facile à conduire.
+18. **`حجة بالخلف : قطعة الشمع` (l.158-205)** — prenons le **morceau de cire** tout juste tiré de
+    la ruche : il garde le goût du miel, l'odeur des fleurs, sa couleur, sa figure, sa grandeur ;
+    il est dur, froid, maniable, et rend un son si on le frappe. Approchons-le du feu : la saveur
+    s'évanouit, l'odeur s'exhale, la couleur change, la figure se perd, la grandeur augmente, il
+    devient liquide et brûlant, on ne peut plus le toucher, et il ne rend plus de son. **La même
+    cire demeure-t-elle après tous ces changements ? Il faut avouer qu'elle demeure** — et
+    personne n'en peut douter. Ce que nous connaissions donc en elle avec tant de distinction
+    n'était **rien de ce que les sens y avaient remarqué**, puisque tout cela a changé et que la
+    cire, elle, demeure. Reste seulement quelque chose d'**étendu, flexible et muable** ; or je ne
+    puis parcourir par l'imagination l'infinité des changements dont elle est capable — donc ma
+    conception de la cire **n'est pas le fruit de la faculté d'imaginer**. Et l'étendue elle-même
+    n'est pas connue autrement. Il faut donc admettre que **je ne saurais concevoir par
+    l'imagination ce qu'est cette cire, et que seul mon esprit la conçoit**. Cette perception
+    n'est **ni une vision, ni un attouchement, ni une imagination** : elle est **une inspection de
+    l'esprit** (`لمحة من لمحات الذهن`), qui peut être imparfaite et confuse, ou claire et
+    distincte, selon le degré d'attention porté aux éléments qui la composent.
+    Citation courte, attribuée : « `الإدراك لمحة من لمحات الذهن` » (repère marginal, p.109-110).
+19. **`اللغة الجارية تكاد تخدعني` (l.206-219)** — les mots ordinaires trompent : nous disons
+    « **voir** » la cire, et non « **juger** » qu'elle est là. De la fenêtre, j'aperçois des hommes
+    passer dans la rue et je dis que je **les vois** ; or je n'aperçois que des chapeaux et des
+    manteaux, sous lesquels pourraient se cacher des automates. Je juge donc que ce sont des
+    hommes : **ce que je croyais voir de mes yeux, je le comprends par la seule puissance de
+    juger qui est en mon esprit.**
+20. **`الارتقاء عن المعرفة العامية` (l.220-232)** — qui veut s'élever au-dessus du savoir commun
+    doit se garder des tournures du langage courant, qui prêtent au doute. Ma conception première
+    de la cire, quand je croyais la connaître par les sens externes ou par le sens commun
+    (c'est-à-dire par l'imagination), était-elle plus évidente que celle que j'en ai maintenant,
+    après un examen plus soigneux ? Il serait **ridicule** d'en douter : qu'y avait-il de distinct
+    dans ma première perception, que **le moindre animal** ne pût atteindre ? Mais quand je
+    distingue la cire de ses formes extérieures, et que je la considère **toute nue**, alors —
+    même si mon jugement peut encore errer — je ne puis la concevoir ainsi **sans un esprit
+    humain**.
+21. **`إقرار أن معرفة الأنا أيسر` (l.233-247)** — que dire enfin de cet esprit, c'est-à-dire de
+    moi-même ? Si le jugement que la cire existe conclut à mon existence, alors la connaissance
+    que j'ai de moi est **plus distincte encore**, puisque toute raison de conclure à l'existence
+    de la cire conclut **a fortiori** à la mienne — et il en irait de même de toute autre cause.
+22. **`معرفة العالم متوقفة على معرفة الأنا` (l.248-257)** — ce qui vaut pour la cire vaut pour
+    **toutes** les choses hors de moi. Et si la notion de la cire s'est trouvée plus distincte
+    après que je l'eus connue par d'autres causes que la vue ou le toucher, **combien plus
+    distinctement dois-je me connaître moi-même** — puisque toutes les raisons qui servent à
+    connaître la cire ou tout autre corps prouvent **bien mieux** la nature de mon esprit. Et
+    l'âme contient beaucoup d'autres choses propres à éclaircir sa nature, au regard desquelles
+    ce qui dépend du corps **ne mérite pas d'être compté**.
+23. **`أهمية التأني` (l.258-266)** — me voici revenu insensiblement où je voulais : puisqu'il est
+    désormais établi que les corps ne se connaissent **ni par les sens ni par l'imagination**,
+    mais **par le seul entendement**, et qu'ils ne sont pas connus pour être vus ou touchés mais
+    pour être **pensés**, alors rien ne m'est plus aisé à connaître que mon propre esprit. Mais
+    comme il est difficile de se défaire si vite d'une opinion si longtemps tenue, il convient de
+    **s'arrêter un moment**, afin que la longueur de la méditation imprime plus profondément cette
+    connaissance nouvelle dans la mémoire.
+
+**Image dans le corps du texte (p.109, entre les lignes 157 et 158)** — seule image des
+p.105-112 : petite photographie encadrée d'un **cadre doré** posé de biais contre un mur ocre,
+devant lequel brûle un **bougeoir**, dont la flamme se reflète dans le cadre. **Ni légende, ni
+attribution.** Elle est placée juste avant le passage du morceau de cire.
+
+⚠️ **Aucun questionnaire, aucune مهامّ, aucune question dans les p.105-112.** Le guidage tient
+**entièrement** aux 26 repères marginaux, aux 2 notes et à la numérotation des lignes.
+
+---
+
+##### § نافذة 1.1.6 — مختصرات — p.113-114
+
+**Titre (p.113)** : **`مختصرات`** en calligraphie, dans un cadre blanc à filet noir, posé sur deux
+rectangles superposés — l'un **vert pâle**, l'autre **noir** — et flanqué à droite d'un rectangle
+**vert pâle à filet rouge**.
+
+**Image (p.113, haut à gauche, cadre à filet rouge)** : photographie d'une **plume d'oie** noire
+posée sur des feuillets manuscrits anciens, en camaïeu d'or. **Ni légende, ni attribution.**
+
+**Mise en page** : un grand cadre arrondi jaune pâle court sur **les deux pages**, et contient des
+**encadrés blancs à filet noir**, un par مختصر.
+
+⚠️ **Les مختصرات occupent DEUX pages, p.113 et p.114** — la p.114 n'ouvre **pas** le مبحث 1.2 :
+elle poursuit le même cadre jaune, **sans aucun titre, sans bandeau, sans numéro de section**, et
+sa moitié inférieure est **blanche**. Constaté sur la page, pas déduit.
+
+**Décompte : 11 مختصرات — 6 sur la p.113, 5 sur la p.114.** Comptés un à un.
+
+| n° | Page | Teneur (reformulée ; termes en gras = mis en gras par le manuel) |
+| :-- | :-- | :-- |
+| 1 | 113 | **Ouverture, à la 1ʳᵉ personne** : `ما الإنسان؟ من أكون؟ من أنا؟` — questions qui ne me troublaient pas avant aujourd'hui, et que, quand on me les posait, je ne mesurais ni en complexité ni en importance vitale. J'avais peut-être entendu des propos sur la نفس, le جسد et le جسم, sur le وعي et le لاوعي, sur le تاريخ et ses événements — mais **je ne discernais pas** leur lien profond avec ma subjectivité ; et voilà qu'ils font la substance de mon existence et la condition de mon **إنيتي**, considérée du côté de son rapport à la **الغيريّة**. |
+| 2 | 113 | Aborder l'homme par sa **comparaison à l'autre** (l'animal) m'a conduit à saisir que le **الوعي** est le trait qui le distingue — que la conscience soit portée au sens de la **substance transcendante au جسد**, au sens de la **conscience incarnée**, ou au sens de ce qui **s'accomplit historiquement**. |
+| 3 | 113 | Le **الجسد** porte plusieurs sens : accident ontologique (il est alors comme l'**étranger**), substance étendue, objet physique et biologique (il n'est alors qu'une simple **propriété**) — mais il peut aussi s'entendre comme **جسد خاص**, ce par quoi j'aborde le monde et ce par quoi mon existence s'accomplit. |
+| 4 | 113 | **Pas de sens à une conscience humaine hors du التاريخ**, de ses activités et de ses événements : pas de conscience sans tension vers le passé ni visée de l'avenir ; de même, pas de sens à la conscience hors de l'espace du **الفعل الاجتماعي** et de l'activité matérielle des hommes. La conscience **n'est pas** close sur soi, sans agir sur l'histoire ni en être affectée : elle se découvre à chaque instant sous un aspect nouveau qui signale une présence productrice. D'où : **pas d'esprit de l'histoire** si elle est dépouillée de ses contenus sociaux et vitaux. |
+| 5 | 113 | Puisque « `الإنسانية لا تطرح على نفسها إلا المشاكل التي تكون قادرة على حلها` » et puisque la conscience se caractérise par l'**historicité**, penser la conscience **n'a pas été exempt de ظنّة** — un soupçon par lequel la conscience est passée de l'**évidence au problème**, de la **vérité à l'illusion**, de la **substance à l'accident**, du **principe au produit**, dont il faut désormais un **acte interprétatif** pour dire l'origine, les mécanismes de formation, la vérité et la valeur. |
+| 6 | 113 | Le soupçon porté sur la conscience est un soupçon porté sur la **الذاتية** — non seulement sur la thèse du **sujet pensant**, mais aussi sur celle du **sujet incarné** : la civilisation contemporaine, malgré la célébration apparente du corps, **ne l'a reconnu que pour l'exploiter**, comme si le champ du **المعنى** était traversé de non-sens, et comme si l'espace de liberté qu'il paraît être était en même temps une **forteresse d'asservissement** — le corps est donc la dialectique du sens et du non-sens, de l'exclusion et de l'asservissement. |
+| 7 | 114 | Le parcours de l'homme en quête des composantes de son existence a débouché sur des **ouvertures** où des concepts se sont effondrés et d'autres ont surgi : le passage de la **نفس** au **جهاز نفسي** est une découverte manifeste, qui pénètre aux profondeurs de l'homme, au domaine de l'**oubli infini**, à d'autres chapitres de son histoire que nous croyions évanouis — et qui se trouvent conservés dans une mémoire abyssale, le **اللاوعي**, dont la dynamique, la capacité d'agir en nous et l'inscription de ses marques sur notre existence sont apparues. Le اللاوعي, **structure symbolique**, ne peut être ni oublié ni occulté si nous voulons rapprocher l'image de l'homme de notre conscience — et pour ne pas continuer d'habiter **la maison de l'araignée** en prenant les illusions pour des vérités. |
+| 8 | 114 | ⚠️ **Affirmer le لاوعي ne doit PAS s'entendre comme la négation de la conscience ni comme le déni de la liberté, de la volonté et de la responsabilité de l'homme** — dès lors que la conscience est devenue une **مهمة** après qu'on l'a crue une donnée, et qu'elle est devenue devenir et flux après qu'on l'a crue immobile. |
+| 9 | 114 | La question de l'homme sur son **إنّيته** est inséparable de la question sur la **الغيرية**. Le nom de l'altérité et sa question habitent notre être et traversent notre existence de façon **tendue** : l'altérité peut être différence, séparation ou négation, et n'entrer dans l'horizon de l'إنية que comme négation et néant — mais elle peut aussi être **ce dont j'ai besoin pour affirmer mon إنية et attester mon existence**. |
+| 10 | 114 | La **الغيرية**, avec ce qu'elle porte de heurt et de violence et ce qu'elle peut produire de reconnaissance, de respect ou de partage, **confirme le besoin qu'a l'أنا de l'أنت, ou du اللاّ أنا**, dans le jeu de l'attestation de l'existence et de l'accomplissement de la كينونة. |
+| 11 | 114 | **Encadré de clôture** : tels sont quelques traits du voyage de l'homme éprouvant la reconnaissance de ce par quoi il est homme — épreuve où, s'il se contente de s'arrêter à la **surface**, il oublie que la surface est le **résultat de la profondeur** ; et où, s'il tend vers la profondeur, il découvre que `العمق ليس سوى سرّا سطحيا جدا`. |
+
+⚠️ **Négation cardinale du مختصر 8** : `القول باللاوعي لا ينبغي أن يحمل على معنى نفي الوعي وإنكار
+حرية الإنسان`. C'est le مختصر le plus exposé au contresens de la double page : il **interdit** de
+lire l'inconscient comme une négation de la liberté.
+⚠️ **Le مختصر 11 est un encadré de clôture** du مبحث entier : il ne résume aucune notion
+particulière et se termine sur un **paradoxe**, `العمق ليس سوى سرّا سطحيا جدا`.
+⚠️ **Le مختصر 1 est le seul rédigé au présent d'ouverture** (`ما كانت تخامرني قبل اليوم`) ; les
+dix autres commencent tous par un **verbe de bilan à la 1ʳᵉ personne du passé** :
+`تبينت` (×3) · `تمكنت` · `أدركت` (×3) · `عرفت` · `انتهيت` · (et le 11ᵉ, `تلك هي`).
+
+**Termes mis en gras par le manuel dans les مختصرات** — relevés :
+p.113 : `إنيتي` · `بالغيريّة` · `الوعي` · `الجسد` · `جسد خاص` · `التاريخ` · `الفعل الاجتماعي` ·
+`الذاتية` · `المعنى` — **9**.
+p.114 : `اللاوعي` · `مهمة` · `الغيرية` (×2) — **4 occurrences, 3 termes**.
+
+
+---
+
+##### § Notes, anomalies et incertitudes — fragment ch1c (p.75-114)
+
+> ⚠️ **Bloc écrit par morceaux, au fil des tranches lues** — pas à la fin. Chaque sous-bloc porte
+> les pages qu'il couvre.
+
+**Ce que la tranche contient — compté, pas déduit (p.75-82)**
+
+| Objet | Décompte | Pages |
+| :-- | :-- | :-- |
+| Page d'ouverture de la نافذة (image + encadré-citation + diagramme) | 1 | p.75 |
+| Entrées du diagramme de la نافذة (`1` تحديدات وتمييزات مفهوميّة, `2` سياقات فكرية, `3` بحث وتحقيق) | **3** | p.75 |
+| تحديدات وتمييزات مفهوميّة | **3** (التأويل, الزّمان, الجوهر) | p.76-82 |
+| Cartouches d'équivalent français (`Interprétation`, `Le Temps`, `Substance`) | 3 | p.76, 79, 81 |
+| Rubriques `قيل في …` | **5** (التأويل · الزّمان · الديمومة · الصيرورة · الجوهر والعرض) | p.78, 80, 82 |
+| Entrées d'auteur dans `قيل في التأويل` | 7 | p.78 |
+| Entrées d'auteur dans `قيل في الزّمان` | 6 | p.80 |
+| Entrées d'auteur dans `قيل في الديمومة` | 4 | p.80 |
+| Entrées d'auteur dans `قيل في الصيرورة` | 2 | p.80 |
+| Blocs de citation dans `قيل في الجوهر والعرض` | **6 blocs / 5 noms** (ابن سينا en porte 2, le second anonyme) | p.82 |
+| Encadrés `مفاهيم مجاورة / مناقضة` | 3 (un par notion) | p.78, 80, 82 |
+| Encadré `* لمزيد التعمّق` (3 blocs de liens) | 1 | p.82 |
+| Liens web imprimés | **20** (7 + 7 + 6) | p.82 |
+| Images sans légende ni attribution | **4** (pile de livres p.75 · serrure p.78 · horloge astronomique p.80 · femme au store p.82) | p.75, 78, 80, 82 |
+| Questionnaire / مهامّ dans la sous-section 1.1.3.1 | **0** — aucun | p.76-82 |
+
+**Anomalies réelles de la source — chacune vérifiée à 600 dpi (p.75-82)**
+
+1. **p.75, encadré-citation** — `لإتباع` composé avec **hamza de coupure** (`إ`) là où
+   l'orthographe attendue est `لاتباع`.
+2. **p.76, col. gauche** — guillemet **fermant simple** `'` après `قوله` (citation de Ricœur),
+   alors que l'ouvrant est un `"` double et que `" التأويل "` / `"التفسير "`, deux lignes plus
+   bas, portent des guillemets doubles. Les deux témoins sont sur la même image 600 dpi.
+3. **p.76, col. droite** — `متخفّي` avec le **yāʾ final maintenu** là où la forme attendue du nom
+   منقوص indéfini est `متخفّ`.
+4. **p.78, encadré `مفاهيم مناقضة`** — `الإختزال` et `الإستقراء` composés avec **hamza sur
+   l'alif**, pour `الاختزال` / `الاستقراء`. Les autres entrées du même cadre sont correctes.
+5. **p.82, `قيل في الجوهر والعرض`** — le **4ᵉ bloc de citation est imprimé sans nom d'auteur**,
+   collé au bloc `ابن سينا` qui le précède. 6 blocs, 5 noms.
+6. **p.82, `ديكارت:"`** — le guillemet ouvrant est **collé aux deux-points** et composé dans la
+   couleur et la graisse du **nom** ; partout ailleurs dans le bloc il est noir et précédé d'une
+   espace.
+7. **p.82, encadré `* لمزيد التعمّق`** — **cinq URL portent une terminaison manifestement
+   corrompue** (une échappée `%` ou un `#` perdus à la composition) :
+   `…/wphilo.3htm` · `…/philosophie.20htm` · `…/arist.2php` · `…/article.94961php` ·
+   `…/page.19htm`. Et **deux URL sont tronquées en pleine chaîne** :
+   `www.ac-toulouse.fr/philosophie/revphi/tempsphilo.` (s'arrête sur le point) et
+   `…/Ex-Bergson-temps.pd` (le `f` final manque). Transcrites **telles qu'imprimées**.
+8. **p.82, même encadré** — dans `www.cosmovisions.com/philosophie.20htm`, la seule séquence
+   `philosophie.` est composée **en gras**, le reste de la ligne non.
+9. **p.82, étiquettes du bandeau bleu** — la 2ᵉ notion y est nommée **`الزمن`**, alors que le
+   cartouche de section p.79 porte **`الزّمان`**. Les deux formes coexistent d'ailleurs dans le
+   corps du texte (`الزمان، الديمومة، الصيرورة` p.79 ; `ويتّصل مفهوم الزمن بالديمومة` p.79).
+10. **p.75, diagramme** — la case 2 est composée `سياقات فكرية`, **sans شدّة** sur le ي.
+
+**Fausses pistes écartées — ce que j'ai cru voir à 150 dpi et qui n'y était pas (p.75-82)**
+
+1. **`ما يريد ما يريد قوله` (p.76, col. gauche) — accusation évitée de justesse.** À 150 dpi la
+   séquence `ما يريد` paraît **imprimée deux fois** ; l'anomalie était déjà écrite dans la fiche.
+   À 600 dpi le manuel imprime **`وعلى أساس ما يريد قوله`**, une seule fois : ce que je prenais
+   pour un doublon était le crénage très lâche de la ligne justifiée, qui écarte `ما` de `يريد`
+   d'une largeur de mot. **Aucune répétition n'est imprimée.**
+2. **`لييتنز` (p.78) — faux témoin.** Lu ainsi à 150 dpi, ce qui aurait créé une quatrième graphie
+   de Leibniz. À 600 dpi les lettres sont nettes : **`لييبنتز`**, identique aux occurrences de la
+   p.80 et de la p.82. **Une seule graphie dans toute la sous-section.**
+3. **Encadré `مفاهيم` de la p.80 — répartition inversée.** À 150 dpi `الدهر` et `الثبات` semblent
+   tomber dans le cadre `مجاورة`, parce que les deux cadres blancs sont **emboîtés en escalier**
+   et que chaque liste est composée **en zigzag sur deux colonnes internes**. À 600 dpi la
+   verticale du cadre de droite passe à gauche de ces deux mots : ils sont dans **`مناقضة`**.
+   Décompte corrigé : **6 مجاورة / 5 مناقضة** (et non 7/4).
+4. **Encadré `مفاهيم` de la p.82 — même piège, sens inverse.** `المحمول` paraît aligné sur `الذات`
+   dans le cadre `مجاورة` ; à 600 dpi il est dans **`مناقضة`**. Décompte : **3 / 3**.
+   Contrôle de cohérence dans les deux cas : le corps du texte oppose bien `الديمومة` à `الدهر`
+   (p.79) et le `الجوهر` au `المحمول` (p.81, bloc `الكانطية`).
+5. **`الجوهر.. ` (p.82, ابن سينا)** : deux points de suspension à 150 dpi, **trois** à 600 dpi.
+
+**Intervalles de dates — vérifiés un à un (p.75-82)**
+
+| Lieu | Tel qu'imprimé | Verdict |
+| :-- | :-- | :-- |
+| p.79, renvoi à هيدغر | `"الكينونة والزمن" ( 1927 )` | **date isolée**, pas un intervalle — aucun risque bidi |
+
+**Aucun intervalle de dates n'est imprimé dans p.75-82** : le manuel ne donne, dans cette
+sous-section, **aucune notice biographique** — ni date de naissance ni date de mort, pour aucun
+des auteurs cités. L'étalon bidi (`(1908—1961)` rendu visuellement `1961—1908`, le nombre
+logiquement premier étant **à droite**) n'a donc pas eu à servir ici. Les seuls autres nombres
+imprimés sont des références : `ج3 ص 32` (p.76) et `ص 61` (p.76).
+
+**Variantes de graphie des noms propres (p.75-82)**
+
+- **Dilthey — 2 formes** : `ولهايم دلتاي` (p.76, col. gauche, en gras) · **`ديلتاي`** (p.78, bloc
+  `قيل في التأويل`). Vérifié à 600 dpi : le ي après le د est **présent** p.78, **absent** p.76.
+- **Ricœur — 2 formes** : `بول ريكور` (p.76) · `ريكور` (p.78).
+- **Leibniz — 1 seule forme** : `لييبنتز` (p.78, p.80 ×2, p.82). Aucune variante.
+- **Bergson — 1 forme** : `برغسون` (p.79 ×2, p.80 ×3).
+- **Cités sans aucune graphie latine** : `فوكو` · `ماركس` · `نيتشه` · `فرويد` · `هيدغر` ·
+  `سارتر` · `هيغل` · `سبينوزا` · `برانشفيك` · `نيوتن وكلارك` · `كانط` · `أرسطو` · `ديكارت` ·
+  `الجرجاني` · `ابن رشد` · `ابن سينا` · `الخوارزمي` · `الرّازي` · `ابن منظور` · `السبكي` ·
+  `أبي القاسم النحوي` · `جيل دولوز – فيلكس غاتاري` · `ج.غ. غرانجي`.
+- **Adjectifs doctrinaux dérivés** : `الديكارتية` · `الكانطية` · `الظواهريون` / `الظواهرية` ·
+  `الجوهرية` · `الواحدية السبينوزية` (p.81-82).
+- **Seuls termes en caractères latins de la sous-section** : `Interprétation` · `compréhension` ·
+  `herméneutique` · `déchiffrage` (p.76) · `Le Temps` · `Cronos` (p.79) · `Substance` (p.81),
+  plus les 20 URL de la p.82.
+- **Termes translittérés relevés tels quels** : `الهرمونيتيقا` (p.78 — elle voisine, à deux pages
+  d'écart, avec le `herméneutique` latin de la p.76) · `التأويليّة` (p.76, p.77) ·
+  `الفينومينولوجيا` / `فينومينولوجيّة` (p.79) · `هيولى` (p.81) · `الموناد` (p.82) ·
+  `كرونوس` (p.79).
+
+**Incertitudes (p.75-82)**
+
+- **`تعريفات المغاري` (p.76)** — lecture **certaine** à 600 dpi (`ا` `ل` `م` `غ` `ا` `ر` `ي`), mais
+  l'ouvrage et son auteur me sont **inconnus**. Transcrit verbatim. **Aucun `[sic]` posé** : je
+  n'ai aucun témoin qui permette de dire que le manuel se trompe.
+- **`cours_detail` et `cours_philosophie_temps` (p.82)** — ces URL sont **soulignées** et
+  l'espacement entre les mots tombe exactement sur le trait de soulignement : **tiret bas ou
+  espace sont indiscernables**, même à 600 dpi. Retenu : tiret bas (`_`), forme la plus probable
+  dans une URL, mais l'espace n'est pas exclue.
+- **Aucun `[?]`** : les huit pages sont entièrement lisibles à 600 dpi ; rien n'a été deviné.
+- **Images non attribuées** : les quatre images de la sous-section (p.75, 78, 80, 82) ne portent
+  **ni légende, ni nom d'artiste, ni source**. Elles sont décrites, **jamais attribuées**.
+- **Références bibliographiques incomplètes** : l'encadré-citation de la p.75
+  (Deleuze–Guattari, *ما الفلسفة؟*) ne porte **ni traducteur, ni éditeur, ni page** ; il en va de
+  même de `صراع التأويل` de Ricœur (p.76) et de **toutes** les entrées des rubriques `قيل في …`,
+  qui ne donnent jamais la source de la citation.
+
+---
+
+**Ce que la tranche contient — compté, pas déduit (p.83-90)**
+
+| Objet | Décompte | Pages |
+| :-- | :-- | :-- |
+| سياقات فكرية ouverts dans p.83-90 | **2** (التحليل النفسي, الفينومينولوجيا) | p.83, p.87 |
+| Rubriques `* التعريف` | 2 | p.83, p.87 |
+| Rubriques `* الجهاز المفهومي` | 2 | p.84, p.89 |
+| Rubriques `* تنبيهات` | 2 | p.86, p.90 |
+| Rubriques `* لمزيد التعمّق` | 2 | p.86-87, p.90 |
+| Entrées du `الجهاز المفهومي` — التحليل النفسي | **11** (dont `الجهاز النفسي` qui en contient 3 : الهو / الأنا / الأنا الأعلى) | p.84-86 |
+| Entrées du `الجهاز المفهومي` — الفينومينولوجيا | **6** | p.89-90 |
+| Équivalents latins dans le `الجهاز المفهومي` | **14 au سياق 1** ; **0 au سياق 2** | p.84-86 / p.89-90 |
+| Niveaux numérotés du التحليل النفسي | **4** | p.83 |
+| Traits numérotés du تحديد فينومينولوجي du الوعي | **4** | p.87 |
+| Variétés de فينومينولوجيا listées aux تنبيهات | **3** | p.90 |
+| Titres bibliographiques du `لمزيد التعمّق` — التحليل النفسي | **6 titres / 3 têtes d'auteur** | p.86-87 |
+| Titres bibliographiques du `لمزيد التعمّق` — الفينومينولوجيا | **3 titres / 3 têtes d'auteur** | p.90 |
+| Citations de فرويد avec référence complète imprimée | 2 | p.83 |
+| Images **légendées** | **3** (`طبيب نفساني في حصّة علاج` p.83 · `جان بول سارتر` p.86 · les **4 portraits** légendés `هوسرل`/`مرلوبونتي`/`هيدغر`/`ريكور` p.87) | p.83, 86, 87 |
+| Images **sans** légende ni attribution | **4** (divan p.84 · sculpture drapée p.85 · dessin au trait p.87 · portrait peint p.87) | p.84, 85, 87 |
+| Questionnaire / مهامّ dans p.83-90 | **0** — aucun | — |
+
+**Anomalies réelles de la source — chacune vérifiée à 600 dpi (p.83-90)**
+
+11. **p.86 — `Phychanalyse existentielle`.** Le manuel imprime `Phych…`, avec **`h` à la place du
+    `s`**, alors que le cartouche de la p.83 porte `Psychanalyse` correctement orthographié. Les
+    deux graphies sont donc dans la **même sous-section**, à trois pages d'écart.
+12. **p.86 — `Marcus`** pour *Marcuse* : le **`e` final manque**. La graphie arabe de la même
+    ligne, `ماركــوز`, est, elle, complète.
+13. **p.84 — `Le sur moi`** composé en **trois mots** (pour *le surmoi*).
+14. **p.85 — `Complexe d'OEdipe`** : la ligature `Œ` est rendue par **`OE`, deux lettres
+    séparées**.
+15. **p.90 — `"من حسدي يبدأ العالم"`.** Le manuel imprime `حسدي` (**ح**, sans point) là où le sens
+    exige `جسدي` (**ج**, pointé), « mon corps ». **Témoin de contrôle décisif sur la même image
+    600 dpi** : la ligne juste au-dessus porte `امتدادا لجسدي` avec un **ج nettement pointé**. Les
+    deux tracés diffèrent ; l'anomalie est réelle.
+16. **p.90 — `الآخر` puis `الأخر` dans une seule phrase.** Dans la citation
+    `"الآخر يولد منّى كما يولد الأخر الأول من قطعة من ضلع آدم"`, la première occurrence porte la
+    **madda**, la seconde **non**.
+17. **p.90 — `مارلوبونتى`, troisième graphie de Merleau-Ponty** : un `ا` supplémentaire après le
+    م **et** une alif maqṣūra finale, contre `مرلوبونتي` aux p.87, 88 et 89.
+18. **Alif maqṣūra finale généralisée dans le سياق 2** — là où la forme attendue est un `ي` :
+    `وتعنى` (×2, p.87) · `يفضى` (p.87) · `منّى` (p.90) · `الفينومينولوجى` (p.90) ·
+    `بيرجى` (p.90). Le سياق 1 (p.83-86) n'en présente **aucune** : c'est une particularité du
+    seul bloc phénoménologie.
+19. **Hamzas manquantes ou surnuméraires** — `ادموند` (p.87) et `ايمانويل` (p.90) **sans hamza
+    initiale** ; à l'inverse `ألخ` (p.87) **avec hamza sur l'alif**, pour `إلخ`.
+20. **p.87 — `عدنان حب الله:` sans puce `■`**, alors que les deux têtes d'auteur qui la précèdent
+    dans le même encadré (`فرويد`, `كارل غوستاف يونغ`) en portent une. Idem pour les **trois**
+    têtes du `لمزيد التعمّق` de la p.90, qui n'ont **aucune** puce.
+21. **p.87 — `التحليل النفسي من فرويد إلى لاكان`** : la référence donne l'éditeur
+    (`مركز الإنماء القومي`) mais **ni ville ni date** ; et `الكوجيطو في فلسفة هوسرل` (p.90) donne
+    la ville (`باريس`) mais **pas la date**. Ce sont les deux seules références incomplètes des
+    9 titres de la tranche.
+
+**Fausses pistes écartées (p.83-90)**
+
+6. **`سياقات فكريّة` — la شدّة qui n'existe pas.** La consigne de tranche et le فهرس donnent
+   `سياقات فكريّة`. Le bandeau de la p.83 **et** la case 2 du diagramme de la p.75 impriment tous
+   deux `سياقات فكرية`, **sans شدّة** (600 dpi sur les deux pages). J'avais écrit l'inverse dans la
+   fiche avant de vérifier : c'était une **présupposition**, pas une lecture.
+7. **`Psychanalyse` cru fautif p.83.** Ayant lu `Phychanalyse` p.86, j'ai soupçonné la même faute
+   au cartouche. À 600 dpi le cartouche de la p.83 est **correct** : la faute est **isolée à la
+   p.86**, et il faut donc signaler les **deux** graphies, pas une seule.
+8. **`لييتنز`, `الجوهر..`, encadrés `مفاهيم`** — voir les fausses pistes 2 à 5 du bloc p.75-82 ;
+   même mécanisme (150 dpi insuffisant), même correction.
+9. **Intervalles de dates crus inversés.** Les huit intervalles des p.83-87 *paraissent* tous
+   retournés à l'écran (`1939 - 1856`, `1979-1898`…). Ils ne le sont pas : voir le tableau
+   ci-dessous, établi **non pas à l'œil mais sur la couche-texte** du PDF, qui est en **ordre
+   visuel** — elle donne donc directement, et sans ambiguïté, ce que l'œil voit de gauche à
+   droite. **Aucun `[sic]`.**
+
+**Intervalles de dates — vérifiés un à un (p.83-90)**
+
+Méthode : `pdftotext -layout` sur la page isolée. La couche-texte de ce PDF étant en **ordre
+visuel**, sa sortie donne la séquence **telle qu'elle s'affiche**, de gauche à droite. L'étalon du
+مبحث (`مرلوبونتي (1908—1961)` rendu `1961—1908`) impose alors : **le nombre logiquement premier
+est celui de droite**.
+
+| Lieu | Rendu **visuel** (couche-texte) | Ordre **logique** | Verdict |
+| :-- | :-- | :-- | :-- |
+| p.83, فرويد | `(1939 - 1856)` | `1856 – 1939` | **ordre correct** |
+| p.86, ماركوز `Marcus` | `(1979-1898)` | `1898 – 1979` | **ordre correct** |
+| p.86, رايش `Reich` | `(1957-1897)` | `1897 – 1957` | **ordre correct** |
+| p.86, سارتر `Sartre` | `-1905)` … `(1980` (coupé par le retour à la ligne) | `1905 – 1980` | **ordre correct** |
+| p.87, لامبرت `Lambert` | `(1777 - 1728)` | `1728 – 1777` | **ordre correct** |
+| p.87, كانط `Kant` | `(1804-1724)` | `1724 – 1804` | **ordre correct** |
+| p.87, هيغل `Hegel` | `(1831-1770)` | `1770 – 1831` | **ordre correct** |
+| p.87, هوسرل `Husserl` | `(1938-1859)` | `1859 – 1938` | **ordre correct** |
+
+**Aucun intervalle retourné dans p.83-90.** Dates **isolées** relevées : `1920` (topique, p.84) ·
+`1911` (principe de réalité, p.85) · `1764` (Lambert, p.87) · `1930` (essor français de la
+phénoménologie, p.88, et édition Levinas, p.90) · et les millésimes d'édition du
+`لمزيد التعمّق` : `1979`, `2004`, `1974`, `1983` (p.86), `1997` (p.87), `1957`, `1963` (p.90).
+⚠️ `1930` apparaît **deux fois dans la tranche avec deux sens différents** — l'essor de la
+phénoménologie en France (p.88) et l'année de la 1ʳᵉ édition de Levinas (p.90).
+
+**Variantes de graphie des noms propres (p.83-90)**
+
+- **Merleau-Ponty — 2 formes dans cette tranche** : `مرلوبونتي` (p.87 légende, p.88 ×3, p.89) ·
+  **`مارلوبونتى`** (p.90). Aucune graphie latine dans p.83-90.
+- **Freud — 2 formes** : `فرويد` (partout) · `الفرويدي` / `الفرويدو ماركسية` (adjectifs, p.86).
+  Aucune graphie latine.
+- **Sartre — 1 forme arabe + 1 latine + 1 légende développée** : `سارتر` · `Sartre` (p.86) ·
+  `جان بول سارتر` (légende de la photo, p.86).
+- **Husserl — 2 formes** : `ادموند هوسرل` (première mention, p.87) · `هوسرل` (partout ailleurs) ;
+  latine `Husserl` (p.87) unique.
+- **Levinas — 2 formes** : `ليفيناس` (p.87, p.89) · `ايمانويل ليفيناس` (p.90).
+- **Marcuse — 2 formes, l'une fautive** : `ماركوز` · `Marcus` (p.86).
+- **Cités sans graphie latine** : `يونغ` / `كارل غوستاف يونغ` (p.87) · `لاكان` (p.87) ·
+  `ماركس` (p.86) · `سبينوزا` (p.89) · `ريكور` (p.87 ×2, p.89) · `هيدغر` (p.87 ×2, p.90) ·
+  `كانط` (p.90) · `جورج طرابيشي`, `رضا بن رجب`, `عبد الرزاق الحليوي`, `نبيل محسن`,
+  `عدنان حب الله` (traducteurs et auteurs arabes, p.86-87) · `سوزان بشلار`, `غاستون بيرجى` (p.90).
+- **Graphies latines de la tranche** : `Psychanalyse` (p.83) · `Psuch`, `Analusis` (p.83) ·
+  `L'inconscient`, `L'appareil psychique`, `Le ça`, `Le moi`, `Le sur moi`, `Sexualité`,
+  `Pulsion`, `Eros` (p.84) · `Thanatos`, `Désir - Besoin`, `Libido`, `principe de plaisir`,
+  `principe de réalité`, `Refoulement`, `Sublimation`, `Complexe d'OEdipe` (p.85) · `Le rêve`,
+  `Phychanalyse existentielle`, `Sartre`, `Libre projet`, `Choix originel`, `Personne`,
+  `Freudo-marxisme`, `Marcus`, `Reich` (p.86) · `Phénoménologie`, `Lambert`, `Kant`, `Hegel`,
+  `Husserl` (p.87). **Aucune** dans p.88, p.89 et p.90.
+- **Termes translittérés relevés tels quels** : `الليبيدو` · `الإيروس` · `تاناتوس` ·
+  `العصاب` / `الذهان` / `هيستيرية` · `الفينومينولوجيا` / `فينومينولوجيات` / `فينومينولوجيين` ·
+  `ترنسندنتالي` / `الترنسندنتالي` · `الظاهراتية` · `فينومو` / `لوغوس` · `الكوجيطو` ·
+  `الإيتيقا` · `بيناذاتية` · `الميتافيزيقا` · `قاليمار` (Gallimard) · `الهذا` (dans
+  `الأنا والهذا`, titre de Freud).
+
+**Incertitudes (p.83-90)**
+
+- **Aucun `[?]`** : les huit pages sont entièrement lisibles à 600 dpi ; rien n'a été deviné.
+- **Frontière réelle du سياق 1** : la consigne de tranche donnait `p.83` pour le التحليل النفسي ;
+  son encadré `لمزيد التعمّق` **déborde en haut de la p.87**, et le cartouche
+  `2-الفينومينولوجيا` s'ouvre **au milieu** de cette même p.87. Constaté, non déduit.
+- **Attribution des citations non sourcées** : les deux citations en bloc bleu de la p.89
+  (`يرى نفسه رائيا…` et l'argument de l'œil blessé) sont **imprimées sans nom d'auteur** ; le
+  contexte immédiat parle de مرلوبونتي, mais la page **ne l'attribue pas**. Je ne les attribue
+  donc pas non plus.
+- **Images non attribuées** : les 4 images sans légende (p.84, 85, 87 ×2) ne portent **ni nom
+  d'artiste, ni source**. Décrites, jamais attribuées. Les 4 portraits de la p.87 sont légendés
+  d'un **nom de philosophe**, ce qui identifie le sujet — **pas le photographe**.
+
+---
+
+**Ce que la tranche contient — compté, pas déduit (p.91-97)**
+
+| Objet | Décompte | Pages |
+| :-- | :-- | :-- |
+| سياقات فكرية ouverts dans p.91-97 | **2** (الوجوديّة, فلسفة التاريخ) | p.91, p.94 |
+| Courants existentialistes listés en puce `■` | **4** (كيركغارد · السارترية · نيتشه · هيدغر) | p.91-92 |
+| Dimensions de la relation chez كيركغارد | **2**, numérotées | p.91 |
+| ضروب du وجود chez هيدغر | **3**, numérotés | p.92 |
+| Auteurs arabes cités pour la réception de l'existentialisme | **7** (جبران · محمود المسعدى · توفيق الحكيم · نجيب محفوظ · أبى القاسم الشابى · أدونيس · بدر شاكر السيّاب) + 3 personnages (غيلان · أبو هريرة · الحمزاوى) | p.92 |
+| Œuvres arabes nommées | **4** (`كتاب العواصف` · `السدّ` · `حدّث أبو هريرة قال` · `الشــحاذ`) | p.92 |
+| Moments de la `حركة جدلية` hégélienne | **3** (الإثبات · النفي · نفي النفي) | p.94 |
+| Étapes de l'histoire selon ماركس | **5** | p.95 |
+| Concepts nouveaux attribués à ماركس | **5** | p.95 |
+| Entrées du `الجهاز المفهومي` — الوجوديّة | **5** | p.93 |
+| Entrées du `الجهاز المفهومي` — فلسفة التاريخ | **5** | p.97 |
+| Équivalents latins dans ces deux `الجهاز المفهومي` | **0** | — |
+| Avertissements du `* تنبيهات` — الوجوديّة | **1**, sans puce | p.93 |
+| Avertissements du `* تنبيهات` — فلسفة التاريخ | **2**, en puce `■` | p.97 |
+| Titres du `* لمزيد التعمّق` — الوجوديّة | **3** | p.93 |
+| Titres du `* لمزيد التعمّق` — فلسفة التاريخ | **6** | p.97 |
+| Sous-titre calligraphié sans numéro (`فلسفة التاريخ في التراث العربي`) | **1** | p.96 |
+| Encadré rose à filet (`لك أن تختار الزمن…`) | **1** | p.97 |
+| Images **légendées** | **3** (`هيغل` p.94 · `ماركس` p.95 · `ابن خلدون` p.96) | p.94-96 |
+| Images **sans** légende ni attribution | **5** (portrait dessiné p.91 · 2 portraits photo p.92 · SDF au banc p.93 · horloges p.97) | p.91, 92 ×2, 93, 97 |
+| Questionnaire / مهامّ dans p.91-97 | **0** — aucun | — |
+
+**Anomalies réelles de la source — chacune vérifiée à 600 dpi (p.91-97)**
+
+22. **p.91 — `مخلوقا الهيا`** : article défini + `هيا` là où le sens exige `إلهيّا` (« créature
+    divine »).
+23. **p.91 — `وجوده سابق لماهيّتة`** : le pronom suffixe est composé avec un **tāʾ marbūṭa**
+    (`ـتة`) au lieu d'un `ه` (`لماهيّته`).
+24. **p.94 — cartouche `4_ فلسفة التاريخ`** : **tiret bas** et **espace** après le numéro, contre
+    `1-`, `2-`, `3-` (tiret ordinaire, sans espace) pour les trois autres سياقات.
+25. **p.95 — les trois notices de la postérité marxiste ont trois compositions différentes** :
+    `(Lefebvre 1901 – 1991)` — nom latin **avant** les dates ; `(1885 – 1977 Bloch)` — nom latin
+    **après** ; `(Braudel 1902 – 1985)` — nom latin **avant**. Trois notices consécutives, deux
+    ordres.
+26. **p.96 — `أنذاك`** avec **hamza** au lieu de la **madda** (`آنذاك`).
+27. **p.96 — `[المقدمة ص582]`** : seule référence de toute la sous-section 1.1.3.2 mise entre
+    **crochets droits**, et seule sans espace entre `ص` et le numéro de page.
+28. **p.97 — `هو ركايمر`** : Horkheimer composé en **deux mots séparés d'une espace**.
+29. **p.97 — `الإجتماعية`** (bibliographie, entrée 3) avec **hamza sur l'alif**, pour
+    `الاجتماعية`. Même famille que `الإختزال` / `الإستقراء` de la p.78.
+30. **p.97 — `اغسطين`** composé **sans hamza initiale**, pour `أغسطين`.
+31. **Alif maqṣūra finale, seconde vague** : `تعنى` (p.91) · `البشرى` (p.93) ·
+    `محمود المسعدى`, `أبى القاسم الشابى`, `الحمزاوى` (p.92). Comme au سياق 2, mais **absente** du
+    سياق 4 (p.94-97).
+
+**Fausses pistes écartées (p.91-97)**
+
+10. **`كيار كيغارد` — le mot coupé qui ne l'était pas.** À 150 dpi la bibliographie de la p.93
+    semble porter `كيار كيغارد` en deux mots. À 600 dpi c'est **`كياركيغارد`**, en **un seul
+    mot** — l'espace apparente était l'interstice de justification. La variante par rapport à
+    `كيركغارد` (p.91) est **réelle**, mais elle porte sur les lettres, **pas** sur la coupure.
+    ⚠️ À ne pas confondre avec `هو ركايمر` (p.97), où la coupure, elle, **est** imprimée : les
+    deux cas ont été vérifiés **sur la même image** l'un après l'autre.
+11. **`كما يرى نيتشه عدوا للفكر والإنسان` (p.92) — la phrase amputée.** Ma lecture à 150 dpi
+    sautait le complément `في المسيحية`, ce qui aurait fait de **Nietzsche lui-même** l'ennemi
+    désigné de la pensée et de l'homme. La page imprime
+    `كما يرى نيتشه في المسيحية عدوا للفكر والإنسان في آن` : c'est **le christianisme** qui est
+    l'ennemi, et c'est Nietzsche qui le juge tel. Contresens par amputation évité de justesse.
+12. **`ص 1509 – 1510` (p.92) cru intervalle de dates.** Le balayage automatique des groupes de
+    chiffres le remonte comme un couple `(1510 - 1509`, indiscernable d'un intervalle de dates.
+    Lecture de la page : c'est la **pagination** d'un article de la
+    `الموسوعة الفلسفيّة العربيّة`. **Ni date, ni `[sic]`.**
+
+**Intervalles de dates — vérifiés un à un (p.91-97)**
+
+Même méthode que pour p.83-90 : la couche-texte du PDF, en **ordre visuel**, donne la séquence
+telle qu'elle s'affiche ; l'étalon impose que le nombre **logiquement premier soit à droite**.
+
+| Lieu | Rendu **visuel** (couche-texte) | Ordre **logique** | Verdict |
+| :-- | :-- | :-- | :-- |
+| p.91, كيركغارد | `(1855-1813)` | `1813 – 1855` | **ordre correct** |
+| p.91, نيتشه `Nietzsche` | `(1900 - 1844)` | `1844 – 1900` | **ordre correct** |
+| p.92, هيدغر `Heidegger` | `(1976 - 1889` | `1889 – 1976` | **ordre correct** |
+| p.94, هيغل `Hegel` | `(1831 - 1770` | `1770 – 1831` | **ordre correct** |
+| p.94, كارل ماركس `Marx` | `1883 - 1818` | `1818 – 1883` | **ordre correct** |
+| p.95, لوفافر `Lefebvre` | `(Lefebvre 1991-1901)` | `1901 – 1991` | **ordre correct** |
+| p.95, بلوخ `Bloch` | `1977 -1885)` … `( Bloch` (coupé par le retour à la ligne) | `1885 – 1977` | **ordre correct** |
+| p.95, فرناند بروديل `Braudel` | `(Braudel 1985-1902)` | `1902 – 1985` | **ordre correct** |
+| p.96, ابن خلدون | `(1406 - 1332` | `1332 – 1406` | **ordre correct** |
+| p.92, article d'encyclopédie | `(1510 - 1509` | `ص 1509 – 1510` | **pagination, pas un intervalle de dates** |
+
+**Aucun intervalle retourné dans p.91-97 — ni dans toute la tranche p.75-97.** Sur les **18**
+intervalles de dates que porte la sous-section 1.1.3.2, **18 sont dans le bon ordre logique**.
+Dates **isolées** : `1983`, `1952`, `1964` (bibliographie p.93) · `582` (page de la
+`المقدمة`, p.96). L'étalon bidi établi au مبحث voisin (`(1908—1961)` rendu `1961—1908`) est
+**confirmé neuf fois de plus** ici.
+
+**Variantes de graphie des noms propres (p.91-97)**
+
+- **Kierkegaard — 2 formes** : `كيركغارد` (p.91 ×3) · **`كياركيغارد`** (p.93, un seul mot).
+  Aucune graphie latine.
+- **Sartre — 3 formes dans le chapitre** : `سارتر` (p.91, p.93) · **`جون بول سارتر`** (p.91, p.93)
+  · **`جان بول سارتر`** (p.86, légende de photo). ⚠️ `جون` et `جان` pour le même prénom, à cinq
+  pages d'écart.
+- **Jaspers — 3 formes** : `كــارل يسبرس` (p.91) · `ك. يسبرس` (p.93) · aucune graphie latine.
+- **Heidegger — 1 forme arabe stable** : `هيدغر` (p.91, 92, 93) ; latine `Heidegger` (p.92).
+- **Nietzsche — 1 forme arabe** : `نيتشه` ; latine `Nietzsche` (p.91) ; adjectif `النيتشوية`
+  (p.92).
+- **Marx — 2 formes** : `كارل ماركس` (1ʳᵉ mention, p.94) · `ماركس` (ensuite) ; latine `Marx`
+  (p.94) ; adjectifs `الماركسية`, `الماركسي` (p.95).
+- **Hegel — 1 forme** : `هيغل` ; latine `Hegel` (p.94) ; adjectifs `الهيغلي` (p.91),
+  `الهيغليّة` (p.93).
+- **Cités sans graphie latine** : `فولتير` (p.94) · `ألتوسير` (p.95) · `ابن خلدون` (p.96, 7
+  occurrences) · `القديس اغسطين` (p.97) · `علي ومعاوية` (p.96) · `جبران`, `محمود المسعدى`,
+  `توفيق الحكيم`, `نجيب محفوظ`, `أبى القاسم الشابى`, `أدونيس`, `بدر شاكر السيّاب` (p.92) ·
+  `بول فولكييه`, `جميل جبر`, `ريجيس أوليفييه`, `فؤاد كامل`, `هنري لوفيفر` (p.93) ·
+  `هو ركايمر`, `محمد علي اليوسفي`, `جان هيبوليت`, `غاستون بوتول`, `ريمون آرون`,
+  `فرانسوا شاتليه`, `ميشال فوكو` (p.97) · `غانم الهنا` (p.92).
+- ⚠️ **`هنري لوفيفر` (p.93) et `لوفافر` `Lefebvre` (p.95)** — deux transcriptions arabes
+  différentes, dans deux سياقات différents, pour le **même** nom français.
+- ⚠️ **`ميشال فوكو` (p.97)** contre **`فوكو`** seul (p.77-78, sous-section 1.1.3.1) : le prénom
+  n'apparaît qu'ici.
+- **Graphies latines de p.91-97** : `L'Existentialisme` (p.91) · `Nietzsche` (p.91) · `Dasein`,
+  `Heidegger` (p.92) · `La Philosophie de l'Histoire`, `Hegel`, `Marx` (p.94) · `Lefebvre`,
+  `Bloch`, `Braudel` (p.95). **Aucune** dans p.93, p.96 et p.97.
+- **Termes translittérés relevés tels quels** : `الدازاين` · `العدمية` · `إرادة القوة` ·
+  `الغثيان` · `المشاعية البدائية` · `البورجوازية` (p.97) · `أركيولوجيا` (p.97) ·
+  `إيديولوجيا` (p.95) · `الكوسمو سياسي` (p.94) · `العصبية` / `العصبيات` (p.96).
+
+**Incertitudes (p.91-97)**
+
+- **Aucun `[?]`** : les sept pages sont entièrement lisibles à 600 dpi ; rien n'a été deviné.
+- **`الكوسمو سياسي` (p.94)** — translittération de *cosmopolitique*, imprimée en **deux mots**
+  dans la citation attribuée à فولتير. Lecture certaine à 600 dpi ; **aucun `[sic]`** — le manuel
+  translittère ailleurs de la même façon (`الفرويدو ماركسية`, p.86, également en deux mots).
+- **Attribution des portraits non légendés (p.91, p.92 ×2)** — leur position dans le développement
+  suggère Kierkegaard, Nietzsche et Heidegger, mais **aucune légende n'est imprimée**. Décrits,
+  **jamais attribués**.
+- **`أوليفييه` (p.93)** — transcription arabe du nom de l'auteur des *Doctrines existentialistes*.
+  Lecture certaine à 600 dpi. Je ne l'identifie pas et **ne la corrige pas**.
+- **Aucune date pour `الوجودية السارترية`** : c'est le seul des quatre courants dont la puce ne
+  porte pas d'intervalle de dates — constaté, non déduit.
+
+---
+
+**Ce que la tranche contient — compté, pas déduit (p.98-114)**
+
+| Objet | Décompte | Pages |
+| :-- | :-- | :-- |
+| Sous-section `بحث وتحقيق` | 1 | p.98-99 |
+| Temps numérotés (`أوّلا`, `ثانيّا`) | **2** | p.98, p.99 |
+| سندات du بحث وتحقيق | **4** (1 de Ricœur p.98 + 3 de Marx / Nietzsche / Freud p.99) | p.98-99 |
+| سندات **sans aucune** référence bibliographique | **3** (les trois de la p.99) | p.99 |
+| مهامّ du `أوّلا` | **7** numérotées (dont la n° 3 subdivisée en `أ–` / `ب–`) | p.98 |
+| مهامّ du `ثانيّا` | **6** blocs, dont **2 en bleu gras** | p.99 |
+| Cases du bandeau `معينات` | **3** + 1 cadre latéral de consigne collaborative | p.98 |
+| نافذة `كيفيات التفكير` | 1 | p.100-103 |
+| Exercices (`تمرين`) | **4**, numérotés 1 à 4 | p.101-103 |
+| Rubriques `المهارة المستهدفة` | **4** (une par exercice) | p.101-103 |
+| Rubriques `توضيح` | **3** (تمرين 1, 2, 3 — **absente du تمرين 4**) | p.101-102 |
+| سندات de la نافذة كيفيات التفكير | **2** (le rêve du journal, p.101 ; ديكارت *انفعالات النفس*, p.102) | p.101, 102 |
+| Étapes du `التمشّيات` (تمرين 2) | **4** | p.102 |
+| Étapes de rédaction (تمرين 4) | **3** (`بناء المشكل` · `بلورة الجواب` · `الاستخلاص`) | p.103 |
+| نافذة `نص مطوّل` | 1 | p.104-112 |
+| Numéros de ligne imprimés (de 5 en 5, de 5 à 265) | **53** | p.105-112 |
+| Blocs marginaux `▶` du نصّ مطوّل | **27** au total = **25 repères** + **2 notes** (R1 cumule repère et note 1) | p.105-112 |
+| Questionnaire / مهامّ dans le نصّ مطوّل | **0** — aucun | p.105-112 |
+| نافذة `مختصرات` | 1 | p.113-114 |
+| **مختصرات** | **11** — **6 p.113 + 5 p.114** | p.113-114 |
+| Images **légendées** dans p.98-114 | **1** (`▲ التأملات الميتافيزيقية` / `► ديكارت ( 1596 – 1650 ) René DESCARTES`, p.104) | p.104 |
+| Images **sans** légende ni attribution | **9** (3 portraits p.99 · chouette p.100 · portrait هيدغر p.100 · main et livre enluminé p.104 · portrait au trait p.104 · miroir et bougeoir p.109 · plume d'oie p.113) | p.99 ×3, 100 ×2, 104 ×2, 109, 113 |
+
+⚠️ Décompte des images non légendées de p.98-114, refait poste par poste : **3** portraits dans les
+سندات de la p.99 · **1** chouette à la fenêtre p.100 · **1** portrait de هيدغر p.100 (il jouxte une
+étiquette portant `هيدغر`, mais celle-ci **attribue la citation**, elle ne légende pas la photo) ·
+**1** détail de peinture (mains et livre enluminé) p.104 · **1** portrait au trait p.104 ·
+**1** miroir et bougeoir p.109 · **1** plume d'oie p.113 = **9**.
+
+**Anomalies réelles de la source — chacune vérifiée à 600 dpi (p.98-114)**
+
+32. **p.98 — `الدّراسات الهيقليّة`** : composé avec un **ق**, là où les p.91 et p.93 impriment
+    `الهيغلي` / `الهيغليّة` avec un **غ**. Le tracé (deux points, panse descendante) est net.
+33. **p.98 / p.99 — inversion exacte de deux شدّات.** p.98 : `وأنجز المهام التاليّة` — `المهام`
+    **sans** شدّة, `التاليّة` **avec**. p.99 : `أنجز المهّام التالية` — `المهّام` **avec** une
+    شدّة posée sur le **ه** (l'orthographe attendue la met sur le **م** final, `المهامّ`),
+    `التالية` **sans**. Les deux formes sont fautives, et symétriquement.
+34. **p.98 — numérotation des مهامّ irrégulière** : `1–`, `2–`, `3–` sans espace ; `4 –`, `5 –`,
+    `6 –` avec une espace avant le tiret ; la septième porte un **point** : `7.`.
+35. **p.100 — `كيفيات`** : le titre calligraphié de la نافذة est composé **sans شدّة** sur le ي.
+36. **p.104 vs p.105/112 — deux graphies du titre de l'œuvre** : `التأملات الميتافيزيقية` (légende
+    p.104, **sans شدّة**) contre `التأملات الميتافيزيقيّة` (titre p.105 et référence p.112,
+    **avec**).
+37. **p.106, repère R6 — `الإنزياح`** avec hamza sur l'alif (pour `الانزياح`), et **`جانبيه`** pour
+    `جانبية`, dans le même repère.
+38. **p.108, repère R17 — `يتنهي`** : **métathèse**, le ت est composé avant le ن, pour `ينتهي`.
+39. **p.109-110 — un repère imprimé deux fois.** La phrase `الإدراك لمحة من لمحات الذهن` **clôt**
+    le bloc marginal de la p.109 **et** forme, seule, le bloc marginal de la p.110. Contrôle
+    600 dpi : la p.109 ne porte **qu'un** triangle sur ce bloc.
+40. **p.112 — la référence du نصّ مطوّل ne donne aucune ville** (`ترجمة عثمان أمين، مكتبة الأنجلو
+    المصريّة، 1974. ص 85 – 111`), alors qu'elle donne traducteur, éditeur, année et pages.
+41. **p.114, مختصر 10 — trois hamzas inversées dans deux phrases.** `إعتراف` et `إحترام` portent
+    une **hamza superflue** (pour `اعتراف`, `احترام`) ; et dans la **même phrase**, `اثبات` est
+    composé **sans** la hamza qu'il devrait porter (`إثبات`). Le مختصر 9 ajoute `إنفصالا` (pour
+    `انفصالا`) alors que le même encadré écrit correctement `ينفصل` et `الإنية`.
+42. **p.114, مختصر 11 — `ليس سوى سرّا سطحيا جدا`** : accusatif après `سوى`, là où le régime attendu
+    est le génitif (`سرٍّ سطحيٍّ`).
+43. **p.114, مختصر 9 — `متوترة ،إذ`** : la virgule est composée **collée au mot suivant** et
+    précédée d'une espace, l'inverse de l'usage tenu partout ailleurs dans la double page.
+44. **p.98 — `P.Ricoeur`** : la ligature `œ` est rendue par **`oe`**, exactement comme le
+    `Complexe d'OEdipe` de la p.85 (`OE`). Deux occurrences de la même faiblesse de fonte, à
+    treize pages d'écart.
+45. **p.98 vs p.76 — deux titres arabes pour un même ouvrage de Ricœur** : `سجال التأويلات`
+    (p.98, en regard de `Le conflit des interprétations`) contre `صراع التأويل` (p.76).
+
+**Fausses pistes écartées (p.98-114)**
+
+13. **`فلاسفة الظنّة` cru absent — le piège exact que la consigne signale.** La consigne de tranche
+    annonce `بحث وتحقيق : فلاسفة الظنّة` ; le cartouche de la p.98 imprime `مدرسة الظنّة` /
+    `L'école du soupçon`. J'ai failli écrire que le titre annoncé « n'existe pas ». **Il existe** :
+    c'est le bandeau gris de la **p.99**, sous les trois portraits. Les **deux** formes sont
+    imprimées, à une page d'écart. Constat correct : « `فلاسفة الظنّة` est absent **de la p.98** »,
+    jamais « absent du بحث وتحقيق ».
+    ⚠️ **Seconde fausse piste, logée dans la première.** J'ai d'abord transcrit les deux titres
+    `الظّنّة` (deux شدّة), puis cru voir la شدّة se **déplacer** de l'un à l'autre. Les deux
+    lectures étaient fausses. Agrandissement 600 dpi recadré sur le seul mot, sur **chacune** des
+    deux pages : le ظ ne porte que **son propre point diacritique**, et **une unique شدّة est
+    posée sur le ن** — `الظنّة`, **identique** aux deux pages. La seule différence réelle entre les
+    deux titres est donc `مدرسة` contre `فلاسفة`. Le premier recadrage, trop à gauche, avait attrapé
+    `مدرسة` au lieu de `الظنّة` : **une vérification qui vise à côté du mot ne vérifie rien.**
+14. **Quatre repères comptés p.109 au lieu de trois.** Le troisième bloc marginal se termine par
+    un retour à la ligne suivi de `الإدراك لمحة من لمحات الذهن`, ce qui, à 150 dpi, ressemble à un
+    quatrième repère. À 600 dpi ce bloc ne porte **qu'un seul triangle** : c'est **une** entrée,
+    dont la dernière phrase est reprise seule p.110.
+15. **La p.114 crue ouvrir le مبحث 1.2.** La consigne laissait cette possibilité ouverte
+    (« fin du مبحث, ou début du مبحث 1.2 — dis ce que tu vois »). **Ce n'est ni l'un ni l'autre
+    exactement** : la p.114 est la **seconde page des مختصرات**, dans le **même cadre jaune
+    arrondi** que la p.113, **sans titre, sans bandeau, sans numéro de section**, et sa moitié
+    inférieure est blanche. Le مبحث 1.2 commence donc **après** la p.114, hors de cette tranche.
+16. **Les dates d'Archimède crues inversées.** Rendu visuel `( ق م 212 - 287)` : le nombre le plus
+    petit paraît à gauche, ce qui semble contredire l'ordre chronologique. Étalon appliqué : le
+    nombre logiquement premier est **à droite**, soit `287`, et l'ordre logique est
+    `(287 – 212 ق م)` — décroissant, comme il se doit pour des dates av. J.-C. **Ordre correct**,
+    identique au `( 469—399 ق م )` de Socrate relevé au fragment ch1a.
+
+**Intervalles de dates — vérifiés un à un (p.98-114)**
+
+| Lieu | Rendu **visuel** (couche-texte) | Ordre **logique** | Verdict |
+| :-- | :-- | :-- | :-- |
+| p.104, légende `ديكارت` | `( 1650 -1596 )` | `1596 – 1650` | **ordre correct** |
+| p.105, note 2 (`أرخميدس`) | `( ق م 212 - 287)` | `287 – 212 ق م` | **ordre correct** (décroissant, av. J.-C.) |
+| p.112, référence | `111-85 ص` | `ص 85 – 111` | **pagination**, pas un intervalle de dates |
+
+**Aucun intervalle retourné.** Les p.98-103, p.106-111 et p.113-114 ne portent **aucun** nombre de
+trois ou quatre chiffres hors des numéros de page et des numéros de ligne. Seule date isolée :
+`1974` (millésime d'édition, p.112).
+
+**Variantes de graphie des noms propres (p.98-114)**
+
+- **Descartes — 3 formes** : `ديكارت` (p.102, 104 ×2, 105, 112, et repères R15, R17) ·
+  **`René DESCARTES`** (p.104, **unique occurrence latine de tout le chapitre**) · `DESCARTES`
+  (composé sur la couverture reproduite p.104). Le corps du chapitre n'emploie jamais que
+  `ديكارت`, et les p.81-82 l'avaient adjectivé en `الديكارتية`.
+- **Ricœur — 3 formes dans la tranche** : `بول ريكور` (p.98 ×2) · `ريكور` (p.87 légende, p.89) ·
+  `P.Ricoeur` (p.98, latine, **avec `oe` et non `œ`**).
+- **Heidegger — 1 forme** : `هيدغر` (p.100, étiquette de l'encadré-citation).
+- **Archimède — 1 forme** : `أرخميدس` (p.104, encadré-citation ; p.105, note 2).
+- **Marx / Nietzsche / Freud** : `ماركس` · `نيتشه` · `فرويد` (p.98 dans le سند de Ricœur, p.99 en
+  têtes des trois سندات). **Aucune graphie latine** dans le بحث وتحقيق.
+- **Traducteur** : `عثمان أمين` (p.112) — cité sans autre précision.
+- **Graphies latines de p.98-114 — 6 en tout** : `L'école du soupçon` et
+  `P.Ricoeur - Le conflit des interprétations` (p.98) ; `DESCARTES`, `méditations métaphysiques`,
+  `GF-Flammarion` (reproduits sur la couverture) et `René DESCARTES` (p.104). **Les p.99, 100,
+  101, 102, 103 et 105 à 114 n'en portent aucune** — neuf pages consécutives sans un seul
+  caractère latin.
+- **Termes translittérés relevés tels quels** : `الظنّة` / `الظنّة` / `التظنّن` / `تظنن` ·
+  `الفينومينولوجيا` (p.98) · `الميتافيزيقيّة` · `أنطولوجي` (p.113) · `الكينونة` · `الإنية` /
+  `إنيتي` / `أنيتي` / `إنّيته` · `الغيريّة` / `الغيرية` · `اللاّ أنا` (p.114).
+- ⚠️ **`إنية` connaît trois graphies dans les deux seules pages des مختصرات** : `إنيتي` (p.113) ·
+  `إنّيته` (p.114, avec شدّة) · `أنيتي` (p.114, avec **hamza sur alif** au lieu de la hamza sous
+  alif). Les trois sont dans des encadrés différents.
+
+**Incertitudes (p.98-114)**
+
+- **Aucun `[?]`** : les dix-sept pages sont entièrement lisibles à 600 dpi ; rien n'a été deviné.
+- **Positions de ligne des repères marginaux** : les numéros de ligne donnés dans la colonne
+  « ≈ ligne » du tableau des repères sont **approchés** — le manuel place le triangle en regard
+  d'un endroit du bloc, sans marquer la ligne exacte. Ils sont notés `≈` à dessein.
+- **Longueur totale du نصّ** : le dernier numéro imprimé est **265** et le texte s'achève quelques
+  mots plus loin ; je donne « **environ 266 lignes** » et **ne prétends pas** au chiffre exact,
+  qui n'est pas imprimé.
+- **Attribution des trois portraits de la p.99** : leur position sous les noms `ماركس`, `نيتشه`,
+  `فرويد` identifie sans ambiguïté les sujets, mais **aucune légende n'est imprimée sous les
+  photos** ; et **aucun photographe, aucune source** n'est nommé. Décrits, jamais attribués.
+- **Portrait au trait de la p.104** : non légendé. Sa place, sous la couverture de l'ouvrage de
+  Descartes, suggère Descartes ; **la page ne le dit pas**. Non attribué.
+- **`(مع مراجعة لجنة التأليف)` (p.112)** : le manuel indique que la commission de rédaction a
+  **révisé** la traduction d'عثمان أمين. Le texte imprimé n'est donc pas identiquement celui de
+  l'édition citée ; **je ne peux pas dire ce qui a été modifié**, et je ne le suppose pas.
+- **Titre de la sous-section 1.1.3.3** : deux titres sont imprimés (`مدرسة الظنّة` p.98,
+  `فلاسفة الظنّة` p.99). J'ai retenu **`مدرسة الظنّة`** en tête de section parce qu'il est dans le
+  **cartouche de titre**, et signalé l'autre. Ce choix est **le mien**, il n'est pas dicté par le
+  manuel.
+
+---
+
+**Récapitulatif de la tranche p.75-114 — ce qui a été transcrit**
+
+| Bloc | Pages réelles (constatées) | Contenu compté |
+| :-- | :-- | :-- |
+| `1.1.3` نافذة دعائم للتفكير في المسألة — ouverture | p.75 | 1 encadré-citation · 1 diagramme à 3 entrées · 1 image |
+| `1.1.3.1` تحديدات وتمييزات مفهوميّة | p.76-82 | **3** notions · **5** rubriques `قيل في…` (**25** blocs de citation : 7+6+4+2+6) · **3** encadrés `مفاهيم` · **20** URL |
+| `1.1.3.2` سياقات فكرية | p.83-97 | **4** سياقات · **27** entrées de `الجهاز المفهومي` (11+6+5+5) · **4** rubriques `* تنبيهات` · **18** titres bibliographiques |
+| `1.1.3.3` بحث وتحقيق | p.98-99 | **4** سندات · **13** مهامّ · **3** cases `معينات` |
+| `1.1.4` نافذة كيفيات التفكير | p.100-103 | **4** exercices · **2** سندات · **1** encadré-citation |
+| `1.1.5` نافذة نصّ مطوّل | p.104-112 | **1** texte de **~266 lignes** · **53** numéros de ligne · **27** blocs marginaux · **0** question |
+| `1.1.6` مختصرات | **p.113-114** | **11** مختصرات (6 + 5) |
+
+**Frontières réelles contre frontières annoncées** — quatre écarts constatés :
+1. Le سياق `التحليل النفسي` court jusqu'au **haut de la p.87** (annoncé p.83-86), et
+   `الفينومينولوجيا` s'ouvre **au milieu** de la p.87.
+2. Le titre de la `1.1.3.3` est **`مدرسة الظنّة`** (p.98) et **`فلاسفة الظنّة`** (p.99), non l'un
+   seulement.
+3. La `1.1.6 مختصرات` occupe **deux** pages, p.113 **et** p.114, non une seule.
+4. La p.114 **ne commence pas** le مبحث 1.2 : elle **achève** le مبحث 1.1.
+
+**Étalon bidi — bilan sur la tranche entière.** **21 intervalles de dates** ont été relevés dans
+p.75-114 (0 en p.75-82, 8 en p.83-90, 9 en p.91-97 dont un qui était une pagination, 2 en
+p.104-105, plus 2 paginations en p.92 et p.112). **Tous les 21 sont dans le bon ordre logique** ;
+**aucun `[sic]` n'a été posé**. La méthode qui a permis de trancher sans jamais se fier à l'œil :
+`pdftotext -layout` sur la page isolée, dont la couche-texte est en **ordre visuel** et donne donc
+directement la séquence telle qu'elle s'affiche de gauche à droite — sur quoi l'étalon
+(`مرلوبونتي (1908—1961)` rendu `1961—1908`, donc **nombre logiquement premier à droite**)
+s'applique mécaniquement. **Réutilisable tel quel sur les tranches suivantes.**
 
 #### مبحث 1.2 : الخصوصيّة والكونيّة — p.115–214
 
