@@ -45,6 +45,14 @@ name: Automerge (corpus)
 #   • PR en draft ;
 #   • branche préfixée `wip/`, `draft/` ou `rescue/` (savepoint volontaire) ;
 #   • label `no-automerge` (gel d'une PR déjà ouverte).
+#
+# CE QUE CE MERGE NE FAIT PAS, et qui surprend : il ne referme aucune issue. Un
+# `Closes #NNN` dans le message part pourtant bien sur `main` avec le squash — et
+# l'issue reste OUVERTE (constaté le 2026-08-31 sur #278, refermée à la main ensuite).
+# Même famille que le reste de ce fichier : c'est le bot qui pousse. Une session qui
+# compte sur le mot-clé se croit quitte et laisse une issue ouverte derrière elle ;
+# refermer explicitement (`gh issue close`), et ne jamais lire « issue ouverte » comme
+# « pas traité » sans avoir cherché le correctif sur `main`.
 
 on:
   # Fin d'un workflow de PR : le moment où une PR peut devenir verte. La liste n'a pas besoin
