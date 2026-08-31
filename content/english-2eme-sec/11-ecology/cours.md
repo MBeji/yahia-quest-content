@@ -146,6 +146,8 @@ They are a **pair of conjunctions**: neither half lives without the other. And t
 
 Tunisia is a country of low and irregular **rainfall**, and lesson 28 says so plainly: dams and mountain lakes hold the winter water back, and deep wells are **drilled** where the surface water is not enough. At home the arithmetic is just as simple: a **hose** left running on a car uses several times what a bucket uses, and a leaking tap that nobody reports raises the **bill** of a family that has done nothing else wrong. The lesson asks you two questions, and they are not the same question: what is being done, and what **you** can do.
 
+Its opening quiz asks the second one nine times, and it asks it about your own house: a bath or a shower, the garden watered in the evening or in full sun, a vessel or **running water** for the dishes, a bucket and a rag or a **hose** for the floor and for the car, a **well** at home, economical taps and meters, repairs to the pipes dealt with at once — and, the only one that reaches outside the family, whether you notify the **SONEDE** as soon as you see a leak in the water mains. That last one is the point of the whole page: a leak in the street belongs to nobody, so it is reported by somebody or by no one at all.
+
 ## 🎵 Time for a song — simile and metaphor
 
 Lesson 29 is a listening lesson built on a song, and it ends with a question about a figure of style. Your book offers you the three names — **a simile**, **a metaphor**, **a personification** — and defines none of them. Here they are.
