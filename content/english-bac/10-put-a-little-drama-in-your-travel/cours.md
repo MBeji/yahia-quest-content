@@ -15,14 +15,14 @@ Every entry in a programme answers the same four questions, and no others. Learn
 
 | Column | The question it answers | What it holds |
 | --- | --- | --- |
-| **Play** | What is being performed? | the title of the work: *Twelfth Night*, *Macbeth* |
-| **Troupe** (or **company**) | Who is performing it? | the group of actors: the Rope Dancers, the Royal Shakespeare Company |
-| **Venue** | In what place is it performed? | the exact spot: an open-air arena, a park, a courtyard, a vaulted cellar |
-| **Dates** | On what evenings is it performed? | a period, most often: *10 August – 10 September* |
+| **Play** | What am I going to see? | the title of the work: *Twelfth Night*, *Macbeth* |
+| **Troupe** (or **company**) | Who is going to give it? | the group of actors: the Rope Dancers, the Royal Shakespeare Company |
+| **Venue** | Where do I have to go? | the exact spot: an open-air arena, a park, a courtyard, a vaulted cellar |
+| **Dates** | Which evenings may I choose from? | a period, most often: *10 August – 10 September* |
 
 Three traps live in that table.
 
-1. **A venue is not a town.** *Mahdia* is where the bus takes you; *the vaulted cellar under the fish market* is the venue. A programme that prints both expects you to know which is which.
+1. **A venue is not a town.** *Tozeur* is where the bus takes you; *the palm garden behind the museum* is the venue. A programme that prints both expects you to know which is which.
 2. **A run is not two dates.** *4 to 19 June* does not announce two performances, one at each end. It means the play is given every evening between those two days — that is a **run**, and a festival's whole set of shows is its **season**. A company in its *nineteenth season* has been coming back for nineteen years.
 3. **The company is not the author.** The playwright wrote the words, often centuries ago; the troupe is the group of people performing them tonight.
 
@@ -37,16 +37,16 @@ Three traps live in that table.
 | **choreography** | the art of inventing the steps of a dance |
 | **sightseeing** | visiting the places a town is known for |
 | **to head for / to head to** | to move in the direction of a place |
-| **on the calendar** | planned, with its dates now fixed |
-| **a cybertrip** | a journey you explore or prepare through the internet |
-| **to stage** (verb) | to put a play in front of an audience |
+| **on the calendar** | decided, with its days now settled |
+| **a cybertrip** | a journey you look up and arrange from a screen |
+| **to stage** (verb) | to put a play on before an audience |
 | **a stage** (noun) | the raised floor the actors work on |
 
 ### The programme is dated goods
 
-A festival programme usually reaches you inside a newspaper article, and an article carries three lines of small print above it: who wrote it (**the byline**, *By Roger Petterson*), where it came from (**the agency**, *Associated Press*), and when it was written (**the date**, *Oct. 11, 2006*). That last line is not decoration. Casts, prices and days change from one year to the next, so an old page proves that a festival exists — it never tells you when this year's performances are.
+A festival programme usually reaches you inside a newspaper article, and an article carries three short lines above it, set in small type: who wrote it (**the byline**, *By Roger Petterson*), where it came from (**the agency**, *Reuters*), and when it was written (**the date**, *March 3, 2011*). That last line is not decoration. Casts, prices and days change from one summer to the next, so an old page proves that a festival exists — it never tells you when this year's performances are.
 
-And the two texts do not write about the same evening in the same way. The **article** makes sentences: *The Rope Dancers will give twelve performances in the vaulted cellar this June.* The **programme entry** makes a record, with the verbs taken out and the fields cut apart: *The Rope Dancers · vaulted cellar, Mahdia · 4-19 June · 6 D.* One is prose. The other is already notes — which is exactly where the second half of this lesson begins.
+And the two texts do not write about the same evening in the same way. The **article** makes sentences: *The Rope Dancers will give twelve performances in the palm garden this June.* The **programme entry** makes a record, with the verbs taken out and the fields cut apart: *The Rope Dancers · palm garden, Tozeur · 4-19 June · 6 D.* One is prose. The other is already notes — which is exactly where the second half of this lesson begins.
 
 ## 📖 2. Opening a dictionary properly
 
@@ -67,7 +67,7 @@ idm.  at this stage — at this point, and not necessarily later
 ### Four steps, in this order
 
 1. **Find the headword.** A dictionary lists base forms only. You meet *staged*, *troupes*, *ran* — you go looking for **stage**, **troupe**, **run**. Hunting for a whole verb group or for an ending finds nothing at all.
-2. **Decide the word's job in your sentence, then pick the half.** One headword often has a noun half and a verb half, and they do not mean the same thing. In *The company is staging the play in a shed*, the word is what the company **does**, so you read the verb half and ignore the five noun senses printed above it.
+2. **Decide the word's job in your sentence, then pick the half.** One headword often has a noun half and a verb half, and they do not mean the same thing. In *The festival stages nine plays a summer*, the word is what the festival **carries out**, so you read the verb half and ignore the three noun senses printed above it.
 3. **Take the sense your sentence needs.** Read down the numbered senses inside your half, instead of stopping at the first one you meet.
 4. **If the words together mean something the words apart do not, go to the end.** Fixed expressions are filed last, after every sense, usually behind a label such as **idm.** No amount of staring at *stage* by itself will explain *at this stage*.
 
@@ -76,8 +76,8 @@ idm.  at this stage — at this point, and not necessarily later
 An entry is not only a list of meanings.
 
 - **The pronunciation**, between slashes: /steɪdʒ/.
-- **The grammar**, hidden in the little example. When an entry prints **head for / towards sth**, it is telling you that this verb cannot touch its destination directly. ✗ *They were heading the station.* → ✓ *They were heading **for** the station.* Copy the pattern, not only the meaning.
-- **The other spelling.** A dictionary flags the form used on the far side of the Atlantic: British **theatre**, American **theater**. An American travel page prints the American form because it was written for American readers — a difference of spelling, never of meaning.
+- **The grammar**, hidden in the little example. When an entry prints **head for / towards sth**, it is telling you that this verb cannot touch its destination directly. ✗ *The buses head the festival gate.* → ✓ *The buses head **for** the festival gate.* Copy the pattern, not only the meaning.
+- **The other spelling.** A dictionary flags the form used on the far side of the Atlantic — the same **-re → -er** switch you met in *First Impressions*, met here inside an entry rather than in a list: British **centre**, American **center**. An American travel page prints the American form because it was written for American readers — a difference of spelling, never of meaning.
 
 ## ✍️ 3. From notes to a biography
 
@@ -90,8 +90,8 @@ A note is written for a single reader, you, in a hurry. It throws away everythin
 | The note | What has been thrown away |
 | --- | --- |
 | *1592: beginning of acting and writing plays* | the person, the verb, the tense |
-| *Married at eighteen; wife eight years older* | the subject, and the words that join |
-| *Occupations: schoolmaster; printer; dyer* | the sentence itself — a colon and two semicolons are doing its work |
+| *Back from the capital at thirty; no money left* | the subject, and the words that join |
+| *Languages: Arabic; French; Italian* | the sentence itself — a colon and two semicolons are doing its work |
 
 To turn one back into English, you give it the three things it lost: a **subject**, a **verb in the past**, and the small words (*a*, *the*, *in*, *as*) that the language cannot do without.
 
@@ -101,22 +101,22 @@ To turn one back into English, you give it the three things it lost: a **subject
 
 **Rule 1 — the past tense, the whole way through.** A life that is over is told in the past. Sliding into the present is the commonest slip of all, and it costs you a mark in every sentence it touches.
 
-**Rule 2 — the years stay in line.** Notes normally arrive in the right sequence and your paragraph has to keep it. A paragraph that hands out a prize before it reports a birth cannot be read, however true each of its facts may be, and no linker will rescue it.
+**Rule 2 — the years stay in line.** Notes normally arrive in the right sequence and your paragraph has to keep it. A paragraph that reports the harvest before the sowing cannot be read, however true each of its facts may be, and no linker will rescue it. Some boxes carry no years at all, and the order is still there, hidden inside the facts: one of them cannot become true until another has happened. *Sat the examination · was given the diploma* can only be read one way round, whatever order the two lines are filed in. Find those locks first, and the sequence writes itself.
 
 **Rule 3 — add nothing the notes do not carry.** This is the rule an examiner watches for. You may **work something out** from the notes; you may not **invent** it.
 
 | The notes say | You write | Verdict |
 | --- | --- | --- |
-| *1949 opened the lending library · 1981 handed it on* | *He handed it on in 1981, after thirty-two years behind the desk.* | ✓ worked out — the two years say so |
-| *1949 opened the lending library* | *He opened the lending library because the town had none.* | ✗ invented — no note gives a reason |
-| *1949 opened the lending library* | *He opened the finest lending library on the coast.* | ✗ invented — a judgement is a fact too |
+| *1949 opened the lending library · 1981 handed it on* | *He kept the library for thirty-two years.* | ✓ worked out — the two years say so |
+| *1949 opened the lending library* | *He opened the lending library to please his mother.* | ✗ invented — no note gives a purpose |
+| *1949 opened the lending library* | *He opened a library the whole coast came to envy.* | ✗ invented — a judgement is a fact too |
 
 ### The first line
 
 A biography does not open on a date. Its first line says **who the person was and why a stranger should read on**; the years begin just afterwards. Your book prints the model above its box of notes: it names Shakespeare, calls him the greatest dramatist and poet in the English language, and only then lets the life start.
 
-> ✗ *Habib Ferjani was born in 1931 in a village that had no theatre.* (an opening date, and no reason to continue)
-> ✓ *Habib Ferjani, born in 1931, took Tunisian theatre out of the capital.* (who he was, and why he matters)
+> ✗ *In 1938 Habib Ferjani walked into a rehearsal room for the first time.* (an opening date, and no reason to continue)
+> ✓ *Habib Ferjani spent forty years, from 1951 onwards, teaching a town of farmers to act.* (who he was and why he matters — the year folded in, not put in front)
 
 ## 🔗 4. The linkers, and what each one claims
 
@@ -133,8 +133,8 @@ Your book gives you eight and asks you to use them: *and, after, but, next, then
 
 Two of them do damage in a hurry:
 
-- **but** where nothing is contradicted: *She bought the old cinema, **but** two winters later she reopened it* — nothing suggests that a buyer is not expected to reopen the place.
-- **because** or **so** where no note offers a cause: joining two facts with a reason the notes never mention is the neatest way of inventing without noticing that you have.
+- **but** where nothing is contradicted: *He moved to Sfax in 1959, **but** he opened his own workshop there in 1961* — nothing suggests that a man who settles in a town is not expected to work in it.
+- **because** or **so** where no note offers a cause: joining two facts with a reason that no line of the file records is the neatest way of inventing without noticing that you have.
 
 When you hesitate, **and** claims the least. It is never wrong; it is only dull, and dullness is cheaper than a mark lost.
 
@@ -154,15 +154,15 @@ Read the two once more, side by side. Not one fact has been added. Every note ha
 
 | Wrong | Right | Why |
 | --- | --- | --- |
-| Venue: *Mahdia* | Venue: *the vaulted cellar, Mahdia* | The venue is the place of the performance, not the town it stands in |
-| "The troupe was restored last winter." | *The **venue** was restored last winter.* | A troupe is people; a venue is a building |
-| "*4 to 19 June* — so, two performances." | *4 to 19 June — a **run**, every evening between the two* | A dash between two dates opens a period |
+| Venue: *Tozeur* | Venue: *the palm garden, Tozeur* | The venue is the ground the audience walks into, not the town it stands in |
+| "The troupe has stood there since 1890." | *The **venue** has stood there since 1890.* | A troupe is people; a venue is a place |
+| "*4 to 19 June* — so, two performances." | *4 to 19 June — a **run**, every evening between the two* | A stroke set between two dates covers everything in between |
 | Looking up *troupes* | Look up **troupe** | A dictionary lists base forms only |
-| "They were heading the station." | *They were heading **for** the station.* | The entry's little example carries the preposition |
+| "The buses head the festival gate." | *The buses head **for** the festival gate.* | The entry's little example carries the preposition |
 | Reading sense 1 of the noun for a verb | Pick the **half** before the sense | The two halves of one headword do not mean the same thing |
 | "In 1592 he begins to write plays." | *In 1592 he **began** to write plays.* | A finished life is told in the past |
-| "Occupations: schoolmaster; printer; dyer." | *He worked as a schoolmaster, a printer and a dyer.* | A note is not a sentence until it has a subject and a verb |
+| "Languages: Arabic; French; Italian." | *He spoke Arabic, French and Italian.* | A note is not a sentence until it has a subject and a verb |
 | "He closed the shop because he was tired of it." | *He closed the shop in 1981.* | If no note says why, then you do not know why |
-| "…, **but** two winters later she reopened it." | *…, **and** two winters later she reopened it.* | **but** promises a contradiction that has to be really there |
+| "He moved to Sfax in 1959, **but** he opened his own workshop there in 1961." | *He moved to Sfax in 1959, **and** he opened his own workshop there in 1961.* | **but** promises a contradiction that has to be really there |
 
 > 🏆 Gate cleared, hero. You can read a programme without mistaking a company for a courtyard, open a dictionary at the right half of the right word, and turn a box of bare notes into a paragraph that adds nothing to them. Next quest: **The Winter's Tale** — where the story stops being somebody's life and starts being a tale.
