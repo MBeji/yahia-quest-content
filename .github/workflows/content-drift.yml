@@ -24,6 +24,19 @@ name: Contenu non publié (garde)
 # geste manquant, elle ne le fait pas à la place de quelqu'un.
 
 on:
+  # ⚠️ Ne se déclenche que derrière un merge fait à la MAIN (ou une poussée directe sur
+  # `main`). Quand c'est `automerge.yml` qui merge, le push est produit par le
+  # `GITHUB_TOKEN` et GitHub n'émet AUCUN événement (garde anti-récursion) : cette garde
+  # reste muette, et son silence se lit « tout va bien ».
+  # Mesuré le 2026-08-31 (#278). Le contraste est net, deux PR de contenu à six minutes
+  # d'écart le 2026-08-29 : #250 mergée par un humain → run ici trois secondes après ;
+  # #256 mergée par `app/github-actions` → rien, ni pour elle ni pour les six commits de
+  # contenu qui ont suivi. Seul le cron voyait l'écart, avec jusqu'à ~22 h de retard — et #238 a été
+  # refermée sur un écart déjà rouvert par une PR mergée 24 min après l'application.
+  # Le trou est bouché à la SOURCE, l'idiome du dépôt (cf. `content-ci.yml` qui réveille
+  # `automerge.yml`) : la chaîne d'automerge dispatche cette garde en fin de balayage
+  # quand la PR qu'elle vient de merger touchait `content/`. Ce déclencheur-ci reste : il
+  # couvre le merge manuel, que le dispatch d'automerge ne voit pas.
   push:
     branches: [main]
     paths:
@@ -252,9 +265,14 @@ jobs:
           cette issue. Le corpus complet se réserve à une réconciliation, **hors des
           heures d'usage**.
 
-          Cette issue se referme toute seule au prochain passage de la garde, une fois
-          l'écart comblé. Vérifiée chaque jour à 06:40 UTC et à chaque push sur `main`
-          touchant `content/`.
+          Cette issue se referme toute seule au prochain passage de la garde — mais
+          seulement à écart **nul sur TOUS les sujets**, pas seulement ceux listés
+          ci-dessus : elle est unique et vivante, elle se retitre à chaque passage. Une PR
+          de contenu mergée entre-temps y remet donc un sujet.
+
+          Passages : chaque jour à 06:40 UTC, et à chaque merge de contenu — la chaîne
+          d'automerge réveille la garde explicitement. Le `push` seul ne suffit pas : un
+          merge fait au `GITHUB_TOKEN` n'émet aucun événement.
           PIED
           } > corps.md
 
