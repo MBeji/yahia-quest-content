@@ -84,6 +84,50 @@ il ne voit que les profils `ecole-cnp`, `ecole-secondaire` et `sans-source`. Un 
 traite hors `/campagne`, par la méthode (§ Profils, checklist droits R-2) et `content-ingest`, sur
 demande explicite de l'humain. Ne l'invente pas dans la liste des options.
 
+### 1 bis. Qui travaille déjà dessus — à faire AVANT de présenter quoi que ce soit
+
+`programme:etat` lit le registre et les manifestes : il ne voit **que `main`**. Il ne peut pas savoir
+qu'une autre session tient déjà un couple. Ce scan-là est le seul qui le sache, et il se lance
+**avant** l'étape 2, parce qu'il change ce qu'on a le droit de proposer.
+
+```bash
+cd <corpus> && git fetch --prune -q origin
+GR=2eme-sec ; MA=anglais ; SU=english        # SU = préfixe des ids de sujet (english/french/math…)
+
+git worktree list                                                    # (1) sessions de CETTE machine
+git branch -r --no-merged origin/main | grep -iE "($MA|$SU)" | grep -i "$GR"   # (2) travail poussé
+gh pr list --state open --limit 50 --json number,title,headRefName,isDraft     # (3) travail déclaré
+```
+
+**Les trois pattes sont nécessaires, et chacune rattrape ce que les autres ratent** — mesuré sur ce
+dépôt le 2026-08-31 :
+
+| Patte | Ce qu'elle voit | Ce qu'elle rate |
+| --- | --- | --- |
+| (1) `git worktree list` | une session de la même machine **avant tout push** — le seul signal précoce | une session sur une autre machine |
+| (2) branches non mergées | du travail poussé **sans PR** — `bac × anglais` avait 4 branches vivantes et **zéro PR ouverte** | ce qui n'est pas encore poussé |
+| (3) PR ouvertes | le travail déclaré, avec son état draft/wip | ce qui n'a pas encore de PR |
+
+⚠️ **Deux pièges de filtrage, tous deux constatés :**
+
+- **le nom de matière change de langue selon la branche** — `feat/programme-**anglais**-2eme-sec-…`
+  et `feat/content-**english**-2eme-sec-…` désignent le même couple. Grepper l'un sans l'autre rate
+  la moitié du travail. D'où les deux jetons `$MA|$SU`.
+- **le préfixe de branche n'est pas normalisé** : `feat/content-`, `feat/programme-`, `claude/`,
+  `wip/` sont tous en usage. Ne filtre **jamais** sur un préfixe.
+
+⚠️ **`--no-merged origin/main` n'est pas cosmétique** : sans lui le scan remonte tout l'historique du
+couple et noie le travail vivant sous les branches finies.
+
+⭐ **La patte (3) ne filtre volontairement rien** : elle liste **toutes** les PR ouvertes et c'est toi
+qui lis. Le dépôt en compte une poignée, et un filtre `--search` ou `jq` mal quoté rend un tableau
+vide — c'est-à-dire le message « personne ne travaille dessus », qui est exactement la panne qu'on
+répare ici. Une liste courte à relire vaut mieux qu'un filtre qui peut mentir.
+
+**Ce que tu en fais** : tout couple qui ressort d'une des trois pattes est **TENU**. Il se présente
+quand même à l'étape 2 — masquer une option n'est jamais permis — mais préfixé `⚠️ TENU par
+<branche ou #PR>`, et l'humain arbitre en connaissance de cause.
+
 ## 2. Demander — et seulement demander
 
 Présente l'état **dans l'ordre du registre** (jamais réordonné), puis pose la question avec
@@ -108,11 +152,28 @@ Présente l'état **dans l'ordre du registre** (jamais réordonné), puis pose l
 
 Choix d'un couple `en-cours` ⇒ redis qu'une autre session le tient (R-4), et **redemande**.
 
+⚠️⚠️ **Le scan 1 bis vaut aussi — et surtout — quand le couple ne vient pas de la question.** Le cas
+qui a coûté le plus cher n'est pas celui d'un humain qui choisit mal dans une liste : c'est celui
+d'une session à qui l'on confie directement un couple (« finalise l'anglais de 2ème année »), qui
+saute donc l'étape 2, et avec elle le contrôle qui vit en dessous. **Un couple imposé se scanne
+avant la première ligne de travail**, exactement comme un couple choisi ; s'il ressort TENU, tu le
+dis et tu attends l'arbitrage plutôt que de démarrer en parallèle.
+
+Coût mesuré du contraire, le 2026-08-31 sur `2eme-sec × anglais` : une fiche LOT A entière écrite
+puis jetée, et **85 questions générées deux fois** par deux sessions qui s'ignoraient.
+
 ## 3. Dérouler l'étape prescrite
 
 Avant tout : **branche fraîche depuis `origin/main` fetchée**, dans le corpus (A1/B1 de la méthode),
-et re-vérifie la contention — `gh pr list --search "<niveau> <matière>"` + branches
-`feat/transcription-<niveau>-*` — que `programme:etat` ne peut pas connaître.
+et **rejoue le scan 1 bis** — entre la question et le premier commit, une autre session a pu pousser.
+
+> ⚠️ **Ce paragraphe prescrivait jusqu'au 2026-08-31 un contrôle qui ne marchait pas**, et c'est
+> pire qu'aucun contrôle, parce qu'il rend une réponse vide avec assurance. Il demandait
+> `gh pr list --search "<niveau> <matière>"` — sur `2eme-sec anglais`, cette requête ne remontait
+> **aucune** des PR concurrentes, les titres étant écrits « english-2eme-sec » ou « anglais 2ème
+> sec » — et un grep sur `feat/transcription-<niveau>-*`, préfixe qu'**aucune** des huit branches
+> réelles du couple ne portait ; sur `2eme-sec` il ne trouvait qu'une branche **de français**.
+> La version 1 bis a été construite contre ces branches-là et vérifiée sur trois couples.
 
 | `prochaineEtape.etape` | Ce que tu déroules                                                     | Qui écrit                                                              |
 | ---------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- |
@@ -188,6 +249,37 @@ ne se déclenche qu'après le merge **et** l'application vérifiée de la tranch
 moteur si l'humain te le demande ; sinon tu la **rapportes comme reste à faire** (§ 5), nommément —
 une classe dont le contenu est en base mais le parcours resté `coming_soon` est invisible pour les
 élèves, et rien dans les gates ne le signale.
+
+## 4 bis. Poser — et ne pas poser — la réservation `en-cours`
+
+Le registre porte un statut de réservation, `en-cours` (« réservé par une session »). L'étape 2 sait
+**le lire** ; encore faut-il que quelqu'un l'**écrive**. Personne ne le faisait : au 2026-08-31,
+**zéro fiche** du dépôt était marquée `en-cours`.
+
+**Quand l'écrire** : à l'ouverture d'un **LOT A sur une fiche qui n'existe pas encore**, ou dont
+rien n'est encore générable. Tu écris `"statut": "en-cours"`, tu commites, **tu pousses tout de
+suite** — une réservation qui dort sur une branche locale ne réserve rien — et tu la remplaces par
+le vrai statut en fin de lot.
+
+⚠️⚠️ **Quand ne PAS l'écrire, et c'est impératif.** `en-cours` n'est pas un drapeau « je travaille
+ici » : il **coupe la génération pour tout le monde**. Le moteur est explicite —
+
+```ts
+export function chapitresGenerables(entry: FicheEntry): string[] {
+  if (generationAutorisee(entry)) return [];
+  if (entry.statut === "en-cours") return [];   // ← la levée R-5 disparaît
+  return entry.chapitresGeneration;
+}
+```
+
+Posé sur une fiche `partielle` dont `chapitresGeneration` est peuplé, il **rend non générables des
+chapitres qui l'étaient**, y compris pour la session qui les génère légitimement. Donc : `en-cours`
+**ne réserve jamais un LOT B**, et ne se pose jamais sur une fiche déjà exploitée.
+
+**Pour un LOT B, la réservation est le scan 1 bis**, pas un statut : une branche poussée tôt (même
+vide) est visible par les trois pattes, ne casse rien, et n'a pas besoin d'être relâchée.
+⚠️ Et **`_tranches-wip/` n'est pas un verrou** : c'est un sas de sauvegarde de transcriptions brutes,
+avec son propre contrat (voir son README). Ne l'utilise pas pour signaler du travail en cours.
 
 ## 5. Boucler, ou s'arrêter proprement
 
