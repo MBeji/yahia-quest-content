@@ -1,6 +1,6 @@
 # Étude 31 — L'envie de revenir : engagement & rétention à hauteur de jeu vidéo
 
-> **Statut** : brouillon
+> **Statut** : validée — Q-1…Q-4 arbitrées le 2026-09-01 (§7)
 > **Priorité** : 31 · **Valeur** : 🔁 le retour de l'élève cesse de reposer sur sa seule
 > volonté — mesuré, rappelé, célébré, rythmé ; l'élève ouvre l'app parce qu'il en a envie,
 > pas parce qu'on l'y force · **Complexité** : moyenne+
@@ -194,7 +194,7 @@ mesure.
   nuit, opt-in explicite (conforme à l'esprit des lignes directrices mineurs DSA — annexe
   §F.12), opt-out en un geste, ton El Ostedh (« jamais culpabilisant » — la règle de
   `coaching.ts` s'étend aux push). La relance d'absent est **unique** par période d'absence
-  (J+7), jamais répétée.
+  (J+7), jamais répétée. Le guide parent documente l'opt-in (Q-1, arbitrée).
 - **R-5** — Compétition sans humiliation : cohortes comparables d'abord (« Ma classe »,
   ligue par centile), aucun affichage public d'échec, pas de vocabulaire de relégation.
   L'exclusion anti-triche reste silencieuse (é22 R-26).
@@ -237,7 +237,7 @@ mesure.
 - **R-15** — Classement « Cette semaine » : XP de la semaine ISO en cours (fuseau Tunis,
   même horloge que la ligue — `app_current_week_start()`), mêmes cohortes que l'existant
   (global / Ma classe / matière), même anti-fuite (aucun `user_id` tiers). Le cumulatif
-  reste. L'onglet par défaut : Q-3.
+  reste. L'onglet par défaut : « Cette semaine » (Q-3, arbitrée le 2026-09-01).
 - **R-16** — Notifications nouvelles, audiences exactes :
   `streak-lost` — série ≥ 3 perdue avant-hier (fenêtre de rachat encore ouverte), une fois ;
   `league-result` — lundi, tout participant de la semaine close (payload : palier + gain) ;
@@ -254,8 +254,8 @@ mesure.
   bilan ne promet ni XP ni pièces).
 - **R-19** — Accueil : la récompense de bienvenue est créditée **à la fin de l'onboarding**
   (une seule fois, idempotente) ; le CTA final mène à la première quête recommandée du
-  parcours choisi (une seule action, pas un menu). Valeur des pièces : Q-4 (défaut proposé
-  30 = un `booster_hint`, pour enseigner la boutique par l'usage).
+  parcours choisi (une seule action, pas un menu). Valeur des pièces : **30**
+  (Q-4, arbitrée — un `booster_hint` exactement : la boutique s'apprend par l'usage).
 - **R-20** — Conversion anonyme : bandeau sur l'écran de résultat anonyme uniquement
   (jamais bloquant, jamais de compte à rebours), formulé en gain futur (« crée ton compte
   pour garder tes prochains XP ») — la progression anonyme antérieure n'est pas migrée
@@ -263,7 +263,9 @@ mesure.
 - **R-21** — Événements : pilotés par table (`app_events`), fenêtres calendaires courtes
   (7-15 jours), au plus **un actif à la fois** ; un événement = un défi mesurable sur la
   fenêtre + un badge saisonnier famille `saison`, décerné à la complétion pendant la
-  fenêtre, **jamais après, jamais retiré**. Le calendrier de l'année : Q-2.
+  fenêtre, **jamais après, jamais retiré**. Le calendrier 2026-2027 (Q-2, arbitrée) :
+  Rentrée (sept.) · Devoirs de synthèse (fin nov.) · Révisions de mai · Défi Ramadan
+  (objectif réduit, ton calme).
 - **R-22** — i18n : toute nouvelle chaîne naît FR/EN/AR (clés, pas de texte en dur — la
   leçon des push actuels), RTL vérifié sur les nouvelles surfaces ; `hero_class` cesse
   d'être du français stocké : la base garde un **code** (`s_rank`…), l'affichage passe par
@@ -413,8 +415,8 @@ l'instrumentation elle-même est visible).
 ### 3.9 Registre économie (é22 R-28 → é09)
 
 Toute valeur touchée par é31, pour arbitrage é09 (la console `/admin/economie` mesure
-avant/après) : répartition 15/3 ×3 + 5/1 (R-11, enveloppe constante) · pièces de bienvenue
-(Q-4, défaut 30) · prix des cadres/titres (lot 7, grille à proposer par l'exécuteur dans la
+avant/après) : répartition 15/3 ×3 + 5/1 (R-11, enveloppe constante) · pièces de bienvenue : 30
+(Q-4, arbitrée) · prix des cadres/titres (lot 7, grille à proposer par l'exécuteur dans la
 fourchette des skins existants 80-500) · aucun multiplicateur, aucun coffre. Le coût du
 rachat de série (15) et du gel (250) ne bougent pas ici — c'est l'arbitrage A16 de é09.
 
@@ -433,7 +435,7 @@ liens durs : lot 2 avant 4 et 5 (familles de badges), lot 3 avant 6 (les mission
 | 5   | La semaine : podium de ligue célébré + badge `league_podium`, onglet « Cette semaine », carte « Ta semaine »            | migration `get_weekly_leaderboard` + award étendu, `duel-league.tsx`, `leaderboard.tsx`, `weekly-recap-card.tsx` | pgTAP (classement hebdo exact, badge podium), Vitest (recap = faits), e2e existant non cassé            | 2                 |
 | 6   | L'accueil : bienvenue idempotente + première quête à un tap + bandeau anonyme                                           | migration `claim_welcome_pack`, `onboarding` étape 2, `quest-result-screen`                                      | pgTAP (idempotence du pack), Vitest (CTA unique, bandeau anonyme seulement)                             | 3                 |
 | 7   | L'identité : `avatar_tier` rendu, `hero_class` en code + i18n, cadres/titres en boutique                                | migration hero_class code + items, `hero-avatar.tsx`, boutique                                                   | Vitest (mapping tier/rendu, i18n 3 langues), pgTAP (migration hero_class sans perte)                    | —                 |
-| 8   | Le calendrier : table `app_events` + bannière + défi + badge saisonnier + événement pilote                              | migrations (table + seed pilote), `event-banner.tsx`                                                             | pgTAP (fenêtres, badge dans la fenêtre seulement), Vitest (bannière : un actif max)                     | 2 ; Q-2 tranchée  |
+| 8   | Le calendrier : table `app_events` + bannière + défi + badge saisonnier + événement pilote                              | migrations (table + seed pilote), `event-banner.tsx`                                                             | pgTAP (fenêtres, badge dans la fenêtre seulement), Vitest (bannière : un actif max)                     | 2                 |
 
 Détail par lot — périmètre exact, critères d'acceptation (US/R mappées), et stop-points :
 
@@ -457,15 +459,15 @@ Détail par lot — périmètre exact, critères d'acceptation (US/R mappées), 
       de push marketing/génériques ; si l'audience `comeback` ne peut pas garantir « une
       seule fois par absence » avec les colonnes existantes, proposer la colonne d'état en
       PR (additive) plutôt que d'élargir la fenêtre.
-- [ ] **Lot 5 — La semaine.** US-6/7/8, R-14, R-15, R-18, Q-3 tranchée avant. **Stop-point** :
+- [ ] **Lot 5 — La semaine.** US-6/7/8, R-14, R-15, R-18 — Q-3 arbitrée : hebdo par défaut. **Stop-point** :
       ne pas modifier le barème de pièces de la ligue (é09) ; la carte « Ta semaine » ne
       promet aucune récompense (R-18).
-- [ ] **Lot 6 — L'accueil.** US-9/10, R-19, R-20, Q-4 tranchée avant. **Stop-point** : pas
+- [ ] **Lot 6 — L'accueil.** US-9/10, R-19, R-20 — Q-4 arbitrée : 30 pièces. **Stop-point** : pas
       de diagnostic d'entrée (le bilan adaptatif est é30 lots 5-9, différé) ; pas de
       migration de progression anonyme.
 - [ ] **Lot 7 — L'identité.** US-11, R-22. **Stop-point** : prix des nouveaux items
       proposés en PR et enregistrés au §3.9, pas de refonte de la boutique.
-- [ ] **Lot 8 — Le calendrier.** US-12, R-21, Q-2 tranchée avant. **Stop-point** : pas
+- [ ] **Lot 8 — Le calendrier.** US-12, R-21 — Q-2 arbitrée : 4 événements. **Stop-point** : pas
       d'admin UI d'événements ; un seul événement seedé (le pilote) ; aucun contenu
       pédagogique conditionné à la fenêtre (R-2).
 
@@ -520,17 +522,19 @@ Détail par lot — périmètre exact, critères d'acceptation (US/R mappées), 
 
 ## 7. Questions ouvertes (pour l'humain)
 
-- **Q-1 — Push et petites classes** : l'opt-in explicite actuel suffit-il pour les 6-8 ans,
-  ou réserve-t-on les push « série » aux ≥ 9 ans (le parent restant seul notifié en
-  dessous) ? Proposition : opt-in inchangé + mention dans le guide parent.
-- **Q-2 — Calendrier des événements 2026-2027** : lesquels et combien ? Proposition :
-  3 par an — « Rentrée » (sept.), « Semaine des devoirs de synthèse » (fin nov.),
-  « Révisions de mai » (concours/examens) ; Ramadan en option selon ta lecture du contexte.
-- **Q-3 — Onglet de classement par défaut** : « Cette semaine » (recommandé : un nouvel
-  inscrit peut exister ; le cumulatif fige la hiérarchie) ou statu quo « Ma classe »
-  cumulatif ?
-- **Q-4 — Pièces de bienvenue** : 30 (un `booster_hint`, apprend la boutique) ? À arbitrer
-  avec é09 (A15/A16 ont montré que l'économie du début de vie est sensible).
+Section **arbitrée le 2026-09-01** par Mohamed — c'est l'acte de validation de l'étude.
+Les décisions, consignées ici et répercutées dans les règles :
+
+- **Q-1 — Push et petites classes : opt-in pour tous.** L'activation explicite reste le
+  seul filtre, quel que soit l'âge ; le guide parent le documente (R-4 amendée).
+- **Q-2 — Calendrier 2026-2027 : les quatre événements.** Rentrée (sept.) · Devoirs de
+  synthèse (fin nov.) · Révisions de mai · **Défi Ramadan** (objectif réduit, ton calme).
+  Un seul actif à la fois (R-21) ; le pilote du lot 8 est l'événement le plus proche à la
+  date d'exécution.
+- **Q-3 — Classement par défaut : « Cette semaine ».** L'onglet hebdo devient le défaut,
+  le cumulatif reste en second onglet (R-15 amendée).
+- **Q-4 — Pièces de bienvenue : 30.** Un `booster_hint` exactement ; inscrite au registre
+  économie §3.9 — é09 la mesure comme le reste.
 
 ## 8. Journal d'exécution
 
