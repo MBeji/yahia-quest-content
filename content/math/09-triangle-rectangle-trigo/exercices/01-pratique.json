@@ -111,6 +111,19 @@
       "explanation": "العلاقة المثلثية الأساسية المشتقّة من فيثاغورس: جا²(x) + جتا²(x) = 1. يمكن التحقّق: جا²(30°) + جتا²(30°) = (1/2)² + (√3/2)² = 1/4 + 3/4 = 1.",
       "difficulty": 3,
       "competencies": ["math.geo.trigonometrie"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "في مثلّث قائم الزاوية، ماذا نسمّي الضلع المقابل للزاوية القائمة؟",
+      "answerKey": { "text": "الوتر" },
+      "acceptedAnswers": ["وتر المثلّث", "alwatar", "watar"],
+      "expectedMistakes": [
+        { "text": "الضلع المجاور", "misconceptionTag": "math.geo.hypotenuse-mal-choisie" },
+        { "text": "الضلع المقابل", "misconceptionTag": "math.geo.hypotenuse-mal-choisie" }
+      ],
+      "explanation": "هو أطول أضلاع المثلّث دائمًا، ويقابل الزاوية القائمة ولا يجاورها. في المثلّث ABC القائم في B تكون العلاقة AC² = AB² + BC²، والضلع AC هو المقصود. ⚠️ الضلعان الآخران يُسمّيان بالنسبة إلى زاوية حادّة — مجاور لها أو مقابل لها — وليسا المطلوبين هنا.",
+      "difficulty": 3,
+      "competencies": ["math.geo.pythagore"]
     }
   ]
 }

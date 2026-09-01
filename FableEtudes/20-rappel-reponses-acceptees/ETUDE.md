@@ -3,9 +3,11 @@
 > **Statut** : **en exécution** (Q-1…Q-5 arbitrées par Mohamed — Q-1/Q-3 le 2026-07-15,
 > Q-2/Q-4/Q-5 le 2026-07-16, toutes sur les recommandations). **Livrés** : lot 1 socle du
 > scoring ensembliste (#583), lot 2 Tier A variantes morphologiques (#652), lot 3 skill Tier B
-> + pilote (#96, corpus), lot 5 clavier arabe d'appoint (#655), lot 7 `short_answer` (#654).
-> Reste le remplissage du corpus `acceptedAnswers` à l'échelle. _(En-tête « prête pour
-> l'exécuteur (lot 1) » corrigé le 2026-08-02 en relisant `main` des deux dépôts.)_
+> + pilote (#96, corpus), lot 5 clavier arabe d'appoint (#655), lot 7 `short_answer` (#654),
+> lot 8 **doctrine + premier corpus** de questions libres (maths 9ᵉ, corpus). Reste le
+> remplissage du corpus `acceptedAnswers` à l'échelle (lot 4) et la **mesure** du pilote
+> `short_answer`. _(En-tête « prête pour l'exécuteur (lot 1) » corrigé le 2026-08-02 en
+> relisant `main` des deux dépôts.)_
 > **Priorité** : 20 · **Valeur** : rend les **12 349** missions Rappel (étude 17) réellement
 > jouables — une réponse **correcte mais formulée autrement** cesse d'être refusée, **sans retirer
 > une seule question** du mode — **et** dote le moteur de son premier type natif de **réponse
@@ -694,6 +696,9 @@ automatique en base : la boucle reste **humaine-dans-la-boucle** (pas d'oracle a
       les chapitres témoins (une matière par PR), mesurer (signalements, `content-audit`).
       **Stop-point** : pas d'ouverture aux campagnes larges avant la mesure du pilote et l'accord de
       Mohamed sur la doctrine.
+      **Fait le 2026-09-01** : la doctrine (les trois skills) et le **premier corpus** — `math`
+      9ᵉ, 40 questions libres sur les 20 chapitres. **Reste** : la mesure du pilote une fois le
+      SQL appliqué (signalements, sweep `content-audit`) et l'e2e player, qui vit au moteur.
 
 ## 5. Stratégie de test
 
@@ -837,8 +842,34 @@ automatique en base : la boucle reste **humaine-dans-la-boucle** (pas d'oracle a
   préposition + pronom — inoffensif au scoring (personne ne tape ça, et R-4 garantit que ce n'est
   pas un distracteur), mais c'est du bruit qui consomme la borne des 24. Candidat à un lot moteur.
 
+- 2026-09-01 — **Lot 8, première moitié : la doctrine et le corpus** (privé, matière `math` 9ᵉ).
+  Le sixième type natif existait depuis arena#654 et n'était **joué nulle part** ; il l'est
+  maintenant sur **40 questions libres réparties sur les 20 chapitres** de maths 9ᵉ, deux par
+  chapitre, dans `01-pratique` et `03-revision` (jamais `quiz.json` — R-14), soit **1 question
+  sur 7** dans les missions touchées. La doctrine ouvre le type dans `content-engine`
+  (`references/content-schema.md`), `content-interactif` et `prof-math-9eme`.
+  **Écart assumé, arbitré par Mohamed** : le lot spécifiait « 1 chapitre témoin ar petites
+  classes + 1 témoin fr/en » ; le pilote demandé porte sur **une matière d'examen entière**.
+  Plus large que prévu, mais d'un seul tenant et d'une seule langue — et la règle « une matière
+  par PR » tient.
+  **Ce que le terrain a appris, et que la doctrine porte désormais** :
+  1. **en maths, la question libre est du VOCABULAIRE, jamais un résultat** — `content:qa`
+     renvoie une réponse numérique vers `numeric`, et refuse tout symbole de structure. Les 40
+     réponses nomment donc une notion (« الوتر », « التعميل », « المنوال », « المرافق ») ;
+  2. **la garde d'auto-suffisance a un faux positif en arabe** : sa liste close contient
+     « أي من », qui est aussi le « c'est-à-dire … de » ordinaire. Un énoncé a dû être reformulé ;
+  3. **ajouter une question à un exercice DÉJÀ EN BASE n'est pas neutre** : l'UUIDv5 dérive du
+     rang **après tri par `difficulty`**, donc une question moins difficile que les autres
+     décale les identifiants suivants — et le compilateur supprime puis recrée, emportant
+     tentatives et échéances de rappel espacé. Les 40 questions portent la difficulté **maximale
+     de leur fichier**, et un contrôle rejoue le tri avant/après pour le prouver (zéro décalage).
+  Gates : `content:check` (755 questions), `content:qa:strict` **0 erreur**, `content:figures:check`,
+  `content:audit:strict` verts. `programme:check` échoue localement sur le fantôme CRLF de
+  `_INDEX.md` (diff vide après régénération) — vert en CI.
+
 **Reste** : lot 4 (campagne Tier B, une matière par PR — à décider sur la base du pilote), lot 6
-(refus contesté, optionnel) et lot 8 (pilote `short_answer`, qui demande en plus la doctrine R-14).
+(refus contesté, optionnel) et la **seconde moitié du lot 8** : mesurer le pilote `short_answer`
+une fois appliqué, puis décider de l'ouverture aux campagnes larges (accord de Mohamed, R-14).
 
 _(à remplir lot par lot par l'exécuteur : date, lot, PR, écarts acceptés, dettes.)_
 

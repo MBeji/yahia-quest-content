@@ -107,6 +107,21 @@
       "explanation": "نُسمّي الطول l والعرض w. الشرطان: 2(l+w) = 34، إذن l+w = 17، وكذلك l = w+5. بالتعويض: (w+5)+w = 17، 2w = 12، w = 6 سم. إذن l = 6+5 = 11 سم. المساحة = l×w = 11×6 = 66 سم². التحقّق: 2(11+6)=34 ✓، 11−6=5 ✓.",
       "difficulty": 3,
       "competencies": ["math.alg.mise-en-equation", "math.alg.systemes", "math.mes.aires"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "جملة معادلتين يمثّلها مستقيمان متوازيان لا يلتقيان أبدًا، فلا توجد ثنائية (x ; y) تحقّق المعادلتين معًا. ماذا نسمّي هذه الجملة؟",
+      "answerKey": { "text": "جملة مستحيلة" },
+      "acceptedAnswers": ["مستحيلة", "الجملة المستحيلة", "جملة بدون حلول"],
+      "expectedMistakes": [
+        {
+          "text": "جملة غير معيّنة",
+          "misconceptionTag": "math.alg.systeme-impossible-et-indetermine-confondus"
+        }
+      ],
+      "explanation": "نقارن نسب المعاملات: إذا تساوت نسبتا x وy واختلفت نسبة الثوابت فالمستقيمان متوازيان ولا نقطة تقاطع، فلا حلّ. وإذا تساوت النسب كلّها انطبق المستقيمان وصار عدد الحلول لا نهائيًّا — وهي الحالة الأخرى التي لا يجوز الخلط بينها وبين هذه.",
+      "difficulty": 3,
+      "competencies": ["math.alg.systemes"]
     }
   ]
 }

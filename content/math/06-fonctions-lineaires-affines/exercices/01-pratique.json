@@ -83,6 +83,19 @@
       "explanation": "نحلّ 3x + 2 = 14، إذن 3x = 12، x = 4. التحقّق: f(4) = 3(4) + 2 = 14 ✓.",
       "difficulty": 2,
       "competencies": ["math.fn.fonction-affine", "math.alg.equations-premier-degre"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "الدالة f(x) = 3x تمرّ دائمًا بنقطة الأصل O وتُعبّر عن التناسب المباشر. ماذا نسمّي هذا النوع من الدوال؟",
+      "answerKey": { "text": "دالة خطية" },
+      "acceptedAnswers": ["الدالة الخطية"],
+      "expectedMistakes": [
+        { "text": "دالة تآلفية", "misconceptionTag": "math.fn.lineaire-affine-confondues" },
+        { "text": "الدالة التآلفية", "misconceptionTag": "math.fn.lineaire-affine-confondues" }
+      ],
+      "explanation": "الشكل f(x) = ax مع a يخالف الصفر يميّز هذا النوع: تمثيله مستقيم يمرّ بالأصل لأنّ f(0) = 0. أمّا f(x) = ax + b مع b يخالف الصفر فتمثيلها مستقيم يقطع محور التراتيب في b ولا يمرّ بالأصل، وهي الحالة الأعمّ التي يكون النوع الأوّل حالة خاصّة منها عندما b = 0.",
+      "difficulty": 3,
+      "competencies": ["math.fn.fonction-lineaire"]
     }
   ]
 }
