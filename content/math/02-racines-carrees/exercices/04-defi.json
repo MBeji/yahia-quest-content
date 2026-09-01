@@ -95,6 +95,18 @@
       "explanation": "بتطبيق نظريّة فيثاغورس: وتر² = (√3)² + (√5)² = 3 + 5 = 8. إذن الوتر = √8 = √(4×2) = 2√2 cm. أمّا √2 cm فقد أخذ جذر الفرق، و√15 cm طبّق √(a×b) خطأً، و4 cm جمع الضلعين عوضًا عن مربّعيهما.",
       "difficulty": 3,
       "competencies": ["math.geo.pythagore", "math.num.racines-calcul"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "العبارة √(a²) تساوي a عندما يكون a موجبًا، لكنّها تساوي −a عندما يكون a سالبًا. ما اسم المقدار الذي تساويه √(a²) مهما تكن إشارة a؟",
+      "answerKey": { "text": "القيمة المطلقة" },
+      "acceptedAnswers": ["القيمة المطلقة للعدد a", "القيمة المطلقة لـ a"],
+      "expectedMistakes": [
+        { "text": "المقابل", "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue" }
+      ],
+      "explanation": "الجذر التربيعي موجب بالتعريف، فلا يمكن أن يعطي عددًا سالبًا. تحقّق بعدد سالب: √((−6)²) = √36 = 6 وليس −6. الكتابة √(a²) = a ليست قاعدة، وهي أحد أكثر الأخطاء كلفةً في المناظرة.",
+      "difficulty": 3,
+      "competencies": ["math.num.racines-definition"]
     }
   ]
 }

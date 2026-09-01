@@ -40,8 +40,9 @@ distracteurs exécutés, protocole de double résolution) et les règles de fid�
 `09-triangle-rectangle-trigo` · `10-angles-cercle` · `11-vecteurs-translation` ·
 `12-repere-plan` · `13-geometrie-espace` · `14-annales-sujets-types` (sets type concours) ·
 `15-numeration-et-calcul` · `16-puissances` · `17-ordre-et-comparaison` · `18-quadrilateres` ·
-`19-valeur-absolue` · `20-orthogonalite-espace`. **Vingt** chapitres, 755 questions — relire
-`content/math/` avant de citer cette liste, elle a déjà été périmée une fois.
+`19-valeur-absolue` · `20-orthogonalite-espace`. **Vingt** chapitres, 834 questions — relire
+`content/math/` avant de citer un chiffre : cette liste a été périmée une fois (14 chapitres
+annoncés pour 20 réels) et le total a bougé deux fois en une journée.
 
 ## Ce que « élite » veut dire en maths 9ème — combinaisons signature
 
@@ -98,6 +99,22 @@ maths, sa frontière est nette et elle est **tenue par le gate**, pas par le go�
 - ⚠️ **le piège arabe de la garde d'auto-suffisance** : la liste close des motifs « dépendants
   des options » contient « أي من ». Un « … ، أي من مجموع إلى جداء » au sens de « c'est-à-dire »
   fait **échouer** `content:qa`. Reformuler ; la garde ne lit pas le sens.
+
+**Aux paliers durs, une définition nue ne suffit pas.** Les d3 (زعيم / تدريب) et d4 (تحدّي) ne
+peuvent pas se contenter de « ماذا نسمّي … ؟ » : le registre qui y tient est **calculer puis
+nommer** — la réponse reste un terme court et tapable, mais l'atteindre exige le travail du
+chapitre. Quatre moules qui marchent :
+
+- **la nature d'un résultat calculé** — « احسب (√3 + 1)(√3 − 1) ثمّ حدّد طبيعة الناتج » →
+  « عدد صحيح » (il faut développer avant de juger : le radical trompe) ;
+- **le type d'une figure établie** — « مثلّث أضلاعه 6 و8 و10 » → « مثلّث قائم » (réciproque de
+  Pythagore), « رباعي قطراه لهما نفس المنتصف » → « متوازي أضلاع » ;
+- **l'outil qui justifie l'étape** — deux parallèles et des rapports → « نظرية طاليس » ; un côté
+  et un angle → « النسب المثلثية » ;
+- **la nature d'un objet algébrique** — rapports de coefficients d'un système → « جملة مستحيلة ».
+
+⚠️ Et **jamais un nombre déguisé en mot** pour contourner le gate : « اثنان » comme réponse à
+« بكم نضرب ؟ » passe `content:qa` mais viole l'esprit de R-12 — c'est une `numeric`.
 
 Placement (doctrine é20 R-14) : dans les **exercices**, **jamais** dans `quiz.json` (il gate la
 progression du chapitre), **≤ ~1/3** des questions d'une mission, et **jamais** en remplacement

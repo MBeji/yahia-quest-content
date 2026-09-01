@@ -203,11 +203,12 @@ son étude et dans les citations qu'on en fait.
 - [ ] **P4. é20 — réponses acceptées : lots 4, 8 et 6.**
       **Lot 4** — campagne Tier B, une matière par PR, à décider sur la base du pilote (#96,
       `math-1ere/07-reperage-espace`, 25 questions sur 30 couvertes). **Lot 8** — pilote contenu
-      `short_answer` : **première moitié livrée le 2026-09-01** — la doctrine R-13/R-14 ouvre le
-      type dans `content-engine`/`content-interactif`/`prof-math-9eme`, et le sixième type natif
-      est enfin **joué** : 40 questions libres sur les 20 chapitres de `math` 9ᵉ (2 par chapitre,
-      hors `quiz.json`). Reste la **mesure** du pilote une fois le SQL appliqué, puis l'accord de
-      Mohamed pour ouvrir aux campagnes larges. **Lot 6** (optionnel) — boucle du refus contesté.
+      `short_answer` : **corpus livré le 2026-09-01, appliqué en prod le jour même** — la doctrine
+      R-13/R-14 ouvre le type dans `content-engine`/`content-interactif`/`prof-math-9eme`, et le
+      sixième type natif est enfin **joué** : **119 questions libres, une par exercice**, sur les
+      119 missions des 20 chapitres de `math` 9ᵉ, zéro dans les `quiz.json`. Reste la **mesure**
+      du pilote (signalements, sweep `content-audit`), puis l'accord de Mohamed pour ouvrir le
+      type aux autres matières. **Lot 6** (optionnel) — boucle du refus contesté.
       **Dette remontée par le pilote** : Tier A produit « الفوقها » en préfixant « ال » sans
       condition — inoffensif au scoring, mais il consomme la borne des 24 variantes. Candidat à
       un lot moteur.
@@ -507,7 +508,7 @@ auprès de Google — le paragraphe « vidéos YouTube » a désormais une page 
   ouvertes en privé#247.
 - **é16** ouverture lycée — lots 0-3 livrés (arena#367/#369/#371/#375) ; reste la campagne (§5 C6).
 - **é20** réponses acceptées — lots 1·2·3·5·7 livrés (arena#583, #652, privé#96, arena#655, #654)
-  et le lot 8 à moitié (doctrine + 40 questions libres sur `math` 9ᵉ) ; reste sa mesure.
+  et le lot 8 corpus (doctrine + 119 questions libres sur `math` 9ᵉ) ; reste sa mesure.
 - **é23** vidéos explicatives — lots 1-4 livrés (arena#507/#510/#524/#527) ; reste le lot 5 (§5 C7).
 - **é24** protection IP — lots 1·2·3a·3b·4 livrés (arena#544) ; lot 5 reporté, lot 6 partiel (§4 F8).
 - **é25** harness AI-native — lots 1·2·3·4·5a·5b·5c·6 livrés (arena#519/#530/#541/#543/#545/#550/#558/#560) ; reste L7 (§4 F7).

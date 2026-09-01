@@ -98,6 +98,21 @@
       "explanation": "نسمّي a حرف المكعّب. كلّ من [AC] و[CF] و[AF] قطر لوجه مربّع من أوجه المكعّب: [AC] قطر الوجه ABCD ، و[AF] قطر الوجه ABFE ، و[CF] قطر الوجه BCGF . إذن AC = CF = AF = a√2 والمثلث ACF متقايس الأضلاع، وبالتالي ليس قائمًا في أيّ رأس.",
       "difficulty": 3,
       "competencies": ["math.esp.solides-espace", "math.geo.triangles-base"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "مستقيمان في الفضاء لا يتقاطعان ولا يتوازيان، ولا يوجد أيّ مستوٍ يحتويهما معًا. ما وضع هذين المستقيمَين؟",
+      "answerKey": { "text": "ليسا في نفس المستوي" },
+      "acceptedAnswers": ["غير متواجدين في نفس المستوي", "مستقيمان متخالفان", "ليسا في مستوٍ واحد"],
+      "expectedMistakes": [
+        {
+          "text": "متقاطعان",
+          "misconceptionTag": "math.esp.droites-non-coplanaires-crues-secantes"
+        }
+      ],
+      "explanation": "في المستوي حالتان لا ثالث لهما: التوازي أو التقاطع. الفضاء يضيف هذه الحالة الثالثة، وهي مصدر أخطاء الرسم: مستقيمان يبدوان متقاطعَين على الورقة قد لا يلتقيان في الفضاء. الاختبار الصحيح هو البحث عن مستوٍ يحتوي الاثنين.",
+      "difficulty": 3,
+      "competencies": ["math.geo.droites-perp-para"]
     }
   ]
 }

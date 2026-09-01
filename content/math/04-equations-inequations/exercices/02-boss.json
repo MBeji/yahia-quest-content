@@ -83,6 +83,18 @@
       "explanation": "5 − 2x > 11 → −2x > 11 − 5 → −2x > 6 → نقسم على −2 مع قلب الإشارة → x < −3. الحلّ: x ∈ ]−∞ ; −3[.",
       "difficulty": 3,
       "competencies": ["math.alg.inequations"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "نضرب طرفَي المتراجحة −2x < 6 في العدد السالب −1/2. ما العملية التي يجب إجراؤها على علامة التراجح؟",
+      "answerKey": { "text": "قلب اتّجاه التراجح" },
+      "acceptedAnswers": ["عكس اتّجاه التراجح", "قلب الإشارة", "قلب التراجح", "عكس الإشارة"],
+      "expectedMistakes": [
+        { "text": "إبقاء الإشارة", "misconceptionTag": "math.alg.inequation-sens-non-inverse" }
+      ],
+      "explanation": "الضرب أو القسمة بعدد سالب فقط، لا الجمع ولا الطرح. هنا −2x < 6 تعطي x > −3. تحقّق بقيمة: x = 0 يحقّق المتراجحة الأصلية (0 < 6) ويحقّق x > −3، بينما لو أبقينا الإشارة لحصلنا على x < −3 التي يستثنيها 0.",
+      "difficulty": 3,
+      "competencies": ["math.alg.inequations"]
     }
   ]
 }

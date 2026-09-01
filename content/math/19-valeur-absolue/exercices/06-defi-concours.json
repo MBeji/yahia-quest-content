@@ -107,6 +107,18 @@
       "explanation": "نبدأ بتحديد النقطتين المطلوبتين: B فاصلتها −4 و C فاصلتها 1 . والبعد بين نقطتين هو القيمة المطلقة للفرق بين فاصلتيهما: BC = |1 − (−4)| = |5| = 5 . أمّا الأبعاد الأخرى فهي AB = |−4 − 3| = 7 و AC = |1 − 3| = 2 ، ومن أهمل إشارة الفاصلة −4 حسب |1 − 4| = 3 .",
       "difficulty": 3,
       "competencies": ["math.num.valeur-absolue", "math.num.relatifs-operations"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "الخاصيّة |a × b| = |a| × |b| صحيحة دائمًا، لكنّ نظيرتها في الجمع خاطئة. ما العملية التي لا خاصيّة للقيمة المطلقة معها؟",
+      "answerKey": { "text": "الجمع" },
+      "acceptedAnswers": ["جمع عددين", "الجمع والطرح", "عملية الجمع"],
+      "expectedMistakes": [
+        { "text": "الجداء", "misconceptionTag": "math.num.valeur-absolue-somme-additive" }
+      ],
+      "explanation": "مثال مضادّ واحد يكفي: مع a = 7 و b = −7 نجد 0 من جهة و14 من جهة أخرى. أمّا الجداء والخارج فتمرّ الخاصيّة معهما بلا شرط: |(−7) × 2| = 7 × 2 = 14، و|1/b| = 1/|b| لكلّ b مخالف للصفر.",
+      "difficulty": 3,
+      "competencies": ["math.num.valeur-absolue"]
     }
   ]
 }

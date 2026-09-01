@@ -91,6 +91,18 @@
       "explanation": "بنظرية طاليس: PS/PQ = PT/PR، أي (x+1)/(3x−1) = 4/10 = 2/5. بالتقاطع: 5(x+1) = 2(3x−1)، أي 5x + 5 = 6x − 2، ومنه x = 7. التحقّق: PS = 8، PQ = 20، فـ 8/20 = 2/5. وPT/PR = 4/10 = 2/5. ✓ الخطأ الشائع: عدم توزيع الضرب على الحدّين (كتابة 5(x+1) = 5x + 1)، ممّا يقود إلى الجواب الخاطئ x = 3.",
       "difficulty": 3,
       "competencies": ["math.geo.thales-direct", "math.alg.equations-premier-degre"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "في مثلّث ABC حيث (MN) ∥ (BC)، نكتب AM/AB = AN/AC. ماذا نسمّي هذه النسبة التي يكون فيها الجزء على الكلّ؟",
+      "answerKey": { "text": "الجزء على الكلّ" },
+      "acceptedAnswers": ["نسبة الجزء على الكلّ", "الجزء على الكامل"],
+      "expectedMistakes": [
+        { "text": "الجزء على الجزء", "misconceptionTag": "math.geo.thales-formes-melangees" }
+      ],
+      "explanation": "الكتابتان صحيحتان لكن لا تُخلطان في متساوية واحدة: AM/AB تقارن الجزء بالضلع كاملًا، بينما AM/MB تقارن الجزء بما تبقّى. والنسبة الثالثة MN/BC تساوي الأولى لا الثانية. اختبر بأعداد: AM = 2 و MB = 3 يعطي 2/5 من جهة و2/3 من جهة أخرى.",
+      "difficulty": 3,
+      "competencies": ["math.geo.thales-direct"]
     }
   ]
 }

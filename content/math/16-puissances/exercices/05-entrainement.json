@@ -83,6 +83,21 @@
       "explanation": "أوّلًا قوّة داخل قوّة: ((−2)³)² = (−2)⁶ لأنّ 3 × 2 = 6. ثمّ نجمع الدليلين لأنّ الأساس واحد: 6 + (−5) = 1، إذن النتيجة هي (−2)¹ أي −2.",
       "difficulty": 3,
       "competencies": ["math.num.puissances", "math.num.relatifs-operations"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "نكتب aⁿ ÷ aᵖ = a^(n − p). ما العملية التي نُجريها على الدليلَين عند قسمة قوّتين لهما نفس الأساس؟",
+      "answerKey": { "text": "الطرح" },
+      "acceptedAnswers": ["نطرح الدليلين", "طرح الدليلين", "الفرق بين الدليلين"],
+      "expectedMistakes": [
+        {
+          "text": "الجمع",
+          "misconceptionTag": "math.num.puissances-quotient-exposants-additionnes"
+        }
+      ],
+      "explanation": "الدليل الذي في المقام يُنقص من دليل البسط: 2⁵ ÷ 2³ = 32 ÷ 8 = 4 = 2². ثلاث حالات وثلاث قواعد لا تُخلط — الضرب يزيد الدليلين، والقسمة تُنقص، وقوّة داخل قوّة تضربهما. والاختبار بأعداد صغيرة يكشف القاعدة المقلوبة فورًا.",
+      "difficulty": 3,
+      "competencies": ["math.num.puissances"]
     }
   ]
 }

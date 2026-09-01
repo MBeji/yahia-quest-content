@@ -83,6 +83,18 @@
       "explanation": "نُرجع كلّ عدد إلى قوّة للعدد 3: العبارة (√3)⁸ تساوي 3⁴، والعبارة (3²)² تساوي 3⁴ أيضًا، وكلّها تساوي 81. أمّا 9³ فيساوي (3²)³ أي 3⁶ وهو 729، فهو الدخيل.",
       "difficulty": 3,
       "competencies": ["math.num.puissances"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "احسب (−3)⁴ وحدّد إشارة الناتج دون آلة حاسبة.",
+      "answerKey": { "text": "موجب" },
+      "acceptedAnswers": ["الناتج موجب", "عدد موجب", "إشارة موجبة"],
+      "expectedMistakes": [
+        { "text": "سالب", "misconceptionTag": "math.num.puissance-signe-parite-exposant" }
+      ],
+      "explanation": "العوامل السالبة تتلاشى مثنى مثنى: (−3)⁴ = (−3)(−3)(−3)(−3) = 81، فالناتج يقع فوق الصفر. ولو كان الدليل فرديًّا لبقي عامل سالب واحد فوقع الناتج تحت الصفر. ⚠️ انتبه إلى موضع القوسين: −(3⁴) يساوي −81، وهو غير (−3)⁴.",
+      "difficulty": 3,
+      "competencies": ["math.num.puissances"]
     }
   ]
 }

@@ -99,6 +99,19 @@
       "explanation": "المسافة ليست معدّل الإحداثيّات، بل تُحسب بعلاقة فيثاغورس على فرقَي الإحداثيّات: AB = √((6 − 0)² + (8 − 0)²) = √(36 + 64) = √100 = 10. (تمرين «صيد الخطأ».) الخطأ الشائع: جمع الإحداثيّات (وقسمتها) بدل تطبيق صيغة المسافة.",
       "difficulty": 2,
       "competencies": ["math.vec.repere-calculs"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "في رباعي ABCD، أثبتنا أنّ للقطرين [AC] و [BD] نفس المنتصف. ما طبيعة هذا الرباعي؟",
+      "answerKey": { "text": "متوازي أضلاع" },
+      "acceptedAnswers": ["متوازي الأضلاع", "متوازي أضلاع فقط"],
+      "expectedMistakes": [
+        { "text": "مستطيل", "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees" },
+        { "text": "معيّن", "misconceptionTag": "math.geo.description-la-plus-precise-manquee" }
+      ],
+      "explanation": "تقاطع القطرين في منتصفيهما هو المعيار الذي يميّز هذه العائلة، ولا شيء أكثر: لا يقول شيئًا عن تقايس القطرين ولا عن تعامدهما. المستطيل يحتاج تقايسهما، والمعيّن يحتاج تعامدهما، والمربّع الشرطين معًا. ⚠️ القطران هما الحرفان المتقابلان في الاسم.",
+      "difficulty": 3,
+      "competencies": ["math.vec.repere-calculs"]
     }
   ]
 }
