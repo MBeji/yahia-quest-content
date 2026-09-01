@@ -83,6 +83,19 @@
       "explanation": "إذا كانت الزاوية المحيطية ACB = 90°، فالزاوية المركزية المقابلة = 2 × 90° = 180°، وهذا يعني أنّ القوس المقابل هو نصف دائرة. إذن [AB] قطر، وهو عكس نظرية طالس في الدائرة.",
       "difficulty": 3,
       "competencies": ["math.geo.angles-inscrits", "math.geo.cercle"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "زاوية رأسها نقطة من الدائرة وضلعاها يقطعان الدائرة. ماذا نسمّي هذه الزاوية؟",
+      "answerKey": { "text": "زاوية محيطية" },
+      "acceptedAnswers": ["الزاوية المحيطية", "زاوية محيطية في الدائرة"],
+      "expectedMistakes": [
+        { "text": "زاوية مركزية", "misconceptionTag": "math.geo.angle-inscrit-egal-au-centre" },
+        { "text": "الزاوية المركزية", "misconceptionTag": "math.geo.angle-inscrit-egal-au-centre" }
+      ],
+      "explanation": "موقع الرأس هو الفارق: هنا الرأس على الدائرة نفسها، بينما الزاوية المركزية رأسها المركز O. والقاعدة الكبرى تربط بينهما: قيس الزاوية التي رأسها على الدائرة يساوي نصف قيس التي رأسها المركز إذا حصرتا القوس نفسه — فمن 80° عند المركز نحصل على 40° عند المحيط.",
+      "difficulty": 3,
+      "competencies": ["math.geo.angles-inscrits"]
     }
   ]
 }

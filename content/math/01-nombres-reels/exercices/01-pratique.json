@@ -166,6 +166,19 @@
       "explanation": "بما أنّ ℤ ⊂ ℚ، فإنّ كلّ عدد صحيح يمكن كتابته كسرًا (مثلًا 4 = 4/1)، لكن العكس غير صحيح، والاحتواء الصحيح هو ℚ ⊂ ℝ لا العكس.",
       "difficulty": 2,
       "competencies": ["math.num.ensembles-nombres"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "عددٌ كتابته العشرية غير متناهية وغير دوريّة، ولا يمكن كتابته على شكل كسر. ماذا نسمّي هذا العدد؟",
+      "answerKey": { "text": "عدد أصمّ" },
+      "acceptedAnswers": ["أصمّ", "عدد غير ناطق", "العدد الأصمّ"],
+      "expectedMistakes": [
+        { "text": "عدد ناطق", "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel" },
+        { "text": "عدد كسري", "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel" }
+      ],
+      "explanation": "الكتابة العشرية غير المتناهية وحدها لا تكفي: العدد 1/3 = 0,333… غير متناهٍ لكنّه دوريّ، فهو ناطق. الشرطان معًا — غير متناهية وغير دوريّة — يميّزان الأعداد الصمّاء مثل √2 = 1,414213562… وπ = 3,141592653…، ولا تُكتب على شكل a/b. ومجموعة الأعداد الحقيقية هي اتّحاد الناطقة مع هذه المجموعة: ℝ = ℚ ∪ I.",
+      "difficulty": 2,
+      "competencies": ["math.num.ensembles-nombres"]
     }
   ]
 }

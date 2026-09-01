@@ -70,6 +70,19 @@
       "explanation": "خاصيّة جذر الجداء: √(36 × 64) = √36 × √64 = 6 × 8 = 48 ✓. أمّا الجمع فلا خاصيّة له (√(36 + 64) = √100 = 10 بينما 6 + 8 = 14)، ولا وجود لجذر عدد سالب في ℝ، و√(a²) = |a| وليس a دائمًا.",
       "difficulty": 3,
       "competencies": ["math.num.racines-definition", "math.num.racines-calcul"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "ليكن a عددًا حقيقيًّا موجبًا. ماذا نسمّي العدد الموجب الذي مربّعه يساوي a؟",
+      "answerKey": { "text": "الجذر التربيعي" },
+      "acceptedAnswers": ["الجذر التربيعي للعدد a", "الجذر التربيعي الموجب"],
+      "expectedMistakes": [
+        { "text": "المربّع", "misconceptionTag": "math.num.racine-et-carre-confondus" },
+        { "text": "مربّع العدد", "misconceptionTag": "math.num.racine-et-carre-confondus" }
+      ],
+      "explanation": "التعريف يربط عمليّتين متعاكستين: نبحث عن العدد الموجب الذي إذا رُبّع أعطى a، ولذلك تكون العلاقة صحيحة في الاتّجاهين مع بقاء العددين موجبين. أمثلة: 7 لأنّ 7² = 49، و0,2 لأنّ (0,2)² = 0,04، و2/3 لأنّ (2/3)² = 4/9. ولا وجود لعدد سالب يُقبل هنا في ℝ.",
+      "difficulty": 3,
+      "competencies": ["math.num.racines-definition"]
     }
   ]
 }

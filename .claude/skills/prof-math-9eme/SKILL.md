@@ -38,7 +38,10 @@ distracteurs exécutés, protocole de double résolution) et les règles de fid�
 `01-nombres-reels` · `02-racines-carrees` · `03-calcul-litteral` · `04-equations-inequations` ·
 `05-systemes` · `06-fonctions-lineaires-affines` · `07-statistiques` · `08-thales` ·
 `09-triangle-rectangle-trigo` · `10-angles-cercle` · `11-vecteurs-translation` ·
-`12-repere-plan` · `13-geometrie-espace` · `14-annales-sujets-types` (sets type concours).
+`12-repere-plan` · `13-geometrie-espace` · `14-annales-sujets-types` (sets type concours) ·
+`15-numeration-et-calcul` · `16-puissances` · `17-ordre-et-comparaison` · `18-quadrilateres` ·
+`19-valeur-absolue` · `20-orthogonalite-espace`. **Vingt** chapitres, 755 questions — relire
+`content/math/` avant de citer cette liste, elle a déjà été périmée une fois.
 
 ## Ce que « élite » veut dire en maths 9ème — combinaisons signature
 
@@ -72,6 +75,35 @@ Les meilleurs items d4 croisent deux ou trois chapitres. Combinaisons qui font l
 | Angles/cercle   | angle inscrit = angle au centre (oubli du ×½) ; angles opposés vs correspondants                                                                                      |
 | Vecteurs        | relation de Chasles inversée ; coordonnées de AB→ = A − B ; milieu = différence des coordonnées                                                                       |
 | Statistiques    | moyenne simple au lieu de pondérée ; effectif confondu avec la valeur ; médiane = moyenne                                                                             |
+
+## La question libre (`short_answer`) en maths — ce qu'elle peut et ce qu'elle ne peut pas
+
+Le sixième type natif (étude 20) n'affiche **aucune proposition** : l'élève tape sa réponse. En
+maths, sa frontière est nette et elle est **tenue par le gate**, pas par le goût :
+
+- **un résultat numérique n'est PAS une question libre** — `content:qa` refuse une
+  `answerKey.text` qui se normalise en nombre pur et renvoie vers `numeric` (tolérance + pavé
+  numérique). Idem pour toute réponse portant `= < > ^ √ × ÷ ± ≤ ≥ ≠ ≈` ou un exposant : une
+  expression algébrique ne se tape pas ;
+- **ce qu'elle sert vraiment, c'est le VOCABULAIRE du programme** : nommer une notion, un
+  théorème, une méthode, une propriété — « الوتر », « التعميل », « المنوال », « المرافق »,
+  « الموسّط العمودي », « المسقط العمودي ». Le QCM y dégrade la production en reconnaissance à
+  25 % de réussite au hasard ; c'est exactement la faiblesse que le type corrige.
+- **elle naît complète** : `acceptedAnswers` (les autres formulations JUSTES : synonymes exacts,
+  translittération latine d'un mot arabe) et, si l'erreur est nommable, `expectedMistakes` avec
+  son tag du registre — la notion sœur qu'on confond (« الوسيط » pour « المنوال », « المستطيل »
+  pour « المعيّن », « النشر » pour « التعميل »).
+- **l'`explanation` ne doit pas écrire la réponse en toutes lettres** : elle est révélée par
+  l'indice, qui livrerait la clé avant la saisie. Expliquer la notion, pas la nommer.
+- ⚠️ **le piège arabe de la garde d'auto-suffisance** : la liste close des motifs « dépendants
+  des options » contient « أي من ». Un « … ، أي من مجموع إلى جداء » au sens de « c'est-à-dire »
+  fait **échouer** `content:qa`. Reformuler ; la garde ne lit pas le sens.
+
+Placement (doctrine é20 R-14) : dans les **exercices**, **jamais** dans `quiz.json` (il gate la
+progression du chapitre), **≤ ~1/3** des questions d'une mission, et **jamais** en remplacement
+d'un QCM existant. En ajoutant à un fichier déjà en base, donner à la question une `difficulty`
+**≥ au maximum du fichier** : le rang après tri fabrique l'UUID, et un décalage détruit
+tentatives et échéances de rappel espacé.
 
 ## Nombres choisis, pas subis
 

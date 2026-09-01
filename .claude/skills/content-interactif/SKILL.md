@@ -9,11 +9,9 @@ description: >-
   "variés", "autre chose que des QCM", "un exercice à trous", "un exercice d'appariement / de remise
   en ordre", "une mission scénarisée / histoire", "un sprint chrono" — e.g. "ajoute des exercices
   interactifs au chapitre fractions 6ème", "une mission scénarisée de SVT 9ème", "un sprint de calcul
-  mental 4ème". Native input types are Tier B (docs/interactive-question-types.md) et TOUS
-  SHIPPED : saisie numérique (`type: "numeric"`), drag & drop natif (`ordering`/`matching`)
-  et multi-sélection (`type: "multi"`) sont authorable. Defers to the content-engine skill
-  (references/interactive-formats.md) for the format catalogue, schema, quality bar, rewards, and
-  validation.
+  mental 4ème". Les six types natifs sont authorables : `numeric`, `ordering`, `matching`,
+  `multi` et la question libre `short_answer` (étude 20). Defers to content-engine for
+  formats, schema, quality bar, rewards, validation.
 ---
 
 # content-interactif — interactive missions inside the QCM engine
@@ -35,9 +33,18 @@ catalogue + renderer contract + anti-patterns: it is THE spec for this skill), p
 - **Does not:** author courses/quizzes (→ program wrapper / `content-cours`), or raise the
   d3–4 ceiling of school exam subjects on its own (→ co-design with the matching `prof-*`
   skill: the professor owns the trap taxonomy and calibration; this skill owns the
-  interaction format). All Tier-B native types (`numeric`, `ordering`, `matching`, `multi`)
-  ARE authorable — shapes and rules in content-engine `references/content-schema.md`; prefer
-  them over the QCM-encoded permutation/multi-select formats for new content.
+  interaction format). Les **six** types natifs sont authorables (`numeric`, `ordering`,
+  `matching`, `multi` et `short_answer`) — shapes and rules in content-engine
+  `references/content-schema.md`; prefer them over the QCM-encoded permutation/multi-select
+  formats for new content.
+- **La question libre (`short_answer`) est un FORMAT, pas une skin** : aucune proposition à
+  éliminer, l'élève tape sa réponse. On la choisit quand la forme naturelle de la question est
+  la **production** (nommer une notion, un théorème, une méthode) et que le QCM la dégraderait
+  en reconnaissance. Doctrine é20 R-13/R-14, détaillée dans `content-schema.md` : née complète
+  (`acceptedAnswers` + `expectedMistakes` dès l'écriture), **≤ ~1/3** des questions d'une
+  mission, **jamais dans un `quiz.json` du thème école**, et jamais en remplacement d'un `mcq`
+  existant — on ajoute. ⚠️ Ajouter dans un fichier existant impose une `difficulty` **≥ au
+  maximum du fichier**, sans quoi les identifiants des questions déjà en base se décalent.
 
 ## Program fidelity still applies
 

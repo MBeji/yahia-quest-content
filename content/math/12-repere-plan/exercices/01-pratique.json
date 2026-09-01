@@ -83,6 +83,18 @@
       "explanation": "الربع الثالث هو حيث x < 0 وy < 0. النقطة C(−2 ; −5) تحقّق ذلك. أمّا A فربع رابع، وB ربع ثانٍ، وD على محور الترتيبات.",
       "difficulty": 1,
       "competencies": ["math.vec.repere-coordonnees"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "في المعلّم (O ; i ; j) نكتب إحداثيّي النقطة M على الشكل M(x ; y). ماذا نسمّي العدد x؟",
+      "answerKey": { "text": "الفاصلة" },
+      "acceptedAnswers": ["فاصلة النقطة", "الإحداثي الأوّل"],
+      "expectedMistakes": [
+        { "text": "الترتيبة", "misconceptionTag": "math.vec.coordonnees-point-inversees" }
+      ],
+      "explanation": "الترتيب متّفق عليه ولا يُقلب: يُكتب أوّلًا الإحداثي الأفقي المقروء على محور الفواصل، ثمّ الإحداثي العمودي المقروء على محور التراتيب. في M(3 ; 2) يوافق 3 المحور الأفقي و2 المحور العمودي؛ وعكسهما يعطي نقطة أخرى تمامًا.",
+      "difficulty": 2,
+      "competencies": ["math.vec.repere-coordonnees"]
     }
   ]
 }

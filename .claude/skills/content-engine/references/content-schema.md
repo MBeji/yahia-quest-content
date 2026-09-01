@@ -96,9 +96,10 @@ bucket; this field carries only the metadata.
 ## Question object (shared by quiz.json and exercise files)
 
 Questions are a **discriminated union on `type`**. Omitting `type` means `mcq` — every
-pre-existing file stays valid unchanged. All Tier-B types have shipped: `mcq`, `numeric`,
-`ordering`, `matching` and `multi` are ALL authorable (`docs/interactive-question-types.md`
-is fully executed — no more native types are planned).
+pre-existing file stays valid unchanged. Les six types natifs sont livrés et TOUS authorables :
+`mcq`, `numeric`, `ordering`, `matching`, `multi` (`docs/interactive-question-types.md`) et
+`short_answer` — la **question libre sans réponses proposées** (étude 20 lot 7, arena#654), qui
+rouvre la clôture « no more native types » de cette spec.
 
 **`mcq` (default) — the classic QCM:**
 
@@ -220,6 +221,77 @@ item with exactly one intended correct answer should be an `mcq` instead.
 
 Prefer these three native types (`ordering`/`matching`/`multi`) over the QCM-encoded
 permutation/multi-select formats for new content.
+
+**`short_answer` — native free-TEXT question (étude 20 lot 7, "question libre") :**
+
+Aucune proposition n'est affichée : l'élève **tape** sa réponse dès la première rencontre. Le
+serveur la corrige par un test d'appartenance déterministe à `{ canonique } ∪ acceptedAnswers`,
+après normalisation (casse, espaces, accents, tashkeel, hamza, chiffres arabo-indiens).
+
+| Field                              | Type     | Required | Constraint                                                                                                    |
+| ---------------------------------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------- |
+| `type`                             | string   | yes      | `"short_answer"`                                                                                              |
+| `prompt`                           | string   | yes      | non-empty et **auto-suffisant** — aucune allusion à des propositions qui n'existent pas                        |
+| `answerKey.text`                   | string   | yes      | la réponse canonique — 1–60 caractères, **≤ 6 mots**, une seule ligne, toujours acceptée sans être répétée     |
+| `acceptedAnswers`                  | string[] | no       | les AUTRES formulations justes (voir ci-dessous) — ≤ 24 entrées                                                |
+| `expectedMistakes[].text`          | string   | no       | une erreur qu'on SAIT fréquente, en toutes lettres — ≤ 6 entrées ; le pendant du distracteur tagué             |
+| `expectedMistakes[].misconceptionTag` | string | no      | id du registre `content/misconceptions.json` (même vocabulaire fermé que les distracteurs `mcq`)              |
+| `explanation`                      | string   | yes      | même barre que `mcq`, **mais elle ne doit pas contenir la réponse littérale** (l'indice la révélerait)         |
+| `difficulty`                       | number   | no       | même sémantique que `mcq`                                                                                     |
+
+**Les contraintes d'autorat sont BLOQUANTES** (`content:qa`, étude 20 R-12) — une `short_answer`
+hors clous n'est pas « imparfaite », elle est **injouable** : l'élève ne peut pas taper la réponse.
+
+- **charset tapable** : la réponse normalisée doit matcher `^[a-z0-9.ء-ي]+$` ;
+- **pas de contenu riche** (`<svg`, `<img`, `![`, `$$`, `http`) ni de **symbole mathématique de
+  structure** (`= < > ^ √ × ÷ ± ≤ ≥ ≠ ≈ → ∈ ∪ ∩`, exposants/indices Unicode) dans `answerKey.text` ;
+- **un nombre pur ⇒ erreur** : c'est le type `numeric` qu'il faut (il a la tolérance et le pavé
+  numérique). En maths, la question libre porte donc un **terme**, pas un résultat ;
+- **énoncé auto-suffisant** : la liste close « lequel / parmi / suivant(e)s / ci-dessous / intrus /
+  which of / following / below / مما يلي / من بين / أي من » est une **erreur** dans un `prompt`.
+  ⚠️ Piège mesuré : en arabe, « أي » au sens de « c'est-à-dire » suivi de « من » (« …، أي من مجموع
+  إلى جداء ») déclenche la garde. Reformuler (« فنحوّل مجموعًا إلى جداء ») — la garde ne lit pas le
+  sens ;
+- `expectedMistakes` : tag déclaré au registre, texte non vide une fois normalisé, jamais égal à la
+  canonique ni à un autre.
+
+**`acceptedAnswers` — le champ partagé (étude 20).** Il vit sur la `short_answer` (toujours actif)
+et sur la `mcq` **éligible au mode Rappel** (`content:qa` avertit ailleurs, erreur sur les autres
+types). On y écrit les formulations **également justes** : paraphrases, synonymes exacts, positions
+équivalentes, translittérations latines de l'arabe (mono-mot par défaut).
+
+- **R-4, la règle qui prime** : une entrée ne doit **jamais** égaler, une fois normalisée, un élément
+  déclaré faux de la même question (distracteur `mcq`, `expectedMistakes` d'une `short_answer`).
+  `content:qa` la rejette ; vérifier **avant** d'écrire — le gate est le filet, pas la méthode.
+- **N'écrivez pas les variantes du Tier A.** L'article (`ال` en tête, `le/la/l'`, `the/a/an`) et les
+  contractions anglaises sont dérivées **mécaniquement au build** de la canonique. Les écrire à la
+  main est du bruit qui consomme la borne des 24. Corollaire : « المنوال » n'a pas besoin de
+  « منوال », mais « المتطابقات الشهيرة » face à « متطابقة شهيرة » est une vraie variante.
+- **Une variante n'est pas une variante orthographique.** La normalisation plie déjà la vocalisation,
+  la casse, les espaces, `ة`/`ه`, `أإآ`/`ا`, `ى`/`ي` : « تحت الكرسيّ » et « تحت الكرسي » sont **le
+  même mot** pour le moteur, et `content:qa` refuse le doublon.
+- Le champ est **optionnel** : une réponse peut légitimement n'avoir aucune variante (R-13 vit dans
+  la revue, pas dans le gate).
+
+**Doctrine d'usage (étude 20 R-13/R-14).**
+
+- **Née complète** : la question libre naît avec son ensemble accepté et, si le diagnostic a de la
+  valeur, ses erreurs attendues taguées — pas dans une campagne de rattrapage ultérieure.
+- **Où** : dans les **exercices** de tous les thèmes ; dans les quiz des thèmes **non scolaires**
+  avec parcimonie ; **jamais dans un `quiz.json` du thème école** (il gate la progression du
+  chapitre — on n'y met pas la forme la plus exigeante).
+- **Combien** : la mission reste **mixte** — la saisie libre complète le QCM, elle ne le remplace
+  pas (**≤ ~1/3** des questions d'une mission).
+- **Ce qu'elle vise** : les questions dont la forme naturelle est la **production** (nommer une
+  notion, un théorème, une méthode, une propriété) et que le QCM dégraderait en reconnaissance.
+- **Pas de conversion** : on n'échange **jamais** un `mcq` existant contre une `short_answer` (é20
+  Q-5). On **ajoute**.
+- ⚠️ **Ajouter, c'est ajouter EN FIN DE TRI.** L'identifiant d'une question est un UUIDv5 de
+  `subjectId/chapterSlug/exerciseSlug/qN`, où `N` est son rang **après tri par `difficulty`**.
+  Insérer une question moins difficile que les autres **décale** les identifiants de toutes celles
+  qui suivent : le compilateur supprime les anciennes lignes et en crée de nouvelles, emportant les
+  tentatives, la télémétrie et les échéances de rappel espacé. Donner à la question ajoutée une
+  `difficulty` **≥ au maximum du fichier** — et le vérifier.
 
 ### Figures (inline SVG) in questions
 

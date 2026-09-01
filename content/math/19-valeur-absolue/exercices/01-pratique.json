@@ -83,6 +83,18 @@
       "explanation": "القيمة المطلقة بُعد، والبعد لا يكون سالبًا أبدًا. إذن المساواة |x| = −4 مستحيلة ولا تقبل أيّ حلّ في ℝ .",
       "difficulty": 2,
       "competencies": ["math.num.valeur-absolue"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "إذا كانت M نقطة من مستقيم مدرّج (OI) فاصلتها x، فإنّ العدد |x| يساوي المسافة OM. ماذا نسمّي العدد |x|؟",
+      "answerKey": { "text": "القيمة المطلقة" },
+      "acceptedAnswers": ["القيمة المطلقة للعدد x"],
+      "expectedMistakes": [
+        { "text": "المقابل", "misconceptionTag": "math.num.valeur-absolue-toujours-oppose" }
+      ],
+      "explanation": "بما أنّها بُعد، فهي موجبة أو معدومة ولا تكون سالبة أبدًا. نحسبها حسب إشارة العدد: إذا كان موجبًا أو معدومًا نُبقيه كما هو، وإذا كان سالبًا نأخذ مقابله — فنجد 6 من 6، و13 من −13، و√5 من −√5. ⚠️ أخذ المقابل في كلّ الحالات خطأ: هو صحيح فقط عندما يكون العدد سالبًا.",
+      "difficulty": 2,
+      "competencies": ["math.num.valeur-absolue"]
     }
   ]
 }

@@ -95,6 +95,21 @@
       "explanation": "من المعطيَين: 5a + b = 9 و 10a + b = 14. نطرح المعادلة الأولى من الثانية: 5a = 5، إذن a = 1. نعوّض في الأولى: 5 + b = 9، b = 4. إذن f(x) = x + 4. تكلفة 20 كم: f(20) = 20 + 4 = 24 دينارًا. التحقّق: f(5) = 9 ✓، f(10) = 14 ✓.",
       "difficulty": 3,
       "competencies": ["math.fn.fonction-affine", "math.alg.mise-en-equation"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "في الدالة التآلفية f(x) = ax + b، ماذا نسمّي العدد a الذي يحدّد ميل المستقيم الممثّل لها؟",
+      "answerKey": { "text": "معامل التوجيه" },
+      "acceptedAnswers": ["الميل", "معامل توجيه المستقيم"],
+      "expectedMistakes": [
+        {
+          "text": "الترتيبة عند المبدأ",
+          "misconceptionTag": "math.fn.pente-ordonnee-origine-confondues"
+        }
+      ],
+      "explanation": "العدد a يقيس انحدار المستقيم: موجبًا يكون المستقيم صاعدًا، وسالبًا نازلًا، ومستقيمان متوازيان يشتركان فيه. نحسبه من نقطتين بالعلاقة (y₂ − y₁)/(x₂ − x₁). أمّا b فهو f(0)، أي ترتيبة نقطة تقاطع المستقيم مع محور التراتيب — دور مختلف تمامًا.",
+      "difficulty": 3,
+      "competencies": ["math.fn.fonction-affine"]
     }
   ]
 }

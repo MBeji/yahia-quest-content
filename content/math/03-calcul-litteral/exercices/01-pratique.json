@@ -119,6 +119,19 @@
       "explanation": "101 × 99 = (100 + 1)(100 − 1) = 100² − 1² = 10000 − 1 = 9999. هذه هي المتطابقة الثالثة فرق المربّعين!",
       "difficulty": 3,
       "competencies": ["math.alg.identites-remarquables"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "ننتقل من الكتابة 4x² − 8x إلى الكتابة 4x(x − 2)، فنحوّل مجموعًا إلى جداء. ماذا نسمّي هذه العملية؟",
+      "answerKey": { "text": "التعميل" },
+      "acceptedAnswers": ["التفكيك", "تفكيك إلى عوامل", "التحليل إلى عوامل"],
+      "expectedMistakes": [
+        { "text": "النشر", "misconceptionTag": "math.alg.factoriser-et-developper-confondus" },
+        { "text": "التوزيع", "misconceptionTag": "math.alg.factoriser-et-developper-confondus" }
+      ],
+      "explanation": "الانتقال من مجموع إلى جداء هو الاتّجاه المعاكس للنشر: نُخرج العامل المشترك 4x فيبقى داخل القوس x − 2. ونتحقّق بالسير في الاتّجاه الآخر: 4x(x − 2) = 4x² − 8x ✓. وقد يكون العامل المشترك قوسًا كاملًا، مثل (x + 1)(x − 3) + (x + 1)(2x + 5) = (x + 1)(3x + 2).",
+      "difficulty": 3,
+      "competencies": ["math.alg.factorisation"]
     }
   ]
 }

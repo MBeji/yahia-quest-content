@@ -87,6 +87,19 @@
       "explanation": "التكرار المجمّع عند 12 = تكرار 10 + تكرار 12 = 3 + 5 = 8.",
       "difficulty": 3,
       "competencies": ["math.stat.effectifs-frequences"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "في سلسلة إحصائية، ماذا نسمّي القيمة التي يوافقها أكبر تكرار؟",
+      "answerKey": { "text": "المنوال" },
+      "acceptedAnswers": ["منوال السلسلة"],
+      "expectedMistakes": [
+        { "text": "الوسيط", "misconceptionTag": "math.stat.mode-mediane-confondus" },
+        { "text": "المعدّل", "misconceptionTag": "math.stat.moyenne-et-mode-confondus" }
+      ],
+      "explanation": "نقرأ الجدول ونبحث عن السطر ذي التكرار الأكبر، ثمّ نُجيب بالقيمة الموافقة له لا بالتكرار نفسه. ولا يُخلط بينه وبين الوسيط الذي يقسم السلسلة المرتّبة نصفين، ولا مع المعدّل الحسابي الذي يوازن كلّ القيم بتكراراتها ويتأثّر بالقيم الشاذّة.",
+      "difficulty": 3,
+      "competencies": ["math.stat.mode"]
     }
   ]
 }
