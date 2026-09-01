@@ -239,6 +239,18 @@ son étude et dans les citations qu'on en fait.
       🔴 **Vérifié le 2026-08-24 : `docs/doctrine-verticale.md` n'existe pas.** Deux lots
       documentaires, aucun prérequis, cinq semaines d'exécution qui les citent.
 
+- [ ] **P7. é31 — l'envie de revenir (engagement & rétention) : étude créée, à valider.**
+      Écrite le 2026-09-01 (`FableEtudes/31-envie-de-revenir/`, **brouillon**). Rallumer ce
+      qui existe avant d'ajouter : mesure de rétention (le lot 1 publie enfin é26 KPI-4 —
+      STATUS KPI-2 🔴), badges vivants (9/13 morts), missions rotatives + anneau honnête,
+      push localisés + relance de l'élève qui a perdu sa série (aujourd'hui plus jamais
+      recontacté), ligue célébrée + classement « cette semaine », accueil D0, identité,
+      calendrier scolaire. 8 lots, zéro nouvelle route élève, zéro clé IA.
+      ⛔ Portes : validation humaine (Q-1…Q-4) **et** é26 KPI-3 (≤ 3 études en exécution —
+      plafond déjà dépassé aujourd'hui) ; toute valeur d'économie passe par é09 (§3.9 de
+      l'étude). Ne bloque rien ; le goulot du projet reste l'acquisition (§8, axe Marché),
+      pas la rétention — cette étude prépare la rétention de ceux que l'acquisition amènera.
+
 ---
 
 ## 4. FILE FONDATIONS (parallèle — ne bloque pas la file produit)
