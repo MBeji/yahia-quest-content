@@ -18,7 +18,7 @@
 
 $$المحيط = مجموع أطوال كلّ الأضلاع$$
 
-<svg viewBox="0 0 100 100"><polygon points="50,15 85,45 70,85 30,85 15,45" fill="none" stroke="currentColor" stroke-width="2.5"/><text x="60" y="26" font-size="9" fill="currentColor">6 cm</text><text x="80" y="68" font-size="9" fill="currentColor">5 cm</text><text x="42" y="96" font-size="9" fill="currentColor">7 cm</text><text x="6" y="68" font-size="9" fill="currentColor">5 cm</text><text x="20" y="28" font-size="9" fill="currentColor">6 cm</text></svg>
+<svg viewBox="0 0 100 100"><polygon points="50,15 85,45 70,85 30,85 15,45" fill="none" stroke="currentColor" stroke-width="2.5"/><text x="60" y="26" font-size="9" fill="currentColor">6 cm</text><text x="77" y="68" font-size="9" fill="currentColor">5 cm</text><text x="42" y="96" font-size="9" fill="currentColor">7 cm</text><text x="6" y="68" font-size="9" fill="currentColor">5 cm</text><text x="20" y="28" font-size="9" fill="currentColor">6 cm</text></svg>
 
 - _مثال:_ مضلّعٌ خماسيّ أضلاعه 6 cm و 5 cm و 7 cm و 5 cm و 6 cm: المحيط = 6 + 5 + 7 + 5 + 6 = **29 cm**.
 

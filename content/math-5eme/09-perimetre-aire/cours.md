@@ -40,7 +40,7 @@ $$محيط المستطيل = (الطول + العرض) × 2$$
 
 **مساحة** شكلٍ هي مقدار **السطح** الذي يشغله من الداخل. نقيسها بعدد المربّعات الصغيرة (الوحدات) التي تملؤه. انظر هذا المستطيل المقسّم إلى مربّعاتٍ ضلعُ كلٍّ منها 1 cm:
 
-<svg viewBox="0 0 130 70"><rect x="10" y="10" width="100" height="40" fill="#e5e7eb" stroke="currentColor" stroke-width="2"/><line x1="30" y1="10" x2="30" y2="50" stroke="currentColor" stroke-width="1"/><line x1="50" y1="10" x2="50" y2="50" stroke="currentColor" stroke-width="1"/><line x1="70" y1="10" x2="70" y2="50" stroke="currentColor" stroke-width="1"/><line x1="90" y1="10" x2="90" y2="50" stroke="currentColor" stroke-width="1"/><line x1="10" y1="30" x2="110" y2="30" stroke="currentColor" stroke-width="1"/><text x="40" y="63" font-size="9" fill="currentColor">5 cm</text><text x="112" y="33" font-size="9" fill="currentColor">2 cm</text></svg>
+<svg viewBox="0 0 130 70"><rect x="10" y="10" width="100" height="40" fill="#e5e7eb" stroke="currentColor" stroke-width="2"/><line x1="30" y1="10" x2="30" y2="50" stroke="currentColor" stroke-width="1"/><line x1="50" y1="10" x2="50" y2="50" stroke="currentColor" stroke-width="1"/><line x1="70" y1="10" x2="70" y2="50" stroke="currentColor" stroke-width="1"/><line x1="90" y1="10" x2="90" y2="50" stroke="currentColor" stroke-width="1"/><line x1="10" y1="30" x2="110" y2="30" stroke="currentColor" stroke-width="1"/><text x="40" y="63" font-size="9" fill="currentColor">5 cm</text><text x="107" y="33" font-size="9" fill="currentColor">2 cm</text></svg>
 
 نعدّ المربّعات: 5 في كلّ صفٍّ و2 من الصفوف، أي 5 × 2 = **10** مربّعات. كلّ مربّعٍ مساحته 1 cm²، فالمساحة = **10 cm²**. هكذا نفهم أنّ المساحة = الطول × العرض دون عدٍّ في كلّ مرّة.
 
@@ -87,7 +87,7 @@ $$مساحة المستطيل = الطول × العرض$$
 
 بعض الأشكال مركّبةٌ من **عدّة مستطيلات** (شكل حرف L مثلًا). لإيجاد مساحتها: نقسّمها إلى مستطيلاتٍ بسيطة، نحسب مساحة كلٍّ منها، ثمّ **نجمع**.
 
-<svg viewBox="0 0 110 100"><polygon points="15,15 75,15 75,50 95,50 95,85 15,85" fill="#e5e7eb" stroke="currentColor" stroke-width="2.5"/><line x1="15" y1="50" x2="75" y2="50" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/><text x="38" y="11" font-size="8" fill="currentColor">6 cm</text><text x="2" y="35" font-size="8" fill="currentColor">7 cm</text><text x="36" y="70" font-size="8" fill="currentColor">8 cm</text><text x="97" y="70" font-size="8" fill="currentColor">3 cm</text></svg>
+<svg viewBox="0 0 110 100"><polygon points="15,15 75,15 75,50 95,50 95,85 15,85" fill="#e5e7eb" stroke="currentColor" stroke-width="2.5"/><line x1="15" y1="50" x2="75" y2="50" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/><text x="38" y="11" font-size="8" fill="currentColor">6 cm</text><text x="2" y="35" font-size="8" fill="currentColor">7 cm</text><text x="36" y="70" font-size="8" fill="currentColor">8 cm</text><text x="90" y="70" font-size="8" fill="currentColor">3 cm</text></svg>
 
 - _مثال:_ نقسّم الشكل بخطٍّ أفقيّ إلى مستطيلين: علويّ 6 × 3 = 18 cm²، وسفليّ 8 × 4 = 32 cm². المساحة الكلّيّة = 18 + 32 = **50 cm²**.
 

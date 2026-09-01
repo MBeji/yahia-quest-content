@@ -37,7 +37,7 @@ $$ AB < AC + CB وAC < AB + BC وBC < AB + AC $$
 <line x1="70" y1="165" x2="140" y2="62" stroke="#0f172a" stroke-width="2.4"/>
 <line x1="235" y1="165" x2="140" y2="62" stroke="#0f172a" stroke-width="2.4"/>
 <g fill="#0f172a"><circle cx="140" cy="62" r="4"/><circle cx="70" cy="165" r="4"/><circle cx="235" cy="165" r="4"/></g>
-<g font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round"><text x="140" y="50" text-anchor="middle" fill="#0f172a" font-size="13">A</text><text x="58" y="171" text-anchor="middle" fill="#0f172a" font-size="13">B</text><text x="247" y="171" text-anchor="middle" fill="#0f172a" font-size="13">C</text><text x="95" y="205" text-anchor="middle" fill="#0f172a" font-size="11">قوسان مركزاهما B و C يتقاطعان في A</text></g>
+<g font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round"><text x="140" y="50" text-anchor="middle" fill="#0f172a" font-size="13">A</text><text x="58" y="171" text-anchor="middle" fill="#0f172a" font-size="13">B</text><text x="247" y="171" text-anchor="middle" fill="#0f172a" font-size="13">C</text><text x="103" y="205" text-anchor="middle" fill="#0f172a" font-size="11">قوسان مركزاهما B و C يتقاطعان في A</text></g>
 </svg>
 
 **مثال محسوب**: نبني مثلّثًا ABC حيث BC = 6 سم، AB = 5 سم، AC = 4 سم (تحقّقٌ سريع: 6 < 5 + 4 = 9 ✓، فالبناءُ ممكن). نرسم [BC] بطول 6 سم، ثمّ قوسًا مركزُه B نصفُ قطره 5 سم، وقوسًا مركزُه C نصفُ قطره 4 سم؛ تقاطعُهما يعطي A.

@@ -78,7 +78,7 @@ Verse dans un tube des liquides qui ne se mélangent pas : ils se rangent par de
 <text x="148" y="51">alcool (0,79)</text>
 <text x="148" y="77">huile (0,92)</text>
 <text x="148" y="103">eau (1,00)</text>
-<text x="148" y="127">chloroforme (1,48)</text>
+<text x="140" y="127">chloroforme (1,48)</text>
 </g>
 </svg>
 :::
