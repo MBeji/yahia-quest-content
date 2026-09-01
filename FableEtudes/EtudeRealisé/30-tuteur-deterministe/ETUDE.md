@@ -1,16 +1,17 @@
 # Étude 30 — Le tuteur déterministe : porter le moteur adaptatif au rang des références (ALEKS · Squirrel AI · CENTURY)
 
-> **Statut** : **validée** — Q-1…Q-7 arbitrées le 2026-08-23 par Mohamed (§7 ; **deux contre la
+> **Statut** : **LIVRÉE** — **PÉRIMÈTRE RETENU LIVRÉ EN ENTIER le 2026-08-25** (0bis · 1 · 2 ·
+> 3 · 3bis · 4 — arena#856, #857, #858, #859, #860 ; contenu privé #241), puis **Q-4 tranché et
+> exécuté le 2026-08-30** (arena#910/#911 — `difficulty_adaptation` tombe — topo arena#912).
+> Journal, écarts et dettes au **§8**, qui fait foi sur ce qui a été mesuré. Les lots 5 à 9
+> restent **différés**, pas gelés (Q-7) ; deux corrections du corps restent ouvertes (privé#247).
+> Validée le 2026-08-23 — Q-1…Q-7 arbitrées par Mohamed (§7 ; **deux contre la
 > recommandation** : Q-5 et Q-6, l'étude est réécrite en conséquence). **Lot 0 LIVRÉ** (C4bis,
 > privé #219, appliqué en prod le 2026-08-23). **Révisée le 2026-08-25** sur mandat de Mohamed
 > (« améliorer et optimiser », é04 **et é11 livrées**) : l'articulation é11 passe du futur au
 > **mesuré** (§1.2bis, §3.13), l'amendement D devient un lot exécutable (**3bis** — le pack du
 > tuteur apprend la maîtrise), le poids du mini-check est re-spécifié sur la couture **réelle**
 > (§3.2), et le sélecteur vise la ZPD calculée (§3.4). **Aucun arbitrage n'est rouvert.**
-> **PÉRIMÈTRE RETENU LIVRÉ EN ENTIER le 2026-08-25** (0bis · 1 · 2 · 3 · 3bis · 4 — arena#856,
-> #857, #858, #859, #860 ; contenu privé #241). Journal, écarts et dettes au **§8**, qui fait foi
-> sur ce qui a été mesuré. Les lots 5 à 9 restent **différés**, pas
-> gelés (Q-7). Prête à exécuter, lot 0bis en premier.
 > **Priorité** : 30 · **Valeur** : le produit sait déjà _si_ l'élève a raté et _à quel point_ une
 > compétence est faible ; il ne sait pas **ce qu'il croit**, **ce qu'il peut en déduire**, ni **quoi
 > servir ensuite**. Cette étude ferme les quatre organes manquants d'un système tutoriel
