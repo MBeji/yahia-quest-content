@@ -48,6 +48,20 @@ commande suivante. Absent ⇒ dérouler **Phase 0.1 de la méthode** (double clo
 liens `engine/content` et `engine/.claude/skills`, variante jonctions sous Windows) et **s'arrêter là
 si un lien échoue** : sans corpus branché, toutes les commandes mentent par omission.
 
+⚠️ **Branché ne suffit pas : le moteur doit être à JOUR.** Les gates tournent avec le code du
+clone moteur, donc un clone en retard rend un verdict qui n'engage personne — **dans les deux
+sens**. Mesure-le, ne le suppose pas :
+
+```bash
+git -C ../engine fetch -q origin && git -C ../engine rev-list --count HEAD..origin/main  # doit rendre 0
+```
+
+Un **vert** de trop : le clone n'a pas la garde qui aurait crié (constaté avec 167 commits de
+retard). Un **rouge** de trop, plus traître parce qu'il ressemble à du travail à faire : le
+2026-09-01, `content:figures:check` signalait 32 figures invalides dans trois matières — toutes
+déjà réparées en amont (arena #936), sur un clone à 7 commits de retard. Conclure sans avoir
+mesuré ce retard, c'est ouvrir un lot pour réparer ce qui l'est déjà.
+
 Un LOT A a un second préalable — **ScribeKit construit** (méthode, Phase 0.2), le déterministe qui se
 paie une fois (T-1) :
 
