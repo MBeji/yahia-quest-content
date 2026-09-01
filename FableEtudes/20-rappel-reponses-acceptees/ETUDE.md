@@ -696,9 +696,10 @@ automatique en base : la boucle reste **humaine-dans-la-boucle** (pas d'oracle a
       les chapitres témoins (une matière par PR), mesurer (signalements, `content-audit`).
       **Stop-point** : pas d'ouverture aux campagnes larges avant la mesure du pilote et l'accord de
       Mohamed sur la doctrine.
-      **Fait le 2026-09-01** : la doctrine (les trois skills) et le **premier corpus** — `math`
-      9ᵉ, 40 questions libres sur les 20 chapitres. **Reste** : la mesure du pilote une fois le
-      SQL appliqué (signalements, sweep `content-audit`) et l'e2e player, qui vit au moteur.
+      **Fait le 2026-09-01** : la doctrine (les trois skills) et le corpus — `math` 9ᵉ,
+      **119 questions libres, une par exercice** sur les 119 missions des 20 chapitres, et zéro
+      dans les `quiz.json`. **Reste** : la mesure du pilote (signalements, sweep
+      `content-audit`) et l'e2e player, qui vit au moteur.
 
 ## 5. Stratégie de test
 
@@ -867,9 +868,30 @@ automatique en base : la boucle reste **humaine-dans-la-boucle** (pas d'oracle a
   `content:audit:strict` verts. `programme:check` échoue localement sur le fantôme CRLF de
   `_INDEX.md` (diff vide après régénération) — vert en CI.
 
+- 2026-09-01 — **Lot 8, la couverture complète** (privé, `math` 9ᵉ). Arbitrage de Mohamed le
+  jour même : « des questions libres sur tous les exercices où c'est possible ». Le premier
+  passage en posait 2 par chapitre (40) ; ce second en met **une par exercice** — 79 de plus,
+  soit **119 sur 119 missions**, et toujours **zéro** dans un `quiz.json` (R-14 tient).
+  Le rapport reste 1 pour 7 dans chaque mission, loin sous le plafond de ~1/3.
+  **Ce que le palier a imposé** : les 79 fichiers restants sont des d3 (زعيم / تدريب) et des d4
+  (تحدّي). Une définition nue y serait indigne du palier — le registre devient **calculer puis
+  nommer** : la réponse reste un terme court et tapable, mais l'atteindre exige le travail du
+  chapitre (développer (√3+1)(√3−1) avant de dire la nature du résultat ; vérifier 36 + 64 = 100
+  avant de dire le type du triangle ; comparer les rapports avant de qualifier la jonction).
+  Cette doctrine rejoint `prof-math-9eme`.
+  **Trois défauts que le contrôle a arrêtés avant la PR**, et qui valent pour les campagnes
+  suivantes : (a) une réponse **numérique déguisée en mot** (« اثنان » à « بكم نضرب ؟ ») passe le
+  gate mais viole l'esprit de R-12 — remplacée ; (b) neuf **erreurs attendues mal taguées**, où
+  le libellé du registre décrivait une autre erreur que celle commise — passées muettes, un
+  mauvais tag enseignant une fausse erreur ; (c) deux questions du **même chapitre avec la même
+  réponse canonique** — un contrôle dédié les a séparées.
+  Gates : `content:check` (834 questions), `content:qa:strict` **0 erreur**,
+  `content:figures:check`, `content:audit:strict` verts ; contrôle de tri avant/après sur les 79
+  fichiers : **zéro décalage d'identifiant**.
+
 **Reste** : lot 4 (campagne Tier B, une matière par PR — à décider sur la base du pilote), lot 6
-(refus contesté, optionnel) et la **seconde moitié du lot 8** : mesurer le pilote `short_answer`
-une fois appliqué, puis décider de l'ouverture aux campagnes larges (accord de Mohamed, R-14).
+(refus contesté, optionnel) et la **mesure** du pilote `short_answer` : signalements et sweep
+`content-audit` sur `math` 9ᵉ, avant d'ouvrir le type aux autres matières (accord de Mohamed, R-14).
 
 _(à remplir lot par lot par l'exécuteur : date, lot, PR, écarts acceptés, dettes.)_
 

@@ -87,6 +87,18 @@
       "explanation": "نلاحظ الشكل: u² + v² − 2uv حيث u = (2x + 1) و v = (2x − 1).\nهذا يطابق المتطابقة الثانية: (u − v)² = u² − 2uv + v².\nإذن: A = (u − v)² = ((2x + 1) − (2x − 1))²\n= (2x + 1 − 2x + 1)²\n= (2)² = 4.\nبالتحقّق بالنشر المباشر:\n(2x+1)² = 4x²+4x+1\n(2x−1)² = 4x²−4x+1\n2(2x+1)(2x−1) = 2(4x²−1) = 8x²−2\nA = (4x²+4x+1) + (4x²−4x+1) − (8x²−2) = 8x²+2−8x²+2 = 4 ✓",
       "difficulty": 3,
       "competencies": ["math.alg.identites-remarquables", "math.alg.developpement"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "المتطابقة a² − b² = (a − b)(a + b) هي الوحيدة التي تعمّل مباشرة دون حدّ أوسط. ما اسمها؟",
+      "answerKey": { "text": "فرق مربّعين" },
+      "acceptedAnswers": ["الفرق بين مربّعين", "فرق المربّعين"],
+      "expectedMistakes": [
+        { "text": "مربّع الفرق", "misconceptionTag": "math.alg.difference-carres-confondue" }
+      ],
+      "explanation": "انتبه إلى ترتيب الكلمتين: هنا نطرح مربّعين ثمّ نعمّل إلى جداء مجموع في فرق. أمّا (a − b)² فهي شيء آخر تمامًا وتساوي a² − 2ab + b². اختبار سريع بـ a = 5 و b = 3: الأولى تعطي 25 − 9 = 16 = 2 × 8، والثانية تعطي 4.",
+      "difficulty": 3,
+      "competencies": ["math.alg.identites-remarquables"]
     }
   ]
 }

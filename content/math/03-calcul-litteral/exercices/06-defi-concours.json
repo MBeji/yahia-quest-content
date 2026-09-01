@@ -95,6 +95,18 @@
       "explanation": "4x² − 25 = (2x)² − 5² وهي فرق مربّعين، تُعمَّل إلى (2x − 5)(2x + 5)، لا (2x − 5)². (تمرين «صيد الخطأ».) الخطأ الشائع: الخلط بين فرق المربّعين a² − b² = (a−b)(a+b) والمربّع الكامل (a−b)² = a² − 2ab + b²؛ للتحقّق: (2x − 5)² = 4x² − 20x + 25 ≠ 4x² − 25.",
       "difficulty": 2,
       "competencies": ["math.alg.identites-remarquables", "math.alg.factorisation"]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "في العبارة 4x + 3x = 7x جمعنا الحدّين لأنّ لهما نفس الجزء الحرفي. ماذا نسمّي حدّين لهما نفس الجزء الحرفي؟",
+      "answerKey": { "text": "حدّان متشابهان" },
+      "acceptedAnswers": ["حدود متشابهة", "الحدود المتشابهة", "حدّين متشابهين"],
+      "expectedMistakes": [
+        { "text": "حدود متساوية", "misconceptionTag": "math.alg.termes-semblables-par-coefficient" }
+      ],
+      "explanation": "التشابه يخصّ الجزء الحرفي لا المعامل: 4x و3x يُجمعان، بينما 4x و3x² لا يُجمعان لأنّ الأسّ مختلف. نجمع المعاملات ونُبقي الجزء الحرفي كما هو، تمامًا كما نجمع 3√2 و5√2 في الجذور.",
+      "difficulty": 3,
+      "competencies": ["math.alg.developpement"]
     }
   ]
 }
