@@ -11,26 +11,41 @@ depuis le 2026-08-15).
 numéros : `subject-hub` étiquette les chapitres par leur **rang dans la liste**, donc la
 numérotation qu'il lit est continue.
 
-## État au 2026-08-15
+## État au 2026-08-16
 
-**29 chapitres écrits** — 1 à 29, sans trou. Les 26 premiers sont **appliqués en production**.
+**41 chapitres écrits** — 1 à 44, il manque 35, 39, 40 et 45. Les **37 premiers** sont
+**appliqués en production** ; les chapitres 33, 37, 43 et 44 attendent le merge de leur lot.
 
-**16 restants** : 30 → 45.
+**4 restants** :
 
-| Bloc | أبواب | Sujet |
+| باب | Sujet | Note |
 | --- | --- | --- |
-| **Sujet adulte** ⚠️ | 30, 32, 33, 35, 37, 39 | الجهاد · النكاح والطلاق · العدّة · العتق · الدماء والحدود · الفرائض |
-| Serments | 31 | الأيمان والنذور |
-| Transactions | 34, 36 | البيوع · الشفعة والهبة والرهن والعارية واللقطة |
-| Justice | 38 | الأقضية والشهادات |
-| Récapitulatif | 40 | جمل من الفرائض والسنن الواجبة والرغائب |
-| Les آداب | 41 → 45 | اللباس · الطعام · السلام والاستئذان · التعالج والرقى · الرؤيا والسبق |
+| 35 | الوصايا والمدبر والمكاتب والمعتق وأم الولد والولاء | ⚠️ sujet adulte — statut servile, l'essentiel du باب |
+| 39 | الفرائض | ⚠️ sujet adulte — successions, باب de calcul et de quotes-parts |
+| 40 | جمل من الفرائض والسنن الواجبة والرغائب | récapitulatif de tout le livre, 11 pages |
+| 45 | الرؤيا والتثاوب والعطاس واللعب بالنرد والسبق بالخيل والرمي | آداب, le dernier باب |
 
-Les six أبواب marqués **sujet adulte** se traitent sobrement et au passé historique :
-principes et vocabulaire juridique, **aucun détail procédural** sur les peines, aucun détail
-intime, les institutions historiques (statut servile, capture) présentées dans leur contexte
-et jamais comme un modèle. C'est la consigne §3 du [`BRIEF.md`](./BRIEF.md), arbitrée par
-Mohamed le 2026-08-14 (avec « les 45 أبواب intégralement » et le registre « tous publics 10+ »).
+Les أبواب marqués **sujet adulte** se traitent sobrement et au passé historique : principes
+et vocabulaire juridique, **aucun détail procédural**, aucun détail intime, les institutions
+historiques présentées dans leur contexte et jamais comme un modèle. Voir §3 du
+[`BRIEF.md`](./BRIEF.md) — et rappel : **cette liste est un plancher, pas un plafond**.
+
+Le ch. 40 est un cas à part : c'est un **récapitulatif** du livre entier. Le risque n'y est
+pas la fidélité mais la **redondance** avec les 44 autres chapitres — il faut y chercher ce
+que le المؤلّف ajoute en récapitulant, pas re-tester ce qui l'a déjà été.
+
+### Dette identifiée
+
+- **Écarts de citation restants** (mesurés le 2026-08-16, 8 071 citations vérifiées) :
+  02 (3) · 04 (3) · 05 (5) · 10 (1) · 11 (13, coquilles OCR **déclarées**) · 13 (3) ·
+  15 (2) · 21 (1). Tous les autres chapitres sont à **0**.
+- **Chapitres jamais audités indépendamment** : 02, 04, 05, 10, 12, 13, 18 → 44. Sur les
+  neuf audités, les auditeurs ont trouvé **cinq affirmations fausses** que les gates ne
+  voyaient pas. Ce n'est donc pas une dette théorique.
+- **Un silence du matn à trancher** (ch. 33) : les « trois mois » de la femme qui n'a pas
+  ses règles sont-ils DANS les « quatre mois et dix » ou APRÈS ? Le texte ne le dit pas ;
+  le chapitre le déclare et n'interroge pas dessus. À arbitrer contre un commentaire.
+
 
 ## Comment reprendre
 
