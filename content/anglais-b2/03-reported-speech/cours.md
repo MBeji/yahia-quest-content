@@ -28,6 +28,12 @@ When the reporting verb (_said_, _told_, _asked_) is in the **past**, the verb i
 
 > 🗡️ Tip: Think of backshift as rewinding one step. _Will → would_, _can → could_, _must → had to_. The tense slides back, but the meaning stays the same.
 
+> ⚠️ One exception worth knowing: _must_ may also **stay _must_**. Both _He said he had to go home_
+> and _He said he must go home_ are correct English — the second is common when the obligation is
+> still true as you report it. Your 2ème année secondaire textbook lists _must_ among the modals
+> that do not change. Use _had to_ when an exercise asks you to backshift; do not treat an
+> unchanged _must_ as a mistake when you meet it in a text.
+
 ## 🔮 3. Pronoun and Time-Word Changes
 
 Pronouns and time expressions must shift to reflect the reporter's viewpoint, not the original speaker's.
