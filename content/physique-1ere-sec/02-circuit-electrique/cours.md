@@ -49,8 +49,8 @@ Pour dessiner un circuit sans faire de portrait, on utilise des **symboles norma
 <g stroke="#0f172a" stroke-width="2.5"><path d="M44 92 H76"/><path d="M52 112 H68"/></g>
 <circle cx="260" cy="100" r="13" fill="#fde68a" stroke="#0f172a" stroke-width="2"/>
 <path d="M251 91 L269 109 M269 91 L251 109" stroke="#0f172a" stroke-width="1.5"/>
-<path d="M150 55 H178" stroke="#dc2626" stroke-width="2.6" fill="none" marker-end="url(#c2)"/>
-<defs><marker id="c2" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#dc2626"/></marker></defs>
+<path d="M150 55 H178" stroke="#dc2626" stroke-width="2.6" fill="none" marker-end="url(#fleche-courant)"/>
+<defs><marker id="fleche-courant" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#dc2626"/></marker></defs>
 <g font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">
 <text x="34" y="97">+</text><text x="34" y="117">−</text>
 <text x="60" y="178">pile</text><text x="260" y="140">lampe</text>

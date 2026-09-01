@@ -41,7 +41,7 @@
 ::: figure خطاطة المقام الشعريّ: الشاعر (الباتّ) يوجّه الرّسالة إلى المتقبّل (السامع/القارئ)، ويحكم هذا التواصلَ نظامٌ من السّنن ينتهي إلى الغرض
 <svg viewBox="0 0 330 250">
 <defs>
-<marker id="sahm" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+<marker id="sahm-tawjih" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
 <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f172a"/>
 </marker>
 </defs>
@@ -58,17 +58,17 @@
 <rect x="250" y="156" width="76" height="34" rx="5" fill="#fef9c3" stroke="#0f172a" stroke-width="1.5"/>
 <rect x="105" y="212" width="120" height="28" rx="6" fill="#fca5a5" stroke="#0f172a" stroke-width="2"/>
 <g stroke="#0f172a" stroke-width="2" fill="none">
-<line x1="266" y1="48" x2="215" y2="32" marker-end="url(#sahm)"/>
-<line x1="64" y1="48" x2="115" y2="32" marker-end="url(#sahm)"/>
-<line x1="165" y1="32" x2="165" y2="60" marker-end="url(#sahm)"/>
-<line x1="165" y1="86" x2="165" y2="112" marker-end="url(#sahm)"/>
+<line x1="266" y1="48" x2="215" y2="32" marker-end="url(#sahm-tawjih)"/>
+<line x1="64" y1="48" x2="115" y2="32" marker-end="url(#sahm-tawjih)"/>
+<line x1="165" y1="32" x2="165" y2="60" marker-end="url(#sahm-tawjih)"/>
+<line x1="165" y1="86" x2="165" y2="112" marker-end="url(#sahm-tawjih)"/>
 <line x1="165" y1="138" x2="165" y2="148"/>
 <line x1="43" y1="148" x2="287" y2="148"/>
 <line x1="43" y1="148" x2="43" y2="156"/>
 <line x1="125" y1="148" x2="125" y2="156"/>
 <line x1="207" y1="148" x2="207" y2="156"/>
 <line x1="287" y1="148" x2="287" y2="156"/>
-<line x1="165" y1="190" x2="165" y2="212" marker-end="url(#sahm)"/>
+<line x1="165" y1="190" x2="165" y2="212" marker-end="url(#sahm-tawjih)"/>
 </g>
 <g font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">
 <text x="165" y="24">المقام الشعريّ</text>

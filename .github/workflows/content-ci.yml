@@ -41,7 +41,7 @@ concurrency:
 
 jobs:
   gates:
-    name: content:check + qa:strict + audit:strict + programme:check
+    name: content:check + qa:strict + figures:check + audit:strict + programme:check
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -87,6 +87,16 @@ jobs:
       - name: content:qa:strict
         working-directory: engine
         run: npm run content:qa:strict
+
+      # Le lint structurel des figures SVG. Il existait depuis l'arena #451 et n'était
+      # appelé par AUCUN workflow : il est resté rouge des mois sans que personne le voie,
+      # sur 32 signalements dont pas un seul n'était vrai — il interdisait des `<defs>` et
+      # des `<marker>` que le sanitizer de l'app garde et que le navigateur dessine
+      # (corrigé dans le moteur, arena #936). Un gate que rien ne lance ne protège
+      # rien, et un gate qui ment finit ignoré : les deux moitiés se réparent ensemble.
+      - name: content:figures:check
+        working-directory: engine
+        run: npm run content:figures:check
 
       - name: content:audit:strict
         working-directory: engine
