@@ -809,6 +809,35 @@ ALTER TABLE public.competencies
 Compilés depuis `content/competences/<famille>.json` (champs optionnels `pInit` / `pTransit`,
 défauts de famille) par `sql-builder` — **jamais écrits à la main en base**.
 
+> ⚠️ **`pTransit` écrit haut ÉTEINT la détection de lacune — le CHECK seul ne vous en avertit
+> pas.** Mesuré au lot 1 (privé#247, item 2), non anticipé par cette étude.
+>
+> Le plancher de la croyance n'est **pas** `0,01` : BKT suppose qu'on apprend _en_ répondant, donc
+> chaque erreur est suivie d'une remontée de `(1−p⁺)·T`, et la croyance converge vers un **point
+> fixe** — à ≈ **1,12 × p(T)**, pas vers la borne basse.
+>
+> | `pTransit` | plancher après 200 erreurs (`mcq` 4 options, d2) |
+> | ---: | ---: |
+> | 0,02 | 0,022 |
+> | **0,15** (défaut de famille) | **0,168** |
+> | 0,20 | 0,224 |
+> | 0,30 | 0,336 |
+> | 0,40 | 0,448 |
+>
+> R-5 déclare une **lacune** à `p_known ≤ 0,25`, et le CHECK ci-dessus tolère `p_transit` jusqu'à
+> **0,40**. Au-delà de ≈ **0,22**, le plancher passe **au-dessus** du seuil : sur cette compétence
+> une lacune devient **indétectable**, quel que soit le nombre d'erreurs — et avec elle s'éteignent
+> le marquage `suspect` (R-8) et le rebranchement « cause racine » du lot 4.
+>
+> Le défaut de famille (0,15) est confortablement en deçà, donc **rien ne casse aujourd'hui**. Mais
+> rien ne dit non plus que ce CHECK et le seuil de R-5 se contraignent l'un l'autre : un auteur de
+> corpus qui monterait `pTransit` à 0,30 pour une compétence « qui s'apprend vite » éteindrait la
+> détection **sans le savoir**. **En pratique : ne pas dépasser 0,18** hors décision explicite.
+>
+> Le CHECK reste implémenté **tel que spécifié** (0,02 → 0,40). Le resserrer, ou rendre R-5 relatif
+> au plancher plutôt qu'absolu, sont des arbitrages **ouverts** — privé#247 les pose. Ce paragraphe
+> documente la contrainte, il ne la tranche pas ; l'interaction est épinglée par un test.
+
 **(d) `placement_sessions` — le bilan d'entrée** _(nouvelle table)_
 
 ```sql
