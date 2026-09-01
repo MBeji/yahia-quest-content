@@ -134,6 +134,18 @@ Règles de boucle (non négociables) :
   longs) : résumer + citer la référence. **Une source du web se qualifie en plus par son
   _tier_** (§ Profils → `source-web`) : ce qu'on prend à un lien décide de tout, et un seul des
   quatre tiers exige une autorisation.
+  ⚠️ **Le verbatim n'est pas le seul plagiat : la réécriture rapprochée en est un aussi.**
+  Un support dont chaque phrase a été reformulée, mais qui garde la **structure**, les
+  **chiffres** et les **collocations** de sa source, reste cette source. Constaté le
+  2026-08-31 sur `english-3eme-sec` ch.05 : le support d'une question du boss reprenait le
+  tapescript du guide enseignant (excursion Gozo / Comino, guide p.82) phrase par phrase —
+  même itinéraire pique-nique → jeeps → bateau → lagon → coucher de soleil → buffet, mêmes
+  horaires 14.00 et 18.00, même chute « back at your hotel … midnight ». Seuls les noms
+  propres avaient sauté. **Aucun des cinq gates contenu ne peut voir ça** — ni la mesure
+  lexicale, qui ne trouve aucun mot commun, ni la CI, qui ne connaît pas la source. Le test
+  qui le voit est une question : *est-ce que je pourrais écrire ce support si je n'avais pas
+  la source sous les yeux ?* Si la réponse est non, ce n'est pas un support inspiré, c'est la
+  source déguisée — et il faut en écrire un autre, pas le reformuler davantage.
 - **R-3 — Programme d'abord.** Pour une matière scolaire, confronter la fiche à la
   transcription CNP du couple si elle existe ; divergence de scope ⇒ le **programme officiel
   gagne**, écart signalé.
