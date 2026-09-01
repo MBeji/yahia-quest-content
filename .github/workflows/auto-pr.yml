@@ -42,14 +42,28 @@ name: Auto PR (corpus)
 #      en gratuit. C'est `automerge.yml` (maison, sur `workflow_run`) qui merge
 #      quand tous les check runs du SHA sont verts.
 #
-#   2. Les checks sont DÉCLENCHÉS explicitement (dernière étape). Sans cela
-#      rien ne tournerait : une PR ouverte par le `GITHUB_TOKEN` n'émet PAS
-#      d'événement `pull_request` — c'est la garde anti-boucle de GitHub — et
-#      `content-ci.yml` / `pin-check.yml` ne se déclenchent que là-dessus.
-#      Zéro check ⇒ `automerge.yml` refuse de merger (à raison), et la PR
-#      dormirait. L'arena contourne ça avec un PAT ; ce dépôt n'en a pas, donc
-#      on dispatche. C'est pour cette dispatch que les deux workflows ont
-#      gagné un `workflow_dispatch` dans la même PR que ce fichier.
+#   2. Les checks sont déclenchés explicitement (dernière étape), mais SEULEMENT
+#      si le SHA n'en a pas déjà. Sans dispatch du tout, une PR pourrait ne
+#      jamais avoir de check : `content-ci.yml` / `pin-check.yml` ne partent que
+#      sur `pull_request`, zéro check ⇒ `automerge.yml` refuse de merger (à
+#      raison), et la PR dormirait. C'est pour ce filet que les deux workflows
+#      ont gagné un `workflow_dispatch`.
+#
+#      ⚠️ MAIS LA DISPATCH INCONDITIONNELLE COÛTAIT CHER (privé#280, corrigé le
+#      2026-09-01). Ce commentaire affirmait qu'une PR ouverte par le
+#      `GITHUB_TOKEN` n'émet PAS d'événement `pull_request` (garde anti-boucle
+#      de GitHub). C'était vrai à l'écriture ; ça ne l'est plus ici. Mesuré sur
+#      cinq PR : l'événement EST émis, donc chaque PR lançait DEUX runs sur le
+#      même SHA, qui tombaient dans le même groupe de concurrence
+#      (`content-ci-${{ github.ref }}`, `cancel-in-progress: true`). L'un annulait
+#      l'autre, et GitHub enregistre un run annulé en `failure` — un rouge à
+#      ZÉRO job, indistinguable d'un vrai gate rouge sur `gh pr checks`. Deux PR
+#      ont ainsi mergé avec trois checks rouges, ce qui contredisait l'invariant
+#      d'`automerge` écrit dans CLAUDE.md.
+#
+#      D'où la garde de la dernière étape : on regarde si le SHA a déjà un run,
+#      et on ne dispatche que s'il n'en a pas. Le filet reste — si l'événement
+#      cesse d'être émis, la dispatch repart toute seule.
 #
 #   3. Pas de corps depuis `.github/pull_request_template.md` : ce dépôt n'en
 #      a pas. Le corps est écrit ici.
@@ -199,18 +213,32 @@ jobs:
           fi
           echo "created=true" >> "$GITHUB_OUTPUT"
 
-      # Sans cette étape, une PR ouverte ci-dessus n'aurait AUCUN check et
-      # dormirait pour toujours : `automerge.yml` refuse de merger un SHA sans
-      # check run (« zéro check = pas de merge »), ce qui est la bonne
-      # prudence. On ne dispatche que si on vient d'ouvrir la PR : quand une
-      # session ouvre la sienne par `gh pr create`, l'événement `pull_request`
-      # a déjà fait le travail et un second run serait du gaspillage.
+      # Le FILET : sans check, `automerge.yml` refuse de merger un SHA (« zéro
+      # check = pas de merge »), et la PR dormirait pour toujours. Deux gardes
+      # avant de dispatcher, pas une :
+      #   - on ne dispatche que si on vient d'ouvrir la PR (une session qui fait
+      #     son `gh pr create` a déjà l'événement) ;
+      #   - et seulement si le SHA n'a pas DÉJÀ un run pour ce workflow. C'est la
+      #     correction de privé#280 : l'événement `pull_request` est bien émis
+      #     ici, donc la dispatch inconditionnelle créait un doublon qui annulait
+      #     son jumeau et laissait un `failure` à zéro job sur la PR.
+      # L'ordre compte : on LAISSE d'abord à l'événement le temps de matérialiser
+      # ses runs, sinon on ne verrait jamais rien et on dispatcherait toujours.
       - name: Lancer les checks sur la branche
         if: steps.pr.outputs.created == 'true'
         run: |
           set -uo pipefail
+          # Les runs de l'événement `pull_request` apparaissent avec quelques
+          # secondes de retard. Décider avant qu'ils existent reviendrait à
+          # dispatcher à tous les coups — c'est-à-dire à ne rien corriger.
+          sleep 30
           failed=0
           for wf in content-ci.yml pin-check.yml; do
+            existing="$(gh run list --repo "$REPO" --workflow "$wf" --commit "$HEAD_SHA" --json databaseId --jq 'length' 2>/dev/null || echo 0)"
+            if [ "${existing:-0}" -gt 0 ]; then
+              echo "$wf : $existing run(s) déjà sur $HEAD_SHA — pas de dispatch (privé#280)."
+              continue
+            fi
             if gh workflow run "$wf" --repo "$REPO" --ref "$BRANCH"; then
               echo "Dispatché $wf sur $BRANCH."
             else
