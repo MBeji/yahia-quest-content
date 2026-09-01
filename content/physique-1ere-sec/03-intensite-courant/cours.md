@@ -70,11 +70,11 @@ En dérivation, le courant se **partage** aux nœuds. Mesure les intensités de 
 
 ::: figure Au nœud, le courant entrant se partage entre les deux branches : 0,90 A d'un côté, 0,65 A et 0,25 A de l'autre, et 0,65 + 0,25 = 0,90
 <svg viewBox="0 0 300 160">
-<path d="M35 80 H126" stroke="#0f172a" stroke-width="2.6" fill="none" marker-end="url(#nd)"/>
-<path d="M158 73 L250 38" stroke="#0f172a" stroke-width="2.6" fill="none" marker-end="url(#nd)"/>
-<path d="M158 87 L250 122" stroke="#0f172a" stroke-width="2.6" fill="none" marker-end="url(#nd)"/>
+<path d="M35 80 H126" stroke="#0f172a" stroke-width="2.6" fill="none" marker-end="url(#fleche-noeud)"/>
+<path d="M158 73 L250 38" stroke="#0f172a" stroke-width="2.6" fill="none" marker-end="url(#fleche-noeud)"/>
+<path d="M158 87 L250 122" stroke="#0f172a" stroke-width="2.6" fill="none" marker-end="url(#fleche-noeud)"/>
 <circle cx="145" cy="80" r="5.5" fill="#dc2626"/>
-<defs><marker id="nd" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#0f172a"/></marker></defs>
+<defs><marker id="fleche-noeud" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#0f172a"/></marker></defs>
 <g font-size="13" font-weight="700" fill="#0f172a">
 <text x="55" y="72">I₁ = 0,90 A</text>
 <text x="205" y="32">I₂ = 0,65 A</text>

@@ -18,7 +18,7 @@ Frotte deux bâtons en verre : approchés l'un de l'autre, ils **se repoussent**
 - un corps qui est **attiré** par le verre électrisé porte une charge **négative (−)** (autrefois « électricité résineuse »).
 
 ::: figure Deux charges de même signe s'écartent, deux charges de signes contraires se rapprochent : c'est le signe, jamais la seule présence de charge, qui décide
-<svg viewBox="0 0 340 170">
+<svg viewBox="0 0 356 170">
 <g stroke="#0f172a" stroke-width="1.8">
 <circle cx="55" cy="55" r="20" fill="#ef4444" opacity="0.75"/>
 <circle cx="120" cy="55" r="20" fill="#ef4444" opacity="0.75"/>
@@ -29,11 +29,11 @@ Frotte deux bâtons en verre : approchés l'un de l'autre, ils **se repoussent**
 <text x="55" y="62">+</text><text x="120" y="62">+</text>
 <text x="55" y="132">+</text><text x="120" y="132">−</text>
 </g>
-<g stroke="#0f172a" stroke-width="2.5" fill="none" marker-end="url(#ar)">
+<g stroke="#0f172a" stroke-width="2.5" fill="none" marker-end="url(#fleche-force)">
 <path d="M78 40 L100 40"/><path d="M97 70 L75 70"/>
 <path d="M88 110 L102 110"/><path d="M87 140 L73 140"/>
 </g>
-<defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#0f172a"/></marker></defs>
+<defs><marker id="fleche-force" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#0f172a"/></marker></defs>
 <g font-size="12" font-weight="700" fill="#0f172a">
 <text x="175" y="59">même signe → répulsion</text>
 <text x="175" y="129">signes contraires → attraction</text>
@@ -72,10 +72,10 @@ Lors du frottement, de minuscules porteurs négatifs, les **électrons**, **migr
 <svg viewBox="0 0 340 160">
 <rect x="30" y="60" width="90" height="26" rx="6" fill="#fca5a5" opacity="0.7" stroke="#0f172a" stroke-width="1.8"/>
 <rect x="220" y="60" width="90" height="26" rx="6" fill="#93c5fd" opacity="0.7" stroke="#0f172a" stroke-width="1.8"/>
-<g stroke="#1d4ed8" stroke-width="2.5" fill="none" marker-end="url(#e)">
+<g stroke="#1d4ed8" stroke-width="2.5" fill="none" marker-end="url(#fleche-electron)">
 <path d="M130 50 C 170 30, 200 30, 214 48"/>
 </g>
-<defs><marker id="e" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#1d4ed8"/></marker></defs>
+<defs><marker id="fleche-electron" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#1d4ed8"/></marker></defs>
 <g fill="#1d4ed8" stroke="#0f172a" stroke-width="1"><circle cx="150" cy="41" r="6"/><circle cx="172" cy="35" r="6"/><circle cx="194" cy="38" r="6"/></g>
 <g font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle"><text x="150" y="45">−</text><text x="172" y="39">−</text><text x="194" y="42">−</text></g>
 <g font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">

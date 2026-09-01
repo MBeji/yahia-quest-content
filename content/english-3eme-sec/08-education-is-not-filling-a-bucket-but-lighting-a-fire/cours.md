@@ -57,8 +57,8 @@ You already build comparatives and superlatives. This module works on the small 
 ::: figure The three bands of strength: a small step, a moderate one, and a large one — and the word English refuses altogether
 
 <svg viewBox="0 0 288 96">
-<defs><linearGradient id="mg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#dbeafe"/><stop offset="1" stop-color="#2563eb"/></linearGradient></defs>
-<rect x="14" y="26" width="260" height="18" rx="9" fill="url(#mg)" stroke="#1f2937" stroke-width="1.6"/>
+<defs><linearGradient id="degree-scale" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#dbeafe"/><stop offset="1" stop-color="#2563eb"/></linearGradient></defs>
+<rect x="14" y="26" width="260" height="18" rx="9" fill="url(#degree-scale)" stroke="#1f2937" stroke-width="1.6"/>
 <g stroke="#1f2937" stroke-width="1.2">
 <line x1="100" y1="26" x2="100" y2="44"/>
 <line x1="170" y1="26" x2="170" y2="44"/>
