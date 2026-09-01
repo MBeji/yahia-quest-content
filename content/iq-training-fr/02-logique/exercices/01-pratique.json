@@ -27,7 +27,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "La règle de la grille est : nombre de points = numéro de la ligne. La case « ? » est sur la 3e ligne (où il y a déjà des cases à 3 points), elle doit donc contenir 3 points → l'option c ✓. Le piège : b en met 2 (on lit le numéro de la colonne au lieu de la ligne), a en met 1 (on confond avec la 1re ligne) et d en met 4 (on a ajouté un point en trop). On applique la règle de la LIGNE : 3e ligne = 3 points.",
+      "explanation": "La règle de la grille est : nombre de points = numéro de la ligne. La case « ? » est sur la 3e ligne (où il y a déjà des cases à 3 points), elle doit donc contenir 3 points ✓. Le piège : la case à 2 points (on lit le numéro de la colonne au lieu de la ligne), celle à 1 point (on confond avec la 1re ligne) et celle à 4 points (on a ajouté un point en trop). On applique la règle de la LIGNE : 3e ligne = 3 points.",
       "difficulty": 1
     },
     {
@@ -39,7 +39,7 @@
         { "id": "d", "text": "15" }
       ],
       "correctOption": "c",
-      "explanation": "La règle est : on ajoute 3 à chaque étape (2 → 5 → 8 → 11). Après 11 vient donc 11 + 3 = 14 → l'option c ✓. Le piège : 12 ajoute seulement 1 (on a oublié le pas réel), 13 ajoute 2 (mauvais pas) et 15 ajoute 4 (un pas de trop). On mesure l'écart entre deux termes voisins (toujours +3) et on le reproduit : 11 + 3 = 14.",
+      "explanation": "La règle est : on ajoute 3 à chaque étape (2 → 5 → 8 → 11). Après 11 vient donc 11 + 3 = 14 ✓. Le piège : 12 ajoute seulement 1 (on a oublié le pas réel), 13 ajoute 2 (mauvais pas) et 15 ajoute 4 (un pas de trop). On mesure l'écart entre deux termes voisins (toujours +3) et on le reproduit : 11 + 3 = 14.",
       "difficulty": 1
     },
     {
@@ -63,7 +63,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "La transformation est un demi-tour (180°) : la flèche pleine pointée vers la droite devient une flèche pointée vers la gauche. Le triangle rouge pointe vers le HAUT ; après un demi-tour il doit pointer vers le BAS → l'option a ✓. Le piège : b pointe encore vers le haut (aucune rotation), c pointe à droite et d à gauche (rotation de 90° au lieu de 180°). Un demi-tour inverse complètement la direction : haut → bas.",
+      "explanation": "La transformation est un demi-tour (180°) : la flèche pleine pointée vers la droite devient une flèche pointée vers la gauche. Le triangle rouge pointe vers le HAUT ; après un demi-tour il doit pointer vers le BAS ✓. Le piège : le triangle qui pointe encore vers le haut (aucune rotation), et ceux qui pointent à droite et à gauche (rotation de 90° au lieu de 180°). Un demi-tour inverse complètement la direction : haut → bas.",
       "difficulty": 1
     },
     {
@@ -87,7 +87,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "La règle est : chaque flèche pointe vers le HAUT. L'intrus est l'option b ✓, la seule qui pointe vers le bas (sa pointe est en bas). On regarde uniquement où se trouve la pointe : a, c et d ont leur pointe en haut, seul b l'a en bas. Le piège est de comparer la longueur ou la position des traits ; ici seule la DIRECTION de la pointe compte.",
+      "explanation": "La règle est : chaque flèche pointe vers le HAUT. L'intrus est la flèche vers le bas ✓ (sa pointe est en bas). On regarde uniquement où se trouve la pointe : les trois autres l'ont en haut, celle-ci l'a en bas. Le piège est de comparer la longueur ou la position des traits ; ici seule la DIRECTION de la pointe compte.",
       "difficulty": 1
     },
     {
@@ -99,7 +99,7 @@
         { "id": "d", "text": "Aucune créature ne porte de chapeau." }
       ],
       "correctOption": "b",
-      "explanation": "La règle dit que TOUT Zog porte un chapeau. Donc une créature sans chapeau ne peut pas être un Zog (sinon elle en porterait un) → l'option b ✓. Le piège : a contredit directement l'observation ; c inverse la règle (« tout Zog a un chapeau » ne veut pas dire « tout chapeau appartient à un Zog ») ; d invente une affirmation qui n'a aucun rapport. On applique la règle par contraposée : pas de chapeau ⇒ pas un Zog.",
+      "explanation": "La règle dit que TOUT Zog porte un chapeau. Donc une créature sans chapeau ne peut pas être un Zog (sinon elle en porterait un) → « cette créature n'est pas un Zog » ✓. Le piège : « cette créature est un Zog » contredit directement l'observation ; « tous les porteurs de chapeau sont des Zogs » inverse la règle (« tout Zog a un chapeau » ne veut pas dire « tout chapeau appartient à un Zog ») ; d invente une affirmation qui n'a aucun rapport. On applique la règle par contraposée : pas de chapeau ⇒ pas un Zog.",
       "difficulty": 1
     },
     {
@@ -123,7 +123,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "La transformation ne change PAS la forme : elle remplit seulement l'intérieur en noir (le cercle vide devient un cercle plein). Le carré vide doit donc devenir un carré plein → l'option c ✓. Le piège : a garde le carré vide (on a oublié de remplir), d le réduit (on a changé la taille, pas le remplissage) et b change la forme en cercle (la règle agit sur le remplissage, pas sur la forme). On applique uniquement « remplir de noir » en gardant le carré.",
+      "explanation": "La transformation ne change PAS la forme : elle remplit seulement l'intérieur en noir (le cercle vide devient un cercle plein). Le carré vide doit donc devenir un carré plein ✓. Le piège : le carré resté vide (on a oublié de remplir), le carré plein mais réduit (on a changé la taille, pas le remplissage) et le cercle plein, qui change la forme (la règle agit sur le remplissage, pas sur la forme). On applique uniquement « remplir de noir » en gardant le carré.",
       "difficulty": 1
     }
   ]

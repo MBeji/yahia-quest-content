@@ -27,7 +27,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "The hidden rule is: +1 horizontal line at each step (0, 1, 2, so next is 3). The next box must contain 3 horizontal lines → option a ✓. The trap: b repeats 2 lines (we forgot to add), d returns to 1 line (we read the sequence backwards) and c does put 3 lines but VERTICAL ones (wrong direction). Induce the rule, then apply it: 2 + 1 = 3 horizontal lines.",
+      "explanation": "The hidden rule is: +1 horizontal line at each step (0, 1, 2, so next is 3). The next box must contain 3 horizontal lines ✓. The trap: the box with 2 lines repeats the previous one (we forgot to add), the one with 1 line goes backwards (we read the sequence backwards) and the one that does put 3 lines makes them VERTICAL (wrong direction). Induce the rule, then apply it: 2 + 1 = 3 horizontal lines.",
       "difficulty": 1
     },
     {
@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "Both conditions must hold at once: the figure must be filled AND have a white cross at its centre. Only option b is black and filled WITH a white cross → b ✓. The trap: c is filled but has no cross (one condition is missing), a and d carry a cross but are empty (not filled). When a rule has two conditions, both must be true — one alone is not enough.",
+      "explanation": "Both conditions must hold at once: the figure must be filled AND have a white cross at its centre. Only one figure is black and filled WITH a white cross ✓. The trap: the filled figure with no cross (one condition is missing), and the two that carry a cross but stay empty (not filled). When a rule has two conditions, both must be true — one alone is not enough.",
       "difficulty": 1
     },
     {
@@ -75,7 +75,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "The hidden rule alternates the size: big, small, big, so next is SMALL. The next circle is small → option d ✓. The trap: b brings back a big circle (we forgot the alternation), c is big AND filled (we change the fill on top of the size) and a is a square (we change the shape). Only one thing varies here: the size, which alternates.",
+      "explanation": "The hidden rule alternates the size: big, small, big, so next is SMALL. The next circle is small ✓. The trap: the big empty circle (we forgot the alternation), the big filled circle (we change the fill on top of the size) and the square (we change the shape). Only one thing varies here: the size, which alternates.",
       "difficulty": 1
     },
     {
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "In the example, the triangle pointing UP turns into a triangle pointing LEFT (a quarter turn). The bottom triangle also points up, so it must point left → option b ✓. The trap: a points right (we turned the wrong way), c points down (a half turn, two quarter turns instead of one) and d points up (we transformed nothing). Reproduce exactly the transformation shown: up → left.",
+      "explanation": "In the example, the triangle pointing UP turns into a triangle pointing LEFT (a quarter turn). The bottom triangle also points up, so it must point left ✓. The trap: the triangle pointing right (we turned the wrong way), the one pointing down (a half turn, two quarter turns instead of one) and the one pointing up (we transformed nothing). Reproduce exactly the transformation shown: up → left.",
       "difficulty": 1
     },
     {
@@ -123,7 +123,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "The rule that transforms the first pair is: \"keep the shape AND the size, but fill it with black\" (the empty square becomes a filled square of the same side; neither shape nor size changes). Applied to the empty circle (radius 20), it gives a filled circle of the SAME radius 20 → option a ✓. The trap: b keeps the right size but stays empty (we did not apply the fill), c is filled but changes the shape to a square (we copy the model's shape instead of the rule) and d is indeed filled but shrunk (radius 8 instead of 20: we added a size change that is not in the rule). Only a is a filled circle of the same size as the model.",
+      "explanation": "The rule that transforms the first pair is: \"keep the shape AND the size, but fill it with black\" (the empty square becomes a filled square of the same side; neither shape nor size changes). Applied to the empty circle (radius 20), it gives a filled circle of the SAME radius 20 ✓. The trap: the circle of the right size left empty (we did not apply the fill), the filled square (we copy the model's shape instead of the rule) and the filled but shrunken circle (radius 8 instead of 20: we added a size change that is not in the rule). Only one circle is filled AND the same size as the model.",
       "difficulty": 1
     },
     {
@@ -147,7 +147,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "The hidden relationship is: number of dots = number of sides. The triangle (3 sides) has 3 dots, the square (4 sides) has 4 dots; the pentagon has 5 sides, so 5 dots → option c ✓. The trap: b (4) copies the square's total without recounting the sides, a (3) copies the triangle's, and d (6) adds one dot too many (confusion with the hexagon). Deduce the rule, then count the pentagon's sides: 5.",
+      "explanation": "The hidden relationship is: number of dots = number of sides. The triangle (3 sides) has 3 dots, the square (4 sides) has 4 dots; the pentagon has 5 sides, so 5 dots ✓. The trap: b (4) copies the square's total without recounting the sides, a (3) copies the triangle's, and d (6) adds one dot too many (confusion with the hexagon). Deduce the rule, then count the pentagon's sides: 5.",
       "difficulty": 1
     }
   ]

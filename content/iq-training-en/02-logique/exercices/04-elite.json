@@ -27,7 +27,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "Hidden rule: the number of dots depends ONLY on the column — column 1 = 1 dot, column 2 = 2 dots, column 3 = 3 dots, the same on every row. The « ? » cell is in column 3, so 3 dots are needed. ✓ option b. Trap a (2 dots): copying the middle column. Trap c (4 dots): continuing at +1 instead of stopping at column 3. Trap d (1 dot): confusing it with the left column.",
+      "explanation": "Hidden rule: the number of dots depends ONLY on the column — column 1 = 1 dot, column 2 = 2 dots, column 3 = 3 dots, the same on every row. The « ? » cell is in column 3, so 3 dots are needed. ✓ It is the cell with 3 dots. Trap with 2 dots: copying the middle column. Trap with 4 dots: continuing at +1 instead of stopping at column 3. Trap with 1 dot: confusing it with the left column.",
       "difficulty": 3
     },
     {
@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Rule: at each step the shape gains exactly ONE side — triangle (3), square (4), pentagon (5). The next figure must therefore have 6 sides: a hexagon. ✓ option c. Trap b (pentagon, 5 sides): copying the last shape without adding a side. Trap d (octagon, 8 sides): jumping past 6. Trap a (square, 4 sides): going backward in the sequence instead of forward.",
+      "explanation": "Rule: at each step the shape gains exactly ONE side — triangle (3), square (4), pentagon (5). The next figure must therefore have 6 sides: a hexagon. ✓ It is the hexagon. Trap of the pentagon (5 sides): copying the last shape without adding a side. Trap of the octagon (8 sides): jumping past 6. Trap of the square (4 sides): going backward in the sequence instead of forward.",
       "difficulty": 3
     },
     {
@@ -75,7 +75,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Rule: from A to B the arrow turns a quarter turn (90°) clockwise — up becomes right. Apply the same clockwise rotation to C, which points LEFT: left turned a clockwise quarter turn becomes UP. ✓ option a (arrow pointing up). Trap b (pointing down): that is a counter-clockwise rotation, wrong direction. Trap d (pointing left): copying C without turning it. Trap c (pointing right): that is a 180° rotation, two quarter turns instead of one.",
+      "explanation": "Rule: from A to B the arrow turns a quarter turn (90°) clockwise — up becomes right. Apply the same clockwise rotation to C, which points LEFT: left turned a clockwise quarter turn becomes UP. ✓ It is the arrow pointing up. Trap of the arrow pointing down: that is a counter-clockwise rotation, wrong direction. Trap of the arrow pointing left: copying C without turning it. Trap of the arrow pointing right: that is a 180° rotation, two quarter turns instead of one.",
       "difficulty": 3
     },
     {
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Rule: in each figure the black dot must lie INSIDE the outline. Circle+dot inside (a), square+dot inside (b), triangle+dot inside (c) obey the rule. In (d) the dot is placed OUTSIDE the circle: that is the odd one out. ✓ option d. Trap a, b, c: these are different shapes (circle, square, triangle), but the shape of the outline is not the rule — all that matters is that the dot be inside, which makes them all compliant.",
+      "explanation": "Rule: in each figure the black dot must lie INSIDE the outline. The circle, the square and the triangle all have their dot INSIDE: they obey the rule. The fourth figure places its dot OUTSIDE the circle: that is the odd one out. ✓ It is the circle with the dot outside. Trap of the three others: these are different shapes (circle, square, triangle), but the shape of the outline is not the rule — all that matters is that the dot be inside, which makes them all compliant.",
       "difficulty": 3
     },
     {
@@ -123,7 +123,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "Rule: chain the implications. Milo is a Glip (3), and all Glips are Bromes (1), so Milo is a Brome. And no Brome is a Zarn (2), so Milo is NOT a Zarn. ✓ option b. Trap a: opposite conclusion, it contradicts (2). Trap d: false, we just deduced that Milo IS a Brome via (1). Trap c: directly contradicts (2), which says that NO Brome is a Zarn.",
+      "explanation": "Rule: chain the implications. Milo is a Glip (3), and all Glips are Bromes (1), so Milo is a Brome. And no Brome is a Zarn (2), so Milo is NOT a Zarn. ✓ « Milo is not a Zarn ». Trap « Milo is a Zarn »: opposite conclusion, it contradicts (2). Trap « Milo is not a Brome »: false, we just deduced that Milo IS a Brome via (1). Trap « some Bromes are Zarns »: directly contradicts (2), which says that NO Brome is a Zarn.",
       "difficulty": 3
     },
     {

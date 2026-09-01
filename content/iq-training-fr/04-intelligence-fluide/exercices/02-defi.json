@@ -27,7 +27,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "La règle cachée est un OU exclusif : on garde une case noircie seulement si elle est marquée dans exactement une des deux grilles. Grille 1 = haut-gauche + bas-droite ; grille 2 = haut-gauche + haut-droite. La case haut-gauche est dans les deux → elle s'annule. Restent haut-droite (grille 2 seule) et bas-droite (grille 1 seule). ✓ L'option a montre exactement ces deux points (haut-droite et bas-droite). L'option b est l'union (elle garde le point commun haut-gauche, c'est l'erreur classique du « tout additionner »). L'option d est aussi l'union, encore plus chargée. L'option c ne garde que le point commun, soit l'inverse exact de la règle (intersection). Marque un point uniquement quand il apparaît dans une seule grille.",
+      "explanation": "La règle cachée est un OU exclusif : on garde une case noircie seulement si elle est marquée dans exactement une des deux grilles. Grille 1 = haut-gauche + bas-droite ; grille 2 = haut-gauche + haut-droite. La case haut-gauche est dans les deux → elle s'annule. Restent haut-droite (grille 2 seule) et bas-droite (grille 1 seule). ✓ La bonne grille montre exactement ces deux points (haut-droite et bas-droite). Une autre donne l'union : elle garde le point commun haut-gauche, c'est l'erreur classique du « tout additionner ». Une troisième donne aussi l'union, encore plus chargée. La dernière ne garde que le point commun, soit l'inverse exact de la règle (intersection). Marque un point uniquement quand il apparaît dans une seule grille.",
       "difficulty": 1
     },
     {
@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "La règle cachée : le nombre de côtés augmente de 1 à chaque étape. Triangle (3) → carré (4) → pentagone (5) → ?. La figure suivante doit donc avoir 6 côtés : un hexagone. ✓ L'option d est un hexagone (6 côtés) : c'est la bonne. L'option b est un pentagone (5 côtés) et répète l'étape précédente sans avancer. L'option c est un carré (4 côtés), elle revient deux crans en arrière. L'option a est un heptagone (7 côtés), elle saute un cran (+2 au lieu de +1). Compte les côtés et garde l'écart constant de +1.",
+      "explanation": "La règle cachée : le nombre de côtés augmente de 1 à chaque étape. Triangle (3) → carré (4) → pentagone (5) → ?. La figure suivante doit donc avoir 6 côtés : un hexagone. ✓ L'hexagone (6 côtés) est la bonne réponse. Le pentagone (5 côtés) répète l'étape précédente sans avancer. Le carré (4 côtés) revient deux crans en arrière. L'heptagone (7 côtés) saute un cran (+2 au lieu de +1). Compte les côtés et garde l'écart constant de +1.",
       "difficulty": 1
     },
     {
@@ -75,7 +75,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "La règle cachée : deux cycles indépendants à suivre séparément. La forme alterne cercle, carré, cercle, … donc la 4e case est un CARRÉ. Le remplissage alterne vide, plein, vide, … donc la 4e case est PLEINE. La réponse combine les deux : un carré plein. ✓ L'option b (carré plein) respecte forme = carré ET remplissage = plein. L'option a (carré vide) a la bonne forme mais inverse le remplissage. L'option d (cercle plein) a le bon remplissage mais garde la forme précédente (oubli de l'alternance de forme). L'option c (cercle vide) se trompe sur les deux attributs à la fois. Le piège courant : ne suivre qu'un seul attribut ; ici il faut faire avancer la forme ET le remplissage chacun dans son cycle.",
+      "explanation": "La règle cachée : deux cycles indépendants à suivre séparément. La forme alterne cercle, carré, cercle, … donc la 4e case est un CARRÉ. Le remplissage alterne vide, plein, vide, … donc la 4e case est PLEINE. La réponse combine les deux : un carré plein. ✓ Le carré plein respecte forme = carré ET remplissage = plein. Le carré vide a la bonne forme mais inverse le remplissage. Le cercle plein a le bon remplissage mais garde la forme précédente (oubli de l'alternance de forme). Le cercle vide se trompe sur les deux attributs à la fois. Le piège courant : ne suivre qu'un seul attribut ; ici il faut faire avancer la forme ET le remplissage chacun dans son cycle.",
       "difficulty": 2
     },
     {
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "La règle cachée combine deux effets simultanés. Direction : haut → droite → bas → ?, soit +90° horaire à chaque pas, donc la suite pointe vers la GAUCHE. Points : 1, 2, 3, … donc l'étape suivante en a 4. ✓ L'option c réunit les deux : flèche vers la gauche ET 4 points. L'option b a bien 4 points mais la flèche pointe à droite (mauvaise rotation, retour en arrière). L'option a a la bonne direction (gauche) mais seulement 3 points (oubli du +1). L'option d garde 4 points mais une flèche vers le haut (saut d'un quart de tour). Applique TOUJOURS les deux transformations ensemble, jamais une seule.",
+      "explanation": "La règle cachée combine deux effets simultanés. Direction : haut → droite → bas → ?, soit +90° horaire à chaque pas, donc la suite pointe vers la GAUCHE. Points : 1, 2, 3, … donc l'étape suivante en a 4. ✓ Une seule figure réunit les deux : flèche vers la gauche ET 4 points. Celle à 4 points dont la flèche pointe à droite se trompe de rotation (retour en arrière). Celle qui a la bonne direction n'a que 3 points (oubli du +1). Celle qui garde 4 points a sa flèche vers le haut (saut d'un quart de tour). Applique TOUJOURS les deux transformations ensemble, jamais une seule.",
       "difficulty": 2
     },
     {
@@ -123,7 +123,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "La règle cachée : case 3 = case 1, dont on retire toute position déjà occupée dans la case 2. Vérifie sur la 1re ligne : case 1 occupe haut-gauche, haut-droite, bas-gauche ; case 2 occupe haut-gauche et bas-droite ; on enlève la position commune (haut-gauche) → il reste haut-droite et bas-gauche, soit 2 points, exactement la case 3. La 2e ligne confirme : {haut-gauche, haut-droite, bas-droite} moins {haut-droite} = {haut-gauche, bas-droite}, 2 points. Dernière ligne : case 1 est pleine (haut-gauche, haut-droite, bas-gauche, bas-droite), case 2 occupe haut-droite, bas-gauche, bas-droite ; on enlève ces trois → il reste UNIQUEMENT le haut-gauche. ✓ L'option b est un seul point en haut-gauche : c'est la bonne. L'option a garde 2 points (elle n'a retiré qu'une partie des positions communes). L'option d garde 3 points (elle additionne ou oublie la soustraction). L'option c met bien 1 point mais en bas-gauche, justement une position annulée par la case 2. Soustrais position par position : ne conserve que ce que la case 2 ne touche pas.",
+      "explanation": "La règle cachée : case 3 = case 1, dont on retire toute position déjà occupée dans la case 2. Vérifie sur la 1re ligne : case 1 occupe haut-gauche, haut-droite, bas-gauche ; case 2 occupe haut-gauche et bas-droite ; on enlève la position commune (haut-gauche) → il reste haut-droite et bas-gauche, soit 2 points, exactement la case 3. La 2e ligne confirme : {haut-gauche, haut-droite, bas-droite} moins {haut-droite} = {haut-gauche, bas-droite}, 2 points. Dernière ligne : case 1 est pleine (haut-gauche, haut-droite, bas-gauche, bas-droite), case 2 occupe haut-droite, bas-gauche, bas-droite ; on enlève ces trois → il reste UNIQUEMENT le haut-gauche. ✓ La bonne case ne porte qu'un seul point, en haut-gauche. Celle à 2 points n'a retiré qu'une partie des positions communes. Celle à 3 points additionne ou oublie la soustraction. Celle qui met bien 1 point le met en bas-gauche, justement une position annulée par la case 2. Soustrais position par position : ne conserve que ce que la case 2 ne touche pas.",
       "difficulty": 3
     },
     {
@@ -147,7 +147,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "La règle cachée combine deux mouvements liés. Le jeton occupe les coins dans le sens horaire : coin haut-gauche → coin haut-droite → coin bas-droite → ensuite coin bas-GAUCHE. Et le côté épaissi est toujours celui qui suit le jeton dans ce sens : haut, puis droite, puis bas, donc ensuite le côté GAUCHE. ✓ L'option a place le jeton en bas-gauche ET épaissit le côté gauche : les deux mouvements concordent. L'option b épaissit bien le côté gauche mais remet le jeton en haut-gauche (retour en arrière). L'option c laisse le jeton en bas-gauche mais épaissit le bas (le côté précédent, pas le suivant). L'option d mélange : jeton en bas-gauche mais côté haut épaissi (deux crans d'écart). Fais avancer le jeton ET le côté gras ensemble, d'un cran horaire.",
+      "explanation": "La règle cachée combine deux mouvements liés. Le jeton occupe les coins dans le sens horaire : coin haut-gauche → coin haut-droite → coin bas-droite → ensuite coin bas-GAUCHE. Et le côté épaissi est toujours celui qui suit le jeton dans ce sens : haut, puis droite, puis bas, donc ensuite le côté GAUCHE. ✓ La bonne figure place le jeton en bas-gauche ET épaissit le côté gauche : les deux mouvements concordent. Celle qui épaissit bien le côté gauche remet le jeton en haut-gauche (retour en arrière). Celle qui laisse le jeton en bas-gauche épaissit le bas (le côté précédent, pas le suivant). La dernière mélange : jeton en bas-gauche mais côté haut épaissi (deux crans d'écart). Fais avancer le jeton ET le côté gras ensemble, d'un cran horaire.",
       "difficulty": 3
     }
   ]
