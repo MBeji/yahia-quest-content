@@ -117,7 +117,7 @@ multiplier  +  as  +  many / much  ( + noun )     +  as
 </g>
 <rect x="10" y="84" width="60" height="20" rx="3" fill="#bbf7d0" stroke="#1f2937" stroke-width="1.6"/>
 <g font-size="8" fill="#1f2937">
-<text x="256" y="46">2000 D</text>
+<text x="249" y="46">2000 D</text>
 <text x="76" y="98">500 D</text>
 </g>
 <g font-size="8.5" font-weight="700" fill="#1f2937">

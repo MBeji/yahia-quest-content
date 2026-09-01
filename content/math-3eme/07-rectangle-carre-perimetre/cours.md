@@ -8,7 +8,7 @@
 
 **المستطيل** شكلٌ له **4 أضلاع** و**4 زوايا قائمة** (كلّ زواياه قائمة). أضلاعه ليست كلّها متساوية: **الأضلاع المتقابلة متساوية** فقط، فله ضلعان طويلان متساويان (**الطول**) وضلعان قصيران متساويان (**العرض**). الباب والكتاب مستطيلان.
 
-<svg viewBox="0 0 140 90" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="20" width="100" height="50" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 32 L32 32 L32 20" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="70" y="14" font-size="11" fill="currentColor" text-anchor="middle">8 cm</text><text x="10" y="48" font-size="11" fill="currentColor" text-anchor="middle">4 cm</text></svg>
+<svg viewBox="0 0 140 90" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="20" width="100" height="50" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 32 L32 32 L32 20" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="70" y="14" font-size="11" fill="currentColor" text-anchor="middle">8 cm</text><text x="15" y="48" font-size="11" fill="currentColor" text-anchor="middle">4 cm</text></svg>
 
 في هذه الصورة: **الطول** = 8 cm و**العرض** = 4 cm، والزاوية القائمة معلّمة في الرّكن.
 

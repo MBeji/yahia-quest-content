@@ -76,7 +76,7 @@ Au foyer de l'infection, et **quelle que soit la nature de l'agent pathogène**,
 <text x="180" y="44" text-anchor="middle" fill="#0f172a">= ingestion</text>
 <text x="112" y="142" text-anchor="middle" fill="#dc2626">microbe</text>
 <text x="196" y="142" text-anchor="middle" fill="#7c3aed">phagosome</text>
-<text x="322" y="142" text-anchor="middle" fill="#7c3aed">vésicules digestives</text>
+<text x="319" y="142" text-anchor="middle" fill="#7c3aed">vésicules digestives</text>
 <text x="40" y="142" text-anchor="middle" fill="#0f172a">noyau</text>
 </g>
 <g fill="none" stroke="#94a3b8" stroke-width="1.1">

@@ -8,7 +8,7 @@
 
 **المضلّع** هو **خطٌّ منكسرٌ مغلق**: عدّة خطوطٍ مستقيمةٍ متّصلة تبدأ وتنتهي عند النقطة نفسها فتُغلق الشكل.
 
-<svg viewBox="0 0 200 90"><polygon points="20,75 60,20 100,55 75,80" fill="none" stroke="currentColor" stroke-width="2.5"/><text x="22" y="88" fill="currentColor" font-size="11">مضلّع (مغلق)</text><polyline points="130,75 165,25 190,60 160,82" fill="none" stroke="currentColor" stroke-width="2.5"/><text x="120" y="20" fill="currentColor" font-size="11">ليس مضلّعًا (مفتوح)</text></svg>
+<svg viewBox="0 0 200 90"><polygon points="20,75 60,20 100,55 75,80" fill="none" stroke="currentColor" stroke-width="2.5"/><text x="22" y="88" fill="currentColor" font-size="11">مضلّع (مغلق)</text><polyline points="130,75 165,25 190,60 160,82" fill="none" stroke="currentColor" stroke-width="2.5"/><text x="102" y="20" fill="currentColor" font-size="11">ليس مضلّعًا (مفتوح)</text></svg>
 
 - **الضلع**: كلّ قطعةٍ مستقيمة من الشكل.
 - **الرأس**: كلّ نقطةٍ يلتقي عندها ضلعان (زاوية).

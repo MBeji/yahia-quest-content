@@ -36,7 +36,7 @@
 <line x1="128" y1="143" x2="98" y2="149" stroke="#2563eb" stroke-width="2.4"/>
 <polygon points="98,149 105.06,143.51 106.63,151.35" fill="#2563eb"/>
 <g font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round"><text x="262" y="30" text-anchor="middle" fill="#92400e" font-size="12.5">التعرية</text><text x="180" y="104" text-anchor="middle" fill="#2563eb" font-size="12.5">النقل</text><text x="40" y="138" text-anchor="middle" fill="#b45309" font-size="12.5">الترسّب</text></g>
-<g font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round"><text x="272" y="140" text-anchor="middle" fill="#92400e" font-size="10.5">جبل</text><text x="150" y="158" text-anchor="middle" fill="#2563eb" font-size="10.5">واد</text><text x="40" y="174" text-anchor="middle" fill="#b45309" font-size="9.5">رواسب في طبقات</text><text x="24" y="166" text-anchor="middle" fill="#2563eb" font-size="9.5">البحر / السهل</text></g>
+<g font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round"><text x="272" y="140" text-anchor="middle" fill="#92400e" font-size="10.5">جبل</text><text x="150" y="158" text-anchor="middle" fill="#2563eb" font-size="10.5">واد</text><text x="43" y="174" text-anchor="middle" fill="#b45309" font-size="9.5">رواسب في طبقات</text><text x="33" y="166" text-anchor="middle" fill="#2563eb" font-size="9.5">البحر / السهل</text></g>
 </svg>
 
 > ⚠️ لا تخلط بين هذه الظّواهر **الخارجيّة** الّتي تحدث فوق سطح الأرض، وظواهر أخرى **باطنيّة** مصدرها باطن الأرض؛ موضوعنا هنا هو ما يجري فوق السّطح فقط.
