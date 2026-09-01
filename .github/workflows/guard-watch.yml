@@ -88,7 +88,7 @@ jobs:
           # relevé par le passage SUIVANT, qui lui aboutit. Pas de boucle
           # possible : un run en cours n'a pas encore de conclusion, il ne peut
           # donc jamais se voir lui-même.
-          fields=workflowName,conclusion,createdAt,event,url
+          fields=databaseId,workflowName,conclusion,createdAt,event,url
           failed="$(gh run list --created ">=$since" --status failure --limit 200 --json "$fields")"
           timed="$(gh run list --created ">=$since" --status timed_out --limit 200 --json "$fields")"
 
@@ -100,6 +100,45 @@ jobs:
           # rien d'ostensible : elle dort, et c'est précisément le genre de
           # silence que cette garde existe pour rompre.
           all="$(printf '%s\n%s\n' "$failed" "$timed" | jq -s 'add')"
+
+          # UN RUN À ZÉRO JOB N'A RIEN ÉVALUÉ — il ne peut donc pas avoir échoué.
+          # C'est la signature des runs `pull_request` mort-nés que GitHub crée
+          # pour une PR ouverte par le `GITHUB_TOKEN` : la garde anti-boucle les
+          # termine sans lancer un seul job, et les enregistre en `failure`
+          # (privé#297 — 16 runs sur 18 au 2026-09-01).
+          #
+          # Les compter pour des échecs a produit une alarme entièrement fausse :
+          # privé#293, « 37 run(s) rouge(s) », qui orientait son lecteur vers
+          # « un secret, une variable, un jeton » alors que rien n'était cassé.
+          # Une alarme fausse qui revient toutes les 6 h finit par ne plus se
+          # lire du tout — c'est la ruine exacte de ce que ce workflow produit.
+          #
+          # On ne pose la question qu'aux `failure` : un `timed_out` a tourné,
+          # par définition. Et le SENS de l'erreur est l'INVERSE de celui
+          # d'`auto-pr.yml` : là-bas, à mesure douteuse on dispatche ; ici, à
+          # mesure douteuse on GARDE le rouge. Une garde se trompe en criant.
+          # Le passage par un fichier, et pas un heredoc : un heredoc bash colle
+          # son délimiteur en colonne 0, ce qui SORT du scalaire YAML — le
+          # workflow ne se parse alors même plus.
+          liste="$RUNNER_TEMP/garde-runs.txt"
+          echo "$all" | jq -r '.[] | "\(.databaseId) \(.conclusion)"' > "$liste"
+
+          # On construit la liste de ce qu'on ÉCARTE, pas de ce qu'on garde : si
+          # quoi que ce soit tourne mal ici, la liste reste vide et l'alarme part
+          # entière. Une garde ne doit jamais se taire par accident.
+          drop=""
+          while read -r id concl; do
+            [ -n "${id:-}" ] || continue
+            [ "${concl:-}" = "failure" ] || continue
+            jobs="$(gh api "repos/$GH_REPO/actions/runs/$id/jobs" --jq '.total_count' 2>/dev/null || echo 1)"
+            case "${jobs:-1}" in ''|*[!0-9]*) jobs=1 ;; esac
+            [ "$jobs" -eq 0 ] || continue
+            echo "  run $id écarté — zéro job, il n'a rien évalué (privé#297)."
+            drop="$drop $id"
+          done < "$liste"
+          if [ -n "$drop" ]; then
+            all="$(echo "$all" | jq --arg drop "$drop" '($drop | split(" ") | map(select(length > 0) | tonumber)) as $d | [ .[] | select(.databaseId | IN($d[]) | not) ]')"
+          fi
 
           count="$(echo "$all" | jq 'length')"
           echo "count=$count" >> "$GITHUB_OUTPUT"

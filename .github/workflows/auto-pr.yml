@@ -49,21 +49,42 @@ name: Auto PR (corpus)
 #      raison), et la PR dormirait. C'est pour ce filet que les deux workflows
 #      ont gagné un `workflow_dispatch`.
 #
-#      ⚠️ MAIS LA DISPATCH INCONDITIONNELLE COÛTAIT CHER (privé#280, corrigé le
-#      2026-09-01). Ce commentaire affirmait qu'une PR ouverte par le
-#      `GITHUB_TOKEN` n'émet PAS d'événement `pull_request` (garde anti-boucle
-#      de GitHub). C'était vrai à l'écriture ; ça ne l'est plus ici. Mesuré sur
-#      cinq PR : l'événement EST émis, donc chaque PR lançait DEUX runs sur le
-#      même SHA, qui tombaient dans le même groupe de concurrence
-#      (`content-ci-${{ github.ref }}`, `cancel-in-progress: true`). L'un annulait
-#      l'autre, et GitHub enregistre un run annulé en `failure` — un rouge à
-#      ZÉRO job, indistinguable d'un vrai gate rouge sur `gh pr checks`. Deux PR
-#      ont ainsi mergé avec trois checks rouges, ce qui contredisait l'invariant
-#      d'`automerge` écrit dans CLAUDE.md.
+#      ⚠️ CETTE DISPATCH A ÉTÉ RETIRÉE À TORT, PUIS RENDUE (privé#280 → #291 → #297).
+#      privé#280 a lu les deux runs d'un même SHA comme un DOUBLON qui s'annulait
+#      lui-même ; privé#291 en a tiré une garde — « ne dispatcher que si le SHA n'a
+#      pas déjà un run ». La chaîne s'est arrêtée net le jour même (privé#297) :
+#      plus aucune PR poussée n'a reçu ses checks requis.
 #
-#      D'où la garde de la dernière étape : on regarde si le SHA a déjà un run,
-#      et on ne dispatche que s'il n'en a pas. Le filet reste — si l'événement
-#      cesse d'être émis, la dispatch repart toute seule.
+#      La prémisse était fausse, et elle se MESURE. Sur les 37 derniers runs de
+#      `content-ci` / `pin-check`, croisés avec leur nombre de jobs :
+#
+#        run                              | jobs | conclusion | n
+#        ---------------------------------|------|------------|----
+#        `pull_request`, acteur = bot     |   0  | failure    | 16
+#        `pull_request`, acteur = humain  |   1  | success    |  2
+#        `workflow_dispatch`              |   1  | success    | 15
+#
+#      La garde anti-boucle du `GITHUB_TOKEN` s'applique donc TOUJOURS : une PR
+#      ouverte par ce workflow ne fait pas tourner ses checks. Ce qui a changé
+#      depuis l'en-tête d'origine, c'est la FORME du refus — GitHub laisse
+#      désormais une trace de run (zéro job, `failure`) là où il ne créait rien.
+#      Il n'y a jamais eu de course ni d'annulation : le rouge à zéro job de
+#      privé#280 est le RÉSIDU de la garde anti-boucle, présent avec ou sans
+#      dispatch. La dispatch n'était pas le doublon — elle était le seul run qui
+#      évaluait quoi que ce soit.
+#
+#      D'où la garde d'aujourd'hui, qui pose la question d'ÉTAT et non celle de
+#      l'événement : « ce SHA porte-t-il déjà un run qui a VRAIMENT tourné ? »,
+#      mesurée par son nombre de jobs — un job est exactement ce qui matérialise
+#      un check run, c'est-à-dire le verdict nommé qu'`automerge.yml` attend
+#      (`repos/:repo/commits/:sha/check-runs`). Les deux workflows posent enfin
+#      la même question. Sur une PR ouverte par le bot la réponse est non, on
+#      dispatche, et le comportement d'avant privé#291 est rendu ; sur un SHA
+#      repoussé par un humain (`synchronize` tourne pour de vrai) la réponse est
+#      oui, et la garde évite le seul doublon qui pouvait exister.
+#
+#      Le SENS de l'erreur est choisi : à mesure douteuse, on dispatche. Un run
+#      de trop est du bruit ; un run manquant arrête la chaîne entière.
 #
 #   3. Pas de corps depuis `.github/pull_request_template.md` : ce dépôt n'en
 #      a pas. Le corps est écrit ici.
@@ -218,25 +239,39 @@ jobs:
       # avant de dispatcher, pas une :
       #   - on ne dispatche que si on vient d'ouvrir la PR (une session qui fait
       #     son `gh pr create` a déjà l'événement) ;
-      #   - et seulement si le SHA n'a pas DÉJÀ un run pour ce workflow. C'est la
-      #     correction de privé#280 : l'événement `pull_request` est bien émis
-      #     ici, donc la dispatch inconditionnelle créait un doublon qui annulait
-      #     son jumeau et laissait un `failure` à zéro job sur la PR.
-      # L'ordre compte : on LAISSE d'abord à l'événement le temps de matérialiser
-      # ses runs, sinon on ne verrait jamais rien et on dispatcherait toujours.
+      #   - et seulement si le SHA porte déjà un run qui a RÉELLEMENT tourné.
+      #     Voir l'en-tête : « existe-t-il un run ? » est la mauvaise question,
+      #     celle qui a gelé la chaîne (privé#297). Un run ouvert par le
+      #     `GITHUB_TOKEN` existe et n'évalue rien — zéro job, `failure`.
       - name: Lancer les checks sur la branche
         if: steps.pr.outputs.created == 'true'
         run: |
           set -uo pipefail
-          # Les runs de l'événement `pull_request` apparaissent avec quelques
-          # secondes de retard. Décider avant qu'ils existent reviendrait à
-          # dispatcher à tous les coups — c'est-à-dire à ne rien corriger.
+          # Laisser à un éventuel run `pull_request` le temps de matérialiser ses
+          # jobs. Décider avant qu'ils existent reviendrait à dispatcher à tous
+          # les coups — c'est-à-dire à ne jamais voir le seul vrai doublon.
           sleep 30
           failed=0
           for wf in content-ci.yml pin-check.yml; do
-            existing="$(gh run list --repo "$REPO" --workflow "$wf" --commit "$HEAD_SHA" --json databaseId --jq 'length' 2>/dev/null || echo 0)"
-            if [ "${existing:-0}" -gt 0 ]; then
-              echo "$wf : $existing run(s) déjà sur $HEAD_SHA — pas de dispatch (privé#280)."
+            # Un job est ce qui matérialise un check run : compter les jobs, c'est
+            # demander « ce SHA a-t-il un verdict NOMMÉ pour ce workflow ? », la
+            # question même que pose `automerge.yml`. Un run à zéro job n'a rien
+            # évalué : il compte pour ABSENT.
+            real=0
+            for id in $(gh run list --repo "$REPO" --workflow "$wf" --commit "$HEAD_SHA" \
+                          --json databaseId --jq '.[].databaseId' 2>/dev/null || true); do
+              jobs="$(gh api "repos/$REPO/actions/runs/$id/jobs" --jq '.total_count' 2>/dev/null || echo 0)"
+              case "${jobs:-0}" in
+                ''|*[!0-9]*) jobs=0 ;;
+              esac
+              if [ "$jobs" -gt 0 ]; then
+                real=$((real + 1))
+              else
+                echo "$wf : run $id ignoré — zéro job, il n'a rien évalué (privé#297)."
+              fi
+            done
+            if [ "$real" -gt 0 ]; then
+              echo "$wf : $real run(s) RÉEL(s) sur $HEAD_SHA — pas de dispatch (privé#280)."
               continue
             fi
             if gh workflow run "$wf" --repo "$REPO" --ref "$BRANCH"; then

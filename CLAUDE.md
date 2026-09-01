@@ -47,10 +47,20 @@
   liens). `content-audit.yml` (garde pédagogique) tourne mer. + sam. et exige le secret
   `CLAUDE_CODE_OAUTH_TOKEN` valide.
 - **Ouverture des PR** : `.github/workflows/auto-pr.yml` (depuis #226) ouvre la PR de **toute**
-  branche poussée, puis **dispatche ses checks**. Cette dispatch n'est pas un confort : une PR
-  ouverte par le `GITHUB_TOKEN` n'émet **pas** d'événement `pull_request`, donc `content-ci` et
-  `pin-check` ne démarreraient jamais sur elle — et `automerge` refusant, à raison, de merger un
-  SHA sans aucun check run, la PR dormirait. D'où le `workflow_dispatch` de ces deux workflows.
+  branche poussée, puis **dispatche ses checks**. Cette dispatch n'est pas un confort : la garde
+  anti-boucle de GitHub empêche une PR ouverte par le `GITHUB_TOKEN` de faire tourner ses checks,
+  donc `content-ci` et `pin-check` ne démarreraient jamais sur elle — et `automerge` refusant, à
+  raison, de merger un SHA sans aucun check run, la PR dormirait. D'où le `workflow_dispatch` de
+  ces deux workflows.
+  ⚠️ **Ce refus laisse une trace trompeuse, et elle a déjà coûté trois fois.** GitHub enregistre
+  quand même un run `pull_request` — qui sort à **ZÉRO job**, en `failure`. Il n'a rien évalué,
+  mais il ressemble à un gate rouge sur `gh pr checks`, et à « un run existe » pour qui compte les
+  runs. #280 y a lu un doublon qui s'annulait (il n'y a jamais eu de course) ; #291 en a tiré une
+  garde qui a **gelé la chaîne entière** une journée (#297) ; #293 a compté 37 de ces fantômes
+  comme des « gardes en échec ». Un seul test tranche, toujours le même :
+  `gh run view <id> --json jobs --jq '.jobs | length'` — **0 ⇒ ce run n'a rien évalué.**
+  C'est le critère que posent désormais `auto-pr.yml` (dispatcher ou non) et `guard-watch.yml`
+  (alarmer ou non).
   Sans ce ramassage, une session qui pousse puis s'arrête laisse sa branche sans PR :
   **8 branches `claude/*` étaient dans ce cas au 2026-08-24, jusqu'à cinq semaines.**
   ⚠️ Il exige le réglage `Settings > Actions > General > Workflow permissions >`
