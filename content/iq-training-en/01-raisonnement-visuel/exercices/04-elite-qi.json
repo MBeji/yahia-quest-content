@@ -27,7 +27,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "Hidden rule: a vertical reflection (left-right mirror) flips the horizontal axis and keeps the vertical axis. The L-shaped figure has its corner at the bottom left and the red ball at the top left; after the mirror, the corner moves to the bottom right and the ball stays AT THE TOP, on the right. ✓ option b. Trap a: it is the starting figure unchanged (no mirror). Trap c: it is a top-bottom flip, not left-right (the ball would go down). Trap d: it is a 180° rotation, which flips BOTH axes at once.",
+      "explanation": "Hidden rule: a vertical reflection (left-right mirror) flips the horizontal axis and keeps the vertical axis. The L-shaped figure has its corner at the bottom left and the red ball at the top left; after the mirror, the corner moves to the bottom right and the ball stays AT THE TOP, on the right. ✓ It is the figure whose corner is at the bottom right and whose ball is at the top right. The traps: the starting figure unchanged (no mirror); the top-bottom flip instead of left-right (the ball goes down there); and the 180° rotation, which flips BOTH axes at once.",
       "difficulty": 3
     },
     {
@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Rule: we add up the cubes column by column, depth 1 (nothing hidden behind, as indicated). Left column = 3 stacked cubes, middle column = 2, right column = 1. Total = 3 + 2 + 1 = 6. ✓ option c. Trap a (5): we forgot a cube of one column. Trap b (9): we assumed a full 3×3 square when it is a staircase. Trap d (10): we added a hidden layer behind, but the depth is 1.",
+      "explanation": "Rule: we add up the cubes column by column, depth 1 (nothing hidden behind, as indicated). Left column = 3 stacked cubes, middle column = 2, right column = 1. Total = 3 + 2 + 1 = 6. ✓ The answer is 6. Trap 5: we forgot a cube of one column. Trap 9: we assumed a full 3×3 square when it is a staircase. Trap 10: we added a hidden layer behind, but the depth is 1.",
       "difficulty": 3
     },
     {
@@ -75,7 +75,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Rule: a valid cube net has 6 squares arranged so that none overlap when folded; the great classic is the cross (a central square with one square on each side + one extending it). Option a is this elongated T-cross: a column of 4 squares with two squares on the sides of the 3rd one — it folds perfectly. ✓ option a. Trap b: it forms a 2×2 block plus two squares in a staircase; when folded, two faces overlap and one is missing. Trap d: it is a full 3×2 rectangle, which folds into an open box (two faces overlap, no closed cube). Trap c: a 4+2 configuration where the two bottom squares are misplaced, so two faces land in the same spot.",
+      "explanation": "Rule: a valid cube net has 6 squares arranged so that none overlap when folded; the great classic is the cross (a central square with one square on each side + one extending it). ✓ The right net is this elongated T-cross: a column of 4 squares with two squares on the sides of the 3rd one — it folds perfectly. The traps: the 2×2 block extended by two squares in a staircase (when folded, two faces overlap and one is missing); the full 3×2 rectangle, which folds into an open box (two faces overlap, no closed cube); and the 4+2 configuration where the two bottom squares are misplaced, so two faces land in the same spot.",
       "difficulty": 3
     },
     {
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Rule: the overlay keeps ALL the lines of both figures, without adding or removing anything. We have a square AND an X cross (two diagonals); the result is therefore the square crossed by its two diagonals forming an X. ✓ option d. Trap a: it is the square alone, we forgot the cross. Trap c: a single diagonal, we lost half of the X. Trap b: we replaced the square with a circle, whereas the overlay never turns one shape into another.",
+      "explanation": "Rule: the overlay keeps ALL the lines of both figures, without adding or removing anything. We have a square AND an X cross (two diagonals); the result is therefore the square crossed by its two diagonals forming an X. ✓ It is the square crossed by both of its diagonals. The traps: the square alone, where we forgot the cross; the square with a single diagonal, where we lost half of the X; and the circle crossed by an X, where we replaced the square with a circle, whereas the overlay never turns one shape into another.",
       "difficulty": 3
     },
     {
@@ -123,7 +123,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "Rule: 90° clockwise rotation + adding a dot. C points DOWN; after a clockwise quarter-turn, down goes to the LEFT, so the arrow points left, and we add the dot. ✓ option b (arrow pointing left + dot). Trap c: we forgot to turn (arrow still vertical) while adding the dot. Trap d: clockwise rotation but arrow pointing RIGHT — that is the direction error (down turning clockwise does not go right). Trap a: arrow pointing right AND dot forgotten, two errors combined.",
+      "explanation": "Rule: 90° clockwise rotation + adding a dot. C points DOWN; after a clockwise quarter-turn, down goes to the LEFT, so the arrow points left, and we add the dot. ✓ It is the arrow pointing left with its dot. The traps: the still-vertical arrow with a dot, where we forgot to turn; the arrow pointing RIGHT with a dot, which is the direction error (down turning clockwise does not go right); and the arrow pointing right with no dot, two errors combined.",
       "difficulty": 3
     },
     {
@@ -147,7 +147,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Rule: the needle starting from the centre turns 90° clockwise at each cell. Cell 1: needle to the RIGHT. Cell 2: a clockwise quarter-turn → DOWN. Cell 3: another quarter-turn → LEFT. Cell 4 (the ?): a final quarter-turn → UP. ✓ option c (needle pointing up). Trap a: back to the right, as if returning to the start instead of continuing. Trap d: needle pointing down, we skipped a rotation step. Trap b: needle pointing left, we repeated cell 3 without turning.",
+      "explanation": "Rule: the needle starting from the centre turns 90° clockwise at each cell. Cell 1: needle to the RIGHT. Cell 2: a clockwise quarter-turn → DOWN. Cell 3: another quarter-turn → LEFT. Cell 4 (the ?): a final quarter-turn → UP. ✓ It is the needle pointing up. The traps: the needle pointing right, as if returning to the start instead of continuing; the needle pointing down, where we skipped a rotation step; and the needle pointing left, which repeats cell 3 without turning.",
       "difficulty": 3
     }
   ]

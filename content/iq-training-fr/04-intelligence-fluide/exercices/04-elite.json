@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Règle cachée : le symbole code le nombre de cercles superposés à cet endroit. La légende le confirme — une zone à 1 cercle porte un trait, une zone à 2 cercles porte une croix. La zone centrale appartient aux TROIS cercles à la fois, donc elle porte l'étoile. ✓ option c (l'étoile). Piège a : le trait vaut pour 1 cercle seulement. Piège b : la croix vaut pour 2 cercles, pas 3. Piège d : le point n'est pas dans le code de la règle (symbole inventé).",
+      "explanation": "Règle cachée : le symbole code le nombre de cercles superposés à cet endroit. La légende le confirme — une zone à 1 cercle porte un trait, une zone à 2 cercles porte une croix. La zone centrale appartient aux TROIS cercles à la fois, donc elle porte l'étoile. ✓ C'est l'étoile. Piège du trait : il vaut pour 1 cercle seulement. Piège de la croix : elle vaut pour 2 cercles, pas 3. Piège du point : il n'est pas dans le code de la règle (symbole inventé).",
       "difficulty": 3
     },
     {
@@ -75,7 +75,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Règle cachée : c'est un « ou exclusif » (XOR). Une case survit seulement si elle a une pastille dans exactement UNE des deux grilles. Grille 1 = coin haut-gauche, coin haut-droit, centre-bas. Grille 2 = coin haut-gauche, centre-bas, coin bas-droit. Le coin haut-gauche est dans les DEUX → s'annule. Le centre-bas est dans les DEUX → s'annule. Restent : le coin haut-droit (grille 1 seule) et le coin bas-droit (grille 2 seule). Résultat = exactement deux pastilles : haut-droit et bas-droit, et rien d'autre. ✓ option a (haut-droit + bas-droit). Piège b : on a gardé l'INTERSECTION (haut-gauche + centre-bas), c'est-à-dire l'inverse de la règle — on a conservé les cases communes au lieu de les annuler. Piège c : on a fait l'UNION des deux grilles (haut-gauche, haut-droit, centre-bas, bas-droit), sans rien annuler. Piège d : une seule pastille au centre, position inventée hors des deux grilles.",
+      "explanation": "Règle cachée : c'est un « ou exclusif » (XOR). Une case survit seulement si elle a une pastille dans exactement UNE des deux grilles. Grille 1 = coin haut-gauche, coin haut-droit, centre-bas. Grille 2 = coin haut-gauche, centre-bas, coin bas-droit. Le coin haut-gauche est dans les DEUX → s'annule. Le centre-bas est dans les DEUX → s'annule. Restent : le coin haut-droit (grille 1 seule) et le coin bas-droit (grille 2 seule). Résultat = exactement deux pastilles : haut-droit et bas-droit, et rien d'autre. ✓ C'est la grille haut-droit + bas-droit. Piège de l'INTERSECTION (haut-gauche + centre-bas) : c'est l'inverse de la règle — on a conservé les cases communes au lieu de les annuler. Piège de l'UNION (haut-gauche, haut-droit, centre-bas, bas-droit) : on n'a rien annulé. Piège de la pastille unique au centre : position inventée hors des deux grilles.",
       "difficulty": 3
     },
     {
@@ -87,7 +87,7 @@
         { "id": "d", "text": "10" }
       ],
       "correctOption": "b",
-      "explanation": "Règle cachée : chaque terme est la SOMME des deux précédents (suite de type Fibonacci), pas un écart constant. 2 ; 3 ; 2+3=5 ; 3+5=8 ; donc le suivant = 5+8 = 13. ✓ option b (13). Piège a (11) : on a additionné un écart constant de +3 (8+3), en confondant avec une suite arithmétique. Piège d (10) : on a fait 8+2 (mauvais couple de termes). Piège c (16) : on a doublé le dernier terme (8×2), règle inventée.",
+      "explanation": "Règle cachée : chaque terme est la SOMME des deux précédents (suite de type Fibonacci), pas un écart constant. 2 ; 3 ; 2+3=5 ; 3+5=8 ; donc le suivant = 5+8 = 13. ✓ option 13. Piège 11 : on a additionné un écart constant de +3 (8+3), en confondant avec une suite arithmétique. Piège 10 : on a fait 8+2 (mauvais couple de termes). Piège 16 : on a doublé le dernier terme (8×2), règle inventée.",
       "difficulty": 3
     },
     {
@@ -111,7 +111,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Règle cachée : deux transformations simultanées. (1) Rotation : la barre tourne d'un quart de tour horaire. (2) Quantité : le nombre de points est divisé par deux. Pour C, la barre est HORIZONTALE ; un quart de tour horaire la rend VERTICALE. Les points passent de 4 à 4÷2 = 2. ✓ option a : barre verticale + 2 points. Piège b : on a oublié de tourner la barre (encore horizontale) tout en divisant bien les points. Piège d : barre non tournée ET on a trop réduit (1 point au lieu de 2). Piège c : barre bien tournée mais on a gardé 4 points (oubli de la division).",
+      "explanation": "Règle cachée : deux transformations simultanées. (1) Rotation : la barre tourne d'un quart de tour horaire. (2) Quantité : le nombre de points est divisé par deux. Pour C, la barre est HORIZONTALE ; un quart de tour horaire la rend VERTICALE. Les points passent de 4 à 4÷2 = 2. ✓ C'est la barre verticale avec 2 points. Piège de la barre restée horizontale : on a oublié de la tourner, tout en divisant bien les points. Piège de la barre non tournée à 1 point : on a en plus trop réduit. Piège de la barre bien tournée à 4 points : on a oublié la division.",
       "difficulty": 3
     },
     {
@@ -135,7 +135,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Règle cachée : côtés = points + 1 (l'exemple le montre : un triangle a 3 côtés et contient 2 points, et 3 = 2 + 1). On teste chaque option. Option d : carré = 4 côtés, 3 points → 4 = 3 + 1 ✓. Option d respecte la règle. Piège b : carré (4 côtés) avec 2 points → il faudrait 3 points (4 = 2+1 est faux). Piège c : pentagone (5 côtés) avec 3 points → il faudrait 4 points. Piège a : pentagone (5 côtés) avec 1 point → il faudrait 4 points. La clé est de relier deux attributs (côtés et points) par une seule formule, pas de les juger séparément.",
+      "explanation": "Règle cachée : côtés = points + 1 (l'exemple le montre : un triangle a 3 côtés et contient 2 points, et 3 = 2 + 1). On teste chaque figure. Le carré à 4 côtés qui contient 3 points : 4 = 3 + 1 ✓ Une seule figure respecte la règle. Piège du carré (4 côtés) avec 2 points : il en faudrait 3 (4 = 2+1 est faux). Piège du pentagone (5 côtés) avec 3 points : il en faudrait 4. Piège du pentagone (5 côtés) avec 1 point : il en faudrait 4. La clé est de relier deux attributs (côtés et points) par une seule formule, pas de les juger séparément.",
       "difficulty": 3
     }
   ]

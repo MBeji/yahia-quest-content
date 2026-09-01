@@ -27,7 +27,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "The hidden rule is an exclusive OR: we keep a filled cell only if it is marked in exactly one of the two grids. Grid 1 = top-left + bottom-right; grid 2 = top-left + top-right. The top-left cell is in both → it cancels out. Top-right (grid 2 only) and bottom-right (grid 1 only) remain. ✓ Option a shows exactly these two dots (top-right and bottom-right). Option b is the union (it keeps the shared top-left dot, the classic \"add everything up\" mistake). Option d is also the union, even more crowded. Option c keeps only the shared dot, the exact opposite of the rule (intersection). Mark a dot only when it appears in a single grid.",
+      "explanation": "The hidden rule is an exclusive OR: we keep a filled cell only if it is marked in exactly one of the two grids. Grid 1 = top-left + bottom-right; grid 2 = top-left + top-right. The top-left cell is in both → it cancels out. Top-right (grid 2 only) and bottom-right (grid 1 only) remain. ✓ The right grid shows exactly these two dots (top-right and bottom-right). Another gives the union: it keeps the shared top-left dot, the classic \"add everything up\" mistake. A third also gives the union, even more crowded. The last keeps only the shared dot, the exact opposite of the rule (intersection). Mark a dot only when it appears in a single grid.",
       "difficulty": 1
     },
     {
@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "The hidden rule: the number of sides increases by 1 at each step. Triangle (3) → square (4) → pentagon (5) → ?. So the next figure must have 6 sides: a hexagon. ✓ Option d is a hexagon (6 sides): it is the right one. Option b is a pentagon (5 sides) and repeats the previous step without advancing. Option c is a square (4 sides); it steps back two notches. Option a is a heptagon (7 sides); it skips a notch (+2 instead of +1). Count the sides and keep the constant gap of +1.",
+      "explanation": "The hidden rule: the number of sides increases by 1 at each step. Triangle (3) → square (4) → pentagon (5) → ?. So the next figure must have 6 sides: a hexagon. ✓ The hexagon (6 sides) is the right answer. The pentagon (5 sides) repeats the previous step without advancing. The square (4 sides) steps back two notches. The heptagon (7 sides) skips a notch (+2 instead of +1). Count the sides and keep the constant gap of +1.",
       "difficulty": 1
     },
     {
@@ -75,7 +75,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "The hidden rule: two independent cycles to track separately. The shape alternates circle, square, circle, … so the 4th box is a SQUARE. The fill alternates empty, filled, empty, … so the 4th box is FILLED. The answer combines both: a filled square. ✓ Option b (filled square) respects shape = square AND fill = filled. Option a (empty square) has the right shape but reverses the fill. Option d (filled circle) has the right fill but keeps the previous shape (forgetting the shape alternation). Option c (empty circle) gets both attributes wrong at once. The common trap: tracking only one attribute; here you must advance the shape AND the fill, each in its own cycle.",
+      "explanation": "The hidden rule: two independent cycles to track separately. The shape alternates circle, square, circle, … so the 4th box is a SQUARE. The fill alternates empty, filled, empty, … so the 4th box is FILLED. The answer combines both: a filled square. ✓ The filled square respects shape = square AND fill = filled. The empty square has the right shape but reverses the fill. The filled circle has the right fill but keeps the previous shape (forgetting the shape alternation). The empty circle gets both attributes wrong at once. The common trap: tracking only one attribute; here you must advance the shape AND the fill, each in its own cycle.",
       "difficulty": 2
     },
     {
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "The hidden rule combines two simultaneous effects. Direction: up → right → down → ?, that is +90° clockwise at each step, so the next one points LEFT. Dots: 1, 2, 3, … so the next step has 4. ✓ Option c brings both together: arrow pointing left AND 4 dots. Option b does have 4 dots but the arrow points right (wrong rotation, a step backwards). Option a has the right direction (left) but only 3 dots (forgetting the +1). Option d keeps 4 dots but an arrow pointing up (skipping a quarter turn). ALWAYS apply both transformations together, never just one.",
+      "explanation": "The hidden rule combines two simultaneous effects. Direction: up → right → down → ?, that is +90° clockwise at each step, so the next one points LEFT. Dots: 1, 2, 3, … so the next step has 4. ✓ Only one figure brings both together: arrow pointing left AND 4 dots. The one with 4 dots whose arrow points right has the wrong rotation (a step backwards). The one with the right direction has only 3 dots (forgetting the +1). The one that keeps 4 dots has its arrow pointing up (skipping a quarter turn). ALWAYS apply both transformations together, never just one.",
       "difficulty": 2
     },
     {
@@ -123,7 +123,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "The hidden rule: box 3 = box 1, with every position already occupied in box 2 removed. Check it on the 1st row: box 1 occupies top-left, top-right, bottom-left; box 2 occupies top-left and bottom-right; remove the shared position (top-left) → top-right and bottom-left remain, that is 2 dots, exactly box 3. The 2nd row confirms it: {top-left, top-right, bottom-right} minus {top-right} = {top-left, bottom-right}, 2 dots. Last row: box 1 is full (top-left, top-right, bottom-left, bottom-right), box 2 occupies top-right, bottom-left, bottom-right; remove these three → ONLY top-left remains. ✓ Option b is a single dot at top-left: it is the right one. Option a keeps 2 dots (it removed only part of the shared positions). Option d keeps 3 dots (it adds up or forgets the subtraction). Option c does put 1 dot but at bottom-left, precisely a position cancelled by box 2. Subtract position by position: keep only what box 2 does not touch.",
+      "explanation": "The hidden rule: box 3 = box 1, with every position already occupied in box 2 removed. Check it on the 1st row: box 1 occupies top-left, top-right, bottom-left; box 2 occupies top-left and bottom-right; remove the shared position (top-left) → top-right and bottom-left remain, that is 2 dots, exactly box 3. The 2nd row confirms it: {top-left, top-right, bottom-right} minus {top-right} = {top-left, bottom-right}, 2 dots. Last row: box 1 is full (top-left, top-right, bottom-left, bottom-right), box 2 occupies top-right, bottom-left, bottom-right; remove these three → ONLY top-left remains. ✓ The right box carries a single dot, at top-left. The one with 2 dots removed only part of the shared positions. The one with 3 dots adds up or forgets the subtraction. The one that does put 1 dot puts it at bottom-left, precisely a position cancelled by box 2. Subtract position by position: keep only what box 2 does not touch.",
       "difficulty": 3
     },
     {
@@ -147,7 +147,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "The hidden rule combines two linked movements. The token occupies the corners clockwise: top-left corner → top-right corner → bottom-right corner → next is the bottom-LEFT corner. And the thickened side is always the one that follows the token in this direction: top, then right, then bottom, so next is the LEFT side. ✓ Option a places the token at bottom-left AND thickens the left side: both movements agree. Option b does thicken the left side but puts the token back at top-left (a step backwards). Option c leaves the token at bottom-left but thickens the bottom (the previous side, not the next). Option d mixes them up: token at bottom-left but the top side thickened (two notches apart). Advance the token AND the bold side together, one notch clockwise.",
+      "explanation": "The hidden rule combines two linked movements. The token occupies the corners clockwise: top-left corner → top-right corner → bottom-right corner → next is the bottom-LEFT corner. And the thickened side is always the one that follows the token in this direction: top, then right, then bottom, so next is the LEFT side. ✓ The right figure places the token at bottom-left AND thickens the left side: both movements agree. The one that does thicken the left side puts the token back at top-left (a step backwards). The one that leaves the token at bottom-left thickens the bottom (the previous side, not the next). The last one mixes them up: token at bottom-left but the top side thickened (two notches apart). Advance the token AND the bold side together, one notch clockwise.",
       "difficulty": 3
     }
   ]

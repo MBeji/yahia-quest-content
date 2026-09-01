@@ -27,7 +27,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "Règle cachée : le nombre de points dépend UNIQUEMENT de la colonne — colonne 1 = 1 point, colonne 2 = 2 points, colonne 3 = 3 points, identique sur chaque ligne. La case « ? » est en colonne 3, il faut donc 3 points. ✓ option b. Piège a (2 points) : on a recopié la colonne du milieu. Piège c (4 points) : on a continué à +1 au lieu de s'arrêter à la colonne 3. Piège d (1 point) : on a confondu avec la colonne de gauche.",
+      "explanation": "Règle cachée : le nombre de points dépend UNIQUEMENT de la colonne — colonne 1 = 1 point, colonne 2 = 2 points, colonne 3 = 3 points, identique sur chaque ligne. La case « ? » est en colonne 3, il faut donc 3 points. ✓ C'est la case à 3 points. Piège à 2 points : on a recopié la colonne du milieu. Piège à 4 points : on a continué à +1 au lieu de s'arrêter à la colonne 3. Piège à 1 point : on a confondu avec la colonne de gauche.",
       "difficulty": 3
     },
     {
@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Règle : à chaque étape la forme gagne exactement UN côté — triangle (3), carré (4), pentagone (5). La figure suivante doit donc avoir 6 côtés : un hexagone. ✓ option c. Piège b (pentagone, 5 côtés) : on a recopié la dernière forme sans ajouter de côté. Piège d (octogone, 8 côtés) : on a sauté au-delà de 6. Piège a (carré, 4 côtés) : on a reculé dans la suite au lieu d'avancer.",
+      "explanation": "Règle : à chaque étape la forme gagne exactement UN côté — triangle (3), carré (4), pentagone (5). La figure suivante doit donc avoir 6 côtés : un hexagone. ✓ C'est l'hexagone. Piège du pentagone (5 côtés) : on a recopié la dernière forme sans ajouter de côté. Piège de l'octogone (8 côtés) : on a sauté au-delà de 6. Piège du carré (4 côtés) : on a reculé dans la suite au lieu d'avancer.",
       "difficulty": 3
     },
     {
@@ -75,7 +75,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Règle : de A à B la flèche tourne d'un quart de tour (90°) dans le sens horaire — le haut devient la droite. On applique la même rotation horaire à C, qui pointe vers la GAUCHE : la gauche tournée d'un quart horaire devient le HAUT. ✓ option a (flèche vers le haut). Piège b (vers le bas) : c'est une rotation antihoraire, mauvais sens. Piège d (vers la gauche) : on a recopié C sans le faire tourner. Piège c (vers la droite) : c'est une rotation de 180°, soit deux quarts de tour au lieu d'un.",
+      "explanation": "Règle : de A à B la flèche tourne d'un quart de tour (90°) dans le sens horaire — le haut devient la droite. On applique la même rotation horaire à C, qui pointe vers la GAUCHE : la gauche tournée d'un quart horaire devient le HAUT. ✓ C'est la flèche vers le haut. Piège de la flèche vers le bas : c'est une rotation antihoraire, mauvais sens. Piège de la flèche vers la gauche : on a recopié C sans le faire tourner. Piège de la flèche vers la droite : c'est une rotation de 180°, soit deux quarts de tour au lieu d'un.",
       "difficulty": 3
     },
     {
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Règle : dans chaque figure le point noir doit se trouver À L'INTÉRIEUR du contour. Cercle+point dedans (a), carré+point dedans (b), triangle+point dedans (c) respectent la règle. Dans (d) le point est posé À L'EXTÉRIEUR du cercle : c'est l'intrus. ✓ option d. Piège a, b, c : ce sont des formes différentes (cercle, carré, triangle), mais la forme du contour n'est pas la règle — seul compte que le point soit dedans, ce qui les rend toutes conformes.",
+      "explanation": "Règle : dans chaque figure le point noir doit se trouver À L'INTÉRIEUR du contour. Le cercle, le carré et le triangle ont tous leur point DEDANS : ils respectent la règle. La quatrième figure pose son point À L'EXTÉRIEUR du cercle : c'est l'intruse. ✓ C'est le cercle au point extérieur. Piège des trois autres : ce sont des formes différentes (cercle, carré, triangle), mais la forme du contour n'est pas la règle — seul compte que le point soit dedans, ce qui les rend toutes conformes.",
       "difficulty": 3
     },
     {
@@ -111,7 +111,7 @@
         { "id": "d", "text": "Milo n'est pas un Brome." }
       ],
       "correctOption": "b",
-      "explanation": "Règle : on enchaîne les implications. Milo est un Glip (3), or tous les Glips sont des Bromes (1), donc Milo est un Brome. Et aucun Brome n'est un Zarn (2), donc Milo n'est PAS un Zarn. ✓ option b. Piège a : conclusion inverse, elle contredit (2). Piège d : faux, on vient de déduire que Milo EST un Brome via (1). Piège c : contredit directement (2) qui dit qu'AUCUN Brome n'est un Zarn.",
+      "explanation": "Règle : on enchaîne les implications. Milo est un Glip (3), or tous les Glips sont des Bromes (1), donc Milo est un Brome. Et aucun Brome n'est un Zarn (2), donc Milo n'est PAS un Zarn. ✓ « Milo n'est pas un Zarn ». Piège « Milo est un Zarn » : conclusion inverse, elle contredit (2). Piège « Milo n'est pas un Brome » : faux, on vient de déduire que Milo EST un Brome via (1). Piège « certains Bromes sont des Zarns » : contredit directement (2) qui dit qu'AUCUN Brome n'est un Zarn.",
       "difficulty": 3
     },
     {

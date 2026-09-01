@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Hidden rule: the symbol encodes the number of circles overlapping at that spot. The legend confirms it — a 1-circle zone carries a line, a 2-circle zone carries a cross. The central zone belongs to ALL THREE circles at once, so it carries the star. ✓ option c (the star). Trap a: the line is for 1 circle only. Trap b: the cross is for 2 circles, not 3. Trap d: the dot is not in the rule's code (an invented symbol).",
+      "explanation": "Hidden rule: the symbol encodes the number of circles overlapping at that spot. The legend confirms it — a 1-circle zone carries a line, a 2-circle zone carries a cross. The central zone belongs to ALL THREE circles at once, so it carries the star. ✓ It is the star. Trap of the line: it is for 1 circle only. Trap of the cross: it is for 2 circles, not 3. Trap of the dot: it is not in the rule's code (an invented symbol).",
       "difficulty": 3
     },
     {
@@ -75,7 +75,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Hidden rule: it is an \"exclusive or\" (XOR). A cell survives only if it has a dot in exactly ONE of the two grids. Grid 1 = top-left corner, top-right corner, bottom-centre. Grid 2 = top-left corner, bottom-centre, bottom-right corner. The top-left corner is in BOTH → it cancels. The bottom-centre is in BOTH → it cancels. What remains: the top-right corner (grid 1 only) and the bottom-right corner (grid 2 only). Result = exactly two dots: top-right and bottom-right, and nothing else. ✓ option a (top-right + bottom-right). Trap b: we kept the INTERSECTION (top-left + bottom-centre), i.e. the opposite of the rule — we kept the shared cells instead of cancelling them. Trap c: we took the UNION of the two grids (top-left, top-right, bottom-centre, bottom-right), cancelling nothing. Trap d: a single dot in the centre, an invented position outside both grids.",
+      "explanation": "Hidden rule: it is an \"exclusive or\" (XOR). A cell survives only if it has a dot in exactly ONE of the two grids. Grid 1 = top-left corner, top-right corner, bottom-centre. Grid 2 = top-left corner, bottom-centre, bottom-right corner. The top-left corner is in BOTH → it cancels. The bottom-centre is in BOTH → it cancels. What remains: the top-right corner (grid 1 only) and the bottom-right corner (grid 2 only). Result = exactly two dots: top-right and bottom-right, and nothing else. ✓ It is the grid with top-right + bottom-right. Trap of the INTERSECTION (top-left + bottom-centre): the opposite of the rule — we kept the shared cells instead of cancelling them. Trap of the UNION (top-left, top-right, bottom-centre, bottom-right): nothing was cancelled. Trap of the single central dot: an invented position outside both grids.",
       "difficulty": 3
     },
     {
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "Hidden rule: each term is the SUM of the two preceding ones (a Fibonacci-type sequence), not a constant gap. 2 ; 3 ; 2+3=5 ; 3+5=8 ; so the next = 5+8 = 13. ✓ option b (13). Trap a (11): we added a constant gap of +3 (8+3), mistaking it for an arithmetic sequence. Trap d (10): we did 8+2 (the wrong pair of terms). Trap c (16): we doubled the last term (8×2), an invented rule.",
+      "explanation": "Hidden rule: each term is the SUM of the two preceding ones (a Fibonacci-type sequence), not a constant gap. 2 ; 3 ; 2+3=5 ; 3+5=8 ; so the next = 5+8 = 13. ✓ option 13. Trap 11: we added a constant gap of +3 (8+3), mistaking it for an arithmetic sequence. Trap 10: we did 8+2 (the wrong pair of terms). Trap 16: we doubled the last term (8×2), an invented rule.",
       "difficulty": 3
     },
     {
@@ -123,7 +123,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Hidden rule: two simultaneous transformations. (1) Rotation: the bar turns a quarter turn clockwise. (2) Quantity: the number of dots is halved. For C, the bar is HORIZONTAL; a quarter turn clockwise makes it VERTICAL. The dots go from 4 to 4÷2 = 2. ✓ option a: vertical bar + 2 dots. Trap b: we forgot to turn the bar (still horizontal) while halving the dots correctly. Trap d: bar not turned AND we reduced too far (1 dot instead of 2). Trap c: bar turned correctly but we kept 4 dots (forgetting the halving).",
+      "explanation": "Hidden rule: two simultaneous transformations. (1) Rotation: the bar turns a quarter turn clockwise. (2) Quantity: the number of dots is halved. For C, the bar is HORIZONTAL; a quarter turn clockwise makes it VERTICAL. The dots go from 4 to 4÷2 = 2. ✓ It is the vertical bar with 2 dots. Trap of the bar left horizontal: we forgot to turn it, while halving the dots correctly. Trap of the unturned bar with 1 dot: we also reduced too far. Trap of the correctly turned bar with 4 dots: we forgot the halving.",
       "difficulty": 3
     },
     {
@@ -147,7 +147,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Hidden rule: sides = dots + 1 (the example shows it: a triangle has 3 sides and contains 2 dots, and 3 = 2 + 1). Test each option. Option d: square = 4 sides, 3 dots → 4 = 3 + 1 ✓. Option d respects the rule. Trap b: square (4 sides) with 2 dots → it would need 3 dots (4 = 2+1 is false). Trap c: pentagon (5 sides) with 3 dots → it would need 4 dots. Trap a: pentagon (5 sides) with 1 dot → it would need 4 dots. The key is to link two attributes (sides and dots) by a single formula, not to judge them separately.",
+      "explanation": "Hidden rule: sides = dots + 1 (the example shows it: a triangle has 3 sides and contains 2 dots, and 3 = 2 + 1). Test each figure. The square with 4 sides containing 3 dots: 4 = 3 + 1 ✓ Only one figure respects the rule. Trap of the square (4 sides) with 2 dots: it would need 3 (4 = 2+1 is false). Trap of the pentagon (5 sides) with 3 dots: it would need 4. Trap of the pentagon (5 sides) with 1 dot: it would need 4. The key is to link two attributes (sides and dots) by a single formula, not to judge them separately.",
       "difficulty": 3
     }
   ]
