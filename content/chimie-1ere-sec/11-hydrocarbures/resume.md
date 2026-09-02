@@ -1,0 +1,14 @@
+# 📜 Résumé : Les hydrocarbures
+
+- **Définition.** Un **hydrocarbure** est un corps composé formé **uniquement** de carbone et d'hydrogène. Formule générale **CₓHᵧ**, x et y entiers.
+- **⚠️ « Uniquement » est le mot qui tranche.** L'éthanol C₂H₆O n'est pas un hydrocarbure : il contient de l'oxygène. Le sulfure de carbone CS₂ n'a pas d'hydrogène, le sulfure d'hydrogène H₂S n'a pas de carbone — aucun des trois n'en est un.
+- **Comment on l'a établi.** Le fond noirci d'une marmite et le dépôt d'un échappement révèlent le **carbone**. La **buée** sur un verre froid tenu au-dessus de la flamme révèle l'eau : son oxygène peut venir de l'air, mais son **hydrogène** ne peut venir que du combustible.
+- **Les six du programme.** Méthane CH₄ (gaz de ville) · propane C₃H₈ et butane C₄H₁₀ (gaz de bouteille) · éthène C₂H₄ (matières plastiques) · éthyne C₂H₂ (soudure oxyacétylénique) · octane C₈H₁₈ (essence auto).
+- **Sources.** Le **pétrole** et les **gaz naturels**. Le pétrole brut, mélange de plus de deux cents composés de températures d'ébullition différentes, est séparé en raffinerie par **distillation fractionnée** : les plus légers en haut de la tour (gaz, essences), les plus lourds en bas (fuel industriel, huiles, bitumes). Les gaz naturels ont pour constituant principal le **méthane**, de 70 à 95 % selon les gisements.
+- **Combustion incomplète** (bec Bunsen virole fermée, flamme jaune fuligineuse) : hydrocarbure + dioxygène → **carbone + eau**. Exemples : CH₄ + O₂ → C + 2 H₂O ; C₃H₈ + 2 O₂ → 3 C + 4 H₂O.
+- **Combustion complète** (virole ouverte, flamme bleue) : hydrocarbure + dioxygène → **dioxyde de carbone + eau**. Exemples : CH₄ + 2 O₂ → CO₂ + 2 H₂O ; C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O.
+- **⚠️ Le danger réel de la combustion incomplète.** Elle ne donne pas que du carbone et de l'eau : elle dégage aussi du dioxyde de carbone et surtout du **monoxyde de carbone**, très toxique — d'où l'obligation d'aérer tout local équipé d'un brûleur à gaz.
+- **Très exothermique**, et d'autant plus que la molécule est grosse : méthane 882, propane 2200, butane 2860, octane 5512 kJ par mole.
+- **Intérêts** : chauffage, cuisson des aliments et des poteries, fusion des métaux, énergie mécanique (machines, transports, centrales).
+- **Dangers — les polluants** : monoxyde de carbone (85 % du trafic routier, intoxique le sang), dioxyde de carbone (asphyxie en milieu clos), dioxyde de soufre, hydrocarbures non brûlés, particules en suspension, oxydes d'azote.
+- **Dangers — l'effet de serre.** L'effet de serre est **naturel et nécessaire** : la vapeur d'eau, le dioxyde de carbone et d'autres gaz retiennent une partie du rayonnement infrarouge réémis par la Terre, ce qui maintient une température favorable à la vie. Ce que la combustion provoque, c'est son **forçage** — plus de 6 milliards de tonnes de CO₂ rejetées chaque année, d'où hausse de la température moyenne, fusion des glaciers, montée des océans, désertification.
