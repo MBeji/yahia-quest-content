@@ -22,7 +22,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "C'est la définition du cours : ln x = ∫₁ˣ 1/t dt pour x > 0, c'est-à-dire LA primitive de t ↦ 1/t qui s'annule en 1 ✓. C'est bien pour cela que ln 1 = ∫₁¹ 1/t dt = 0. L'option a place la borne du bas en 0, où la fonction t ↦ 1/t n'est même pas définie : l'écriture n'a pas de sens. L'option c intègre t au lieu de 1/t, ce qui donnerait (x² − 1)/2, une fonction polynomiale. L'option d intègre 1/t², dont une primitive est −1/t : rien à voir avec le logarithme.",
+      "explanation": "C'est la définition du cours : ln x = ∫₁ˣ 1/t dt pour x > 0, c'est-à-dire LA primitive de t ↦ 1/t qui s'annule en 1 ✓. C'est bien pour cela que ln 1 = ∫₁¹ 1/t dt = 0. La réponse « ∫₀ˣ 1/t dt » place la borne du bas en 0, où la fonction t ↦ 1/t n'est même pas définie : l'écriture n'a pas de sens. La réponse « ∫₁ˣ t dt » intègre t au lieu de 1/t, ce qui donnerait (x² − 1)/2, une fonction polynomiale. La réponse « ∫₁ˣ 1/t² dt » intègre 1/t², dont une primitive est −1/t : rien à voir avec le logarithme.",
       "difficulty": 1
     },
     {
@@ -46,7 +46,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "ln x = ∫₁ˣ 1/t dt n'a de sens que si l'intervalle d'intégration reste dans ]0, +∞[, l'intervalle sur lequel t ↦ 1/t est continue : la fonction ln est donc définie exactement sur ]0, +∞[ ✓. L'option b y ajoute 0, alors que ln n'est pas défini en 0 — c'est au contraire là que lim ln x = −∞. L'option c ajoute tous les réels négatifs : ln(−3) n'existe pas (c'est ln|−3| = ln 3 qui existe). L'option d oublie complètement la contrainte de positivité.",
+      "explanation": "ln x = ∫₁ˣ 1/t dt n'a de sens que si l'intervalle d'intégration reste dans ]0, +∞[, l'intervalle sur lequel t ↦ 1/t est continue : la fonction ln est donc définie exactement sur ]0, +∞[ ✓. La réponse « [0, +∞[ » y ajoute 0, alors que ln n'est pas défini en 0 — c'est au contraire là que lim ln x = −∞. La réponse « ℝ \\ {0} » ajoute tous les réels négatifs : ln(−3) n'existe pas (c'est ln|−3| = ln 3 qui existe). La réponse ℝ oublie complètement la contrainte de positivité.",
       "difficulty": 1
     },
     {
@@ -70,7 +70,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "ln est par construction une primitive de t ↦ 1/t, donc ln′(x) = 1/x pour tout x > 0 ✓. Comme 1/x > 0 sur ]0, +∞[, on en déduit immédiatement que ln est strictement croissante. L'option b confondrait ln avec une fonction égale à sa propre dérivée. L'option c inverse le rôle des deux fonctions : c'est 1/x qui est la dérivée, pas x. L'option d est la dérivée de x ↦ 1/x, c'est-à-dire ln″(x) : on a dérivé une fois de trop.",
+      "explanation": "ln est par construction une primitive de t ↦ 1/t, donc ln′(x) = 1/x pour tout x > 0 ✓. Comme 1/x > 0 sur ]0, +∞[, on en déduit immédiatement que ln est strictement croissante. La réponse « ln x » confondrait ln avec une fonction égale à sa propre dérivée. La réponse x inverse le rôle des deux fonctions : c'est 1/x qui est la dérivée, pas x. La réponse −1/x² est la dérivée de x ↦ 1/x, c'est-à-dire ln″(x) : on a dérivé une fois de trop.",
       "difficulty": 1
     },
     {
@@ -94,7 +94,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Deux valeurs de référence : ln 1 = 0 (les deux bornes de l'intégrale sont égales) et ln e = 1 (c'est la définition même du réel e, l'unique solution de ln x = 1). Donc ln e − ln 1 = 1 − 0 = 1 ✓. L'option b suppose à tort que ln e vaut aussi 0. L'option a se trompe de sens et calcule ln 1 − ln e. L'option d confond le nombre e avec son logarithme : ln e = 1, pas e ≈ 2,718.",
+      "explanation": "Deux valeurs de référence : ln 1 = 0 (les deux bornes de l'intégrale sont égales) et ln e = 1 (c'est la définition même du réel e, l'unique solution de ln x = 1). Donc ln e − ln 1 = 1 − 0 = 1 ✓. La réponse 0 suppose à tort que ln e vaut aussi 0. La réponse −1 se trompe de sens et calcule ln 1 − ln e. La réponse e confond le nombre e avec son logarithme : ln e = 1, pas e ≈ 2,718.",
       "difficulty": 1
     },
     {
@@ -118,7 +118,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "C'est la propriété historique du logarithme : il transforme les produits en sommes, ln(ab) = ln a + ln b ✓. Contrôle numérique : ln 6 = ln 2 + ln 3 ≈ 0,693 + 1,099 = 1,792, et la calculatrice donne bien ln 6 ≈ 1,792. L'option a est la règle du QUOTIENT, ln(a/b) = ln a − ln b. L'option c garde l'opération de départ : ln 2 × ln 3 ≈ 0,762 ≠ ln 6. L'option b est la fausse « simplification par ln » : (ln 6)/(ln 2) ≈ 2,585 n'est le logarithme de rien de particulier ici.",
+      "explanation": "C'est la propriété historique du logarithme : il transforme les produits en sommes, ln(ab) = ln a + ln b ✓. Contrôle numérique : ln 6 = ln 2 + ln 3 ≈ 0,693 + 1,099 = 1,792, et la calculatrice donne bien ln 6 ≈ 1,792. La réponse « ln a − ln b » est la règle du QUOTIENT, ln(a/b) = ln a − ln b. La réponse « ln a × ln b » garde l'opération de départ : ln 2 × ln 3 ≈ 0,762 ≠ ln 6. La réponse « (ln a)/(ln b) » est la fausse « simplification par ln » : (ln 6)/(ln 2) ≈ 2,585 n'est le logarithme de rien de particulier ici.",
       "difficulty": 1
     },
     {
@@ -142,7 +142,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "On factorise d'abord : 12 = 2² × 3, donc ln 12 = 2 ln 2 + ln 3 ≈ 1,386 + 1,099 = 2,485 ✓. L'option b oublie l'exposant et calcule ln 2 + ln 3 = ln 6 ≈ 1,792 : c'est le logarithme de 6, pas de 12. L'option a multiplie les logarithmes, ln 2 × ln 3 ≈ 0,762, alors que c'est le produit 2 × 3 qui devient une somme, jamais l'inverse. L'option d part d'une mauvaise factorisation, 2² × 3² = 36, et donne 2 ln 2 + 2 ln 3 ≈ 3,584.",
+      "explanation": "On factorise d'abord : 12 = 2² × 3, donc ln 12 = 2 ln 2 + ln 3 ≈ 1,386 + 1,099 = 2,485 ✓. La réponse 1,792 oublie l'exposant et calcule ln 2 + ln 3 = ln 6 ≈ 1,792 : c'est le logarithme de 6, pas de 12. La réponse 0,762 multiplie les logarithmes, ln 2 × ln 3 ≈ 0,762, alors que c'est le produit 2 × 3 qui devient une somme, jamais l'inverse. La réponse 3,584 part d'une mauvaise factorisation, 2² × 3² = 36, et donne 2 ln 2 + 2 ln 3 ≈ 3,584.",
       "difficulty": 2
     },
     {
@@ -166,7 +166,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Le signe de ln se lit sur la position par rapport à 1 : ln a < 0 si et seulement si 0 < a < 1. Comme 1/4 < 1, on a ln(1/4) = −ln 4 ≈ −1,386 < 0 ✓. L'option b vaut exactement 0, et 0 n'est pas strictement négatif : 1 est précisément le point où ln change de signe. L'option c est positive car 2 > 1 (ln 2 ≈ 0,693). L'option d vaut ln e = 1 > 0. Attention au réflexe erroné « une fraction donne un logarithme positif » : c'est bien le fait d'être plus petit que 1 qui rend ln négatif.",
+      "explanation": "Le signe de ln se lit sur la position par rapport à 1 : ln a < 0 si et seulement si 0 < a < 1. Comme 1/4 < 1, on a ln(1/4) = −ln 4 ≈ −1,386 < 0 ✓. La réponse « ln 1 » vaut exactement 0, et 0 n'est pas strictement négatif : 1 est précisément le point où ln change de signe. La réponse « ln 2 » est positive car 2 > 1 (ln 2 ≈ 0,693). La réponse « ln e » vaut ln e = 1 > 0. Attention au réflexe erroné « une fraction donne un logarithme positif » : c'est bien le fait d'être plus petit que 1 qui rend ln négatif.",
       "difficulty": 2
     },
     {
@@ -190,7 +190,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "ln réalise une bijection de ]0, +∞[ sur ℝ : l'équation a donc une solution unique. Comme ln(e³) = 3 ln e = 3, cette solution est x = e³ ≈ 20,09 ✓. L'option a donne ln(1/e³) = −3 : c'est la solution de ln x = −3, le signe a été perdu. L'option b confond x et ln x ; d'ailleurs ln 3 ≈ 1,099 ≠ 3. L'option c multiplie e par 3 au lieu de l'élever à la puissance 3 : ln(3e) = ln 3 + 1 ≈ 2,099 ≠ 3.",
+      "explanation": "ln réalise une bijection de ]0, +∞[ sur ℝ : l'équation a donc une solution unique. Comme ln(e³) = 3 ln e = 3, cette solution est x = e³ ≈ 20,09 ✓. La réponse « x = 1/e³ » donne ln(1/e³) = −3 : c'est la solution de ln x = −3, le signe a été perdu. La réponse « x = 3 » confond x et ln x ; d'ailleurs ln 3 ≈ 1,099 ≠ 3. La réponse « x = 3e » multiplie e par 3 au lieu de l'élever à la puissance 3 : ln(3e) = ln 3 + 1 ≈ 2,099 ≠ 3.",
       "difficulty": 2
     },
     {
@@ -214,7 +214,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "ln(u) n'existe que là où u est strictement positif : il faut 2x − 6 > 0, soit x > 3, d'où D_f = ]3, +∞[ ✓ (contrôle : pour x = 4, ln 2 existe ; pour x = 2, on écrirait ln(−2), impossible). L'option a résout l'inéquation dans le mauvais sens. L'option c inclut 3, où 2x − 6 = 0 et ln 0 n'existe pas. L'option d est l'ensemble de définition de x ↦ ln|2x − 6| : la valeur absolue ne demande que u ≠ 0, mais ici il n'y a pas de valeur absolue.",
+      "explanation": "ln(u) n'existe que là où u est strictement positif : il faut 2x − 6 > 0, soit x > 3, d'où D_f = ]3, +∞[ ✓ (contrôle : pour x = 4, ln 2 existe ; pour x = 2, on écrirait ln(−2), impossible). La réponse « ]−∞, 3[ » résout l'inéquation dans le mauvais sens. La réponse « [3, +∞[ » inclut 3, où 2x − 6 = 0 et ln 0 n'existe pas. La réponse « ℝ \\ {3} » est l'ensemble de définition de x ↦ ln|2x − 6| : la valeur absolue ne demande que u ≠ 0, mais ici il n'y a pas de valeur absolue.",
       "difficulty": 2
     },
     {
@@ -238,7 +238,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Avec u(x) = 3x + 1 > 0 sur cet intervalle, la formule de dérivation composée donne f′ = u′/u = 3/(3x + 1) ✓. Contrôle numérique en x = 1 : la formule donne 3/4 = 0,75, et le taux d'accroissement (ln 4,03 − ln 4)/0,01 ≈ 0,747 ✓. L'option b oublie le facteur u′ = 3 au numérateur : c'est l'erreur numéro un du chapitre. L'option a dérive comme s'il s'agissait de ln(3x) et perd en plus le u′. L'option d multiplie la fonction par 3 au lieu de dériver.",
+      "explanation": "Avec u(x) = 3x + 1 > 0 sur cet intervalle, la formule de dérivation composée donne f′ = u′/u = 3/(3x + 1) ✓. Contrôle numérique en x = 1 : la formule donne 3/4 = 0,75, et le taux d'accroissement (ln 4,03 − ln 4)/0,01 ≈ 0,747 ✓. La réponse « 1/(3x + 1) » oublie le facteur u′ = 3 au numérateur : c'est l'erreur numéro un du chapitre. La réponse 1/(3x) dérive comme s'il s'agissait de ln(3x) et perd en plus le u′. La réponse « 3 ln(3x + 1) » multiplie la fonction par 3 au lieu de dériver.",
       "difficulty": 2
     }
   ]
