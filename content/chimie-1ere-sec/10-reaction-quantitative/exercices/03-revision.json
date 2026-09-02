@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Réactif limitant et calculs de quantités",
+  "mode": "practice",
+  "difficulty": 2,
+  "displayOrder": 3,
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "questions": [
+    {
+      "prompt": "Pour 2 S + 3 O₂ → 2 SO₃, on engage 0,3 mol de soufre et 0,3 mol de dioxygène. Que reste-t-il à la fin ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,1 mol de soufre"
+        },
+        {
+          "id": "b",
+          "text": "0,1 mol de dioxygène"
+        },
+        {
+          "id": "c",
+          "text": "Rien, les deux réactifs sont entièrement consommés"
+        },
+        {
+          "id": "d",
+          "text": "0,1 mol de soufre et 0,1 mol de dioxygène"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le rapport disponible vaut 1 alors que l'équation exige 2 ÷ 3 ≈ 0,67 : le soufre est en excès et le dioxygène limite. Les 0,3 mol de dioxygène consomment 2 × 0,3 ÷ 3 = 0,2 mol de soufre, et il en reste donc 0,3 − 0,2 = 0,1 mol ✓. Ce n'est pas le dioxygène qui reste, puisque c'est lui qui s'épuise le premier. Les deux ne peuvent disparaître ensemble, faute d'être dans les proportions de l'équation. Et un reste des deux à la fois est impossible : s'il restait les deux, la réaction se poursuivrait.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dalton observe que 1 g de dihydrogène et 8 g de dioxygène donnent 9 g d'eau. Que montre cette expérience ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La conservation de la masse au cours de la réaction"
+        },
+        {
+          "id": "b",
+          "text": "La conservation du volume des gaz au cours de la réaction"
+        },
+        {
+          "id": "c",
+          "text": "La conservation de la masse et du volume en même temps"
+        },
+        {
+          "id": "d",
+          "text": "Que le dihydrogène est le réactif limitant du mélange"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "1 + 8 = 9 : la masse des produits égale celle des réactifs, ce qui illustre exactement la loi de Lavoisier ✓. Aucun volume n'est mesuré dans cet énoncé, et de toute façon les volumes ne se conservent pas dans une réaction. Affirmer les deux conservations à la fois ajoute donc une propriété fausse à une propriété vraie. Et rien n'indique de réactif limitant : l'énoncé ne dit pas qu'il reste quoi que ce soit.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On fait réagir 2,80 g de fer avec 1,2 L de dichlore selon 2 Fe + 3 Cl₂ → 2 FeCl₃ (Vm = 24,0 L·mol⁻¹, M(Fe) = 56 g·mol⁻¹). Quelles sont les quantités initiales ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,05 mol de fer et 0,05 mol de dichlore"
+        },
+        {
+          "id": "b",
+          "text": "0,05 mol de fer et 1,2 mol de dichlore"
+        },
+        {
+          "id": "c",
+          "text": "2,80 mol de fer et 0,05 mol de dichlore"
+        },
+        {
+          "id": "d",
+          "text": "0,05 mol de fer et 28,8 mol de dichlore"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une masse se convertit par la masse molaire, 2,80 ÷ 56 = 0,05 mol, et un volume de gaz par le volume molaire, 1,2 ÷ 24,0 = 0,05 mol ✓. Garder 1,2 revient à confondre un volume en litres avec une quantité en moles. Garder 2,80 fait la même confusion du côté de la masse. Et multiplier 1,2 par 24 au lieu de diviser inverse la relation : le volume molaire s'écrit n = V ÷ Vm.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On fait réagir 0,05 mol de fer avec 0,05 mol de dichlore selon 2 Fe + 3 Cl₂ → 2 FeCl₃, où le dichlore est le réactif limitant. Quelle masse de chlorure de fer (III) obtient-on ? (M(FeCl₃) = 162,5 g·mol⁻¹)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Environ 5,41 g"
+        },
+        {
+          "id": "b",
+          "text": "Environ 8,13 g"
+        },
+        {
+          "id": "c",
+          "text": "Environ 16,25 g"
+        },
+        {
+          "id": "d",
+          "text": "Environ 2,71 g"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'équation donne 2 FeCl₃ pour 3 Cl₂, donc n = 2 × 0,05 ÷ 3 = 3,33 × 10⁻² mol, et m = 3,33 × 10⁻² × 162,5 ≈ 5,41 g ✓. Obtenir 8,13 g reviendrait à prendre 0,05 mol de produit, c'est-à-dire à oublier le rapport 2 pour 3. La valeur 16,25 g correspondrait à 0,1 mol, soit le double du dichlore disponible. Et 2,71 g serait la moitié du résultat correct, comme si l'on divisait encore par deux après avoir appliqué le rapport.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pourquoi calcule-t-on toujours les quantités de produits à partir du réactif limitant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que c'est lui qui s'épuise et met fin à la réaction"
+        },
+        {
+          "id": "b",
+          "text": "Parce qu'il est toujours celui dont la masse engagée est la plus faible"
+        },
+        {
+          "id": "c",
+          "text": "Parce qu'il porte le plus grand coefficient dans l'équation équilibrée"
+        },
+        {
+          "id": "d",
+          "text": "Parce que le réactif en excès ne participe pas du tout à la réaction"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Quand le limitant a disparu, plus rien ne peut se former, même s'il reste de l'autre réactif : il fixe donc tout ✓. Ce n'est pas une affaire de masse la plus faible, mais du rapport des quantités de matière comparé aux coefficients — ici 2,80 g de fer et 3,55 g de dichlore font 0,05 mol chacun, et c'est le fer, pourtant le plus léger, qui est en excès. Le coefficient seul ne désigne rien non plus, puisqu'il faut le confronter aux quantités disponibles. Et le réactif en excès participe bel et bien : il en est simplement consommé moins que ce dont on disposait.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le réactif limitant est celui qui, à la fin de la réaction :",
+      "options": [
+        {
+          "id": "a",
+          "text": "a disparu complètement du mélange"
+        },
+        {
+          "id": "b",
+          "text": "n'a été consommé qu'en partie"
+        },
+        {
+          "id": "c",
+          "text": "a été engagé en plus grande quantité"
+        },
+        {
+          "id": "d",
+          "text": "se retrouve intact, sans avoir réagi"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Il limite précisément parce qu'il s'épuise entièrement et arrête la réaction ✓. Ce qui reste en partie, c'est le réactif en excès : confondre les deux est l'erreur classique du chapitre. Être engagé en plus grande quantité ne désigne rien de fiable, car tout dépend des coefficients de l'équation. Et un corps qui se retrouverait intact serait un catalyseur, notion du chapitre précédent, pas un réactif.",
+      "difficulty": 2
+    }
+  ]
+}
