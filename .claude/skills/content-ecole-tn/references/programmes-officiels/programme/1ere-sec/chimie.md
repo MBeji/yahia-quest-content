@@ -338,6 +338,17 @@ matière · mélange homogène / hétérogène · phase · corps pur · critère
 - **Exposants / indices linéarisés** : l'extraction texte aplatit la typographie (ex. « 10 -10 m » = 10⁻¹⁰ m ; « 6,02.10 23 » = 6,02·10²³ ; « H 2O » = H₂O ; « Fe3+ » = Fe³⁺). Restitution fidèle mais à relire pour toute réutilisation littérale ; quelques césures de nombres/mots subsistent (ex. « msoufre », « nFe »).
 - **Table des matières (p.5) en colonnes aplaties** : la liste des numéros de page y est entremêlée. Les pages retenues dans cette fiche proviennent des **marqueurs `<!-- page N -->` de l'extraction** (fiables), non de la TDM ; elles concordent avec la TDM.
 - **Page 4 vide** dans la source (uniquement marqueurs de page).
+- ⚠️ **Écart interne de CETTE fiche, relevé le 2026-09-02 — origine à déterminer.** Dans l'exercice résolu de
+  l'essence (Partie 4, p.150–151), la question c) pose la formule **`100/20 × 92,1·10³`** puis conclut
+  **`46,05·10³ L`**. Les deux ne s'accordent pas : `100/20 × 92,1·10³ = 460,5·10³ L`, soit un **facteur 10**.
+  Le reste du calcul est juste et vérifié (m₀ = 35 kg ; n = 307 mol ; n(O₂) = 12,5 × 307 = 3837,5 mol ;
+  V(O₂) = 3837,5 × 24 = 92,1·10³ L), donc l'écart porte sur la seule dernière étape.
+  **Ce qu'on ne sait pas** : si le manuel imprime lui-même `46,05·10³` (coquille source, alors fidèlement
+  transcrite et à laisser telle quelle) ou si la transcription a glissé. Trancher exige de rouvrir la p.151.
+  **En attendant, ne pas générer de contenu élève à partir de cet exercice** — c'est ce qui a été fait pour le
+  chapitre `11-hydrocarbures` (PR #312), qui l'a écarté au profit des deux applications dont les résultats
+  retombent exactement sur les corrigés du manuel (noir de carbone 500 g / 5 m³ d'air ; bouteille de butane
+  650 g/jour, 20 jours).
 - **Coquilles / incohérences de la source, transcrites telles quelles (NON corrigées)** — à signaler à l'audit :
   - Masse molaire de l'oxygène : énoncé « M(O) = 12 g·mol⁻¹ » (p.48) alors que le calcul juste après utilise 16 → « M(O₂) = 2 × 16 = 32 » (**probable coquille source** : 12 au lieu de 16).
   - **Saccharose** noté « C12H12O11 » dans le tableau des formules (p.35) alors que la composition annoncée est « 12 atomes de carbone, 22 d'hydrogène, 11 d'oxygène » et que la formule correcte C₁₂H₂₂O₁₁ apparaît ailleurs (p.87 & suivantes) → formule affichée incohérente localement.
