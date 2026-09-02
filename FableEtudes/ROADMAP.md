@@ -2,10 +2,13 @@
 
 <!-- roadmap-sync: since-pr=912 -->
 
-> **Instantané du 2026-08-24** — déclinaison opérationnelle de l'**étude 26** (doctrine
-> verticale : profondeur avant largeur). L'état de référence reste [STATUS.md](../STATUS.md) +
-> l'[index des études](./README.md). **Jalon produit : rentrée scolaire, 1ᵉʳ septembre 2026** —
-> **J-8**.
+> **Structure du 2026-08-24, contenu tenu à jour** (dernière passe : **2026-09-02**, §11).
+> Déclinaison opérationnelle de l'**étude 26** (doctrine verticale : profondeur avant largeur).
+> L'état de référence reste [STATUS.md](../STATUS.md) + l'[index des études](./README.md).
+> ⚠️ **Le jalon produit — la rentrée, 1ᵉʳ septembre 2026 — est PASSÉ.** Ce fichier a longtemps
+> compté les jours qui l'en séparaient (« J-8 ») ; il ne s'agit plus de l'atteindre mais de
+> rattraper ce qui devait y être. La vue jalon est au §8, et elle se lit désormais comme un
+> retard, pas comme un compte à rebours.
 >
 > **Ce fichier ne contient plus que le reste-à-faire.** Il pesait **1 190 lignes**, dont les deux
 > tiers racontaient du travail terminé ; il en fait **la moitié**. Ce qui est livré vit désormais en
@@ -50,7 +53,7 @@
 ```mermaid
 flowchart TD
     subgraph LEGAL["Verrous légaux — le chemin critique du goulot"]
-        F1["<b>F1 · export_user_data</b><br/>GAP-024, volet CODE<br/>aucun prérequis"]
+        F1["F1 · export_user_data ✅<br/>GAP-024, volet CODE<br/>livré — arena#948"]
         F2["F2 · GAP-003 INPDP<br/>décision humaine"]
         D5{{"é28 D-5 levée<br/>démarchage autorisé"}}
         F1 --> D5
@@ -92,7 +95,7 @@ flowchart TD
     C6 --> L1S(["1ère sec 5/5"])
 
     subgraph GARDES["Gardes — elles conditionnent la lisibilité de tout le reste"]
-        G["G · arena#833 · privé#229<br/>9 crons rouges, ouverts le 2026-08-24"]
+        G["G · arena#833 · privé#229 ✅<br/>9 crons rouges — les deux issues<br/>sont closes (2026-09-02)"]
         G --> LISIBLE(["tout autre signal<br/>redevient opposable"])
     end
 
@@ -103,7 +106,8 @@ flowchart TD
     classDef envol fill:#0f766e,stroke:#134e4a,color:#fff
     classDef kpi fill:#111827,stroke:#374151,color:#fff
 
-    class F1,P5,P3,C6 code
+    class P5,C6 code
+    class F1,P3 kpi
     class F2 humain
     class C1,C2,C5 contenu
     class P2 envol
@@ -113,10 +117,13 @@ flowchart TD
 
 **Comment lire ce graphe — trois faits qu'il rend visibles et que les trois files cachaient :**
 
-1. **Le goulot a un chemin critique de quatre nœuds, et son premier est du code sans prérequis.**
-   `export_user_data` → é28 D-5 → é08 enseignant → un canal d'acquisition. Aucune ligne de ce
-   fichier ne le portait : F5 le mentionnait comme « reliquat », et é08 dormait en `brouillon`.
-   **Tout le reste de la file PRODUIT raffine un produit que personne n'a encore vu.**
+1. **Le goulot a un chemin critique de quatre nœuds, et son premier est TOMBÉ le 2026-09-02.**
+   ~~`export_user_data`~~ → é28 D-5 → é08 enseignant → un canal d'acquisition. Aucune ligne de ce
+   fichier ne le portait avant le 2026-08-24 : F5 le mentionnait comme « reliquat », et é08
+   dormait en `brouillon` — **le nommer aura suffi à le faire prendre en une session** (arena#948).
+   **D-5 n'attend donc plus que F2 (GAP-003), qui est humain** : le chemin est passé de « deux
+   verrous dont un codable » à « un geste administratif ». **Tout le reste de la file PRODUIT
+   raffine encore un produit que personne n'a vu.**
 2. **Le contenu commande le produit, pas l'inverse.** Deux flèches partent de C1 vers l'étage
    adaptatif et l'étage IA. C'est la forme mesurée d'août : dix-huit jours de file PRODUIT à
    l'arrêt, levés en deux jours par une PR de **corpus** (#219).
@@ -145,18 +152,18 @@ flowchart TD
 > confirmé sur les deux chemins, et le verdict des deux semaines de mesure est attendu vers le
 > **2026-09-15**. Détail : §3 P2.
 
-| #       | Ligne                                                            | Nature                        | Pourquoi maintenant                                                                                                                                                                                                                |
-| ------- | ---------------------------------------------------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0.2** | **C4bis étape 2** — finir `math` 9ᵉ, puis sortir de math (§5 C1) | campagne de contenu, semaines | Alimente **é30, é11 et la ligne 3 de la scorecard** à la fois. Le tagging couvre **521 des 818 questions (64 %)** et **une seule matière**. Le précédent est chiffré : dix-huit jours de file PRODUIT à l'arrêt pour ce même motif |
-| **0.3** | **C4ter — `french-6eme`** (§5 C2)                                | campagne de contenu, semaines | Une classe de **concours** amputée d'une épreuve. La fiche est transcrite depuis des semaines ; le seul motif du retard est qu'aucune session ne l'a prise (é28 D-4)                                                               |
+| #       | Ligne                                                            | Nature                        | Pourquoi maintenant                                                                                                                                                                                                                                                                                                                          |
+| ------- | ---------------------------------------------------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0.2** | **C4bis étape 2** — finir `math` 9ᵉ, puis sortir de math (§5 C1) | campagne de contenu, semaines | Alimente **é30, é11 et la ligne 3 de la scorecard** à la fois. Le tagging couvre **662 des 818 questions (81 %)** — chiffre du lot 0bis de é30 (privé#241), les 156 restantes étant **statuées**, pas impayées — mais toujours **une seule matière**. Le précédent est chiffré : dix-huit jours de file PRODUIT à l'arrêt pour ce même motif |
+| **0.3** | **C4ter — `french-6eme`** (§5 C2)                                | campagne de contenu, semaines | Une classe de **concours** amputée d'une épreuve. La fiche est transcrite depuis des semaines ; le seul motif du retard est qu'aucune session ne l'a prise (é28 D-4)                                                                                                                                                                         |
 
 ### 🎯 Rang 1 — le chemin critique du goulot
 
-| #       | Ligne                                                    | Pourquoi ce rang                                                                                                                                                                                                              |
-| ------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1.1** | **`export_user_data`** (§4 F1)                           | **Le seul verrou légal qu'un agent peut lever.** Il tient la Porte 1, é28 D-5, é08 et tout démarchage d'établissement. Zéro prérequis, zéro arbitrage en attente. Il n'avait de ligne nulle part                              |
-| **1.2** | **Les 9 crons rouges** — arena#833, privé#229 (§4 F3/F4) | Une garde qui échoue est **indistinguable d'une garde qui passe** (§9, L-2). Quatre gardes sur quatre l'ont déjà démontré ici. Et privé#229 casse la chaîne d'ouverture de PR du corpus : elle bloque les campagnes du rang 0 |
-| **1.3** | **GAP-003 / INPDP** (§4 F2)                              | Humain, non codable. C'est l'autre moitié de D-5 : sans elle, 1.1 seul n'ouvre pas la porte                                                                                                                                   |
+| #       | Ligne                                             | Pourquoi ce rang                                                                                                                                                                                        |
+| ------- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ~~1.1~~ | ~~**`export_user_data`**~~ (§4 F1)                | ✅ **Livré le 2026-09-02** (arena#948). Il tenait la Porte 1, é28 D-5, é08 et tout démarchage d'établissement — zéro prérequis, zéro arbitrage, et pourtant aucune ligne nulle part jusqu'au 2026-08-24 |
+| ~~1.2~~ | ~~**Les 9 crons rouges**~~ — arena#833, privé#229 | ✅ **Les deux issues sont closes**, re-constaté le 2026-09-02. La chaîne d'ouverture de PR du corpus est réparée — les campagnes du rang 0 ne sont plus bloquées par là                                 |
+| **1.3** | **GAP-003 / INPDP** (§4 F2)                       | Humain, non codable. **Désormais la SEULE moitié manquante de D-5** — depuis le 2026-09-02, plus rien de codable ne se tient entre le projet et le démarchage                                           |
 
 ### 🔨 Rang 2 — ce qui se prend ensuite, par file
 
@@ -260,37 +267,45 @@ son étude et dans les citations qu'on en fait.
 
 ## 4. FILE FONDATIONS (parallèle — ne bloque pas la file produit)
 
-- [ ] **F1. `export_user_data` — le dernier volet CODE de GAP-024.** 🎯 **Rang 1.**
-      Zéro occurrence de `export_user_data`, `exportUserData` ou « portabilité » dans `src/` et
-      `supabase/migrations/`, re-vérifié sur `main` le **2026-08-24**.
-      Les deux autres tiers de GAP-024 sont livrés : les pages légales `/confidentialite` et
-      `/conditions` (arena#701, deux **URL stables** — la déclaration « child-directed » comme la
-      conformité mineurs exigent une politique **atteignable**), et la **suppression de compte**
-      (arena#791, effacement dur par `auth.admin.deleteUser`, confirmé par re-saisie, section
-      « Zone sensible » de `/parametrage`).
+- [x] **F1. `export_user_data` — le dernier volet CODE de GAP-024.** ✅ **Livré le 2026-09-02
+      (arena#948).** Le volet CODE du GAP est complet : pages légales `/confidentialite` et
+      `/conditions` (arena#701, deux **URL stables**), **suppression de compte** (arena#791), et
+      désormais l'**accès / portabilité** — qui était encore à zéro occurrence dans `src/` et
+      `supabase/migrations/` le matin même.
+      **Ce que la solution retenue apporte au-delà de la ligne** : la RPC ne récite pas une liste
+      de tables, elle **dérive `pg_constraint`** — toute table de `public` portant une FK vers
+      `auth.users` est un endroit où la personne existe, donc une table créée demain entre dans
+      l'export sans que personne n'y pense. C'est l'argument que la suppression avait déjà tranché
+      (arena 20260819170000) : une liste écrite à la main serait vraie le jour de sa PR et fausse
+      **en silence** à la suivante, et un export incomplet ressemble trait pour trait à un export
+      complet. Le fail-closed est explicite : une colonne d'un nom inconnu sort de l'export, est
+      **nommée dans le document**, et fait **échouer** le pgTAP 85 — L-2 traitée à la source plutôt
+      que constatée après coup.
       ⚠️ **Le double piège de ce GAP, et il a coûté douze jours dans chaque sens** : une PR qui
       **cite** un GAP dans son titre ne le clôt pas ; et un GAP qu'**aucune PR ne cite** peut
       avoir été livré quand même (arena#791 s'intitule « un compte peut enfin être supprimé »,
       sans un mot de GAP-024).
+      **Reste de GAP-024, et ce n'est plus du code** : l'identité de l'éditeur pour des mentions
+      légales complètes.
       ⚠️ é29 §3.8 ajoute une pièce au dossier : un **registre de traitement INPDP** pour le mode
       IA. Il rejoint la démarche F2 plutôt que d'en ouvrir une.
 
-- [ ] **F2. GAP-003 — conformité mineurs / INPDP.** 🎯 **Rang 1.** Décisions juridiques, non
-      codables, **non vérifiables depuis un dépôt**. Avec F1, les deux prérequis légaux du
-      lancement, quel que soit le modèle gratuit.
+- [ ] **F2. GAP-003 — conformité mineurs / INPDP.** 🎯 **Rang 1, et depuis le 2026-09-02 le
+      SEUL.** Décisions juridiques, non codables, **non vérifiables depuis un dépôt**. F1 étant
+      livrée, c'est le dernier prérequis légal du lancement, quel que soit le modèle gratuit —
+      plus rien de codable ne se tient entre le projet et le démarchage.
       Restent dans le même dossier : l'identité d'éditeur pour des mentions légales complètes,
       et la décision « français seul ou trilingue » — traduire un engagement juridique sans
       relecture lui ferait dire autre chose.
 
-- [ ] **F3. arena#833 — 7 crons rouges, ouverte le 2026-08-24.** 🎯 **Rang 1.** L'issue est
-      ouverte **par la garde des gardes** livrée deux jours plus tôt (arena#831) — elle fait
-      exactement son travail. Voir §9, leçon L-2 : la série est à quatre cas, aucun n'était une
-      surprise pour qui regardait l'onglet Actions.
+- [x] **F3. arena#833 — 7 crons rouges, ouverte le 2026-08-24.** ✅ **Close**, re-constaté le
+      2026-09-02. L'issue avait été ouverte **par la garde des gardes** livrée deux jours plus tôt
+      (arena#831) — elle a fait exactement son travail, de bout en bout. Voir §9, leçon L-2 : la
+      série est à quatre cas, aucun n'était une surprise pour qui regardait l'onglet Actions.
 
-- [ ] **F4. privé#229 — `auto-pr.yml` ne peut pas ouvrir de PR.** 🎯 **Rang 1.** Le pendant privé
-      d'arena#832 (le PAT n'a pas la portée `actions:write`). **Il bloque le rang 0** : les
-      campagnes de contenu livrent par PR, et la chaîne qui les ouvre est cassée depuis le
-      2026-08-24. À traiter avant de lancer C1 ou C2, pas après.
+- [x] **F4. privé#229 — `auto-pr.yml` ne peut pas ouvrir de PR.** ✅ **Close**, re-constaté le
+      2026-09-02. Le pendant privé d'arena#832 (le PAT n'avait pas la portée `actions:write`). Il
+      bloquait le rang 0 — les campagnes de contenu livrent par PR — et ce blocage-là est levé.
 
 - [ ] **F5. A15 / A16 — recaler les garde-fous d'économie.** Deux arbitrages humains produits
       par la mesure (arena#708), en attente depuis le **2026-08-03**. Détail au §6.
@@ -339,7 +354,7 @@ son étude et dans les citations qu'on en fait.
       56 à **154 entrées**, toutes pourvues de leur `competency`, sur les 20 chapitres de
       `math` 9ᵉ.
       **Ce qui reste, et c'est le rang 0 :**
-      (a) le tagging couvre **521 des 818 questions de `math` 9ᵉ — 64 %**. Arbitrage Q-5 du
+      (a) le tagging couvre **662 des 818 questions de `math` 9ᵉ — 81 %** depuis le lot 0bis de é30 (privé#241), les 156 muettes restantes étant **décidées** sous une règle écrite. Arbitrage Q-5 du
       2026-08-23 : trancher si les 297 autres sont **légitimes** (tout distracteur n'encode pas
       une erreur nommable) ou un **reliquat**. La réponse se donne en lisant un échantillon, pas
       en décidant a priori.
@@ -471,13 +486,13 @@ auprès de Google — le paragraphe « vidéos YouTube » a désormais une page 
 
 ## 8. Vue jalon — ce qui doit être vrai le 1ᵉʳ septembre 2026
 
-| Axe            | Cible rentrée                                                                                                                                               | État au **2026-08-24 (J-8)**                                                                                                                                                                                                                                                                                                              |
+| Axe            | Cible rentrée                                                                                                                                               | État au **2026-09-02 (J+1)**                                                                                                                                                                                                                                                                                                              |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Produit**    | La boucle d'apprentissage à M3 : parcours réparé · Révision du jour · correction riche · Rappel tolérant · maîtrise visible · points faibles élève + parent | 🟢 **Atteinte, et au-delà.** La file V1 est **close (20/20)** ; **é04, é07, é22, é11 (8/8 lots, arena#844) et é30 (périmètre retenu) sont livrées**, é02 et é29 livrées. Reste hors cible : le verdict du pilote Q-9 (§3 P2)                                                                                                              |
 | **IA**         | é11 dégelée, socle posé, un premier écran pédagogique                                                                                                       | 🟢 **L'étage est bâti ET mesuré** : é29 (5 lots) + é11 (8 lots sur 8) en production. Les deux clés (famille + plateforme, DeepSeek) sont branchées depuis le **2026-09-01**, trafic réel confirmé sur les deux chemins. 🟠 **Verdict du pilote Q-9 attendu ≈ 2026-09-15** — un étage éprouvé une semaine n'est pas encore un actif mesuré |
-| **Contenu**    | Classes existantes à la barre é18 · 1ère sec complète · vidéos 9ᵉ · Tier A sur le corpus entier                                                             | 🟠 **C4bis appliqué en prod** (1 049 tags) mais **64 % d'une seule matière**. **6ᵉ à 3/4** — le français manque. **1ère sec à 4/5** — l'arabe est bloqué par une transcription. **Vidéos 9ᵉ : rien.** Tier A : corpus entier ✅                                                                                                           |
-| **Fondations** | `main` verte · légal · triage en route · domaine et monitoring                                                                                              | 🟠 **`main` verte**, domaine et monitoring soldés. 🔴 **`export_user_data` toujours absent** — seul verrou légal codable, il tient la Porte 1. 🔴 **9 crons rouges** ouverts le 2026-08-24 (arena#833, privé#229)                                                                                                                         |
-| **Marché**     | ≥ 1 canal d'acquisition ouvert et mesuré                                                                                                                    | 🔴 **Zéro, depuis le 2026-06-13.** C'est **le goulot**, et son chemin critique commence par F1 (§1)                                                                                                                                                                                                                                       |
+| **Contenu**    | Classes existantes à la barre é18 · 1ère sec complète · vidéos 9ᵉ · Tier A sur le corpus entier                                                             | 🟠 **C4bis appliqué en prod** (`math` 9ᵉ publiée le 2026-08-25 : 818 questions, **662 taguées — 81 %**) mais toujours **une seule matière**. **6ᵉ à 3/4** — le français manque. **1ère sec à 4/5** — l'arabe est bloqué par une transcription. **Vidéos 9ᵉ : rien.** Tier A : corpus entier ✅                                            |
+| **Fondations** | `main` verte · légal · triage en route · domaine et monitoring                                                                                              | 🟢 **Atteinte.** `main` verte, domaine et monitoring soldés, **`export_user_data` livré** (arena#948) — le volet CODE de GAP-024 est complet — et les **9 crons rouges** sont refermés (arena#833, privé#229). Reste hors code : GAP-003 / INPDP                                                                                          |
+| **Marché**     | ≥ 1 canal d'acquisition ouvert et mesuré                                                                                                                    | 🔴 **Zéro, depuis le 2026-06-13.** C'est **le goulot** — et depuis le 2026-09-02, son chemin critique ne commence plus par du code : F1 est livrée, il ne reste que F2 (GAP-003), qui est humain (§1)                                                                                                                                     |
 
 ---
 
@@ -508,6 +523,14 @@ auprès de Google — le paragraphe « vidéos YouTube » a désormais une page 
 | **22** parcours élève & progression       | 6 lots                                                     | arena#538 · #540 · #547 · #565 · #567 · #573     |
 | **28** stratégie de référence             | 3 lots                                                     | privé#155 · #156 · arena#726                     |
 | **29** mode IA « à la clé de la famille » | **5 lots** — porte, coffre, activation, la Forge, consoles | **arena#807** · #811 · #812 · #813               |
+
+**Chantiers de fondations livrés** (hors étude — ils n'ont pas de dossier `FableEtudes/`) :
+
+- **F1 · `export_user_data`** — le volet CODE de GAP-024 est complet (arena#948, 2026-09-02) :
+  RPC `SECURITY DEFINER` sans paramètre, dérivée de `pg_constraint`, contrat en pgTAP 85 et
+  section « Mes données » de `/parametrage`. Le premier nœud du chemin critique du goulot.
+- **F3 · arena#833** et **F4 · privé#229** — les 9 crons rouges : **les deux issues sont closes**
+  (re-constaté le 2026-09-02).
 
 **Études encore ouvertes dont des lots sont livrés** :
 
@@ -616,6 +639,7 @@ en forme « étude/lot », et sept jours s'étaient joués **au privé**. Un gat
 
 | Date           | Événement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **2026-09-02** | **Le premier nœud du chemin critique du goulot tombe : `export_user_data` est livré** (arena#948). GAP-024 n'a plus de volet CODE ouvert — pages légales (arena#701), suppression (arena#791), et maintenant l'accès. **D-5 n'attend plus que GAP-003, qui est humain** : plus rien de codable ne se tient entre le projet et le démarchage d'établissement. La solution retenue ne récite pas une liste de tables, elle **dérive `pg_constraint`** — une table créée demain entre seule dans l'export — et une colonne d'un nom inconnu sort de l'export, est nommée dans le document et fait **échouer** le pgTAP 85 : L-2 traitée à la source, pas constatée après coup. **Deux lignes du rang 1 rayées en plus, par simple constat** : arena#833 et privé#229 (les 9 crons rouges) sont closes toutes les deux. Le rang 1 ne porte plus qu'une ligne, et elle n'est pas du code. ⚠️ Rappel de la leçon L-1, encore vraie ici : deux des trois lignes de ce rang étaient **déjà réglées** pendant que le fichier les disait urgentes — un statut se **constate**.                                                                       |
 | **2026-09-01** | **é11 : les 8 lots sont livrés (arena#844, 2026-08-24, non cité ici depuis) et le pilote Q-9 démarre en vrai.** Correction : l'entrée du 2026-08-24 ci-dessous donnait « é11 à 6 lots sur 8 » — les lots 6-7 avaient mergé le jour même par une session concurrente déjà notée « en vol » (§3 P1, désormais fermée). Constaté sur `main` (`tutor_digests`, `tutor_energy_console`, tous deux présents). **Mohamed a branché les deux clés le jour même** : la clé famille (BYOK, Réglages) et la clé plateforme (Vercel `AI_PLATFORM_API_KEY`/`AI_PLATFORM_PROVIDER`, redéployée) — les deux sur DeepSeek, confirmées par `/admin/ia`. Trafic réel confirmé sur les deux chemins (le chemin plateforme a buté une fois sur un 429/5xx transitoire, résolu au retry). C'est la **première fois** que l'étage IA sert un appel réel hors vérification de clé, neuf jours après la rentrée qu'il devait précéder. Verdict du pilote (§5 é29) attendu ≈ 2026-09-15. Reste ouvert : `FableEtudes/11-tuteur-ia-pedagogique/ETUDE.md` n'est toujours pas resynchronisé (§4/§8 vides) — la clôture de l'étude, dossier compris, attend le verdict. |
 | **2026-08-30** | **é30 : le périmètre retenu est livré et Q-4 est exécuté.** Lot 0bis au corpus (privé#241, tagging 64 % → **81 %**, le reste **statué**), cinq lots moteur (arena#856→#860), puis la mort de `difficulty_adaptation` en deux merges (arena#910, **arena#911**) et le topo (arena#912). Base `since-pr` portée de 832 à **912**, tout ce qui est sauté étant cité au §9. Reste ouvert : privé#247 (deux corrections au corps de l'étude, dont une qui demande un arbitrage).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | **2026-08-24** | **Élagage et re-cadrage.** 788 lignes → un tiers. Le travail livré passe en index d'une ligne (§9), les leçons en annexe (§10). **Trois ajouts structurels** : un **graphe de dépendances** (§1), la distinction **horloges / chantiers** (§2), et le **chemin critique du goulot** — `export_user_data` → é28 D-5 → é08 → un canal d'acquisition — qui n'avait de ligne dans aucune des trois files. **Trois statuts corrigés en relisant `main`** : **é07 est terminée** (5 lots sur 5 ; son propre document laisse les lots 4 et 5 décochés alors qu'ils sont livrés depuis les 2026-07-21/25), **é29 passe dans `EtudeRealisé/`** (son en-tête disait `LIVRÉE` depuis le 2026-08-22 sans que le dossier bouge), et **é11 est à 6 lots sur 8** — pas « lots 1 à 4 » comme l'annonçait encore l'index. **Un fait neuf** : `docs/doctrine-verticale.md` **n'existe pas** — é26 lots 1 et 2 sont ouverts, la doctrine que tout le monde cite n'a jamais été écrite normativement                                                                                                                                                           |
