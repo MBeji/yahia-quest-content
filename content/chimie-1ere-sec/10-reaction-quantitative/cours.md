@@ -38,6 +38,97 @@ Que s'est-il passé ? Une molécule de dioxygène s'est dissociée, et ses deux 
 
 Même constat pour la combustion du méthane : une molécule de méthane et deux molécules de dioxygène donnent une molécule de dioxyde de carbone et deux molécules d'eau. Compte les atomes de part et d'autre — un carbone, quatre hydrogènes, quatre oxygènes de chaque côté.
 
+::: figure Les mêmes 9 atomes avant et après : 1 carbone, 4 hydrogènes et 4 oxygènes, simplement liés autrement — aucun n'a disparu, aucun n'est apparu
+<svg viewBox="0 0 380 230">
+<g stroke="#0f172a" stroke-width="3" stroke-linecap="round">
+<line x1="48" y1="66" x2="48" y2="36"/>
+<line x1="48" y1="66" x2="78" y2="66"/>
+<line x1="48" y1="66" x2="48" y2="96"/>
+<line x1="48" y1="66" x2="18" y2="66"/>
+<line x1="122" y1="66" x2="148" y2="66"/>
+<line x1="194" y1="66" x2="220" y2="66"/>
+<line x1="28" y1="178" x2="84" y2="178"/>
+<line x1="138" y1="172" x2="119" y2="186.5"/>
+<line x1="138" y1="172" x2="157" y2="186.5"/>
+<line x1="210" y1="172" x2="191" y2="186.5"/>
+<line x1="210" y1="172" x2="229" y2="186.5"/>
+</g>
+<g stroke="#0f172a" stroke-width="1.5">
+<circle cx="48" cy="66" r="13" fill="#334155"/>
+<circle cx="48" cy="36" r="8" fill="#e2e8f0"/>
+<circle cx="78" cy="66" r="8" fill="#e2e8f0"/>
+<circle cx="48" cy="96" r="8" fill="#e2e8f0"/>
+<circle cx="18" cy="66" r="8" fill="#e2e8f0"/>
+<circle cx="122" cy="66" r="11" fill="#dc2626"/>
+<circle cx="148" cy="66" r="11" fill="#dc2626"/>
+<circle cx="194" cy="66" r="11" fill="#dc2626"/>
+<circle cx="220" cy="66" r="11" fill="#dc2626"/>
+<circle cx="28" cy="178" r="11" fill="#dc2626"/>
+<circle cx="56" cy="178" r="13" fill="#334155"/>
+<circle cx="84" cy="178" r="11" fill="#dc2626"/>
+<circle cx="138" cy="172" r="11" fill="#dc2626"/>
+<circle cx="119" cy="186.5" r="8" fill="#e2e8f0"/>
+<circle cx="157" cy="186.5" r="8" fill="#e2e8f0"/>
+<circle cx="210" cy="172" r="11" fill="#dc2626"/>
+<circle cx="191" cy="186.5" r="8" fill="#e2e8f0"/>
+<circle cx="229" cy="186.5" r="8" fill="#e2e8f0"/>
+</g>
+<g text-anchor="middle" font-weight="700" fill="#ffffff">
+<text x="48" y="70" font-size="12">C</text>
+<text x="56" y="182" font-size="12">C</text>
+<text x="122" y="70" font-size="11">O</text>
+<text x="148" y="70" font-size="11">O</text>
+<text x="194" y="70" font-size="11">O</text>
+<text x="220" y="70" font-size="11">O</text>
+<text x="28" y="182" font-size="11">O</text>
+<text x="84" y="182" font-size="11">O</text>
+<text x="138" y="176" font-size="11">O</text>
+<text x="210" y="176" font-size="11">O</text>
+</g>
+<g text-anchor="middle" font-weight="700" fill="#0f172a" font-size="9">
+<text x="48" y="39">H</text>
+<text x="78" y="69">H</text>
+<text x="48" y="99">H</text>
+<text x="18" y="69">H</text>
+<text x="119" y="190">H</text>
+<text x="157" y="190">H</text>
+<text x="191" y="190">H</text>
+<text x="229" y="190">H</text>
+</g>
+<g text-anchor="middle" font-weight="700" fill="#0f172a" font-size="17">
+<text x="100" y="72">+</text>
+<text x="171" y="72">+</text>
+<text x="103" y="184">+</text>
+<text x="174" y="184">+</text>
+</g>
+<g text-anchor="middle" font-weight="700" fill="#0f172a" font-size="12">
+<text x="48" y="118">CH₄</text>
+<text x="135" y="118">O₂</text>
+<text x="207" y="118">O₂</text>
+<text x="56" y="216">CO₂</text>
+<text x="138" y="216">H₂O</text>
+<text x="210" y="216">H₂O</text>
+</g>
+<line x1="100" y1="110" x2="100" y2="136" stroke="#0f172a" stroke-width="3"/>
+<polygon points="100,146 94,136 106,136" fill="#0f172a"/>
+<g fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5">
+<rect x="250" y="42" width="118" height="48" rx="8"/>
+<rect x="250" y="154" width="118" height="48" rx="8"/>
+</g>
+<g text-anchor="middle">
+<text x="309" y="66" font-size="14" font-weight="700" fill="#0f172a">9 atomes</text>
+<text x="309" y="82" font-size="11" fill="#475569">1 C · 4 H · 4 O</text>
+<text x="309" y="178" font-size="14" font-weight="700" fill="#0f172a">9 atomes</text>
+<text x="309" y="194" font-size="11" fill="#475569">1 C · 4 H · 4 O</text>
+<text x="309" y="129" font-size="20" font-weight="700" fill="#0f6e56">=</text>
+</g>
+<g font-size="11" font-weight="700" fill="#475569">
+<text x="10" y="18">réactifs</text>
+<text x="10" y="140">produits</text>
+</g>
+</svg>
+:::
+
 > 📌 **À retenir.** Au cours d'une réaction chimique, il y a **conservation des atomes**.
 
 Et comme chaque atome garde sa masse, conserver les atomes revient à conserver la masse. C'est là l'origine de la phrase de Lavoisier : **« Rien ne se perd, rien ne se crée, tout se transforme. »**
