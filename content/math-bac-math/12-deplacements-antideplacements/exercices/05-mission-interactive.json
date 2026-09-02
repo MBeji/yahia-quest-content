@@ -58,7 +58,10 @@
       "type": "matching",
       "prompt": "Trois matrices de sceau sont rangées à l'atelier. Toutes travaillent sur le même carré direct ABCD, avec A(0 ; 0), B(2 ; 0), C(2 ; 2) et D(0 ; 2), de centre I(1 ; 1), dans un repère orthonormé direct. Associe chaque isométrie à l'effet qu'elle produit sur les quatre sommets.",
       "options": [
-        { "id": "l1", "text": "La rotation de centre I et d'angle π/2" },
+        {
+          "id": "l1",
+          "text": "La rotation de centre I et d'angle π/2"
+        },
         {
           "id": "l2",
           "text": "La symétrie orthogonale d'axe la diagonale (AC)"
@@ -67,15 +70,33 @@
           "id": "l3",
           "text": "La symétrie orthogonale d'axe la droite d'équation x = 1, qui joint les milieux de [AB] et de [CD]"
         },
-        { "id": "r1", "text": "A ↦ B, B ↦ C, C ↦ D, D ↦ A" },
-        { "id": "r2", "text": "A ↦ A, B ↦ D, C ↦ C, D ↦ B" },
-        { "id": "r3", "text": "A ↦ B, B ↦ A, C ↦ D, D ↦ C" }
+        {
+          "id": "r1",
+          "text": "A ↦ B, B ↦ C, C ↦ D, D ↦ A"
+        },
+        {
+          "id": "r2",
+          "text": "A ↦ A, B ↦ D, C ↦ C, D ↦ B"
+        },
+        {
+          "id": "r3",
+          "text": "A ↦ B, B ↦ A, C ↦ D, D ↦ C"
+        }
       ],
       "answerKey": {
         "pairs": [
-          ["l1", "r1"],
-          ["l2", "r2"],
-          ["l3", "r3"]
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
         ]
       },
       "explanation": "Les trois isométries laissent le carré globalement invariant, donc les trois effets sont des permutations des quatre sommets : aucune ne se distingue par les longueurs, il faut calculer. La rotation de centre I(1 ; 1) et d'angle π/2 transforme M(x ; y) en (1 − (y − 1) ; 1 + (x − 1)) = (2 − y ; x). On applique : A(0 ; 0) ↦ (2 ; 0) = B ✓, B(2 ; 0) ↦ (2 ; 2) = C ✓, C(2 ; 2) ↦ (0 ; 2) = D ✓, D(0 ; 2) ↦ (0 ; 0) = A ✓. Elle DÉCALE les sommets d'un cran, dans le sens direct, et ne fixe aucun d'eux : c'est la signature d'un déplacement d'angle non nul. La symétrie orthogonale d'axe (AC) : la diagonale (AC) est la droite d'équation y = x, dont la symétrie échange les coordonnées, (x ; y) ↦ (y ; x). Alors A(0 ; 0) ↦ A ✓, C(2 ; 2) ↦ C ✓ — les deux sommets de l'axe restent en place, comme il se doit —, tandis que B(2 ; 0) ↦ (0 ; 2) = D ✓ et D ↦ B ✓. La symétrie orthogonale d'axe x = 1 : elle garde l'ordonnée et renvoie l'abscisse de l'autre côté, (x ; y) ↦ (2 − x ; y). Donc A(0 ; 0) ↦ (2 ; 0) = B ✓, B ↦ A ✓, C(2 ; 2) ↦ (0 ; 2) = D ✓, D ↦ C ✓. Le critère de tri le plus rapide, et il vaut pour tout le chapitre : une symétrie orthogonale ÉCHANGE les points deux à deux (elle est involutive, f∘f = Id), tandis qu'une rotation d'angle π/2 les fait TOURNER en cycle de longueur 4. Il suffit donc de regarder la structure de la permutation avant même de calculer : un seul effet est un cycle de quatre sommets, il ne peut appartenir qu'à la rotation. Reste à départager les deux symétries, et c'est leur axe qui le fait : celle d'axe (AC) doit laisser A et C en place, puisque ces deux points SONT sur l'axe — l'effet qui fixe A et C lui revient forcément. Celle d'axe x = 1 ne fixe aucun sommet, car aucun sommet n'a pour abscisse 1 ; en revanche elle échange les deux sommets d'un même côté horizontal. La confusion qui guette est d'attribuer à la symétrie d'axe (AC) l'effet A ↦ B, B ↦ A : ce serait oublier qu'un point de l'axe est un point fixe, et A appartient à (AC). L'autre confusion, plus insidieuse, est d'attribuer à la rotation un effet d'échange : une rotation d'angle π/2 n'échange jamais deux points, car l'appliquer deux fois donne la rotation d'angle π, qui n'est pas l'identité — or un échange appliqué deux fois redonne l'identité.",
@@ -99,7 +120,10 @@
           "id": "a",
           "text": "Quel que soit le point M du plan, le milieu du segment [M f(M)] appartient à D"
         },
-        { "id": "b", "text": "f∘f est la translation de vecteur 2u⃗" },
+        {
+          "id": "b",
+          "text": "f∘f est la translation de vecteur 2u⃗"
+        },
         {
           "id": "c",
           "text": "f⁻¹ est la symétrie glissante d'axe D et de vecteur −u⃗"
@@ -118,7 +142,12 @@
         }
       ],
       "answerKey": {
-        "correct": ["a", "b", "c", "d"]
+        "correct": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
       },
       "explanation": "Les quatre premières affirmations sont, mot pour mot ou par conséquence immédiate, la fiche d'identité de la symétrie glissante donnée par le cours. Le milieu de [M f(M)] appartient à D pour TOUT point M ✓ : c'est la propriété qui sert, en pratique, à construire l'axe à partir de deux images seulement — et c'est aussi ce qui rend le tri visuel possible sur une figure. f∘f = t_(2u⃗) ✓ : on écrit f = t_u⃗∘S_D, et comme u⃗ dirige D les deux facteurs commutent, d'où f∘f = t_u⃗∘S_D∘t_u⃗∘S_D = t_u⃗∘t_u⃗∘S_D∘S_D = t_(2u⃗), puisqu'une symétrie orthogonale est involutive. C'est la clé qui donne le vecteur : on calcule le carré, on divise par deux. f⁻¹ est la symétrie glissante de MÊME axe et de vecteur −u⃗ ✓ : la réciproque d'un antidéplacement est un antidéplacement, elle n'a pas plus de point fixe que f, donc c'est encore une symétrie glissante ; et (t_u⃗∘S_D)⁻¹ = S_D⁻¹∘t_u⃗⁻¹ = S_D∘t_(−u⃗) = t_(−u⃗)∘S_D, ce qui est bien la forme réduite annoncée. L'image d'un triangle direct est un triangle indirect ✓ : une symétrie glissante est un antidéplacement (elle vaut trois symétries orthogonales, nombre impair), donc elle change toute mesure d'angle orienté en son opposée — un angle +π/2 devient −π/2, et le sens de parcours des sommets s'inverse. Les deux affirmations à écarter. « f admet un unique point fixe sur D » est fausse et c'est même la propriété qui DÉFINIT la symétrie glissante face à la symétrie orthogonale : f n'a AUCUN point fixe. Le voir est immédiat — si M était fixe, le milieu de [M f(M)] serait M lui-même, donc M appartiendrait à D ; or sur D la symétrie S_D ne fait rien et f s'y réduit à la translation de vecteur u⃗ ≠ 0⃗, qui déplace M. Un point fixe est donc impossible, sur D comme ailleurs. Une isométrie qui n'a qu'un seul point fixe est une rotation d'angle non nul, c'est-à-dire un déplacement, pas un antidéplacement. « f∘f change les angles orientés en leurs opposées » est fausse pour la raison de signes du cours : antidéplacement ∘ antidéplacement = déplacement, soit (−1) × (−1) = +1. Et l'on connaît déjà ce déplacement, c'est la translation t_(2u⃗), qui conserve évidemment tous les angles orientés. Retiens la conséquence pratique : appliquer deux fois un miroir glissant remet la figure à l'endroit — c'est exactement ce que fait un rouleau qui avance.",
       "difficulty": 3
@@ -168,7 +197,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Étape 1, la nature, par le comptage. Une rotation vaut deux symétries orthogonales, S_D en vaut une : f en compte trois, nombre impair, donc f est un ANTIDÉPLACEMENT ✓. La figure le confirme, chevrons à l'appui : (AB⃗ ; AC⃗) = ((3 ; 0) ; (0 ; 2)) ≡ π/2, tandis que (A″B″⃗ ; A″C″⃗) = ((0 ; −3) ; (−2 ; 0)) ≡ π − (−π/2) ≡ −π/2 [2π] — le sens de parcours s'est retourné. Étape 2, l'expression analytique, qu'il faut poser pour ne rien deviner. La rotation de centre Ω(1 ; 1) et d'angle π/2 envoie M(x ; y) sur (1 − (y − 1) ; 1 + (x − 1)) = (2 − y ; x). La symétrie d'axe y = 3 envoie (X ; Y) sur (X ; 6 − Y). En composant dans l'ordre — r d'abord, S_D ensuite — on obtient f(x ; y) = (2 − y ; 6 − x). Contrôle sur les trois sommets : A(2 ; 0) ↦ (2 ; 4) = A″ ✓, B(5 ; 0) ↦ (2 ; 1) = B″ ✓, C(2 ; 2) ↦ (0 ; 4) = C″ ✓. Étape 3, points fixes. Il faudrait x = 2 − y et y = 6 − x, c'est-à-dire x + y = 2 ET x + y = 6 : impossible. f n'a AUCUN point fixe, donc ce n'est pas une symétrie orthogonale mais une SYMÉTRIE GLISSANTE ✓. Étape 4, les éléments caractéristiques. Le vecteur se lit sur le carré : f∘f(x ; y) = f(2 − y ; 6 − x) = (2 − (6 − x) ; 6 − (2 − y)) = (x − 4 ; y + 4), donc f∘f = t_((−4 ; 4)) = t_(2u⃗) et u⃗ = (−2 ; 2) ✓. L'axe se lit sur les milieux : milieu de [A A″] = (2 ; 2), milieu de [B B″] = (3,5 ; 0,5), milieu de [C C″] = (1 ; 3). Les trois vérifient x + y = 4 : l'axe est la droite d'équation x + y = 4, c'est-à-dire y = −x + 4 ✓. Dernier contrôle, celui qui ferme le dossier : le vecteur u⃗(−2 ; 2) doit DIRIGER l'axe, et la droite y = −x + 4 a bien pour vecteur directeur (−1 ; 1), colinéaire à u⃗ ✓. On peut aussi le retrouver sur un point de l'axe : le point E(4 ; 0) vérifie 4 + 0 = 4, il est donc sur l'axe, et f(E) = (2 − 0 ; 6 − 4) = (2 ; 2), d'où E f(E)⃗ = (−2 ; 2) = u⃗ ✓ — pour un point de l'axe, le déplacement EST le vecteur de la forme réduite. Le vecteur (−4 ; 4) est celui de f∘f : il double le glissement, et il enverrait A(2 ; 0) sur (0 ; 6) au lieu de (2 ; 4). La règle f∘f = t_(2u⃗) impose la division par deux. La symétrie orthogonale d'axe y = −x + 4 a le bon axe mais oublie le glissement : elle envoie M(x ; y) sur (4 − y ; 4 − x), donc A(2 ; 0) sur (4 ; 2), et non sur A″(2 ; 4). Elle fixerait toute une droite, alors que f ne fixe rien. La dernière proposition garde l'axe de S_D : c'est confondre un facteur de la composée avec le résultat. On l'écarte sans calcul, par la règle de cohérence de la forme réduite : le vecteur (−2 ; 2) n'est pas un vecteur directeur de la droite y = 3, qui est horizontale — un couple (axe, vecteur) où le vecteur ne dirige pas l'axe n'est jamais une forme réduite.",
+      "explanation": "Étape 1, la nature, par le comptage. Une rotation vaut deux symétries orthogonales, S_D en vaut une : f en compte trois, nombre impair, donc f est un ANTIDÉPLACEMENT ✓. La figure le confirme, chevrons à l'appui : (AB⃗ ; AC⃗) = ((3 ; 0) ; (0 ; 2)) ≡ π/2, tandis que (A″B″⃗ ; A″C″⃗) = ((0 ; −3) ; (−2 ; 0)) ≡ π − (−π/2) ≡ −π/2 [2π] — le sens de parcours s'est retourné. Étape 2, l'expression analytique, qu'il faut poser pour ne rien deviner. La rotation de centre Ω(1 ; 1) et d'angle π/2 envoie M(x ; y) sur (1 − (y − 1) ; 1 + (x − 1)) = (2 − y ; x). La symétrie d'axe y = 3 envoie (X ; Y) sur (X ; 6 − Y). En composant dans l'ordre — r d'abord, S_D ensuite — on obtient f(x ; y) = (2 − y ; 6 − x). Contrôle sur les trois sommets : A(2 ; 0) ↦ (2 ; 4) = A″ ✓, B(5 ; 0) ↦ (2 ; 1) = B″ ✓, C(2 ; 2) ↦ (0 ; 4) = C″ ✓. Étape 3, points fixes. Il faudrait x = 2 − y et y = 6 − x, c'est-à-dire x + y = 2 ET x + y = 6 : impossible. f n'a AUCUN point fixe, donc ce n'est pas une symétrie orthogonale mais une SYMÉTRIE GLISSANTE ✓. Étape 4, les éléments caractéristiques. Le vecteur se lit sur le carré : f∘f(x ; y) = f(2 − y ; 6 − x) = (2 − (6 − x) ; 6 − (2 − y)) = (x − 4 ; y + 4), donc f∘f = t_((−4 ; 4)) = t_(2u⃗) et u⃗ = (−2 ; 2) ✓. L'axe se lit sur les milieux : milieu de [A A″] = (2 ; 2), milieu de [B B″] = (3,5 ; 0,5), milieu de [C C″] = (1 ; 3). Les trois vérifient x + y = 4 : l'axe est la droite d'équation x + y = 4, c'est-à-dire y = −x + 4 ✓. Dernier contrôle, celui qui ferme le dossier : le vecteur u⃗(−2 ; 2) doit DIRIGER l'axe, et la droite y = −x + 4 a bien pour vecteur directeur (−1 ; 1), colinéaire à u⃗ ✓. On peut aussi le retrouver sur un point de l'axe : le point E(4 ; 0) vérifie 4 + 0 = 4, il est donc sur l'axe, et f(E) = (2 − 0 ; 6 − 4) = (2 ; 2), d'où E f(E)⃗ = (−2 ; 2) = u⃗ ✓ — pour un point de l'axe, le déplacement EST le vecteur de la forme réduite. Le vecteur (−4 ; 4) est celui de f∘f : il double le glissement, et il enverrait A(2 ; 0) sur (0 ; 6) au lieu de (2 ; 4). La règle f∘f = t_(2u⃗) impose la division par deux. La symétrie orthogonale d'axe y = −x + 4 a le bon axe mais oublie le glissement : elle envoie M(x ; y) sur (4 − y ; 4 − x), donc A(2 ; 0) sur (4 ; 2), et non sur A″(2 ; 4). Elle fixerait toute une droite, alors que f ne fixe rien. L'option d'axe D (la droite y = 3) garde l'axe de S_D : c'est confondre un facteur de la composée avec le résultat. On l'écarte sans calcul, par la règle de cohérence de la forme réduite : le vecteur (−2 ; 2) n'est pas un vecteur directeur de la droite y = 3, qui est horizontale — un couple (axe, vecteur) où le vecteur ne dirige pas l'axe n'est jamais une forme réduite.",
       "difficulty": 3
     }
   ]
