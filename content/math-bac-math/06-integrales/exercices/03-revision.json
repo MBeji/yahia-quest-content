@@ -27,7 +27,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "C'est la définition du cours : une aire est toujours positive, donc on intègre |f| et l'on découpe l'intervalle à chaque changement de signe ✓. L'option c est LE piège du chapitre : dès que f change de signe, ∫ₐᵇ f compte négativement les parties situées sous l'axe — c'est un bilan algébrique, pas une aire. L'option b n'est correcte que si f garde un signe constant : pour f(x) = x sur [−1, 1] elle donne 0 alors que l'aire vaut 1. L'option d intègre le carré de f, ce qui intervient dans le volume d'un solide de révolution (V = π∫ₐᵇ f²), jamais dans une aire.",
+      "explanation": "C'est la définition du cours : une aire est toujours positive, donc on intègre |f| et l'on découpe l'intervalle à chaque changement de signe ✓. La réponse « ∫ₐᵇ f(x)dx » est LE piège du chapitre : dès que f change de signe, ∫ₐᵇ f compte négativement les parties situées sous l'axe — c'est un bilan algébrique, pas une aire. La réponse « |∫ₐᵇ f(x)dx| » n'est correcte que si f garde un signe constant : pour f(x) = x sur [−1, 1] elle donne 0 alors que l'aire vaut 1. La réponse « ∫ₐᵇ f²(x)dx » intègre le carré de f, ce qui intervient dans le volume d'un solide de révolution (V = π∫ₐᵇ f²), jamais dans une aire.",
       "difficulty": 1
     },
     {
@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "On intègre l'encadrement terme à terme (corollaire de comparaison) : ∫₁³ 2 dx ≤ ∫₁³ f(x)dx ≤ ∫₁³ 5 dx, c'est-à-dire 2 × (3 − 1) = 4 ≤ ∫₁³ f(x)dx ≤ 5 × (3 − 1) = 10 ✓. Autrement dit, on multiplie les bornes par la LONGUEUR de l'intervalle. L'option a oublie complètement cette longueur : elle encadre la valeur moyenne f̄, pas l'intégrale. L'option c multiplie par 3 (le nombre d'entiers 1, 2, 3) au lieu de b − a = 2. L'option d multiplie par b + a = 4 au lieu de b − a = 2.",
+      "explanation": "On intègre l'encadrement terme à terme (corollaire de comparaison) : ∫₁³ 2 dx ≤ ∫₁³ f(x)dx ≤ ∫₁³ 5 dx, c'est-à-dire 2 × (3 − 1) = 4 ≤ ∫₁³ f(x)dx ≤ 5 × (3 − 1) = 10 ✓. Autrement dit, on multiplie les bornes par la LONGUEUR de l'intervalle. La réponse « 2 ≤ ∫₁³ f(x)dx ≤ 5 » oublie complètement cette longueur : elle encadre la valeur moyenne f̄, pas l'intégrale. La réponse « 6 ≤ ∫₁³ f(x)dx ≤ 15 » multiplie par 3 (le nombre d'entiers 1, 2, 3) au lieu de b − a = 2. La réponse « 8 ≤ ∫₁³ f(x)dx ≤ 20 » multiplie par b + a = 4 au lieu de b − a = 2.",
       "difficulty": 2
     },
     {
@@ -75,7 +75,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "f est négative sur [0, 1] et positive sur [1, 2] : on découpe en 1 et l'on intègre |f|. Sur [0, 1] : ∫₀¹ (1 − x²)dx = [x − x³/3]₀¹ = 1 − 1/3 = 2/3. Sur [1, 2] : ∫₁² (x² − 1)dx = [x³/3 − x]₁² = 2/3 − (−2/3) = 4/3. L'aire vaut donc 2/3 + 4/3 = 2 u.a ✓. L'option a est le bilan algébrique ∫₀² (x² − 1)dx = 8/3 − 2 = 2/3 : c'est l'erreur classique, l'aire prise comme ∫f alors que f change de signe. L'option b ne retient que la partie située au-dessus de l'axe. L'option d oublie le terme −1 et calcule [x³/3]₀² = 8/3.",
+      "explanation": "f est négative sur [0, 1] et positive sur [1, 2] : on découpe en 1 et l'on intègre |f|. Sur [0, 1] : ∫₀¹ (1 − x²)dx = [x − x³/3]₀¹ = 1 − 1/3 = 2/3. Sur [1, 2] : ∫₁² (x² − 1)dx = [x³/3 − x]₁² = 2/3 − (−2/3) = 4/3. L'aire vaut donc 2/3 + 4/3 = 2 u.a ✓. La réponse 2/3 est le bilan algébrique ∫₀² (x² − 1)dx = 8/3 − 2 = 2/3 : c'est l'erreur classique, l'aire prise comme ∫f alors que f change de signe. La réponse 4/3 ne retient que la partie située au-dessus de l'axe. La réponse 8/3 oublie le terme −1 et calcule [x³/3]₀² = 8/3.",
       "difficulty": 2
     },
     {
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Deux gestes. D'abord retourner les bornes de la première donnée : ∫₀² f(x)dx = −∫₂⁰ f(x)dx = 5. Ensuite la linéarité : ∫₀² (3f − 2g) = 3∫₀² f − 2∫₀² g = 3 × 5 − 2 × (−1) = 15 + 2 = 17 ✓. L'option b utilise −5 tel quel sans retourner les bornes : 3 × (−5) + 2 = −13. L'option c retourne bien les bornes mais perd le signe de g : 15 − 2 = 13. L'option a cumule les deux erreurs : −15 − 2 = −17.",
+      "explanation": "Deux gestes. D'abord retourner les bornes de la première donnée : ∫₀² f(x)dx = −∫₂⁰ f(x)dx = 5. Ensuite la linéarité : ∫₀² (3f − 2g) = 3∫₀² f − 2∫₀² g = 3 × 5 − 2 × (−1) = 15 + 2 = 17 ✓. La réponse −13 utilise −5 tel quel sans retourner les bornes : 3 × (−5) + 2 = −13. La réponse 13 retourne bien les bornes mais perd le signe de g : 15 − 2 = 13. La réponse −17 cumule les deux erreurs : −15 − 2 = −17.",
       "difficulty": 3
     },
     {
@@ -123,7 +123,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "On calcule l'intégrale, ∫₀^π sin x dx = [−cos x]₀^π = 1 + 1 = 2, puis on divise par la longueur de l'intervalle : f̄ = 2/π ≈ 0,64 ✓. Contrôle : sin varie entre 0 et 1 sur [0, π], donc sa moyenne doit être comprise entre 0 et 1 — 0,64 convient, ce que confirme l'inégalité de la moyenne. L'option d s'arrête à l'intégrale et oublie le facteur 1/(b − a). L'option a applique à [0, π] le résultat vrai sur une période entière [0, 2π], où les arches positive et négative se compensent : ici la fonction reste positive, sa moyenne ne peut pas être nulle. L'option c prend le maximum sin(π/2) = 1 pour la moyenne.",
+      "explanation": "On calcule l'intégrale, ∫₀^π sin x dx = [−cos x]₀^π = 1 + 1 = 2, puis on divise par la longueur de l'intervalle : f̄ = 2/π ≈ 0,64 ✓. Contrôle : sin varie entre 0 et 1 sur [0, π], donc sa moyenne doit être comprise entre 0 et 1 — 0,64 convient, ce que confirme l'inégalité de la moyenne. La réponse 2 s'arrête à l'intégrale et oublie le facteur 1/(b − a). La réponse 0 applique à [0, π] le résultat vrai sur une période entière [0, 2π], où les arches positive et négative se compensent : ici la fonction reste positive, sa moyenne ne peut pas être nulle. La réponse 1 prend le maximum sin(π/2) = 1 pour la moyenne.",
       "difficulty": 3
     },
     {
@@ -147,7 +147,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "La fonction x ↦ 1/x est décroissante sur [1, 2] : son minimum est 1/2 (atteint en 2) et son maximum 1 (atteint en 1), donc 1/2 ≤ 1/x ≤ 1. L'intervalle étant de longueur 1, on obtient 1/2 × 1 ≤ A ≤ 1 × 1, soit 1/2 ≤ A ≤ 1 ✓ (la méthode des rectangles à deux pas resserre d'ailleurs cet encadrement en 7/12 ≤ A ≤ 5/6). L'option d encadre x au lieu de 1/x : passer à l'inverse RENVERSE l'ordre des inégalités. L'option b utilise 1/3, c'est-à-dire la valeur en 3, un point extérieur à [1, 2]. L'option a prend 0 pour minorant et la valeur minimale 1/2 pour majorant : le minorant et le majorant ont été échangés.",
+      "explanation": "La fonction x ↦ 1/x est décroissante sur [1, 2] : son minimum est 1/2 (atteint en 2) et son maximum 1 (atteint en 1), donc 1/2 ≤ 1/x ≤ 1. L'intervalle étant de longueur 1, on obtient 1/2 × 1 ≤ A ≤ 1 × 1, soit 1/2 ≤ A ≤ 1 ✓ (la méthode des rectangles à deux pas resserre d'ailleurs cet encadrement en 7/12 ≤ A ≤ 5/6). La réponse « 1 ≤ A ≤ 2 » encadre x au lieu de 1/x : passer à l'inverse RENVERSE l'ordre des inégalités. La réponse « 1/3 ≤ A ≤ 1/2 » utilise 1/3, c'est-à-dire la valeur en 3, un point extérieur à [1, 2]. La réponse « 0 ≤ A ≤ 1/2 » prend 0 pour minorant et la valeur minimale 1/2 pour majorant : le minorant et le majorant ont été échangés.",
       "difficulty": 3
     }
   ]

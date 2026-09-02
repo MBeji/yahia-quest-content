@@ -22,7 +22,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "C'est la définition du cours : ∫ₐᵇ f(x)dx = [F(x)]ₐᵇ = F(b) − F(a), la valeur en la borne du HAUT moins la valeur en la borne du BAS ✓. Le résultat ne dépend pas de la primitive choisie, car deux primitives diffèrent d'une constante qui s'élimine dans la soustraction. L'option a inverse les deux bornes : elle donne l'opposé, c'est-à-dire ∫_bᵃ f(x)dx. L'option c utilise f au lieu de sa primitive F : on n'a rien intégré. L'option d dérive encore une fois, alors que l'intégration remonte de f vers F.",
+      "explanation": "C'est la définition du cours : ∫ₐᵇ f(x)dx = [F(x)]ₐᵇ = F(b) − F(a), la valeur en la borne du HAUT moins la valeur en la borne du BAS ✓. Le résultat ne dépend pas de la primitive choisie, car deux primitives diffèrent d'une constante qui s'élimine dans la soustraction. La réponse « F(a) − F(b) » inverse les deux bornes : elle donne l'opposé, c'est-à-dire ∫_bᵃ f(x)dx. La réponse « f(b) − f(a) » utilise f au lieu de sa primitive F : on n'a rien intégré. Dériver la primitive au lieu de l'évaluer dérive encore une fois, alors que l'intégration remonte de f vers F.",
       "difficulty": 1
     },
     {
@@ -46,7 +46,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "La variable d'intégration est MUETTE : elle disparaît du résultat, donc on peut la renommer librement, et ∫₀¹ f(x)dx = ∫₀¹ f(t)dt ✓. L'option a mélange les deux lettres : l'intégrande porte sur x alors qu'on intègre par rapport à t, l'écriture n'a pas de sens. L'option c remplace la borne 1 par x : ce n'est plus un nombre mais une fonction de x. L'option d échange les bornes : elle vaut l'opposé du réel cherché.",
+      "explanation": "La variable d'intégration est MUETTE : elle disparaît du résultat, donc on peut la renommer librement, et ∫₀¹ f(x)dx = ∫₀¹ f(t)dt ✓. La réponse « ∫₀¹ f(x)dt » mélange les deux lettres : l'intégrande porte sur x alors qu'on intègre par rapport à t, l'écriture n'a pas de sens. La réponse « ∫₀ˣ f(t)dt » remplace la borne 1 par x : ce n'est plus un nombre mais une fonction de x. La réponse « ∫₁⁰ f(t)dt » échange les bornes : elle vaut l'opposé du réel cherché.",
       "difficulty": 1
     },
     {
@@ -70,7 +70,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Quand les deux bornes sont égales, l'intégrale vaut 0 ✓ : avec F(x) = x² + x, on obtient F(4) − F(4) = 0, et ce quel que soit l'intégrande. L'option c est la valeur f(4) = 8 + 1 = 9 de la fonction, pas de l'intégrale. L'option d est F(4) = 16 + 4 = 20 : c'est la primitive évaluée en 4, sans jamais soustraire la valeur en la borne du bas. L'option b ne correspond à aucun calcul : une intégrale de a à a n'a aucune raison de valoir 1.",
+      "explanation": "Quand les deux bornes sont égales, l'intégrale vaut 0 ✓ : avec F(x) = x² + x, on obtient F(4) − F(4) = 0, et ce quel que soit l'intégrande. La réponse 9 est la valeur f(4) = 8 + 1 = 9 de la fonction, pas de l'intégrale. La réponse 20 est F(4) = 16 + 4 = 20 : c'est la primitive évaluée en 4, sans jamais soustraire la valeur en la borne du bas. La réponse 1 ne correspond à aucun calcul : une intégrale de a à a n'a aucune raison de valoir 1.",
       "difficulty": 1
     },
     {
@@ -94,7 +94,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Échanger les bornes change le signe de l'intégrale : ∫₇² f(x)dx = −∫₂⁷ f(x)dx = −3 ✓. La démonstration tient en une ligne avec une primitive F : F(2) − F(7) = −(F(7) − F(2)). L'option d oublie ce changement de signe — c'est l'erreur la plus fréquente dès qu'on retourne des bornes. L'option c confond « inverser les bornes » avec « prendre l'inverse du nombre ». L'option b ne s'appliquerait que si les deux bornes étaient égales.",
+      "explanation": "Échanger les bornes change le signe de l'intégrale : ∫₇² f(x)dx = −∫₂⁷ f(x)dx = −3 ✓. La démonstration tient en une ligne avec une primitive F : F(2) − F(7) = −(F(7) − F(2)). La réponse 3 oublie ce changement de signe — c'est l'erreur la plus fréquente dès qu'on retourne des bornes. La réponse 1/3 confond « inverser les bornes » avec « prendre l'inverse du nombre ». La réponse 0 ne s'appliquerait que si les deux bornes étaient égales.",
       "difficulty": 1
     },
     {
@@ -118,7 +118,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "C'est la relation de Chasles : ∫₀³ f + ∫₃⁸ f = ∫₀⁸ f, donc ∫₀⁸ f(x)dx = 5 + (−2) = 3 ✓. Les morceaux s'ajoutent, ils ne se retranchent pas : l'option d calcule 5 − (−2) = 7, en traitant Chasles comme une soustraction. L'option b additionne dans le mauvais sens (−2 − 5 = −7). L'option a multiplie les deux valeurs, alors que Chasles est une relation additive.",
+      "explanation": "C'est la relation de Chasles : ∫₀³ f + ∫₃⁸ f = ∫₀⁸ f, donc ∫₀⁸ f(x)dx = 5 + (−2) = 3 ✓. Les morceaux s'ajoutent, ils ne se retranchent pas : la réponse 7 calcule 5 − (−2) = 7, en traitant Chasles comme une soustraction. La réponse −7 additionne dans le mauvais sens (−2 − 5 = −7). La réponse −10 multiplie les deux valeurs, alors que Chasles est une relation additive.",
       "difficulty": 1
     },
     {
@@ -142,7 +142,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Une primitive de 2x est x² (contrôle : (x²)′ = 2x ✓), donc ∫₁³ 2x dx = [x²]₁³ = 9 − 1 = 8 ✓. L'option d s'arrête à F(3) = 9 et oublie de retrancher F(1) = 1. L'option b primitive 2x en x²/2 au lieu de x², ce qui divise le résultat par 2 : (9 − 1)/2 = 4. L'option a est le résultat obtenu en intervertissant les bornes, [x²]₃¹ = 1 − 9 = −8.",
+      "explanation": "Une primitive de 2x est x² (contrôle : (x²)′ = 2x ✓), donc ∫₁³ 2x dx = [x²]₁³ = 9 − 1 = 8 ✓. La réponse 9 s'arrête à F(3) = 9 et oublie de retrancher F(1) = 1. La réponse 4 primitive 2x en x²/2 au lieu de x², ce qui divise le résultat par 2 : (9 − 1)/2 = 4. La réponse −8 est le résultat obtenu en intervertissant les bornes, [x²]₃¹ = 1 − 9 = −8.",
       "difficulty": 2
     },
     {
@@ -166,7 +166,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "Par linéarité, ∫₀¹ (2f − g) = 2∫₀¹ f − ∫₀¹ g = 2 × 4 − 3 = 8 − 3 = 5 ✓. L'option a oublie le coefficient 2 devant f et calcule 4 − 3 = 1. L'option c oublie le signe moins devant g : 2 × 4 + 3 = 11. L'option d applique le facteur 2 à toute la parenthèse, 2 × (4 + 3) = 14, alors que 2 ne multiplie que f et que g est retranchée.",
+      "explanation": "Par linéarité, ∫₀¹ (2f − g) = 2∫₀¹ f − ∫₀¹ g = 2 × 4 − 3 = 8 − 3 = 5 ✓. La réponse 1 oublie le coefficient 2 devant f et calcule 4 − 3 = 1. La réponse 11 oublie le signe moins devant g : 2 × 4 + 3 = 11. La réponse 14 applique le facteur 2 à toute la parenthèse, 2 × (4 + 3) = 14, alors que 2 ne multiplie que f et que g est retranchée.",
       "difficulty": 2
     },
     {
@@ -190,7 +190,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "La positivité fonctionne dans un seul sens : f ≥ 0 entraîne ∫ₐᵇ f ≥ 0, mais la réciproque est FAUSSE ✓. Contre-exemple du cours : ∫_{−1}¹ x dx = [x²/2]_{−1}¹ = 1/2 − 1/2 = 0 ≥ 0, alors que la fonction x ↦ x est strictement négative sur [−1, 0[. L'option a énonce précisément cette réciproque fausse. L'option b affirme l'inverse du théorème. L'option c est fausse aussi : une fonction strictement positive, comme x ↦ 1, a une intégrale positive sans jamais s'annuler.",
+      "explanation": "La positivité fonctionne dans un seul sens : f ≥ 0 entraîne ∫ₐᵇ f ≥ 0, mais la réciproque est FAUSSE ✓. Contre-exemple du cours : ∫_{−1}¹ x dx = [x²/2]_{−1}¹ = 1/2 − 1/2 = 0 ≥ 0, alors que la fonction x ↦ x est strictement négative sur [−1, 0[. La réponse « f est positive sur [a, b] » énonce précisément cette réciproque fausse. La réponse « f est négative sur [a, b] » affirme l'inverse du théorème. La réponse « f s'annule au moins une fois sur [a, b] » est fausse aussi : une fonction strictement positive, comme x ↦ 1, a une intégrale positive sans jamais s'annuler.",
       "difficulty": 2
     },
     {
@@ -214,7 +214,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "C'est la définition du cours : f̄ = 1/(b − a) · ∫ₐᵇ f(x)dx ✓. Géométriquement, le rectangle de côtés (b − a) et f̄ a la même aire que la partie sous la courbe : on « aplatit » la courbe à hauteur constante. L'option a confond la valeur moyenne avec l'intégrale elle-même : c'est l'oubli du facteur 1/(b − a), l'erreur numéro un du paragraphe. L'option b multiplie par la longueur au lieu de diviser. L'option c ne fait la moyenne que des deux valeurs aux bornes, en ignorant tout ce qui se passe entre a et b.",
+      "explanation": "C'est la définition du cours : f̄ = 1/(b − a) · ∫ₐᵇ f(x)dx ✓. Géométriquement, le rectangle de côtés (b − a) et f̄ a la même aire que la partie sous la courbe : on « aplatit » la courbe à hauteur constante. La réponse « f̄ = ∫ₐᵇ f(x)dx » confond la valeur moyenne avec l'intégrale elle-même : c'est l'oubli du facteur 1/(b − a), l'erreur numéro un du paragraphe. La réponse « f̄ = (b − a) ∫ₐᵇ f(x)dx » multiplie par la longueur au lieu de diviser. La réponse « f̄ = (f(a) + f(b))/2 » ne fait la moyenne que des deux valeurs aux bornes, en ignorant tout ce qui se passe entre a et b.",
       "difficulty": 2
     },
     {
@@ -238,7 +238,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "f est continue et positive sur [0, 3], donc l'aire vaut ∫₀³ x² dx = [x³/3]₀³ = 27/3 − 0 = 9 u.a ✓ (contrôle : sur [0, 3] la fonction varie de 0 à 9, donc l'aire est comprise entre 0 et 9 × 3 = 27 — 9 est bien dans cet encadrement). L'option d oublie de diviser par 3 dans la primitive et donne [x³]₀³ = 27. L'option a est la valeur moyenne de f sur [0, 3], soit 9/3 = 3, et non l'aire. L'option b est l'aire sous la droite y = x sur [0, 3], soit 9/2 : on a confondu x² avec x.",
+      "explanation": "f est continue et positive sur [0, 3], donc l'aire vaut ∫₀³ x² dx = [x³/3]₀³ = 27/3 − 0 = 9 u.a ✓ (contrôle : sur [0, 3] la fonction varie de 0 à 9, donc l'aire est comprise entre 0 et 9 × 3 = 27 — 9 est bien dans cet encadrement). La réponse 27 oublie de diviser par 3 dans la primitive et donne [x³]₀³ = 27. La réponse 3 est la valeur moyenne de f sur [0, 3], soit 9/3 = 3, et non l'aire. La réponse 9/2 est l'aire sous la droite y = x sur [0, 3], soit 9/2 : on a confondu x² avec x.",
       "difficulty": 2
     }
   ]

@@ -27,7 +27,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Le logarithme transforme un quotient en différence : ln(a/b) = ln a − ln b ✓. Contrôle numérique : ln(3/2) = ln 3 − ln 2 ≈ 1,099 − 0,693 = 0,406, et la calculatrice donne ln 1,5 ≈ 0,405 ✓. L'option a est LE piège du chapitre : on ne « simplifie » jamais par ln, et (ln 3)/(ln 2) ≈ 1,585 n'a rien à voir. L'option b est la règle du produit, pas du quotient. L'option d prend la différence dans le mauvais sens : elle vaut ln(b/a), c'est-à-dire l'opposé.",
+      "explanation": "Le logarithme transforme un quotient en différence : ln(a/b) = ln a − ln b ✓. Contrôle numérique : ln(3/2) = ln 3 − ln 2 ≈ 1,099 − 0,693 = 0,406, et la calculatrice donne ln 1,5 ≈ 0,405 ✓. La réponse « (ln a)/(ln b) » est LE piège du chapitre : on ne « simplifie » jamais par ln, et (ln 3)/(ln 2) ≈ 1,585 n'a rien à voir. La réponse « ln a + ln b » est la règle du produit, pas du quotient. La réponse « ln b − ln a » prend la différence dans le mauvais sens : elle vaut ln(b/a), c'est-à-dire l'opposé.",
       "difficulty": 1
     },
     {
@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "On applique la règle du produit puis celle de la puissance : ln(a²b) = ln(a²) + ln b = 2 ln a + ln b ✓ (contrôle avec a = b = 2 : ln 8 ≈ 2,079 et 2 ln 2 + ln 2 = 3 ln 2 ≈ 2,079 ✓). L'option a est l'erreur la plus fréquente du chapitre : seul le PRODUIT devient une somme, et avec a = b = 1 elle donnerait ln 2 ≈ 0,693 = 0, ce qui est faux. L'option b garde la multiplication au lieu de l'addition (a = b = 2 : ln 4 ≈ 1,386 ≠ 0,480). L'option c « simplifie par ln » un quotient, alors que la règle correcte est ln a − ln b.",
+      "explanation": "On applique la règle du produit puis celle de la puissance : ln(a²b) = ln(a²) + ln b = 2 ln a + ln b ✓ (contrôle avec a = b = 2 : ln 8 ≈ 2,079 et 2 ln 2 + ln 2 = 3 ln 2 ≈ 2,079 ✓). La réponse « ln(a + b) = ln a + ln b » est l'erreur la plus fréquente du chapitre : seul le PRODUIT devient une somme, et avec a = b = 1 elle donnerait ln 2 ≈ 0,693 = 0, ce qui est faux. La réponse « ln(ab) = ln a × ln b » garde la multiplication au lieu de l'addition (a = b = 2 : ln 4 ≈ 1,386 ≠ 0,480). La réponse « ln(a/b) = (ln a)/(ln b) » « simplifie par ln » un quotient, alors que la règle correcte est ln a − ln b.",
       "difficulty": 2
     },
     {
@@ -75,7 +75,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "On factorise avant tout : 9/8 = 3²/2³, donc ln(9/8) = 2 ln 3 − 3 ln 2 ≈ 2,198 − 2,079 = 0,119 ✓. Contrôle : 9/8 = 1,125 est à peine supérieur à 1, son logarithme doit donc être petit et positif ✓. L'option b oublie les exposants et calcule ln 3 − ln 2 = ln(3/2) ≈ 0,406. L'option c divise les logarithmes, (2 ln 3)/(3 ln 2) ≈ 1,057, au lieu de les soustraire. L'option d additionne au lieu de soustraire : 2 ln 3 + 3 ln 2 ≈ 4,277, qui est en fait ln 72.",
+      "explanation": "On factorise avant tout : 9/8 = 3²/2³, donc ln(9/8) = 2 ln 3 − 3 ln 2 ≈ 2,198 − 2,079 = 0,119 ✓. Contrôle : 9/8 = 1,125 est à peine supérieur à 1, son logarithme doit donc être petit et positif ✓. La réponse 0,406 oublie les exposants et calcule ln 3 − ln 2 = ln(3/2) ≈ 0,406. La réponse 1,057 divise les logarithmes, (2 ln 3)/(3 ln 2) ≈ 1,057, au lieu de les soustraire. La réponse 4,277 additionne au lieu de soustraire : 2 ln 3 + 3 ln 2 ≈ 4,277, qui est en fait ln 72.",
       "difficulty": 2
     },
     {
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "On pose X = ln x : l'équation devient X² − 3X + 2 = 0, de racines X = 1 et X = 2. Il reste à remonter grâce à la bijection : ln x = 1 donne x = e, et ln x = 2 donne x = e² (car ln(e²) = 2 ln e = 2). L'ensemble des solutions est donc {e ; e²} ≈ {2,718 ; 7,389} ✓. L'option a s'arrête aux valeurs de X sans revenir à x. L'option c change le signe des racines et donne les solutions de X = −1 et X = −2. L'option d mélange une valeur de X et une valeur de x.",
+      "explanation": "On pose X = ln x : l'équation devient X² − 3X + 2 = 0, de racines X = 1 et X = 2. Il reste à remonter grâce à la bijection : ln x = 1 donne x = e, et ln x = 2 donne x = e² (car ln(e²) = 2 ln e = 2). L'ensemble des solutions est donc {e ; e²} ≈ {2,718 ; 7,389} ✓. La réponse « {1 ; 2} » s'arrête aux valeurs de X sans revenir à x. La réponse « {1/e ; 1/e²} » change le signe des racines et donne les solutions de X = −1 et X = −2. La réponse « {2 ; e} » mélange une valeur de X et une valeur de x.",
       "difficulty": 3
     },
     {
@@ -123,7 +123,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Méthode en trois temps. Condition d'existence : 4x − 1 > 0, soit x > 1/4. Puis on écrit 0 = ln 1 et la croissance de ln donne 4x − 1 ≤ 1, soit x ≤ 1/2. En croisant, S = ]1/4, 1/2] ✓ (contrôle : pour x = 0,3, ln 0,2 ≈ −1,61 ≤ 0 ✓ ; pour x = 0,6, ln 1,4 ≈ 0,34 > 0, exclu ✓). L'option a oublie complètement la condition d'existence et garde des valeurs où ln(4x − 1) n'existe pas. L'option b utilise x > 0 au lieu de x > 1/4. L'option d renverse le sens de l'inégalité, alors que ln est croissante.",
+      "explanation": "Méthode en trois temps. Condition d'existence : 4x − 1 > 0, soit x > 1/4. Puis on écrit 0 = ln 1 et la croissance de ln donne 4x − 1 ≤ 1, soit x ≤ 1/2. En croisant, S = ]1/4, 1/2] ✓ (contrôle : pour x = 0,3, ln 0,2 ≈ −1,61 ≤ 0 ✓ ; pour x = 0,6, ln 1,4 ≈ 0,34 > 0, exclu ✓). La réponse « ]−∞, 1/2] » oublie complètement la condition d'existence et garde des valeurs où ln(4x − 1) n'existe pas. La réponse « ]0, 1/2] » utilise x > 0 au lieu de x > 1/4. La réponse « [1/2, +∞[ » renverse le sens de l'inégalité, alors que ln est croissante.",
       "difficulty": 3
     },
     {
@@ -147,7 +147,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "On résout u(x) > 0 AVANT tout autre calcul. Le trinôme se factorise : x² − x − 6 = (x + 2)(x − 3), de racines −2 et 3 ; un trinôme de coefficient dominant positif est strictement positif à l'extérieur de ses racines. Donc D_f = ]−∞, −2[ ∪ ]3, +∞[ ✓ (contrôle : en x = −3, 9 + 3 − 6 = 6 > 0 ✓ ; en x = 0, −6 < 0, exclu ✓). L'option a prend l'intervalle entre les racines, où le trinôme est négatif. L'option c oublie la branche de gauche, pourtant tout aussi valable. L'option d est l'ensemble de définition de x ↦ ln|x² − x − 6| : la valeur absolue se contenterait de u ≠ 0, mais ici u doit être strictement positif.",
+      "explanation": "On résout u(x) > 0 AVANT tout autre calcul. Le trinôme se factorise : x² − x − 6 = (x + 2)(x − 3), de racines −2 et 3 ; un trinôme de coefficient dominant positif est strictement positif à l'extérieur de ses racines. Donc D_f = ]−∞, −2[ ∪ ]3, +∞[ ✓ (contrôle : en x = −3, 9 + 3 − 6 = 6 > 0 ✓ ; en x = 0, −6 < 0, exclu ✓). La réponse « ]−2, 3[ » prend l'intervalle entre les racines, où le trinôme est négatif. La réponse « ]3, +∞[ » oublie la branche de gauche, pourtant tout aussi valable. La réponse « ℝ \\ {−2 ; 3} » est l'ensemble de définition de x ↦ ln|x² − x − 6| : la valeur absolue se contenterait de u ≠ 0, mais ici u doit être strictement positif.",
       "difficulty": 3
     }
   ]

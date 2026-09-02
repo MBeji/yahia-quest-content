@@ -27,7 +27,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Pour tester une candidate, on la dérive et on réinjecte. Avec f(x) = e^(−x) : f′(x) = −e^(−x) et −f(x) = −e^(−x), les deux membres coïncident pour tout x, donc f est solution ✓ (c'est aussi ce que donne la formule ke^(ax) avec a = −1 et k = 1). L'option b vérifie f′ = +f : c'est une solution de y′ = y. L'option a a beau porter un signe moins, il est devant l'exponentielle et non dans l'exposant : (−e^x)′ = −e^x, alors que −f(x) = e^x. L'option d n'est pas de la forme ke^(−x) : sa dérivée vaut e^(−x) − xe^(−x), qui ne peut égaler −xe^(−x) que si e^(−x) = 0, ce qui n'arrive jamais.",
+      "explanation": "Pour tester une candidate, on la dérive et on réinjecte. Avec f(x) = e^(−x) : f′(x) = −e^(−x) et −f(x) = −e^(−x), les deux membres coïncident pour tout x, donc f est solution ✓ (c'est aussi ce que donne la formule ke^(ax) avec a = −1 et k = 1). La réponse « x ↦ e^x » vérifie f′ = +f : c'est une solution de y′ = y. La réponse « x ↦ −e^x » a beau porter un signe moins, il est devant l'exponentielle et non dans l'exposant : (−e^x)′ = −e^x, alors que −f(x) = e^x. La réponse « x ↦ xe^(−x) » n'est pas de la forme ke^(−x) : sa dérivée vaut e^(−x) − xe^(−x), qui ne peut égaler −xe^(−x) que si e^(−x) = 0, ce qui n'arrive jamais.",
       "difficulty": 1
     },
     {
@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Le second membre ne dépend que de x : les solutions de y′ = f(x) sont les primitives de f, à une constante près. Une primitive de 4x³ − 1 est x⁴ − x, donc les solutions sont les x ↦ x⁴ − x + c, c ∈ ℝ ✓ (contrôle : (x⁴ − x + c)′ = 4x³ − 1 ✓). L'option c oublie la constante et ne donne qu'une solution parmi une infinité. L'option a dérive le second membre au lieu de le primitiver : (4x³ − 1)′ = 12x². L'option b applique la formule ke^(ax), réservée au type y′ = ay ; ici l'inconnue y n'apparaît pas au second membre.",
+      "explanation": "Le second membre ne dépend que de x : les solutions de y′ = f(x) sont les primitives de f, à une constante près. Une primitive de 4x³ − 1 est x⁴ − x, donc les solutions sont les x ↦ x⁴ − x + c, c ∈ ℝ ✓ (contrôle : (x⁴ − x + c)′ = 4x³ − 1 ✓). La réponse « x ↦ x⁴ − x » oublie la constante et ne donne qu'une solution parmi une infinité. La réponse « x ↦ 12x² + c, c ∈ ℝ » dérive le second membre au lieu de le primitiver : (4x³ − 1)′ = 12x². La réponse « x ↦ ke^(4x), k ∈ ℝ » applique la formule ke^(ax), réservée au type y′ = ay ; ici l'inconnue y n'apparaît pas au second membre.",
       "difficulty": 1
     },
     {
@@ -75,7 +75,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "Les solutions de y′ = 2y sont les x ↦ ke^(2x) ; la condition f(0) = ke^0 = k = −3 fixe k, d'où f(x) = −3e^(2x) ✓. Double contrôle : f′(x) = −6e^(2x) = 2f(x) ✓ et f(0) = −3 ✓. L'option a satisfait bien f(0) = −3 mais résout y′ = −2y : le signe de l'exposant a été inversé. L'option d perd le signe de la condition initiale et donne f(0) = 3. L'option c échange les rôles de a et de k : elle place le coefficient 2 devant l'exponentielle et −3 dans l'exposant.",
+      "explanation": "Les solutions de y′ = 2y sont les x ↦ ke^(2x) ; la condition f(0) = ke^0 = k = −3 fixe k, d'où f(x) = −3e^(2x) ✓. Double contrôle : f′(x) = −6e^(2x) = 2f(x) ✓ et f(0) = −3 ✓. La réponse « x ↦ −3e^(−2x) » satisfait bien f(0) = −3 mais résout y′ = −2y : le signe de l'exposant a été inversé. La réponse « x ↦ 3e^(2x) » perd le signe de la condition initiale et donne f(0) = 3. La réponse « x ↦ 2e^(−3x) » échange les rôles de a et de k : elle place le coefficient 2 devant l'exponentielle et −3 dans l'exposant.",
       "difficulty": 1
     },
     {
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "L'équation est du type y′ = ay + b avec a = 1 et b = 3 : ses solutions sont les x ↦ ke^x − b/a = ke^x − 3, et l'option b correspond à k = 1 ✓. Vérification : f′(x) = e^x et f(x) + 3 = e^x − 3 + 3 = e^x, les deux coïncident ✓. L'option c prend +b/a = +3 au lieu de −b/a : f(x) + 3 = e^x + 6 ≠ f′(x). L'option a a le bon terme constant en apparence mais le mauvais signe et un k qui ne compense rien : f′(x) = 3e^x alors que f(x) + 3 = 3e^x + 6. L'option d inverse le signe de l'exposant : sa dérivée −e^(−x) ne peut pas valoir e^(−x).",
+      "explanation": "L'équation est du type y′ = ay + b avec a = 1 et b = 3 : ses solutions sont les x ↦ ke^x − b/a = ke^x − 3, et la réponse « x ↦ e^x − 3 » correspond à k = 1 ✓. Vérification : f′(x) = e^x et f(x) + 3 = e^x − 3 + 3 = e^x, les deux coïncident ✓. La réponse « x ↦ e^x + 3 » prend +b/a = +3 au lieu de −b/a : f(x) + 3 = e^x + 6 ≠ f′(x). La réponse « x ↦ 3e^x + 3 » a le bon terme constant en apparence mais le mauvais signe et un k qui ne compense rien : f′(x) = 3e^x alors que f(x) + 3 = 3e^x + 6. La réponse « x ↦ e^(−x) − 3 » inverse le signe de l'exposant : sa dérivée −e^(−x) ne peut pas valoir e^(−x).",
       "difficulty": 2
     },
     {
@@ -123,7 +123,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "On primitive d'abord : les solutions de y′ = 3x² − 4x sont les x ↦ x³ − 2x² + c. La condition f(1) = 1 − 2 + c = 2 donne c = 3, donc f(x) = x³ − 2x² + 3 ✓. Double contrôle : f′(x) = 3x² − 4x ✓ et f(1) = 1 − 2 + 3 = 2 ✓. L'option b prend directement c = 2, la valeur imposée, sans tenir compte de x³ − 2x² en 1 : elle donne f(1) = 1. L'option a se trompe de signe dans le calcul de c et donne f(1) = −2. L'option d ne divise pas le coefficient de x en primitivant −4x : sa dérivée vaut 3x² − 8x.",
+      "explanation": "On primitive d'abord : les solutions de y′ = 3x² − 4x sont les x ↦ x³ − 2x² + c. La condition f(1) = 1 − 2 + c = 2 donne c = 3, donc f(x) = x³ − 2x² + 3 ✓. Double contrôle : f′(x) = 3x² − 4x ✓ et f(1) = 1 − 2 + 3 = 2 ✓. La réponse « x ↦ x³ − 2x² + 2 » prend directement c = 2, la valeur imposée, sans tenir compte de x³ − 2x² en 1 : elle donne f(1) = 1. La réponse « x ↦ x³ − 2x² − 1 » se trompe de signe dans le calcul de c et donne f(1) = −2. La réponse « x ↦ x³ − 4x² + 3 » ne divise pas le coefficient de x en primitivant −4x : sa dérivée vaut 3x² − 8x.",
       "difficulty": 2
     },
     {
@@ -147,7 +147,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "L'équation elle-même transforme une donnée sur f′ en une donnée sur f : puisque f′(x) = 5f(x) pour tout x, on a en particulier f′(0) = 5f(0), soit 10 = 5f(0), donc f(0) = 2 ✓ (contrôle : la solution est f(x) = 2e^(5x), et f′(0) = 10 ✓). L'option c recopie la valeur de f′(0) en croyant que f et f′ prennent la même valeur en 0. L'option d multiplie par 5 au lieu de diviser. L'option b confond f(0) avec le coefficient a de l'équation.",
+      "explanation": "L'équation elle-même transforme une donnée sur f′ en une donnée sur f : puisque f′(x) = 5f(x) pour tout x, on a en particulier f′(0) = 5f(0), soit 10 = 5f(0), donc f(0) = 2 ✓ (contrôle : la solution est f(x) = 2e^(5x), et f′(0) = 10 ✓). La réponse 10 recopie la valeur de f′(0) en croyant que f et f′ prennent la même valeur en 0. La réponse 50 multiplie par 5 au lieu de diviser. La réponse 5 confond f(0) avec le coefficient a de l'équation.",
       "difficulty": 2
     }
   ]
