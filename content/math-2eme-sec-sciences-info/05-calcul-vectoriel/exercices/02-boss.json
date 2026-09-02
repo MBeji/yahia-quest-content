@@ -1,0 +1,82 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Bases, configurations et droite d'Euler",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "u⃗ et v⃗ sont deux vecteurs du plan. On pose p⃗ = 2(u⃗ + v⃗) − 3v⃗ et q⃗ = 3(v⃗ − 4u⃗) + 6u⃗. Exprimer p⃗ en fonction de q⃗.",
+      "options": [
+        { "id": "a", "text": "p⃗ = −3q⃗" },
+        { "id": "b", "text": "p⃗ = −(1/3)q⃗" },
+        { "id": "c", "text": "p⃗ = (1/3)q⃗" },
+        { "id": "d", "text": "p⃗ = 3q⃗" }
+      ],
+      "correctOption": "b",
+      "explanation": "On développe chaque écriture séparément. D'une part p⃗ = 2u⃗ + 2v⃗ − 3v⃗ = 2u⃗ − v⃗. D'autre part q⃗ = 3v⃗ − 12u⃗ + 6u⃗ = −6u⃗ + 3v⃗, que l'on factorise en −3(2u⃗ − v⃗), c'est-à-dire q⃗ = −3p⃗. En multipliant les deux membres par −1/3, on obtient p⃗ = −(1/3)q⃗ ✓. L'écriture p⃗ = −3q⃗ échange les rôles : c'est q⃗ qui vaut −3p⃗, pas le contraire. L'écriture p⃗ = (1/3)q⃗ garde le bon coefficient en valeur absolue mais perd le signe moins apporté par la factorisation, et p⃗ = 3q⃗ cumule les deux erreurs.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une base (i⃗ ; j⃗) étant donnée, on pose e⃗ = i⃗ + j⃗ et f⃗ = i⃗ − j⃗. Pour le vecteur w⃗ = 3i⃗ + 5j⃗, quel couple de réels (a ; b) vérifie w⃗ = ae⃗ + bf⃗ ?",
+      "options": [
+        { "id": "a", "text": "(−1 ; 4)" },
+        { "id": "b", "text": "(3 ; 5)" },
+        { "id": "c", "text": "(4 ; −1)" },
+        { "id": "d", "text": "(4 ; 1)" }
+      ],
+      "correctOption": "c",
+      "explanation": "On remplace e⃗ et f⃗ par leur écriture : ae⃗ + bf⃗ = a(i⃗ + j⃗) + b(i⃗ − j⃗) = (a + b)i⃗ + (a − b)j⃗. Les composantes dans une base étant uniques, on identifie a + b = 3 et a − b = 5. La somme des deux égalités donne 2a = 8, donc a = 4, puis b = 3 − 4 = −1 : le couple cherché est (4 ; −1) ✓. Le couple (3 ; 5) recopie les composantes de l'ancienne base, alors que changer de base change les composantes. Le couple (−1 ; 4) intervertit les deux coefficients. Le couple (4 ; 1) perd le signe de b et correspondrait au vecteur 4e⃗ + f⃗ = 5i⃗ + 3j⃗.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le triangle ABC dessiné ci-dessous, le point M de [AB] vérifie AM⃗ = (2/5)AB⃗, et la parallèle à (BC) menée par M rencontre (AC) en N. Que vaut alors MN⃗ ?\n<svg viewBox=\"0 0 320 230\"><polygon points=\"40,30 30,200 280,190\" fill=\"#0f6e56\" opacity=\"0.10\"/><polygon points=\"40,30 30,200 280,190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><path d=\"M36 98 L136 94\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"30\" r=\"4\"/><circle cx=\"30\" cy=\"200\" r=\"4\"/><circle cx=\"280\" cy=\"190\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"36\" cy=\"98\" r=\"4.5\"/><circle cx=\"136\" cy=\"94\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"42\" y=\"20\" fill=\"#0f172a\">A</text><text x=\"18\" y=\"216\" fill=\"#0f172a\">B</text><text x=\"294\" y=\"200\" fill=\"#0f172a\">C</text><text x=\"20\" y=\"102\" fill=\"#0f6e56\">M</text><text x=\"144\" y=\"84\" fill=\"#0f6e56\">N</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "(2/5)BC⃗" },
+        { "id": "b", "text": "(2/5)CB⃗" },
+        { "id": "c", "text": "(3/5)BC⃗" },
+        { "id": "d", "text": "(5/2)BC⃗" }
+      ],
+      "correctOption": "a",
+      "explanation": "C'est la forme vectorielle du théorème de Thalès : quand (MN) et (BC) sont parallèles, le coefficient qui relie AM⃗ à AB⃗ relie aussi AN⃗ à AC⃗ et MN⃗ à BC⃗. De AM⃗ = (2/5)AB⃗ on tire donc MN⃗ = (2/5)BC⃗ ✓. Le vecteur (2/5)CB⃗ a le bon coefficient mais le sens contraire : dans la configuration, M joue le rôle de B et N celui de C, donc MN⃗ suit BC⃗. Le vecteur (3/5)BC⃗ utilise le coefficient de la partie restante [MB], qui vaut bien (3/5)AB⃗ mais ne commande pas MN⃗. Enfin (5/2)BC⃗ renverse le rapport et donnerait un segment plus long que [BC], impossible pour un segment intérieur au triangle.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un repère orthonormé étant fixé, on considère les points A(0 ; 0), B(4 ; 2) et C(m ; 6), où m désigne un réel. Pour quelle valeur de m le triangle ABC est-il rectangle en A ?",
+      "options": [
+        { "id": "a", "text": "−12" },
+        { "id": "b", "text": "−3" },
+        { "id": "c", "text": "3" },
+        { "id": "d", "text": "12" }
+      ],
+      "correctOption": "b",
+      "explanation": "Le triangle est rectangle en A lorsque les vecteurs AB⃗ et AC⃗ sont orthogonaux. Comme A est l'origine, AB⃗ a pour composantes (4 ; 2) et AC⃗ pour composantes (m ; 6). Dans un repère orthonormé, la condition s'écrit xx' + yy' = 0, soit 4m + 2 × 6 = 0, c'est-à-dire 4m + 12 = 0 et enfin m = −3 ✓. La valeur 3 oublie le signe, alors que le produit 4m doit valoir −12. La valeur −12 s'arrête à 4m = −12 sans diviser par 4. Quant à la valeur 12, elle résout la condition de colinéarité 4 × 6 − 2m = 0 : elle alignerait A, B et C, si bien qu'il n'y aurait même plus de triangle.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABC est un triangle et G son centre de gravité. Décrire l'ensemble des points M tels que ‖MA⃗ + MB⃗ + MC⃗‖ = 6.",
+      "options": [
+        { "id": "a", "text": "Le cercle de centre G et de rayon 2" },
+        { "id": "b", "text": "Le cercle de centre G et de rayon 3" },
+        { "id": "c", "text": "Le cercle de centre G et de rayon 6" },
+        { "id": "d", "text": "Le cercle de centre G et de rayon 18" }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour tout point M du plan, la relation du centre de gravité donne MA⃗ + MB⃗ + MC⃗ = 3MG⃗. La condition devient ‖3MG⃗‖ = 6 ; or la norme d'un produit par un réel vaut la valeur absolue de ce réel multipliée par la norme, donc 3 × MG = 6, c'est-à-dire MG = 2. L'ensemble cherché est bien le cercle de centre G et de rayon 2 ✓. Le rayon 6 oublie purement et simplement le facteur 3 apporté par le centre de gravité. Le rayon 18 multiplie par 3 au lieu de diviser. Le rayon 3 prend la moitié de la valeur 6 de l'énoncé, comme s'il n'y avait que deux points au lieu de trois.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le quadrilatère ABCD dessiné ci-dessous est quelconque ; I désigne le milieu de sa diagonale [AC] et J celui de sa diagonale [BD]. Réduire l'expression AB⃗ + AD⃗ + CB⃗ + CD⃗.\n<svg viewBox=\"0 0 320 230\"><polygon points=\"40,60 180,30 280,150 90,200\" fill=\"#0f6e56\" opacity=\"0.08\"/><polygon points=\"40,60 180,30 280,150 90,200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><path d=\"M40 60 L280 150 M180 30 L90 200\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"6 4\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"60\" r=\"4\"/><circle cx=\"180\" cy=\"30\" r=\"4\"/><circle cx=\"280\" cy=\"150\" r=\"4\"/><circle cx=\"90\" cy=\"200\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"160\" cy=\"105\" r=\"5\"/><circle cx=\"135\" cy=\"115\" r=\"5\"/></g><g font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"28\" y=\"54\" fill=\"#0f172a\">A</text><text x=\"186\" y=\"20\" fill=\"#0f172a\">B</text><text x=\"294\" y=\"152\" fill=\"#0f172a\">C</text><text x=\"80\" y=\"218\" fill=\"#0f172a\">D</text><text x=\"172\" y=\"96\" fill=\"#0f6e56\">I</text><text x=\"120\" y=\"132\" fill=\"#0f6e56\">J</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "0⃗" },
+        { "id": "b", "text": "2IJ⃗" },
+        { "id": "c", "text": "4IJ⃗" },
+        { "id": "d", "text": "4JI⃗" }
+      ],
+      "correctOption": "c",
+      "explanation": "On regroupe les quatre termes autour des deux milieux. Comme I est le milieu de [AC], on a pour tout point M l'égalité MA⃗ + MC⃗ = 2MI⃗. Prise en M = B, elle donne BA⃗ + BC⃗ = 2BI⃗, donc AB⃗ + CB⃗ = 2IB⃗ en passant aux opposés. Prise en M = D, elle donne DA⃗ + DC⃗ = 2DI⃗, donc AD⃗ + CD⃗ = 2ID⃗. La somme cherchée vaut ainsi 2IB⃗ + 2ID⃗ = 2(IB⃗ + ID⃗) ; et comme J est le milieu de [BD], IB⃗ + ID⃗ = 2IJ⃗. Le résultat est donc 4IJ⃗ ✓. Le vecteur 2IJ⃗ perd l'un des deux facteurs en chemin, et 4JI⃗ a le bon coefficient mais parcourt le segment dans l'autre sens. Quant au vecteur nul, il ne s'obtient que si les deux diagonales ont le même milieu, c'est-à-dire si ABCD est un parallélogramme, ce que l'énoncé n'affirme pas.",
+      "difficulty": 3
+    }
+  ]
+}

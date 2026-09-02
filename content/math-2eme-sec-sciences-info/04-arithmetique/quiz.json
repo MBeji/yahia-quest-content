@@ -1,0 +1,65 @@
+{
+  "title": "Test de compréhension ⭐ : Arithmétique",
+  "questions": [
+    {
+      "prompt": "La calculatrice affiche 358 ÷ 15 = 23,866666. Quel est le reste de la division euclidienne de 358 par 15 ?",
+      "options": [
+        { "id": "a", "text": "13" },
+        { "id": "b", "text": "23" },
+        { "id": "c", "text": "28" },
+        { "id": "d", "text": "86" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le quotient est la partie entière de l'affichage, soit 23 ; le reste s'obtient ensuite par soustraction : 358 − 15 × 23 = 358 − 345 = 13 ✓, et l'on a bien 0 ≤ 13 < 15. Prendre 86 revient à lire les décimales affichées comme s'il s'agissait du reste, alors qu'elles valent le quotient de r par 15. Le nombre 28 provient d'une division non achevée (358 − 15 × 22 = 28) : un reste doit rester inférieur au diviseur 15, il faut donc poursuivre. Quant à 23, c'est le quotient et non le reste.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Nous sommes un mardi. Quel jour de la semaine serons-nous dans 100 jours ?",
+      "options": [
+        { "id": "a", "text": "mardi" },
+        { "id": "b", "text": "mercredi" },
+        { "id": "c", "text": "jeudi" },
+        { "id": "d", "text": "vendredi" }
+      ],
+      "correctOption": "c",
+      "explanation": "Les jours se répètent de 7 en 7 : seul le reste de la division de 100 par 7 compte. Or 100 = 7 × 14 + 2, donc on avance de 2 jours à partir du mardi, ce qui donne jeudi ✓. Rester au mardi revient à croire que 100 est un multiple de 7. Le mercredi correspond à un décalage de 1 jour, c'est-à-dire à 99 jours, et le vendredi à un décalage de 3 jours, c'est-à-dire à 101 jours.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans l'écriture 83a6, la lettre a désigne le chiffre des dizaines d'un entier à quatre chiffres. Pour quelle valeur de a cet entier est-il divisible par 9 ?",
+      "options": [
+        { "id": "a", "text": "0" },
+        { "id": "b", "text": "1" },
+        { "id": "c", "text": "4" },
+        { "id": "d", "text": "9" }
+      ],
+      "correctOption": "b",
+      "explanation": "Un entier est divisible par 9 si et seulement si la somme de ses chiffres l'est. Ici cette somme vaut 8 + 3 + a + 6 = 17 + a, comprise entre 17 et 26 puisque a est un chiffre : le seul multiple de 9 possible est 18, donc a vaut 1 ✓ (on vérifie 8316 = 9 × 924). Le chiffre 0 suppose que 17 convient déjà, ce qui trahit une erreur d'addition. Le chiffre 4 donne la somme 21, multiple de 3 mais pas de 9 : c'est la confusion classique entre les deux critères. Enfin le chiffre 9 traduit l'idée fausse qu'il faudrait un 9 dans l'écriture, alors que la somme vaudrait alors 26.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sans poser l'opération, quel est le reste de la division de 2749 par 11 ?",
+      "options": [
+        { "id": "a", "text": "0" },
+        { "id": "b", "text": "4" },
+        { "id": "c", "text": "10" },
+        { "id": "d", "text": "16" }
+      ],
+      "correctOption": "c",
+      "explanation": "On numérote les chiffres de droite à gauche : les rangs impairs portent 9 et 7, les rangs pairs portent 4 et 2. La somme alternée vaut donc d = 16 − 6 = 10, et comme 0 ≤ 10 < 11, c'est le reste cherché ✓ (on vérifie 2749 = 11 × 249 + 10). Conclure 0 revient à appliquer à 11 le critère de 9 : la somme des chiffres vaut 22, qui est bien un multiple de 11, mais cette somme ne dit rien de la divisibilité par 11. Le nombre 4 est le reste de 2749 dans la division par 9, pas par 11. Le nombre 16 s'arrête à la somme des chiffres de rang impair, sans lui retrancher celle des rangs pairs.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la décomposition de 252 en produit de facteurs premiers ?",
+      "options": [
+        { "id": "a", "text": "2 × 3² × 14" },
+        { "id": "b", "text": "2² × 3² × 7" },
+        { "id": "c", "text": "2² × 63" },
+        { "id": "d", "text": "2³ × 3² × 7" }
+      ],
+      "correctOption": "b",
+      "explanation": "On décompose pas à pas : 252 = 4 × 63 = 2² × 9 × 7 = 2² × 3² × 7 ✓, et chacun des facteurs 2, 3 et 7 est bien premier. Les écritures 2² × 63 et 2 × 3² × 14 donnent elles aussi 252, mais 63 = 7 × 9 et 14 = 2 × 7 ne sont pas premiers : la décomposition n'y est pas achevée. Quant à 2³ × 3² × 7, elle vaut 504 et non 252, l'exposant du facteur 2 y étant trop grand.",
+      "difficulty": 2
+    }
+  ]
+}

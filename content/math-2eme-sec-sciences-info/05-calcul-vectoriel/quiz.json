@@ -1,0 +1,65 @@
+{
+  "title": "Test de compréhension ⭐ : Calcul vectoriel",
+  "questions": [
+    {
+      "prompt": "Trois points A, B et C sont donnés dans le plan. Que vaut la somme AB⃗ + BC⃗ ?",
+      "options": [
+        { "id": "a", "text": "AC⃗" },
+        { "id": "b", "text": "BA⃗" },
+        { "id": "c", "text": "CA⃗" },
+        { "id": "d", "text": "0⃗" }
+      ],
+      "correctOption": "a",
+      "explanation": "La relation de Chasles enchaîne les deux déplacements : on part de A, on passe par B et on arrive en C, donc AB⃗ + BC⃗ = AC⃗ ✓. Le vecteur CA⃗ est l'opposé du bon résultat : il va de C vers A, c'est-à-dire dans l'autre sens. Le vecteur BA⃗, lui, est l'opposé de AB⃗ : il annulerait le premier terme au lieu de s'y ajouter. Quant au vecteur nul, il ne s'obtiendrait que dans le cas particulier où C serait confondu avec A, ce que l'énoncé n'indique pas.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On considère trois points A, B et C, le point A étant distinct de B. À quelle condition portant sur des vecteurs sont-ils alignés ?",
+      "options": [
+        { "id": "a", "text": "Lorsque AB⃗ et AC⃗ sont colinéaires" },
+        { "id": "b", "text": "Lorsque AB⃗ et AC⃗ sont orthogonaux" },
+        { "id": "c", "text": "Lorsque AB⃗ et AC⃗ ont la même norme" },
+        { "id": "d", "text": "Lorsque AB⃗ et AC⃗ sont tous deux unitaires" }
+      ],
+      "correctOption": "a",
+      "explanation": "Dire que A, B et C sont alignés, c'est dire que C appartient à la droite (AB), donc qu'il existe un réel x tel que AC⃗ = xAB⃗ : les vecteurs AB⃗ et AC⃗ sont colinéaires ✓. Deux vecteurs orthogonaux non nuls portent au contraire des directions perpendiculaires, et le point C se trouverait hors de la droite (AB). Avoir la même norme signifie seulement que A est à égale distance de B et de C, ce qui n'impose aucune direction commune. Être tous deux unitaires fixe les longueurs et rien d'autre : là encore, la direction reste libre.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un repère du plan, A a pour coordonnées (−1 ; 4) et B pour coordonnées (3 ; 2). Quelles sont les composantes du vecteur AB⃗ ?",
+      "options": [
+        { "id": "a", "text": "(−4 ; 2)" },
+        { "id": "b", "text": "(2 ; 6)" },
+        { "id": "c", "text": "(4 ; −2)" },
+        { "id": "d", "text": "(4 ; 2)" }
+      ],
+      "correctOption": "c",
+      "explanation": "On soustrait les coordonnées du point de départ à celles du point d'arrivée : 3 − (−1) = 4 pour l'abscisse et 2 − 4 = −2 pour l'ordonnée, donc AB⃗(4 ; −2) ✓. Le couple (−4 ; 2) est celui de BA⃗ : la soustraction a été faite dans le mauvais sens. Le couple (2 ; 6) additionne les coordonnées au lieu de les soustraire. Enfin le couple (4 ; 2) calcule bien 3 − (−1) pour l'abscisse, mais 4 − 2 pour l'ordonnée : la soustraction doit se faire dans le même ordre sur les deux lignes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une base orthonormée étant fixée, que peut-on affirmer des deux vecteurs u⃗(2 ; −3) et v⃗(−6 ; −4) ?",
+      "options": [
+        { "id": "a", "text": "Ils sont colinéaires" },
+        { "id": "b", "text": "Ils sont orthogonaux" },
+        { "id": "c", "text": "Ils sont de même norme" },
+        { "id": "d", "text": "Ils sont opposés l'un de l'autre" }
+      ],
+      "correctOption": "b",
+      "explanation": "Dans une base orthonormée, deux vecteurs sont orthogonaux si et seulement si xx' + yy' = 0. Ici 2 × (−6) + (−3) × (−4) = −12 + 12 = 0 : les deux vecteurs sont bien orthogonaux ✓. Ils ne sont pas colinéaires, car leur déterminant vaut 2 × (−4) − (−6) × (−3) = −8 − 18 = −26, qui n'est pas nul : confondre les deux conditions est l'erreur la plus fréquente du chapitre. Leurs normes valent √13 et √52, donc elles diffèrent. Et ils ne sont pas opposés, sinon on aurait v⃗(−2 ; 3).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur la figure ci-dessous, I désigne le milieu de [AB] et M un point quelconque. Par quel vecteur la somme MA⃗ + MB⃗ se remplace-t-elle ?\n<svg viewBox=\"0 0 320 180\"><path d=\"M50 140 L250 140\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\"/><path d=\"M180 40 L50 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\"/><polygon points=\"50,140 57.3,128.1 63.4,136\" fill=\"#0f6e56\"/><path d=\"M180 40 L250 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\"/><polygon points=\"250,140 238.5,132.2 246.7,126.5\" fill=\"#0f6e56\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"140\" r=\"4\"/><circle cx=\"150\" cy=\"140\" r=\"4\"/><circle cx=\"250\" cy=\"140\" r=\"4\"/><circle cx=\"180\" cy=\"40\" r=\"4\"/></g><g font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"42\" y=\"160\">A</text><text x=\"150\" y=\"162\">I</text><text x=\"258\" y=\"160\">B</text><text x=\"180\" y=\"28\">M</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "0⃗" },
+        { "id": "b", "text": "MI⃗" },
+        { "id": "c", "text": "2IM⃗" },
+        { "id": "d", "text": "2MI⃗" }
+      ],
+      "correctOption": "d",
+      "explanation": "On fait apparaître le milieu I par la relation de Chasles : MA⃗ + MB⃗ = (MI⃗ + IA⃗) + (MI⃗ + IB⃗) = 2MI⃗ + (IA⃗ + IB⃗). Comme I est le milieu de [AB], on a IA⃗ + IB⃗ = 0⃗, et il reste MA⃗ + MB⃗ = 2MI⃗ ✓. Le vecteur 2IM⃗ est l'opposé du bon résultat : il pointe de I vers M au lieu d'aller de M vers I. Le vecteur MI⃗ oublie le facteur 2, alors que deux copies de MI⃗ apparaissent dans le calcul. Enfin la somme ne serait nulle que si M était confondu avec I, ce qui n'est pas le cas d'un point quelconque.",
+      "difficulty": 2
+    }
+  ]
+}

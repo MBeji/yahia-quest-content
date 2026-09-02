@@ -1,0 +1,82 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec le calcul vectoriel",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Écrire plus simplement le vecteur 2u⃗ + 7u⃗ − 3u⃗.",
+      "options": [
+        { "id": "a", "text": "−8u⃗" },
+        { "id": "b", "text": "6u⃗" },
+        { "id": "c", "text": "9u⃗" },
+        { "id": "d", "text": "12u⃗" }
+      ],
+      "correctOption": "b",
+      "explanation": "Trois multiples d'un même vecteur s'additionnent en additionnant leurs coefficients : 2 + 7 − 3 = 6, donc 2u⃗ + 7u⃗ − 3u⃗ = 6u⃗ ✓. Le vecteur 12u⃗ additionne les trois coefficients sans tenir compte du signe moins, en calculant 2 + 7 + 3. Le vecteur 9u⃗ s'arrête à 2 + 7 et oublie le troisième terme. Le vecteur −8u⃗ étend le signe moins au terme 7u⃗ et calcule 2 − 7 − 3.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans une base (i⃗ ; j⃗), le vecteur u⃗ admet pour composantes (−2 ; 5). Quelles sont celles de 3u⃗ ?",
+      "options": [
+        { "id": "a", "text": "(−6 ; 5)" },
+        { "id": "b", "text": "(−6 ; 15)" },
+        { "id": "c", "text": "(−2 ; 15)" },
+        { "id": "d", "text": "(1 ; 8)" }
+      ],
+      "correctOption": "b",
+      "explanation": "Multiplier un vecteur par un réel revient à multiplier chacune de ses composantes par ce réel : 3 × (−2) = −6 et 3 × 5 = 15, donc 3u⃗ a pour composantes (−6 ; 15) ✓. Le couple (−6 ; 5) n'a multiplié que l'abscisse et le couple (−2 ; 15) que l'ordonnée, alors que le facteur agit sur les deux. Le couple (1 ; 8) ajoute 3 à chaque composante au lieu de multiplier par 3.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Calculer le déterminant des deux vecteurs u⃗(4 ; −1) et v⃗(2 ; 3), exprimés dans une même base.",
+      "options": [
+        { "id": "a", "text": "−14" },
+        { "id": "b", "text": "5" },
+        { "id": "c", "text": "10" },
+        { "id": "d", "text": "14" }
+      ],
+      "correctOption": "d",
+      "explanation": "Le déterminant de u⃗(x ; y) et v⃗(x' ; y') vaut xy' − x'y : ce sont les produits pris en croix. Ici 4 × 3 − 2 × (−1) = 12 + 2 = 14 ✓, un nombre non nul, donc les deux vecteurs ne sont pas colinéaires. La valeur 10 vient d'une erreur de signe sur le second produit, calculé comme 12 − 2. La valeur −14 échange les rôles des deux vecteurs et calcule x'y − xy'. La valeur 5 applique la formule de l'orthogonalité xx' + yy' = 4 × 2 + (−1) × 3, qui répond à une tout autre question.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quand dit-on que le couple (i⃗ ; j⃗) est une base de l'ensemble des vecteurs du plan ?",
+      "options": [
+        { "id": "a", "text": "Lorsque i⃗ et j⃗ ne sont pas colinéaires" },
+        { "id": "b", "text": "Lorsque i⃗ et j⃗ ont la même norme et le même sens" },
+        { "id": "c", "text": "Lorsque i⃗ et j⃗ sont orthogonaux" },
+        { "id": "d", "text": "Lorsque i⃗ et j⃗ sont tous deux unitaires" }
+      ],
+      "correctOption": "a",
+      "explanation": "Une base du plan est, par définition, un couple de deux vecteurs non colinéaires ✓ : c'est exactement la condition qui garantit que tout vecteur du plan s'écrive, de façon unique, sous la forme xi⃗ + yj⃗. Exiger l'orthogonalité, ou que les deux vecteurs soient unitaires, est plus fort que nécessaire : réunies, ces deux exigences définissent une base orthonormée, qui n'est qu'un cas particulier de base. Quant à deux vecteurs de même norme et de même sens, ils sont carrément égaux, donc colinéaires : c'est précisément la situation qui interdit de former une base.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une base orthonormée est fixée. Lequel des quatre vecteurs suivants est unitaire ?",
+      "options": [
+        { "id": "a", "text": "u⃗(0,4 ; 0,6)" },
+        { "id": "b", "text": "u⃗(0,5 ; 0,5)" },
+        { "id": "c", "text": "u⃗(0,6 ; 0,8)" },
+        { "id": "d", "text": "u⃗(1 ; 1)" }
+      ],
+      "correctOption": "c",
+      "explanation": "Un vecteur est unitaire lorsque sa norme vaut 1, et dans une base orthonormée cette norme se calcule par √(x² + y²). Pour u⃗(0,6 ; 0,8), on obtient √(0,36 + 0,64) = √1 = 1 ✓. Pour u⃗(0,4 ; 0,6), le calcul donne √(0,16 + 0,36), soit environ 0,72 : croire qu'il suffit que la somme des composantes vaille 1 est le piège courant. Pour u⃗(0,5 ; 0,5), la norme vaut environ 0,71. Enfin pour u⃗(1 ; 1), elle vaut √2, soit environ 1,41 : un vecteur unitaire n'est pas un vecteur dont les composantes valent 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un triangle ABC, G désigne le centre de gravité et I le milieu de [BC]. Quelle égalité est vraie ?",
+      "options": [
+        { "id": "a", "text": "AG⃗ = (1/3)AI⃗" },
+        { "id": "b", "text": "AG⃗ = (2/3)AI⃗" },
+        { "id": "c", "text": "AG⃗ = (3/2)AI⃗" },
+        { "id": "d", "text": "AI⃗ = (2/3)AG⃗" }
+      ],
+      "correctOption": "b",
+      "explanation": "Le centre de gravité se situe aux deux tiers de chaque médiane à partir du sommet : sur la médiane [AI], cela s'écrit AG⃗ = (2/3)AI⃗ ✓, et place bien G entre A et I, plus près de I que de A. L'égalité AG⃗ = (1/3)AI⃗ place G au tiers du chemin seulement, donc du mauvais côté du milieu de la médiane. L'égalité AG⃗ = (3/2)AI⃗ envoie G au-delà du point I, à l'extérieur du triangle. Enfin AI⃗ = (2/3)AG⃗ échange les rôles des deux vecteurs : dans ce sens, la relation correcte est AI⃗ = (3/2)AG⃗.",
+      "difficulty": 2
+    }
+  ]
+}
