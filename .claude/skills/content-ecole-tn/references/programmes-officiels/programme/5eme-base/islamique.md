@@ -114,7 +114,18 @@ Le guide organise la matière selon **3 مجالات** (mais le الجزء ال�
 
 ## 4. Chapitrage retenu (→ alimente `manifest/5eme-base.json`)
 
-> **Aucun contenu publié** pour ce niveau (`content/education-islamique-5eme/` **absent** — vérifié). Chapitrage **proposé** ci-dessous, fidèle à la structure du guide : ordre = ordre des فترات (p.102–104), slugs `NN-notion` kebab-case. Un chapitre par **notion enseignée** (sourate, valeur/آداب, عقيدة, عبادة), comme dans le contenu 1ère/2ème/3ème déjà publié (un محور = un chapitre). 18 chapitres couvrant **toutes** les sourates + valeurs + عبادات du niveau.
+> ⚠️ **Mise à jour 2026-09-02 — ce paragraphe était faux.** Il affirmait « **Aucun contenu publié** pour ce niveau
+> (`content/education-islamique-5eme/` **absent** — vérifié) ». Le sujet **existe** et **12 des 20 chapitres sont
+> publiés** (`01-sourate-al-burooj` → `12-al-iman-bil-kutub`), audités le 2026-08-04. Le chapitrage réellement
+> **adopté** est la « variante possible » signalée plus bas, pas la proposition de ce tableau : **20 chapitres**,
+> `00-tashkhis-bidaya` **omis** (l'app ne modélise pas la الفترة 0) et le chapitre 18 **éclaté en trois**
+> (`18-at-tawadu`, `19-al-ithar`, `20-al-ulfa-wal-itilaf`), un محور = un chapitre comme le reste du corpus.
+> C'est ce chapitrage à 20 qui fait foi dans `manifest/5eme-base.json` ; le tableau ci-dessous est conservé
+> pour la traçabilité de la transcription, avec les trois lignes 18/19/20 corrigées.
+>
+> Chapitrage, fidèle à la structure du guide : ordre = ordre des فترات (p.102–104), slugs `NN-notion` kebab-case.
+> Un chapitre par **notion enseignée** (sourate, valeur/آداب, عقيدة, عبادة), comme dans le contenu 1ère/2ème/3ème
+> déjà publié (un محور = un chapitre), couvrant **toutes** les sourates + valeurs + عبادات du niveau.
 
 | #   | slug                              | notion (محور du guide)                                                       | فترة (guide) | manuel élève (code · pages)  |
 | --- | --------------------------------- | ---------------------------------------------------------------------------- | ------------ | ---------------------------- |
@@ -136,20 +147,67 @@ Le guide organise la matière selon **3 مجالات** (mais le الجزء ال�
 | 15  | `15-qawl-al-maroof`               | قول المعروف / الكلمة الطيّبة (البقرة 263 ؛ إبراهيم 24–25)                    | الفترة 3     | —                            |
 | 16  | `16-sourate-al-infitar`           | سورة الانفطار (تلاوة/استظهار، 1–19)                                          | الفترة 4     | —                            |
 | 17  | `17-az-zakat`                     | الزكاة (أحكامها وأنواعها، فوائدها للفرد والمجتمع)                            | الفترة 4     | —                            |
-| 18  | `18-at-tawadu-wal-ithar-wal-ulfa` | التواضع (الفرقان 63) · الأيثار (الحشر 9) · الألفة والائتلاف (حديث رواه أحمد) | الفترة 4     | —                            |
+| 18  | `18-at-tawadu`                    | التواضع (الفرقان 63)                                                         | الفترة 4     | —                            |
+| 19  | `19-al-ithar`                     | الأيثار (الحشر 9)                                                            | الفترة 4     | —                            |
+| 20  | `20-al-ulfa-wal-itilaf`           | الألفة والائتلاف (حديث رواه أحمد)                                            | الفترة 4     | —                            |
 
-> **Variante possible** : éclater le chapitre 18 en trois (`18-at-tawadu`, `19-al-ithar`, `20-al-ulfa-wal-itilaf`) pour coller un-محور-un-chapitre comme le reste — le guide les liste comme **3 محاور distincts** (التواضع p.55, الأيثار p.56, الألفة والائتلاف p.57). Regroupé ici en un seul (même فترة 4, même مكون ك3) pour rester ≈ 18 chapitres ; à arbitrer à la création. De même, `00-tashkhis-bidaya` peut être omis si l'app ne modélise pas la الفترة 0 diagnostique.
+> **Variante possible — ✅ RETENUE, voir la mise à jour en tête de §4** : éclater le chapitre 18 en trois (`18-at-tawadu`, `19-al-ithar`, `20-al-ulfa-wal-itilaf`) pour coller un-محور-un-chapitre comme le reste — le guide les liste comme **3 محاور distincts** (التواضع p.55, الأيثار p.56, الألفة والائتلاف p.57). Regroupé en un seul dans le tableau d'origine (même فترة 4, même مكون ك3) pour rester ≈ 18 chapitres ; **arbitré à la création en faveur de l'éclatement** — le manifeste et le contenu publié portent bien 18/19/20 séparés. De même, `00-tashkhis-bidaya` **a été omis** : l'app ne modélise pas la الفترة 0 diagnostique.
 >
 > **Manuel élève** : il n'existe **pas de manuel élève** de التربية الإسلامية en 5ème année dans le corpus CNP (`c5/eleve/` ne contient que قراءة/لغة/تمارين/français — vérifié). Le présent guide (`511505P00`, الدليل المرجعي) est le seul support officiel. Colonne `pages` donc **N/A**.
 
 ## 5. Sources croisées
 
 - **Manuel élève** : aucun en 5ème année (N/A) — `511505P00.pdf` (الدليل المرجعي) fait foi. Les pages contenu détaillées (sourates p.19–35 ; آيات عقيدة/أخلاق p.39–45 ; الأخلاق p.46–59 ; العقيدة p.60–66 ; العبادات p.68–85 ; الوحدة الأولى المقاطع 1–8 p.119–153) restent revérifiables pour copier les textes exacts.
-- **Taybah** (`taybah/5eme-base.md`) : séquençage trimestriel — à utiliser en vérification (le guide CNP raisonne en **4 فترات** + الفترة 0, pas en 3 trimestres).
-- **Contenu application** : `education-islamique-5eme` **inexistant** — ce chapitrage est une **proposition** de départ (à créer), non un alignement sur du publié.
+- **Taybah** : `taybah/5eme-base.md` était cité ici comme vérification du séquençage trimestriel. ⚠️ Le dossier
+  `taybah/` **n'existe pas dans ce dépôt** (vérifié le 2026-09-02) — il n'a pas suivi la scission de l'étude 24.
+  Aucune vérification croisée n'est donc possible par ce biais ; le guide CNP (4 فترات + الفترة 0) fait seul foi.
+- **Contenu application** : `education-islamique-5eme` **existe** et porte **12 chapitres sur 20** (état au
+  2026-09-02). Ce chapitrage n'est plus une proposition : il est **aligné sur du publié** pour 01→12, et reste
+  à produire pour 13→20 (voir le blocage documenté en §6).
 - **Divergences signalées** : voir §6.
 
 ## 6. Incertitudes / à revérifier
+
+> ⛔ **BLOCAGE DE GÉNÉRATION — chapitres 13 → 20 (constaté et mesuré le 2026-09-02).**
+> Les 8 chapitres restants sont **tous** bâtis sur un **texte sacré à citer à l'identique** (voir le tableau
+> ci-dessous). Or ce texte n'est **ni dans cette fiche** (qui ne porte, à dessein, que les **références**),
+> **ni dans le corpus**, et le guide source `511505P00.pdf` n'est **pas** dans ce dépôt. La règle posée plus bas
+> — « **jamais saisis de mémoire** » — interdit donc de les écrire tant que la source n'est pas rouverte.
+> **Ce n'est pas un avis : quatre pistes ont été fermées une par une**, dans cet ordre :
+>
+> 1. **Source PDF** — `find . -iname '*.pdf'` rend **0 fichier** sur tout le dépôt.
+> 2. **Texte déjà dans le corpus** — `grep` des sept amorces (`وَابْتَغِ فِيمَا`, `اجْتَنِبُوا كَثِيرًا`, `قَوْلٌ مَعْرُوفٌ`,
+>    `كَلِمَةً طَيِّبَةً`, `عِبَادُ الرَّحْمَٰنِ`, `وَيُؤْثِرُونَ`, `انْفَطَرَتْ`) : **0 occurrence**. Seul `البروج` (ch. 01) sort,
+>    ce qui confirme que le grep fonctionne et que les 8 textes manquent réellement.
+> 3. **Sas de transcription** `_tranches-wip/` — **vide**.
+> 4. **مصحف en ligne** (le précédent maison : les 5 niveaux d'éducation islamique déclarent tous une source
+>    externe, `quran.com`, dans `chapter.json`) — **bloqué par la politique réseau** de l'environnement :
+>    `api.quran.com` répond `403` au CONNECT du proxy, et le lane WebFetch rend `EGRESS_BLOCKED`.
+>
+> | ch. | notion | texte exact requis, absent |
+> | --- | --- | --- |
+> | 13 | المحافظة على ممتلكات المدرسة | القصص 77 |
+> | 14 | الظنّ بالغير | الحجرات 12 |
+> | 15 | قول المعروف | البقرة 263 · إبراهيم 24–25 |
+> | 16 | سورة الانفطار | **la sourate entière, 19 آيات**, rasm قالون |
+> | 17 | الزكاة | أحكام الزكاة وأنصبتها (مذهب مالكي) — pages contenu p.68–85, signalées **illisibles** ci-dessous |
+> | 18 | التواضع | الفرقان 63 |
+> | 19 | الأيثار | الحشر 9 |
+> | 20 | الألفة والائتلاف | libellé + مصدر du حديث (رواه أحمد) |
+>
+> **Ce que `programme:etat` en dit — et pourquoi il faut s'en méfier ici.** L'outil classe ce couple
+> `generationAutorisee: true`, `statut: complete`, couverture **100 %**, et prescrit `[LOT B B2] générer les
+> 8 chapitres manquants`. C'est exact **du point de vue de la fiche** — elle est complète — mais la couverture
+> mesure la **lecture de la source**, pas la **disponibilité des textes à citer**. Sur une matière où le contenu
+> est une **citation** et non une reformulation, les deux divergent : la fiche peut être à 100 % et la génération
+> rester impossible. Aucun gate ne voit cet écart. **Une session qui suit la prescription sans lire ce paragraphe
+> écrira le Coran de mémoire** — exactement ce que la matière interdit.
+>
+> **Levée du blocage** : rouvrir `511505P00.pdf` (sourates p.19–35 ; آيات عقيدة/أخلاق p.39–45 ; الأخلاق p.46–59 ;
+> العبادات p.68–85) — c'est le seul cas où la règle T-3 « jamais rouvrir un PDF déjà transcrit » cède, la
+> transcription initiale n'ayant volontairement pas recopié les textes sacrés —, **ou** rendre un مصحف
+> **رواية قالون عن نافع** atteignable depuis la session. Un مصحف **حفص** ne convient pas (cf. l'entrée قالون/ورش
+> ci-dessous).
 
 - **Référence آل عمران pour l'الإيمان بالكتب (الآيات 2,3,4 vs 3,4).** La fiche **بيانات** (p.98, redressée) écrit « سورة آل عمران : الآيات **2 ، 3 ، 4** » ; la grille **التخطيط وفقا للفترات** (p.104) écrit « سورة آل عمران : الآيات **3 ، 4** ». Retenu **3–4** (grille de planification, plus contraignante) en notant l'inclusion possible du verset **2**. À trancher sur la page contenu « الإيمان بالكتب » (p.65) au moment de générer.
 - **رواية قالون (5ème) vs ورش (1ère).** Le guide 5ème pose explicitement **قالون** (« تعريف قالون » p.17). La transcription 1ère année indiquait **ورش**. ⚠️ **Ne pas mélanger** : pour le contenu 5ème, copier le rasm depuis un **مصحف رواية قالون** (les 4 sourates p.20/25/29/35 sont déjà dans ce rasm — peuvent servir de référence directe).
