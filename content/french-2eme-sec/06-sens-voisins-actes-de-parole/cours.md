@@ -45,7 +45,7 @@ La générosité doit davantage au cœur ou au tempérament ; la justice, à l'e
 
 > ⚠️ Deux mots peuvent avoir un **synonyme commun** sans être synonymes entre eux, et se recouvrir dans une phrase sans se recouvrir dans la phrase suivante. « Excuser » et « pardonner » s'échangent quand il s'agit d'un retard ; ils ne s'échangent plus quand il s'agit d'une faute grave. Avant de décider, cherche toujours la **situation** dans laquelle le mot est employé.
 
-Le contexte peut même réconcilier deux mots que le dictionnaire oppose. Dans un poème de **Victor Hugo**, quatre écoliers martyrisent un crapaud pour le plaisir, et le poète les dit **« sereins comme le ciel »** puis **« cruels »**. Or « serein » se dit de celui « dont le calme provient d'une paix morale qui n'est pas troublée ». Les deux adjectifs ne se contredisent que si l'on suppose chez ces enfants une conscience du mal : ils n'en ont aucune, et c'est justement leur sérénité qui rend leur cruauté effrayante. Là encore, la solution n'est pas dans le vocabulaire — elle est dans la situation décrite.
+Le contexte peut même réconcilier deux mots que le dictionnaire oppose. Dans un poème de **Victor Hugo**, quatre écoliers martyrisent un crapaud pour le plaisir, et le poète les dit **« sereins comme le ciel »** au moment même où il les montre **cruels**. Or « serein » se dit de celui « dont le calme provient d'une paix morale qui n'est pas troublée ». Les deux adjectifs ne se contredisent que si l'on suppose chez ces enfants une conscience du mal : ils n'en ont aucune, et c'est justement leur sérénité qui rend leur cruauté effrayante. Là encore, la solution n'est pas dans le vocabulaire — elle est dans la situation décrite.
 
 Dernier exercice de la rubrique, et il renverse le point de vue : **caractériser le locuteur au moyen de la formule qu'il emploie**. Une formule toute faite n'est pas neutre — elle trahit celui qui la choisit.
 
@@ -70,7 +70,7 @@ Le manuel prend trois énoncés d'un poème de **René Philombé**, « L'homme q
 
 Dans le contexte du poème, les trois énoncés « peuvent être considérés comme équivalents » : ils visent tous à agir sur l'interlocuteur et à le mettre dans de bonnes dispositions envers ceux qui diffèrent de lui par la peau, la religion ou l'idéologie.
 
-> 🗡️ Le **type** répond à la question « comment la phrase est-elle construite ? » ; l'**acte de parole** répond à « qu'est-ce que le locuteur fait en la prononçant ? ». Une même phrase a toujours les deux, et ce n'est pas la même analyse.
+> 🗡️ Le **type** répond à la question « comment la phrase est-elle construite ? » ; l'**acte de parole** répond à « qu'est-ce que le locuteur fait en la prononçant ? ». Une même phrase a toujours les deux, et ce n'est pas la même analyse. Une phrase impérative, par exemple, n'accomplit pas toujours un ordre : tout dépend des rapports entre les personnes — celui qui n'a aucune autorité sur son destinataire **prie**, il ne commande pas.
 
 ## 🎚️ Trois manières d'agir sur le destinataire
 
@@ -113,6 +113,8 @@ L'objectif d'écriture est de **régler son discours sur celui à qui l'on parle
 | --- | --- |
 | **verbal** | les paroles des personnages, que le narrateur reproduit fidèlement pour les « faire entendre » au lecteur |
 | **non verbal** | tout ce qui accompagne la parole : gestes, mouvements, expression du visage, inflexions de la voix (intonation, ton, accent) |
+
+Ces notations non verbales ne sont pas un ornement : ce sont elles qui renseignent le lecteur sur le **caractère** et l'**état psychologique** du personnage, et qui font sentir que deux personnages s'opposent.
 
 Deux opérations d'écriture complètent la rubrique :
 
