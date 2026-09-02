@@ -22,7 +22,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Le taux d'accroissement de f entre a et x est (f(x) − f(a))/(x − a) : c'est la pente de la corde, et sa limite quand x → a est le nombre dérivé f′(a) ✓. Diviser par x seul (option a) ne mesure aucune pente. L'option b soustrait a à f(x), donc mélange une image et une abscisse. L'option d additionne au lieu de soustraire : elle ne compare plus f(x) à f(a) et tend vers l'infini dès que f(a) ≠ 0.",
+      "explanation": "Le taux d'accroissement de f entre a et x est (f(x) − f(a))/(x − a) : c'est la pente de la corde, et sa limite quand x → a est le nombre dérivé f′(a) ✓. Diviser par x seul ne mesure aucune pente. La réponse « (f(x) − a)/(x − a) » soustrait a à f(x), donc mélange une image et une abscisse. La réponse « (f(x) + f(a))/(x − a) » additionne au lieu de soustraire : elle ne compare plus f(x) à f(a) et tend vers l'infini dès que f(a) ≠ 0.",
       "difficulty": 1
     },
     {
@@ -46,7 +46,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "On a f(2) = 4 − 6 = −2 et f′(x) = 2x − 3, donc f′(2) = 1. La tangente est y = f′(a)(x − a) + f(a) = 1 × (x − 2) − 2 = x − 4 ✓. L'option b applique la formule fautive y = f′(a)x + f(a) (on oublie de translater de a). L'option c oublie de dériver le terme −3x : elle utilise f′(2) = 4. L'option d échange les rôles de f(a) et f′(a) : y = f(a)(x − a) + f′(a) = −2(x − 2) + 1.",
+      "explanation": "On a f(2) = 4 − 6 = −2 et f′(x) = 2x − 3, donc f′(2) = 1. La tangente est y = f′(a)(x − a) + f(a) = 1 × (x − 2) − 2 = x − 4 ✓. La réponse « y = x − 2 » applique la formule fautive y = f′(a)x + f(a) (on oublie de translater de a). La réponse « y = 4x − 10 » oublie de dériver le terme −3x : elle utilise f′(2) = 4. La réponse « y = −2x + 5 » échange les rôles de f(a) et f′(a) : y = f(a)(x − a) + f′(a) = −2(x − 2) + 1.",
       "difficulty": 1
     },
     {
@@ -70,7 +70,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "f(1) = 1 et f′(x) = 3x², donc f′(1) = 3. L'approximation affine donne f(1 + h) ≈ 1 + 3 × 0,0002 = 1,0006 ✓. L'option a oublie de multiplier h par f′(1) : elle donne 1 + h. L'option c se trompe d'une décimale en écrivant 3 × 0,0002 = 0,002. L'option d confond f(1) et f′(1) : elle calcule 3 + h.",
+      "explanation": "f(1) = 1 et f′(x) = 3x², donc f′(1) = 3. L'approximation affine donne f(1 + h) ≈ 1 + 3 × 0,0002 = 1,0006 ✓. La réponse 1,0002 oublie de multiplier h par f′(1) : elle donne 1 + h. La réponse 1,0020 se trompe d'une décimale en écrivant 3 × 0,0002 = 0,002. La réponse 3,0002 confond f(1) et f′(1) : elle calcule 3 + h.",
       "difficulty": 1
     },
     {
@@ -94,7 +94,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "À gauche f(x) = x² donne f′_g(1) = 2 ; à droite f(x) = 3x − 2 donne f′_d(1) = 3. Comme 2 ≠ 3, f n'est pas dérivable en 1 ✓ : la courbe y présente un point anguleux. L'option a confond continuité et dérivabilité : f est bien continue en 1 (1² = 3 × 1 − 2 = 1), mais x ↦ |x| rappelle qu'une fonction continue peut ne pas être dérivable. L'option b dérive les deux morceaux avec la même règle. L'option c est fausse : la continuité en 1 est justement vérifiée.",
+      "explanation": "À gauche f(x) = x² donne f′_g(1) = 2 ; à droite f(x) = 3x − 2 donne f′_d(1) = 3. Comme 2 ≠ 3, f n'est pas dérivable en 1 ✓ : la courbe y présente un point anguleux. La réponse « Oui, car f est continue en 1 » confond continuité et dérivabilité : f est bien continue en 1 (1² = 3 × 1 − 2 = 1), mais x ↦ |x| rappelle qu'une fonction continue peut ne pas être dérivable. La réponse « Oui, car f′_g(1) = f′_d(1) = 3 » dérive les deux morceaux avec la même règle. La réponse « Non, car f n'est pas continue en 1 » est fausse : la continuité en 1 est justement vérifiée.",
       "difficulty": 2
     },
     {
@@ -118,7 +118,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Avec (f × g)′ = f′g + g′f : f′(x) = 2x(2x − 3) + 2(x² + 1) = 4x² − 6x + 2x² + 2 = 6x² − 6x + 2 ✓. L'option a applique la règle inventée « dérivée du produit = produit des dérivées » : 2x × 2 = 4x. L'option b se trompe de signe en développant 2x(2x − 3). L'option d utilise la règle du quotient (une soustraction) au lieu de celle du produit : 2x(2x − 3) − 2(x² + 1).",
+      "explanation": "Avec (f × g)′ = f′g + g′f : f′(x) = 2x(2x − 3) + 2(x² + 1) = 4x² − 6x + 2x² + 2 = 6x² − 6x + 2 ✓. La réponse 4x applique la règle inventée « dérivée du produit = produit des dérivées » : 2x × 2 = 4x. La réponse « 6x² + 6x + 2 » se trompe de signe en développant 2x(2x − 3). La réponse « 2x² − 6x − 2 » utilise la règle du quotient (une soustraction) au lieu de celle du produit : 2x(2x − 3) − 2(x² + 1).",
       "difficulty": 2
     },
     {
@@ -142,7 +142,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "On pose u(x) = 3x² + 1, donc u′(x) = 6x, et on applique (uⁿ)′ = nu′uⁿ⁻¹ : h′(x) = 4 × 6x × (3x² + 1)³ = 24x(3x² + 1)³ ✓. L'option a oublie la dérivée intérieure u′ = 6x : c'est l'erreur classique sur les composées. L'option c oublie le facteur n = 4. L'option d n'abaisse pas l'exposant de 4 à 3.",
+      "explanation": "On pose u(x) = 3x² + 1, donc u′(x) = 6x, et on applique (uⁿ)′ = nu′uⁿ⁻¹ : h′(x) = 4 × 6x × (3x² + 1)³ = 24x(3x² + 1)³ ✓. La réponse « 4(3x² + 1)³ » oublie la dérivée intérieure u′ = 6x : c'est l'erreur classique sur les composées. La réponse « 6x(3x² + 1)³ » oublie le facteur n = 4. La réponse « 24x(3x² + 1)⁴ » n'abaisse pas l'exposant de 4 à 3.",
       "difficulty": 2
     },
     {
@@ -166,7 +166,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "On dérive deux fois : f′(x) = 4x³ − 6x² + 5, puis f″(x) = 12x² − 12x ✓. L'option a s'arrête à la dérivée première. L'option b garde la constante 5 alors que la dérivée d'une constante est nulle. L'option c va trop loin : 24x − 12 est la dérivée troisième f⁽³⁾(x).",
+      "explanation": "On dérive deux fois : f′(x) = 4x³ − 6x² + 5, puis f″(x) = 12x² − 12x ✓. La réponse « 4x³ − 6x² + 5 » s'arrête à la dérivée première. La réponse « 12x² − 12x + 5 » garde la constante 5 alors que la dérivée d'une constante est nulle. La réponse « 24x − 12 » va trop loin : 24x − 12 est la dérivée troisième f⁽³⁾(x).",
       "difficulty": 2
     },
     {
@@ -190,7 +190,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Le théorème de Rolle s'énonce : f continue sur [a, b], dérivable sur ]a, b[ et f(a) = f(b) ⇒ il existe c de ]a, b[ tel que f′(c) = 0 ✓. Sans l'égalité des valeurs aux bornes la conclusion tombe : sur [0, 1], f(x) = x est continue et dérivable mais f′ ne s'annule jamais. L'option b invente une condition sur f′, qui n'est même pas supposée continue. L'option c est contradictoire : une fonction strictement monotone ne peut pas vérifier f(a) = f(b). L'option d est l'hypothèse du théorème des valeurs intermédiaires (existence d'une racine de f), pas celle de Rolle.",
+      "explanation": "Le théorème de Rolle s'énonce : f continue sur [a, b], dérivable sur ]a, b[ et f(a) = f(b) ⇒ il existe c de ]a, b[ tel que f′(c) = 0 ✓. Sans l'égalité des valeurs aux bornes la conclusion tombe : sur [0, 1], f(x) = x est continue et dérivable mais f′ ne s'annule jamais. Exiger l'égalité des nombres dérivés aux bornes invente une condition sur f′, qui n'est même pas supposée continue. La réponse « f est strictement monotone sur [a, b] » est contradictoire : une fonction strictement monotone ne peut pas vérifier f(a) = f(b). La réponse « f(a) × f(b) < 0 » est l'hypothèse du théorème des valeurs intermédiaires (existence d'une racine de f), pas celle de Rolle.",
       "difficulty": 2
     },
     {
@@ -214,7 +214,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Si m ≤ f′(x) ≤ M sur ]a, b[, alors m(b − a) ≤ f(b) − f(a) ≤ M(b − a). Ici b − a = 4 − 1 = 3, donc 2 × 3 ≤ f(4) − f(1) ≤ 5 × 3, c'est-à-dire 6 ≤ f(4) − f(1) ≤ 15 ✓. L'option a oublie complètement le facteur (b − a). L'option b ajoute 3 aux bornes au lieu de les multiplier. L'option d multiplie par b = 4 au lieu de b − a = 3.",
+      "explanation": "Si m ≤ f′(x) ≤ M sur ]a, b[, alors m(b − a) ≤ f(b) − f(a) ≤ M(b − a). Ici b − a = 4 − 1 = 3, donc 2 × 3 ≤ f(4) − f(1) ≤ 5 × 3, c'est-à-dire 6 ≤ f(4) − f(1) ≤ 15 ✓. La réponse « 2 ≤ f(4) − f(1) ≤ 5 » oublie complètement le facteur (b − a). La réponse « 5 ≤ f(4) − f(1) ≤ 8 » ajoute 3 aux bornes au lieu de les multiplier. La réponse « 8 ≤ f(4) − f(1) ≤ 20 » multiplie par b = 4 au lieu de b − a = 3.",
       "difficulty": 2
     },
     {
@@ -238,7 +238,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "C'est le théorème de la dérivée seconde : si f″ s'annule en a en changeant de signe, le point I(a, f(a)) est un point d'inflexion — la courbe y traverse sa tangente ✓. L'option a applique le critère au mauvais ordre de dérivation : c'est f′ (et non f″) qui, en s'annulant en changeant de signe, donne un extremum local. L'option c confond aussi f′ et f″ : rien n'impose ici que f′(a) soit nul (pour f(x) = x³ − 3x + 1, f″(0) = 0 alors que f′(0) = −3). L'option d parle du signe de f′, qui gouverne le sens de variation, et dont on ne sait rien ici.",
+      "explanation": "C'est le théorème de la dérivée seconde : si f″ s'annule en a en changeant de signe, le point I(a, f(a)) est un point d'inflexion — la courbe y traverse sa tangente ✓. La réponse « f admet un extremum local en a » applique le critère au mauvais ordre de dérivation : c'est f′ (et non f″) qui, en s'annulant en changeant de signe, donne un extremum local. La réponse « f′(a) = 0 » confond aussi f′ et f″ : rien n'impose ici que f′(a) soit nul (pour f(x) = x³ − 3x + 1, f″(0) = 0 alors que f′(0) = −3). La réponse « f est strictement croissante au voisinage de a » parle du signe de f′, qui gouverne le sens de variation, et dont on ne sait rien ici.",
       "difficulty": 2
     }
   ]

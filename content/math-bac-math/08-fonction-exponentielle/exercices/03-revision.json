@@ -27,7 +27,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "La propriété du cours donne e^(−a) = 1/e^a, donc e^(−x) = 1/e^x ✓. Contrôle en x = 1 : e^(−1) ≈ 0,368 et 1/e ≈ 1/2,718 ≈ 0,368 ✓. L'option b est LE piège du chapitre : un signe moins dans l'exposant ne sort pas devant, et surtout e^(−x) est toujours strictement positif alors que −e^x est toujours négatif. L'option c cumule les deux erreurs et reste négative. L'option a confond l'opposé de x avec son inverse : en x = 1 elle donnerait e ≈ 2,718.",
+      "explanation": "La propriété du cours donne e^(−a) = 1/e^a, donc e^(−x) = 1/e^x ✓. Contrôle en x = 1 : e^(−1) ≈ 0,368 et 1/e ≈ 1/2,718 ≈ 0,368 ✓. La réponse −e^x est LE piège du chapitre : un signe moins dans l'exposant ne sort pas devant, et surtout e^(−x) est toujours strictement positif alors que −e^x est toujours négatif. La réponse −1/e^x cumule les deux erreurs et reste négative. La réponse e^(1/x) confond l'opposé de x avec son inverse : en x = 1 elle donnerait e ≈ 2,718.",
       "difficulty": 1
     },
     {
@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "On développe l'identité remarquable : (e^x + e^(−x))² = (e^x)² + 2 e^x e^(−x) + (e^(−x))² = e^(2x) + 2e^0 + e^(−2x), et e^0 = 1 donne le terme constant 2 ✓. Contrôle en x = 1 : (2,71828 + 0,36788)² = 3,08616² ≈ 9,524, et e² + e^(−2) + 2 ≈ 7,389 + 0,135 + 2 = 9,524 ✓. L'option a oublie le double produit, pourtant égal à 2 et non à 0. L'option c élève l'exposant au carré au lieu d'élever la puissance. L'option d confond le carré d'une somme avec son double.",
+      "explanation": "On développe l'identité remarquable : (e^x + e^(−x))² = (e^x)² + 2 e^x e^(−x) + (e^(−x))² = e^(2x) + 2e^0 + e^(−2x), et e^0 = 1 donne le terme constant 2 ✓. Contrôle en x = 1 : (2,71828 + 0,36788)² = 3,08616² ≈ 9,524, et e² + e^(−2) + 2 ≈ 7,389 + 0,135 + 2 = 9,524 ✓. La réponse « (e^x + e^(−x))² = e^(2x) + e^(−2x) » oublie le double produit, pourtant égal à 2 et non à 0. La réponse « (e^x + e^(−x))² = e^(x²) + e^(−x²) » élève l'exposant au carré au lieu d'élever la puissance. La réponse « (e^x + e^(−x))² = 2e^x + 2e^(−x) » confond le carré d'une somme avec son double.",
       "difficulty": 2
     },
     {
@@ -75,7 +75,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "On pose X = e^x, avec X > 0 ; comme e^(2x) = (e^x)² = X², l'équation devient X² − 3X + 2 = 0, soit (X − 1)(X − 2) = 0. Les deux racines 1 et 2 sont strictement positives, donc AUCUNE n'est à rejeter : e^x = 1 donne x = 0 et e^x = 2 donne x = ln 2 ≈ 0,693 ✓. Contrôle en x = ln 2 : 4 − 6 + 2 = 0 ✓. L'option d s'arrête aux valeurs de X sans revenir à x. Les options a et b ne gardent qu'une des deux solutions, comme si l'autre racine devait être écartée.",
+      "explanation": "On pose X = e^x, avec X > 0 ; comme e^(2x) = (e^x)² = X², l'équation devient X² − 3X + 2 = 0, soit (X − 1)(X − 2) = 0. Les deux racines 1 et 2 sont strictement positives, donc AUCUNE n'est à rejeter : e^x = 1 donne x = 0 et e^x = 2 donne x = ln 2 ≈ 0,693 ✓. Contrôle en x = ln 2 : 4 − 6 + 2 = 0 ✓. La réponse « S = {1, 2} » s'arrête aux valeurs de X sans revenir à x. Les réponses « S = {ln 2} » et « S = {0} » ne gardent qu'une des deux solutions, comme si l'autre racine devait être écartée.",
       "difficulty": 2
     },
     {
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "exp étant strictement croissante, e^A ≥ e^B ⟺ A ≥ B : ici −x ≥ 2x − 3, soit 3 ≥ 3x, donc x ≤ 1 ✓. Contrôle en x = 0 : e^0 = 1 ≥ e^(−3) ≈ 0,050 ✓ ; en x = 2 : e^(−2) ≈ 0,135 alors que e^1 ≈ 2,718, l'inégalité est bien fausse ✓. L'option b renverse le sens de l'inégalité, réflexe erroné venu du signe moins de l'exposant. Les options c et d gardent la constante 3 sans diviser par le coefficient 3 obtenu en regroupant les x.",
+      "explanation": "exp étant strictement croissante, e^A ≥ e^B ⟺ A ≥ B : ici −x ≥ 2x − 3, soit 3 ≥ 3x, donc x ≤ 1 ✓. Contrôle en x = 0 : e^0 = 1 ≥ e^(−3) ≈ 0,050 ✓ ; en x = 2 : e^(−2) ≈ 0,135 alors que e^1 ≈ 2,718, l'inégalité est bien fausse ✓. La réponse « x ≥ 1 » renverse le sens de l'inégalité, réflexe erroné venu du signe moins de l'exposant. Les réponses « x ≤ 3 » et « x ≥ 3 » gardent la constante 3 sans diviser par le coefficient 3 obtenu en regroupant les x.",
       "difficulty": 2
     },
     {
@@ -123,7 +123,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "C'est un produit : f′(x) = 1 × e^x + (x − 2)e^x = (x − 1)e^x. Comme e^x > 0, f′ est du signe de x − 1, donc négative sur ]−∞, 1] : f y est décroissante ✓. Contrôle : f(0) = −2 et f(1) = −e ≈ −2,718 < −2, la fonction a bien baissé ✓. L'option b lit le signe de f(x) = (x − 2)e^x au lieu de celui de f′ : c'est oublier de dériver le produit. L'option c donne l'intervalle de CROISSANCE. L'option d combine les deux erreurs.",
+      "explanation": "C'est un produit : f′(x) = 1 × e^x + (x − 2)e^x = (x − 1)e^x. Comme e^x > 0, f′ est du signe de x − 1, donc négative sur ]−∞, 1] : f y est décroissante ✓. Contrôle : f(0) = −2 et f(1) = −e ≈ −2,718 < −2, la fonction a bien baissé ✓. La réponse « ]−∞, 2] » lit le signe de f(x) = (x − 2)e^x au lieu de celui de f′ : c'est oublier de dériver le produit. La réponse « [1, +∞[ » donne l'intervalle de CROISSANCE. La réponse « [2, +∞[ » combine les deux erreurs.",
       "difficulty": 3
     },
     {
@@ -147,7 +147,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "On multiplie par e^x, qui est strictement positif (l'équation est donc équivalente) : e^(2x) + 4e^x − 5 = 0. Avec X = e^x > 0, on obtient X² + 4X − 5 = (X + 5)(X − 1) = 0, donc X = 1 ou X = −5. La racine −5 est REJETÉE car une exponentielle est strictement positive ; il reste e^x = 1, soit x = 0 ✓. Contrôle : 1 − 5 + 4 = 0 ✓. Les options a, c et d conservent une seconde solution issue de la racine négative, en oubliant que X = −5 est impossible — l'option c prend même son opposé ln 5 ≈ 1,609, pour lequel e^x − 5e^(−x) + 4 = 5 − 1 + 4 = 8 ≠ 0.",
+      "explanation": "On multiplie par e^x, qui est strictement positif (l'équation est donc équivalente) : e^(2x) + 4e^x − 5 = 0. Avec X = e^x > 0, on obtient X² + 4X − 5 = (X + 5)(X − 1) = 0, donc X = 1 ou X = −5. La racine −5 est REJETÉE car une exponentielle est strictement positive ; il reste e^x = 1, soit x = 0 ✓. Contrôle : 1 − 5 + 4 = 0 ✓. Les réponses « S = {−ln 5, 0} », « S = {0, ln 5} » et « S = {ln 5} » conservent une seconde solution issue de la racine négative, en oubliant que X = −5 est impossible — la réponse « S = {0, ln 5} » prend même son opposé ln 5 ≈ 1,609, pour lequel e^x − 5e^(−x) + 4 = 5 − 1 + 4 = 8 ≠ 0.",
       "difficulty": 3
     }
   ]

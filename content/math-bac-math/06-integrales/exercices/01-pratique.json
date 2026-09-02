@@ -27,7 +27,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "La notation [F(x)]ₐᵇ se lit « F(x) pris entre a et b » et vaut F(b) − F(a). Ici F(4) = 16 − 12 = 4 et F(1) = 1 − 3 = −2, donc [x² − 3x]₁⁴ = 4 − (−2) = 6 ✓. L'option c s'arrête à F(4) = 4 et oublie de retrancher la valeur en la borne du bas. L'option b retranche 2 au lieu de −2 : c'est le signe de F(1) qui a été perdu. L'option a est le résultat obtenu en inversant les bornes, [x² − 3x]₄¹ = −2 − 4 = −6.",
+      "explanation": "La notation [F(x)]ₐᵇ se lit « F(x) pris entre a et b » et vaut F(b) − F(a). Ici F(4) = 16 − 12 = 4 et F(1) = 1 − 3 = −2, donc [x² − 3x]₁⁴ = 4 − (−2) = 6 ✓. La réponse 4 s'arrête à F(4) = 4 et oublie de retrancher la valeur en la borne du bas. La réponse 2 retranche 2 au lieu de −2 : c'est le signe de F(1) qui a été perdu. La réponse −6 est le résultat obtenu en inversant les bornes, [x² − 3x]₄¹ = −2 − 4 = −6.",
       "difficulty": 1
     },
     {
@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Une primitive de 3x² + 1 est F(x) = x³ + x (contrôle par dérivation : F′(x) = 3x² + 1 ✓). Donc ∫₁² (3x² + 1)dx = [x³ + x]₁² = (8 + 2) − (1 + 1) = 10 − 2 = 8 ✓. L'option b s'arrête à F(2) = 10 sans retrancher F(1) = 2. L'option c donne f(2) = 12 + 1 = 13, la valeur de la fonction et non de l'intégrale. L'option d garde le coefficient 3 devant x³ au lieu de 3x³/3 = x³ : elle calcule [3x³ + x]₁² = 26 − 4 = 22.",
+      "explanation": "Une primitive de 3x² + 1 est F(x) = x³ + x (contrôle par dérivation : F′(x) = 3x² + 1 ✓). Donc ∫₁² (3x² + 1)dx = [x³ + x]₁² = (8 + 2) − (1 + 1) = 10 − 2 = 8 ✓. La réponse 10 s'arrête à F(2) = 10 sans retrancher F(1) = 2. La réponse 13 donne f(2) = 12 + 1 = 13, la valeur de la fonction et non de l'intégrale. La réponse 22 garde le coefficient 3 devant x³ au lieu de 3x³/3 = x³ : elle calcule [3x³ + x]₁² = 26 − 4 = 22.",
       "difficulty": 1
     },
     {
@@ -75,7 +75,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Une primitive de sin est −cos (contrôle : (−cos x)′ = sin x ✓), donc ∫₀^π sin x dx = [−cos x]₀^π = −cos π + cos 0 = 1 + 1 = 2 ✓. Contrôle de plausibilité : sin est positive sur [0, π] et y culmine à 1 sur une largeur π ≈ 3,14, donc l'intégrale est positive et inférieure à 3,14. L'option a oublie le signe moins de la primitive et calcule [cos x]₀^π = −1 − 1 = −2. L'option b conclut à tort de sin 0 = sin π = 0 que l'intégrale est nulle : ce sont les valeurs de la primitive aux bornes qui comptent, pas celles de f. L'option c ne correspond qu'à la moitié du calcul, ∫₀^{π/2} sin x dx.",
+      "explanation": "Une primitive de sin est −cos (contrôle : (−cos x)′ = sin x ✓), donc ∫₀^π sin x dx = [−cos x]₀^π = −cos π + cos 0 = 1 + 1 = 2 ✓. Contrôle de plausibilité : sin est positive sur [0, π] et y culmine à 1 sur une largeur π ≈ 3,14, donc l'intégrale est positive et inférieure à 3,14. La réponse −2 oublie le signe moins de la primitive et calcule [cos x]₀^π = −1 − 1 = −2. La réponse 0 conclut à tort de sin 0 = sin π = 0 que l'intégrale est nulle : ce sont les valeurs de la primitive aux bornes qui comptent, pas celles de f. La réponse 1 ne correspond qu'à la moitié du calcul, ∫₀^{π/2} sin x dx.",
       "difficulty": 1
     },
     {
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Il faut d'abord remettre la seconde intégrale dans le bon sens : ∫₃⁵ f(x)dx = −∫₅³ f(x)dx = 7. La relation de Chasles donne ensuite ∫₁⁵ f = ∫₁³ f + ∫₃⁵ f = 5 + 7 = 12 ✓. L'option a additionne les données telles quelles, 5 + (−7) = −2, sans retourner les bornes de la seconde. L'option b soustrait au lieu d'additionner après avoir retourné les bornes : 7 − 5 = 2. L'option d multiplie 5 par 7, alors que Chasles est une relation additive.",
+      "explanation": "Il faut d'abord remettre la seconde intégrale dans le bon sens : ∫₃⁵ f(x)dx = −∫₅³ f(x)dx = 7. La relation de Chasles donne ensuite ∫₁⁵ f = ∫₁³ f + ∫₃⁵ f = 5 + 7 = 12 ✓. La réponse −2 additionne les données telles quelles, 5 + (−7) = −2, sans retourner les bornes de la seconde. La réponse 2 soustrait au lieu d'additionner après avoir retourné les bornes : 7 − 5 = 2. La réponse 35 multiplie 5 par 7, alors que Chasles est une relation additive.",
       "difficulty": 2
     },
     {
@@ -123,7 +123,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "On calcule d'abord l'intégrale : ∫₀³ 4x dx = [2x²]₀³ = 18 − 0 = 18. On divise ensuite par la longueur de l'intervalle : f̄ = 18/(3 − 0) = 6 ✓. Contrôle : f est affine, sa moyenne est donc atteinte au milieu, et f(1,5) = 6 ✓. L'option d s'arrête à l'intégrale et oublie le facteur 1/(b − a) : c'est le piège central de la valeur moyenne. L'option c donne f(3) = 12, la valeur maximale et non la moyenne. L'option a divise f(3) = 12 par 3 au lieu de diviser l'intégrale.",
+      "explanation": "On calcule d'abord l'intégrale : ∫₀³ 4x dx = [2x²]₀³ = 18 − 0 = 18. On divise ensuite par la longueur de l'intervalle : f̄ = 18/(3 − 0) = 6 ✓. Contrôle : f est affine, sa moyenne est donc atteinte au milieu, et f(1,5) = 6 ✓. La réponse 18 s'arrête à l'intégrale et oublie le facteur 1/(b − a) : c'est le piège central de la valeur moyenne. La réponse 12 donne f(3) = 12, la valeur maximale et non la moyenne. La réponse 4 divise f(3) = 12 par 3 au lieu de diviser l'intégrale.",
       "difficulty": 2
     },
     {
@@ -147,7 +147,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "f est continue et positive sur [0, 2], donc l'aire vaut ∫₀² (x + 1)dx = [x²/2 + x]₀² = (2 + 2) − 0 = 4 u.a ✓. Contrôle géométrique : la partie colorée est un trapèze de bases f(0) = 1 et f(2) = 3 et de hauteur 2, d'aire (1 + 3)/2 × 2 = 4 ✓. L'option a oublie de primitiver le terme constant 1 et calcule [x²/2]₀² = 2. L'option d oublie le diviseur 2 de x²/2 et calcule [x² + x]₀² = 6. L'option b donne f(2) = 3, l'ordonnée du point le plus haut, qui n'est pas une aire.",
+      "explanation": "f est continue et positive sur [0, 2], donc l'aire vaut ∫₀² (x + 1)dx = [x²/2 + x]₀² = (2 + 2) − 0 = 4 u.a ✓. Contrôle géométrique : la partie colorée est un trapèze de bases f(0) = 1 et f(2) = 3 et de hauteur 2, d'aire (1 + 3)/2 × 2 = 4 ✓. La réponse 2 oublie de primitiver le terme constant 1 et calcule [x²/2]₀² = 2. La réponse 6 oublie le diviseur 2 de x²/2 et calcule [x² + x]₀² = 6. La réponse 3 donne f(2) = 3, l'ordonnée du point le plus haut, qui n'est pas une aire.",
       "difficulty": 2
     }
   ]

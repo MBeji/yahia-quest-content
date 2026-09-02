@@ -27,7 +27,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "Un produit d'exponentielles s'obtient en ADDITIONNANT les exposants : e^x × e^(−2x) = e^(x−2x) = e^(−x) ✓. Contrôle en x = 1 : e × e^(−2) ≈ 2,718 × 0,1353 ≈ 0,368 = e^(−1) ✓. L'option a multiplie les exposants au lieu de les additionner. L'option c calcule x − (−2x) = 3x : c'est la règle du QUOTIENT, appliquée à un produit. L'option d traite e^(−2x) comme e^(−2) et perd le facteur x de l'exposant.",
+      "explanation": "Un produit d'exponentielles s'obtient en ADDITIONNANT les exposants : e^x × e^(−2x) = e^(x−2x) = e^(−x) ✓. Contrôle en x = 1 : e × e^(−2) ≈ 2,718 × 0,1353 ≈ 0,368 = e^(−1) ✓. La réponse e^(−2x²) multiplie les exposants au lieu de les additionner. La réponse e^(3x) calcule x − (−2x) = 3x : c'est la règle du QUOTIENT, appliquée à un produit. La réponse e^(x−2) traite e^(−2x) comme e^(−2) et perd le facteur x de l'exposant.",
       "difficulty": 1
     },
     {
@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Les deux simplifications réciproques s'appliquent séparément : ln(e^5) = 5 et e^(ln 2) = 2, donc la différence vaut 5 − 2 = 3 ✓. L'option c additionne au lieu de soustraire (5 + 2 = 7) : le signe moins de l'énoncé a été perdu. L'option d multiplie les deux résultats. L'option b ne simplifie que le premier terme et oublie que e^(ln 2) vaut bel et bien 2, et non 0.",
+      "explanation": "Les deux simplifications réciproques s'appliquent séparément : ln(e^5) = 5 et e^(ln 2) = 2, donc la différence vaut 5 − 2 = 3 ✓. La réponse 7 additionne au lieu de soustraire (5 + 2 = 7) : le signe moins de l'énoncé a été perdu. La réponse 10 multiplie les deux résultats. La réponse 5 ne simplifie que le premier terme et oublie que e^(ln 2) vaut bel et bien 2, et non 0.",
       "difficulty": 1
     },
     {
@@ -75,7 +75,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Comme 1 = e^0, l'équation s'écrit e^(x−1) = e^0, donc x − 1 = 0 et x = 1 ✓. Contrôle : e^(1−1) = e^0 = 1 ✓. L'option b oublie de remonter à x et s'arrête à la valeur de l'exposant x − 1 = 0. L'option a change le signe en passant le 1 de l'autre côté. L'option d applique e au second membre au lieu de reconnaître que 1 est déjà une exponentielle : e^(e−1) ≈ 5,6, pas 1.",
+      "explanation": "Comme 1 = e^0, l'équation s'écrit e^(x−1) = e^0, donc x − 1 = 0 et x = 1 ✓. Contrôle : e^(1−1) = e^0 = 1 ✓. La réponse « x = 0 » oublie de remonter à x et s'arrête à la valeur de l'exposant x − 1 = 0. La réponse « x = −1 » change le signe en passant le 1 de l'autre côté. La réponse « x = e » applique e au second membre au lieu de reconnaître que 1 est déjà une exponentielle : e^(e−1) ≈ 5,6, pas 1.",
       "difficulty": 1
     },
     {
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "On applique (e^u)′ = u′e^u avec u(x) = x² + 1, dont la dérivée est u′(x) = 2x : f′(x) = 2x e^(x²+1) ✓. Contrôle du signe : e^(x²+1) > 0, donc f′ est du signe de 2x, et f est bien décroissante puis croissante autour de 0. L'option a oublie le facteur u′. L'option c place u au lieu de u′ devant l'exponentielle. L'option d dérive aussi l'exposant à l'intérieur de l'exponentielle : l'exposant, lui, reste inchangé.",
+      "explanation": "On applique (e^u)′ = u′e^u avec u(x) = x² + 1, dont la dérivée est u′(x) = 2x : f′(x) = 2x e^(x²+1) ✓. Contrôle du signe : e^(x²+1) > 0, donc f′ est du signe de 2x, et f est bien décroissante puis croissante autour de 0. La réponse « f′(x) = e^(x²+1) » oublie le facteur u′. La réponse « f′(x) = (x² + 1)e^(x²+1) » place u au lieu de u′ devant l'exponentielle. La réponse « f′(x) = 2x e^(2x) » dérive aussi l'exposant à l'intérieur de l'exponentielle : l'exposant, lui, reste inchangé.",
       "difficulty": 2
     },
     {
@@ -123,7 +123,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Comme 5 > 0, l'équation équivaut à 2x = ln 5, donc x = (ln 5)/2 ≈ 1,609/2 ≈ 0,805 ✓. Contrôle : 2x ≈ 1,609 et e^(1,609) ≈ 5 ✓. L'option d multiplie par 2 au lieu de diviser : elle donne 2x ≈ 6,4 et e^(6,4) ≈ 600. L'option b divise l'argument du logarithme par 2 au lieu de diviser le logarithme lui-même — or ln(5/2) ≈ 0,916 ≠ 0,805. L'option a soustrait 2, comme si le coefficient 2 était un terme additif.",
+      "explanation": "Comme 5 > 0, l'équation équivaut à 2x = ln 5, donc x = (ln 5)/2 ≈ 1,609/2 ≈ 0,805 ✓. Contrôle : 2x ≈ 1,609 et e^(1,609) ≈ 5 ✓. La réponse « x = 2 ln 5 » multiplie par 2 au lieu de diviser : elle donne 2x ≈ 6,4 et e^(6,4) ≈ 600. La réponse « x = ln(5/2) » divise l'argument du logarithme par 2 au lieu de diviser le logarithme lui-même — or ln(5/2) ≈ 0,916 ≠ 0,805. La réponse « x = ln 5 − 2 » soustrait 2, comme si le coefficient 2 était un terme additif.",
       "difficulty": 2
     },
     {
@@ -147,7 +147,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Le facteur e^x est strictement positif pour tout x, donc le produit est du signe de x − 3 : il est strictement positif si et seulement si x > 3 ✓. Contrôle en x = 4 : 1 × e^4 ≈ 54,6 > 0 ✓ ; en x = 0 : (−3) × 1 = −3 < 0 ✓. L'option c inverse la condition de signe du facteur affine. L'option b utilise le signe de e^x comme s'il annulait celui de x − 3 en imposant x > 0. L'option a retient seulement que l'exponentielle est positive, en oubliant que le facteur x − 3 change bel et bien de signe.",
+      "explanation": "Le facteur e^x est strictement positif pour tout x, donc le produit est du signe de x − 3 : il est strictement positif si et seulement si x > 3 ✓. Contrôle en x = 4 : 1 × e^4 ≈ 54,6 > 0 ✓ ; en x = 0 : (−3) × 1 = −3 < 0 ✓. La réponse « x < 3 » inverse la condition de signe du facteur affine. La réponse « x > 0 » utilise le signe de e^x comme s'il annulait celui de x − 3 en imposant x > 0. La réponse « tout réel x » retient seulement que l'exponentielle est positive, en oubliant que le facteur x − 3 change bel et bien de signe.",
       "difficulty": 2
     }
   ]
