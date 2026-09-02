@@ -9,10 +9,22 @@
     {
       "prompt": "Relever un champ lexical et explorer un thème par association d'idées ne sont pas la même opération. Qu'est-ce qui les sépare ?",
       "options": [
-        { "id": "a", "text": "le relevé part d'un texte donné ; l'association part d'un titre et appelle aussi les contraires" },
-        { "id": "b", "text": "le relevé part d'un titre donné ; l'association part d'un texte et n'appelle que des synonymes" },
-        { "id": "c", "text": "le relevé classe les mots par catégorie grammaticale ; l'association les classe par longueur" },
-        { "id": "d", "text": "les deux opérations sont identiques : seul le nom change d'un module de l'année à l'autre" }
+        {
+          "id": "a",
+          "text": "le relevé part d'un texte donné ; l'association part d'un titre et appelle aussi les contraires"
+        },
+        {
+          "id": "b",
+          "text": "le relevé part d'un titre donné ; l'association part d'un texte et n'appelle que des synonymes"
+        },
+        {
+          "id": "c",
+          "text": "le relevé classe les mots par catégorie grammaticale ; l'association les classe par longueur"
+        },
+        {
+          "id": "d",
+          "text": "les deux opérations sont identiques : seul le nom change d'un module de l'année à l'autre"
+        }
       ],
       "correctOption": "a",
       "explanation": "Un champ lexical se relève dans un texte déjà écrit : on y cherche les mots qui se rapportent à une même idée. L'association d'idées, elle, part d'un titre évocateur et fait venir des mots que le texte ne contient pas encore — et, surtout, elle appelle les mots de sens contraire, les couples figés de la langue et les proverbes, que jamais un relevé de champ lexical n'irait chercher. ✓ Le piège courant est de croire que les deux notions se recouvrent parce qu'elles produisent toutes deux une liste de mots : l'une décrit un texte, l'autre prépare un thème avant même d'écrire.",
@@ -21,46 +33,94 @@
     {
       "prompt": "Un élève explore le thème du rapprochement entre les hommes et propose : la solidarité, l'égoïsme, main dans la main, « L'union fait la force ». Combien des quatre modes d'association du manuel a-t-il employés ?",
       "options": [
-        { "id": "a", "text": "deux : les deux formules toutes faites comptent pour une seule" },
-        { "id": "b", "text": "trois seulement : il n'a proposé aucun mot de sens contraire" },
-        { "id": "c", "text": "les quatre, une proposition pour chacun d'entre eux" },
-        { "id": "d", "text": "un seul, puisque tout se rapporte au même thème" }
+        {
+          "id": "a",
+          "text": "deux : les deux formules toutes faites comptent pour une seule"
+        },
+        {
+          "id": "b",
+          "text": "trois seulement : il n'a proposé aucun mot de sens contraire"
+        },
+        {
+          "id": "c",
+          "text": "les quatre, une proposition pour chacun d'entre eux"
+        },
+        {
+          "id": "d",
+          "text": "un seul, puisque tout se rapporte au même thème"
+        }
       ],
       "correctOption": "c",
       "explanation": "« La solidarité » est un mot de sens voisin, « l'égoïsme » un mot de sens contraire, « main dans la main » une expression que l'usage emploie toute faite, et « L'union fait la force » un proverbe : les quatre modes du manuel sont représentés, un par proposition. ✓ Le piège courant est d'oublier que l'antonyme est un mode d'association à part entière — chercher les mots contraires fait partie de l'exploration du thème, et non de son rejet.",
       "difficulty": 2
     },
     {
-      "prompt": "Un client dit au serveur : « Pourriez-vous baisser un peu la musique ? » Quel couple d'analyses est exact ?",
+      "prompt": "« Un songe » se lit en deux parties — le songe, puis le réveil — dont le poème n'imprime pas la limite. Lequel de ces moments marque le passage de la première à la seconde ?",
       "options": [
-        { "id": "a", "text": "type impératif, mais fonction de l'interrogatif" },
-        { "id": "b", "text": "type interrogatif, mais fonction de l'impératif" },
-        { "id": "c", "text": "type interrogatif, et fonction de l'interrogatif" },
-        { "id": "d", "text": "type déclaratif, mais fonction de l'exclamatif" }
+        {
+          "id": "a",
+          "text": "Le maçon ordonne au poète de prendre lui-même la truelle"
+        },
+        {
+          "id": "b",
+          "text": "Le poète ouvre les yeux et doute de ce qu'il voit"
+        },
+        {
+          "id": "c",
+          "text": "Le poète se voit seul, délaissé par tous les hommes"
+        },
+        {
+          "id": "d",
+          "text": "Le poète déclare qu'il a désormais aimé tous les hommes"
+        }
       ],
       "correctOption": "b",
-      "explanation": "La construction décide du type : inversion du sujet et point d'interrogation, donc type interrogatif. La situation décide de la fonction : le client ne s'informe pas de la capacité du serveur à baisser la musique, il demande qu'on la baisse — c'est la fonction de l'impératif. ✓ Le piège courant est de faire changer la phrase de type sous prétexte qu'elle change de fonction : le manuel dit qu'un type « permet aussi de remplir les fonctions d'un autre », pas qu'il se transforme en cet autre. Une phrase reste ce que sa forme dit qu'elle est.",
+      "explanation": "La limite se lit sur un fait de situation, non sur un changement de ton : tant que le poète dort, les travailleurs lui parlent et il se voit seul ; l'ouverture des yeux est le seul moment où le songe cesse ✓. Le piège courant est de couper là où le ton s'assombrit ou s'éclaircit : l'ordre du maçon et la solitude sont deux étapes du songe, et l'amour porté aux hommes est la leçon tirée bien après le réveil — donc à l'intérieur de la seconde partie, non à sa frontière.",
       "difficulty": 3
     },
     {
       "prompt": "Laquelle de ces quatre questions est une interrogation partielle qui n'attend pourtant aucune réponse et vaut affirmation ?",
       "options": [
-        { "id": "a", "text": "Combien de familles se sont inscrites à la collecte de dons ?" },
-        { "id": "b", "text": "Qui a bien pu téléphoner pendant que j'étais dans le jardin ?" },
-        { "id": "c", "text": "Faut-il vraiment condamner cet homme sans l'entendre ?" },
-        { "id": "d", "text": "Qui pourrait rester insensible devant une telle misère ?" }
+        {
+          "id": "a",
+          "text": "Combien de familles se sont inscrites à la collecte de dons ?"
+        },
+        {
+          "id": "b",
+          "text": "Qui a bien pu téléphoner pendant que j'étais dans le jardin ?"
+        },
+        {
+          "id": "c",
+          "text": "Faut-il vraiment condamner cet homme sans l'entendre ?"
+        },
+        {
+          "id": "d",
+          "text": "Qui d'entre nous a jamais choisi son pays de naissance ?"
+        }
       ],
       "correctOption": "d",
-      "explanation": "Deux critères sont à croiser. La question commence par « qui » : elle porte sur un seul élément, donc elle est partielle. Et sa réponse s'impose à tous — personne — : le locuteur ne s'informe pas, il affirme que nul ne peut rester insensible. C'est une fausse question, et elle est partielle. ✓ Le piège courant est de ne vérifier qu'un seul des deux critères : la question sur la condamnation est bien une fausse question, mais elle est totale, puisqu'on y répondrait par oui ou par non ; et les deux autres sont bien partielles, mais elles attendent réellement un nom et un nombre.",
+      "explanation": "Deux critères sont à croiser. La question commence par « qui » : elle porte sur un seul élément, donc elle est partielle. Et sa réponse s'impose à tous — personne — : le locuteur ne s'informe pas, il affirme que personne ne choisit son pays de naissance. C'est une fausse question, et elle est partielle. ✓ Le piège courant est de ne vérifier qu'un seul des deux critères : la question sur la condamnation est bien une fausse question, mais elle est totale, puisqu'on y répondrait par oui ou par non ; et les deux autres sont bien partielles, mais elles attendent réellement un nom et un nombre.",
       "difficulty": 3
     },
     {
       "prompt": "Trois mots sont employés à propos du maire des « Misérables » : dilemme, délibération, monologue intérieur. Lequel désigne la forme que prend son discours, et non ce qui s'y passe ?",
       "options": [
-        { "id": "a", "text": "le monologue intérieur : un homme se parle à lui-même, sans confident" },
-        { "id": "b", "text": "le dilemme : deux termes contraires mènent à une même conclusion" },
-        { "id": "c", "text": "la délibération : un examen approfondi en vue d'une décision" },
-        { "id": "d", "text": "aucun des trois : tous nomment le contenu de la pensée" }
+        {
+          "id": "a",
+          "text": "le monologue intérieur : un homme se parle à lui-même, sans confident"
+        },
+        {
+          "id": "b",
+          "text": "le dilemme : deux termes contraires mènent à une même conclusion"
+        },
+        {
+          "id": "c",
+          "text": "la délibération : un examen approfondi en vue d'une décision"
+        },
+        {
+          "id": "d",
+          "text": "aucun des trois : tous nomment le contenu de la pensée"
+        }
       ],
       "correctOption": "a",
       "explanation": "Le dilemme nomme la situation où l'on est placé, la délibération nomme l'opération de pensée qu'elle impose ; l'un et l'autre décrivent ce qui se passe dans la tête du personnage. Le monologue intérieur, lui, nomme la forme du discours : le maire ne peut se confier à personne, il se parle donc à lui-même. ✓ Le piège courant est de traiter les trois mots comme des synonymes parce qu'ils désignent le même moment du texte : ils répondent à trois questions différentes — dans quelle situation, quelle opération, sous quelle forme.",
@@ -69,10 +129,22 @@
     {
       "prompt": "Un dialogue comporte ces deux réponses successives : « Non, je ne suis pas d'ici. » puis « Depuis trois ans. » Quel couple de questions a pu les provoquer ?",
       "options": [
-        { "id": "a", "text": "D'où viens-tu ? puis Depuis quand vis-tu dans ce pays ?" },
-        { "id": "b", "text": "D'où viens-tu ? puis Y vis-tu depuis très longtemps ?" },
-        { "id": "c", "text": "Es-tu d'ici ? puis Y vis-tu depuis très longtemps ?" },
-        { "id": "d", "text": "Es-tu d'ici ? puis Depuis combien de temps y vis-tu ?" }
+        {
+          "id": "a",
+          "text": "D'où viens-tu ? puis Depuis quand vis-tu dans ce pays ?"
+        },
+        {
+          "id": "b",
+          "text": "D'où viens-tu ? puis Y vis-tu depuis très longtemps ?"
+        },
+        {
+          "id": "c",
+          "text": "Es-tu d'ici ? puis Y vis-tu depuis très longtemps ?"
+        },
+        {
+          "id": "d",
+          "text": "Es-tu d'ici ? puis Depuis combien de temps y vis-tu ?"
+        }
       ],
       "correctOption": "d",
       "explanation": "Chaque réponse trahit le type de sa question. « Non » ne répond qu'à une interrogation totale : la question porte sur toute la phrase, donc « Es-tu d'ici ? ». « Depuis trois ans » est une information de durée : elle répond à une interrogation partielle ouverte par un mot interrogatif, donc « Depuis combien de temps y vis-tu ? ». ✓ Le piège courant est de choisir des questions dont le sens convient sans vérifier leur type : « D'où viens-tu ? » appellerait un nom de lieu et non un « non », et « Y vis-tu depuis très longtemps ? » appellerait « oui » ou « non » et non une durée chiffrée.",

@@ -6,9 +6,9 @@ Nouveau module, nouveau thème. Après _Pages d'amour_, voici **« Toi, mon semb
 
 ## 🎭 Un songe : trois métiers qui se retirent
 
-Le texte de la séquence est **« Un songe »**, de **Sully Prudhomme** (1839-1907), poète français dont les vers « traduisent un idéal de sagesse et de fraternité » et qui reçut le **prix Nobel en 1901** ; on lui doit _La Justice_ et _Les vaines Tendresses_. Le poème compte **quatorze vers** et se lit en **deux parties**, que le manuel annonce sans en imprimer les bornes : le **songe**, puis le **réveil** — les délimiter à partir d'indices précis est la première question de compréhension.
+Le texte de la séquence est **« Un songe »**, de **Sully Prudhomme** (1839-1907), poète français dont les vers « traduisent un idéal de sagesse et de fraternité » et qui reçut le **prix Nobel en 1901** ; on lui doit _La Justice_ et _Les vaines Tendresses_. Le poème compte **quatorze vers** et se lit en **deux parties**, que le manuel annonce sans en imprimer les bornes : le **songe**, puis le **réveil** — les délimiter à partir d'indices précis est la première question de compréhension. L'indice décisif est un fait de situation, non un changement de sujet : la seconde partie commence au moment où le poète **ouvre les yeux** et doute de ce qu'il voit ; tout ce qui précède, y compris sa solitude, appartient encore au songe.
 
-Dans le songe, trois travailleurs s'adressent tour à tour au poète pour lui signifier qu'ils cessent de travailler pour lui : le **laboureur** lui ordonne de faire son pain lui-même, le **tisserand** de faire ses habits, le **maçon** de prendre la truelle. Le poète se retrouve seul, abandonné du genre humain, frappé d'un **anathème** — une condamnation, une réprobation sévère — qu'il traîne partout. Au réveil, tout a repris son cours : des compagnons sifflent sur leurs échelles, les métiers bourdonnent, les champs sont semés. Le poète en tire sa leçon : **nul ne peut se vanter de se passer des hommes**, et depuis ce jour-là il les a tous aimés.
+Dans le songe, trois travailleurs s'adressent tour à tour au poète pour lui signifier qu'ils cessent de travailler pour lui : le **laboureur** lui ordonne de faire son pain lui-même, le **tisserand** de faire ses habits, le **maçon** de prendre la truelle. Le poète se retrouve seul, abandonné du genre humain, frappé d'un **anathème** — une condamnation, une réprobation sévère — qu'il traîne partout. Au réveil, tout a repris son cours : des compagnons sifflent sur leurs échelles, les métiers bourdonnent, les champs sont semés. Le poète en tire sa leçon, et le manuel en fait sa question 5 : « **Nul ne peut se vanter de se passer des hommes** » (v. 13). Le poème se ferme sur l'aveu qu'il les a tous aimés depuis ce jour-là.
 
 > 🗡️ Un poème qui raconte une petite histoire pour en tirer une morale s'apparente à une **fable** — « petit récit, écrit généralement en vers et illustrant une morale », dit la note du manuel. C'est le rapprochement que te demande la dernière question de compréhension.
 
@@ -74,13 +74,13 @@ Les quatre colonnes ne sont pas décoratives : reconnaître un type, c'est recon
 
 C'est la règle qui fait la difficulté de la leçon, et le manuel la pose noir sur blanc : « il arrive bien souvent qu'un même type de phrase, tout en remplissant ses propres fonctions, permette aussi de remplir les fonctions d'un autre ». Une phrase d'un type donné peut donc **s'interpréter comme si elle était d'un autre type**.
 
-L'exemple de l'Explicitation aligne quatre énoncés équivalents :
+L'exemple de l'Explicitation aligne trois énoncés qui valent tous le même impératif :
 
 | Type employé | Énoncé | Ce qu'il vaut |
 | --- | --- | --- |
-| déclaratif | _Nous devrions les aider._ | = |
-| interrogatif | _Ne devrions-nous pas les aider ?_ | = **Aidons-les.** (impératif) |
-| exclamatif | _Ils ont tant besoin de notre aide !_ | = |
+| déclaratif | _Nous devrions les aider._ | **Aidons-les.** (impératif) |
+| interrogatif | _Ne devrions-nous pas les aider ?_ | **Aidons-les.** (impératif) |
+| exclamatif | _Ils ont tant besoin de notre aide !_ | **Aidons-les.** (impératif) |
 
 > ⚠️ Le type se lit sur la **forme** — la construction et la ponctuation ; la fonction se lit dans la **situation**. Une phrase interrogative reste interrogative même quand elle donne un conseil : elle n'est pas devenue impérative, elle en remplit seulement la fonction. Dire le contraire, c'est confondre ce que la phrase **est** et ce qu'elle **fait**.
 
