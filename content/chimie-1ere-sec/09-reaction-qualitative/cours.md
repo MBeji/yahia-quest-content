@@ -26,7 +26,7 @@ Même chose dans un moteur à essence, où les bougies fournissent l'étincelle.
 
 > 📌 **À retenir.** Une réaction chimique est dite **amorcée** quand elle nécessite l'intervention d'une action extérieure.
 
-Cette action peut être une élévation locale de température, une exposition à la lumière, un choc. Et une fois amorcée, la réaction **se poursuit d'elle-même** — l'incandescence se propage à tout le mélange sans qu'on rechauffe.
+Cette action peut être une élévation locale de température, une exposition à la lumière, un choc. Et une fois amorcée, la réaction **se poursuit d'elle-même** — l'incandescence se propage à tout le mélange sans qu'on réchauffe.
 
 **Spontanée.** Le détartrant, lui, n'attend rien : dès qu'il touche le calcaire, l'effervescence démarre. La rouille se forme sans que personne n'intervienne. Et une lame de zinc décapée, plongée dans une solution de sulfate de cuivre II, se couvre d'un dépôt rouge brique de cuivre pendant que le bleu de la solution s'atténue.
 
@@ -40,6 +40,8 @@ Cette action peut être une élévation locale de température, une exposition �
 
 > 📌 **À retenir.** Une réaction chimique est dite **exothermique** si elle dégage de la chaleur.
 
+> 📖 **Le vocabulaire des combustions.** Dans toute combustion, le corps qui brûle est le **combustible** — le butane du brûleur, la cire d'une bougie, le magnésium — et le corps qui entretient la combustion est le **comburant**, presque toujours le dioxygène de l'air. Les deux sont des réactifs, et il les faut tous les deux : privé de comburant, un combustible ne brûle pas, même porté au rouge.
+
 **Endothermique.** Mesure la température θ₁ d'une solution d'acide chlorhydrique, puis ajoute de l'hydrogénocarbonate de sodium. Vive effervescence, un gaz qui trouble l'eau de chaux — et le thermomètre **descend** : θ₂ < θ₁.
 
 > Hydrogénocarbonate de sodium + solution d'acide chlorhydrique → dioxyde de carbone + solution de chlorure de sodium
@@ -47,6 +49,8 @@ Cette action peut être une élévation locale de température, une exposition �
 > 📌 **À retenir.** Une réaction chimique est dite **endothermique** si elle absorbe de la chaleur.
 
 > 🗡️ Ne confonds pas « endothermique » avec « qui n'échange pas de chaleur ». Une réaction endothermique échange bel et bien de la chaleur — elle en **prend** au milieu, ce que le thermomètre mesure en descendant.
+
+> 🗡️ Et surtout : **chauffer pour démarrer, ce n'est pas absorber**. Il faut porter le mélange fer-soufre à l'incandescence pour le déclencher, et il est pourtant **exothermique** — la preuve, l'incandescence se propage ensuite d'elle-même à tout le mélange, alors que plus personne ne chauffe. L'amorçage répond à la première question, le bilan thermique à la deuxième : ne réponds jamais à l'une avec l'autre.
 
 ## ⏱️ Troisième question : rapide ou lente ?
 
@@ -67,16 +71,20 @@ Reprends les exemples, et remarque que les réponses se combinent librement :
 
 | Réaction | Déclenchement | Chaleur | Durée |
 | -------- | ------------- | ------- | ----- |
-| Rouille du fer | spontanée | — | **lente** |
-| Détartrant sur le calcaire | **spontanée** | — | rapide |
-| Mélange fer-soufre chauffé | **amorcée** | exothermique | rapide |
-| Zinc dans le sulfate de cuivre II | **spontanée** | — | **lente** |
+| Rouille du fer | spontanée | non étudiée ici | lente |
+| Détartrant sur le calcaire | spontanée | non étudiée ici | rapide |
+| Mélange fer-soufre chauffé | amorcée | exothermique | rapide |
+| Zinc dans le sulfate de cuivre II | spontanée | non étudiée ici | lente |
+| Zinc dans l'acide chlorhydrique | spontanée | exothermique | non étudiée ici |
+| Hydrogénocarbonate de sodium dans l'acide chlorhydrique | spontanée | endothermique | rapide |
 
-Une réaction spontanée peut donc être rapide (le détartrant) **ou** lente (la rouille). Savoir qu'elle part toute seule ne dit rien de sa durée. C'est exactement le piège des exercices.
+> ⚠️ « non étudiée ici » ne veut pas dire « pas de chaleur » : on ne l'a simplement pas mesurée sur cette réaction-là. Une case vide n'est jamais une réponse.
+
+Lis maintenant le tableau colonne par colonne, et les indépendances apparaissent. Une réaction spontanée peut être rapide (le détartrant) **ou** lente (la rouille) : savoir qu'elle part toute seule ne dit rien de sa durée. Une réaction exothermique peut être amorcée (le fer-soufre) **ou** spontanée (le zinc dans l'acide chlorhydrique). Enfin deux réactions également spontanées se séparent sur la chaleur — le zinc dans l'acide chauffe, l'hydrogénocarbonate refroidit. C'est exactement le piège des exercices.
 
 ## 🍋 L'intrus : le catalyseur
 
-Le catalyseur ne répond à aucune des trois questions. Il change la réponse à la troisième — sans être un réactif.
+Le catalyseur n'est la réponse à aucune des trois questions : ce n'est pas un caractère de la réaction, c'est un corps qu'on ajoute. Mais il pèse sur la troisième — il rend la réaction plus rapide — sans être pour autant un réactif.
 
 **Le lait caillé.** Sous l'action de ferments, le lactose du lait se transforme en acide lactique ; le lait caille quand la concentration en acide lactique dépasse 5 g·L⁻¹. Prends deux verres de lait identiques et ajoute quelques gouttes de citron dans l'un : celui-là caille **plus vite**. La réaction est pourtant la même, et la quantité de citron n'a pas bougé à la fin.
 

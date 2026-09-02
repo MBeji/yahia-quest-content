@@ -43,6 +43,8 @@ Dans la tour, le brut est chauffé par le bas. Les composés les plus légers mo
 | Milieu | White spirit, kérosène, gazole, fuel domestique |
 | Bas (les plus lourds) | fuel industriel, huiles de graissage, paraffines, bitumes |
 
+Chaque fraction sort de la tour dans l'état que lui impose sa température d'ébullition : **un corps est gazeux dès que la température ambiante dépasse sa température d'ébullition, liquide sinon.** À 20 °C on obtient donc des **gaz** (méthane −160 °C, éthane, propane −42 °C, butane 0 °C), des **liquides** (essences, White spirit, kérosène, gazole, fuels) et des **solides** (huiles de graissage, paraffines, bitumes).
+
 **Les gaz naturels.** Ce sont des mélanges dont le principal constituant est le **méthane** — de 70 à 95 % selon les gisements —, souvent accompagné d'éthane, de propane et de butane.
 
 > 📌 **À retenir.** Le **pétrole** et les **gaz naturels** sont les principales sources d'hydrocarbures.
@@ -98,8 +100,10 @@ L'énergie libérée par la combustion d'une mole croît avec la taille de la mo
 
 **Ensuite l'effet de serre.** La Terre reçoit le rayonnement solaire et renvoie vers l'espace un rayonnement infrarouge. Dans l'atmosphère, la vapeur d'eau, le dioxyde de carbone et d'autres gaz en retiennent une partie : c'est l'**effet de serre**, et il est utile — c'est lui qui maintient la Terre à une température moyenne favorable à la vie.
 
-Le problème n'est donc pas l'effet de serre, mais son **renforcement**. En déversant chaque année plus de **6 milliards de tonnes** de dioxyde de carbone, les activités humaines augmentent la température moyenne, ce qui peut entraîner à long terme la fusion des glaciers, la montée des océans et la désertification de certaines régions.
+Le problème n'est donc pas l'effet de serre, mais son **renforcement**. En déversant chaque année, à l'époque où le manuel a été écrit, plus de **6 milliards de tonnes** de dioxyde de carbone, les activités humaines augmentent la température moyenne, ce qui peut entraîner à long terme la fusion des glaciers, la montée des océans et la désertification de certaines régions.
 
 > 🗡️ Retiens la distinction, elle est souvent ratée : l'effet de serre est un phénomène **naturel et nécessaire**. Ce que la combustion des hydrocarbures provoque, c'est son **forçage** — le même mécanisme, poussé trop loin.
+
+**Deux prolongements que le manuel donne en documents.** L'*essence sans plomb* : on ajoutait autrefois à l'essence un additif au plomb pour améliorer le rendement du moteur, mais ce plomb se dépose sur les catalyseurs du pot d'échappement et les empêche d'agir — d'où l'essence sans plomb, nécessaire au bon fonctionnement du pot catalytique. La *pénurie à l'horizon* : au rythme de consommation et dans l'état des réserves connues à la rédaction du manuel, on comptait environ **40 ans** de pétrole et **65 ans** de gaz naturel, alors que la population mondiale et la consommation par habitant continuent d'augmenter.
 
 > 🏆 Matière terminée, héros ! De la constitution de la matière jusqu'aux hydrocarbures, tu as parcouru les quatre parties du programme : la matière, les solutions, la réaction chimique et la chimie organique. Tu sais désormais reconnaître un corps pur, compter en moles, équilibrer une équation, trouver un réactif limitant — et lire, sur une flamme de bec Bunsen, si la combustion est allée jusqu'au bout.

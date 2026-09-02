@@ -82,7 +82,7 @@ Le rapport n(Fe) ÷ n(S) vaut 1, et l'équation Fe + S → FeS demande justement
 
 > 📌 **À retenir.** Lorsque les réactifs sont pris dans des proportions stœchiométriques, ils disparaissent complètement à la fin de la réaction.
 
-**Cas 2 — les proportions ne le sont pas.** Fais réagir 2,5 g d'hydrogénocarbonate de sodium (soit 0,03 mol) avec de l'acide chlorhydrique, selon deux dosages :
+**Cas 2 — les proportions ne le sont pas.** Fais réagir 2,5 g d'hydrogénocarbonate de sodium (soit 0,03 mol) avec de l'acide chlorhydrique, selon deux dosages. L'équation, HCl + NaHCO₃ → CO₂ + H₂O + NaCl, demande **une mole d'acide par mole d'hydrogénocarbonate** :
 
 | Mélange | NaHCO₃ | HCl | Résultat |
 | ------- | ------ | --- | -------- |
@@ -118,8 +118,8 @@ M(FeCl₃) = 56 + 3 × 35,5 = 162,5 g·mol⁻¹, donc m(FeCl₃) = 3,33 × 10⁻
 
 Et le fer restant ? Il en a été consommé 2 × 0,05 ÷ 3 = 3,33 × 10⁻² mol, sur 0,05 disponibles :
 
-n(Fe) restant = 0,05 − 3,33 × 10⁻² = 1,67 × 10⁻² mol, soit m ≈ **0,93 g**.
+n(Fe) restant = 0,05 − 3,33 × 10⁻² = 1,67 × 10⁻² mol, soit m = 1,67 × 10⁻² × 56 ≈ **0,94 g**.
 
 > ⚠️ L'erreur la plus coûteuse est de calculer les produits à partir du réactif en excès. Toute quantité formée se déduit du **réactif limitant**, parce que c'est lui qui arrête la réaction en s'épuisant.
 
-> 🏆 Chapitre franchi, héros ! Tu sais équilibrer une équation, la lire en moles, repérer le réactif limitant et en déduire masses et volumes. Prochaine étape : quitter les corps isolés pour une famille entière — les hydrocarbures, ce qu'on en tire et ce que leur combustion rejette.
+> 🏆 Chapitre franchi, héros ! Tu sais équilibrer une équation, la lire en moles, repérer le réactif limitant et en déduire les masses formées ou restantes. Prochaine étape : quitter les corps isolés pour une famille entière — les hydrocarbures, ce qu'on en tire et ce que leur combustion rejette.
