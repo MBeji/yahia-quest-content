@@ -37,7 +37,9 @@
   ```
 
   Recette complète (jonctions Windows, contrôles, pièges) :
-  `FableEtudes/METHODE-GENERATION-CONTENU.md` § Phase 0.1.
+  `FableEtudes/METHODE-GENERATION-CONTENU.md` § Phase 0.1. Ce que le **poste** doit porter avant
+  cette recette (logiciels, réglages Windows, domaines à autoriser sur le proxy — la liste à
+  remettre à un admin PC) : `FableEtudes/POSTE-DE-TRAVAIL.md`.
 
 - **Lancer une campagne** : `/campagne` (skill `.claude/skills/campagne/`) — état des lieux
   vérifié, question à l'humain sur le couple à traiter, puis déroulé de la chaîne. Il ne choisit
