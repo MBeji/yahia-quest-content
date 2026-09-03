@@ -308,13 +308,23 @@ son étude et dans les citations qu'on en fait.
       `league_podium` (`'Trophy'`) et `event_rentree` (`'Sparkles'`) étaient simplement
       absents de la carte. Corrigé des deux côtés, et gardé par les deux : Vitest confronte
       la carte au semis, pgTAP lit la base reconstruite.
-      ⚠️ **Ce qui reste, et qui n'est PAS du code** : relever la CURR en prod. La scorecard
-      §1bis attend un **chiffre daté**, pas un instrument — il sortira `n = 0` tant que la
-      ligne 1 (« zéro canal d'acquisition ») tient, et c'est une lecture, pas un échec. Se lit
-      sur `/admin/engagement` avec un compte `role = 'admin'`. Une session d'agent ne peut pas
-      l'atteindre : le proxy réseau bloque le domaine de production. **Proposé et non tranché**
-      au 2026-09-03 : un workflow en lecture seule qui publierait la CURR chaque semaine dans
-      le résumé de son run (barreau « supprimer le besoin » de `zero-intervention.md`).
+      ✅ **La CURR est RELEVÉE — et la prédiction « n = 0 » écrite ici était FAUSSE.**
+      Le 2026-09-03, `/admin/engagement` en production : **60 % sur la semaine du 17/08
+      (3 élèves revenus sur 5)**, et huit semaines lisibles depuis le 29/06 — 66,7 · 50 · 50 ·
+      0 · 100 · 0 · 100 · 60 %, soit **9 retours sur 16 personnes-semaines**. La ligne 2 de la
+      scorecard §1bis passe au VERT après six semaines de « jamais publiée ».
+      ⚠️ **Verte parce que la métrique se LIT, pas parce que la rétention serait bonne** : `n`
+      va de 1 à 5, et sur une semaine à 1 actif la CURR ne peut valoir que 0 % ou 100 % — quatre
+      des huit semaines sont dans ce cas. Ce n'est pas une courbe, c'est du bruit avec une
+      unité. Ces actifs ne viennent d'aucun canal : la ligne 1 tient toujours.
+      ⚠️ **Et la console était ORPHELINE** (arena, 2026-09-03) : `/admin/engagement` n'avait pas
+      son entrée dans le pôle `console.tsx` — ni nav ni menu, elle ne s'atteignait qu'en collant
+      son URL. C'est la SECONDE fois : l'en-tête de ce fichier documente déjà le cas
+      `/admin/economie`. Le constat de l'étude rejoué sur l'outil censé la mesurer. Un test
+      compare désormais le routeur au pôle dans les deux sens.
+      ⚠️ **Reste proposé et non tranché** : un workflow en lecture seule publiant la CURR chaque
+      semaine (barreau « supprimer le besoin » de `zero-intervention.md`) — il a plus de valeur
+      maintenant que la métrique n'est pas nulle.
 
 ---
 

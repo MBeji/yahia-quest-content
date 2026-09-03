@@ -660,19 +660,26 @@ carte insensible à la casse (ce serait ouvrir la porte à n'importe quelle grap
 
 ### Ce qui reste, et qui n'est pas du code
 
-- **Relever la CURR en prod.** La scorecard STATUS §1bis attend un CHIFFRE DATÉ, pas un
-  instrument. Il sortira `n = 0` tant que la ligne 1 (« zéro canal d'acquisition ») tient —
-  c'est une lecture, pas un échec, et c'était le risque RISK-1 assumé dès le §1.4.
-  **Où** : `/admin/engagement`, avec un compte dont le profil porte `role = 'admin'` (la porte
-  autoritaire est SQL, `admin_engagement_overview()` gardée par `is_admin()`). La ligne à
-  recopier est le bloc CURR — 8 semaines ISO, fuseau Tunis : parmi les actifs de la semaine N,
-  la part encore active en N+1.
-  ⚠️ **Une session d'agent ne peut pas aller la lire** : le proxy réseau des sessions bloque le
-  domaine de production. **Proposé et non tranché au 2026-09-03** : un workflow en lecture
-  seule (`PROD_SUPABASE_DB_URL`, admin par `request.jwt.claims` comme les suites pgTAP)
-  publiant le tableau agrégé — sans PII par construction — dans le résumé de son run chaque
-  semaine. C'est le barreau « **supprimer le besoin** » de `zero-intervention.md` : la
-  scorecard se relirait sans qu'un humain ouvre un écran.
-- ~~**Déplacer ce dossier en `EtudeRealisé/`**~~ — fait le 2026-09-03 (privé#329).
+- ~~**Relever la CURR en prod.**~~ **FAIT le 2026-09-03**, et le résultat contredit ce que
+  cette ligne annonçait. Elle disait « il sortira `n = 0` tant que la ligne 1 tient ». Faux :
+  **CURR = 60 % sur la semaine du 17/08, 3 élèves revenus sur 5**, et huit semaines lisibles
+  depuis le 29/06 (66,7 · 50 · 50 · 0 · 100 · 0 · 100 · 60 %) — **9 retours sur 16
+  personnes-semaines**. STATUS §1bis ligne 2 passe au vert.
+  ⚠️ **Verte parce que la métrique se LIT, pas parce que la rétention serait bonne.** `n` va de
+  1 à 5 : sur une semaine à 1 actif la CURR ne peut valoir que 0 % ou 100 %, et quatre des huit
+  semaines sont dans ce cas. Ce n'est pas une courbe, c'est du bruit avec une unité — et ces
+  actifs ne viennent d'aucun canal, la ligne 1 tient toujours. Le seul fait saillant de la
+  série : **5 actifs la semaine du 17/08 contre 1 les quatre semaines précédentes.**
+  ⭐ **La leçon vaut plus que le chiffre** : RISK-1 disait « la mesure risque de ne rien
+  montrer », et cette ligne en avait tiré une certitude (`n = 0`) écrite dans quatre documents.
+  Un risque assumé n'est pas un résultat connu. Il fallait aller regarder.
+  ⚠️ **Et l'écran n'était pas atteignable.** `/admin/engagement` n'avait aucune entrée dans le
+  pôle `console.tsx` : ni nav, ni menu — uniquement en collant l'URL. Signalé depuis la
+  production le jour du relevé. C'est la SECONDE fois qu'une console naît orpheline ici
+  (`/admin/economie` avant elle), et c'est le constat n° 4 de cette étude — « neuf badges que
+  rien ne décernait » — rejoué sur l'instrument censé la mesurer. Corrigé, et gardé par un test
+  qui compare le routeur au pôle dans les deux sens.
+  **Reste proposé et non tranché** : un workflow en lecture seule qui publierait la CURR chaque
+  semaine — il a plus de valeur maintenant que la métrique n'est pas nulle.
 - **Les quatre écrans qui restent différés** (§2.3) le restent : passe de saison, coffres,
   graphe d'amis, A/B testing — gated sur les mesures du lot 1 et sur de vrais utilisateurs.
