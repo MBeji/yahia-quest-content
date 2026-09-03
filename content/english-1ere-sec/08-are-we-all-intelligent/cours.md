@@ -14,7 +14,7 @@ The lesson opens with six statements. You choose the ones that match **your own*
 
 Three of them are about school and money, three are about people and the body. Choosing between them is already an opinion, and the text you read next disagrees with the narrow ones: **gifts are not rare**. Nearly everybody carries one, and the difficulty is finding out **which**.
 
-> 🗡️ Keep your six choices. At the end of the lesson you look at them again and decide whether you want to change any of them. Changing your mind after reading is a sign of a working brain, not of a weak one.
+> 🗡️ Keep the statements you chose. At the end of the lesson you look at them again and decide whether you want to change any of them. Changing your mind after reading is a sign of a working brain, not of a weak one.
 
 ## ⚡ A gift · gifted · a prodigy
 
@@ -30,20 +30,22 @@ Three words of the same family. They are never interchangeable, because they do 
 - Gifted is a **quality you are**: _to be gifted_ ✓ — "to have gifted" ✗
 - A prodigy is a **person you are**: _to be a prodigy_ ✓ — "to have a prodigy for maths" ✗
 
-The text of the lesson tells the story of **John Adams**, who read fluently at the age of two, solved complex maths problems when he was three, and at eight became the youngest pupil in Britain to pass O level maths. Its last line is the one that matters: being gifted is not a rare quality, it is the natural birth right of almost every youngster.
+The text of the lesson tells the story of **John Adams**, who read fluently at the age of two, solved complex maths problems when he was three, and at eight became the youngest pupil in Britain to pass O level maths. Its last line is the one that matters, word for word: "Being gifted isn't a rare quality. It's the natural birth right of almost every youngster."
 
 ## 🔮 Six types of intelligence
 
-The questionnaire sorts its questions into six sets, one per type. Learn what each one looks like in ordinary life.
+The questionnaire sorts its questions into sets and gives you six type names to put on them. Learn what each name looks like in ordinary life.
 
 | Type           | You show it when you…                                                       |
 | -------------- | ---------------------------------------------------------------------------- |
-| **emotional**  | get along with the people round you, weigh on their choices, are respected   |
+| **emotional**  | get along with the people round you, influence their choices, are respected  |
 | **creative**   | invent and imagine something that did not exist before                       |
 | **mechanical** | like building things, repairing what is broken, solving a practical problem  |
 | **physical**   | are full of energy, live for sport, and say what you feel with your body     |
 | **artistic**   | put things into words or into pictures — stories, poems, drawings, paintings |
 | **social**     | look for what others feel, are warm-hearted, and listen well                 |
+
+> 🎯 **artistic** and **creative** stand very close, so be careful. In the questionnaire it is the **artistic** side that the sets illustrate: describing a person, imagining a story, writing a poem, drawing, painting — all of that is artistic. Keep **creative** for inventing something that did not exist before. No exercise of this chapter ever asks you to choose between these two.
 
 > ⚠️ The six are **not** a ladder from worst to best, and nobody is only one of them. The questionnaire is not a competition between classmates: it tells **each** pupil which type or types are his own.
 
