@@ -13,7 +13,8 @@
 >   p.404–408 (فهرس الكتاب intégral).
 >   **Transcrit le** : 2026-08-04 → 2026-08-23. **Statut** : **`partielle` / profondeur `mixte`** —
 >   ossature sur tout le programme, **profondeur de génération sur 3 chapitres sur 5** : le مبحث 2
->   et les deux مباحث du محور 3. ⚠️ Le محور 3 **n'a pas encore passé sa R-7** (voir §6).
+>   et les deux مباحث du محور 3. ✅ Le محور 3 **a passé sa R-7 le 2026-08-23** (deux relectures
+>   indépendantes en contexte vierge — 28 constats, tous corrigés ; voir §6).
 >   **Langue d'enseignement** : `ar`. **gradeSlug porteur** : `bac-math`.
 >   **subject ids** attendus : `philosophie-bac-math`, `philosophie-bac-sciences-exp`,
 >   `philosophie-bac-eco-gestion`, `philosophie-bac-techniques`, `philosophie-bac-info`
@@ -12977,7 +12978,7 @@ Cinq chapitres = les cinq **مباحث** du programme. Les plages de pages sont 
 
 ## 6. Incertitudes / à revérifier
 
-- ⚠️ **PROFONDEUR RÉELLE — `mixte` : ossature partout, génération sur UN chapitre.**
+- ⚠️ **PROFONDEUR RÉELLE — `mixte` : ossature partout, génération sur TROIS chapitres sur cinq.**
   - **L'ossature** — la page de titre et son verso (p.1–2), le التقديم (p.3), la خارطة الكتاب
     (p.4–5), l'ouverture du محور 1 (p.6) et le **فهرس intégral** (p.404–408). Le §2 et le §4 en
     dérivent : ils donnent le **scope, la structure et les plages de pages** exacts, ainsi que
@@ -12990,12 +12991,29 @@ Cinq chapitres = les cinq **مباحث** du programme. Les plages de pages sont 
     البنائيّة), les 4 exercices de **كيفيّات التفكير** avec leurs encadrés توضيح, le **نصّ مطوّل**
     de بوبير restitué par ses 15 repères marginaux (texte non recopié — R-2) et les 6 encadrés de
     **مختصرات** verbatim.
-    ⇒ **`chapitresGeneration: ["03-ilm-haqiqa-namdhaja"]`** : ce chapitre, et lui seul, est
-    générable (R-5 lu au chapitre).
+  - **Le محور 3 en entier (p.271–402) à PROFONDEUR DE GÉNÉRATION**, transcrit du 2026-08-04 au
+    2026-08-23 : le **مبحث 3.1 الدّولة — السّيادة والمواطنة** (78 p., 22 سندات) et le
+    **مبحث 3.2 الأخلاق — الخير والسّعادة** (44 p., 18 سندات), avec leur apparat complet et les
+    **نصوص مطوّلة** de سبينوزا et نيتشه (non recopiés — R-2). R-7 faite le **2026-08-23**.
 
-  **Ce qui n'est PAS transcrit** : p.7–214 et p.271–402, soit les **quatre autres chapitres**
-  (1.1 الآنيّة والغيريّة, 1.2 الخصوصيّة والكونيّة, 3.1 الدّولة, 3.2 الأخلاق). Le LOT B y reste
-  **interdit**.
+    ⇒ **`chapitresGeneration: ["03-ilm-haqiqa-namdhaja", "04-dawla-siyada-muwatana",
+    "05-akhlaq-khayr-saada"]`** — **trois** chapitres générables (R-5 lu au chapitre).
+    ⚠️ **Le registre `suivi/bac-math.json` fait foi**, et `programme:check` refuse tout slug
+    absent du chapitrage du manifeste : ce sont ces trois slugs exactement.
+
+  **Ce qui n'est PAS transcrit** : p.7–214, soit les **deux chapitres du محور 1**
+  (1.1 الآنيّة والغيريّة, 1.2 الخصوصيّة والكونيّة). Le LOT B y reste **interdit**.
+
+  ⚠️ **Ce que la R-7 du محور 3 impose à qui génère 04 et 05.** Sur ses 10 constats substantiels,
+  la classe dominante est le **contresens par négation — 6 sur 10** : la définition **positive**
+  de l'État légitime chez سبينوزا (p.299) avait été retournée en description d'un **mauvais**
+  régime, et elle était le pivot d'une مهمّة — un exercice bâti dessus aurait été **corrigé à
+  l'envers**. Même mécanisme sur مسراهي (p.350), ابن مسكويه (p.354) et دوركايم (p.366).
+  Le verdict est net sur l'endroit du danger : **« la transcription arabe est solide ; le défaut
+  est concentré dans les REFORMULATIONS FRANÇAISES et l'appareil de renvois »**. Ce chapitre
+  s'écrit en arabe (`contentLanguage: ar`) : **s'appuyer sur le verbatim arabe transcrit, jamais
+  sur la reformulation française**, et revérifier toute thèse avant d'en faire une clé —
+  l'attribution inversée (thèse de l'auteur vs préjugé qu'il combat) est le piège attesté ici.
 
 - **Écarts relevés entre le فهرس et les pages** (le فهرس n'est pas toujours exact — s'en méfier
   pour les chapitres non encore lus) :
