@@ -1,6 +1,8 @@
 # Étude 31 — L'envie de revenir : engagement & rétention à hauteur de jeu vidéo
 
-> **Statut** : validée — Q-1…Q-4 arbitrées le 2026-09-01 (§7)
+> **Statut** : **exécutée — les 8 lots écrits et poussés le 2026-09-03** (arena, PR
+> `claude/implementation-e31-92w7pk`, en attente de merge ; journal §8). Q-1…Q-4 arbitrées le
+> 2026-09-01 (§7)
 > **Priorité** : 31 · **Valeur** : 🔁 le retour de l'élève cesse de reposer sur sa seule
 > volonté — mesuré, rappelé, célébré, rythmé ; l'élève ouvre l'app parce qu'il en a envie,
 > pas parce qu'on l'y force · **Complexité** : moyenne+
@@ -538,4 +540,81 @@ Les décisions, consignées ici et répercutées dans les règles :
 
 ## 8. Journal d'exécution
 
-(rempli au fil des lots par l'exécuteur)
+### 2026-09-03 — les huit lots, écrits et poussés (arena, branche `claude/implementation-e31-92w7pk`)
+
+Chaque lot = un commit, sa migration, ses assertions pgTAP et ses tests co-localisés.
+`npm run verify` (3 854 tests), `build:check` et `smoke:shell` verts ; la suite pgTAP
+complète — **96 fichiers, 1 363 assertions** — rejouée en local sur la chaîne entière
+(`docs/agents/pgtap-en-local.md`, sans Docker).
+
+| lot | livré                                                                                                                                     | pgTAP |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| 1   | `admin_engagement_overview` (CURR, cohortes D1/D7/D30, DAU/WAU, séries **effectives**, KPI-D, KPI-E) · `/admin/engagement` · 12 événements produit en liste fermée typée | 29    |
+| 2   | 8 badges rallumés dans le finalizer qui possède le fait · `night_owl` retiré · familles NOT NULL · collection avec verrouillés et conditions | 20    |
+| 3   | 3 missions/jour tirées d'un pool de 8 filtré par éligibilité · tirage déterministe · anneau sur l'XP réel · objectif choisi · fin de session  | 20    |
+| 4   | `profiles.locale` · 6 audiences · pipeline de priorité (≤ 1/jour par structure) · textes FR/EN/AR · badge `league_podium`                    | 16    |
+| 5   | classement « Cette semaine » par défaut · podium de ligue célébré · carte « Ta semaine »                                                     | 12    |
+| 6   | `claim_welcome_pack` idempotente (30 pièces) · première quête à un tap · bandeau anonyme qui NOMME la perte                                  | 9     |
+| 7   | `hero_class` en codes + i18n · `avatar_tier` rendu · cadres et titres (puits de pièces)                                                      | 13    |
+| 8   | `app_events` · un seul actif par contrainte · badge saisonnier dans la fenêtre · bannière                                                    | 12    |
+
+### Ce que l'exécution a appris — et qui ne se déduisait pas de l'étude
+
+**1. Deux défauts que seul le harnais pgTAP LOCAL a vus, avant la CI.**
+
+- Le corps d'`award_coins` a été substitué depuis sa révision vivante — en emportant un
+  `GRANT … TO authenticated` que 20260606150000 avait **révoqué** : la faille S1, où un
+  élève connecté pouvait s'auto-créditer des pièces. `CREATE OR REPLACE` ne touche pas aux
+  privilèges, mais recopier le GRANT du fichier source la rouvrait en silence.
+  `01_economy_grants` l'a montré. **Règle** : substituer un corps, c'est hériter de son
+  fichier — pas de son ÉTAT de privilèges, qui a pu changer trois migrations plus loin.
+- `award_duel_rewards` est un **second écrivain de `hero_class`** : il recopie la courbe de
+  niveau d'`award_xp` (duplication antérieure à cette étude) et écrivait donc lui aussi du
+  français. La contrainte du lot 7 faisait échouer **chaque récompense de duel**.
+  `25_duel_forfeit` l'a montré en trois assertions rouges. Une assertion structurelle
+  interdit désormais qu'un troisième écrivain réapparaisse.
+
+**2. Trois écarts assumés au contrat**, chacun parce que la lettre de l'étude rendait la
+règle inatteignable :
+
+- **`push_consent_events`** (lot 1, hors §3.1) : US-13 demande « opt-in **et** opt-out ». Le
+  second n'était comptable par AUCUNE colonne — `delete_push_subscription` supprime la ligne,
+  donc « jamais abonné » et « parti » se ressemblaient. KPI-D, le garde-fou de R-4 contre
+  RISK-2, était non mesurable par construction.
+- **`daily_xp_day` / `daily_xp_base`** (lot 3, hors §3.1), tenues dans `award_xp` : R-12 exige
+  l'XP RÉEL du jour, et aucune source ne le donne — `attempts` ignore l'XP du donjon, des
+  duels et des objectifs, tous crédités par `award_xp` sans ligne de tentative. Reconstituer
+  la somme ailleurs, c'était recopier quatre barèmes et s'engager à les faire diverger.
+- **`get_weekly_recap` self-scopée** (lot 5) plutôt qu'un appel à `get_tutor_digest_inputs`
+  (§3.2) : cette fonction-là est `service_role` et volontairement dépersonnalisée — son JSON
+  part chez un fournisseur de modèle. L'appeler depuis une surface élève supposerait le client
+  admin sur un écran de jeu.
+
+**3. Le stop-point du lot 3, remonté plutôt que contourné.** La fenêtre de rachat de série
+DIVERGE de ce que R-16 suppose (« série perdue avant-hier, fenêtre encore ouverte ») :
+`streakRecoveryBlock` n'impose aucune borne haute, un élève parti depuis dix jours peut encore
+racheter. Rien n'a été changé — le coût et la fenêtre du rachat sont l'arbitrage **A16 de
+é09**. La bannière, elle, n'avait plus besoin de ce lot : arena#947 l'a rendue atteignable le
+2026-09-02, la veille.
+
+**4. Ce que la garantie « une seule fois par période d'absence » (R-16) n'a pas coûté.** Le
+stop-point du lot 4 prévoyait une colonne d'état si la garantie n'était pas atteignable avec
+l'existant. Elle l'est : **ancrer chaque audience sur un jour EXACT** (`last_active_date =
+jour - 7`) la rend vraie un seul soir par absence. Une colonne de moins est une divergence de
+moins.
+
+**5. Deux budgets de bundle rouges, traités dans l'ordre que le dépôt prescrit.** Les libellés
+de la collection de badges (13 × nom + condition × 3 langues) ne servent qu'à `/boutique`, une
+route paresseuse : ils sont partis dans leur propre chunk (`i18n-badges`, 4,5 KB), sur le
+mécanisme de `parent/`. Les deux cartes du tableau de bord sont passées en `lazy()`. Les
+relèvements restants (i18n 184→188, dashboard 32→36) sont documentés à leur ligne, comme le
+fichier de budgets l'exige.
+
+### Ce qui reste, et qui n'est pas du code
+
+- **Relever la CURR en prod.** La scorecard STATUS §1bis attend un CHIFFRE DATÉ, pas un
+  instrument. Il sortira `n = 0` tant que la ligne 1 (« zéro canal d'acquisition ») tient —
+  c'est une lecture, pas un échec, et c'était le risque RISK-1 assumé dès le §1.4.
+- **Déplacer ce dossier en `EtudeRealisé/`** une fois la PR mergée.
+- **Les quatre écrans qui restent différés** (§2.3) le restent : passe de saison, coffres,
+  graphe d'amis, A/B testing — gated sur les mesures du lot 1 et sur de vrais utilisateurs.

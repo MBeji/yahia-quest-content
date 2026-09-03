@@ -249,7 +249,25 @@ son étude et dans les citations qu'on en fait.
       🔴 **Vérifié le 2026-08-24 : `docs/doctrine-verticale.md` n'existe pas.** Deux lots
       documentaires, aucun prérequis, cinq semaines d'exécution qui les citent.
 
-- [ ] **P7. é31 — l'envie de revenir (engagement & rétention) : validée, exécution à séquencer.**
+- [x] **P7. é31 — l'envie de revenir (engagement & rétention) : LES 8 LOTS ÉCRITS ET POUSSÉS
+      le 2026-09-03** (arena, PR `claude/implementation-e31-92w7pk`, en attente de merge).
+      Chaque lot porte sa migration, ses assertions pgTAP et ses tests co-localisés ;
+      `npm run verify`, `build:check` et `smoke:shell` sont verts, et la suite pgTAP complète
+      (96 fichiers, 1 363 assertions) a été rejouée en local sur la chaîne entière.
+      **Trois écarts assumés au contrat**, tous nommés dans les commits et la PR : une table
+      de consentement push (l'opt-out n'était comptable par AUCUNE colonne, or US-13 le
+      demande) ; un compteur d'XP du jour tenu dans `award_xp` (R-12 exige l'XP réel, et
+      `attempts` ignore donjon, duels et objectifs) ; une RPC self-scopée pour « Ta semaine »
+      plutôt qu'un appel à `get_tutor_digest_inputs`, qui est `service_role` et
+      dépersonnalisée. **Un stop-point remonté** : la fenêtre de rachat de série diverge de
+      ce que l'étude suppose — `streakRecoveryBlock` n'a aucune borne haute, un élève parti
+      depuis dix jours peut encore racheter. Rien n'a été changé : le coût et la fenêtre du
+      rachat sont l'arbitrage A16 de é09.
+      **Deux défauts trouvés par le harnais pgTAP local, avant la CI** : un `GRANT` recopié
+      d'un fichier source rouvrait la faille S1 (auto-crédit de pièces), et
+      `award_duel_rewards` — second écrivain de `hero_class` — faisait échouer chaque
+      récompense de duel après le passage aux codes. Les deux sont corrigés, et chacun a
+      désormais son assertion.
       Écrite et **validée le 2026-09-01** (`FableEtudes/31-envie-de-revenir/`, Q-1…Q-4
       arbitrées : opt-in inchangé · 4 événements dont Ramadan · classement hebdo par
       défaut · 30 pièces de bienvenue). Rallumer ce
@@ -262,6 +280,9 @@ son étude et dans les citations qu'on en fait.
       plafond déjà dépassé aujourd'hui) ; toute valeur d'économie passe par é09 (§3.9 de
       l'étude). Ne bloque rien ; le goulot du projet reste l'acquisition (§8, axe Marché),
       pas la rétention — cette étude prépare la rétention de ceux que l'acquisition amènera.
+      ⚠️ **Ce qui reste après le merge, et qui n'est pas du code** : relever la CURR en prod
+      (la scorecard §1bis attend un chiffre daté, pas un instrument), et déplacer le dossier
+      de l'étude en `EtudeRealisé/`.
 
 ---
 
