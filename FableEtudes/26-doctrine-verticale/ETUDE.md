@@ -451,7 +451,18 @@ hebdomadaire (KPI-4, calculable en attendant par requête sur `attempts`).
 | 1   | **Doctrine normative** : `docs/doctrine-verticale.md` (P-1…7, M0-4, DoE, règle, IA) + ancrage canonique (AGENTS.md) + fiche D-2 dans `_TEMPLATE.md` + règle de création d'étude dans `FableEtudes/README.md`  | `docs/doctrine-verticale.md` ; édits AGENTS.md, `_TEMPLATE.md`, `FableEtudes/README.md` | `npm run verify` vert (aucun code) ; liens/refs valides | validation Q-1 |
 | 2   | **Portefeuille re-séquencé + scorecard** : « Ordre d'exécution recommandé » réécrit (§3.3) ; statuts gelés actés (Q-3) dans l'index + en-têtes des études gelées ; colonne « M » dans STATUS.md §3 (annexe A) | édits `FableEtudes/README.md`, `06/10/12-*/ETUDE.md` (en-tête statut), `STATUS.md`      | idem ; cohérence index ↔ en-têtes vérifiée              | lot 1, Q-1/Q-3 |
 
-- [ ] Lot 1 — doctrine normative (docs + template + ancrage)
+- [x] **Lot 1 — doctrine normative (docs + template + ancrage)** — livré le **2026-09-03**,
+      six semaines après l'arbitrage. `docs/doctrine-verticale.md` (arena), l'ancrage de 4 lignes
+      sous la Definition of Done d'AGENTS.md, la fiche D-2 dans `_TEMPLATE.md` et la règle de
+      création dans ce README. ⚠️ **Ce que ce retard a coûté, et qu'il faut garder** : pendant ces
+      six semaines, ROADMAP, STATUS.md, l'index et les en-têtes des études gelées ont tous cité
+      « la doctrine verticale » comme une chose établie — elle n'existait que dans ce document et
+      dans les citations qu'on en faisait. Une règle qu'on applique sans l'avoir écrite est une
+      règle que personne ne peut contester ni corriger.
+      **Note d'exécution** : AGENTS.md était à 250 lignes sur un plafond de 250 (et proche du
+      plafond d'octets). L'ancrage a été financé en resserrant trois pièges dont le récit complet
+      vit déjà dans un doc dédié — la règle reste dans AGENTS.md, l'histoire va où elle a sa
+      place. Le plafond n'a pas été levé.
 - [ ] Lot 2 — portefeuille re-séquencé + scorecard STATUS.md
 
 **Stop-points** : le lot 1 ne modifie AUCUNE étude existante (seulement le template et
