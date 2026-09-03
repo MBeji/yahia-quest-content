@@ -1,8 +1,7 @@
 # Étude 31 — L'envie de revenir : engagement & rétention à hauteur de jeu vidéo
 
-> **Statut** : **exécutée — les 8 lots écrits et poussés le 2026-09-03** (arena, PR
-> `claude/implementation-e31-92w7pk`, en attente de merge ; journal §8). Q-1…Q-4 arbitrées le
-> 2026-09-01 (§7)
+> **Statut** : **LIVRÉE EN PRODUCTION le 2026-09-03** — les 8 lots, arena#949, squashée sur
+> `main` en `7bdbccd` ; journal §8. Q-1…Q-4 arbitrées le 2026-09-01 (§7)
 > **Priorité** : 31 · **Valeur** : 🔁 le retour de l'élève cesse de reposer sur sa seule
 > volonté — mesuré, rappelé, célébré, rythmé ; l'élève ouvre l'app parce qu'il en a envie,
 > pas parce qu'on l'y force · **Complexité** : moyenne+
@@ -540,7 +539,7 @@ Les décisions, consignées ici et répercutées dans les règles :
 
 ## 8. Journal d'exécution
 
-### 2026-09-03 — les huit lots, écrits et poussés (arena, branche `claude/implementation-e31-92w7pk`)
+### 2026-09-03 — les huit lots, MERGÉS EN PRODUCTION (arena#949, `main` en `7bdbccd`)
 
 Chaque lot = un commit, sa migration, ses assertions pgTAP et ses tests co-localisés.
 `npm run verify` (3 854 tests), `build:check` et `smoke:shell` verts ; la suite pgTAP
@@ -610,11 +609,20 @@ mécanisme de `parent/`. Les deux cartes du tableau de bord sont passées en `la
 relèvements restants (i18n 184→188, dashboard 32→36) sont documentés à leur ligne, comme le
 fichier de budgets l'exige.
 
+**6. Un dernier défaut, trouvé par CodeQL sur la PR — et il était dans un test.** La regex
+qui cherchait les appels `trackProductEvent(…)` pour vérifier qu'aucun ne joint de PII
+(`/trackProductEvent\((?:[^()]|\{[^{}]*\})*\)/g`) a été signalée `js/redos` en HIGH : ses
+quantificateurs imbriqués rétrogradent exponentiellement. Remplacée par un balayage qui compte
+les parenthèses — linéaire, et **plus juste** : la version régulière ne savait pas lire un appel
+dont un argument contient lui-même une parenthèse, donc elle en tronquait le texte et pouvait
+manquer une propriété interdite. Le test exige désormais d'avoir trouvé au moins autant d'appels
+que d'événements câblés : un balayage qui ne trouve rien ne peut plus passer à vide.
+
 ### Ce qui reste, et qui n'est pas du code
 
 - **Relever la CURR en prod.** La scorecard STATUS §1bis attend un CHIFFRE DATÉ, pas un
   instrument. Il sortira `n = 0` tant que la ligne 1 (« zéro canal d'acquisition ») tient —
   c'est une lecture, pas un échec, et c'était le risque RISK-1 assumé dès le §1.4.
-- **Déplacer ce dossier en `EtudeRealisé/`** une fois la PR mergée.
+- **Déplacer ce dossier en `EtudeRealisé/`** — la PR est mergée, le geste reste à faire.
 - **Les quatre écrans qui restent différés** (§2.3) le restent : passe de saison, coffres,
   graphe d'amis, A/B testing — gated sur les mesures du lot 1 et sur de vrais utilisateurs.

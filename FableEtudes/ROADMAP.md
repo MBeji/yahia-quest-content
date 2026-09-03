@@ -249,8 +249,8 @@ son étude et dans les citations qu'on en fait.
       🔴 **Vérifié le 2026-08-24 : `docs/doctrine-verticale.md` n'existe pas.** Deux lots
       documentaires, aucun prérequis, cinq semaines d'exécution qui les citent.
 
-- [x] **P7. é31 — l'envie de revenir (engagement & rétention) : LES 8 LOTS ÉCRITS ET POUSSÉS
-      le 2026-09-03** (arena, PR `claude/implementation-e31-92w7pk`, en attente de merge).
+- [x] **P7. é31 — l'envie de revenir (engagement & rétention) : LIVRÉE EN PRODUCTION
+      le 2026-09-03** (arena#949, squashée sur `main` en `7bdbccd`).
       Chaque lot porte sa migration, ses assertions pgTAP et ses tests co-localisés ;
       `npm run verify`, `build:check` et `smoke:shell` sont verts, et la suite pgTAP complète
       (96 fichiers, 1 363 assertions) a été rejouée en local sur la chaîne entière.
@@ -280,9 +280,14 @@ son étude et dans les citations qu'on en fait.
       plafond déjà dépassé aujourd'hui) ; toute valeur d'économie passe par é09 (§3.9 de
       l'étude). Ne bloque rien ; le goulot du projet reste l'acquisition (§8, axe Marché),
       pas la rétention — cette étude prépare la rétention de ceux que l'acquisition amènera.
-      ⚠️ **Ce qui reste après le merge, et qui n'est pas du code** : relever la CURR en prod
-      (la scorecard §1bis attend un chiffre daté, pas un instrument), et déplacer le dossier
-      de l'étude en `EtudeRealisé/`.
+      ⚠️ **Un dernier défaut, trouvé par CodeQL sur la PR** : la regex qui cherchait les
+      appels `trackProductEvent(…)` dans le test « zéro PII » rétrogradait exponentiellement
+      (`js/redos`, HIGH). Remplacée par un balayage qui compte les parenthèses — linéaire, et
+      plus juste : la version régulière tronquait un appel dont un argument contenait une
+      parenthèse, donc elle pouvait manquer une propriété interdite.
+      ⚠️ **Ce qui reste, et qui n'est pas du code** : relever la CURR en prod (la scorecard
+      §1bis attend un chiffre daté, pas un instrument — il sortira n = 0 tant que la ligne 1
+      tient), et déplacer le dossier de l'étude en `EtudeRealisé/`.
 
 ---
 
