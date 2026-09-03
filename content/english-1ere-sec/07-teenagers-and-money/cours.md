@@ -50,10 +50,10 @@ The journalist's sheet holds **eleven** questions but only **ten** answers, so *
 2. Look for the question about **that** topic — not about a neighbouring one.
 3. Check that the **shape** of the answer fits the shape of the question: a sum of money answers _How much…?_, a name answers _Who…?_, an age or a date answers _When…?_
 
-| Carol's answer                              | Its topic | The question it fits                              |
-| ------------------------------------------- | --------- | ------------------------------------------------- |
-| she names her own house, which belongs to her | spending  | What's your biggest extravagance?                 |
-| they grew up together and are only friends  | Max       | What's the truth about your relationship with Max? |
+| What she answers                              | Its topic | The question it fits                               |
+| --------------------------------------------- | --------- | -------------------------------------------------- |
+| she names her own house, which belongs to her  | spending  | What's your biggest extravagance?                   |
+| they grew up together and are only friends     | Max       | What's the truth about your relationship with Max?  |
 
 > 🗡️ Two questions can share a topic and still be different: _How much pocket money do you get?_ and _When will you have access to your fortune?_ are both about money, but one asks for a **sum** and the other for a **date**. The shape of the answer separates them.
 
