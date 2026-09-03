@@ -7,58 +7,58 @@
         { "id": "a", "text": "13" },
         { "id": "b", "text": "23" },
         { "id": "c", "text": "28" },
-        { "id": "d", "text": "86" }
+        { "id": "d", "text": "8" }
       ],
       "correctOption": "a",
-      "explanation": "Le quotient est la partie entière de l'affichage, soit 23 ; le reste s'obtient ensuite par soustraction : 358 − 15 × 23 = 358 − 345 = 13 ✓, et l'on a bien 0 ≤ 13 < 15. Prendre 86 revient à lire les décimales affichées comme s'il s'agissait du reste, alors qu'elles valent le quotient de r par 15. Le nombre 28 provient d'une division non achevée (358 − 15 × 22 = 28) : un reste doit rester inférieur au diviseur 15, il faut donc poursuivre. Quant à 23, c'est le quotient et non le reste.",
+      "explanation": "Le quotient est la partie entière de l'affichage, soit 23 ; le reste s'obtient ensuite par soustraction : 358 − 15 × 23 = 358 − 345 = 13 ✓, et l'on a bien 0 ≤ 13 < 15. Prendre 8 revient à lire la première décimale affichée comme s'il s'agissait du reste, alors que ces décimales valent le rapport du reste au diviseur, ici 13/15 = 0,8666… Le nombre 28 provient d'une division non achevée (358 − 15 × 22 = 28) : un reste doit rester inférieur au diviseur 15, il faut donc poursuivre. Quant à 23, c'est le quotient et non le reste.",
       "difficulty": 1
     },
     {
-      "prompt": "Nous sommes un mardi. Quel jour de la semaine serons-nous dans 100 jours ?",
+      "prompt": "Nous sommes un jeudi. Quel jour de la semaine serons-nous dans 234 jours ?",
       "options": [
-        { "id": "a", "text": "mardi" },
-        { "id": "b", "text": "mercredi" },
-        { "id": "c", "text": "jeudi" },
-        { "id": "d", "text": "vendredi" }
+        { "id": "a", "text": "jeudi" },
+        { "id": "b", "text": "vendredi" },
+        { "id": "c", "text": "samedi" },
+        { "id": "d", "text": "dimanche" }
       ],
-      "correctOption": "c",
-      "explanation": "Les jours se répètent de 7 en 7 : seul le reste de la division de 100 par 7 compte. Or 100 = 7 × 14 + 2, donc on avance de 2 jours à partir du mardi, ce qui donne jeudi ✓. Rester au mardi revient à croire que 100 est un multiple de 7. Le mercredi correspond à un décalage de 1 jour, c'est-à-dire à 99 jours, et le vendredi à un décalage de 3 jours, c'est-à-dire à 101 jours.",
+      "correctOption": "d",
+      "explanation": "Les jours se répètent de 7 en 7 : seul le reste de la division de 234 par 7 compte. Or 234 = 7 × 33 + 3, donc on avance de 3 jours à partir du jeudi, ce qui donne dimanche ✓. Rester au jeudi revient à croire que 234 est un multiple de 7. Le vendredi correspond à un décalage de 1 jour, c'est-à-dire à 232 jours, et le samedi à un décalage de 2 jours, c'est-à-dire à 233 jours.",
       "difficulty": 1
     },
     {
-      "prompt": "Dans l'écriture 83a6, la lettre a désigne le chiffre des dizaines d'un entier à quatre chiffres. Pour quelle valeur de a cet entier est-il divisible par 9 ?",
+      "prompt": "Dans l'écriture 5a73, la lettre a désigne le chiffre des centaines d'un entier à quatre chiffres. Pour quelle valeur de a cet entier est-il divisible par 9 ?",
       "options": [
         { "id": "a", "text": "0" },
-        { "id": "b", "text": "1" },
-        { "id": "c", "text": "4" },
+        { "id": "b", "text": "3" },
+        { "id": "c", "text": "6" },
         { "id": "d", "text": "9" }
       ],
       "correctOption": "b",
-      "explanation": "Un entier est divisible par 9 si et seulement si la somme de ses chiffres l'est. Ici cette somme vaut 8 + 3 + a + 6 = 17 + a, comprise entre 17 et 26 puisque a est un chiffre : le seul multiple de 9 possible est 18, donc a vaut 1 ✓ (on vérifie 8316 = 9 × 924). Le chiffre 0 suppose que 17 convient déjà, ce qui trahit une erreur d'addition. Le chiffre 4 donne la somme 21, multiple de 3 mais pas de 9 : c'est la confusion classique entre les deux critères. Enfin le chiffre 9 traduit l'idée fausse qu'il faudrait un 9 dans l'écriture, alors que la somme vaudrait alors 26.",
+      "explanation": "Un entier est divisible par 9 si et seulement si la somme de ses chiffres l'est. Ici cette somme vaut 5 + a + 7 + 3 = 15 + a, comprise entre 15 et 24 puisque a est un chiffre : le seul multiple de 9 possible est 18, donc a vaut 3 ✓ (on vérifie 5373 = 9 × 597). Le chiffre 0 suppose que 15 convient déjà, ce qui trahit une erreur d'addition. Le chiffre 6 donne la somme 21, multiple de 3 mais pas de 9 : c'est la confusion classique entre les deux critères. Enfin le chiffre 9 traduit l'idée fausse qu'il faudrait un 9 dans l'écriture, alors que la somme vaudrait alors 24.",
       "difficulty": 2
     },
     {
-      "prompt": "Sans poser l'opération, quel est le reste de la division de 2749 par 11 ?",
+      "prompt": "Sans poser l'opération, quel est le reste de la division de 3856 par 11 ?",
       "options": [
         { "id": "a", "text": "0" },
         { "id": "b", "text": "4" },
-        { "id": "c", "text": "10" },
-        { "id": "d", "text": "16" }
+        { "id": "c", "text": "5" },
+        { "id": "d", "text": "6" }
       ],
-      "correctOption": "c",
-      "explanation": "On numérote les chiffres de droite à gauche : les rangs impairs portent 9 et 7, les rangs pairs portent 4 et 2. La somme alternée vaut donc d = 16 − 6 = 10, et comme 0 ≤ 10 < 11, c'est le reste cherché ✓ (on vérifie 2749 = 11 × 249 + 10). Conclure 0 revient à appliquer à 11 le critère de 9 : la somme des chiffres vaut 22, qui est bien un multiple de 11, mais cette somme ne dit rien de la divisibilité par 11. Le nombre 4 est le reste de 2749 dans la division par 9, pas par 11. Le nombre 16 s'arrête à la somme des chiffres de rang impair, sans lui retrancher celle des rangs pairs.",
+      "correctOption": "d",
+      "explanation": "On numérote les chiffres de droite à gauche : les rangs impairs portent 6 et 8, les rangs pairs portent 5 et 3. La somme alternée vaut donc d = 14 − 8 = 6, et comme 0 ≤ 6 < 11, c'est le reste cherché ✓ (on vérifie 3856 = 11 × 350 + 6). Conclure 0 revient à appliquer à 11 le critère de 9 : la somme des chiffres vaut 22, qui est bien un multiple de 11, mais cette somme ne dit rien de la divisibilité par 11. Le nombre 4 est le reste de 3856 dans la division par 9, pas par 11. Le nombre 5 vient d'une numérotation des rangs prise de gauche à droite : elle donne d = 8 − 14 = −6, puis −6 + 11 = 5, alors que le critère se lit toujours à partir du chiffre des unités.",
       "difficulty": 2
     },
     {
-      "prompt": "Quelle est la décomposition de 252 en produit de facteurs premiers ?",
+      "prompt": "Quelle est la décomposition de 396 en produit de facteurs premiers ?",
       "options": [
-        { "id": "a", "text": "2 × 3² × 14" },
-        { "id": "b", "text": "2² × 3² × 7" },
-        { "id": "c", "text": "2² × 63" },
-        { "id": "d", "text": "2³ × 3² × 7" }
+        { "id": "a", "text": "2 × 3² × 22" },
+        { "id": "b", "text": "2² × 3² × 11" },
+        { "id": "c", "text": "2² × 99" },
+        { "id": "d", "text": "2³ × 3² × 11" }
       ],
       "correctOption": "b",
-      "explanation": "On décompose pas à pas : 252 = 4 × 63 = 2² × 9 × 7 = 2² × 3² × 7 ✓, et chacun des facteurs 2, 3 et 7 est bien premier. Les écritures 2² × 63 et 2 × 3² × 14 donnent elles aussi 252, mais 63 = 7 × 9 et 14 = 2 × 7 ne sont pas premiers : la décomposition n'y est pas achevée. Quant à 2³ × 3² × 7, elle vaut 504 et non 252, l'exposant du facteur 2 y étant trop grand.",
+      "explanation": "On décompose pas à pas : 396 = 4 × 99 = 2² × 9 × 11 = 2² × 3² × 11 ✓, et chacun des facteurs 2, 3 et 11 est bien premier. Les écritures 2² × 99 et 2 × 3² × 22 donnent elles aussi 396, mais 99 = 9 × 11 et 22 = 2 × 11 ne sont pas premiers : la décomposition n'y est pas achevée. Quant à 2³ × 3² × 11, elle vaut 792 et non 396, l'exposant du facteur 2 y étant trop grand.",
       "difficulty": 2
     }
   ]

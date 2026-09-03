@@ -31,27 +31,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Un entier s'écrit 73542. Quel reste laisse-t-il dans la division par 8 ?",
+      "prompt": "Un entier s'écrit 26314. Quel reste laisse-t-il dans la division par 8 ?",
       "options": [
         { "id": "a", "text": "0" },
         { "id": "b", "text": "2" },
-        { "id": "c", "text": "6" },
-        { "id": "d", "text": "67" }
+        { "id": "c", "text": "4" },
+        { "id": "d", "text": "6" }
       ],
-      "correctOption": "c",
-      "explanation": "Comme 1000 = 8 × 125, un entier et le nombre formé par ses trois derniers chiffres laissent le même reste dans la division par 8. On divise donc 542 par 8 : 542 = 8 × 67 + 6, le reste vaut 6 ✓ (on vérifie 73542 = 8 × 9192 + 6). Le nombre 2 vient d'un critère appliqué aux deux derniers chiffres seulement (42 = 8 × 5 + 2), alors que celui de 8 en réclame trois. Le nombre 67 est le quotient de 542 par 8, pas le reste. Enfin 0 supposerait 73542 divisible par 8 : il est pair, mais cela ne suffit pas.",
+      "correctOption": "b",
+      "explanation": "Comme 1000 = 8 × 125, un entier et le nombre formé par ses trois derniers chiffres laissent le même reste dans la division par 8. On divise donc 314 par 8 : 314 = 8 × 39 + 2, le reste vaut 2 ✓ (on vérifie 26314 = 8 × 3289 + 2). Le nombre 6 vient d'un critère appliqué aux deux derniers chiffres seulement (14 = 8 × 1 + 6), alors que celui de 8 en réclame trois. Le nombre 4 est le chiffre des unités : il tranche pour 2 et pour 5, jamais pour 8, qui en réclame trois. Enfin 0 supposerait 26314 divisible par 8 : il est pair, mais cela ne suffit pas.",
       "difficulty": 2
     },
     {
-      "prompt": "Quel est le PGCD de 328 et de 299 ?",
+      "prompt": "Quel est le PGCD de 344 et de 321 ?",
       "options": [
         { "id": "a", "text": "1" },
         { "id": "b", "text": "2" },
-        { "id": "c", "text": "29" },
-        { "id": "d", "text": "41" }
+        { "id": "c", "text": "23" },
+        { "id": "d", "text": "43" }
       ],
       "correctOption": "a",
-      "explanation": "On décompose : 328 = 2³ × 41 et 299 = 13 × 23. Ces deux décompositions n'ont aucun facteur premier commun, donc le PGCD vaut 1 ✓ : 328 et 299 sont premiers entre eux. Autre chemin, plus rapide : tout diviseur commun divise aussi la différence 328 − 299 = 29 ; or 29 est premier et ne divise ni 328 ni 299, il ne reste donc que 1. Le nombre 29 est justement cette différence, prise à tort pour le PGCD. Le nombre 2 divise bien 328, qui est pair, mais il ne divise pas 299, qui est impair ; et 41 est un facteur premier de 328 seulement, absent de 299.",
+      "explanation": "On décompose : 344 = 2³ × 43 et 321 = 3 × 107. Ces deux décompositions n'ont aucun facteur premier commun, donc le PGCD vaut 1 ✓ : 344 et 321 sont premiers entre eux. Autre chemin, plus rapide : tout diviseur commun divise aussi la différence 344 − 321 = 23 ; or 23 est premier et ne divise pas 344, il ne reste donc que 1. Le nombre 23 est justement cette différence, prise à tort pour le PGCD. Le nombre 2 divise bien 344, qui est pair, mais il ne divise pas 321, qui est impair ; et 43 est un facteur premier de 344 seulement, absent de 321.",
       "difficulty": 2
     },
     {

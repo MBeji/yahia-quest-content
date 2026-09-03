@@ -19,7 +19,7 @@
       "difficulty": 2
     },
     {
-      "prompt": "Quel est le chiffre des unités de 3^2026 ?",
+      "prompt": "Quel est le chiffre des unités de 3²⁰²⁶ ?",
       "options": [
         { "id": "a", "text": "1" },
         { "id": "b", "text": "3" },
@@ -27,7 +27,7 @@
         { "id": "d", "text": "9" }
       ],
       "correctOption": "d",
-      "explanation": "Le chiffre des unités des puissances de 3 se répète de 4 en 4 : 3, 9, 7, 1, puis de nouveau 3, 9, 7, 1. Il ne dépend donc que du reste de l'exposant dans la division par 4. Or 2026 = 4 × 506 + 2 : le reste vaut 2, et le chiffre des unités de 3^2026 est celui de 3², c'est-à-dire 9 ✓. Le chiffre 1 correspondrait à un reste nul, donc à un exposant multiple de 4 ; le chiffre 3 à un reste de 1 et le chiffre 7 à un reste de 3. Le piège courant est de conclure sur l'exposant lui-même : seul son reste par 4 compte.",
+      "explanation": "Le chiffre des unités des puissances de 3 se répète de 4 en 4 : 3, 9, 7, 1, puis de nouveau 3, 9, 7, 1. Il ne dépend donc que du reste de l'exposant dans la division par 4. Or 2026 = 4 × 506 + 2 : le reste vaut 2, et le chiffre des unités de 3²⁰²⁶ est celui de 3², c'est-à-dire 9 ✓. Le chiffre 1 correspondrait à un reste nul, donc à un exposant multiple de 4 ; le chiffre 3 à un reste de 1 et le chiffre 7 à un reste de 3. Le piège courant est de conclure sur l'exposant lui-même : seul son reste par 4 compte.",
       "difficulty": 3
     },
     {
@@ -43,7 +43,7 @@
       "difficulty": 3
     },
     {
-      "prompt": "Soit n un entier naturel non nul. On pose x = 7n + 4 et y = 3n − 2. Tout diviseur commun de x et de y divise nécessairement un même entier fixe. Lequel ?",
+      "prompt": "Soit n un entier naturel non nul. On pose x = 7n + 4 et y = 3n − 2. Quel que soit n, tout diviseur commun de x et de y divise un même entier, indépendant de n. Lequel ?",
       "options": [
         { "id": "a", "text": "2" },
         { "id": "b", "text": "10" },
@@ -55,19 +55,19 @@
       "difficulty": 3
     },
     {
-      "prompt": "Soit n un entier naturel. Quels sont les restes possibles de la division de n² par 3 ?",
+      "prompt": "Soit n un entier naturel. Quels sont les restes possibles de la division de n² par 5 ?",
       "options": [
         { "id": "a", "text": "0 et 1" },
-        { "id": "b", "text": "0 et 2" },
-        { "id": "c", "text": "0, 1 et 2" },
-        { "id": "d", "text": "1 et 2" }
+        { "id": "b", "text": "0, 1 et 4" },
+        { "id": "c", "text": "0, 1, 2, 3 et 4" },
+        { "id": "d", "text": "1 et 4" }
       ],
-      "correctOption": "a",
-      "explanation": "Tout entier s'écrit sous l'une des trois formes 3k, 3k + 1 ou 3k + 2. On élève au carré et on isole un multiple de 3 : (3k)² = 3 × 3k² laisse le reste 0 ; (3k + 1)² = 9k² + 6k + 1 = 3(3k² + 2k) + 1 laisse le reste 1 ; (3k + 2)² = 9k² + 12k + 4 = 3(3k² + 4k + 1) + 1 laisse encore le reste 1. Les seuls restes possibles sont donc 0 et 1 ✓ : un carré ne laisse jamais 2 comme reste dans la division par 3, comme le confirment 4 = 3 + 1, 16 = 15 + 1 et 25 = 24 + 1. Toute liste contenant 2 est donc à écarter, et écarter 0 oublie le cas des multiples de 3.",
+      "correctOption": "b",
+      "explanation": "Tout entier s'écrit sous l'une des cinq formes 5k, 5k + 1, 5k + 2, 5k + 3 ou 5k + 4. On élève au carré et on isole un multiple de 5 : (5k)² = 5 × 5k² laisse le reste 0 ; (5k + 1)² = 25k² + 10k + 1 = 5(5k² + 2k) + 1 laisse le reste 1 ; (5k + 2)² = 25k² + 20k + 4 = 5(5k² + 4k) + 4 laisse le reste 4 ; (5k + 3)² = 25k² + 30k + 9 = 5(5k² + 6k + 1) + 4 laisse encore 4 ; (5k + 4)² = 25k² + 40k + 16 = 5(5k² + 8k + 3) + 1 laisse encore 1. Les seuls restes possibles sont donc 0, 1 et 4 ✓, comme le confirment 2² = 4, 3² = 9 = 5 + 4, 4² = 16 = 15 + 1 et 6² = 36 = 35 + 1 : un carré ne laisse jamais 2 ni 3 comme reste dans la division par 5. La liste 0 et 1 est celle des restes de n² par 3, transportée telle quelle sans refaire les cas. La liste complète 0, 1, 2, 3 et 4 oublie que l'élévation au carré restreint les possibilités, et écarter 0 oublie le cas des multiples de 5.",
       "difficulty": 3
     },
     {
-      "prompt": "Une caisse a la forme d'un pavé droit de 120 cm de long, 200 cm de large et 180 cm de haut. On veut la remplir entièrement de cubes identiques dont l'arête est un nombre entier de centimètres. Quel est le nombre minimal de cubes nécessaires ?",
+      "prompt": "Une caisse a la forme du pavé droit ci-dessous : 120 cm de long, 200 cm de large et 180 cm de haut. On veut la remplir entièrement de cubes identiques dont l'arête est un nombre entier de centimètres. Quel est le nombre minimal de cubes nécessaires ?\n<svg viewBox=\"0 0 360 250\"><g fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"><path d=\"M60 200 L132 154\"/><path d=\"M132 154 L272 154\"/><path d=\"M132 154 L132 44\"/></g><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"><path d=\"M60 200 L200 200 L200 90 L60 90 Z\"/><path d=\"M60 90 L132 44 L272 44 L200 90\"/><path d=\"M200 200 L272 154 L272 44\"/></g><g fill=\"none\" stroke=\"#b91c1c\" stroke-width=\"1.8\" stroke-linejoin=\"round\"><path d=\"M60 200 L84 200 L84 176 L60 176 Z\"/><path d=\"M84 176 L96 168 L96 192 L84 200\"/><path d=\"M60 176 L72 168 L96 168\"/></g><g font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\"><text x=\"130\" y=\"223\" text-anchor=\"middle\">120 cm</text><text x=\"52\" y=\"149\" text-anchor=\"end\">180 cm</text><text x=\"250\" y=\"195\" text-anchor=\"start\">200 cm</text></g><text x=\"86\" y=\"160\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#b91c1c\">arête a</text></svg>",
       "options": [
         { "id": "a", "text": "20" },
         { "id": "b", "text": "540" },
