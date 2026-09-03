@@ -89,7 +89,7 @@ Then, and only then, the slices.
 
 > 🗡️ **Where the figures come from matters.** Under the circle your book prints the report the numbers were taken from: a 2005 study by the **UNESCO Institute for Statistics** called *Children out of school: measuring exclusion from primary education*. A graph without that line is a graph nobody can check.
 
-**One phrase to be exact about.** A child who is **out of school** is not a child who has gone home for the evening, and not a child who has been sent into the corridor. It counts every child **who is of an age to be at school and whom no school anywhere has ever registered** — the ones the system never took in, and the ones it has lost since. The report calls that being kept outside the system **exclusion**, and its whole business is measuring it.
+**One phrase to be exact about.** A child who is **out of school** is not a child who has gone home for the evening, and not a child who has been sent into the corridor. It counts every child **who is of an age to be at school and whom no school anywhere holds on its register today** — the ones the system never took in, and the ones it has lost since. The report calls that being kept outside the system **exclusion**, and its whole business is measuring it.
 
 ## 🗝️ Three words to carry away
 

@@ -61,9 +61,9 @@ The third remark uses the phrase you should carry away from this page: a **time 
 
 ## 🕐 Making more time
 
-The third learner does not stop at the demand. He answers the obvious objection — *I have no time* — with a claim that sounds impossible: a learner who is short of time **can make more of it**. The one example the book prints is **sleeping less**, and the page then breaks off into dotted lines and asks you for further examples of your own.
+The third learner does not stop at the demand. The demand invites an objection, and the objection is fair: a day has twenty-four hours and nobody has ever added a twenty-fifth. Only then comes the claim that sounds impossible — a learner who is short of time **can make more of it**. Read the four steps in that order: the demand, the objection, the answer, and last the proof. The one example the book prints is **sleeping less**, and the page then breaks off into dotted lines and asks you for further examples of your own.
 
-The objection is fair: a day has twenty-four hours and nobody has ever added a twenty-fifth. So read the phrase properly.
+So read the phrase properly.
 
 > **To make time is not to add hours to a day. It is to take hours that are already going somewhere and send them somewhere else.**
 
