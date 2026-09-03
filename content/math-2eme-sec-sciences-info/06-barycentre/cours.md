@@ -193,7 +193,7 @@ _Exemple détaillé_ : G est le barycentre des points pondérés (A, 2), (B, 3) 
 
 **Concours de droites.** Le même point G se regroupe de trois façons différentes. En regroupant B et C on le trouve sur une droite issue de A ; en regroupant A et C, sur une droite issue de B ; en regroupant A et B, sur une droite issue de C. Ces trois droites passent donc toutes par G : elles sont **concourantes**. Avec les coefficients 1, 1, 1, on retrouve le concours des médianes ; avec d'autres coefficients, on démontre de la même façon le concours de trois droites joignant chacune un sommet à un point du côté opposé.
 
-**Ensembles de points.** Une condition sur ‖αMA⃗ + βMB⃗ + γMC⃗‖ se réduit à une condition sur MG dès que S = α + β + γ n'est pas nul : les points cherchés forment un **cercle centré en G**, dont le rayon s'obtient en divisant par |S|. Si S = 0, la somme est constante et l'ensemble est le plan tout entier ou l'ensemble vide.
+**Ensembles de points.** Une condition sur ‖αMA⃗ + βMB⃗ + γMC⃗‖ se réduit à une condition sur MG dès que S = α + β + γ n'est pas nul : les points cherchés forment un **cercle centré en G**, dont le rayon s'obtient en divisant par |S|. Si S = 0, la somme est constante : ou bien tous les points conviennent, ou bien aucun.
 
 ## 📐 Construire le barycentre à la règle
 

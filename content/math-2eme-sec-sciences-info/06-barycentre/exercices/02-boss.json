@@ -31,7 +31,7 @@
       "difficulty": 2
     },
     {
-      "prompt": "Les droites (AP) et (BQ) d'un triangle ABC se coupent en G, le point P étant le barycentre des points pondérés (B, 1) et (C, 3), et le point Q celui des points pondérés (A, 2) et (C, 3). De quels points pondérés G est-il le barycentre ?",
+      "prompt": "Les droites (AP) et (BQ) d'un triangle ABC se coupent en G, où P désigne le barycentre des points pondérés (B, 1) et (C, 3), et Q celui des points pondérés (A, 2) et (C, 3). De quels points pondérés G est-il le barycentre ?",
       "options": [
         {
           "id": "a",
@@ -123,7 +123,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "On remonte la construction à l'envers, en deux temps. Pour I : un barycentre de (B, β) et (C, γ) vérifie BI⃗ = (γ/(β+γ))BC⃗, et l'égalité γ/(β+γ) = 1/4 se lit en choisissant un total de 4 avec 1 sur C, donc 3 sur B. Pour G : de la même manière, AG⃗ = (4/7)AI⃗ se lit avec un total de 7 dont 4 sur I et 3 sur A. Or la charge 4 réclamée sur I est exactement celle qu'il hérite du regroupement, puisque 3 + 1 = 4 : les deux étapes se recollent, et G est barycentre de (A, 3), (B, 3) et (C, 1) ✓. Le triplet (A, 4), (B, 3) et (C, 1) attribue au sommet A le numérateur 4, qui est la charge de I et non la sienne ; son total ferait 8 au lieu de 7. Le triplet (A, 7), (B, 3) et (C, 1) lui attribue le dénominateur 7, qui est le total général. Enfin (A, 3), (B, 1) et (C, 3) permute les charges de B et de C : le point I obtenu vérifierait BI⃗ = (3/4)BC⃗ et se trouverait près de C au lieu d'être près de B.",
+      "explanation": "On remonte la construction à l'envers, en deux temps. Pour I : si B et C portent respectivement les charges p et q, la position s'écrit BI⃗ = (q/(p+q))BC⃗, et l'égalité q/(p+q) = 1/4 se lit en choisissant un total de 4 avec 1 sur C, donc 3 sur B. Pour G : de la même manière, AG⃗ = (4/7)AI⃗ se lit avec un total de 7 dont 4 sur I et 3 sur A. Or la charge 4 réclamée sur I est exactement celle qu'il hérite du regroupement, puisque 3 + 1 = 4 : les deux étapes se recollent, et G est barycentre de (A, 3), (B, 3) et (C, 1) ✓. Le triplet (A, 4), (B, 3) et (C, 1) attribue au sommet A le numérateur 4, qui est la charge de I et non la sienne ; son total ferait 8 au lieu de 7. Le triplet (A, 7), (B, 3) et (C, 1) lui attribue le dénominateur 7, qui est le total général. Enfin (A, 3), (B, 1) et (C, 3) permute les charges de B et de C : le point I obtenu vérifierait BI⃗ = (3/4)BC⃗ et se trouverait près de C au lieu d'être près de B.",
       "difficulty": 3
     },
     {
