@@ -10,7 +10,7 @@
         { "id": "d", "text": "0⃗" }
       ],
       "correctOption": "a",
-      "explanation": "La relation de Chasles enchaîne les deux déplacements : on part de A, on passe par B et on arrive en C, donc AB⃗ + BC⃗ = AC⃗ ✓. Le vecteur CA⃗ est l'opposé du bon résultat : il va de C vers A, c'est-à-dire dans l'autre sens. Le vecteur BA⃗, lui, est l'opposé de AB⃗ : il annulerait le premier terme au lieu de s'y ajouter. Quant au vecteur nul, il ne s'obtiendrait que dans le cas particulier où C serait confondu avec A, ce que l'énoncé n'indique pas.",
+      "explanation": "La relation de Chasles enchaîne les deux déplacements : on part de A, on passe par B et on arrive en C, donc AB⃗ + BC⃗ = AC⃗ ✓. Le vecteur CA⃗ décrit le trajet de retour, de C vers A, alors que la somme cumule deux déplacements vers l'avant. Le vecteur BA⃗, lui, est l'opposé de AB⃗ : il annulerait le premier terme au lieu de s'y ajouter. Le vecteur nul, enfin, supposerait un point d'arrivée confondu avec le point de départ, donc C confondu avec A — rien dans l'énoncé ne le dit.",
       "difficulty": 1
     },
     {
@@ -26,7 +26,7 @@
       "difficulty": 1
     },
     {
-      "prompt": "Dans un repère du plan, A a pour coordonnées (−1 ; 4) et B pour coordonnées (3 ; 2). Quelles sont les composantes du vecteur AB⃗ ?",
+      "prompt": "Le plan est muni d'un repère, dans lequel on place A(−1 ; 4) et B(3 ; 2). Que valent les composantes du vecteur AB⃗ ?",
       "options": [
         { "id": "a", "text": "(−4 ; 2)" },
         { "id": "b", "text": "(2 ; 6)" },
@@ -38,15 +38,15 @@
       "difficulty": 2
     },
     {
-      "prompt": "Une base orthonormée étant fixée, que peut-on affirmer des deux vecteurs u⃗(2 ; −3) et v⃗(−6 ; −4) ?",
+      "prompt": "Dans une base orthonormée, on considère les vecteurs u⃗(2 ; −3) et v⃗(−6 ; −4). Que peut-on affirmer à leur sujet ?",
       "options": [
         { "id": "a", "text": "Ils sont colinéaires" },
         { "id": "b", "text": "Ils sont orthogonaux" },
         { "id": "c", "text": "Ils sont de même norme" },
-        { "id": "d", "text": "Ils sont opposés l'un de l'autre" }
+        { "id": "d", "text": "Ils ne sont ni colinéaires ni orthogonaux" }
       ],
       "correctOption": "b",
-      "explanation": "Dans une base orthonormée, deux vecteurs sont orthogonaux si et seulement si xx' + yy' = 0. Ici 2 × (−6) + (−3) × (−4) = −12 + 12 = 0 : les deux vecteurs sont bien orthogonaux ✓. Ils ne sont pas colinéaires, car leur déterminant vaut 2 × (−4) − (−6) × (−3) = −8 − 18 = −26, qui n'est pas nul : confondre les deux conditions est l'erreur la plus fréquente du chapitre. Leurs normes valent √13 et √52, donc elles diffèrent. Et ils ne sont pas opposés, sinon on aurait v⃗(−2 ; 3).",
+      "explanation": "Dans une base orthonormée, l'orthogonalité se lit sur le produit xx' + yy'. Ici 2 × (−6) + (−3) × (−4) = −12 + 12 = 0 : les deux vecteurs sont bien orthogonaux ✓. La colinéarité, elle, se lit sur le déterminant xy' − x'y = 2 × (−4) − (−6) × (−3) = −8 − 18 = −26, qui n'est pas nul : les deux vecteurs ne sont donc pas colinéaires, et confondre les deux conditions est l'erreur la plus fréquente du chapitre. Leurs normes valent √13 et √52, soit le double de √13 : elles diffèrent bel et bien. Enfin, affirmer qu'aucune des deux relations ne les lie revient à s'arrêter au déterminant sans jamais calculer le produit xx' + yy'.",
       "difficulty": 2
     },
     {
@@ -58,7 +58,7 @@
         { "id": "d", "text": "2MI⃗" }
       ],
       "correctOption": "d",
-      "explanation": "On fait apparaître le milieu I par la relation de Chasles : MA⃗ + MB⃗ = (MI⃗ + IA⃗) + (MI⃗ + IB⃗) = 2MI⃗ + (IA⃗ + IB⃗). Comme I est le milieu de [AB], on a IA⃗ + IB⃗ = 0⃗, et il reste MA⃗ + MB⃗ = 2MI⃗ ✓. Le vecteur 2IM⃗ est l'opposé du bon résultat : il pointe de I vers M au lieu d'aller de M vers I. Le vecteur MI⃗ oublie le facteur 2, alors que deux copies de MI⃗ apparaissent dans le calcul. Enfin la somme ne serait nulle que si M était confondu avec I, ce qui n'est pas le cas d'un point quelconque.",
+      "explanation": "On fait apparaître le milieu I par la relation de Chasles : MA⃗ + MB⃗ = (MI⃗ + IA⃗) + (MI⃗ + IB⃗) = 2MI⃗ + (IA⃗ + IB⃗). Comme I est le milieu de [AB], on a IA⃗ + IB⃗ = 0⃗, et il reste MA⃗ + MB⃗ = 2MI⃗ ✓. Le vecteur 2IM⃗ a la bonne longueur mais pointe de I vers M, alors que le calcul part de M pour rejoindre le milieu I. Le vecteur MI⃗ oublie le facteur 2, alors que deux copies de MI⃗ apparaissent dans le calcul. Enfin la somme ne s'annule que dans le cas particulier où M vient se confondre avec I, alors que la figure place M en dehors de la droite (AB).",
       "difficulty": 2
     }
   ]

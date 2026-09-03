@@ -19,7 +19,7 @@
       "difficulty": 1
     },
     {
-      "prompt": "Dans une base (i⃗ ; j⃗), le vecteur u⃗ admet pour composantes (−2 ; 5). Quelles sont celles de 3u⃗ ?",
+      "prompt": "Dans une base (i⃗, j⃗), le vecteur u⃗ admet pour composantes (−2 ; 5). Quelles sont celles de 3u⃗ ?",
       "options": [
         { "id": "a", "text": "(−6 ; 5)" },
         { "id": "b", "text": "(−6 ; 15)" },
@@ -43,27 +43,27 @@
       "difficulty": 1
     },
     {
-      "prompt": "Quand dit-on que le couple (i⃗ ; j⃗) est une base de l'ensemble des vecteurs du plan ?",
+      "prompt": "Le plan est rapporté à une base (i⃗, j⃗). Quel est le couple de composantes du vecteur j⃗ dans cette base ?",
       "options": [
-        { "id": "a", "text": "Lorsque i⃗ et j⃗ ne sont pas colinéaires" },
-        { "id": "b", "text": "Lorsque i⃗ et j⃗ ont la même norme et le même sens" },
-        { "id": "c", "text": "Lorsque i⃗ et j⃗ sont orthogonaux" },
-        { "id": "d", "text": "Lorsque i⃗ et j⃗ sont tous deux unitaires" }
+        { "id": "a", "text": "(0 ; 0)" },
+        { "id": "b", "text": "(0 ; 1)" },
+        { "id": "c", "text": "(1 ; 0)" },
+        { "id": "d", "text": "(1 ; 1)" }
       ],
-      "correctOption": "a",
-      "explanation": "Une base du plan est, par définition, un couple de deux vecteurs non colinéaires ✓ : c'est exactement la condition qui garantit que tout vecteur du plan s'écrive, de façon unique, sous la forme xi⃗ + yj⃗. Exiger l'orthogonalité, ou que les deux vecteurs soient unitaires, est plus fort que nécessaire : réunies, ces deux exigences définissent une base orthonormée, qui n'est qu'un cas particulier de base. Quant à deux vecteurs de même norme et de même sens, ils sont carrément égaux, donc colinéaires : c'est précisément la situation qui interdit de former une base.",
+      "correctOption": "b",
+      "explanation": "Les deux vecteurs d'une base ne sont pas colinéaires : c'est ce qui garantit que tout vecteur du plan s'écrit d'une seule façon sous la forme xi⃗ + yj⃗, et le couple (x ; y) ainsi obtenu est précisément son couple de composantes. Appliqué à j⃗ lui-même, cela s'écrit j⃗ = 0 × i⃗ + 1 × j⃗ : ses composantes valent donc (0 ; 1) ✓. Le couple (1 ; 0) décrit i⃗, l'autre vecteur de la base — celui qui porte l'abscisse. Le couple (0 ; 0) ne convient qu'au vecteur nul, seul vecteur dont les deux composantes s'annulent. Enfin (1 ; 1) décrit la somme i⃗ + j⃗, et non j⃗ pris isolément.",
       "difficulty": 1
     },
     {
-      "prompt": "Une base orthonormée est fixée. Lequel des quatre vecteurs suivants est unitaire ?",
+      "prompt": "Une base orthonormée est fixée et le vecteur u⃗ a pour composantes (9 ; 12). Par quel réel faut-il multiplier u⃗ pour obtenir un vecteur unitaire ?",
       "options": [
-        { "id": "a", "text": "u⃗(0,4 ; 0,6)" },
-        { "id": "b", "text": "u⃗(0,5 ; 0,5)" },
-        { "id": "c", "text": "u⃗(0,6 ; 0,8)" },
-        { "id": "d", "text": "u⃗(1 ; 1)" }
+        { "id": "a", "text": "1/225" },
+        { "id": "b", "text": "1/21" },
+        { "id": "c", "text": "1/15" },
+        { "id": "d", "text": "15" }
       ],
       "correctOption": "c",
-      "explanation": "Un vecteur est unitaire lorsque sa norme vaut 1, et dans une base orthonormée cette norme se calcule par √(x² + y²). Pour u⃗(0,6 ; 0,8), on obtient √(0,36 + 0,64) = √1 = 1 ✓. Pour u⃗(0,4 ; 0,6), le calcul donne √(0,16 + 0,36), soit environ 0,72 : croire qu'il suffit que la somme des composantes vaille 1 est le piège courant. Pour u⃗(0,5 ; 0,5), la norme vaut environ 0,71. Enfin pour u⃗(1 ; 1), elle vaut √2, soit environ 1,41 : un vecteur unitaire n'est pas un vecteur dont les composantes valent 1.",
+      "explanation": "La norme suit la règle ‖αu⃗‖ = |α| × ‖u⃗‖ : pour rendre u⃗ unitaire, il faut donc le diviser par sa propre norme. Dans une base orthonormée, ‖u⃗(9 ; 12)‖ = √(81 + 144) = √225 = 15, et le vecteur (1/15)u⃗ a bien pour norme (1/15) × 15 = 1 ✓ ; ses composantes sont (0,6 ; 0,8), la preuve qu'un vecteur unitaire n'a aucun besoin d'avoir 1 pour composante. Multiplier par 15 au lieu de diviser étire le vecteur au lieu de le ramener à la longueur 1. Le réel 1/225 divise par la somme des carrés sans passer par la racine. Quant à 1/21, il divise par 9 + 12 : c'est la somme des composantes, pas la longueur du vecteur.",
       "difficulty": 2
     },
     {
@@ -72,10 +72,10 @@
         { "id": "a", "text": "AG⃗ = (1/3)AI⃗" },
         { "id": "b", "text": "AG⃗ = (2/3)AI⃗" },
         { "id": "c", "text": "AG⃗ = (3/2)AI⃗" },
-        { "id": "d", "text": "AI⃗ = (2/3)AG⃗" }
+        { "id": "d", "text": "AG⃗ = (2/3)IA⃗" }
       ],
       "correctOption": "b",
-      "explanation": "Le centre de gravité se situe aux deux tiers de chaque médiane à partir du sommet : sur la médiane [AI], cela s'écrit AG⃗ = (2/3)AI⃗ ✓, et place bien G entre A et I, plus près de I que de A. L'égalité AG⃗ = (1/3)AI⃗ place G au tiers du chemin seulement, donc du mauvais côté du milieu de la médiane. L'égalité AG⃗ = (3/2)AI⃗ envoie G au-delà du point I, à l'extérieur du triangle. Enfin AI⃗ = (2/3)AG⃗ échange les rôles des deux vecteurs : dans ce sens, la relation correcte est AI⃗ = (3/2)AG⃗.",
+      "explanation": "Le centre de gravité se situe aux deux tiers de chaque médiane à partir du sommet : sur la médiane [AI], cela s'écrit AG⃗ = (2/3)AI⃗ ✓, et place bien G entre A et I, plus près de I que de A. L'égalité AG⃗ = (1/3)AI⃗ place G au tiers du chemin seulement, donc du mauvais côté du milieu de la médiane. L'égalité AG⃗ = (3/2)AI⃗ envoie G au-delà du point I, à l'extérieur du triangle. Enfin AG⃗ = (2/3)IA⃗ garde le bon coefficient mais retourne le vecteur de la médiane : IA⃗ va de I vers A, si bien que cette écriture placerait G de l'autre côté de A, en dehors du triangle.",
       "difficulty": 2
     }
   ]

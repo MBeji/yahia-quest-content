@@ -42,9 +42,9 @@ $$ u⃗ + v⃗ = v⃗ + u⃗ ; u⃗ + (v⃗ + w⃗) = (u⃗ + v⃗) + w⃗ ; u�
 
 > **Définition (opposé).** Pour tout vecteur u⃗, l'unique vecteur v⃗ tel que u⃗ + v⃗ = 0⃗ s'appelle l'**opposé** de u⃗ ; il est noté −u⃗. Ainsi u⃗ + (−u⃗) = (−u⃗) + u⃗ = 0⃗. On note u⃗ − v⃗ le vecteur u⃗ + (−v⃗).
 
-L'opposé, c'est le même déplacement parcouru à l'envers : **BA⃗ = −AB⃗**. Et la construction précédente, écrite avec des points enchaînés, donne le théorème le plus utilisé du chapitre :
+L'opposé, c'est le même déplacement parcouru à l'envers : **BA⃗ = −AB⃗**. Et la construction précédente, écrite avec des points enchaînés, donne le théorème le plus utilisé du chapitre, la **relation de Chasles**, valable quels que soient les points A, B et C :
 
-$$ Relation de Chasles : AB⃗ + BC⃗ = AC⃗, quels que soient les points A, B et C $$
+$$ AB⃗ + BC⃗ = AC⃗ $$
 
 Le secret est toujours le même : le point d'**arrivée** du premier vecteur est le point de **départ** du second. En particulier AB⃗ + BA⃗ = AA⃗ = 0⃗.
 
@@ -102,7 +102,7 @@ _Exemple détaillé_ : posons p⃗ = 3(u⃗ − v⃗) + 2v⃗ et q⃗ = 2(v⃗ �
 
 ## 🧮 Base et composantes : le vecteur devient un couple de nombres
 
-> **Définition (base, composantes).** On appelle **base** de l'ensemble des vecteurs du plan tout couple (i⃗ ; j⃗) de vecteurs **non colinéaires**. Tout vecteur u⃗ du plan s'écrit alors de **façon unique** sous la forme u⃗ = xi⃗ + yj⃗ ; le couple (x, y) est appelé couple de **composantes** du vecteur u⃗ dans la base (i⃗ ; j⃗). On note u⃗(x ; y).
+> **Définition (base, composantes).** On appelle **base** de l'ensemble des vecteurs du plan tout couple (i⃗, j⃗) de vecteurs **non colinéaires**. Tout vecteur u⃗ du plan s'écrit alors de **façon unique** sous la forme u⃗ = xi⃗ + yj⃗ ; le couple (x, y) est appelé couple de **composantes** du vecteur u⃗ dans la base (i⃗, j⃗). On note u⃗(x ; y).
 
 L'unicité est ce qui rend le calcul possible : deux vecteurs sont égaux **si et seulement si** ils ont les mêmes composantes. Le vecteur nul a pour composantes (0 ; 0), i⃗ a pour composantes (1 ; 0) et j⃗ a pour composantes (0 ; 1).
 
@@ -112,7 +112,7 @@ _Exemple détaillé_ : pour u⃗(4 ; −3), le vecteur 2u⃗ a pour composantes 
 
 Décomposer un vecteur dans une base, c'est justement retrouver ce couple : on écrit u⃗ = xi⃗ + yj⃗ et on **identifie** les coefficients de i⃗ et de j⃗ des deux côtés, exactement comme on identifie les coefficients de deux polynômes égaux.
 
-> **Vocabulaire et notation (déterminant).** Le réel xy' − x'y est appelé le **déterminant** des vecteurs u⃗(x ; y) et v⃗(x' ; y') dans la base (i⃗ ; j⃗).
+> **Vocabulaire et notation (déterminant).** Le réel xy' − x'y est appelé le **déterminant** des vecteurs u⃗(x ; y) et v⃗(x' ; y') dans la base (i⃗, j⃗).
 
 > **Retenir (condition analytique de colinéarité).** u⃗(x ; y) et v⃗(x' ; y') sont **colinéaires si et seulement si** leur déterminant est nul : xy' − x'y = 0.
 
@@ -122,11 +122,11 @@ _Exemple détaillé_ : u⃗(−3 ; 6) et v⃗(1 ; −2). Leur déterminant vaut 
 
 ## 📍 Repère cartésien : les coordonnées d'un point
 
-> **Définition (repère cartésien, coordonnées).** Soient O un point du plan et (i⃗ ; j⃗) une base. Le triplet (O, i⃗, j⃗) est appelé **repère cartésien** du plan. Pour tout point M, il existe un unique couple (x, y) de réels tel que OM⃗ = xi⃗ + yj⃗ : x est l'**abscisse** et y l'**ordonnée** du point M. On note M(x, y).
+> **Définition (repère cartésien, coordonnées).** Soient O un point du plan et (i⃗, j⃗) une base. Le triplet (O, i⃗, j⃗) est appelé **repère cartésien** du plan. Pour tout point M, il existe un unique couple (x, y) de réels tel que OM⃗ = xi⃗ + yj⃗ : x est l'**abscisse** et y l'**ordonnée** du point M. On note M(x, y).
 
 Le point O est l'**origine** du repère, la droite (O, i⃗) l'**axe des abscisses** et la droite (O, j⃗) l'**axe des ordonnées**.
 
-> **Retenir (la formule de conversion).** Si A(x_A ; y_A) et B(x_B ; y_B), alors le vecteur AB⃗ a pour composantes **(x_B − x_A ; y_B − y_A)** : les coordonnées de l'arrivée moins celles du départ.
+> **Retenir (la formule de conversion).** Si A(xA ; yA) et B(xB ; yB), alors le vecteur AB⃗ a pour composantes **(xB − xA ; yB − yA)** : les coordonnées de l'arrivée moins celles du départ.
 
 ::: figure Dans le repère (O, i⃗, j⃗), les composantes de AB⃗ se lisent comme deux déplacements : 3 vers la droite et 2 vers le haut, soit AB⃗(3 ; 2) — exactement 4 − 1 et 3 − 1
 <svg viewBox="0 0 340 250">
@@ -172,11 +172,11 @@ Le facteur est bien la **valeur absolue** de α : une longueur ne peut pas être
 
 > **Définition (vecteurs orthogonaux).** Soient A, B et C les points tels que u⃗ = AB⃗ et v⃗ = AC⃗. On dit que u⃗ et v⃗ sont **orthogonaux** si les droites (AB) et (AC) sont perpendiculaires. Par convention, le vecteur nul est orthogonal à tout vecteur du plan. On note u⃗ ⊥ v⃗.
 
-> **Définition (base et repère orthonormés).** Une base (i⃗ ; j⃗) est dite **orthonormée** lorsque i⃗ ⊥ j⃗ et ‖i⃗‖ = ‖j⃗‖ = 1. Le repère (O, i⃗, j⃗) est alors dit **orthonormé**.
+> **Définition (base et repère orthonormés).** Une base (i⃗, j⃗) est dite **orthonormée** lorsque i⃗ ⊥ j⃗ et ‖i⃗‖ = ‖j⃗‖ = 1. Le repère (O, i⃗, j⃗) est alors dit **orthonormé**.
 
 C'est seulement dans une base orthonormée que les longueurs se calculent, grâce au théorème de Pythagore.
 
-::: figure Dans une base orthonormée, le vecteur u⃗(3 ; 2) est l'hypoténuse d'un triangle rectangle de côtés 3 et 2 : sa norme vaut √(3² + 2²) = √13
+::: figure Dans une base orthonormée, le vecteur OM⃗ a pour composantes (3 ; 2) : il porte l'hypoténuse du triangle rectangle OHM, de côtés 3 et 2, donc ‖OM⃗‖ = √(3² + 2²) = √13
 <svg viewBox="0 0 300 240">
 <g stroke="#e2e8f0" stroke-width="1">
 <path d="M100 20 L100 230 M140 20 L140 230 M180 20 L180 230 M220 20 L220 230 M260 20 L260 230"/>
@@ -205,7 +205,7 @@ C'est seulement dans une base orthonormée que les longueurs se calculent, grâc
 > **Retenir (les trois formules analytiques, dans un repère orthonormé).**
 >
 > - Norme : si u⃗(x ; y), alors ‖u⃗‖ = √(x² + y²).
-> - Distance : si A(x_A ; y_A) et B(x_B ; y_B), alors AB = √((x_B − x_A)² + (y_B − y_A)²).
+> - Distance : si A(xA ; yA) et B(xB ; yB), alors AB = √((xB − xA)² + (yB − yA)²).
 > - Orthogonalité : u⃗(x ; y) ⊥ v⃗(x' ; y') **si et seulement si** xx' + yy' = 0.
 
 _Exemple détaillé (normaliser un vecteur)_ : ‖u⃗(3 ; −4)‖ = √(9 + 16) = √25 = **5**, donc u⃗ n'est pas unitaire ; en revanche (1/5)u⃗ l'est, puisque ‖(1/5)u⃗‖ = (1/5) × 5 = 1.
@@ -260,6 +260,6 @@ Un dernier résultat, spectaculaire, qui n'utilise que ce chapitre. Soit ABC un 
 
 Comme MA⃗ + MB⃗ + MC⃗ = 3MG⃗ vaut pour tout point M, on a en particulier OA⃗ + OB⃗ + OC⃗ = 3OG⃗, donc **OH⃗ = 3OG⃗**. Les vecteurs OH⃗ et OG⃗ sont colinéaires : les points **O, G et H sont alignés**. La droite qui les porte s'appelle la **droite d'Euler** du triangle.
 
-Et H n'est pas un point quelconque : c'est l'**orthocentre** de ABC, le point de concours des trois hauteurs. On le vérifie sur une hauteur : AH⃗ = AO⃗ + OH⃗ = AO⃗ + OA⃗ + OB⃗ + OC⃗ = OB⃗ + OC⃗. Or O est équidistant de B et de C, donc OB⃗ + OC⃗ = 2OI⃗ où I est le milieu de [BC] — et (OI) est la médiatrice de [BC], donc perpendiculaire à (BC). Ainsi (AH) ⊥ (BC) : la droite (AH) est bien la hauteur issue de A.
+Et H n'est pas un point quelconque : c'est l'**orthocentre** de ABC, le point de concours des trois hauteurs. On le vérifie sur une hauteur : AH⃗ = AO⃗ + OH⃗ = AO⃗ + OA⃗ + OB⃗ + OC⃗ = OB⃗ + OC⃗. Or, I étant le milieu de [BC], la relation du milieu donne OB⃗ + OC⃗ = 2OI⃗ ; et comme O est équidistant de B et de C, la droite (OI) est la médiatrice de [BC], donc perpendiculaire à (BC). Ainsi (AH) ⊥ (BC) : la droite (AH) est bien la hauteur issue de A.
 
 > 🏆 Quête franchie, héros : tu additionnes, tu multiplies, tu décomposes dans une base, tu lis une norme et tu tranches un alignement ou un angle droit par un simple calcul de composantes. Ces armes te suivront au chapitre suivant, où les points reçoivent des **poids**, puis dans toutes les transformations du plan.
