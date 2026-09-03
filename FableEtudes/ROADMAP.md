@@ -259,10 +259,13 @@ son étude et dans les citations qu'on en fait.
       demande) ; un compteur d'XP du jour tenu dans `award_xp` (R-12 exige l'XP réel, et
       `attempts` ignore donjon, duels et objectifs) ; une RPC self-scopée pour « Ta semaine »
       plutôt qu'un appel à `get_tutor_digest_inputs`, qui est `service_role` et
-      dépersonnalisée. **Un stop-point remonté** : la fenêtre de rachat de série diverge de
-      ce que l'étude suppose — `streakRecoveryBlock` n'a aucune borne haute, un élève parti
-      depuis dix jours peut encore racheter. Rien n'a été changé : le coût et la fenêtre du
-      rachat sont l'arbitrage A16 de é09.
+      dépersonnalisée. **Un stop-point remonté, puis FERMÉ le 2026-09-03** (arena#956) : la
+      fenêtre de rachat de série n'avait aucune borne haute — un élève parti dix jours
+      rachetait pour 15 pièces la série perdue neuf jours plus tôt, ce que R-16 ne suppose
+      nulle part. Bornée à **2 jours manqués** sur arbitrage. C'est le levier qui ne touche
+      PAS à l'économie : A16 constate que G-4 échoue à 38 % parce que le shield est bon
+      marché, or resserrer la fenêtre resserre G-4 **sans changer un prix** — rien n'entre
+      au registre §3.9. **Renchérir le shield reste la question de A16**, et reste ouvert.
       **Deux défauts trouvés par le harnais pgTAP local, avant la CI** : un `GRANT` recopié
       d'un fichier source rouvrait la faille S1 (auto-crédit de pièces), et
       `award_duel_rewards` — second écrivain de `hero_class` — faisait échouer chaque
@@ -285,9 +288,33 @@ son étude et dans les citations qu'on en fait.
       (`js/redos`, HIGH). Remplacée par un balayage qui compte les parenthèses — linéaire, et
       plus juste : la version régulière tronquait un appel dont un argument contenait une
       parenthèse, donc elle pouvait manquer une propriété interdite.
-      ⚠️ **Ce qui reste, et qui n'est pas du code** : relever la CURR en prod (la scorecard
-      §1bis attend un chiffre daté, pas un instrument — il sortira n = 0 tant que la ligne 1
-      tient), et déplacer le dossier de l'étude en `EtudeRealisé/`.
+      ✅ **Suite du 2026-09-03, arena#956 — les deux arbitrages rendus, en production.**
+      (1) La fenêtre de rachat, ci-dessus. (2) **Les trois autres événements de Q-2 sont
+      semés** — `synthese-2026` (22 nov. → 6 déc.), `ramadan-2027` (15 févr. → 2 mars),
+      `revisions-mai-2027` (3 → 17 mai) : le stop-point du lot 8 n'autorisait que le pilote,
+      et sans admin UI chacun demandait une migration — après le 30 septembre le produit
+      n'aurait plus rien eu de daté, et le constat n° 9 serait revenu tout seul en trois
+      semaines. **Aucun code n'a bougé pour les faire vivre** : la table se lit, un événement
+      de plus est une ligne. ⚠️ Réserve écrite sur le **Ramadan** : son début civil dépend de
+      l'observation lunaire, donc la fenêtre est une QUINZAINE AU MILIEU du mois probable
+      plutôt qu'une date au jour près (une fenêtre de trente jours contredirait R-21) ;
+      l'assertion pgTAP garde la marge, pas la date.
+      ⚠️ **Et un défaut que le test écrit pour l'occasion a fait tomber : QUATRE badges
+      rendaient le glyphe passe-partout depuis des mois.** `BadgeMedal` fait
+      `GLYPHS[iconName] || Award` — un nom inconnu rend une médaille correcte, avec le glyphe
+      générique : la conduite est bonne, le SILENCE est le défaut. Trois venaient du premier
+      seed (2026-05-22) en minuscules — `'flame'`, `'swords'`, `'zap'` — que le seed plus
+      riche du même jour n'a jamais corrigés parce qu'il porte `ON CONFLICT DO NOTHING` ;
+      `league_podium` (`'Trophy'`) et `event_rentree` (`'Sparkles'`) étaient simplement
+      absents de la carte. Corrigé des deux côtés, et gardé par les deux : Vitest confronte
+      la carte au semis, pgTAP lit la base reconstruite.
+      ⚠️ **Ce qui reste, et qui n'est PAS du code** : relever la CURR en prod. La scorecard
+      §1bis attend un **chiffre daté**, pas un instrument — il sortira `n = 0` tant que la
+      ligne 1 (« zéro canal d'acquisition ») tient, et c'est une lecture, pas un échec. Se lit
+      sur `/admin/engagement` avec un compte `role = 'admin'`. Une session d'agent ne peut pas
+      l'atteindre : le proxy réseau bloque le domaine de production. **Proposé et non tranché**
+      au 2026-09-03 : un workflow en lecture seule qui publierait la CURR chaque semaine dans
+      le résumé de son run (barreau « supprimer le besoin » de `zero-intervention.md`).
 
 ---
 
@@ -550,7 +577,7 @@ auprès de Google — le paragraphe « vidéos YouTube » a désormais une page 
 | **28** stratégie de référence             | 3 lots                                                     | privé#155 · #156 · arena#726                     |
 | **29** mode IA « à la clé de la famille » | **5 lots** — porte, coffre, activation, la Forge, consoles | **arena#807** · #811 · #812 · #813               |
 | **30** tuteur déterministe                | périmètre 0bis · 1 · 2 · 3 · 3bis · 4                      | privé#241 · arena#856 → #860 · #910 · #911       |
-| **31** l'envie de revenir                 | **8 lots** — mesurer · rappeler · célébrer · rythmer       | **arena#949** · privé#324 · #328                 |
+| **31** l'envie de revenir                 | **8 lots** — mesurer · rappeler · célébrer · rythmer · plus la suite du 2026-09-03 (fenêtre de rachat bornée, calendrier complet, glyphes muets) | **arena#949** · **#956** · #955 · privé#324 · #328 · #329 |
 
 **Chantiers de fondations livrés** (hors étude — ils n'ont pas de dossier `FableEtudes/`) :
 
