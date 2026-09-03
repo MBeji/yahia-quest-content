@@ -197,7 +197,7 @@ _Exemple détaillé_ : G est le barycentre des points pondérés (A, 2), (B, 3) 
 
 ## 📐 Construire le barycentre à la règle
 
-Construire G revient toujours à réaliser l'égalité AG⃗ = (β/(α + β))AB⃗, c'est-à-dire à partager [AB] en α + β parts égales et à en compter β depuis A. Le manuel propose pour cela deux constructions graphiques, la **méthode des parallèles** et la **méthode du parallélogramme** ; la première est le partage classique par le théorème de Thalès, illustré ci-dessous.
+Construire G revient toujours à réaliser l'égalité AG⃗ = (β/(α + β))AB⃗, c'est-à-dire à partager [AB] en α + β parts égales et à en compter β depuis A. Le manuel propose pour cela la **méthode des parallèles**, le partage classique par le théorème de Thalès, illustré ci-dessous.
 
 ::: figure Partage de [AB] en 5 parts égales pour construire le barycentre de (A, 3) et (B, 2) : on trace une demi-droite d'origine A, on y reporte 5 longueurs égales, on joint le cinquième point à B, puis on mène les parallèles à cette droite ; le point G cherché est le deuxième point de partage à partir de A, puisque AG⃗ = (2/5)AB⃗
 <svg viewBox="0 0 340 200">
