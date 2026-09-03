@@ -239,7 +239,9 @@ son étude et dans les citations qu'on en fait.
       le montre au parent), le digest hebdo enrichi opt-in (le push dominical est toujours le
       générique), et le comparatif de parcours seuillé (jamais construit).
 
-- [ ] **P6. é26 lots 1 et 2 — écrire la doctrine qu'on applique.**
+- [ ] **P6. é26 lots 1 et 2 — écrire la doctrine qu'on applique.** ✅ **Lot 1 livré le
+      2026-09-03** (arena#961 : `docs/doctrine-verticale.md`, ancrage AGENTS.md ; privé#333 :
+      fiche D-2 du `_TEMPLATE.md` et règle de création de l'index). **Reste le lot 2.**
       **Lot 1** : `docs/doctrine-verticale.md` (P-1…7, grille M0-M4, Definition of Excellence,
       règle d'arbitrage, doctrine IA-native) + ancrage canonique dans AGENTS.md + fiche D-2 dans
       `_TEMPLATE.md` + règle de création d'étude dans `FableEtudes/README.md`.
@@ -428,6 +430,15 @@ son étude et dans les citations qu'on en fait.
       produit avec un parent part **en anglais**.
       (2) Vérifier qu'un événement `web_vitals` **arrive réellement** dans PostHog — sans clé le
       beacon n'émet rien, et un tableau de bord vide se lit à tort « aucun problème ».
+- [ ] **F12. é32 — harness : optimiser, simplifier, améliorer.** Étude en **brouillon** le
+      2026-09-03 ([`32-harness-optimisation/ETUDE.md`](./32-harness-optimisation/ETUDE.md)), sur
+      relevé : **167 runs `failure` à zéro job sur 800** au privé en six jours (les fantômes de
+      `pull_request:opened`), **5 réveils d'automerge par branche**, **CI + CodeQL + Migration gate
+      en double** sur chaque branche neuve du moteur (38 dispatch pour 71 runs natifs), et un
+      `harness:check` dont la borne « description ≤ 1 024 » n'a jamais rien mesuré (bug reproduit
+      en annexe B — 2 skills privés hors spec). Quatre lots, une décision : **Q-1**, un PAT pour le
+      privé (recommandé) ou le retrait d'`opened`. À lancer après l'arbitrage, lot 1 d'abord ; le
+      « avant » se relève avec le même script que l'étude.
 
 ---
 
