@@ -5,6 +5,23 @@
 > **Architecte** : <modèle/date> · **Exécuteur cible** : Sonnet (ou équiv.)
 > **Dépend de** : <études/décisions/contenu préalables> · **Bloque** : <le cas échéant>
 > **Docs normatifs liés** : AGENTS.md, ARCHITECTURE.md, <docs/\*.md concernés>
+>
+> **Fiche de verticalité** (doctrine verticale, é26 D-2 — les quatre lignes se remplissent
+> AVANT d'écrire le §1, parce qu'elles peuvent conclure qu'il ne faut pas écrire l'étude) :
+> **Verticale** : <V1 « apprendre & maîtriser » | V2… | fondation | catalogue> ·
+> **Maturité visée** : <M2 | M3 = plancher de tout ce qui est LIVE | M4 = capacité signature
+> désignée UNIQUEMENT> ·
+> **Boucles** : <ce que l'étude REFERME (donnée déjà collectée qui atteint enfin un écran) /
+> ce qu'elle OUVRE et QUI la consommera, avec une échéance — une boucle ouverte sans
+> consommateur daté est un coût sans valeur, P-2> ·
+> **Apport IA** : <retenu (lequel, et sur quelles données vérifiées il s'ancre) | rejeté
+> motivé — « rien pour l'instant » est une réponse valide, l'absence de réponse n'en est pas>
+>
+> ⚠️ Une ouverture de capacité nouvelle se **gèle par défaut** (P-7) : si la fiche dit
+> « ouverture » et qu'aucun arbitrage humain écrit ne l'autorise, le statut est
+> `gelée (doctrine verticale)` et l'étude s'arrête là. Règle complète :
+> [`docs/doctrine-verticale.md`](https://github.com/MBeji/yahia-quest-arena/blob/main/docs/doctrine-verticale.md)
+> (dépôt moteur).
 
 ## 1. Contexte & objectif produit
 
