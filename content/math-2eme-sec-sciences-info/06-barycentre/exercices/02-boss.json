@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Regroupements, concours et lignes de niveau",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Dans le triangle ABC, le point I est le barycentre des points pondérés (B, 4) et (C, 1), et le point G celui des points pondérés (A, 3), (B, 4) et (C, 1). Quelle égalité relie AG⃗ et AI⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AG⃗ = (5/8)AI⃗"
+        },
+        {
+          "id": "b",
+          "text": "AG⃗ = (3/8)AI⃗"
+        },
+        {
+          "id": "c",
+          "text": "AG⃗ = (8/5)AI⃗"
+        },
+        {
+          "id": "d",
+          "text": "AG⃗ = (1/2)AI⃗"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les poids de B et de C totalisent 4 + 1 = 5, un nombre non nul : ce couple peut donc céder la place au seul point I, qui en récupère la charge 5. Le point G apparaît alors comme barycentre de (A, 3) et (I, 5), dont le total vaut 8, d'où AG⃗ = (5/8)AI⃗ ✓. L'écriture (3/8)AI⃗ met au numérateur la charge de A, alors que la règle réclame celle du point vers lequel le vecteur pointe. L'écriture (8/5)AI⃗ retourne la fraction et pousse G au-delà de I, hors du triangle, position qu'excluent trois poids positifs. Enfin (1/2)AI⃗ ferait de G le milieu de [AI], ce qui supposerait I chargé de 3 comme A, et non de 5 comme le regroupement l'impose.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les droites (AP) et (BQ) d'un triangle ABC se coupent en G, le point P étant le barycentre des points pondérés (B, 1) et (C, 3), et le point Q celui des points pondérés (A, 2) et (C, 3). De quels points pondérés G est-il le barycentre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(A, 2), (B, 1) et (C, 3)"
+        },
+        {
+          "id": "b",
+          "text": "(A, 1), (B, 2) et (C, 3)"
+        },
+        {
+          "id": "c",
+          "text": "(A, 2), (B, 1) et (C, 6)"
+        },
+        {
+          "id": "d",
+          "text": "(A, 1), (B, 1) et (C, 1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Appelons K le barycentre de (A, 2), (B, 1) et (C, 3), et montrons qu'il appartient aux deux droites. Les charges de B et C totalisent 1 + 3 = 4, non nul : on les remplace par P chargé de 4, si bien que K est barycentre de (A, 2) et (P, 4), donc situé sur (AP). Les charges de A et C totalisent 2 + 3 = 5, non nul : on les remplace par Q chargé de 5, si bien que K est barycentre de (Q, 5) et (B, 1), donc situé sur (BQ). Deux droites distinctes n'ayant qu'un point commun, K coïncide avec G ✓. Le triplet (A, 1), (B, 2) et (C, 3) permute les charges de A et de B ; en regroupant B et C il ferait apparaître le barycentre de (B, 2) et (C, 3), qui n'est pas P. Le triplet (A, 2), (B, 1) et (C, 6) double la charge de C en additionnant les deux 3 lus dans l'énoncé, alors que C n'en porte qu'un seul, et son regroupement ne redonne pas P davantage. Quant aux trois charges égales, elles décrivent le centre de gravité, dont le regroupement de B et C fournit le milieu de [BC], distinct de P.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABC est un triangle. Quel est l'ensemble des points M du plan tels que ‖2MA⃗ + 3MB⃗ − 5MC⃗‖ = 7 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le plan tout entier ou l'ensemble vide, selon la valeur de ‖2CA⃗ + 3CB⃗‖"
+        },
+        {
+          "id": "b",
+          "text": "Un cercle de rayon 7 centré au barycentre des points pondérés (A, 2), (B, 3) et (C, −5)"
+        },
+        {
+          "id": "c",
+          "text": "Un cercle de rayon 7 centré au centre de gravité du triangle ABC"
+        },
+        {
+          "id": "d",
+          "text": "L'ensemble vide, quel que soit le triangle ABC"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Premier réflexe : additionner les poids. Ici 2 + 3 − 5 = 0, donc aucun barycentre n'existe et la somme ne se ramène à aucun multiple de MG⃗. On développe alors en prenant C comme relais : 2MA⃗ + 3MB⃗ − 5MC⃗ = 2(MC⃗ + CA⃗) + 3(MC⃗ + CB⃗) − 5MC⃗, et le coefficient de MC⃗ y vaut 2 + 3 − 5 = 0. Il ne reste que 2CA⃗ + 3CB⃗, expression où M a disparu : la norme testée est un nombre fixé par le seul triangle. La condition est alors satisfaite par tous les points sans exception, ou par aucun ✓. Un cercle centré au barycentre de (A, 2), (B, 3) et (C, −5) est doublement impossible, ce point n'ayant aucune existence faute d'un total de charges non nul. Un cercle centré au centre de gravité supposerait trois charges égales, ce qu'elles ne sont pas. Et déclarer l'ensemble vide dans tous les cas oublie qu'un triangle bien choisi donne ‖2CA⃗ + 3CB⃗‖ = 7, auquel cas le plan entier convient.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Sur un segment [UV] de longueur non nulle, le point G vérifie UG⃗ = (2/5)UV⃗. Sachant que G est le barycentre des points pondérés (U, 6) et (V, β), quel est le réel β ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour le barycentre de (U, 6) et (V, β), la position s'écrit UG⃗ = (β/(6+β))UV⃗. L'énoncé impose β/(6+β) = 2/5, donc 5β = 2(6 + β) = 12 + 2β, puis 3β = 12 et β = 4 ✓. Vérification : le barycentre de (U, 6) et (V, 4) donne bien UG⃗ = (4/10)UV⃗, c'est-à-dire (2/5)UV⃗. La valeur 2 recopie le numérateur de la fraction ; elle ne conviendrait qu'avec une charge 3 en U, puisque 2/(3+2) = 2/5. La valeur 5 recopie le dénominateur, qui est le total des charges une fois la fraction réduite et non une charge. La valeur 9 vient d'avoir écrit UG⃗ = (6/(6+β))UV⃗, en mettant au numérateur la charge de U : on trouve alors 30 = 12 + 2β, mais le point ainsi obtenu vérifie UG⃗ = (9/15)UV⃗, soit (3/5)UV⃗.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Sur la figure ci-dessous, ABC est un triangle, I est le point de [BC] tel que BI⃗ = (1/4)BC⃗, et G est le point de [AI] tel que AG⃗ = (4/7)AI⃗. De quels points pondérés G est-il le barycentre ?\n<svg viewBox=\"0 0 320 240\"><polygon points=\"60,30 40,200 280,190\" fill=\"#0f6e56\" opacity=\"0.10\"/><polygon points=\"60,30 40,200 280,190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><path d=\"M60 30 L100 198\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"30\" r=\"4\"/><circle cx=\"40\" cy=\"200\" r=\"4\"/><circle cx=\"280\" cy=\"190\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"100\" cy=\"198\" r=\"5\"/><circle cx=\"83\" cy=\"126\" r=\"5\"/></g><g font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"58\" y=\"20\" fill=\"#0f172a\">A</text><text x=\"26\" y=\"216\" fill=\"#0f172a\">B</text><text x=\"294\" y=\"200\" fill=\"#0f172a\">C</text><text x=\"106\" y=\"220\" fill=\"#0f6e56\">I</text><text x=\"64\" y=\"122\" fill=\"#0f6e56\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(A, 3), (B, 3) et (C, 1)"
+        },
+        {
+          "id": "b",
+          "text": "(A, 4), (B, 3) et (C, 1)"
+        },
+        {
+          "id": "c",
+          "text": "(A, 7), (B, 3) et (C, 1)"
+        },
+        {
+          "id": "d",
+          "text": "(A, 3), (B, 1) et (C, 3)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On remonte la construction à l'envers, en deux temps. Pour I : un barycentre de (B, β) et (C, γ) vérifie BI⃗ = (γ/(β+γ))BC⃗, et l'égalité γ/(β+γ) = 1/4 se lit en choisissant un total de 4 avec 1 sur C, donc 3 sur B. Pour G : de la même manière, AG⃗ = (4/7)AI⃗ se lit avec un total de 7 dont 4 sur I et 3 sur A. Or la charge 4 réclamée sur I est exactement celle qu'il hérite du regroupement, puisque 3 + 1 = 4 : les deux étapes se recollent, et G est barycentre de (A, 3), (B, 3) et (C, 1) ✓. Le triplet (A, 4), (B, 3) et (C, 1) attribue au sommet A le numérateur 4, qui est la charge de I et non la sienne ; son total ferait 8 au lieu de 7. Le triplet (A, 7), (B, 3) et (C, 1) lui attribue le dénominateur 7, qui est le total général. Enfin (A, 3), (B, 1) et (C, 3) permute les charges de B et de C : le point I obtenu vérifierait BI⃗ = (3/4)BC⃗ et se trouverait près de C au lieu d'être près de B.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un triangle ABC, les points I, J et K sont les milieux respectifs des côtés [BC], [CA] et [AB]. Que peut-on dire des centres de gravité des triangles ABC et IJK ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les deux triangles ont le même centre de gravité"
+        },
+        {
+          "id": "b",
+          "text": "Le centre de gravité de IJK est confondu avec le point I"
+        },
+        {
+          "id": "c",
+          "text": "Les deux centres de gravité ne coïncident que si ABC est équilatéral"
+        },
+        {
+          "id": "d",
+          "text": "Le centre de gravité de IJK est le milieu de [AG], où G est celui de ABC"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Prenons un point M libre et traduisons chaque milieu : 2MI⃗ = MB⃗ + MC⃗, puis 2MJ⃗ = MC⃗ + MA⃗ et 2MK⃗ = MA⃗ + MB⃗. En ajoutant ces trois lignes, chacun des trois vecteurs MA⃗, MB⃗ et MC⃗ revient exactement deux fois, ce qui donne 2(MI⃗ + MJ⃗ + MK⃗) = 2(MA⃗ + MB⃗ + MC⃗), puis après simplification par 2 une égalité valable pour TOUT point M. Choisissons alors le centre de gravité G du triangle ABC, qui annule GA⃗ + GB⃗ + GC⃗ : il vient GI⃗ + GJ⃗ + GK⃗ = 0⃗, donc G est aussi l'isobarycentre de I, J et K, c'est-à-dire le centre de gravité de IJK ✓. Le sommet I ne peut pas jouer ce rôle : un centre de gravité est intérieur à son triangle, jamais l'un de ses sommets. La coïncidence ne dépend pas non plus de la forme du triangle, le calcul précédent n'ayant utilisé ni longueur ni angle. Enfin le milieu de [AG] est barycentre de (A, 1) et (G, 1) : il se place entre A et G, alors que le point cherché est G lui-même.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : Barycentre",
+  "questions": [
+    {
+      "prompt": "Dans le plan, A et B désignent deux points distincts. Quelle relation vectorielle caractérise le barycentre G des points pondérés (A, 4) et (B, 3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4GA⃗ + 3GB⃗ = 0⃗"
+        },
+        {
+          "id": "b",
+          "text": "3GA⃗ + 4GB⃗ = 0⃗"
+        },
+        {
+          "id": "c",
+          "text": "4GA⃗ − 3GB⃗ = 0⃗"
+        },
+        {
+          "id": "d",
+          "text": "GA⃗ + GB⃗ = 0⃗"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Par définition, G est l'unique point qui annule la somme des vecteurs issus de lui, chacun pesé par le coefficient du point vers lequel il pointe : GA⃗ est multiplié par 4, poids de A, et GB⃗ par 3, poids de B. La relation cherchée s'écrit donc 4GA⃗ + 3GB⃗ = 0⃗ ✓. L'écriture 3GA⃗ + 4GB⃗ = 0⃗ donne à chaque point le poids de l'autre : elle désigne un point de (AB) attiré par B au lieu de l'être par A. L'écriture 4GA⃗ − 3GB⃗ = 0⃗ change le poids de B en −3 ; avec deux poids de signes contraires, le point obtenu quitte le segment [AB]. Enfin GA⃗ + GB⃗ = 0⃗ traite A et B comme s'ils pesaient pareil : cette relation désigne le milieu de [AB], et non le point cherché.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On donne deux points distincts R et S ainsi qu'un réel m. Pour quelles valeurs de m les points pondérés (R, m) et (S, 6) admettent-ils un barycentre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour tout réel m différent de −6"
+        },
+        {
+          "id": "b",
+          "text": "Pour tout réel m différent de 6"
+        },
+        {
+          "id": "c",
+          "text": "Pour tout réel m strictement positif"
+        },
+        {
+          "id": "d",
+          "text": "Pour tout réel m, sans exception"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un couple de points pondérés définit un point unique dès que l'on peut diviser par le total des poids, car la position s'écrit RG⃗ = (6/(m+6))RS⃗. Ce total vaut ici m + 6 ; il s'annule pour m = −6, et toute autre valeur convient ✓. Écarter la valeur 6 revient à annuler m − 6, c'est-à-dire à retrancher les poids au lieu de les cumuler. Réclamer m strictement positif interdirait sans raison les poids négatifs : avec m = −2 le total vaut 4 et le point est parfaitement défini, simplement rejeté hors du segment [RS]. Quant à accepter tous les réels, cela laisse passer le seul cas interdit, celui où le total s'annule et où la division devient impossible.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le point H est le barycentre des points pondérés (U, 2) et (V, 5), où U et V sont deux points distincts. De quel autre couple de points pondérés H est-il encore le barycentre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(U, 6) et (V, 15)"
+        },
+        {
+          "id": "b",
+          "text": "(U, 5) et (V, 2)"
+        },
+        {
+          "id": "c",
+          "text": "(U, 3) et (V, 6)"
+        },
+        {
+          "id": "d",
+          "text": "(U, 6) et (V, 5)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un barycentre reste au même endroit quand on multiplie TOUS ses poids par un même réel non nul. Avec le facteur 3, les poids 2 et 5 deviennent 6 et 15 sans que rien bouge : UH⃗ = (15/21)UV⃗ = (5/7)UV⃗, exactement la position de départ ✓. Le couple (U, 5) et (V, 2) permute les deux poids et conduit à UH⃗ = (2/7)UV⃗ : le point bascule vers U. Le couple (U, 3) et (V, 6) ajoute 1 à chaque poids au lieu de multiplier, et donne UH⃗ = (6/9)UV⃗, soit 2/3, différent de 5/7. Le couple (U, 6) et (V, 5) n'a touché qu'au premier poids : il suffit qu'un seul change pour que le point se déplace.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "P et Q sont deux points distincts du plan. Où se situe le barycentre des points pondérés (P, 2) et (Q, −5) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sur la droite (PQ), au-delà de Q"
+        },
+        {
+          "id": "b",
+          "text": "Sur le segment [PQ], plus près de Q que de P"
+        },
+        {
+          "id": "c",
+          "text": "Sur la droite (PQ), au-delà de P"
+        },
+        {
+          "id": "d",
+          "text": "En dehors de la droite (PQ)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Notons G ce barycentre. Le total des poids vaut 2 + (−5) = −3, qui n'est pas nul : le point existe, et se repère par PG⃗ = (−5/−3)PQ⃗ = (5/3)PQ⃗. Le nombre 5/3 est positif et dépasse 1 : en partant de P dans la direction de Q, on franchit Q ✓. Une place à l'intérieur de [PQ] réclamerait un nombre compris entre 0 et 1, donc deux poids de même signe, ce que 2 et −5 ne sont pas. Une place derrière P réclamerait un nombre négatif, qu'on obtiendrait par exemple avec les poids −2 et 5. Quitter la droite (PQ) est en revanche impossible : PG⃗ est un multiple de PQ⃗, quels que soient les poids choisis.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur la droite graduée ci-dessous, le point C a pour abscisse 4 et le point D pour abscisse 12. Quelle est l'abscisse du barycentre des points pondérés (C, 3) et (D, 1) ?\n<svg viewBox=\"0 0 340 130\"><path d=\"M16 80 L318 80\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><polygon points=\"325,80 313,85 313,75\" fill=\"#0f172a\"/><path d=\"M26 75 L26 85 M46 75 L46 85 M66 75 L66 85 M86 75 L86 85 M106 75 L106 85 M126 75 L126 85 M146 75 L146 85 M166 75 L166 85 M186 75 L186 85 M206 75 L206 85 M226 75 L226 85 M246 75 L246 85 M266 75 L266 85 M286 75 L286 85 M306 75 L306 85\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><g fill=\"#0f6e56\"><circle cx=\"106\" cy=\"80\" r=\"5\"/><circle cx=\"266\" cy=\"80\" r=\"5\"/></g><g font-size=\"12\" fill=\"#0f172a\" text-anchor=\"middle\"><text x=\"26\" y=\"104\">0</text><text x=\"66\" y=\"104\">2</text><text x=\"106\" y=\"104\">4</text><text x=\"146\" y=\"104\">6</text><text x=\"186\" y=\"104\">8</text><text x=\"226\" y=\"104\">10</text><text x=\"266\" y=\"104\">12</text><text x=\"306\" y=\"104\">14</text></g><g font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"106\" y=\"60\">C</text><text x=\"266\" y=\"60\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le total des poids vaut 3 + 1 = 4. Sur une droite d'origine O, l'identité 3OC⃗ + OD⃗ = 4OG⃗ se lit directement sur les abscisses : celle du barycentre est (3 × 4 + 1 × 12)/4 = 24/4 = 6 ✓, valeur bien située du côté de C, trois fois plus lourd que D. L'abscisse 8 est celle du milieu de [CD] : elle traite les deux points à égalité alors que leurs poids diffèrent. L'abscisse 10 vient d'une permutation des poids, avec (1 × 4 + 3 × 12)/4 = 40/4 : le point penche du mauvais côté. Enfin l'abscisse 12 divise la somme pondérée 24 par 2, le nombre de points, au lieu de 4, le total des poids ; elle place le barycentre sur D, ce qui exigerait un poids nul en C.",
+      "difficulty": 2
+    }
+  ]
+}

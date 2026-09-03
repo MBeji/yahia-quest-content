@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Réduction, regroupement et ensembles de points",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Dans un triangle ABC, G est le barycentre des points pondérés (A, 5), (B, −2) et (C, 3). Pour un point M quelconque du plan, à quel vecteur la somme 5MA⃗ − 2MB⃗ + 3MC⃗ se réduit-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6MG⃗"
+        },
+        {
+          "id": "b",
+          "text": "10MG⃗"
+        },
+        {
+          "id": "c",
+          "text": "6GM⃗"
+        },
+        {
+          "id": "d",
+          "text": "MG⃗"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le total des charges vaut 5 + (−2) + 3 = 6, non nul : le barycentre existe et la réduction est légitime, avec 5MA⃗ − 2MB⃗ + 3MC⃗ = 6MG⃗ ✓. On le vérifie en insérant G partout : 5(MG⃗ + GA⃗) − 2(MG⃗ + GB⃗) + 3(MG⃗ + GC⃗) vaut 6MG⃗ augmenté de 5GA⃗ − 2GB⃗ + 3GC⃗, et ce dernier bloc s'évanouit, puisque c'est très exactement ce qui définit G. Le facteur 10 additionne 5, 2 et 3 en écartant le signe moins, alors que c'est le total algébrique qui commande. Le vecteur 6GM⃗ a le bon facteur mais parcourt le trajet à l'envers, la formule allant de M vers G. Enfin MG⃗ seul oublie de multiplier par 6.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur la figure ci-dessous, ABC est un triangle et J est le milieu du segment [AC]. Le point G, qui n'est pas représenté, est le barycentre des points pondérés (A, 1), (B, 2) et (C, 1). Que peut-on dire de G ?\n<svg viewBox=\"0 0 320 230\"><polygon points=\"150,30 50,195 265,180\" fill=\"#0f6e56\" opacity=\"0.10\"/><polygon points=\"150,30 50,195 265,180\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><g fill=\"#0f172a\"><circle cx=\"150\" cy=\"30\" r=\"4\"/><circle cx=\"50\" cy=\"195\" r=\"4\"/><circle cx=\"265\" cy=\"180\" r=\"4\"/></g><circle cx=\"208\" cy=\"105\" r=\"5\" fill=\"#0f6e56\"/><g font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150\" y=\"20\" fill=\"#0f172a\">A</text><text x=\"36\" y=\"212\" fill=\"#0f172a\">B</text><text x=\"280\" y=\"194\" fill=\"#0f172a\">C</text><text x=\"222\" y=\"100\" fill=\"#0f6e56\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "G est le milieu de [BJ]"
+        },
+        {
+          "id": "b",
+          "text": "G est confondu avec J"
+        },
+        {
+          "id": "c",
+          "text": "G est le centre de gravité de ABC"
+        },
+        {
+          "id": "d",
+          "text": "G vérifie BG⃗ = (1/4)BJ⃗"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les charges de A et de C totalisent 1 + 1 = 2, non nul : on peut les regrouper. Leur barycentre, à charges égales, est le point J indiqué sur la figure, qui récupère la charge 2. Reste G barycentre de (J, 2) et (B, 2) ; deux charges identiques donnent un milieu, donc G est le milieu de [BJ] ✓. Confondre G avec J reviendrait à ignorer complètement le sommet B, qui porte pourtant la charge la plus lourde. Le centre de gravité demanderait trois charges égales, alors que B pèse le double de A et de C. Enfin la relation BG⃗ = (1/4)BJ⃗ divise par le total 4 en ne comptant que la charge 1 de A ; le numérateur correct est la charge 2 portée par J, ce qui donne BG⃗ = (2/4)BJ⃗, soit la moitié.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un triangle ABC est donné. Le point E est le barycentre des points pondérés (A, 2) et (B, 1), tandis que le point F est celui des points pondérés (A, 2), (B, 1) et (C, 5). Que peut-on affirmer des points E, F et C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ils sont alignés, et F est situé entre E et C"
+        },
+        {
+          "id": "b",
+          "text": "Ils sont alignés, mais F est situé hors du segment [EC]"
+        },
+        {
+          "id": "c",
+          "text": "Ils ne sont pas alignés : F n'est pas sur la droite (EC)"
+        },
+        {
+          "id": "d",
+          "text": "Ils sont alignés, et F est exactement au milieu de [EC]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les charges de A et de B totalisent 2 + 1 = 3, non nul : on les remplace par E chargé de 3. Le point F devient alors barycentre de (E, 3) et (C, 5), ce qui le pose sur la droite (EC) — les trois points sont donc alignés — avec EF⃗ = (5/8)EC⃗. Le rapport 5/8 tombe entre 0 et 1, si bien que F se trouve entre E et C ✓ ; la règle des signes dit la même chose, 3 et 5 étant tous deux positifs. Sortir du segment exigerait un rapport négatif ou supérieur à 1, donc deux charges de signes contraires. Nier l'alignement revient à ne pas voir le regroupement, dont la condition est pourtant remplie. Et F n'occupe pas le milieu : cela demanderait le rapport 1/2, donc deux charges égales, alors que C pèse 5 contre 3 pour E.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les côtés d'un triangle ABC mesurent BC = 5, CA = 7 et AB = 8. Quelle relation vectorielle vérifie le centre I du cercle inscrit dans ce triangle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5IA⃗ + 7IB⃗ + 8IC⃗ = 0⃗"
+        },
+        {
+          "id": "b",
+          "text": "8IA⃗ + 7IB⃗ + 5IC⃗ = 0⃗"
+        },
+        {
+          "id": "c",
+          "text": "IA⃗ + IB⃗ + IC⃗ = 0⃗"
+        },
+        {
+          "id": "d",
+          "text": "15IA⃗ + 13IB⃗ + 12IC⃗ = 0⃗"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Chaque sommet reçoit pour charge la longueur du côté qui lui fait face : A reçoit BC = 5, B reçoit CA = 7 et C reçoit AB = 8. La relation s'écrit donc 5IA⃗ + 7IB⃗ + 8IC⃗ = 0⃗ ✓, et le total 5 + 7 + 8 = 20 n'étant pas nul, ce point existe bel et bien. L'écriture 8IA⃗ + 7IB⃗ + 5IC⃗ = 0⃗ attribue au contraire à chaque sommet la longueur d'un côté qui le contient, ce qui tire le point vers le sommet opposé au plus long côté. L'écriture IA⃗ + IB⃗ + IC⃗ = 0⃗ caractérise le centre de gravité ; les deux points ne se rejoignent que dans un triangle équilatéral, ce que 5, 7 et 8 excluent. Enfin les nombres 15, 13 et 12 sont les sommes des deux côtés issus de chaque sommet ; presque égaux, ils ramèneraient le point tout près du centre de gravité.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soient A et B deux points distincts et G le barycentre des points pondérés (A, 1) et (B, 3). Quel est l'ensemble des points M du plan tels que ‖MA⃗ + 3MB⃗‖ = 12 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le cercle de centre G et de rayon 3"
+        },
+        {
+          "id": "b",
+          "text": "Le cercle de centre G et de rayon 12"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle de centre G et de rayon 48"
+        },
+        {
+          "id": "d",
+          "text": "Le cercle de centre I et de rayon 3, où I est le milieu de [AB]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le total des charges vaut 1 + 3 = 4, non nul, donc MA⃗ + 3MB⃗ = 4MG⃗ quel que soit M. La condition devient ‖4MG⃗‖ = 12 ; comme la norme d'un produit par un réel vaut la valeur absolue de ce réel multipliée par la norme, on obtient 4 × MG = 12, puis MG = 3. Les points cherchés sont ceux qui se tiennent à distance 3 de G : ils dessinent le cercle de centre G et de rayon 3 ✓. Le rayon 12 recopie la valeur de l'énoncé et laisse tomber le facteur 4. Le rayon 48 multiplie par 4 au lieu de diviser, dans le mauvais sens. Enfin le milieu de [AB] ne serait le centre que pour deux charges égales : ici B pèse le triple de A, et le centre se tient aux trois quarts du trajet de A vers B, puisque AG⃗ = (3/4)AB⃗.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "A et B sont deux points distincts du plan. Parmi les quatre affirmations suivantes, une seule est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les points pondérés (A, −3) et (B, −1) ont le même barycentre que (A, 3) et (B, 1)"
+        },
+        {
+          "id": "b",
+          "text": "Les points pondérés (A, 4) et (B, −4) ont pour barycentre le milieu de [AB]"
+        },
+        {
+          "id": "c",
+          "text": "Le barycentre des points pondérés (A, 1) et (B, 5) est plus proche de A que de B"
+        },
+        {
+          "id": "d",
+          "text": "Le barycentre des points pondérés (A, −2) et (B, 5) est un point du segment [AB]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Remplacer chaque charge par son produit avec un même réel non nul laisse le barycentre exactement où il est, et rien n'oblige ce facteur à être positif : en multipliant −3 et −1 par −1 on retrouve 3 et 1, donc le même point ✓. Les deux calculs concordent, avec AG⃗ = (−1/−4)AB⃗ d'un côté et AG⃗ = (1/4)AB⃗ de l'autre. Les charges 4 et −4 ont en revanche un total nul : elles ne définissent aucun point, et surtout pas le milieu, qui réclame deux charges ÉGALES et non opposées. Avec 1 et 5, la position est AG⃗ = (5/6)AB⃗, soit cinq sixièmes du trajet : le point est nettement plus près de B, car le plus lourd attire toujours. Avec −2 et 5, le total vaut 3 et AG⃗ = (5/3)AB⃗, rapport supérieur à 1 qui envoie le point au-delà de B, comme le veut la règle des signes contraires.",
+      "difficulty": 3
+    }
+  ]
+}
