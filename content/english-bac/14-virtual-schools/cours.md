@@ -188,13 +188,17 @@ Some of them travel in families: **kn-** at the beginning of a word has lost its
 
 Read the column downwards: **b – u – r – n – t**. The five letters nobody pronounces spell **burnt**, the past form of *burn*. It is a small piece of theatre, and it is also the best possible proof that you have identified the right letter in every word: get one wrong and the word does not come out.
 
+> ⚠️ One of those five holds only in the accent your book teaches. In **British** pronunciation an *r* written before a consonant is not sounded — *ha**r**mful*, *fa**r**m*, *ca**r**d* — which is what puts the **r** into the column above. Say *harmful* in an American accent and the *r* comes back, and the chain no longer works. The other four are silent in every accent of English.
+
+> 🗡️ **And then your book hands you the game itself.** Once you can pull the silent letter out of a word, you can build a chain of your own: choose the word you want at the bottom, then find, for each of its letters, a word that hides exactly that letter. From *knee, autumn, friend, bustle* you get **k – n – i – t**: *knit*. Change one word in a chain and the word at the bottom changes with it — which is why a chain is never answered from memory, only decoded, one word at a time.
+
 > ⚠️ A silent letter is **written and not sounded** — that is all. It is not a letter you may leave out when you write, and it is not a spelling mistake somebody forgot to correct. *Autumn* keeps its **n** because the word had it before English stopped saying it, and a pupil who writes "autum" has not been clever, only wrong.
 
 ## 📣 Emphasizing a word in a sentence
 
 The last thing your voice can do is choose **which word of a sentence matters**. The words stay in the same order, the sentence keeps its meaning — and yet each saying of it answers a different question.
 
-Take one sentence and say it five times, pressing on one word each time:
+Take one sentence and say it again and again, pressing on **one word** each time. (Your book asks for five sayings and then prints four questions — here are its four.)
 
 > _I read a tale last week._
 
