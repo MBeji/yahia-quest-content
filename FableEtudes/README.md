@@ -247,3 +247,21 @@ ARCHITECTURE.md gagnent toujours, et une étude qui touche le moteur de contenu 
 Copier `_TEMPLATE.md` dans `NN-<slug>/ETUDE.md` (numéro = priorité), remplir TOUTES les sections
 (une section vide = étude pas prête), ajouter la ligne d'index ici. Les études sont rédigées par
 le modèle architecte ; un exécuteur ne crée pas d'étude.
+
+⚠️ **La fiche de verticalité se remplit d'abord, et elle peut conclure qu'il ne faut pas écrire
+l'étude.** Depuis la doctrine verticale (é26, arbitrée le 2026-07-20 ; normée le 2026-09-03 dans
+[`docs/doctrine-verticale.md`](https://github.com/MBeji/yahia-quest-arena/blob/main/docs/doctrine-verticale.md)),
+toute étude **nouvelle** porte les quatre lignes de l'en-tête du template — verticale, maturité
+visée, boucles, apport IA. Elles ne sont pas décoratives :
+
+- une étude qui **ouvre** une capacité nouvelle alors que la verticale en cours n'a pas atteint
+  sa cible est **gelée par défaut** (`gelée (doctrine verticale)`), et seul un arbitrage humain
+  écrit la dégèle — le réflexe face à une bonne idée est le gel motivé, pas le brouillon (P-7) ;
+- une étude qui **ouvre une boucle** sans nommer qui la consommera et quand n'est pas prête :
+  c'est le défaut fondateur que la doctrine corrige (P-2) ;
+- « **maturité visée : M4** » n'est légitime que pour une capacité **signature** désignée.
+  Partout ailleurs la cible est M3, et s'y arrête.
+
+**Les études existantes ne sont PAS rétro-modifiées** — la fiche vaut pour les nouvelles ; les
+anciennes sont positionnées par le §3 de l'étude 26. Le contrôle est **humain**, à la
+validation : il n'existe pas de gate CI de doctrine, et c'est une décision (é26 D-5).
