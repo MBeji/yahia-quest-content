@@ -10,7 +10,7 @@ Le texte de la séquence est **« La peur du mépris »**, extrait des _Lettres 
 
 Le lieutenant Louaut raconte lui-même la scène. Un batelet chavire sous ses yeux ; le batelier nage mal et va se noyer. Louaut songe un instant à se jeter à l'eau, puis se rappelle qu'il a quarante-sept ans, des rhumatismes, et qu'il fait un froid piquant ; il s'éloigne. Le texte **alterne alors le récit et le monologue**, et deux voix contradictoires s'y font entendre : celle de la **prudence**, qui rappelle les jours passés au lit l'an dernier, et celle de la **conscience**, qui le traite de misérable puis de lâche. C'est la seconde qui l'emporte : il court, se jette à l'eau, sauve l'homme. Le récit se ferme sur le mobile de l'acte — non pas la générosité, mais la **peur du mépris**.
 
-> 🗡️ Le détail qui décide de tout est un pronom. La première voix le **tutoie** ; la seconde le **vouvoie**, et c'est ce vouvoiement, dit-il, qui l'a frappé. Changer de pronom, c'est changer le rapport entre celui qui parle et celui à qui l'on parle : la grammaire de cette séquence commence là.
+> 🗡️ Le détail qui décide de tout est un pronom. C'est la **même** voix, celle de la conscience, qui le **tutoie** d'abord pour le traiter de misérable, puis le **vouvoie** pour le traiter de lâche — la prudence, entre les deux, ne fait que répliquer. Et c'est ce changement, dit-il, qui l'a frappé : changer de pronom, c'est changer le rapport entre celui qui parle et celui à qui l'on parle. La grammaire de cette séquence commence là.
 
 ## 💠 Un mot, plusieurs sens : la polysémie
 
@@ -47,8 +47,9 @@ Conséquence immédiate, et souvent oubliée : **l'antonyme change avec le sens*
 | Énoncé | Sens de « juste » | Antonyme |
 | --- | --- | --- |
 | Le magistrat est juste. | intègre | **injuste** |
-| Son raisonnement est juste. | logique, pertinent | **faux** |
-| Ses calculs sont justes. | précis, exacts | **faux** |
+| Son raisonnement est juste. | logique | **faux** |
+| Ses calculs sont justes. | précis | **faux** |
+| Ses remarques sont toujours justes. | pertinentes | **fausses** |
 
 > 🗡️ Deux antonymes trouvés pour un même mot polysémique ne sont pas davantage interchangeables entre eux que ses synonymes : un raisonnement « injuste » et un raisonnement « faux » ne sont pas le même défaut.
 
@@ -70,6 +71,8 @@ Certains mots ne se comprennent **que** par elle : _je_, _tu_, _nous_, _votre_, 
 ## 🧭 Repère fixe ou repère relatif au locuteur
 
 Le manuel démontre le point par une panne. Un billet glissé sous une porte annonce qu'il reste **« trois heures »** pour faire une démarche. Impossible d'agir : le lecteur ignore à quelle heure le billet a été écrit. S'il l'a été à 10 h, le délai expire à 13 h ; à 11 h, il expire à 14 h, et ainsi de suite. Le repère « dans trois heures » n'est pas un **repère fixe** : il se compte **à partir du moment de l'énonciation**, que le destinataire ne connaît pas.
+
+Et le moment n'est pas la seule donnée qui manque : le lecteur ignore aussi **qui** a écrit le billet — le « je » par lequel l'auteur s'y désigne et sa signature ne disent rien à qui n'est pas son destinataire. Une signature peut donc être là et n'identifier personne.
 
 Le remède est d'une simplicité désarmante : l'auteur du billet aurait dû ajouter trois heures à l'heure de sa montre et écrire l'heure obtenue.
 
@@ -106,7 +109,7 @@ Deux outils d'argumentation complètent la rubrique :
 
 Un énoncé n'est **incitatif** que par la place qu'il occupe : _Parrainer un enfant, ça coûte pas cher…_, pris à part, répond simplement à qui veut savoir si le parrainage coûte cher ; en **tête d'un appel aux dons**, il doit s'entendre _parrainez un enfant_. Ce n'est donc pas sa forme qui pousse à agir, c'est son contexte.
 
-Expliciter un raisonnement, c'est **faire apparaître les articulateurs** — _or_, _donc_, _puisque_ — et les rapports logiques qu'ils marquent. La séquence fait aussi observer le **registre familier** (« ça » pour « cela », négation « ne » supprimée) et demande de réécrire un texte **en commençant par la concession** : _Même si l'Asie montre aujourd'hui de grands besoins, il faut continuer à aider les autres pays_ dit la même chose que la phrase inverse, mais met la thèse défendue à la place forte.
+Expliciter un raisonnement, c'est **faire apparaître les articulateurs** — _or_, _donc_, _puisque_ — et les rapports logiques qu'ils marquent. La séquence fait aussi observer le **registre familier** (« ça » pour « cela », négation « ne » supprimée, verbe « alcooliser » préféré à « s'enivrer ») et demande de réécrire un texte **en commençant par la concession** : _Même si l'Asie montre aujourd'hui de grands besoins, il faut continuer à aider les autres pays_ dit la même chose que la phrase inverse, mais met la thèse défendue à la place forte.
 
 Deux mots reviennent alors, qu'il faut tenir séparés : la **thèse** est l'idée que le locuteur soutient — ici, continuer d'aider les pays oubliés ; la **thèse adverse** est celle contre laquelle il écrit — reporter toute l'aide sur l'Asie. Ce qu'il **concède** n'est pas la thèse adverse elle-même, mais l'un de ses **arguments** : que l'Asie montre aujourd'hui de grands besoins. C'est cet écart qui rend la concession possible ; accorder un argument à l'adversaire n'est jamais lui donner raison.
 

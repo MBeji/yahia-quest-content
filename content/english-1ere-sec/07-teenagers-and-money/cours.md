@@ -52,14 +52,14 @@ The journalist's sheet holds **eleven** questions but only **ten** answers, so *
 
 | Carol's answer                              | Its topic | The question it fits                              |
 | ------------------------------------------- | --------- | ------------------------------------------------- |
-| "My house. It belongs to me."               | spending  | What's your biggest extravagance?                 |
-| "We grew up together. We are just friends." | Max       | What's the truth about your relationship with Max? |
+| she names her own house, which belongs to her | spending  | What's your biggest extravagance?                 |
+| they grew up together and are only friends  | Max       | What's the truth about your relationship with Max? |
 
 > 🗡️ Two questions can share a topic and still be different: _How much pocket money do you get?_ and _When will you have access to your fortune?_ are both about money, but one asks for a **sum** and the other for a **date**. The shape of the answer separates them.
 
 ## 📖 The words of the lesson
 
-Five of them are given with their definition in the book; four more come with the subject.
+Five of them come with their definition in the interview activity itself; the four others are on the book's own vocabulary list for this lesson.
 
 | Word                | Meaning                                                       | In a sentence                                            |
 | ------------------- | ------------------------------------------------------------- | -------------------------------------------------------- |

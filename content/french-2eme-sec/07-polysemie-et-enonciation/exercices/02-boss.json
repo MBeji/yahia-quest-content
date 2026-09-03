@@ -9,17 +9,17 @@
     {
       "prompt": "Deux élèves discutent de l'adjectif « large ». L'un affirme qu'il a quatre synonymes, l'autre qu'il a quatre sens. Qui a raison ?",
       "options": [
-        { "id": "a", "text": "celui des synonymes : les sens d'un mot ne se comptent jamais" },
+        { "id": "a", "text": "celui des synonymes : on compte les synonymes d'un mot, pas ses sens" },
         { "id": "b", "text": "les deux : il a quatre sens, et un synonyme propre à chacun d'eux" },
-        { "id": "c", "text": "celui des sens : un adjectif n'a jamais de synonyme véritable" },
+        { "id": "c", "text": "celui des sens : ces quatre adjectifs sont des définitions, pas des synonymes" },
         { "id": "d", "text": "ni l'un ni l'autre : « large » n'a qu'un sens et plusieurs emplois" }
       ],
       "correctOption": "b",
-      "explanation": "Les deux comptes se recouvrent parce qu'ils comptent la même chose vue de deux côtés : « large » a quatre sens — c'est sa polysémie, et l'ensemble de ces sens forme son champ sémantique —, et chacun de ces sens appelle un synonyme différent, tolérant, épanoui, généreux, ample. ✓ Le piège courant est de croire que compter les synonymes revient à compter les mots interchangeables : ces quatre-là ne le sont pas entre eux, chacun ne vaut que pour l'emploi auquel il correspond.",
+      "explanation": "Les deux comptes se recouvrent parce qu'ils comptent la même chose vue de deux côtés : « large » a quatre sens — c'est sa polysémie, et l'ensemble de ces sens forme son champ sémantique —, et chacun de ces sens appelle un synonyme différent, tolérant, épanoui, généreux, ample. ✓ Le piège courant est de croire que compter les synonymes revient à compter les mots interchangeables : ces quatre-là ne le sont pas entre eux, chacun ne vaut que pour l'emploi auquel il correspond. Ce sont bien des synonymes, non des définitions : chacun peut prendre la place de « large » dans son énoncé.",
       "difficulty": 2
     },
     {
-      "prompt": "Deux messages sont ambigus. Dans « Il a laissé une note sur la table », l'ambiguïté vient du mot « note » ; dans « Je reviens ici dans deux heures », elle vient d'ailleurs. D'où vient-elle ?",
+      "prompt": "Deux messages sont ambigus. Dans « Le directeur s'est montré large », l'ambiguïté vient du mot « large », qui vaut ici tolérant ou généreux ; dans « Je reviens ici dans deux heures », elle vient d'ailleurs. D'où vient-elle ?",
       "options": [
         { "id": "a", "text": "du registre familier employé par l'auteur du message" },
         { "id": "b", "text": "de la polysémie du mot « heures », qui a plusieurs sens" },
@@ -31,15 +31,15 @@
       "difficulty": 2
     },
     {
-      "prompt": "Un communiqué reste affiché tout un mois sur la porte d'une association : « La distribution reprendra demain, ici même. » Que faut-il y corriger ?",
+      "prompt": "Un animateur s'adresse en direct aux téléspectateurs pour les inciter à donner en faveur de sinistrés. Ces quatre énoncés appellent tous au don : lequel est cohérent avec cette situation d'énonciation-là ?",
       "options": [
-        { "id": "a", "text": "« demain » et « ici », qui se comptent depuis le moment et le lieu de la rédaction" },
-        { "id": "b", "text": "« demain » seulement, car le lieu d'un communiqué se comprend toujours de lui-même" },
-        { "id": "c", "text": "« ici » seulement, car la date d'affichage se retrouve toujours par le calendrier" },
-        { "id": "d", "text": "rien du tout, car un communiqué affiché fournit toujours sa propre situation d'énonciation" }
+        { "id": "a", "text": "« Vous qui nous regardez, appelez le numéro affiché sur votre écran. »" },
+        { "id": "b", "text": "« Cher ami, quand tu liras ces lignes, j'aurai déjà envoyé le mien. »" },
+        { "id": "c", "text": "« Déposez vos dons au bureau qui se trouve en face de l'ascenseur. »" },
+        { "id": "d", "text": "« Tiens, prends mon téléphone et appelle toi-même : je viens de le faire. »" }
       ],
       "correctOption": "a",
-      "explanation": "Un message destiné à être lu plus tard, ou ailleurs, ne doit contenir que des repères fixes. Or « demain » se compte depuis le jour où l'on écrit, et « ici » depuis l'endroit où l'on se trouve : le lecteur du trentième jour ne peut retrouver ni l'un ni l'autre. Il fallait écrire une date et une adresse. ✓ Le piège courant est de ne corriger que le temps, parce que l'affiche semble donner son lieu d'elle-même : « ici » désignerait la porte, mais un communiqué se recopie, se photographie et se transmet — rien ne garantit qu'il soit lu là où il a été écrit.",
+      "explanation": "Un énoncé cohérent avec une situation d'énonciation doit s'accorder à ses quatre données à la fois. Ici le locuteur parle à distance, à des gens qui le regardent au moment même où il parle : « vous qui nous regardez » désigne ces destinataires-là, et « votre écran » le canal par lequel ils le reçoivent. ✓ Le piège courant est de retenir n'importe quel appel au don : « quand tu liras ces lignes » suppose un lecteur et un décalage de temps, donc une lettre ; le bureau en face de l'ascenseur suppose un écrit affiché dans le bâtiment où l'on se trouve déjà ; et prêter son téléphone suppose un interlocuteur présent, à portée de main.",
       "difficulty": 3
     },
     {
@@ -55,12 +55,12 @@
       "difficulty": 3
     },
     {
-      "prompt": "Un texte soutient qu'il faut continuer d'aider les pays d'Afrique et concède que l'Asie montre aujourd'hui de grands besoins. Quelle est la thèse adverse ?",
+      "prompt": "Un texte demande de ne pas oublier l'Afrique quand l'aide part massivement vers l'Asie ; en terminant, il admet pourtant un argument de son adversaire. Quelle est la thèse adverse ?",
       "options": [
-        { "id": "a", "text": "qu'aucune aide n'est efficace, où qu'on la porte" },
-        { "id": "b", "text": "qu'il faut continuer d'aider l'Afrique malgré tout" },
+        { "id": "a", "text": "que l'aide humanitaire produit peu d'effets durables" },
+        { "id": "b", "text": "qu'il faut continuer d'aider l'Afrique sans faiblir" },
         { "id": "c", "text": "qu'il faut désormais réserver l'aide à la seule Asie" },
-        { "id": "d", "text": "que l'Asie et l'Afrique ont exactement les mêmes besoins" }
+        { "id": "d", "text": "que l'Asie et l'Afrique ont les mêmes besoins" }
       ],
       "correctOption": "c",
       "explanation": "La thèse adverse est celle contre laquelle le locuteur écrit : puisqu'il défend le maintien de l'aide à l'Afrique, son adversaire est celui qui voudrait la reporter tout entière sur l'Asie. Ce qu'il lui concède — les grands besoins de l'Asie — est un argument de cette thèse, et non la thèse elle-même. ✓ Le piège courant est de prendre l'argument concédé pour la thèse adverse : accorder que l'Asie souffre ne revient pas à dire qu'il faut cesser d'aider ailleurs, et c'est justement l'écart entre les deux qui rend la concession possible.",
