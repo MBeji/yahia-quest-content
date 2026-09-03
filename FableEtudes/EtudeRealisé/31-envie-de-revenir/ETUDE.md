@@ -618,11 +618,61 @@ dont un argument contient lui-même une parenthèse, donc elle en tronquait le t
 manquer une propriété interdite. Le test exige désormais d'avoir trouvé au moins autant d'appels
 que d'événements câblés : un balayage qui ne trouve rien ne peut plus passer à vide.
 
+### 2026-09-03 (suite) — les deux stop-points tranchés, arena#956
+
+Les deux points que l'exécution avait laissés ouverts sont revenus à l'arbitrage le jour même
+et sont en production.
+
+**Le rachat de série est borné à 2 jours manqués.** Le lot 3 avait remonté l'écart plutôt que
+de le trancher seul, parce que la valeur du rachat appartient à A16 de é09. Le raisonnement de
+l'arbitrage tient en une ligne : **resserrer la fenêtre resserre G-4 sans changer un prix**.
+A16 constate que G-4 (shields ≤ 20 % des jours manqués) échoue à 38 % parce que le shield à
+15 pièces est bon marché ; borner la fenêtre agit sur le même garde-fou sans rien inscrire au
+registre §3.9, donc sans rien changer à ce que é09 mesure. La question du PRIX reste entière
+et reste à A16. Détail qui n'était pas prévu : une `last_active_date` **absente** ferme
+désormais la fenêtre — elle l'ouvrait, alors que sans date rien ne prouve qu'on est dedans, et
+on ne devine pas une date pour autoriser une dépense de pièces.
+
+**Les trois autres événements de Q-2 sont semés.** Le stop-point du lot 8 n'autorisait que le
+pilote ; sans admin UI, chacun demandait une migration, et après le 30 septembre le produit
+n'aurait plus rien eu de daté — le constat n° 9 serait revenu tout seul en trois semaines.
+⭐ **Aucun code n'a bougé pour les faire vivre** : `get_active_event`, `claim_event_badge` et
+la bannière lisent la table. C'était l'intérêt de la table, et c'est la première fois qu'il se
+vérifie.
+⚠️ **La date du Ramadan ne s'écrit pas au jour près** : son début civil dépend de l'observation
+lunaire (1448 attendu vers le 8 février 2027, ± 2 jours). Deux mauvaises réponses se
+présentaient — l'écrire comme un fait, ou étaler la fenêtre sur trente jours, ce qui contredit
+R-21. La quinzaine retenue est **au milieu** du mois probable : même si le début glisse, elle
+reste dedans. L'assertion garde la **marge**, pas la date.
+
+**7. Un défaut que le test écrit pour l'occasion a fait tomber — QUATRE badges rendaient le
+glyphe passe-partout.** `BadgeMedal` fait `GLYPHS[iconName] || Award` : un nom inconnu rend une
+médaille correcte, avec le glyphe générique. La conduite est bonne, le SILENCE est le défaut —
+la même classe que R-13 (« un badge sans règle ») et que `auth-refusals`. Trois venaient du
+tout premier seed en minuscules (`'flame'`, `'swords'`, `'zap'`), que le seed plus riche du
+même jour n'a jamais corrigés parce qu'il porte `ON CONFLICT (code) DO NOTHING` : quatre mois
+de flammes invisibles. Les deux autres — `league_podium` (`'Trophy'`) et `event_rentree`
+(`'Sparkles'`, semé par le lot 8 six jours plus tôt) — étaient simplement absents de la carte.
+Corrigé là où chaque moitié doit l'être : la carte apprend les glyphes, la base est normalisée
+par UPDATE. **Pas** en réécrivant le seed de mai (appliqué en prod, suivi par version et non
+par contenu — le réécrire ferait diverger une base vierge de la prod), **pas** en rendant la
+carte insensible à la casse (ce serait ouvrir la porte à n'importe quelle graphie).
+
 ### Ce qui reste, et qui n'est pas du code
 
 - **Relever la CURR en prod.** La scorecard STATUS §1bis attend un CHIFFRE DATÉ, pas un
   instrument. Il sortira `n = 0` tant que la ligne 1 (« zéro canal d'acquisition ») tient —
   c'est une lecture, pas un échec, et c'était le risque RISK-1 assumé dès le §1.4.
-- **Déplacer ce dossier en `EtudeRealisé/`** — la PR est mergée, le geste reste à faire.
+  **Où** : `/admin/engagement`, avec un compte dont le profil porte `role = 'admin'` (la porte
+  autoritaire est SQL, `admin_engagement_overview()` gardée par `is_admin()`). La ligne à
+  recopier est le bloc CURR — 8 semaines ISO, fuseau Tunis : parmi les actifs de la semaine N,
+  la part encore active en N+1.
+  ⚠️ **Une session d'agent ne peut pas aller la lire** : le proxy réseau des sessions bloque le
+  domaine de production. **Proposé et non tranché au 2026-09-03** : un workflow en lecture
+  seule (`PROD_SUPABASE_DB_URL`, admin par `request.jwt.claims` comme les suites pgTAP)
+  publiant le tableau agrégé — sans PII par construction — dans le résumé de son run chaque
+  semaine. C'est le barreau « **supprimer le besoin** » de `zero-intervention.md` : la
+  scorecard se relirait sans qu'un humain ouvre un écran.
+- ~~**Déplacer ce dossier en `EtudeRealisé/`**~~ — fait le 2026-09-03 (privé#329).
 - **Les quatre écrans qui restent différés** (§2.3) le restent : passe de saison, coffres,
   graphe d'amis, A/B testing — gated sur les mesures du lot 1 et sur de vrais utilisateurs.
