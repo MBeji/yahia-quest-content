@@ -842,6 +842,42 @@ la ligne ajoutée. Diff attendu : **2 lignes par question touchée**, rien d'aut
 fois plus gros est le symptôme d'une réécriture complète — on repart du fichier d'origine et
 on repatche, on ne « reformate » pas après coup.
 
+### Ajouter ou retaguer une question : l'ordre d'émission décide de l'UUID
+
+L'identité d'une question est `uuidV5("<sujet>/<chapitre>/<exercice>/q<index>")`
+(`src/shared/content/sql-builder.ts`). La `difficulty` **n'est pas** dans cette chaîne — mais
+l'émission trie les questions **par difficulté croissante, puis par ordre d'écriture**, et c'est
+l'index **après tri** qui entre dans l'UUID :
+
+```js
+questions.map((q, i) => ({ q, i }))
+         .sort((a, b) => (a.q.difficulty ?? 2) - (b.q.difficulty ?? 2) || a.i - b.i)
+         .forEach((q, i) => questionId(subjectId, chapterSlug, slug, i + 1))
+```
+
+Trois conséquences, dans l'ordre où elles mordent :
+
+1. **Retaguer une `difficulty` déplace l'UUID** — celui de la question retaguée et celui de toutes
+   celles qu'elle dépasse ou laisse passer. L'historique de l'élève sur ces questions est perdu.
+   La règle « on ne retague pas » tient donc, mais **pas pour la raison qu'on croit** : ce n'est
+   pas que la difficulté soit dans la clé, c'est qu'elle décide du rang qui l'est.
+2. **Ajouter un item « en fin de fichier » ne suffit pas.** L'ajout n'est sûr que si sa difficulté
+   est **≥ au maximum des difficultés déjà présentes**. Sinon il se glisse avant les items plus
+   durs et **décale leur index**. Vécu le 2026-09-03 sur
+   `english-bac/14-virtual-schools/03-revision.json` : un item `difficulty: 2` ajouté en fin d'un
+   fichier dont les deux premiers items sont en `3` a décalé ces deux-là de deux rangs. Sans
+   conséquence ce jour-là — le chapitre n'avait jamais été publié — mais le même geste sur un
+   chapitre en prod aurait effacé deux historiques.
+3. **Le contrôle qui tranche**, à faire avant de committer tout ajout ou retag : recalculer l'ordre
+   d'émission avant et après, et vérifier qu'**aucun item préexistant ne change de rang**. Comparer
+   à `origin/main`, jamais à `HEAD` — un instantané `[wip]` pris en cours de correction n'est pas
+   une base de référence (piège rencontré le même jour, qui a produit une fausse alerte).
+
+Si l'item mérite honnêtement une difficulté inférieure au maximum du fichier, **on ne le retague
+pas pour arranger le tri** : on le place dans un fichier où il est le plus difficile, ou on accepte
+le décalage en connaissance de cause sur un chapitre jamais publié.
+
+
 ---
 
 ## Rapport de campagne

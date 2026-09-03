@@ -1,0 +1,82 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec le calcul vectoriel",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Écrire plus simplement le vecteur 2u⃗ + 7u⃗ − 3u⃗.",
+      "options": [
+        { "id": "a", "text": "−8u⃗" },
+        { "id": "b", "text": "6u⃗" },
+        { "id": "c", "text": "9u⃗" },
+        { "id": "d", "text": "12u⃗" }
+      ],
+      "correctOption": "b",
+      "explanation": "Trois multiples d'un même vecteur s'additionnent en additionnant leurs coefficients : 2 + 7 − 3 = 6, donc 2u⃗ + 7u⃗ − 3u⃗ = 6u⃗ ✓. Le vecteur 12u⃗ additionne les trois coefficients sans tenir compte du signe moins, en calculant 2 + 7 + 3. Le vecteur 9u⃗ s'arrête à 2 + 7 et oublie le troisième terme. Le vecteur −8u⃗ étend le signe moins au terme 7u⃗ et calcule 2 − 7 − 3.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans une base (i⃗, j⃗), le vecteur u⃗ admet pour composantes (−2 ; 5). Quelles sont celles de 3u⃗ ?",
+      "options": [
+        { "id": "a", "text": "(−6 ; 5)" },
+        { "id": "b", "text": "(−6 ; 15)" },
+        { "id": "c", "text": "(−2 ; 15)" },
+        { "id": "d", "text": "(1 ; 8)" }
+      ],
+      "correctOption": "b",
+      "explanation": "Multiplier un vecteur par un réel revient à multiplier chacune de ses composantes par ce réel : 3 × (−2) = −6 et 3 × 5 = 15, donc 3u⃗ a pour composantes (−6 ; 15) ✓. Le couple (−6 ; 5) n'a multiplié que l'abscisse et le couple (−2 ; 15) que l'ordonnée, alors que le facteur agit sur les deux. Le couple (1 ; 8) ajoute 3 à chaque composante au lieu de multiplier par 3.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Calculer le déterminant des deux vecteurs u⃗(4 ; −1) et v⃗(2 ; 3), exprimés dans une même base.",
+      "options": [
+        { "id": "a", "text": "−14" },
+        { "id": "b", "text": "5" },
+        { "id": "c", "text": "10" },
+        { "id": "d", "text": "14" }
+      ],
+      "correctOption": "d",
+      "explanation": "Le déterminant de u⃗(x ; y) et v⃗(x' ; y') vaut xy' − x'y : ce sont les produits pris en croix. Ici 4 × 3 − 2 × (−1) = 12 + 2 = 14 ✓, un nombre non nul, donc les deux vecteurs ne sont pas colinéaires. La valeur 10 vient d'une erreur de signe sur le second produit, calculé comme 12 − 2. La valeur −14 échange les rôles des deux vecteurs et calcule x'y − xy'. La valeur 5 applique la formule de l'orthogonalité xx' + yy' = 4 × 2 + (−1) × 3, qui répond à une tout autre question.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le plan est rapporté à une base (i⃗, j⃗). Quel est le couple de composantes du vecteur j⃗ dans cette base ?",
+      "options": [
+        { "id": "a", "text": "(0 ; 0)" },
+        { "id": "b", "text": "(0 ; 1)" },
+        { "id": "c", "text": "(1 ; 0)" },
+        { "id": "d", "text": "(1 ; 1)" }
+      ],
+      "correctOption": "b",
+      "explanation": "Les deux vecteurs d'une base ne sont pas colinéaires : c'est ce qui garantit que tout vecteur du plan s'écrit d'une seule façon sous la forme xi⃗ + yj⃗, et le couple (x ; y) ainsi obtenu est précisément son couple de composantes. Appliqué à j⃗ lui-même, cela s'écrit j⃗ = 0 × i⃗ + 1 × j⃗ : ses composantes valent donc (0 ; 1) ✓. Le couple (1 ; 0) décrit i⃗, l'autre vecteur de la base — celui qui porte l'abscisse. Le couple (0 ; 0) ne convient qu'au vecteur nul, seul vecteur dont les deux composantes s'annulent. Enfin (1 ; 1) décrit la somme i⃗ + j⃗, et non j⃗ pris isolément.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une base orthonormée est fixée et le vecteur u⃗ a pour composantes (9 ; 12). Par quel réel faut-il multiplier u⃗ pour obtenir un vecteur unitaire ?",
+      "options": [
+        { "id": "a", "text": "1/225" },
+        { "id": "b", "text": "1/21" },
+        { "id": "c", "text": "1/15" },
+        { "id": "d", "text": "15" }
+      ],
+      "correctOption": "c",
+      "explanation": "La norme suit la règle ‖αu⃗‖ = |α| × ‖u⃗‖ : pour rendre u⃗ unitaire, il faut donc le diviser par sa propre norme. Dans une base orthonormée, ‖u⃗(9 ; 12)‖ = √(81 + 144) = √225 = 15, et le vecteur (1/15)u⃗ a bien pour norme (1/15) × 15 = 1 ✓ ; ses composantes sont (0,6 ; 0,8), la preuve qu'un vecteur unitaire n'a aucun besoin d'avoir 1 pour composante. Multiplier par 15 au lieu de diviser étire le vecteur au lieu de le ramener à la longueur 1. Le réel 1/225 divise par la somme des carrés sans passer par la racine. Quant à 1/21, il divise par 9 + 12 : c'est la somme des composantes, pas la longueur du vecteur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un triangle ABC, G désigne le centre de gravité et I le milieu de [BC]. Quelle égalité est vraie ?",
+      "options": [
+        { "id": "a", "text": "AG⃗ = (1/3)AI⃗" },
+        { "id": "b", "text": "AG⃗ = (2/3)AI⃗" },
+        { "id": "c", "text": "AG⃗ = (3/2)AI⃗" },
+        { "id": "d", "text": "AG⃗ = (2/3)IA⃗" }
+      ],
+      "correctOption": "b",
+      "explanation": "Le centre de gravité se situe aux deux tiers de chaque médiane à partir du sommet : sur la médiane [AI], cela s'écrit AG⃗ = (2/3)AI⃗ ✓, et place bien G entre A et I, plus près de I que de A. L'égalité AG⃗ = (1/3)AI⃗ place G au tiers du chemin seulement, donc du mauvais côté du milieu de la médiane. L'égalité AG⃗ = (3/2)AI⃗ envoie G au-delà du point I, à l'extérieur du triangle. Enfin AG⃗ = (2/3)IA⃗ garde le bon coefficient mais retourne le vecteur de la médiane : IA⃗ va de I vers A, si bien que cette écriture placerait G de l'autre côté de A, en dehors du triangle.",
+      "difficulty": 2
+    }
+  ]
+}

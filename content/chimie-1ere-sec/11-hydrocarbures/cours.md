@@ -53,6 +53,76 @@ Chaque fraction sort de la tour dans l'état que lui impose sa température d'é
 
 Le **bec Bunsen** permet de voir la différence à l'œil nu. Son pied amène le gaz ; sa cheminée est percée de deux trous par où entre l'air ; et la **virole**, percée elle aussi, tourne pour régler la quantité d'air admise.
 
+Cette partie du pied qui amène le gaz porte un nom : l'**ajutage**.
+
+::: figure Le même bec Bunsen réglé de deux façons : virole fermée, la flamme est jaune orangé et laisse une fumée noire de carbone ; virole ouverte, l'air entre par les trous et la flamme devient bleue
+<svg viewBox="0 0 380 320">
+<g fill="#334155">
+<ellipse cx="149" cy="46" rx="10" ry="7" opacity="0.85"/>
+<ellipse cx="157" cy="32" rx="9" ry="6.5" opacity="0.75"/>
+<ellipse cx="147" cy="20" rx="8" ry="6" opacity="0.65"/>
+<ellipse cx="154" cy="9" rx="6" ry="4.5" opacity="0.55"/>
+</g>
+<path d="M137 122 C131 96 138 74 150 58 C162 74 169 96 163 122 Z" fill="#f59e0b" stroke="#0f172a" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M143 122 C140 100 144 84 150 70 C156 84 160 100 157 122 Z" fill="#fcd34d"/>
+<path d="M292 122 C289 106 296 94 305 84 C314 94 321 106 318 122 Z" fill="#60a5fa" stroke="#0f172a" stroke-width="1.5" stroke-linejoin="round"/>
+<g fill="#e2e8f0" stroke="#0f172a" stroke-width="2">
+<rect x="88" y="247" width="36" height="10" rx="2"/>
+<rect x="243" y="247" width="36" height="10" rx="2"/>
+<rect x="137" y="122" width="26" height="116"/>
+<rect x="292" y="122" width="26" height="116"/>
+</g>
+<g fill="#e2e8f0" stroke="#0f172a" stroke-width="2" stroke-linejoin="round">
+<path d="M135 238 L165 238 L194 270 L106 270 Z"/>
+<path d="M290 238 L320 238 L349 270 L261 270 Z"/>
+</g>
+<g fill="#cbd5e1" stroke="#0f172a" stroke-width="2">
+<rect x="100" y="270" width="100" height="7" rx="2"/>
+<rect x="255" y="270" width="100" height="7" rx="2"/>
+<rect x="131" y="178" width="38" height="38" rx="2"/>
+<rect x="286" y="178" width="38" height="38" rx="2"/>
+</g>
+<g stroke="#0f172a" stroke-width="1.5">
+<circle cx="142" cy="197" r="4.5" fill="#64748b"/>
+<circle cx="158" cy="197" r="4.5" fill="#64748b"/>
+<circle cx="297" cy="197" r="4.5" fill="#ffffff"/>
+<circle cx="313" cy="197" r="4.5" fill="#ffffff"/>
+</g>
+<g stroke="#2563eb" stroke-width="2">
+<line x1="258" y1="197" x2="280" y2="197"/>
+<line x1="352" y1="197" x2="330" y2="197"/>
+</g>
+<g fill="#2563eb">
+<polygon points="286,197 277,193 277,201"/>
+<polygon points="324,197 333,193 333,201"/>
+</g>
+<g stroke="#94a3b8" stroke-width="1">
+<line x1="122" y1="30" x2="139" y2="30"/>
+<line x1="88" y1="148" x2="135" y2="148"/>
+<line x1="88" y1="197" x2="129" y2="197"/>
+<line x1="186" y1="206" x2="171" y2="206"/>
+<line x1="96" y1="268" x2="116" y2="262"/>
+</g>
+<g font-size="10" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">
+<text x="118" y="34" text-anchor="end">fumée noire</text>
+<text x="84" y="152" text-anchor="end">cheminée</text>
+<text x="84" y="192" text-anchor="end">trous d'entrée</text>
+<text x="84" y="204" text-anchor="end">d'air</text>
+<text x="190" y="210" text-anchor="start">virole</text>
+<text x="84" y="252" text-anchor="end">ajutage</text>
+<text x="92" y="272" text-anchor="end">pied</text>
+<text x="254" y="193" text-anchor="end" fill="#2563eb">air</text>
+<text x="356" y="193" text-anchor="start" fill="#2563eb">air</text>
+</g>
+<g text-anchor="middle" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">
+<text x="150" y="296" font-size="12.5" font-weight="700" fill="#0f172a">virole fermée</text>
+<text x="305" y="296" font-size="12.5" font-weight="700" fill="#0f172a">virole ouverte</text>
+<text x="150" y="311" font-size="10.5" fill="#475569">flamme jaune, fuligineuse</text>
+<text x="305" y="311" font-size="10.5" fill="#475569">flamme bleue</text>
+</g>
+</svg>
+:::
+
 **Virole fermée** — peu d'air. La flamme est jaune orangé et **fuligineuse** : elle dépose une fumée noire de carbone. Il n'y a pas assez de dioxygène pour aller au bout.
 
 > Hydrocarbure + dioxygène → carbone + eau

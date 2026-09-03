@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Restes, critères et premiers réflexes",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "On veut ranger 250 billes dans des sachets contenant chacun 17 billes. Combien de sachets peut-on remplir complètement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "14"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "17"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Répartir 250 billes par paquets de 17 revient à poser la division euclidienne de 250 par 17 : le nombre de sachets pleins est le quotient, et les billes en trop forment le reste. Comme 17 × 14 = 238 convient et que 17 × 15 = 255 dépasse déjà 250, on a 250 = 17 × 14 + 12 : on remplit donc 14 sachets ✓ et il reste 12 billes, trop peu pour en garnir un de plus. Le nombre 15 provient de l'arrondi de l'affichage 250 ÷ 17 = 14,705 : le quotient est la partie entière, jamais l'arrondi supérieur. Le nombre 12 compte les billes restantes et 17 le contenu d'un sachet.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi ces quatre entiers, un seul est divisible par 4. Lequel ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4726"
+        },
+        {
+          "id": "b",
+          "text": "6138"
+        },
+        {
+          "id": "c",
+          "text": "8354"
+        },
+        {
+          "id": "d",
+          "text": "9524"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme 100 = 4 × 25, un entier est divisible par 4 si et seulement si le nombre formé par ses deux derniers chiffres l'est. On regarde donc 26, 38, 54 et 24 : seul 24 = 4 × 6 convient, d'où 9524 = 4 × 2381 ✓. Les trois autres sont pairs, mais 26, 38 et 54 laissent tous le reste 2 dans la division par 4 : être divisible par 2 ne suffit pas pour l'être par 4.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Tous les entiers naturels dont le chiffre des unités est 8 laissent le même reste quand on les divise par 5. Lequel ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Tout entier s'écrit n = 10q + u, où u est son chiffre des unités. Comme 10q est un multiple de 5, l'entier et son chiffre des unités laissent le même reste dans la division par 5. Ici u vaut 8 et 8 = 5 × 1 + 3, donc le reste est 3 ✓, quel que soit l'entier choisi (ainsi 1238 = 5 × 247 + 3). Le nombre 1 est le quotient de 8 par 5, et non son reste. Le nombre 2 est ce qui manque pour atteindre le multiple de 5 suivant, soit 5 − 3 : le reste se compte à partir du multiple précédent, pas jusqu'au suivant. Enfin 0 supposerait l'entier divisible par 5, ce qui exigerait un chiffre des unités égal à 0 ou à 5.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est le reste de la division de 8251 par 9 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un entier et la somme de ses chiffres laissent le même reste dans la division par 9. Ici cette somme vaut 8 + 2 + 5 + 1 = 16, puis 16 = 9 × 1 + 7 : le reste cherché vaut 7 ✓ (on vérifie 8251 = 9 × 916 + 7). Le nombre 1 est le chiffre des unités : il décide du critère de 2 et de celui de 5, jamais de celui de 9. Le nombre 8 vient d'un oubli du chiffre de tête dans l'addition (2 + 5 + 1 = 8). Enfin 2 est le complément 9 − 7 : le critère livre directement le reste, on ne le retranche pas de 9.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un entier naturel n divise à la fois 18 et 30. Quelle est la plus grande valeur possible de n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "90"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La plus grande valeur possible est le PGCD de 18 et de 30. On décompose : 18 = 2 × 3² et 30 = 2 × 3 × 5. En prenant les facteurs communs au plus petit exposant, on obtient 2 × 3 = 6 ✓, et 6 divise bien 18 et 30. Le nombre 90 est leur PPCM : c'est un multiple commun et non un diviseur commun, et il ne divise ni 18 ni 30. Le nombre 12 est la différence 30 − 18, qui ne divise aucun des deux. Enfin 2 est bien un diviseur commun, mais ce n'est pas le plus grand.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Deux feux clignotent, l'un toutes les 12 secondes, l'autre toutes les 18 secondes. Ils clignotent ensemble à l'instant initial. Au bout de combien de temps clignoteront-ils de nouveau ensemble ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 secondes"
+        },
+        {
+          "id": "b",
+          "text": "30 secondes"
+        },
+        {
+          "id": "c",
+          "text": "36 secondes"
+        },
+        {
+          "id": "d",
+          "text": "216 secondes"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'instant cherché est un multiple commun de 12 et de 18, et le premier d'entre eux est leur PPCM. On décompose : 12 = 2² × 3 et 18 = 2 × 3². En prenant tous les facteurs au plus grand exposant, le PPCM vaut 2² × 3² = 36, donc les deux feux se retrouvent au bout de 36 secondes ✓ (en effet 36 = 12 × 3 = 18 × 2). Le nombre 6 est leur PGCD, qui n'est pas un instant de clignotement commun. Le nombre 216 est le produit 12 × 18 : c'est bien un multiple commun, mais pas le plus petit. Enfin 30 est la somme 12 + 18, qui n'a aucune raison d'être un multiple commun.",
+      "difficulty": 2
+    }
+  ]
+}

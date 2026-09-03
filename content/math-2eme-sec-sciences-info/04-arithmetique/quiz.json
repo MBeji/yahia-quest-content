@@ -1,0 +1,65 @@
+{
+  "title": "Test de compréhension ⭐ : Arithmétique",
+  "questions": [
+    {
+      "prompt": "La calculatrice affiche 358 ÷ 15 = 23,866666. Quel est le reste de la division euclidienne de 358 par 15 ?",
+      "options": [
+        { "id": "a", "text": "13" },
+        { "id": "b", "text": "23" },
+        { "id": "c", "text": "28" },
+        { "id": "d", "text": "8" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le quotient est la partie entière de l'affichage, soit 23 ; le reste s'obtient ensuite par soustraction : 358 − 15 × 23 = 358 − 345 = 13 ✓, et l'on a bien 0 ≤ 13 < 15. Prendre 8 revient à lire la première décimale affichée comme s'il s'agissait du reste, alors que ces décimales valent le rapport du reste au diviseur, ici 13/15 = 0,8666… Le nombre 28 provient d'une division non achevée (358 − 15 × 22 = 28) : un reste doit rester inférieur au diviseur 15, il faut donc poursuivre. Quant à 23, c'est le quotient et non le reste.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Nous sommes un jeudi. Quel jour de la semaine serons-nous dans 234 jours ?",
+      "options": [
+        { "id": "a", "text": "jeudi" },
+        { "id": "b", "text": "vendredi" },
+        { "id": "c", "text": "samedi" },
+        { "id": "d", "text": "dimanche" }
+      ],
+      "correctOption": "d",
+      "explanation": "Les jours se répètent de 7 en 7 : seul le reste de la division de 234 par 7 compte. Or 234 = 7 × 33 + 3, donc on avance de 3 jours à partir du jeudi, ce qui donne dimanche ✓. Rester au jeudi revient à croire que 234 est un multiple de 7. Le vendredi correspond à un décalage de 1 jour, c'est-à-dire à 232 jours, et le samedi à un décalage de 2 jours, c'est-à-dire à 233 jours.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans l'écriture 5a73, la lettre a désigne le chiffre des centaines d'un entier à quatre chiffres. Pour quelle valeur de a cet entier est-il divisible par 9 ?",
+      "options": [
+        { "id": "a", "text": "0" },
+        { "id": "b", "text": "3" },
+        { "id": "c", "text": "6" },
+        { "id": "d", "text": "9" }
+      ],
+      "correctOption": "b",
+      "explanation": "Un entier est divisible par 9 si et seulement si la somme de ses chiffres l'est. Ici cette somme vaut 5 + a + 7 + 3 = 15 + a, comprise entre 15 et 24 puisque a est un chiffre : le seul multiple de 9 possible est 18, donc a vaut 3 ✓ (on vérifie 5373 = 9 × 597). Le chiffre 0 suppose que 15 convient déjà, ce qui trahit une erreur d'addition. Le chiffre 6 donne la somme 21, multiple de 3 mais pas de 9 : c'est la confusion classique entre les deux critères. Enfin le chiffre 9 traduit l'idée fausse qu'il faudrait un 9 dans l'écriture, alors que la somme vaudrait alors 24.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sans poser l'opération, quel est le reste de la division de 3856 par 11 ?",
+      "options": [
+        { "id": "a", "text": "0" },
+        { "id": "b", "text": "4" },
+        { "id": "c", "text": "5" },
+        { "id": "d", "text": "6" }
+      ],
+      "correctOption": "d",
+      "explanation": "On numérote les chiffres de droite à gauche : les rangs impairs portent 6 et 8, les rangs pairs portent 5 et 3. La somme alternée vaut donc d = 14 − 8 = 6, et comme 0 ≤ 6 < 11, c'est le reste cherché ✓ (on vérifie 3856 = 11 × 350 + 6). Conclure 0 revient à appliquer à 11 le critère de 9 : la somme des chiffres vaut 22, qui est bien un multiple de 11, mais cette somme ne dit rien de la divisibilité par 11. Le nombre 4 est le reste de 3856 dans la division par 9, pas par 11. Le nombre 5 vient d'une numérotation des rangs prise de gauche à droite : elle donne d = 8 − 14 = −6, puis −6 + 11 = 5, alors que le critère se lit toujours à partir du chiffre des unités.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la décomposition de 396 en produit de facteurs premiers ?",
+      "options": [
+        { "id": "a", "text": "2 × 3² × 22" },
+        { "id": "b", "text": "2² × 3² × 11" },
+        { "id": "c", "text": "2² × 99" },
+        { "id": "d", "text": "2³ × 3² × 11" }
+      ],
+      "correctOption": "b",
+      "explanation": "On décompose pas à pas : 396 = 4 × 99 = 2² × 9 × 11 = 2² × 3² × 11 ✓, et chacun des facteurs 2, 3 et 11 est bien premier. Les écritures 2² × 99 et 2 × 3² × 22 donnent elles aussi 396, mais 99 = 9 × 11 et 22 = 2 × 11 ne sont pas premiers : la décomposition n'y est pas achevée. Quant à 2³ × 3² × 11, elle vaut 792 et non 396, l'exposant du facteur 2 y étant trop grand.",
+      "difficulty": 2
+    }
+  ]
+}

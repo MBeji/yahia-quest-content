@@ -1,0 +1,82 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Chiffres inconnus, cycles et restes imposés",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Le chiffre des unités du nombre 8291a est inconnu. Sachant que ce nombre à cinq chiffres est divisible par 11, combien vaut ce chiffre ?",
+      "options": [
+        { "id": "a", "text": "0" },
+        { "id": "b", "text": "2" },
+        { "id": "c", "text": "5" },
+        { "id": "d", "text": "8" }
+      ],
+      "correctOption": "d",
+      "explanation": "On numérote les chiffres de droite à gauche : les rangs impairs portent le chiffre cherché a, puis 9 et 8 ; les rangs pairs portent 1 et 2. La somme alternée vaut donc d = (17 + a) − 3 = a + 14, comprise entre 14 et 23 puisque a est un chiffre : le seul multiple de 11 possible est 22, d'où a = 8 ✓ et l'entier 82918 = 11 × 7538. Le chiffre 0 vient de l'idée qu'il faudrait annuler la somme alternée : la condition est qu'elle soit un multiple de 11, et ici a + 14 ne peut pas être nul. Le chiffre 2 est celui qu'imposerait le critère de 9 appliqué à tort à 11 : la somme de tous les chiffres vaudrait 22, mais 82912 laisse le reste 5 dans la division par 11. Le chiffre 5 correspond à un oubli du 8 de tête dans la somme des rangs impairs.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est le chiffre des unités de 3²⁰²⁶ ?",
+      "options": [
+        { "id": "a", "text": "1" },
+        { "id": "b", "text": "3" },
+        { "id": "c", "text": "7" },
+        { "id": "d", "text": "9" }
+      ],
+      "correctOption": "d",
+      "explanation": "Le chiffre des unités des puissances de 3 se répète de 4 en 4 : 3, 9, 7, 1, puis de nouveau 3, 9, 7, 1. Il ne dépend donc que du reste de l'exposant dans la division par 4. Or 2026 = 4 × 506 + 2 : le reste vaut 2, et le chiffre des unités de 3²⁰²⁶ est celui de 3², c'est-à-dire 9 ✓. Le chiffre 1 correspondrait à un reste nul, donc à un exposant multiple de 4 ; le chiffre 3 à un reste de 1 et le chiffre 7 à un reste de 3. Le piège courant est de conclure sur l'exposant lui-même : seul son reste par 4 compte.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "En divisant 2005 par un entier naturel n, on obtient 10 pour reste ; en divisant 5002 par ce même entier n, on obtient 32 pour reste. Que vaut n ?",
+      "options": [
+        { "id": "a", "text": "5" },
+        { "id": "b", "text": "7" },
+        { "id": "c", "text": "35" },
+        { "id": "d", "text": "70" }
+      ],
+      "correctOption": "c",
+      "explanation": "Un reste imposé se transforme en divisibilité exacte : n divise 2005 − 10 = 1995 et n divise 5002 − 32 = 4970. Or 1995 = 3 × 5 × 7 × 19 et 4970 = 2 × 5 × 7 × 71, donc leur PGCD vaut 5 × 7 = 35 et les diviseurs communs sont 1, 5, 7 et 35. Comme un reste est toujours inférieur au diviseur, on doit avoir n supérieur à 32 : seul 35 convient ✓, et l'on vérifie 2005 = 35 × 57 + 10 puis 5002 = 35 × 142 + 32. Le piège courant est d'oublier cette contrainte : 5 et 7 divisent bien 1995 et 4970, mais une division par 5 ou par 7 ne peut jamais laisser 10 ou 32 pour reste. Enfin 70 ne divise pas 1995, qui est impair.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit n un entier naturel non nul. On pose x = 7n + 4 et y = 3n − 2. Quel que soit n, tout diviseur commun de x et de y divise un même entier, indépendant de n. Lequel ?",
+      "options": [
+        { "id": "a", "text": "2" },
+        { "id": "b", "text": "10" },
+        { "id": "c", "text": "26" },
+        { "id": "d", "text": "34" }
+      ],
+      "correctOption": "c",
+      "explanation": "Un diviseur commun de x et de y divise toute combinaison de la forme px − qy. On choisit les coefficients qui font disparaître n : 3x − 7y = 3(7n + 4) − 7(3n − 2) = 21n + 12 − 21n + 14 = 26 ✓, quel que soit n. Le nombre 34 provient de la combinaison 7x − 3y, où les deux multiplicateurs ont été échangés : elle vaut 40n + 34 et dépend encore de n, elle ne donne donc aucun entier fixe. Les nombres 10 et 2 se lisent sur la somme x + y = 10n + 2, qui dépend elle aussi de n. Le piège courant est de croire qu'une combinaison quelconque suffit : seule celle qui élimine n conclut.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit n un entier naturel. Quels sont les restes possibles de la division de n² par 5 ?",
+      "options": [
+        { "id": "a", "text": "0 et 1" },
+        { "id": "b", "text": "0, 1 et 4" },
+        { "id": "c", "text": "0, 1, 2, 3 et 4" },
+        { "id": "d", "text": "1 et 4" }
+      ],
+      "correctOption": "b",
+      "explanation": "Tout entier s'écrit sous l'une des cinq formes 5k, 5k + 1, 5k + 2, 5k + 3 ou 5k + 4. On élève au carré et on isole un multiple de 5 : (5k)² = 5 × 5k² laisse le reste 0 ; (5k + 1)² = 25k² + 10k + 1 = 5(5k² + 2k) + 1 laisse le reste 1 ; (5k + 2)² = 25k² + 20k + 4 = 5(5k² + 4k) + 4 laisse le reste 4 ; (5k + 3)² = 25k² + 30k + 9 = 5(5k² + 6k + 1) + 4 laisse encore 4 ; (5k + 4)² = 25k² + 40k + 16 = 5(5k² + 8k + 3) + 1 laisse encore 1. Les seuls restes possibles sont donc 0, 1 et 4 ✓, comme le confirment 2² = 4, 3² = 9 = 5 + 4, 4² = 16 = 15 + 1 et 6² = 36 = 35 + 1 : un carré ne laisse jamais 2 ni 3 comme reste dans la division par 5. La liste 0 et 1 est celle des restes de n² par 3, transportée telle quelle sans refaire les cas. La liste complète 0, 1, 2, 3 et 4 oublie que l'élévation au carré restreint les possibilités, et écarter 0 oublie le cas des multiples de 5.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une caisse a la forme du pavé droit ci-dessous : 120 cm de long, 200 cm de large et 180 cm de haut. On veut la remplir entièrement de cubes identiques dont l'arête est un nombre entier de centimètres. Quel est le nombre minimal de cubes nécessaires ?\n<svg viewBox=\"0 0 360 250\"><g fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"><path d=\"M60 200 L132 154\"/><path d=\"M132 154 L272 154\"/><path d=\"M132 154 L132 44\"/></g><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"><path d=\"M60 200 L200 200 L200 90 L60 90 Z\"/><path d=\"M60 90 L132 44 L272 44 L200 90\"/><path d=\"M200 200 L272 154 L272 44\"/></g><g fill=\"none\" stroke=\"#b91c1c\" stroke-width=\"1.8\" stroke-linejoin=\"round\"><path d=\"M60 200 L84 200 L84 176 L60 176 Z\"/><path d=\"M84 176 L96 168 L96 192 L84 200\"/><path d=\"M60 176 L72 168 L96 168\"/></g><g font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\"><text x=\"130\" y=\"223\" text-anchor=\"middle\">120 cm</text><text x=\"52\" y=\"149\" text-anchor=\"end\">180 cm</text><text x=\"250\" y=\"195\" text-anchor=\"start\">200 cm</text></g><text x=\"86\" y=\"160\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#b91c1c\">arête a</text></svg>",
+      "options": [
+        { "id": "a", "text": "20" },
+        { "id": "b", "text": "540" },
+        { "id": "c", "text": "4 320" },
+        { "id": "d", "text": "4 320 000" }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour que les cubes remplissent exactement la caisse, leur arête doit diviser 120, 200 et 180 ; et pour qu'ils soient les moins nombreux possible, cette arête doit être la plus grande, c'est-à-dire le PGCD des trois dimensions. On décompose : 120 = 2³ × 3 × 5, 200 = 2³ × 5² et 180 = 2² × 3² × 5, d'où un PGCD de 2² × 5 = 20 cm. Il faut alors 6 cubes en longueur, 10 en largeur et 9 en hauteur, soit 6 × 10 × 9 = 540 cubes ✓. Le nombre 20 est l'arête du cube et non le nombre de cubes. Le nombre 4 320 correspond à une arête de 10 cm : c'est bien un diviseur commun, mais pas le plus grand, donc les cubes y sont plus nombreux. Enfin 4 320 000 est le volume de la caisse en cm³, c'est-à-dire le nombre de cubes d'arête 1 cm.",
+      "difficulty": 3
+    }
+  ]
+}
