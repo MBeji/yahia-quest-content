@@ -679,7 +679,21 @@ carte insensible à la casse (ce serait ouvrir la porte à n'importe quelle grap
   (`/admin/economie` avant elle), et c'est le constat n° 4 de cette étude — « neuf badges que
   rien ne décernait » — rejoué sur l'instrument censé la mesurer. Corrigé, et gardé par un test
   qui compare le routeur au pôle dans les deux sens.
-  **Reste proposé et non tranché** : un workflow en lecture seule qui publierait la CURR chaque
-  semaine — il a plus de valeur maintenant que la métrique n'est pas nulle.
+  ⭐ **Et le relevé est désormais AUTOMATIQUE** (arbitré et livré le 2026-09-03) :
+  `engagement-report.yml` le refait chaque lundi en lecture seule et tient une issue à jour.
+  C'est le barreau « supprimer le besoin » de `zero-intervention.md`, et le raisonnement mérite
+  d'être gardé : la ligne 2 n'est pas restée muette six semaines faute d'instrument — il
+  existait, il calculait juste, il s'affichait. Elle est restée muette faute d'un GESTE, et un
+  geste qui ne se fait pas ne se répare pas en le rappelant mieux.
+  ⚠️ La sortie retenue **ne touche pas la surface de sécurité**. `is_admin()` lit `auth.uid()`,
+  qu'une clé service_role ne peut pas fournir. Élargir le garde ou dupliquer la RPC étaient les
+  deux réflexes ; le workflow se connecte en propriétaire et pose la claim, comme les suites
+  pgTAP — aucune migration, aucun garde élargi. Vérifié sur une base locale reconstruite avant
+  d'être confié à un workflow qui vise la production, dans les DEUX sens : la requête rend le
+  JSON attendu, et sans profil admin elle sort en erreur au lieu de rendre un rapport vide.
+  ⚠️ Ce que la mise en forme garde, parce qu'un relevé automatique est un texte que quelqu'un
+  citera sans avoir ouvert la console : un `null` ne devient jamais `0 %`, aucun pourcentage ne
+  voyage sans son `n`, le cumul s'appelle personnes-semaines et jamais rétention, et la réserve
+  sur le petit `n` est dans le même bloc que le chiffre.
 - **Les quatre écrans qui restent différés** (§2.3) le restent : passe de saison, coffres,
   graphe d'amis, A/B testing — gated sur les mesures du lot 1 et sur de vrais utilisateurs.

@@ -322,9 +322,21 @@ son étude et dans les citations qu'on en fait.
       son URL. C'est la SECONDE fois : l'en-tête de ce fichier documente déjà le cas
       `/admin/economie`. Le constat de l'étude rejoué sur l'outil censé la mesurer. Un test
       compare désormais le routeur au pôle dans les deux sens.
-      ⚠️ **Reste proposé et non tranché** : un workflow en lecture seule publiant la CURR chaque
-      semaine (barreau « supprimer le besoin » de `zero-intervention.md`) — il a plus de valeur
-      maintenant que la métrique n'est pas nulle.
+      ✅ **Et le relevé ne se refera plus à la main** (arena, 2026-09-03, arbitré) :
+      `engagement-report.yml` relève la CURR chaque lundi en lecture seule et tient l'issue
+      `engagement-releve` à jour. C'est le barreau « **supprimer le besoin** » de
+      `zero-intervention.md` appliqué à la lettre : la ligne 2 est restée « jamais publiée »
+      six semaines non pas faute d'instrument, mais faute d'un GESTE humain qui ne se faisait
+      pas. Rappeler ce geste, c'était le dernier barreau ; le supprimer était le deuxième.
+      ⚠️ **La sortie retenue ne touche PAS la surface de sécurité.** La RPC est gardée par
+      `is_admin()`, qu'une clé service_role ne peut pas satisfaire (pas de `sub` dans son JWT).
+      Plutôt qu'élargir le garde ou dupliquer la RPC, le workflow se connecte en PROPRIÉTAIRE
+      et pose la claim — la technique des suites pgTAP d'ici. Aucune migration, aucun garde
+      élargi, aucune fonction neuve. L'admin est cherché en base, pas écrit en dur.
+      ⚠️ La mise en forme est **séparée** de la lecture, et c'est là que sont les assertions :
+      un `null` ne devient jamais `0 %`, aucun pourcentage ne voyage sans son `n`, le cumul
+      s'appelle personnes-semaines et jamais rétention, et la réserve sur le petit `n` voyage
+      dans le même bloc que le chiffre.
 
 ---
 
