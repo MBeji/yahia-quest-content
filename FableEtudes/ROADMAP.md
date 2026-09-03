@@ -268,7 +268,7 @@ son étude et dans les citations qu'on en fait.
       `award_duel_rewards` — second écrivain de `hero_class` — faisait échouer chaque
       récompense de duel après le passage aux codes. Les deux sont corrigés, et chacun a
       désormais son assertion.
-      Écrite et **validée le 2026-09-01** (`FableEtudes/31-envie-de-revenir/`, Q-1…Q-4
+      Écrite et **validée le 2026-09-01** (`FableEtudes/EtudeRealisé/31-envie-de-revenir/`, Q-1…Q-4
       arbitrées : opt-in inchangé · 4 événements dont Ramadan · classement hebdo par
       défaut · 30 pièces de bienvenue). Rallumer ce
       qui existe avant d'ajouter : mesure de rétention (le lot 1 publie enfin é26 KPI-4 —
@@ -549,6 +549,8 @@ auprès de Google — le paragraphe « vidéos YouTube » a désormais une page 
 | **22** parcours élève & progression       | 6 lots                                                     | arena#538 · #540 · #547 · #565 · #567 · #573     |
 | **28** stratégie de référence             | 3 lots                                                     | privé#155 · #156 · arena#726                     |
 | **29** mode IA « à la clé de la famille » | **5 lots** — porte, coffre, activation, la Forge, consoles | **arena#807** · #811 · #812 · #813               |
+| **30** tuteur déterministe                | périmètre 0bis · 1 · 2 · 3 · 3bis · 4                      | privé#241 · arena#856 → #860 · #910 · #911       |
+| **31** l'envie de revenir                 | **8 lots** — mesurer · rappeler · célébrer · rythmer       | **arena#949** · privé#324 · #328                 |
 
 **Chantiers de fondations livrés** (hors étude — ils n'ont pas de dossier `FableEtudes/`) :
 
