@@ -239,7 +239,9 @@ son étude et dans les citations qu'on en fait.
       le montre au parent), le digest hebdo enrichi opt-in (le push dominical est toujours le
       générique), et le comparatif de parcours seuillé (jamais construit).
 
-- [ ] **P6. é26 lots 1 et 2 — écrire la doctrine qu'on applique.**
+- [ ] **P6. é26 lots 1 et 2 — écrire la doctrine qu'on applique.** ✅ **Lot 1 livré le
+      2026-09-03** (arena#961 : `docs/doctrine-verticale.md`, ancrage AGENTS.md ; privé#333 :
+      fiche D-2 du `_TEMPLATE.md` et règle de création de l'index). **Reste le lot 2.**
       **Lot 1** : `docs/doctrine-verticale.md` (P-1…7, grille M0-M4, Definition of Excellence,
       règle d'arbitrage, doctrine IA-native) + ancrage canonique dans AGENTS.md + fiche D-2 dans
       `_TEMPLATE.md` + règle de création d'étude dans `FableEtudes/README.md`.
