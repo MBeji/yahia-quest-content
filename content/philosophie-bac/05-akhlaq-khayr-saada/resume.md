@@ -1,15 +1,14 @@
 # 📜 ملخّص: الأخلاق — الخير والسّعادة
 
-::: figure المبحث في صورة واحدة: سؤالان اثنان، وثلاثة معايير للفعل بينهما، ثمّ ثلاثة نقود تضرب أرضها
-<svg viewBox="0 0 360 172">
+::: figure المبحث في صورة واحدة: سؤالان اثنان، وثلاثة معايير للفعل بينهما، ثمّ نقدان — من داخل الأخلاق ومن خارجها
+<svg viewBox="0 0 360 178">
 <rect x="196" y="6" width="152" height="26" rx="6" fill="#fde68a" stroke="#0f172a" stroke-width="2"/>
 <rect x="12" y="6" width="152" height="26" rx="6" fill="#bbf7d0" stroke="#0f172a" stroke-width="2"/>
 <rect x="244" y="66" width="106" height="26" rx="5" fill="#bfdbfe" stroke="#0f172a" stroke-width="2"/>
 <rect x="128" y="66" width="106" height="26" rx="5" fill="#bfdbfe" stroke="#0f172a" stroke-width="2"/>
 <rect x="12" y="66" width="106" height="26" rx="5" fill="#bfdbfe" stroke="#0f172a" stroke-width="2"/>
-<rect x="244" y="128" width="106" height="30" rx="5" fill="#fca5a5" stroke="#0f172a" stroke-width="2"/>
-<rect x="128" y="128" width="106" height="30" rx="5" fill="#fca5a5" stroke="#0f172a" stroke-width="2"/>
-<rect x="12" y="128" width="106" height="30" rx="5" fill="#fca5a5" stroke="#0f172a" stroke-width="2"/>
+<rect x="184" y="126" width="166" height="46" rx="5" fill="#fca5a5" stroke="#0f172a" stroke-width="2"/>
+<rect x="12" y="126" width="166" height="46" rx="5" fill="#fca5a5" stroke="#0f172a" stroke-width="2"/>
 <g stroke="#0f172a" stroke-width="2" fill="none">
 <line x1="272" y1="32" x2="272" y2="50"/>
 <line x1="88" y1="32" x2="88" y2="50"/>
@@ -17,11 +16,12 @@
 <line x1="65" y1="50" x2="65" y2="66"/>
 <line x1="181" y1="50" x2="181" y2="66"/>
 <line x1="297" y1="50" x2="297" y2="66"/>
-</g>
-<g stroke="#0f172a" stroke-width="1.5" stroke-dasharray="4 3" fill="none">
-<line x1="65" y1="92" x2="65" y2="128"/>
-<line x1="181" y1="92" x2="181" y2="128"/>
-<line x1="297" y1="92" x2="297" y2="128"/>
+<line x1="65" y1="92" x2="65" y2="108"/>
+<line x1="181" y1="92" x2="181" y2="108"/>
+<line x1="297" y1="92" x2="297" y2="108"/>
+<line x1="95" y1="108" x2="267" y2="108"/>
+<line x1="267" y1="108" x2="267" y2="126"/>
+<line x1="95" y1="108" x2="95" y2="126"/>
 </g>
 <g font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">
 <text x="272" y="24">ما الخير؟</text>
@@ -31,12 +31,14 @@
 <text x="297" y="83">الفضيلة</text>
 <text x="181" y="83">الواجب</text>
 <text x="65" y="83">المنفعة</text>
-<text x="297" y="141">نيتشه</text>
-<text x="297" y="153">قيم من صنع القوّة</text>
-<text x="181" y="141">دوركايم</text>
-<text x="181" y="153">وجه ثانٍ: الرغبة</text>
-<text x="65" y="141">ماركس</text>
-<text x="65" y="153">شروط مادّيّة</text>
+</g>
+<g font-size="9" font-weight="700" fill="#0f172a" text-anchor="middle">
+<text x="267" y="142">نقد من داخلها: دوركايم</text>
+<text x="267" y="154">الإلزام ينقد المنفعة،</text>
+<text x="267" y="166">والمرغوبيّة تكشف حدّ الواجب</text>
+<text x="95" y="142">نقد من خارجها: نيتشه · ماركس</text>
+<text x="95" y="154">لا يناقشان الجواب</text>
+<text x="95" y="166">بل الأرض التي يقوم عليها</text>
 </g>
 </svg>
 :::
