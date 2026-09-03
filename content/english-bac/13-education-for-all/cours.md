@@ -38,6 +38,8 @@ Here are the eleven your book puts on the page.
 | **OPEC**   | Oil Producing and Exporting Countries                                |
 | **NOW**    | National Organization of Women                                       |
 
+> 🗡️ **These eleven expansions are the ones your book prints, and they are the ones to give back in an examination on this lesson.** One or two of the bodies word their own name a little differently on their own letterheads — a fund for nature and a club of oil producers among them — so do not be surprised to meet another version elsewhere. What is being taught here is the machine, not the paperwork: one letter, one word, in order.
+
 Four of them open on the same letter, and the letter therefore decides nothing: **W**HO, **W**FP, **W**TO and **W**WF all begin on *World*. It is the **second** letter that separates health from food, and trade from a fund. Read the letters one by one, in order, and the four come apart without difficulty.
 
 > ⚠️ An acronym is **not** the same thing as a shortened word. *Prof.* for *professor* is a word with its tail cut off; **WHO** is a whole name reduced to one letter for each of its words. And membership settles nothing: **UN**ESCO, **UN**ICEF and **UN**O belong to the United Nations, but WWF, OPEC and the IMF do not — nothing in the machine says a body must belong to anybody.
@@ -83,6 +85,8 @@ Then, and only then, the slices.
 
 **A quick check you can always run.** The slices of a pie are the parts of one whole, so their shares have to come to a hundred. Add these eight — 36.7, 20.8, 18.6, 8.7, 7.6, 2.8, 2.5, 2.3 — and you land on 100 exactly. If your eight figures come to 94, you have missed a slice or misread one.
 
+> ⚠️ **Run that check on the shares, and not on the head counts.** Every number of children in the right-hand column is printed rounded to the nearest tenth of a million, so adding those eight gives **115.3** and not the round 115 of the bottom line. Nothing has gone missing: that is the rounding showing, three tenths of a million spread over eight lines. It is the percentage column, and that one only, that has to come out at 100.
+
 > ⚠️ **The trap this graph sets, and it catches almost everybody.** The word in the title is **distribution**. A distribution says **where** something is, not **how bad** things are in each place. So the 2.3 % beside the industrialized countries does **not** mean that 2.3 % of their children are out of school. It means that **2.3 % of the world's out-of-school children live there**. To say what proportion of a region's own children are missing from class, you would need a second figure the graph never gives you: how many children that region holds altogether. A region with very few children can hold a small slice and still be doing badly; a region with a quarter of the world's children could hold a large slice and be doing well.
 
 **The two columns say the same thing twice, in two units.** 8.7 % of 115 million is 10.0 million, and that is why the two columns put the regions in exactly the same order. Which means you can fill in a missing box yourself: if Eastern and Southern Africa holds 21.4 million out of the 115 million, its share is 21.4 divided by 115, that is **18.6 %**. Copying 21.4 into the percentage column is the classic slip — a number of children and a share of a total are not the same kind of quantity, however alike the two figures look.
@@ -119,9 +123,11 @@ Below it the body of the page does the arithmetic in ordinary language: what a s
 
 ## 🕳️ Words printed unfinished
 
-One activity on this page prints the advertisement with holes in it: **the first letters of a word are given, and one dot is printed for every letter that has been left out.** You have to put the word back.
+One activity on this page prints the advertisement with holes in it: **the first letters of a word are given, and one dot is printed for every letter that has been left out.** You have to put the word back. A line built like the one on your book's page reads:
 
 > *For $225 a school can buy a recreation kit con……. toys, games and sports equipment.*
+
+That line is not the advertisement's own — it is made here on the model of the page, so that you can work the machine without the book open.
 
 Two things have to agree before you write anything in, and neither is enough on its own:
 
@@ -160,7 +166,7 @@ Look at what moved and what did not. The *not* has gone from the verb, because *
 
 **4. Either clause may come first.** _Unless we act, they will lose the year_ and _They will lose the year unless we act_ are the same sentence; when *unless* opens, a comma separates the halves, and when it comes second there is usually none.
 
-**5. Read it against a real case before you answer.** An *unless* sentence sets one condition and announces what happens when it is not met — and, by the same stroke, what happens when it **is**. *The coach leaves on Saturday unless twelve names are down by Friday* tells you two things at once: with eleven names the trip is off, and with twelve it happens.
+**5. Read it against a real case before you answer.** An *unless* sentence states one thing outright — what happens when the condition is **not** met. A reader then takes it to be naming the **only** exception there is, and so hears it as settling the favourable case as well. *The coach leaves on Saturday unless twelve names are down by Friday* is therefore taken to say two things at once: with eleven names the trip is off, and with twelve it happens. But that second half is how such a warning is **read**, not something the grammar spells out — which is why a question that turns on it will tell you that nothing else is in play.
 
 > 🗡️ **This is how you hypothesize in English.** The whole argument of this lesson is built out of these sentences: _Unless these children are enrolled, the region will lose a generation._ You are not describing what is; you are saying what will follow from a condition — and that is the shape every appeal on this subject takes.
 
