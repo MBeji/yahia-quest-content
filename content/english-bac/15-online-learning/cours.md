@@ -82,7 +82,7 @@ Test any further suggestion against that idea, and most of them fall at once:
 
 ## 🌍 Flexibility — the freedom to choose when and where
 
-The second half of the lesson brings in a different voice: **John Bears**, author of a guide to earning degrees by distance learning. His claim is about **flexibility**, and it is a strong one: distance study offers a degree of freedom a traditional programme cannot offer, because the learner may pursue his studies **whenever and wherever** he wishes.
+The second half of the lesson brings in a different voice: **John Bears**, author of a guide to earning degrees by distance learning. His claim is about **flexibility**, and it is a strong one: distance study offers a degree of freedom no traditional programme can, since it leaves the learner free to study **whenever and wherever** he chooses.
 
 Two words, two freedoms, and it is worth being exact about them:
 
@@ -97,7 +97,7 @@ They are not contradicting each other. **Flexibility is a claim about *when* and
 
 > ⚠️ So a pupil who answers *you are wrong, an online course takes just as much time* has not countered the claim about flexibility at all. He has answered a question nobody asked. To counter a claim you must first find out what it says.
 
-And this is where the drawback hides. The freedom is real — and a freedom is also the removal of something that used to push. Nobody keeps a distance learner to a timetable, which means nothing but the learner himself puts him at the desk on a wet Tuesday.
+And this is where the drawback hides. The freedom is real — and a freedom is also the removal of something that used to push. Nobody keeps a distance learner to a timetable, which means that nothing but the learner himself will put him at his desk on a wet Tuesday.
 
 | Benefits of studying at a distance | Drawbacks |
 | ---------------------------------- | --------- |
@@ -132,7 +132,7 @@ Three things to hold on to, and each of them is a mark thrown away in an examina
 
 **3. "Additional" means the sentence stands without it.** Take the fenced phrase out and what is left must still be a whole sentence: *John Bears argues that a learner may study when he likes.* It is. That test is how you check a doubtful comma.
 
-> ⚠️ **But additional never means useless, and this is the trap.** The phrase can be lifted out without breaking the grammar; it cannot be lifted out without changing what has been claimed. When one of the learners writes that online learning, *like all learning*, demands a commitment of time, the three words held between his commas are doing the real work of the sentence: they say that online learning is **no exception** — that it is being put in the same class as every other kind of learning, not singled out. Take them away and the claim about every other kind of learning has gone with them, and the sentence no longer answers anybody who thought this kind was special.
+> ⚠️ **But additional never means useless, and this is the trap.** The phrase can be lifted out without breaking the grammar; it cannot be lifted out without changing what has been claimed. When one of the learners writes about the hours an online course wants and fences three words inside his sentence — *like all learning* — those three words are doing the real work of it. They say that online learning is **no exception**: it is being put in the same class as every other kind of learning, not singled out. Take them away and the claim about every other kind of learning has gone with them, and the sentence no longer answers anybody who thought this kind was special.
 
 ### Job two — items on a list
 
