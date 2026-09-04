@@ -32,7 +32,7 @@ Coverage changes weekly; the programme map is stable but the _state_ is not. Rec
 ls content/                                   # every subject dir
 ls content/<subject>/ | grep -c '^[0-9]'      # chapter count per subject
 ls .claude/skills/ | grep '^prof-'            # professor overlay coverage
-ls .claude/skills/content-ecole-tn/references/programmes-officiels/programme/  # CNP transcriptions
+ls content/programmes-officiels/programme/  # CNP transcriptions
 ```
 
 Cross it with `references/programme-map.md` to produce the gap matrix: per grade × official

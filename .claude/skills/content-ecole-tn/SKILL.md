@@ -47,10 +47,10 @@ This skill only adds the school-specific rules.
 ## Official-program sources — precedence (consume the transcription; CNP = source of truth)
 
 The authoritative scope is the **national CNP program**. It is now **transcribed once** into a
-**persistence layer** (`references/programmes-officiels/programme/<gradeSlug>/<matière>.md`) by a
+**persistence layer** (`content/programmes-officiels/programme/<gradeSlug>/<matière>.md`) by a
 dedicated session, so generation **consumes that transcription instead of re-reading the scans**.
-Start with the index at [`references/programmes-officiels/`](references/programmes-officiels/) → its
-[`README.md`](references/programmes-officiels/README.md) (precedence policy, CNP-corpus location +
+Start with the index at [`content/programmes-officiels/`](content/programmes-officiels/) → its
+[`README.md`](content/programmes-officiels/README.md) (precedence policy, CNP-corpus location +
 `CATALOGUE.md`, subject-`id` convention).
 
 > **⭐ Combined official sources (every grade).** A CNP unit is **not** just the teacher guide: the
@@ -65,12 +65,12 @@ Start with the index at [`references/programmes-officiels/`](references/programm
 Precedence, for any grade+subject:
 
 1. **Programme transcription — READ FIRST** —
-   `references/programmes-officiels/programme/<gradeSlug>/<matière>.md`, if it exists: a faithful,
+   `content/programmes-officiels/programme/<gradeSlug>/<matière>.md`, if it exists: a faithful,
    structured transcription **combining the teacher guide (scope, محاور, progression, in/out-of-scope
    bornes) AND the manuel élève (lessons, examples, exercises, depth)**. **This is the scope + content
    source for generation.** Spec + work-list:
-   [`programme/README.md`](references/programmes-officiels/programme/README.md) ·
-   [`programme/_INDEX.md`](references/programmes-officiels/programme/_INDEX.md).
+   [`programme/README.md`](content/programmes-officiels/programme/README.md) ·
+   [`programme/_INDEX.md`](content/programmes-officiels/programme/_INDEX.md).
    ⛔ **Do NOT render→vision the CNP scans from the generation track** — scanning is owned by the
    persistence-layer session (it transcribes once; we consume, avoiding duplicate vision work). If the
    transcription for the (grade, subject) is **not yet produced**, the unit is **blocked on the
@@ -126,7 +126,7 @@ subject+grade):
 The switched subjects (math, physique, SVT, informatique) were learned in Arabic through 9ème; from
 1ère sec this skill authors them **natively in French, in the exact jargon of the official French
 documentation** — the CNP manuels élève captured by the L1 transcriptions
-(`references/programmes-officiels/programme/<gradeSlug>/`), which are the terminology reference.
+(`content/programmes-officiels/programme/<gradeSlug>/`), which are the terminology reference.
 **No translation apparatus of any kind**: no «lexique de transition» fr↔ar, no Arabic glosses at
 first use, no `NN-pont-linguistique` mission (the former "transition bridge" of
 `docs/lycee-architecture.md` §4 is withdrawn). A `fr` subject stays pure French (no code-switching
@@ -220,7 +220,7 @@ conventions. Exam-year grades (6ème/9ème/Bac) should reflect real exam (concou
 ## Then validate and stop
 
 `npm run content:check` → `npm run content:qa:strict` → `npm run content:audit` (program conformance &
-coverage vs the grade manifest under `references/programmes-officiels/manifest/` — flags missing
+coverage vs the grade manifest under `content/programmes-officiels/manifest/` — flags missing
 subjects/chapters, off-program chapters, and incomplete chapters; codify the chapter list there while
 reading the CNP guide) → report (files created, grade/subject, official-program coverage, anything
 flagged off-program, QA + audit results, and the build/apply/PR steps for the human). Do not build/apply

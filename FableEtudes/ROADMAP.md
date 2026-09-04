@@ -451,13 +451,41 @@ règle elle-même, qui est désormais opposable.
       Actions** fourni (Q-2 — s'il montre un dépassement, ce lot passe au **rang 0**), le récit des
       workflows déplacé dans `docs/agents/incidents-ci.md` sur les fichiers touchés (Q-3), et
       `programmes-officiels/` sorti du skill en **lot 5, après le lot 2** (Q-4). Quatre lots plus un
-      optionnel. ✅ **Sa moitié MOTEUR est livrée le 2026-09-04** (arena#970) : le garde dormant
-      `second-opinion` ne démarre plus un runner pour dire qu'il est éteint (il le faisait 71 fois
-      en 4,4 jours, en clonant l'historique complet), et `actions-census.mjs` rend le relevé
-      **rejouable** — sans quoi cette étude n'aurait jamais eu d'« après ». Elle a corrigé deux
-      chiffres de l'étude au passage, dont une cible qui n'était pas atteignable. **Reste la moitié
-      privée de L1** (fantômes + réveils d'automerge), qui attend la seule *valeur* du jeton.
-      Sur relevé : **167 runs `failure` à zéro job sur 800** au privé en six jours (les fantômes de
+      optionnel. ✅ **Les lots 1 (moteur), 2, 3a et 4 sont livrés le 2026-09-04** :
+      **arena#970** (L1 moteur — le garde dormant `second-opinion` ne démarre plus un runner pour
+      dire qu'il est éteint, il le faisait 71 fois en 4,4 jours en clonant l'historique complet ;
+      et `actions-census.mjs` rend le relevé **rejouable**, sans quoi cette étude n'aurait jamais
+      eu d'« après ») · **arena#971** (L2 moteur — un seul `harness:check` pour les deux dépôts,
+      et la borne des descriptions de skills mesure enfin : elle n'avait jamais lu que leur
+      première ligne, sur aucun des 48 skills) · **arena#974** (le mode corpus ne juge que le
+      corpus — défaut trouvé par la CI, les symlinks de la Content CI faisaient réclamer 225
+      fichiers de miroir ; plus L3a, le filet de dispatch qui constate avant de doubler les
+      checks requis) · **arena#975** (L4 — politique par familles, journal déménagé, AGENTS.md
+      de 250 à 214 lignes) · **privé#342** (L2 privé — le corpus entre dans le gate, `pin-check`
+      disparaît, et un défaut de l'auto-merge d'ici est corrigé au passage : une PR passée au
+      rouge une fois ne pouvait plus jamais merger sur ce commit).
+      ✅ **ÉTUDE LIVRÉE EN ENTIER le 2026-09-04.** La moitié privée de L1 a été livrée par la
+      voie de REPLI (privé#344 + arena#980) : Q-1 a été rouverte parce que le jeton n'est pas
+      venu, et parce que la règle « zéro intervention » place **supprimer le besoin** au-dessus
+      de **remonter au propriétaire**. `opened` a quitté les trois déclencheurs du privé, et un
+      invariant de `harness:check --corpus` empêche la rechute — constaté dans les deux sens le
+      jour même : la PR #343 portait 3 runs `failure` à zéro job, la #344 aucun. Puis **L3b**
+      (`guard-watch` mutualisé : arena#981 + privé#345), **Q-5** (mesure des cycles par PR :
+      arena#982) et le **lot 5** (le registre de 12 Mo rejoint `content/`, un seul symlink au
+      lieu de deux : arena#983/#984 + privé#346), livré en trois temps et vérifié par un SQL
+      émis **identique octet pour octet** — donc zéro dérive avec la prod. **Deux constats neufs sont nés de l'exécution.** **C-15** : `npm run typecheck` ne voit
+      AUCUN script (`tsconfig.json` n'inclut que `src/**`), donc les scripts qui portent les
+      gates de contenu ne sont typés par personne — trouvé par un `ReferenceError` que `tsc`
+      aurait dû attraper ; 44 erreurs de type dormantes mesurées, lot **non ouvert**. Et
+      **C-14** : pour merger, une PR doit être à jour avec `main`, donc chaque PR qui entre pendant sa
+      CI la relance **en entier** — 5 cycles complets sur arena#975, en 41 minutes, pour une PR sans
+      une ligne de `src/`. C'est une **troisième** source de runs par branche, distincte des fantômes
+      et du double dispatch, invisible au relevé du 2026-09-03 parce que ce jour-là `main` était
+      calme. Le remède (file de merge, ou CI en deux étages) est un arbitrage, posé en **Q-5** ;
+      recommandation : l'accepter tant que le moteur est public, où les minutes sont gratuites. **Cinq chiffres de l'étude ont été corrigés par les
+      livraisons elles-mêmes** — les cibles « 0 run », « 8,4 runs/branche », « ≤ 60 règles »,
+      « ≤ 200 lignes » étaient fausses ou inatteignables, et sont rectifiées dans le document
+      plutôt que maquillées. Sur relevé : **167 runs `failure` à zéro job sur 800** au privé en six jours (les fantômes de
       `pull_request:opened`), **5 réveils d'automerge par branche**, **CI + CodeQL + Migration gate
       en double** sur chaque branche neuve du moteur (38 dispatch pour 71 runs natifs), et un
       `harness:check` dont la borne « description ≤ 1 024 » n'a jamais rien mesuré (bug reproduit

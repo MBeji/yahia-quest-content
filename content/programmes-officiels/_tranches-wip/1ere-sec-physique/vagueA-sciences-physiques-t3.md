@@ -1,7 +1,7 @@
 # VÉRIFICATION R-7 — Physique 1ère sec (CNP 223103P00), thème LA MATIÈRE, ch.6–9 (p.87–146)
 
 **Nature du travail** : relecture de fidélité de la fiche existante
-`.claude/skills/content-ecole-tn/references/programmes-officiels/programme/1ere-sec/sciences-physiques.md`
+`content/programmes-officiels/programme/1ere-sec/sciences-physiques.md`
 (sections ch.6–9, lignes 687–1347, + sa §Incertitudes lignes 1348–1361) contre le manuel officiel.
 **Pas de re-transcription** : ce qui est conforme est attesté, pas recopié. Le contenu exact n'est
 restitué que là où la fiche a un trou ou une erreur (action corrective).

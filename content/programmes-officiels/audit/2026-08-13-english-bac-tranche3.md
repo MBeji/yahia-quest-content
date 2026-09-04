@@ -1172,7 +1172,7 @@ façon unique par son énoncé (BLOCKER).** 4 MAJOR, 7 MINOR.
 
 ### 0.1 Le tapescript ✅ — **l'auteur avait raison, le donneur d'ordre avait tort**
 
-Vérifié dans `.claude/skills/content-ecole-tn/references/programmes-officiels/programme/bac-math/anglais.md` :
+Vérifié dans `content/programmes-officiels/programme/bac-math/anglais.md` :
 
 - **l.2392** (§2, Lesson 7) : « ⚠️ Le tapescript du guide n'est pas recopié. »
 - **l.8181** (§6.1) : « ⚠️ Ils n'ont pas été dépouillés dans ce palier — c'est à faire avec les

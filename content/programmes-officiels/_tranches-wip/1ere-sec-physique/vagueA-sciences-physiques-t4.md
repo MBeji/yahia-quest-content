@@ -3,7 +3,7 @@
 > **Nature du travail** : relecture de fidélité (R-7), **pas** une re-transcription.
 > **Source contrôlée** : `D:\11-coding\YahiaAcademy\cnp-officiel\_txt\223103P00-physique.txt`
 > (couche-texte déterministe du PDF `manuels\secondaire\c1\eleve\223103P00.pdf`, 276 p., offset folio↔PDF = 0).
-> **Fiche contrôlée** : `.claude/skills/content-ecole-tn/references/programmes-officiels/programme/1ere-sec/sciences-physiques.md`,
+> **Fiche contrôlée** : `content/programmes-officiels/programme/1ere-sec/sciences-physiques.md`,
 > lignes 1363–2064 (ch.10 à 13 + « Incertitudes rencontrées (ch.10-13) »).
 > **Pages réellement lues** : 147 à 208 intégralement (62 p.), **plus** p.4–5 (sommaire) lues pour
 > instruire l'incohérence n°2 du cadrage.

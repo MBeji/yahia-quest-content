@@ -80,16 +80,16 @@ jobs:
         working-directory: engine
         run: npm ci --no-audit --no-fund
 
-      # DEUX liens, pas un : le checker lit `content/` ET le registre CNP sous
-      # `.claude/skills/…/programmes-officiels/`, tous deux résolus depuis la
-      # racine du moteur (même recette que content-ci.yml).
+      # UN seul lien depuis l'étude 32 (lot 5) : le checker lit `content/`, et le
+      # registre CNP y a rejoint le reste des données — il vivait jusque-là sous
+      # `.claude/skills/…/references/`, un registre de DONNÉES rangé dans un
+      # dossier d'instructions. Même recette que content-ci.yml.
       - name: Brancher le corpus privé dans le moteur
         run: |
           set -euo pipefail
-          rm -rf engine/content engine/.claude/skills
+          rm -rf engine/content
           ln -s "$GITHUB_WORKSPACE/corpus/content" engine/content
-          ln -s "$GITHUB_WORKSPACE/corpus/.claude/skills" engine/.claude/skills
-          test -f engine/.claude/skills/content-ecole-tn/references/programmes-officiels/suivi/corpus-cnp.json \
+          test -f engine/content/programmes-officiels/suivi/corpus-cnp.json \
             || { echo "::error::registre CNP non branché"; exit 1; }
 
       - name: Sonder les liens

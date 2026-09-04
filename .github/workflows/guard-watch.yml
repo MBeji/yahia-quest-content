@@ -59,124 +59,83 @@ jobs:
       # Le recouvrement ne produit pas de doublon — une seule issue est réutilisée.
       WINDOW_HOURS: "8"
     steps:
+      - name: Checkout du moteur (la décision y vit, partagée)
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          repository: MBeji/yahia-quest-arena
+          path: engine
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: 24
+
       - name: Relever les runs rouges de la fenêtre
         id: scan
         run: |
           set -euo pipefail
 
-          # Borne basse de la fenêtre, calculée par `date` (pas d'arithmétique
-          # de dates en shell, c'est là qu'on se trompe).
+          # Borne basse calculée par `date` : pas d'arithmétique de dates en shell.
           since="$(date -u -d "-${WINDOW_HOURS} hours" +%Y-%m-%dT%H:%M:%SZ)"
           echo "Fenêtre : depuis $since (UTC)."
 
-          # Le filtrage est fait par le SERVEUR (`--created`, `--status`), pas en
-          # local après un `--limit`. Correction, pas raffinement : mesuré le
-          # 2026-08-24 sur le dépôt moteur, les 100 runs les plus récents ne
-          # couvraient qu'1 h 13. Une fenêtre de 8 h filtrée en local n'y aurait
-          # rien vu de ses 7 dernières heures — et aurait rendu « 0 rouge » d'un
-          # air parfaitement vert. Ce dépôt-ci est bien moins actif, donc le bug
-          # y dormait ; il se serait réveillé le jour d'une grosse campagne,
-          # c'est-à-dire exactement le jour où la garde compte. Une garde qui se
-          # trompe en silence est pire que pas de garde.
+          # Filtrage SERVEUR (`--created`, `--status`), jamais en local après un `--limit` :
+          # mesuré le 2026-08-24 sur le dépôt moteur, les 100 runs les plus récents ne
+          # couvraient qu'1 h 13. Ce dépôt-ci est moins actif, donc le bug y dormait — il se
+          # serait réveillé le jour d'une grosse campagne, c'est-à-dire le jour où la garde
+          # compte. Une garde qui se trompe en silence est pire que pas de garde.
           #
-          # Ce workflow ne s'exclut PAS de son propre scan, et c'est délibéré.
-          # L'exclusion semble prudente (« éviter qu'un échec d'ici se rapporte
-          # lui-même en boucle ») mais elle ne protège de rien : un run qui
-          # meurt ne rapporte rien du tout, par définition. Elle rendrait
-          # seulement la garde aveugle à ses propres pannes — le défaut exact
-          # qu'elle existe pour corriger. En s'incluant, un échec d'ici est
-          # relevé par le passage SUIVANT, qui lui aboutit. Pas de boucle
-          # possible : un run en cours n'a pas encore de conclusion, il ne peut
-          # donc jamais se voir lui-même.
+          # Ce workflow ne s'exclut PAS de son propre scan : un run qui meurt ne rapporte rien,
+          # l'exclure ne protégerait de rien et le rendrait aveugle à ses propres pannes.
           fields=databaseId,workflowName,conclusion,createdAt,event,url
-          failed="$(gh run list --created ">=$since" --status failure --limit 200 --json "$fields")"
-          timed="$(gh run list --created ">=$since" --status timed_out --limit 200 --json "$fields")"
+          gh run list --created ">=$since" --status failure   --limit 200 --json "$fields" > rouges.json
+          gh run list --created ">=$since" --status timed_out --limit 200 --json "$fields" > lents.json
+          jq -s 'add' rouges.json lents.json > runs.json
 
-          # Contrairement à la version du dépôt moteur, les échecs sur
-          # `pull_request` sont GARDÉS ici, et c'est la seule divergence entre
-          # les deux fichiers. Là-bas une PR rouge a un propriétaire (DoD §8) et
-          # les checks requis la bloquent visiblement. Ici il n'y a AUCUN check
-          # requis — plan gratuit, dépôt privé — donc une PR rouge ne bloque
-          # rien d'ostensible : elle dort, et c'est précisément le genre de
-          # silence que cette garde existe pour rompre.
-          all="$(printf '%s\n%s\n' "$failed" "$timed" | jq -s 'add')"
-
-          # UN RUN À ZÉRO JOB N'A RIEN ÉVALUÉ — il ne peut donc pas avoir échoué.
-          # C'est la signature des runs `pull_request` mort-nés que GitHub crée
-          # pour une PR ouverte par le `GITHUB_TOKEN` : la garde anti-boucle les
-          # termine sans lancer un seul job, et les enregistre en `failure`
-          # (privé#297 — 16 runs sur 18 au 2026-09-01).
+          # UN RUN À ZÉRO JOB N'A RIEN ÉVALUÉ — il ne peut donc pas avoir échoué. C'était la
+          # signature des `pull_request` mort-nés de ce dépôt, et les compter a produit une
+          # alarme entièrement fausse (#293, « 37 run(s) rouge(s) », qui orientait son lecteur
+          # vers un secret alors que rien n'était cassé). Depuis l'étude 32 lot 1 la CAUSE est
+          # supprimée — `opened` a quitté les déclencheurs et `harness:check --corpus` fait
+          # échouer la CI s'il revient — donc cette sonde ne devrait plus rien écarter. Elle
+          # reste : elle coûte un appel d'API par rouge, et c'est ce qui fait que l'alarme dira
+          # encore vrai le jour où quelqu'un remettra `opened`.
           #
-          # Les compter pour des échecs a produit une alarme entièrement fausse :
-          # privé#293, « 37 run(s) rouge(s) », qui orientait son lecteur vers
-          # « un secret, une variable, un jeton » alors que rien n'était cassé.
-          # Une alarme fausse qui revient toutes les 6 h finit par ne plus se
-          # lire du tout — c'est la ruine exacte de ce que ce workflow produit.
+          # ⚠️ POLARITÉ, et elle est l'INVERSE de celle d'`auto-pr.yml` : là-bas, à mesure
+          # douteuse on dispatche ; ici, à mesure douteuse on GARDE le rouge. On construit donc
+          # la liste de ce qu'on ÉCARTE, jamais de ce qu'on garde — si quoi que ce soit tourne
+          # mal, elle reste vide et l'alarme part entière. Une garde se trompe en criant.
           #
-          # On ne pose la question qu'aux `failure` : un `timed_out` a tourné,
-          # par définition. Et le SENS de l'erreur est l'INVERSE de celui
-          # d'`auto-pr.yml` : là-bas, à mesure douteuse on dispatche ; ici, à
-          # mesure douteuse on GARDE le rouge. Une garde se trompe en criant.
-          # Le passage par un fichier, et pas un heredoc : un heredoc bash colle
-          # son délimiteur en colonne 0, ce qui SORT du scalaire YAML — le
-          # workflow ne se parse alors même plus.
+          # Le passage par un fichier plutôt qu'un heredoc : un heredoc bash colle son
+          # délimiteur en colonne 0, ce qui SORT du scalaire YAML — le workflow ne se parse
+          # alors même plus.
           liste="$RUNNER_TEMP/garde-runs.txt"
-          echo "$all" | jq -r '.[] | "\(.databaseId) \(.conclusion)"' > "$liste"
-
-          # On construit la liste de ce qu'on ÉCARTE, pas de ce qu'on garde : si
-          # quoi que ce soit tourne mal ici, la liste reste vide et l'alarme part
-          # entière. Une garde ne doit jamais se taire par accident.
+          jq -r '.[] | "\(.databaseId) \(.conclusion)"' runs.json > "$liste"
           drop=""
           while read -r id concl; do
             [ -n "${id:-}" ] || continue
+            # On ne pose la question qu'aux `failure` : un `timed_out` a tourné, par définition.
             [ "${concl:-}" = "failure" ] || continue
             jobs="$(gh api "repos/$GH_REPO/actions/runs/$id/jobs" --jq '.total_count' 2>/dev/null || echo 1)"
             case "${jobs:-1}" in ''|*[!0-9]*) jobs=1 ;; esac
             [ "$jobs" -eq 0 ] || continue
-            echo "  run $id écarté — zéro job, il n'a rien évalué (privé#297)."
+            echo "  run $id écarté — zéro job, il n'a rien évalué (#297)."
             drop="$drop $id"
           done < "$liste"
-          if [ -n "$drop" ]; then
-            all="$(echo "$all" | jq --arg drop "$drop" '($drop | split(" ") | map(select(length > 0) | tonumber)) as $d | [ .[] | select(.databaseId | IN($d[]) | not) ]')"
-          fi
 
-          count="$(echo "$all" | jq 'length')"
+          # QUI compte comme un rouge, et COMMENT il se raconte : `scripts/ci/guard-watch.mjs`
+          # du moteur, partagé avec lui (étude 32, L3b) et couvert par 18 tests. Ce dépôt GARDE
+          # les échecs de `pull_request` — contrairement au moteur : ici aucun check n'est
+          # requis (dépôt privé, compte Free, rulesets en 403), donc une PR rouge ne bloque
+          # rien d'ostensible ; elle dort, et c'est le silence que cette garde rompt.
+          count="$(node engine/scripts/ci/guard-watch.mjs \
+            --runs runs.json --out corps.md \
+            --since "$since" --window-hours "$WINDOW_HOURS" \
+            --include-pull-request --drop-ids "$drop")"
+
           echo "count=$count" >> "$GITHUB_OUTPUT"
           echo "Rouges dans la fenêtre : $count"
-
-          if [ "$count" = "0" ]; then
-            exit 0
-          fi
-
-          # Un résumé par WORKFLOW, pas par run : dix échecs du même cron sont
-          # UN problème, pas dix. C'est la différence entre une issue qu'on lit
-          # et une issue qu'on ferme sans lire.
-          {
-            echo "### 🚨 Gardes en échec"
-            echo ""
-            echo "Fenêtre observée : les **${WINDOW_HOURS} dernières heures** (depuis \`$since\` UTC)."
-            echo ""
-            echo "| Workflow | Échecs | Dernier | Déclencheur |"
-            echo "| --- | --- | --- | --- |"
-            echo "$all" | jq -r '
-              group_by(.workflowName)
-              | map({
-                  nom: .[0].workflowName,
-                  n: length,
-                  dernier: (sort_by(.createdAt) | last)
-                })
-              | sort_by(-.n)
-              | .[]
-              | "| \(.nom) | \(.n) | [\(.dernier.createdAt[0:16])](\(.dernier.url)) | `\(.dernier.event)` |"
-            '
-            echo ""
-            echo "Un échec **répété** sur un arbre qui n'a pas bougé désigne presque toujours"
-            echo "une entrée hors dépôt (secret, variable, jeton) — c'est-à-dire quelque chose"
-            echo "qu'aucune PR ne répare. Voir la règle « zéro intervention technique » et son"
-            echo "tableau des murs (\`docs/agents/zero-intervention.md\` du dépôt moteur)."
-            echo ""
-            echo "_Cette issue se referme toute seule dès qu'une fenêtre entière est verte._"
-          } > corps.md
 
       - name: Ouvrir ou mettre à jour l'issue
         if: steps.scan.outputs.count != '0'

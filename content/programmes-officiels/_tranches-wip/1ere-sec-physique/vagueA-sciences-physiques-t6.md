@@ -1,7 +1,7 @@
 # Vérification R-7 — Physique 1ère sec (CNP 223103P00) — tranche 6 : p.243–276
 
 **Nature du livrable** : relecture de fidélité (R-7) des sections existantes de la fiche
-`.claude/skills/content-ecole-tn/references/programmes-officiels/programme/1ere-sec/sciences-physiques.md`,
+`content/programmes-officiels/programme/1ere-sec/sciences-physiques.md`,
 **lignes 2413–2761** (ch.16 + ch.17) et **§ Incertitudes ch.14–17** (lignes 2762–2779).
 Ce n'est **pas** une re-transcription : je constate, je ne réécris pas la fiche.
 

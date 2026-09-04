@@ -6,19 +6,38 @@ name: Content CI
 # moteur — zéro duplication de code.
 #
 # Depuis le lot 3b (2026-07-20), ce repo n'est plus un miroir : il est la SEULE
-# source du corpus et des skills pédagogiques. Deux symlinks sont donc
-# nécessaires, pas un :
-#   • `content/`        — le corpus (le moteur le résout en `cwd()/content`)
-#   • `.claude/skills/` — les 41 skills pédagogiques. `content:audit:strict` lit
-#     `content-ecole-tn/references/programmes-officiels/manifest` et
-#     `programme:check` lit `…/suivi` + `…/programme`. Sans ce second lien, ces
-#     deux gates échouent sur le SKILL avant même de toucher au corpus.
+# source du corpus et des skills pédagogiques.
+#
+# UN SEUL SYMLINK depuis l'étude 32 (lot 5) : `content/`. Il en fallait DEUX
+# jusque-là, parce que le registre de transcription `programmes-officiels/`
+# vivait sous `.claude/skills/content-ecole-tn/references/` — un registre de
+# DONNÉES rangé dans un dossier d'instructions. Il a rejoint `content/`, avec le
+# reste des données. Ce second lien n'était pas un détail : c'est la première
+# chose qu'une session oublie, et `programme:check` rendait alors un faux
+# « rien à faire » sur le garde-fou anti-double-transcription — le pire résultat
+# possible pour ce registre. Il causait aussi la collision d'invariants que
+# `harness:check --corpus` a dû apprendre à éviter (lot 2) : les 43 skills du
+# corpus branchés dans le moteur y faisaient réclamer 225 fichiers de miroir.
 #
 # `programme:check` (registre de transcription CNP) tournait dans la CI publique
 # jusqu'au lot 3b ; il a suivi ses données ici. Les gates suivent leurs données.
 
 on:
   pull_request:
+    types: [synchronize, reopened]
+  # ⚠️ `opened` est VOLONTAIREMENT absent (étude 32, lot 1 — voie de repli de Q-1).
+  # Sans `types:`, GitHub écoute [opened, synchronize, reopened] par défaut, et c'est
+  # `opened` qui produisait le fantôme : une PR ouverte par le GITHUB_TOKEN fait
+  # ENREGISTRER un run `pull_request` que la garde anti-boucle refuse aussitôt — il
+  # sort `failure` à ZÉRO job, sans rien avoir évalué. 3 par PR ici, 21 % des runs du
+  # dépôt sur six jours, et trois incidents nés de sa lecture (#280, #291, #293).
+  # Rien n'est perdu : `auto-pr.yml` ouvre la PR de toute branche poussée PUIS
+  # dispatche les checks qui n'ont pas de run réel sur le SHA, et `synchronize`
+  # couvre chaque poussée suivante.
+  # ⚠️ Cas résiduel assumé : une PR ouverte À LA MAIN sur une branche qui n'a plus
+  # bougé depuis n'a aucun check — elle ne peut donc pas merger (`automerge` refuse un
+  # SHA sans check run) et reste visible plutôt que de passer en douce. La sortir de là
+  # tient en un `workflow_dispatch` ou une poussée.
   push:
     branches: [main]
   # Indispensable à `auto-pr.yml`, pas un confort : une PR ouverte par le
@@ -41,7 +60,7 @@ concurrency:
 
 jobs:
   gates:
-    name: content:check + qa:strict + figures:check + audit:strict + programme:check
+    name: content:check + qa:strict + figures:check + audit:strict + programme:check + harness
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -67,18 +86,18 @@ jobs:
         working-directory: engine
         run: npm ci --no-audit --no-fund
 
-      - name: Brancher le corpus ET les skills privés dans le moteur
+      - name: Brancher le corpus dans le moteur (un seul lien depuis é32 L5)
         run: |
           set -euo pipefail
-          rm -rf engine/content engine/.claude/skills
-          mkdir -p engine/.claude
+          rm -rf engine/content
           ln -s "$GITHUB_WORKSPACE/corpus/content" engine/content
-          ln -s "$GITHUB_WORKSPACE/corpus/.claude/skills" engine/.claude/skills
-          # Fail fast et lisible si un jour l'arborescence privée bouge.
+          # Fail fast et lisible si un jour l'arborescence privée bouge. Les deux
+          # contrôles portent désormais sur le MÊME lien : le corpus et son registre
+          # de transcription sont au même endroit.
           test -f engine/content/misconceptions.json \
             || { echo "::error::corpus non branché (misconceptions.json introuvable)"; exit 1; }
-          test -d engine/.claude/skills/content-ecole-tn/references/programmes-officiels/manifest \
-            || { echo "::error::skills non branchés (manifest programmes-officiels introuvable)"; exit 1; }
+          test -d engine/content/programmes-officiels/manifest \
+            || { echo "::error::registre non branché (programmes-officiels/manifest introuvable)"; exit 1; }
 
       - name: content:check
         working-directory: engine
@@ -105,6 +124,23 @@ jobs:
       - name: programme:check
         working-directory: engine
         run: npm run programme:check
+
+      # Les invariants du HARNESS appliqués à ce dépôt (étude 32, lot 2). Ce dépôt porte
+      # 43 skills, 12 workflows et un CLAUDE.md de 9 Kio, et n'avait AUCUN gate de harness :
+      # ni budget, ni Unicode invisible, ni conformité à la spec Agent Skills, ni YAML strict.
+      # Son seul invariant — l'épinglage des Actions — vivait dans un `pin-check.yml` qui
+      # ré-écrivait en bash une règle du moteur ; deux implémentations d'une même règle
+      # divergent, ce dépôt l'a vu trois fois sur le test « zéro job ». `pin-check.yml` est
+      # donc SUPPRIMÉ dans le même lot : la règle est ici, une seule fois, et elle est testée
+      # là où elle est écrite.
+      #
+      # Le blocage qu'on croyait avoir (« harness:check traîne des dépendances, et le workflow
+      # candidat tourne sans npm ci ») venait d'avoir regardé le mauvais workflow : celui-ci
+      # checkout déjà le moteur et y fait déjà son `npm ci`. Il n'y avait rien à extraire dans
+      # un module sans dépendance, seulement le bon endroit à choisir.
+      - name: harness:check --corpus (les invariants du harness sur ce dépôt)
+        working-directory: engine
+        run: node scripts/harness/check.mjs --corpus "$GITHUB_WORKSPACE/corpus"
 
       # Réveiller automerge — UNIQUEMENT quand ce run vient d'une dispatch.
       #

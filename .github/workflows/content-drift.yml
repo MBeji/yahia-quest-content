@@ -139,6 +139,8 @@ jobs:
           # publié » juste après une application intégrale du corpus. Trois cas :
           #  - `competences` n'est pas un sujet : il alimente le registre,
           #    journalisé sous `_competences_registry` ;
+          #  - un dossier SANS `subject.json` n'est pas un sujet du tout et se
+          #    saute (registres, données annexes) — voir plus bas ;
           #  - `compileTo` : un dossier source peut compiler vers PLUSIEURS
           #    sujets — deux sections qui partagent un programme. Le SQL, et donc
           #    `content_releases`, porte ces ids-là, jamais le nom du dossier ;
@@ -161,7 +163,15 @@ jobs:
               ' "${dir}subject.json")"
               [ -n "${SLUGS}" ] || SLUGS="${SUBJECT}"
             else
-              SLUGS="${SUBJECT}"
+              # Un dossier de `content/` SANS `subject.json` n'est pas un sujet, et
+              # l'inventer en produit un qui ne pourra jamais être « publié » — donc
+              # une issue qui ne se referme plus, et un slug que `apply-content`
+              # refuserait. C'est arrivé au premier passage suivant l'étude 32
+              # (lot 5) : `programmes-officiels`, le registre de transcription
+              # fraîchement arrivé sous `content/`, a été rapporté « jamais publié,
+              # tout le sujet ». C'est la MÊME règle que le chargeur du moteur, qui
+              # ne retient un dossier que s'il porte son `subject.json`.
+              continue
             fi
 
             for SLUG in ${SLUGS}; do

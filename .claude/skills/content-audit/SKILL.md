@@ -3,20 +3,17 @@ name: content-audit
 description: >-
   Pedagogical audit of EXISTING content under content/ — verify answer keys by
   re-solving every question, check distractor quality, explanation correctness,
-  question clarity & cognitive load, age/grade-appropriateness (vocabulary,
-  context, number range vs the pupil's age), correct rendering/display (SVG
+  question clarity & cognitive load, age/grade-appropriateness, rendering (SVG
   figures, bidi-safe notation), difficulty calibration, answer-key balance,
-  duplicates, standard math/digit notation (Western digits everywhere, including
-  Arabic), language purity, and factual accuracy — AND audit the lesson texts
-  (cours.md / resume.md) against
-  the course-quality bar: clarity, ease of understanding, completeness (every
-  tested notion taught), learning experience. Produces a severity-ranked report;
-  applies fixes only on request. Use whenever the user asks to "auditer",
-  "vérifier", "review", "QA" the pedagogical content, a subject, a chapter, the
-  quizzes/exercises, or the courses/summaries — e.g. "audite le contenu de maths
-  9ème", "vérifie les quiz de culture générale", "le cours est-il clair et
-  complet ?", "audite les résumés". Defers to the content-engine skill for the
-  schema, quality bar, course-quality bar, and notation rules.
+  duplicates, standard math/digit notation (Western digits, including in Arabic),
+  language purity, and factual accuracy — AND audit the lesson texts
+  (cours.md / resume.md) against the course-quality bar: clarity, ease of
+  understanding, completeness (every tested notion taught), learning experience.
+  Produces a severity-ranked report; applies fixes only on request. Use whenever
+  the user asks to "auditer", "vérifier", "review", "QA" the pedagogical content,
+  a subject, a chapter, the quizzes/exercises, or the courses/summaries — e.g.
+  "audite le contenu de maths 9ème", "vérifie les quiz de culture générale", "le
+  cours est-il clair et complet ?", "audite les résumés".
 ---
 
 # content-audit — pedagogical verification of existing content
@@ -31,7 +28,7 @@ all. This skill is the deep net — a human-grade review of content that already
 
 The per-item checklist below audits what **exists**; it cannot see what is **missing**. For `ecole-tn`
 content, run **`npm run content:audit`** first: it diffs the content tree against the per-grade
-**program manifests** (`content-ecole-tn/references/programmes-officiels/manifest/<gradeSlug>.json` — a
+**program manifests** (`content/programmes-officiels/manifest/<gradeSlug>.json` — a
 declarative transcription of the official CNP program) and reports, per grade + subject, **missing
 subjects**, **missing / off-program chapters**, and **incomplete chapters** (a chapter lacking course +
 summary + quiz + **at least one mission**), plus language mismatches. Advisory by default; `--strict`
@@ -143,7 +140,7 @@ Work file by file. For every question:
    facts via web search; wrong fact = **[BLOCKER]**, missing `sources[]` for verified claims =
    **[MINOR]**. For `ecole-tn`, also check **syllabus fidelity against the CNP program** (the source of
    truth), read via the **programme transcription**
-   `content-ecole-tn/references/programmes-officiels/programme/<gradeSlug>/<matière>.md` (consume it; it
+   `content/programmes-officiels/programme/<gradeSlug>/<matière>.md` (consume it; it
    **combines the teacher guide — scope — AND the manuel élève — content/examples/exercises**; the
    `cnp-officiel/` scans are the ultimate authority but reading them is the persistence session's job —
    `CATALOGUE.md` maps grade×subject → both files for traceability). Every notion must be in the official CNP
@@ -233,7 +230,7 @@ severity mapping; the visual one, **Illustration**, was added on 2026-07-14 and 
    quiz + exercises test, and point each to the course section that teaches it. Any
    tested-but-untaught notion = **[MAJOR]**. Then check full official-scope coverage — school content
    against the **CNP program** (source of truth: the programme transcription
-   `content-ecole-tn/references/programmes-officiels/programme/<gradeSlug>/<matière>.md` — consume it,
+   `content/programmes-officiels/programme/<gradeSlug>/<matière>.md` — consume it,
    scanning the corpus is the persistence session's job; Taybah files only as a secondary cross-check),
    else `chapter.json` scope — and flag off-program additions. The transcription **combines the teacher
    guide AND the manuel élève**: a chapter that covers the scope but is **thinner than the manuel élève**

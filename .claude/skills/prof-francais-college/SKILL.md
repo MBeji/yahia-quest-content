@@ -47,7 +47,7 @@ notions du niveau exclusivement (rien de la 9ème).
   superlatif · compléments circonstanciels · portrait et description · discours direct et
   dialogue · substituts et cohérence textuelle · lexique et formation des mots.
 - La transcription CNP `programme/8eme-base/francais.md` existe (PR #330, statut `[~]` en
-  validation — cf. `content-ecole-tn` `references/programmes-officiels/programme/_INDEX.md`) :
+  validation — cf. `content-ecole-tn` `content/programmes-officiels/programme/_INDEX.md`) :
   c'est la référence de scope à confronter avant tout nouvel overlay 8ème.
 
 ## Ce que « difficile » veut dire en 7ème–8ème
