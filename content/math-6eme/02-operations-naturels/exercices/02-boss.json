@@ -9,10 +9,10 @@
     {
       "prompt": "ما ناتجُ 305 + 198؟",
       "options": [
-        { "id": "a", "text": "493" },
+        { "id": "a", "text": "493", "misconceptionTag": "math.num.retenue-oubliee" },
         { "id": "b", "text": "513" },
         { "id": "c", "text": "503" },
-        { "id": "d", "text": "403" }
+        { "id": "d", "text": "403", "misconceptionTag": "math.num.retenue-oubliee" }
       ],
       "correctOption": "c",
       "explanation": "305 + 198 = 503 (يمكن حسابُه بسهولة: 305 + 200 = 505 ثمّ ننقص 2).",
@@ -23,8 +23,8 @@
       "prompt": "ما ناتجُ 1 000 − 376؟",
       "options": [
         { "id": "a", "text": "624" },
-        { "id": "b", "text": "634" },
-        { "id": "c", "text": "724" },
+        { "id": "b", "text": "634", "misconceptionTag": "math.num.emprunt-oublie" },
+        { "id": "c", "text": "724", "misconceptionTag": "math.num.emprunt-oublie" },
         { "id": "d", "text": "716" }
       ],
       "correctOption": "a",
@@ -48,7 +48,11 @@
     {
       "prompt": "عند قسمة 100 على 7 قسمةً إقليدية، ما الخارجُ والباقي؟",
       "options": [
-        { "id": "a", "text": "الخارجُ 13 والباقي 9" },
+        {
+          "id": "a",
+          "text": "الخارجُ 13 والباقي 9",
+          "misconceptionTag": "math.num.reste-superieur-ou-egal-au-diviseur"
+        },
         { "id": "b", "text": "الخارجُ 14 والباقي 2" },
         { "id": "c", "text": "الخارجُ 14 والباقي 3" },
         { "id": "d", "text": "الخارجُ 15 والباقي 5" }
@@ -61,7 +65,7 @@
     {
       "prompt": "ما قيمةُ 20 − 3 × 4؟",
       "options": [
-        { "id": "a", "text": "68" },
+        { "id": "a", "text": "68", "misconceptionTag": "math.num.priorite-operations-ignoree" },
         { "id": "b", "text": "17" },
         { "id": "c", "text": "8" },
         { "id": "d", "text": "12" }

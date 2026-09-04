@@ -4,10 +4,22 @@
     {
       "prompt": "ماذا نسمّي نتيجةَ عمليّة الضرب؟",
       "options": [
-        { "id": "a", "text": "المجموع" },
-        { "id": "b", "text": "الفرق" },
+        {
+          "id": "a",
+          "text": "المجموع",
+          "misconceptionTag": "math.num.vocabulaire-operations-confondu"
+        },
+        {
+          "id": "b",
+          "text": "الفرق",
+          "misconceptionTag": "math.num.vocabulaire-operations-confondu"
+        },
         { "id": "c", "text": "الجداء" },
-        { "id": "d", "text": "الخارج" }
+        {
+          "id": "d",
+          "text": "الخارج",
+          "misconceptionTag": "math.num.vocabulaire-operations-confondu"
+        }
       ],
       "correctOption": "c",
       "explanation": "نتيجةُ الضرب تُسمّى الجداء؛ أمّا المجموع فلِلجمع، والفرق للطرح، والخارج للقسمة.",
@@ -18,8 +30,8 @@
       "prompt": "ما ناتجُ 348 + 256؟",
       "options": [
         { "id": "a", "text": "604" },
-        { "id": "b", "text": "594" },
-        { "id": "c", "text": "504" },
+        { "id": "b", "text": "594", "misconceptionTag": "math.num.retenue-oubliee" },
+        { "id": "c", "text": "504", "misconceptionTag": "math.num.retenue-oubliee" },
         { "id": "d", "text": "614" }
       ],
       "correctOption": "a",
@@ -43,7 +55,7 @@
     {
       "prompt": "ما قيمةُ 5 + 6 × 2؟",
       "options": [
-        { "id": "a", "text": "22" },
+        { "id": "a", "text": "22", "misconceptionTag": "math.num.priorite-operations-ignoree" },
         { "id": "b", "text": "17" },
         { "id": "c", "text": "16" },
         { "id": "d", "text": "13" }

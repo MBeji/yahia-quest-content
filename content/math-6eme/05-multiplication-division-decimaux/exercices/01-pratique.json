@@ -10,9 +10,13 @@
       "prompt": "ما ناتجُ 2,1 × 2؟",
       "options": [
         { "id": "a", "text": "4,2" },
-        { "id": "b", "text": "42" },
+        { "id": "b", "text": "42", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
         { "id": "c", "text": "2,2" },
-        { "id": "d", "text": "4,02" }
+        {
+          "id": "d",
+          "text": "4,02",
+          "misconceptionTag": "math.num.zero-intercale-dans-le-resultat"
+        }
       ],
       "correctOption": "a",
       "explanation": "نحسب 21 × 2 = 42، وفي العامل 2,1 رقمٌ عشريٌّ واحد، فالجداء 4,2.",
@@ -23,9 +27,13 @@
       "prompt": "ما ناتجُ 1,3 × 10؟",
       "options": [
         { "id": "a", "text": "1,3" },
-        { "id": "b", "text": "130" },
+        {
+          "id": "b",
+          "text": "130",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
         { "id": "c", "text": "13" },
-        { "id": "d", "text": "0,13" }
+        { "id": "d", "text": "0,13", "misconceptionTag": "math.num.puissance-de-dix-sens-inverse" }
       ],
       "correctOption": "c",
       "explanation": "الضربُ في 10 يُزحزح الفاصلةَ رقمًا واحدًا نحو اليمين: 1,3 × 10 = 13.",
@@ -35,10 +43,14 @@
     {
       "prompt": "ما ناتجُ 6,4 ÷ 2؟",
       "options": [
-        { "id": "a", "text": "32" },
+        { "id": "a", "text": "32", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
         { "id": "b", "text": "3,2" },
         { "id": "c", "text": "2,2" },
-        { "id": "d", "text": "3,02" }
+        {
+          "id": "d",
+          "text": "3,02",
+          "misconceptionTag": "math.num.zero-intercale-dans-le-resultat"
+        }
       ],
       "correctOption": "b",
       "explanation": "نقسم على عددٍ طبيعيّ: 6,4 ÷ 2 = 3,2 (نتحقّق: 2 × 3,2 = 6,4).",
@@ -48,10 +60,10 @@
     {
       "prompt": "كم رقمًا عشريًّا في جداء 0,5 × 0,5؟",
       "options": [
-        { "id": "a", "text": "1" },
+        { "id": "a", "text": "1", "misconceptionTag": "math.num.produit-decimales-mal-comptees" },
         { "id": "b", "text": "2" },
-        { "id": "c", "text": "0" },
-        { "id": "d", "text": "3" }
+        { "id": "c", "text": "0", "misconceptionTag": "math.num.produit-decimales-mal-comptees" },
+        { "id": "d", "text": "3", "misconceptionTag": "math.num.produit-decimales-mal-comptees" }
       ],
       "correctOption": "b",
       "explanation": "نجمع الأرقامَ العشرية للعاملين: 1 + 1 = 2، فجداءُ 0,5 × 0,5 = 0,25 فيه رقمان عشريّان.",
@@ -61,7 +73,11 @@
     {
       "prompt": "ما ناتجُ 3,2 × 4؟",
       "options": [
-        { "id": "a", "text": "128" },
+        {
+          "id": "a",
+          "text": "128",
+          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
+        },
         { "id": "b", "text": "12,2" },
         { "id": "c", "text": "6,4" },
         { "id": "d", "text": "12,8" }
@@ -74,8 +90,12 @@
     {
       "prompt": "ما ناتجُ 45,6 ÷ 10؟",
       "options": [
-        { "id": "a", "text": "456" },
-        { "id": "b", "text": "0,456" },
+        { "id": "a", "text": "456", "misconceptionTag": "math.num.puissance-de-dix-sens-inverse" },
+        {
+          "id": "b",
+          "text": "0,456",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
         { "id": "c", "text": "4,56" },
         { "id": "d", "text": "45,6" }
       ],

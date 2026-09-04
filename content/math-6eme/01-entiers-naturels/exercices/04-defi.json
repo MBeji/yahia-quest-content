@@ -9,10 +9,10 @@
     {
       "prompt": "ما القيمة التي يمثّلها الرقم 3 في العدد 6 308 152؟",
       "options": [
-        { "id": "a", "text": "3 000" },
-        { "id": "b", "text": "30 000" },
+        { "id": "a", "text": "3 000", "misconceptionTag": "math.num.rang-du-chiffre-decale" },
+        { "id": "b", "text": "30 000", "misconceptionTag": "math.num.rang-du-chiffre-decale" },
         { "id": "c", "text": "300 000" },
-        { "id": "d", "text": "3 000 000" }
+        { "id": "d", "text": "3 000 000", "misconceptionTag": "math.num.rang-du-chiffre-decale" }
       ],
       "correctOption": "c",
       "explanation": "الرقم 3 في 6 308 152 يقع في رتبة مئات الآلاف، فقيمته 3 × 100 000 = 300 000.",
@@ -22,10 +22,22 @@
     {
       "prompt": "كيف يُقرأ العدد 40 007 030؟",
       "options": [
-        { "id": "a", "text": "أربعمئة مليونٍ وسبعة آلاف وثلاثون" },
+        {
+          "id": "a",
+          "text": "أربعمئة مليونٍ وسبعة آلاف وثلاثون",
+          "misconceptionTag": "math.num.classe-mal-lue"
+        },
         { "id": "b", "text": "أربعون مليونًا وسبعة آلاف وثلاثون" },
-        { "id": "c", "text": "أربعون مليونًا وسبعون ألفًا وثلاثون" },
-        { "id": "d", "text": "أربعة ملايين وسبعة آلاف وثلاثون" }
+        {
+          "id": "c",
+          "text": "أربعون مليونًا وسبعون ألفًا وثلاثون",
+          "misconceptionTag": "math.num.zero-intercalaire-oublie"
+        },
+        {
+          "id": "d",
+          "text": "أربعة ملايين وسبعة آلاف وثلاثون",
+          "misconceptionTag": "math.num.classe-mal-lue"
+        }
       ],
       "correctOption": "b",
       "explanation": "نُجمّع الأرقام ثلاثيّاتٍ من اليمين: 40 (أربعون مليونًا) | 007 (سبعة آلاف) | 030 (ثلاثون). إذن «أربعون مليونًا وسبعة آلاف وثلاثون».",
@@ -48,7 +60,7 @@
     {
       "prompt": "ما القيمة المقرّبة للعدد 6 970 إلى أقرب مئة؟",
       "options": [
-        { "id": "a", "text": "6 900" },
+        { "id": "a", "text": "6 900", "misconceptionTag": "math.num.arrondi-par-troncature" },
         { "id": "b", "text": "6 970" },
         { "id": "c", "text": "7 100" },
         { "id": "d", "text": "7 000" }

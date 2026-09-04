@@ -22,10 +22,10 @@
     {
       "prompt": "ما ناتجُ 900 − 250؟",
       "options": [
-        { "id": "a", "text": "750" },
+        { "id": "a", "text": "750", "misconceptionTag": "math.num.emprunt-oublie" },
         { "id": "b", "text": "550" },
         { "id": "c", "text": "650" },
-        { "id": "d", "text": "1 150" }
+        { "id": "d", "text": "1 150", "misconceptionTag": "math.num.operation-inverse-appliquee" }
       ],
       "correctOption": "c",
       "explanation": "نطرح: 900 − 250 = 650 (نتحقّق بالجمع العكسيّ: 650 + 250 = 900).",
@@ -38,7 +38,7 @@
         { "id": "a", "text": "60" },
         { "id": "b", "text": "65" },
         { "id": "c", "text": "70" },
-        { "id": "d", "text": "17" }
+        { "id": "d", "text": "17", "misconceptionTag": "math.num.operation-inverse-appliquee" }
       ],
       "correctOption": "a",
       "explanation": "نضرب: 12 × 5 = 60، أي خمسُ مرّاتٍ العددَ 12 (12 + 12 + 12 + 12 + 12).",
@@ -61,10 +61,22 @@
     {
       "prompt": "ماذا نسمّي العددين اللذين نجمعهما؟",
       "options": [
-        { "id": "a", "text": "العاملان" },
+        {
+          "id": "a",
+          "text": "العاملان",
+          "misconceptionTag": "math.num.vocabulaire-operations-confondu"
+        },
         { "id": "b", "text": "الحدّان" },
-        { "id": "c", "text": "المطروح والمطروح منه" },
-        { "id": "d", "text": "المقسوم والمقسوم عليه" }
+        {
+          "id": "c",
+          "text": "المطروح والمطروح منه",
+          "misconceptionTag": "math.num.vocabulaire-operations-confondu"
+        },
+        {
+          "id": "d",
+          "text": "المقسوم والمقسوم عليه",
+          "misconceptionTag": "math.num.vocabulaire-operations-confondu"
+        }
       ],
       "correctOption": "b",
       "explanation": "العددان المجموعان يُسمّيان الحدّين، ونتيجتُهما المجموع.",
@@ -75,7 +87,7 @@
       "prompt": "ما ناتجُ 25 × 4؟",
       "options": [
         { "id": "a", "text": "90" },
-        { "id": "b", "text": "29" },
+        { "id": "b", "text": "29", "misconceptionTag": "math.num.operation-inverse-appliquee" },
         { "id": "c", "text": "100" },
         { "id": "d", "text": "200" }
       ],

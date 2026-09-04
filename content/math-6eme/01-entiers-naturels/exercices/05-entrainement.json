@@ -23,9 +23,17 @@
       "prompt": "كيف يُقرأ العدد 305 040؟",
       "options": [
         { "id": "a", "text": "ثلاثمئة ألفٍ وخمسة آلاف وأربعون" },
-        { "id": "b", "text": "ثلاثة آلاف وخمسمئة وأربعون" },
+        {
+          "id": "b",
+          "text": "ثلاثة آلاف وخمسمئة وأربعون",
+          "misconceptionTag": "math.num.classe-mal-lue"
+        },
         { "id": "c", "text": "ثلاثمئة وخمسة آلاف وأربعون" },
-        { "id": "d", "text": "ثلاثمئة وخمسون ألفًا وأربعون" }
+        {
+          "id": "d",
+          "text": "ثلاثمئة وخمسون ألفًا وأربعون",
+          "misconceptionTag": "math.num.zero-intercalaire-oublie"
+        }
       ],
       "correctOption": "c",
       "explanation": "نُجمّع الأرقام ثلاثيّاتٍ من اليمين: 305 آلاف | 040. والصنف 305 يُقرأ «ثلاثمئة وخمسة»، فيكون العدد «ثلاثمئة وخمسة آلاف وأربعون».",
@@ -35,10 +43,10 @@
     {
       "prompt": "ما العدد الذي يساوي 3×100000 + 7×1000 + 4×10؟",
       "options": [
-        { "id": "a", "text": "370 040" },
+        { "id": "a", "text": "370 040", "misconceptionTag": "math.num.rang-du-chiffre-decale" },
         { "id": "b", "text": "307 040" },
-        { "id": "c", "text": "307 400" },
-        { "id": "d", "text": "30 740" }
+        { "id": "c", "text": "307 400", "misconceptionTag": "math.num.rang-du-chiffre-decale" },
+        { "id": "d", "text": "30 740", "misconceptionTag": "math.num.rang-du-chiffre-decale" }
       ],
       "correctOption": "b",
       "explanation": "3×100000 = 300 000، و7×1000 = 7 000، و4×10 = 40. وبجمع القيم حسب الرتب نحصل على 307 040.",
@@ -48,10 +56,22 @@
     {
       "prompt": "ما الترتيب التنازلي للأعداد: 60 100 ؛ 6 100 ؛ 60 010 ؛ 16 000؟",
       "options": [
-        { "id": "a", "text": "6 100 > 16 000 > 60 010 > 60 100" },
+        {
+          "id": "a",
+          "text": "6 100 > 16 000 > 60 010 > 60 100",
+          "misconceptionTag": "math.num.ordre-croissant-decroissant-confondus"
+        },
         { "id": "b", "text": "60 100 > 60 010 > 16 000 > 6 100" },
-        { "id": "c", "text": "60 010 > 60 100 > 16 000 > 6 100" },
-        { "id": "d", "text": "60 100 > 16 000 > 60 010 > 6 100" }
+        {
+          "id": "c",
+          "text": "60 010 > 60 100 > 16 000 > 6 100",
+          "misconceptionTag": "math.num.comparaison-chiffre-par-chiffre"
+        },
+        {
+          "id": "d",
+          "text": "60 100 > 16 000 > 60 010 > 6 100",
+          "misconceptionTag": "math.num.comparaison-chiffre-par-chiffre"
+        }
       ],
       "correctOption": "b",
       "explanation": "العدد 6 100 وحده من 4 أرقام فهو الأصغر؛ وبين أعداد الـ5 أرقام: 60 100 > 60 010 (المئات 1 > 0) وكلاهما > 16 000 (يبدأ بـ1). الترتيب التنازلي: 60 100 > 60 010 > 16 000 > 6 100.",
@@ -61,9 +81,9 @@
     {
       "prompt": "ما القيمة المقرّبة للعدد 149 500 إلى أقرب ألف؟",
       "options": [
-        { "id": "a", "text": "149 000" },
+        { "id": "a", "text": "149 000", "misconceptionTag": "math.num.arrondi-par-troncature" },
         { "id": "b", "text": "149 500" },
-        { "id": "c", "text": "200 000" },
+        { "id": "c", "text": "200 000", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" },
         { "id": "d", "text": "150 000" }
       ],
       "correctOption": "d",

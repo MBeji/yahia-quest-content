@@ -10,9 +10,13 @@
       "prompt": "كيف نكتب بالأرقام «ثلاثة فاصل سبعة»؟",
       "options": [
         { "id": "a", "text": "3,7" },
-        { "id": "b", "text": "37" },
-        { "id": "c", "text": "0,37" },
-        { "id": "d", "text": "3,07" }
+        {
+          "id": "b",
+          "text": "37",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        },
+        { "id": "c", "text": "0,37", "misconceptionTag": "math.num.virgule-mal-placee" },
+        { "id": "d", "text": "3,07", "misconceptionTag": "math.num.zero-apres-virgule-ignore" }
       ],
       "correctOption": "a",
       "explanation": "«ثلاثة» جزءٌ صحيح و«سبعة أعشار» جزءٌ عشريّ، فالعددُ 3,7.",
@@ -22,10 +26,10 @@
     {
       "prompt": "ما الرقمُ في رتبة الأجزاء من الألف في العدد 6,374؟",
       "options": [
-        { "id": "a", "text": "7" },
-        { "id": "b", "text": "3" },
+        { "id": "a", "text": "7", "misconceptionTag": "math.num.rang-decimal-confondu" },
+        { "id": "b", "text": "3", "misconceptionTag": "math.num.rang-decimal-confondu" },
         { "id": "c", "text": "4" },
-        { "id": "d", "text": "6" }
+        { "id": "d", "text": "6", "misconceptionTag": "math.num.rang-decimal-confondu" }
       ],
       "correctOption": "c",
       "explanation": "في 6,374: 3 أعشار، 7 أجزاء من المئة، 4 أجزاء من الألف. إذن الرقمُ المطلوب 4.",
@@ -35,7 +39,7 @@
     {
       "prompt": "أيُّ عددٍ أكبر: 0,8 أم 0,79؟",
       "options": [
-        { "id": "a", "text": "0,79" },
+        { "id": "a", "text": "0,79", "misconceptionTag": "math.dec.compare-by-length" },
         { "id": "b", "text": "0,8" },
         { "id": "c", "text": "متساويان" },
         { "id": "d", "text": "0,079" }
@@ -48,9 +52,13 @@
     {
       "prompt": "ما تفكيكُ العدد 5,07؟",
       "options": [
-        { "id": "a", "text": "5 + 0,7" },
-        { "id": "b", "text": "5 + 0,007" },
-        { "id": "c", "text": "50 + 7" },
+        { "id": "a", "text": "5 + 0,7", "misconceptionTag": "math.num.rang-decimal-confondu" },
+        { "id": "b", "text": "5 + 0,007", "misconceptionTag": "math.num.rang-decimal-confondu" },
+        {
+          "id": "c",
+          "text": "50 + 7",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        },
         { "id": "d", "text": "5 + 0,07" }
       ],
       "correctOption": "d",
@@ -62,9 +70,9 @@
       "prompt": "ما تدويرُ 14,62 إلى أقرب وحدة؟",
       "options": [
         { "id": "a", "text": "15" },
-        { "id": "b", "text": "14" },
-        { "id": "c", "text": "14,6" },
-        { "id": "d", "text": "14,7" }
+        { "id": "b", "text": "14", "misconceptionTag": "math.num.arrondi-par-troncature" },
+        { "id": "c", "text": "14,6", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" },
+        { "id": "d", "text": "14,7", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" }
       ],
       "correctOption": "a",
       "explanation": "الرقمُ بعد الوحدات هو 6 (≥ 5) فنُدوّر الوحداتِ صعودًا: 14,62 ≈ 15.",
@@ -74,10 +82,10 @@
     {
       "prompt": "كم جزءًا من المئة في العدد 0,3؟",
       "options": [
-        { "id": "a", "text": "3" },
-        { "id": "b", "text": "300" },
+        { "id": "a", "text": "3", "misconceptionTag": "math.num.rang-decimal-confondu" },
+        { "id": "b", "text": "300", "misconceptionTag": "math.num.rang-decimal-confondu" },
         { "id": "c", "text": "30" },
-        { "id": "d", "text": "0,03" }
+        { "id": "d", "text": "0,03", "misconceptionTag": "math.num.rang-decimal-confondu" }
       ],
       "correctOption": "c",
       "explanation": "0,3 = 0,30 = 30 جزءًا من المئة.",

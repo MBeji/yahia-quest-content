@@ -1437,5 +1437,228 @@
       "en": "You give a different quantity from the one asked — the other unknown, or an intermediate result: read the question again before choosing",
       "ar": "تعطي مقدارًا غير المطلوب — المجهول الآخر أو نتيجة وسيطة: أعد قراءة السؤال قبل الاختيار"
     }
+  },
+  "math.num.rang-du-chiffre-decale": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu te trompes de rang d'un cran : les rangs se comptent à partir des unités, vers la gauche",
+      "en": "You are off by one place: places are counted from the units, leftwards",
+      "ar": "تُخطئ في الرتبة بمقدار مرتبةٍ واحدة: تُعَدُّ الرتبُ انطلاقًا من الآحاد نحو اليسار"
+    },
+    "competency": "math.num.entiers-lecture-ecriture"
+  },
+  "math.num.zero-intercalaire-oublie": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu perds ou tu déplaces un zéro à l'intérieur du nombre : chaque rang vide s'écrit avec un 0",
+      "en": "You drop or misplace an inner zero: every empty place must be written as a 0",
+      "ar": "تُسقِط الصفرَ الداخليَّ أو تُزحزحه: كلُّ رتبةٍ خاليةٍ تُكتَب صفرًا"
+    },
+    "competency": "math.num.entiers-lecture-ecriture"
+  },
+  "math.num.classe-mal-lue": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu changes de classe en lisant : les unités, les mille et les millions ne sont pas au même rang",
+      "en": "You read the number in the wrong class: units, thousands and millions sit at different places",
+      "ar": "تُخطئ في الصنف عند القراءة: الآحادُ والآلافُ والملايينُ ليست في الرتبة نفسها"
+    },
+    "competency": "math.num.entiers-lecture-ecriture"
+  },
+  "math.num.arrondi-par-troncature": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu coupes le nombre au lieu de l'arrondir : c'est le chiffre suivant qui décide si on monte",
+      "en": "You cut the number instead of rounding it: the next digit decides whether you round up",
+      "ar": "تقطعُ العددَ بدل تدويره: الرقمُ الذي يلي رتبةَ التدوير هو الذي يُقرّر الصعود"
+    }
+  },
+  "math.num.arrondi-au-mauvais-rang": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu arrondis à un autre rang que celui demandé",
+      "en": "You round to a different place than the one you were asked for",
+      "ar": "تُدوّر إلى رتبةٍ غيرِ الرتبة المطلوبة"
+    }
+  },
+  "math.num.comparaison-chiffre-par-chiffre": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu compares les nombres chiffre par chiffre sans tenir compte du rang de chacun",
+      "en": "You compare digit by digit without looking at each digit's place",
+      "ar": "تُقارن الأعدادَ رقمًا برقمٍ دون النظر إلى رتبة كلِّ رقم"
+    },
+    "competency": "math.num.entiers-lecture-ecriture"
+  },
+  "math.num.ordre-croissant-decroissant-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu ranges dans l'autre sens : croissant va du plus petit au plus grand, décroissant l'inverse",
+      "en": "You order the other way round: ascending goes smallest to largest, descending the reverse",
+      "ar": "ترتّب في الاتّجاه المعاكس: التصاعديُّ من الأصغر إلى الأكبر، والتنازليُّ عكسه"
+    },
+    "competency": "math.num.entiers-lecture-ecriture"
+  },
+  "math.num.vocabulaire-operations-confondu": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds les noms des opérations et de leurs résultats : somme et termes, différence, produit et facteurs, quotient",
+      "en": "You mix up the names of the operations and their results: sum and terms, difference, product and factors, quotient",
+      "ar": "تخلط بين أسماء العمليّات ونتائجها: المجموعُ وحدّاه، والفرقُ، والجداءُ وعاملاه، والخارجُ"
+    },
+    "competency": "math.num.operations-entiers"
+  },
+  "math.num.retenue-oubliee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu oublies la retenue : quand une colonne dépasse 9, il faut reporter 1 sur la colonne de gauche",
+      "en": "You forget the carry: when a column goes past 9, carry 1 into the column on its left",
+      "ar": "تنسى الاحتفاظ: إذا تجاوز مجموعُ العمود 9 وجب نقلُ 1 إلى العمود الذي على يساره"
+    },
+    "competency": "math.num.operations-entiers"
+  },
+  "math.num.emprunt-oublie": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu oublies l'emprunt : quand tu ne peux pas retrancher, tu prends une unité à la colonne de gauche",
+      "en": "You forget to borrow: when you cannot subtract, take one unit from the column on the left",
+      "ar": "تنسى الاستلاف: إذا تعذّر الطرحُ أخذتَ وحدةً من العمود الذي على اليسار"
+    },
+    "competency": "math.num.operations-entiers"
+  },
+  "math.num.priorite-operations-ignoree": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu calcules de gauche à droite : la multiplication et la division passent avant l'addition et la soustraction",
+      "en": "You compute left to right: multiplication and division come before addition and subtraction",
+      "ar": "تحسبُ من اليسار إلى اليمين: الضربُ والقسمةُ يسبقان الجمعَ والطرح"
+    },
+    "competency": "math.num.operations-entiers"
+  },
+  "math.num.operation-inverse-appliquee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu fais l'opération contraire de celle demandée : une addition au lieu d'une soustraction, une somme au lieu d'un produit",
+      "en": "You do the opposite operation: an addition instead of a subtraction, a sum instead of a product",
+      "ar": "تُجري العمليّةَ المعاكسةَ للمطلوبة: جمعًا بدل الطرح، أو جمعًا بدل الضرب"
+    },
+    "competency": "math.num.operations-entiers"
+  },
+  "math.num.reste-superieur-ou-egal-au-diviseur": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu laisses un reste plus grand que le diviseur : dans une division euclidienne, le reste est toujours plus petit que lui",
+      "en": "You leave a remainder larger than the divisor: in a Euclidean division the remainder is always smaller",
+      "ar": "تترك باقيًا أكبرَ من القاسم: في القسمة الإقليدية يكون الباقي دائمًا أصغرَ من القاسم"
+    },
+    "competency": "math.num.operations-entiers"
+  },
+  "math.num.partie-entiere-et-decimale-confondues": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu donnes la partie décimale à la place de la partie entière, ou l'inverse : la virgule les sépare",
+      "en": "You give the decimal part instead of the whole part, or the other way round: the comma separates them",
+      "ar": "تُعطي الجزءَ العشريَّ مكانَ الجزء الصحيح أو العكس: الفاصلةُ هي التي تفصل بينهما"
+    },
+    "competency": "math.num.decimaux-sens"
+  },
+  "math.num.rang-decimal-confondu": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds les rangs après la virgule : d'abord les dixièmes, puis les centièmes, puis les millièmes",
+      "en": "You mix up the places after the comma: tenths first, then hundredths, then thousandths",
+      "ar": "تخلط بين الرتب بعد الفاصلة: الأعشارُ أوّلًا، ثمّ الأجزاء من المئة، ثمّ الأجزاء من الألف"
+    },
+    "competency": "math.num.decimaux-sens"
+  },
+  "math.num.zero-apres-virgule-ignore": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu ignores un zéro de la partie décimale : 4,05 n'est pas 4,5 et 8,305 n'est pas 8,35",
+      "en": "You ignore a zero in the decimal part: 4.05 is not 4.5 and 8.305 is not 8.35",
+      "ar": "تتجاهل صفرًا في الجزء العشريّ: 4,05 ليست 4,5 و 8,305 ليست 8,35"
+    },
+    "competency": "math.num.decimaux-sens"
+  },
+  "math.num.virgule-ignoree-nombre-lu-entier": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu lis le nombre comme s'il n'y avait pas de virgule : 13,6 se lit treize et six dixièmes, pas cent trente-six",
+      "en": "You read the number as if the comma were not there: 13.6 is thirteen and six tenths, not one hundred thirty-six",
+      "ar": "تقرأ العددَ كأنّ الفاصلةَ غيرُ موجودة: 13,6 هي ثلاثةَ عشرَ وستّةُ أعشار، لا مئةً وستّةً وثلاثين"
+    },
+    "competency": "math.num.decimaux-sens"
+  },
+  "math.num.virgule-mal-placee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu places la virgule au mauvais endroit : elle se met juste après le chiffre des unités",
+      "en": "You put the comma in the wrong spot: it goes right after the units digit",
+      "ar": "تضع الفاصلةَ في غير موضعها: موضعُها مباشرةً بعد رقم الآحاد"
+    },
+    "competency": "math.num.decimaux-sens"
+  },
+  "math.num.decimaux-alignes-a-droite": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu alignes les chiffres à droite : dans une addition ou une soustraction décimale, c'est la virgule qu'on aligne",
+      "en": "You align the digits to the right: in a decimal addition or subtraction it is the comma you line up",
+      "ar": "ترصُّ الأرقامَ إلى اليمين: في جمع الأعداد العشريّة وطرحِها نرصُّ الفاصلةَ تحت الفاصلة"
+    },
+    "competency": "math.num.add-sous-decimaux"
+  },
+  "math.num.soustraction-colonne-petit-du-grand": {
+    "subject": "math",
+    "labels": {
+      "fr": "Dans chaque colonne tu retranches le petit chiffre du grand : quand tu ne peux pas retrancher, il faut emprunter",
+      "en": "In each column you subtract the smaller digit from the larger one: when you cannot subtract, you must borrow",
+      "ar": "تطرح في كلّ عمودٍ الرقمَ الأصغرَ من الأكبر: إذا تعذّر الطرحُ وجب الاستلاف"
+    },
+    "competency": "math.num.add-sous-decimaux"
+  },
+  "math.num.virgule-perdue-dans-le-resultat": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu calcules comme si la virgule n'existait pas et tu ne la remets pas dans le résultat",
+      "en": "You compute as if the comma were not there and you do not put it back in the result",
+      "ar": "تحسبُ كأنّ الفاصلةَ غيرُ موجودة ولا تُعيدها إلى النتيجة"
+    },
+    "competency": "math.num.mult-div-decimaux"
+  },
+  "math.num.produit-decimales-mal-comptees": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu comptes mal les chiffres après la virgule du produit : il en a autant que les deux facteurs réunis",
+      "en": "You miscount the digits after the comma in the product: it has as many as both factors together",
+      "ar": "تُخطئ في عدد الأرقام العشريّة للجداء: عددُها هو مجموعُ أرقام العاملَين العشريّة"
+    },
+    "competency": "math.num.mult-div-decimaux"
+  },
+  "math.num.puissance-de-dix-rangs-mal-comptes": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu déplaces la virgule du mauvais nombre de rangs : autant de rangs que de zéros",
+      "en": "You move the comma by the wrong number of places: as many places as there are zeros",
+      "ar": "تُزحزح الفاصلةَ بعددٍ خاطئٍ من الرتب: عددُ الرتب هو عددُ الأصفار"
+    },
+    "competency": "math.num.mult-div-decimaux"
+  },
+  "math.num.puissance-de-dix-sens-inverse": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu déplaces la virgule dans le mauvais sens : multiplier par 10 agrandit le nombre, diviser le réduit",
+      "en": "You move the comma the wrong way: multiplying by 10 makes the number bigger, dividing makes it smaller",
+      "ar": "تُزحزح الفاصلةَ في الاتّجاه الخاطئ: الضربُ في 10 يُكبّر العددَ والقسمةُ تُصغّره"
+    },
+    "competency": "math.num.mult-div-decimaux"
+  },
+  "math.num.zero-intercale-dans-le-resultat": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu glisses un zéro de trop juste après la virgule du résultat",
+      "en": "You slip an extra zero in right after the comma of the result",
+      "ar": "تُقحِم صفرًا زائدًا مباشرةً بعد فاصلة النتيجة"
+    },
+    "competency": "math.num.mult-div-decimaux"
   }
 }

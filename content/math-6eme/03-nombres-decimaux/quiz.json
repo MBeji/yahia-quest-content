@@ -5,9 +5,21 @@
       "prompt": "في العدد 25,84 ما الجزءُ الصحيح؟",
       "options": [
         { "id": "a", "text": "25" },
-        { "id": "b", "text": "84" },
-        { "id": "c", "text": "2 584" },
-        { "id": "d", "text": "0,84" }
+        {
+          "id": "b",
+          "text": "84",
+          "misconceptionTag": "math.num.partie-entiere-et-decimale-confondues"
+        },
+        {
+          "id": "c",
+          "text": "2 584",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        },
+        {
+          "id": "d",
+          "text": "0,84",
+          "misconceptionTag": "math.num.partie-entiere-et-decimale-confondues"
+        }
       ],
       "correctOption": "a",
       "explanation": "الجزءُ الصحيح هو ما يسبق الفاصلة: 25؛ أمّا 84 فهو الجزءُ العشريّ.",
@@ -18,9 +30,9 @@
       "prompt": "ما الرقمُ في رتبة الأعشار في العدد 7,309؟",
       "options": [
         { "id": "a", "text": "3" },
-        { "id": "b", "text": "0" },
-        { "id": "c", "text": "9" },
-        { "id": "d", "text": "7" }
+        { "id": "b", "text": "0", "misconceptionTag": "math.num.rang-decimal-confondu" },
+        { "id": "c", "text": "9", "misconceptionTag": "math.num.rang-decimal-confondu" },
+        { "id": "d", "text": "7", "misconceptionTag": "math.num.rang-decimal-confondu" }
       ],
       "correctOption": "a",
       "explanation": "الرقمُ الأوّلُ بعد الفاصلة هو رتبةُ الأعشار: إنّه 3.",
@@ -30,10 +42,14 @@
     {
       "prompt": "أيُّ عددٍ يساوي 4,5؟",
       "options": [
-        { "id": "a", "text": "4,05" },
+        { "id": "a", "text": "4,05", "misconceptionTag": "math.num.zero-apres-virgule-ignore" },
         { "id": "b", "text": "4,50" },
-        { "id": "c", "text": "45" },
-        { "id": "d", "text": "0,45" }
+        {
+          "id": "c",
+          "text": "45",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        },
+        { "id": "d", "text": "0,45", "misconceptionTag": "math.num.virgule-mal-placee" }
       ],
       "correctOption": "b",
       "explanation": "إضافةُ صفرٍ على يمين الجزء العشريّ لا تُغيّر القيمة: 4,5 = 4,50.",
@@ -43,10 +59,14 @@
     {
       "prompt": "أيُّ مقارنةٍ صحيحة؟",
       "options": [
-        { "id": "a", "text": "3,7 < 3,65" },
-        { "id": "b", "text": "3,7 = 3,07" },
+        { "id": "a", "text": "3,7 < 3,65", "misconceptionTag": "math.dec.compare-by-length" },
+        {
+          "id": "b",
+          "text": "3,7 = 3,07",
+          "misconceptionTag": "math.num.zero-apres-virgule-ignore"
+        },
         { "id": "c", "text": "3,7 > 3,65" },
-        { "id": "d", "text": "3,65 > 3,7" }
+        { "id": "d", "text": "3,65 > 3,7", "misconceptionTag": "math.dec.compare-by-length" }
       ],
       "correctOption": "c",
       "explanation": "الجزءان الصحيحان متساويان (3)، ثمّ نقارن الأعشار: 7 > 6، إذن 3,7 > 3,65.",
@@ -56,10 +76,10 @@
     {
       "prompt": "ما تدويرُ 8,46 إلى أقرب عُشر؟",
       "options": [
-        { "id": "a", "text": "8,4" },
+        { "id": "a", "text": "8,4", "misconceptionTag": "math.num.arrondi-par-troncature" },
         { "id": "b", "text": "8,5" },
         { "id": "c", "text": "8,46" },
-        { "id": "d", "text": "9" }
+        { "id": "d", "text": "9", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" }
       ],
       "correctOption": "b",
       "explanation": "الرقمُ بعد الأعشار هو 6 (≥ 5) فنُدوّر الأعشارَ صعودًا: 8,46 ≈ 8,5.",

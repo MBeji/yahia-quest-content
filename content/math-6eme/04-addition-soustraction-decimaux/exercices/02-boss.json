@@ -12,7 +12,7 @@
         { "id": "a", "text": "15,5" },
         { "id": "b", "text": "15,3" },
         { "id": "c", "text": "16,5" },
-        { "id": "d", "text": "153" }
+        { "id": "d", "text": "153", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" }
       ],
       "correctOption": "a",
       "explanation": "نجمع والفاصلةُ تحت الفاصلة: 10,2 + 5,3 = 15,5.",
@@ -23,7 +23,7 @@
       "prompt": "ما ناتجُ 12,4 + 7,68؟",
       "options": [
         { "id": "a", "text": "20,8" },
-        { "id": "b", "text": "19,08" },
+        { "id": "b", "text": "19,08", "misconceptionTag": "math.num.retenue-oubliee" },
         { "id": "c", "text": "20,08" },
         { "id": "d", "text": "20,18" }
       ],
@@ -35,10 +35,14 @@
     {
       "prompt": "ما ناتجُ 15 − 6,4؟",
       "options": [
-        { "id": "a", "text": "9,6" },
+        { "id": "a", "text": "9,6", "misconceptionTag": "math.num.emprunt-oublie" },
         { "id": "b", "text": "8,6" },
         { "id": "c", "text": "8,4" },
-        { "id": "d", "text": "9,4" }
+        {
+          "id": "d",
+          "text": "9,4",
+          "misconceptionTag": "math.num.soustraction-colonne-petit-du-grand"
+        }
       ],
       "correctOption": "b",
       "explanation": "نكتب 15 في صورة 15,0 ثمّ نطرح: 15,0 − 6,4 = 8,6.",
@@ -49,7 +53,7 @@
       "prompt": "ما ناتجُ 9,05 − 3,7؟",
       "options": [
         { "id": "a", "text": "5,25" },
-        { "id": "b", "text": "6,35" },
+        { "id": "b", "text": "6,35", "misconceptionTag": "math.num.emprunt-oublie" },
         { "id": "c", "text": "5,45" },
         { "id": "d", "text": "5,35" }
       ],
