@@ -36,6 +36,9 @@ name: Roadmap sync
 
 on:
   pull_request:
+    types: [synchronize, reopened]
+    # ⚠️ `opened` volontairement absent — même raison que `content-ci.yml` (étude 32,
+    # lot 1). Le récit complet y est ; ici c'est le même fantôme, sur le même SHA.
     paths:
       - "FableEtudes/ROADMAP.md"
   schedule:

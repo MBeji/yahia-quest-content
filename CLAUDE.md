@@ -57,15 +57,24 @@
   anti-boucle de GitHub empêche une PR ouverte par le `GITHUB_TOKEN` de faire tourner ses checks,
   donc `content-ci` ne démarrerait jamais sur elle — et `automerge` refusant, à raison, de
   merger un SHA sans aucun check run, la PR dormirait. D'où son `workflow_dispatch`.
-  ⚠️ **Ce refus laisse une trace trompeuse, et elle a déjà coûté trois fois.** GitHub enregistre
-  quand même un run `pull_request` — qui sort à **ZÉRO job**, en `failure`. Il n'a rien évalué,
-  mais il ressemble à un gate rouge sur `gh pr checks`, et à « un run existe » pour qui compte les
-  runs. #280 y a lu un doublon qui s'annulait (il n'y a jamais eu de course) ; #291 en a tiré une
-  garde qui a **gelé la chaîne entière** une journée (#297) ; #293 a compté 37 de ces fantômes
-  comme des « gardes en échec ». Un seul test tranche, toujours le même :
+  ⚠️ **Ce refus laissait une trace trompeuse, et elle a coûté trois fois.** GitHub enregistrait
+  quand même un run `pull_request` — sorti à **ZÉRO job**, en `failure`. Il n'avait rien évalué,
+  mais il ressemblait à un gate rouge sur `gh pr checks`, et à « un run existe » pour qui compte
+  les runs. #280 y a lu un doublon qui s'annulait (il n'y a jamais eu de course) ; #291 en a tiré
+  une garde qui a **gelé la chaîne entière** une journée (#297) ; #293 a compté 37 de ces fantômes
+  comme des « gardes en échec ». Un seul test tranchait, toujours le même :
   `gh run view <id> --json jobs --jq '.jobs | length'` — **0 ⇒ ce run n'a rien évalué.**
-  C'est le critère que posent désormais `auto-pr.yml` (dispatcher ou non) et `guard-watch.yml`
-  (alarmer ou non).
+  ✅ **La cause est supprimée depuis l'étude 32 (lot 1)** : `content-ci`, `roadmap-sync` et
+  `automerge` déclarent `types:` SANS `opened`, l'événement qui faisait naître ces runs. Mesuré
+  sur la PR #343 juste avant le correctif : trois runs `pull_request` en `failure`, zéro job
+  chacun, pendant que les vrais tournaient en `workflow_dispatch`. Un invariant de
+  `harness:check --corpus` fait désormais **échouer la CI** si un workflow d'ici réécoute
+  `opened` — sans quoi la correction ne tiendrait qu'à la mémoire de la prochaine session.
+  ⚠️ **Le test « zéro job » reste en place**, et ce n'est pas un oubli : dans `auto-pr.yml` il ne
+  détecte pas un fantôme mais décide s'il faut dispatcher (sans lui, chaque branche repaie ses
+  checks en double), et dans `guard-watch.yml` il coûte un appel d'API par run rouge pour que
+  l'alarme dise vrai même si quelqu'un remet `opened` un jour. Retirer un filet parce que sa
+  cause est absente, c'est très exactement le geste de #291.
   Sans ce ramassage, une session qui pousse puis s'arrête laisse sa branche sans PR :
   **8 branches `claude/*` étaient dans ce cas au 2026-08-24, jusqu'à cinq semaines.**
   ⚠️ Il exige le réglage `Settings > Actions > General > Workflow permissions >`

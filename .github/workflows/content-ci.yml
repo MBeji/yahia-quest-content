@@ -19,6 +19,20 @@ name: Content CI
 
 on:
   pull_request:
+    types: [synchronize, reopened]
+  # ⚠️ `opened` est VOLONTAIREMENT absent (étude 32, lot 1 — voie de repli de Q-1).
+  # Sans `types:`, GitHub écoute [opened, synchronize, reopened] par défaut, et c'est
+  # `opened` qui produisait le fantôme : une PR ouverte par le GITHUB_TOKEN fait
+  # ENREGISTRER un run `pull_request` que la garde anti-boucle refuse aussitôt — il
+  # sort `failure` à ZÉRO job, sans rien avoir évalué. 3 par PR ici, 21 % des runs du
+  # dépôt sur six jours, et trois incidents nés de sa lecture (#280, #291, #293).
+  # Rien n'est perdu : `auto-pr.yml` ouvre la PR de toute branche poussée PUIS
+  # dispatche les checks qui n'ont pas de run réel sur le SHA, et `synchronize`
+  # couvre chaque poussée suivante.
+  # ⚠️ Cas résiduel assumé : une PR ouverte À LA MAIN sur une branche qui n'a plus
+  # bougé depuis n'a aucun check — elle ne peut donc pas merger (`automerge` refuse un
+  # SHA sans check run) et reste visible plutôt que de passer en douce. La sortir de là
+  # tient en un `workflow_dispatch` ou une poussée.
   push:
     branches: [main]
   # Indispensable à `auto-pr.yml`, pas un confort : une PR ouverte par le
