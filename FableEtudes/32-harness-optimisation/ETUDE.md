@@ -74,9 +74,9 @@ retirer un seul filet.
 | KPI                                                     | Aujourd'hui (2026-09-03)                | Cible après L1-L4                          |
 | ------------------------------------------------------- | --------------------------------------- | ------------------------------------------ |
 | Runs `failure` à zéro job au privé (6 j)                | 167 (21 % des runs)                     | **0**                                      |
-| Runs par branche poussée au privé (moyenne)             | ≈ 8,4 (800 runs / 95 pushes)            | ≤ 4                                        |
+| Runs par branche poussée au privé (moyenne)             | **9,7** (runs hors branche par défaut ÷ 48 branches, définition d'`actions-census`) | ≤ 4 |
 | Runs CI+CodeQL+Migration gate par branche neuve, moteur | 6 (3 natifs + 3 dispatchés)             | 3 (dispatch seulement si le natif manque)  |
-| Runs de `second-opinion` dormant (4,4 j)                | 71                                      | 0 hors label / dispatch                    |
+| Runs de `second-opinion` dormant (4,4 j)                | 71 **runners alloués**                  | ✅ **0 runner** (livré, arena#970) — la LIGNE du run demeure, avec un job `skipped` : la cible d'origine disait « 0 run », elle était fausse |
 | Invariants `harness:check` vérifiés sur le privé        | 1 (épinglage, en bash)                  | ≥ 6 (spec skills, Unicode, budget, YAML, épinglage, `controls.json` vérifié) |
 | Skills hors spec Agent Skills (description > 1 024)     | 2, invisibles                           | 0, et gatés                                |
 | Lignes de workflow en double entre dépôts               | 1 579                                   | ≤ 400 (guard-watch partagé, chaîne PR ensuite) |
@@ -311,7 +311,7 @@ est un rouge pour le ruleset) — on ne la rouvre pas.
 un `actions/checkout` avec `fetch-depth: 0`, **puis** constate que le secret manque et skippe. 71
 runs en 4,4 jours. L'étude « IA → déterministe » L5 a borné l'agent, pas le workflow.
 
-**Remède.** Une condition **de job**, avant tout checkout : `if: vars.SECOND_OPINION_ARMED == 'true'
+**Remède — ✅ LIVRÉ le 2026-09-04 (arena#970).** Une condition **de job**, avant tout checkout : `if: vars.SECOND_OPINION_ARMED == 'true'
 || github.event.label.name == 'second-avis' || github.event_name == 'workflow_dispatch'`. La variable
 de dépôt remplace le test du secret (un `if:` de job ne peut pas lire `secrets`) ; `gh variable set`
 est dans `policy.json` (`repo-config`). Le double verrou (secret + `models.json`) reste dans le job.
@@ -470,7 +470,7 @@ au contenu de `verify`.
 | Lignes de workflow dupliquées                  | 1 579                                    | ≈ 350 (`automerge` seulement)                                    |
 | `policy.json`                                  | 92 allow, 7,3 Ko de commentaire          | ≤ 60 allow, une raison par groupe, plus de lectures couvertes     |
 | `AGENTS.md`                                    | 250 l. / 24,2 Ko                         | ≤ 200 l., alerte à 230                                            |
-| Mesure                                         | à la main, une fois                      | `actions-census.mjs`, rejouable                                   |
+| Mesure                                         | à la main, une fois                      | ✅ `actions-census.mjs`, rejouable (livré, arena#970) — `--from` rejoue un dump hors ligne |
 
 Arborescence touchée (aucun fichier produit) :
 
@@ -527,6 +527,8 @@ Points durs :
   `zero-intervention.md` — qu'il cite déjà.
 
 - [ ] Lot 1 — La chaîne cesse de crier pour rien (D-1, D-2, D-4, D-11)
+      - [x] moitié **moteur** — D-4 (garde dormant borné) + D-11 (recensement) — arena#970, 2026-09-04
+      - [ ] moitié **privé** — D-1, D-2 : attend la VALEUR du PAT (Q-1)
 - [ ] Lot 2 — Un seul `harness:check` pour les deux dépôts (D-5, D-8 seuil, D-10)
 - [ ] Lot 3 — Le moteur ne paie plus deux fois ; `guard-watch` partagé (D-3, D-6)
 - [ ] Lot 4 — La politique dit moins et couvre plus ; `AGENTS.md` respire (D-7, D-8)
@@ -571,6 +573,27 @@ suivent la recommandation de l'architecte**. Aucun ADR du §4 n'a eu à être r�
 | Q-4 | `programmes-officiels/` hors du skill (C-13) : lot dédié, tout de suite, ou jamais ?               | ✅ **lot 5 optionnel, APRÈS le lot 2** — le gate `harness:check --corpus` protège alors le déplacement au lieu de le subir. Ordre non négociable : ce registre est le garde-fou anti-double-transcription, et un faux « rien à faire » y est le pire résultat possible                                                                                        |
 
 ## 10. Journal d'exécution
+
+- **2026-09-04 — Lot 1, moitié moteur livrée (arena#970).** Les deux décisions qui ne dépendaient
+  d'aucun jeton : **D-4**, la condition de job de `second-opinion.yml`, et **D-11**,
+  `scripts/ci/actions-census.mjs` (+ 18 tests). Le garde a skippé en zéro seconde dès le premier
+  run de la PR elle-même — la preuve est arrivée sur le diff qui la produisait.
+  **Deux chiffres de cette étude étaient faux, et la livraison les a corrigés** :
+  - la cible « 0 run » pour le garde dormant **n'était pas atteignable** : un `if:` de job supprime
+    le runner et le clone, pas la LIGNE du run (job `skipped`). Seul un filtre de déclencheur le
+    ferait, et il est écarté depuis le lot L5 de l'étude « IA → déterministe ». Le KPI dit
+    désormais ce qui se mesure : **runners alloués** ;
+  - « 9,7 runs par branche » remplace le « ≈ 8,4 » du §1.3 : celui-ci divisait 800 runs par
+    95 *pushes*, le script divise les runs des branches hors défaut par le nombre de **branches**.
+    Deux définitions défendables, une seule doit faire foi — c'est celle du script, puisque c'est
+    lui qui rejouera la mesure.
+  **Ce que le relevé de la PR a montré en passant** : sur cette PR du moteur, `verify`, `CodeQL` et
+  les deux checks de migration ont tourné **en double** — le run natif et celui qu'`auto-pr`
+  dispatche sans regarder si le premier existe. C-4 vu en direct, sur le diff d'une étude qui le
+  décrit. Le lot 3 le ferme.
+  ⚠️ **Ce qui n'est pas prouvé** : le chemin réseau du recensement (`gh api`). `gh` était absent de
+  la session ; les 18 tests couvrent les fonctions pures et `--from` a rejoué les dumps réels, à
+  l'identique des tableaux du §2.2. Le vérifier est le premier geste de qui l'utilisera.
 
 - **2026-09-04 — Validation.** Les quatre questions ont été posées **une par une** à Mohamed, avec
   leurs contreparties chiffrées ; **les quatre réponses suivent la recommandation** (§9). Statut
