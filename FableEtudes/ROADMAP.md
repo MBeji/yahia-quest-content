@@ -451,8 +451,13 @@ règle elle-même, qui est désormais opposable.
       Actions** fourni (Q-2 — s'il montre un dépassement, ce lot passe au **rang 0**), le récit des
       workflows déplacé dans `docs/agents/incidents-ci.md` sur les fichiers touchés (Q-3), et
       `programmes-officiels/` sorti du skill en **lot 5, après le lot 2** (Q-4). Quatre lots plus un
-      optionnel, aucun bloqué : **prendre L1** (sa moitié moteur — garde dormant borné, script de
-      recensement — n'attend même pas le jeton). Sur relevé : **167 runs `failure` à zéro job sur 800** au privé en six jours (les fantômes de
+      optionnel. ✅ **Sa moitié MOTEUR est livrée le 2026-09-04** (arena#970) : le garde dormant
+      `second-opinion` ne démarre plus un runner pour dire qu'il est éteint (il le faisait 71 fois
+      en 4,4 jours, en clonant l'historique complet), et `actions-census.mjs` rend le relevé
+      **rejouable** — sans quoi cette étude n'aurait jamais eu d'« après ». Elle a corrigé deux
+      chiffres de l'étude au passage, dont une cible qui n'était pas atteignable. **Reste la moitié
+      privée de L1** (fantômes + réveils d'automerge), qui attend la seule *valeur* du jeton.
+      Sur relevé : **167 runs `failure` à zéro job sur 800** au privé en six jours (les fantômes de
       `pull_request:opened`), **5 réveils d'automerge par branche**, **CI + CodeQL + Migration gate
       en double** sur chaque branche neuve du moteur (38 dispatch pour 71 runs natifs), et un
       `harness:check` dont la borne « description ≤ 1 024 » n'a jamais rien mesuré (bug reproduit
