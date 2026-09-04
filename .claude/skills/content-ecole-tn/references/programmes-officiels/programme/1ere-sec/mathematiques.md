@@ -1,4 +1,4 @@
-﻿# Mathématiques — 1ère année secondaire (tronc commun) · programme officiel CNP
+# Mathématiques — 1ère année secondaire (tronc commun) · programme officiel CNP
 
 > **Sources** :
 >

@@ -8,14 +8,12 @@ description: >-
   manuel / polycopié / annale et en faire du contenu », « importer une source
   externe / digitaliser un cours ou des exercices depuis un scan », or to run the
   source→content path for the CNP corpus. Orchestrates three layers: ScribeKit
-  (deterministic extraction + scaffold + validated manifest + resumable tracking,
-  0 LLM / 0 API key) → the AGENT reads & transcribes the scanned pages faithfully
-  with the Claude subscription (NO API key) → confront the official CNP program →
-  hand off to the generation skills. It TRANSCRIBES, it never GENERATES; output is
-  always versioned content/ (or programme/…) files on a branch + gates + human
-  review, never a direct DB write. Defers to content-engine (schema / quality bar /
-  rewards / style / notation) and content-ecole-tn (program fidelity). Studies:
-  FableEtudes/12-studio-ingestion (the channel) + FableEtudes/13 (the ScribeKit engine).
+  (deterministic extraction + scaffold + validated manifest, 0 LLM / 0 API key) →
+  the AGENT reads & transcribes the scanned pages faithfully with the Claude
+  subscription (NO API key) → confront the official CNP program → hand off to the
+  generation skills. It TRANSCRIBES, it never GENERATES; output is always versioned
+  content/ files on a branch + gates + human review, never a direct DB write. Defers
+  to content-engine and content-ecole-tn.
 ---
 
 # content-ingest — ingestion source → contenu (ScribeKit + vision agent)

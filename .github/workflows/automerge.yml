@@ -17,7 +17,8 @@ name: Automerge (corpus)
 # privé) rendrait le gate réellement contraignant. À relire le jour où l'on décide d'upgrader.
 #
 # ⚠️ ÉTAT, PAS ÉVÉNEMENT — la leçon du 2026-08-16, et la clé de lecture de tout ce fichier.
-# La première version n'évaluait une PR qu'à l'instant précis où « Content CI » ou « Pin check »
+# La première version n'évaluait une PR qu'à l'instant précis où « Content CI » (ou « Pin check »,
+# supprimé depuis à l'étude 32 lot 2)
 # finissait, et une seule fois. Une évaluation unique, sans reprise : tout ce qui rendait la PR
 # éligible APRÈS ce coup d'œil était perdu pour de bon. Deux PR vertes, propres, sans conflit et
 # sans label sont restées ouvertes deux jours pour cette seule raison :
@@ -58,7 +59,7 @@ on:
   # Fin d'un workflow de PR : le moment où une PR peut devenir verte. La liste n'a pas besoin
   # d'être exhaustive (voir « COMMENT IL DÉCIDE »), mais la tenir à jour fait merger plus vite.
   workflow_run:
-    workflows: ["Content CI", "Pin check", "Roadmap sync"]
+    workflows: ["Content CI", "Roadmap sync"]
     types: [completed]
   # Changement d'éligibilité SANS nouveau check — le trou qui a bloqué #167 : passage de draft à
   # « ready », retrait du label `no-automerge`, réouverture. Aucun check ne repasse dans ces
@@ -76,8 +77,8 @@ on:
   # le cas d'une PR ouverte par `auto-pr.yml` : GitHub n'émet pas de `workflow_run` pour un run
   # déclenché par le `GITHUB_TOKEN` (garde anti-récursion), et les runs `pull_request` d'une PR
   # du bot sont en `action_required`. Aucun des trois déclencheurs ci-dessus ne se produit.
-  # Le trou est bouché à la SOURCE, sans cron : `content-ci.yml` et `pin-check.yml` dispatchent
-  # ce workflow en fin de course, mais UNIQUEMENT quand ils ont eux-mêmes été dispatchés —
+  # Le trou est bouché à la SOURCE, sans cron : `content-ci.yml` dispatche ce workflow en fin
+  # de course, mais UNIQUEMENT quand il a lui-même été dispatché —
   # c'est-à-dire uniquement sur le chemin qui casse, une poussée de nouvelle branche. Le chemin
   # `pull_request` normal continue de passer par `workflow_run`, sans run supplémentaire.
   #
@@ -112,7 +113,7 @@ permissions:
   # `contents` ni `pull-requests` ne la couvrent.
   checks: read
   # Réveiller `content-drift.yml` après un merge de contenu (dernière étape). Même idiome que
-  # `content-ci.yml` et `pin-check.yml`, et même raison de fond : `workflow_dispatch` est le
+  # `content-ci.yml`, et même raison de fond : `workflow_dispatch` est le
   # SEUL événement que le `GITHUB_TOKEN` a le droit d'émettre.
   actions: write
   # Pas de `issues:` ici, et ce n'est pas un oubli : `gh label create` / `gh pr edit --add-label`

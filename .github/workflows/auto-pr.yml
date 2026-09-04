@@ -44,10 +44,11 @@ name: Auto PR (corpus)
 #
 #   2. Les checks sont déclenchés explicitement (dernière étape), mais SEULEMENT
 #      si le SHA n'en a pas déjà. Sans dispatch du tout, une PR pourrait ne
-#      jamais avoir de check : `content-ci.yml` / `pin-check.yml` ne partent que
-#      sur `pull_request`, zéro check ⇒ `automerge.yml` refuse de merger (à
-#      raison), et la PR dormirait. C'est pour ce filet que les deux workflows
-#      ont gagné un `workflow_dispatch`.
+#      jamais avoir de check : `content-ci.yml` ne part que sur `pull_request`,
+#      zéro check ⇒ `automerge.yml` refuse de merger (à raison), et la PR
+#      dormirait. C'est pour ce filet qu'il a gagné un `workflow_dispatch`.
+#      (`pin-check.yml` était le second ; il a disparu à l'étude 32 lot 2 —
+#      `harness:check --corpus` porte sa règle, appelé depuis content-ci.yml.)
 #
 #      ⚠️ CETTE DISPATCH A ÉTÉ RETIRÉE À TORT, PUIS RENDUE (privé#280 → #291 → #297).
 #      privé#280 a lu les deux runs d'un même SHA comme un DOUBLON qui s'annulait
@@ -56,7 +57,8 @@ name: Auto PR (corpus)
 #      plus aucune PR poussée n'a reçu ses checks requis.
 #
 #      La prémisse était fausse, et elle se MESURE. Sur les 37 derniers runs de
-#      `content-ci` / `pin-check`, croisés avec leur nombre de jobs :
+#      `content-ci` / `pin-check` (ce dernier avant sa suppression), croisés
+#      avec leur nombre de jobs :
 #
 #        run                              | jobs | conclusion | n
 #        ---------------------------------|------|------------|----
@@ -112,7 +114,7 @@ permissions:
   # 2026-07-25). Créer la PR demande en plus le réglage cité en en-tête.
   contents: write
   pull-requests: write
-  # Dispatcher content-ci.yml / pin-check.yml sur la branche.
+  # Dispatcher content-ci.yml sur la branche.
   actions: write
   # Ouvrir/refermer l'issue d'alarme quand l'ouverture de PR est impossible —
   # c'est elle qui remplace le check rouge (voir l'étape de création).
@@ -252,7 +254,7 @@ jobs:
           # les coups — c'est-à-dire à ne jamais voir le seul vrai doublon.
           sleep 30
           failed=0
-          for wf in content-ci.yml pin-check.yml; do
+          for wf in content-ci.yml; do
             # Un job est ce qui matérialise un check run : compter les jobs, c'est
             # demander « ce SHA a-t-il un verdict NOMMÉ pour ce workflow ? », la
             # question même que pose `automerge.yml`. Un run à zéro job n'a rien

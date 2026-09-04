@@ -46,14 +46,17 @@
   jamais le couple : l'outillage donne les faits, l'arbitrage reste humain.
 
 - **CI** : `.github/workflows/content-ci.yml` fait exactement cela (double checkout + les deux
-  liens). `content-audit.yml` (garde pédagogique) tourne mer. + sam. et exige le secret
-  `CLAUDE_CODE_OAUTH_TOKEN` valide.
+  liens). Il porte aussi, **depuis l'étude 32 lot 2**, `harness:check --corpus` : les invariants
+  du harness appliqués à CE dépôt (spec des 43 skills, Unicode invisible, budget de ce fichier,
+  YAML strict, épinglage des Actions). C'est ce qui a permis de **supprimer `pin-check.yml`**,
+  qui ré-écrivait en bash une règle du moteur — deux implémentations d'une même règle divergent,
+  ce dépôt l'a vu trois fois sur le test « zéro job ». `content-audit.yml` (garde pédagogique)
+  tourne mer. + sam. et exige le secret `CLAUDE_CODE_OAUTH_TOKEN` valide.
 - **Ouverture des PR** : `.github/workflows/auto-pr.yml` (depuis #226) ouvre la PR de **toute**
   branche poussée, puis **dispatche ses checks**. Cette dispatch n'est pas un confort : la garde
   anti-boucle de GitHub empêche une PR ouverte par le `GITHUB_TOKEN` de faire tourner ses checks,
-  donc `content-ci` et `pin-check` ne démarreraient jamais sur elle — et `automerge` refusant, à
-  raison, de merger un SHA sans aucun check run, la PR dormirait. D'où le `workflow_dispatch` de
-  ces deux workflows.
+  donc `content-ci` ne démarrerait jamais sur elle — et `automerge` refusant, à raison, de
+  merger un SHA sans aucun check run, la PR dormirait. D'où son `workflow_dispatch`.
   ⚠️ **Ce refus laisse une trace trompeuse, et elle a déjà coûté trois fois.** GitHub enregistre
   quand même un run `pull_request` — qui sort à **ZÉRO job**, en `failure`. Il n'a rien évalué,
   mais il ressemble à un gate rouge sur `gh pr checks`, et à « un run existe » pour qui compte les

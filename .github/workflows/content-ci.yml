@@ -41,7 +41,7 @@ concurrency:
 
 jobs:
   gates:
-    name: content:check + qa:strict + figures:check + audit:strict + programme:check
+    name: content:check + qa:strict + figures:check + audit:strict + programme:check + harness
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -105,6 +105,23 @@ jobs:
       - name: programme:check
         working-directory: engine
         run: npm run programme:check
+
+      # Les invariants du HARNESS appliqués à ce dépôt (étude 32, lot 2). Ce dépôt porte
+      # 43 skills, 12 workflows et un CLAUDE.md de 9 Kio, et n'avait AUCUN gate de harness :
+      # ni budget, ni Unicode invisible, ni conformité à la spec Agent Skills, ni YAML strict.
+      # Son seul invariant — l'épinglage des Actions — vivait dans un `pin-check.yml` qui
+      # ré-écrivait en bash une règle du moteur ; deux implémentations d'une même règle
+      # divergent, ce dépôt l'a vu trois fois sur le test « zéro job ». `pin-check.yml` est
+      # donc SUPPRIMÉ dans le même lot : la règle est ici, une seule fois, et elle est testée
+      # là où elle est écrite.
+      #
+      # Le blocage qu'on croyait avoir (« harness:check traîne des dépendances, et le workflow
+      # candidat tourne sans npm ci ») venait d'avoir regardé le mauvais workflow : celui-ci
+      # checkout déjà le moteur et y fait déjà son `npm ci`. Il n'y avait rien à extraire dans
+      # un module sans dépendance, seulement le bon endroit à choisir.
+      - name: harness:check --corpus (les invariants du harness sur ce dépôt)
+        working-directory: engine
+        run: node scripts/harness/check.mjs --corpus "$GITHUB_WORKSPACE/corpus"
 
       # Réveiller automerge — UNIQUEMENT quand ce run vient d'une dispatch.
       #
