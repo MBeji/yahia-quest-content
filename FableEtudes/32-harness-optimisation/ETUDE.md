@@ -454,16 +454,37 @@ diffère à l'octet de ce que `content:emit` produira ailleurs.
 
 **Remède.** Dans L2, avec C-8.
 
-### C-13 — Un registre de transcription dans un skill (hors lot, Q-4)
+### C-13 — Un registre de transcription dans un skill (lot 5, livré)
 
-`programmes-officiels/` (12 Mo, 130 fichiers : manifestes, programmes transcrits, `suivi/`) vit sous
-`.claude/skills/content-ecole-tn/references/`. C'est un **registre de données** (sortie du LOT A de la
-méthode), pas une instruction de skill ; c'est lui qui impose le **second** symlink de la recette
-locale et de Content CI, et son chemin est codé dans quatre scripts du moteur (`audit-program.ts`,
-`check-manuel-links.ts`, `etat.ts`, `programmes-io.ts`). Le déplacer sous `content/programmes-officiels/`
-ramènerait à un symlink et sortirait 12 Mo du prompt-space des skills. C'est un chantier à cheval sur
-les deux dépôts, la METHODE et le skill `/campagne` : **hors périmètre** de cette étude, posé en Q-4
-pour qu'il soit tranché plutôt qu'oublié.
+**Le constat, tel qu'il était posé.** `programmes-officiels/` (12 Mo, 130 fichiers : manifestes,
+programmes transcrits, `suivi/`) vivait sous `.claude/skills/content-ecole-tn/references/`. C'est
+un **registre de données** (sortie du LOT A de la méthode), pas une instruction de skill ; c'est
+lui qui imposait le **second** symlink de la recette locale et de Content CI, et son chemin
+paraissait codé dans quatre scripts du moteur. Le déplacer sous `content/programmes-officiels/`
+ramenait à un symlink et sortait 12 Mo du prompt-space des skills. Chantier à cheval sur les deux
+dépôts, la METHODE et le skill `/campagne` : posé en Q-4 pour qu'il soit tranché plutôt
+qu'oublié — et **hors périmètre** tant qu'il ne l'était pas.
+
+✅ **Livré le 2026-09-04** (arena#983 + #984, privé#346), après arbitrage de Q-4. Un seul symlink
+désormais, en local comme en CI.
+
+⚠️ **Le chiffrage du constat était FAUX d'un ordre de grandeur, et c'est ce qu'il faut en
+retenir.** « Quatre scripts du moteur » cachait : **3** copies du chemin (pas 4 — `etat.ts` ne
+faisait que le mentionner en commentaire), **12** skills, **8** études, 2 workflows, le
+`CLAUDE.md` — et surtout **151 citations de provenance** dans `content/**/chapter.json`,
+totalement invisibles depuis l'audit. Un constat écrit sans ouvrir les fichiers compte ce qu'il
+a regardé.
+
+Ce qui a rendu le lot faisable sans risque tient en une vérification : le SQL émis par
+`content:emit` **avant et après** le déplacement est identique **octet pour octet** (118 fichiers,
+même empreinte SHA-256). Sans elle, réécrire ces 151 citations aurait paru toucher au corpus.
+
+⚠️ **Et le déplacement a cassé une garde, réparée dans la foulée** (privé#349) : `content-drift`
+inventait un slug pour tout dossier de `content/` sans `subject.json`, et rapportait donc
+`programmes-officiels` « jamais publié, tout le sujet » — un faux positif ÉTERNEL, puisque
+l'issue ne se referme qu'à écart nul sur TOUS les sujets. La garde applique désormais la même
+règle que le chargeur du moteur. Constaté après correction : l'issue est passée de 40 à
+**39 sujets**, le registre n'y figure plus.
 
 ### C-15 — `typecheck` ne voyait aucun script (né de l'exécution, livré arena#986)
 
