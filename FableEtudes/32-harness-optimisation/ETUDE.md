@@ -36,7 +36,7 @@ Ce que l'audit a **mesuré** (pas supposé) le 2026-09-03, sur les 800 derniers 
 | C-9 | `AGENTS.md` est à **250 / 250 lignes** et **24 184 / 24 576 octets** : la prochaine règle ne peut entrer qu'en en sortant une, et personne ne le sait avant d'échouer     | budget saturé à 100 % / 98 %                                       | ramener à ≤ 200 l. par déplacement, pas par suppression (L4)   |
 | C-10 | `policy.json` nomme 27 scripts `npm run` un par un alors que `node scripts/:*` est ouvert en bloc ; et n'ouvre **ni `cat`, ni `grep`, ni `head`, ni `find`** — des lectures qui déclenchent une invite, donc une validation manuelle | 92 règles `allow`, 7,3 Ko de commentaire-journal                   | `npm run:*` + groupe `shell-readonly`, journal déplacé (L4)     |
 | C-11 | Les workflows portent **30 % de commentaires** (2 226 lignes), souvent le récit complet d'un incident, parfois raconté trois fois (workflow, `CLAUDE.md`, ROADMAP)         | 7 365 lignes de YAML, 2 226 de prose                               | convention « le pourquoi en 10 lignes, le récit en doc » (Q-3) |
-| C-15 | **`npm run typecheck` ne voit aucun script** : `tsconfig.json` n'inclut que `src/**`. Les scripts qui portent les gates de contenu ne sont typés par personne — trouvé par un `ReferenceError` que `tsc` aurait dû attraper | **44 erreurs de type dormantes** sous `scripts/**` | à faire (lot à part entière, non ouvert)                        |
+| C-15 | **`npm run typecheck` ne voyait aucun script** : `tsconfig.json` n'incluait que `src/**`. Les 13 fichiers qui portent les gates de contenu n'étaient typés par personne — trouvé par un `ReferenceError` que `tsc` aurait dû attraper | « 44 erreurs » qui n'en étaient **qu'une** : les scripts sont du Node | ✅ **livré (arena#986)** — second programme + invariant de gate |
 | C-14 | Une PR doit être **à jour avec `main`** pour merger : chaque PR mergée pendant sa CI la relance **en entier**. Vu sur arena#975, qui n'a pas une ligne de `src/`                                                        | **5 têtes, 5 cycles CI complets** en 41 min, pour 4 PR entrées entre-temps | à arbitrer (Q-5) — file de merge, ou CI en deux étages          |
 | C-12 | Le privé n'a **pas de `.gitattributes`** : le piège CRLF documenté pour le poste Windows n'est gardé que côté moteur                                                     | 0 règle EOL sur 659 chapitres                                      | copier la règle du moteur (L2)                                 |
 
@@ -88,7 +88,7 @@ retirer un seul filet.
 | Lignes de workflow en double entre dépôts               | 1 579                                   | ⚠️ **partiellement** (L3b, arena#981 + privé#345). `guard-watch` : 378 lignes en deux copies → 314 de YAML dont **74 encore identiques**, plus 173 lignes de script partagé et testé. **Le total brut AUGMENTE** — ce qui disparaît n'est pas du volume mais une seconde copie non testée de la décision. La chaîne PR (`auto-pr`, `automerge`) reste en deux exemplaires |
 | Cycles CI par PR au moteur, `main` chargée              | **5** (mesuré sur arena#975, 41 min)    | ✅ **mesuré en continu** (Q-5 tranchée : accepter, mais compter). `actions:census` rend désormais les têtes par branche et nomme la plus relancée |
 | Symlinks pour lancer les gates de contenu               | 2                                       | ✅ **1** (lot 5, arena#983/#984 + privé#346) — le registre de 12 Mo a rejoint `content/`. Vérifié : le SQL émis reste **identique octet pour octet**, donc aucune dérive avec la prod |
-| Scripts couverts par `typecheck`                        | **0** sur `scripts/**`                  | ❌ **inchangé** — C-15, découvert en fin de lot 5 ; 44 erreurs dormantes à payer, lot non ouvert |
+| Scripts couverts par `typecheck`                        | **0** sur `scripts/**`                  | ✅ **13 sur 13** (livré, arena#986). Les « 44 erreurs » étaient **une seule cause** : 31 disaient `Cannot find name 'process'`, les scripts étant du Node là où `tsconfig.json` ne charge que `vite/client`. Avec `lib: ES2023` + `types: ["node"]`, il en reste **zéro** |
 | Marge d'`AGENTS.md`                                     | 0 ligne, 392 octets                     | ✅ **36 lignes** (214/250, livré arena#975), pas les 50 promises : le reste est irréductible sans perte. Un seuil d'alerte à 92 % préviendra avant le prochain plafond |
 | Scripts npm nommés à la main dans `policy.json`         | 21                                      | ✅ **0** (livré, arena#975). ⚠️ La cible d'origine — « ≤ 60 règles » — était **fausse** : elle comptait 27 entrées npm là où il y en avait 21, et ne comptait pas les 15 lectures ajoutées. Le compte réel tombe à 88, et le nombre de règles n'était de toute façon pas la bonne mesure |
 
@@ -461,10 +461,24 @@ Node exécute en `--experimental-strip-types` : le typage y est purement décora
 Mesuré en étendant l'inclusion au reste de l'arbre : **44 erreurs de type**, concentrées sur
 `suivi.ts` (10), `programmes-io.ts` (10), `etat.ts` (5), `check-manuel-links.ts` (5).
 
-C'est un lot à part entière — 44 erreurs ne se paient pas en marge d'un autre travail, et
-plusieurs viennent de `src/shared/content/**` déjà typé, donc d'options de compilation à
-accorder plutôt que de code à corriger. Il n'est **pas ouvert** : le constat est mesuré et
-consigné, l'arbitrage reste entier.
+✅ **Livré (arena#986), et le chiffre était trompeur** : ces 44 erreurs n'en étaient **qu'une**.
+**31 sur 44** disaient `Cannot find name 'process'` — les scripts sont du **Node**, et
+`tsconfig.json` ne charge que `vite/client` et `vitest/globals` ; les 13 autres (paramètres
+implicitement `any`) en découlaient, faute d'API Node typées. Avec un second programme
+(`tsconfig.scripts.json`, `lib: ES2023`, `types: ["node"]`), il en reste **zéro**, sans une
+ligne de code corrigée. D'où deux programmes plutôt qu'un : les fondre obligerait à charger les
+types du navigateur dans les scripts et ceux de Node dans l'app.
+
+**Et le filet ne peut plus se vider en silence** — la leçon que cette étude a tirée trois fois.
+`harness:check` ferme les deux façons de le perdre : débrancher le second programme de la chaîne
+npm, ou rétrécir son `include`. Éprouvé dans les deux sens ; la seconde panne sort 13 constats,
+un par fichier redevenu invisible.
+
+⚠️ **Un bug de la livraison, attrapé par son propre test** : la conversion glob → regex faisait
+deux `replace` enchaînés, et le second réécrivait le `*` que le premier venait d'insérer dans
+`(?:.*/)`. Le motif `scripts/**/*.ts` ne couvrait alors plus un fichier profond — un gate qui
+aurait menti dans le sens du silence. C'est la troisième fois de cette étude qu'un test écrit
+pour un cas précis attrape le défaut de son propre outil.
 
 ⚠️ Ce constat rejoint la ligne directrice de l'étude — *un gate qui ne mesure pas ce qu'il
 annonce est pire qu'un gate absent* — et c'est le troisième de la même famille : la borne des
