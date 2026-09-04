@@ -65,7 +65,13 @@ on:
   # « ready », retrait du label `no-automerge`, réouverture. Aucun check ne repasse dans ces
   # cas-là, donc `workflow_run` seul ne voit jamais rien.
   pull_request:
-    types: [opened, reopened, ready_for_review, labeled, unlabeled]
+    #
+    # ⚠️ `opened` retiré (étude 32, lot 1) : il ne servait à rien ici et coûtait un
+    # fantôme de plus. Une PR ouverte par `auto-pr` n'émettait de toute façon PAS cet
+    # événement de façon utile, et une PR ouverte à la main n'est jamais mergeable à
+    # la seconde où elle s'ouvre : aucun check n'a encore tourné. Ce qui la rattrape,
+    # c'est le `workflow_run` de sa CI, puis le balayage sur `push: main`.
+    types: [reopened, ready_for_review, labeled, unlabeled]
   # `main` a bougé : l'instant exact où se dénoue la course « Base branch was modified » (#162),
   # et le filet de sécurité général — toute PR verte laissée en arrière par un déclencheur
   # manqué repart d'ici. Pas de `schedule` : sur un dépôt PRIVÉ les minutes Actions sont
