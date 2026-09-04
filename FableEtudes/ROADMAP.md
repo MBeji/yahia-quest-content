@@ -444,15 +444,20 @@ règle elle-même, qui est désormais opposable.
       produit avec un parent part **en anglais**.
       (2) Vérifier qu'un événement `web_vitals` **arrive réellement** dans PostHog — sans clé le
       beacon n'émet rien, et un tableau de bord vide se lit à tort « aucun problème ».
-- [ ] **F12. é32 — harness : optimiser, simplifier, améliorer.** Étude en **brouillon** le
-      2026-09-03 ([`32-harness-optimisation/ETUDE.md`](./32-harness-optimisation/ETUDE.md)), sur
-      relevé : **167 runs `failure` à zéro job sur 800** au privé en six jours (les fantômes de
+- [ ] **F12. é32 — harness : optimiser, simplifier, améliorer.** ✅ **Étude validée le 2026-09-04**
+      ([`32-harness-optimisation/ETUDE.md`](./32-harness-optimisation/ETUDE.md)) — les quatre
+      questions arbitrées d'un coup, **toutes sur la recommandation** : un **PAT fine-grained pour
+      le privé** (Q-1, la session le pose dès qu'elle a sa valeur), le **relevé de facturation
+      Actions** fourni (Q-2 — s'il montre un dépassement, ce lot passe au **rang 0**), le récit des
+      workflows déplacé dans `docs/agents/incidents-ci.md` sur les fichiers touchés (Q-3), et
+      `programmes-officiels/` sorti du skill en **lot 5, après le lot 2** (Q-4). Quatre lots plus un
+      optionnel, aucun bloqué : **prendre L1** (sa moitié moteur — garde dormant borné, script de
+      recensement — n'attend même pas le jeton). Sur relevé : **167 runs `failure` à zéro job sur 800** au privé en six jours (les fantômes de
       `pull_request:opened`), **5 réveils d'automerge par branche**, **CI + CodeQL + Migration gate
       en double** sur chaque branche neuve du moteur (38 dispatch pour 71 runs natifs), et un
       `harness:check` dont la borne « description ≤ 1 024 » n'a jamais rien mesuré (bug reproduit
-      en annexe B — 2 skills privés hors spec). Quatre lots, une décision : **Q-1**, un PAT pour le
-      privé (recommandé) ou le retrait d'`opened`. À lancer après l'arbitrage, lot 1 d'abord ; le
-      « avant » se relève avec le même script que l'étude.
+      en annexe B — 2 skills privés hors spec). Le « avant » se relève avec le script de l'étude
+      (`actions-census.mjs`, D-11), qui sert ensuite à mesurer chaque lot.
 
 ---
 
