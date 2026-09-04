@@ -473,11 +473,14 @@ règle elle-même, qui est désormais opposable.
       (`guard-watch` mutualisé : arena#981 + privé#345), **Q-5** (mesure des cycles par PR :
       arena#982) et le **lot 5** (le registre de 12 Mo rejoint `content/`, un seul symlink au
       lieu de deux : arena#983/#984 + privé#346), livré en trois temps et vérifié par un SQL
-      émis **identique octet pour octet** — donc zéro dérive avec la prod. **Deux constats neufs sont nés de l'exécution.** **C-15** : `npm run typecheck` ne voit
-      AUCUN script (`tsconfig.json` n'inclut que `src/**`), donc les scripts qui portent les
-      gates de contenu ne sont typés par personne — trouvé par un `ReferenceError` que `tsc`
-      aurait dû attraper ; 44 erreurs de type dormantes mesurées, lot **non ouvert**. Et
-      **C-14** : pour merger, une PR doit être à jour avec `main`, donc chaque PR qui entre pendant sa
+      émis **identique octet pour octet** — donc zéro dérive avec la prod. **Deux constats neufs sont nés de l'exécution, et tous deux sont traités.** ✅ **C-15**
+      (arena#986) : `npm run typecheck` ne voyait AUCUN script — `tsconfig.json` n'incluait que
+      `src/**`, donc les 13 fichiers qui portent les gates de contenu n'étaient typés par
+      personne. Trouvé par un `ReferenceError` que `tsc` aurait dû attraper. Les « 44 erreurs »
+      n'en étaient **qu'une** : 31 disaient `Cannot find name 'process'`, les scripts étant du
+      Node. Un second programme (`tsconfig.scripts.json`) les ramène à zéro sans une ligne de
+      code corrigée, et `harness:check` interdit désormais de le débrancher ou d'en rétrécir
+      l'`include`. Et **C-14** : pour merger, une PR doit être à jour avec `main`, donc chaque PR qui entre pendant sa
       CI la relance **en entier** — 5 cycles complets sur arena#975, en 41 minutes, pour une PR sans
       une ligne de `src/`. C'est une **troisième** source de runs par branche, distincte des fantômes
       et du double dispatch, invisible au relevé du 2026-09-03 parce que ce jour-là `main` était
