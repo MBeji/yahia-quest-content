@@ -217,11 +217,32 @@ jobs:
               wip/*|draft/*|rescue/*) echo "  Branche $branch — savepoint volontaire, pas de merge."; return 0 ;;
             esac
 
-            # L'état RÉEL du commit : tous les checks, pas une liste figée.
+            # L'état RÉEL du commit : tous les checks, pas une liste figée — mais UN SEUL par
+            # NOM, le plus récent.
+            #
+            # Sans ce dédoublonnage, un check relancé ne remplaçait rien : ses anciens runs
+            # restaient dans la liste avec leur conclusion d'alors, et une PR passée au rouge
+            # UNE FOIS ne pouvait plus jamais merger sur ce commit — même verte, même relancée,
+            # même dix fois. Vécu sur la PR #342 (étude 32, lot 2) : « Content CI » y avait
+            # trois runs sur le même SHA — deux échecs suivis d'un succès — et l'auto-merge
+            # refusait en citant les deux premiers. Le seul remède aurait été un commit vide
+            # pour changer de SHA, c'est-à-dire précisément le geste que la DoD interdit.
+            #
+            # C'est la sémantique de GitHub qu'on rattrape ici : pour un check REQUIS, il
+            # évalue le run le plus récent portant ce nom. La chaîne d'ici doit lire le même
+            # monde que la protection de branche du moteur, sinon les deux dépôts ne disent pas
+            # la même chose sur le même état.
+            #
+            # ⚠️ `--paginate` applique le filtre PAGE PAR PAGE : le dédoublonnage vaut donc à
+            # l'intérieur d'une page. Sans effet ici — un SHA porte une poignée de check runs,
+            # très loin des 100 d'une page — et la contrainte existait déjà avant ce correctif.
             if ! runs="$(gh api "repos/$REPO/commits/$sha/check-runs" --paginate \
-                  --jq ".check_runs[]
-                        | select(.name != \"$SELF_CHECK\"
-                                 and (((.details_url // \"\") | contains(\"$SELF_RUN\")) | not))
+                  --jq "[.check_runs[]
+                         | select(.name != \"$SELF_CHECK\"
+                                  and (((.details_url // \"\") | contains(\"$SELF_RUN\")) | not))]
+                        | group_by(.name)
+                        | map(sort_by(.started_at // \"\", .id) | last)
+                        | .[]
                         | \"\(.name)|\(.status)|\(.conclusion // \"\")\"")"; then
               echo "  Lecture des check runs de $sha impossible — on repassera."
               return 0
