@@ -1,7 +1,9 @@
 # Étude 32 — Harness : optimiser, simplifier, améliorer (les deux dépôts vus comme un seul outillage)
 
-> **Statut** : en exécution — **lots 1 (moteur), 2, 3a et 4 livrés le 2026-09-04** ; restent la
-> moitié privée de L1 et L3b, suspendus à la *valeur* du jeton, plus le lot 5 optionnel
+> **Statut** : en exécution — **tout ce qui ne dépendait d'aucun jeton est livré et mergé le
+> 2026-09-04** : lots 1 (moteur), 2 (moteur + privé), 3a et 4 — arena#970, #971, #974, #975 et
+> privé#342. Restent la moitié privée de L1 et L3b, suspendus à la *valeur* du PAT (Q-1), plus le
+> lot 5 optionnel. Un constat neuf, C-14, est né de l'exécution et attend un arbitrage (Q-5)
 > **Priorité** : 32 · **Valeur** : 🔧 le harness (instructions, politique, hooks, gates, chaîne PR, gardes)
 > est **bon** — déterministe, relu, gardé — mais il **crie pour rien** (21 % des runs du privé sont des
 > rouges fantômes), **se paie deux fois** (chaque branche neuve du moteur fait tourner ses trois checks
@@ -33,6 +35,7 @@ Ce que l'audit a **mesuré** (pas supposé) le 2026-09-03, sur les 800 derniers 
 | C-9 | `AGENTS.md` est à **250 / 250 lignes** et **24 184 / 24 576 octets** : la prochaine règle ne peut entrer qu'en en sortant une, et personne ne le sait avant d'échouer     | budget saturé à 100 % / 98 %                                       | ramener à ≤ 200 l. par déplacement, pas par suppression (L4)   |
 | C-10 | `policy.json` nomme 27 scripts `npm run` un par un alors que `node scripts/:*` est ouvert en bloc ; et n'ouvre **ni `cat`, ni `grep`, ni `head`, ni `find`** — des lectures qui déclenchent une invite, donc une validation manuelle | 92 règles `allow`, 7,3 Ko de commentaire-journal                   | `npm run:*` + groupe `shell-readonly`, journal déplacé (L4)     |
 | C-11 | Les workflows portent **30 % de commentaires** (2 226 lignes), souvent le récit complet d'un incident, parfois raconté trois fois (workflow, `CLAUDE.md`, ROADMAP)         | 7 365 lignes de YAML, 2 226 de prose                               | convention « le pourquoi en 10 lignes, le récit en doc » (Q-3) |
+| C-14 | Une PR doit être **à jour avec `main`** pour merger : chaque PR mergée pendant sa CI la relance **en entier**. Vu sur arena#975, qui n'a pas une ligne de `src/`                                                        | **5 têtes, 5 cycles CI complets** en 41 min, pour 4 PR entrées entre-temps | à arbitrer (Q-5) — file de merge, ou CI en deux étages          |
 | C-12 | Le privé n'a **pas de `.gitattributes`** : le piège CRLF documenté pour le poste Windows n'est gardé que côté moteur                                                     | 0 règle EOL sur 659 chapitres                                      | copier la règle du moteur (L2)                                 |
 
 Quatre lots, tous « une PR, gate verte, utile seul », sans toucher au produit. Le lot 1 se **remesure**
@@ -81,6 +84,7 @@ retirer un seul filet.
 | Invariants `harness:check` vérifiés sur le privé        | 1 (épinglage, en bash)                  | ✅ **7** (livré, arena#971 + privé#342) — et `pin-check.yml` supprimé |
 | Skills hors spec Agent Skills (description > 1 024)     | 2, invisibles                           | ✅ **0**, et gatés (arena#971 + privé#342) |
 | Lignes de workflow en double entre dépôts               | 1 579                                   | ≤ 400 (guard-watch partagé, chaîne PR ensuite) |
+| Cycles CI par PR au moteur, `main` chargée              | **5** (mesuré sur arena#975, 41 min)    | à arbitrer (C-14/Q-5) — aucun lot ne le vise aujourd'hui |
 | Marge d'`AGENTS.md`                                     | 0 ligne, 392 octets                     | ✅ **36 lignes** (214/250, livré arena#975), pas les 50 promises : le reste est irréductible sans perte. Un seuil d'alerte à 92 % préviendra avant le prochain plafond |
 | Scripts npm nommés à la main dans `policy.json`         | 21                                      | ✅ **0** (livré, arena#975). ⚠️ La cible d'origine — « ≤ 60 règles » — était **fausse** : elle comptait 27 entrées npm là où il y en avait 21, et ne comptait pas les 15 lectures ajoutées. Le compte réel tombe à 88, et le nombre de règles n'était de toute façon pas la bonne mesure |
 
@@ -438,6 +442,36 @@ ramènerait à un symlink et sortirait 12 Mo du prompt-space des skills. C'est u
 les deux dépôts, la METHODE et le skill `/campagne` : **hors périmètre** de cette étude, posé en Q-4
 pour qu'il soit tranché plutôt qu'oublié.
 
+### C-14 — Rester à jour avec `main` relance toute la CI (né de l'exécution, hors lot)
+
+Ce constat ne vient pas de l'audit : il vient de **cette étude en train de se livrer**. Pour merger,
+arena#975 devait être à jour avec `main` ; l'auto-merge y a donc fusionné `main` à chaque fois qu'une
+autre PR entrait, et chaque fusion a produit une tête neuve, donc **un cycle CI complet de plus**.
+
+| Tête       | Née de                                     | Ce qu'elle a relancé            |
+| ---------- | ------------------------------------------ | ------------------------------- |
+| `3d7d95d9` | le push de la PR                           | CI + CodeQL + Migration gate    |
+| `2b0ee5c0` | `main` ← #976                              | idem                            |
+| `82146fb1` | `main` ← #977                              | idem                            |
+| `ca26098c` | `main` ← #972                              | idem                            |
+| `e4fa88a8` | `main` ← #978                              | idem — celle qui a mergé        |
+
+**Cinq cycles pour une PR de 8 fichiers**, dont aucun ne touche `src/` : ni le build, ni le smoke
+navigateur, ni les 3 982 tests ne pouvaient changer d'un cycle à l'autre. Les quatre relances sont
+arrivées en **41 minutes**, parce que quatre PR ont mergé dans cette fenêtre.
+
+C'est une **troisième** source de runs par branche, distincte des deux que l'audit avait nommées (les
+fantômes de C-1, le double dispatch de C-4) : celle-ci ne vient d'aucun défaut de configuration mais
+de la règle « à jour avant de merger », qui est **saine** — c'est elle qui empêche un merge sémantique
+cassé. Elle n'apparaissait pas au relevé du 2026-09-03 parce que ce jour-là `main` était calme ; elle
+explique une part du **9,7 runs/branche** que le §1.3 attribuait entièrement aux deux autres causes.
+
+Deux voies existent, et **aucune n'est évidente** : une file de merge (GitHub merge queue — à vérifier
+sur un compte Free, où les rulesets ne sont déjà pas disponibles au privé), ou une CI en deux étages où
+seul l'étage sensible au contenu du diff se rejoue. La seconde touche au gate lui-même, ce que cette
+étude s'est interdit ailleurs. D'où **Q-5** plutôt qu'un lot : le constat est mesuré, le remède est un
+arbitrage.
+
 ## 4. Décisions d'architecture (fermées, sous réserve de Q-1)
 
 | #    | Décision                                                                                                                                                                       | Constat |
@@ -578,7 +612,26 @@ suivent la recommandation de l'architecte**. Aucun ADR du §4 n'a eu à être r�
 | Q-3 | La prose des workflows : récit déplacé, en-tête ≤ 15 lignes ?                                     | ✅ **oui, sur les fichiers touchés** (D-9). `docs/agents/incidents-ci.md` naît append-only ; les cinq workflows que les lots modifient déjà y portent leur récit et le citent. **Jamais en masse** : rien n'est réécrit pour la seule beauté du geste, et rien n'est supprimé — le récit change de place                                                                    |
 | Q-4 | `programmes-officiels/` hors du skill (C-13) : lot dédié, tout de suite, ou jamais ?               | ✅ **lot 5 optionnel, APRÈS le lot 2** — le gate `harness:check --corpus` protège alors le déplacement au lieu de le subir. Ordre non négociable : ce registre est le garde-fou anti-double-transcription, et un faux « rien à faire » y est le pire résultat possible                                                                                        |
 
+| Q-5 | **Cinq cycles CI pour une PR** (C-14) : file de merge, CI en deux étages, ou on l'accepte ?        | ⏳ **ouverte** — née de l'exécution, pas de l'audit. Recommandation : **l'accepter pour l'instant**, et rouvrir si `main` reste chargée. La file de merge est à vérifier sur un compte Free (les rulesets n'y sont déjà pas disponibles au privé), et découper le gate en deux étages toucherait à ce que cette étude s'est interdit de fragiliser. Le coût réel est du **temps de file**, pas de la facture : le moteur est public, donc ses minutes sont gratuites — au privé, le même défaut se paierait |
+
 ## 10. Journal d'exécution
+
+- **2026-09-04 12:06 UTC — Les deux dernières PR sont mergées** (arena#975, privé#342) : tout ce que
+  cette étude pouvait livrer sans le PAT est **dans `main` sur les deux dépôts**. Ce que la mise au
+  merge a appris, et qui ne se lisait sur aucun diff :
+  - **C-14, un troisième gisement de runs**, découvert en regardant une PR de cette étude peiner à
+    entrer : rester à jour avec `main` relance la CI en entier, cinq fois ici. L'audit du 2026-09-03
+    ne pouvait pas le voir — ce jour-là `main` était calme. Un audit mesure la journée qu'il mesure.
+  - **`audit:deps` a rendu un 503 du registre npm**, cinq minutes de tentatives, et a fait échouer
+    `verify` sur la tête `82146fb1`. Le dépôt documente ce gate comme non hermétique ; ce qui a
+    **tranché** n'est pas cette documentation mais un fait : la CI de `main` butait au même instant
+    sur le même appel. Un rouge se dit étranger à une PR quand la **base** le porte aussi, jamais
+    parce qu'on connaît le défaut. Le registre est revenu de lui-même à 12:01 ; la relance manuelle
+    n'a jamais eu à être dépensée, la re-synchronisation de branche ayant relancé la CI d'elle-même.
+  - **La garde `guard-watch` du privé a tenu une issue `garde-rouge` (#338) sur un run à 1 job** —
+    un vrai rouge de `roadmap-sync`, sur une branche de cette étude, avant que la roadmap ne connaisse
+    les lots livrés. Elle n'a **pas** alarmé sur les fantômes de la même fenêtre. C'est le premier
+    déclenchement réel du test « zéro job » depuis qu'il est le critère, et il a trié dans le bon sens.
 
 - **2026-09-04 — Lots 2, 3a et 4 livrés (arena#971, #974, #975, privé#342).** Ce que l'exécution
   a appris, et que l'audit n'avait pas vu :
