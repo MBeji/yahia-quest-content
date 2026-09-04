@@ -3,20 +3,17 @@ name: content-audit
 description: >-
   Pedagogical audit of EXISTING content under content/ — verify answer keys by
   re-solving every question, check distractor quality, explanation correctness,
-  question clarity & cognitive load, age/grade-appropriateness (vocabulary,
-  context, number range vs the pupil's age), correct rendering/display (SVG
+  question clarity & cognitive load, age/grade-appropriateness, rendering (SVG
   figures, bidi-safe notation), difficulty calibration, answer-key balance,
-  duplicates, standard math/digit notation (Western digits everywhere, including
-  Arabic), language purity, and factual accuracy — AND audit the lesson texts
-  (cours.md / resume.md) against
-  the course-quality bar: clarity, ease of understanding, completeness (every
-  tested notion taught), learning experience. Produces a severity-ranked report;
-  applies fixes only on request. Use whenever the user asks to "auditer",
-  "vérifier", "review", "QA" the pedagogical content, a subject, a chapter, the
-  quizzes/exercises, or the courses/summaries — e.g. "audite le contenu de maths
-  9ème", "vérifie les quiz de culture générale", "le cours est-il clair et
-  complet ?", "audite les résumés". Defers to the content-engine skill for the
-  schema, quality bar, course-quality bar, and notation rules.
+  duplicates, standard math/digit notation (Western digits, including in Arabic),
+  language purity, and factual accuracy — AND audit the lesson texts
+  (cours.md / resume.md) against the course-quality bar: clarity, ease of
+  understanding, completeness (every tested notion taught), learning experience.
+  Produces a severity-ranked report; applies fixes only on request. Use whenever
+  the user asks to "auditer", "vérifier", "review", "QA" the pedagogical content,
+  a subject, a chapter, the quizzes/exercises, or the courses/summaries — e.g.
+  "audite le contenu de maths 9ème", "vérifie les quiz de culture générale", "le
+  cours est-il clair et complet ?", "audite les résumés".
 ---
 
 # content-audit — pedagogical verification of existing content

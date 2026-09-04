@@ -1,6 +1,7 @@
 # Étude 32 — Harness : optimiser, simplifier, améliorer (les deux dépôts vus comme un seul outillage)
 
-> **Statut** : validée (2026-09-04 — Q-1…Q-4 arbitrées par Mohamed, toutes sur la recommandation ; §9)
+> **Statut** : en exécution — **lots 1 (moteur), 2, 3a et 4 livrés le 2026-09-04** ; restent la
+> moitié privée de L1 et L3b, suspendus à la *valeur* du jeton, plus le lot 5 optionnel
 > **Priorité** : 32 · **Valeur** : 🔧 le harness (instructions, politique, hooks, gates, chaîne PR, gardes)
 > est **bon** — déterministe, relu, gardé — mais il **crie pour rien** (21 % des runs du privé sont des
 > rouges fantômes), **se paie deux fois** (chaque branche neuve du moteur fait tourner ses trois checks
@@ -75,13 +76,13 @@ retirer un seul filet.
 | ------------------------------------------------------- | --------------------------------------- | ------------------------------------------ |
 | Runs `failure` à zéro job au privé (6 j)                | 167 (21 % des runs)                     | **0**                                      |
 | Runs par branche poussée au privé (moyenne)             | **9,7** (runs hors branche par défaut ÷ 48 branches, définition d'`actions-census`) | ≤ 4 |
-| Runs CI+CodeQL+Migration gate par branche neuve, moteur | 6 (3 natifs + 3 dispatchés)             | 3 (dispatch seulement si le natif manque)  |
+| Runs CI+CodeQL+Migration gate par branche neuve, moteur | 6 (3 natifs + 3 dispatchés)             | ✅ **3** (livré, arena#974) — constaté sur la PR qui le livrait : 8 check runs au lieu de 14 |
 | Runs de `second-opinion` dormant (4,4 j)                | 71 **runners alloués**                  | ✅ **0 runner** (livré, arena#970) — la LIGNE du run demeure, avec un job `skipped` : la cible d'origine disait « 0 run », elle était fausse |
-| Invariants `harness:check` vérifiés sur le privé        | 1 (épinglage, en bash)                  | ≥ 6 (spec skills, Unicode, budget, YAML, épinglage, `controls.json` vérifié) |
-| Skills hors spec Agent Skills (description > 1 024)     | 2, invisibles                           | 0, et gatés                                |
+| Invariants `harness:check` vérifiés sur le privé        | 1 (épinglage, en bash)                  | ✅ **7** (livré, arena#971 + privé#342) — et `pin-check.yml` supprimé |
+| Skills hors spec Agent Skills (description > 1 024)     | 2, invisibles                           | ✅ **0**, et gatés (arena#971 + privé#342) |
 | Lignes de workflow en double entre dépôts               | 1 579                                   | ≤ 400 (guard-watch partagé, chaîne PR ensuite) |
-| Marge d'`AGENTS.md`                                     | 0 ligne, 392 octets                     | ≥ 50 lignes                                |
-| Règles `allow` de `policy.json`                         | 92                                      | ≤ 60, couvrant **plus** de commandes       |
+| Marge d'`AGENTS.md`                                     | 0 ligne, 392 octets                     | ✅ **36 lignes** (214/250, livré arena#975), pas les 50 promises : le reste est irréductible sans perte. Un seuil d'alerte à 92 % préviendra avant le prochain plafond |
+| Scripts npm nommés à la main dans `policy.json`         | 21                                      | ✅ **0** (livré, arena#975). ⚠️ La cible d'origine — « ≤ 60 règles » — était **fausse** : elle comptait 27 entrées npm là où il y en avait 21, et ne comptait pas les 15 lectures ajoutées. Le compte réel tombe à 88, et le nombre de règles n'était de toute façon pas la bonne mesure |
 
 ## 2. État des lieux mesuré (2026-09-03)
 
@@ -529,9 +530,14 @@ Points durs :
 - [ ] Lot 1 — La chaîne cesse de crier pour rien (D-1, D-2, D-4, D-11)
       - [x] moitié **moteur** — D-4 (garde dormant borné) + D-11 (recensement) — arena#970, 2026-09-04
       - [ ] moitié **privé** — D-1, D-2 : attend la VALEUR du PAT (Q-1)
-- [ ] Lot 2 — Un seul `harness:check` pour les deux dépôts (D-5, D-8 seuil, D-10)
-- [ ] Lot 3 — Le moteur ne paie plus deux fois ; `guard-watch` partagé (D-3, D-6)
-- [ ] Lot 4 — La politique dit moins et couvre plus ; `AGENTS.md` respire (D-7, D-8)
+- [x] Lot 2 — Un seul `harness:check` pour les deux dépôts (D-5, D-8 seuil, D-10) — arena#971,
+      arena#974 (correctif du mode corpus), privé#342, 2026-09-04
+- [x] Lot 3a — Le filet de dispatch constate avant de doubler (D-3) — arena#974, 2026-09-04
+- [ ] Lot 3b — `guard-watch` mutualisé (D-6) : **dépend du lot 1 privé**, et ce n'est pas un
+      oubli — la version privée filtre les runs à zéro job, que le lot 1 supprime à la racine
+      avec les fantômes. Mutualiser avant graverait un paramètre destiné à mourir
+- [x] Lot 4 — La politique dit moins et couvre plus ; `AGENTS.md` respire (D-7, D-8) — arena#975,
+      2026-09-04
 - [ ] Lot 5 (optionnel, après L2) — `programmes-officiels/` sort du skill et rejoint `content/` (C-13, Q-4)
 
 ## 7. Stratégie de test & mesure
@@ -573,6 +579,38 @@ suivent la recommandation de l'architecte**. Aucun ADR du §4 n'a eu à être r�
 | Q-4 | `programmes-officiels/` hors du skill (C-13) : lot dédié, tout de suite, ou jamais ?               | ✅ **lot 5 optionnel, APRÈS le lot 2** — le gate `harness:check --corpus` protège alors le déplacement au lieu de le subir. Ordre non négociable : ce registre est le garde-fou anti-double-transcription, et un faux « rien à faire » y est le pire résultat possible                                                                                        |
 
 ## 10. Journal d'exécution
+
+- **2026-09-04 — Lots 2, 3a et 4 livrés (arena#971, #974, #975, privé#342).** Ce que l'exécution
+  a appris, et que l'audit n'avait pas vu :
+  - **Les invariants du moteur et ceux du corpus ne peuvent pas cohabiter dans une même
+    invocation.** Trouvé par la CI au PREMIER appel réel de `--corpus` : la Content CI privée
+    branche les 43 skills du corpus par symlink dans `engine/.claude/skills` — c'est sa raison
+    d'être — et dans ce décor l'invariant « chaque vue générée est à jour » a réclamé **225
+    fichiers de miroir** qui n'ont aucune raison d'exister. La recette LOCALE tombe dans le même
+    trou. Reproduit dans les deux sens : 188 constats avec le corpus branché, zéro après.
+  - **Une sonde muette doit valoir « dispatch », pas « c'est bon ».** Le filet de D-3 écrivait
+    `|| echo 1` : une API qui ne répond pas faisait compter le run comme réel, donc supprimait le
+    filet **précisément le jour où il sert**. Trouvé par un banc d'essai avec un faux `gh`, pas
+    par relecture. Même polarité que le corpus, et l'INVERSE de `guard-watch`, où un run de jobs
+    inconnus doit rester rouge — la même ligne de shell veut dire deux choses opposées selon ce
+    qu'on garde.
+  - **L'auto-merge du privé comptait les check runs remplacés par une relance** : une PR passée
+    au rouge une seule fois ne pouvait plus jamais merger sur ce commit. Le seul contournement
+    aurait été un commit vide, c'est-à-dire le geste que la DoD interdit. Corrigé dans privé#342,
+    la PR qu'il bloquait. Le moteur n'a pas ce défaut (auto-merge natif, arbitré par GitHub).
+  - **Le premier passage du gate sur le corpus a sorti 3 constats, tous vrais, zéro faux positif**
+    sur 38 occurrences d'Unicode invisible : deux descriptions hors spec (1 202 et 1 157) et un
+    BOM en tête d'un programme officiel. Les tolérances devaient être **contextuelles** — liant
+    d'emoji, marques RTL en texte arabe — jamais par fichier ni par plage.
+  - **Deux cibles de plus étaient fausses**, corrigées ci-dessus au §1.3 : « ≤ 60 règles »
+    (mauvais compte, et mauvaise mesure) et « ≤ 200 lignes » pour AGENTS.md (214, le reste étant
+    irréductible sans perte). Avec les deux du lot 1, **cinq des KPI de cette étude ont été
+    rectifiés par les livraisons elles-mêmes**. C'est le fonctionnement voulu : un audit qui
+    n'est pas exécuté se croit exact.
+  _Geste de session à ne pas reproduire_ : un `--force-with-lease` a écrasé le correctif du mode
+  corpus, non mergé, parce que le diff qui devait prouver « déjà mergé » a été lu à l'envers.
+  Rétabli par cherry-pick. La leçon est celle du dépôt : **une livraison se constate, elle ne se
+  déduit pas d'un diff qu'on interprète**.
 
 - **2026-09-04 — Lot 1, moitié moteur livrée (arena#970).** Les deux décisions qui ne dépendaient
   d'aucun jeton : **D-4**, la condition de job de `second-opinion.yml`, et **D-11**,

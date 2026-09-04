@@ -1,0 +1,25 @@
+# Tout fichier texte est en LF dans l'objet Git ET dans l'arbre de travail.
+#
+# POURQUOI CE DÉPÔT EN A BESOIN (étude 32, D-10). Le corpus s'édite depuis le même poste
+# Windows que le moteur, et c'est là qu'un CRLF invisible a cassé `npm test` le 2026-07-25 :
+# `git status` et `git diff` rendaient l'arbre propre — `text=auto` NORMALISE à la comparaison —
+# pendant que le fichier sur disque était byte-différent. Le moteur porte cette règle depuis ;
+# ce dépôt ne l'avait pas, et ce n'était pas théorique : `git ls-files --eol` montrait DEUX des
+# douze workflows stockés en CRLF dans l'index.
+#
+# Ce que ça protège ici en propre : un `quiz.json` en CRLF passe Zod, passe la QA, et diffère
+# à l'octet de ce que `content:emit` produira ailleurs.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+
+# Les scripts Windows, eux, ont besoin de leurs CRLF pour s'exécuter.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
