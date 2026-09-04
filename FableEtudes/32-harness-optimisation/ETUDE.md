@@ -1,9 +1,10 @@
 # Étude 32 — Harness : optimiser, simplifier, améliorer (les deux dépôts vus comme un seul outillage)
 
-> **Statut** : en exécution — **tout ce qui ne dépendait d'aucun jeton est livré et mergé le
-> 2026-09-04** : lots 1 (moteur), 2 (moteur + privé), 3a et 4 — arena#970, #971, #974, #975 et
-> privé#342. Restent la moitié privée de L1 et L3b, suspendus à la *valeur* du PAT (Q-1), plus le
-> lot 5 optionnel. Un constat neuf, C-14, est né de l'exécution et attend un arbitrage (Q-5)
+> **Statut** : **livrée** — les cinq lots sont mergés sur les deux dépôts le 2026-09-04 :
+> arena#970, #971, #974, #975, #980, #981, #982, #983, #984 et privé#342, #343, #344, #345, #346.
+> Q-1 a été **rouverte et retranchée** en cours d'exécution (la voie de repli, sans jeton), Q-5
+> est née de la livraison et a été tranchée, et **deux constats neufs** — C-14 et C-15 — sont
+> sortis de l'exécution elle-même. Rien n'attend plus le propriétaire
 > **Priorité** : 32 · **Valeur** : 🔧 le harness (instructions, politique, hooks, gates, chaîne PR, gardes)
 > est **bon** — déterministe, relu, gardé — mais il **crie pour rien** (21 % des runs du privé sont des
 > rouges fantômes), **se paie deux fois** (chaque branche neuve du moteur fait tourner ses trois checks
@@ -35,6 +36,7 @@ Ce que l'audit a **mesuré** (pas supposé) le 2026-09-03, sur les 800 derniers 
 | C-9 | `AGENTS.md` est à **250 / 250 lignes** et **24 184 / 24 576 octets** : la prochaine règle ne peut entrer qu'en en sortant une, et personne ne le sait avant d'échouer     | budget saturé à 100 % / 98 %                                       | ramener à ≤ 200 l. par déplacement, pas par suppression (L4)   |
 | C-10 | `policy.json` nomme 27 scripts `npm run` un par un alors que `node scripts/:*` est ouvert en bloc ; et n'ouvre **ni `cat`, ni `grep`, ni `head`, ni `find`** — des lectures qui déclenchent une invite, donc une validation manuelle | 92 règles `allow`, 7,3 Ko de commentaire-journal                   | `npm run:*` + groupe `shell-readonly`, journal déplacé (L4)     |
 | C-11 | Les workflows portent **30 % de commentaires** (2 226 lignes), souvent le récit complet d'un incident, parfois raconté trois fois (workflow, `CLAUDE.md`, ROADMAP)         | 7 365 lignes de YAML, 2 226 de prose                               | convention « le pourquoi en 10 lignes, le récit en doc » (Q-3) |
+| C-15 | **`npm run typecheck` ne voit aucun script** : `tsconfig.json` n'inclut que `src/**`. Les scripts qui portent les gates de contenu ne sont typés par personne — trouvé par un `ReferenceError` que `tsc` aurait dû attraper | **44 erreurs de type dormantes** sous `scripts/**` | à faire (lot à part entière, non ouvert)                        |
 | C-14 | Une PR doit être **à jour avec `main`** pour merger : chaque PR mergée pendant sa CI la relance **en entier**. Vu sur arena#975, qui n'a pas une ligne de `src/`                                                        | **5 têtes, 5 cycles CI complets** en 41 min, pour 4 PR entrées entre-temps | à arbitrer (Q-5) — file de merge, ou CI en deux étages          |
 | C-12 | Le privé n'a **pas de `.gitattributes`** : le piège CRLF documenté pour le poste Windows n'est gardé que côté moteur                                                     | 0 règle EOL sur 659 chapitres                                      | copier la règle du moteur (L2)                                 |
 
@@ -77,14 +79,16 @@ retirer un seul filet.
 
 | KPI                                                     | Aujourd'hui (2026-09-03)                | Cible après L1-L4                          |
 | ------------------------------------------------------- | --------------------------------------- | ------------------------------------------ |
-| Runs `failure` à zéro job au privé (6 j)                | 167 (21 % des runs)                     | **0**                                      |
+| Runs `failure` à zéro job au privé (6 j)                | 167 (21 % des runs)                     | ✅ **0** (livré, privé#344 + arena#980) — **constaté dans les deux sens le jour même** : la PR #343 portait 3 de ces runs sur son SHA, la #344 aucun. Un invariant de `harness:check --corpus` empêche la rechute |
 | Runs par branche poussée au privé (moyenne)             | **9,7** (runs hors branche par défaut ÷ 48 branches, définition d'`actions-census`) | ≤ 4 |
 | Runs CI+CodeQL+Migration gate par branche neuve, moteur | 6 (3 natifs + 3 dispatchés)             | ✅ **3** (livré, arena#974) — constaté sur la PR qui le livrait : 8 check runs au lieu de 14 |
 | Runs de `second-opinion` dormant (4,4 j)                | 71 **runners alloués**                  | ✅ **0 runner** (livré, arena#970) — la LIGNE du run demeure, avec un job `skipped` : la cible d'origine disait « 0 run », elle était fausse |
 | Invariants `harness:check` vérifiés sur le privé        | 1 (épinglage, en bash)                  | ✅ **7** (livré, arena#971 + privé#342) — et `pin-check.yml` supprimé |
 | Skills hors spec Agent Skills (description > 1 024)     | 2, invisibles                           | ✅ **0**, et gatés (arena#971 + privé#342) |
-| Lignes de workflow en double entre dépôts               | 1 579                                   | ≤ 400 (guard-watch partagé, chaîne PR ensuite) |
-| Cycles CI par PR au moteur, `main` chargée              | **5** (mesuré sur arena#975, 41 min)    | à arbitrer (C-14/Q-5) — aucun lot ne le vise aujourd'hui |
+| Lignes de workflow en double entre dépôts               | 1 579                                   | ⚠️ **partiellement** (L3b, arena#981 + privé#345). `guard-watch` : 378 lignes en deux copies → 314 de YAML dont **74 encore identiques**, plus 173 lignes de script partagé et testé. **Le total brut AUGMENTE** — ce qui disparaît n'est pas du volume mais une seconde copie non testée de la décision. La chaîne PR (`auto-pr`, `automerge`) reste en deux exemplaires |
+| Cycles CI par PR au moteur, `main` chargée              | **5** (mesuré sur arena#975, 41 min)    | ✅ **mesuré en continu** (Q-5 tranchée : accepter, mais compter). `actions:census` rend désormais les têtes par branche et nomme la plus relancée |
+| Symlinks pour lancer les gates de contenu               | 2                                       | ✅ **1** (lot 5, arena#983/#984 + privé#346) — le registre de 12 Mo a rejoint `content/`. Vérifié : le SQL émis reste **identique octet pour octet**, donc aucune dérive avec la prod |
+| Scripts couverts par `typecheck`                        | **0** sur `scripts/**`                  | ❌ **inchangé** — C-15, découvert en fin de lot 5 ; 44 erreurs dormantes à payer, lot non ouvert |
 | Marge d'`AGENTS.md`                                     | 0 ligne, 392 octets                     | ✅ **36 lignes** (214/250, livré arena#975), pas les 50 promises : le reste est irréductible sans perte. Un seuil d'alerte à 92 % préviendra avant le prochain plafond |
 | Scripts npm nommés à la main dans `policy.json`         | 21                                      | ✅ **0** (livré, arena#975). ⚠️ La cible d'origine — « ≤ 60 règles » — était **fausse** : elle comptait 27 entrées npm là où il y en avait 21, et ne comptait pas les 15 lectures ajoutées. Le compte réel tombe à 88, et le nombre de règles n'était de toute façon pas la bonne mesure |
 
@@ -442,6 +446,31 @@ ramènerait à un symlink et sortirait 12 Mo du prompt-space des skills. C'est u
 les deux dépôts, la METHODE et le skill `/campagne` : **hors périmètre** de cette étude, posé en Q-4
 pour qu'il soit tranché plutôt qu'oublié.
 
+### C-15 — `typecheck` ne voit aucun script (né de l'exécution, lot non ouvert)
+
+Trouvé de la seule façon honnête : par un bug que cette étude a elle-même introduit. En
+centralisant le chemin du registre (lot 5), `join` a manqué à l'import d'`audit-program.ts` ;
+`npm run typecheck` est passé **vert**, et c'est `content:audit:strict` qui est mort sur un
+`ReferenceError` au premier lancement réel.
+
+La cause : `tsconfig.json` n'inclut que `src/**`, `vite.config.ts` et `eslint.config.js`.
+**Aucun des scripts n'est typé** — ni `scripts/content/**`, qui porte les gates de contenu du
+corpus, ni `scripts/ci/**`, ni `scripts/harness/**`. Ce sont pourtant des fichiers `.ts` que
+Node exécute en `--experimental-strip-types` : le typage y est purement décoratif.
+
+Mesuré en étendant l'inclusion au reste de l'arbre : **44 erreurs de type**, concentrées sur
+`suivi.ts` (10), `programmes-io.ts` (10), `etat.ts` (5), `check-manuel-links.ts` (5).
+
+C'est un lot à part entière — 44 erreurs ne se paient pas en marge d'un autre travail, et
+plusieurs viennent de `src/shared/content/**` déjà typé, donc d'options de compilation à
+accorder plutôt que de code à corriger. Il n'est **pas ouvert** : le constat est mesuré et
+consigné, l'arbitrage reste entier.
+
+⚠️ Ce constat rejoint la ligne directrice de l'étude — *un gate qui ne mesure pas ce qu'il
+annonce est pire qu'un gate absent* — et c'est le troisième de la même famille : la borne des
+descriptions de skills ne lisait que leur première ligne (C-7), le corpus n'avait aucun gate de
+harness (C-8), et `typecheck` ne couvre pas la moitié du code exécuté.
+
 ### C-14 — Rester à jour avec `main` relance toute la CI (né de l'exécution, hors lot)
 
 Ce constat ne vient pas de l'audit : il vient de **cette étude en train de se livrer**. Pour merger,
@@ -607,14 +636,60 @@ suivent la recommandation de l'architecte**. Aucun ADR du §4 n'a eu à être r�
 
 | #   | Question                                                                                          | Arbitrage du 2026-09-04                                                                                                                                                                                                                                    |
 | --- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Q-1 bis | Le jeton n'est pas venu : attendre, ou basculer sur le repli ?                             | ✅ **le repli, sans jeton** (2026-09-04, seconde passe). La question a été ROUVERTE parce que le contexte avait changé — et parce que la règle « zéro intervention » classe explicitement **supprimer le besoin** au-dessus de **remonter au propriétaire**. Un jeton à créer puis à renouveler dans un an est exactement l'intervention qu'elle cherche à éliminer. Livré en privé#344 + arena#980. Contrepartie assumée : la chaîne du privé reste organisée autrement que celle du moteur, donc une part de C-6 subsiste |
 | Q-1 | Un PAT pour le privé, ou le retrait d'`opened` des déclencheurs ?                                 | ✅ **(a) un PAT fine-grained** — les deux dépôts, `contents:write` + `pull_requests:write`, 1 an. La chaîne du privé devient identique à celle du moteur : C-1 et C-2 disparaissent à la racine, et L3 (auto-pr partagé) devient possible. ⏳ **En attente de la VALEUR du jeton** : la session le pose elle-même (`gh secret set GH_AUTOMATION_PAT`, groupe `repo-config` de `policy.json`) et inscrit sa date d'expiration au tableau des murs de `zero-intervention.md`. La voie (b) reste le repli écrit si le jeton ne peut pas être créé |
 | Q-2 | Relevé de facturation Actions du compte (minutes du mois, plan)                                   | ✅ **le chiffre est fourni** — ⏳ en attente des deux nombres (GitHub → Settings → Billing → Actions). Il remplace l'estimation de §2.2 comme « avant » du KPI ; **si le compte est en dépassement, L1 passe au rang 0** de la roadmap. L1 démarre sans attendre : sa justification est la lisibilité autant que le coût                                                             |
 | Q-3 | La prose des workflows : récit déplacé, en-tête ≤ 15 lignes ?                                     | ✅ **oui, sur les fichiers touchés** (D-9). `docs/agents/incidents-ci.md` naît append-only ; les cinq workflows que les lots modifient déjà y portent leur récit et le citent. **Jamais en masse** : rien n'est réécrit pour la seule beauté du geste, et rien n'est supprimé — le récit change de place                                                                    |
 | Q-4 | `programmes-officiels/` hors du skill (C-13) : lot dédié, tout de suite, ou jamais ?               | ✅ **lot 5 optionnel, APRÈS le lot 2** — le gate `harness:check --corpus` protège alors le déplacement au lieu de le subir. Ordre non négociable : ce registre est le garde-fou anti-double-transcription, et un faux « rien à faire » y est le pire résultat possible                                                                                        |
 
-| Q-5 | **Cinq cycles CI pour une PR** (C-14) : file de merge, CI en deux étages, ou on l'accepte ?        | ⏳ **ouverte** — née de l'exécution, pas de l'audit. Recommandation : **l'accepter pour l'instant**, et rouvrir si `main` reste chargée. La file de merge est à vérifier sur un compte Free (les rulesets n'y sont déjà pas disponibles au privé), et découper le gate en deux étages toucherait à ce que cette étude s'est interdit de fragiliser. Le coût réel est du **temps de file**, pas de la facture : le moteur est public, donc ses minutes sont gratuites — au privé, le même défaut se paierait |
+| Q-5 | **Cinq cycles CI pour une PR** (C-14) : file de merge, CI en deux étages, ou on l'accepte ?        | ✅ **l'accepter, et le mesurer** (arbitré le 2026-09-04). Livré en arena#982 : `actions:census` rend les têtes par branche et nomme la plus relancée. Le raisonnement retenu  : le moteur est **public**, donc ses minutes sont gratuites — le coût réel est du temps de file, pas de la facture ; et la règle « à jour avant de merger » est saine, c'est elle qui empêche un merge sémantiquement cassé. On rouvrira sur un chiffre. La file de merge est à vérifier sur un compte Free (les rulesets n'y sont déjà pas disponibles au privé), et découper le gate en deux étages toucherait à ce que cette étude s'est interdit de fragiliser. Le coût réel est du **temps de file**, pas de la facture : le moteur est public, donc ses minutes sont gratuites — au privé, le même défaut se paierait |
 
 ## 10. Journal d'exécution
+
+- **2026-09-04, seconde moitié — l'étude est livrée en entier.** Neuf PR de plus (arena#980 à
+  #984, privé#344 à #346), et trois choses qu'aucune relecture n'aurait données :
+  - **La suppression du besoin l'a emporté sur la demande au propriétaire.** Q-1 avait été
+    tranchée en faveur du PAT ; le jeton n'est pas venu, et plutôt que d'attendre, la question a
+    été **rouverte** avec la doctrine du dépôt comme argument — l'échelle de traitement de
+    `zero-intervention.md` place « supprimer le besoin » AU-DESSUS de « remonter ». Le repli
+    (retirer `opened` des déclencheurs) supprime les fantômes à la racine sans secret à créer ni
+    à renouveler dans un an. **Constaté dans les deux sens en une heure** : la PR #343 portait
+    trois runs `pull_request` en `failure` à zéro job, la #344 aucun.
+  - **Une correction qui ne tient qu'à la mémoire n'en est pas une.** Sans `types:`, GitHub
+    réécoute `opened` par DÉFAUT : l'oubli était le comportement le plus facile. D'où un
+    invariant de `harness:check --corpus` qui fait échouer la CI si un workflow du corpus le
+    réécoute — éprouvé dans les deux sens contre le vrai corpus, comme le lot 2 l'avait exigé
+    avant de supprimer `pin-check`.
+  - **Une déviation assumée d'un ADR validé.** D-1 demandait de retirer les heuristiques « zéro
+    job » en même temps que leur cause. Elles restent : dans `auto-pr` ce n'est pas une
+    heuristique anti-fantôme mais la décision « faut-il dispatcher ? » (sans elle C-4 revient),
+    et dans `guard-watch` elle coûte un appel d'API par rouge pour que l'alarme dise vrai si
+    quelqu'un remet `opened`. Retirer un filet parce que sa cause est absente est le geste
+    exact de #291, qui a gelé la chaîne une journée.
+
+  **Le lot 5 a coûté dix fois ce que l'étude annonçait, et c'est le plus instructif.** C-13
+  parlait de « quatre scripts du moteur ». Le relevé réel : **3** copies du chemin dans le
+  moteur, **12** skills, **8** études, 2 workflows, le `CLAUDE.md` — et surtout **151 citations
+  de provenance dans `content/**/chapter.json`**, invisibles depuis l'audit. Ce qui a rendu le
+  lot faisable sans risque tient en une vérification : le SQL émis par `content:emit` avant et
+  après le déplacement est **identique octet pour octet** (118 fichiers, même SHA-256). Sans
+  elle, ce lot aurait ouvert une issue `content-drift` sur des dizaines de matières et exigé un
+  dispatch humain d'`apply-content` — pour rien. Le déplacement s'est fait en **trois temps**
+  (résolution additive → déplacement → retrait du chemin de compatibilité), la discipline
+  « additif d'abord » de la DoD §7 appliquée à un arbre de fichiers.
+
+  **Ce que la livraison a encore appris sur les gates eux-mêmes** : `typecheck` ne voit aucun
+  script (C-15), découvert par un `ReferenceError` que `tsc` aurait dû attraper. Troisième
+  membre d'une famille que cette étude n'a cessé de croiser — un gate qui ne mesure pas ce
+  qu'il annonce (C-7, C-8, C-15).
+
+  _Deux gestes de session à ne pas reproduire_ : `--force-with-lease` échoue sur une branche
+  distante **supprimée** après un squash-merge (il faut une poussée simple, et la référence
+  locale périmée fait croire à une divergence qui n'existe pas) ; et deux poussées concurrentes
+  se bloquent mutuellement, le hook `pre-push` relançant le gate complet sur le même checkout —
+  il a fallu en tuer une paire. C'est la raison d'être de la recommandation « un worktree par
+  session parallèle » du `CLAUDE.md` du moteur.
+
 
 - **2026-09-04 12:06 UTC — Les deux dernières PR sont mergées** (arena#975, privé#342) : tout ce que
   cette étude pouvait livrer sans le PAT est **dans `main` sur les deux dépôts**. Ce que la mise au

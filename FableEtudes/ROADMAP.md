@@ -464,11 +464,20 @@ règle elle-même, qui est désormais opposable.
       de 250 à 214 lignes) · **privé#342** (L2 privé — le corpus entre dans le gate, `pin-check`
       disparaît, et un défaut de l'auto-merge d'ici est corrigé au passage : une PR passée au
       rouge une fois ne pouvait plus jamais merger sur ce commit).
-      **Tout cela est mergé sur les deux dépôts au 2026-09-04 12:06 UTC.**
-      **Restent** : la moitié privée de L1 (fantômes + réveils d'automerge) et L3b
-      (`guard-watch` mutualisé, qui en dépend), toutes deux suspendues à la seule *valeur* du
-      jeton ; plus le lot 5 optionnel. La mise au merge a par ailleurs produit un **constat neuf,
-      C-14** : pour merger, une PR doit être à jour avec `main`, donc chaque PR qui entre pendant sa
+      ✅ **ÉTUDE LIVRÉE EN ENTIER le 2026-09-04.** La moitié privée de L1 a été livrée par la
+      voie de REPLI (privé#344 + arena#980) : Q-1 a été rouverte parce que le jeton n'est pas
+      venu, et parce que la règle « zéro intervention » place **supprimer le besoin** au-dessus
+      de **remonter au propriétaire**. `opened` a quitté les trois déclencheurs du privé, et un
+      invariant de `harness:check --corpus` empêche la rechute — constaté dans les deux sens le
+      jour même : la PR #343 portait 3 runs `failure` à zéro job, la #344 aucun. Puis **L3b**
+      (`guard-watch` mutualisé : arena#981 + privé#345), **Q-5** (mesure des cycles par PR :
+      arena#982) et le **lot 5** (le registre de 12 Mo rejoint `content/`, un seul symlink au
+      lieu de deux : arena#983/#984 + privé#346), livré en trois temps et vérifié par un SQL
+      émis **identique octet pour octet** — donc zéro dérive avec la prod. **Deux constats neufs sont nés de l'exécution.** **C-15** : `npm run typecheck` ne voit
+      AUCUN script (`tsconfig.json` n'inclut que `src/**`), donc les scripts qui portent les
+      gates de contenu ne sont typés par personne — trouvé par un `ReferenceError` que `tsc`
+      aurait dû attraper ; 44 erreurs de type dormantes mesurées, lot **non ouvert**. Et
+      **C-14** : pour merger, une PR doit être à jour avec `main`, donc chaque PR qui entre pendant sa
       CI la relance **en entier** — 5 cycles complets sur arena#975, en 41 minutes, pour une PR sans
       une ligne de `src/`. C'est une **troisième** source de runs par branche, distincte des fantômes
       et du double dispatch, invisible au relevé du 2026-09-03 parce que ce jour-là `main` était
