@@ -1,13 +1,13 @@
 # Étude 32 — Harness : optimiser, simplifier, améliorer (les deux dépôts vus comme un seul outillage)
 
-> **Statut** : brouillon (audit du 2026-09-03, chiffres relevés le jour même — à valider par Mohamed, Q-1…Q-4 en §9)
+> **Statut** : validée (2026-09-04 — Q-1…Q-4 arbitrées par Mohamed, toutes sur la recommandation ; §9)
 > **Priorité** : 32 · **Valeur** : 🔧 le harness (instructions, politique, hooks, gates, chaîne PR, gardes)
 > est **bon** — déterministe, relu, gardé — mais il **crie pour rien** (21 % des runs du privé sont des
 > rouges fantômes), **se paie deux fois** (chaque branche neuve du moteur fait tourner ses trois checks
 > requis en double), **se répète** (trois workflows en deux versions divergentes, 1 579 lignes), et
 > **ne se vérifie qu'à moitié** (le dépôt privé n'a aucun gate harness, et la seule borne du gate qui
 > porte sur les skills ne mesure pas ce qu'elle annonce) · **Complexité** : moyenne
-> **Architecte** : Fable / 2026-09-03 · **Exécuteur cible** : Sonnet (ou équiv.) — lots courts,
+> **Architecte** : Fable / audit du 2026-09-03 · **Exécuteur cible** : Sonnet (ou équiv.) — lots courts,
 > outillage et workflows, aucun impact runtime produit, aucune migration
 > **Dépend de** : é25 (livrée sauf L7), étude « IA → déterministe » (close, moteur + volet contenu),
 > arbitrage GitHub Free du 2026-08-24 (on reste en gratuit : rien ici ne le rouvre) · **Bloque** : —
@@ -247,7 +247,8 @@ jour, #293 « 37 gardes en échec »). Le projet a répondu par une **heuristiqu
 `jobs | length == 0` dans `auto-pr.yml`, `guard-watch.yml`, et 20 lignes de `CLAUDE.md` — au lieu de
 supprimer la cause.
 
-**Remède.** Deux voies, exclusives, tranchées en Q-1 :
+**Remède.** Deux voies étaient exclusives ; **Q-1 a tranché pour (a) le 2026-09-04**. La voie (b)
+est conservée ci-dessous parce qu'elle reste le repli exact si le jeton ne peut pas être créé :
 
 - **(a) Un PAT au privé** (`GH_AUTOMATION_PAT`, fine-grained, `contents:write` + `pull_requests:write`,
   comme au moteur) : la PR est ouverte par une identité de collaborateur → les événements
@@ -494,13 +495,14 @@ privé/
 
 ## 6. Plan d'exécution en lots
 
-Chaque lot = **une PR par dépôt**, gate verte, utile seul. Ordre : L1 → L2 → L3 → L4 ; L1 attend Q-1
-(le reste de L1 — D-4, D-11 — ne l'attend pas). Aucun lot ne touche deux dépôts dans une même PR
+Chaque lot = **une PR par dépôt**, gate verte, utile seul. Ordre : L1 → L2 → L3 → L4, puis L5
+(optionnel, Q-4). Depuis l'arbitrage du 2026-09-04, **plus aucune décision n'est en attente** : L1
+attend seulement la **valeur** du PAT, et sa moitié moteur (D-4, D-11) ne l'attend même pas. Aucun lot ne touche deux dépôts dans une même PR
 (invariant du projet) : les lots à deux dépôts se livrent **moteur d'abord** (le privé l'appelle).
 
 | Lot | Contenu                                                                                                                                                                                                                                     | Dépôt(s)            | Tests / preuve exigés                                                                                                                                  | Dépend de |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
-| L1  | **La chaîne cesse de crier pour rien.** D-1 (selon Q-1), D-2, D-4, D-11 ; retrait des heuristiques zéro-job (auto-pr privé, guard-watch ×2) ; `CLAUDE.md` privé § chaîne de merge ramené à l'état vrai                                       | moteur (D-4, D-11) puis privé | `actions-census.mjs` avant/après sur 3 jours : **0 run à zéro job**, ≤ 4 runs par branche ; une PR de test poussée au privé merge seule ; `second-opinion` : 0 run sur une PR sans label | Q-1       |
+| L1  | **La chaîne cesse de crier pour rien.** D-1 (voie (a), Q-1), D-2, D-4, D-11 ; retrait des heuristiques zéro-job (auto-pr privé, guard-watch ×2) ; `CLAUDE.md` privé § chaîne de merge ramené à l'état vrai                                       | moteur (D-4, D-11) puis privé | `actions-census.mjs` avant/après sur 3 jours : **0 run à zéro job**, ≤ 4 runs par branche ; une PR de test poussée au privé merge seule ; `second-opinion` : 0 run sur une PR sans label | valeur du PAT (Q-1) |
 | L2  | **Un seul `harness:check`.** D-5 (YAML, `--corpus` complet, tolérances Unicode, scope des ids de modèle, seuil d'alerte D-8), D-10 ; Content CI appelle le gate ; `pin-check.yml` supprimé ; 2 descriptions raccourcies                       | moteur puis privé   | Vitest : cas de l'annexe B, ZWJ-emoji toléré / RLO refusé, « O2 » ignoré, `--corpus` sur un faux corpus ; Content CI verte **et** rouge sur une PR témoin qui rallonge une description | —         |
 | L3  | **Le moteur ne paie plus deux fois.** D-3 ; D-6 (`guard-watch` réutilisable, appelé du privé) ; D-9 sur les fichiers touchés                                                                                                                | moteur puis privé   | census : 3 runs par branche neuve ; une branche poussée pendant une panne simulée d'événements (dispatch manuel de test) déclenche bien la secours ; `guard-watch` privé ouvre/ferme son issue sur un rouge fabriqué (`workflow_dispatch` d'un workflow en `exit 1`) | L1        |
 | L4  | **La politique dit moins et couvre plus.** D-7, D-8 ; `harness:check` vérifie « une raison par groupe » et avertit à 92 %                                                                                                                    | moteur              | `harness:sync` idempotent ; session réelle : `cat`/`grep`/`npm run eol:check` sans invite ; `AGENTS.md` ≤ 200 l. avec table de correspondance dans la PR (rien ne se perd, règle D-1b de l'é25) | —         |
@@ -528,6 +530,7 @@ Points durs :
 - [ ] Lot 2 — Un seul `harness:check` pour les deux dépôts (D-5, D-8 seuil, D-10)
 - [ ] Lot 3 — Le moteur ne paie plus deux fois ; `guard-watch` partagé (D-3, D-6)
 - [ ] Lot 4 — La politique dit moins et couvre plus ; `AGENTS.md` respire (D-7, D-8)
+- [ ] Lot 5 (optionnel, après L2) — `programmes-officiels/` sort du skill et rejoint `content/` (C-13, Q-4)
 
 ## 7. Stratégie de test & mesure
 
@@ -555,16 +558,26 @@ Points durs :
 | `AGENTS.md` perd une règle en déménageant (RISK-7)                                                        | table de correspondance dans la PR + `harness:check` continue de vérifier l'inventaire des features et les pointeurs                    |
 | Le réutilisable `guard-watch` casse les deux dépôts d'un coup (RISK-8)                                    | appel **épinglé au SHA** : le privé ne bouge que quand on met sa ligne à jour ; c'est le même contrat que pour toute action tierce     |
 
-## 9. Questions ouvertes (pour l'humain)
+## 9. Questions ouvertes — **toutes arbitrées le 2026-09-04**
 
-| #   | Question                                                                                                                                                                                                              | Recommandation                                                                                                                                                                                           |
-| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Q-1 | **Un PAT pour le privé ?** (a) créer un PAT fine-grained (les deux dépôts, `contents:write`, `pull_requests:write`, 1 an) et le donner à la session, qui le pose ; ou (b) rester sans PAT et retirer `opened` des déclencheurs | **(a)** : c'est ce qui rend la chaîne du privé **identique** à celle du moteur, supprime C-1 et C-2 à la racine, et rend L3 (auto-pr partagé) possible. (b) est gratuit et suffit à C-1 si le geste PAT est refusé |
-| Q-2 | **Relevé de facturation Actions** du compte (Settings → Billing → Actions) : minutes consommées ce mois, plan. Un chiffre, hors dépôt                                                                                    | à faire avant L1 pour avoir le « avant » réel ; si dépassement, L1 passe au rang 0 de la roadmap                                                                                                          |
-| Q-3 | **La prose des workflows** : convention D-9 (récit en `docs/agents/incidents-ci.md`, en-tête ≤ 15 l.) appliquée aux fichiers touchés — oui / non / seulement pour les nouveaux fichiers ?                                | **oui, sur les fichiers touchés** — jamais en masse ; le récit est un actif du projet, seule sa place change                                                                                              |
-| Q-4 | **`programmes-officiels/` hors du skill** (C-13) : ouvrir un lot dédié (moteur : 4 scripts + Content CI + recette locale ; privé : déplacement + METHODE + `/campagne`), ou laisser                                       | ouvrir **après** L2 (le gate `--corpus` protégera le déplacement), en lot 5 optionnel — pas avant : le bénéfice (un symlink au lieu de deux) ne vaut pas de doubler la surface de cette étude               |
+Les quatre ont été posées une par une à Mohamed, avec leurs contreparties ; **les quatre réponses
+suivent la recommandation de l'architecte**. Aucun ADR du §4 n'a eu à être révisé.
+
+| #   | Question                                                                                          | Arbitrage du 2026-09-04                                                                                                                                                                                                                                    |
+| --- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Q-1 | Un PAT pour le privé, ou le retrait d'`opened` des déclencheurs ?                                 | ✅ **(a) un PAT fine-grained** — les deux dépôts, `contents:write` + `pull_requests:write`, 1 an. La chaîne du privé devient identique à celle du moteur : C-1 et C-2 disparaissent à la racine, et L3 (auto-pr partagé) devient possible. ⏳ **En attente de la VALEUR du jeton** : la session le pose elle-même (`gh secret set GH_AUTOMATION_PAT`, groupe `repo-config` de `policy.json`) et inscrit sa date d'expiration au tableau des murs de `zero-intervention.md`. La voie (b) reste le repli écrit si le jeton ne peut pas être créé |
+| Q-2 | Relevé de facturation Actions du compte (minutes du mois, plan)                                   | ✅ **le chiffre est fourni** — ⏳ en attente des deux nombres (GitHub → Settings → Billing → Actions). Il remplace l'estimation de §2.2 comme « avant » du KPI ; **si le compte est en dépassement, L1 passe au rang 0** de la roadmap. L1 démarre sans attendre : sa justification est la lisibilité autant que le coût                                                             |
+| Q-3 | La prose des workflows : récit déplacé, en-tête ≤ 15 lignes ?                                     | ✅ **oui, sur les fichiers touchés** (D-9). `docs/agents/incidents-ci.md` naît append-only ; les cinq workflows que les lots modifient déjà y portent leur récit et le citent. **Jamais en masse** : rien n'est réécrit pour la seule beauté du geste, et rien n'est supprimé — le récit change de place                                                                    |
+| Q-4 | `programmes-officiels/` hors du skill (C-13) : lot dédié, tout de suite, ou jamais ?               | ✅ **lot 5 optionnel, APRÈS le lot 2** — le gate `harness:check --corpus` protège alors le déplacement au lieu de le subir. Ordre non négociable : ce registre est le garde-fou anti-double-transcription, et un faux « rien à faire » y est le pire résultat possible                                                                                        |
 
 ## 10. Journal d'exécution
+
+- **2026-09-04 — Validation.** Les quatre questions ont été posées **une par une** à Mohamed, avec
+  leurs contreparties chiffrées ; **les quatre réponses suivent la recommandation** (§9). Statut
+  passé à `validée`. Deux d'entre elles appellent une **valeur**, pas une décision, et l'attendre
+  n'arrête rien : le PAT de Q-1 (que la session posera elle-même) et les deux nombres de
+  facturation de Q-2. Le lot 5 (C-13) entre au plan, explicitement **après** le lot 2. Aucun ADR du
+  §4 n'a eu à être révisé — comme pour l'étude 25, les décisions encodaient déjà le chemin retenu.
 
 - **2026-09-03 — Audit et rédaction.** Relevé sur les deux dépôts (800 + 795 runs, 8 pages d'API
   chacun), gates chronométrés, 48 frontmatters parsés en YAML, `check.mjs` rejoué sur le privé, bug
