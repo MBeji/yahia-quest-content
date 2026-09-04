@@ -10,9 +10,17 @@
       "prompt": "ما الجزءُ الصحيح في العدد 100,25؟",
       "options": [
         { "id": "a", "text": "100" },
-        { "id": "b", "text": "25" },
+        {
+          "id": "b",
+          "text": "25",
+          "misconceptionTag": "math.num.partie-entiere-et-decimale-confondues"
+        },
         { "id": "c", "text": "0" },
-        { "id": "d", "text": "10 025" }
+        {
+          "id": "d",
+          "text": "10 025",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        }
       ],
       "correctOption": "a",
       "explanation": "الجزءُ الصحيح هو ما يسبق الفاصلة: 100.",
@@ -23,7 +31,7 @@
       "prompt": "ما العددُ المساوي لـ 0,7 + 0,05؟",
       "options": [
         { "id": "a", "text": "0,57" },
-        { "id": "b", "text": "7,5" },
+        { "id": "b", "text": "7,5", "misconceptionTag": "math.num.virgule-mal-placee" },
         { "id": "c", "text": "0,75" },
         { "id": "d", "text": "0,705" }
       ],
@@ -35,7 +43,7 @@
     {
       "prompt": "قارن بين 12,4 و 12,40.",
       "options": [
-        { "id": "a", "text": "12,4 < 12,40" },
+        { "id": "a", "text": "12,4 < 12,40", "misconceptionTag": "math.dec.compare-by-length" },
         { "id": "b", "text": "12,4 = 12,40" },
         { "id": "c", "text": "12,4 > 12,40" },
         { "id": "d", "text": "لا يمكن المقارنة" }
@@ -48,9 +56,21 @@
     {
       "prompt": "رتّب تنازليًّا: 5,6 ؛ 5,56 ؛ 5,65 ؛ 5,605.",
       "options": [
-        { "id": "a", "text": "5,65 > 5,6 > 5,605 > 5,56" },
-        { "id": "b", "text": "5,6 > 5,65 > 5,605 > 5,56" },
-        { "id": "c", "text": "5,56 > 5,6 > 5,605 > 5,65" },
+        {
+          "id": "a",
+          "text": "5,65 > 5,6 > 5,605 > 5,56",
+          "misconceptionTag": "math.dec.compare-by-length"
+        },
+        {
+          "id": "b",
+          "text": "5,6 > 5,65 > 5,605 > 5,56",
+          "misconceptionTag": "math.dec.compare-by-length"
+        },
+        {
+          "id": "c",
+          "text": "5,56 > 5,6 > 5,605 > 5,65",
+          "misconceptionTag": "math.dec.compare-by-length"
+        },
         { "id": "d", "text": "5,65 > 5,605 > 5,6 > 5,56" }
       ],
       "correctOption": "d",
@@ -62,7 +82,7 @@
       "prompt": "ما تدويرُ 9,96 إلى أقرب عُشر؟",
       "options": [
         { "id": "a", "text": "10,0" },
-        { "id": "b", "text": "9,9" },
+        { "id": "b", "text": "9,9", "misconceptionTag": "math.num.arrondi-par-troncature" },
         { "id": "c", "text": "9,96" },
         { "id": "d", "text": "10,1" }
       ],

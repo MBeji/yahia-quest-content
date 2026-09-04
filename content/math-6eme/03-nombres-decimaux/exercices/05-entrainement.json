@@ -10,9 +10,13 @@
       "prompt": "العددُ 0,01 هو:",
       "options": [
         { "id": "a", "text": "جزءٌ من المئة" },
-        { "id": "b", "text": "عُشرٌ" },
-        { "id": "c", "text": "جزءٌ من الألف" },
-        { "id": "d", "text": "وحدة" }
+        { "id": "b", "text": "عُشرٌ", "misconceptionTag": "math.num.rang-decimal-confondu" },
+        {
+          "id": "c",
+          "text": "جزءٌ من الألف",
+          "misconceptionTag": "math.num.rang-decimal-confondu"
+        },
+        { "id": "d", "text": "وحدة", "misconceptionTag": "math.num.rang-decimal-confondu" }
       ],
       "correctOption": "a",
       "explanation": "0,01 = 1 ÷ 100، أي جزءٌ واحدٌ من المئة.",
@@ -22,9 +26,17 @@
     {
       "prompt": "ما تفكيكُ العدد 9,4؟",
       "options": [
-        { "id": "a", "text": "9 + 0,04" },
-        { "id": "b", "text": "90 + 4" },
-        { "id": "c", "text": "9 + 4" },
+        { "id": "a", "text": "9 + 0,04", "misconceptionTag": "math.num.rang-decimal-confondu" },
+        {
+          "id": "b",
+          "text": "90 + 4",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        },
+        {
+          "id": "c",
+          "text": "9 + 4",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        },
         { "id": "d", "text": "9 + 0,4" }
       ],
       "correctOption": "d",
@@ -35,10 +47,14 @@
     {
       "prompt": "أيُّ عددٍ يساوي 6,30؟",
       "options": [
-        { "id": "a", "text": "6,03" },
+        { "id": "a", "text": "6,03", "misconceptionTag": "math.num.zero-apres-virgule-ignore" },
         { "id": "b", "text": "6,3" },
-        { "id": "c", "text": "63" },
-        { "id": "d", "text": "0,63" }
+        {
+          "id": "c",
+          "text": "63",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        },
+        { "id": "d", "text": "0,63", "misconceptionTag": "math.num.virgule-mal-placee" }
       ],
       "correctOption": "b",
       "explanation": "الصفرُ على يمين الجزء العشريّ لا يُغيّر القيمة: 6,30 = 6,3.",
@@ -50,8 +66,8 @@
       "options": [
         { "id": "a", "text": "7,25" },
         { "id": "b", "text": "7,26" },
-        { "id": "c", "text": "7,2" },
-        { "id": "d", "text": "7,3" }
+        { "id": "c", "text": "7,2", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" },
+        { "id": "d", "text": "7,3", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" }
       ],
       "correctOption": "a",
       "explanation": "ننظر إلى الرقم بعد رتبة الأجزاء من المئة: إنّه 1 (< 5) فنُبقي الرتبةَ كما هي: 7,251 ≈ 7,25.",
@@ -61,7 +77,7 @@
     {
       "prompt": "قارن بين 0,408 و 0,41.",
       "options": [
-        { "id": "a", "text": "0,408 > 0,41" },
+        { "id": "a", "text": "0,408 > 0,41", "misconceptionTag": "math.dec.compare-by-length" },
         { "id": "b", "text": "متساويان" },
         { "id": "c", "text": "0,408 < 0,41" },
         { "id": "d", "text": "0,408 = 0,41" }

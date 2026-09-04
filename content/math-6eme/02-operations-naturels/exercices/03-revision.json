@@ -9,10 +9,22 @@
     {
       "prompt": "ماذا نسمّي نتيجةَ عمليّة الطرح؟",
       "options": [
-        { "id": "a", "text": "المجموع" },
+        {
+          "id": "a",
+          "text": "المجموع",
+          "misconceptionTag": "math.num.vocabulaire-operations-confondu"
+        },
         { "id": "b", "text": "الفرق" },
-        { "id": "c", "text": "الجداء" },
-        { "id": "d", "text": "الخارج" }
+        {
+          "id": "c",
+          "text": "الجداء",
+          "misconceptionTag": "math.num.vocabulaire-operations-confondu"
+        },
+        {
+          "id": "d",
+          "text": "الخارج",
+          "misconceptionTag": "math.num.vocabulaire-operations-confondu"
+        }
       ],
       "correctOption": "b",
       "explanation": "نتيجةُ الطرح تُسمّى الفرق.",
@@ -23,7 +35,7 @@
       "prompt": "ما ناتجُ 4 500 + 2 750؟",
       "options": [
         { "id": "a", "text": "7 350" },
-        { "id": "b", "text": "6 250" },
+        { "id": "b", "text": "6 250", "misconceptionTag": "math.num.retenue-oubliee" },
         { "id": "c", "text": "7 250" },
         { "id": "d", "text": "7 150" }
       ],
@@ -35,10 +47,10 @@
     {
       "prompt": "ما ناتجُ 6 003 − 2 815؟",
       "options": [
-        { "id": "a", "text": "3 288" },
+        { "id": "a", "text": "3 288", "misconceptionTag": "math.num.emprunt-oublie" },
         { "id": "b", "text": "3 188" },
-        { "id": "c", "text": "4 188" },
-        { "id": "d", "text": "3 198" }
+        { "id": "c", "text": "4 188", "misconceptionTag": "math.num.emprunt-oublie" },
+        { "id": "d", "text": "3 198", "misconceptionTag": "math.num.emprunt-oublie" }
       ],
       "correctOption": "b",
       "explanation": "6 003 − 2 815 = 3 188 (نتحقّق: 2 815 + 3 188 = 6 003).",
@@ -63,7 +75,11 @@
       "options": [
         { "id": "a", "text": "5" },
         { "id": "b", "text": "4" },
-        { "id": "c", "text": "6" },
+        {
+          "id": "c",
+          "text": "6",
+          "misconceptionTag": "math.num.reste-superieur-ou-egal-au-diviseur"
+        },
         { "id": "d", "text": "3" }
       ],
       "correctOption": "a",

@@ -9,10 +9,10 @@
     {
       "prompt": "في العدد 5 327، ما رتبة الرقم 3؟",
       "options": [
-        { "id": "a", "text": "الآحاد" },
-        { "id": "b", "text": "العشرات" },
+        { "id": "a", "text": "الآحاد", "misconceptionTag": "math.num.rang-du-chiffre-decale" },
+        { "id": "b", "text": "العشرات", "misconceptionTag": "math.num.rang-du-chiffre-decale" },
         { "id": "c", "text": "المئات" },
-        { "id": "d", "text": "الآلاف" }
+        { "id": "d", "text": "الآلاف", "misconceptionTag": "math.num.rang-du-chiffre-decale" }
       ],
       "correctOption": "c",
       "explanation": "ابتداءً من اليمين في 5 327: الرقم 7 آحاد، 2 عشرات، 3 مئات، 5 آلاف. إذن الرقم 3 في رتبة المئات.",
@@ -22,10 +22,14 @@
     {
       "prompt": "كيف يُقرأ العدد 4 060؟",
       "options": [
-        { "id": "a", "text": "أربعمئة وستّون" },
+        { "id": "a", "text": "أربعمئة وستّون", "misconceptionTag": "math.num.classe-mal-lue" },
         { "id": "b", "text": "أربعة آلاف وستّون" },
-        { "id": "c", "text": "أربعة آلاف وستّمئة" },
-        { "id": "d", "text": "أربعون ألفًا وستّون" }
+        {
+          "id": "c",
+          "text": "أربعة آلاف وستّمئة",
+          "misconceptionTag": "math.num.zero-intercalaire-oublie"
+        },
+        { "id": "d", "text": "أربعون ألفًا وستّون", "misconceptionTag": "math.num.classe-mal-lue" }
       ],
       "correctOption": "b",
       "explanation": "العدد 4 060 = 4 آلاف + 0 مئات + 6 عشرات + 0 آحاد، فيُقرأ «أربعة آلاف وستّون».",
@@ -36,8 +40,8 @@
       "prompt": "كيف نكتب بالأرقام العددَ «ثلاثمئة وسبعة»؟",
       "options": [
         { "id": "a", "text": "307" },
-        { "id": "b", "text": "370" },
-        { "id": "c", "text": "3 007" },
+        { "id": "b", "text": "370", "misconceptionTag": "math.num.zero-intercalaire-oublie" },
+        { "id": "c", "text": "3 007", "misconceptionTag": "math.num.classe-mal-lue" },
         { "id": "d", "text": "3 070" }
       ],
       "correctOption": "a",
@@ -48,9 +52,21 @@
     {
       "prompt": "أيّ تفكيكٍ يوافق العدد 2 503؟",
       "options": [
-        { "id": "a", "text": "2×100 + 5×10 + 3" },
-        { "id": "b", "text": "2×1000 + 5×100 + 3×10" },
-        { "id": "c", "text": "2×1000 + 5×10 + 3" },
+        {
+          "id": "a",
+          "text": "2×100 + 5×10 + 3",
+          "misconceptionTag": "math.num.rang-du-chiffre-decale"
+        },
+        {
+          "id": "b",
+          "text": "2×1000 + 5×100 + 3×10",
+          "misconceptionTag": "math.num.rang-du-chiffre-decale"
+        },
+        {
+          "id": "c",
+          "text": "2×1000 + 5×10 + 3",
+          "misconceptionTag": "math.num.rang-du-chiffre-decale"
+        },
         { "id": "d", "text": "2×1000 + 5×100 + 3" }
       ],
       "correctOption": "d",

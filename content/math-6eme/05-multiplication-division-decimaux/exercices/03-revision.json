@@ -10,9 +10,13 @@
       "prompt": "ما ناتجُ 1,1 × 5؟",
       "options": [
         { "id": "a", "text": "5,5" },
-        { "id": "b", "text": "55" },
-        { "id": "c", "text": "6,1" },
-        { "id": "d", "text": "5,05" }
+        { "id": "b", "text": "55", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
+        { "id": "c", "text": "6,1", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        {
+          "id": "d",
+          "text": "5,05",
+          "misconceptionTag": "math.num.zero-intercale-dans-le-resultat"
+        }
       ],
       "correctOption": "a",
       "explanation": "نحسب 11 × 5 = 55، وفي العامل 1,1 رقمٌ عشريٌّ واحد، فالجداء 5,5.",
@@ -22,9 +26,17 @@
     {
       "prompt": "ما ناتجُ 3,45 × 100؟",
       "options": [
-        { "id": "a", "text": "34,5" },
+        {
+          "id": "a",
+          "text": "34,5",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
         { "id": "b", "text": "345" },
-        { "id": "c", "text": "3 450" },
+        {
+          "id": "c",
+          "text": "3 450",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
         { "id": "d", "text": "3,45" }
       ],
       "correctOption": "b",
@@ -35,8 +47,12 @@
     {
       "prompt": "ما ناتجُ 9,9 ÷ 3؟",
       "options": [
-        { "id": "a", "text": "33" },
-        { "id": "b", "text": "3,03" },
+        { "id": "a", "text": "33", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
+        {
+          "id": "b",
+          "text": "3,03",
+          "misconceptionTag": "math.num.zero-intercale-dans-le-resultat"
+        },
         { "id": "c", "text": "3,3" },
         { "id": "d", "text": "6,6" }
       ],
@@ -48,8 +64,8 @@
     {
       "prompt": "ما ناتجُ 2,5 × 2؟",
       "options": [
-        { "id": "a", "text": "50" },
-        { "id": "b", "text": "4,5" },
+        { "id": "a", "text": "50", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
+        { "id": "b", "text": "4,5", "misconceptionTag": "math.num.operation-inverse-appliquee" },
         { "id": "c", "text": "0,5" },
         { "id": "d", "text": "5" }
       ],
@@ -62,9 +78,13 @@
       "prompt": "ما ناتجُ 0,8 × 0,5؟",
       "options": [
         { "id": "a", "text": "0,4" },
-        { "id": "b", "text": "4" },
-        { "id": "c", "text": "0,04" },
-        { "id": "d", "text": "1,3" }
+        { "id": "b", "text": "4", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
+        {
+          "id": "c",
+          "text": "0,04",
+          "misconceptionTag": "math.num.produit-decimales-mal-comptees"
+        },
+        { "id": "d", "text": "1,3", "misconceptionTag": "math.num.operation-inverse-appliquee" }
       ],
       "correctOption": "a",
       "explanation": "نحسب 8 × 5 = 40، ومجموعُ الأرقام العشرية رقمان، فجداءُ 0,8 × 0,5 = 0,40 = 0,4.",

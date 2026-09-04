@@ -12,7 +12,7 @@
         { "id": "a", "text": "9,9" },
         { "id": "b", "text": "9,09" },
         { "id": "c", "text": "10,9" },
-        { "id": "d", "text": "99" }
+        { "id": "d", "text": "99", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" }
       ],
       "correctOption": "a",
       "explanation": "نجمع الأعشارَ مع الأعشار ثمّ الوحداتِ مع الوحدات: 7,2 + 2,7 = 9,9.",
@@ -22,7 +22,11 @@
     {
       "prompt": "ما ناتجُ 20,5 − 12,35؟",
       "options": [
-        { "id": "a", "text": "8,25" },
+        {
+          "id": "a",
+          "text": "8,25",
+          "misconceptionTag": "math.num.soustraction-colonne-petit-du-grand"
+        },
         { "id": "b", "text": "8,15" },
         { "id": "c", "text": "7,15" },
         { "id": "d", "text": "8,05" }
@@ -49,7 +53,7 @@
       "prompt": "ما ناتجُ 6,3 + 0,07؟",
       "options": [
         { "id": "a", "text": "6,1" },
-        { "id": "b", "text": "7,0" },
+        { "id": "b", "text": "7,0", "misconceptionTag": "math.num.decimaux-alignes-a-droite" },
         { "id": "c", "text": "6,307" },
         { "id": "d", "text": "6,37" }
       ],
@@ -64,7 +68,7 @@
         { "id": "a", "text": "99,5" },
         { "id": "b", "text": "95" },
         { "id": "c", "text": "99,95" },
-        { "id": "d", "text": "100,5" }
+        { "id": "d", "text": "100,5", "misconceptionTag": "math.num.operation-inverse-appliquee" }
       ],
       "correctOption": "a",
       "explanation": "نكتب 100 في صورة 100,0 ثمّ نطرح: 100,0 − 0,5 = 99,5.",
@@ -74,7 +78,7 @@
     {
       "prompt": "ثمنُ سلعةٍ 24,90 دينارًا، دفع الزبونُ ورقةَ 50 دينارًا. كم الباقي؟",
       "options": [
-        { "id": "a", "text": "26,10 دينارًا" },
+        { "id": "a", "text": "26,10 دينارًا", "misconceptionTag": "math.num.emprunt-oublie" },
         { "id": "b", "text": "25,10 دينارًا" },
         { "id": "c", "text": "25,90 دينارًا" },
         { "id": "d", "text": "24,10 دينارًا" }

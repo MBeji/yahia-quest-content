@@ -35,10 +35,22 @@
     {
       "prompt": "رتّب تصاعديًّا: 0,9 ؛ 1,1 ؛ 0,99 ؛ 1,01.",
       "options": [
-        { "id": "a", "text": "0,9 < 1,01 < 0,99 < 1,1" },
+        {
+          "id": "a",
+          "text": "0,9 < 1,01 < 0,99 < 1,1",
+          "misconceptionTag": "math.dec.compare-by-length"
+        },
         { "id": "b", "text": "0,9 < 0,99 < 1,01 < 1,1" },
-        { "id": "c", "text": "0,99 < 0,9 < 1,1 < 1,01" },
-        { "id": "d", "text": "0,9 < 0,99 < 1,1 < 1,01" }
+        {
+          "id": "c",
+          "text": "0,99 < 0,9 < 1,1 < 1,01",
+          "misconceptionTag": "math.dec.compare-by-length"
+        },
+        {
+          "id": "d",
+          "text": "0,9 < 0,99 < 1,1 < 1,01",
+          "misconceptionTag": "math.dec.compare-by-length"
+        }
       ],
       "correctOption": "b",
       "explanation": "نقارن الجزءَ الصحيح أوّلًا: 0,9 و 0,99 جزؤهما الصحيح 0 (وهما أصغر)، و 1,01 و 1,1 جزؤهما الصحيح 1. إذن 0,9 < 0,99 < 1,01 < 1,1.",
@@ -62,8 +74,8 @@
       "prompt": "ما العددُ العشريّ الذي جزؤه الصحيح 8، وفيه 3 أعشار و 0 أجزاء من المئة و 5 أجزاء من الألف؟",
       "options": [
         { "id": "a", "text": "8,305" },
-        { "id": "b", "text": "8,35" },
-        { "id": "c", "text": "8,035" },
+        { "id": "b", "text": "8,35", "misconceptionTag": "math.num.zero-apres-virgule-ignore" },
+        { "id": "c", "text": "8,035", "misconceptionTag": "math.num.rang-decimal-confondu" },
         { "id": "d", "text": "8,350" }
       ],
       "correctOption": "a",
@@ -74,10 +86,22 @@
     {
       "prompt": "أيُّ سلسلةٍ مرتّبةٌ تصاعديًّا ترتيبًا صحيحًا؟",
       "options": [
-        { "id": "a", "text": "3,4 < 3,04 < 3,44 < 4,3" },
-        { "id": "b", "text": "4,3 < 3,44 < 3,4 < 3,04" },
+        {
+          "id": "a",
+          "text": "3,4 < 3,04 < 3,44 < 4,3",
+          "misconceptionTag": "math.dec.compare-by-length"
+        },
+        {
+          "id": "b",
+          "text": "4,3 < 3,44 < 3,4 < 3,04",
+          "misconceptionTag": "math.num.ordre-croissant-decroissant-confondus"
+        },
         { "id": "c", "text": "3,04 < 3,4 < 3,44 < 4,3" },
-        { "id": "d", "text": "3,04 < 3,44 < 3,4 < 4,3" }
+        {
+          "id": "d",
+          "text": "3,04 < 3,44 < 3,4 < 4,3",
+          "misconceptionTag": "math.dec.compare-by-length"
+        }
       ],
       "correctOption": "c",
       "explanation": "نقارن الجزءَ الصحيح ثمّ الأعشار: 3,04 < 3,4 < 3,44 (كلُّها جزؤها الصحيح 3) < 4,3 (جزؤها الصحيح 4).",

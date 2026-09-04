@@ -10,9 +10,13 @@
       "prompt": "ما ناتجُ 1,25 × 8؟",
       "options": [
         { "id": "a", "text": "10" },
-        { "id": "b", "text": "100" },
+        {
+          "id": "b",
+          "text": "100",
+          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
+        },
         { "id": "c", "text": "1" },
-        { "id": "d", "text": "9,25" }
+        { "id": "d", "text": "9,25", "misconceptionTag": "math.num.operation-inverse-appliquee" }
       ],
       "correctOption": "a",
       "explanation": "نحسب 125 × 8 = 1 000، ومجموعُ الأرقام العشرية رقمان، فجداءُ 1,25 × 8 = 10,00 = 10.",
@@ -23,9 +27,17 @@
       "prompt": "ما ناتجُ 0,25 × 0,4؟",
       "options": [
         { "id": "a", "text": "1" },
-        { "id": "b", "text": "0,01" },
+        {
+          "id": "b",
+          "text": "0,01",
+          "misconceptionTag": "math.num.produit-decimales-mal-comptees"
+        },
         { "id": "c", "text": "0,1" },
-        { "id": "d", "text": "0,001" }
+        {
+          "id": "d",
+          "text": "0,001",
+          "misconceptionTag": "math.num.produit-decimales-mal-comptees"
+        }
       ],
       "correctOption": "c",
       "explanation": "نحسب 25 × 4 = 100، ومجموعُ الأرقام العشرية ثلاثةٌ، فجداءُ 0,25 × 0,4 = 0,100 = 0,1.",
@@ -38,7 +50,11 @@
         { "id": "a", "text": "21,5 دينارًا" },
         { "id": "b", "text": "21 دينارًا" },
         { "id": "c", "text": "18 دينارًا" },
-        { "id": "d", "text": "9,5 دينارًا" }
+        {
+          "id": "d",
+          "text": "9,5 دينارًا",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
       ],
       "correctOption": "b",
       "explanation": "ثمنُ 6 أمتار = 6 × 3,5 = 21 دينارًا.",
@@ -48,7 +64,11 @@
     {
       "prompt": "وُزّع 7,2 لترًا من العصير بالتساوي على 8 قوارير. كم في كلّ قارورة؟",
       "options": [
-        { "id": "a", "text": "9 لترات" },
+        {
+          "id": "a",
+          "text": "9 لترات",
+          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
+        },
         { "id": "b", "text": "0,8 لترٍ" },
         { "id": "c", "text": "1,2 لترٍ" },
         { "id": "d", "text": "0,9 لترٍ" }
@@ -62,9 +82,9 @@
       "prompt": "ما ناتجُ 4,5 × 1,2؟",
       "options": [
         { "id": "a", "text": "5,4" },
-        { "id": "b", "text": "54" },
-        { "id": "c", "text": "5,7" },
-        { "id": "d", "text": "0,54" }
+        { "id": "b", "text": "54", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
+        { "id": "c", "text": "5,7", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        { "id": "d", "text": "0,54", "misconceptionTag": "math.num.produit-decimales-mal-comptees" }
       ],
       "correctOption": "a",
       "explanation": "نحسب 45 × 12 = 540، ومجموعُ الأرقام العشرية رقمان، فجداءُ 4,5 × 1,2 = 5,40 = 5,4.",
@@ -74,10 +94,18 @@
     {
       "prompt": "عددٌ ضربناه في 100 فصار 250. ما هذا العدد؟",
       "options": [
-        { "id": "a", "text": "25" },
+        {
+          "id": "a",
+          "text": "25",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
         { "id": "b", "text": "2,5" },
-        { "id": "c", "text": "0,25" },
-        { "id": "d", "text": "2 500" }
+        {
+          "id": "c",
+          "text": "0,25",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
+        { "id": "d", "text": "2 500", "misconceptionTag": "math.num.puissance-de-dix-sens-inverse" }
       ],
       "correctOption": "b",
       "explanation": "نعكس العمليّة بالقسمة على 100: العددُ = 250 ÷ 100 = 2,5 (نتحقّق: 2,5 × 100 = 250).",
