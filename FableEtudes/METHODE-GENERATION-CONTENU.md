@@ -348,31 +348,34 @@ fait depuis le poste Windows, ou en autorisant le domaine dans l'environnement.
    (cd engine && npm ci)                                               # Node 22 / npm 10
    ```
 
-   Les scripts du moteur résolvent `content/` **et**
-   `.claude/skills/content-ecole-tn/references/programmes-officiels/` **relativement à leur
-   propre racine** : sans les deux liens ci-dessous, `content:*` ne voit aucun corpus et
-   `programme:check`/`content:audit` échouent avant même de le lire. C'est exactement ce que
-   fait la CI privée (`.github/workflows/content-ci.yml`) :
+   Les scripts du moteur résolvent `content/` **relativement à leur propre racine** : sans le
+   lien ci-dessous, `content:*` ne voit aucun corpus et `programme:check`/`content:audit`
+   échouent avant même de le lire. C'est exactement ce que fait la CI privée
+   (`.github/workflows/content-ci.yml`).
+
+   ⚠️ **UN SEUL lien depuis l'étude 32 (lot 5)**, contre deux auparavant : le registre de
+   transcription `programmes-officiels/` vivait sous `.claude/skills/content-ecole-tn/references/`
+   — un registre de DONNÉES rangé dans un dossier d'instructions — et a rejoint `content/`. Ce
+   second lien était la première chose qu'on oubliait ; `programme:check` rendait alors un faux
+   « rien à faire » sur le garde-fou anti-double-transcription.
 
    ```bash
-   rm -rf engine/content engine/.claude/skills
-   ln -s "$PWD/corpus/content"        engine/content
-   ln -s "$PWD/corpus/.claude/skills" engine/.claude/skills
+   rm -rf engine/content
+   ln -s "$PWD/corpus/content" engine/content
    ```
 
-   Windows sans mode développeur (`ln -s` inopérant) — jonctions, mêmes chemins :
+   Windows sans mode développeur (`ln -s` inopérant) — jonction, même chemin :
 
    ```powershell
-   Remove-Item -Recurse -Force engine\content, engine\.claude\skills -ErrorAction Ignore
-   New-Item -ItemType Junction -Path engine\content        -Target $PWD\corpus\content
-   New-Item -ItemType Junction -Path engine\.claude\skills -Target $PWD\corpus\.claude\skills
+   Remove-Item -Recurse -Force engine\content -ErrorAction Ignore
+   New-Item -ItemType Junction -Path engine\content -Target $PWD\corpus\content
    ```
 
    Contrôle avant d'aller plus loin (les deux assertions de la CI) :
 
    ```bash
    test -f engine/content/misconceptions.json &&
-   test -d engine/.claude/skills/content-ecole-tn/references/programmes-officiels/manifest &&
+   test -d engine/content/programmes-officiels/manifest &&
    echo "corpus + skills branchés"
    ```
 
@@ -409,7 +412,7 @@ fait depuis le poste Windows, ou en autorisant le domaine dans l'environnement.
    L'espace de travail des fiches, dans le dépôt de **contenu** :
 
    ```
-   .claude/skills/content-ecole-tn/references/programmes-officiels/
+   content/programmes-officiels/
    ├── suivi/corpus-cnp.json                    ← corpus CNP exhaustif (346 PDF — généré, ne pas éditer)
    ├── suivi/affectations.json                  ← catégorie de chaque matière/PDF (décisions)
    ├── suivi/<grade>.json                       ← REGISTRE d'état des fiches (LA source de vérité)
@@ -515,7 +518,7 @@ chiffres. Téléchargement bloqué ⇒ demander les PDF et continuer avec les co
    # depuis corpus/ — les chemins -o sont relatifs au dépôt de contenu
    # profils ecole-* :
    scribekit app-cnp <guide.pdf> [<manuel.pdf>] --grade <niveau> --subject <subject-id> \
-     --lang <ar|fr|en> -o .claude/skills/content-ecole-tn/references/programmes-officiels
+     --lang <ar|fr|en> -o content/programmes-officiels
    # profil document-libre :
    scribekit transcribe <doc…> -o <emplacement de la fiche> --profile markdown
    ```
@@ -566,8 +569,8 @@ guide + manuel :
 
    ```bash
    # depuis corpus/
-   scribekit qa .claude/skills/content-ecole-tn/references/programmes-officiels
-   scribekit status .claude/skills/content-ecole-tn/references/programmes-officiels  # plus aucun pending
+   scribekit qa content/programmes-officiels
+   scribekit status content/programmes-officiels  # plus aucun pending
    ```
 
 2. **R-7 — relecture indépendante par sondage dirigé (T-8)** : un second agent/sous-agent au
@@ -625,7 +628,7 @@ livrable du LOT A. Aucun SQL, aucune migration : le corpus n'en porte pas (§ B3
 
 ```bash
 # depuis corpus/
-git add .claude/skills/content-ecole-tn/references/programmes-officiels/   # document-libre hors école : content/_sources/<theme>/<slug>/
+git add content/programmes-officiels/   # document-libre hors école : content/_sources/<theme>/<slug>/
 git commit -m "feat(programme): transcription <matière> <niveau> — <codes sources> (FableEtudes/12#persistance)"
 git push -u origin feat/transcription-<niveau>-<matiere>
 gh pr create --fill

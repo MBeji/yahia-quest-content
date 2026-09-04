@@ -101,7 +101,7 @@ values are the only French structural tokens.
 ## Calibrate to the student's age (and colourful figures for the youngest)
 
 Tune sentence length, vocabulary, and figure density to the learner's age — detailed bands in
-`content-ecole-tn/references/programmes-officiels/README.md` § « Adapter à l'âge ». For the youngest
+`content/programmes-officiels/README.md` § « Adapter à l'âge ». For the youngest
 grades (≈ 1ère–3ème), figures should be **playful, colourful illustrations** (dark outline + bright
 saturated fills — orange fish, green tree, yellow sun), not grey geometry: the fill colour is kept at
 render time (`content-schema.md` § Figures). Keep prompts very short, one figure per question.

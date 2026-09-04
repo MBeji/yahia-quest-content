@@ -6,13 +6,18 @@ name: Content CI
 # moteur — zéro duplication de code.
 #
 # Depuis le lot 3b (2026-07-20), ce repo n'est plus un miroir : il est la SEULE
-# source du corpus et des skills pédagogiques. Deux symlinks sont donc
-# nécessaires, pas un :
-#   • `content/`        — le corpus (le moteur le résout en `cwd()/content`)
-#   • `.claude/skills/` — les 41 skills pédagogiques. `content:audit:strict` lit
-#     `content-ecole-tn/references/programmes-officiels/manifest` et
-#     `programme:check` lit `…/suivi` + `…/programme`. Sans ce second lien, ces
-#     deux gates échouent sur le SKILL avant même de toucher au corpus.
+# source du corpus et des skills pédagogiques.
+#
+# UN SEUL SYMLINK depuis l'étude 32 (lot 5) : `content/`. Il en fallait DEUX
+# jusque-là, parce que le registre de transcription `programmes-officiels/`
+# vivait sous `.claude/skills/content-ecole-tn/references/` — un registre de
+# DONNÉES rangé dans un dossier d'instructions. Il a rejoint `content/`, avec le
+# reste des données. Ce second lien n'était pas un détail : c'est la première
+# chose qu'une session oublie, et `programme:check` rendait alors un faux
+# « rien à faire » sur le garde-fou anti-double-transcription — le pire résultat
+# possible pour ce registre. Il causait aussi la collision d'invariants que
+# `harness:check --corpus` a dû apprendre à éviter (lot 2) : les 43 skills du
+# corpus branchés dans le moteur y faisaient réclamer 225 fichiers de miroir.
 #
 # `programme:check` (registre de transcription CNP) tournait dans la CI publique
 # jusqu'au lot 3b ; il a suivi ses données ici. Les gates suivent leurs données.
@@ -81,18 +86,18 @@ jobs:
         working-directory: engine
         run: npm ci --no-audit --no-fund
 
-      - name: Brancher le corpus ET les skills privés dans le moteur
+      - name: Brancher le corpus dans le moteur (un seul lien depuis é32 L5)
         run: |
           set -euo pipefail
-          rm -rf engine/content engine/.claude/skills
-          mkdir -p engine/.claude
+          rm -rf engine/content
           ln -s "$GITHUB_WORKSPACE/corpus/content" engine/content
-          ln -s "$GITHUB_WORKSPACE/corpus/.claude/skills" engine/.claude/skills
-          # Fail fast et lisible si un jour l'arborescence privée bouge.
+          # Fail fast et lisible si un jour l'arborescence privée bouge. Les deux
+          # contrôles portent désormais sur le MÊME lien : le corpus et son registre
+          # de transcription sont au même endroit.
           test -f engine/content/misconceptions.json \
             || { echo "::error::corpus non branché (misconceptions.json introuvable)"; exit 1; }
-          test -d engine/.claude/skills/content-ecole-tn/references/programmes-officiels/manifest \
-            || { echo "::error::skills non branchés (manifest programmes-officiels introuvable)"; exit 1; }
+          test -d engine/content/programmes-officiels/manifest \
+            || { echo "::error::registre non branché (programmes-officiels/manifest introuvable)"; exit 1; }
 
       - name: content:check
         working-directory: engine

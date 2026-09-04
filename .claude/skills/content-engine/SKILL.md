@@ -207,7 +207,7 @@ the URLs/references you used in each `chapter.json` `sources[]` (traceability). 
 with factual claims in culture-générale and with fidelity to the official syllabus in `content-ecole-tn`
 — for school content the authoritative scope is the **national CNP program**, captured as the downloaded
 CNP corpus (student manuels + teacher guides) indexed under
-`content-ecole-tn/references/programmes-officiels/` (see that folder's README; the school-specific Taybah
+`content/programmes-officiels/` (see that folder's README; the school-specific Taybah
 files there are a secondary cross-check), so defer to `content-ecole-tn` for school work.
 
 **Source-combination rule (whenever a unit has more than one authoritative source).** Use **all**
