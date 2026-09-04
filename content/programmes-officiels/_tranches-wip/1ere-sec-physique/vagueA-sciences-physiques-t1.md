@@ -3,7 +3,7 @@
 > **Objet de ce document** : transcription **neuve** des pages 1 à 24 du manuel élève —
 > les liminaires (p.1–8) et le **chapitre 1**, absent de la fiche existante
 > (« chapitre 1 pilote omis »). Style aligné sur les sections §2.2–2.5 de
-> `.claude/skills/content-ecole-tn/references/programmes-officiels/programme/1ere-sec/sciences-physiques.md`.
+> `content/programmes-officiels/programme/1ere-sec/sciences-physiques.md`.
 >
 > **Source unique** : `cnp-officiel/manuels/secondaire/c1/eleve/223103P00.pdf`
 > — « **PHYSIQUE — 1ère Année de l'enseignement secondaire** » (République Tunisienne,

@@ -1,7 +1,7 @@
 # R-7 — Vérification de fidélité · Physique 1ère sec · p.25–86 (thème L'ÉLECTRICITÉ, ch.2–5)
 
 > **Nature** : relecture de fidélité (R-7). **Aucune re-transcription, aucune réécriture de la fiche.**
-> **Cible** : `.claude/skills/content-ecole-tn/references/programmes-officiels/programme/1ere-sec/sciences-physiques.md`
+> **Cible** : `content/programmes-officiels/programme/1ere-sec/sciences-physiques.md`
 > §2.2 (l.14–199), §2.3 (l.201–350), §2.4 (l.352–501), §2.5 (l.503–668), §Incertitudes ch.2-5 (l.670–685).
 > **Source** : `cnp-officiel/manuels/secondaire/c1/eleve/223103P00.pdf` via `cnp-officiel/_txt/223103P00-physique.txt`
 > (couche-texte propre, extraction déterministe).

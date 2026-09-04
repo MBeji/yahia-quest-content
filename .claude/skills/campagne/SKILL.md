@@ -38,14 +38,14 @@ moteur public (les commandes). Vérifie, depuis la racine du corpus :
 ```bash
 test -x ../engine/node_modules/.bin/tsc &&
   test -f ../engine/content/misconceptions.json &&
-  test -d ../engine/.claude/skills/content-ecole-tn/references/programmes-officiels/manifest &&
+  test -d ../engine/content/programmes-officiels/manifest &&
   echo "moteur + corpus + skills branchés"
 ```
 
 Ce sont les **deux assertions de la Content CI** (méthode, Phase 0.1) : tester la seule existence de
 `engine/content` dirait « prêt » avec le lien des skills manquant, et `programme:etat` échouerait la
 commande suivante. Absent ⇒ dérouler **Phase 0.1 de la méthode** (double clone, `npm ci`, les DEUX
-liens `engine/content` et `engine/.claude/skills`, variante jonctions sous Windows) et **s'arrêter là
+lien `engine/content` — un seul depuis l'étude 32, variante jonction sous Windows) et **s'arrêter là
 si un lien échoue** : sans corpus branché, toutes les commandes mentent par omission.
 
 ⚠️ **Branché ne suffit pas : le moteur doit être à JOUR.** Les gates tournent avec le code du

@@ -3,7 +3,7 @@
 The stable planning grid for `curriculum-architect`: which subjects the official Tunisian program
 carries at each of the 13 grades, the repo's subject-id convention, and the known naming legacies.
 **Scope truth stays with the CNP transcriptions**
-(`content-ecole-tn/references/programmes-officiels/programme/<gradeSlug>/`) — this map is the
+(`content/programmes-officiels/programme/<gradeSlug>/`) — this map is the
 planning index, not the syllabus; entries marked _(à confirmer CNP)_ must be verified against the
 transcription before being planned as real units. Coverage _state_ is never read from this file —
 recompute it live (SKILL.md §1).

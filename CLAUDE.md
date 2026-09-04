@@ -23,14 +23,16 @@
   la session sur CE repo, ajouter le moteur public (`add_repo MBeji/yahia-quest-arena`),
   éditer `content/`, laisser `content-ci` valider.
 - **Gates en local / session** — deux clones **côte à côte** : ce repo et `../engine` (le moteur).
-  **Deux** liens sont nécessaires, pas un : les scripts résolvent `content/` **et**
-  `.claude/skills/…/programmes-officiels/` relativement à la racine du **moteur**.
+  **UN SEUL lien** depuis l'étude 32 (lot 5). Il en fallait deux jusque-là, parce que le registre
+  de transcription `programmes-officiels/` vivait sous `.claude/skills/content-ecole-tn/references/`
+  — un registre de DONNÉES rangé dans un dossier d'instructions. Il a rejoint `content/`. Ce
+  second lien était la première chose qu'une session oubliait, et `programme:check` rendait alors
+  un faux « rien à faire » sur le garde-fou anti-double-transcription.
 
   ```bash
   # depuis la racine de CE repo
-  rm -rf ../engine/content ../engine/.claude/skills
-  ln -s "$PWD/content"        ../engine/content
-  ln -s "$PWD/.claude/skills" ../engine/.claude/skills
+  rm -rf ../engine/content
+  ln -s "$PWD/content" ../engine/content
   # puis depuis ../engine :
   npm ci && npm run content:check && npm run content:qa:strict &&
     npm run content:audit:strict && npm run programme:check
