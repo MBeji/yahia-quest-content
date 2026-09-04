@@ -464,9 +464,16 @@ règle elle-même, qui est désormais opposable.
       de 250 à 214 lignes) · **privé#342** (L2 privé — le corpus entre dans le gate, `pin-check`
       disparaît, et un défaut de l'auto-merge d'ici est corrigé au passage : une PR passée au
       rouge une fois ne pouvait plus jamais merger sur ce commit).
+      **Tout cela est mergé sur les deux dépôts au 2026-09-04 12:06 UTC.**
       **Restent** : la moitié privée de L1 (fantômes + réveils d'automerge) et L3b
       (`guard-watch` mutualisé, qui en dépend), toutes deux suspendues à la seule *valeur* du
-      jeton ; plus le lot 5 optionnel. **Cinq chiffres de l'étude ont été corrigés par les
+      jeton ; plus le lot 5 optionnel. La mise au merge a par ailleurs produit un **constat neuf,
+      C-14** : pour merger, une PR doit être à jour avec `main`, donc chaque PR qui entre pendant sa
+      CI la relance **en entier** — 5 cycles complets sur arena#975, en 41 minutes, pour une PR sans
+      une ligne de `src/`. C'est une **troisième** source de runs par branche, distincte des fantômes
+      et du double dispatch, invisible au relevé du 2026-09-03 parce que ce jour-là `main` était
+      calme. Le remède (file de merge, ou CI en deux étages) est un arbitrage, posé en **Q-5** ;
+      recommandation : l'accepter tant que le moteur est public, où les minutes sont gratuites. **Cinq chiffres de l'étude ont été corrigés par les
       livraisons elles-mêmes** — les cibles « 0 run », « 8,4 runs/branche », « ≤ 60 règles »,
       « ≤ 200 lignes » étaient fausses ou inatteignables, et sont rectifiées dans le document
       plutôt que maquillées. Sur relevé : **167 runs `failure` à zéro job sur 800** au privé en six jours (les fantômes de
