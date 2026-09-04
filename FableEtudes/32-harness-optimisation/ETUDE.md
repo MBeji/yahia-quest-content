@@ -4,7 +4,9 @@
 > arena#970, #971, #974, #975, #980, #981, #982, #983, #984 et privé#342, #343, #344, #345, #346.
 > Q-1 a été **rouverte et retranchée** en cours d'exécution (la voie de repli, sans jeton), Q-5
 > est née de la livraison et a été tranchée, et **deux constats neufs** — C-14 et C-15 — sont
-> sortis de l'exécution elle-même. Rien n'attend plus le propriétaire
+> sortis de l'exécution elle-même. **Les cinq questions sont closes** : Q-2 l'a été le 2026-09-04
+> par le relevé de facturation, qui montre **0 $ facturé** et confirme au passage le raisonnement
+> de Q-5. Rien n'attend plus le propriétaire
 > **Priorité** : 32 · **Valeur** : 🔧 le harness (instructions, politique, hooks, gates, chaîne PR, gardes)
 > est **bon** — déterministe, relu, gardé — mais il **crie pour rien** (21 % des runs du privé sont des
 > rouges fantômes), **se paie deux fois** (chaque branche neuve du moteur fait tourner ses trois checks
@@ -27,7 +29,7 @@ Ce que l'audit a **mesuré** (pas supposé) le 2026-09-03, sur les 800 derniers 
 | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | -------------------------------------------------------------- |
 | C-1 | Au privé, chaque PR ouverte par `auto-pr` laisse **quatre runs `failure` à zéro job** (Content CI, Pin check, Automerge, Roadmap sync) — l'événement `opened` du bot     | **167 fantômes / 800 runs = 21 %** ; a déjà coûté #280, #291, #293 | PAT au privé, ou retirer `opened` des déclencheurs (L1, Q-1)   |
 | C-2 | `automerge` privé se réveille **cinq fois par branche** (2 dispatch de réveil + 2-3 `workflow_run` + 1 `pull_request`)                                                  | **288 runs / 6 j**, dont 108 par dispatch de réveil                | un seul chemin de réveil (L1)                                  |
-| C-3 | Sur un dépôt **privé**, chaque job est facturé à la minute entamée : la chaîne consomme surtout des jobs de 10 s facturés 1 min                                          | ≈ **3 800 min/mois** estimées, pour 2 000 gratuites               | ✅ L1 livré (privé#344) ; relevé de facturation encore utile, mais **plus bloquant** (Q-2) |
+| C-3 | Sur un dépôt **privé**, chaque job est facturé à la minute entamée : la chaîne consomme surtout des jobs de 10 s facturés 1 min                                          | ✅ **mesuré** : 655 min au 4 sept., **0 $ facturé** (l'estimation de 3 800/mois tenait) | ✅ L1 livré (privé#344) ; relevé obtenu — **aucun dépassement**, Q-2 close |
 | C-4 | Au moteur, `auto-pr` dispatche **inconditionnellement** CI + CodeQL + Migration gate sur chaque branche neuve, en plus des runs `pull_request` natifs                     | **38 dispatch pour 71 runs natifs** : ~35 % des runs CI en double  | dispatch de secours **après constat d'absence** (L3)           |
 | C-5 | `second-opinion.yml` est **dormant** mais checkout le dépôt entier (`fetch-depth: 0`) à chaque push de PR pour conclure qu'il n'est pas armé                             | **71 runs / 4,4 j** pour zéro travail                              | garde-fou **avant** le checkout (L1)                           |
 | C-6 | `auto-pr.yml`, `automerge.yml`, `guard-watch.yml` existent **dans les deux dépôts**, sans une ligne commune, et ont divergé **en sens inverse** (C-1/C-4)                | **1 579 lignes** en double ; 490/517/164 lignes différentes         | `guard-watch` réutilisable ; chaîne PR partagée ensuite (L3)   |
@@ -141,10 +143,26 @@ gates.**
 « le plan gratuit n'en donne que 2 000 par mois »). Or les jobs réels sont courts — Pin check **10 s**,
 Automerge **9 s**, Content CI **33 s** (npm ci 11 s, cinq gates 8 s) — donc facturés 1 min chacun.
 Estimation sur la fenêtre : ≈ 750 min pour 6 jours, soit **≈ 3 800 min/mois**, dont ≈ 1 200 pour
-les seuls réveils et sweeps d'automerge. C'est une estimation (les fantômes ne coûtent rien, les
-`apply-content` sont comptés à 4 min) ; **le chiffre réel est sur la page de facturation du compte**,
-hors dépôt — c'est un mur au sens de `zero-intervention.md`, et c'est la seule ligne de cette étude
-qui demande un relevé humain (Q-2).
+les seuls réveils et sweeps d'automerge.
+
+✅ **MESURÉ le 2026-09-04** (relevé de facturation fourni, Q-2 close) — et l'estimation tenait :
+
+| Dépôt | Actions Linux | Brut | **Facturé** |
+| --- | --- | --- | --- |
+| `yahia-quest-arena` (public) | — | 11,97 $ | **0 $** |
+| `yahia-quest-content` (privé) | **655 min** (+ 41,87 Go·h de stockage) | 3,94 $ | **0 $** |
+
+Trois lectures, dont deux corrigent ce que l'étude supposait :
+
+1. **Rien n'est facturé.** Le compte n'est pas en dépassement, et la question « si le compte est
+   en dépassement, cette étude monte d'un rang » (§9, Q-2) tombe d'elle-même.
+2. **Le moteur ne coûte rien parce qu'il est PUBLIC** — 11,97 $ de brut, 0 $ facturé. C'est la
+   confirmation directe du raisonnement qui a fait accepter C-14 (Q-5) : les cinq cycles CI par
+   PR coûtent du temps de file, pas de l'argent. Le même défaut au privé se paierait.
+3. ⚠️ **655 min en QUATRE jours** (1ᵉʳ→4 septembre) sur 2 000 gratuites par mois. Ne pas
+   extrapoler linéairement : le 4 septembre a porté à lui seul neuf PR de cette étude, une
+   journée sans rapport avec le régime ordinaire. Mais l'ordre de grandeur de l'estimation était
+   **le bon**, pas dix fois trop haut — et la marge du plan gratuit n'est pas confortable.
 
 **Moteur — 795 runs en 4,4 jours (181/jour) pour 72 pushes de branche :**
 
@@ -294,10 +312,11 @@ une fois. Cette seconde forme a un autre mérite : un seul run à dispatcher, un
 
 ### C-3 — Les minutes du privé
 
-Voir §2.2. Le remède est C-1/C-2 (moitié des runs) et C-8 (un workflow de moins). Le relevé
-facturation est Q-2 : si le compte est en dépassement, cette étude monte d'un rang ; s'il est en Pro,
-le mur « ruleset sur dépôt privé » de `zero-intervention.md` est levé et l'arbitrage du 2026-08-24
-mérite une note — pas une réouverture.
+Voir §2.2. Le remède est C-1/C-2 (moitié des runs) et C-8 (un workflow de moins), tous deux
+livrés. ✅ **Le relevé est arrivé le 2026-09-04** : **0 $ facturé**, 655 min sur le privé au
+4 septembre. Le compte n'est donc PAS en dépassement — cette étude ne monte pas d'un rang, et le
+mur « ruleset sur dépôt privé » reste en place, le compte restant sur le plan gratuit. L'arbitrage
+du 2026-08-24 (on reste en gratuit) n'a besoin ni d'une note ni d'une réouverture.
 
 ### C-4 — Au moteur, chaque branche neuve paie deux fois
 
@@ -652,7 +671,7 @@ suivent la recommandation de l'architecte**. Aucun ADR du §4 n'a eu à être r�
 | --- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Q-1 bis | Le jeton n'est pas venu : attendre, ou basculer sur le repli ?                             | ✅ **le repli, sans jeton** (2026-09-04, seconde passe). La question a été ROUVERTE parce que le contexte avait changé — et parce que la règle « zéro intervention » classe explicitement **supprimer le besoin** au-dessus de **remonter au propriétaire**. Un jeton à créer puis à renouveler dans un an est exactement l'intervention qu'elle cherche à éliminer. Livré en privé#344 + arena#980. Contrepartie assumée : la chaîne du privé reste organisée autrement que celle du moteur, donc une part de C-6 subsiste |
 | Q-1 | Un PAT pour le privé, ou le retrait d'`opened` des déclencheurs ?                                 | ✅ **(a) un PAT fine-grained** — les deux dépôts, `contents:write` + `pull_requests:write`, 1 an. La chaîne du privé devient identique à celle du moteur : C-1 et C-2 disparaissent à la racine, et L3 (auto-pr partagé) devient possible. ⚠️ **DÉPASSÉE par Q-1 bis** (ligne suivante) : le jeton n'est jamais venu, et la question a été rouverte le jour même. C'est la voie (b), le repli sans jeton, qui a été livrée — privé#344 + arena#980. Cette ligne est conservée telle quelle : elle date l'arbitrage d'origine, et le récit de son revirement vaut mieux que sa réécriture |
-| Q-2 | Relevé de facturation Actions du compte (minutes du mois, plan)                                   | ⏳ **ouverte, mais elle ne bloque plus rien.** Elle servait à décider si L1 passait au rang 0 pour cause de dépassement ; L1 est livré, et les fantômes qu'il supprime étaient la principale source de minutes facturées. Le chiffre reste **utile** pour vérifier après coup ce que le lot a rendu — c'est de la mesure, plus un arbitrage. Le moteur étant public, seules les minutes du dépôt PRIVÉ se paient |
+| Q-2 | Relevé de facturation Actions du compte (minutes du mois, plan)                                   | ✅ **CLOSE le 2026-09-04, relevé fourni** : `yahia-quest-content` 655 min Actions Linux + 41,87 Go·h, 3,94 $ brut → **0 $ facturé** ; `yahia-quest-arena` 11,97 $ brut → **0 $ facturé** parce qu'il est public. **Aucun dépassement**, donc cette étude ne monte pas d'un rang et le mur « ruleset sur privé » tient. Le chiffre confirme aussi le raisonnement de Q-5 : les cycles CI du moteur ne coûtent que du temps de file. ⚠️ 655 min en quatre jours sur 2 000 mensuelles reste à surveiller — mais le 4 septembre a porté neuf PR de cette étude, il n'est pas représentatif |
 | Q-3 | La prose des workflows : récit déplacé, en-tête ≤ 15 lignes ?                                     | ✅ **oui, sur les fichiers touchés** (D-9). `docs/agents/incidents-ci.md` naît append-only ; les cinq workflows que les lots modifient déjà y portent leur récit et le citent. **Jamais en masse** : rien n'est réécrit pour la seule beauté du geste, et rien n'est supprimé — le récit change de place                                                                    |
 | Q-4 | `programmes-officiels/` hors du skill (C-13) : lot dédié, tout de suite, ou jamais ?               | ✅ **lot 5 optionnel, APRÈS le lot 2** — le gate `harness:check --corpus` protège alors le déplacement au lieu de le subir. Ordre non négociable : ce registre est le garde-fou anti-double-transcription, et un faux « rien à faire » y est le pire résultat possible                                                                                        |
 
