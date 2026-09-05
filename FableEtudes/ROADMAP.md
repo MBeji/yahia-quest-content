@@ -599,12 +599,18 @@ règle elle-même, qui est désormais opposable.
       ~40 figures se scinde et ne s'échantillonne jamais.)_ **780 questions illustrées sur
       18 708.**
 
-- [ ] **C10. C8 — é21 lot 1 : doctrine manuels**, puis pilote `math-1ere-sec` (exercices tracés
-      `manuel_ref`, rapport de couverture). _(A4 rendu : verbatim court non créatif toléré,
-      provenance **non** affichée à l'élève, lot 3 abandonné.)_
-      ⚠️ **Son point de départ a changé, pas sa ligne** : F13 (§8) a livré la **déclaration** des
-      60 volumes et la **surface de lien** — pas les exercices tracés ni le rapport. À mesurer
-      avant d'écrire.
+- [ ] **C10. C8 — é21 : pilote `math-1ere-sec`** (exercices tracés `manuel_ref`, rapport de
+      couverture). _(A4 rendu : verbatim court non créatif toléré, provenance **non** affichée à
+      l'élève, lot 3 abandonné.)_
+      ✅ **Lots 1, 2 et 4 livrés le 2026-09-05** — la **doctrine**
+      (`content-engine/references/manuel-valorisation.md` : taxonomie fermée, mapping
+      exercice→format, trois régimes, R-1→R-12) au privé, la **traçabilité** (`manuel` sur
+      l'exercice, colonne `exercises.manuel_ref`, manifeste à trois profondeurs) et le **rapport
+      de couverture** advisory au moteur (**arena#992**). Reste **le lot 5** : rien du corpus ne
+      déclare encore `manuel`, donc le rapport rend `[]` — c'est le pilote qui lui donnera ses
+      premières données, et à la doctrine sa première mise à l'épreuve.
+      ⚠️ **Son point de départ avait déjà changé** : F13 (§8) avait livré la **déclaration** des
+      60 volumes et la **surface de lien** — pas les exercices tracés. C'est fait maintenant.
 
 - [ ] **C11. Appliquer en production ce qui est généré.** Ligne **récurrente**, pas un chantier :
       la garde `content-drift` mesure l'écart, un dispatch d'`apply-content.yml` le referme.

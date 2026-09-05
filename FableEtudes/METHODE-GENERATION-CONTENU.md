@@ -665,7 +665,9 @@ LOT B (ou le couple suivant). Un déclenchement manqué se rattrape par
 4. Charger **la carte** (`content-engine/references/generation-pipeline.md`), puis au besoin
    réel (T-7) : `content-ecole-tn` (fidélité programme — le wrapper de tout contenu scolaire),
    `content-cours` (cours/résumé), `content-interactif` (formats variés),
-   **`prof-<matière>-<cycle>`** s'il existe (exercices durs d3–4). Sous Claude Code les skills
+   **`prof-<matière>-<cycle>`** s'il existe (exercices durs d3–4), et
+   **`content-engine/references/manuel-valorisation.md`** dès que la fiche vient d'un manuel élève
+   du CNP (que devient chaque contenu du manuel, ce qui se trace, ce qui ne se copie pas). Sous Claude Code les skills
    s'invoquent nativement ; autre agent : lire chaque `SKILL.md` + la référence utile, et les
    appliquer à la lettre.
 

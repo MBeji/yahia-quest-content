@@ -417,16 +417,16 @@ lot de contenu).
 
 | lot | contenu (résumé)                                                                                 | fichiers/objets créés                                                                                                                                                             | tests exigés                                                                                       | dépend de         |
 | --- | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ----------------- |
-| 1   | Doctrine de valorisation (taxonomie, mapping, régimes) + branchements skills                     | `content-engine/references/manuel-valorisation.md` ; renvois dans `generation-pipeline.md`, `content-ecole-tn/SKILL.md`, `content-ingest/SKILL.md`, `PROMPT-TRANSCRIPTION-CNP.md` | — (docs ; gates inchangés verts)                                                                   | Q-1 tranchée      |
+| 1   | Doctrine de valorisation (taxonomie, mapping, régimes) + branchements skills                     | `content-engine/references/manuel-valorisation.md` ; renvois dans `generation-pipeline.md`, `content-ecole-tn/SKILL.md`, `content-ingest/SKILL.md`, `METHODE-GENERATION-CONTENU.md` (successeur de `PROMPT-TRANSCRIPTION-CNP.md`, consolidé le 2026-07-17) | — (docs ; gates inchangés verts)                                                                   | Q-1 tranchée      |
 | 2   | Traçabilité pipeline : champ `manuel` exercice + colonne + manifest                              | `schema.ts`, `loader.ts`, `sql-builder.ts`, `program-manifest.ts`, migration `*_exercises_manuel_ref.sql`                                                                         | Vitest schema/loader/sql-builder/manifest ; suite pgTAP (migration propre)                         | —                 |
 | 3   | ⛔ **ABANDONNÉ** (arbitrage Q-2, 2026-07-20) — surface élève : badge hub + mention player + i18n | `subject-hub.tsx`, `exercise-player.tsx`, `manuel-refs.ts`, `quest.server.ts` (projection), i18n fr/en/ar                                                                         | Vitest composants (badge présent/absent, RTL, anon)                                                | 2                 |
 | 4   | Rapport de couverture (module pur + CLI, advisory)                                               | `src/shared/content/manuel-coverage.ts`, `scripts/content/audit-program.ts` (+ check `[warn]` pages dans `qa-checks.ts`)                                                          | Vitest pur (fixtures 3 niveaux de précision, invariant hors `findingCount`)                        | 2                 |
 | 5   | Pilote contenu : reprise des exercices du manuel sur 3 chapitres d'une matière (Q-3)             | fiche/manifest enrichis (items), `content/<subject>/…/exercices/*`, **1** migration `--subject`, rapport de couverture avant/après                                                | gates contenu (`content:check`, `content:qa:strict` 0 erreur) + self-verification `quality-bar.md` | 1–4 ; Q-1/Q-2/Q-3 |
 | 6   | Passe savoirs pilote (R-8) + axe « complétude manuel » dans `content-audit`                      | blocs/cartes complétés sur la matière pilote ; `content-audit/SKILL.md` (axe)                                                                                                     | gates contenu ; échantillon d'audit joint à la PR                                                  | 5                 |
 
-- [ ] **Lot 1 — Doctrine.** Rédiger `manuel-valorisation.md` (normatif : §3.1 intégral + R-1→R-12 + régimes D-5 + exemples par matière — 1 maths, 1 SVT, 1 langue) ; brancher les renvois (une
+- [x] **Lot 1 — Doctrine.** ✅ 2026-09-05. Rédiger `manuel-valorisation.md` (normatif : §3.1 intégral + R-1→R-12 + régimes D-5 + exemples par matière — 1 maths, 1 SVT, 1 langue) ; brancher les renvois (une
       ligne chacun, pas de duplication). **Stop-point** : aucun code, aucun fichier `content/`.
-- [ ] **Lot 2 — Traçabilité.** Schéma + loader (héritage code chapitre, erreur si irrésoluble) +
+- [x] **Lot 2 — Traçabilité.** ✅ 2026-09-05. Schéma + loader (héritage code chapitre, erreur si irrésoluble) +
       sql-builder + migration additive + extension manifest. Critères : `content:check` passe sur
       le contenu existant inchangé (champ optionnel), un fixture avec `manuel` compile la bonne
       colonne, UUID inchangés (aucune régénération de masse). **Stop-point** : ne pas toucher au
@@ -438,7 +438,7 @@ lot de contenu).
       d'origine (§2 i18n, §3.3–3.4) reste consignée **pour mémoire seulement** — rien à exécuter,
       la traçabilité `manuel_ref` du lot 2 n'a plus qu'un consommateur, le rapport de couverture
       (lot 4). _Périmètre d'origine, pour référence_ : badge + mention + i18n (US-1/US-2, R-12).
-- [ ] **Lot 4 — Couverture.** Module pur + CLI + `--json` + check `[warn]` pages (US-4, D-9,
+- [x] **Lot 4 — Couverture.** ✅ 2026-09-05. Module pur + CLI + `--json` + check `[warn]` pages (US-4, D-9,
       §3.5). Critères : les trois niveaux de précision rendent ; `findingCount` inchangé sur tous
       les manifests existants ; `ci:verify` vert sans nouveau finding. **Stop-point** : rien dans
       `content:qa:strict` en niveau error.
@@ -575,5 +575,40 @@ Q-3), pilotée par le rapport de couverture — même modèle que la campagne d'
   Q-1 (verbatim), Q-3 (pilote) et Q-4 (activités d'exploration) suivent les recommandations de
   l'architecte ; **Q-2 s'en écarte** — la provenance reste interne, d'où l'abandon du lot 3
   (surface élève). Lots exécutables : 1, 2, 4, 5, 6. Aucun lot commencé.
+
+- **2026-09-05 — Lots 1, 2 et 4 livrés.** Deux PR, la scission é24 interdisant qu'une seule
+  touche les deux dépôts : la **doctrine** au privé (la PR qui porte ce journal), la
+  **traçabilité + le rapport de couverture** au moteur (**arena#992**).
+  - **Lot 1.** `content-engine/references/manuel-valorisation.md` : §0 droits (Q-1 option b + les
+    trois interdits de R-11), les **trois régimes** (a/b/c — le (c) ne se trace pas), la
+    **taxonomie fermée** des 10 contenus, le **mapping des 11 formes d'exercice** (toutes en
+    correction automatique native — aucun moteur nouveau), **R-1→R-12**, le champ `manuel`, et
+    trois exemples travaillés (maths / SVT / langue). Renvois d'une ligne dans les quatre fichiers,
+    **plus un cinquième** : l'index « Reference files » de `content-engine/SKILL.md`, sans lequel
+    une référence n'est découvrable par aucune session — le lot ne le nommait pas, il le suppose.
+  - **Écart de pointeur (assumé).** Le lot nommait `PROMPT-TRANSCRIPTION-CNP.md` : **ce fichier
+    n'existe plus**, consolidé dans `METHODE-GENERATION-CONTENU.md` le 2026-07-17 (é12). Le renvoi
+    est allé dans le successeur, § B1 étape 4. Le tableau des lots est corrigé.
+  - **R-12 rendue sans objet, et écrite comme telle.** Q-2 ayant retiré la provenance de la vue
+    élève, la règle « registre du badge » n'a plus d'objet ; elle reste **numérotée** pour que
+    l'étude et la doctrine se lisent ensemble, plutôt que renumérotée en silence.
+  - **Lot 2.** `manuel` optionnel sur l'exercice (`code?`, `pages?`, `items` 1–30), héritage du
+    code chapitre par le loader (`ContentValidationError` si irrésoluble), colonne
+    `exercises.manuel_ref` (migration additive `20260905060000`), extension du manifeste aux
+    **trois profondeurs** de déclaration. Vérifié : `content:check` inchangé sur le corpus réel
+    (118 matières, 24 916 questions), aucun UUID régénéré.
+  - **Grants, vérifiés et non supposés** (le lot le demandait) : `exercises` est lisible par un
+    grant **de table** (`20260612221000_baseline_table_grants.sql`), pas colonne par colonne — une
+    colonne ajoutée est donc lisible sans toucher aux droits. C'est écrit dans l'en-tête de la
+    migration.
+  - **Lot 4.** `src/shared/content/manuel-coverage.ts` (module **pur**) + section advisory dans
+    `audit-program.ts` (+ `--json`) + un `[warn]` de cohérence de pages dans `qa-checks.ts`.
+    Vérifié : `content:audit:strict` rend **290 constats, inchangé** — un test d'invariant
+    interdit au module d'exposer `severity`/`level`/`"error"`, pour que la règle survive à une
+    relecture distraite. Le taux vaut `null` (jamais `0`) quand rien n'est déclaré : « campagne
+    pas commencée » et « manuel non transcrit » ne sont pas le même état.
+  - **Dette assumée** : rien du corpus n'utilise encore `manuel` — le rapport rend `[]`. C'est le
+    lot 5 (pilote) qui donnera au lot 4 ses premières données, et à la doctrine sa première mise
+    à l'épreuve.
 
 _(rempli au fil des lots par l'exécuteur : date, lot, PR, écarts acceptés, dettes notées)_
