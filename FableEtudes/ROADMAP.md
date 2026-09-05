@@ -444,14 +444,16 @@ règle elle-même, qui est désormais opposable.
       produit avec un parent part **en anglais**.
       (2) Vérifier qu'un événement `web_vitals` **arrive réellement** dans PostHog — sans clé le
       beacon n'émet rien, et un tableau de bord vide se lit à tort « aucun problème ».
-- [ ] **F12. é32 — harness : optimiser, simplifier, améliorer.** ✅ **Étude validée le 2026-09-04**
-      ([`32-harness-optimisation/ETUDE.md`](./32-harness-optimisation/ETUDE.md)) — les quatre
-      questions arbitrées d'un coup, **toutes sur la recommandation** : un **PAT fine-grained pour
-      le privé** (Q-1, la session le pose dès qu'elle a sa valeur), le **relevé de facturation
-      Actions** fourni (Q-2 — s'il montre un dépassement, ce lot passe au **rang 0**), le récit des
-      workflows déplacé dans `docs/agents/incidents-ci.md` sur les fichiers touchés (Q-3), et
-      `programmes-officiels/` sorti du skill en **lot 5, après le lot 2** (Q-4). Quatre lots plus un
-      optionnel. ✅ **Les lots 1 (moteur), 2, 3a et 4 sont livrés le 2026-09-04** :
+- [x] **F12. é32 — harness : optimiser, simplifier, améliorer.** ✅ **LIVRÉE le 2026-09-04**
+      ([`EtudeRealisé/32-harness-optimisation/ETUDE.md`](./EtudeRealisé/32-harness-optimisation/ETUDE.md))
+      — **19 PR**, les cinq lots mergés sur les deux dépôts, **les cinq questions closes**.
+      Q-1 avait été tranchée en faveur d'un PAT ; le jeton n'étant jamais venu, elle a été
+      **rouverte le jour même** et livrée par la voie de repli — la règle « zéro intervention »
+      place *supprimer le besoin* au-dessus de *remonter au propriétaire*. Q-2 est close par le
+      relevé de facturation : **0 $ facturé**, aucun dépassement, donc le mur « rulesets
+      indisponibles sur dépôt privé » tient et l'arbitrage du 2026-08-24 n'a pas à être rouvert.
+      Q-3 (récit des workflows déplacé) et Q-4 (`programmes-officiels/` en lot 5, après le lot 2)
+      ont été tenues. ✅ **Les lots 1 (moteur), 2, 3a et 4 sont livrés le 2026-09-04** :
       **arena#970** (L1 moteur — le garde dormant `second-opinion` ne démarre plus un runner pour
       dire qu'il est éteint, il le faisait 71 fois en 4,4 jours en clonant l'historique complet ;
       et `actions-census.mjs` rend le relevé **rejouable**, sans quoi cette étude n'aurait jamais
@@ -484,8 +486,11 @@ règle elle-même, qui est désormais opposable.
       CI la relance **en entier** — 5 cycles complets sur arena#975, en 41 minutes, pour une PR sans
       une ligne de `src/`. C'est une **troisième** source de runs par branche, distincte des fantômes
       et du double dispatch, invisible au relevé du 2026-09-03 parce que ce jour-là `main` était
-      calme. Le remède (file de merge, ou CI en deux étages) est un arbitrage, posé en **Q-5** ;
-      recommandation : l'accepter tant que le moteur est public, où les minutes sont gratuites. **Cinq chiffres de l'étude ont été corrigés par les
+      calme. Le remède (file de merge, ou CI en deux étages) était un arbitrage, posé en **Q-5** et
+      **tranché : l'accepter, mais le mesurer** (arena#982 — `actions:census` rend désormais les
+      têtes par branche et nomme la plus relancée). Le relevé de facturation a confirmé le
+      raisonnement après coup : le moteur est public, ses 11,97 $ de brut sont facturés **0 $**,
+      donc ces cycles coûtent du temps de file et pas de l'argent. **Cinq chiffres de l'étude ont été corrigés par les
       livraisons elles-mêmes** — les cibles « 0 run », « 8,4 runs/branche », « ≤ 60 règles »,
       « ≤ 200 lignes » étaient fausses ou inatteignables, et sont rectifiées dans le document
       plutôt que maquillées. Sur relevé : **167 runs `failure` à zéro job sur 800** au privé en six jours (les fantômes de
