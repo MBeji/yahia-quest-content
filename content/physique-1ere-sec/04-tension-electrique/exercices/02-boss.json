@@ -1,0 +1,86 @@
+{
+  "title": "⭐⭐⭐ Boss : Où passe la tension dans une maille",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "68-69",
+    "items": ["vérifier 3", "situations 2"]
+  },
+  "questions": [
+    {
+      "prompt": "Un interrupteur fermé est inséré dans un circuit où circule un courant. Que vaut la tension à ses bornes ?",
+      "options": [
+        { "id": "a", "text": "0 V" },
+        { "id": "b", "text": "La tension du générateur" },
+        { "id": "c", "text": "La moitié de la tension du générateur" },
+        { "id": "d", "text": "Une tension qui dépend de l'intensité qui le traverse" }
+      ],
+      "correctOption": "a",
+      "explanation": "Un interrupteur fermé n'est qu'un morceau de fil conducteur : il laisse passer le courant sans rien lui opposer, donc ses deux bornes sont au même niveau et la tension entre elles vaut 0 V ✓. La tension du générateur, elle, se répartit sur les récepteurs du circuit — la lampe, le moteur —, pas sur l'interrupteur. C'est exactement ce que dit la loi des mailles quand on la lit à l'envers : un dipôle qui ne freine pas le courant ne prend aucune tension.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un générateur de 6 V alimente une lampe et un interrupteur montés en série. L'interrupteur est ouvert. Que lit un voltmètre branché à ses bornes ?",
+      "options": [
+        { "id": "a", "text": "6 V" },
+        { "id": "b", "text": "0 V" },
+        { "id": "c", "text": "3 V" },
+        { "id": "d", "text": "Rien : un voltmètre ne mesure pas un circuit ouvert" }
+      ],
+      "correctOption": "a",
+      "explanation": "Interrupteur ouvert, aucun courant ne circule : la lampe ne prend donc aucune tension. Or la loi des mailles impose que les tensions se retrouvent : les 6 V du générateur se reportent entièrement aux bornes de l'interrupteur ouvert ✓. C'est le comportement inverse de l'interrupteur fermé, qui prend 0 V. Et un voltmètre se branche en dérivation : il mesure très bien la tension entre deux points, même sans courant dans la branche — c'est déjà ce qu'il fait aux bornes d'une pile isolée.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans ce même circuit, interrupteur toujours ouvert, que lit un voltmètre branché aux bornes de la lampe ?",
+      "options": [
+        { "id": "a", "text": "0 V" },
+        { "id": "b", "text": "6 V" },
+        { "id": "c", "text": "3 V" },
+        { "id": "d", "text": "La tension nominale de la lampe" }
+      ],
+      "correctOption": "a",
+      "explanation": "La question précédente a montré que les 6 V se retrouvent aux bornes de l'interrupteur ouvert. Il ne reste donc rien pour la lampe : le voltmètre lit 0 V ✓, et c'est bien pour cela qu'elle n'éclaire pas. Répondre 6 V, c'est donner deux fois la même tension dans une seule maille. Et 3 V supposerait un partage à parts égales entre deux dipôles — un partage qui n'a lieu que si les deux sont réellement traversés par le courant. Quant à la tension nominale, c'est une caractéristique inscrite sur la lampe, pas une mesure : elle ne dit rien de ce qu'elle reçoit réellement.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un générateur alimente une lampe et un moteur montés en série. On permute la lampe et le moteur dans le circuit, sans rien changer d'autre. Que deviennent les tensions à leurs bornes ?",
+      "options": [
+        { "id": "a", "text": "Elles sont inchangées : l'ordre des dipôles en série ne change rien" },
+        { "id": "b", "text": "Elles s'échangent : la lampe prend la tension qu'avait le moteur" },
+        { "id": "c", "text": "Elles deviennent égales, quel que soit le dipôle" },
+        { "id": "d", "text": "Elles s'annulent toutes les deux" }
+      ],
+      "correctOption": "a",
+      "explanation": "En série, les dipôles forment une chaîne unique et chacun prend la tension qui correspond à ce qu'il est, pas à la place qu'il occupe : permuter la lampe et le moteur ne change donc aucune des deux mesures ✓. C'est d'ailleurs le protocole qu'on utilise pour le prouver : on mesure, on permute, on remesure. Croire que les tensions s'échangent, c'est attribuer la tension à la position ; croire qu'elles s'égalisent, c'est confondre avec l'intensité, qui, elle, est bien la même partout en série.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Trois dipôles sont montés en série aux bornes d'un générateur de 12 V. On mesure U₁ = 4,5 V et U₂ = 2 V. Que vaut U₃ ?",
+      "options": [
+        { "id": "a", "text": "5,5 V" },
+        { "id": "b", "text": "6,5 V" },
+        { "id": "c", "text": "4 V" },
+        { "id": "d", "text": "18,5 V" }
+      ],
+      "correctOption": "a",
+      "explanation": "La loi des mailles impose que la tension du générateur se retrouve intégralement répartie sur les récepteurs : U₁ + U₂ + U₃ = 12 V, donc U₃ = 12 − 4,5 − 2 = 5,5 V ✓. Trouver 6,5 V, c'est n'avoir retranché que l'une des deux tensions mesurées. Trouver 4 V, c'est avoir partagé les 12 V en trois parts égales, ce qui n'est vrai que si les trois dipôles sont identiques. Et 18,5 V additionne au lieu de retrancher : aucune tension d'un récepteur ne peut dépasser celle du générateur qui l'alimente.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une lampe porte l'indication « 6 V ». On la branche seule aux bornes d'un générateur de 4,5 V. Que se passe-t-il ?",
+      "options": [
+        { "id": "a", "text": "Elle brille, mais plus faiblement que la normale" },
+        { "id": "b", "text": "Elle grille immédiatement" },
+        { "id": "c", "text": "Elle brille normalement : la tension nominale n'est qu'une indication" },
+        { "id": "d", "text": "Elle ne s'allume pas du tout tant que la tension nominale n'est pas atteinte" }
+      ],
+      "correctOption": "a",
+      "explanation": "La tension nominale est celle sous laquelle la lampe fonctionne normalement. Ici elle reçoit moins : elle est sous-alimentée, donc elle éclaire faiblement ✓, sans aucun danger pour elle. Le risque est dans l'autre sens : c'est une tension supérieure à la valeur nominale qui la fait griller. Et il n'y a pas de seuil d'allumage : une lampe sous-alimentée brille peu, elle ne reste pas éteinte en attendant sa tension nominale.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "title": "⭐⭐⭐ Boss : Ce qui conduit, ce qui brille, ce qui impose le sens",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "40-41",
+    "items": ["situations 1", "situations 2"]
+  },
+  "questions": [
+    {
+      "prompt": "On intercale dans un circuit un récipient contenant de l'eau sucrée, puis on refait l'expérience avec de l'eau salée. Dans quel cas la lampe brille-t-elle ?",
+      "options": [
+        { "id": "a", "text": "Avec l'eau salée seulement" },
+        { "id": "b", "text": "Avec l'eau sucrée seulement" },
+        { "id": "c", "text": "Dans les deux cas : toute eau conduit le courant" },
+        { "id": "d", "text": "Dans aucun des deux : l'eau est toujours isolante" }
+      ],
+      "correctOption": "a",
+      "explanation": "Ce n'est pas l'eau qui conduit, ce sont les ions qu'elle contient. Le sel se dissocie en ions dans l'eau : la solution devient un électrolyte, des porteurs de charge peuvent circuler, et la lampe brille ✓. Le sucre, lui, se dissout sans donner d'ions : l'eau sucrée reste isolante. Dire que toute eau conduit, ou qu'aucune ne conduit, c'est justement rater ce que cette double expérience sert à montrer — c'est le soluté qui décide.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un fer à repasser, une grue à électroaimant, un électrolyseur. Quels effets du courant ces trois appareils exploitent-ils, dans l'ordre ?",
+      "options": [
+        { "id": "a", "text": "Thermique, magnétique, chimique" },
+        { "id": "b", "text": "Thermique, chimique, magnétique" },
+        { "id": "c", "text": "Magnétique, thermique, chimique" },
+        { "id": "d", "text": "Chimique, magnétique, thermique" }
+      ],
+      "correctOption": "a",
+      "explanation": "Chaque appareil est bâti sur un effet précis. Le fer à repasser fait chauffer un conducteur : effet thermique. La grue soulève de la ferraille avec un électroaimant : effet magnétique. L'électrolyseur transforme la matière : effet chimique ✓. Les autres ordres reviennent à échanger deux appareils — la vérification est immédiate : demande-toi à chaque fois ce que l'appareil fait, chauffer, attirer ou transformer.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une lampe à filament et une DEL éclairent toutes les deux. Qu'est-ce qui distingue la DEL ?",
+      "options": [
+        { "id": "a", "text": "Elle émet de la lumière sans que son composant ait besoin de chauffer" },
+        { "id": "b", "text": "Elle éclaire grâce à l'échauffement de son filament, comme la lampe" },
+        { "id": "c", "text": "Elle fonctionne dans les deux sens du courant, contrairement à la lampe" },
+        { "id": "d", "text": "Elle ne consomme aucune énergie" }
+      ],
+      "correctOption": "a",
+      "explanation": "La lampe à filament passe par la chaleur : elle exploite l'effet thermique, et sa lumière n'en est qu'une conséquence. La DEL exploite directement l'effet lumineux — elle émet sans avoir à chauffer ✓, ce qui explique sa faible consommation. Elle n'a d'ailleurs pas de filament du tout. Et c'est l'inverse pour le sens : une DEL est une diode, elle ne laisse passer le courant que dans un seul sens, alors que la lampe fonctionne dans les deux.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une DEL éclaire dans un circuit. On approche une aiguille aimantée du fil qui l'alimente : l'aiguille dévie légèrement. Que faut-il en conclure ?",
+      "options": [
+        { "id": "a", "text": "Que le courant peut manifester plusieurs effets à la fois, ici lumineux et magnétique" },
+        { "id": "b", "text": "Que la DEL est en train de tomber en panne" },
+        { "id": "c", "text": "Que le fil est aimanté en permanence, même circuit ouvert" },
+        { "id": "d", "text": "Que le courant a changé de sens dans le fil" }
+      ],
+      "correctOption": "a",
+      "explanation": "Les quatre effets ne s'excluent pas : selon les composants, plusieurs peuvent se manifester en même temps sur le même circuit. Ici la DEL montre l'effet lumineux et la déviation de l'aiguille montre l'effet magnétique ✓ — les deux prouvent le même passage de courant. Rien n'indique une panne, puisque la DEL éclaire. Et l'aimantation du fil n'existe que tant que le courant passe : le circuit ouvert, la déviation disparaît.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une lampe et une diode sont montées en série avec une pile : la lampe brille. On permute les deux fils reliés à la pile et la lampe s'éteint. Comment la rallumer sans retoucher à la pile ?",
+      "options": [
+        { "id": "a", "text": "En retournant la diode dans le circuit" },
+        { "id": "b", "text": "En remplaçant la lampe par une lampe plus puissante" },
+        { "id": "c", "text": "En ajoutant une seconde pile dans le même sens" },
+        { "id": "d", "text": "C'est impossible : seule la pile décide du sens du courant" }
+      ],
+      "correctOption": "a",
+      "explanation": "En permutant les fils de la pile, on a inversé le sens du courant : la diode se retrouve dans le sens bloquant et se comporte comme un interrupteur ouvert. Retourner la diode la remet dans le sens passant, donc en interrupteur fermé, et la lampe se rallume ✓. Changer de lampe ne sert à rien : aucun courant ne circule, quelle que soit la lampe. Ajouter une pile dans le même sens ne fait qu'insister dans le sens bloquant. Et le sens n'est pas le monopole de la pile : la diode, elle, décide de laisser passer ou non.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans une solution ionique, un ion négatif se dirige vers la borne + du générateur. Ce déplacement se fait-il dans le sens conventionnel du courant ?",
+      "options": [
+        { "id": "a", "text": "Non : le sens conventionnel va de la borne + vers la borne −, les anions vont à contre-sens" },
+        { "id": "b", "text": "Oui : tout porteur de charge se déplace dans le sens conventionnel" },
+        { "id": "c", "text": "Oui, car les ions négatifs se déplacent comme les électrons dans un métal" },
+        { "id": "d", "text": "La question n'a pas de sens : dans une solution, le courant n'a pas de sens" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le sens conventionnel est fixé une fois pour toutes : à l'extérieur du générateur, de la borne + vers la borne −. Un anion qui remonte vers la borne + circule donc à contre-sens ✓ ; seuls les cations suivent le sens conventionnel. Tous les porteurs ne vont pas dans le même sens : c'est précisément ce qui distingue une solution d'un métal, où seuls les électrons circulent, eux aussi à contre-sens. Et le courant a bien un sens dans une solution — simplement, deux familles de porteurs y circulent en sens opposés.",
+      "difficulty": 3
+    }
+  ]
+}

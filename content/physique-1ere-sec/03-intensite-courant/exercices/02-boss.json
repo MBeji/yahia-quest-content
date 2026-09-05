@@ -1,0 +1,86 @@
+{
+  "title": "⭐⭐⭐ Boss : Ce que devient le courant quand le montage change",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "54-56",
+    "items": ["vérifier 3", "situations 1", "synthèse 1"]
+  },
+  "questions": [
+    {
+      "prompt": "Deux lampes sont montées en série avec un générateur. On dévisse l'une des deux. Le générateur débite-t-il encore un courant ?",
+      "options": [
+        { "id": "a", "text": "Non : le circuit est ouvert, plus aucun courant ne circule" },
+        { "id": "b", "text": "Oui, avec la même intensité qu'avant" },
+        { "id": "c", "text": "Oui, avec une intensité deux fois plus grande" },
+        { "id": "d", "text": "Oui, mais seulement dans la lampe restée en place" }
+      ],
+      "correctOption": "a",
+      "explanation": "En série, tous les dipôles forment une seule chaîne : dévisser une lampe rompt cette chaîne, le circuit est ouvert et plus rien ne circule — ni dans le générateur, ni dans l'autre lampe ✓. C'est justement ce qui distingue la série de la dérivation. Et un courant ne peut pas circuler « seulement dans une partie » d'une chaîne ouverte : il lui faudrait un chemin de retour.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les deux mêmes lampes sont maintenant montées en dérivation. On en dévisse une. Que devient l'intensité débitée par le générateur ?",
+      "options": [
+        { "id": "a", "text": "Elle diminue, mais reste non nulle : l'autre branche fonctionne toujours" },
+        { "id": "b", "text": "Elle s'annule, comme dans le montage en série" },
+        { "id": "c", "text": "Elle ne change pas du tout" },
+        { "id": "d", "text": "Elle double, car tout le courant passe dans la lampe restante" }
+      ],
+      "correctOption": "a",
+      "explanation": "En dérivation, chaque lampe a son propre chemin. En dévisser une supprime une branche : le générateur ne débite plus que le courant de la branche restée intacte, donc moins qu'avant, mais pas zéro ✓. C'est toute la différence avec la série, où la coupure est fatale à l'ensemble. L'intensité ne peut pas non plus rester la même — une branche de moins, c'est un courant de moins dans la loi des nœuds — ni doubler : la lampe restante est toujours alimentée dans les mêmes conditions.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "À un circuit en dérivation alimenté par un générateur, on ajoute un troisième récepteur dans une nouvelle branche. Que devient l'intensité dans la branche principale ?",
+      "options": [
+        { "id": "a", "text": "Elle augmente" },
+        { "id": "b", "text": "Elle diminue" },
+        { "id": "c", "text": "Elle reste identique" },
+        { "id": "d", "text": "Elle s'annule" }
+      ],
+      "correctOption": "a",
+      "explanation": "La loi des nœuds tranche : le courant de la branche principale est la somme des courants des branches. Ajouter une branche ajoute un terme à cette somme, donc l'intensité principale augmente ✓. Répondre « elle diminue » revient à appliquer la règle de la série — où un récepteur de plus fait effectivement baisser l'intensité —, mais en dérivation les branches ne se gênent pas, elles s'additionnent. C'est exactement pour cela qu'une multiprise surchargée fait fondre un fusible.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "À un nœud d'un circuit arrivent deux courants d'intensités 250 mA et 0,4 A. Il en repart deux courants, l'un de 150 mA et l'autre d'intensité I. Que vaut I ?",
+      "options": [
+        { "id": "a", "text": "500 mA" },
+        { "id": "b", "text": "0,8 A" },
+        { "id": "c", "text": "300 mA" },
+        { "id": "d", "text": "0,05 A" }
+      ],
+      "correctOption": "a",
+      "explanation": "La loi des nœuds dit que tout ce qui arrive repart. Il faut d'abord ramener les intensités à la même unité : 0,4 A = 400 mA. Il arrive donc 250 + 400 = 650 mA, et il repart 150 mA + I, d'où I = 650 − 150 = 500 mA ✓. Trouver 0,8 A, c'est avoir additionné les deux courants entrants sans retrancher celui qui repart déjà. Et 300 mA vient d'avoir lu 0,4 A comme 40 mA : la conversion est l'endroit exact où cet exercice se perd.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un circuit série, on relie par un simple fil de connexion les deux bornes de l'une des lampes. Que devient l'intensité débitée par le générateur ?",
+      "options": [
+        { "id": "a", "text": "Elle augmente fortement : la lampe est court-circuitée" },
+        { "id": "b", "text": "Elle diminue, car le fil ajoute un dipôle au circuit" },
+        { "id": "c", "text": "Elle ne change pas : un fil ne modifie rien" },
+        { "id": "d", "text": "Elle s'annule : le fil ouvre le circuit" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le courant passe désormais par le fil plutôt que par la lampe, qui est mise hors usage : le circuit oppose beaucoup moins de résistance au passage du courant, et l'intensité débitée augmente fortement ✓ — c'est précisément ce danger que le fusible surveille. Le fil n'est pas un récepteur de plus : c'est un raccourci. Et il ne coupe rien, au contraire : il ajoute un chemin.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans une maison, les lampes d'une pièce sont montées en dérivation et non en série. Quel est l'intérêt de ce choix ?",
+      "options": [
+        { "id": "a", "text": "Chaque lampe reçoit la tension du secteur et fonctionne indépendamment des autres" },
+        { "id": "b", "text": "Le montage consomme moins de courant qu'en série" },
+        { "id": "c", "text": "Les lampes brillent moins fort, ce qui les protège" },
+        { "id": "d", "text": "Une seule lampe suffit alors à éclairer toute la maison" }
+      ],
+      "correctOption": "a",
+      "explanation": "En dérivation, chaque lampe a son propre chemin : elle reçoit la pleine tension du secteur, brille normalement, et une lampe grillée n'éteint pas les autres ✓. En série, le contraire se produit sur les deux plans — les lampes se partagent la tension et brillent faiblement, et la première grillée plonge toute la pièce dans le noir. La dérivation consomme d'ailleurs davantage de courant, pas moins : c'est le prix de l'indépendance, et c'est pourquoi l'installation est protégée par un fusible.",
+      "difficulty": 3
+    }
+  ]
+}
