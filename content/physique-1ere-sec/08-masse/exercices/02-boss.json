@@ -1,0 +1,86 @@
+{
+  "title": "⭐⭐⭐ Boss : Ce qui change et ce qui ne change pas quand l'eau gèle",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "127-129",
+    "items": ["vérifier 2", "vérifier 3", "situations 3", "synthèse 1"]
+  },
+  "questions": [
+    {
+      "prompt": "Un astronaute emporte un objet de 2 kg sur la Lune. Que devient sa masse ?",
+      "options": [
+        { "id": "a", "text": "Elle reste 2 kg : la masse ne dépend pas de l'endroit où se trouve le corps" },
+        { "id": "b", "text": "Elle est divisée par six, comme le poids" },
+        { "id": "c", "text": "Elle devient nulle, car il n'y a pas de pesanteur" },
+        { "id": "d", "text": "Elle augmente, l'objet étant plus loin de la Terre" }
+      ],
+      "correctOption": "a",
+      "explanation": "La masse mesure la quantité de matière d'un corps : tant qu'on ne lui enlève ni ne lui ajoute rien, elle ne change pas — ni en changeant de lieu, ni en changeant de forme, ni en changeant d'état. L'objet garde donc 2 kg sur la Lune ✓. Ce qui est bien divisé par six là-bas, c'est le poids, qui dépend de l'astre : masse et poids sont deux grandeurs différentes, et c'est exactement le piège de cette question.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une masse volumique vaut 920 kg·m⁻³. Combien vaut-elle en g·L⁻¹ ?",
+      "options": [
+        { "id": "a", "text": "920 g·L⁻¹" },
+        { "id": "b", "text": "0,92 g·L⁻¹" },
+        { "id": "c", "text": "920 000 g·L⁻¹" },
+        { "id": "d", "text": "9,2 g·L⁻¹" }
+      ],
+      "correctOption": "a",
+      "explanation": "Les deux unités sont numériquement identiques : 1 kg vaut 1 000 g et 1 m³ vaut 1 000 L, donc les deux facteurs 1 000 se simplifient et 1 kg·m⁻³ = 1 g·L⁻¹. La valeur ne change pas : 920 kg·m⁻³ = 920 g·L⁻¹ ✓. Les autres réponses viennent d'avoir converti une seule des deux unités — le numérateur ou le dénominateur — et d'avoir donc appliqué un facteur 1 000 qui, dans un quotient, s'annule.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une bouteille en verre de contenance 0,75 L est remplie de 745 mL d'eau, bien fermée, puis placée dans la chambre froide d'un réfrigérateur. Sachant que la masse volumique de la glace vaut 920 kg·m⁻³, que va-t-il se produire ?",
+      "options": [
+        { "id": "a", "text": "La bouteille casse : la glace formée occuperait environ 810 mL, plus que la bouteille ne peut contenir" },
+        { "id": "b", "text": "Rien : l'eau gèle et occupe toujours 745 mL" },
+        { "id": "c", "text": "Rien : la glace occupe moins de place que l'eau, il reste du vide" },
+        { "id": "d", "text": "La bouteille se vide, la glace étant plus légère que l'eau" }
+      ],
+      "correctOption": "a",
+      "explanation": "La masse ne change pas en gelant : les 745 mL d'eau pèsent 745 g, et ces 745 g de glace occupent V = m / ρ = 745 / 920 ≈ 0,810 L, soit environ 810 mL ✓. C'est plus que les 750 mL de la bouteille : la glace n'a pas la place, et le verre cède. Croire que le volume ne change pas revient à confondre masse et volume — c'est justement l'un qui se conserve et l'autre qui augmente. Et la glace occupe plus de place que l'eau, pas moins : c'est bien pour cela qu'elle flotte.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On comprime fortement un gaz dans une bouteille fermée. Que devient sa masse ?",
+      "options": [
+        { "id": "a", "text": "Elle ne change pas : on a réduit le volume, pas la quantité de matière" },
+        { "id": "b", "text": "Elle augmente, le gaz étant plus dense" },
+        { "id": "c", "text": "Elle diminue, une partie du gaz disparaissant" },
+        { "id": "d", "text": "Elle devient nulle : un gaz comprimé n'a plus de masse" }
+      ],
+      "correctOption": "a",
+      "explanation": "Rien n'est entré ni sorti de la bouteille fermée : la même quantité de matière est simplement rassemblée dans un plus petit volume, donc la masse est inchangée ✓. Ce qui augmente, c'est la masse volumique — le quotient de cette masse constante par un volume devenu plus petit. Confondre les deux est l'erreur classique du chapitre : un gaz comprimé est plus dense, pas plus lourd.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un cylindre plein en plomb a une hauteur de 10 cm et un rayon de 2 cm. Quel est son volume ?",
+      "options": [
+        { "id": "a", "text": "Environ 126 cm³" },
+        { "id": "b", "text": "Environ 63 cm³" },
+        { "id": "c", "text": "Environ 503 cm³" },
+        { "id": "d", "text": "Environ 40 cm³" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le volume d'un cylindre est V = π × r² × h, soit π × 2² × 10 = π × 40 ≈ 125,7 cm³, donc environ 126 cm³ ✓. Trouver 63 cm³, c'est avoir écrit π × r × h en oubliant le carré du rayon. Trouver 503 cm³, c'est avoir pris le diamètre 4 cm pour le rayon : comme il est élevé au carré, l'erreur est multipliée par quatre. Et 40 cm³, c'est le calcul r² × h mené sans le π.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Ce cylindre en plomb a une masse volumique de 11 300 kg·m⁻³, celle de l'eau étant 1 000 kg·m⁻³. Que fait-il si on le plonge dans l'eau ?",
+      "options": [
+        { "id": "a", "text": "Il coule : sa densité, environ 11,3, est supérieure à 1" },
+        { "id": "b", "text": "Il flotte : sa densité, environ 11,3, est supérieure à 1" },
+        { "id": "c", "text": "Il flotte, car sa densité vaut environ 0,09" },
+        { "id": "d", "text": "Cela dépend de sa forme, pas de sa masse volumique" }
+      ],
+      "correctOption": "a",
+      "explanation": "La densité est le quotient de la masse volumique du corps par celle de l'eau : 11 300 / 1 000 = 11,3. Une densité supérieure à 1 signifie que le corps est plus lourd que le même volume d'eau : il coule ✓. C'est la règle qu'il faut lire dans le bon sens — au-dessus de 1 on coule, en dessous on flotte. La valeur 0,09 vient d'avoir divisé dans l'autre sens. Et la forme ne décide de rien pour un corps plein : un bloc de plomb coule, quelle que soit sa découpe.",
+      "difficulty": 3
+    }
+  ]
+}

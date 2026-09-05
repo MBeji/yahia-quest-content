@@ -1,0 +1,86 @@
+{
+  "title": "⭐⭐⭐ Boss : Ce qui se comprime, ce qui coule, ce qui se recueille",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "98-99",
+    "items": ["vérifier 2", "vérifier 3", "situations 3"]
+  },
+  "questions": [
+    {
+      "prompt": "On introduit un gaz dans un flacon fermé. Quelle partie du flacon occupe-t-il ?",
+      "options": [
+        { "id": "a", "text": "Tout le volume disponible" },
+        { "id": "b", "text": "Seulement la partie supérieure" },
+        { "id": "c", "text": "Seulement le fond, comme un liquide" },
+        { "id": "d", "text": "Une partie dont le volume dépend de la forme du flacon" }
+      ],
+      "correctOption": "a",
+      "explanation": "Un gaz est expansible : ses particules, très agitées et très dispersées, se répartissent dans tout l'espace qu'on leur offre. Il occupe donc la totalité du flacon ✓, sans surface libre. Croire qu'il monte en haut, c'est lui prêter le comportement d'un ballon d'hélium dans l'air — un gaz plus léger monte dans un autre gaz, mais seul dans un flacon fermé, il occupe tout. Et un liquide, lui, a un volume propre et s'arrête sur une surface libre : c'est exactement ce qui l'oppose au gaz.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le réservoir d'un thermomètre à mercure, dans quel état se trouve le mercure ?",
+      "options": [
+        { "id": "a", "text": "Liquide" },
+        { "id": "b", "text": "Solide" },
+        { "id": "c", "text": "Gazeux" },
+        { "id": "d", "text": "Solide dans le réservoir, liquide dans le tube" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le mercure est le seul métal liquide à température ordinaire, et c'est justement pour cela qu'on l'a utilisé dans les thermomètres : il monte et descend dans le tube ✓. Le piège est de raisonner « métal, donc solide » — la famille du corps ne décide pas de son état, la température le décide. Et un même corps ne peut pas être solide d'un côté et liquide de l'autre dans un thermomètre : c'est une seule colonne continue.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "« Tous les solides coulent quand on les pose sur l'eau. » Cette affirmation est-elle exacte ?",
+      "options": [
+        { "id": "a", "text": "Non : un morceau de bois est solide et il flotte" },
+        { "id": "b", "text": "Oui : tout solide est plus lourd que l'eau" },
+        { "id": "c", "text": "Oui, sauf si le solide est creux" },
+        { "id": "d", "text": "Non : aucun solide ne coule, ils flottent tous" }
+      ],
+      "correctOption": "a",
+      "explanation": "Être solide, c'est avoir une forme propre et un volume propre — cela ne dit rien de la flottaison. Un bloc de bois plein est parfaitement solide et il flotte ✓, tandis qu'une bille de fer coule : l'état physique et le comportement dans l'eau sont deux questions différentes. La forme creuse aide à flotter, mais ce n'est pas la seule façon, et l'exemple du bois plein suffit à renverser l'affirmation.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une seringue est remplie d'eau, son extrémité est bouchée. On appuie fortement sur le piston. Que devient le volume de l'eau ?",
+      "options": [
+        { "id": "a", "text": "Il ne change pratiquement pas : le liquide est incompressible" },
+        { "id": "b", "text": "Il diminue nettement, comme pour un gaz" },
+        { "id": "c", "text": "Il augmente sous l'effet de la pression" },
+        { "id": "d", "text": "Il diminue de moitié si l'on appuie deux fois plus fort" }
+      ],
+      "correctOption": "a",
+      "explanation": "Dans un liquide, les particules sont déjà serrées les unes contre les autres : il n'y a presque plus de place à reprendre, et le piston refuse d'avancer. Le volume reste donc pratiquement le même ✓ — le liquide est incompressible. La diminution nette est le comportement d'un gaz, où les particules sont très espacées. Et une compression ne fait jamais augmenter un volume : ce serait pousser dans un sens et gagner de la place dans l'autre.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On vide cette seringue et on la remplit d'air, extrémité toujours bouchée. On appuie de la même façon sur le piston. Que se passe-t-il, et pourquoi ?",
+      "options": [
+        { "id": "a", "text": "Le piston avance : le volume du gaz diminue, car ses particules sont très espacées" },
+        { "id": "b", "text": "Le piston reste bloqué, exactement comme avec l'eau" },
+        { "id": "c", "text": "Le piston avance, mais la quantité d'air diminue en s'échappant" },
+        { "id": "d", "text": "Le piston avance et l'air se transforme en liquide" }
+      ],
+      "correctOption": "a",
+      "explanation": "Entre les particules d'un gaz, il y a beaucoup de vide : appuyer les rapproche, et le volume diminue nettement ✓. C'est la compressibilité, la propriété qui oppose le plus nettement les gaz aux liquides — la même seringue tranche entre les deux en une seconde. La seringue étant bouchée, rien ne s'échappe : la quantité de gaz est la même, c'est le volume qui a changé. Et une simple pression de la main ne liquéfie pas l'air.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un ballon de baudruche est gonflé au dihydrogène. On veut en recueillir un litre dans un flacon, sans le laisser se mélanger à l'air. Comment procéder ?",
+      "options": [
+        { "id": "a", "text": "Remplir le flacon d'eau, le retourner sur une cuve à eau et y faire barboter le gaz, qui chasse l'eau" },
+        { "id": "b", "text": "Poser le flacon vide sur la table et souffler le gaz dedans" },
+        { "id": "c", "text": "Remplir le flacon d'eau et verser le gaz par-dessus" },
+        { "id": "d", "text": "Peser le flacon vide puis le flacon plein pour vérifier le litre" }
+      ],
+      "correctOption": "a",
+      "explanation": "Un gaz est invisible et se mélange à l'air dès qu'on le libère : il faut donc lui prendre la place de quelque chose. En retournant sur une cuve un flacon plein d'eau, on fait barboter le gaz par en dessous ; il monte, s'accumule en haut du flacon et chasse l'eau, dont le niveau qui descend mesure directement le volume recueilli ✓. Souffler dans un flacon posé à l'endroit ne fait que mélanger le gaz à l'air qui s'y trouve. Et un gaz ne se verse pas : il n'a ni surface libre ni volume propre. La pesée mesurerait une masse, pas un volume.",
+      "difficulty": 3
+    }
+  ]
+}
