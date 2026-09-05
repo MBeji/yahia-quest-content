@@ -612,7 +612,7 @@ Q-3), pilotée par le rapport de couverture — même modèle que la campagne d'
     à l'épreuve.
 
 - **2026-09-05 — Lot 5 livré, et la borne « 3 chapitres, une matière » levée par Mohamed.**
-  Quatre PR de contenu (privé#358, #360, #361, #362) + un correctif moteur (arena#993).
+  Quatre PR de contenu (privé#358, #360, #361, #362) + un correctif moteur (arena#996).
   - **Matière : `physique-1ere-sec`, pas `math-1ere-sec`.** Q-3 recommandait la seconde ; constaté
     avant d'écrire : elle ne déclare `manuel` sur **aucun** de ses 16 chapitres et sa fiche
     (491 lignes) ne transcrit aucun exercice — le lot y aurait commencé par deux chantiers
@@ -641,7 +641,7 @@ Q-3), pilotée par le rapport de couverture — même modèle que la campagne d'
     ses exercices en continu mais **par rubrique** (« Vérifier ses acquis », « Utiliser ses acquis
     dans des situations simples », « … pour une synthèse »). Les `items` s'écrivent donc
     « vérifier 2 », « situations 1 », « synthèse 3 » — la doctrine ne prévoyait que « ex. 12 ».
-  - **Défaut du lot 4 trouvé en s'en servant** (arena#993) : `audit-program --json` écrivait son
+  - **Défaut du lot 4 trouvé en s'en servant** (arena#996) : `audit-program --json` écrivait son
     JSON **au milieu** du rapport lisible, donc `| jq` échouait sur la première ligne. Un flag
     machine dont la sortie n'est pas parsable ne sert à rien. Corrigé : sous `--json`, stdout ne
     porte que le JSON, le rapport part sur stderr.
