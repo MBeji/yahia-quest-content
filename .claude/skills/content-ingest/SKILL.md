@@ -113,7 +113,9 @@ récompenses, style, notation) et à `content-ecole-tn` (fidélité au programme
    jour le registre** `suivi/<grade>.json` (statut normé, profondeur, plages `pagesLues` par source, r7)
    et régénérer la vue : `npm run programme:index` + `npm run programme:check` (0 erreur).
 5. **Hand-off génération.** Invoquer les skills de génération pour produire `cours.md` / `resume.md` /
-   `quiz.json` / `exercices/*` à partir de la transcription, puis suivre la recette `content-ecole-tn`
+   `quiz.json` / `exercices/*` à partir de la transcription — ce que devient chaque contenu du manuel
+   (exercice, figure, encadré) et ce qui se trace est normé par
+   `content-engine/references/manuel-valorisation.md` — puis suivre la recette `content-ecole-tn`
    (`content:check` + `content:qa:strict` + `content:audit` → build de migration `--subject <id>` → PR → revue
    → auto-apply prod au merge). **Livraison par tranches de ≤4 chapitres complets** — commit local par
    chapitre, une PR + une migration fraîche par tranche, jamais une matière entière retenue non poussée

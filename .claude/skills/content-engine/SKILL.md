@@ -178,6 +178,9 @@ Whatever the slice, the same gates apply: quality bar → self-verification → 
   `quiz` slug. **Read before writing any file.**
 - `references/expert-exercises.md` — the professor-grade bar for hard **d3–4** exercises (archetypes,
   executed-error distractors, double-solve verification); the `prof-*` skills build on it.
+- `references/manuel-valorisation.md` — what to do with an official **CNP manuel élève**: the closed
+  taxonomy (lesson, encadré, worked example, figure, exercise…), the exercise→format mapping, the
+  three reuse regimes, R-1→R-12 and the `manuel` traceability field. Read before taking up a textbook.
 - `references/interactive-formats.md` — the **interactive/innovative format catalogue** (cloze,
   chasse à l'erreur, appariement, remise en ordre, QCM visuel SVG, document, histoire-problème,
   vrai/faux motivé, sprint chrono) encodable in today's QCM engine, plus the renderer contract and
