@@ -164,6 +164,11 @@ compréhension du cours, ni les questions individuelles) :
 - **`code` s'hérite** du chapitre. S'il n'est résoluble nulle part, `content:check` **échoue** —
   une reprise qui ne nomme aucun manuel ne trace rien.
 - Les `items` sont des **libellés de numérotation** (« ex. 12 »), jamais un indice de réponse.
+- **Manuel numéroté par rubrique** : beaucoup de manuels du CNP ne numérotent pas leurs exercices
+  en continu mais à l'intérieur de rubriques nommées — « Vérifier ses acquis », « Utiliser ses
+  acquis dans des situations simples », « … pour une synthèse ». Le libellé reprend alors la
+  rubrique abrégée et le rang : `"vérifier 2"`, `"situations 1"`, `"synthèse 3"`. Constaté sur le
+  manuel de physique 1ʳᵉ sec (223103P00), pilote de l'étude 21.
 - Le rapport de couverture (`npm run content:audit`) croise ces items avec ce que le **manifeste
   de programme** déclare du manuel, et rend `repris / déclaré` plus la liste nominale de ce qui
   reste. Il est **advisory** : une campagne en cours n'est pas une régression.

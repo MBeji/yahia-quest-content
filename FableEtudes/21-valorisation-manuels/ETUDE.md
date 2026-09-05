@@ -442,7 +442,7 @@ lot de contenu).
       §3.5). Critères : les trois niveaux de précision rendent ; `findingCount` inchangé sur tous
       les manifests existants ; `ci:verify` vert sans nouveau finding. **Stop-point** : rien dans
       `content:qa:strict` en niveau error.
-- [ ] **Lot 5 — Pilote.** Sur la matière arbitrée en Q-3 (recommandation : `math-1ere-sec`,
+- [x] **Lot 5 — Pilote.** ✅ 2026-09-05, sur `physique-1ere-sec` (voir journal §8). Sur la matière arbitrée en Q-3 (recommandation : `math-1ere-sec`,
       manuels `222104P01/P02`) : enrichir fiche + manifest (liste d'exercices de 3 chapitres — si
       la fiche n'a pas la profondeur, passe vision ciblée sur les renders existants via le flux
       `content-ingest`, coût borné à ces chapitres), reprendre selon la doctrine (missions
@@ -610,5 +610,48 @@ Q-3), pilotée par le rapport de couverture — même modèle que la campagne d'
   - **Dette assumée** : rien du corpus n'utilise encore `manuel` — le rapport rend `[]`. C'est le
     lot 5 (pilote) qui donnera au lot 4 ses premières données, et à la doctrine sa première mise
     à l'épreuve.
+
+- **2026-09-05 — Lot 5 livré, et la borne « 3 chapitres, une matière » levée par Mohamed.**
+  Quatre PR de contenu (privé#358, #360, #361, #362) + un correctif moteur (arena#996).
+  - **Matière : `physique-1ere-sec`, pas `math-1ere-sec`.** Q-3 recommandait la seconde ; constaté
+    avant d'écrire : elle ne déclare `manuel` sur **aucun** de ses 16 chapitres et sa fiche
+    (491 lignes) ne transcrit aucun exercice — le lot y aurait commencé par deux chantiers
+    d'amont. `physique-1ere-sec` déclare son manuel sur ses **17 chapitres** (R-9 déjà satisfaite)
+    et sa fiche fait **4 173 lignes**, exercices transcrits rubrique par rubrique. La
+    recommandation d'une étude se **vérifie** avant d'être suivie : c'est le neuvième statut
+    périmé de la semaine, et le premier trouvé dans un arbitrage humain plutôt que dans un index.
+  - **Livré** : 17 missions `02-boss` (⭐⭐⭐) + 1 `05-entrainement` (⭐⭐) — **102 questions**.
+    Ce n'est pas un ajout latéral : la matière n'avait **aucun** étage d3, ses 17 chapitres
+    s'arrêtant à `01-pratique` (d1) et `03-revision` (d2). Reprendre le manuel a comblé le palier
+    manquant — la reprise sert la profondeur (DoE), pas seulement la traçabilité.
+  - **La moitié invisible du lot** : **7 missions existantes rétro-tracées**. Elles reprenaient
+    déjà des exercices du manuel sans le dire (le calibre 1 A et le fusible 20 A du chapitre 3,
+    le cylindre de 2 cm du chapitre 6, le kilo de glace du chapitre 8…). R-4 l'exige, et cela ne
+    coûte aucune écriture — seulement de lire ce qui est déjà là.
+  - **Couverture : 81/154 (53 %)**, 17 chapitres sur 17 déclarés. Le dénominateur est le nombre
+    RÉEL d'exercices du manuel, recompté chapitre par chapitre : le gabarit n'est pas partout
+    3 + 3 + 3 (le chapitre 5 en porte 11, le chapitre 4 en porte 10, le chapitre 7 en porte 8).
+    Une erreur de comptage a d'ailleurs été corrigée en cours de route — un dénominateur faux
+    flatte le taux autant qu'un numérateur gonflé.
+  - **Ce que les 47 % restants sont** : les exercices que la fiche **résume** sans donner leurs
+    données (montages à corriger, tableaux de mesures, figures à identifier). Les reprendre
+    demanderait de les inventer, R-1 l'interdit. Ils tomberont quand la fiche gagnera en
+    profondeur sur ces pages — pas avant, et pas en trichant.
+  - **Une convention née du pilote**, ajoutée au §5 de la doctrine : ce manuel ne numérote pas
+    ses exercices en continu mais **par rubrique** (« Vérifier ses acquis », « Utiliser ses acquis
+    dans des situations simples », « … pour une synthèse »). Les `items` s'écrivent donc
+    « vérifier 2 », « situations 1 », « synthèse 3 » — la doctrine ne prévoyait que « ex. 12 ».
+  - **Défaut du lot 4 trouvé en s'en servant** (arena#996) : `audit-program --json` écrivait son
+    JSON **au milieu** du rapport lisible, donc `| jq` échouait sur la première ligne. Un flag
+    machine dont la sortie n'est pas parsable ne sert à rien. Corrigé : sous `--json`, stdout ne
+    porte que le JSON, le rapport part sur stderr.
+  - **Trois défauts réels attrapés par les gates pendant l'écriture** : du gras Markdown dans des
+    `prompt` (le player rend les astérisques en clair), une explication citant une option par sa
+    lettre alors qu'elles sont mélangées à l'affichage, et un distracteur dont la justification
+    était fausse (la confusion rayon/diamètre quadruple le volume, elle ne le double pas).
+  - **Dette notée pour le lot 6** : le manuel demande au chapitre 9 pourquoi le linge sèche plus
+    vite au désert qu'au bord de la mer. Le cours n'enseigne **nulle part** ce qui accélère
+    l'évaporation : la question a été écartée plutôt que posée sur du non-enseigné. C'est
+    exactement le périmètre de la passe savoirs (R-8).
 
 _(rempli au fil des lots par l'exécuteur : date, lot, PR, écarts acceptés, dettes notées)_
