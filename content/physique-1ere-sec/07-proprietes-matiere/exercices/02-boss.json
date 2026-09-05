@@ -1,0 +1,86 @@
+{
+  "title": "⭐⭐⭐ Boss : Le bilame, la laine et l'eau à 4 °C",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "112-113",
+    "items": ["vérifier 2", "vérifier 3", "situations 1", "situations 3", "synthèse 2"]
+  },
+  "questions": [
+    {
+      "prompt": "Une bouteille Thermos ne sert-elle qu'à garder les boissons chaudes ?",
+      "options": [
+        { "id": "a", "text": "Non : elle limite les échanges de chaleur dans les deux sens, donc elle garde aussi le froid" },
+        { "id": "b", "text": "Si : elle ne sait que retenir la chaleur qu'on y met" },
+        { "id": "c", "text": "Si : le froid n'est pas de la chaleur, il ne se conserve pas" },
+        { "id": "d", "text": "Non : elle réchauffe légèrement ce qu'on y met" }
+      ],
+      "correctOption": "a",
+      "explanation": "Une Thermos est un isolant thermique : elle ne fabrique ni chaud ni froid, elle ralentit simplement les échanges entre l'intérieur et l'extérieur — dans les deux sens ✓. Une boisson glacée y reste donc froide aussi longtemps qu'une boisson chaude y reste chaude. Le piège est de croire que « garder le froid » serait une opération d'une autre nature : c'est le même phénomène, la chaleur qui n'entre pas au lieu de ne pas sortir. Et un isolant ne réchauffe rien : il n'est pas une source.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On chauffe une bille métallique. Dans quelle ou quelles directions se dilate-t-elle ?",
+      "options": [
+        { "id": "a", "text": "Dans toutes les directions : c'est son volume entier qui augmente" },
+        { "id": "b", "text": "Dans une seule direction, celle de sa plus grande dimension" },
+        { "id": "c", "text": "Seulement vers le haut, la chaleur montant" },
+        { "id": "d", "text": "Elle ne se dilate pas : seuls les corps allongés se dilatent" }
+      ],
+      "correctOption": "a",
+      "explanation": "La dilatation est un gonflement de toute la matière : chauffée, la bille grossit dans les trois dimensions, son volume augmente ✓. On ne parle d'allongement dans une seule direction que pour un corps filiforme — un rail, un fil — parce que ses deux autres dimensions sont trop petites pour qu'on remarque quoi que ce soit, pas parce que la dilatation les épargne. Et la chaleur qui monte concerne l'air ambiant, pas la matière du solide.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le thermostat d'un fer à repasser contient un bilame, formé de deux lames de métaux différents soudées l'une à l'autre. Pourquoi deux métaux différents ?",
+      "options": [
+        { "id": "a", "text": "Parce qu'ils ne se dilatent pas autant, ce qui force le bilame à s'incurver quand il chauffe" },
+        { "id": "b", "text": "Parce que l'un conduit la chaleur et l'autre pas" },
+        { "id": "c", "text": "Parce qu'il faut un métal conducteur et un métal isolant électrique" },
+        { "id": "d", "text": "Pour que le bilame soit plus solide qu'une lame simple" }
+      ],
+      "correctOption": "a",
+      "explanation": "La dilatation dépend de la nature du corps : à même échauffement, les deux lames voudraient s'allonger différemment. Comme elles sont soudées, celle qui s'allonge le plus oblige l'ensemble à se courber du côté de l'autre ✓ — et c'est ce mouvement qu'on utilise pour ouvrir ou fermer un contact. Deux lames du même métal se dilateraient pareil et l'ensemble resterait droit : le dispositif ne servirait à rien. Les deux lames sont bien métalliques et conductrices, la chaleur comme l'électricité : la différence utile est celle des dilatations.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans une guirlande clignotante, un bilame maintient le contact fermé à froid. Le courant passe, le bilame s'échauffe et s'incurve. Que se passe-t-il ?",
+      "options": [
+        { "id": "a", "text": "Il s'écarte du contact, le circuit s'ouvre et la lampe s'éteint, avant de se refroidir et de tout recommencer" },
+        { "id": "b", "text": "Il reste allumé : un bilame incurvé conduit toujours le courant" },
+        { "id": "c", "text": "La lampe s'éteint parce que l'intensité du courant a baissé en chauffant" },
+        { "id": "d", "text": "Le bilame fond et la guirlande s'arrête définitivement" }
+      ],
+      "correctOption": "a",
+      "explanation": "En s'incurvant, le bilame quitte le contact : le circuit s'ouvre, plus aucun courant ne circule et la lampe s'éteint ✓. Privé de courant, le bilame refroidit, reprend sa forme, retrouve le contact — et le cycle repart : c'est exactement ce qui fait le clignotement. Ce n'est pas une baisse d'intensité mais une coupure franche du circuit. Et rien ne fond : la déformation d'un bilame est réversible, c'est même toute son utilité.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On enveloppe un biberon froid dans de la laine. Que se passe-t-il ?",
+      "options": [
+        { "id": "a", "text": "Rien ne le réchauffe : la laine est un isolant, elle ralentit les échanges mais ne produit pas de chaleur" },
+        { "id": "b", "text": "Il se réchauffe peu à peu, car la laine tient chaud" },
+        { "id": "c", "text": "Il se refroidit plus vite, la laine absorbant sa chaleur" },
+        { "id": "d", "text": "Il atteint la température de la laine, plus élevée que la sienne" }
+      ],
+      "correctOption": "a",
+      "explanation": "Un isolant thermique ne chauffe pas : il freine seulement les échanges avec l'extérieur ✓. Un biberon froid emmailloté de laine restera froid plus longtemps, exactement comme un glaçon enveloppé de laine fondra plus lentement — la laine protège du froid quand c'est un corps chaud qu'elle entoure, et protège du chaud quand c'est un corps froid. Dire qu'elle « tient chaud » est un raccourci de langage : c'est notre propre corps qui produit la chaleur que la laine retient. Et la laine n'a pas de température à elle : au repos, elle est à celle de la pièce.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On relève le volume occupé par 1 kg d'eau de 0 °C à 8 °C. À quelle température ce volume est-il le plus petit ?",
+      "options": [
+        { "id": "a", "text": "À 4 °C" },
+        { "id": "b", "text": "À 0 °C" },
+        { "id": "c", "text": "À 8 °C" },
+        { "id": "d", "text": "Le volume diminue régulièrement : il n'y a pas de minimum" }
+      ],
+      "correctOption": "a",
+      "explanation": "L'eau ne suit pas la règle générale entre 0 et 4 °C : refroidie de 4 à 0 °C, elle se dilate au lieu de se contracter. Son volume passe donc par un minimum à 4 °C ✓ — c'est ce qu'on appelle l'anomalie de l'eau, et c'est pour cela qu'une bouteille pleine et fermée casse en gelant. À 0 °C comme à 8 °C, le volume est plus grand qu'à 4 °C, chacun pour une raison différente : l'anomalie d'un côté, la dilatation ordinaire de l'autre.",
+      "difficulty": 3
+    }
+  ]
+}

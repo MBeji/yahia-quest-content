@@ -1,0 +1,86 @@
+{
+  "title": "⭐⭐⭐ Boss : Diagnostiquer un circuit à l'ohmmètre",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "84-86",
+    "items": ["vérifier 2", "vérifier 3", "situations 1", "synthèse 1", "synthèse 4"]
+  },
+  "questions": [
+    {
+      "prompt": "Un résistor est monté dans un circuit alimenté, muni d'un interrupteur K. Comment mesurer sa résistance à l'ohmmètre ?",
+      "options": [
+        { "id": "a", "text": "Ouvrir K, puis brancher l'ohmmètre aux bornes du résistor" },
+        { "id": "b", "text": "Fermer K, puis brancher l'ohmmètre aux bornes du résistor" },
+        { "id": "c", "text": "Fermer K, puis brancher l'ohmmètre en série dans le circuit" },
+        { "id": "d", "text": "Ouvrir K, puis brancher l'ohmmètre aux bornes du générateur" }
+      ],
+      "correctOption": "a",
+      "explanation": "Un ohmmètre envoie lui-même un petit courant dans le dipôle et mesure ce qui en résulte : il exige donc que le circuit ne soit pas alimenté. On ouvre K pour couper le courant du générateur, puis on branche l'appareil aux bornes du seul résistor ✓. Le brancher circuit fermé fausse la mesure et peut abîmer l'appareil. En série, on mesurerait une intensité, pas une résistance — c'est le branchement de l'ampèremètre. Et aux bornes du générateur, on mesurerait tout sauf le résistor.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On relève la caractéristique d'un résistor, puis on inverse le sens du courant qui le traverse et on recommence. Que constate-t-on ?",
+      "options": [
+        { "id": "a", "text": "Le résistor se comporte de la même façon : c'est un dipôle symétrique" },
+        { "id": "b", "text": "Il ne laisse plus passer le courant dans l'autre sens" },
+        { "id": "c", "text": "Sa résistance double dans l'autre sens" },
+        { "id": "d", "text": "Sa caractéristique devient une courbe au lieu d'une droite" }
+      ],
+      "correctOption": "a",
+      "explanation": "Un résistor ne distingue pas ses deux bornes : le courant y rencontre le même obstacle dans un sens comme dans l'autre. Sa caractéristique est donc la même, et c'est ce qu'on appelle un dipôle symétrique ✓. Ne laisser passer que dans un sens est le comportement de la diode, pas du résistor. La résistance, elle, est une caractéristique du composant : elle ne change ni avec le sens, ni avec le branchement.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Qu'est-ce qui distingue la caractéristique d'une diode de celle d'un résistor ?",
+      "options": [
+        { "id": "a", "text": "Celle de la diode n'est pas la même dans les deux sens : la diode est un dipôle asymétrique" },
+        { "id": "b", "text": "Celle de la diode est une droite de pente plus forte" },
+        { "id": "c", "text": "Celle de la diode passe par l'origine, pas celle du résistor" },
+        { "id": "d", "text": "La diode n'a pas de caractéristique, car elle ne se mesure pas" }
+      ],
+      "correctOption": "a",
+      "explanation": "La diode a une borne d'entrée et une borne de sortie qui ne jouent pas le même rôle : elle laisse passer le courant dans un sens et le bloque dans l'autre. Sa caractéristique change donc du tout au tout selon le sens — c'est un dipôle asymétrique ✓, contrairement au résistor. Ce n'est pas une question de pente : ce n'est même pas une droite. Et c'est bien la caractéristique du résistor qui passe par l'origine, ce qui est exactement ce qui en fait un conducteur ohmique.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un montage, la lampe ne s'allume pas. Circuit ouvert, on mesure chaque dipôle à l'ohmmètre : le résistor indique 100 Ω, l'interrupteur fermé indique 0 Ω, et la lampe une valeur infinie. Quel dipôle est défectueux ?",
+      "options": [
+        { "id": "a", "text": "La lampe : une résistance infinie signale son filament coupé" },
+        { "id": "b", "text": "Le résistor : 100 Ω est trop grand pour laisser passer le courant" },
+        { "id": "c", "text": "L'interrupteur : 0 Ω signifie qu'il ne conduit rien" },
+        { "id": "d", "text": "Aucun : les trois mesures sont normales, la panne vient du générateur" }
+      ],
+      "correctOption": "a",
+      "explanation": "Une résistance infinie veut dire qu'aucun courant ne peut passer : le chemin est rompu. Pour une lampe, cela désigne un filament coupé ✓, et c'est bien ce qui empêche tout le circuit de fonctionner puisqu'il est en série. Les deux autres mesures sont au contraire normales : 100 Ω est une valeur ordinaire de résistor, et 0 Ω est exactement ce qu'on attend d'un interrupteur fermé, qui doit conduire sans rien opposer. Le générateur, lui, n'a pas été mis en cause par ces mesures.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un résistor de 100 Ω est monté en série avec une lampe portant l'indication « 6 V - 50 mA », qui fonctionne normalement. Quelle est la tension aux bornes du résistor ?",
+      "options": [
+        { "id": "a", "text": "5 V" },
+        { "id": "b", "text": "6 V" },
+        { "id": "c", "text": "0,5 V" },
+        { "id": "d", "text": "2 V" }
+      ],
+      "correctOption": "a",
+      "explanation": "En série, la même intensité traverse les deux dipôles : celle de la lampe qui fonctionne normalement, soit 50 mA = 0,050 A. La loi d'Ohm donne alors la tension aux bornes du résistor : U = R × I = 100 × 0,050 = 5 V ✓. Répondre 6 V, c'est donner la tension de la lampe. Et 0,5 V vient d'avoir gardé 50 mA sans le convertir en ampères : c'est l'erreur la plus fréquente de tout le chapitre — la loi d'Ohm ne fonctionne qu'en unités du système international.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Toujours dans ce montage en série, quelle doit être la tension du générateur pour que la lampe fonctionne normalement ?",
+      "options": [
+        { "id": "a", "text": "11 V" },
+        { "id": "b", "text": "6 V" },
+        { "id": "c", "text": "5 V" },
+        { "id": "d", "text": "1 V" }
+      ],
+      "correctOption": "a",
+      "explanation": "La loi des mailles répartit la tension du générateur sur les deux dipôles en série : il lui faut fournir les 6 V dont la lampe a besoin plus les 5 V que prend le résistor, soit 11 V ✓. Choisir 6 V, c'est oublier que le résistor consomme lui aussi de la tension — la lampe serait alors sous-alimentée. Et 1 V est la différence des deux tensions, alors que la maille les additionne.",
+      "difficulty": 3
+    }
+  ]
+}
