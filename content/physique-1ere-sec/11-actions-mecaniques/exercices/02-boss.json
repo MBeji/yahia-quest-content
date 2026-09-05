@@ -1,0 +1,86 @@
+{
+  "title": "⭐⭐⭐ Boss : Classer les actions, chiffrer les forces, les dessiner juste",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "176-178",
+    "items": ["vérifier 2", "vérifier 3", "situations 1", "situations 2", "situations 3", "synthèse 1"]
+  },
+  "questions": [
+    {
+      "prompt": "Un lustre est suspendu au plafond par un câble. Comment se classe l'action exercée par le câble sur le lustre ?",
+      "options": [
+        { "id": "a", "text": "Action de contact et localisée" },
+        { "id": "b", "text": "Action de contact et répartie" },
+        { "id": "c", "text": "Action à distance et localisée" },
+        { "id": "d", "text": "Action à distance et répartie" }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux questions se posent à chaque fois, et il faut y répondre séparément. Le câble touche le lustre : l'action est de contact ✓. Et il ne le touche qu'en un seul point d'attache : elle est localisée ✓. On la distingue ainsi de l'action de la Terre sur la Lune, qui est à distance, et de celle du vent sur une voile, qui est de contact mais répartie sur toute la surface.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Et l'action du vent sur la voile d'un bateau ?",
+      "options": [
+        { "id": "a", "text": "Action de contact et répartie" },
+        { "id": "b", "text": "Action de contact et localisée" },
+        { "id": "c", "text": "Action à distance et répartie" },
+        { "id": "d", "text": "Action à distance et localisée" }
+      ],
+      "correctOption": "a",
+      "explanation": "L'air est de la matière : en soufflant sur la voile, il la touche. L'action est donc bien de contact ✓ — c'est le piège de cette question, on croit volontiers que le vent agit « à distance » parce qu'on ne le voit pas. Et il pousse sur toute la surface de la voile à la fois, pas en un point : l'action est répartie ✓. Les actions à distance sont celles qui traversent le vide : le poids, l'aimant, l'électrisation.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Trois forces : le pied d'un footballeur sur un ballon, la poussée d'une fusée au décollage, et l'attraction de la Terre sur une pomme. Quelles intensités leur associer ?",
+      "options": [
+        { "id": "a", "text": "10³ N, 10⁷ N et 2 N" },
+        { "id": "b", "text": "10⁷ N, 10³ N et 2 N" },
+        { "id": "c", "text": "2 N, 10³ N et 10⁷ N" },
+        { "id": "d", "text": "10³ N, 2 N et 10⁷ N" }
+      ],
+      "correctOption": "a",
+      "explanation": "Un ordre de grandeur se retrouve en partant de ce qu'on connaît. Une pomme d'environ 200 g pèse à peu près 2 N : c'est la plus petite des trois. Un coup de pied puissant vaut quelques centaines à quelques milliers de newtons, donc 10³ N. Et une fusée doit soulever des centaines de tonnes : il lui faut des millions de newtons, soit 10⁷ N ✓. L'erreur la plus fréquente est d'intervertir les deux premières, en jugeant le footballeur plus impressionnant qu'une fusée parce qu'on le voit de près.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une main soulève un couffin en exerçant une force de 100 N. Que faut-il donner pour caractériser complètement cette force ?",
+      "options": [
+        { "id": "a", "text": "Son point d'application, sa direction, son sens et son intensité" },
+        { "id": "b", "text": "Son point d'application seulement" },
+        { "id": "c", "text": "Son intensité seulement, puisqu'elle est mesurée" },
+        { "id": "d", "text": "Sa direction et son intensité, le point d'application étant toujours le centre du corps" }
+      ],
+      "correctOption": "a",
+      "explanation": "Une force se décrit par quatre caractéristiques, et il en faut les quatre : où elle s'applique, selon quelle droite, dans quel sens sur cette droite, et avec quelle intensité ✓. Ici la main tire vers le haut, en son point de contact avec l'anse, avec 100 N. N'en donner qu'une seule, point d'application ou intensité, laisse la force indéterminée : deux forces de 100 N tirant en sens contraires n'ont rien à voir entre elles. Et le point d'application n'est le centre du corps que dans le cas particulier du poids.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On aplatit une boule de pâte à modeler sans rien en enlever. Que devient son poids ?",
+      "options": [
+        { "id": "a", "text": "Il ne change pas : le poids dépend de la masse, pas de la forme" },
+        { "id": "b", "text": "Il augmente, la pâte occupant plus de surface" },
+        { "id": "c", "text": "Il diminue, la pâte étant plus étalée" },
+        { "id": "d", "text": "Il devient nul quand la pâte est parfaitement plate" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le poids d'un corps se calcule par P = m × g : il ne dépend que de la quantité de matière et du lieu. Aplatir la pâte ne lui enlève rien : la masse est la même, le lieu aussi, donc le poids est inchangé ✓. Ce qui change avec la forme, c'est la surface de contact, et éventuellement la position du centre de gravité — jamais l'intensité du poids.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On représente une force de 3 N par une flèche, en choisissant l'échelle 2 cm pour 1 N. Quelle doit être la longueur de la flèche ?",
+      "options": [
+        { "id": "a", "text": "6 cm" },
+        { "id": "b", "text": "3 cm" },
+        { "id": "c", "text": "1,5 cm" },
+        { "id": "d", "text": "2 cm" }
+      ],
+      "correctOption": "a",
+      "explanation": "L'échelle dit qu'un newton se dessine par 2 cm : trois newtons demandent donc 3 × 2 = 6 cm ✓. Répondre 1,5 cm, c'est avoir divisé au lieu de multiplier — l'erreur classique quand on lit l'échelle à l'envers. Répondre 3 cm, c'est avoir dessiné le nombre de newtons en centimètres, donc ignoré l'échelle. Et 2 cm est la longueur d'un seul newton.",
+      "difficulty": 3
+    }
+  ]
+}
