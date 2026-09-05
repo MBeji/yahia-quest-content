@@ -1,0 +1,86 @@
+{
+  "title": "⭐⭐⭐ Boss : Suivre l'énergie de la source jusqu'à l'usage",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "224-225",
+    "items": ["vérifier 3", "situations 1", "situations 2", "synthèse 1", "synthèse 3"]
+  },
+  "questions": [
+    {
+      "prompt": "Dans un rasoir électrique alimenté par une pile, qu'est-ce qui joue le rôle de source d'énergie, et qu'est-ce qui joue celui de convertisseur ?",
+      "options": [
+        { "id": "a", "text": "La pile est la source, le moteur est le convertisseur" },
+        { "id": "b", "text": "Le moteur est la source, la pile est le convertisseur" },
+        { "id": "c", "text": "La pile est à la fois la source et le convertisseur" },
+        { "id": "d", "text": "Les lames sont la source, la pile est le convertisseur" }
+      ],
+      "correctOption": "a",
+      "explanation": "Une source fournit l'énergie, un convertisseur la change de forme. La pile contient l'énergie sous forme chimique et la met à disposition : c'est la source. Le moteur reçoit de l'énergie électrique et la rend sous forme mécanique, celle du mouvement des lames : c'est le convertisseur ✓. Intervertir les deux revient à faire fabriquer l'énergie par le moteur — or un convertisseur n'en crée jamais, il ne fait que la transformer.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans une voiture à essence, comment se répartissent les mêmes rôles ?",
+      "options": [
+        { "id": "a", "text": "L'essence est la source, le moteur est le convertisseur" },
+        { "id": "b", "text": "Le moteur est la source, l'essence est le convertisseur" },
+        { "id": "c", "text": "Les roues sont le convertisseur, le moteur est la source" },
+        { "id": "d", "text": "L'essence est à la fois source et convertisseur" }
+      ],
+      "correctOption": "a",
+      "explanation": "C'est exactement la même structure que le rasoir, avec d'autres objets : l'essence porte l'énergie chimique, c'est la source ; le moteur la transforme en énergie mécanique, c'est le convertisseur ✓. Reconnaître ce schéma dans des appareils très différents est tout l'intérêt du chapitre — une pile ou un réservoir, un moteur électrique ou thermique, le rôle ne change pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le mur d'une maison est fait d'une double cloison dont l'espace intérieur est rempli de laine de verre. Quel est le rôle de cette laine ?",
+      "options": [
+        { "id": "a", "text": "Ralentir les transferts de chaleur entre l'intérieur et l'extérieur" },
+        { "id": "b", "text": "Produire de la chaleur en hiver" },
+        { "id": "c", "text": "Renforcer la solidité du mur" },
+        { "id": "d", "text": "Empêcher l'électricité de traverser le mur" }
+      ],
+      "correctOption": "a",
+      "explanation": "La laine de verre est un isolant thermique : elle conduit très mal la chaleur et emprisonne de l'air immobile, ce qui freine aussi la convection. Elle ralentit donc les échanges dans les deux sens ✓ — la chaleur qui voudrait sortir en hiver comme celle qui voudrait entrer en été. Elle ne produit rien : un isolant n'est pas une source. Et son rôle n'est ni mécanique ni électrique, même si elle isole aussi du bruit.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un tube à essais, un morceau de glace est maintenu au fond par une rondelle métallique. On chauffe l'eau près de la surface : elle finit par bouillir alors que la glace du fond n'a pas fondu. Comment l'expliquer ?",
+      "options": [
+        { "id": "a", "text": "L'eau conduit très mal la chaleur, et la convection n'emporte les parties chaudes que vers le haut" },
+        { "id": "b", "text": "La glace est protégée par la rondelle métallique, qui est un isolant" },
+        { "id": "c", "text": "La chaleur ne se propage jamais dans un liquide" },
+        { "id": "d", "text": "L'eau bouillante est plus froide au fond qu'en surface parce qu'elle y est comprimée" }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux mécanismes auraient pu chauffer le fond, et aucun ne le fait ici. La conduction, d'abord : l'eau la transmet très mal, bien plus mal qu'un métal. La convection ensuite : elle fonctionne parce que l'eau chaude, plus légère, monte — or ici on chauffe déjà en haut, donc rien ne descend ✓. C'est la démonstration expérimentale que la chaleur ne « tombe » pas. Le métal de la rondelle est au contraire un bon conducteur, il n'isole rien. Et la pression n'a aucun effet de refroidissement au fond d'un tube à essais.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une pompe solaire est constituée de cellules photovoltaïques, d'une batterie et d'un moteur électrique. Quelle est la chaîne énergétique correcte ?",
+      "options": [
+        { "id": "a", "text": "Rayonnement solaire → énergie électrique → énergie chimique stockée → énergie électrique → énergie mécanique" },
+        { "id": "b", "text": "Énergie chimique → rayonnement solaire → énergie mécanique" },
+        { "id": "c", "text": "Rayonnement solaire → énergie mécanique → énergie électrique" },
+        { "id": "d", "text": "Énergie électrique → rayonnement solaire → énergie chimique" }
+      ],
+      "correctOption": "a",
+      "explanation": "On suit l'énergie appareil par appareil. Le Soleil envoie un rayonnement ; les cellules photovoltaïques le convertissent en énergie électrique ; la batterie la stocke sous forme chimique ; elle la restitue en électricité quand il le faut ; et le moteur la convertit enfin en mouvement pour la pompe ✓. C'est ce détour par la batterie qui permet à la pompe de fonctionner quand le Soleil est couché : toute chaîne qui passe directement du rayonnement au mouvement oublie le stockage, et laisse la pompe à l'arrêt dès la nuit tombée.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Sous quelle forme la batterie de cette pompe stocke-t-elle l'énergie qu'elle reçoit ?",
+      "options": [
+        { "id": "a", "text": "Sous forme chimique" },
+        { "id": "b", "text": "Sous forme électrique" },
+        { "id": "c", "text": "Sous forme thermique" },
+        { "id": "d", "text": "Sous forme mécanique" }
+      ],
+      "correctOption": "a",
+      "explanation": "Une batterie ne garde pas de l'électricité en réserve : elle utilise l'énergie électrique reçue pour provoquer des transformations chimiques en son sein, et c'est sous cette forme chimique que l'énergie attend ✓ — les réactions inverses la restitueront sous forme électrique. C'est exactement le fonctionnement d'une pile, dans l'autre sens. La forme thermique correspondrait à un échauffement, qui n'est ici qu'une perte, et la forme mécanique à un mouvement, qui n'apparaît qu'au bout de la chaîne, dans la pompe.",
+      "difficulty": 3
+    }
+  ]
+}
