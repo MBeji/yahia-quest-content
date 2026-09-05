@@ -92,6 +92,7 @@ ceiling tier (the dormant premium gate).
 | Add **explainer videos** to a chapter (« En vidéo », vidéo de correction)                      | `content-videos`                                            |
 | **Audit / fix** existing content (wrong keys, weak distractors, …)                             | `content-audit`                                             |
 | Understand schema / quality bar / rewards / notation                                           | `content-engine` `references/*`                             |
+| **Take up a CNP manuel élève** (exercises, figures, encadrés) — what maps to what, what is traced | `content-engine` `references/manuel-valorisation.md`        |
 
 If a request is "make harder exercises for <school subject> <grade>", prefer the `prof-*` skill; if
 it's "add a chapter / write the lesson / fix content", use the base/program skill. When in doubt, the

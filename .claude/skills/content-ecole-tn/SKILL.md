@@ -216,6 +216,9 @@ La **notation reste standard** (chiffres 0–9, etc. — règle ci-dessus) ; cet
 Hybrid, but official-source-led: the curriculum scope comes from the official program; model
 knowledge fills in worked examples and explanations; web search verifies facts and exam-style
 conventions. Exam-year grades (6ème/9ème/Bac) should reflect real exam (concours/annales) phrasing.
+**Taking up the pupil's own manuel** (exercises, figures, encadrés) has its own normative doctrine —
+closed taxonomy, exercise→format mapping, the three regimes, R-1→R-12 and the `manuel` traceability
+field: `content-engine/references/manuel-valorisation.md` (étude 21).
 
 ## Then validate and stop
 

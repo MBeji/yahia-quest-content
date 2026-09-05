@@ -173,15 +173,14 @@ flowchart TD
 | 3    | ~~é30 lots 0bis → 4~~ — **livrée** (§9)       | ~~A17~~ — **livré** (arena#958)   | C9 — محور 3 arabe 1ère sec          |
 | 4    | é08 volet enseignant _(⛔ D-5)_               | é25 L7 — drill de portabilité     | C3 — génération arabe 1ère sec      |
 | 5    | é20 lots 4 · 8 · 6                            | é24 lot 5 — purge historique      | C10 — petites classes (🚧)          |
-| 6    | é26 lot 2 — index et statuts gelés            | F7 — deux majeures bloquées amont | C2 — vidéos maths 9ᵉ (é23 lot 5)    |
-| 7    | —                                             | F6 — geste opérateur de triage    | C7/C8 — doctrines figures & manuels |
+| 6    | ~~é26 lot 2~~ — **livrée** (arena#990, privé#354) | F7 — deux majeures bloquées amont | C2 — vidéos maths 9ᵉ (é23 lot 5)    |
+| 7    | —                                             | F6 — geste opérateur de triage    | C7 — doctrine figures (C8 **livrée**) |
 
-⚠️ **Ce que cet ordre ne dit pas, et qu'il faut savoir** : é26 est au rang 6 alors qu'elle est la
-doctrine que **tous** les autres documents citent. Elle n'a plus qu'un lot :
-`docs/doctrine-verticale.md` **existe depuis le 2026-09-03** (arena#961 + privé#333), après six
-semaines d'exécution d'une règle que personne n'avait écrite normativement. Ce qui reste au lot 2
-est l'ordre d'exécution de l'index, les en-têtes des études gelées et la colonne « M » — pas la
-règle elle-même, qui est désormais opposable.
+⚠️ **Ce que cet ordre ne dit pas, et qu'il faut savoir** : é26 tenait le rang 6 alors qu'elle est
+la doctrine que **tous** les autres documents citent — elle est **close depuis le 2026-09-05**
+(lot 1 : arena#961 + privé#333 ; lot 2 : arena#990 + privé#354), après six semaines d'exécution
+d'une règle que personne n'avait écrite normativement. Le rang 6 se libère donc, et la doctrine
+des manuels (C8, é21 lot 1) a quitté le rang 7 le même jour — il n'y reste que C7, les figures.
 
 ---
 
@@ -240,18 +239,22 @@ règle elle-même, qui est désormais opposable.
       le montre au parent), le digest hebdo enrichi opt-in (le push dominical est toujours le
       générique), et le comparatif de parcours seuillé (jamais construit).
 
-- [ ] **P6. é26 lots 1 et 2 — écrire la doctrine qu'on applique.** ✅ **Lot 1 livré le
-      2026-09-03** (arena#961 : `docs/doctrine-verticale.md`, ancrage AGENTS.md ; privé#333 :
-      fiche D-2 du `_TEMPLATE.md` et règle de création de l'index). **Reste le lot 2.**
-      **Lot 1** : `docs/doctrine-verticale.md` (P-1…7, grille M0-M4, Definition of Excellence,
-      règle d'arbitrage, doctrine IA-native) + ancrage canonique dans AGENTS.md + fiche D-2 dans
-      `_TEMPLATE.md` + règle de création d'étude dans `FableEtudes/README.md`.
-      **Lot 2** : « Ordre d'exécution recommandé » de l'index réécrit (il porte encore un
-      avertissement « périmé depuis le 2026-07-20, conservé jusqu'à sa réécriture par le lot 2 »),
-      statuts gelés actés dans les en-têtes de 06/10/12, colonne « M » dans STATUS.md §3.
-      ⚠️ Le 🔴 « `docs/doctrine-verticale.md` n'existe pas » qui tenait ici était vrai le
-      2026-08-24, faux depuis le 2026-09-03 : le fichier fait 257 lignes sur `main`. Il a survécu
-      à sa propre réfutation dans le même bullet — constaté le 2026-09-04 en LISANT le fichier.
+- [x] **P6. é26 lots 1 et 2 — écrire la doctrine qu'on applique. ✅ LIVRÉE.**
+      **Lot 1, le 2026-09-03** (arena#961 : `docs/doctrine-verticale.md`, P-1…7, grille M0-M4,
+      Definition of Excellence, règle d'arbitrage, doctrine IA-native, + ancrage canonique dans
+      AGENTS.md ; privé#333 : fiche D-2 du `_TEMPLATE.md` et règle de création de l'index).
+      **Lot 2, le 2026-09-05** (**arena#990** : la colonne « M » entre dans STATUS.md §3 — 30
+      lignes, **1 M0 · 4 M1 · 23 M2 · 2 M3** — avec sa légende et le renvoi doctrine ;
+      **privé#354** : l'« Ordre d'exécution » de l'index réécrit par verticale, qui APPLIQUE
+      P-1/P-7/§6 au lieu de les citer, et l'avertissement « périmé depuis le 2026-07-20 »
+      supprimé. Les en-têtes gelés de 06/10/12 étaient déjà en place).
+      ⚠️ **Deux leçons de ce lot, plus durables que lui.** Le 🔴 « `docs/doctrine-verticale.md`
+      n'existe pas » qui tenait ici était vrai le 2026-08-24 et faux depuis le 2026-09-03 : il a
+      survécu à sa propre réfutation **dans le même bullet**. Et la grille M0-M4 elle-même est
+      partie d'une affirmation fausse de STATUS.md (« aucune question n'utilise `short_answer` »
+      — il y en a 119) : **un audit lancé depuis le moteur seul se trompe sur toute capacité dont
+      la charge utile vit dans le corpus** — 3 constats moteur sur 3 justes, 3 constats corpus sur
+      3 faux. C'est écrit dans la légende de la colonne « M ».
 
 - [x] **P7. é31 — l'envie de revenir (engagement & rétention) : LIVRÉE EN PRODUCTION
       le 2026-09-03** (arena#949, squashée sur `main` en `7bdbccd`).
@@ -604,12 +607,18 @@ règle elle-même, qui est désormais opposable.
       ~40 figures se scinde et ne s'échantillonne jamais.)_ **780 questions illustrées sur
       18 708.**
 
-- [ ] **C10. C8 — é21 lot 1 : doctrine manuels**, puis pilote `math-1ere-sec` (exercices tracés
-      `manuel_ref`, rapport de couverture). _(A4 rendu : verbatim court non créatif toléré,
-      provenance **non** affichée à l'élève, lot 3 abandonné.)_
-      ⚠️ **Son point de départ a changé, pas sa ligne** : F13 (§8) a livré la **déclaration** des
-      60 volumes et la **surface de lien** — pas les exercices tracés ni le rapport. À mesurer
-      avant d'écrire.
+- [ ] **C10. C8 — é21 : pilote `math-1ere-sec`** (exercices tracés `manuel_ref`, rapport de
+      couverture). _(A4 rendu : verbatim court non créatif toléré, provenance **non** affichée à
+      l'élève, lot 3 abandonné.)_
+      ✅ **Lots 1, 2 et 4 livrés le 2026-09-05** — la **doctrine**
+      (`content-engine/references/manuel-valorisation.md` : taxonomie fermée, mapping
+      exercice→format, trois régimes, R-1→R-12) au privé, la **traçabilité** (`manuel` sur
+      l'exercice, colonne `exercises.manuel_ref`, manifeste à trois profondeurs) et le **rapport
+      de couverture** advisory au moteur (**arena#992**). Reste **le lot 5** : rien du corpus ne
+      déclare encore `manuel`, donc le rapport rend `[]` — c'est le pilote qui lui donnera ses
+      premières données, et à la doctrine sa première mise à l'épreuve.
+      ⚠️ **Son point de départ avait déjà changé** : F13 (§8) avait livré la **déclaration** des
+      60 volumes et la **surface de lien** — pas les exercices tracés. C'est fait maintenant.
 
 - [ ] **C11. Appliquer en production ce qui est généré.** Ligne **récurrente**, pas un chantier :
       la garde `content-drift` mesure l'écart, un dispatch d'`apply-content.yml` le referme.
@@ -812,6 +821,7 @@ en forme « étude/lot », et sept jours s'étaient joués **au privé**. Un gat
 
 | Date           | Événement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **2026-09-05** | **é21 lots 1, 2 et 4 livrés — le gisement n° 1 cesse d'être un stock de PDF.** 267 manuels élève du CNP sur le disque, **zéro** question rattachée à un exercice de manuel : pas une difficulté technique (le moteur couvre déjà presque toutes les formes imprimées) mais l'absence de toute doctrine — chaque campagne le redécidait, donc aucune ne le faisait. Livré : la **doctrine** (privé#356 — taxonomie fermée des 10 contenus, mapping des 11 formes d'exercice par forme de la RÉPONSE, trois régimes dont un non traçable, R-1→R-12, trois exemples travaillés), la **traçabilité** et le **rapport de couverture** advisory (arena#992). **Deux constats de méthode.** (1) Le lot nommait un fichier de renvoi, `PROMPT-TRANSCRIPTION-CNP.md`, qui **n'existe plus depuis le 2026-07-17** — **huitième statut périmé en cinq jours**, et le premier trouvé dans une ÉTUDE VALIDÉE plutôt que dans un index. (2) Le lot listait quatre renvois ; il en fallait un **cinquième**, l'index « Reference files » de `content-engine/SKILL.md`, sans lequel une référence n'est découvrable par aucune session — un plan de lot ne connaît pas les chemins de découverte, seul l'exécuteur les voit. **Dette assumée et écrite partout** : rien du corpus ne déclare encore `manuel`, donc le rapport rend `[]`. C'est le **lot 5** (pilote `math-1ere-sec`) qui lui donnera ses données — et à la doctrine sa première épreuve du réel. **é26 est close le même jour** (lot 2 : arena#990 + privé#354), et sa citation manquante dans P6 faisait rougir `roadmap-sync` : gate re-vert. |
 | **2026-09-04** | **Le tagging sort de `math` 9ᵉ — et le prérequis n'était pas celui que la ligne annonçait.** C1(b) démarrée sur `math-6eme` (classe de concours) : **bloc numération livré**, ch. 01→05, **287 distracteurs sur 525 (55 %)**, registre **160 → 185 entrées**. Le champ `misconceptionTag` passe de **1 matière sur 93 à 2** — 3 % du corpus, toujours. **Ce que la roadmap sous-estimait** : « sortir de math » n'est pas une campagne de tagging. Les 160 entrées du registre étaient **toutes** du vocabulaire de 9ᵉ (Thalès, Pythagore, radicaux, puissances) ; aucune erreur de 6ᵉ n'y avait de nom. Chaque bloc demande d'**écrire d'abord le vocabulaire des erreurs**, puis de tagger. Ce qui rendait `math-6eme` exécutable et pas une autre matière, c'est que son graphe de **compétences** était déjà complet (805/805) — **aucune autre matière que `math` n'en a**, ce qui fait du tagging hors famille `math` un chantier à trois étages, pas à un. **Constaté en comptant le corpus**, pas en lisant une ligne : `content/misconceptions.json` groupé par namespace, et `competencies` compté par matière. Couverture par chapitre : 64 / 33 / 70 / 35 / 70 % — les deux chapitres bas sont les deux chapitres d'opérations, dont les distracteurs sont majoritairement des **nombres de remplissage** ; leur silence est la règle de é30 lot 0bis qui fonctionne, pas une dette. |
 | **2026-09-04** | **Quatre affirmations « la doctrine n'est pas écrite » ont survécu à sa publication.** é26 lot 1 est livré depuis le 2026-09-03 des DEUX côtés (arena#961 : `docs/doctrine-verticale.md`, 257 lignes, + ancrage AGENTS.md ; privé#333 : fiche D-2 du `_TEMPLATE.md` et règle de création de cet index) — et le bullet P6 le disait déjà en en-tête. Mais son propre 🔴 final, le ⚠️ du §3, le rang 6 des files et deux lignes de l'index annonçaient toujours que le fichier **n'existe pas** : un même bullet affirmait la livraison ET son absence. Une session qui prend « la première ligne non cochée » réécrivait une doctrine déjà écrite. **Cinquième statut périmé en trois jours**, et le motif se précise : `roadmap-sync` vérifie qu'une PR est **citée**, jamais que la PROSE autour d'elle est vraie — il était vert pendant que quatre lignes mentaient. Constaté en lisant `git show origin/main:docs/doctrine-verticale.md`, pas la ligne qui en parle.                                                                                                                                                                                                                                                                                                                     |
 | **2026-09-03** | **A17 est livré (arena#958) — et il était à moitié fait depuis dix jours sans que ce fichier le sache.** L'arbitrage du 2026-08-24 demandait DEUX choses ; la roadmap les comptait pour une, d'où une ligne « ouverte » alors que le **canari npm 10** tournait déjà dans `verify` depuis ce jour-là. Ce qui manquait vraiment, c'est la **garde de diff** : le canari juge si un lockfile s'installe ailleurs, jamais si une PR fait ce que son titre annonce — il aurait attrapé #716 **par accident**. Quatre règles, éprouvées dans les deux sens sur de vrais commits (#716 rejoué → rouge par trois règles indépendantes ; bump indirecte honnête, majeure annoncée, correctif `fast-uri` → verts). **Et une correction de plus, par simple exécution** : **A15 est fait** — `economy:check` montre la fenêtre G-1 par profil (assidu J+6, moyen J+31, occasionnel non jugé) ; ce qui reste rouge est **G-4**, c'est-à-dire A16, qui est humain. ⚠️ **Quatrième statut périmé trouvé en deux jours** (les deux lignes du rang 1 le 09-02, puis A15 et A17 le 09-03) : le motif n'est plus l'exception, c'est le régime de la file FONDATIONS — un lot y est livré, personne ne revient cocher. **Un statut se constate en LANÇANT la commande, pas en lisant la ligne qui en parle.** |
