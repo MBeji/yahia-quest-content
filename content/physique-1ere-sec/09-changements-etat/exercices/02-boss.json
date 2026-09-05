@@ -1,0 +1,86 @@
+{
+  "title": "⭐⭐⭐ Boss : Ce que le thermomètre peut lire, et ce que l'eau fait dehors",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "144-145",
+    "items": ["vérifier 2", "vérifier 3", "situations 1", "synthèse 1"]
+  },
+  "questions": [
+    {
+      "prompt": "On plonge un thermomètre dans un mélange de neige en train de fondre, dans une pièce dont l'air est à 25 °C. Qu'indique-t-il ?",
+      "options": [
+        { "id": "a", "text": "0 °C, tant qu'il reste de la neige à fondre" },
+        { "id": "b", "text": "25 °C, la température de la pièce" },
+        { "id": "c", "text": "Une valeur entre 0 °C et 25 °C, selon la quantité de neige" },
+        { "id": "d", "text": "Une valeur qui monte régulièrement de 0 °C vers 25 °C" }
+      ],
+      "correctOption": "a",
+      "explanation": "Pendant tout un changement d'état d'un corps pur, la température reste bloquée à la température de ce changement : tant que de la neige fond, le mélange reste à 0 °C ✓, et toute la chaleur reçue de la pièce sert à faire fondre, pas à réchauffer. Le thermomètre mesure ce dans quoi il plonge, pas l'air autour. Ce n'est qu'une fois la dernière neige fondue que la température se remet à monter — mais alors le changement d'état est terminé.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un thermomètre médical est gradué de 35 °C à 42 °C. Peut-on l'utiliser pour mesurer la température de l'eau bouillante ?",
+      "options": [
+        { "id": "a", "text": "Non : 100 °C est en dehors de la plage qu'il sait mesurer" },
+        { "id": "b", "text": "Oui : tout thermomètre mesure toute température" },
+        { "id": "c", "text": "Oui, mais il faut attendre plus longtemps" },
+        { "id": "d", "text": "Non, parce qu'il ne contient pas de mercure" }
+      ],
+      "correctOption": "a",
+      "explanation": "Un thermomètre n'est utilisable que dans l'intervalle pour lequel il est gradué. Un thermomètre médical s'arrête à 42 °C : devant de l'eau à 100 °C, il n'a plus de graduation à offrir — et il risque d'éclater ✓. C'est la même raison qui l'empêche de mesurer de l'eau glacée, en dessous de 35 °C cette fois. Le temps d'attente n'y change rien, et le liquide utilisé n'est pas la question : c'est la plage de graduation qui décide.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'alcool se solidifie à −117 °C et bout à 78 °C. Dans quel état se trouve-t-il à −50 °C ?",
+      "options": [
+        { "id": "a", "text": "Liquide" },
+        { "id": "b", "text": "Solide" },
+        { "id": "c", "text": "Gazeux" },
+        { "id": "d", "text": "Solide et liquide en même temps" }
+      ],
+      "correctOption": "a",
+      "explanation": "Les deux températures de changement d'état découpent un axe en trois zones : solide en dessous de −117 °C, liquide entre −117 °C et 78 °C, gazeux au-dessus de 78 °C. La valeur −50 °C tombe dans la zone du milieu : l'alcool est liquide ✓. Le piège est de lire « −50 » comme un nombre « très froid, donc solide » sans le comparer à la bonne borne — or −50 est bien au-dessus de −117. Et la coexistence de deux états ne se produit qu'exactement à la température de changement d'état, pas entre les deux.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Amel étend du linge mouillé dehors par grand froid : il durcit. Le lendemain, il redevient mouillé et souple. Puis le vent se lève et le linge finit par sécher. Quels changements d'état se sont succédé ?",
+      "options": [
+        { "id": "a", "text": "Solidification, puis fusion, puis vaporisation par évaporation" },
+        { "id": "b", "text": "Solidification, puis sublimation, puis condensation" },
+        { "id": "c", "text": "Condensation, puis fusion, puis ébullition" },
+        { "id": "d", "text": "Fusion, puis solidification, puis évaporation" }
+      ],
+      "correctOption": "a",
+      "explanation": "Trois étapes, trois passages. L'eau du linge gèle : liquide vers solide, c'est la solidification. Elle dégèle au redoux : solide vers liquide, c'est la fusion. Puis elle part dans l'air : liquide vers gaz, c'est une vaporisation, et comme elle se fait à la surface, à température ambiante et sans bulles, c'est une évaporation ✓. Ce n'est pas une sublimation, qui irait directement du solide au gaz sans repasser par le liquide — or le linge est bien redevenu mouillé. Et ce n'est pas une ébullition : le linge n'a jamais été porté à 100 °C.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans quels états physiques se trouvent respectivement la buée sur une vitre, un grêlon et un nuage ?",
+      "options": [
+        { "id": "a", "text": "Liquide, solide, liquide" },
+        { "id": "b", "text": "Gazeux, solide, gazeux" },
+        { "id": "c", "text": "Liquide, solide, gazeux" },
+        { "id": "d", "text": "Gazeux, liquide, liquide" }
+      ],
+      "correctOption": "a",
+      "explanation": "La buée est faite de fines gouttelettes déposées sur la vitre : c'est de l'eau liquide, née de la vapeur d'eau de l'air qui s'est liquéfiée au contact du froid. Un grêlon est de la glace : solide. Un nuage, malgré son apparence, est lui aussi un ensemble de gouttelettes d'eau liquide en suspension ✓ — s'il était gazeux, on ne le verrait pas, exactement comme on ne voit pas la vapeur d'eau de l'air. C'est ce dernier point qui trompe : ce qui est visible dans l'air n'est jamais un gaz.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Peut-on repérer la température d'ébullition de l'eau pure avec un thermomètre à alcool, sachant que l'alcool bout à 78 °C ?",
+      "options": [
+        { "id": "a", "text": "Non : l'alcool bout avant, à 78 °C, bien avant les 100 °C de l'eau" },
+        { "id": "b", "text": "Oui : l'alcool monte simplement plus haut dans le tube" },
+        { "id": "c", "text": "Oui, à condition d'attendre que l'eau bouille depuis longtemps" },
+        { "id": "d", "text": "Non : l'alcool se solidifierait à cette température" }
+      ],
+      "correctOption": "a",
+      "explanation": "Un thermomètre à liquide ne fonctionne que tant que son liquide reste liquide. À 78 °C, l'alcool bout : au-delà, il n'y a plus de colonne à lire, et les 100 °C de l'eau sont hors de portée ✓. En revanche, ce même thermomètre est excellent pour les très basses températures, où le mercure, lui, se solidifierait à −39 °C. C'est la solidification de l'alcool qui se produirait à −117 °C, tout en bas de l'échelle, pas dans l'eau bouillante.",
+      "difficulty": 3
+    }
+  ]
+}

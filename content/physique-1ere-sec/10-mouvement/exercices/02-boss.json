@@ -1,0 +1,86 @@
+{
+  "title": "⭐⭐⭐ Boss : Le même mouvement, vu d'ailleurs",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "160-162",
+    "items": ["vérifier 1", "vérifier 2", "situations 2", "synthèse 1"]
+  },
+  "questions": [
+    {
+      "prompt": "Une personne se tient debout, sans bouger les pieds, sur un tapis roulant en marche. Est-elle en mouvement par rapport au sol, et par rapport au tapis ?",
+      "options": [
+        { "id": "a", "text": "En mouvement par rapport au sol, au repos par rapport au tapis" },
+        { "id": "b", "text": "Au repos par rapport aux deux" },
+        { "id": "c", "text": "En mouvement par rapport aux deux" },
+        { "id": "d", "text": "Au repos par rapport au sol, en mouvement par rapport au tapis" }
+      ],
+      "correctOption": "a",
+      "explanation": "Être en mouvement ou au repos n'a de sens que par rapport à quelque chose. La distance entre la personne et le tapis ne change pas : par rapport au tapis, elle est au repos. Mais elle s'éloigne du point de départ sur le sol : par rapport au sol, elle est en mouvement ✓. Les deux réponses sont vraies en même temps, et ce n'est pas une contradiction : c'est exactement ce que veut dire « le mouvement est relatif ».",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un mobile décrit un mouvement rectiligne dans un repère donné. Ce mouvement est-il rectiligne dans tout autre repère ?",
+      "options": [
+        { "id": "a", "text": "Non : la trajectoire dépend du repère choisi" },
+        { "id": "b", "text": "Oui : une droite reste une droite, quel que soit l'observateur" },
+        { "id": "c", "text": "Oui, sauf si le mobile accélère" },
+        { "id": "d", "text": "Non, mais seulement si le second repère est immobile" }
+      ],
+      "correctOption": "a",
+      "explanation": "La trajectoire est l'ensemble des positions occupées par le mobile — et une position se définit toujours par rapport à un repère. Changer de repère change donc la trajectoire, et un mouvement rectiligne dans l'un peut être curviligne dans l'autre ✓. L'exemple le plus parlant est la valve d'une roue de vélo : circulaire vue depuis l'axe, elle décrit une courbe tout autre vue du sol. Ce n'est pas une question d'accélération, et c'est justement quand le second repère est en mouvement que la trajectoire change le plus.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un cycliste roule en ligne droite. Quelle est la trajectoire du centre du moyeu de sa roue avant, par rapport au sol ?",
+      "options": [
+        { "id": "a", "text": "Une droite parallèle au sol" },
+        { "id": "b", "text": "Un cercle" },
+        { "id": "c", "text": "Une courbe faite d'arches successives" },
+        { "id": "d", "text": "Un point : le moyeu ne bouge pas" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le centre du moyeu reste toujours à la même hauteur au-dessus du sol et avance avec le vélo : par rapport au sol, il décrit une droite ✓. Le cercle est la trajectoire d'un point du pneu vu depuis le moyeu, et les arches successives sont ce que décrit ce même point du pneu vu du sol — trois trajectoires différentes pour une seule roue, selon le point et selon le repère. Et le moyeu n'est immobile que dans le repère du vélo, pas dans celui du sol.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur cette même roue, quelle est la trajectoire de l'extrémité de la valve de la chambre à air, par rapport au moyeu ?",
+      "options": [
+        { "id": "a", "text": "Un cercle centré sur le moyeu" },
+        { "id": "b", "text": "Une droite" },
+        { "id": "c", "text": "Une courbe faite d'arches successives" },
+        { "id": "d", "text": "Un point : la valve est fixée à la roue" }
+      ],
+      "correctOption": "a",
+      "explanation": "Dans le repère du moyeu, la roue ne fait que tourner sur place : la valve, fixée à distance constante de l'axe, décrit un cercle centré sur ce moyeu ✓. C'est la même valve qui, vue du sol, décrira une suite d'arches, parce que le mouvement circulaire s'y ajoute à l'avancée du vélo. Et la valve n'est immobile que dans le repère de la roue elle-même : par rapport au moyeu, elle tourne.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Depuis la Terre, on voit le Soleil se lever à l'est et se coucher à l'ouest. Dans quel sens la Terre tourne-t-elle sur elle-même ?",
+      "options": [
+        { "id": "a", "text": "D'ouest en est : le mouvement apparent du Soleil est l'inverse du sien" },
+        { "id": "b", "text": "D'est en ouest, dans le même sens que le Soleil apparent" },
+        { "id": "c", "text": "Elle ne tourne pas : c'est le Soleil qui se déplace réellement" },
+        { "id": "d", "text": "Cela dépend de l'endroit d'où on regarde sur Terre" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le déplacement apparent d'un astre dans le ciel est l'image inversée du mouvement de l'observateur : si le Soleil semble aller d'est en ouest, c'est que le sol sous nos pieds part en sens contraire, d'ouest en est ✓. C'est le même effet que dans un train qui démarre — les quais semblent reculer alors que ce sont eux qui sont immobiles. Et le sens de rotation de la Terre est le même pour tout le monde : ce qui change d'un lieu à l'autre, c'est l'heure du lever, pas le sens.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Deux trains roulent côte à côte, dans le même sens et exactement à la même vitesse. Un voyageur de l'un observe l'autre train. Que voit-il ?",
+      "options": [
+        { "id": "a", "text": "Un train immobile : par rapport à lui, l'autre train est au repos" },
+        { "id": "b", "text": "Un train qui avance à sa propre vitesse" },
+        { "id": "c", "text": "Un train qui recule à sa propre vitesse" },
+        { "id": "d", "text": "Un train qui avance à la somme des deux vitesses" }
+      ],
+      "correctOption": "a",
+      "explanation": "La distance entre les deux trains ne change pas : dans le repère du voyageur, l'autre train est donc au repos ✓, alors que les deux filent à toute allure par rapport au sol. C'est ce qui rend l'illusion si troublante quand l'un des deux ralentit : on croit reculer. Répondre par une vitesse, la sienne ou la somme, c'est raisonner dans le repère du sol au lieu de celui du voyageur — or la question dit bien qui regarde.",
+      "difficulty": 3
+    }
+  ]
+}

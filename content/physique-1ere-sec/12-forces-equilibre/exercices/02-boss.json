@@ -1,0 +1,86 @@
+{
+  "title": "⭐⭐⭐ Boss : L'équilibre, le ressort et la tour qui penche",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "192-193",
+    "items": ["vérifier 2", "situations 1", "situations 2", "situations 3"]
+  },
+  "questions": [
+    {
+      "prompt": "Un solide est soumis à deux forces directement opposées. Est-il forcément immobile ?",
+      "options": [
+        { "id": "a", "text": "Non : il peut aussi être en mouvement rectiligne uniforme" },
+        { "id": "b", "text": "Oui : deux forces opposées immobilisent toujours un corps" },
+        { "id": "c", "text": "Non : il peut accélérer si les forces sont grandes" },
+        { "id": "d", "text": "Oui, à condition que les deux forces soient verticales" }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux forces directement opposées se compensent : elles ne changent donc pas l'état de mouvement du corps. Si le corps était immobile, il le reste ; s'il était en train d'avancer en ligne droite à vitesse constante, il continue exactement pareil ✓. Un parachutiste à vitesse limite en est l'exemple parfait : poids et frottement de l'air se compensent, et il descend sans ralentir ni accélérer. C'est bien l'immobilité qu'on croit obligatoire, alors que le principe d'inertie met les deux situations sur le même plan. L'intensité des forces n'y change rien tant qu'elles se compensent, et leur direction non plus.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un ressort linéaire est comprimé de 5 cm par une force de 2 N. Quelle est sa constante de raideur ?",
+      "options": [
+        { "id": "a", "text": "40 N·m⁻¹" },
+        { "id": "b", "text": "10 N·m⁻¹" },
+        { "id": "c", "text": "40 m·N⁻¹" },
+        { "id": "d", "text": "0,4 N·m⁻¹" }
+      ],
+      "correctOption": "a",
+      "explanation": "La loi de Hooke s'écrit T = k × Δl, donc k = T / Δl. Il faut d'abord convertir : 5 cm = 0,05 m. Alors k = 2 / 0,05 = 40, et l'unité d'une raideur est le newton par mètre : 40 N·m⁻¹ ✓. La réponse 40 m·N⁻¹ a le bon nombre mais l'unité renversée — c'est le piège le plus fin de cet exercice, car le calcul est juste et le résultat pourtant faux. Et 10 N·m⁻¹ vient d'avoir multiplié 2 par 5 au lieu de diviser par 0,05.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La tour de Pise a une masse de 14 500 tonnes. En prenant g = 10 N·kg⁻¹, quelle est l'intensité de son poids ?",
+      "options": [
+        { "id": "a", "text": "1,45 × 10⁸ N" },
+        { "id": "b", "text": "1,45 × 10⁵ N" },
+        { "id": "c", "text": "1,45 × 10⁴ N" },
+        { "id": "d", "text": "1 450 N" }
+      ],
+      "correctOption": "a",
+      "explanation": "La formule P = m × g exige la masse en kilogrammes : 14 500 tonnes valent 14 500 000 kg, soit 1,45 × 10⁷ kg. Le poids vaut alors 1,45 × 10⁷ × 10 = 1,45 × 10⁸ N ✓. Toutes les autres réponses viennent de la même erreur, à des degrés divers : avoir gardé les tonnes, ou n'avoir converti qu'en partie. C'est le rappel permanent de ce chapitre — une formule ne fonctionne qu'en unités du système international.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La tour, immobile, n'est soumise qu'à son poids et à la réaction du sol. Que vaut cette réaction ?",
+      "options": [
+        { "id": "a", "text": "1,45 × 10⁸ N, dirigée vers le haut" },
+        { "id": "b", "text": "1,45 × 10⁸ N, dirigée vers le bas" },
+        { "id": "c", "text": "Zéro, puisque la tour ne bouge pas" },
+        { "id": "d", "text": "La moitié du poids, l'autre moitié étant supportée par les fondations" }
+      ],
+      "correctOption": "a",
+      "explanation": "Un corps immobile soumis à deux forces seulement est en équilibre : ces deux forces sont directement opposées, donc de même intensité et de sens contraires. La réaction du sol vaut exactement le poids, 1,45 × 10⁸ N, mais dirigée vers le haut ✓. La diriger vers le bas ajouterait deux forces au lieu de les compenser, et la tour s'enfoncerait. Et une force nulle n'a rien à voir avec l'immobilité : c'est justement parce que le sol pousse autant que le poids tire que la tour ne bouge pas.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On fabrique un dynamomètre avec un ressort de raideur k = 20 N·m⁻¹, gradué de newton en newton. Quelle distance sépare deux divisions consécutives ?",
+      "options": [
+        { "id": "a", "text": "5 cm" },
+        { "id": "b", "text": "20 cm" },
+        { "id": "c", "text": "2 cm" },
+        { "id": "d", "text": "0,5 cm" }
+      ],
+      "correctOption": "a",
+      "explanation": "Passer d'une division à la suivante, c'est ajouter 1 N. La loi de Hooke donne l'allongement correspondant : Δl = T / k = 1 / 20 = 0,05 m, soit 5 cm ✓. Répondre 20 cm, c'est avoir multiplié par la raideur au lieu de diviser. Et l'on voit du même coup pourquoi un ressort raide fait un mauvais dynamomètre de précision : plus k est grand, plus les divisions se resserrent.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un ressort linéaire est étiré au-delà de sa limite d'élasticité. Que devient la loi de Hooke ?",
+      "options": [
+        { "id": "a", "text": "Elle ne s'applique plus : la tension n'est plus proportionnelle à l'allongement" },
+        { "id": "b", "text": "Elle s'applique toujours, avec la même constante k" },
+        { "id": "c", "text": "Elle s'applique toujours, mais avec une constante k deux fois plus grande" },
+        { "id": "d", "text": "Elle s'applique en remplaçant l'allongement par la longueur totale" }
+      ],
+      "correctOption": "a",
+      "explanation": "La loi de Hooke n'est valable que dans le domaine d'élasticité, celui où le ressort reprend sa forme initiale quand on le relâche. Au-delà de la limite d'élasticité, le ressort est déformé de façon permanente et la proportionnalité entre tension et allongement est perdue ✓ — un dynamomètre étiré trop fort est bon à jeter, pas à réétalonner. Il ne s'agit donc pas de changer la valeur de k, ni de changer la grandeur qu'on y met : la loi elle-même cesse de décrire le ressort.",
+      "difficulty": 3
+    }
+  ]
+}
