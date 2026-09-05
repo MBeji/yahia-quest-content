@@ -101,50 +101,126 @@ voie qui fait quoi (procédure : [`CONTRIBUER.md`](./CONTRIBUER.md) §4).
 | 29  | [Mode IA « à la clé de la famille » (BYOK) : la porte, le coffre et la Forge](EtudeRealisé/29-mode-ia-cle-utilisateur/ETUDE.md)                            | 🔑 **la porte qui allume é11 sans budget plateforme** : le parent branche SA clé d'API (Anthropic ou compatible OpenAI), choisit son modèle, pose un plafond mensuel et active le mode par enfant ; côté élève, l'étage IA s'allume — explications, chat, plan, bilans (é11) **plus la Forge**, le générateur de quiz personnalisés que cette étude livre. Le socle est **unique** (é26 D-8) : cette étude **reprend et remplace le lot 0 de é11** en y ajoutant le payeur (`family` ou `platform`), et le mode éteint reste l'état par défaut — l'app sans clé est exactement l'app d'aujourd'hui. Trois invariants portent tout : la clé est chiffrée hors de portée du client (`REVOKE ALL`, KEK dans l'env, aucun chemin de sortie), la coupure monétaire est **dans** le chemin de requête, et le contenu forgé est éphémère, non noté, jamais au catalogue | haute      | **livrée**             | — **5 lots livrés le 2026-08-22** (arena#807, puis #811/#812/#813). Q-1…Q-9 arbitrées le 2026-08-20, **cinq contre la recommandation** (mode IA ouvert à tout compte, cache mutualisé, adresse de fournisseur libre, plafonds larges, double vérification désactivable) — l'étude est réécrite avec les mitigations que chacune exige. **Elle remplace le lot 0 de é11** (Q-1, socle unique). ⚠️ **Reste entier, et ce n'est pas un lot** : le **pilote de mesure de deux semaines (Q-9)** — aucune clé de fournisseur n'a jamais été branchée. Voir ROADMAP §3 P2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | 30  | [Le tuteur déterministe : porter le moteur adaptatif au rang des références (ALEKS · Squirrel AI · CENTURY)](EtudeRealisé/30-tuteur-deterministe/ETUDE.md) | 🧠 le moteur sait déjà _si_ l'élève a raté et _à quel point_ une compétence est faible ; il ne sait ni **ce qu'il croit**, ni **ce qu'il peut en déduire**, ni **quoi servir ensuite**. Cette étude ferme les quatre organes manquants d'un ITS — croyance calibrée (BKT sans ajustement : le hasard est la géométrie de l'item, l'inattention le palier de difficulté), inférence montante dans le DAG de é07, bilan d'entrée adaptatif ≤ 20 items, et « prochaine meilleure action » — plus l'échafaudage en 3 paliers et la détection de charge cognitive. **Tout est déterministe : rien n'attend une clé d'IA** (é26 P-5a)                                                                                                                                                                                                                                  | très haute | **livrée**             | — **Périmètre retenu (0bis · 1 · 2 · 3 · 3bis · 4) livré le 2026-08-25** : lot 0bis au corpus (privé#241 — tagging des distracteurs 64 % → 81 %, les 156 questions restantes statuées par une règle écrite), puis les cinq lots moteur (**arena#856** socle de croyance BKT · #857 inférence + relevé de perf · #858 lectures & carte à 4 états · #859 le pack du tuteur apprend la maîtrise (amendement D) · #860 la décision + cause racine). **Q-4 tranché et exécuté le 2026-08-30** (arena#910/#911 — mort de `difficulty_adaptation` ; topo arena#912). **Restent différés, pas gelés** : lots 5·6·7·8·9 — Q-7 les rouvre quand la charpente aura rencontré un public. ⚠️ Deux corrections du **corps** de l'étude restent ouvertes en privé#247                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | 31  | [L'envie de revenir : engagement & rétention à hauteur de jeu vidéo](EtudeRealisé/31-envie-de-revenir/ETUDE.md)                                            | 🔁 le jeu est construit mais à moitié éteint : 9 badges sur 13 jamais décernables, missions identiques depuis le premier jour, ligue close en silence, classement jamais remis à zéro, aucune relance de l'élève qui décroche, et **zéro mesure de rétention** (é26 KPI-4 jamais publiée). L'étude rallume l'existant — **mesurer · rappeler · célébrer · rythmer** — en 8 lots sans nouvelle surface (P-7), sous lignes rouges « mineurs » explicites et annexe sourcée (Duolingo, SDT, méta-analyses, lignes directrices DSA 2025)                                                                                                                                                                                                                                                                                                                             | moyenne+   | **livrée**             | — **8 lots livrés le 2026-09-03** (arena#949, `main` en `7bdbccd`) ; é22 ✅ (la boucle — R-28 respectée) · é05 ✅ (ligues — ferme sa dette US-7) · é09 🚧 (**toute** valeur d'économie, §3.9) · é26 validée (KPI-4, P-7) ; 100 % déterministe, zéro clé IA ; **Q-1…Q-4 arbitrées le 2026-09-01** (opt-in inchangé · 4 événements dont Ramadan · classement hebdo par défaut · 30 pièces de bienvenue). **Deux défauts trouvés par le harnais pgTAP local avant la CI** : un `GRANT` recopié rouvrait la faille S1 (auto-crédit de pièces) et `award_duel_rewards`, second écrivain de `hero_class`, faisait échouer chaque récompense de duel. **Suite du 2026-09-03 (arena#956)** : la fenêtre de rachat de série est bornée à 2 jours (le stop-point du lot 3 est fermé ; le PRIX reste à A16 de é09), les **trois autres événements de Q-2 sont semés** (le stop-point du lot 8 est levé), et quatre badges qui rendaient le glyphe passe-partout depuis des mois sont corrigés — trouvés par le test écrit pour l'occasion. ✅ **CURR relevée le 2026-09-03** : 60 % sur la semaine du 17/08 (3 revenus sur 5) — STATUS §1bis ligne 2 passe au vert. La prédiction « n = 0 » était fausse ; le `n` réel va de 1 à 5, donc la métrique se LIT sans être encore un signal produit. **Et elle se relève désormais toute seule** (`engagement-report.yml`, chaque lundi, lecture seule) : la ligne était restée muette six semaines faute d'un geste humain, c'est le besoin qui est supprimé |
-| 32  | [Harness : optimiser, simplifier, améliorer (les deux dépôts vus comme un seul outillage)](32-harness-optimisation/ETUDE.md) | 🔧 le harness est déterministe et gardé, mais il **crie pour rien** (21 % des runs du privé sont des `failure` à zéro job), **se paie deux fois** (chaque branche neuve du moteur fait tourner ses 3 checks requis en double), **se répète** (auto-pr/automerge/guard-watch en deux versions, 1 579 l.) et **ne se vérifie qu'à moitié** (aucun gate harness au privé ; la borne « description ≤ 1 024 » de `harness:check` ne mesure que la première ligne — 2 skills hors spec invisibles). 4 lots : chaîne du privé sans fantômes ni réveils multiples · un seul `harness:check --corpus` dans Content CI (pin-check absorbé) · dispatch de secours du moteur après constat · `policy.json` par familles + `AGENTS.md` sous 200 l. | moyenne    | **en exécution** | audit chiffré du 2026-09-03 (800 + 795 runs, gates chronométrés) ; **Q-1…Q-4 arbitrées le 2026-09-04**, toutes sur la recommandation : PAT fine-grained pour le privé · relevé de facturation fourni · récit des workflows déplacé sur les fichiers touchés · `programmes-officiels/` sorti du skill en lot 5, après le lot 2. **Lots 1 (moteur), 2, 3a et 4 livrés le 2026-09-04** (arena#970 · #971 · #974 · #975 · privé#342) : garde dormant borné avant son checkout, recensement rejouable, un seul `harness:check` pour les deux dépôts avec `pin-check` supprimé, filet de dispatch qui constate avant de doubler, politique par familles et AGENTS.md de 250 à 214 lignes. **Cinq KPI de l'étude ont été rectifiés par les livraisons** — un audit qui n'est pas exécuté se croit exact. Restent la moitié privée de L1 et L3b, suspendus à la *valeur* du jeton, plus le lot 5 optionnel |
+| 32  | [Harness : optimiser, simplifier, améliorer (les deux dépôts vus comme un seul outillage)](32-harness-optimisation/ETUDE.md) | 🔧 le harness est déterministe et gardé, mais il **crie pour rien** (21 % des runs du privé sont des `failure` à zéro job), **se paie deux fois** (chaque branche neuve du moteur fait tourner ses 3 checks requis en double), **se répète** (auto-pr/automerge/guard-watch en deux versions, 1 579 l.) et **ne se vérifie qu'à moitié** (aucun gate harness au privé ; la borne « description ≤ 1 024 » de `harness:check` ne mesure que la première ligne — 2 skills hors spec invisibles). 4 lots : chaîne du privé sans fantômes ni réveils multiples · un seul `harness:check --corpus` dans Content CI (pin-check absorbé) · dispatch de secours du moteur après constat · `policy.json` par familles + `AGENTS.md` sous 200 l. | moyenne    | **livrée** | audit chiffré du 2026-09-03 (800 + 795 runs, gates chronométrés) ; **Q-1…Q-4 arbitrées le 2026-09-04**, toutes sur la recommandation : PAT fine-grained pour le privé · relevé de facturation fourni · récit des workflows déplacé sur les fichiers touchés · `programmes-officiels/` sorti du skill en lot 5, après le lot 2. **Lots 1 (moteur), 2, 3a et 4 livrés le 2026-09-04** (arena#970 · #971 · #974 · #975 · privé#342) : garde dormant borné avant son checkout, recensement rejouable, un seul `harness:check` pour les deux dépôts avec `pin-check` supprimé, filet de dispatch qui constate avant de doubler, politique par familles et AGENTS.md de 250 à 214 lignes. **Cinq KPI de l'étude ont été rectifiés par les livraisons** — un audit qui n'est pas exécuté se croit exact. ✅ **Le reste a suivi le même jour** — arena#980 · #981 · #982 · #983 · #984 et privé#343 · #344 · #345 · #346 : la moitié privée de L1, L3b, et le **lot 5** (`programmes-officiels/` sorti du skill pour rejoindre `content/`, avec le chemin de compatibilité retiré dans la foulée). L'en-tête de l'étude dit « livrée — les cinq lots » ; cette cellule a annoncé « en exécution » quelques heures de plus, **septième statut périmé en quatre jours** |
 
-> ⚠️ **L'ordre ci-dessous est périmé depuis le 2026-07-20.** L'arbitrage A1-Q1 (étude 26) a
-> substitué un **séquencement par verticale** à cette file additive. L'ordre qui fait foi vit
-> désormais dans **[ROADMAP.md](./ROADMAP.md)** (trois files parallèles + jalon rentrée). Le
-> paragraphe suivant est conservé pour mémoire jusqu'à sa réécriture par le **lot 2 de é26**.
+## Ordre d'exécution — par verticale (doctrine é26)
 
-**Ordre d'exécution recommandé — révisé post-pivot gratuité (2026-07-11)** (les numéros sont des
-identifiants, pas l'ordre) : finir l'en-cours `15 → 16 → 04-A1`, puis
-`07 → 08 (re-scopée) → 02 (re-scopée) → 09 (parallèle) → 10 → 12 → 06`.
-**`18` (cours vivants) est **livrée** (2026-07-14)** — et elle change les règles de toute campagne
-de contenu qui suit : la barre qualité a désormais un **axe 5 « Illustration »**, `content:qa`
-inspecte les leçons, et un chapitre à notions spatiales sans figure est signalé. Toute vague de
-génération (16, lycée) doit s'y conformer, et **22 chapitres spatiaux sans dessin** restent au
-backlog que l'axe 5 a produit (6ᵉ, 7ᵉ, 1ère sec…).
-**`19` (questions & exercices illustrés)** est le pendant de `18` côté **questions** : le rendu
-existe déjà (`SvgFigure`), donc l'étude est **doctrine + détection + campagne**, pas ingénierie.
-Son lot 1 (barre qualité + gate qui signale les questions spatiales sans figure) est du code/skills
-pur, exécutable dès l'arbitrage de sa Q-1 ; sa campagne suit la même priorité (concours d'abord).
-**`21` (valorisation des manuels élèves)** suit le même modèle « doctrine + traçabilité + campagne » :
-le pont documentaire manuel↔app existe déjà (PDF gated `subjects.manuel_refs`, galerie de pages
-`chapters.manuel_ref`), la chaîne source→contenu aussi (é12/é13) — l'étude fixe le pont
-**pédagogique** (mapping type de contenu du manuel → format app, exercices en tête) ; son lot 1
-(doctrine) gouverne toute campagne de contenu qui suit, comme `18` l'a fait pour l'illustration.
-**`22` (parcours élève & progression)** formalise la doctrine transverse que 15/17/05/04
-appliquaient chacune de leur côté : ses 6 lots (carte réparée, boucle SM-2 refermée, rentrée,
-cohorte de classe, donjon scopé, « prochaine action » unifiée) sont indépendants et exécutables
-dès validation ; elle **mandate 04-A1 (« Révision du jour ») comme brique suivante** du parcours
-élève sans la dupliquer.
-**`26` (doctrine verticale — brouillon)** propose de remplacer cette file par un séquencement
-**par verticales** : V1 = boucle d'apprentissage (é22 → é04-A1.1 → correction riche (Q-4) →
-é07 lots 2-5 → é04-A2 → é20 → é23 → é19 lot 1 → é11), fondations en parallèle (é09, C4,
-é24/é25), fil contenu continu (é16/é18/é21), et gels doctrine proposés pour 06/10/12. L'ordre
-ci-dessus reste la référence tant que ses Q-1…Q-5 ne sont pas arbitrées.
-**La roadmap opérationnelle** — tout le reste-à-faire (études, lots, campagnes de contenu,
-fondations) ordonné en 3 files parallèles avec la vue jalon rentrée : [`ROADMAP.md`](./ROADMAP.md)
-(instantané daté, décliné de l'étude 26 ; les entrées ⚖️ attendent leur arbitrage).
-L'étude `01` reste **gelée** tant que dure la phase gratuite (sortie de gel = décision humaine).
-L'étude `11` (tuteur IA) est sortie du gel **côté conception** le 2026-07-17 : sa **v2**
-(commande humaine) ne dépend plus du financement de `01` — le coût est borné par énergie/quotas
-et budget journalier — et attend l'arbitrage de ses Q-1…Q-9 (statut `brouillon`).
-L'ancien ordre « monétisation d'abord » (`01 → 02 → …`) et ses verdicts restent lisibles
-dans [`REVUE-2026-07-dix-features.md`](REVUE-2026-07-dix-features.md) (trace d'arbitrage datée,
-antérieure au pivot). L'humain arbitre. État global du projet : [`../STATUS.md`](../STATUS.md).
+> **Réécrit le 2026-09-04 par le lot 2 de é26.** Il remplace la file additive
+> `01 → 02 → …`, périmée depuis l'arbitrage A1-Q1 du 2026-07-20 et conservée jusqu'ici faute
+> d'avoir été réécrite. L'ancien ordre « monétisation d'abord » et ses verdicts restent lisibles
+> dans [`REVUE-2026-07-dix-features.md`](REVUE-2026-07-dix-features.md) — trace d'arbitrage
+> datée, antérieure au pivot gratuité.
+
+Cette section ne classe pas des numéros : elle **applique** la règle de décision de
+[`docs/doctrine-verticale.md`](https://github.com/MBeji/yahia-quest-arena/blob/main/docs/doctrine-verticale.md)
+§4 — approfondir l'emporte **par défaut** sur ouvrir (P-1), une ouverture non arbitrée se **gèle
+par écrit** (P-7), et deux familles ne passent pas par l'arbre du tout. **Ici se lit ce que la
+doctrine autorise ; dans [`ROADMAP.md`](./ROADMAP.md) se lit la ligne qu'une session prend** —
+graphe de dépendances, horloges, trois files. Quand les deux divergent, la ROADMAP dit l'ordre
+du jour, cet index dit le droit d'ouvrir.
+
+### 1. Approfondir — ce qui passe devant
+
+**V1 — Apprendre & maîtriser** est la verticale prioritaire (é26 Q-1, 2026-07-20), et deux de
+ses capacités sont **signature M4** : correction-révision et tuteur (é11). Son pipeline mandaté
+a été parcouru en entier — é22, é04 (A0 → A2, la « correction riche » rendue comme phase A1.2
+par Q-4), é07, puis é29 et é30 qui s'y sont ajoutées après coup : ces cinq études sont closes,
+dossiers dans [`EtudeRealisé/`](./EtudeRealisé/). **Ce qui en reste est de l'approfondissement,
+et passe donc devant toute ouverture** :
+
+- **é20** — lot 4 (campagne Tier B) et lot 8 (pilote `short_answer` : corpus livré et appliqué
+  en prod le 2026-09-01, reste la **mesure** puis l'accord d'ouvrir le type aux autres
+  matières) ; lot 6 optionnel ;
+- **é23 lot 5** — la capacité est bâtie (lots 1-4 livrés) et **ne montre rien** :
+  `content/videos.json` est un objet **vide** au 2026-09-04. La campagne pilote maths 9ᵉ est
+  débloquée depuis le 2026-07-19 et n'a jamais été prise — un job qui n'est pas complet (DoE 1) ;
+- **é19 lot 1** — doctrine + gate figures sur les questions spatiales : ses Q-1…Q-4 sont
+  arbitrées depuis le 2026-07-20, donc **rien ne l'attend**.
+
+⚠️ **La cible de V1 est déclarée, pas encore mesurée.** La question 1 de l'arbre (« la verticale
+en cours a-t-elle atteint sa cible ? ») se répond sur la colonne **« M »** du tableau des
+features de STATUS.md — troisième pièce de ce même lot 2. Tant qu'un niveau M **daté** n'y est
+pas lisible pour les capacités de V1, la réponse par défaut à cette question reste **NON** et
+une ouverture attend : « excellent » est un état mesuré, pas déclaré (P-6).
+
+⚠️ **é11 est le statut le moins sûr du portefeuille.** Son en-tête dit « 6 lots sur 8 »
+(constaté le 2026-08-24) ; la ROADMAP §3 dit ses lots 6-7 livrés par arena#844, le même jour, et
+demande à la session qui la clôt de resynchroniser l'en-tête et de descendre le dossier. Aucun
+des deux ne se croit sur parole — **un statut se constate sur `main`**. Son seul reste-à-faire
+non contesté est le **verdict du pilote Q-9** (protocole au §5 de é29), attendu vers le
+2026-09-15 : une horloge, pas un chantier.
+
+Les trois autres verticales, en une ligne chacune : **V2 — réussir son concours** : porte levée
+le 2026-08-13 (é28 Q-4), é02 sortie du différé ce jour-là et livrée le 2026-08-16 ; les annales
+restent du **contenu**, pas une capacité. **V3 — jouer ensemble** : é05 et é31 sont livrées,
+é10 y reste gelée (§3). **V4 — accompagner mon enfant** : l'écran parent a été livré **hors**
+de é08 (arena#751 → #769, puis #818) ; il lui reste quatre reliquats, dont trois sans
+précondition.
+
+### 2. Ouvrir — l'exception s'écrit ICI, ou elle n'existe pas
+
+L'arbre autorise d'ouvrir avant que la verticale en cours ait atteint sa cible, à une condition
+de **forme** : l'exception « s'assume PAR ÉCRIT dans l'index des études ». C'est cette
+section-ci. Il y en a **une** aujourd'hui.
+
+- **é08, volet enseignant — ouverture assumée, arbitrée le 2026-08-13 (é28 Q-3).** Motif :
+  c'est le **seul canal d'acquisition à CAC ≈ 0** au budget réel, donc le chemin le plus court
+  vers le KPI qui vaut **zéro depuis le 2026-06-13**. Une verticale finie que personne ne voit
+  ne vaut pas mieux qu'une verticale ouverte. ⛔ Elle reste conditionnée par **é28 D-5**
+  (GAP-024 **et** GAP-003) : le volet code de GAP-024 est livré (arena#948, 2026-09-02), il ne
+  manque plus que **GAP-003/INPDP**, démarche humaine.
+
+Le précédent vaut d'être retenu : l'autre exception écrite le même jour — é02 sortie de la file
+différée V2 — a été re-scopée puis **livrée trois jours plus tard**. Une ouverture arbitrée
+n'est pas un permis d'ouvrir plus tard ; c'est un travail qui commence.
+
+### 3. Ne pas ouvrir — les quatre gels et leur porte
+
+Un gel n'est **pas** un rejet, et le lire comme un classement vertical est l'une des deux façons
+de mal appliquer la doctrine (§8) : il est **motivé, écrit et réversible**, et il existe pour que
+la décision reste re-arbitrable. Il se lit à deux endroits qui doivent dire la même chose —
+l'en-tête de l'étude et cette table.
+
+| étude                            | nature du gel                              | porte de dégel — et qui la franchit                                                                                                                                                                                                                                              |
+| -------------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **01** paiement en ligne         | **gel de phase** (2026-07-11, é15 Q-2/D-3) | **Sortie de la phase gratuite — décision humaine.** L'étude reste le **véhicule désigné** de la réactivation du premium : ce gel garde une option ouverte, il n'enterre rien                                                                                                     |
+| **06** PWA & lecture hors-ligne  | **gel doctrine** (é26 Q-3, 2026-07-20)     | Un **besoin utilisateur documenté** (télémétrie ou retours), puis arbitrage humain écrit. C'est déjà sa propre ligne « dépend de » depuis le 2026-07-04 : l'étude s'était posé la condition, la doctrine n'a fait que la rendre opposable                                        |
+| **10** intégrité & anti-fraude   | **gel doctrine** (é26 Q-3)                 | Le **volume réel de V3** — elle se dégèle d'elle-même. ⚠️ Sa dépendance d'origine (« s'active après é02/é05 ») est **satisfaite** : les deux sont livrées. Ce qui la tient n'est donc plus une étude à finir, mais l'absence de classements assez disputés pour valoir une triche |
+| **12** studio d'ingestion in-app | **gel doctrine** (é26 Q-3)                 | **Arbitrage humain explicite.** Le canal **opéré** couvre le besoin (é13/ScribeKit livrée + `METHODE-GENERATION-CONTENU.md`) ; ⚠️ **é27 ne le dégèle pas**, elle le dit elle-même                                                                                                 |
+
+**27 (sources web tierces) n'est pas gelée — elle n'est pas ouverte**, ce qui n'est pas la même
+chose : statut `brouillon`, Q-1…Q-5 non arbitrées, et sa **Q-5 porte précisément sa position
+dans le gel** (l'architecte y recommande de ne dégeler que les lots 1-3, qui n'ouvrent aucun
+canal d'ingestion). ⚠️ Son **lot 2 vit pourtant déjà** : la garde anti-verbatim tourne dans
+`content:qa` (`scripts/content/verbatim-checks.ts`, importé par `scripts/content/qa.ts` —
+constaté le 2026-09-04), alors que son §8 raconte une PR laissée **volontairement en draft**
+parce que « c'est Q-5 qui dit si ce lot sort du gel ». Construire avant d'être autorisé est
+exactement le réflexe que P-7 corrige.
+
+### 4. Hors de l'arbre — fondations et catalogue
+
+**Les fondations** (mesure, légal, harness, gardes) ne sont ni profondeur ni largeur : elles
+**conditionnent tout** et s'exécutent en parallèle. Restent ouvertes — **é09** (A16 : desserrer
+le seuil ou renchérir le shield, revue mensuelle, **humain**) · **é24 lot 5** (purge de
+l'historique public) et son lot 6 partiel · **é25 L7** (drill de portabilité, avec Mohamed) ·
+**GAP-003/INPDP**, qui n'est l'étude de personne mais tient la porte de é08.
+
+**La largeur catalogue** — classes, matières, chapitres — est **hors doctrine** (§6) : elle suit
+sa propre gouvernance (barre é18 axes 1-5, gates `content:*`, registre de transcription, audits),
+et sa cadence est un arbitrage humain (é26 Q-2, amendé par é28 D-4 : **une classe de concours
+entière d'abord**). Le déséquilibre est assumé — le contenu est l'actif dont la largeur **est**
+de la profondeur : un élève de 8ᵉ sans sa classe n'a rien à approfondir. En relèvent la campagne
+de **é16** (vague A du lycée), le **lot 1 de é21** — la doctrine des manuels, qui gouvernera les
+campagnes suivantes comme é18 l'a fait pour l'illustration, et qui est exécutable depuis
+l'arbitrage de ses Q-1…Q-4 le 2026-07-20 — puis ses lots suivants, et tout le §5 de la ROADMAP.
+⚠️ **Une campagne de contenu qui sert une capacité de V1 reste une campagne** : é23 lot 5 et la
+campagne de é19 passent par la gouvernance contenu, pas par l'arbre — c'est leur **valeur** qui
+les met en haut de la file, pas la règle.
+
+**Ce que cette section n'est pas.** Elle ne rétro-modifie aucune étude (les fiches de
+verticalité valent pour les **nouvelles** — voir « Créer une nouvelle étude » plus bas), elle ne
+remplace ni la ROADMAP (ordre opérationnel) ni [`../STATUS.md`](../STATUS.md) (état réel des
+features), et elle ne tranche rien : **l'humain arbitre**.
 
 ## Backlog — reste à faire
 
