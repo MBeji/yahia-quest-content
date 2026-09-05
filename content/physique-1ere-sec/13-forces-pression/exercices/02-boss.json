@@ -1,0 +1,86 @@
+{
+  "title": "⭐⭐⭐ Boss : La même force, des pressions cent fois différentes",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "206-208",
+    "items": ["vérifier 2", "vérifier 3", "situations 1", "situations 2", "synthèse 1"]
+  },
+  "questions": [
+    {
+      "prompt": "En chaussant des skis, un randonneur s'enfonce beaucoup moins dans la neige. Les skis diminuent-ils la force pressante qu'il exerce ?",
+      "options": [
+        { "id": "a", "text": "Non : la force reste son poids, ce sont la surface pressée qui augmente et la pression qui diminue" },
+        { "id": "b", "text": "Oui : les skis répartissent le poids, donc ils le réduisent" },
+        { "id": "c", "text": "Oui : la force pressante est divisée par la surface des skis" },
+        { "id": "d", "text": "Non : ni la force ni la pression ne changent, c'est la neige qui se tasse moins" }
+      ],
+      "correctOption": "a",
+      "explanation": "La force pressante, c'est le poids du randonneur : les skis n'enlèvent aucun kilogramme, elle est donc inchangée ✓. Ce qu'ils changent, c'est la surface sur laquelle cette force se répartit — beaucoup plus grande qu'une semelle. Comme p = F / s, la même force sur une plus grande surface donne une pression plus faible, et c'est la pression qui décide de l'enfoncement. Confondre « répartir » et « réduire » est le cœur du piège : on répartit une force, on ne la diminue pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "« Pour augmenter la pression exercée sur un support, la seule solution est de diminuer la surface pressée. » Cette affirmation est-elle exacte ?",
+      "options": [
+        { "id": "a", "text": "Non : on peut aussi augmenter la force pressante, à surface constante" },
+        { "id": "b", "text": "Oui : la pression ne dépend que de la surface" },
+        { "id": "c", "text": "Non : on peut aussi changer la matière du support" },
+        { "id": "d", "text": "Oui, sauf si le corps est très lourd" }
+      ],
+      "correctOption": "a",
+      "explanation": "La pression est un quotient, p = F / s : elle augmente quand le numérateur grandit autant que quand le dénominateur rétrécit ✓. Une presse hydraulique exploite la première voie, un couteau la seconde. Dire que seule la surface compte revient à effacer la force du quotient. Et la matière du support ne change pas la pression exercée : elle change seulement ce que le support est capable d'encaisser.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le tranchant d'une pince coupante a une surface de contact s = 0,8 mm². On y applique une force pressante F = 100 N. Quelle pression exerce-t-elle ?",
+      "options": [
+        { "id": "a", "text": "1,25 × 10⁸ Pa" },
+        { "id": "b", "text": "125 Pa" },
+        { "id": "c", "text": "0,8 × 10⁻⁴ Pa" },
+        { "id": "d", "text": "80 Pa" }
+      ],
+      "correctOption": "a",
+      "explanation": "Tout se joue sur la conversion : 1 mm² vaut 10⁻⁶ m², donc s = 0,8 mm² = 0,8 × 10⁻⁶ m². La pression vaut alors p = F / s = 100 / (0,8 × 10⁻⁶) = 1,25 × 10⁸ Pa ✓, soit plus de mille bars — c'est bien ce qui permet à une pince de sectionner un fil de cuivre. Répondre 125 Pa, c'est avoir divisé par 0,8 en oubliant la puissance de dix. Et 0,8 × 10⁻⁴ Pa n'est même pas une pression : c'est une surface mal convertie qu'on a recopiée.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un skieur de masse 80 kg repose sur ses deux skis, chacun de surface 0,225 m². En prenant g = 10 N·kg⁻¹, quelle pression exerce-t-il sur la neige ?",
+      "options": [
+        { "id": "a", "text": "Environ 1,8 × 10³ Pa" },
+        { "id": "b", "text": "Environ 3,6 × 10³ Pa" },
+        { "id": "c", "text": "Environ 800 Pa" },
+        { "id": "d", "text": "Environ 180 Pa" }
+      ],
+      "correctOption": "a",
+      "explanation": "La force pressante est le poids : P = m × g = 80 × 10 = 800 N. La surface pressée est celle des deux skis, pas d'un seul : s = 2 × 0,225 = 0,45 m². D'où p = 800 / 0,45 ≈ 1 778 Pa, soit environ 1,8 × 10³ Pa ✓. Trouver 3,6 × 10³ Pa, c'est avoir compté un seul ski — l'erreur la plus fréquente de cet exercice, car on lit « chacun » sans en tirer la conséquence.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le même skieur retire ses skis et se tient sur ses chaussures, dont la semelle mesure 225 cm² chacune. Que devient la pression ?",
+      "options": [
+        { "id": "a", "text": "Environ 1,8 × 10⁴ Pa, soit dix fois plus qu'avec les skis" },
+        { "id": "b", "text": "Environ 1,8 × 10³ Pa, la même qu'avec les skis" },
+        { "id": "c", "text": "Environ 1,8 × 10² Pa, soit dix fois moins" },
+        { "id": "d", "text": "Environ 3,6 × 10⁴ Pa, soit vingt fois plus" }
+      ],
+      "correctOption": "a",
+      "explanation": "Il faut d'abord convertir : 225 cm² = 225 × 10⁻⁴ m² = 0,0225 m², et pour deux chaussures s = 0,045 m². Le poids n'a pas changé, donc p = 800 / 0,045 ≈ 17 778 Pa, soit environ 1,8 × 10⁴ Pa ✓. La surface a été divisée par dix, la pression est multipliée par dix : c'est exactement ce que dit p = F / s, et c'est pourquoi on s'enfonce dans la neige sans skis. Les autres réponses viennent d'une conversion de cm² en m² faite avec un facteur 100 au lieu de 10 000.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On enfonce une punaise dans une planche avec une force de 20 N. Sa pointe a une surface s = 0,03 mm². Quelle pression subit la planche sous la pointe ?",
+      "options": [
+        { "id": "a", "text": "Environ 6,7 × 10⁸ Pa" },
+        { "id": "b", "text": "Environ 6,7 × 10² Pa" },
+        { "id": "c", "text": "Environ 6,0 × 10⁻⁷ Pa" },
+        { "id": "d", "text": "Environ 667 Pa" }
+      ],
+      "correctOption": "a",
+      "explanation": "Conversion d'abord : s = 0,03 mm² = 0,03 × 10⁻⁶ m² = 3 × 10⁻⁸ m². Puis p = F / s = 20 / (3 × 10⁻⁸) ≈ 6,7 × 10⁸ Pa ✓. C'est le principe même de la punaise : une petite force de doigt, concentrée sur une surface minuscule, produit une pression énorme — bien plus forte que celle sous la tête, où la même force se répartit sur quelques dizaines de millimètres carrés. Les réponses trop petites viennent toutes d'une puissance de dix perdue dans la conversion.",
+      "difficulty": 3
+    }
+  ]
+}

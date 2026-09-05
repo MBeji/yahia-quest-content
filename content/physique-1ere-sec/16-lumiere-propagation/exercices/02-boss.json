@@ -1,0 +1,86 @@
+{
+  "title": "⭐⭐⭐ Boss : Qui émet, qui reçoit, et quelle ombre cela projette",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "256-257",
+    "items": ["vérifier 2", "vérifier 3", "situations 1", "situations 2", "situations 3", "synthèse 2"]
+  },
+  "questions": [
+    {
+      "prompt": "Une étoile, une photopile et un laser. Comment classer ces trois objets vis-à-vis de la lumière ?",
+      "options": [
+        { "id": "a", "text": "Source primaire, détecteur, source primaire" },
+        { "id": "b", "text": "Source primaire, source secondaire, détecteur" },
+        { "id": "c", "text": "Détecteur, source primaire, source secondaire" },
+        { "id": "d", "text": "Source secondaire, détecteur, source primaire" }
+      ],
+      "correctOption": "a",
+      "explanation": "Une source primaire produit sa propre lumière : c'est le cas de l'étoile comme du laser ✓. Une photopile, elle, ne produit rien : elle reçoit la lumière et la convertit en électricité, c'est donc un détecteur ✓. La catégorie « source secondaire » est réservée aux objets qui se contentent de renvoyer une lumière reçue d'ailleurs — la Lune, une page de livre, un mur éclairé.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La lumière a-t-elle besoin d'un milieu matériel pour se propager ?",
+      "options": [
+        { "id": "a", "text": "Non : elle traverse le vide, et c'est ainsi que la lumière du Soleil nous parvient" },
+        { "id": "b", "text": "Oui : sans air, aucune lumière ne peut avancer" },
+        { "id": "c", "text": "Oui, sauf pour les sources très puissantes comme le Soleil" },
+        { "id": "d", "text": "Non, mais elle avance alors bien plus lentement" }
+      ],
+      "correctOption": "a",
+      "explanation": "La lumière se propage parfaitement dans le vide ✓ — c'est même là qu'elle atteint sa plus grande vitesse, 3 × 10⁸ m·s⁻¹. L'espace entre le Soleil et la Terre est pour l'essentiel vide, et sa lumière nous parvient pourtant. C'est une différence majeure avec le son, lui, qui a bel et bien besoin de matière pour voyager : c'est de cette confusion que vient le piège.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un écran de cinéma et un écran de télévision. Lequel est une source primaire de lumière ?",
+      "options": [
+        { "id": "a", "text": "L'écran de télévision : il émet lui-même sa lumière, alors que l'écran de cinéma ne fait que diffuser celle du projecteur" },
+        { "id": "b", "text": "L'écran de cinéma : c'est lui qui donne l'image la plus lumineuse" },
+        { "id": "c", "text": "Les deux : tout écran qui montre une image est une source primaire" },
+        { "id": "d", "text": "Aucun des deux : les deux renvoient la lumière d'une lampe" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le critère n'est pas la luminosité mais l'origine de la lumière. Une télévision produit sa lumière elle-même : source primaire ✓. Une salle de cinéma est noire, et l'écran ne devient visible que parce qu'un projecteur l'éclaire — il se comporte comme une page de livre, en source secondaire. La preuve est facile à faire : coupez le projecteur, l'écran de cinéma disparaît ; coupez la lumière de la pièce, la télévision reste visible.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une source ponctuelle éclaire un cylindre opaque, dont l'ombre se projette sur un écran vertical. Quelle est la forme de cette ombre si l'axe du cylindre est vertical, puis s'il est horizontal et perpendiculaire à l'écran ?",
+      "options": [
+        { "id": "a", "text": "Un rectangle, puis un disque" },
+        { "id": "b", "text": "Un disque, puis un rectangle" },
+        { "id": "c", "text": "Un rectangle dans les deux cas" },
+        { "id": "d", "text": "Un triangle, puis un disque" }
+      ],
+      "correctOption": "a",
+      "explanation": "L'ombre portée a la forme de la silhouette du corps vue depuis la source. Un cylindre debout se présente de profil : sa silhouette est un rectangle ✓. Couché et pointé vers l'écran, c'est sa base qu'on voit : un disque ✓. C'est le même objet, deux ombres différentes — ce qui rappelle que l'ombre ne dépend pas seulement du corps, mais de son orientation par rapport à la source et à l'écran.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une étoile est observée pour la première fois en 1992. Elle se trouve à 750 années-lumière de la Terre. En quelle année la lumière observée a-t-elle quitté cette étoile ?",
+      "options": [
+        { "id": "a", "text": "En 1242" },
+        { "id": "b", "text": "En 1992, l'observation étant instantanée" },
+        { "id": "c", "text": "En 2742" },
+        { "id": "d", "text": "En 750" }
+      ],
+      "correctOption": "a",
+      "explanation": "Une année-lumière est la distance parcourue par la lumière en un an : 750 années-lumière, c'est donc un voyage de 750 ans. La lumière vue en 1992 est partie en 1992 − 750 = 1242 ✓. Observer le ciel, c'est toujours regarder le passé — c'est en ce sens que la lumière est le messager des astres. Ajouter les 750 ans au lieu de les retrancher place le départ dans l'avenir ; et croire l'observation instantanée revient à donner à la lumière une vitesse infinie.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une source ponctuelle S éclaire un disque opaque de rayon r = 4 cm, placé à d₁ = 20 cm de S, et l'ombre se forme sur un écran situé à d₂ = 80 cm du disque. Le rayon R de l'ombre portée vaut R = (1 + d₂/d₁) × r. Combien vaut-il ?",
+      "options": [
+        { "id": "a", "text": "20 cm" },
+        { "id": "b", "text": "16 cm" },
+        { "id": "c", "text": "4 cm" },
+        { "id": "d", "text": "5 cm" }
+      ],
+      "correctOption": "a",
+      "explanation": "On applique la relation avec les valeurs données : d₂/d₁ = 80/20 = 4, donc R = (1 + 4) × 4 = 20 cm ✓. L'ombre est cinq fois plus grande que le disque, parce que les rayons issus d'un point s'écartent en s'éloignant. Trouver 16 cm, c'est avoir oublié le « 1 + » de la formule, celui qui représente le disque lui-même. Et rapprocher le disque de l'écran ferait diminuer d₂, donc R : l'ombre rétrécit jusqu'à valoir le disque quand ils se touchent.",
+      "difficulty": 3
+    }
+  ]
+}

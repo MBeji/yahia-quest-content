@@ -1,0 +1,86 @@
+{
+  "title": "⭐⭐⭐ Boss : Ranger le ciel, puis le mettre à l'échelle",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "240-241",
+    "items": ["vérifier 2", "situations 1", "situations 3", "synthèse 1"]
+  },
+  "questions": [
+    {
+      "prompt": "Halley, Véga, Io et Cassiopée. À quelles catégories ces quatre objets célestes appartiennent-ils, dans cet ordre ?",
+      "options": [
+        { "id": "a", "text": "Comète, étoile, satellite, constellation" },
+        { "id": "b", "text": "Étoile, comète, planète, galaxie" },
+        { "id": "c", "text": "Comète, constellation, satellite, étoile" },
+        { "id": "d", "text": "Satellite, étoile, comète, galaxie" }
+      ],
+      "correctOption": "a",
+      "explanation": "Halley est la plus célèbre des comètes, ces petits corps qui déploient une queue en approchant du Soleil. Véga est une étoile : elle produit sa propre lumière. Io tourne autour de Jupiter, c'est donc un satellite. Et Cassiopée n'est pas un objet mais un dessin du ciel, une constellation ✓ — un groupement d'étoiles vues dans une même région, sans lien physique entre elles. C'est cette dernière qui trompe le plus : une constellation ne se range pas à côté des astres, elle les regroupe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Saturne est-elle la seule planète du système solaire à posséder des anneaux ?",
+      "options": [
+        { "id": "a", "text": "Non : Uranus et Neptune en possèdent aussi, bien moins visibles" },
+        { "id": "b", "text": "Oui : c'est ce qui la distingue de toutes les autres" },
+        { "id": "c", "text": "Non : toutes les planètes du système solaire en possèdent" },
+        { "id": "d", "text": "Non : la Terre en possède également" }
+      ],
+      "correctOption": "a",
+      "explanation": "Les anneaux de Saturne sont si brillants qu'on croit volontiers qu'ils sont uniques, mais Uranus et Neptune en portent aussi ✓ — bien plus sombres et bien plus fins, ce qui explique qu'on les ait découverts beaucoup plus tard. Ce sont les planètes gazeuses géantes qui en sont pourvues, pas les planètes telluriques : ni la Terre, ni Mars, ni Vénus, ni Mercure n'en ont.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'étoile Proxima du Centaure est à 4,22 années-lumière de la Terre. Sachant qu'une année-lumière vaut environ 9,46 × 10¹² km, quelle est cette distance en kilomètres ?",
+      "options": [
+        { "id": "a", "text": "Environ 39,92 × 10¹² km" },
+        { "id": "b", "text": "Environ 40 × 10⁹ km" },
+        { "id": "c", "text": "Environ 12,66 × 10⁸ km" },
+        { "id": "d", "text": "Environ 2,24 × 10¹² km" }
+      ],
+      "correctOption": "a",
+      "explanation": "Une année-lumière est une distance, pas une durée : il suffit donc de multiplier. 4,22 × 9,46 × 10¹² ≈ 39,92 × 10¹² km ✓, soit près de quarante mille milliards de kilomètres pour l'étoile la plus proche du Soleil. La réponse en 10⁹ vient d'avoir perdu trois puissances de dix. Et 2,24 × 10¹² correspond à une division au lieu d'une multiplication : l'étoile serait alors plus proche que le Soleil.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On construit un modèle réduit du système solaire. Le Soleil, dont le diamètre réel vaut 1,4 × 10⁶ km, y est représenté par une boule de 14 cm de diamètre. Quelle est l'échelle du modèle ?",
+      "options": [
+        { "id": "a", "text": "1 cm représente 10⁵ km" },
+        { "id": "b", "text": "1 cm représente 10⁶ km" },
+        { "id": "c", "text": "1 cm représente 14 × 10⁶ km" },
+        { "id": "d", "text": "1 cm représente 10⁴ km" }
+      ],
+      "correctOption": "a",
+      "explanation": "L'échelle est le rapport entre la mesure réelle et celle du modèle : 1,4 × 10⁶ km pour 14 cm, donc 1,4 × 10⁶ / 14 = 10⁵ km pour 1 cm ✓. Répondre 10⁶ km revient à avoir oublié le facteur 14 du dénominateur, et 14 × 10⁶ à avoir multiplié au lieu de diviser — deux erreurs qui donnent un système solaire dix, puis cent quarante fois trop grand.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "À cette échelle, quel diamètre faut-il donner à la Terre, dont le diamètre réel est d'environ 12 756 km ?",
+      "options": [
+        { "id": "a", "text": "Environ 1,3 mm" },
+        { "id": "b", "text": "Environ 1,3 cm" },
+        { "id": "c", "text": "Environ 13 cm" },
+        { "id": "d", "text": "Environ 12,8 cm" }
+      ],
+      "correctOption": "a",
+      "explanation": "L'échelle donne 10⁵ km pour 1 cm, donc 12 756 km valent 12 756 / 10⁵ ≈ 0,13 cm, soit environ 1,3 mm ✓ — une tête d'épingle à côté d'une boule de 14 cm. C'est tout l'intérêt du modèle réduit : il rend visible un rapport de taille qu'aucun dessin de manuel ne respecte. Les autres réponses viennent d'un facteur dix ou cent oublié dans la division, et donneraient une Terre grosse comme le Soleil.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Toujours à la même échelle, à quelle distance de la boule faut-il placer cette Terre, sachant que la distance réelle Terre-Soleil vaut environ 1,5 × 10⁸ km ?",
+      "options": [
+        { "id": "a", "text": "Environ 15 m" },
+        { "id": "b", "text": "Environ 1,5 m" },
+        { "id": "c", "text": "Environ 150 m" },
+        { "id": "d", "text": "Environ 15 cm" }
+      ],
+      "correctOption": "a",
+      "explanation": "Même échelle, même méthode : 1,5 × 10⁸ / 10⁵ = 1 500 cm, soit 15 m ✓. Une bille de 1,3 mm à quinze mètres d'une boule de 14 cm : voilà à quoi ressemble vraiment le couple Terre-Soleil, et c'est pourquoi aucun schéma de manuel ne peut être à l'échelle sur une même page. Les autres réponses correspondent à une puissance de dix perdue ou ajoutée dans la conversion des centimètres en mètres.",
+      "difficulty": 3
+    }
+  ]
+}
