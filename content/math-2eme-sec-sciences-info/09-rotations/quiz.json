@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : Rotations",
+  "questions": [
+    {
+      "prompt": "Soient O un point du plan et α un réel de ]0 ; π[. Quelles conditions caractérisent l'image M′ d'un point M distinct de O par la rotation directe de centre O et d'angle α ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OM′ = OM et MÔM′ = α"
+        },
+        {
+          "id": "b",
+          "text": "OM′ = OM et MÔM′ = 2α"
+        },
+        {
+          "id": "c",
+          "text": "OM′ = α × OM et les points O, M, M′ alignés"
+        },
+        {
+          "id": "d",
+          "text": "MM′ = OM et MÔM′ = α"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une rotation fait tourner le plan autour de son centre sans rien déformer : le point image reste donc à la même distance du centre, ce qui donne OM′ = OM, et l'angle balayé est exactement l'angle de la rotation, ce qui donne MÔM′ = α ✓. Écrire MÔM′ = 2α double l'angle sans raison : l'angle de la rotation est l'angle MÔM′ lui-même, pas sa moitié. La condition OM′ = α × OM avec O, M et M′ alignés décrit un point qui reste sur la droite (OM) en s'éloignant du centre : c'est un agrandissement, pas une rotation, et rien n'y tourne. Enfin MM′ = OM confond la distance parcourue par le point avec sa distance au centre : ces deux longueurs ne coïncident que si l'angle vaut π/3, seul cas où le triangle OMM′ est équilatéral.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la mesure en radians d'un angle de 150° ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5π/12"
+        },
+        {
+          "id": "b",
+          "text": "5π/6"
+        },
+        {
+          "id": "c",
+          "text": "6π/5"
+        },
+        {
+          "id": "d",
+          "text": "5π/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'angle plat vaut 180° et vaut aussi π radians : on passe donc des degrés aux radians en multipliant par π/180. Ici 150 × π/180 = 150π/180, fraction qui se simplifie par 30 et donne 5π/6 ✓. La valeur 5π/12 vient d'une division par 360, c'est-à-dire du tour complet au lieu de l'angle plat. La valeur 6π/5 retourne la fraction et fait dépasser π, ce qui est impossible pour un angle plus petit que l'angle plat. La valeur 5π/3 vient d'une division par 90 : on a pris l'angle droit comme référence au lieu de l'angle plat.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le cercle C a pour centre I et pour rayon 3 cm. On note r la rotation directe de centre O et d'angle π/4, avec O distinct de I. Quelle est l'image de C par r ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le cercle de centre I et de rayon 3 cm"
+        },
+        {
+          "id": "b",
+          "text": "Le cercle de centre O et de rayon 3 cm"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle de centre r(I) et de rayon 3 cm"
+        },
+        {
+          "id": "d",
+          "text": "Le cercle de centre r(I) et de rayon 3π/4 cm"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'image d'un cercle par une rotation est un cercle de même rayon, centré à l'image du centre : le rayon reste donc 3 cm et le centre devient r(I) ✓. Garder I pour centre reviendrait à croire que le centre est invariant, alors que le seul point invariant d'une rotation est son propre centre O. Prendre O pour centre confond le centre de la rotation avec le centre du cercle : ce sont deux points distincts d'après l'énoncé. Quant au rayon 3π/4 cm, il fait intervenir l'angle dans une longueur : l'angle règle le déplacement, il ne multiplie aucune distance, sans quoi la figure serait déformée.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que devient la rotation de centre O et d'angle π, qu'elle soit prise dans le sens direct ou dans le sens indirect ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'identité du plan"
+        },
+        {
+          "id": "b",
+          "text": "Le quart de tour direct de centre O"
+        },
+        {
+          "id": "c",
+          "text": "La symétrie centrale de centre O"
+        },
+        {
+          "id": "d",
+          "text": "Une symétrie axiale dont l'axe passe par O"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un angle de mesure π est un angle plat : le point image M′ vérifie OM′ = OM et l'angle MÔM′ plat, donc O est le milieu de [MM′]. C'est exactement la définition du symétrique de M par rapport à O, d'où la symétrie centrale de centre O ✓, et les deux sens donnent ici le même point, ce qui explique que l'énoncé n'ait pas à choisir. L'identité du plan correspond à l'angle nul, pas à l'angle plat. Le quart de tour correspond à l'angle π/2, soit la moitié de la valeur donnée. Une symétrie axiale, enfin, retourne la figure comme un miroir : ce n'est pas une rotation, et elle laisse invariante toute une droite au lieu d'un seul point.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur la figure ci-dessous, ABCD est un carré de centre O. Quelle est l'image du sommet A par le quart de tour direct de centre O ?\n<svg viewBox=\"0 0 300 250\"><polygon points=\"85,60 215,60 215,190 85,190\" fill=\"#0f6e56\" opacity=\"0.10\"/><polygon points=\"85,60 215,60 215,190 85,190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><g fill=\"#0f172a\"><circle cx=\"85\" cy=\"60\" r=\"4.5\"/><circle cx=\"215\" cy=\"60\" r=\"4.5\"/><circle cx=\"215\" cy=\"190\" r=\"4.5\"/><circle cx=\"85\" cy=\"190\" r=\"4.5\"/></g><circle cx=\"150\" cy=\"125\" r=\"5\" fill=\"#0f6e56\"/><g font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"74\" y=\"50\" fill=\"#0f172a\">A</text><text x=\"226\" y=\"50\" fill=\"#0f172a\">B</text><text x=\"226\" y=\"206\" fill=\"#0f172a\">C</text><text x=\"74\" y=\"206\" fill=\"#0f172a\">D</text><text x=\"164\" y=\"120\" fill=\"#0f6e56\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point A"
+        },
+        {
+          "id": "b",
+          "text": "Le point B"
+        },
+        {
+          "id": "c",
+          "text": "Le point C"
+        },
+        {
+          "id": "d",
+          "text": "Le point D"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le sens direct est le sens contraire des aiguilles d'une montre. Sur cette figure, les sommets A, B, C et D se succèdent dans le sens des aiguilles d'une montre : tourner d'un quart de tour dans le sens direct fait donc reculer d'un sommet, et A vient se poser sur D ✓. Choisir le point B revient à suivre l'ordre des lettres, c'est-à-dire à tourner dans le sens indirect. Choisir le point C revient à faire un demi-tour, d'angle π, au lieu d'un quart de tour d'angle π/2. Choisir le point A supposerait le sommet invariant, alors que le seul point que la rotation laisse en place est son centre O.",
+      "difficulty": 2
+    }
+  ]
+}
