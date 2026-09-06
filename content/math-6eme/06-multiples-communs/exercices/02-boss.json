@@ -22,10 +22,10 @@
     {
       "prompt": "أيُّ الأعداد التالية مضاعفٌ للعددين 2 و5 معًا؟",
       "options": [
-        { "id": "a", "text": "25" },
-        { "id": "b", "text": "14" },
+        { "id": "a", "text": "25", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
+        { "id": "b", "text": "14", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
         { "id": "c", "text": "30" },
-        { "id": "d", "text": "12" }
+        { "id": "d", "text": "12", "misconceptionTag": "math.num.divisibilite-un-seul-critere" }
       ],
       "correctOption": "c",
       "explanation": "العددُ مضاعفٌ للعددين 2 و5 معًا إذا كان مضاعفًا للعدد 10؛ 30 = 10 × 3.",
@@ -35,10 +35,10 @@
     {
       "prompt": "ما أصغرُ مضاعفٍ مشترك غيرِ معدوم للعددين 4 و6؟",
       "options": [
-        { "id": "a", "text": "24" },
+        { "id": "a", "text": "24", "misconceptionTag": "math.num.ppmc-remplace-par-le-produit" },
         { "id": "b", "text": "12" },
-        { "id": "c", "text": "2" },
-        { "id": "d", "text": "10" }
+        { "id": "c", "text": "2", "misconceptionTag": "math.num.multiple-et-diviseur-confondus" },
+        { "id": "d", "text": "10", "misconceptionTag": "math.num.ppmc-par-addition" }
       ],
       "correctOption": "b",
       "explanation": "مضاعفاتُ 4: 0، 4، 8، 12…؛ ومضاعفاتُ 6: 0، 6، 12…؛ أصغرُ مضاعفٍ مشترك غيرِ معدوم هو 12.",
@@ -49,8 +49,8 @@
       "prompt": "حافلةٌ تمرّ كلّ 6 دقائق وأخرى كلّ 8 دقائق، انطلقتا معًا. بعد كم دقيقةً تلتقيان أوّلَ مرّة؟",
       "options": [
         { "id": "a", "text": "24" },
-        { "id": "b", "text": "48" },
-        { "id": "c", "text": "14" },
+        { "id": "b", "text": "48", "misconceptionTag": "math.num.ppmc-remplace-par-le-produit" },
+        { "id": "c", "text": "14", "misconceptionTag": "math.num.ppmc-par-addition" },
         { "id": "d", "text": "12" }
       ],
       "correctOption": "a",
@@ -62,7 +62,7 @@
       "prompt": "أيُّ عبارةٍ صحيحة؟",
       "options": [
         { "id": "a", "text": "15 مضاعفٌ للعدد 2" },
-        { "id": "b", "text": "15 قاسمٌ للعدد 3" },
+        { "id": "b", "text": "15 قاسمٌ للعدد 3", "misconceptionTag": "math.num.multiple-et-diviseur-confondus" },
         { "id": "c", "text": "15 مضاعفٌ للعدد 3 والعدد 5" },
         { "id": "d", "text": "15 مضاعفٌ للعدد 4" }
       ],

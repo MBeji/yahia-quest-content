@@ -22,9 +22,9 @@
     {
       "prompt": "ما أصغرُ رقمٍ نضعه مكان ▢ في العدد 7▢2 ليقبل القسمةَ على 3؟",
       "options": [
-        { "id": "a", "text": "3" },
+        { "id": "a", "text": "3", "misconceptionTag": "math.num.extremum-demande-ignore" },
         { "id": "b", "text": "1" },
-        { "id": "c", "text": "6" },
+        { "id": "c", "text": "6", "misconceptionTag": "math.num.extremum-demande-ignore" },
         { "id": "d", "text": "0" }
       ],
       "correctOption": "d",
@@ -48,10 +48,10 @@
     {
       "prompt": "أيُّ عددٍ يقبل القسمة على 2 و3 و5 معًا؟",
       "options": [
-        { "id": "a", "text": "100" },
-        { "id": "b", "text": "115" },
+        { "id": "a", "text": "100", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
+        { "id": "b", "text": "115", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
         { "id": "c", "text": "120" },
-        { "id": "d", "text": "144" }
+        { "id": "d", "text": "144", "misconceptionTag": "math.num.divisibilite-un-seul-critere" }
       ],
       "correctOption": "c",
       "explanation": "العددُ 120 زوجيّ (÷2)، ومجموعُ أرقامه 3 (÷3)، وآحاده 0 (÷5)، فهو يقبل القسمة على 2 و3 و5 معًا.",
@@ -62,9 +62,9 @@
       "prompt": "عددٌ من ثلاث خاناتٍ يبدأ بـ 34 ويقبل القسمةَ على 5 و2 معًا. ما رقمُ آحاده؟",
       "options": [
         { "id": "a", "text": "0" },
-        { "id": "b", "text": "5" },
-        { "id": "c", "text": "4" },
-        { "id": "d", "text": "2" }
+        { "id": "b", "text": "5", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
+        { "id": "c", "text": "4", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
+        { "id": "d", "text": "2", "misconceptionTag": "math.num.divisibilite-un-seul-critere" }
       ],
       "correctOption": "a",
       "explanation": "ليقبل العددُ القسمةَ على 2 و5 معًا يجب أن يكون آحاده 0، فالعددُ 340.",

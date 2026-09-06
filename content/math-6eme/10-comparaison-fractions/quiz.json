@@ -4,10 +4,10 @@
     {
       "prompt": "قارن بين 3/7 و 5/7.",
       "options": [
-        { "id": "a", "text": "3/7 > 5/7" },
+        { "id": "a", "text": "3/7 > 5/7", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
         { "id": "b", "text": "3/7 < 5/7" },
         { "id": "c", "text": "متساويان" },
-        { "id": "d", "text": "لا يمكن المقارنة" }
+        { "id": "d", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" }
       ],
       "correctOption": "b",
       "explanation": "عند تساوي المقام، الأكبرُ بسطًا هو الأكبر؛ وبما أنّ 3 < 5 فإنّ 3/7 < 5/7.",
@@ -18,7 +18,7 @@
       "prompt": "أيُّ الكسرين أكبر: 2/3 أم 2/5؟",
       "options": [
         { "id": "a", "text": "2/3" },
-        { "id": "b", "text": "2/5" },
+        { "id": "b", "text": "2/5", "misconceptionTag": "math.frac.comparaison-par-denominateur" },
         { "id": "c", "text": "متساويان" },
         { "id": "d", "text": "2/8" }
       ],
@@ -30,9 +30,9 @@
     {
       "prompt": "قارن بين 2/3 و 3/4 (وحّد المقامات على 12).",
       "options": [
-        { "id": "a", "text": "2/3 > 3/4" },
+        { "id": "a", "text": "2/3 > 3/4", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
         { "id": "b", "text": "متساويان" },
-        { "id": "c", "text": "لا يمكن المقارنة" },
+        { "id": "c", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" },
         { "id": "d", "text": "2/3 < 3/4" }
       ],
       "correctOption": "d",
@@ -43,10 +43,10 @@
     {
       "prompt": "أيُّ كسرٍ أكبرُ من الوحدة (1)؟",
       "options": [
-        { "id": "a", "text": "5/8" },
+        { "id": "a", "text": "5/8", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
         { "id": "b", "text": "7/4" },
-        { "id": "c", "text": "3/4" },
-        { "id": "d", "text": "2/9" }
+        { "id": "c", "text": "3/4", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
+        { "id": "d", "text": "2/9", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" }
       ],
       "correctOption": "b",
       "explanation": "الكسرُ أكبرُ من 1 إذا كان بسطُه أكبرَ من مقامه؛ في 7/4 البسطُ 7 > المقام 4.",
@@ -56,7 +56,7 @@
     {
       "prompt": "رتّب تصاعديًّا (المقام نفسُه): 5/9 ؛ 2/9 ؛ 7/9.",
       "options": [
-        { "id": "a", "text": "7/9 < 5/9 < 2/9" },
+        { "id": "a", "text": "7/9 < 5/9 < 2/9", "misconceptionTag": "math.num.ordre-croissant-decroissant-confondus" },
         { "id": "b", "text": "5/9 < 2/9 < 7/9" },
         { "id": "c", "text": "2/9 < 5/9 < 7/9" },
         { "id": "d", "text": "2/9 < 7/9 < 5/9" }

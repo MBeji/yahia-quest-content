@@ -9,10 +9,10 @@
     {
       "prompt": "أيُّ عددٍ يقبل القسمة على 2 وعلى 5 معًا؟",
       "options": [
-        { "id": "a", "text": "75" },
+        { "id": "a", "text": "75", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
         { "id": "b", "text": "70" },
-        { "id": "c", "text": "52" },
-        { "id": "d", "text": "35" }
+        { "id": "c", "text": "52", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
+        { "id": "d", "text": "35", "misconceptionTag": "math.num.divisibilite-un-seul-critere" }
       ],
       "correctOption": "b",
       "explanation": "العددُ يقبل القسمة على 2 و5 معًا إذا كان آحاده 0؛ آحادُ 70 هو 0، فهو يقبلهما (وعلى 10 كذلك).",
@@ -35,10 +35,10 @@
     {
       "prompt": "أيُّ عددٍ يقبل القسمة على 3 لكن ليس على 9؟",
       "options": [
-        { "id": "a", "text": "27" },
+        { "id": "a", "text": "27", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
         { "id": "b", "text": "24" },
-        { "id": "c", "text": "81" },
-        { "id": "d", "text": "18" }
+        { "id": "c", "text": "81", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
+        { "id": "d", "text": "18", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" }
       ],
       "correctOption": "b",
       "explanation": "مجموعُ أرقام 24 هو 6 (يقبل القسمة على 3 لا على 9)؛ أمّا 27 و81 و18 فمجموعُ أرقامها 9 (تقبل القسمة على 9).",
@@ -49,7 +49,7 @@
       "prompt": "العددُ 105 يقبل القسمة على:",
       "options": [
         { "id": "a", "text": "2 و10" },
-        { "id": "b", "text": "9 فقط" },
+        { "id": "b", "text": "9 فقط", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
         { "id": "c", "text": "5 و3" },
         { "id": "d", "text": "2 فقط" }
       ],
@@ -62,8 +62,8 @@
       "prompt": "أيُّ عددٍ يقبل القسمة على 2 و3 معًا؟",
       "options": [
         { "id": "a", "text": "25" },
-        { "id": "b", "text": "33" },
-        { "id": "c", "text": "44" },
+        { "id": "b", "text": "33", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
+        { "id": "c", "text": "44", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
         { "id": "d", "text": "42" }
       ],
       "correctOption": "d",
@@ -77,7 +77,7 @@
         { "id": "a", "text": "2" },
         { "id": "b", "text": "1" },
         { "id": "c", "text": "0" },
-        { "id": "d", "text": "5" }
+        { "id": "d", "text": "5", "misconceptionTag": "math.num.extremum-demande-ignore" }
       ],
       "correctOption": "a",
       "explanation": "نريد 4 + ▢ مضاعفًا للعدد 3؛ أصغرُ قيمةٍ هي 2 لأنّ 4 + 2 = 6 يقبل القسمة على 3 (العددُ 42).",

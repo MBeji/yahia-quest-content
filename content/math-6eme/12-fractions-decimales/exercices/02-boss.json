@@ -10,9 +10,9 @@
       "prompt": "ما القيمةُ العشرية للكسر 6/10؟",
       "options": [
         { "id": "a", "text": "0,6" },
-        { "id": "b", "text": "6" },
-        { "id": "c", "text": "0,06" },
-        { "id": "d", "text": "60" }
+        { "id": "b", "text": "6", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" },
+        { "id": "c", "text": "0,06", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
+        { "id": "d", "text": "60", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" }
       ],
       "correctOption": "a",
       "explanation": "مقامُ الكسر 10، فله رقمٌ واحدٌ بعد الفاصلة: 6/10 = 0,6.",
@@ -22,9 +22,9 @@
     {
       "prompt": "اكتب العددَ 0,45 على شكل كسرٍ عشريّ.",
       "options": [
-        { "id": "a", "text": "45/10" },
+        { "id": "a", "text": "45/10", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
         { "id": "b", "text": "45/100" },
-        { "id": "c", "text": "45/1000" },
+        { "id": "c", "text": "45/1000", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
         { "id": "d", "text": "4,5" }
       ],
       "correctOption": "b",
@@ -35,10 +35,10 @@
     {
       "prompt": "ما القيمةُ العشرية للكسر 8/1000؟",
       "options": [
-        { "id": "a", "text": "0,8" },
-        { "id": "b", "text": "0,08" },
+        { "id": "a", "text": "0,8", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
+        { "id": "b", "text": "0,08", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
         { "id": "c", "text": "0,008" },
-        { "id": "d", "text": "8" }
+        { "id": "d", "text": "8", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" }
       ],
       "correctOption": "c",
       "explanation": "مقامُ الكسر 1000، فله ثلاثةُ أرقامٍ بعد الفاصلة: 8/1000 = 0,008.",
@@ -62,9 +62,9 @@
       "prompt": "اكتب الكسر 3/4 على شكل كسرٍ عشريّ بمقامٍ 100.",
       "options": [
         { "id": "a", "text": "75/100" },
-        { "id": "b", "text": "34/100" },
+        { "id": "b", "text": "34/100", "misconceptionTag": "math.frac.ecriture-decimale-chiffres-recopies" },
         { "id": "c", "text": "7/100" },
-        { "id": "d", "text": "3/100" }
+        { "id": "d", "text": "3/100", "misconceptionTag": "math.frac.equivalence-un-seul-terme-multiplie" }
       ],
       "correctOption": "a",
       "explanation": "نضرب البسطَ والمقامَ في 25: 3/4 = 75/100 (وهو 0,75).",
@@ -74,10 +74,10 @@
     {
       "prompt": "ما القيمةُ العشرية للكسر 250/100؟",
       "options": [
-        { "id": "a", "text": "25" },
+        { "id": "a", "text": "25", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
         { "id": "b", "text": "2,5" },
-        { "id": "c", "text": "0,25" },
-        { "id": "d", "text": "250" }
+        { "id": "c", "text": "0,25", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
+        { "id": "d", "text": "250", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" }
       ],
       "correctOption": "b",
       "explanation": "مقامُ الكسر 100، فله رقمان بعد الفاصلة: 250/100 = 2,5.",

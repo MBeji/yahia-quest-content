@@ -49,9 +49,9 @@
       "prompt": "ما المضاعفُ الموالي للعدد 18 في مضاعفات 6؟",
       "options": [
         { "id": "a", "text": "20" },
-        { "id": "b", "text": "19" },
+        { "id": "b", "text": "19", "misconceptionTag": "math.num.multiple-suivant-pas-ignore" },
         { "id": "c", "text": "24" },
-        { "id": "d", "text": "12" }
+        { "id": "d", "text": "12", "misconceptionTag": "math.num.multiple-precedent-au-lieu-du-suivant" }
       ],
       "correctOption": "c",
       "explanation": "مضاعفاتُ 6 تزيد بـ6 في كلّ مرّة: …، 12، 18، 24…؛ فالموالي للعدد 18 هو 24.",
@@ -75,9 +75,9 @@
       "prompt": "ما أصغرُ مضاعفٍ مشترك غيرِ معدوم للعددين 3 و4؟",
       "options": [
         { "id": "a", "text": "12" },
-        { "id": "b", "text": "7" },
+        { "id": "b", "text": "7", "misconceptionTag": "math.num.ppmc-par-addition" },
         { "id": "c", "text": "24" },
-        { "id": "d", "text": "1" }
+        { "id": "d", "text": "1", "misconceptionTag": "math.num.multiple-et-diviseur-confondus" }
       ],
       "correctOption": "a",
       "explanation": "مضاعفاتُ 3: 0، 3، 6، 9، 12…؛ ومضاعفاتُ 4: 0، 4، 8، 12…؛ أصغرُ مضاعفٍ مشترك غيرِ معدوم هو 12.",

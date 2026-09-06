@@ -10,8 +10,8 @@
       "prompt": "ما المضاعفُ الموالي للعدد 25 في مضاعفات 5؟",
       "options": [
         { "id": "a", "text": "30" },
-        { "id": "b", "text": "26" },
-        { "id": "c", "text": "20" },
+        { "id": "b", "text": "26", "misconceptionTag": "math.num.multiple-suivant-pas-ignore" },
+        { "id": "c", "text": "20", "misconceptionTag": "math.num.multiple-precedent-au-lieu-du-suivant" },
         { "id": "d", "text": "35" }
       ],
       "correctOption": "a",
@@ -35,10 +35,10 @@
     {
       "prompt": "ما أصغرُ مضاعفٍ مشترك غيرِ معدوم للعددين 5 و10؟",
       "options": [
-        { "id": "a", "text": "50" },
-        { "id": "b", "text": "5" },
+        { "id": "a", "text": "50", "misconceptionTag": "math.num.ppmc-remplace-par-le-produit" },
+        { "id": "b", "text": "5", "misconceptionTag": "math.num.multiple-et-diviseur-confondus" },
         { "id": "c", "text": "10" },
-        { "id": "d", "text": "15" }
+        { "id": "d", "text": "15", "misconceptionTag": "math.num.ppmc-par-addition" }
       ],
       "correctOption": "c",
       "explanation": "10 مضاعفٌ للعدد 5 وللعدد 10 معًا، فهو أصغرُ مضاعفٍ مشترك غيرِ معدوم لهما.",
@@ -61,7 +61,7 @@
     {
       "prompt": "إذا كان 7 قاسمًا للعدد 28، فإنّ 28 ...؟",
       "options": [
-        { "id": "a", "text": "قاسمٌ للعدد 7" },
+        { "id": "a", "text": "قاسمٌ للعدد 7", "misconceptionTag": "math.num.multiple-et-diviseur-confondus" },
         { "id": "b", "text": "مضاعفٌ للعدد 7" },
         { "id": "c", "text": "أصغرُ من 7" },
         { "id": "d", "text": "لا علاقة له بالعدد 7" }
@@ -74,8 +74,8 @@
     {
       "prompt": "مصباحان: الأوّل يومض كلّ 4 ثوانٍ والثاني كلّ 10 ثوانٍ، بدآ معًا. بعد كم ثانيةً يومضان معًا مجدّدًا؟",
       "options": [
-        { "id": "a", "text": "40" },
-        { "id": "b", "text": "14" },
+        { "id": "a", "text": "40", "misconceptionTag": "math.num.ppmc-remplace-par-le-produit" },
+        { "id": "b", "text": "14", "misconceptionTag": "math.num.ppmc-par-addition" },
         { "id": "c", "text": "20" },
         { "id": "d", "text": "10" }
       ],

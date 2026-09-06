@@ -10,9 +10,9 @@
       "prompt": "قارن بين 2/5 و 1/5.",
       "options": [
         { "id": "a", "text": "2/5 > 1/5" },
-        { "id": "b", "text": "2/5 < 1/5" },
+        { "id": "b", "text": "2/5 < 1/5", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
         { "id": "c", "text": "متساويان" },
-        { "id": "d", "text": "لا يمكن المقارنة" }
+        { "id": "d", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" }
       ],
       "correctOption": "a",
       "explanation": "عند تساوي المقام، الأكبرُ بسطًا هو الأكبر؛ وبما أنّ 2 > 1 فإنّ 2/5 > 1/5.",
@@ -22,7 +22,7 @@
     {
       "prompt": "أيُّ الكسرين أكبر: 5/6 أم 5/9؟",
       "options": [
-        { "id": "a", "text": "5/9" },
+        { "id": "a", "text": "5/9", "misconceptionTag": "math.frac.comparaison-par-denominateur" },
         { "id": "b", "text": "5/6" },
         { "id": "c", "text": "متساويان" },
         { "id": "d", "text": "5/12" }
@@ -35,9 +35,9 @@
     {
       "prompt": "قارن بين 1/3 و 1/2 (وحّد على 6).",
       "options": [
-        { "id": "a", "text": "1/3 > 1/2" },
+        { "id": "a", "text": "1/3 > 1/2", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
         { "id": "b", "text": "متساويان" },
-        { "id": "c", "text": "لا يمكن المقارنة" },
+        { "id": "c", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" },
         { "id": "d", "text": "1/3 < 1/2" }
       ],
       "correctOption": "d",
@@ -48,10 +48,10 @@
     {
       "prompt": "أيُّ كسرٍ أصغرُ من الوحدة (1)؟",
       "options": [
-        { "id": "a", "text": "8/5" },
-        { "id": "b", "text": "9/9" },
+        { "id": "a", "text": "8/5", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
+        { "id": "b", "text": "9/9", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
         { "id": "c", "text": "4/7" },
-        { "id": "d", "text": "7/3" }
+        { "id": "d", "text": "7/3", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" }
       ],
       "correctOption": "c",
       "explanation": "الكسرُ أصغرُ من 1 إذا كان بسطُه < مقامه؛ في 4/7 البسطُ 4 < المقام 7.",
@@ -62,7 +62,7 @@
       "prompt": "رتّب تصاعديًّا (المقام نفسُه): 4/10 ؛ 9/10 ؛ 1/10.",
       "options": [
         { "id": "a", "text": "1/10 < 4/10 < 9/10" },
-        { "id": "b", "text": "9/10 < 4/10 < 1/10" },
+        { "id": "b", "text": "9/10 < 4/10 < 1/10", "misconceptionTag": "math.num.ordre-croissant-decroissant-confondus" },
         { "id": "c", "text": "4/10 < 1/10 < 9/10" },
         { "id": "d", "text": "1/10 < 9/10 < 4/10" }
       ],

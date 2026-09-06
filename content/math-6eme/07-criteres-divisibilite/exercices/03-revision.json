@@ -24,7 +24,7 @@
       "options": [
         { "id": "a", "text": "لا" },
         { "id": "b", "text": "نعم" },
-        { "id": "c", "text": "لا لأنّه ينتهي بالرقم 0" },
+        { "id": "c", "text": "لا لأنّه ينتهي بالرقم 0", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
         { "id": "d", "text": "لا يمكن المعرفة" }
       ],
       "correctOption": "b",
@@ -35,10 +35,10 @@
     {
       "prompt": "أيُّ عددٍ يقبل القسمة على 5 وليس على 2؟",
       "options": [
-        { "id": "a", "text": "70" },
-        { "id": "b", "text": "80" },
+        { "id": "a", "text": "70", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
+        { "id": "b", "text": "80", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
         { "id": "c", "text": "65" },
-        { "id": "d", "text": "52" }
+        { "id": "d", "text": "52", "misconceptionTag": "math.num.divisibilite-un-seul-critere" }
       ],
       "correctOption": "c",
       "explanation": "آحادُ 65 هو 5 فيقبل القسمة على 5، وهو فرديّ فلا يقبلها على 2.",
@@ -74,10 +74,10 @@
     {
       "prompt": "أيُّ عددٍ يقبل القسمة على 2 و5 و10 معًا؟",
       "options": [
-        { "id": "a", "text": "255" },
-        { "id": "b", "text": "502" },
+        { "id": "a", "text": "255", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
+        { "id": "b", "text": "502", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
         { "id": "c", "text": "250" },
-        { "id": "d", "text": "25" }
+        { "id": "d", "text": "25", "misconceptionTag": "math.num.divisibilite-un-seul-critere" }
       ],
       "correctOption": "c",
       "explanation": "العددُ يقبل القسمة على 2 و5 و10 معًا إذا كان آحاده 0؛ آحادُ 250 هو 0، فهو يقبلها جميعًا.",

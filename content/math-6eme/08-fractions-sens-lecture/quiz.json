@@ -4,7 +4,7 @@
     {
       "prompt": "في الكسر 3/5، ما المقام؟",
       "options": [
-        { "id": "a", "text": "3" },
+        { "id": "a", "text": "3", "misconceptionTag": "math.frac.numerateur-denominateur-inverses" },
         { "id": "b", "text": "5" },
         { "id": "c", "text": "8" },
         { "id": "d", "text": "2" }
@@ -31,9 +31,9 @@
       "prompt": "ما قيمةُ 3/4 من 20؟",
       "options": [
         { "id": "a", "text": "15" },
-        { "id": "b", "text": "5" },
+        { "id": "b", "text": "5", "misconceptionTag": "math.frac.fraction-d-un-nombre-etape-oubliee" },
         { "id": "c", "text": "12" },
-        { "id": "d", "text": "80" }
+        { "id": "d", "text": "80", "misconceptionTag": "math.frac.fraction-d-un-nombre-multipliee-au-lieu-de-divisee" }
       ],
       "correctOption": "a",
       "explanation": "نقسم على المقام ثمّ نضرب في البسط: (20 ÷ 4) × 3 = 5 × 3 = 15. إذن 3/4 من 20 = 15.",
@@ -43,9 +43,9 @@
     {
       "prompt": "أيُّ كسرٍ يساوي الوحدة (1)؟",
       "options": [
-        { "id": "a", "text": "3/4" },
-        { "id": "b", "text": "1/2" },
-        { "id": "c", "text": "5/4" },
+        { "id": "a", "text": "3/4", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
+        { "id": "b", "text": "1/2", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
+        { "id": "c", "text": "5/4", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
         { "id": "d", "text": "7/7" }
       ],
       "correctOption": "d",
@@ -56,9 +56,9 @@
     {
       "prompt": "الكسرُ 5/4 هو:",
       "options": [
-        { "id": "a", "text": "أصغرُ من 1" },
+        { "id": "a", "text": "أصغرُ من 1", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
         { "id": "b", "text": "أكبرُ من 1" },
-        { "id": "c", "text": "يساوي 1" },
+        { "id": "c", "text": "يساوي 1", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
         { "id": "d", "text": "يساوي 0" }
       ],
       "correctOption": "b",
