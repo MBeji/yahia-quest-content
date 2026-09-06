@@ -10,9 +10,9 @@
       "prompt": "اختزل الكسر 14/21.",
       "options": [
         { "id": "a", "text": "2/3" },
-        { "id": "b", "text": "7/21" },
+        { "id": "b", "text": "7/21", "misconceptionTag": "math.frac.reduction-un-seul-terme-divise" },
         { "id": "c", "text": "2/7" },
-        { "id": "d", "text": "14/21" }
+        { "id": "d", "text": "14/21", "misconceptionTag": "math.frac.reduction-incomplete" }
       ],
       "correctOption": "a",
       "explanation": "نقسم البسطَ والمقامَ على القاسم المشترك 7: 14/21 = (14÷7)/(21÷7) = 2/3.",
@@ -35,7 +35,7 @@
     {
       "prompt": "ما البسطُ المفقود: 7/8 = ؟/40؟",
       "options": [
-        { "id": "a", "text": "28" },
+        { "id": "a", "text": "28", "misconceptionTag": "math.frac.equivalence-facteur-errone" },
         { "id": "b", "text": "32" },
         { "id": "c", "text": "35" },
         { "id": "d", "text": "47" }
@@ -48,8 +48,8 @@
     {
       "prompt": "ما الصورةُ المختزَلة (غيرُ القابلة للاختزال) للكسر 16/20؟",
       "options": [
-        { "id": "a", "text": "8/10" },
-        { "id": "b", "text": "16/20" },
+        { "id": "a", "text": "8/10", "misconceptionTag": "math.frac.reduction-incomplete" },
+        { "id": "b", "text": "16/20", "misconceptionTag": "math.frac.reduction-incomplete" },
         { "id": "c", "text": "2/3" },
         { "id": "d", "text": "4/5" }
       ],
@@ -62,9 +62,9 @@
       "prompt": "في صفٍّ، 12/30 من التلاميذ بناتٌ. ما هذا الكسرُ في أبسط صورة؟",
       "options": [
         { "id": "a", "text": "2/5" },
-        { "id": "b", "text": "6/15" },
+        { "id": "b", "text": "6/15", "misconceptionTag": "math.frac.reduction-incomplete" },
         { "id": "c", "text": "1/2" },
-        { "id": "d", "text": "4/10" }
+        { "id": "d", "text": "4/10", "misconceptionTag": "math.frac.reduction-incomplete" }
       ],
       "correctOption": "a",
       "explanation": "نقسم البسطَ والمقامَ على القاسم المشترك الأكبر 6: 12/30 = (12÷6)/(30÷6) = 2/5.",

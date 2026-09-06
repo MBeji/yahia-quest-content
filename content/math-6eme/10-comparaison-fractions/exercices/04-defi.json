@@ -10,9 +10,9 @@
       "prompt": "قارن بين 7/10 و 3/5 (وحّد على 10).",
       "options": [
         { "id": "a", "text": "7/10 > 3/5" },
-        { "id": "b", "text": "7/10 < 3/5" },
+        { "id": "b", "text": "7/10 < 3/5", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
         { "id": "c", "text": "متساويان" },
-        { "id": "d", "text": "لا يمكن المقارنة" }
+        { "id": "d", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" }
       ],
       "correctOption": "a",
       "explanation": "نوحّد على 10: 3/5 = 6/10؛ وبما أنّ 7 > 6 فإنّ 7/10 > 3/5.",
@@ -22,7 +22,7 @@
     {
       "prompt": "رتّب تصاعديًّا: 1/2 ؛ 2/3 ؛ 5/6 (وحّد على 6).",
       "options": [
-        { "id": "a", "text": "5/6 < 2/3 < 1/2" },
+        { "id": "a", "text": "5/6 < 2/3 < 1/2", "misconceptionTag": "math.num.ordre-croissant-decroissant-confondus" },
         { "id": "b", "text": "1/2 < 2/3 < 5/6" },
         { "id": "c", "text": "2/3 < 1/2 < 5/6" },
         { "id": "d", "text": "1/2 < 5/6 < 2/3" }
@@ -35,10 +35,10 @@
     {
       "prompt": "أيُّ كسرٍ أكبر: 4/5 أم 5/6؟ (وحّد على 30).",
       "options": [
-        { "id": "a", "text": "4/5" },
+        { "id": "a", "text": "4/5", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
         { "id": "b", "text": "متساويان" },
         { "id": "c", "text": "5/6" },
-        { "id": "d", "text": "لا يمكن المقارنة" }
+        { "id": "d", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" }
       ],
       "correctOption": "c",
       "explanation": "نوحّد على 30: 4/5 = 24/30 و 5/6 = 25/30؛ وبما أنّ 25 > 24 فإنّ 5/6 > 4/5.",
@@ -62,8 +62,8 @@
       "prompt": "ما الكسرُ الأصغر: 1/2 ؛ 2/5 ؛ 3/10؟ (وحّد على 10)",
       "options": [
         { "id": "a", "text": "3/10" },
-        { "id": "b", "text": "1/2" },
-        { "id": "c", "text": "2/5" },
+        { "id": "b", "text": "1/2", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
+        { "id": "c", "text": "2/5", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
         { "id": "d", "text": "متساوية" }
       ],
       "correctOption": "a",
@@ -74,10 +74,10 @@
     {
       "prompt": "قارن بين 6/8 و 9/12 بعد اختزالهما.",
       "options": [
-        { "id": "a", "text": "6/8 > 9/12" },
+        { "id": "a", "text": "6/8 > 9/12", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
         { "id": "b", "text": "متساويان" },
-        { "id": "c", "text": "6/8 < 9/12" },
-        { "id": "d", "text": "لا يمكن المقارنة" }
+        { "id": "c", "text": "6/8 < 9/12", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
+        { "id": "d", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" }
       ],
       "correctOption": "b",
       "explanation": "نختزل: 6/8 = 3/4 و 9/12 = 3/4؛ فالكسران متساويان.",

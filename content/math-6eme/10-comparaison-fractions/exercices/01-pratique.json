@@ -10,9 +10,9 @@
       "prompt": "قارن بين 1/5 و 3/5.",
       "options": [
         { "id": "a", "text": "1/5 < 3/5" },
-        { "id": "b", "text": "1/5 > 3/5" },
+        { "id": "b", "text": "1/5 > 3/5", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
         { "id": "c", "text": "متساويان" },
-        { "id": "d", "text": "لا يمكن المقارنة" }
+        { "id": "d", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" }
       ],
       "correctOption": "a",
       "explanation": "عند تساوي المقام، الأكبرُ بسطًا هو الأكبر؛ وبما أنّ 1 < 3 فإنّ 1/5 < 3/5.",
@@ -23,7 +23,7 @@
       "prompt": "أيُّ الكسرين أكبر: 1/2 أم 1/4؟",
       "options": [
         { "id": "a", "text": "1/2" },
-        { "id": "b", "text": "1/4" },
+        { "id": "b", "text": "1/4", "misconceptionTag": "math.frac.comparaison-par-denominateur" },
         { "id": "c", "text": "متساويان" },
         { "id": "d", "text": "1/6" }
       ],
@@ -35,10 +35,10 @@
     {
       "prompt": "أيُّ الكسرين أصغر: 2/7 أم 4/7؟",
       "options": [
-        { "id": "a", "text": "4/7" },
+        { "id": "a", "text": "4/7", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
         { "id": "b", "text": "2/7" },
         { "id": "c", "text": "متساويان" },
-        { "id": "d", "text": "لا يمكن المقارنة" }
+        { "id": "d", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" }
       ],
       "correctOption": "b",
       "explanation": "عند تساوي المقام، الأصغرُ بسطًا هو الأصغر؛ وبما أنّ 2 < 4 فإنّ 2/7 أصغرُ من 4/7.",
@@ -48,10 +48,10 @@
     {
       "prompt": "أيُّ كسرٍ أكبرُ من الوحدة (1)؟",
       "options": [
-        { "id": "a", "text": "5/6" },
+        { "id": "a", "text": "5/6", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
         { "id": "b", "text": "9/7" },
-        { "id": "c", "text": "3/8" },
-        { "id": "d", "text": "1/2" }
+        { "id": "c", "text": "3/8", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
+        { "id": "d", "text": "1/2", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" }
       ],
       "correctOption": "b",
       "explanation": "في 9/7 البسطُ 9 أكبرُ من المقام 7، فالكسرُ أكبرُ من الوحدة 1.",
@@ -61,7 +61,7 @@
     {
       "prompt": "رتّب تصاعديًّا (المقام نفسُه): 3/8 ؛ 1/8 ؛ 6/8.",
       "options": [
-        { "id": "a", "text": "6/8 < 3/8 < 1/8" },
+        { "id": "a", "text": "6/8 < 3/8 < 1/8", "misconceptionTag": "math.num.ordre-croissant-decroissant-confondus" },
         { "id": "b", "text": "1/8 < 6/8 < 3/8" },
         { "id": "c", "text": "1/8 < 3/8 < 6/8" },
         { "id": "d", "text": "3/8 < 1/8 < 6/8" }
@@ -74,9 +74,9 @@
     {
       "prompt": "قارن بين 1/2 و 3/5 (وحّد المقامات على 10).",
       "options": [
-        { "id": "a", "text": "1/2 > 3/5" },
+        { "id": "a", "text": "1/2 > 3/5", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
         { "id": "b", "text": "متساويان" },
-        { "id": "c", "text": "لا يمكن المقارنة" },
+        { "id": "c", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" },
         { "id": "d", "text": "1/2 < 3/5" }
       ],
       "correctOption": "d",

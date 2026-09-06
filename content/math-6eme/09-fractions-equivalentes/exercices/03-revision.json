@@ -10,9 +10,9 @@
       "prompt": "اختزل الكسر 4/8.",
       "options": [
         { "id": "a", "text": "1/2" },
-        { "id": "b", "text": "2/4" },
+        { "id": "b", "text": "2/4", "misconceptionTag": "math.frac.reduction-incomplete" },
         { "id": "c", "text": "1/4" },
-        { "id": "d", "text": "4/8" }
+        { "id": "d", "text": "4/8", "misconceptionTag": "math.frac.reduction-incomplete" }
       ],
       "correctOption": "a",
       "explanation": "نقسم البسطَ والمقامَ على القاسم المشترك الأكبر 4: 4/8 = (4÷4)/(8÷4) = 1/2.",
@@ -35,10 +35,10 @@
     {
       "prompt": "اختزل الكسر 15/20.",
       "options": [
-        { "id": "a", "text": "5/20" },
+        { "id": "a", "text": "5/20", "misconceptionTag": "math.frac.reduction-un-seul-terme-divise" },
         { "id": "b", "text": "3/5" },
         { "id": "c", "text": "3/4" },
-        { "id": "d", "text": "15/20" }
+        { "id": "d", "text": "15/20", "misconceptionTag": "math.frac.reduction-incomplete" }
       ],
       "correctOption": "c",
       "explanation": "نقسم البسطَ والمقامَ على القاسم المشترك 5: 15/20 = (15÷5)/(20÷5) = 3/4.",
@@ -50,7 +50,7 @@
       "options": [
         { "id": "a", "text": "4" },
         { "id": "b", "text": "8" },
-        { "id": "c", "text": "12" },
+        { "id": "c", "text": "12", "misconceptionTag": "math.frac.equivalence-facteur-errone" },
         { "id": "d", "text": "6" }
       ],
       "correctOption": "d",
@@ -62,7 +62,7 @@
       "prompt": "أيُّ كسرٍ يساوي 2/5؟",
       "options": [
         { "id": "a", "text": "4/10" },
-        { "id": "b", "text": "5/2" },
+        { "id": "b", "text": "5/2", "misconceptionTag": "math.frac.numerateur-denominateur-inverses" },
         { "id": "c", "text": "2/10" },
         { "id": "d", "text": "4/5" }
       ],
@@ -74,9 +74,9 @@
     {
       "prompt": "اختزل الكسر 18/24 إلى أبسط صورة.",
       "options": [
-        { "id": "a", "text": "9/12" },
+        { "id": "a", "text": "9/12", "misconceptionTag": "math.frac.reduction-incomplete" },
         { "id": "b", "text": "3/4" },
-        { "id": "c", "text": "6/8" },
+        { "id": "c", "text": "6/8", "misconceptionTag": "math.frac.reduction-incomplete" },
         { "id": "d", "text": "2/3" }
       ],
       "correctOption": "b",

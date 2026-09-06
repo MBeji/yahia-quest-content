@@ -10,9 +10,9 @@
       "prompt": "ما ناتج 1/6 + 4/6؟",
       "options": [
         { "id": "a", "text": "5/6" },
-        { "id": "b", "text": "5/12" },
+        { "id": "b", "text": "5/12", "misconceptionTag": "math.frac.add-denominators" },
         { "id": "c", "text": "3/6" },
-        { "id": "d", "text": "5/36" }
+        { "id": "d", "text": "5/36", "misconceptionTag": "math.frac.denominateurs-multiplies" }
       ],
       "correctOption": "a",
       "explanation": "عند تساوي المقام نجمع البُسُط: 1/6 + 4/6 = (1+4)/6 = 5/6.",
@@ -22,9 +22,9 @@
     {
       "prompt": "ما ناتج 8/9 − 2/9 (مع الاختزال)؟",
       "options": [
-        { "id": "a", "text": "6/18" },
+        { "id": "a", "text": "6/18", "misconceptionTag": "math.frac.add-denominators" },
         { "id": "b", "text": "2/3" },
-        { "id": "c", "text": "10/9" },
+        { "id": "c", "text": "10/9", "misconceptionTag": "math.num.operation-inverse-appliquee" },
         { "id": "d", "text": "5/9" }
       ],
       "correctOption": "b",
@@ -35,7 +35,7 @@
     {
       "prompt": "ما ناتج 1/2 + 1/3 (وحّد على 6)؟",
       "options": [
-        { "id": "a", "text": "2/5" },
+        { "id": "a", "text": "2/5", "misconceptionTag": "math.frac.add-numerators-and-denominators" },
         { "id": "b", "text": "2/6" },
         { "id": "c", "text": "5/6" },
         { "id": "d", "text": "1/6" }
@@ -49,7 +49,7 @@
       "prompt": "ما ناتج 1 − 2/5؟",
       "options": [
         { "id": "a", "text": "2/5" },
-        { "id": "b", "text": "5/5" },
+        { "id": "b", "text": "5/5", "misconceptionTag": "math.frac.entier-converti-mais-operation-oubliee" },
         { "id": "c", "text": "3/10" },
         { "id": "d", "text": "3/5" }
       ],
@@ -74,7 +74,7 @@
     {
       "prompt": "ما ناتج 3/4 + 1/8 (وحّد على 8)؟",
       "options": [
-        { "id": "a", "text": "4/12" },
+        { "id": "a", "text": "4/12", "misconceptionTag": "math.frac.add-numerators-and-denominators" },
         { "id": "b", "text": "7/8" },
         { "id": "c", "text": "7/12" },
         { "id": "d", "text": "6/8" }

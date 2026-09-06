@@ -10,9 +10,9 @@
       "prompt": "ما القيمةُ العشرية للكسر 2/10؟",
       "options": [
         { "id": "a", "text": "0,2" },
-        { "id": "b", "text": "2" },
-        { "id": "c", "text": "0,02" },
-        { "id": "d", "text": "20" }
+        { "id": "b", "text": "2", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" },
+        { "id": "c", "text": "0,02", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
+        { "id": "d", "text": "20", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" }
       ],
       "correctOption": "a",
       "explanation": "مقامُ الكسر 10، فله رقمٌ واحدٌ بعد الفاصلة: 2/10 = 0,2.",
@@ -22,9 +22,9 @@
     {
       "prompt": "اكتب العددَ 0,6 على شكل كسرٍ عشريّ ثمّ اختزله.",
       "options": [
-        { "id": "a", "text": "6/100" },
+        { "id": "a", "text": "6/100", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
         { "id": "b", "text": "3/5" },
-        { "id": "c", "text": "1/6" },
+        { "id": "c", "text": "1/6", "misconceptionTag": "math.frac.ecriture-decimale-chiffres-recopies" },
         { "id": "d", "text": "60/10" }
       ],
       "correctOption": "b",
@@ -35,10 +35,10 @@
     {
       "prompt": "ما القيمةُ العشرية للكسر 15/100؟",
       "options": [
-        { "id": "a", "text": "1,5" },
-        { "id": "b", "text": "0,015" },
+        { "id": "a", "text": "1,5", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
+        { "id": "b", "text": "0,015", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
         { "id": "c", "text": "0,15" },
-        { "id": "d", "text": "15" }
+        { "id": "d", "text": "15", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" }
       ],
       "correctOption": "c",
       "explanation": "مقامُ الكسر 100، فله رقمان بعد الفاصلة: 15/100 = 0,15.",
@@ -48,8 +48,8 @@
     {
       "prompt": "ما الكسرُ العشريّ المساوي للعدد 2,3؟",
       "options": [
-        { "id": "a", "text": "23/100" },
-        { "id": "b", "text": "2/3" },
+        { "id": "a", "text": "23/100", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
+        { "id": "b", "text": "2/3", "misconceptionTag": "math.frac.ecriture-decimale-chiffres-recopies" },
         { "id": "c", "text": "230" },
         { "id": "d", "text": "23/10" }
       ],

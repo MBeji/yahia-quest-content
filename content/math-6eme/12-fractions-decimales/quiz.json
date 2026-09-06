@@ -5,9 +5,9 @@
       "prompt": "ما القيمةُ العشرية للكسر 3/10؟",
       "options": [
         { "id": "a", "text": "0,3" },
-        { "id": "b", "text": "3" },
-        { "id": "c", "text": "0,03" },
-        { "id": "d", "text": "30" }
+        { "id": "b", "text": "3", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" },
+        { "id": "c", "text": "0,03", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
+        { "id": "d", "text": "30", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" }
       ],
       "correctOption": "a",
       "explanation": "مقامُ الكسر 10، فله رقمٌ واحدٌ بعد الفاصلة: 3/10 = 0,3.",
@@ -17,10 +17,10 @@
     {
       "prompt": "اكتب العددَ العشريّ 0,7 على شكل كسرٍ عشريّ.",
       "options": [
-        { "id": "a", "text": "7/100" },
+        { "id": "a", "text": "7/100", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
         { "id": "b", "text": "70" },
         { "id": "c", "text": "7/10" },
-        { "id": "d", "text": "1/7" }
+        { "id": "d", "text": "1/7", "misconceptionTag": "math.frac.ecriture-decimale-chiffres-recopies" }
       ],
       "correctOption": "c",
       "explanation": "للعدد 0,7 رقمٌ واحدٌ بعد الفاصلة، فهو 7 أعشار: 0,7 = 7/10.",
@@ -30,10 +30,10 @@
     {
       "prompt": "ما القيمةُ العشرية للكسر 25/100؟",
       "options": [
-        { "id": "a", "text": "2,5" },
+        { "id": "a", "text": "2,5", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
         { "id": "b", "text": "0,25" },
-        { "id": "c", "text": "0,025" },
-        { "id": "d", "text": "25" }
+        { "id": "c", "text": "0,025", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
+        { "id": "d", "text": "25", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" }
       ],
       "correctOption": "b",
       "explanation": "مقامُ الكسر 100، فله رقمان بعد الفاصلة: 25/100 = 0,25.",
@@ -43,9 +43,9 @@
     {
       "prompt": "اكتب العددَ 0,09 على شكل كسرٍ عشريّ.",
       "options": [
-        { "id": "a", "text": "9/10" },
-        { "id": "b", "text": "9/1000" },
-        { "id": "c", "text": "90/100" },
+        { "id": "a", "text": "9/10", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
+        { "id": "b", "text": "9/1000", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
+        { "id": "c", "text": "90/100", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
         { "id": "d", "text": "9/100" }
       ],
       "correctOption": "d",
@@ -57,8 +57,8 @@
       "prompt": "ما الكسرُ العشريّ المساوي للعدد 1,5؟",
       "options": [
         { "id": "a", "text": "15/10" },
-        { "id": "b", "text": "15/100" },
-        { "id": "c", "text": "1/5" },
+        { "id": "b", "text": "15/100", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
+        { "id": "c", "text": "1/5", "misconceptionTag": "math.frac.ecriture-decimale-chiffres-recopies" },
         { "id": "d", "text": "150" }
       ],
       "correctOption": "a",

@@ -10,9 +10,9 @@
       "prompt": "ما ناتج 1/5 × 2؟",
       "options": [
         { "id": "a", "text": "2/5" },
-        { "id": "b", "text": "1/10" },
-        { "id": "c", "text": "2/10" },
-        { "id": "d", "text": "3/5" }
+        { "id": "b", "text": "1/10", "misconceptionTag": "math.frac.multiplication-denominateur-multiplie" },
+        { "id": "c", "text": "2/10", "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies" },
+        { "id": "d", "text": "3/5", "misconceptionTag": "math.num.operation-inverse-appliquee" }
       ],
       "correctOption": "a",
       "explanation": "نضرب البسطَ في 2 ونُبقي المقام: 1/5 × 2 = (1×2)/5 = 2/5.",
@@ -22,10 +22,10 @@
     {
       "prompt": "ما ناتج 3/7 × 2؟",
       "options": [
-        { "id": "a", "text": "3/14" },
+        { "id": "a", "text": "3/14", "misconceptionTag": "math.frac.multiplication-denominateur-multiplie" },
         { "id": "b", "text": "6/7" },
-        { "id": "c", "text": "6/14" },
-        { "id": "d", "text": "5/7" }
+        { "id": "c", "text": "6/14", "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies" },
+        { "id": "d", "text": "5/7", "misconceptionTag": "math.num.operation-inverse-appliquee" }
       ],
       "correctOption": "b",
       "explanation": "نضرب البسطَ في 2 ونُبقي المقام: 3/7 × 2 = (3×2)/7 = 6/7.",
@@ -35,10 +35,10 @@
     {
       "prompt": "كيف نضرب كسرًا في عددٍ صحيح؟",
       "options": [
-        { "id": "a", "text": "نضرب المقامَ في العدد" },
-        { "id": "b", "text": "نضرب الاثنين في العدد" },
+        { "id": "a", "text": "نضرب المقامَ في العدد", "misconceptionTag": "math.frac.multiplication-denominateur-multiplie" },
+        { "id": "b", "text": "نضرب الاثنين في العدد", "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies" },
         { "id": "c", "text": "نضرب البسطَ في العدد ونُبقي المقام" },
-        { "id": "d", "text": "نجمعهما" }
+        { "id": "d", "text": "نجمعهما", "misconceptionTag": "math.num.operation-inverse-appliquee" }
       ],
       "correctOption": "c",
       "explanation": "القاعدة: a/b × n = (a×n)/b، أي نضرب البسطَ في العدد ونُبقي المقامَ كما هو.",
@@ -48,9 +48,9 @@
     {
       "prompt": "ما ناتج 2/9 × 4؟",
       "options": [
-        { "id": "a", "text": "2/36" },
-        { "id": "b", "text": "8/36" },
-        { "id": "c", "text": "6/9" },
+        { "id": "a", "text": "2/36", "misconceptionTag": "math.frac.multiplication-denominateur-multiplie" },
+        { "id": "b", "text": "8/36", "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies" },
+        { "id": "c", "text": "6/9", "misconceptionTag": "math.num.operation-inverse-appliquee" },
         { "id": "d", "text": "8/9" }
       ],
       "correctOption": "d",
@@ -74,7 +74,7 @@
     {
       "prompt": "ما ناتج 2/4 × 3 (مع الاختزال)؟",
       "options": [
-        { "id": "a", "text": "6/12" },
+        { "id": "a", "text": "6/12", "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies" },
         { "id": "b", "text": "3/2" },
         { "id": "c", "text": "5/4" },
         { "id": "d", "text": "2/12" }

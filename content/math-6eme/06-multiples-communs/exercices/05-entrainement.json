@@ -22,10 +22,10 @@
     {
       "prompt": "ما أصغرُ مضاعفٍ مشترك غيرِ معدوم للعددين 8 و12؟",
       "options": [
-        { "id": "a", "text": "96" },
-        { "id": "b", "text": "4" },
+        { "id": "a", "text": "96", "misconceptionTag": "math.num.ppmc-remplace-par-le-produit" },
+        { "id": "b", "text": "4", "misconceptionTag": "math.num.multiple-et-diviseur-confondus" },
         { "id": "c", "text": "24" },
-        { "id": "d", "text": "20" }
+        { "id": "d", "text": "20", "misconceptionTag": "math.num.ppmc-par-addition" }
       ],
       "correctOption": "c",
       "explanation": "مضاعفاتُ 8: 8، 16، 24…؛ ومضاعفاتُ 12: 12، 24…؛ أصغرُ مضاعفٍ مشترك غيرِ معدوم هو 24.",
@@ -35,10 +35,10 @@
     {
       "prompt": "أيُّ الأعداد التالية مضاعفٌ للعددين 3 و4 معًا؟",
       "options": [
-        { "id": "a", "text": "9" },
-        { "id": "b", "text": "8" },
+        { "id": "a", "text": "9", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
+        { "id": "b", "text": "8", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
         { "id": "c", "text": "24" },
-        { "id": "d", "text": "15" }
+        { "id": "d", "text": "15", "misconceptionTag": "math.num.divisibilite-un-seul-critere" }
       ],
       "correctOption": "c",
       "explanation": "العددُ مضاعفٌ للعددين 3 و4 معًا إذا كان مضاعفًا للعدد 12؛ 24 = 12 × 2.",

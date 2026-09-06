@@ -10,9 +10,9 @@
       "prompt": "ما القيمةُ العشرية للكسر 375/1000؟",
       "options": [
         { "id": "a", "text": "0,375" },
-        { "id": "b", "text": "3,75" },
-        { "id": "c", "text": "0,0375" },
-        { "id": "d", "text": "375" }
+        { "id": "b", "text": "3,75", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
+        { "id": "c", "text": "0,0375", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
+        { "id": "d", "text": "375", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" }
       ],
       "correctOption": "a",
       "explanation": "مقامُ الكسر 1000، فله ثلاثةُ أرقامٍ بعد الفاصلة: 375/1000 = 0,375.",
@@ -24,7 +24,7 @@
       "options": [
         { "id": "a", "text": "0,4" },
         { "id": "b", "text": "0,25" },
-        { "id": "c", "text": "0,14" },
+        { "id": "c", "text": "0,14", "misconceptionTag": "math.frac.ecriture-decimale-chiffres-recopies" },
         { "id": "d", "text": "0,025" }
       ],
       "correctOption": "b",
@@ -35,10 +35,10 @@
     {
       "prompt": "اكتب العددَ 0,125 على شكل كسرٍ عشريّ ثمّ اختزله.",
       "options": [
-        { "id": "a", "text": "125/100" },
-        { "id": "b", "text": "1/125" },
+        { "id": "a", "text": "125/100", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
+        { "id": "b", "text": "1/125", "misconceptionTag": "math.frac.ecriture-decimale-chiffres-recopies" },
         { "id": "c", "text": "1/8" },
-        { "id": "d", "text": "125/10" }
+        { "id": "d", "text": "125/10", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" }
       ],
       "correctOption": "c",
       "explanation": "0,125 = 125/1000، وبالاختزال على 125: 125/1000 = 1/8.",
@@ -48,9 +48,9 @@
     {
       "prompt": "أيُّ كسرٍ عشريّ يساوي العددَ 0,75؟",
       "options": [
-        { "id": "a", "text": "75/1000" },
-        { "id": "b", "text": "7/5" },
-        { "id": "c", "text": "75/10" },
+        { "id": "a", "text": "75/1000", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
+        { "id": "b", "text": "7/5", "misconceptionTag": "math.frac.ecriture-decimale-chiffres-recopies" },
+        { "id": "c", "text": "75/10", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
         { "id": "d", "text": "75/100" }
       ],
       "correctOption": "d",

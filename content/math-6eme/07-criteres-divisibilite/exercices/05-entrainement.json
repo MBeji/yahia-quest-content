@@ -11,8 +11,8 @@
       "options": [
         { "id": "a", "text": "لأنّ آحاده 8" },
         { "id": "b", "text": "لأنّ آحاده 0" },
-        { "id": "c", "text": "لأنّ مجموع أرقامه 12" },
-        { "id": "d", "text": "لأنّه عددٌ زوجيّ" }
+        { "id": "c", "text": "لأنّ مجموع أرقامه 12", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
+        { "id": "d", "text": "لأنّه عددٌ زوجيّ", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" }
       ],
       "correctOption": "b",
       "explanation": "العددُ 480 يقبل القسمة على 10 لأنّ آحاده 0 (وكلُّ عددٍ آحاده 0 يقبل القسمة على 10).",
@@ -61,7 +61,7 @@
     {
       "prompt": "ما أكبرُ رقمٍ نضعه مكان ▢ في العدد 2▢ (من خانتين) ليقبل القسمةَ على 5؟",
       "options": [
-        { "id": "a", "text": "0" },
+        { "id": "a", "text": "0", "misconceptionTag": "math.num.extremum-demande-ignore" },
         { "id": "b", "text": "9" },
         { "id": "c", "text": "2" },
         { "id": "d", "text": "5" }
@@ -75,9 +75,9 @@
       "prompt": "عددٌ من ثلاث خاناتٍ مجموعُ أرقامه 15. هل يقبل القسمةَ على 3 وعلى 9؟",
       "options": [
         { "id": "a", "text": "على 3 نعم وعلى 9 لا" },
-        { "id": "b", "text": "عليهما معًا" },
+        { "id": "b", "text": "عليهما معًا", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
         { "id": "c", "text": "لا على 3 ولا على 9" },
-        { "id": "d", "text": "على 9 فقط" }
+        { "id": "d", "text": "على 9 فقط", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" }
       ],
       "correctOption": "a",
       "explanation": "مجموعُ الأرقام 15 يقبل القسمة على 3 (15 = 3 × 5) ولا يقبلها على 9، فالعددُ يقبل القسمة على 3 لا على 9.",
