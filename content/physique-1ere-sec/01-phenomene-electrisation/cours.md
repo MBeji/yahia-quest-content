@@ -41,7 +41,10 @@ Frotte deux bâtons en verre : approchés l'un de l'autre, ils **se repoussent**
 </svg>
 :::
 
-Retiens la double loi : **deux corps chargés de même signe se repoussent ; deux corps chargés de signes contraires s'attirent.**
+::: propriete La double loi d'interaction
+**Deux corps chargés d'électricité de même signe se repoussent.**
+**Deux corps chargés d'électricité de signes contraires s'attirent.**
+:::
 
 ## 🔄 Trois façons d'électriser
 
@@ -53,7 +56,7 @@ Il existe **trois modes d'électrisation** :
 | **contact**    | un corps électrisé en touche un autre           | le corps touché prend une charge **de même signe** |
 | **influence**  | on approche un corps électrisé **sans toucher** | les charges de l'autre corps se réorganisent       |
 
-L'**électroscope** est l'appareil qui, par **influence**, permet de **détecter si un corps qui lui est approché est électrisé ou non** : son aiguille (ou ses feuilles) dévie.
+L'**électroscope** est l'appareil qui, par **influence**, permet de **détecter si un corps qui lui est approché est électrisé ou non** : son aiguille (ou ses feuilles) dévie. Plus la déviation est grande, plus le corps est chargé : l'électroscope permet donc aussi de **comparer les quantités d'électricité** de deux corps électrisés.
 
 C'est aussi l'**influence** qui explique pourquoi un corps chargé attire même un corps **neutre** (comme la boule du début du chapitre) : il attire vers lui les charges de signe opposé et repousse les charges de même signe. Les charges attirées se retrouvant **plus proches** que les charges repoussées, **l'attraction l'emporte sur la répulsion**.
 
@@ -86,7 +89,11 @@ Lors du frottement, de minuscules porteurs négatifs, les **électrons**, **migr
 </svg>
 :::
 
-La charge portée par un corps est une **grandeur mesurable**, notée **q**. Son unité, dans le système international, est le **coulomb** (symbole **C**). La charge d'un seul électron est notée **−e**, où **e** est la **charge élémentaire** :
+::: definition La quantité d'électricité
+La charge portée par un corps est une **grandeur mesurable**, notée **q**. Son unité, dans le système international, est le **coulomb**, de symbole **C**.
+:::
+
+La charge d'un seul électron est notée **−e**, où **e** est la **charge élémentaire** :
 
 $$ e = 1,6 × 10⁻¹⁹ C $$
 

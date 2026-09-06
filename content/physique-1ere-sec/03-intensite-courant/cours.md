@@ -44,7 +44,11 @@ Dans un montage en dérivation à un seul générateur :
 
 ## 📊 L'intensité et l'ampère
 
-Deux piles branchées sur une même lampe la font briller différemment : une grandeur caractérise cette différence, l'**intensité** du courant. Elle est **notée I** et s'exprime, dans le système international, en **ampère** (symbole **A**). On la mesure avec un **ampèremètre** (à aiguille ou numérique).
+Deux piles branchées sur une même lampe la font briller différemment : une grandeur caractérise cette différence.
+
+::: definition L'intensité du courant
+À un courant électrique est associée une **grandeur mesurable** appelée **intensité du courant**, symbolisée par **I** et exprimée en **ampère**, de symbole **A**. Elle se mesure à l'aide d'un appareil appelé **ampèremètre**.
+:::
 
 ## 🎛️ Mesurer avec l'ampèremètre
 
@@ -60,7 +64,11 @@ _Exemple détaillé_ : calibre **1 A**, échelle de **100** divisions, aiguille 
 
 Insère l'ampèremètre à différents endroits d'un **circuit série** : il indique **toujours la même valeur**.
 
-> 🗡️ **Dans un circuit série, l'intensité du courant est la même en tout point** — quel que soit l'ordre des dipôles. Ajouter un récepteur en série **diminue** cette intensité commune.
+::: propriete L'intensité dans un circuit série
+Dans un circuit série, **l'intensité du courant est la même en tous ses points** — quel que soit l'ordre des dipôles.
+:::
+
+> 🗡️ Ajouter un récepteur en série **diminue** cette intensité commune, sans jamais la rendre différente d'un point à un autre.
 
 Si aucun effet du courant n'apparaît, c'est que l'intensité est **nulle** : il y a une **coupure** quelque part (appareil grillé, fil coupé, mauvais contact).
 
@@ -84,7 +92,11 @@ En dérivation, le courant se **partage** aux nœuds. Mesure les intensités de 
 </svg>
 :::
 
-**Loi des nœuds** : la somme des intensités des courants qui **arrivent** à un nœud est égale à la somme des intensités des courants qui en **partent**. Ici : I₁ = I₂ + I₃, soit 0,90 = 0,65 + 0,25 ✓.
+::: propriete La loi des nœuds
+En un nœud d'un circuit en dérivation, la **somme des intensités des courants qui y arrivent** est égale à la **somme des intensités des courants qui en partent**.
+:::
+
+Ici : I₁ = I₂ + I₃, soit 0,90 = 0,65 + 0,25 ✓.
 
 ## 🛡️ Fusible et sécurité
 

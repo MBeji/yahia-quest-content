@@ -8,7 +8,11 @@ Tu sais mesurer un volume. Voici la grandeur qui va avec : la **masse**. En la c
 
 La **masse** d'un corps est la grandeur physique qui caractérise la **quantité de matière** qu'il contient. C'est une grandeur **mesurable** ; son unité dans le système international est le **kilogramme (kg)**, et on la mesure avec une **balance**.
 
-> 🗡️ Règle d'or : la masse d'un corps **ne dépend ni de sa forme, ni de sa position dans l'espace, ni de son état physique**. Écrase une boule de pâte : sa masse ne change pas. Fais fondre un glaçon : la masse de l'eau reste la même.
+::: definition La masse
+La **masse** d'un corps est la grandeur physique qui caractérise la **quantité de matière** qu'il renferme. Elle **ne dépend ni de la forme du corps, ni de sa position dans l'espace, ni de son état physique**. C'est une grandeur mesurable, qu'on mesure avec une **balance** ; son unité dans le système international est le **kilogramme**, de symbole **kg**.
+:::
+
+> 🗡️ Écrase une boule de pâte : sa masse ne change pas. Fais fondre un glaçon : la masse de l'eau reste la même.
 
 ## 🪙 Mesurer une masse : la balance de Roberval
 
@@ -39,7 +43,11 @@ _Exemple détaillé_ : un morceau de cuivre de masse m = 89 g occupe un volume V
 
 ## 🌊 La densité
 
-La **densité** d'une substance, notée **d**, compare sa masse volumique à celle de l'**eau** :
+::: definition La densité
+La **densité** d'une substance à l'état solide ou liquide est égale au **quotient de sa masse volumique à celle de l'eau**, exprimées dans les mêmes unités. Elle **n'a pas d'unité**.
+:::
+
+La densité, notée **d**, compare donc la masse volumique de la substance à celle de l'**eau** :
 
 $$ d = ρ(substance) / ρ(eau) $$
 

@@ -8,7 +8,11 @@ Tu maîtrises l'intensité I (le débit du courant) et la tension U (aux bornes 
 
 Branche un dipôle récepteur à un générateur **réglable**. Pour chaque valeur de la tension U appliquée, tu relèves l'intensité I qui traverse le dipôle. En plaçant tous les couples (I, U) dans un repère, tu obtiens une courbe.
 
-Cette courbe, qui représente **U en fonction de I**, s'appelle la **caractéristique intensité-tension** du dipôle. Elle est la carte d'identité électrique du composant : deux dipôles différents n'ont pas la même caractéristique.
+::: definition La caractéristique intensité-tension
+La courbe représentant les variations de la **tension U** aux bornes d'un dipôle **en fonction de l'intensité I** qui le traverse est appelée **caractéristique intensité-tension** du dipôle.
+:::
+
+Elle est la carte d'identité électrique du composant : deux dipôles différents n'ont pas la même caractéristique.
 
 ## 📐 Le dipôle résistor : une droite qui passe par l'origine
 
@@ -42,7 +46,9 @@ En réarrangeant ce quotient, on obtient la relation reine du chapitre, la **loi
 
 $$ U = R × I $$
 
-> 🗡️ **Loi d'Ohm** : la tension U aux bornes d'un résistor est égale au produit de sa résistance R par l'intensité I qui le traverse.
+::: propriete La loi d'Ohm
+La **tension U** aux bornes d'un résistor est égale au **produit de sa résistance R par l'intensité I** du courant qui le traverse : **U = R.I**. Sa caractéristique est une **portion de droite passant par l'origine**.
+:::
 
 _Exemple détaillé_ : un résistor de résistance **R = 12 Ω** est traversé par un courant **I = 0,5 A**. La tension à ses bornes vaut U = R × I = 12 × 0,5 = **6 V** ✓. Inversement, si tu mesures U = 6 V et I = 0,5 A, tu retrouves R = U/I = 6 ÷ 0,5 = **12 Ω**.
 
