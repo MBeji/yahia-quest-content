@@ -11,6 +11,10 @@ Une pile, une lampe, un moteur ont un point commun : chacun possède **deux born
 - Si la chaîne est **continue** (aucune coupure) et contient **au moins un générateur**, un courant circule : c'est un **circuit électrique fermé**.
 - Le **générateur** (la pile) est le dipôle qui **fait apparaître** le courant. La lampe et le moteur sont des **récepteurs** : ils **utilisent** le courant pour fonctionner, mais ne peuvent pas le créer.
 
+::: definition Le circuit électrique fermé
+Une **chaîne continue** (ininterrompue) de dipôles électriques comportant **au moins un dipôle générateur** constitue un **circuit électrique fermé**.
+:::
+
 ## 🔥 Les quatre effets du courant
 
 Comment savoir qu'un courant passe ? Par ses **effets**. Le manuel en retient **quatre** :
@@ -63,7 +67,9 @@ Retiens les symboles cités par le programme : **fil, générateur, lampe, moteu
 
 ## ➡️ Le sens du courant et sa nature
 
-Le courant a un **sens**. **Par convention**, à l'**extérieur** du générateur, il circule de la **borne positive (+)** vers la **borne négative (−)**. C'est le **sens conventionnel**.
+::: propriete Le sens conventionnel du courant
+Le courant électrique a un **sens**. **Par convention**, ce sens va, à l'**extérieur** du dipôle générateur, de la **borne positive** vers la **borne négative**.
+:::
 
 Mais que sont ces « porteurs » qui circulent vraiment ?
 

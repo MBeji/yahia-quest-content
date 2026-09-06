@@ -261,6 +261,26 @@ severity mapping; the visual one, **Illustration**, was added on 2026-07-14 and 
    `\d \d{3}` in ar, hyphen-minus, the **Arabic comma `،` inside a math bracket group**, LaTeX
    residue `\\[a-zA-Z]+` and inline `$…$` — both render raw); check language purity.
 
+7. **Complétude manuel (R-8, étude 21)** — **axe conditionnel** : il ne s'active que si la fiche
+   programme du couple existe ET transcrit l'encadré de savoir du manuel (« L'essentiel du cours »,
+   « Retenons », selon le manuel). Sans cette source, il n'y a rien à comparer : ne pas l'inventer,
+   déclarer l'axe non applicable. Quand elle existe, cette liste est **normative** : c'est ce que le
+   manuel officiel affirme savoir, énoncé par énoncé. Pour chaque énoncé :
+   - **absent du cours** = **[MAJOR]** — le manuel l'enseigne, l'app non ;
+   - **enseigné en prose ordinaire, sans bloc typé** (`::: definition|propriete|methode|retenir`)
+     = **[MINOR]** : le lecteur perd la hiérarchie visuelle, et un savoir noyé dans un paragraphe
+     n'est pas retrouvable en révision. La **promotion automatique** couvre déjà `> ⚠️` (piège),
+     `> 🗡️` (astuce), `> 💡` (éclairage) et `> 🏆` (à retenir) — ne pas les recompter comme
+     manquants ; ce qui manque vraiment, ce sont `definition`, `propriete`, `methode` et `exemple`,
+     que **rien ne promeut** ;
+   - **absent de `resume.md`** = **[MINOR]** ;
+   - **testable et non testé** par une question d1–2 = **[MINOR]**.
+   ⚠️ **L'axe est à sens unique.** Un chapitre qui enseigne PLUS que l'encadré n'a aucun constat :
+   l'encadré du manuel est souvent en deçà du chapitre qu'il résume — celui de physique 1ʳᵉ sec
+   ch. 1 omet la charge élémentaire, la notation q et l'électrisation par influence, tous trois
+   enseignés dans ses propres activités, et deux de ses exercices seraient insolubles sans eux.
+   **Ne jamais rogner le contenu de l'app pour le faire coïncider avec l'essentiel.**
+
 Report one line per axis per chapter with the findings that drove it, then the severity list.
 Fix mode: course rewrites are UUID-safe (in-place `cours.md`/`resume.md` edits); large rewrites
 belong to the **`content-cours`** skill — hand off rather than improvising a new course inline.

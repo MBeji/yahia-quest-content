@@ -61,7 +61,11 @@ L'eau désobéit à la règle « refroidir = se contracter ». En la refroidissa
 
 ## 🌡️ Le thermomètre et l'échelle Celsius
 
-Un **thermomètre** repère la température d'un corps. Son principe : la **dilatation** d'un liquide, souvent le **mercure**, choisi car il se dilate facilement, s'obtient pur et **ne mouille pas** le verre.
+::: definition La température et le thermomètre
+La **température** est la grandeur qui permet de reconnaître si un corps est **plus ou moins chaud** qu'un autre. Le **thermomètre** est l'instrument qui la repère ; le principe de son fonctionnement est basé sur la **dilatation des corps**, et les thermomètres usuels sont gradués en **degré Celsius**, de symbole **°C**.
+:::
+
+Le liquide utilisé est souvent le **mercure**, choisi car il se dilate facilement, s'obtient pur et **ne mouille pas** le verre.
 
 L'**échelle Celsius** est bâtie sur deux **points fixes** :
 

@@ -6,7 +6,11 @@ Tu sais mesurer le débit du courant (l'intensité). Voici la seconde grandeur c
 
 ## ⚡ La tension et le volt
 
-Les indications « 1,5 V », « 4,5 V », « 220 V » sur les piles, les lampes ou le compteur désignent une **tension**. La tension caractérise un dipôle **par ses deux bornes**. Elle est **notée U**, s'exprime en **volt** (symbole **V**) et se mesure avec un **voltmètre**.
+Les indications « 1,5 V », « 4,5 V », « 220 V » sur les piles, les lampes ou le compteur désignent une **tension**.
+
+::: definition La tension électrique
+La **tension** est une grandeur qui **caractérise un dipôle**, par ses deux bornes. Elle est notée **U**, s'exprime en **volt**, de symbole **V**, et se mesure à l'aide d'un appareil appelé **voltmètre**.
+:::
 
 ## 🔀 Le voltmètre en dérivation
 
@@ -60,7 +64,9 @@ La tension UAB est aussi appelée **différence de potentiel** (d.d.p.), notée 
 
 Aux bornes d'un **fil** parcouru par un courant, la tension est **nulle**. Sur une **maille** (une boucle fermée), les tensions se compensent :
 
-> 🗡️ **Loi des mailles** : dans une maille, la **somme algébrique** des tensions aux bornes des différents dipôles est **nulle**.
+::: propriete La loi des mailles
+La **somme algébrique** des tensions aux bornes des différents dipôles d'une **maille** d'un circuit est **égale à zéro**.
+:::
 
 _Exemple détaillé_ : un générateur de tension U = 6 V alimente deux lampes en série, de tensions U₁ et U₂. La loi des mailles donne U = U₁ + U₂. Si U₁ = 2 V, alors U₂ = 6 − 2 = **4 V** ✓.
 

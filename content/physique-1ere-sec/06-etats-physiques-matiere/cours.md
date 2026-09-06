@@ -58,7 +58,9 @@ Chaque état a ses propriétés. À retenir dans ce tableau :
 | liquide | non            | oui             | surface libre plane et horizontale |
 | gaz     | non            | non             | occupe tout l'espace offert        |
 
-Un **solide** garde sa forme et son volume quel que soit le récipient. Un **liquide** épouse la forme de son contenant (pas de forme propre) mais conserve son volume ; sa **surface libre** est plane et horizontale.
+::: propriete Forme propre et volume propre
+Un corps à l'état **solide** a une **forme propre** et un **volume propre**. Un corps à l'état **liquide** n'a **pas de forme propre** ; il est incompressible et inextensible, il a donc un **volume propre**, et sa surface libre est plane et horizontale. Un corps à l'état **gazeux** n'a **ni forme propre ni volume propre** : il occupe tout l'espace qu'on lui offre.
+:::
 
 ## 💨 Les gaz : compressibles et expansibles
 
