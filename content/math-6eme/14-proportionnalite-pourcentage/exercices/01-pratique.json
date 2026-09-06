@@ -10,8 +10,8 @@
       "prompt": "ثمنُ 2 kg من التفّاح 4 دنانير. كم ثمنُ 1 kg؟",
       "options": [
         { "id": "a", "text": "2 دنانير" },
-        { "id": "b", "text": "4 دنانير" },
-        { "id": "c", "text": "8 دنانير" },
+        { "id": "b", "text": "4 دنانير", "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat" },
+        { "id": "c", "text": "8 دنانير", "misconceptionTag": "math.num.operation-inverse-appliquee" },
         { "id": "d", "text": "1 دينار" }
       ],
       "correctOption": "a",
@@ -35,7 +35,7 @@
     {
       "prompt": "كم يساوي 10% من 200؟",
       "options": [
-        { "id": "a", "text": "10" },
+        { "id": "a", "text": "10", "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat" },
         { "id": "b", "text": "2" },
         { "id": "c", "text": "20" },
         { "id": "d", "text": "100" }
@@ -48,8 +48,8 @@
     {
       "prompt": "إذا كان مترُ قماشٍ بـ 5 دنانير، فكم ثمنُ 3 أمتار؟",
       "options": [
-        { "id": "a", "text": "8 دنانير" },
-        { "id": "b", "text": "5 دنانير" },
+        { "id": "a", "text": "8 دنانير", "misconceptionTag": "math.prop.additive-au-lieu-de-multiplicative" },
+        { "id": "b", "text": "5 دنانير", "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat" },
         { "id": "c", "text": "53 دينارًا" },
         { "id": "d", "text": "15 دينارًا" }
       ],
@@ -63,7 +63,7 @@
       "options": [
         { "id": "a", "text": "10" },
         { "id": "b", "text": "15" },
-        { "id": "c", "text": "25" },
+        { "id": "c", "text": "25", "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat" },
         { "id": "d", "text": "4" }
       ],
       "correctOption": "a",
@@ -77,7 +77,7 @@
         { "id": "a", "text": "2 دينارًا" },
         { "id": "b", "text": "0,5 دينارًا" },
         { "id": "c", "text": "1 دينارًا" },
-        { "id": "d", "text": "12,5 دينارًا" }
+        { "id": "d", "text": "12,5 دينارًا", "misconceptionTag": "math.num.operation-inverse-appliquee" }
       ],
       "correctOption": "b",
       "explanation": "ثمنُ خبزةٍ واحدة = 2,5 ÷ 5 = 0,5 دينارًا.",

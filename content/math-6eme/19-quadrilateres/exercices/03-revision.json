@@ -9,10 +9,10 @@
     {
       "prompt": "ما هذا الرباعيّ؟ <svg viewBox=\"0 0 100 100\"><rect x=\"16\" y=\"32\" width=\"68\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"16\" y=\"32\" width=\"9\" height=\"9\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.3\"/></svg>",
       "options": [
-        { "id": "a", "text": "مربّع" },
+        { "id": "a", "text": "مربّع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
         { "id": "b", "text": "مستطيل" },
-        { "id": "c", "text": "شبه منحرف" },
-        { "id": "d", "text": "معيّن" }
+        { "id": "c", "text": "شبه منحرف", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
+        { "id": "d", "text": "معيّن", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" }
       ],
       "correctOption": "b",
       "explanation": "زواياه قائمة وطولُه ≠ عرضه، فهو مستطيل.",
@@ -35,10 +35,10 @@
     {
       "prompt": "أيُّ رباعيٍّ له زوجٌ واحدٌ فقط من الأضلاع المتوازية؟",
       "options": [
-        { "id": "a", "text": "متوازي الأضلاع" },
-        { "id": "b", "text": "المربّع" },
+        { "id": "a", "text": "متوازي الأضلاع", "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees" },
+        { "id": "b", "text": "المربّع", "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees" },
         { "id": "c", "text": "شبه المنحرف" },
-        { "id": "d", "text": "المعيّن" }
+        { "id": "d", "text": "المعيّن", "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees" }
       ],
       "correctOption": "c",
       "explanation": "شبه المنحرف هو الرباعيُّ الذي له زوجٌ واحدٌ فقط من الأضلاع المتوازية.",
@@ -48,9 +48,9 @@
     {
       "prompt": "ما هذا الرباعيّ؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"26,72 74,72 86,34 38,34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
       "options": [
-        { "id": "a", "text": "المستطيل" },
-        { "id": "b", "text": "المربّع" },
-        { "id": "c", "text": "شبه المنحرف" },
+        { "id": "a", "text": "المستطيل", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
+        { "id": "b", "text": "المربّع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
+        { "id": "c", "text": "شبه المنحرف", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
         { "id": "d", "text": "متوازي الأضلاع" }
       ],
       "correctOption": "d",
@@ -74,10 +74,10 @@
     {
       "prompt": "أيُّ العبارات التالية خطأ؟",
       "options": [
-        { "id": "a", "text": "المربّعُ مستطيل" },
+        { "id": "a", "text": "المربّعُ مستطيل", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
         { "id": "b", "text": "شبه المنحرف متوازي أضلاع" },
-        { "id": "c", "text": "المربّعُ معيّن" },
-        { "id": "d", "text": "المستطيلُ متوازي أضلاع" }
+        { "id": "c", "text": "المربّعُ معيّن", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
+        { "id": "d", "text": "المستطيلُ متوازي أضلاع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" }
       ],
       "correctOption": "b",
       "explanation": "العبارةُ الخطأ هي «شبه المنحرف متوازي أضلاع»؛ شبه المنحرف له زوجٌ واحدٌ فقط من التوازي.",

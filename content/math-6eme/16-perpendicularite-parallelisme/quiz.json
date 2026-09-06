@@ -5,9 +5,9 @@
       "prompt": "متى يكون مستقيمان متعامدين؟",
       "options": [
         { "id": "a", "text": "إذا تقاطعا مكوّنَين زاوية قائمة" },
-        { "id": "b", "text": "إذا لم يتقاطعا أبدًا" },
-        { "id": "c", "text": "إذا تقاطعا بأيّ زاوية" },
-        { "id": "d", "text": "إذا كانا متوازيين" }
+        { "id": "b", "text": "إذا لم يتقاطعا أبدًا", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
+        { "id": "c", "text": "إذا تقاطعا بأيّ زاوية", "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite" },
+        { "id": "d", "text": "إذا كانا متوازيين", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" }
       ],
       "correctOption": "a",
       "explanation": "المستقيمان متعامدان إذا تقاطعا وكوّنا زاوية قائمة (90°)؛ التقاطعُ وحدَه لا يكفي.",
@@ -17,7 +17,7 @@
     {
       "prompt": "ما رمزُ التوازي بين مستقيمين؟",
       "options": [
-        { "id": "a", "text": "⊥" },
+        { "id": "a", "text": "⊥", "misconceptionTag": "math.geo.symboles-perpendiculaire-parallele-confondus" },
         { "id": "b", "text": "∥" },
         { "id": "c", "text": "=" },
         { "id": "d", "text": "×" }
@@ -30,9 +30,9 @@
     {
       "prompt": "ماذا يمثّل هذا الشكل؟ <svg viewBox=\"0 0 100 100\"><line x1=\"8\" y1=\"58\" x2=\"92\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"10\" x2=\"50\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"50\" y=\"48\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
       "options": [
-        { "id": "a", "text": "مستقيمان متوازيان" },
+        { "id": "a", "text": "مستقيمان متوازيان", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
         { "id": "b", "text": "مستقيمان متعامدان" },
-        { "id": "c", "text": "مستقيمان متقاطعان بزاوية حادّة" },
+        { "id": "c", "text": "مستقيمان متقاطعان بزاوية حادّة", "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite" },
         { "id": "d", "text": "نصفا مستقيم" }
       ],
       "correctOption": "b",
@@ -56,7 +56,7 @@
     {
       "prompt": "إذا كان (د1) ⊥ (د) و (د2) ⊥ (د)، فماذا نستنتج عن (د1) و (د2)؟",
       "options": [
-        { "id": "a", "text": "متعامدان" },
+        { "id": "a", "text": "متعامدان", "misconceptionTag": "math.geo.regle-perpendiculaire-parallele-inversee" },
         { "id": "b", "text": "متقاطعان بزاوية حادّة" },
         { "id": "c", "text": "منطبقان" },
         { "id": "d", "text": "متوازيان" }

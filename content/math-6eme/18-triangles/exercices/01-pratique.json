@@ -23,9 +23,9 @@
       "prompt": "مثلّثٌ أطوالُ أضلاعه 4 سم، 4 سم، 4 سم. نوعُه:",
       "options": [
         { "id": "a", "text": "متساوي الأضلاع" },
-        { "id": "b", "text": "متساوي الساقين" },
-        { "id": "c", "text": "مختلف الأضلاع" },
-        { "id": "d", "text": "قائم الزاوية" }
+        { "id": "b", "text": "متساوي الساقين", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
+        { "id": "c", "text": "مختلف الأضلاع", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
+        { "id": "d", "text": "قائم الزاوية", "misconceptionTag": "math.geo.classements-triangle-melanges" }
       ],
       "correctOption": "a",
       "explanation": "أضلاعُه الثلاثة متساوية (4 = 4 = 4)، فهو متساوي الأضلاع.",
@@ -35,10 +35,10 @@
     {
       "prompt": "ما نوعُ المثلّث المبيّن في الشكل حسب زواياه؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"25,75 25,28 78,75\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"25\" y=\"65\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
       "options": [
-        { "id": "a", "text": "متساوي الأضلاع" },
+        { "id": "a", "text": "متساوي الأضلاع", "misconceptionTag": "math.geo.classements-triangle-melanges" },
         { "id": "b", "text": "قائم الزاوية" },
-        { "id": "c", "text": "منفرج الزاوية" },
-        { "id": "d", "text": "حادّ الزوايا" }
+        { "id": "c", "text": "منفرج الزاوية", "misconceptionTag": "math.geo.classement-triangle-par-angles-errone" },
+        { "id": "d", "text": "حادّ الزوايا", "misconceptionTag": "math.geo.classement-triangle-par-angles-errone" }
       ],
       "correctOption": "b",
       "explanation": "المربّعُ الصغير يدلّ على زاوية قائمة، فالمثلّثُ قائمُ الزاوية.",
@@ -48,10 +48,10 @@
     {
       "prompt": "مثلّثٌ أطوالُ أضلاعه 3 سم، 5 سم، 7 سم. نوعُه:",
       "options": [
-        { "id": "a", "text": "متساوي الأضلاع" },
-        { "id": "b", "text": "متساوي الساقين" },
+        { "id": "a", "text": "متساوي الأضلاع", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
+        { "id": "b", "text": "متساوي الساقين", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
         { "id": "c", "text": "مختلف الأضلاع" },
-        { "id": "d", "text": "قائم الزاوية" }
+        { "id": "d", "text": "قائم الزاوية", "misconceptionTag": "math.geo.classements-triangle-melanges" }
       ],
       "correctOption": "c",
       "explanation": "أضلاعُه الثلاثة مختلفة الأطوال (3 ≠ 5 ≠ 7)، فهو مختلف الأضلاع.",
@@ -74,10 +74,10 @@
     {
       "prompt": "ما نوعُ هذا المثلّث حسب أضلاعه؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"50,30 26,76 74,76\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"26\" y=\"52\" font-size=\"11\" fill=\"currentColor\">5</text><text x=\"66\" y=\"52\" font-size=\"11\" fill=\"currentColor\">5</text><text x=\"47\" y=\"90\" font-size=\"11\" fill=\"currentColor\">5</text></svg>",
       "options": [
-        { "id": "a", "text": "مختلف الأضلاع" },
+        { "id": "a", "text": "مختلف الأضلاع", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
         { "id": "b", "text": "متساوي الأضلاع" },
-        { "id": "c", "text": "قائم الزاوية" },
-        { "id": "d", "text": "منفرج الزاوية" }
+        { "id": "c", "text": "قائم الزاوية", "misconceptionTag": "math.geo.classements-triangle-melanges" },
+        { "id": "d", "text": "منفرج الزاوية", "misconceptionTag": "math.geo.classements-triangle-melanges" }
       ],
       "correctOption": "b",
       "explanation": "الأضلاعُ الثلاثة متساوية (5 ; 5 ; 5)، فهو متساوي الأضلاع.",

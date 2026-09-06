@@ -9,10 +9,10 @@
     {
       "prompt": "ما نوعُ هذه الزاوية؟ <svg viewBox=\"0 0 100 100\"><line x1=\"50\" y1=\"82\" x2=\"95\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"82\" x2=\"50\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"50\" y=\"72\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><circle cx=\"50\" cy=\"82\" r=\"2.5\" fill=\"currentColor\"/></svg>",
       "options": [
-        { "id": "a", "text": "حادّة" },
+        { "id": "a", "text": "حادّة", "misconceptionTag": "math.geo.type-d-angle-confondu" },
         { "id": "b", "text": "قائمة" },
-        { "id": "c", "text": "منفرجة" },
-        { "id": "d", "text": "مستقيمة" }
+        { "id": "c", "text": "منفرجة", "misconceptionTag": "math.geo.type-d-angle-confondu" },
+        { "id": "d", "text": "مستقيمة", "misconceptionTag": "math.geo.type-d-angle-confondu" }
       ],
       "correctOption": "b",
       "explanation": "المربّعُ الصغير عند الرأس علامةُ الزاوية القائمة (90°).",
@@ -35,10 +35,10 @@
     {
       "prompt": "ما نوعُ هذه الزاوية؟ <svg viewBox=\"0 0 100 100\"><line x1=\"50\" y1=\"82\" x2=\"95\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"82\" x2=\"27\" y2=\"43\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"82\" r=\"2.5\" fill=\"currentColor\"/></svg>",
       "options": [
-        { "id": "a", "text": "حادّة" },
-        { "id": "b", "text": "قائمة" },
+        { "id": "a", "text": "حادّة", "misconceptionTag": "math.geo.type-d-angle-confondu" },
+        { "id": "b", "text": "قائمة", "misconceptionTag": "math.geo.type-d-angle-confondu" },
         { "id": "c", "text": "منفرجة" },
-        { "id": "d", "text": "مستقيمة" }
+        { "id": "d", "text": "مستقيمة", "misconceptionTag": "math.geo.type-d-angle-confondu" }
       ],
       "correctOption": "c",
       "explanation": "الفتحةُ أكبرُ من 90° وأصغرُ من 180°، فالزاوية منفرجة.",
@@ -61,9 +61,9 @@
     {
       "prompt": "هذه الزاويةُ قيسُها 60°. ما نوعُها؟ <svg viewBox=\"0 0 100 100\"><line x1=\"50\" y1=\"82\" x2=\"95\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"82\" x2=\"72\" y2=\"43\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"82\" r=\"2.5\" fill=\"currentColor\"/></svg>",
       "options": [
-        { "id": "a", "text": "قائمة" },
-        { "id": "b", "text": "منفرجة" },
-        { "id": "c", "text": "مستقيمة" },
+        { "id": "a", "text": "قائمة", "misconceptionTag": "math.geo.type-d-angle-confondu" },
+        { "id": "b", "text": "منفرجة", "misconceptionTag": "math.geo.type-d-angle-confondu" },
+        { "id": "c", "text": "مستقيمة", "misconceptionTag": "math.geo.type-d-angle-confondu" },
         { "id": "d", "text": "حادّة" }
       ],
       "correctOption": "d",
@@ -75,9 +75,9 @@
       "prompt": "زاويةٌ قائمةٌ قُسّمت إلى نصفين متساويين. كم قيسُ كلّ نصف؟",
       "options": [
         { "id": "a", "text": "45°" },
-        { "id": "b", "text": "180°" },
+        { "id": "b", "text": "180°", "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue" },
         { "id": "c", "text": "30°" },
-        { "id": "d", "text": "90°" }
+        { "id": "d", "text": "90°", "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue" }
       ],
       "correctOption": "a",
       "explanation": "نصفُ الزاوية القائمة = 90° ÷ 2 = 45°.",

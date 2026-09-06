@@ -10,8 +10,8 @@
       "prompt": "كم حرفًا للمكعّب؟",
       "options": [
         { "id": "a", "text": "12 حرفًا" },
-        { "id": "b", "text": "8 أحرف" },
-        { "id": "c", "text": "6 أحرف" },
+        { "id": "b", "text": "8 أحرف", "misconceptionTag": "math.geo.solide-faces-aretes-sommets-confondus" },
+        { "id": "c", "text": "6 أحرف", "misconceptionTag": "math.geo.solide-faces-aretes-sommets-confondus" },
         { "id": "d", "text": "10 أحرف" }
       ],
       "correctOption": "a",
@@ -23,9 +23,9 @@
       "prompt": "مكعّبٌ طولُ حرفه 3 سم. ما مساحتُه الجانبيّة؟",
       "options": [
         { "id": "a", "text": "36 سم²" },
-        { "id": "b", "text": "54 سم²" },
-        { "id": "c", "text": "9 سم²" },
-        { "id": "d", "text": "12 سم²" }
+        { "id": "b", "text": "54 سم²", "misconceptionTag": "math.mes.cube-coefficient-quatre-et-six-echanges" },
+        { "id": "c", "text": "9 سم²", "misconceptionTag": "math.mes.solide-une-seule-face-comptee" },
+        { "id": "d", "text": "12 سم²", "misconceptionTag": "math.mes.arete-non-elevee-au-carre" }
       ],
       "correctOption": "a",
       "explanation": "الجانبيّة = 4 × (الحرف × الحرف) = 4 × (3 × 3) = 4 × 9 = 36 سم².",
@@ -36,8 +36,8 @@
       "prompt": "مكعّبٌ طولُ حرفه 6 سم. ما مساحتُه الجمليّة؟",
       "options": [
         { "id": "a", "text": "216 سم²" },
-        { "id": "b", "text": "144 سم²" },
-        { "id": "c", "text": "36 سم²" },
+        { "id": "b", "text": "144 سم²", "misconceptionTag": "math.mes.cube-coefficient-quatre-et-six-echanges" },
+        { "id": "c", "text": "36 سم²", "misconceptionTag": "math.mes.solide-une-seule-face-comptee" },
         { "id": "d", "text": "72 سم²" }
       ],
       "correctOption": "a",
@@ -49,8 +49,8 @@
       "prompt": "متوازي مستطيلاتٍ قاعدتُه طولُها 5 سم وعرضُها 2 سم. ما محيطُ القاعدة؟",
       "options": [
         { "id": "a", "text": "14 سم" },
-        { "id": "b", "text": "10 سم" },
-        { "id": "c", "text": "7 سم" },
+        { "id": "b", "text": "10 سم", "misconceptionTag": "math.mes.aire-et-perimetre-confondus" },
+        { "id": "c", "text": "7 سم", "misconceptionTag": "math.mes.perimetre-rectangle-somme-non-doublee" },
         { "id": "d", "text": "28 سم" }
       ],
       "correctOption": "a",
@@ -62,9 +62,9 @@
       "prompt": "ما صيغةُ المساحة الجمليّة للمكعّب؟",
       "options": [
         { "id": "a", "text": "6 × (الحرف × الحرف)" },
-        { "id": "b", "text": "4 × (الحرف × الحرف)" },
+        { "id": "b", "text": "4 × (الحرف × الحرف)", "misconceptionTag": "math.mes.cube-coefficient-quatre-et-six-echanges" },
         { "id": "c", "text": "2 × (الحرف × الحرف)" },
-        { "id": "d", "text": "12 × الحرف" }
+        { "id": "d", "text": "12 × الحرف", "misconceptionTag": "math.mes.arete-non-elevee-au-carre" }
       ],
       "correctOption": "a",
       "explanation": "للمكعّب 6 أوجهٍ متساوية، فالمساحةُ الجمليّة = 6 × (الحرف × الحرف).",
@@ -76,7 +76,7 @@
       "options": [
         { "id": "a", "text": "78 سم²" },
         { "id": "b", "text": "39 سم²" },
-        { "id": "c", "text": "120 سم²" },
+        { "id": "c", "text": "120 سم²", "misconceptionTag": "math.mes.volume-utilise-comme-aire" },
         { "id": "d", "text": "26 سم²" }
       ],
       "correctOption": "a",

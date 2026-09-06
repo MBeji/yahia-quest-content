@@ -5,8 +5,8 @@
       "prompt": "ما العلاقةُ بين القطر (ق) ونصف القطر (ر)؟",
       "options": [
         { "id": "a", "text": "ق = 2 × ر" },
-        { "id": "b", "text": "ر = 2 × ق" },
-        { "id": "c", "text": "ق = ر" },
+        { "id": "b", "text": "ر = 2 × ق", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" },
+        { "id": "c", "text": "ق = ر", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" },
         { "id": "d", "text": "ق = ر + 1" }
       ],
       "correctOption": "a",
@@ -18,9 +18,9 @@
       "prompt": "ما القيمةُ التقريبيّةُ للعدد π؟",
       "options": [
         { "id": "a", "text": "3,14" },
-        { "id": "b", "text": "3,41" },
-        { "id": "c", "text": "2,14" },
-        { "id": "d", "text": "1,34" }
+        { "id": "b", "text": "3,41", "misconceptionTag": "math.geo.valeur-de-pi-erronee" },
+        { "id": "c", "text": "2,14", "misconceptionTag": "math.geo.valeur-de-pi-erronee" },
+        { "id": "d", "text": "1,34", "misconceptionTag": "math.geo.valeur-de-pi-erronee" }
       ],
       "correctOption": "a",
       "explanation": "نأخذُ في حساباتنا π ≈ 3,14، وهو عددٌ ثابتٌ يربطُ المحيطَ بالقطر.",
@@ -31,9 +31,9 @@
       "prompt": "ما صيغةُ محيط الدائرة؟",
       "options": [
         { "id": "a", "text": "2 × π × ر" },
-        { "id": "b", "text": "π × ر × ر" },
-        { "id": "c", "text": "ر × ر" },
-        { "id": "d", "text": "2 × ر" }
+        { "id": "b", "text": "π × ر × ر", "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues" },
+        { "id": "c", "text": "ر × ر", "misconceptionTag": "math.geo.facteur-pi-omis" },
+        { "id": "d", "text": "2 × ر", "misconceptionTag": "math.geo.facteur-pi-omis" }
       ],
       "correctOption": "a",
       "explanation": "محيطُ الدائرة = 2 × π × ر (أو π × ق)؛ أمّا π × ر × ر فهي مساحةُ القرص.",
@@ -44,9 +44,9 @@
       "prompt": "دائرةٌ نصفُ قطرها 3 سم. ما طولُ قطرها؟",
       "options": [
         { "id": "a", "text": "6 سم" },
-        { "id": "b", "text": "3 سم" },
+        { "id": "b", "text": "3 سم", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" },
         { "id": "c", "text": "9 سم" },
-        { "id": "d", "text": "1,5 سم" }
+        { "id": "d", "text": "1,5 سم", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" }
       ],
       "correctOption": "a",
       "explanation": "القطر = 2 × نصف القطر = 2 × 3 = 6 سم.",
@@ -57,8 +57,8 @@
       "prompt": "ما صيغةُ مساحة القرص؟",
       "options": [
         { "id": "a", "text": "π × ر × ر" },
-        { "id": "b", "text": "2 × π × ر" },
-        { "id": "c", "text": "π × ق" },
+        { "id": "b", "text": "2 × π × ر", "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues" },
+        { "id": "c", "text": "π × ق", "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues" },
         { "id": "d", "text": "ر + ر" }
       ],
       "correctOption": "a",

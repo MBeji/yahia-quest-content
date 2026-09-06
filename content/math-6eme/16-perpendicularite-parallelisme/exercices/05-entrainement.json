@@ -9,7 +9,7 @@
     {
       "prompt": "ما رمزُ التوازي؟",
       "options": [
-        { "id": "a", "text": "⊥" },
+        { "id": "a", "text": "⊥", "misconceptionTag": "math.geo.symboles-perpendiculaire-parallele-confondus" },
         { "id": "b", "text": "∥" },
         { "id": "c", "text": "=" },
         { "id": "d", "text": "÷" }
@@ -22,9 +22,9 @@
     {
       "prompt": "ماذا يمثّل هذا الشكل؟ <svg viewBox=\"0 0 100 100\"><line x1=\"8\" y1=\"58\" x2=\"92\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"10\" x2=\"50\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"50\" y=\"48\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
       "options": [
-        { "id": "a", "text": "مستقيمان متوازيان" },
+        { "id": "a", "text": "مستقيمان متوازيان", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
         { "id": "b", "text": "مستقيمان متعامدان" },
-        { "id": "c", "text": "مستقيمان متقاطعان بزاوية حادّة" },
+        { "id": "c", "text": "مستقيمان متقاطعان بزاوية حادّة", "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite" },
         { "id": "d", "text": "مستقيمان منفصلان" }
       ],
       "correctOption": "b",
@@ -35,8 +35,8 @@
     {
       "prompt": "المستقيمان اللذان لا يتقاطعان مهما امتدّا هما:",
       "options": [
-        { "id": "a", "text": "متعامدان" },
-        { "id": "b", "text": "متقاطعان" },
+        { "id": "a", "text": "متعامدان", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
+        { "id": "b", "text": "متقاطعان", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
         { "id": "c", "text": "متوازيان" },
         { "id": "d", "text": "متطابقان" }
       ],
@@ -61,8 +61,8 @@
     {
       "prompt": "هذان المستقيمان متقاطعان، لكنّهما: <svg viewBox=\"0 0 100 100\"><line x1=\"8\" y1=\"72\" x2=\"92\" y2=\"72\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"22\" y1=\"92\" x2=\"78\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
       "options": [
-        { "id": "a", "text": "متعامدان" },
-        { "id": "b", "text": "متوازيان" },
+        { "id": "a", "text": "متعامدان", "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite" },
+        { "id": "b", "text": "متوازيان", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
         { "id": "c", "text": "منفصلان" },
         { "id": "d", "text": "غيرُ متعامدين (الزاوية ليست قائمة)" }
       ],
@@ -75,7 +75,7 @@
       "prompt": "(د1) ∥ (د2) و (د2) ⊥ (د3). ماذا نستنتج عن (د1) و (د3)؟",
       "options": [
         { "id": "a", "text": "متعامدان" },
-        { "id": "b", "text": "متوازيان" },
+        { "id": "b", "text": "متوازيان", "misconceptionTag": "math.geo.regle-perpendiculaire-parallele-inversee" },
         { "id": "c", "text": "متطابقان" },
         { "id": "d", "text": "لا علاقة بينهما" }
       ],
