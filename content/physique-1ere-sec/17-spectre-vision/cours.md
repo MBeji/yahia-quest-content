@@ -40,7 +40,9 @@ L'**arc-en-ciel** naît de la décomposition de la lumière blanche du Soleil pa
 
 Un objet éclairé **absorbe** certaines radiations et **diffuse** les autres.
 
-> **La couleur d'un objet est celle de la lumière qu'il diffuse ; il absorbe toutes les autres.**
+::: propriete La couleur d'un objet
+Un corps éclairé **absorbe** les couleurs du spectre de la lumière qui l'éclaire **sauf celle qu'il diffuse**, et que nous voyons : c'est sa **couleur**. Elle doit donc être **contenue dans la lumière qui l'éclaire**. Un corps qui absorbe toutes les lumières qu'il reçoit paraît **noir**.
+:::
 
 - Une tomate paraît **rouge** car elle diffuse le rouge et absorbe le reste.
 - Un objet qui **diffuse toutes** les radiations paraît **blanc** ; un objet qui **absorbe toutes** les radiations qu'il reçoit **paraît noir** (aucune lumière diffusée).

@@ -1,8 +1,10 @@
 # Étude 21 — Valorisation des manuels élèves officiels (exercices, figures, savoirs, cours)
 
-> **Statut** : validée — Q-1…Q-4 arbitrées le 2026-07-20 par Mohamed ; Q-1/Q-3/Q-4 suivent les
-> recommandations de l'architecte, **Q-2 s'en écarte** (la provenance manuel n'est pas affichée à
-> l'élève → lot 3 abandonné)
+> **Statut** : **LIVRÉE le 2026-09-06** — 5 lots sur 6 (le lot 3 est **abandonné**, pas en
+> attente : Q-2 a retiré la provenance de la vue élève). Q-1…Q-4 arbitrées le 2026-07-20 par
+> Mohamed ; Q-1/Q-3/Q-4 suivent les recommandations de l'architecte, **Q-2 s'en écarte**.
+> Pilote réel : `physique-1ere-sec` — 81/154 exercices repris (53 %), 17 chapitres sur 17
+> déclarés, 27 blocs de savoir posés. Journal complet au §8
 > **Priorité** : 21 · **Valeur** : 📘 le gisement pédagogique n° 1 du programme (267 manuels élève CNP) devient du contenu jouable, traçable et mesurable — au coût marginal le plus bas du catalogue · **Complexité** : moyenne+
 > **Architecte** : Fable 5 / 2026-07-17 · **Exécuteur cible** : Sonnet (ou équiv.) — lots 5–6 = campagne de contenu via les skills
 > **Dépend de** : é13 ScribeKit (livrée) · é18 cours vivants (livrée) · corpus `cnp-officiel/` + fiches `programme/` (46 transcrites) · **s'articule avec** é12 (canal d'ingestion, brouillon), é19 (questions illustrées, brouillon), é20 (`short_answer`, validée non exécutée) · **Bloque** : rien (la campagne de contenu 16/vague A profite de la doctrine dès le lot 1)
@@ -449,7 +451,7 @@ lot de contenu).
       tracées, régimes déclarés dans la PR), publier le rapport avant/après + le coût constaté
       (KPI) au journal §8. **Stop-point** : 3 chapitres maximum, une seule matière, une seule
       migration `--subject`.
-- [ ] **Lot 6 — Savoirs.** Passe R-8 sur la matière pilote (encadrés → blocs + cartes + questions
+- [x] **Lot 6 — Savoirs.** ✅ 2026-09-06 (voir journal §8). Passe R-8 sur la matière pilote (encadrés → blocs + cartes + questions
       d1–2 là où testable) ; ajouter l'axe « complétude manuel » à `content-audit` (activable
       seulement quand la fiche programme du couple existe). **Stop-point** : pas de réécriture des
       cours au-delà de l'insertion des blocs manquants (le style relève de `content-cours`).
@@ -653,5 +655,41 @@ Q-3), pilotée par le rapport de couverture — même modèle que la campagne d'
     vite au désert qu'au bord de la mer. Le cours n'enseigne **nulle part** ce qui accélère
     l'évaporation : la question a été écartée plutôt que posée sur du non-enseigné. C'est
     exactement le périmètre de la passe savoirs (R-8).
+
+- **2026-09-06 — Lot 6 livré. L'étude est close (5 lots sur 6 ; le lot 3 reste abandonné).**
+  Deux PR (privé#368 + celle qui porte ce journal).
+  - **Le constat qui justifie le lot, et il dépasse la matière pilote** : `physique-1ere-sec`
+    portait **24 blocs typés, tous `figure`** — zéro `definition`, zéro `propriete`, zéro
+    `methode`. Sur le corpus entier : **362 `figure` contre 26 blocs de savoir**, dans
+    980 chapitres. L'appareil pédagogique du lecteur de leçons (étude 18) existe depuis des mois
+    et n'est presque pas utilisé.
+  - ⚠️ **La moitié de ce constat brut était fausse, et seule la lecture du moteur le disait.**
+    `lesson-blocks.ts` **promeut automatiquement** les callouts déjà écrits : `> ⚠️` → piège,
+    `> 🗡️` → astuce, `> 💡` → éclairage, `> 🏆` → à retenir. Ces quatre familles ne manquaient
+    donc pas. Ce que **rien ne promeut**, ce sont `definition`, `propriete`, `methode` et
+    `exemple` — le savoir normatif, et c'est là que le trou était réel. Compter des `:::` dans
+    le contenu sans lire le renderer aurait surestimé le manque de moitié.
+  - **Livré** : **27 blocs** (15 `definition`, 12 `propriete`) sur les **17 chapitres**, tous
+    repris de l'énoncé officiel du manuel — l'encadré « L'essentiel du cours », transcrit
+    verbatim par la fiche, **165 énoncés** au total. Verbatim toléré (Q-1 option b : énoncés
+    techniques courts non créatifs).
+  - **Trois lois étaient rangées en `> 🗡️`**, donc affichées « astuce du prof » : les lois des
+    nœuds, des mailles et d'Ohm. Une loi n'est pas une astuce — elles passent en `::: propriete`.
+    Le texte ne change pas, sa **nature affichée** si.
+  - **Un seul savoir manquait vraiment** sur 165 : l'essentiel du chapitre 1 attribue à
+    l'électroscope la capacité de **comparer** les quantités d'électricité, et le cours ne parlait
+    que de détection. Ajouté au cours et au résumé. Autrement dit, le fond était juste — c'est la
+    **forme** qui perdait le savoir dans la prose.
+  - **Axe 7 de `content-audit`** — « complétude manuel (R-8) », **conditionnel** : il ne s'active
+    que si la fiche transcrit l'encadré du manuel, et se déclare non applicable sinon plutôt que
+    de deviner. Chaque énoncé se lit sur quatre questions (enseigné ? typé ? résumé ? testé ?),
+    et l'axe est **à sens unique** : un chapitre qui enseigne plus que l'encadré n'a aucun
+    constat.
+  - **La dette notée au lot 5 est close par la mesure, pas par du travail** : le manuel demande
+    au chapitre 9 pourquoi le linge sèche plus vite au désert qu'au bord de la mer. Vérifié :
+    **son propre essentiel ne porte pas cette notion**. Ce n'est donc pas un manque R-8, et
+    l'ajouter dépasserait le stop-point du lot (« pas de réécriture des cours »). Elle reste une
+    candidate pour `content-cours`, pas pour cette étude.
+  - **Stop-point respecté** : aucune réécriture. Les blocs **entourent** la prose déjà écrite.
 
 _(rempli au fil des lots par l'exécuteur : date, lot, PR, écarts acceptés, dettes notées)_

@@ -24,7 +24,11 @@ _Exemple détaillé_ : un passager assis dans un train est **au repos** par rapp
 
 ## 〰️ La trajectoire et ses types
 
-La **trajectoire** d'un point mobile est l'ensemble des **positions** qu'il occupe au cours du temps, dans un repère donné. On distingue trois types :
+::: definition La trajectoire
+Dans un **repère donné**, la **trajectoire** d'un point mobile est l'**ensemble des positions** occupées par ce point au cours du mouvement.
+:::
+
+On distingue trois types :
 
 | Trajectoire    | Portée par...    | Exemple                        |
 | -------------- | ---------------- | ------------------------------ |

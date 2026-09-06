@@ -6,7 +6,11 @@ Au chapitre précédent, tu as appris à **décrire** un mouvement. Il est temps
 
 ## 🤝 Actions de contact et à distance
 
-Une **action mécanique** est toute cause capable de **mettre en mouvement**, de **modifier le mouvement** ou de **déformer** un corps. On distingue :
+::: definition L'action mécanique
+Une **action mécanique** est toute cause capable de **produire ou de modifier le mouvement** — vitesse et/ou trajectoire — d'un corps, ou de **participer à sa déformation**. Elle est caractérisée par une **intensité**, une **direction** et un **sens**, et se modélise par une **force**, notée F.
+:::
+
+On distingue :
 
 - une **action de contact** : les deux corps se touchent (la main pousse le chariot) ;
 - une **action à distance** : elle agit sans contact (l'aimant attire une bille en fer, la Terre attire la pomme).
@@ -57,7 +61,11 @@ L'intensité d'une force se mesure avec un **dynamomètre** et s'exprime en **ne
 
 ## 🌍 Le poids d'un corps
 
-Le **poids** d'un corps est la **force d'attraction** exercée par la **Terre** sur ce corps. On le note **P**. Ses caractéristiques :
+::: definition Le poids
+La **force d'attraction exercée par la Terre** sur un corps est appelée le **poids** de ce corps, notée **P**. On convient de la représenter en un point particulier appelé le **centre de gravité** du corps, noté **G**.
+:::
+
+Ses caractéristiques :
 
 - **direction** : verticale ;
 - **sens** : vers le bas ;
