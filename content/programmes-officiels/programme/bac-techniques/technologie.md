@@ -83,7 +83,7 @@ donnée ici parce qu'elle sert, pas parce que la source l'imprime.
 ### 1.4 Compétences de vie (p.10–11)
 
 Le manuel adosse aux activités un référentiel de **compétences de vie** en quatre dimensions,
-signalées par des logos dans les activités. Transcription du tableau p.10 :
+signalées par des logos dans les activités. Transcription des **quatre tableaux** de la p.10 (un par dimension), réunis ici en un seul par ajout d'une colonne « Dimension ». Titre imprimé de la page : « Légende des compétences de vie et les éducations à… » :
 
 | Dimension          | Compétences essentielles                          | Compétences associées (verbatim)                                                                                                                                                                                                            |
 | ------------------ | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -281,7 +281,6 @@ Diagramme à compléter (les `…………` sont les cases laissées vides par l
   - Processeurs déjà donnés (avec photo) : Alimenter/Stocker → « Unité d'alimentation : Prise
     secteur » ; Distribuer → « Carte de puissance » ; Convertir → « Actionneurs / Moteurs X, Y, Z /
     Moteur broche » ; Transmettre → « Elément de transmission de puissance ».
-  - Cases `…………` vides sous les blocs Alimenter/Stocker et Distribuer, à compléter par l'élève.
 - Légende imprimée : **(\*) : énergie électrique ; (\*\*) : énergie mécanique**
 
 **B. Mise en œuvre de la micro-fraiseuse (p.17)**
@@ -295,7 +294,7 @@ Consignes de sécurité (imprimées en rouge, avec le pictogramme triangulaire �
 Questions :
 
 1. « Citer dans l'ordre les étapes à entreprendre pour monter l'outil fraise à deux lèvres de
-   diamètre **3 mm**. » *(4 lignes pointillées de réponse)*
+   diamètre **3mm**. » *(4 lignes pointillées de réponse — la source imprime « 3mm », sans espace)*
 2. « Justifier la présence du **capteur de portière**. » *(2 lignes pointillées)*
 3. « La machine et le fichier G-code étant préparés à l'avance par l'enseignant. Charger
    « G-code » et régler l'origine pièce et suivre les étapes de fabrication de la pièce. »
@@ -1051,8 +1050,9 @@ Colonne **Processeurs** (cases vides). Arbre :
     **Solutions technologiques 3** (bloc bleu), les deux solutions étant reliées par un
     opérateur **ET** (flèches en pointillés)
   - **Fonctions techniques 3** (bloc rose) → **Solutions technologiques 4** (bloc bleu)
-- Les liaisons « Fonctions techniques 1 » et « Fonctions techniques 2 » vers la fonction de
-  service portent l'opérateur **OU** (flèches en pointillés).
+- L'opérateur **OU** (flèches en pointillés) est porté à la bifurcation qui sépare la branche
+  directe de **Fonctions techniques 1** du tronc vertical desservant **Fonctions techniques 2**
+  et **3**.
 
 **Savoirs plus (p.40)** — verbatim :
 
@@ -1111,8 +1111,7 @@ En pied de p.40 : **« Grille d'évaluation des savoirs et savoir-faire de l'app
 
 #### Thème : COMMUNICATION TECHNIQUE (p.41–86)
 
-*(Tranche transcrite ici : p.41 à p.64. La suite du thème — fin de l'activité 3 « Pince de
-soudage » et les synthèses — est hors périmètre.)*
+*(Le thème est transcrit en entier ci-dessous, p.41 à p.86.)*
 
 ##### Ouverture du thème — Séquence « Définition des éléments d'un produit » (p.41)
 
@@ -1151,8 +1150,10 @@ en regard des cinq CD ; les critères sont répartis en quatre cellules.
 
 - **Ressource numérique** : un QR code étiqueté **PDF** est placé dans le tableau (p.41).
 - **Bandeau de page (p.42 à p.64)** : toutes les pages de la séquence portent le bandeau jaune
-  « **DÉFINITION DES ELEMENTS D'UN PRODUIT** » [sic — « ELEMENTS » sans accent] et, dans une
-  pastille bleue à gauche, la ou les compétences travaillées (CD 3.2, CD 3.5, CD 3.7, CD 3.3).
+  « **DÉFINITION DES ELEMENTS D'UN PRODUIT** » [sic — « ELEMENTS » sans accent]. La pastille bleue
+  de gauche porte la ou les compétences travaillées (CD 3.2, CD 3.5, CD 3.7, CD 3.3) sur les pages
+  de travail, et **reste vide sur les pages de présentation de support** (p.42–44, p.51–52,
+  p.60–64).
 
 ---
 
@@ -1827,7 +1828,7 @@ n'imprime que « Activité 1.1 ».)*
 
 *(Le travail demandé de cette activité est transcrit plus bas, aux sous-activités 3.1
 « Lecture d'un dessin d'ensemble » (p.65–68) et 3.2 « Cotation fonctionnelle » (p.69–74) : la
-présentation du support et son travail demandé ont été transcrits par deux lecteurs différents.)*
+présentation du support et son travail demandé sont donc décrits en deux endroits.)*
 
 - **Système / support d'étude** : **pince de soudage par point** (soudage de tôles de châssis et
   carrosseries automobiles), actionnée par un **vérin pneumatique**.
@@ -1904,20 +1905,20 @@ présentation du support et son travail demandé ont été transcrits par deux l
 | 8 | 1 | Suspension | S235 | |
 | 9 | 1 | Chape M20 L=60 | S235 | |
 | 10 | 6 | Rondelle d'arrêt d'axe | S235 | |
-| 11 | 4 | Rondelle isolante ⌀20x⌀75x2 | Nylatron | |
-| 12 | 1 | Bague isolante ⌀24x⌀30x20 | Nylatron | |
-| 13 | 1 | Bague isolante ⌀24x⌀30x12 | Nylatron | |
-| 14 | 1 | Axe ⌀20x80 | Acier STUB | |
-| 15 | 1 | Axe ⌀16x43 | Acier STUB | |
-| 16 | 1 | Bride taraudée ⌀20 | S235 | |
-| 17 | 1 | Bride lamée ⌀20 | S235 | |
+| 11 | 4 | Rondelle isolante Ø20xØ75x2 | Nylatron | |
+| 12 | 1 | Bague isolante Ø24xØ30x20 | Nylatron | |
+| 13 | 1 | Bague isolante Ø24xØ30x12 | Nylatron | |
+| 14 | 1 | Axe Ø20x80 | Acier STUB | |
+| 15 | 1 | Axe Ø16x43 | Acier STUB | |
+| 16 | 1 | Bride taraudée Ø20 | S235 | |
+| 17 | 1 | Bride lamée Ø20 | S235 | |
 | 18 | 1 | Entretoise | | |
 | 19 | 1 | Tige filetée M20x150 | | NF E 22.163 |
 | 20 | 2 | Tôle de protection | S235 | |
 | 21 | 1 | Palier arrière | S235 | |
-| 22 | 1 | Axe ⌀20x50 | Acier STUB | |
+| 22 | 1 | Axe Ø20x50 | Acier STUB | |
 | 23 | 4 | Coussinet | Cu Sn 8 Pb 2 | |
-| 24 | 1 | Axe ⌀16x59 | Acier STUB | |
+| 24 | 1 | Axe Ø16x59 | Acier STUB | |
 | 25 | 6 | Vis CHC M5x6 | | NF E 25.125 |
 | 26 | 2 | Vis CHC M5x16 | | NF E 25.125 |
 | 27 | 1 | Écrou HM M4 | | NF E 25.405 |
@@ -1997,7 +1998,7 @@ présentation du support et son travail demandé ont été transcrits par deux l
 - ⛔ EXCLU / seulement mentionné dans cette tranche :
   - Les **sections** annoncées dans la colonne « Savoirs et savoir-faire » p.41 ne sont travaillées
     dans aucune des activités 1.x / 2.x de la tranche (seules les coupes le sont) — elles doivent
-    l'être plus loin dans le thème (p.65–86, hors périmètre).
+    l'être plus loin dans le thème (p.65–86, voir plus bas).
   - La **désignation des matériaux (Rappel)** annoncée p.41 n'est jamais exposée comme cours : elle
     n'apparaît que par des questions de déchiffrage (p.46 q.7, p.54 q.3).
   - La **CD 2.5** (modélisation 3D/2D) est annoncée p.41 mais n'apparaît **jamais en pastille de
@@ -2011,15 +2012,16 @@ présentation du support et son travail demandé ont été transcrits par deux l
     encadrés sont les « Situation déclenchante » / « Situation problème » de chaque sous-activité.
     Le manuel est un **manuel d'activités**, il pose des questions et ne donne aucun corrigé —
     toutes les réponses sont laissées en pointillés.
-  - L'**activité 3 (Pince de soudage) est incomplète ici** : la tranche s'arrête à la fin de la
-    nomenclature (p.64) ; aucune question, aucune situation problème, aucune sous-activité 3.x
-    n'est encore imprimée.
+  - L'**activité 3 (Pince de soudage)** se poursuit au-delà de sa présentation : ses
+    sous-activités **3.1** (p.65–68) et **3.2** (p.69–74) sont transcrites plus bas dans
+    cette même section. Les p.60–64 ne portent, elles, que le dossier technique (mise en
+    situation, dessins d'ensemble, nomenclature) — aucune question n'y est imprimée.
 
 ##### Activité 3 (suite) — Pince de soudage (p.65–74)
 
 > Cette tranche reprend l'Activité 3 en cours de route : elle ouvre à la page 65, sur la
 > sous-activité « Activité 3.1 ». La présentation du support (mise en situation, dessin
-> d'ensemble, nomenclature de la pince de soudage) est imprimée p.60–64, hors périmètre.
+> d'ensemble, nomenclature de la pince de soudage) est imprimée p.60–64 et transcrite ci-dessus.
 > Bandeau de page commun à toute la tranche : **« DÉFINITION DES ELEMENTS D'UN PRODUIT »**
 > (« ELEMENTS » sans accent, tel qu'imprimé) — c'est le titre courant du thème
 > « Communication technique ».
@@ -4050,7 +4052,8 @@ technique (p.130, 131, 132, 136, 138, 139, 142, 143, 146, 147, 155, 156, 157).
   - Effort presseur développé par **un** ressort : **Fr = 3,5 N**
   - Nombre de ressorts de pression (26) : **16** (donné par la nomenclature p.132)
   - Diamètres des surfaces de contact du disque avec les plateaux : **D = ........ mm ;
-    d = ............ mm** (à relever sur le dessin d'ensemble p.131, échelle 3:10)
+    d = ............ mm** (Relever les dimensions du dessin d'ensemble) — *le dessin d'ensemble
+    de la maquette est p.131, échelle 3:10 ; la p.135 ne le précise pas.*
   - Table des matériaux candidats pour la garniture (37) :
 
 | Matériau | Coefficient de frottement " f " |
@@ -4067,12 +4070,15 @@ technique (p.130, 131, 132, 136, 138, 139, 142, 143, 146, 147, 155, 156, 157).
   > entre le moteur et la boite.
   > **Comment analyser et interpréter cette fonction ?**
 
-  > **Formule encadrée du couple transmissible** (p.135)
+- **Formule du couple transmissible (p.135)** — imprimée en ligne de texte courant, hors
+  de tout encadré, entre les données et la question a. :
+
   > Ct = (2/3) . n . f . N . (R³ - r³) / (R² - r²)
-  >
-  > *(imprimée avec la fraction 2/3 empilée et le quotient (R³ - r³)/(R² - r²) empilé ;
-  > n = nombre de surfaces de friction, f = coefficient de frottement, N = effort presseur,
-  > R et r = rayons extérieur et intérieur de la couronne de friction)*
+
+  *(imprimée avec la fraction 2/3 empilée et le quotient (R³ - r³)/(R² - r²) empilé. Le
+  manuel n'imprime aucune légende des symboles : n, f et N sont identifiables par les
+  questions a., b. et c. de la même page ; **R et r ne sont définis nulle part sur la p.135**
+  — l'énoncé n'y donne que les diamètres D et d, à relever sur le dessin d'ensemble.)*
 
 - **Travail demandé — II. Travail demandé (p.133–135)** :
 
@@ -4182,14 +4188,14 @@ sommaire p.5 la désigne « Transmission de mouvement ». Bandeau de tête : « 
   *(Cette même ligne est réimprimée en tête du « Travail demandé » des activités 2.2 p.140,
   2.3 p.144, 2.4 p.148, 2.5 p.151 et 3 p.158.)*
 - **Données numériques de l'énoncé** : barre brute d'aluminium **Ø30**, **L = 42 mm** ; opération
-  de chariotage à **∅28**. Dessin 3D de la pièce à obtenir, coté : **∅28**, **∅24**, **20**, **40**
+  de chariotage à **Ø28**. Dessin 3D de la pièce à obtenir, coté : **Ø28**, **Ø24**, **20**, **40**
   (mm). QR code **Vid**.
 - **Travail demandé (II)** :
   1. **Préparation de la machine pour une opération d'usinage**
-     - a. « Monter la pièce brute de ∅30 et L=42mm. »
+     - a. « Monter la pièce brute de Ø30 et L=42mm. »
      - b. « Monter l'outil couteau et l'outil coudé. »
      - c. « Mettre la machine en marche en présence de l'enseignant. »
-     - d. « Réaliser une opération de dressage, et chariotage ∅28. »
+     - d. « Réaliser une opération de dressage, et chariotage Ø28. »
   2. **Les mouvements possibles sur le tour//**
      - a. « Sur un tour // le mouvement de coupe est donné à : (Cocher la ou (les) bonne(s)
        réponse(s)). » — cases à cocher : *La pièce ☐   l'outil ☐   le porte-outil ☐   le
@@ -4449,7 +4455,7 @@ sommaire p.5 la désigne « Transmission de mouvement ». Bandeau de tête : « 
   > **Faisons l'étude de la boîte de vitesses du tour parallèle.**
 
 - **Données numériques de l'énoncé** :
-  - (p.148) chariotage d'une pièce en aluminium de **∅24** avec un **outil à charioter en (A.R.S)** ;
+  - (p.148) chariotage d'une pièce en aluminium de **Ø24** avec un **outil à charioter en (A.R.S)** ;
     vitesse de coupe **Vc = 60 m/min**.
   - (p.149) vitesse de rotation du moteur en charge : **Nm = 1435 tr/min** ;
     rapport de transmission par poulie courroie : **r = 0,475**.
@@ -4464,7 +4470,7 @@ sommaire p.5 la désigne « Transmission de mouvement ». Bandeau de tête : « 
 - **Travail demandé (II, p.148–150)** :
   1. **Préparation de la machine pour une opération d'usinage (p.148)** — « Calcul de la vitesse de
      rotation (ou vitesse de rotation du mandrin) pour le chariotage d'une pièce en aluminium de
-     ∅24 avec un outil à charioter en (A.R.S). »
+     Ø24 avec un outil à charioter en (A.R.S). »
      - a. « Donner la formule : N = ……………… » *(formule à écrire par l'élève ; non imprimée)*
      - b. « On donne : Vc = 60m/min — Calculer la vitesse de rotation N. »
        Cadre de réponse : **N\_calculée = ......................... tr/min**
@@ -4830,7 +4836,7 @@ sommaire p.5 la désigne « Transmission de mouvement ». Bandeau de tête : « 
     graphique complète** (trajectoires, vitesse instantanée en m/s, vecteur vitesse à l'échelle
     1 mm → 0,01 m/s, vitesse angulaire par changement de solide, deuxième position, angle de
     rotation) — p.142–145.
-  - **Boîte de vitesses du tour** : vitesse de coupe → vitesse de rotation (Vc = 60 m/min, ∅24),
+  - **Boîte de vitesses du tour** : vitesse de coupe → vitesse de rotation (Vc = 60 m/min, Ø24),
     schéma cinématique à 12 roues, rapport de transmission par poulie-courroie, tableau des
     **9 positions** de baladeurs, chaîne de rendements (η poulies-courroies 0,8 × η BdV 0,9) et
     couple maximal à la broche (p.146–150).
@@ -4864,13 +4870,12 @@ sommaire p.5 la désigne « Transmission de mouvement ». Bandeau de tête : « 
     vitesse la plus proche ») : **non imprimé** — la lecture se fait sur la machine réelle.
   - **Aucun corrigé, aucune synthèse encadrée de fin d'activité** dans cette tranche : le manuel
     est un *manuel d'activités* à trous ; il n'y a ni « Je retiens », ni « Retenir », ni
-    « Rappel ». La seule règle encadrée de la tranche est la formule de Ct (p.135) ; les autres
+    « Rappel ». La seule règle générale énoncée dans la tranche est la formule de Ct (p.135), imprimée hors encadré ; les autres
     encadrés sont les **Situations déclenchantes** (p.133, 137, 140, 144, 148, 151, 158).
   - **Renvois hors tranche** : les QR codes (Vid / PDF, dont **QR49** p.138) pointent vers des
     ressources vidéo et PDF externes, non transcriptibles ici.
-  - **Suite de l'Activité 3 / activités suivantes** : la p.162 se termine sur la question 8 du
-    § C ; je n'ai pas ouvert la p.163 (hors périmètre) et ne peux donc pas dire si l'Activité 3 se
-    poursuit au-delà.
+  - **Suite de l'Activité 3** : la p.162 se termine sur la question 8 du § C. L'**Activité 3**
+    s'achève là ; la p.163 ouvre l'**Activité 4** (fraiseuse universelle).
 
 ##### Activité 4 — Fraiseuse universelle (p.163–180)
 
@@ -5006,7 +5011,7 @@ L'activité 4 se déroule en trois volets successifs, chacun avec sa propre pré
      c. Déduire l'effort de chaque ressort.
   9. Donner le rôle des écrous hexagonaux autofreinés (6).
 
-- **Formule encadrée (p.167, verbatim)** :
+- **Formule imprimée dans l'énoncé de la question 8 (p.167, verbatim — non encadrée)** :
 
   > Cf = 2/3 · F<sub>p</sub> · f · n · (R³ - r³) / (R² - r²)
 
@@ -7076,7 +7081,7 @@ Un QR-code marqué **PDF** figure en bas à droite de la p.216.
   > - Les poids des pièces sont négligés ainsi que les frottements.
   >
   > On donne :
-  > - Rendement de la boite de vitesses η = 0,97.
+  > - Rendement de la boite de vitesses ŋ = 0,97. [sic — glyphe « ŋ » imprimé à la place de η]
   > - Puissance du moteur P_m = 1000 Watts.
   > - La vis mère tourne à une vitesse constante N₃₆ = 70 tr/min.
 
@@ -7770,7 +7775,7 @@ résolu par la formule de Willis (QR-codes **Vid** en marge de chaque possibilit
 
 Figures associées : profil de deux dents en prise (satellite **25** sur planétaire **26**) avec
 la force **F₂₅/₂₆** décomposée en **T** (tangentiel) et **R** (radial), angle de pression **20°**
-repéré ; puis modélisation en poutre encastrée en E, effort **T** appliqué à **2,25 m** de
+repéré ; puis modélisation en poutre encastrée en E, effort **T** appliqué à **2,25·m** de
 l'encastrement, largeur de dent **k.m** et « Pas/2 » cotés.
 
 Résultat imprimé :
@@ -7911,7 +7916,7 @@ Cotes lisibles : **Ø8g6** ; **Ø9g6** ; **Ø10f7** ; **3N9** ; **M8** ; **3 (+0
 **1±0,1** ; **2,5 (+0,1 / 0)** ; **0,25 (+0,1 / 0)** ; **0,5 (+0,1 / 0)** (×2) ;
 **8 (+0,1 / 0)** ; **12±0,1** ; **69±0,05** ; **78±0,1**.
 Spécifications géométriques cotées par rapport au référentiel **A** : symétrie **0,04 | A**
-(×2) ; perpendicularité **⊥ 0,05 | A** ; coaxialité **⌀ Ø0,02 | A**.
+(×2) ; perpendicularité **⊥ 0,05 | A** ; coaxialité **Ø0,02 | A**.
 Tolérances explicitées : **Ø 10f7 = Ø 10 (−0,013 / −0,028)** ; **Ø 9g6 = Ø 9 (−0,005 / −0,014)** ;
 **Ø 8g6 = Ø 8 (−0,005 / −0,014)** ; **3N9 = 3 (−0,004 / −0,029)**.
 **Ra 3,2** ; **Tolérances générales ISO 2768 - mk**.
@@ -8277,7 +8282,7 @@ numéros de normales de repérage 1 à 6 et les axes x, y, z.
 Figures associées (p.286) : pour **a.** deux croquis d'usinage en tournage et en fraisage, avec
 « Référentiel des côtes [sic] diamétrales », « Référentiel des cotes de longueurs », « Plans de
 travail de l'outil », cotes Cm1 et Cm2 ; pour **b.** deux croquis (fraise à 3 tailles, train de
-fraises) avec Cm1, Cm2, Co1, Co2, Co ; pour **c.** un croquis « Montage d'usinage » + « Canon de
+fraises) avec Cm1, Cm2, Co1, Co2, Co ; pour **c.** un croquis « Montage de d'usinage » [sic — « de » surnuméraire] + « Canon de
 perçage » avec Ca1 et Ca2 ; pour **d.** un croquis de transfert avec **B=24<sup>±0,3</sup>**,
 **A=18<sup>±0,2</sup>**, **Cf1** et **Cf2**.
 
@@ -8296,7 +8301,7 @@ perçage » avec Ca1 et Ca2 ; pour **d.** un croquis de transfert avec **B=24<su
 Figure de a. : photo légendée **Comparateur**, **Pièce à contrôler**, **Cale étalon**, **Marbre**.
 Tableau de b. : trois colonnes illustrées — **Parallélisme** (tolérance ⫽ 0,1 | A, référence A),
 **Perpendicularité** (tolérance ⊥ 0,1 | B, référence B, écart Δx = 0,06 relevé),
-**Coaxialité** (tolérance ⌀ 0,1 | C, référence C).
+**Coaxialité** (tolérance Ø 0,1 | C, référence C).
 
 ---
 
@@ -8514,6 +8519,9 @@ recopient pas — et une génération qui prétendrait les citer inventerait.
 
 ### 3.3 Conventions de notation observées dans tout le manuel
 
+- **Symbole de diamètre** : le manuel n'en imprime qu'un ; cette fiche le rend partout par **`Ø` (U+00D8)**. Les variantes `⌀` (U+2300) et surtout `∅` (U+2205 — le signe mathématique « ensemble vide ») ont été normalisées : elles venaient des lecteurs, pas de la source, et `∅` casse toute recherche en aval.
+- **Espaces doubles de la source** : conservés là où le §6.2 les signale, normalisés ailleurs. La règle n'a pas été appliquée uniformément par les dix lecteurs — s'y fier pour un comptage de caractères serait imprudent.
+
 - **Repères de nomenclature entre parenthèses** : une pièce est toujours désignée par son nom
   suivi de son repère — « Sabot (4) », « Levier de commande (12) », « Tige filetée (16) ».
 - **Indices de couple cinématique** : une vitesse, une trajectoire ou une rotation relative porte
@@ -8552,13 +8560,13 @@ de fin de thème est rattachée au dernier chapitre de son thème.
 | 14 | `14-transmission-fraiseuse-universelle` | Transmission de puissance — Activité 4 : fraiseuse universelle. Étude de frein, boîte de vitesses, transformation de mouvement vis-écrou | `228462` · p.163–180 |
 | 15 | `15-transmission-moteur-a-explosion` | Transmission de puissance — Activité 5 : maquette moteur à explosion. Machine thermique, embrayage, boîte de vitesses, synchroniseur | `228462` · p.181–200 |
 | 16 | `16-transmission-palan-electrique` | Transmission de puissance — Activité 6 : palan électrique à chaîne. Frein et limiteur de couple, train épicycloïdal, puis synthèse du thème | `228462` · p.201–215 |
-| 17 | `17-torsion-banc-d-essai` | Comportement du solide déformable — Activité 1 : banc d'essai de torsion | `228462` · p.216–221 |
+| 17 | `17-torsion-banc-d-essai` | Comportement du solide déformable — ouverture du thème (p.216 : séquence, composantes CD 1.7 / CD 2.1, carte du manuel) puis Activité 1 : banc d'essai de torsion | `228462` · p.216–221 |
 | 18 | `18-flexion-banc-d-essai` | Comportement du solide déformable — Activité 2 : banc d'essai de flexion | `228462` · p.222–226 |
 | 19 | `19-sollicitations-composees-micro-tour` | Comportement du solide déformable — Activité 3 : micro tour, sollicitations composées | `228462` · p.227–232 |
 | 20 | `20-sollicitations-composees-touret-a-meuler` | Comportement du solide déformable — Activité 4 : touret à meuler, sollicitations composées | `228462` · p.233–238 |
 | 21 | `21-machine-de-torsion-de-limes-dentaires` | Comportement du solide déformable — Activité 5 : machine de torsion de limes dentaires | `228462` · p.239–244 |
 | 22 | `22-grue-d-atelier` | Comportement du solide déformable — Activité 6 : grue d'atelier, puis synthèse du thème | `228462` · p.245–251 |
-| 23 | `23-plasturgie-bateau-a-pedales` | Obtention des pièces — Activité : bateau à pédales, plasturgie | `228462` · p.252–256 |
+| 23 | `23-plasturgie-bateau-a-pedales` | Obtention des pièces — ouverture de l'AXE 3 et du thème (p.252 : séquence, composantes CD 3.9 / CD 2.6 / CD 2.8 / CD 2.7, carte du manuel) puis Activité : bateau à pédales, plasturgie | `228462` · p.252–256 |
 | 24 | `24-projet-maquette-train-epicycloidal` | Obtention des pièces — Projet 1 : maquette de train épicycloïdal (dossier de réalisation guidée) | `228462` · p.257–280 |
 | 25 | `25-projet-maquette-mecanisme-a-came` | Obtention des pièces — Projet 2 : maquette de mécanisme à came (dossier volontairement bref : modèle 3D, vue éclatée, dessin d'ensemble et nomenclature), puis les DEUX synthèses de fin de manuel — obtention des pièces (p.285-286) et plasturgie (p.287-288) | `228462` · p.281–288 |
 
@@ -8599,6 +8607,35 @@ de fin de thème est rattachée au dernier chapitre de son thème.
 - **Le curriculum officiel lui-même.** Le manuel s'y réfère (« le nouveau programme d'étude de
   technologie actuel », p.6) sans le reproduire. Le scope de cette fiche est donc celui du
   manuel, qui en est l'application, et non celui du texte curriculaire.
+
+### 6.3 Contrôle indépendant (R-7) — ce qu'il a trouvé, et ce qui reste dû
+
+Deux contrôleurs à contexte vierge, n'ayant écrit aucune ligne de ce qu'ils relisaient, ont
+confronté cette fiche **aux pages du manuel** — page ouverte d'abord, fiche lue ensuite —, chacun
+sur une moitié. **105 pages ouvertes sur 288 (36 %)**, dont les six synthèses de fin de thème
+vérifiées mot à mot, toutes les formules, et les bornes de chaque chapitre.
+
+| Moitié | Verdict | Substantielles | De forme |
+| ------ | ------- | -------------- | -------- |
+| p.145–288 | **au-dessus de la barre** | 0 | 6 |
+| p.1–144 | **sous la barre** | 3 | 9 |
+
+**Les 18 défauts ont été corrigés.** Les trois substantielles étaient : une **invention** (des
+cases à compléter décrites sous deux blocs de la p.16 qui n'en portent pas), un **contresens sur
+la source** (« aucune sous-activité 3.x n'est encore imprimée », alors que 3.1 et 3.2 le sont et
+sont transcrites ici même), et une **formule annoncée « encadrée »** p.135 qui est en ligne de
+texte courant, assortie d'une légende de symboles que le manuel n'imprime pas.
+
+**Ce que le contrôle a confirmé** : aucune formule fausse, aucune plage de chapitre fausse,
+aucune activité omise, et — c'est la vérification la plus discriminante — **aucun des 40 constats
+du §6.2 testés n'est fabriqué**. Les trois défauts d'impression que cette fiche impute au manuel
+(le couple d'embrayage p.212, la cylindrée p.215, les signes manquants p.251) ont été vérifiés à
+l'agrandissement : ils sont réels.
+
+⚠️ **Ce qui reste dû.** Le protocole commande la re-lecture intégrale dès trois erreurs
+substantielles : elle est **due sur p.1–144** et n'a pas été faite. C'est pourquoi le registre
+porte `complete` et non `validee-r7` — la profondeur est acquise sur la totalité de la source, la
+validation indépendante ne l'est pas.
 
 ### 6.2 Zones incertaines relevées à la transcription
 
@@ -8752,6 +8789,8 @@ de fin de thème est rattachée au dernier chapitre de son thème.
 - p.4-5 (sommaire) vs pages : le sommaire annonce des sous-titres (« 1.1 Les liaisons mécaniques », « 1.2 Les assemblages », « 1.3 Les assemblages », « 1.4 Les assemblages », « 1.5 Guidage en rotation », « 2.1 Les liaisons mécaniques », « 2.2 Les assemblages », « 2.3 Guidage en rotation ») qui **ne sont imprimés sur aucune des pages 92 à 112** : celles-ci ne portent que « Activité 1.1 » … « Activité 2.3 » sous le bandeau « TYPOLOGIE DES ASSEMBLAGES - ASSEMBLAGE ». Les titres de la fiche suivent donc la **page**, pas le sommaire.
 
 **p.113–128**
+
+- p.120 vs p.121 : la nomenclature donne `Nbr. = 1` pour la **roue avant (56)**, mais l'encadré de la p.121 parle des « **deux** roues avant (56) » — contradiction interne de la source, transcrite telle quelle.
 
 - p.113 : « batterie 48v » — unité écrite en minuscule (au lieu de 48 V) — noté `[sic]`.
 - p.114 / p.120 : cartouches « Echelle: 1:2 » et p.126 « Echelle:2:5 » — « Echelle » sans accent
@@ -8986,7 +9025,7 @@ de fin de thème est rattachée au dernier chapitre de son thème.
 - p.226 : « Comparer les valeurs de la flèches trouvées » — noté `[sic]`.
 - p.226 : « avec celles de l'étude théoriques » — noté `[sic]`.
 - **p.229 : contradiction interne du manuel** — « Puissance du moteur électrique **(13)** : P_m = 0.55 KW », alors que la nomenclature p.227 donne (13) = **Poulie réceptrice** et (21) = **Moteur électrique** ; la ligne suivante réutilise d'ailleurs (13) pour la poulie réceptrice (« D₁₃ = 48 mm »). Le repère correct est vraisemblablement (21) — noté `[sic]`, non corrigé.
-- p.229 : le symbole du rendement est imprimé de manière ambiguë (glyphe proche de « ŋ ») ; transcrit **η** partout — noté `[?]` sur le glyphe exact.
+- p.229 **et p.242** : le symbole du rendement est imprimé de manière ambiguë (glyphe proche de « ŋ ») ; transcrit **η** partout — noté `[?]` sur le glyphe exact.
 - p.232, p.238, p.244 : « Déduire à quelle type de sollicitation est soumise/soumis … » — noté `[sic]` (lire « à quel type »).
 - p.238 : « Le coéficient de sécurité est s=2. » — noté `[sic]`.
 - p.238 : « En utilisons la condition de résistance à la flexion trouver le diamètre minimal » — noté `[sic]` (lire « En utilisant »).
@@ -9006,12 +9045,13 @@ de fin de thème est rattachée au dernier chapitre de son thème.
 - p.251 : « La quantité I_GZ/v est appelée **module de rigidité à la flexion** » — appellation de la source (usuellement « module de flexion ») ; transcrite verbatim.
 - p.251 : la phrase « Un arbre est soumis à une sollicitation de flexion-torsion si le moment résultant en G est : » est suivie d'un saut de ligne et de deux phrases, la formule M_G = M_t.x⃗ + M_f.z⃗ étant imprimée **après** la phrase suivante, en petit corps ; l'ordre de lecture imprimé est restitué tel quel.
 - p.237 : la question 3 annonce « les figures ci-dessous », mais les deux repères de tracé sont imprimés **en haut de la page suivante (p.238)** ; ce n'est pas une figure manquante, seulement un enjambement de page.
-- p.218, p.227, p.234, p.246 : plusieurs cellules « Matière » et « Observation » sont **vides à l'impression** (travail d'élève ou information non fournie) ; restituées par *(vide)*, jamais devinées.
+- p.218, p.234, p.246 : plusieurs cellules « Matière » et « Observation » sont **vides à l'impression** (travail d'élève ou information non fournie) ; restituées par *(vide)*, jamais devinées. La nomenclature de la p.227 est en revanche annoncée « **partielle** » et ne porte que trois colonnes (Rep. / Nbr. / Désignation) : elle n'a ni « Matière » ni « Observation ».
 - p.234 : le dessin d'ensemble ne porte **aucune cote chiffrée** ; la question 8 de la p.238 (« Relever le diamètre du dessin d'ensemble ») suppose donc une mesure à l'échelle indiquée (2:9) — noté `[?]` sur la valeur attendue, qui n'est pas imprimée.
 - p.246 : idem, le dessin d'ensemble de la grue ne porte que **H_maxi = 2519**, **H_mini = 540**, **θ = 38°** et **θ = 35°** comme valeurs chiffrées.
 
 **p.252–288**
 
+- **p.286 : coquille de la source.** Légende de croquis « Montage **de** d'usinage » (« de » surnuméraire) — noté `[sic]`.
 - **p.286–288 : écart entre le sommaire et les pages.** Le découpage annoncé (« Synthèse p.285 ;
   p.286-288 = fin de manuel : bibliographie, annexes, tables, quatrième de couverture… ») ne
   correspond pas au manuel. Ce que portent réellement ces pages : **p.286 = suite de la Synthèse
