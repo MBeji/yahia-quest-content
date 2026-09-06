@@ -14,7 +14,9 @@ Un corps posé sur le sol lui transmet ainsi l'action que la Terre exerce sur lu
 
 ## 🎯 La force pressante
 
-Quand un corps appuie par toute une surface de contact, ces actions réparties sont **équivalentes à une force unique** F, appelée **force pressante**. La surface de contact entre le corps qui presse et le corps pressé est la **surface pressée**, notée s.
+::: definition La force pressante et la surface pressée
+Les actions **réparties** sur une surface d'un corps solide sont **équivalentes à une force unique F**, appelée **force pressante**. La surface de contact entre le **corps pressant** et le **corps pressé** est appelée **surface pressée**, notée **s**.
+:::
 
 La force pressante a deux caractéristiques importantes : elle est **normale** (perpendiculaire) à la surface pressée, et elle agit **uniformément** sur toute cette surface.
 
@@ -35,6 +37,10 @@ La force pressante a deux caractéristiques importantes : elle est **normale** (
 ## ⚖️ La pression p = F/s
 
 Pose un corps sur du plâtre en poudre par sa **petite** face, puis par sa **grande** face : la petite face s'enfonce davantage. À force égale, l'effet dépend donc de la surface. Pour mesurer cet effet, on définit une nouvelle grandeur, la **pression** :
+
+::: definition La pression
+La **pression** exercée par des actions réparties **uniformément** sur une surface s d'un corps pressé, et agissant **normalement** à cette surface, est égale au **quotient de l'intensité de la force pressante par l'aire de cette surface**. C'est une grandeur mesurable, qui s'exprime dans le système international en **pascal**, de symbole **Pa**.
+:::
 
 $$ p = F/s $$
 

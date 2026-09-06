@@ -25,7 +25,9 @@ Cette lumière traverse les milieux transparents de l'œil et forme, sur la **r�
 
 ## 📏 La propagation rectiligne
 
-> **Dans un milieu homogène et transparent, la lumière se propage en ligne droite** : c'est la propagation rectiligne.
+::: propriete Le principe de la propagation rectiligne
+Dans un milieu **homogène et transparent**, la lumière se propage **en ligne droite**. Sa vitesse de propagation dans le vide vaut **c = 3 × 10⁸ m·s⁻¹**, et elle en est voisine dans l'air.
+:::
 
 On modélise le trajet de la lumière par un **rayon lumineux** (une droite fléchée). Un ensemble de rayons issus d'une même source forme un **faisceau de lumière** ; un faisceau très étroit est un **pinceau**. On distingue **trois types de faisceaux** : parallèle, convergent et divergent.
 

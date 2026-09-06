@@ -74,6 +74,10 @@ _Exemple détaillé_ : le linge mouillé sèche à l'air libre parce que l'eau *
 
 ## 🌡️ Une température de changement d'état constante
 
+::: propriete La température de changement d'état d'un corps pur
+Les **corps purs** ont, sous une pression donnée, une **température de changement d'état constante**, et cette température est **la même pour un changement d'état et pour son changement inverse**. Pour l'eau pure sous la pression atmosphérique normale : **fusion à 0 °C**, **ébullition à 100 °C**.
+:::
+
 Pour un **corps pur** sous une **pression donnée**, chaque changement d'état se produit à une **température constante**. Tant que le corps change d'état, sa température ne bouge pas : la courbe θ(t) présente un **palier**.
 
 Pour l'**eau pure**, sous la pression atmosphérique normale, la **fusion** se produit à **0°C** et l'**ébullition** à **100°C**. Chaque corps pur a ses propres valeurs :

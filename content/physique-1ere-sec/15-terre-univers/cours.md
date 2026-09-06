@@ -19,7 +19,9 @@ Un **groupement d'étoiles vu dans une même région du ciel** est une **constel
 
 Les distances de l'univers sont énormes : on les mesure en **années-lumière (a.l)**.
 
-> **Une année-lumière est la distance parcourue par la lumière, dans le vide, pendant une année**, à la célérité c = 3×10⁸ m·s⁻¹.
+::: definition L'année-lumière
+Une **année-lumière** est la **distance** que parcourt, dans le vide, un signal lumineux pendant une durée d'**une année**, à la célérité c = 3 × 10⁸ m·s⁻¹.
+:::
 
 $$ 1 a.l ≈ 9,46×10¹² km $$
 

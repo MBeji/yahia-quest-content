@@ -6,7 +6,11 @@ Tu sais modéliser une action par une force. Voici maintenant la question clé d
 
 ## ⚖️ Deux forces directement opposées
 
-Un solide soumis à **deux forces** est en **équilibre** si ces deux forces sont **directement opposées**, c'est-à-dire :
+::: propriete L'équilibre sous deux forces
+Lorsqu'un solide soumis à deux forces F₁ et F₂ est **en équilibre**, ces deux forces ont la **même droite d'action**, sont de **sens contraires** et ont la **même intensité**. On les dit **directement opposées**.
+:::
+
+Autrement dit :
 
 - elles ont la **même droite d'action** ;
 - elles sont de **sens contraires** ;
@@ -41,7 +45,11 @@ L'équilibre révèle des forces de contact qu'on ne « voit » pas :
 
 ## 🌀 La loi de Hooke
 
-Quand on déforme un ressort (on l'allonge ou on le comprime), il exerce une force appelée **tension du ressort**, notée T. Pour un **ressort linéaire**, cette tension est proportionnelle à la **déformation** Δl :
+::: definition La tension d'un ressort
+Lorsqu'un ressort est **déformé** — allongé ou comprimé —, il exerce sur le corps agissant une force appelée **tension du ressort**, notée **T**.
+:::
+
+Pour un **ressort linéaire**, cette tension est proportionnelle à la **déformation** Δl :
 
 $$ T = k × Δl $$
 

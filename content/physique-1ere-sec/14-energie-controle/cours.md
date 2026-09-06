@@ -22,7 +22,11 @@ $$ énergie totale = énergie mécanique + énergie microscopique $$
 
 > **L'énergie contenue dans l'Univers se conserve, mais elle peut se transformer d'une forme à une autre.**
 
-Les objets qui transforment l'énergie d'une forme en une autre sont des **convertisseurs d'énergie**. On ne peut en général pas mesurer l'énergie d'un système ; **seules ses variations** le sont. La **variation d'énergie**, notée **ΔE**, s'exprime en **joule** (symbole **J**).
+::: propriete Conservation et conversion de l'énergie
+L'énergie contenue dans l'Univers **se conserve**, mais elle peut **se transformer d'une forme à une autre**. Les objets qui opèrent cette transformation sont appelés **convertisseurs d'énergie**.
+:::
+
+On ne peut en général pas mesurer l'énergie d'un système ; **seules ses variations** le sont. La **variation d'énergie**, notée **ΔE**, s'exprime en **joule** (symbole **J**).
 
 ::: figure Un convertisseur transforme une forme d'énergie en une autre : la pile (énergie chimique) fait tourner le moteur (énergie mécanique) par un transfert de travail électrique WE.
 <svg viewBox="0 0 300 90">
