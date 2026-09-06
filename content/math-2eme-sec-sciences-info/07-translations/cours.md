@@ -111,7 +111,14 @@ $$ MM'⃗ = (1 + 1 − 2)MC⃗ + CA⃗ + CB⃗ = CA⃗ + CB⃗ $$
 
 Le point M a disparu : l'application est la **translation de vecteur CA⃗ + CB⃗**.
 
-_Exemple détaillé (une variante à connaître)_ : A et B sont fixes, et à tout point M on associe N tel que AN⃗ = 3AM⃗ − 2BM⃗. Alors MN⃗ = AN⃗ − AM⃗ = 2AM⃗ − 2BM⃗ = 2(AM⃗ − BM⃗) = 2BA⃗. Ce vecteur est constant : c'est la **translation de vecteur 2BA⃗**.
+_Exemple détaillé (une variante à connaître)_ : A et B sont fixes, et à tout point M on associe N tel que AN⃗ = 3AM⃗ − 2BM⃗. Alors MN⃗ = AN⃗ − AM⃗ = 2AM⃗ − 2BM⃗ = 2(AM⃗ − BM⃗) = 2AB⃗. Ce vecteur est constant : c'est la **translation de vecteur 2AB⃗**.
+
+> ⚠️ **Attention au sens — deux cas se ressemblent et ne donnent pas le même résultat.**
+> Ici les deux vecteurs ont la **même extrémité** M : AM⃗ − BM⃗ = AM⃗ + MB⃗ = **AB⃗**, on va donc du
+> **premier point de départ vers le second**. C'est l'inverse du cas où les deux vecteurs ont la
+> **même origine** : MS⃗ − MT⃗ = MS⃗ + TM⃗ = **TS⃗**, où l'on va de la seconde extrémité vers la
+> première. Dans les deux cas, la seule chose à faire est d'appliquer Chasles ; retenir un sens
+> sans regarder quelle lettre est commune, c'est se tromper une fois sur deux.
 
 > ⚠️ Une somme de coefficients nulle ne signifie pas la même chose ici et au chapitre précédent. Là-bas, elle interdisait l'existence d'un barycentre ; ici, c'est exactement elle qui **garantit** que le vecteur est constant, donc qu'on tient une translation.
 

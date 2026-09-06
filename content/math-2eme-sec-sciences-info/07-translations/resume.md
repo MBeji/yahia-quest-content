@@ -21,7 +21,7 @@
 </svg>
 :::
 
-- **Reconnaître une translation cachée** : si MM'⃗ est une somme pondérée dont les **coefficients totalisent 0**, cette somme est un vecteur **constant**, donc l'application est une translation. Exemples : MM'⃗ = MA⃗ + MB⃗ − 2MC⃗ = **CA⃗ + CB⃗** ; AN⃗ = 3AM⃗ − 2BM⃗ donne MN⃗ = **2BA⃗**.
+- **Reconnaître une translation cachée** : si MM'⃗ est une somme pondérée dont les **coefficients totalisent 0**, cette somme est un vecteur **constant**, donc l'application est une translation. Exemples : MM'⃗ = MA⃗ + MB⃗ − 2MC⃗ = **CA⃗ + CB⃗** ; AN⃗ = 3AM⃗ − 2BM⃗ donne MN⃗ = **2AB⃗**. ⚠️ Même **extrémité** ⇒ AM⃗ − BM⃗ = **AB⃗** (du premier départ vers le second) ; même **origine** ⇒ MS⃗ − MT⃗ = **TS⃗** (de la seconde extrémité vers la première). Deux cas duaux : appliquer Chasles, jamais un sens appris par cœur.
 - **Conservations** : une translation conserve les **distances**, les **angles**, l'**alignement**, le **milieu**, le **barycentre** (mêmes coefficients sur les points images), le **parallélisme**, l'**orthogonalité** et le **contact** (une tangente reste tangente). L'image d'un polygone est un polygone qui lui est **superposable** — même périmètre, mêmes angles, quel que soit u⃗.
 - **Images des objets usuels** : une droite D → une **droite parallèle** à D ; un segment [AB] → le segment [A'B'] **de même longueur** ; une demi-droite → une demi-droite ; un cercle de centre O et de rayon r → le cercle de **même rayon** r centré en l'image de O. Le rayon ne change jamais : seul le centre voyage.
 - **Médiatrice** : milieu conservé + orthogonalité conservée ⟹ l'image de la médiatrice de [AB] est la **médiatrice de [A'B']**.
