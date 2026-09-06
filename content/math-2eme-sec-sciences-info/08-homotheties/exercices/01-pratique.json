@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec les homothéties",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Le point M' est l'image du point M par l'homothétie de centre I et de rapport 3. Quelle homothétie transforme M' en M ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Celle de centre I et de rapport −3"
+        },
+        {
+          "id": "b",
+          "text": "Celle de centre I et de rapport −1/3"
+        },
+        {
+          "id": "c",
+          "text": "Celle de centre I et de rapport 1/3"
+        },
+        {
+          "id": "d",
+          "text": "Celle de centre I et de rapport 3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On part de IM'⃗ = 3IM⃗ et on isole l'autre vecteur : IM⃗ = (1/3)IM'⃗. Cette égalité dit exactement que M est l'image de M' par l'homothétie de même centre I et de rapport 1/3 ✓. Le centre ne change jamais quand on remonte le sens de la transformation, seul le rapport est remplacé par son inverse. Le rapport −1/3 ajoute un changement de côté qui n'a pas lieu d'être : M et M' sont déjà du même côté de I, puisque le rapport de départ est positif. Le rapport −3 change le côté sans rien inverser du tout. Quant au rapport 3, il supposerait qu'une homothétie ramène toujours l'image sur son antécédent, ce qui n'est vrai que pour le rapport −1, c'est-à-dire pour la symétrie centrale.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit h une homothétie de centre I et de rapport k, et M un point du plan distinct de I, d'image M'. Quelle affirmation est vraie quelle que soit la valeur du rapport k ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point I est le milieu du segment [MM']"
+        },
+        {
+          "id": "b",
+          "text": "Le point M' appartient au segment [IM]"
+        },
+        {
+          "id": "c",
+          "text": "Les longueurs IM et IM' sont égales"
+        },
+        {
+          "id": "d",
+          "text": "Les points I, M et M' sont alignés"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La définition IM'⃗ = kIM⃗ dit que IM'⃗ est un multiple de IM⃗ : les deux vecteurs sont colinéaires, donc les trois points I, M et M' sont toujours alignés ✓, quel que soit le rapport. Les trois autres affirmations ne valent que dans un cas particulier. Le centre I est le milieu de [MM'] uniquement lorsque le rapport vaut −1, c'est-à-dire pour la symétrie centrale. Le point M' appartient au segment [IM] uniquement lorsque le rapport est compris entre 0 et 1, donc pour une réduction sans changement de côté. Enfin les longueurs IM et IM' sont égales uniquement lorsque la valeur absolue du rapport vaut 1, ce qui exclut tous les agrandissements et toutes les réductions.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur la figure, les points R, S, I, P, M et Q sont alignés et I est le centre d'une homothétie de rapport 1/2. Lequel des points marqués est l'image de M par cette homothétie ?\n<svg viewBox=\"0 0 340 170\"><path d=\"M55 100 L310 100\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><g fill=\"#0f6e56\"><circle cx=\"80\" cy=\"100\" r=\"5\"/><circle cx=\"115\" cy=\"100\" r=\"5\"/><circle cx=\"185\" cy=\"100\" r=\"5\"/><circle cx=\"290\" cy=\"100\" r=\"5\"/></g><g fill=\"#0f172a\"><circle cx=\"150\" cy=\"100\" r=\"6\"/><circle cx=\"220\" cy=\"100\" r=\"6\"/></g><g font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"80\" y=\"128\" fill=\"#0f6e56\">R</text><text x=\"115\" y=\"128\" fill=\"#0f6e56\">S</text><text x=\"185\" y=\"128\" fill=\"#0f6e56\">P</text><text x=\"290\" y=\"128\" fill=\"#0f6e56\">Q</text><text x=\"150\" y=\"128\" fill=\"#0f172a\">I</text><text x=\"220\" y=\"128\" fill=\"#0f172a\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point P"
+        },
+        {
+          "id": "b",
+          "text": "Le point Q"
+        },
+        {
+          "id": "c",
+          "text": "Le point R"
+        },
+        {
+          "id": "d",
+          "text": "Le point S"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'image cherchée vérifie IM'⃗ = (1/2)IM⃗ : elle est du même côté de I que M, puisque le rapport est positif, et à la moitié de la distance IM. C'est exactement le milieu du segment [IM], que la figure montre être le point P ✓. Le point Q est deux fois plus loin de I que M : il correspondrait au rapport 2, c'est-à-dire à l'inverse de celui donné. Le point S est bien à la moitié de la distance, mais de l'autre côté de I : il correspondrait au rapport −1/2, le signe ayant été perdu en route. Le point R est le symétrique de M par rapport à I, donc l'image pour le rapport −1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On note h l'homothétie de centre I et de rapport −2, et D une droite qui ne passe pas par le point I. Que peut-on dire de la droite D' image de D par h ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est confondue avec la droite D"
+        },
+        {
+          "id": "b",
+          "text": "Elle est parallèle à D et distincte de D"
+        },
+        {
+          "id": "c",
+          "text": "Elle est perpendiculaire à la droite D"
+        },
+        {
+          "id": "d",
+          "text": "Elle passe par le centre I de l'homothétie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Prenons deux points A et B de la droite D et notons A' et B' leurs images. La propriété caractéristique donne A'B'⃗ = −2AB⃗ : les deux vecteurs sont colinéaires, donc les droites (AB) et (A'B') sont parallèles. Comme D ne passe pas par le centre, la droite image ne peut pas se refermer sur D : elle lui est parallèle et distincte ✓. Être confondue avec D n'arrive que si la droite passe par le centre I, cas où elle est globalement invariante. La perpendicularité ne se produit jamais, car une homothétie conserve les directions. Enfin passer par le point I n'a aucune raison d'arriver : seul le centre est invariant, et il n'appartient ni à D ni à son image.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un triangle de périmètre 18 cm a pour image, par une homothétie de rapport −1/3, un second triangle. Quel est le périmètre de ce triangle image ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−6 cm"
+        },
+        {
+          "id": "b",
+          "text": "2 cm"
+        },
+        {
+          "id": "c",
+          "text": "6 cm"
+        },
+        {
+          "id": "d",
+          "text": "54 cm"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un périmètre est une somme de longueurs, et chaque longueur est multipliée par la valeur absolue du rapport. Le périmètre image vaut donc |−1/3| × 18 = 18/3 = 6 cm ✓. Le résultat −6 cm garde le signe du rapport dans un calcul de longueur, alors qu'un périmètre est toujours positif. Le résultat 2 cm applique le carré du rapport, soit une division par 9 : c'est la règle des aires, pas celle des périmètres. Le résultat 54 cm multiplie par 3 au lieu de diviser, en confondant le rapport −1/3 avec le rapport −3 ; le signe négatif ne dit rien de la taille, il ne fait que retourner la figure.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le point K est le milieu du segment [MN]. On note M', N' et K' les images respectives de M, N et K par une même homothétie de centre I. Où se trouve le point K' ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Au centre I de l'homothétie"
+        },
+        {
+          "id": "b",
+          "text": "Au milieu du segment [MN], comme le point K"
+        },
+        {
+          "id": "c",
+          "text": "Sur le segment [M'N'], au tiers à partir de M'"
+        },
+        {
+          "id": "d",
+          "text": "Au milieu du segment [M'N']"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une homothétie conserve le milieu : l'image du milieu d'un segment est le milieu du segment image, donc K' est le milieu de [M'N'] ✓. On le vérifie avec la propriété caractéristique, qui donne M'K'⃗ = kMK⃗ et K'N'⃗ = kKN⃗ ; comme MK⃗ = KN⃗, on obtient M'K'⃗ = K'N'⃗, ce qui caractérise le milieu. Rester au milieu de [MN] supposerait que K soit invariant, alors que le seul point invariant est le centre. Se placer au centre I confondrait l'image d'un point quelconque avec ce point invariant. Enfin un partage au tiers reviendrait à croire que le rapport de l'homothétie déplace le point à l'intérieur du segment image, alors que ce rapport agit sur les longueurs, pas sur la position relative du milieu.",
+      "difficulty": 2
+    }
+  ]
+}
