@@ -139,7 +139,7 @@
 
 | statut | matière | profondeur | sources (couverture calculée) | R-7 | maj | notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| ⏳ en cours | **technologie** | first-pass | — | — | 2026-09-06 (claude/campagne) | RESERVATION — LOT A ouvert sur la technologie (genie mecanique) du bac Sciences techniques. Source visee : manuel eleve CNP 228462 « Genie Mecanique Activites_Section Sciences techniques », 2 tomes (P01/P02, 144 p. chacun). Aucun guide enseignant au corpus pour ce couple. Le genie ELECTRIQUE (228461, 3 tomes) est l'autre moitie de la matiere et n'est pas revendique par cette fiche. |
+| ✅ complète | **technologie** | generation | `228462`×2 100 % | — | 2026-09-06 (claude/campagne) | LOT A COMPLET. Manuel eleve CNP 228462 « TECHNOLOGIE - Genie mecanique - Manuel d'activites - 4eme annee Sciences Techniques » (2 tomes, pagination CONTINUE : tome 1 = p.1-144, tome 2 = p.145-288), lu integralement et transcrit a profondeur de generation : 6 themes, 59 activites et sous-activites decrites une par une avec leur support, leurs donnees chiffrees et leur travail demande question par question, nomenclatures en tableaux, encadres officiels verbatim. AUCUN GUIDE ENSEIGNANT n'existe au corpus pour ce couple (matiere 28, 4eme annee secondaire : le catalogue ne porte que des manuels d'activites de role eleve) - le manuel eleve fait donc reference, et la fiche ne peut citer ni competence terminale detaillee ni progression trimestrielle officielle. Les composantes numerotees des CD (CD 1.3, CD 2.3...) sont affichees par le manuel sans etre jamais definies : elles sont transcrites, jamais developpees. LIMITE STRUCTURELLE DE LA SOURCE : les elements de cours et TOUS les corriges vivent dans le manuel NUMERIQUE (liens Url + QR codes), pas dans le papier. Le manuel imprime ne donne que les enonces, les documents et des zones de reponse vides ; les seuls textes de cours sont les syntheses de fin de theme. Une generation qui pretendrait citer une reponse d'activite inventerait. PERIMETRE : cette fiche ne couvre que le GENIE MECANIQUE. Le genie ELECTRIQUE (228461, 3 tomes) est l'autre moitie de la matiere et n'est deliberement pas revendique ici, pour qu'une autre session puisse l'ouvrir sans se heurter a l'anti-double-transcription (R-4). |
 
 ## À transcrire (dérivé du corpus — PDF `principale` non rattachés à une fiche)
 
@@ -167,4 +167,4 @@
 - **enrichissement** : 21 PDF
   - décisions en attente (`differee`) : `128703`, `128803`, `128903`, `228103`, `228233`, `228362`, `228363`, `228461`, `228462`
 
-**Totaux (calculés)** : 57 fiches suivies (1 en-cours · 21 partielle · 30 complete · 5 validee-r7) · 346 PDF au corpus · 153 œuvres principales restant à rattacher.
+**Totaux (calculés)** : 57 fiches suivies (21 partielle · 31 complete · 5 validee-r7) · 346 PDF au corpus · 153 œuvres principales restant à rattacher.
