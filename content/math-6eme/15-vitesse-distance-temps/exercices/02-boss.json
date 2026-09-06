@@ -10,8 +10,8 @@
       "prompt": "قطعت دراجةٌ 30 km في ساعتين. ما سرعتها؟",
       "options": [
         { "id": "a", "text": "15 km/h" },
-        { "id": "b", "text": "60 km/h" },
-        { "id": "c", "text": "32 km/h" },
+        { "id": "b", "text": "60 km/h", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        { "id": "c", "text": "32 km/h", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" },
         { "id": "d", "text": "30 km/h" }
       ],
       "correctOption": "a",
@@ -22,10 +22,10 @@
     {
       "prompt": "الزمنُ يساوي:",
       "options": [
-        { "id": "a", "text": "المسافة × السرعة" },
+        { "id": "a", "text": "المسافة × السرعة", "misconceptionTag": "math.num.operation-inverse-appliquee" },
         { "id": "b", "text": "المسافة ÷ السرعة" },
-        { "id": "c", "text": "السرعة ÷ المسافة" },
-        { "id": "d", "text": "المسافة + السرعة" }
+        { "id": "c", "text": "السرعة ÷ المسافة", "misconceptionTag": "math.prop.formule-vitesse-inversee" },
+        { "id": "d", "text": "المسافة + السرعة", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" }
       ],
       "correctOption": "b",
       "explanation": "الزمن = المسافة ÷ السرعة (نقلب علاقةَ السرعة = المسافة ÷ الزمن).",
@@ -35,8 +35,8 @@
     {
       "prompt": "سار قاربٌ بسرعة 25 km/h لمدّة 4 ساعات. ما المسافة؟",
       "options": [
-        { "id": "a", "text": "29 km" },
-        { "id": "b", "text": "6,25 km" },
+        { "id": "a", "text": "29 km", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" },
+        { "id": "b", "text": "6,25 km", "misconceptionTag": "math.num.operation-inverse-appliquee" },
         { "id": "c", "text": "100 km" },
         { "id": "d", "text": "50 km" }
       ],
@@ -49,7 +49,7 @@
       "prompt": "قطعت سيّارةٌ 240 km بسرعة 60 km/h. كم استغرقت من الزمن؟",
       "options": [
         { "id": "a", "text": "180 ساعة" },
-        { "id": "b", "text": "300 ساعة" },
+        { "id": "b", "text": "300 ساعة", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" },
         { "id": "c", "text": "3 ساعات" },
         { "id": "d", "text": "4 ساعات" }
       ],
@@ -62,9 +62,9 @@
       "prompt": "قطعت طائرةٌ 900 km في ساعةٍ ونصف (1,5 ساعة). ما سرعتها؟",
       "options": [
         { "id": "a", "text": "600 km/h" },
-        { "id": "b", "text": "1350 km/h" },
+        { "id": "b", "text": "1350 km/h", "misconceptionTag": "math.num.operation-inverse-appliquee" },
         { "id": "c", "text": "450 km/h" },
-        { "id": "d", "text": "901 km/h" }
+        { "id": "d", "text": "901 km/h", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" }
       ],
       "correctOption": "a",
       "explanation": "السرعة = المسافة ÷ الزمن = 900 ÷ 1,5 = 600 km/h.",
@@ -74,9 +74,9 @@
     {
       "prompt": "سرعةُ عدّاءٍ 12 km/h. كم km يقطع في نصف ساعة (0,5 ساعة)؟",
       "options": [
-        { "id": "a", "text": "24 km" },
+        { "id": "a", "text": "24 km", "misconceptionTag": "math.num.operation-inverse-appliquee" },
         { "id": "b", "text": "6 km" },
-        { "id": "c", "text": "12,5 km" },
+        { "id": "c", "text": "12,5 km", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" },
         { "id": "d", "text": "6,5 km" }
       ],
       "correctOption": "b",

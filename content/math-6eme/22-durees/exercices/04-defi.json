@@ -11,7 +11,7 @@
       "options": [
         { "id": "a", "text": "300 د" },
         { "id": "b", "text": "250 د" },
-        { "id": "c", "text": "500 د" },
+        { "id": "c", "text": "500 د", "misconceptionTag": "math.mes.duree-convertie-en-base-cent" },
         { "id": "d", "text": "120 د" }
       ],
       "correctOption": "a",
@@ -23,9 +23,9 @@
       "prompt": "احسب: 2 سا 40 د + 1 سا 35 د.",
       "options": [
         { "id": "a", "text": "4 سا 15 د" },
-        { "id": "b", "text": "3 سا 75 د" },
+        { "id": "b", "text": "3 سا 75 د", "misconceptionTag": "math.mes.duree-retenue-de-soixante-non-faite" },
         { "id": "c", "text": "4 سا 5 د" },
-        { "id": "d", "text": "3 سا 15 د" }
+        { "id": "d", "text": "3 سا 15 د", "misconceptionTag": "math.mes.duree-retenue-de-soixante-non-faite" }
       ],
       "correctOption": "a",
       "explanation": "المجموع = 3 سا 75 د، ونحوّلُ 75 د = 1 سا 15 د، فالنتيجة = 4 سا 15 د.",
@@ -36,8 +36,8 @@
       "prompt": "احسب: 3 سا 10 د − 1 سا 25 د.",
       "options": [
         { "id": "a", "text": "1 سا 45 د" },
-        { "id": "b", "text": "2 سا 15 د" },
-        { "id": "c", "text": "1 سا 15 د" },
+        { "id": "b", "text": "2 سا 15 د", "misconceptionTag": "math.num.soustraction-colonne-petit-du-grand" },
+        { "id": "c", "text": "1 سا 15 د", "misconceptionTag": "math.num.soustraction-colonne-petit-du-grand" },
         { "id": "d", "text": "2 سا 45 د" }
       ],
       "correctOption": "a",
@@ -49,9 +49,9 @@
       "prompt": "رحلةٌ انطلقت في 8 سا 30 د ودامت 2 سا 45 د. متى تصلُ؟",
       "options": [
         { "id": "a", "text": "11 سا 15 د" },
-        { "id": "b", "text": "10 سا 75 د" },
+        { "id": "b", "text": "10 سا 75 د", "misconceptionTag": "math.mes.duree-retenue-de-soixante-non-faite" },
         { "id": "c", "text": "11 سا 5 د" },
-        { "id": "d", "text": "10 سا 15 د" }
+        { "id": "d", "text": "10 سا 15 د", "misconceptionTag": "math.mes.duree-retenue-de-soixante-non-faite" }
       ],
       "correctOption": "a",
       "explanation": "8 سا 30 د + 2 سا 45 د = 10 سا 75 د = 11 سا 15 د (لأنّ 75 د = 1 سا 15 د).",
@@ -62,7 +62,7 @@
       "prompt": "1 سا 30 د تساوي كم دقيقة؟",
       "options": [
         { "id": "a", "text": "90 د" },
-        { "id": "b", "text": "130 د" },
+        { "id": "b", "text": "130 د", "misconceptionTag": "math.mes.duree-convertie-en-base-cent" },
         { "id": "c", "text": "60 د" },
         { "id": "d", "text": "75 د" }
       ],
@@ -77,7 +77,7 @@
         { "id": "a", "text": "48 سا" },
         { "id": "b", "text": "24 سا" },
         { "id": "c", "text": "12 سا" },
-        { "id": "d", "text": "60 سا" }
+        { "id": "d", "text": "60 سا", "misconceptionTag": "math.mes.constante-de-temps-attribuee-a-la-mauvaise-unite" }
       ],
       "correctOption": "a",
       "explanation": "اليومُ = 24 سا، فإنّ 2 يوم = 2 × 24 = 48 ساعة.",

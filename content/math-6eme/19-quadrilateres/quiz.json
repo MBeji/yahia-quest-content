@@ -19,7 +19,7 @@
       "options": [
         { "id": "a", "text": "كلُّ أضلاعه متساوية فقط" },
         { "id": "b", "text": "زواياه قائمة وأضلاعُه المتقابلة متساوية" },
-        { "id": "c", "text": "له زوجٌ واحدٌ متوازٍ" },
+        { "id": "c", "text": "له زوجٌ واحدٌ متوازٍ", "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees" },
         { "id": "d", "text": "بلا زوايا قائمة" }
       ],
       "correctOption": "b",
@@ -30,10 +30,10 @@
     {
       "prompt": "ما هذا الرباعيّ (له زوجٌ واحدٌ من الأضلاع المتوازية)؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"18,72 82,72 64,34 36,34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"47,74 50,70 53,74\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><polyline points=\"47,36 50,32 53,36\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
       "options": [
-        { "id": "a", "text": "متوازي الأضلاع" },
+        { "id": "a", "text": "متوازي الأضلاع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
         { "id": "b", "text": "شبه المنحرف" },
-        { "id": "c", "text": "المربّع" },
-        { "id": "d", "text": "المستطيل" }
+        { "id": "c", "text": "المربّع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
+        { "id": "d", "text": "المستطيل", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" }
       ],
       "correctOption": "b",
       "explanation": "السهمان يدلّان على زوجٍ واحدٍ من الأضلاع المتوازية (القاعدتان)، والضلعان الآخران غيرُ متوازيين، فهو شبه المنحرف.",
@@ -57,8 +57,8 @@
       "prompt": "ما الفرقُ بين متوازي الأضلاع وشبه المنحرف؟",
       "options": [
         { "id": "a", "text": "لا فرق" },
-        { "id": "b", "text": "شبه المنحرف له زوجان متوازيان" },
-        { "id": "c", "text": "متوازي الأضلاع بلا توازٍ" },
+        { "id": "b", "text": "شبه المنحرف له زوجان متوازيان", "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees" },
+        { "id": "c", "text": "متوازي الأضلاع بلا توازٍ", "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees" },
         { "id": "d", "text": "متوازي الأضلاع له زوجان متوازيان وشبه المنحرف زوجٌ واحد" }
       ],
       "correctOption": "d",

@@ -10,9 +10,9 @@
       "prompt": "ثمنُ 3 علب 12 دينارًا. كم ثمنُ علبةٍ واحدة؟",
       "options": [
         { "id": "a", "text": "4 دنانير" },
-        { "id": "b", "text": "3 دنانير" },
-        { "id": "c", "text": "36 دينارًا" },
-        { "id": "d", "text": "12 دينارًا" }
+        { "id": "b", "text": "3 دنانير", "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat" },
+        { "id": "c", "text": "36 دينارًا", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        { "id": "d", "text": "12 دينارًا", "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat" }
       ],
       "correctOption": "a",
       "explanation": "ثمنُ علبةٍ واحدة = 12 ÷ 3 = 4 دنانير (معامل التناسب).",
@@ -22,9 +22,9 @@
     {
       "prompt": "كم يساوي 10% من 90؟",
       "options": [
-        { "id": "a", "text": "10" },
+        { "id": "a", "text": "10", "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat" },
         { "id": "b", "text": "9" },
-        { "id": "c", "text": "90" },
+        { "id": "c", "text": "90", "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat" },
         { "id": "d", "text": "19" }
       ],
       "correctOption": "b",
@@ -38,7 +38,7 @@
         { "id": "a", "text": "1/4" },
         { "id": "b", "text": "1/2" },
         { "id": "c", "text": "1/5" },
-        { "id": "d", "text": "5" }
+        { "id": "d", "text": "5", "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat" }
       ],
       "correctOption": "c",
       "explanation": "20% = 20/100، وبالاختزال على 20: 20/100 = 1/5.",
@@ -62,7 +62,7 @@
       "prompt": "ثمنُ 4 دفاتر 10 دنانير. كم ثمنُ 10 دفاتر؟",
       "options": [
         { "id": "a", "text": "25 دينارًا" },
-        { "id": "b", "text": "16 دينارًا" },
+        { "id": "b", "text": "16 دينارًا", "misconceptionTag": "math.prop.additive-au-lieu-de-multiplicative" },
         { "id": "c", "text": "40 دينارًا" },
         { "id": "d", "text": "20 دينارًا" }
       ],
@@ -74,7 +74,7 @@
     {
       "prompt": "في سلّةٍ 60 فاكهة، 25% منها تفّاح. كم عددُ التفّاح؟",
       "options": [
-        { "id": "a", "text": "25" },
+        { "id": "a", "text": "25", "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat" },
         { "id": "b", "text": "15" },
         { "id": "c", "text": "20" },
         { "id": "d", "text": "12" }

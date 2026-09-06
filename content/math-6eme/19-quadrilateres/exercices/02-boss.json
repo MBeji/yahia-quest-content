@@ -10,9 +10,9 @@
       "prompt": "ما هذا الرباعيّ؟ <svg viewBox=\"0 0 100 100\"><rect x=\"27\" y=\"24\" width=\"50\" height=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"27\" y=\"24\" width=\"9\" height=\"9\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.3\"/></svg>",
       "options": [
         { "id": "a", "text": "مربّع" },
-        { "id": "b", "text": "مستطيل" },
-        { "id": "c", "text": "معيّن" },
-        { "id": "d", "text": "شبه منحرف" }
+        { "id": "b", "text": "مستطيل", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
+        { "id": "c", "text": "معيّن", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
+        { "id": "d", "text": "شبه منحرف", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" }
       ],
       "correctOption": "a",
       "explanation": "أضلاعُه الأربعة متساوية وزواياه قائمة، فهو مربّع.",
@@ -35,10 +35,10 @@
     {
       "prompt": "ما هذا الرباعيّ؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"18,72 82,72 64,34 36,34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"47,74 50,70 53,74\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><polyline points=\"47,36 50,32 53,36\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
       "options": [
-        { "id": "a", "text": "متوازي الأضلاع" },
+        { "id": "a", "text": "متوازي الأضلاع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
         { "id": "b", "text": "شبه المنحرف" },
-        { "id": "c", "text": "المستطيل" },
-        { "id": "d", "text": "المربّع" }
+        { "id": "c", "text": "المستطيل", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
+        { "id": "d", "text": "المربّع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" }
       ],
       "correctOption": "b",
       "explanation": "السهمان يدلّان على زوجٍ واحدٍ متوازٍ (القاعدتان) فقط، فهو شبه المنحرف.",
@@ -48,10 +48,10 @@
     {
       "prompt": "أيُّ رباعيٍّ أضلاعُه الأربعة متساوية وزواياه ليست قائمة عمومًا؟",
       "options": [
-        { "id": "a", "text": "المربّع" },
+        { "id": "a", "text": "المربّع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
         { "id": "b", "text": "المعيّن" },
-        { "id": "c", "text": "المستطيل" },
-        { "id": "d", "text": "شبه المنحرف" }
+        { "id": "c", "text": "المستطيل", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
+        { "id": "d", "text": "شبه المنحرف", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" }
       ],
       "correctOption": "b",
       "explanation": "المعيّنُ له 4 أضلاع متساوية، لكنّ زواياه ليست قائمة عمومًا (إن كانت قائمة صار مربّعًا).",
@@ -61,10 +61,10 @@
     {
       "prompt": "هذا الرباعيُّ له زوجان من الأضلاع المتوازية وليست زواياه قائمة. ما هو؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"26,72 74,72 86,34 38,34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
       "options": [
-        { "id": "a", "text": "المستطيل" },
-        { "id": "b", "text": "المربّع" },
+        { "id": "a", "text": "المستطيل", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
+        { "id": "b", "text": "المربّع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
         { "id": "c", "text": "متوازي الأضلاع" },
-        { "id": "d", "text": "شبه المنحرف" }
+        { "id": "d", "text": "شبه المنحرف", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" }
       ],
       "correctOption": "c",
       "explanation": "زوجان متوازيان دون زوايا قائمة ⟸ متوازي الأضلاع.",
@@ -74,9 +74,9 @@
     {
       "prompt": "كلُّ مستطيلٍ هو متوازي أضلاع، لأنّ:",
       "options": [
-        { "id": "a", "text": "له زوجٌ واحدٌ متوازٍ" },
+        { "id": "a", "text": "له زوجٌ واحدٌ متوازٍ", "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees" },
         { "id": "b", "text": "أضلاعَه مختلفة" },
-        { "id": "c", "text": "لا أضلاع متوازية فيه" },
+        { "id": "c", "text": "لا أضلاع متوازية فيه", "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees" },
         { "id": "d", "text": "أضلاعَه المتقابلة متوازية ومتساوية" }
       ],
       "correctOption": "d",

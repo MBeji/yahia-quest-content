@@ -10,8 +10,8 @@
       "prompt": "ثمنُ 5 تذاكر 25 دينارًا. كم ثمنُ تذكرةٍ واحدة؟",
       "options": [
         { "id": "a", "text": "5 دنانير" },
-        { "id": "b", "text": "25 دينارًا" },
-        { "id": "c", "text": "125 دينارًا" },
+        { "id": "b", "text": "25 دينارًا", "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat" },
+        { "id": "c", "text": "125 دينارًا", "misconceptionTag": "math.num.operation-inverse-appliquee" },
         { "id": "d", "text": "1 دينار" }
       ],
       "correctOption": "a",
@@ -22,7 +22,7 @@
     {
       "prompt": "كم يساوي 20% من 80؟",
       "options": [
-        { "id": "a", "text": "20" },
+        { "id": "a", "text": "20", "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat" },
         { "id": "b", "text": "16" },
         { "id": "c", "text": "40" },
         { "id": "d", "text": "8" }
@@ -38,7 +38,7 @@
         { "id": "a", "text": "1/4" },
         { "id": "b", "text": "7/5" },
         { "id": "c", "text": "3/4" },
-        { "id": "d", "text": "75" }
+        { "id": "d", "text": "75", "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat" }
       ],
       "correctOption": "c",
       "explanation": "75% = 75/100، وبالاختزال على 25: 75/100 = 3/4.",
@@ -48,7 +48,7 @@
     {
       "prompt": "ثمنُ 2 لتر حليب 3 دنانير. كم ثمنُ 6 لترات؟",
       "options": [
-        { "id": "a", "text": "7 دنانير" },
+        { "id": "a", "text": "7 دنانير", "misconceptionTag": "math.prop.additive-au-lieu-de-multiplicative" },
         { "id": "b", "text": "12 دينارًا" },
         { "id": "c", "text": "4,5 دنانير" },
         { "id": "d", "text": "9 دنانير" }
@@ -63,7 +63,7 @@
       "options": [
         { "id": "a", "text": "45" },
         { "id": "b", "text": "0" },
-        { "id": "c", "text": "100" },
+        { "id": "c", "text": "100", "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat" },
         { "id": "d", "text": "90" }
       ],
       "correctOption": "a",
@@ -74,7 +74,7 @@
     {
       "prompt": "حصل تلميذٌ على 15 من 20 في امتحان. ما نسبتُه المئوية؟",
       "options": [
-        { "id": "a", "text": "15%" },
+        { "id": "a", "text": "15%", "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat" },
         { "id": "b", "text": "75%" },
         { "id": "c", "text": "60%" },
         { "id": "d", "text": "80%" }

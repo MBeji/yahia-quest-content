@@ -23,9 +23,9 @@
       "prompt": "ما مساحةُ مربّعٍ طولُ ضلعه 8 سم؟",
       "options": [
         { "id": "a", "text": "64 سم²" },
-        { "id": "b", "text": "32 سم²" },
-        { "id": "c", "text": "16 سم²" },
-        { "id": "d", "text": "88 سم²" }
+        { "id": "b", "text": "32 سم²", "misconceptionTag": "math.mes.aire-et-perimetre-confondus" },
+        { "id": "c", "text": "16 سم²", "misconceptionTag": "math.mes.aire-et-perimetre-confondus" },
+        { "id": "d", "text": "88 سم²", "misconceptionTag": "math.num.chiffres-juxtaposes-au-lieu-du-produit" }
       ],
       "correctOption": "a",
       "explanation": "مساحةُ المربّع = الضلع × الضلع = 8 × 8 = 64 سم².",
@@ -36,9 +36,9 @@
       "prompt": "مستطيلٌ طولُه 9 سم وعرضُه 6 سم. ما مساحتُه؟",
       "options": [
         { "id": "a", "text": "54 سم²" },
-        { "id": "b", "text": "30 سم²" },
-        { "id": "c", "text": "15 سم²" },
-        { "id": "d", "text": "96 سم²" }
+        { "id": "b", "text": "30 سم²", "misconceptionTag": "math.mes.aire-et-perimetre-confondus" },
+        { "id": "c", "text": "15 سم²", "misconceptionTag": "math.mes.aire-et-perimetre-confondus" },
+        { "id": "d", "text": "96 سم²", "misconceptionTag": "math.num.chiffres-juxtaposes-au-lieu-du-produit" }
       ],
       "correctOption": "a",
       "explanation": "مساحةُ المستطيل = الطول × العرض = 9 × 6 = 54 سم².",
@@ -49,8 +49,8 @@
       "prompt": "ما مساحةُ هذا المثلّث؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"20,72 80,72 50,32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"32\" x2=\"50\" y2=\"72\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><rect x=\"50\" y=\"66\" width=\"6\" height=\"6\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.2\"/><text x=\"45\" y=\"86\" font-size=\"11\" fill=\"currentColor\">8</text><text x=\"54\" y=\"54\" font-size=\"11\" fill=\"#ef4444\">6</text></svg>",
       "options": [
         { "id": "a", "text": "24 سم²" },
-        { "id": "b", "text": "48 سم²" },
-        { "id": "c", "text": "14 سم²" },
+        { "id": "b", "text": "48 سم²", "misconceptionTag": "math.mes.aire-triangle-sans-moitie" },
+        { "id": "c", "text": "14 سم²", "misconceptionTag": "math.mes.aire-et-perimetre-confondus" },
         { "id": "d", "text": "28 سم²" }
       ],
       "correctOption": "a",
@@ -62,9 +62,9 @@
       "prompt": "ما مساحةُ شبه المنحرف هذا؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"16,72 84,72 64,36 36,36\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"36\" x2=\"50\" y2=\"72\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><rect x=\"50\" y=\"66\" width=\"6\" height=\"6\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.2\"/><text x=\"46\" y=\"86\" font-size=\"11\" fill=\"currentColor\">12</text><text x=\"46\" y=\"32\" font-size=\"11\" fill=\"currentColor\">8</text><text x=\"54\" y=\"58\" font-size=\"11\" fill=\"#ef4444\">5</text></svg>",
       "options": [
         { "id": "a", "text": "50 سم²" },
-        { "id": "b", "text": "100 سم²" },
+        { "id": "b", "text": "100 سم²", "misconceptionTag": "math.mes.aire-trapeze-sans-demi-somme" },
         { "id": "c", "text": "40 سم²" },
-        { "id": "d", "text": "25 سم²" }
+        { "id": "d", "text": "25 سم²", "misconceptionTag": "math.mes.aire-et-perimetre-confondus" }
       ],
       "correctOption": "a",
       "explanation": "القاعدتان 12 و8 والارتفاع 5، فالمساحة = (12 + 8) × 5 ÷ 2 = 100 ÷ 2 = 50 سم².",
@@ -75,9 +75,9 @@
       "prompt": "كم م² في 2 هكتار؟",
       "options": [
         { "id": "a", "text": "20 000 م²" },
-        { "id": "b", "text": "2 000 م²" },
-        { "id": "c", "text": "200 م²" },
-        { "id": "d", "text": "200 000 م²" }
+        { "id": "b", "text": "2 000 م²", "misconceptionTag": "math.mes.conversion-aire-facteur-errone" },
+        { "id": "c", "text": "200 م²", "misconceptionTag": "math.mes.conversion-aire-facteur-errone" },
+        { "id": "d", "text": "200 000 م²", "misconceptionTag": "math.mes.conversion-aire-facteur-errone" }
       ],
       "correctOption": "a",
       "explanation": "1 هكتار = 10 000 م²، فإنّ 2 هكتار = 2 × 10 000 = 20 000 م².",

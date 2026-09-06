@@ -6,7 +6,7 @@
       "options": [
         { "id": "a", "text": "60 km/h" },
         { "id": "b", "text": "120 km/h" },
-        { "id": "c", "text": "240 km/h" },
+        { "id": "c", "text": "240 km/h", "misconceptionTag": "math.num.operation-inverse-appliquee" },
         { "id": "d", "text": "30 km/h" }
       ],
       "correctOption": "a",
@@ -17,10 +17,10 @@
     {
       "prompt": "ما العلاقةُ الصحيحة لحساب السرعة؟",
       "options": [
-        { "id": "a", "text": "السرعة = المسافة × الزمن" },
+        { "id": "a", "text": "السرعة = المسافة × الزمن", "misconceptionTag": "math.num.operation-inverse-appliquee" },
         { "id": "b", "text": "السرعة = المسافة ÷ الزمن" },
-        { "id": "c", "text": "السرعة = الزمن ÷ المسافة" },
-        { "id": "d", "text": "السرعة = المسافة + الزمن" }
+        { "id": "c", "text": "السرعة = الزمن ÷ المسافة", "misconceptionTag": "math.prop.formule-vitesse-inversee" },
+        { "id": "d", "text": "السرعة = المسافة + الزمن", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" }
       ],
       "correctOption": "b",
       "explanation": "السرعةُ هي المسافةُ المقطوعة في وحدة زمن، أي السرعة = المسافة ÷ الزمن.",
@@ -30,8 +30,8 @@
     {
       "prompt": "سار دراجٌ بسرعة 20 km/h لمدّة 3 ساعات. ما المسافة؟",
       "options": [
-        { "id": "a", "text": "23 km" },
-        { "id": "b", "text": "6,7 km" },
+        { "id": "a", "text": "23 km", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" },
+        { "id": "b", "text": "6,7 km", "misconceptionTag": "math.num.operation-inverse-appliquee" },
         { "id": "c", "text": "60 km" },
         { "id": "d", "text": "40 km" }
       ],
@@ -44,7 +44,7 @@
       "prompt": "قطع قطارٌ 150 km بسرعة 50 km/h. كم استغرق من الزمن؟",
       "options": [
         { "id": "a", "text": "100 ساعة" },
-        { "id": "b", "text": "200 ساعة" },
+        { "id": "b", "text": "200 ساعة", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" },
         { "id": "c", "text": "2 ساعة" },
         { "id": "d", "text": "3 ساعات" }
       ],
@@ -57,8 +57,8 @@
       "prompt": "قطعت حافلةٌ 180 km في 3 ساعات. ما سرعتها؟",
       "options": [
         { "id": "a", "text": "60 km/h" },
-        { "id": "b", "text": "540 km/h" },
-        { "id": "c", "text": "183 km/h" },
+        { "id": "b", "text": "540 km/h", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        { "id": "c", "text": "183 km/h", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" },
         { "id": "d", "text": "90 km/h" }
       ],
       "correctOption": "a",

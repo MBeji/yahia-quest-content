@@ -22,10 +22,10 @@
     {
       "prompt": "المسافةُ تساوي:",
       "options": [
-        { "id": "a", "text": "السرعة ÷ الزمن" },
+        { "id": "a", "text": "السرعة ÷ الزمن", "misconceptionTag": "math.prop.formule-vitesse-inversee" },
         { "id": "b", "text": "السرعة × الزمن" },
-        { "id": "c", "text": "السرعة + الزمن" },
-        { "id": "d", "text": "الزمن ÷ السرعة" }
+        { "id": "c", "text": "السرعة + الزمن", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" },
+        { "id": "d", "text": "الزمن ÷ السرعة", "misconceptionTag": "math.prop.formule-vitesse-inversee" }
       ],
       "correctOption": "b",
       "explanation": "المسافة = السرعة × الزمن (نقلب علاقةَ السرعة = المسافة ÷ الزمن).",
@@ -35,8 +35,8 @@
     {
       "prompt": "سار شخصٌ بسرعة 5 km/h لمدّة ساعتين. ما المسافة؟",
       "options": [
-        { "id": "a", "text": "7 km" },
-        { "id": "b", "text": "2,5 km" },
+        { "id": "a", "text": "7 km", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" },
+        { "id": "b", "text": "2,5 km", "misconceptionTag": "math.num.operation-inverse-appliquee" },
         { "id": "c", "text": "10 km" },
         { "id": "d", "text": "5 km" }
       ],
@@ -48,9 +48,9 @@
     {
       "prompt": "قطعت سيّارةٌ 100 km في ساعتين. ما سرعتها؟",
       "options": [
-        { "id": "a", "text": "200 km/h" },
+        { "id": "a", "text": "200 km/h", "misconceptionTag": "math.num.operation-inverse-appliquee" },
         { "id": "b", "text": "100 km/h" },
-        { "id": "c", "text": "102 km/h" },
+        { "id": "c", "text": "102 km/h", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" },
         { "id": "d", "text": "50 km/h" }
       ],
       "correctOption": "d",
@@ -62,8 +62,8 @@
       "prompt": "سيّارةٌ سرعتُها 80 km/h. كم km تقطع في ساعتين؟",
       "options": [
         { "id": "a", "text": "160 km" },
-        { "id": "b", "text": "82 km" },
-        { "id": "c", "text": "40 km" },
+        { "id": "b", "text": "82 km", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" },
+        { "id": "c", "text": "40 km", "misconceptionTag": "math.num.operation-inverse-appliquee" },
         { "id": "d", "text": "80 km" }
       ],
       "correctOption": "a",
@@ -76,8 +76,8 @@
       "options": [
         { "id": "a", "text": "20 ساعة" },
         { "id": "b", "text": "2 ساعة" },
-        { "id": "c", "text": "300 ساعة" },
-        { "id": "d", "text": "0,5 ساعة" }
+        { "id": "c", "text": "300 ساعة", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" },
+        { "id": "d", "text": "0,5 ساعة", "misconceptionTag": "math.num.operation-inverse-appliquee" }
       ],
       "correctOption": "b",
       "explanation": "الزمن = المسافة ÷ السرعة = 200 ÷ 100 = 2 ساعة.",

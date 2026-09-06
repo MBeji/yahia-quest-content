@@ -10,8 +10,8 @@
       "prompt": "كم رأسًا للمكعّب؟",
       "options": [
         { "id": "a", "text": "8 رؤوس" },
-        { "id": "b", "text": "6 رؤوس" },
-        { "id": "c", "text": "12 رأسًا" },
+        { "id": "b", "text": "6 رؤوس", "misconceptionTag": "math.geo.solide-faces-aretes-sommets-confondus" },
+        { "id": "c", "text": "12 رأسًا", "misconceptionTag": "math.geo.solide-faces-aretes-sommets-confondus" },
         { "id": "d", "text": "4 رؤوس" }
       ],
       "correctOption": "a",
@@ -23,8 +23,8 @@
       "prompt": "مكعّبٌ طولُ حرفه 5 سم. ما مساحتُه الجانبيّة؟",
       "options": [
         { "id": "a", "text": "100 سم²" },
-        { "id": "b", "text": "150 سم²" },
-        { "id": "c", "text": "25 سم²" },
+        { "id": "b", "text": "150 سم²", "misconceptionTag": "math.mes.cube-coefficient-quatre-et-six-echanges" },
+        { "id": "c", "text": "25 سم²", "misconceptionTag": "math.mes.solide-une-seule-face-comptee" },
         { "id": "d", "text": "50 سم²" }
       ],
       "correctOption": "a",
@@ -36,8 +36,8 @@
       "prompt": "مكعّبٌ طولُ حرفه 4 سم. ما مساحتُه الجمليّة؟",
       "options": [
         { "id": "a", "text": "96 سم²" },
-        { "id": "b", "text": "64 سم²" },
-        { "id": "c", "text": "16 سم²" },
+        { "id": "b", "text": "64 سم²", "misconceptionTag": "math.mes.cube-coefficient-quatre-et-six-echanges" },
+        { "id": "c", "text": "16 سم²", "misconceptionTag": "math.mes.solide-une-seule-face-comptee" },
         { "id": "d", "text": "48 سم²" }
       ],
       "correctOption": "a",
@@ -62,7 +62,7 @@
       "prompt": "متوازي مستطيلاتٍ طولُه 5 سم وعرضُه 4 سم وارتفاعُه 2 سم. ما مساحتُه الجمليّة؟",
       "options": [
         { "id": "a", "text": "76 سم²" },
-        { "id": "b", "text": "36 سم²" },
+        { "id": "b", "text": "36 سم²", "misconceptionTag": "math.mes.aire-laterale-et-totale-confondues" },
         { "id": "c", "text": "40 سم²" },
         { "id": "d", "text": "20 سم²" }
       ],
@@ -75,9 +75,9 @@
       "prompt": "ما الفرقُ بين المساحة الجانبيّة والمساحة الجمليّة؟",
       "options": [
         { "id": "a", "text": "الجمليّةُ تضيفُ القاعدتين إلى الجانبيّة" },
-        { "id": "b", "text": "هما متساويتان دائمًا" },
-        { "id": "c", "text": "الجانبيّةُ تضيفُ القاعدتين" },
-        { "id": "d", "text": "الجمليّةُ أصغرُ دائمًا" }
+        { "id": "b", "text": "هما متساويتان دائمًا", "misconceptionTag": "math.mes.aire-laterale-et-totale-confondues" },
+        { "id": "c", "text": "الجانبيّةُ تضيفُ القاعدتين", "misconceptionTag": "math.mes.aire-laterale-et-totale-confondues" },
+        { "id": "d", "text": "الجمليّةُ أصغرُ دائمًا", "misconceptionTag": "math.mes.aire-laterale-et-totale-confondues" }
       ],
       "correctOption": "a",
       "explanation": "الجانبيّةُ تشملُ الأوجهَ الجانبيّةَ فقط، والجمليّةُ تضيفُ إليها القاعدتين (+ 2 × مساحة القاعدة).",

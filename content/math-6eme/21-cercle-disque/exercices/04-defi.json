@@ -10,9 +10,9 @@
       "prompt": "ما محيطُ دائرةٍ نصفُ قطرها 10 سم؟ (π ≈ 3,14)",
       "options": [
         { "id": "a", "text": "62,8 سم" },
-        { "id": "b", "text": "31,4 سم" },
+        { "id": "b", "text": "31,4 سم", "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop" },
         { "id": "c", "text": "314 سم" },
-        { "id": "d", "text": "20 سم" }
+        { "id": "d", "text": "20 سم", "misconceptionTag": "math.geo.facteur-pi-omis" }
       ],
       "correctOption": "a",
       "explanation": "المحيط = 2 × π × ر = 2 × 3,14 × 10 = 62,8 سم.",
@@ -23,9 +23,9 @@
       "prompt": "ما مساحةُ قرصٍ نصفُ قطره 5 سم؟ (π ≈ 3,14)",
       "options": [
         { "id": "a", "text": "78,5 سم²" },
-        { "id": "b", "text": "31,4 سم²" },
-        { "id": "c", "text": "15,7 سم²" },
-        { "id": "d", "text": "25 سم²" }
+        { "id": "b", "text": "31,4 سم²", "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues" },
+        { "id": "c", "text": "15,7 سم²", "misconceptionTag": "math.mes.rayon-non-eleve-au-carre" },
+        { "id": "d", "text": "25 سم²", "misconceptionTag": "math.geo.facteur-pi-omis" }
       ],
       "correctOption": "a",
       "explanation": "مساحةُ القرص = π × ر × ر = 3,14 × 5 × 5 = 3,14 × 25 = 78,5 سم².",
@@ -36,9 +36,9 @@
       "prompt": "ما مساحةُ قرصٍ نصفُ قطره 4 سم؟ (π ≈ 3,14)",
       "options": [
         { "id": "a", "text": "50,24 سم²" },
-        { "id": "b", "text": "25,12 سم²" },
-        { "id": "c", "text": "12,56 سم²" },
-        { "id": "d", "text": "16 سم²" }
+        { "id": "b", "text": "25,12 سم²", "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues" },
+        { "id": "c", "text": "12,56 سم²", "misconceptionTag": "math.mes.rayon-non-eleve-au-carre" },
+        { "id": "d", "text": "16 سم²", "misconceptionTag": "math.geo.facteur-pi-omis" }
       ],
       "correctOption": "a",
       "explanation": "مساحةُ القرص = π × ر × ر = 3,14 × 4 × 4 = 3,14 × 16 = 50,24 سم².",
@@ -49,9 +49,9 @@
       "prompt": "دائرةٌ قطرُها 8 سم. ما محيطُها؟ (π ≈ 3,14)",
       "options": [
         { "id": "a", "text": "25,12 سم" },
-        { "id": "b", "text": "50,24 سم" },
-        { "id": "c", "text": "12,56 سم" },
-        { "id": "d", "text": "16 سم" }
+        { "id": "b", "text": "50,24 سم", "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop" },
+        { "id": "c", "text": "12,56 سم", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" },
+        { "id": "d", "text": "16 سم", "misconceptionTag": "math.geo.facteur-pi-omis" }
       ],
       "correctOption": "a",
       "explanation": "المحيط = π × القطر = 3,14 × 8 = 25,12 سم.",
@@ -62,8 +62,8 @@
       "prompt": "عجلةٌ نصفُ قطرها 30 سم. ما المسافةُ التي تقطعُها في دورةٍ كاملة (أي محيطُها)؟ (π ≈ 3,14)",
       "options": [
         { "id": "a", "text": "188,4 سم" },
-        { "id": "b", "text": "94,2 سم" },
-        { "id": "c", "text": "60 سم" },
+        { "id": "b", "text": "94,2 سم", "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop" },
+        { "id": "c", "text": "60 سم", "misconceptionTag": "math.geo.facteur-pi-omis" },
         { "id": "d", "text": "942 سم" }
       ],
       "correctOption": "a",
@@ -75,9 +75,9 @@
       "prompt": "قرصٌ ودائرةٌ لهما نصفُ القطر نفسُه. أيُّهما نحسبُ له مساحةً؟",
       "options": [
         { "id": "a", "text": "القرص" },
-        { "id": "b", "text": "الدائرة" },
+        { "id": "b", "text": "الدائرة", "misconceptionTag": "math.geo.cercle-et-disque-confondus" },
         { "id": "c", "text": "لا أحدَ منهما" },
-        { "id": "d", "text": "كلاهما خطّان لا سطح" }
+        { "id": "d", "text": "كلاهما خطّان لا سطح", "misconceptionTag": "math.geo.cercle-et-disque-confondus" }
       ],
       "correctOption": "a",
       "explanation": "القرصُ سطحٌ ممتلئٌ فله مساحةٌ (π × ر × ر)؛ أمّا الدائرةُ فخطٌّ منحنٍ له محيطٌ لا مساحةٌ.",

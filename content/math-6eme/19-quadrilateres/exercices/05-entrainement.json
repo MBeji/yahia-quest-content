@@ -9,10 +9,10 @@
     {
       "prompt": "ما هذا الرباعيّ؟ <svg viewBox=\"0 0 100 100\"><rect x=\"27\" y=\"24\" width=\"50\" height=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"27\" y=\"24\" width=\"9\" height=\"9\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.3\"/></svg>",
       "options": [
-        { "id": "a", "text": "مستطيل" },
+        { "id": "a", "text": "مستطيل", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
         { "id": "b", "text": "مربّع" },
-        { "id": "c", "text": "معيّن" },
-        { "id": "d", "text": "شبه منحرف" }
+        { "id": "c", "text": "معيّن", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
+        { "id": "d", "text": "شبه منحرف", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" }
       ],
       "correctOption": "b",
       "explanation": "أضلاعُه الأربعة متساوية وزواياه قائمة، فهو مربّع.",
@@ -35,10 +35,10 @@
     {
       "prompt": "ما هذا الرباعيّ؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"18,72 82,72 64,34 36,34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"47,74 50,70 53,74\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><polyline points=\"47,36 50,32 53,36\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
       "options": [
-        { "id": "a", "text": "متوازي الأضلاع" },
-        { "id": "b", "text": "المربّع" },
+        { "id": "a", "text": "متوازي الأضلاع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
+        { "id": "b", "text": "المربّع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
         { "id": "c", "text": "شبه المنحرف" },
-        { "id": "d", "text": "المستطيل" }
+        { "id": "d", "text": "المستطيل", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" }
       ],
       "correctOption": "c",
       "explanation": "زوجٌ واحدٌ متوازٍ (السهمان على القاعدتين) فقط، فهو شبه المنحرف.",
@@ -50,7 +50,7 @@
       "options": [
         { "id": "a", "text": "20 سم" },
         { "id": "b", "text": "24 سم" },
-        { "id": "c", "text": "10 سم" },
+        { "id": "c", "text": "10 سم", "misconceptionTag": "math.mes.perimetre-rectangle-somme-non-doublee" },
         { "id": "d", "text": "14 سم" }
       ],
       "correctOption": "a",
@@ -74,9 +74,9 @@
     {
       "prompt": "ما هذا الرباعيّ (زوجان متوازيان، بلا زوايا قائمة)؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"26,72 74,72 86,34 38,34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
       "options": [
-        { "id": "a", "text": "المستطيل" },
-        { "id": "b", "text": "المربّع" },
-        { "id": "c", "text": "شبه المنحرف" },
+        { "id": "a", "text": "المستطيل", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
+        { "id": "b", "text": "المربّع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
+        { "id": "c", "text": "شبه المنحرف", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
         { "id": "d", "text": "متوازي الأضلاع" }
       ],
       "correctOption": "d",

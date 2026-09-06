@@ -10,9 +10,9 @@
       "prompt": "مثلّثٌ متساوي الأضلاع طولُ أحد أضلاعه 5 سم. ما محيطُه؟",
       "options": [
         { "id": "a", "text": "15 سم" },
-        { "id": "b", "text": "10 سم" },
+        { "id": "b", "text": "10 سم", "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone" },
         { "id": "c", "text": "5 سم" },
-        { "id": "d", "text": "25 سم" }
+        { "id": "d", "text": "25 سم", "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone" }
       ],
       "correctOption": "a",
       "explanation": "أضلاعُه الثلاثة متساوية، فالمحيط = 3 × 5 = 15 سم.",
@@ -36,9 +36,9 @@
       "prompt": "مثلّثٌ متساوي الساقين: الضلعان المتساويان 7 سم والقاعدة 4 سم. ما محيطُه؟",
       "options": [
         { "id": "a", "text": "11 سم" },
-        { "id": "b", "text": "14 سم" },
+        { "id": "b", "text": "14 سم", "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone" },
         { "id": "c", "text": "18 سم" },
-        { "id": "d", "text": "28 سم" }
+        { "id": "d", "text": "28 سم", "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone" }
       ],
       "correctOption": "c",
       "explanation": "المحيط = 7 + 7 + 4 = 18 سم.",
@@ -61,10 +61,10 @@
     {
       "prompt": "ما نوعُ هذا المثلّث حسب أضلاعه؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"18,76 86,68 44,26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
       "options": [
-        { "id": "a", "text": "متساوي الأضلاع" },
+        { "id": "a", "text": "متساوي الأضلاع", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
         { "id": "b", "text": "مختلف الأضلاع" },
-        { "id": "c", "text": "متساوي الساقين" },
-        { "id": "d", "text": "قائم الزاوية" }
+        { "id": "c", "text": "متساوي الساقين", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
+        { "id": "d", "text": "قائم الزاوية", "misconceptionTag": "math.geo.classements-triangle-melanges" }
       ],
       "correctOption": "b",
       "explanation": "أضلاعُه الثلاثة مختلفةُ الأطوال، فهو مختلف الأضلاع.",
