@@ -1,0 +1,81 @@
+{
+  "title": "⭐ Exercice : décoder la perceuse sensitive, repère par repère",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "manuel": {
+    "pages": "42-46",
+    "items": ["activité 1.1 — q.4", "activité 1.1 — q.7"]
+  },
+  "questions": [
+    {
+      "prompt": "Que représente le dessin d'ensemble étudié de la perceuse sensitive ?",
+      "options": [
+        { "id": "a", "text": "Partiellement la transmission de puissance et la commande de déplacement de la broche" },
+        { "id": "b", "text": "L'ensemble de la machine, avec sa colonne, son étau et son support" },
+        { "id": "c", "text": "La seule broche, avec ses roulements et son mandrin porte-outil" },
+        { "id": "d", "text": "Le circuit électrique du moteur et de son organe de commande" }
+      ],
+      "correctOption": "a",
+      "explanation": "Le dessin d'ensemble représente partiellement la partie de transmission de puissance de la perceuse ainsi que le mécanisme de commande de déplacement de la broche ✓. La colonne, l'étau et le support existent sur la machine mais ne figurent pas sur ce dessin, et un dessin d'ensemble ne porte jamais de schéma électrique : c'est un document mécanique.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Deux roulements (8) sont montés dans le même logement, séparés par une pièce cylindrique. Quel repère de la nomenclature assure cet écartement ?",
+      "options": [
+        { "id": "a", "text": "La rondelle plate (7)" },
+        { "id": "b", "text": "La bague entretoise (9)" },
+        { "id": "c", "text": "L'anneau élastique pour alésage (10)" },
+        { "id": "d", "text": "L'écrou spécial (17)" }
+      ],
+      "correctOption": "b",
+      "explanation": "Une bague entretoise est faite pour cela : elle s'interpose entre deux roulements et fixe la distance qui les sépare ✓. L'anneau élastique pour alésage arrête un roulement axialement dans son logement mais ne règle aucun écartement, la rondelle plate répartit un appui, et l'écrou spécial serre la poulie sur le moyeu.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'opérateur tire le bras de commande pour percer, puis le relâche. Quel composant ramène l'ensemble en position haute ?",
+      "options": [
+        { "id": "a", "text": "Le coussinet (25)" },
+        { "id": "b", "text": "L'écrou-frein (18)" },
+        { "id": "c", "text": "La poulie étagée (12)" },
+        { "id": "d", "text": "Le ressort spiral (22)" }
+      ],
+      "correctOption": "d",
+      "explanation": "Le ressort spiral (22), logé dans le couvercle (21) sur l'axe du pignon, se bande pendant la descente et se détend dès qu'on lâche le bras : c'est lui qui remonte la broche ✓. Le coussinet guide l'axe du pignon en rotation, l'écrou-frein empêche une vis de se desserrer, et la poulie étagée n'intervient que dans la rotation de l'outil.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le bâti (3) est en EN GJL 250. Que désigne exactement cette écriture ?",
+      "options": [
+        { "id": "a", "text": "Un acier faiblement allié contenant 2,50 % de carbone" },
+        { "id": "b", "text": "Un acier de construction de limite d'élasticité 250 MPa" },
+        { "id": "c", "text": "Un alliage d'aluminium contenant 250 pour mille de silicium" },
+        { "id": "d", "text": "Une fonte à graphite lamellaire de résistance minimale à la traction 250 MPa" }
+      ],
+      "correctOption": "d",
+      "explanation": "Les lettres GJL désignent une fonte à graphite lamellaire, et le nombre qui suit donne la résistance minimale à la traction, ici 250 MPa ✓. Un acier de construction s'écrirait S235 ou S250, un acier faiblement allié commencerait par le carbone multiplié par cent, et un alliage d'aluminium porterait le symbole Al. La fonte est le choix naturel d'un bâti : moulée, rigide et amortissante.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le dessin d'ensemble de la perceuse est tracé à l'échelle 3:5. Une pièce mesure 80 mm sur la machine réelle. Quelle est, en millimètres, la longueur qui la représente sur le plan ?",
+      "answerKey": { "value": 48, "unit": "mm" },
+      "explanation": "Une échelle est le rapport de la dimension dessinée à la dimension réelle : 3:5 vaut 0,6. La longueur dessinée est donc 80 × 3 ÷ 5 = 48 mm ✓. Comme le rapport est inférieur à 1, le dessin est une réduction : c'est pourquoi les petits détails de la perceuse, comme la section carrée de la broche, sont repris à part à l'échelle 1:1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pourquoi le constructeur a-t-il choisi une poulie étagée (12) plutôt qu'une poulie simple ?",
+      "options": [
+        { "id": "a", "text": "Pour obtenir plusieurs vitesses de rotation, en déplaçant la courroie d'un gradin à l'autre" },
+        { "id": "b", "text": "Pour alléger la poulie et réduire l'inertie de la transmission" },
+        { "id": "c", "text": "Pour loger les deux roulements du moyeu dans la poulie elle-même" },
+        { "id": "d", "text": "Pour empêcher la courroie de glisser sur la gorge de la poulie" }
+      ],
+      "correctOption": "a",
+      "explanation": "Chaque gradin de la poulie a un diamètre différent : en changeant la courroie de gradin, on change le rapport de transmission, donc la vitesse de rotation de la broche ✓. Percer de l'acier et percer du plastique ne demandent pas la même vitesse, et cette solution mécanique très simple évite un variateur électronique. L'allégement, le logement des roulements et l'adhérence de la courroie ne dépendent pas du nombre de gradins.",
+      "difficulty": 2
+    }
+  ]
+}

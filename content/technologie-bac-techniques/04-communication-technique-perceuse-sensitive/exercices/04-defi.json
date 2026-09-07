@@ -1,0 +1,198 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : calculer une cote fonctionnelle et justifier un choix",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "manuel": {
+    "pages": "48",
+    "items": [
+      "activité 1.3 — q.4"
+    ]
+  },
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Un dessin de définition doit définir la pièce complètement et sans ambiguïté. Quelles informations y figurent nécessairement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La matière de la pièce"
+        },
+        {
+          "id": "b",
+          "text": "La cotation dimensionnelle"
+        },
+        {
+          "id": "c",
+          "text": "Les spécifications géométriques"
+        },
+        {
+          "id": "d",
+          "text": "La qualité des états de surface à obtenir"
+        },
+        {
+          "id": "e",
+          "text": "La nomenclature de l'ensemble dont la pièce est extraite"
+        },
+        {
+          "id": "f",
+          "text": "Le graphe de démontage du mécanisme"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Un dessin de définition prépare la fabrication d'une seule pièce : il en donne la matière, la forme, la cotation dimensionnelle, les spécifications géométriques et la qualité des états de surface à obtenir ✓. Ces quatre informations sont indispensables à l'atelier, qui doit savoir dans quoi usiner, à quelles dimensions, avec quelles exigences de forme et de position, et avec quel fini. La nomenclature et le graphe de démontage appartiennent à d'autres documents : le premier accompagne le dessin d'ensemble, le second la maintenance.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur le boîtier de commande de la perceuse, la chaîne de cotes de la condition JA fait intervenir quatre cotes : A3, A13, A20 et A25. On donne 0 ≤ JA ≤ 0,2 ; A3 = 58 ± 0,02 ; A20 = 1h11 (rappel : IT11 = 0,06 mm jusqu'à 3 mm) ; A25 = 2 ± 0,02. Quel est l'intervalle de tolérance de la cote A13 du pignon, en mm ?",
+      "answerKey": {
+        "value": 0.06,
+        "unit": "mm"
+      },
+      "explanation": "L'intervalle de tolérance d'une condition se partage entre toutes les cotes de sa chaîne, quel que soit leur sens de parcours. On a IT(JA) = 0,2 ; IT(A3) = 0,04 ; IT(A20) = 0,06 puisque la tolérance ISO 11 vaut 0,06 mm pour une cote nominale de 1 mm ; IT(A25) = 0,04. Il reste donc IT(A13) = 0,2 − 0,04 − 0,06 − 0,04 = 0,06 mm ✓. Le réflexe de l'épreuve : les IT d'abord, les extrêmes ensuite. Et si la soustraction tombait négative, la condition serait impossible et il faudrait resserrer une autre cote de la chaîne.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une condition de jeu s'écrit J = A − B − C et doit vérifier 0,2 ≤ J ≤ 0,5. On donne A = 90 ± 0,06 et C = 30 ± 0,04. Quelle est la cote tolérancée B ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "B = 59,60 ± 0,05"
+        },
+        {
+          "id": "b",
+          "text": "B = 59,65 ± 0,05"
+        },
+        {
+          "id": "c",
+          "text": "B = 59,65 ± 0,10"
+        },
+        {
+          "id": "d",
+          "text": "B = 60 ± 0,05"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "IT(J) = 0,3 ; IT(A) = 0,12 ; IT(C) = 0,08 donc IT(B) = 0,3 − 0,12 − 0,08 = 0,10, soit ± 0,05. Ensuite les extrêmes : J maxi = A maxi − B mini − C mini donne 0,5 = 90,06 − B mini − 29,96, soit B mini = 59,60 ; J mini = A mini − B maxi − C maxi donne 0,2 = 89,94 − B maxi − 30,04, soit B maxi = 59,70. La cote est donc B = 59,65 ± 0,05 ✓, et l'écart 59,70 − 59,60 = 0,10 confirme l'IT trouvé. Les trois pièges sont réunis dans les autres réponses : 60 ± 0,05 oublie le jeu et fait 90 − 30 ; 59,65 ± 0,10 additionne les IT au lieu de les retrancher ; 59,60 ± 0,05 prend la valeur minimale pour la nominale.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Sur la perceuse sensitive, on omet par erreur de monter la vis sans tête à téton long (19). Que se passe-t-il au premier appui sur le bras de commande ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le fourreau peut pivoter dans son logement et la crémaillère se dégage du pignon"
+        },
+        {
+          "id": "b",
+          "text": "Le fourreau reste bloqué en translation et la broche ne peut plus descendre"
+        },
+        {
+          "id": "c",
+          "text": "La broche ne peut plus tourner, le moyeu n'entraînant plus le carré"
+        },
+        {
+          "id": "d",
+          "text": "Le ressort spiral ne peut plus se bander et la remontée devient impossible"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sans la vis (19), la liaison entre le fourreau (4) et le bâti (3) redevient un pivot glissant : le fourreau peut tourner autant que coulisser ✓. Or l'effort du pignon sur la crémaillère est tangentiel : il tend justement à faire tourner le fourreau, et la denture se dégage au lieu de le faire descendre. Le téton dans la rainure ne bloque donc pas la descente, il la rend possible en supprimant le seul mouvement parasite. Les autres réponses confondent les organes : l'entraînement en rotation de la broche est assuré par le carré du moyeu, et le ressort travaille sur l'axe du pignon.",
+      "difficulty": 3
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque représentation normalisée à ce qui la caractérise.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Demi-coupe"
+        },
+        {
+          "id": "l2",
+          "text": "Coupe à plans parallèles"
+        },
+        {
+          "id": "l3",
+          "text": "Coupe brisée à plans sécants"
+        },
+        {
+          "id": "l4",
+          "text": "Section rabattue"
+        },
+        {
+          "id": "r1",
+          "text": "Réservée aux pièces symétriques : intérieur et extérieur sur une même vue"
+        },
+        {
+          "id": "r2",
+          "text": "Réunit sur une vue des formes situées dans des plans parallèles, hachures décalées"
+        },
+        {
+          "id": "r3",
+          "text": "Fait pivoter la partie non alignée pour la montrer en vraie grandeur"
+        },
+        {
+          "id": "r4",
+          "text": "Ne montre que la matière coupée, tracée en trait fin sur la vue elle-même"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "La demi-coupe exige la symétrie et livre les deux faces de la pièce sur une seule vue. La coupe à plans parallèles ramène plusieurs plans sur un même plan de projection, avec un trait d'axe au changement de plan et un décalage possible des hachures. La coupe brisée, elle, travaille avec deux plans concourants et fait pivoter la partie non alignée, qui apparaît alors en vraie grandeur. La section, enfin, ne représente que la surface coupée, et quand elle est rabattue directement sur la vue elle se trace en trait fin ✓. Retiens la frontière : une coupe montre aussi ce qui est derrière le plan, une section jamais.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le moyeu (11) est en 36 Ni Cr Mo16 et les bagues des roulements (8) en 100 Cr 6. Que peut-on affirmer avec certitude ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le moyeu contient 16 % de nickel et les bagues 6 % de chrome"
+        },
+        {
+          "id": "b",
+          "text": "Le moyeu contient plus de carbone que les bagues de roulement"
+        },
+        {
+          "id": "c",
+          "text": "Les bagues contiennent 1,00 % de carbone et le moyeu 0,36 %"
+        },
+        {
+          "id": "d",
+          "text": "Les deux désignations sont celles d'aciers non alliés au carbone"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Dans un acier faiblement allié, le premier nombre donne la teneur en carbone multipliée par cent : 100 Cr 6 contient 1,00 % de carbone et 36 Ni Cr Mo16 en contient 0,36 % ✓. Les bagues en contiennent donc près de trois fois plus, ce qui explique leur dureté après trempe. Le piège courant est d'oublier le diviseur des éléments d'alliage : pour le chrome comme pour le nickel il vaut 4, donc 6 Cr signifie 1,5 % de chrome et 16 Ni signifie 4 % de nickel, jamais 6 % ni 16 %. Un acier non allié, lui, s'écrirait C35 ou C60 : la seule lettre C.",
+      "difficulty": 3
+    }
+  ]
+}

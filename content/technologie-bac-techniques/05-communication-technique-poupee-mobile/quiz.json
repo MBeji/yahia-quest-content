@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐",
+  "questions": [
+    {
+      "prompt": "La lecture d'un dessin d'ensemble se fait en deux étapes. En quoi consiste la première, la lecture synthétique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tracer les chaînes de cotes des conditions fonctionnelles à respecter"
+        },
+        {
+          "id": "b",
+          "text": "Observer globalement les vues et leurs correspondances, puis parcourir la nomenclature"
+        },
+        {
+          "id": "c",
+          "text": "Identifier les liaisons entre les pièces et la chaîne cinématique"
+        },
+        {
+          "id": "d",
+          "text": "Juger l'approche techno-économique des solutions constructives retenues"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La lecture synthétique est le premier regard : on observe l'ensemble des vues, on vérifie leurs correspondances et on parcourt la nomenclature pour savoir de quelles pièces le mécanisme est fait. Vient ensuite la lecture analytique, qui enchaîne l'analyse fonctionnelle, l'analyse du fonctionnement — liaisons et chaîne cinématique — puis l'analyse des solutions constructives et de leur approche techno-économique. Le tracé des chaînes de cotes, lui, n'appartient pas à la lecture du dessin d'ensemble mais à la cotation fonctionnelle.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est le but de la cotation fonctionnelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Définir les cotes et les tolérances des pièces pour que les conditions soient respectées"
+        },
+        {
+          "id": "b",
+          "text": "Choisir la matière des pièces en fonction des efforts qu'elles doivent supporter en service"
+        },
+        {
+          "id": "c",
+          "text": "Fixer l'ordre chronologique des opérations de montage et de démontage du mécanisme"
+        },
+        {
+          "id": "d",
+          "text": "Montrer les formes intérieures d'une pièce sans avoir à tracer de détails cachés"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La cotation fonctionnelle définit les cotes nominales et les intervalles de tolérance de chaque pièce pour que les conditions du mécanisme — jeux, serrages, dépassements — soient respectées, ce qui assure l'interchangeabilité des pièces ; elle cherche en même temps les tolérances les plus larges possibles, car une tolérance serrée coûte cher à fabriquer. Le choix des matières relève de la conception, l'ordre des opérations du graphe de montage et de démontage, et les formes intérieures se montrent par des coupes.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'écrou (11) usé a été remplacé et il faut maintenant remonter la poupée mobile. Quel graphe donne l'ordre de ce remontage ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le schéma cinématique"
+        },
+        {
+          "id": "b",
+          "text": "Le diagramme F.A.S.T."
+        },
+        {
+          "id": "c",
+          "text": "Le graphe « râteau »"
+        },
+        {
+          "id": "d",
+          "text": "Le filogramme"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le graphe de montage porte le nom de râteau : les pièces y rejoignent une à une, comme les dents d'un râteau, la ligne qui aboutit à l'ensemble monté. C'est lui qu'on établit pour remonter, et il reprend l'ordre inverse du graphe de démontage, appelé filogramme, qui a servi à descendre jusqu'à l'écrou. Le diagramme F.A.S.T. ordonne des fonctions et non des opérations, et le schéma cinématique ne montre que les liaisons entre classes d'équivalence.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que représente un dessin de définition ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'ensemble des pièces d'un mécanisme dans leur position de fonctionnement"
+        },
+        {
+          "id": "b",
+          "text": "Les liaisons entre les classes d'équivalence, sans les formes réelles des pièces"
+        },
+        {
+          "id": "c",
+          "text": "L'ordre dans lequel les pièces d'un sous-ensemble sont assemblées"
+        },
+        {
+          "id": "d",
+          "text": "Une seule pièce, définie complètement et sans ambiguïté en vue de sa fabrication"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un dessin de définition ne représente qu'une pièce, extraite de l'ensemble, et la définit complètement et sans ambiguïté : matière, formes, cotation dimensionnelle, spécifications géométriques et qualité de l'état des surfaces. C'est le dessin d'ensemble qui montre toutes les pièces assemblées, le schéma cinématique qui se limite aux liaisons, et le graphe de montage qui donne l'ordre d'assemblage.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La pièce symétrique ci-dessous est représentée coupée sur sa moitié gauche et vue de l'extérieur sur sa moitié droite. Comment nomme-t-on cette représentation ?\n<svg viewBox=\"0 0 320 226\"><path d=\"M90.0 30.0 L140.0 30.0 L140.0 110.0 L90.0 110.0 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M90.0 37.3 L97.3 30.0 M90.0 50.0 L110.0 30.0 M90.0 62.7 L122.7 30.0 M90.0 75.5 L135.5 30.0 M90.0 88.2 L140.0 38.2 M90.0 100.9 L140.0 50.9 M93.6 110.0 L140.0 63.6 M106.4 110.0 L140.0 76.4 M119.1 110.0 L140.0 89.1 M131.8 110.0 L140.0 101.8\" fill=\"none\" stroke=\"#334155\" stroke-width=\"0.8\"/><path d=\"M90.0 30.0 L140.0 30.0 L140.0 110.0 L90.0 110.0 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.0\" stroke-linejoin=\"round\"/><path d=\"M70.0 110.0 L140.0 110.0 L140.0 190.0 L70.0 190.0 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M70.0 120.9 L80.9 110.0 M70.0 133.6 L93.6 110.0 M70.0 146.4 L106.4 110.0 M70.0 159.1 L119.1 110.0 M70.0 171.8 L131.8 110.0 M70.0 184.6 L140.0 114.6 M77.3 190.0 L140.0 127.3 M90.0 190.0 L140.0 140.0 M102.7 190.0 L140.0 152.7 M115.5 190.0 L140.0 165.5 M128.2 190.0 L140.0 178.2\" fill=\"none\" stroke=\"#334155\" stroke-width=\"0.8\"/><path d=\"M70.0 110.0 L140.0 110.0 L140.0 190.0 L70.0 190.0 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.0\" stroke-linejoin=\"round\"/><path d=\"M90.0 30.0 L230.0 30.0 L230.0 110.0 L250.0 110.0 L250.0 190.0 L70.0 190.0 L70.0 110.0 L90.0 110.0 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M140 30 V190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M160 12 V208\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"14 4 3 4\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une section sortie : seule la surface coupée est dessinée, à l'extérieur de la pièce"
+        },
+        {
+          "id": "b",
+          "text": "Une demi-coupe : l'intérieur et l'extérieur sont montrés dans une même vue"
+        },
+        {
+          "id": "c",
+          "text": "Une coupe à plans parallèles : deux plans de coupe sont ramenés sur un même plan"
+        },
+        {
+          "id": "d",
+          "text": "Une coupe brisée à plans sécants : la partie oblique est rabattue en vraie grandeur"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Couper la moitié d'une pièce symétrique et laisser l'autre moitié en vue extérieure, c'est une demi-coupe : elle permet de voir à la fois l'intérieur et l'extérieur dans une même vue et évite ainsi la représentation des détails cachés. La séparation se fait sur l'axe de symétrie. Une section ne montrerait que la surface coupée, et les deux dernières réponses désignent des coupes obtenues par plusieurs plans, parallèles ou sécants.",
+      "difficulty": 2
+    }
+  ]
+}
