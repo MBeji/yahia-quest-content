@@ -1,0 +1,184 @@
+{
+  "title": "⭐⭐ Révision (type examen) : de l'atelier au plan",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "manuel": {
+    "pages": "75, 79-81",
+    "items": [
+      "Mise en situation p.75",
+      "D. Graphe de montage et démontage — q. 1",
+      "C. Solutions constructives — q. 5"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Où une section sortie est-elle placée par rapport à la pièce qu'elle complète ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Directement sur la vue, à l'endroit du plan de coupe, tracée en trait fin"
+        },
+        {
+          "id": "b",
+          "text": "À l'extérieur de la pièce, le plus souvent dans le prolongement du plan de coupe ou de l'axe"
+        },
+        {
+          "id": "c",
+          "text": "À la place de la vue de face, qu'elle remplace entièrement"
+        },
+        {
+          "id": "d",
+          "text": "Sur une feuille séparée, accompagnée de son propre cartouche"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une section sortie est dessinée hors de l'objet représenté, et on l'aligne le plus souvent sur le prolongement du plan de coupe ou sur celui de l'axe de la pièce, pour que le lecteur retrouve immédiatement d'où elle vient. La section rabattue, elle, se trace bien sur la vue elle-même et en trait fin (a) — c'est la différence entre les deux. Une section ne remplace jamais une vue (c) : elle la complète.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "En haut de l'arbre (15), le dessin montre deux écrous identiques vissés l'un sur l'autre et serrés l'un contre l'autre. À quoi sert le second ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À freiner le premier écrou et l'empêcher de se desserrer"
+        },
+        {
+          "id": "b",
+          "text": "À doubler l'effort de serrage transmis à l'arbre (15)"
+        },
+        {
+          "id": "c",
+          "text": "À rattraper l'usure du filetage de l'arbre (15)"
+        },
+        {
+          "id": "d",
+          "text": "À répartir la pression de contact, comme le ferait une rondelle"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux écrous serrés l'un contre l'autre se coincent mutuellement sur le filetage : c'est le montage contre-écrou, un freinage par obstacle et adhérence qui empêche le desserrage sous les efforts répétés — exactement ce que subit une machine d'essai, chargée puis déchargée à chaque éprouvette. Il ne double pas le serrage (b) : c'est toujours le premier écrou qui presse la pièce. Conséquence pratique au démontage : il faut deux clés, une pour maintenir, une pour desserrer.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le graphe de démontage prescrit une « clé plate 24 » pour déposer les écrous (12), désignés à la nomenclature « Écrou hexagonal, M16 ». Que désigne le nombre 24 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le diamètre extérieur du filetage de l'écrou"
+        },
+        {
+          "id": "b",
+          "text": "L'épaisseur de l'écrou, mesurée dans l'axe du filetage"
+        },
+        {
+          "id": "c",
+          "text": "La dimension sur plats de l'écrou : 24 mm entre deux faces opposées"
+        },
+        {
+          "id": "d",
+          "text": "La dimension sur angles de l'écrou, d'un sommet au sommet opposé"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une clé plate se referme sur deux faces opposées de l'hexagone : son numéro est donc la dimension sur plats, normalisée pour chaque filetage — 24 mm pour un M16. Le piège est de confondre ce nombre avec le filetage lui-même (a) : M16 donne le diamètre nominal de la vis, jamais l'ouverture de la clé, et c'est pour cela que le graphe de démontage prend la peine de nommer l'outil. La dimension sur angles (d) est plus grande que la dimension sur plats et ne sert à aucune clé plate.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le graphe de démontage de la machine s'arrête dès que les bagues de guidage (18) sont accessibles, et son pied porte la mention « sous-ensemble restant ». Que désigne cette mention ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les pièces déposées, rangées dans l'ordre de leur dépose"
+        },
+        {
+          "id": "b",
+          "text": "Les pièces qu'il faudra remplacer par des pièces neuves"
+        },
+        {
+          "id": "c",
+          "text": "Les pièces qui ne figurent pas à la nomenclature du dessin d'ensemble"
+        },
+        {
+          "id": "d",
+          "text": "Tout ce qui n'a pas été démonté et qui reste assemblé sur la machine"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le graphe est partiel : on descend juste assez loin pour atteindre la pièce défectueuse, et le reste de la machine n'est pas touché — c'est ce bloc-là que le pied du graphe nomme sous-ensemble restant. La règle de maintenance derrière ce mot est simple : chaque pièce déposée est une pièce à remonter, donc du temps et un risque d'erreur. Les pièces déposées apparaissent, elles, dans les boîtes du graphe avec leur repère d'ordre (a), et celles à remplacer sont signalées dans la colonne des observations (b).",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le comparateur à cadran de la machine est gradué au centième de millimètre, et un tour complet de l'aiguille correspond à 1 mm de déplacement. Partie de zéro, l'aiguille a fait un tour complet, puis s'est arrêtée dans la position ci-dessous. Quel est l'allongement de l'éprouvette, en millimètres ?\n<svg viewBox=\"0 0 240 240\"><circle cx=\"120\" cy=\"120\" r=\"104\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><circle cx=\"120\" cy=\"120\" r=\"98\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M120.0 22.0 L120.0 38.0 M150.3 26.8 L147.5 35.4 M177.6 40.7 L168.2 53.7 M199.3 62.4 L192.0 67.7 M213.2 89.7 L198.0 94.7 M218.0 120.0 L209.0 120.0 M213.2 150.3 L198.0 145.3 M199.3 177.6 L192.0 172.3 M177.6 199.3 L168.2 186.3 M150.3 213.2 L147.5 204.6 M120.0 218.0 L120.0 202.0 M89.7 213.2 L92.5 204.6 M62.4 199.3 L71.8 186.3 M40.7 177.6 L48.0 172.3 M26.8 150.3 L42.0 145.3 M22.0 120.0 L31.0 120.0 M26.8 89.7 L42.0 94.7 M40.7 62.4 L48.0 67.7 M62.4 40.7 L71.8 53.7 M89.7 26.8 L92.5 35.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M139.0 113.8 L45.8 144.1\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><circle cx=\"120\" cy=\"120\" r=\"6.5\" fill=\"#0f172a\"/><text x=\"120.0\" y=\"59.0\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"158.8\" y=\"71.6\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><text x=\"182.8\" y=\"104.6\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text><text x=\"182.8\" y=\"145.4\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text><text x=\"158.8\" y=\"178.4\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">40</text><text x=\"120.0\" y=\"191.0\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">50</text><text x=\"81.2\" y=\"178.4\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">60</text><text x=\"57.2\" y=\"145.4\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">70</text><text x=\"57.2\" y=\"104.6\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">80</text><text x=\"81.2\" y=\"71.6\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">90</text><text x=\"120\" y=\"158\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#94a3b8\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,01 mm</text></svg>",
+      "answerKey": {
+        "value": 1.7,
+        "unit": "mm"
+      },
+      "explanation": "Le cadran seul ne suffit jamais : il faut compter les tours, puis lire la graduation. Le tour complet déjà accompli vaut 1 mm ; l'aiguille s'est ensuite arrêtée sur la graduation 70, soit 70 × 0,01 = 0,70 mm. L'allongement vaut donc 1 + 0,70 = 1,70 mm. Le piège classique est d'oublier le tour et de répondre 0,70 mm — sur une éprouvette qu'on tire jusqu'à la rupture, l'aiguille fait plusieurs tours.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Le thème s'achève sur quatre documents, et chacun répond à une question différente. Associe chaque document à ce qu'il apporte.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Le dessin d'ensemble"
+        },
+        {
+          "id": "l2",
+          "text": "Le graphe de montage et de démontage"
+        },
+        {
+          "id": "l3",
+          "text": "La chaîne de cotes"
+        },
+        {
+          "id": "l4",
+          "text": "Le dessin de définition"
+        },
+        {
+          "id": "r1",
+          "text": "Montre toutes les pièces assemblées en position de fonctionnement, et se lit avec sa nomenclature"
+        },
+        {
+          "id": "r2",
+          "text": "Fixe l'ordre chronologique des opérations d'une intervention"
+        },
+        {
+          "id": "r3",
+          "text": "Relie les cotes des pièces qui installent une condition fonctionnelle"
+        },
+        {
+          "id": "r4",
+          "text": "Définit une seule pièce, complètement et sans ambiguïté, en vue de sa fabrication"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Chaque document a son échelle et sa question. Le dessin d'ensemble montre le mécanisme entier assemblé et répond à « comment cela fonctionne-t-il ? ». Le graphe de montage et de démontage répond à « dans quel ordre intervenir ? ». La chaîne de cotes répond à « quelles cotes garantissent la condition ? » en reliant les pièces qui l'installent. Le dessin de définition, enfin, descend à la pièce unique et répond à « comment la fabriquer ? » — c'est le seul des quatre à ne montrer qu'une seule pièce.",
+      "difficulty": 2
+    }
+  ]
+}

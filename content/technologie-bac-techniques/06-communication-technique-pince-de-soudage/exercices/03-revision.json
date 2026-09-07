@@ -1,0 +1,177 @@
+{
+  "title": "⭐⭐ Révision (type examen) : de la nomenclature au dessin de définition",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "manuel": {
+    "code": "228462P01",
+    "pages": "60-74",
+    "items": [
+      "dessin d'ensemble p.61",
+      "nomenclature p.63-64",
+      "activité 3.1 — A. q.3",
+      "activité 3.2 — C.4 palier arrière (21)"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Sous une vue du dessin d'ensemble de la pince, on lit « Coupe D-D (sans 1, 2, 9, 19, 21 et 70) ». Que signifie cette mention ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Que ces pièces ne sont pas montées sur la machine"
+        },
+        {
+          "id": "b",
+          "text": "Que ces pièces ont été volontairement omises du dessin de cette vue, pour la rendre lisible"
+        },
+        {
+          "id": "c",
+          "text": "Que ces pièces sont représentées en traits interrompus dans cette vue"
+        },
+        {
+          "id": "d",
+          "text": "Que ces pièces sont coupées par le plan D-D mais laissées sans hachures"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sur un ensemble de 72 repères, une coupe qui montrerait tout serait illisible. Le dessinateur a donc le droit de ne pas représenter certaines pièces dans une vue donnée, à condition de le dire : c'est le rôle de cette mention entre parenthèses. Les pièces citées sont bien montées sur la machine et apparaissent ailleurs — sur la vue principale ou sur une autre coupe. Ne pas dessiner une pièce et la dessiner en traits interrompus sont deux choix différents : ici, elle n'est tout simplement pas là.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans la nomenclature, la chape est désignée « Chape M20 L=60 » (9) et une autre pièce « Tige filetée M20x150 » (19). Quelle information de ces désignations indique que les deux pièces s'assemblent l'une à l'autre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leur position voisine dans la nomenclature"
+        },
+        {
+          "id": "b",
+          "text": "La mention L=60, qui donne la longueur vissée sur la tige"
+        },
+        {
+          "id": "c",
+          "text": "Le filetage M20, commun aux deux désignations"
+        },
+        {
+          "id": "d",
+          "text": "Le nombre 1 de la colonne « Nbr. », identique pour les deux pièces"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "M20 désigne un filetage métrique de diamètre nominal 20 mm. Deux pièces ne peuvent se visser l'une dans l'autre que si elles portent le MÊME filetage : la chape est taraudée M20, la tige est filetée M20, elles vont donc ensemble. La mention L=60 donne seulement la longueur propre de la chape, et 150 celle de la tige — ni l'une ni l'autre ne prouve un assemblage. Quant au voisinage des repères et à la quantité, ils ne disent rien de la liaison.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Remets dans l'ordre les cinq temps de la réalisation d'un point de soudure sur la pince.",
+      "type": "ordering",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approcher les électrodes et serrer les deux tôles sous l'effort d'accostage"
+        },
+        {
+          "id": "b",
+          "text": "Faire passer dans la zone de contact un courant de basse tension et de forte intensité"
+        },
+        {
+          "id": "c",
+          "text": "Laisser l'effet Joule fondre les tôles et former le noyau"
+        },
+        {
+          "id": "d",
+          "text": "Couper le courant, l'effort restant appliqué, pour forger la soudure"
+        },
+        {
+          "id": "e",
+          "text": "Desserrer les électrodes et déplacer la pince vers le point suivant"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "L'ordre découle de la physique du procédé. On accoste d'abord, sinon le courant passerait sur un contact aléatoire. Le courant vient ensuite, et c'est sa résistance à traverser la zone de contact qui produit la chaleur : l'effet Joule n'existe donc pas avant lui. Le noyau se forme pendant ce chauffage. Vient alors le point décisif : on coupe le courant, mais on garde l'effort, qui forge la soudure pendant sa solidification. Le desserrage est le seul geste qui puisse venir en dernier — le faire plus tôt raterait le point.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le dessin de définition du palier arrière (21) porte deux chanfreins, notés « 1,5 x 45° » et « 5 x 45° ». Que signifie cette notation, et à quoi sert un chanfrein ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deux angles, de 1,5° et de 5° : le chanfrein incline légèrement la face d'appui"
+        },
+        {
+          "id": "b",
+          "text": "Une largeur (1,5 mm ou 5 mm) et un angle de 45° : le chanfrein abat l'arête vive et facilite l'engagement des pièces"
+        },
+        {
+          "id": "c",
+          "text": "Un diamètre (1,5 mm ou 5 mm) percé à 45° : le chanfrein sert de trou de graissage"
+        },
+        {
+          "id": "d",
+          "text": "Un rayon (1,5 mm ou 5 mm) à 45° : le chanfrein arrondit l'angle pour éviter la rupture"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un chanfrein se cote toujours de la même façon : d'abord sa largeur en millimètres, puis son angle. « 5 x 45° » se lit donc 5 mm à 45°, et l'angle est ici le même dans les deux cas — seule la largeur change. Sa fonction est double : supprimer l'arête vive laissée par l'usinage, qui blesse et qui s'écaille, et offrir une entrée en biais à la pièce qui vient s'emmancher, ce qui évite de la coincer au montage. Un congé, lui, se cote par un rayon et adoucit un angle rentrant : ce n'est pas la même chose.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur la pince, une vis H M10x60 (41) et une vis HC M10x70 à bout bombé (43) viennent en appui contre les pastilles de butée (40) et (45), en acier STUB, montées serrées dans les bras. Quelle fonction ces pastilles remplissent-elles ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Isoler électriquement la vis du bras sur lequel elle appuie"
+        },
+        {
+          "id": "b",
+          "text": "Guider la vis en rotation pendant l'opération de réglage"
+        },
+        {
+          "id": "c",
+          "text": "Empêcher la vis de se desserrer sous l'effet des vibrations"
+        },
+        {
+          "id": "d",
+          "text": "Offrir à la vis une surface d'appui dure et remplaçable, qui matérialise la butée"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le nom donne la fonction : une pastille de BUTÉE est la surface contre laquelle la vis vient s'arrêter, et c'est cet arrêt qui limite le débattement des bras, donc l'écartement des électrodes. Placer là une pastille dure, emmanchée en force et remplaçable, évite que le bout de la vis ne mate peu à peu le bras lui-même — on remplace une pastille, pas un bras. Le blocage de la vis dans sa position réglée est assuré par un autre composant, l'écrou HM M10 (42), qui fait contre-écrou ; et une pastille en acier n'isole rien.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le dessin de définition du palier arrière (21) porte, sur l'une de ses surfaces, le symbole d'état de surface « Ra 1,6 ». Que prescrit cette indication ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une rugosité arithmétique moyenne au plus égale à 1,6 micromètre"
+        },
+        {
+          "id": "b",
+          "text": "Une rugosité arithmétique moyenne au plus égale à 1,6 millimètre"
+        },
+        {
+          "id": "c",
+          "text": "Un défaut de forme de la surface au plus égal à 1,6 micromètre"
+        },
+        {
+          "id": "d",
+          "text": "Une tolérance de 1,6 micromètre sur la cote qui aboutit à cette surface"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Ra est la rugosité arithmétique moyenne, c'est-à-dire l'écart moyen des aspérités de la surface par rapport à sa ligne moyenne, et elle s'exprime toujours en micromètres — 1,6 mm serait une surface labourée, sans rapport avec un état de surface. La valeur inscrite est un plafond : la surface obtenue doit être au moins aussi lisse. Attention à ne pas confondre les trois familles : la cotation dimensionnelle donne les longueurs, la spécification géométrique encadre la forme et l'orientation, l'état de surface décrit la peau de la pièce.",
+      "difficulty": 2
+    }
+  ]
+}
