@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Conservations, invariance et lieux",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Un angle mesure 1 radian. Quelle est, au dixième de degré près, sa mesure en degrés ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,1°"
+        },
+        {
+          "id": "b",
+          "text": "57,3°"
+        },
+        {
+          "id": "c",
+          "text": "90°"
+        },
+        {
+          "id": "d",
+          "text": "180°"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un radian se convertit en multipliant par 180/π : 1 × 180/π = 180/3,14159… ≈ 57,3° ✓. C'est une valeur à retenir, car elle situe le radian entre le degré et l'angle droit. La valeur 3,1° recopie le nombre π lui-même, alors que π est le nombre de radians de l'angle plat, pas sa mesure en degrés. La valeur 180° confond 1 radian avec π radians, c'est-à-dire l'unité avec l'angle plat tout entier. La valeur 90° ferait du radian un angle droit, ce qui reviendrait à confondre 1 avec π/2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur la figure ci-dessous, les points O, M et M′ vérifient OM′ = OM et l'angle MÔM′ est droit. Quelle rotation de centre O envoie M sur M′ ?\n<svg viewBox=\"0 0 320 200\"><path d=\"M155 135 L137.64 36.52 M155 135 L253.48 117.64\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M152.57 121.21 L166.36 118.78 L168.79 132.57\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"><path d=\"M141.4 86.63 L151.24 84.89\"/><path d=\"M203.37 121.4 L205.11 131.24\"/></g><g fill=\"#0f172a\"><circle cx=\"155\" cy=\"135\" r=\"4.5\"/><circle cx=\"137.64\" cy=\"36.52\" r=\"4.5\"/></g><circle cx=\"253.48\" cy=\"117.64\" r=\"5\" fill=\"#0f6e56\"/><g font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"128\" y=\"30\" fill=\"#0f172a\">M</text><text x=\"266\" y=\"112\" fill=\"#0f6e56\">M′</text><text x=\"146\" y=\"156\" fill=\"#0f172a\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La rotation directe de centre O et d'angle π/4"
+        },
+        {
+          "id": "b",
+          "text": "Le quart de tour direct de centre O"
+        },
+        {
+          "id": "c",
+          "text": "Le quart de tour indirect de centre O"
+        },
+        {
+          "id": "d",
+          "text": "La symétrie centrale de centre O"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'angle MÔM′ étant droit, sa mesure vaut π/2 et la transformation est un quart de tour. Le sens se lit sur la figure : pour aller de M à M′, on tourne dans le sens des aiguilles d'une montre, donc dans le sens indirect, d'où le quart de tour indirect ✓. Le quart de tour direct, qui tourne dans l'autre sens, enverrait M sur le point symétrique de M′ par rapport à la droite (OM). La rotation d'angle π/4 ne balaierait que la moitié de l'angle droit marqué sur la figure. La symétrie centrale, d'angle π, alignerait O avec M et son image, ce que la figure contredit.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une rotation transforme le triangle ABC en A′B′C′, et G désigne le centre de gravité de ABC. Que peut-on dire du point image de G ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C'est le centre de gravité du triangle A′B′C′"
+        },
+        {
+          "id": "b",
+          "text": "C'est le centre du cercle circonscrit au triangle A′B′C′"
+        },
+        {
+          "id": "c",
+          "text": "C'est l'orthocentre du triangle A′B′C′"
+        },
+        {
+          "id": "d",
+          "text": "C'est le point G lui-même, car un centre de gravité ne bouge pas"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le centre de gravité d'un triangle est l'isobarycentre de ses trois sommets, et une rotation conserve le barycentre : l'image du barycentre est le barycentre des images, affectés des mêmes coefficients. L'image de G est donc l'isobarycentre de A′, B′ et C′, c'est-à-dire le centre de gravité de A′B′C′ ✓. Le centre du cercle circonscrit et l'orthocentre sont eux aussi conservés en tant que points remarquables, mais ce ne sont pas les images de G : ils ne coïncident avec le centre de gravité que dans un triangle équilatéral, cas dont l'énoncé ne parle pas. Enfin le seul point que la rotation laisse en place est son centre, et rien ne dit que G le soit.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quels sont les éléments de symétrie d'un cercle de centre O ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Son centre O et toutes les droites passant par O"
+        },
+        {
+          "id": "b",
+          "text": "Son centre O et les deux droites perpendiculaires passant par O"
+        },
+        {
+          "id": "c",
+          "text": "Toutes les droites passant par O, mais aucun centre de symétrie"
+        },
+        {
+          "id": "d",
+          "text": "Son centre O uniquement"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un cercle est globalement invariant par la symétrie centrale de centre O, qui échange chaque point avec son diamétralement opposé : O est donc un centre de symétrie. Il est aussi globalement invariant par la symétrie d'axe n'importe quel diamètre : toutes les droites passant par O sont des axes ✓. Ne retenir que deux droites perpendiculaires transpose au cercle ce qui vaut pour un rectangle, alors que rien ne privilégie une direction sur un cercle. Ne retenir que les axes fait oublier le centre, et ne retenir que le centre fait oublier les axes : le cercle possède bel et bien les deux sortes d'éléments de symétrie.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le point I est fixe. Le point J décrit le cercle de centre E et de rayon 4 cm, et K désigne l'image de J par le quart de tour direct de centre I. On note F l'image de E par ce même quart de tour. Quel ensemble décrit le point K ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le cercle de centre E et de rayon 4 cm"
+        },
+        {
+          "id": "b",
+          "text": "Le cercle de centre F et de rayon 4 cm"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle de centre F et de rayon 8 cm"
+        },
+        {
+          "id": "d",
+          "text": "Le cercle de centre I et de rayon 4 cm"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le point K est l'image de J par une transformation fixe, donc l'ensemble décrit par K est l'image de l'ensemble décrit par J. Or l'image d'un cercle par une rotation est un cercle de même rayon, centré à l'image du centre : K décrit donc le cercle de centre F et de rayon 4 cm ✓. Garder E pour centre reviendrait à croire le cercle globalement invariant, ce que rien ne garantit puisque I n'est pas E. Placer le centre en I confond le centre de la rotation avec le centre du cercle image. Doubler le rayon contredit enfin la conservation des distances : une rotation ne multiplie aucune longueur.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABC est un triangle équilatéral inscrit dans un cercle Γ. Le point M appartient à l'arc AB de Γ qui ne contient pas C, avec MA = 3 cm et MB = 5 cm. Que vaut MC ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 cm"
+        },
+        {
+          "id": "b",
+          "text": "√34 cm"
+        },
+        {
+          "id": "c",
+          "text": "8 cm"
+        },
+        {
+          "id": "d",
+          "text": "15 cm"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour un point M de l'arc AB ne contenant pas C, la rotation de centre A et d'angle π/3 qui envoie B sur C permet d'établir l'égalité MC = MA + MB : elle transporte [MB] sur un segment aligné avec [MC] et fabrique au passage un triangle équilatéral de côté MA. Ici MC = 3 + 5 = 8 cm ✓. La valeur 4 cm est la moyenne des deux distances, résultat d'une lecture rapide qui remplace la somme par une moyenne. La valeur 15 cm multiplie les deux distances au lieu de les additionner. La valeur √34 cm applique le théorème de Pythagore, ce que rien n'autorise ici : l'angle AMB vaut 2π/3 et non un angle droit.",
+      "difficulty": 3
+    }
+  ]
+}

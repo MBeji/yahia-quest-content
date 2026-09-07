@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Images, lieux et constructions",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Sur la figure, les cercles de centres O et O' ont le même rayon. Quelle transformation envoie le premier cercle sur le second ?\n<svg viewBox=\"0 0 340 190\"><circle cx=\"80\" cy=\"110\" r=\"50\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><circle cx=\"230\" cy=\"80\" r=\"50\" fill=\"#0f6e56\" opacity=\"0.12\"/><circle cx=\"230\" cy=\"80\" r=\"50\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\"/><circle cx=\"80\" cy=\"110\" r=\"4.5\" fill=\"#0f172a\"/><circle cx=\"230\" cy=\"80\" r=\"4.5\" fill=\"#0f6e56\"/><g font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"68\" y=\"128\" fill=\"#0f172a\">O</text><text x=\"218\" y=\"98\" fill=\"#0f6e56\">O'</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La translation de vecteur OO'⃗"
+        },
+        {
+          "id": "b",
+          "text": "La translation de vecteur O'O⃗"
+        },
+        {
+          "id": "c",
+          "text": "La translation de vecteur 2OO'⃗"
+        },
+        {
+          "id": "d",
+          "text": "Aucune translation : deux cercles distincts exigent une symétrie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'image d'un cercle par une translation est un cercle de même rayon, centré en l'image du centre. Les deux rayons étant égaux, il suffit donc d'envoyer O sur O', ce que fait exactement la translation de vecteur OO'⃗ ✓ : tout point du premier cercle glisse alors du même vecteur et atterrit sur le second. Le vecteur O'O⃗ effectue le trajet inverse et ramènerait le second cercle sur le premier. Doubler le vecteur enverrait le centre deux fois trop loin, sur un troisième cercle situé au-delà de O'. Enfin il est faux qu'une symétrie soit nécessaire : deux cercles de même rayon sont toujours images l'un de l'autre par la translation qui relie leurs centres.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une translation transforme les points A et B en A' et B'. Quelle est l'image de la médiatrice du segment [AB] par cette translation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La droite (A'B')"
+        },
+        {
+          "id": "b",
+          "text": "La médiatrice de [A'B']"
+        },
+        {
+          "id": "c",
+          "text": "La médiatrice de [AA']"
+        },
+        {
+          "id": "d",
+          "text": "La parallèle à la médiatrice de [AB] passant par A'"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La médiatrice de [AB] est la droite perpendiculaire à (AB) qui passe par le milieu de [AB]. Une translation conserve le milieu, donc l'image de ce milieu est le milieu de [A'B'] ; elle conserve aussi l'orthogonalité, donc l'image de la droite reste perpendiculaire à l'image de (AB), c'est-à-dire à (A'B'). Une droite perpendiculaire à (A'B') passant par le milieu de [A'B'] est la médiatrice de [A'B'] ✓. La droite (A'B') est perpendiculaire à la réponse cherchée, pas égale à elle. La médiatrice de [AA'] concerne le segment reliant un point à sa propre image : elle ne joue aucun rôle ici. Enfin la parallèle passant par A' a bien la bonne direction, puisqu'une translation conserve les directions, mais elle passe par le mauvais point : c'est le milieu qui se déplace, pas le sommet.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur la figure, le triangle ABC est rectangle en A et les longueurs des deux côtés de l'angle droit sont indiquées. Une translation transforme ce triangle en un triangle A'B'C'. Que vaut B'C' ?\n<svg viewBox=\"0 0 230 210\"><polygon points=\"60,160 60,94 148,160\" fill=\"#0f6e56\" opacity=\"0.10\"/><polygon points=\"60,160 60,94 148,160\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><path d=\"M60 142 L78 142 L78 160\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"160\" r=\"4.5\"/><circle cx=\"60\" cy=\"94\" r=\"4.5\"/><circle cx=\"148\" cy=\"160\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"48\" y=\"180\" fill=\"#0f172a\">A</text><text x=\"48\" y=\"86\" fill=\"#0f172a\">B</text><text x=\"162\" y=\"180\" fill=\"#0f172a\">C</text></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"36\" y=\"130\">3 cm</text><text x=\"104\" y=\"182\">4 cm</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 cm"
+        },
+        {
+          "id": "b",
+          "text": "7 cm"
+        },
+        {
+          "id": "c",
+          "text": "12 cm"
+        },
+        {
+          "id": "d",
+          "text": "On ne peut pas conclure sans connaître le vecteur de la translation"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux étapes. D'abord le théorème de Pythagore dans le triangle rectangle en A donne BC² = 3² + 4² = 9 + 16 = 25, donc BC = 5 cm. Ensuite la translation conserve les distances, donc B'C' = BC = 5 cm ✓. La valeur 7 cm additionne simplement les deux côtés, comme si l'hypoténuse valait leur somme ; ce serait vrai d'un chemin passant par A, pas du segment direct. La valeur 12 cm multiplie 3 par 4 : c'est le double de l'aire du triangle, exprimée en centimètres carrés, donc une grandeur d'une autre nature. Enfin il n'y a rien à savoir sur le vecteur : il indique où la figure part, jamais comment elle change, puisqu'elle ne change pas — le triangle image est superposable au triangle de départ.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "ABC est un triangle. Le point M décrit la droite (BC), et le point N est défini par MN⃗ = AB⃗. Quel est l'ensemble décrit par le point N ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La droite (BC) elle-même"
+        },
+        {
+          "id": "b",
+          "text": "Le segment [BC]"
+        },
+        {
+          "id": "c",
+          "text": "La droite parallèle à (BC) passant par l'image du point B"
+        },
+        {
+          "id": "d",
+          "text": "Le cercle de centre B et de rayon AB"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'égalité MN⃗ = AB⃗ dit que N est l'image de M par la translation de vecteur AB⃗. Quand M parcourt toute la droite (BC), le point N parcourt donc l'image de cette droite, qui est une droite parallèle à (BC) ; pour la situer, il suffit d'un de ses points, par exemple l'image de B ✓. La droite (BC) elle-même ne conviendrait que si AB⃗ dirigeait (BC), c'est-à-dire si A appartenait à (BC) : le triangle serait alors aplati. Le segment [BC] est trop petit : M décrit une droite entière, donc son image aussi, sans extrémités. Enfin un cercle de rayon AB apparaîtrait si M restait fixe et N tournait autour, alors qu'ici c'est le vecteur qui est figé et le point de départ qui se promène.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur la figure, deux berges parallèles séparent A de B. Le pont [MN] doit rester perpendiculaire aux berges, avec M sur la berge de A et N sur celle de B, donc le vecteur MN⃗ est le même où qu'on le place. Quelle construction rend le trajet AM + MN + NB minimal ?\n<svg viewBox=\"0 0 340 230\"><rect x=\"20\" y=\"90\" width=\"300\" height=\"40\" fill=\"#bae6fd\"/><path d=\"M20 90 H320 M20 130 H320\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M60 40 L150 90\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-dasharray=\"6 4\"/><path d=\"M150 130 L290 195\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-dasharray=\"6 4\"/><path d=\"M150 90 L150 130\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"4\"/><path d=\"M150 102 L162 102 L162 90\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.6\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"40\" r=\"4.5\"/><circle cx=\"290\" cy=\"195\" r=\"4.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"150\" cy=\"90\" r=\"4.5\"/><circle cx=\"150\" cy=\"130\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"50\" y=\"32\" fill=\"#0f172a\">A</text><text x=\"302\" y=\"207\" fill=\"#0f172a\">B</text><text x=\"136\" y=\"84\" fill=\"#0f6e56\">M</text><text x=\"136\" y=\"148\" fill=\"#0f6e56\">N</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Joindre directement A à B et couper la berge de A"
+        },
+        {
+          "id": "b",
+          "text": "Prendre pour M le projeté orthogonal de A sur la berge de A"
+        },
+        {
+          "id": "c",
+          "text": "Translater B du vecteur MN⃗, puis joindre A au point obtenu"
+        },
+        {
+          "id": "d",
+          "text": "Translater A du vecteur MN⃗, puis joindre le point obtenu à B"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La longueur MN du pont ne dépend pas de l'endroit choisi : elle est fixée par l'écartement des berges. Seule la somme AM + NB peut être raccourcie. On translate A du vecteur MN⃗ en un point A' ; comme AA'⃗ = MN⃗, le quadrilatère AA'NM est un parallélogramme, donc A'N = AM. La somme à minimiser devient A'N + NB, qui est une ligne brisée de A' à B : elle est la plus courte lorsqu'elle est droite, c'est-à-dire lorsque N appartient au segment [A'B] ✓. Il suffit donc de joindre A' à B et de lire N sur la berge opposée. Joindre directement A à B ignore que le pont impose un décalage : le trajet obtenu n'est pas continu au passage du pont. Le projeté orthogonal de A traverse au plus court la rivière, mais rallonge tout le reste dès que B n'est pas en face. Enfin translater B du vecteur MN⃗ pousse B du mauvais côté : pour raisonner depuis B, c'est du vecteur NM⃗ qu'il faudrait le déplacer, puisqu'il s'agit alors de remonter le pont et non de le descendre.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "A et B sont deux points fixes et distincts. À tout point M du plan on associe le point N tel que AN⃗ = 4AM⃗ − 3BM⃗. Quel est le vecteur MN⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AB⃗"
+        },
+        {
+          "id": "b",
+          "text": "3AB⃗"
+        },
+        {
+          "id": "c",
+          "text": "3BA⃗"
+        },
+        {
+          "id": "d",
+          "text": "Aucun vecteur fixe : MN⃗ dépend de la position de M"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On isole MN⃗ à partir de la relation donnée, en écrivant MN⃗ = AN⃗ − AM⃗. Il vient MN⃗ = 4AM⃗ − 3BM⃗ − AM⃗ = 3AM⃗ − 3BM⃗ = 3(AM⃗ − BM⃗). Les deux vecteurs AM⃗ et BM⃗ ont la même EXTRÉMITÉ M : la relation de Chasles donne AM⃗ − BM⃗ = AM⃗ + MB⃗ = AB⃗, autrement dit on va du premier point de départ vers le second. D'où MN⃗ = 3AB⃗ ✓, un vecteur entièrement déterminé par A et B, donc constant : l'application est la translation de vecteur 3AB⃗. ⚠️ Ne pas confondre avec le cas où les deux vecteurs ont la même ORIGINE : MS⃗ − MT⃗ = TS⃗, où l'on va cette fois de la seconde extrémité vers la première. Les deux cas sont duaux, et c'est la lettre COMMUNE qui décide — pas un sens appris par cœur. Le vecteur AB⃗ seul oublie le facteur 3 obtenu en regroupant 4AM⃗ et −AM⃗. Le vecteur 3BA⃗ a la bonne longueur mais le sens contraire : c'est exactement la confusion entre les deux cas. Quant à nier l'existence d'un vecteur fixe, c'est s'arrêter avant la réduction : dans l'écriture 3AM⃗ − 3BM⃗, les coefficients 3 et −3 totalisent 0, et c'est ce qui fait disparaître le point M.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers glissements du plan",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "On note t la translation de vecteur u⃗ et P un point quelconque du plan. Combien le point P admet-il d'antécédents par t ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucun"
+        },
+        {
+          "id": "b",
+          "text": "Un seul"
+        },
+        {
+          "id": "c",
+          "text": "Deux"
+        },
+        {
+          "id": "d",
+          "text": "Une infinité"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Chercher un antécédent de P, c'est chercher un point M tel que MP⃗ = u⃗. Cette égalité place M de façon totalement déterminée : on part de P et on remonte le vecteur u⃗. Un tel point existe donc toujours, et il n'y en a qu'un ✓. Répondre qu'il n'y en a aucun confondrait la translation avec une application qui n'atteindrait pas tout le plan ; or chaque point du plan est bien l'image de quelqu'un. Répondre deux supposerait deux positions distinctes vérifiant la même égalité vectorielle, ce qui est impossible : un vecteur et son point d'arrivée déterminent son point de départ. Quant à une infinité, cela reviendrait à dire que le vecteur u⃗ ne fixe pas la longueur du déplacement, alors qu'il fixe direction, sens et longueur à la fois.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur la figure, ABCD est un parallélogramme. Quelle est l'image du segment [AB] par la translation de vecteur AD⃗ ?\n<svg viewBox=\"0 0 300 200\"><polygon points=\"50,150 180,150 250,60 120,60\" fill=\"#0f6e56\" opacity=\"0.12\"/><polygon points=\"50,150 180,150 250,60 120,60\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"150\" r=\"4.5\"/><circle cx=\"180\" cy=\"150\" r=\"4.5\"/><circle cx=\"250\" cy=\"60\" r=\"4.5\"/><circle cx=\"120\" cy=\"60\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"40\" y=\"170\" fill=\"#0f172a\">A</text><text x=\"188\" y=\"170\" fill=\"#0f172a\">B</text><text x=\"262\" y=\"52\" fill=\"#0f172a\">C</text><text x=\"110\" y=\"52\" fill=\"#0f172a\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le segment [AB] lui-même"
+        },
+        {
+          "id": "b",
+          "text": "Le segment [AC]"
+        },
+        {
+          "id": "c",
+          "text": "Le segment [BC]"
+        },
+        {
+          "id": "d",
+          "text": "Le segment [DC]"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'image d'un segment est le segment joignant les images de ses extrémités : il suffit donc de déplacer A puis B du vecteur AD⃗. Le point A part sur D, par définition même du vecteur. Le point B part sur le point X tel que BX⃗ = AD⃗ ; or dans le parallélogramme ABCD on a AD⃗ = BC⃗, donc X est le point C. L'image cherchée est le segment [DC] ✓, effectivement parallèle à [AB] et de même longueur. Le segment [AB] lui-même supposerait que le vecteur AD⃗ dirige la droite (AB), ce qui n'arrive pas dans un vrai parallélogramme. Le segment [BC] est l'image de [AD], pas celle de [AB] : c'est le déplacement lui-même, pris pour son résultat. Quant à [AC], c'est une diagonale : elle joint une extrémité de départ à une extrémité d'arrivée, en mélangeant les deux figures.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit D une droite du plan et t une translation dont le vecteur n'est pas nul. Que peut-on affirmer de l'image de la droite D par t ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C'est la droite D elle-même, quel que soit le vecteur de t"
+        },
+        {
+          "id": "b",
+          "text": "C'est une droite parallèle à D"
+        },
+        {
+          "id": "c",
+          "text": "C'est une droite sécante à D"
+        },
+        {
+          "id": "d",
+          "text": "C'est une droite perpendiculaire à D"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Prenons deux points M et N de la droite D et notons M' et N' leurs images. La propriété caractéristique donne M'N'⃗ = MN⃗ : le vecteur qui dirige la droite des images est le même que celui qui dirige D, donc les deux droites sont parallèles ✓. Affirmer que l'image est toujours D elle-même est faux dès que le vecteur n'est pas dirigé selon D : la droite part alors ailleurs, sur une parallèle distincte. Une image sécante à D est impossible : deux droites de même direction ne se coupent jamais en un seul point. Une image perpendiculaire à D le serait tout autant, car la direction serait alors changée d'un quart de tour, ce qui relève d'une rotation et non d'un glissement.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Les points M et N sont distincts, et M' et N' sont leurs images par une translation dont le vecteur n'est pas colinéaire à MN⃗. Quelle est la nature du quadrilatère MM'N'N ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un parallélogramme"
+        },
+        {
+          "id": "b",
+          "text": "Un rectangle"
+        },
+        {
+          "id": "c",
+          "text": "Un losange"
+        },
+        {
+          "id": "d",
+          "text": "Un trapèze qui n'est pas un parallélogramme"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les deux points sont déplacés du même vecteur, donc MM'⃗ = NN'⃗. Dans le quadrilatère MM'N'N, cela signifie que le côté allant de M vers M' et le côté allant de N vers N' sont égaux comme vecteurs : deux côtés opposés sont parallèles et de même longueur, ce qui caractérise un parallélogramme ✓. L'hypothèse sur le vecteur, non colinéaire à MN⃗, sert seulement à éviter que les quatre points soient alignés. Un rectangle exigerait en plus un angle droit, donc un vecteur perpendiculaire à MN⃗, ce que rien n'impose. Un losange exigerait quatre côtés de même longueur, donc que la longueur du vecteur soit exactement MN. Enfin un trapèze qui n'est pas un parallélogramme aurait deux côtés parallèles de longueurs différentes, alors qu'ici l'égalité des vecteurs impose aussi l'égalité des longueurs.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "A, B et C sont trois points fixes. À tout point M du plan on associe le point M' tel que MM'⃗ = 2MC⃗ − MA⃗ − MB⃗. Cette application est-elle une translation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non : le vecteur MM'⃗ change quand le point M change"
+        },
+        {
+          "id": "b",
+          "text": "Non : la somme des coefficients 2, −1 et −1 étant nulle, aucun vecteur ne convient"
+        },
+        {
+          "id": "c",
+          "text": "Oui : c'est la translation de vecteur AC⃗ + BC⃗"
+        },
+        {
+          "id": "d",
+          "text": "Oui : c'est la translation de vecteur CA⃗ + CB⃗"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On réduit la somme en ramenant tout au point C, avec MA⃗ = MC⃗ + CA⃗ et MB⃗ = MC⃗ + CB⃗. Il vient MM'⃗ = 2MC⃗ − MC⃗ − CA⃗ − MC⃗ − CB⃗ = −CA⃗ − CB⃗ = AC⃗ + BC⃗. Le point M a disparu : le déplacement est le même pour tous les points, donc l'application est la translation de vecteur AC⃗ + BC⃗ ✓. Prétendre que le vecteur change avec M revient à s'arrêter à l'écriture de départ sans faire la réduction, alors que c'est justement elle qui tranche. Invoquer la somme nulle des coefficients pour conclure qu'aucun vecteur ne convient inverse la règle : au chapitre du barycentre cette somme nulle interdisait l'existence d'un point, ici elle garantit au contraire que le vecteur est constant. Enfin CA⃗ + CB⃗ est le vecteur opposé du bon : les flèches y partent de C au lieu d'y arriver, ce qui envoie la figure à l'opposé.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le point I est le milieu du segment [AB]. Une translation transforme A, B et I respectivement en A', B' et I'. Que peut-on dire du point I' ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C'est le milieu de [A'B']"
+        },
+        {
+          "id": "b",
+          "text": "Il est confondu avec I"
+        },
+        {
+          "id": "c",
+          "text": "C'est le barycentre des points pondérés (A', 1) et (B', 2)"
+        },
+        {
+          "id": "d",
+          "text": "C'est un point de [A'B'] dont la position dépend de la longueur du vecteur"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une translation conserve le milieu : l'image du milieu d'un segment est le milieu du segment image, donc I' est le milieu de [A'B'] ✓. On peut le vérifier avec la propriété caractéristique : de A'I'⃗ = AI⃗ et I'B'⃗ = IB⃗, et de AI⃗ = IB⃗, on tire A'I'⃗ = I'B'⃗, ce qui définit exactement le milieu. Dire que I' est confondu avec I supposerait un déplacement nul pour ce point-là seulement, alors que tous les points glissent du même vecteur. Le barycentre de (A', 1) et (B', 2) n'est pas le milieu : il est deux fois plus proche de B' que de A', ce qui reviendrait à changer les coefficients en cours de route, alors qu'une translation les conserve. Enfin faire dépendre la position de I' de la longueur du vecteur oublie que ce vecteur déplace A', B' et I' d'un même mouvement : leurs positions relatives sont intactes.",
+      "difficulty": 2
+    }
+  ]
+}

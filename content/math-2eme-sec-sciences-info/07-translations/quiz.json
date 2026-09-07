@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : Translations",
+  "questions": [
+    {
+      "prompt": "Le point M' est l'image du point M par la translation de vecteur u⃗. Quelle égalité vectorielle traduit exactement cette situation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "M'M⃗ = u⃗"
+        },
+        {
+          "id": "b",
+          "text": "MM'⃗ = u⃗"
+        },
+        {
+          "id": "c",
+          "text": "MM'⃗ = 2u⃗"
+        },
+        {
+          "id": "d",
+          "text": "MM'⃗ est colinéaire à u⃗"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La définition dit que M' est l'unique point tel que le vecteur allant de M vers M' soit égal à u⃗ : on écrit donc MM'⃗ = u⃗ ✓. L'écriture M'M⃗ = u⃗ lit la flèche à l'envers, de l'image vers l'antécédent : elle décrit la translation de vecteur opposé, qui ramène M' sur M. L'écriture MM'⃗ = 2u⃗ double la longueur du déplacement ; le facteur 2 n'apparaît que dans un autre contexte, celui de deux symétries centrales enchaînées. Enfin exiger seulement que MM'⃗ soit colinéaire à u⃗ est trop faible : cette condition autorise n'importe quelle longueur et même le sens contraire, alors qu'une translation impose la même direction, le même sens et la même longueur pour tous les points.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "A et B désignent deux points fixes et distincts du plan. Parmi ces applications du plan dans lui-même, laquelle est une translation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'application qui à tout point M associe son symétrique par rapport au point A"
+        },
+        {
+          "id": "b",
+          "text": "L'application qui à tout point M associe son symétrique par rapport à la droite (AB)"
+        },
+        {
+          "id": "c",
+          "text": "L'application qui à tout point M associe son image par le quart de tour direct de centre A"
+        },
+        {
+          "id": "d",
+          "text": "L'application qui à tout point M associe le point M' tel que MM'⃗ = AB⃗"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une translation se reconnaît à ceci que le vecteur allant de chaque point à son image est le MÊME pour tous les points. C'est le cas quand on impose MM'⃗ = AB⃗ : le vecteur AB⃗ est fixé une fois pour toutes par les deux points donnés, donc l'application est bien la translation de vecteur AB⃗ ✓. La symétrie par rapport au point A est une application du plan, mais son vecteur de déplacement change avec M : il vaut 2MA⃗, qui dépend de la position de M et s'annule même en A. La symétrie par rapport à une droite renvoie chaque point de l'autre côté de l'axe, avec un déplacement perpendiculaire à l'axe dont la longueur varie selon l'éloignement du point. Le quart de tour fait tourner la figure autour de A : les directions sont modifiées, ce qu'une translation ne fait jamais.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La translation de vecteur u⃗ transforme le point M en M' et le point N en N'. Que vaut le vecteur M'N'⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u⃗"
+        },
+        {
+          "id": "b",
+          "text": "NM⃗"
+        },
+        {
+          "id": "c",
+          "text": "MN⃗"
+        },
+        {
+          "id": "d",
+          "text": "MN⃗ + u⃗"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "C'est la propriété caractéristique du chapitre : une translation transporte le vecteur qui joint deux points sans le modifier, donc M'N'⃗ = MN⃗ ✓. Répondre u⃗ confond le vecteur de la translation, qui relie chaque point à SON image, avec le vecteur qui relie les deux images entre elles : u⃗ vaut MM'⃗ et NN'⃗, pas M'N'⃗. Répondre NM⃗ inverse l'ordre des deux points et donne le vecteur opposé, alors que l'ordre des lettres se conserve d'un bout à l'autre. Enfin MN⃗ + u⃗ ajoute une fois de trop le déplacement : en écrivant M'N'⃗ = M'M⃗ + MN⃗ + NN'⃗ = −u⃗ + MN⃗ + u⃗, on voit que les deux vecteurs u⃗ se compensent et qu'il ne reste que MN⃗.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le triangle ABC a pour périmètre 18 cm. Une translation dont le vecteur mesure 5 cm de longueur le transforme en le triangle A'B'C'. Quel est le périmètre de A'B'C' ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "18 cm"
+        },
+        {
+          "id": "b",
+          "text": "23 cm"
+        },
+        {
+          "id": "c",
+          "text": "36 cm"
+        },
+        {
+          "id": "d",
+          "text": "Il dépend de la direction choisie pour le vecteur"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une translation conserve les distances : A'B' = AB, B'C' = BC et C'A' = CA. En additionnant ces trois égalités, le périmètre du triangle image vaut exactement celui du triangle de départ, soit 18 cm ✓. La valeur 23 cm ajoute la longueur du vecteur au périmètre, comme si le déplacement s'accumulait aux côtés ; or le vecteur dit seulement OÙ la figure est allée, pas comment elle a changé de taille. La valeur 36 cm double le périmètre, ce que ferait un agrandissement, pas un glissement. Quant à faire dépendre le résultat de la direction du vecteur, cela reviendrait à admettre qu'une translation déforme la figure selon le sens où on la pousse : l'image d'un polygone lui est au contraire toujours superposable.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur la figure, C est un cercle de centre O et u⃗ est un vecteur ; les longueurs indiquées sont celles du rayon et du vecteur. Quelle est l'image du cercle C par la translation de vecteur u⃗ ?\n<svg viewBox=\"0 0 300 180\"><circle cx=\"90\" cy=\"95\" r=\"45\" fill=\"#0f6e56\" opacity=\"0.10\"/><circle cx=\"90\" cy=\"95\" r=\"45\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><path d=\"M90 95 L90 50\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><circle cx=\"90\" cy=\"95\" r=\"4\" fill=\"#0f172a\"/><path d=\"M200 140 L239 88\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\"/><polygon points=\"245,80 242.6,90.7 235.4,85.3\" fill=\"#0f6e56\"/><g font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"79\" y=\"112\" fill=\"#0f172a\">O</text><text x=\"114\" y=\"70\" fill=\"#0f172a\">3 cm</text><text x=\"90\" y=\"158\" fill=\"#0f172a\">C</text><text x=\"188\" y=\"110\" fill=\"#0f6e56\">5 cm</text><text x=\"258\" y=\"74\" fill=\"#0f6e56\">u⃗</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le cercle de rayon 3 cm dont le centre est l'image de O"
+        },
+        {
+          "id": "b",
+          "text": "Le cercle de rayon 3 cm et de centre O"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle de rayon 5 cm dont le centre est l'image de O"
+        },
+        {
+          "id": "d",
+          "text": "Le cercle de rayon 8 cm dont le centre est l'image de O"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La figure donne un rayon de 3 cm et un vecteur de 5 cm. L'image d'un cercle par une translation est un cercle de MÊME rayon, dont le centre est l'image du centre : le cercle cherché a donc un rayon de 3 cm et un centre déplacé du vecteur u⃗ ✓. Garder le centre en O reviendrait à dire que le centre est un point invariant, alors qu'aucun point ne reste en place quand le vecteur n'est pas nul. Un rayon de 5 cm recopie la longueur du vecteur à la place de celle du rayon, deux grandeurs qui n'ont rien à voir. Un rayon de 8 cm additionne les deux nombres lus sur la figure, comme si le déplacement gonflait le cercle ; une translation ne fait que glisser, elle n'agrandit rien.",
+      "difficulty": 2
+    }
+  ]
+}

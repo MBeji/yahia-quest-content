@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Sens, perpendicularité et invariance",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Une rotation d'angle π/2 transforme la droite (D) en la droite (D′). Que peut-on affirmer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(D′) est perpendiculaire à (D)"
+        },
+        {
+          "id": "b",
+          "text": "(D′) est parallèle à (D)"
+        },
+        {
+          "id": "c",
+          "text": "(D′) est confondue avec (D)"
+        },
+        {
+          "id": "d",
+          "text": "(D′) passe par le centre de la rotation"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'image d'une droite par un quart de tour lui est perpendiculaire : c'est le cas particulier à retenir du catalogue des images ✓. Le parallélisme, lui, est le résultat que donneraient un glissement ou un agrandissement, transformations qui ne font pas pivoter les directions. La droite image ne peut être confondue avec (D) que si (D) est globalement invariante, ce qu'un quart de tour n'autorise pour aucune droite. Enfin rien n'oblige (D′) à passer par le centre de la rotation : cela n'arrive que si (D) y passait déjà, et l'énoncé ne le dit pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "ABC est un triangle équilatéral de centre O. La rotation directe r de centre O et d'angle 2π/3 vérifie r(A) = B. Quelle est l'image de la droite (AB) par r ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(AB)"
+        },
+        {
+          "id": "b",
+          "text": "(AC)"
+        },
+        {
+          "id": "c",
+          "text": "(BC)"
+        },
+        {
+          "id": "d",
+          "text": "La parallèle à (AB) passant par C"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une rotation d'angle 2π/3 autour du centre d'un triangle équilatéral fait glisser chaque sommet sur le suivant, dans le sens indiqué. Puisque r(A) = B, on a aussi r(B) = C, et l'image de la droite (AB) est donc la droite qui joint les images de A et de B, c'est-à-dire (BC) ✓. La droite (AC) s'obtiendrait en tournant dans l'autre sens, cas où l'image de A serait C. La droite (AB) elle-même supposerait une invariance globale, alors que ses deux extrémités se déplacent. Quant à la parallèle à (AB) passant par C, elle contredit le fait qu'une rotation d'angle 2π/3 change la direction des droites : seul l'angle nul ou un glissement conserverait le parallélisme.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un carré de centre O est globalement invariant par la rotation directe de centre O et d'angle α, où α appartient à ]0 ; π[. Quelles valeurs peut prendre α ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "π/4, π/2 et 3π/4"
+        },
+        {
+          "id": "b",
+          "text": "π/2 et π"
+        },
+        {
+          "id": "c",
+          "text": "π uniquement"
+        },
+        {
+          "id": "d",
+          "text": "π/2 uniquement"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un sommet doit se poser sur un sommet, et les quatre sommets d'un carré ne sont espacés que de quarts de tour. Dans l'intervalle donné, seul le quart de tour direct convient : α = π/2 ✓. ⚠️ Le demi-tour laisse lui aussi le carré invariant — il échange chaque sommet avec le sommet opposé — mais π N'APPARTIENT PAS à ]0 ; π[, qui est ouvert : c'est le cas de bord, et il porte déjà un nom, la symétrie centrale de centre O. C'est précisément ce que dit « le carré admet O pour centre de symétrie ». Répondre « π/2 et π » revient donc à sortir de l'intervalle que l'énoncé impose. Répondre « π uniquement » cumule cette sortie avec l'oubli du quart de tour. Quant à π/4 et 3π/4, ces deux valeurs déposent chaque sommet à mi-chemin entre deux sommets, sur le cercle circonscrit mais hors du carré : croire que tout multiple de π/4 marche, c'est oublier de vérifier où atterrit un sommet.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Sur la figure, le quart de tour direct de centre O envoie A sur B et C sur D. Que peut-on dire des segments [AC] et [BD] ?\n<svg viewBox=\"0 0 330 220\"><path d=\"M160 125 L255.16 169.37 M160 125 L204.37 29.84\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M160 125 L101.74 146.21 M160 125 L181.21 183.26\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\"/><path d=\"M172.69 130.92 L178.6 118.23 L165.92 112.31\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M146.84 129.79 L151.63 142.94 L164.79 138.16\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><g fill=\"#0f172a\"><circle cx=\"160\" cy=\"125\" r=\"4.5\"/><circle cx=\"255.16\" cy=\"169.37\" r=\"4.5\"/><circle cx=\"204.37\" cy=\"29.84\" r=\"4.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"101.74\" cy=\"146.21\" r=\"4.5\"/><circle cx=\"181.21\" cy=\"183.26\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"134\" y=\"140\" fill=\"#0f172a\">O</text><text x=\"266\" y=\"176\" fill=\"#0f172a\">A</text><text x=\"206\" y=\"22\" fill=\"#0f172a\">B</text><text x=\"88\" y=\"152\" fill=\"#0f6e56\">C</text><text x=\"190\" y=\"202\" fill=\"#0f6e56\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "AC = BD et (AC) ⊥ (BD)"
+        },
+        {
+          "id": "b",
+          "text": "AC = BD et (AC) ∥ (BD)"
+        },
+        {
+          "id": "c",
+          "text": "AC ≠ BD et (AC) ⊥ (BD)"
+        },
+        {
+          "id": "d",
+          "text": "AC = 2 × BD et (AC) ⊥ (BD)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le quart de tour envoie A sur B et C sur D : il envoie donc le segment [AC] sur le segment [BD]. Deux propriétés se lisent alors d'un coup. La conservation des distances donne BD = AC ✓, et l'image d'une droite par un quart de tour lui étant perpendiculaire, on obtient (BD) ⊥ (AC) ✓. Annoncer un parallélisme est le piège courant : il faudrait un angle nul, alors que l'angle vaut ici π/2. Annoncer des longueurs différentes contredit la conservation des distances, qu'aucune rotation ne met en défaut. Annoncer un rapport 2 introduit un coefficient d'agrandissement qu'une rotation ne possède pas.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La rotation directe de centre O et d'angle π/4 transforme le triangle T en T′. Un angle de T mesure π/3. Combien mesure l'angle homologue de T′ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7π/12"
+        },
+        {
+          "id": "b",
+          "text": "π/3"
+        },
+        {
+          "id": "c",
+          "text": "π/4"
+        },
+        {
+          "id": "d",
+          "text": "π/12"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une rotation conserve les angles : l'angle homologue mesure donc encore π/3 ✓, et l'angle de la rotation n'intervient pas dans ce calcul. La valeur 7π/12 vient de la somme π/3 + π/4, le piège courant du chapitre : on ajoute l'angle du mouvement à l'angle de la figure, alors que le premier décrit un déplacement et le second une forme. La valeur π/12 vient de la différence π/3 − π/4, la même confusion au signe près. Quant à π/4, elle remplace purement et simplement l'angle de la figure par celui de la rotation.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "A et B sont deux points d'un cercle de centre O. La rotation directe de centre O et d'angle π/3 envoie A sur B. Quelle rotation envoie B sur A ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La rotation directe de centre O et d'angle π/3"
+        },
+        {
+          "id": "b",
+          "text": "La rotation indirecte de centre O et d'angle π/3"
+        },
+        {
+          "id": "c",
+          "text": "La rotation directe de centre O et d'angle 2π/3"
+        },
+        {
+          "id": "d",
+          "text": "La symétrie centrale de centre O"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Revenir de B vers A, c'est parcourir le même angle géométrique π/3, mais en sens inverse : la transformation cherchée est la rotation indirecte de centre O et d'angle π/3 ✓. Garder le sens direct avec le même angle ferait au contraire avancer B d'un cran de plus, jusqu'à un point situé à 2π/3 de A. Doubler l'angle en gardant le sens direct conduirait encore plus loin, au point diamétralement opposé à A. Quant à la symétrie centrale, elle correspond à l'angle π : elle enverrait B sur le point qui lui est diamétralement opposé, et non sur A.",
+      "difficulty": 3
+    }
+  ]
+}

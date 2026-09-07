@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Radians, centre, angle et sens",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Quelle est la mesure en radians d'un angle de 72° ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2π/5"
+        },
+        {
+          "id": "b",
+          "text": "2π/3"
+        },
+        {
+          "id": "c",
+          "text": "4π/5"
+        },
+        {
+          "id": "d",
+          "text": "5π/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour passer des degrés aux radians, on multiplie par π/180, puisque 180° et π radians désignent le même angle plat. Ici 72 × π/180 = 72π/180, fraction qui se simplifie par 36 et donne 2π/5 ✓. La valeur 2π/3 vient d'une simplification bâclée, où l'on divise le numérateur par 36 mais le dénominateur par 60. La valeur 4π/5 vient d'une division par 90 : c'est l'angle droit qui a servi de référence à la place de l'angle plat. La valeur 5π/2 retourne la fraction et dépasse largement π, ce qui est impossible pour un angle plus petit qu'un angle plat.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un angle mesure π/8 radians. Quelle est sa mesure en degrés ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8°"
+        },
+        {
+          "id": "b",
+          "text": "11,25°"
+        },
+        {
+          "id": "c",
+          "text": "22,5°"
+        },
+        {
+          "id": "d",
+          "text": "45°"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour revenir aux degrés, on multiplie par 180/π, ce qui fait disparaître le π : (π/8) × (180/π) = 180/8 = 22,5° ✓. La valeur 45° vient de 360/8 : on a pris le tour complet comme référence alors que c'est l'angle plat, 180°, qui vaut π. La valeur 11,25° correspond à 180/16 : la division par 8 a été faite deux fois. La valeur 8° recopie simplement le dénominateur, comme si le symbole π pouvait être effacé sans rien changer.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur un cercle de rayon 10 cm, quelle est la longueur de l'arc intercepté par un angle au centre de mesure 2π/3 radians ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "π/15 cm"
+        },
+        {
+          "id": "b",
+          "text": "10π/3 cm"
+        },
+        {
+          "id": "c",
+          "text": "20π/3 cm"
+        },
+        {
+          "id": "d",
+          "text": "20π cm"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La mesure en radians d'un angle est le rapport de la longueur de l'arc au rayon, donc la longueur de l'arc vaut L = r × α. Ici L = 10 × 2π/3 = 20π/3 cm, soit environ 20,9 cm ✓, une valeur plus petite que le demi-périmètre 10π cm, ce qui est cohérent puisque 2π/3 est plus petit que π. La valeur 10π/3 cm vient d'un rayon divisé par deux, comme si l'énoncé avait donné le diamètre. La valeur 20π cm oublie de diviser par 3, c'est-à-dire prend l'angle 2π au lieu de 2π/3. Enfin π/15 cm vient d'une division de l'angle par le rayon au lieu d'une multiplication.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une rotation transforme le triangle ABC en A′B′C′. On sait que AB = 7 cm et que l'angle BÂC mesure π/3. Que peut-on affirmer sur le triangle image ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A′B′ = 7 cm et l'angle B′Â′C′ mesure π/3"
+        },
+        {
+          "id": "b",
+          "text": "A′B′ = 7 cm et la mesure de l'angle B′Â′C′ dépend de l'angle de la rotation"
+        },
+        {
+          "id": "c",
+          "text": "La longueur A′B′ dépend de l'angle de la rotation et l'angle B′Â′C′ mesure π/3"
+        },
+        {
+          "id": "d",
+          "text": "A′B′ = 14 cm et l'angle B′Â′C′ mesure 2π/3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une rotation déplace la figure sans la déformer : elle conserve à la fois les distances et les angles. La longueur reste donc 7 cm et l'angle garde la mesure π/3 ✓, et cela quel que soit l'angle de la rotation. Prétendre que la mesure de l'angle image dépend de l'angle de la rotation confond l'angle qui décrit le mouvement avec les angles de la figure transportée : le premier ne s'ajoute jamais aux seconds. Prétendre que la longueur en dépend contredit la conservation des distances, qui est la propriété fondatrice du chapitre. Enfin doubler les deux valeurs décrirait un agrandissement, transformation d'une tout autre nature.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Les points O, A et B sont distincts deux à deux et vérifient OA = OB. Combien existe-t-il de rotations de centre O qui transforment A en B ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucune, si l'angle AÔB n'est pas droit"
+        },
+        {
+          "id": "b",
+          "text": "Deux : une directe et une indirecte"
+        },
+        {
+          "id": "c",
+          "text": "Une infinité"
+        },
+        {
+          "id": "d",
+          "text": "Une seule"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'égalité OA = OB est exactement la condition qui rend la rotation possible, puisqu'une rotation conserve la distance au centre. Elle étant vérifiée, l'angle géométrique AÔB fixe la mesure de l'angle cherché, et la position de B impose le sens : un seul des deux sens amène A sur B, l'autre conduit ailleurs. Il existe donc une unique rotation ✓. Compter deux solutions, une directe et une indirecte, revient à oublier que le second sens rate la cible. Compter une infinité de solutions oublie que la mesure est imposée. Enfin exiger un angle droit ajoute une condition dont le résultat n'a nul besoin : il vaut pour tout angle AÔB.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur la figure ci-dessous, A et B appartiennent au cercle de centre O et l'angle AÔB est droit. Quelle transformation envoie A sur B ?\n<svg viewBox=\"0 0 320 250\"><circle cx=\"160\" cy=\"135\" r=\"95\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M160 135 L242.27 182.5 M160 135 L207.5 52.73\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M172.12 142 L179.12 129.88 L167 122.88\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><g fill=\"#0f172a\"><circle cx=\"160\" cy=\"135\" r=\"4.5\"/><circle cx=\"242.27\" cy=\"182.5\" r=\"4.5\"/><circle cx=\"207.5\" cy=\"52.73\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"148\" y=\"154\" fill=\"#0f172a\">O</text><text x=\"254\" y=\"196\" fill=\"#0f172a\">A</text><text x=\"218\" y=\"44\" fill=\"#0f172a\">B</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La rotation directe de centre O et d'angle π/4"
+        },
+        {
+          "id": "b",
+          "text": "Le quart de tour direct de centre O"
+        },
+        {
+          "id": "c",
+          "text": "Le quart de tour indirect de centre O"
+        },
+        {
+          "id": "d",
+          "text": "La symétrie centrale de centre O"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'angle AÔB étant droit, il mesure π/2 : la transformation cherchée est donc un quart de tour de centre O. Reste le sens. Sur la figure, on passe de A à B en tournant dans le sens contraire des aiguilles d'une montre, c'est-à-dire dans le sens direct : c'est le quart de tour direct ✓. Le quart de tour indirect enverrait A sur le point diamétralement opposé à B. La rotation d'angle π/4 ne balaierait que la moitié de l'angle marqué sur la figure. Quant à la symétrie centrale, elle correspond à l'angle π et enverrait A sur le point qui lui est diamétralement opposé.",
+      "difficulty": 2
+    }
+  ]
+}
