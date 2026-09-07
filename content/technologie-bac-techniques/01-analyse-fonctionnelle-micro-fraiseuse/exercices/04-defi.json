@@ -1,0 +1,185 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : de la prise secteur au chariot",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "manuel": {
+    "pages": "13, 16, 18",
+    "items": [
+      "A. chaînes fonctionnelles",
+      "C.2 F.A.S.T. de FT4"
+    ]
+  },
+  "questions": [
+    {
+      "type": "ordering",
+      "prompt": "Sur la micro-fraiseuse, l'énergie part du réseau électrique et finit par déplacer le chariot transversal. Remets ces cinq étapes dans l'ordre où elles se succèdent.\n<svg viewBox=\"0 0 232 180\"><rect x=\"108\" y=\"10\" width=\"110\" height=\"20\" rx=\"3\" fill=\"#bfdbfe\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"8\" y=\"44\" width=\"44\" height=\"36\" rx=\"3\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"58\" y=\"52\" width=\"22\" height=\"20\" rx=\"3\" fill=\"#0f6e56\" opacity=\"0.18\"/><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"><rect x=\"58\" y=\"52\" width=\"22\" height=\"20\" rx=\"3\"/><rect x=\"142\" y=\"30\" width=\"32\" height=\"54\" rx=\"3\"/><rect x=\"16\" y=\"80\" width=\"26\" height=\"80\" rx=\"2\"/><rect x=\"202\" y=\"50\" width=\"14\" height=\"110\" rx=\"2\"/><rect x=\"76\" y=\"124\" width=\"76\" height=\"36\" rx=\"3\"/><rect x=\"166\" y=\"128\" width=\"48\" height=\"32\" rx=\"3\"/><rect x=\"4\" y=\"160\" width=\"224\" height=\"12\" rx=\"2\"/><path d=\"M52 62 H58\"/></g><path d=\"M80 62 H210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3\"/><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"><path d=\"M88 54 L95 70\"/><path d=\"M102 54 L109 70\"/><path d=\"M116 54 L123 70\"/><path d=\"M130 54 L137 70\"/><path d=\"M144 54 L151 70\"/><path d=\"M158 54 L165 70\"/><path d=\"M172 54 L179 70\"/><path d=\"M186 54 L193 70\"/><path d=\"M200 54 L207 70\"/></g><g font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"163\" y=\"24\">chariot</text><text x=\"30\" y=\"66\">moteur</text></g><g font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"158\" y=\"48\">noix</text><text x=\"69\" y=\"40\">accouplement</text><text x=\"120\" y=\"102\">vis de manœuvre</text></g><g font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"114\" y=\"140\">carte de</text><text x=\"114\" y=\"153\">puissance</text><text x=\"190\" y=\"142\">prise</text><text x=\"190\" y=\"154\">secteur</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La prise secteur met l'énergie du réseau à la disposition de la machine"
+        },
+        {
+          "id": "b",
+          "text": "La carte de puissance dirige l'énergie électrique vers le moteur du chariot"
+        },
+        {
+          "id": "c",
+          "text": "Le moteur transforme l'énergie électrique en un mouvement de rotation"
+        },
+        {
+          "id": "d",
+          "text": "L'accouplement transmet la rotation de l'arbre moteur à la vis de manœuvre"
+        },
+        {
+          "id": "e",
+          "text": "La noix, engagée sur la vis, entraîne le chariot en translation"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "C'est l'ordre même de la chaîne d'énergie : Alimenter avec la prise secteur, Distribuer avec la carte de puissance, Convertir avec le moteur, puis Transmettre avec l'accouplement, la vis et la noix ✓. Chaque étape a besoin de la précédente : on ne distribue que de l'énergie déjà disponible, on ne convertit que de l'énergie reçue, et rien ne se transmet tant que le moteur n'a pas tourné. Le seul changement de nature de l'énergie a lieu à la troisième étape, d'électrique en mécanique.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces éléments de la micro-fraiseuse, lesquels appartiennent à la chaîne d'information ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les boutons poussoirs et les capteurs"
+        },
+        {
+          "id": "b",
+          "text": "Le microprocesseur"
+        },
+        {
+          "id": "c",
+          "text": "L'écran et les voyants"
+        },
+        {
+          "id": "d",
+          "text": "La carte de puissance"
+        },
+        {
+          "id": "e",
+          "text": "Le moteur de broche"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "La chaîne d'information acquiert, traite et communique : les boutons poussoirs et les capteurs acquièrent, le microprocesseur traite, l'écran et les voyants communiquent ✓. La carte de puissance et le moteur de broche, eux, dirigent et transforment de la puissance : ils appartiennent à la chaîne d'énergie. Le critère est là : un élément qui manipule de l'information reste du côté information, même s'il est électrique ; un élément qui manipule de la puissance est du côté énergie.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le moteur qui entraîne le chariot transversal possède deux sorties d'arbre. À quoi sert la seconde ?\n<svg viewBox=\"0 0 232 88\"><rect x=\"48\" y=\"15\" width=\"66\" height=\"50\" rx=\"3\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"130\" y=\"30\" width=\"20\" height=\"20\" rx=\"3\" fill=\"#0f6e56\" opacity=\"0.18\"/><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"><rect x=\"130\" y=\"30\" width=\"20\" height=\"20\" rx=\"3\"/><path d=\"M180 18 V33\"/><path d=\"M140 68 V51\"/></g><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\"><path d=\"M48 40 H14\"/><path d=\"M114 40 H130\"/></g><path d=\"M150 40 H224\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3\"/><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"><path d=\"M156 33 L162 47\"/><path d=\"M168 33 L174 47\"/><path d=\"M180 33 L186 47\"/><path d=\"M192 33 L198 47\"/><path d=\"M204 33 L210 47\"/><path d=\"M216 33 L222 47\"/></g><g font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"81\" y=\"45\">moteur</text></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"24\" y=\"28\">?</text></g><g font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"180\" y=\"14\">vis de manœuvre</text><text x=\"140\" y=\"78\">accouplement</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "à recevoir le volant de manœuvre"
+        },
+        {
+          "id": "b",
+          "text": "à entraîner un second chariot, suivant un autre axe"
+        },
+        {
+          "id": "c",
+          "text": "à refroidir le moteur pendant l'usinage"
+        },
+        {
+          "id": "d",
+          "text": "à mesurer la vitesse de rotation de l'arbre"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'arbre du moteur sort des deux côtés : d'un côté il entraîne la vis de manœuvre par l'accouplement, ce qui donne le déplacement automatique ; de l'autre il reçoit le volant de manœuvre, que l'on tourne à la main pour obtenir le même déplacement sans aucune commande électrique ✓. C'est exactement ce que dit l'arbre F.A.S.T. : « déplacer manuellement le chariot » se réalise en utilisant un moteur à double sorties d'arbre et en tournant l'arbre moteur manuellement.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Sur la micro-fraiseuse, quels sont les deux mouvements de l'outil ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "une translation suivant x et une rotation autour de y"
+        },
+        {
+          "id": "b",
+          "text": "une translation verticale suivant z et une rotation autour de ce même axe z"
+        },
+        {
+          "id": "c",
+          "text": "une rotation autour de z seulement, la translation étant assurée par la table"
+        },
+        {
+          "id": "d",
+          "text": "une translation suivant y et une rotation autour de x"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'outil se déplace verticalement suivant l'axe z et tourne autour de ce même axe ✓ : c'est ce double mouvement qui lui permet à la fois de plonger dans la matière et de la couper. Les translations suivant x et y sont assurées par le chariot transversal et par la table qui porte la pièce, pas par l'outil. Deux mouvements distincts, donc deux fonctions techniques distinctes dans le F.A.S.T. : animer l'outil en rotation, et assurer les déplacements relatifs de l'outil et de la pièce.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le F.A.S.T. du déplacement du chariot, une sous-fonction demande de transmettre le mouvement de rotation de l'arbre moteur à la vis de manœuvre. Quel composant la réalise ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "la noix"
+        },
+        {
+          "id": "b",
+          "text": "le volant de manœuvre"
+        },
+        {
+          "id": "c",
+          "text": "l'accouplement"
+        },
+        {
+          "id": "d",
+          "text": "la semelle"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Entre l'arbre du moteur et la vis de manœuvre, il faut un organe qui relie les deux arbres bout à bout et leur impose la même rotation : c'est l'accouplement, réalisé ici par un manchon ✓. La noix intervient plus loin, sur la vis, pour transformer la rotation en translation ; le volant sert au déplacement manuel ; la semelle est une pièce de structure et ne transmet aucun mouvement.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le F.A.S.T. du déplacement automatique du chariot transversal, la sous-fonction « distribuer l'énergie électrique » précède la sous-fonction « convertir l'énergie ». À quels blocs de la chaîne d'énergie ces deux sous-fonctions correspondent-elles, et quel composant réalise la première ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "aux blocs Alimenter puis Distribuer ; la prise secteur réalise la première"
+        },
+        {
+          "id": "b",
+          "text": "aux blocs Convertir puis Transmettre ; le moteur du chariot réalise la première"
+        },
+        {
+          "id": "c",
+          "text": "aux blocs Distribuer puis Transmettre ; l'accouplement réalise la première"
+        },
+        {
+          "id": "d",
+          "text": "aux blocs Distribuer puis Convertir ; la carte de puissance réalise la première"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le F.A.S.T. descend jusqu'aux sous-fonctions, et chacune porte le nom du bloc de la chaîne d'énergie qui la remplit : « distribuer l'énergie électrique » est le bloc Distribuer, que la carte de puissance assure sur la micro-fraiseuse, et « convertir l'énergie » est le bloc Convertir, tenu par le moteur ✓. La prise secteur est en amont des deux : elle alimente, elle ne distribue rien. L'accouplement est en aval du moteur : il transmet un mouvement déjà mécanique. Et l'ordre du F.A.S.T. suit celui de la chaîne — on ne convertit que l'énergie qu'on a d'abord distribuée.",
+      "difficulty": 3
+    }
+  ]
+}

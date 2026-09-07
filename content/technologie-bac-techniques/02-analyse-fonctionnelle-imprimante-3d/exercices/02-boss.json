@@ -1,0 +1,197 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Transmettre, transformer, convertir — ne plus jamais confondre",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "29-30",
+    "items": [
+      "C. FAST 2",
+      "C. FAST 4"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "L'axe X et l'axe Z utilisent tous les deux un système poulies-courroies, montés comme le montre le schéma ci-dessous. Quelle fonction ce système remplit-il dans chaque cas ?\n<svg viewBox=\"0 0 380 200\"><path d=\"M190 16 V192\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><g stroke=\"#0f172a\" stroke-width=\"4\" fill=\"none\"><path d=\"M26 62 H166\"/><path d=\"M26 80 H166\"/></g><rect x=\"78\" y=\"50\" width=\"40\" height=\"42\" fill=\"#94a3b8\" fill-opacity=\"0.4\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"90\" y=\"92\" width=\"16\" height=\"15\" fill=\"#0f172a\"/><rect x=\"22\" y=\"140\" width=\"36\" height=\"30\" fill=\"#94a3b8\" fill-opacity=\"0.4\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M40 140 V131\" stroke=\"#0f172a\" stroke-width=\"4\"/><circle cx=\"40\" cy=\"120\" r=\"13\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"152\" cy=\"120\" r=\"13\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M90 107 H40 A13 13 0 0 0 40 133 H152 A13 13 0 0 0 152 107 H106\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3\"/><rect x=\"214\" y=\"140\" width=\"38\" height=\"30\" fill=\"#94a3b8\" fill-opacity=\"0.4\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M233 140 V131\" stroke=\"#0f172a\" stroke-width=\"4\"/><path d=\"M340 44 V133\" stroke=\"#94a3b8\" stroke-width=\"7\"/><path d=\"M340 44 V133\" stroke=\"#0f172a\" stroke-width=\"7\" stroke-dasharray=\"3 5\"/><circle cx=\"233\" cy=\"120\" r=\"13\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"340\" cy=\"120\" r=\"13\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M233 107 H340 A13 13 0 0 1 340 133 H233 A13 13 0 0 1 233 107 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3\"/><g font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\"><text x=\"96\" y=\"28\">axe X</text><text x=\"286\" y=\"28\">axe Z</text></g><g font-size=\"10\" fill=\"#0f172a\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"98\" y=\"45\">tête d'impression</text><text x=\"110\" y=\"152\">courroie</text><text x=\"40\" y=\"188\">moteur</text><text x=\"340\" y=\"36\">tige filetée</text><text x=\"290\" y=\"152\">courroie</text><text x=\"233\" y=\"188\">moteur</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sur X il transforme la rotation en translation de la tête ; sur Z il transmet la rotation aux tiges filetées"
+        },
+        {
+          "id": "b",
+          "text": "Sur X il transmet la rotation à la platine ; sur Z il transforme la rotation en translation du plateau"
+        },
+        {
+          "id": "c",
+          "text": "Dans les deux cas il transforme la rotation du moteur en translation de l'organe entraîné"
+        },
+        {
+          "id": "d",
+          "text": "Dans les deux cas il se contente de transmettre la rotation, sans jamais la transformer"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sur l'axe X, la courroie crantée est fixée sur la tête d'impression : la rotation de la poulie devient directement la translation de la tête, donc le système transforme le mouvement. Sur l'axe Z, la courroie relie l'arbre du moteur aux deux tiges filetées : à l'entrée une rotation, à la sortie encore une rotation — il ne fait que la transmettre ✓, et c'est le couple tige filetée + écrou T8 qui transformera ensuite. Le piège courant est de croire qu'un même composant remplit toujours la même fonction : c'est le montage, pas la pièce, qui décide. Répondre « dans les deux cas » revient à ignorer que sur Z le mouvement reste une rotation à la sortie de la courroie.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le bloc d'alimentation reçoit du secteur une tension U = 220 V AC et délivre une tension UE = 24 V DC. Quelle fonction de la chaîne d'énergie remplit-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alimenter"
+        },
+        {
+          "id": "b",
+          "text": "Distribuer"
+        },
+        {
+          "id": "c",
+          "text": "Convertir"
+        },
+        {
+          "id": "d",
+          "text": "Transmettre"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Alimenter, c'est la mise en forme de l'énergie externe en une énergie compatible avec le système : passer du 220 V AC du secteur au 24 V DC exigé par la carte et les moteurs, c'est exactement cela ✓. Le piège courant est de lire « il convertit l'alternatif en continu, donc c'est Convertir ». Non : dans le vocabulaire de la chaîne d'énergie, Convertir désigne le changement de nature de l'énergie opéré par l'actionneur — électrique vers mécanique, ou électrique vers thermique. Ici l'énergie reste électrique de bout en bout, seule sa forme change. Distribuer viendra ensuite, avec le contrôleur de moteur pas à pas.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Le schéma ci-dessous montre le sous-ensemble d'axe Z de l'imprimante. Associe chaque sous-fonction de FT4 « déplacer le plateau mobile (7) suivant l'axe Z » au composant qui l'assure.\n<svg viewBox=\"0 0 380 340\"><g stroke=\"#0f172a\" stroke-width=\"6\" fill=\"none\"><path d=\"M74 60 V280\"/><path d=\"M306 60 V280\"/></g><g stroke=\"#94a3b8\" stroke-width=\"7\" fill=\"none\"><path d=\"M138 60 V247\"/><path d=\"M242 60 V247\"/><path d=\"M190 60 V284\"/></g><g stroke=\"#0f172a\" stroke-width=\"7\" stroke-dasharray=\"3 5\" fill=\"none\"><path d=\"M138 60 V247\"/><path d=\"M242 60 V247\"/><path d=\"M190 60 V284\"/></g><rect x=\"54\" y=\"140\" width=\"272\" height=\"14\" fill=\"#94a3b8\" fill-opacity=\"0.45\" stroke=\"#0f172a\" stroke-width=\"2\"/><g fill=\"#94a3b8\" fill-opacity=\"0.7\" stroke=\"#0f172a\" stroke-width=\"2\"><rect x=\"63\" y=\"121\" width=\"22\" height=\"32\"/><rect x=\"295\" y=\"121\" width=\"22\" height=\"32\"/></g><g fill=\"#0f6e56\" fill-opacity=\"0.35\" stroke=\"#0f172a\" stroke-width=\"2\"><rect x=\"129\" y=\"121\" width=\"18\" height=\"32\"/><rect x=\"181\" y=\"121\" width=\"18\" height=\"32\"/><rect x=\"233\" y=\"121\" width=\"18\" height=\"32\"/></g><g fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"#0f172a\" stroke-width=\"2\"><circle cx=\"138\" cy=\"232\" r=\"15\"/><circle cx=\"190\" cy=\"232\" r=\"15\"/><circle cx=\"242\" cy=\"232\" r=\"15\"/></g><path d=\"M138 217 H242 A15 15 0 0 1 242 247 H138 A15 15 0 0 1 138 217 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3\"/><rect x=\"168\" y=\"284\" width=\"44\" height=\"32\" fill=\"#94a3b8\" fill-opacity=\"0.4\" stroke=\"#0f172a\" stroke-width=\"2\"/><g stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"><path d=\"M74 48 V60\"/><path d=\"M242 48 V60\"/><path d=\"M190 116 V121\"/><path d=\"M74 179 V157\"/><path d=\"M270 179 V157\"/></g><g font-size=\"10\" fill=\"#0f172a\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"74\" y=\"44\">colonne de guidage</text><text x=\"242\" y=\"44\">tige filetée T8</text><text x=\"190\" y=\"112\">écrou T8</text><text x=\"74\" y=\"190\">douille à billes</text><text x=\"270\" y=\"190\">plateau mobile (7)</text><text x=\"190\" y=\"268\">poulies-courroie</text></g><text x=\"190\" y=\"334\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">moteur d'axe Z à arbre fileté</text></svg>",
+      "options": [
+        {
+          "id": "l1",
+          "text": "FT41 : convertir l'énergie électrique en énergie mécanique de rotation"
+        },
+        {
+          "id": "l2",
+          "text": "FT42 : transmettre la rotation de l'arbre moteur aux deux tiges filetées"
+        },
+        {
+          "id": "l3",
+          "text": "FT43 : transformer la rotation en translation du plateau mobile (7)"
+        },
+        {
+          "id": "l4",
+          "text": "FT44 : guider en translation le plateau mobile (7)"
+        },
+        {
+          "id": "r1",
+          "text": "Les deux colonnes de guidage d'axe Z et leurs douilles à billes"
+        },
+        {
+          "id": "r2",
+          "text": "Les tiges filetées T8 et les trois écrous T8 solidaires du plateau"
+        },
+        {
+          "id": "r3",
+          "text": "Le moteur d'axe Z à arbre fileté"
+        },
+        {
+          "id": "r4",
+          "text": "Le système poulies-courroies d'axe Z"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r3"
+          ],
+          [
+            "l2",
+            "r4"
+          ],
+          [
+            "l3",
+            "r2"
+          ],
+          [
+            "l4",
+            "r1"
+          ]
+        ]
+      },
+      "explanation": "FT41 demande de créer le mouvement à partir de l'électricité : seul un actionneur le fait, ici le moteur d'axe Z à arbre fileté. FT42 demande d'emmener cette rotation ailleurs sans la modifier : c'est le rôle du système poulies-courroies, qui relie l'arbre moteur aux deux tiges filetées. FT43 demande de changer la nature du mouvement : le couple tige filetée T8 + écrou T8 fait passer de la rotation à la translation, et comme les trois écrous sont assemblés sur le plateau, c'est le plateau qui monte et descend. FT44 ne concerne plus le mouvement mais sa direction : les colonnes de guidage d'axe Z et leurs douilles à billes imposent la trajectoire rectiligne ✓. La confusion à éviter reste FT42 contre FT43 : la courroie transmet une rotation, la vis la transforme.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le schéma ci-dessous montre l'entraînement du fil dans la tête d'impression. Quelle sous-fonction de FT21 « alimenter en fil d'impression » ce couple de galets assure-t-il ?\n<svg viewBox=\"0 0 260 205\"><path d=\"M130 16 V166\" stroke=\"#0f6e56\" stroke-width=\"6\" stroke-linecap=\"round\"/><path d=\"M123 164 L130 182 L137 164 Z\" fill=\"#0f6e56\"/><circle cx=\"92\" cy=\"100\" r=\"34\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"92\" cy=\"100\" r=\"31\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-dasharray=\"4 6\"/><circle cx=\"168\" cy=\"100\" r=\"34\" fill=\"#94a3b8\" fill-opacity=\"0.35\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M44 100 A 48 48 0 0 1 92 52\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><path d=\"M85 45 L98 52 L85 59 Z\" fill=\"#0f172a\"/><g font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"68\" y=\"156\">galet cranté</text><text x=\"192\" y=\"178\">galet presseur</text><text x=\"130\" y=\"200\">filament</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "FT211 : convertir l'énergie électrique en énergie mécanique de rotation"
+        },
+        {
+          "id": "b",
+          "text": "FT212 : guider le fil d'impression"
+        },
+        {
+          "id": "c",
+          "text": "FT213 : transformer la rotation en translation du filament"
+        },
+        {
+          "id": "d",
+          "text": "FT23 : calibrer la section de la matière fondue"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Regarde ce qui entre et ce qui sort du couple de galets : à l'entrée une rotation, à la sortie un fil qui avance en ligne droite. La nature du mouvement a changé, donc il s'agit bien d'une transformation ✓ — obtenue ici par adhérence, et non par un engrenage ou une vis. Convertir l'énergie électrique en rotation est le travail du moteur pas à pas, situé en amont des galets. Guider le fil est assuré par les tubes guides en PTFE, qui l'accompagnent sans l'entraîner. Et calibrer la section n'a rien à voir avec l'entraînement : c'est la buse qui le fait, tout en bas de la tête, sur de la matière déjà fondue.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Depuis le bloc Distribuer, une seconde branche de la chaîne d'énergie alimente une résistance chauffante. Quelle fonction cette résistance remplit-elle, et quelle énergie produit-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alimenter — elle produit de l'énergie électrique"
+        },
+        {
+          "id": "b",
+          "text": "Convertir — elle produit de l'énergie mécanique"
+        },
+        {
+          "id": "c",
+          "text": "Convertir — elle produit de l'énergie thermique"
+        },
+        {
+          "id": "d",
+          "text": "Transmettre — elle produit de l'énergie thermique"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La résistance chauffante reçoit de l'énergie électrique et en fait de la chaleur : elle change la nature de l'énergie, elle occupe donc la fonction Convertir ✓, sur une seconde branche parallèle à celle des moteurs. C'est la leçon de cette branche : un actionneur ne produit pas forcément du mouvement. Répondre « énergie mécanique » revient à recopier la branche des moteurs sans regarder ce qui sort ici. Transmettre ne produit aucune énergie nouvelle, il achemine ; et Alimenter est en amont de Distribuer, jamais en aval.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La thermistance est vissée sur la partie la plus chaude de la tête d'impression. À quelle chaîne fonctionnelle et à quel bloc appartient-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À la chaîne d'énergie, bloc Convertir"
+        },
+        {
+          "id": "b",
+          "text": "À la chaîne d'énergie, bloc Distribuer"
+        },
+        {
+          "id": "c",
+          "text": "À la chaîne d'information, bloc Acquérir"
+        },
+        {
+          "id": "d",
+          "text": "À la chaîne d'information, bloc Traiter"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On ne classe jamais un composant par l'endroit où il est monté, mais par ce qu'il fait. La thermistance mesure une température : elle prélève une information, ce qui est la définition même d'un capteur et donc du bloc Acquérir, dans la chaîne d'information ✓. Le piège courant est ici purement géographique : parce qu'elle touche le bloc chauffant, on la range avec la chaleur. Or ce qui convertit l'énergie sur cette branche, c'est la cartouche chauffante, pas la thermistance. Et Traiter serait faux même en restant dans la bonne chaîne : la thermistance ne décide rien, elle mesure et transmet à la carte électronique, qui décide.",
+      "difficulty": 3
+    }
+  ]
+}

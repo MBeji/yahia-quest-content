@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : Dans les entrailles de l'imprimante 3D",
+  "questions": [
+    {
+      "prompt": "L'imprimante 3D reçoit un fichier, dépose son filament couche après couche et termine la pièce sans qu'on la surveille. Cette seule description suffit à établir une de ces affirmations. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Qu'elle choisit elle-même la forme de la pièce à fabriquer"
+        },
+        {
+          "id": "b",
+          "text": "Qu'elle exécute des tâches programmées sans intervention humaine"
+        },
+        {
+          "id": "c",
+          "text": "Qu'elle possède une chaîne d'information mais pas de chaîne d'énergie"
+        },
+        {
+          "id": "d",
+          "text": "Qu'elle répète une tâche unique et figée, sans aucun programme"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "C'est la définition même du système automatisé : plusieurs éléments qui exécutent un ensemble de tâches programmées sans que l'intervention de l'homme ne soit nécessaire ✓ — le fichier tient lieu de programme, et l'absence de surveillance, de non-intervention. Un système automatisé exécute un programme, il ne le choisit pas : c'est le fichier G-code qui porte la forme de la pièce, la machine ne fait que l'exécuter. Déposer du filament est une action, donc une chaîne d'énergie existe forcément à côté de la chaîne d'information. Et une tâche unique et figée serait le contraire d'une tâche programmée, puisque le fichier change d'une pièce à l'autre.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un capteur, une carte électronique et un afficheur équipent la chaîne d'information de l'imprimante 3D. Dans quel ordre l'information les traverse-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'afficheur, puis le capteur, puis la carte électronique"
+        },
+        {
+          "id": "b",
+          "text": "Le capteur, puis la carte électronique, puis l'afficheur"
+        },
+        {
+          "id": "c",
+          "text": "Le capteur, puis l'afficheur, puis la carte électronique"
+        },
+        {
+          "id": "d",
+          "text": "La carte électronique, puis le capteur, puis l'afficheur"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Chaque composant tient l'une des trois fonctions, et leur ordre est celui de la chaîne d'information. Le capteur prélève l'information : c'est Acquérir, donc le point de départ. La carte électronique la traite : c'est Traiter, la partie commande. L'afficheur la restitue enfin à l'utilisateur, en sortie de Communiquer ✓. Faire commencer la chaîne par la carte ou par l'afficheur reviendrait à traiter ou à afficher une information que personne n'a encore prélevée.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur la tête d'impression, quel est le rôle exact de la buse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mesurer la température de la matière fondue"
+        },
+        {
+          "id": "b",
+          "text": "Fondre le filament avant son dépôt"
+        },
+        {
+          "id": "c",
+          "text": "Refroidir la tête pendant l'impression"
+        },
+        {
+          "id": "d",
+          "text": "Calibrer la section du filament déposé"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le filament fondu est poussé à travers la buse, qui calibre la section de matière à déposer ✓ — c'est son diamètre, 0,4 mm, qui fixe la finesse du cordon. Les trois autres rôles existent bel et bien sur la tête, mais ils appartiennent à d'autres composants : la thermistance mesure la température, la cartouche chauffante fond le filament, le ventilateur et le dissipateur refroidissent la tête.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Comment les trois translations sont-elles réparties sur l'imprimante 3D ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La tête d'impression suivant X et Y, le plateau suivant Z"
+        },
+        {
+          "id": "b",
+          "text": "La tête d'impression suivant X, Y et Z, le plateau restant fixe"
+        },
+        {
+          "id": "c",
+          "text": "Le plateau suivant X et Y, la tête d'impression suivant Z"
+        },
+        {
+          "id": "d",
+          "text": "La tête d'impression suivant X, le plateau suivant Y et Z"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La tête d'impression est translatée suivant X par le moteur d'axe X et suivant Y par le moteur d'axe Y ; c'est le plateau, entraîné par les tiges filetées et les écrous T8, qui se déplace suivant Z ✓. Un plateau fixe rendrait la troisième translation impossible : la pièce ne pourrait alors gagner aucune hauteur, et l'imprimante ne saurait produire qu'un dessin plat.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans la chaîne d'énergie, quel bloc fonctionnel l'actionneur remplit-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alimenter"
+        },
+        {
+          "id": "b",
+          "text": "Distribuer"
+        },
+        {
+          "id": "c",
+          "text": "Convertir"
+        },
+        {
+          "id": "d",
+          "text": "Transmettre"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'organe de conversion d'énergie est précisément ce qu'on appelle un actionneur : un vérin, un moteur ✓. Sur l'imprimante 3D, c'est le moteur pas à pas. Alimenter met en forme l'énergie externe avant qu'elle n'entre dans le système, Distribuer se contente de l'aiguiller vers l'actionneur sur ordre de la chaîne d'information, et Transmettre regroupe les organes mécaniques — poulies, courroies — placés après l'actionneur.",
+      "difficulty": 2
+    }
+  ]
+}

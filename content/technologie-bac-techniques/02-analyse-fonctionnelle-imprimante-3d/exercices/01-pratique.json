@@ -1,0 +1,168 @@
+{
+  "title": "⭐ Exercice : Reconnaître les blocs et les composants",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "manuel": {
+    "pages": "27",
+    "items": [
+      "B. chaînes fonctionnelles"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Une couche vient d'être déposée. Que se passe-t-il avant que la buse ne trace la couche suivante ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La buse remonte d'une épaisseur de couche"
+        },
+        {
+          "id": "b",
+          "text": "La bobine de filament pivote d'un tour complet"
+        },
+        {
+          "id": "c",
+          "text": "Le plateau d'impression descend d'une épaisseur de couche"
+        },
+        {
+          "id": "d",
+          "text": "La pièce est retournée pour présenter sa face suivante"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Entre chaque couche, c'est le plateau d'impression qui descend, afin de permettre l'extrusion de la couche suivante ✓. Le mouvement relatif est bien le même que si la buse montait, mais sur cette machine l'axe Z est porté par le plateau, pas par la tête. Le retournement de la pièce n'existe pas en FDM : l'objet se construit d'un seul tenant, de bas en haut.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel composant de la tête d'impression permet de contrôler la température ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La thermistance"
+        },
+        {
+          "id": "b",
+          "text": "La cartouche chauffante"
+        },
+        {
+          "id": "c",
+          "text": "Le dissipateur thermique"
+        },
+        {
+          "id": "d",
+          "text": "Le galet presseur"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La thermistance est le capteur de température de la tête : c'est elle qui permet de contrôler la valeur atteinte ✓. La cartouche chauffante, elle, produit la chaleur mais ne la mesure pas — chauffer et mesurer sont deux fonctions distinctes. Le dissipateur thermique évacue la chaleur vers le haut de la tête, et le galet presseur n'intervient que sur l'entraînement du fil.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur l'imprimante 3D, quel processeur assure la fonction « Communiquer » de la chaîne d'information ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les trois capteurs fin de course"
+        },
+        {
+          "id": "b",
+          "text": "Les fils de liaison"
+        },
+        {
+          "id": "c",
+          "text": "L'afficheur de la façade"
+        },
+        {
+          "id": "d",
+          "text": "La carte électronique"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Communiquer assure l'interface entre la partie commande et son environnement, et sur cette machine ce sont les fils de liaison qui portent l'information hors de la carte ✓. L'afficheur de la façade est ce qu'il y a au bout du fil : c'est la sortie de la fonction, pas le processeur qui l'assure. La carte électronique tient le bloc précédent, Traiter, là où l'information est élaborée avant d'être communiquée. Et les trois capteurs fin de course sont tout au début de la chaîne, du côté d'Acquérir : ils prélèvent l'information, ils ne la restituent jamais.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur l'imprimante 3D, quel processeur assure la fonction « Distribuer » de la chaîne d'énergie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'afficheur de la façade"
+        },
+        {
+          "id": "b",
+          "text": "Le contrôleur de moteur pas à pas"
+        },
+        {
+          "id": "c",
+          "text": "Le bloc d'alimentation 220 V AC / 24 V DC"
+        },
+        {
+          "id": "d",
+          "text": "Le moteur pas à pas"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Distribuer envoie l'énergie vers l'actionneur, sur ordre de la chaîne d'information : sur cette machine, c'est le contrôleur de moteur pas à pas ✓. Le bloc d'alimentation est en amont, il met en forme l'énergie du secteur avant qu'elle n'entre dans le système — il ne l'aiguille pas. Le moteur pas à pas est en aval : c'est lui l'actionneur, celui qui reçoit l'énergie et la change en mouvement. Et l'afficheur n'appartient pas du tout à la chaîne d'énergie : il est en sortie de Communiquer.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets les quatre blocs de la chaîne d'énergie dans l'ordre où l'énergie les traverse, de la source jusqu'à l'action.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Convertir — l'actionneur change la nature de l'énergie"
+        },
+        {
+          "id": "b",
+          "text": "Alimenter — mise en forme de l'énergie externe en énergie compatible"
+        },
+        {
+          "id": "c",
+          "text": "Transmettre — les organes mécaniques acheminent mouvement et effort"
+        },
+        {
+          "id": "d",
+          "text": "Distribuer — l'énergie est envoyée vers l'actionneur"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "d",
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "L'énergie extérieure doit d'abord être mise en forme : Alimenter vient donc en premier, sinon rien d'exploitable n'entre dans la machine. Elle est ensuite orientée vers l'actionneur : Distribuer précède forcément Convertir, puisque c'est ce bloc qui laisse passer l'énergie sur ordre. Convertir vient alors changer sa nature — l'électrique devient mécanique. Transmettre arrive en dernier : les poulies, courroies et vis-écrou n'ont un mouvement à acheminer qu'une fois l'actionneur en marche ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que la chaîne d'information envoie-t-elle à la chaîne d'énergie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "De l'énergie électrique déjà mise en forme"
+        },
+        {
+          "id": "b",
+          "text": "Des ordres issus du traitement"
+        },
+        {
+          "id": "c",
+          "text": "Le fichier G-code, tel qu'il a été chargé"
+        },
+        {
+          "id": "d",
+          "text": "De l'énergie mécanique de rotation"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La chaîne d'information ne fournit jamais d'énergie : elle décide. Ce qu'elle transmet à la chaîne d'énergie, ce sont des ordres, produits par le bloc Traiter et reçus par Distribuer ✓. L'énergie électrique mise en forme circule à l'intérieur de la chaîne d'énergie, entre Alimenter et Distribuer, et l'énergie mécanique n'apparaît qu'après Convertir. Quant au fichier G-code, il entre dans la chaîne d'information : il est justement ce que le traitement transforme en ordres.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "title": "⭐ Exercice : reconnaître les deux chaînes du micro-tour",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "manuel": {
+    "pages": "36",
+    "items": [
+      "C. FAST — question 1"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Comment définit-on un système automatisé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un système dont chaque mouvement est commandé à la main par un opérateur"
+        },
+        {
+          "id": "b",
+          "text": "Un système qui fonctionne sans consommer d'énergie extérieure"
+        },
+        {
+          "id": "c",
+          "text": "Un système qui exécute des tâches programmées sans intervention de l'homme"
+        },
+        {
+          "id": "d",
+          "text": "Un système constitué uniquement de composants électroniques"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un système automatisé est composé de plusieurs éléments qui exécutent un ensemble de tâches programmées sans que l'intervention de l'homme soit nécessaire. Commander chaque mouvement à la main est précisément ce que l'automatisation supprime. Un tel système consomme bien une énergie extérieure — c'est l'entrée de sa chaîne d'énergie — et il associe toujours des composants mécaniques aux composants électroniques.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel composant du micro-tour assure la fonction Traiter de sa chaîne d'information ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'écran"
+        },
+        {
+          "id": "b",
+          "text": "Le microcontrôleur"
+        },
+        {
+          "id": "c",
+          "text": "La carte de puissance"
+        },
+        {
+          "id": "d",
+          "text": "L'unité d'alimentation"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Traiter est la partie commande du système : sur le micro-tour, c'est le microcontrôleur qui la réalise. L'écran assure Communiquer, en fin de la même chaîne. La carte de puissance et l'unité d'alimentation appartiennent à l'autre chaîne, celle de l'énergie, où elles assurent respectivement Distribuer et Alimenter.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur le micro-tour, qui définit l'origine pièce Op ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le constructeur, une fois pour toutes à la fabrication"
+        },
+        {
+          "id": "b",
+          "text": "Le logiciel de F.A.O., à la création du fichier d'usinage"
+        },
+        {
+          "id": "c",
+          "text": "Le microcontrôleur, au démarrage de la machine"
+        },
+        {
+          "id": "d",
+          "text": "L'opérateur, sur le brut qu'il vient de monter"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'origine pièce Op est définie par l'opérateur : elle dépend du brut serré dans le mandrin et change donc d'un usinage à l'autre. C'est l'origine machine Om qui, elle, est fixée par construction — la position de la machine en butée — et qu'aucun opérateur ne déplace. Ni le logiciel de F.A.O. ni le microcontrôleur ne choisissent Op à sa place.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel ensemble du micro-tour satisfait la fonction technique « Fixer la pièce » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La tourelle porte-outil et ses vis de serrage"
+        },
+        {
+          "id": "b",
+          "text": "Le mandrin et ses mors"
+        },
+        {
+          "id": "c",
+          "text": "La poupée mobile de la machine"
+        },
+        {
+          "id": "d",
+          "text": "Le traînard et sa vis mère"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La pièce à usiner est placée dans le mandrin et serrée par l'intermédiaire des mors : c'est bien cet ensemble qui la fixe. La tourelle porte-outil et ses vis fixent l'outil, pas la pièce ; la poupée mobile intervient en bout de pièce pour pointer, centrer, percer ou aléser ; le traînard et sa vis mère déplacent l'outil suivant l'axe Z.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans la chaîne d'énergie, quel type de composant assure la fonction Convertir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un capteur de position"
+        },
+        {
+          "id": "b",
+          "text": "Un contacteur ou un distributeur"
+        },
+        {
+          "id": "c",
+          "text": "Un actionneur : un moteur ou un vérin"
+        },
+        {
+          "id": "d",
+          "text": "Un engrenage ou une courroie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'organe de conversion d'énergie s'appelle un actionneur : ce peut être un moteur ou un vérin. Le contacteur et le distributeur assurent Distribuer, en amont ; l'engrenage et la courroie assurent Transmettre, en aval. Le capteur, lui, n'appartient pas du tout à la chaîne d'énergie : il est en tête de la chaîne d'information, dans le bloc Acquérir.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "À quoi sert la poupée mobile du micro-tour ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À percer et à aléser en bout de pièce"
+        },
+        {
+          "id": "b",
+          "text": "À entraîner la pièce en rotation"
+        },
+        {
+          "id": "c",
+          "text": "À déplacer l'outil suivant l'axe X"
+        },
+        {
+          "id": "d",
+          "text": "À couper l'alimentation en cas d'urgence"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La poupée mobile permet de réaliser les opérations de pointage, centrage, perçage et alésage en bout de pièce : elle travaille dans l'axe de la broche, sur l'extrémité libre du brut. Entraîner la pièce en rotation est le rôle de la broche et du mandrin ; le déplacement suivant X est celui du chariot porte-outil ; et la coupure d'urgence est assurée par le bouton d'arrêt d'urgence.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le manuel donne des consignes de sécurité à respecter avant toute manipulation du micro-tour. Laquelle en fait partie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enclencher le bouton d'arrêt d'urgence avant d'intervenir"
+        },
+        {
+          "id": "b",
+          "text": "Retirer le carter de protection pour mieux voir la pièce"
+        },
+        {
+          "id": "c",
+          "text": "Lancer le programme G-code, puis serrer la pièce dans le mandrin"
+        },
+        {
+          "id": "d",
+          "text": "Travailler à mains nues pour mieux sentir la pièce"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les consignes imprimées avant la mise en œuvre sont explicites : respecter les règles de sécurité, enclencher le bouton d'arrêt d'urgence, utiliser les clés appropriées, effectuer les manipulations avec des gants résistants aux coupures et ranger immédiatement les outils non utilisés. Retirer le carter reviendrait à supprimer l'un des deux organes de sécurité de la machine ; travailler à mains nues expose aux coupures, alors que le manuel exige justement des gants ; et on ne lance jamais un programme d'usinage sur une pièce qui n'est pas encore serrée dans le mandrin.",
+      "difficulty": 1
+    }
+  ]
+}
