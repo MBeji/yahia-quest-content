@@ -1,0 +1,88 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Lire une machine comme un ingénieur",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "manuel": {
+    "pages": "29",
+    "items": ["C. FAST 3"]
+  },
+  "questions": [
+    {
+      "prompt": "Une branche d'un diagramme F.A.S.T. se lit dans les deux sens, et chaque sens répond à une question différente. Lesquelles ?",
+      "options": [
+        { "id": "a", "text": "De gauche à droite « Pourquoi ? », de droite à gauche « Comment ? »" },
+        { "id": "b", "text": "De gauche à droite « Comment ? », de droite à gauche « Pourquoi ? »" },
+        { "id": "c", "text": "De gauche à droite « Quand ? », de droite à gauche « Comment ? »" },
+        { "id": "d", "text": "De gauche à droite « Comment ? », de droite à gauche « Quand ? »" }
+      ],
+      "correctOption": "b",
+      "explanation": "En descendant vers la droite, on passe d'une fonction à ce qui la réalise : on répond donc à « Comment accomplit-on cette fonction ? ». En remontant vers la gauche, on retrouve la fonction que l'on servait : on répond à « Pourquoi réalise-t-on cette fonction ? » ✓. La troisième question du F.A.S.T., « Quand on fait cette fonction, quelles autres fonctions doivent être faites ? », ne se lit dans aucun de ces deux sens : elle se lit verticalement, le long des branches parallèles, là où se placent les opérateurs ET et OU. C'est cette double lecture qui rend la méthode objective : on peut vérifier un arbre en le remontant.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un fournisseur propose une imprimante dont la taille maximale imprimable annoncée est 194×194×194 mm. Répond-elle au critère du cahier des charges « taille maximale : 200×200×200 mm ±5 mm » ?",
+      "options": [
+        { "id": "a", "text": "Oui : 194 mm reste dans la flexibilité de ±5 mm autour de 200 mm" },
+        { "id": "b", "text": "Oui : la flexibilité n'engage pas le fournisseur, seul le niveau compte" },
+        { "id": "c", "text": "Non : la borne basse admise est 195 mm, et 194 mm passe en dessous" },
+        { "id": "d", "text": "Non : le niveau est un minimum, toute valeur inférieure à 200 mm est refusée" }
+      ],
+      "correctOption": "c",
+      "explanation": "Le niveau est 200 mm et la flexibilité ±5 mm : les valeurs acceptées forment l'intervalle 195 mm à 205 mm. Or 194 < 195, la machine est donc refusée, et de très peu ✓. Le piège courant est l'arithmétique : 200 − 5 = 195, pas 194 — un seul millimètre décide. Le piège inverse consiste à refuser toute valeur sous 200 mm : c'est justement ce que la flexibilité autorise, sans quoi elle n'aurait aucun sens. Et une flexibilité écrite au cahier des charges engage bel et bien les deux parties : elle fait partie de l'exigence.",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "La tête d'impression arrive en butée et actionne un capteur fin de course. Remets dans l'ordre le trajet complet de l'information, jusqu'à l'arrêt effectif du mouvement.",
+      "options": [
+        { "id": "a", "text": "Le contrôleur de moteur pas à pas cesse d'envoyer l'énergie électrique vers l'actionneur" },
+        { "id": "b", "text": "Le capteur fin de course prélève l'information de présence en butée" },
+        { "id": "c", "text": "Le moteur pas à pas s'arrête et la tête cesse d'avancer" },
+        { "id": "d", "text": "La carte électronique traite l'information reçue et décide de la suite" },
+        { "id": "e", "text": "Un ordre est émis par la chaîne d'information vers la chaîne d'énergie" }
+      ],
+      "answerKey": { "order": ["b", "d", "e", "a", "c"] },
+      "explanation": "Rien ne peut être traité avant d'avoir été prélevé : le capteur ouvre donc la marche, c'est la fonction Acquérir. La carte électronique vient ensuite, car Traiter est la partie commande et n'agit que sur une information déjà reçue. De ce traitement naît un ordre, seul objet qui franchit la frontière entre les deux chaînes. Cet ordre n'arrive pas sur l'actionneur mais sur Distribuer : c'est le contrôleur de moteur pas à pas qui coupe le passage de l'énergie. Privé d'énergie, le moteur s'arrête en dernier ✓. Le piège courant est de faire agir le moteur directement sur ordre de la carte, en sautant le bloc Distribuer — or aucun ordre ne transporte d'énergie.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "En suivant la chaîne d'énergie de l'imprimante depuis le secteur jusqu'au déplacement de la tête, combien de fois l'énergie change-t-elle de nature, et à quel endroit ?",
+      "options": [
+        { "id": "a", "text": "Une seule fois, au passage de Convertir" },
+        { "id": "b", "text": "Deux fois : à Alimenter, puis à Convertir" },
+        { "id": "c", "text": "Deux fois : à Convertir, puis à Transmettre" },
+        { "id": "d", "text": "Trois fois : à Alimenter, à Convertir et à Transmettre" }
+      ],
+      "correctOption": "a",
+      "explanation": "Relis les natures portées sur les liaisons : électrique, électrique, mécanique, mécanique. L'énergie entre électrique, traverse Alimenter et Distribuer en restant électrique, et ne devient mécanique qu'à la sortie de Convertir — un seul changement de nature, celui qu'opère l'actionneur ✓. Alimenter change la forme de l'énergie électrique, 220 V AC vers 24 V DC, mais pas sa nature. Transmettre reçoit du mécanique et rend du mécanique. Retiens la règle : dans une chaîne d'énergie, c'est toujours l'actionneur, et lui seul, qui change la nature de l'énergie.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le schéma ci-dessous montre le mécanisme de l'axe X de l'imprimante.\n<svg viewBox=\"0 0 360 220\"><g stroke=\"#0f172a\" stroke-width=\"5\" fill=\"none\"><path d=\"M40 76 H330\"/><path d=\"M40 100 H330\"/></g><g fill=\"#94a3b8\" fill-opacity=\"0.7\" stroke=\"#0f172a\" stroke-width=\"2\"><rect x=\"128\" y=\"66\" width=\"20\" height=\"20\"/><rect x=\"128\" y=\"90\" width=\"20\" height=\"20\"/></g><rect x=\"148\" y=\"56\" width=\"64\" height=\"64\" fill=\"#94a3b8\" fill-opacity=\"0.4\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M192 120 L208 120 L202 136 L198 136 Z\" fill=\"#0f6e56\" fill-opacity=\"0.3\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"164\" y=\"120\" width=\"16\" height=\"30\" fill=\"#0f172a\"/><rect x=\"8\" y=\"150\" width=\"32\" height=\"28\" fill=\"#94a3b8\" fill-opacity=\"0.4\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M40 164 H46\" stroke=\"#0f172a\" stroke-width=\"4\"/><circle cx=\"58\" cy=\"164\" r=\"14\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"312\" cy=\"164\" r=\"14\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M164 150 H58 A14 14 0 0 0 58 178 H312 A14 14 0 0 0 312 150 H180\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3\"/><g stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"><path d=\"M180 52 V56\"/><path d=\"M80 68 V76\"/><path d=\"M112 132 L130 112\"/><path d=\"M240 196 V180\"/></g><g font-size=\"10\" fill=\"#0f172a\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"180\" y=\"48\">tête d'impression</text><text x=\"80\" y=\"64\">colonnes rectifiées</text><text x=\"90\" y=\"136\">douilles à billes</text><text x=\"240\" y=\"200\">courroie crantée</text><text x=\"48\" y=\"200\">moteur d'axe X</text></g></svg>\nUn élève a complété le diagramme F.A.S.T. de FT31 « déplacer la tête d'impression suivant l'axe X » ainsi :\n① FT311 convertir l'énergie électrique en énergie mécanique de rotation → le moteur d'axe X\n② FT312 transformer la rotation en translation de la tête → les douilles à billes\n③ FT313 guider la tête en translation → le système poulies-courroie\nOù se trouve l'erreur ?",
+      "options": [
+        { "id": "a", "text": "En ① : c'est le contrôleur de moteur pas à pas qui convertit l'énergie" },
+        { "id": "b", "text": "En ② : c'est le plateau, et non la tête, qui est translaté suivant X" },
+        { "id": "c", "text": "En ③ : le guidage de la tête est assuré par les tiges filetées T8" },
+        { "id": "d", "text": "Les composants de ② et ③ ont été intervertis" }
+      ],
+      "correctOption": "d",
+      "explanation": "L'élève a bien identifié les trois fonctions, mais il a échangé deux composants ✓. C'est la courroie crantée, fixée sur la tête d'impression, qui transforme la rotation de la poulie en translation : elle appartient donc à FT312. Et ce sont les douilles à billes, montées sur la platine d'axe X et glissant sur les deux colonnes rectifiées, qui imposent la trajectoire rectiligne : elles appartiennent à FT313. La ligne ① est juste : le moteur d'axe X est bien l'actionneur, le contrôleur ne fait que lui distribuer l'énergie. La tête est bien l'organe translaté suivant X, le plateau ne se déplace que suivant Z. Et les tiges filetées T8 sont sur l'axe Z, pas sur l'axe X.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La fonction contrainte FC7 « communiquer avec l'ordinateur » impose un fichier G-code, une interface USB et un stockage amovible par carte Micro-SD. Dans quelle chaîne fonctionnelle ces éléments interviennent-ils, et à quel titre ?",
+      "options": [
+        { "id": "a", "text": "Dans la chaîne d'information : le programme G-code en est l'entrée" },
+        { "id": "b", "text": "Dans la chaîne d'information, au titre du bloc Convertir" },
+        { "id": "c", "text": "Dans la chaîne d'énergie : le G-code alimente directement les moteurs" },
+        { "id": "d", "text": "Dans la chaîne d'énergie, au titre du bloc Distribuer" }
+      ],
+      "correctOption": "a",
+      "explanation": "Un fichier, une interface et une carte mémoire transportent de l'information, jamais de l'énergie : FC7 concerne donc entièrement la chaîne d'information, dont le programme G-code constitue précisément l'entrée ✓, avant tout traitement par la carte électronique. Le piège courant est de raisonner par le résultat : « le G-code fait tourner les moteurs, donc il est dans la chaîne d'énergie ». Il ne les fait pas tourner, il devient des ordres, et ce sont ces ordres qui commandent Distribuer. Convertir, enfin, n'appartient pas au vocabulaire de la chaîne d'information : ses trois blocs sont Acquérir, Traiter et Communiquer.",
+      "difficulty": 3
+    }
+  ]
+}

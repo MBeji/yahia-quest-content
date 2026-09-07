@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐",
+  "questions": [
+    {
+      "prompt": "Que produit en sortie la chaîne d'information d'un système automatisé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une information pour l'utilisateur et des ordres pour la chaîne d'énergie"
+        },
+        {
+          "id": "b",
+          "text": "Une énergie mise en forme et des ordres pour l'utilisateur"
+        },
+        {
+          "id": "c",
+          "text": "Une information pour l'utilisateur et l'énergie nécessaire à l'action"
+        },
+        {
+          "id": "d",
+          "text": "Des consignes d'utilisateur et des informations sur l'environnement"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La chaîne d'information rend deux choses : une information destinée à l'utilisateur — sur le micro-tour, ce qu'affiche l'écran — et les ordres qu'elle envoie à la chaîne d'énergie. Elle ne produit jamais d'énergie : mettre l'énergie externe en forme est le travail du bloc Alimenter, dans l'autre chaîne. Quant aux consignes de l'utilisateur et aux informations sur l'environnement, ce sont ses entrées, pas ses sorties.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans la chaîne d'information, quels composants assurent la fonction Acquérir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le microcontrôleur"
+        },
+        {
+          "id": "b",
+          "text": "L'écran"
+        },
+        {
+          "id": "c",
+          "text": "Les capteurs"
+        },
+        {
+          "id": "d",
+          "text": "Les actionneurs"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Acquérir, c'est prélever des informations à l'aide de capteurs. Le microcontrôleur est la partie commande : il assure Traiter. L'écran assure Communiquer. Les actionneurs (moteurs, vérins) n'appartiennent pas à la chaîne d'information mais à la chaîne d'énergie, où ils réalisent Convertir.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans la chaîne d'énergie d'un système automatisé, un bloc s'intercale entre Distribuer et Transmettre. Lequel ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acquérir"
+        },
+        {
+          "id": "b",
+          "text": "Alimenter"
+        },
+        {
+          "id": "c",
+          "text": "Communiquer"
+        },
+        {
+          "id": "d",
+          "text": "Convertir"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Entre Distribuer et Transmettre se trouve Convertir : c'est là qu'agit l'actionneur — un moteur, un vérin — qui change la nature de l'énergie. Alimenter appartient bien à la chaîne d'énergie, mais en tête, avant Distribuer. Acquérir et Communiquer, eux, sont des blocs de l'autre chaîne, celle de l'information : ils ne traitent jamais d'énergie.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La chaîne d'information élabore des ordres à destination de la chaîne d'énergie. Sur quel bloc de la chaîne d'énergie ces ordres arrivent-ils ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alimenter"
+        },
+        {
+          "id": "b",
+          "text": "Distribuer"
+        },
+        {
+          "id": "c",
+          "text": "Convertir"
+        },
+        {
+          "id": "d",
+          "text": "Transmettre"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les ordres entrent par le haut du bloc Distribuer : c'est lui qui laisse passer ou non l'énergie vers l'actionneur, au moyen d'un distributeur, d'un contacteur ou d'une carte de puissance. Alimenter met en forme l'énergie sans savoir ce qu'on veut en faire ; Convertir et Transmettre ne font qu'exécuter ce que Distribuer leur envoie.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un diagramme F.A.S.T., on parcourt l'arbre de gauche à droite, d'une fonction vers les solutions qui la réalisent. À quelle question répond-on en avançant ainsi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "« Comment ? »"
+        },
+        {
+          "id": "b",
+          "text": "« Pourquoi ? »"
+        },
+        {
+          "id": "c",
+          "text": "« Quand ? »"
+        },
+        {
+          "id": "d",
+          "text": "« Combien ? »"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Vers la droite, chaque niveau détaille la manière de réaliser la fonction précédente : on répond à « Comment accomplit-on cette fonction ? ». Le parcours inverse, de droite à gauche, répond à « Pourquoi réalise-t-on cette fonction ? », et la lecture verticale répond à « Quand on fait cette fonction, quelles autres fonctions doivent être faites ? ». « Combien ? » ne fait pas partie des trois questions du F.A.S.T.",
+      "difficulty": 2
+    }
+  ]
+}

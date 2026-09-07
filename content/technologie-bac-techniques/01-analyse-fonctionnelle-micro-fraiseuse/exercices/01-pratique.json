@@ -1,0 +1,178 @@
+{
+  "title": "⭐ Exercice : le vocabulaire des chaînes fonctionnelles",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Qu'est-ce qui caractérise un système automatisé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il exécute des tâches variées, mais chacune doit être déclenchée à la main"
+        },
+        {
+          "id": "b",
+          "text": "Il exécute des tâches programmées sans que l'intervention de l'homme soit nécessaire"
+        },
+        {
+          "id": "c",
+          "text": "Il fonctionne sans avoir besoin d'une source d'énergie extérieure"
+        },
+        {
+          "id": "d",
+          "text": "Il ne comporte aucune pièce mobile, tout y est commandé électroniquement"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un système automatisé est composé de plusieurs éléments qui exécutent un ensemble de tâches programmées sans que l'intervention de l'homme ne soit nécessaire ✓. L'automatisme porte sur la commande des tâches, pas sur l'énergie : la machine reste alimentée par une source extérieure et comporte bien des pièces mobiles.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "À l'aide de quels composants la fonction Acquérir prélève-t-elle les informations ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "des vérins"
+        },
+        {
+          "id": "b",
+          "text": "des contacteurs"
+        },
+        {
+          "id": "c",
+          "text": "des engrenages"
+        },
+        {
+          "id": "d",
+          "text": "des capteurs"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Acquérir est la fonction qui permet de prélever des informations à l'aide de capteurs ✓. Les vérins sont des actionneurs (Convertir), les contacteurs servent à distribuer l'énergie (Distribuer) et les engrenages à la transmettre (Transmettre) : tous trois appartiennent à la chaîne d'énergie.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La fonction Traiter est la partie commande du système. De quoi est-elle composée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "d'un automate ou d'un microcontrôleur"
+        },
+        {
+          "id": "b",
+          "text": "d'un ensemble de capteurs et d'interrupteurs"
+        },
+        {
+          "id": "c",
+          "text": "d'une carte de puissance"
+        },
+        {
+          "id": "d",
+          "text": "d'un moteur électrique et de son accouplement"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Traiter, c'est la partie commande, composée d'un automate ou d'un microcontrôleur ✓ — sur la micro-fraiseuse, c'est le microprocesseur. Les capteurs relèvent d'Acquérir, tandis que la carte de puissance et le moteur appartiennent à la chaîne d'énergie.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle fonction assure l'interface entre l'utilisateur et l'environnement de la partie commande ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acquérir"
+        },
+        {
+          "id": "b",
+          "text": "Traiter"
+        },
+        {
+          "id": "c",
+          "text": "Communiquer"
+        },
+        {
+          "id": "d",
+          "text": "Distribuer"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Communiquer assure l'interface entre l'utilisateur, éventuellement d'autres systèmes, et l'environnement de la partie commande ✓ : sur la micro-fraiseuse, l'écran et les voyants. Attention au piège : Distribuer n'appartient même pas à la chaîne d'information, c'est une fonction de la chaîne d'énergie.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quels composants assurent la fonction Transmettre d'une chaîne d'énergie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "les capteurs et les boutons poussoirs"
+        },
+        {
+          "id": "b",
+          "text": "les vérins et les moteurs"
+        },
+        {
+          "id": "c",
+          "text": "les distributeurs et les contacteurs"
+        },
+        {
+          "id": "d",
+          "text": "les engrenages, les courroies et les accouplements"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Transmettre est remplie par l'ensemble des organes mécaniques de transmission de mouvement et d'effort : engrenages, courroies, accouplements, systèmes vis-écrou ✓. Les vérins et les moteurs convertissent l'énergie au lieu de la transmettre, et les distributeurs comme les contacteurs la distribuent.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur la micro-fraiseuse, à quoi sert le logiciel de C.F.A.O. ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "à distribuer l'énergie électrique aux moteurs"
+        },
+        {
+          "id": "b",
+          "text": "à créer le fichier d'usinage"
+        },
+        {
+          "id": "c",
+          "text": "à mesurer la position réelle des chariots"
+        },
+        {
+          "id": "d",
+          "text": "à serrer l'outil dans la pince porte-outil"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La micro-fraiseuse comporte un logiciel de C.F.A.O. servant à créer le fichier d'usinage ✓ : on y dessine la pièce et on optimise les trajectoires de sa découpe avant de simuler l'usinage. Distribuer l'énergie est le rôle de la carte de puissance, mesurer une position celui d'un capteur, et serrer l'outil celui de la pince porte-outil.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur la micro-fraiseuse, que désigne l'origine machine Om ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "la position de la machine en butée"
+        },
+        {
+          "id": "b",
+          "text": "le point de départ du programme, choisi par l'opérateur"
+        },
+        {
+          "id": "c",
+          "text": "le centre de la table qui porte la pièce"
+        },
+        {
+          "id": "d",
+          "text": "le point où l'outil touche la pièce pour la première fois"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'origine machine Om est la position de la machine en butée ✓ : elle est imposée par la machine elle-même et ne se choisit pas. C'est l'origine pièce Op qui, elle, est définie par l'opérateur — confondre les deux est l'erreur classique du début de séance.",
+      "difficulty": 2
+    }
+  ]
+}

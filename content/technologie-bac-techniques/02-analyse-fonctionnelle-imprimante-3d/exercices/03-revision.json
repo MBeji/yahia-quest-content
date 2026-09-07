@@ -1,0 +1,157 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Du cahier des charges à l'arbre des fonctions",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "manuel": {
+    "pages": "28",
+    "items": [
+      "C. FAST 1"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Le cahier des charges impose un filament en matière plastique de diamètre Ø 1,75 mm ±0,05 mm. Quelle fonction de service porte ces deux critères ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "FP : permettre l'impression d'une pièce à partir d'un modèle numérique"
+        },
+        {
+          "id": "b",
+          "text": "FC4 : s'alimenter en énergie électrique"
+        },
+        {
+          "id": "c",
+          "text": "FC2 : être compatible avec le fil d'impression"
+        },
+        {
+          "id": "d",
+          "text": "FC8 : être stable"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La matière et le diamètre du filament décrivent une contrainte imposée par un élément du milieu extérieur — le fil lui-même : c'est donc FC2, être compatible avec le fil d'impression ✓. FP porte la raison d'être du produit, avec la taille maximale et la précision d'impression comme critères. FC4 porte les tensions, FC8 le poids et la surface d'appui. Retiens la logique : chaque fonction contrainte relie le produit à un et un seul élément de son environnement.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans la ligne « précision d'impression : 0,2 mm ±0,1 mm » du cahier des charges fonctionnel, que désigne le ±0,1 mm ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le niveau exigé pour ce critère d'appréciation"
+        },
+        {
+          "id": "b",
+          "text": "La flexibilité, la tolérance admise autour du niveau"
+        },
+        {
+          "id": "c",
+          "text": "Un second critère d'appréciation de la même fonction"
+        },
+        {
+          "id": "d",
+          "text": "L'expression de la fonction de service concernée"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une ligne de cahier des charges se lit en trois temps : le critère d'appréciation dit ce qu'on mesure (ici la précision d'impression), le niveau dit la valeur attendue (0,2 mm) et la flexibilité dit de combien on accepte de s'en écarter (±0,1 mm) ✓. Le niveau, c'est donc 0,2 mm et non 0,1 mm. Et l'expression est la phrase qui énonce la fonction elle-même, pas un chiffre.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le cahier des charges fonctionnel exige une précision d'impression de 0,2 mm avec une flexibilité de ±0,1 mm. Quelle est, en mm, la plus grande valeur de précision encore acceptable ?",
+      "answerKey": {
+        "value": 0.3,
+        "unit": "mm"
+      },
+      "explanation": "Le niveau fixe la valeur visée, 0,2 mm ; la flexibilité dit de combien on accepte de s'en écarter, ici ±0,1 mm. Les valeurs admises s'étendent donc de 0,2 − 0,1 = 0,1 mm à 0,2 + 0,1 = 0,3 mm ✓. Le piège est de répondre 0,1 : c'est la flexibilité elle-même, pas une valeur de précision — et c'est la borne basse, pas la plus grande. Retiens que le couple niveau-flexibilité définit toujours un intervalle, jamais un seuil unique.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelles sont, de gauche à droite, les trois colonnes d'un diagramme F.A.S.T. ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fonction de service, puis fonctions techniques, puis solutions technologiques"
+        },
+        {
+          "id": "b",
+          "text": "Fonction de service, puis solutions technologiques, puis fonctions techniques"
+        },
+        {
+          "id": "c",
+          "text": "Fonctions techniques, puis fonction de service, puis solutions technologiques"
+        },
+        {
+          "id": "d",
+          "text": "Solutions technologiques, puis fonctions techniques, puis fonction de service"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le diagramme part du besoin et descend vers la matière : on écrit d'abord la fonction de service, on cherche ensuite par quelles fonctions techniques on peut la satisfaire, et l'on aboutit enfin aux solutions technologiques ✓. C'est le sens de lecture qui répond à la question « Comment ? ». Commencer par les solutions reviendrait à choisir les composants avant de savoir ce qu'on leur demande — exactement ce que la méthode cherche à éviter.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Sur l'imprimante 3D, lesquels de ces composants appartiennent à la chaîne d'information ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les trois capteurs fin de course"
+        },
+        {
+          "id": "b",
+          "text": "La résistance chauffante de la tête"
+        },
+        {
+          "id": "c",
+          "text": "La carte électronique"
+        },
+        {
+          "id": "d",
+          "text": "L'afficheur de la façade"
+        },
+        {
+          "id": "e",
+          "text": "Le contrôleur de moteur pas à pas"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "La chaîne d'information capte, traite et restitue : les capteurs fin de course prélèvent l'information (Acquérir), la carte électronique la traite (Traiter) et l'afficheur la restitue à l'utilisateur, en sortie de Communiquer ✓. Les deux autres manipulent de l'énergie, jamais de l'information : la résistance chauffante convertit l'électricité en chaleur sur la branche de chauffe, et le contrôleur de moteur pas à pas distribue l'énergie vers l'actionneur. C'est d'ailleurs sur ce contrôleur qu'arrivent les ordres — recevoir un ordre ne fait pas entrer un composant dans la chaîne d'information.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La fonction technique FT2 « déposer la matière sur le plateau porte-pièce » se décompose en trois sous-fonctions. Lesquelles ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Convertir l'énergie, transmettre le mouvement, guider en translation"
+        },
+        {
+          "id": "b",
+          "text": "Alimenter en fil, déplacer la tête suivant X, déplacer la tête suivant Y"
+        },
+        {
+          "id": "c",
+          "text": "Guider le fil, chauffer la matière, calibrer la matière fondue"
+        },
+        {
+          "id": "d",
+          "text": "Alimenter en fil d'impression, chauffer la matière, calibrer la matière fondue"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour déposer de la matière, il faut l'amener, la rendre fluide, puis en maîtriser la sortie : alimenter en fil d'impression, chauffer la matière, calibrer la matière fondue ✓. Guider le fil existe bien, mais un cran plus bas : c'est une sous-fonction de FT21, pas une sœur de FT21. Déplacer la tête suivant X ou Y appartient à FT3, une autre branche de l'arbre — déposer et déplacer sont deux fonctions techniques distinctes. Quant à convertir, transmettre et guider, ce sont les fonctions génériques d'une chaîne d'énergie, pas la décomposition propre à FT2.",
+      "difficulty": 3
+    }
+  ]
+}

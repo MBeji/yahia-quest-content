@@ -1,0 +1,201 @@
+{
+  "title": "⭐⭐ Révision (type examen) : lire un diagramme F.A.S.T.",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "manuel": {
+    "pages": "17-18, 40",
+    "items": [
+      "C.1 F.A.S.T. de FS1",
+      "Synthèse F.A.S.T. p.40"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "À quoi sert la méthode F.A.S.T. ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "à chiffrer le coût de chaque composant du produit"
+        },
+        {
+          "id": "b",
+          "text": "à illustrer les relations logiques entre les fonctions"
+        },
+        {
+          "id": "c",
+          "text": "à décrire la géométrie des pièces avant leur usinage"
+        },
+        {
+          "id": "d",
+          "text": "à établir l'ordre de montage des pièces d'un mécanisme"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La méthode F.A.S.T. aide à penser le problème de façon objective : elle illustre les relations logiques entre les fonctions et permet ainsi de déterminer la portée du projet ✓. Elle ne chiffre rien, ne dessine aucune pièce et n'ordonne pas un montage — c'est un outil d'analyse des fonctions, pas de fabrication.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans quel ordre se lisent les trois colonnes d'un diagramme F.A.S.T. ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "solutions technologiques, fonctions techniques, fonction de service"
+        },
+        {
+          "id": "b",
+          "text": "fonctions techniques, fonction de service, solutions technologiques"
+        },
+        {
+          "id": "c",
+          "text": "fonction de service, fonctions techniques, solutions technologiques"
+        },
+        {
+          "id": "d",
+          "text": "fonction de service, solutions technologiques, fonctions techniques"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le diagramme part de la fonction de service, la décompose en fonctions techniques, puis associe à chacune ses solutions technologiques ✓. On va donc du besoin à satisfaire vers le dispositif qui le satisfait, du général vers le concret — jamais l'inverse.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Vous parcourez un diagramme F.A.S.T. d'une fonction technique vers la solution technologique qui la réalise. À quelle question répondez-vous ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Comment ?"
+        },
+        {
+          "id": "b",
+          "text": "Pourquoi ?"
+        },
+        {
+          "id": "c",
+          "text": "Quand ?"
+        },
+        {
+          "id": "d",
+          "text": "Combien ?"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "« Comment accomplit-on cette fonction ? » : la réponse est la solution qui la réalise, et on descend donc vers la droite du diagramme ✓. En remontant dans l'autre sens on répondrait à « Pourquoi réalise-t-on cette fonction ? » ; quant à « Quand ? », elle interroge les autres fonctions à réaliser en même temps. La question du coût n'appartient pas à la méthode.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un diagramme F.A.S.T., quelle est la différence entre les opérateurs ET et OU ?\n<svg viewBox=\"0 0 232 160\"><rect x=\"6\" y=\"67\" width=\"50\" height=\"26\" rx=\"4\" fill=\"#0f6e56\" opacity=\"0.16\"/><g fill=\"#fbcfe8\"><rect x=\"86\" y=\"12\" width=\"60\" height=\"26\" rx=\"4\"/><rect x=\"86\" y=\"60\" width=\"60\" height=\"26\" rx=\"4\"/><rect x=\"86\" y=\"122\" width=\"60\" height=\"26\" rx=\"4\"/></g><g fill=\"#bfdbfe\"><rect x=\"176\" y=\"14\" width=\"50\" height=\"22\" rx=\"4\"/><rect x=\"176\" y=\"47\" width=\"50\" height=\"22\" rx=\"4\"/><rect x=\"176\" y=\"77\" width=\"50\" height=\"22\" rx=\"4\"/><rect x=\"176\" y=\"124\" width=\"50\" height=\"22\" rx=\"4\"/></g><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"><rect x=\"6\" y=\"67\" width=\"50\" height=\"26\" rx=\"4\"/><rect x=\"86\" y=\"12\" width=\"60\" height=\"26\" rx=\"4\"/><rect x=\"86\" y=\"60\" width=\"60\" height=\"26\" rx=\"4\"/><rect x=\"86\" y=\"122\" width=\"60\" height=\"26\" rx=\"4\"/><rect x=\"176\" y=\"14\" width=\"50\" height=\"22\" rx=\"4\"/><rect x=\"176\" y=\"47\" width=\"50\" height=\"22\" rx=\"4\"/><rect x=\"176\" y=\"77\" width=\"50\" height=\"22\" rx=\"4\"/><rect x=\"176\" y=\"124\" width=\"50\" height=\"22\" rx=\"4\"/></g><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"><path d=\"M56 80 H72\"/><path d=\"M72 25 V135\"/><path d=\"M72 25 H76\"/><path d=\"M72 73 H76\"/><path d=\"M72 135 H76\"/><path d=\"M146 25 H166\"/><path d=\"M146 135 H166\"/><path d=\"M146 73 H162\"/><path d=\"M162 58 V88\"/><path d=\"M162 58 H166\"/><path d=\"M162 88 H166\"/></g><g fill=\"#0f172a\"><polygon points=\"86,25 76,20 76,30\"/><polygon points=\"86,73 76,68 76,78\"/><polygon points=\"86,135 76,130 76,140\"/><polygon points=\"176,25 166,20 166,30\"/><polygon points=\"176,58 166,53 166,63\"/><polygon points=\"176,88 166,83 166,93\"/><polygon points=\"176,135 166,130 166,140\"/></g><circle cx=\"72\" cy=\"46\" r=\"9\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/><circle cx=\"162\" cy=\"73\" r=\"9\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/><g font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"72\" y=\"50\">?</text><text x=\"162\" y=\"77\">?</text><text x=\"31\" y=\"84\">FS</text><text x=\"116\" y=\"29\">FT 1</text><text x=\"116\" y=\"77\">FT 2</text><text x=\"116\" y=\"139\">FT 3</text><text x=\"201\" y=\"29\">ST 1</text><text x=\"201\" y=\"62\">ST 2</text><text x=\"201\" y=\"92\">ST 3</text><text x=\"201\" y=\"139\">ST 4</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "ET relie des solutions coûteuses, OU des solutions économiques"
+        },
+        {
+          "id": "b",
+          "text": "ET relie des fonctions de service, OU des fonctions techniques"
+        },
+        {
+          "id": "c",
+          "text": "ET relie deux diagrammes entre eux, OU deux colonnes d'un même diagramme"
+        },
+        {
+          "id": "d",
+          "text": "ET relie des solutions toutes nécessaires ensemble, OU des solutions alternatives"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'opérateur ET indique que toutes les branches qu'il relie doivent être réalisées ensemble pour que la fonction soit remplie ; l'opérateur OU indique au contraire des branches alternatives, entre lesquelles on choisit ✓. Ces deux opérateurs portent toute la logique du diagramme : sans eux, on ne saurait pas si deux solutions se cumulent ou se remplacent.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Sur la micro-fraiseuse, la fonction de service FS1 « Usiner une pièce » se décompose en quatre fonctions techniques de premier niveau. Lesquelles de ces propositions en font partie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Positionner et maintenir la pièce"
+        },
+        {
+          "id": "b",
+          "text": "Positionner et maintenir l'outil"
+        },
+        {
+          "id": "c",
+          "text": "Animer l'outil d'un mouvement de rotation autour de son axe z"
+        },
+        {
+          "id": "d",
+          "text": "Distribuer l'énergie électrique aux moteurs"
+        },
+        {
+          "id": "e",
+          "text": "Créer le fichier d'usinage à partir du dessin de la pièce"
+        },
+        {
+          "id": "f",
+          "text": "Assurer les déplacements relatifs de l'outil et de la pièce"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c",
+          "f"
+        ]
+      },
+      "explanation": "FS1 se décompose en quatre fonctions techniques de premier niveau : positionner et maintenir la pièce, positionner et maintenir l'outil, animer l'outil d'un mouvement de rotation autour de son axe z, et assurer les déplacements relatifs de l'outil et de la pièce ✓. Distribuer l'énergie électrique est bien une fonction technique, mais d'un niveau beaucoup plus fin : elle apparaît plusieurs crans plus bas, dans la branche des déplacements. Créer le fichier d'usinage n'est pas une fonction de la machine du tout : c'est le travail du logiciel de C.F.A.O., en amont.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque fonction technique de la micro-fraiseuse à la solution constructive qui la réalise.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Positionner et maintenir l'outil"
+        },
+        {
+          "id": "l2",
+          "text": "Animer l'outil d'un mouvement de rotation autour de son axe z"
+        },
+        {
+          "id": "l3",
+          "text": "Déplacer manuellement le chariot transversal"
+        },
+        {
+          "id": "r1",
+          "text": "La pince porte-outil"
+        },
+        {
+          "id": "r2",
+          "text": "Le moteur de broche"
+        },
+        {
+          "id": "r3",
+          "text": "Le volant de manœuvre"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "La pince porte-outil serre l'outil et le tient en position : elle réalise « positionner et maintenir l'outil ». Le moteur de broche entraîne la broche, donc l'outil, en rotation autour de l'axe z. Le volant de manœuvre, monté sur la seconde sortie d'arbre du moteur, se tourne à la main et déplace le chariot sans aucune commande électrique ✓. Retiens la logique de la dernière colonne d'un F.A.S.T. : à chaque fonction technique correspond un composant bien identifié du dessin d'ensemble.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "title": "⭐⭐ Révision (type examen) : lire l'architecture d'un système",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "manuel": {
+    "pages": "35-36",
+    "items": [
+      "A. Chaînes fonctionnelles",
+      "C. FAST — question 1"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Avant que ne commence l'analyse fonctionnelle interne du micro-tour, dans quel état se trouve le besoin de l'utilisateur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il se déduit du dessin d'ensemble de la machine"
+        },
+        {
+          "id": "b",
+          "text": "Il n'intervient jamais dans l'étude d'un produit"
+        },
+        {
+          "id": "c",
+          "text": "Il reste à formuler à partir des solutions retenues"
+        },
+        {
+          "id": "d",
+          "text": "Il est déjà exprimé dans le cahier des charges fonctionnel"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'analyse fonctionnelle interne part d'un besoin déjà exprimé : le cahier des charges fonctionnel du micro-tour existe avant elle. Son travail commence après, à l'intérieur du produit — rechercher les fonctions techniques, les solutions constructives et les composants qui satisfont chaque fonction de service. Exprimer le besoin et rédiger ce cahier des charges revient à l'analyse fonctionnelle externe, qui la précède ; et un besoin ne se déduit jamais d'un dessin d'ensemble, qui n'est déjà qu'une réponse à ce besoin.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un diagramme F.A.S.T., que signifie l'opérateur ET placé entre deux solutions technologiques ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les deux solutions sont nécessaires ensemble à la même fonction"
+        },
+        {
+          "id": "b",
+          "text": "L'une ou l'autre des deux solutions suffit à la fonction"
+        },
+        {
+          "id": "c",
+          "text": "Les deux solutions se réalisent l'une après l'autre dans le temps"
+        },
+        {
+          "id": "d",
+          "text": "Les deux solutions relèvent de deux fonctions de service distinctes"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'opérateur ET relie des solutions dont la fonction a besoin simultanément : en retirer une empêche la fonction d'être satisfaite. C'est l'opérateur OU qui marque au contraire des branches alternatives, où l'une des solutions suffit. Et le F.A.S.T. décrit une logique de fonctions, pas une chronologie : la question du temps y est portée par « Quand ? », qui se lit verticalement, jamais par ET. Deux solutions reliées par ET servent bien la même fonction, pas deux fonctions différentes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le schéma représente l'architecture fonctionnelle d'un système automatisé. Quel bloc a été effacé, à l'emplacement marqué d'un point d'interrogation ?\n<svg viewBox=\"0 0 300 190\"><text x=\"150\" y=\"16\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\">Chaîne d'information</text><g fill=\"#0f6e56\" opacity=\"0.12\"><rect x=\"20\" y=\"28\" width=\"76\" height=\"36\" rx=\"5\"/><rect x=\"112\" y=\"28\" width=\"76\" height=\"36\" rx=\"5\"/><rect x=\"204\" y=\"28\" width=\"76\" height=\"36\" rx=\"5\"/><rect x=\"8\" y=\"124\" width=\"62\" height=\"36\" rx=\"5\"/><rect x=\"82\" y=\"124\" width=\"62\" height=\"36\" rx=\"5\"/><rect x=\"156\" y=\"124\" width=\"62\" height=\"36\" rx=\"5\"/><rect x=\"230\" y=\"124\" width=\"62\" height=\"36\" rx=\"5\"/></g><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"><rect x=\"20\" y=\"28\" width=\"76\" height=\"36\" rx=\"5\"/><rect x=\"112\" y=\"28\" width=\"76\" height=\"36\" rx=\"5\"/><rect x=\"204\" y=\"28\" width=\"76\" height=\"36\" rx=\"5\"/><rect x=\"8\" y=\"124\" width=\"62\" height=\"36\" rx=\"5\"/><rect x=\"82\" y=\"124\" width=\"62\" height=\"36\" rx=\"5\"/><rect x=\"156\" y=\"124\" width=\"62\" height=\"36\" rx=\"5\"/><rect x=\"230\" y=\"124\" width=\"62\" height=\"36\" rx=\"5\"/></g><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"><path d=\"M96 46 H104\"/><path d=\"M188 46 H196\"/><path d=\"M70 142 H76\"/><path d=\"M144 142 H150\"/><path d=\"M218 142 H224\"/></g><g fill=\"#0f172a\"><path d=\"M104 41 L112 46 L104 51 Z\"/><path d=\"M196 41 L204 46 L196 51 Z\"/><path d=\"M76 137 L82 142 L76 147 Z\"/><path d=\"M150 137 L156 142 L150 147 Z\"/><path d=\"M224 137 L230 142 L224 147 Z\"/></g><path d=\"M150 64 V94 H113 V116\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\"/><path d=\"M109 116 L113 124 L117 116 Z\" fill=\"#0f6e56\"/><text x=\"120\" y=\"90\" font-size=\"9\" font-weight=\"700\" fill=\"#0f6e56\" text-anchor=\"start\">Ordres</text><g font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\"><text x=\"58\" y=\"51\">Acquérir</text><text x=\"150\" y=\"51\">Traiter</text></g><text x=\"242\" y=\"55\" font-size=\"21\" font-weight=\"700\" fill=\"#0f6e56\" text-anchor=\"middle\">?</text><g font-size=\"9\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\"><text x=\"39\" y=\"147\">Alimenter</text><text x=\"113\" y=\"147\">Distribuer</text><text x=\"187\" y=\"147\">Convertir</text><text x=\"261\" y=\"147\">Transmettre</text></g><text x=\"150\" y=\"182\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\">Chaîne d'énergie</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alimenter"
+        },
+        {
+          "id": "b",
+          "text": "Communiquer"
+        },
+        {
+          "id": "c",
+          "text": "Convertir"
+        },
+        {
+          "id": "d",
+          "text": "Distribuer"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le bloc effacé est le troisième de la chaîne d'information, celle du haut : après avoir prélevé l'information (Acquérir) et l'avoir traitée (Traiter), le système la restitue à l'utilisateur. C'est la fonction Communiquer, assurée sur le micro-tour par l'écran. Alimenter, Convertir et Distribuer appartiennent à la chaîne d'énergie, dessinée en dessous — et ils y figurent déjà tous les trois.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quels organes du micro-tour satisfont la fonction technique « Sécuriser la machine » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les volants de commande manuelle des chariots"
+        },
+        {
+          "id": "b",
+          "text": "L'encodeur (16) et le tambour gradué (2)"
+        },
+        {
+          "id": "c",
+          "text": "Le carter de protection et le bouton d'arrêt d'urgence"
+        },
+        {
+          "id": "d",
+          "text": "Les mors du mandrin et les vis de la tourelle"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le micro-tour porte des organes de sécurité désignés comme tels : le carter — le capot de protection — et le bouton d'arrêt d'urgence. Les volants servent à la commande manuelle des chariots, l'encodeur et le tambour gradué donnent une information de position, et les mors et les vis fixent la pièce et l'outil. Aucun de ces composants n'a pour rôle de protéger l'opérateur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur le micro-tour, quel est le rôle du logiciel de F.A.O. ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Convertir l'énergie électrique en énergie mécanique"
+        },
+        {
+          "id": "b",
+          "text": "Créer le fichier d'usinage exécuté par la machine"
+        },
+        {
+          "id": "c",
+          "text": "Mesurer la position réelle des chariots pendant l'usinage"
+        },
+        {
+          "id": "d",
+          "text": "Régler l'origine pièce à la place de l'opérateur"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le logiciel de F.A.O. sert à créer le fichier d'usinage. C'est ensuite l'ordinateur de commande, muni de son propre logiciel, qui assure la lecture et le traitement du G-code, le langage qui décrit les opérations à effectuer. Convertir l'énergie est le travail des moteurs ; mesurer la position revient aux capteurs de la machine ; et l'origine pièce Op reste définie par l'opérateur, jamais par le logiciel.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans la chaîne d'énergie du micro-tour, une sortie est étiquetée « Pertes ». Que représente-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La part de l'énergie qui n'atteint pas la pièce et se dissipe"
+        },
+        {
+          "id": "b",
+          "text": "Les copeaux de matière enlevés au brut pendant l'usinage"
+        },
+        {
+          "id": "c",
+          "text": "Les informations que le système ne parvient pas à traiter"
+        },
+        {
+          "id": "d",
+          "text": "La chute de tension mesurée aux bornes de l'alimentation"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Aucune conversion ni aucune transmission n'est parfaite : à chaque étage, une part de l'énergie entrante ressort sous une forme inutilisable — échauffement des moteurs, frottements dans les guidages. C'est ce que la sortie « Pertes » représente. Les copeaux sont de la matière enlevée, pas de l'énergie ; une information non traitée circulerait dans l'autre chaîne ; et une chute de tension n'est qu'une cause possible de ces pertes, pas la sortie elle-même.",
+      "difficulty": 2
+    }
+  ]
+}

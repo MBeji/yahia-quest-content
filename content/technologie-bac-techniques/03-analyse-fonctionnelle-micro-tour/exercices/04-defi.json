@@ -1,0 +1,173 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : démonter le micro-tour par la pensée",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "manuel": {
+    "pages": "35-38",
+    "items": [
+      "A. Chaînes fonctionnelles",
+      "C. FAST — question 3",
+      "C. FAST — question 5"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Dans le F.A.S.T. du micro-tour, la fonction technique FT51 « Déplacer le traînard suivant l'axe Z » est rattachée à la fonction FT5 « Déplacer l'outil selon les axes X et Z ». En remontant de FT51 vers FT5, à quelle question répond-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "« Comment ? »"
+        },
+        {
+          "id": "b",
+          "text": "« Pourquoi ? »"
+        },
+        {
+          "id": "c",
+          "text": "« Quand ? »"
+        },
+        {
+          "id": "d",
+          "text": "« Combien ? »"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un F.A.S.T. se parcourt dans les deux sens. De gauche à droite, chaque niveau explique comment la fonction précédente est réalisée ; de droite à gauche, il explique pourquoi elle existe. Remonter de FT51 vers FT5 revient donc à répondre à « Pourquoi déplace-t-on le traînard suivant Z ? » — parce qu'il faut déplacer l'outil. Descendre de FT5 vers FT51 aurait, lui, répondu à « Comment ? ». « Quand ? » se lit verticalement, sur les fonctions à réaliser simultanément, et « Combien ? » n'est pas une question du F.A.S.T.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Sur le micro-tour, quelle suite décrit la nature de l'énergie échangée d'un bloc au suivant dans la chaîne d'énergie, depuis la sortie de l'unité d'alimentation jusqu'à la sortie des éléments de transmission ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "mécanique, électrique, électrique, mécanique"
+        },
+        {
+          "id": "b",
+          "text": "électrique, mécanique, mécanique, mécanique"
+        },
+        {
+          "id": "c",
+          "text": "électrique, électrique, mécanique, mécanique"
+        },
+        {
+          "id": "d",
+          "text": "électrique, mécanique, électrique, mécanique"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'énergie reste électrique tant qu'elle n'a pas atteint l'actionneur : l'unité d'alimentation la met en forme, puis la carte de puissance la distribue — deux échanges électriques. C'est le bloc Convertir, c'est-à-dire les moteurs, qui la rend mécanique, et elle le reste dans le bloc Transmettre, où poulies, courroie, vis et écrou ne font que l'acheminer. D'où la suite électrique, électrique, mécanique, mécanique. Le piège courant est de faire basculer l'énergie dès la carte de puissance : cette carte distribue du courant, elle ne convertit rien.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le mandrin porte-pièce (8) est assemblé sur la broche (11) par trois goujons M8×28 (52) et leurs rondelles Grower (53). Quelle liaison cet assemblage réalise-t-il entre le mandrin et la broche ? Le schéma en donne une coupe simplifiée.\n<svg viewBox=\"0 0 320 170\"><rect x=\"20\" y=\"48\" width=\"120\" height=\"76\" fill=\"#0f6e56\" opacity=\"0.12\"/><rect x=\"20\" y=\"48\" width=\"120\" height=\"76\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"140\" y=\"36\" width=\"104\" height=\"100\" fill=\"#0f6e56\" opacity=\"0.12\"/><rect x=\"140\" y=\"36\" width=\"104\" height=\"100\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"244\" y=\"70\" width=\"52\" height=\"32\" fill=\"#fde68a\"/><rect x=\"244\" y=\"70\" width=\"52\" height=\"32\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M140 30 V142\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3\"><path d=\"M112 58 H178\"/><path d=\"M112 86 H178\"/><path d=\"M112 114 H178\"/></g><g fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"><rect x=\"102\" y=\"52\" width=\"10\" height=\"12\"/><rect x=\"102\" y=\"80\" width=\"10\" height=\"12\"/><rect x=\"102\" y=\"108\" width=\"10\" height=\"12\"/></g><ellipse cx=\"140\" cy=\"86\" rx=\"40\" ry=\"56\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><g fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\"><path d=\"M122 26 L144 54\"/><path d=\"M140 150 V143\"/></g><g paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\" text-anchor=\"middle\"><text x=\"64\" y=\"92\" font-size=\"10\" font-weight=\"700\">Broche (11)</text><text x=\"210\" y=\"128\" font-size=\"10\" font-weight=\"700\">Mandrin (8)</text><text x=\"270\" y=\"90\" font-size=\"9\">Pièce</text><text x=\"54\" y=\"24\" font-size=\"9\" text-anchor=\"start\">Goujons (52)</text><text x=\"140\" y=\"158\" font-size=\"9\">Plan de joint</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une liaison pivot"
+        },
+        {
+          "id": "b",
+          "text": "Une liaison hélicoïdale"
+        },
+        {
+          "id": "c",
+          "text": "Une liaison glissière"
+        },
+        {
+          "id": "d",
+          "text": "Une liaison encastrement"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Trois goujons serrés sur un même plan de joint suppriment tout mouvement relatif entre le mandrin et la broche : c'est une liaison encastrement, et elle est indispensable pour que la pièce tourne exactement à la vitesse de la broche. Une liaison pivot laisserait le mandrin tourner librement autour de la broche, qui tournerait alors dans le vide ; une glissière le laisserait coulisser le long de l'axe ; une hélicoïdale le ferait avancer à chaque tour, ce qui le dévisserait de la machine.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La fonction technique FT512112 « Guider la vis (26) en rotation » est satisfaite par le palier de vis mère (45) équipé de deux butées à billes (44). Que doit permettre exactement cette solution ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Laisser la vis tourner et se déplacer librement suivant son axe"
+        },
+        {
+          "id": "b",
+          "text": "Laisser la vis se déplacer suivant son axe tout en l'empêchant de tourner"
+        },
+        {
+          "id": "c",
+          "text": "Laisser la vis tourner sur elle-même tout en l'empêchant de se déplacer suivant son axe"
+        },
+        {
+          "id": "d",
+          "text": "Empêcher à la fois la rotation de la vis et son déplacement suivant son axe"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Si la vis pouvait reculer dans son palier au lieu de rester en place, sa rotation ne pousserait plus l'écrou : le traînard resterait immobile pendant que le moteur tourne. Le palier doit donc autoriser la rotation et interdire la translation — c'est précisément le rôle des butées à billes, qui reprennent l'effort axial. Bloquer aussi la rotation figerait toute la chaîne ; interdire la rotation en laissant la translation intervertirait les rôles de la vis et de l'écrou ; et tout libérer supprimerait la transformation de mouvement.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Le micro-tour transforme un brut en pièce usinée. Sélectionne tous les énoncés exacts sur son architecture fonctionnelle.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sa chaîne d'information reçoit le programme G-code, les consignes de l'utilisateur et des informations de l'environnement"
+        },
+        {
+          "id": "b",
+          "text": "Les ordres élaborés par la chaîne d'information sont envoyés à la chaîne d'énergie"
+        },
+        {
+          "id": "c",
+          "text": "Le fonctionnement de la machine renvoie des informations vers la chaîne d'information"
+        },
+        {
+          "id": "d",
+          "text": "La carte de puissance convertit l'énergie électrique en énergie mécanique"
+        },
+        {
+          "id": "e",
+          "text": "L'écran de la machine assure la fonction Acquérir"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Les trois premiers énoncés décrivent bien les échanges du micro-tour : sa chaîne d'information reçoit le programme G-code, les consignes de l'utilisateur et les informations de l'environnement ; elle élabore les ordres qu'elle envoie à la chaîne d'énergie ; et le fonctionnement de la machine lui renvoie en retour ses propres informations, qui referment la boucle. En revanche la carte de puissance distribue l'énergie électrique sans en changer la nature — convertir est le travail des moteurs — et l'écran assure Communiquer, en fin de chaîne d'information, et non Acquérir, qui est le rôle des capteurs.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un technicien ajoute sur le micro-tour un capteur qui mesure la température du moteur de broche et déclenche une alerte à l'écran. Dans quel bloc de l'architecture fonctionnelle ce capteur vient-il s'insérer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acquérir, dans la chaîne d'information"
+        },
+        {
+          "id": "b",
+          "text": "Communiquer, dans la chaîne d'information"
+        },
+        {
+          "id": "c",
+          "text": "Distribuer, dans la chaîne d'énergie"
+        },
+        {
+          "id": "d",
+          "text": "Convertir, dans la chaîne d'énergie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un capteur prélève une information : quelle que soit la grandeur mesurée, il relève de la fonction Acquérir, en tête de la chaîne d'information. Le piège courant est de le ranger dans la chaîne d'énergie parce qu'il surveille un moteur : ce que le capteur observe ne décide pas de sa place, seule compte la nature de ce qu'il produit — une information, jamais une énergie. L'affichage de l'alerte relève, lui, de Communiquer, en fin de la même chaîne : c'est la conséquence de la mesure, pas le capteur.",
+      "difficulty": 3
+    }
+  ]
+}

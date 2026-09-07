@@ -1,0 +1,161 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : les deux chaînes de la micro-fraiseuse",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "16-18",
+    "items": [
+      "A. chaînes fonctionnelles",
+      "B.2 capteur de portière"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Sur la micro-fraiseuse, quel élément assure la fonction Alimenter de la chaîne d'énergie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "la prise secteur"
+        },
+        {
+          "id": "b",
+          "text": "la carte de puissance"
+        },
+        {
+          "id": "c",
+          "text": "le moteur de broche"
+        },
+        {
+          "id": "d",
+          "text": "le microprocesseur"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Alimenter met en forme l'énergie externe pour la rendre utilisable par le système : ici, l'unité d'alimentation se réduit à la prise secteur ✓. La carte de puissance distribue ensuite cette énergie, le moteur de broche la convertit, et le microprocesseur n'appartient pas à la chaîne d'énergie mais à la chaîne d'information.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le moteur qui entraîne la vis de manœuvre reçoit de l'énergie électrique et restitue un mouvement de rotation. Quelle fonction remplit-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alimenter"
+        },
+        {
+          "id": "b",
+          "text": "Distribuer"
+        },
+        {
+          "id": "c",
+          "text": "Convertir"
+        },
+        {
+          "id": "d",
+          "text": "Transmettre"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le moteur est un actionneur : il change la nature de l'énergie, d'électrique en mécanique. C'est exactement la fonction Convertir ✓. Le piège courant est de répondre Transmettre : transmettre, c'est acheminer un mouvement déjà mécanique, ce que font l'accouplement et la vis de manœuvre en aval du moteur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la nature de l'énergie qui circule entre la carte de puissance et le moteur du chariot ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "mécanique"
+        },
+        {
+          "id": "b",
+          "text": "électrique"
+        },
+        {
+          "id": "c",
+          "text": "thermique"
+        },
+        {
+          "id": "d",
+          "text": "hydraulique"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Entre la carte de puissance, qui distribue, et le moteur, qui convertit, l'énergie est encore électrique ✓ : c'est le moteur qui la rendra mécanique. Sur le schéma de la chaîne, les liaisons portent EE jusqu'au moteur, puis EM après lui — le changement de nature se produit dans l'actionneur, jamais avant.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La chaîne d'information envoie des ordres à la chaîne d'énergie. Quelle fonction de cette dernière les reçoit ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "la fonction Alimenter, réalisée par la prise secteur"
+        },
+        {
+          "id": "b",
+          "text": "la fonction Convertir, réalisée par le moteur"
+        },
+        {
+          "id": "c",
+          "text": "la fonction Transmettre, réalisée par la vis de manœuvre"
+        },
+        {
+          "id": "d",
+          "text": "la fonction Distribuer, réalisée par la carte de puissance"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les ordres arrivent sur la fonction Distribuer ✓ : c'est en laissant passer ou non l'énergie vers l'actionneur que la partie commande décide du mouvement, et c'est pourquoi le distributeur, le contacteur ou la carte de puissance sont des organes commandés. Alimenter fournit l'énergie sans savoir ce qu'il faut en faire, et Convertir comme Transmettre ne font qu'exécuter ce qu'on leur envoie.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La portière de la micro-fraiseuse est équipée d'un capteur. À quelle fonction ce capteur appartient-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "à la fonction Communiquer, dans la chaîne d'information"
+        },
+        {
+          "id": "b",
+          "text": "à la fonction Acquérir, dans la chaîne d'information"
+        },
+        {
+          "id": "c",
+          "text": "à la fonction Distribuer, dans la chaîne d'énergie"
+        },
+        {
+          "id": "d",
+          "text": "à la fonction Alimenter, dans la chaîne d'énergie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un capteur prélève une information — ici l'état, ouvert ou fermé, de la portière — et la transmet à la partie commande : c'est la fonction Acquérir ✓. Le piège courant est de le ranger du côté énergie parce qu'il touche à la sécurité de la machine ; mais il ne transporte aucune puissance, il renseigne seulement, et c'est la partie commande qui exploitera ensuite cette information.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le moteur fait tourner la vis de manœuvre. La noix, solidaire du chariot, est engagée sur cette vis et ne peut pas tourner avec elle. Quel est le rôle de cet ensemble vis-noix ?\n<svg viewBox=\"0 0 300 150\"><rect x=\"90\" y=\"34\" width=\"190\" height=\"28\" rx=\"4\" fill=\"#bfdbfe\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"150\" y=\"62\" width=\"44\" height=\"60\" rx=\"3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M30 104 H278\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3\"/><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"><path d=\"M38 96 L45 112\"/><path d=\"M52 96 L59 112\"/><path d=\"M66 96 L73 112\"/><path d=\"M80 96 L87 112\"/><path d=\"M94 96 L101 112\"/><path d=\"M108 96 L115 112\"/><path d=\"M122 96 L129 112\"/><path d=\"M136 96 L143 112\"/><path d=\"M150 96 L157 112\"/><path d=\"M164 96 L171 112\"/><path d=\"M178 96 L185 112\"/><path d=\"M192 96 L199 112\"/><path d=\"M206 96 L213 112\"/><path d=\"M220 96 L227 112\"/><path d=\"M234 96 L241 112\"/><path d=\"M248 96 L255 112\"/></g><path d=\"M44 84 A 16 16 0 0 1 68 84\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\"/><polygon points=\"72,88 62,85 68,77\" fill=\"#0f6e56\"/><g font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"185\" y=\"53\">chariot</text><text x=\"172\" y=\"86\">noix</text></g><text x=\"235\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f172a\">vis de manœuvre</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "convertir l'énergie électrique du moteur en énergie mécanique"
+        },
+        {
+          "id": "b",
+          "text": "distribuer l'énergie électrique vers le moteur"
+        },
+        {
+          "id": "c",
+          "text": "transformer le mouvement de rotation de la vis en translation du chariot"
+        },
+        {
+          "id": "d",
+          "text": "prélever la position du chariot pour la partie commande"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La vis tourne, la noix ne le peut pas : elle est obligée d'avancer le long de la vis, et elle entraîne le chariot avec elle. L'ensemble vis-noix transforme donc une rotation en translation ✓. La conversion de l'énergie électrique en énergie mécanique a déjà eu lieu en amont, dans le moteur ; et un ensemble purement mécanique ne prélève aucune information.",
+      "difficulty": 3
+    }
+  ]
+}
