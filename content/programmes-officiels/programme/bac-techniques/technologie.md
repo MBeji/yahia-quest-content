@@ -236,7 +236,7 @@ européenne (cône). Contenu de la planche :
   haut à gauche. Repères pointés : **1** (semelle), **2** (chariot transversal, légendé « Table »
   au-dessus du repère 2), **12**, **11**, **3**, **4**, **10**, **9**, **8**, **19**, **5**, **6**,
   **7**, **18**, **17**. Plans de coupe repérés **A-A**, **B-B**, et zone de détail **C**.
-- **Coupe A - A** (en haut à droite) : repères **16** et **13** pointés.
+- **Coupe A - A** (en haut à droite) : un seul repère pointé, **16**.
 - **Détail C à l'échelle 1:1** : repères **13**, **14**, **15** (cale + vis sans tête + écrou).
 - **Coupe B - B à l'échelle 1:1** (en bas à droite) : repères **5**, **10**, **11**, **9**, **4**.
 - **QR code étiqueté `PDF`** en bas à gauche de la planche.
@@ -442,12 +442,17 @@ Elle regroupe quatre représentations :
 - **« Système d'entraînement du fil seul — Echelle:3:10 »** (perspective du seul extrudeur).
 
 *Planche p.23* — cartouche : **« Tête d'impression »**, **Echelle : 5:6**. Contient :
-- une **vue de dessus** : repères **55, 39, 52, 51, 42, 36, 56, 53** ;
-- une **coupe A-A** : repères **41, 63, 40, 38, 65, 68, 64, 47, 54, 48, 45, 62, 49, 37, 50** ;
-- une **vue de face** avec le plan de coupe **A-A** : repères **43, 67, 66, 69** ;
-- **« Détail C — Echelle:5:3 »** : repères **64, 57** (bloc chauffant + buse) ;
-- **« Détail B — Echelle:5:3 »** : repères **46, 35, 58, 59, 60, 44** (galet cranté / galet
-  presseur / filament) ; repères de zones **B** et **C** portés sur la coupe A-A.
+- une **vue de côté** (celle qui porte le plan de coupe **A-A**, flèches « A » en haut et en
+  bas) — repères **43, 47, 48, 49, 37, 50, 35, 69, 66, 67** ;
+- la **coupe A-A** (au centre) : repères **54, 45, 62, 41, 40, 38, 65** ; elle porte aussi les
+  repères de zones **B** et **C** ;
+- une **seconde vue de côté** (face au ventilateur radial) : repères **36, 56, 53, 55, 39, 63,
+  52, 51, 42** ;
+- **« Détail C — Echelle:5:3 »** : repères **68, 64, 57** (tube guide intérieur + bloc chauffant
+  + buse) ;
+- **« Détail B — Echelle:5:3 »** : repères **59, 58, 46, 60, 44** (galet presseur / filament /
+  galet cranté).
+*(Aucune des trois vues principales n'est titrée sur la planche, hormis « A-A » pour la coupe.)*
 
 **4. Nomenclature (p.24–25)** — 69 repères, verbatim :
 
@@ -591,8 +596,10 @@ Diagramme à compléter :
   « Capteurs » (photo d'un micro-interrupteur) ; Traiter → « Carte électronique » ; Communiquer →
   « Fils de liaison ». Liaison vers le bas étiquetée « **Ordres** ».
 - **Chaîne d'énergie** : **Alimenter** → **Distribuer** → **Convertir** → **Transmettre** →
-  bloc final `………` (5 lignes vides à remplir), avec la sortie « **Pertes** » et deux libellés
-  `………………` à compléter (au-dessus et au-dessous du bloc final). Entrée de gauche : « **E.E\*** ».
+  bloc final `………` (5 lignes vides à remplir), avec **deux** sorties de pertes imprimées en
+  rouge — « **Pertes** » en regard de l'entrée EM\*\* et « **Perte** » en regard de l'entrée
+  E<sub>Th</sub>\*\*\* — et deux libellés `………………` à compléter (au-dessus et au-dessous du bloc
+  final). Entrée de gauche : « **E.E\*** ».
   Natures d'énergie sur les liaisons : **EE\***, **EE\***, **EM\*\***, **EM\*\***.
   Processeurs déjà donnés (avec photos) : Alimenter → « Bloc d'alimentation » ; Distribuer →
   « Contrôleur moteur pas à pas » ; Convertir → « Moteur pas à pas » ; Transmettre → « Eléments de
@@ -675,7 +682,7 @@ Colonne **Composants** (vide, 2 lignes pointillées par case). Arbre :
   **SL42STH34-1504A** (X, Y, Z) et **SL42STH40-1504A** (extrudeur) ; **3 capteurs fin de course**
   (p.24-25). Températures affichées à l'écran : **23/200** puis **200/200** ; pas de déplacement
   **0.01mm** et **10mm** (les deux pas intermédiaires sont masqués sur la photo, `[?]`) (p.26).
-  Échelles des planches : **1:6** (p.21), **3:10**, **2:5**, **1:2** (p.22), **5:6** et **5:3**
+  Échelles des planches : **1:6**, **3:10** et **2:5** (p.21) ; **1:2** et **3:10** (p.22) ; **5:6** et **5:3**
   (p.23).
 - **Vocabulaire & terminologie officielle (activité 2)** : impression 3D **FDM** ; buse
   d'impression, plateau d'impression, extrusion, couches fondues ; tête d'impression, galet cranté
@@ -932,10 +939,12 @@ Colonne **Solutions technologiques** (cases vides). Arbre :
 **Schéma cinématique à compléter (p.38)** : schéma cinématique plan de la chaîne
 moteur → vis mère → traînard. Éléments donnés : la légende **Traînard** (flèche vers la liaison
 supérieure), la légende **Moteur (38)** (boîtier à droite), le repère **FT₅₁₃** (flèche vers la
-liaison basse) et le symbole de bâti (hachures) sous l'ensemble. Trois liaisons de la chaîne sont
-entourées de bulles en pointillés avec des étiquettes vides `………` à renseigner (au-dessus de la
-liaison hélicoïdale, du palier intermédiaire et de l'accouplement moteur), plus une étiquette vide
-`………` sur la gauche. La liaison hélicoïdale (symbole en trait bleu ondulé) et l'axe de la vis
+liaison basse) et le symbole de bâti (hachures) sous l'ensemble. Cinq liaisons de la chaîne sont
+entourées de bulles en pointillés. **Quatre** d'entre elles attendent une étiquette `………` vide et
+fléchée : la liaison haute du traînard (étiquette en haut à gauche), la **liaison hélicoïdale**
+(étiquette sur la gauche, sous « Traînard »), le palier intermédiaire posé sur le bâti et
+l'accouplement moteur (étiquettes en haut). La cinquième, la liaison glissière basse, est déjà
+repérée **FT₅₁₃**. La liaison hélicoïdale (symbole en trait bleu ondulé) et l'axe de la vis
 sont tracés ; la liaison glissière du traînard est en trait rouge.
 
 *Question 5 (p.38)* — consigne verbatim :
@@ -1470,10 +1479,11 @@ n'imprime que « Activité 1.1 ».)*
      - Inscrire les spécifications géométriques et les états de surfaces demandés.
      - Placer la tolérance nécessaire au bon fonctionnement du mécanisme.
 
-     Figure : à gauche la vue **A-A** (contour circulaire, plan de coupe **B-B** repéré, cadre de
-     tolérance géométrique vide, référence **A**) ; à droite la vue **B-B** (fourreau en long,
-     plan de coupe **A-A** repéré, deux cadres de tolérance vides, un symbole de rugosité,
-     un repère de référence). Mention **Echelle: 3:4**.
+     Figure : à gauche la vue **A-A** (contour circulaire, plan de coupe **B-B** repéré, un
+     cadre de tolérance géométrique vide attaché à une cote fléchée, sans lettre de référence) ;
+     à droite la vue **B-B** (fourreau en long, plan de coupe **A-A** repéré, deux cadres de
+     tolérance vides, **deux** symboles de rugosité, la référence encadrée **A** attachée à
+     l'épaulement gauche, un Ø porté sur une cote). Mention **Echelle: 3:4**.
   2. Compléter le dessin de définition du moyeu (11) par :
      - La vue de face en demi coupe A-A ;
      - La vue de gauche en coupe B-B.
@@ -1868,7 +1878,7 @@ présentation du support et son travail demandé sont donc décrits en deux endr
     « **Electrode E2** », repère du trièdre **x / y / z** (origine **O**) ; repères visibles :
     **17, 46, 5, 7, 40, 41, 42, 16, 6, 43, 45, 21, 1, 2** ; plans de coupe **B**, **C**, **D**,
     **E**, **F**, **G** repérés ;
-  - une **coupe F-F** — repères **39**, **16** ;
+  - une **coupe F-F** — repère **39** ;
   - une **coupe B-B** — repères **22, 30, 29, 11, 12, 14, 13, 44** ;
   - une **coupe C-C** — repères **5, 23, 24, 25, 31, 32** ;
   - une **coupe G-G (sans les pièces 20)** — repères **27, 28, 5, 3** ;
@@ -1879,10 +1889,11 @@ présentation du support et son travail demandé sont donc décrits en deux endr
 
 - **Dessin d'ensemble du vérin (p.62)** — cartouche : **« VERIN PNEUMATIQUE (Pince de soudage) »**,
   **Echelle : 7:12**. Dessin imprimé en rotation ; il comporte :
-  - une **coupe B-B** (bloc arrière) — repères **70, 71, 72, 6, 21** ; plan de coupe **A** repéré ;
+  - une **coupe B-B** (vérin en travers, du bloc arrière au tourillon avant) — repères
+    **70, 71, 72, 6, 21** à gauche et **69, 2** à droite ; plan de coupe **A** repéré ;
   - une **coupe A-A** (vérin complet en long) — repères portés en haut, de gauche à droite :
     **55, 58, 51, 53, 52, 49, 65, 63, 64, 68, 67, 61**, puis **59, 62, 60** et **6** ; repères
-    portés en bas : **69, 2, 48, 56, 57, 66, 50, 47, 54, 1** ; deux repères de chambre
+    portés en bas : **48, 56, 57, 66, 50, 47, 54, 1** ; deux repères de chambre
     **R1** et **R2** ; plan de coupe **B** repéré ;
   - une **vue extérieure** (non coupée) du vérin, en bas à droite ;
   - l'annotation fléchée « **Alimentation en air comprimé (sortie de tige)** » ;
@@ -2088,11 +2099,14 @@ présentation du support et son travail demandé sont donc décrits en deux endr
    *Schéma cinématique imprimé (p.66)* : mécanisme plan tracé en couleurs dans le repère
    `(O ; x, y, z)` (z sortant, symbole ⊙). Liaisons pivot figurées par des cercles aux points
    **A, B, C, D, E** ; deux points repérés **F** et **G** sur les extrémités actives ; une liaison
-   glissière figurée par un rectangle (pivot glissant) entre B et A. Le point **C** et le point
-   **D** portent le symbole de bâti (hachures) ; le bloc « **Bâti** » est hachuré en bas à droite.
+   glissière figurée par un rectangle (pivot glissant) entre B et A. Le point **C** porte
+   directement le symbole de bâti (trait + hachures) ; le point **D** est un pivot relié au bloc
+   « **Bâti** », hachuré en bas à droite, par le membre repéré **S3**.
    Annotations imprimées : « Tôles à souder (fixes par rapport au bâti) », « Electrode E1 »,
-   « Electrode E2 », « **S1** », « **S2** », « **S3** ». Quatre lignes de rappel pointillées
-   (leaders vides) attendent les repères des pièces à placer par l'élève.
+   « Electrode E2 », « **S1** », « **S2** », « **S3** » — toutes posées sur un trait de rappel
+   **plein**. **Trois** lignes de rappel **pointillées** (leaders vides) attendent les repères des
+   pièces à placer par l'élève : une sur le membre vert au-dessus de **E**, une sur le membre cyan,
+   une sur le membre magenta.
 2. « Chercher les classes d'équivalences des pièces cinématiquement liées suivantes : »
    Tableau à trois lignes à compléter :
    | Classe | Amorce imprimée |
@@ -2266,7 +2280,7 @@ bas de chacun. Repères pointés, dessin 1 : à gauche **5, 4, B1', 23', 20, 18,
   e. « Reporter la cote fonctionnelle issue de la chaine de cotes. »
 - Figure : photo 3D du tourillon (corps prismatique percé, avec téton cylindrique latéral et
   trous taraudés) ; vue en coupe **A-A** partielle ; vue avec traces du plan de coupe **A-A** ;
-  troisième vue partielle. Deux cotes `Ø …` vides, un symbole d'état de surface vide, trois cadres
+  troisième vue partielle. Deux cotes `Ø …` vides, un symbole d'état de surface vide, **deux** cadres
   de tolérance géométrique vides référencés **A**, et le repère de référence **A**.
 
 **2. Dessin de définition du palier avant (70)** (p.72) — *Échelle imprimée : `Echelle:1:2`*
@@ -2280,8 +2294,10 @@ bas de chacun. Repères pointés, dessin 1 : à gauche **5, 4, B1', 23', 20, 18,
   e. « Reporter la cote fonctionnelle issue de la chaine de cotes. »
 - Figure : photo 3D du palier (plaque à quatre trous et un grand alésage) ; vue **B-B** partielle ;
   vue de face avec traces des plans de coupe **B-B** et **C-C** ; libellé **C-C** posé sans dessin
-  (la section sortie est à produire par l'élève). Quatre cadres de tolérance géométrique vides
-  (dont trois référencés **A**), repère de référence **A**, un symbole d'état de surface vide.
+  (la section sortie est à produire par l'élève). Quatre cadres de tolérance géométrique vides —
+  **deux à trois cases référencés A** (haut-droite et bas), **deux à deux cases sans lettre de
+  référence** (haut-gauche et milieu) —, repère de référence **A**, un symbole d'état de surface
+  vide.
 
 **3. Dessin de définition de la biellette (7)** (p.73) — *Échelle imprimée : `Echelle:1:3`*
 - Données : « Le dessin d'ensemble de la pince de soudage. » ; « Le dessin en 3D de la biellette (7). » ;
@@ -2911,7 +2927,7 @@ Un QR code étiqueté **PDF** figure en bas à droite de la page.
        | Fixer l'arbre creux (17) sur le corps porte-broche (3). | *(à compléter)* |
        | Guider en rotation la broche (36). | *(à compléter)* |
 
-     - g. **(p.94)** « En se référant au dossier technique de la tête de la fraiseuse universelle, compléter le schéma cinématique par les symboles normalisés des liaisons et les repères des pièces. » — schéma cinématique partiel imprimé : seul le repère **26** est donné ; sept emplacements en pointillés sont à renseigner ; étiquettes déjà présentes : *Broche (Porte outil)*, *Fraise à deux tailles*, *Arbre d'entrée horizontal*, *Moteur électrique + Boite des vitesses*, avec deux liaisons au bâti (hachures de bâti).
+     - g. **(p.94)** « En se référant au dossier technique de la tête de la fraiseuse universelle, compléter le schéma cinématique par les symboles normalisés des liaisons et les repères des pièces. » — schéma cinématique partiel imprimé : seul le repère **26** est donné ; cinq emplacements en pointillés sont à renseigner ; étiquettes déjà présentes : *Broche (Porte outil)*, *Fraise à deux tailles*, *Arbre d'entrée horizontal*, *Moteur électrique + Boite des vitesses*, avec deux liaisons au bâti (hachures de bâti).
 - **Vocabulaire & terminologie officielle** : situation déclenchante, mandrin porte-fraise, mandrin à pince, cône porte-outil, surfaces fonctionnelles, surfaces de contact, mobilité supprimée, nature des surfaces, mise en position (MIP), maintien en position (MAP), fonction technique, solution constructive, schéma cinématique, symboles normalisés des liaisons, dossier technique, lardon, tirant, rainure de clavette.
 
 ---
@@ -2927,7 +2943,7 @@ Un QR code étiqueté **PDF** figure en bas à droite de la page.
 > **Quels sont les éléments à manœuvrer pour effectuer cette opération ?**
 
 - **Consigne de sécurité (p.95, en rouge, verbatim)** : « Respecter les règles de sécurité durant le déroulement de l'activité. »
-- **Ressources fournies** : « En manipulant la machine et par référence aux dessins 3D ci-dessous. » — **p.95** : vue 3D éclatée du bâti fixe (1), du carter (2) et de sa visserie, avec repères **1**, **51**, **2**, et trois agrandissements **DÉTAIL A** (repères **53**, **52** et un repère en pointillés à trouver), **DÉTAIL B**, **DÉTAIL C**, plus une vue « **Perspective de (51)** » (vis à deux méplats) ; plusieurs bulles de repère sont laissées vides (« …. ») ; **p.96** : vue en perspective éclatée des roues coniques (3 vis, roue dentée, entretoise, couronne) et perspective en 1/4 de coupe des mêmes pièces, toutes bulles vides ; QR code **3D**.
+- **Ressources fournies** : « En manipulant la machine et par référence aux dessins 3D ci-dessous. » — **p.95** : vue 3D éclatée du bâti fixe (1), du carter (2) et de sa visserie, portant les lettres de zone **A**, **B**, **C**, avec repères **1**, **51**, **2**, et trois agrandissements **DÉTAIL A** (repères **53**, **52** et un repère en pointillés à trouver), **DÉTAIL B**, **DÉTAIL C**, plus une vue « **Perspective de (51)** » (vis à deux méplats) ; plusieurs bulles de repère sont laissées vides (« …. ») ; **p.96** : vue en perspective éclatée des roues coniques (3 vis, roue dentée, entretoise, couronne, tenon parallélépipédique — c'est lui qui porte deux des six bulles vides) et perspective en 1/4 de coupe des mêmes pièces, toutes bulles vides ; QR code **3D**.
 - **Données numériques de l'énoncé** : orientation de l'axe de la broche à **45°** par rapport à la position verticale ; « les quatre écrous (53) » ; nomenclature partielle : M12x47 (6 vis), M12 (14 rondelles), M12 (8 écrous).
 
 **Nomenclature partielle (p.95, verbatim)** :
@@ -3043,7 +3059,7 @@ Un QR code étiqueté **PDF** figure en bas à droite de la page.
 >
 > **Quelle solution d'assemblage peut-on adopter pour minimiser le coût et le temps de réparation à la fois ?**
 
-- **Ressources fournies** : « **II. Travail demandé** (voir dessin d'ensemble) » (dessin d'ensemble p.89) ; diagramme F.A.S.T. des deux solutions S1/S2 (p.100) ; **p.101** vue en coupe partielle à compléter, portant les repères **65** (pièce à ajouter, non nomenclaturée dans cette tranche) et **14**, représentant la roue conique montée sur l'arbre ; deux vues 3D de l'assemblage roue conique/arbre avec clavette (en rouge) et deux QR codes **3D**.
+- **Ressources fournies** : « **II. Travail demandé** (voir dessin d'ensemble) » (dessin d'ensemble p.89) ; diagramme F.A.S.T. des deux solutions S1/S2 (p.100) ; **p.101** vue en coupe partielle à compléter représentant la roue conique montée sur l'arbre : le repère **65** désigne la **roue conique elle-même**, dessinée en coupe (repère absent de toute nomenclature de la tranche, qui s'arrête à 64), et le repère **14** l'arbre (pignon arbré) ; ce qui reste à tracer est la solution constructive choisie, pas la pièce (65) ; deux vues 3D de l'assemblage roue conique/arbre avec clavette (en rouge) et deux QR codes **3D**.
 - **Données numériques de l'énoncé** : barème de pondération **0 : Mauvais ; 1 : Moyen ; 2 : Bien ; 3 : Très bien** ; repères (14), (9), (65).
 - **Travail demandé** :
   1. **(p.100)** « On désire chercher la solution constructive optimale assurant l'assemblage démontable entre l'arbre (9) et la roue conique par les solutions S1 et S2 ci-dessous : » — diagramme imprimé, fonction principale encadrée : « **Assurer une liaison encastrement entre l'arbre (14) et la roue conique.** »
@@ -3236,7 +3252,7 @@ Un QR code étiqueté **PDF** figure en bas à droite de la page.
      | Lier en translation | *(2 lignes vierges)* |
 
   4. **(p.110)** « Compléter à l'échelle de dessin la nouvelle solution. » — « **NB : Utiliser des composants normalisés.** » *(dessin à l'échelle 1:1)*
-  5. **(p.110)** « Refaire le même travail en utilisant le logiciel 2D approprié. » *(QR code **DWG**)*
+  5. **(p.110)** [le manuel imprime « **5-** », seul cas de la tranche] « Refaire le même travail en utilisant le logiciel 2D approprié. » *(QR code **DWG**)*
 - **Vocabulaire & terminologie officielle** : réglage axial, portée (correcte) des dents, liaison encastrement, solution technologique, F.A.S.T partiel, lier en rotation / lier en translation, clavette // (parallèle) + rainure, jeu interne des roulements, position axiale, réglage simultané, cales, composants normalisés, logiciel 2D.
 
 ---
@@ -3254,7 +3270,7 @@ Un QR code étiqueté **PDF** figure en bas à droite de la page.
 > **Comment peut-on remédier à ce problème ?**
 
 - **Consigne de sécurité (p.111, en rouge, verbatim)** : « Respecter les règles de sécurité durant le déroulement de l'activité. »
-- **Ressources fournies** : « Après observation et manipulation du réducteur et par référence à son dossier technique. » ; **p.112** schéma vierge arbre + deux paliers à compléter ; dessin en coupe du réducteur à compléter (**Echelle:3:4**) portant les repères **9**, **3**, **1**, **4**, **18** et les deux emplacements de roulements notés **R₁** et **R₂** ; QR code **DWG**.
+- **Ressources fournies** : « Après observation et manipulation du réducteur et par référence à son dossier technique. » ; **p.112** schéma vierge arbre + deux paliers à compléter ; dessin en coupe du réducteur à compléter (**Echelle:3:4**) portant les repères **9**, **3**, **1**, **4**, **18** et les deux roulements repérés **R₁** et **R₂**, déjà tracés en coupe ; QR code **DWG**.
 - **Données numériques de l'énoncé** : repères (19), (1), (4), (3), (9), (18), R1, R2 ; échelle **3:4** du dessin p.112.
 - **Travail demandé** (titre imprimé : « **Étude du guidage en rotation de la vis sans fin (1)** ») :
   1. **(p.111)** « Démonter le couvercle (4) puis la vis sans fin (1) et identifier le type de roulements choisi par le constructeur ? » (2 lignes)
@@ -3279,12 +3295,12 @@ Un QR code étiqueté **PDF** figure en bas à droite de la page.
   - **Choix argumenté d'une solution** : diagramme **F.A.S.T. partiel** (fonction → solution) et **grille de critères pondérée 0-3** (précision de MIP, actions transmissibles, fiabilité, maintenabilité, encombrement, esthétique, coût).
   - **Guidage en rotation par roulements** : identification du type (billes à contact radial, rouleaux coniques, butée/douille à aiguilles), **montage en « X » / en « O »**, réglage du jeu de fonctionnement et du jeu interne, différence de dimensions entre deux roulements, arrêts en translation des bagues, lubrification (type de lubrifiant, graisseur, joint feutre, voyant de niveau d'huile), étanchéité et **tolérances des portées**.
   - **Schéma cinématique** à compléter par les **symboles normalisés** des liaisons et les repères des pièces (p.94).
-  - **CAO** : assemblage 3D sous **SolidWorks** (p.96, p.101), reprise en **2D / DWG** (p.110, p.112) ; ressources numériques par QR codes (PDF, animation, réalité augmentée, 3D, vidéo, DWG).
+  - **CAO** : assemblage 3D sous **SolidWorks** (nommé p.96 seulement ; la p.101 dit « le modeleur 3D **approprié** »), reprise en **2D / DWG** (p.110, p.112) ; ressources numériques par QR codes (PDF, animation, réalité augmentée, 3D, vidéo, DWG).
 - ⛔ **EXCLU / seulement mentionné dans p.87–112** :
   - **Aucun encadré de cours, de synthèse, de « Retenir » ou de définition** : c'est un **manuel d'activités**. Tous les tableaux, graphes, F.A.S.T. et schémas sont imprimés **vierges**, à remplir par l'élève ; aucun corrigé n'est donné.
   - **Aucun tableau normalisé des liaisons mécaniques** (nom de la liaison / degrés de liberté / symbole / exemple) ni **aucune classe d'équivalence** dans cette tranche : les degrés de liberté n'apparaissent que sous forme de colonnes vides Tx…Rz à cocher (p.93, p.107). *(Le manuel en porte bien une : la **Synthèse du thème, p.127–128**, transcrite plus bas — elle donne les définitions de liaison, d'assemblage et de guidage en rotation que ces pages font seulement manipuler.)*
   - **Aucun calcul** : pas de dimensionnement, pas de durée de vie de roulement, pas de charge chiffrée, pas de rapport de transmission calculé (les nombres de dents sont donnés en nomenclature, jamais exploités numériquement ici).
-  - Le repère **65** (p.101) et les repères manquants des vues éclatées (p.95, p.96, p.99, p.103) ne sont **pas** nomenclaturés : ils font partie du travail de l'élève.
+  - Le repère **65** (p.101) n'est nomenclaturé nulle part (la nomenclature de la tête s'arrête à 64) ; les bulles laissées vides des vues éclatées (p.95, p.96, p.103) sont, elles, à renseigner par l'élève. *(La vue éclatée de la p.99 est, à l'inverse, entièrement repérée : 62, 63, 37, 28, 38, 64.)*
   - Les désignations des roulements **12, 40 et 45** de la tête universelle sont imprimées en pointillés (à identifier par l'élève), donc **non renseignées par la source**.
   - La séquence annoncée p.87 (« Conception assistée par ordinateur (CAO) ») n'est pas traitée comme une leçon : elle n'apparaît que par consignes ponctuelles d'usage d'un modeleur 3D / d'un logiciel 2D.
   - Le contenu des ressources derrière les QR codes (animations, réalité augmentée, fichiers 3D/DWG/PDF) n'est pas transcriptible depuis la page.
@@ -4243,11 +4259,14 @@ sommaire p.5 la désigne « Transmission de mouvement ». Bandeau de tête : « 
 | 18 | 3 | Vis à tête fraisée fendue M5-20 | | |
 
   - **Dessin d'ensemble p.139**, cartouche « **TOUR PARALLELE — Embrayage** », **Echelle: 1:2**.
-    Vue en coupe portant les repères 1 à 18 ; une flèche horizontale **F** indique le sens de
-    l'effort presseur sur l'arbre de sortie. Sous la coupe : « **Vue suivant F (3 et 13) — Echelle
-    reduit** [sic] » (vue circulaire montrant 4 vis réparties sur un cercle et le moletage), et
-    deux vues de ressort en élévation repérées **D** et **C** (deux longueurs de ressort
-    différentes, cotées symboliquement D et C).
+    Vue en coupe portant les repères 1 à 18 ; une flèche **F**, à l'extrémité droite (côté barre
+    de chariotage), est la flèche d'**observation** de la vue légendée juste dessous — le manuel
+    n'indique aucun effort sur ce dessin. Sous la coupe : « **Vue suivant F (3 et 13) — Echelle
+    reduit** [sic] », vue circulaire portant **3 vis** à tête fendue et 3 logements en trait
+    interrompu (conforme à la nomenclature p.138 : `18 | 3 | Vis à tête fraisée fendue M5-20`) —
+    **aucun moletage n'y est dessiné** —, surmontée d'un arc à double flèche **C ↔ D** ; puis deux
+    vues de ressort en élévation repérées **D** et **C**, que cet arc rattache aux deux positions
+    (deux longueurs de ressort différentes, cotées symboliquement D et C).
     ⚠️ Aucune cote chiffrée n'est portée : les rayons R et r demandés en p.141 doivent être
     **relevés à la règle puis convertis par l'échelle 1:2**.
   - **Perspective éclatée de l'embrayage (p.140)** : toutes les pièces alignées, avec des lignes
@@ -4296,7 +4315,7 @@ sommaire p.5 la désigne « Transmission de mouvement ». Bandeau de tête : « 
        On donne : … » *(données ci-dessus)*
        Trois cadres de réponse imprimés en bas de page : **R = .......................**,
        **r = .......................**, **C\_t = .......................**
-       *(La formule à employer est celle encadrée p.135 ; elle n'est pas réimprimée ici.)*
+       *(La formule à employer est celle de la p.135 — imprimée là en ligne de texte courant, hors de tout encadré ; elle n'est pas réimprimée ici.)*
 - **Vocabulaire & terminologie officielle** : barre de chariotage, vis mère, traînard, butée de
   barre de chariotage, moletage, flasque, plaquette de frottement, butée à aiguilles, roulement à
   aiguilles, anneau élastique, ergot, manchon, transmission par obstacle / par adhérence,
@@ -8544,14 +8563,14 @@ de fin de thème est rattachée au dernier chapitre de son thème.
 
 | #   | slug | notion | manuel élève (code · pages) |
 | --- | ---- | ------ | --------------------------- |
-| 1 | `01-analyse-fonctionnelle-micro-fraiseuse` | Analyse fonctionnelle interne d'un produit — Activité 1 : micro-fraiseuse. Actigramme A-0, diagramme F.A.S.T., fonctions techniques et solutions constructives | `228462` · p.12–18 |
+| 1 | `01-analyse-fonctionnelle-micro-fraiseuse` | Analyse fonctionnelle interne d'un produit — Activité 1 : micro-fraiseuse. Chaînes fonctionnelles (chaîne d'énergie / chaîne d'information), diagramme F.A.S.T., fonctions techniques et solutions constructives | `228462` · p.12–18 |
 | 2 | `02-analyse-fonctionnelle-imprimante-3d` | Analyse fonctionnelle interne d'un produit — Activité 2 : imprimante 3D. Chaînes fonctionnelles, F.A.S.T. et dossier technique | `228462` · p.19–30 |
 | 3 | `03-analyse-fonctionnelle-micro-tour` | Analyse fonctionnelle interne d'un produit — Activité 3 : micro tour, puis synthèse du thème | `228462` · p.31–40 |
 | 4 | `04-communication-technique-perceuse-sensitive` | Communication technique — Activité 1 : perceuse sensitive. Lecture d'un dessin d'ensemble, graphe de montage et de démontage, cotation fonctionnelle, dessin de définition | `228462` · p.41–50 |
 | 5 | `05-communication-technique-poupee-mobile` | Communication technique — Activité 2 : poupée mobile. Lecture d'un dessin d'ensemble, graphe de montage et de démontage, cotation fonctionnelle, dessin de définition | `228462` · p.51–59 |
 | 6 | `06-communication-technique-pince-de-soudage` | Communication technique — Activité 3 : pince de soudage par point. Lecture d'un dessin d'ensemble et cotation fonctionnelle | `228462` · p.60–74 |
 | 7 | `07-communication-technique-machine-essai-traction` | Communication technique — Activité 4 : machine d'essai de traction, puis synthèse du thème | `228462` · p.75–86 |
-| 8 | `08-assemblages-tete-universelle-fraiseuse` | Typologie des assemblages — Activité 1 : tête universelle de la fraiseuse. Liaisons mécaniques, assemblages, guidage en rotation | `228462` · p.87–103 |
+| 8 | `08-assemblages-tete-universelle-fraiseuse` | Typologie des assemblages — ouverture du thème (p.87 : séquence, composantes des compétences, carte du manuel) puis Activité 1 : tête universelle de la fraiseuse. Liaisons mécaniques, assemblages, guidage en rotation | `228462` · p.87–103 |
 | 9 | `09-assemblages-extrudeuse-pate-a-savon` | Typologie des assemblages — Activité 2 : extrudeuse de pâte à savon. Liaisons mécaniques, assemblages, guidage en rotation | `228462` · p.104–112 |
 | 10 | `10-assemblages-chariot-elevateur` | Typologie des assemblages — Activité 3 : chariot élévateur à 3 roues, puis synthèse du thème | `228462` · p.113–128 |
 | 11 | `11-transmission-embrayage-a-disque` | Transmission de puissance — Activité 1 : maquette d'embrayage à disque. Étude d'embrayage | `228462` · p.129–135 |
@@ -8608,34 +8627,45 @@ de fin de thème est rattachée au dernier chapitre de son thème.
   technologie actuel », p.6) sans le reproduire. Le scope de cette fiche est donc celui du
   manuel, qui en est l'application, et non celui du texte curriculaire.
 
-### 6.3 Contrôle indépendant (R-7) — ce qu'il a trouvé, et ce qui reste dû
+### 6.3 Contrôle indépendant (R-7) — deux passes, et ce que la seconde a appris de la première
 
-Deux contrôleurs à contexte vierge, n'ayant écrit aucune ligne de ce qu'ils relisaient, ont
-confronté cette fiche **aux pages du manuel** — page ouverte d'abord, fiche lue ensuite —, chacun
-sur une moitié. **105 pages ouvertes sur 288 (36 %)**, dont les six synthèses de fin de thème
-vérifiées mot à mot, toutes les formules, et les bornes de chaque chapitre.
+Des contrôleurs à contexte vierge, n'ayant écrit aucune ligne de ce qu'ils relisaient, ont
+confronté cette fiche **aux pages du manuel** — page ouverte d'abord, fiche lue ensuite.
 
-| Moitié | Verdict | Substantielles | De forme |
-| ------ | ------- | -------------- | -------- |
-| p.145–288 | **au-dessus de la barre** | 0 | 6 |
-| p.1–144 | **sous la barre** | 3 | 9 |
+**Première passe, par sondage.** 105 pages sur 288 (36 %), les six synthèses vérifiées mot à mot,
+toutes les formules, les bornes de chaque chapitre. La moitié p.145–288 passe la barre (0 erreur
+substantielle) ; la moitié p.1–144 la rate (3 substantielles, dont une invention). Le protocole
+commande alors la re-lecture **intégrale** de la moitié fautive.
 
-**Les 18 défauts ont été corrigés.** Les trois substantielles étaient : une **invention** (des
-cases à compléter décrites sous deux blocs de la p.16 qui n'en portent pas), un **contresens sur
-la source** (« aucune sous-activité 3.x n'est encore imprimée », alors que 3.1 et 3.2 le sont et
-sont transcrites ici même), et une **formule annoncée « encadrée »** p.135 qui est en ligne de
-texte courant, assortie d'une légende de symboles que le manuel n'imprime pas.
+**Seconde passe, intégrale sur p.1–144.** Cinq contrôleurs, **133 pages ouvertes une par une**,
+planches redressées et fils de rappel suivis jusqu'à leur point.
 
-**Ce que le contrôle a confirmé** : aucune formule fausse, aucune plage de chapitre fausse,
-aucune activité omise, et — c'est la vérification la plus discriminante — **aucun des 40 constats
-du §6.2 testés n'est fabriqué**. Les trois défauts d'impression que cette fiche impute au manuel
-(le couple d'embrayage p.212, la cylindrée p.215, les signes manquants p.251) ont été vérifiés à
-l'agrandissement : ils sont réels.
+| Plage | Substantielles | De forme |
+| ----- | -------------- | -------- |
+| p.12–40 | 7 | 8 |
+| p.41–64 | 4 | 12 |
+| p.65–86 | 4 | 5 |
+| p.87–112 | 3 | 9 |
+| p.113–144 | 3 | 7 |
 
-⚠️ **Ce qui reste dû.** Le protocole commande la re-lecture intégrale dès trois erreurs
-substantielles : elle est **due sur p.1–144** et n'a pas été faite. C'est pourquoi le registre
-porte `complete` et non `validee-r7` — la profondeur est acquise sur la totalité de la source, la
-validation indépendante ne l'est pas.
+**Les 21 substantielles ont été corrigées**, ainsi que les 18 de la première passe.
+
+**Ce que ces deux passes établissent, et qui vaut au-delà de cette fiche.** Le sondage avait
+trouvé 3 défauts sur p.1–144 ; la relecture intégrale en a trouvé 21 — **sept fois plus**. Et ces
+21 sont d'un seul genre : *un détail inventé là où le manuel imprime du vide*. Sept emplacements
+en pointillés annoncés là où la page en porte cinq, quatre vis là où il y en a trois, un « effort
+presseur » prêté à une simple flèche d'observation, une pièce « à ajouter » qui est déjà dessinée,
+un actigramme A-0 attribué à sept pages qui n'en portent aucun. Le texte, lui, est excellent : les
+verbatims, les 500 lignes de nomenclature, les arbres F.A.S.T. et les données chiffrées ont été
+recoupés sans écart. **Ce qui casse, c'est la lecture des planches** — les repères sont bien lus,
+mais regroupés par proximité sur une page tournée plutôt que suivis jusqu'à la vue qui les porte.
+
+⚠️ **Ce qui reste dû.** La moitié **p.145–288 n'a eu qu'un sondage** (42 %), et son verdict propre
+doit se lire à la lumière de ce qui précède : le sondage de l'autre moitié était propre lui aussi,
+et l'intégrale y a trouvé vingt-et-un défauts. Rien ne permet de supposer que cette moitié-ci en
+soit exempte. Une re-lecture intégrale de p.145–288 est donc **due**, et c'est pourquoi le registre
+porte `complete` et non `validee-r7` : la profondeur est acquise sur la totalité de la source, la
+validation indépendante ne l'est qu'à moitié.
 
 ### 6.2 Zones incertaines relevées à la transcription
 
@@ -8687,9 +8717,11 @@ validation indépendante ne l'est pas.
 - p.42 : légende de la photo « **Etau** », sans accent (la mise en situation écrit « étau ») — `[sic]`.
 - p.43 : annotation de la perspective « **Foureau (4) (crémaillère)** » — la nomenclature p.44 et
   tout le reste du manuel écrivent « Fourreau » — `[sic]`.
-- p.43 : le repère **23'** apparaît sur le dessin d'ensemble (et p.47, p.48) alors que la
-  nomenclature p.44 ne liste qu'un repère **23** (« Écrou hexagonal », Nbr. 2). Le manuel désigne
-  ainsi le second des deux écrous (contre-écrou) sans lui donner de ligne propre — signalé, non corrigé.
+- p.47 et p.48 : le repère **23'** apparaît sur le filogramme et son tableau d'outillages
+  (p.47, « Déposer le contre écrou (23') ») puis en tête de la figure de la p.48, alors que la
+  nomenclature p.44 ne liste qu'un repère **23** (« Écrou hexagonal », Nbr. 2) et que le dessin
+  d'ensemble p.43 ne porte, lui, que **23**. Le manuel désigne ainsi le second des deux écrous
+  (contre-écrou) sans lui donner de ligne propre — signalé, non corrigé.
 - p.48 et p.56 : les deux encadrés « Situation problème » écrivent « la détermination des **côtes**
   d'une pièce » au lieu de « cotes » ; p.56 écrit en outre « leurs chaînes de **côtes** » —
   transcrits tels quels, notés `[sic]`. Le corps des questions, lui, écrit bien « cotes ».
