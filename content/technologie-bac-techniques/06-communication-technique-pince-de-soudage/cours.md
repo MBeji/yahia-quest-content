@@ -175,16 +175,18 @@ Poser une condition et **vérifier** une condition sont deux exercices différen
 3. **Conclure** en confrontant l'intervalle [Ja mini ; Ja maxi] obtenu à l'intervalle exigé. Les **deux** bornes doivent tenir : un jeu qui reste positif mais devient trop grand est un **échec**, exactement comme un jeu qui devient négatif.
 :::
 
-::: exemple Une condition qui ne passe pas
-On exige 0 ≤ Ja ≤ 0,2 avec a6 = 57,40 ± 0,05 · a2 = 54 ± 0,02 · a69 = a69' = 1,60 ± 0,02.
-IT(chaîne) = 0,10 + 0,04 + 0,04 + 0,04 = **0,22**, alors que IT(condition) = 0,20 − 0 = **0,20**.
-0,22 > 0,20 ⇒ la condition est **impossible** telle quelle. On le confirme par les extrêmes :
-Ja maxi = 57,45 − 53,98 − 1,58 − 1,58 = **0,31** ✓ (> 0,2 : trop de jeu)
-Ja mini = 57,35 − 54,02 − 1,62 − 1,62 = **0,09** ✓ (≥ 0 : celle-là passe)
-Il faut **gagner au moins 0,02 mm** sur la somme des IT — par exemple en cotant le bras a6 = 57,30 ± 0,02, ce qui donne alors Ja maxi = 0,18 et Ja mini = 0,02.
+::: exemple L'IT passe, et pourtant la condition échoue
+On exige 0 ≤ Ja ≤ 0,2 avec a6 = 57,50 ± 0,04 · a2 = 54 ± 0,02 · a69 = a69' = 1,65 ± 0,02.
+**Étape 1 — les IT.** IT(chaîne) = 0,08 + 0,04 + 0,04 + 0,04 = **0,20**, et IT(condition) = 0,2 − 0 = **0,20**. 0,20 ≤ 0,20 : la condition est **réalisable**, tout juste. On continue.
+**Étape 2 — les extrêmes.**
+Ja maxi = 57,54 − 53,98 − 1,63 − 1,63 = **0,30**
+Ja mini = 57,46 − 54,02 − 1,67 − 1,67 = **0,10**
+Vérification : 0,30 − 0,10 = 0,20 ✓ (c'est bien l'IT trouvé à l'étape 1).
+**Étape 3 — la conclusion.** Le jeu réel vit dans [0,10 ; 0,30], alors qu'on exige [0 ; 0,2] : **la condition n'est pas respectée**, la borne haute est franchie.
+**La correction.** L'intervalle est de la bonne **largeur**, il est seulement mal **placé** : il suffit de **déplacer le nominal** de 0,10 mm, soit a6 = 57,40 ± 0,04. On obtient alors Ja maxi = 57,44 − 53,98 − 1,63 − 1,63 = **0,20** et Ja mini = 57,36 − 54,02 − 1,67 − 1,67 = **0,00** ✓ — l'intervalle tombe exactement dans la condition.
 :::
 
-> ⚠️ Le piège de cet exercice : constater que Ja mini vaut 0,09, se dire « le jeu reste positif, donc les pièces ne coincent pas », et conclure que tout va bien. **Une condition a deux bornes.** 0,31 mm de jeu maximal viole la limite haute aussi sûrement qu'un jeu négatif violerait la limite basse.
+> ⚠️ Deux pièges se cachent dans cet exemple. Le premier : croire qu'un IT correct suffit — il rend la condition **possible**, il ne la rend pas **respectée**, il faut encore placer les nominaux. Le second : constater que Ja mini vaut 0,10, se dire « le jeu reste positif, donc rien ne coince », et conclure que tout va bien. **Une condition a deux bornes**, et 0,30 mm de jeu maximal viole la limite haute aussi sûrement qu'un jeu négatif violerait la limite basse.
 
 ## ✏️ Le dessin de définition : cote, spécification, état de surface
 
