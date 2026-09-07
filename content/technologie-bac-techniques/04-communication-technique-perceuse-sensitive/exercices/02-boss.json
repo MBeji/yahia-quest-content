@@ -1,0 +1,186 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : liaisons, encastrements et chaînes de cotes",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "45-46",
+    "items": [
+      "activité 1.1 — q.1",
+      "activité 1.1 — q.2",
+      "activité 1.1 — q.3",
+      "activité 1.1 — q.4",
+      "activité 1.1 — q.8"
+    ]
+  },
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque solution constructive de la perceuse sensitive à ce qu'elle réalise réellement.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Les deux roulements (8) séparés par la bague entretoise (9)"
+        },
+        {
+          "id": "l2",
+          "text": "Le coussinet (25) en bronze monté sur l'axe du pignon (13)"
+        },
+        {
+          "id": "l3",
+          "text": "Le téton de la vis sans tête (19) engagé dans la rainure du fourreau (4)"
+        },
+        {
+          "id": "l4",
+          "text": "L'écrou spécial (17) serrant la poulie (12) contre le moyeu (11)"
+        },
+        {
+          "id": "r1",
+          "text": "Guider en rotation en maîtrisant l'écartement des deux appuis"
+        },
+        {
+          "id": "r2",
+          "text": "Guider en rotation par une pièce d'usure interchangeable et peu coûteuse"
+        },
+        {
+          "id": "r3",
+          "text": "Interdire la rotation d'une pièce qui ne doit que coulisser"
+        },
+        {
+          "id": "r4",
+          "text": "Transmettre le couple par le seul frottement d'un serrage"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Les deux solutions de guidage en rotation ne se valent pas : les roulements (8) encadrent une bague entretoise (9) qui fixe l'écartement des deux appuis, tandis que le coussinet (25) est un simple palier lisse en bronze, choisi là où l'effort est faible parce qu'il s'use à la place de l'arbre et se remplace pour presque rien. Le téton de la vis (19), lui, n'a qu'un rôle : supprimer la rotation du fourreau, qui doit seulement descendre. Et l'écrou spécial (17) ne s'oppose à rien par sa forme : il serre, et le couple passe par le frottement ✓. Le partage à retenir : une forme non circulaire agit par obstacle, un serrage agit par adhérence.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La nomenclature de la perceuse ne comporte ni clavette, ni goupille, ni cannelure ; entre le moyeu (11) et la poulie étagée (12), seul un écrou spécial (17) plaque l'une contre l'autre. Que peut-on conclure de cette liaison encastrement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est obtenue par obstacle, la forme du moyeu s'opposant à la rotation de la poulie"
+        },
+        {
+          "id": "b",
+          "text": "Elle est obtenue par obstacle, l'écrou (17) jouant le rôle d'un ergot d'entraînement"
+        },
+        {
+          "id": "c",
+          "text": "Elle est obtenue par adhérence, le serrage créant le frottement qui transmet le couple"
+        },
+        {
+          "id": "d",
+          "text": "Ce n'est pas un encastrement mais une liaison pivot d'axe la broche"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un encastrement s'obtient soit par obstacle, soit par adhérence. Ici aucun élément d'obstacle n'existe dans la nomenclature : il ne reste que l'adhérence, obtenue en serrant la poulie contre l'épaulement du moyeu ✓. Le piège courant est de croire qu'une vis ou un écrou fait toujours obstacle : un écrou serre, donc il crée du frottement ; il n'y aurait obstacle que si un téton ou un corps de vis ajusté entrait dans une forme creuse.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le dessin représente le fourreau (4), cylindrique, logé dans l'alésage du bâti (3) hachuré. La vis d'arrêt n'est pas montée. Quelle est la nature de la liaison entre (4) et (3) ?\n<svg viewBox=\"0 0 320 180\"><g fill=\"#0f6e56\" opacity=\"0.12\"><rect x=\"20\" y=\"30\" width=\"280\" height=\"28\"/><rect x=\"20\" y=\"122\" width=\"280\" height=\"28\"/></g><path d=\"M20 38 L28 30 M20 49 L39 30 M22 58 L50 30 M33 58 L61 30 M44 58 L72 30 M55 58 L83 30 M66 58 L94 30 M77 58 L105 30 M88 58 L116 30 M99 58 L127 30 M110 58 L138 30 M121 58 L149 30 M132 58 L160 30 M143 58 L171 30 M154 58 L182 30 M165 58 L193 30 M176 58 L204 30 M187 58 L215 30 M198 58 L226 30 M209 58 L237 30 M220 58 L248 30 M231 58 L259 30 M242 58 L270 30 M253 58 L281 30 M264 58 L292 30 M275 58 L300 33 M286 58 L300 44 M297 58 L300 55 M20 130 L28 122 M20 141 L39 122 M22 150 L50 122 M33 150 L61 122 M44 150 L72 122 M55 150 L83 122 M66 150 L94 122 M77 150 L105 122 M88 150 L116 122 M99 150 L127 122 M110 150 L138 122 M121 150 L149 122 M132 150 L160 122 M143 150 L171 122 M154 150 L182 122 M165 150 L193 122 M176 150 L204 122 M187 150 L215 122 M198 150 L226 122 M209 150 L237 122 M220 150 L248 122 M231 150 L259 122 M242 150 L270 122 M253 150 L281 122 M264 150 L292 122 M275 150 L300 125 M286 150 L300 136 M297 150 L300 147\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"0.9\"/><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"><rect x=\"20\" y=\"30\" width=\"280\" height=\"28\"/><rect x=\"20\" y=\"122\" width=\"280\" height=\"28\"/></g><rect x=\"44\" y=\"58\" width=\"232\" height=\"64\" fill=\"#bfdbfe\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M14 90 H306\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-dasharray=\"14 4 3 4\"/><g font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"270\" y=\"49\">3</text><text x=\"250\" y=\"82\">4</text><text x=\"270\" y=\"141\">3</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Liaison encastrement"
+        },
+        {
+          "id": "b",
+          "text": "Liaison glissière"
+        },
+        {
+          "id": "c",
+          "text": "Liaison pivot"
+        },
+        {
+          "id": "d",
+          "text": "Liaison pivot glissant"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un cylindre dans un alésage cylindrique conserve deux mobilités autour du même axe : il peut tourner et il peut coulisser. Cette liaison à deux degrés de liberté s'appelle pivot glissant ✓. C'est exactement pour cette raison que le constructeur ajoute la vis sans tête à téton long (19) : le téton entre dans une rainure du fourreau, supprime la rotation, et la liaison devient alors une glissière. Répondre glissière ici, c'est déjà compter sur une pièce qui n'est pas montée.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur un montage, la condition de jeu s'écrit J = A − B − C. On donne A = 80 ± 0,08 ; B = 45 ± 0,05 ; C = 34,8 ± 0,02. Quel est le jeu maximal J maxi, en mm ?",
+      "answerKey": {
+        "value": 0.35,
+        "unit": "mm"
+      },
+      "explanation": "Le jeu est maximal quand la cote parcourue dans le sens de la condition est à son maximum et que celles parcourues en sens inverse sont à leur minimum : J maxi = A maxi − B mini − C mini = 80,08 − 44,95 − 34,78 = 0,35 mm ✓. Le piège courant est de prendre toutes les cotes à leur maximum, ce qui donnerait un jeu négatif et donc impossible : dans une chaîne de cotes, le sens de parcours de chaque cote décide de l'extrême à retenir. En reprenant le calcul à l'autre bout on trouve J mini = 79,92 − 45,05 − 34,82 = 0,05 mm, et l'écart 0,30 est bien la somme des trois intervalles de tolérance.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un bureau d'études allonge une chaîne de cotes en interposant deux pièces supplémentaires, sans toucher à la condition de jeu. Quelle en est la conséquence sur les cotes à fabriquer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rien ne change : la condition ne dépend que de la première et de la dernière pièce"
+        },
+        {
+          "id": "b",
+          "text": "Chaque cote doit être tolérancée plus serré, donc coûte plus cher à fabriquer"
+        },
+        {
+          "id": "c",
+          "text": "Chaque cote peut être tolérancée plus large, les écarts se compensant entre eux"
+        },
+        {
+          "id": "d",
+          "text": "Le jeu maximal augmente automatiquement de la tolérance des pièces ajoutées"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'intervalle de tolérance de la condition est réparti entre toutes les cotes de la chaîne : à condition constante, plus il y a de cotes, moins il reste de tolérance pour chacune ✓. C'est la raison technico-économique de raccourcir les chaînes de cotes autant que possible. Croire que les écarts se compensent est l'erreur classique : ils s'additionnent en valeur absolue, quel que soit le signe de la cote dans l'équation.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On applique l'analyse fonctionnelle à la perceuse sensitive. Quelles sont sa matière d'œuvre entrante et sa matière d'œuvre sortante ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entrante : la pièce non percée ; sortante : la même pièce, percée"
+        },
+        {
+          "id": "b",
+          "text": "Entrante : l'énergie électrique du moteur ; sortante : l'énergie mécanique de la broche"
+        },
+        {
+          "id": "c",
+          "text": "Entrante : le foret monté dans le mandrin ; sortante : les copeaux évacués"
+        },
+        {
+          "id": "d",
+          "text": "Entrante : l'ordre donné par l'opérateur ; sortante : la rotation de la broche"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La matière d'œuvre est ce que le système transforme, et la fonction globale de la perceuse est de percer une pièce : entre donc une pièce non percée, et sort la même pièce percée ✓. Le piège courant est de répondre en énergie : l'électricité et le mouvement de la broche traversent bien la machine, mais ce sont des flux d'énergie, pas la matière d'œuvre. L'ordre de l'opérateur est de l'information, et le foret est un composant du système, pas ce sur quoi il agit.",
+      "difficulty": 3
+    }
+  ]
+}

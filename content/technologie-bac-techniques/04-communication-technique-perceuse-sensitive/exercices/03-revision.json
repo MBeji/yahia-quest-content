@@ -1,0 +1,169 @@
+{
+  "title": "⭐⭐ Révision (type examen) : du démontage aux coupes particulières",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "manuel": {
+    "pages": "47",
+    "items": [
+      "activité 1.2 — q.1",
+      "activité 1.2 — q.2"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Quel document donne l'ordre chronologique des opérations pour démonter puis remonter un mécanisme lors d'une intervention de maintenance ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le dessin de définition de chaque pièce concernée"
+        },
+        {
+          "id": "b",
+          "text": "La chaîne de cotes de la condition à respecter"
+        },
+        {
+          "id": "c",
+          "text": "Le graphe de montage et de démontage"
+        },
+        {
+          "id": "d",
+          "text": "La nomenclature du dessin d'ensemble"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le graphe de montage et celui de démontage sont précisément les outils qui donnent un ordre chronologique, aussi bien pour monter un ensemble neuf que pour démonter et remonter un mécanisme en maintenance ✓. La nomenclature dit ce que sont les pièces, pas dans quel ordre les toucher ; le dessin de définition prépare la fabrication d'une pièce ; la chaîne de cotes sert à tolérancer, pas à intervenir.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Le ressort (22) de la perceuse sensitive est défectueux et doit être remplacé. Remets ces quatre opérations de démontage dans l'ordre où l'intervenant doit les exécuter.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Déposer le contre-écrou (23'), à la clé plate de 8, en maintenant l'écrou avec une seconde clé"
+        },
+        {
+          "id": "b",
+          "text": "Déposer l'écrou (23) à la clé plate de 8"
+        },
+        {
+          "id": "c",
+          "text": "Déposer à la main le couvercle (21) avec le ressort (22)"
+        },
+        {
+          "id": "d",
+          "text": "Extraire le ressort (22) du couvercle, à l'extracteur de ressort"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Un démontage se lit de l'extérieur vers l'intérieur : ce qui bloque part en premier. Le contre-écrou (23') freine l'écrou (23), il faut donc l'enlever d'abord, et à deux clés puisqu'il est serré contre lui. L'écrou (23) libéré, le couvercle (21) se dépose à la main avec le ressort (22) qu'il contient. Le ressort ne s'extrait qu'ensuite, avec un extracteur, une fois le sous-ensemble sur l'établi ✓. Le reste de la machine, jamais touché, forme le sous-ensemble restant.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le ressort (22) a été remplacé et il faut tout remonter. Quelle pièce sera reposée en dernier sur la perceuse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le ressort (22)"
+        },
+        {
+          "id": "b",
+          "text": "Le couvercle (21)"
+        },
+        {
+          "id": "c",
+          "text": "L'écrou (23)"
+        },
+        {
+          "id": "d",
+          "text": "Le contre-écrou (23')"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le montage reprend le démontage à l'envers : la première pièce déposée est la dernière remontée ✓. Comme le contre-écrou (23') avait été enlevé en premier, il se repose en dernier, une fois le ressort remis dans le couvercle, le couvercle en place et l'écrou (23) serré. C'est d'ailleurs son rôle : il vient bloquer l'écrou une fois celui-ci réglé, et il n'aurait aucun sens de le poser avant.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur un dessin de définition, une cote est écrite 1h11. Que signifie la lettre h de cette écriture ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'écart supérieur est nul : la cote ne dépasse jamais la dimension nominale"
+        },
+        {
+          "id": "b",
+          "text": "L'écart inférieur est nul : la cote n'est jamais plus petite que la dimension nominale"
+        },
+        {
+          "id": "c",
+          "text": "Les deux écarts sont symétriques autour de la dimension nominale"
+        },
+        {
+          "id": "d",
+          "text": "La cote est libre : aucune tolérance ne lui est imposée"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Dans une tolérance ISO, la lettre donne la position de l'intervalle et le nombre donne sa largeur. La position h place l'écart supérieur à zéro : la cote vaut au plus la dimension nominale, et au moins la nominale diminuée de l'intervalle ✓. Ici 1h11 signifie donc 1 mm au maximum, avec IT11 = 0,06 mm, soit une cote comprise entre 0,94 et 1 mm. La position dont l'écart inférieur est nul se note H, en majuscule, et concerne les alésages.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur une coupe à plans parallèles, qu'est-ce qui indique dans la vue en coupe l'endroit où l'on passe d'un plan à l'autre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un trait interrompu fin, comme pour une arête cachée"
+        },
+        {
+          "id": "b",
+          "text": "Un trait continu fort doublé, comme un contour vu deux fois"
+        },
+        {
+          "id": "c",
+          "text": "Un trait d'axe, les hachures pouvant être décalées de part et d'autre"
+        },
+        {
+          "id": "d",
+          "text": "Rien du tout : le changement de plan ne se voit pas sur la coupe"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La méthode est fixée : on coupe la pièce par des plans parallèles, on suppose ces plans ramenés sur un seul plan de projection, on repère les changements de plan en traits forts sur la vue qui porte le plan de coupe, et dans la vue en coupe c'est un trait d'axe qui marque le passage d'un plan à l'autre ✓. Le hachurage peut y être décalé si cela améliore la clarté du dessin. Un trait interrompu fin signalerait au contraire une arête cachée, ce qu'une coupe cherche justement à éviter.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Comment s'appelle la représentation utilisée pour dessiner cette pièce symétrique ?\n<svg viewBox=\"0 0 260 200\"><path d=\"M152 40 H200 V70 H175 V160 H152 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M152 46 L158 40 M152 54 L166 40 M152 62 L174 40 M152 70 L182 40 M160 70 L190 40 M168 70 L198 40 M176 70 L200 46 M184 70 L200 54 M192 70 L200 62 M152 72 L154 70 M152 80 L162 70 M152 88 L170 70 M152 96 L175 73 M152 104 L175 81 M152 112 L175 89 M152 120 L175 97 M152 128 L175 105 M152 136 L175 113 M152 144 L175 121 M152 152 L175 129 M152 160 L175 137 M160 160 L175 145 M168 160 L175 153\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"0.9\"/><path d=\"M130 40 H60 V70 H85 V160 H130\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M130 40 H200 V70 H175 V160 H130\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M152 40 V160\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M130 14 V186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-dasharray=\"14 4 3 4\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une coupe à plans parallèles"
+        },
+        {
+          "id": "b",
+          "text": "Une demi-coupe"
+        },
+        {
+          "id": "c",
+          "text": "Une coupe brisée à plans sécants"
+        },
+        {
+          "id": "d",
+          "text": "Une section rabattue"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'axe partage le dessin en deux : à gauche la pièce est vue de l'extérieur et aucun trait caché n'y figure, à droite elle est coupée et sa matière est hachurée, ce qui montre l'alésage central ✓. Voir l'intérieur et l'extérieur sur une même vue, c'est exactement l'emploi de la demi-coupe, réservée aux pièces symétriques. Une coupe à plans parallèles ou brisée montrerait un changement de plan, et une section ne représenterait que la matière coupée, sans le reste de la pièce.",
+      "difficulty": 2
+    }
+  ]
+}
