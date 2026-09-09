@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : Généralités sur les fonctions",
+  "questions": [
+    {
+      "prompt": "Un cycliste part à 8 h et arrive à 11 h. On note d(t) la distance qu'il a parcourue, en kilomètres, à l'instant t. Cette distance varie de 0 à 45 km. Quel est l'ensemble de définition de la fonction d ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[0 ; 11]"
+        },
+        {
+          "id": "b",
+          "text": "[0 ; 45]"
+        },
+        {
+          "id": "c",
+          "text": "[8 ; 11]"
+        },
+        {
+          "id": "d",
+          "text": "[8 ; 45]"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'ensemble de définition rassemble les valeurs que l'on DONNE à la fonction, c'est-à-dire ici les instants auxquels la question a un sens : le cycliste roule de 8 h à 11 h, donc d est définie sur [8 ; 11] ✓. L'intervalle [0 ; 45] est celui des distances parcourues, c'est-à-dire des images de d : il se lit sur l'axe des ordonnées et n'appartient pas à l'ensemble de définition. Les intervalles [0 ; 11] et [8 ; 45] mélangent une borne de chacun des deux, en prenant une distance pour un instant.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La fonction f est définie par :\nf(x) = √(x − 3)\nQuel est son ensemble de définition ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−∞ ; 3]"
+        },
+        {
+          "id": "b",
+          "text": "[3 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "]3 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "ℝ \\ {3}"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une racine carrée n'existe que si ce qu'elle contient est positif ou nul : la condition est donc x − 3 ≥ 0, c'est-à-dire x ≥ 3, ce qui donne l'ensemble [3 ; +∞[ ✓. L'intervalle ]3 ; +∞[ écarte 3 à tort, car √(3 − 3) = √0 = 0 existe : l'inégalité stricte serait exigée pour un dénominateur, pas pour un radicande. L'intervalle ]−∞ ; 3] renverse l'inégalité et ne retient que les x qui rendent x − 3 négatif. Enfin ℝ \\ {3} applique à une racine carrée la règle du dénominateur, alors qu'aucune division n'apparaît ici.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le plan est muni d'un repère. La fonction f est définie sur un ensemble E et C désigne sa courbe représentative. À quelle condition le point M(x ; y) appartient-il à C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x appartient à E et f(x) = 0"
+        },
+        {
+          "id": "b",
+          "text": "x appartient à E et y = f(x)"
+        },
+        {
+          "id": "c",
+          "text": "x appartient à E et y appartient à E"
+        },
+        {
+          "id": "d",
+          "text": "y appartient à E et x = f(y)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La courbe de f est par définition l'ensemble des points de coordonnées (x ; f(x)) lorsque x parcourt E. Un point M(x ; y) en fait donc partie exactement quand son abscisse est autorisée, x ∈ E, et que son ordonnée est l'image de cette abscisse, y = f(x) ✓. La condition f(x) = 0 ne décrit que les points où la courbe rencontre l'axe des abscisses, une toute petite partie de C. Exiger que y appartienne à E confond l'ensemble de définition, qui vit sur l'axe des abscisses, avec les valeurs prises par f, qui vivent sur l'axe des ordonnées. Enfin échanger les rôles de x et de y, en écrivant x = f(y), revient à lire un antécédent là où l'on demande une image.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La courbe C ci-dessous représente une fonction f définie sur l'intervalle [−3 ; 5]. Quelle est l'image de 2 par f ?\n<svg viewBox=\"0 0 296 296\"><path d=\"M18 278 V18 M44 278 V18 M70 278 V18 M96 278 V18 M122 278 V18 M148 278 V18 M174 278 V18 M200 278 V18 M226 278 V18 M252 278 V18 M278 278 V18 M18 278 H278 M18 252 H278 M18 226 H278 M18 200 H278 M18 174 H278 M18 148 H278 M18 122 H278 M18 96 H278 M18 70 H278 M18 44 H278 M18 18 H278\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"0.8\" opacity=\"0.55\"/><path d=\"M18 148 H286 M122 278 V10\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M281 144 L289 148 L281 152 Z M118 15 L122 7 L126 15 Z\" fill=\"#0f172a\"/><g font-size=\"11\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.2\" stroke-linejoin=\"round\"><text x=\"18\" y=\"163\" fill=\"#0f172a\">−4</text><text x=\"44\" y=\"163\" fill=\"#0f172a\">−3</text><text x=\"70\" y=\"163\" fill=\"#0f172a\">−2</text><text x=\"96\" y=\"163\" fill=\"#0f172a\">−1</text><text x=\"148\" y=\"163\" fill=\"#0f172a\">1</text><text x=\"174\" y=\"163\" fill=\"#0f172a\">2</text><text x=\"200\" y=\"163\" fill=\"#0f172a\">3</text><text x=\"226\" y=\"163\" fill=\"#0f172a\">4</text><text x=\"252\" y=\"163\" fill=\"#0f172a\">5</text><text x=\"278\" y=\"163\" fill=\"#0f172a\">6</text><text x=\"110\" y=\"282\" fill=\"#0f172a\">−5</text><text x=\"110\" y=\"256\" fill=\"#0f172a\">−4</text><text x=\"110\" y=\"230\" fill=\"#0f172a\">−3</text><text x=\"110\" y=\"204\" fill=\"#0f172a\">−2</text><text x=\"110\" y=\"178\" fill=\"#0f172a\">−1</text><text x=\"110\" y=\"126\" fill=\"#0f172a\">1</text><text x=\"110\" y=\"100\" fill=\"#0f172a\">2</text><text x=\"110\" y=\"74\" fill=\"#0f172a\">3</text><text x=\"110\" y=\"48\" fill=\"#0f172a\">4</text><text x=\"110\" y=\"22\" fill=\"#0f172a\">5</text><text x=\"109\" y=\"165\" fill=\"#0f172a\">0</text></g><path d=\"M44.0 252.0 L44.74 251.61 L45.49 251.2 L46.23 250.76 L46.97 250.29 L47.71 249.8 L48.46 249.28 L49.2 248.74 L49.94 248.17 L50.69 247.58 L51.43 246.97 L52.17 246.34 L52.91 245.68 L53.66 245.0 L54.4 244.3 L55.14 243.59 L55.89 242.85 L56.63 242.09 L57.37 241.32 L58.11 240.53 L58.86 239.72 L59.6 238.9 L60.34 238.06 L61.09 237.2 L61.83 236.33 L62.57 235.45 L63.31 234.55 L64.06 233.65 L64.8 232.73 L65.54 231.79 L66.29 230.85 L67.03 229.9 L67.77 228.94 L68.51 227.97 L69.26 226.99 L70.0 226.0 L70.74 224.98 L71.49 223.91 L72.23 222.78 L72.97 221.61 L73.71 220.39 L74.46 219.13 L75.2 217.82 L75.94 216.47 L76.69 215.09 L77.43 213.67 L78.17 212.22 L78.91 210.74 L79.66 209.23 L80.4 207.7 L81.14 206.14 L81.89 204.56 L82.63 202.97 L83.37 201.36 L84.11 199.74 L84.86 198.1 L85.6 196.46 L86.34 194.82 L87.09 193.17 L87.83 191.52 L88.57 189.87 L89.31 188.22 L90.06 186.58 L90.8 184.95 L91.54 183.34 L92.29 181.73 L93.03 180.14 L93.77 178.57 L94.51 177.02 L95.26 175.5 L96.0 174.0 L96.74 172.5 L97.49 170.98 L98.23 169.43 L98.97 167.86 L99.71 166.27 L100.46 164.66 L101.2 163.05 L101.94 161.42 L102.69 159.78 L103.43 158.13 L104.17 156.48 L104.91 154.83 L105.66 153.18 L106.4 151.54 L107.14 149.9 L107.89 148.26 L108.63 146.64 L109.37 145.03 L110.11 143.44 L110.86 141.86 L111.6 140.3 L112.34 138.77 L113.09 137.26 L113.83 135.78 L114.57 134.33 L115.31 132.91 L116.06 131.53 L116.8 130.18 L117.54 128.87 L118.29 127.61 L119.03 126.39 L119.77 125.22 L120.51 124.09 L121.26 123.02 L122.0 122.0 L122.74 121.02 L123.49 120.07 L124.23 119.15 L124.97 118.25 L125.71 117.38 L126.46 116.52 L127.2 115.69 L127.94 114.88 L128.69 114.08 L129.43 113.31 L130.17 112.55 L130.91 111.8 L131.66 111.07 L132.4 110.35 L133.14 109.64 L133.89 108.95 L134.63 108.26 L135.37 107.58 L136.11 106.9 L136.86 106.23 L137.6 105.57 L138.34 104.91 L139.09 104.24 L139.83 103.58 L140.57 102.92 L141.31 102.26 L142.06 101.59 L142.8 100.92 L143.54 100.25 L144.29 99.56 L145.03 98.87 L145.77 98.17 L146.51 97.46 L147.26 96.74 L148.0 96.0 L148.74 95.26 L149.49 94.51 L150.23 93.77 L150.97 93.03 L151.71 92.29 L152.46 91.54 L153.2 90.8 L153.94 90.06 L154.69 89.31 L155.43 88.57 L156.17 87.83 L156.91 87.09 L157.66 86.34 L158.4 85.6 L159.14 84.86 L159.89 84.11 L160.63 83.37 L161.37 82.63 L162.11 81.89 L162.86 81.14 L163.6 80.4 L164.34 79.66 L165.09 78.91 L165.83 78.17 L166.57 77.43 L167.31 76.69 L168.06 75.94 L168.8 75.2 L169.54 74.46 L170.29 73.71 L171.03 72.97 L171.77 72.23 L172.51 71.49 L173.26 70.74 L174.0 70.0 L174.74 69.24 L175.49 68.43 L176.23 67.6 L176.97 66.73 L177.71 65.83 L178.46 64.91 L179.2 63.97 L179.94 63.01 L180.69 62.04 L181.43 61.06 L182.17 60.07 L182.91 59.08 L183.66 58.09 L184.4 57.1 L185.14 56.13 L185.89 55.16 L186.63 54.22 L187.37 53.29 L188.11 52.38 L188.86 51.5 L189.6 50.66 L190.34 49.84 L191.09 49.06 L191.83 48.33 L192.57 47.64 L193.31 47.0 L194.06 46.41 L194.8 45.87 L195.54 45.4 L196.29 44.99 L197.03 44.64 L197.77 44.37 L198.51 44.16 L199.26 44.04 L200.0 44.0 L200.74 44.0 L201.49 44.0 L202.23 44.0 L202.97 44.0 L203.71 44.0 L204.46 44.0 L205.2 44.0 L205.94 44.0 L206.69 44.0 L207.43 44.0 L208.17 44.0 L208.91 44.0 L209.66 44.0 L210.4 44.0 L211.14 44.0 L211.89 44.0 L212.63 44.0 L213.37 44.0 L214.11 44.0 L214.86 44.0 L215.6 44.0 L216.34 44.0 L217.09 44.0 L217.83 44.0 L218.57 44.0 L219.31 44.0 L220.06 44.0 L220.8 44.0 L221.54 44.0 L222.29 44.0 L223.03 44.0 L223.77 44.0 L224.51 44.0 L225.26 44.0 L226.0 44.0 L226.74 44.03 L227.49 44.12 L228.23 44.28 L228.97 44.49 L229.71 44.76 L230.46 45.08 L231.2 45.46 L231.94 45.88 L232.69 46.36 L233.43 46.88 L234.17 47.45 L234.91 48.06 L235.66 48.71 L236.4 49.41 L237.14 50.14 L237.89 50.91 L238.63 51.71 L239.37 52.55 L240.11 53.41 L240.86 54.31 L241.6 55.23 L242.34 56.18 L243.09 57.15 L243.83 58.15 L244.57 59.16 L245.31 60.19 L246.06 61.24 L246.8 62.3 L247.54 63.38 L248.29 64.47 L249.03 65.56 L249.77 66.67 L250.51 67.77 L251.26 68.89 L252.0 70.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"44\" cy=\"252\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"252\" cy=\"70\" r=\"4\" fill=\"#0f6e56\"/><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.6\" stroke-linejoin=\"round\"><text x=\"247.6\" y=\"28.4\" fill=\"#0f6e56\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour lire une image, on part de l'abscisse 2, on monte verticalement jusqu'à la courbe, puis on lit l'ordonnée du point atteint : elle vaut 3, donc l'image de 2 par f est 3 ✓. La valeur 1 est au contraire l'ANTÉCÉDENT de 2, obtenu en partant de 2 sur l'axe des ordonnées et en allant horizontalement : c'est la lecture inverse de celle qui est demandée. La valeur 4 est le maximum de f sur l'intervalle, atteint bien plus loin. Quant à 2, c'est l'abscisse de départ recopiée telle quelle, sans aucune lecture sur la courbe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La courbe C ci-dessous représente une fonction f définie sur l'intervalle [−4 ; 4]. Quel est le PLUS GRAND intervalle sur lequel f est croissante ?\n<svg viewBox=\"0 0 286 311\"><path d=\"M18 293 V18 M43 293 V18 M68 293 V18 M93 293 V18 M118 293 V18 M143 293 V18 M168 293 V18 M193 293 V18 M218 293 V18 M243 293 V18 M268 293 V18 M18 293 H268 M18 268 H268 M18 243 H268 M18 218 H268 M18 193 H268 M18 168 H268 M18 143 H268 M18 118 H268 M18 93 H268 M18 68 H268 M18 43 H268 M18 18 H268\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"0.8\" opacity=\"0.55\"/><path d=\"M18 168 H276 M143 293 V10\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M271 164 L279 168 L271 172 Z M139 15 L143 7 L147 15 Z\" fill=\"#0f172a\"/><g font-size=\"11\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.2\" stroke-linejoin=\"round\"><text x=\"18\" y=\"183\" fill=\"#0f172a\">−5</text><text x=\"43\" y=\"183\" fill=\"#0f172a\">−4</text><text x=\"68\" y=\"183\" fill=\"#0f172a\">−3</text><text x=\"93\" y=\"183\" fill=\"#0f172a\">−2</text><text x=\"118\" y=\"183\" fill=\"#0f172a\">−1</text><text x=\"168\" y=\"183\" fill=\"#0f172a\">1</text><text x=\"193\" y=\"183\" fill=\"#0f172a\">2</text><text x=\"218\" y=\"183\" fill=\"#0f172a\">3</text><text x=\"243\" y=\"183\" fill=\"#0f172a\">4</text><text x=\"268\" y=\"183\" fill=\"#0f172a\">5</text><text x=\"131\" y=\"297\" fill=\"#0f172a\">−5</text><text x=\"131\" y=\"272\" fill=\"#0f172a\">−4</text><text x=\"131\" y=\"247\" fill=\"#0f172a\">−3</text><text x=\"131\" y=\"222\" fill=\"#0f172a\">−2</text><text x=\"131\" y=\"197\" fill=\"#0f172a\">−1</text><text x=\"131\" y=\"147\" fill=\"#0f172a\">1</text><text x=\"131\" y=\"122\" fill=\"#0f172a\">2</text><text x=\"131\" y=\"97\" fill=\"#0f172a\">3</text><text x=\"131\" y=\"72\" fill=\"#0f172a\">4</text><text x=\"131\" y=\"47\" fill=\"#0f172a\">5</text><text x=\"131\" y=\"22\" fill=\"#0f172a\">6</text><text x=\"130\" y=\"185\" fill=\"#0f172a\">0</text></g><path d=\"M43.0 193.0 L43.71 193.71 L44.43 194.43 L45.14 195.14 L45.86 195.86 L46.57 196.57 L47.29 197.29 L48.0 198.0 L48.71 198.71 L49.43 199.43 L50.14 200.14 L50.86 200.86 L51.57 201.57 L52.29 202.29 L53.0 203.0 L53.71 203.71 L54.43 204.43 L55.14 205.14 L55.86 205.86 L56.57 206.57 L57.29 207.29 L58.0 208.0 L58.71 208.71 L59.43 209.43 L60.14 210.14 L60.86 210.86 L61.57 211.57 L62.29 212.29 L63.0 213.0 L63.71 213.71 L64.43 214.43 L65.14 215.14 L65.86 215.86 L66.57 216.57 L67.29 217.29 L68.0 218.0 L68.71 218.71 L69.43 219.43 L70.14 220.14 L70.86 220.86 L71.57 221.57 L72.29 222.29 L73.0 223.0 L73.71 223.71 L74.43 224.43 L75.14 225.14 L75.86 225.86 L76.57 226.57 L77.29 227.29 L78.0 228.0 L78.71 228.71 L79.43 229.43 L80.14 230.14 L80.86 230.86 L81.57 231.57 L82.29 232.29 L83.0 233.0 L83.71 233.71 L84.43 234.43 L85.14 235.14 L85.86 235.86 L86.57 236.57 L87.29 237.29 L88.0 238.0 L88.71 238.71 L89.43 239.43 L90.14 240.14 L90.86 240.86 L91.57 241.57 L92.29 242.29 L93.0 243.0 L93.71 243.73 L94.43 244.51 L95.14 245.31 L95.86 246.15 L96.57 247.01 L97.29 247.89 L98.0 248.8 L98.71 249.72 L99.43 250.66 L100.14 251.6 L100.86 252.55 L101.57 253.5 L102.29 254.45 L103.0 255.4 L103.71 256.34 L104.43 257.26 L105.14 258.18 L105.86 259.07 L106.57 259.94 L107.29 260.78 L108.0 261.6 L108.71 262.38 L109.43 263.13 L110.14 263.84 L110.86 264.5 L111.57 265.12 L112.29 265.69 L113.0 266.2 L113.71 266.66 L114.43 267.05 L115.14 267.38 L115.86 267.65 L116.57 267.84 L117.29 267.96 L118.0 268.0 L118.71 267.97 L119.43 267.88 L120.14 267.73 L120.86 267.53 L121.57 267.27 L122.29 266.96 L123.0 266.6 L123.71 266.19 L124.43 265.73 L125.14 265.23 L125.86 264.68 L126.57 264.1 L127.29 263.47 L128.0 262.8 L128.71 262.1 L129.43 261.36 L130.14 260.59 L130.86 259.78 L131.57 258.95 L132.29 258.09 L133.0 257.2 L133.71 256.29 L134.43 255.35 L135.14 254.4 L135.86 253.42 L136.57 252.43 L137.29 251.42 L138.0 250.4 L138.71 249.37 L139.43 248.32 L140.14 247.27 L140.86 246.21 L141.57 245.14 L142.29 244.07 L143.0 243.0 L143.71 241.86 L144.43 240.57 L145.14 239.16 L145.86 237.62 L146.57 235.96 L147.29 234.19 L148.0 232.32 L148.71 230.35 L149.43 228.3 L150.14 226.16 L150.86 223.95 L151.57 221.68 L152.29 219.35 L153.0 216.96 L153.71 214.53 L154.43 212.06 L155.14 209.57 L155.86 207.05 L156.57 204.52 L157.29 201.98 L158.0 199.44 L158.71 196.91 L159.43 194.39 L160.14 191.89 L160.86 189.43 L161.57 187.0 L162.29 184.61 L163.0 182.28 L163.71 180.0 L164.43 177.8 L165.14 175.66 L165.86 173.61 L166.57 171.64 L167.29 169.77 L168.0 168.0 L168.71 166.3 L169.43 164.63 L170.14 163.0 L170.86 161.39 L171.57 159.81 L172.29 158.25 L173.0 156.72 L173.71 155.21 L174.43 153.72 L175.14 152.26 L175.86 150.81 L176.57 149.38 L177.29 147.96 L178.0 146.56 L178.71 145.17 L179.43 143.8 L180.14 142.43 L180.86 141.07 L181.57 139.72 L182.29 138.38 L183.0 137.04 L183.71 135.7 L184.43 134.37 L185.14 133.04 L185.86 131.7 L186.57 130.37 L187.29 129.03 L188.0 127.68 L188.71 126.33 L189.43 124.97 L190.14 123.6 L190.86 122.22 L191.57 120.83 L192.29 119.42 L193.0 118.0 L193.71 116.56 L194.43 115.09 L195.14 113.6 L195.86 112.09 L196.57 110.57 L197.29 109.02 L198.0 107.47 L198.71 105.9 L199.43 104.32 L200.14 102.74 L200.86 101.16 L201.57 99.57 L202.29 97.98 L203.0 96.4 L203.71 94.82 L204.43 93.25 L205.14 91.69 L205.86 90.14 L206.57 88.61 L207.29 87.1 L208.0 85.6 L208.71 84.13 L209.43 82.68 L210.14 81.25 L210.86 79.86 L211.57 78.49 L212.29 77.16 L213.0 75.87 L213.71 74.61 L214.43 73.39 L215.14 72.22 L215.86 71.09 L216.57 70.01 L217.29 68.98 L218.0 68.0 L218.71 67.05 L219.43 66.11 L220.14 65.18 L220.86 64.25 L221.57 63.34 L222.29 62.43 L223.0 61.53 L223.71 60.65 L224.43 59.77 L225.14 58.91 L225.86 58.06 L226.57 57.23 L227.29 56.41 L228.0 55.6 L228.71 54.81 L229.43 54.03 L230.14 53.27 L230.86 52.53 L231.57 51.8 L232.29 51.09 L233.0 50.4 L233.71 49.73 L234.43 49.08 L235.14 48.45 L235.86 47.83 L236.57 47.25 L237.29 46.68 L238.0 46.13 L238.71 45.61 L239.43 45.11 L240.14 44.64 L240.86 44.19 L241.57 43.77 L242.29 43.37 L243.0 43.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"43\" cy=\"193\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"243\" cy=\"43\" r=\"4\" fill=\"#0f6e56\"/><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.6\" stroke-linejoin=\"round\"><text x=\"241.0\" y=\"33.0\" fill=\"#0f6e56\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "[−4 ; −1]"
+        },
+        {
+          "id": "b",
+          "text": "[−4 ; 4]"
+        },
+        {
+          "id": "c",
+          "text": "[−1 ; 4]"
+        },
+        {
+          "id": "d",
+          "text": "[1 ; 4]"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une fonction est croissante là où la courbe monte lorsqu'on la parcourt de la gauche vers la droite. Ici elle descend jusqu'au creux d'abscisse −1, puis monte sans interruption jusqu'à l'extrémité droite : le plus grand intervalle de croissance est donc [−1 ; 4] ✓, et on ne peut pas l'élargir vers la gauche sans y inclure la descente. Sur [−4 ; −1] la courbe descend, f y est décroissante. Le piège courant est [1 ; 4] : c'est l'intervalle où la courbe se trouve au-dessus de l'axe des abscisses, donc où f est POSITIVE — f y croît bien, mais le signe de f et son sens de variation sont deux renseignements différents, et cet intervalle n'est pas le plus grand possible. Enfin [−4 ; 4] ne compare que les deux extrémités et oublie toute la partie descendante du début.",
+      "difficulty": 2
+    }
+  ]
+}
