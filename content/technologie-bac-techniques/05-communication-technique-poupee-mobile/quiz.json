@@ -98,27 +98,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "La pièce symétrique ci-dessous est représentée coupée sur sa moitié gauche et vue de l'extérieur sur sa moitié droite. Comment nomme-t-on cette représentation ?\n<svg viewBox=\"0 0 320 226\"><path d=\"M90.0 30.0 L140.0 30.0 L140.0 110.0 L90.0 110.0 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M90.0 37.3 L97.3 30.0 M90.0 50.0 L110.0 30.0 M90.0 62.7 L122.7 30.0 M90.0 75.5 L135.5 30.0 M90.0 88.2 L140.0 38.2 M90.0 100.9 L140.0 50.9 M93.6 110.0 L140.0 63.6 M106.4 110.0 L140.0 76.4 M119.1 110.0 L140.0 89.1 M131.8 110.0 L140.0 101.8\" fill=\"none\" stroke=\"#334155\" stroke-width=\"0.8\"/><path d=\"M90.0 30.0 L140.0 30.0 L140.0 110.0 L90.0 110.0 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.0\" stroke-linejoin=\"round\"/><path d=\"M70.0 110.0 L140.0 110.0 L140.0 190.0 L70.0 190.0 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M70.0 120.9 L80.9 110.0 M70.0 133.6 L93.6 110.0 M70.0 146.4 L106.4 110.0 M70.0 159.1 L119.1 110.0 M70.0 171.8 L131.8 110.0 M70.0 184.6 L140.0 114.6 M77.3 190.0 L140.0 127.3 M90.0 190.0 L140.0 140.0 M102.7 190.0 L140.0 152.7 M115.5 190.0 L140.0 165.5 M128.2 190.0 L140.0 178.2\" fill=\"none\" stroke=\"#334155\" stroke-width=\"0.8\"/><path d=\"M70.0 110.0 L140.0 110.0 L140.0 190.0 L70.0 190.0 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.0\" stroke-linejoin=\"round\"/><path d=\"M90.0 30.0 L230.0 30.0 L230.0 110.0 L250.0 110.0 L250.0 190.0 L70.0 190.0 L70.0 110.0 L90.0 110.0 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M140 30 V190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M160 12 V208\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"14 4 3 4\"/></svg>",
+      "prompt": "Sur la poupée mobile, le fourreau (7), la pointe (6) et l'écrou (11) sont regroupés dans une même classe d'équivalence cinématique. Qu'est-ce que cela signifie exactement ?",
       "options": [
         {
           "id": "a",
-          "text": "Une section sortie : seule la surface coupée est dessinée, à l'extérieur de la pièce"
+          "text": "Qu'elles sont fabriquées dans la même matière"
         },
         {
           "id": "b",
-          "text": "Une demi-coupe : l'intérieur et l'extérieur sont montrés dans une même vue"
+          "text": "Qu'elles n'ont aucun mouvement l'une par rapport à l'autre et se comportent comme un seul solide"
         },
         {
           "id": "c",
-          "text": "Une coupe à plans parallèles : deux plans de coupe sont ramenés sur un même plan"
+          "text": "Qu'elles sont démontées ensemble lors de la maintenance"
         },
         {
           "id": "d",
-          "text": "Une coupe brisée à plans sécants : la partie oblique est rabattue en vraie grandeur"
+          "text": "Qu'elles sont toutes en contact direct avec le bâti"
         }
       ],
       "correctOption": "b",
-      "explanation": "Couper la moitié d'une pièce symétrique et laisser l'autre moitié en vue extérieure, c'est une demi-coupe : elle permet de voir à la fois l'intérieur et l'extérieur dans une même vue et évite ainsi la représentation des détails cachés. La séparation se fait sur l'axe de symétrie. Une section ne montrerait que la surface coupée, et les deux dernières réponses désignent des coupes obtenues par plusieurs plans, parallèles ou sécants.",
+      "explanation": "Une classe d'équivalence rassemble les pièces sans aucun mouvement relatif : elles bougent d'un bloc, et l'étude cinématique peut les traiter comme un seul solide. C'est ce qui ramène la poupée à trois classes, donc à trois liaisons. La matière n'entre pas dans le critère : le fourreau (7) est en acier allié 35NiCr6 et l'écrou (11) en bronze CuSn10P, et ils restent pourtant dans la même classe. Être démontées ensemble est une conséquence possible du regroupement, jamais sa définition. Quant au contact avec le bâti, il désignerait la classe du bâti, pas celle du fourreau.",
       "difficulty": 2
     }
   ]

@@ -1,0 +1,163 @@
+{
+  "title": "⭐ Exercice : ouvrir le plan de la machine d'essai de traction",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "manuel": {
+    "pages": "75-77, 79-80",
+    "items": [
+      "Dessin d'ensemble et cartouche p.76",
+      "Nomenclature p.77",
+      "B. Analyse fonctionnement — q. 4",
+      "C. Solutions constructives — q. 3",
+      "C. Solutions constructives — q. 6"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "À côté d'une petite vue du dessin d'ensemble, on lit « Vue suivant F », et une flèche repérée F est tracée près de la traverse (14). Que désigne cette annotation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une vue partielle de la traverse (14), prise dans le sens de la flèche F"
+        },
+        {
+          "id": "b",
+          "text": "Une coupe de la traverse (14) par un plan de coupe repéré F"
+        },
+        {
+          "id": "c",
+          "text": "Une vue de la traverse (14) dessinée à une échelle différente, repérée F"
+        },
+        {
+          "id": "d",
+          "text": "Le repère F de la face de la traverse (14) dans la nomenclature"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une flèche repérée d'une lettre indique un sens d'observation : la vue qui porte la même lettre est ce que l'on voit en regardant la pièce dans ce sens. Elle est partielle parce qu'on ne dessine que la zone utile — ici les trois trous. Un plan de coupe, lui, se trace en trait mixte fort avec des flèches et se note A-A ou B-B : ce n'est pas ce qu'annonce une flèche isolée. Une échelle différente s'écrirait dans le cartouche ou juste à côté de la vue, et un repère de nomenclature est un numéro porté sur une pièce, jamais une lettre de sens d'observation.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le cartouche du dessin d'ensemble porte, à côté de l'échelle, un pictogramme normalisé : un cône tronqué accompagné de deux cercles concentriques. Qu'indique-t-il au lecteur du plan ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'échelle du dessin, donnée sous forme graphique"
+        },
+        {
+          "id": "b",
+          "text": "La méthode de projection retenue sur ce dessin"
+        },
+        {
+          "id": "c",
+          "text": "La matière principale du mécanisme représenté"
+        },
+        {
+          "id": "d",
+          "text": "Le sens de rotation de l'organe moteur du mécanisme"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Ce pictogramme est le symbole normalisé de la méthode de projection : il dit comment les vues sont disposées les unes par rapport aux autres, donc où chercher la vue de gauche, la vue de dessus ou la vue de dessous. Sans lui, deux dessins identiques pourraient se lire de deux façons opposées. L'échelle, elle, est écrite en toutes lettres juste à côté — 3:10 — et non sous forme graphique ; la matière ne se lit pas au cartouche mais dans la nomenclature, pièce par pièce.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La nomenclature donne la manivelle (3) en Al Cu 4 Mg. Que désigne exactement cette écriture ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un acier faiblement allié contenant 4 % de cuivre, avec du magnésium"
+        },
+        {
+          "id": "b",
+          "text": "Un alliage de cuivre contenant 4 % d'aluminium, avec du magnésium"
+        },
+        {
+          "id": "c",
+          "text": "Un alliage d'aluminium contenant environ 4 % de cuivre, avec du magnésium"
+        },
+        {
+          "id": "d",
+          "text": "Un alliage d'aluminium contenant 4 % de magnésium et un peu de cuivre"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Dans une désignation de ce type, le premier symbole est le métal de base : Al, donc un alliage d'aluminium. Viennent ensuite les éléments d'addition par teneurs décroissantes, chacun suivi de sa teneur : Cu 4 signifie environ 4 % de cuivre, et Mg vient après, en plus faible quantité. Lire « un alliage de cuivre contenant 4 % d'aluminium » revient à inverser la base et l'addition ; lire « 4 % de magnésium » revient à attribuer le chiffre au mauvais élément — le nombre suit toujours l'élément qu'il quantifie.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le constructeur devait guider en translation l'ensemble mobile par rapport au bâti. Quelle solution constructive a-t-il retenue sur cette machine ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un arbre cannelé"
+        },
+        {
+          "id": "b",
+          "text": "Une clavette associée à une forme cylindrique"
+        },
+        {
+          "id": "c",
+          "text": "Un guidage par colonnes"
+        },
+        {
+          "id": "d",
+          "text": "Une vis à téton associée à une forme cylindrique"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La nomenclature suffit à trancher : elle donne deux colonnes mobiles (17) et deux coussinets (18), et aucune cannelure, clavette ni vis à téton. Ce sont les colonnes, coulissant chacune dans son coussinet logé dans la traverse fixe (8), qui réalisent la liaison glissière. Les trois autres solutions existent bel et bien, mais elles servent à guider en translation un arbre dans un moyeu tout en lui interdisant de tourner — ce n'est pas le montage retenu ici.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "L'opérateur lance un essai. Remets ces cinq étapes dans l'ordre où l'effort les traverse, de la main de l'opérateur jusqu'à l'éprouvette.",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'opérateur tourne la manivelle (3), qui actionne la pompe hydraulique (4)"
+        },
+        {
+          "id": "b",
+          "text": "L'huile sous pression alimente le vérin vertical (2)"
+        },
+        {
+          "id": "c",
+          "text": "Le vérin déplace la traverse mobile inférieure (7)"
+        },
+        {
+          "id": "d",
+          "text": "Les colonnes mobiles (17) entraînent la traverse mobile supérieure (14)"
+        },
+        {
+          "id": "e",
+          "text": "Le mors mobile (16) s'écarte du mors fixe (9) et tend l'éprouvette"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "L'effort naît d'une énergie musculaire, devient hydraulique, puis redevient mécanique : la manivelle entraîne la pompe, la pompe met l'huile sous pression, l'huile pousse le vérin. Vient ensuite le trajet mécanique dans le bâti : le vérin agit sur la traverse mobile inférieure (7), qui n'est reliée à la traverse mobile supérieure (14) que par les deux colonnes mobiles (17) — c'est donc par elles que tout passe. Le mors (16), suspendu sous la traverse (14), tire enfin l'éprouvette retenue par le mors fixe (9).",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour relever le diamètre de la colonne mobile (17), l'énoncé impose un pied à coulisse « au 1/50 ». Quelle est la plus petite variation de longueur que cet instrument permet de lire, en millimètres ?",
+      "answerKey": {
+        "value": 0.02,
+        "unit": "mm"
+      },
+      "explanation": "« Au 1/50 » désigne la résolution de l'instrument : son vernier partage le millimètre en 50 parts égales, donc 1/50 = 0,02 mm. Un pied à coulisse au 1/50 lit donc au deux centièmes de millimètre — deux fois moins fin que le comparateur à cadran de la machine, gradué au centième (0,01 mm), mais très suffisant pour vérifier un diamètre de colonne.",
+      "difficulty": 2
+    }
+  ]
+}

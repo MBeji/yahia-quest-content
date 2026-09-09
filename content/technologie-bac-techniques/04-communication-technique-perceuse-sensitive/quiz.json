@@ -53,12 +53,24 @@
       "prompt": "Le dessin est la coupe transversale du guidage entre le moyeu (11), hachuré, et la broche (5). Que permet ce profil carré ?\n<svg viewBox=\"0 0 220 200\"><path d=\"M110 22 A78 78 0 1 1 109.9 22 Z M68 58 H152 V142 H68 Z\" fill=\"#0f6e56\" opacity=\"0.10\" fill-rule=\"evenodd\"/><path d=\"M36.72 73.28 L83.28 26.72 M32.92 88.08 L98.08 22.92 M32 100 L68 64 M74 58 L110 22 M32.69 110.3 L68 75 M85 58 L120.3 22.69 M34.48 119.5 L68 86 M96 58 L129.5 24.48 M37.14 127.9 L68 97 M107 58 L137.9 27.14 M40.53 135.5 L68 108 M118 58 L145.5 30.53 M44.56 142.4 L68 119 M129 58 L152.4 34.56 M49.17 148.8 L68 130 M140 58 L158.8 39.17 M54.35 154.7 L68 141 M151 58 L164.7 44.35 M60.07 159.9 L78 142 M152 68 L169.9 50.07 M66.35 164.6 L89 142 M152 79 L174.6 56.35 M73.22 168.8 L100 142 M152 90 L178.8 63.22 M80.71 172.3 L111 142 M152 101 L182.3 70.71 M88.91 175.1 L122 142 M152 112 L185.1 78.91 M97.94 177.1 L133 142 M152 123 L187.1 87.94 M108 178 L144 142 M152 134 L188 98.03 M119.6 177.4 L187.4 109.6 M133.7 174.3 L184.3 123.7 M156 163 L173 146\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"0.9\"/><rect x=\"68\" y=\"58\" width=\"84\" height=\"84\" fill=\"#bfdbfe\"/><circle cx=\"110\" cy=\"100\" r=\"78\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"68\" y=\"58\" width=\"84\" height=\"84\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"110\" y=\"45\">11</text><text x=\"110\" y=\"106\">5</text></g></svg>",
       "options": [
         { "id": "a", "text": "Il laisse la broche tourner et coulisser librement dans le moyeu" },
-        { "id": "b", "text": "Il permet à la broche de tourner librement dans le moyeu" },
+        { "id": "b", "text": "Il bloque la broche en translation tout en la laissant tourner dans le moyeu" },
         { "id": "c", "text": "Il entraîne la broche en rotation avec le moyeu tout en la laissant coulisser" },
         { "id": "d", "text": "Il encastre la broche sur le moyeu, sans aucun mouvement relatif" }
       ],
       "correctOption": "c",
-      "explanation": "Un carré ne peut pas tourner dans un logement carré : la rotation du moyeu est donc transmise à la broche ✓. En revanche rien ne s'oppose au déplacement le long de l'axe, perpendiculaire au plan de la coupe : la broche coulisse pendant la descente. Un profil circulaire aurait laissé les deux mouvements libres, et un encastrement aurait bloqué les deux : le carré bloque exactement l'un et laisse l'autre.",
+      "explanation": "Un carré ne peut pas tourner dans un logement carré : la rotation du moyeu est donc transmise à la broche ✓. En revanche rien ne s'oppose au déplacement le long de l'axe, perpendiculaire au plan de la coupe : la broche coulisse pendant la descente. Un profil circulaire aurait laissé les deux mouvements libres, et un encastrement aurait bloqué les deux : le carré bloque exactement l'un et laisse l'autre — et c'est bien la rotation qu'il bloque, jamais la translation.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "En modélisation numérique, à quoi sert l'objet 3D une fois construit dans le logiciel ?",
+      "options": [
+        { "id": "a", "text": "À déterminer les intervalles de tolérance des cotes à fabriquer" },
+        { "id": "b", "text": "À établir l'ordre chronologique du montage de l'ensemble" },
+        { "id": "c", "text": "À obtenir ensuite la représentation en 2D de ce même objet" },
+        { "id": "d", "text": "À choisir la matière la moins coûteuse pour chaque pièce" }
+      ],
+      "correctOption": "c",
+      "explanation": "La modélisation tridimensionnelle crée l'objet en trois dimensions par ajout, soustraction et modification de ses constituants, pour arriver ensuite à la représentation de cet objet en 2D ✓ : les vues se déduisent du modèle, elles ne se redessinent pas. Le tolérancement relève de la cotation fonctionnelle, l'ordre des opérations du graphe de montage, et le choix de la matière du bureau d'études : le logiciel dessine, il ne décide rien de tout cela.",
       "difficulty": 2
     }
   ]

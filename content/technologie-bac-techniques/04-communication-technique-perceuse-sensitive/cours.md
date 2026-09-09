@@ -60,12 +60,12 @@ Deux mouvements cohabitent, et il ne faut jamais les confondre : l'outil **tourn
 
 ::: figure Deux chaînes, deux mouvements : en haut la puissance descend jusqu'au foret, en bas la commande manuelle fait plonger la broche — et le ressort spiral (22) la ramène.
 <svg viewBox="0 0 460 212">
-<g font-size="10" font-weight="700" fill="#0f6e56"><text x="6" y="28">Transmission de puissance : l'outil tourne</text><text x="6" y="130">Commande de descente : l'outil avance</text></g>
+<g font-size="13" font-weight="700" fill="#0f6e56"><text x="6" y="28">Transmission de puissance : l'outil tourne</text><text x="6" y="130">Commande de descente : l'outil avance</text></g>
 <g fill="#0f6e56" opacity="0.12"><rect x="6" y="44" width="74" height="38" rx="5"/><rect x="96" y="44" width="92" height="38" rx="5"/><rect x="204" y="44" width="74" height="38" rx="5"/><rect x="294" y="44" width="74" height="38" rx="5"/><rect x="384" y="44" width="70" height="38" rx="5"/><rect x="6" y="146" width="98" height="38" rx="5"/><rect x="116" y="146" width="74" height="38" rx="5"/><rect x="206" y="146" width="104" height="38" rx="5"/><rect x="326" y="146" width="112" height="38" rx="5"/></g>
 <g fill="none" stroke="#0f172a" stroke-width="2"><rect x="6" y="44" width="74" height="38" rx="5"/><rect x="96" y="44" width="92" height="38" rx="5"/><rect x="204" y="44" width="74" height="38" rx="5"/><rect x="294" y="44" width="74" height="38" rx="5"/><rect x="384" y="44" width="70" height="38" rx="5"/><rect x="6" y="146" width="98" height="38" rx="5"/><rect x="116" y="146" width="74" height="38" rx="5"/><rect x="206" y="146" width="104" height="38" rx="5"/><rect x="326" y="146" width="112" height="38" rx="5"/><path d="M80 63 H90"/><path d="M188 63 H198"/><path d="M278 63 H288"/><path d="M368 63 H378"/><path d="M104 165 H106"/><path d="M190 165 H196"/><path d="M310 165 H316"/><path d="M382 184 V198 H258 V186"/></g>
 <g fill="#0f172a"><polygon points="96,63 86,58 86,68"/><polygon points="204,63 194,58 194,68"/><polygon points="294,63 284,58 284,68"/><polygon points="384,63 374,58 374,68"/><polygon points="116,165 106,160 106,170"/><polygon points="206,165 196,160 196,170"/><polygon points="326,165 316,160 316,170"/><polygon points="258,184 253,194 263,194"/></g>
-<g font-size="10" font-weight="700" text-anchor="middle" fill="#0f172a"><text x="43" y="60">Moteur</text><text x="43" y="73">électrique</text><text x="142" y="60">Poulie étagée</text><text x="142" y="73">(12) + courroie</text><text x="241" y="67">Moyeu (11)</text><text x="331" y="67">Broche (5)</text><text x="419" y="60">Mandrin,</text><text x="419" y="73">foret</text><text x="55" y="162">Bras de</text><text x="55" y="175">commande (24)</text><text x="153" y="169">Pignon (13)</text><text x="258" y="162">Crémaillère du</text><text x="258" y="175">fourreau (4)</text><text x="382" y="162">Translation de</text><text x="382" y="175">la broche (5)</text></g>
-<text x="320" y="209" font-size="10" font-weight="700" text-anchor="middle" fill="#0f6e56">ressort spiral (22)</text>
+<g font-size="13" font-weight="700" text-anchor="middle" fill="#0f172a"><text x="43" y="60">Moteur</text><text x="43" y="73">électrique</text><text x="142" y="60">Poulie étagée</text><text x="142" y="73">(12) + courroie</text><text x="241" y="67">Moyeu (11)</text><text x="331" y="67">Broche (5)</text><text x="419" y="60">Mandrin,</text><text x="419" y="73">foret</text><text x="55" y="162">Bras de</text><text x="55" y="175">commande (24)</text><text x="153" y="169">Pignon (13)</text><text x="258" y="162">Crémaillère du</text><text x="258" y="175">fourreau (4)</text><text x="382" y="162">Translation de</text><text x="382" y="175">la broche (5)</text></g>
+<text x="320" y="209" font-size="13" font-weight="700" text-anchor="middle" fill="#0f6e56">ressort spiral (22)</text>
 </svg>
 :::
 
@@ -100,6 +100,9 @@ L'analyse du fonctionnement, c'est traduire des traits en **liaisons**. Trois so
 <rect x="36" y="106" width="290" height="68" fill="#0f6e56" opacity="0.12"/>
 <path d="M66 106 L73.5 96 L81 106 L88.5 96 L96 106 L103.5 96 L111 106 L118.5 96 L126 106 L133.5 96 L141 106 L148.5 96 L156 106 L163.5 96 L171 106 L178.5 96 L186 106" fill="none" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
 <path d="M36 106 H66 M186 106 H326 M36 106 V174 M326 106 V174 M36 174 H244 M268 174 H326" fill="none" stroke="#0f172a" stroke-width="2"/>
+<rect x="196" y="78" width="144" height="28" fill="#0f6e56" opacity="0.10"/>
+<path d="M196 83 L201 78 M196 94 L212 78 M196 105 L223 78 M206 106 L234 78 M217 106 L245 78 M228 106 L256 78 M239 106 L267 78 M250 106 L278 78 M261 106 L289 78 M272 106 L300 78 M283 106 L311 78 M294 106 L322 78 M305 106 L333 78 M316 106 L340 82 M327 106 L340 93 M338 106 L340 104" fill="none" stroke="#0f172a" stroke-width="0.9"/>
+<rect x="196" y="78" width="144" height="28" fill="none" stroke="#0f172a" stroke-width="2"/>
 <rect x="16" y="174" width="324" height="28" fill="#0f6e56" opacity="0.10"/>
 <path d="M16 175 L17 174 M16 186 L28 174 M16 197 L39 174 M22 202 L50 174 M33 202 L61 174 M44 202 L72 174 M55 202 L83 174 M66 202 L94 174 M77 202 L105 174 M88 202 L116 174 M99 202 L127 174 M110 202 L138 174 M121 202 L149 174 M132 202 L160 174 M143 202 L171 174 M154 202 L182 174 M165 202 L193 174 M176 202 L204 174 M187 202 L215 174 M198 202 L226 174 M209 202 L237 174 M220 202 L248 174 M231 202 L259 174 M242 202 L270 174 M253 202 L281 174 M264 202 L292 174 M275 202 L303 174 M286 202 L314 174 M297 202 L325 174 M308 202 L336 174 M319 202 L340 181 M330 202 L340 192" fill="none" stroke="#0f172a" stroke-width="0.9"/>
 <rect x="16" y="174" width="324" height="28" fill="none" stroke="#0f172a" stroke-width="2"/>
@@ -111,10 +114,10 @@ L'analyse du fonctionnement, c'est traduire des traits en **liaisons**. Trois so
 <rect x="248" y="160" width="16" height="42" fill="#fde68a" stroke="#0f172a" stroke-width="2"/>
 <rect x="240" y="202" width="32" height="14" fill="#0f6e56" opacity="0.2"/>
 <rect x="240" y="202" width="32" height="14" fill="none" stroke="#0f172a" stroke-width="2"/>
-<path d="M240 90 H330" fill="none" stroke="#0f6e56" stroke-width="2"/>
-<g fill="#0f6e56"><polygon points="234,90 244,85 244,95"/><polygon points="336,90 326,85 326,95"/></g>
+<path d="M246 126 H310" fill="none" stroke="#0f6e56" stroke-width="2"/>
+<g fill="#0f6e56"><polygon points="240,126 250,121 250,131"/><polygon points="316,126 306,121 306,131"/></g>
 <g fill="none" stroke="#0f172a" stroke-width="1"><path d="M292 186 H266"/><path d="M292 213 H272"/></g>
-<g font-size="14" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"><text x="300" y="146">4</text><text x="52" y="196">3</text><text x="142" y="82">13</text><text x="70" y="16">24</text><text x="296" y="190">19</text><text x="296" y="217">18</text></g>
+<g font-size="14" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"><text x="300" y="146">4</text><text x="212" y="99">3</text><text x="52" y="196">3</text><text x="142" y="82">13</text><text x="70" y="16">24</text><text x="296" y="190">19</text><text x="296" y="217">18</text></g>
 </svg>
 :::
 
@@ -140,20 +143,26 @@ Le graphe de montage et celui de démontage sont des outils donnant un **ordre c
 
 Mise en situation : dans le cadre d'une **maintenance corrective**, l'équipe d'entretien doit changer le **ressort (22) défectueux**. Comment procéder ? On trace d'abord le **graphe de démontage**, dit **filogramme** : une colonne verticale portant le **repère d'ordre**, sur laquelle se détachent les pièces déposées, dans l'ordre, avec l'outillage nécessaire.
 
-::: figure Le filogramme se lit de haut en bas : chaque cran du repère d'ordre dépose une pièce, jusqu'à isoler le ressort (22) à remplacer. Ce qui n'a pas été touché forme le sous-ensemble restant.
-<svg viewBox="0 0 420 258">
-<g font-size="10" font-weight="700" fill="#0f6e56"><text x="6" y="14">Repère</text><text x="6" y="27">d'ordre</text><text x="290" y="20">Outillage</text></g>
-<rect x="86" y="8" width="128" height="28" rx="4" fill="#0f6e56" opacity="0.16" stroke="#0f172a" stroke-width="2"/>
-<path d="M150 36 V214" fill="none" stroke="#0f172a" stroke-width="2"/>
-<g fill="none" stroke="#0f172a" stroke-width="2"><path d="M150 62 H196"/><path d="M150 102 H196"/><path d="M150 142 H196"/><path d="M150 182 H216"/></g>
-<g fill="#0f172a"><polygon points="206,62 196,57 196,67"/><polygon points="206,102 196,97 196,107"/><polygon points="206,142 196,137 196,147"/><polygon points="226,182 216,177 216,187"/></g>
-<g fill="#bfdbfe" stroke="#0f172a" stroke-width="2"><rect x="206" y="48" width="48" height="28" rx="4"/><rect x="206" y="88" width="48" height="28" rx="4"/><rect x="206" y="128" width="64" height="28" rx="4"/><rect x="226" y="168" width="48" height="28" rx="4"/></g>
-<rect x="76" y="214" width="148" height="30" rx="4" fill="#0f6e56" opacity="0.16" stroke="#0f172a" stroke-width="2"/>
-<g font-size="11" font-weight="700" text-anchor="middle" fill="#0f172a"><text x="150" y="27">Perceuse sensitive</text><text x="230" y="67">23'</text><text x="230" y="107">23</text><text x="238" y="147">21 + 22</text><text x="250" y="187">22</text><text x="150" y="233">Sous-ensemble restant</text></g>
-<g font-size="11" font-weight="700" text-anchor="end" fill="#0f6e56"><text x="142" y="58">1</text><text x="142" y="98">2</text><text x="142" y="138">3</text><text x="142" y="178">3.1</text></g>
-<g font-size="9" fill="#0f172a"><text x="290" y="67">Clé plate de 8 (deux clés)</text><text x="290" y="107">Clé plate de 8</text><text x="290" y="147">Manuelle</text><text x="290" y="187">Extracteur de ressort</text></g>
+::: figure Le filogramme se lit de haut en bas : chaque cran du repère d'ordre dépose une pièce. À l'étape 3.1 l'extraction sépare le ressort (22), qui part au rebut, du couvercle (21), qui reste. Ce qui n'a pas été touché forme le sous-ensemble restant.
+<svg viewBox="0 0 256 258">
+<g font-size="11" font-weight="700" fill="#0f6e56"><text x="4" y="14">Repère</text><text x="4" y="27">d'ordre</text></g>
+<rect x="58" y="6" width="128" height="28" rx="4" fill="#0f6e56" opacity="0.16" stroke="#0f172a" stroke-width="2"/>
+<path d="M122 34 V222" fill="none" stroke="#0f172a" stroke-width="2"/>
+<g fill="none" stroke="#0f172a" stroke-width="2"><path d="M122 58 H168"/><path d="M122 96 H168"/><path d="M122 134 H168"/><path d="M122 180 H158 M158 168 V200 M158 168 H168 M158 200 H168"/></g>
+<g fill="#0f172a"><polygon points="178,58 168,53 168,63"/><polygon points="178,96 168,91 168,101"/><polygon points="178,134 168,129 168,139"/><polygon points="178,168 168,163 168,173"/><polygon points="178,200 168,195 168,205"/></g>
+<g fill="#bfdbfe" stroke="#0f172a" stroke-width="2"><rect x="178" y="44" width="48" height="28" rx="4"/><rect x="178" y="82" width="48" height="28" rx="4"/><rect x="178" y="120" width="64" height="28" rx="4"/><rect x="178" y="154" width="48" height="28" rx="4"/><rect x="178" y="186" width="48" height="28" rx="4"/></g>
+<rect x="48" y="222" width="148" height="28" rx="4" fill="#0f6e56" opacity="0.16" stroke="#0f172a" stroke-width="2"/>
+<g font-size="12" font-weight="700" text-anchor="middle" fill="#0f172a"><text x="122" y="25">Perceuse sensitive</text><text x="202" y="63">23'</text><text x="202" y="101">23</text><text x="210" y="139">21 + 22</text><text x="202" y="173">22</text><text x="202" y="205">21</text><text x="122" y="241">Sous-ensemble restant</text></g>
+<g font-size="12" font-weight="700" text-anchor="end" fill="#0f6e56"><text x="114" y="54">1</text><text x="114" y="92">2</text><text x="114" y="130">3</text><text x="114" y="176">3.1</text></g>
 </svg>
 :::
+
+| Repère d'ordre | Outillage             | Observation                                       |
+| -------------- | --------------------- | ------------------------------------------------- |
+| 1              | Clé plate de 8        | Prévoir deux clés — déposer le contre-écrou (23') |
+| 2              | Clé plate de 8        | Déposer l'écrou (23)                              |
+| 3              | Manuelle              | Déposer le couvercle (21) avec le ressort (22)    |
+| 3.1            | Extracteur de ressort | Extraire le ressort (22) à changer                |
 
 Lis-le : on dépose d'abord le **contre-écrou (23')**, puis l'**écrou (23)**, puis à la main le **couvercle (21) avec le ressort (22)** ; on **extrait** enfin le ressort du couvercle. Le reste de la machine n'a pas été touché : c'est le **sous-ensemble restant**.
 
@@ -165,7 +174,7 @@ Le **montage reprend le démontage à l'envers** : la dernière pièce déposée
 
 ::: figure Le râteau de montage se lit de gauche à droite : le ressort (22) entre d'abord dans le couvercle (21) pour former un sous-ensemble, qui se pose ensuite sur la machine avant l'écrou (23) puis le contre-écrou (23').
 <svg viewBox="0 0 420 180">
-<text x="6" y="18" font-size="10" font-weight="700" fill="#0f6e56">Ordre de montage</text>
+<text x="6" y="18" font-size="12" font-weight="700" fill="#0f6e56">Ordre de montage</text>
 <path d="M96 140 H340" fill="none" stroke="#0f172a" stroke-width="2.5"/>
 <polygon points="352,140 338,134 338,146" fill="#0f172a"/>
 <g fill="none" stroke="#0f172a" stroke-width="2"><path d="M144 54 V66 H196 V54"/><path d="M170 66 V76"/><path d="M170 102 V140"/><path d="M252 102 V140"/><path d="M314 102 V140"/></g>
@@ -173,8 +182,8 @@ Le **montage reprend le démontage à l'envers** : la dernière pièce déposée
 <g fill="#bfdbfe" stroke="#0f172a" stroke-width="2"><rect x="124" y="28" width="40" height="26" rx="4"/><rect x="176" y="28" width="40" height="26" rx="4"/><rect x="136" y="76" width="68" height="26" rx="4"/><rect x="232" y="76" width="40" height="26" rx="4"/><rect x="292" y="76" width="44" height="26" rx="4"/></g>
 <g fill="#0f6e56" opacity="0.16"><rect x="8" y="122" width="88" height="36" rx="4"/><rect x="352" y="122" width="64" height="36" rx="4"/></g>
 <g fill="none" stroke="#0f172a" stroke-width="2"><rect x="8" y="122" width="88" height="36" rx="4"/><rect x="352" y="122" width="64" height="36" rx="4"/></g>
-<g font-size="11" font-weight="700" text-anchor="middle" fill="#0f172a"><text x="144" y="46">22</text><text x="196" y="46">21</text><text x="170" y="94">21 + 22</text><text x="252" y="94">23</text><text x="314" y="94">23'</text></g>
-<g font-size="9" font-weight="700" text-anchor="middle" fill="#0f172a"><text x="52" y="138">Sous-ensemble</text><text x="52" y="151">restant</text><text x="384" y="138">Ensemble</text><text x="384" y="151">perceuse</text></g>
+<g font-size="12" font-weight="700" text-anchor="middle" fill="#0f172a"><text x="144" y="46">22</text><text x="196" y="46">21</text><text x="170" y="94">21 + 22</text><text x="252" y="94">23</text><text x="314" y="94">23'</text></g>
+<g font-size="12" font-weight="700" text-anchor="middle" fill="#0f172a"><text x="52" y="138">Sous-ensemble</text><text x="52" y="151">restant</text><text x="384" y="138">Ensemble</text><text x="384" y="151">perceuse</text></g>
 </svg>
 :::
 
@@ -218,13 +227,37 @@ J mini = A mini − B maxi − C maxi ⇒ 0,1 = 59,95 − 35,03 − C maxi ⇒ C
 Vérification : 24,82 − 24,78 = 0,04 ✓ On écrit **C = 24,80 ± 0,02**.
 :::
 
-Sur la perceuse, la condition **JA** du boîtier de commande obéit à la même mécanique. Sa chaîne fait intervenir quatre cotes — A3 sur le bâti (3), A13 sur le pignon (13), A20 sur l'anneau élastique (20) et A25 sur le coussinet (25) — avec 0 ≤ JA ≤ 0,2 ; A3 = 58 ± 0,02 ; A20 = 1h11 ; A25 = 2 ± 0,02.
+Sur la perceuse, la condition **JA** du boîtier de commande obéit à la même mécanique. Le **pignon (13)** est monté dans l'alésage du **bâti (3)** ; sur son axe viennent encore l'**anneau élastique (20)** et le **coussinet (25)**, puis — au-delà — le **couvercle (21)** qui abrite le **ressort spiral (22)**, tenu par l'écrou (23) et son contre-écrou (23'). Ce qui reste de la longueur d'alésage une fois l'empilage en place, c'est le jeu axial **JA**. Sa chaîne fait donc intervenir quatre cotes : A3 sur le bâti (3), A13 sur le pignon (13), A20 sur l'anneau élastique (20) et A25 sur le coussinet (25) — avec 0 ≤ JA ≤ 0,2 ; A3 = 58 ± 0,02 ; A20 = 1h11 ; A25 = 2 ± 0,02.
+
+::: figure La condition JA se referme sur quatre cotes : la longueur d'alésage A3 du bâti (3) est parcourue dans le sens de la condition, l'empilage pignon (13) + anneau (20) + coussinet (25) en sens inverse — donc JA = A3 − A13 − A20 − A25. Le jeu et les petites cotes sont dessinés exagérés, sinon on ne les verrait pas.
+<svg viewBox="0 0 340 190">
+<g transform="translate(-20,-32)">
+<g fill="#0f6e56" opacity="0.12"><rect x="40" y="40" width="24" height="110"/><rect x="316" y="40" width="24" height="110"/><rect x="40" y="150" width="300" height="20"/></g>
+<path d="M40 50 L50 40 M40 59 L59 40 M40 68 L64 44 M40 77 L64 53 M40 86 L64 62 M40 95 L64 71 M40 104 L64 80 M40 113 L64 89 M40 122 L64 98 M40 131 L64 107 M40 140 L64 116 M40 149 L64 125 M64 134 L48 150 M64 143 L57 150 M316 44 L320 40 M316 53 L329 40 M316 62 L338 40 M316 71 L340 47 M316 80 L340 56 M316 89 L340 65 M316 98 L340 74 M316 107 L340 83 M316 116 L340 92 M316 125 L340 101 M316 134 L340 110 M316 143 L340 119 M340 128 L318 150 M340 137 L327 150 M340 146 L336 150 M40 158 L48 150 M40 167 L57 150 M66 150 L46 170 M75 150 L55 170 M84 150 L64 170 M93 150 L73 170 M102 150 L82 170 M111 150 L91 170 M120 150 L100 170 M129 150 L109 170 M138 150 L118 170 M147 150 L127 170 M156 150 L136 170 M165 150 L145 170 M174 150 L154 170 M183 150 L163 170 M192 150 L172 170 M201 150 L181 170 M210 150 L190 170 M219 150 L199 170 M228 150 L208 170 M237 150 L217 170 M246 150 L226 170 M255 150 L235 170 M264 150 L244 170 M273 150 L253 170 M282 150 L262 170 M291 150 L271 170 M300 150 L280 170 M309 150 L289 170 M318 150 L298 170 M327 150 L307 170 M336 150 L316 170 M340 155 L325 170 M340 164 L334 170" fill="none" stroke="#0f172a" stroke-width="0.9"/>
+<path d="M40 40 H64 V150 H316 V40 H340 V170 H40 Z" fill="none" stroke="#0f172a" stroke-width="2"/>
+<rect x="64" y="80" width="150" height="70" fill="#bfdbfe" stroke="#0f172a" stroke-width="2"/>
+<rect x="214" y="80" width="30" height="70" fill="#fde68a" stroke="#0f172a" stroke-width="2"/>
+<rect x="244" y="80" width="52" height="70" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<path d="M26 115 H354" fill="none" stroke="#0f172a" stroke-width="1" stroke-dasharray="14 4 3 4"/>
+<g fill="none" stroke="#0f172a" stroke-width="1"><path d="M214 76 V62 M244 76 V62 M296 78 V56 M64 172 V214 M214 172 V194 M244 172 V194 M296 172 V194 M316 172 V214"/></g>
+<g fill="none" stroke="#0f172a" stroke-width="1.2"><path d="M70 208 H310"/><path d="M70 188 H208"/><path d="M250 188 H290"/><path d="M204 68 H254"/><path d="M296 60 H316"/></g>
+<g fill="#0f172a"><polygon points="64,208 74,204 74,212"/><polygon points="316,208 306,204 306,212"/><polygon points="64,188 74,184 74,192"/><polygon points="214,188 204,184 204,192"/><polygon points="244,188 254,184 254,192"/><polygon points="296,188 286,184 286,192"/><polygon points="214,68 204,64 204,72"/><polygon points="244,68 254,64 254,72"/><polygon points="296,60 302,57 302,63"/><polygon points="316,60 310,57 310,63"/></g>
+<g font-size="12" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"><text x="139" y="120">13</text><text x="229" y="120">20</text><text x="270" y="120">25</text><text x="52" y="110">3</text><text x="328" y="110">3</text><text x="190" y="204">A3</text><text x="136" y="184">A13</text><text x="229" y="56">A20</text><text x="270" y="184">A25</text><text x="306" y="52">JA</text></g>
+</g>
+</svg>
+:::
 
 - IT(A3) = 0,04 et IT(A25) = 0,04.
 - **A20 = 1h11** se lit dans le tableau ISO : cote nominale 1 mm, donc l'intervalle **IT11 = 0,06 mm** (valable pour toutes les dimensions jusqu'à 3 mm) ; la position **h** impose un **écart supérieur nul**. Donc A20 = 1 (0 / −0,06) et IT(A20) = 0,06.
-- Il reste : IT(A13) = 0,2 − 0,04 − 0,06 − 0,04 = **0,06** ✓
+- Il ne reste qu'à retrancher ces trois intervalles de IT(JA) = 0,2 pour obtenir **IT(A13)**, la tolérance qui reste au fabricant du pignon. Pose la soustraction toi-même : c'est mot pour mot ce que demande l'activité 1.3 du manuel.
 
 > 🗡️ Retiens le réflexe : **d'abord les IT, ensuite les extrêmes**. La somme des IT te donne immédiatement la tolérance qui reste au fabricant ; si elle tombe négative, la condition est **impossible** et il faut resserrer une autre cote.
+
+::: definition Condition minimale, condition maximale, plan de jauge
+- Une condition est **maximale** quand seule sa borne haute compte — un **jeu** que l'on ne veut pas voir dépasser une valeur.
+- Elle est **minimale** quand seule sa borne basse compte — un **dépassement** ou un **serrage** que l'on doit garantir.
+- Le **plan de jauge** est le plan de référence choisi sur le dessin pour reporter les cotes d'une même pièce : toutes ses cotes fonctionnelles se mesurent à partir de lui, ce qui leur donne une origine unique.
+:::
 
 ## ✏️ Le dessin de définition et les coupes particulières
 
@@ -269,6 +302,38 @@ Pour montrer l'intérieur d'une pièce, on est parfois obligé d'utiliser des **
 <path d="M30 140 H76 M104 140 H256 M284 140 H350 M30 196 H76 M104 196 H256 M284 196 H350 M30 140 V196 M350 140 V196 M76 140 V196 M104 140 V196 M256 140 V196 M284 140 V196" fill="none" stroke="#0f172a" stroke-width="2"/>
 <path d="M150 134 V202" fill="none" stroke="#0f172a" stroke-width="1" stroke-dasharray="14 3 3 3"/>
 <text x="190" y="214" font-size="12" font-weight="700" text-anchor="middle" fill="#0f172a">A-A</text>
+</svg>
+:::
+
+::: methode Exécuter une coupe à plans parallèles
+1. **Couper** les différentes parties de la pièce par des plans **parallèles**.
+2. **Supposer ces plans ramenés sur un seul plan de projection**.
+3. **Repérer les changements de plan en traits forts**, sur la vue qui porte le plan de coupe.
+4. Dans la vue en coupe, un **trait d'axe** indique le changement de plan.
+5. **Hachurer** les surfaces, avec **décalage** au changement de plan si cela améliore la clarté du dessin — sinon comme une coupe simple.
+:::
+
+::: figure La coupe brisée à plans sécants : les deux perçages ne sont pas dans le même plan, alors le plan oblique pivote autour de l'axe pour venir se ranger dans le plan vertical. Sur la coupe A-A, les deux trous se retrouvent donc à la même distance r de l'axe, en vraie grandeur.
+<svg viewBox="0 0 300 200">
+<g transform="translate(-24,-12)">
+<circle cx="100" cy="110" r="70" fill="none" stroke="#0f172a" stroke-width="2"/>
+<circle cx="100" cy="110" r="18" fill="none" stroke="#0f172a" stroke-width="2"/>
+<circle cx="100" cy="62" r="9" fill="none" stroke="#0f172a" stroke-width="2"/>
+<circle cx="141.57" cy="134" r="9" fill="none" stroke="#0f172a" stroke-width="2"/>
+<path d="M100 25 V110 L190.93 162.5" fill="none" stroke="#0f172a" stroke-width="1" stroke-dasharray="14 3 3 3"/>
+<path d="M100 25 V41 M100 94 V110 L113.86 118 M177.07 154.5 L190.93 162.5" fill="none" stroke="#0f172a" stroke-width="3.5"/>
+<path d="M100 25 H116 M190.93 162.5 H207" fill="none" stroke="#0f172a" stroke-width="1.6"/>
+<g fill="#0f172a"><polygon points="124,25 114,20 114,30"/><polygon points="215,162.5 205,157.5 205,167.5"/></g>
+<g font-size="13" font-weight="700" fill="#0f172a"><text x="128" y="30">A</text><text x="219" y="168">A</text></g>
+<g fill="#0f6e56" opacity="0.12"><rect x="250" y="40" width="26" height="13"/><rect x="250" y="71" width="26" height="21"/><rect x="250" y="128" width="26" height="21"/><rect x="250" y="167" width="26" height="13"/></g>
+<path d="M250 44 L254 40 M250 51 L261 40 M268 40 L255 53 M275 40 L262 53 M276 46 L269 53 M250 79 L258 71 M250 86 L265 71 M272 71 L251 92 M276 74 L258 92 M276 81 L265 92 M276 88 L272 92 M250 135 L257 128 M250 142 L264 128 M250 149 L271 128 M276 130 L257 149 M276 137 L264 149 M276 144 L271 149 M250 170 L253 167 M250 177 L260 167 M267 167 L254 180 M274 167 L261 180 M276 172 L268 180" fill="none" stroke="#0f172a" stroke-width="0.9"/>
+<path d="M250 40 H276 M250 53 H276 M250 71 H276 M250 92 H276 M250 128 H276 M250 149 H276 M250 167 H276 M250 180 H276 M250 40 V53 M250 71 V92 M250 128 V149 M250 167 V180 M276 40 V53 M276 71 V92 M276 128 V149 M276 167 V180" fill="none" stroke="#0f172a" stroke-width="2"/>
+<path d="M244 110 H306 M244 62 H306 M244 158 H306" fill="none" stroke="#0f172a" stroke-width="1" stroke-dasharray="14 3 3 3"/>
+<path d="M300 66 V106 M300 114 V154" fill="none" stroke="#0f172a" stroke-width="1"/>
+<g fill="#0f172a"><polygon points="300,62 296,72 304,72"/><polygon points="300,110 296,100 304,100"/><polygon points="300,110 296,120 304,120"/><polygon points="300,158 296,148 304,148"/></g>
+<g font-size="11" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"><text x="100" y="66">1</text><text x="142" y="138">2</text><text x="263" y="66">1</text><text x="263" y="162">2</text><text x="312" y="90">r</text><text x="312" y="140">r</text></g>
+<text x="263" y="200" font-size="12" font-weight="700" text-anchor="middle" fill="#0f172a">A-A</text>
+</g>
 </svg>
 :::
 
