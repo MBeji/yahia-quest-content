@@ -14,9 +14,9 @@
       "prompt": "Que représente le dessin d'ensemble étudié de la perceuse sensitive ?",
       "options": [
         { "id": "a", "text": "Partiellement la transmission de puissance et la commande de déplacement de la broche" },
-        { "id": "b", "text": "L'ensemble de la machine, avec sa colonne, son étau et son support" },
-        { "id": "c", "text": "La seule broche, avec ses roulements et son mandrin porte-outil" },
-        { "id": "d", "text": "Le circuit électrique du moteur et de son organe de commande" }
+        { "id": "b", "text": "L'ensemble complet de la machine, avec sa colonne, son étau et son support de pièce" },
+        { "id": "c", "text": "La seule broche, avec ses deux roulements, sa bague entretoise et son mandrin porte-outil" },
+        { "id": "d", "text": "Le circuit électrique du moteur et le schéma de son organe de commande" }
       ],
       "correctOption": "a",
       "explanation": "Le dessin d'ensemble représente partiellement la partie de transmission de puissance de la perceuse ainsi que le mécanisme de commande de déplacement de la broche ✓. La colonne, l'étau et le support existent sur la machine mais ne figurent pas sur ce dessin, et un dessin d'ensemble ne porte jamais de schéma électrique : c'est un document mécanique.",
@@ -28,10 +28,10 @@
         { "id": "a", "text": "La rondelle plate (7)" },
         { "id": "b", "text": "La bague entretoise (9)" },
         { "id": "c", "text": "L'anneau élastique pour alésage (10)" },
-        { "id": "d", "text": "L'écrou spécial (17)" }
+        { "id": "d", "text": "La bague entretoise (2)" }
       ],
       "correctOption": "b",
-      "explanation": "Une bague entretoise est faite pour cela : elle s'interpose entre deux roulements et fixe la distance qui les sépare ✓. L'anneau élastique pour alésage arrête un roulement axialement dans son logement mais ne règle aucun écartement, la rondelle plate répartit un appui, et l'écrou spécial serre la poulie sur le moyeu.",
+      "explanation": "Une bague entretoise est faite pour cela : elle s'interpose entre deux roulements et fixe la distance qui les sépare, et c'est la bague (9) qui tient cette place entre les deux roulements (8) ✓. L'anneau élastique pour alésage arrête un roulement axialement dans son logement mais ne règle aucun écartement, la rondelle plate répartit un appui, et la bague entretoise (2) fait le même travail — mais entre les roulements (1) de la broche, pas entre les roulements (8) : c'est le repère du roulement qui désigne l'entretoise.",
       "difficulty": 1
     },
     {
@@ -49,10 +49,10 @@
     {
       "prompt": "Le bâti (3) est en EN GJL 250. Que désigne exactement cette écriture ?",
       "options": [
-        { "id": "a", "text": "Un acier faiblement allié contenant 2,50 % de carbone" },
-        { "id": "b", "text": "Un acier de construction de limite d'élasticité 250 MPa" },
-        { "id": "c", "text": "Un alliage d'aluminium contenant 250 pour mille de silicium" },
-        { "id": "d", "text": "Une fonte à graphite lamellaire de résistance minimale à la traction 250 MPa" }
+        { "id": "a", "text": "Un acier faiblement allié dont la teneur en carbone atteint 2,50 %" },
+        { "id": "b", "text": "Un acier de construction de limite d'élasticité minimale 250 MPa" },
+        { "id": "c", "text": "Un alliage d'aluminium dont la teneur en silicium atteint 25 %" },
+        { "id": "d", "text": "Une fonte à graphite lamellaire de résistance minimale 250 MPa" }
       ],
       "correctOption": "d",
       "explanation": "Les lettres GJL désignent une fonte à graphite lamellaire, et le nombre qui suit donne la résistance minimale à la traction, ici 250 MPa ✓. Un acier de construction s'écrirait S235 ou S250, un acier faiblement allié commencerait par le carbone multiplié par cent, et un alliage d'aluminium porterait le symbole Al. La fonte est le choix naturel d'un bâti : moulée, rigide et amortissante.",
@@ -68,10 +68,10 @@
     {
       "prompt": "Pourquoi le constructeur a-t-il choisi une poulie étagée (12) plutôt qu'une poulie simple ?",
       "options": [
-        { "id": "a", "text": "Pour obtenir plusieurs vitesses de rotation, en déplaçant la courroie d'un gradin à l'autre" },
-        { "id": "b", "text": "Pour alléger la poulie et réduire l'inertie de la transmission" },
-        { "id": "c", "text": "Pour loger les deux roulements du moyeu dans la poulie elle-même" },
-        { "id": "d", "text": "Pour empêcher la courroie de glisser sur la gorge de la poulie" }
+        { "id": "a", "text": "Pour offrir plusieurs vitesses en déplaçant la courroie d'un gradin à l'autre" },
+        { "id": "b", "text": "Pour alléger la poulie et réduire l'inertie de toute la chaîne de transmission" },
+        { "id": "c", "text": "Pour loger les deux roulements et la bague entretoise (9) du moyeu (11)" },
+        { "id": "d", "text": "Pour empêcher la courroie de glisser dans la gorge de la poulie étagée" }
       ],
       "correctOption": "a",
       "explanation": "Chaque gradin de la poulie a un diamètre différent : en changeant la courroie de gradin, on change le rapport de transmission, donc la vitesse de rotation de la broche ✓. Percer de l'acier et percer du plastique ne demandent pas la même vitesse, et cette solution mécanique très simple évite un variateur électronique. L'allégement, le logement des roulements et l'adhérence de la courroie ne dépendent pas du nombre de gradins.",
