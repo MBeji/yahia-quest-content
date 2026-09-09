@@ -117,7 +117,7 @@
         "value": 1.7,
         "unit": "mm"
       },
-      "explanation": "Le cadran seul ne suffit jamais : il faut compter les tours, puis lire la graduation. Le tour complet déjà accompli vaut 1 mm ; l'aiguille s'est ensuite arrêtée sur la graduation 70, soit 70 × 0,01 = 0,70 mm. L'allongement vaut donc 1 + 0,70 = 1,70 mm. Le piège classique est d'oublier le tour et de répondre 0,70 mm — sur une éprouvette qu'on tire jusqu'à la rupture, l'aiguille fait plusieurs tours.",
+      "explanation": "Le cadran seul ne suffit jamais : il faut compter les tours, puis lire la graduation. Le tour complet déjà accompli vaut 1 mm ; l'aiguille s'est ensuite arrêtée sur la graduation 70, soit 70 × 0,01 = 0,70 mm. L'allongement vaut donc 1 + 0,70 = 1,7 mm. Le piège classique est d'oublier le tour et de répondre 0,70 mm — sur une éprouvette qu'on tire jusqu'à la rupture, l'aiguille fait plusieurs tours.",
       "difficulty": 2
     },
     {
@@ -178,6 +178,43 @@
         ]
       },
       "explanation": "Deux questions suffisent à les séparer. Premièrement : garde-t-on ce qui est derrière le plan ? Oui pour la coupe, non pour les deux sections — c'est la seule différence entre elles. Deuxièmement, pour une section : où la dessine-t-on ? À l'extérieur de la pièce, alignée sur le plan de coupe, et c'est la section sortie ; directement sur la vue, en trait fin, et c'est la section rabattue. La demi-coupe, elle, ne coupe que la moitié d'une pièce symétrique : l'autre moitié reste en vue extérieure, et elle ne reçoit aucun trait interrompu puisque la moitié tranchée a déjà tout montré.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Une bague de guidage est défectueuse : l'intervention consiste à changer les deux coussinets (18). Remets dans l'ordre les cinq opérations du graphe de démontage partiel, de la première à la dernière.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Déposer les quatre écrous (12) de maintien, à la clé plate 24"
+        },
+        {
+          "id": "b",
+          "text": "Déposer les quatre rondelles (13), qui se trouvaient sous les écrous (12)"
+        },
+        {
+          "id": "c",
+          "text": "Déposer le sous-ensemble traverse mobile supérieure (14)"
+        },
+        {
+          "id": "d",
+          "text": "Déposer les vis de fixation (21), à la clé à six pans"
+        },
+        {
+          "id": "e",
+          "text": "Déposer la traverse fixe supérieure (8) avec son mors (9), puis extraire les coussinets (18)"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "Un démontage se lit à l'envers d'un montage : on enlève toujours d'abord ce qui retient le reste. Les écrous (12) ferment l'assemblage, donc ils partent les premiers ; les rondelles (13), coincées dessous, ne se libèrent qu'après eux ; la traverse mobile supérieure (14), qui n'était tenue que par ces écrous, vient ensuite. Restent les vis de fixation (21), puis la traverse fixe supérieure (8) avec son mors (9) — et c'est seulement là que les coussinets (18) deviennent accessibles à l'extracteur. Le graphe s'arrête à cette ligne : tout ce qui n'a pas été nommé n'a jamais été touché, c'est le sous-ensemble restant.",
       "difficulty": 2
     }
   ]
