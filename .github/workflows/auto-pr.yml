@@ -237,16 +237,32 @@ jobs:
           echo "created=true" >> "$GITHUB_OUTPUT"
 
       # Le FILET : sans check, `automerge.yml` refuse de merger un SHA (« zéro
-      # check = pas de merge »), et la PR dormirait pour toujours. Deux gardes
-      # avant de dispatcher, pas une :
-      #   - on ne dispatche que si on vient d'ouvrir la PR (une session qui fait
-      #     son `gh pr create` a déjà l'événement) ;
-      #   - et seulement si le SHA porte déjà un run qui a RÉELLEMENT tourné.
-      #     Voir l'en-tête : « existe-t-il un run ? » est la mauvaise question,
-      #     celle qui a gelé la chaîne (privé#297). Un run ouvert par le
-      #     `GITHUB_TOKEN` existe et n'évalue rien — zéro job, `failure`.
+      # check = pas de merge »), et la PR dormirait pour toujours. Une seule
+      # garde avant de dispatcher : le SHA porte-t-il déjà un run qui a
+      # RÉELLEMENT tourné ? Voir l'en-tête — « existe-t-il un run ? » est la
+      # mauvaise question, celle qui a gelé la chaîne (privé#297). Un run ouvert
+      # par le `GITHUB_TOKEN` existe et n'évalue rien — zéro job, `failure`.
+      #
+      # ⚠️ IL Y AVAIT UNE SECONDE GARDE, `if: steps.pr.outputs.created == 'true'`,
+      # et elle était FAUSSE. Son raisonnement : « une session qui fait son
+      # `gh pr create` a déjà l'événement ». Mais la PR ouverte ICI l'est par le
+      # `GITHUB_TOKEN`, et la garde anti-boucle de GitHub ne supprime pas
+      # seulement son `opened` — elle supprime les événements `pull_request` de
+      # cette PR pendant TOUTE sa vie, `synchronize` compris. Comme
+      # `created` ne vaut `true` qu'à l'ouverture, le gate de contenu ne tournait
+      # que sur le PREMIER commit de chaque PR auto-ouverte, puis plus jamais.
+      # Mesuré sur la PR #387 : sept runs de `content-ci` sur la branche, TOUS en
+      # `workflow_dispatch`, aucun en `pull_request` — et huit poussées d'affilée
+      # sans aucun run, la PR n'ayant plus qu'un seul check vert, celui de ce
+      # workflow-ci. Un `automerge` l'aurait mergée sur la foi de ce seul check.
+      # C'est très exactement le défaut que ce dépôt s'est juré de ne plus
+      # laisser passer : un gate qui ne tourne pas ressemble à un gate vert.
+      #
+      # Le test « zéro job » ci-dessous suffit, et c'est lui qui portait déjà la
+      # garde utile : si un vrai run `pull_request` existe sur le SHA, on ne
+      # dispatche pas. Le sens de l'erreur reste celui que l'en-tête a choisi —
+      # à mesure douteuse, on dispatche.
       - name: Lancer les checks sur la branche
-        if: steps.pr.outputs.created == 'true'
         run: |
           set -uo pipefail
           # Laisser à un éventuel run `pull_request` le temps de matérialiser ses

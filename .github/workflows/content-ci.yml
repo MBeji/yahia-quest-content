@@ -32,8 +32,14 @@ on:
   # sort `failure` à ZÉRO job, sans rien avoir évalué. 3 par PR ici, 21 % des runs du
   # dépôt sur six jours, et trois incidents nés de sa lecture (#280, #291, #293).
   # Rien n'est perdu : `auto-pr.yml` ouvre la PR de toute branche poussée PUIS
-  # dispatche les checks qui n'ont pas de run réel sur le SHA, et `synchronize`
-  # couvre chaque poussée suivante.
+  # dispatche les checks qui n'ont pas de run réel sur le SHA — sur CHAQUE
+  # poussée.
+  # ⚠️ Cette ligne disait « et `synchronize` couvre chaque poussée suivante ».
+  # C'était faux, et ça a laissé huit commits sans gate sur la PR #387 : une PR
+  # ouverte par le `GITHUB_TOKEN` n'émet AUCUN événement `pull_request` de toute
+  # sa vie, pas seulement à l'ouverture. `synchronize` ne couvre donc que les PR
+  # ouvertes à la main. Voir le filet de `auto-pr.yml`, qui est ce qui tient
+  # réellement pour les autres.
   # ⚠️ Cas résiduel assumé : une PR ouverte À LA MAIN sur une branche qui n'a plus
   # bougé depuis n'a aucun check — elle ne peut donc pas merger (`automerge` refuse un
   # SHA sans check run) et reste visible plutôt que de passer en douce. La sortir de là
