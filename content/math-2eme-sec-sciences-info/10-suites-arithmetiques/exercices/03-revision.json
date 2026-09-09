@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Reconnaître, sommer, modéliser",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Laquelle de ces suites, définies pour tout entier naturel n, est arithmétique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uₙ = (−2n + 1)/8"
+        },
+        {
+          "id": "b",
+          "text": "Uₙ = n² − n"
+        },
+        {
+          "id": "c",
+          "text": "Uₙ = 2ⁿ + n"
+        },
+        {
+          "id": "d",
+          "text": "Uₙ = (n + 21)/(n + 3)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le test décisif est le calcul littéral de Uₙ₊₁ − Uₙ, qui doit donner un résultat sans n. Pour Uₙ = (−2n + 1)/8, on obtient (−2n − 1)/8 − (−2n + 1)/8 = −2/8 = −1/4 : la suite est arithmétique de raison −1/4 ✓. Pour Uₙ = n² − n, la différence vaut 2n, qui grandit avec le rang. Pour Uₙ = 2ⁿ + n, elle vaut 2ⁿ + 1 : le « + n » de l'écriture ne suffit pas à rendre la suite arithmétique. Pour Uₙ = (n + 21)/(n + 3), le quotient n'est pas une expression affine de n, et ses écarts diminuent sans jamais se stabiliser.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que vaut la somme 1 + 3 + 5 + … + 99 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2450"
+        },
+        {
+          "id": "b",
+          "text": "2500"
+        },
+        {
+          "id": "c",
+          "text": "4950"
+        },
+        {
+          "id": "d",
+          "text": "5000"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les nombres impairs de 1 à 99 forment une suite arithmétique de raison 2. Leur nombre vaut (99 − 1)/2 + 1 = 50, et la somme s'écrit 50 × (1 + 99)/2 = 50 × 50 = 2500 ✓. On retrouve d'ailleurs le résultat général : la somme des n premiers entiers impairs vaut n². La valeur 2450 ne compte que 49 termes, le « + 1 » ayant été oublié. La valeur 4950 est la somme de tous les entiers de 1 à 99, donc les nombres pairs y ont été ajoutés à tort. La valeur 5000 oublie la division par 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les nombres −4 ; x ; 22 sont trois termes consécutifs d'une suite arithmétique. Que vaut x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "11"
+        },
+        {
+          "id": "c",
+          "text": "18"
+        },
+        {
+          "id": "d",
+          "text": "26"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Trois termes consécutifs sont séparés par le même écart, donc celui du milieu est la moyenne arithmétique des deux autres : x = (−4 + 22)/2 = 18/2 = 9 ✓. Vérification : 9 − (−4) = 13 et 22 − 9 = 13, la raison est bien constante. La valeur 18 s'arrête à la somme des deux termes extrêmes sans la diviser par 2. La valeur 26 donne l'écart 22 − (−4), c'est-à-dire le double de la raison, à la place du terme cherché. La valeur 11 divise le dernier terme par 2 en oubliant complètement le premier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le graphique ci-dessous représente les points Aₙ(n ; Uₙ) d'une suite arithmétique. Que vaut U₁₀ ?\n<svg viewBox=\"0 0 300 240\"><g fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4 4\"><path d=\"M45 174 L245 174 M45 110 L245 110 M45 46 L245 46\"/><path d=\"M100 38 L100 195 M145 38 L145 195 M190 38 L190 195 M235 38 L235 195\"/></g><path d=\"M30 190 L280 190 M55 206 L55 28\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><polygon points=\"274,186 286,190 274,194\" fill=\"#0f172a\"/><polygon points=\"51,34 55,22 59,34\" fill=\"#0f172a\"/><path d=\"M45 181.1 L250 35.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\"/><g fill=\"#0f6e56\"><circle cx=\"55\" cy=\"174\" r=\"4.5\"/><circle cx=\"100\" cy=\"142\" r=\"4.5\"/><circle cx=\"145\" cy=\"110\" r=\"4.5\"/><circle cx=\"190\" cy=\"78\" r=\"4.5\"/><circle cx=\"235\" cy=\"46\" r=\"4.5\"/></g><g font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><g text-anchor=\"end\"><text x=\"51\" y=\"178\">2</text><text x=\"51\" y=\"114\">10</text><text x=\"51\" y=\"50\">18</text></g><g text-anchor=\"middle\"><text x=\"46\" y=\"206\">O</text><text x=\"100\" y=\"206\">1</text><text x=\"145\" y=\"206\">2</text><text x=\"190\" y=\"206\">3</text><text x=\"235\" y=\"206\">4</text><text x=\"272\" y=\"182\">n</text><text x=\"73\" y=\"32\">Uₙ</text></g></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "20"
+        },
+        {
+          "id": "b",
+          "text": "38"
+        },
+        {
+          "id": "c",
+          "text": "40"
+        },
+        {
+          "id": "d",
+          "text": "42"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le graphique donne les deux renseignements nécessaires : le point d'abscisse 0 a pour ordonnée 2, donc U₀ = 2, et d'un point au suivant l'ordonnée monte de 4, donc la raison vaut 4. Le rang 10 n'est pas dessiné, on l'atteint par le calcul : U₁₀ = 2 + 10 × 4 = 42 ✓. La valeur 38 ne franchit que neuf pas, l'erreur d'indice habituelle. La valeur 40 est le produit 10 × 4 seul, sans le premier terme. La valeur 20 multiplie le premier terme par le rang au lieu de lui ajouter les raisons.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Yassine met 20 dinars de côté le premier mois, puis 5 dinars de plus chaque mois que le mois précédent. Quelle somme aura-t-il économisée au bout de 12 mois ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "75 dinars"
+        },
+        {
+          "id": "b",
+          "text": "570 dinars"
+        },
+        {
+          "id": "c",
+          "text": "600 dinars"
+        },
+        {
+          "id": "d",
+          "text": "1140 dinars"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les versements mensuels forment une suite arithmétique de premier terme 20 et de raison 5. Le douzième versement vaut 20 + 11 × 5 = 75 dinars, car onze augmentations seulement séparent le premier du douzième mois. Le total économisé vaut donc 12 × (20 + 75)/2 = 6 × 95 = 570 dinars ✓. La valeur 600 dinars évalue le douzième versement à 20 + 12 × 5 = 80 dinars, soit une augmentation de trop. La valeur 1140 dinars oublie de diviser par 2. La valeur 75 dinars est le versement du douzième mois, et non le cumul des douze.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Vingt peupliers sont alignés et espacés de 2 m. Le puits est au pied du premier. L'arroseur ne porte qu'un seau à la fois et revient au puits après chaque arbre. Quelle distance parcourt-il en tout ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "76 m"
+        },
+        {
+          "id": "b",
+          "text": "380 m"
+        },
+        {
+          "id": "c",
+          "text": "760 m"
+        },
+        {
+          "id": "d",
+          "text": "840 m"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le puits étant au pied du premier arbre, celui-ci ne coûte aucun déplacement, le deuxième est à 2 m, le troisième à 4 m, et ainsi de suite jusqu'au vingtième, à 38 m. Chaque arbre demande un aller et un retour, donc les distances parcourues sont 0, 4, 8, …, 76 m : une suite arithmétique de raison 4. Il y a 20 termes, d'où un total de 20 × (0 + 76)/2 = 760 m ✓. La valeur 380 m est le cumul des seuls allers, sans les retours. La valeur 840 m compte 2 m dès le premier arbre, alors que le puits s'y trouve déjà. La valeur 76 m est le dernier aller-retour, confondu avec le total.",
+      "difficulty": 3
+    }
+  ]
+}
