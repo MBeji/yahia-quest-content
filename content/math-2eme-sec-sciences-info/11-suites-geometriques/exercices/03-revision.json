@@ -1,0 +1,82 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Croissances, sommes et progressions géométriques",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "La pression atmosphérique perd 1 % par tranche de 100 m d'altitude. Elle vaut 1000 mb au niveau du sol. Que vaut-elle à 300 m, au dixième de mb près ?",
+      "options": [
+        { "id": "a", "text": "970,0 mb" },
+        { "id": "b", "text": "970,3 mb" },
+        { "id": "c", "text": "980,1 mb" },
+        { "id": "d", "text": "990,0 mb" }
+      ],
+      "correctOption": "b",
+      "explanation": "Perdre 1 % revient à multiplier par 0,99, et 300 m représentent trois tranches de 100 m, donc trois multiplications : 1000 × 0,99³ = 1000 × 0,970299 = 970,3 mb au dixième près ✓. La valeur 970,0 mb additionne les pertes en retranchant trois fois 10 mb, alors que chaque perte se calcule sur la pression déjà diminuée. La valeur 980,1 mb correspond à 1000 × 0,99², soit deux tranches seulement, c'est-à-dire l'altitude 200 m. La valeur 990,0 mb ne compte qu'une seule tranche.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un carré d'aire 1 engendre le carré ayant pour sommets les milieux de ses côtés, qui en engendre un autre de la même façon, et ainsi de suite comme sur la figure. Quelle est l'aire du 5ᵉ carré de cette construction ?\n<svg viewBox=\"0 0 320 250\"><polygon points=\"95,60 215,60 215,180 95,180\" fill=\"#0f6e56\" opacity=\"0.10\"/><polygon points=\"95,60 215,60 215,180 95,180\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><polygon points=\"155,60 215,120 155,180 95,120\" fill=\"#0f6e56\" opacity=\"0.14\"/><polygon points=\"155,60 215,120 155,180 95,120\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><polygon points=\"125,90 185,90 185,150 125,150\" fill=\"#0f6e56\" opacity=\"0.18\"/><polygon points=\"125,90 185,90 185,150 125,150\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><g fill=\"#0f172a\"><circle cx=\"155\" cy=\"60\" r=\"3.4\"/><circle cx=\"215\" cy=\"120\" r=\"3.4\"/><circle cx=\"155\" cy=\"180\" r=\"3.4\"/><circle cx=\"95\" cy=\"120\" r=\"3.4\"/><circle cx=\"185\" cy=\"90\" r=\"3.4\"/><circle cx=\"185\" cy=\"150\" r=\"3.4\"/><circle cx=\"125\" cy=\"150\" r=\"3.4\"/><circle cx=\"125\" cy=\"90\" r=\"3.4\"/></g><g font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"88\" y=\"52\">1</text><text x=\"236\" y=\"124\">2</text><text x=\"155\" y=\"124\">3</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "1/256" },
+        { "id": "b", "text": "1/32" },
+        { "id": "c", "text": "1/16" },
+        { "id": "d", "text": "1/8" }
+      ],
+      "correctOption": "c",
+      "explanation": "Chaque carré des milieux a une aire deux fois plus petite que celui qui l'engendre : les aires forment donc une suite géométrique de premier terme 1 et de raison 1/2. Pour atteindre le 5ᵉ carré depuis le 1ᵉʳ, il y a 4 pas, d'où une aire de 1 × (1/2)⁴ = 1/16 ✓ — la suite des aires étant 1 ; 1/2 ; 1/4 ; 1/8 ; 1/16. La valeur 1/256 vient de l'idée fausse que c'est le côté qui est divisé par 2 : le côté est en réalité multiplié par √2/2, et c'est l'aire qui est divisée par 2. La valeur 1/32 compte 5 pas au lieu de 4, la valeur 1/8 n'en compte que 3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout entier naturel n, uₙ = √(7ⁿ). Cette suite est géométrique. Quelle est sa raison ?",
+      "options": [
+        { "id": "a", "text": "√7" },
+        { "id": "b", "text": "7/2" },
+        { "id": "c", "text": "7" },
+        { "id": "d", "text": "49" }
+      ],
+      "correctOption": "a",
+      "explanation": "On réécrit le terme général sous la forme u₀ qⁿ : √(7ⁿ) = (√7)ⁿ, donc u₀ = 1 et la raison vaut √7 ✓. Le calcul direct du quotient le confirme : u₀ = 1, u₁ = √7, u₂ = √49 = 7, et les quotients valent bien √7. La valeur 7/2 confond la racine carrée avec une division par 2, appliquée à la base au lieu de l'exposant. La valeur 7 recopie la base sans tenir compte du radical ; c'est aussi le quotient u₂/u₀, qui saute un rang et donne le carré de la raison. La valeur 49 remplace la racine par un carré.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Calculer la somme S = 1 − 2 + 4 − 8 + 16 − 32.",
+      "options": [
+        { "id": "a", "text": "−63" },
+        { "id": "b", "text": "−21" },
+        { "id": "c", "text": "11" },
+        { "id": "d", "text": "63" }
+      ],
+      "correctOption": "b",
+      "explanation": "Chaque terme s'obtient en multipliant le précédent par −2 : il s'agit de 6 termes consécutifs de premier terme 1 et de raison −2. La formule donne S = 1 × (1 − (−2)⁶)/(1 − (−2)) = (1 − 64)/3 = −21 ✓, et l'addition directe confirme : 1 − 2 = −1, puis 3, −5, 11 et enfin −21. La valeur −63 est le seul numérateur 1 − q⁶ : la division par 1 − q a été oubliée. La valeur 11 s'arrête au cinquième terme. La valeur 63 ignore les signes et somme 1 + 2 + 4 + 8 + 16 + 32, ce qui reviendrait à prendre 2 pour raison.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un entier de la forme N = 2ⁿ × (2ⁿ⁺¹ − 1) est parfait lorsque le facteur 2ⁿ⁺¹ − 1 est premier. Que vaut N pour n = 4 ?",
+      "options": [
+        { "id": "a", "text": "62" },
+        { "id": "b", "text": "240" },
+        { "id": "c", "text": "248" },
+        { "id": "d", "text": "496" }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour n = 4, le facteur vaut 2⁵ − 1 = 31, qui est bien premier, et la puissance vaut 2⁴ = 16. Donc N = 16 × 31 = 496 ✓, le troisième nombre parfait après 6 et 28. La valeur 62 est 2 × 31 : la puissance 2⁴ a été remplacée par la base 2. La valeur 240 est 16 × 15 : le facteur a été calculé comme 2⁴ − 1 au lieu de 2⁵ − 1, l'exposant n ayant été utilisé à la place de n + 1. La valeur 248 est 8 × 31 : la puissance a été prise égale à 2³ au lieu de 2⁴.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pendant 10 jours, Ali verse 100 dinars par jour. Beya verse 1 dinar le premier jour, 2 le deuxième, 4 le troisième, en doublant chaque jour. Qui a versé le plus au bout des 10 jours, et de combien ?",
+      "options": [
+        { "id": "a", "text": "Ali, de 488 dinars" },
+        { "id": "b", "text": "Ali, de 489 dinars" },
+        { "id": "c", "text": "Beya, de 23 dinars" },
+        { "id": "d", "text": "Beya, de 24 dinars" }
+      ],
+      "correctOption": "c",
+      "explanation": "Ali verse 10 × 100 = 1000 dinars. Beya verse 10 termes consécutifs de premier terme 1 et de raison 2, soit 1 × (1 − 2¹⁰)/(1 − 2) = 1024 − 1 = 1023 dinars. Beya verse donc 23 dinars de plus ✓, alors qu'elle était très loin derrière au huitième jour. L'écart de 488 dinars prend le dernier versement de Beya, 2⁹ = 512, pour son total. L'écart de 489 dinars ne compte que 9 versements, soit 511 dinars, en confondant l'exposant du dernier terme avec le nombre de termes. L'écart de 24 dinars oublie le « − 1 » de la formule et attribue 1024 dinars à Beya.",
+      "difficulty": 3
+    }
+  ]
+}
