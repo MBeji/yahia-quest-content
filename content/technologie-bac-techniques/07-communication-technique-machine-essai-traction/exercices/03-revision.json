@@ -23,7 +23,7 @@
         },
         {
           "id": "b",
-          "text": "À l'extérieur de la pièce, le plus souvent dans le prolongement du plan de coupe ou de l'axe"
+          "text": "À l'extérieur de la pièce, dans le prolongement du plan de coupe"
         },
         {
           "id": "c",
@@ -31,11 +31,11 @@
         },
         {
           "id": "d",
-          "text": "Sur une feuille séparée, accompagnée de son propre cartouche"
+          "text": "À l'extérieur de la pièce, mais dessinée à une échelle agrandie"
         }
       ],
       "correctOption": "b",
-      "explanation": "Une section sortie est dessinée hors de l'objet représenté, et on l'aligne le plus souvent sur le prolongement du plan de coupe ou sur celui de l'axe de la pièce, pour que le lecteur retrouve immédiatement d'où elle vient. La section rabattue, elle, se trace bien sur la vue elle-même et en trait fin (a) — c'est la différence entre les deux. Une section ne remplace jamais une vue (c) : elle la complète.",
+      "explanation": "Une section sortie est dessinée hors de l'objet représenté, et on l'aligne le plus souvent sur le prolongement du plan de coupe ou sur celui de l'axe de la pièce, pour que le lecteur retrouve immédiatement d'où elle vient. La section rabattue, elle, se trace bien sur la vue elle-même, à l'endroit du plan de coupe et en trait fin — c'est exactement ce qui la distingue de la section sortie. Et aucune section ne remplace une vue : elle la complète, elle ne prend jamais sa place. Enfin une section sortie se dessine à l'échelle de la vue dont elle vient ; c'est le détail agrandi, repéré par un cercle, qui porte une échelle à lui.",
       "difficulty": 1
     },
     {
@@ -59,7 +59,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Deux écrous serrés l'un contre l'autre se coincent mutuellement sur le filetage : c'est le montage contre-écrou, un freinage par obstacle et adhérence qui empêche le desserrage sous les efforts répétés — exactement ce que subit une machine d'essai, chargée puis déchargée à chaque éprouvette. Il ne double pas le serrage (b) : c'est toujours le premier écrou qui presse la pièce. Conséquence pratique au démontage : il faut deux clés, une pour maintenir, une pour desserrer.",
+      "explanation": "Deux écrous serrés l'un contre l'autre se coincent mutuellement sur le filetage : c'est le montage contre-écrou, un freinage par obstacle et adhérence qui empêche le desserrage sous les efforts répétés — exactement ce que subit une machine d'essai, chargée puis déchargée à chaque éprouvette. Il ne double pas l'effort de serrage transmis à l'arbre : c'est toujours le premier écrou, celui du dessous, qui presse la pièce. Conséquence pratique au démontage : il faut deux clés, une pour maintenir, une pour desserrer.",
       "difficulty": 2
     },
     {
@@ -83,7 +83,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Une clé plate se referme sur deux faces opposées de l'hexagone : son numéro est donc la dimension sur plats, normalisée pour chaque filetage — 24 mm pour un M16. Le piège est de confondre ce nombre avec le filetage lui-même (a) : M16 donne le diamètre nominal de la vis, jamais l'ouverture de la clé, et c'est pour cela que le graphe de démontage prend la peine de nommer l'outil. La dimension sur angles (d) est plus grande que la dimension sur plats et ne sert à aucune clé plate.",
+      "explanation": "Une clé plate se referme sur deux faces opposées de l'hexagone : son numéro est donc la dimension sur plats, normalisée pour chaque filetage — 24 mm pour un M16. Le piège est de confondre ce nombre avec le diamètre du filetage : M16 donne le diamètre nominal de la vis, jamais l'ouverture de la clé, et c'est pour cela que le graphe de démontage prend la peine de nommer l'outil. La dimension sur angles, d'un sommet au sommet opposé, est plus grande que la dimension sur plats et ne sert à aucune clé plate.",
       "difficulty": 2
     },
     {
@@ -107,7 +107,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Le graphe est partiel : on descend juste assez loin pour atteindre la pièce défectueuse, et le reste de la machine n'est pas touché — c'est ce bloc-là que le pied du graphe nomme sous-ensemble restant. La règle de maintenance derrière ce mot est simple : chaque pièce déposée est une pièce à remonter, donc du temps et un risque d'erreur. Les pièces déposées apparaissent, elles, dans les boîtes du graphe avec leur repère d'ordre (a), et celles à remplacer sont signalées dans la colonne des observations (b).",
+      "explanation": "Le graphe est partiel : on descend juste assez loin pour atteindre la pièce défectueuse, et le reste de la machine n'est pas touché — c'est ce bloc-là que le pied du graphe nomme sous-ensemble restant. La règle de maintenance derrière ce mot est simple : chaque pièce déposée est une pièce à remonter, donc du temps et un risque d'erreur. Les pièces déposées apparaissent, elles, dans les boîtes du graphe, chacune avec son repère d'ordre ; et celles qu'il faudra remplacer par du neuf sont signalées dans la colonne des observations, pas au pied du graphe.",
       "difficulty": 2
     },
     {
@@ -122,39 +122,39 @@
     },
     {
       "type": "matching",
-      "prompt": "Le thème s'achève sur quatre documents, et chacun répond à une question différente. Associe chaque document à ce qu'il apporte.",
+      "prompt": "Quatre façons de montrer l'intérieur d'une pièce sur son dessin de définition, quatre règles différentes. Associe chaque représentation à ce qu'elle montre.",
       "options": [
         {
           "id": "l1",
-          "text": "Le dessin d'ensemble"
+          "text": "La coupe"
         },
         {
           "id": "l2",
-          "text": "Le graphe de montage et de démontage"
+          "text": "La section sortie"
         },
         {
           "id": "l3",
-          "text": "La chaîne de cotes"
+          "text": "La section rabattue"
         },
         {
           "id": "l4",
-          "text": "Le dessin de définition"
+          "text": "La demi-coupe"
         },
         {
           "id": "r1",
-          "text": "Montre toutes les pièces assemblées en position de fonctionnement, et se lit avec sa nomenclature"
+          "text": "Montre la matière tranchée et tout ce qui se trouve derrière le plan"
         },
         {
           "id": "r2",
-          "text": "Fixe l'ordre chronologique des opérations d'une intervention"
+          "text": "Ne montre que la matière tranchée, dessinée à l'extérieur de la pièce"
         },
         {
           "id": "r3",
-          "text": "Relie les cotes des pièces qui installent une condition fonctionnelle"
+          "text": "Ne montre que la matière tranchée, dessinée sur la vue même, en trait fin"
         },
         {
           "id": "r4",
-          "text": "Définit une seule pièce, complètement et sans ambiguïté, en vue de sa fabrication"
+          "text": "Une moitié tranchée, une moitié en vue extérieure, sur une pièce symétrique"
         }
       ],
       "answerKey": {
@@ -177,7 +177,7 @@
           ]
         ]
       },
-      "explanation": "Chaque document a son échelle et sa question. Le dessin d'ensemble montre le mécanisme entier assemblé et répond à « comment cela fonctionne-t-il ? ». Le graphe de montage et de démontage répond à « dans quel ordre intervenir ? ». La chaîne de cotes répond à « quelles cotes garantissent la condition ? » en reliant les pièces qui l'installent. Le dessin de définition, enfin, descend à la pièce unique et répond à « comment la fabriquer ? » — c'est le seul des quatre à ne montrer qu'une seule pièce.",
+      "explanation": "Deux questions suffisent à les séparer. Premièrement : garde-t-on ce qui est derrière le plan ? Oui pour la coupe, non pour les deux sections — c'est la seule différence entre elles. Deuxièmement, pour une section : où la dessine-t-on ? À l'extérieur de la pièce, alignée sur le plan de coupe, et c'est la section sortie ; directement sur la vue, en trait fin, et c'est la section rabattue. La demi-coupe, elle, ne coupe que la moitié d'une pièce symétrique : l'autre moitié reste en vue extérieure, et elle ne reçoit aucun trait interrompu puisque la moitié tranchée a déjà tout montré.",
       "difficulty": 2
     }
   ]
