@@ -1,0 +1,82 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Raisons cachées, sommes et cas limites",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "(vₙ) est une suite géométrique avec v₃ = 12 et v₅ = 48. Quelles sont les raisons possibles ?",
+      "options": [
+        { "id": "a", "text": "2 uniquement" },
+        { "id": "b", "text": "2 et −2" },
+        { "id": "c", "text": "4 uniquement" },
+        { "id": "d", "text": "18 uniquement" }
+      ],
+      "correctOption": "b",
+      "explanation": "De v₅ = v₃ q⁵⁻³ on tire q² = 48/12 = 4. Un carré vaut 4 pour deux réels opposés, donc q = 2 ou q = −2 ✓, et les deux conviennent réellement : 12 ; 24 ; 48 d'un côté, 12 ; −24 ; 48 de l'autre. Ne retenir que 2 est le piège courant : il revient à oublier qu'une équation du type q² = 4 possède deux solutions. La valeur 4 est le quotient v₅/v₃ pris pour la raison, alors que ce quotient vaut q² puisque deux pas séparent les rangs 3 et 5. La valeur 18 est (48 − 12)/2 : c'est la raison que l'on chercherait pour une progression additive.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la somme des 6 premiers termes d'une suite géométrique de premier terme 3 et de raison 2 ?",
+      "options": [
+        { "id": "a", "text": "189" },
+        { "id": "b", "text": "192" },
+        { "id": "c", "text": "378" },
+        { "id": "d", "text": "381" }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec a = 3, q = 2 et 6 termes, S = 3 × (1 − 2⁶)/(1 − 2) = 3 × 63 = 189 ✓, ce que l'addition directe confirme : 3 + 6 + 12 + 24 + 48 + 96 = 189. La valeur 192 est 3 × 2⁶ : le « − 1 » du numérateur a été oublié. La valeur 378 est 6 × 63 : le calcul a démarré au deuxième terme, 6, pris pour premier terme. La valeur 381 est 3 × (2⁷ − 1), le piège courant du chapitre : sept termes comptés au lieu de six, parce que l'exposant du dernier terme a été confondu avec leur nombre.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Trois réels strictement positifs a, b et c sont, dans cet ordre, trois termes consécutifs d'une suite géométrique. Quelle relation les lie toujours ?",
+      "options": [
+        { "id": "a", "text": "2b = a + c" },
+        { "id": "b", "text": "b = ac" },
+        { "id": "c", "text": "b² = a + c" },
+        { "id": "d", "text": "b² = ac" }
+      ],
+      "correctOption": "d",
+      "explanation": "Si a, b, c sont consécutifs, alors b = aq et c = bq, donc b/a = c/b. En multipliant en croix on obtient b² = ac ✓, et b est appelé moyenne géométrique de a et c. Test rapide sur 3 ; 9 ; 27 : 9² = 81 = 3 × 27. La relation 2b = a + c est celle de la moyenne arithmétique, le piège courant : elle décrit le terme du milieu d'une progression additive, et donnerait ici 15 au lieu de 9. La relation b = ac oublie l'élévation au carré et donnerait 81. La relation b² = a + c remplace le produit par la somme et donnerait 30 pour b².",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'audience d'une série baisse de 10 % chaque semaine. Au bout de combien de semaines devient-elle inférieure à la moitié de l'audience initiale ?",
+      "options": [
+        { "id": "a", "text": "5 semaines" },
+        { "id": "b", "text": "6 semaines" },
+        { "id": "c", "text": "7 semaines" },
+        { "id": "d", "text": "8 semaines" }
+      ],
+      "correctOption": "c",
+      "explanation": "Perdre 10 % revient à multiplier par 0,9, donc l'audience après n semaines vaut 0,9ⁿ fois l'audience initiale. On cherche le premier n tel que 0,9ⁿ soit inférieur à 0,5, en calculant les puissances successives : 0,9⁶ = 0,531… reste au-dessus de la moitié, tandis que 0,9⁷ = 0,478… passe en dessous. Il faut donc 7 semaines ✓. La réponse 5 est le piège courant : elle additionne les pourcentages, comme si cinq baisses de 10 % faisaient une baisse de 50 %, alors que les baisses se multiplient. Les réponses 6 et 8 encadrent le bon rang, l'une s'arrêtant une semaine trop tôt, l'autre une semaine trop tard.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un capital de 8000 dinars est placé pendant un an. Quel placement rapporte le plus : 4 % par an, ou 2 % par semestre ?",
+      "options": [
+        { "id": "a", "text": "Le placement annuel, de 3,20 dinars" },
+        { "id": "b", "text": "Le placement semestriel, de 3,20 dinars" },
+        { "id": "c", "text": "Le placement semestriel, de 32 dinars" },
+        { "id": "d", "text": "Les deux rapportent la même chose" }
+      ],
+      "correctOption": "b",
+      "explanation": "À 4 % par an, le capital est multiplié une fois par 1,04 : 8000 × 1,04 = 8320 dinars. À 2 % par semestre, il est multiplié deux fois par 1,02 : 8000 × 1,02² = 8000 × 1,0404 = 8323,20 dinars. Le placement semestriel rapporte donc 3,20 dinars de plus ✓, parce que les intérêts du premier semestre produisent à leur tour des intérêts au second. Croire que les deux placements se valent est le piège courant : il revient à additionner 2 % + 2 % au lieu de multiplier 1,02 par 1,02. L'écart de 32 dinars se trompe d'un facteur 10, et attribuer l'avantage au placement annuel inverse le sens du résultat.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une suite (uₙ) vérifie uₙ₊₁ = uₙ + 3 pour tout entier naturel n. On pose vₙ = 2^uₙ. Que vaut le quotient vₙ₊₁/vₙ ?",
+      "options": [
+        { "id": "a", "text": "2" },
+        { "id": "b", "text": "3" },
+        { "id": "c", "text": "6" },
+        { "id": "d", "text": "8" }
+      ],
+      "correctOption": "d",
+      "explanation": "Puisque uₙ₊₁ = uₙ + 3, on a vₙ₊₁ = 2^(uₙ + 3), donc vₙ₊₁/vₙ = 2^(uₙ + 3)/2^uₙ = 2³ = 8 ✓. Ce quotient ne dépend pas de n : la suite (vₙ) est géométrique de raison 8, alors que (uₙ) progressait par additions. La valeur 2 recopie la base de la puissance sans tenir compte de l'écart 3 entre deux exposants. La valeur 3 est le piège courant : elle recopie l'écart des exposants, comme si l'exponentielle laissait la raison inchangée, alors qu'elle la transforme en 2³. La valeur 6 multiplie la base par l'écart au lieu de l'élever à cette puissance.",
+      "difficulty": 3
+    }
+  ]
+}

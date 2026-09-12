@@ -1,0 +1,65 @@
+{
+  "title": "Test de compréhension ⭐ : Suites géométriques",
+  "questions": [
+    {
+      "prompt": "Soit q un réel. Quelle relation, vraie pour tout entier naturel n, caractérise une suite (uₙ) géométrique de raison q ?",
+      "options": [
+        { "id": "a", "text": "uₙ₊₁ = q × uₙ" },
+        { "id": "b", "text": "uₙ₊₁ = uₙ + q" },
+        { "id": "c", "text": "uₙ₊₁ = qⁿ × u₀" },
+        { "id": "d", "text": "uₙ = q × uₙ₊₁" }
+      ],
+      "correctOption": "a",
+      "explanation": "La définition officielle dit qu'on passe d'un terme au suivant en multipliant par un même réel q : la relation cherchée est donc uₙ₊₁ = q × uₙ ✓. La relation uₙ₊₁ = uₙ + q décrit une suite où l'on ajoute toujours la même quantité : c'est une progression additive, pas multiplicative. La relation uₙ₊₁ = qⁿ × u₀ décale l'exposant d'un cran, puisque le terme de rang n + 1 vaut q^(n+1) × u₀ ; telle quelle, elle donnerait u₁ = u₀. Enfin uₙ = q × uₙ₊₁ inverse le sens de la récurrence : elle décrit une suite dont la raison est 1/q et non q.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "(uₙ) est une suite géométrique de premier terme u₀ = 5 et de raison q = 3. Que vaut u₄ ?",
+      "options": [
+        { "id": "a", "text": "17" },
+        { "id": "b", "text": "135" },
+        { "id": "c", "text": "405" },
+        { "id": "d", "text": "1215" }
+      ],
+      "correctOption": "c",
+      "explanation": "Le terme général d'une suite géométrique est uₙ = u₀ qⁿ, donc u₄ = 5 × 3⁴ = 5 × 81 = 405 ✓. On peut vérifier pas à pas : 5 ; 15 ; 45 ; 135 ; 405. La valeur 17 vient de 5 + 4 × 3 : la raison a été ajoutée quatre fois au lieu d'être multipliée quatre fois. La valeur 135 est 5 × 3³ : c'est u₃, l'exposant a été pris égal à n − 1. La valeur 1215 est 5 × 3⁵, avec un pas de multiplication en trop.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la valeur de la somme 1 + 2 + 4 + 8 + … + 2⁹ ?",
+      "options": [
+        { "id": "a", "text": "511" },
+        { "id": "b", "text": "1023" },
+        { "id": "c", "text": "1024" },
+        { "id": "d", "text": "2047" }
+      ],
+      "correctOption": "b",
+      "explanation": "Les termes vont de 2⁰ à 2⁹ : il y en a donc 10, avec pour premier terme a = 1 et pour raison q = 2. La formule donne S = 1 × (1 − 2¹⁰)/(1 − 2) = (1 − 1024)/(−1) = 1023 ✓. La valeur 511 est 2⁹ − 1 : seuls 9 termes ont été comptés, l'exposant du dernier terme ayant été confondu avec le nombre de termes. La valeur 1024 est 2¹⁰ : le « − 1 » de la formule a été oublié. La valeur 2047 est 2¹¹ − 1, soit un terme de trop.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une suite géométrique a pour raison q = 1 et pour premier terme 7. Quelle est la somme de ses 12 premiers termes ?",
+      "options": [
+        { "id": "a", "text": "0" },
+        { "id": "b", "text": "7" },
+        { "id": "c", "text": "84" },
+        { "id": "d", "text": "91" }
+      ],
+      "correctOption": "c",
+      "explanation": "Quand la raison vaut 1, chaque terme est égal au précédent : la suite est constante et tous ses termes valent 7. La somme de 12 d'entre eux vaut donc 12 × 7 = 84 ✓, ce que la règle officielle écrit S = na. La valeur 0 vient de l'application aveugle de a(1 − qⁿ)/(1 − q) : avec q = 1 le numérateur 1 − 1¹² vaut 0, mais le dénominateur aussi, et la formule ne s'applique tout simplement pas. La valeur 7 ne compte qu'un seul terme au lieu de douze. La valeur 91 revient à additionner 13 termes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le graphique ci-dessous donne les points Aₙ(n ; uₙ) des quatre premiers termes d'une suite géométrique. Quelle est sa raison ?\n<svg viewBox=\"0 0 320 240\"><path d=\"M52 30 L52 202 M42 195 L300 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><g fill=\"#0f6e56\"><circle cx=\"60\" cy=\"189.26\" r=\"4.2\"/><circle cx=\"130\" cy=\"177.78\" r=\"4.2\"/><circle cx=\"200\" cy=\"143.33\" r=\"4.2\"/><circle cx=\"270\" cy=\"40\" r=\"4.2\"/></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"60\" y=\"181\">2</text><text x=\"130\" y=\"170\">6</text><text x=\"200\" y=\"135\">18</text><text x=\"270\" y=\"32\">54</text><text x=\"60\" y=\"213\">0</text><text x=\"130\" y=\"213\">1</text><text x=\"200\" y=\"213\">2</text><text x=\"270\" y=\"213\">3</text><text x=\"306\" y=\"213\">n</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "1/3" },
+        { "id": "b", "text": "3" },
+        { "id": "c", "text": "4" },
+        { "id": "d", "text": "9" }
+      ],
+      "correctOption": "b",
+      "explanation": "La raison est le quotient d'un terme par celui qui le précède immédiatement : 6/2 = 3, et l'on vérifie sur les rangs suivants 18/6 = 3 puis 54/18 = 3, donc la raison vaut 3 ✓. La valeur 1/3 vient de la division inversée, le terme précédent ayant été divisé par le suivant. La valeur 4 est l'écart 6 − 2 : c'est ce que l'on calculerait pour une progression additive, alors qu'ici les écarts 4, 12, 36 ne sont pas constants. La valeur 9 est le quotient 18/2, calculé en sautant un rang : elle donne le carré de la raison, pas la raison.",
+      "difficulty": 2
+    }
+  ]
+}

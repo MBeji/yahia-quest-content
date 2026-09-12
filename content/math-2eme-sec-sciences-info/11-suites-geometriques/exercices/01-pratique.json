@@ -1,0 +1,82 @@
+{
+  "title": "⭐ Exercice : Raison, terme général et premières sommes",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Parmi ces quatre suites définies pour tout entier naturel n, laquelle est géométrique ?",
+      "options": [
+        { "id": "a", "text": "uₙ = 2 + 3n" },
+        { "id": "b", "text": "uₙ = 2 × 3ⁿ" },
+        { "id": "c", "text": "uₙ = 2 × n³" },
+        { "id": "d", "text": "uₙ = 3ⁿ + 2" }
+      ],
+      "correctOption": "b",
+      "explanation": "Le test est toujours le même : le quotient uₙ₊₁/uₙ doit être un nombre fixe. Pour uₙ = 2 × 3ⁿ, ce quotient vaut (2 × 3ⁿ⁺¹)/(2 × 3ⁿ) = 3, indépendant de n : la suite est géométrique de raison 3 ✓. La suite uₙ = 2 + 3n gagne toujours 3, ce qui donne une progression additive et non un quotient constant. Pour uₙ = 2 × n³, la puissance porte sur le rang et non sur une raison fixe : les termes 0 ; 2 ; 16 ; 54 donnent les quotients 8 puis 27/8. Pour uₙ = 3ⁿ + 2, la constante ajoutée casse le quotient : 3 ; 5 ; 11 donnent 5/3 puis 11/5.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Les nombres 1 ; 4 ; 16 ; 64 sont en progression géométrique. Quelle est la raison de cette progression ?",
+      "options": [
+        { "id": "a", "text": "1/4" },
+        { "id": "b", "text": "2" },
+        { "id": "c", "text": "3" },
+        { "id": "d", "text": "4" }
+      ],
+      "correctOption": "d",
+      "explanation": "La raison est le quotient d'un terme par celui qui le précède : 4/1 = 4, puis 16/4 = 4 et 64/16 = 4. La raison vaut donc 4 ✓. La valeur 1/4 vient de la division faite à l'envers, le terme précédent ayant été divisé par le suivant. La valeur 2 est la racine carrée de 4 : elle conviendrait si 1 et 4 étaient séparés par deux pas, alors qu'ils sont consécutifs. La valeur 3 est l'écart 4 − 1, c'est-à-dire la raison que l'on chercherait pour une progression additive ; ici les écarts 3, 12 et 48 ne sont pas constants.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "(uₙ) est une suite géométrique de premier terme u₀ = 2 et de raison 5. Que vaut u₃ ?",
+      "options": [
+        { "id": "a", "text": "17" },
+        { "id": "b", "text": "50" },
+        { "id": "c", "text": "250" },
+        { "id": "d", "text": "1250" }
+      ],
+      "correctOption": "c",
+      "explanation": "On applique uₙ = u₀ qⁿ : u₃ = 2 × 5³ = 2 × 125 = 250 ✓. Pas à pas, la suite donne bien 2 ; 10 ; 50 ; 250. La valeur 17 est 2 + 3 × 5 : la raison a été ajoutée trois fois au lieu d'être multipliée trois fois. La valeur 50 est 2 × 5², c'est-à-dire u₂ : l'exposant a été pris égal à n − 1. La valeur 1250 est 2 × 5⁴, avec une multiplication de trop.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "(uₙ) est une suite géométrique de premier terme u₀ = 5 et de raison q = −2. Que vaut u₃ ?",
+      "options": [
+        { "id": "a", "text": "−40" },
+        { "id": "b", "text": "−1" },
+        { "id": "c", "text": "20" },
+        { "id": "d", "text": "40" }
+      ],
+      "correctOption": "a",
+      "explanation": "On applique uₙ = u₀ qⁿ sans oublier le signe : u₃ = 5 × (−2)³ = 5 × (−8) = −40 ✓. Pas à pas : 5 ; −10 ; 20 ; −40, les signes alternant à chaque pas puisque la raison est négative. La valeur −1 est 5 + 3 × (−2) : la raison a été ajoutée trois fois au lieu d'être multipliée. La valeur 20 est 5 × (−2)², c'est-à-dire u₂, obtenu avec l'exposant n − 1. La valeur 40 est 5 × 2³ : le signe de la raison a été perdu, alors qu'une puissance impaire d'un nombre négatif reste négative.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Calculer la somme S = 1 + 2 + 4 + 8 + 16 + 32.",
+      "options": [
+        { "id": "a", "text": "31" },
+        { "id": "b", "text": "63" },
+        { "id": "c", "text": "64" },
+        { "id": "d", "text": "127" }
+      ],
+      "correctOption": "b",
+      "explanation": "Il s'agit de 6 termes consécutifs de premier terme a = 1 et de raison q = 2. La formule donne S = 1 × (1 − 2⁶)/(1 − 2) = (1 − 64)/(−1) = 63 ✓, ce que l'addition directe confirme : 1 + 2 + 4 + 8 + 16 + 32 = 63. La valeur 31 est 2⁵ − 1 : cinq termes seulement ont été comptés. La valeur 64 est 2⁶ : le « − 1 » de la formule a été oublié. La valeur 127 est 2⁷ − 1, avec un terme de trop.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "(uₙ) est une suite géométrique de raison 3 telle que u₂ = 4. Que vaut u₆ ?",
+      "options": [
+        { "id": "a", "text": "12" },
+        { "id": "b", "text": "108" },
+        { "id": "c", "text": "324" },
+        { "id": "d", "text": "972" }
+      ],
+      "correctOption": "c",
+      "explanation": "On utilise uₙ = uₚ qⁿ⁻ᵖ, où l'exposant compte les pas qui séparent les deux rangs. De 2 à 6 il y a 6 − 2 = 4 pas, donc u₆ = 4 × 3⁴ = 4 × 81 = 324 ✓, ce que la suite 4 ; 12 ; 36 ; 108 ; 324 confirme. La valeur 12 ne fait qu'un seul pas au lieu de quatre. La valeur 108 utilise l'exposant 3 : c'est u₅, obtenu en comptant un pas de moins. La valeur 972 utilise l'exposant 5, soit un pas de trop.",
+      "difficulty": 2
+    }
+  ]
+}

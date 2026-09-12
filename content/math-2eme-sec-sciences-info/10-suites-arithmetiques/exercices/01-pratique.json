@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Raison, terme général et premiers calculs",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Laquelle de ces listes donne les premiers termes d'une suite arithmétique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 ; 5 ; 8 ; 11"
+        },
+        {
+          "id": "b",
+          "text": "3 ; 5 ; 8 ; 12"
+        },
+        {
+          "id": "c",
+          "text": "4 ; 8 ; 16 ; 32"
+        },
+        {
+          "id": "d",
+          "text": "9 ; 16 ; 25 ; 36"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une suite est arithmétique lorsque l'écart entre deux termes consécutifs est toujours le même. Dans 2 ; 5 ; 8 ; 11 les écarts valent 3, 3 et 3 : la raison est 3 ✓. Dans 3 ; 5 ; 8 ; 12 les écarts valent 2, puis 3, puis 4 : le pas grandit, ce sont des différences de nombres triangulaires et non une raison constante. Dans 4 ; 8 ; 16 ; 32 on ne franchit pas un écart fixe, on double à chaque fois. Dans 9 ; 16 ; 25 ; 36 on reconnaît les carrés de 3, 4, 5 et 6, dont les écarts 7, 9 et 11 augmentent régulièrement sans jamais se stabiliser.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une suite arithmétique vérifie U₁ = 30 et r = 7. Que vaut U₄ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "23"
+        },
+        {
+          "id": "b",
+          "text": "28"
+        },
+        {
+          "id": "c",
+          "text": "51"
+        },
+        {
+          "id": "d",
+          "text": "58"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La suite est ici donnée à partir du rang 1, on utilise donc Uₙ = U₁ + (n − 1)r : de U₁ à U₄ il y a trois pas, d'où U₄ = 30 + 3 × 7 = 51 ✓. La valeur 58 applique U₀ + nr sans tenir compte du décalage, c'est-à-dire quatre pas au lieu de trois : c'est l'erreur d'indice classique quand le premier terme n'est pas U₀. La valeur 28 est le produit 4 × 7 seul, où le terme de départ a été oublié. La valeur 23 retranche la raison au lieu de l'ajouter, alors que la suite est croissante.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une suite est définie par U₀ = 2 et, pour tout entier naturel n, par Uₙ₊₁ = Uₙ + 5. Que vaut U₃ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "17"
+        },
+        {
+          "id": "d",
+          "text": "22"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une relation de récurrence se déroule marche par marche : U₁ = 2 + 5 = 7, puis U₂ = 7 + 5 = 12, puis U₃ = 12 + 5 = 17 ✓. On retrouve le résultat avec le terme général U₃ = 2 + 3 × 5 = 17. La valeur 12 est U₂ : on s'est arrêté une marche trop tôt en confondant le nombre de calculs et le rang atteint. La valeur 15 est le produit 3 × 5, où le premier terme a disparu. La valeur 22 ajoute la raison quatre fois, une marche de trop.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une suite arithmétique vérifie U₀ = 2 et U₆ = 26. Quelle est sa raison ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "4,8"
+        },
+        {
+          "id": "d",
+          "text": "24"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Entre le rang 0 et le rang 6 on franchit 6 pas, et la formule Uₙ = Uₚ + (n − p)r se relit en r = (U₆ − U₀)/(6 − 0) = (26 − 2)/6 = 24/6 = 4 ✓. Vérification : 2 + 6 × 4 = 26 ✓. La valeur 24 est l'écart total entre les deux termes : elle oublie de le répartir sur les six pas. La valeur 4,8 divise cet écart par 5 au lieu de 6, c'est-à-dire par le nombre de rangs intermédiaires plutôt que par le nombre de pas. La valeur −4 inverse l'ordre de la soustraction alors que la suite est croissante.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Combien de termes compte la somme U₁₂ + U₁₃ + … + U₄₈ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "36"
+        },
+        {
+          "id": "b",
+          "text": "37"
+        },
+        {
+          "id": "c",
+          "text": "48"
+        },
+        {
+          "id": "d",
+          "text": "60"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le nombre de termes d'une somme allant du rang p au rang n vaut n − p + 1, car les deux extrémités sont comptées toutes les deux : ici 48 − 12 + 1 = 37 ✓. Sur un petit cas on s'en convainc aussitôt : de U₁ à U₃ il y a 3 termes, et non 2. La valeur 36 est la soustraction 48 − 12 sans le « + 1 », l'erreur qui traverse ensuite tout le calcul d'une somme. La valeur 48 recopie le dernier indice, comme si la somme commençait au rang 1. La valeur 60 additionne les deux indices, opération qui n'a pas de sens ici.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le graphique ci-dessous donne la population d'une ville, en milliers d'habitants, de 1999 à 2004. Elle continue à évoluer selon la même suite arithmétique. Quelle sera la population en 2010 ?\n<svg viewBox=\"0 0 320 220\"><g fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4 4\"><path d=\"M45 160 L285 160 M45 134 L285 134 M45 108 L285 108 M45 82 L285 82 M45 56 L285 56 M45 30 L285 30\"/><path d=\"M65 25 L65 165 M105 25 L105 165 M145 25 L145 165 M185 25 L185 165 M225 25 L225 165 M265 25 L265 165\"/></g><path d=\"M35 170 L300 170 M45 182 L45 22\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><polygon points=\"294,166 306,170 294,174\" fill=\"#0f172a\"/><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"><path d=\"M40 168 L50 163 M40 164 L50 159\"/></g><polyline points=\"65,160 105,134 145,108 185,82 225,56 265,30\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\"/><g fill=\"#0f6e56\"><circle cx=\"65\" cy=\"160\" r=\"4.5\"/><circle cx=\"105\" cy=\"134\" r=\"4.5\"/><circle cx=\"145\" cy=\"108\" r=\"4.5\"/><circle cx=\"185\" cy=\"82\" r=\"4.5\"/><circle cx=\"225\" cy=\"56\" r=\"4.5\"/><circle cx=\"265\" cy=\"30\" r=\"4.5\"/></g><g font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><g text-anchor=\"end\"><text x=\"41\" y=\"164\">100</text><text x=\"41\" y=\"138\">102</text><text x=\"41\" y=\"112\">104</text><text x=\"41\" y=\"86\">106</text><text x=\"41\" y=\"60\">108</text><text x=\"41\" y=\"34\">110</text></g><g text-anchor=\"middle\"><text x=\"65\" y=\"186\">1999</text><text x=\"105\" y=\"186\">2000</text><text x=\"145\" y=\"186\">2001</text><text x=\"185\" y=\"186\">2002</text><text x=\"225\" y=\"186\">2003</text><text x=\"265\" y=\"186\">2004</text></g></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "112 milliers"
+        },
+        {
+          "id": "b",
+          "text": "120 milliers"
+        },
+        {
+          "id": "c",
+          "text": "122 milliers"
+        },
+        {
+          "id": "d",
+          "text": "130 milliers"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le graphique montre une population qui gagne 2 milliers d'habitants par an : la suite est arithmétique de raison 2, avec 100 milliers en 1999. En prenant 1999 comme rang 0, l'année 2010 est le rang 11, donc la population vaut 100 + 11 × 2 = 122 milliers ✓. La valeur 120 milliers correspond au rang 10 : on a soustrait 2010 − 2000 au lieu de 2010 − 1999. La valeur 130 milliers repart de 110 milliers en ajoutant dix fois la raison, alors que 2004 et 2010 ne sont séparés que par six années. La valeur 112 milliers n'ajoute qu'un seul pas après 2004.",
+      "difficulty": 2
+    }
+  ]
+}

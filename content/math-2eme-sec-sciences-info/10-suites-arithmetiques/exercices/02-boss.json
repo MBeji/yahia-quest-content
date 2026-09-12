@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Indices, sommes et pièges de la raison",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Une suite arithmétique de raison 4 vérifie U₃ = 11. Que vaut U₁₀ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "39"
+        },
+        {
+          "id": "b",
+          "text": "40"
+        },
+        {
+          "id": "c",
+          "text": "43"
+        },
+        {
+          "id": "d",
+          "text": "51"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On utilise Uₙ = Uₚ + (n − p)r, qui évite de remonter jusqu'à U₀ : U₁₀ = U₃ + (10 − 3) × 4 = 11 + 28 = 39 ✓. Le piège courant est la valeur 43, obtenue avec 8 × 4 : de U₃ à U₁₀ il y a bien 8 termes, mais seulement 7 pas, et c'est le nombre de pas qui multiplie la raison. La valeur 51 utilise le rang 10 au lieu de l'écart 10 − 3, ce qui revient à traiter U₃ comme s'il était le premier terme. La valeur 40 est le produit 10 × 4, où le terme de référence a été oublié.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une suite arithmétique vérifie U₀ = 5 et r = 3. Que vaut S = U₈ + U₉ + … + U₆₀ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "185"
+        },
+        {
+          "id": "b",
+          "text": "5564"
+        },
+        {
+          "id": "c",
+          "text": "5671"
+        },
+        {
+          "id": "d",
+          "text": "11342"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On identifie les trois ingrédients de S = nombre de termes × (premier + dernier)/2. Premier terme de la somme : U₈ = 5 + 8 × 3 = 29. Dernier : U₆₀ = 5 + 60 × 3 = 185. Nombre de termes : 60 − 8 + 1 = 53. D'où S = 53 × (29 + 185)/2 = 53 × 107 = 5671 ✓. Le piège courant est 5564 = 52 × 107, où le « + 1 » du décompte a sauté. La valeur 11342 double le résultat en oubliant de diviser par 2. La valeur 185 est le dernier terme lui-même, confondu avec la somme.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une suite arithmétique a pour raison r. Pour tout entier naturel n, que vaut U₂ₙ − Uₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "n"
+        },
+        {
+          "id": "b",
+          "text": "r"
+        },
+        {
+          "id": "c",
+          "text": "nr"
+        },
+        {
+          "id": "d",
+          "text": "2nr"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On écrit chaque terme avec la formule générale : U₂ₙ = U₀ + 2nr et Uₙ = U₀ + nr. La différence élimine U₀ et donne U₂ₙ − Uₙ = 2nr − nr = nr ✓. On le vérifie sur un cas : avec U₀ = 1, r = 3 et n = 2, on a U₄ = 13, U₂ = 7 et la différence vaut 6, soit bien nr. La réponse 2nr oublie de retrancher Uₙ et ne garde que le terme d'indice double. La réponse r suppose que deux termes quelconques ne diffèrent que d'une raison, ce qui n'est vrai que pour des rangs consécutifs. La réponse n compte les pas sans jamais les multiplier par la raison.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est la somme de tous les multiples de 4 strictement compris entre 50 et 150 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25"
+        },
+        {
+          "id": "b",
+          "text": "200"
+        },
+        {
+          "id": "c",
+          "text": "2400"
+        },
+        {
+          "id": "d",
+          "text": "2500"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Ces multiples forment la suite arithmétique 52 ; 56 ; … ; 148, de raison 4. Comme 52 = 4 × 13 et 148 = 4 × 37, il y en a 37 − 13 + 1 = 25. La somme vaut donc 25 × (52 + 148)/2 = 25 × 100 = 2500 ✓. Le piège courant est 2400 = 24 × 100, où le « + 1 » du décompte a été oublié. La valeur 200 s'arrête à premier + dernier sans multiplier par le nombre de termes. La valeur 25 répond au nombre de multiples, et non à leur somme.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les points Aₙ(n ; Uₙ) sont tous situés sur la droite d'équation y = −2x + 9. Que vaut U₆ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−5"
+        },
+        {
+          "id": "b",
+          "text": "−3"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "21"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le point d'abscisse n a pour ordonnée Uₙ, donc le terme général se lit sur l'équation : Uₙ = −2n + 9, avec la pente −2 pour raison et l'ordonnée à l'origine 9 pour premier terme. Ainsi U₆ = −2 × 6 + 9 = −12 + 9 = −3 ✓. La valeur −5 remplace n par 7, décalage qui revient à croire que le rang 6 est le septième point. La valeur 3 soustrait le rang lui-même au lieu de son produit par la pente. La valeur 21 change le signe du produit, ce qui ferait monter une droite qui descend.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Creuser un puits coûte 50 dinars pour le premier mètre, puis 10 dinars de plus par mètre supplémentaire. Quel est le coût total de 15 mètres ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "190 dinars"
+        },
+        {
+          "id": "b",
+          "text": "1800 dinars"
+        },
+        {
+          "id": "c",
+          "text": "1875 dinars"
+        },
+        {
+          "id": "d",
+          "text": "2850 dinars"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les prix des mètres successifs forment une suite arithmétique de premier terme 50 et de raison 10. Le quinzième mètre coûte 50 + 14 × 10 = 190 dinars, car quatorze augmentations seulement séparent le premier du quinzième. Le total vaut donc 15 × (50 + 190)/2 = 15 × 120 = 1800 dinars ✓. Le piège courant est 1875, obtenu en évaluant le dernier mètre à 50 + 15 × 10 = 200 dinars : une augmentation de trop. La valeur 2850 multiplie le prix du dernier mètre par leur nombre, alors que tous les mètres ne coûtent pas ce prix. La valeur 190 dinars est le prix du seul quinzième mètre, confondu avec le total.",
+      "difficulty": 3
+    }
+  ]
+}
