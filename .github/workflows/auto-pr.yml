@@ -182,8 +182,26 @@ jobs:
           # issue et on sort en 0. Vérifié en vrai : ce workflow a échoué ainsi
           # sur sa propre PR d'introduction (#226), et c'est ce qui a mis le
           # défaut au jour avant qu'il ne fasse des dégâts.
+          err_file="$(mktemp)"
           if ! url="$(gh pr create --repo "$REPO" --base main --head "$BRANCH" \
-            $draft_flag --title "$subject" --body-file "$body_file")"; then
+            $draft_flag --title "$subject" --body-file "$body_file" 2>"$err_file")"; then
+            erreur="$(cat "$err_file")"
+            # ⚠️ TOUT ÉCHEC N'EST PAS UNE PANNE, et l'alarme d'en dessous ne le
+            # savait pas. Une branche SANS ÉCART avec `main` fait répondre à
+            # GitHub « No commits between main and <branche> » — or c'est le cas
+            # NOMINAL d'une session qui, sa PR mergée, repart sa branche de `main`
+            # (le protocole l'exige : une PR mergée ne peut pas porter de travail
+            # neuf). Il n'y a alors rien à proposer, et c'est très bien ainsi.
+            # L'alarme, elle, affirmait UNE cause — « le réglage n'est pas actif »
+            # — sans l'avoir établie : elle aurait crié à la panne de permissions
+            # sur un dépôt parfaitement réglé, et cette issue serait restée
+            # ouverte à mentir. Ce dépôt a déjà payé trois fois des gardes qui
+            # disent faux (privé#280, #291, #293).
+            if printf '%s' "$erreur" | grep -qi "no commits between"; then
+              echo "Rien à ouvrir pour '$BRANCH' — aucun écart avec main. Ce n'est pas une panne."
+              echo "created=false" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
             echo "::warning title=Auto-PR impossible::La PR de '$BRANCH' n'a pas pu être ouverte — une issue de suivi est ouverte."
             alarme="$(mktemp)"
             {
@@ -191,7 +209,14 @@ jobs:
               echo ""
               echo "Dernière branche concernée : \`$BRANCH\`"
               echo ""
-              echo "**Cause la plus probable** — le réglage n'est pas actif :"
+              echo "**Ce que GitHub a répondu** — c'est le fait, le reste est une hypothèse :"
+              echo ""
+              echo '\`\`\`'
+              echo "$erreur"
+              echo '\`\`\`'
+              echo ""
+              echo "**Cause la plus probable si le message ci-dessus parle de permissions** —"
+              echo "le réglage n'est pas actif :"
               echo "\`Settings > Actions > General > Workflow permissions >\`"
               echo "\`« Allow GitHub Actions to create and approve pull requests »\`"
               echo ""
