@@ -9,6 +9,18 @@ name: Roadmap sync
 # l'appelle avec le chemin du corpus — même schéma que les gates de contenu :
 # les gates suivent leurs données.
 #
+# ⚠️ DEUX GATES DEPUIS LE 2026-09-12, et ils ne regardent pas la même chose :
+#   • `check-roadmap-sync.mjs` — la roadmap CONNAÎT-elle les lots livrés au moteur ?
+#   • `check-etudes-index.mjs` — l'index, l'en-tête de chaque `ETUDE.md`, le rangement
+#     dans `EtudeRealisé/` et `STATUS.md` §4 se CONTREDISENT-ils ? (arena#994)
+# Chacun tient sa propre issue, sous son propre libellé, et se referme tout seul.
+# Le second a trouvé SIX écarts à sa première exécution, dont un lot d'étude déclaré
+# fini avec un de ses trois livrables manquant (é26 lot 2 : les gels Q-3 n'étaient
+# actés nulle part, et trois documents affirmaient trois choses différentes).
+#
+# ⚠️ Le `name:` de ce workflow ne bouge pas : `automerge.yml` l'attend sous « Roadmap
+# sync » dans son `workflow_run`. Le renommer suspendrait la chaîne de merge.
+#
 # Deux déclencheurs, deux rôles :
 #   • `schedule` — le vrai filet. La dérive vient d'en face, pas d'ici : ce dépôt
 #     peut rester silencieux des jours pendant que `main` avance (c'est très
@@ -40,7 +52,9 @@ on:
     # ⚠️ `opened` volontairement absent — même raison que `content-ci.yml` (étude 32,
     # lot 1). Le récit complet y est ; ici c'est le même fantôme, sur le même SHA.
     paths:
-      - "FableEtudes/ROADMAP.md"
+      # Tout le dossier : le gate d'index lit l'index, les en-têtes de chaque
+      # `ETUDE.md` et leur rangement — un statut dérive par n'importe lequel.
+      - "FableEtudes/**"
   schedule:
     # 05:30 UTC — après le nightly du dépôt public (04:14), donc sur un `main` du jour.
     - cron: "30 5 * * *"
@@ -113,6 +127,92 @@ jobs:
             echo "ROADMAPSYNCEOF"
           } >> "$GITHUB_OUTPUT"
 
+      - name: etudes-index
+        id: etudes
+        working-directory: engine
+        # Même contrat que l'étape précédente : ne tue pas le job (le travail utile
+        # vient après), verdict rétabli en fin de workflow pour les PR.
+        continue-on-error: true
+        run: |
+          set -uo pipefail
+          code=0
+          node scripts/ci/check-etudes-index.mjs \
+            --etudes "$GITHUB_WORKSPACE/corpus/FableEtudes" \
+            --status STATUS.md \
+            > "$GITHUB_WORKSPACE/etudes-index.txt" 2>&1 || code=$?
+          cat "$GITHUB_WORKSPACE/etudes-index.txt"
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          exit "$code"
+
+      - name: Rapport (index des études)
+        id: report-etudes
+        run: |
+          set -euo pipefail
+          cat "$GITHUB_WORKSPACE/etudes-index.txt" >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo "body<<ETUDESINDEXEOF"
+            cat "$GITHUB_WORKSPACE/etudes-index.txt"
+            echo "ETUDESINDEXEOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Ouvrir ou mettre à jour l'issue des contradictions
+        if: github.event_name != 'pull_request' && steps.etudes.outputs.code != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          REPORT: ${{ steps.report-etudes.outputs.body }}
+        run: |
+          set -euo pipefail
+          gh label create doc-drift \
+            --color FBCA04 \
+            --description "Index, en-têtes d'études et STATUS.md se contredisent (gate etudes:check)" \
+            --force
+          # Heredoc indenté au niveau du bloc YAML — un `---` en colonne 0 dans le
+          # FICHIER serait lu par YAML comme un second document (même piège qu'au-dessus).
+          FOOTER="$(cat <<'MDEOF'
+
+          ---
+
+          **Quoi faire.** Trancher chaque ligne en relisant, puis aligner le document qui a
+          tort. La source de vérité est l'**en-tête du `ETUDE.md`** (§ Cycle de vie de
+          l'index) — mais elle peut être la périmée des trois : é11 a annoncé « 6 lots sur 8 »
+          et « `tutor_digests` n'existe nulle part » dix-neuf jours après le merge de ces
+          deux lots. Un statut d'étude se **constate** sur `main`, il ne se recopie pas.
+
+          ⚠️ Le gate a un avis sur la **contradiction**, jamais sur l'exhaustivité : un
+          document qui ne parle pas d'une étude ne le fait pas rougir. C'est la limite posée
+          par arena#994, et elle est délibérée — un gate qui exigerait une mention à chaque
+          PR transformerait le topo en journal.
+
+          Cette issue se referme **d'elle-même** au passage suivant du cron (05:30 UTC).
+          MDEOF
+          )"
+          BODY="$(printf '```\n%s\n```\n' "$REPORT")$FOOTER"
+          EXISTING="$(gh issue list --label doc-drift --state open --limit 1 --json number --jq '.[0].number')"
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+            echo "Issue #$EXISTING mise à jour."
+          else
+            gh issue create --title "Les documents d'étude se contredisent" \
+              --label doc-drift --body "$BODY"
+          fi
+
+      - name: Refermer l'issue quand les documents s'accordent
+        if: github.event_name != 'pull_request' && steps.etudes.outputs.code == '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          EXISTING="$(gh issue list --label doc-drift --state open --limit 1 --json number --jq '.[0].number')"
+          if [ -n "$EXISTING" ]; then
+            gh issue close "$EXISTING" \
+              --comment "Index, en-têtes, rangement et STATUS.md §4 s'accordent de nouveau — clôture automatique."
+            echo "Issue #$EXISTING refermée."
+          else
+            echo "Rien à refermer : les documents s'accordent."
+          fi
+
       - name: Ouvrir ou mettre à jour l'issue de suivi
         if: github.event_name != 'pull_request' && steps.sync.outputs.code != '0'
         env:
@@ -184,4 +284,10 @@ jobs:
         if: github.event_name == 'pull_request' && steps.sync.outputs.code != '0'
         run: |
           echo "::error title=Roadmap en retard::La roadmap ignore des lots déjà livrés au moteur — rapport dans l'étape « roadmap-sync » et dans le résumé du run."
+          exit 1
+
+      - name: Sur une PR, une contradiction doit rougir le check
+        if: github.event_name == 'pull_request' && steps.etudes.outputs.code != '0'
+        run: |
+          echo "::error title=Documents d'étude en contradiction::Index, en-tête d'ETUDE.md, rangement ou STATUS.md §4 se contredisent — rapport dans l'étape « etudes-index » et dans le résumé du run."
           exit 1

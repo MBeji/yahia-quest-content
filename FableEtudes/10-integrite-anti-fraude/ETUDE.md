@@ -1,6 +1,8 @@
 # Étude 10 — Intégrité des classements & anti-fraude
 
-> **Statut** : brouillon
+> **Statut** : **gelée (doctrine verticale)** — é26 Q-3 — se dégèle au volume réel de V3, arbitrage de Mohamed du
+> 2026-07-20, acté ici le 2026-09-12 (é26 lot 2). **Réversible par arbitrage humain
+> explicite** ; le fond de l'étude n'est pas touché, seul son statut l'est.
 > **Priorité** : 10 · **Valeur** : protéger la crédibilité de tout ce qui classe (leaderboard, percentiles d'examen blanc, duels/ligues) — un classement triché tue la motivation des élèves honnêtes · **Complexité** : moyenne
 > **Architecte** : Fable (claude-fable-5), 2026-07-04 · **Exécuteur cible** : Sonnet
 > **Dépend de** : montée des enjeux compétitifs (études [02](../EtudeRealisé/02-examen-blanc/ETUDE.md) et [05](../EtudeRealisé/05-duels-ligues/ETUDE.md) livrées) — les lots 1–3 peuvent se préparer avant, le lot 4 ne s'active qu'après · **Bloque** : —

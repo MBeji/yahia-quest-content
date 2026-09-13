@@ -1,6 +1,8 @@
 # Étude 12 — Studio d'ingestion (PDF/source → contenu, dans le pipeline à gates)
 
-> **Statut** : brouillon
+> **Statut** : **gelée (doctrine verticale)** — é26 Q-3 — le canal opéré é13 suffit, arbitrage de Mohamed du
+> 2026-07-20, acté ici le 2026-09-12 (é26 lot 2). **Réversible par arbitrage humain
+> explicite** ; le fond de l'étude n'est pas touché, seul son statut l'est.
 > **Priorité** : 12 · **Valeur** : faire chuter le coût de création quand la source n'est pas déjà couverte (PDF d'un enseignant, polycopié, annales papier) — sans sacrifier ce qui fait la valeur du contenu : fidélité, corrigés vérifiés, revue humaine · **Complexité** : moyenne (surtout process/outillage — le gros existe déjà)
 > **Architecte** : Fable (claude-fable-5), 2026-07-04 · **Exécuteur cible** : Sonnet (outillage) + skills contenu (génération)
 > **Dépend de** : rien de bloquant ; synergie avec la couche de persistance existante (transcriptions CNP) · **Bloque** : rien

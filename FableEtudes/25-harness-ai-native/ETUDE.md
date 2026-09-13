@@ -1,6 +1,10 @@
 # Étude 25 — Harness AI-native & model-agnostic (le repo comme plateforme d'agents)
 
-> **Statut** : validée (2026-07-19, Q-1…Q-6 arbitrées — toutes sur les recommandations)
+> **Statut** : **en exécution** — 8 lots livrés (1, 2, 3, 4, 5a, 5b, 5c, 6), reste **L7**
+> le drill de portabilité, à faire avec Mohamed. Validée le 2026-07-19 (Q-1…Q-6 arbitrées —
+> toutes sur les recommandations). ⚠️ Cet en-tête a dit « validée » jusqu'au 2026-09-12,
+> pendant que l'index et STATUS.md la disaient tous deux en exécution : c'est le gate
+> `etudes:check` (arena#994) qui a nommé l'écart.
 > **Priorité** : 25 · **Valeur** : 🔌 le harness d'ingénierie (docs canoniques, 45 skills, gates,
 > workflows agents, mémoire) cesse d'être exploitable par un seul outil (Claude Code) et devient
 > une **plateforme neutre** sur laquelle n'importe quelle tête d'exécution — Claude, Codex,

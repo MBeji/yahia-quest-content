@@ -8,7 +8,7 @@
 > `course-figures.md` (figures), `math-and-notation.md` (notation) s'appliquent **intégralement**
 > à une reprise. Reprendre un exercice n'exonère d'aucun gate.
 >
-> Étude : `FableEtudes/21-valorisation-manuels/ETUDE.md`.
+> Étude : `FableEtudes/EtudeRealisé/21-valorisation-manuels/ETUDE.md`.
 
 > **Pourquoi ce fichier existe.** Les manuels du CNP sont la matière pédagogique la plus riche et
 > la plus légitime du marché : calibrés par les auteurs du programme, connus des élèves, reconnus
