@@ -1,7 +1,14 @@
 # Étude 26 — Doctrine verticale : profondeur avant largeur (briques d'excellence, IA-native)
 
-> **Statut** : validée — Q-1…Q-5 arbitrées le 2026-07-20 par Mohamed, toutes sur les
-> recommandations (§8) ; les lots 1 et 2 sont exécutables
+> **Statut** : **livrée le 2026-09-12** — 2 lots sur 2. Validée le 2026-07-20 (Q-1…Q-5
+> arbitrées par Mohamed, toutes sur les recommandations, §8).
+> ⚠️ **Le lot 2 a été annoncé livré le 2026-09-04 avec un de ses trois livrables manquant** :
+> l'« Ordre d'exécution » de l'index et la colonne « M » de STATUS.md §3 étaient bien là, mais
+> les **gels Q-3 n'étaient actés nulle part** — é06, é10 et é12 portaient encore `brouillon`
+> dans leur en-tête ET dans l'index, pendant que STATUS.md et le backlog de l'index les
+> disaient `gelées`. Personne ne pouvait le voir : trois documents affirmaient trois choses,
+> et rien ne les confrontait. Le gate `etudes:check` (arena#994) le fait depuis le
+> 2026-09-12 ; c'est lui qui a rouvert ce lot, et le troisième livrable est posé.
 > **Priorité** : transverse (gouvernance de portefeuille — elle séquence les autres études) ·
 > **Valeur** : 🎯 chaque capacité livrée devient une **brique d'excellence** — complète, robuste,
 > mesurée, cohérente, différenciante — au lieu d'un front de plus ; les trois boucles
@@ -463,7 +470,11 @@ hebdomadaire (KPI-4, calculable en attendant par requête sur `attempts`).
       plafond d'octets). L'ancrage a été financé en resserrant trois pièges dont le récit complet
       vit déjà dans un doc dédié — la règle reste dans AGENTS.md, l'histoire va où elle a sa
       place. Le plafond n'a pas été levé.
-- [ ] Lot 2 — portefeuille re-séquencé + scorecard STATUS.md
+- [x] **Lot 2 — portefeuille re-séquencé + scorecard STATUS.md** — « Ordre d'exécution —
+      par verticale » de l'index et colonne « M » de `STATUS.md` §3 le **2026-09-04** ;
+      **gels Q-3 actés** (é06, é10, é12 : en-tête + cellule d'index) le **2026-09-12**,
+      huit jours après que le lot ait été déclaré fini. Le stop-point est tenu : seuls les
+      en-têtes de statut ont bougé, aucun fond d'étude gelée n'est touché.
 
 **Stop-points** : le lot 1 ne modifie AUCUNE étude existante (seulement le template et
 l'index) ; le lot 2 ne gèle que ce que Q-3 a arbitré, et ne touche pas au contenu des études

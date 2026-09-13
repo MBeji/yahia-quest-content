@@ -1,14 +1,19 @@
 # Étude 11 — Tuteur IA pédagogique « El Ostedh » (v2 — mode d'accompagnement personnalisé)
 
-> **Statut** : **EN EXÉCUTION — 6 lots sur 8 livrés**, constatés sur `main` le 2026-08-24.
-> ⚠️ **L'état de cette étude ne se lit PAS dans ce document** : une grande partie de son
-> périmètre a été livrée sous D'AUTRES numéros (é29, é04, é07) et ses cases §4 sont restées
-> vides jusqu'ici. L'inventaire qui fait foi est celui de `STATUS.md` (arena#823). Livrés :
-> **lot 0** par é29 lot 1, **lot 1** (arena#816, correctif #817), **lots 2·3·4·5** (arena#823),
-> **lot 7 pour moitié** (la console admin vient de é29 lot 5). **Restent** : le **lot 6**
-> (bilans hebdo batch — `tutor_digests` et son workflow : zéro occurrence dans le dépôt) et la
-> seconde moitié du **lot 7** (compteur d'énergie côté élève, hit-rate du cache) — 🚧 **une
-> session y travaille depuis le 2026-08-24**. Voir le §8.
+> **Statut** : **LIVRÉE — les 8 lots**, constatés sur `main` le 2026-08-24 (arena#844), statut
+> aligné le 2026-09-12.
+> ⚠️ **L'état de cette étude ne s'est JAMAIS lu dans ce document** : une grande partie de son
+> périmètre a été livrée sous D'AUTRES numéros (é29, é04, é07), donc personne n'est venu cocher
+> ses cases — et cet en-tête a annoncé « 6 lots sur 8 » pendant DIX-NEUF JOURS après que les
+> deux derniers avaient mergé. Il affirmait même, sur le lot 6, « `tutor_digests` et son
+> workflow : zéro occurrence dans le dépôt », alors que `20260824120000_tutor_digests.sql` et
+> `.github/workflows/tutor-digests.yml` étaient tous deux sur `main`. C'est le gate
+> `etudes:check` (arena#994) qui a fini par nommer l'écart, en confrontant cet en-tête à
+> l'index et à STATUS.md, qui le disaient livré depuis le premier jour.
+> L'inventaire qui fait foi, lot par lot, est celui de `STATUS.md` §3 (ligne « Tuteur IA »).
+> Livrés : **lot 0** par é29 lot 1, **lot 1** (arena#816, correctif #817),
+> **lots 2·3·4·5** (arena#823), **lots 6 et 7** (arena#844), plus la fermeture du garde-fou 3
+> de R-15 (é29) le 2026-08-26. Voir le §8.
 > Validée — Q-1…Q-9 arbitrées le 2026-07-20 par Mohamed (§7 ; huit sur les
 > recommandations, **Q-4 écartée** : le tuteur s'appelle « El Ostedh »). Réécriture v2 du
 > 2026-07-17 commandée par l'humain, remplaçant la v1 du 2026-07-04 (gelée le 2026-07-11 avec
@@ -797,8 +802,8 @@ Q-1), puis 3 → 4, et seulement ensuite 5/6/7 selon les KPI et les arbitrages Q
 - [x] Lot 3 — chat streaming cadré — arena#823. `/api/tutor/stream`, `resolveSupabaseAuth` extrait du middleware, champ libre borné réservé au collège (Q-6), catégorie bien-être qui n'atteint jamais le modèle (R-6)
 - [x] Lot 4 — boucle de compréhension & escalades — arena#823. Mini-check servi depuis le STOCK, corrigé serveur sans XP ni pièce ni SM-2 (R-11), les trois signaux R-8, escalade ordonnée en 5 marches, compteur parent en agrégats seuls
 - [x] Lot 5 — exercices ciblés — sélection par arena#823 ; **la chaîne §3.8 EST la Forge de é29 lot 4** (schéma zod, double résolution, éphémère 30 j, 0 XP, clé jamais cliente). Reste le fallback conditionnel de Q-8
-- [ ] Lot 6 — bilans hebdo batch (élève + parent) — **non commencé** : `tutor_digests` et `tutor-digests.yml` n'existent nulle part (vérifié le 2026-08-24)
-- [~] Lot 7 — énergie UI + admin avancé — **à moitié** : la console admin vient de é29 lot 5, et `recharge_tutor_energy` existe en SQL depuis arena#823. **Restent** le compteur d'énergie côté élève, l'écran « reviens demain » et le hit-rate du cache d'explications
+- [x] Lot 6 — bilans hebdo batch (élève + parent) — **livré** par arena#844 (2026-08-24) : `20260824120000_tutor_digests.sql` + `.github/workflows/tutor-digests.yml`, batch sur le chemin plateforme. ⚠️ Cette ligne a dit « non commencé : n'existent nulle part » pendant dix-neuf jours après leur merge — un lot livré sous un titre de squash qui ne le nomme pas (#844 s'intitule « Merge remote-tracking branch… ») ne se retrouve dans aucune relecture du `git log`.
+- [x] Lot 7 — énergie UI + admin avancé — **livré** par arena#844 : la console admin venait de é29 lot 5 et `recharge_tutor_energy` d'arena#823 ; le compteur d'énergie côté élève, l'écran « reviens demain », le hit-rate du cache d'explications et le taux de rebut de la Forge (les deux mesures de §1.4 que personne n'avait) ont suivi, avec `20260824130000_tutor_energy_console.sql`.
 
 **Stop-points (non négociables pour l'exécuteur)** :
 

@@ -1,6 +1,8 @@
 # Étude 06 — PWA & lecture hors-ligne
 
-> **Statut** : brouillon
+> **Statut** : **gelée (doctrine verticale)** — é26 Q-3 — besoin non documenté, arbitrage de Mohamed du
+> 2026-07-20, acté ici le 2026-09-12 (é26 lot 2). **Réversible par arbitrage humain
+> explicite** ; le fond de l'étude n'est pas touché, seul son statut l'est.
 > **Priorité** : 06 · **Valeur** : marché — connectivité intermittente en Tunisie ; installer l'app et relire ses cours sans réseau · **Complexité** : haute
 > **Architecte** : Fable (claude-fable-5), 2026-07-04 · **Exécuteur cible** : Sonnet (ou équiv.)
 > **Dépend de** : besoin utilisateur documenté (télémétrie/retours) · **Bloque** : —
