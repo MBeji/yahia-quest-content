@@ -1,0 +1,243 @@
+{
+  "title": "⭐⭐ تمرين موجّه: قابلية القسمة خطوة بخطوة",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 70,
+  "rewardCoins": 15,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "نعتبر العدد x الذي تُكتب أرقامه على الشكل a9aa1، حيث a رقم غير معدوم. ما رقم آحاد العدد x − 1 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "a"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "رقم آحاد x هو 1، وطرح 1 منه يعطي 0 دون أيّ استلاف من رتبة العشرات، لأنّ 1 − 1 = 0 لا يحتاج إلى استلاف. فتبقى كلّ الرتب الأخرى كما هي، ويُكتب العدد x − 1 على الشكل a9aa0. هذه أوّل خطوة في التمرين: تحويل x − 1 إلى عدد نعرف أرقامه، حتّى نستطيع تطبيق معايير القسمة عليه.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.entiers-lecture-ecriture"
+      ]
+    },
+    {
+      "prompt": "العدد x − 1 يُكتب a9aa0، حيث a رقم غير معدوم. لماذا يقبل هذا العدد القسمة على 5 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "لأنّ مجموع أرقامه مضاعف للعدد 5",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "لأنّه عدد زوجي، وكلّ عدد زوجي يقبل القسمة على 5 بالضرورة",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
+        {
+          "id": "c",
+          "text": "لأنّ رقم آحاده 0، ومعيار القسمة على 5 يخصّ رقم الآحاد"
+        },
+        {
+          "id": "d",
+          "text": "لأنّ مجموع أرقامه هو 3a + 9، وهو مضاعف للعدد 3",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "معيار القسمة على 5 ينظر إلى رقم الآحاد وحده: عدد يقبل القسمة على 5 إذا كان رقم آحاده 0 أو 5. هنا رقم الآحاد هو 0، فالشرط محقّق مهما كان a. (تحقّق من أجل a = 1: العدد 19110 = 5 × 3822.) انتبه إلى الاقتراح الذي يتحدّث عن المجموع 3a + 9: هو صحيح في ذاته، لكنّه يُثبت القسمة على 3 لا على 5 — إنّه جواب عن سؤال آخر.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
+    },
+    {
+      "prompt": "ما مجموع أرقام العدد a9aa0، حيث a رقم غير معدوم ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3a + 9"
+        },
+        {
+          "id": "b",
+          "text": "3a"
+        },
+        {
+          "id": "c",
+          "text": "a + 9"
+        },
+        {
+          "id": "d",
+          "text": "4a + 9"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "أرقام العدد هي a و 9 و a و a و 0. الرقم a مكتوب ثلاث مرّات، والرقم 9 مرّة واحدة، والرقم 0 لا يضيف شيئًا. فالمجموع هو a + 9 + a + a + 0 = 3a + 9. (تحقّق من أجل a = 7: العدد 79770 ومجموع أرقامه 7 + 9 + 7 + 7 + 0 = 30، و 3 × 7 + 9 = 30.) الخطآن الشائعان: نسيان الرقم 9، أو عدّ a مرّة واحدة بدل ثلاث.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.entiers-lecture-ecriture"
+      ]
+    },
+    {
+      "prompt": "مجموع أرقام العدد a9aa0 هو 3a + 9. لماذا يقبل هذا العدد القسمة على 3 مهما كان a ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "لأنّ الرقم a نفسه مضاعف للعدد 3 مهما كانت قيمته",
+          "misconceptionTag": "math.num.critere-somme-applique-au-chiffre"
+        },
+        {
+          "id": "b",
+          "text": "لأنّ 3a + 9 يقبل القسمة على 9، وكلّ مضاعف للعدد 9 مضاعف للعدد 3",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
+        {
+          "id": "c",
+          "text": "لأنّ العدد ينتهي بالرقم 0، والأعداد المنتهية بـ 0 مضاعفة للعدد 3",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "لأنّ 3a + 9 = 3 × (a + 3)، فهو جداء أحد عامليه 3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "معيار القسمة على 3 ينظر إلى مجموع الأرقام. هنا المجموع هو 3a + 9، ونُخرج منه العامل 3 فنكتب 3a + 9 = 3 × (a + 3): مهما كانت قيمة a يبقى هذا العدد مضاعفًا للعدد 3، فالعدد a9aa0 يقبل القسمة على 3. (تحقّق من أجل a = 1: المجموع 12 = 3 × 4.) الخطأ الشائع: الاعتقاد أنّ المجموع مضاعف للعدد 9 — من أجل a = 1 يساوي 12، وهو ليس مضاعفًا للعدد 9.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
+    },
+    {
+      "prompt": "العدد x − 1 مضاعف للعدد 3 ومضاعف للعدد 5 في نفس الوقت. لماذا نستنتج أنّه مضاعف للعدد 15 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "لأنّ 3 و 5 لا يشتركان في أيّ عامل، فجداؤهما 15 يقسم العدد"
+        },
+        {
+          "id": "b",
+          "text": "لأنّ كلّ عدد مضاعف للعدد 3 هو بالضرورة مضاعف للعدد 15",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
+        {
+          "id": "c",
+          "text": "لأنّ المضاعف لعددين هو دائمًا مضاعف لجدائهما مهما كان العددان",
+          "misconceptionTag": "math.num.divisibilite-composee-facteurs-non-premiers"
+        },
+        {
+          "id": "d",
+          "text": "لأنّ 3 و 5 عددان أوّليان متتاليان في قائمة الأعداد الأوّلية"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "العددان 3 و 5 لا يشتركان في أيّ عامل غير 1، ولذلك فإنّ عددًا يقبل القسمة عليهما معًا يقبل القسمة على جدائهما 15. (تحقّق من أجل a = 1: العدد 19110 = 15 × 1274.) الخطأ الشائع هو تعميم القاعدة على أيّ عددين: العدد 18 مضاعف للعدد 2 وللعدد 6، لكنّه ليس مضاعفًا للجداء 12، لأنّ 2 و 6 يشتركان في العامل 2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.criteres-divisibilite",
+        "math.num.multiples-diviseurs"
+      ]
+    },
+    {
+      "prompt": "t عدد صحيح طبيعي والعدد a يساوي 36t + 4. لماذا يكون a² عددًا زوجيًّا ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "لأنّ مربّع أيّ عدد صحيح طبيعي هو عدد زوجي دائمًا"
+        },
+        {
+          "id": "b",
+          "text": "لأنّ الأسّ 2 زوجي، وكلّ قوّة دليلها زوجي تعطي عددًا زوجيًّا",
+          "misconceptionTag": "math.num.puissance-signe-parite-exposant"
+        },
+        {
+          "id": "c",
+          "text": "لأنّ a زوجي (36t زوجي و 4 زوجي)، ومربّع الزوجي زوجي"
+        },
+        {
+          "id": "d",
+          "text": "لأنّ a عدد فردي، ومربّع العدد الفردي عدد زوجي"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "العدد 36t زوجي لأنّ 36 زوجي، والعدد 4 زوجي كذلك، ومجموع عددين زوجيين زوجي: إذن a زوجي. ونكتب a = 2k فيكون a² = 4k² = 2 × (2k²)، وهو زوجي. (تحقّق من أجل t = 1: a = 40 و a² = 1600، وهو زوجي.) الخطأ الشائع: الخلط بين زوجية الأسّ وزوجية النتيجة — العدد 3² = 9 دليله زوجي ونتيجته فردية.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.operations-entiers"
+      ]
+    },
+    {
+      "prompt": "b عدد صحيح طبيعي زوجي ومضاعف للعدد 3 في نفس الوقت. أيّ عدد يقسم b بالضرورة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "9",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "12",
+          "misconceptionTag": "math.num.divisibilite-composee-facteurs-non-premiers"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "أن يكون b زوجيًّا معناه أنّه مضاعف للعدد 2، وأن يكون مضاعفًا للعدد 3 يضيف العامل 3. والعددان 2 و 3 لا يشتركان في أيّ عامل، فـ b مضاعف للعدد 6. أمّا الأعداد الأخرى فيكفي مثال مضادّ واحد لإسقاطها: العدد 6 نفسه زوجي ومضاعف للعدد 3، ولا يقبل القسمة لا على 9 ولا على 12 ولا على 4.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.multiples-diviseurs"
+      ]
+    },
+    {
+      "prompt": "نعوّض في c = a + 4b + 8 فنجد c = 36t + 4b + 12، حيث b مضاعف للعدد 6. لماذا يقبل c القسمة على 12 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "لأنّ العدد 36t وحده مضاعف للعدد 12، وذلك يكفي للمجموع",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "b",
+          "text": "لأنّ الحدود الثلاثة مضاعفة للعدد 12: 36t و 4b (إذ b = 6m) و 12"
+        },
+        {
+          "id": "c",
+          "text": "لأنّ c عدد زوجي ومجموع أرقامه مضاعف للعدد 3",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "لأنّ 4b مضاعف للعدد 4 والعدد 12 مضاعف للعدد 12، وهذا يكفي",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "مجموع أعداد كلّها مضاعفة للعدد 12 هو نفسه مضاعف للعدد 12، فنفحص الحدود واحدًا واحدًا. الحدّ 36t مضاعف للعدد 12 لأنّ 36 = 12 × 3. والحدّ 12 مضاعف للعدد 12 بداهة. ويبقى 4b: العدد b زوجي ومضاعف للعدد 3، أي b = 6m، فيكون 4b = 24m = 12 × 2m. إذن c = 12 × (3t + 2m + 1). (تحقّق من أجل t = 2 و b = 18: c = 72 + 72 + 12 = 156 = 12 × 13.) الخطأ الشائع: الاكتفاء بحدّ واحد — حدّ واحد مضاعف للعدد 12 لا يكفي إذا كان حدّ آخر لا يقبل القسمة عليه.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.criteres-divisibilite",
+        "math.num.operations-entiers"
+      ]
+    }
+  ]
+}
