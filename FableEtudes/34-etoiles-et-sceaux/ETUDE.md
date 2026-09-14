@@ -1,8 +1,13 @@
 # Étude 34 — Étoiles de chapitre & sceaux de matière : une progression qui ne recule jamais
 
-> **Statut** : **brouillon** — écrite le 2026-09-14 ; Q-1…Q-5 ouvertes (§7). Le numéro 33 est
-> pris par « la porte des questions ouvertes » (arena#1026, migrations `20260913120000` /
-> `20260913130000`), dont le dossier n'est pas encore déposé ici.
+> **Statut** : **en exécution** — écrite le 2026-09-14, **Q-1…Q-5 arbitrées le même jour** par
+> Mohamed (§7) : quatre sur la recommandation, **Q-2 contre** (« maîtrisé » = étoile 4, pas
+> ≥ 3), ce qui SIMPLIFIE l'étude — la barre de la couverture parentale ne bouge pas, seule sa
+> monotonie change, et la série KPI-E de é31 n'a plus de rupture de définition. Les 5 lots sont
+> exécutables ; **le lot 1 est LIVRÉ** (arena, 2026-09-14 — §8) et le lot 5 est optionnel et
+> commandé (Q-4). Le numéro 33 est pris par « la porte
+> des questions ouvertes » (arena#1026, migrations `20260913120000` / `20260913130000`), dont
+> le dossier n'est pas encore déposé ici.
 > **Priorité** : 34 · **Valeur** : 🎯 l'élève ne voit plus jamais sa progression **reculer**
 > quand du contenu arrive — plateforme, IA, parent ou lui-même ; il lit d'un coup d'œil ce
 > qu'il a **acquis** par chapitre et par matière (étoiles, sceaux), ce que ça lui a **coûté**
@@ -81,6 +86,13 @@ les cours et tous les exercices » et le suivi ne lui comptait que trois chapitr
 était juste (4/6 missions → 0, quiz expédié → 0), le **sens** était faux, et arena#987 a dû
 ajouter une liste de « ce qui manque » pour rendre le verdict lisible. Il reste un verdict.
 
+⚠️ **La hauteur de cette barre est un arbitrage rendu, pas un défaut que l'étude corrige**
+(Q-2, 2026-09-14) : « maîtrisé » reste « toutes les missions, défi élite compris ». L'étude ne
+déplace donc pas le seuil — elle lui retire ce qui le rendait injuste et illisible : il ne
+redescend plus jamais (le grand livre), il n'est plus le seul chiffre montré (la distribution
+des étoiles passe devant), et ce qui manque est nommé (le geste). La **médiane de l'étoile**
+(KPI-2) est le chiffre qui dira plus tard, sur des données, si la barre doit bouger.
+
 **Il n'existe aucun jalon intermédiaire par matière.** Entre « une mission réussie » (XP,
 immédiat) et « toute la matière à 100 % » (des mois), rien ne s'obtient et rien ne se garde :
 pas d'étape « j'ai fait le socle de tous les chapitres », pas de trophée de matière, rien qui
@@ -105,7 +117,7 @@ Qu'un élève — et son parent — lise en un écran, dans le même vocabulaire
   franchi) et des **sceaux de matière** (⭐ à ⭐⭐⭐⭐, quand **tous** les chapitres ont
   l'étoile), inscrits dans un **grand livre** dont **rien ne s'efface** ;
 - **ce que ça lui a coûté** : des compteurs d'effort qui **montent** (missions réussies, XP de
-  la matière, chapitres commencés et terminés) — jamais un pourcentage qui descend ;
+  la matière, chapitres commencés et maîtrisés) — jamais un pourcentage qui descend ;
 - **ce qui reste à découvrir** : les **nouveautés ✨** — les missions et chapitres arrivés
   après ses étoiles, présentés comme une opportunité, jamais comme une dette ;
 - **pourquoi un chapitre n'a pas encore sa prochaine étoile**, et le geste qui la donne.
@@ -118,11 +130,11 @@ passage (R-15).
 
 | KPI       | Définition                                                                                                                                                                           | Où on le lit                                                                                | Cible                                                                             |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| **KPI-1** | **Zéro régression affichée** : aucun statut acquis (étoile, sceau, « terminé ») ne disparaît d'un écran après une application de contenu                                             | pgTAP (invariant sur décor), + compteur **« étoiles préservées »** (grand livre > vivant) sur `/admin/engagement` | 0 régression ; le compteur est la preuve visible que la promesse a servi           |
-| **KPI-2** | Part des actifs 30 j ayant ≥ 1 chapitre **maîtrisé** (étoile ≥ 3) ; médiane de l'étoile des chapitres touchés                                                                        | `/admin/engagement` (lot 3)                                                                 | référence à établir au lot 3 (aucun chiffre n'existe)                             |
+| **KPI-1** | **Zéro régression affichée** : aucun statut acquis (étoile, sceau, « maîtrisé ») ne disparaît d'un écran après une application de contenu                                             | pgTAP (invariant sur décor), + compteur **« étoiles préservées »** (grand livre > vivant) sur `/admin/engagement` | 0 régression ; le compteur est la preuve visible que la promesse a servi           |
+| **KPI-2** | Part des actifs 30 j ayant ≥ 1 chapitre **maîtrisé** (étoile 4, Q-2) ; **médiane de l'étoile** des chapitres touchés — c'est elle qui dira si la barre est au bon endroit                                                                        | `/admin/engagement` (lot 3)                                                                 | référence à établir au lot 3 (aucun chiffre n'existe)                             |
 | **KPI-3** | Part des actifs 30 j ayant ≥ 1 **sceau** ; délai médian premier sceau                                                                                                                | `/admin/engagement`                                                                         | référence à établir — attendu faible en cours d'année (les sceaux sont **larges**) |
 | **KPI-4** | **Garde** (é31 R-1) : précision moyenne et médiane des tentatives ne baissent pas après le lot 2                                                                                     | `/admin/engagement` (existant)                                                              | ≥ niveau d'avant (une étoile ne doit pas inciter à expédier — d'où R-3)            |
-| **KPI-5** | « 3/20 » ne se reproduit pas : aucun signalement de lecture erronée de la couverture (`bug_reports`, retour propriétaire)                                                            | triage `report-triage` ; STATUS §6                                                          | 0 sur les 60 jours suivant le lot 3                                               |
+| **KPI-5** | « 3/20 » ne se reproduit pas : aucun signalement de lecture erronée de la couverture (`bug_reports`, retour propriétaire). ⚠️ Q-2 ayant gardé la barre à l'étoile 4, ce n'est PAS la définition qui règle la lecture — c'est la **distribution** (barre empilée) et les **gestes** listés | triage `report-triage` ; STATUS §6 | 0 sur les 60 jours suivant le lot 3 |
 
 ### 1.4 Ce que l'epic ne cherche PAS à faire
 
@@ -145,9 +157,9 @@ passage (R-15).
 ```
 mission          ⭐        ⭐⭐        ⭐⭐⭐  ⭐⭐⭐      ⭐⭐⭐⭐          ← la difficulté que le contenu porte déjà
 chapitre         [★]───────[★]─────────[★]─────────────[☆ ✨]            ← 4 étoiles max, une par palier franchi
-                 étoile 1  étoile 2   étoile 3 (maîtrisé)  étoile 4 (terminé) — ici : 3 acquises, la 4ᵉ est une nouveauté
+                 étoile 1  étoile 2   étoile 3 (tous les boss)  étoile 4 (maîtrisé) — ici : 3 acquises, la 4ᵉ est une nouveauté
 matière          Sceau ⭐ ✓ · Sceau ⭐⭐ ✓ · prochain : ⭐⭐⭐ (14/20 chapitres prêts, dont 1 nouveau)
-effort           42 missions réussies · 1 240 XP · 18 chapitres commencés · 5 terminés   ← ça ne descend jamais
+effort           42 missions réussies · 1 240 XP · 18 chapitres commencés · 5 maîtrisés   ← ça ne descend jamais
 ```
 
 - **Étoile r d'un chapitre** = toutes les missions de catalogue de difficulté **≤ r** sont
@@ -156,7 +168,7 @@ effort           42 missions réussies · 1 240 XP · 18 chapitres commencés ·
 - **Sceau r d'une matière** = **tous** ses chapitres publiés ont l'étoile r. Inscrit, jamais
   retiré.
 - **Nouveauté ✨** = une mission (ou un chapitre, ou un quiz) arrivée **après** ce que l'élève
-  avait acquis là. Elle explique pourquoi une jauge « terminée » a un cran de plus.
+  avait acquis là. Elle explique pourquoi une jauge **complète** a soudain un cran de plus.
 
 ### 2.2 Analyse comparative — quel modèle de progression ?
 
@@ -182,9 +194,9 @@ perçue** (paliers atteignables, jamais retirés), **autonomie** (aucun ordre im
 (promesse) · **admin** (mesure) · **auteur de contenu** (aucune action nouvelle : le pipeline
 émet, la date se pose seule).
 
-- **US-1 — Le chapitre qui grandit.** J'avais « Terminé ✓ » sur *Théorème de Thalès* ; une
+- **US-1 — Le chapitre qui grandit.** J'avais « Maîtrisé ✓ » sur *Théorème de Thalès* ; une
   campagne ajoute une mission ⭐⭐⭐. À ma prochaine visite le chapitre affiche **toujours**
-  « Terminé ✓ », plus un cran nouveau avec **✨ 1 nouvelle mission ⭐⭐⭐** ; ma matière garde
+  « Maîtrisé ✓ », plus un cran nouveau avec **✨ 1 nouvelle mission ⭐⭐⭐** ; ma matière garde
   son sceau ; rien n'a baissé nulle part. Quand je réussis la nouvelle mission, la ✨ s'éteint
   et le cran s'allume.
 - **US-2 — L'élève de milieu d'année.** J'ai le quiz et la mission ⭐ des 12 premiers
@@ -195,21 +207,24 @@ perçue** (paliers atteignables, jamais retirés), **autonomie** (aucun ordre im
   résultat célèbre l'étoile du chapitre **puis** le **Sceau ⭐ de Mathématiques 9ᵉ** (modale,
   confettis, son) ; le badge *Premier sceau* tombe. Le sceau reste dans ma collection, daté,
   même l'an prochain.
-- **US-4 — L'élève qui pousse.** Mon chapitre est **★★★☆** : je sais qu'il me manque le défi
-  élite ⭐⭐⭐⭐ pour « Terminé », et que **maîtrisé** (★★★) est déjà acquis — le parent le lit
-  pareil. Rien ne m'oblige ; l'étoile 4 est un dépassement, comme le Rappel.
+- **US-4 — L'élève qui pousse.** Mon chapitre est **★★★☆** : ma jauge montre trois étoiles
+  acquises et me dit en une ligne ce qui donne la quatrième (« le défi élite ⭐⭐⭐⭐ »). Les
+  trois premières sont à moi pour toujours ; la quatrième est celle qui fait dire
+  **maîtrisé** (Q-2) — un objectif nommé, jamais une obligation, et jamais un verrou.
 - **US-5 — Le chapitre qui n'a que deux missions.** *Repérage* n'a que ⭐ et ⭐⭐ : sa jauge
-  a **deux crans**, pas quatre ; les deux réussis, il est **Terminé ✓**. Si un boss arrive
-  un jour, la jauge gagne un cran ✨ et le « Terminé ✓ » reste.
+  a **deux crans**, pas quatre ; les deux réussis, il est **Maîtrisé ✓**. Si un boss arrive
+  un jour, la jauge gagne un cran ✨ et le « Maîtrisé ✓ » reste.
 - **US-6 — L'élève dont le parent crée des missions.** Les missions de ma famille
   apparaissent dans le chapitre sur leur propre ligne « Missions de la famille 1/2 » : elles
   me rapportent des XP, elles ne touchent ni mes étoiles ni mon sceau — et mon parent ne peut
   pas non plus me les « retirer » en en ajoutant.
-- **US-7 — Le parent.** La colonne « Programme » ne dit plus « 3/20 » : elle montre la
-  distribution des 20 chapitres par étoile (barre empilée), **« 12 maîtrisés · 5 terminés »**,
-  et sous la matière, les chapitres les plus proches de leur **prochaine étoile** avec le geste
-  exact (« refaire le quiz posément », « 1 mission ⭐⭐ »). Après une campagne, ce tableau ne
-  recule pas ; il gagne une ligne « ✨ 1 chapitre ajouté ».
+- **US-7 — Le parent.** La colonne « Programme » ne dit plus « 3/20 » tout court : elle
+  montre la **distribution** des 20 chapitres par étoile (barre empilée 0→4) au-dessus du
+  compte **« 5 maîtrisés sur 20 »** — la barre dit d'un coup d'œil que les quinze autres ne
+  sont pas à zéro, ce que le seul ratio taisait. Sous la matière, les chapitres les plus
+  proches de leur **prochaine étoile**, avec le geste exact (« refaire le quiz posément »,
+  « 1 mission ⭐⭐ »). Après une campagne, ce tableau ne recule pas ; il gagne une ligne
+  « ✨ 1 chapitre ajouté ».
 - **US-8 — L'anonyme.** Sur le hub public, la jauge de chaque chapitre est vide et les sceaux
   sont gris : « Connecte-toi pour garder tes étoiles ». Rien ne se calcule sans compte ; rien
   n'est verrouillé de plus (é22 R-5/US-8).
@@ -225,10 +240,13 @@ perçue** (paliers atteignables, jamais retirés), **autonomie** (aucun ordre im
 #### Vocabulaire & périmètre
 
 - **R-1 (vocabulaire — normatif, i18n)** : **étoile(s) de chapitre** (1 à 4) · **sceau de
-  matière** (⭐ à ⭐⭐⭐⭐) · **nouveauté ✨** · **terminé** (chapitre : toutes les étoiles
-  présentes) · **maîtrisé** (chapitre : étoile ≥ 3 — registre parent) · **réussie / maîtrisée**
-  pour une mission (é22 R-14, inchangé). EN : *chapter stars · subject seal · new · finished ·
-  mastered* ; AR : **نجوم الفصل · ختم المادة · جديد · مكتمل · متقَن**. Interdits : « niveau »
+  matière** (⭐ à ⭐⭐⭐⭐) · **nouveauté ✨** · **maîtrisé** (chapitre : **toutes** les étoiles
+  présentes — Q-2, arbitrée ; c'est le SEUL mot de verdict, à l'écran comme au rapport) ·
+  **réussie / maîtrisée** pour une mission (é22 R-14, inchangé — le contexte lève l'ambiguïté :
+  une mission se réussit, un chapitre se maîtrise). EN : *chapter stars · subject seal · new ·
+  mastered* ; AR : **نجوم الفصل · ختم المادة · جديد · متقَن**. Aucune étoile intermédiaire n'a
+  de mot de verdict : l'étoile 3 se lit « tous les boss », dans la légende de la jauge, jamais
+  dans un compteur. Interdits : « niveau »
   pour une étoile (é22 R-27), « palier » (réservé à l'avatar, `dashboard.avatarTierLabel`),
   « rang » (classement), « or / platine / diamant » (ligue é31 R-14), et toute formule de
   perte (« tu as perdu », « régression », « en retard »).
@@ -252,8 +270,18 @@ perçue** (paliers atteignables, jamais retirés), **autonomie** (aucun ordre im
   l'ordre (r ⇒ r−1). Un cran de difficulté **absent** du chapitre est **franchi par vacuité**
   (D-3) : un chapitre ⭐ · ⭐⭐ entièrement réussi a ses 4 étoiles ; un chapitre ⭐⭐⭐ · ⭐⭐⭐⭐
   reçoit directement l'étoile 3 au premier boss réussi.
-- **R-5 (lecture)** : **terminé** ⇔ étoile 4 ; **maîtrisé** ⇔ étoile ≥ 3 ; **commencé** ⇔
-  ≥ 1 tentative (quiz compris) dans le chapitre.
+- **R-5 (lecture — Q-2, arbitrée le 2026-09-14, CONTRE la recommandation)** : **maîtrisé**
+  ⇔ étoile 4, c'est-à-dire **toutes** les missions de catalogue réussies, quiz compris.
+  Le brouillon distinguait « terminé » et « maîtrisé » ; il n'en reste qu'un, et **c'est
+  « maîtrisé »** — un libellé par langue, partout.
+  **Commencé** ⇔ ≥ 1 tentative (quiz compris) dans le chapitre. Aucun seuil intermédiaire ne
+  porte de verdict.
+  ⚠️ **Conséquence, dite franchement** : la barre de la couverture parentale ne bouge pas d'un
+  cran — le « 3/20 » du 2026-09-04 resterait « 3/20 maîtrisés ». Ce que l'étude change là
+  n'est pas la barre, c'est (a) qu'elle ne redescend plus jamais, (b) que la distribution
+  montre les étoiles déjà acquises sur les dix-sept autres chapitres, et (c) que le geste
+  manquant est nommé. La lisibilité vient de ce qu'on montre **à côté** du ratio, pas d'un
+  ratio plus flatteur.
 - **R-6 (monotonie — la règle qui fonde l'étude)** : une étoile ou un sceau atteint est
   **inscrit au grand livre** (`user_chapter_stars`, `user_subject_seals`) à l'instant où le
   fait se produit, et **n'en sort jamais** — ni par l'ajout de contenu, ni par une suppression
@@ -269,8 +297,8 @@ perçue** (paliers atteignables, jamais retirés), **autonomie** (aucun ordre im
 - **R-8 (la jauge)** : autant de crans que de niveaux de difficulté **présents** dans le
   chapitre (1 à 4, jamais 0 — un chapitre non publié n'a pas de jauge) ; un cran est **allumé**
   si l'étoile correspondante est au grand livre ; un cran présent non allumé porte `n/m`
-  missions comptées ; un cran arrivé après une étoile porte ✨. **« Terminé ✓ »** se lit au
-  grand livre (étoile 4) et devient « Terminé ✓ · ✨ n nouveauté(s) » si le vivant a grandi.
+  missions comptées ; un cran arrivé après une étoile porte ✨. **« Maîtrisé ✓ »** se lit au
+  grand livre (étoile 4) et devient « Maîtrisé ✓ · ✨ n nouveauté(s) » si le vivant a grandi.
   Légende accessible partout (« Gagne la 3ᵉ étoile en réussissant toutes les missions jusqu'à
   ⭐⭐⭐ »).
 
@@ -283,7 +311,7 @@ perçue** (paliers atteignables, jamais retirés), **autonomie** (aucun ordre im
   chapitres publiés, vivant) **et** « dont n nouveaux » quand des chapitres ✨ existent —
   c'est la seule fraction de l'étude, et elle nomme ce qui l'a fait bouger.
 - **R-10 (effort — jamais un pourcentage)** : par matière, **missions réussies** (comptées,
-  distinctes), **XP gagnés**, **chapitres commencés** et **terminés**. Des compteurs qui
+  distinctes), **XP gagnés**, **chapitres commencés** et **maîtrisés**. Des compteurs qui
   montent (une purge de contenu peut les faire baisser — assumé, marginal, jamais un statut).
 - **R-11 (aucune récompense d'économie)** : ni XP ni pièces pour une étoile, un sceau ou un
   badge de cette étude (é22 R-28 → é09 ; D-10). Trois badges, famille `maitrise` (é31 R-13 :
@@ -299,8 +327,10 @@ perçue** (paliers atteignables, jamais retirés), **autonomie** (aucun ordre im
 #### Le parent, l'anonyme, l'admin
 
 - **R-13 (le parent lit le même grand livre)** : colonne « Programme » = distribution des
-  chapitres publiés par étoile (barre empilée 0 → 4) + **« m maîtrisés · t terminés »** ;
-  « ce qui manque » = par chapitre non terminé, la **prochaine étoile** et le geste qui la
+  chapitres publiés par étoile (barre empilée 0 → 4) **au-dessus** du compte
+  **« m maîtrisés sur N »** (m = étoile 4, R-5) — c'est la barre qui empêche de lire le ratio
+  comme un verdict, et c'est pour ça qu'elle passe devant ;
+  « ce qui manque » = par chapitre non maîtrisé, la **prochaine étoile** et le geste qui la
   donne (« quiz à refaire posément » · « n missions ⭐⭐ »), le plus proche d'abord ; après
   une campagne, une ligne « ✨ n chapitre(s) / mission(s) ajouté(s) ». Une matière sans
   chapitre publié affiche « — » (inchangé).
@@ -319,15 +349,19 @@ perçue** (paliers atteignables, jamais retirés), **autonomie** (aucun ordre im
 - **R-17 (i18n)** : toute chaîne naît FR/EN/AR ; RTL vérifié au rendu (la jauge se remplit
   de droite à gauche en AR) ; chiffres occidentaux ; les chaînes vivent dans un **catalogue
   paresseux `progress/`** (règle du budget i18n, `scripts/check-bundle-budget.mjs`).
-- **R-18 (mesure)** : `/admin/engagement` publie la distribution des étoiles par actif, les
-  sceaux par actif, et **« étoiles préservées »** ; KPI-E de é31 (`chapters_per_active`)
-  devient « chapitres **maîtrisés** (étoile ≥ 3) par actif », série **datée** (rupture
-  assumée, écrite dans STATUS §1bis et dans la console).
+- **R-18 (mesure)** : `/admin/engagement` publie la distribution des étoiles par actif (dont
+  la **médiane**, le chiffre de contrôle de Q-2), les sceaux par actif, et **« étoiles
+  préservées »**. KPI-E de é31 (`chapters_per_active`) **garde sa définition** — Q-2 ayant
+  maintenu la barre à « toutes les missions » — et gagne seulement la monotonie : c'est
+  désormais le grand livre qui le compte. **Pas de rupture de série** ; seul le durcissement
+  R-3 peut en retirer un cas marginal, borné par le grand-père R-15. La console porte une note
+  datée disant ce qui a changé sous le chiffre.
 - **R-19 (compétences — orthogonales)** : une étoile ne se déduit jamais d'une croyance
   BKT (é30) ni d'une maîtrise EWMA (é07), et réciproquement ; le hub parle d'étoiles, le
   tableau de bord parle de compétences ; une étoile **ne se dégrade pas par l'oubli** — la
   révision est le métier de SM-2, de la frontière et de la Révision du jour. Un chapitre
-  ★★★ avec une compétence « fragile » est un état normal, pas une contradiction.
+  ★★★★ avec une compétence « fragile » est un état normal, pas une contradiction : l'un dit
+  ce qui a été fait, l'autre ce qui est su.
 - **R-20 (niveau de héros — inchangé)** : XP/200, sept classes, `avatar_tier` : rien ne
   bouge. L'**échelle nommée** (GAP-037, lot 5) est une **peau** : un nom + une mini-biographie
   par niveau 1..50, trilingue, contenu hors ligne relu (P-5c) ; au-delà de 50, le numéro seul.
@@ -472,7 +506,7 @@ puis `GRANT EXECUTE TO authenticated` seulement pour les deux RPC élève ; les 
      "subjectId": "math",
      "seals": [{ "star": 1, "reachedAt": "…" }, { "star": 2, "reachedAt": "…" }],
      "nextSeal": { "star": 3, "chaptersReady": 14, "chaptersTotal": 20, "newChapters": 1 }, // null au-delà de 4
-     "effort": { "missionsCounted": 42, "xp": 1240, "chaptersStarted": 18, "chaptersFinished": 5 },
+     "effort": { "missionsCounted": 42, "xp": 1240, "chaptersStarted": 18, "chaptersMastered": 5 },
      "chapters": [{
        "chapterId": "…", "star": 3, "starLive": 2, "finished": false, "isNew": false,
        "quiz": { "gated": true, "cleared": true, "isNew": false },
@@ -503,7 +537,8 @@ puis `GRANT EXECUTE TO authenticated` seulement pour les deux RPC élève ; les 
    décor reste, étendue aux étoiles.
 10. **`admin_engagement_overview`** — + `stars_distribution` (chapitres touchés par étoile
     0..4, actifs 30 j), `seals_per_active`, `stars_preserved` (lignes du grand livre dont
-    `star > chapter_star_live`), et `chapters_per_active` redéfini sur l'étoile ≥ 3 (R-18).
+    `star > chapter_star_live`), et `chapters_per_active` **recompté sur le grand livre** —
+    définition inchangée (Q-2), donc série continue (R-18).
     Substitution **par script** sur la révision vivante (L-3), jamais retapée.
 11. **Rejeu initial** (R-15) — bloc `DO $$ … $$` dans la migration des tables : pour chaque
     (élève, chapitre) avec ≥ 1 tentative classic, inscrit `1..chapter_star_live` datées
@@ -530,7 +565,7 @@ le moteur de contenu (`sql-builder`, `build`).
   (glyphe de sceau ⭐..⭐⭐⭐⭐ + date en tooltip).
 - **Hub** (`src/features/quest/components/subject-hub.tsx`, gabarit Hub — même budget de
   blocs) : bloc d'ancrage + **sceaux et prochain sceau** + ligne d'effort ; accordéon de
-  chapitre : titre + jauge + « Terminé ✓ / ✨ n » ; missions : chips ✓ réussie · 💯 maîtrisée
+  chapitre : titre + jauge + « Maîtrisé ✓ / ✨ n » ; missions : chips ✓ réussie · 💯 maîtrisée
   · ✨ nouvelle · ○, ligne « Missions de la famille n/m » quand il y en a ; anonyme : R-16.
   Composants dédiés `chapter-stars.tsx`, `subject-seals.tsx` dans `quest/components/`.
 - **Carte** (`src/features/parcours/journey.ts`, `journey-map.tsx`, `path-node.tsx`) :
@@ -549,10 +584,11 @@ le moteur de contenu (`sql-builder`, `build`).
   trois glyphes (le test GLYPHS ↔ migrations l'exige).
 - **Parent** (`src/features/parent-report/components/daily-insights.tsx` `CoverageCell`,
   `report-content.tsx`, `insights/chapter-gaps.ts`, `insights/daily-report.ts`) : barre
-  empilée + « m maîtrisés · t terminés », gaps par prochaine étoile, ligne ✨ ; catalogue
+  empilée + « m maîtrisés sur N », gaps par prochaine étoile, ligne ✨ ; catalogue
   `parent/` pour les chaînes parent (déjà paresseux).
-- **Admin** (`engagement-admin.tsx`, `engagement.server.ts`) : trois tuiles + note de rupture
-  de série datée.
+- **Admin** (`engagement-admin.tsx`, `engagement.server.ts`) : trois tuiles (distribution et
+  **médiane** des étoiles, sceaux par actif, étoiles préservées) + note datée disant que
+  `chapters_per_active` garde sa définition et change de source (le grand livre).
 - **« Ta semaine »** (`weekly-recap-card.tsx`) : une ligne « n étoiles · s sceaux cette
   semaine » lue dans le grand livre (dates) — sans récompense (é31 R-18).
 
@@ -646,10 +682,10 @@ Aucune variable d'env, aucun service. `docs/environment-variables.md` inchangé.
 | Texte      | Avant                                                                  | Après (cette étude)                                                                                 |
 | ---------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | é22 R-14   | réussie ≥ 60 % (durée ignorée) ; maîtrisée 100 % non précipité         | inchangé pour la **récompense** ; pour une **étoile**, R-3 exige en plus « non précipitée »          |
-| é22 R-15   | chapitre complété = quiz + **toutes** les missions réussies            | **terminé** = étoile 4 (même contenu, mais monotone et vacuité assumée) ; **maîtrisé** = étoile ≥ 3 |
-| é22 R-16   | progression = chapitres complétés / publiés (%), métrique officielle   | métrique officielle = **distribution des étoiles** + sceau ; le % disparaît des écrans (R-9, R-13)  |
+| é22 R-15   | chapitre complété = quiz + **toutes** les missions réussies            | **maîtrisé** = étoile 4 : **même contenu** (Q-2), mais monotone, vacuité assumée et non précipité |
+| é22 R-16   | progression = chapitres complétés / publiés (%), métrique officielle   | métrique officielle = **distribution des étoiles** + sceau ; le % nu disparaît des écrans (R-9, R-13) |
 | é22 D-4    | la complétion se calcule, ne se stocke pas                             | les **acquis** se stockent (grand livre), le **reste-à-faire** se calcule (D-1)                     |
-| é31 KPI-E  | chapitres complétés / actif                                            | chapitres **maîtrisés** (étoile ≥ 3) / actif, série datée (R-18)                                    |
+| é31 KPI-E  | chapitres complétés / actif                                            | **définition inchangée** (Q-2), comptée sur le grand livre : monotone, série continue (R-18) |
 | arena#987  | gaps = missions manquantes vers « complet »                            | gaps = manques vers la **prochaine étoile**, même fonction, deux colonnes de plus                    |
 
 ### 3.9 Ce que l'étude réutilise sans y toucher
@@ -675,11 +711,11 @@ le lot 5 est indépendant et **optionnel**.
 | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
 | 1   | **La règle et le grand livre** : `created_at`, deux tables + RLS/grants, fonctions 1→11, rejeu initial, doc normative                                             | migrations additives (colonnes · tables · fonctions · trigger · rejeu), `docs/etoiles-et-sceaux.md`, ARCHITECTURE.md §8, `types.ts` régénéré                                                                          | pgTAP : R-3/R-4 sur les 6 échelles réelles (vacuité comprise), quiz gate, parent/recall/précipité exclus, monotonie (injection → grand livre intact, vivant baisse, ✨), sceau, rejeu = trigger sur même décor, grand-père, RLS/grants, gaps ⇔ étoiles sur même décor | —         |
 | 2   | **Le hub matière** : jauge, sceaux, effort, états de mission, ✨, famille, anonyme ; catalogue `progress/` ; retrait de `chapter-completion.ts`                     | `star-gauge.tsx`, `seal-mark.tsx`, `chapter-stars.tsx`, `subject-seals.tsx`, `subject-hub.tsx`, `quest.server.ts`, `next-action.ts`, `i18n/progress/*`, `check-bundle-budget.mjs`, `vite.config.ts`, lexique §2 | Vitest : jauge (crans variables, RTL, ✨), états, anonyme, i18n 3 langues complet, next-action inchangé ; e2e : hub connecté montre une étoile ; `smoke:shell`                                        | 1         |
-| 3   | **La carte, le QG, le parent, l'admin** : `done` = sceau 4, cartes matières, colonne Programme empilée + gaps par étoile, KPI-E redéfini + 3 tuiles, docs         | `journey.ts`, `journey-map.tsx`, `dashboard.tsx`, `dashboard.server.ts`, `daily-insights.tsx`, `report-content.tsx`, `chapter-gaps.ts`, `daily-report.ts`, `engagement-admin.tsx`, `suivi-parental-quotidien.md`, STATUS §3/§1bis | Vitest : journey sans %, cartes, CoverageCell, gaps ; pgTAP : `admin_engagement_overview` (tuiles, `stars_preserved`), non-régression des specs parent ; `build:check` (budget dashboard)             | 1         |
+| 3   | **La carte, le QG, le parent, l'admin** : `done` = sceau 4, cartes matières, colonne Programme empilée + gaps par étoile, KPI-E recompté sur le grand livre + 3 tuiles, docs         | `journey.ts`, `journey-map.tsx`, `dashboard.tsx`, `dashboard.server.ts`, `daily-insights.tsx`, `report-content.tsx`, `chapter-gaps.ts`, `daily-report.ts`, `engagement-admin.tsx`, `suivi-parental-quotidien.md`, STATUS §3/§1bis | Vitest : journey sans %, cartes, CoverageCell, gaps ; pgTAP : `admin_engagement_overview` (tuiles, `stars_preserved`), non-régression des specs parent ; `build:check` (budget dashboard)             | 1         |
 | 4   | **Célébrer et collectionner** : delta après résultat, bloc étoile, modale sceau, 3 badges, section Sceaux, 2 événements produit, ligne « Ta semaine »             | `getAttemptProgress`, `quest-result-screen.tsx`, `exercise-player.tsx`, `seal-celebration.tsx`, migrations badges (seed + trigger), `badges.ts`, `i18n/badges/*`, `badge-medal.tsx`, `badge-collection.tsx`, `product-events.ts`, `weekly-recap-card.tsx` | pgTAP : chaque badge décerné (87 structurel passe), idempotence, delta exact ; Vitest : ordre des blocs, une modale max, reduced-motion, GLYPHS ↔ migrations, événements ; e2e : première étoile célébrée | 1, 2      |
 | 5   | **(optionnel, Q-4) L'échelle nommée des 50 niveaux** (GAP-037) : noms + mini-bios FR/EN/AR, level-up et en-têtes                                                  | `i18n/hero-levels/*` (chunk `i18n-hero-levels-`), `level-up-celebration.tsx`, `hero-stat-chips.tsx`, `journey-header.tsx`                                                                                            | Vitest : 50 × 3 langues complets, alternance arabe / non-arabe, niveau > 50 → numéro seul, aucun changement de courbe ; `build:check`                                                                  | —         |
 
-- [ ] **Lot 1 — La règle et le grand livre.** R-2…R-9, R-15, D-1…D-8. Migration(s)
+- [x] **Lot 1 — La règle et le grand livre.** R-2…R-9, R-15, D-1…D-8. Migration(s)
       additives uniquement ; `student_parcours_progress` redéfinie **sans changer de
       signature** ; `admin_engagement_overview` **non touchée** (lot 3). **Stop-points** :
       aucune UI ; aucun badge (lot 4) ; ne pas éditer `submit_exercise_attempt` ; la
@@ -697,7 +733,7 @@ le lot 5 est indépendant et **optionnel**.
 - [ ] **Lot 3 — La carte, le QG, le parent, l'admin.** US-7, US-9, R-9, R-13, R-18, D-5,
       D-11. **Stop-points** : `resolveNextAction` ne change ni d'ordre ni de priorité ; le
       chunk `dashboard` ne dépasse pas son budget (remplacer, pas ajouter — sinon STOP et
-      proposer le découpage) ; la rupture de série KPI-E est **écrite** (STATUS §1bis + note
+      proposer le découpage) ; la note de continuité KPI-E est **écrite** (STATUS §1bis + note
       dans la console) le jour du merge ; aucun push.
 - [ ] **Lot 4 — Célébrer et collectionner.** US-3, US-4, R-11, R-12, D-7, D-10.
       **Stop-points** : trois badges, pas un de plus ; aucune XP/pièce ; une seule modale par
@@ -723,7 +759,7 @@ le lot 5 est indépendant et **optionnel**.
   lot 3 : `admin_engagement_overview` (tuiles, `stars_preserved`) ; lot 4 : badges (87
   structurel + conditions + idempotence + `awarded_reason`).
 - **Vitest (co-localisés)** : `star-gauge` (crans variables, allumé/présent/✨, RTL, aria) ;
-  `chapter-stars` / `subject-seals` (états, anonyme, copy « Terminé ✓ · ✨ n ») ; `journey`
+  `chapter-stars` / `subject-seals` (états, anonyme, copy « Maîtrisé ✓ · ✨ n ») ; `journey`
   (plus aucun `%`, `done` = sceau 4) ; `CoverageCell` (barre empilée, « — » sans chapitre) ;
   `chapter-gaps` (prochaine étoile, geste) ; `next-action` (**inchangé** : mêmes 4 priorités,
   mêmes cas) ; `seal-celebration` (une seule, reduced-motion) ; i18n : trois langues
@@ -746,19 +782,21 @@ le lot 5 est indépendant et **optionnel**.
   (jusqu'à 4 jalons par chapitre, célébrés), la barre « k/N chapitres prêts », la ligne « Ta
   semaine », et KPI-3 qui **mesure** le délai au premier sceau — si la médiane dépasse un
   trimestre, l'extension « sceaux par domaine » (§2.6) est la réponse, pas un abaissement.
-- **RISK-2 — La vacuité déroute** (« Terminé ✓ » avec deux crans) : mitigation D-3 (jauge à
+- **RISK-2 — La vacuité déroute** (« Maîtrisé ✓ » avec deux crans) : mitigation D-3 (jauge à
   crans présents seulement), légende partout, et pgTAP sur les échelles réelles. Si un
   signalement le montre mal lu, le copy change, pas la règle.
 - **RISK-3 — Grand livre et vivant divergent sans explication** : mitigation R-7/R-8 — toute
   divergence est **nommée** par ✨ au cran, au chapitre et à la matière ; test dédié sur la
-  copy « Terminé ✓ · ✨ n ».
+  copy « Maîtrisé ✓ · ✨ n ».
 - **RISK-4 — Budgets de bundle** (`dashboard` 34,4/36 KB, `i18n-` 186/188 KB) : mitigation —
   catalogue paresseux obligatoire (R-17), remplacement à iso-poids sur le QG, `build:check`
   dans chaque lot ; un dépassement est un STOP, pas un relèvement silencieux.
-- **RISK-5 — Rupture des séries** (KPI-E, colonne parent) : mitigation — « terminés » garde
-  l'ancienne sémantique (désormais monotone) à côté de « maîtrisés » ; la date de rupture est
-  écrite dans STATUS §1bis et dans la console ; aucune comparaison avant/après n'est
-  présentée comme continue.
+- **RISK-5 — Rupture des séries** (KPI-E, colonne parent) : **largement éteint par Q-2** — la
+  barre ne bouge pas, donc la série reste comparable. Restent deux effets bornés, et tous deux
+  vont dans le bon sens : le grand livre ne redescend plus (une valeur passée pouvait baisser
+  sans que personne le sache), et R-3 retire les réussites précipitées (grand-père R-15 : rien
+  n'est repris à un élève existant). Mitigation : note datée dans la console et dans STATUS
+  §1bis, et le compteur « étoiles préservées » qui rend l'écart lisible plutôt que mystérieux.
 - **RISK-6 — Le trigger alourdit la soumission** : requête bornée (≤ 9 missions, index
   existants), vérification de sceau seulement quand une étoile tombe ; mesure par le logger
   de `getAttemptProgress` et par la latence de `submit` déjà journalisée ; si > 100 ms au p95,
@@ -775,35 +813,107 @@ le lot 5 est indépendant et **optionnel**.
 
 ## 7. Questions ouvertes (pour l'humain)
 
-- **Q-1 — Le vocabulaire.** « étoiles de chapitre » + « sceau de matière » sur l'échelle ⭐
-  du contenu (D-9), avec les quatre paliers nommés **socle · pratique · boss · élite** dans la
-  légende ? Recommandation : **oui** — une seule échelle, celle que les titres de missions
-  portent déjà, trilingue par construction ; les alternatives (métaux, lettres, noms de
-  classe) entrent toutes en collision avec un vocabulaire existant.
-- **Q-2 — Le mot du parent.** « **maîtrisé** » = étoile ≥ 3 (tous les boss réussis, l'élite
-  restant un dépassement) — c'est ce qui aurait dit « 12/20 » au lieu de « 3/20 » le
-  2026-09-04 ; « **terminé** » = étoile 4 reste affiché à côté. Recommandation : **oui**,
-  conforme à la doctrine du contenu (« core progression at 1–2, reserve 3–4 »). Alternative :
-  maîtrisé = étoile 4 (statu quo sémantique, monotone désormais).
-- **Q-3 — Une récompense d'économie ?** Recommandation : **aucune** (D-10) — reconnaissance,
-  célébration, collection ; é09 pourra attacher une valeur plus tard, mesurée. Si oui : la
-  valeur entre au §3.10 et dans `/admin/economie` avant le code.
-- **Q-4 — L'échelle nommée des 50 niveaux (GAP-037, lot 5).** La commander maintenant (elle
-  attend une **liste** : 50 savants en alternance arabe / non-arabe, trois langues, mini-bios
-  relues — un travail de contenu, à produire au dépôt privé puis compilé dans un chunk
-  paresseux) ou la laisser au backlog ? Recommandation : **la commander comme lot 5,
-  optionnel et dernier** — elle sert l'axe « effort » sans toucher au calcul, et le lot est
-  borné ; la liste peut être rédigée par une session de contenu pendant les lots 1-4.
-- **Q-5 — Les missions de la famille.** Confirmer qu'elles restent **hors** étoiles et
-  sceaux (R-2), sur leur propre ligne, avec XP — et que la même règle vaudra pour toute
-  source future (élève, IA) ? Recommandation : **oui** — c'est la seule façon que les étoiles
-  restent comparables et qu'aucun tiers ne puisse en donner ni en retirer.
+> **Section arbitrée le 2026-09-14 (Mohamed), les cinq questions posées une par une.** Quatre
+> décisions suivent la recommandation ; **Q-2 va contre**, et c'est celle qui change le plus
+> l'étude — en la simplifiant. Aucune question n'est plus ouverte : l'étude passe `validée`.
+
+- **Q-1 — Le vocabulaire.** « étoiles de chapitre » + « sceau de matière » sur l'échelle ⭐ du
+  contenu (D-9), paliers nommés **socle · pratique · boss · élite** dans la légende ?
+  Recommandation : oui — une seule échelle, celle que les titres de missions portent déjà ; les
+  alternatives (métaux, lettres, noms de classe) entrent toutes en collision avec un vocabulaire
+  existant (ligue or/platine/diamant, `s_rank`, classes de héros).
+  **✅ Arbitrage : recommandation retenue.** R-1 et D-9 sont fermes ; l'i18n de §2.5 est le
+  contrat.
+- **Q-2 — Le mot du parent.** « maîtrisé » = étoile ≥ 3 (tous les boss, l'élite en dépassement)
+  ou = étoile 4 (toutes les missions) ? Recommandation : ≥ 3, conforme au « core progression at
+  1–2, reserve 3–4 » de la doctrine de contenu.
+  **❌ Arbitrage : CONTRE la recommandation — « maîtrisé » = étoile 4**, toutes les missions
+  réussies, quiz compris. Un chapitre n'est maîtrisé que lorsqu'il n'y reste rien à faire.
+  **Ce que cela change** (répercuté dans R-1, R-5, R-13, R-18, R-19, KPI-2, KPI-5, §2.1, US-4,
+  US-7, §3.3, §3.8, RISK-5) : (a) « terminé » et « maîtrisé » deviennent un seul mot, donc un
+  seul libellé par langue ; (b) **la barre de la couverture parentale ne bouge pas** — le
+  « 3/20 » du 2026-09-04 resterait « 3/20 maîtrisés », et la lisibilité vient de la
+  **distribution** affichée au-dessus et des **gestes** nommés dessous, pas d'un seuil plus
+  doux ; (c) **KPI-E de é31 garde sa définition** : sa série reste continue et RISK-5 s'éteint
+  presque entièrement ; (d) l'étoile 3 perd son mot de verdict — elle reste un cran célébré de
+  la jauge.
+  ⚠️ **Ce que l'arbitrage laisse comme risque, et qu'il faut donc mesurer** : la barre reste
+  haute là où le corpus est dense (126 missions sur 20 chapitres en `math` 9ᵉ, dont 22 % de
+  défis élite). C'est **KPI-2** qui le dira, et son chiffre de contrôle n'est plus la part de
+  chapitres maîtrisés mais la **médiane de l'étoile**. Si elle stagne à 2-3 pendant que la
+  pratique monte, c'est que l'élite est hors de portée du plus grand nombre — la question se
+  rouvre alors par amendement de cette étude, pas en silence.
+- **Q-3 — Une récompense d'économie ?** Recommandation : aucune (D-10) — reconnaissance,
+  célébration, collection ; é09 garde la main sur toute valeur.
+  **✅ Arbitrage : aucune récompense.** R-11 et D-10 sont fermes, le registre §3.10 reste
+  **vide**, `gamification.ts` n'est pas touché et `economy:check` n'a rien à rejouer.
+- **Q-4 — L'échelle nommée des 50 niveaux (GAP-037).** La commander en lot 5 optionnel, ou la
+  laisser au backlog ? Recommandation : la commander, dernière et optionnelle.
+  **✅ Arbitrage : commandée — lot 5, optionnel et dernier.** Elle ne démarre que quand la
+  **liste des 50** (savants en alternance arabe / non-arabe, mini-bios trilingues relues) est
+  livrée ; cette liste est un travail de **contenu**, rédigeable au dépôt privé pendant les
+  lots 1-4. Elle ne touche ni la courbe XP/200, ni les sept classes, ni `avatar_tier` (D-12).
+- **Q-5 — Les missions de la famille.** Restent-elles hors étoiles et hors sceaux, avec leur
+  propre ligne et leurs XP, et la règle vaudra-t-elle pour toute source future ?
+  Recommandation : oui — c'est ce qui garde les étoiles comparables entre élèves et empêche
+  qu'un tiers en donne ou en retire.
+  **✅ Arbitrage : oui.** R-2 est ferme et **prospective** : seule `source='admin'` compte pour
+  un jalon, aujourd'hui et pour toute source à venir (élève, IA). Aucune valeur de `source`
+  n'est ajoutée tant qu'aucune source n'existe (P-7).
 
 ## 8. Journal d'exécution
 
 - **2026-09-14 — Création (Fable).** Brouillon ; Q-1…Q-5 ouvertes. Base factuelle : la
   cartographie du code (annexe A, vérifiée sur `main` arena en `31e17e1`) et le comptage du
-  corpus (annexe B, `content/` au tip du privé). Aucun lot commencé.
+  corpus (annexe B, `content/` au tip du privé). Livrée par privé#396 avec sa ligne d'index et
+  son entrée de roadmap ; STATUS §4 du moteur par arena#1033. Aucun lot commencé.
+- **2026-09-14 — Arbitrage (Mohamed), les cinq questions posées une par une.** Statut
+  `brouillon` → **`validée`**. Q-1 ✅ · **Q-2 ❌ contre la recommandation** (« maîtrisé » =
+  étoile 4) · Q-3 ✅ · Q-4 ✅ (lot 5 commandé, optionnel) · Q-5 ✅. Le corps est répercuté dans
+  la foulée, et **Q-2 retire du travail** : plus de second mot à traduire, plus de rupture de
+  série sur KPI-E, RISK-5 presque éteint. Ce que l'arbitrage laisse à surveiller est écrit
+  dans Q-2 : la **médiane de l'étoile** (KPI-2) devient le chiffre de contrôle de la hauteur
+  de barre.
+
+- **2026-09-14 — Lot 1 livré (SQL seul).** Deux migrations : `20260914120000`
+  (`created_at` sur `exercises`/`chapters`, les deux tables du grand livre + RLS/grants, la
+  règle en quatre fonctions, le trigger `AFTER INSERT ON attempts`, le rejeu initial) et
+  `20260914130000` (les lectures : `student_subject_stars`, `student_parcours_progress`
+  redéfinie comme sa projection, `get_subject_progress`, `get_attempt_progress`,
+  `student_chapter_gaps` + 2 colonnes, l'enveloppe du suivi quotidien). Doc normative
+  `docs/etoiles-et-sceaux.md` au moteur, ARCHITECTURE.md §8 et AGENTS.md pointés,
+  `types.ts` régénéré depuis la chaîne (`db:gen-types`).
+  **Tests** : 4 fichiers pgTAP (99 règle · 100 grand livre · 101 sceaux et RPC · 102 rejeu),
+  61 assertions. Suite complète rejouée en local : **105 fichiers, 1494 assertions**, chaîne
+  à **217 migrations sans échec** ; `npm run verify` vert (4 263 tests).
+  **Trois écarts d'exécution, tous assumés et écrits dans les migrations** :
+  1. **Le rejeu est une FONCTION** (`replay_progress_stars`), pas le bloc anonyme que §3.2
+     décrivait. Motif : un `DO $$…$$` n'est rejouable par aucun test, et l'écriture d'une
+     migration dans une table serait restée une promesse sur parole. Le pgTAP 102 la lance
+     sur un décor où le trigger est désactivé et vérifie qu'elle produit **exactement** ce
+     que le trigger aurait produit.
+  2. **`student_chapter_gaps` est DROP puis CREATE**, `CREATE OR REPLACE` refusant un
+     `RETURNS TABLE` différent. Atomique dans la transaction de la migration ; ce n'est pas
+     une migration destructive au sens du DoD §7 (rien n'est perdu, la fonction est recréée
+     deux lignes plus bas) — et le hook pré-commit le confirme, son motif ne vise que
+     `DROP TABLE/COLUMN/CONSTRAINT`.
+  3. **Le lot 1 livre `get_subject_progress` et `get_attempt_progress`**, que le tableau des
+     lots range en lot 1 mais dont l'UI ne viendra qu'aux lots 2 et 4. Elles sont livrées
+     ici parce que le pgTAP 101 en est la preuve : une RPC self-scopée sans test de garde
+     est une surface ouverte qui attend son écran.
+  **Deux choses trouvées à l'exécution, qui ne se déduisaient pas de l'étude** :
+  (a) la **vacuité devait être bornée** — sans la garde « au moins une mission comptée », un
+  chapitre ⭐⭐⭐·⭐⭐⭐⭐ non joué offrait **deux étoiles pour zéro travail**, les crans 1 et 2
+  étant absents. C'est le seul endroit où D-3 avait besoin d'un plancher, et le décor ST-C du
+  pgTAP 99 le tient ; (b) deux propriétés de Postgres rendent un décor de test **infidèle**
+  si on les ignore : `now()` est l'horloge de la TRANSACTION (un contenu « ajouté plus tard »
+  porte la même date, donc aucune nouveauté ✨ n'est détectable) et un `AFTER INSERT FOR EACH
+  ROW` sur un `INSERT` à plusieurs `VALUES` ne se déclenche qu'une fois **toutes** les lignes
+  posées (la première tentative « voit » les suivantes, ce qui n'arrive jamais en production).
+  Les deux sont écrites dans `docs/etoiles-et-sceaux.md` §5.
+  **Ce que le lot n'a PAS touché**, conformément à ses stop-points : aucune UI, aucun badge,
+  aucune récompense, `submit_exercise_attempt` intacte, `admin_engagement_overview` intacte
+  (lot 3), `gamification.ts` intact.
 
 ---
 
@@ -862,11 +972,19 @@ le lot 5 est indépendant et **optionnel**.
 | Chapitres **sans ⭐** / **sans ⭐⭐**                            | **57** (ex. tout `arabic` 9ᵉ hors ch. 01/09) / **35** → la vacuité de D-3 n'est pas un cas d'école                          |
 | Matières les plus denses                                      | `fiqh` 41 ch · 205 missions · `math-bac-math` 19 · 133 · `math` (9ᵉ) 20 · 126 · `math-6eme` 23 · 115                          |
 
-**Exemple chiffré — `math` 9ᵉ (20 chapitres, 126 missions, échelle 1·2·3·3·4 majoritaire)** :
+**Exemple chiffré — `math` 9ᵉ (20 chapitres, 126 missions, échelle 1·2·3·3·4 majoritaire)**,
+lu **sous l'arbitrage Q-2** (maîtrisé = étoile 4) :
 
-| Situation de l'élève                                                | Aujourd'hui (é22)                                   | Avec l'étude                                                                                          |
-| ------------------------------------------------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| quiz + ⭐ + ⭐⭐ + les deux ⭐⭐⭐ réussis sur les 20 chapitres, aucun défi | **0/20 complété**, carte à 0 %, parent « 0/20 »     | 20 chapitres **★★★☆ maîtrisés**, **Sceau ⭐⭐⭐**, parent « 20 maîtrisés · 0 terminé », effort 100 missions |
-| idem + 5 défis élite                                                | 5/20, 25 %                                          | 5 terminés, 15 maîtrisés, sceau ⭐⭐⭐ ; « Prochain sceau ⭐⭐⭐⭐ : 5/20 »                                   |
-| une campagne ajoute une mission ⭐⭐⭐ à 8 chapitres                    | les 5 terminés qui sont touchés **retombent** ; parent baisse | **rien ne baisse** ; 8 chapitres montrent « ✨ 1 nouvelle mission ⭐⭐⭐ » ; « étoiles préservées : 8 » côté admin |
-| un quiz est ajouté à un chapitre scolaire qui n'en avait pas        | **ce** chapitre retombe à « non complété » : la porte se referme rétroactivement | les étoiles restent ; chip « quiz ✨ » ; la porte ne s'applique qu'aux missions **non encore réussies** (é22 R-7 inchangée) |
+| Situation de l'élève                                                     | Aujourd'hui (é22)                                                                | Avec l'étude                                                                                                                                                                                    |
+| ------------------------------------------------------------------------ | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| quiz + ⭐ + ⭐⭐ + les deux ⭐⭐⭐ réussis sur les 20 chapitres, aucun défi | **0/20**, carte à 0 %, parent « 0/20 » — et rien d'autre                        | **0 maîtrisé**, mais 60 étoiles acquises, **Sceau ⭐⭐⭐**, la barre du parent montre 20 chapitres à ★★★☆, l'effort dit 100 missions, et le geste manquant est nommé : « 1 défi ⭐⭐⭐⭐ » |
+| idem + 5 défis élite                                                     | 5/20, 25 %                                                                       | **5 maîtrisés sur 20**, 15 à ★★★☆, sceau ⭐⭐⭐, « Prochain sceau ⭐⭐⭐⭐ : 5/20 chapitres prêts »                                                                                             |
+| une campagne ajoute une mission ⭐⭐⭐ à 8 chapitres                        | les 5 maîtrisés touchés **retombent** ; la colonne du parent baisse              | **rien ne baisse** ; 8 chapitres portent « ✨ 1 nouvelle mission ⭐⭐⭐ » ; côté admin, « étoiles préservées : 8 »                                                                              |
+| un quiz est ajouté à un chapitre scolaire qui n'en avait pas             | **ce** chapitre retombe à « non complété » : la porte se referme rétroactivement | les étoiles restent ; chip « quiz ✨ » ; la porte ne s'applique qu'aux missions **non encore réussies** (é22 R-7 inchangée)                                                                     |
+| une mission est retirée ou renommée par le pipeline                      | ses tentatives partent en cascade : ce qui était réussi n'existe plus nulle part | le grand livre garde les étoiles (`attempt_id` passe à NULL) ; le vivant se réajuste seul                                                                                                       |
+
+⚠️ **Ce que la première ligne dit, et qu'il faut lire en entier** : Q-2 maintient « 0 maîtrisé »
+pour cet élève-là. Ce n'est pas un échec de l'étude, c'est sa **limite assumée** — et c'est
+exactement pourquoi la distribution passe devant le ratio, et pourquoi KPI-2 mesure la médiane
+de l'étoile. Un « 0/20 » posé à côté d'une barre pleine aux trois quarts ne se lit pas comme un
+« 0/20 » seul.
