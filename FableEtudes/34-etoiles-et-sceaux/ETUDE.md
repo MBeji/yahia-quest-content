@@ -724,7 +724,7 @@ le lot 5 est indépendant et **optionnel**.
       plus de **1 %** de grand-pères, STOP et remonter (le durcissement R-3 aurait un coût
       réel). Doc normative `docs/etoiles-et-sceaux.md` (règle, vocabulaire, exemples
       chiffrés, « ce qui n'est pas un verrou ») écrite dans ce lot.
-- [ ] **Lot 2 — Le hub matière.** US-1, US-2, US-5, US-6, US-8, R-1, R-8, R-10, R-16,
+- [x] **Lot 2 — Le hub matière.** US-1, US-2, US-5, US-6, US-8, R-1, R-8, R-10, R-16,
       R-17. **Stop-points** : ne pas toucher la carte, le QG, le parent (lot 3) ; ne pas
       célébrer (lot 4) ; `get_best_scores_by_exercise` reste en base (ses autres lecteurs sont
       à inventorier — si le hub était le dernier, la dépose est une migration **destructive**
@@ -914,6 +914,73 @@ le lot 5 est indépendant et **optionnel**.
   **Ce que le lot n'a PAS touché**, conformément à ses stop-points : aucune UI, aucun badge,
   aucune récompense, `submit_exercise_attempt` intacte, `admin_engagement_overview` intacte
   (lot 3), `gamification.ts` intact.
+
+- **2026-09-14 — Erratum du lot 1 : `get_best_scores_by_exercise` filtre bien la variante.**
+  Le commentaire de `20260914130000` §3 justifie le bloc `missions` de `get_subject_progress`
+  par « cette RPC-là ne filtre PAS la variante (`20260603110000`) », et en tire que le
+  commentaire de `chapter-completion.ts` mentait. **Les deux affirmations sont fausses.** La
+  définition **vivante** de la RPC est `20260714130000` (mode Rappel), qui la ré-émet avec
+  `AND a.variant = 'classic'` : la lecture s'était arrêtée à l'avant-dernière migration qui la
+  porte. La migration étant de l'histoire, elle n'est pas réécrite ; la correction vit dans
+  `docs/etoiles-et-sceaux.md` §5, que le lot 2 sert.
+  **La divergence réelle est plus petite, et elle existe** : `get_best_scores_by_exercise` rend
+  le meilleur score classique **sans regarder la durée**, là où `mission_is_counted` exige en
+  plus `duration_seconds >= total_count × 4` (R-3). Une réussite expédiée à 65 % cochait la
+  mission au hub sans rien donner au grand livre. C'est cet écart-là, et lui seul, que le lot 2
+  supprime en servant `counted`.
+  **Leçon de méthode, à appliquer avant d'écrire une phrase sur le corps d'une fonction vivante** :
+  une RPC vivante n'est pas celle qui porte son nom en premier, c'est la **dernière** qui la
+  ré-émet — `grep -rn '<nom>' supabase/migrations | tail -1`.
+
+- **2026-09-14 — Lot 2 livré (le hub matière).** `arena#1040`. Le hub LIT le grand livre au
+  lieu de le recalculer : `getSubject` appelle `get_subject_progress` (à aller-retour constant,
+  en remplacement de `get_best_scores_by_exercise` **pour cet écran seulement** — la RPC reste
+  en base), et l'écran montre la **jauge** (l'acquis, jamais décroissant), le **compteur de
+  cran** (le reste-à-faire) et **✨** (l'écart entre les deux). Trois lectures qui ne peuvent
+  pas se contredire parce qu'elles ne répondent pas à la même question.
+  **Livré** : `src/shared/lib/progress-stars.ts` (lecture défensive de la charge JSONB +
+  dérivations d'affichage — il ne décide rien), `star-gauge.tsx` et `seal-mark.tsx`
+  (primitives, libellés en props sur le modèle `badge-medal`), `chapter-stars.tsx` et
+  `subject-seals.tsx`, le bloc « état de la matière » (sceaux, prochain sceau, effort en
+  compteurs — jamais un pourcentage), le catalogue i18n **paresseux** `progress/` (fr/en/ar) et
+  son chunk `i18n-progress`, `next-action.ts` passé au vocabulaire du grand livre.
+  **Supprimés** : `chapter-completion.ts` et son test ; `public.subject.chapterComplete` et
+  `public.subject.todo`, devenus morts.
+  **Tests** : 4 297 (+34) — jauge (crans variables, RTL **sans inversion**, ✨, vacuité, chapitre
+  non publié), sceaux, anonyme, i18n trois langues (complétude, substitutions, chiffres
+  occidentaux, mots interdits par R-1), `next-action` (mêmes six priorités, mêmes cas), contrat
+  de `getSubject`. e2e : hub connecté (une mission réussie allume un cran — la chaîne trigger →
+  grand livre → RPC → jauge, bout en bout) et hub public (la forme sans calcul, sans verrou de
+  plus). `verify`, `build:check` (tous budgets OK, `i18n-progress` à **3,67 KB sur 16**) et
+  `smoke:shell` verts.
+  **Quatre écarts d'exécution, tous assumés** :
+  1. **`next-action` change d'entrées, pas de comportement.** `bestByExercise` cède la place à
+     `countedByExercise` + `attemptedByExercise`. Motif : garder un score à re-seuiller aurait
+     laissé deux définitions de « c'est fait » — précisément le défaut que l'étude corrige — et
+     le seul appelant qui résout le rang 5 (le hub) a désormais le verdict du serveur. Les six
+     priorités, l'ordre et les cas sont inchangés, y compris la table de vérité de é30. Effet de
+     bord bienvenu : « terminé » **disparaît** de la fonction, `next === null` le dit déjà.
+  2. **La ligne du quiz a son propre verdict.** La charge ne porte que les missions
+     (`mode <> 'quiz'`), donc `chapters[].quiz.cleared` coche la ligne du quiz. Sans cela un
+     quiz déjà franchi se serait remis à promettre ses XP. La ✨ « quiz » de R-8 n'est en
+     revanche **pas** livrée : la charge ne date pas les quiz. À reprendre au lot 3 si le besoin
+     se confirme — ce serait un champ de plus dans `get_subject_progress`.
+  3. **Le gabarit Hub gagne un bloc**, contre le stop-point « le gabarit garde son budget ».
+     Le bloc « état de la matière » EST la réponse à US-2/R-9/R-10, que le lot commande : le
+     stop-point garde contre l'inflation gratuite, pas contre la spec. Compensations écrites
+     dans `docs/content-voice-and-composition.md` §4 : le ratio `x/y` par chapitre quitte le
+     bandeau (la jauge le remplace à encombrement égal) et le pourcentage de matière ne revient
+     nulle part.
+  4. **`chapterStars.finished` / `finishedWithNew` sont nommées `mastered` / `masteredWithNew`.**
+     Les noms de §2.5 précèdent l'arbitrage Q-2, qui a fait de « maîtrisé » le seul mot de
+     verdict ; garder « finished » aurait remis dans le catalogue le second mot que Q-2 a retiré.
+     Les clés de célébration et de parent de §2.5 ne sont pas livrées ici : elles arriveront avec
+     leur surface (lots 4 et 3), une chaîne qu'aucun composant ne lit étant du code mort (DoD §3).
+  **Ce que le lot n'a PAS touché**, conformément à ses stop-points : la carte, le QG, le suivi
+  parental et l'admin (lot 3) ; aucune célébration ni badge (lot 4) ;
+  `get_best_scores_by_exercise` reste en base ; aucun verrou nouveau, aucune XP, aucune pièce ;
+  le budget `i18n-` app-wide n'a pas été relevé (il a même légèrement baissé, deux clés mortes
+  en moins).
 
 ---
 
