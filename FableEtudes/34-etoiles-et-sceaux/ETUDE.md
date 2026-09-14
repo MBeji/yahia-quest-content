@@ -730,7 +730,7 @@ le lot 5 est indépendant et **optionnel**.
       à inventorier — si le hub était le dernier, la dépose est une migration **destructive**
       → merge séparé, après ce lot, DoD §7) ; aucun relèvement du budget `i18n-` (catalogue
       paresseux obligatoire) ; le gabarit Hub garde son budget de blocs.
-- [ ] **Lot 3 — La carte, le QG, le parent, l'admin.** US-7, US-9, R-9, R-13, R-18, D-5,
+- [x] **Lot 3 — La carte, le QG, le parent, l'admin.** US-7, US-9, R-9, R-13, R-18, D-5,
       D-11. **Stop-points** : `resolveNextAction` ne change ni d'ordre ni de priorité ; le
       chunk `dashboard` ne dépasse pas son budget (remplacer, pas ajouter — sinon STOP et
       proposer le découpage) ; la note de continuité KPI-E est **écrite** (STATUS §1bis + note
@@ -981,6 +981,51 @@ le lot 5 est indépendant et **optionnel**.
   `get_best_scores_by_exercise` reste en base ; aucun verrou nouveau, aucune XP, aucune pièce ;
   le budget `i18n-` app-wide n'a pas été relevé (il a même légèrement baissé, deux clés mortes
   en moins).
+
+- **2026-09-14 — Lot 3 livré, en DEUX merges.** `arena#1042` (SQL) puis `arena#1043`
+  (écrans) — la migration additive précède le code qui s'en sert, DoD §7. Le pourcentage
+  disparaît de trois surfaces, et ce n'est pas une question de format : il divise un travail
+  par un catalogue qui bouge, donc il fait reculer l'élève quand c'est le produit qui grandit.
+  **SQL** : `admin_engagement_overview` ré-émise par script sur sa révision vivante —
+  `chapters_completed` garde sa définition et change de source (le grand livre), et gagne la
+  distribution des étoiles, sa médiane, les sceaux par actif et les **étoiles préservées** ;
+  `get_user_subject_stars`, l'enveloppe self-scopée de l'agrégat du lot 1 ;
+  `_daily_report_with_scopes` porte `subjectStars`. pgTAP `103_engagement_etoiles`,
+  17 assertions.
+  **Écrans** : carte `/parcours` (`done` ⇔ sceau ⭐⭐⭐⭐, sous-libellé « ⭐⭐ · 14/20 »,
+  légende), QG (le sceau remplace la moyenne des scores), suivi parental (barre empilée 0→4
+  au-dessus de « m maîtrisés sur N », ligne ✨, lacunes triées par prochaine étoile), admin
+  (trois tuiles + distribution + note datée). STATUS §1bis porte la note de continuité KPI-E,
+  et `docs/suivi-parental-quotidien.md` est réécrit sur la nouvelle règle.
+  **Preuves** : 4 318 tests (+21), pgTAP 106 fichiers / 1 511 assertions, chaîne à
+  218 migrations, `verify`, `build:check` et `smoke:shell` verts.
+  **Quatre choses trouvées en exécutant** :
+  1. **Le QG ne lisait PAS la progression.** §3.3 dit « le pourcentage cède la place au
+     glyphe de sceau » ; en réalité le « 82 % » de la carte matière était la **moyenne des
+     scores**, servie dans la même forme que le « 40 % » de la carte `/parcours`, qui disait
+     la couverture des chapitres. Deux pourcentages identiques à l'œil pour deux choses
+     différentes, sur deux écrans voisins. Le lot ne remplace donc pas un chiffre par un
+     autre : il retire une ambiguïté que l'étude n'avait pas vue.
+  2. **Le client DÉFAISAIT le tri du serveur.** `student_chapter_gaps` ordonne sur
+     `missing_for_next` depuis le lot 1, et `chapter-gaps.ts` re-triait sur le total des
+     missions restantes — un chapitre à une mission ⭐⭐ de gagner un cran passait derrière un
+     chapitre à qui il ne restait que le défi élite. Les deux colonnes ajoutées au lot 1
+     étaient de surcroît **jetées au parse** (zod les ignorait). Corrigé des deux côtés.
+  3. **La barre empilée exige les seaux EXACTS**, et la base rend des bornes **cumulées**
+     (`star >= r`). Empiler les bornes aurait compté le chapitre maîtrisé quatre fois et fait
+     déborder la barre de son total. La différence se fait une fois, dans `starBuckets`, avec
+     son test.
+  4. **`admin_engagement_overview` était le dernier lecteur à écrire `score_pct >= 60` à la
+     main** — sans l'anti-précipitation que tous les autres appliquent depuis le lot 1. En
+     passant au grand livre, il rejoint la règle unique.
+  **Deux écarts assumés** : le chunk `dashboard` monte de 34,41 à **35,07 KB** pour un budget
+  de 36 — sous plafond, mais la barre du prochain sceau coûte ses octets même après le retrait
+  du pourcentage ; le prochain lot qui touche au QG devra **découper avant d'ajouter**. Et la
+  médiane est **continue** (`percentile_cont`) et non discrète : une médiane qui ne peut valoir
+  que 2 ou 3 ne montrerait aucune tendance entre les deux, alors que c'est précisément une
+  tendance que Q-2 demande de surveiller.
+  **Ce que le lot n'a PAS touché** : `resolveNextAction` (ni ordre ni priorité — D-11), aucune
+  célébration ni badge (lot 4), aucun verrou, aucune XP, aucune pièce.
 
 ---
 
