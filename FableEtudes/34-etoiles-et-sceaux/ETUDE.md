@@ -735,7 +735,7 @@ le lot 5 est indépendant et **optionnel**.
       chunk `dashboard` ne dépasse pas son budget (remplacer, pas ajouter — sinon STOP et
       proposer le découpage) ; la note de continuité KPI-E est **écrite** (STATUS §1bis + note
       dans la console) le jour du merge ; aucun push.
-- [ ] **Lot 4 — Célébrer et collectionner.** US-3, US-4, R-11, R-12, D-7, D-10.
+- [x] **Lot 4 — Célébrer et collectionner.** US-3, US-4, R-11, R-12, D-7, D-10.
       **Stop-points** : trois badges, pas un de plus ; aucune XP/pièce ; une seule modale par
       résultat ; la modale n'enchaîne rien (é31 R-6) ; les événements produit restent sans PII.
 - [ ] **Lot 5 — L'échelle nommée (optionnel).** US-10, R-20, D-12 — **ne démarre que sur
@@ -1100,3 +1100,49 @@ pour cet élève-là. Ce n'est pas un échec de l'étude, c'est sa **limite assu
 exactement pourquoi la distribution passe devant le ratio, et pourquoi KPI-2 mesure la médiane
 de l'étoile. Un « 0/20 » posé à côté d'une barre pleine aux trois quarts ne se lit pas comme un
 « 0/20 » seul.
+
+- **2026-09-14 — Lot 4 livré, en deux merges (arena#1044 SQL, arena#1045 écrans).** Le
+  découpage est celui du lot 3, et pour la même raison : l'additif précède le code qui s'en
+  sert (DoD §7). **Côté serveur** : `record_progress_stars` décerne trois méta-badges de la
+  famille `maitrise` — `first_seal`, `subject_elite` (sceau ⭐⭐⭐⭐), `parcours_covered` (le
+  sceau ⭐ de toutes les matières publiées de sa classe) — **aucune XP, aucune pièce**, et le
+  pgTAP le vérifie littéralement (`(xp, yahia_coins) = (0, 0)`). Le décernement est gardé par
+  `GET DIAGNOSTICS … = ROW_COUNT` : il ne part que lorsqu'un sceau vient **réellement** d'être
+  inscrit. `awarded_reason` porte l'id de la tentative (`stars:<uuid>`), et c'est fonctionnel —
+  c'est par là que `get_attempt_progress` distingue « le badge que tu viens de gagner » de
+  « les badges que tu as ». `get_last_attempt_progress(p_exercise_id)` contourne le fait que
+  `submit_exercise_attempt` ne rend pas d'id, sans y toucher (D-4). **Côté écrans** : le bloc
+  étoile du résultat (il n'existe que si le SERVEUR a dit que l'étoile monte), la modale de
+  sceau (une seule par résultat, derrière le level-up, `prefers-reduced-motion` respecté — ce
+  que son aînée ne fait pas — et elle n'enchaîne rien, é31 R-6), la collection de sceaux datés
+  au QG, la ligne « Ta semaine », deux événements produit sans PII.
+  **Preuves** : `verify` vert (341 fichiers, **4 345 tests**), pgTAP **107 fichiers /
+  1 529 assertions**, `build:check` et `smoke:shell` verts. ✅ L'avertissement du lot 3 est
+  **tenu sans découper** : le chunk `dashboard` reste à **35,08 / 36 KB**, la vitrine des
+  sceaux tombant dans `dashboard-badges-shop`, qui est déjà son propre chunk.
+  **Quatre choses trouvées à l'exécution, qui ne se déduisaient pas de l'étude** :
+  1. **`RETURNING … INTO` sur l'insertion des sceaux LÈVE.** Elle pose 1..r lignes d'un coup
+     (`generate_series`) et un `INTO` de plpgsql exige exactement une ligne. Le trigger
+     s'exécutant sur **chaque** insertion dans `attempts`, la faute a fait tomber la suite
+     pgTAP **entière**, douze fichiers qui ne parlent pas d'étoiles compris. Remède :
+     `GET DIAGNOSTICS … = ROW_COUNT`.
+  2. **Une boucle de rendu, et surtout la façon dont elle s'est vue.** `resetRun` a pris
+     l'OBJET du nouveau hook en dépendance — neuf à chaque rendu — donc l'effet
+     `[exerciseId, resetRun]` se relançait sans fin : la page de quête à 100 % d'un cœur, sans
+     jamais rendre. Une boucle **synchrone** bloque la boucle d'événements, donc le
+     `testTimeout` ne peut pas se déclencher : deux fichiers n'ont **jamais** rendu leur
+     verdict, comptés « 2 errors » à côté de 339 fichiers verts — et un `| tail` rendait **0**
+     sur cette suite rouge, le code de sortie d'un pipeline étant celui de `tail`. Les deux
+     pièges sont écrits dans `docs/agents/pieges-du-code.md` du moteur.
+  3. **Le report de la modale survivait à ce qui l'avait demandé.** Un élève qui enchaînait
+     dans la seconde et demie voyait le sceau de l'exercice **précédent** se lever sur le
+     nouveau. Timer en ref, annulé par `reset` et au démontage.
+  4. **Le grand livre n'était nettoyé par aucun run e2e.** Il est insert-only et monotone
+     (R-6), donc rien ne le dégrade avec le temps : omis de `GAMEPLAY_TABLES`, il ne casse
+     rien le premier soir et casse tout les suivants, sur un code sain — une étoile déjà
+     inscrite ne peut plus être *gagnée*, un sceau déjà posé ne décerne plus son badge. Même
+     leçon un cran plus loin pour la spec e2e : elle joue le quiz **puis tout le cran 1**,
+     parce qu'une seule mission allume un CRAN sans faire tomber l'étoile.
+  **Ce que le lot n'a PAS touché**, conformément à ses stop-points : trois badges et pas un de
+  plus, aucune XP ni pièce, une seule modale par résultat, elle n'enchaîne rien, et les
+  événements produit ne portent que le cran et la matière.
