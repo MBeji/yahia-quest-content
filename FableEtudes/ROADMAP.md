@@ -167,13 +167,16 @@ flowchart TD
       condition — inoffensif au scoring, mais il consomme la borne des 24 variantes. Candidat à
       un lot moteur.
 
-- [ ] **P3. é34 — étoiles de chapitre & sceaux de matière.** Étude **validée le 2026-09-14**
+- [ ] **P3. é34 — étoiles de chapitre & sceaux de matière.** ✅ **Lot 1 LIVRÉ le 2026-09-14**
+      (arena : deux migrations, la doc normative `docs/etoiles-et-sceaux.md`, 4 fichiers pgTAP,
+      suite complète à 1 494 assertions et chaîne à 217 migrations sans échec). Étude **validée
+      le 2026-09-14**
       (Q-1…Q-5 arbitrées, dont **Q-2 contre la recommandation** : « maîtrisé » reste l'étoile 4,
       donc la barre parentale ne bouge pas et KPI-E de é31 garde sa série). Approfondissement de
       V1, aucune ouverture. **Lot 1** (SQL seul : `created_at` sur `exercises`/`chapters`, les
       deux tables du grand livre, `mission_is_counted` / `chapter_star_rungs` /
       `chapter_star_live`, le trigger sur `attempts`, le rejeu initial, `student_subject_stars`,
-      `get_subject_progress`, `get_attempt_progress`), puis **lot 2** hub matière, **lot 3**
+      `get_subject_progress`, `get_attempt_progress`) **est fait** ; restent **lot 2** hub matière, **lot 3**
       carte + QG + parent + admin, **lot 4** célébrations et badges, **lot 5** (optionnel,
       GAP-037) suspendu à la liste des 50 savants, qui est du contenu.
       ⚠️ Ce que le lot 1 ne fait PAS : aucune UI, aucun badge, et **aucune touche à

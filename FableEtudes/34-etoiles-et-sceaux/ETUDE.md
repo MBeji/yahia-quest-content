@@ -1,10 +1,11 @@
 # Étude 34 — Étoiles de chapitre & sceaux de matière : une progression qui ne recule jamais
 
-> **Statut** : **validée** — écrite le 2026-09-14, **Q-1…Q-5 arbitrées le même jour** par
+> **Statut** : **en exécution** — écrite le 2026-09-14, **Q-1…Q-5 arbitrées le même jour** par
 > Mohamed (§7) : quatre sur la recommandation, **Q-2 contre** (« maîtrisé » = étoile 4, pas
 > ≥ 3), ce qui SIMPLIFIE l'étude — la barre de la couverture parentale ne bouge pas, seule sa
 > monotonie change, et la série KPI-E de é31 n'a plus de rupture de définition. Les 5 lots sont
-> exécutables ; le lot 5 est optionnel et commandé (Q-4). Le numéro 33 est pris par « la porte
+> exécutables ; **le lot 1 est LIVRÉ** (arena, 2026-09-14 — §8) et le lot 5 est optionnel et
+> commandé (Q-4). Le numéro 33 est pris par « la porte
 > des questions ouvertes » (arena#1026, migrations `20260913120000` / `20260913130000`), dont
 > le dossier n'est pas encore déposé ici.
 > **Priorité** : 34 · **Valeur** : 🎯 l'élève ne voit plus jamais sa progression **reculer**
@@ -714,7 +715,7 @@ le lot 5 est indépendant et **optionnel**.
 | 4   | **Célébrer et collectionner** : delta après résultat, bloc étoile, modale sceau, 3 badges, section Sceaux, 2 événements produit, ligne « Ta semaine »             | `getAttemptProgress`, `quest-result-screen.tsx`, `exercise-player.tsx`, `seal-celebration.tsx`, migrations badges (seed + trigger), `badges.ts`, `i18n/badges/*`, `badge-medal.tsx`, `badge-collection.tsx`, `product-events.ts`, `weekly-recap-card.tsx` | pgTAP : chaque badge décerné (87 structurel passe), idempotence, delta exact ; Vitest : ordre des blocs, une modale max, reduced-motion, GLYPHS ↔ migrations, événements ; e2e : première étoile célébrée | 1, 2      |
 | 5   | **(optionnel, Q-4) L'échelle nommée des 50 niveaux** (GAP-037) : noms + mini-bios FR/EN/AR, level-up et en-têtes                                                  | `i18n/hero-levels/*` (chunk `i18n-hero-levels-`), `level-up-celebration.tsx`, `hero-stat-chips.tsx`, `journey-header.tsx`                                                                                            | Vitest : 50 × 3 langues complets, alternance arabe / non-arabe, niveau > 50 → numéro seul, aucun changement de courbe ; `build:check`                                                                  | —         |
 
-- [ ] **Lot 1 — La règle et le grand livre.** R-2…R-9, R-15, D-1…D-8. Migration(s)
+- [x] **Lot 1 — La règle et le grand livre.** R-2…R-9, R-15, D-1…D-8. Migration(s)
       additives uniquement ; `student_parcours_progress` redéfinie **sans changer de
       signature** ; `admin_engagement_overview` **non touchée** (lot 3). **Stop-points** :
       aucune UI ; aucun badge (lot 4) ; ne pas éditer `submit_exercise_attempt` ; la
@@ -873,6 +874,46 @@ le lot 5 est indépendant et **optionnel**.
   série sur KPI-E, RISK-5 presque éteint. Ce que l'arbitrage laisse à surveiller est écrit
   dans Q-2 : la **médiane de l'étoile** (KPI-2) devient le chiffre de contrôle de la hauteur
   de barre.
+
+- **2026-09-14 — Lot 1 livré (SQL seul).** Deux migrations : `20260914120000`
+  (`created_at` sur `exercises`/`chapters`, les deux tables du grand livre + RLS/grants, la
+  règle en quatre fonctions, le trigger `AFTER INSERT ON attempts`, le rejeu initial) et
+  `20260914130000` (les lectures : `student_subject_stars`, `student_parcours_progress`
+  redéfinie comme sa projection, `get_subject_progress`, `get_attempt_progress`,
+  `student_chapter_gaps` + 2 colonnes, l'enveloppe du suivi quotidien). Doc normative
+  `docs/etoiles-et-sceaux.md` au moteur, ARCHITECTURE.md §8 et AGENTS.md pointés,
+  `types.ts` régénéré depuis la chaîne (`db:gen-types`).
+  **Tests** : 4 fichiers pgTAP (99 règle · 100 grand livre · 101 sceaux et RPC · 102 rejeu),
+  61 assertions. Suite complète rejouée en local : **105 fichiers, 1494 assertions**, chaîne
+  à **217 migrations sans échec** ; `npm run verify` vert (4 263 tests).
+  **Trois écarts d'exécution, tous assumés et écrits dans les migrations** :
+  1. **Le rejeu est une FONCTION** (`replay_progress_stars`), pas le bloc anonyme que §3.2
+     décrivait. Motif : un `DO $$…$$` n'est rejouable par aucun test, et l'écriture d'une
+     migration dans une table serait restée une promesse sur parole. Le pgTAP 102 la lance
+     sur un décor où le trigger est désactivé et vérifie qu'elle produit **exactement** ce
+     que le trigger aurait produit.
+  2. **`student_chapter_gaps` est DROP puis CREATE**, `CREATE OR REPLACE` refusant un
+     `RETURNS TABLE` différent. Atomique dans la transaction de la migration ; ce n'est pas
+     une migration destructive au sens du DoD §7 (rien n'est perdu, la fonction est recréée
+     deux lignes plus bas) — et le hook pré-commit le confirme, son motif ne vise que
+     `DROP TABLE/COLUMN/CONSTRAINT`.
+  3. **Le lot 1 livre `get_subject_progress` et `get_attempt_progress`**, que le tableau des
+     lots range en lot 1 mais dont l'UI ne viendra qu'aux lots 2 et 4. Elles sont livrées
+     ici parce que le pgTAP 101 en est la preuve : une RPC self-scopée sans test de garde
+     est une surface ouverte qui attend son écran.
+  **Deux choses trouvées à l'exécution, qui ne se déduisaient pas de l'étude** :
+  (a) la **vacuité devait être bornée** — sans la garde « au moins une mission comptée », un
+  chapitre ⭐⭐⭐·⭐⭐⭐⭐ non joué offrait **deux étoiles pour zéro travail**, les crans 1 et 2
+  étant absents. C'est le seul endroit où D-3 avait besoin d'un plancher, et le décor ST-C du
+  pgTAP 99 le tient ; (b) deux propriétés de Postgres rendent un décor de test **infidèle**
+  si on les ignore : `now()` est l'horloge de la TRANSACTION (un contenu « ajouté plus tard »
+  porte la même date, donc aucune nouveauté ✨ n'est détectable) et un `AFTER INSERT FOR EACH
+  ROW` sur un `INSERT` à plusieurs `VALUES` ne se déclenche qu'une fois **toutes** les lignes
+  posées (la première tentative « voit » les suivantes, ce qui n'arrive jamais en production).
+  Les deux sont écrites dans `docs/etoiles-et-sceaux.md` §5.
+  **Ce que le lot n'a PAS touché**, conformément à ses stop-points : aucune UI, aucun badge,
+  aucune récompense, `submit_exercise_attempt` intacte, `admin_engagement_overview` intacte
+  (lot 3), `gamification.ts` intact.
 
 ---
 
