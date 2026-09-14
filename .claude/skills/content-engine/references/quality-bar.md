@@ -43,6 +43,20 @@ balance, or difficulty distribution — you own those by judgment (below).
   "le piège courant…") explaining why the plausible wrong answer fails.
 - **Difficulty ramps within an exercise** (start at 1, end near the exercise's tier ceiling) and the
   quiz skews easy (difficulty 1–2) since it only gates comprehension.
+
+  ⚠️ **La rampe est ce qui tient une chaîne décomposée en place — ce n'est pas de la coquetterie.**
+  Le compilateur émet les questions **triées par `difficulty`**, à égalité dans l'ordre d'écriture
+  (`sql-builder` : `(a.q.difficulty ?? 2) - (b.q.difficulty ?? 2) || a.i - b.i`). Donc un exercice
+  **décomposé** — une question par étape du raisonnement, chaque étape s'appuyant sur la précédente —
+  est **silencieusement réordonné** dès que sa rampe redescend : une étape d2 écrite après une d3
+  passe devant elle, et la chaîne que l'élève lit n'est plus celle qu'on a écrite. **Aucun gate ne
+  le voit** : le contenu est valide, il se lit simplement de travers. Deux sorties, toutes deux
+  bonnes : réordonner les questions pour que la rampe soit non décroissante dans l'ordre de lecture
+  voulu (le départage stable la reproduit alors exactement), ou ouvrir la mission par les acquis
+  faciles de toutes les chaînes avant les chaînes elles-mêmes. **Jamais** relever la difficulté
+  d'une étape réellement facile pour la forcer à sa place : cela ment à la rampe et au palier.
+  Mesuré le 2026-09-13 sur les missions « décomposer pédagogiquement » de math 9ème — deux fichiers
+  sur trois avaient une rampe qui redescendait avant correction.
 - **Age- and grade-appropriate presentation.** Beyond _being on syllabus_ (scope) and _being tagged at
   the right difficulty_ (ramp), every item must _read_ as written for the learner's developmental stage:
   vocabulary, sentence length, the real-world contexts/scenarios it leans on, the magnitude of the
