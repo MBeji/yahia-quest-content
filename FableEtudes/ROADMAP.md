@@ -242,10 +242,14 @@ flowchart TD
       algébrique (`19`, `03`, `04`, `05`). **279 calculs re-dérivés indépendamment** sur les deux
       lots, zéro faux ; les 17 figures é18 conservées **octet pour octet** ; 58 `coursePitfalls`
       déclarés, tous tirés des tags que portent les distracteurs de leur propre chapitre.
-      ⚠️ **Un arbitrage attend** : **quatre** chapitres dépassent le plafond de 240 lignes de
-      R-13 — `15` (379), `03` (346), `04` (305), `17` (301) — et n'ont pas été tronqués, R-13
-      disant que la scission est une décision humaine. Le patron ajoute mécaniquement ~40 % de
-      lignes : si la réponse est « on ne scinde pas », c'est R-13 qu'il faut recalibrer.
+      ⚠️ **Un arbitrage attend, et il porte sur la règle, pas sur les cours** : **8 des 10**
+      chapitres au patron passent le plafond de 240 lignes de R-13 — `03` (390), `15` (379),
+      `04` (351), `17` (302), `05` (281), **`06` (273, la maquette de référence)**, `01` (254),
+      `16` (252). Aucun n'a été tronqué. Mais **par notion** le patron tient : 5 des 10 sont
+      dans la fourchette 18-40 l/notion de R-13, médiane 43. Les longs le sont parce qu'ils
+      portent PLUS DE NOTIONS (`03` : 10 notions × 39 lignes), pas parce que leurs notions
+      enflent. R-13 se contredit : son titre dit « budget par notion », sa dernière phrase pose
+      un plafond par cours — 240 n'était que l'arithmétique d'un cours à six notions.
       ⚠️ **Et un constat de programme** : `05-systemes` est **hors programme 9ᵉ** — le registre
       de transcription l'établit sur les 221 pages du manuel.
       **Reste** : les lots 5-6 (deux tranches, `coursePattern` posé au dernier), le lot 7
