@@ -237,11 +237,18 @@ flowchart TD
       `course-figures.md` l'est de l'axe 5 —, six documents amendés, et la maquette
       `06-fonctions-lineaires-affines` réécrite aux sept temps (138 → 273 lignes, 6 tags déclarés,
       **37 calculs re-dérivés**, zéro constat sous patron quand les 19 autres en produisent 38).
-      **Lots 3 et 4 LIVRÉS** (privé#406 et privé#407) : 9 des 20 chapitres
-      de maths 9ᵉ sont au patron — tranche numérique (`01`, `02`, `15`, `16`, `17`) puis tranche
-      algébrique (`19`, `03`, `04`, `05`). **279 calculs re-dérivés indépendamment** sur les deux
-      lots, zéro faux ; les 17 figures é18 conservées **octet pour octet** ; 58 `coursePitfalls`
-      déclarés, tous tirés des tags que portent les distracteurs de leur propre chapitre.
+      **Lots 3, 4 et 5 LIVRÉS** : 13 des 20 chapitres
+      de maths 9ᵉ sont au patron — tranche numérique (`01`, `02`, `15`, `16`, `17`, privé#406),
+      algébrique (`19`, `03`, `04`, `05`, privé#407) et géométrie A (`08`, `09`, `10`, `11`).
+      **390 calculs re-dérivés indépendamment** sur les trois lots, zéro faux ; les 29 figures
+      é18 conservées **octet pour octet** ; 76 `coursePitfalls` déclarés, tous tirés des tags
+      que portent les distracteurs de leur propre chapitre.
+      ⚠️ **Le lot 5 a surtout corrigé deux MESURES fausses**, et c'est son vrai apport :
+      **R-13** a perdu son plafond par cours (8 des 10 chapitres au patron l'enfreignaient, la
+      maquette comprise) au profit d'un déclencheur au NOMBRE de notions ; et **C-6** comptait
+      les lignes vides et le corps des `<svg>` — les sept sections qu'il dénonçait en maths
+      étaient sous le seuil, dont une signalée à 72 lignes qui en porte **19**. Corpus entier :
+      **336 → 262 avertissements, 74 faux supprimés**, à seuil inchangé.
       ⚠️ **Un arbitrage attend, et il porte sur la règle, pas sur les cours** : **8 des 10**
       chapitres au patron passent le plafond de 240 lignes de R-13 — `03` (390), `15` (379),
       `04` (351), `17` (302), `05` (281), **`06` (273, la maquette de référence)**, `01` (254),
