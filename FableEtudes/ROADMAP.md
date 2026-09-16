@@ -237,7 +237,7 @@ flowchart TD
       `course-figures.md` l'est de l'axe 5 —, six documents amendés, et la maquette
       `06-fonctions-lineaires-affines` réécrite aux sept temps (138 → 273 lignes, 6 tags déclarés,
       **37 calculs re-dérivés**, zéro constat sous patron quand les 19 autres en produisent 38).
-      **Lots 3 et 4 LIVRÉS** (privé#406 et la PR de la tranche algébrique) : 9 des 20 chapitres
+      **Lots 3 et 4 LIVRÉS** (privé#406 et privé#407) : 9 des 20 chapitres
       de maths 9ᵉ sont au patron — tranche numérique (`01`, `02`, `15`, `16`, `17`) puis tranche
       algébrique (`19`, `03`, `04`, `05`). **279 calculs re-dérivés indépendamment** sur les deux
       lots, zéro faux ; les 17 figures é18 conservées **octet pour octet** ; 58 `coursePitfalls`
