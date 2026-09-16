@@ -79,11 +79,14 @@ Plus the closing `::: retenir` line, mirrored by the summary card.
   that frames the chapter as cleared and teases the next.
 - **Motivate before teaching**: the epigraph/intro answers «à quoi ça sert ?» in one punchy line
   (real use, exam stake, or power gained).
-- **Right length — counted per NOTION, not per course** (étude 35 R-13): a theory section runs
-  **18–40 lines**, so a six-notion course runs **110–240**. Past 240 the chapter splits — a human
-  decision, never a silent truncation. `resume.md` stays at ~7–10 bullets, one per section.
-  (The former « ~50–75 lines » never described the corpus — maths 9ème runs 82 to 331 — and a
-  dead rule is not a rule.)
+- **Right length — counted per NOTION, never per course** (étude 35 R-13): a theory section runs
+  **18–40 lines**; a course runs that times its number of notions (5 notions ≈ 90–200, 10 ≈
+  180–400 — both conformant). **There is no per-course ceiling**: what triggers a split is the
+  **notion count** (past ~8, it goes up as a curriculum question, a human decision, never a silent
+  truncation). Count prose, not `<svg>`. A section **over 60 lines** is the actionable defect and
+  the gate already refuses it (C-6). `resume.md` stays at ~7–10 bullets, one per section.
+  (Two dead rules preceded this one: the style guide's « ~50–75 lines », and R-13's own « 240 »,
+  which 8 of the 10 pattern chapters broke — the reference mock-up included.)
 - **The summary is a standalone revision tool**: a student re-reading only `resume.md` the night
   before recovers every key rule/formula of the chapter. If a bullet is too vague to revise from,
   it fails.
