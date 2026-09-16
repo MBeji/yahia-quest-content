@@ -15,12 +15,15 @@ like a credible exam — no emojis, no slang.
   RPG framing — they stay academic. **Titles** (the quiz title and every exercise title) carry the
   standard difficulty indicator (⭐ scale, see below), and exercise titles also carry RPG flavor.
 
-## cours.md skeleton (~50–75 lines)
+## cours.md skeleton
 
 1. `# ⚔️ <Title> — <epic subtitle>`
 2. A blockquote epigraph: `> 💡 «a punchy maxim that motivates the chapter»`
 3. 5–7 `##` sections, each led by a thematic emoji (🏰 ⚡ 🛡️ 🔮 🧮 🧪 📐). Bold every key term;
-   italicize example phrases.
+   italicize example phrases. **Each section is written to the notion pattern** — ancrer, nommer,
+   voir, résoudre, distinguer, généraliser, vérifier sur place: `course-explanation.md`. That
+   file also carries the length budget (18–40 lines per theory section, 110–240 per course);
+   this skeleton describes the wrapper, not the explanation inside it.
 4. Use **markdown tables** for taxonomies/classifications, and `$$ … $$` display blocks for key
    formulas — **plain Unicode math inside, never LaTeX**, and **single-line only**
    (`$$ formula $$`; multi-line blocks don't render — see `math-and-notation.md`). Inline math is
