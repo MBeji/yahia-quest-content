@@ -239,6 +239,10 @@ flowchart TD
       **37 calculs re-dérivés**, zéro constat sous patron quand les 19 autres en produisent 38).
       **Reste** : les lots 3-6 (la campagne, quatre tranches de ≤ 5 chapitres, `coursePattern`
       posé au dernier), le lot 7 (mesure, au premier trafic) et le lot 8 (bilan, qui tranche Q-5).
+      Le topo public suit (arena#1049 à l'écriture, **arena#1051** au passage en exécution) : le
+      gate `etudes-index` compare l'en-tête de l'étude au §4 de `STATUS.md`, et les deux dépôts
+      se contredisent tant que les deux PR ne sont pas mergées — c'est arrivé sur privé#403, dont
+      le rouge n'était le défaut d'aucun de ses fichiers.
       Le constat qui la fonde, mesuré sur `main` avant d'écrire : l'appareil de blocs de é18 est **presque inutilisé pour le
       savoir** — sur les 20 cours de maths 9ᵉ, 54 `::: figure`, 1 `::: methode`, zéro
       `definition`/`exemple`/`propriete` —, la règle « concret avant abstrait » de la barre n'a ni
