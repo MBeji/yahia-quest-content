@@ -359,3 +359,33 @@ you do **not** author quiz rewards.
 
 `gradeSlug` (→null), `isPremium` (→false), `chapter.sources` (→[]), `quiz.title`, question
 `difficulty`. Everything else listed as required must be present.
+
+## Course pattern fields (étude 35)
+
+Two OPTIONAL fields, read by the gate only — never emitted in SQL, never read at runtime.
+
+```jsonc
+// <subject>/subject.json — the subject has finished its campaign and holds to the pattern.
+// Posted at the LAST lot of that campaign, never before: it turns the pattern checks of
+// `content:qa` from warnings into errors for this subject alone.
+{ "coursePattern": "notion" }
+
+// <subject>/<chapter>/chapter.json — the classic mistakes this chapter's COURSE corrects,
+// named with the tags of content/misconceptions.json. `content:qa` refuses a tag unknown to
+// the registry, and a tag no distractor of this chapter carries — the course would be
+// fighting an error the exercises never measure.
+{ "coursePitfalls": ["math.fn.image-calculee-par-somme"] }
+```
+
+And one block in `cours.md`, the ninth of the vocabulary — the only one whose body has two sides:
+
+```markdown
+::: verifie
+The question: a completion example, or a twin problem.
+---
+The answer, folded by the reader, restating the reasoning — not just the result.
+:::
+```
+
+The first `---` alone on its line splits it. Both sides must carry text, or the renderer shows
+everything and `content:qa` errors. Never in `resume.md`. Full doctrine: `course-explanation.md`.

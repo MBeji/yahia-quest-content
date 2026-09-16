@@ -667,7 +667,14 @@ LOT B (ou le couple suivant). Un déclenchement manqué se rattrape par
    `content-cours` (cours/résumé), `content-interactif` (formats variés),
    **`prof-<matière>-<cycle>`** s'il existe (exercices durs d3–4), et
    **`content-engine/references/manuel-valorisation.md`** dès que la fiche vient d'un manuel élève
-   du CNP (que devient chaque contenu du manuel, ce qui se trace, ce qui ne se copie pas). Sous Claude Code les skills
+   du CNP (que devient chaque contenu du manuel, ce qui se trace, ce qui ne se copie pas).
+   ⚠️ **Le cours s'écrit au patron de notion** (étude 35) —
+   **`content-engine/references/course-explanation.md`** : chaque section suit sept temps dans un
+   ordre fermé (ancrer par une situation et sa question → nommer → voir → résoudre avec les
+   pourquoi → distinguer l'erreur typique → généraliser → **vérifier sur place**). Les
+   **activités « نشاط » de la fiche** sont la source première des ancrages, réécrites et jamais
+   recopiées ; les `misconceptionTag` des exercices du chapitre nomment les erreurs à corriger, et
+   celles traitées se déclarent dans `chapter.json` → `coursePitfalls`. Sous Claude Code les skills
    s'invoquent nativement ; autre agent : lire chaque `SKILL.md` + la référence utile, et les
    appliquer à la lettre.
 

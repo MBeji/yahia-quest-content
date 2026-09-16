@@ -239,11 +239,26 @@ severity mapping; the visual one, **Illustration**, was added on 2026-07-14 and 
    an indispensable complement, not optional.
 2. **Clarté** — one notion per section, terms defined at first use in the official terminology,
    grade-calibrated sentences, formulas displayed on their own line, tables for classifications.
-3. **Facilité de compréhension** — concrete example before each rule, **a worked example for
-   every rule** (a rule without one = **[MAJOR]**), simple→complex ordering, ≤1 new notion per
-   section, `> ⚠️` traps placed where the confusion is born.
+3. **Facilité de compréhension — the NOTION PATTERN, section by section** (doctrine:
+   `content-engine/references/course-explanation.md`; grid: `course-quality.md` axis 2). For each
+   `##` section, say which of the seven times are present and in which order, then grade:
+   - section opening on its definition or its rule (time 2 or 6 before time 1) = **[MAJOR]**;
+   - rule with no worked example, example whose steps carry **no why**, theory section with **no
+     check on the spot** (`::: verifie`) = **[MAJOR]**;
+   - classic mistake with no registry tag, or on a misconception **no distractor of the chapter
+     encodes**; two methods side by side at first contact; a check introducing a new notion =
+     **[MAJOR]**;
+   - a mistake left **uncorrected**, or repeated in the summary = **[BLOCKER]** — the lesson would
+     teach the error;
+   - anchor raising no question, representation with no bridging sentence, narrative decoration
+     inside an explanation block, block over 6 lines of prose, rule with no edge case = **[MINOR]**.
+   ⚠️ **Re-solve, do not read.** Every worked example, every « wrong step » of a pitfall and every
+   check's answer is re-derived independently: a false example, a mistake whose diagnosis is itself
+   wrong, or a check with a wrong answer is a **[BLOCKER]**. This is the half of axis 2 that no
+   gate can reach — `content:qa` counts blocks and lines, it never judges what they say.
 4. **Expérience pédagogique** — style-guide skeleton (epigraph, emoji sections, callouts,
-   closing), motivation, length 50–75 lines, and **resume.md as a standalone revision tool**
+   closing), motivation, length **counted per notion** (18–40 lines per theory section, 110–240
+   per course — étude 35 R-13), and **resume.md as a standalone revision tool**
    (one bullet per section, bolded concept + essence, no invented material).
 5. **Illustration (the visual axis)** — a rule about shapes, space, structure or change taught
    **without a drawing** is a **[MAJOR]**; a chapter of a spatial family (geometry, circle & angles,
@@ -256,7 +271,7 @@ severity mapping; the visual one, **Illustration**, was added on 2026-07-14 and 
    can catch it — this check is the whole reason a human/model audit exists on this axis. Missing
    caption, caption that names the object instead of saying what to see, or a figure redundant with
    the sentence beside it = **[MINOR]**. Doctrine and templates: `course-figures.md`.
-6. **Factual & notation pass** — re-derive every worked example and formula in the course
+6. **Factual & notation pass** — re-derive every worked example, pitfall and check of the course
    (wrong result = **[BLOCKER]**); run the notation scans (Arabic-Indic digits, bidi-unsafe
    `\d \d{3}` in ar, hyphen-minus, the **Arabic comma `،` inside a math bracket group**, LaTeX
    residue `\\[a-zA-Z]+` and inline `$…$` — both render raw); check language purity.

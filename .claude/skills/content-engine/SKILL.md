@@ -90,6 +90,13 @@ Consequences you must respect:
   One shared doctrine + copy-paste SVG templates: `references/course-figures.md`. Quality bars:
   `references/course-quality.md` **Axis 5** (courses) and `references/quality-bar.md` § "Illustrate
   what the question is about" (questions).
+- **A lesson EXPLAINS a notion, it never states it.** Each `##` section follows the **notion
+  pattern** — ancrer (a situation and its question) → nommer → voir → résoudre (the worked
+  example, each step with its why) → distinguer (the classic mistake, corrected) → généraliser →
+  **vérifier sur place** (`::: verifie`, answer folded). The order is closed; the definition never
+  opens a section and the general rule never precedes its example. Doctrine, rules and
+  anti-patterns: `references/course-explanation.md` — the normative reference for
+  `references/course-quality.md` **Axis 2**, exactly as `course-figures.md` is for Axis 5.
 
 ## What you do (and where you stop)
 

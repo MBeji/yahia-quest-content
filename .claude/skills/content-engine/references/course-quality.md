@@ -7,6 +7,8 @@ or unteachable, every downstream question becomes unfair. Both the authoring ski
 `style-guide.md` gives the skeleton/voice; this file defines **what makes the content good**.
 A lesson is not only a text: axis 5 (**Illustration**) is as binding as the other four — see
 `course-figures.md` for the doctrine, the families that require a figure, and the SVG templates.
+And axis 2 is not a preference either: it is the **notion pattern**, specified in
+`course-explanation.md` — the order in which a notion arrives, and what each part must carry.
 
 ## Axis 1 — Clarté (clarity)
 
@@ -24,19 +26,35 @@ A lesson is not only a text: axis 5 (**Illustration**) is as binding as the othe
 - **Tables for structure.** Any classification/taxonomy/conjugation with ≥3 cases becomes a
   markdown table, not a paragraph.
 
-## Axis 2 — Facilité de compréhension (ease of understanding)
+## Axis 2 — Facilité de compréhension (the notion pattern)
 
-- **Concrete before abstract.** Open each notion with a concrete example or familiar situation,
-  _then_ state the general rule — not the reverse.
-- **Every rule has a worked example.** No rule without at least one example computed/applied
-  step by step right next to it (the «مثال محسوب» / «exemple détaillé» pattern). A rule without
-  an example is considered not taught.
-- **Progression simple → complexe.** Sections ordered so each builds only on what precedes;
-  introduce at most **one** new notion per section (cognitive load).
-- **Anchor to prior knowledge.** Open by connecting to what the student already masters
-  («tu sais déjà… / أنت تعرف…»), especially the previous chapter/grade.
-- **Name the traps where they arise.** Each classic mistake gets a `> ⚠️` callout at the point
-  of the course where the confusion is born — the same traps the exercises' distractors encode.
+> Rewritten 2026-09-16 (étude 35). The two lines this axis used to carry — « concrete before
+> abstract » and « every rule has a worked example » — were right and inert: no pattern, no gate,
+> no measurement stood behind them, and the corpus stated instead of explaining (maths 9ème: 54
+> figure blocks, 1 method block, zero definition/example). The full doctrine, the seven times, the
+> rules R-1…R-15 and the templates: **`course-explanation.md`** — read it before writing a lesson.
+
+**One `##` section = one notion, explained in seven times, in this order:**
+
+1. **Ancrer** — a situation the pupil knows, ending on **the question** the notion answers.
+2. **Nommer** — the official term and the notation (`::: definition` / `::: propriete`).
+3. **Voir** — a representation, plus the sentence tying it to the symbols (`::: figure`, a value
+   table, a number line).
+4. **Résoudre** — a worked example, **each step with its why** (`::: exemple`), reusing the
+   anchor's own numbers.
+5. **Distinguer** — the classic mistake, shown, diagnosed, corrected (`::: piege` / `> ⚠️`),
+   targeting a tag of the misconception registry declared in `chapter.json` → `coursePitfalls`.
+6. **Généraliser** — the rule **after** its example, with one edge case (`::: propriete` /
+   `::: methode`).
+7. **Vérifier sur place** — a completion example or a twin problem, answer folded
+   (`::: verifie`), whose answer restates the reasoning.
+
+Plus the closing `::: retenir` line, mirrored by the summary card.
+
+- **One method at first contact.** Two methods are shown one after the other, never side by side
+  in the section that introduces the first.
+- **Progression simple → complexe**, at most one new notion per section (cognitive load).
+- **A representation is tied to its symbols** by an explicit bridging sentence, or it is wallpaper.
 
 ## Axis 3 — Exhaustivité (completeness)
 
@@ -61,8 +79,11 @@ A lesson is not only a text: axis 5 (**Illustration**) is as binding as the othe
   that frames the chapter as cleared and teases the next.
 - **Motivate before teaching**: the epigraph/intro answers «à quoi ça sert ?» in one punchy line
   (real use, exam stake, or power gained).
-- **Right length**: ~50–75 lines for `cours.md` (a 10-minute read), ~7–10 bullets for
-  `resume.md`. Longer = split the chapter; shorter = scope is probably uncovered.
+- **Right length — counted per NOTION, not per course** (étude 35 R-13): a theory section runs
+  **18–40 lines**, so a six-notion course runs **110–240**. Past 240 the chapter splits — a human
+  decision, never a silent truncation. `resume.md` stays at ~7–10 bullets, one per section.
+  (The former « ~50–75 lines » never described the corpus — maths 9ème runs 82 to 331 — and a
+  dead rule is not a rule.)
 - **The summary is a standalone revision tool**: a student re-reading only `resume.md` the night
   before recovers every key rule/formula of the chapter. If a bullet is too vague to revise from,
   it fails.
@@ -103,8 +124,14 @@ Map findings to the standard severities:
 
 - **[BLOCKER]** — factually false statement or rule; course contradicts the answer keys of its
   own quiz/exercises; formula or worked example with a wrong result; **a figure that contradicts
-  its own statement** (point off the segment, "parallels" that aren't) — it teaches a wrong shape.
+  its own statement** (point off the segment, "parallels" that aren't) — it teaches a wrong shape;
+  **a false worked example, classic mistake or check**; **a mistake left uncorrected in the text,
+  or repeated in the summary** — the lesson would teach the error.
 - **[MAJOR]** — tested-but-untaught notion (golden rule); rule without a worked example;
+  **a theory section opening on its definition or its rule** (times 2 or 6 before time 1);
+  **an example whose steps carry no why**; **a theory section with no check on the spot**;
+  **a classic mistake with no registry tag, or on a misconception no distractor of the chapter
+  encodes**; **two methods side by side at first contact**; **a check introducing a new notion**;
   off-program/wrong-grade notion (school); section incomprehensible at grade level; resume bullet
   missing for a section or inventing new material; notation violations (Arabic-Indic digits,
   bidi-unsafe grouped numbers, arabized formulas); language impurity; **a spatial chapter with no
@@ -113,8 +140,13 @@ Map findings to the standard severities:
 - **[MINOR]** — style-guide skeleton gaps (missing epigraph/callouts/closing); sentence-length /
   jargon issues; length out of range; weak motivation; table opportunity missed; resume order
   drift; **figure without a caption, figure redundant with the text it sits next to, or a caption
-  that names the object instead of saying what to see**.
+  that names the object instead of saying what to see**; **a representation with no bridging
+  sentence, or a figure label that differs from the name used in the text**; **an anchor that
+  raises no question**; **narrative decoration inside an explanation block**; **a block over 6
+  lines of prose, or a section over 60 lines**; **a general rule stated without an edge case**.
 
 Verdict per chapter: **ship** (no blocker, ≤1 major) or **fix-first**. Report per axis: one line
 each for clarté / compréhension / exhaustivité / expérience / **illustration** with the findings
-that drove it.
+that drove it. On axis 2, report **per section**: which of the seven times are present, in which
+order, and whether every example, mistake and check was **re-solved** (no gate can do that — it is
+the whole reason a model audit exists on this axis).
