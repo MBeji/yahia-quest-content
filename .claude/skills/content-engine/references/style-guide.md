@@ -22,8 +22,10 @@ like a credible exam — no emojis, no slang.
 3. 5–7 `##` sections, each led by a thematic emoji (🏰 ⚡ 🛡️ 🔮 🧮 🧪 📐). Bold every key term;
    italicize example phrases. **Each section is written to the notion pattern** — ancrer, nommer,
    voir, résoudre, distinguer, généraliser, vérifier sur place: `course-explanation.md`. That
-   file also carries the length budget (18–40 lines per theory section, 110–240 per course);
-   this skeleton describes the wrapper, not the explanation inside it.
+   file also carries the length budget — **18–40 lines per theory section, and no per-course
+   ceiling**: a course is that budget times its notions, and past ~8 notions it is the notion
+   COUNT, not the line count, that sends it up for a split.
+   This skeleton describes the wrapper, not the explanation inside it.
 4. Use **markdown tables** for taxonomies/classifications, and `$$ … $$` display blocks for key
    formulas — **plain Unicode math inside, never LaTeX**, and **single-line only**
    (`$$ formula $$`; multi-line blocks don't render — see `math-and-notation.md`). Inline math is

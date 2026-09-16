@@ -135,12 +135,34 @@ neglected practice in international video studies of maths teaching (annexe A).
 
 Numbered steps excepted. A section over 60 lines splits.
 
-### R-13 — Budget per notion, not per course
+### R-13 — Budget per notion, and the split trigger is the notion COUNT
 
-A theory section runs **18 to 40 lines**. A six-notion course therefore runs **110 to 240**. This
-**replaces** the « ~50–75 lines » of the style guide, which never described the corpus (the maths
-9ème courses run 82 to 331) — a dead rule is not a rule. Past 240 lines, the chapter splits, and
-that is a human decision, never a silent truncation.
+A theory section runs **18 to 40 lines**. A course's length is that budget times its number of
+notions — nothing else. Five notions ≈ 90–200 lines; ten notions ≈ 180–400. **Both are
+conformant**; measure the section, never the file.
+
+This **replaces** the « ~50–75 lines » of the style guide, which never described the corpus — a
+dead rule is not a rule. It also **replaces this rule's own first draft**, which derived « 110 to
+240 » for a six-notion course and then read that 240 back as an absolute ceiling. Measured on
+maths 9ème once lots 2–4 were written: **8 of the 10 chapters at the pattern pass 240**, the
+reference mock-up `06-fonctions` (273) among them, while 5 of 10 sit inside the 18–40 band with a
+median of 43. The long ones are long because they carry **more notions** — `03-calcul-litteral`
+is 10 notions at 39 lines each — not because their notions swell. A rule its own reference
+implementation breaks is the dead rule again, one generation later.
+
+**What triggers a split is the notion count, not the line count.** Past about **8 notions** in one
+chapter, it goes up as a **curriculum** question — « is this two chapters? » — with the notion
+count as the evidence. A human decides; never a silent truncation, and never a verdict read off
+`wc -l`. Open candidates on maths 9ème: `03-calcul-litteral` (10), `15-numeration-et-calcul` (10 —
+its own text says « هذا الفصل بابان اثنان »), `07-statistiques` (14 sections, before rewrite).
+
+Count prose, not figures: a `<svg>` is one figure however many lines it spans. Neutralising them
+moves only three chapters on maths 9ème (`18` 331→177, `08` 185→125, `07` 261→211), all of them
+still outside the pattern — but the measure has to be honest before it can arbitrate.
+
+A section **above** the band is the real signal, and the gate already carries it: C-6 refuses a
+section past 60 lines, because there it holds two notions. `resume.md` stays at ~7–10 bullets,
+one per section.
 
 ### R-14 — Official vocabulary, standard notation, RTL
 

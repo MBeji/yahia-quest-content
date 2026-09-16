@@ -69,7 +69,9 @@ official scope + language of instruction).
    edge case) → **vérifier sur place** (`::: verifie`, question above the `---`, folded answer
    below, restating the reasoning). Close with `::: retenir`, one line.
    The definition never opens a section; the general rule never precedes its example; one method
-   at first contact. Budget: 18–40 lines per theory section, 110–240 per course.
+   at first contact. Budget: **18–40 lines per theory section, no ceiling on the file** — a course
+   is that budget times its notions. Past ~8 notions, raise a split as a CURRICULUM question;
+   never truncate, and never judge a course by `wc -l`.
 4. **ILLUSTRATE — a rule about shapes taught without a drawing is a non-conformity**
    (course-quality Axis 5; doctrine, families and copy-paste SVG templates:
    `content-engine/references/course-figures.md`). Go back over the sections you just wrote and ask,

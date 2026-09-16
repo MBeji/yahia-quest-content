@@ -323,10 +323,17 @@ connecté, sauf la mesure (E), qui ne voit que les connectés.
   la figure et la formule (signalement).
 - **R-12 — Une notion nouvelle par section, et une seule ; un bloc tient en 3 à 6 lignes** hors
   étapes numérotées (segmentation). Une section qui dépasse 60 lignes se scinde.
-- **R-13 — Budget par notion, pas par cours.** Une section théorique fait 18 à 40 lignes. Un cours
-  de 6 notions fait donc 110 à 240 lignes — c'est le budget réel du corpus pilote (82 à 331 lignes
-  aujourd'hui), pas les « 50-75 lignes » du style-guide, morts depuis longtemps (D-6). Un cours
-  qui dépasse 240 lignes se scinde en deux chapitres — décision humaine, jamais silencieuse.
+- **R-13 — Budget par notion, et la scission se déclenche au NOMBRE de notions.** Une section
+  théorique fait 18 à 40 lignes. La longueur d'un cours est ce budget **multiplié par son nombre
+  de notions**, et rien d'autre : 5 notions ≈ 90-200 lignes, 10 notions ≈ 180-400 — **les deux
+  sont conformes**. On mesure la section, jamais le fichier, et on compte la prose, pas les
+  `<svg>`. _Amendée le 2026-09-16 (journal §8) :_ sa première rédaction dérivait « 110 à 240 »
+  pour six notions puis relisait 240 comme un plafond absolu — que **8 des 10** chapitres au
+  patron enfreignent, la maquette de référence comprise. Ce qui envoie un chapitre à l'arbitrage,
+  c'est de passer **~8 notions** : c'est alors une question de **programme** (« est-ce deux
+  chapitres ? »), décision humaine, jamais silencieuse, et jamais un verdict lu sur `wc -l`.
+  Le vrai défaut actionnable est la section **au-dessus** de la fourchette, et le gate le porte
+  déjà : C-6 refuse une section de plus de 60 lignes.
 - **R-14 — Vocabulaire officiel, notation standard, RTL.** Termes du manuel (table « Vocabulaire
   & terminologie officielle » de la transcription), chiffres occidentaux, formules LTR seules sur
   leur ligne, U+00A0 dans les nombres groupés, virgule décimale « 0,8 » — tout `math-and-notation.md`
@@ -565,9 +572,13 @@ préparé le quiz ? ») est une question de personnes.
 - **D-5 — L'erreur typique s'ancre sur le registre.** Les distracteurs de maths 9ᵉ portent 1 367
   tags ; le cours enseigne **contre les mêmes erreurs** que les exercices mesurent. C'est la boucle
   é04/é30 refermée côté enseignement, et `coursePitfalls` la rend vérifiable (C-5).
-- **D-6 — Le budget se compte par notion.** « ~50-75 lignes » (style-guide) n'a jamais décrit le
-  corpus pilote (82 → 331 lignes) ; une règle morte n'est pas une règle. R-13 la remplace par un
-  budget qui décrit ce qu'on veut : 18-40 lignes par notion, scission au-delà de 240.
+- **D-6 — Le budget se compte par notion, et RIEN ne se compte par cours.** « ~50-75 lignes »
+  (style-guide) n'a jamais décrit le corpus pilote (82 → 331 lignes) ; une règle morte n'est pas
+  une règle. R-13 la remplace par 18-40 lignes **par notion**. _Révisée le 2026-09-16 :_ la
+  première version de R-13 portait elle aussi un plafond par cours (240) — et l'a payé de la même
+  façon, 8 des 10 chapitres au patron le dépassant après les lots 2-4. **Une deuxième règle morte
+  en une génération.** La leçon tenue ici : un budget ne se dérive pas en plafond. La scission se
+  déclenche sur le **nombre de notions** (~8), qui est une question de programme, pas de longueur.
 - **D-7 — Le déterministe vérifie la forme, le modèle juge le fond.** Six contrôles de
   structure, zéro reniflage de prose (é18 D-1) ; la grille d'audit porte le jugement, et la
   re-résolution à l'aveugle porte la vérité.
@@ -655,11 +666,12 @@ chapitres) et **ne publient pas** : une PR mergée n'est en prod qu'après le di
       _Lot 6 en plus_ : `coursePattern: "notion"` sur `content/math/subject.json`, et
       `content:qa:strict` vert avec C-1 → C-5 en `[error]` sur les 19 chapitres.
       _Stop-point_ : ≤ 5 chapitres par PR ; **une seule matière** ; jamais deux tranches dans une
-      PR ; un chapitre qui dépasse 240 lignes remonte (R-13) au lieu d'être tronqué.
+      PR ; un chapitre qui passe ~8 notions remonte (R-13 amendée) au lieu d'être tronqué.
       _Avancement_ : lot 3 ✅ (privé#406) · lot 4 ✅ · lots 5-6 à faire. **Quatre** chapitres
-      dépassent R-13 et attendent l'arbitrage : `15` (379), `03` (346), `04` (305), `17` (301).
-      Le patron ajoute mécaniquement ~40 % de lignes (ancrage + pourquoi + contrôle) : si
-      l'arbitrage est « on ne scinde pas », c'est **R-13 qu'il faut recalibrer**, pas les cours.
+      passaient l'ancien plafond de 240 de R-13 — **8 des 10**, maquette comprise. Arbitré le
+      2026-09-16 : **R-13 est amendée**, le plafond par cours disparaît, la scission se déclenche
+      au NOMBRE de notions (~8). Restent trois candidats sur ce critère : `03` (10 notions),
+      `15` (10, « هذا الفصل بابان اثنان ») et `07-statistiques` (14 sections, avant réécriture).
 
 - [ ] **Lot 7 — La mesure.**
       _Périmètre_ : §3.2, §3.3 (console). La fonction lit `learning_pulses`, `attempts` et
@@ -729,10 +741,14 @@ la console du lot 7 est la mesure, lisible quand le volume existe (D-8).
 ## 6. Risques & mitigations
 
 - **RISK-1 — Le patron gonfle les cours au-delà du lisible.** _Probabilité forte / impact
-  moyen._ Sept temps × six notions = un cours qui double. Mitigation : R-12 (3-6 lignes par
-  bloc), R-13 (budget par notion, scission au-delà de 240), C-6, et la grille (`[MINOR]` sur un
-  bloc long). Le gabarit de l'annexe C fait **41 lignes** pour une notion complète : c'est la
-  référence, pas le plafond.
+  moyen._ ⚠️ **RÉALISÉ aux lots 2-4, et la mitigation était le mauvais instrument.** Les cours
+  ont bien doublé (119 → 236, 135 → 390, 166 → 351). Mais mesuré par notion, le patron TIENT :
+  5 des 10 chapitres dans la fourchette 18-40, médiane 43 — les longs portent plus de notions,
+  ils n'ont pas de notions plus grasses. C'est le plafond par cours (240) qui a cédé, pas le
+  budget par notion. Mitigation retenue : R-12 (3-6 lignes par bloc), R-13 **amendée** (budget
+  par notion, scission au nombre de notions), C-6 (section > 60 lignes), et la grille
+  (`[MINOR]` sur un bloc long). Le gabarit de l'annexe C fait **41 lignes** pour une notion
+  complète : c'est la référence, pas le plafond.
 - **RISK-2 — Des ancrages factices.** _Probabilité moyenne / impact fort._ Un « contexte » plaqué
   (un dragon qui calcule des racines) n'ancre rien ; l'étude vidéo de l'OCDE (GTI 2020) a trouvé
   les liens au réel rares **et** faibles là où ils existaient. Mitigation : R-2 (l'ancrage est
