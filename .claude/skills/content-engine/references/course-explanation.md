@@ -29,25 +29,25 @@ A **notion** is what the programme names and the quiz tests: a definition, a pro
 a method, a formula. **One `##` section = one notion** (axis 1, unchanged). Inside it, the order
 is closed:
 
-| # | the student…                                                       | how it is written                                                                  |
-| - | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
-| **T1** | **is anchored** — a situation they know, and **the question** it raises | prose, 2–4 lines, ending on the question; an anchoring figure if the situation is visual |
-| **T2** | **is given the name** — the official word, the notation, alone on its line | `::: definition` (or `::: propriete` when the notion is a statement)             |
-| **T3** | **sees it** — a representation, and the sentence tying it to the symbols | `::: figure` (mandatory if spatial), a value table, a number line, a tape diagram |
-| **T4** | **watches it solved** — step by step, **each step with its why** | `::: exemple` — 2 to 5 numbered steps; the FIRST example reuses T1's numbers        |
-| **T5** | **tells it apart** — the classic mistake, shown, diagnosed, corrected | `::: piege` or a promoted `> ⚠️` — the wrong step, why it tempts, the right step  |
-| **T6** | **generalises** — the rule, after the example, with what varies and what does not | `::: propriete` / `::: methode` + 2–3 short cases including **one edge case** |
-| **T7** | **checks, on the spot** — before moving on                        | `::: verifie` — a completion example or a twin problem; the answer is **folded**    |
-| end | **keeps one line**                                                 | `::: retenir` — mirrored by the summary card                                        |
+| #      | the student…                                                                      | how it is written                                                                        |
+| ------ | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **T1** | **is anchored** — a situation they know, and **the question** it raises           | prose, 2–4 lines, ending on the question; an anchoring figure if the situation is visual |
+| **T2** | **is given the name** — the official word, the notation, alone on its line        | `::: definition` (or `::: propriete` when the notion is a statement)                     |
+| **T3** | **sees it** — a representation, and the sentence tying it to the symbols          | `::: figure` (mandatory if spatial), a value table, a number line, a tape diagram        |
+| **T4** | **watches it solved** — step by step, **each step with its why**                  | `::: exemple` — 2 to 5 numbered steps; the FIRST example reuses T1's numbers             |
+| **T5** | **tells it apart** — the classic mistake, shown, diagnosed, corrected             | `::: piege` or a promoted `> ⚠️` — the wrong step, why it tempts, the right step         |
+| **T6** | **generalises** — the rule, after the example, with what varies and what does not | `::: propriete` / `::: methode` + 2–3 short cases including **one edge case**            |
+| **T7** | **checks, on the spot** — before moving on                                        | `::: verifie` — a completion example or a twin problem; the answer is **folded**         |
+| end    | **keeps one line**                                                                | `::: retenir` — mirrored by the summary card                                             |
 
 Not every notion needs every time; **the order, however, is never negotiable.**
 
-| notion type        | required                                  | recommended | forbidden                                                        |
-| ------------------ | ----------------------------------------- | ----------- | ---------------------------------------------------------------- |
-| definition         | T1 · T2 · T4 · T7 · retenir               | T3 · T5     | T2 before T1 — a definition never opens a section                |
-| property / theorem | T1 · T3 (if spatial) · T4 · T6 · T7 · retenir | T5      | T6 before T4 — the general rule never precedes its example       |
-| method / procedure | T1 · T4 · T6 (`methode`) · T7 · retenir   | T5          | a "figure it out first" opening — a procedure is explained first  |
-| formula            | T1 · T2 · T4 · T7                         | T3 · T5     | a formula inside the sentence (one formula, one line)            |
+| notion type        | required                                      | recommended | forbidden                                                        |
+| ------------------ | --------------------------------------------- | ----------- | ---------------------------------------------------------------- |
+| definition         | T1 · T2 · T4 · T7 · retenir                   | T3 · T5     | T2 before T1 — a definition never opens a section                |
+| property / theorem | T1 · T3 (if spatial) · T4 · T6 · T7 · retenir | T5          | T6 before T4 — the general rule never precedes its example       |
+| method / procedure | T1 · T4 · T6 (`methode`) · T7 · retenir       | T5          | a "figure it out first" opening — a procedure is explained first |
+| formula            | T1 · T2 · T4 · T7                             | T3 · T5     | a formula inside the sentence (one formula, one line)            |
 
 **Why this order and no other.** It is the order of the official manual — **نشاط** (activity) →
 **encadré** (the boxed rule) → **أطبق** (apply) → **تمرين مرفق بحل** (solved exercise) → **أحوصل**
@@ -159,7 +159,9 @@ The pattern never adds a notion; it explains the ones that are there (axis 3).
 ```markdown
 ::: verifie أو un titre libre
 La question : un exemple à compléter, ou un problème jumeau.
+
 ---
+
 La réponse, qui REDIT le raisonnement : l'étape et son pourquoi.
 :::
 ```
@@ -175,6 +177,19 @@ La réponse, qui REDIT le raisonnement : l'étape et son pourquoi.
 - The block is authorable as of étude 35 lot 1 (engine). A course written before it renders the
   block as plain text — write it anyway; it is the shape that matters.
 
+> ⚠️ **The Prettier trap — it has cost two cycles (é35 lots 2 and 4).** Prettier reads a closing
+> `:::` that follows a list item, or a line indented under one, as a **lazy continuation** of that
+> list, and re-indents it to `  :::`. The directive is then never closed, and `content:qa` errors
+> on the whole file (46 errors in one pass on lot 4). Applies to a fence after a numbered step, a
+> bullet, or a `$$…$$` line indented under a step — precisely the shape every `::: exemple` has.
+> **Remedy, and it is the only one that survives a re-run**: leave a **blank line** before the
+> closing `:::` whenever the line above it is a list item or is indented. Prettier never indents a
+> fence preceded by a blank line. Run `npx prettier --write` on your own files **before** the
+> gate, never after it goes green — the format pass is what breaks it, and a green gate on an
+> unformatted file proves nothing about what lands in the PR. Same family of trap as the one that
+> mangled the Arabic gabarit of the étude: Prettier does not know this vocabulary, so the author
+> writes so that reformatting is a no-op.
+
 ---
 
 ## 4. What the gate enforces, and what it cannot
@@ -184,14 +199,14 @@ La réponse, qui REDIT le raisonnement : l'étape et son pourquoi.
 than none). Two regimes: `warn` until the subject declares `coursePattern: "notion"` in its
 `subject.json` — that is its backlog — then `error` — that is its gate.
 
-| check   | what it refuses                                                                         |
-| ------- | ----------------------------------------------------------------------------------------- |
-| **C-1** | a section posing a rule (`definition`/`propriete`/`methode`) with no `::: exemple`      |
-| **C-2** | a section opening straight on its rule — no 2 lines of prose, no anchoring figure       |
-| **C-3** | a section showing an example with no `::: verifie`                                      |
-| **C-4** | a `::: verifie` without its separator, or with an empty side; a `::: verifie` in a summary |
+| check   | what it refuses                                                                                                                          |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **C-1** | a section posing a rule (`definition`/`propriete`/`methode`) with no `::: exemple`                                                       |
+| **C-2** | a section opening straight on its rule — no 2 lines of prose, no anchoring figure                                                        |
+| **C-3** | a section showing an example with no `::: verifie`                                                                                       |
+| **C-4** | a `::: verifie` without its separator, or with an empty side; a `::: verifie` in a summary                                               |
 | **C-5** | a course naming no classic mistake at all; a `coursePitfalls` tag unknown to the registry **or carried by no distractor of the chapter** |
-| **C-6** | a section over 60 lines (warn in both regimes — a length is not a fault)                 |
+| **C-6** | a section over 60 lines (warn in both regimes — a length is not a fault)                                                                 |
 
 Under `coursePattern`, one more: a course carrying **no knowledge block and no worked example**
 fails outright — the flag is a way of writing, not a badge.
@@ -205,18 +220,18 @@ example, mistake and check is **true** — which is why the audit re-solves them
 
 ## 5. Anti-patterns — what a lesson written to the pattern never does
 
-| anti-pattern                                                        | why it fails                                                                       |
-| ------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| Opening on « **Définition.** A linear function is… »               | The pupil receives a name for something they have not met. T1 exists for this.     |
-| An « exemple d'application » at the end of the section              | The example is not a reward for having understood; it is HOW one understands.       |
-| « f(2) = 6 » with no why                                            | A computation is not an explanation. Each step names the principle it applies.      |
-| « Explique pourquoi cette étape est permise. » with no answer       | An open prompt without feedback degrades the example's effect (annexe A).           |
-| A dragon computing square roots                                     | Decoration inside the explanation measurably costs comprehension.                    |
-| Two methods side by side on first contact                           | Worse than sequential study for a pupil holding neither.                             |
-| « Voir la figure ci-dessus »                                        | The figure sits beside its step, and its labels are inside it (R-11).               |
-| A check whose answer is just « 28 »                                 | The answer restates the reasoning, or the check teaches nothing.                     |
-| A mistake shown and left uncorrected, or repeated in the summary    | The lesson would teach the error. `[BLOCKER]`.                                       |
-| A 300-line course « because the notion is rich »                    | Past 240 lines the chapter splits — a human decision, written down.                  |
+| anti-pattern                                                     | why it fails                                                                   |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Opening on « **Définition.** A linear function is… »             | The pupil receives a name for something they have not met. T1 exists for this. |
+| An « exemple d'application » at the end of the section           | The example is not a reward for having understood; it is HOW one understands.  |
+| « f(2) = 6 » with no why                                         | A computation is not an explanation. Each step names the principle it applies. |
+| « Explique pourquoi cette étape est permise. » with no answer    | An open prompt without feedback degrades the example's effect (annexe A).      |
+| A dragon computing square roots                                  | Decoration inside the explanation measurably costs comprehension.              |
+| Two methods side by side on first contact                        | Worse than sequential study for a pupil holding neither.                       |
+| « Voir la figure ci-dessus »                                     | The figure sits beside its step, and its labels are inside it (R-11).          |
+| A check whose answer is just « 28 »                              | The answer restates the reasoning, or the check teaches nothing.               |
+| A mistake shown and left uncorrected, or repeated in the summary | The lesson would teach the error. `[BLOCKER]`.                                 |
+| A 300-line course « because the notion is rich »                 | Past 240 lines the chapter splits — a human decision, written down.            |
 
 ---
 
