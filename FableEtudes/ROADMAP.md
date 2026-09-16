@@ -237,9 +237,13 @@ flowchart TD
       `course-figures.md` l'est de l'axe 5 —, six documents amendés, et la maquette
       `06-fonctions-lineaires-affines` réécrite aux sept temps (138 → 273 lignes, 6 tags déclarés,
       **37 calculs re-dérivés**, zéro constat sous patron quand les 19 autres en produisent 38).
-      **Lots 3, 4 et 5 LIVRÉS** : 13 des 20 chapitres
-      de maths 9ᵉ sont au patron — tranche numérique (`01`, `02`, `15`, `16`, `17`, privé#406),
-      algébrique (`19`, `03`, `04`, `05`, privé#407) et géométrie A (`08`, `09`, `10`, `11`).
+      ✅ **CAMPAGNE PILOTE TERMINÉE — lots 3 à 6 LIVRÉS** : **les 20 chapitres** de maths 9ᵉ
+      sont au patron, et `coursePattern: "notion"` est posé sur la matière, donc les six
+      contrôles tournent en régime **`error`** — à **zéro erreur**. Le corpus porte désormais
+      **155 contrôles `verifie` et 115 `coursePitfalls`** sur cette matière, et **537 calculs
+      re-dérivés indépendamment** sur les quatre lots, zéro faux. 13 des 20 chapitres
+      l'étaient après la tranche numérique (privé#406), algébrique (privé#407) et géométrie A
+      (privé#411) ; le lot 6 a pris les sept derniers (`07`, `12`, `13`, `18`, `20`, `14`).
       **390 calculs re-dérivés indépendamment** sur les trois lots, zéro faux ; les 29 figures
       é18 conservées **octet pour octet** ; 76 `coursePitfalls` déclarés, tous tirés des tags
       que portent les distracteurs de leur propre chapitre.
@@ -259,8 +263,10 @@ flowchart TD
       un plafond par cours — 240 n'était que l'arithmétique d'un cours à six notions.
       ⚠️ **Et un constat de programme** : `05-systemes` est **hors programme 9ᵉ** — le registre
       de transcription l'établit sur les 221 pages du manuel.
-      **Reste** : les lots 5-6 (deux tranches, `coursePattern` posé au dernier), le lot 7
-      (mesure, au premier trafic) et le lot 8 (bilan, qui tranche Q-5).
+      ⚠️ **Deux chapitres restent candidats à la scission** sur le critère du NOMBRE de notions
+      (R-13 amendée) : `07-statistiques` en porte 15 et `18-quadrilateres` 12, au-dessus du seuil
+      de ~8. C'est une question de **programme**, pas de longueur — elle attend un arbitrage.
+      **Reste** : le lot 7 (mesure, au premier trafic) et le lot 8 (bilan, qui tranche Q-5).
       Le topo public suit (arena#1049 à l'écriture, **arena#1051** au passage en exécution) : le
       gate `etudes-index` compare l'en-tête de l'étude au §4 de `STATUS.md`, et les deux dépôts
       se contredisent tant que les deux PR ne sont pas mergées — c'est arrivé sur privé#403, dont
