@@ -266,6 +266,19 @@ flowchart TD
       ⚠️ **Deux chapitres restent candidats à la scission** sur le critère du NOMBRE de notions
       (R-13 amendée) : `07-statistiques` en porte 15 et `18-quadrilateres` 12, au-dessus du seuil
       de ~8. C'est une question de **programme**, pas de longueur — elle attend un arbitrage.
+      ✅ **2026-09-17 — la glose française, sur arbitrage du propriétaire** : « tu peux laisser
+      du français si déjà le terme arabe existe, car en lycée on bascule en français. » **R-14 est
+      amendée** — chaque terme-clé porte son équivalent français entre parenthèses à sa PREMIÈRE
+      apparition, jamais ailleurs, jamais dans une formule, un tableau ou une légende (la
+      parenthèse y casse le sens de lecture RTL). Passe faite : **26 → 98 gloses** sur les 20
+      chapitres, sept replacées parce qu'elles étaient tombées dans une épigraphe ou dans la
+      RÉPONSE d'un contrôle. Ce qui reste interdit est ce que la règle n'est pas : une **phrase**
+      à moitié française au milieu d'une proposition arabe.
+      ⚠️ **Le piège Prettier a un second visage**, trouvé là : il réécrit aussi **à l'intérieur
+      d'un `<svg>`**. Inerte, mais cela casse l'invariant « octet pour octet » ; et le fichier
+      touché (`06-fonctions`) échouait DÉJÀ à `prettier --check` sur `main` depuis le lot 2 — la
+      passe a absorbé une dette latente, elle ne l'a pas créée. D'où la règle ajoutée :
+      `prettier --check` AVANT de toucher un chapitre, et vérifier les `<svg>` par extraction.
       **Reste** : le lot 7 (mesure, au premier trafic) et le lot 8 (bilan, qui tranche Q-5).
       Le topo public suit (arena#1049 à l'écriture, **arena#1051** au passage en exécution) : le
       gate `etudes-index` compare l'en-tête de l'étude au §4 de `STATUS.md`, et les deux dépôts
