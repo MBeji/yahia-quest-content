@@ -8,17 +8,13 @@
       "sources": [
         {
           "code": "102905",
-          "tomes": [
-            "P00"
-          ],
+          "tomes": ["P00"],
           "role": "eleve",
           "pagesTotal": 221,
           "pagesLues": "integral"
         }
       ],
-      "sujets": [
-        "math"
-      ],
+      "sujets": ["math"],
       "sourcesLibres": [],
       "r7": null,
       "maj": "2026-08-18",
@@ -32,17 +28,13 @@
       "sources": [
         {
           "code": "541905",
-          "tomes": [
-            "P00"
-          ],
+          "tomes": ["P00"],
           "role": "enseignant",
           "pagesTotal": null,
           "pagesLues": "inconnu"
         }
       ],
-      "sujets": [
-        "english"
-      ],
+      "sujets": ["english"],
       "sourcesLibres": [],
       "r7": null,
       "maj": "2026-07-17",
@@ -56,17 +48,13 @@
       "sources": [
         {
           "code": "501902",
-          "tomes": [
-            "P00"
-          ],
+          "tomes": ["P00"],
           "role": "enseignant",
           "pagesTotal": null,
           "pagesLues": "inconnu"
         }
       ],
-      "sujets": [
-        "arabic"
-      ],
+      "sujets": ["arabic"],
       "sourcesLibres": [],
       "r7": null,
       "maj": "2026-07-17",
@@ -80,22 +68,43 @@
       "sources": [
         {
           "code": "521902",
-          "tomes": [
-            "P00"
-          ],
+          "tomes": ["P00"],
           "role": "enseignant",
           "pagesTotal": null,
           "pagesLues": "inconnu"
         }
       ],
-      "sujets": [
-        "french"
-      ],
+      "sujets": ["french"],
       "sourcesLibres": [],
       "r7": null,
       "maj": "2026-07-17",
       "par": "seed",
       "notes": "Seed depuis _INDEX ([~] historique). Évaluer lecture + profondeur avant génération (R-5)."
+    },
+    {
+      "matiere": "svt",
+      "statut": "partielle",
+      "profondeur": "first-pass",
+      "sources": [
+        {
+          "code": "105905",
+          "tomes": ["P00"],
+          "role": "eleve",
+          "pagesTotal": 208,
+          "pagesLues": [
+            [1, 10],
+            [18, 23],
+            [54, 56],
+            [203, 208]
+          ]
+        }
+      ],
+      "sujets": ["sciences-vie-terre"],
+      "sourcesLibres": [],
+      "r7": null,
+      "maj": "2026-09-17",
+      "par": "claude",
+      "notes": "Fiche de CADRAGE ouverte le 2026-09-17 (é35, généralisation au concours 9ème). SOURCE UNIQUE assumée : aucun guide enseignant de SVT n'existe en classe 9 au corpus CNP — vérifié sur suivi/corpus-cnp.json, qui ne porte que 105905 pour la matière 05. Le manuel élève fait donc référence (règle « sources combinées »). ÉTABLI : page de garde, auteurs et évaluateurs, التوطئة intégrale (p.3), كيفيّة استعمال الكتاب (p.4-5), les 3 محاور et leurs 14 دروس avec pagination RÉELLE, l'architecture des أبواب de chaque درس (أفكّر → أنشّط وأفهم → أحوصل → أختبر مكتسباتي), et cinq ancrages relevés mot pour mot. ⚠️ DÉCALAGE DE PAGINATION MESURÉ : le فهرس court 2 pages en avance sur la page imprimée, vérifié sur six points (محور 1 → 6 et non 8 ; درس 1.1 → 8 et non 10 ; درس 1.2 → 19 et non 21 ; محور 2 → 54 et non 56 ; درس 2.1 → 56 et non 58 ; fin du محور 3 cohérente). Citer un numéro du فهرس envoie 2 pages trop loin. ⚠️ ÉCART DE PROGRAMME MASSIF, principal apport de la fiche : sur les 7 chapitres de content/sciences-vie-terre/, UN SEUL est au programme (01-takathur-insan = le محور 3 entier). Les cinq autres (immunité, hérédité, séismes, volcans, tectonique) ne figurent nulle part au فهرس et ont reçu le domaine « خارج البرنامج الرسمي » le même jour. À l'inverse deux محاور sur trois n'ont AUCUNE couverture : الاتّصال بالوسط (3 دروس) et وظائف التّغذية (6 دروس), soit 9 دروس sur 14 et ~143 des 200 pages de contenu. ⚠️ NE PAS CONFONDRE : l'id `svt` du corpus porte العلوم الفيزيائية (manuel 123901P00), pas la SVT. RESTE À FAIRE : corps des دروس des محاور 2 et 3 (وثائق, tableaux, textes de أحوصل), à lire au moment d'écrire chaque chapitre. R-7 formelle NON FAITE (r7: null) ; les six points de pagination et l'écart de programme ont en revanche été vérifiés en propre sur la page imprimée."
     }
   ]
 }
