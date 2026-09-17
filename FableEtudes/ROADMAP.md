@@ -303,7 +303,23 @@ flowchart TD
       ligne arabe, et faisait 500 des 550 constats du premier jet ; et une leçon **française**
       citant un nom arabe n'est pas une leçon arabe — la question se pose au **document**, jamais
       à la ligne, sur une ligne courte le latin faisant jeu égal avec l'arabe.
-      **Reste** : le lot 7 (mesure, au premier trafic) et le lot 8 (bilan, qui tranche Q-5).
+      🚀 **2026-09-17 — LA CAMPAGNE SORT DES MATHS : le concours 9ᵉ.** Périmètre arbitré :
+      `arabic` (11 ch.), `french` (10), `sciences-vie-terre` (7) — **28 chapitres, 169 sections**,
+      et sur ces 169 sections **zéro bloc de savoir, zéro exemple résolu, zéro contrôle** : l'état
+      exact de maths avant la campagne, avec un gate SILENCIEUX faute de bloc à saisir.
+      ⚠️ **Piège du corpus, levé avant d'écrire** : la matière dont l'id est `svt` **n'est pas de
+      la SVT** — son `nameFr` est العلوم الفيزيائية et ses chapitres sont lumière, atomes, pH,
+      loi d'Ohm. La vraie SVT est `sciences-vie-terre`, et c'est elle qui est visée.
+      **Livré** : `course-explanation.md` §1bis, ce qui remplit chaque temps dans chaque
+      discipline — le guide CNP d'arabe **prescrit déjà le patron** (نصّ انطلاق → ملاحظة → قاعدة
+      → خلاصة → إنجاز) ; en français la notion est une **transformation** et son T3 est un tableau
+      avant/après ; en SVT **le schéma EST la notion**. Plus **une maquette par discipline**, à
+      zéro constat, 19 contrôles rendus repliés.
+      ⚠️ **Un mur, nommé maintenant** : le drapeau `coursePattern` ne pourra PAS être posé sur ces
+      matières. C-5 exige qu'un `coursePitfalls` déclaré soit encodé par un distracteur, et
+      **aucun distracteur n'est tagué hors de `math` et `math-6eme`**. Les cours se réécrivent ;
+      l'armement du gate attend la campagne de tagging (é30).
+      **Reste** : les 25 chapitres, puis le lot 7 (mesure, au premier trafic) et le lot 8 (bilan, qui tranche Q-5).
       Le topo public suit (arena#1049 à l'écriture, **arena#1051** au passage en exécution) : le
       gate `etudes-index` compare l'en-tête de l'étude au §4 de `STATUS.md`, et les deux dépôts
       se contredisent tant que les deux PR ne sont pas mergées — c'est arrivé sur privé#403, dont
