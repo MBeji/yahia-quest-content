@@ -290,6 +290,19 @@ flowchart TD
       touché (`06-fonctions`) échouait DÉJÀ à `prettier --check` sur `main` depuis le lot 2 — la
       passe a absorbé une dette latente, elle ne l'a pas créée. D'où la règle ajoutée :
       `prettier --check` AVANT de toucher un chapitre, et vérifier les `<svg>` par extraction.
+      ✅ **2026-09-17 — C-7, la moitié de R-14 que rien ne tenait.** La glose entre parenthèses
+      était une règle écrite ; l'interdiction de la **phrase** à moitié française au milieu d'une
+      proposition arabe n'était gardée par rien — et elle a fui **trois fois** dans la seule
+      campagne pilote, dont deux après une purge à la main. Le contrôle lit le **script** des
+      caractères, jamais le sens (D-7 tient). **Zéro constat sur les 1 546 fichiers**, et le total
+      du gate revient exactement à sa ligne de base : il n'ajoute aucun bruit.
+      ⚠️ **Trois défauts trouvés en MESURANT, aucun deviné**, et les trois valent pour la suite :
+      la classe `[A-Za-zÀ-ÿ]` avale `×` (U+00D7) et `÷` (U+00F7), **opérateurs rangés entre les
+      lettres accentuées de Latin-1** — miroir exact de la leçon déjà écrite sur l'arabe (la
+      virgule U+060C n'est pas une lettre) ; le **mot-clé** d'une directive est du latin sur une
+      ligne arabe, et faisait 500 des 550 constats du premier jet ; et une leçon **française**
+      citant un nom arabe n'est pas une leçon arabe — la question se pose au **document**, jamais
+      à la ligne, sur une ligne courte le latin faisant jeu égal avec l'arabe.
       **Reste** : le lot 7 (mesure, au premier trafic) et le lot 8 (bilan, qui tranche Q-5).
       Le topo public suit (arena#1049 à l'écriture, **arena#1051** au passage en exécution) : le
       gate `etudes-index` compare l'en-tête de l'étude au §4 de `STATUS.md`, et les deux dépôts

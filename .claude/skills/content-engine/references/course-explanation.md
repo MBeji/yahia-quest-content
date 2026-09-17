@@ -190,6 +190,22 @@ existe, car en lycée on bascule en français. » Ce qui reste interdit est ce q
 pas : une **phrase** à moitié française au milieu d'une proposition arabe (« ثلاث نسب égales, pas
 deux ») — elle casse le sens de lecture et n'est pas un terme.
 
+⚙️ **Et depuis le 2026-09-17, une machine tient cette moitié-là : le contrôle C-7** du gate
+(`content:qa`). Il a été écrit parce que la règle avait fui **trois fois** dans la seule campagne
+pilote, dont deux après une purge à la main — une règle qu'aucune machine ne tient revient. Ce
+qu'il fait : sur une leçon dont le document est arabe, un mot en lettres latines hors d'une
+parenthèse, d'un `` ` ``, d'un `$$…$$` ou d'un groupe `[…]` est un constat. Il lit le **script**
+des caractères, jamais le sens : il ne sait pas le français de l'anglais, ni une bonne phrase
+d'une mauvaise. Il se tait sur la glose entre parenthèses (c'est la règle), sur les points et
+théorèmes à majuscule (`ABCD`, `Thalès`), sur les symboles d'unités et les noms de fonctions
+(`min`, `dam`, `cos`), et sur une leçon française qui cite un nom arabe. Deux régimes comme les
+six autres : `warn` sans `coursePattern`, `error` avec. Mesuré au 2026-09-17 sur les
+1 546 fichiers du corpus : **zéro constat** — la règle est tenue, et elle le restera.
+
+⚠️ **Un mot français SEUL compte.** Le premier prototype exigeait deux mots latins consécutifs et
+laissait donc passer « ثلاثة عدّات différentes », qui est pourtant exactement la faute. Un
+adjectif accroché à une proposition arabe est une phrase à moitié française, pas une étiquette.
+
 ### R-15 — What is off-programme stays out
 
 The pattern never adds a notion; it explains the ones that are there (axis 3).
