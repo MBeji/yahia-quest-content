@@ -137,7 +137,15 @@ aujourd'hui **qu'un seul** — voir §6, point 2.
    **−2 partout**. Seule la توطئة (p.3) tombe juste, les deux pages « كيفيّة استعمال الكتاب » (4-5)
    n'étant pas listées au فهرس. Citer un numéro du فهرس envoie donc le lecteur **2 pages trop loin** ;
    la colonne « réelle » du §2 est la seule à utiliser.
-2. ⚠️ **L'écart de programme est massif, et c'est le vrai constat de cette fiche.** Au 2026-09-17,
+2. ✅ **RÉSOLU le 2026-09-17 — les 14 دروس du programme existent désormais.** Le constat
+   ci-dessous était celui de l'ouverture de la fiche ; il est conservé parce qu'il explique le
+   chapitrage actuel, mais les 9 دروس manquants (محاور 1 et 2) et les 5 دروس du محور 3 ont été
+   écrits le même jour depuis le manuel, au patron des sept temps de l'étude 35. Reste ouvert le
+   sort de `01-takathur-insan`, qui couvre le محور 3 entier en 99 lignes et fait donc doublon avec
+   les chapitres 10 à 14 — arbitrage à porter au propriétaire (le retirer du catalogue, le garder
+   en chapitre de synthèse, ou le fondre). Constat d'origine :
+
+   Au 2026-09-17,
    `content/sciences-vie-terre/` porte 7 chapitres, dont **un seul est au programme** :
    `01-takathur-insan` = le محور 3 entier (ses 5 دروس compressés en un chapitre). Les cinq autres —
    `02-manaa` (immunité), `03-wiratha` (hérédité), `04-zalazil` (séismes), `05-barakin` (volcans),
@@ -149,10 +157,42 @@ aujourd'hui **qu'un seul** — voir §6, point 2.
    **العلوم الفيزيائية** (manuel 123901P00 — lumière, atomes, pH, loi d'Ohm). La SVT est
    `sciences-vie-terre` (manuel 105905P00). L'étiquetage de `svt` est trompeur et a failli faire
    travailler une session sur la mauvaise matière.
-4. **Corps des دروس des محاور 2 et 3 non transcrit page par page.** Les titres, la pagination réelle
-   et l'architecture des أبواب sont établis ; les وثائق et les textes de أحوصل de ces دروس restent à
-   lire au moment d'écrire chaque chapitre.
-5. **Le PDF n'est pas dans le dépôt** : `cnp-officiel/` est un dossier frère hors git (~2,8 Go) qui
+4. ✅ **RÉSOLU — le manuel est lu INTÉGRALEMENT (p.1-208) au 2026-09-17.** Ce point notait que le
+   corps des دروس des محاور 2 et 3 n'était pas transcrit ; les 14 دروس ont depuis été lus page par
+   page (وثائق, tableaux, textes de أحوصل, exercices), ainsi que les sections hors دروس :
+
+   - **p.44-53** — أقيّم + أضيف du محور 1 : encéphale et moelle en détail, poliomyélite, méningite,
+     béribéri et pellagre, classification des drogues (naturelles / semi-synthétiques /
+     synthétiques ; stimulantes / hallucinogènes / dépressives), réflexes du nourrisson (préhension,
+     Moro, redressement tête-tronc), défauts de la vision (astigmatisme, strabisme, presbytie),
+     conjonctivites virales et allergiques, rétinopathies diabétique et hypertensive ;
+   - **p.134-148** — أقيّم + أضيف du محور 2 : pyramide alimentaire, kwashiorkor / marasme /
+     scorbut, détail de l'appareil digestif et de ses glandes, formation du sang, **groupes
+     sanguins ABO** (antigènes, agglutinines, compatibilités, donneur et receveur universels),
+     athérosclérose, hypertension, endocardite, **capacité respiratoire** au spiromètre, asphyxie
+     et réanimation, polluants de l'air, **dialyse** et **lithiase rénale** ;
+   - **p.197-202** — أقيّم + أضيف du محور 3 : **courbe des hormones ovariennes** dans le sang
+     (وثيقة 55, œstrogènes en µg/mL et progestérone en pg/mL sur les 28 jours), et la
+     **fécondation in vitro** (طفل الأنابيب) : ses sept étapes, les facteurs de réussite et les
+     causes d'échec.
+
+   Ces sections sont des **compléments** (أضيف إلى مكتسباتي), pas des دروس : elles n'ouvrent pas de
+   chapitre, mais elles nourrissent les `::: exemple` et les exercices des chapitres existants.
+
+5. ⚠️ **Deux écarts numériques INTERNES au manuel, relevés et traités à découvert.** Ils ne sont pas
+   des erreurs de lecture :
+
+   - **durée de vie de l'ovule** : 24 heures dans l'أحوصل du درس 3.1 (p.158), « deux jours » dans
+     l'exercice p.171. Le chapitre 12 donne les deux et retient « un à deux jours » ;
+   - **longueur du cycle** : phase folliculaire 11-17 j + lutéale 14 j donne 25 à 31 j, quand le
+     même أحوصل (p.166) annonce un cycle de 24 à 32 j. Le `::: verifie` du chapitre 11 fait faire
+     l'addition à l'élève et conclut que les deux intervalles sont des approximations — seul le
+     lutéal est donné comme fixe.
+
+6. ⚠️ **Le فهرس du جزء 3 (p.150) porte le MÊME décalage +2** que le فهرس principal : il annonce
+   153 / 162 / 171 / 180 / 188 pour les cinq دروس du محور 3, là où les pages imprimées sont
+   151 / 160 / 169 / 178 / 186. Le manifeste porte les pages réelles.
+7. **Le PDF n'est pas dans le dépôt** : `cnp-officiel/` est un dossier frère hors git (~2,8 Go) qui
    n'existe que sur le poste. Depuis une session cloud il se télécharge sur
    `https://www.cnp.com.tn/arabic/PDF/105905P00.pdf` — mais le CNP **sert sa feuille de certificat
    seule**, donc la chaîne est incomplète et curl échoue tant que l'intermédiaire vendorisé du moteur
