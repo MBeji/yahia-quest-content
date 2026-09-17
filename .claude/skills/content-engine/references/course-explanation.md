@@ -132,11 +132,21 @@ The closest of the three to maths, and the one where T3 carries the most weight.
 - **T5** — the classic confusions are famous and worth naming: magnitude confused with intensity,
   « la plaque flotte » for « elle coulisse », dominance read as « the stronger trait wins ».
 - **T6** — the mechanism stated in general, plus the case that bends it.
-- ⚠️ **No official CNP fiche exists for this subject at 9ème** (checked 2026-09-17: the
-  `9eme-base` registry holds anglais, arabe, francais, maths and nothing else). The manual
-  `105905P00` is declared on the subject but not transcribed. Anchors therefore come from the
-  observable world, as R-2 allows when there is no activity to harvest — and **no notion may be
-  added** on that account (R-15).
+- ⚠️ **The manual EXISTS — the fiche does not, and those are two different things.** Corrected
+  2026-09-17, same day, after an owner's push-back. The first version of this line read « no
+  official source, so anchors come from the observable world, as R-2 allows when there is no
+  activity to harvest ». That was **false in its conclusion**: `105905P00` (« علوم الحياة
+  والأرض », 208 p., 7,3 MB) is catalogued in the CNP corpus and downloads from
+  `www.cnp.com.tn/arabic/PDF/` — which is on the cloud allowlist. What is missing is its
+  **transcription fiche**, a task, not an absence. Anchors come from the manual's أنشطة, as
+  everywhere else.
+- ⚠️ **A cloud session cannot read the PDF off disk**: `cnp-officiel/` is a 2.8 GB sibling of the
+  repo, deliberately out of git, and lives only on the workstation. It must be **fetched over
+  HTTPS**, and the CNP serves its leaf certificate alone — so the download fails on an
+  incomplete chain until the vendored intermediate is in the store. The engine ships the fix:
+  `node -e "import('./scripts/cloud/ca-bundle.mjs').then(m => m.buildCaBundle())"` writes a
+  combined bundle, then `CURL_CA_BUNDLE=<that file> curl -L <url>`. Without it the failure looks
+  like « the book does not exist », and that is exactly the wrong conclusion to draw.
 
 ---
 
