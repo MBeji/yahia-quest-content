@@ -263,9 +263,20 @@ flowchart TD
       un plafond par cours — 240 n'était que l'arithmétique d'un cours à six notions.
       ⚠️ **Et un constat de programme** : `05-systemes` est **hors programme 9ᵉ** — le registre
       de transcription l'établit sur les 221 pages du manuel.
-      ⚠️ **Deux chapitres restent candidats à la scission** sur le critère du NOMBRE de notions
-      (R-13 amendée) : `07-statistiques` en porte 15 et `18-quadrilateres` 12, au-dessus du seuil
-      de ~8. C'est une question de **programme**, pas de longueur — elle attend un arbitrage.
+      ✅ **2026-09-17 — les deux chapitres trop larges sont traités, et l'arbitrage a dit
+      REGROUPER, pas scinder** : `07-statistiques` **15 → 10 notions** (672 → 645 lignes) et
+      `18-quadrilateres` **12 → 9** (647 → 630). Le diagnostic était faux dans son sens : ce
+      n'était pas un programme trop large mais **ma réécriture qui avait éclaté des sections
+      qui n'en formaient qu'une** — les trois outils de démonstration du `18` étaient UNE
+      section avant le lot 6, et le cours les annonçait déjà comme « les trois outils ». Chaque
+      couture porte une **phrase de pont**, jamais deux blocs recollés ; les **11 figures sont
+      octet pour octet** ; 0 erreur sur les 999 chapitres.
+      ⚠️ **Un avertissement C-6 est ASSUMÉ, pas contourné** : la section fusionnée des trois
+      outils fait **66 lignes de contenu** pour un seuil de 60, et le gate dit vrai — elle porte
+      trois règles. Ni le seuil relevé ni exemption ajoutée : C-6 sort en `warn` **même sous le
+      régime `error`**, précisément pour qu'un arbitrage humain puisse le porter en le laissant
+      visible. La seule autre issue était de supprimer un exemple résolu — payer de
+      l'enseignement pour satisfaire une mesure.
       ✅ **2026-09-17 — la glose française, sur arbitrage du propriétaire** : « tu peux laisser
       du français si déjà le terme arabe existe, car en lycée on bascule en français. » **R-14 est
       amendée** — chaque terme-clé porte son équivalent français entre parenthèses à sa PREMIÈRE
