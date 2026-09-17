@@ -69,7 +69,10 @@ official scope + language of instruction).
    edge case) → **vérifier sur place** (`::: verifie`, question above the `---`, folded answer
    below, restating the reasoning). Close with `::: retenir`, one line.
    The definition never opens a section; the general rule never precedes its example; one method
-   at first contact. Budget: **18–40 lines per theory section, no ceiling on the file** — a course
+   at first contact. In an Arabic course, each key term carries its **French equivalent in
+   parentheses at its FIRST occurrence** and nowhere else (`**الوتر** (hypoténuse)`) — lycée
+   switches to French, so 9ème hands the pairing over. Never inside `$$…$$`, a table or a caption.
+   Budget: **18–40 lines per theory section, no ceiling on the file** — a course
    is that budget times its notions. Past ~8 notions, raise a split as a CURRICULUM question;
    never truncate, and never judge a course by `wc -l`.
 4. **ILLUSTRATE — a rule about shapes taught without a drawing is a non-conformity**

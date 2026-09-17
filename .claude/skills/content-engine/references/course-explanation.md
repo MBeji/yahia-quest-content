@@ -170,6 +170,26 @@ The manual's terms (its « Vocabulaire & terminologie officielle » table), West
 formulas alone on their line, U+00A0 inside grouped Arabic numbers, decimal comma. All of
 `math-and-notation.md` applies; nothing here softens it.
 
+**French gloss on first use — and it is a rule, not a tolerance.** Tunisian maths switches to
+**French** at lycée: the student who learns الوتر in 9ème meets _hypoténuse_ a year later. So the
+first time a key term appears in a chapter, it carries its French equivalent in parentheses —
+`**الوتر** (hypoténuse)` — and never again after that. This is not a language mix: the sentence
+stays Arabic, the gloss is a label. Rules:
+
+- **Key terms only** — what a definition or a property names: the objects (شعاع → vecteur), the
+  operations (التعميل → factorisation), the named theorems (نظرية طاليس → théorème de Thalès).
+  Not ordinary words, not emphasis, not a whole phrase.
+- **First occurrence in the chapter, once.** A second gloss is noise; the student has the pairing.
+- **Never inside `$$…$$`, a table cell, or a figure caption** — the parenthesis breaks the LTR run
+  in RTL, and a caption has no room for it.
+- **The Arabic term still leads.** The gloss follows it; it never replaces it, and it never opens
+  a sentence.
+
+Arbitré par le propriétaire le 2026-09-16 : « tu peux laisser du français si déjà le terme arabe
+existe, car en lycée on bascule en français. » Ce qui reste interdit est ce que cette règle n'est
+pas : une **phrase** à moitié française au milieu d'une proposition arabe (« ثلاث نسب égales, pas
+deux ») — elle casse le sens de lecture et n'est pas un terme.
+
 ### R-15 — What is off-programme stays out
 
 The pattern never adds a notion; it explains the ones that are there (axis 3).
@@ -211,6 +231,15 @@ La réponse, qui REDIT le raisonnement : l'étape et son pourquoi.
 > unformatted file proves nothing about what lands in the PR. Same family of trap as the one that
 > mangled the Arabic gabarit of the étude: Prettier does not know this vocabulary, so the author
 > writes so that reformatting is a no-op.
+>
+> **Second face of the same trap (é35 lot 7)**: Prettier also **rewrites inside an `<svg>`** — it
+> inserted a blank line after the opening tag of the figure in `06-fonctions`. Harmless in SVG
+> (whitespace is insignificant there, and `content:figures:check` stays green), but it breaks the
+> « byte for byte » invariant the campaign claims for figures. Two consequences: run
+> `prettier --check` on a chapter **before** touching it — a file that already fails on `main`
+> carries a latent rewrite that your commit will absorb and appear to own; and when you assert that
+> figures survived untouched, **verify it**, by extracting the `<svg>` blocks before and after and
+> comparing them, not by trusting that you did not edit them.
 
 ---
 

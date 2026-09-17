@@ -22,7 +22,9 @@ like a credible exam — no emojis, no slang.
 3. 5–7 `##` sections, each led by a thematic emoji (🏰 ⚡ 🛡️ 🔮 🧮 🧪 📐). Bold every key term;
    italicize example phrases. **Each section is written to the notion pattern** — ancrer, nommer,
    voir, résoudre, distinguer, généraliser, vérifier sur place: `course-explanation.md`. That
-   file also carries the length budget — **18–40 lines per theory section, and no per-course
+   file also carries the **French gloss on first use** (`**الوتر** (hypoténuse)` — once per
+   chapter, key terms only, never inside a formula or a table: lycée switches to French), and the
+   length budget — **18–40 lines per theory section, and no per-course
    ceiling**: a course is that budget times its notions, and past ~8 notions it is the notion
    COUNT, not the line count, that sends it up for a split.
    This skeleton describes the wrapper, not the explanation inside it.
