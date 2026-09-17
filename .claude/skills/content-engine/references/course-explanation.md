@@ -58,6 +58,88 @@ the worked example before the general rule, and the classic mistake contrasted a
 
 ---
 
+## 1bis. The pattern outside mathematics — grammar, rhetoric, life sciences
+
+Added 2026-09-17, generalising the pattern to the other **9ème concours** subjects (`arabic`,
+`french`, `sciences-vie-terre`). The seven times describe **how a novice meets a notion**, not how
+a number is computed. Nothing in §1 is discipline-specific except the illustrations. What changes
+from one subject to the next is **what fills T3 and T4** — « sees it » and « watches it solved » —
+and that is exactly what this section fixes, so that no one has to guess it chapter by chapter.
+
+**The rule that governs the whole section**: a « worked example » is a **reasoning carried out in
+front of the student, step by step, each step with its why**. In maths that reasoning is a
+computation. It is no less a reasoning when it is an إعراب, a transformation of a sentence, or the
+reading of a seismogram — and a lesson that states the rule and stops has taught nothing in any of
+the three.
+
+### النحو والبلاغة (`arabic`) — the official guide already prescribes the pattern
+
+The CNP teacher guide (`501902P00`, 18 دروس) states its own method, and it is ours:
+**نصّ انطلاق → ملاحظة → قاعدة → خلاصة → إنجاز** — a starting text, observation, the rule, the
+wrap-up, production. It is inductive by design: the rule is **read off** an example, never posed
+first. Writing to the pattern here is not importing a foreign method, it is finally applying the
+guide's own.
+
+| time | what fills it in نحو                                                                                                                                                                            |
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| T1   | the **نصّ انطلاق**: one short sentence — ideally the guide's — where the point is visible. The strongest anchor is a **vowel that changes the meaning** (`ما أجملَ` vs `ما أجملُ`)              |
+| T2   | `::: definition` — the official term (معرب، مبني، نائب الفاعل), alone on its line                                                                                                               |
+| T3   | a **contrast table**: the SAME word in three positions, its ending changing. That table is what a figure is in geometry — no `::: figure`, and the gate no longer asks one of a grammar chapter |
+| T4   | `::: exemple` — a **full إعراب**, word by word, each with its **لأنّ**. Never « إعراب: مرفوع » with no reason                                                                                   |
+| T5   | `::: piege` — the confusion the quiz's distractors actually encode: الفعل الماضي marked معرب, الجرّ applied to a فعل                                                                            |
+| T6   | `::: propriete` — the قاعدة, with its **exception** (the الأسماء الخمسة, the ممنوع من الصرف)                                                                                                    |
+| T7   | `::: verifie` — **أعرب** this word, or vowel this ending. The answer folded, and it restates each لأنّ                                                                                          |
+
+⚠️ **R-14's French gloss does NOT apply to `arabic`.** The gloss exists because Tunisian maths
+switches to French at lycée, so the pupil who learns الوتر meets _hypoténuse_ a year later. Arabic
+grammar is taught in Arabic at lycée too: there is no later French term to hand over, and glossing
+المبتدأ or المنصوبات would invent a pairing the pupil will never need. The terms stay Arabic, alone.
+
+### Le français (`french`) — the notion is a transformation
+
+Same shape, one difference: a French grammar notion is almost always an **operation on a sentence**
+(active → passive, direct → indirect, tense agreement). The example is therefore the transformation
+**carried out**, not its result exhibited.
+
+- **T1** — a sentence the pupil would really write, and the question it raises. The best anchors are
+  the ones where the naive answer is wrong: « Il m'a dit qu'il **viendra** » — why does it have to
+  be _viendrait_ ?
+- **T3** — the **before / after table**, with the moving parts in bold: what the pronoun becomes,
+  what the tense becomes, what the time marker becomes. The transformation has to be **seen**.
+- **T4** — the transformation in 3–5 steps, each with its why, on ONE sentence carried through.
+- **T5** — the interference mistake, which in Tunisia is often a **calque from Arabic or from the
+  spoken language**, not an ignorance of the rule. Name it as such.
+- ⚠️ **No figure is required, and none should be invented.** The gate stopped asking (it used to,
+  wrongly: `01-types-et-formes-de-phrases` was flagged on the word « forme »). A drawing of a
+  subordinate clause teaches nothing; the contrast table is this discipline's T3.
+- R-14's Arabic gloss does **not** apply here — the subject is written in French throughout.
+
+### علوم الحياة والأرض (`sciences-vie-terre`) — the schema IS the notion
+
+The closest of the three to maths, and the one where T3 carries the most weight.
+
+- **T1** — an **observable** the pupil has met: the ground shakes, a wound heals, a child has their
+  grandfather's eyes. The question comes from the observation, never from the vocabulary.
+- **T3 — `::: figure`, and it is not optional.** A mechanism, a cycle, a section: a fault that
+  slips, a magma chamber, a genetic cross, a cell recognising another. **The notion lives in the
+  drawing and the prose annotates it** — the reverse of a maths chapter, where the figure
+  illustrates a statement that already stands alone. The gate now knows this family (`SCHEMA`) and
+  asks for the figure; before 2026-09-17 it said nothing at all about these seven chapters.
+- **T4** — « watched solved » is a **reasoning chain on a real case**: read this seismogram and
+  locate the epicentre, do this cross and count the offspring, follow this antigen. Genetics is
+  literally computational (an échiquier de croisement is an example with steps); seismology and
+  tectonics are chains of inference.
+- **T5** — the classic confusions are famous and worth naming: magnitude confused with intensity,
+  « la plaque flotte » for « elle coulisse », dominance read as « the stronger trait wins ».
+- **T6** — the mechanism stated in general, plus the case that bends it.
+- ⚠️ **No official CNP fiche exists for this subject at 9ème** (checked 2026-09-17: the
+  `9eme-base` registry holds anglais, arabe, francais, maths and nothing else). The manual
+  `105905P00` is declared on the subject but not transcribed. Anchors therefore come from the
+  observable world, as R-2 allows when there is no activity to harvest — and **no notion may be
+  added** on that account (R-15).
+
+---
+
 ## 2. The rules, one by one
 
 ### R-1 — One section, one notion, the seven times in order
