@@ -18,8 +18,13 @@
 > **Pages lues (couche-texte intégrale UTF-8 + vision de contrôle)** : **lecture intégrale de la couche-
 > texte** (`pdftotext -enc UTF-8 -layout`, **propre**, ~138 Ko de français exploitable, pas de mojibake)
 > — les **64 pages** ; **vision de contrôle** : p.1 (couverture) et **p.6 (tableau officiel « Repères
-> culturels et thématiques » = les 4 domaines × niveaux)**. **Transcrit le** : 2026-06-29. **Statut** :
-> transcription fidèle du document officiel.
+> culturels et thématiques » = les 4 domaines × niveaux)**. **Transcrit le** : 2026-06-29 · **lecture re-vérifiée contre la source le 2026-09-18**
+> (contrôle de fidélité page à page sur les tableaux de programme p.9–20, la borne p.15, la typologie de
+> lecture p.12, les annexes p.55–64 ; **offset imprimé↔PDF = 0**, confirmé folio par folio). **Statut** :
+> transcription fidèle du document officiel, **à profondeur de génération** — les colonnes « Contenus
+> linguistiques » de p.17–20 sont reprises **item par item** (12/12 sur p.17, l'intégralité des
+> homophones de p.18, les 5 items de p.19, les 2 de p.20 + les 3 Observations), et les annexes
+> (versification p.61–64, grammaire intégrée p.55–57) sont restituées avec leur appareil.
 > **Langue d'enseignement** : `fr` (monolingue — le français **est** la langue d'instruction).
 > **gradeSlug** : `9eme-base`. **subject id** attendu : **`french`** (⚠️ id **non suffixé** ; le contenu
 > 9ème existe déjà sous `content/french/`, voir §4).
@@ -62,8 +67,11 @@ structuré · **C** = consolidation · **I** = intégration. Lecture des colonne
 
 - **Oral** (p.8) — _Présenter_ : **C**(onsolidation)/I ; _se présenter_ : **C** ; _Informer/s'informer_ :
   **C** ; _Expliquer/justifier_ : **C** ; _Discuter_ : **S** (la sensibilisation ne fait pas l'objet de
-  l'évaluation sommative). Remarque p.7 : « discuter » (dialoguer) fait l'objet d'un \*\*apprentissage
-  structuré en 7ème, d'une consolidation en 8ème et d'un enseignement intégré en 9ème ».
+  l'évaluation sommative). Remarque 2 de p.7, **verbatim** : « Ayant fait l'objet d'une
+  sensibilisation au niveau du 1er cycle de l'enseignement de base, la capacité « discuter » — dans le
+  sens de **dialoguer** — fera l'objet d'un **apprentissage structuré en 7ème année**, d'une
+  **consolidation en 8ème année** et d'un **enseignement intégré en 9ème année**. » _(Donc en 9ème,
+  « discuter » ne s'enseigne plus comme une leçon à part : il s'intègre aux autres activités.)_
 - **Écrit** (p.16) — _Raconter en décrivant / en faisant parler_ : **9ème = consolidation/intégration**
   (la capacité « raconter » est privilégiée au 1er cycle → **apprentissage structuré en 7ème,
   consolidation en 8ème, intégration en 9ème**, p.16) ; _Informer/s'informer_ : **C** ;
@@ -214,6 +222,27 @@ l'argumentation**), avec les **correspondances thématique ↔ discursive** (p.3
   dialogue** ; **verbes d'opinion, verbes de sentiment, vocabulaire appréciatif/dépréciatif,
   modalisateurs** ; lecture d'**œuvre intégrale** (module de lecture) et de **l'image**.
 
+> ⭐ **Deux Observations officielles qui se contredisent en apparence — et qu'il faut lire ensemble.**
+> Le programme donne une consigne **opposée** selon l'activité, et c'est délibéré :
+>
+> - **ORAL (Observation 1, p.9, verbatim)** : « **Les contenus linguistiques ne doivent pas faire l'objet
+>   d'un apprentissage systématique, ils doivent être exploités en situation** pour favoriser une
+>   expression claire et adaptée au contexte. »
+> - **ÉCRITURE (Observation 2, p.20, verbatim)** : « **Tous les contenus linguistiques inscrits au
+>   programme doivent être traités.** Ils seront étudiés en relation étroite avec la lecture, l'écriture
+>   et la pratique de l'oral. […] Mais **certains faits de langue précis** (syntaxe, orthographe,
+>   conjugaison, vocabulaire) **feront l'objet, en cas de besoin, d'un apprentissage systématique**. »
+>
+> Autrement dit : à l'oral la langue se travaille **en situation** ; à l'écrit elle se travaille **en
+> système**, et rien du programme ne peut être omis. Une leçon de langue 9ème est donc légitime — c'est
+> l'**oral** qui ne doit pas être découpé en leçons de grammaire.
+>
+> **Observation 2 de p.9** (progression) : « les capacités à développer étant souvent les mêmes, la
+> progression d'un niveau à l'autre (7ème, 8ème, 9ème) doit tenir compte des […] » — ce qui distingue les
+> niveaux n'est donc pas la liste des capacités mais leur **degré d'élaboration**, ce que la note de p.15
+> dit en clair : « en 7ème et 8ème année, la capacité "argumenter" vise essentiellement la justification.
+> **En 9ème année la justification sera plus élaborée.** »
+
 ### 2.5 Bornes de scope — synthèse (faits de langue 9ème, audit-critique)
 
 > Agrégées **du texte officiel du programme (p.9–20)** + recoupées avec l'existant `content/french/` (qui
@@ -353,7 +382,27 @@ formative ; contenu défini par le professeur à partir des erreurs récurrentes
   référence d'entraînement (p.53) ; leurs contenus « coïncident sensiblement » avec les modules 1, 2 et 4
   du manuel — cohérent avec `content/french/10-annales-sujets-types`.
 
-### 3.4 Notation standard
+### 3.4 Le piège du sommaire — ses pages sont FAUSSES au milieu du document
+
+> ⚠️ **Trouvé le 2026-09-18, à ne pas re-découvrir.** Le **sommaire (p.3) annonce des pages erronées**
+> pour tout le bloc central. Les vraies pages ont été relevées **folio par folio** sur le pied de page de
+> chaque page (offset imprimé↔PDF = **0**) :
+>
+> | section                              | annoncé au sommaire p.3 | page RÉELLE | écart |
+> | ------------------------------------ | ----------------------- | ----------- | ----- |
+> | 2. Les instructions méthodologiques  | p.17                    | **p.21–22** | +4    |
+> | 3. Le contrôle continu               | p.26                    | **p.30**    | +4    |
+> | II. Le manuel _Pratique du Français_ | p.30                    | **p.34**    | +4    |
+> | III. Exemples de progressions        | p.36                    | **p.39**    | +3    |
+> | IV. Exemples de fiche                | p.40                    | **p.43**    | +3    |
+> | V. L'évaluation (sujets 2000–2008)   | p.53                    | **p.53**    | 0 ✅  |
+> | VI. Annexes                          | p.54                    | **p.54**    | 0 ✅  |
+>
+> **Toutes les pages citées dans CETTE fiche sont les pages RÉELLES**, pas celles du sommaire. C'est la
+> même leçon que sur le guide d'arabe `501902P00`, dont le الفهرست donnait des titres de دروس inexacts :
+> **sur un document CNP, la table des matières n'est pas une source — le folio de la page l'est.**
+
+### 3.5 Notation standard
 
 - **Chiffres latins 0–9**, équations / nombres LTR, unités SI. Aucune notation arabo-indienne (contenu
   français monolingue). Les barèmes sont en points (« (10 points) », « (7 points) ») — chiffres latins.
@@ -383,8 +432,10 @@ formative ; contenu défini par le professeur à partir des erreurs récurrentes
 > élève**. Le manuel élève _Pratique du Français_ 9ème (qui porterait les pages par chapitre — les fiches
 > y renvoient : « p.12-13 », « p.216-218 », « p.230-234 », etc.) **n'est pas présent dans le corpus**
 > sous un code identifié → colonne « manuel élève » laissée vide (cf. `_TEMPLATE.md` §4 : laisser vide si
-> indisponible). Candidats à rastériser si l'on veut ces pages : `501902P00.pdf` (1,4 Mo) et
-> `541905P00.pdf` (234 Ko) du même dossier — **non identifiés/non transcrits ici** (cf. §5).
+> indisponible). ✅ **Le manuel élève EST identifié depuis le 2026-09-18** : c'est **`121905`** « **فرنسية** »
+> (rôle `eleve`, matière **21**) au registre `suivi/corpus-cnp.json` — **non lu**. C'est lui qui porte les
+> pages auxquelles les fiches du guide renvoient (« p.12-13 », « p.216-218 », « p.230-234 »). La colonne
+> reste vide tant qu'il n'est pas lu, mais **on sait désormais quoi lire**.
 >
 > **Note de structure** : l'existant `content/french/` est organisé **par faits de langue** (grammaire/
 > conjugaison/lexique/types de textes/compréhension/annales), **pas par centre d'intérêt** (Enfants de
@@ -420,10 +471,22 @@ production-ecrite`, `10-annales-sujets-types` — **tous** dans le programme off
   - `programme/7eme-base/francais.md` (= borne basse lointaine) : 7ème = présent/passé composé/futur/
     impératif + expansion simple du GN.
 - **Autres PDF du dossier `c9/enseignant/`** (traçabilité) :
-  - `501902P00.pdf` — **1,4 Mo** : très probablement le **manuel élève** _Pratique du Français_ 9ème (ou
-    un volume associé) — **non transcrit ici** (hors périmètre ; à rastériser en vision si l'on veut les
-    pages par chapitre du §4).
-  - `541905P00.pdf` — **234 Ko** : code de **série différente** (54xxxx), à identifier.
+  - ⛔ **`501902P00.pdf` — FAUX INDICE, corrigé le 2026-09-18.** Cette fiche le donnait comme « très
+    probablement le **manuel élève** _Pratique du Français_ 9ème ». **C'est faux** : le registre
+    `suivi/corpus-cnp.json` l'identifie **matière 01** — « **الدليل المرجعي في النحو العربي** », le guide
+    enseignant de **grammaire arabe**, qui a été **lu intégralement** le 2026-09-18 et transcrit dans
+    `programme/9eme-base/arabe.md`. Rien à voir avec le français.
+  - ⛔ **`541905P00.pdf`** (« code de série différente, à identifier ») — **identifié** : matière **41**,
+    « **الدليل المرجعي في اللغة الانقليزية** », le guide enseignant d'**anglais** 9ème (source déclarée
+    sur la fiche `anglais` du même niveau, encore non lue).
+  - ✅ **Le vrai manuel élève de français** est **`121905`** « **فرنسية** » (rôle `eleve`, matière 21),
+    présent au registre, **non lu**.
+  - 📌 **Leçon commune aux deux fiches (arabe et français)** : les deux transcriptions ont **deviné
+    l'identité d'un PDF d'après la taille de son fichier** au lieu d'interroger le registre — et se sont
+    trompées **symétriquement** (la fiche arabe désignait `521902` = français comme son support manquant ;
+    la fiche française désignait `501902` = arabe comme son manuel élève). Les trois `5xxxxx` de
+    `c9/enseignant/` sont **un الدليل المرجعي par langue** : arabe 01, français 21, anglais 41.
+    **Le registre `corpus-cnp.json` répond en une requête ; la taille d'un fichier ne prouve rien.**
 - **Taybah** (`taybah/9eme-base.md`) : **absent du corpus** → séquençage trimestriel non recoupé (mais le
   document fournit lui-même la **répartition annuelle indicative** p.37, §3.1).
 - **Divergences signalées** : voir §6.
@@ -450,10 +513,33 @@ production-ecrite`, `10-annales-sujets-types` — **tous** dans le programme off
   sensibilisation** en 9ème (pas d'évaluation sommative dessus en tant que tel). Le chapitre
   `05-modes-et-temps-verbaux` les traite (subjonctif/conditionnel présents) : **cohérent**, à condition de
   rester au niveau **emplois introduits**, pas maîtrise exhaustive de toutes les valeurs (= au-delà).
-- **« Explicatif » et « résumé/compte rendu »** : **hors 9ème** (entrent en **1ère secondaire**, p.15).
-  Si du contenu `content/french/` introduisait le **résumé** ou le **texte explicatif** comme type
-  formalisé, ce serait un **léger débordement** vers le lycée (à vérifier dans `08`/`09` ; le scope 9ème
-  est narratif/descriptif/informatif/argumentatif).
-- **Pages du manuel élève par chapitre** (`chapter.manuel`) : **indisponibles** (manuel élève absent du
-  corpus sous code identifié ; `501902P00.pdf` candidat à rastériser). Colonne « manuel élève » du §4
-  laissée vide à dessein.
+- 🔴 **« Explicatif » : VÉRIFIÉ le 2026-09-18 — et c'est un écart réel dans `content/french/`, PAS
+  ENCORE CORRIGÉ.** La vérification portait sur trois points de la source, tous concordants :
+  - **p.15 (écriture)** : « explicatif » n'apparaît **que** dans la ligne de la **1ère année secondaire**
+    (« narratif, descriptif, informatif, **explicatif** / argumentatif, […] faire des **résumés et des
+    comptes rendus** »). La ligne **9ème** dit : « narratif / descriptif, **informatif**, argumentatif ».
+  - **p.12 (lecture)** : les types de textes listés sont « narratif, descriptif, **informatif**,
+    argumentatif… » — **explicatif n'y figure pas non plus**, même en reconnaissance.
+  - **tout le document** : « explicati- » n'apparaît ailleurs qu'en p.26 (« les fonctions narrative,
+    descriptive, **explicative** et argumentative **de l'image** » — autre activité) et p.38 (adjectif au
+    fil du texte). **Donc : « explicatif » n'est pas un type de texte du programme de 9ème.**
+  - **Constat sur le contenu** : `content/french/08-types-de-textes-et-production-ecrite` ne se contente
+    pas d'_ajouter_ « explicatif » — il **remplace** le type officiel **informatif** par lui dans sa
+    typologie des quatre types (`cours.md` l.16 et le tableau l.24, `resume.md` l.3, plus les exercices
+    `01-pratique`, `02-boss`, `04-defi`, `05-entrainement` où « Explicatif » est parfois la **bonne
+    réponse**). `09-comprehension-production-ecrite` est moins touché (l.82 « Informatif / explicatif »
+    est une glose défendable ; son `05-entrainement` porte une option « Texte explicatif »).
+  - **Pourquoi ça compte** : le mot **informatif** est exactement ce que le programme demande de
+    **produire** (p.20 : « Produire un texte **informatif** : écrire pour informer — lettre personnelle /
+    lettre officielle ») et de **reconnaître** (p.12). Un élève de 9ème formé sur une typologie sans
+    « informatif » aborde l'épreuve sans le mot qu'on lui demandera d'employer.
+  - **Non corrigé ici, à dessein** : l'alignement touche **~20 occurrences dans 8 fichiers de 2
+    chapitres**, dont plusieurs **clés de correction** d'exercices — c'est un lot de contenu à part
+    entière, avec re-dérivation de chaque bonne réponse, pas un `sed` accroché à une PR de registre
+    (cf. AGENTS.md § Multi-agent collaboration : un lot = une PR sur un jeu de fichiers distinct).
+  - **✅ `résumé` / `compte rendu`** : **aucun débordement** — vérifié, le mot « résumé » n'apparaît dans
+    `09` que pour dire qu'une question d'inférence « attend une **relation**, pas un résumé ».
+- **Pages du manuel élève par chapitre** (`chapter.manuel`) : **toujours indisponibles, mais la source
+  est désormais nommée** — **`121905`** « فرنسية » (élève, matière 21) au registre, **non lu**. Colonne
+  « manuel élève » du §4 laissée vide jusqu'à cette lecture. _(L'ancien candidat annoncé ici,
+  `501902P00`, était le guide d'**arabe** — voir §5.)_
