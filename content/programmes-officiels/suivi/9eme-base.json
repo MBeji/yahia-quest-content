@@ -79,8 +79,8 @@
     },
     {
       "matiere": "francais",
-      "statut": "partielle",
-      "profondeur": "mixte",
+      "statut": "complete",
+      "profondeur": "generation",
       "sources": [
         {
           "code": "521902",
@@ -88,8 +88,8 @@
             "P00"
           ],
           "role": "enseignant",
-          "pagesTotal": null,
-          "pagesLues": "inconnu"
+          "pagesTotal": 64,
+          "pagesLues": "integral"
         }
       ],
       "sujets": [
@@ -97,9 +97,10 @@
       ],
       "sourcesLibres": [],
       "r7": null,
-      "maj": "2026-07-17",
-      "par": "seed",
-      "notes": "Seed depuis _INDEX ([~] historique). Évaluer lecture + profondeur avant génération (R-5)."
+      "maj": "2026-09-18",
+      "par": "claude",
+      "notes": "521902P00 = « Pratique du Francais — 9e annee — Document de l'enseignant » (CNP, auteurs EL YOUSFI & HEDHIRI-HANI). Particularite : ce document REPRODUIT le texte du programme officiel (p.6-20) + les instructions methodologiques (p.21-29) + le controle continu (p.30-33) — c'est donc le programme stricto sensu, autorite maximale. 64/64 pages lues (couche-texte propre, pas un scan), lecture RE-VERIFIEE page a page contre la source le 2026-09-18 : les colonnes « Contenus linguistiques » de p.17-20 sont reprises item par item (12/12 sur p.17), la borne p.15 et la typologie p.12 sont exactes, les annexes p.55-64 restituees. Les 10 chapitres de content/french tombent tous dans le programme p.9-20 (mapping §4) => statut complete. PIEGE ECRIT DANS LA FICHE : le sommaire p.3 annonce des pages fausses (+3 a +4) sur tout le bloc central — se fier au folio, pas au sommaire. ECART DE CONTENU OUVERT (non corrige, lot a part) : content/french/08 remplace le type officiel « informatif » par « explicatif », hors programme 9eme (il entre en 1ere sec., p.15) — ~20 occurrences dans 8 fichiers, dont des cles de correction. Manuel eleve = 121905 (فرنسية), non lu.",
+      "chapitresGeneration": []
     },
     {
       "matiere": "svt",
