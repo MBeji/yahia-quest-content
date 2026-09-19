@@ -634,3 +634,45 @@ Après ص 75, ص 110 et ص 155 relevés plus haut : **ص 178** et **ص 181** por
 - **R-7 : non faite.** La fiche est `complete` — 223/223 pages lues en profondeur de génération — mais **aucune relecture indépendante n'a été enregistrée**. Ce qui reste à faire pour `validee-r7` : recouper un échantillon des 37 écarts du §6 par un second lecteur, et trancher les **deux réserves de vraisemblance** laissées ouvertes (les 25 kg/an du mulot ص 210, le classement de l'أفعى ص 216).
 - **Manuel élève `103504` hors `sources`** : la fiche s'en sert pour la colonne pages du §4 (index ص 175) mais seules trois de ses 176 pages ont été lues. Il n'est donc **pas** déclaré comme source au registre — l'y ajouter ferait retomber la couverture sous 100 %, à juste titre. Sa lecture intégrale est un travail à part.
 - **Champ `chapter.manuel`** : non encore renseigné dans les `chapter.json` publiés (aucun ne porte la clé `manuel`) ; les pages de §4 sont prêtes à l'alimenter (`{ code: "103504", pages: … }`).
+
+## 8. Confrontation contenu servi ↔ guide (le 2026-09-19)
+
+Une fois le guide lu, la question qui compte n'est plus « que dit le guide » mais « **le contenu servi le suit-il, et suit-il le bon** ». Le sujet `eveil-scientifique-5eme` sert **350 questions** (35 × 10 chapitres). Chaque clé de réponse touchant un des 37 écarts du §6 a été re-résolue contre le fichier.
+
+### Verdict : aucune clé du contenu ne suit un corrigé fautif du guide
+
+| Piège du guide                                                   | Questions concernées | Résultat                                                                                                    |
+| ---------------------------------------------------------------- | -------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **La Lune** (مضيء vs مضاء منير, §6 écart 1)                      | **28**               | ✅ **toutes justes** — « القمر يعكس ضوء الشمس », « مُضاء: القمر ». Le contenu suit ص 36/47/48, pas ص 44/67.  |
+| **Sens des flèches de la chaîne alimentaire** (écart 27)          | 3                    | ✅ « تبدأ السلسلة الغذائيّة دائمًا بـ **نبتة** » — le sens du **dessin**, et aucune question sur la flèche. |
+| **Tendon vs ligament** (écart 9)                                  | 16                   | ✅ « الحبل الذي يربط العضلة بالعظم هو **الوتر** » — suit ص 82, pas les « أربطة » de ص 104–105.              |
+| **Artère / veine, petite / grande circulation**                   | 18                   | ✅ toutes justes, dans les deux sens, y compris la question « chasse à l'erreur » sur le وريد.              |
+| **Conditions de germination** (la lumière, écart 30)              | 9                    | ✅ « الماء والهواء والحرارة المعتدلة » — **sans la lumière**, donc la bonne clé.                            |
+| **Ordre de potabilisation**                                        | 12                   | ✅ « الترسيب ← الترشيح ← التعقيم » partout.                                                                  |
+| **Définition de l'entorse** (écart 8)                             | **0**                | ⚪ notion non couverte — la définition fausse de ص 111 n'a rien pu contaminer.                               |
+| **Calcaire / argile** (corrigé inversé ص 213, écart 31)           | **0**                | ⚪ les tests du sol ne sont pas couverts.                                                                    |
+| **« Combien de types » de muscles / fractures** (écarts 10, 13)   | 1                    | ✅ la seule question porte sur la **fonction** des types d'os, jamais sur leur nombre.                       |
+| **Volts, « 60 فولط »** (écart 19)                                 | **0**                | ⚪ aucune question chiffrée en volts.                                                                        |
+| **Strates de végétation, bande 1,5–2 m** (écart 28)               | **0**                | ⚪ non couvert.                                                                                              |
+
+**Ce que ça veut dire.** Les 37 écarts du §6 ne sont pas une liste de réparations : c'est un document de **prévention**. Le contenu a été écrit à partir du التخطيط السّنوي et du manuel élève, pas des corrigés du guide — et c'est précisément ce qui l'a sauvé. La règle à garder pour toute génération future sur ce sujet : **la clé de réponse est le الملفّ العلمي et le التخطيط السّنوي ; un corrigé d'activité ne fait jamais foi.**
+
+### En revanche, le guide révèle des trous de couverture
+
+Mesurés par recherche plein texte sur les 350 questions + les 10 `cours.md` + les 10 `resume.md` :
+
+- 🔴 **`ابن الهيثم` : 0 occurrence.** Sa **thèse** est bien enseignée — le chapitre `01` dit « نكتشف أنّ الرؤية لا تتمّ إلّا بتوفّر عنصرين معًا: العين والضوء » — mais **son nom et son histoire n'apparaissent nulle part**, ni au cours, ni au résumé, ni dans les 35 questions. Or le التخطيط السّنوي (ص 29) inscrit « **عمليّة الرّؤية لابن الهيثم** » comme contenu propre avec **2 حصص**, le plus long créneau de l'unité 1, et le guide lui consacre une جذاذة entière (ص 49–52) plus une section du الملفّ العلمي (ص 39–40, avec ses dates : **965/354 هـ – 1039/430 هـ**, البصرة, la الغرفة السّوداء, et « دحض الاعتقاد السّائد بأنّ العين ترسل أشعّة ضوئيّة »). **C'est le seul écart de couverture qui touche un item nommé du programme.**
+- 🟠 **Croissance de l'os : 0** — ni `السمحاق` ni `غضروف النمو`. Le guide distingue pourtant croissance **en longueur** (cartilage de croissance) et **en largeur** (périoste), avec ses deux expériences (ص 79–80).
+- 🟠 **Déformations du rachis : 0** — ni `الجنف` ni `الحدب` ni `التقعّر`, alors que ص 85 les détaille et que le port du cartable est un sujet directement parlant à l'élève.
+- 🟠 **`النتح` (transpiration) : 0** — c'est pourtant l'objet de la جذاذة 10 entière (ص 202–204), avec son chêne à **20 000 L/mois** (ص 161).
+- 🟠 **`الدبال` (humus) : 0** et les **sept tests du sol** (ص 183–184) non couverts.
+- 🟡 **`الصهيرة` : 1 occurrence contre `القاطعة` : 20.** Le التخطيط السّنوي les cite ensemble ; le fusible est de fait absent.
+- 🟡 **`المتجانس` : 0** — la propagation rectiligne est énoncée sans la condition d'homogénéité que le guide pose trois fois (ص 38, 58, 59).
+- 🟡 **`الأسناخ`, `التامور`, `انتثار الضّوء` : 0** — vocabulaire précis disponible et inutilisé.
+- 🟡 **Les neuf محميّات de ص 167 : 0.** Matériau géographie × sciences entièrement inexploité.
+
+### Une correction appliquée aujourd'hui
+
+Les **10 `chapter.json`** du sujet citaient leur source comme « الدليل المرجعي في الإيقاظ العلمي » — le titre du catalogue CNP, que la page 1 du fichier dément (§6 écart 26). Ils citent désormais « **كتاب المعلّم في الإيقاظ العلمي** ».
+⚠️ Les **8 `chapter.json` de l'éveil 4ᵉ** portent la même formule et **n'ont pas été touchés** : leur guide (`503404`) n'a pas été lu. Vérification partielle faite ce jour : sa page 1 reproduit la **couverture du livre de l'ÉLÈVE** (« كتاب الإيقاظ **لتلاميذ** السّنة الرّابعة »), mais son فهرس est bien celui d'un guide du maître (التمشّي البيداغوجي, التخطيط السّنوي, الملفّات العلميّة, **جذاذات التنشيط** ص 47). Le **rôle** du catalogue est donc juste ; son **titre**, non — comme pour la 3ᵉ (`503304`), dont la page 1 dit « **كتاب المعلّم** ». Conclusion méthodologique : **le titre ne se lit pas sur la seule page 1** — il se lit page 1 **et** au فهرس.
+
