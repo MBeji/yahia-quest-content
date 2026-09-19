@@ -52,7 +52,7 @@
     {
       "matiere": "francais",
       "statut": "partielle",
-      "profondeur": "generation",
+      "profondeur": "mixte",
       "sources": [
         {
           "code": "521326",
@@ -61,7 +61,48 @@
           ],
           "role": "enseignant",
           "pagesTotal": 171,
-          "pagesLues": "inconnu"
+          "pagesLues": [
+            [
+              1,
+              30
+            ],
+            [
+              39,
+              49
+            ],
+            [
+              61,
+              62
+            ],
+            [
+              74,
+              75
+            ],
+            [
+              86,
+              87
+            ],
+            [
+              100,
+              101
+            ],
+            [
+              114,
+              115
+            ],
+            [
+              128,
+              129
+            ],
+            [
+              143,
+              144
+            ],
+            [
+              156,
+              157
+            ]
+          ]
         }
       ],
       "sujets": [
@@ -71,7 +112,7 @@
       "r7": null,
       "maj": "2026-09-19",
       "par": "claude/great-wright-e4cqyu",
-      "notes": "Seed depuis _INDEX ([x] historique). « J'apprends le français — Je joue et je projette ». ⚠️ CORRIGÉ le 2026-09-19 — le seed du 2026-07-17 déclarait `statut: complete`, `profondeur: generation` et `pagesLues: \"integral\"` : les trois étaient FAUX sur la couverture. L'en-tête « Pages lues » de la fiche elle-même énumère une liste PARTIELLE de pages (~91 % du guide, 171 p. au total — nombre mesuré ce jour sur le PDF du CNP), et plusieurs de ces en-têtes disent explicitement « hors-scope » pour ce qui suit. Vérifié au source sur trois fiches (4ème éveil, 1ère éveil, 5ème maths) avant d'être généralisé. `statut` passe donc à `partielle` (R-5 : génération interdite) et `pagesLues` à `inconnu` : les plages réelles se transcrivent depuis l'en-tête à la prochaine touche de la fiche — un parseur automatique les a produites fausses (deux en-têtes « Pages lues » dans la même fiche, plages fusionnées à tort), et publier une plage fausse serait exactement l'erreur qu'on corrige ici. `profondeur` est LAISSÉE telle que déclarée : elle n'a pas été mesurée, le prochain audit la jugera."
+      "notes": "Seed depuis _INDEX ([x] historique). « J'apprends le français — Je joue et je projette ». ⚠️ CORRIGÉ le 2026-09-19 — le seed du 2026-07-17 déclarait `statut: complete`, `profondeur: generation` et `pagesLues: \"integral\"` : les trois étaient FAUX sur la couverture. L'en-tête « Pages lues » de la fiche elle-même énumère une liste PARTIELLE de pages (~91 % du guide, 171 p. au total — nombre mesuré ce jour sur le PDF du CNP), et plusieurs de ces en-têtes disent explicitement « hors-scope » pour ce qui suit. Vérifié au source sur trois fiches (4ème éveil, 1ère éveil, 5ème maths) avant d'être généralisé. `statut` passe donc à `partielle` (R-5 : génération interdite) et `pagesLues` à `inconnu` : les plages réelles se transcrivent depuis l'en-tête à la prochaine touche de la fiche — un parseur automatique les a produites fausses (deux en-têtes « Pages lues » dans la même fiche, plages fusionnées à tort), et publier une plage fausse serait exactement l'erreur qu'on corrige ici. `profondeur` est LAISSÉE telle que déclarée : elle n'a pas été mesurée, le prochain audit la jugera. ▸ 2026-09-19, AUDIT R-7 : la fiche déclarait ~91 % de couverture et « transcription fidèle ». SEPT ÉCARTS confirmés au source : table de distribution p.20, cellule U6 séances 4-5 « c=k - è/ë » au lieu de « c=k - è/ê » ; phonétique de l'unité 1 « on [ɔ̃] à partir du chant maman/parents » alors que p.49 imprime « i/u [i/y] - a/an [a/ã] - on-an [ɔ̃ / ã] » (la ligne de la fiche n'est PAS sur la page) ; phonétique de l'unité 5 amputée de o/on et f/v, avec un « (cris d'animaux) » ajouté et marqué [?] ; phonétique de l'unité 6 écrite « [e/è] è/e », qui n'est pas de l'API et inverse la paire « é/è [e/ɛ] » ; phonétique de l'unité 8 où « reprise » a été déplacé de la première paire à la seconde ; structures de l'unité 1 amputées de « sous » ; et surtout le contenu linguistique de l'unité 1, qui avait GLISSÉ D'UNE COLONNE — « un- une - le - la - elle » donné comme pronoms personnels (ce sont les déterminants), « grand(e) » inventé, « content(e) » perdu, « moi-toi » rangé dans les adjectifs. AJOUT MAJEUR : §2 ter, la table « Contenu de l'écrit » des HUIT unités (dix rubriques fixes : Je lis, J'écris, Je me documente, Mon vocabulaire, Mon abécédaire, Dictée, Je recopie, Initiation à la production, Lecture-action, Dans la classe de M. Bri), p.49 à p.144 — absente de la fiche alors que c'est la page qui nomme les TYPES D'ACTIVITÉ par unité. Elle rend lisibles trois progressions chiffrées : production écrite (mots → 1 phrase à 2 mots → à 3 mots → 1 phrase → 2 → 3 + questions → récit de 3 phrases), dictée (préparée → à choix multiples → photo → cahier) et vocabulaire (devinettes → mots fléchés → familles de mots → synonymes → même famille → contraires). Deux coquilles du guide relevées sans être propagées : U7 « g= glue » pour « g= gue » ; et p.20 « s/ss – é=er » là où la page de l'unité 4 écrit « s/ss / é-er-ez-et ». `pagesLues` : plages réelles (~93 p. sur 171), plus `inconnu`. La couverture DÉCLARÉE de 91 % n'était pas fausse sur le principe — le guide a bien été largement parcouru — mais ce qui était transcrit ne l'était pas fidèlement, et la table la plus utile manquait."
     },
     {
       "matiere": "islamique",
