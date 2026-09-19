@@ -175,10 +175,50 @@ contenus entre 7ᵉ, 8ᵉ et 9ᵉ**. Donc :
   (`11-al-jumla-al-murakkaba`, `17-ar-rubai-wal-mazid`) : non pas des notions supprimées, mais des
   notions **déplacées vers une autre année**. À vérifier dans les manuels de 8ᵉ et 9ᵉ, pas à
   supposer.
-- **Le même soupçon pèse sur arabe 8ᵉ et arabe 9ᵉ**, dont les fiches s'appuient elles aussi sur un
-  `الدليل المرجعي` (501802, 501902). Le corpus porte les manuels élèves correspondants
-  (`101806`, `101808` ×3 pour la 8ᵉ) — **jamais ouverts**. C'est la première chose à faire sur ces
-  deux couples.
+- ~~Le même soupçon pèse sur arabe 8ᵉ et arabe 9ᵉ~~ → **VÉRIFIÉ le 2026-09-19, ce n'est plus un
+  soupçon : le motif est UNIFORME sur les trois niveaux du collège.**
+
+### Le motif vaut pour les trois niveaux — pages de titre comparées
+
+| niveau | guide (`كتاب الأستاذ`) | manuel élève | équipe de تنقيح au **guide** | au **manuel** |
+| --- | --- | --- | --- | --- |
+| 7ᵉ | `501701` | `101710` (3 t., 174 p.) | **aucune** | **4 noms** (قصي المليّح · عبد الله الصّالحي · عمارة الأخضر · توفيق القاسمي) |
+| 8ᵉ | `501802` | `101808` (3 t., 158 p.) | **aucune** | **4 noms** (رضا عبد الله · رضا محجوب · رضوان بلعيد · فؤاد الخطيب) |
+| 9ᵉ | `501902` | `101908` (176 p.) | **aucune** | **4 noms** (فتحي بوكوبة · نجم الدّين عمر · نور الدّين الغيلوفي · منير الرقّي) |
+
+Dans les trois cas, le guide porte **les mêmes auteurs que son manuel** et **le même superviseur**
+(عبد القادر المهيري), sans équipe de révision. **Les trois guides du corpus sont donc les éditions
+d'avant la refonte de 2006 ; les trois manuels élèves, jamais ouverts jusqu'ici, sont les éditions
+révisées.**
+
+### Ce que le فهرس de la 8ᵉ révisée règle — les deux « chapitres orphelins » de la 7ᵉ
+
+Le manuel 8ᵉ (`101808`, ص 3–4) porte **24 leçons** : **13 en علم الإعراب** + **11 en علم الصرف**.
+Et son علم الإعراب est **entièrement consacré à la الجملة المركّبة** — « حدود الجملة المركّبة »,
+« النواة الإسناديّة الأساسيّة والفرعيّة », « الوظائف الأساسيّة في الجملة … المركّبة » (×7),
+« متمّمات مشتملة على مركّبات إسناديّة فرعيّة » (×4). Son علم الصرف s'ouvre sur
+**« تصريف الفعل المزيد »** (×2) puis « اشتقاق الأسماء من المزيد » (×2).
+
+➡️ **Les deux chapitres servis en 7ᵉ sans leçon homonyme au فهرس révisé ne sont pas des notions
+supprimées : ce sont des notions DÉPLACÉES EN 8ᵉ.** `11-al-jumla-al-murakkaba` et
+`17-ar-rubai-wal-mazid` relèvent, dans le programme en vigueur, de la **huitième année**. C'est
+exactement ce que la المقدّمة annonçait (« أعيد فيها توزيع المسائل اللغويّة على المستويات
+الثّلاثة ») — l'hypothèse est maintenant **vérifiée à la source**, elle n'est plus supposée.
+
+### 🔴 Et cela ouvre un écart plus grand en 8ᵉ, qui n'est PAS résolu ici
+
+`content/arabic-8eme/` sert **12 chapitres**. Leur moitié صرف concorde bien avec le manuel révisé
+(اسم التفضيل · اسم الزمان والمكان والآلة · صيغ المبالغة · جمع التكسير والمصادر). Mais leur moitié
+إعراب — **النعت · التوكيد · البدل · العطف · المنادى · العدد · أسلوب التعجّب** — **n'a aucune
+contrepartie** dans les 13 leçons d'إعراب du manuel 8ᵉ révisé, qui ne parlent que de la phrase
+complexe. Dans le même temps, la الجملة المركّبة est surtout enseignée **en 7ᵉ** (32 occurrences)
+et peu en 8ᵉ (13).
+
+**Ce qui est établi** : les deux découpages divergent fortement en 8ᵉ. **Ce qui ne l'est pas, et
+qu'il ne faut pas conclure d'ici** : que le contenu servi soit *faux*. Les التوابع (نعت، توكيد،
+بدل، عطف) pourraient relever de la **9ᵉ** révisée — **le فهرس du manuel 9ᵉ `101908` n'a pas été
+lu**. Tant qu'il ne l'est pas, on sait que l'organisation diffère, pas qu'une notion manque à un
+élève. **C'est la prochaine lecture à faire**, et elle coûte une page.
 
 ### Le فهرس du manuel (ص 4) — les 27 leçons, leurs محاور et leurs pages
 
