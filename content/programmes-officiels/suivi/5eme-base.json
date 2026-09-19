@@ -27,7 +27,7 @@
     },
     {
       "matiere": "eveil",
-      "statut": "partielle",
+      "statut": "complete",
       "profondeur": "generation",
       "sources": [
         {
@@ -37,28 +37,7 @@
           ],
           "role": "enseignant",
           "pagesTotal": 223,
-          "pagesLues": [
-            [
-              3,
-              12
-            ],
-            [
-              14,
-              17
-            ],
-            [
-              19,
-              19
-            ],
-            [
-              22,
-              130
-            ],
-            [
-              221,
-              223
-            ]
-          ]
+          "pagesLues": "integral"
         }
       ],
       "sujets": [
@@ -68,7 +47,7 @@
       "r7": null,
       "maj": "2026-09-19",
       "par": "claude/great-wright-e4cqyu",
-      "notes": "Reprise du 2026-09-19 : `pagesLues` passe de `inconnu` aux plages RÉELLES — les 28 p. de l'en-tête historique (3–12, 14–17, 19, 22–34), plus 99 p. lues à l'image ce jour (35–130 : les unités 1 `الضّوء` et 2 `جسم الإنسان` en entier — الملفّ العلمي, les 13 جذاذات, les deux وضعيّات إدماج et les deux وضعيّات تقييم avec leurs barèmes ; 221–223 : le فهرس du guide, qui donne la carte des 189 p. du corps). Soit 127/223 = 57 %. Le seed du 2026-07-17 déclarait `complete` + `pagesLues: integral` : c'était faux sur la couverture (corrigé le 2026-09-19 au matin, statut ramené à `partielle`). Le guide est un PDF à police privée (mojibake latin sous pdftotext) : la lecture se fait à l'image, le décodage ne sert qu'à localiser — aucune citation n'en sort. L'audit a relevé 15 écarts INTERNES AU GUIDE (fiche §6). Le motif est constant : le الملفّ العلمي et les encadrés `الاستنتاج` des جذاذات ne sont pas relus l'un contre l'autre, et c'est l'encadré qui dérape — القمر classé `مصدر طبيعيّ` en ص 44/67 contre `جسم مضاء منير` en ص 36/47/48 ; الالتواء défini comme un déplacement partiel de la tête osseuse en ص 111 contre une atteinte ligamentaire en ص 84 ; les muscles attachés aux os `بواسطة أربطة` en ص 104-105 contre `وتر` en ص 82. Pour la génération, la clé de réponse est le الملفّ العلمي, jamais un corrigé d'activité. `profondeur: generation` vaut POUR LES UNITÉS 1 ET 2 ; les unités 3 et 4 (ص 131-220) restent non lues, d'où `statut: partielle`."
+      "notes": "LECTURE INTÉGRALE du 2026-09-19 : les 223 pages du guide ont été lues À L'IMAGE, page par page. La fiche s'arrêtait p.34 (14 %) alors que ce sujet sert 300 questions en production : c'était le plus gros écart exposition x couverture du lot arabophone. Le seed du 2026-07-17 déclarait déjà `complete` + `pagesLues: integral`, mais sans l'avoir lu — corrigé en `partielle` le matin même, puis reconquis par la lecture. Le statut est donc le même qu'au seed ; ce qui a changé, c'est qu'il est vrai. MÉTHODE : le PDF est à police privée (pdftotext en sort un mojibake latin, ~1200 car./page, donc les compteurs disent `couche texte` et mentent). Le décodage prototypé ce jour n'a servi qu'à LOCALISER (notamment le فهرس de ص 221) ; aucune citation ne sort d'un décodage. Deux pièges de rendu documentés : les chiffres d'une ligne mixte sortent parfois en ordre RTL (les pages des جذاذات 8-12 s'affichent 491/891/902 pour 194/198/209, vérifiées une à une), et les opérateurs d'une expression mêlant latin et arabe se déplacent (la somme de ص 135 paraît fausse et ne l'est pas). RÉSULTAT : 37 écarts INTERNES AU GUIDE (fiche §6), dont deux commandent la génération. (1) القمر est `جسم مضاء منير` au الملفّ العلمي (ص 36) et dans deux encadrés (ص 47, 48) mais `مصدر ضوئيّ طبيعيّ` dans deux corrigés (ص 44, 67) : la clé est ص 36/47/48. (2) Le guide DESSINE ses chaînes alimentaires dans le sens du flux d'énergie mais les LÉGENDE `يتغذّى على`, qui va dans l'autre sens : suivre le dessin, ne jamais questionner le sens de la flèche. Le motif général : le الملفّ العلمي et les encadrés `الاستنتاج` ne sont pas relus l'un contre l'autre, et c'est l'encadré qui dérape — الالتواء définie comme un déplacement osseux (ص 111) contre une atteinte ligamentaire (ص 84), les muscles attachés `بواسطة أربطة` (ص 104-105) contre `وتر` (ص 82), la lumière déclarée nécessaire à la germination (ص 163, 199) et jamais testée. PORTÉE : le الملفّ العلمي de l'unité 3 est écrit au niveau du LYCÉE (demi-équations rédox, ampère, coulomb, ohm, loi d'Ohm) — sur cette unité le périmètre se lit dans les جذاذات, jamais dans le dossier. Le titre du guide lui-même dément le catalogue : sa page 1 dit `كتاب المعلّم`, pas `الدليل المرجعي` (2e cas après 521702). R-7 NON FAITE : aucune relecture indépendante enregistrée, donc `complete` et non `validee-r7`. Le manuel élève 103504 reste hors `sources` : la fiche s'en sert pour les pages par درس (§4) mais il n'a pas été lu intégralement — l'ajouter ferait, à juste titre, retomber la couverture sous 100 %."
     },
     {
       "matiere": "francais",
