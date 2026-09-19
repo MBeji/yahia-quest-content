@@ -61,7 +61,7 @@ Chaque leçon est structurée en **3 phases** (p.7 + abréviations de la KEY p.1
 
 ### Détail par leçon (Objectives + scope linguistique — transcription fidèle des grilles « Implementation Scheme »)
 
-> Pour chaque leçon : **Objectives** (recopiés tels qu'imprimés, a-/b-/c-…) puis, entre crochets, les **points de langue ciblés** repérés dans les séquences (Language Study / Pronunciation / Procedure). C'est le **scope linguistique officiel** de la 8ème.
+> Pour chaque leçon : **Objectives** — recopiés verbatim depuis la cellule du guide. ⚠️ Ils ne l'étaient PAS avant l'audit R-7 du 2026-09-19, qui a restitué neuf leçons (sept écarts de fond, deux normalisations de forme) : voir §6 puis, entre crochets, les **points de langue ciblés** repérés dans les séquences (Language Study / Pronunciation / Procedure). C'est le **scope linguistique officiel** de la 8ème.
 
 ---
 
@@ -70,12 +70,12 @@ Chaque leçon est structurée en **3 phases** (p.7 + abréviations de la KEY p.1
 - **Lesson 1 — Meet the Browns** (p.12). **Objectives** : a- Ability to read and understand explicitly stated information ; b- Ability to write a few lines to introduce people in a photo. **[Langue : Yes/no questions ; WH-questions ; producing/accepting/refusing an invitation (rule SB p.10) — Mr Najjar's invitation ; échange de cartes d'information personnelle.]**
 - **Lesson 2 — A letter from an English friend** (p.13–14). **Objectives** : a- Ability to read a letter for gist ; b- Ability to recognise sender and receiver ; c- Ability to identify features of an **informal letter**. **[Langue : `the future tense (will + base form)` — Lg. Study, p.14 ; mini-dialogues practising will ; expressions de futur « tomorrow / yesterday » à contraster.]**
 - **Lesson 3 — Can she go to London?** (p.15–16). **Objectives** : a- Ability to identify speakers ; b- Ability to identify the topic of a conversation ; c- Ability to recognise discourse markers (**sequential adverbs**) ; d- Ability to write a short **argumentative** text. **[Langue : sequential adverbs / discourse markers (first, then…) ; cardinal numbers ; structure argumentative.]**
-- **Lesson 4 — Preparing for the trip** (p.17–18). **Objectives** : a- Ability to identify speakers on the phone ; b- Ability to work efficiently in groups ; c- Ability to produce a **telephone conversation** following an example ; d- Ability to infer speaker's mood ; e- Ability to develop the proper strategy to fill in a **gapped text**. **[Langue : expressing surprise ; téléphone (registre) ; inférence du ton.]**
-- **Lesson 5 — London wonders** (p.19–21). **Objectives** : a- Ability to match texts with visuals ; b- Ability to read and present information in a different form ; c- Ability to write present information from different sources ; d- Ability to **produce an informal letter using information from different sources** ; e- Ability to follow the process writing strategy. **[Langue : dates ; **Imène's diary** (récit personnel) ; **process writing** (draft → peer-correction → edit) ; checklist d'auto-évaluation.]** → **Project Work** (writing in English) p.20, puis (sessions suivantes) self-check / remedial.
+- **Lesson 4 — Preparing for the trip** (p.17–18). **Objectives** : a- Ability to identify speakers on the phone ; b- Ability to work efficiently in groups ; c- Ability to produce a **telephone conversation** following an example ; d- Ability to infer speaker's mood ; e- **Develop** the proper strategy to fill in a **gapped text** _(sic : la source omet « Ability to » sur ce seul item)_. **[Langue : expressing surprise ; téléphone (registre) ; inférence du ton.]**
+- **Lesson 5 — London wonders** (p.19–21). **Objectives** : a- Ability to match texts with visuals ; b- Read and present information in a different form ; c- **Write diary entries from notes** ; d- **Produce an informal letter using information from different sources**. _(4 items dans la source ; la 1re rédaction en portait 5, dont un « follow the process writing strategy » absent de la cellule Objectives.)_ **[Langue : dates ; **Imène's diary** (récit personnel) ; **process writing** (draft → peer-correction → edit) ; checklist d'auto-évaluation.]** → **Project Work** (writing in English) p.20, puis (sessions suivantes) self-check / remedial.
 
 #### Module 2 — _École : collège anglais, attitudes, parents & éducation_ (p.22–29)
 
-- **Lesson 1 — English secondary school (1)** (p.23). **Objectives** : a- Ability to infer the meaning of unfamiliar words from context ; b- Ability to view a few lines about one's **future plans** ; c- Ability to identify strategies used in collecting information. **[Langue : guessing word meaning ; **future plans** ; Lg. Study (1)/(2) « be going » + (présenter un plan) ; checking comprehension.]**
+- **Lesson 1 — English secondary school (1)** (p.23). **Objectives** : a- Ability to infer the meaning of unfamiliar words from context ; b- Ability to **write** a few lines about one's **future plans** ; c- Ability to identify strategies used in collecting information. **[Langue : guessing word meaning ; **future plans** ; Lg. Study (1)/(2) « be going » + (présenter un plan) ; checking comprehension.]**
 - **Lesson 2 — English secondary school (2)** (p.24). **Objectives** : a- Ability to complete a gapped text using information presented in a **timetable** ; b- Ability to complete a conversation using information presented in a report ; c- Ability to complete a report with information presented in a conversation ; d- Write reports on one's school following studied models ; e- Ability to identify strategy used to collect information. **[Langue : dates / days ; **timetable** → report ; conversation ↔ report (transfert).]**
 - **Lesson 3 — English secondary school (3)** (p.25–26). **Objectives** : a- Ability to fill in one's weekly schedule ; b- Ability to complete the paraphrased form of a text. **[Langue : **weekly schedule** ; **fillers** ; paraphrase ; Homework (p.26) : **access Edunet** & write a report.]**
 - **Lesson 4 — Do you like school?** (p.27). **Objectives** : a- Ability to read about and understand views about school ; b- Ability to work efficiently in group to share views about school ; c- Ability to write an e-mail to express one's attitude towards school. **[Langue : **affirmative and negative views** (express like / hate) ; **e-mail** ; captions/visuals.]**
@@ -85,16 +85,16 @@ Chaque leçon est structurée en **3 phases** (p.7 + abréviations de la KEY p.1
 
 - **Lesson 1 — Review and introductory lesson** (p.31). **Objectives** : a- Ability to listen and identify speakers ; b- Ability to listen selectively for details ; c- Ability to write an **invitation card** ; d- Ability to write a **shopping list** ; e- Ability to write then enact a **telephone conversation**. **[Langue : invitation card ; shopping list ; opinion (« I'm for / I'm against »).]**
 - **Lesson 2 — The party is on** (p.32–33). **Objectives** : a- Ability to read and predict what will happen next ; b- Ability to listen to a **song** and enjoy it. **[Langue : prediction ; retell ; comprehension of a song ; **homophones** & « grammar through jokes » (« The lighter side », self-check p.33).]**
-- **Lesson 3 — Having dinner with the Smiths** (p.34). **Objectives** : a- Ability to listen and predict what will happen next ; b- Ability to write the end of a story. **[Langue : prediction ; **writing the end of a story** ; **prepositions** ; **sharing English stories** (« Sharing » objective).]**
-- **Lesson 4 — Sporting Activities** (p.35). **Objectives** : a- Ability to listen for details ; b- Ability to give a presentation on the benefits of sporting activities. **[Langue : express like ; **justified answers** ; **prepositions of place** ; presentation.]**
-- **Lesson 5 — What do you do in your spare time?** (p.36–37). **Objectives** : a- Ability to read and present information in a different format ; b- Ability to give a presentation on one's spare time activities. **[Langue : **present tense** (spare-time activities) ; consolidate ; « The lighter side + Self-check » = grammar/spelling/pronunciation via **homophones / grammar through jokes** (p.37).]** → (L5 wrap-up) **Mock Test** (AB) → **Remedial work** (p.37).
+- **Lesson 3 — Having dinner with the Smiths** (p.34). **Objectives** : a- Ability to **read** and predict what will happen next ; b- Ability to write the end of a story. **[Langue : prediction ; **writing the end of a story** ; **prepositions** ; **sharing English stories** (« Sharing » objective).]**
+- **Lesson 4 — Sporting Activities** (p.35). **Objectives** : a- Ability to listen for **gist and for** details ; b- Ability to give a presentation on the benefits of sporting activities. **[Langue : express like ; **justified answers** ; **prepositions of place** ; presentation.]**
+- **Lesson 5 — What do you do in your spare time?** (p.36–37). **Objectives** : a- Ability to read and present information in a different format ; b- Ability to **read and relate information to visuals** ; c- Ability to **write about** one's spare time activities. **[Langue : **present tense** (spare-time activities) ; consolidate ; « The lighter side + Self-check » = grammar/spelling/pronunciation via **homophones / grammar through jokes** (p.37).]** → (L5 wrap-up) **Mock Test** (AB) → **Remedial work** (p.37).
 
 #### Module 4 — _Voyage UK : famille anglaise → vacances de Pâques à Édimbourg_ (p.38–46)
 
 - **Lesson 1 — Planning Easter Holidays** (p.39–40). **Objectives** : a- Ability to listen for gist ; b- Ability to listen for details ; c- Ability to write an **invitation card** ; d- Ability to identify places on a **map** ; e- Ability to recognise statements expressing **agreement**. **[Langue : **expressing agreement** ; **"how" questions** ; identify locations on a map ; UK / different parts of the UK ; brochure.]**
-- **Lesson 2 — Transport** (p.41). **Objectives** : a- Ability to listen to a text for gist ; b- Ability to scan a text for details ; c- Ability to use data presented in a table to answer questions. **[Langue : **types of transport** ; infer word meaning ; **the sibilant suffix `-s`** (Pronunciation) ; **compound adjectives / nouns** (word formation — « Noun+hyphen+sing.n / Numeral+hyphen+sing.n »).]**
+- **Lesson 2 — Transport** (p.41). **Objectives** : a- Ability to **skim** a text for gist ; b- Ability to scan a text for details ; c- Ability to use data presented in a table to answer questions. **[Langue : **types of transport** ; infer word meaning ; **the sibilant suffix `-s`** (Pronunciation) ; **compound adjectives / nouns** (word formation — « Noun+hyphen+sing.n / Numeral+hyphen+sing.n »).]**
 - **Lesson 3 — Accommodation** (p.42–43). **Objectives** : a- Ability to listen to a conversation and take notes ; b- Take part in a **telephone conversation** between a hotel receptionist and a customer **booking accommodation**. **[Langue : booking ; **`[who]` — relative pronouns + relative adverbs** (« to connect ideas ») ; **compound nouns/adjectives** (Noun+hyphen+sing.n) ; **Pronunciation** (« practise & identify stressed syllables »).]**
-- **Lesson 4 — Getting ready for the trip** (p.44). **Objectives** : a- Ability to complete a story to complete a gapped text ; b- Ability to listen and identify themes ; c- Ability to write a report. **[Langue : **British currency** ; **queuing in Britain** ; solve a booking problem ; banking ; volunteer information.]**
+- **Lesson 4 — Getting ready for the trip** (p.44). **Objectives** : a- Ability to **use the proper strategy** to complete a gapped text ; b- Ability to listen and identify **setting** ; c- Ability to **use information presented in a table to solve a problem** ; d- Ability to write a report. **[Langue : **British currency** ; **queuing in Britain** ; solve a booking problem ; banking ; volunteer information.]**
 - **Lesson 5 — Shopping in Edinburgh** (p.45–46). **Objectives** (S1) : a- Ability to read and complete a conversation ; b- Ability to play out a transaction in a shop ; (S2) a- Ability to listen to and complete a conversation ; b- Ability to **carry out a transaction in a shoe shop**. **[Langue : shopping vocab ; **WH-questions** (consolidation) ; role-play / transaction ; **`[tight, cost, wide]`** & sizes ; brochure ; auto-évaluation du projet.]** → (L5 wrap-up) **Self check / Mock test** (S2) → **review & remedial work** (S3, p.46).
 
 #### Module 5 — _Relationships : amis, famille, environnement, animaux_ (p.47–53)
@@ -103,7 +103,7 @@ Chaque leçon est structurée en **3 phases** (p.7 + abréviations de la KEY p.1
 - **Lesson 2 — Friends** (p.49). **Objectives** : a- Ability to read for details ; b- Ability to write a description of a friend ; c- Ability to work to agree on the best quality a friend should have. **[Langue : **describing physical appearance & people** ; **qualities of a good friend** (« strategy suggested », « need some time to know… ») ; recognise expressions ; describe people (Homework).]**
 - **Lesson 3 — Family relationship** (p.50). **Objectives** : a- Ability to read for details ; b- Ability to write an **informal letter**. **[Langue : **express / describe feelings** ; **reflexive pronouns** ; **`whose`** (questions in context) ; advice in **Amanda's letter**.]**
 - **Lesson 4 — Save our planet** (p.51). **Objectives** : a- Ability to read and transfer information from different sources onto a **table** ; b- Ability to work in a group to agree on one action to **protect the environment** ; c- Ability to write a **poster** about protecting the environment. **[Langue : **possessive pronouns** ; **`whose`** questions ; transfer info → table ; **e-mails** ; poster.]**
-- **Lesson 5 — Pets** (p.52–53). **Objectives** : a- Guess the topic of a story using **title and visuals** ; b- Read and identify **characters and relationships** ; c- Read and represent the **plot in a diagram** ; d- Identify the **climax** and the **denouement** ; e- Read and react to information ; f- Write about pets. **[Langue : **narrative structure** (title/visuals → characters → plot → climax → denouement) ; **modal `could`** ; descriptive adjectives ; produce sentences with « could ».]** → (L5 wrap-up) **Self check / Mock test** (S2) → **review & remedial work** (S3, p.53).
+- **Lesson 5 — Pets** (p.52–53). **Objectives** : a- Ability to Guess the topic of a story using **title and visuals** ; b- Ability to read and identify **characters and relationships** ; c- Ability to read and represent the **plot in a diagram** ; d- Ability to identify the **climax** and the **denouement** ; e- Ability to read and react to information ; f- Ability to write about pets. **[Langue : **narrative structure** (title/visuals → characters → plot → climax → denouement) ; **modal `could`** ; descriptive adjectives ; produce sentences with « could ».]** → (L5 wrap-up) **Self check / Mock test** (S2) → **review & remedial work** (S3, p.53).
 
 ### Bornes de scope (agrégées, audit-critiques)
 
@@ -169,6 +169,58 @@ L'unité d'enseignement est la **leçon** (5 par module), décrite par un **band
 - **Divergences signalées** : voir §6.
 
 ## 6. Incertitudes / à revérifier
+### Audit R-7 du 2026-09-19 — les Objectives n'étaient pas « recopiés tels qu'imprimés »
+
+Cette fiche portait l'avertissement R-7 posé le matin même : déclarée lue 54/54 p., jamais
+recoupée. L'audit s'est fait sur la revendication la plus vérifiable de son §2 — « **Objectives**
+(recopiés tels qu'imprimés, a-/b-/c-…) » — en comparant les **25 leçons** à la couche texte du
+guide, qui est propre ici.
+
+**Ce qui tenait.** Les **25 titres de leçons sur 25** sont exacts, la structure en 5 modules est
+juste, et le découpage en séances est correctement rendu (le guide répète son en-tête Objectives
+à chaque séance d'une leçon multi-séances — 45 en-têtes pour 25 leçons — et la fiche les avait
+bien fusionnés). **Le chapitrage n'est donc pas en cause.** 12 leçons sur 25 avaient leurs
+Objectives exacts au mot près.
+
+**Ce qui ne tenait pas — sept leçons, vérifiées une par une à la source :**
+
+| leçon                              | la source imprime                                     | la fiche portait                          |
+| ---------------------------------- | ----------------------------------------------------- | ----------------------------------------- |
+| M1-L5 _London wonders_             | « Write diary entries from notes » (**4** items)       | item altéré + un 5ᵉ objectif **inventé**  |
+| M2-L1 _English secondary school_   | « Ability to **write** a few lines »                   | « **view** a few lines »                  |
+| M3-L3 _Having dinner…_             | « Ability to **read** and predict »                    | « **listen** and predict »                |
+| M3-L4 _Sporting Activities_        | « listen for **gist and for** details »                | « listen for details »                    |
+| M3-L5 _…spare time?_               | **3** items, dont « read and relate information… »     | 2, et « write about » → « give a present. »|
+| M4-L2 _Transport_                  | « Ability to **skim** a text for gist »                | « **listen to** a text for gist »         |
+| M4-L4 _Getting ready for the trip_ | **4** items, « use the proper strategy… », « setting » | 3, item a charabia, « **themes** »        |
+
+**Trois de ces écarts basculent une compétence vers « listen »** (read → listen, skim → listen,
+et « gist and for details » réduit à « details »). Ce n'est pas du bruit : en didactique des
+langues, _read for gist_ et _listen for gist_ n'entraînent pas la même chose, et c'est exactement
+ce qu'un chapitre est censé travailler. S'y ajoutent deux objectifs purement **omis**, un
+**inventé**, et deux corruptions lexicales (« write » → « view », « setting » → « themes »).
+
+**Et la normalisation, dans les deux sens.** M1-L4 : la source écrit « e- **Develop** the proper
+strategy… » sans « Ability to », seule de ses cinq items — la fiche avait ajouté les deux mots
+pour aligner la liste. M5-L5 : la source écrit « Ability to » sur ses **six** items — la fiche
+les avait tous retirés. Le même fichier régularise donc dans un sens puis dans l'autre, ce qui
+suffit à disqualifier « recopiés tels qu'imprimés ». Les neuf leçons sont restituées verbatim ;
+l'en-tête du §2 dit désormais ce qu'il fait réellement.
+
+**Non résolu** : M4-L3 _Accommodation_, dont l'item b (« Take part in a telephone conversation
+between a hotel receptionist… ») est coupé en fin de colonne dans la couche texte. La fiche en
+donne une version plus longue, plausible mais invérifiable par ce canal — à trancher à l'image.
+
+> **Cinquième fausse alerte de l'automate sur les guides CNP, et le motif est désormais établi.**
+> Ici, un `grep` sur `Session \d` a rendu « 12 leçons absentes de la source » : elles portent en
+> réalité « **One session** ». Avant cela, sur le guide de 7ème : `Function` au singulier sur une
+> seule grille, étiquettes posées au milieu de leur bloc, annotations françaises de la fiche
+> prises pour du hors-source. **Ces documents sont composés à la main et leurs étiquettes ne sont
+> pas régulières** ; tout motif écrit d'après un échantillon casse sur le suivant. La règle qui
+> en sort : l'automate sert à **désigner où regarder** — ici, il a correctement pointé que
+> l'appariement 28 blocs ≠ 25 leçons clochait — mais **chaque écart se confirme à la source avant
+> d'être écrit**. Les sept défauts ci-dessus l'ont tous été, ligne par ligne.
+
 
 - **Taille réelle du guide** : le PDF `541805P00.pdf` ne fait que **~252 Ko** (d'où l'alerte « fichier petit » du brief), **mais il compte 54 pages** — la petite taille tient à la **compression du scan** + une mise en page épurée (beaucoup d'espace blanc), pas à la brièveté. Toutes les pages ont été rendues (1→54) et lues (160 dpi ; **p.7 et p.12 ré-rendues à 200 dpi** pour fiabiliser le story line et la 1ère grille).
 - **Structure ≠ 7ème** : la 7ème = 5 modules × **4 sections**, grilles à colonnes **Functions/Grammar/Lexis/Pronunciation**. La 8ème = 5 modules × **5 leçons**, grilles **Objectives + Sequence/Aims/Procedure** (3 phases LGR/LD/LC). **Conséquence d'audit** : le **scope linguistique** de la 8ème est moins « tabulé » — il faut le **lire dans les Objectives + les cellules Language Study / Pronunciation / Procedure** (transcrits §2). Les **listes lexicales exhaustives** ne sont **pas** données par le guide (le manuel élève les porte) ; le lexique de §2 est **déduit des Aims/Procedure** (fidèle mais non exhaustif).
