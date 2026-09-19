@@ -82,7 +82,7 @@
 - **Section One — Let's Visit Aly's School** (p.52–53). **Skills** : Speaking · Reading · Listening. **Functions** : Giving permission ; Expressing desire ; Locating people, things, places. **Grammar** : `you can + verb / of course you can` ; `want + Noun` ; `Want + to + verb` ; Prepositions of place. **Lexis** : headmaster – office – tape recorder – map – globe – computer – flag – bookcase – eraser – pencil-case – ruler – chalk – desk – register – guest – bell – ring (vb) – leave (vb) – behind – attend – in front – under – between – courtyard – miss (vb) – tricks – sharpen – raise – museum – board. **Pronunciation** : `/æ/ – /ɪ/ – /ɑː/` ; stressed syllables ; odd man out (symboles partiellement lisibles).
 - **Section Two — Who is your favourite teacher?** (p.54–55). **Skills** : Reading · Speaking. **Functions** : Expressing choice ; granting forgiveness ; apologizing. **Grammar** : _(la cellule « Grammar » de la grille porte en fait la liste lexicale ci-dessous — voir §6 ; aucune structure grammaticale n'y est formellement énoncée ; la procédure travaille les adverbes en -ly et le verb-noun conversion)_. **Lexis** : Subject – Maths – Arabic – Technology – Biology – physics – history – strict – good-looking – fluently – slow(ly) – break – lab attentive – keyboard – mouse – drop (vb) – sorry – careful – study – reply (vb) – nervous – printer – central unit – monitor – boring – diet/lazy. **Pronunciation** : `/t/ – /d/ – /id/` (ed in regular verbs) ; `/ɑː/` ; `/e/`.
 - **Section Three — Let's help others** (p.56–57). **Skills** : Speaking · Reading. **Functions** : Comparing. **Grammar** : `Noun + be + like + noun`. **Lexis** : Collect – garbage – stand – seat – throw – tidy – voluntary – responsible – litter – plastic bags – (garbage) cans – waste paper – waste baskets – rarely – floor – dirty – clean – together – keep – proud – hate. **Pronunciation** : `/ɔː/ – /aɪ/ – /iː/ – /uː/ – /əʊ/ – /ə/` ; similar / different Sounds.
-- **Section Four — Good-bye Peter** (p.58–59). **Skills** : Listening · Speaking · Reading. **Functions** : Ability ; Inability ; Asking about number / quantity / price ; Taking leave ; Asking for help ; Offering help. **Grammar** : `Can + verb` ; `Cannot + verb` ; `How much + uncountable nouns` ; `How many + countable nouns`. **Lexis** : carry – heavy – suitcase – light (adj) – carpet – cost – souvenirs – souk – traditional – hurry up – safe – trip – size – tomorrow – feel sick – toy – try out – roses – customer – shopkeeper – countryside – street lamps. **Pronunciation** : `/æ/ – /eɪ/ – /iː/ – /ʌ/` (+ `/aʊ/`, symboles partiellement lisibles). (Départ de Peter ; tapescripts p.64 _Time for a joke_ + _At home_.)
+- **Section Four — Good-bye Peter** (p.58–59). **Skills** : Listening · Speaking · Reading. **Functions** : Ability ; Inability ; Asking about number / quantity / price ; Taking leave ; Asking for help ; Offering help. **Grammar** : `Can + verb` ; `Cannot + verb` ; `How much + uncountable nouns` ; `How many + countable nouns`. **Lexis** : carry – heavy – suitcase – light (adj) – carpet – cost – souvenirs – souk – traditional – hurry up – safe – trip – size – tomorrow – feel sick – toy – try out – roses – customer – shopkeeper – countryside – street lamps. **Pronunciation** : `/æ/ – /eɪ/ – /iː/ – /oʊ/` (tranché le 2026-09-19 par la couche texte, qui rend `/ ae / / e i / /i:/ / ou /` — quatre symboles, non cinq ; la lecture `/ʌ/ + /aʊ/` venait du rendu image). (Départ de Peter ; tapescripts p.64 _Time for a joke_ + _At home_.)
 
 ### Bornes de scope (agrégées, audit-critiques)
 
@@ -149,6 +149,43 @@ L'unité d'enseignement est la **section** (4 par module), décrite par une **gr
 - **Divergences signalées** : voir §6.
 
 ## 6. Incertitudes / à revérifier
+### Audit R-7 du 2026-09-19 — verdict : FIDÈLE, et ce que l'audit s'est pris en pleine figure
+
+Cette fiche a été auditée parce qu'une mesure l'avait désignée : des quatre guides d'anglais du
+cycle, c'est le SEUL à partager la forme de grille du 9ème (`541702` Lexis 20 / Grammar 18 /
+Functions 19 ; `541905` Lexis 6 / Grammar 7 / Functions 6 — la 6ème n'a ni Lexis ni Functions, la
+8ème est bâtie sur Aims/Procedure). Or c'est dans cette grille-là que l'audit du 9ème a trouvé
+52 cellules fausses. Le soupçon était donc précis, et il était faux.
+
+**Sondage dirigé sur trois sections réparties (M1-S3, M3-S4, M5-S4, dont la dernière du guide) :
+exact, champ par champ.** Functions, Grammar, Lexis et Skills concordent au mot près. Deux
+détails achèvent de convaincre : la fiche reproduit la **répétition de la source** (« Regular and
+irregular plurals » écrit deux fois dans la cellule Grammar de _Happy Birthday_) là où il aurait
+été tentant de dédupliquer, et elle capte les puces qui se trouvent **au-dessus** de leur
+étiquette (« Ability ; Inability » en M5-S4), ce qu'un découpage naïf manque.
+
+Une seule correction : M5-S4 portait `/ʌ/ (+ /aʊ/)` pour un symbole que la couche texte rend
+`/ ou /` — quatre symboles et non cinq. Corrigé en `/oʊ/`. L'écart venait du rendu image, et le
+§6 le signalait déjà comme « partiellement lisible ».
+
+> **La leçon de cet audit est méthodologique, et elle vise l'auditeur.** Trois passes
+> automatiques successives ont produit trois fausses alertes sur ce document, chacune plus
+> crédible que la précédente :
+>
+> 1. un décalage d'un rang sur neuf sections — en réalité la source écrit **`Function`** au
+>    singulier pour la seule grille _Happy Birthday_, que le motif `Functions` manquait ;
+> 2. quarante cellules « incomplètes » — en réalité les étiquettes de ce guide sont posées **au
+>    milieu** de leur bloc, si bien que découper « de l'étiquette à la suivante » vole la
+>    première puce du champ d'après et l'attribue au précédent ;
+> 3. des mots « en trop » dans la transcription — en réalité ses propres annotations en français
+>    (« non formalisée explicitement dans la grille »), c'est-à-dire exactement la prudence qu'on
+>    lui demande.
+>
+> Un document dont la mise en page est irrégulière fait mentir un comptage avant de faire mentir
+> un lecteur. **Sur un guide CNP, l'automate propose, l'œil dispose** : il sert à choisir où
+> regarder, jamais à conclure. Publier la première de ces trois alertes aurait accusé à tort une
+> transcription qui, elle, avait fait son travail.
+
 
 - **Taille réelle du guide** : le PDF `541702P00.pdf` ne fait que **~282 Ko** (d'où l'alerte « fichier petit » du brief), **mais il compte 64 pages** — la petite taille tient à la **compression du scan**, pas à la brièveté. Ce n'est **pas** un simple outline : c'est un Teacher's Book complet (Theoretical framework + Teaching hints détaillés + Tapescript), de longueur comparable au guide 6ème (70 p.). Toutes les pages ont été rendues (1→64) et lues (130 dpi en première passe, **les grilles ré-rendues à 200 dpi** pour fiabiliser fonctions/grammaire/IPA).
 - **Nature du guide ≠ 6ème** : contrairement au guide 6ème (« Answer Keys » objectifs/voc/grammaire par leçon), ce guide-ci décrit le scope via des **grilles « Teaching hints »** (Functions/Grammar/Lexis/Pronunciation par **section**). C'est **plus synthétique** : les **objectifs « learners will be able to… »** ne sont pas systématiquement listés (déductibles des Functions). Les **compétences terminales formelles** ne sont **pas** tabulées ici → elles figurent dans le **Programme officiel 2005** (à récupérer, cf. §5).
