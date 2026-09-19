@@ -78,6 +78,83 @@ La 9ème année de base est la **3e (dernière) année du collège / المرح�
 >   - **L'إنتاج الكتابي / أنماط النّصوص / فهم المقروء** — **absent de ce guide نحو** (relève du manuel de lecture-expression / d'un autre support).
 >   - **Acquis antérieurs NON re-posés ici** : les fonctions نحويّة nommées + علاماتها et les نواسخ (7ème) ; la typologie des المركّبات + la phrase complexe + اسم العدد (8ème). En 9ème, certaines de ces notions **reviennent comme objet sémantique** (ex. الحال et المفعول فيه côté « دلالة الزّمان », درس 14 ; المبتدأ/الخبر côté حذف, درس 7) mais sous l'angle **énonciatif/temporel**, pas comme nomenclature.
 
+## 2 bis. Le manuel élève RÉVISÉ `101908` — la source qui fait foi (2026-09-19)
+
+> ⚠️ **Le guide `501902` de cette fiche est l'édition NON RÉVISÉE.** Vérifié sur les pages de titre
+> des trois niveaux du collège : il porte « كتاب الأستاذ », **les mêmes auteurs** que le manuel
+> élève (الصّادق بيّة · عمر بنّور · الأزهر الزنّاد · خالد ميلاد), **le même superviseur**
+> (عبد القادر المهيري) et **AUCUNE équipe de تنقيح** — là où le manuel `101908` en porte une
+> (فتحي بوكوبة · نجم الدّين عمر · نور الدّين الغيلوفي · منير الرقّي). La المقدّمة du manuel de 7ᵉ
+> explique la cause : la révision **« اقتضاها تجديد برامج اللغة العربيّة بالمرحلة الإعداديّة …
+> الصّادرة في سبتمبر سنة ستّ وألفين، التي أعيد فيها توزيع المسائل اللغويّة على المستويات
+> الثّلاثة »**. Détail et tableau des trois niveaux : §2 bis de `7eme-base/arabe.md`.
+>
+> **Le manuel est un scan pur** (couche texte vide, 53 car./page de filigrane) : rien à décoder,
+> rien à `grep`, lecture **à l'image** à ~105 dpi. Il est net.
+
+### Le programme révisé de 9ᵉ — 26 leçons (فهرس ص 175–176)
+
+**علم النحو (19 leçons)** — organisé par **fonctions discursives**, non par catégories classiques :
+العلاقات بين الجمل في النصّ (ص 3 · 9 · 15, dont أدوات الرّبط ومعانيها) · الحذف ومواطنه (23) ·
+النّداء (29) · الدّعاء (36) · الأمر والنّهي (40) · الاستفهام (47 · 54 · 65) ·
+الشرط (72 · 77 · 83) · **دلالة الزّمان** (89 صيغ الفعل · 95 الحروف المقترنة · 104 النّواسخ
+الفعليّة · 110 بعض الوظائف : المفعول فيه والحال) · العدد والمعدود (116 · 122).
+
+**علم الصرف (7 leçons)** : الاسم المقصور (129) · المنقوص (134) · الممدود (140) ·
+معاني المزيد (148 · 154) · **التّصغير ومعانيه (164)** · **النّسبة والمصدر الصّناعيّ (169)**.
+
+### Les quatre notions minces du contenu servi — deux transcrites ici à profondeur de génération
+
+`content/arabic` couvre bien le نحو sous un autre vocabulaire (voir §6). Restent **quatre notions
+de صرف** peu ou pas couvertes, dans une **année de concours**. Deux sont transcrites ci-dessous
+depuis leur **خلاصة** (le 3ᵉ des quatre أركان de chaque leçon : نصّ انطلاق → مدخل → **خلاصة** →
+تمارين) ; les deux autres restent à lire.
+
+#### ✅ Leçon 6 de صرف — **التّصغير ومعانيه** (ص 164–168), خلاصة ص 166–167
+
+- **Définition** : « التّصغير هو **صيغة صرفيّة** يُجعل عليها الاسم ليفيد معنى التّصغير. »
+- **Formation** : « بـ**ضمّ الحرف الأوّل** من الاسم المصغَّر منه و**زيادة ياء ساكنة بعد الحرف
+  الثّاني**، تسمّى **ياء التّصغير**. »
+- **Trois أوزان, selon le nombre de lettres du nom** :
+  | وزن | s'applique à |
+  | --- | --- |
+  | **فُعَيْل** | l'اسم de **trois** lettres |
+  | **فُعَيْعِل** | l'اسم de **quatre** lettres |
+  | **فُعَيْعِيل** | l'اسم de **cinq** lettres |
+- **Six معاني** — « تفيد صيغة التّصغير معاني **تتحدّد بمعنى الاسم المصغَّر منه وبعلاقة المتكلّم
+  بالشّيء** الّذي استعمل فيه التّصغير، فتدلّ على » : **التّصغير** · **التّقليل** من عدد الشّيء أو
+  حجمه · **تقريب** الزّمان أو المكان · **العَطْف والتّودّد** · **الحسرة** · **التّحقير**.
+- **Exemples du manuel, exploitables** : `جُدَيْدَتي` et `يا بُنَيّ` (تودّد, نصّ ص 166) ·
+  `شُجَيْرَة`, `خُضَيْرَاء`, `كُرَيّات`, `بُطَيْنَان`, `أُذَيْنَان`, `سُوَيْعَة` (ص 166) ·
+  `حُرَيْمَتي`, `بُنَيّ`, `كُسَيْر`, `قُلَيْبي`, `بُغَيْلَة`, `دُجَيْلا`, `أُحَيْلى` (ص 167).
+- ⚠️ **La distinction que la page construit** : le sens n'est **pas** dans la forme — la même
+  صيغة `بُنَيّ` vaut tendresse dans la bouche d'un père et mépris ailleurs. L'exercice 3 (ص 166)
+  demande explicitement « عيّن … المعنى الّذي قصد إليه المتكلّم ». C'est le cœur pédagogique.
+
+#### ✅ Leçon 7 de صرف — **النّسبة والمصدر الصّناعيّ** (ص 169–174), خلاصة ص 171
+
+- **النّسبة** : « **صيغة صرفيّة تدلّ على صفة الانتساب إلى شيء**. »
+- **Formation** : « تتكوّن صيغة النّسبة من **الاسم المنسوب إليه** مع **ياء مضاعفة مسبوقة بكسرة**
+  تُسمّى **ياء النّسبة**. »
+- **المصدر الصّناعيّ** : « **اسم لَحِقت آخره ياءٌ مضاعفة مسبوقة بكسرة وتاء (ـيَّة)**، ويدلّ على
+  **معنى مجرّد**. »
+- **Ce que les تمارين imposent au scope** (ص 171–172) :
+  - **صياغة** sur des bases irrégulières : لُغَة · الكوفة · أب · ابتداء · دم · هواء · فاطمة ·
+    سنة · البصرة · بناء · القاهرة · انتقاء · شَفَة · كِساء · ضَوْء · أخّ · إنشاء · يَد · استواء.
+  - **تمييز النّسبة من غير النّسبة** — le piège central : `المتنبّي · المعرّي · الرّاعي ·
+    الصّحاري` ne sont **pas** des نسبة malgré leur ياء finale, face à `الحفصيّون · البخاريّ ·
+    الشّاميّ · الكُرسيّ`.
+  - **تحويل المركّب الإضافيّ إلى مركّب نعتيّ** par la نسبة (ex. `كتب الهند` → `الكتب الهنديّة`).
+  - **المصدر الصّناعيّ** : الشّعوبيّة · الأوّليّة · الانتهازيّة · الوضعيّة · السّلفيّة ·
+    التّقدّميّة — et le distinguer de la simple نسبة au féminin.
+
+#### ⏳ Restent à lire — le trio de l'**اسم** (leçons 1–3 de صرف)
+
+**الاسم المقصور (ص 129–133) · المنقوص (ص 134–139) · الممدود (ص 140–147)** — 19 pages. Le contenu
+servi les effleure (`المقصور` 1 occurrence, `المنقوص` 2, `الممدود` 0). Même méthode : lire la
+**خلاصة** de chacune, puis décider si l'on enrichit `05-sarf-al-mizan` / `06-al-mushtaqqat` ou si
+l'on crée un chapitre dédié aux trois.
+
 ## 3. Notes pédagogiques / méthode
 
 ### 3.1 Architecture du guide (التّمهيد + corps)
