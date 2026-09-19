@@ -1,7 +1,7 @@
 # الإيقاظ العلمي (Éveil scientifique) — 5ème année de base · programme officiel CNP
 
 > **Source** : guide enseignant `503504P00.pdf` (`cnp-officiel/manuels/asasi/c5/enseignant/`) — « الدليل المرجعي في الإيقاظ العلمي — السنة الخامسة من التعليم الأساسي » (المركز الوطني البيداغوجي · وزارة التربية). **Manuel élève** disponible : `103504P00.pdf` (`…/asasi/c5/eleve/`, 176 p.) — « الإيقاظ العلمي — السنة الخامسة » — **dont l'index (p.175) fournit la colonne pages de §4** (offset PDF↔imprimé = 0).
-> **Pages lues (guide)** : p.3–4 (المقدّمة — structure en 4 وحدات), p.5–6 (دور المتعلّم / المعلّم / العائلة), p.7–12 (التمشّيات البيداغوجيّة — التمشّي البنائي vs التعليمي, حلّ وضعيّة مشكل, المشروع البيداغوجي), p.14–15 (مخطّط/مراحل المشروع البيداغوجي — bordereaux administratifs), p.16 (**الاقتدارات المخصوصة المندمجة** — matrice الكفايات الأفقيّة × اقتدارات الإيقاظ), p.17 (**توضيح الكفايات** — texte de la كفاية نهائيّة + ses deux مكوّنين), p.19 (التقييم — réf. programmes 2002/1980), p.22–23 (شبكات تقييم لبناء الاختبار — قاعدة 75% / الثلثين), p.24 (**VIII- تطوّر دراسة المحاور 1ère→6ème** — deux matrices), p.25–28 (**IX- مخطّط الوحدات** — 4 cartes conceptuelles, une par وحدة), p.29–34 (**X- التخطيط السّنوي** — tableaux أهداف مميّزة / محتويات / حصص par محور, pivotés 90°). **Pages lues (manuel élève)** : p.5 (الوحدات), p.174 (exemple de leçon), p.175 (**الفهرس** — pages par درس). **Transcrit le** : 2026-06-28. **Repris le 2026-09-19** (lecture à l'image, page par page) : **p.35–130** — les unités 1 (`الضّوء`) et 2 (`جسم الإنسان`) en entier, `الملفّ العلمي` + les 13 جذاذات + les deux `وضعيّة تعلّم بالإدماج` + les deux `وضعيّة تقييم` avec leurs barèmes — et **p.221–223** (`خريطة كتاب المعلّم والفهرس` + `المراجع`), qui donnent la carte des 189 pages du corps du guide (§2 bis). **Couverture réelle : 127 p. / 223, soit 57 %** (3–12, 14–17, 19, 22–130, 221–223). Restent non lues : p.1–2, 13, 18, 20–21, **131–220** (unités 3 `الكهرباء` et 4 `الوسط البيئي`). **Statut** : `partielle` — la génération reste interdite hors unités 1 et 2.
+> **Pages lues (guide)** : p.3–4 (المقدّمة — structure en 4 وحدات), p.5–6 (دور المتعلّم / المعلّم / العائلة), p.7–12 (التمشّيات البيداغوجيّة — التمشّي البنائي vs التعليمي, حلّ وضعيّة مشكل, المشروع البيداغوجي), p.14–15 (مخطّط/مراحل المشروع البيداغوجي — bordereaux administratifs), p.16 (**الاقتدارات المخصوصة المندمجة** — matrice الكفايات الأفقيّة × اقتدارات الإيقاظ), p.17 (**توضيح الكفايات** — texte de la كفاية نهائيّة + ses deux مكوّنين), p.19 (التقييم — réf. programmes 2002/1980), p.22–23 (شبكات تقييم لبناء الاختبار — قاعدة 75% / الثلثين), p.24 (**VIII- تطوّر دراسة المحاور 1ère→6ème** — deux matrices), p.25–28 (**IX- مخطّط الوحدات** — 4 cartes conceptuelles, une par وحدة), p.29–34 (**X- التخطيط السّنوي** — tableaux أهداف مميّزة / محتويات / حصص par محور, pivotés 90°). **Pages lues (manuel élève)** : p.5 (الوحدات), p.174 (exemple de leçon), p.175 (**الفهرس** — pages par درس). **Transcrit le** : 2026-06-28. **Repris le 2026-09-19** (lecture à l'image, page par page) : **p.35–156** — les unités 1 (`الضّوء`), 2 (`جسم الإنسان`) et 3 (`الكهرباء`) en entier, `الملفّ العلمي` + les 16 جذاذات + les trois `وضعيّة تعلّم بالإدماج` + les trois `وضعيّة تقييم` avec leurs barèmes — et **p.221–223** (`خريطة كتاب المعلّم والفهرس` + `المراجع`), qui donnent la carte des 189 pages du corps du guide (§2 bis). **Couverture réelle : 153 p. / 223, soit 69 %** (3–12, 14–17, 19, 22–156, 221–223). Restent non lues : p.1–2, 13, 18, 20–21, **157–220** (unité 4 `الوسط البيئي`). **Statut** : `partielle` — la génération reste interdite hors unités 1 à 3.
 > **Langue d'enseignement** : `ar`. **gradeSlug** : `5eme-base`. **subject id** attendu : `eveil-scientifique-5eme`.
 
 ## 1. Cadre & compétences (الكفايات / الاقتدارات / المؤشّرات)
@@ -251,6 +251,50 @@ L'إدماج aligne **six activités** avec leurs `الإجابات المتوق
 
 Total **6 + 9 + 5 = 20**, comme en unité 1 mais par une autre répartition — le barème est donc **propre à chaque وضعيّة تقييم** et ne se déduit pas d'une règle générale.
 
+## 2 sexies. Unité 3 — الكهرباء (ص 131–156, lue intégralement)
+
+La plus courte des quatre unités : **6 pages** de الملفّ العلمي, **3 جذاذات**, l'إدماج et le تقييم. Elle porte le seul chapitre `08-electricite`. C'est aussi celle dont le dossier scientifique s'éloigne le plus du niveau des élèves — voir §6, écart 16.
+
+### `I- الملفّ العلمي` (ص 131–136) — dix sections
+
+1. **المولّد الكهربائي** (131) : trois voies de production — réactions chimiques (الخليّة الكهربائيّة), induction électromagnétique (une bobine tournant dans un champ), rotation d'un aimant dans une **لفيفة** (bobine).
+2. **الخليّة الكهربائيّة** (131–132) : **فولطا**, premier modèle industriel en **1800** — plaques de cuivre et de zinc alternées, séparées par des disques de tissu imbibés d'acide sulfurique. Puis la pile **لوكلانشي** (Georges Leclanché, **1839–1882**) : solution de chlorure d'ammonium en pâte, **ثاني أكسيد المنغنيز (MnO₂)** comme dépolarisant autour d'une tige de **graphite** dans un godet de zinc.
+3. **كيف ينتقل التّيّار الكهربائي ؟** (132) : le courant conventionnel va **du pôle + vers le pôle −** dans le circuit extérieur ; le courant du secteur est **متناوب**, il change de sens plusieurs fois par seconde.
+4. **النّاقل والعازل** (132–133) : conducteurs = métaux (électrons périphériques faiblement liés) **et solutions ioniques** — acides (H₃O⁺ + Cl⁻), basiques (Na⁺ + OH⁻), salines (Na⁺ + Cl⁻) ; isolants = الخشب، المطاط، الزّجاج، اللّدائن، الزّيت، الكحول، الهواء، الأكسيجين، ثاني أكسيد الكربون.
+5. **شدّة التّيّار** (133) : `شدة الكهرباء = كمية الكهرباء / الزمن`, en **أمبير**, mesurée par un **أمبير متر monté en série**.
+6. **فرق الجهد et المقاومة** (133–134) : l'analogie hydraulique (les tubes verticaux qui mesurent la chute de pression le long d'un tuyau horizontal) ; **loi d'Ohm** attribuée à **جورج أومز**, le volt à **فولطا** ; `المقاومة = فرق الجهد / شدة التيار`, symbole **R**, unité **أوم**.
+7. **طرق وصل الدّارة** (134–135) : **التّسلسل** (une seule boucle ; une lampe retirée et tout s'arrête, le circuit devient ouvert) et **التّوازي** (plusieurs boucles partageant deux points ; c'est le câblage des maisons, usines et voitures).
+8. **المصباح الكهربائي** (135) : **أديسون, 1879** ; filament de **tungstène** enroulé, fondant vers **3 400 °**, chauffé par **التّأثير الحراري للتّيّار**. Parties : زجاج · سليك · غاز نادر (**أرڤون أو وزانون**) · سلك معدني · عجينة عازلة · حامل بلوري · قطبان.
+9. **وصل المصابيح** (135) : **en série** les lampes **se partagent la tension** et l'intensité reste la même — une pile 4,5 V sur deux lampes 3,5 V ne donne que **2,25 V** à chacune, d'où un éclairage faible ; **en parallèle** chacune reçoit les **4,5 V** et les intensités **s'additionnent** (l'exemple du compteur : 1,6 A + 3,9 A + 0,5 A = 6 A).
+10. **خطر التّيّار والوقاية** (136) : la **الدّارة القصيرة** (court-circuit) et la **الصّهيرة** — fil d'alliage **plomb-étain fondant vers 240 °**, calibré **5 A ou 10 A** selon le diamètre du conducteur.
+
+### `II- جذاذات التّنشيط` (ص 137–150) — trois séances
+
+| #   | ص       | objet                                   | Encadrés `الاستنتاج`                                                                                                                                                                                                                  |
+| --- | ------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | 137–141 | إضاءة المصباح الكهربائي                 | l'anatomie de l'ampoule (les sept pièces ci-dessus) ; « تختلف المصابيح الكهربائيّة من حيث شكلها وحجمها **وفولطيّتها** » ; et la **matrice 3 × 3** de ص 140, reproduite plus bas.                                                          |
+| 2   | 142–145 | النّاقل والعازل                         | « يتكوّن السّلك الكهربائي من جزءين : سلك معدني داخلي **ناقل** – غلاف بلاستيكي خارجي **عازل** » ; la liste ناقلة (الحديد، النّحاس، الألمينيوم، الذّهب، الفضّة — **أي المعادن بصفة عامّة**) / عازلة (الخشب، الزّجاج، القماش، اللّدائن) ; et la nuance qui fait les bonnes questions : « **الماء الخالي من الأملاح المعدنيّة (النّقيّ) عازل** » mais « **الماء الغنيّ بالأملاح ناقل** ». |
+| 3   | 146–150 | الدّارة : القاطعة والصّهيرة             | « يضيء المصباح عندما تكون الدّارة **مغلقة** / لا يضيء عندما تكون **مفتوحة** » ; « الجسم النّاقل يسمح **بغلق** الدّارة » ; « الزّرّ الّذي ييسّر فتح الدّارة وغلقها يسمّى **قاطعة** » ; et la composition canonique : **خليّة + مصباح متلائمي الفولطيّة + أسلاك ناقلة + قاطعة**. |
+
+**La matrice pile × lampe (ص 140)** — c'est le meilleur matériau à questions de toute l'unité, parce qu'elle est complète et sans ambiguïté :
+
+| خليّة ↓ / مصباح →    | **1,5 فولط**                  | **4,5 فولط**                  | **9 فولط**              |
+| -------------------- | ----------------------------- | ----------------------------- | ----------------------- |
+| **1,5 فولط**         | إضاءة عاديّة                  | إضاءة ضعيفة أو منعدمة         | إضاءة منعدمة            |
+| **4,5 فولط**         | إضاءة قويّة فانطفاء لتلف السّليك | إضاءة عاديّة                  | إضاءة ضعيفة أو منعدمة   |
+| **9 فولط**           | إضاءة قويّة فانطفاء لتلف السّليك | إضاءة قويّة فانطفاء لتلف السّليك | إضاءة عاديّة            |
+
+La règle se lit sur la diagonale : **tensions égales → éclairage normal** ; **pile plus forte que la lampe → le filament grille** ; **pile plus faible → éclairage faible ou nul**. La جذاذة 1 la fait construire, le تقييم de ص 141 et la التّعليمة 14 de ص 155 la réutilisent.
+
+**Symboles de schéma (ص 150)** : الخليّة (deux traits inégaux), المصباح (cercle barré d'une croix), القاطعE (l'interrupteur), et — voir §6, écart 22 — un rectangle marqué **R** pour la **صهيرة**.
+
+### `III- وضعيّة تعلّم بالإدماج` (ص 151–153) et `V- وضعيّة تقييم` (ص 154–156)
+
+L'إدماج est un **projet** : fabriquer une « **لوحة كهربائيّة لاختبار المعلومات** » — un panneau question/réponse où la lampe s'allume quand la liaison est juste. Le guide en donne la liste de matériel et les **cinq étapes de fabrication** (ص 153). C'est le seul إدماج du guide qui aboutit à un objet réutilisable en classe.
+
+⚠️ **Le تقييم de cette unité n'est pas celui de l'unité.** Son périmètre annoncé (ص 154) est : `الدّارة الكهربائيّة` **+** `وظيفة الهيكل العظمي والجهاز العضلي` **+** `الجهاز التّنفّسي وجهاز دوران الدّم` — autrement dit les unités **2 et 3** réunies. Les وضعيّات تقييم sont **trimestrielles et cumulatives**, pas unitaires ; la carte du §2 bis les range sous leur unité parce que le guide les y imprime, mais leur contenu déborde.
+Barème (ص 156) : **مع1 7,5 + مع2 7,5 + مع3 5 = 20**, soit la répartition de l'unité 1 et non celle de l'unité 2.
+
 ## 3. Notes pédagogiques / méthode
 
 - **Public ~10 ans, lecteur autonome** : le manuel élève `103504` (176 p.) structure chaque وحدة en **دروس** + **وضعيّة تعلّم بالإدماج** + **وضعيّة تقييم**. La démarche reste **active, expérimentale, visuelle** : observation, manipulation, expérience, **projet pédagogique** (un par وحدة).
@@ -259,7 +303,8 @@ Total **6 + 9 + 5 = 20**, comme en unité 1 mais par une autre répartition — 
 - **حلّ وضعيّة مشكل (p.8–9)** : démarche fondée sur Rogiers / A. Vergnoux / Louis-D'Hainaut ; la situation-problème doit être **دالّة** (signifiante, liée aux intérêts du المتعلّم) et permettre l'**إدماج** des acquis.
 - **المشروع البيداغوجي (p.10–15)** : 3 phases — **التخطيط للمشروع** (اختيار، موارد، توزيع المسؤوليّات) → **تنفيذ المشروع** (استغلالات بيداغوجيّة : مجال العلوم — الرّياضيّات/الإيقاظ العلمي — التربية، اللّغات…) → **تقييم المشروع** (المنتوج النهائي، مدى تحقّق الأهداف والكفايات، خدمته لمشروع المدرسة). Les **4 projets** sont : صنع مربّى للأسماك (و1) · وسيلة تعليميّة عن الحجاب الحاجز/مطويّة المحافظة على الجسم (و2) · تمثيل نموذجي لشبكة طرقات (و3) · منبت لنباتات الزّينة (و4).
 - **التقييم (p.19, 22–23)** : l'évaluation s'appuie sur les programmes officiels (réf. **2002** et **1980**, p.19) ; les **شبكات تقييم لبناء الاختبار** (p.22–23) rappellent les règles **قاعدة 75%** et **قاعدة الثلثين (2/3)** et la cohérence وضعيّة↔كفاية↔معايير (الدلالة، الإدماج، الأداء المنتظر، جدول إسناد الأعداد).
-- **Notation** : **chiffres latins (0–9)**, équations LTR, unités SI. Le niveau reste **qualitatif** en physique (pas de volt/ampère/ohm ni vitesse de la lumière chiffrés ; circuit décrit fonctionnellement). Jamais de chiffres arabo-indiens.
+- **Notation** : **chiffres latins (0–9)**, équations LTR, unités SI. Jamais de chiffres arabo-indiens — y compris là où le guide lui-même n'est pas uniforme (ص 150 mêle ٧/٥ et 4,5 sur une seule page, §6 écart 24).
+  ⚠️ **Corrigé le 2026-09-19** : cette puce affirmait « pas de volt/ampère/ohm ni vitesse de la lumière chiffrés ». La lecture des جذاذات la dément sur deux points. La **vitesse de la lumière est chiffrée** (3.10⁸ م/ث ≈ 300 000 km/s, ص 35, et le calcul Terre-Soleil de ص 59), et le **volt est chiffré au niveau de l'élève** : toute la جذاذة 1 de l'unité 3 fait apparier des piles et des lampes étiquetées **1,5 / 4,5 / 9 فولط** (matrice de ص 140), et la وضعيّة تقييم de ص 155 la réutilise. Ce qui reste vrai : **aucun calcul** n'est demandé à l'élève sur ces grandeurs — le volt y est une **étiquette à comparer**, pas une valeur à manipuler ; et l'**ampère, le coulomb et l'ohm** restent, eux, réservés au الملفّ العلمي du maître (§6 écart 16).
 - **Pièges / حواجز à exploiter (distracteurs réalistes)** : confondre **مصدر ضوئي** (produit la lumière) et **جسم منير/مُضاء** (la renvoie) · croire que la vision se fait « par l'œil seul » sans lumière (Ibn al-Haytham corrige l'émission visuelle) · confondre **شافّ** (translucide) et **شفّاف** (transparent) · penser qu'un circuit « ouvert » fonctionne · prendre un isolant pour un conducteur · confondre **شريان** et **وريد**, **الدورة الصغرى** et **الكبرى** · confondre les types d'os/muscles · confondre **ترسيب/ترشيح/تعقيم** dans la potabilisation.
 
 ## 4. Chapitrage retenu (→ alimente `manifest/5eme-base.json`)
@@ -295,7 +340,7 @@ Total **6 + 9 + 5 = 20**, comme en unité 1 mais par une autre répartition — 
   1. **`06-respiration` ↔ `07-circulation-sang`** : dans le manuel, la **circulation (د6, p.57)** précède la **respiration (د7–8, p.61)** ; le contenu publié garde `06`=respiration avant `07`=circulation (ordre prod / `displayOrder` figés). Pages renseignées en conséquence.
   2. **`09-vivants-milieu`** : le محور التوازن البيئيّ est traité **en fin de manuel (د12, p.160)** alors que les leçons d'écosystème/chasse sont en tête (د1–4, p.96–117) ; le chapitre `09` couvre donc deux plages (96–117 **+** 160–165).
 
-## 6. Audit du guide — 15 écarts relevés à la source (unités 1 et 2, le 2026-09-19)
+## 6. Audit du guide — 25 écarts relevés à la source (unités 1 à 3, le 2026-09-19)
 
 ### Unité 1 — sept écarts (lecture intégrale ص 35–74 + الفهرس ص 221–223)
 
@@ -402,6 +447,62 @@ Le document reproduit est celui du **31 mai 1998** et annonce « **أكثر من
 
 Elle est, de loin, la plus **chiffrée** du guide : 200 os, 1/6 de la masse, 8 + 14 os de la tête, 33 vertèbres en 7/12/5/5/4, 12 paires de côtes en 7/3/2, 1/3 organique + 2/3 minéral, 250 g de cœur, 15 mouvements/min, 0,5 L par mouvement, 10 800 L/jour, 12 cm de trachée, 3 lobes / 2 lobes, 5–6 L de sang, 60–70 pulsations. Chacun de ces nombres est vérifiable à sa page et donne une question fermée sans ambiguïté — à la différence des « combien de types » relevés ci-dessus, qui n'en donnent aucune.
 Le vocabulaire, lui, est complet là où la fiche ne portait que les pièges : **الأضلاع الحقيقيّة / الكاذبة / السّائبة**, **غضروف النّمو** ↔ **السّمحاق** (longueur ↔ largeur), **الجنف / الحدب / التّقعّر**, **الصّمام الثّلاثي / الثّنائي / السّينيّة**, **الوتين** pour l'aorte, **البصلة الشّوكيّة** pour le centre respiratoire, **الأسناخ** pour les alvéoles.
+
+### Unité 3 — dix écarts de plus (lecture intégrale ص 131–156)
+
+Le motif change de nature ici. L'unité 3 est courte et ses **encadrés sont tous justes** — c'est son **dossier scientifique** qui pose problème, par le niveau, et son **épreuve d'évaluation**, par l'édition.
+
+#### 🔴 16. Le الملفّ العلمي de cette unité est écrit pour le lycée, pas pour la classe
+
+En six pages, ص 131–136 déroule : la pile de Volta avec ses **demi-équations d'oxydoréduction** (`Zn → 2e⁻ + Zn²⁺`, `2 H₃O⁺ + 2e⁻ → H₂ + 2H₂O`), les **ions hydronium**, la **polarisation** de l'électrode, la pile Leclanché et son dépolarisant, les **solutions ioniques** notées H₃O⁺ + Cl⁻ / Na⁺ + OH⁻ / Na⁺ + Cl⁻, l'**ampère**, le **coulomb**, le **volt**, l'**ohm**, la **loi d'Ohm** sous ses deux formes, et le courant **alternatif**.
+Rien de cela n'est au programme de la 5ᵉ année : le التّخطيط السّنوي (§2) ne demande que la dارة, le ناقل/العازل, la قاطعة, la صهيرة et les parties du مصباح. Le الملفّ العلمي est de la **culture du maître** ; le confondre avec le programme produirait des questions de chimie pour des enfants de dix ans.
+**Règle** : sur cette unité, le périmètre se lit dans les **جذاذات** et le التّخطيط السّنوي, jamais dans le الملفّ العلمي.
+
+#### 🟠 17. ص 131 — les deux électrodes de la pile sont interverties
+
+Le guide écrit : « ألكترود الخارصين (Zn) يمثّل القطب السّالب ويسمّى **المهبط (الكاتود)** … ألكترود النّحاس (Cu) القطب الموجب ويسمّى **المصعد (الأنود)** », puis, deux lignes plus bas : « **يفقد المهبط الألكترونات** ».
+Une électrode qui **perd** des électrons subit une oxydation : c'est l'**anode**. Dans une pile, le zinc est donc l'anode (pôle −) et le cuivre la cathode (pôle +) — l'inverse de ce qui est imprimé. Le guide applique ici la convention de l'**électrolyse** (anode = pôle +), qui ne vaut pas pour un générateur ; et sa propre phrase suivante le contredit. Hors programme de toute façon (écart 16) : **ne rien en tirer**.
+
+#### 🟠 18. ص 133 — le coulomb reçoit le symbole de l'ampère
+
+Trois lignes se suivent : « وحدة قيس شدّة التّيّار هي الأمبير (أ) **Ampère (A)** » · « وحدة كمّيّة الكهرباء (كولومب) **(A)** (Coulomb) » · « وحدة الزّمن (الثّانية) (s) (Seconde) ». Le coulomb porte **(A)** au lieu de **(C)**, juste sous l'ampère qui porte le même symbole.
+
+#### 🟠 19. ص 144 — la lampe domestique est donnée à « 60 فولط »
+
+« يتأمّل المتعلّمون مصباحا كهربائيا ممّا يستعمل في إضاءة المنزل (**60 فولط**) ». Le secteur tunisien est à **220 V** ; **60** est le nombre de **watts** d'une ampoule courante. L'unité est fausse, et l'activité porte précisément sur un objet que l'élève a chez lui.
+
+#### 🟠 20. ص 150 — la صهيرة reçoit le symbole du résistor
+
+La légende des symboles de schéma donne à la **صهيرة** un rectangle marqué **R**, puis les deux circuits dessinés en dessous placent ce **R** dans la boucle. Or **R** est la lettre que le guide assigne lui-même à la **مقاومة** en ص 134 (« ونرمز إليها بالحرف اللاتيني (R) »). Le même symbole désigne donc la résistance à une page et le fusible à une autre. Un élève interrogé sur « رمز الصّهيرة » recopierait un résistor.
+
+#### 🟡 21. ص 143 — les deux hypothèses de la جذاذة 2 sont imprimées identiques
+
+« الفرضيّة الأولى : الأجسام الّتي تنقل التّيّار الكهربائي هي أجسام **ناقلة**. / الفرضيّة الثّانية : الأجسام الّتي **لا** تنقل التّيّار الكهربائي هي أجسام **ناقلة**. » La seconde doit se terminer par **عازلة** ; telle quelle, la paire d'hypothèses que le maître écrit au tableau se contredit.
+
+#### 🟡 22. ص 135 — le filament fait « 1/10 م » de diamètre
+
+« سليك دقيق **قطره 1/10 م** وطوله يصل إلى المتر » (vérifié à 400 dpi : un seul **م**). Un filament de tungstène de **10 cm** de diamètre n'existe pas ; il manque un م — **1/10 مم**. La longueur, elle, est juste : un filament enroulé atteint bien le mètre.
+
+#### 🟡 23. ص 155–156 — l'épreuve du 2ᵉ trimestre saute des numéros et se répète
+
+Les consignes courent **1 → 8, puis 11 → 14, puis 16, 17** : **9, 10 et 15 n'existent pas**. Et la **التّعليمة 17** (« أذكر علامة واحدة تدلّ على سرعة دوران الدّم عند القيام بنشاط ») reprend **mot pour mot** la **التّعليمة 11**. Dans le جدول إسناد الأعداد de la même épreuve, la colonne **مع3** n'a **aucune ligne de niveau renseignée** — seul son total (5) est écrit.
+
+#### 🟡 24. ص 150 — deux systèmes de chiffres sur la même page
+
+Le matériel de la صهيرة artisanale est donné en **chiffres arabo-indiens** (« قيس طولها **٧** صم وقيس عرضها **٥** صم ») alors que toute l'unité, y compris le dessin voisin, écrit en **chiffres latins** (« **4,5** فولط »). La règle du projet (chiffres latins partout, §3) reste la bonne ; c'est la **source** qui n'est pas uniforme, et il ne faut pas s'appuyer sur elle pour trancher.
+
+#### ⚠️ 25. Deux activités font casser du verre à des enfants de dix ans
+
+ص 139, النّشاط الرّابع : « **دعوة المتعلّمين إلى تكسير مصباح كهربائي بواسطة كلّابة** » (schéma à l'appui). ص 149, النّشاط السّادس : « **يكسر المتعلّم الجزء العازل للصّهيرة** ». Aucune consigne de protection n'accompagne l'une ou l'autre. **Ne jamais reprendre ces gestes dans un contenu destiné à l'élève**, ni sous forme d'« expérience à faire à la maison ».
+
+#### 🔎 Un piège de LECTURE, pas une erreur du guide : le rendu bidi déplace les opérateurs
+
+ص 135 imprime `المجموع = 1,6 = 3,9 + 0,5 + 6 أ`, qui se lit comme une égalité fausse. Elle ne l'est pas : l'expression est `1,6 + 3,9 + 0,5 = 6 أ`, et le **rendu bidirectionnel** a déplacé le `=` et un `+` à l'intérieur du fragment latin. C'est le même phénomène que les numéros de page de ص 223 (`491 · 891 · 902` pour 194, 198, 209). **Conséquence pratique** : dans ces PDF, aucune expression mêlant chiffres latins et texte arabe ne se transcrit telle quelle — elle se **reconstruit**, et l'on ne conclut jamais à une erreur de calcul du guide sur la foi de l'ordre affiché.
+
+#### Ce que l'unité 3 apporte à la génération
+
+Peu de faits, mais deux blocs très solides. **La matrice pile × lampe** (ص 140, reproduite au §2 sexies) donne à elle seule une famille entière de questions fermées, avec une règle vérifiable et des distracteurs naturels. **La paire eau pure / eau minéralisée** (ص 145) est le meilleur piège conceptuel du guide : l'eau distillée **isole**, l'eau du robinet **conduit** — et le tableau de ص 144 fait justement tester `ماء حنفية` et `قلم رصاص` (graphite), deux conducteurs que personne n'attend.
+Et la composition canonique d'un circuit — **خليّة + مصباح متلائمي الفولطيّة + أسلاك ناقلة + قاطعة** (ص 148) — donne l'énoncé de référence, avec `صهيرة` en cinquième élément optionnel de protection.
 
 ## 7. Incertitudes / à revérifier
 
