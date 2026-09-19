@@ -1,7 +1,7 @@
 # اللغة الفرنسية (Français) — 3ème année de base · programme officiel CNP
 
 > **Source** : guide enseignant `521326P00.pdf` (`cnp-officiel/manuels/asasi/c3/enseignant/`) — page de titre imprimée : **« J'apprends le français — Je joue et je projette — Guide méthodologique — 3ᵉ année de l'enseignement de base »** (République Tunisienne · Ministère de l'Éducation · **CNP** ; CNP 2022-2023). Auteures : Zeineb Bejaoui El Benna, Naziha Mbarki Dani, Emna Naji, Moufida Daoud, Najla Belhajahmed ; évaluation finale : Sami Slimi, Mohamed Chagraoui.
-> **Pages lues** : couverture (p.1) ; **SOMMAIRE** p.2 ; **Ch. I — Cadre didactique & pédagogique** p.3–5 (approche actionnelle p.4, pédagogie du projet « Mon album inspiré de l'album d'Elyssa » p.4–5) ; **Ch. II — Organisation des apprentissages** p.6–8 (planification annuelle + **calendrier** p.6, **emploi du temps / 9 séances** p.7, **4 compétences langagières + Éducations à** p.8) ; **Ch. III — Repères méthodologiques** p.9–39 (réception/production oral & écrit + **3 paliers** p.9–12, rituel p.13, communication orale p.14–18, **phonétique / 36 phonèmes** p.16, poèmes-comptines-chants p.17, intégration orale p.18–19, écrit lecture/écriture p.19–28, abécédaire p.28, intégration & évaluation p.29–30, **table distribution graphèmes-phonèmes par unité** p.20 lue à 230 dpi recadrée, **note de l'écrit** p.39) ; **Ch. IV — Planification des unités** p.40–156 (**8 thèmes/sous-thèmes** p.40, situation-cadre « Poupou » p.41–42, **Unité 0 prérequis** p.43–47, **Unité 1** p.48–58, **Unité 2** overview p.61, **Unité 3** p.74, **Unité 4** p.86, **Unité 5** p.100, **Unité 6** p.114, **Unité 7** p.128, **Unité 8** p.143) ; **Annexes** à partir de p.157. **Transcrit le** : 2026-06-28. **Statut** : transcription fidèle (noyau méthodologique + scope de langue + contenu linguistique des 9 unités via leur page-synthèse « overview » ; le détail séance-par-séance n'est pas transcrit exhaustivement — voir §6).
+> **Pages lues** : couverture (p.1) ; **SOMMAIRE** p.2 ; **Ch. I — Cadre didactique & pédagogique** p.3–5 (approche actionnelle p.4, pédagogie du projet « Mon album inspiré de l'album d'Elyssa » p.4–5) ; **Ch. II — Organisation des apprentissages** p.6–8 (planification annuelle + **calendrier** p.6, **emploi du temps / 9 séances** p.7, **4 compétences langagières + Éducations à** p.8) ; **Ch. III — Repères méthodologiques** p.9–39 (réception/production oral & écrit + **3 paliers** p.9–12, rituel p.13, communication orale p.14–18, **phonétique / 36 phonèmes** p.16, poèmes-comptines-chants p.17, intégration orale p.18–19, écrit lecture/écriture p.19–28, abécédaire p.28, intégration & évaluation p.29–30, **table distribution graphèmes-phonèmes par unité** p.20 lue à 230 dpi recadrée, **note de l'écrit** p.39) ; **Ch. IV — Planification des unités** p.40–156 (**8 thèmes/sous-thèmes** p.40, situation-cadre « Poupou » p.41–42, **Unité 0 prérequis** p.43–47, **Unité 1** p.48–58, **Unité 2** overview p.61, **Unité 3** p.74, **Unité 4** p.86, **Unité 5** p.100, **Unité 6** p.114, **Unité 7** p.128, **Unité 8** p.143) ; **Annexes** à partir de p.157. **Transcrit le** : 2026-06-28. **Statut** : transcription **vérifiée** (noyau méthodologique + scope de langue + contenu linguistique des 9 unités via leur page-synthèse « overview » ; le détail séance-par-séance n'est pas transcrit exhaustivement — voir §6). Elle se disait « fidèle » : elle l'est **depuis** l'audit au source du **2026-09-19** (R-7), qui a corrigé **7 écarts** — la table de distribution p.20 (`c=k - è/ê`, et non `è/ë`), la phonétique des unités **1, 5, 6 et 8** (celle de l'unité 1 ne figurait pas sur la page), les **structures** de l'unité 1 (« dans /sur/ **sous** ») et son **contenu linguistique**, qui avait glissé d'une colonne (les déterminants donnés comme pronoms). **Ajouté** : §2 ter, les dix rubriques « Contenu de l'écrit » des huit unités (p.49 → p.144) — la page la plus utile du guide à la génération, qui manquait entièrement.
 > **Langue d'enseignement** : `fr` (monolingue — le contenu est en français, langue d'instruction). **gradeSlug** : `3eme-base`. **subject id** attendu : `french-3eme`. **Le français DÉMARRE en 3ème année** : c'est la **1ère année d'apprentissage** de la langue (priorité à l'ORAL, puis entrée dans la lecture/écriture).
 
 ## 1. Cadre & compétences (les compétences terminales)
@@ -112,9 +112,9 @@ Le **projet pédagogique de l'année** est **« Mon album inspiré de l'album d'
 - **Projet de l'unité** : l'arbre de la famille. **Compétence visée** : intégrer ses acquis (savoirs, savoir-faire et savoir-être) pour confectionner son arbre généalogique et identifier les membres de sa famille.
 - **Contenu de l'oral** : **Activité d'écoute** — histoire « Poupou, mon coup de cœur » ; **Comptine** « Mes parents » à la page 9 du manuel de lecture. **Actes de parole** : saluer ; se présenter / présenter quelqu'un / quelque chose (c'est /voici/ voilà + nom) ; poser des questions simples et y répondre (avec qui ? où ? … et toi ? Comment t'appelles-tu ? Qui est-ce ? C'est qui ?) ; identifier un lieu ; situer un objet dans l'espace ; exprimer un sentiment (son amour pour sa famille). **Éducations à…** : écouter l'autre ; donner son avis (j'aime/ je n'aime pas) ; collaboration (contribuer à un travail collectif : l'arbre de famille d'un personnage préféré).
 - **Contenu linguistique** :
-  - **Structures** : phrase à présentatif : c'est /voici/ voilà + nom ; phrase à verbe être + nom ; phrase à COD (j'aime / je n'aime pas + nom) ; GN+GV+GNP (situer un objet dans l'espace : dans/sur) ; l'interrogation simple : et toi ? Qui ? Où ? Comment t'appelles-tu ? Comment est-elle/ il ? Est-ce que ? C'est qui ? ; l'énumération (et).
-  - **Noms / lexique** : fille – garçon – père /papa-mère/ maman – frère-sœur- grand-père/ papi- grand-mère/ mamie – oncle –tante – perroquet – maison- salon- salle de bains - cuisine- chambre – jardin. **Verbes** : être – avoir- s'appeler- chanter –dessiner –colorier –aimer –adorer – compter. **Adjectifs** : joli(e) – petit(e) – grand(e)- (couleur)+(triste+ ai). de couleur + moi-toi. **Pronoms personnels** : un- une – le – la – elle. **Déterminants** : un, une, le, la, les, des. **Adjectifs possessifs** : mon- ma- son- sa. **Nombres** : de 1à 10.
-- **Phonétique** : on [ɔ̃] à partir du chant : « maman/ parents » + jeux.
+  - **Structures** : phrase à présentatif : c'est /voici/ voilà + nom ; phrase à verbe être + nom ; phrase à COD (j'aime / je n'aime pas + nom) ; GN+GV+GNP (situer un objet dans l'espace : **dans /sur/ sous**) ; l'interrogation simple : et toi ? Qui ? Où ? Comment t'appelles-tu ? Comment est-elle/ il ? Est-ce que ? C'est qui ? ; l'énumération (et).
+  - **Noms / lexique** : fille – garçon – père /papa-mère/ maman – frère-sœur- grand-père/ papi- grand-mère/ mamie – oncle –tante – perroquet – maison- salon- salle de bains - cuisine- chambre – jardin. **Verbes** : être – avoir- s'appeler- chanter –dessiner –colorier –aimer –adorer – compter. **Adjectifs** : joli(e) – petit(e)- content(e)-triste + adj. de couleur. **Pronoms personnels** : je-tu – il– elle – moi-toi. **Déterminants** : un- une - le - la. **Adjectifs possessifs** : mon- ma- son- sa. **Nombres** : de 1à 10. _(Relu p.48 le 2026-09-19 : la fiche avait glissé d'une colonne — elle donnait « un- une – le – la – elle » comme PRONOMS (ce sont les déterminants), inventait « grand(e) », perdait « content(e) », rangeait « moi-toi » dans les adjectifs et ajoutait « les, des » aux déterminants.)_
+- **Phonétique** (p.49, verbatim) : « phonèmes **i/u [i/y] - a/an [a/ã] - on-an [ɔ̃ / ã]** » _(relu le 2026-09-19 : la fiche portait « on [ɔ̃] à partir du chant maman/parents + jeux », qui ne figure pas sur la page)_.
 
 ### Unité 2 — « Mon école » (thème : La vie scolaire ; p.61)
 
@@ -153,7 +153,7 @@ Le **projet pédagogique de l'année** est **« Mon album inspiré de l'album d'
 - **Contenu linguistique** :
   - **Structures** : phrase à présentatif (c'est + GN) ; aller à… ; c'est + nom de saison ; la phrase impersonnelle (météo) ; la phrase à verbe être + adj ; l'énumération ; GN + GV (verbes de déplacement) ; phrase sans complément.
   - **Noms / lexique** : oiseau, flamant, pigeon, coq, poule, poussin, chat, chaton, chien, âne, ânon, vache, mouton, chèvre, cheval, jument, les saisons, les jours de la semaine, ferme, pré, lac, campagne… **Verbes** : nager, marcher, courir, sauter, voler, nourrir, voir… **Adjectifs** : content, heureux, triste, inquiet, disparu, joli, beau, chaud, froid, adj de couleur… **Pronoms personnels** : je, tu, il, elle, ils, elles. **Articles** : un, une, le, la, les, des. **Adjectifs possessifs** : ton, mon, son, ma, ta, sa. **Nombres** : de 1 à 30.
-- **Phonétique** : phonèmes [ʃ] ch, [ʒ] j/ge (cris d'animaux) **[?]** (les quatre paires de cris en petits caractères : contraste ch [ʃ] / j-ge [ʒ]).
+- **Phonétique** (p.100, verbatim) : « phonèmes **j/ch [ᶾ/ʃ] - o/on [ͻ/ ɔ̃] - f/v [f/v]** » _(la fiche ne portait que ch/j, manquait o/on et f/v, et ajoutait un « (cris d'animaux) » marqué `[?]` qui n'est pas sur la page — le `[?]` disait le doute, la relecture tranche)_.
 - **Contenu de l'écrit** : graphèmes-phonèmes lus/écrits : `n – an/en` (séances 1-2) puis `f – on` (séances 4-5) ; **texte n°2** (séance 3) + **texte n°3** (séance 6) ; **Je me documente** : les animaux domestiques ; **Mon vocabulaire** : familles de mots (la ferme).
 
 ### Unité 6 — « Mon ami, le livre ! » (thème : Création du monde imaginaire ; p.114)
@@ -163,7 +163,7 @@ Le **projet pédagogique de l'année** est **« Mon album inspiré de l'album d'
 - **Contenu linguistique** :
   - **Structures** : phrase à verbe être + adjectif ; phrase exclamative ; phrase interrogative avec où et que ; exprimer un désir : je peux / je veux ; demander de l'aide + formule de politesse (s'il te plaît).
   - **Noms / lexique** : coin-lecture, histoire, conte, livre, dictionnaire, BD, album, abécédaire, revue, carton, boîte, crayons de couleurs, ciseaux, colle, table, papier cadeau, chemise, étagère… **Verbes** : lire, raconter, écrire, découper, coller, colorier, classer, dessiner… **Adjectifs** : beau, joli, vide, plein, grand, petit, content, adj. de couleur… **Pronoms personnels** : je, tu, il, elle, ils, elles. **Articles** : un, une, le, la, les, des. **Adjectifs possessifs** : mon, ma, ton, ta, son, sa. **Prépositions** : dans, sur, sous, à côté de…
-- **Phonétique** : phonèmes et difficulté [v] f/v ; [e/è] è/e ; l'intonation.
+- **Phonétique** (p.114, verbatim) : « phonèmes et difficulté **f/v [f/v]** ; **é/è [e/ɛ]** ; l'intonation » _(la fiche écrivait « [e/è] è/e », qui n'est pas de l'API et inverse la paire)_.
 - **Contenu de l'écrit** : graphèmes-phonèmes lus/écrits : `v – c=s` (séances 1-2) puis `c=k – è/ë` (séances 4-5) ; **texte n°4** (séance 3) + **texte n°5** (séance 6) ; **Je me documente** : le joli coin-lecture.
 
 ### Unité 7 — « Mes jeux préférés ! » (thème : Loisirs et sécurité ; p.128)
@@ -183,7 +183,7 @@ Le **projet pédagogique de l'année** est **« Mon album inspiré de l'album d'
 - **Contenu linguistique** :
   - **Structures** : phrases à verbe être / avoir ; phrase à présentatif : C'est + nom ; la forme négative avec ne… pas ; phrase à C.O.D ; phrase interrogative : tu sais / peux / veux + verbe ? ; je veux / peux / sais + verbe ; la coordination avec « et ».
   - **Noms / lexique** : fête, gâteau, école, scène, équipe, bibliothèque, musique, guirlandes, spectacle, tout le monde, chanson, poème, danse, conte, karaté, album, masque, film, les mois de l'année, animaux, chanteuse, danseuse, chariot, étoile, tablier, maintenant, aujourd'hui, **les vêtements** (chéchia, jebba, kimono, képi, pantalon, chaussures…). **Verbes** : aider, applaudir, jouer, présenter, mettre, verbes de mouvement… **Adjectifs** : décoré(e), joyeux(se), grand(e), doré(e), blanc/blanche, beau/belle, préféré(e)… **Pronoms personnels** : je, tu, il, elle, nous, vous, ils, elles. **Articles** : un, une, le, la, les, des. **Adjectifs possessifs** : mon, ma, ton, ta, son, sa, mes, tes, ses. **Nombres** : de 1 à 30 (reprise).
-- **Phonétique** : phonèmes [k/g] (k/gue) ; reprise [ʃ/ʒ] ch/j.
+- **Phonétique** (p.143, verbatim) : « phonèmes **[k/g] (k/gue) reprise** ; **[ʃ/ ᶾ] ch/j** » _(le « reprise » porte sur la PREMIÈRE paire, pas sur la seconde : la fiche l'avait déplacé)_.
 - **Contenu de l'écrit** : graphèmes-phonèmes lus/écrits : `oi – k` (séances 1-2) puis `au/eau – ch` (séances 4-5) ; **texte n°8** (séance 3) + **texte n°9** (séance 6) ; **Je me documente** : « les fêtes de chez nous » ; **Mon vocabulaire** : mots contraires (mots fléchés) ; **Mon abécédaire** : les mots contraires (grand/petit).
 
 ### Progression graphème↔phonème (lecture/écriture) — table de distribution (p.20)
@@ -194,7 +194,7 @@ Le **projet pédagogique de l'année** est **« Mon album inspiré de l'album d'
 | -------------------------- | ---------------- | ---------------- | ---------------- | -------------- | -------------- | -------------- | -------------------- | -------------- |
 | **Séances 1-2** (graphème) | `a – l`          | `o – d`          | `ou – t`         | `s/ss – é=er`  | `n – an/en`    | `v – c=s`      | `g=j – ai/ei`        | `oi – k`       |
 | **Séance 3**               | Jeux de syllabes | Jeux de syllabes | Jeux de syllabes | lecture-phrase | texte n°2      | texte n°4      | texte n°6            | texte n°8      |
-| **Séances 4-5** (graphème) | `i – m`          | `u – r`          | `e/eu – j`       | `b – p`        | `f – on`       | `c=k – è/ë`    | `g=gue – in/ain/ein` | `au/eau – ch`  |
+| **Séances 4-5** (graphème) | `i – m`          | `u – r`          | `e/eu – j`       | `b – p`        | `f – on`       | `c=k – è/ê`    | `g=gue – in/ain/ein` | `au/eau – ch`  |
 | **Séance 6**               | Lecture-phrase   | Lecture-phrase   | Lecture-phrase   | texte n°1      | texte n°3      | texte n°5      | texte n°7            | texte n°9      |
 | **Séance 8**               | chrono-syllabe   | chrono-syllabe   | chrono-syllabe   | chrono-syllabe | chrono-syllabe | chrono-syllabe | chrono-syllabe       | chrono-syllabe |
 
@@ -216,6 +216,59 @@ Le **projet pédagogique de l'année** est **« Mon album inspiré de l'album d'
   - **Grammaire métalinguistique / analyse** : types et formes de phrases comme objet d'étude, fonctions (sujet/COD nommés), accords grammaticaux, propositions subordonnées, voix passive, discours rapporté, concordance des temps → collège (cf. subject `french` = 9ème-base). En 3ème, **tout est implicite et oral**.
   - **Lecture courante de longs textes / production rédactionnelle longue et autonome** : la lecture reste sur de **courts textes** (n°1-9) ; la production reste **guidée** (une phrase à compléter/produire avec support).
   - **Orthographe grammaticale** : seulement orthographe d'usage des mots du répertoire via la dictée (préparée / à choix multiples / photo) ; pas de règles d'accord.
+
+## 2 ter. « Contenu de l'écrit » — les 10 rubriques, unité par unité (p.49 à p.144) — _transcrit le 2026-09-19_
+
+> **Ce que la fiche n'avait pas vu.** Chaque unité se referme, sur la page suivant sa page-synthèse,
+> sur une table **« Contenu de l'écrit »** aux **dix rubriques fixes**. C'est, de tout le guide, la
+> page la plus directement utile à la génération : elle ne dit pas seulement QUOI travailler, elle
+> dit **sous quelle forme d'activité** — et ces formes sont exactement des types d'exercice.
+> La fiche n'en portait qu'une ligne (« graphèmes-phonèmes lus/écrits »), et seulement pour
+> certaines unités.
+
+**Les dix rubriques, dans l'ordre imprimé** : `Je lis (lecture + identification des graphies)` ·
+`J'écris` · `Je me documente` · `Mon vocabulaire` · `Mon abécédaire` · `Dictée` · `Je recopie` ·
+`Initiation à la production` · `Lecture-action` · `Dans la classe de M. Bri`.
+
+| Rubrique | U1 (p.49) | U2 (p.62) | U3 (p.74–75) | U4 (p.86–87) |
+| --- | --- | --- | --- | --- |
+| **Je lis** | `a- l - i- m` ; jeux de syllabes + lecture-phrase | `o- d - u - r` ; jeux de syllabes ; lecture-phrase | `ou - t - e/eu – j` ; jeux de syllabes + lecture-phrase | `s/ss / é-er / b- p` ; lecture de phrases + **lecture texte n°1** |
+| **J'écris** | `a- l - i- m` | `o-d-u–r` | `ou - t - e/eu – j` | `s/ss / **é-er-ez-et** / b- p` |
+| **Je me documente** | ma grande famille | « ce que j'aime dans mon école » | je découvre les objets de toilette | les conseils de madame Omelette |
+| **Mon vocabulaire** | jeux de devinettes (les membres de la famille) | jeu de l'oie (vocabulaire de l'école) | des mots fléchés sur les parties du corps | jeux sur les **familles de mots** (la cuisine) |
+| **Mon abécédaire** | préparation de son abécédaire | les initiales (mots en rapport avec l'école) | classement des mots (graphies étudiées) | les initiales (mots en rapport avec le thème) |
+| **Dictée** | dictée préparée | dictée préparée | **dictée à choix multiples** | **dictée à choix multiples** |
+| **Je recopie** | des syllabes | phrase p.16 du cahier d'activités | phrase p.24 du cahier d'activités | phrase p.32 du cahier d'activités |
+| **Initiation à la production** | production de mots à partir des syllabes (**la roue des syllabes**) | compléter une phrase avec **deux** mots contenant les graphies étudiées, à partir d'un support visuel | compléter une phrase avec **trois** mots contenant les graphies étudiées | produire **une phrase** à partir d'un support visuel **et en réponse à une question** |
+| **Lecture-action** | une carte de remerciements « Merci ma famille » | écriture artistique (lettres minuscules étudiées) | confectionner un visage avec les lettres étudiées (le coller sur une assiette jetable) | je prépare une crêpe |
+
+| Rubrique | U5 (p.100–101) | U6 (p.114–115) | U7 (p.128–129) | U8 (p.143–144) |
+| --- | --- | --- | --- | --- |
+| **Je lis** | `n- an/en- on- f` ; **textes n°2 + n°3** | `c=k -v - è/ê- c=s` ; **textes n°4 et n°5** | `ai/ei - g=j - g= gue in/ain/ein` ; **texte n°6 + texte n°7** | `oi - k - au/eau- ch` ; **textes n°8 et n°9** |
+| **J'écris** | `n- an/en-f-on` | `c-k -v - è/ê- c-s` | `ai/ei – g=j - g= glue in/ain/ ein` _(sic : le guide imprime « glue » pour « gue »)_ | `oi - k - au/eau- ch` |
+| **Je me documente** | les animaux domestiques | le joli coin-lecture | mon jeu préféré | « les fêtes de chez nous » |
+| **Mon vocabulaire** | jeux sur les familles de mots (la ferme) | jeux sur les **mots du même sens** (en relation avec le livre) | jeux sur les **mots de la même famille** | jeux de **mots contraires** (mots fléchés) |
+| **Mon abécédaire** | jeu des initiales (famille de mots) | les initiales des mots (les livres) | des **expressions ayant le même sens** | les **mots contraires** (grand/petit) |
+| **Dictée** | **dictée photo** | **dictée photo** | Dictée | dictée à la p.68 du C.A. |
+| **Je recopie** | phrase p.40 du cahier d'activités | phrase p.48 du cahier d'activités | phrase p.56 du cahier d'activités | phrase p.64 du cahier d'activités |
+| **Initiation à la production** | produire **une phrase** à partir d'un support visuel | produire **deux phrases** à partir d'un support visuel | produire **trois phrases** à partir d'un support visuel **et répondre à des questions** | produire **un récit de trois phrases au moins** à partir d'un support visuel |
+| **Lecture-action** | confectionner le gabarit de Poupou | aménager un coin-lecture en classe | compléter le jeu de l'oie en collant les jeux préférés | confectionner des masques pour la fête de fin d'année |
+
+> **Trois progressions se lisent d'un coup, et elles sont chiffrées** :
+>
+> 1. **Production écrite** : des **mots** issus de syllabes (U1) → **1 phrase à compléter avec 2
+>    mots** (U2) → **avec 3 mots** (U3) → **1 phrase produite** (U4–U5) → **2 phrases** (U6) →
+>    **3 phrases + réponse à des questions** (U7) → **un récit de 3 phrases au moins** (U8).
+> 2. **Dictée** : préparée (U1–U2) → **à choix multiples** (U3–U4) → **photo** (U5–U6) → simple,
+>    puis sur le cahier (U7–U8).
+> 3. **Vocabulaire** : devinettes et jeu de l'oie (U1–U2) → mots fléchés (U3) → **familles de mots**
+>    (U4–U5) → **synonymes** (U6) → **même famille** (U7) → **contraires** (U8). C'est l'ordre dans
+>    lequel un chapitre de vocabulaire doit introduire ses notions.
+>
+> ⚠️ **Deux coquilles du guide, transcrites telles quelles et à ne pas propager** : U7 « J'écris »
+> imprime **« g= glue »** pour « g= gue » ; et la table de distribution p.20 donne pour U4
+> « s/ss – é=er » là où la page de l'unité (p.87) écrit **« s/ss / é-er-ez-et »** — c'est la page
+> de l'unité qui est la plus complète.
 
 ## 3. Notes pédagogiques / méthode
 
