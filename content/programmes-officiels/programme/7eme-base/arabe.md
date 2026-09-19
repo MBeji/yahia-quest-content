@@ -132,9 +132,93 @@ fait et pourquoi — c'est la clé de voûte de cette fiche :
   → **مدخل** (des activités) → **خلاصة** (les règles dégagées) → **تمارين** (fixation).
 
 🔴 **L'écart à retenir : le guide annonce 39 دروس (23 + 16), le manuel révisé en annonce 27
-(15 + 12).** Les deux documents ne décrivent pas le même découpage, et **c'est le manuel qui se
-réclame des programmes officiels**. Avant de traiter les 39 leçons du guide comme la référence,
-il faut trancher lequel porte le programme en vigueur — cette fiche ne le sait pas encore.
+(15 + 12).** Les deux documents ne décrivent pas le même découpage.
+
+### 🔴 Lequel porte le programme en vigueur ? — tranché le 2026-09-19, par les documents
+
+La question a été posée puis **résolue dans la même passe**, en lisant les deux pages de titre et
+la المقدّمة. Voici la chaîne de faits, chacun vérifié à l'image :
+
+1. La المقدّمة du manuel (ص 3) date l'ouvrage d'origine : **« الصّادر في تسعينيّات القرن الماضي »**
+   — **les années 1990**, par نجاة صولة · عبد العزيز بن يوسف · شكري المبخوت · هشام الرّيفي, sous la
+   direction de عبد القادر المهيري.
+2. Elle nomme **la cause exacte de la révision** : **« اقتضاها تجديد برامج اللغة العربيّة بالمرحلة
+   الإعداديّة من التّعليم الأساسيّ الصّادرة في سبتمبر سنة ستّ وألفين »** — le renouvellement des
+   programmes d'arabe du collège **publié en septembre 2006**…
+3. …et ce que ces programmes ont fait : **« التي أعيد فيها توزيع المسائل اللغويّة على المستويات
+   الثّلاثة : السّابعة والثّامنة والتّاسعة »** — ils ont **redistribué les questions de langue entre
+   la 7ᵉ, la 8ᵉ et la 9ᵉ**. D'où **« إعادة ترتيب الدروس في الكتاب المدرسيّ وفق ما جاء بالبرامج
+   الرسميّة »**.
+4. La page de titre du **manuel** (`101710`, PDF 1) porte, sous les quatre auteurs, une **équipe de
+   تنقيح distincte** : قصي المليّح · عبد الله الصّالحي (متفقّدان أوّلان) · عمارة الأخضر · توفيق
+   القاسمي (متفقّدان).
+5. La page de titre du **guide** (`501701`, PDF 1) porte **« كتاب الأستاذ »**, **les mêmes quatre
+   auteurs**, **le même superviseur**, et **AUCUNE équipe de تنقيح**.
+
+**Conclusion** : le guide `501701` est le **كتاب الأستاذ de l'édition NON RÉVISÉE**, celle des
+années 1990 ; le manuel `101710` est la **طبعة منقّحة qui applique les programmes de septembre
+2006**. Les 39 leçons du guide décrivent donc le découpage **antérieur à 2006** ; les 27 du manuel
+décrivent le découpage **en vigueur**.
+
+> Les métadonnées PDF vont dans le même sens sans rien prouver à elles seules (guide : scan
+> Photoshop daté 2009 ; manuel : Distiller 2015) — **une date de fichier n'est pas une date de
+> programme**. Ce qui tranche, ce sont les pages de titre et la المقدّمة.
+
+🔴 **Portée de ce constat, bien au-delà de cette fiche.** La refonte de 2006 a **redistribué les
+contenus entre 7ᵉ, 8ᵉ et 9ᵉ**. Donc :
+
+- **Cette fiche est bâtie sur le document périmé** : son §2 « deux أبواب, 39 دروس » décrit le plan
+  d'avant 2006. Il n'est pas *faux* — c'est fidèlement ce que le guide imprime — mais **il ne
+  décrit pas le programme que l'élève suit**.
+- **Certaines des 39 leçons du guide appartiennent désormais à la 8ᵉ ou à la 9ᵉ.** C'est
+  l'explication la plus probable des deux chapitres servis sans leçon homonyme au فهرس révisé
+  (`11-al-jumla-al-murakkaba`, `17-ar-rubai-wal-mazid`) : non pas des notions supprimées, mais des
+  notions **déplacées vers une autre année**. À vérifier dans les manuels de 8ᵉ et 9ᵉ, pas à
+  supposer.
+- ~~Le même soupçon pèse sur arabe 8ᵉ et arabe 9ᵉ~~ → **VÉRIFIÉ le 2026-09-19, ce n'est plus un
+  soupçon : le motif est UNIFORME sur les trois niveaux du collège.**
+
+### Le motif vaut pour les trois niveaux — pages de titre comparées
+
+| niveau | guide (`كتاب الأستاذ`) | manuel élève | équipe de تنقيح au **guide** | au **manuel** |
+| --- | --- | --- | --- | --- |
+| 7ᵉ | `501701` | `101710` (3 t., 174 p.) | **aucune** | **4 noms** (قصي المليّح · عبد الله الصّالحي · عمارة الأخضر · توفيق القاسمي) |
+| 8ᵉ | `501802` | `101808` (3 t., 158 p.) | **aucune** | **4 noms** (رضا عبد الله · رضا محجوب · رضوان بلعيد · فؤاد الخطيب) |
+| 9ᵉ | `501902` | `101908` (176 p.) | **aucune** | **4 noms** (فتحي بوكوبة · نجم الدّين عمر · نور الدّين الغيلوفي · منير الرقّي) |
+
+Dans les trois cas, le guide porte **les mêmes auteurs que son manuel** et **le même superviseur**
+(عبد القادر المهيري), sans équipe de révision. **Les trois guides du corpus sont donc les éditions
+d'avant la refonte de 2006 ; les trois manuels élèves, jamais ouverts jusqu'ici, sont les éditions
+révisées.**
+
+### Ce que le فهرس de la 8ᵉ révisée règle — les deux « chapitres orphelins » de la 7ᵉ
+
+Le manuel 8ᵉ (`101808`, ص 3–4) porte **24 leçons** : **13 en علم الإعراب** + **11 en علم الصرف**.
+Et son علم الإعراب est **entièrement consacré à la الجملة المركّبة** — « حدود الجملة المركّبة »,
+« النواة الإسناديّة الأساسيّة والفرعيّة », « الوظائف الأساسيّة في الجملة … المركّبة » (×7),
+« متمّمات مشتملة على مركّبات إسناديّة فرعيّة » (×4). Son علم الصرف s'ouvre sur
+**« تصريف الفعل المزيد »** (×2) puis « اشتقاق الأسماء من المزيد » (×2).
+
+➡️ **Les deux chapitres servis en 7ᵉ sans leçon homonyme au فهرس révisé ne sont pas des notions
+supprimées : ce sont des notions DÉPLACÉES EN 8ᵉ.** `11-al-jumla-al-murakkaba` et
+`17-ar-rubai-wal-mazid` relèvent, dans le programme en vigueur, de la **huitième année**. C'est
+exactement ce que la المقدّمة annonçait (« أعيد فيها توزيع المسائل اللغويّة على المستويات
+الثّلاثة ») — l'hypothèse est maintenant **vérifiée à la source**, elle n'est plus supposée.
+
+### 🔴 Et cela ouvre un écart plus grand en 8ᵉ, qui n'est PAS résolu ici
+
+`content/arabic-8eme/` sert **12 chapitres**. Leur moitié صرف concorde bien avec le manuel révisé
+(اسم التفضيل · اسم الزمان والمكان والآلة · صيغ المبالغة · جمع التكسير والمصادر). Mais leur moitié
+إعراب — **النعت · التوكيد · البدل · العطف · المنادى · العدد · أسلوب التعجّب** — **n'a aucune
+contrepartie** dans les 13 leçons d'إعراب du manuel 8ᵉ révisé, qui ne parlent que de la phrase
+complexe. Dans le même temps, la الجملة المركّبة est surtout enseignée **en 7ᵉ** (32 occurrences)
+et peu en 8ᵉ (13).
+
+**Ce qui est établi** : les deux découpages divergent fortement en 8ᵉ. **Ce qui ne l'est pas, et
+qu'il ne faut pas conclure d'ici** : que le contenu servi soit *faux*. Les التوابع (نعت، توكيد،
+بدل، عطف) pourraient relever de la **9ᵉ** révisée — **le فهرس du manuel 9ᵉ `101908` n'a pas été
+lu**. Tant qu'il ne l'est pas, on sait que l'organisation diffère, pas qu'une notion manque à un
+élève. **C'est la prochaine lecture à faire**, et elle coûte une page.
 
 ### Le فهرس du manuel (ص 4) — les 27 leçons, leurs محاور et leurs pages
 
