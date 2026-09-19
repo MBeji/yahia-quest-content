@@ -148,12 +148,62 @@ depuis leur **خلاصة** (le 3ᵉ des quatre أركان de chaque leçon : ن�
   - **المصدر الصّناعيّ** : الشّعوبيّة · الأوّليّة · الانتهازيّة · الوضعيّة · السّلفيّة ·
     التّقدّميّة — et le distinguer de la simple نسبة au féminin.
 
-#### ⏳ Restent à lire — le trio de l'**اسم** (leçons 1–3 de صرف)
+#### ✅ Leçons 1–3 de صرف — le trio de l'**اسم**, lu le 2026-09-19
 
-**الاسم المقصور (ص 129–133) · المنقوص (ص 134–139) · الممدود (ص 140–147)** — 19 pages. Le contenu
-servi les effleure (`المقصور` 1 occurrence, `المنقوص` 2, `الممدود` 0). Même méthode : lire la
-**خلاصة** de chacune, puis décider si l'on enrichit `05-sarf-al-mizan` / `06-al-mushtaqqat` ou si
-l'on crée un chapitre dédié aux trois.
+Les trois خلاصات (ص 132 · 138 · 143) définissent **trois types de noms par leur finale**, chacun
+avec sa règle de flexion. Le contenu servi les effleure (`المقصور` 1 occurrence, `المنقوص` 2,
+`الممدود` 0).
+
+**① الاسم المقصور** (ص 129–133, خلاصة ص 132)
+
+- **Définition** : « كلّ **اسم معرب ينتهي بألف ثابتة لا تتغيّر بتغيّر الإعراب**. »
+- **Dérivation** : مصدر des أفعال ناقصة sur وزن `فَعِلَ` · اسم مكان · اسم مفعول d'un فعل ناقص ·
+  مصدر ميميّ. Peut aussi être un **جمع** sur `فَعْلَى` ou `فُعَالَى` (singulier `فَعْلَة` à lām yāʾ).
+- **Tanwīn** : « إذا ورد الاسم المقصور **نكرة ظهر عليه التنوين**. »
+- **المثنّى — la règle à trois branches** : « يثنّى … **بحسب عدد الحروف** » — à **trois** lettres
+  l'ألف **revient à son origine** (يائيّ ou واويّ) ; à **plus de trois**, elle **devient ياء
+  toujours**.
+- **الجمع** : جمع مذكّر سالم **بحذف الألف** et la lettre d'avant reste **مفتوحة** ; en
+  جمع مؤنّث سالم, l'ألف se traite **comme au مثنّى**.
+
+**② الاسم المنقوص** (ص 134–139, خلاصة ص 138)
+
+- **Définition** : « كلّ **اسم معرب ينتهي بياء ثابتة مسبوقة بكسر**. »
+- **Dérivation** : des أفعال ناقصة مجرّدة et مزيدة ; peut être un جمع.
+- **الإعراب — le cœur de la leçon** : « في حالتي **الرفع والجرّ لا تظهر علامات الإعراب** على آخره
+  **وتُحذف منه الياء**. أمّا في حالة **النصب فإن الفتحة تظهر** على آخره. »
+- **المثنّى** : « بفتح الياء **وإثباتها إن كانت محذوفة** » · **الجمع** : جمع مذكّر سالم بحذف الياء,
+  la lettre d'avant **مضمومة au رفع**, **مكسورة au نصب والجرّ** ; en **جمع تكسير**, « **ياؤه تقلب
+  ألفا** ».
+
+**③ الاسم الممدود** (ص 140–147, خلاصة ص 143)
+
+- **Dérivation** : « غالبا من الأفعال الناقصة المجرّدة والأفعال المزيدة النّاقصة الّتي **تبدأ
+  بهمزة** » ; ou جمع sur `فِعَال` · `أفعال` · `فُعَلاء` · `أَفْعِلاء` ; ou `فَعْلاء`, **مؤنّث de
+  صيغة أفعل** de couleur ou de qualité.
+- **الإعراب** : les marques paraissent **normalement** sur sa fin — « **وتنوب الفتحة عن الكسرة في
+  حال الجرّ** » (le ممنوع من الصرف).
+- **المثنّى والجمع — la règle décisive, et c'est celle qui distingue cette leçon** : tout dépend
+  de **l'origine de la همزة** :
+  | origine de la همزة | au مثنّى et au جمع |
+  | --- | --- |
+  | **أصليّة** (de la racine) | elle **reste** |
+  | **منقلبة عن واو أو ياء** | on peut la **garder** ou la **ramener à son origine** |
+  | **همزة تأنيث زائدة** | elle **devient واو** |
+- **أوزان relevés aux تمارين (ص 145)** : فِعال · فَعال · أفعال · فَعْلاء · أَفْعِلاء · فُعَلاء ·
+  افتعال · استفعال.
+
+#### 📐 Décision de forme : **un chapitre unique pour les trois**, pas trois ajouts dispersés
+
+- **Le manuel lui-même les traite comme une unité** : ses **تمارين تأليفية** (ص 146) font classer
+  une même liste de mots dans un tableau à **trois colonnes** — اسم ممدود / اسم منقوص / اسم مقصور.
+  L'objet enseigné n'est pas chacun des trois, c'est **savoir les distinguer**.
+- Les trois partagent **une même question** (comment finit le nom, et ce que sa finale impose au
+  duel, au pluriel et à l'إعراب) — c'est un chapitre, pas trois notes de bas de page.
+- Les deux chapitres candidats à l'enrichissement ne conviennent pas : `05-sarf-al-mizan` traite la
+  **racine et le mīzān**, `06-al-mushtaqqat` les **dérivés** ; la finale du nom et sa flexion sont
+  un autre objet.
+- ⏳ **Le chapitre n'est pas écrit.** Cette section est sa base sourcée, à profondeur de génération.
 
 ## 3. Notes pédagogiques / méthode
 
