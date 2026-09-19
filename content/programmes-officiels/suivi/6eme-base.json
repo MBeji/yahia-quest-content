@@ -36,7 +36,7 @@
     },
     {
       "matiere": "arabe",
-      "statut": "complete",
+      "statut": "validee-r7",
       "profondeur": "generation",
       "sources": [
         {
@@ -53,10 +53,15 @@
         "arabic-6eme"
       ],
       "sourcesLibres": [],
-      "r7": null,
-      "maj": "2026-07-26",
-      "par": "claude/campagne-arabe-6eme",
-      "notes": "Guide enseignant 501603P00 lu intégralement (128 p., vision 170 dpi ; crops 400 dpi sur les bandeaux verticaux et les encadrés). Fiche à profondeur de génération : cadre + noyau grammatical, progression annuelle p.33-36, les SIX cartes d'unité cellule par cellule (p.38-49), le déroulé-type des مذكّرات de lecture / écriture / grammaire de l'unité 1 avec les cinq encadrés-règles verbatim (p.50-87), et les épreuves officielles avec leur barème (p.88-127) + le فهرس (p.128). Divergences signalées non arbitrées en §6 : table p.35 vs carte p.39 (place du المضاعف), bandeaux de القراءة répétés en و4 et و6, 4 vs 5 situations dans les مذكّرات, deux coquilles de pagination du فهرس. R-7 : aucune relecture indépendante à ce jour."
+      "r7": {
+        "date": "2026-09-19",
+        "portee": "integrale",
+        "verdict": "11 ecarts confirmes et corriges. La table p.35 donne DEUX lignes par unite (filet interne qui ne traverse pas la colonne الوحدة) ; la transcription initiale les avait fondues, ce qui decalait la 2e ligne vers l'unite suivante : 7 cellules fausses sur 31. Consequence la plus couteuse : cette erreur FABRIQUAIT une contradiction p.35 vs cartes d'unite, que la fiche affirmait en trois endroits (§2 bis, §2 quater, §6) dont un sous le titre « c'est la table p.35 qui decroche ». p.35, la carte p.39, le bandeau p.41 et les مذكّرات p.80-83 sont en realite unanimes. Ajoutes : p.33 le calendrier reel (سبتمبر = الوحدة صفر, congés nommes, و3/و4 redecoupes), p.34 les 13 objectifs de lecture verbatim (la fiche en listait 8, dont 6 alteres et un inexistant), p.36 la progression d'ecriture par unite et la كفاية sans « متنوّعة », p.39 et p.49 les deux bandeaux (ni الماضي ni المضارع المرفوع en و1 ; التّراكيب الجزئيّة et non الخبريّة en و6), p.13 la 4e قرينة لفظيّة = الصّيغة (la fiche hesitait avec الصِّفة). Le scope grammatical de l'annee est inchange : memes faits de langue, autre repartition.",
+        "corrections": 11
+      },
+      "maj": "2026-09-19",
+      "par": "claude/great-wright-e4cqyu",
+      "notes": "Guide enseignant 501603P00 lu integralement (128 p., vision 170 dpi ; crops 400 dpi sur les bandeaux verticaux et les encadres). Fiche a profondeur de generation : cadre + noyau grammatical, progression annuelle p.33-36, les SIX cartes d'unite cellule par cellule (p.38-49), le deroule-type des مذكّرات de lecture / ecriture / grammaire de l'unite 1 avec les cinq encadres-regles verbatim (p.50-87), et les epreuves officielles avec leur bareme (p.88-127) + le فهرس (p.128). AUDIT R-7 du 2026-09-19 (portee integrale, p.13/33/34/35/36/39/49 relues au source a 350-400 dpi) : 11 ecarts corriges, detail en §6 « Audit R-7 » de la fiche. La divergence p.35 vs carte p.39 qui figurait ici en « signalee non arbitree » N'EXISTAIT PAS : elle etait produite par la transcription. Restent signalees, elles au source : bandeaux de القراءة repetes en و4 et و6, 4 vs 5 situations dans les مذكّرات, deux coquilles de pagination du فهرس."
     },
     {
       "matiere": "eveil",
