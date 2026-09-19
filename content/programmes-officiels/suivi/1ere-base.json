@@ -3,83 +3,99 @@
   "fiches": [
     {
       "matiere": "arabe",
-      "statut": "complete",
+      "statut": "partielle",
       "profondeur": "generation",
       "sources": [
         {
           "code": "501109",
-          "tomes": ["P00"],
+          "tomes": [
+            "P00"
+          ],
           "role": "enseignant",
-          "pagesTotal": null,
-          "pagesLues": "integral"
+          "pagesTotal": 175,
+          "pagesLues": "inconnu"
         }
       ],
-      "sujets": ["arabic-1ere"],
+      "sujets": [
+        "arabic-1ere"
+      ],
       "sourcesLibres": [],
       "r7": null,
-      "maj": "2026-07-17",
-      "par": "seed",
-      "notes": "Seed 2026-07-17 depuis l'ancien _INDEX ([x] historique). Guide « Anissi » ; manuel élève à combiner à la prochaine touche."
+      "maj": "2026-09-19",
+      "par": "claude/great-wright-e4cqyu",
+      "notes": "Seed 2026-07-17 depuis l'ancien _INDEX ([x] historique). Guide « Anissi » ; manuel élève à combiner à la prochaine touche. ⚠️ CORRIGÉ le 2026-09-19 — le seed du 2026-07-17 déclarait `statut: complete`, `profondeur: generation` et `pagesLues: \"integral\"` : les trois étaient FAUX sur la couverture. L'en-tête « Pages lues » de la fiche elle-même énumère une liste PARTIELLE de pages (~26 % du guide, 175 p. au total — nombre mesuré ce jour sur le PDF du CNP), et plusieurs de ces en-têtes disent explicitement « hors-scope » pour ce qui suit. Vérifié au source sur trois fiches (4ème éveil, 1ère éveil, 5ème maths) avant d'être généralisé. `statut` passe donc à `partielle` (R-5 : génération interdite) et `pagesLues` à `inconnu` : les plages réelles se transcrivent depuis l'en-tête à la prochaine touche de la fiche — un parseur automatique les a produites fausses (deux en-têtes « Pages lues » dans la même fiche, plages fusionnées à tort), et publier une plage fausse serait exactement l'erreur qu'on corrige ici. `profondeur` est LAISSÉE telle que déclarée : elle n'a pas été mesurée, le prochain audit la jugera."
     },
     {
       "matiere": "eveil",
-      "statut": "complete",
+      "statut": "partielle",
       "profondeur": "generation",
       "sources": [
         {
           "code": "503104",
-          "tomes": ["P00"],
+          "tomes": [
+            "P00"
+          ],
           "role": "enseignant",
-          "pagesTotal": null,
-          "pagesLues": "integral"
+          "pagesTotal": 192,
+          "pagesLues": "inconnu"
         }
       ],
-      "sujets": ["eveil-scientifique-1ere"],
+      "sujets": [
+        "eveil-scientifique-1ere"
+      ],
       "sourcesLibres": [],
       "r7": null,
-      "maj": "2026-07-17",
-      "par": "seed",
-      "notes": "Seed depuis _INDEX ([x], pilote transcrit 2026-06-28 — à valider)."
+      "maj": "2026-09-19",
+      "par": "claude/great-wright-e4cqyu",
+      "notes": "Seed depuis _INDEX ([x], pilote transcrit 2026-06-28 — à valider). ⚠️ CORRIGÉ le 2026-09-19 — le seed du 2026-07-17 déclarait `statut: complete`, `profondeur: generation` et `pagesLues: \"integral\"` : les trois étaient FAUX sur la couverture. L'en-tête « Pages lues » de la fiche elle-même énumère une liste PARTIELLE de pages (~9 % du guide, 192 p. au total — nombre mesuré ce jour sur le PDF du CNP), et plusieurs de ces en-têtes disent explicitement « hors-scope » pour ce qui suit. Vérifié au source sur trois fiches (4ème éveil, 1ère éveil, 5ème maths) avant d'être généralisé. `statut` passe donc à `partielle` (R-5 : génération interdite) et `pagesLues` à `inconnu` : les plages réelles se transcrivent depuis l'en-tête à la prochaine touche de la fiche — un parseur automatique les a produites fausses (deux en-têtes « Pages lues » dans la même fiche, plages fusionnées à tort), et publier une plage fausse serait exactement l'erreur qu'on corrige ici. `profondeur` est LAISSÉE telle que déclarée : elle n'a pas été mesurée, le prochain audit la jugera."
     },
     {
       "matiere": "islamique",
-      "statut": "complete",
+      "statut": "partielle",
       "profondeur": "generation",
       "sources": [
         {
           "code": "511105",
-          "tomes": ["P00"],
+          "tomes": [
+            "P00"
+          ],
           "role": "enseignant",
-          "pagesTotal": null,
-          "pagesLues": "integral"
+          "pagesTotal": 72,
+          "pagesLues": "inconnu"
         }
       ],
-      "sujets": ["education-islamique-1ere"],
+      "sujets": [
+        "education-islamique-1ere"
+      ],
       "sourcesLibres": [],
       "r7": null,
-      "maj": "2026-07-17",
-      "par": "seed",
-      "notes": "Seed depuis _INDEX ([x] historique)."
+      "maj": "2026-09-19",
+      "par": "claude/great-wright-e4cqyu",
+      "notes": "Seed depuis _INDEX ([x] historique). ⚠️ CORRIGÉ le 2026-09-19 — le seed du 2026-07-17 déclarait `statut: complete`, `profondeur: generation` et `pagesLues: \"integral\"` : les trois étaient FAUX sur la couverture. L'en-tête « Pages lues » de la fiche elle-même énumère une liste PARTIELLE de pages (~56 % du guide, 72 p. au total — nombre mesuré ce jour sur le PDF du CNP), et plusieurs de ces en-têtes disent explicitement « hors-scope » pour ce qui suit. Vérifié au source sur trois fiches (4ème éveil, 1ère éveil, 5ème maths) avant d'être généralisé. `statut` passe donc à `partielle` (R-5 : génération interdite) et `pagesLues` à `inconnu` : les plages réelles se transcrivent depuis l'en-tête à la prochaine touche de la fiche — un parseur automatique les a produites fausses (deux en-têtes « Pages lues » dans la même fiche, plages fusionnées à tort), et publier une plage fausse serait exactement l'erreur qu'on corrige ici. `profondeur` est LAISSÉE telle que déclarée : elle n'a pas été mesurée, le prochain audit la jugera."
     },
     {
       "matiere": "maths",
-      "statut": "complete",
+      "statut": "partielle",
       "profondeur": "generation",
       "sources": [
         {
           "code": "502107",
-          "tomes": ["P00"],
+          "tomes": [
+            "P00"
+          ],
           "role": "enseignant",
-          "pagesTotal": null,
-          "pagesLues": "integral"
+          "pagesTotal": 184,
+          "pagesLues": "inconnu"
         }
       ],
-      "sujets": ["math-1ere"],
+      "sujets": [
+        "math-1ere"
+      ],
       "sourcesLibres": [],
       "r7": null,
-      "maj": "2026-07-17",
-      "par": "seed",
-      "notes": "Seed depuis _INDEX ([x] historique) ; a alimenté le réalignement math-1ere (#161)."
+      "maj": "2026-09-19",
+      "par": "claude/great-wright-e4cqyu",
+      "notes": "Seed depuis _INDEX ([x] historique) ; a alimenté le réalignement math-1ere (#161). ⚠️ CORRIGÉ le 2026-09-19 — le seed du 2026-07-17 déclarait `statut: complete`, `profondeur: generation` et `pagesLues: \"integral\"` : les trois étaient FAUX sur la couverture. L'en-tête « Pages lues » de la fiche elle-même énumère une liste PARTIELLE de pages (~22 % du guide, 184 p. au total — nombre mesuré ce jour sur le PDF du CNP), et plusieurs de ces en-têtes disent explicitement « hors-scope » pour ce qui suit. Vérifié au source sur trois fiches (4ème éveil, 1ère éveil, 5ème maths) avant d'être généralisé. `statut` passe donc à `partielle` (R-5 : génération interdite) et `pagesLues` à `inconnu` : les plages réelles se transcrivent depuis l'en-tête à la prochaine touche de la fiche — un parseur automatique les a produites fausses (deux en-têtes « Pages lues » dans la même fiche, plages fusionnées à tort), et publier une plage fausse serait exactement l'erreur qu'on corrige ici. `profondeur` est LAISSÉE telle que déclarée : elle n'a pas été mesurée, le prochain audit la jugera."
     }
   ]
 }
