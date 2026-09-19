@@ -91,18 +91,28 @@
             "P00"
           ],
           "role": "enseignant",
-          "pagesTotal": null,
-          "pagesLues": "inconnu"
+          "pagesTotal": 95,
+          "pagesLues": [
+            [
+              1,
+              95
+            ]
+          ]
         }
       ],
       "sujets": [
         "french-7eme"
       ],
       "sourcesLibres": [],
-      "r7": null,
-      "maj": "2026-07-17",
-      "par": "seed",
-      "notes": "Seed depuis _INDEX ([~] historique). Évaluer lecture + profondeur avant génération (R-5)."
+      "r7": {
+        "date": "2026-09-19",
+        "portee": "integrale",
+        "verdict": "Couverture portee de « inconnu » a 95/95 : la fiche declarait deja une lecture integrale de la couche texte, c'est le registre qui l'ignorait faute de pagesTotal. VERIFICATION DU JOUR, page par page : le fichier servi au code 521702 est le cahier parascolaire de L.M. Beya (« Le Francais en 7eme annee — Conforme aux programmes officiels 2006-2007 — Avec corriges ») de la p.1 a la p.95 (exercices p.3-78, tables de lexique et de conjugaison p.79-88, corriges p.89-95). AUCUN document CNP n'est cache dans le volume. Or corpus-cnp.json — qui mirroir le catalogue officiel — enregistre ce code comme « الدليل المرجعي في اللغة الفرنسية », role enseignant. LE CATALOGUE DU CNP NE DECRIT PAS LE FICHIER QU'IL SERT : la reserve que la fiche portait depuis juillet est donc CONFIRMEE, et ce n'est pas une erreur de transcription mais de catalogue. Consequence : chercher le vrai guide 7eme sous ce code est sans issue. Le statut reste `partielle` bien que la couverture soit totale — le registre n'a pas de mot pour « lu en entier, mais la source n'est pas le programme », et `partielle` produit le bon effet (generation interdite).",
+        "corrections": 0
+      },
+      "maj": "2026-09-19",
+      "par": "claude/great-wright-e4cqyu",
+      "notes": "Seed depuis _INDEX ([~] historique). Évaluer lecture + profondeur avant génération (R-5). ▸ 2026-09-19 : pagesTotal mesure (95), pagesLues porte a 1-95, r7 enregistree. Le statut reste `partielle` A DESSEIN et non faute de lecture : la source n'est pas le programme officiel mais un cahier parascolaire, et le catalogue du CNP se trompe en l'annoncant comme « الدليل المرجعي ». Ne pas promouvoir cette fiche sans avoir trouve le vrai guide CNP de 7eme."
     }
   ]
 }

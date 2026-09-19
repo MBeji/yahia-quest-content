@@ -318,6 +318,18 @@ l'as`** (« _la_ devant un verbe… » ; accord du PP avec _avoir_ + COD antépo
 
 ## 6. Incertitudes / à revérifier
 
+- **🔴 Le catalogue du CNP ne décrit pas le fichier qu'il sert** _(constaté le 2026-09-19)_. Dans
+  `suivi/corpus-cnp.json` — qui mirroir le catalogue officiel — le code **521702** est enregistré
+  comme **« الدليل المرجعي في اللغة الفرنسية »** (le guide de référence en langue française),
+  `role: enseignant`. Le PDF réellement servi à cette adresse est le **cahier parascolaire de
+  L.M. Beya**, de la couverture (p.1) à la dernière page de corrigés (p.95) — vérifié page par page
+  ce jour, il n'y a **aucun document CNP caché** dans le volume. **Ce n'est donc pas une erreur de
+  transcription, c'est une erreur de catalogue** : chercher « le vrai guide 7ème » sous ce code est
+  sans issue, il faudra un autre code ou une autre source. Tant que ce guide n'est pas trouvé,
+  **cette fiche ne peut pas servir d'autorité de scope** — et c'est la raison, écrite, pour
+  laquelle son statut reste `partielle` alors que sa couverture est de 95/95 : le registre n'a pas
+  de mot pour « lu en entier, mais la source n'est pas le programme ».
+
 - **🔴 Nature du document (réserve majeure)** : `521702P00.pdf` est un **cahier d'exercices parascolaire
   avec corrigés** (« Le Français en 7ème année », L.M. Beya, « Assistante pédagogique »), **pas le guide
   enseignant / cadre de référence officiel du CNP**. Il se déclare seulement _« conforme aux programmes
