@@ -33,10 +33,58 @@ Le guide imprime, en tête du **القسم العمليّ**, une **خارطة ا
 > متّصلة بمكتسبات السّنة الخامسة المستوجبة للشّروع في برنامج السّنة السّادسة ».
 >
 > **الفترة الأولى** — en tête : تقييم قبلي · تشخيص · دعم وعلاج. 1\* أوظّف الجمع والطرح في مجموعة الأعداد العشريّة · 2\* أتصرّف في وحدات قيس المساحة · 3\* أوظف الضّرب والقسمة في مجموعة الأعداد العشريّة · 4\* أوظّف التّعامد والتّوازي ومنصّف الزّاوية في البناءات الهندسيّة · 5\* أوظّف الجمع والطرح والضّرب على الأعداد الّتي تقيس الزّمن · 6\* أتدرّب على حلّ المسائل · 7 أبني زوايا أقيستها بالدّرجة 90−45−60−30−15−120 · 8 أبني مثلّثا استنادا إلى أقيسة الأضلاع والزّوايا · 9 أتعرّف شبه المنحرف وأرسمه · 10 أتدرّب على حلّ المسائل · 11 أوظّف مكتسباتي · 12 أتسلّى.
-> **الفترة الثانية** — 13 أتعرّف مضاعفات مشتركة لعددين صحيحين طبيعيّين فأكثر · 14 أوظّف التّناسب في السّلّم · 15 أتعرّف متوازيات الأضلاع وخاصّياتها · 16 أتدرّب على حلّ المسائل · 17 أرسم متوازيات الأضلاع وأبنيها · 18 أكوّن الأعداد الكسريّة وأكتبها وأقرؤها · **19 أفكّك الأعداد الكسريّة وأركّبها** · 20 أحسب قيس محيط دائرة · 21 أتدرّب على حلّ المسائل · 22 أوظّف مكتسباتي وأقيّمها · 23 أتسلّى.
-> **الفترة الثالثة** — 24 أحسب محيط شكل مركّب من الأشكال المدروسة · 25 أتعرّف قابلية قسمة عدد صحيح طبيعي على 2 و5 · 26 أتعرّف قابلية قسمة عدد صحيح طبيعي على 3 و9 · 27 أتدرّب على حلّ المسائل · 28 أكتب عددا كسريًّا بطرق مختلفة · 29 أقارن الأعداد الكسريّة وأرتّبها · 30 أتدرّب على حلّ المسائل · 31 أتعرّف الأعداد الكسريّة والعشريّة وأكتبها بطرق مختلفة · 32 أوظّف التّناسب في تعرّف النّسبة المائويّة · 33 أحسب قيس مساحة المثلّث · 34 أتدرّب على حلّ المسائل · 35 أوظّف مكتسباتي وأقيّمها · 36 أتسلّى.
-> **الفترة الرابعة** — 37 أوظّف التّناسب في حساب النّسبة المائويّة · 38 أحسب مساحة متوازي أضلاع (متوازي الأضلاع، المعيّن، المستطيل، المربّع) · 39 أتدرّب على حلّ المسائل · 40 أتصرّف في مجموعة الأعداد الكسريّة · **41 أحسب مساحة شبه المنحرف** · 42 أجمع الأعداد الكسريّة وأطرحها · 43 أتدرّب على حلّ المسائل · 44 أوظّف مكتسباتي وأقيّمها · 45 أتسلّى.
-> **الفترة الخامسة** — 46 أحسب مساحة القرص الدّائري · 47 أنجز عمليّة ضرب عدد كسريّ في آخر صحيح · 48 أتدرّب على حلّ المسائل · 49 أوظّف مكتسباتي وأقيّمها · 50 أحسب مساحة شكل مركّب من الأشكال المدروسة · **51 أوظّف التّناسب في حساب السّرعة والمسافة** · 52 أتدرّب على حلّ المسائل · 53 أوظّف التّناسب في حساب السّرعة والمسافة والزّمن · 54 أتعرّف كلّا من متوازي المستطيلات والمكعّب وأنشرها وأصنعها · 55 أتدرّب على حلّ المسائل · 56 أوظّف مكتسباتي وأقيّمها · 57 أوظّف الجمع والطّرح والضّرب على الأعداد الكسريّة · 58 أحسب المساحة الجانبيّة والمساحة الجمليّة لكلّ من متوازي المستطيلات والمكعّب · 59 أتدرّب على حلّ المسائل · 60 أوظّف مكتسباتي وأقيّمها · 61 أتسلّى.
+> **الفترة الثانية** — 13 أتعرّف مضاعفات مشتركة لعددين صحيحين طبيعيّين فأكثر · 14 أوظّف التّناسب في السّلّم · 15 أتعرّف متوازيات الأضلاع وخاصّياتها (المستطيل، المربّع، متوازي الأضلاع، المعيّن) · 16 أتدرّب على حلّ المسائل · 17 أرسم متوازيات الأضلاع وأبنيها · 18 أكوّن الأعداد الكسريّة وأكتبها وأقرؤها · **19 أفكّك الأعداد الكسريّة وأركّبها** · 20 أحسب قيس محيط دائرة · 21 أتدرّب على حلّ المسائل · 22 أوظّف مكتسباتي وأقيّمها · 23 أتسلّى.
+> **الفترة الثالثة** — 24 أحسب محيط شكل مركّب من الأشكال المدروسة · 25 أتعرّف قابلية قسمة عدد صحيح طبيعي على 2 و5 · 26 أتعرّف قابلية قسمة عدد صحيح طبيعي على 3 و9 · 27 أتدرّب على حلّ المسائل · 28 أكتب عددا كسريًّا بطرق مختلفة · 29 أقارن الأعداد الكسريّة وأرتّبها · 30 أتدرّب على حلّ المسائل · 31 أتعرّف الأعداد الكسريّة العشريّة وأكتبها بطرق مختلفة · 32 أوظّف التّناسب في تعرّف النّسبة المائويّة · 33 أحسب قيس مساحة المثلّث · 34 أتدرّب على حلّ المسائل · 35 أوظّف مكتسباتي وأقيّمها · 36 أتسلّى.
+> **الفترة الرابعة** — 37 أوظّف التّناسب في حساب النّسبة المائويّة · 38 أحسب مساحة متوازي أضلاع (متوازي الأضلاع، المعيّن، المستطيل، المربّع) · 39 أتدرّب على حلّ المسائل · 40 أتصرّف في الأعداد الكسريّة · **41 أحسب قيس مساحة شبه المنحرف** · 42 أجمع الأعداد الكسريّة وأطرحها · 43 أتدرّب على حلّ المسائل · 44 أوظّف مكتسباتي وأقيّمها · 45 أتسلّى.
+> **الفترة الخامسة** — 46 أحسب قيس مساحة القرص الدّائريّ · 47 أنجز عمليّة ضرب عدد كسريّ في آخر صحيح · 48 أتدرّب على حلّ المسائل · 49 أوظّف مكتسباتي وأقيّمها · 50 أحسب قيس مساحة شكل مركّب من الأشكال المدروسة · **51 أوظّف التّناسب في حساب معدّل السّرعة والمسافة** · 52 أتدرّب على حلّ المسائل · 53 أوظّف التّناسب في حساب معدّل السّرعة والمسافة والزّمن · 54 أتعرّف كلاّ من متوازي المستطيلات والمكعّب وأنشرهما وأصنعهما · 55 أتدرّب على حلّ المسائل · 56 أوظّف مكتسباتي وأقيّمها · 57 أوظّف الجمع والطّرح والضّرب على الأعداد الكسريّة · 58 أحسب قيس المساحة الجمليّة وقيس المساحة الجانبيّة لكلّ من متوازي المستطيلات والمكعّب · 59 أتدرّب على حلّ المسائل · 60 أوظّف مكتسباتي وأقيّمها · 61 أتسلّى.
+
+## 2 ter. Les 61 leçons → leurs pages au manuel élève (relevé du 2026-09-19)
+
+> **Ce que la خارطة p.59 du guide ne porte pas**, et que le manuel donne gratuitement : chaque
+> leçon imprime **son numéro en tête de page** (bandeau de couleur) et **sa page en pied**. Les 174
+> pages ont été balayées à 50 dpi pour détecter les bandeaux (63 pages colorées = 61 leçons + la
+> page d'accueil ص 3 + le فهرس ص 174), puis les 63 bandeaux ont été recadrés et **lus à l'image**.
+> La borne haute de chaque leçon est la page de la suivante moins un.
+>
+> ⚠️ **Ce relevé n'est PAS une lecture de ces pages** : il ne donne que le titre et la borne. Le
+> registre ne compte donc toujours que **ص 55–58** comme lues pour `102609`. Ce que le relevé
+> achète, c'est la **navigation** — ouvrir directement la leçon qui porte une notion servie.
+
+> **1** ص 4-7 · **2** ص 8-9 · **3** ص 10-13 · **4** ص 14-15 · **5** ص 16-18 · **6** ص 19-20 · **7** ص 21-23 · **8** ص 24-26 · **9** ص 27-30 · **10** ص 31-32
+> **11** ص 33 · **12** ص 34 · **13** ص 35-37 · **14** ص 38-41 · **15** ص 42-45 · **16** ص 46 · **17** ص 47-49 · **18** ص 50-54 · **19** ص 55-58 · **20** ص 59-62
+> **21** ص 63-64 · **22** ص 65 · **23** ص 66 · **24** ص 67-69 · **25** ص 70-73 · **26** ص 74-77 · **27** ص 78-79 · **28** ص 80-84 · **29** ص 85-88 · **30** ص 89
+> **31** ص 90-92 · **32** ص 93-97 · **33** ص 98-101 · **34** ص 102-103 · **35** ص 104-105 · **36** ص 106 · **37** ص 107-110 · **38** ص 111-114 · **39** ص 115-116 · **40** ص 117-121
+> **41** ص 122-125 · **42** ص 126-128 · **43** ص 129-130 · **44** ص 131 · **45** ص 132 · **46** ص 133-135 · **47** ص 136-138 · **48** ص 139 · **49** ص 140-141 · **50** ص 142-146
+> **51** ص 147-150 · **52** ص 151-152 · **53** ص 153-156 · **54** ص 157-160 · **55** ص 161 · **56** ص 162 · **57** ص 163-164 · **58** ص 165-168 · **59** ص 169-170 · **60** ص 171-172
+> **61** ص 173
+
+### Ce que ce relevé a révélé — un second canal, là où la fiche le déclarait impossible
+
+Le §6 de cette fiche affirme (et c'était vrai de ce qu'on avait alors) qu'une **vérification à deux
+canaux est impossible sur ce guide**, sa couche texte étant un mojibake de fonte privée. **La
+conclusion était trop large.** Le second canal n'a pas à être la couche texte du même PDF : ici
+c'est **un second document** — le manuel élève rend les mêmes 61 titres dans des bandeaux nets,
+lisibles à 110 dpi, là où la خارطة p.59 est une grille dense qu'il a fallu croper à 300 dpi.
+
+Le recoupement des 61 titres a donné **10 écarts, tous dans cette fiche, aucun dans le contenu
+servi** — le même verdict que l'audit de l'éveil 5ᵉ : le document se trompait, le contenu avait
+raison. Corrigés au §2 le 2026-09-19 :
+
+| n° | ce que la fiche portait | ce que le manuel imprime | portée |
+| --- | --- | --- | --- |
+| **31** | أتعرّف الأعداد الكسريّة **و**العشريّة | أتعرّف الأعداد الكسريّة **العشريّة** | 🔴 **contresens** : un « و » parasite faisait lire « les fractionnaires **et** les décimaux » (deux familles) au lieu de « les **fractions décimales** » (une notion, مقام 10/100/1000). Le chapitre servi `12-fractions-decimales` enseigne la bonne. |
+| **51 · 53** | حساب السّرعة والمسافة | حساب **معدّل** السّرعة والمسافة | 🟠 « معدّل » (vitesse **moyenne**) tombé. Le chapitre `15-vitesse-distance-temps` enseigne bien معدّل السرعة. |
+| **40** | أتصرّف في **مجموعة** الأعداد الكسريّة | أتصرّف في الأعداد الكسريّة | 🟠 « مجموعة » ajouté. Il **renforce** la borne du §6 : le titre officiel ne parle pas d'ensemble, donc rien n'invite à ℚ côté élève. |
+| **41 · 46 · 50 · 58** | أحسب **مساحة** … | أحسب **قيس مساحة** … | 🟡 « قيس » tombé quatre fois. Le manuel dit toujours « calculer la **mesure** de l'aire ». |
+| **58** | الجانبيّة puis الجمليّة | الجمليّة puis الجانبيّة | 🟡 ordre inversé. |
+| **54** | وأنشر**ها** وأصنع**ها** | وأنشر**هما** وأصنع**هما** | 🟡 duel attendu (deux solides), pluriel écrit. |
+| **15** | sans la parenthèse | + (المستطيل، المربّع، متوازي الأضلاع، المعيّن) | 🟡 énumération omise. |
+| **38** | (… المعيّن، المستطيل …) | (… المستطيل، المعيّن …) | 🟡 ordre interne. |
+
+**Règle qui en sort, et qui vaut pour les 16 autres fiches arabophones** : quand le guide
+enseignant est illisible en couche texte, **chercher le manuel élève du même couple avant de
+conclure qu'on est à un seul canal**. Le catalogue CNP en porte un pour presque tous les niveaux,
+et ses bandeaux de leçon sont la surface la plus propre du corpus.
 
 ### Domaine : **العمليّات على الأعداد — حساب** (nombres & opérations) — مكوّن 1 p.58 ; théorie maître p.44–48
 
@@ -285,34 +333,34 @@ colonne somme à son total :
 
 ## 4. Chapitrage retenu (→ alimente `manifest/6eme-base.json`)
 
-> Slugs **alignés sur le contenu déjà publié** (`content/math-6eme/` — **23 chapitres**, titres arabes confirmés). Ordre du tableau = **displayOrder publié** (entiers → opér. naturels → décimaux ×3 → multiples → divisibilité → fractions ×6 → proportionnalité → vitesse → géométrie : ⊥/∥ → angles → triangles → quadrilatères → aires → cercle → durées → solides). Le guide ne distribue pas par « chapitre » mais par **5 فترات** (خارطة p.58–59 : **61 titres de leçons**) + **3 ثلاثيّات** (p.60/64) : la colonne « notion » mappe chaque slug à l'indicateur/leçon correspondant (n° الدرس de la خارطة الكتاب p.59 cité quand identifiable). Le **manuel élève (كتاب التلميذ)** `102609P00` est **ouvert depuis le 2026-09-19, mais sur ses seules ص 55–58** (leçon 19, §2 bis) : la colonne pages n'est donc renseignée que pour `24-decomposition-fractions`, et reste « — » partout ailleurs — non parce que le manuel manque, mais parce que ces pages-là n'ont pas encore été lues. Le guide y renvoie constamment (« بكتاب التلميذ », les 61 عناوين, les مذكرات/جذاذات p.100→).
+> Slugs **alignés sur le contenu déjà publié** (`content/math-6eme/` — **23 chapitres**, titres arabes confirmés). Ordre du tableau = **displayOrder publié** (entiers → opér. naturels → décimaux ×3 → multiples → divisibilité → fractions ×6 → proportionnalité → vitesse → géométrie : ⊥/∥ → angles → triangles → quadrilatères → aires → cercle → durées → solides). Le guide ne distribue pas par « chapitre » mais par **5 فترات** (خارطة p.58–59 : **61 titres de leçons**) + **3 ثلاثيّات** (p.60/64) : la colonne « notion » mappe chaque slug à l'indicateur/leçon correspondant (n° الدرس de la خارطة الكتاب p.59 cité quand identifiable). La colonne **manuel élève** est renseignée depuis le relevé de bandeaux du 2026-09-19 (**§2 ter**) : 21 chapitres sur 24 portent leur plage de pages dans `102609P00`. Les trois sans plage (`01-entiers-naturels`, `02-operations-naturels`, `03-nombres-decimaux`) sont ceux que le §4 rattache à des **مكتسبات قبليّة** ou à la théorie-maître, sans numéro de leçon : rien n'a été inventé pour eux. ⚠️ **Une plage n'est pas une lecture** — seules ص 55–58 ont été lues (§2 bis) ; le reste est une adresse, pas un contenu. Le guide y renvoie constamment (« بكتاب التلميذ », les 61 عناوين, les مذكرات/جذاذات p.100→).
 
 | #   | slug                                  | notion (مكوّن الكفاية / المؤشّر — خارطة p.58–59 · n° الدرس)                                                             | domaine | manuel élève (code · pages) |
 | --- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------- | --------------------------- |
-| 1   | `01-entiers-naturels`                 | الأعداد الطبيعيّة الكبيرة (أصناف→ملايين/مليارات، قيمة الرقم، تفكيك، مقارنة/ترتيب، **تدوير**) — مكتسبات قبليّة p.60      | حساب    | —                           |
-| 2   | `02-operations-naturels`              | العمليّات على الطبيعيّة (4 عمليّات، القسمة الإقليديّة، الخاصّيات، **ترتيب إجراء العمليّات**) — مكوّن 1                  | حساب    | —                           |
-| 3   | `03-nombres-decimaux`                 | الأعداد العشريّة (الرتب بعد الفاصلة، قراءة/كتابة/تفكيك، مقارنة، تدوير) — **théorie p.44/48**                            | حساب    | —                           |
-| 4   | `04-addition-soustraction-decimaux`   | جمع/طرح عشريّ (الفاصلة تحت الفاصلة، الإكمال بالأصفار، التقدير) — **خارطة p.59 الدرس 1**                                 | حساب    | —                           |
-| 5   | `05-multiplication-division-decimaux` | **ضرب عشريّ × عشريّ**، ×/÷ على 10/100/1000، **قسمة عشريّ ÷ طبيعيّ** — خارطة p.59 الدرس 3/39                             | حساب    | —                           |
-| 6   | `06-multiples-communs`                | **المضاعفات المشتركة وأصغر مضاعف مشترك** (نوعيّة 6ème) — خارطة p.59 الدرس 13                                            | حساب    | —                           |
-| 7   | `07-criteres-divisibilite`            | **قابليّة القسمة على 2 و3 و5 و9 و10** (نوعيّة 6ème) — خارطة p.59 الدرس 25–26                                            | حساب    | —                           |
-| 8   | `08-fractions-sens-lecture`           | الأعداد الكسريّة : المعنى/القراءة (بسط/مقام، جزء من كميّة، نصف المستقيم المدرّج، حاصل قسمة) — الدرس 18                  | حساب    | —                           |
-| 9   | `24-decomposition-fractions`          | **تفكيك الأعداد الكسريّة وتركيبها** (مقام ثابت، عدّة تفكيكات، الحدّ الناقص، **جزء صحيح + جزء كسريّ**) — **خارطة p.59 الدرس 19** | حساب    | **102609 · ص 55–58**        |
-| 10  | `09-fractions-equivalentes`           | الكتابات الكسريّة المتساوية و**الاختزال** — خارطة p.59 الدرس 28                                                         | حساب    | —                           |
-| 11  | `10-comparaison-fractions`            | مقارنة وترتيب الكسور (نفس المقام/البسط، بالوحدة، **توحيد المقامات**) — الدرس 29                                         | حساب    | —                           |
-| 12  | `11-addition-soustraction-fractions`  | **جمع/طرح الكسور** (نفس المقام، التوحيد، مع عدد صحيح) — خارطة p.59 الدرس 42/57                                          | حساب    | —                           |
-| 13  | `12-fractions-decimales`              | الأعداد الكسريّة العشريّة (مقام 10/100/1000، كسر عشريّ ↔ عدد عشريّ) — الدرس 31                                          | حساب    | —                           |
-| 14  | `13-multiplication-fraction-entier`   | **ضرب كسر في عدد صحيح** (نضرب البسط، التبديليّة، اختزال) — خارطة p.59 الدرس 47                                          | حساب    | —                           |
-| 15  | `14-proportionnalite-pourcentage`     | التناسب ومعامله، **النسبة المئويّة** (/100، % من عدد، نِسَب مفيدة، ↔ كسر) — الدرس 14/32/37                              | حساب    | —                           |
-| 16  | `15-vitesse-distance-temps`           | التناسب : السرعة/المسافة/الزمن (معدّل، الوحدات) — خارطة p.59 الدرس 53                                                   | حساب    | —                           |
-| 17  | `16-perpendicularite-parallelisme`    | التعامد (⊥) والتوازي (∥) (الكوس/المسطرة، الخاصّيات) — مكوّن 3 ؛ الدرس 4                                                 | هندسة   | —                           |
-| 18  | `17-angles`                           | الزوايا (قياس/بناء بالمنقلة بالدّرجات ؛ حادّة/قائمة/منفرجة/مستقيمة) — الدرس 7                                           | هندسة   | —                           |
-| 19  | `18-triangles`                        | المثلّثات (عناصر، تصنيف بالأضلاع/الزوايا، **بناء**) — مذكرة p.110/160 ؛ الدرس 8                                         | هندسة   | —                           |
-| 20  | `19-quadrilateres`                    | الرباعيّات (متوازي الأضلاع/مستطيل/معيّن/مربّع/**شبه المنحرف**، خاصّيات) — الدرس 9                                       | هندسة   | —                           |
-| 21  | `20-aires-polygones`                  | **مساحات** المستطيل/المربّع/**المثلّث/متوازي الأضلاع/شبه المنحرف** + مركّب + وحدات المساحة — الدرس 2/33/38/50           | هندسة   | —                           |
-| 22  | `21-cercle-disque`                    | الدائرة/القرص : ق=2ر، **محيط 2πر** و**مساحة القرص πر²** (π≈3,14) — **مذكرة p.130** ؛ الدرس 20/46                        | هندسة   | —                           |
-| 23  | `22-durees`                           | المُدَد الزمنيّة (ثا/د/سا/يوم/أسبوع/شهر/سنة، تحويل بـ60/24، جمع/طرح، المدّة المنقضية) — مكوّن 2 ؛ الدرس 5               | قيس     | —                           |
-| 24  | `23-solides-cube-pave`                | **المكعّب ومتوازي المستطيلات** : أوجه/أحرف/رؤوس، نشر، **مساحة جانبيّة/جمليّة** (نوعيّة 6ème ؛ **لا حجم**) — الدرس 54/58 | هندسة   | —                           |
+| 1   | `01-entiers-naturels`                 | الأعداد الطبيعيّة الكبيرة (أصناف→ملايين/مليارات، قيمة الرقم، تفكيك، مقارنة/ترتيب، **تدوير**) — مكتسبات قبليّة p.60      | حساب    | — (aucun n° de leçon associé) |
+| 2   | `02-operations-naturels`              | العمليّات على الطبيعيّة (4 عمليّات، القسمة الإقليديّة، الخاصّيات، **ترتيب إجراء العمليّات**) — مكوّن 1                  | حساب    | — (aucun n° de leçon associé) |
+| 3   | `03-nombres-decimaux`                 | الأعداد العشريّة (الرتب بعد الفاصلة، قراءة/كتابة/تفكيك، مقارنة، تدوير) — **théorie p.44/48**                            | حساب    | — (aucun n° de leçon associé) |
+| 4   | `04-addition-soustraction-decimaux`   | جمع/طرح عشريّ (الفاصلة تحت الفاصلة، الإكمال بالأصفار، التقدير) — **خارطة p.59 الدرس 1**                                 | حساب    | **102609** · ص 4-7 |
+| 5   | `05-multiplication-division-decimaux` | **ضرب عشريّ × عشريّ**، ×/÷ على 10/100/1000، **قسمة عشريّ ÷ طبيعيّ** — خارطة p.59 الدرس 3/39                             | حساب    | **102609** · ص 10-13,115-116 |
+| 6   | `06-multiples-communs`                | **المضاعفات المشتركة وأصغر مضاعف مشترك** (نوعيّة 6ème) — خارطة p.59 الدرس 13                                            | حساب    | **102609** · ص 35-37 |
+| 7   | `07-criteres-divisibilite`            | **قابليّة القسمة على 2 و3 و5 و9 و10** (نوعيّة 6ème) — خارطة p.59 الدرس 25–26                                            | حساب    | **102609** · ص 70-73,74-77 |
+| 8   | `08-fractions-sens-lecture`           | الأعداد الكسريّة : المعنى/القراءة (بسط/مقام، جزء من كميّة، نصف المستقيم المدرّج، حاصل قسمة) — الدرس 18                  | حساب    | **102609** · ص 50-54 |
+| 9   | `24-decomposition-fractions`          | **تفكيك الأعداد الكسريّة وتركيبها** (مقام ثابت، عدّة تفكيكات، الحدّ الناقص، **جزء صحيح + جزء كسريّ**) — **خارطة p.59 الدرس 19** | حساب    | **102609** · ص 55-58 |
+| 10  | `09-fractions-equivalentes`           | الكتابات الكسريّة المتساوية و**الاختزال** — خارطة p.59 الدرس 28                                                         | حساب    | **102609** · ص 80-84 |
+| 11  | `10-comparaison-fractions`            | مقارنة وترتيب الكسور (نفس المقام/البسط، بالوحدة، **توحيد المقامات**) — الدرس 29                                         | حساب    | **102609** · ص 85-88 |
+| 12  | `11-addition-soustraction-fractions`  | **جمع/طرح الكسور** (نفس المقام، التوحيد، مع عدد صحيح) — خارطة p.59 الدرس 42/57                                          | حساب    | **102609** · ص 126-128,163-164 |
+| 13  | `12-fractions-decimales`              | الأعداد الكسريّة العشريّة (مقام 10/100/1000، كسر عشريّ ↔ عدد عشريّ) — الدرس 31                                          | حساب    | **102609** · ص 90-92 |
+| 14  | `13-multiplication-fraction-entier`   | **ضرب كسر في عدد صحيح** (نضرب البسط، التبديليّة، اختزال) — خارطة p.59 الدرس 47                                          | حساب    | **102609** · ص 136-138 |
+| 15  | `14-proportionnalite-pourcentage`     | التناسب ومعامله، **النسبة المئويّة** (/100، % من عدد، نِسَب مفيدة، ↔ كسر) — الدرس 14/32/37                              | حساب    | **102609** · ص 38-41,93-97,107-110 |
+| 16  | `15-vitesse-distance-temps`           | التناسب : السرعة/المسافة/الزمن (معدّل، الوحدات) — خارطة p.59 الدرس 53                                                   | حساب    | **102609** · ص 147-150,153-156 |
+| 17  | `16-perpendicularite-parallelisme`    | التعامد (⊥) والتوازي (∥) (الكوس/المسطرة، الخاصّيات) — مكوّن 3 ؛ الدرس 4                                                 | هندسة   | **102609** · ص 14-15 |
+| 18  | `17-angles`                           | الزوايا (قياس/بناء بالمنقلة بالدّرجات ؛ حادّة/قائمة/منفرجة/مستقيمة) — الدرس 7                                           | هندسة   | **102609** · ص 21-23 |
+| 19  | `18-triangles`                        | المثلّثات (عناصر، تصنيف بالأضلاع/الزوايا، **بناء**) — مذكرة p.110/160 ؛ الدرس 8                                         | هندسة   | **102609** · ص 24-26 |
+| 20  | `19-quadrilateres`                    | الرباعيّات (متوازي الأضلاع/مستطيل/معيّن/مربّع/**شبه المنحرف**، خاصّيات) — الدرس 9                                       | هندسة   | **102609** · ص 27-30,42-45,47-49 |
+| 21  | `20-aires-polygones`                  | **مساحات** المستطيل/المربّع/**المثلّث/متوازي الأضلاع/شبه المنحرف** + مركّب + وحدات المساحة — الدرس 2/33/38/50           | هندسة   | **102609** · ص 8-9,98-101,111-114,122-125,142-146 |
+| 22  | `21-cercle-disque`                    | الدائرة/القرص : ق=2ر، **محيط 2πر** و**مساحة القرص πر²** (π≈3,14) — **مذكرة p.130** ؛ الدرس 20/46                        | هندسة   | **102609** · ص 59-62,133-135 |
+| 23  | `22-durees`                           | المُدَد الزمنيّة (ثا/د/سا/يوم/أسبوع/شهر/سنة، تحويل بـ60/24، جمع/طرح، المدّة المنقضية) — مكوّن 2 ؛ الدرس 5               | قيس     | **102609** · ص 16-18 |
+| 24  | `23-solides-cube-pave`                | **المكعّب ومتوازي المستطيلات** : أوجه/أحرف/رؤوس، نشر، **مساحة جانبيّة/جمليّة** (نوعيّة 6ème ؛ **لا حجم**) — الدرس 54/58 | هندسة   | **102609** · ص 157-160,165-168 |
 
 > **Manuel élève** : `102609P00` (174 p.) est au catalogue CNP et **a été ouvert le 2026-09-19**, mais **sur 4 pages seulement** (ص 55–58). C'est lui, et non la خارطة p.59, qui porte le **mapping leçon→page** : chaque leçon imprime son numéro en tête et sa page en pied. **Prochaine passe à haut rendement sur ce couple** : relever ces bandeaux sur les 174 pages — cela donnerait en une lecture la colonne `pages` des 24 chapitres, sans transcrire une ligne de contenu.
 >
@@ -336,8 +384,12 @@ colonne somme à son total :
   texte est un **mojibake** — l'arabe y est encodé par une fonte à mapping propriétaire sans
   ToUnicode, si bien que « خارطة الكتاب » s'extrait en `ÜÉàµdG áWQÉN`. `pdftotext` rend 290 Ko
   d'ordures exploitables pour rien. **Tout contrôle sur ce guide passe donc par l'image**
-  (`pdftoppm -r 200`), et le recoupement croisé qui a tranché l'anglais n'est pas disponible. À
-  savoir avant de promettre une vérification « à deux canaux » sur les guides CNP arabes.
+  (`pdftoppm -r 200`). ~~et le recoupement croisé qui a tranché l'anglais n'est pas disponible~~
+  — 🔧 **corrigé le 2026-09-19 (même jour) : cette conclusion était trop large.** Le second canal
+  n'a pas à être la couche texte du même PDF ; il peut être **un autre document**. Le manuel élève
+  `102609P00` rend les mêmes 61 titres de leçons en bandeaux nets, et le recoupement a **marché** :
+  10 écarts relevés, dont un contresens (voir §2 ter). Ce qui reste vrai : la couche texte de ce
+  guide-ci ne sert à rien, et un relevé fait sur elle seule n'est pas une vérification.
 - ✅ **p.60 (عدد عناوين الدروس) — exacte, sur les 28 nombres.** Le §2 recopiait 6 / 17 (4+9+4) /
   14 (6+4+4) / 12 (3+5+4) / 7 (2+2+3) / 5 (2+2+1) → 61 (23+22+16) : **tout concorde**, ligne par
   ligne et colonne par colonne. Cette partie de la transcription est fiable.
