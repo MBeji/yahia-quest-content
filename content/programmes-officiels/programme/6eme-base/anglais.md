@@ -3,7 +3,7 @@
 # English (الإنجليزية) — 6ème année de base · programme officiel CNP
 
 > **Source** : guide enseignant `541608P00.pdf` (`cnp-officiel/manuels/asasi/c6/enseignant/`) — page de titre imprimée : **« Learn and Grow — Year 6 Basic Education — Teacher's Guide »** (Republic of Tunisia · Ministry of Education · **National Pedagogic Centre**). Writing team : Ilhem Ben Slama Mansour (ELT Inspector General), Imen Djebbi & Ahlem Sassi (Teacher Advisors), Chadia Abbassi (Senior Teacher) ; Evaluation team : Slah Yaakoubi (ELT Inspector General), Mongi Gaja (ELT Senior Inspector). **70 pages.**
-> **Pages lues** : couverture (p.1) ; **Introduction + principes théoriques** p.3 (premises/lesson overview) ; **description des sections de leçon** p.3–9 (Let's get started p.3 ; Let's read / Let's Listen p.4 ; Let's complete the rule / Let's practise / Let's speak p.5 ; Let's write p.6 ; Let's pronounce / Let's play p.7 ; board games / project idea + evaluation grid p.8–9) ; **« Answer Keys »** (= le cœur du programme : objectifs + vocabulaire + grammaire par leçon) **p.9–70**, soit **7 unités × 5 leçons** + un « Progress Check » par unité avec corrigés (Reading Comprehension / Language / Writing) : **Unit I** p.9–17, **Unit II** p.18–25, **Unit III** p.26–32, **Unit IV** p.33–41, **Unit V** p.42–50, **Unit VI** p.51–58, **Unit VII** p.59–70. **Transcrit le** : 2026-06-28. **Statut** : transcription fidèle (cadre méthodologique + scope de langue + **objectifs / vocabulaire-clé / grammaire de chacune des 35 leçons** lus dans la section Answer Keys). Le **détail séance-par-séance des corrigés** (réponses numérotées des exercices) n'est pas recopié exhaustivement — voir §6.
+> **Pages lues** : **70/70** — couverture (p.1) ; **p.2** = la seule ligne de copyright (« © All rights reserved for National Pedagogic Centre »), lue le 2026-09-19, ce qui clôt la couverture ; **Introduction + principes théoriques** p.3 (premises/lesson overview) ; **description des sections de leçon** p.3–9 (Let's get started p.3 ; Let's read / Let's Listen p.4 ; Let's complete the rule / Let's practise / Let's speak p.5 ; Let's write p.6 ; Let's pronounce / Let's play p.7 ; board games / project idea + evaluation grid p.8–9) ; **« Answer Keys »** (= le cœur du programme : objectifs + vocabulaire + grammaire par leçon) **p.9–70**, soit **7 unités × 5 leçons** + un « Progress Check » par unité avec corrigés (Reading Comprehension / Language / Writing) : **Unit I** p.9–17, **Unit II** p.18–25, **Unit III** p.26–32, **Unit IV** p.33–41, **Unit V** p.42–50, **Unit VI** p.51–58, **Unit VII** p.59–70. **Transcrit le** : 2026-06-28 ; **audité au source le 2026-09-19** (R-7, portée intégrale : les 35 encadrés relus un à un). **Statut** : transcription **vérifiée** — **7 écarts corrigés** le 2026-09-19, sur une base par ailleurs **solide** (35/35 titres de leçon exacts, 33/35 encadrés d'objectifs exacts, vocabulaire exact, pages et Progress Checks exacts). Le détail, et ce qui a été mesuré plutôt qu'affirmé, en §6 « Audit R-7 ». Le **détail séance-par-séance des corrigés** (réponses numérotées des exercices) n'est pas recopié exhaustivement — voir §6.
 > **Langue d'enseignement** : `en` (monolingue — le guide et le programme sont **en anglais**, langue cible). **gradeSlug** : `6eme-base`. **subject id** attendu : `english-6eme`. **L'anglais DÉMARRE en 6ème année** : c'est la **1ère année d'apprentissage** de l'anglais en Tunisie (niveau **débutant / A1**, priorité à l'ORAL puis entrée progressive dans la lecture/écriture). Le manuel élève associé est **« Learn and Grow » — Year 6 Basic Education**.
 
 ## 1. Cadre & compétences (les compétences terminales / objectifs généraux)
@@ -58,10 +58,10 @@
 
 #### Unit I — Entertaining Myself (p.9–17)
 
-- **Lesson 1 — Let's Have Fun** (p.9–10). **Objectives** : Name leisure activities ; Speak about their favourite leisure activities. **Vocabulary** : fishing / museum / go camping / riding a bike / gardening. **Grammar** : `Like + verb + ING` ; `Enjoy + verb + ING` (Because). **Function (Let's complete the rule)** : Expressing likes — `enjoy + verb + ing`, `like + verb + ing` ; Expressing dislikes — `hate + verb + ing`, `dislike + verb + ing`.
+- **Lesson 1 — Let's Have Fun** (p.9–10). **Objectives** : Name leisure activities ; Speak about their favourite leisure activities. **Vocabulary** : fishing / museum / go camping / riding a bike / gardening. **Grammar** (encadré, dans l'ordre imprimé) : `Because` ; `Like + verb + ING` ; `Enjoy + verb + ING`. **Function (Let's complete the rule)** : Expressing likes — `enjoy + verb + ing`, `like + verb + ing` ; Expressing dislikes — `hate + verb + ing`, `dislike + verb + ing`.
 - **Lesson 2 — My Free Time Activities** (p.11–12). **Objectives** : Name leisure activities ; Write about their favourite leisure activities. **Vocabulary** : drawing / gardening / shopping. **Grammar** : Adverbs of frequency — `Always / Sometimes / Usually / Never` (`I / You / We / They + always/sometimes/never + verb` ; `He / She / It + always/sometimes/never + verb + s`) ; Prepositions — `On / In` (« On the weekend / on Monday morning / in the afternoon / in the evening »). **Consolidation.**
 - **Lesson 3 — A Day Out** (p.13–14). **Objectives** : Name outdoor free time activities ; Make and respond to suggestions. **Vocabulary** : bored / hide and seek / tired / zoo / far. **Grammar / Function** : Making suggestions — `Let's + infinitive` / `How about + V + ing?` / `What about + V + ing?`
-- **Lesson 4 — Let's go on a picnic** (p.14–15). **Objectives** : Name picnic items ; Talk about picnic activities. **Vocabulary** : Get ready / river / wash / arrive / rope skipping / fly a kite. **Grammar** : Possessive adjectives — `I → my`, `You → your`, `He → his`, `She → her`, `It → its`, `We → our`, `They → their`.
+- **Lesson 4 — Let's go on a picnic** (p.14–15). **Objectives** : Name picnic items ; Talk about picnic activities. **Vocabulary** : Get ready / river / wash / arrive / rope skipping / fly a kite. **Grammar** (encadré, verbatim) : **`Linkers : and – but`** ; `his – her – their`. **Let's complete the rule** (p.14) déploie le paradigme complet : `I → my`, `You → your`, `He → his`, `She → her`, `It → its`, `We → our`, `They → their`. _(Les **Linkers** manquaient à cette fiche ; ils sont bien de la leçon — « develop their sentences into a paragraph using the correct linkers », Let's write p.15.)_
 - **Lesson 5 — Pass the Ball** (p.16). **Objectives** : Name leisure activities ; Make offers and requests (using "Would you like…?"). **Vocabulary** : lose / team / win / kick / run. **Grammar / Function** : Inviting — `Would you like + to + verb?` ; Making a suggestion — `Let's + verb`.
 - **Progress Check 1** (p.17) : Reading Comprehension, Language, Writing (corrigés).
 
@@ -77,7 +77,7 @@
 #### Unit III — Having Fun in the Seasons (p.26–32)
 
 - **Lesson 1 — The Four Seasons** (p.26). **Objectives** : Name the four seasons ; Speak about / describe different seasons with different weather conditions, common activities. **Vocabulary** : seasons / months / year / autumn / spring / summer / winter / **the twelve months of the year**. **Grammar** : `Noun + y = adjective` (« Adjective = Noun + y » ; « Cloud + y = cloudy » ; rappel : pour les mots en consonne-voyelle-consonne, on **double** la dernière consonne — foggy, sunny).
-- **Lesson 2 — Having Fun in Spring** (p.27–28). **Objectives** : Identify the characteristics of the spring season ; Speak about spring common activities. **Vocabulary** : sky / clear / outside / air / butterfly / next / catch / collect. **Grammar** : Future — `will / 'll` ; `will not / won't` (`I/You/He/She/It/We/They + will + verb`) ; **Future words and expressions** : Tomorrow / Next year / Next spring / Next month / Next week…
+- **Lesson 2 — Having Fun in Spring** (p.27–28). **Objectives** : Identify the characteristics of the spring season ; Speak about spring common activities. **Vocabulary** : sky / clear / outside / air / butterfly / next / catch / collect **/ next** _(sic : le guide répète « next » en fin de liste)_. **Grammar** : Future — `will / 'll` ; `will not / won't` (`I/You/He/She/It/We/They + will + verb`) ; **Future words and expressions** : Tomorrow / Next year / Next spring / Next month / Next week…
 - **Lesson 3 — Having Fun in Summer** (p.28–29). **Objectives** : Identify characteristics of the summer season ; Speak about common summer activities. **Vocabulary** : shorts / swimsuit / beach / sandcastle. **Grammar** : To be on holidays ; `Will / Will not (won't) + verb`.
 - **Lesson 4 — Having Fun in Autumn** (p.30–31). **Objectives** : Identify characteristics of the autumn season ; Speak about common autumn activities. **Vocabulary** : warm / cold / windy / go back / meet. **Grammar / Function** : Comparative — `(short) adjective + er` (« adj + er + than » ; « cold + er = colder than ») ; `What's the weather like?` ; `It's + adjective`.
 - **Lesson 5 — Having Fun in Winter** (p.31–32). **Objectives** : Identify characteristics of the winter season ; Speak about common winter activities. **Vocabulary** : gloves / socks / fresh air / boots / between / sweater. **Grammar** : `Verb + ING = Activity`.
@@ -88,13 +88,13 @@
 - **Lesson 1 — Let's help each other** (p.33–34). **Objectives** : List examples of helping others ; Identify ways of helping others. **Vocabulary** : care / share / take care / wash the dishes / dirty / tidy / help / each other. **Grammar** : Possessive adjectives — `I – My`, `You – Your`, `He – His`, `She – Her`, `It – Its`, `We – Our`, `They – Their`.
 - **Lesson 2 — Sharing is caring** (p.35–36). **Objectives** : Compare places and people using the superlative ; Write about activities one does in his/her neighbourhood. **Vocabulary** : city / come together / neighbour / to clean up / alone / poor / old / young / cross. **Grammar** : The superlative — `the + short adjective + est` (« the + clean + est = the cleanest »).
 - **Lesson 3 — We are stronger together** (p.37–38). **Objectives** : Describe five jobs ; Speak about ways of helping others. **Vocabulary** : village / job / agree / work / say / sick / learn / dice / builder / carpenter / farmer / gamer / participate / competition. **Grammar** : `Verb + er = Noun` (agent nouns ; « farm + er = farmer »).
-- **Lesson 4 — Caring for my school** (p.38–39). **Objectives** : Tell ways to clean for their school ; Write a classroom charter. **Vocabulary** : clean / collect / tidy-up / mop / blackboard / finish / walk in / floor. **Grammar** : Future (affirmative / negative) — `will + verb` ; `Will not / won't + verb`.
+- **Lesson 4 — Caring for my school** (p.38–39). **Objectives** : Tell ways to **care** for their school ; Write a classroom charter. _(le guide écrit « care » — relu à l'image p.38 le 2026-09-19 ; l'unité entière s'intitule « Caring », et cette fiche avait écrit « clean ».)_ **Vocabulary** : clean / collect / tidy-up / mop / blackboard / finish / walk in / floor. **Grammar** : Future (affirmative / negative) — `will + verb` ; `Will not / won't + verb`.
 - **Lesson 5 — Caring for my pet** (p.40). **Objectives** : Name six pets ; Talk about how to take care of pets. **Vocabulary** : take care of / vet / sick / twice / give / hit. **Grammar / Function** : Imperative — « We use imperative sentences to give orders, commands, and general instructions » (« Close the door. ») ; Prohibition — `Don't + verb` (interdire / signaler un danger).
 - **Progress Check 4** (p.41) : Reading Comprehension, Language, Writing.
 
 #### Unit V — Celebrations (p.42–50)
 
-- **Lesson 1 — Children's Day** (p.42–43). **Objectives** : Speak about Children's Day ; Identify children's rights. **Vocabulary** : right / education / life / clothing / health / celebrate. **Grammar / Function** : `Have the right to + something` (« I / You / We / They + have the right + to » ; « He / She / It + has the right + to »). (Children's Day = 11 January ; on celebrate it once a year / one time a year / yearly.)
+- **Lesson 1 — Children's Day** (p.42–43). **Objectives** : Speak about Children's Day ; Identify **five** children's rights. **Vocabulary** : right / education / life / clothing / health / celebrate. **Grammar / Function** : `Have the right to + something` (« I / You / We / They + have the right + to » ; « He / She / It + has the right + to »). (Children's Day = 11 January ; on celebrate it once a year / one time a year / yearly.)
 - **Lesson 2 — Mother's Day** (p.43–44). **Objectives** : Speak about Mother's Day ; Describe Mother's Day activities ; Narrate past events. **Vocabulary** : perfume / give / handbag / cute / necklace / surprised. **Grammar** : Simple past (affirmative form) — `Yesterday / last week / four days ago + verb in the past`. Verbes (Infinitive → Simple past) : buy→bought, write→wrote, prepare→prepared, do→did, have→had, be→was/were, love→loved.
 - **Lesson 3 — Happy New Year** (p.45–46). **Objectives** : List New Year's party activities ; Write about New Year's party. **Vocabulary** : hug / snacks / crackers / blow up / put on / midnight / wait for. **Grammar** : Simple past. Verbes : blow up→blew up, drink→drank, eat→ate, wait→waited, put→put, wish→wished, make→made, say→said, ask→asked, laugh→laughed, talk→talked, count→counted, hug→hugged, want→wanted.
 - **Lesson 4 — Teacher's Day** (p.47–48). **Objectives** : Name items needed for a party ; Talk about party preparations. **Vocabulary** : kids / decorate / forget / don't worry / surprise. **Grammar** : Simple past. **Let's pronounce (régulier -ed)** : `/t/` (baked, asked, talked, danced) · `/d/` (hugged, played, prepared, lived) · `/id/` (waited, counted, wanted, decorated).
@@ -113,9 +113,9 @@
 #### Unit VII — Around the World (p.59–70)
 
 - **Lesson 1 — Let's travel to…** (p.59–60). **Objectives** : Identify the four cardinal directions ; Express preferences ; Write a descriptive paragraph about a town. **Vocabulary** : world / country / travel / east / west / south / north. **Grammar / Function** : Making suggestions — `Let's + verb` / `How about + verb + ing?` / `What about + verb + ing?`
-- **Lesson 2 — Greetings around the world** (p.61–62). **Objectives** : Identify four ways of greeting ; Describe people and their ways of greeting. **Vocabulary** : greet / cheek / kiss / each other / shake hands / use / think / bow (verb) / touch. **Grammar / Function** : Articles — `the / a / an`.
-- **Lesson 3 — I prefer to travel by…** (p.63–64). **Objectives** : Identify different means of transport ; Express preferences ; Write about a family trip. **Vocabulary** : spend / surprise / fast / slow / prefer. **Grammar / Function** : Comparative ; `Prefer + to + verb` / `Prefer + verb + ING` ; `Travel + by + means of transport` (« travel by plane » ; `Travel + to + place` = « travel to Italy »).
-- **Lesson 4 — Monuments in the world** (p.65–66). **Objectives** : Identify five monuments in the World ; Name and describe famous monuments in the World. **Vocabulary** : monument / amphitheatre / famous / build (built) / old ≠ new / start ≠ finish. **Grammar / Function** : Comparative ; The superlative — `the + adjective + est` (« the shortest, the smallest, the longest, the highest »). (Exemples du guide : the pyramids / Egypt, El Jem amphitheatre / Tunisia / Mahdia, the Eiffel Tower / France / Paris / 1889, Big Ben / England / London / 1859, the Great Wall of China.)
+- **Lesson 2 — Greetings around the world** (p.61–62). **Objectives** : Identify four ways of greeting ; Describe people and their ways of greeting. **Vocabulary** : greet / cheek / kiss / each other / shake hands / use / think / bow (verb) / touch. **Function** : Articles — `the / a / an`. _(ici l'encadré titre « Function », pas « Grammar » — cf. §6.)_
+- **Lesson 3 — I prefer to travel by…** (p.63–64). **Objectives** : Identify different means of transport ; Express preferences ; Write about a family trip. **Vocabulary** : spend / surprise / fast / slow / prefer. **Function** _(titre de l'encadré)_ : Comparative ; `Prefer + to + verb` / `Prefer + verb + ING` ; **Let's complete the rule** y ajoute `Travel + by + means of transport` (« travel by plane » ; `Travel + to + place` = « travel to Italy »).
+- **Lesson 4 — Monuments in the world** (p.65–66). **Objectives** : Identify five monuments in the World ; Name and describe famous monuments in the World. **Vocabulary** : monument / amphitheatre / famous / build (built) / old ≠ new / start ≠ finish. **Function** _(titre de l'encadré)_ : Comparative ; The superlative — `the + adjective + est` (« the shortest, the smallest, the longest, the highest »). (Exemples du guide : the pyramids / Egypt, El Jem amphitheatre / Tunisia / Mahdia, the Eiffel Tower / France / Paris / 1889, Big Ben / England / London / 1859, the Great Wall of China.)
 - **Lesson 5 — Customs and habits** (p.67–68). **Objectives** : Identify customs and habits in Spain ; Write about customs and habits in their country. **Vocabulary** : seafood / festival / cape / dancer / flag / pepper / bull / throw / fight. **Grammar** : Articles — `the, a, an` (« a + consonant » → a cape ; « an + vowel » → an Indian).
 - **Progress Check 7** (p.69–70) : Reading Comprehension, Language, Writing.
 
@@ -152,7 +152,49 @@ L'unité d'enseignement est la **leçon**, déroulée par sections fixes (cf. ta
 
 ### 3.4 Prononciation & notation standard
 
-- **Prononciation** prioritaire (p.7) : chaque leçon cible des **symboles phonétiques précis** ; travail par **paires d'opposition** (ex. /ɪ/–/iː/, /ʃ/–/tʃ/, /ʒ/–/dʒ/, /s/–/z/, /t/–/d/–/ɪd/ pour `-ed`), le **/h/** prononcé vs muet, etc. La **notation IPA** est un **repère du maître**, pas un contenu à théoriser pour l'élève. Méthode : audition → répétition (individuelle/chorale) → classement.
+- **Prononciation** prioritaire (p.7) : **les 35 leçons ont toutes une section « Let's pronounce »** — mais **10 seulement impriment un symbole IPA** ; les 25 autres donnent des listes de mots, des paires « S / D » (Similar / Different), un intrus à barrer ou un virelangue, **sans nommer le son**. Dire que « chaque leçon cible des symboles phonétiques précis » était donc faux : c'est vrai d'une leçon sur trois et demie. La **notation IPA** est un **repère du maître**, pas un contenu à théoriser pour l'élève. Méthode : audition → répétition (individuelle/chorale) → classement.
+
+**Inventaire exhaustif des 35 « Let's pronounce »** (relevé au source le 2026-09-19 ; « — » = le guide ne nomme aucun symbole) :
+
+| Leçon      | Ce que l'encadré imprime                                                                          | Symbole nommé         |
+| ---------- | --------------------------------------------------------------------------------------------------- | --------------------- |
+| U-I L1     | « Cross the odd word out » — hide and seek / bike                                                     | —                     |
+| U-I L2     | 5 paires S/D (Sometimes–Volleyball, Shopping–Often, For–Monday, Morning–Sport, Computer–Holiday)       | —                     |
+| U-I L3     | cinema / restaurant / let's / hide and seek ¦ zoo / museum / plays / present                          | **/s/ – /z/**         |
+| U-I L4     | virelangue « In the morning, Annie prepares sandwiches for the picnic »                               | —                     |
+| U-I L5     | « Match the similar sounds » : Ball–Play, Station–Draw, Dance–Park                                    | —                     |
+| U-II L1    | virelangue « Ashley! You should eat fish then brush your teeth and wash your hands. »                 | —                     |
+| U-II L2    | fit/hit/drink/milk/rabbit/sit ¦ Cheese/meat/teeth/eat/feet/read                                       | —                     |
+| U-II L3    | crisps / eat / should                                                                                 | —                     |
+| U-II L4    | virelangue « Doctor! I can't keep fit. I have a stomachache and a toothache. »                        | —                     |
+| U-II L5    | cream                                                                                                 | —                     |
+| U-III L1   | Bicycle / Summer / September / December / ice-cream / sun                                             | —                     |
+| U-III L2   | « Word with the sound /ð/ like "the" » — weather / with / them / this / mother                        | **/ð/**               |
+| U-III L3   | 4 paires S/D (season–beach, eat–weather, meat–wear, please–read)                                      | —                     |
+| U-III L4   | Autumn / who / where / castle / listen / write / Wednesday / when                                     | —                     |
+| U-III L5   | 5 paires S/D (gloves–mother, snow–coat, play–hat, healthy–sweater, skate–family)                      | —                     |
+| U-IV L1    | « I can hear "h" » : House/Home/Hopscotch/Help/Homework ¦ « I can't hear "h" » : Where/Dishes/Hour/School/Should | _lettre_ « h »        |
+| U-IV L2    | - about ¦ - man                                                                                       | —                     |
+| U-IV L3    | can / think / work / clever / correct / baker / doctor / sick                                         | —                     |
+| U-IV L4    | virelangues « to practise the pronunciation of the /ʃ/ and /ʧ/ sounds »                               | **/ʃ/ – /ʧ/**         |
+| U-IV L5    | Day ¦ Why — May/Say/They/Grey/Play ¦ Cry/July/Buy/Dry/Tie                                             | —                     |
+| U-V L1     | « Cross the different word » × 3 séries                                                               | —                     |
+| U-V L2     | Group1 now/brown/House/Mouse/Cow/How ¦ Group2 enjoy/Joy/Boy/Toy                                       | —                     |
+| U-V L3     | Face / day / say / play / wait                                                                        | —                     |
+| U-V L4     | baked/asked/talked/danced ¦ hugged/played/prepared/lived ¦ waited/counted/wanted/decorated            | **/t/ – /d/ – /id/**  |
+| U-V L5     | appariement school–seat, meet–Food, up–Door, talk–Cut                                                 | —                     |
+| U-VI L1    | rice/kite/sometimes/child/surprised/night ¦ fit/children/chips/listen/list/sick                       | **/ai/ – /i/**        |
+| U-VI L2    | Helped/thanked/shopped ¦ answered/arrived/closed/loved/prepared/studied/tried ¦ counted/hated/invited/started/wanted/visited | **/t/ – /d/ – /id/**  |
+| U-VI L3    | Buy–Nice / Came–Break / Fan–Had / Won–Fun / Toy–Boy                                                   | —                     |
+| U-VI L4    | garage / usually ¦ Jump / enjoy / fridge / jeans / jacket / jewellery                                 | **/Ʒ/ – /ʤ/**         |
+| U-VI L5    | Sheep/ship/shoulder/brush/shower ¦ Cheap/chair/match/beach                                            | **/ʃ/ – /ʧ/**         |
+| U-VII L1   | knee / knock ¦ Kilo / Kitchen / key                                                                   | —                     |
+| U-VII L2   | books/cats/cups/students ¦ cars/bags/stars/friends/greetings                                          | **/s/ – /z/**         |
+| U-VII L3   | 5 paires S/D (First–Girl, Third–Ship, Shirt–Dirty, Did–Fit, Skirt–Sit)                                | —                     |
+| U-VII L4   | study/sunny/funny/puppy/cloudy/country/family/many/very ¦ try/fly/my/sky/why/July                     | **/i/ – /ai/**        |
+| U-VII L5   | 5 paires S/D (Sweet–week, Wednesday–draw, Wait–while, Wolf–who, Grow–snow)                            | —                     |
+
+> **Notation du guide, reprise telle quelle** : il écrit **`/id/`** (et non `/ɪd/`), **`/i/`** et **`/ai/`** (et non `/ɪ/`, `/aɪ/`), et **`/Ʒ/`** avec une majuscule là où l'IPA veut `/ʒ/`. Les trois valeurs de `-ed` sont posées **deux fois** (U-V L4 et U-VI L2), comme `/ʃ/–/ʧ/` (U-IV L4 et U-VI L5) et `/s/–/z/` (U-I L3 et U-VII L2) : c'est une **reprise voulue**, pas un doublon. Ne pas « corriger » la notation du guide dans du contenu qui s'y réfère.
 - **Notation standard** (règle matière, content-engine/references/math-and-notation.md) : **chiffres latins 0–9**, équations/textes **LTR**, unités SI ; les nombres au programme vont jusqu'aux **centaines** (ex. « four hundred and sixty eight = 468 », prix en dinars). Aucun chiffre arabo-indien. (Peu de calcul : nombres, dates, prix.)
 
 ## 4. Chapitrage retenu (→ alimente `manifest/6eme-base.json`)
@@ -192,3 +234,42 @@ L'unité d'enseignement est la **leçon**, déroulée par sections fixes (cf. ta
 - **Pas de « planification annuelle » chiffrée** dans le guide : contrairement au guide de français 3ème (calendrier + emploi du temps en séances), ce guide **ne** donne **pas** de répartition horaire/trimestrielle ni de tableau de compétences terminales formel ; le scope se lit **par les objectifs de chaque leçon**. Le séquençage trimestriel est à croiser avec **Taybah** (non lu ici).
 - **Projets (7)** : le guide annonce **un projet par unité** (p.8) mais n'en détaille pas tous les énoncés dans les pages lues (mentions ponctuelles : « Project idea » p.8, p.59 « bring real goods… set up shops », p.43 « greetings project », p.63 « family trip »). À compléter depuis le manuel élève si l'on veut des tâches-projets fidèles.
 - **Vocabulaire « suggéré »** : comme pour les autres langues, le vocabulaire des encadrés est la **référence officielle** mais **non un quota imposé** — l'enseignant sélectionne (cohérent avec le principe « Accept any other correct/plausible answers » récurrent dans les corrigés).
+
+### Audit R-7 du 2026-09-19 — portée intégrale, 7 écarts corrigés
+
+Méthode : couche texte du PDF (propre sur ce guide — vérifiée contre le rendu image de la p.38,
+identique au caractère près), les **35 encadrés** extraits mécaniquement puis **chaque écart relu
+au source** avant d'être écrit. L'automate dit **où regarder**, jamais **quoi conclure** : sur les
+9 signalements qu'il a produits, **3 étaient de fausses alertes de l'extracteur** (un objectif à
+cheval sur deux lignes en U-III L1 ; deux encadrés à étiquette « en ligne » en U-IV L5 et U-VI L3).
+
+**Ce qui tient** — et c'est l'essentiel : **35/35 titres de leçon** exacts, **35/35 titres d'unité**
+et plages de pages exacts, **7/7 Progress Checks** à la bonne page (17 · 25 · 32 · 41 · 50 · 58 · 69),
+**33/35 encadrés d'objectifs** verbatim, **vocabulaire exact** sur les 35 leçons. Cette fiche est
+d'un tout autre niveau de fidélité que l'anglais 9ème (541905), où l'audit du même jour a trouvé
+**52 cellules fausses sur 210**. Les deux guides n'ont ni la même équipe ni la même forme : le
+constat est une **mesure**, pas une impression.
+
+| # | Où          | Ce que la fiche disait                                       | Ce que le guide imprime                                                      |
+| - | ----------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| 1 | U-IV L4 obj | « Tell ways to **clean** for their school »                    | « Tell ways to **care** for their school » _(relu à l'image p.38)_             |
+| 2 | U-V L1 obj  | « Identify children's rights »                                 | « Identify **five** children's rights »                                        |
+| 3 | U-I L4 gram | paradigme possessif complet, seul                              | encadré = **`Linkers : and – but`** + `his – her – their` ; le paradigme est en « Let's complete the rule » |
+| 4 | U-I L1 gram | « `Like + ING` ; `Enjoy + ING` (Because) »                     | trois items, **`Because` en tête**                                             |
+| 5 | U-VII L2/3/4| « **Grammar / Function** »                                     | l'encadré titre **`Function:`** (et lui seul)                                  |
+| 6 | U-III L2 voc| « … / catch / collect »                                        | « … / catch / collect **/ next** » — le guide répète « next »                  |
+| 7 | §3.4        | « **chaque leçon** cible des symboles phonétiques précis »     | **10 leçons sur 35** impriment un symbole IPA ; les 25 autres, non             |
+
+**Sur l'étiquette Grammar/Function**, la mesure exacte : **34 encadrés sur 35** titrent `Grammar:`,
+**trois** (U-VII L2, L3, L4) titrent `Function:`, et **un seul** (U-I L3) porte **les deux**. Le
+guide distingue donc bien les deux champs quand il le veut — d'où la correction, minime mais qui
+évite de prêter au guide une confusion qu'il ne fait pas.
+
+**L'écart n°7 est le seul qui portait à conséquence** : il transformait un fait mesurable (« 10
+leçons sur 35 nomment un son ») en principe général (« chaque leçon cible des symboles précis »),
+c'est-à-dire exactement le geste qui a coûté 52 cellules à la 9ème. L'inventaire exhaustif des 35
+« Let's pronounce » est désormais en §3.4 : il remplace la généralisation par la liste.
+
+**Non tranché, laissé ouvert** : la divergence U-II L3 (encadré objectifs vs « Let's complete the
+rule ») ci-dessus reste une **divergence réelle du guide**, relue et confirmée — contrairement à
+celle que la fiche arabe 6ème s'était inventée au même moment. Elle est signalée, pas arbitrée.
