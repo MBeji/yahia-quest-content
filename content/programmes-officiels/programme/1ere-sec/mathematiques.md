@@ -88,7 +88,7 @@ déjà : ils ont été supprimés.
   d'échange · **collecter, organiser et exploiter l'information** · apprécier l'apport des
   mathématiques aux autres disciplines et à la prise de décision. _(Le manuel imprime « algrithmes »,
   « informantion », « propection » — trois coquilles de la page, à ne pas propager.)_
-- **Organisation des chapitres** (p.6–7 ; la p.8 est blanche) — la définition, par le manuel lui-même, de ses
+- **Organisation des chapitres** (p.6–7 ; **la p.8 est blanche** — regardée, vide, et comptée comme lue) — la définition, par le manuel lui-même, de ses
   rubriques. À retenir pour générer : **Reprendre** consolide les acquis antérieurs et fait
   **identifier les lacunes** ; **Découvrir** vise chercher/expérimenter/modéliser/conjecturer ;
   **Retenir** porte « les résultats qu'il est indispensable de connaître » ; **Mobiliser ses
