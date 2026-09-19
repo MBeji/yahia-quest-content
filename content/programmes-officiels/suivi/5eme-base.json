@@ -52,7 +52,7 @@
             ],
             [
               22,
-              74
+              130
             ],
             [
               221,
@@ -68,7 +68,7 @@
       "r7": null,
       "maj": "2026-09-19",
       "par": "claude/great-wright-e4cqyu",
-      "notes": "Reprise du 2026-09-19 : `pagesLues` passe de `inconnu` aux plages RÉELLES — les 28 p. de l'en-tête historique (3–12, 14–17, 19, 22–34), plus les 43 p. lues à l'image ce jour (35–74 : toute l'unité 1 — الملفّ العلمي, les 7 جذاذات, l'إدماج et le تقييم avec son barème ; 221–223 : le فهرس du guide, qui donne enfin la carte des 189 p. du corps). Soit 71/223 = 32 %. Le seed du 2026-07-17 déclarait `complete` + `pagesLues: integral` : c'était faux sur la couverture (corrigé le 2026-09-19 au matin, statut ramené à `partielle`). Le guide est un PDF à police privée (mojibake latin sous pdftotext) : la lecture se fait à l'image, le décodage ne sert qu'à localiser — aucune citation n'en sort. L'audit de l'unité 1 a relevé 7 écarts INTERNES AU GUIDE (fiche §6), dont un à conséquence directe sur la génération : le guide classe القمر en `جسم مضاء منير` dans son الملفّ العلمي (ص 36) et dans deux encadrés d'استنتاج (ص 47, 48), mais en `مصدر ضوئيّ طبيعيّ` dans deux corrigés (ص 44, 67). La clé de réponse est ص 36/47/48. `profondeur: generation` vaut désormais POUR L'UNITÉ 1 SEULE ; les unités 2, 3 et 4 (ص 75–220) restent non lues, d'où `statut: partielle`."
+      "notes": "Reprise du 2026-09-19 : `pagesLues` passe de `inconnu` aux plages RÉELLES — les 28 p. de l'en-tête historique (3–12, 14–17, 19, 22–34), plus 99 p. lues à l'image ce jour (35–130 : les unités 1 `الضّوء` et 2 `جسم الإنسان` en entier — الملفّ العلمي, les 13 جذاذات, les deux وضعيّات إدماج et les deux وضعيّات تقييم avec leurs barèmes ; 221–223 : le فهرس du guide, qui donne la carte des 189 p. du corps). Soit 127/223 = 57 %. Le seed du 2026-07-17 déclarait `complete` + `pagesLues: integral` : c'était faux sur la couverture (corrigé le 2026-09-19 au matin, statut ramené à `partielle`). Le guide est un PDF à police privée (mojibake latin sous pdftotext) : la lecture se fait à l'image, le décodage ne sert qu'à localiser — aucune citation n'en sort. L'audit a relevé 15 écarts INTERNES AU GUIDE (fiche §6). Le motif est constant : le الملفّ العلمي et les encadrés `الاستنتاج` des جذاذات ne sont pas relus l'un contre l'autre, et c'est l'encadré qui dérape — القمر classé `مصدر طبيعيّ` en ص 44/67 contre `جسم مضاء منير` en ص 36/47/48 ; الالتواء défini comme un déplacement partiel de la tête osseuse en ص 111 contre une atteinte ligamentaire en ص 84 ; les muscles attachés aux os `بواسطة أربطة` en ص 104-105 contre `وتر` en ص 82. Pour la génération, la clé de réponse est le الملفّ العلمي, jamais un corrigé d'activité. `profondeur: generation` vaut POUR LES UNITÉS 1 ET 2 ; les unités 3 et 4 (ص 131-220) restent non lues, d'où `statut: partielle`."
     },
     {
       "matiere": "francais",
