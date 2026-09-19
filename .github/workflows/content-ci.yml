@@ -109,6 +109,22 @@ jobs:
         working-directory: engine
         run: npm run content:check
 
+      # `content/CATALOGUE.md` est GÉNÉRÉ (`content:catalogue`, moteur) et son en-tête
+      # promettait depuis l'origine un contrôle de fraîcheur en CI — qui n'a jamais existé.
+      # Constat de l'audit global du 2026-09-12 (arena `docs/audit-global-2026-09-12.md`) :
+      # figé au 3 septembre à 90 sujets pendant que l'arbre en comptait 94. Un index qu'on
+      # ouvre « pour savoir si une matière existe déjà » et qui ment est pire qu'aucun index.
+      # Le générateur écrit à travers le lien `engine/content` → le diff se lit dans CE dépôt.
+      - name: content:catalogue (CATALOGUE.md est-il à jour ?)
+        working-directory: engine
+        run: |
+          set -euo pipefail
+          npm run content:catalogue
+          if ! git -C "$GITHUB_WORKSPACE/corpus" diff --exit-code --stat -- content/CATALOGUE.md; then
+            echo "::error file=content/CATALOGUE.md::CATALOGUE.md est périmé — régénérer depuis le moteur lié (npm run content:catalogue) et committer le fichier."
+            exit 1
+          fi
+
       - name: content:qa:strict
         working-directory: engine
         run: npm run content:qa:strict

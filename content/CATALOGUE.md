@@ -5,7 +5,7 @@
 > with `chapter.json`; a subject with 0 chapters is a ⚠ stub). Check here whether a subject /
 > grade already exists before creating one, and which slugs are taken.
 
-**90 subjects · 714 chapters · 3361 exercises · 6 themes · 0 stub(s)**
+**94 subjects · 787 chapters · 3658 exercises · 6 themes · 0 stub(s)**
 
 ## anglais
 
@@ -43,25 +43,28 @@
 
 | subject id | name | grade | lang | chapters | exercises | quiz |
 | --- | --- | --- | --- | --: | --: | --: |
-| `math-2eme-sec-sciences-info` | Mathématiques | — | fr | 3 | 9 | 3 |
+| `math-2eme-sec-sciences-info` | Mathématiques | — | fr | 12 | 36 | 12 |
+| `french-2eme-sec` | Français | — | fr | 7 | 21 | 7 |
 | `french-bac` | Français | — | fr | 7 | 21 | 7 |
-| `english-3eme-sec` | English | — | en | 8 | 24 | 8 |
-| `english-bac` | English | — | en | 9 | 27 | 9 |
+| `english-2eme-sec` | English | — | en | 11 | 22 | 11 |
+| `english-3eme-sec` | English | — | en | 9 | 27 | 9 |
+| `english-bac` | English | — | en | 15 | 45 | 15 |
+| `philosophie-bac` | الفلسفة | — | ar | 3 | 8 | 3 |
 | `arabic-1ere` | اللغة العربية | 1ere-base | ar | 8 | 40 | 8 |
 | `math-1ere` | الرياضيات | 1ere-base | ar | 9 | 36 | 9 |
 | `eveil-scientifique-1ere` | الإيقاظ العلمي | 1ere-base | ar | 9 | 45 | 9 |
 | `education-islamique-1ere` | التربية الإسلامية | 1ere-base | ar | 8 | 40 | 8 |
 | `math-1ere-sec` | Mathématiques | 1ere-sec | fr | 16 | 32 | 16 |
-| `physique-1ere-sec` | Sciences Physiques | 1ere-sec | fr | 17 | 34 | 17 |
-| `chimie-1ere-sec` | Chimie | 1ere-sec | fr | 7 | 14 | 7 |
+| `physique-1ere-sec` | Sciences Physiques | 1ere-sec | fr | 17 | 52 | 17 |
+| `chimie-1ere-sec` | Chimie | 1ere-sec | fr | 11 | 22 | 11 |
 | `svt-1ere-sec` | Sciences de la Vie et de la Terre | 1ere-sec | fr | 8 | 16 | 8 |
 | `french-1ere-sec` | Français | 1ere-sec | fr | 7 | 28 | 7 |
-| `english-1ere-sec` | English | 1ere-sec | en | 6 | 18 | 6 |
+| `english-1ere-sec` | English | 1ere-sec | en | 9 | 27 | 9 |
 | `arabic-2eme` | اللغة العربية | 2eme-base | ar | 8 | 40 | 8 |
 | `math-2eme` | الرياضيات | 2eme-base | ar | 9 | 39 | 9 |
 | `eveil-scientifique-2eme` | الإيقاظ العلمي | 2eme-base | ar | 10 | 50 | 10 |
 | `education-islamique-2eme` | التربية الإسلامية | 2eme-base | ar | 8 | 40 | 8 |
-| `arabic-2eme-sec-lettres` | اللغة العربيّة | 2eme-sec-lettres | ar | 3 | 9 | 3 |
+| `arabic-2eme-sec-lettres` | اللغة العربيّة | 2eme-sec-lettres | ar | 5 | 15 | 5 |
 | `math-3eme` | الرياضيات | 3eme-base | ar | 8 | 40 | 8 |
 | `eveil-scientifique-3eme` | الإيقاظ العلمي | 3eme-base | ar | 8 | 40 | 8 |
 | `arabic-3eme` | اللغة العربية | 3eme-base | ar | 8 | 40 | 8 |
@@ -92,13 +95,14 @@
 | `sciences-physiques-8eme` | العلوم الفيزيائية | 8eme-base | ar | 6 | 36 | 6 |
 | `english-8eme` | English | 8eme-base | en | 5 | 30 | 5 |
 | `sciences-vie-terre-8eme` | علوم الحياة والأرض | 8eme-base | ar | 8 | 48 | 8 |
-| `math` | الرياضيات | 9eme-base | ar | 14 | 81 | 14 |
+| `math` | الرياضيات | 9eme-base | ar | 20 | 126 | 20 |
 | `french` | Français | 9eme-base | fr | 10 | 40 | 10 |
 | `arabic` | العربية | 9eme-base | ar | 11 | 54 | 11 |
 | `svt` | العلوم الفيزيائية | 9eme-base | ar | 9 | 43 | 9 |
 | `english` | English | 9eme-base | en | 10 | 40 | 10 |
-| `sciences-vie-terre` | علوم الحياة والأرض | 9eme-base | ar | 7 | 39 | 7 |
+| `sciences-vie-terre` | علوم الحياة والأرض | 9eme-base | ar | 21 | 123 | 21 |
 | `math-bac-math` | Mathématiques | bac-math | fr | 19 | 133 | 19 |
+| `technologie-bac-techniques` | Technologie | bac-techniques | fr | 7 | 28 | 7 |
 
 ## education-islamique
 
