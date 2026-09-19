@@ -91,7 +91,7 @@ dans cet ordre, cité mot pour mot (p.3) :
 | **أختبر مكتسباتي** | « مجموعة من التّمارين لاختبار ودعم القدرة على استرجاع المعارف الخاصّة بالمفاهيم (التّذكّر والفهم) والقدرة على توظيف هذه المعارف (التّطبيق، التّحليل، التّأويل، التّأليف) » |
 
 Et en **fin de محور** : **أقيّم مكتسباتي** (« وضعيّة تقييم معقّدة تتطلّب توظيف مجموعة من المعارف
-والمهارات كانت محلّ تعلّمات منفصلة ») et **أضيف إلى مكتسباتي** (données complémentaires).
+والمهارات كانت محلّ تعلّمات منفصلة **(في دروس مختلفة)** ») et **أضيف إلى مكتسباتي** (données complémentaires).
 
 📌 **C'est le patron de notion de é35, écrit par le CNP.** أفكّر = T1 (la situation ET la question),
 أنشّط وأفهم = T3 puis T4, أحوصل = T2/T6 **après** les activités et non avant, أختبر مكتسباتي = T7.
@@ -108,8 +108,12 @@ patron n'importe donc aucune méthode étrangère : cela applique celle du manue
   « **كيف تحدثُ وظيفة الاتّصال ؟ كيف نُحافظ على عملها السّليم بالحُلول الوقائيّة ؟** »
 - **درس 1.2** (p.19) : deux réflexes du nourrisson — la succion du sein, les pas automatiques quand
   on le tient debout → « **كيف يَحدثُ الفعل الانعكاسي ؟** »
-- **محور 2** (p.54) : deux assiettes avec leur composition chiffrée → « **كيف يُمكن تغطية الحاجات
-  الغذائيّة الضّروريّة للجسم ؟** »
+- **محور 2** (p.54) : deux assiettes avec leur composition chiffrée → **TROIS** questions en gras,
+  contiguës, et non une seule : « **كيف يُمكن تغطية الحاجات الغذائيّة الضّروريّة للجسم ؟** » ·
+  « **كيف نُفسّر ظاهرة الهضم وضرورة التّنفّس وعمليّة الإخراج الكلوي ووظيفة الدّوران ؟** » ·
+  « **كيف نُحافظ على صحّة كلّ جهاز من الأجهزة التي تؤمّن وظائف التّغذية ضمانا لاستدامة هذه الوظائف
+  الحياتيّة ؟** ». Les deux dernières nomment les دروس 2.2, 2.4, 2.5 et 2.6 et l'axe « préserver la
+  santé de chaque appareil » — ne pas ouvrir le محور 2 sur la première seule.
 - **درس 2.1** (p.56) : le couscous face au fast-food, puis le kwashiorkor et le rachitisme →
   « **كيف يُمكننا تأمين الحاجات الغذائيّة لعمل الجسم وصيانته ونموّه دون إفراط ولا تفريط ؟** »
 
@@ -130,6 +134,47 @@ aujourd'hui **qu'un seul** — voir §6, point 2.
 - `content/sciences-vie-terre/subject.json` → `manuels: [{ code: "105905P00" }]`, cohérent.
 
 ## 6. Incertitudes / à revérifier
+### Audit R-7 du 2026-09-19 — verdict : solide, trois écarts corrigés
+
+Fiche `complete`/`generation` sans aucun verdict R-7 : elle autorisait la génération de tout le
+chapitrage sans que personne n'ait recoupé sa transcription. Sondage sur **14 pages lues à
+l'image** (3, 6, 8, 19, 22, 23, 54, 56, 155, 158, 166, 171, 200, 208).
+
+**Canal.** Ce PDF n'est pas un scan (1 062 085 caractères de texte vectoriel sur 208 pages) mais
+son arabe est dans un **encodage de police privé**, glyphes contextuels posés sur des codepoints
+latin-1 **en ordre visuel inversé** : `الجمهورية التونسية` en sort comme `á«q °ùfƒàq dG ájq Qƒ¡ª÷G`.
+mac_arabic, cp1256, iso8859_6 et mac_farsi testés : aucun ne décode. Reconstruire ce mapping par
+inférence aurait été la fabrique à fausses alertes — pas fait. La couche texte n'a servi qu'à
+**localiser** (le mapping est stable) et à lire les **chiffres latins**, qui sortent justes :
+contrôle fait de la p.3 à la p.208, **chaque folio imprimé égale son index de page PDF**.
+
+**Ce qui tenait, et c'est l'essentiel.** Le tableau du §2 : **23 lignes, 46 valeurs, aucune
+fausse** — la colonne فهرس recoupée sur l'image de p.208, la colonne « réelle » vérifiée
+indépendamment, et le décalage −2 confirmé constant. « 14 دروس répartis 3/6/5 » ✅, « aucun محور de
+géologie » ✅. Les citations du §3 exactes au mot sur cinq pages. Le détail de la grenouille
+spinale (وثيقة 31 p.22 = tableau à deux colonnes vides, وثيقة 32 p.23 = القوس الانعكاسي à
+**exactement cinq** éléments) : juste. Le §6.5 exact à la virgule sur les durées du cycle. Et
+p.200-202, là où la dérive s'accumule d'habitude : rien, y compris les **sept** étapes numérotées
+de طفل الأنابيب.
+
+**Une fausse alerte écartée.** Le §2 écrit `الحاجيّات الغذائيّة` et le §3 `الحاجات الغذائيّة` ; un
+diff aurait crié. Relecture : **p.208 imprime bien الحاجيّات et p.55-56 bien الحاجات**. Le manuel
+est incohérent avec lui-même, la fiche est fidèle à chacune de ses deux sources. Rien à signaler.
+De même, `الإتصار` au فهرس p.208 est une **coquille du manuel** (le mot n'existe pas, la p.27
+traite bien de la vision, et p.7 imprime `الإبصار`) : la transcription avait raison.
+
+**Les trois écarts corrigés.** (1) L'ancre du محور 2 ne retenait qu'**une** des trois questions
+d'ouverture de p.54 — les deux supprimées nomment les دروس 2.2, 2.4, 2.5 et 2.6, soit le plus gros
+محور du programme, et l'axe « préserver la santé de chaque appareil » que la التوطئة p.3 désigne
+comme l'un des deux axes du livre. (2) La citation du أقيّم مكتسباتي (p.3) tombait avant la
+parenthèse du CNP **(في دروس مختلفة)** — précisément ce qui dit que cette évaluation est
+TRANSVERSALE au محور. (3) La durée de vie de l'ovule est bien de 24 h, mais **p.155 en أنشط وأفهم**,
+pas p.158 en أحوصل : le fait était juste, sa traçabilité fausse, dans le point même où la fiche
+promet que ses écarts « ne sont pas des erreurs de lecture ».
+
+**Hors périmètre, signalé** : le §6.2 énumère « les cinq autres » chapitres hors-programme alors
+que le dossier en porte six (`07-annales-subur` non listé).
+
 
 1. **La pagination du فهرس est décalée de 2 pages, et c'est mesuré, pas supposé.** Le فهرس (p.208,
    identique aux فهارس de محور p.7 et p.55) annonce le محور 1 p.8, le درس 1.1 p.10, le درس 1.2 p.21,
@@ -182,7 +227,8 @@ aujourd'hui **qu'un seul** — voir §6, point 2.
 5. ⚠️ **Deux écarts numériques INTERNES au manuel, relevés et traités à découvert.** Ils ne sont pas
    des erreurs de lecture :
 
-   - **durée de vie de l'ovule** : 24 heures dans l'أحوصل du درس 3.1 (p.158), « deux jours » dans
+   - **durée de vie de l'ovule** : 24 heures **p.155, sous l'onglet أنشط وأفهم** du درس 3.1 (« تبقى
+     حيّة إثر الإباضة 24 ساعة تقريبا ») — et NON p.158 dans l'أحوصل, qui n'en dit rien ; « deux jours » dans
      l'exercice p.171. Le chapitre 12 donne les deux et retient « un à deux jours » ;
    - **longueur du cycle** : phase folliculaire 11-17 j + lutéale 14 j donne 25 à 31 j, quand le
      même أحوصل (p.166) annonce un cycle de 24 à 32 j. Le `::: verifie` du chapitre 11 fait faire
