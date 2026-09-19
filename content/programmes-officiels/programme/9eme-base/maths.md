@@ -22,7 +22,7 @@
 > ⚠️ **Application de la règle de combinaison.** Le README pose : « une seule source disponible ⇒
 > elle fait référence ». C'est le cas ici, et le manuel élève est explicitement recevable comme
 > source de **scope** : il déclare lui-même (p.3) être « **مطابق للبرنامج الرسمي للسنة التاسعة**
-> التي تم تفريعها إلى عناوين دروس » — conforme au programme officiel de la 9ème, dont les محاور
+> **يتضمن كل محاور البرنامج** التي تم تفريعها إلى عناوين دروس » — conforme au programme officiel de la 9ème, dont les محاور
 > ont été déclinés en titres de leçons. Le chapitrage du فهرس (p.4) vaut donc plan annuel
 > officiel. Aucune divergence guide↔manuel n'est signalable : il n'y a pas de guide.
 > Précédent identique au corpus : `1ere-sec/mathematiques.md`, `1ere-sec/chimie.md` et
@@ -41,8 +41,8 @@ formel (celui-ci vivrait dans le guide enseignant, absent) ; ce texte liminaire 
 - **Démarche d'écriture** : une méthodologie qui permet à l'élève de **participer à l'extraction de
   l'information et à la production du savoir**, dans un cadre pédagogique fondé sur « التفكير
   الرياضي السليم » (le raisonnement mathématique correct).
-- **Conformité au programme** : « إن هذا المؤلف مطابق للبرنامج الرسمي للسنة التاسعة التي تم تفريعها
-  إلى عناوين دروس » — l'ouvrage est conforme au programme officiel de la 9ème année, dont chaque
+- **Conformité au programme** : « إن هذا المؤلف مطابق للبرنامج الرسمي للسنة التاسعة **يتضمن كل محاور البرنامج** التي تم
+  تفريعها إلى عناوين دروس » — l'ouvrage est conforme au programme officiel de la 9ème année, dont chaque
   محور a été décliné en titres de leçons. Il est calibré sur le niveau des élèves et sur
   « التوقيت المخصص لتدريس المادة » (l'horaire officiel de la matière), avec des démarches
   pédagogiques laissant à l'enseignant « حرية المبادرة » (liberté d'initiative) et la possibilité
@@ -9970,6 +9970,34 @@ révision transverse.
   transcription de programme officiel. Ils n'ont pas été ouverts.
 
 ## 6. Incertitudes / à revérifier
+### Audit R-7 du 2026-09-19 — verdict : quasi exacte, une citation restituée
+
+Fiche `complete`/`generation` sans verdict R-7. Sondage dirigé sur le فهرس p.4, les pages
+d'ouverture de chapitre, et la p.3 (تقديم).
+
+**Canal — le document est COUPÉ EN DEUX, et c'est plus traître qu'un mojibake.** `pdffonts` :
+toutes les polices arabes (TraditionalArabic, ae_AlMothnna, ArabicTransparent…) sont en
+`Identity-H` **sans table ToUnicode** (`uni` = no). Sur ces pages `pdftotext` échoue franchement
+(« Unknown character collection 'PDFXC30-Identity' ») et ne rend que la ponctuation et le folio —
+ce qui a l'avantage de ne pas produire de faux texte. Lecture à l'image, avec recadrages jusqu'à
+800 dpi.
+
+**Ce qui tenait, et il faut le dire net : cette fiche n'a rien à voir avec les fiches d'anglais.**
+Le chapitrage est exact intégralement — 13 chapitres, slugs, titres et pages d'ouverture
+(5/18/31/49/61/78/93/111/130/147/170/189/201) conformes au فهرس p.4 ; les 4 مجالات et leur
+répartition justes, statistiques à un seul chapitre compris. Elle tranche correctement le litige
+de titre du chapitre 5 (`المقاربة` au فهرس, `المقارنة` p.61 — le point sous la lettre vérifié à
+400 dpi) et en tire la bonne conclusion : il n'existe pas de chapitre d'approximation en 9ème.
+Elle signale une **quatrième section fantôme** p.69, non annoncée p.61, avec son numéro romain
+fautif — trouvée et rapportée telle quelle plutôt que corrigée en silence. Les sections annoncées
+p.5, p.61, p.189 et p.201 sont mot pour mot.
+
+**L'écart corrigé, et c'est le plus porteur de la fiche.** La citation de la p.3, donnée deux fois
+entre guillemets comme un verbatim, soudait `التاسعة` à `التي تم تفريعها` et escamotait — sans
+ellipse ni crochets — les quatre mots qui les séparent : **`يتضمن كل محاور البرنامج`**, « il
+contient **tous** les axes du programme ». C'est exactement la clause d'EXHAUSTIVITÉ, et c'est
+elle qui autorise le raisonnement que la fiche construit juste après. Restituée aux deux endroits.
+
 
 ### 6.1 Sur la transcription
 
