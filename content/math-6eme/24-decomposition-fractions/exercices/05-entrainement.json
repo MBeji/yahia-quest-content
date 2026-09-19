@@ -1,0 +1,184 @@
+{
+  "title": "📝 تدريب ⭐⭐⭐: مراجعة شاملة للتفكيك والتركيب",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "عند تفكيك 7/10 إلى 4/10 + 3/10، ماذا يحدث للمقام؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "يبقى 10 في كلّ حدّ"
+        },
+        {
+          "id": "b",
+          "text": "ينقسم بين الحدّين فيصير 5 ثمّ 5",
+          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+        },
+        {
+          "id": "c",
+          "text": "يُجمع فيصير 20",
+          "misconceptionTag": "math.frac.add-denominators"
+        },
+        {
+          "id": "d",
+          "text": "يصير 7"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "في التفكيك يتوزّع البسط وحده؛ المقام يدلّ على عدد الأجزاء المتقايسة في الوحدة، فيبقى كما هو.",
+      "difficulty": 3,
+      "competencies": [
+        "math.frac.decomposition"
+      ]
+    },
+    {
+      "prompt": "في الكتابة 45/50 + …/50 + …/50 = 50/50، ما مجموعُ الحدّين الناقصين؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "5/50"
+        },
+        {
+          "id": "b",
+          "text": "5/100",
+          "misconceptionTag": "math.frac.add-denominators"
+        },
+        {
+          "id": "c",
+          "text": "95/50",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "5/50 بطريقةٍ واحدةٍ فقط"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "مجموع البُسُط يجب أن يبلغ 50، وعندنا 45 منها، فيبقى 5 موزّعةً على حدّين بأكثر من طريقة.",
+      "difficulty": 3,
+      "competencies": [
+        "math.frac.decomposition"
+      ]
+    },
+    {
+      "prompt": "أكمل: 4/5 + … = 9/5",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "5/5 ولكنّها لا تساوي 1",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        },
+        {
+          "id": "c",
+          "text": "13/5",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "5/10",
+          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الفرق هو 9/5 ناقص 4/5 أي 5/5، و 5/5 يساوي 1 لأنّ بسطه يساوي مقامه.",
+      "difficulty": 3,
+      "competencies": [
+        "math.frac.decomposition"
+      ]
+    },
+    {
+      "prompt": "أكمل: …/10 = 4/10 + 6/10 + 3/10",
+      "options": [
+        {
+          "id": "a",
+          "text": "13/10"
+        },
+        {
+          "id": "b",
+          "text": "13/30",
+          "misconceptionTag": "math.frac.add-denominators"
+        },
+        {
+          "id": "c",
+          "text": "13/10 وهو أصغر من الوحدة",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        },
+        {
+          "id": "d",
+          "text": "10/10"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "مجموع البُسُط 4 + 6 + 3 = 13 والمقام يبقى 10؛ والنتيجة 13/10 أكبر من الوحدة.",
+      "difficulty": 3,
+      "competencies": [
+        "math.frac.decomposition"
+      ]
+    },
+    {
+      "prompt": "هل يمكن تفكيك العدد 7/10 بأكثر من طريقة؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "نعم، وكلُّها صحيحة ما دام مجموعُ البُسُط 7 والمقامُ 10"
+        },
+        {
+          "id": "b",
+          "text": "لا، لكلّ عددٍ كسريٍّ تفكيكٌ واحدٌ فقط"
+        },
+        {
+          "id": "c",
+          "text": "نعم، بشرط أن يتغيّر المقام في كلّ مرّة",
+          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+        },
+        {
+          "id": "d",
+          "text": "لا، إلّا إذا كان البسط أكبر من المقام"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "يكفي أن يبلغ مجموعُ البُسُط بسطَ العدد وأن يبقى المقام على حاله: 4/10 + 3/10 و 2/10 + 2/10 + 3/10 تفكيكان صحيحان للعدد نفسِه.",
+      "difficulty": 3,
+      "competencies": [
+        "math.frac.decomposition"
+      ]
+    },
+    {
+      "prompt": "قاعة المنارة: 20/20 = 5/20 + 4/20 + …/20. ما الحدّ الناقص؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "11/20"
+        },
+        {
+          "id": "b",
+          "text": "11/60",
+          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+        },
+        {
+          "id": "c",
+          "text": "29/20",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "9/20"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الحدّان المعلومان يعطيان 9/20، فالباقي هو 20/20 ناقص 9/20 أي 11/20.",
+      "difficulty": 3,
+      "competencies": [
+        "math.frac.decomposition"
+      ]
+    }
+  ]
+}
