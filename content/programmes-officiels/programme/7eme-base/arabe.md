@@ -132,9 +132,53 @@ fait et pourquoi — c'est la clé de voûte de cette fiche :
   → **مدخل** (des activités) → **خلاصة** (les règles dégagées) → **تمارين** (fixation).
 
 🔴 **L'écart à retenir : le guide annonce 39 دروس (23 + 16), le manuel révisé en annonce 27
-(15 + 12).** Les deux documents ne décrivent pas le même découpage, et **c'est le manuel qui se
-réclame des programmes officiels**. Avant de traiter les 39 leçons du guide comme la référence,
-il faut trancher lequel porte le programme en vigueur — cette fiche ne le sait pas encore.
+(15 + 12).** Les deux documents ne décrivent pas le même découpage.
+
+### 🔴 Lequel porte le programme en vigueur ? — tranché le 2026-09-19, par les documents
+
+La question a été posée puis **résolue dans la même passe**, en lisant les deux pages de titre et
+la المقدّمة. Voici la chaîne de faits, chacun vérifié à l'image :
+
+1. La المقدّمة du manuel (ص 3) date l'ouvrage d'origine : **« الصّادر في تسعينيّات القرن الماضي »**
+   — **les années 1990**, par نجاة صولة · عبد العزيز بن يوسف · شكري المبخوت · هشام الرّيفي, sous la
+   direction de عبد القادر المهيري.
+2. Elle nomme **la cause exacte de la révision** : **« اقتضاها تجديد برامج اللغة العربيّة بالمرحلة
+   الإعداديّة من التّعليم الأساسيّ الصّادرة في سبتمبر سنة ستّ وألفين »** — le renouvellement des
+   programmes d'arabe du collège **publié en septembre 2006**…
+3. …et ce que ces programmes ont fait : **« التي أعيد فيها توزيع المسائل اللغويّة على المستويات
+   الثّلاثة : السّابعة والثّامنة والتّاسعة »** — ils ont **redistribué les questions de langue entre
+   la 7ᵉ, la 8ᵉ et la 9ᵉ**. D'où **« إعادة ترتيب الدروس في الكتاب المدرسيّ وفق ما جاء بالبرامج
+   الرسميّة »**.
+4. La page de titre du **manuel** (`101710`, PDF 1) porte, sous les quatre auteurs, une **équipe de
+   تنقيح distincte** : قصي المليّح · عبد الله الصّالحي (متفقّدان أوّلان) · عمارة الأخضر · توفيق
+   القاسمي (متفقّدان).
+5. La page de titre du **guide** (`501701`, PDF 1) porte **« كتاب الأستاذ »**, **les mêmes quatre
+   auteurs**, **le même superviseur**, et **AUCUNE équipe de تنقيح**.
+
+**Conclusion** : le guide `501701` est le **كتاب الأستاذ de l'édition NON RÉVISÉE**, celle des
+années 1990 ; le manuel `101710` est la **طبعة منقّحة qui applique les programmes de septembre
+2006**. Les 39 leçons du guide décrivent donc le découpage **antérieur à 2006** ; les 27 du manuel
+décrivent le découpage **en vigueur**.
+
+> Les métadonnées PDF vont dans le même sens sans rien prouver à elles seules (guide : scan
+> Photoshop daté 2009 ; manuel : Distiller 2015) — **une date de fichier n'est pas une date de
+> programme**. Ce qui tranche, ce sont les pages de titre et la المقدّمة.
+
+🔴 **Portée de ce constat, bien au-delà de cette fiche.** La refonte de 2006 a **redistribué les
+contenus entre 7ᵉ, 8ᵉ et 9ᵉ**. Donc :
+
+- **Cette fiche est bâtie sur le document périmé** : son §2 « deux أبواب, 39 دروس » décrit le plan
+  d'avant 2006. Il n'est pas *faux* — c'est fidèlement ce que le guide imprime — mais **il ne
+  décrit pas le programme que l'élève suit**.
+- **Certaines des 39 leçons du guide appartiennent désormais à la 8ᵉ ou à la 9ᵉ.** C'est
+  l'explication la plus probable des deux chapitres servis sans leçon homonyme au فهرس révisé
+  (`11-al-jumla-al-murakkaba`, `17-ar-rubai-wal-mazid`) : non pas des notions supprimées, mais des
+  notions **déplacées vers une autre année**. À vérifier dans les manuels de 8ᵉ et 9ᵉ, pas à
+  supposer.
+- **Le même soupçon pèse sur arabe 8ᵉ et arabe 9ᵉ**, dont les fiches s'appuient elles aussi sur un
+  `الدليل المرجعي` (501802, 501902). Le corpus porte les manuels élèves correspondants
+  (`101806`, `101808` ×3 pour la 8ᵉ) — **jamais ouverts**. C'est la première chose à faire sur ces
+  deux couples.
 
 ### Le فهرس du manuel (ص 4) — les 27 leçons, leurs محاور et leurs pages
 
