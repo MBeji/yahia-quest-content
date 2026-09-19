@@ -461,6 +461,8 @@ L'encadré `6-3` de la جذاذة 4 pose :
 
 Or le الملفّ العلمي (ص 84) définit الالتواء tout autrement, et correctement : les mouvements brusques **étirent les ligaments articulaires et les déchirent parfois**, sans déplacement de la tête osseuse. Un déplacement **partiel** de la tête osseuse n'est pas une entorse, c'est une **subluxation** (خلع جزئي). La clé de réponse est **ص 84** ; l'encadré ص 111 ne doit pas servir de source.
 
+➕ **Le التخطيط السّنوي tranche dans le même sens, et plus nettement encore** (§2, unité 2) : il classe les accidents **par tissu atteint**, et attribue l'**الالتواء aux الأربطة** — « العظام → الكسر (بأنواعه) والتشرّخ ؛ العضلات → التمدّد والانفصام ؛ المفاصل → **الخلع** ؛ **الأربطة → الالتواء** ». Ce n'est donc pas le seul الملفّ العلمي qui contredit ص 111 : c'est le **programme lui-même**.
+
 #### 🟠 9. ص 104–105 — le guide attache les muscles aux os par des « ligaments »
 
 Deux fois, dont une **dans un encadré** : « تتصل العضلات بالعظام **بواسطة أربطة** » (ص 104) et « تتقلّص العضلة فتقصر وتجبر العظام المتّصلة بها **بواسطة الأربطة** » (ص 105, encadré `6-2`). C'est le **وتر** (tendon) qui relie muscle et os — le guide l'écrit d'ailleurs lui-même ص 82 (« رأسا العضلة … وتريها ») et réserve correctement الأربطة aux liaisons **os ↔ os** ص 80, ص 84, et même ص 106 dans la **même** جذاذة (« الأربطة الليفيّة … تربط بين العظام »). Le couple **وتر (عضلة↔عظم) / رباط (عظم↔عظم)** est un distracteur classique : ne pas le construire sur ص 104–105.
@@ -471,7 +473,7 @@ Deux fois, dont une **dans un encadré** : « تتصل العضلات بالعظ
 - **ص 99** (encadré `6-2` de la جذاذة 2) : **deux** — مغزليّة، مسطّحة.
 - **ص 124** (encadré `أتذكّر` de l'إدماج) : **trois** — المغزليّة، المسطّحة، الدّائريّة.
 
-Et l'exercice à trous de ص 108 demande de compléter « **العضلات ثلاثة أنواع هي …** », ce qui ne correspond qu'à ص 124. **Aucune question ne doit porter sur le nombre** ; les formes elles-mêmes sont sûres.
+Et l'exercice à trous de ص 108 demande de compléter « **العضلات ثلاثة أنواع هي …** », ce qui ne correspond qu'à ص 124. ➕ **Corrigé le 2026-09-19 en relisant le التخطيط السّنوي** : le programme **tranche**. Son هدف مميّز dit « تعرّف بعض العضلات ووظائفها : **العضلة الدّائريّة · العضلة المغزليّة · العضلة المسطّحة** » — **trois**, nommées. C'est donc ص 124 qui suit le programme, ص 99 qui en omet une, et ص 81 qui ajoute la شريطيّة, hors programme. Une question sur les **trois formes** est légitime ; une question sur « combien y a-t-il de formes de muscles » ne l'est que si elle attend **trois**.
 
 #### 🟠 11. ص 94 vs ص 76 — de quoi est fait le tronc ?
 
