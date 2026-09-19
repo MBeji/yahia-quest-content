@@ -13,7 +13,7 @@ tout lu ?
 
 ::: definition
 Tout texte appartient principalement à l'un de quatre **types**, défini par son **but** :
-**narratif** (raconter), **descriptif** (décrire), **explicatif** (faire comprendre),
+**narratif** (raconter), **descriptif** (décrire), **informatif** (faire connaître),
 **argumentatif** (convaincre). Chacun se reconnaît à des **indices** matériels.
 :::
 
@@ -21,18 +21,18 @@ Tout texte appartient principalement à l'un de quatre **types**, défini par so
 | ---------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | **Narratif**     | Raconter des événements                  | Verbes d'action, temps du récit (passé simple, imparfait), personnages, lieu, chronologie                                             |
 | **Descriptif**   | Décrire un lieu, un personnage, un objet | Adjectifs qualificatifs, verbes d'état (_être_, _paraître_, _sembler_), imparfait, comparaisons                                       |
-| **Explicatif**   | Expliquer un phénomène, informer         | Présent de vérité générale, connecteurs logiques (_parce que_, _en effet_, _ainsi_), vocabulaire spécialisé, organisation cause/effet |
+| **Informatif**   | Informer, faire connaître un phénomène   | Présent de vérité générale, connecteurs logiques (_parce que_, _en effet_, _ainsi_), vocabulaire spécialisé, organisation cause/effet |
 | **Argumentatif** | Convaincre, défendre une thèse           | Thèse, arguments, exemples, connecteurs logiques (_cependant_, _donc_, _or_), verbes d'opinion (_je pense que_, _il est vrai que_)    |
 
 ::: exemple identifier le type par deux indices convergents
 
 1. **Regarde les temps verbaux** : passé simple et imparfait ← récit ; présent de vérité
-   générale ← explication ou argumentation.
+   générale ← information ou argumentation.
 2. **Regarde les connecteurs** : _puis_, _le lendemain_ ← chronologie ← narratif ; _en effet_,
-   _par conséquent_ ← logique ← explicatif ou argumentatif.
+   _par conséquent_ ← logique ← informatif ou argumentatif.
 3. **Départage les deux derniers** : y a-t-il une **thèse** qu'on pourrait contester ? Oui ←
-   **argumentatif** ; non, le texte expose un fait admis ← **explicatif**, **parce que**
-   expliquer ne suppose pas d'adversaire.
+   **argumentatif** ; non, le texte expose un fait admis ← **informatif**, **parce que**
+   renseigner ne suppose pas d'adversaire.
 
 :::
 
@@ -41,8 +41,8 @@ Tout texte appartient principalement à l'un de quatre **types**, défini par so
 
 ::: piege l'erreur classique
 
-Conclure « explicatif » dès qu'on voit _parce que_. Le mot existe dans les quatre types ; c'est
-la présence d'une **thèse discutable** qui sépare l'argumentatif de l'explicatif — et une
+Conclure « informatif » dès qu'on voit _parce que_. Le mot existe dans les quatre types ; c'est
+la présence d'une **thèse discutable** qui sépare l'argumentatif de l'informatif — et une
 chronologie qui sépare le narratif des deux.
 
 :::
@@ -53,14 +53,14 @@ magmatique. »_ ?
 
 ---
 
-**Explicatif** : présent de vérité générale, connecteur de cause, vocabulaire spécialisé — et
-surtout **aucune thèse discutable**. Le texte fait comprendre un mécanisme, il ne défend pas une
+**Informatif** : présent de vérité générale, connecteur de cause, vocabulaire spécialisé — et
+surtout **aucune thèse discutable**. Le texte fait connaître un mécanisme, il ne défend pas une
 position.
 :::
 
 ::: retenir
 Le type d'un texte se lit sur son but et se prouve par deux indices convergents — et c'est la
-thèse discutable qui sépare l'argumentatif de l'explicatif.
+thèse discutable qui sépare l'argumentatif de l'informatif.
 :::
 
 ## ⚡ Le schéma narratif
@@ -426,7 +426,7 @@ Consigne : _« Rédigez un récit où un personnage surmonte une peur. »_
 
 ::: methode
 
-1. **Lire** → identifier le type dominant (narratif, descriptif, explicatif, argumentatif).
+1. **Lire** → identifier le type dominant (narratif, descriptif, informatif, argumentatif).
 2. **Analyser** → repérer les indices : temps verbaux, connecteurs, figures.
 3. **Planifier** avant d'écrire → schéma narratif ou plan argumentatif au brouillon.
 4. **Rédiger** → employer les bons temps, des connecteurs variés, des figures choisies.
@@ -438,7 +438,7 @@ Consigne : _« Rédigez un récit où un personnage surmonte une peur. »_
 | ---------------- | -------------------------------------------------------------------- |
 | **Narratif**     | verbes d'action, passé simple, personnages, chronologie              |
 | **Descriptif**   | adjectifs, imparfait, appel aux sens, verbes d'état                  |
-| **Explicatif**   | présent de vérité générale, cause/conséquence, vocabulaire technique |
+| **Informatif**   | présent de vérité générale, cause/conséquence, vocabulaire technique |
 | **Argumentatif** | thèse, arguments, exemples, connecteurs logiques, verbes d'opinion   |
 
 ::: piege l'erreur classique

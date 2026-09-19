@@ -1,9 +1,9 @@
 # 📜 Résumé : Les types de textes et la production écrite
 
-- **4 types de textes** : narratif (raconter), descriptif (décrire), explicatif (expliquer), argumentatif (convaincre).
+- **4 types de textes** : narratif (raconter), descriptif (décrire), informatif (informer), argumentatif (convaincre).
 - **Indices narratifs** : verbes d'action, passé simple, personnages, chronologie.
 - **Indices descriptifs** : adjectifs, imparfait, verbes d'état, comparaisons, cinq sens.
-- **Indices explicatifs** : présent de vérité générale, connecteurs cause/conséquence, vocabulaire spécialisé.
+- **Indices informatifs** : présent de vérité générale, connecteurs cause/conséquence, vocabulaire spécialisé.
 - **Indices argumentatifs** : thèse, arguments, exemples, connecteurs logiques, verbes d'opinion.
 - **Schéma narratif** (5 étapes) : situation initiale → élément perturbateur → péripéties → dénouement → situation finale.
 - **Connecteurs temporels** : _avant que_ (antériorité), _pendant que_ (simultanéité), _ensuite/enfin_ (postériorité).
