@@ -24,10 +24,13 @@ vérifié sur les chapitres 9 et 15, où le texte cité du « Retenir » se trou
 sur une page **Math-Culture** (celle qui clôt le chapitre précédent), le « Découvrir » sur la page
 **Reprendre**, le « Retenir » sur une page **Découvrir**. **104 citations sur 112** ont été
 corrigées. Seuls les chapitres **1, 7 et 8** étaient justes au niveau Reprendre/Découvrir.
-Deux chapitres (**2** et **3**, **4**) n'avaient pas de bullet « Reprendre » du tout : leur contenu
-était rangé **à la fin du chapitre précédent** sous l'étiquette « transition vers le chapitre N+1 ».
-Ces bullets ont été **déplacés** dans leur chapitre ; le « Reprendre » du **chapitre 2** manquait
-entièrement et a été transcrit au source (p.23).
+**Trois chapitres n'avaient aucun bullet « Reprendre ».** Pour les chapitres **3** et **4**, le
+contenu existait mais était rangé **à la fin du chapitre précédent**, sous l'étiquette
+« transition vers le chapitre N+1 » — ces deux bullets ont été **déplacés** dans leur chapitre et
+renumérotés (p.37 et p.51). Pour le **chapitre 2**, il manquait **entièrement** : il a été
+transcrit au source (p.23). Deux autres bullets portant la même étiquette « transition »
+(vers les chapitres 5 et 6) faisaient **doublon** avec le « Reprendre » que ces chapitres avaient
+déjà : ils ont été supprimés.
 
 **La carte, telle qu'elle est imprimée** (relevée en lisant la première ligne de chacune des
 272 pages) :
