@@ -8,17 +8,13 @@
       "sources": [
         {
           "code": "102905",
-          "tomes": [
-            "P00"
-          ],
+          "tomes": ["P00"],
           "role": "eleve",
           "pagesTotal": 221,
           "pagesLues": "integral"
         }
       ],
-      "sujets": [
-        "math"
-      ],
+      "sujets": ["math"],
       "sourcesLibres": [],
       "r7": null,
       "maj": "2026-08-18",
@@ -28,26 +24,30 @@
     {
       "matiere": "anglais",
       "statut": "partielle",
-      "profondeur": "mixte",
+      "profondeur": "generation",
       "sources": [
         {
           "code": "541905",
-          "tomes": [
-            "P00"
-          ],
+          "tomes": ["P00"],
           "role": "enseignant",
-          "pagesTotal": null,
-          "pagesLues": "inconnu"
+          "pagesTotal": 44,
+          "pagesLues": "integral"
         }
       ],
-      "sujets": [
-        "english"
-      ],
+      "sujets": ["english"],
       "sourcesLibres": [],
       "r7": null,
-      "maj": "2026-07-17",
-      "par": "seed",
-      "notes": "Seed depuis _INDEX ([~] historique, campagne collège #348). Évaluer lecture + profondeur avant génération (R-5)."
+      "maj": "2026-09-19",
+      "par": "claude/great-wright-e4cqyu",
+      "notes": "Guide enseignant « Proceed with English — 9th Year Basic Education » lu INTÉGRALEMENT (44/44 p.) le 2026-09-19 ; les 6 cartes de module re-rendues à 190 dpi et recoupées par la couche texte des 30 fiches-leçon. La transcription du 2026-06-29 se disait fidèle mais avait reconstruit une cinquantaine de cellules (lexis inventé, IPA fausse sur 11 cellules sur 30, colonne Project décalée sur M1/M2, titre de leçon « Solidarity » inexistant) — corrigé, méthode et tableau des écarts en §3.5 de programme/9eme-base/anglais.md. STATUT « partielle » À DESSEIN, malgré une lecture intégrale et une restitution à profondeur generation : ce Teacher's Book ne couvre pas tout le chapitrage. « passive » et « reported speech » sont ABSENTS des 44 pages (recherche plein-texte) → 06/07 non générables d'ici ; 01-present-tenses n'a aucune leçon-cible en 9ème (acquis 7e–8e, autorité = fiche 8eme-base) ; 10-exam-style-papers exige le format de l'épreuve de ختم التعليم الأساسي, que le guide ne donne pas. Les 6 chapitres de chapitresGeneration sont, eux, attestés leçon par leçon. Borne d'audit : seul le 1er conditionnel est attesté (M4-L4) — zéro/2e/3e hors niveau. Deux défauts du document IMPRIMÉ (pas de la numérisation) : le mot « language » en minuscule manque des 44 pages (35 occurrences de « Language », 0 de « language » — vérifié à l'image p.6) ; la table des matières p.3 est fausse (« Breakdown of skills » annoncé p.7, réellement les cartes p.9/15/21/27/33/39) et le Tapescript qu'elle annonce est absent du PDF alors que l'introduction le dit « the last part in this document ».",
+      "chapitresGeneration": [
+        "02-past-tenses",
+        "03-future",
+        "04-modals",
+        "05-conditionals",
+        "08-relative-clauses-comparatives",
+        "09-reading-comprehension-writing"
+      ]
     },
     {
       "matiere": "arabe",
@@ -56,26 +56,19 @@
       "sources": [
         {
           "code": "501902",
-          "tomes": [
-            "P00"
-          ],
+          "tomes": ["P00"],
           "role": "enseignant",
           "pagesTotal": 120,
           "pagesLues": "integral"
         }
       ],
-      "sujets": [
-        "arabic"
-      ],
+      "sujets": ["arabic"],
       "sourcesLibres": [],
       "r7": null,
       "maj": "2026-09-18",
       "par": "claude",
       "notes": "501902P00 (الدليل المرجعي في النحو العربي) LU INTÉGRALEMENT 120/120 le 2026-09-18 : les 18 دروس, corps compris, avec leurs 91 encadrés « خلاصة » relevés verbatim (programme/9eme-base/arabe.md §3.6). La fiche reste `partielle` à dessein : ce guide est du نحو PUR — aucune صرف, aucune بلاغة, aucun إنتاج كتابي — donc 6 des 11 chapitres de content/arabic (05, 06, 07, 08, 09, 10) n'ont aucune source officielle lue. chapitresGeneration = les 2 chapitres dont CHAQUE notion nommée par leur titre est traitée règle par règle : 02-an-nawasikh (درس 7 p.45-46 pose كان وأخواتها + المقاربة + الشروع ET إنّ وأخواتها ; درس 13 p.85-89 les traite en entier, piège ناقص/تامّ compris) et 04-al-asalib (دروس 4-6 نداء/استغاثة/ندبة + تعجّب/مدح/ذمّ + دعاء/إغراء/تحذير ; دروس 8-10 استفهام). 03-al-mansoubat EXCLU volontairement : المستثنى n'est nulle part dans le guide. Suite : lire les manuels ÉLÈVE 101908 (نحو عربي) et surtout 101909 (نصوص) — seuls candidats réels pour بلاغة/فهم/إنتاج. NB : 521902 n'est PAS un support d'arabe (matière 21 = français).",
-      "chapitresGeneration": [
-        "02-an-nawasikh",
-        "04-al-asalib"
-      ]
+      "chapitresGeneration": ["02-an-nawasikh", "04-al-asalib"]
     },
     {
       "matiere": "francais",
@@ -84,17 +77,13 @@
       "sources": [
         {
           "code": "521902",
-          "tomes": [
-            "P00"
-          ],
+          "tomes": ["P00"],
           "role": "enseignant",
           "pagesTotal": 64,
           "pagesLues": "integral"
         }
       ],
-      "sujets": [
-        "french"
-      ],
+      "sujets": ["french"],
       "sourcesLibres": [],
       "r7": null,
       "maj": "2026-09-18",
@@ -109,17 +98,13 @@
       "sources": [
         {
           "code": "105905",
-          "tomes": [
-            "P00"
-          ],
+          "tomes": ["P00"],
           "role": "eleve",
           "pagesTotal": 208,
           "pagesLues": "integral"
         }
       ],
-      "sujets": [
-        "sciences-vie-terre"
-      ],
+      "sujets": ["sciences-vie-terre"],
       "sourcesLibres": [],
       "r7": null,
       "maj": "2026-09-17",
