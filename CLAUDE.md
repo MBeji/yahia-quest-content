@@ -33,10 +33,19 @@
   # depuis la racine de CE repo
   rm -rf ../engine/content
   ln -s "$PWD/content" ../engine/content
-  # puis depuis ../engine :
-  npm ci && npm run content:check && npm run content:qa:strict &&
-    npm run content:audit:strict && npm run programme:check
+  # puis depuis ../engine — les SEPT étages de content-ci, dans son ordre :
+  npm ci && npm run content:check && npm run content:catalogue &&
+    npm run content:qa:strict && npm run content:figures:check &&
+    npm run content:audit:strict && npm run programme:check &&
+    npm run harness:check -- --corpus
   ```
+
+  ⚠️ **Les quatre premiers seuls ne suffisent pas** — c'est la recette qu'affichait cette page
+  jusqu'au 2026-09-19, et elle a rendu la PR #466 rouge. Trois étages y manquaient, dont celui
+  qui a cassé : `content:catalogue` **régénère `content/CATALOGUE.md`**, que la CI vérifie ensuite
+  par `git diff --exit-code`. Tout chapitre neuf le périme (il compte les chapitres par matière),
+  et **rien dans les gates locaux ne le disait**. Le régénérer ne suffit pas : **il faut le
+  committer**.
 
   Recette complète (jonctions Windows, contrôles, pièges) :
   `FableEtudes/METHODE-GENERATION-CONTENU.md` § Phase 0.1. Ce que le **poste** doit porter avant
