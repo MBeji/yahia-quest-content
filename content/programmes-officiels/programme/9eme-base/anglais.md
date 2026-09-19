@@ -184,10 +184,20 @@ cadre méthodologique (§1, p.4–8), le **chapitrage** (§4) et les **Objective
 | Grammar : (rien)                                                      | « **- Reflexive pronouns** » (point omis)                                         | M2-L2                  |
 | Grammar « 4- **As far as I am concerned** »                           | « 4- **I think so…** »                                                            | M6-L4                  |
 | Grammar « 2- **I wish** + clause »                                    | (inexistant — la cellule n'a que « I hope that + clause »)                        | M6-L5                  |
-| Pron. `/æ/`, `/æl/ /ɔːl/ /əʊl/`, `/ʒ/`, `/aɪ/ /iə/`…                  | `/ə/`, `/ai/ /aiə/`, `/ə/`, `/ei/ /e/`…                                           | **11 cellules sur 30** |
+| Pron. `/æ/`, `/æl/ /ɔːl/ /əʊl/`, `/ʒ/`, `/aɪ/ /iə/`…                  | `/ə/`, `/ai/ /aiə/`, `/ə/`, `/ei/ /e/`…                                           | **17 cellules sur 30** |
 | Pron. « mute consonants (k, l, gh, **p**, h) / (t, **b**, w, **h**) » | « (k, l, gh, **g**, h) » / « (t, **p**, w, **s**) »                               | M5-L5, M6-L5           |
 | Pron. « Spelling 5 ; **words ending in -ery** »                       | « Spelling of **verbs ending in "o"** »                                           | M6-L4                  |
 | Colonne _Project/Writing_ décalée d'une ligne entière                 | Step1 · Writing one · Step2 · Writing two · Writing three + Step 3 + Presentation | **M1 et M2**           |
+
+> **Chiffres mesurés, pas estimés** (recomptés le 2026-09-19 en comparant les deux versions du §2,
+> cellule par cellule) : sur les **210 cellules** que forment 30 leçons × 7 colonnes, **52 portaient un
+> contenu réellement différent** de la source — Lexis 14, Grammar 11, Project 10, Sub-skills 8,
+> prononciation 5 au comptage lexical, Functions 3, Skills 1 ; douze autres ne différaient que par la
+> ponctuation. La prononciation demande un comptage à part, les symboles IPA échappant à la
+> comparaison par mots : **17 cellules sur 30 étaient fausses, 13 justes**.
+> **La première version de ce tableau annonçait « 11 » : elle en sous-estimait 6.** Un audit qui
+> s'arrête à « une cinquantaine » répète en petit le défaut qu'il dénonce — recompter est la
+> seconde moitié du travail.
 
 **Ce ne sont pas des erreurs d'OCR.** `melt`/`meet`, `haunt`/`taunt`, `God`/`Earthquake`,
 `leggings`/`logging`, `beam`/`boom` sont des **reconstructions plausibles** : la forme est
