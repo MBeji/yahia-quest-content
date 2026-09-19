@@ -1,7 +1,7 @@
 # الإيقاظ العلمي (Éveil scientifique) — 5ème année de base · programme officiel CNP
 
 > **Source** : guide enseignant `503504P00.pdf` (`cnp-officiel/manuels/asasi/c5/enseignant/`) — « الدليل المرجعي في الإيقاظ العلمي — السنة الخامسة من التعليم الأساسي » (المركز الوطني البيداغوجي · وزارة التربية). **Manuel élève** disponible : `103504P00.pdf` (`…/asasi/c5/eleve/`, 176 p.) — « الإيقاظ العلمي — السنة الخامسة » — **dont l'index (p.175) fournit la colonne pages de §4** (offset PDF↔imprimé = 0).
-> **Pages lues (guide)** : p.3–4 (المقدّمة — structure en 4 وحدات), p.5–6 (دور المتعلّم / المعلّم / العائلة), p.7–12 (التمشّيات البيداغوجيّة — التمشّي البنائي vs التعليمي, حلّ وضعيّة مشكل, المشروع البيداغوجي), p.14–15 (مخطّط/مراحل المشروع البيداغوجي — bordereaux administratifs), p.16 (**الاقتدارات المخصوصة المندمجة** — matrice الكفايات الأفقيّة × اقتدارات الإيقاظ), p.17 (**توضيح الكفايات** — texte de la كفاية نهائيّة + ses deux مكوّنين), p.19 (التقييم — réf. programmes 2002/1980), p.22–23 (شبكات تقييم لبناء الاختبار — قاعدة 75% / الثلثين), p.24 (**VIII- تطوّر دراسة المحاور 1ère→6ème** — deux matrices), p.25–28 (**IX- مخطّط الوحدات** — 4 cartes conceptuelles, une par وحدة), p.29–34 (**X- التخطيط السّنوي** — tableaux أهداف مميّزة / محتويات / حصص par محور, pivotés 90°). **Pages lues (manuel élève)** : p.5 (الوحدات), p.174 (exemple de leçon), p.175 (**الفهرس** — pages par درس). **Transcrit le** : 2026-06-28. **Statut** : transcription fidèle.
+> **Pages lues (guide)** : p.3–4 (المقدّمة — structure en 4 وحدات), p.5–6 (دور المتعلّم / المعلّم / العائلة), p.7–12 (التمشّيات البيداغوجيّة — التمشّي البنائي vs التعليمي, حلّ وضعيّة مشكل, المشروع البيداغوجي), p.14–15 (مخطّط/مراحل المشروع البيداغوجي — bordereaux administratifs), p.16 (**الاقتدارات المخصوصة المندمجة** — matrice الكفايات الأفقيّة × اقتدارات الإيقاظ), p.17 (**توضيح الكفايات** — texte de la كفاية نهائيّة + ses deux مكوّنين), p.19 (التقييم — réf. programmes 2002/1980), p.22–23 (شبكات تقييم لبناء الاختبار — قاعدة 75% / الثلثين), p.24 (**VIII- تطوّر دراسة المحاور 1ère→6ème** — deux matrices), p.25–28 (**IX- مخطّط الوحدات** — 4 cartes conceptuelles, une par وحدة), p.29–34 (**X- التخطيط السّنوي** — tableaux أهداف مميّزة / محتويات / حصص par محور, pivotés 90°). **Pages lues (manuel élève)** : p.5 (الوحدات), p.174 (exemple de leçon), p.175 (**الفهرس** — pages par درس). **Transcrit le** : 2026-06-28. **Repris le 2026-09-19** (lecture à l'image) : **p.35–74** — toute l'unité 1, `الملفّ العلمي` + les 7 جذاذات + `وضعيّة تعلّم بالإدماج` + `وضعيّة تقييم` avec son barème — et **p.221–223** (`خريطة كتاب المعلّم والفهرس` + `المراجع`), qui donnent la carte des 189 pages du corps du guide (§2 bis). **Couverture réelle : 71 p. / 223, soit 32 %** (3–12, 14–17, 19, 22–74, 221–223). Restent non lues : p.1–2, 13, 18, 20–21, **75–220** (unités 2, 3, 4). **Statut** : `partielle` — la génération reste interdite hors unité 1.
 > **Langue d'enseignement** : `ar`. **gradeSlug** : `5eme-base`. **subject id** attendu : `eveil-scientifique-5eme`.
 
 ## 1. Cadre & compétences (الكفايات / الاقتدارات / المؤشّرات)
@@ -117,6 +117,92 @@ Le guide pose la même architecture par compétences que les degrés voisins, au
   - ✅ INCLUS : équilibre du milieu (التوازن البيئيّ), composantes (sol/climat/êtres vivants), chaîne alimentaire (consommateurs de 1er/2e ordre), modes de chasse (poursuite/affût/ruse) & d'ingestion, sol & ses composants, sources d'eau, potabilisation (décantation/filtration/désinfection), rôle eau + sels minéraux pour la plante (absorption/transpiration), reproduction par graines, composants de la graine, conditions de germination.
   - ⛔ EXCLU : photosynthèse chimique formalisée, cycles biogéochimiques (azote/carbone), réseaux trophiques complexes & pyramides chiffrées, traitement industriel de l'eau détaillé (niveaux supérieurs).
 
+## 2 bis. La carte du guide, donnée par le guide lui-même (الفهرس, ص 221–223)
+
+> **Comment cette section a été produite.** Le guide `503504P00.pdf` est un PDF à **police privée** : `pdftotext` en sort un mojibake latin (≈ 1 200 caractères/page — le compteur dit « couche texte », c'est faux). Le décodage prototypé le 2026-09-19
+> ([`docs/agents/campagnes-contenu.md`](https://github.com/MBeji/yahia-quest-arena/blob/main/docs/agents/campagnes-contenu.md) § « Le mojibake arabe des guides CNP est décodable ») a servi **uniquement à localiser** la page 221 ; **tout ce qui suit est lu à l'image**, page par page, conformément au contrat : aucune citation verbatim ne sort d'un décodage.
+
+Le guide porte en ص 221–223 sa propre table des matières, **خريطة كتاب المعلّم والفهرس**. C'est la source de structure la plus sûre du document, et elle était inexploitée. Offset PDF ↔ imprimé = **0** (vérifié : le folio « 221 » est sur la page PDF 221).
+
+### Partie transversale (ص 3–34) — déjà transcrite en §1–§2
+
+`I- المقدّمة` 3 · `II- العلوم بالمرحلة الأولى من التّعليم الأساسي : ماذا تقول النّصوص الرّسميّة` 4 · `III- دور كلّ من المتعلّم والمعلّم والعائلة في تحقيق كفاية مادّة الإيقاظ العلمي` 5 · `IV- التّمشّيات البيداغوجيّة` (1‑7, 2‑8, 3‑12, **4) مخطّط مشروع بيداغوجي** 14) · `V- العلاقة بين الكفايات الأفقيّة والكفايات في مجال العلوم` 16 · `VI- توضيح الكفايات المتّصلة ببرنامج الإيقاظ العلمي` 17 · `VII- التقييم` 19 · `VIII- تطوّر دراسة محاور الإيقاظ العلمي … من السّنة الأولى إلى السّنة السّادسة` 24 · `IX- مخطّط الوحدات` (1‑25, 2‑26, 3‑27, 4‑28) · `X- التّخطيط السّنوي لوحدات مادّة الإيقاظ العلمي` 29.
+
+### Le corps du guide (ص 35–220) — **189 pages jamais transcrites avant ce jour**
+
+Chaque وحدة suit le même plan à quatre têtes de chapitre : `I- الملفّ العلمي` → `II- جذاذات التّنشيط` → `III- وضعيّة تعلّم بالإدماج` → `IV- وضعيّة تقييم`.
+
+| وحدة                         | `I- الملفّ العلمي` | `II- جذاذات التّنشيط` (ص de chaque جذاذة)                                                       | `III- إدماج` | `IV/V- تقييم`                                 |
+| ---------------------------- | ------------------ | ----------------------------------------------------------------------------------------------- | ------------ | --------------------------------------------- |
+| **1 · الضّوء**               | 35                 | **7 fiches** : 42 · 46 · 49 · 53 · 56 · 60 · 63                                                   | 67           | 71 — « في نهاية الثّلاثي الأوّل »             |
+| **2 · جسم الإنسان**          | 75                 | **6 fiches** : 92 · 97 · 102 · 108 · 112 · 119                                                    | 123          | 128 — « **وضعيّة تقييم بالإدماج** »           |
+| **3 · الكهرباء**             | 131                | **3 fiches** : 137 · 142 · 146                                                                    | 151          | 154 — « في نهاية الثّلاثي الثّاني »           |
+| **4 · الوسط البيئي**         | 157                | **13 fiches, numérotées (0) à (12)** : 167 · 168 · 173 · 176 · 179 · 182 · 186 · 194 · 198 · 202 · 205 · 209 | 212 **et** 216 (عدد 1 / عدد 2) | 218 — « في نهاية الثّلاثي الثّالث » |
+
+Puis `المراجع` (ص 223) : six références arabes (dont les manuels élèves d'Éveil de 4ᵉ, 5ᵉ et 6ᵉ du CNP lui-même) et six françaises (Théma/Larousse *Sciences de la vie*, *Sciences et techniques*, *Encyclopédie des Sciences*, *La grande Encyclopédie des insectes*, *Le Médical Auzou*, *SVT 1ʳᵉ année de l'enseignement secondaire · CNP*).
+
+**Titres de la جذاذة (8) à (12) — vérifiés page par page, et pourquoi.** Dans le rendu de ص 223 les cinq numéros de page s'affichent `491 · 891 · 202 · 502 · 902`, impossibles dans un guide de 223 pages : les chiffres y sortent en ordre RTL. L'hypothèse (→ 194, 198, 202, 205, 209) **n'a pas été publiée sur sa vraisemblance** : les cinq pages ont été ouvertes, et elles portent bien `جذاذة تنشيط عدد 8/9/10/11/12`.
+
+**Écarts de nombre à signaler.** Le guide et le manuel élève **ne se découpent pas pareil**, et ce n'est pas une erreur : la جذاذة est une séance d'animation, le درس une leçon du manuel.
+Ainsi l'unité 2 a **6** جذاذات au guide pour **8** دروس au manuel ; l'unité 4 en a **13** pour **12**, avec une **جذاذة (0)** qui n'a pas de درس correspondant — « **التّخطيط لزيارة محميّة أو حديقة حيوانات** » (ص 167), une sortie préparatoire. Il n'y a donc pas de bijection جذاذة ↔ درس, et le §4 reste indexé sur le manuel.
+
+## 2 ter. L'anatomie d'une جذاذة (relevé sur la جذاذة 1, ص 42–45, lue intégralement)
+
+**En-tête** — neuf champs, toujours dans cet ordre : `الكفاية النّهائيّة` (invariable : « حلّ وضعيّات مشكل دالّة بإنجاز بحوث ومشاريع ») · `المكوّن الأوّل/الثّاني` · `الوحدة` · `الهدف المميّز` (parfois `الأهداف المميّزة` au pluriel) · `المحتوى` · `هدف الحصّة` · `معايير النّجاح` · `المعينات البيداغوجيّة` · `مؤشّرات القدرة المستهدفة`.
+
+**Corps** — un bandeau `التّمشّي البيداغوجي`, puis des rubriques **numérotées en compteur courant**, et c'est le point à ne pas se tromper : **ce n'est pas un gabarit fixe en 9 étapes.** Le cycle de base est
+`تعهّد المكتسبات` → `الوضعيّة المشكل` → `البحث عن الحلّ ورصد التصوّرات` → `صياغة فرضيّات عمل` → `التّحقّق العلمي` (en النّشاط الأوّل/الثّاني/…) → `الاستنتاج` (encadré ; sous-numéroté 6‑1, 6‑2, 6‑3 quand il y en a plusieurs),
+et une جذاذة peut **enchaîner plusieurs cycles sans remettre le compteur à zéro** : la جذاذة 3 repart en `7- الوضعيّة المشكل` et va jusqu'à `13- التّوسّع والامتداد` (ص 51–52) ; la جذاذة 7 va jusqu'à `14-` (ص 66). L'invariant n'est pas le nombre : c'est que **toute جذاذة se termine par le triplet** `التّطبيق : اُنظر كتاب التّلميذ` → `التّقييم` → `أنشطة للتّوسّع والامتداد`.
+
+**Ce que ça vaut pour la génération** : les encadrés `الاستنتاج` sont le **savoir canonique** de la séance — c'est d'eux que doivent sortir les bonnes réponses, pas des corrigés d'activité (voir §6, l'affaire de la Lune).
+
+## 2 quater. Unité 1 — الضّوء (ص 35–74, lue intégralement)
+
+### `I- الملفّ العلمي` (ص 35–41) — le fond scientifique destiné au maître
+
+1. **تعريف الضّوء** (35) : الجزء المرئيّ من الطّيف الكهرومغناطيسي (spectre électro-magnétique), تموّجات entre **0,4 μm** (بنفسجي) et **0,8 μm** (أحمر). Tableau du spectre : أشعّة ما تحت الحمراء │ أحمر · برتقالي · أصفر · أخضر · أزرق · بنفسجي │ أشعّة ما فوق البنفسجيّة.
+2. **بعض خاصيّات الضّوء** (35) : كمّات (Photons) ; vitesse **3.10⁸ م/ث** ≈ 300 000 km/s ; **نيوتن, 1665** — le blanc est la synthèse des trois primaires الأحمر/الأخضر/الأزرق.
+3. **المصادر المضيئة** (36) : طبيعيّة (الشّمس، النّجوم) / اصطناعيّة (المكشاف، المصباح الكهربائيّ، القنديل، الشّمعة). Le guide ajoute deux familles rarement citées : les **أجسام متألّقة** artificielles (peinture luminescente des aiguilles de montre, gilets, panneaux) et les **أجسام طبيعيّة برّاقة** (الدّيدان، بعض طحالب البحر والحشرات) — bioluminescence.
+4. **المصادر المضاءة المنيرة** (36) : القمر, الكواكب (المشتري، عطارد، زحل), et tout objet visible (الأشجار، القلم، الكتاب).
+5. **الشّمس** (36) : عمرها ≈ 5 milliards d'années · قطرها 1 400 000 km = **109 ×** celui de la Terre · كتلتها 2 × 10³⁰ kg = **333 000 ×** celle de la Terre · باطنها 14 millions de degrés · سطحها 5 500 °C (5 800 K) · **إضاءتها ≈ 100 000 lux** au zénith, contre **0,2 lux** pour la Lune.
+6. **الأوساط** (37) : `شفّافة` = passage **total**, vision nette (الزّجاج، الماء « إذا لم يتجاوز عمقا معيّنا »، الهواء) · `شافّة` = passage **partiel**, vision ضبابيّة (الضّباب، البلّور المطروق، الورق المبلّل بالزّيت) · `عاتمة` = passage nul (الخشب، الحائط، الحديد). Puis **6‑4 امتصاص الضّوء** (38) : la transparence est **relative** — la même eau est شفّاف au bord et عاتم dans les grands fonds ; un métal opaque devient شفّاف « إذا صار سمكها رقيقا جدّا في حدود المكرومتر ». Conclusion du guide : **« إنّ شفافيّة الأوساط وعاتميّتها مرتبطتان أساسا بسمك المادّة وطبيعتها. »**
+7. **الانتشار المستقيمي** (38) : dans les milieux شفّافة **المتجانسة** — l'homogénéité est nommée, la fiche ne la portait pas. Exemples : ماء ملوّن, faisceau de مكشاف, poussière dans le rai de la fenêtre, منارة الميناء, أشعّة الشّمس من خلال السّحب, ظلّ سحاب.
+8. **عمليّة الرّؤية لابن الهيثم** (39–40) : الحسن ابن الهيثم, **né en 965 / 354 هـ à Bassorah, mort en 1039 / 430 هـ**. Sa thèse : la vision se fait quand **l'œil sain reçoit** la lumière venue du corps extérieur مضيء ou مضاء منير — « **دحض الاعتقاد السّائد … بأنّ العين ترسل أشعّة ضوئيّة** ». La **الغرفة السّوداء** (caméra à sténopé) et l'œil de bœuf disséqué donnent une image **مقلوبة ومصغّرة** sur la rétine ; de là l'appareil photo, et les lois de l'انكسار/انعكاس par العدسات والمرايا الكرويّة.
+9. **الظّلّ** (40) : il faut un **مصدر ضوئيّ نقطيّ**, un **جسم عاتم**, une **شاشة**. Trois termes à distinguer, tous trois portés par le schéma de ص 40 : **الظّلّ الحقيقي** (ombre propre, sur le corps) · **مخروط الظّلّ** (cône d'ombre, entre corps et écran) · **الظّلّ المحمول** (ombre portée, sur l'écran). Deux lois de variation (41) : le الظّلّ المحمول **grandit** quand on **éloigne l'écran** du corps, et quand on **rapproche la source** du corps.
+10. **كسوف الشّمس** (41) : traité comme le cas modèle de la propagation rectiligne, avec ses trois figures — **الكسوف الكلّي · الكسوف النصفي · حلقة الكسوف** — et le couple **الظلّ / نصف الظلّ** (ombre / pénombre). ⚠️ Le الملفّ العلمي **ne traite que le كسوف** (solaire) ; le **خسوف** (lunaire) n'apparaît qu'en جذاذة 2 (ص 46–47), alors que l'objectif du التخطيط السّنوي (§2) annonce « الكسوف والخسوف ».
+
+### `II- جذاذات التّنشيط` (ص 42–66) — les 7 séances et leur savoir encadré
+
+| #   | ص     | `الهدف المميّز`                                             | Encadrés `الاستنتاج` — le savoir à retenir                                                                                                                                                                                              |
+| --- | ----- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | 42–45 | التّمييز بين مصادر الضّوء                                   | « المصدر الضّوئي هو كلّ ما ينبعث منه الضّوء » ; deux types : **طبيعيّة** (l'homme n'y peut rien) / **اصطناعيّة** (il les commande, et les emploie faute de source naturelle). ⚠️ voir §6 — l'encadré y range **القمر** parmi les naturelles. |
+| 2   | 46–48 | التّمييز بين المصدر الضّوئيّ والجسم المضاء المنير           | « الشّمس مصدر مضيء ذاتيا ولذلك يسمّى **نجما** » ; « القمر … يستمدّ ضوءه من الشّمس وينشره … فهو **جسم مضاء منير** » ; **انتثار الضّوء** (diffusion) ; et la définition en deux lignes مضيء ↔ مضاء منير (ص 48).                              |
+| 3   | 49–52 | رؤية الأجسام لا تتمّ إلاّ بتوفّر عنصرين : **العين والضّوء** | « **العين السّليمة ضروريّة** لعمليّة الرّؤية » ; « **الضّوء ضروريّ** لعمليّة الرّؤية » ; puis « نرى الأجسام المضيئة والمضاءة المنيرة **متى وصل الضّوء منها إلى العين** ».                                                                  |
+| 4   | 53–55 | تصنيف الأوساط إلى شفّافة وشافّة وعاتمة                      | الخشب = **عاتم** ; البلّور المطروق = **شافّ** (passage partiel) ; البلّور العادي = **شفّاف** (passage total).                                                                                                                             |
+| 5   | 56–59 | تبيّن الانتشار المستقيمي للضّوء                             | « ينتشر الضّوء في وسط **متجانس** (الماء + حليب) حسب **خطوط مستقيمة** » ; puis élargi : « في الأوساط **الشّافّة والشّفّافة المتجانسة** ».                                                                                                  |
+| 6   | 60–62 | الرّبط بين **سمك** الأوساط واختراق الضّوء لها               | « الأجسام الشّفّافة تتحوّل إلى **عاتمة بزيادة سمكها** » ; « الأجسام العاتمة تتحوّل إلى شافّة فشفّافة **بتقليص سمكها** ».                                                                                                                  |
+| 7   | 63–66 | تطبيق الانتشار المستقيمي + ضبط عناصر تكوين الظّلّ           | « لتكوين الظّلّ لابدّ من توفّر **ثلاثة عناصر** : مصدر ضوئي وجسم عاتم وشاشة » ; « **تتعدّد ظلال الجسم العاتم بتعدّد مصادر الضّوء** » ; et : le ظلّ مرتسم **grandit** quand on rapproche le corps de la source, **rétrécit** quand on l'en éloigne. |
+
+Détails d'exécution que seul le guide donne, et qui font de bons énoncés : la جذاذة 5 précise qu'il faut **1 à 1,5 ml de lait** dans le bac — au-delà le faisceau ne traverse que quelques centimètres puis disparaît, en deçà (moins de 1 ml) il n'apparaît pas nettement (ص 58). La جذاذة 7 fait viser un **ظلّ de 5 cm exactement**, mesuré à la règle graduée (ص 66). Le projet de fin d'unité 7 est une **ساعة شمسيّة** construite en التّربية التّقنيّة والتّشكيليّة (ص 66).
+
+### `III- وضعيّة تعلّم بالإدماج` (ص 67–70)
+
+Situation : une nuit de Ramadan, la ville éclairée par الفوانيس الكهربائيّة et أضواء السّيّارات. **Huit activités**, chacune avec sa colonne `الإجابات المتوقّعة`, et trois encadrés `أتذكّر` qui re-posent le savoir des 7 جذاذات (مضيء ↔ مضاء منير ; les trois éléments du ظلّ ; « **مصدران ضوئيّان = ظلّان, 3 مصادر ضوئيّة = 3 ظلال** » ; شفّاف/شافّ/عاتم ; « لتتمّ رؤية الأجسام لابدّ من توفّر **عين سليمة مفتوحة ومصدر ضوئي** »).
+Le النّشاط الثّالث (ص 68) est, en soi, un **exercice de détection d'erreur** — « **أتأمّل الجدول وأصلح الخطأ** » — ce qui rend d'autant plus gênant le défaut relevé en §6.
+
+### `IV- وضعيّة تقييم الأداء المنتظر في نهاية الثّلاثي الأوّل` (ص 71–74)
+
+Périmètre annoncé : مصادر الضوء · انتشار الضوء · عملية الرؤية لابن الهيثم · الأوساط الشفافة والشافة والعاتمة · الظل. **Dix تعليمات** adossées à trois critères (مع1, مع2, مع3), avec le barème complet en ص 74 — **جدول إسناد الأعداد** :
+
+| مستويات التّملّك   | مع1 (إ ج ص → العدد) | مع2 (إ ج ص → العدد) | مع3 (إ ج ص → العدد) |
+| ------------------ | ------------------- | ------------------- | ------------------- |
+| انعدام التّملّك    | 0 → 0 · 1 → 2       | 0 → 0 · 1 → 2       | —                   |
+| دون التّملّك الأدنى | 2 → 3 · 3 → 4       | 2 → 3 · 3 → 4       | 1 → 2               |
+| التّملّك الأدنى    | 4 → 5               | 4 → 5               | 2 → 4               |
+| التّملّك الأقصى    | 5 → 6,5 · 6 → 7,5   | 5 → 6,5 · 6 → 7,5   | 3 → 5               |
+
+Le total tombe juste : **7,5 + 7,5 + 5 = 20**. C'est le seul endroit du guide qui chiffre une notation, et il était absent de la fiche.
+
 ## 3. Notes pédagogiques / méthode
 
 - **Public ~10 ans, lecteur autonome** : le manuel élève `103504` (176 p.) structure chaque وحدة en **دروس** + **وضعيّة تعلّم بالإدماج** + **وضعيّة تقييم**. La démarche reste **active, expérimentale, visuelle** : observation, manipulation, expérience, **projet pédagogique** (un par وحدة).
@@ -161,7 +247,61 @@ Le guide pose la même architecture par compétences que les degrés voisins, au
   1. **`06-respiration` ↔ `07-circulation-sang`** : dans le manuel, la **circulation (د6, p.57)** précède la **respiration (د7–8, p.61)** ; le contenu publié garde `06`=respiration avant `07`=circulation (ordre prod / `displayOrder` figés). Pages renseignées en conséquence.
   2. **`09-vivants-milieu`** : le محور التوازن البيئيّ est traité **en fin de manuel (د12, p.160)** alors que les leçons d'écosystème/chasse sont en tête (د1–4, p.96–117) ; le chapitre `09` couvre donc deux plages (96–117 **+** 160–165).
 
-## 6. Incertitudes / à revérifier
+## 6. Audit du guide, unité 1 (lecture intégrale ص 35–74 + الفهرس ص 221–223, le 2026-09-19)
+
+> Sept écarts internes au **guide officiel**, tous relus à la page avant d'être écrits ici. Ce ne sont pas des erreurs de la fiche : ce sont des pièges du document source, et le premier est un piège **à conséquence directe sur la génération de questions**.
+
+### 🔴 1. La Lune : le guide se contredit, et ce sont ses corrigés qui ont tort
+
+Le savoir du guide est net et répété **trois fois** :
+
+- ص 36, `الملفّ العلمي` : « ومن بين هذه **المصادر المضاءة المنيرة** نذكر **القمر** والكواكب كالمشتري وعطارد وزحل… »
+- ص 47, encadré `الاستنتاج الأوّل` de la جذاذة 2 : « **القمر** … لا تصدر عنه أشعّة مضيئة فهو يستمدّ ضوءه من الشّمس وينشره في الفضاء فينير الأجسام من حوله كالأرض فهو **جسم مضاء منير**. »
+- ص 48, encadré `الاستنتاج الثّالث` : « المصدر المضاء المنير هو الجسم الّذي يتلقّى الضوء من مصدر مضيء ثمّ ينشره **كالقمر** والجدار والكتاب… »
+
+Mais **deux corrigés** disent l'inverse :
+
+- ص 44, encadré `6-2 الاستنتاج` de la جذاذة 1 : « مصادر **طبيعيّة** : لا يتحكّم فيها الإنسان كالشّمس **والقمر** والنّجوم… » — et le tableau d'activité juste au-dessus range القمر sous `مصادر ضوئيّة طبيعيّة`.
+- ص 67, `الإجابات المتوقّعة` de la وضعيّة تعلّم بالإدماج : « المصادر الضّوئيّة الّتي جعلت من ليل المدينة نهارا هي : **القمر** – الفوانيس الكهربائيّة – أضواء السّيّارات », et le tableau-corrigé remet القمر sous `مصادر ضوئيّة طبيعيّة`.
+
+Le comble est à la page suivante : ص 68, le النّشاط الثّالث est **précisément** un exercice « أتأمّل الجدول **وأصلح الخطأ** » dont l'erreur à corriger est القمر placé parmi les `أجسام مضيئة` — et dont la réponse attendue, en toutes lettres sous le tableau, est « **القمر جسم مضاء منير** ». Mais le tableau-corrigé imprimé à côté **laisse القمر dans la colonne `أجسام مضيئة`** tout en l'ajoutant sous `أجسام منيرة` : le corrigé d'un exercice de correction d'erreur reproduit l'erreur.
+
+> **Règle pour la génération** : sur ce point, la vérité du programme est **ص 36 / 47 / 48** — القمر est un **جسم مضاء منير**, jamais un مصدر. Les corrigés ص 44 et ص 67 ne doivent **pas** servir de clé de réponse. Un distracteur « القمر مصدر ضوئيّ طبيعيّ » est excellent — c'est la conception erronée que la جذاذة 2 existe pour démonter — mais il n'est **jamais** la bonne réponse.
+
+### 🔴 2. ص 71 — un exercice d'évaluation inexécutable tel qu'imprimé
+
+La `التعليمة 2` de la وضعيّة تقييم demande : « **أصنف المصادر الضوئية المذكورة إلى منيرة ومضيئة** ». Le tableau fourni a deux colonnes, intitulées `أجسام منيرة` et `أجسام مضاءة منيرة` — **la colonne `مضيئة` manque**, les deux en-têtes disent منيرة. (Vérifié à 400 dpi avant d'être écrit ici.) L'élève ne peut pas exécuter la consigne ; le maître doit rétablir `أجسام مضيئة` en colonne de gauche.
+
+### 🟠 3. ص 35 — les unités des deux lignes du tableau du spectre sont interverties
+
+Le tableau porte `الذبذبات 10⁻⁶ م` sur la ligne dont les valeurs vont de **4 à 7,5**, et `طول الموجة 10¹⁴ كلوهرتز` sur celle dont les valeurs vont de **0,40 à 0,75**. C'est l'inverse, et la page se contredit elle-même deux lignes plus haut : « الإشعاعات الّتي طول تموّجاتها محصورة بين **0.4 مكرومتر** … و **0.8 مكرومتر** ». Donc : طول الموجة en **10⁻⁶ م** (µm), الذبذبات en **10¹⁴ هرتز** — et non « كلوهرتز ».
+
+### 🟠 4. ص 36 — le lux défini comme des W/cm²
+
+« وحدة اللّوكس نعبّر عنها بقيمة الطّاقة الّتي يحملها الشّعاع الضّوئي في ثانية واحدة في مساحة واحد صنتمتر مربّع ونعبّر عنها بـ (w/cm²) ». Le lux est une unité **photométrique** (lumen/m²), pas un éclairement énergétique en W/cm². Les deux valeurs données restent bonnes (≈ 100 000 lux au zénith, 0,2 lux pour la pleine Lune) ; c'est la définition qui est fausse. **Ne pas en tirer de question sur l'unité.**
+
+### 🟡 5. ص 46 — كسوف القمر pour خسوف القمر
+
+Les `المعينات البيداغوجيّة` de la جذاذة 2 listent « صورة تمثّل **كسوف** القمر », alors que la وضعيّة المشكل de la même جذاذة, six lignes plus bas, dit correctement « حدوث **خسوف** كلّي للقمر », et que la جذاذة 7 (ص 66) écrit tout aussi correctement « ظاهرتي **خسوف القمر وكسوف الشمس** ». Lapsus isolé, mais il porte sur la distinction même que l'unité enseigne.
+
+### 🟡 6. ص 70 — « الرّسوم الثّلاثة », deux seulement imprimés
+
+Le النّشاط de ص 70 s'ouvre sur « أتأمّل **الرّسوم الثّلاثة** التّالية وأعلّل الإجابة » ; seuls les schémas **1** et **2** figurent, avec deux lignes de corrigé. Le troisième cas manque.
+
+### 🟡 7. ص 59 — le calcul Terre-Soleil ne retombe pas sur la valeur usuelle
+
+Le التّوسّع de la جذاذة 5 fait calculer la distance Terre-Soleil à partir de « 300 ألف كم في الثّانية » et « 8 دق », ce qui donne **144 millions de km**. La valeur admise est ≈ 150 millions de km (8 min 20 s). L'exercice reste valable comme exercice de calcul ; **ne pas en faire une question de connaissance** sur la distance.
+
+### Ce que l'unité 1 apporte à la génération, et qui manquait
+
+- Le triplet de vocabulaire de l'ombre, que la fiche ne portait pas : **الظّلّ الحقيقي** (ombre propre) · **مخروط الظّلّ** (cône) · **الظّلّ المحمول** (ombre portée), tous trois légendés sur le schéma de ص 40 — plus **الظلّ / نصف الظلّ** (ombre/pénombre) sur les figures d'éclipse de ص 41.
+- Le mot **المتجانسة** (milieu *homogène*) dans l'énoncé de la propagation rectiligne (ص 38, 58, 59) : sans lui, l'énoncé est faux.
+- **انتثار الضّوء** (diffusion) comme mécanisme de ce qui rend un جسم منير visible (ص 48).
+- Les deux lois de variation de l'ombre portée (ص 41 et ص 66), énoncées dans les deux sens (écran/source), qui donnent des questions à quatre options naturelles.
+- Les trois figures d'éclipse solaire nommées : **الكسوف الكلّي · الكسوف النصفي · حلقة الكسوف** (ص 41).
+- Le barème officiel en trois critères **7,5 + 7,5 + 5 = 20** (ص 74).
+
+## 7. Incertitudes / à revérifier
 
 - **Tableaux التخطيط السّنوي (p.29–34) pivotés 90°** : rendus puis **re-rotés à la lecture** ; la majorité (p.31, 32, 34) est parfaitement nette, p.29–30 le sont après agrandissement. Les **عدد الحصص** sont relevés cellule par cellule ; à ±1 séance près sur quelques lignes de transition (إدماج/دعم), le fond (أهداف مميّزة + محتويات + ordre) est fiable.
 - **Matrice الاقتدارات (p.16)** : l'en-tête de page (« الاقتدارات المخصوصة … المندمجة ») est partiellement décoré/bruité ; les **croix ✱** par compétence transversale sont relevées au mieux de la lisibilité (mise en page dense). Le contenu (les 6 اقتدارات de l'Éveil et les 8 كفايات أفقيّة) est sûr.
