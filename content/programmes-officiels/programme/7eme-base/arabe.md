@@ -104,6 +104,101 @@ Chaque درس porte un encadré **« أهداف الدرس »** (objectifs) — 
 >   - **علم الصّرف** : الصّوت/المقطع ؛ **الجذر ودوره في الاشتقاق** ؛ **تصريف الفعل المجرّد السّالم** ؛ **اشتقاق** المصدر/اسم الفاعل/اسم المفعول/**الصّفة المشبّهة** من الثّلاثيّ المجرّد ؛ **المعتلّ** بأنواعه (**المضاعف، المهموز، المثال، الأجوف، النّاقص، اللّفيف**) ؛ **رسم الهمزة** ؛ **اشتقاق من الرّباعيّ المجرّد** ؛ **المزيد** من الأفعال والأسماء.
 > - ⛔ **EXCLU (relève des classes suivantes du collège, 8ème/9ème+)** : l'**إعراب exhaustif** de toutes les constructions complexes simultanément ; les chapitres de **النّحو** non listés ici (p. ex. النّعت/التّوكيد/البدل/العطف traités comme أبواب autonomes, العدد، المنادى، النّسب، التّعجّب… au-delà de ce sommaire) ; البلاغة / النّقد الأدبيّ ; l'analyse de textes argumentatifs approfondie. (À confirmer درس par درس quand le contenu 7ème sera créé — le présent sommaire est la borne haute autorisée.)
 
+## 2 bis. Le manuel élève `101710` — un second canal, et une édition RÉVISÉE (2026-09-19)
+
+> **Pourquoi cette section existe.** Cette fiche n'avait qu'une source, le guide enseignant
+> `501701P00`, lu à 8 %. Le catalogue CNP porte pourtant le **manuel élève du même couple** :
+> **`101710` « نحو عربي »**, en **trois tomes** (P01/P02/P03) à **pagination continue 1→174**
+> — 60 + 60 + 54 pages PDF. Il n'avait jamais été ouvert.
+>
+> **Sa couche texte est VIDE** (53 caractères par page : un filigrane « Tous droits réservés au
+> CNP »). Ce sont des **scans purs** — donc rien à décoder, mais rien à `grep` non plus : la
+> navigation se fait en rendant les pages. **Le scan est net** et se lit sans peine à 110 dpi.
+> Le catalogue porte aussi `101708` « الأنيس — نصوص », une anthologie de textes : autre matière,
+> ce n'est pas le pendant de ce guide.
+
+### Ce que sa المقدّمة déclare, et qui change la lecture de tout le reste (ص 3)
+
+Ce manuel est une **« طبعة منقّحة »**. Sa préface, signée « لجنة تنقيح الكتاب », dit ce qui a été
+fait et pourquoi — c'est la clé de voûte de cette fiche :
+
+- **« نُوائمَ بين ترتيب المسائل اللغويّة في الكتاب المدرسيّ وترتيبها في البرامج الرسميّة »** — la
+  révision aligne le manuel sur les **programmes officiels**.
+- **« فأعدنا متفرّق الدّروس إلى المسألة اللغويّة الجامعة، وحذفنا ما لم يعد مقرّرا منها، وأضفنا ما
+  جدّ من عناوين »** — on a **regroupé** les leçons éparses, **supprimé ce qui n'est plus au
+  programme**, **ajouté les titres nouveaux.**
+- **« فاستقامت خمسة عشر درسا في علم الإعراب واثني عشر درسا في علم الصّرف »** → **27 leçons**.
+- Chaque leçon est bâtie sur **أركان أربعة** : **نصّ انطلاق** (un texte porteur du fait de langue)
+  → **مدخل** (des activités) → **خلاصة** (les règles dégagées) → **تمارين** (fixation).
+
+🔴 **L'écart à retenir : le guide annonce 39 دروس (23 + 16), le manuel révisé en annonce 27
+(15 + 12).** Les deux documents ne décrivent pas le même découpage, et **c'est le manuel qui se
+réclame des programmes officiels**. Avant de traiter les 39 leçons du guide comme la référence,
+il faut trancher lequel porte le programme en vigueur — cette fiche ne le sait pas encore.
+
+### Le فهرس du manuel (ص 4) — les 27 leçons, leurs محاور et leurs pages
+
+**الباب الأوّل — علم الإعراب** (15 leçons, 4 محاور) :
+
+| محور | n° | leçon | ص |
+| --- | --- | --- | --- |
+| الجملة البسيطة وخصائصها التركيبيّة | 1 | حدود الجملة البسيطة داخل النصّ | 7 |
+| | 2 | نوعا الإسناد : الجملة الاسميّة، الفعليّة | 13 |
+| الأشكال الأساسيّة للجملة الفعليّة | 3 | الشكل الأساسيّ : فعل لازم + فاعل | 18 |
+| | 4 | الشكل الأساسيّ : فعل متعدّ + فاعل + مفعول به | 21 |
+| | 5 | الشكل الأساسيّ : فعل متعدّ إلى مفعولين + فاعل + مفعول به 1 + مفعول به 2 | 26 |
+| | 6 | الشكل الأساسيّ : فعل مبنيّ للمجهول + نائب فاعل (± مفعول به) | 31 |
+| الأشكال الأساسيّة للجملة الاسميّة | 7 | الشكل الأساسيّ : مبتدأ + خبر | 36 |
+| | 8 | الشكل الأساسيّ : ناسخ فعليّ + اسمه + خبره | 42 |
+| | 9 | الشكل الأساسيّ : ناسخ حرفيّ + اسمه + خبره | 48 |
+| إغناء الجملة البسيطة بالمتمّمات | 10 | المفعول فيه | 54 |
+| | 11 | المفعول المطلق | 61 |
+| | 12 | المفعول لأجله | 69 |
+| | 13 | الحال | 74 |
+| | 14 | التمييز | 80 |
+| | 15 | المستثنى | 85 |
+
+**الباب الثّاني — علم الصّرف** (12 leçons, 3 محاور) :
+
+| محور | n° | leçon | ص |
+| --- | --- | --- | --- |
+| الجذر | 1 | الجذر | 93 |
+| تصريف الفعل المجرّد | 2 | … المشتقّ من جذر **سالم** | 99 |
+| | 3 | … من جذر **مهموز** | 106 |
+| | 4 | … من جذر **مضاعف** | 117 |
+| | 5 | … من جذر **مثال** | 121 |
+| | 6 | … من جذر **أجوف** | 126 |
+| | 7 | … من جذر **ناقص** | 132 |
+| | 8 | … من جذر **لفيف** | 143 |
+| اشتقاق الأسماء من الجذر | 9 | اسم الفاعل | 149 |
+| | 10 | اسم المفعول | 155 |
+| | 11 | المصدر | 161 |
+| | 12 | الصّفة المشبّهة | 166 |
+
+### Confrontation aux 17 chapitres servis — aucun trou trouvé
+
+Les 27 leçons ont été cherchées une à une dans `content/arabic-7eme/`. **Toutes sont enseignées**,
+à un **grain plus grossier** : un chapitre servi regroupe jusqu'à quatre leçons officielles
+(`16-al-fi3l-al-mu3tall` couvre مثال · أجوف · ناقص · لفيف ; `14-al-ishtiqaq-min-ath-thulathi`
+couvre les quatre مشتقّات ; `08-al-maf3ul-al-mutlaq-wa-fihi-wa-lajlih` en couvre trois). Le
+regroupement est un choix de granularité défendable, pas une omission.
+
+⚠️ **Piège de méthode, vécu sur cette passe.** Un premier relevé a conclu que **الصفة المشبّهة**
+manquait — zéro occurrence. C'était **faux** : la recherche utilisait l'orthographe **sans
+shadda** (`المشبهة`), alors que le corpus est vocalisé (`المشبّهة`, 22 occurrences, avec sa propre
+section `## 🧮 الصّفة المشبّهة` au chapitre 14). **Toute recherche arabe dans ce corpus doit
+essayer les deux formes** ; sinon elle fabrique des trous qui n'existent pas.
+
+### Ce qui reste ouvert, et qu'il ne faut pas conclure trop vite
+
+- **Deux chapitres servis n'ont pas de leçon homonyme au فهرس révisé** :
+  `11-al-jumla-al-murakkaba` (الجملة المركّبة) et `17-ar-rubai-wal-mazid` (الرباعي والمزيد).
+  Ils pourraient être du **« ما لم يعد مقرّرا »** — mais une notion peut être traitée **dans** une
+  leçon sans en être le titre (le guide, lui, traite « نواة بسيطة ↔ نواة مركّبة » à sa p.15).
+  **À trancher en lisant**, pas au sommaire.
+- **La couverture du guide reste à 8 %** : ouvrir le manuel élève ne lit pas le guide. Et les
+  174 pages du manuel ne sont pas lues non plus — seules ص 3 (المقدّمة) et ص 4 (الفهرس) le sont.
+
 ## 3. Notes pédagogiques / méthode
 
 ### 3.1 Architecture du guide (التّمهيد + corps)
