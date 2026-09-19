@@ -26,12 +26,16 @@ Le guide imprime, en tête du **القسم العمليّ**, une **خارطة ا
 > - **3 ثلاثيّات (trimestres)** — la table **« عدد عناوين الدروس بكتاب التلميذ »** (p.60) et le **« توزيع الحجم الزّمنيّ السّنويّ »** (p.64) ventilent l'année en **الثّلاثيّ الأوّل / الثّاني / الثّالث**. Comptage officiel (p.60) : **المكتسبات القبليّة 6** (T1) · **حساب 17** (4+9+4) · **هندسة 14** (6+4+4) · **التدريب على حلّ المسائل 12** (3+5+4) · **محطّات الإدماج الكبرى + تقييم ودعم وعلاج 7** (2+2+3) · **أتسلّى 5** (2+2+1) → **الجملة 61 عنوان** (23+22+16).
 > - **Volume horaire (p.64)** : **160 س** au total = **T1 60س (12 أسابيع × 5س) + T2 50س (10×5) + T3 50س (10×5)** ; dont **≈ 43 س** pour المكتسبات السّابقة + التصرّف du maître, et **≈ 117 س** d'exécution du programme 6ème. Par ثلاثيّ, ventilation hebdo par domaine (حساب / هندسة / حلّ المسائل / التقييم والدّعم والعلاج).
 >
-> **خارطة الكتاب (p.59) — séquence des 61 leçons** (titres lus à 300 dpi croppé ; transcription regroupée par domaine au §2 pour lisibilité, et alignée au §4). Numérotation الدرس 1→61 :
-> الفترة 1 : 1 جمع/طرح عشريّ · 2 قيس المساحة · 3 ضرب/قسمة عشريّ · 4 تعامد/توازي · 5 عمليّات على الزّمن · 6–7–8 مسائل/زوايا/مثلّث · 9 شبه المنحرف · 10–11–12 مسائل/توظيف/أتسلّى.
-> الفترة 2 : 13 مضاعفات مشتركة · 14 التناسب · 15 الأضلاع/زوايا · 16–17 توازي/مسائل · 18 الكتابات الكسريّة وأرقامها · 19–20 مسائل/محيط دائرة · 21–22 مسائل/مكتسبات · 23 أتسلّى.
-> الفترة 3 : 24 محيط شكل مركّب · 25–26 قابليّة القسمة على 2/5 et 3/9 · 27 مسائل · 28 كتابة كسر بطرق · 29 مقارنة كسور · 30 مسائل · 31 الأعداد الكسريّة العشريّة · 32 التناسب/نسبة · 33 مساحة المثلّث · 34–35–36 مسائل/توظيف/أتسلّى.
-> الفترة 4 : 37 التناسب/مائويّة · 38 مساحة (متوازي الأضلاع) · 39 قسمة عشريّة · 40–41 مسائل · 42 جمع الكسور · 43 مسائل · 44 توظيف · 45 أتسلّى.
-> الفترة 5 : 46 مساحة القرص الدائريّ · 47 ضرب كسر في صحيح · 48–49 مسائل/توظيف · 50 مساحة شكل مركّب · 51–52 مسائل · 53 التناسب (سرعة/مسافة) · 54 متوازي المستطيلات والمكعّب (نشر) · 55–56 مسائل · 57 جمع/طرح/ضرب الكسور · 58 المساحة الجانبيّة والجمليّة (مكعّب/متوازي مستطيلات) · 59 مسائل · 60 توظيف · 61 أتسلّى.
+> **خارطة الكتاب (p.59) — les 61 titres de leçons, verbatim** (relus à l'image le 2026-09-19 ; la
+> couche texte de ce PDF est inexploitable, cf. §6). Les titres sont ceux imprimés, non résumés.
+> Les **6 leçons marquées \*** de la الفترة 1 portent la note de bas de page : « وضعيات إدماجية
+> متّصلة بمكتسبات السّنة الخامسة المستوجبة للشّروع في برنامج السّنة السّادسة ».
+>
+> **الفترة الأولى** — en tête : تقييم قبلي · تشخيص · دعم وعلاج. 1\* أوظّف الجمع والطرح في مجموعة الأعداد العشريّة · 2\* أتصرّف في وحدات قيس المساحة · 3\* أوظف الضّرب والقسمة في مجموعة الأعداد العشريّة · 4\* أوظّف التّعامد والتّوازي ومنصّف الزّاوية في البناءات الهندسيّة · 5\* أوظّف الجمع والطرح والضّرب على الأعداد الّتي تقيس الزّمن · 6\* أتدرّب على حلّ المسائل · 7 أبني زوايا أقيستها بالدّرجة 90−45−60−30−15−120 · 8 أبني مثلّثا استنادا إلى أقيسة الأضلاع والزّوايا · 9 أتعرّف شبه المنحرف وأرسمه · 10 أتدرّب على حلّ المسائل · 11 أوظّف مكتسباتي · 12 أتسلّى.
+> **الفترة الثانية** — 13 أتعرّف مضاعفات مشتركة لعددين صحيحين طبيعيّين فأكثر · 14 أوظّف التّناسب في السّلّم · 15 أتعرّف متوازيات الأضلاع وخاصّياتها · 16 أتدرّب على حلّ المسائل · 17 أرسم متوازيات الأضلاع وأبنيها · 18 أكوّن الأعداد الكسريّة وأكتبها وأقرؤها · **19 أفكّك الأعداد الكسريّة وأركّبها** · 20 أحسب قيس محيط دائرة · 21 أتدرّب على حلّ المسائل · 22 أوظّف مكتسباتي وأقيّمها · 23 أتسلّى.
+> **الفترة الثالثة** — 24 أحسب محيط شكل مركّب من الأشكال المدروسة · 25 أتعرّف قابلية قسمة عدد صحيح طبيعي على 2 و5 · 26 أتعرّف قابلية قسمة عدد صحيح طبيعي على 3 و9 · 27 أتدرّب على حلّ المسائل · 28 أكتب عددا كسريًّا بطرق مختلفة · 29 أقارن الأعداد الكسريّة وأرتّبها · 30 أتدرّب على حلّ المسائل · 31 أتعرّف الأعداد الكسريّة والعشريّة وأكتبها بطرق مختلفة · 32 أوظّف التّناسب في تعرّف النّسبة المائويّة · 33 أحسب قيس مساحة المثلّث · 34 أتدرّب على حلّ المسائل · 35 أوظّف مكتسباتي وأقيّمها · 36 أتسلّى.
+> **الفترة الرابعة** — 37 أوظّف التّناسب في حساب النّسبة المائويّة · 38 أحسب مساحة متوازي أضلاع (متوازي الأضلاع، المعيّن، المستطيل، المربّع) · 39 أتدرّب على حلّ المسائل · 40 أتصرّف في مجموعة الأعداد الكسريّة · **41 أحسب مساحة شبه المنحرف** · 42 أجمع الأعداد الكسريّة وأطرحها · 43 أتدرّب على حلّ المسائل · 44 أوظّف مكتسباتي وأقيّمها · 45 أتسلّى.
+> **الفترة الخامسة** — 46 أحسب مساحة القرص الدّائري · 47 أنجز عمليّة ضرب عدد كسريّ في آخر صحيح · 48 أتدرّب على حلّ المسائل · 49 أوظّف مكتسباتي وأقيّمها · 50 أحسب مساحة شكل مركّب من الأشكال المدروسة · **51 أوظّف التّناسب في حساب السّرعة والمسافة** · 52 أتدرّب على حلّ المسائل · 53 أوظّف التّناسب في حساب السّرعة والمسافة والزّمن · 54 أتعرّف كلّا من متوازي المستطيلات والمكعّب وأنشرها وأصنعها · 55 أتدرّب على حلّ المسائل · 56 أوظّف مكتسباتي وأقيّمها · 57 أوظّف الجمع والطّرح والضّرب على الأعداد الكسريّة · 58 أحسب المساحة الجانبيّة والمساحة الجمليّة لكلّ من متوازي المستطيلات والمكعّب · 59 أتدرّب على حلّ المسائل · 60 أوظّف مكتسباتي وأقيّمها · 61 أتسلّى.
 
 ### Domaine : **العمليّات على الأعداد — حساب** (nombres & opérations) — مكوّن 1 p.58 ; théorie maître p.44–48
 
@@ -230,6 +234,38 @@ Le guide imprime, en tête du **القسم العمليّ**, une **خارطة ا
 - **Divergences signalées** : aucune divergence de scope guide↔contenu publié. Voir §6 pour les points de vigilance (théorie maître ℚ ≠ scope élève ; double structure 5 فترات / 3 ثلاثيّات ; bornes ×/÷ fractions et décimaux).
 
 ## 6. Incertitudes / à revérifier
+### Passe de vérification du 2026-09-19 — ce qui a été contrôlé à la source, et ce qui manque
+
+- **Méthode, et sa limite ici.** Les fiches 9ème de cette semaine ont été vérifiées par **deux
+  canaux indépendants** (image de la page + couche texte). **Ce PDF n'en offre qu'un** : sa couche
+  texte est un **mojibake** — l'arabe y est encodé par une fonte à mapping propriétaire sans
+  ToUnicode, si bien que « خارطة الكتاب » s'extrait en `ÜÉàµdG áWQÉN`. `pdftotext` rend 290 Ko
+  d'ordures exploitables pour rien. **Tout contrôle sur ce guide passe donc par l'image**
+  (`pdftoppm -r 200`), et le recoupement croisé qui a tranché l'anglais n'est pas disponible. À
+  savoir avant de promettre une vérification « à deux canaux » sur les guides CNP arabes.
+- ✅ **p.60 (عدد عناوين الدروس) — exacte, sur les 28 nombres.** Le §2 recopiait 6 / 17 (4+9+4) /
+  14 (6+4+4) / 12 (3+5+4) / 7 (2+2+3) / 5 (2+2+1) → 61 (23+22+16) : **tout concorde**, ligne par
+  ligne et colonne par colonne. Cette partie de la transcription est fiable.
+- ⚠️ **p.59 (خارطة الكتاب) — la ligne-résumé des 61 leçons était fausse sur ~9 créneaux.** Elle
+  condensait les titres et glissait : les leçons **19, 39, 40, 41, 51** y étaient données pour des
+  « مسائل » ou pour une autre notion, et l'ordre 16/17 était inversé. Corrigé : le §2 porte
+  désormais les **61 titres verbatim**. La plupart de ces notions n'étaient pas perdues pour
+  autant — les sections par domaine du §2 couvrent bien la مساحة شبه المنحرف (leçon 41) et la
+  سرعة/مسافة (leçon 51). Une seule ne l'était pas :
+- 🔴 **Trou réel — la leçon 19 « أفكّك الأعداد الكسريّة وأركّبها » n'est nulle part.** Ni dans
+  cette transcription (`تفكيك` n'y apparaît que pour les entiers, les décimaux et les figures
+  composées), **ni dans le contenu servi** : `الجزء الصحيح`, `عدد مختلط` → zéro occurrence dans
+  les six chapitres de fractions de `content/math-6eme`. `08-fractions-sens-lecture` enseigne la
+  comparaison à l'unité (بسط > مقام ⟹ أكبر من 1) mais **jamais** la décomposition en partie
+  entière + partie fractionnaire, qui est pourtant un titre officiel du programme en **année de
+  concours**. **Non comblé ici à dessein** : écrire ce chapitre serait générer depuis une fiche
+  sous la barre R-5, exactement ce que le rapport `programme:etat` reproche déjà à ce couple.
+- 📉 **La couverture réelle est de 47 pages sur 208, soit 23 %** — et non « inconnu ». Les plages
+  sont désormais inscrites à la fiche. Ce chiffre est le vrai sujet de ce couple : **plus de
+  vingt chapitres sont servis en production** (parcours `concours-6eme`, ouvert) depuis une
+  source lue au quart. Le théorique (p.7–56) et la quasi-totalité du **القسم العمليّ** (p.65–208,
+  où vivent les مذكرات leçon par leçon) restent non lus.
+
 
 - **Théorie maître (p.44–56) ≠ scope élève — point de vigilance n°1** : le guide pose explicitement (p.44) « منطلق دراسة الأعداد الكسريّة في السّنة السّادسة » dans **IN ⊂ 𝔻 ⊂ ℚ** et développe (p.45–47) la **structure de corps** des rationnels (جمع/طرح/ضرب dans l'ensemble des fractions, commutativité/associativité/élément neutre 0 et 1). **C'est du savoir-maître**, et le **scope élève** (خارطة p.58 + 61 leçons p.59 + contenu publié) se borne à : sens/équivalence/réduction/comparaison des fractions, **+ et −**, **× par un entier** (pas × ni ÷ de deux fractions), et écriture décimale. **Ne jamais** générer pour l'élève « كسر × كسر », « ÷ كسر », ni la notation ℚ/structure de corps.
 - **Double structure 5 فترات / 3 ثلاثيّات (confirmée, fiable)** : la **خارطة البرنامج** (p.58) et la **خارطة الكتاب** (p.59) numérotent les **61 leçons** sur **5 فترات** ; les tables **عدد عناوين الدروس** (p.60) et **توزيع الحجم الزّمنيّ** (p.64) ventilent par **3 ثلاثيّات** (160 س ; T1 60 / T2 50 / T3 50). Les deux sont **fidèles au guide** et **compatibles** (5 périodes pédagogiques imbriquées dans 3 trimestres). La correspondance fine فترة↔ثلاثيّ n'a pas été recopiée cellule par cellule (non requise pour le scope).
