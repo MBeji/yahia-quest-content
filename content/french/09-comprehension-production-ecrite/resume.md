@@ -3,7 +3,7 @@
 ## Lire (comprendre)
 
 - **Idée directrice / thèse** : l'idée centrale que défend le texte ; souvent en tête ou en fin. À distinguer d'un simple détail ou exemple.
-- **Type de texte** : narratif (raconte), descriptif (peint), informatif (explique des faits), argumentatif (défend une opinion).
+- **Type de texte** : narratif (raconte), descriptif (peint), informatif (donne des faits), argumentatif (défend une opinion).
 - **Connecteurs logiques** : révèlent le lien entre les idées — addition (de plus), cause (car), conséquence (donc), opposition (mais, pourtant, malgré), but (afin de).
 - **Ton / sentiment** : attitude de l'auteur (joie, ironie, résignation…), repérée via le champ lexical, les répétitions et la ponctuation.
 - **Inférence** : déduire une information non écrite à partir d'indices du texte, sans inventer.

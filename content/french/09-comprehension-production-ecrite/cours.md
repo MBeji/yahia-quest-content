@@ -79,7 +79,7 @@ l'essentiel, dans quel ordre les informations arrivent, et quel genre de questio
 | --------------------------- | -------------------------------------- | -------------------------------------------------------------- |
 | **Narratif**                | Raconte des événements qui se suivent  | verbes d'action, temps du récit, personnages, repères de temps |
 | **Descriptif**              | Peint un lieu, un objet, une personne  | adjectifs, verbes d'état, notations sensorielles               |
-| **Informatif / explicatif** | Donne des faits, explique un phénomène | chiffres, présent de vérité générale, ton neutre               |
+| **Informatif**              | Donne des faits, informe sans juger    | chiffres, présent de vérité générale, ton neutre               |
 | **Argumentatif**            | Défend une opinion, convainc           | thèse, arguments, connecteurs logiques, marques de jugement    |
 
 ::: exemple ce que le type t'apprend avant la lecture détaillée
@@ -88,7 +88,7 @@ l'essentiel, dans quel ordre les informations arrivent, et quel genre de questio
    paragraphes du milieu.
 2. **Narratif** → cherche le schéma narratif ; les questions porteront sur l'élément
    perturbateur et sur l'évolution du personnage.
-3. **Explicatif** → cherche la relation cause/conséquence ; les questions porteront sur le
+3. **Informatif** → cherche la relation cause/conséquence ; les questions porteront sur le
    mécanisme, **parce que** c'est ce que ce type de texte a à offrir.
 
 :::
