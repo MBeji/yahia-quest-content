@@ -3,6 +3,7 @@
 > **Source** : guide enseignant `502603P00.pdf` (`cnp-officiel/manuels/asasi/c6/enseignant/`) — « رياضيّات — السّنة السّادسة من التّعليم الأساسي — كتاب المعلّم » (وزارة التّربية والتّكوين · الإدارة العامّة للبرامج والتّكوين). Auteurs : الباجي القروي، البشير البرقاوي، حسين المسلّمي، توفيق البدوي ; التّقييم : فتحي الفخفاخ، توفيق شرّادة، محمّد علي. Guide de **208 p.** en deux parties : **القسم النّظريّ التّربويّ** (p.7–56) puis **القسم العمليّ** (p.57→). **6ème = année de concours national** (6ème, 9ème, Bac sont des années d'examen national) : c'est la **culmination du cycle primaire**, donc le scope rassemble et étend tout l'acquis du primaire (grands nombres, décimaux, fractions, proportionnalité/%, géométrie, périmètre/aire, mesures).
 > **Particularité de structure (≠ 4ème/5ème)** : le **القسم النّظريّ** de ce guide est **pédagogie générale** (المقاربة بالكفايات, الوضعيّة المشكل, التقييم, الخطأ التلمذيّ — فهرس 13 sections, p.8–9), **suivi** d'une **théorie maths de référence pour le maître** (p.44–56) qui **dépasse délibérément le niveau élève** (elle pose les fractions/décimaux dans **IN ⊂ 𝔻 ⊂ ℚ**, structure de corps : commutativité/associativité/élément neutre du + et du × dans l'ensemble des rationnels — p.44–47 ; échelle/سلّم p.49–50 ; pourcentage p.51). Le **scope élève autoritatif** est donné par la **خارطة البرنامج** (p.58, grille مكوّنات الكفاية × 5 فترات), la **خارطة الكتاب** (p.59 — les **61 titres de leçons** numérotés, répartis sur 5 فترات), et les tables de structuration (p.60 عدد عناوين الدروس par **3 ثلاثيّات** ; p.64 توزيع الحجم الزّمنيّ).
 > **Pages lues** : p.1 (titre), p.3–5 (المقدّمة, signée المؤلّفون), p.7 (titre **القسم النّظريّ التّربويّ**), **p.8–9 (الفهرس** — 13 sections de pédagogie générale), p.10–12 (التمشّي/الكفايات/الوضعيّة المشكل), p.17–32 (théorie pédago : حلّ المشكل, table مراحل حلّ المشكل p.24, التقييم §11 p.32), **p.44 (théorie فراكسيونس : « منطلق دراسة الأعداد الكسريّة في 6ème … IN ⊂ ID ⊂ Q » + كسر عشري vs non-décimal)**, p.45–47 (العمليّات في مجموعة الأعداد الكسريّة — جمع/طرح/ضرب, خاصيّات), **p.48 (الكسر العشريّ : 3/8 = 375/1000 décimal ; 2/3 non décimal)**, **p.49–50 (السلّم — échelle, distance carte/réelle, ratio 1/1000000)**, **p.51 (النسبة المئويّة — % = fraction /100, ex. -10% sur 840 د)**, p.57 (titre **القسم العمليّ**), **p.58 (خارطة البرنامج** — الكفاية + 3 مكوّنات × 5 فترات), **p.59 (خارطة الكتاب** — **61 titres de leçons numérotés, 5 فترات**, rendue 300 dpi puis croppée), **p.60 (عدد عناوين الدروس بكتاب التلميذ** — par **3 ثلاثيّات** : حساب 17, هندسة 14, تدريب-مسائل 12, إدماج+تقييم 7, أتسلّى 5 → **61 عنوان**), p.61 (أسبوع التخطيط الثلاثيّ, daté 2005/09/15→10/15), **p.62–63 (توزيع مواضيع الحساب الذّهنيّ** sur les 33+ leçons), **p.64 (توزيع الحجم الزّمنيّ السّنويّ — 160 س, 3 ثلاثيّات** : T1 60س, T2/T3 50س), p.110 (مذكرة بناء مثلّث), **p.130 (مذكرة مساحة القرص الدائريّ — « اكتشاف العلاقة بين مساحة القرص ومساحة المربّع »)**, p.160 (تصنيف مثلّثات على الشّبكة), p.190 (وضعيّة-مشكل خياطة). **Transcrit le** : 2026-06-28. **Statut** : transcription fidèle.
+> **Source secondaire — manuel élève** : `102609P00.pdf` — « الرياضيات — السّنة السّادسة من التّعليم الأساسي » (كتاب التلميذ), **174 p.**, ouvert le **2026-09-19**. Même fonte privée que le guide (couche texte en mojibake, lecture à l'image). **Pages lues : p.55–58** — la **leçon 19 « أفكّك الأعداد الكسريّة وأركّبها »** dans son intégralité (les cinq rubriques أستحضر / أستكشف / أتدرّب / أوظّف / أقيّم مكتسباتي, les 9 activités numérotées), transcrite au §2 bis à **profondeur de génération**. Le manuel imprime en tête de page le **numéro de la leçon** et en pied le **numéro de page** : c'est lui qui fixe le mapping leçon→page que la خارطة p.59 du guide ne porte pas. Sa numérotation **concorde exactement** avec celle du guide (18 أكوّن… ص 50 · **19 أفكّك… ص 55** · 20 أحسب قيس محيط دائرة ص 59 — les trois bandeaux de titre lus à l'image) — deux sources indépendantes qui s'accordent.
 > **Langue d'enseignement** : `ar` (monolingue — école TN). **gradeSlug** : `6eme-base`. **subject id** attendu : `math-6eme`.
 > **Notation** : chiffres **latins 0–9**, équations **LTR**, **virgule décimale** (الفاصلة), unités SI — y compris dans la prose arabe (jamais de chiffres arabo-indiens). C'est la règle CNP du guide lui-même : tous ses nombres et opérations sont écrits ainsi (ex. p.46 « 5/4 + 2/3 = 23/12 » ; p.48 « 375/1000 = 3/8 » ; p.51 « (840 × 10)/100 = 84 د » ; p.49 « 1/1000000 ») ; signes +, −, ×, ÷, <, >, =, ∥, ⊥, °, π. Le contenu publié confirme la virgule décimale (« 2,4 × 3 = 7,2 », « π ≈ 3,14 »).
 
@@ -99,6 +100,98 @@ Le guide imprime, en tête du **القسم العمليّ**, une **خارطة ا
 - **Concepts (p.62–63, « توزيع مواضيع الحساب الذّهنيّ على دروس الرياضيات »)** : un sujet de calcul mental associé à chaque leçon (تكميل، تحديد رتبة، ضِعف/نصف، × et ÷ par 10/100/1000، تقدير…), réparti sur les 33+ leçons numérotées.
 - **Bornes** : ✅ stratégies mentales dans le domaine de la leçon. ⛔ pas d'algorithme écrit imposé en calcul mental.
 
+## 2 bis. Leçon 19 « أفكّك الأعداد الكسريّة وأركّبها » — lue au manuel élève (102609, ص 55–58)
+
+> **Pourquoi cette leçon a sa propre section.** Elle était le **seul trou réel** du couple maths 6ᵉ
+> (§6) : un titre officiel du programme, en année de concours, enseigné nulle part — ni dans cette
+> fiche, ni dans `content/math-6eme`. Le **guide 502603 ne peut pas la combler** : son
+> **فهرس جذاذات التنشيط (ص 106)** ne liste que **cinq** مذكرات — n° **8** (ص 108), **18** (ص 115),
+> **32** (ص 122), **46** (ص 128), **48** (ص 155) — et la page **ص 107 (توصيات عمليّة)** dit pourquoi,
+> textuellement : « رأينا من الأنسب الاكتفاء بتقديم **نماذج من المذكّرات** ». Le guide **échantillonne**,
+> il ne couvre pas leçon par leçon. **Il n'existe donc pas de مذكرة pour la leçon 19**, et l'attendre
+> était sans objet. La source qui la porte est le **manuel élève**, ouvert ici pour cela.
+
+**Structure de la leçon (ص 55–58)** — les cinq rubriques du manuel, dans l'ordre imprimé, et les
+**9 activités numérotées** qu'elles portent :
+
+| rubrique      | page(s)  | activités | contenu                                                                    |
+| ------------- | -------- | --------- | -------------------------------------------------------------------------- |
+| **أستحضر**    | ص 55     | 1         | قاعة مدرسة المنارة — كلفة 40000 د, ربع/خمس/الباقي                          |
+| **أستكشف**    | ص 55–56  | 2         | جدول نتائج اختبار تقييميّ, السادسة «أ» و«ب» والقسمان معا ; 4 أسئلة (أ→د)   |
+| **أتدرّب**    | ص 56–57  | 3 · 4 · 5 · 6 · 7 | تفكيك بالمقام نفسه, تعمير الفراغات, الحدّ الناقص, الجزء الصحيح  |
+| **أوظّف**     | ص 57–58  | 8         | فطيرتان مقسّمتان على العائلة وأربعة جيران (جدولان)                        |
+| **أقيّم مكتسباتي** | ص 58 | 9         | الميزانيّة العائليّة لشهر جويلية — التداين                                 |
+
+**Ce que la leçon enseigne, verbatim des consignes :**
+
+- **Activité 3 (ص 56)** : « **أفكّك كلّ عدد كسريّ إلى مجموع أعداد كسريّة تختلف في البسط** » — donc le
+  **مقام reste constant**, seuls les **بُسُط** se répartissent. Items imprimés : 16/16, 12/10, 25/4,
+  13/15, 17/8, 9/8. Les trois premiers sont donnés avec leurs cases (2, 3 puis « … » termes).
+- **Activité 4 (ص 56)** : `…/20 = 7/20 + 3/20` · `…/30 = 2/30 + 8/30 + 15/30 + 4/30 + 1/30` ·
+  `…/10 = 4/10 + 6/10 + 3/10` · `…/8 = 1/8 + 4/8 + 3/8 + 2/8`. Deux des quatre résultats
+  **dépassent l'unité** (13/10 et 10/8) : la leçon ne se limite pas aux fractions propres.
+- **Activité 5 (ص 56)** : le **حدّ ناقص** — `…/20 + 4/20 + 15/20 = 28/20` (→ 9/20) ·
+  `45/50 + …/50 + …/50 = 50/50` · `4/12 + 3/12 = …/12` (→ 7/12) ·
+  `5/40 + …/40 + …/40 + …/40 = 40/40`. Deux de ces quatre items ont **plusieurs solutions**
+  (ceux à deux ou trois cases) : la **non-unicité du tafkīk est au programme**, pas un effet de bord.
+- **Activité 6 (ص 57)** : « **أفكّك كلّ عدد … إلى مجموع عددين أحدهما صحيح طبيعيّ والآخر كسريّ بسطه
+  أصغر من مقامه** » — c'est la **partie entière + partie fractionnaire**, nommée par sa définition
+  et non par le mot « عدد مختلط », qui **n'apparaît pas**. Items : **11/7 · 19/3 · 49/9 · 15/2 ·
+  90/11 · 79/9**.
+- **Activité 7 (ص 57)** : mélange des deux formes, dont `…/. = 3/5 + 8` et `9/7 = …/7 + 1` — l'entier
+  doit être réécrit avec le **مقام de la fraction** (8 = 40/5 ; 1 = 7/7).
+- **Activité 8 (ص 57–58, أوظّف)** : deux فطيرتان de même forme et même volume, coupées en parts
+  égales et distribuées à **عائلتنا + الجيران الأربعة**. Tableau 1 : 6 · 3 · 5 · 4 · 2 parts
+  (**total 20**) ; tableau 2 : 5 · 4 · 3 · 2 · 1 (**total 15**). La dernière ligne demande
+  « العدد الكسريّ الممثّل لمناب جميع العائلات » : **20/20 puis 15/15, soit l'unité les deux fois**.
+  La consigne « **أتأكّد من صحّة هذا التّقسيم بأكثر من طريقة** » est imprimée : la vérification
+  multiple est une exigence de la page.
+- **Activité 9 (ص 58, أقيّم مكتسباتي)** : budget familial de juillet — التغذية **9/20**,
+  مستلزمات المنزل **3/20**, اللباس **7/20**, الترفيه **5/20**. Le frère objecte : « **إنّك ستجبرين
+  أبويَّ على التداين إذا عملا باقتراحك** ». Somme = **24/20 > 20/20**. La mère propose un
+  **تخفيض بـ 4/20**, qui ramène à **20/20 exactement**. La question finale (« أقترح تصرّفا جديدا »)
+  est ouverte.
+
+**Bornes de cette leçon (⛔ / ✅)** — ce que la page autorise et ce qu'elle exclut :
+
+- ✅ Tafkīk **à مقام constant**, en 2 termes ou plus ; **plusieurs tafkīk pour un même nombre**.
+- ✅ Recomposition et **حدّ ناقص** par soustraction des بُسُط.
+- ✅ **Partie entière + partie fractionnaire** (11/7 = 1 + 4/7), obtenue par **division euclidienne
+  du بسط par le مقام** — la leçon 2 du guide (القسمة الإقليديّة) est le prérequis effectif.
+- ✅ Fractions **> 1** (13/10, 24/20, 49/9…) : elles sont la matière même de l'activité 6.
+- ⛔ **Le mot « عدد مختلط » n'est pas employé** — ne pas l'introduire ; le manuel dit
+  « عدد صحيح طبيعيّ + عدد كسريّ بسطه أصغر من مقامه ».
+- ⛔ **Aucune notation « 1 ¾ »** (entier accolé à la fraction) : le manuel écrit toujours **une
+  somme explicite** avec le signe +.
+- ⛔ Pas d'**addition de fractions de مقامات différents** ici : c'est la leçon **42**. Le
+  tafkīk se fait toujours à مقام constant.
+- ⚠️ **Le piège que la page construit elle-même** : dans l'activité 2, la السادسة «أ» compte
+  **28** élèves et la «ب» **25**, et les deux ensemble **53**. Les nombres kasriyy
+  correspondants sont **4/28**, **3/25** et **7/53** — et la quatrième question (د) demande
+  justement la relation. **7/53 n'est pas 4/28 + 3/25** : il vient d'un **recomptage dans une
+  population plus grande**, pas d'une somme de fractions. C'est la meilleure inoculation
+  disponible contre `math.frac.add-numerators-and-denominators`, et elle est **dans le
+  programme officiel**, pas inventée.
+
+**Table des effectifs de l'activité 2, reconstituée et vérifiée** (les cases vides du manuel sont
+à remplir par l'élève). **Ce qui est imprimé** : les effectifs 4, 10, 3 (السادسة «أ»), 3 et 8
+(السادسة «ب»), les totaux **28** et **53**, et **quatre** fractions — 11/28, 28/28, 9/25, 5/25.
+**Ce qui est déduit** : le total **25** de la السادسة «ب» (lisible au dénominateur de 9/25 et 5/25,
+et confirmé par 53 − 28), les effectifs 11, 9 et 5 (par leurs بُسُط), et toute la colonne « معا ».
+Les deux lectures se recoupent — chaque ligne de « معا » est la somme des deux classes, et chaque
+colonne somme à son total :
+
+| مستوى التملّك    | السادسة «أ» (28) | السادسة «ب» (25) | معا (53) |
+| ----------------- | ---------------- | ----------------- | -------- |
+| دون التملّك الأدنى | 4                | 3                 | 7        |
+| التملّك الأدنى     | 10               | 9                 | 19       |
+| التملّك الأقصى     | **11** (imprimé 11/28) | 8           | 19       |
+| التميّز            | 3                | 5                 | 8        |
+| **الجملة**         | **28**           | **25**            | **53**   |
+
+→ **Chapitre correspondant** : `24-decomposition-fractions` (displayOrder **9**, juste après
+`08-fractions-sens-lecture`), écrit le 2026-09-19 depuis cette lecture.
+
 ### Domaine : **التصرّف في المقادير — قيس** (grandeurs & mesure) — مكوّن 2 p.58
 
 #### Thème : **المُدَد الزمنيّة** (durées) — chapitre publié `22-durees`
@@ -192,7 +285,7 @@ Le guide imprime, en tête du **القسم العمليّ**, une **خارطة ا
 
 ## 4. Chapitrage retenu (→ alimente `manifest/6eme-base.json`)
 
-> Slugs **alignés sur le contenu déjà publié** (`content/math-6eme/` — **23 chapitres**, titres arabes confirmés). Ordre du tableau = **displayOrder publié** (entiers → opér. naturels → décimaux ×3 → multiples → divisibilité → fractions ×6 → proportionnalité → vitesse → géométrie : ⊥/∥ → angles → triangles → quadrilatères → aires → cercle → durées → solides). Le guide ne distribue pas par « chapitre » mais par **5 فترات** (خارطة p.58–59 : **61 titres de leçons**) + **3 ثلاثيّات** (p.60/64) : la colonne « notion » mappe chaque slug à l'indicateur/leçon correspondant (n° الدرس de la خارطة الكتاب p.59 cité quand identifiable). Pas de PDF de **manuel élève (كتاب التلميذ)** maths 6ème ouvert ici → colonne pages « — » (le guide y renvoie : « بكتاب التلميذ », les 61 عناوين, les مذكرات/جذاذات p.100→).
+> Slugs **alignés sur le contenu déjà publié** (`content/math-6eme/` — **23 chapitres**, titres arabes confirmés). Ordre du tableau = **displayOrder publié** (entiers → opér. naturels → décimaux ×3 → multiples → divisibilité → fractions ×6 → proportionnalité → vitesse → géométrie : ⊥/∥ → angles → triangles → quadrilatères → aires → cercle → durées → solides). Le guide ne distribue pas par « chapitre » mais par **5 فترات** (خارطة p.58–59 : **61 titres de leçons**) + **3 ثلاثيّات** (p.60/64) : la colonne « notion » mappe chaque slug à l'indicateur/leçon correspondant (n° الدرس de la خارطة الكتاب p.59 cité quand identifiable). Le **manuel élève (كتاب التلميذ)** `102609P00` est **ouvert depuis le 2026-09-19, mais sur ses seules ص 55–58** (leçon 19, §2 bis) : la colonne pages n'est donc renseignée que pour `24-decomposition-fractions`, et reste « — » partout ailleurs — non parce que le manuel manque, mais parce que ces pages-là n'ont pas encore été lues. Le guide y renvoie constamment (« بكتاب التلميذ », les 61 عناوين, les مذكرات/جذاذات p.100→).
 
 | #   | slug                                  | notion (مكوّن الكفاية / المؤشّر — خارطة p.58–59 · n° الدرس)                                                             | domaine | manuel élève (code · pages) |
 | --- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------- | --------------------------- |
@@ -204,29 +297,31 @@ Le guide imprime, en tête du **القسم العمليّ**, une **خارطة ا
 | 6   | `06-multiples-communs`                | **المضاعفات المشتركة وأصغر مضاعف مشترك** (نوعيّة 6ème) — خارطة p.59 الدرس 13                                            | حساب    | —                           |
 | 7   | `07-criteres-divisibilite`            | **قابليّة القسمة على 2 و3 و5 و9 و10** (نوعيّة 6ème) — خارطة p.59 الدرس 25–26                                            | حساب    | —                           |
 | 8   | `08-fractions-sens-lecture`           | الأعداد الكسريّة : المعنى/القراءة (بسط/مقام، جزء من كميّة، نصف المستقيم المدرّج، حاصل قسمة) — الدرس 18                  | حساب    | —                           |
-| 9   | `09-fractions-equivalentes`           | الكتابات الكسريّة المتساوية و**الاختزال** — خارطة p.59 الدرس 28                                                         | حساب    | —                           |
-| 10  | `10-comparaison-fractions`            | مقارنة وترتيب الكسور (نفس المقام/البسط، بالوحدة، **توحيد المقامات**) — الدرس 29                                         | حساب    | —                           |
-| 11  | `11-addition-soustraction-fractions`  | **جمع/طرح الكسور** (نفس المقام، التوحيد، مع عدد صحيح) — خارطة p.59 الدرس 42/57                                          | حساب    | —                           |
-| 12  | `12-fractions-decimales`              | الأعداد الكسريّة العشريّة (مقام 10/100/1000، كسر عشريّ ↔ عدد عشريّ) — الدرس 31                                          | حساب    | —                           |
-| 13  | `13-multiplication-fraction-entier`   | **ضرب كسر في عدد صحيح** (نضرب البسط، التبديليّة، اختزال) — خارطة p.59 الدرس 47                                          | حساب    | —                           |
-| 14  | `14-proportionnalite-pourcentage`     | التناسب ومعامله، **النسبة المئويّة** (/100، % من عدد، نِسَب مفيدة، ↔ كسر) — الدرس 14/32/37                              | حساب    | —                           |
-| 15  | `15-vitesse-distance-temps`           | التناسب : السرعة/المسافة/الزمن (معدّل، الوحدات) — خارطة p.59 الدرس 53                                                   | حساب    | —                           |
-| 16  | `16-perpendicularite-parallelisme`    | التعامد (⊥) والتوازي (∥) (الكوس/المسطرة، الخاصّيات) — مكوّن 3 ؛ الدرس 4                                                 | هندسة   | —                           |
-| 17  | `17-angles`                           | الزوايا (قياس/بناء بالمنقلة بالدّرجات ؛ حادّة/قائمة/منفرجة/مستقيمة) — الدرس 7                                           | هندسة   | —                           |
-| 18  | `18-triangles`                        | المثلّثات (عناصر، تصنيف بالأضلاع/الزوايا، **بناء**) — مذكرة p.110/160 ؛ الدرس 8                                         | هندسة   | —                           |
-| 19  | `19-quadrilateres`                    | الرباعيّات (متوازي الأضلاع/مستطيل/معيّن/مربّع/**شبه المنحرف**، خاصّيات) — الدرس 9                                       | هندسة   | —                           |
-| 20  | `20-aires-polygones`                  | **مساحات** المستطيل/المربّع/**المثلّث/متوازي الأضلاع/شبه المنحرف** + مركّب + وحدات المساحة — الدرس 2/33/38/50           | هندسة   | —                           |
-| 21  | `21-cercle-disque`                    | الدائرة/القرص : ق=2ر، **محيط 2πر** و**مساحة القرص πر²** (π≈3,14) — **مذكرة p.130** ؛ الدرس 20/46                        | هندسة   | —                           |
-| 22  | `22-durees`                           | المُدَد الزمنيّة (ثا/د/سا/يوم/أسبوع/شهر/سنة، تحويل بـ60/24، جمع/طرح، المدّة المنقضية) — مكوّن 2 ؛ الدرس 5               | قيس     | —                           |
-| 23  | `23-solides-cube-pave`                | **المكعّب ومتوازي المستطيلات** : أوجه/أحرف/رؤوس، نشر، **مساحة جانبيّة/جمليّة** (نوعيّة 6ème ؛ **لا حجم**) — الدرس 54/58 | هندسة   | —                           |
+| 9   | `24-decomposition-fractions`          | **تفكيك الأعداد الكسريّة وتركيبها** (مقام ثابت، عدّة تفكيكات، الحدّ الناقص، **جزء صحيح + جزء كسريّ**) — **خارطة p.59 الدرس 19** | حساب    | **102609 · ص 55–58**        |
+| 10  | `09-fractions-equivalentes`           | الكتابات الكسريّة المتساوية و**الاختزال** — خارطة p.59 الدرس 28                                                         | حساب    | —                           |
+| 11  | `10-comparaison-fractions`            | مقارنة وترتيب الكسور (نفس المقام/البسط، بالوحدة، **توحيد المقامات**) — الدرس 29                                         | حساب    | —                           |
+| 12  | `11-addition-soustraction-fractions`  | **جمع/طرح الكسور** (نفس المقام، التوحيد، مع عدد صحيح) — خارطة p.59 الدرس 42/57                                          | حساب    | —                           |
+| 13  | `12-fractions-decimales`              | الأعداد الكسريّة العشريّة (مقام 10/100/1000، كسر عشريّ ↔ عدد عشريّ) — الدرس 31                                          | حساب    | —                           |
+| 14  | `13-multiplication-fraction-entier`   | **ضرب كسر في عدد صحيح** (نضرب البسط، التبديليّة، اختزال) — خارطة p.59 الدرس 47                                          | حساب    | —                           |
+| 15  | `14-proportionnalite-pourcentage`     | التناسب ومعامله، **النسبة المئويّة** (/100، % من عدد، نِسَب مفيدة، ↔ كسر) — الدرس 14/32/37                              | حساب    | —                           |
+| 16  | `15-vitesse-distance-temps`           | التناسب : السرعة/المسافة/الزمن (معدّل، الوحدات) — خارطة p.59 الدرس 53                                                   | حساب    | —                           |
+| 17  | `16-perpendicularite-parallelisme`    | التعامد (⊥) والتوازي (∥) (الكوس/المسطرة، الخاصّيات) — مكوّن 3 ؛ الدرس 4                                                 | هندسة   | —                           |
+| 18  | `17-angles`                           | الزوايا (قياس/بناء بالمنقلة بالدّرجات ؛ حادّة/قائمة/منفرجة/مستقيمة) — الدرس 7                                           | هندسة   | —                           |
+| 19  | `18-triangles`                        | المثلّثات (عناصر، تصنيف بالأضلاع/الزوايا، **بناء**) — مذكرة p.110/160 ؛ الدرس 8                                         | هندسة   | —                           |
+| 20  | `19-quadrilateres`                    | الرباعيّات (متوازي الأضلاع/مستطيل/معيّن/مربّع/**شبه المنحرف**، خاصّيات) — الدرس 9                                       | هندسة   | —                           |
+| 21  | `20-aires-polygones`                  | **مساحات** المستطيل/المربّع/**المثلّث/متوازي الأضلاع/شبه المنحرف** + مركّب + وحدات المساحة — الدرس 2/33/38/50           | هندسة   | —                           |
+| 22  | `21-cercle-disque`                    | الدائرة/القرص : ق=2ر، **محيط 2πر** و**مساحة القرص πر²** (π≈3,14) — **مذكرة p.130** ؛ الدرس 20/46                        | هندسة   | —                           |
+| 23  | `22-durees`                           | المُدَد الزمنيّة (ثا/د/سا/يوم/أسبوع/شهر/سنة، تحويل بـ60/24، جمع/طرح، المدّة المنقضية) — مكوّن 2 ؛ الدرس 5               | قيس     | —                           |
+| 24  | `23-solides-cube-pave`                | **المكعّب ومتوازي المستطيلات** : أوجه/أحرف/رؤوس، نشر، **مساحة جانبيّة/جمليّة** (نوعيّة 6ème ؛ **لا حجم**) — الدرس 54/58 | هندسة   | —                           |
 
-> **Manuel élève** : le guide renvoie explicitement au **كتاب التلميذ** (« عدد عناوين الدروس بكتاب التلميذ » p.60 ; les **61 عناوين** de la خارطة p.59 ; les مذكرات/جذاذات numérotées p.100→), mais aucun PDF de manuel élève maths 6ème n'a été ouvert ici → colonne `pages` = **N/A** (à compléter si le `كتاب التلميذ` correspondant est ajouté dans `cnp-officiel/`).
+> **Manuel élève** : `102609P00` (174 p.) est au catalogue CNP et **a été ouvert le 2026-09-19**, mais **sur 4 pages seulement** (ص 55–58). C'est lui, et non la خارطة p.59, qui porte le **mapping leçon→page** : chaque leçon imprime son numéro en tête et sa page en pied. **Prochaine passe à haut rendement sur ce couple** : relever ces bandeaux sur les 174 pages — cela donnerait en une lecture la colonne `pages` des 24 chapitres, sans transcrire une ligne de contenu.
 >
 > **Note de couverture** : **aucun écart de couverture** guide↔contenu publié n'a été relevé — les 23 chapitres publiés couvrent les trois مكوّنات (حساب/قيس/هندسة) et les 61 leçons de la خارطة. (Les leçons « أتدرّب على حلّ المسائل / أوظّف مكتسباتي / أتسلّى / محطّات الإدماج » sont des **modalités** transversales, pas des chapitres de contenu.)
 
 ## 5. Sources croisées
 
 - **Guide enseignant** : `502603P00` — « رياضيّات — السّنة السّادسة من التّعليم الأساسي — كتاب المعلّم » (وزارة التّربية والتّكوين، الإدارة العامّة للبرامج والتّكوين ; auteurs الباجي القروي، البشير البرقاوي، حسين المسلّمي، توفيق البدوي ; تقييم فتحي الفخفاخ، توفيق شرّادة، محمّد علي) — source officielle principale.
+- **Manuel élève** : `102609P00` — « الرياضيات — السّنة السّادسة من التّعليم الأساسي » (كتاب التلميذ, 174 p.). Ouvert le 2026-09-19 sur **ص 55–58** (leçon 19, §2 bis). Le catalogue porte aussi un **كراس تمارين** `102610P00` (32 p., non ouvert) et une **مدونة القسم في الرياضيات** `502604P00` (480 p., non ouverte) — cette dernière est un recueil de **مذكّرات تدريب ودعم** indexées par **هدف مميّز** (أساسيّة / إدماجيّة / تميّز + علاجيّة), pas un livre de cours : c'est la ressource d'exercices la plus dense du corpus pour ce niveau, et elle est intacte.
 - **Niveau précédent** : `5eme-base/maths.md` (`502503P00`) — pour les **bornes inter-niveaux** : la 6ème _ajoute_ **multiples/PPCM + critères de divisibilité**, **+/− et × (par entier) des fractions** + fractions décimales, **× décimal × décimal**, **aire du triangle/parallélogramme/trapèze** + figures composées, **cercle/disque avec π (circonférence + aire du disque)**, **solides (surface du cube/pavé)**, **شبه المنحرف**. (La 5ème s'arrêtait : décimaux « عشريّ × صحيح », fractions sens/équivalence/comparaison seulement, aire rectangle/carré/composé, cercle = éléments + ق=2ر sans πr².)
 - **Niveau suivant** (collège, 7ème = 1ère année de l'enseignement de base 2ᵉ cycle) : pour la borne haute — **division PAR un décimal**, **× et ÷ de fractions**, **VOLUMES** (م³, capacités-cube), **somme des angles = 180°**, nombres relatifs, Pythagore/Thalès, facteurs premiers/PGCD relèvent du collège (exclus en 6ème).
 - **Contenu application** : `math-6eme` (**23 chapitres publiés**) — slugs du §4 alignés dessus ; les cours citent en sources le **programme officiel CNP 6ème**, le **manuel scolaire CNP** et des portails (tadris.tn, classi.tn).
@@ -252,14 +347,34 @@ Le guide imprime, en tête du **القسم العمليّ**, une **خارطة ا
   désormais les **61 titres verbatim**. La plupart de ces notions n'étaient pas perdues pour
   autant — les sections par domaine du §2 couvrent bien la مساحة شبه المنحرف (leçon 41) et la
   سرعة/مسافة (leçon 51). Une seule ne l'était pas :
-- 🔴 **Trou réel — la leçon 19 « أفكّك الأعداد الكسريّة وأركّبها » n'est nulle part.** Ni dans
-  cette transcription (`تفكيك` n'y apparaît que pour les entiers, les décimaux et les figures
-  composées), **ni dans le contenu servi** : `الجزء الصحيح`, `عدد مختلط` → zéro occurrence dans
-  les six chapitres de fractions de `content/math-6eme`. `08-fractions-sens-lecture` enseigne la
-  comparaison à l'unité (بسط > مقام ⟹ أكبر من 1) mais **jamais** la décomposition en partie
-  entière + partie fractionnaire, qui est pourtant un titre officiel du programme en **année de
-  concours**. **Non comblé ici à dessein** : écrire ce chapitre serait générer depuis une fiche
-  sous la barre R-5, exactement ce que le rapport `programme:etat` reproche déjà à ce couple.
+- ✅ ~~🔴 **Trou réel — la leçon 19 « أفكّك الأعداد الكسريّة وأركّبها » n'est nulle part.**~~
+  **COMBLÉ le 2026-09-19.** Le constat était juste : ni cette transcription, ni les six chapitres
+  de fractions de `content/math-6eme` (`الجزء الصحيح`, `عدد مختلط` → zéro occurrence) ne portaient
+  cette leçon, pourtant un titre officiel du programme en **année de concours**.
+  - **La réserve posée alors — « ne pas générer depuis une fiche sous la barre » — était la bonne
+    règle, et elle n'obligeait pas à attendre.** Elle interdit de générer *depuis une fiche non
+    lue* ; elle n'interdit pas de **lire les pages qui portent cette leçon**, ce qui la fait passer
+    la barre **pour elle-même**. C'est ce qui a été fait.
+  - **Ce n'est pas le guide qui la porte.** Son **فهرس جذاذات التنشيط (ص 106)** n'échantillonne que
+    **cinq** مذكرات — 8, 18, 32, 46, 48 — et la ص 107 l'assume : « رأينا من الأنسب الاكتفاء بتقديم
+    **نماذج من المذكّرات** ». **Chercher une مذكرة 19 dans ce guide, c'est chercher ce qui n'existe
+    pas** ; la ص 106 le dit en une page, avant toute lecture. À retenir pour les autres leçons
+    orphelines de ce couple : le guide couvre le **cadre**, le manuel élève couvre les **leçons**.
+  - **Source retenue** : manuel élève `102609P00`, **ص 55–58**, lues à l'image — transcription à
+    profondeur de génération au **§2 bis**, avec les 9 activités, les bornes ⛔/✅ et la table des
+    effectifs reconstituée.
+  - **Chapitre écrit** : `content/math-6eme/24-decomposition-fractions` (displayOrder **9**, après
+    `08-fractions-sens-lecture`) — cours, résumé, quiz et 5 exercices, **35 questions**. Compétence
+    neuve `math.frac.decomposition` (prérequis `math.frac.sens` seul : la leçon 19 précède la 42,
+    donc elle ne peut pas dépendre de l'addition des fractions). Quatre tags de méprise neufs, dont
+    `math.frac.partie-entiere-quotient-et-reste-inverses`.
+  - ⚠️ **Le slug dit 24 et l'ordre dit 9, et c'est voulu** : le `chapterId` est calculé **sur le
+    slug**, donc renommer `09-…`→`10-…` pour garder la numérotation alignée **ré-indexerait 15
+    chapitres** et orphelinerait les étoiles déjà acquises dessus (`docs/etoiles-et-sceaux.md`).
+    53 chapitres du corpus vivent déjà avec ce décalage, dont tout `content/math/`.
+  - 📌 **Ce que cela ne règle pas** : la couverture du guide reste à 23 %, et ce comblement ne
+    porte que sur **une** leçon. Rien ne dit que les 60 autres sont servies fidèlement — cette
+    leçon-ci était simplement la seule dont l'**absence** était démontrée.
 - 📉 **La couverture réelle est de 47 pages sur 208, soit 23 %** — et non « inconnu ». Les plages
   sont désormais inscrites à la fiche. Ce chiffre est le vrai sujet de ce couple : **plus de
   vingt chapitres sont servis en production** (parcours `concours-6eme`, ouvert) depuis une
@@ -269,7 +384,7 @@ Le guide imprime, en tête du **القسم العمليّ**, une **خارطة ا
 
 - **Théorie maître (p.44–56) ≠ scope élève — point de vigilance n°1** : le guide pose explicitement (p.44) « منطلق دراسة الأعداد الكسريّة في السّنة السّادسة » dans **IN ⊂ 𝔻 ⊂ ℚ** et développe (p.45–47) la **structure de corps** des rationnels (جمع/طرح/ضرب dans l'ensemble des fractions, commutativité/associativité/élément neutre 0 et 1). **C'est du savoir-maître**, et le **scope élève** (خارطة p.58 + 61 leçons p.59 + contenu publié) se borne à : sens/équivalence/réduction/comparaison des fractions, **+ et −**, **× par un entier** (pas × ni ÷ de deux fractions), et écriture décimale. **Ne jamais** générer pour l'élève « كسر × كسر », « ÷ كسر », ni la notation ℚ/structure de corps.
 - **Double structure 5 فترات / 3 ثلاثيّات (confirmée, fiable)** : la **خارطة البرنامج** (p.58) et la **خارطة الكتاب** (p.59) numérotent les **61 leçons** sur **5 فترات** ; les tables **عدد عناوين الدروس** (p.60) et **توزيع الحجم الزّمنيّ** (p.64) ventilent par **3 ثلاثيّات** (160 س ; T1 60 / T2 50 / T3 50). Les deux sont **fidèles au guide** et **compatibles** (5 périodes pédagogiques imbriquées dans 3 trimestres). La correspondance fine فترة↔ثلاثيّ n'a pas été recopiée cellule par cellule (non requise pour le scope).
-- **خارطة الكتاب (p.59) — lecture des 61 titres** : lue à **300 dpi croppée par colonnes** ; les **titres de leçons** (et leur numéro 1→61) ont été lus de façon fiable (ils fixent la séquence et l'alignement des 23 chapitres). Quelques titres « مسائل/توظيف/أتسلّى » se répètent par période (modalités). Les **numéros de page exacts** des leçons dans le كتاب التلميذ ne figurent pas sur cette carte (le كتاب التلميذ n'a pas été ouvert). Rouvrir p.59 colonne par colonne à ≥ 300 dpi si l'on veut un mapping leçon→chapitre exhaustif.
+- **خارطة الكتاب (p.59) — lecture des 61 titres** : lue à **300 dpi croppée par colonnes** ; les **titres de leçons** (et leur numéro 1→61) ont été lus de façon fiable (ils fixent la séquence et l'alignement des 23 chapitres). Quelques titres « مسائل/توظيف/أتسلّى » se répètent par période (modalités). Les **numéros de page exacts** des leçons ne figurent pas sur cette carte. Ils sont dans le **كتاب التلميذ** (`102609P00`), qui imprime le numéro de leçon en tête de page et la page en pied — ouvert le 2026-09-19 sur ص 55–58 seulement (§2 bis) ; relever ses 174 bandeaux donnerait le mapping leçon→page complet. Rouvrir p.59 colonne par colonne à ≥ 300 dpi si l'on veut un mapping leçon→chapitre exhaustif.
 - **Bornes décimaux — × oui / ÷ par décimal non (confirmé)** : le contenu `05` enseigne **ضرب عشريّ × عشريّ** (ex. 1,5 × 0,2 = 0,3) — _au programme 6ème_ — mais la **division** y est **« قسمة عدد عشريّ على عدد طبيعيّ »** uniquement (pas de division par un décimal). À garder : ne pas générer de division 6ème à **diviseur décimal**.
 - **Plafond des naturels (millions vs milliards)** : la خارطة (مكوّن 1) parle des **أعداد الصحيحة الطبيعيّة** sans plafond chiffré ; les **أصناف** nommés (contenu `01`) incluent **الملايين et المليارات**, et l'exemple lu « 45 207 089 » est à **8 chiffres**. Borne retenue : **millions/milliards** (lecture/écriture par classes). À confirmer sur le كتاب التلميذ si des nombres ≥ 10⁹ y figurent explicitement.
 - **Aire du disque & solides — bornes hautes (confirmées)** : la مذكرة p.130 confirme l'**aire du قرص** (πr², par comparaison au carré) _au programme 6ème_, et le contenu `23` borne les **solides à la surface** (janibiyya/jumliyya) **sans volume**. Ne pas générer de **volume** (م³) ni de division/multiplication de fractions en 6ème.

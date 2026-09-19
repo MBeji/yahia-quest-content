@@ -1,0 +1,183 @@
+{
+  "title": "⭐⭐ تمرين مراجعة (نمط امتحان): التفكيك والتركيب",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 70,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "اكتب 19/3 عددًا صحيحًا طبيعيًّا وجزءًا كسريًّا بسطُه أصغر من مقامه.",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 + 1/3"
+        },
+        {
+          "id": "b",
+          "text": "1 + 6/3",
+          "misconceptionTag": "math.frac.partie-entiere-quotient-et-reste-inverses"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "misconceptionTag": "math.frac.partie-entiere-reste-oublie"
+        },
+        {
+          "id": "d",
+          "text": "19 + 1/3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نقسم 19 على 3: الخارج 6 والباقي 1، لأنّ 19 = (3 × 6) + 1.",
+      "difficulty": 2,
+      "competencies": [
+        "math.frac.decomposition"
+      ]
+    },
+    {
+      "prompt": "اكتب 15/2 عددًا صحيحًا طبيعيًّا وجزءًا كسريًّا بسطُه أصغر من مقامه.",
+      "options": [
+        {
+          "id": "a",
+          "text": "7 + 1/2"
+        },
+        {
+          "id": "b",
+          "text": "1 + 7/2",
+          "misconceptionTag": "math.frac.partie-entiere-quotient-et-reste-inverses"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "misconceptionTag": "math.frac.partie-entiere-reste-oublie"
+        },
+        {
+          "id": "d",
+          "text": "7 + 1/15",
+          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نقسم 15 على 2: الخارج 7 والباقي 1، لأنّ 15 = (2 × 7) + 1.",
+      "difficulty": 2,
+      "competencies": [
+        "math.frac.decomposition"
+      ]
+    },
+    {
+      "prompt": "أكمل: … = 1/9 + 4/9 + 2/9",
+      "options": [
+        {
+          "id": "a",
+          "text": "7/9"
+        },
+        {
+          "id": "b",
+          "text": "7/27",
+          "misconceptionTag": "math.frac.add-denominators"
+        },
+        {
+          "id": "c",
+          "text": "7/9 وهو أكبر من الوحدة",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        },
+        {
+          "id": "d",
+          "text": "9/9"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نجمع البُسُط ونُبقي المقام: 1 + 4 + 2 = 7، فالنتيجة 7/9؛ وهي أصغر من الوحدة لأنّ بسطها أصغر من مقامها.",
+      "difficulty": 2,
+      "competencies": [
+        "math.frac.decomposition"
+      ]
+    },
+    {
+      "prompt": "في الكتابة 5/40 + …/40 + …/40 + …/40 = 40/40، ما مجموعُ الحدود الثلاثة الناقصة؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "35/40"
+        },
+        {
+          "id": "b",
+          "text": "35/120",
+          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+        },
+        {
+          "id": "c",
+          "text": "45/40",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "35/40 موزّعةً بطريقةٍ واحدةٍ فقط"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "مجموع البُسُط يجب أن يبلغ 40، وعندنا 5 منها، فيبقى 35 موزّعةً على ثلاثة حدود بأكثر من طريقة ممكنة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.frac.decomposition"
+      ]
+    },
+    {
+      "prompt": "أيُّ هذه التفكيكات للعدد 7/10 غيرُ صحيح؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "7/10 = 3/5 + 4/5"
+        },
+        {
+          "id": "b",
+          "text": "7/10 = 4/10 + 3/10"
+        },
+        {
+          "id": "c",
+          "text": "7/10 = 2/10 + 2/10 + 3/10"
+        },
+        {
+          "id": "d",
+          "text": "7/10 = 1/10 + 6/10"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "في التفكيك يبقى المقام 10 في كلّ حدّ؛ أمّا 3/5 + 4/5 فيساوي 7/5 وهو أكبر من الوحدة، بينما 7/10 أصغر منها.",
+      "difficulty": 2,
+      "competencies": [
+        "math.frac.decomposition"
+      ]
+    },
+    {
+      "prompt": "أكمل: …/8 = 1/8 + 4/8 + 3/8 + 2/8",
+      "options": [
+        {
+          "id": "a",
+          "text": "10/8"
+        },
+        {
+          "id": "b",
+          "text": "10/32",
+          "misconceptionTag": "math.frac.add-denominators"
+        },
+        {
+          "id": "c",
+          "text": "10/8 وهو أصغر من الوحدة",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        },
+        {
+          "id": "d",
+          "text": "8/8"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "مجموع البُسُط 1 + 4 + 3 + 2 = 10 والمقام يبقى 8؛ والنتيجة 10/8 أكبر من الوحدة لأنّ بسطها أكبر من مقامها.",
+      "difficulty": 2,
+      "competencies": [
+        "math.frac.decomposition"
+      ]
+    }
+  ]
+}
