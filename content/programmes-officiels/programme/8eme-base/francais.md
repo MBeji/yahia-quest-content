@@ -14,7 +14,7 @@
 > d'accompagnement » du manuel, qui se situe lui-même « à mi-chemin entre **le programme** de français
 > et le manuel » — p.41 — ; le **texte intégral du programme** stricto sensu n'est pas reproduit ici,
 > mais ce document en transcrit fidèlement le canevas, les capacités et les faits de langue. cf. §6.)
-> **Pages lues (couche-texte intégrale + vision de contrôle)** : **lecture intégrale de la couche-texte**
+> **Pages lues (couche-texte intégrale + vision de contrôle)** — **44/44 p.**, `pagesTotal` mesuré sur le PDF et `pagesLues` porté au registre le **2026-09-19** (il y disait « inconnu ») ; **audité au source le même jour** : 3 écarts corrigés (l'oral du module 4, « expression du but » rendue au Texte long (2), le compte des modules d'apprentissage) et la **RÉPARTITION MODULAIRE (p.14–16)** transcrite, qui manquait. **lecture intégrale de la couche-texte**
 > (`pdftotext -layout`, **propre**, ~74 Ko de français exploitable, pas de mojibake) — toutes les
 > 44 pages ; **vision de contrôle** : p.1 (couverture), **p.7 (CANEVAS GÉNÉRAL DES APPRENTISSAGES =
 > plan annuel officiel)**. **Transcrit le** : 2026-06-29. **Statut** : transcription fidèle du document
@@ -65,7 +65,7 @@ description et au dialogue**.
 > **Transcription fidèle du tableau officiel p.7** (vérifiée **en vision**, table reproduite à
 > l'identique). Légende du document : **A** = apprentissage structuré · **C** = consolidation · **S** =
 > sensibilisation. Colonnes du canevas : **Oral · Centre d'intérêt · Langue · Écriture**. Le document
-> prévoit **6 modules d'apprentissage** (un **centre d'intérêt** par module) + **2 modules de lecture**
+> prévoit **5 modules d'apprentissage** (un **centre d'intérêt** par module — la fiche a longtemps écrit 6, en contradiction avec sa propre lecture du canevas trois lignes plus bas) + **2 modules de lecture**
 > d'œuvre intégrale (« **Texte long (1)** » et « **Texte long (2)** ») + le **module de contrôle/
 > consolidation des prérequis** (en ouverture) + des **modules de remédiation** (cf. §3). Chaque module
 > fait tourner **Oral · Lecture · Langue · Écriture (+ évaluation/remédiation)**.
@@ -76,7 +76,7 @@ description et au dialogue**.
 | **2. Allons voir un spectacle**        | **(s') informer** — A        | **Expansions du GN** (groupe adjectival, proposition relative) ; **verbes d'action / verbes d'état** ; **passé simple / imparfait** | **Raconter en décrivant une personne, un animal**      |
 | **3. Voyages et découvertes**          | **(s') informer** — A        | **Temps, lieu, détermination, modalisation**                                                                                        | **Raconter en décrivant un lieu, un objet** (Informer) |
 | **4. Lectures inoubliables**           | **(s') informer** — A        | **Temps du récit / temps du discours ; verbes introducteurs ; types et formes de phrases**                                          | **Raconter en faisant parler**                         |
-| **5. Les amis de la nature**           | **Discuter (dialoguer)** — S | **Relations logiques cause / conséquence ; conditionnel ; subjonctif ; expression du but**                                          | **Expliquer / argumenter (la justification)**          |
+| **5. Les amis de la nature**           | **Discuter (dialoguer)** — S | **Relations log. cause conséq ; conditionnel, subj** _(sans « expression du but » : le canevas p.7 la porte sur la ligne **Texte long (2)**, pas ici)_                                          | **Expliquer / argumenter (la justification)**          |
 | **Module de lecture — Texte long (1)** | —                            | **Accord du participe passé ; genre et nombre du nom ; homophones `ou / où`**                                                       | —                                                      |
 | **Module de lecture — Texte long (2)** | —                            | **Expression du but**                                                                                                               | —                                                      |
 
@@ -85,6 +85,56 @@ description et au dialogue**.
 > (qui « interviennent deux fois dans l'année », p.37). Le document précise (p.7, Remarque) : « **Le
 > manuel ne propose pas de contenu relatif au module de contrôle et de consolidation des prérequis ; il
 > appartient au professeur d'en concevoir un** » — d'où l'absence de ce module dans le tableau.
+
+### L'ordre imprimé du canevas, et sa colonne « Module » — _relu le 2026-09-19_
+
+Deux choses que la table ci-dessus ne rendait pas :
+
+1. **L'ordre imprimé** intercale les modules de lecture : le canevas p.7 va
+   **Les années collège → Allons voir un spectacle → Texte long (1) → Voyages et découvertes →
+   Lectures inoubliables → Texte long (2) → Les amis de la nature**. La fiche les avait regroupés
+   en fin de table. ⚠️ Ce n'est **pas** une progression opposable : le document écrit p.13 que
+   « le programme présente les contenus **de façon successive, mais non progressive** : il ne
+   cherche à imposer ni modèles de gestion, ni progression annuelle type ». L'ordre du canevas
+   illustre, il ne prescrit pas.
+2. **Une colonne « Module »** que la fiche omettait, et qui vaut **1** partout **sauf pour
+   « Texte long (2) », qui vaut 2**.
+
+**Durée** (p.13) : « **Les modules peuvent s'étaler sur 10 heures ou 13 heures**, en fonction des
+buts qu'on leur assigne. »
+
+### RÉPARTITION MODULAIRE — trois propositions pour le module 1 (p.14–16) — _transcrit le 2026-09-19_
+
+> Le document donne **trois découpages possibles du même module 1**, « à titre d'illustrations
+> concrètes », pas de modèles. Principes communs (p.14) : **alternance et intégration**, et
+> « **tous les modules commencent par une séance d'oral** : dans ce genre de situation les élèves
+> sont plus motivés et la communication est moins artificielle ». Les ressources linguistiques y
+> sont « **mises au service des capacités visées** », jamais étudiées pour elles-mêmes.
+
+- **Proposition 1** — **13 séances**, en quatre colonnes _Oral · Lecture · Langue · Écrit_ :
+  S1 oral _présenter, se présenter_ → S2 langue _les présentatifs_ → S3 lecture **Retrouvailles de
+  rentrée** → S4 écrit _reconnaître les composantes du récit_ → S5 oral _présenter (s'adresser à
+  quelqu'un en utilisant les formules appropriées)_ → S6 langue _les mots de reprise_ →
+  S7 lecture **La gloire scolaire** → S8 écrit _les personnages dans le récit_ → S9 langue _les
+  pronoms personnels sujet, COD_ → S10 écrit _reconnaître un récit à la 1ʳᵉ ou à la 3ᵉ personne_ →
+  S11 lecture **un élève brillant** → S12 langue _vocabulaire_ → S13 _travail d'écriture /
+  réécriture_.
+- **Proposition 2** — les mêmes 13 séances regroupées en **3 séquences**, chacune bouclant
+  oral → lecture → langue → écrit, la 13ᵉ étant l'**évaluation**, suivie d'une
+  **évaluation-remédiation**. Supports de lecture nommés ici : **tristesse de départ**,
+  **Au collège**, et une **lecture d'image**. _(Le document commente : « ce mode de traitement en
+  séquences vise à la construction d'apprentissages cohérents et complémentaires ».)_
+- **Proposition 3** — une répartition à deux colonnes **Activité / Travail en classe · hors-classe**,
+  qui explicite ce qui se prépare à la maison : la lecture d'un texte se **prépare** (lecture +
+  réponses aux questions de la rubrique « **Je découvre le texte** ») et ses exercices se font
+  **hors classe** ; la grammaire est une « **Mise au point** » en classe + des **exercices
+  hors-classe**.
+
+> **Ce que ça donne pour la génération** : les trois propositions nomment **six supports de lecture
+> réels** du module 1 (_Retrouvailles de rentrée · La gloire scolaire · un élève brillant ·
+> tristesse de départ · Au collège_ + une lecture d'image) et la rubrique du manuel élève qui ouvre
+> chaque texte (« **Je découvre le texte** »). Et elles fixent la maille : **13 séances par module**,
+> **10 à 13 heures**, une évaluation en clôture.
 
 ### Détail par module (faits de langue + supports nommés, relevés des fiches pédagogiques p.17–25)
 
@@ -148,7 +198,7 @@ description et au dialogue**.
 
 #### Module 4 — Centre d'intérêt : **Lectures inoubliables** (capacité : _raconter en faisant parler_)
 
-- **Oral** : **(s') informer** (apprentissage).
+- **Oral** : **Expliquer / justifier** (apprentissage) _(relu au canevas p.7 le 2026-09-19 : la fiche portait « (s') informer », qui est l'oral des modules 2 et 3 — pas celui-ci)_.
 - **Langue** : **les temps du récit / les temps du discours** ; **les verbes introducteurs** (de parole) ;
   **les types et les formes de phrases**.
 - **Écrit** : **raconter en faisant parler** — **insertion du dialogue dans le récit**.
@@ -163,7 +213,7 @@ description et au dialogue**.
 
 - **Oral** : **discuter (dialoguer)** — **sensibilisation** (statut S : première ouverture vers
   l'argumentation, non encore structurée).
-- **Langue** : **les relations logiques de cause et de conséquence** ; **l'expression du but** ; **le
+- **Langue** : **les relations logiques de cause et de conséquence** ; **le
   conditionnel** ; **le subjonctif** (premiers emplois). Exemples relevés dans les devoirs (p.26–29) :
   _grâce à / à cause de_ ; _de sorte que / puisque_ ; _afin de / pour que / de peur que_ ; subjonctif
   après _il est indispensable que / il est regrettable que / souhaiter que / craindre que_.

@@ -78,8 +78,8 @@
     },
     {
       "matiere": "francais",
-      "statut": "partielle",
-      "profondeur": "mixte",
+      "statut": "complete",
+      "profondeur": "generation",
       "sources": [
         {
           "code": "521802",
@@ -87,18 +87,28 @@
             "P00"
           ],
           "role": "enseignant",
-          "pagesTotal": null,
-          "pagesLues": "inconnu"
+          "pagesTotal": 44,
+          "pagesLues": [
+            [
+              1,
+              44
+            ]
+          ]
         }
       ],
       "sujets": [
         "french-8eme"
       ],
       "sourcesLibres": [],
-      "r7": null,
-      "maj": "2026-07-17",
-      "par": "seed",
-      "notes": "Seed depuis _INDEX ([~] historique). Évaluer lecture + profondeur avant génération (R-5)."
+      "r7": {
+        "date": "2026-09-19",
+        "portee": "integrale",
+        "verdict": "Guide 521802P00, 44 p., francais et couche texte propre — il etait classe « couverture inconnue » faute de pagesTotal, pas faute de lecture : la fiche declarait deja une lecture integrale de la couche texte. Audit au source : TROIS ecarts. (1) Le canevas p.7 donne « Expliquer/justifier » comme oral du module 4 « Lectures inoubliables » ; la fiche portait « (s') informer », qui est l'oral des modules 2 et 3. (2) « Expression du but » etait comptee dans les faits de langue du module 5 ; le canevas la porte sur la ligne « Texte long (2) », et nulle part ailleurs. (3) La fiche annoncait « 6 modules d'apprentissage » trois lignes avant d'en lire 5 dans le meme canevas. AJOUTE : l'ordre imprime du canevas (les modules de lecture sont INTERCALES : Texte long (1) apres le module 2, Texte long (2) apres le module 4) avec la reserve que le document lui-meme pose p.13 — « le programme presente les contenus de facon successive, mais non progressive » —, la colonne « Module » (1 partout, 2 pour Texte long (2)), la duree (10 ou 13 heures par module), et surtout la RÉPARTITION MODULAIRE p.14-16 qui manquait entierement : trois decoupages du module 1, 13 seances, six supports de lecture nommes (Retrouvailles de rentree, La gloire scolaire, un eleve brillant, tristesse de depart, Au college, une lecture d'image) et la rubrique du manuel eleve qui ouvre chaque texte (« Je decouvre le texte »).",
+        "corrections": 3
+      },
+      "maj": "2026-09-19",
+      "par": "claude/great-wright-e4cqyu",
+      "notes": "Seed depuis _INDEX ([~] historique). Évaluer lecture + profondeur avant génération (R-5). ▸ 2026-09-19 : `pagesTotal` mesure (44) et `pagesLues` porte a 1-44 — la fiche etait lue, c'est le registre qui l'ignorait. Audit R-7 integral le meme jour : 3 ecarts corriges, RÉPARTITION MODULAIRE transcrite. Statut porte a `complete` / `generation`. Ce qui separe de `validee-r7` : rien de structurel, mais l'audit a porte sur le canevas, les modules et la repartition — pas sur chaque fiche pedagogique p.17-25 ligne a ligne."
     }
   ]
 }
