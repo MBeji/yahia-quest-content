@@ -1,7 +1,7 @@
 # الإيقاظ العلمي (Éveil scientifique) — 5ème année de base · programme officiel CNP
 
-> **Source** : guide enseignant `503504P00.pdf` (`cnp-officiel/manuels/asasi/c5/enseignant/`) — « الدليل المرجعي في الإيقاظ العلمي — السنة الخامسة من التعليم الأساسي » (المركز الوطني البيداغوجي · وزارة التربية). **Manuel élève** disponible : `103504P00.pdf` (`…/asasi/c5/eleve/`, 176 p.) — « الإيقاظ العلمي — السنة الخامسة » — **dont l'index (p.175) fournit la colonne pages de §4** (offset PDF↔imprimé = 0).
-> **Pages lues (guide)** : p.3–4 (المقدّمة — structure en 4 وحدات), p.5–6 (دور المتعلّم / المعلّم / العائلة), p.7–12 (التمشّيات البيداغوجيّة — التمشّي البنائي vs التعليمي, حلّ وضعيّة مشكل, المشروع البيداغوجي), p.14–15 (مخطّط/مراحل المشروع البيداغوجي — bordereaux administratifs), p.16 (**الاقتدارات المخصوصة المندمجة** — matrice الكفايات الأفقيّة × اقتدارات الإيقاظ), p.17 (**توضيح الكفايات** — texte de la كفاية نهائيّة + ses deux مكوّنين), p.19 (التقييم — réf. programmes 2002/1980), p.22–23 (شبكات تقييم لبناء الاختبار — قاعدة 75% / الثلثين), p.24 (**VIII- تطوّر دراسة المحاور 1ère→6ème** — deux matrices), p.25–28 (**IX- مخطّط الوحدات** — 4 cartes conceptuelles, une par وحدة), p.29–34 (**X- التخطيط السّنوي** — tableaux أهداف مميّزة / محتويات / حصص par محور, pivotés 90°). **Pages lues (manuel élève)** : p.5 (الوحدات), p.174 (exemple de leçon), p.175 (**الفهرس** — pages par درس). **Transcrit le** : 2026-06-28. **Repris le 2026-09-19** (lecture à l'image, page par page) : **p.35–156** — les unités 1 (`الضّوء`), 2 (`جسم الإنسان`) et 3 (`الكهرباء`) en entier, `الملفّ العلمي` + les 16 جذاذات + les trois `وضعيّة تعلّم بالإدماج` + les trois `وضعيّة تقييم` avec leurs barèmes — et **p.221–223** (`خريطة كتاب المعلّم والفهرس` + `المراجع`), qui donnent la carte des 189 pages du corps du guide (§2 bis). **Couverture réelle : 153 p. / 223, soit 69 %** (3–12, 14–17, 19, 22–156, 221–223). Restent non lues : p.1–2, 13, 18, 20–21, **157–220** (unité 4 `الوسط البيئي`). **Statut** : `partielle` — la génération reste interdite hors unités 1 à 3.
+> **Source** : guide enseignant `503504P00.pdf` (`cnp-officiel/manuels/asasi/c5/enseignant/`) — titre réel, lu sur sa page 1 : « **كتاب الإيقاظ العلمي — كتاب المعلّم للسّنة الخامسة من التّعليم الأساسي** », تأليف **مصطفى الكافي** و**محمّد برنيفة** (المركز الوطني البيداغوجي · وزارة التربية). ⚠️ Le catalogue CNP l'annonce comme « الدليل المرجعي في الإيقاظ العلمي » — ce n'est pas son titre (§6 écart 26). **Manuel élève** disponible : `103504P00.pdf` (`…/asasi/c5/eleve/`, 176 p.) — « الإيقاظ العلمي — السنة الخامسة » — **dont l'index (p.175) fournit la colonne pages de §4** (offset PDF↔imprimé = 0).
+> **Pages lues (guide)** : p.3–4 (المقدّمة — structure en 4 وحدات), p.5–6 (دور المتعلّم / المعلّم / العائلة), p.7–12 (التمشّيات البيداغوجيّة — التمشّي البنائي vs التعليمي, حلّ وضعيّة مشكل, المشروع البيداغوجي), p.14–15 (مخطّط/مراحل المشروع البيداغوجي — bordereaux administratifs), p.16 (**الاقتدارات المخصوصة المندمجة** — matrice الكفايات الأفقيّة × اقتدارات الإيقاظ), p.17 (**توضيح الكفايات** — texte de la كفاية نهائيّة + ses deux مكوّنين), p.19 (التقييم — réf. programmes 2002/1980), p.22–23 (شبكات تقييم لبناء الاختبار — قاعدة 75% / الثلثين), p.24 (**VIII- تطوّر دراسة المحاور 1ère→6ème** — deux matrices), p.25–28 (**IX- مخطّط الوحدات** — 4 cartes conceptuelles, une par وحدة), p.29–34 (**X- التخطيط السّنوي** — tableaux أهداف مميّزة / محتويات / حصص par محور, pivotés 90°). **Pages lues (manuel élève)** : p.5 (الوحدات), p.174 (exemple de leçon), p.175 (**الفهرس** — pages par درس). **Transcrit le** : 2026-06-28. **Repris le 2026-09-19** : **guide LU INTÉGRALEMENT, à l'image, page par page** — les quatre unités (`الضّوء`, `جسم الإنسان`, `الكهرباء`, `الوسط البيئي`), leurs quatre `الملفّ العلمي`, les **29 جذاذات**, les **cinq** `وضعيّة تعلّم بالإدماج` et les quatre `وضعيّة تقييم` avec leurs barèmes — et **p.221–223** (`خريطة كتاب المعلّم والفهرس` + `المراجع`), qui donnent la carte des 189 pages du corps du guide (§2 bis). **Couverture : 223 p. / 223 — 100 %.** Les six pages qui manquaient encore en fin de journée (1–2, 13, 18, 20–21) ont été lues à leur tour : elles portaient la page de titre, les trois phases du مشروع بيداغوجي, la matrice اقتدارات × مؤشّرات de ص 18 et, en **format paysage**, la définition des trois critères d'évaluation (ص 20–21). **Statut** : `complete` (profondeur `generation`). **R-7 non faite** : aucune relecture indépendante n'a encore été enregistrée — la fiche n'est pas `validee-r7`.
 > **Langue d'enseignement** : `ar`. **gradeSlug** : `5eme-base`. **subject id** attendu : `eveil-scientifique-5eme`.
 
 ## 1. Cadre & compétences (الكفايات / الاقتدارات / المؤشّرات)
@@ -295,6 +295,59 @@ L'إدماج est un **projet** : fabriquer une « **لوحة كهربائيّة 
 ⚠️ **Le تقييم de cette unité n'est pas celui de l'unité.** Son périmètre annoncé (ص 154) est : `الدّارة الكهربائيّة` **+** `وظيفة الهيكل العظمي والجهاز العضلي` **+** `الجهاز التّنفّسي وجهاز دوران الدّم` — autrement dit les unités **2 et 3** réunies. Les وضعيّات تقييم sont **trimestrielles et cumulatives**, pas unitaires ; la carte du §2 bis les range sous leur unité parce que le guide les y imprime, mais leur contenu déborde.
 Barème (ص 156) : **مع1 7,5 + مع2 7,5 + مع3 5 = 20**, soit la répartition de l'unité 1 et non celle de l'unité 2.
 
+## 2 septies. Unité 4 — الوسط البيئي (ص 157–220, lue intégralement)
+
+La plus longue : **64 pages**, dix de الملفّ العلمي et **treize جذاذات** numérotées **(0) à (12)**. Elle porte les chapitres `09-vivants-milieu` et `10-plantes-sol-eau`.
+
+> ⚠️ Comme en unité 2, la numérotation des sections du الملفّ العلمي est cassée : elle court **`I` (157) · `II` (158) · `III` (164) · `VI` (165) · `V` (166)** — **IV n'existe pas** et les deux dernières sont inversées.
+
+### `I- الملفّ العلمي` (ص 157–166)
+
+1. **العلاقات الغذائيّة** (157) : المنتج (النّبات الأخضر) → المستهلك من الدّرجة الأولى (العاشب) → الثّانية → الثّالثة (اللّاحم الّذي يأكل لاحما), plus les **المحلّلات** (البكتيريا والفطريّات) qui referment le cycle. Sur le sens des flèches, voir §6 écart 27.
+2. **عناصر الوسط البيئي** (158–163) : **التّربة** (وتحتوي على : الغطاء النّباتي…), le **المناخ**, les **الكائنات الحيّة**. Les modes de chasse y sont posés : **المطاردة** (السّنوريات), **المباغتة** (البومة، السّرعوفة، الجرادة الكبيرة، الحرباء والأفعى), **الحيلة والفخّ** (العنكبوت، الدّعموص، عفريت البحر). **Chiffres** : l'eau représente **90 %** des feuilles de blette, **57 %** des tubercules de pomme de terre, **71 %** des graines et grains verts ; un chêne perd **20 000 litres par mois** par **النّتح** ; les sels sont **الفسفاط (P) · النّترات (N) · البوتاسيوم (K)**, et C-H-O font **plus de 90 %** de la masse.
+3. **التّوازن البيئي** (164) : et l'eau potable — **0,3 à 3 g** de sels par litre, **10 à 30 cm³** d'air dissous, puis les trois opérations **الترسيب → الترشيح → التعقيم** (ébullition **15 min**, ou eau de Javel, ou UV, ou ozone).
+4. **أسباب اختلال التّوازن** (165) : trois dates tunisiennes vérifiables et excellentes pour des questions — la cochenille introduite d'Australie en **1910**, le **dernier lion tué en 1887 à غار الدّماء**, la **dernière gazelle en 1930 à جبل الرّصاص**.
+5. **دور الإنسان** (166) : le sac plastique → la méduse → la tortue ; et les **محميّات** اشكل et بوهدمة.
+
+### `II- جذاذات التّنشيط` (ص 167–211) — treize fiches
+
+| #   | ص       | objet                                                        |
+| --- | ------- | ------------------------------------------------------------ |
+| **0** | 167   | **التّخطيط لزيارة محميّة أو حديقة حيوانات** — la sortie préparatoire, sans درس correspondant au manuel |
+| 1   | 168–172 | عناصر الوسط البيئي + السّلسلة الغذائيّة                      |
+| 2   | 173–175 | الاصطياد **بالمطاردة**                                       |
+| 3   | 176–178 | الاصطياد **بالمباغتة**                                       |
+| 4   | 179–181 | الاصطياد **بالحيلة والفخّ**                                  |
+| 5   | 182–185 | التّربة ومكوّناتها                                           |
+| 6   | 186–189 | مصادر المياه في الطّبيعة + الدّورة المائيّة                  |
+| **7** | **190–193** | الماء الصّالح للشّرب : التّرسيب – التّرشيح – التّعقيم |
+| 8   | 194–197 | التّكاثر بالبذور + مكوّنات البذرة + الإنبات                  |
+| 9   | 198–201 | الظّروف الملائمة للإنبات                                     |
+| 10  | 202–204 | امتصاص الماء + النّتح                                        |
+| 11  | 205–208 | حاجة النّبتة إلى الماء والأملاح المعدنيّة                    |
+| 12  | 209–211 | التّوازن البيئي                                              |
+
+> 🔧 **Correction d'une erreur de cette fiche.** Le tableau du §2 bis, écrit plus tôt dans la journée depuis le seul فهرس, listait **douze** pages pour treize جذاذات : **la جذاذة (7), ص 190, y manquait**. Vérifié à l'image : ص 190 porte bien « جذاذة تنشيط عدد 7 ». Le tableau ci-dessus est celui qui fait foi.
+
+**Les neuf aires protégées nommées ص 167**, par gouvernorat — matériau géographie × sciences directement exploitable :
+**الفايجة** (جندوبة) · **اشكل** (بنزرت) · **منتزه افريقيا** (سوسة) · **الشّعانبي** (القصرين) · **بوهدمة** (سيدي بوزيد) · **عرباطة** (قفصة) · **بوقرنين** (بن عروس) · **غابة الغضابنة والشّابة** (المهدية) · **الحديقة الوطنيّة بدعموس** (توزر).
+
+**Les six étapes de la chasse à la poursuite (ص 174)** : `البحث` (بفضل الحواس) → `التّرصّد` (يختار الفريسة الأضعف أو المصابة) → `الاقتراب` (التّستّر, marche **face au vent** pour ne pas être senti, pattes feutrées) → `الهجوم/المطاردة` → `الانقضاض` → `الفتك` (يقتل بعضها **من رقبتها**).
+
+**Les trois strates de végétation (ص 170)** : `المستوى الشّجري` (الأشجار, **plus de 2 m**) · `المستوى الشّجيري` (الشّجيرات, **au plus 1,5 m**) · `المستوى العشبي` (الأعشاب, **au plus 90 cm**) — sur le trou de la graduation, voir §6 écart 28.
+
+**Les cinq tests du sol (ص 183–184)**, chacun avec sa conclusion encadrée : الترسيب في الأنبوب · الدّبال qui flotte · le **خدش على الزّجاج** (رمل) · l'**effervescence à l'acide chlorhydrique** (كلس) · le **pétrissage** (طين) · les **bulles** d'une motte immergée (هواء) · l'évaporation du filtrat → **راسب أبيض** (أملاح معدنيّة). Sept en tout, numérotés 6-1 à 6-8.
+
+**Le modèle du cycle de l'eau (ص 188)** — la correspondance modèle ↔ nature, prête à devenir un exercice d'appariement :
+`الماء المغلى` ↔ ماء البحر والسّدود والبحيرات والكائنات الحيّة · `الموقد` ↔ حرارة الشّمس · `تجمّع البخار` ↔ السّحب · `الصّحن البارد` ↔ الطّبقة الهوائيّة الباردة · `قطرات الماء` ↔ المطر.
+
+**Les cinq étapes de la germination (ص 197)** : تنتفخ البذرة → تتمزّق اللّحافة ويبرز الجذير → يتطوّر الجذير ليصير جذرا بشعيرات → تظهر السّويقة → تخترق النّبتة الفتيّة وجه الأرض.
+
+### `III/IV- وضعيّتا تعلّم بالإدماج` (ص 212–217) et `V- وضعيّة تقييم` (ص 218–220)
+
+Seule unité à en avoir **deux** : la première (ص 212–215) sur le jardin scolaire — graines, sol, eau potable, germination ; la seconde (ص 216–217) sur une émission animalière — modes de chasse, chaînes alimentaires, éléments du milieu.
+Le تقييم de fin de **3ᵉ trimestre** (ص 218–220) tient **14 تعليمات** sans trou de numérotation, et son barème (ص 220) revient à **مع1 7,5 + مع2 7,5 + مع3 5 = 20**, comme les unités 1 et 3.
+
 ## 3. Notes pédagogiques / méthode
 
 - **Public ~10 ans, lecteur autonome** : le manuel élève `103504` (176 p.) structure chaque وحدة en **دروس** + **وضعيّة تعلّم بالإدماج** + **وضعيّة تقييم**. La démarche reste **active, expérimentale, visuelle** : observation, manipulation, expérience, **projet pédagogique** (un par وحدة).
@@ -340,7 +393,7 @@ Barème (ص 156) : **مع1 7,5 + مع2 7,5 + مع3 5 = 20**, soit la répartitio
   1. **`06-respiration` ↔ `07-circulation-sang`** : dans le manuel, la **circulation (د6, p.57)** précède la **respiration (د7–8, p.61)** ; le contenu publié garde `06`=respiration avant `07`=circulation (ordre prod / `displayOrder` figés). Pages renseignées en conséquence.
   2. **`09-vivants-milieu`** : le محور التوازن البيئيّ est traité **en fin de manuel (د12, p.160)** alors que les leçons d'écosystème/chasse sont en tête (د1–4, p.96–117) ; le chapitre `09` couvre donc deux plages (96–117 **+** 160–165).
 
-## 6. Audit du guide — 25 écarts relevés à la source (unités 1 à 3, le 2026-09-19)
+## 6. Audit du guide — 37 écarts relevés à la source (lecture INTÉGRALE, le 2026-09-19)
 
 ### Unité 1 — sept écarts (lecture intégrale ص 35–74 + الفهرس ص 221–223)
 
@@ -504,11 +557,80 @@ Le matériel de la صهيرة artisanale est donné en **chiffres arabo-indiens*
 Peu de faits, mais deux blocs très solides. **La matrice pile × lampe** (ص 140, reproduite au §2 sexies) donne à elle seule une famille entière de questions fermées, avec une règle vérifiable et des distracteurs naturels. **La paire eau pure / eau minéralisée** (ص 145) est le meilleur piège conceptuel du guide : l'eau distillée **isole**, l'eau du robinet **conduit** — et le tableau de ص 144 fait justement tester `ماء حنفية` et `قلم رصاص` (graphite), deux conducteurs que personne n'attend.
 Et la composition canonique d'un circuit — **خليّة + مصباح متلائمي الفولطيّة + أسلاك ناقلة + قاطعة** (ص 148) — donne l'énoncé de référence, avec `صهيرة` en cinquième élément optionnel de protection.
 
+### Unité 4 et pages transversales — douze écarts de plus (lecture intégrale ص 157–220 + ص 1–2, 13, 18, 20–21)
+
+#### 🔴 26. ص 1 — le guide ne porte pas le titre que le catalogue lui donne
+
+La page de titre dit : « **كتاب الإيقاظ العلمي — كتاب المعلّم للسّنة الخامسة من التّعليم الأساسي** », تأليف **مصطفى الكافي** و**محمّد برنيفة**, تجميع الصّور **نجم الدّين جرفال**, تقييم **الجيلاني العايدي · نجيب الشّابي · الهادي خالد**, المركز الوطني البيداغوجي.
+Le catalogue CNP — et, à sa suite, l'en-tête de cette fiche jusqu'à ce jour — l'annonçait comme « **الدليل المرجعي في الإيقاظ العلمي** ». C'est un **كتاب المعلّم**, pas un دليل مرجعي. Deuxième cas constaté dans le corpus après celui de `521702` (français 7ᵉ, §6 de sa fiche) : **le catalogue du CNP ne décrit pas toujours le fichier qu'il sert** — le titre se lit sur la page 1, pas dans le CSV.
+
+#### 🔴 27. Le sens des flèches de la chaîne alimentaire est contredit par sa propre légende
+
+Le guide **dessine** ses chaînes dans le sens du flux d'énergie — ص 157 : `نبات أخضر → حيوان عاشب → حيوان لاحم` ; ص 171 : `قمح → عصفور → أفعى → نسر` au-dessus de `نبات → حيوان عاشب → حيوان لاحم` et de `منتج غذاء → مستهلك درجة أولى → ثانية → ثالثة`. Mais il **nomme** la relation « **يتغذّى على** » (ص 157 et ص 171, النّشاط الرّابع), qui va dans l'autre sens — et son propre exemple le montre : « الأسد ← الحمار الوحشي ( **الأسد يتغذّى على الحمار الوحشي** ) ».
+**Pour la génération** : suivre le **dessin** (producteur en tête, comme l'encadré `6-4` de ص 171 le décrit : « يمثّل النّبات **أوّل حلقات** السّلسلة الغذائيّة ويسمّى المنتج »). **Ne jamais poser de question sur le sens de la flèche** : le guide la légende à l'envers de ce qu'il trace.
+
+#### 🟠 28. ص 170 — les trois strates laissent une bande de 50 cm sans classe
+
+L'encadré `6-3` définit : `المستوى الشّجري` = « نباتات يتجاوز ارتفاعها مترين (**2 م**) » · `المستوى الشّجيري` = « **لا يفوق** ارتفاعها مترا ونصف (**1,5 م**) » · `المستوى العشبي` = « لا يزيد عن **90 صم** ». Une plante de **1,70 m** n'appartient donc à aucune des trois. Les strates sont justes ; **les bornes chiffrées ne le sont pas** — ne pas construire de question sur une hauteur entre 1,5 et 2 m.
+
+#### 🟠 29. ص 175 — la gazelle et le cheval à 180 km/h, et l'exercice devient insoluble
+
+Le tableau des vitesses donne aux carnivores : الفهد **115**, الضّبع **65**, السّلوقي **65**, الأسد **80** ; et aux herbivores : الفيل **40**, حمار الوحش **65**, **الغزالة 180**, **الحصان 180**, الجاموس **65** (vérifié à 400 dpi). Aucun animal terrestre n'atteint 180 km/h ; la gazelle plafonne vers 100, le cheval vers 70. Et la consigne — « حدّد الفرائس الممكن صيدها بالمطاردة من قبل كلّ حيوان لاحم », dont la solution dit explicitement « **السّرعة تحدّد الفريسة الممكنة** » — **n'a plus de réponse** : aucune des quatre vitesses de carnivores ne dépasse 115.
+
+#### 🟠 30. ص 163 et ص 199 — la lumière est déclarée nécessaire à la germination, et jamais testée
+
+- ص 163, encadré : « تحتاج عمليّة الإنبات إلى الرّطوبة **والضّوء** ودرجة حرارة معتدلة » — alors que les **quatre milieux** du protocole juste au-dessus sont **tous** en « ضوء عادي » : la lumière n'y varie pas une seule fois. Et la phrase suivante dit l'inverse : « مفعول الضّوء على الإنبات يختلف باختلاف أنواع النّباتات، فهو عامل أساسي في بعض الحالات و**هو مضرّ في حالات أخرى** ».
+- ص 199, معايير النّجاح de la جذاذة 9 : « نضج البذرة – السّقي بانتظام – درجة الحرارة المناسبة – **الإضاءة** والتّهوئة » — mais les **cinq** expériences de cette جذاذة (ص 198) font varier la maturité, l'eau, la température et l'air, **jamais la lumière**.
+- Et les conclusions de la même جذاذة (ص 200–201), puis les deux encadrés `أتذكّر` de l'إدماج (ص 214, ص 215), énumèrent **quatre** conditions **sans la lumière**.
+
+**Clé de réponse** : les quatre conditions sont **سلامة البذرة ونضجها · الرّطوبة · الحرارة الملائمة · التّهوئة**. La lumière n'en fait pas partie.
+
+#### 🟠 31. ص 213 — le corrigé intervertit le calcaire et l'argile
+
+Dans la وضعيّة تعلّم بالإدماج عدد 1, les six expériences sont numérotées ① à ⑥ ; l'expérience **⑤** est l'**acide chlorhydrique avec effervescence** (→ **الكلس**) et l'expérience **⑥** le **pétrissage donnant une pâte collante** (→ **الطّين**). La colonne `الإجابات المتوقّعة` écrit l'inverse : « 5 – هذه تربة **طينيّة** » et « 6 – وجود **الكلس** ».
+
+#### 🟠 32. ص 193 — deux délais différents pour la même javellisation, sur la même page
+
+Le schéma dit « **ترك يستريح 30 دق** قبل استهلاكه » ; l'encadré `6-4` de la même page dit « ولا نستهلكه قبل انقضاء **10 دق** من هذه العمليّة ». Le corrigé de ص 214 tranche dans le même sens que le schéma (« واستهلاكه بعد **30 دق** ») : c'est le **10 دق** de l'encadré qui est isolé. Consigne **sanitaire** — retenir **30 min**, et l'ébullition à **15 min**.
+
+#### 🟡 33. ص 162 — le ricin rangé parmi les monocotylédones
+
+« البذور **أحاديّة الفلقة** كالقمح والشّعير و**الخروع** ». Le blé et l'orge le sont ; le **ricin** (*Ricinus communis*) est une **dicotylédone** — c'est même l'exemple scolaire classique de la dicotylédone à albumen.
+
+#### 🟡 34. ص 207 — une comparaison entre deux pots identiques
+
+Le النّشاط الرّابع de la جذاذة 11 fait comparer « **أصيص عدد 1 : رمل مغسول مع أسمدة كيميائيّة** » et « **أصيص عدد 2 : رمل مغسول مع أسمدة كيميائيّة** » : les deux légendes sont **mot pour mot les mêmes**. Le second devait porter l'**engrais organique** que les المعينات de ص 205 listent pourtant (« أسمدة عضويّة (فضلات حيوانات) »).
+
+#### 🟡 35. ص 206 — le texte parle du pin, la figure montre un haricot
+
+La الوضعيّة المشكل de la جذاذة 11 annonce « مراحل الإنبات والنّمو عند **بذرة الصّنوبر** » et reproduit **exactement** le schéma de germination du haricot déjà imprimé ص 197.
+
+#### 🟡 36. ص 203 — deux jours valent 42 heures
+
+« التّجربة الأولى الّتي تمّ إعدادها … **يومين قبل حصّة الدّرس (42 ساعة قبل الدّرس)** ». Deux jours font **48** heures.
+
+#### 🟡 37. Numérotations dupliquées ou manquantes, quatrième série
+
+Après ص 75, ص 110 et ص 155 relevés plus haut : **ص 178** et **ص 181** portent chacune **deux fois** le titre `6-2 الاستنتاج` ; `6-4 الاستنتاج` est numéroté **en ص 196 et de nouveau en ص 197** ; l'encadré de ص 178 imprime ses **quatre puces en double** (ثعبان – ضفدعة – سرعوفة – حبار, puis les mêmes) ; ص 189 annonce « **صورة دورة الماء في الطّبيعة** » sans imprimer d'image et titre `6-5 **لا**ستنتاج` ; et ص 204 commente deux des **trois** photos d'adaptation (le pin d'Alep reste sans texte), comme ص 70 le faisait déjà pour ses « الرّسوم الثّلاثة ».
+
+#### ⏳ Deux réserves de vraisemblance, signalées sans être tranchées
+
+- **ص 210** : « يستهلك فأر الحقول الواحد ما معدّله **25 كغ** من الحبوب في السّنة ». Le calcul qui en découle est **juste** (25 × 3 000 000 × 2 = 150 000 000 kg = 150 000 t), mais 25 kg/an pour un mulot de ~20 g ferait plus de trois fois sa masse **par jour**. L'exercice reste bon comme exercice de calcul ; **le chiffre n'est pas un fait à enseigner**.
+- **ص 216** : le corrigé range **الأفعى** sous « الصّيد بالحيلة والفخّ », alors que le الملفّ العلمي (ص 159) la cite sous « **المباغتة** ». Les deux lectures se défendent selon l'espèce ; **ne pas en faire une question fermée**.
+
+### Les pages transversales enfin lues (ص 13, 18, 20–21) — ce qu'elles ajoutent
+
+- **ص 13** : les **trois phases** du المشروع البيداغوجي — `الإعداد والتّخطيط` → `الإنجاز` → `الاستغلالات البيداغوجيّة` (l'**الإدماج الخارجي**, le croisement des matières) — et le **rôle du maître** : accompagnateur, il aide à dépasser « البحث العفوي والتّردّد الّذي يشعرون به في بداية كلّ مشروع ».
+- **ص 18** : la matrice **اقتدارات × مؤشّرات** de la كفاية المجال, tirée des **البرامج الرّسميّة للدّورة الثّالثة**, avec l'avertissement explicite « **ترتيب الاقتدارات والمؤشّرات ليس ترتيبا خطّيا** ». Ses six اقتدارات — `تعرّف عناصر الوضعيّة المشكل والبحث في مسالك الحلّ` · `مناقشة الحلول الأوّليّة المقترحة` · `جمع المعلومات عبر البحث التّجريبي والملاحظة والقيس` · `جمع معلومات باعتماد البحث الوثائقي ومساءلة أهل الاختصاص` · `تجميع المعلومات وتنظيمها` · `توظيف نتائج بحث في بناء معارف جديدة` — sont **une autre liste** que celle de ص 16 transcrite au §1. Les deux coexistent : ص 16 croise les اقتدارات de la matière avec les **كفايات أفقيّة**, ص 18 les décline en **مؤشّرات** observables. La fiche portait la première seule.
+- **ص 20–21** (deux pages **imprimées en paysage**, à faire pivoter pour être lues) : la **شبكة تقييم لبناء الاختبار**, qui définit une fois pour toutes les trois critères utilisés par toutes les وضعيّات تقييم du guide — **`مع1` تحليل وضعيّة** (تحديد المكوّنات · ضبط العلاقة بين العناصر · **تحييد الدّخيل**) · **`مع2` تعليل إجابة** (تخيّر التّمشّي · توظيف المفهوم · تقديم التّعليل الملائم) · **`مع3` إصلاح خطإ** (البحث عن الخطإ باعتماد العلاقة بين عناصر الوضعيّة · إعادة تركيب الوضعيّة · الإخبار شفويّا و/أو كتابيّا). Chacun est illustré d'un exemple **en physique** et d'un **en علم الأحياء** — dont, pour مع2, « أراد فراس إضاءة مصباح ذي **1,5 فولط** بخليّة ذات **9 فولط**. أضاء المصباح بتوهّج ثمّ انطفأ. لماذا ؟ », qui recoupe exactement la matrice de ص 140.
+
 ## 7. Incertitudes / à revérifier
 
 - **Tableaux التخطيط السّنوي (p.29–34) pivotés 90°** : rendus puis **re-rotés à la lecture** ; la majorité (p.31, 32, 34) est parfaitement nette, p.29–30 le sont après agrandissement. Les **عدد الحصص** sont relevés cellule par cellule ; à ±1 séance près sur quelques lignes de transition (إدماج/دعم), le fond (أهداف مميّزة + محتويات + ordre) est fiable.
 - **Matrice الاقتدارات (p.16)** : l'en-tête de page (« الاقتدارات المخصوصة … المندمجة ») est partiellement décoré/bruité ; les **croix ✱** par compétence transversale sont relevées au mieux de la lisibilité (mise en page dense). Le contenu (les 6 اقتدارات de l'Éveil et les 8 كفايات أفقيّة) est sûr.
 - **Pages manuel élève (§4)** : les **numéros imprimés** lus dans l'index p.175 coïncident avec l'ordre PDF (**offset 0**, footer « 175 » sur la page PDF 175). Les **bornes hautes** (fin de chaque درس/chapitre) sont déduites « début du درس suivant − 1 » — exactes au درس près, à ± une page de pages-titre/transition. La borne `01`→`02` (fin د3 p.15 / début د4 p.16) et `02`→`03` (fin د6 p.25 / début د7 p.26) sont posées sur ces frontières.
 - **Variantes de projet (و2 et و4)** : le guide donne deux formulations (carte conceptuelle p.26/28 vs tableau p.30/33) — « وسيلة عن الحجاب الحاجز » ≈ « مطويّة المحافظة على الجسم » (و2) ; « منبت نباتات الزّينة » ≈ « مربّى للأسماك / وسط بيئيّ مائيّ » (و4). Les deux sont transcrites ; le projet n'affecte pas le scope des notions.
-- **Répartition trimestrielle (فترات)** : non figée par le guide (qui fixe عدد الحصص par درس, pas le trimestre) ; voir Taybah si un séquençage par trimestre est requis (non nécessaire pour le scope).
+- ~~**Répartition trimestrielle (فترات)** : non figée par le guide~~ — ⚠️ **corrigé le 2026-09-19 par la lecture intégrale.** Elle **est** figée, non pas par le التخطيط السّنوي (qui donne bien des حصص et non des trimestres) mais par les **titres des وضعيّات تقييم** : « في نهاية الثّلاثي **الأوّل** » ص 71, « …الثّاني » ص 154, « …الثّالث » ص 218. D'où le découpage du guide : **T1 = unité 1** (الضّوء) · **T2 = unités 2 et 3** (جسم الإنسان + الكهرباء, dont l'évaluation de ص 154 couvre explicitement les deux) · **T3 = unité 4** (الوسط البيئي). L'unité 2 a en plus sa propre « وضعيّة تقييم » interne (ص 128), non trimestrielle. Taybah n'est donc plus nécessaire pour cette question.
+- **R-7 : non faite.** La fiche est `complete` — 223/223 pages lues en profondeur de génération — mais **aucune relecture indépendante n'a été enregistrée**. Ce qui reste à faire pour `validee-r7` : recouper un échantillon des 37 écarts du §6 par un second lecteur, et trancher les **deux réserves de vraisemblance** laissées ouvertes (les 25 kg/an du mulot ص 210, le classement de l'أفعى ص 216).
+- **Manuel élève `103504` hors `sources`** : la fiche s'en sert pour la colonne pages du §4 (index ص 175) mais seules trois de ses 176 pages ont été lues. Il n'est donc **pas** déclaré comme source au registre — l'y ajouter ferait retomber la couverture sous 100 %, à juste titre. Sa lecture intégrale est un travail à part.
 - **Champ `chapter.manuel`** : non encore renseigné dans les `chapter.json` publiés (aucun ne porte la clé `manuel`) ; les pages de §4 sont prêtes à l'alimenter (`{ code: "103504", pages: … }`).
