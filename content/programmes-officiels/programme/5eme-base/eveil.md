@@ -1,7 +1,7 @@
 # الإيقاظ العلمي (Éveil scientifique) — 5ème année de base · programme officiel CNP
 
 > **Source** : guide enseignant `503504P00.pdf` (`cnp-officiel/manuels/asasi/c5/enseignant/`) — « الدليل المرجعي في الإيقاظ العلمي — السنة الخامسة من التعليم الأساسي » (المركز الوطني البيداغوجي · وزارة التربية). **Manuel élève** disponible : `103504P00.pdf` (`…/asasi/c5/eleve/`, 176 p.) — « الإيقاظ العلمي — السنة الخامسة » — **dont l'index (p.175) fournit la colonne pages de §4** (offset PDF↔imprimé = 0).
-> **Pages lues (guide)** : p.3–4 (المقدّمة — structure en 4 وحدات), p.5–6 (دور المتعلّم / المعلّم / العائلة), p.7–12 (التمشّيات البيداغوجيّة — التمشّي البنائي vs التعليمي, حلّ وضعيّة مشكل, المشروع البيداغوجي), p.14–15 (مخطّط/مراحل المشروع البيداغوجي — bordereaux administratifs), p.16 (**الاقتدارات المخصوصة المندمجة** — matrice الكفايات الأفقيّة × اقتدارات الإيقاظ), p.17 (**توضيح الكفايات** — texte de la كفاية نهائيّة + ses deux مكوّنين), p.19 (التقييم — réf. programmes 2002/1980), p.22–23 (شبكات تقييم لبناء الاختبار — قاعدة 75% / الثلثين), p.24 (**VIII- تطوّر دراسة المحاور 1ère→6ème** — deux matrices), p.25–28 (**IX- مخطّط الوحدات** — 4 cartes conceptuelles, une par وحدة), p.29–34 (**X- التخطيط السّنوي** — tableaux أهداف مميّزة / محتويات / حصص par محور, pivotés 90°). **Pages lues (manuel élève)** : p.5 (الوحدات), p.174 (exemple de leçon), p.175 (**الفهرس** — pages par درس). **Transcrit le** : 2026-06-28. **Repris le 2026-09-19** (lecture à l'image) : **p.35–74** — toute l'unité 1, `الملفّ العلمي` + les 7 جذاذات + `وضعيّة تعلّم بالإدماج` + `وضعيّة تقييم` avec son barème — et **p.221–223** (`خريطة كتاب المعلّم والفهرس` + `المراجع`), qui donnent la carte des 189 pages du corps du guide (§2 bis). **Couverture réelle : 71 p. / 223, soit 32 %** (3–12, 14–17, 19, 22–74, 221–223). Restent non lues : p.1–2, 13, 18, 20–21, **75–220** (unités 2, 3, 4). **Statut** : `partielle` — la génération reste interdite hors unité 1.
+> **Pages lues (guide)** : p.3–4 (المقدّمة — structure en 4 وحدات), p.5–6 (دور المتعلّم / المعلّم / العائلة), p.7–12 (التمشّيات البيداغوجيّة — التمشّي البنائي vs التعليمي, حلّ وضعيّة مشكل, المشروع البيداغوجي), p.14–15 (مخطّط/مراحل المشروع البيداغوجي — bordereaux administratifs), p.16 (**الاقتدارات المخصوصة المندمجة** — matrice الكفايات الأفقيّة × اقتدارات الإيقاظ), p.17 (**توضيح الكفايات** — texte de la كفاية نهائيّة + ses deux مكوّنين), p.19 (التقييم — réf. programmes 2002/1980), p.22–23 (شبكات تقييم لبناء الاختبار — قاعدة 75% / الثلثين), p.24 (**VIII- تطوّر دراسة المحاور 1ère→6ème** — deux matrices), p.25–28 (**IX- مخطّط الوحدات** — 4 cartes conceptuelles, une par وحدة), p.29–34 (**X- التخطيط السّنوي** — tableaux أهداف مميّزة / محتويات / حصص par محور, pivotés 90°). **Pages lues (manuel élève)** : p.5 (الوحدات), p.174 (exemple de leçon), p.175 (**الفهرس** — pages par درس). **Transcrit le** : 2026-06-28. **Repris le 2026-09-19** (lecture à l'image, page par page) : **p.35–130** — les unités 1 (`الضّوء`) et 2 (`جسم الإنسان`) en entier, `الملفّ العلمي` + les 13 جذاذات + les deux `وضعيّة تعلّم بالإدماج` + les deux `وضعيّة تقييم` avec leurs barèmes — et **p.221–223** (`خريطة كتاب المعلّم والفهرس` + `المراجع`), qui donnent la carte des 189 pages du corps du guide (§2 bis). **Couverture réelle : 127 p. / 223, soit 57 %** (3–12, 14–17, 19, 22–130, 221–223). Restent non lues : p.1–2, 13, 18, 20–21, **131–220** (unités 3 `الكهرباء` et 4 `الوسط البيئي`). **Statut** : `partielle` — la génération reste interdite hors unités 1 et 2.
 > **Langue d'enseignement** : `ar`. **gradeSlug** : `5eme-base`. **subject id** attendu : `eveil-scientifique-5eme`.
 
 ## 1. Cadre & compétences (الكفايات / الاقتدارات / المؤشّرات)
@@ -203,6 +203,54 @@ Périmètre annoncé : مصادر الضوء · انتشار الضوء · عم�
 
 Le total tombe juste : **7,5 + 7,5 + 5 = 20**. C'est le seul endroit du guide qui chiffre une notation, et il était absent de la fiche.
 
+## 2 quinquies. Unité 2 — جسم الإنسان (ص 75–130, lue intégralement)
+
+C'est la plus grosse unité du guide : **17 pages** de الملفّ العلمي (ص 75–91), six جذاذات, l'إدماج et le تقييم. Elle porte quatre des dix chapitres publiés (`04-squelette`, `05-mouvement-muscles`, `06-respiration`, `07-circulation-sang`).
+
+> ⚠️ La table des matières du الملفّ العلمي (ص 75) a sa **numérotation romaine cassée** : `I, II, III, VI, V, IV, VII, VIII, IX` — العضلات porte VI et الجهاز التنفّسي porte IV, les deux sont permutés. Le **corps** du dossier, lui, est numéroté correctement en chiffres arabes 1→9 ; c'est lui qui fait foi.
+
+### `I- الملفّ العلمي` (ص 75–91) — les neuf sections et leurs chiffres
+
+1. **الهيكل العظمي** (75–77) : **≈ 200 عظم**, **1/6 de la masse du corps**. Quatre fonctions : يحدّد شكل الجسم · يحفظ الأعضاء (القلب، الرّئتان، الدّماغ، النّخاع الشّوكي) · دعامة للعضلات الهيكليّة · جزء من **الجهاز المحرّك**. Trois parties : **عظام الرّأس** (القحف = **8 عظام** à مفاصل ثابتة + الوجه = **14 عظما**, dont **13** soudés au الفك العلوي et le **الفك السّفلي** seul mobile) · **عظام الجذع** (العمود الفقري + الأضلاع + عظم القصّ) · **عظام الأطراف**.
+   **العمود الفقري** : **33 فقرة** avec أقراص غضروفيّة intercalaires — **7 رقبيّة · 12 ظهريّة · 5 قطنيّة · 5 عجزيّة ملتحمة · 4 عصعصيّة ملتحمة** (la somme tombe juste). **الأضلاع** : **12 زوجا** — les **7** premières paires = **الأضلاع الحقيقيّة** (reliées au القصّ par des غضاريف ضلعيّة), les **3** suivantes = **الأضلاع الكاذبة** (rattachées au cartilage de la 7ᵉ paire), les **2** dernières = **الأضلاع السّائبة** (au rachis seul).
+2. **أنواع العظام** (78–80) : طويلة / مسطّحة / قصيرة. **Composition** : **1/3** matière organique + **2/3** sels minéraux (الفلور، الكلسيوم، الفسفور، المانييزيوم), les خلايا عظميّة entre les deux. **Structure** : جسم العظم (العظم الكثيف, avec la **القناة النّخاعيّة** et le **نقي العظم**) · رأسا العظم et leurs مشاشتان (النّسيج الإسفنجي, **نقي أحمر** où se forment الكريات الحمراء والبيضاء) · **غضروف التّمفصل** (blanc et lisse) · **السّمحاق** (fine membrane fibreuse). **Croissance** : en **longueur** par le **غضروف النّمو** (expérience des clous d'argent sur un veau), en **largeur** par le **السّمحاق** (deux expériences). Le السمحاق étant lent chez le vieillard, la consolidation d'une fracture y est longue et rapide chez l'enfant.
+3. **المفاصل** (80–81) : **ثابتة** (الجمجمة والوجه, نسيج ليفي) · **نصف متحرّكة** (entre corps vertébraux, غضروف مفصلي) · **متحرّكة** (المرفق، الكتف، الورك، الرّكبة). Le مفصل متحرّك = **أربطة ليفيّة متينة** + **غضاريف مفصليّة** blanches et lisses + **سائل مفصلي**.
+4. **العضلات** (81–83) : deux classes par la commande — **إراديّة** (هيكليّة) / **لاإراديّة** (عضلة القلب، عضلات الأمعاء) ; **quatre formes** — مغزليّة، مسطّحة، دائريّة، شريطيّة. **Structure** : ألياف عضليّة (خلايا غليظة مستطيلة), contraction par **انزلاق ليّفات الأكتين بين ليّفات الميوزين** ; trois parties : البطن (≈ **4 000 vaisseaux par cm²**), الأطراف العصبيّة, les deux **أوتار**. **Trois propriétés** : قابلة للتّنبيه · للتّقلّص · للتّمطّط (nerf sciatique de grenouille ; masse suspendue au tendon). **Le couple antagoniste**, encadré ص 83 : « إنّ حركتي الانعطاف والانبساط تتطلّبان وجود عضلتين **متضادّتين في العمل** فعندما تتقلّص الواحدة ترتخي الأخرى » — **ذات الرّأسين** (biceps, face antérieure) ↔ **ذات الثّلاثة رؤوس** (triceps, face postérieure).
+5. **الحوادث والتّشوّهات** (83–85) : **الكسور** — مغلق · مفتوح (le plus grave : تلوّث والتهاب وتقيّح) · غير تامّ (بشقوق) · متفتّت ; أعراض : تورّم/زرقة، عجز عن التّحريك، انحراف الشّكل، ألم. **الإسعافات** : ne pas bouger le membre, l'immobiliser **sans comprimer** la plaie, **ne pas masser**. **إصابات المفاصل** : الالتواء (المرفق، المعصم، الرّكبة) et الخلع (surtout الكتف). **حوادث العضلات** : التّمدّد (massage) · الانفصام (glace) · التّمزّق (immobilisation 2 semaines). **تشوّهات العمود الفقري** : il a **quatre courbures naturelles** — رقبي **أمامي**، ظهري **خلفي**، قطني **أمامي**، عجزي **خلفي** — et trois déformations : **الجنف** (latérale, charges d'un seul côté) · **الحدب** (dorsale, mauvaise posture) · **التّقعّر** (lombaire). Aux jambes : marche trop précoce + carence en **الكلسيوم والفسفور et vitamine D**.
+6. **الجهاز التّنفّسي** (86–88) : **التّنفّس الخارجي/الرّئوي** ↔ **التّنفّس الدّاخلي/الخلوي**. Organes : الأنف، المنخران، البلعوم، الحنجرة، الرّغامي، قصبتا الرّئتين، الرّئتان. **Chiffres** : **≈ 15 حركة تنفّسيّة/دقيقة** au repos chez l'adulte, **نصف لتر** par mouvement, centre nerveux = **البصلة الشّوكيّة**, et le calcul posé ص 87 : `0,5 ل × 15 × 60 دق × 24 س = 10 800 ل في اليوم` (il tombe juste). **القصبة الهوائيّة** : **12 صم**, demi-anneaux cartilagineux devant, muscles souples derrière (pour laisser passer le bol alimentaire dans le المريء). Ramification : شعبتان → شعب → شعيبات → حويصلات → **أسناخ**. **الرّئتان** : la **droite** plus grande à **3 فصوص**, la **gauche** à **2 فصّين** avec la loge du cœur ; chaque فصيص porte **10 حويصلات**.
+7. **وقاية الجهاز التّنفّسي** (88–89) : le tabac cause **90 %** des cancers du poumon et **80 %** de ceux du larynx ; la fumée contient **≈ 4 000 substances toxiques** ; **50 %** des non-fumeurs urbains portent dans leur sang de l'oxyde de carbone et de la nicotine. **الاختناق** : « موت ظاهري تتحوّل بسرعة إلى موت حقيقي إن لم يقع الإسعاف السّريع » — causes : انسداد المسالك، الغرق، توقّف العضلات التنفّسيّة، نقص الأكسجين (الهواء الحبوس), gaz toxiques (أحادي أكسيد الكربون، الكلور، أكسيد الكبريت).
+8. **الدّورة الدّمويّة** (89–91) : le circuit complet, nommé bout à bout —
+   **الصّغرى (الرّئويّة)** : البطين الأيمن → **الشّريان الرّئوي** → الرّئتان (الحويصلات) → **الأوردة الرّئويّة** → الأذينة اليسرى.
+   **الكبرى (العامّة)** : البطين الأيسر → **الشّريان الأبهر (الوتين)** → أعضاء الجسم → **الوريد الأجوف العلوي** + **الوريد الأجوف السّفلي** → الأذينة اليمنى.
+   **القلب** : **250 غ**, enveloppé du **التّامور**, quatre cavités séparées par un حاجز عضلي ; moitié gauche à **paroi épaisse**, moitié droite à **volume plus grand** ; **الصّمام الثّلاثي** à droite (3 صفائح) et **الصّمام الثّنائي** à gauche (2 صفيحتان), retenus par des **أوتار** ; **صمامات سينيّة** (en forme de س) à la base de l'aorte et de l'artère pulmonaire. Les **أوردة** portent des valvules internes dirigées vers le cœur.
+9. **قواعد صحّيّة** (91) : sport régulier ; éviter tabac (nicotine → dépôts graisseux et durcissement des artères) et alcool (perte d'élasticité des vaisseaux, تخثّر, انسداد).
+
+### `II- جذاذات التّنشيط` (ص 92–122) — six fiches, dont deux à deux séances
+
+| #   | ص       | objet                                       | Encadrés `الاستنتاج`                                                                                                                                                                                                                             |
+| --- | ------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | 92–96   | الهيكل العظمي + أنواع العظام (**2 حصص**)   | parties du squelette (voir §6, écart sur الجذع) ; « **العظام ثلاثة أنواع** : قصيرة، مسطّحة، طويلة » avec la liste complète par os (العضد ajouté aux longs, الحوض aux plats, الكفّ/الرّسغ/المشط aux courts).                                        |
+| 2   | 97–101  | أنواع العضلات ووظائفها                      | « العضلات تغطّي كامل جسم الإنسان وتسمّى **الهيكليّة** وهي المسؤولة عن حركته » ; formes (voir §6) ; « في العين **عضلة دائريّة** تتحكّم في فتحة الحدقة » et « **العضلة الدّائريّة للمريء** تمكّن من الابتلاع ».                                      |
+| 3   | 102–107 | الترابط العضلات ↔ العظام + دور المفصل      | « **تقلّص العضلة وارتخاؤها يسمحان بالحركة** » ; le couple ذات الرّأسين ↔ ذات الثّلاثة رؤوس décrit dans les deux sens ; les trois types de مفصل ; et « الأربطة الليفيّة تثبّت المفصل **وتربط بين العظام** ».                                        |
+| 4   | 108–111 | الحوادث                                     | الكسور : **تامّ (مغلق/مفتوح) – غير تامّ – تفتّت** ; حوادث العضلات : التّمدّد (زرقة) et الانفصام (تمزّق الشّعيرات) ; حوادث المفاصل : الخلع – الالتواء – تمزّق الأربطة (voir §6, définition fausse de l'entorse).                                    |
+| 5   | 112–118 | الدّورة الدّمويّة **et** الجهاز التّنفّسي (**2 حصص**) | « القلب هو العضو المسؤول عن دوران الدّم » ; « يدور الدّم في **اتّجاه واحد** » (صغرى / كبرى) ; **أوردة** = du corps vers le cœur, **شرايين** = du cœur vers le corps ; « **شهيق + زفير = حركة تنفّسيّة** » ; « يختلف الإيقاع التّنفّسي حسب نوعيّة نشاط الجسم ». |
+| 6   | 119–122 | وقاية الجهاز التّنفّسي                      | « يؤثّر التّدخين سلبا … لما يحويه من موادّ سامّة … ومن أهمّها الأمراض السّرطانيّة » ; « يصاب الجهاز التّنفّسي بعدّة أمراض أخرى : **النّزلة – الرّبو – السّلّ** … وهي أمراض تنتج عن انعدام الوقاية ».                                               |
+
+Chiffres utiles semés dans les التّوسّع : كمّيّة الدّم **5 à 6 لترات** pour 1,70 m / 70 kg ; دقّات القلب **100–120** chez le nourrisson, **60–70** chez l'adulte, **50–60** chez le sportif ; l'homme est **ذو دم حارّ à 37 °**, le serpent **ذو دم بارد** (ص 115) ; les ألياف عضليّة font **0,05 صم de diamètre sur 5 صم** et sont **مخطّطة عرضيّا**, d'où « **العضلات المخطّطة** » (ص 101).
+
+### `III- وضعيّة تعلّم بالإدماج` (ص 123–127) et `IV- وضعيّة تقييم` (ص 128–130)
+
+L'إدماج aligne **six activités** avec leurs `الإجابات المتوقّعة` et quatre encadrés `أتذكّر`. Le تقييم est bâti sur trois critères explicitement nommés — **مع1 تحليل الوضعيّة** (تحديد مكوّنات الوضعيّة، تحديد الدّخيل) · **مع2 تعليل الإجابة** (توظيف المفهوم) · **مع3 إصلاح خطإ** — et son **جدول إسناد الأعداد** (ص 130) n'a pas le même barème que celui de l'unité 1 :
+
+| مستويات التّملّك    | مع1               | مع2                       | مع3       |
+| ------------------- | ----------------- | ------------------------- | --------- |
+| انعدام التّملّك     | 0 → 0 · 1 → 1     | 0 → 0 · 1 → 1 · 2 → 2     | —         |
+| دون التّملّك الأدنى | 2 → 2 · 3 → 3     | 3 → 3 · 4 → 4 · 5 → 5     | —         |
+| التّملّك الأدنى     | 4 → 4             | 6 → 6                     | 1 → 2,5   |
+| التّملّك الأقصى     | 5 → 5 · 6 → 6     | 7 → 7 · 9 → 9             | 2 → 5     |
+
+Total **6 + 9 + 5 = 20**, comme en unité 1 mais par une autre répartition — le barème est donc **propre à chaque وضعيّة تقييم** et ne se déduit pas d'une règle générale.
+
 ## 3. Notes pédagogiques / méthode
 
 - **Public ~10 ans, lecteur autonome** : le manuel élève `103504` (176 p.) structure chaque وحدة en **دروس** + **وضعيّة تعلّم بالإدماج** + **وضعيّة تقييم**. La démarche reste **active, expérimentale, visuelle** : observation, manipulation, expérience, **projet pédagogique** (un par وحدة).
@@ -247,11 +295,13 @@ Le total tombe juste : **7,5 + 7,5 + 5 = 20**. C'est le seul endroit du guide qu
   1. **`06-respiration` ↔ `07-circulation-sang`** : dans le manuel, la **circulation (د6, p.57)** précède la **respiration (د7–8, p.61)** ; le contenu publié garde `06`=respiration avant `07`=circulation (ordre prod / `displayOrder` figés). Pages renseignées en conséquence.
   2. **`09-vivants-milieu`** : le محور التوازن البيئيّ est traité **en fin de manuel (د12, p.160)** alors que les leçons d'écosystème/chasse sont en tête (د1–4, p.96–117) ; le chapitre `09` couvre donc deux plages (96–117 **+** 160–165).
 
-## 6. Audit du guide, unité 1 (lecture intégrale ص 35–74 + الفهرس ص 221–223, le 2026-09-19)
+## 6. Audit du guide — 15 écarts relevés à la source (unités 1 et 2, le 2026-09-19)
+
+### Unité 1 — sept écarts (lecture intégrale ص 35–74 + الفهرس ص 221–223)
 
 > Sept écarts internes au **guide officiel**, tous relus à la page avant d'être écrits ici. Ce ne sont pas des erreurs de la fiche : ce sont des pièges du document source, et le premier est un piège **à conséquence directe sur la génération de questions**.
 
-### 🔴 1. La Lune : le guide se contredit, et ce sont ses corrigés qui ont tort
+#### 🔴 1. La Lune : le guide se contredit, et ce sont ses corrigés qui ont tort
 
 Le savoir du guide est net et répété **trois fois** :
 
@@ -268,31 +318,31 @@ Le comble est à la page suivante : ص 68, le النّشاط الثّالث est 
 
 > **Règle pour la génération** : sur ce point, la vérité du programme est **ص 36 / 47 / 48** — القمر est un **جسم مضاء منير**, jamais un مصدر. Les corrigés ص 44 et ص 67 ne doivent **pas** servir de clé de réponse. Un distracteur « القمر مصدر ضوئيّ طبيعيّ » est excellent — c'est la conception erronée que la جذاذة 2 existe pour démonter — mais il n'est **jamais** la bonne réponse.
 
-### 🔴 2. ص 71 — un exercice d'évaluation inexécutable tel qu'imprimé
+#### 🔴 2. ص 71 — un exercice d'évaluation inexécutable tel qu'imprimé
 
 La `التعليمة 2` de la وضعيّة تقييم demande : « **أصنف المصادر الضوئية المذكورة إلى منيرة ومضيئة** ». Le tableau fourni a deux colonnes, intitulées `أجسام منيرة` et `أجسام مضاءة منيرة` — **la colonne `مضيئة` manque**, les deux en-têtes disent منيرة. (Vérifié à 400 dpi avant d'être écrit ici.) L'élève ne peut pas exécuter la consigne ; le maître doit rétablir `أجسام مضيئة` en colonne de gauche.
 
-### 🟠 3. ص 35 — les unités des deux lignes du tableau du spectre sont interverties
+#### 🟠 3. ص 35 — les unités des deux lignes du tableau du spectre sont interverties
 
 Le tableau porte `الذبذبات 10⁻⁶ م` sur la ligne dont les valeurs vont de **4 à 7,5**, et `طول الموجة 10¹⁴ كلوهرتز` sur celle dont les valeurs vont de **0,40 à 0,75**. C'est l'inverse, et la page se contredit elle-même deux lignes plus haut : « الإشعاعات الّتي طول تموّجاتها محصورة بين **0.4 مكرومتر** … و **0.8 مكرومتر** ». Donc : طول الموجة en **10⁻⁶ م** (µm), الذبذبات en **10¹⁴ هرتز** — et non « كلوهرتز ».
 
-### 🟠 4. ص 36 — le lux défini comme des W/cm²
+#### 🟠 4. ص 36 — le lux défini comme des W/cm²
 
 « وحدة اللّوكس نعبّر عنها بقيمة الطّاقة الّتي يحملها الشّعاع الضّوئي في ثانية واحدة في مساحة واحد صنتمتر مربّع ونعبّر عنها بـ (w/cm²) ». Le lux est une unité **photométrique** (lumen/m²), pas un éclairement énergétique en W/cm². Les deux valeurs données restent bonnes (≈ 100 000 lux au zénith, 0,2 lux pour la pleine Lune) ; c'est la définition qui est fausse. **Ne pas en tirer de question sur l'unité.**
 
-### 🟡 5. ص 46 — كسوف القمر pour خسوف القمر
+#### 🟡 5. ص 46 — كسوف القمر pour خسوف القمر
 
 Les `المعينات البيداغوجيّة` de la جذاذة 2 listent « صورة تمثّل **كسوف** القمر », alors que la وضعيّة المشكل de la même جذاذة, six lignes plus bas, dit correctement « حدوث **خسوف** كلّي للقمر », et que la جذاذة 7 (ص 66) écrit tout aussi correctement « ظاهرتي **خسوف القمر وكسوف الشمس** ». Lapsus isolé, mais il porte sur la distinction même que l'unité enseigne.
 
-### 🟡 6. ص 70 — « الرّسوم الثّلاثة », deux seulement imprimés
+#### 🟡 6. ص 70 — « الرّسوم الثّلاثة », deux seulement imprimés
 
 Le النّشاط de ص 70 s'ouvre sur « أتأمّل **الرّسوم الثّلاثة** التّالية وأعلّل الإجابة » ; seuls les schémas **1** et **2** figurent, avec deux lignes de corrigé. Le troisième cas manque.
 
-### 🟡 7. ص 59 — le calcul Terre-Soleil ne retombe pas sur la valeur usuelle
+#### 🟡 7. ص 59 — le calcul Terre-Soleil ne retombe pas sur la valeur usuelle
 
 Le التّوسّع de la جذاذة 5 fait calculer la distance Terre-Soleil à partir de « 300 ألف كم في الثّانية » et « 8 دق », ce qui donne **144 millions de km**. La valeur admise est ≈ 150 millions de km (8 min 20 s). L'exercice reste valable comme exercice de calcul ; **ne pas en faire une question de connaissance** sur la distance.
 
-### Ce que l'unité 1 apporte à la génération, et qui manquait
+#### Ce que l'unité 1 apporte à la génération, et qui manquait
 
 - Le triplet de vocabulaire de l'ombre, que la fiche ne portait pas : **الظّلّ الحقيقي** (ombre propre) · **مخروط الظّلّ** (cône) · **الظّلّ المحمول** (ombre portée), tous trois légendés sur le schéma de ص 40 — plus **الظلّ / نصف الظلّ** (ombre/pénombre) sur les figures d'éclipse de ص 41.
 - Le mot **المتجانسة** (milieu *homogène*) dans l'énoncé de la propagation rectiligne (ص 38, 58, 59) : sans lui, l'énoncé est faux.
@@ -300,6 +350,58 @@ Le التّوسّع de la جذاذة 5 fait calculer la distance Terre-Soleil à
 - Les deux lois de variation de l'ombre portée (ص 41 et ص 66), énoncées dans les deux sens (écran/source), qui donnent des questions à quatre options naturelles.
 - Les trois figures d'éclipse solaire nommées : **الكسوف الكلّي · الكسوف النصفي · حلقة الكسوف** (ص 41).
 - Le barème officiel en trois critères **7,5 + 7,5 + 5 = 20** (ص 74).
+
+### Unité 2 — huit écarts de plus (lecture intégrale ص 75–130)
+
+Le motif de l'unité 1 se répète, et il est maintenant clair : **le الملفّ العلمي et les encadrés `الاستنتاج` des جذاذات ne sont pas relus l'un contre l'autre.** Quand les deux divergent, c'est presque toujours l'encadré qui dérape — et c'est l'encadré que l'élève copie.
+
+#### 🔴 8. ص 111 — la définition de l'entorse est fausse, dans un encadré
+
+L'encadré `6-3` de la جذاذة 4 pose :
+
+> « **الخلع** : هو خروج **كلّي** لرأس العظم من مكانه. / **الالتواء** : هو خروج **جزئي** لرأس العظم من مكانه. »
+
+Or le الملفّ العلمي (ص 84) définit الالتواء tout autrement, et correctement : les mouvements brusques **étirent les ligaments articulaires et les déchirent parfois**, sans déplacement de la tête osseuse. Un déplacement **partiel** de la tête osseuse n'est pas une entorse, c'est une **subluxation** (خلع جزئي). La clé de réponse est **ص 84** ; l'encadré ص 111 ne doit pas servir de source.
+
+#### 🟠 9. ص 104–105 — le guide attache les muscles aux os par des « ligaments »
+
+Deux fois, dont une **dans un encadré** : « تتصل العضلات بالعظام **بواسطة أربطة** » (ص 104) et « تتقلّص العضلة فتقصر وتجبر العظام المتّصلة بها **بواسطة الأربطة** » (ص 105, encadré `6-2`). C'est le **وتر** (tendon) qui relie muscle et os — le guide l'écrit d'ailleurs lui-même ص 82 (« رأسا العضلة … وتريها ») et réserve correctement الأربطة aux liaisons **os ↔ os** ص 80, ص 84, et même ص 106 dans la **même** جذاذة (« الأربطة الليفيّة … تربط بين العظام »). Le couple **وتر (عضلة↔عظم) / رباط (عظم↔عظم)** est un distracteur classique : ne pas le construire sur ص 104–105.
+
+#### 🟠 10. Combien de formes de muscles ? Trois réponses dans le même guide
+
+- **ص 81** (الملفّ العلمي) : **quatre** — مغزليّة، مسطّحة، دائريّة، شريطيّة.
+- **ص 99** (encadré `6-2` de la جذاذة 2) : **deux** — مغزليّة، مسطّحة.
+- **ص 124** (encadré `أتذكّر` de l'إدماج) : **trois** — المغزليّة، المسطّحة، الدّائريّة.
+
+Et l'exercice à trous de ص 108 demande de compléter « **العضلات ثلاثة أنواع هي …** », ce qui ne correspond qu'à ص 124. **Aucune question ne doit porter sur le nombre** ; les formes elles-mêmes sont sûres.
+
+#### 🟠 11. ص 94 vs ص 76 — de quoi est fait le tronc ?
+
+- **ص 76** : « يتكوّن الجذع من **العمود الفقري والأضلاع وعظم القصّ** ».
+- **ص 94** (encadré) : « عظام الجذع : **العمود الفقري، عظام الكتف، عظام القفص الصّدري، عظام الحوض** ».
+
+L'encadré y verse les deux ceintures (épaule, bassin), que ص 76 laisse aux membres — et ص 96 les nomme d'ailleurs **نصف حزام الكتف** et **نصف حزام الحوض** sur les schémas des membres. Les deux découpages existent dans la littérature ; le guide n'en choisit pas un. Question à éviter en QCM fermé.
+
+#### 🟡 12. ص 75 — la table du الملفّ العلمي est mal numérotée
+
+`I – II – III – **VI** – V – **IV** – VII – VIII – IX` : العضلات porte VI et الجهاز التّنفّسي porte IV. Le corps du dossier, numéroté 1→9 en chiffres arabes, est juste ; c'est la table qui est fautive.
+
+#### 🟡 13. ص 110 — les deux encadrés de la page sont imprimés dans le désordre
+
+`6-2 الاستنتاج` est en haut de page, `6-1 الاستنتاج` en bas. Et la taxonomie des fractures y est **restructurée** par rapport à ص 83 : trois types (تامّ / غير تامّ / تفتّت) dont le premier se subdivise en مغلق et مفتوح, là où ص 83 en listait quatre à plat. Le contenu est le même, le **compte** ne l'est pas.
+
+#### 🟡 14. ص 117 — le trajet de l'air saute le pharynx
+
+L'encadré `6` écrit : « يمرّ الهواء … عبر : **الأنف فالحنجرة ثمّ القصبة الهوائيّة** ليصل إلى الرّئتين » — sans **البلعوم**, que le الملفّ العلمي (ص 86–87) place entre les deux et que le schéma **de la même page** étiquette. Le trajet complet est ص 86 : الأنف/المنخران → البلعوم → الحنجرة → الرّغامي → قصبتا الرّئتين → الرّئتان.
+
+#### ⏳ 15. ص 122 — une donnée datée, à ne pas servir comme fait courant
+
+Le document reproduit est celui du **31 mai 1998** et annonce « **أكثر من ثلاثة ملايين** شخصا سنويّا ». Le chiffre a beaucoup augmenté depuis. Les mentions **90 % / 80 % / 4 000 substances / 50 %** de ص 88 restent des ordres de grandeur utilisables ; le total annuel de ص 122, non.
+
+#### Ce que l'unité 2 apporte à la génération
+
+Elle est, de loin, la plus **chiffrée** du guide : 200 os, 1/6 de la masse, 8 + 14 os de la tête, 33 vertèbres en 7/12/5/5/4, 12 paires de côtes en 7/3/2, 1/3 organique + 2/3 minéral, 250 g de cœur, 15 mouvements/min, 0,5 L par mouvement, 10 800 L/jour, 12 cm de trachée, 3 lobes / 2 lobes, 5–6 L de sang, 60–70 pulsations. Chacun de ces nombres est vérifiable à sa page et donne une question fermée sans ambiguïté — à la différence des « combien de types » relevés ci-dessus, qui n'en donnent aucune.
+Le vocabulaire, lui, est complet là où la fiche ne portait que les pièges : **الأضلاع الحقيقيّة / الكاذبة / السّائبة**, **غضروف النّمو** ↔ **السّمحاق** (longueur ↔ largeur), **الجنف / الحدب / التّقعّر**, **الصّمام الثّلاثي / الثّنائي / السّينيّة**, **الوتين** pour l'aorte, **البصلة الشّوكيّة** pour le centre respiratoire, **الأسناخ** pour les alvéoles.
 
 ## 7. Incertitudes / à revérifier
 
