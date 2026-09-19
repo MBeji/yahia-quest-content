@@ -214,11 +214,45 @@ contrepartie** dans les 13 leçons d'إعراب du manuel 8ᵉ révisé, qui ne 
 complexe. Dans le même temps, la الجملة المركّبة est surtout enseignée **en 7ᵉ** (32 occurrences)
 et peu en 8ᵉ (13).
 
-**Ce qui est établi** : les deux découpages divergent fortement en 8ᵉ. **Ce qui ne l'est pas, et
-qu'il ne faut pas conclure d'ici** : que le contenu servi soit *faux*. Les التوابع (نعت، توكيد،
-بدل، عطف) pourraient relever de la **9ᵉ** révisée — **le فهرس du manuel 9ᵉ `101908` n'a pas été
-lu**. Tant qu'il ne l'est pas, on sait que l'organisation diffère, pas qu'une notion manque à un
-élève. **C'est la prochaine lecture à faire**, et elle coûte une page.
+**Ce qui est établi** : les deux découpages divergent fortement en 8ᵉ. **Ce qui ne l'est pas** :
+que le contenu servi soit *faux*.
+
+### Le فهرس de la 9ᵉ révisée (`101908`, ص 175–176) — lu, et il change la conclusion
+
+**26 leçons : 19 en علم النحو + 7 en علم الصرف.** Et le نحو de 9ᵉ n'est plus organisé par
+catégories classiques mais par **fonctions discursives** :
+
+> العلاقات بين الجمل في النصّ (×3, dont أدوات الرّبط ومعانيها) · الحذف ومواطنه · النّداء ·
+> الدّعاء · الأمر والنّهي · الاستفهام (×3) · الشرط (×3) · **دلالة الزّمان** (×4 : صيغ الفعل،
+> الحروف المقترنة، النّواسخ الفعليّة، بعض الوظائف) · العدد والمعدود (×2).
+> **صرف** : الاسم المقصور · المنقوص · الممدود · معاني المزيد (×2) · التّصغير · النّسبة والمصدر
+> الصّناعيّ.
+
+➡️ **Les « orphelins » de la 8ᵉ se répartissent en trois groupes, pas un** :
+**المنادى** et **العدد** sont au programme de **9ᵉ** (leçons 5 et 18–19) ; **النعت · التوكيد ·
+البدل · العطف · أسلوب التعجّب** ne figurent au فهرس révisé **d'aucun des trois niveaux** — ce sont
+très probablement les « **ما لم يعد مقرّرا** » que la المقدّمة dit avoir supprimés.
+
+### ⚠️ Et la mesure qui semblait accabler la 9ᵉ s'est effondrée au second passage
+
+Un premier relevé donnait **sept leçons révisées sans trace** dans `content/arabic` :
+العلاقات بين الجمل, أدوات الربط, les quatre دلالة الزمان, التصغير… **Le contrôle en formulations
+alternatives a démenti l'essentiel** : les connecteurs sont enseignés sous **روابط** (57) et
+**الروابط** (31), la dimension temporelle sous **الزمن** (27) et **الزمان** (17), le تعجّب sous
+**التعجّب** (34, avec shadda). Le contenu est là — **sous un autre vocabulaire**.
+
+**Ce qui reste réellement mince en 9ᵉ, après ce second passage** : **التصغير** (0), **المصدر
+الصناعيّ** (0, alors que النسبة est à 10 — la leçon « النّسبة والمصدر الصّناعيّ » n'est couverte
+qu'à moitié), et le trio **المقصور · المنقوص · الممدود** (1 · 2 · 0). Quatre notions de صرف, dans
+une **année de concours**. C'est un constat borné, pas un effondrement.
+
+### 🔧 Règle de méthode — elle m'a repris TROIS fois dans la même session
+
+Chercher une notion arabe par **une seule graphie** fabrique des trous qui n'existent pas. Trois
+fois ce soir : `الصفة المشبهة` (0) vs `الصفة المشبّهة` (22) ; `الجملة المركبة` (0) vs
+`الجملة المركّبة` (32) ; `أدوات الربط` (0) vs `روابط` (57). **Avant de déclarer une notion absente,
+essayer : avec shadda, sans shadda, avec et sans article, et au moins un synonyme courant.** Un
+« zéro » obtenu d'une seule requête n'est pas une mesure.
 
 ### Le فهرس du manuel (ص 4) — les 27 leçons, leurs محاور et leurs pages
 
