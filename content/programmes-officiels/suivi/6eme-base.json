@@ -179,18 +179,68 @@
             "P00"
           ],
           "role": "enseignant",
-          "pagesTotal": null,
-          "pagesLues": "inconnu"
+          "pagesTotal": 208,
+          "pagesLues": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              7,
+              12
+            ],
+            [
+              17,
+              32
+            ],
+            [
+              44,
+              51
+            ],
+            [
+              57,
+              64
+            ],
+            [
+              100,
+              100
+            ],
+            [
+              110,
+              110
+            ],
+            [
+              130,
+              130
+            ],
+            [
+              160,
+              160
+            ],
+            [
+              190,
+              190
+            ]
+          ]
         }
       ],
       "sujets": [
         "math-6eme"
       ],
       "sourcesLibres": [],
-      "r7": null,
-      "maj": "2026-07-17",
-      "par": "seed",
-      "notes": "Seed depuis _INDEX ([~] historique). Couverture/profondeur à évaluer avant génération (R-5)."
+      "r7": {
+        "date": "2026-09-19",
+        "portee": "sondage",
+        "verdict": "Sondage dirigé sur les deux pages qui portent le scope élève. p.60 (عدد عناوين الدروس) : EXACTE, les 28 nombres concordent. p.59 (خارطة الكتاب) : la ligne-résumé des 61 leçons était fausse sur ~9 créneaux (19, 39, 40, 41, 51 donnés pour des « مسائل », ordre 16/17 inversé) — remplacée par les 61 titres verbatim. Les sections par domaine du §2 rattrapaient la plupart de ces notions ; UNE ne l'était pas : la leçon 19 « أفكّك الأعداد الكسريّة وأركّبها » est absente de la transcription ET du contenu servi. La couche texte de ce PDF est un mojibake (fonte sans ToUnicode) : la vérification à deux canaux n'est pas possible ici, seule l'image fait foi.",
+        "corrections": 9
+      },
+      "maj": "2026-09-19",
+      "par": "claude/great-wright-e4cqyu",
+      "notes": "Couverture réelle mesurée : 47 p. sur 208, soit 23 % — et non « inconnu » comme le seed le laissait. Les plages sont celles que l'en-tête de programme/6eme-base/maths.md documente, plus p.59-60 vérifiées à l'image le 2026-09-19. ⚠️ CE COUPLE EST LE PLUS EXPOSÉ DU REGISTRE : plus de 20 chapitres de math-6eme sont SERVIS EN PRODUCTION (parcours concours-6eme, ouvert) depuis cette fiche sous la barre R-5. Le القسم النظري (p.7-56) et la quasi-totalité du القسم العملي (p.65-208, où vivent les مذكرات leçon par leçon) ne sont pas lus. Trou de contenu identifié et NON comblé ici à dessein : la leçon officielle 19 « أفكّك الأعداد الكسريّة وأركّبها » (décomposer/recomposer une fraction) n'est enseignée nulle part — la combler reviendrait à générer depuis une fiche sous la barre, ce que le rapport reproche déjà à ce couple. Détail en §6 de la transcription."
     }
   ]
 }
