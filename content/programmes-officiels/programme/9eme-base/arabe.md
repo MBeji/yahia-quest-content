@@ -127,6 +127,17 @@ depuis leur **خلاصة** (le 3ᵉ des quatre أركان de chaque leçon : ن�
 - **Exemples du manuel, exploitables** : `جُدَيْدَتي` et `يا بُنَيّ` (تودّد, نصّ ص 166) ·
   `شُجَيْرَة`, `خُضَيْرَاء`, `كُرَيّات`, `بُطَيْنَان`, `أُذَيْنَان`, `سُوَيْعَة` (ص 166) ·
   `حُرَيْمَتي`, `بُنَيّ`, `كُسَيْر`, `قُلَيْبي`, `بُغَيْلَة`, `دُجَيْلا`, `أُحَيْلى` (ص 167).
+- ✅ **Le chapitre est écrit** (2026-09-20) : `content/arabic/13-at-tasghir`, `displayOrder` **8**,
+  `manuel` = {101908, ص 164-168}, 5 sections, 35 questions. **Et ce que la seule خلاصة aurait fait
+  manquer** : le مدخل (ص 164) et l'exercice 1 (ص 167) nomment **trois** façons de dire le petit —
+  **معجميًّا** (جَرْو · شِبْل · مُهْر · حَمَل · رَضيع), **تركيبيًّا** (حديقةٌ صغيرةٌ · صغارُ الطّيرِ)
+  et **اشتقاقيًّا** (شُجَيْرَة · جُنَيْنَة) — et le التّصغير est **la troisième seule**. C'est la
+  colonne vertébrale de la leçon et elle n'est nulle part dans la خلاصة.
+- **Exemples exploitables relevés aux pages** : صياغة (ص 166) قلم · دُفّ · كَوْكب · عامل · أُذُن ·
+  أُخْت · خَاتَم · دَاهية · حَمْراء · سِرْوال · كتاب · كُرَة ; معاني (ص 166) طه حسين «الأيّام»
+  (`يا بُنَيَّ`, تودّد) · كُرَيّات الدّم et بُطَيْنان وأُذَيْنان (تصغير حقيقيّ) · علي الدّوعاجي
+  (`سُوَيْعة … على الأكثر`, تقليل) ; et les deux vers de l'أعرابيّ (ص 167, لويس شيخو) où
+  `شُوَيْهَتي` vaut **حسرة**, le shaṭr même disant « وفجعتَ قلبي ».
 - ⚠️ **La distinction que la page construit** : le sens n'est **pas** dans la forme — la même
   صيغة `بُنَيّ` vaut tendresse dans la bouche d'un père et mépris ailleurs. L'exercice 3 (ص 166)
   demande explicitement « عيّن … المعنى الّذي قصد إليه المتكلّم ». C'est le cœur pédagogique.
@@ -141,12 +152,29 @@ depuis leur **خلاصة** (le 3ᵉ des quatre أركان de chaque leçon : ن�
 - **Ce que les تمارين imposent au scope** (ص 171–172) :
   - **صياغة** sur des bases irrégulières : لُغَة · الكوفة · أب · ابتداء · دم · هواء · فاطمة ·
     سنة · البصرة · بناء · القاهرة · انتقاء · شَفَة · كِساء · ضَوْء · أخّ · إنشاء · يَد · استواء.
-  - **تمييز النّسبة من غير النّسبة** — le piège central : `المتنبّي · المعرّي · الرّاعي ·
-    الصّحاري` ne sont **pas** des نسبة malgré leur ياء finale, face à `الحفصيّون · البخاريّ ·
-    الشّاميّ · الكُرسيّ`.
+  - **تمييز النّسبة من غير النّسبة** (تمرين 4, ص 172) — le piège central. ⛔ **Le partage donné
+    ici le 2026-09-19 était FAUX** : il rangeait `المعرّي` parmi les non-نسبة et `الكُرسيّ` parmi
+    les نسبة. C'était une supposition, pas une lecture — le manuel ne classe rien, il **demande**
+    de classer. Relu à l'image le 2026-09-20, le partage réel est 4 / 4 :
+    **نسبة** = `الحَفْصيّون` (إلى أبي حفص — الدولة الحفصيّة بتونس) · `المَعَرّي` (إلى معرّة النّعمان) ·
+    `البُخاريّ` (إلى بُخارى) · `الشّاميّ` (إلى الشّام) ;
+    **غير نسبة** = `المتنبّي` et `الرّاعي` (اسما فاعل منقوصان, la شدّة est sur la **باء**, pas sur
+    la ياء) · `الصّحاري` (جمع صحراء, منقوص) · `الكُرْسيّ` (اسم جامد, sa ياء est de la structure du
+    mot). **Le test qui tranche, et que le chapitre pose en règle** : نزع الياء — s'il reste un nom
+    auquel on s'affilie, c'est une نسبة ; sinon non (`بُخاريّ` → بُخارى ✓ · `كُرْسيّ` → «كُرْس» ✗).
   - **تحويل المركّب الإضافيّ إلى مركّب نعتيّ** par la نسبة (ex. `كتب الهند` → `الكتب الهنديّة`).
   - **المصدر الصّناعيّ** : الشّعوبيّة · الأوّليّة · الانتهازيّة · الوضعيّة · السّلفيّة ·
     التّقدّميّة — et le distinguer de la simple نسبة au féminin.
+- ✅ **Le chapitre est écrit** (2026-09-20) : `content/arabic/14-an-nisba-wal-masdar-as-sinai`,
+  `displayOrder` **9**, `manuel` = {101908, ص 169-174}, 6 sections, 35 questions. Le نصّ d'appui de
+  la leçon est **علي الدّوعاجي, « جولة » ص 50-51** (le portrait d'آسيا, saturé de نسب :
+  الحجازيّات · الدّمشقيّة · الفارسيّ · الهنديّ · البُخاريّ · الكوفيّ). Deux exercices donnent au
+  chapitre sa matière : le مدخل 3 (ص 169) fait **remplacer un مركّب إضافيّ par un نعت** (من السّنْد
+  → سِنْديّة · من الرّخام → رُخاميّة · في البحر → البحريّ · من ذهب → ذهبيّة), et le 5 (ص 172, اليازجي)
+  le refait sur un texte suivi (كتب الهند → الكتب الهنديّة · علوم الفلسفة → العلوم الفلسفيّة).
+  **Et une trouvaille à garder** : le texte du العقد الفريد (ص 172) note qu'on dit de مَرْو
+  `مَرْوَزِيّ` pour les hommes et `مَرْوِيّ` pour les étoffes — la نسبة à un même nom change de forme
+  selon ce à quoi on l'applique.
 
 #### ✅ Leçons 1–3 de صرف — le trio de l'**اسم**, lu le 2026-09-19
 
