@@ -203,7 +203,47 @@ avec sa règle de flexion. Le contenu servi les effleure (`المقصور` 1 occ
 - Les deux chapitres candidats à l'enrichissement ne conviennent pas : `05-sarf-al-mizan` traite la
   **racine et le mīzān**, `06-al-mushtaqqat` les **dérivés** ; la finale du nom et sa flexion sont
   un autre objet.
-- ⏳ **Le chapitre n'est pas écrit.** Cette section est sa base sourcée, à profondeur de génération.
+- ✅ **Le chapitre est écrit** (2026-09-20) : `content/arabic/12-al-maqsur-wal-manqus-wal-mamdud`,
+  `displayOrder` **7** (juste après `06-al-mushtaqqat`, les cinq suivants décalés — un `displayOrder`
+  se change, un slug jamais), `manuel` = {101908, ص 129-147}, 8 sections de cours au patron de notion,
+  quiz de 5 questions et 5 missions de 6 = **35 questions**. Ligne ajoutée au
+  `manifest/9eme-base.json`, sans quoi `content:audit` crie « hors-programme ».
+
+#### 🔎 Ce que la relecture des pages a ajouté le 2026-09-20 (et deux pages neuves : 134, 140)
+
+- **Les trois نصوص انطلاق**, jamais relevés : الدرس 1 (ص 129) part du موشّح de **لسان الدين ابن
+  الخطيب** « جادَكَ الغيثُ إذا الغيثُ هَمَى » ; الدرس 2 (ص 134) de **أبي فراس الحمداني** « سلامٌ
+  رائحٌ غادِ · على ساكنةِ الوادي » ; الدرس 3 (ص 140) de **أبي القاسم الشابّي**, « أغاني الحياة »
+  — « سأعيشُ رغمَ الدَّاءِ والأعْداءِ ». Les trois textes sont choisis pour que **la rime porte le
+  صنف** : الكَرى/الهَوى/المُنى · الهادي/الحادي/الوادي · الأعْداء/الأنْواء/الأرْزاء.
+- ⚠️ **La خلاصة du ممدود ne définit pas le ممدود** — et ce n'est pas un oubli du scan. La page 143
+  ouvre sur l'اشتقاق. La définition est **construite par l'élève** au مدخل (ص 140, § I) : « استخرج
+  الكلمات التي تنتهي بها الأبيات السابقة · بمَ تنتهي هذه الكلمات؟ · ماذا تسمّى هذه الأسماء؟ ».
+  Qui génère depuis la seule خلاصة écrit un chapitre sans définition ; il faut la page du مدخل.
+- ⚠️ **Le même piège, plus coûteux, sur le منقوص.** La خلاصة (ص 138) dit « في حالتي الرفع والجرّ لا
+  تظهر علامات الإعراب على آخر الاسم المنقوص **وتحذف منه الياء** » — sans nommer la condition. Prise
+  au pied de la lettre elle produit « جاء القاضِ ». La condition est le **titre même** du مدخل II
+  (ص 134) : « الاسم المنقوص : **التّعريف والتّنكير** », et son exercice l'installe (« خليليّ إنّي
+  اليوم **شاكٍ** إليكما »). Le chapitre l'enseigne donc comme le manuel : la ياء ne tombe qu'à la
+  **نكرة**, et « القاضِ » est le `piege` nommé.
+- **Les تمارين تأليفية (ص 146) en toutes lettres** — c’est le matériau du tri final :
+  ① classer dans le tableau à trois colonnes : مُرتضى · تعالٍ · شيماءُ · العُتبى · راجٍ · جُبناءُ ·
+  الجوزاء · أكفاءُ · السّاعي ; ② صُغ des trois صيغ depuis رَمَى · نَفَى · حَسُنَ · رَسَا · جَبُنَ ·
+  أَعْرَجُ · وَلِيَ · أَزْهَرُ · جازى · اقتفى · افترى ; ③ extraire les trois صنف de quatre vers
+  (أبو نواس · حديث شريف · أبو فراس · نزار قباني).
+- **Et le piège que ce tableau construit** : `راجٍ` et `تعالٍ` y figurent **au nominatif indéfini**,
+  donc **sans leur ياء**. L'élève qui trie sur la forme écrite les range en مقصور. Le test qui
+  tranche — et que le chapitre pose en règle — est **d'entrer «أل»** : si la ياء revient, c'est un منقوص.
+- **Deux listes d'appui pour la génération** : les أوزان du ممدود relevés à l'exercice 5 (ص 145) —
+  فِعال · فَعَال · أفعال · فَعْلاء · أَفْعِلاء · فُعَلاء · افتعال · استفعال ; et les mots à thème de
+  l'exercice 4 (ص 143) — عدّاءٌ · حمراءُ · قضاءٌ · جرداءُ · وِجاءٌ, qui couvrent **les trois origines
+  de la همزة** en cinq mots.
+- 🕌 **Aucune آية n'a été reprise dans le chapitre, et c'est délibéré.** Le manuel cite le Coran à
+  quatre endroits de ces pages (ص 129 الحجّ 2 · ص 132 الأعلى 1 · ص 138 يوسف 31 · ص 145 البقرة et
+  الرحمان). La règle du dépôt impose la **رواية قالون** caractère par caractère depuis une source
+  faisant autorité ; le scan ne la garantit pas, et `سُكارى` est précisément un point de divergence
+  entre lectures. Le corpus profane du manuel suffit largement — il n'y avait aucune raison de
+  prendre le risque.
 
 ## 3. Notes pédagogiques / méthode
 
@@ -432,7 +472,7 @@ Chiffres **latins 0–9** partout — le guide numérote ses دروس **1 … 18
 ## 6. Incertitudes / à revérifier
 
 - **TITRE RÉEL confirmé** : « **النّحو العربي — للسّنة التّاسعة من التّعليم الأساسي · كتاب الأستاذ** » (page de garde, PDF 1). Auteurs **الصّادق بيّة، عمر بنّور، الأزهر الزّنّاد، خالد ميلاد** ; إشراف **عبد القادر المهيري**. ✅ lu net (160 + 200 dpi).
-- **ÉCART MAJEUR n°1 — périmètre guide ≪ périmètre `content/arabic`** : le guide `501902P00` est un **guide de نحو PUR (18 دروس)**. Il **ne contient ni صرف, ni بلاغة, ni إنتاج كتابي**. Or `content/arabic` a des chapitres **صرف** (`05-sarf-al-mizan`, `06-al-mushtaqqat`), **بلاغة** (`07-as-suwar-al-bayania`, `08-al-muhassinat-al-badi3ia`) et **إنتاج/فهم** (`09`, `10`). → **Ces 6 chapitres ne sont PAS couverts par ce guide.** Pour les valider/auditer fidèlement, il faut **un autre support officiel 9ème** (candidat : `521902P00.pdf` dans le même dossier `c9/enseignant/`, non examiné ; sinon le manuel de lecture-expression 9ème, les annales du concours). **À arbitrer par Mohamed** : soit lire `101909 نصوص` (+ `101908 نحو عربي`) pour sourcer officiellement بلاغة/فهم/إنتاج, soit acter que ces chapitres s'appuient sur les `sources` web déjà citées dans leurs `chapter.json`. ⚠️ **Pour la صرف, même une lecture de `101909` ne suffira probablement pas** : le corpus CNP de 9ème ne contient aucun support de صرف, et le guide 8ème (`501802P00`, قسم علم الصّرف) traite déjà الميزان/المجرّد-المزيد/المشتقّات — la صرف de 9ème est, selon toute vraisemblance, une **révision d'un acquis de 8ème**, pas un programme neuf. C'est vérifiable en relisant `programme/8eme-base/arabe.md`, pas en cherchant un support 9ème qui n'existe pas.
+- **ÉCART MAJEUR n°1 — périmètre guide ≪ périmètre `content/arabic`** : le guide `501902P00` est un **guide de نحو PUR (18 دروس)**. Il **ne contient ni صرف, ni بلاغة, ni إنتاج كتابي**. Or `content/arabic` a des chapitres **صرف** (`05-sarf-al-mizan`, `06-al-mushtaqqat`), **بلاغة** (`07-as-suwar-al-bayania`, `08-al-muhassinat-al-badi3ia`) et **إنتاج/فهم** (`09`, `10`). → **Ces 6 chapitres ne sont PAS couverts par ce guide.** Pour les valider/auditer fidèlement, il faut **un autre support officiel 9ème** (candidat : `521902P00.pdf` dans le même dossier `c9/enseignant/`, non examiné ; sinon le manuel de lecture-expression 9ème, les annales du concours). **À arbitrer par Mohamed** : soit lire `101909 نصوص` (+ `101908 نحو عربي`) pour sourcer officiellement بلاغة/فهم/إنتاج, soit acter que ces chapitres s'appuient sur les `sources` web déjà citées dans leurs `chapter.json`. ⛔ **CONJECTURE DÉMENTIE, 2026-09-19/20.** Cette fiche affirmait ici : « le corpus CNP de 9ème ne contient aucun support de صرف … la صرف de 9ème est, selon toute vraisemblance, une **révision d'un acquis de 8ème**, pas un programme neuf ». **C'est faux.** Le manuel élève **révisé `101908`** porte un **قسم علم الصرف de 7 leçons** (فهرس ص 175-176), et ses trois premières — الاسم المقصور (129) · المنقوص (134) · الممدود (140) — sont un **programme neuf**, absent de la 8ème. La conjecture était raisonnable et elle était **invérifiée** : elle raisonnait sur le guide enseignant `501902` (édition NON révisée, §2 bis) et sur l'absence supposée d'un second support, sans ouvrir le manuel élève identifié la veille. Le chapitre `12-al-maqsur-wal-manqus-wal-mamdud` est né de ce démenti. **Leçon opposable** : « le corpus ne contient pas X » se **constate** dans le corpus, jamais depuis le seul support déjà lu.
 - **ÉCART n°2 — décomposition du نحو différente** : le guide décompose le نحو en **sémantique-énonciatif** (العلاقات بين الجمل، أدوات الرّبط، أساليب الإنشاء، دلالة الزّمان، الطّلب، الشّرط), tandis que `content/arabic` le décompose en **إعراب classique** (`01-i3rab-wal-bina`, `02-an-nawasikh`, `03-al-mansoubat`, `04-al-asalib`). **Seul `04-al-asalib` recoupe fortement le guide** (دروس 4–6, 8–10). Plusieurs دروس du guide — **العلاقات بين الجمل + أدوات الرّبط (1–3), دلالة الزّمان (11–14), الطّلب (15), الشّرط (16–18)** — **n'ont pas de chapitre dédié** dans `content/arabic`. **À arbitrer** : enrichir `content/arabic` d'un (ou plusieurs) chapitres « الرّبط بين الجمل / دلالة الزّمان / الشّرط », ou considérer qu'ils sont (partiellement) couverts par `09/10`. **Ne RIEN renommer sans validation** (les slugs `content/arabic` sont en prod).
 - **`01-i3rab-wal-bina` et `02-an-nawasikh`** : ces fondamentaux (إعراب/بناء, نواسخ) sont des **acquis 7ème** ; le guide 9ème ne les pose pas comme objet neuf (cohérent avec une progression collège). Leur présence dans `content/arabic` relève d'un **choix de révision/consolidation** (légitime en année de concours), pas du programme نحو 9ème stricto sensu. ✅ signalé.
 - **الفهرست paginé et fiable** : la colonne « الصّفحة » du الفهرست (p.120) **est renseignée** ; les 18 pages ont été **recoupées avec les headers réels des دروس** (p.6, 13, 18, 25, 32, 37, 45, 52, 59, 68, 76, 80, 85, 90, 97, 103, 108, 115) → **pagination certifiée**. Offset printed↔PDF = **0**.
