@@ -134,7 +134,7 @@
 
   ⚠️ **Merger ne publie pas.** `apply-content.yml` est désarmé volontairement (lot 3a) : aucun
   merge, aucun push ne déclenche une application. Une PR de contenu mergée n'est donc **pas** en
-  prod tant qu'un humain n'a pas dispatché — et une application lancée quelques minutes *avant*
+  prod tant que la session n'a pas dispatché — et une application lancée quelques minutes *avant*
   un merge fige l'ancienne version sans que rien ne le dise. Vécu le 2026-08-01 sur
   `math-bac-math` : application à 19:11 depuis `891c864`, PR #104 mergée à 19:27 en `67e3dd7`,
   et la prod a servi le contenu périmé deux jours. C'est pourquoi `content-drift.yml` existe :
