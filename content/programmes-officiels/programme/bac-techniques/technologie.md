@@ -4358,7 +4358,7 @@ sommaire p.5 la désigne « Transmission de mouvement ». Bandeau de tête : « 
     coupe **A-A** est repéré par deux flèches A.
     Coupe « **A-A (Echelle :1:1)** » : repères 3, 1, 2 (en haut à gauche), 4, 5, 6, 7, 8, 9, 10, 11
     (en bas à gauche), 12, 13, 14, 15 (en bas à droite).
-  - **Épure cinématique cotée (p.145)** : dessin à l'échelle du mécanisme de freinage montrant la
+  - **Épure cinématique (p.145)** : tracé (sans cote) du mécanisme de freinage montrant la
     poulie, le *Sabot (4)* en **1ère position** (noir) et en **2ème position du sabot** (rouge), le
     *Levier de commande (12)*, la *Tige filetée (16)*, la *Pédale (17)*, les points **A**, **B**,
     **C**, **C'**, **D**, **E** et la vitesse angulaire **ω(17/18)** figurée par une flèche courbe.
@@ -4461,9 +4461,12 @@ sommaire p.5 la désigne « Transmission de mouvement ». Bandeau de tête : « 
 | 34 | 1 | Rondelle | | |
 | 35 | 1 | Écrou hexagonal M12 | | |
 
-  - **Schéma cinématique de la boîte pour une vitesse préréglée (p.149)** : quatre lignes d'arbres
-    étagées, avec **Poulie (24)** en entrée, l'arbre **1**, l'arbre **7**, l'arbre **10**, le
-    **Bâti** et la **Broche (22)** en sortie. Roues repérées **Z₁, Z₂, Z₃** (baladeur de l'arbre 1),
+  - **Schéma cinématique de la boîte pour une vitesse préréglée (p.149)** : **cinq** lignes
+    d'arbres étagées face au **Bâti** (vertical, hachuré en pied) — **Poulie (24)** en entrée sur
+    l'arbre **1** (baladeur Z₁, Z₂, Z₃), l'arbre **7** (bloc Z₄, Z₅, Z₆ et la roue Z₇), l'arbre
+    **10** (bloc Z₈, Z₉, Z₁₀), un **arbre intermédiaire non numéroté** portant le baladeur **Z₁₈**,
+    et la **Broche (22)** en sortie (roues Z₁₁, Z₁₂ et Z₁₃). Chaque ligne d'arbre est tracée d'une
+    couleur différente ; trois paliers sont figurés sur le bâti (arbres 1, 7 et broche). Roues repérées **Z₁, Z₂, Z₃** (baladeur de l'arbre 1),
     **Z₄, Z₅, Z₆**, **Z₇**, **Z₈, Z₉, Z₁₀**, **Z₁₁, Z₁₂**, **Z₁₃** et **Z₁₈**.
 - **Encadré officiel (verbatim)** :
 
@@ -4650,7 +4653,7 @@ sommaire p.5 la désigne « Transmission de mouvement ». Bandeau de tête : « 
   Puis : « Les figures ci-dessous représentent la maquette d'une boîte de vitesses à commande
   manuelle d'un automobile et d'un frein accompagné de son levier. La sélection des vitesses
   s'effectue à l'aide des fourchettes commandées par un levier de changement de vitesses. »
-  **Fig.1** : photo de la maquette, repères 1 à 8. **Fig.2** : vue 3D éclatée-écorchée, légendée
+  **Fig.1** : photo de la maquette, repères 1 à 8. **Fig.2** : vue 3D du mécanisme assemblé, **carter retiré** (écorché), légendée
   *Dispositif de commande, Arbre de sortie, Arbre d'entrée, Arbre intermédiaire*.
   Légende imprimée sous les figures :
 
@@ -4856,7 +4859,8 @@ sommaire p.5 la désigne « Transmission de mouvement ». Bandeau de tête : « 
     1 mm → 0,01 m/s, vitesse angulaire par changement de solide, deuxième position, angle de
     rotation) — p.142–145.
   - **Boîte de vitesses du tour** : vitesse de coupe → vitesse de rotation (Vc = 60 m/min, Ø24),
-    schéma cinématique à 12 roues, rapport de transmission par poulie-courroie, tableau des
+    schéma cinématique à **14 roues repérées** (Z₁→Z₁₃ et Z₁₈), dont 12 avec leur nombre de
+    dents, rapport de transmission par poulie-courroie, tableau des
     **9 positions** de baladeurs, chaîne de rendements (η poulies-courroies 0,8 × η BdV 0,9) et
     couple maximal à la broche (p.146–150).
   - **Transformation de mouvement** : commande manuelle et automatique des chariots, tambours
@@ -5228,9 +5232,10 @@ L'activité 4 se déroule en trois volets successifs, chacun avec sa propre pré
   horizontales superposées, tracées en couleurs.
   - En bas, l'**arbre moteur (5)** issu du bloc « **Moteur** » (avec, à gauche du moteur, un
     symbole à identifier — question 3.a) : il porte le pignon-baladeur triple **Z₆ – Z₇ – Z₈**.
-  - Au-dessus, l'**arbre intermédiaire (15)** portant **Z₁₃**, **Z₁₄**, **Z₁₆**, **Z₁₇**, **Z₁₈**.
-  - Au-dessus, l'**arbre intermédiaire cannelé (21)** portant **Z₁₉**, le baladeur **Z₂₀** et
-    **Z₂₃**.
+  - Au-dessus, l'**arbre intermédiaire (15)** portant **Z₁₃**, **Z₁₄**, **Z₁₆**, **Z₁₇**.
+  - Au-dessus, l'**arbre intermédiaire cannelé (21)** portant **deux baladeurs** : le baladeur
+    **Z₂₀ – Z₂₃** (qui engrène avec Z₁₆ ou Z₁₄ de l'arbre 15) et le baladeur **Z₁₈ – Z₁₉** (qui
+    engrène avec Z₃₃ ou Z₃₁ de la broche).
   - En haut, l'ensemble **broche (26+27)** portant **Z₃₁** et **Z₃₃**.
   - Les liaisons pivot sont figurées par des rectangles aux extrémités ; les repères 5, 15, 21 et
     26+27 sont fléchés sur le schéma.
@@ -5861,7 +5866,8 @@ L'activité 4 se déroule en trois volets successifs, chacun avec sa propre pré
 - **Ressources fournies** :
   - Consigne d'entrée (p.199, verbatim) : « En se référant au dessin d'ensemble de la page 185. »
   - **Vue éclatée 3D** du synchroniseur (p.199) : de gauche à droite, **Pignon fou (7)**, une
-    bague, le moyeu et le baladeur, trois clavettes et un jonc, une bague, puis
+    bague, le **baladeur** puis le **moyeu**, trois clavettes et **deux joncs** (un anneau de
+    chaque côté du moyeu), une bague, puis
     **Pignon fou (9)**. Six traits de légende à renseigner (trois en haut, trois en bas).
   - **Trois coupes couleur du synchroniseur** (p.199 bas, p.200 ×2) montrant, avec le même
     codage : le pignon fou **(5)** en vert, la **Bague de synchronisation** en violet, le
@@ -6337,7 +6343,7 @@ branches :
 > L'embrayage a pour but de transmettre à volonté la puissance d'une partie motrice à une partie
 > réceptrice. On distingue deux types : progressif et instantané.
 >
-> - **Symbole** *(rectangle traversé par l'arbre, avec deux courts traits horizontaux affrontés
+> - **Symbole** *(rectangle traversé par l'arbre, avec deux courts traits verticaux affrontés
 >   au centre — les deux plateaux)*
 > - **Couple transmissible par un embrayage à friction plane**
 >
@@ -8660,12 +8666,41 @@ verbatims, les 500 lignes de nomenclature, les arbres F.A.S.T. et les données c
 recoupés sans écart. **Ce qui casse, c'est la lecture des planches** — les repères sont bien lus,
 mais regroupés par proximité sur une page tournée plutôt que suivis jusqu'à la vue qui les porte.
 
-⚠️ **Ce qui reste dû.** La moitié **p.145–288 n'a eu qu'un sondage** (42 %), et son verdict propre
-doit se lire à la lumière de ce qui précède : le sondage de l'autre moitié était propre lui aussi,
-et l'intégrale y a trouvé vingt-et-un défauts. Rien ne permet de supposer que cette moitié-ci en
-soit exempte. Une re-lecture intégrale de p.145–288 est donc **due**, et c'est pourquoi le registre
-porte `complete` et non `validee-r7` : la profondeur est acquise sur la totalité de la source, la
-validation indépendante ne l'est qu'à moitié.
+**Troisième passe, intégrale sur p.145–288 — ENTAMÉE, NON TERMINÉE.** La moitié que le sondage
+avait déclarée propre a été rouverte page par page. Elle ne l'était pas.
+
+| Plage | Pages ouvertes | Substantielles | Verdict |
+| ----- | -------------- | -------------- | ------- |
+| p.145–173 | 29 / 29 | **5** | SOUS LA BARRE |
+| p.174–202 | 29 / 29 | 1 | au-dessus |
+| p.203–231 | 13 / 29 | 1 | **interrompu** (limite de session) |
+| p.232–259 | 7 / 28 | 0 à ce stade | **interrompu** (limite de session) |
+| p.260–288 | 0 / 29 | — | **jamais ouvert** |
+
+**78 pages sur 144 (54 %)**, et **7 substantielles corrigées**. Le sondage en annonçait **zéro**
+sur cette moitié.
+
+Le défaut le plus coûteux est du genre exact que la seconde passe avait isolé — *la lecture des
+planches*, pas le texte. Sur le schéma cinématique p.173, la roue **Z₁₈** était rattachée à
+l'arbre (15) au lieu de l'arbre (21). Deux preuves indépendantes le tranchent : la géométrie (les
+roues du baladeur sont centrées sur la ligne de l'arbre 21) et l'arithmétique des entraxes
+(Z₁₈+Z₃₃ = Z₁₉+Z₃₁ = 90, quand l'arbre 15 imposerait 68). Or les questions 4.a à 4.d de la p.174
+demandent précisément les couples de roues en prise : **la fiche fabriquait un corrigé faux**, et
+c'est le chapitre 14 (p.163–180) qui en aurait hérité. Les six autres : deux joncs comptés un
+(p.199), cinq lignes d'arbres comptées quatre (p.149), 14 roues comptées 12 (bornes de scope), une
+« épure cotée » sans cote (p.145), une « vue éclatée » qui est une vue assemblée (p.155), un
+symbole d'embrayage à traits horizontaux là où la page en imprime des verticaux (p.212).
+
+⚠️ **Ce qui reste dû, précisément.** **66 pages n'ont jamais été ouvertes par un contrôleur** :
+**p.216–231**, **p.239–259** et **p.260–288**. Aux taux constatés, elles portent vraisemblablement
+d'autres défauts du même genre. Tant qu'elles ne sont pas relues, le registre porte `complete` et
+non `validee-r7`.
+
+**La règle qu'il faut en tirer, et qui vaut au-delà de cette fiche** : un « au-dessus de la barre »
+obtenu par sondage ne dit pas qu'une plage est saine — il dit qu'on ne l'a pas regardée. Sur les
+deux moitiés de ce manuel, le sondage a rendu 3 et 0 substantielles ; l'intégrale a rendu 21 et 7.
+**Il en détecte de l'ordre d'un septième.** Une génération lancée sur une plage seulement sondée
+hérite donc des six septièmes restants.
 
 ### 6.2 Zones incertaines relevées à la transcription
 
