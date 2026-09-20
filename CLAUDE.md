@@ -126,6 +126,12 @@
 - **Le contenu ne voyage pas en migrations** : `content:emit` → `sql/content/<subject>.sql`,
   appliqué en prod par `apply-content.yml` (`workflow_dispatch`, journalisé dans
   `content_releases`). Ne jamais committer de SQL ici, ni de migration dans le moteur.
+  ⭐ **Un lot n'est pas fini au merge, il est fini en production.** Règle permanente : la session
+  qui merge du contenu le **publie** dans la foulée — sans le demander, sans le déléguer.
+  `subjects` toujours renseigné (vide = tout le corpus, ~45 min d'écriture en prod), puis vérifier
+  les étapes « Appliquer », « Vérifier en base », « Journaliser ». Du contenu mergé non publié est
+  un manquement, pas une étape suivante. Pourquoi rien ne le fait à votre place :
+
   ⚠️ **Merger ne publie pas.** `apply-content.yml` est désarmé volontairement (lot 3a) : aucun
   merge, aucun push ne déclenche une application. Une PR de contenu mergée n'est donc **pas** en
   prod tant qu'un humain n'a pas dispatché — et une application lancée quelques minutes *avant*
