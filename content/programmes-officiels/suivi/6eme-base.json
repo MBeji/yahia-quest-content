@@ -37,7 +37,7 @@
     },
     {
       "matiere": "arabe",
-      "statut": "validee-r7",
+      "statut": "partielle",
       "profondeur": "generation",
       "sources": [
         {
@@ -48,6 +48,66 @@
           "role": "enseignant",
           "pagesTotal": 128,
           "pagesLues": "integral"
+        },
+        {
+          "code": "101612",
+          "tomes": [
+            "P00"
+          ],
+          "role": "eleve",
+          "pagesTotal": 248,
+          "pagesLues": [
+            [
+              1,
+              3
+            ],
+            [
+              96,
+              96
+            ],
+            [
+              100,
+              100
+            ],
+            [
+              103,
+              103
+            ],
+            [
+              125,
+              125
+            ],
+            [
+              206,
+              206
+            ],
+            [
+              225,
+              225
+            ],
+            [
+              246,
+              248
+            ]
+          ]
+        },
+        {
+          "code": "101611",
+          "tomes": [
+            "P00"
+          ],
+          "role": "eleve",
+          "pagesTotal": 224,
+          "pagesLues": [
+            [
+              1,
+              2
+            ],
+            [
+              220,
+              222
+            ]
+          ]
         }
       ],
       "sujets": [
@@ -60,9 +120,9 @@
         "verdict": "11 ecarts confirmes et corriges. La table p.35 donne DEUX lignes par unite (filet interne qui ne traverse pas la colonne الوحدة) ; la transcription initiale les avait fondues, ce qui decalait la 2e ligne vers l'unite suivante : 7 cellules fausses sur 31. Consequence la plus couteuse : cette erreur FABRIQUAIT une contradiction p.35 vs cartes d'unite, que la fiche affirmait en trois endroits (§2 bis, §2 quater, §6) dont un sous le titre « c'est la table p.35 qui decroche ». p.35, la carte p.39, le bandeau p.41 et les مذكّرات p.80-83 sont en realite unanimes. Ajoutes : p.33 le calendrier reel (سبتمبر = الوحدة صفر, congés nommes, و3/و4 redecoupes), p.34 les 13 objectifs de lecture verbatim (la fiche en listait 8, dont 6 alteres et un inexistant), p.36 la progression d'ecriture par unite et la كفاية sans « متنوّعة », p.39 et p.49 les deux bandeaux (ni الماضي ni المضارع المرفوع en و1 ; التّراكيب الجزئيّة et non الخبريّة en و6), p.13 la 4e قرينة لفظيّة = الصّيغة (la fiche hesitait avec الصِّفة). Le scope grammatical de l'annee est inchange : memes faits de langue, autre repartition.",
         "corrections": 11
       },
-      "maj": "2026-09-19",
-      "par": "claude/great-wright-e4cqyu",
-      "notes": "Guide enseignant 501603P00 lu integralement (128 p., vision 170 dpi ; crops 400 dpi sur les bandeaux verticaux et les encadres). Fiche a profondeur de generation : cadre + noyau grammatical, progression annuelle p.33-36, les SIX cartes d'unite cellule par cellule (p.38-49), le deroule-type des مذكّرات de lecture / ecriture / grammaire de l'unite 1 avec les cinq encadres-regles verbatim (p.50-87), et les epreuves officielles avec leur bareme (p.88-127) + le فهرس (p.128). AUDIT R-7 du 2026-09-19 (portee integrale, p.13/33/34/35/36/39/49 relues au source a 350-400 dpi) : 11 ecarts corriges, detail en §6 « Audit R-7 » de la fiche. La divergence p.35 vs carte p.39 qui figurait ici en « signalee non arbitree » N'EXISTAIT PAS : elle etait produite par la transcription. Restent signalees, elles au source : bandeaux de القراءة repetes en و4 et و6, 4 vs 5 situations dans les مذكّرات, deux coquilles de pagination du فهرس."
+      "maj": "2026-09-21",
+      "par": "claude/arabe-6eme-base-fahras",
+      "notes": "Guide enseignant 501603P00 lu integralement (128 p., vision 170 dpi ; crops 400 dpi sur les bandeaux verticaux et les encadres). Fiche a profondeur de generation : cadre + noyau grammatical, progression annuelle p.33-36, les SIX cartes d'unite cellule par cellule (p.38-49), le deroule-type des مذكّرات de lecture / ecriture / grammaire de l'unite 1 avec les cinq encadres-regles verbatim (p.50-87), et les epreuves officielles avec leur bareme (p.88-127) + le فهرس (p.128). AUDIT R-7 du 2026-09-19 (portee integrale, p.13/33/34/35/36/39/49 relues au source a 350-400 dpi) : 11 ecarts corriges, detail en §6 « Audit R-7 » de la fiche. La divergence p.35 vs carte p.39 qui figurait ici en « signalee non arbitree » N'EXISTAIT PAS : elle etait produite par la transcription. Restent signalees, elles au source : bandeaux de القراءة repetes en و4 et و6, 4 vs 5 situations dans les مذكّرات, deux coquilles de pagination du فهرس. | 2026-09-21 — SECOND CANAL OUVERT (manuels eleves 101611 + 101612, jamais lus jusqu'ici) ; aucun fichier de content/arabic-6eme/ touche. (1) La refonte de septembre 2006 NE TOUCHE PAS la 6eme : constate, pas suppose — les trois pages de titre relues a 400 dpi (guide 501603, manuels 101611 et 101612) portent les MEMES cinq auteurs et les memes trois evaluateurs, AUCUNE equipe de تنقيح, aucun superviseur, aucune مقدّمة (p.2 = ligne de copyright seule). Guide et manuels sont une seule edition ; le motif qui perime les guides du college (equipe de تنقيح au manuel, absente du guide) n'existe pas ici. Le §2 de la fiche n'est donc PAS un plan perime. (2) Le فهرس de 101612 (p.246-248, relu a 200 dpi) donne 61 lecons en trois قسم : 31 استعمال قواعد اللغة (p.3-120), 24 الإنتاج الكتابيّ (p.125-220), 6 أنشطة إدماج (p.225-241). Les 31 lecons de grammaire concordent UNE A UNE ET DANS L'ORDRE avec la table p.35 du guide : le canal independant confirme la fiche a la lecon pres. (3) TABLEAU D'ECART : les 13 chapitres de content/arabic-6eme/ sont TOUS au programme de 6eme — 13 ✅, 0 ⬆️ (autre niveau), 0 ⛔ (nulle part) — et dans l'ordre du manuel, sans une inversion. C'est le contraire exact de la 8eme. (4) DEUX RESERVES MESUREES : la lecon 27 (التّاء المفتوحة) est couverte sous le SYNONYME مبسوطة (le grep d'une seule graphie rendait 0 — faux trou evite) ; la lecon 26 (الواو والياء في الجمع المذكّر السّالم المضاف, 3 pages au manuel, هدف مميّز de l'unite 5 au guide) est TESTEE SANS ETRE ENSEIGNEE — elle n'apparait que dans l'explication d'un exercice du ch.11, pas dans son cours. (5) L'ECART REEL EST A L'INVERSE : content/arabic-6eme/ ne sert que le القسم الأوّل. Les 24 lecons d'إنتاج كتابيّ, les 6 أنشطة إدماج et les 64 textes de lecture de 101611 (6 unites, objectifs releves sur les bandeaux du فهرس) ne sont servis par AUCUN chapitre — mesure en 18 graphies alternatives, toutes a 0 ou 1 hors-sujet. Le subject.json promet pourtant deja la lecture et la production. Sur une annee de concours, c'est l'arbitrage a porter a Mohamed. (6) Divergence guide vs manuel non arbitree : p.36 و5 annonce « ماذا أفعل لـ ؟ », le manuel imprime p.206 « المقطع التفسيريّ : الأسباب والنّتائج ». Le manuel corrige aussi deux coquilles du guide (الأطراف vs الأطرف ; خالد التمزرطي vs خالد التّهزرطي). Corrige au passage dans la fiche : « نانع العبدلي » -> « نافع العبدلي », et les §4/§5/§6 qui declaraient encore content/arabic-6eme/ ABSENT alors qu'il sert 13 chapitres. BORNE : 12 pages lues sur 248 (101612) et 5 sur 224 (101611) — relevé de فهرس + sondage, pas une transcription. Ce lot compare des TITRES, pas des contenus : la fidelite des 13 chapitres aux 31 lecons reste NON ETABLIE, c'est le lot suivant (lire 101612 p.3-124). STATUT RETROGRADE de validee-r7 a partielle le 2026-09-21, et c'est voulu : l'audit R-7 du 2026-09-19 reste vrai du GUIDE (501603, lu a 100 %, son bloc r7 est conserve), mais le corpus declare de la fiche compte desormais deux sources de plus, lues a 5 % et 2 %. Un « valide » sur un corpus a trous est une fausse declaration — meme regle qu'en 9eme arabe (guide integral + manuel 13 % = partielle, profondeur generation). profondeur reste « generation » : les 13 chapitres servis sont tous au programme, le contenu deja ecrit n'est pas remis en cause. Detail complet et separation ETABLI / NON ETABLI au §2 sexies de la fiche (le numero « 2 bis » etait deja pris par la خارطة الوحدات, que le verdict R-7 designe sous ce nom)."
     },
     {
       "matiere": "eveil",
