@@ -52,6 +52,10 @@
   cette recette (logiciels, réglages Windows, domaines à autoriser sur le proxy — la liste à
   remettre à un admin PC) : `FableEtudes/POSTE-DE-TRAVAIL.md`.
 
+- ⚠️ **Le CNP sert son certificat feuille SEUL** : `curl` sort en **60**, pas un blocage.
+  `cat ../engine/scripts/cloud/ca-chain/*.pem /root/.ccr/ca-bundle.crt > /tmp/cnp-ca.pem`, puis
+  `CURL_CA_BUNDLE` / `NODE_EXTRA_CA_CERTS` dessus. Le hook du moteur le fait, mais il NE tourne PAS
+  dans une session ouverte sur CE dépôt. Jamais `-k` ni `NODE_TLS_REJECT_UNAUTHORIZED=0`.
 - **Lancer une campagne** : `/campagne` (skill `.claude/skills/campagne/`) — état des lieux
   vérifié, question à l'humain sur le couple à traiter, puis déroulé de la chaîne. Il ne choisit
   jamais le couple : l'outillage donne les faits, l'arbitrage reste humain.
