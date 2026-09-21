@@ -170,6 +170,88 @@ essayer **avec shadda, sans shadda, avec et sans article, et un synonyme courant
 obtenu d'une seule graphie n'est pas une mesure (trois faux trous fabriqués ainsi le 2026-09-19).
 Les cinq ⛔ ci-dessus sont relevés sur des **فهارس lus à l'image**, pas sur un `grep`.
 
+## 2 ter. LOT A du 2026-09-21 — la lecture du corps de `101808` n'a pas pu avoir lieu ; ce que la fiche établit quand même
+
+**Ce qui était demandé** : lire les 158 p. du manuel révisé `101808` **à l'image** et rendre, page à
+l'appui, un verdict sur sept notions — النعت · التوكيد · البدل · العطف · أسلوب التعجّب · المنادى ·
+العدد — enseignées ou non dans le **corps** des leçons. Un فهرس est une table des matières, pas le
+contenu d'une leçon : c'est précisément pourquoi le §2 bis s'arrête à « CE QUI N'EST PAS ÉTABLI ».
+
+### Le mur, constaté et non déduit
+
+| constat | comment | résultat |
+| --- | --- | --- |
+| aucun PDF du corpus dans le conteneur | `find / -iname '*.pdf'` | **2 fichiers**, tous deux des exemples d'outillage (`/mnt/skills/…`, LibreOffice) — **zéro** PDF CNP |
+| `cnp-officiel/` n'est pas versionné ici | `git log --all -- '*.pdf'` → aucun commit ; pas de LFS (`.gitattributes` ne fait que marquer `*.pdf binary`) | le corpus n'a **jamais** été dans ce dépôt |
+| il est **machine-local par conception** | `METHODE-GENERATION-CONTENU.md` : « corpus local déjà téléchargé : `cnp-officiel/CATALOGUE.md` » ; `programme:corpus` lit « le `cnp-officiel/catalogue.csv` **voisin du clone moteur** — **machine locale uniquement** » | attendu, pas un incident |
+| le site CNP est hors d'atteinte | `curl https://www.cnp.com.tn/arabic/PDF/101808P0{0,1,2,3}.pdf` → échec TLS ; témoin `https://example.com` → `CONNECT tunnel failed, response 403`, et le proxy journalise `connect_rejected — gateway answered 403 to CONNECT (policy denial)` | la **politique de sortie** de l'environnement distant n'ouvre pas ce domaine |
+| aucun autre dépôt du compte ne le porte | `list_repos` — 47 dépôts | `ScribeKit` est le **moteur** de transcription, pas le corpus |
+
+⇒ **Les sept verdicts restent NON ÉTABLIS et aucun chapitre n'a été retiré.** Supprimer sur la foi
+d'un titre absent d'une table des matières serait exactement la conjecture que le bloc
+« ⛔ CONJECTURE DÉMENTIE » de [`../9eme-base/arabe.md`](../9eme-base/arabe.md) a déjà fait payer.
+
+> **Ce mur ne figure pas au tableau de `docs/agents/zero-intervention.md`** du moteur ; il appartient
+> à la famille « ressources hors dépôt ». Ce qui le lèverait, par ordre de coût : déposer les trois
+> tomes de `101808` dans le dépôt (ou les transmettre par le champ `FICHIERS` de la méthode) ;
+> ou dérouler ce LOT A depuis le poste, où `cnp-officiel/` est voisin du clone moteur.
+
+### Ce que la fiche établit quand même, sans ouvrir un PDF
+
+**(a) Le guide `501802` enseigne bien quatre des sept notions — mais comme des مركّبات, pas comme des
+توابع.** Le §2 ci-dessus les porte déjà, avec leur page au الفهرست : **درس 6 مركّب العطف (p.32)** ·
+**درس 8 المركّب التّوكيديّ (p.43)** · **درس 9 المركّب النّعتيّ (p.48)** · **درس 10 المركّب البدليّ
+(p.55)** ; et le التّمهيد (p.5) les pose comme les exemples-types du **المركّب الاسميّ** —
+« المركّب النّعتيّ = منعوت + نعت ؛ المركّب التّوكيديّ = مؤكَّد + توكيد ».
+
+⚠️ **Cela ne tranche rien sur l'édition révisée**, mais c'est exactement le mécanisme contre lequel
+ce lot mettait en garde : une notion peut vivre **à l'intérieur** d'une leçon dont le titre ne la
+nomme pas. Les 13 leçons d'إعراب de `101808` sont toutes consacrées à la الجملة المركّبة, dont
+**sept** « الوظائف الأساسيّة في الجملة المركّبة » et **quatre** « متمّمات مشتملة على مركّبات إسناديّة
+فرعيّة » — des intitulés qui, dans le métalangage de cette collection, **désignent des places, pas
+des notions**, et une place peut être tenue par un مركّب نعتيّ ou توكيديّ. Pour les quatre التوابع,
+la question est donc **ouverte**, et l'absence au فهرس ne la ferme pas.
+
+**(b) المنادى et التعجّب ne viennent d'aucune des deux éditions.** Le guide `501802` ne les porte pas
+davantage que le فهرس révisé : ses propres bornes de scope (§2, bloc « ⛔ EXCLU ») les renvoient
+explicitement en aval — « les chapitres de نحو non listés (p. ex. **المنادى، التّعجّب**…) » — et la
+9ᵉ révisée porte bien النّداء (ص 29). **Deux découpages concordants** placent donc ces deux notions
+hors de la 8ᵉ. C'est le point le plus solide du dossier ; il reste à confirmer sur le corps de
+`101808`, comme les cinq autres.
+
+**(c) Le contenu servi en 8ᵉ n'est bâti sur aucun manuel CNP.** Relevé dans les douze
+`chapter.json` de `content/arabic-8eme/` : leurs `sources[]` citent **9raya.tn · devoir.tn ·
+najahni.tn · 9rayti.com.tn · tunisiecollege.net** et un document **scribd** ; **onze sur douze**
+portent encore, mot pour mot, « **À REVALIDER sur le programme officiel CNP arabe 8ème (guide
+501802)** ». Et `08-jumla-murakkaba` — le seul chapitre que le §2 bis dit « ✅ à sa place » —
+décompose la الجملة المركّبة en « **التركيب بالوصل / بالإسناد / بالربط** », un découpage qui n'est
+celui **d'aucune des deux éditions** : le guide (دروس 17–23) décompose par la **fonction** qui porte
+le مركّب — المبتدأ، الخبر، الفاعل، المفعول به، المفعول لأجله، الحال.
+
+⇒ La question de ce lot n'est donc pas « le programme officiel a-t-il supprimé cinq notions que le
+corpus transcrivait fidèlement ? » mais « **le corpus de 8ᵉ n'a jamais été bâti sur le programme
+officiel** ». L'arbitrage « on fait exactement le programme officiel » porte sur les **douze**
+chapitres, pas sur cinq — y compris sur ceux marqués ✅, dont le découpage interne est à refaire.
+
+**(d) Le manifeste ne réclamera aucun chapitre retiré** : `manifest/8eme-base.json` déclare
+`arabic-8eme.chapters: []`. La précaution habituelle (« retirer aussi le chapitre du manifeste »)
+est sans objet tant que cette liste reste vide.
+
+### Ce qu'il faut pour clore le LOT A
+
+Pour la session qui aura le corpus sous la main :
+
+1. lire `101808P01/P02/P03` **à l'image**, ~105–110 dpi — couche texte vide (≈53 car. de
+   filigrane/page), donc **rien à `grep`** ;
+2. relever pour chacune des 24 leçons ses **أركان أربعة** (نصّ انطلاق → مدخل → خلاصة → تمارين), à
+   profondeur de génération (R-5) ;
+3. rendre les **sept verdicts avec la page**. Pour les quatre التوابع, la question précise est :
+   les sept « الوظائف الأساسيّة » et les quatre « متمّمات » **nomment-elles** النعت/التوكيد/البدل/العطف
+   dans leur corps, ou la 8ᵉ révisée ne décrit-elle plus que la **place** ?
+4. **avant de conclure à une absence**, chercher avec shadda, sans shadda, avec et sans article, et
+   un synonyme courant (`التوكيد`/`التّوكيد`/`توكيد` ; `النعت`/`النّعت`/`الصفة`) — un « zéro » d'une
+   seule graphie n'est pas une mesure.
+
 ## 3. Notes pédagogiques / méthode
 
 ### 3.1 Architecture du guide (التّمهيد + corps)
@@ -241,6 +323,8 @@ Chiffres **latins 0–9** partout — le guide numérote ses دروس **1 … 24
 
 ## 6. Incertitudes / à revérifier
 
+- **⛔ Le corps du manuel révisé `101808` n'est toujours pas lu** — et c'est **la** dépendance de ce niveau. Les sept verdicts (النعت · التوكيد · البدل · العطف · أسلوب التعجّب · المنادى · العدد) sont **non établis** ; rien n'a été retiré de `content/arabic-8eme/`. Le mur (corpus `cnp-officiel/` machine-local, domaine CNP fermé par la politique de sortie) et le protocole pour le lever : **§2 ter**.
+- **Le §2 ci-dessous décrit l'édition d'AVANT la refonte de septembre 2006** (§2 bis). Il reste fidèle à ce que le guide `501802` imprime, mais il ne décrit pas le programme que l'élève suit. Ne pas s'en servir seul comme autorité de scope pour créer ou retirer un chapitre de 8ᵉ.
 - **Architecture أقسام (8ème) ≠ أبواب (7ème)** : le 8ème dit « القسم الأوّل / القسم الثّاني » (sections), le 7ème disait « الباب الأوّل / الباب الثّاني » (parties) — terminologie différente pour la même division نحو/صرف. ✅ vérifié sur الفهرست (p.166–167) + intercalaire (p.7).
 - **« علم الاشتقاق » vs « علم الصّرف »** : le **تمهيد (p.3)** annonce القسم الثّاني « **في علم الاشتقاق** » ; l'**intercalaire + الفهرست** le titrent « **علم الصّرف** ». Même section (la morphologie/dérivation) ; les deux libellés coexistent dans le guide. ✅ signalé.
 - **الفهرست paginé (≠ 7ème)** : ici la colonne « الصّفحة » **est renseignée** → les pages des 36 دروس sont **fiables** (relevées directement). (Au 7ème elle était vide.)
