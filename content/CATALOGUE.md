@@ -5,7 +5,7 @@
 > with `chapter.json`; a subject with 0 chapters is a ⚠ stub). Check here whether a subject /
 > grade already exists before creating one, and which slugs are taken.
 
-**95 subjects · 802 chapters · 3733 exercises · 6 themes · 0 stub(s)**
+**95 subjects · 805 chapters · 3748 exercises · 6 themes · 0 stub(s)**
 
 ## anglais
 
@@ -92,7 +92,7 @@
 | `sciences-vie-terre-7eme` | علوم الحياة والأرض | 7eme-base | ar | 7 | 42 | 7 |
 | `math-8eme` | الرياضيات | 8eme-base | ar | 12 | 72 | 12 |
 | `french-8eme` | Français | 8eme-base | fr | 10 | 60 | 10 |
-| `arabic-8eme` | العربية | 8eme-base | ar | 16 | 92 | 16 |
+| `arabic-8eme` | العربية | 8eme-base | ar | 19 | 107 | 19 |
 | `sciences-physiques-8eme` | العلوم الفيزيائية | 8eme-base | ar | 6 | 36 | 6 |
 | `english-8eme` | English | 8eme-base | en | 5 | 30 | 5 |
 | `sciences-vie-terre-8eme` | علوم الحياة والأرض | 8eme-base | ar | 8 | 48 | 8 |
