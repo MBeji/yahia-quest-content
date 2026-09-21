@@ -5,6 +5,7 @@
 > **Source** : guide enseignant `501802P00.pdf` (`cnp-officiel/manuels/asasi/c8/enseignant/`) — titre réel imprimé sur la page de garde : « **النّحو العربي — للسّنة الثّامنة من التّعليم الأساسي · كتاب الأستاذ** » (La grammaire arabe — 8e année de l'enseignement de base · Livre du professeur). **تأليف (auteurs)** : **سهام كباني** (أستاذة أولى بالتّعليم الثّانوي) · **عمر بنّور** (متفقّد أوّل بالتّعليم الثّانوي) · **الصّادق الميساوي** (أستاذ مساعد بكليّة الآداب منّوبة) · **محمد الشّاوش** (أستاذ مساعد بكليّة الآداب منّوبة). **إشراف (supervision)** : **عبد القادر المهيري** (أستاذ متميّز بجامعة تونس الأولى — même superviseur que le guide 7ème). Éditeur : **المركز الوطني البيداغوجي** · وزارة التربية · الجمهوريّة التّونسيّة. الرمز : **501 802**. 168 p. (PDF, format portrait ≈ 567 × 764 pts).
 > **⚠️ Le titre annoncé par la consigne (« النحو العربي — كتاب الأستاذ, suite du 7ème ») est exact sur le fond** : c'est bien le **livre du professeur de grammaire arabe (نحو) de niveau collège, 8ème année**, suite directe du 7ème (même collection, même superviseur عبد القادر المهيري). **Différence d'architecture notable vs 7ème** : le 7ème était structuré en **deux أبواب** (علم الإعراب / علم الصّرف) ; le 8ème est structuré en **deux أقسام** (= sections) — **القسم الأوّل علم الإعراب** et **القسم الثّاني علم الصّرف (intitulé « علم الاشتقاق » dans le تمهيد)** — déroulés en **24 + 12 = 36 دروس** numérotés (cf. الفهرست p.166–167). **L'angle d'attaque du نحو change** : le 7ème entrait par **les fonctions** (الفاعل، المفعول به…) ; le **8ème entre par les المركّبات** (la typologie des unités syntaxiques composées : فعليّ، اسميّ، صرفيّ، إسناديّ، موصوليّ، إضافيّ، عطف، جرّ، توكيديّ، نعتيّ، بدليّ، شبه إسناديّ) puis **la phrase complexe** (الجملة المركّبة) — c'est l'**autorité de scope نحو/صرف 8ème**.
 > **Pages lues** (numéros **imprimés** = PDF, offset ≈ 0) : page de garde (PDF 1) ; **التّمهيد** p.3–6 (objectifs généraux p.3 ; objectifs « في كتاب التلميذ / في كتاب الأستاذ » p.3–4 ; **cadre conceptuel des المركّبات** [typologie + définitions formelles de chaque type] p.5–6 ; signature « المؤلّفون » p.6) ; **intercalaire « القسم الأوّل — علم الإعراب »** p.7 ; **الدّرس الأوّل : النّصّ والجملة والنّواة** (أهداف الدرس + النّصّ ومكوّناته) p.9 ; **الدّرس الثّاني : أنواع المركّبات (1)** p.13 (أهداف + tableau exemples فعل/فاعل/مفعول به) ; **جدول تأليفيّ لمعاني المزيد** (table de référence صرف, page paysage) p.165 ; **الفهرست complet** p.166–167 (القسم الأوّل = 24 دروس ; القسم الثّاني = 12 دروس). **La colonne « الصّفحة » du الفهرست EST renseignée ici** (≠ 7ème où elle était vide) → toutes les pages des دروس ci-dessous sont **relevées du الفهرست**. **Offset printed↔PDF ≈ 0** (page de garde = PDF 1 ; intercalaire القسم الأوّل p.7 = PDF 7 ; الفهرست p.166 = PDF 166). **Transcrit le** : 2026-06-29. **Statut** : transcription fidèle (front + التّمهيد + الفهرست intégral avec pagination + 2 دروس lus en détail ; corps des 36 دروس non lu cellule-par-cellule — voir §6).
+> **➕ Seconde source, et c'est désormais L'AUTORITÉ DE SCOPE** : le **manuel élève RÉVISÉ `101808`** (3 tomes, **158 p., LUES INTÉGRALEMENT à l'image le 2026-09-21**) — 24 leçons, leurs **24 خلاصات transcrites** et les **sept verdicts** sur النعت · التوكيد · البدل · العطف · التعجّب · المنادى · العدد : **§2 ter et §2 quater**. Le guide `501802` décrit le découpage d'AVANT la refonte de 2006 ; `101808` décrit celui **en vigueur**.
 > **Langue d'enseignement** : `ar` (monolingue — langue d'instruction officielle). **gradeSlug** : `8eme-base`. **subject id** attendu : `arabic-8eme`.
 
 ## 1. Cadre & compétences (الأهداف / المقاربة)
@@ -147,15 +148,20 @@ N'A PAS ÉTÉ LU … c'est la prochaine lecture ». **Cette lecture a eu lieu le
 | `12-jam3-taksir-wa-masadir` | جمع التكسير والمصادر | ✅ **8ᵉ** — idem |
 | `05-munada` | المنادى | ⬆️ **9ᵉ** — leçon « النّداء » (ص 29) |
 | `06-3adad` | العدد | ⬆️ **9ᵉ** — « العدد والمعدود » (ص 116 · 122) |
-| `01-na3t` | النعت | ⛔ **aucun des trois niveaux** |
-| `02-tawkid` | التوكيد | ⛔ **aucun des trois niveaux** |
-| `03-badal` | البدل | ⛔ **aucun des trois niveaux** |
-| `04-3atf` | العطف | ⛔ **aucun des trois niveaux** |
-| `07-uslub-ta3ajjub` | أسلوب التعجّب | ⛔ **aucun des trois niveaux** |
+| `01-na3t` | النعت | 🟡 **pré-requis mobilisé en 8ᵉ** — 3 خلاصات (p.14 · 73 · 149), jamais une leçon |
+| `02-tawkid` | التوكيد | 🟡 **pré-requis mobilisé en 8ᵉ** — خلاصة p.14, تحليل نماذج p.52 |
+| `03-badal` | البدل | 🟠 **cité une seule fois** — خلاصة p.14, et rien sur les 157 autres pages |
+| `04-3atf` | العطف | 🟡 **pré-requis mobilisé en 8ᵉ** — تحليل نماذج p.53, تمرين p.85 |
+| `07-uslub-ta3ajjub` | أسلوب التعجّب | ⛔ **absent** — zéro occurrence sur les 158 p. de `101808` |
 
 **CE QUI EST ÉTABLI** — les trois فهارس révisés (7ᵉ `101710` ص 4 · 8ᵉ `101808` ص 3–4 ·
-9ᵉ `101908` ص 175–176) ont été lus, et **aucun** ne porte les quatre التوابع ni le التعجّب. Ce sont
-très probablement les **« ما لم يعد مقرّرا »** que la المقدّمة de `101710` dit avoir supprimés.
+9ᵉ `101908` ص 175–176) ont été lus, et **aucun** ne porte les quatre التوابع ni le التعجّب **comme
+titre de leçon**. ⚠️ **Mais un فهرس ne prouve rien de plus que cela** : celui de la 8ᵉ nomme des
+**places** (« الوظائف الأساسيّة » ×7, « متمّمات » ×4), pas des notions. **Le corps du manuel de 8ᵉ
+a depuis été lu intégralement** (§2 ter) et il corrige la conclusion : quatre de ces cinq notions
+y sont **convoquées comme acquis dans les خلاصات elles-mêmes**, sous les noms المركّب النعتيّ ·
+المركّب التّوكيديّ · المركّب بالعطف ; seule **التعجّب** est réellement absente de bout en bout, et
+**البدل** réduite à une mention de liste. Verdicts détaillés, page à l'appui : **§2 quater**.
 Deux autres notions (المنادى, العدد) sont servies **un an trop tôt** par rapport au découpage en
 vigueur — et la 9ᵉ est l'**année de concours**.
 
@@ -168,89 +174,407 @@ Mohamed** ; cette fiche établit les faits, elle ne tranche pas.
 ⚠️ **Méthode, et elle a déjà coûté** : avant de déclarer une notion absente d'un corpus arabe,
 essayer **avec shadda, sans shadda, avec et sans article, et un synonyme courant**. Un « zéro »
 obtenu d'une seule graphie n'est pas une mesure (trois faux trous fabriqués ainsi le 2026-09-19).
-Les cinq ⛔ ci-dessus sont relevés sur des **فهارس lus à l'image**, pas sur un `grep`.
+Les verdicts ci-dessus sont relevés sur des **pages lues à l'image**, pas sur un `grep` — et la
+couche texte de `101808` est de toute façon un filigrane, il n'y a **rien à `grep`**. ⚠️ Corollaire
+appris ici : **un mot présent n'est pas une notion enseignée, et un mot identique peut nommer deux
+notions** — « العدد » titre deux leçons de صرف de la 8ᵉ **au sens de nombre grammatical**, alors
+que le numéral اسم العدد est absent du manuel (§2 quater).
 
-## 2 ter. LOT A du 2026-09-21 — la lecture du corps de `101808` n'a pas pu avoir lieu ; ce que la fiche établit quand même
+## 2 ter. Le manuel élève RÉVISÉ `101808` — LU À L'IMAGE, 158/158 p. (LOT A, 2026-09-21)
 
-**Ce qui était demandé** : lire les 158 p. du manuel révisé `101808` **à l'image** et rendre, page à
-l'appui, un verdict sur sept notions — النعت · التوكيد · البدل · العطف · أسلوب التعجّب · المنادى ·
-العدد — enseignées ou non dans le **corps** des leçons. Un فهرس est une table des matières, pas le
-contenu d'une leçon : c'est précisément pourquoi le §2 bis s'arrête à « CE QUI N'EST PAS ÉTABLI ».
+> **Source** : `101808P01.pdf` (55 p.) · `101808P02.pdf` (48 p.) · `101808P03.pdf` (55 p.) =
+> **158 p.**, `https://www.cnp.com.tn/arabic/PDF/101808P0{1,2,3}.pdf`. Titre imprimé p.1 :
+> **« النّحو العربيّ — كتاب اللّغة لتلامذة السّنة الثّامنة من التّعليم الأساسيّ »**.
+> **تأليف** : سهام كباني (أستاذة أولى للتعليم الثانوي) · عمر بنّور (متفقّد عامّ للتربية) ·
+> الصادق الميساوي (أستاذ جامعي) · محمد الشاوش (أستاذ جامعي). **إشراف** : عبد القادر المهيري.
+> **تنقيح** : رضا عبد الله · رضا محجوب · رضوان بلعيد · فؤاد الخطيب (متفقّدو المدارس الإعداديّة
+> والمعاهد) — c'est cette équipe de تنقيح, absente du guide `501802`, qui date l'édition d'après
+> la refonte de 2006. المركز الوطني البيداغوجي.
+> **Pages lues** : **1 → 158, intégralement**, rendues en PNG à **110 dpi** (`pdftoppm`) et lues en
+> vision. La couche texte est un **filigrane seul** (« Tous droits réservés au CNP » découpé
+> caractère par caractère) : `pdftotext` ne rend rien d'exploitable, **rien à `grep`**.
+> **Pagination** : numéro imprimé = numéro global continu sur les trois tomes
+> (**P01 = p.1–55 · P02 = p.56–103 · P03 = p.104–158**), vérifié sur les bornes
+> (فهرس p.3–4 en P01 ; درس 09 d'إعراب p.56 = P02-01 ; درس 03 de صرف p.104 = P03-01).
 
-### Le mur, constaté et non déduit
+### Comment il a été ouvert — le mur de la session précédente était un certificat, pas une politique
 
-| constat | comment | résultat |
+La session du 2026-09-21 qui a précédé celle-ci (PR #497) a conclu que « le domaine
+`www.cnp.com.tn` est fermé par la politique de sortie de l'environnement distant ». **C'était
+faux**, et la cause exacte est documentée depuis le 2026-09-06 dans
+[`scripts/cloud/ca-chain/README.md`](https://github.com/MBeji/yahia-quest-arena/blob/main/scripts/cloud/ca-chain/README.md)
+du moteur : **le CNP sert son certificat feuille SEUL**, sans l'intermédiaire Sectigo qui l'a
+signé. Un navigateur va chercher l'intermédiaire tout seul (extension AIA) ; `curl`, OpenSSL et le
+`fetch` de Node ne le font pas et **sortent en 60**, ce qui ressemble à un refus réseau sans en
+être un. Le hook `SessionStart` du moteur pose le remède, **mais il ne tourne pas dans une session
+ouverte sur CE dépôt**. Mesuré ici, les deux états :
+
+```bash
+# sans  → HTTP 000 (et curl 60 : unable to get local issuer certificate)
+# avec  → HTTP 302
+cat ../engine/scripts/cloud/ca-chain/*.pem /root/.ccr/ca-bundle.crt > /tmp/cnp-ca.pem
+export CURL_CA_BUNDLE=/tmp/cnp-ca.pem SSL_CERT_FILE=/tmp/cnp-ca.pem NODE_EXTRA_CA_CERTS=/tmp/cnp-ca.pem
+npm run content:manuel:fetch -- 101808P01   # → 11.6 Mo en 1.8 s
+```
+
+**Jamais `-k`, jamais `NODE_TLS_REJECT_UNAUTHORIZED=0`** : ajouter l'intermédiaire manquant *est*
+la réparation ; couper la vérification n'en est pas une. Les trois tomes ont été téléchargés en
+**6 secondes**. ⚠️ **Leçon de méthode, et c'est la seconde fois qu'elle se paie sur ce dossier** :
+un `exit 60` n'est pas un `403` du proxy, qui n'est pas un `404` du serveur. La session #497 a lu
+un blocage de politique dans un défaut de chaîne TLS, puis en a tiré un « mur » qu'elle a écrit
+dans le registre — où il a valeur de fait tant que personne ne le retente. **Nommer l'erreur
+observée avant d'en nommer la cause.**
+
+### Anatomie d'une leçon — les أركان أربعة, et un cinquième constant
+
+Les 24 leçons ont **toutes** la même ossature, dans cet ordre :
+
+1. **النصّ** — un texte-support authentique, toujours **sourcé en clair** (auteur, œuvre, page).
+2. **مدخل** — encadré rose, 3 à 7 questions d'observation **sur ce texte**, qui font découvrir la
+   notion sans la nommer (comparer, supprimer, transformer, classer dans un tableau).
+3. **التّطبيقات** — le corps de la leçon, découpé en **rubriques ◀** (une par facette de la règle),
+   chacune sur un corpus littéraire neuf.
+4. **الخلاصة** — encadré rose, **la règle officielle, en 2 à 8 puces**. C'est le seul endroit où le
+   manuel énonce la notion ; c'est donc **l'autorité de scope au grain de la leçon**, et c'est ce
+   que cette fiche transcrit intégralement ci-dessous.
+5. **التّمارين** — 6 à 11 exercices d'application, corpus littéraire encore distinct.
+
+Deux leçons d'إعراب (درس 8, p.52–53) intercalent en plus un **« تحليل نماذج »** : trois à cinq
+phrases entièrement décomposées en boîtes étagées (composant → fonction → type de مركّب). Ces
+tableaux sont les pages les plus denses du manuel pour établir ce que l'élève est **censé déjà
+savoir** — voir les verdicts au §2 quater.
+
+**Le corpus littéraire est un fait de scope à lui seul** : ~200 références distinctes, de الجاحظ,
+ابن المقفع et التوحيدي à طه حسين, نجيب محفوظ, ميخائيل نعيمة, جبران, الشابي, الطيب صالح, محمود
+تيمور, البشير خريّف, محمود المسعدي, علي الدوعاجي, مصطفى الفارسي, حسن نصر, عبد الحميد بن هدوقة,
+الطاهر وطّار, غسان كنفاني, آسيا جبّار, يوسف إدريس. **La part tunisienne est massive** (خريّف,
+المسعدي, الدوعاجي, الفارسي, حسن نصر, العروسي المطوي, التريكي, المدني, بلحاج نصر, الشابي, خريّف
+مصطفى, الشملي, طرشونة, قيقة, بن سالم, اللغماني, بنّور) — le manuel enseigne la grammaire **sur le
+patrimoine littéraire national**, ce qu'aucune des sources web citées par les `chapter.json`
+actuels ne reproduit.
+
+### القسم الأوّل : علم الإعراب — 13 leçons, p.6–87
+
+> **Une seule question y est traitée, sous treize angles : la الجملة المركّبة.** La progression est
+> rigoureusement fixe — d'abord *ce qui fait* qu'une phrase est complexe (leçons 1–2), puis les
+> **sept fonctions essentielles** qui peuvent porter la complexité (leçons 3–9), puis les **quatre
+> compléments** qui peuvent la contenir (leçons 10–13). La notion-pivot, répétée dans onze
+> خلاصات sur treize, est le **المركّب الموصوليّ** (dont la صلة « تكون دائما مركّبا إسناديّا »).
+
+| n° | leçon (titre imprimé) | p. | خلاصة |
+| --- | --- | --- | --- |
+| 01 | الجملة المركّبة وخصائصها التركيبيّة (1) : حدود الجملة المركّبة — الإسناد والاستقلال | 6–10 | p.9 |
+| 02 | الجملة المركّبة وخصائصها التركيبيّة (2) : النواة الإسناديّة الأساسيّة والفرعيّة | 11–17 | p.14 |
+| 03 | الوظائف الأساسيّة في الجملة الفعليّة المركّبة (1) : الفاعل مركّبا موصوليّا | 18–22 | p.20 |
+| 04 | الوظائف الأساسيّة … (2) : المفعول به مركّبا موصوليّا | 23–27 | p.26 |
+| 05 | الوظائف الأساسيّة … (3) : نائب الفاعل مركّبا موصوليّا | 28–32 | p.30 |
+| 06 | الوظائف الأساسيّة … (4) : أفعال القلوب وأفعال التحويل | 33–42 | p.39 |
+| 07 | الوظائف الأساسيّة في الجملة الاسميّة المركّبة (1) : المبتدأ أو اسم الناسخ مركّبا موصوليّا | 43–48 | p.46 |
+| 08 | الوظائف الأساسيّة … (2) : الخبر أو خبر الناسخ مركّبا إسناديّا فرعيّا أو موصوليّا | 49–55 | p.53 |
+| 09 | الوظائف الأساسيّة في الجملة الاسميّة المركّبة (3) : أفعال المقاربة وأفعال الشروع | 56–62 | p.60 |
+| 10 | المتمّمات المشتملة على مركّبات إسناديّة فرعيّة (1) : المفعول فيه | 63–69 | p.67 |
+| 11 | المتمّمات … (2) : المفعول المطلق | 70–75 | p.73 |
+| 12 | المتمّمات … (3) : المفعول لأجله | 76–81 | p.79 |
+| 13 | المتمّمات … (4) : الحال | 82–87 | p.84 |
+
+⚠️ **Écart فهرس ↔ corps, relevé et tranché** : le فهرس (ص 3) titre la leçon 09
+« الوظائف الأساسيّة في الجملة **الفعليّة** (3) » ; **le corps (ص 56) imprime « الجملة الاسميّة
+المركّبة (3) »**, et la خلاصة ص 60 le confirme sans ambiguïté — « الجملةُ المبدوءةُ بفعل من أفعال
+المقاربة أو الشروع **جملةٌ اسميّةٌ** شكلها الأساسيّ : [فعل مقاربة أو شروع + اسم مرفوع + خبر في
+محلّ نصب] ». **C'est le فهرس qui porte la coquille.** Un chapitre bâti sur la seule table des
+matières classerait cette leçon du mauvais côté.
+
+#### Les treize خلاصات, transcrites
+
+**درس 01 — p.9** (نصّ : الجاحظ, «كتاب الحيوان» ج2 ص374–375) :
+- النصّ سلسلة متتالية من الجمل البسيطة والمركّبة المنسجمة معنويّا.
+- تتّفق الجملة المركّبة مع الجملة البسيطة في **الاستقلال التركيبيّ** و**الإفادة المعنويّة**،
+  وتختلف عنها في **عدد النوى الإسناديّة**.
+- تحتوي الجملة المركّبة على أكثر من نواة إسناديّة وتكون اسميّة أو فعليّة.
+
+**درس 02 — p.14** (نصّ : عبد المجيد فرحات, «تراحيل» ص62) — 5 puces, dont **la cinquième est
+décisive pour les verdicts** :
+- تتكوّن الجملة المركّبة من نواة إسناديّة أساسيّة وأخرى فرعيّة أو أكثر.
+- النواة الإسناديّة الأساسيّة هي التي تقوم عليها الجملة ولا يمكن حذفها.
+- النواة الإسناديّة الفرعيّة هي التي ترد داخل مركّب من مركّبات الجملة.
+- يرد المركّب الإسناديّ الفرعيّ صلةً للموصول أو خبرا أو نعتا أو حالا…
+- « تقع المركّبات الإسناديّة مكوّنا لازما كالمبتدإ والخبر والفاعل ونائب الفاعل أو **أحد التوابع
+  كالنعت والبدل والتوكيد وتمييز المفرد** وقد تقع متمّما كالمفاعيل وأشباه المفاعيل. »
+
+**درس 03 — p.20** (نصّ : محمود تيمور, «أبو الهول يطير») :
+- يرد الفاعل على أشكال نحويّة مختلفة : مفردةً أو مركّبا من المركّبات الاسميّة.
+- ويكون مركّبا موصوليّا فتكون الجملة مركّبةً **لأنّ الصّلة تكون دائما مركّبا إسناديّا**.
+- يكون المركّب الموصوليّ الواقع فاعلا **اسميّا أو حرفيّا**.
+- تكون الصّلة دائما مركّبا إسناديّا فعليّا أو اسميّا.
+
+**درس 04 — p.26** (نصّ : طه حسين, «الأيّام» ج1 ص40–41) : même trame que 03, appliquée au
+**المفعول به**, avec un ajout — « يرد المفعول به … مفردةً أو مركّبا من المركّبات الاسميّة **أو
+مركّبا حرفيّا** ».
+
+**درس 05 — p.30** (نصّ : إبراهيم اليازجي, «المؤنس في النصوص» ص111–112) : même trame, appliquée au
+**نائب الفاعل** ; la leçon passe par la transformation معلوم ↔ مجهول.
+
+**درس 06 — p.39** (نصّ : ابن طفيل, «حيّ بن يقظان», بتصرّف) — 8 puces :
+- تُستعمل أفعال مثل : **علم – وجد – رأى – ظنّ – حسِب – خال – ألفى – عدّ – درى – زعم**، للتعبير عن
+  أمور تقع في النفس (كالمشاعر والآراء والأفكار). وتسمّى **أفعال القلوب**.
+- تنقسم بحسب ما تؤدّيه من معانٍ إلى ثلاثة أقسام : **اليقين** (علم – رأى – وجد – ألفى) ·
+  **الرجحان** (ظنّ – حسِب – خال – عدّ) · **الشكّ** (زعم).
+- تُستعمل أفعال مثل : **صيّر – جعل – اتّخذ – ردّ – ترك**، للتعبير عن نقل أمر من حالة إلى أخرى،
+  وتسمّى **أفعال التحويل**.
+- تدخل أفعال القلوب والتحويل على المبتدإ والخبر **فتنصبهما معا**، فيُعرب المبتدأ مفعولا أوّل
+  والخبر مفعولا ثانيا.
+- يرد المفعول الأوّل لفظا مفردا أو تركيبا جزئيّا ؛ ويرد المفعول الثاني لفظا مفردا أو تركيبا
+  جزئيّا **أو تركيبا إسناديّا**. وقد يقع المركّب المصدريّ بـ«أنْ/أنّ» موقع مفعولَيْ أفعال القلوب.
+
+**درس 07 — p.46** (نصّ : علي الدوعاجي, «سهرت منه الليالي» ص69) : trame des leçons 03–05 appliquée
+au **المبتدأ أو اسم الناسخ**, avec une puce propre : « **يتأخّر** المسند إليه المبتدأ أو اسم
+النّاسخ الوارد مركّبا موصوليّا **إذا كان المسند الخبر جارّا ومجرورا** ».
+
+**درس 08 — p.53** (نصّ : طه حسين, «على هامش السّيرة» ج1 ص28) :
+- يرد الخبر أو خبر النّاسخ على أشكال نحويّة مختلفة : مفردةً أو مركّبا من المركّبات الاسميّة أو
+  الحرفيّة.
+- يكون **مركّبا إسناديّا فرعيّا** فعليّا أو اسميّا فتكون الجملة مركّبةً.
+- ويكون مركّبا موصوليّا (حرفيّا أو اسميّا) فتكون الجملة مركّبةً لكون الصّلة مركّبا إسناديّا.
+
+**درس 09 — p.60** (نصّ : مرزاق بقطاش, «طيور في الظهيرة» ص23–26, بتصرّف) — 8 puces :
+- تدلّ **أفعال الشروع** على **الابتداء** في وقوع الحدث ؛ وتدلّ **أفعال المقاربة** على **قرب**
+  وقوع الحدث.
+- أكثر أفعال المقاربة استعمالا : **كاد – أوشك** ؛ وأكثر أفعال الشروع : **شرع – بدأ – أخذ – طفِق
+  – أنشأ – جعَل**.
+- أفعال المقاربة والشروع **من النواسخ الفعليّة**.
+- الجملة المبدوءة بفعل منها **جملة اسميّة** شكلها الأساسيّ : [فعل مقاربة أو شروع + اسم مرفوع +
+  خبر في محلّ نصب].
+- يكون خبر «أوشك» مركّبا مصدّرا بـ«أنْ» المصدريّة، ويكون خبر «كاد» مركّبا إسناديّا فعليّا، وقد
+  يُصدَّر بـ«أنْ».
+- يكون خبر أفعال الشروع مركّبا إسناديّا فعليّا **فعله في صيغة المضارع** ؛ وقد يرد خبرها مصدَرا
+  مسبوقا بالجرّ.
+- **تتصرّف أفعال المقاربة في الماضي والمضارع** ؛ **لا تُصرَّف أفعال الشروع إلاّ في الماضي**.
+
+**درس 10 — p.67** (نصّ : طه حسين, «على هامش السيرة») :
+- المفعول فيه متمّم يعيّن **زمنَ** وقوع الحدث أو **مكانَ** وقوعه، وحُكمُه **النصب**.
+- قد يشتمل على مركّب إسناديّ فرعيّ فتكون الجملة مركّبةً، ويتحقّق في أشكال مختلفة : **مركّبا
+  موصوليّا** · **مركّبا إضافيّا** (المضاف إليه مشتمل على المركّب) · **مركّبا بالجرّ** (المجرور
+  مشتمل عليه).
+- تكون النواة الإسناديّة الفرعيّة اسميّةً أو فعليّةً.
+
+**درس 11 — p.73** (نصّ : البشير خريّف, «برق الليل», بتصرّف) — 5 puces, **la deuxième nomme le
+نعت** :
+- يتحقّق المفعول المطلق في أشكال نحويّة مختلفة فيكون مفردةً أو مركّبا اسميّا أو مركّبا حرفيّا.
+- قد يشتمل على مركّب إسناديّ فرعيّ فتكون الجملة مركّبةً، ويرد على أشكال مختلفة :
+  — **مركّب نعتيٌّ يكون فيه النعت مشتملا على مركّب إسناديّ فرعيّ** ؛
+  — مركّب إضافيّ يكون فيه المضاف إليه مشتملا على مركّب إسناديّ فرعيّ ؛
+  — مركّب بالجرّ (الكاف) يكون المجرور فيه مشتملا على مركّب إسناديّ فرعيّ.
+- تكون النواة الإسناديّة الفرعيّة اسميّةً أو فعليّةً.
+- يفيد المفعول المطلق المشتمل على مركّب إسناديّ فرعيّ **بيان نوع الفعل أو بيان عدده أو التشبيه**.
+
+**درس 12 — p.79** (نصّ : أحمد أمين, «فيض الخاطر» ج2 ص59) :
+- يتحقّق المفعول لأجله في أشكال نحويّة مختلفة : مفردةً اسميّا أو مركّبا حرفيّا (جملة بسيطة) ·
+  **مركّبا حرفيّا بحرفيْ الجرّ «لـ» و«حتّى»** (جملة مركّبة إذا كان المجرور مركّبا إسناديّا) ·
+  **مركّبا موصوليّا حرفيّا بـ«كيْ»** (جملة مركّبة toujours, الصّلة étant un مركّب إسناديّ).
+- يكون الفعل بعد «لـ» و«حتّى» و«كيْ» **في صيغة المضارع المنصوب دائما**.
+- يفيد المفعول لأجله القائم على «لـ» **السببَ أو الغرضَ** ; والقائم على «حتّى» و«كيْ» **الغرضَ دون
+  السببِ**.
+
+**درس 13 — p.84** (نصّ : يوسف إدريس, «بصراحة غير مطلقة» ص186) :
+- تتحقّق الحال في أشكال نحويّة مختلفة : مفردةً أو مركّبا اسميّا أو حرفيّا (بسيطة) · **مركّبا
+  إسناديّا** اسميّا أو فعليّا، أو مركّبا حرفيّا يتضمّن مركّبا إسناديّا (مركّبة).
+- ترتبط الحال ببقيّة عناصر الجملة **بواو الحال أو بالضّمير العائد أو بكليهما** :
+  — بالضّمير **دون الواو** إذا كانت مركّبا إسناديّا فعليّا قائما على فعل **مضارع** ;
+  — **بالواو دون الضّمير** إذا كانت مركّبا إسناديّا اسميّا ودلّت على الزّمان ;
+  — **بالواو وبالضّمير** إذا كانت مركّبا إسناديّا فعليّا قائما على فعل **ماضٍ مسبوق بـ«قد»**.
+- تفيد الحال في الأصل **حالةَ صاحبها** (الفاعل أو نائب الفاعل أو المفعول به…) ; وقد تفيد **الغرضَ**
+  إذا دلّت على حدث لم يتحقّق بعدُ، وقد تفيد **الزّمان**.
+
+### القسم الثّاني : علم الصّرف — 11 leçons, p.89–158 (intercalaire p.88)
+
+> **Deux blocs** : le **verbe augmenté** (leçons 1–2) puis **tout ce qui s'en dérive** (leçons
+> 3–9 : اسم الفاعل/المفعول، المصدر، المصدر الميمي، اسما الزمان والمكان، اسما المرّة والهيئة،
+> اسم التفضيل، صيغ المبالغة، اسم الآلة), et enfin le **nom fléchi en genre et en nombre**
+> (leçons 10–11).
+
+| n° | leçon (titre imprimé) | p. | خلاصة |
+| --- | --- | --- | --- |
+| 01 | تصريف الفعل المزيد (1) : عناصر الزيادة | 89–95 | p.93 |
+| 02 | تصريف الفعل المزيد (2) : مسندا إلى المعلوم والمجهول | 96–103 | p.102 |
+| 03 | اشتقاق الأسماء من المزيد (1) : اسم الفاعل واسم المفعول من المزيد | 104–109 | p.107 |
+| 04 | اشتقاق الأسماء من المزيد (2) : المصدر وأوزانه | 110–114 | p.113 |
+| 05 | اشتقاق الأسماء الدالّة على الحدث أو على أحد متعلّقاته (1) : المصدر الميمي واسم الزمان واسم المكان | 115–122 | p.119 |
+| 06 | … (2) : اسما المرّة والهيئة | 123–128 | p.126 |
+| 07 | … (3) : اسم التفضيل | 129–135 | p.132 |
+| 08 | … (4) : صيغ المبالغة | 136–140 | p.138 |
+| 09 | … (5) : اسم الآلة | 141–144 | p.143 |
+| 10 | الاسم من حيث الجنس والعدد (1) : التذكير والتأنيث | 145–152 | p.149 |
+| 11 | الاسم من حيث الجنس والعدد (2) : جمع التكسير | 153–158 | p.156 |
+
+⚠️ **Second écart فهرس ↔ corps** : le فهرس numérote correctement **01 → 11** ; **le corps saute le
+n° 9** — il imprime « الدّرس الثامن » (صيغ المبالغة, p.136) puis **« الدّرس العاشر »** (اسم
+الآلة, p.141), « الحادي عشر » (p.145) et « الثاني عشر » (p.153). Il n'existe **aucune leçon
+« تاسع »** dans le corps : c'est une **coquille de numérotation de l'édition**, pas une leçon
+manquante — les onze leçons du فهرس sont toutes physiquement présentes et paginées comme annoncé.
+Compter les leçons de صرف sur les numéros imprimés au corps en donnerait **12**.
+
+#### Les onze خلاصات, transcrites
+
+**درس 01 — p.93** (نصّ : البشير خريّف, «الدّقلة في عراجينها», دار الجنوب، تونس 1990, ص134) :
+- الفعل المزيد نوعان : **ثلاثيّ ورُباعيّ**.
+- **أوزان الثلاثيّ المزيد** — للمزيد **بعنصر** ثلاثة أوزان : أَفْعَلَ، فَاعَلَ، فَعَّلَ ·
+  للمزيد **بعنصرين** خمسة : انْفَعَلَ، افْتَعَلَ، تَفَعَّلَ، تَفَاعَلَ، افْعَلَّ ·
+  للمزيد **بثلاثة عناصر** ثلاثة : اسْتَفْعَلَ، افْعَالَّ، افْعَوْعَلَ.
+- **أوزان الرُّباعيّ المزيد** — مزيد بحرف : تَفَعْلَلَ · مزيد بعنصرين : افْعَلَلَّ.
+- للفعل المزيد أوزان كثيرة أخرى.
+
+**درس 02 — p.102** (نصّ : الجاحظ, «البخلاء») :
+- **في الماضي** : لا يختلف تصريف المزيد عن تصريف المجرّد.
+- **في المُضارع** : تهتمّ بحركة حرفيْن — **حرف المضارَعة** و**ما قبل الآخر** : الأوزان التي في
+  أوّلها «تاء» → مضارعة **مفتوحة** وما قبل الآخر **مفتوح** · التي في أوّلها **همزة وصل** →
+  مضارعة مفتوحة وما قبل الآخر **مكسور** · الأوزان **المزيدة بعنصر** → مضارعة **مضمومة** وما قبل
+  الآخر **مكسور**.
+- **في الأمر** : تبدأ صيغة الأمر بهمزة وصل مكسورة في جميع الصّيغ **باستثناء «أفْعَلَ»** التي
+  تكون همزتها **قطعيّة مفتوحة**.
+- لا يطرأ على تصريف الثلاثيّ والرباعيّ المزيدين **من السالم** أيُّ تغيير ; أمّا **من غير السالم**
+  فتطرأ عليه تغييرات.
+- يُصاغ **الماضي المبنيّ للمجهول** من المزيد **بضمّ الأوّل وكسر العين**، و**المضارع** **بضمّ حرف
+  المضارعة وفتح العين**.
+> Deux tables de référence pleine page p.101 (الماضي et المضارع, dix lignes chacune, وزن مبنيّ
+> للمعلوم ↔ وزن مبنيّ للمجهول) portent la mention **« لا يُبنى منه للمجهول »** pour **افعَلَّ** et
+> **افعَوْعَلَ**.
+
+**درس 03 — p.107** (نصّ : يوسف غصوب, بتصرّف) :
+- **اسم الفاعل** مشتقّ يدلّ على من قام بالفعل أو تعلّق به، ويُصاغ من المزيد **على وزن مضارعه
+  بإبدال حرف المضارَعة ميمًا مضمومةً وكسر ما قبل الآخر**.
+- **اسم المفعول** مشتقّ يدلّ على من وقع عليه الفعل، ويُصاغ من المزيد **على وزن مضارعه بإبدال حرف
+  المضارعة ميما مضمومة وفتح ما قبل الآخر**.
+- يُصرَّف كلٌّ منهما حسب مقولتي **الجنس والعدد** ويقعان في المحلّات الإعرابيّة المختلفة.
+- يُميَّز بينهما **عند اتّفاقهما في الوزن بالعودة إلى سياق الكلام**.
+
+**درس 04 — p.113** (نصّ : عبد العزيز البشري, «المختار» ج1, 1938) :
+- المصدرُ اسمٌ مشتقٌّ يدلُّ على **مُطلَقِ الحدَث**.
+- المصادرُ المتّصلةُ بالفعل الثلاثيّ المزيد والرُّباعيّ (مجرّدًا ومَزيدًا) **قياسيّةٌ**.
+> Suit la table des correspondances وزن الفعل → وزن المصدر, transcrite intégralement :
+> أفْعَلَ→إفعَال · فعَّلَ→تَفعيل · فاعَلَ→**تَفعِلة / فِعَال / مُفَاعَلة** · انْفَعَلَ→انفِعَال ·
+> افْتَعَلَ→افتِعَال · تَفَعَّلَ→تَفَعُّل · تَفَاعَلَ→تَفَاعُل · افْعَلَّ→افعِلال ·
+> اسْتَفْعَلَ→استِفعَال · افْعَوْعَلَ→افعِيعَال ; والرّباعيّ : تَفَعْلَلَ→تَفَعْلُل ·
+> افْعَلَلَّ→افْعِلاَّل.
+
+**درس 05 — p.119** (نصّ : «أبو بطّة (التوبة)», ميخائيل نعيمة) :
+- **المصدرُ الميميّ** مصدر مبدوء بميم زائدة **في غير وزن المفاعلة**، ويدلّ كسائر المصادر على مطلق
+  الحدث، وهو **قياسيّ** : من الثلاثيّ المجرّد على **مَفْعَل ومَفْعَلة** · من **المثال الواويّ**
+  مكسور العين في المضارع على **مَفْعِل** · من **المزيد** على **وزن اسم المفعول**.
+- **اسم المكان** يدلّ على موضع وقوع الفعل، و**اسم الزمان** على وقت وقوعه : على **«مَفْعَل»** من
+  الثلاثيّ المجرّد · على **«مَفْعِل»** من المثال ومن مكسور العين في المضارع · على **وزن اسم
+  المفعول** من المزيد · وتُستعمل صيغة **مَفْعَلة** للدلالة على المكان أو الزمان **الذي يكثر فيه
+  وقوع الشيء**.
+- **شذّت** بعض الأسماء من مضموم العين في المضارع فجاءت على مَفْعِل : **مشرِق، مغرِب، منبِت،
+  مرفِق، مسقِط، مجزِر…**
+- لاسم الزمان واسم المكان والمصدر الميميّ واسم المفعول **أوزان مشتركة**، ويتمّ التمييز بينها
+  **بالسّياق**.
+
+**درس 06 — p.126** (نصّ : أمين الريحاني, «قلب لبنان», 1947) — 7 puces :
+- **اسمُ المرّة** اسم مشتقّ يدلّ على وقوع الحدث **مرّةً واحدة** ; وقد يقترن بما يدلّ على وقوعه
+  **أكثرَ من مرّة**.
+- يصاغ من المجرّد على وزن **«فَعْلة»** ; فإذا كان المصدر المتّصل بالفعل هو أيضا على «فَعْلة»،
+  **وقع التعبيرُ عن المرّة بالمصدر منعوتًا بما يدلّ على العدد**.
+- ومن المزيد **بزيادة تاء إلى وزن المصدر** ; فإذا كان المصدر مختوما بتاء أيضا، وقع التعبير عنها
+  **بالمصدر مقترنًا بما يدلّ على العدد**.
+- **اسمُ الهيئة** اسم مشتقّ يدلّ على **كيفيّة وقوع الحدث**.
+- يصاغ من المجرّد على وزن **«فِعْلة»** ; فإذا كان المصدر على «فِعْلة» أيضا، وقع التعبير عن الهيئة
+  **بالمصدر منعوتًا أو مضافًا** إلى ما يدلّ على الهيئة.
+- **ليس لاسم الهيئة المتّصل بالمزيد صيغة متميّزة**، ويعبَّر عنه بالمصدر مقترنًا بما يدلّ على
+  الهيئة.
+
+**درس 07 — p.132** (نصّ : ابن المقفع, «الأدب الكبير» ص286) :
+- اسم التفضيل اسمٌ مشتقّ يدلّ على **تفوّق شيء على شيء آخر في صفة**.
+- للتفضيل **ثلاثة أركان** : **المفضَّل**، و**المفضَّل عليه**، و**صيغة التفضيل**.
+- يستعمله المتكلّم **للمقارنة** أو **للتفضيل المطلق**.
+- يتحقّق **باسم التفضيل على وزن «أفْعَلَ»** إذا اتّصل بفعل ثلاثيّ مجرّد · **وباسم تفضيل عامّ +
+  مصدر** إذا اتّصل بفعل مزيد أو بفعل الصّفة منه على وزن «أفْعَلُ».
+- إذا اقترن بـ**الألف واللاّم طابق المفضَّل في الجنس والعدد** ; وإذا لم يقترن بهما **لازم صيغةَ
+  المفرد المذكّر**.
+
+**درس 08 — p.138** (نصّ : إيليا أبو ماضي, «الجداول» ص96) :
+- صيغة المبالغة اسم مشتقّ يدلّ على **القائم بالحدث بكثرة أو شدّة الاتّصاف بالصّفة**.
+- لها أوزان عديدة، أشهرها : **فَعَّال · فَعَّالة · فُعَلَة · فاعِلة · مِفْعال · فَعِيل · فَعُول ·
+  فِعِّيل · فاعول**.
+
+**درس 09 — p.143** (نصّ : مصطفى الشهايبي, «الشذرات» ص264) :
+- اسم الآلة اسمٌ مشتقّ يدلّ على **الآلة التي يتحقّق بها العمل**.
+- يصاغ على **ثلاثة أوزان خاصّة به** : **مِفْعَال · مِفْعَل · مِفْعَلة**.
+- وقد **تُنقَل أوزانُ اسم الفاعل وصيغ المبالغة** للدّلالة على اسم الآلة.
+
+**درس 10 — p.149** (نصّ : جبران خليل جبران, «دمعة وابتسامة» ص254) :
+- تُصنَّف الأسماءُ والصّفاتُ إلى **مُذكَّرٍ ومُؤنَّث** ; والمذكّر والمؤنّث نوعان : **حقيقيّ وغير
+  حقيقيّ**.
+- للتأنيث **علامتان خاصّتان** : **لاحقة تتّصل بآخر الاسم المؤنّث، هي تاء التأنيث** ; و**وزن
+  يُستعمل للمؤنّث مقابل وزن آخر للمذكّر** : **فُعْلى** (مؤنّث اسم التفضيل أفعل) · **فَعْلى**
+  (مؤنّث الصّفة المشبّهة فعلان) · **فَعْلاء** (مؤنّث الصّفة المشبّهة «أفعل» الدّالّة على لون أو
+  عيب).
+- ينقسم المؤنّث إلى : **لفظيّ** (ما دلّ على مذكّر وخُتم بتاء التأنيث) · **معنويّ** (ما دلّ على
+  المؤنّث وليست فيه علامة تأنيث) · **لفظيّ معنويّ** (ما دلّ على المؤنّث وفيه علامة تأنيث).
+- **يُعلم تأنيثُ ما لم تظهر علامة التأنيث عليه** : بصيغة الفعل أو الخبر أو **النّعت** أو اسم
+  الإشارة أو اسم الموصول المختصّ الذي يتعلّق به أو بصيغة الضّمير الذي يعود عليه.
+
+**درس 11 — p.156** (نصّ : نجيب محفوظ, «رحلة ابن فطومة» ص86–87) :
+- الجمع نوعان : **جمعٌ سالمٌ وجمعُ تكسيرٍ**.
+- **الجمع السّالم** جمع يصاغ بزيادة علامة خاصّة إلى آخر صيغة الاسم المفرد، وهو نوعان : **جمع مذكّر
+  سالم وجمع مؤنّث سالم**.
+- **جمع التكسير** : جمع يصاغ بجعل الاسم على **صيغة معيّنة يختلف وزنها عن وزن صيغة المفرد**.
+- لجمع التكسير **أوزان عديدة تُعرَفُ بالسّماع**.
+> La leçon donne p.155–156 une **table de 28 أوزان de جمع التكسير** avec exemple et singulier :
+> أَفْعِلَة · أَفْعُل · فِعْلَة · أَفْعَال · فُعْل · فُعُل · فُعَل · فِعَل · فُعَلة · فَعَلة ·
+> فَعْلى · فِعَلة · فُعَّل · فُعَّال · فِعَال · فُعُول · فِعْلان · فُعْلان · فُعَلاء · أَفْعِلاء ·
+> فَوَاعِل · فَعَائِل · فَعَالى · فَعَالِل · فَعَاليل · مَفَاعِل · مَفَاعيل · أَفَاعِل.
+
+## 2 quater. 🔴 Les SEPT VERDICTS, page à l'appui
+
+> Méthode : les 158 pages ont été lues à l'image, **une par une**, et chaque occurrence des sept
+> notions a été relevée avec sa page et son **statut dans l'architecture de la leçon**
+> (titre · مدخل · تطبيقات · **خلاصة** · تمارين). La distinction qui tranche n'est pas
+> « présent / absent » mais **« objet d'une leçon » / « pré-requis mobilisé » / « absent »**.
+> C'est exactement la nuance que le seul فهرس ne pouvait pas rendre — et que la PR #495 avait
+> manquée dans un sens, la PR #497 signalée sans pouvoir la lever.
+
+| notion | verdict | où, exactement |
 | --- | --- | --- |
-| aucun PDF du corpus dans le conteneur | `find / -iname '*.pdf'` | **2 fichiers**, tous deux des exemples d'outillage (`/mnt/skills/…`, LibreOffice) — **zéro** PDF CNP |
-| `cnp-officiel/` n'est pas versionné ici | `git log --all -- '*.pdf'` → aucun commit ; pas de LFS (`.gitattributes` ne fait que marquer `*.pdf binary`) | le corpus n'a **jamais** été dans ce dépôt |
-| il est **machine-local par conception** | `METHODE-GENERATION-CONTENU.md` : « corpus local déjà téléchargé : `cnp-officiel/CATALOGUE.md` » ; `programme:corpus` lit « le `cnp-officiel/catalogue.csv` **voisin du clone moteur** — **machine locale uniquement** » | attendu, pas un incident |
-| le site CNP est hors d'atteinte | `curl https://www.cnp.com.tn/arabic/PDF/101808P0{0,1,2,3}.pdf` → échec TLS ; témoin `https://example.com` → `CONNECT tunnel failed, response 403`, et le proxy journalise `connect_rejected — gateway answered 403 to CONNECT (policy denial)` | la **politique de sortie** de l'environnement distant n'ouvre pas ce domaine |
-| aucun autre dépôt du compte ne le porte | `list_repos` — 47 dépôts | `ScribeKit` est le **moteur** de transcription, pas le corpus |
+| **النعت** | 🟡 **PRÉ-REQUIS MOBILISÉ — enseigné nulle part en 8ᵉ, utilisé partout** | nommé dans **TROIS خلاصات** : p.14 (parmi les التوابع) · **p.73** (« مركّب نعتيٌّ يكون فيه **النعت** مشتملا على مركّب إسناديّ فرعيّ ») · **p.149** (« يُعلم تأنيثُ … بصيغة … **النّعت** ») ; et dans une quatrième sous la forme **منعوتًا** (p.126, ×2). Exercices : p.16 (tableau « منعوت / نعت »), p.17, p.72 (ex.4 : « منعوت + نعت (مركّب إسناديّ فعليّ / اسميّ) »), p.74. **Jamais titre de leçon, jamais objet d'un مدخل.** |
+| **التوكيد** | 🟡 **PRÉ-REQUIS MOBILISÉ** | خلاصة p.14 (parmi les التوابع) ; **تحليل نماذج p.52**, où « الإماءُ جميعُهنَّ يُقبِّلنها » est décomposé en **مؤكَّد / توكيد (م إضافيّ)** puis étiqueté **« مبتدأ (مركّب توكيديّ) »**. **Jamais titre de leçon.** |
+| **البدل** | 🟠 **CITÉ UNE SEULE FOIS, JAMAIS TRAVAILLÉ** | **خلاصة p.14 et rien d'autre** — la liste « أحد التوابع كالنعت والبدل والتوكيد وتمييز المفرد ». Aucune autre occurrence dans les 158 pages : ni exercice, ni analyse, ni exemple étiqueté. C'est la plus faible des quatre التوابع. |
+| **العطف** | 🟡 **PRÉ-REQUIS MOBILISÉ** | **تحليل نماذج p.53** : « إنّنا نعلم ما تُسرّينَ ونعلم ما تُعلنينَ » → **« خبر ناسخ (مركّب بالعطف) »**, décomposé en **معطوف عليه / معطوف** ; et p.85 ex.3 « **ميّز واوَ الحال من واو العطف وواو المعيّة** ». **Jamais titre de leçon.** |
+| **أسلوب التعجّب** | ⛔ **ABSENT — zéro occurrence sur 158 pages** | ni au فهرس, ni en titre, ni en خلاصة, ni en exercice, ni comme étiquette d'analyse. Aucune forme (تعجّب / التّعجّب / ما أفعلَ / أفعِلْ بـ) n'apparaît comme objet grammatical. |
+| **المنادى** | ⛔ **ABSENT comme notion enseignée** | **aucune leçon, aucune خلاصة, aucun exercice** ne porte sur le نداء. Des vocatifs traversent bien les textes-supports (« يا بنيّ » p.122, « أيّها الناس » p.80, « يا ابنَ الليل » p.136) — mais **ils ne sont jamais analysés, ni étiquetés, ni nommés** : ce sont des occurrences de langue, pas d'enseignement. Concordant avec la 9ᵉ révisée, qui porte la leçon **« النّداء » (101908, ص 29)**. |
+| **العدد** (= اسم العدد, le numéral) | ⛔ **ABSENT — et c'est le piège le plus dangereux du dossier** | Le mot **العدد** apparaît bien **quatre fois**, dont **dans les titres des leçons 10 et 11 de صرف** — « **الاسم من حيث الجنس والعدد** » — mais il y désigne **le NOMBRE GRAMMATICAL** (مفرد / مثنّى / جمع), **jamais le numéral**. Preuves au corps : p.147 ex.7, tableau « **المفردُ · علامةُ التأنيثِ · المثنّى · الجمعُ** » ; p.153 مدخل ex.1, « اجعل بين القوسين **العدد** الذي يناسب الاسم المسطّر : (**1 = ، 2 = ، ≤ 3**) » ; خلاصة p.132 « طابق المفضَّل **في الجنس والعدد** » ; خلاصة p.126 « بما يدلّ على **العدد** » (= une fois / plusieurs fois). **العدد والمعدود, اسم العدد, ثلاثةُ كتبٍ : nulle part.** Concordant avec la 9ᵉ révisée, qui porte « **العدد والمعدود** » (101908, ص 116 · 122). |
 
-⇒ **Les sept verdicts restent NON ÉTABLIS et aucun chapitre n'a été retiré.** Supprimer sur la foi
-d'un titre absent d'une table des matières serait exactement la conjecture que le bloc
-« ⛔ CONJECTURE DÉMENTIE » de [`../9eme-base/arabe.md`](../9eme-base/arabe.md) a déjà fait payer.
+### Ce que ces sept verdicts changent, et ce qu'ils ne changent pas
 
-> **Ce mur ne figure pas au tableau de `docs/agents/zero-intervention.md`** du moteur ; il appartient
-> à la famille « ressources hors dépôt ». Ce qui le lèverait, par ordre de coût : déposer les trois
-> tomes de `101808` dans le dépôt (ou les transmettre par le champ `FICHIERS` de la méthode) ;
-> ou dérouler ce LOT A depuis le poste, où `cnp-officiel/` est voisin du clone moteur.
+**Ils confirment le cadrage de la PR #497 et infirment celui de la PR #495.** #495 écrivait que les
+cinq notions (النعت · التوكيد · البدل · العطف · التعجّب) « ne figurent au فهرس révisé d'aucun
+niveau » et en tirait qu'elles étaient supprimées du programme. #497 a objecté, à raison, qu'un
+فهرس qui nomme des **places** (« الوظائف الأساسيّة » ×7, « متمّمات » ×4) ne prouve rien sur les
+**notions**, et que le guide `501802` enseigne quatre d'entre elles comme des **مركّبات**
+(درس 6 مركّب العطف p.32 · درس 8 المركّب التّوكيديّ p.43 · درس 9 المركّب النّعتيّ p.48 ·
+درس 10 المركّب البدليّ p.55). **La lecture du corps tranche entre les deux** :
 
-### Ce que la fiche établit quand même, sans ouvrir un PDF
+- **quatre notions sur cinq ne sont PAS absentes du manuel de 8ᵉ** — elles y sont **convoquées
+  comme acquis**, dans les خلاصات elles-mêmes (donc dans le texte officiel de la règle, pas
+  seulement dans un exercice), sous les noms **المركّب النعتيّ · المركّب التّوكيديّ · المركّب
+  بالعطف** hérités du cadre des المركّبات. Le manuel révisé **suppose l'élève capable de
+  reconnaître un نعت, un توكيد, un معطوف** pour lire ses propres règles ;
+- **une seule, البدل, est réellement réduite à une mention de liste** ;
+- **التعجّب est, lui, bel et bien absent** de bout en bout ;
+- **المنادى et العدد ne sont pas « supprimés » : ils sont DÉPLACÉS en 9ᵉ**, et la lecture du corps
+  de la 8ᵉ le confirme par l'absence totale, là où le فهرس de la 9ᵉ les porte nommément.
 
-**(a) Le guide `501802` enseigne bien quatre des sept notions — mais comme des مركّبات, pas comme des
-توابع.** Le §2 ci-dessus les porte déjà, avec leur page au الفهرست : **درس 6 مركّب العطف (p.32)** ·
-**درس 8 المركّب التّوكيديّ (p.43)** · **درس 9 المركّب النّعتيّ (p.48)** · **درس 10 المركّب البدليّ
-(p.55)** ; et le التّمهيد (p.5) les pose comme les exemples-types du **المركّب الاسميّ** —
-« المركّب النّعتيّ = منعوت + نعت ؛ المركّب التّوكيديّ = مؤكَّد + توكيد ».
-
-⚠️ **Cela ne tranche rien sur l'édition révisée**, mais c'est exactement le mécanisme contre lequel
-ce lot mettait en garde : une notion peut vivre **à l'intérieur** d'une leçon dont le titre ne la
-nomme pas. Les 13 leçons d'إعراب de `101808` sont toutes consacrées à la الجملة المركّبة, dont
-**sept** « الوظائف الأساسيّة في الجملة المركّبة » et **quatre** « متمّمات مشتملة على مركّبات إسناديّة
-فرعيّة » — des intitulés qui, dans le métalangage de cette collection, **désignent des places, pas
-des notions**, et une place peut être tenue par un مركّب نعتيّ ou توكيديّ. Pour les quatre التوابع,
-la question est donc **ouverte**, et l'absence au فهرس ne la ferme pas.
-
-**(b) المنادى et التعجّب ne viennent d'aucune des deux éditions.** Le guide `501802` ne les porte pas
-davantage que le فهرس révisé : ses propres bornes de scope (§2, bloc « ⛔ EXCLU ») les renvoient
-explicitement en aval — « les chapitres de نحو non listés (p. ex. **المنادى، التّعجّب**…) » — et la
-9ᵉ révisée porte bien النّداء (ص 29). **Deux découpages concordants** placent donc ces deux notions
-hors de la 8ᵉ. C'est le point le plus solide du dossier ; il reste à confirmer sur le corps de
-`101808`, comme les cinq autres.
-
-**(c) Le contenu servi en 8ᵉ n'est bâti sur aucun manuel CNP.** Relevé dans les douze
-`chapter.json` de `content/arabic-8eme/` : leurs `sources[]` citent **9raya.tn · devoir.tn ·
-najahni.tn · 9rayti.com.tn · tunisiecollege.net** et un document **scribd** ; **onze sur douze**
-portent encore, mot pour mot, « **À REVALIDER sur le programme officiel CNP arabe 8ème (guide
-501802)** ». Et `08-jumla-murakkaba` — le seul chapitre que le §2 bis dit « ✅ à sa place » —
-décompose la الجملة المركّبة en « **التركيب بالوصل / بالإسناد / بالربط** », un découpage qui n'est
-celui **d'aucune des deux éditions** : le guide (دروس 17–23) décompose par la **fonction** qui porte
-le مركّب — المبتدأ، الخبر، الفاعل، المفعول به، المفعول لأجله، الحال.
-
-⇒ La question de ce lot n'est donc pas « le programme officiel a-t-il supprimé cinq notions que le
-corpus transcrivait fidèlement ? » mais « **le corpus de 8ᵉ n'a jamais été bâti sur le programme
-officiel** ». L'arbitrage « on fait exactement le programme officiel » porte sur les **douze**
-chapitres, pas sur cinq — y compris sur ceux marqués ✅, dont le découpage interne est à refaire.
-
-**(d) Le manifeste ne réclamera aucun chapitre retiré** : `manifest/8eme-base.json` déclare
-`arabic-8eme.chapters: []`. La précaution habituelle (« retirer aussi le chapitre du manifeste »)
-est sans objet tant que cette liste reste vide.
-
-### Ce qu'il faut pour clore le LOT A
-
-Pour la session qui aura le corpus sous la main :
-
-1. lire `101808P01/P02/P03` **à l'image**, ~105–110 dpi — couche texte vide (≈53 car. de
-   filigrane/page), donc **rien à `grep`** ;
-2. relever pour chacune des 24 leçons ses **أركان أربعة** (نصّ انطلاق → مدخل → خلاصة → تمارين), à
-   profondeur de génération (R-5) ;
-3. rendre les **sept verdicts avec la page**. Pour les quatre التوابع, la question précise est :
-   les sept « الوظائف الأساسيّة » et les quatre « متمّمات » **nomment-elles** النعت/التوكيد/البدل/العطف
-   dans leur corps, ou la 8ᵉ révisée ne décrit-elle plus que la **place** ?
-4. **avant de conclure à une absence**, chercher avec shadda, sans shadda, avec et sans article, et
-   un synonyme courant (`التوكيد`/`التّوكيد`/`توكيد` ; `النعت`/`النّعت`/`الصفة`) — un « zéro » d'une
-   seule graphie n'est pas une mesure.
+**Ce qu'ils ne tranchent pas : ce qu'il faut faire de `content/arabic-8eme/`.** Un pré-requis
+mobilisé dans trois خلاصات n'est ni « au programme de 8ᵉ » ni « hors programme » — c'est
+précisément le statut qu'un chapitre de révision sert bien. L'arbitrage reste entier, et il est à
+Mohamed. ⚠️ Et il porte, comme #497 l'a établi, sur les **DOUZE** chapitres et non sur cinq : les
+douze `chapter.json` ne citent **aucun** manuel CNP (ils citent 9raya.tn, devoir.tn, najahni.tn,
+tunisiecollege.net, scribd) et **onze sur douze** portent encore « À REVALIDER sur le programme
+officiel CNP ». Même `08-jumla-murakkaba`, le chapitre réputé « à sa place », découpe la الجملة
+المركّبة en « التركيب بالوصل / بالإسناد / بالربط », **qui n'est le découpage d'aucune des deux
+éditions** : le manuel révisé, lui, procède par la **fonction porteuse** (الفاعل، المفعول به،
+نائب الفاعل، المبتدأ، الخبر) puis par le **complément porteur** (المفعول فيه، المطلق، لأجله،
+الحال) — treize leçons dont cette fiche donne maintenant les treize خلاصات. **Le LOT B a de quoi
+travailler ; ce LOT A ne touche à aucun fichier de `content/arabic-8eme/`.**
 
 ## 3. Notes pédagogiques / méthode
 
@@ -317,13 +641,16 @@ Chiffres **latins 0–9** partout — le guide numérote ses دروس **1 … 24
 - **Guide enseignant** : `501802P00` — « **النّحو العربي — للسّنة الثّامنة من التّعليم الأساسي · كتاب الأستاذ** » (المركز الوطني البيداغوجي, الرمز 501 802 ; auteurs سهام كباني · عمر بنّور · الصّادق الميساوي · محمد الشّاوش ; إشراف عبد القادر المهيري). **Autorité de scope نحو/صرف 8ème** : التّمهيد (objectifs p.3 + cadre المركّبات p.5–6) + **الفهرست intégral des 36 دروس avec pagination** (p.166–167) + corps des دروس (encadrés « أهداف الدرس », نصّ انطلاق, déroulés inductifs) + **جدول معاني المزيد** (p.165).
 - **Contenu application** : **`content/arabic-8eme/` n'existe pas encore** → §4 est une **proposition** (pas un alignement). À créer pour publier le contenu 8ème.
 - **Sœur directe** : `programme/7eme-base/arabe.md` (`501701P00`, même collection/superviseur). La **7ème** entrait dans le نحو **par les fonctions** (en deux أبواب نحو/صرف) ; la **8ème refond le نحو par les المركّبات** (en deux أقسام) et **systématise la dérivation (الاشتقاق)** — c'est la **suite logique du collège** (7ème = fonctions & bases صرف → 8ème = composition syntaxique & dérivation des noms).
-- **Manuel élève 8ème** : à apparier dans `cnp-officiel/manuels/asasi/c8/eleve/` pour renseigner la colonne « manuel élève » de §4 (non fait ici — le guide professeur suffit au scope). NB : le dossier `c8/enseignant/` contient aussi `521802P00.pdf` et `541805P00.pdf` (autres matières/volumes, non examinés).
+- **Manuel élève 8ème RÉVISÉ** : **`101808P01/P02/P03` — téléchargé et LU INTÉGRALEMENT (158 p.) le 2026-09-21**, cf. §2 ter. C'est **l'autorité de scope en vigueur** pour ce niveau, le guide `501802` décrivant le découpage d'avant 2006. Les manuels du CNP ne sont **jamais** versionnés ici (LICENSE-CONTENT.md : on lie, on ne copie pas) ; ils se re-téléchargent par `npm run content:manuel:fetch -- 101808P01` dans un cache privé hors dépôt. NB : le dossier `c8/enseignant/` contient aussi `521802P00.pdf` et `541805P00.pdf` (autres matières/volumes, non examinés).
 - **Taybah / répartiteur 8ème** : non fourni ici → séquençage trimestriel à vérifier ultérieurement (le guide ne le donne pas).
 - **Divergences signalées** : voir §6.
 
 ## 6. Incertitudes / à revérifier
 
-- **⛔ Le corps du manuel révisé `101808` n'est toujours pas lu** — et c'est **la** dépendance de ce niveau. Les sept verdicts (النعت · التوكيد · البدل · العطف · أسلوب التعجّب · المنادى · العدد) sont **non établis** ; rien n'a été retiré de `content/arabic-8eme/`. Le mur (corpus `cnp-officiel/` machine-local, domaine CNP fermé par la politique de sortie) et le protocole pour le lever : **§2 ter**.
+- **✅ Le corps du manuel révisé `101808` EST LU** — 158/158 p., à l'image, le 2026-09-21 (§2 ter). Les sept verdicts sont **établis, page à l'appui** (§2 quater) : quatre التوابع **pré-requis mobilisés** (النعت dans 3 خلاصات, التوكيد et العطف dans les تحليل نماذج, البدل cité une seule fois), **التعجّب absent**, **المنادى et العدد absents et portés par la 9ᵉ**. Rien n'a été retiré de `content/arabic-8eme/` : l'arbitrage reste à Mohamed, et il porte sur les **douze** chapitres.
+- **⚠️ Le « mur CNP » consigné ici le 2026-09-21 par la session #497 était une erreur de diagnostic** : le domaine n'est **pas** fermé par la politique de sortie. `www.cnp.com.tn` sert son **certificat feuille seul**, d'où un `curl 60` qui ressemble à un refus réseau. Remède mesuré (sans : `HTTP 000` ; avec : `HTTP 302`) et interdits associés : **§2 ter, premier encadré**. À relire avant toute conclusion d'inaccessibilité sur ce domaine.
+- **Ce qui reste non lu de `101808`** : rien du texte. En revanche les **~200 références du corpus littéraire** n'ont été relevées qu'au niveau auteur/œuvre/page, sans transcription des extraits eux-mêmes — une passe ultérieure serait utile au LOT B pour **réemployer les mêmes textes-supports** (notamment le fonds tunisien : خريّف, المسعدي, الدوعاجي, الفارسي, حسن نصر, العروسي المطوي).
+- **Deux coquilles de l'édition `101808`, relevées et tranchées** (détail en §2 ter) : le **فهرس** titre la leçon 09 d'إعراب « الجملة **الفعليّة** (3) » là où le corps et sa خلاصة disent **اسميّة** ; et le **corps** saute le numéro « التاسع » en صرف (il imprime 1–8 puis 10, 11, 12 pour onze leçons). Le فهرس a raison sur les numéros, le corps a raison sur le titre.
 - **Le §2 ci-dessous décrit l'édition d'AVANT la refonte de septembre 2006** (§2 bis). Il reste fidèle à ce que le guide `501802` imprime, mais il ne décrit pas le programme que l'élève suit. Ne pas s'en servir seul comme autorité de scope pour créer ou retirer un chapitre de 8ᵉ.
 - **Architecture أقسام (8ème) ≠ أبواب (7ème)** : le 8ème dit « القسم الأوّل / القسم الثّاني » (sections), le 7ème disait « الباب الأوّل / الباب الثّاني » (parties) — terminologie différente pour la même division نحو/صرف. ✅ vérifié sur الفهرست (p.166–167) + intercalaire (p.7).
 - **« علم الاشتقاق » vs « علم الصّرف »** : le **تمهيد (p.3)** annonce القسم الثّاني « **في علم الاشتقاق** » ; l'**intercalaire + الفهرست** le titrent « **علم الصّرف** ». Même section (la morphologie/dérivation) ; les deux libellés coexistent dans le guide. ✅ signalé.
@@ -342,3 +669,25 @@ Chiffres **latins 0–9** partout — le guide numérote ses دروس **1 … 24
 3. **الأهداف العامّة** (التّمهيد p.3 / PDF 3), texte fidèle, « يهدف تدريس اللّغة في السّنة الثّامنة … كما نصّت … في **الفصل السّادس عشر** من سفر البرامج … إلى أن يكون المتعلّم قادرا على » : **استعمال اللّغة العربيّة بصفة تلقائيّة** ؛ **تصوّر العربيّة ونظامها تصوّرا موضوعيّا** ؛ **إدراك مختلف التّراكيب النّحويّة ومختلف الصّيغ الصّرفيّة** ؛ **توظيف معرفته باللّغة للتّمييز بين مستويات الأساليب التّعبيريّة**. (Identique au 7ème au mot près, mais « الفصل 16 » spécifique à la 8ème.)
 4. **Cadre conceptuel des المركّبات** (التّمهيد p.5 / PDF 5) : le نحو 8ème = analyse en **المركّبات** classés « حسب طبيعة العنصر الأساسيّ ونوع العلاقة بين مكوّنيه » → **المركّب الفعليّ** (محور = الفعل) ، **المركّب الاسميّ** (رأس + توسعة : النّعتيّ = منعوت+نعت ؛ التّوكيديّ = مؤكَّد+توكيد ؛ الإضافيّ = مضاف+مضاف إليه ؛ **شبه الإسناديّ = مشتقّ عامل + معمول**) ، **المركّب الموصوليّ** (موصول + صلة) ، **المركّب الإسناديّ** (نواة إسناديّة + متمّمات). _(Atteste le changement de paradigme 7ème « fonctions » → 8ème « المركّبات ».)_
 5. **الدّرس 1 — النّصّ والجملة والنّواة** (p.9 / PDF 9) : encadré « أهداف الدرس » = **إدراك مكوّنات النّصّ · تبيّن المكوّنات الضّروريّة من غير الضّروريّة في الجملة · معرفة شكل النّواة الإسناديّة الأساسيّة · تفكيك النّصّ إلى مكوّناته المباشرة** ; hiérarchie de composition (texte fidèle) : « الأصواتُ تكوّن المقاطعَ … والكلماتُ تكوّن **المركّبات والجملَ** ، والجملُ هي الوحدات النّحويّة التي تكوّن النّصّ مباشرةً » ; نصّ الانطلاق = نصّ سرديّ. (Atteste la lecture inductive درس par درس : نصّ انطلاق → تحليل → قاعدة.)
+
+6. **Manuel élève révisé `101808` — architecture des 24 leçons** (فهرس ص 3–4, lu à l'image) :
+   **13 leçons d'علم الإعراب** (p.6 · 11 · 18 · 23 · 28 · 33 · 43 · 49 · 56 · 63 · 70 · 76 · 82),
+   **toutes consacrées à la الجملة المركّبة** ; **11 leçons d'علم الصرف** (p.89 · 96 · 104 · 110 ·
+   115 · 123 · 129 · 136 · 141 · 145 · 153). Chaque leçon = **نصّ → مدخل → تطبيقات → خلاصة →
+   تمارين**. _(Les 24 خلاصات sont transcrites au §2 ter — c'est le texte officiel de la règle.)_
+7. **النعت est nommé dans TROIS خلاصات de `101808`** — p.14 (« أحد التوابع كالنعت والبدل والتوكيد
+   وتمييز المفرد ») · **p.73** (« مركّب نعتيٌّ يكون فيه النعت مشتملا على مركّب إسناديّ فرعيّ ») ·
+   **p.149** (« يُعلم تأنيثُ ما لم تظهر علامة التأنيث عليه : بصيغة الفعل أو الخبر أو النّعت… ») —
+   **et n'est le titre d'aucune leçon.** _(C'est le fait qui distingue « pré-requis mobilisé » de
+   « au programme », et qu'aucune lecture de فهرس ne pouvait produire.)_
+8. **التوكيد et العطف vivent dans les « تحليل نماذج » de الدّرس 8** (p.52–53) : « الإماءُ
+   جميعُهنَّ يُقبِّلنها » → مؤكَّد / توكيد → **« مبتدأ (مركّب توكيديّ) »** ; « إنّنا نعلم ما
+   تُسرّينَ ونعلم ما تُعلنينَ » → معطوف عليه / معطوف → **« خبر ناسخ (مركّب بالعطف) »**.
+9. **« العدد » de `101808` n'est PAS le numéral** — les leçons 10 et 11 de صرف s'intitulent
+   « **الاسم من حيث الجنس والعدد** » (p.145 · p.153) et traitent **مفرد / مثنّى / جمع** :
+   p.147 ex.7 tableau « المفردُ · علامةُ التأنيثِ · المثنّى · الجمعُ » ; p.153 مدخل ex.1
+   « اجعل بين القوسين العدد الذي يناسب الاسم المسطّر : (1 = ، 2 = ، ≤ 3) ». **اسم العدد /
+   العدد والمعدود : absents des 158 pages** ; portés par la 9ᵉ révisée (`101908` ص 116 · 122).
+10. **أسلوب التعجّب : zéro occurrence sur 158 pages** de `101808` — ni titre, ni خلاصة, ni
+    exercice, ni étiquette d'analyse. C'est le seul des sept dont l'absence soit **totale** au
+    manuel de 8ᵉ **et** non compensée par un report en 9ᵉ.
