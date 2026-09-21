@@ -74,6 +74,146 @@ Le cadre (p.5–6, **identique dans sa structure à la 1ère**) s'organise autou
   - ✅ INCLUS : tracé correct des lettres (attachées/détachées, formes initiale/médiane/finale), copie (نسخ) propre, **dictée (إملاء)** de mots du رصيد, ponctuation de base, production guidée d'une phrase / d'un court texte narratif.
   - ⛔ EXCLU : production rédactionnelle libre et longue ; orthographe grammaticale complète.
 
+## 2 bis. Les manuels élèves `101215` / `101216` ouverts — et le piège du collège qui NE s'applique PAS ici (2026-09-21)
+
+> **Pourquoi cette section existe.** Cette fiche n'avait qu'une source, le guide enseignant
+> `501207P00`, lu à ~30 %. Le catalogue CNP porte pourtant **deux manuels élèves du même couple**,
+> jamais ouverts jusqu'ici :
+> **`101215` « مساراتي — كتاب القراءة »** (114 p.) et **`101216` « مساراتي — كتاب التّمارين »**
+> (109 p.). Ils viennent d'être lus.
+>
+> ⚠️ **Trois des cinq codes annoncés pour « la 2ème année » n'en sont pas.** Vérification faite
+> dans `suivi/corpus-cnp.json` : `201202` et `201203` sont « عيون الأدب — نصوص » (J.1 et J.2),
+> **2ème année SECONDAIRE** — ce sont bien les anthologies de نصوص contre lesquelles la consigne
+> mettait en garde ; `201281` est « كتاب الرياضيات — شعبة الرياضة », **un manuel de MATHS** de
+> 2ème secondaire (rangé sous `matiere: "01"` au catalogue, ce qui est l'erreur qui trompe).
+> Les seuls manuels élèves d'arabe de 2ème année **de base** sont `101215` et `101216`.
+>
+> **Leur couche texte n'est PAS vide.** Contrairement aux scans du collège, ce sont des PDF
+> **nativement numériques** (Adobe InDesign CS3 → Distiller, CNP, **2016**), avec une couche texte
+> exploitable. Elle reste **impropre à la recherche naïve** : InDesign y sème des espaces entre
+> les lettres et scinde les mots en fin de ligne — d'où des **zéros faux** (voir le garde-fou plus
+> bas). Toute affirmation ci-dessous est **relevée à l'image**, à ≥ 200 dpi ; en deçà (130 dpi),
+> certaines pages rendent les mots en **ordre inversé** — piège de lecture, pas défaut du PDF.
+
+### 🔴 Le motif « guide d'avant 2006 vs manuel révisé » N'EXISTE PAS en 2ème année de base
+
+C'était l'hypothèse à tester, et **les documents la réfutent**. La chaîne de preuve du collège
+(§2 bis de [`../7eme-base/arabe.md`](../7eme-base/arabe.md)) repose sur trois marqueurs : un guide
+portant les **mêmes auteurs** que le manuel, **aucune équipe de تنقيح** au guide mais une au
+manuel, et une **المقدّمة** datant la refonte. Ici, les trois tombent — et pour une raison de fond :
+
+1. **La refonte de septembre 2006 ne concerne pas ce niveau.** La المقدّمة de `101710` (7ᵉ) dit
+   mot pour mot : « اقتضاها تجديد برامج اللغة العربيّة **بالمرحلة الإعداديّة** … التي أعيد فيها
+   توزيع المسائل اللغويّة على المستويات الثّلاثة : **السّابعة والثّامنة والتّاسعة** ». C'est le
+   **collège**, nommément, et ses trois niveaux. Rien n'y engage le primaire.
+2. **Guide et manuels sont le MÊME dispositif, de la même année.** Les deux manuels portent en
+   page de titre (relevé à l'image, `101215` p.2 et `101216` p.1) :
+   **« مساراتي — كتاب القراءة / كتاب التّمارين لتلاميذ السّنة الثّانية من التّعليم الأساسيّ »**,
+   *تأليف* عادل بنعثمان · ناجية بلغيث · محمّد الرّقّاد (متفقّدو المدارس الابتدائيّة) · سعاد
+   السّوري عنان (مساعدة بيداغوجيّة) · زكيّة بوذينة (معلّمة تطبيق أولى) — et surtout
+   *تقييم* : **سامي الجازي** (متفقّد عامّ للتّربية) · **سلوى طرشونة عاشور** (متفقّدة عامّة
+   للتّربية).
+   Or **ce sont deux des trois auteurs du guide `501207`** (cf. l'en-tête de cette fiche : سامي
+   الجازي · محرز بلعيد · سلوى طرشونة عاشور). Les auteurs du guide sont les **évaluateurs** des
+   manuels : un seul et même paquet éditorial, pas deux éditions décalées.
+3. **Les métadonnées concordent** : `101215` = « 101215 MASARATI 2B VF 11-08-2016 », `101216` =
+   « 101216 MASARATI Tamarine 2b 18-08-2016 BAT OK », toutes deux CNP / InDesign CS3, **2016**.
+   (Une date de fichier ne date pas un programme — elle ne fait que **concorder** ici avec les
+   pages de titre, qui, elles, tranchent.)
+4. **Aucune équipe de تنقيح** ni au guide ni aux manuels — et, cette fois, ce n'est pas un indice
+   d'édition périmée : **il n'y a rien eu à réviser**, puisqu'aucune refonte ne visait ce niveau.
+
+➡️ **Conséquence pour cette fiche** : son §2, bâti sur le guide `501207`, **décrit bien le
+programme en vigueur**. Il n'est pas à refaire. Le soupçon qui valait pour 7ᵉ/8ᵉ/9ᵉ est **levé
+pour la 2ème année de base** — établi, pas supposé.
+
+> ✅ **Une incertitude du §6 tombe au passage.** Le §6 s'interrogeait sur « طريقة «عربية» » porté
+> par `subject.json`. Les deux pages de titre disent **مساراتي**, en toutes lettres. Le libellé
+> « Arabia Kiaa / Arabia Tamarine » du catalogue CNP est la simple translittération de **عربية**
+> (= « arabe », la matière) suivie de **قراءة** / **تمارين** — un nom de fichier, pas un nom de
+> méthode. La correction proposée au §6 (« مساراتي ») est donc **confirmée par la source**.
+
+### La structure réelle des deux manuels (فهرس relevé à l'image)
+
+**Fait structurant, et il change la nature de l'écart** : aucun des deux فهارس n'est une liste de
+**leçons de langue**. Les deux indexent des **نصوص** groupés par **مدارات**. Il n'existe donc, en
+2ème année, **aucun découpage officiel en « chapitres de notions »** auquel confronter terme à
+terme les 8 chapitres servis — à la différence du collège, où le فهرس liste des دروس نحو/صرف.
+
+**`101215` كتاب القراءة** — فهرس en **ص 113** (pagination imprimée = pagination PDF).
+**8 وحدات, 57 نصوص**, sur **5 مدارات** :
+
+| وحدة | مدار (recopié de l'image) | ص |
+| --- | --- | --- |
+| 1 | العيش معا والمواطنة | 4–16 (7 نصوص) |
+| 2 | المحيط والاستهلاك · المبادرة وبناء المشاريع | 17–29 (7) |
+| 3 | الصحّة والرّفاه | 30–42 (7) |
+| 4 | وسائل الإعلام والاتّصال | 43–55 (7) |
+| 5 | المحيط والاستهلاك | 56–68 (7) |
+| 6 | المبادرة وبناء المشاريع | 69–81 (7) |
+| 7 | العيش معا والمواطنة | 82–94 (7) |
+| 8 | **خزانة النّصوص** — الأعياد الوطنيّة والدّينيّة | 96–110 (8) |
+
+**`101216` كتاب التّمارين** — فهرس en **ص 109**. **Mêmes نصوص, mêmes مدارات, 7 وحدات, 49 نصوص**
+(ص 5–107) : la **خزانة النّصوص** de la 8ᵉ وحدة **n'a pas d'exercices** — elle est en lecture seule.
+
+Chaque درس du كتاب التّمارين est bâti sur des **rubriques fixes**, relevées à l'image :
+**أَتَفَاعَلُ** (compréhension + discrimination de lettres) · **أَتَفَكَّرُ** (le travail de langue
+proprement dit) · **أَكْتُبُ** (خطّ et نسخ, sur seyès) · **أَتَحَرَّرُ** (réaction écrite courte) ·
+**أُنْتِجُ** (production guidée). **C'est dans أَتَفَكَّرُ et أَكْتُبُ que vivent les notions** —
+jamais sous forme de leçon titrée.
+
+### 🔴 Le tableau d'écart — les 8 chapitres servis face au manuel
+
+Faute de فهرس de notions, chaque chapitre est confronté **aux consignes effectivement imprimées**,
+page par page, relevées à l'image dans `101216`. Chaque ✅ ci-dessous cite **la page et la consigne**
+qui l'établit.
+
+| chapitre servi (`content/arabic-2eme/`) | notion | verdict | ce qui l'établit, à l'image |
+| --- | --- | --- | --- |
+| `02-harakat-wa-tanwin` | الحركات · التنوين · الشدّة | ✅ **à sa place** | **ص 56** : tableau à trois colonnes **تَنْوِينُ الْفَتْحِ · تَنْوِينُ الضَّمِّ · تَنْوِينُ الْكَسْرِ** (« أَكْتُبُ مُفْرَدَاتٍ مِنَ النَّصِّ دَاخِلَ الْجَدْوَلِ ») · **ص 86** : « **أَرْسُمُ الشَّدَّةَ ( ّ ) وَأُكْمِلُ شَكْلَ الْكَلِمَاتِ التَّالِيَةِ** » · **ص 93** : « أُتَمِّمُ شَكْلَ الْكَلِمَاتِ **وَلَا أَنْسَى التَّضْعِيفَ** » · **ص 69** : « أُكْمِلُ بِكِتَابَةِ الْأَسْمَاءِ الْمُنَاسِبَةِ لِلصُّوَرِ **وَأَشْكُلُهَا** » |
+| `03-maqati-wa-madd` | المقاطع · حروف المدّ | ✅ **à sa place** | **ص 20** : « **أُتِمُّ الْكَلِمَاتِ بِالْمَقْطَعِ الْمُنَاسِبِ** » (وَا ، مَا ، ـمَـ ، أَرْ) · **ص 38** : « أَسْتَعِينُ بِالصُّوَرِ **لِأَكْتُبَ الْمَقْطَعَ النَّاقِصَ** مَكَانَ النِّقَاطِ » (إِسْ ، مِحْ ، وَصْ) |
+| `04-qiraa-kalimat-jumal` | قراءة الكلمات والجمل | ✅ **à sa place** | C'est l'objet même de `101215` (57 نصوص) ; la rubrique **أَتَفَاعَلُ** ouvre chacun des 49 دروس de `101216` |
+| `05-fahm-nass-qasir` | فهم النصّ القصير | ✅ **à sa place** | Rubrique **أَتَفَاعَلُ**, ex. **ص 86** « كَيْفَ اتَّصَلَتْ سَلْمَى بِرِفَاقِهَا ؟ » · **ص 56** « أُرَتِّبُ الْأَحْدَاثَ التَّالِيَةَ بِالْأَرْقَامِ مِنْ 1 إِلَى 4 » |
+| `06-ithra-mufradat` | المفردات · مترادف · مضادّ | ✅ **à sa place** | **ص 5** : « أُلَوِّنُ الْخَانَةَ الَّتِي تَحْمِلُ **نَفْسَ مَعْنَى** الْكَلِمَةِ الْمُلَوَّنَةِ » (مترادف) · **ص 93** : « **أَرْبِطُ الصِّفَةَ بِضِدِّهَا** » (مضادّ) · **ص 69** : complétion par champ lexical (الفصول) |
+| `07-tarkib-jumla` | تركيب الجملة وترتيبها | ✅ **à sa place** | **ص 20** : « أَكْتُبُ الْعِبَارَةَ الْمُنَاسِبَةَ لِأُتِمَّ الْمَعْنَى ثُمَّ أَقْرَأُ الْجُمْلَةَ » · **ص 38** : « أَضَعُ الْكَلِمَاتِ النَّاقِصَةَ فِي مَوَاضِعِهَا الْمُنَاسِبَةِ » · « جملة » relevé sur **21 pages** de `101216` |
+| `08-imla-wa-kitaba` | الإملاء · «ال» · علامات الترقيم · ة/ت/ه | ✅ **à sa place** *(une sous-notion non vérifiée)* | **ص 96** : « **أَضَعُ النِّقَاطَ الْمُنَاسِبَةَ ( . / : / ؟ ) دَاخِلَ كُلِّ إِطَارٍ** » et « وَلَا أَنْسَى **عَلَامَاتِ التَّنْقِيطِ** » · **ص 69** : « الـ……… » (ال التعريف) · ⚠️ la distinction **ة / ت / ه** n'a pas été rencontrée dans l'échantillon lu — **non établie, ni présente ni absente** |
+| `01-huruf-mutassila-munfasila` | الحروف المتّصلة/المنفصلة · أشكال الحرف | ✅ **à sa place** *(une sous-notion non vérifiée)* | La rubrique **أَكْتُبُ** de chaque درس travaille **une forme de lettre en contexte** : **ـس** puis « سَاحَةُ » (**ص 6**), **ـي** puis « فِي حِرْفَتِي كَسْبٌ كَثِيرٌ » (**ص 93**). Discrimination de **paires confusables** : **س/ص** (ص 5), **س/ش** (ص 7 : « أَبْحَثُ فِي النَّصِّ عَنْ كَلِمَةٍ تَحْوِي حَرْفَ س أَوْ ش ») — exactement les « صعوبات القراءة » annoncées par le guide (§3.4). ⚠️ La **classification explicite متّصلة/منفصلة** n'a pas été rencontrée — **non établie** |
+
+**Bilan : 8 ✅ · 0 ⬆️ · 0 ⛔.** Aucun chapitre servi en 2ème année ne relève d'un autre niveau,
+aucun ne manque au programme en vigueur.
+
+**CE QUI EST ÉTABLI** — les deux manuels élèves ont été ouverts, leurs pages de titre et leurs
+deux فهارس relevés à l'image, et **14 pages d'exercices** lues. Six des huit chapitres servis sont
+confirmés **intégralement** par des consignes citées ; les deux autres le sont **sur leur notion
+principale**. Le guide `501207` sur lequel repose le §2 est **contemporain** de ces manuels et
+co-signé par leurs évaluateurs.
+
+**CE QUI NE L'EST PAS** — (a) deux sous-notions (**ة/ت/ه** ; la classification
+**متّصلة/منفصلة**) n'ont pas été rencontrées dans l'échantillon lu : cela ne prouve **rien**, ni
+leur présence ni leur absence, sur 109 pages dont 14 lues ; (b) **aucun « ⛔ » n'est prononçable
+ici**, et pas seulement faute de lecture exhaustive : un فهرس de نصوص ne permet structurellement
+pas le constat d'absence qu'un فهرس de دروس autorise en 8ᵉ. Déclarer une notion absente de la
+2ème année demanderait de lire les 109 pages du كتاب التّمارين **et** les 126 du guide.
+
+### ⚠️ Garde-fou — la couche texte de ces PDF fabrique des zéros, et elle m'a repris trois fois
+
+La couche texte est lisible, donc tentante. Elle est aussi **piégeuse** : InDesign sépare les
+lettres par des espaces et scinde les mots en fin de ligne, si bien qu'un terme **présent à
+l'image** peut être introuvable par recherche. Trois fois dans cette passe, et chaque fois le
+vocabulaire du manuel n'était pas celui qu'on cherchait :
+
+| cherché | trouvé par la recherche | ce que le manuel imprime réellement |
+| --- | --- | --- |
+| `التنوين` | **0** | **تَنْوِينُ الْفَتْحِ · تَنْوِينُ الضَّمِّ · تَنْوِينُ الْكَسْرِ** (ص 56) — jamais le mot seul |
+| `الترقيم` | **0** | **عَلَامَات التَّنْقِيط** (ص 96) — le manuel dit **تنقيط**, pas **ترقيم** |
+| `الشدّة` | 3 pages | مais aussi **التَّضْعِيف** (ص 93) — deuxième nom de la même notion |
+
+Et le contrôle qui le prouve : **`التنقيط` lui-même rend 0** alors que le mot est lu à l'image en
+ص 96. **Dans ces deux PDF, un zéro de recherche ne vaut rien** — seuls les **positifs** sont
+exploitables pour naviguer. Tout constat d'absence doit se faire **à l'image**, page par page.
+
 ## 3. Notes pédagogiques / méthode
 
 ### 3.1 المفاهيم والمصطلحات اللغويّة (concepts linguistiques de référence, p.25–36)

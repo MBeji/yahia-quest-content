@@ -2,10 +2,11 @@
 
 # اللغة العربية (Arabe) — 6ème année de base · programme officiel CNP
 
-> **Source** : guide enseignant `501603P00.pdf` (`cnp-officiel/manuels/asasi/c6/enseignant/`) — titre réel imprimé sur la page de garde : « **دليل المعلّم في اللّغة العربيّة — السّنة السّادسة من التّعليم الأساسي** » (Guide du maître en langue arabe — 6e année de l'enseignement de base). Auteurs (تأليف) : **محرز بلعيد · حكيم بنعبادة · سامي الجازي · خالد التّهزرطي · نانع العبدلي** ; تقييم (évaluation) : **عزّ الدّين الرزقي · منية قارة بيبان · مسعود الماجري**. Éditeur : المركز الوطني البيداغوجي · وزارة التربية · الجمهوريّة التّونسيّة. الرمز : **501 603**. 128 p. (PDF, A4 portrait).
+> **Source** : guide enseignant `501603P00.pdf` (`cnp-officiel/manuels/asasi/c6/enseignant/`) — titre réel imprimé sur la page de garde : « **دليل المعلّم في اللّغة العربيّة — السّنة السّادسة من التّعليم الأساسي** » (Guide du maître en langue arabe — 6e année de l'enseignement de base). Auteurs (تأليف) : **محرز بلعيد · حكيم بنعبادة · سامي الجازي · خالد التّهزرطي · نافع العبدلي** ; تقييم (évaluation) : **عزّ الدّين الرزقي · منية قارة بيبان · مسعود الماجري**. Éditeur : المركز الوطني البيداغوجي · وزارة التربية · الجمهوريّة التّونسيّة. الرمز : **501 603**. 128 p. (PDF, A4 portrait).
 > **⚠️ Le titre annoncé par la consigne (« الدليل المرجعي في قواعد اللغة ») n'est PAS le titre réel** : c'est un **دليل المعلّم** (guide du maître), pas un « دليل مرجعي ». Mais la consigne a raison sur le **fond** : ce guide est **fortement orienté قواعد/grammaire** — son cœur théorique (المفاهيم النّظريّة, p.13–24) est un précis de grammaire/morphologie/orthographe, et son volet pratique (p.33–36) **détaille la progression annuelle des faits de langue, unité par unité**. (Voir §6.)
 > **Pages lues** (numéros **imprimés** ≈ PDF) : page de garde (PDF 1) ; **مقدّمة** p.3 ; **intercalaire الجانب النظريّ** (sommaire des 4 sections) p.4 ; **I. نظام الوحدات** p.5–9 (مفهوم الوحدة p.5, شروط/مكوّنات p.6–7, **مراحل درس قواعد اللّغة : أتهيّأ / ألاحظ وأستنتج / أتدرّب / أدمج** p.8–9) ; **II. المقاربة بالكفايات في مجال اللّغة العربيّة** p.10–12 (مفهوم الكفاية, كفاية المادّة : التواصل الشفوي / إنتاج النصوص / **استعمال قواعد اللّغة** p.12) ; **III. أهمّ المفاهيم النّظريّة الواردة بالبرنامج = noyau grammaire** : **استعمال قواعد اللّغة → القرائن (لفظيّة : أ الإعراب / ب الرّتبة / ج المطابقة / **د الصّيغة** ; معنويّة) p.13** ; **الفعل** (الماضي/المضارع/الأمر, اللازم/المتعدّي), **الاسم** (الجامد : اسم الذات/اسم المعنى/المصدر ; المشتقّ : اسم الفاعل/اسم المفعول/المصدر) p.14 ; **الأوزان** (المجرّد/المزيد) + **رسم الهمزة في أوّل/آخر الكلمة** + تصريف النّاقص (سعى/مشى/رضي/دعا) p.15–18 ; **المركّبات** (بالتمييز, المركّب النحويّ الإسناديّ) + **علامات الإعراب** p.15–16 ; **التواصل الشفوي** (القراءة الواصلة, المقام) p.18 ; **القراءة والإنتاج الكتابيّ** (المقطع السّردي : بنية ثلاثيّة/خماسيّة, مسار التحسين/الانحطاط ; المقطع الوصفيّ ; الحواريّ ; التوجيهيّ) p.19–24 ; **VI. المسار التشخيصيّ / التقييم** p.25–32 (معايير التواصل الشفوي p.25, القراءة p.26, الإنتاج الكتابيّ + جدول توزيع الأعداد /20 p.27, **سلّم التملّك + حجم النصوص (tableau par année) p.28**, شبكات إصلاح الإنتاج الكتابيّ p.29–31, **معايير التقييم في استعمال قواعد اللّغة** p.32) ; **الجانب العملي** : **1. توزيع الكفايات والأهداف على الوحدات** (calendrier annuel : 6 وحدات, أكتوبر→جوان) p.33, **القراءة par unité** p.34, **استعمال قواعد اللّغة par unité (الوحدة 1→6) = LA progression grammaticale** p.35, **الإنتاج الكتابيّ par unité** p.36 ; **خارطة الوحدات** : intercalaire p.37 + **les 6 cartes d'unité, transcrites cellule par cellule** — و1 p.38–39, و2 p.40–41, و3 p.42–43, و4 p.44–45, و5 p.46–47, و6 p.48–49 (§2 bis) ; intercalaires **تقديم الوحدة الأولى** p.50 et **مذكّرات القراءة** p.51 ; **les 8 مذكّرات القراءة de l'unité 1** p.52–63 (§2 ter) ; **مذكّرات الإنتاج الكتابيّ** p.64–72, **مذكّرات قواعد اللّغة** p.73–83 et **l'الإدماج** (texte + مذكّرة) p.84–87 (§2 quater) ; **وضعيّات تقييم الوحدات** p.88–127 et le **فهرس** p.128 (§2 quinquies). **Le guide est désormais lu de bout en bout (128/128 p.)** ; le détail de ce qui est transcrit cellule par cellule et de ce qui l'est au niveau du gabarit est dit en §6. **Offset printed↔PDF ≈ 0** au front lu. **Transcrit le** : 2026-06-28 (p.1–39) ; **complété le 2026-07-26** (p.40–128 : les six cartes d'unité, les intercalaires et les مذكّرات القراءة de l'unité 1) ; **audité au source le 2026-09-19** (R-7, portée intégrale). **Statut** : transcription **vérifiée** — **11 écarts constatés et corrigés** le 2026-09-19, dont une **contradiction p.35 ↔ cartes affirmée trois fois et inexistante**. « Fidèle » se dit **après** relecture au source, pas à la place : le détail dans le §6 « Audit R-7 ».
-> **Langue d'enseignement** : `ar` (monolingue — langue d'instruction officielle). **gradeSlug** : `6eme-base`. **subject id** attendu : `arabic-6eme`.
+> **Second canal — les manuels ÉLÈVES, ouverts le 2026-09-21** : `101611P00` « **عالم القراءة — كتاب النّصوص** » (224 p.) et `101612P00` « **عالم الكتابة — كتاب التّمارين** » (248 p.), mêmes auteurs et mêmes évaluateurs que le guide, **sans équipe de تنقيح** — donc **même édition** que lui (la refonte de septembre 2006 vise « المرحلة الإعداديّة », pas le primaire : constaté, §2 sexies). **Pages lues à l'image** : `101612` → 1, 2, 3, 96, 100, 103, 125, 206, 225, **246–248 (الفهرس)** = 12/248 ; `101611` → 1, 2, **220–222 (الفهرس)** = 5/224. C'est un **relevé de فهرس + sondage**, pas une transcription : ce que ces pages établissent et ce qu'elles n'établissent pas est dit au **§2 sexies**. ⚠️ **Conséquence assumée sur le registre** : `suivi/6eme-base.json` passe de `validee-r7` à **`partielle`**. L'audit R-7 du 2026-09-19 reste vrai **du guide** (lu à 100 %, son bloc `r7` est conservé) ; mais le corpus déclaré compte désormais deux sources lues à 5 % et 2 %, et un « validé » sur un corpus à trous est une fausse déclaration. `profondeur` reste **`generation`** : les 13 chapitres servis sont **tous** au programme.
+> **Langue d'enseignement** : `ar` (monolingue — langue d'instruction officielle). **gradeSlug** : `6eme-base`. **subject id** : `arabic-6eme` — **existe et sert 13 chapitres** (l'état « absent » que portaient les §4/§5/§6 datait du 2026-07-26 ; corrigé le 2026-09-21).
 
 ## 1. Cadre & compétences (الكفايات / المقاربة بالكفايات)
 
@@ -44,6 +45,11 @@ Le fait de langue se construit **inductivement**, en quatre temps (texte fidèle
 > **Ossature pédagogique à respecter** : en 6ème la grammaire n'est pas un savoir récité mais un **outil construit puis réinvesti** (أتدرّب → أدمج). Les exercices QCM doivent rester ancrés sur la **phrase/le texte**, pas sur le métalangage pur.
 
 ## 2. Plan annuel — la grammaire, déployée sur 6 unités (الجانب العملي, p.33–39)
+
+> ➡️ **L'écart entre ce programme et les 13 chapitres servis par `content/arabic-6eme/` est
+> établi au [§2 sexies](#2-sexies-les-manuels-élèves-101611--101612--le-second-canal-ouvert-le-2026-09-21)**, depuis le **manuel élève** — second canal, ouvert le 2026-09-21. Verdict :
+> **13 ✅ · 0 ⬆️ · 0 ⛔** sur la grammaire, mais **24 leçons d'إنتاج كتابيّ, 6 أنشطة إدماج et
+> 64 textes de lecture servis par personne.**
 
 > **Trouvaille décisive** : contrairement aux guides 4ème/5ème (qui laissaient la progression implicite), ce guide 6ème **explicite la progression annuelle** dans son « الجانب العملي » (p.33→). L'année = **6 وحدات تعلّميّة** (et non 8), réparties d'**octobre à juin** ; la table p.35 donne, **unité par unité**, les أهداف مميّزة + le محتوى (faits de langue) de l'activité « استعمال قواعد اللّغة ». C'est la **colonne vertébrale du scope grammatical 6ème**.
 
@@ -515,6 +521,296 @@ La table des matières confirme, une à une, les sections transcrites et fixe le
 > (cf. §6) et que **seule l'unité 1 est développée** (« تقديم وحدة التعلّم **الأولى** ») — les cinq
 > autres unités se conduisent par transposition.
 
+## 2 sexies. Les manuels élèves `101611` / `101612` — le second canal, ouvert le 2026-09-21
+
+> **Pourquoi cette section, et pourquoi elle ne s'appelle pas « §2 bis ».** Le modèle est le
+> §2 bis des fiches de [7ᵉ](../7eme-base/arabe.md) et [8ᵉ](../8eme-base/arabe.md) : confronter le
+> **manuel élève** — second canal, jamais ouvert — au contenu réellement servi. Ici le numéro
+> « 2 bis » est **déjà pris** par la خارطة الوحدات, et c'est sous ce nom que le verdict R-7 du
+> 2026-09-19 (fiche ET `suivi/6eme-base.json`) désigne les six cartes d'unité. Renuméroter aurait
+> cassé cette piste d'audit pour un gain cosmétique. La section a donc pris le **premier numéro
+> libre** de la famille §2. ➡️ **C'est ici que vit le tableau d'écart programme ↔ contenu servi.**
+
+### Ce qui a été ouvert, et ce que ça a coûté de le croire fermé
+
+Le catalogue CNP (`suivi/corpus-cnp.json`) porte **deux** manuels élèves pour le couple
+6ᵉ × arabe, et **aucun des deux n'avait jamais été lu** — la fiche n'avait qu'une source, le guide
+`501603` (lu, lui, à 100 %) :
+
+| code | titre imprimé | rôle | pages PDF | octets |
+| --- | --- | --- | --- | --- |
+| `101611P00` | **عالم القراءة — كتاب النّصوص** | anthologie de lecture | **224** | 5 001 131 |
+| `101612P00` | **عالم الكتابة — كتاب التّمارين** | cahier d'exercices (قواعد + إنتاج + إدماج) | **248** | 1 825 609 |
+
+Les deux portent, sur leur page de titre : **لتلاميذ السّنة السّادسة من التّعليم الأساسيّ** ;
+تأليف **محرز بلعيد · حكيم بنعبادة · سامي الجازي · خالد التمزرطي · نافع العبدلّي** ; تقييم
+**عز الدّين الرّزقي · منية قارة بيبان · مسعود الماجري** ; المركز الوطني البيداغوجي. (Les noms sont
+identiques d'un ouvrage à l'autre ; seule la **vocalisation** varie à la composition — `101611`
+imprime « نافع العبدلي » et « عز الدين الرزقي » sans shadda, `101612` les imprime avec.)
+
+⚠️ **Deux corrections à l'en-tête de cette fiche, relevées au passage** (guide `501603`, page de
+titre relue **à 400 dpi**) : elle écrivait « **نانع** العبدلي » là où les trois pages de titre
+impriment « **نافع** » — corrigé. Et elle écrit « خالد **التّهزرطي** » : c'est bien ce que compose
+le guide, mais **les deux manuels impriment « خالد التمزرطي »** (م, sans shadda). Divergence entre
+deux ouvrages du même ensemble, **non arbitrée** ; l'en-tête garde la graphie du guide, qu'il cite.
+
+⚠️ **La consigne annonçait des « scans purs, couche texte vide (~53 car./page), rien à `grep` »** —
+c'est vrai des manuels du **collège**, c'est **faux ici**, et je l'ai constaté avant d'y croire :
+`101611` rend 486 836 caractères de couche texte, `101612` en rend 595 630. Mais cette couche est
+**inexploitable** : ces PDF sont composés (QuarkXPress 5.0 pour `101612`, « maquette kawaed
+lougha » ; Acrobat 6.0 pour `101611`) avec une police arabe **à encodage propriétaire** — la
+couche sort en latin-1 visuellement ordonné (`á«q °ùfƒàq dG ájq Qƒ¡ª÷G` = « الجمهوريّة التّونسيّة »).
+Conclusion pratique **identique** à celle du collège — **lecture à l'image**, ici à 110 dpi (net),
+recadrages à 200–400 dpi sur les pages de titre et le فهرس — mais pour une **autre raison**, et la
+raison compte : un `grep` sur cette couche rendrait des **zéros qui ne mesurent rien**.
+
+### 🔴 La refonte de septembre 2006 ne touche PAS la 6ᵉ — constaté, pas supposé
+
+La consigne demandait de **constater** ce qui, au collège, disqualifie les guides : la مقدّمة de
+`101710` (7ᵉ) attribue la révision à « **تجديد برامج اللغة العربيّة بالمرحلة الإعداديّة … الصّادرة
+في سبتمبر سنة ستّ وألفين** » — la **المرحلة الإعداديّة**, le collège. Le primaire n'est pas visé.
+Le test décisif est la **signature documentaire** de cette refonte : au collège, le manuel élève
+porte une **équipe de تنقيح** que le guide n'a pas (voir le tableau des trois niveaux au
+[§2 bis de la 7ᵉ](../7eme-base/arabe.md)). Relevé ici **sur les trois pages de titre, à 400 dpi** :
+
+| document | تأليف | إشراف / superviseur | équipe de **تنقيح** | مقدّمة |
+| --- | --- | --- | --- | --- |
+| guide `501603` | les **5 mêmes** noms | **aucun** | **aucune** | p.3 — _lue par la passe intégrale de 2026-07/09, pas par ce lot ; aucune mention d'un programme daté n'y figure dans ce qui en est transcrit (§1)_ |
+| manuel `101611` | les **5 mêmes** noms | **aucun** | **aucune** | **aucune** (p.2 = ligne de copyright seule) |
+| manuel `101612` | les **5 mêmes** noms | **aucun** | **aucune** | **aucune** (p.2 = ligne de copyright seule, le درس 1 ouvre p.3) |
+
+➡️ **Aucune des trois pages ne porte la marque de la refonte de 2006** : pas d'équipe de révision,
+pas de préface de تنقيح, pas de عبد القادر المهيري (le superviseur commun des trois guides du
+collège) — et surtout **les mêmes cinq auteurs et les mêmes trois évaluateurs de bout en bout**.
+Guide et manuels forment ici **un seul et même ensemble éditorial**. Le motif qui périme les guides
+du collège **n'existe pas en 6ᵉ**.
+
+> **CE QUI EST ÉTABLI** : les deux canaux de la 6ᵉ sont de la **même édition**, donc le §2 de cette
+> fiche (bâti sur `501603`) n'est **pas** un plan périmé, contrairement au §2 des fiches 7ᵉ/8ᵉ.
+> **CE QUI NE L'EST PAS** : la date d'édition elle-même. Aucun des trois documents ne l'imprime.
+> Les métadonnées PDF disent « créé le 18/11/2010 » pour les deux manuels — **une date de fichier
+> n'est pas une date de programme** (la règle posée en 7ᵉ vaut ici aussi).
+
+### Le فهرس de `101612` (p.246–248) — 61 leçons en trois قسم
+
+Transcription fidèle, caractère par caractère depuis l'image (200 dpi pour p.246–247). Colonnes du
+tableau imprimé : **ع/ر · عنوان النّصّ · الصّفحة**. Les ٱ (hamzat waṣl) sont recopiés tels
+qu'imprimés.
+
+**القسم الأوّل : استعمال قواعد اللّغة** — 31 leçons ; la 1re ouvre p.3, la 31ᵉ p.120, et le
+قسم suivant ouvre p.125
+
+| # | عنوان | p. | # | عنوان | p. |
+| --- | --- | --- | --- | --- | --- |
+| 1 | الاسم المعرّف بالإضافة | 3 | 17 | اسم الفاعل من المضاعف المجرّد | 66 |
+| 2 | ضمائر ٱلجرّ | 6 | 18 | اسم المفعول من المضاعف المجرّد | 70 |
+| 3 | ضمائر النّصب | 9 | 19 | اسم الفاعل من النّاقص المجرّد | 74 |
+| 4 | صيغة المضارع المنصوب من المضاعف مجرّدا ومزيدا | 12 | 20 | اسم المفعول من النّاقص المجرّد | 78 |
+| 5 | صيغة المضارع المجزوم وصيغة الأمر من المضاعف مجرّدا ومزيدا | 17 | 21 | الهمزة المتوسّطة على الألف / الواو / الياء / السّطر | 81 |
+| 6 | صيغة الماضي من الفعل النّاقص مجرّدا ومزيدا | 21 | 22 | إعراب الاسم المثنّى | 85 |
+| 7 | صيغة المضارع المرفوع من الفعل النّاقص مجرّدا ومزيدا | 25 | 23 | إعراب جمع المذكّر السّالم | 88 |
+| 8 | صيغة المضارع المنصوب من الفعل النّاقص مجرّدا ومزيدا | 30 | 24 | إعراب الجمع المؤنّث السّالم | 92 |
+| 9 | صيغة المضارع المجزوم من الفعل النّاقص مجرّدا ومزيدا | 35 | 25 | إعراب الأسماء الخمسة | 96 |
+| 10 | صيغة الأمر من الفعل النّاقص مجرّدا ومزيدا. _(point final imprimé)_ | 39 | 26 | الواو والياء في الجمع المذكّر السّالم المضاف | 100 |
+| 11 | الأسماء المقصورة النّكرة | 42 | 27 | التّاء المفتوحة في الجمع المؤنّث السّالم | 103 |
+| 12 | تقديم الخبر على المبتدإ | 45 | 28 | المركّب التّمييزيّ | 106 |
+| 13 | تقديم خبر النّاسخ على ٱسمه | 49 | 29 | المركّب الموصوليّ الاسميّ | 111 |
+| 14 | ٱلمصدر من الفعل الثّلاثيّ المزيد | 53 | 30 | اسم الفاعل من الفعل المزيد | 116 |
+| 15 | المفعول المطلق | 57 | 31 | اسم المفعول من الفعل المزيد | 120 |
+| 16 | الهمزة المتطرّفة | 62 | | | |
+
+**القسم الثّاني : الإنتاج الكتابيّ** — 24 leçons, de p.125 à p.220 (la dernière) · **القسم
+الثّالث : أنشطة الإدماج** — 6 leçons, une par unité, de p.225 à p.241 (la dernière)
+
+| # | عنوان (القسم الثّاني) | p. | # | عنوان | p. |
+| --- | --- | --- | --- | --- | --- |
+| 1 | بنية النّصّ السّرديّ | 125 | 13 | من الخطاب المنقول إلى الخطاب المباشر | 173 |
+| 2 | وضع البداية | 131 | 14 | أفعال القول | 179 |
+| 3 | سياق التحوّل | 136 | 15 | من الخطاب المباشر إلى الخطاب المنقول | 184 |
+| 4 | وضع النّهاية | 140 | 16 | المقطع الحواري المتعدّد الأطراف | 189 |
+| 5 | السّرد الخطّيّ | 143 | 17 | المقطع التفسيريّ : كيف … ؟ | 193 |
+| 6 | السّرد غير الخطّيّ | 147 | 18 | المقطع التفسيريّ : ماذا أعرف عن …. ؟ | 197 |
+| 7 | الشخصيّات في السرد | 151 | 19 | المقطع التفسيريّ : لماذا … ؟ | 202 |
+| 8 | الزّمان والمكان في السّرد | 154 | 20 | المقطع التفسيريّ : الأسباب والنّتائج | 206 |
+| 9 | وصف الشخص | 158 | 21 | المقطع التّوجيهيّ (1) : الأمر والنّهي | 210 |
+| 10 | وصف أشياء وحيوانات | 162 | 22 | المقطع التّوجيهيّ (2) : استعمال المصادر | 213 |
+| 11 | وصف مشهد يغلب عليه السكون | 165 | 23 | النصّ السرديّ مغنى بالوصف والحوار | 217 |
+| 12 | وصف مشهد تغلب عليه الحركة | 169 | 24 | النّصّ السّرديّ مغنى بالحوار والتّفسير | 220 |
+
+**القسم الثّالث** : الوحدة الأولى 225 · الثّانية 228 · الثّالثة 231 · الرّابعة 234 · الخامسة 237 ·
+السّادسة 241.
+
+**Le gabarit d'une leçon** (constaté p.3, p.96, p.100, p.103 pour les قواعد ; p.125 et p.206 pour
+l'إنتاج ; p.225 pour l'إدماج) : un **bandeau d'objectif** en haut de page (p.96 : « أتعرّف علامة
+الإعراب المناسبة للوظيفة وأستعملها » ; p.100 : « أرسم الواو والياء في جمع المذكّر السّالم
+المضاف » ; p.103 : « أرسم التّاء في آخر الاسم »), puis le titre **entièrement vocalisé**, puis des
+rubriques à la première personne — **أَسْتَكْشِفُ** en قواعد, **أَتَدَرَّبُ** en إنتاج,
+**أُعَالِجُ ٱلنَّصَّ** en إدماج. Les leçons de l'إنتاج sont numérotées « **الـدّرس N** » ; celles
+des قواعد ne le sont pas.
+
+### 🟢 Concordance guide `501603` ↔ manuel `101612` : 31 / 31, et dans le même ordre
+
+La table p.35 du guide (transcrite au §2, colonne المحتوى, deux lignes par unité) et le
+القسم الأوّل du manuel décrivent **exactement le même programme, dans exactement le même ordre** :
+
+| unité (guide p.35) | leçons du manuel | |
+| --- | --- | --- |
+| **الأولى** | 1 → 5 | المعرّف بالإضافة · ضمائر الجرّ · ضمائر النّصب · المضاعف (منصوب ; مجزوم+أمر) |
+| **الثّانية** | 6 → 11 | les 5 صيغ du النّاقص · الأسماء المقصورة النّكرة |
+| **الثّالثة** | 12 → 16 | تقديم الخبر · تقديم خبر النّاسخ · المصدر من المزيد · المفعول المطلق · الهمزة المتطرّفة |
+| **الرّابعة** | 17 → 21 | اسم الفاعل/المفعول من المضاعف et من النّاقص (مجرّدا) · الهمزة المتوسّطة |
+| **الخامسة** | 22 → 27 | إعراب المثنّى/ج.م.السالم/ج.المؤنّث السالم/الأسماء الخمسة · الواو والياء في المضاف · تاء الجمع |
+| **السّادسة** | 28 → 31 | المركّب التّمييزيّ · المركّب الموصوليّ · اسم الفاعل/المفعول من المزيد |
+
+C'est un résultat qui **consolide** : la fiche la mieux établie de l'arabe du primaire
+(`validee-r7`, guide lu à 100 %) est confirmée par un canal indépendant, à la leçon près. Les
+seuls écarts sont de **formulation**, relevés ici pour la trace :
+
+| guide p.35 | manuel `101612` | nature |
+| --- | --- | --- |
+| « إعراب **بعض** الأسماء الخمسة (أب – أخ – ذو) » | « إعراب الأسماء الخمسة » (titre, p.96) | ⚠️ **de fond, voir plus bas** |
+| « تاء جمع المؤنّث السّالم » | « التّاء المفتوحة في الجمع المؤنّث السّالم » | formulation |
+| « إعراب جمع المؤنّث السّالم » | « إعراب الجمع المؤنّث السّالم » | ordre des mots |
+| « الهمزة المتطرّفة على الألف/الواو/الياء/السّطر » | « الهمزة المتطرّفة » (le sous-titre est porté par la leçon 21, المتوسّطة) | formulation |
+| « صيغة الماضي من النّاقص » | « صيغة الماضي من الفعل النّاقص **مجرّدا ومزيدا** » | le manuel explicite la portée |
+
+Même concordance pour l'**إنتاج الكتابيّ** (guide p.36 ↔ القسم الثّاني), aux trois nuances près :
+
+- 🔴 **une divergence de fond** : le guide p.36 donne, en و5, « المقطع التّفسيريّ … **ماذا أفعل
+  لـ ؟** » ; le manuel imprime, en 4ᵉ leçon تفسيريّة, « **ٱلْمَقْطَعُ ٱلتَّفْسِيرِيُّ :
+  ٱلْأَسْبَابُ وَٱلنَّتَائِجُ** » (**p.206**, relu à l'image : bandeau « أنتج نصّا سرديّا أغنيه
+  بمقاطع تفسيريّة », deux textes support — le tabagisme, le handicap — et un schéma cause→effets).
+  Ce ne sont pas deux formulations d'une même leçon : **le manuel enseigne les causes et les
+  conséquences, le guide annonçait une consigne d'action.** Non arbitré.
+- le guide imprime « المقطع الحواريّ المتعدّد **الأطرف** » (coquille signalée au §2) ; le manuel
+  imprime **الأطراف**. Le manuel corrige.
+- « المكان والزّمان في السّرد » (guide) ↔ « الزّمان والمكان في السّرد » (manuel, p.154) ;
+  « وصف شخصيّة » (guide) ↔ « وصف الشخص » (manuel, p.158).
+
+### 🔴 Le tableau d'écart — les 13 chapitres servis par `content/arabic-6eme/`
+
+Chaque chapitre servi, face au programme du manuel élève. **Aucun fichier de
+`content/arabic-6eme/` n'a été modifié** : cette section établit des faits.
+
+| chapitre servi | notion | place au programme du manuel `101612` |
+| --- | --- | --- |
+| `01-al-ism-al-mu3arraf-bil-idafa` | الاسم المعرّف بالإضافة | ✅ **6ᵉ** — leçon 1, p.3 |
+| `02-damair-al-jarr` | ضمائر الجرّ ووظائفها | ✅ **6ᵉ** — leçon 2, p.6 |
+| `03-damair-an-nasb-al-muttasila` | ضمائر النّصب المتّصلة | ✅ **6ᵉ** — leçon 3, p.9 |
+| `04-al-muda3af-al-mansub` | المضارع المنصوب من المضاعف | ✅ **6ᵉ** — leçon 4, p.12 |
+| `05-al-muda3af-al-majzum-wal-amr` | المضارع المجزوم وصيغة الأمر من المضاعف | ✅ **6ᵉ** — leçon 5, p.17 |
+| `06-tasrif-al-fi3l-an-naqis` | تصريف الفعل النّاقص | ✅ **6ᵉ** — leçons 6→10, p.21–41 (5 leçons) |
+| `07-al-asma-al-maqsura-wat-tanwin` | الأسماء المقصورة النّكرة ورسم التّنوين | ✅ **6ᵉ** — leçon 11, p.42 |
+| `08-taqdim-al-khabar` | تقديم الخبر وتقديم خبر النّاسخ | ✅ **6ᵉ** — leçons 12 et 13, p.45 et 49 |
+| `09-al-maf3ul-al-mutlaq-wal-masdar` | المفعول المطلق والمصدر من الثّلاثيّ المزيد | ✅ **6ᵉ** — leçons 14 et 15, p.53 et 57 |
+| `10-ism-al-fa3il-wal-maf3ul` | اسم الفاعل واسم المفعول | ✅ **6ᵉ** — leçons 17→20 (المجرّد) et 30–31 (المزيد), p.66–79 et 116–123 |
+| `11-3alamat-al-i3rab-bil-huruf` | علامات الإعراب بالحروف | ✅ **6ᵉ** — leçons 22→25, p.85–99 (+ 26 et 27, voir ⚠️) |
+| `12-al-murakkab-at-tamyizi-wal-mawsuli` | المركّب التّمييزيّ والموصوليّ | ✅ **6ᵉ** — leçons 28 et 29, p.106 et 111 |
+| `13-rasm-al-hamza` | رسم الهمزة المتوسّطة والمتطرّفة | ✅ **6ᵉ** — leçons 16 et 21, p.62 et 81 |
+
+**13 ✅ · 0 ⬆️ (autre niveau) · 0 ⛔ (nulle part).** Et l'**ordre** des 13 chapitres suit celui des
+31 leçons sans une seule inversion. C'est le contraire exact de la 8ᵉ, où 5 chapitres sur 12 ne
+figurent au programme révisé d'aucun niveau et 2 relèvent de la 9ᵉ.
+
+⚠️ **Deux leçons du manuel ne sont couvertes qu'en creux, et l'une des deux est mince.**
+
+- **Leçon 27 — « التّاء المفتوحة في الجمع المؤنّث السّالم » (p.103)** : couverte. Le chapitre 11
+  l'énonce comme règle dans son `cours.md` (« **وتاؤُه مبسوطةٌ دائمًا** (ت) لا مربوطةٌ (ة) :
+  «معلّمات» لا «معلّماة» ») et dans son `resume.md`, et la teste dans
+  `exercices/02-revision.json`. Le mot du manuel est **مفتوحة**, celui du contenu **مبسوطة** —
+  **synonymes exacts**, et c'est précisément le genre de couple qui fabrique un faux « zéro »
+  quand on cherche d'une seule graphie (le `grep` « التّاء المفتوحة » rend **0** sur tout
+  `content/arabic-6eme/`).
+- **Leçon 26 — « الواو والياء في الجمع المذكّر السّالم المضاف » (p.100–102, 3 pages)** :
+  **couverture mince**. Le `cours.md` du chapitre 11 n'énonce la chute du نون à l'إضافة que sur le
+  **مثنّى** (« تُحذَفُ عندَ الإضافةِ : «تلميذا القسمِ» ») ; le cas du **جمع المذكّر السّالم
+  مضاف** — celui que le manuel travaille sur trois pages et que le guide p.35 érige en
+  **هدف مميّز** de l'unité 5 (« يرسم الواو والياء في جمع المذكّر السّالم المضاف إلى الإسم ») —
+  n'apparaît que dans l'**explication d'un exercice** (`exercices/02-revision.json` : « نونُ
+  المثنّى وجمعِ المذكّرِ السّالمِ تُحذَفُ عندَ الإضافةِ : «معلّما القسمِ» و«معلّمو القسمِ» »).
+  Il est donc **testé sans être enseigné**. Sur une année de concours, c'est un trou à combler —
+  par le cours du chapitre 11, pas par un chapitre neuf.
+
+⚠️ **Une borne dépassée, non arbitrée : les Cinq Noms.** Le guide p.35 écrit « إعراب **بعض**
+الأسماء الخمسة **(أب – أخ – ذو)** » — trois sur cinq. Le manuel titre sa leçon 25
+« إعراب الأسماء الخمسة » sans restriction, mais **sa page d'ouverture (p.96) ne fait travailler que
+أب · أخ · ذو** (texte support : أحمد وأخوه صالح … دخلَتِ الأمُّ رفقةَ الأبِ ; exercice 3 : « أتمّ
+الجمل بـ «ذُو، ذَا، ذِي» »). Le chapitre servi `11-3alamat-al-i3rab-bil-huruf`, lui, enseigne
+**les cinq** : « **أبٌ · أخٌ · حَمٌ · فو · ذو** ». **CE QUI EST ÉTABLI** : le guide restreint
+explicitement à trois, et la p.96 du manuel ne fait travailler que ces trois. **CE QUI NE L'EST
+PAS** : que حم et فو soient absents de la leçon — **p.97–99 n'ont pas été lues**. Enseigner les
+cinq n'est de toute façon pas une faute (c'est le paradigme classique), c'est un **dépassement de
+borne** que Mohamed arbitre, pas la session.
+
+### 🔴 L'inverse : ce que les manuels enseignent et que personne ne sert
+
+C'est ici que l'écart est réel, et il est large. `content/arabic-6eme/` sert **la moitié d'un
+tiers** du dispositif de l'année : le seul القسم الأوّل de `101612`.
+
+| ce que le manuel enseigne | volume | servi par `content/arabic-6eme/` ? |
+| --- | --- | --- |
+| `101612` القسم الأوّل — **استعمال قواعد اللّغة** | 31 leçons (p.3 → 120 pour la dernière) | ✅ **13 chapitres, 31/31 leçons** |
+| `101612` القسم الثّاني — **الإنتاج الكتابيّ** | **24 leçons** (p.125 → 220 pour la dernière) | ⛔ **aucun chapitre** |
+| `101612` القسم الثّالث — **أنشطة الإدماج** | 6, une par unité (p.225 → 241) | ⛔ **aucun chapitre** |
+| `101611` — **القراءة وفهم المقروء** | **64 textes**, 6 unités (p.3 → 216) | ⛔ **aucun chapitre** |
+
+Mesuré, pas supposé — et **en plusieurs graphies**, la règle de méthode de la 7ᵉ étant appliquée.
+Sur l'ensemble de `content/arabic-6eme/` : `الإنتاج الكتابيّ` **0** · `الإنتاج الكتابي` **0** ·
+`إنتاج كتابيّ` **0** · `المقطع` **0** · `مقطع` **0** · `السرد` **0** · `السّرد` **1** (et c'est
+« موسم السّردينة », dans un texte d'exercice) · `الوصف` **0** · `الحوار` **0** · `التفسير` **0** ·
+`التّفسير` **0** · `بنية النّصّ` **0** · `وضع البداية` **0** · `سياق التحوّل` **0** ·
+`أفعال القول` **0** · `الخطاب المباشر` **0** · `فهم المقروء` **0** · `الإدماج` **1** (une citation
+de source dans un `chapter.json`) · `القراءة` **2** (un `subject.json`, une explication de quiz).
+
+Le détail de ce qui manque, transcrit depuis les deux فهارس :
+
+- **`101611` — les 6 objectifs de lecture**, un par unité, lus sur les bandeaux verticaux du فهرس
+  (p.220–222, recadrés et pivotés à 300 dpi) : و1 « **أحدّد بنية النصّ السّرديّ و مكوّناته** »
+  (textes 1→10, p.3–31) · و2 « **أقرأ نصوصا يكون السّرد فيها خطّيّا أو غير خطّيّ** » (11→22,
+  p.33–71) · و3 « **أقرأ نصوصا سرديّة تتضمّن مقاطع وصفيّة** » (23→32, p.73–103) · و4 « … **مقاطع
+  حواريّة** » (33→44, p.105–146) · و5 « … **مقاطع تفسيريّة** » (45→54, p.149–180) · و6 « …
+  **مقاطع توجيهيّة** » (55→64, p.183–216). Chaque unité se clôt par un texte `( للتّقييم )` puis un
+  texte `( للإدماج )`. Les auteurs sont nommés : نجيب محفوظ, طه حسين, الجاحظ, ابن المقفّع,
+  ميخائيل نعيمه, محمود تيمور, ندى كامل, الطاهر قيقة…
+- **`101612` القسم الثّاني** — les 24 leçons transcrites plus haut : la **structure du récit**
+  (situation initiale / transformation / finale), le **récit linéaire et non linéaire**, les
+  personnages, le temps et le lieu, les **quatre types de description**, le passage
+  **discours rapporté ↔ discours direct** et les **verbes de parole**, les **quatre passages
+  explicatifs**, les **deux passages injonctifs**, et les deux leçons de synthèse.
+
+> ⚠️ **Le `subject.json` de `arabic-6eme` promet déjà ce qu'il ne sert pas.** Sa `description`
+> imprimée dans l'app annonce « **نقرأ نصوصًا سرديّةً ووصفيّةً وحواريّةً وتفسيريّةً وتوجيهيّة** …
+> **ونوظّفُها في إنتاج النّصوص** », et son bloc `manuels` déclare **les deux manuels**
+> (`101611P00`, `101612P00`) — ceux-là mêmes qui n'avaient jamais été ouverts. La promesse est
+> exacte au regard du programme ; c'est le contenu qui ne la tient pas encore.
+
+### CE QUI EST ÉTABLI / CE QUI NE L'EST PAS
+
+**ÉTABLI** — (1) les deux manuels élèves de la 6ᵉ sont de la **même édition que le guide**
+(cinq auteurs, trois évaluateurs, aucune équipe de تنقيح, aucun superviseur, sur les trois pages de
+titre à 400 dpi) : la refonte de septembre 2006, qui vise « المرحلة الإعداديّة », **ne périme pas
+le §2 de cette fiche** ; (2) le القسم الأوّل de `101612` porte **31 leçons** qui concordent
+**une à une et dans l'ordre** avec la table p.35 du guide ; (3) les **13 chapitres** de
+`content/arabic-6eme/` sont **tous** au programme de 6ᵉ — **0 ⬆️, 0 ⛔** ; (4) deux notions du
+programme ne sont couvertes qu'en creux, dont **la leçon 26 (الواو والياء في المضاف), testée mais
+non enseignée** ; (5) **trois pans entiers du dispositif — 24 leçons d'إنتاج كتابيّ, 6 أنشطة
+إدماج, 64 textes de lecture — ne sont servis par aucun chapitre.**
+
+**NON ÉTABLI** — (a) la **date d'édition** des trois documents (aucun ne l'imprime) ; (b) ce que
+contiennent les **pages de corps** des manuels : **12 pages lues sur 248** pour `101612`
+(1, 2, 3, 96, 100, 103, 125, 206, 225, 246, 247, 248) et **5 sur 224** pour `101611`
+(1, 2, 220, 221, 222) — le فهرس, les pages de titre et sept pages de sondage. Le gabarit décrit
+plus haut est **constaté sur ces sept pages**, pas généralisé aux 61 leçons ; (c) que le contenu
+servi soit **fidèle** aux leçons correspondantes — ce lot compare des **titres**, pas des
+contenus ; (d) que حم et فو soient absents de la leçon 25 (p.97–99 non lues) ; (e) **qu'il faille
+créer des chapitres d'إنتاج et de قراءة** — c'est un **arbitrage de Mohamed**. Ce lot dit
+seulement qu'à ce jour la 6ᵉ, **année de concours**, est servie sur la seule grammaire, alors que
+l'épreuve nationale porte aussi sur la lecture et la production écrite.
+
+> **Le lot suivant est identifié** : lire `101612` p.3–124 et confronter les **13 chapitres
+> servis** au **contenu** des 31 leçons (exemples, règles, exercices), pas seulement à leurs
+> titres. C'est ce qui permettra de dire si la 6ᵉ est fidèle, et de combler la leçon 26.
+
 ## 3. Notes pédagogiques / méthode
 
 ### 3.1 Le noyau grammatical (المفاهيم النّظريّة, p.13–18) — métalangage du maître
@@ -579,7 +875,9 @@ Chiffres **latins 0–9** partout (les tableaux écrivent **20, 30, 50, 100, 150
 
 ## 4. Chapitrage **PROPOSÉ** (→ alimentera `content/arabic-6eme/` puis `manifest/6eme-base.json`)
 
-> **`content/arabic-6eme/` est ABSENT** (vérifié : seuls `arabic-1ere…5eme` existent). Le chapitrage ci-dessous est donc une **proposition**, **ordonnée sur la progression annuelle réelle du guide** (table « استعمال قواعد اللّغة » p.35, déployée sur les 6 unités) — c'est la base à créer pour le contenu 6ème (année de concours → قواعد structurées). Slugs `NN-notion` (translittération latine, cohérente avec `arabic-5eme`). Chaque chapitre porte un fait de langue (ou un groupe cohérent) du programme. **Le quiz gate les exercices** (thème school) — cf. `content-engine`. La dernière colonne = manuel élève (non apparié : voir §5).
+> ⚠️ **Cette proposition est DÉPASSÉE, et elle a été suivie.** Elle a été écrite le 2026-07-26 quand `content/arabic-6eme/` n'existait pas ; **le sujet existe depuis, et sert 13 chapitres** — pas les 12 proposés ici, mais le **même découpage relu sur le manuel élève**, dans le **même ordre**. Le tableau qui fait foi désormais est celui du **§2 sexies** (13 chapitres servis ↔ 31 leçons du manuel `101612`). La table ci-dessous est conservée pour la trace du raisonnement.
+>
+> Le chapitrage ci-dessous est une **proposition**, **ordonnée sur la progression annuelle réelle du guide** (table « استعمال قواعد اللّغة » p.35, déployée sur les 6 unités) — c'est la base à créer pour le contenu 6ème (année de concours → قواعد structurées). Slugs `NN-notion` (translittération latine, cohérente avec `arabic-5eme`). Chaque chapitre porte un fait de langue (ou un groupe cohérent) du programme. **Le quiz gate les exercices** (thème school) — cf. `content-engine`. La dernière colonne = manuel élève (non apparié : voir §5).
 
 | #   | slug                                     | notion (fait de langue — محتوى p.35)                                                                           | unité | page(s) guide                    | manuel élève (code · pages) |
 | --- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ----- | -------------------------------- | --------------------------- |
@@ -600,13 +898,14 @@ Chiffres **latins 0–9** partout (les tableaux écrivent **20, 30, 50, 100, 150
 >
 > - **12 chapitres** (sièges des faits de langue p.35 + 1 chapitre de compréhension/types de texte). Le contenu publié pourra fusionner/scinder ; l'**ordre** suit les unités.
 > - Les colonnes 1–11 = **قواعد structurées** (cœur concours) ; le ch. 12 = **فهم المقروء + أنماط الكتابة** (transversal, ancré sur les textes).
-> - **Aligner sur le contenu si/quand `content/arabic-6eme/` est créé** : si des slugs sont déjà choisis ailleurs, les harmoniser (cette proposition n'est pas encore en prod).
+> - ~~**Aligner sur le contenu si/quand `content/arabic-6eme/` est créé**~~ → **fait** : le contenu a été écrit avec **13 slugs** qui ne sont pas ceux proposés ici (`01-al-ism-al-mu3arraf-bil-idafa` … `13-rasm-al-hamza`). Ils sont **tous** au programme (§2 sexies) et un slug ne se renomme jamais (`docs/etoiles-et-sceaux.md` du moteur) : c'est le §2 sexies qui sert de table d'alignement, pas celle-ci.
 
 ## 5. Sources croisées
 
-- **Guide enseignant** : `501603P00` — « **دليل المعلّم في اللّغة العربيّة — السّنة السّادسة من التّعليم الأساسي** » (المركز الوطني البيداغوجي, الرمز 501 603 ; auteurs محرز بلعيد · حكيم بنعبادة · سامي الجازي · خالد التّهزرطي · نانع العبدلي). Cadre compétences (كفاية المادّة قواعد اللّغة) + **noyau grammaire (المفاهيم النّظريّة p.13–18)** + théorie du texte + **progression annuelle des faits de langue par unité (p.33–36)** + خارطة الوحدات (p.37+) + معايير التقييم + سلّم التملّك + حجم النصوص. **Autorité de scope.**
+- **Guide enseignant** : `501603P00` — « **دليل المعلّم في اللّغة العربيّة — السّنة السّادسة من التّعليم الأساسي** » (المركز الوطني البيداغوجي, الرمز 501 603 ; auteurs محرز بلعيد · حكيم بنعبادة · سامي الجازي · خالد التّهزرطي · نافع العبدلي). Cadre compétences (كفاية المادّة قواعد اللّغة) + **noyau grammaire (المفاهيم النّظريّة p.13–18)** + théorie du texte + **progression annuelle des faits de langue par unité (p.33–36)** + خارطة الوحدات (p.37+) + معايير التقييم + سلّم التملّك + حجم النصوص. **Autorité de scope.**
 - **Renvoi imprimé interne** : le noyau cite, en bas de page (p.18), « **دليل المعلّم — المركز القومي البيداغوجي — 1999** » — la source-cadre que ce guide 6ème prolonge (même lignée que le « الدليل المرجعي » 1998 cité par les guides 4ème/5ème).
-- **Contenu application** : **`content/arabic-6eme/` n'existe pas encore** → §4 est une **proposition** (pas un alignement). À créer pour publier le contenu 6ème.
+- **Manuels élèves** : `101611P00` « **عالم القراءة — كتاب النّصوص** » (224 p., 64 textes en 6 unités) et `101612P00` « **عالم الكتابة — كتاب التّمارين** » (248 p. : 31 leçons de قواعد, 24 d'إنتاج كتابيّ, 6 أنشطة إدماج). **Même édition que le guide** (mêmes auteurs, aucune équipe de تنقيح). **Second canal du scope** : ils concordent 31/31 avec la table p.35 — §2 sexies.
+- **Contenu application** : **`content/arabic-6eme/` existe et sert 13 chapitres** (le « n'existe pas encore » de cette ligne datait du 2026-07-26). Confrontation chapitre par chapitre au manuel élève : **§2 sexies**. Les strates **قراءة** et **إنتاج كتابيّ** du programme ne sont servies par aucun chapitre.
 - **Sœurs déjà transcrites** : `programme/4eme-base/arabe.md` et `programme/5eme-base/arabe.md` — même format ; la 6ème **consolide/systématise** leur grammaire (إعراب nommé, تصريف complet, اشتقاق).
 - **Taybah** (`taybah/6eme-base.md`, si présent) : séquençage trimestriel — à utiliser en vérification (non consulté ici).
 - **Divergences signalées** : voir §6.
@@ -616,7 +915,7 @@ Chiffres **latins 0–9** partout (les tableaux écrivent **20, 30, 50, 100, 150
 - **Titre réel ≠ consigne** : la consigne annonçait « **الدليل المرجعي في قواعد اللغة** ». Le titre **réel imprimé** (page de garde, PDF 1) est « **دليل المعلّم في اللّغة العربيّة — السّنة السّادسة من التّعليم الأساسي** » (الرمز 501 603). C'est un **دليل المعلّم**, pas un « دليل مرجعي ». **Mais la consigne vise juste sur le fond** : ce guide est **fortement orienté قواعد** (son noyau théorique p.13–18 est un précis de grammaire/morphologie/orthographe, et il **explicite la progression annuelle des faits de langue** p.33–36 — ce que les guides 4ème/5ème ne faisaient pas). ✅ titre réel rétabli ; orientation grammaticale confirmée.
 - **Numérotation des sections** : l'intercalaire p.4 liste **4 sections** (I نظام الوحدات, II المقاربة بالكفايات, III المفاهيم النّظريّة, **IV** المسار التشخيصيّ), mais la section التقييم est **imprimée « VI »** en tête de p.25 (« VI – المسار التشخيصيّ »). Coquille de numérotation du guide (IV↔VI) — **non bloquant**, c'est bien la 4ᵉ section annoncée.
 - **حجم النصوص : deux jeux de bornes** — le tableau **officiel** p.28 donne 6ème = **< 250 / 250–349 / > 350** ; les **شبكات إصلاح** p.29–31 titrent les colonnes **< 200 / 200–249 / > 250**. Léger écart (bornes de **notation** arrondies vs tableau de référence). J'ai retenu **p.28** comme référence de calibration (cohérent avec les transcriptions 4ème/5ème qui citaient déjà 6ème = <250/250-349/>350). À revérifier si l'on calibre finement la longueur des textes générés.
-- **`content/arabic-6eme/` absent** → §4 est une **proposition** (slugs/ordre issus de la progression p.35), pas un alignement sur du prod. Quand le contenu sera créé, harmoniser les slugs si nécessaire.
+- **~~`content/arabic-6eme/` absent~~ — il ne l'est plus** (corrigé le 2026-09-21). Le sujet sert **13 chapitres**, tous au programme, dans l'ordre du manuel élève. §4 reste une proposition **historique** ; le tableau d'alignement qui fait foi est au **§2 sexies**. Ce qui reste ouvert n'est plus le chapitrage mais **deux trous mesurés** : la leçon 26 du manuel (**الواو والياء في الجمع المذكّر السّالم المضاف**) est **testée sans être enseignée**, et les **24 leçons d'إنتاج كتابيّ** + les **64 textes de lecture** ne sont servis par personne — sur une **année de concours**.
 - **Cartes des unités 2–6** : seules l'intercalaire خارطة الوحدات (p.37) et la **carte de l'unité 1** (p.39) ont été lues en détail ; les cartes des unités 2–6 (pages suivantes du التطبيقي, non transcrites cellule par cellule) répartissent les **mêmes** faits de langue déjà capturés par la table-synthèse p.35. La table p.35 = **scope grammatical de référence** (suffisant pour §4).
 - **Vocalisation des exemples** : les exemples vocalisés (تصريف الناقص p.17–18, أوزان المزيد p.15, الهمزة المتطرّفة) ont été lus à 200–240 dpi (net) ; quelques حركات/شدّة fines peuvent comporter une marge de lecture (non structurelle — les **lexèmes et structures** sont fiables).
 - **Offset printed↔PDF ≈ 0** au front (page de garde PDF 1 ; p.13 = PDF 13 ; p.35 = PDF 35). Les pages citées sont les numéros **imprimés = PDF**.
@@ -664,8 +963,11 @@ dont seules les colonnes « unité » et « page(s) guide » ont été rectifié
 
 ## Ancres d'audit (faits + page — pour revérification)
 
-1. **Titre réel du guide** = « **دليل المعلّم في اللّغة العربيّة — السّنة السّادسة من التّعليم الأساسي** », auteurs **محرز بلعيد · حكيم بنعبادة · سامي الجازي · خالد التّهزرطي · نانع العبدلي**, تقييم **عزّ الدّين الرزقي · منية قارة بيبان · مسعود الماجري**, الرمز **501 603** — **page de garde (PDF 1)**. (≠ « الدليل المرجعي في قواعد اللغة » de la consigne ; mais guide bien **orienté قواعد**.)
+1. **Titre réel du guide** = « **دليل المعلّم في اللّغة العربيّة — السّنة السّادسة من التّعليم الأساسي** », auteurs **محرز بلعيد · حكيم بنعبادة · سامي الجازي · خالد التّهزرطي · نافع العبدلي**, تقييم **عزّ الدّين الرزقي · منية قارة بيبان · مسعود الماجري**, الرمز **501 603** — **page de garde (PDF 1)**. (≠ « الدليل المرجعي في قواعد اللغة » de la consigne ; mais guide bien **orienté قواعد**.)
 2. **Progression « استعمال قواعد اللّغة » sur 6 unités** (table p.35 / PDF 35, **relue cellule par cellule le 2026-09-19**) : و1 = **الاسم المعرّف بالإضافة + ضمائر الجرّ + ضمائر النّصب المتّصلة** ⟂ **تصريف المضاعف : المضارع المنصوب، المضارع المجزوم، الأمر** ; و2 = **صيغ النّاقص (الماضي + المضارع مرفوع-منصوب-مجزوم + الأمر)** ⟂ **رسم التّنوين + الأسماء المقصورة النّكرة** ; و3 = **تقديم الخبر على المبتدإ + تقديم خبر النّاسخ + المصدر من الثلاثيّ المزيد + المفعول المطلق** ⟂ **الهمزة المتطرّفة** ; و4 = **اسم الفاعل/المفعول من المضاعف ومن النّاقص مجرّدا** ⟂ **الهمزة المتوسّطة** ; و5 = **إعراب المثنّى/ج.م.السالم/ج.مؤ.السالم/الأسماء الخمسة** ⟂ **الواو والياء في ج.م.السالم المضاف + تاء جمع المؤنّث السّالم** ; و6 = **المركّب التّمييزيّ + الموصوليّ** ⟂ **اسم الفاعل/المفعول من المزيد**. _(⟂ sépare les **deux lignes** que la table donne à chaque unité. C'est LA colonne vertébrale du scope grammatical 6ème.)_
 3. **القرائن + الإعراب** (p.13 / PDF 13) : « **الإعراب = تغيّر أواخر الكلم لتغيّر المعاني النّحويّة (الفاعليّة، المفعوليّة، الإضافة)** » ; القرائن اللفظيّة = **الإعراب / الرتبة / المطابقة / الصِّيغة** ، والمعنويّة تتضافر معها ; المطابقة **تامّة** بين النّعت والمنعوت، **جزئيّة** بين الفعل والفاعل.
 4. **أوزان الفعل الثلاثيّ المزيد** (table الوزن/المصدر/المثال, p.15 / PDF 15) : بحرف **أفعل/فاعل/فعّل** (إكرام، مساهمة، تسليم) ؛ بحرفين **تفعّل/تفاعل/انفعل/افتعل/افعلّ** (تردّد، تناسُب، انكسار، اشتياق، احمرار) ؛ بثلاثة أحرف **استفعل** (استقبال، استقالة). Et **علامات الإعراب بالحروف** : المثنّى، الجمعان السالمان، الأسماء الخمسة — p.16.
 5. **حجم النصوص — 6ème** (tableau par année, p.28 / PDF 28) : **نص قصير أقلّ من 250 مفردة · متوسّط من 250 إلى 349 · طويل أكثر من 350** ; **سلّم التملّك** : تميّز (++++) جيّد جدّا / أقصى (+++) جيّد / أدنى (++) مقبول / دون الأدنى (–) / انعدام (––) غير مقبول. (Écart noté : شبكات الإصلاح p.29–31 titrées < 200 / 200–249 / > 250.)
+6. **Manuels élèves = même édition que le guide** (pages de titre, **400 dpi**) : `101611P00` et `101612P00` portent **les cinq mêmes auteurs** et **les trois mêmes évaluateurs** que `501603`, **aucune équipe de تنقيح**, **aucun superviseur**, **aucune مقدّمة** (p.2 = la seule ligne « جميع الحقوق محفوظة للمركز الوطني البيداغوجي »). ⇒ la refonte de **septembre 2006**, qui vise « **المرحلة الإعداديّة** », **ne touche pas la 6ᵉ** — contrairement aux trois niveaux du collège, dont les manuels portent une équipe de تنقيح que leurs guides n'ont pas.
+7. **فهرس de `101612`** (p.246–248 / PDF 246–248, relu à **200 dpi**) : **القسم الأوّل : استعمال قواعد اللّغة = 31 leçons** (1 الاسم المعرّف بالإضافة p.3 → 31 اسم المفعول من الفعل المزيد p.120) ; **القسم الثّاني : الإنتاج الكتابيّ = 24 leçons** (p.125 → 220) ; **القسم الثّالث : أنشطة الإدماج = 6** (une par unité, p.225 → 241). Les 31 leçons de قواعد concordent **une à une et dans l'ordre** avec la table p.35 du guide, et couvrent **les 13 chapitres** de `content/arabic-6eme/` — **0 ⬆️, 0 ⛔** (§2 sexies).
+8. **Divergence guide ↔ manuel sur le 4ᵉ مقطع تفسيريّ** : le guide p.36 (و5) annonce « **ماذا أفعل لـ ؟** » ; le manuel imprime, p.206 (PDF 206, lue à l'image), « **الـدّرس 20 — ٱلْمَقْطَعُ ٱلتَّفْسِيرِيُّ : ٱلْأَسْبَابُ وَٱلنَّتَائِجُ** », bandeau « أنتج نصّا سرديّا أغنيه بمقاطع تفسيريّة ». **Non arbitré.** Deux autres écarts de composition, au bénéfice du manuel : il imprime **الأطراف** là où le guide compose **الأطرف** (coquille déjà signalée au §2), et **خالد التمزرطي** là où le guide compose **خالد التّهزرطي**.
