@@ -52,6 +52,10 @@
   cette recette (logiciels, réglages Windows, domaines à autoriser sur le proxy — la liste à
   remettre à un admin PC) : `FableEtudes/POSTE-DE-TRAVAIL.md`.
 
+- ⚠️ **Le CNP sert son certificat feuille SEUL** : `curl` sort en **60**, pas un blocage.
+  `cat ../engine/scripts/cloud/ca-chain/*.pem /root/.ccr/ca-bundle.crt > /tmp/cnp-ca.pem`, puis
+  `CURL_CA_BUNDLE` / `NODE_EXTRA_CA_CERTS` dessus. Le hook du moteur le fait, mais il NE tourne PAS
+  dans une session ouverte sur CE dépôt. Jamais `-k` ni `NODE_TLS_REJECT_UNAUTHORIZED=0`.
 - **Lancer une campagne** : `/campagne` (skill `.claude/skills/campagne/`) — état des lieux
   vérifié, question à l'humain sur le couple à traiter, puis déroulé de la chaîne. Il ne choisit
   jamais le couple : l'outillage donne les faits, l'arbitrage reste humain.
@@ -126,9 +130,15 @@
 - **Le contenu ne voyage pas en migrations** : `content:emit` → `sql/content/<subject>.sql`,
   appliqué en prod par `apply-content.yml` (`workflow_dispatch`, journalisé dans
   `content_releases`). Ne jamais committer de SQL ici, ni de migration dans le moteur.
+  ⭐ **Un lot n'est pas fini au merge, il est fini en production.** Règle permanente : la session
+  qui merge du contenu le **publie** dans la foulée — sans le demander, sans le déléguer.
+  `subjects` toujours renseigné (vide = tout le corpus, ~45 min d'écriture en prod), puis vérifier
+  les étapes « Appliquer », « Vérifier en base », « Journaliser ». Du contenu mergé non publié est
+  un manquement, pas une étape suivante. Pourquoi rien ne le fait à votre place :
+
   ⚠️ **Merger ne publie pas.** `apply-content.yml` est désarmé volontairement (lot 3a) : aucun
   merge, aucun push ne déclenche une application. Une PR de contenu mergée n'est donc **pas** en
-  prod tant qu'un humain n'a pas dispatché — et une application lancée quelques minutes *avant*
+  prod tant que la session n'a pas dispatché — et une application lancée quelques minutes *avant*
   un merge fige l'ancienne version sans que rien ne le dise. Vécu le 2026-08-01 sur
   `math-bac-math` : application à 19:11 depuis `891c864`, PR #104 mergée à 19:27 en `67e3dd7`,
   et la prod a servi le contenu périmé deux jours. C'est pourquoi `content-drift.yml` existe :

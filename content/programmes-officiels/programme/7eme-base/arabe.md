@@ -217,6 +217,12 @@ et peu en 8ᵉ (13).
 **Ce qui est établi** : les deux découpages divergent fortement en 8ᵉ. **Ce qui ne l'est pas** :
 que le contenu servi soit *faux*.
 
+> ✅ **Résolu depuis le 2026-09-21**, par la lecture du فهرس de la 9ᵉ (section suivante) : les douze
+> chapitres de `content/arabic-8eme` se répartissent en **trois** groupes, et le tableau chapitre par
+> chapitre vit désormais **là où on le cherchera**, au §2 bis de
+> [`../8eme-base/arabe.md`](../8eme-base/arabe.md). Cette section reste pour la trace du
+> raisonnement ; c'est l'autre fiche qui fait foi sur le verdict.
+
 ### Le فهرس de la 9ᵉ révisée (`101908`, ص 175–176) — lu, et il change la conclusion
 
 **26 leçons : 19 en علم النحو + 7 en علم الصرف.** Et le نحو de 9ᵉ n'est plus organisé par
