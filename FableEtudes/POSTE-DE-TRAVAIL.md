@@ -149,6 +149,7 @@ les logiciels s'installent mais ne fonctionnent pas.
 | `github.com` · `api.github.com` · `codeload.github.com` · `objects.githubusercontent.com` | clones, *pull requests*, état des vérifications |
 | `registry.npmjs.org`                                                        | installation des dépendances                                   |
 | `www.cnp.com.tn` · `edunet.tn`                                              | manuels et programmes officiels tunisiens (les sources)        |
+| `crt.sectigo.com`                                                           | **indispensable** : le CNP ne sert pas son certificat intermédiaire — sans ce domaine, tout téléchargement du corpus échoue en erreur TLS |
 | `www.na9ranal3ab.tn` · `*.supabase.co`                                      | vérifier la production après publication                       |
 
 **Si le proxy déchiffre le TLS** (inspection SSL) : installer le certificat racine de
@@ -212,6 +213,6 @@ Pour éviter les allers-retours : ces points ne sont pas de son ressort.
 > 3. autoriser sur le proxy : `api.anthropic.com`, `claude.ai`, `claude.com`,
 >    `platform.claude.com`, `downloads.claude.ai`, `code.claude.com`, `registry.npmjs.org`,
 >    `github.com`, `api.github.com`, `codeload.github.com`, `objects.githubusercontent.com`,
->    `raw.githubusercontent.com`, `www.cnp.com.tn`, `edunet.tn`.
+>    `raw.githubusercontent.com`, `www.cnp.com.tn`, `edunet.tn`, `crt.sectigo.com`.
 >
 > Merci d'avance.
