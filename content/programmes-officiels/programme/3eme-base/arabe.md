@@ -83,6 +83,162 @@ Les trois grands savoir-faire (كفايات) implicites du niveau, lus du guide 
 - Partie applicative dédiée (p.113) : produire des phrases puis de courts textes (narratifs/descriptifs), en réinvestissant le رصيد et les faits de langue.
 - ✅ phrases correctes, court texte guidé. ⛔ rédaction longue libre.
 
+## 2 bis. Les manuels élèves « ينابيع » — la question posée, et ce qui a pu être établi (2026-09-21)
+
+> **Pourquoi cette section existe.** Les trois fiches d'arabe du collège ont établi un piège de
+> méthode : les **guides enseignant** du CNP (codes `5xxxxx`) sont les éditions **d'avant la
+> refonte de septembre 2006**, et le plan qu'ils impriment n'est **pas** le programme que l'élève
+> suit. Mesuré en 8ᵉ : sur 12 chapitres servis, **5 ne figurent au programme révisé d'aucun
+> niveau** et 2 relèvent de la 9ᵉ (§2 bis de [`../8eme-base/arabe.md`](../8eme-base/arabe.md) ;
+> chaîne de preuve au §2 bis de [`../7eme-base/arabe.md`](../7eme-base/arabe.md)). Cette fiche-ci
+> est bâtie sur le **seul** guide `501305P00`, à ~15 % de couverture, **sans qu'aucun manuel élève
+> n'ait jamais été ouvert** : le même soupçon devait donc être levé — ou écarté — ici.
+>
+> ⚠️ **Il ne l'est pas.** Les quatre PDF nécessaires n'ont pas pu être ouverts depuis cette
+> session (§ « Le mur », plus bas). Ce qui suit sépare donc, explicitement, ce qui a été
+> **ÉTABLI** de ce qui **RESTE À ÉTABLIR**. Aucun فهرس n'est transcrit ici, aucun tableau d'écart
+> n'est dressé : les inventer serait exactement la faute que ces §2 bis servent à empêcher.
+
+### ✅ ÉTABLI — ce que le corpus porte réellement pour ce couple (et ce qu'il ne porte pas)
+
+Relevé sur [`../../suivi/corpus-cnp.json`](../../suivi/corpus-cnp.json) (snapshot exhaustif des
+346 PDF). Le couple **arabe × 3ème année de base** a **quatre fichiers PDF pour deux œuvres**,
+toutes deux `role: eleve`, `cycle: base`, `classe: 3`, `matiere: 01` :
+
+| code · tome                  | titre porté par le catalogue | rôle       |
+| ---------------------------- | ---------------------------- | ---------- |
+| `101315P01` · `101315P02`    | **ينابيع - قراءة**           | élève      |
+| `101316P01` · `101316P02`    | **ينابيع الكتابة - تمارين**  | élève      |
+
+Ce sont exactement les deux codes que le guide `501305P00` cite comme ses supports (cf. §2,
+activité القراءة, et §5) et que [`../_INDEX.md`](../_INDEX.md) porte au backlog « à transcrire »
+pour ce couple. Ni l'un ni l'autre n'est revendiqué par une fiche : `affectations.json` les classe
+`principale` par défaut de matière (`01` → arabe), sans override.
+
+🔴 **Correction d'inventaire.** Les codes **`201302`, `201321`, `201381`** ne sont **pas** de ce
+niveau : leur premier chiffre `2` les place au **cycle secondaire**, et leur 4ᵉ chiffre `3` désigne
+la **3ème année secondaire**, pas la 3ème année de base. Ce sont des anthologies de textes —
+`201302` « نصوص _شعب علمية », `201321` « نصوص _شعبة الآداب », `201381` (13 tomes)
+« نصوص -شعبة رياضة ». Les confondre avec le primaire ferait transcrire un manuel de lycéen sous
+une fiche de CE2 ; la règle de décodage qui tranche est au
+[`README`](../../README.md) du dossier (chiffre 1 = rôle/cycle, chiffre 4 = classe).
+
+> Un cinquième document existe pour ce couple, côté enseignant : `501306P00`
+> « مدونة القسم في اللغة العربية ». Il est classé **`enrichissement`** dans `affectations.json`
+> (« jamais une fiche source of truth ») — il n'entre pas dans le périmètre de ce lot.
+
+### ✅ ÉTABLI — aucun manuel élève d'arabe n'a jamais été ouvert de la 1ʳᵉ à la 6ᵉ
+
+Mesuré sur les six registres `suivi/<grade>.json`, pas supposé. Chaque fiche d'arabe du primaire
+déclare **une seule source, toujours `role: enseignant`** — jamais un code `1…` :
+
+| niveau      | source déclarée      | rôle       | couverture déclarée      | statut       |
+| ----------- | -------------------- | ---------- | ------------------------ | ------------ |
+| `1ere-base` | `501109P00`          | enseignant | 44 p. / 175              | `partielle`  |
+| `2eme-base` | `501207P00`          | enseignant | 37 p. / 126              | `partielle`  |
+| `3eme-base` | `501305P00`          | enseignant | **29 p. / 195**          | `partielle`  |
+| `4eme-base` | `501404P00`          | enseignant | 39 p. / 269              | `partielle`  |
+| `5eme-base` | `501505P00`          | enseignant | 51 p. / 216              | `partielle`  |
+| `6eme-base` | `501603P00`          | enseignant | intégral (128 p.)        | `validee-r7` |
+
+Et le corpus porte pourtant, pour ces six niveaux, **quatorze** manuels élèves jamais ouverts
+(`101110`, `101111`, `101215`, `101216`, `101315`×2, `101316`×2, `101410`, `101411`, `101509`,
+`101510`, `101611`, `101612`). **La règle « sources officielles combinées » du
+[`README`](../../README.md) — « le manuel élève est un complément INDISPENSABLE au guide » — n'est
+donc honorée à aucun niveau du primaire en arabe.** Ce n'est pas propre à la 3ᵉ : c'est un trou de
+campagne, et il se répare niveau par niveau.
+
+### ✅ ÉTABLI — la refonte de 2006 nomme elle-même son périmètre, et ce n'est pas le primaire
+
+La nuance que ce lot devait constater plutôt que supposer se tranche déjà **sur le texte cité**.
+La المقدّمة du manuel révisé de 7ᵉ (`101710`, ص 3) ne dit pas seulement *qu'*une refonte a eu lieu,
+elle dit **sur quoi elle a porté** :
+
+> « اقتضاها تجديد برامج اللغة العربيّة **بالمرحلة الإعداديّة** من التّعليم الأساسيّ الصّادرة في
+> سبتمبر سنة ستّ وألفين، **التي أعيد فيها توزيع المسائل اللغويّة على المستويات الثّلاثة :
+> السّابعة والثّامنة والتّاسعة** »
+
+Le périmètre est **écrit dans la source** : la **مرحلة إعداديّة** (le collège), et la
+redistribution se fait **entre la 7ᵉ, la 8ᵉ et la 9ᵉ** — trois niveaux nommés un à un. **La refonte
+de septembre 2006 ne concerne donc pas la 3ème année de base**, et le mécanisme précis qui a
+déplacé المنادى en 9ᵉ et fait disparaître les التوابع ne peut pas, tel quel, être transporté ici.
+
+⚠️ **Ce que cela n'établit PAS**, et qu'il ne faut pas lire de travers :
+
+- que le primaire n'ait connu **aucune** réforme — une **autre** réforme, à une autre date, est
+  parfaitement possible ; la citation ci-dessus est muette là-dessus et ne vaut que pour elle-même ;
+- que le guide `501305P00` soit à jour — il peut être périmé pour une raison qui n'a rien à voir
+  avec 2006 ;
+- que les 8 chapitres servis soient au programme — c'est une question de **contenu**, que seule la
+  lecture des deux « ينابيع » referme.
+
+> **Provenance de la citation** : elle est recopiée depuis le §2 bis de
+> [`../7eme-base/arabe.md`](../7eme-base/arabe.md), où elle a été lue à l'image sur `101710` ص 3 le
+> 2026-09-19. Elle est donc **de seconde main ici** — fiable (fiche mergée, auditée), mais pas
+> revérifiée à l'image par cette session. Signalé pour que l'ancre reste honnête.
+
+### ⛔ RESTE À ÉTABLIR — la grille de confrontation, vide, prête à remplir
+
+Les 8 chapitres servis par `content/arabic-3eme/`, avec la notion que chacun porte (colonne reprise
+du §4, elle-même adossée au guide). **La colonne verdict est vide à dessein** : aucun فهرس de
+manuel n'a été lu, donc aucun ✅ / ⬆️ / ⛔ n'est prononçable.
+
+| # | chapitre servi                       | notion                                                    | place au programme du manuel |
+| - | ------------------------------------ | --------------------------------------------------------- | ---------------------------- |
+| 1 | `01-fahm-al-maqru`                   | فهم المقروء — القراءة بناءً للمعنى                        | **à établir**                |
+| 2 | `02-al-jumla-al-ismia-wal-filia`     | الجملة الاسميّة والفعليّة — المسند والمسند إليه           | **à établir**                |
+| 3 | `03-al-mufrad-wal-muthanna-wal-jam3` | المفرد والمثنّى والجمع                                    | **à établir**                |
+| 4 | `04-al-mudhakkar-wal-muannath`       | المذكّر والمؤنّث                                          | **à établir**                |
+| 5 | `05-azmina-al-fi3l`                  | أزمنة الفعل : الماضي / المضارع / الأمر                    | **à établir**                |
+| 6 | `06-ad-damair`                       | الضمائر المنفصلة                                          | **à établir**                |
+| 7 | `07-al-imla`                         | الإملاء                                                    | **à établir**                |
+| 8 | `08-ithraa-al-mu3jam`                | إثراء المعجم                                               | **à établir**                |
+
+Restent également à établir, et dans le même mouvement :
+
+1. le **فهرس** de `101315` (قراءة) et celui de `101316` (الكتابة — تمارين) : leçons, محاور, pages ;
+2. la **page de titre** de chacun : y a-t-il une **لجنة تنقيح** distincte des auteurs ? une
+   **date** ? la mention d'un **programme officiel** ? C'est le test qui a tranché pour les trois
+   niveaux du collège, et il se refait ici tel quel ;
+3. la **مقدّمة** : dit-elle de quel programme le manuel se réclame ?
+
+### 🧱 Le mur — pourquoi les quatre PDF n'ont pas été ouverts, mesuré
+
+À écrire ici pour que la prochaine session ne repaie pas le diagnostic. **Le corpus CNP est
+`hors git`** (~2,8 GB, dossier frère `cnp-officiel/`, cf. [`README`](../../README.md)) : il vit sur
+le poste de Mohamed et **n'existe pas** dans un conteneur de session distante. Les trois voies de
+rattrapage ont été essayées, une à une :
+
+| voie tentée                                                     | résultat mesuré                                                                                                               |
+| --------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| `https://www.cnp.com.tn/arabic/PDF/101315P01.pdf` (la recette de `METHODE-GENERATION-CONTENU.md`) | **échec TLS**. Le tunnel s'ouvre (`CONNECT … 200`), puis la vérification casse : `unable to get local issuer certificate` |
+| diagnostic de la chaîne servie                                   | `www.cnp.com.tn` ne présente **que la feuille** (1 certificat, `CN = *.cnp.com.tn`, émis par `Sectigo Public Server Authentication CA DV R36`) — **l'intermédiaire manque**. Défaut de configuration du serveur CNP, pas du poste |
+| l'intermédiaire nommé par l'AIA de la feuille (`crt.sectigo.com`) | **`403 connect_rejected`** — hôte hors de la politique de sortie de cet environnement. Non contourné (c'est la consigne) |
+
+Deux constats à garder :
+
+- **le site CNP n'est pas « down »** : l'hôte est joignable et autorisé, c'est **sa chaîne TLS qui
+  est incomplète**. `METHODE-GENERATION-CONTENU.md` prévoit « le site CNP bloque parfois les
+  requêtes automatisées (403/WAF) » — ce n'est pas ce cas-ci, et le remède qu'il donne (demander
+  les PDF au contributeur) reste le bon ;
+- **aucune copie ailleurs** : le Drive du compte ne porte ni `101315`/`101316`, ni `ينابيع`, ni
+  dossier `cnp-officiel` (recherché le 2026-09-21).
+
+**Ce qu'il faut pour débloquer** — au choix, et l'un suffit :
+
+1. les quatre PDF déposés dans le dépôt de travail (champ `FICHIERS` de la campagne), ou
+2. `crt.sectigo.com` ajouté aux domaines autorisés de l'environnement distant (il rejoindrait
+   `www.cnp.com.tn` et `edunet.tn`, déjà listés dans
+   [`../../../../FableEtudes/POSTE-DE-TRAVAIL.md`](../../../../FableEtudes/POSTE-DE-TRAVAIL.md)) —
+   un seul hôte, celui qui publie l'intermédiaire manquant, ou
+3. le lot repris depuis le poste de Mohamed, où `cnp-officiel/` est présent : la lecture se fait
+   alors à l'image (`bash cnp-officiel/render.sh <pdf> <p1> <p2> 110`), **scans purs, couche texte
+   vide (~53 car. de filigrane par page) — rien à `grep`**.
+
+⚠️ **Et la règle qui a déjà coûté trois fois au collège** : avant de déclarer une notion absente
+d'un فهرس, l'essayer **avec shadda, sans shadda, avec et sans article, et avec un synonyme
+courant**. Un « zéro » obtenu d'une seule graphie n'est pas une mesure.
+
 ## 3. Notes pédagogiques / méthode
 
 ### 3.1 Fondements théoriques (I — الجانب النظري, p.6–20)
@@ -143,6 +299,12 @@ Chiffres **latins 0–9** partout (les tableaux d'annexe écrivent **1, 19** ; j
 - **Divergences signalées** : voir §6.
 
 ## 6. Incertitudes / à revérifier
+
+- **🔴 Les manuels élèves n'ont JAMAIS été ouverts** — `101315` (ينابيع — قراءة, 2 tomes) et
+  `101316` (ينابيع الكتابة — تمارين, 2 tomes). Tant qu'ils ne le sont pas, **le scope de cette fiche
+  repose sur le seul guide enseignant**, à ~15 % de couverture, et l'on ignore si les 8 chapitres
+  servis sont au programme du manuel. Question posée, blocage d'accès mesuré et marche à suivre :
+  **§2 bis**.
 
 - **Titre du guide vs consigne** : la consigne annonçait « **الدليل المرجعي في تدريس اللغة العربية** » ; le titre **réel imprimé** (p. de garde) est « **كتاب المعلّم في اللّغة العربيّة — الدرجة الثانية : السنة الثالثة** » (المركز الوطني البيداغوجي, الرمز 501 305). C'est bien un **كتاب المعلّم** (livre du maître), pas un « دليل مرجعي ». Les `chapter.json` publiés nomment la source « الدليل المرجعي في تدريس اللغة العربية … 501305P00 » → **léger écart de titre à corriger côté contenu** (même code 501305P00, même document). ✅ titre réel rétabli ici.
 - **Structure ≠ محاور thématiques** : le guide est **piloté par compétences** et organisé en **6 parties** (نظري/منهجي/تطبيقي/تقييم/ملاحق/مراجع), pas en مجال→محور. Le mapping §4 est donc une **projection fidèle** (chaque slug → notion/page du guide), pas une recopie de محاور. Les 8 slugs publiés (fahm al-maqru, jumla, mufrad/muthanna/jam3, mudhakkar/muannath, azmina, damair, imla, mu3jam) sont **cohérents** avec le scope du niveau ; on **conserve les slugs publiés** (déjà en prod).
