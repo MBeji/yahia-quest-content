@@ -106,6 +106,70 @@ Centré sur la **dérivation (الاشتقاق)** des noms dérivés à partir d
 >   - **acquis du 7ème (NON repris ici comme objet neuf)** : l'entrée dans les **fonctions نحويّة** nommées (الفاعل، نائب الفاعل، المفعول به/المطلق/فيه/لأجله، الحال، التّمييز، الاستثناء والحصر) ; les **نواسخ** (كان وأخواتها، أفعال المقاربة والشّروع، إنّ وأخواتها) ; en صرف : الصّوت/المقطع، الجذر، تصريف المجرّد السّالم، اشتقاق المصدر/اسم الفاعل/اسم المفعول/الصّفة المشبّهة (introduction), المعتلّ (مثال/أجوف/ناقص/لفيف)، المضاعف، المهموز، رسم الهمزة، الرّباعيّ. (En 8ème ces مشتقّات **reviennent comme têtes de المركّب شبه الإسناديّ** côté إعراب, et la **dérivation est systématisée/élargie** côté صرف.)
 >   - **à venir (9ème+)** : البلاغة / النّقد الأدبيّ ; l'إعراب exhaustif de constructions plus complexes ; les chapitres de نحو non listés (p. ex. المنادى، التّعجّب… au-delà de ce sommaire). (À confirmer sur le sommaire 9ème.)
 
+## 2 bis. Le manuel élève RÉVISÉ `101808` — et la question de cette fiche, tranchée (2026-09-21)
+
+> ⚠️ **Le guide `501802` sur lequel tout ce qui précède est bâti est l'édition NON RÉVISÉE.**
+> Même chaîne de preuve que pour les deux autres niveaux du collège, vérifiée sur les pages de
+> titre : il porte « كتاب الأستاذ », **les mêmes auteurs** que le manuel élève, **le même
+> superviseur** (عبد القادر المهيري) et **AUCUNE équipe de تنقيح** — là où le manuel révisé en
+> porte une. La المقدّمة du manuel de 7ᵉ en donne la cause : la révision
+> **« اقتضاها تجديد برامج اللغة العربيّة بالمرحلة الإعداديّة … الصّادرة في سبتمبر سنة ستّ وألفين،
+> التي أعيد فيها توزيع المسائل اللغويّة على المستويات الثّلاثة »**. Les **36 دروس** du §2
+> décrivent donc le découpage **d'avant 2006** ; ils ne sont pas faux — c'est fidèlement ce que le
+> guide imprime — mais **ce n'est pas le programme que l'élève suit**. Chaîne complète et pages de
+> titre des trois niveaux : §2 bis de [`../7eme-base/arabe.md`](../7eme-base/arabe.md).
+
+### Le programme révisé de 8ᵉ — 24 leçons (`101808`, فهرس ص 3–4)
+
+**24 leçons : 13 en علم الإعراب + 11 en علم الصرف** — contre 36 (24 + 12) au guide.
+
+- **علم الإعراب (13)** — **entièrement consacré à la الجملة المركّبة** : « حدود الجملة المركّبة »,
+  « النواة الإسناديّة الأساسيّة والفرعيّة », « الوظائف الأساسيّة في الجملة … المركّبة » (×7),
+  « متمّمات مشتملة على مركّبات إسناديّة فرعيّة » (×4).
+- **علم الصرف (11)** — s'ouvre sur **« تصريف الفعل المزيد »** (×2) puis
+  « اشتقاق الأسماء من المزيد » (×2).
+
+### 🔴 Où vivent, dans le programme en vigueur, les 12 chapitres servis en 8ᵉ
+
+**La question que cette fiche posait est tranchée.** Le registre `suivi/8eme-base.json` portait, au
+2026-09-19, la mention « les التوابع pourraient relever de la 9ᵉ révisée, dont le فهرس (101908)
+N'A PAS ÉTÉ LU … c'est la prochaine lecture ». **Cette lecture a eu lieu le 2026-09-19/20** — le
+فهرس de `101908` (ص 175–176) est transcrit au §2 bis de
+[`../9eme-base/arabe.md`](../9eme-base/arabe.md), et il répond. Les 12 chapitres de
+`content/arabic-8eme/` se répartissent en **trois groupes, pas un** :
+
+| chapitre servi en 8ᵉ | notion | place au programme RÉVISÉ |
+| --- | --- | --- |
+| `08-jumla-murakkaba` | الجملة المركّبة | ✅ **8ᵉ** — les 13 leçons d'إعراب y sont entièrement consacrées |
+| `09-ism-tafdil` | اسم التفضيل | ✅ **8ᵉ** — اشتقاق الأسماء من المزيد |
+| `10-ism-zaman-makan-wa-ala` | اسما الزمان والمكان واسم الآلة | ✅ **8ᵉ** — idem |
+| `11-siyagh-mubalagha` | صيغ المبالغة | ✅ **8ᵉ** — idem |
+| `12-jam3-taksir-wa-masadir` | جمع التكسير والمصادر | ✅ **8ᵉ** — idem |
+| `05-munada` | المنادى | ⬆️ **9ᵉ** — leçon « النّداء » (ص 29) |
+| `06-3adad` | العدد | ⬆️ **9ᵉ** — « العدد والمعدود » (ص 116 · 122) |
+| `01-na3t` | النعت | ⛔ **aucun des trois niveaux** |
+| `02-tawkid` | التوكيد | ⛔ **aucun des trois niveaux** |
+| `03-badal` | البدل | ⛔ **aucun des trois niveaux** |
+| `04-3atf` | العطف | ⛔ **aucun des trois niveaux** |
+| `07-uslub-ta3ajjub` | أسلوب التعجّب | ⛔ **aucun des trois niveaux** |
+
+**CE QUI EST ÉTABLI** — les trois فهارس révisés (7ᵉ `101710` ص 4 · 8ᵉ `101808` ص 3–4 ·
+9ᵉ `101908` ص 175–176) ont été lus, et **aucun** ne porte les quatre التوابع ni le التعجّب. Ce sont
+très probablement les **« ما لم يعد مقرّرا »** que la المقدّمة de `101710` dit avoir supprimés.
+Deux autres notions (المنادى, العدد) sont servies **un an trop tôt** par rapport au découpage en
+vigueur — et la 9ᵉ est l'**année de concours**.
+
+**CE QUI NE L'EST PAS** — que ces cinq chapitres soient à retirer. Ce sont des notions classiques
+de l'إعراب, l'application est une **académie** et non un décalque du programme officiel, et un
+chapitre supprimé **orpheline les étoiles et les sceaux déjà acquis** (cf.
+`docs/etoiles-et-sceaux.md` du moteur — un slug ne se renomme jamais). **L'arbitrage appartient à
+Mohamed** ; cette fiche établit les faits, elle ne tranche pas.
+
+⚠️ **Méthode, et elle a déjà coûté** : avant de déclarer une notion absente d'un corpus arabe,
+essayer **avec shadda, sans shadda, avec et sans article, et un synonyme courant**. Un « zéro »
+obtenu d'une seule graphie n'est pas une mesure (trois faux trous fabriqués ainsi le 2026-09-19).
+Les cinq ⛔ ci-dessus sont relevés sur des **فهارس lus à l'image**, pas sur un `grep`.
+
 ## 3. Notes pédagogiques / méthode
 
 ### 3.1 Architecture du guide (التّمهيد + corps)
