@@ -1020,55 +1020,72 @@ python3 -c "import pymupdf,io;from PIL import Image; \
  Image.open(io.BytesIO(pm.tobytes('png'))).rotate(90,expand=True).save('ok.png')"
 ```
 
-### 7-5. 🔎 Piste ouverte pour les sessions sœurs — il existe d'autres مدوّنات
+### 7-5. 🔴 Ce n'est pas un cas isolé : **onze مدوّنات القسم, huit encore non déclarées**
 
 Le guide de la 3ᵉ prescrit, printed **p.140**, « النّصوص الواردة في **مدوّنة القسم الخاصّة بالسّنة
-الثانية** » : **il y a une مدوّنة par niveau**, et le schéma de codes est `5013**05**` = guide,
-`5013**06**` = مدوّنة. Sondage fait sur le CNP (HEAD, bundle CA du §2 bis) :
+الثانية** » : **il y a une مدوّنة par niveau**. J'ai d'abord sondé le CNP en supposant un schéma de
+codes régulier (`…05` = guide / `…06` = مدوّنة) — **et ce sondage était faux** : `501406P00` et
+`501606P00` répondent 404, ce qui laissait croire que la 4ᵉ et la 6ᵉ n'en avaient pas. Le schéma
+**n'est pas régulier** (la مدوّنة de la 4ᵉ est `501405`, celle de la 6ᵉ `501604`), et la réponse
+était **gratuite, dans le registre du dépôt** :
+[`../../suivi/corpus-cnp.json`](../../suivi/corpus-cnp.json) **catalogue onze مدوّنات القسم**, avec
+leurs titres et leurs tailles à l'octet, depuis l'origine.
 
-| code            | HTTP | taille | pages   | première page du PDF                                                       |
-| --------------- | ---- | ------- | ------- | -------------------------------------------------------------------------- |
-| **`501506P00`** | 200  | 5,3 Mo  | **707** | « **إنتاج كتابي — الوحدة التعليميّة الأولى — علاج ودعم** » (lue à l'image) |
-| `501106P00`     | 404  | —       | —       | —                                                                          |
-| `501206P00`     | 404  | —       | —       | —                                                                          |
-| `501406P00`     | 404  | —       | —       | —                                                                          |
-| `501606P00`     | 404  | —       | —       | —                                                                          |
+| code          | classe | matière  | catégorie dans `affectations.json` | déclarée en source ? |
+| ------------- | -----: | -------- | ---------------------------------- | -------------------- |
+| `501306P00`   | 3ᵉ     | arabe    | `enrichissement`                   | **OUI — ce lot**     |
+| `501405P00`   | 4ᵉ     | arabe    | `enrichissement`                   | OUI — 2026-09-22     |
+| `501506P00`   | 5ᵉ     | arabe    | `enrichissement`                   | OUI — 2026-09-22     |
+| **`501604P00`** | **6ᵉ** | **arabe**  | `enrichissement`                 | 🔴 **NON** — 12,8 Mo, la plus grosse des quatre, et la 6ᵉ est une **année de concours national** |
+| `502305P00`   | 3ᵉ     | maths    | `enrichissement`                   | 🔴 **NON**           |
+| `502504P00`   | 5ᵉ     | maths    | `enrichissement`                   | 🔴 **NON**           |
+| `502604P00`   | 6ᵉ     | maths    | `enrichissement`                   | 🔴 **NON**           |
+| `521322P00`   | 3ᵉ     | français | `enrichissement`                   | 🔴 **NON**           |
+| `521418P00`   | 4ᵉ     | français | `enrichissement`                   | 🔴 **NON** — 25,5 Mo, le plus gros document des onze |
+| `521516P00`   | 5ᵉ     | français | `enrichissement`                   | 🔴 **NON**           |
+| `521616P00`   | 6ᵉ     | français | `enrichissement`                   | 🔴 **NON**           |
 
-🔴 **`501506P00` — 707 pages, niveau 5ᵉ, non déclarée** dans
-[`../5eme-base/arabe.md`](../5eme-base/arabe.md). Et ce n'est pas une trouvaille : le registre
-[`../../suivi/corpus-cnp.json`](../../suivi/corpus-cnp.json) **la catalogue déjà**, sous le titre
-« **مدونة القسم في اللغة العربية** », classe 5, matière 01, **5 277 941 octets** — nombre qui
-correspond **à l'octet** au fichier téléchargé ici. Son PDF **n'a pas de page de garde** : il
-s'ouvre directement sur un intercalaire de section, d'où le libellé de la colonne ci-dessus.
-**Rien d'autre n'en est affirmé** : une seule page lue. C'est une piste pour la fiche de 5ᵉ, avec la
-recette du §7-2 (même éditeur, probablement famille A). La مدوّنة de la 2ᵉ que le guide prescrit
-**n'est pas sous `501206P00`** (404) : son code reste à trouver.
+**Les onze sont dans le même bloc `overrides`** de `affectations.json` — ils en constituent **11 des
+19 entrées** : cette catégorie a, de fait, été créée pour eux. **Trois seulement sont déclarées, et
+les trois l'ont été le même jour, le 2026-09-22, par trois sessions parallèles** qui ont chacune
+buté sur le même angle mort sans se concerter : la 4ᵉ pour `501405` (492 p.), la 5ᵉ pour `501506`
+(707 p.), celle-ci pour `501306` (426 p.). **Huit restent non réclamées**, dont la 6ᵉ d'arabe et les
+quatre de français.
 
-### 7-6. 🔎 Pourquoi la مدوّنة était invisible — la cause est dans le registre, pas dans le PDF
+> ✅ **Corroboration croisée, à signaler telle quelle.** La fiche de 4ᵉ cite, pour `501405P00`,
+> **exactement les deux mêmes phrases de مقدّمة** que celles relevées ici pour `501306P00`
+> (« وتتوافق كلّ واحدة منها مع **هدف أساسي مميّز** … **من أهداف البرنامج** » et « توجد بطالع كلّ
+> مذكّرة … **الكفاية الفرعيّة · الهدف المميّز · النّشاط** »), lues indépendamment, sur un autre
+> document, par une autre session. **Les مدوّنات sont une collection homogène** : même éditeur, même
+> مقدّمة, même structure de بطاقة, même fonction de référentiel d'objectifs. Ce qui est établi ici
+> pour la 3ᵉ vaut donc, comme hypothèse forte à vérifier, pour les huit autres.
+
+⚠️ **L'override n'est pas modifié ici, à dessein** : il gouverne 19 documents et **quatre matières**,
+et le requalifier changerait mécaniquement les pourcentages de couverture de plusieurs niveaux —
+c'est un arbitrage de campagne, pas une correction de transcription. Ce qui est fait, et qui suffit
+pour la 3ᵉ : `501306` est **déclarée en source** dans
+[`../../suivi/3eme-base.json`](../../suivi/3eme-base.json), avec sa couverture. La leçon de méthode
+est celle du CLAUDE.md, appliquée à un registre plutôt qu'à `STATUS.md` : **une ligne « ce document
+n'est pas du programme » se constate avant d'être crue** — et ici, elle a tenu quatre matières hors
+de portée sans que rien ne le signale, parce qu'un document non réclamé ne manque à aucun
+pourcentage.
+
+### 7-6. 🔎 Pourquoi la مدوّنة de la 3ᵉ était invisible — la cause est dans le registre, pas dans le PDF
 
 `501306P00` n'a **jamais été introuvable** : `corpus-cnp.json` la catalogue depuis l'origine, avec
-son titre exact (« **مدونة القسم في اللغة العربية** ») et sa taille à l'octet. Ce qui l'a rendue
-invisible, c'est [`../../suivi/affectations.json`](../../suivi/affectations.json), qui la range dans
-un bloc `overrides` de **18 documents** sous :
+son titre exact (« **مدونة القسم في اللغة العربية** ») et sa taille à l'octet — **5 965 185 o**,
+qui correspond **à l'octet** au fichier téléchargé ici. Ce qui l'a rendue invisible, c'est la seule
+ligne du §7-5 :
 
 ```json
 "501306": { "categorie": "enrichissement", "note": "مدونة القسم arabe 3ème" }
-"501506": { "categorie": "enrichissement", "note": "مدونة القسم arabe 5ème" }
 ```
 
 **« enrichissement » l'exemptait d'être comptée comme source de programme** — donc aucune fiche ne
-la réclamait, et aucun pourcentage de couverture ne la manquait. Le classement était plausible (un
-recueil d'exercices *ressemble* à du matériel d'appoint) et il est **démenti par le document
+la réclamait, et **aucun pourcentage de couverture ne la manquait**. Le classement était plausible
+(un recueil d'exercices *ressemble* à du matériel d'appoint) et il est **démenti par le document
 lui-même** : le guide s'appuie dessus nommément quatre fois, lui emprunte une مذكّرة علاجيّة, et
 c'est elle qui porte le référentiel d'objectifs le plus fin du niveau (§2 ter).
-
-⚠️ **L'override n'est pas modifié ici, à dessein.** Il gouverne **18 documents** et **deux niveaux**
-(dont la 5ᵉ, sur laquelle une session sœur travaille en parallèle) ; le requalifier est un
-arbitrage qui dépasse ce couple. Ce qui est fait, et qui suffit à lever l'invisibilité pour la 3ᵉ :
-`501306` est désormais **déclarée en source** dans
-[`../../suivi/3eme-base.json`](../../suivi/3eme-base.json), avec sa couverture. La leçon de méthode
-est celle du CLAUDE.md, appliquée à un registre plutôt qu'à `STATUS.md` : **une ligne « ce document
-n'est pas du programme » se constate avant d'être crue.**
 
 ## Ancres d'audit (faits + page — pour revérification)
 
@@ -1121,6 +1138,13 @@ n'est pas du programme » se constate avant d'être crue.**
 18. **Les tableaux paysage se redressent à +90°, et ce n'est pas un miroir** : printed **p.45**
     (شبكة توزيع, unité 3) lue intégralement après `rotate(90, expand=True)`. Une rotation ne peut
     pas produire un miroir.
-19. **`501506P00` (5ᵉ) existe et n'est déclarée nulle part** : HTTP 200, 5,3 Mo, **707 pages** ;
-    première page « **إنتاج كتابي — الوحدة التعليميّة الأولى — علاج ودعم** ». Les codes
-    `501106P00`, `501206P00`, `501406P00`, `501606P00` répondent **404**. Sondage du 2026-09-22.
+19. **Onze `مدونة القسم` sont cataloguées dans `corpus-cnp.json`, les onze sont classées
+    `enrichissement` dans `affectations.json`, et huit ne sont réclamées par aucune fiche** —
+    relevé du 2026-09-22 sur le registre : arabe `501306` (3ᵉ) · `501405` (4ᵉ) · `501506` (5ᵉ) ·
+    **`501604` (6ᵉ, 12,8 Mo, non déclarée)** ; maths `502305` · `502504` · `502604` ; français
+    `521322` · **`521418` (25,5 Mo)** · `521516` · `521616`. Les trois déclarées l'ont été **le
+    même jour**, par trois sessions parallèles. Les onze forment **11 des 19 entrées** de l'override.
+20. **Le schéma de codes des مدوّنات n'est PAS régulier, et un sondage HTTP le fait croire à tort** :
+    `501406P00` et `501606P00` répondent **404**, alors que la مدوّنة de la 4ᵉ est **`501405`** et
+    celle de la 6ᵉ **`501604`**. Le registre du dépôt donnait la réponse sans une requête réseau —
+    **il faut l'interroger avant de sonder le CNP.** _(Erreur commise puis corrigée dans ce lot.)_
