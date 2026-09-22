@@ -7,36 +7,6 @@
       "profondeur": "generation",
       "sources": [
         {
-          "code": "501404",
-          "tomes": [
-            "P00"
-          ],
-          "role": "enseignant",
-          "pagesTotal": 269,
-          "pagesLues": [
-            [
-              1,
-              1
-            ],
-            [
-              3,
-              3
-            ],
-            [
-              5,
-              14
-            ],
-            [
-              17,
-              17
-            ],
-            [
-              19,
-              44
-            ]
-          ]
-        },
-        {
           "code": "101410",
           "tomes": [
             "P00"
@@ -83,6 +53,150 @@
               144
             ]
           ]
+        },
+        {
+          "code": "501404",
+          "tomes": [
+            "P00"
+          ],
+          "role": "enseignant",
+          "pagesTotal": 269,
+          "pagesLues": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              5,
+              14
+            ],
+            [
+              17,
+              17
+            ],
+            [
+              19,
+              269
+            ]
+          ]
+        },
+        {
+          "code": "501405",
+          "tomes": [
+            "P00"
+          ],
+          "role": "enseignant",
+          "pagesTotal": 492,
+          "pagesLues": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              6,
+              6
+            ],
+            [
+              30,
+              30
+            ],
+            [
+              55,
+              55
+            ],
+            [
+              79,
+              79
+            ],
+            [
+              105,
+              106
+            ],
+            [
+              124,
+              124
+            ],
+            [
+              148,
+              148
+            ],
+            [
+              171,
+              172
+            ],
+            [
+              184,
+              185
+            ],
+            [
+              198,
+              198
+            ],
+            [
+              211,
+              211
+            ],
+            [
+              224,
+              224
+            ],
+            [
+              237,
+              237
+            ],
+            [
+              247,
+              247
+            ],
+            [
+              261,
+              261
+            ],
+            [
+              272,
+              272
+            ],
+            [
+              285,
+              286
+            ],
+            [
+              361,
+              361
+            ],
+            [
+              392,
+              392
+            ],
+            [
+              412,
+              412
+            ],
+            [
+              438,
+              438
+            ],
+            [
+              458,
+              458
+            ],
+            [
+              482,
+              482
+            ],
+            [
+              492,
+              492
+            ]
+          ]
         }
       ],
       "sujets": [
@@ -90,9 +204,9 @@
       ],
       "sourcesLibres": [],
       "r7": null,
-      "maj": "2026-09-21",
-      "par": "claude/arabe-4eme-base-fahras-bis",
-      "notes": "Seed depuis _INDEX ([x] historique). ⚠️ CORRIGÉ le 2026-09-19 — le seed du 2026-07-17 déclarait `statut: complete`, `profondeur: generation` et `pagesLues: \"integral\"` : les trois étaient FAUX sur la couverture. L'en-tête « Pages lues » de la fiche elle-même énumère une liste PARTIELLE de pages (~14 % du guide, 269 p. au total — nombre mesuré ce jour sur le PDF du CNP), et plusieurs de ces en-têtes disent explicitement « hors-scope » pour ce qui suit. Vérifié au source sur trois fiches (4ème éveil, 1ère éveil, 5ème maths) avant d'être généralisé. `statut` passe donc à `partielle` (R-5 : génération interdite) et `pagesLues` à `inconnu` : les plages réelles se transcrivent depuis l'en-tête à la prochaine touche de la fiche — un parseur automatique les a produites fausses (deux en-têtes « Pages lues » dans la même fiche, plages fusionnées à tort), et publier une plage fausse serait exactement l'erreur qu'on corrige ici. `profondeur` est LAISSÉE telle que déclarée : elle n'a pas été mesurée, le prochain audit la jugera. ▸ 2026-09-19 — COUVERTURE MESURÉE, l'« inconnu » levé. La ligne « Pages lues » de l'en-tête de la fiche a été DÉPOUILLÉE À LA MAIN (règle du registre : un parseur automatique s'est déjà trompé sur ces plages, c'est pourquoi les 6 fiches du seed étaient restées 'inconnu'), puis reportée en plages, avec garde-fou : aucune plage hors bornes, aucun chevauchement. ⚠️ L'« inconnu » n'était donc PAS une absence d'information — la liste était là depuis le 2026-06-28, elle n'avait jamais été transcrite. ▸ Le chiffre n'est répété nulle part à la main : `_INDEX.md` le recalcule depuis ces plages, et c'est la seule vue humaine — dupliquer un pourcentage dans l'en-tête de la fiche rouvrirait précisément le genre de dérive que ce registre existe pour fermer. ▸ 2026-09-21 — LOT « manuel élève / programme en vigueur » : OUVERT, pas clos. Le manuel élève n'a PAS pu être ouvert (corpus cnp-officiel/ hors git, absent du conteneur ; téléchargement CNP impossible — l'origine www.cnp.com.tn ne sert pas son certificat intermédiaire 'Sectigo Public Server Authentication CA DV R36' et l'URL AIA crt.sectigo.com est refusée par la politique de sortie, 403 ; pas de repli HTTP, le 302 du CNP pointe vers une URL malformée). `sources` est donc INCHANGÉ : aucun manuel n'y est ajouté, aucune plage `pagesLues` n'est inventée. ▸ DEUX faits ÉTABLIS malgré tout, sur le snapshot corpus-cnp.json committé, et écrits au §2 bis de la fiche : (1) sur les six codes annoncés pour « la 4ème », QUATRE (201403, 201421, 201422, 201481) sont la 4ème année SECONDAIRE (bac) et non le primaire — seuls 101410 « دروب الحوار » et 101411 « أدوات التواصل » sont des manuels élève de 4ème de base ; (2) il n'existe AUCUN manuel « نحو عربي » au cycle primaire — il n'apparaît qu'en 7ème/8ème/9ème. Or c'est son فهرس (24 à 27 leçons numérotées) qui porte toute la chaîne de preuve du collège : le geste « transcrire le فهرس, dresser l'écart » n'a pas d'équivalent direct en 4ème, et il ne faut pas attendre de 101411 une liste de leçons de نحو comparable. ▸ La nuance de la consigne (la refonte de septembre 2006 vise « المرحلة الإعداديّة ») reste NON TRANCHÉE pour le primaire : la مقدّمة de 101710 nomme le collège et les trois niveaux 7/8/9, et le test des pages de titre ne peut pas être rejoué ici — le guide de 4ème porte « دليل المعلّم » et non « كتاب الأستاذ », et les deux autres pattes du test exigent la page de titre du manuel. « Même schéma » comme « pas de refonte ici » restent deux hypothèses ouvertes. ▸ La confrontation des 8 chapitres servis au GUIDE seul ne donne aucun écart (8 ✅) — mais c'est la validité du guide lui-même que le lot devait éprouver, et cela ne s'éprouve que contre le manuel : l'absence de tableau d'écart ici est une MESURE NON FAITE, pas un « rien à signaler ». ▸ Remède harnais, une seule ligne : autoriser crt.sectigo.com sur la politique de sortie débloque tout le corpus CNP pour toute session distante (ajouté à FableEtudes/POSTE-DE-TRAVAIL.md) ; à défaut, fournir 101410P00.pdf et 101411P00.pdf par FICHIERS. Aucun fichier de content/arabic-4eme/ n'a été touché. ▸ 2026-09-21 (seconde passe, branche `claude/arabe-4eme-base-fahras-bis`) — LOT CLOS. Les DEUX manuels élèves sont OUVERTS et leurs deux فهارس transcrits au §2 bis de la fiche : `101410P00` « دروب الحوار — كتاب القراءة » (168 p., 62 textes en 8 unités, فهرس ص 167–168) et `101411P00` « أدوات التواصل — كتاب التمارين في قواعد اللغة و الإنتاج الكتابي » (144 p., 48 leçons de langue + 24 de production, فهرس ص 143–144). Ils entrent ici dans `sources` avec leurs plages RÉELLES. ⚠️ LA PASSE PRÉCÉDENTE S'ÉTAIT TROMPÉE DE CAUSE : elle a conclu « autoriser crt.sectigo.com sur la politique de sortie » alors que l'intermédiaire manquant (Sectigo Public Server Authentication CA DV R36) est DANS LE DÉPÔT MOTEUR depuis l'étude 32 (`scripts/cloud/ca-chain/`). Il n'a pas à être téléchargé, seulement concaténé au magasin de la session — mesuré ici : sans, HTTP 000 ; avec, HTTP 302 puis 5,4 Mo en 1,7 s. Le hook SessionStart du moteur pose ces variables mais NE TOURNE PAS dans une session ouverte sur CE dépôt : la recette est à rejouer dans la commande elle-même. Jamais `-k`, jamais NODE_TLS_REJECT_UNAUTHORIZED=0. ▸ REFONTE 2006 : TRANCHÉE PAR CONSTAT. Les trois documents (guide 501404 + les deux manuels) portent LES MÊMES TROIS AUTEURS (عزّ الدّين الرزقي · حمّادي الحبيبي · محمود بن السّويسي) et AUCUNE équipe de تنقيح — une seule campagne, comme en 1ère et 2ème de base, à l'inverse du collège. Le guide n'est donc PAS un document périmé ici. ⚠️ La patte « مقدّمة » du test N'A PAS PU être jouée : aucun des deux manuels n'a de مقدّمة (page de titre, copyright, puis directement la leçon 1) — fait sur le document, pas lecture manquée. ▸ TABLEAU D'ÉCART FAIT : 6 des 8 chapitres servis sont ✅ 4ème sans réserve, AUCUN ⬆️, et 2 sont ⛔ (`07-imla-hamza-tanwin`, `08-imla-ta-marbuta-maftuha`) — l'إملاء n'a AUCUNE entrée dans l'un ni l'autre فهرس, qui couvrent pourtant les deux ouvrages page à page. Ce n'est pas une conclusion de suppression : la مدوّنة القسم `501405` (jamais ouverte) et une répartition sur d'autres années restent ouvertes. ▸ SENS INVERSE : 24 des 48 leçons de قواعد اللغة du manuel portent sur des notions absentes du servi (المبتدأ/الخبر au grain du manuel, النواسخ, المجرّد والمزيد, المضارع المنصوب/المجزوم, المتمّمات), et les 24 leçons d'الإنتاج الكتابي n'ont aucun équivalent. Arbitrage humain — aucun fichier de `content/arabic-4eme/` n'a été touché. ▸ PIÈGE DU SECOND CANAL, ÉVITÉ : `201403P00.pdf` (signalé sur Google Drive comme « le manuel d'arabe de 4ème ») est `cycle: secondaire, classe: 4` — la 4ème année SECONDAIRE (bac), sections scientifiques. Il fait 5,6 Mo comme `101410P00`, ce qui rend la confusion crédible. Non utilisé. ▸ PIÈGE DES GRAPHIES, ÉVITÉ DEUX FOIS : `الإضافة` rend 8 occurrences dont 7 parlent de la تاء, et `المنصوب` 10 qui parlent toutes du مفعول به, aucune du مضارع. Et `النعت` n'est le titre d'aucune leçon du manuel : il y est quatre fois comme PLACE (« منعوت + نعت » en position de فاعل, مفعول به, مبتدأ, خبر). ▸ Coquille du manuel relevée, non propagée : le فهرس de `101410` imprime « 65 » pour le texte 32, qui est ص 85 (vérifié à l'image)."
+      "maj": "2026-09-22",
+      "par": "claude/fiche-arabe-4eme-r5",
+      "notes": "Seed depuis _INDEX ([x] historique). ⚠️ CORRIGÉ le 2026-09-19 — le seed du 2026-07-17 déclarait `statut: complete`, `profondeur: generation` et `pagesLues: \"integral\"` : les trois étaient FAUX sur la couverture. L'en-tête « Pages lues » de la fiche elle-même énumère une liste PARTIELLE de pages (~14 % du guide, 269 p. au total — nombre mesuré ce jour sur le PDF du CNP), et plusieurs de ces en-têtes disent explicitement « hors-scope » pour ce qui suit. Vérifié au source sur trois fiches (4ème éveil, 1ère éveil, 5ème maths) avant d'être généralisé. `statut` passe donc à `partielle` (R-5 : génération interdite) et `pagesLues` à `inconnu` : les plages réelles se transcrivent depuis l'en-tête à la prochaine touche de la fiche — un parseur automatique les a produites fausses (deux en-têtes « Pages lues » dans la même fiche, plages fusionnées à tort), et publier une plage fausse serait exactement l'erreur qu'on corrige ici. `profondeur` est LAISSÉE telle que déclarée : elle n'a pas été mesurée, le prochain audit la jugera. ▸ 2026-09-19 — COUVERTURE MESURÉE, l'« inconnu » levé. La ligne « Pages lues » de l'en-tête de la fiche a été DÉPOUILLÉE À LA MAIN (règle du registre : un parseur automatique s'est déjà trompé sur ces plages, c'est pourquoi les 6 fiches du seed étaient restées 'inconnu'), puis reportée en plages, avec garde-fou : aucune plage hors bornes, aucun chevauchement. ⚠️ L'« inconnu » n'était donc PAS une absence d'information — la liste était là depuis le 2026-06-28, elle n'avait jamais été transcrite. ▸ Le chiffre n'est répété nulle part à la main : `_INDEX.md` le recalcule depuis ces plages, et c'est la seule vue humaine — dupliquer un pourcentage dans l'en-tête de la fiche rouvrirait précisément le genre de dérive que ce registre existe pour fermer. ▸ 2026-09-21 — LOT « manuel élève / programme en vigueur » : OUVERT, pas clos. Le manuel élève n'a PAS pu être ouvert (corpus cnp-officiel/ hors git, absent du conteneur ; téléchargement CNP impossible — l'origine www.cnp.com.tn ne sert pas son certificat intermédiaire 'Sectigo Public Server Authentication CA DV R36' et l'URL AIA crt.sectigo.com est refusée par la politique de sortie, 403 ; pas de repli HTTP, le 302 du CNP pointe vers une URL malformée). `sources` est donc INCHANGÉ : aucun manuel n'y est ajouté, aucune plage `pagesLues` n'est inventée. ▸ DEUX faits ÉTABLIS malgré tout, sur le snapshot corpus-cnp.json committé, et écrits au §2 bis de la fiche : (1) sur les six codes annoncés pour « la 4ème », QUATRE (201403, 201421, 201422, 201481) sont la 4ème année SECONDAIRE (bac) et non le primaire — seuls 101410 « دروب الحوار » et 101411 « أدوات التواصل » sont des manuels élève de 4ème de base ; (2) il n'existe AUCUN manuel « نحو عربي » au cycle primaire — il n'apparaît qu'en 7ème/8ème/9ème. Or c'est son فهرس (24 à 27 leçons numérotées) qui porte toute la chaîne de preuve du collège : le geste « transcrire le فهرس, dresser l'écart » n'a pas d'équivalent direct en 4ème, et il ne faut pas attendre de 101411 une liste de leçons de نحو comparable. ▸ La nuance de la consigne (la refonte de septembre 2006 vise « المرحلة الإعداديّة ») reste NON TRANCHÉE pour le primaire : la مقدّمة de 101710 nomme le collège et les trois niveaux 7/8/9, et le test des pages de titre ne peut pas être rejoué ici — le guide de 4ème porte « دليل المعلّم » et non « كتاب الأستاذ », et les deux autres pattes du test exigent la page de titre du manuel. « Même schéma » comme « pas de refonte ici » restent deux hypothèses ouvertes. ▸ La confrontation des 8 chapitres servis au GUIDE seul ne donne aucun écart (8 ✅) — mais c'est la validité du guide lui-même que le lot devait éprouver, et cela ne s'éprouve que contre le manuel : l'absence de tableau d'écart ici est une MESURE NON FAITE, pas un « rien à signaler ». ▸ Remède harnais, une seule ligne : autoriser crt.sectigo.com sur la politique de sortie débloque tout le corpus CNP pour toute session distante (ajouté à FableEtudes/POSTE-DE-TRAVAIL.md) ; à défaut, fournir 101410P00.pdf et 101411P00.pdf par FICHIERS. Aucun fichier de content/arabic-4eme/ n'a été touché. ▸ 2026-09-21 (seconde passe, branche `claude/arabe-4eme-base-fahras-bis`) — LOT CLOS. Les DEUX manuels élèves sont OUVERTS et leurs deux فهارس transcrits au §2 bis de la fiche : `101410P00` « دروب الحوار — كتاب القراءة » (168 p., 62 textes en 8 unités, فهرس ص 167–168) et `101411P00` « أدوات التواصل — كتاب التمارين في قواعد اللغة و الإنتاج الكتابي » (144 p., 48 leçons de langue + 24 de production, فهرس ص 143–144). Ils entrent ici dans `sources` avec leurs plages RÉELLES. ⚠️ LA PASSE PRÉCÉDENTE S'ÉTAIT TROMPÉE DE CAUSE : elle a conclu « autoriser crt.sectigo.com sur la politique de sortie » alors que l'intermédiaire manquant (Sectigo Public Server Authentication CA DV R36) est DANS LE DÉPÔT MOTEUR depuis l'étude 32 (`scripts/cloud/ca-chain/`). Il n'a pas à être téléchargé, seulement concaténé au magasin de la session — mesuré ici : sans, HTTP 000 ; avec, HTTP 302 puis 5,4 Mo en 1,7 s. Le hook SessionStart du moteur pose ces variables mais NE TOURNE PAS dans une session ouverte sur CE dépôt : la recette est à rejouer dans la commande elle-même. Jamais `-k`, jamais NODE_TLS_REJECT_UNAUTHORIZED=0. ▸ REFONTE 2006 : TRANCHÉE PAR CONSTAT. Les trois documents (guide 501404 + les deux manuels) portent LES MÊMES TROIS AUTEURS (عزّ الدّين الرزقي · حمّادي الحبيبي · محمود بن السّويسي) et AUCUNE équipe de تنقيح — une seule campagne, comme en 1ère et 2ème de base, à l'inverse du collège. Le guide n'est donc PAS un document périmé ici. ⚠️ La patte « مقدّمة » du test N'A PAS PU être jouée : aucun des deux manuels n'a de مقدّمة (page de titre, copyright, puis directement la leçon 1) — fait sur le document, pas lecture manquée. ▸ TABLEAU D'ÉCART FAIT : 6 des 8 chapitres servis sont ✅ 4ème sans réserve, AUCUN ⬆️, et 2 sont ⛔ (`07-imla-hamza-tanwin`, `08-imla-ta-marbuta-maftuha`) — l'إملاء n'a AUCUNE entrée dans l'un ni l'autre فهرس, qui couvrent pourtant les deux ouvrages page à page. Ce n'est pas une conclusion de suppression : la مدوّنة القسم `501405` (jamais ouverte) et une répartition sur d'autres années restent ouvertes. ▸ SENS INVERSE : 24 des 48 leçons de قواعد اللغة du manuel portent sur des notions absentes du servi (المبتدأ/الخبر au grain du manuel, النواسخ, المجرّد والمزيد, المضارع المنصوب/المجزوم, المتمّمات), et les 24 leçons d'الإنتاج الكتابي n'ont aucun équivalent. Arbitrage humain — aucun fichier de `content/arabic-4eme/` n'a été touché. ▸ PIÈGE DU SECOND CANAL, ÉVITÉ : `201403P00.pdf` (signalé sur Google Drive comme « le manuel d'arabe de 4ème ») est `cycle: secondaire, classe: 4` — la 4ème année SECONDAIRE (bac), sections scientifiques. Il fait 5,6 Mo comme `101410P00`, ce qui rend la confusion crédible. Non utilisé. ▸ PIÈGE DES GRAPHIES, ÉVITÉ DEUX FOIS : `الإضافة` rend 8 occurrences dont 7 parlent de la تاء, et `المنصوب` 10 qui parlent toutes du مفعول به, aucune du مضارع. Et `النعت` n'est le titre d'aucune leçon du manuel : il y est quatre fois comme PLACE (« منعوت + نعت » en position de فاعل, مفعول به, مبتدأ, خبر). ▸ Coquille du manuel relevée, non propagée : le فهرس de `101410` imprime « 65 » pour le texte 32, qui est ص 85 (vérifié à l'image). ▸ 2026-09-22 (branche `claude/fiche-arabe-4eme-r5`) — LOT R-5. **SOURCE NON DÉCLARÉE OUVERTE** : `501405P00` n'est pas un document annexe, c'est « المقاربة بالكفايات · مدوّنة القسم في اللّغة العربيّة · السّنة الرّابعة » (492 p.), et elle ÉNUMÈRE LE PROGRAMME OFFICIEL objectif par objectif — quatre أنشطة (قراءة · إنتاج كتابي · **رسم** · قواعد لغة), leurs كفايات نهائيّة/فرعيّة et leurs أهداف مميّزة, portés par le bandeau de CHACUNE des 492 pages (مقدّمة ص 4 : « توجد بطالع كلّ مذكّرة … الكفاية الفرعيّة · الهدف المميّز · النّشاط »). Elle entre dans `sources` avec ses plages RÉELLES : les pages lues À L'IMAGE. Le bandeau des 492 pages a été lu via le décodage validé de la couche texte (§7-2 de la fiche) ; les EXERCICES ne sont pas transcrits, d'où des plages et non `integral`. ▸ **LE 🔴 إملاء EST CLOS, ET LA PASSE PRÉCÉDENTE AVAIT TORT SUR SA PORTÉE** : elle concluait « 07-imla-hamza-tanwin et 08-imla-ta-marbuta-maftuha — au programme d'aucun des deux manuels ». Exact des manuels, et sans portée : l'إملاء s'enseigne sous le nom **الرّسم**, نشاط à part entière du programme, NEUF أهداف مميّزة sur 113 pages (ص 172–284), dont « رسم التّاء مفتوحة في الفعل الماضي », « … في آخر الاسم » et « رَسم همزة الوصل » — exactement ce que servent les deux chapitres. Le tableau صعوبات الرسم du guide (p.46) le confirme : رمز الهمزة coché niveaux 4-5-6. ▸ **`501404P00` p.45–269 LU** : la fiche s'arrêtait à p.44 en déclarant le reste « hors scope de cette passe ». Le report a coûté trois mois : la **خارطة الوحدات** — LE PLAN ANNUEL OFFICIEL, 8 unités × 5 activités avec leur colonne **المدار** — est p.63–79, soit 19 pages après le dernier folio lu, et la fiche affirmait depuis 2026-06-28 que « le guide n'a pas de مخطّط سنوي » et « ne fournit pas un tableau مجال → محور ». LES DEUX AFFIRMATIONS ÉTAIENT FAUSSES, corrigées au §2 quater. S'y ajoutent les معايير p.45–51, le السلم الوصفي p.50 (عتبة نجاح 60 %) et le فهرست p.268–269, jamais lus. ▸ **BORNE DE SCOPE OPPOSABLE, p.47** : « لا تؤخذ علامات الإعراب بعين الاعتبار في مستوى الدرجتين الأولى والثانية » — la 4ème est la الدرجة الثانية, et le tableau ne coche علامات الإعراب qu'aux niveaux 5 et 6. `03-maf3ul-bihi` exige pourtant la marque casuelle (المنصوب بالفتحة) : notion juste, BARRE TROP HAUTE. Signalé, non corrigé. ▸ **§5 ÉCARTS, LES DEUX SENS, contre le PROGRAMME et plus seulement contre le manuel** : programme → contenu, DIX familles (E1 النواسخ · E2 الفعل المزيد · E3 المضارع المجزوم/المنصوب · E4 المفعول فيه et الحال · E5 المبتدأ/الخبر au grain · E6 البدل/الإضافة/العطف comme fonctions · E7 المتعدّي إلى مفعولين · E8 six des neuf أهداف du الرّسم · E9 l'الإنتاج الكتابي entier · E10 la composante التواصل الشفوي entière) ; les unités 3, 4, 5, 7 et 8 du plan annuel n'ont AUCUN chapitre servi. Contenu → programme, UN SEUL écart : E11 **التنوين** (69 occurrences servies) est absent des QUATRE documents officiels du niveau — 0 dans les 492 p. de `501405`, 0 dans `501404` p.45–269, absent des neuf أهداف du الرّسم et du tableau صعوبات الرسم — et appartient au programme de la **3ème** (« رسم علامات التنوين ») et de la **2ème**. Ce n'est PAS le motif de la 7ème (emprunt à l'année supérieure) : testé sur اسم الفاعل, اسم المفعول, المفعول المطلق, جمع المذكّر السالم, الأسماء الخمسة → 0 partout, AUCUN emprunt vers le haut. ▸ **PIÈGE DES GRAPHIES, ÉVITÉ QUATRE FOIS** : `ليس` rend 9 occurrences, toutes de négation ordinaire, zéro comme ناسخ ; `ما زال` 1, prose ; `لن` rend 149 sans frontières de mot et 0 avec ; `المنصوب` 10, toutes sur le مفعول به. Et le piège symétrique : `التاء المربوطة` est servie et n'est le titre d'AUCUN objectif — mais le programme la travaille par son complémentaire (« رسم التّاء مفتوحة »), donc le chapitre 08 est bien au programme. ▸ **MUR D'OUTILLAGE LEVÉ, recette au §7-2** : le §2 bis déclarait la couche texte de ces PDF « illisible ». Elle ne l'est pas — fontes PH* Type 1C à encodage propriétaire, noms de glyphes latins ; une table de 123 codes → 38 lettres plus l'inversion de l'ordre visuel rend **99,8 %** des caractères de `501404` p.45–269, validé à l'image sur 12 pages des deux documents. C'est ce qui a rendu les 492 bandeaux et les 225 pages de guide atteignables en une passe. LIMITE DURE : les harakat ne sont pas restituables, toute vocalisation citée vient d'une lecture à l'image. ▸ **DEUX DÉFAUTS DU DOCUMENT, relevés non propagés** : l'intercalaire ص 285 de `501405` liste un 6ᵉ objectif (التّصرّف في الجملة الاسميّة بتصريف النّاسخ) qu'AUCUNE de ses 492 مذكّرات ne porte ; et l'intercalaire الرّسم ص 184 n'en liste que six quand les bandeaux en portent neuf — la liste de référence est celle des BANDEAUX, pas des pages de garde de section. ▸ Six titres de textes divergent entre la خارطة du guide (2012) et le فهرس du manuel (2010) ; le scope de LANGUE concorde intégralement, donc non bloquant. ▸ `statut` reste `partielle` : les exercices des 492 pages et les corps des deux manuels gardent des trous. AUCUN fichier de `content/arabic-4eme/` n'a été touché."
     },
     {
       "matiere": "eveil",
