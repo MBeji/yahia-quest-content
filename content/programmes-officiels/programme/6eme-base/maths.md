@@ -1808,6 +1808,1129 @@ La fiche dit pour `15` : « معدّل السرعة = المسافة ÷ الزم
 8. **Coquille de l'ancien cours** (pas du manuel) : « 4/28 = 1/7 وهو أكبرُ من السُّبع بقليل » —
    contradictoire (4/28 est exactement 1/7). Retirée.
 
+## 2 septies. Tranche « géométrie & mesure » — lue au manuel élève (102609), 2026-09-23
+
+> Lecture à l'image par les rédacteurs de la tranche 4 de la campagne patron (`16` → `21`, `23`) ;
+> chaque nombre re-calculé, chaque figure re-dérivée de ses coordonnées. Toujours **aucun encadré
+> de cours** : des constructions et des situations. Notes de lecture telles quelles ci-dessous.
+>
+> **Ce que la lecture change aux bornes** (arbitré le 2026-09-23 ; complète le §2) :
+> - ✅ **médiatrice** (`16`) et **bissectrice** (`17`, construction à la règle et au compas ;
+>   `16` n'en garde que le lien avec ⊥) — le titre de la leçon 4 cite « منصّف الزاوية », les
+>   leçons 4 et 7 les pratiquent ; la fiche les omettait.
+> - ✅ **construire un angle à la règle et au compas** (60°, moitiés, sommes), **somme de deux
+>   angles adjacents**, **le grade** (90° = 100 غراد, leçon 7 ex. 6 et 11).
+> - ✅ **construire un triangle par un côté et ses deux angles adjacents** ; **périmètre** du
+>   triangle et des quadrilatères, dans les deux sens ; **condition d'existence** d'un triangle
+>   CONSTATÉE au compas (sans « inégalité triangulaire »).
+> - ✅ **diagonales** des quadrilatères, **hauteur** (y c. pied hors de la figure), trapèze
+>   rectangle/isocèle, construction d'un parallélogramme aux instruments (leçons 9, 15, 17).
+> - ✅ **aire du losange** (D × d ÷ 2 et côté × hauteur), **retrouver une dimension à partir de
+>   l'aire**, **soustraction d'aires** (leçons 33, 38, 41, 50).
+> - ✅ **demi-cercle, quart, trois quarts** comme fraction du périmètre ou de l'aire du tout, et le
+>   contour du demi-disque (+ diamètre) ; **rayon retrouvé** depuis le périmètre ou l'aire. ⛔
+>   inchangé : angle au centre, secteurs quelconques, couronne.
+> - ✅ reconnaître pavé/cube par la forme des faces, patron (6 carrés ne suffisent pas), faces
+>   opposées, boîte ouverte, solides accolés. ⛔ inchangé : **volume** — les empilements de la
+>   leçon 54 (ex. 10, 12) ne sont pas enseignés.
+> - ⛔ inchangé : **somme des angles d'un triangle** (le manuel s'y appuie implicitement, leçons 7
+>   et 8 ; le cours ne l'énonce pas), Pythagore.
+> - ⚠️ Vocabulaire : le manuel dit البركار، شعاع، متقايس ; le corpus garde الفرجار، نصف القطر،
+>   متساوي (le terme du manuel cité une fois). Unités écrites en arabe (سم، م²) comme les items.
+> - ⚠️ Coquille du manuel : leçon 20 ex. 2 imprime 92,4 pour un diamètre de 30 (94,2).
+
+### `16-perpendicularite-parallelisme` — Leçon 4 (ص 14–15)
+
+## Leçon 4 — « أوظّف التّعامد والتّوازي ومنصّف الزّاوية في البناءات الهندسيّة » (102609, ص 14–15) → chapitre `16-perpendicularite-parallelisme`
+
+> **Lu à l'image** (`/root/.cache/yqa-manuels/r/m-014.png`, `m-015.png`), page par page, 2026-09-23.
+> Chaque nombre re-calculé (python, `fractions.Fraction`). Leçon **étoilée** de la الفترة 1
+> (« وضعيات إدماجية متّصلة بمكتسبات السّنة الخامسة ») : **aucun encadré de cours**, aucune
+> définition imprimée — deux pages de **constructions** qui réinvestissent les acquis de 5ème.
+> Rubriques : **أتعهّد مكتسباتي** (1) → **أوظّف** (2–5). Pas de أستكشف, pas de أقيّم.
+> Vocabulaire imprimé : **المستقيم الموسّط العمودي** (médiatrice), **منصّف الزاوية / منصّفات
+> الزوايا القائمة / الحادّة** (bissectrice), **متعامدين في النقطة أ**, **محور التناظر**,
+> **البركار** (le corpus dit **الفرجار**), **المسطرة**, **شعاع** la dite (rayon ; le corpus dit
+> **نصف القطر**), **قطر**, **متقايسة الأضلاع** (équilatéral), unité **صم** (le corpus écrit `cm`).
+> Les droites sont nommées par une lettre (**المستقيم س**, **س و ص**), pas « (د1) » comme les items.
+> Le mot **الكوس** (équerre) n'apparaît **nulle part** : ex. 2 et 3 imposent « **المسطرة والبركار فقط** ».
+
+#### أتعهّد مكتسباتي
+
+- **1 — la médiatrice et le point ن.** Recopier un segment [أب] (oblique, sans longueur imprimée) ;
+  construire **س, le موسّط عمودي de [أب]** ; placer un point ن sur س. « ما نوع المثلّث أ ن ب ؟
+  أعلّل إجابتي » → **متقايس الضلعين** (isocèle en ن) : tout point de la médiatrice est à égale
+  distance de أ et ب, donc نأ = نب. Cas limite non dit par le manuel : si ن est le milieu de
+  [أب], il n'y a pas de triangle (أ، ن، ب alignés).
+
+#### أوظّف
+
+- **2 — la salle des thermes.** Salle rectangulaire 20 m × 12 m, bassin circulaire au centre de
+  diamètre 8 m. Plan « 1 cm pour 2 m », **à la règle et au compas seulement** → rectangle
+  **10 cm × 6 cm** (20 : 2 = 10 ; 12 : 2 = 6), cercle de diamètre **4 cm** (8 : 2), donc rayon
+  **2 cm**, centré au point de rencontre des diagonales (ou des médiatrices des côtés). Les angles
+  droits du rectangle doivent être construits **sans équerre** → perpendiculaire par la médiatrice
+  (compas). Mobilise une **échelle** (leçon 14, plus tard dans l'année).
+- **3 — la figure d'عائشة.** Carré أبجد de centre م, **diagonale 8 cm** ; ses **deux axes de
+  symétrie qui coupent les côtés** [أب], [بج], [جد], [دأ] en س، ع، ن، ط ; cercle de centre م et
+  de rayon 4 cm. أ) reproduire **à la règle et au compas seulement** : le cercle de rayon 4 =
+  demi-diagonale, donc les sommets du carré sont **sur le cercle** ; deux diamètres
+  perpendiculaires (médiatrice d'un diamètre) donnent les quatre sommets. Côté du carré =
+  √32 ≈ 5,66 cm (non mesurable à la règle : c'est pourquoi on construit par les diagonales).
+  ب) « ما نوع الرّباعي س ع ن ط ؟ » → les axes qui coupent les côtés sont les **médiatrices des
+  côtés** ; س، ع، ن، ط sont les **milieux** → **سعنط est un carré** (ses diagonales [سن] et [عط]
+  sont portées par les deux axes : perpendiculaires, de même longueur = côté de أبجد ≈ 5,66 cm,
+  même milieu م) ; son côté vaut **4 cm** (= √32 / √2). ج) colorier avec 4 couleurs sans que
+  deux zones voisines aient la même (activité ludique, hors notion).
+- **4 — la girouette d'أحمد.** Deux droites س et ص **perpendiculaires en أ** ; cercle de centre
+  أ, rayon 5 cm ; **4 triangles équilatéraux** ayant أ pour seul sommet commun, les autres
+  sommets sur le cercle, et **chaque demi-droite d'origine أ porte un côté d'un triangle**.
+  أ) dessiner ; ب) périmètre de chaque triangle = 3 × 5 = **15 cm** (côté = rayon) ; ج) angle
+  en أ entre deux triangles consécutifs, « à justifier par le calcul » : chaque angle droit
+  contient un triangle (60°) → **90° − 60° = 30°** (ou (360° − 4 × 60°) : 4 = 30°). Mobilise
+  l'angle de 60° du triangle équilatéral (chapitres `17`/`18`).
+- **5 — la rose des vents de ملاك** (port de حلق الوادي). Deux droites س et ص perpendiculaires
+  en أ ; deux cercles de centre أ, rayons **3 cm et 8 cm** ; segments portés par les **bissectrices
+  des angles droits** (du centre au grand cercle, 8 cm) ; segments portés par les **bissectrices
+  des angles aigus** ainsi formés (du centre au petit cercle, 3 cm) ; puis chaque point marqué du
+  grand cercle relié aux deux points voisins du petit cercle. « أعيّن عليها جميع الاتّجاهات ».
+  Mesures en jeu (non demandées, re-calculées) : bissectrice d'un angle droit → **45°** (90 : 2) ;
+  bissectrice d'un angle de 45° → **22,5°** (45 : 2).
+
+### Écarts avec la fiche (`programme/6eme-base/maths.md`, thème « التعامد والتوازي »)
+
+1. 🔧 **منصّف الزاوية (bissectrice)** : dans le **titre même** de la leçon (« … **ومنصّف
+   الزّاوية** … ») et pratiqué par l'ex. 5 (bissectrices des angles droits puis des angles
+   aigus). La fiche l'**omet** (ni concept ni borne ; le thème `17-angles` ne le porte pas non
+   plus), et le chapitre ne l'enseignait pas. Rien ne l'exclut. **Enseigné** (section 8) :
+   construction au compas, bissectrice de l'angle droit = 45°, cas limite l'angle plat
+   (bissectrice ⊥). Le quiz ne le teste pas : à signaler (items à ajouter ?).
+2. 🔧 **الموسّط العمودي (médiatrice)** : ex. 1, 2, 3. Omis par la fiche, non enseigné par le
+   chapitre (le cours de 5ème `math-5eme/11-geometrie` le porte : acquis réinvesti). **Enseigné**
+   (section 7) : définition (milieu + perpendiculaire), construction au compas, propriété
+   d'équidistance → triangle isocèle (ex. 1). Non testé par les items.
+3. 🔧 **Tracer au compas (البركار), « règle et compas seulement »** : l'indicateur de la fiche
+   (« رسم المستقيمات بالمسطرة والكوس **والبركار** ») le nomme, mais ses concepts et ses bornes ne
+   parlent que de l'équerre et de la règle. Le manuel ne parle **que** du compas. **Enseigné**
+   comme généralisation de la section 7 (la médiatrice donne une perpendiculaire sans équerre).
+   ⚠️ Deux items (`05-entrainement` q4, `quiz` q4) donnent « الفرجار » comme **distracteur** de
+   « l'outil pour tracer/vérifier l'angle droit » : la clé (الكوس) reste juste — le compas seul ne
+   trace pas de droite — mais le cours précise « الفرجار **مع المسطرة** ».
+4. 🟡 **Échelle** (ex. 2, « 1 cm pour 2 m ») : relève de la leçon 14 (`14-proportionnalite-…`).
+   Utilisée ici comme simple division dans l'ancrage de la section 4, pas enseignée.
+5. 🟡 **Axes de symétrie du carré, milieux des côtés, carré des milieux** (ex. 3) : relèvent de
+   `19-quadrilateres` / symétrie (5ème). Non enseignés ici ; la section 3 lit seulement le codage
+   ⊥/∥ sur un carré (ce que testent `04-defi` q2–q3).
+6. 🟡 **Triangle équilatéral et angle de 60°, différence d'angles** (ex. 4) : `17`/`18`. Non
+   enseignés ici. **Borne ⛔ respectée** : l'ex. 4 se résout par 90° − 60°, sans la somme des
+   angles d'un triangle ; aucune situation n'invoque 180° pour un triangle.
+7. ↔️ **Sens inverse — la fiche et les items portent ce que la leçon n'imprime pas** : les
+   **symboles ⊥ et ∥**, le **codage** (petit carré, flèches), l'**équerre**, les **trois
+   propriétés** (⊥ à une même droite ⇒ ∥ ; ∥ et ⊥ ⇒ ⊥ ; ∥ à une même droite ⇒ ∥) : aucune
+   n'est écrite dans ص 14–15 (seules les constructions les supposent). Gardés (sections 1–6) :
+   ils sont dans la fiche et testés par tous les exercices.
+8. ↔️ **Termes** : manuel **البركار / شعاع / صم / المستقيم س** ; corpus **الفرجار / نصف القطر / cm /
+   (د1)**. Le cours garde ceux du corpus (les items les emploient) et cite البركار une fois.
+
+### `17-angles` — Leçon 7 (ص 21–23)
+
+## Leçon 7 — « أبني زوايا أقيستها بالدّرجة : 120 - 90 - 60 - 30 - 15 » (102609, ص 21–23) → chapitre `17-angles`
+
+> **Lu à l'image** (`/root/.cache/yqa-manuels/r/m-021…023.png`), page par page, 2026-09-23.
+> Chaque mesure ci-dessous a été **re-calculée** (python, `fractions.Fraction`). Comme les leçons
+> 1, 3 et 13 : **aucun encadré de cours**. Rubriques : **أستحضر** (1) → **أستكشف** (2) →
+> **أتدرّب** (3–8) → **أوظّف** (9–10) → **أقيّم مكتسباتي** (11). Le titre est un **verbe de
+> construction** (« أبني »), pas de mesure : la leçon est une leçon de **construction d'angles**,
+> au rapporteur **et** à la règle et au compas. Le bandeau imprime **120 - 90 - 60 - 30 - 15** —
+> **sans 45** (la fiche écrit « 15 · 30 · 45 · 60 · 90 · 120 ») ; 45 est pourtant pratiqué (ex. 3).
+> Notation imprimée : **الزاوية [أب، أج]** (deux demi-droites de même origine) et, à l'ex. 11,
+> l'angle **أ ق ن** coiffé d'un arc. Vocabulaire imprimé : زاوية، منصّف، قيس فتحتها، بالدرجة،
+> **بالغراد**، المسطرة والبركار، المستقيم العمودي، الموسّط (lu « المستقيم (أهـ) بالنسبة إلى القطعة »).
+
+### أستحضر
+
+- **1 — la figure de la زاوية [أب، أد].** Trois demi-droites d'origine أ : [أج) horizontale,
+  [أد) avec **جأد = 50°**, [أب) avec **دأب = 80°**. Consignes : construire [أس) **منصّف** de
+  [أب، أد], puis « ما نوع الزاوية [أس، أج] ؟ أعلّل ». Re-calcul : 80 : 2 = **40°** ; جأس =
+  50 + 40 = **90°** → **قائمة**. (Renvoi au كرّاس ص 5 تمرين 1.) → mobilise **l'addition de deux
+  angles adjacents** et **le bissecteur**, deux notions que le cours publié n'enseigne pas (le
+  premier seulement dans un exercice : 35° + 55° = 90°).
+
+### أستكشف
+
+- **2 — la palette du peintre صلاح الدين.** Il vendait 8 couleurs (disque imprimé en **8 secteurs
+  égaux** : 360 : 8 = **45°** chacun) ; il en vend désormais **12** → nouvelle palette en **12
+  secteurs égaux**, **à la règle et au compas seulement** (« مستعملا المسطرة والبركار فقط »).
+  Re-calcul : 360 : 12 = **30°** par secteur. Voie attendue : reporter le rayon six fois sur le
+  cercle (6 secteurs de **60°**), puis couper chaque secteur par son bissecteur (**30°**). « أعرض
+  الطريقة » : la méthode est l'objet, pas le résultat. → **construction de 60° au compas** et
+  **30° = moitié de 60°** ; le **tour complet 360°** est implicite (jamais écrit).
+
+### أتدرّب
+
+- **3 — 45° « بأكثر من طريقة »** : rapporteur ; ou angle droit (équerre / compas) puis son
+  bissecteur (90 : 2 = **45**). Présenter au groupe, puis à la classe.
+- **4 — 120° par au moins deux méthodes** : rapporteur ; 60 + 60 = **120** (deux reports du
+  rayon) ; ou 180 − 60 = **120** (l'angle adjacent à un 60° sur une droite).
+- **5 — l'angle droit, « plus de deux manières »** : أمل dit deux, ضياء dit plus — « أثبت أنّ
+  ضياء محقّ ». Voies : équerre (كوس), rapporteur (90), compas (perpendiculaire), bissecteur d'un
+  angle plat (180 : 2 = **90**), 60 + 30 = **90**. → ضياء a raison.
+- **6 — 150 غراد, plusieurs méthodes** — rappel imprimé : **« 90 درجة = 100 غراد »**. Re-calcul :
+  150 × 90/100 = **135°** (= 90 + 45, ou 180 − 45). → **unité grade** : absente de la fiche et du
+  cours publié.
+- **7 — 150° : « أحدّد مراحل التمشّي »** (écrire les étapes avant de construire) : 90 + 60 =
+  **150** ; ou 120 + 30 ; ou 180 − 30. → **la construction décrite en étapes ordonnées.**
+- **8 — 75°** (encart « défi », pictogramme) : 60 + 15 = **75** (15 = moitié de 30, moitié de
+  60) ; ou 90 − 15 = **75**.
+
+### أوظّف
+
+- **9 — le pendentif « خلال »** d'un artisan : triangle أبج (sommet أ en bas), une droite passant
+  par أ et par هـ (point de [بج]) qui ressort en haut dans l'anneau. Consignes : (a) « أتعرّف
+  أقيسة فتحات زوايا المثلّث » — **mesurer** ; mesure sur l'image : ≈ **60° / 58° / 61°**, donc un
+  triangle **équilatéral** dessiné (hypothèse : 60° chacun) ; (b) ce que représente (أهـ) pour
+  [بج] → **le موسّط العمودي** (médiatrice) ; (c) ce que représente [أهـ) pour [أب، أج] → **son
+  منصّف** (30° + 30°) ; (d) sur papier blanc, tracer [سص) puis construire [سك، سع] de **60°** dont
+  [سص) est le **bissecteur** → 30° de chaque côté. → mobilise la **médiatrice** (leçon 4, acquis
+  5ème, chapitre `16`) et le **bissecteur**.
+- **10 — l'ombre du mât** (demi-cercle « trajectoire apparente du soleil », mât vertical au sol,
+  codé angle droit, rayon solaire en pointillés vers l'extrémité de l'ombre). (a) Position du
+  soleil quand l'angle au pied de l'ombre أ vaut **30°** (كرّاس ص 5 تمرين 10) ; (b) même travail à
+  un second moment avec **45°**. Construction pure : tracer 30° puis 45° depuis le point أ. L'angle
+  ب en haut du mât est codé mais **non demandé** (il vaudrait 60° puis 45° — somme des angles).
+
+### أقيّم مكتسباتي
+
+- **11 — 100 غراد, bissecteur, perpendiculaire.** Construire [أب، أج] de **100 غراد** (= **90°**),
+  son منصّف [أد) (**45°**), un point ن sur [أج), la perpendiculaire à [أج) en ن qui coupe [أد) en
+  ق. « أحسب أقن بالدرجة ؟ أعلّل » → **45°**. Re-calcul : dans le triangle أنق, أ = 45°, ن = 90°,
+  donc ق = 180 − 90 − 45 = **45°** — ⚠️ la justification attendue passe par **la somme des angles
+  du triangle = 180°**, que la fiche **exclut** en 6ème (⛔ §Thème الزوايا et §6). (Sans elle, on
+  ne peut que **mesurer** : ≈ 45°.)
+
+### Écarts avec la fiche (`programme/6eme-base/maths.md`, thème « الزوايا »)
+
+1. 🔧 **Construction à la règle et au compas** (ex. 2, 3, 4, 5, 7, 8, 9) — la fiche borne la
+   construction à « المنقلة ». Le manuel en fait le cœur de la leçon (« مستعملا المسطرة والبركار
+   فقط »). **Au programme** (outil البركار listé §3) → le cours au patron l'enseigne (60° par
+   report du rayon, puis moitiés et sommes).
+2. 🔧 **Bissecteur (منصّف الزاوية)** — ex. 1, 9, 11 ; titre de la leçon 4. Absent de la fiche
+   (thème الزوايا) et du cours publié → **enseigné** (définition, calcul de la moitié, construction
+   au compas).
+3. 🔧 **Somme de deux angles adjacents / différence** (ex. 1 : 50 + 40 = 90 ; ex. 4, 7, 8 : 60 + 60,
+   90 + 60, 60 + 15, 180 − 60) — non nommée dans la fiche, pratiquée partout → **enseignée** (elle
+   portait déjà un exercice : 35° + 55°).
+4. 🔧 **Le grade (غراد) : 90° = 100 غراد** (ex. 6 et 11) — la fiche ne parle que de degrés (« en
+   degrés ») sans l'exclure → **enseigné** en une section courte (conversion des valeurs simples :
+   50 → 45°, 100 → 90°, 150 → 135°, 200 → 180°). À trancher si l'on préfère le retirer.
+5. 🔧 **Mesures construites hors du bandeau** : **45** (ex. 3), **75** (ex. 8), **135** (ex. 6),
+   **150** (ex. 7) ; la fiche liste 15 · 30 · 45 · 60 · 90 · 120 et le bandeau 120 · 90 · 60 · 30 ·
+   15. Toutes s'obtiennent par sommes/moitiés à partir de 60 et 90 → enseigné comme méthode.
+6. ⛔ **Somme des angles d'un triangle = 180°** — requise pour **justifier** أقن = 45° (ex. 11) et
+   implicite dans l'angle ب de l'ex. 10. **Exclue par la fiche : non enseignée, signalée.**
+7. ⚠️ **Médiatrice (الموسّط العمودي)** — ex. 9 ; leçon 4, chapitre `16` (qui ne l'enseigne pas non
+   plus). Hors du thème « الزوايا » → **non enseignée ici, signalée** pour `16`.
+8. ⚠️ **Tour complet 360°** — implicite à l'ex. 2 (8 et 12 secteurs égaux). Ni dans la fiche ni
+   exclu ; le cours n'en a pas besoin (report du rayon six fois) → **non enseigné, signalé**.
+9. **Notation** : le manuel écrit **[أب، أج]** (les deux côtés), la fiche et le cours publié
+   « أ‌ب‌ج » (sommet au milieu). Le cours au patron donne les deux, celle du manuel d'abord.
+10. **Supplémentaires / complémentaires (متكاملتان / متتامّتان)** : enseignées par le cours publié et
+    testées (04-défi, 03-révision), absentes de la fiche comme du manuel (ces trois pages) →
+    **gardées** (testées), rattachées aux angles adjacents.
+
+### `18-triangles` — Leçon 8 (ص 24–26)
+
+## Leçon 8 — « أبني مثلّثا استنادا إلى أقيسة الأضلاع والزّوايا » (102609, ص 24–26) → chapitre `18-triangles`
+
+> **Lu à l'image** (`/root/.cache/yqa-manuels/r/m-024…026.png`), page par page, 2026-09-23.
+> Chaque longueur ci-dessous a été **re-calculée** (python, `fractions.Fraction` ; `math` seulement
+> pour situer un point de figure). Comme les leçons 1, 3, 7 et 13 : **aucun encadré de cours**.
+> Rubriques : **أستحضر** (1) → **أستكشف** (2) → **أتدرّب** (3–9) → **أوظّف** (10) → **أقيّم
+> مكتسباتي** (11). Le titre est un **verbe de construction** (« أبني ») : la leçon construit des
+> triangles à partir de **mesures de côtés ET d'angles** ; le classement (côtés / angles) y est
+> supposé connu (acquis de 5ème) et réinvesti dans les questions « ما نوع المثلّث ؟ ».
+> Notation imprimée : sommets en lettres arabes (أ ب ج, س ص ن, ك ن د, ق ع ن), segment **[أ ب]**,
+> angle **ك د ن** coiffé d'un chapeau. Unité imprimée **صم** (le corpus écrit سم). Vocabulaire
+> imprimé : قطعة مستقيم، بعدها عن، متقايس الأضلاع، **متقايس الضّلعين**، **قمّته الرّئيسيّة**،
+> قيس محيطه، قائم الزّاوية، **الوتر**، منصّف الزّاوية، **الموسّط العموديّ**، المسطرة والبركار،
+> ورقة غير مسطّرة / بيضاء، كرّاس المحاولات.
+
+### أستحضر
+
+- **1 — les points ج à distance donnée de أ et de ب.** [أ ب] = **6 سم** ; placer « chaque fois que
+  c'est possible » le point demandé et noter ses observations. Table imprimée (بعدها عن أ / عن ب) :
+  ج **5 / 4** ; ج1 **4 / 4** ; ج2 **4 / 2** ; ج3 **2 / 2**. Re-calcul (deux cercles de centres أ, ب) :
+  - ج : 5 + 4 = 9 > 6 et 5 − 4 = 1 < 6 → **deux points** (un de chaque côté de (أ ب)) ;
+  - ج1 : 4 + 4 = 8 > 6 → **deux points**, tous deux sur le موسّط de [أ ب] (triangle **isocèle**) ;
+  - ج2 : 4 + 2 = **6 = أ ب** → **un seul point, SUR le segment** : les trois points sont alignés,
+    **pas de triangle** ;
+  - ج3 : 2 + 2 = **4 < 6** → **aucun point** : les arcs ne se rencontrent pas.
+  → L'observation attendue est la **condition d'existence** d'un triangle (chaque côté plus petit
+  que la somme des deux autres), vécue au compas, jamais énoncée par le manuel.
+
+### أستكشف
+
+- **2 — la voile du bateau de سامي.** Une voile triangulaire (dessin imprimé : un triangle
+  **rectangle**, angle droit en bas à droite) est déchirée ; la refaire aux mêmes mesures
+  « بأكثر من طريقة ». Consignes : noter les étapes, présenter sa méthode, observer celles des
+  camarades, **conclure en groupe les manières de construire un triangle**. → les trois voies
+  (trois côtés ; deux côtés et l'angle compris ; un côté et les deux angles adjacents) naissent de
+  la comparaison des méthodes.
+
+### أتدرّب
+
+- **3 — أ ب ج sur papier non réglé** : أ ب = **6**, أ ج = **4**, ب ج = **3 سم**. Re-calcul :
+  4 + 3 = 7 > 6 → constructible ; **مختلف الأضلاع** ; (périmètre 13 سم, non demandé).
+  → **trois côtés, règle + compas**.
+- **4 — triangle équilatéral de périmètre 18 سم** : côté = 18 : 3 = **6 سم**. → **du périmètre
+  au côté**.
+- **5 — س ص ن isocèle de sommet principal س**, ص ن = **5 سم** (la base), périmètre **17 سم** :
+  deux côtés égaux = (17 − 5) : 2 = **6 سم** (س ص = س ن = 6). Contrôle : 6 + 6 + 5 = 17 ✓ ;
+  6 + 5 > 6 ✓. → **périmètre inverse d'un isocèle** + vocabulaire **القمّة الرئيسيّة** / base.
+- **6 — ك ن د** : **ك ن د = 45°**, **ك د ن = 60°**, **ن د = 8 سم**. → **un côté et les deux
+  angles qui lui sont adjacents**, règle + rapporteur. (Le troisième angle mesure 75°, non
+  demandé — et le trouver par calcul exigerait la somme 180° ⛔.)
+- **7 — ق ع ن sur papier blanc** : ع ق = **5 سم**, ع ن = **4 سم**, **ق ع ن = 75°**. L'angle est
+  au sommet commun ع des deux côtés donnés → **deux côtés et l'angle compris**.
+- **8 — د ق ن rectangle ET isocèle sur papier non réglé** : **« قيس الوتر [ق ن] = 6 سم »**,
+  د ق = د ن ; « exposer la méthode en justifiant son choix ». L'angle droit est en د (opposé au
+  وتر). Voies possibles : le موسّط de [ق ن] porte د (car د ق = د ن), puis l'angle droit en د
+  (équerre glissée le long du موسّط) ; ou deux angles de 45° en ق et ن — mais **savoir** que ces
+  angles valent 45° demande la somme 180° ⛔ ou la mesure sur un dessin. Re-calcul : د ق = د ن =
+  6/√2 ≈ 4,24 سم (irrationnel : **ne se construit pas à la règle graduée** ; le manuel ne le
+  demande pas).
+- **9 — le gâteau carré de السيدة نور** (dessin : une dame coupant un gâteau). Couper le dessus
+  carré en **2** triangles superposables par un trait (une **diagonale**), puis en **4** par un
+  second (l'autre diagonale), puis en **8** par deux traits de plus (les deux droites passant par le
+  centre parallèlement aux côtés). « ما نوع كلّ مثلّث من المثلّثات الثّمانية المتقايسة ؟ » → chaque
+  triangle est **قائم الزاوية ومتساوي الساقين** (vrai aux trois étapes : demi-carré par la
+  diagonale ; quart par les deux diagonales, angle droit au centre ; huitième, angle droit au
+  milieu d'un côté). Puis reproduire à la règle et au compas le dessus découpé et numéroter les
+  morceaux. → **les deux classements portés ensemble par un même triangle**.
+
+### أوظّف
+
+- **10 — س ص ك équilatéral.** Construire le منصّف de l'angle [ص س، ص ك] (sommet ص), qui coupe
+  [س ك] en ع ; le منصّف de [ك س، ك ص] (sommet ك), qui coupe [س ص] en ن ; م = intersection des
+  deux. Questions : type de **م ص ك** ? (isocèle de sommet م : deux angles de 60 : 2 = **30°**) ;
+  type de **ن ص ك** et **س ص ع** ? (**rectangles**, en ن et en ع : dans l'équilatéral la
+  bissectrice est perpendiculaire au côté opposé) ; placer ل et ل1 sur [ع ص] tels que **س ل ك
+  isocèle** (tout point de [ع ص] autre que ع, car (ص ع) est le موسّط de [س ك]) et **س ل1 ك
+  rectangle et isocèle** (ع ل1 = ع س = moitié du côté ; ل1 est bien sur [ع ص] car la hauteur vaut
+  ≈ 0,87 côté > 0,5 côté). → mobilise **angles de l'équilatéral = 60°**, **deux angles égaux ⇒
+  isocèle**, **bissectrice = hauteur = médiatrice dans l'équilatéral**, **point du موسّط
+  équidistant des extrémités** : aucune de ces propriétés n'est dans la fiche.
+
+### أقيّم مكتسباتي
+
+- **11 — أ ب ج rectangle en أ**, أ ب = **6 سم**, أ ج = **4 سم** (deux côtés + angle compris de
+  90°, à l'équerre). Construire [أ ع] tel que la droite (ب ج) soit son **موسّط عموديّ** (ع =
+  symétrique de أ par rapport à (ب ج)). « ما نوع المثلّث ع أ ب ؟ أعلّل » → **isocèle** de sommet
+  ب (ب sur le موسّط de [أ ع] ⇒ ب أ = ب ع = 6 سم). Re-calcul de contrôle : angle أ ب ج ≈ 33,69°,
+  donc أ ب ع ≈ 67,38° ≠ 60° → isocèle **non** équilatéral.
+- Page 26 : illustration de quatre triangles entrelacés (orange, bleu, vert, rouge), sans consigne.
+
+## Écarts avec la fiche (`programme/6eme-base/maths.md`, thème « المثلّثات »)
+
+1. 🔧 **Construction par un côté et les deux angles adjacents** (ex. 6 ; ex. 2 « بأكثر من
+   طريقة »). La fiche écrit « قياس زاوية + ضلعان… » avec des points de suspension, l'indicateur
+   dit « أقيسة الأضلاع والزّوايا » (pluriel), et le cours publié ne connaissait que deux voies
+   (trois côtés ; deux côtés et l'angle compris). **Au programme, omis — enseigné** (section 8).
+2. 🔧 **Condition d'existence d'un triangle** (ex. 1 : ج2 aligné, ج3 impossible). Vécue au
+   compas par le manuel, **testée** par le chapitre (défi : 2, 3, 10 → impossible), absente de la
+   fiche. ⚠️ **À trancher** : la fiche exclut les « propriétés métriques (Pythagore, etc.) » ; je
+   l'ai lue comme visant les relations chiffrées du collège, pas l'observation au compas. Enseignée
+   **comme cas limite de la construction à trois côtés** (section 6), sans le nom « inégalité
+   triangulaire », formulée par ce que l'on voit : « le plus grand côté doit être plus petit que la
+   somme des deux autres ». Si l'arbitrage l'exclut, il faut aussi retirer la question du défi.
+3. 🔧 **Périmètre du triangle, direct et inverse** (ex. 4 : 18 → 6 ; ex. 5 : (17 − 5) : 2 = 6).
+   Absent du thème « المثلّثات » de la fiche, **testé** par le chapitre (défi, entraînement), et le
+   cours publié ne le mentionnait que dans le résumé. **Enseigné** (section 5), avec le sens
+   inverse (du périmètre au côté) que le manuel pratique.
+4. 🔧 **Un triangle porte les deux classements à la fois** (ex. 8, 9, 10, 11 : « قائم الزّاوية
+   ومتقايس الضّلعين »). La fiche liste les deux classements séparément. **Enseigné** (section 4),
+   c'est aussi l'erreur `classements-triangle-melanges` des distracteurs.
+5. 🔧 **Vocabulaire** absent de la fiche : **القمّة الرئيسيّة** et la **base** de l'isocèle
+   (ex. 5), **الوتر** (ex. 8). Enseignés (sections 2 et 3). ↔️ Le manuel dit **متقايس الأضلاع /
+   متقايس الضّلعين** ; la fiche et le corpus disent **متساوي الأضلاع / متساوي الساقين** : le cours
+   garde les termes du corpus (les items les emploient) et cite une fois ceux du manuel.
+   ↔️ **البركار** (manuel, indicateur p.58 de la fiche) vs **الفرجار** (ancien cours, quiz) : le
+   cours dit البركار et signale une fois l'autre nom, pour que le quiz reste lisible.
+6. ⛔ **Propriétés des angles d'un triangle** (ex. 10, et la voie « 45° » de l'ex. 8) : angles de
+   l'équilatéral = 60°, « deux angles égaux ⇒ isocèle », bissectrice = hauteur dans l'équilatéral.
+   Leur justification passe par la somme 180° (⛔ fiche) ou par la mesure. **Non enseignées**,
+   signalées.
+7. ⛔/🟡 **Propriété du موسّط** (point équidistant des extrémités — ex. 10, ex. 11) : pratiquée,
+   absente de la fiche du thème (elle relève de `16` / des constructions du الدرس 4). **Non
+   enseignée ici**, signalée.
+8. ↔️ **Sens inverse — le chapitre teste ce que ces pages n'impriment pas** : « au plus un angle
+   droit / un angle obtus dans un triangle » (boss, défi). Ni la fiche ni la leçon 8 ne le disent.
+   Enseigné (section 3, cas limite) **sans la somme 180°** : deux perpendiculaires à [أ ب] sont
+   parallèles (propriété du chapitre `16`) et ne se rencontrent jamais.
+9. ↔️ La fiche cite la مذكرة p.160 (« tracé/classement sur الشّبكة ») : **aucune situation sur
+   quadrillage** dans ص 24–26 ; le manuel impose au contraire le **papier non réglé / blanc**
+   (ex. 3, 7, 8) — la construction se fait aux instruments, pas en comptant des carreaux.
+
+### `19-quadrilateres` — Leçons 9, 15, 17 (ص 27–30, 42–45, 47–49)
+
+## Leçons 9, 15 et 17 — lues au manuel élève (102609, ص 27–30, 42–45, 47–49), 2026-09-23 → chapitre `19-quadrilateres`
+
+> **Lu à l'image** (`/root/.cache/yqa-manuels/r/m-027…030, 042…045, 047…049.png`, et recadrages
+> à 220 dpi pour les passages douteux : ص 42 ex. 1, ص 48 ex. 5, ص 49 ex. 9 et 11), page par page.
+> Chaque nombre ci-dessous a été **re-calculé** (python, `fractions.Fraction` ; `math` seulement
+> pour les longueurs irrationnelles signalées comme telles). Même constat que les tranches 1 et 2 :
+> **aucun encadré de cours**. Rubriques : **أستحضر → أستكشف → أتدرّب → أوظّف → أقيّم مكتسباتي**.
+> Les points sont nommés en **lettres arabes** (أ ب ج د، س ص ق ع، ك ل م ن…), les longueurs en
+> « صم » / « دسم » / « م ». Beaucoup d'exercices renvoient au **كرّاس الرياضيات** (102610, non
+> ouvert) pour la figure : l'énoncé seul est lu ici.
+
+### Leçon 9 — « أتعرّف شبه المنحرف وأرسمه » (ص 27–30)
+
+#### أستحضر
+
+- **1 — le cercle et les deux droites** (كرّاس ص 6 تمرين 1). Deux droites س et ص sécantes en م (non
+  perpendiculaires sur la figure) ; cercle de centre م et de rayon **3 cm** ; il coupe س en أ et ج,
+  ص en ب et د. Nature de أبجد ? → les quatre points sont sur le cercle, [أج] et [بد] sont deux
+  **diamètres** : même milieu م et même longueur **6 cm** (2 × 3) → **مستطيل** (carré seulement si
+  س ⊥ ص). Mobilise implicitement **les diagonales du rectangle**.
+
+#### أستكشف
+
+- **2 — les pièces de أمل** (garde du petit frère). Cinq pièces أ، ب، ج، د، هـ : أ et هـ des
+  rectangles inclinés (أ plus proche d'un parallélogramme), ج et د des carrés, **ب un trapèze**.
+  Classer selon les propriétés, faire un tableau à quatre colonnes imprimées : « أضلاعه متوازية
+  مثنى مثنى » · « أضلاعه متعامدة مثنى مثنى » · « **له ضلعان فقط متوازيان** » · « زواياه قائمة ».
+  → le « nouveau » quadrilatère est **شبه المنحرف** ; choisir sa définition et la justifier.
+
+#### أتدرّب
+
+- **3 — compléter un trapèze** أبجد (كرّاس ص 6 تمرين 3) : [دج] **القاعدة الكبرى**, أب = **3 cm**
+  (petite base). Tracer une droite ص **perpendiculaire aux deux bases** en ق et ن : que représente
+  [قن] ? → **الارتفاع** (la hauteur).
+- **4 — couper un rectangle** (كرّاس ص 6 تمرين 4) par une droite qui coupe deux côtés pour obtenir
+  **deux quadrilatères superposables en forme de trapèze** → toute droite passant par le **centre**
+  et coupant les deux longueurs donne deux trapèzes rectangles superposables ; plusieurs solutions.
+- **5 — le triangle isocèle coupé** (كرّاس ص 6 تمرين 5) : triangle أبج isocèle de sommet أ ; ك sur
+  [أب], ن sur [أج], **أك = أن**. Nature de جبكن ? → [كن] ∥ [بج] : **شبه منحرف متقايس الضلعين**
+  (بك = جن). Chercher son **axe de symétrie** → la médiatrice de [بج] (qui passe par أ).
+- **6 — un segment, trois trapèzes** : [أب] base d'un trapèze أبجد de hauteur **3,5 cm** ; tracer
+  أ) un trapèze quelconque, ب) un **trapèze rectangle** (شبه منحرف قائم الزاوية), ج) un **trapèze
+  isocèle** (متقايس الضلعين) ; exposer la méthode.
+- **7 — deux cordes parallèles** : cercle de rayon **4 cm** ; deux cordes [أب] et [جد] parallèles
+  **et non égales**. Nature ? → **trapèze isocèle** (symétrique par rapport au diamètre
+  perpendiculaire aux cordes).
+- **8 (défi 🔑) — trapèze rectangle** : hauteur **5 cm**, somme des bases **12 cm**, différence
+  **3 cm** → grande base (12 + 3) : 2 = **7,5 cm**, petite base (12 − 3) : 2 = **4,5 cm**.
+
+#### أوظّف
+
+- **9 — la plaque de صلاح الدين** : rectangle أبجد de périmètre **48 dm**, longueur = 2 × largeur →
+  6 × largeur = 48 → largeur **8 dm**, longueur **16 dm**. م et ل sur [أب] avec أم = بل = **2 dm** ;
+  on découpe les triangles أمد et بجل. Nature de مدجل (restant) → [مل] ∥ [دج], مد = لج →
+  **trapèze isocèle** de bases **12 dm** (16 − 2 − 2) et **16 dm**, hauteur **8 dm**. Plan à
+  l'échelle « 1 cm pour 2 dm » → bases **6 cm** et **8 cm**, hauteur **4 cm**, retraits de 1 cm.
+- **10 — le drapeau d'عائشة** : deux pièces de tissu en **trapèze rectangle** ; grande base
+  **0,80 m** chacune, hauteur **20 cm**, angle aigu **30°**. Cousues de sorte que la droite de la
+  **petite base** devienne **axe de symétrie** du drapeau. Plan « 1 cm pour 10 cm » → grande base
+  **8 cm**, hauteur **2 cm**, angle 30° au rapporteur. (La petite base vaut 80 − 20/tan 30° ≈ 45,36 cm :
+  **non calculable en 6ème**, elle se **construit**, elle ne se calcule pas.)
+
+#### أقيّم مكتسباتي
+
+- **11 — le rectangle d'أمل** (كرّاس ص 7 تمرين 11) découpé en **trapèze isocèle** : petite base =
+  longueur du rectangle ; grande base = **2 × petite base** ; hauteur = **2 × largeur**. Dessiner la
+  feuille (données littérales, figure au كرّاس).
+
+### Leçon 15 — « أتعرّف متوازيات الأضلاع وخاصّياتها (المستطيل، المربّع، متوازي الأضلاع، المعيّن) » (ص 42–45)
+
+#### أستحضر
+
+- **1 — le rectangle à partir d'une diagonale** : recopier [دب], compléter le rectangle أبجد dont
+  les diagonales se coupent en و, avec l'angle [وأ ، ود] de mesure « **بالغراد 50** » (lu à 220 dpi :
+  c'est bien **غراد**, le grade). 50 gr = **45°**. → construction par les **diagonales** (même
+  milieu, même longueur).
+
+#### أستكشف
+
+- **2 — la devinette** : « رباعيّ لي قطران يتعامدان ولا يتقايسان » (quadrilatère dont les
+  diagonales sont perpendiculaires **et pas égales**) ; sept figures numérotées (1 rectangle,
+  2 pentagone, 3 carré, 4 hexagone, 5 quadrilatère quelconque/trapèze, 6 losange, 7 triangle) →
+  **le losange (6)** ; le carré (3) est exclu parce que ses diagonales sont égales. Tableau de
+  classement des sept figures.
+
+#### أتدرّب
+
+- **3 — les axes du rectangle** : rectangle أبجد, ses **deux axes de symétrie** ; le premier coupe
+  les longueurs en س et ص, le second les largeurs en ق et ع. Nature de سقصع → **معيّن** (ses quatre
+  côtés sont les hypoténuses de quatre triangles rectangles superposables ; ses diagonales, portées
+  par les axes, sont perpendiculaires et de même milieu).
+- **4 — diagonales comparées** (كرّاس ص 11 تمرين 4) : parallélogramme سصنط, tracer ses diagonales →
+  elles se **coupent en leur milieu** et ne sont pas égales ; puis un **rectangle** de mêmes côtés et
+  ses diagonales → **égales**. « ألاحظ وأستنتج ».
+- **5 — la hauteur d'un parallélogramme** (كرّاس ص 11 تمرين 5) : parallélogramme أبجد, droite س
+  perpendiculaire à (جد) en هـ passant par أ ; que représente [أهـ] ? → **un ارتفاع** ; chercher
+  **d'autres positions** de cette hauteur (toute perpendiculaire commune aux deux côtés parallèles).
+- **6 — hauteurs d'un losange** (كرّاس ص 11 تمرين 6) : en tracer depuis plusieurs positions.
+- **7 — un seul coup de ciseaux** : parallélogramme كلنط ; le transformer en **rectangle de même
+  aire** par une découpe (le long d'une hauteur, puis on déplace le triangle). → **notion d'aire**.
+- **8 (défi 🔑) — le cercle et deux diamètres perpendiculaires** [أج] ⊥ [بد] → أبجد est un
+  **مربّع** (diagonales égales, perpendiculaires, même milieu). Puis س et ص sur [أج], symétriques par
+  rapport à (دب) → سبصد est un **معيّن** (diagonales perpendiculaires, même milieu, [سص] ≠ [بد]).
+  Refaire plusieurs fois ; [بد] et [سص] sont les **diagonales** : égales ? **non** (sauf si س = أ) ;
+  perpendiculaires ? **oui**.
+
+#### أوظّف
+
+- **9 — le point sur la médiatrice** (كرّاس ص 12 تمرين 9) : أبجد, د sur la **médiatrice** de [أب] ;
+  ق symétrique de د par rapport à (أب), ن symétrique de ب par rapport à (جد). أقبد → **معيّن**
+  (دأ = دب car د sur la médiatrice, et la symétrie donne قأ = دأ, قب = دب). La nature du second
+  polygone (« ق ج ن أ ») n'est pas décidable sans la figure cotée du كرّاس : non résolu.
+- **10 — trois cercles** : أب = **6 cm**, م milieu ; trois cercles de rayon **3 cm** centrés en أ،
+  ب، م. Repère أ(0 ; 0), ب(6 ; 0) : les cercles (أ) et (ب) sont **tangents en م** ; (أ)∩(م) en
+  (1,5 ; ±2,598…), (م)∩(ب) en (4,5 ; ±2,598…) [√6,75]. Quadrilatères reconnaissables : deux
+  **losanges** de côté 3 cm (أ + les deux points + م ; م + les deux points + ب) ; un **rectangle**
+  3 cm × 5,196… cm (les quatre points) ; un **trapèze isocèle** de bases 6 et 3 cm, côtés 3 cm
+  (أ, ب et les deux points du haut) ; un losange « oblique » de côté 3 (أ, م et deux points
+  consécutifs).
+
+#### أقيّم مكتسباتي
+
+- **11 — le grand rectangle** أبجد, **longueur = 2 × largeur** ; ses deux axes se coupent en و,
+  l'un coupe les longueurs en س و ص, l'autre les largeurs en ق و ع → **4 rectangles superposables**
+  (largeur × largeur/2). Diagonales de chacun → points ك، ل، م، ن tels que كلمن soit un rectangle.
+  Nommer **deux carrés superposables** (les deux moitiés de part et d'autre de [سص] : largeur ×
+  largeur, puisque longueur = 2 × largeur) ; le losange سعصق se partage en 4 parallélogrammes et
+  4 losanges superposables ; **deux trapèzes superposables** ; tableau des propriétés de toutes les
+  figures.
+
+### Leçon 17 — « أرسم متوازيات الأضلاع وأبنيها » (ص 47–49)
+
+#### أستحضر
+
+- **1 — le triangle isocèle doublé** : أبج isocèle de sommet أ, périmètre **14 cm**, بج = **5 cm** →
+  أب = أج = (14 − 5) : 2 = **4,5 cm**. Construire بجد symétrique de أبج par rapport à (بج) → أبدج a
+  quatre côtés de **4,5 cm** → **معيّن** (périmètre 18 cm).
+
+#### أستكشف
+
+- **2 — le menuisier عادل** : quatre panneaux dessinés **avec leurs diagonales** (rectangle,
+  losange, parallélogramme) et un carré partagé par ses médianes ; les construire « **مستعملا
+  المسطرة والبركار فقط** » (règle et compas seulement), exposer la méthode du groupe.
+
+#### أتدرّب
+
+- **3 — losange de diagonales 3 cm et 5 cm** (construction par les diagonales : perpendiculaires,
+  même milieu → demi-diagonales 1,5 et 2,5 cm).
+- **4 — rectangle** أبجد de centre م : angle **بمج = 30°**, أج = **6 cm** → diagonales de 6 cm,
+  demi-diagonales 3 cm, angle de 30° entre elles au centre.
+- **5 — parallélogramme** سصقن : angle **قنس = 120°**, قن = **4 cm**, **سق = 6 cm** (lu à 220 dpi).
+  Avec l'ordre س-ص-ق-ن, [سق] est une **diagonale** : construction faisable (demi-droite à 120°,
+  puis cercle de centre ق et de rayon 6 cm) ; نس = −2 + 2√6 ≈ 2,90 cm, **non calculable en 6ème**.
+  Soit l'énoncé veut « **س ن** = 6 cm » (côté), soit il vise cette construction au compas : **à
+  trancher, ne pas reprendre tel quel**.
+- **6 — compléter le carré** عوفط (كرّاس ص 12 تمرين 6) : triangle rectangle عوف donné (angle
+  droit en و, [عف] = diagonale) → **plusieurs méthodes** (équerre + compas ; symétrique de و par
+  rapport au milieu de [عف] ; diagonales égales et perpendiculaires).
+- **7 — losange** أبجد avec أج = **4 cm**, أب = **6 cm** ; « que représente (أج) ? » → une
+  **diagonale** (أ et ج sont opposés dans l'ordre أ-ب-ج-د), le côté vaut 6 cm.
+- **8 — losange** سصعو de **périmètre 16 cm** et de **hauteur 3 cm** → côté 16 : 4 = **4 cm**.
+- **9 — compléter le parallélogramme** « أ س ب ج الذي مركزه النقطة ب » (كرّاس ص 12 تمرين 9) :
+  **énoncé incohérent** (ب ne peut pas être à la fois un sommet et le centre) ; figure : triangle
+  أبج. **Mal imprimé — à ne pas reprendre.**
+- **10 (défi 🔑) — losange** d'angle **75°** et de côté **3 cm** (rapporteur + compas).
+
+#### أوظّف
+
+- **11 — parallélogramme** نتقف : angle **فنت = 45°**, تن = **4 cm**, نف = **6 cm**. Construire la
+  hauteur [نع] ; nature du triangle نتع ; nature du quadrilatère نتقع. Pour que نتقع soit un
+  quadrilatère, ع est sur la droite (قف) : [نع] ⊥ (قف), donc [نع] ⊥ [نت] (car (نت) ∥ (قف)). Repère
+  ن(0 ; 0), ت(4 ; 0), ف(4,24 ; 4,24), ق(8,24 ; 4,24) → ع(0 ; 4,24), **hors du segment [قف]** (l'angle
+  en ف vaut 135°, obtus). → نتع **triangle rectangle en ن** (côtés 4 et 3√2 ≈ 4,24 : non isocèle) ;
+  نتقع **trapèze rectangle** (bases 4 et 8,24…, angles droits en ن et ع). Hauteur = 6 × sin 45° =
+  3√2 ≈ 4,24 cm : **se construit, ne se calcule pas** en 6ème.
+
+#### أقيّم مكتسباتي
+
+- **12 — les deux terrains de عبد الرحمان** : أبج rectangle en أ, أب = **40 m**, أج = **30 m** ;
+  losange بجعو avec angle **بجع = 60°**. Plan à l'échelle **1/1000** ; [بج] mesure **5 cm** sur le
+  plan → **50 m** en vrai (le manuel donne la mesure : Pythagore n'est pas mobilisé). Diagonales du
+  losange sécantes en ن. Périmètre du terrain réuni = 40 + 30 + 3 × 50 = **220 m** ([بج] est
+  intérieur, il ne compte pas). Plan : 4 cm et 3 cm pour les côtés de l'angle droit.
+
+### Écarts avec la fiche (`programme/6eme-base/maths.md`, thème « الرباعيّات »)
+
+La fiche dit en trois lignes : les 5 quadrilatères, « خاصيّاتها (التوازي، الزوايا القائمة، تساوي
+الأضلاع) », علامات الرسم/البناء aux instruments ; vocabulaire « …ضلع، زاوية قائمة، **قطر**،
+خاصيّة » ; borne ⛔ démonstrations formelles. Les trois leçons pratiquent beaucoup plus :
+
+1. 🔧 **Les diagonales et leurs propriétés** (même milieu pour tout parallélogramme ; égales pour le
+   rectangle ; perpendiculaires pour le losange ; les trois pour le carré) : L9 ex. 1, L15 ex. 1, 2,
+   4, 8, L17 ex. 2, 3, 4, 7. **C'est le fil de la leçon 15** (la devinette en est l'ouverture), et la
+   fiche ne nomme que le mot « قطر ». Au programme (propriétés des quadrilatères, vocabulaire
+   officiel). **Le cours l'enseigne** (section 7) — et aucun distracteur du chapitre ne la teste
+   (le registre a pourtant `math.geo.diagonales-proprietes-mal-attribuees`) : à ajouter aux items.
+2. 🔧 **Construire aux instruments** (indicateur de la خارطة : « رسم الرّباعيّات الخاصّة باستعمال
+   المسطرة والكوس والبركار والمنقلة وبناؤها ») : toute la leçon 17 — deux côtés et l'angle compris
+   (ex. 5, 10, 11), par les diagonales (ex. 3, 4, L15 ex. 1). L'ancien cours n'en disait qu'une
+   phrase. **Enseigné** (sections 8 et 7).
+3. 🔧 **Le vocabulaire du trapèze** : قاعدة كبرى / صغرى, **شبه منحرف قائم الزاوية**, **شبه منحرف
+   متقايس الضلعين** (L9 ex. 5–11). Absents de la fiche. **Enseignés** (section 5, cas limites).
+4. 🔧 **La hauteur (ارتفاع)** d'un trapèze, d'un parallélogramme, d'un losange (L9 ex. 3, 6, 8 ;
+   L15 ex. 5, 6 ; L17 ex. 8, 11) — perpendiculaire commune aux deux côtés parallèles, en plusieurs
+   positions. La fiche la range au thème des aires (`20`). Pratiquée ici : **enseignée** (section 6),
+   sans formule d'aire.
+5. 🔧 **Le périmètre** du carré, du losange, du rectangle (L9 ex. 9 à rebours ; L17 ex. 1, 8, 12)
+   — et **testé** par le chapitre (`04-defi` q1, q2, q4 ; `05` q4). La fiche l'annonce au scope
+   général (« périmètre/aire ») sans thème propre ; aucun autre chapitre de 6ème ne l'enseigne pour
+   les polygones. **Enseigné** (section 9).
+6. 🟡 **Axe de symétrie** (trapèze isocèle, rectangle, losange, triangle doublé : L9 ex. 5, 10 ;
+   L15 ex. 3, 8, 9, 11 ; L17 ex. 1) : **acquis de 5ème** (`math-5eme/12-symetrie`), absent de la
+   fiche 6ème. Réinvesti, non enseigné : cité une fois comme cas limite (trapèze isocèle).
+7. 🟡 **Aire** : L15 ex. 7 (parallélogramme → rectangle de même aire par découpe). Relève de `20`
+   (leçon 38). **Non enseigné ici**, signalé.
+8. 🟡 **Échelle** : L9 ex. 9, 10 ; L17 ex. 12 (1/1000). Relève de `14` (leçon 14). Non enseigné ici.
+9. ⛔/⚠️ **Le grade** : L15 ex. 1 mesure un angle « **بالغراد 50** ». Aucune unité autre que le
+   degré n'est au programme (leçon 7 : angles en degrés). Probable coquille pour 45° ou 50°. **Non
+   enseigné, à ne pas reprendre.**
+10. ⚠️ **Énoncés à ne pas reprendre** : L17 ex. 9 (« مركزه النقطة ب », ب sommet et centre) ; L17
+    ex. 5 (سق = 6 cm est une diagonale : côté irrationnel) ; L15 ex. 9 (second polygone indécidable
+    sans le كرّاس).
+11. ✅ **Bornes respectées** : aucune situation n'énonce la somme des angles (180°/360°), aucun
+    calcul par Pythagore (L17 ex. 12 donne [بج] par l'échelle), aucune démonstration formelle — les
+    « أعلّل » demandent de citer une propriété, pas de démontrer. Les longueurs irrationnelles
+    (L9 ex. 10, L17 ex. 5, 11) se **construisent**, jamais ne se calculent.
+12. ↔️ **Sens inverse** : la fiche et le chapitre disent « المعيّن » et « متوازي الأضلاع » comme le
+    manuel ; la **hiérarchie** « le carré est un rectangle ET un losange, tout rectangle est un
+    parallélogramme » est testée (`02-boss` q2, q6 ; `03` q6 ; `04` q5) et **jamais énoncée** par le
+    manuel — elle y est seulement pratiquée (L15 ex. 11 : le carré rangé parmi les rectangles).
+    Gardée (section 4).
+
+### `20-aires-polygones` — Leçons 2, 33, 38, 41, 50 (ص 8–9, 98–101, 111–114, 122–125, 142–146)
+
+## Leçons 2, 33, 38, 41 et 50 — lues au manuel élève (102609, ص 8–9, 98–101, 111–114, 122–125, 142–146), 2026-09-23 → chapitre `20-aires-polygones`
+
+> **Lu à l'image** (`/root/.cache/yqa-manuels/r/m-NNN.png`, et à 200–250 dpi par `pdftoppm -x -y -W -H`
+> pour les figures denses : ص 98 bas, ص 144 haut, ص 145), page par page. Chaque nombre ci-dessous a
+> été **re-calculé** (python, `fractions.Fraction`, π = 3,14 quand il intervient). Comme toutes les
+> leçons déjà lues : **aucun encadré de cours**, aucune formule imprimée. Rubriques : **أستحضر** →
+> **أستكشف** → **أتدرّب** → **أوظّف** → **أقيّم مكتسباتي** (leçon 2 : **أعتمد مكتسباتي** → **أوظّف** →
+> **أقيّم مكتسباتي**). Les formules d'aire ne sont **jamais écrites** : elles se lisent dans les tableaux
+> à compléter. Le manuel écrit « صم » pour le centimètre, « دسم »، « دكم »، « هم »، « هآ »، « آر » ;
+> il fait correspondre **آر = دكم²** et **هآ = هم²** dans ses tableaux de conversion.
+
+### Leçon 2 — « أتصرّف في وحدات قيس المساحة » (ص 8–9)
+
+- **أعتمد مكتسباتي 1 أ — compléter avec l'unité.** 305 م² = 30 500 **دسم²** = 3,05 **آر (دكم²)** =
+  0,0305 **هآ (هم²)** ; 41 آر = 4 100 **م²** = 0,41 **هآ**. ب — convertir vers l'unité donnée :
+  1,07 كم² = **10 700** دكم² = **107** هم² ; 5,809 هآ = **580,9** آر = **58 090** م².
+- **أوظّف 2 — la couturière.** Tissu 18 م × 1,2 م ; découpé en carrés de côté la largeur (1,2 م) →
+  **15 carrés** de **1,44 م²** ; chaque carré en 9 mouchoirs carrés (côté 0,4 م) → mouchoir de
+  **16 دسم²** ; 135 mouchoirs, galon à 0,875 د le mètre sur le pourtour (135 × 1,6 م = 216 م) →
+  **189 د**. (Mêle aire, périmètre et division par un décimal : 18 : 1,2.)
+- **3 — la terre de 4 هآ en cinq parcelles.** (1) rectangle 103 م × 70,6 م → **7 271,8 م²** ;
+  (2) carré de périmètre 224 م → côté 56 → **3 136 م²** ; (3) rectangle 10,8 دكم, largeur plus courte
+  de 2,8 دكم → 8 دكم, périmètre 37,6 دكم ✓ → **86,4 دكم² = 8 640 م²** ; (4) longueur double de la
+  largeur, périmètre 5,4 هم → 3 L = 5,4 → L = 1,8 هم, l = 0,9 هم → **1,62 هم² = 16 200 م²** ;
+  (5) irrégulière = 40 000 − 35 247,8 = **4 752,2 م²** ✓ (valeur imprimée, « deux façons »).
+- **4 — le jardin public.** Terrain rectangulaire, périmètre 368 م, longueur = largeur + 26 → l = 79,
+  L = 105 → **8 295 م²** ; quatre zones de 1/5 chacune (**1 659 م²**) ; fontaine 6,53 دكم² = 653 م² ;
+  allées = 8 295 − 6 636 − 653 = **1 006 م² = 10,06 آر** ✓ (imprimé).
+- **أقيّم 5 — plans à l'échelle** (10 م réels → 2 صم, soit 1/500). (1) L 120, aire 96 آر → l **80** ;
+  plan 24 × 16 = **384 صم²** ; (2) aire 0,63 هآ, l 70 → L **90** ; plan 18 × 14 = **252 صم²** ;
+  (3) aire 82,08 دكم², l 76 → L **108** ; plan 21,6 × 15,2 = **328,32 صم²**. (Échelle = chapitre `14`.)
+
+### Leçon 33 — « أحسب قيس مساحة المثلّث » (ص 98–101)
+
+- **أستحضر 1 — tableau** : rectangle 25 × 15 صم → **375 صم²** ; carré 7 م → **49 م²** ; rectangle
+  d'aire 150 م² et de largeur 10 م → longueur **15 م** (**dimension retrouvée depuis l'aire**).
+- **أستكشف 2 — le fermier.** Rectangle أ ب ج د de 60 م × 20 م partagé en trois triangles par un point
+  du grand côté supérieur situé à 15 م du coin (le reste du côté : 45 م). (1) vaches : triangle de base
+  60 et de sommet sur le côté opposé → **600 م²** → à 8 م² par vache, **75 vaches** ; (2) veaux :
+  triangle rectangle 15 × 20 → **150 م²** ; (3) fourrage : 45 × 20 ÷ 2 → **450 م²** (600 + 150 + 450 =
+  1 200 ✓). **Mur entre (1) et (2)** : la figure donne la hauteur **12 م** issue du coin sur ce mur ;
+  2 × 150 ÷ 12 = **25 م** (base retrouvée depuis l'aire — le manuel contourne ainsi Pythagore).
+- **أتدرّب 3 — cinq triangles, « chaque fois que c'est possible ».** (1) base 6, hauteur 4 (pied
+  intérieur) → **12 صم²** ; (2) triangle rectangle, côtés de l'angle droit 4 et 3 → **6 صم²** ;
+  (3) base 4, hauteur 2 **tombant hors du triangle** (base prolongée en pointillé) → **4 صم²** ;
+  (4) côté 4 mais hauteur 3,5 relative à un **autre** côté (non mesuré) → **impossible** ; (5) côté 4,
+  hauteur 3,7 relative à un autre côté → **impossible**. → **une hauteur ne sert qu'avec SA base**.
+- **4 — triangle rectangle** 40 م et 30 م (angle droit), hauteur sur le troisième côté 24 م → aire
+  600 → côté [ب ج] = 2 × 600 ÷ 24 = **50 م**.
+- **5 — carré de 20 صم** partagé par ses diagonales → quatre triangles de **100 صم²** (400 ÷ 4, ou
+  20 × 10 ÷ 2).
+- **6 — tableau** : (أ) base 190 دسم, hauteur 10 دسم → **950 دسم² = 9,5 م²** ; (ب) base 380 دسم =
+  38 م, aire 285 م² → hauteur **15 م** ; (ج) hauteur 24 م, aire 864 م² → base **72 م** (unités mêlées
+  dans la même colonne).
+- **7 — triangle équilatéral** de périmètre 18 صم, hauteur 5,2 صم → côté 6 → **15,6 صم²**.
+- **أوظّف 8** — triangle أ ب ج, ب ج = 4 صم, hauteur 2,4 صم (extérieure) ; construire د au compas pour que
+  أ د ب ج soit un parallélogramme ; aire de أ ج د « de deux façons » : moitié du parallélogramme
+  (4 × 2,4 = 9,6) ou base أ د = 4 et même hauteur → **4,8 صم²**.
+- **9** — triangle isocèle أ ب ج d'aire 9,6 صم², هـ milieu de [ب ج] ; د sur [هـ أ) au-delà de أ avec
+  أ هـ = أ د ; aire ب ج د = **19,2 صم²** (hauteur doublée) ; « 8 triangles à reconnaître » ; aire
+  أ ب د = **4,8 صم²** (base أ د = أ هـ, hauteur ب هـ).
+- **أقيّم 12** — rectangle de périmètre 320 م, largeur = 1/3 de la longueur → **120 م × 40 م** ;
+  partagé en un carré 40 × 40 et deux triangles superposables → chaque triangle **1 600 م²** (80 × 40 ÷
+  2). (Plus une rosace hexagonale décorative sans question chiffrée.)
+
+### Leçon 38 — « أحسب مساحة متوازي أضلاع (متوازي الأضلاع، المستطيل، المعيّن، المربّع) » (ص 111–114)
+
+- **أستحضر 1 — la maison et les arbres.** Terrain 12 دكم × 5 دكم, maison carrée de côté 3 دكم →
+  arbres = 60 − 9 = **51 دكم² (= 51 آر = 5 100 م²)** — **soustraction** d'aires.
+- **أستكشف 2 — le plan de la municipalité (1/1000).** Plan 14 صم × 12 صم : bande haute de 6 صم avec deux
+  triangles (parkings, base 4, hauteur 6 → 12 صم² chacun) et un **parallélogramme** (bâtiments, base
+  10, hauteur 6 → 60 صم²) ; bande basse : carré 6 × 6 (siège) et rectangle 8 × 6 contenant un
+  **losange** (jardin, diagonales 8 et 6 → 24 صم² ; côté 5, hauteur imprimée 4,8 → 5 × 4,8 = 24 ✓).
+  Réel : **6 000 م²** pour les bâtiments (100 × 60, ou 140 × 60 − 2 × 1 200) et **2 400 م²** pour le
+  jardin (80 × 60 ÷ 2, ou 50 × 48) — « par plus d'une méthode ».
+- **أتدرّب 3 — parallélogrammes** : (أ) 8 × 6 → **48** ; (ب) aire 60, base 12 → hauteur **5** ;
+  (ج) aire 98, hauteur 7 → base **14** ; (د) aire 156, base 20,8 → hauteur **7,5**.
+- **4 — losanges** (grande diagonale, petite, aire, côté, hauteur) : (أ) 8 ; 6 ; **24** ; **5** ; 4,8 ;
+  (ب) **24** ; 18 ; 216 ; 15 ; **14,4** ; (ج) 136 ; **102** ; **6 936** ; 85 ; 81,6 ; (د) 200 ; **150** ;
+  15 000 ; **125** ; 120. (Le côté se déduit de aire ÷ hauteur ; les quatre lignes sont cohérentes :
+  4-3-5, 12-9-15, 68-51-85, 100-75-125.)
+- **5 — losange** de diagonales 50 م et 30 م vendu 28 د le م² → **750 م²** → **21 000 د**.
+- **6 — cerf-volant** losange de côté 25 صم, hauteur 24 صم → **600 صم²**.
+- **7 — tableau** : losange base 50, hauteur 20 → **1 000 م²** ; parallélogramme 120 × 70 → **8 400 م²** ;
+  losange base 50, grande diagonale 80, aire 2 400 → petite diagonale **60**, hauteur **48**.
+- **أوظّف 8 — le tapis de Kairouan** (plan au 1/20). Tapis 3,1 م × 2,2 م à fond blanc ; losange central
+  dont les sommets sont à 0,5 م des bords → diagonales 2,1 et 1,2 → **1,26 م²** ; 12 parallélogrammes de
+  base 0,5 م et hauteur 0,3 م → **1,8 م²** ; bleu = **3,06 م²** ; tapis 6,82 م² → blanc **3,76 م²** ;
+  vendu 1 091,200 د dont 25 % pour la matière (272,8 د pour 6,2 كغ → **44 د le kg**) ; reste 818,4 د
+  sur 75 jours → **10,912 د/jour**.
+- **أقيّم 9 — le losange municipal** : côté ج د = 48 م, hauteur ط و = 42 م → **2 016 م²** ; une allée
+  bordée de deux parallèles au côté, avec ط ن = هـ و = 19 → largeur 42 − 38 = 4 م → allée 48 × 4 =
+  **192 م²** → plantations **1 824 م²**.
+
+### Leçon 41 — « أحسب قيس مساحة شبه المنحرف » (ص 122–125)
+
+- **أستحضر 1 — tableau mêlé** : losange 16 et 10 → **80 م²** ; triangle base 4 م, hauteur 35 دسم →
+  **7 م²** (conversion d'abord) ; losange d'aire 1 400 م², petite diagonale 40 → grande **70 م** ;
+  triangle d'aire 14 م², hauteur 4 م → base **7 م**.
+- **أستكشف 2 — le stand de la foire** (27 → 31 mai, soit 5 jours). Trapèze bases 9 م et 4 م, hauteur
+  3 م → **19,5 م²** ; 11,500 د le م² par jour → **224,250 د/jour** → **1 121,250 د** pour 5 jours ≤
+  1 200 د → **oui**.
+- **أتدرّب 3** — bases 50 et 34 صم, hauteur 16 صم → **672 صم²**.
+- **4** — aire 24,75 صم², bases 7,5 et 3,5 → hauteur **4,5 صم**.
+- **5** — aire 14,25 م², petite base 3,5 م, hauteur 3 م → grande base **6 م**.
+- **6 — l'erreur d'أمل** : trapèze d'aire 63 م², bases 4 م et 6,5 م ; أمل trouve une hauteur de 6 م.
+  Vérifier : (4 + 6,5) × 6 ÷ 2 = **31,5 ≠ 63** ; bonne hauteur 2 × 63 ÷ 10,5 = **12 م** ; son calcul est
+  63 ÷ 10,5 = 6 : elle a **oublié de doubler l'aire** (= appliqué la formule sans la moitié). →
+  **erreur type imprimée**, ancrage de la section « dimension inconnue ».
+- **7 — tableau** : (1) 11,5 ; 6 ; 2,5 → **21,875 م²** ; (2) grande 22,5, hauteur 31, aire 612,25 →
+  petite **17** ; (3) 33,8 ; 16,2 ; aire 225 → hauteur **9** ; (4) petite 32, hauteur 16, aire 664 →
+  grande **51**.
+- **8 — trapèze rectangle** d'aire 997,35 م², hauteur 21,8 م, grande base double de la petite →
+  somme 91,5 → **30,5 م et 61 م** (« en s'aidant d'un schéma en barres »).
+- **أوظّف 9 — le terrain de la municipalité** : trapèze rectangle 210 م / 175 م, hauteur 85 م →
+  **16 362,5 م²** ; allées 8 % (1 309 م²) ; reste 15 053,5 م² en 23 lots → **654,5 م²** ✓ (imprimé) ;
+  loyer 10 د/mois/lot → 23 × 10 × 12 × 5 = **13 800 د** = coût de l'aménagement ✓ (« cinq ans »).
+- **أقيّم 10 — le trapèze rectangle أ ب ج د** : côté droit ب ج = 32 م, 5 918,400 د à 3,425 د le م² →
+  **1 728 م²** ; grande base = petite + 24 → somme 108 → **42 م et 66 م**. Mur : le côté oblique se
+  retrouve **par l'aire** (triangle 32 × 24 ÷ 2 = 384 ; hauteur 19,2 → 2 × 384 ÷ 19,2 = **40 م**, sans
+  Pythagore) ; périmètre 180 م − entrée 4 م = 176 م, hauteur 1,75 م → **308 م²** à 30 د → **9 240 د**.
+
+### Leçon 50 — « أحسب قيس مساحة شكل مركّب من الأشكال المدروسة » (ص 142–146)
+
+- **أستحضر 1 — tableau** : triangle 25 × 16 → **200 م²** ; disque de diamètre 14 م → **153,86 م²** ;
+  trapèze 40 et 13, hauteur 9,5 → **251,75 م²**.
+- **أستكشف 2 — l'échange de parcelles** (180 د le م²). Parcelle 2 : rectangle 67,5 × 95,5 →
+  **6 446,25 م²**. Parcelle 1 (cotes lues au zoom : 90, 30, 20, 40, 30, codage des segments égaux) :
+  triangle isocèle de base 60 et hauteur 50 (dont une moitié seulement hors du reste), rectangles et
+  un **demi-disque** de diamètre 50 → 750 + 3 000 + 400 + 1 200 + 981,25 = **6 331,25 م²** ; écart
+  **115 م²** → soulte **20 700 د**. (Lecture des cotes à confirmer, mais le résultat entier la
+  corrobore.)
+- **أتدرّب 3 — le stade** : rectangle 110 × 75 et deux demi-disques de diamètre 75 → **12 665,625 م²**.
+- **4 — la surface colorée** (rectangle 80 × 50 coupé en deux, cercle de diamètre 30, demi-disques de
+  diamètres 80 et 40) : **4 237,25 م²** selon ma lecture des cotes — **lecture incertaine**, non reprise.
+- **5 — l'hexagone** : un rectangle 10 × 24 صم et deux triangles de base 24 صم (le côté commun) et de
+  hauteur 10 صم (codage « // ») → 240 + 120 + 120 = **480 صم²** (il tient dans un rectangle 24 × 30 =
+  720). **Polygone pur** : ancrage de la section « figure composée ».
+- **6 — la figure de أمل** : base 6 صم, deux quarts de disque de rayon 1,5, rectangle 3 × 1,5 et un
+  demi-disque de diamètre 3 → **11,565 صم²**.
+- **7 — la flèche du club** : carré 50, partie centrale 40 × 50 moins deux demi-disques de diamètre 40,
+  triangle de base 50 et hauteur 50 → **4 494 صم²**.
+- **أوظّف 8 — la salle d'exposition** (terrain 100 × 48, « 100 صم » est une coquille pour م) :
+  ma lecture (rectangle 24 × 52, deux triangles latéraux 52 × 12 ÷ 2, scène = demi-disque de
+  diamètre 24) donne **2 098,08 م²**, alors que « 2 340 sièges de 0,27 م² sur 90 % de la salle »
+  impose **702 م²**. **Incohérence** entre ma lecture et la donnée imprimée : exercice non repris.
+- **أقيّم 9 — le toit du club** : carré 10 × 10, rectangle 10 × 6, parallélogramme base 10 hauteur 5,
+  triangle base 10 hauteur 5, demi-disque de diamètre 6 → **249,13 م²** ; peinture 1,5 كغ/م² →
+  373,695 كغ → **15 seaux** de 25 كغ à 95 د = **1 425 د** ✓ (imprimé).
+
+### Écarts avec la fiche (`programme/6eme-base/maths.md`, thèmes « وحدات قيس المساحة » et « مساحات المضلّعات »)
+
+1. 🔧 **Aire du losange — au programme, omise par la fiche.** Le titre de la leçon 38 énumère
+   « متوازي الأضلاع، المستطيل، **المعيّن**، المربّع », et le manuel pratique **les deux formules** :
+   côté × hauteur (losange = parallélogramme) et **(grande diagonale × petite diagonale) ÷ 2** (ex. 2,
+   4, 5, 7, 8 ; leçon 41 ex. 1). La fiche borne l'aire à « rectangle, carré, triangle,
+   parallélogramme, trapèze » sans exclure le losange. **Le cours l'enseigne** (section 6). Aucun item
+   du chapitre ne le teste ; le tag `math.mes.aire-losange-sans-moitie` existe au registre mais
+   **aucun distracteur** ne le porte → non déclaré dans `coursePitfalls`.
+2. 🔧 **Retrouver une dimension à partir de l'aire** (base, hauteur, largeur, diagonale, base d'un
+   trapèze) : la forme de la moitié des situations (33 ex. 1, 2, 4, 6 ; 38 ex. 3, 4, 7 ; 41 ex. 1, 4–8,
+   10). Absent de la fiche. **Enseigné** (section 8), ancré sur l'erreur imprimée d'أمل (41 ex. 6).
+   Il mobilise la **division par un décimal** (126 ÷ 10,5) — au programme depuis le §2 quater.
+3. 🔧 **Une hauteur ne sert qu'avec SA base ; la hauteur peut tomber hors de la figure ; les deux
+   côtés de l'angle droit sont base et hauteur l'un de l'autre** (33 ex. 3, 4, 8). La fiche ne dit que
+   « perpendiculaire à la base ». **Enseigné** (section 3), avec le tracé au كوس.
+4. 🔧 **Soustraction d'aires** (38 ex. 1 ; 38 ex. 8–9 ; 41 ex. 9) : la fiche dit « somme/différence »,
+   le cours publié ne montrait que la somme. **Enseigné** (section 9, cas limite et vérification).
+5. 🔧 **Unités دكم² et هم², et leurs noms آر / هكتار** : le manuel les écrit (leçon 2 ex. 1, 3). La
+   fiche liste « كم²، هكتار، آر، م²، دسم²، سم² ». **Enseigné** comme égalités آر = dam², هكتار = hm²
+   (section 2).
+6. ⛔→ signalé, non enseigné : **aire du disque dans les figures composées** (leçon 50 ex. 1, 2, 3, 4, 6,
+   7, 8, 9 — la majorité de la leçon). La fiche renvoie le disque au chapitre `21-cercle-disque`
+   (« ⛔ aire du disque ⇒ traitée au chapitre cercle ») : le cours de `20` s'arrête aux polygones et
+   annonce le chapitre suivant. À trancher : la leçon 50 vient **après** la leçon 46 (aire du disque) ;
+   la section « figure composée » pourrait, dans `21`, reprendre les demi-disques.
+7. ↔️ **Échelle et pourcentage mêlés aux aires** (leçon 2 ex. 5 ; 38 ex. 2, 8 ; 41 ex. 9 ; 50 ex. 8) :
+   relèvent de `14-proportionnalite-pourcentage`. Non enseignés ici.
+8. ↔️ **Terme** : le manuel dit « **قيس** مساحة » et le symbole « صم » ; le corpus dit « مساحة » et
+   « سم ». Le cours suit les symboles SI (`cm²`, `m²`) et donne dans le tableau des unités les
+   abréviations arabes qu'emploient les items (`سم²`, `م²`, `دسم²`, `كم²`).
+9. ↔️ **Sens inverse** : la fiche nomme le piège « hauteur ≠ côté oblique » ; le manuel ne l'imprime
+   pas comme erreur (il le fait **constater** : 33 ex. 3, triangles 4 et 5 ; 41 ex. 10 retrouve l'oblique
+   par l'aire). Aucun tag du registre ne le porte et aucun distracteur ne l'encode : montré côte à côte
+   dans les figures (sections 3 et 5), pas déclaré comme piège taggué.
+10. ✅ **Exclusions respectées** : ni Pythagore (41 ex. 10 et 33 ex. 2 contournent par l'aire), ni
+    volume, ni somme des angles ne sont pratiqués.
+11. ⚠️ **Exercices à ne pas reprendre** : 50 ex. 8 (incohérence apparente, voir plus haut) ; 50 ex. 4
+    (cotes ambiguës) ; 33 ex. 2 (la cote « 12 م » du triangle 2 est à peine lisible, le résultat 25 م
+    la corrobore).
+
+### `21-cercle-disque` — Leçons 20, 46 (ص 59–62, 133–135)
+
+## Leçons 20 et 46 — lues au manuel élève (102609, ص 59–62 et 133–135), 2026-09-23 → chapitre `21-cercle-disque`
+
+> **Lu à l'image** (`/root/.cache/yqa-manuels/r/m-059…062.png`, `m-133…135.png`), page par page.
+> Chaque nombre ci-dessous a été **re-calculé** (python, `fractions.Fraction`, π pris égal à
+> 314/100). Comme les autres leçons : **aucun encadré de cours**. Rubriques : leçon 20 **أستحضر**
+> (1) → **أستكشف** (2) → **أتدرّب** (3–9) → **أوظّف** (10) → **أقيّم مكتسباتي** (11) ; leçon 46
+> même suite (1 · 2 · 3–8 · 9–10 · 11). Titres : « أحسب قيس محيط دائرة » (20) et « أحسب قيس مساحة
+> القرص الدّائريّ » (46). **Vocabulaire imprimé** : دائرة، مركز، **شعاع** (le manuel dit « قيس
+> شعاعها » — jamais « نصف القطر »), قطر، محيط، قرص **دائريّ**، مساحة ; unités صم، م، صم²، م². La
+> lettre π et la valeur 3,14 ne sont **imprimées nulle part** dans ces sept pages : le manuel fait
+> **découvrir** le rapport (ex. 2 de chaque leçon) et laisse l'enseignant le nommer.
+
+### Leçon 20 — « أحسب قيس محيط دائرة » (ص 59–62)
+
+#### أستحضر
+
+- **1 — le tableau des périmètres** (rappel 5ème). Rectangle 15 × 10 → demi-périmètre **25**,
+  périmètre **50** ; triangle équilatéral de périmètre 36 → côté **12** ; carré de côté 6 →
+  demi-périmètre **12**, périmètre **24** ; rectangle de longueur 50 et de périmètre 150 →
+  demi-périmètre **75**, largeur **25**. (Périmètre des polygones, chapitres `19`/`20`.)
+
+#### أستكشف
+
+- **2 — les boîtes cylindriques de السيّدة نور.** Les élèves mesurent le diamètre de la base et son
+  périmètre : (31,4 ; 10), (15,7 ; 5), (62,8 ; 20), (92,4 ; 30). « Trouver la relation, en déduire
+  une règle de calcul du périmètre. » Quotients : 31,4 : 10 = 15,7 : 5 = 62,8 : 20 = **3,14**.
+  ⚠️ **Coquille imprimée** : 92,4 : 30 = **3,08** ; le périmètre d'un cercle de diamètre 30 est
+  3,14 × 30 = **94,2** (chiffres 4 et 2 permutés). À ne jamais reprendre tel quel.
+
+#### أتدرّب
+
+- **3 — roue de diamètre 42,5 صم** → périmètre 3,14 × 42,5 = **133,45 صم**.
+- **4 — corbeille, rayon (شعاع) de la base 11,5 صم** → 2 × 3,14 × 11,5 = **72,22 صم**.
+- **5 — bassin circulaire de périmètre 47,1 م** → rayon ? 47,1 : 3,14 = 15 (diamètre) → rayon
+  **7,5 م**. (**Sens inverse** : du périmètre au rayon, par une **division par 3,14** — division
+  par un décimal, au programme depuis la correction du §2 quater.)
+- **6 — quatre figures, périmètre du cercle chaque fois** : cercle **circonscrit** à un carré dont
+  la diagonale mesure 6 صم (diamètre = diagonale) → 3,14 × 6 = **18,84 صم** ; cercle inscrit dans
+  un rectangle de hauteur 3 صم → **9,42 صم** ; deux cercles côte à côte dans un rectangle de
+  hauteur 5 صم → **15,7 صم** chacun (31,4 à eux deux) ; cercle inscrit dans un carré de 4 صم →
+  **12,56 صم**. (Lire le diamètre sur la figure : c'est le côté ou la diagonale.)
+
+- **7 — le ferronnier : trois demi-cercles** posés sur une droite de 16 صم ; diamètres 7 et 5 صم
+  imprimés, celui du milieu **16 − 7 − 5 = 4 صم**. Longueur de fer = demi-périmètres :
+  3,14 × (7 + 4 + 5) : 2 = **25,12 صم** (41,12 si l'on compte aussi la barre droite de 16 صم, que
+  la figure trace en trait plein — énoncé ambigu sur ce point).
+- **8 — l'arc coloré** : un cercle de rayon 2,8 صم privé d'un quart → arc des trois quarts :
+  2 × 3,14 × 2,8 = 17,584 ; × 3/4 = **13,188 صم**.
+- **9 — l'aiguille des minutes** de 25 صم ; distance parcourue par son extrémité en 2 h 30 :
+  2,5 tours × 2 × 3,14 × 25 = 2,5 × 157 = **392,5 صم**.
+
+#### أوظّف
+
+- **10 — le vélo de الشيخ عبد الرحمان** : rayon de roue 0,4 م, 7 500 tours par sortie (aller
+  seulement), 3 sorties par semaine. Périmètre 2 × 3,14 × 0,4 = 2,512 م ; une sortie 18 840 م ;
+  la semaine **56,52 كم**. Le petit-fils الهادي, roue de rayon 0,3 م (périmètre 1,884 م), fait la
+  même distance → 18 840 : 1,884 = **10 000 tours**.
+
+#### أقيّم مكتسباتي
+
+- **11 — la nappe de السيّدة محبوبة.** Table ronde dessinée à l'échelle 1/50 avec un rayon de
+  2 صم → rayon réel **100 صم** ; la nappe retombe de 25 صم → rayon **125 صم**, périmètre
+  2 × 3,14 × 125 = **785 صم**. Trois galons (سفيفة) : 2,8 م + 35 دسم + 95 صم = 280 + 350 + 95 =
+  **725 صم** < 785 → **non, ils ne suffisent pas** (il manque 60 صم). (Mobilise l'**échelle** du
+  chapitre `14` et les **conversions de longueur**.)
+
+### Leçon 46 — « أحسب قيس مساحة القرص الدّائريّ » (ص 133–135)
+
+#### أستحضر
+
+- **1 — le cercle dans le carré.** Carré de 7 صم ; tracer le cercle «د» de centre «و» (le centre
+  du carré) et de rayon 3,5 صم, puis calculer son périmètre : 2 × 3,14 × 3,5 = **21,98 صم**.
+  (C'est la seule **construction au compas** des sept pages.)
+
+#### أستكشف
+
+- **2 — la mosaïque de l'artiste.** Disque de rayon 5 صم au centre d'une plaque de marbre carrée
+  de 10 صم ; 3 tesselles pour 2 صم². Sur papier millimétré : aire du **quart de disque** (par
+  comptage des carreaux), puis aire du **carré ط** de côté 5 صم (le carré de côté le rayon :
+  **25 صم²**), puis la plaque entière (**100 صم²**). « Que remarques-tu ? Passer de l'aire du quart
+  de plaque à celle du disque ; en déduire une règle. » Valeurs exactes : quart de disque
+  3,14 × 25 : 4 = **19,625 صم²** < 25 ; disque **78,5 صم²** = 3,14 × (5 × 5), soit un peu plus de
+  trois fois le carré ط. Tesselles : 78,5 : 2 × 3 = **117,75**, donc **118** tesselles. C'est
+  exactement la مذكرة p.130 du guide (« اكتشاف العلاقة بين مساحة القرص ومساحة المربّع ط »).
+
+#### أتدرّب
+
+- **3 — rayon 7 صم** → 3,14 × 7 × 7 = **153,86 صم²**.
+- **4 — aire 78,5 صم² → rayon ?** 78,5 : 3,14 = 25 = 5 × 5 → **5 صم**. (**Sens inverse** : du
+  produit ر × ر au rayon, par reconnaissance d'un carré.)
+- **5 — diamètre 8 صم** → rayon 4, aire 3,14 × 16 = **50,24 صم²**.
+- **6 — le tableau rayon / aire / périmètre** : (1) ر = 3 صم → **28,26 صم²**, **18,84 صم** ;
+  (2) aire 314 صم² → ر × ر = 100 → ر = **10 صم**, périmètre **62,8 صم** ; (3) périmètre 50,24 صم →
+  ق = 16, ر = **8 صم**, aire **200,96 صم²** ; (4) ر = 30 م → **2 826 م²**, **188,4 م**.
+- **7 — أمل a tracé un cercle de rayon 7,5 صم et trouvé une aire de 47,1 صم².** « Vérifie et
+  justifie. » 47,1 = 2 × 3,14 × 7,5 est le **périmètre** ; l'aire vaut 3,14 × 7,5 × 7,5 =
+  **176,625 صم²**. → **L'erreur type imprimée** : périmètre et aire confondus.
+- **8 — l'espace d'exposition des oranges**, disque de diamètre 6,4 م → rayon 3,2 ; aire
+  3,14 × 10,24 = **32,1536 م²**.
+
+#### أوظّف
+
+- **9 — la porte du menuisier** : carré 2,4 م × 2,4 م surmonté d'un **demi-disque** de diamètre
+  2,4 م. Aire 5,76 + 3,14 × 1,2 × 1,2 : 2 = 5,76 + 2,2608 = **8,0208 م²** ; à 65 د le م² →
+  **521,352 د**.
+- **10 — la piste (couronne)** : périmètre extérieur 314 م → R = 50 م, disque extérieur
+  7 850 م² ; aire de la piste 5 024 م² → disque intérieur 2 826 م² → ر × ر = 900 → rayon intérieur
+  **30 م**.
+
+#### أقيّم مكتسباتي
+
+- **11 — le nuancier de مريم** : planche carrée de 15 صم ; cercle de même centre, diamètre les 4/5
+  du côté = **12 صم** (rayon 6) ; disque partagé en **12 secteurs** de même aire. Périmètre d'un
+  secteur 6 + 6 + 37,68 : 12 = 12 + 3,14 = **15,14 صم** ; aire 113,04 : 12 = **9,42 صم²**.
+
+### Écarts avec la fiche (`programme/6eme-base/maths.md`, thème « الدائرة والقرص »)
+
+1. ⚖️ **Arcs et secteurs chiffrés — PARTIELLEMENT ENSEIGNÉ** (arbitré le 2026-09-23 : le manuel
+   l'emporte sur la fiche, comme pour la division par un décimal). Le manuel en fait calculer cinq :
+   trois demi-cercles (20-7), arc des trois quarts (20-8), demi-disque de la porte (46-9), couronne
+   (46-10), douzièmes de disque (46-11). **Enseigné** (section 8 « نصف الدائرة وربعها ») : demi,
+   quart et trois quarts comme **fraction simple** du périmètre entier et de l'aire du disque
+   entier (lien `13`), la porte coiffée d'un demi-disque (reformulée : 2 m × 2,5 m + demi-disque
+   de diamètre 2 m → 6,57 m², arc 3,14 m), et le piège « le contour du demi-disque oublie le
+   diamètre » (π × ق ÷ 2 + ق = 5,14 m). **Toujours exclus** : angle au centre, secteur de 1/12,
+   formule générale de secteur, couronne. Aucun item du chapitre ne teste encore ces fractions.
+2. 🔧 **Du périmètre au rayon, de l'aire au rayon** (20-5 ; 46-4, 46-6) : sens inverse pratiqué,
+   absent de la fiche, rien ne l'exclut ; il repose sur la **division par un décimal** (47,1 : 3,14),
+   désormais au programme (§2 quater). **Enseigné** comme cas limite des sections « محيط » et
+   « مساحة ».
+3. 🔧 **Le diamètre se lit sur la figure** (20-6 : côté du carré, hauteur du rectangle, diagonale
+   du carré) : omis par la fiche. **Enseigné** dans la section « القطر » (cercle inscrit dans un
+   carré).
+4. 🔧 **Construction au compas d'un cercle de centre et rayon donnés** (46-1) : la fiche cite
+   l'outil (البركار, §3) mais pas la construction dans ce thème. **Enseignée** (section 1, suite
+   d'étapes aux instruments).
+5. 🔧 **« Même nombre, unités différentes »** : 46-6 fait remplir côte à côte aire et périmètre ;
+   l'erreur de 46-7 (47,1 pour une aire) est l'erreur type. Le cours la montre (sections 6 et 7),
+   avec le cas ر = 2 où les deux nombres coïncident (12,56 صم et 12,56 صم²).
+6. ↔️ **Terme** : le manuel dit **شعاع** (et « قيس الشعاع »), la fiche et le corpus **نصف القطر**
+   (ر). Le cours garde « نصف القطر » (tous les items l'emploient) et cite « الشعاع » une fois.
+7. ↔️ **π** : le manuel ne l'imprime pas ; la fiche et les items le nomment (π ≈ 3,14). Gardé : le
+   cours le nomme **après** l'avoir fait découvrir (section 4), comme le manuel.
+8. 🟡 **Échelle et conversions dans un problème de cercle** (20-11 ; 20-10 en كم) : pratiquées,
+   appuyées sur `14` et les conversions ; utilisées dans les exemples sans en faire une notion.
+9. ⚠️ **Coquille** : 20-2, colonne د, « 92,4 » pour **94,2** (diamètre 30). Ne pas reprendre.
+10. ✅ **Exclusions respectées côté manuel** : aucune démonstration de π (découverte par mesures),
+    aucun volume de cylindre (les boîtes de 20-2 ne servent qu'à mesurer un cercle).
+
+### `23-solides-cube-pave` — Leçons 54, 58 (ص 157–160, 165–168)
+
+## Leçons 54 et 58 — lues au manuel élève (102609, ص 157–160, 165–168), 2026-09-23 → chapitre `23-solides-cube-pave`
+
+> **Lu à l'image** (`/root/.cache/yqa-manuels/r/m-157…160.png`, `m-165…168.png`), page par page.
+> Chaque nombre ci-dessous a été **re-calculé** (python, `decimal` / `fractions`, jamais de flottant).
+> Comme partout dans ce manuel : **aucun encadré de cours**. Leçon 54 : **أستحضر** (1) → **أستكشف**
+> (2) → **أتدرّب** (3–9) → **أوظّف** (10–11) → **أقيّم مكتسباتي** (12). Leçon 58 : **أستحضر** (1) →
+> **أستكشف** (2) → **أتدرّب** (3–8) → **أوظّف** (9) → **أقيّم مكتسباتي** (10).
+> Vocabulaire imprimé : مكعّب، متوازي المستطيلات، وجه، حرف، أبعاد، **نشر**، أصنع، **المساحة
+> الجانبيّة**، **المساحة الجمليّة**، قاعدة، طول/عرض القاعدة، ارتفاع، **قيس الحرف**. Les sommets sont
+> nommés en **lettres arabes** (ط ع ز و ك ف ح هـ ; أ د س ص ق ب ن ج). Le mot **رأس** n'est pas
+> imprimé dans ces pages (le tableau de l'ex. 2 compte « عدد أوجهه » et « عدد أحرفه » seulement).
+> Le manuel écrit « صم » pour cm (graphie du manuel) ; le corpus écrit « سم ».
+
+### Leçon 54 — « أتعرّف كلاّ من متوازي المستطيلات والمكعّب وأنشرهما وأصنعهما » (ص 157–160)
+
+#### أستحضر
+
+- **1 — deux murs et leur ombre.** Deux murs de briques en perspective, chacun avec son ombre au sol.
+  Question : forme de la **face avant** de chaque mur (**rectangle**, vu de face) et forme de son
+  **ombre** (un **parallélogramme** — le rectangle vu « en fuite »). → c'est l'amorce de la
+  **perspective cavalière** : la face avant garde sa vraie forme, les faces fuyantes se déforment.
+
+#### أستكشف
+
+- **2 — l'atelier du menuisier (le père d'أشرف).** Douze pièces de bois : prisme hexagonal, pavé plat,
+  prisme en L, tronc de pyramide, deux pyramides, cylindre, boule, prisme triangulaire couché,
+  **cube**, **pavé**. Consigne : choisir **tout corps à 6 faces** qui vérifie l'une des deux
+  propriétés : « faces **carrées superposables** » (→ cube) ou « faces carrées ou rectangulaires
+  **pas toutes superposables** » (→ pavé). Tableau à remplir : الجسم · خاصيّاته · عدد أوجهه ·
+  عدد أحرفه · نوعه. Puis « صناعة علبة » : choisir une boîte de même forme qu'un des corps retenus et
+  dessiner son patron. Réponse attendue : cube → 6 faces, 12 arêtes ; pavé (plat et long) → 6 faces,
+  12 arêtes. ⚠️ Le **tronc de pyramide** a lui aussi **6 faces** (2 carrés + 4 trapèzes) : « 6 faces »
+  ne suffit pas, c'est la **forme** des faces qui décide.
+
+#### أتدرّب
+
+- **3 — le solide en L** : « هل الجسم الممثّل … متوازي المستطيلات؟ أعلّل » → **non** : deux pavés
+  accolés en marche d'escalier ; il a **8 faces** (L avant, L arrière, et 6 faces rectangulaires
+  autour), et 12 sommets — pas 6 faces.
+- **4 — un pavé et un cube étiquetés** (sommets ط ع ز و ك ف ح هـ et أ د س ص ق ب ن ج) : donner les
+  dimensions de chacun ; colorier deux faces nommées par leurs sommets ; **nommer les autres faces**
+  par leurs quatre sommets (renvoi كرّاس ص 29 تمرين 4). → nommer une face par 4 sommets.
+- **5 — quatre patrons de pavé** (أ، ب، ج، د) : « lequel permet de former un pavé ? ». (ج) porte
+  **deux triangles** → il se replie en **prisme**, pas en pavé ; (ب) et (د) sont des croix « 1-4-1 »
+  à faces rectangulaires ; (أ) est aussi une disposition 1-4-1 (les deux carrés d'extrémité sur des
+  colonnes différentes). Réponse : **أ، ب، د** (lecture à l'image, dimensions non mesurables).
+- **6 — quatre patrons de cube** (six carrés chacun) : (أ) ligne de 4 + un carré au-dessus de la
+  3ᵉ colonne + un au-dessous de la 2ᵉ → **patron** ; (ب) ligne de 4 + au-dessus de la 4ᵉ +
+  au-dessous de la 1ʳᵉ → **patron** ; (ج) ligne de 4 + **deux carrés empilés** au-dessus de la
+  3ᵉ colonne → **pas un patron** (le 2ᵉ carré empilé retombe sur la face déjà occupée par la
+  1ʳᵉ colonne de la ligne : deux faces se superposent, une reste ouverte) ; (د) ligne de 4 +
+  au-dessus de la 3ᵉ + au-dessous de la 1ʳᵉ → **patron**. → **6 carrés ne font pas toujours un
+  patron.**
+- **7 — boîte en pavé 2, 5, 4 cm** : dessiner le patron et la fabriquer. Faces : **2 de 5 × 4 = 20**,
+  **2 de 5 × 2 = 10**, **2 de 4 × 2 = 8** cm².
+- **8 — boîte cubique d'arête 5 cm** : patron = 6 carrés de 5 cm (aire d'une face 25 cm²).
+- **9 — dessiner un patron** du pavé dessiné (4 cm, 2 cm, 3 cm, **hauteur 3**) et du cube (3 cm).
+  Les figures imprimées sont en perspective cavalière, arêtes cachées en **pointillés**.
+
+#### أوظّف
+
+- **10 — les pièces en plastique d'أحمد** (pavé dessiné en haut de ص 160 : **50 × 25 × 10 cm**) :
+  plus petit nombre de pièces identiques pour former **un cube** sans les couper, et méthode. Arête
+  du cube = plus petit multiple commun non nul de 50, 25, 10 = **50** → 50 : 50 = 1, 50 : 25 = 2,
+  50 : 10 = 5 → **1 × 2 × 5 = 10 pièces**. (Mobilise les **multiples communs de trois nombres**,
+  chapitre `06`, et un **dénombrement par couches**.)
+- **11 — le dé de ضياء** : « la somme des points de deux faces opposées vaut 7 » ; tableau face →
+  face opposée : **1↔6, 2↔5, 3↔4**. Le dessin montre 3 en haut, 5 devant, 1 à droite (cohérent :
+  aucune paire opposée n'est visible à la fois).
+
+#### أقيّم مكتسباتي
+
+- **12 — les savons cubiques** d'arête 8 cm rangés dans une caisse **40 × 32 × 24** cm : nombre
+  maximal et méthode → 40 : 8 = 5, 32 : 8 = 4, 24 : 8 = 3 → **5 × 4 × 3 = 60 savons**.
+  (**Dénombrement de cubes dans un pavé = idée de volume**, voir écarts.)
+
+### Leçon 58 — « أحسب قيس المساحة الجمليّة وقيس المساحة الجانبيّة لكلّ من متوازي المستطيلات والمكعّب » (ص 165–168)
+
+#### أستحضر
+
+- **1 — tableau de rappel** (périmètre / aire de rectangles et d'un carré, كرّاس ص 30 تمرين 1) :
+  rectangle 35 m × 16,5 m → périmètre **103 m**, aire **577,5 m²** ; carré de périmètre 100 m →
+  côté **25 m**, aire **625 m²** ; rectangle de périmètre 149 m et largeur 29 m → longueur
+  **45,5 m**, aire **1 319,5 m²**. → le **périmètre de la base** et l'**aire de la base** sont les
+  deux briques du chapitre.
+
+#### أستكشف
+
+- **2 — les deux boîtes en verre épais** de ضياء et أمل (pour protéger des objets de la poussière),
+  **toutes les faces en verre** ; prix du verre **14 د le m²**. Boîte 1 : cube d'arête **30 cm** →
+  face 900 cm², totale **5 400 cm² = 0,54 m²** → **7,560 د**. Boîte 2 : pavé 40 cm × 20 cm, hauteur
+  25 cm → latérale 2 × (40 + 20) × 25 = **3 000 cm²**, bases 2 × 800 = 1 600, totale **4 600 cm² =
+  0,46 m²** → **6,440 د**. Puis « exposer, rédiger les conclusions ». → **aire totale** + **conversion
+  cm² → m²** + **coût**.
+
+#### أتدرّب
+
+- **3 — l'armoire métallique d'عثمان** 1,2 m × 0,5 m × 0,9 m : aire des tôles utilisées → toutes les
+  faces : latérale 2 × 1,7 × 0,9 = **3,06 m²**, base 0,6 m², totale **4,26 m²**.
+- **4 — le cube publicitaire en verre** d'arête **0,5 m** sur un poteau : aire de verre utilisée
+  (6 faces : **1,5 m²** ; 5 faces si la face posée sur le poteau n'est pas en verre : 1,25 m² — le
+  manuel ne tranche pas) ; « une plaque de 1,5 m × 1 m suffit-elle ? Justifier par le calcul » →
+  aire 1,5 m² = 1,5 m², et **3 × 2 = 6 carrés de 0,5 m** se découpent exactement dans la plaque →
+  **oui**, juste assez pour 6 faces.
+- **5 — la boîte-plumier d'أمل** : cube d'arête **20 cm**, recouvrir **la surface latérale** de papier
+  coloré : plus petite aire possible → **4 × 400 = 1 600 cm²**. (Distinction latérale / totale.)
+- **6 — la jardinière d'العمّ مسك** : fond et côtés en planches (**sans couvercle**) ; figure : longueur
+  **60 cm**, largeur **25 cm**. ⚠️ **La hauteur n'est pas imprimée** (aucune cote verticale sur la
+  figure) : exercice **incomplet**, à ne pas reprendre tel quel. La structure (fond + 4 côtés =
+  latérale + **une seule** base) est la bonne idée.
+- **7 — tableau de synthèse** (كرّاس ص 30 تمرين 7) : cube d'arête 15 m → base **225 m²**, latérale
+  **900 m²**, totale **1 350 m²** ; pavé 5 × 4 × 2 m → base **20**, latérale 2 × 9 × 2 = **36**,
+  totale **76 m²** ; cube de base 25 m² → arête **5 m**, latérale **100**, totale **150** ; pavé de
+  largeur 6 m, base 54 m², totale 198 m² → longueur 54 : 6 = **9 m**, latérale 198 − 108 = **90 m²**,
+  périmètre de base 2 × 15 = 30 → hauteur 90 : 30 = **3 m**. → **lecture inverse des formules**.
+- **8 — deux cubes de ضياء** d'arête **2,5 dm** accolés → un pavé 5 × 2,5 × 2,5 dm ; aire totale
+  « de plus d'une façon » : 2 × 6,25 + 4 × 12,5 = **62,5 dm²**, ou 2 × 37,5 − 2 × 6,25 = **62,5 dm²**
+  (les deux faces collées disparaissent : l'aire du pavé ≠ somme des aires des cubes, 75).
+
+#### أوظّف
+
+- **9 — la salle des fêtes** : deux salles contiguës à base carrée de **9 m**, hauteur **3,25 m** ;
+  chacune a 6 fenêtres 1,5 m × 1 m et une porte 2,5 m × 1 m. On abat le mur mitoyen → salle
+  18 × 9 × 3,25 ; on isole **plafond et murs** à **12,900 د le m²** ; sièges à raison de **0,75 m²**
+  par siège ; démolition + sièges = **11/3** du coût de l'isolation. Calculs : murs 2 × (18 + 9) ×
+  3,25 = **175,5 m²** ; plafond **162 m²** ; sièges 162 : 0,75 = **216**. Si l'on retire les
+  ouvertures des deux salles (12 fenêtres = 18 m², 2 portes = 5 m²) : isolation **314,5 m²** →
+  **4 057,050 د** ; démolition + sièges 11/3 × 4 057,050 = **14 875,850 د** ; total **18 932,900 د**.
+  (Sans retrait d'ouvertures : 337,5 m² ; avec une seule série 6 + 1 : 326 m² → 4 205,400 د.) ⚠️
+  L'énoncé ne dit pas s'il faut retirer les ouvertures ni combien restent après fusion : **énoncé
+  ambigu**, à ne pas reprendre.
+
+#### أقيّم مكتسباتي
+
+- **10 — le bassin de marbre** : dalles carrées de **25 cm**, bassin en pavé 8 m × 6 m, profondeur
+  **2 m** (ouvert : fond + 4 parois) ; boîtes de **24 dalles** à **36 د**. Surface : 48 + 2 × 14 × 2 =
+  48 + 56 = **104 m²** ; une dalle = 0,0625 m² → **1 664 dalles** ; 1 664 : 24 = 69,33… → **70 boîtes**
+  → **2 520 د**. Prix du m² « de plus d'une façon » : une boîte couvre 24 × 0,0625 = 1,5 m² → 36 : 1,5 =
+  **24 د** ; ou 16 dalles au m², une dalle 36 : 24 = 1,5 د → 16 × 1,5 = **24 د**.
+
+### Écarts avec la fiche (`programme/6eme-base/maths.md`, thème « المكعّب ومتوازي المستطيلات »)
+
+1. ⛔→⚠️ **Dénombrement de cubes/pavés empilés** (54-10 : 10 pièces ; 54-12 : 60 savons) : c'est
+   l'**idée de volume** (combien de petits solides remplissent un grand, par couches), que la fiche
+   **EXCLUT** (« aucune formule de volume … le chapitre se limite à la surface »). Le manuel ne donne
+   aucune formule ni unité cube, mais la démarche 5 × 4 × 3 est celle du volume. **Non enseigné** ;
+   à trancher (compter des objets rangés n'est pas nommer un volume).
+2. 🔧 **Reconnaître le pavé et le cube parmi d'autres solides** (54-2, 54-3) : la fiche liste les
+   éléments mais pas le **critère de reconnaissance** (6 faces **ET** leur forme — rectangles
+   superposables deux à deux / carrés superposables). Le manuel en fait la séance d'ouverture, avec
+   le L (8 faces) et le tronc de pyramide (6 faces non rectangulaires) comme contre-exemples.
+   **Enseigné** (section 1). Les autres solides servent de contre-exemples, jamais étudiés (⛔ fiche).
+3. 🔧 **Patron : tout assemblage de 6 carrés n'est pas un patron** (54-6 ج) et **faces opposées dans
+   un patron** (54-11, le dé : 1↔6, 2↔5, 3↔4). La fiche dit « النشر (patron) » sans plus. **Enseigné**
+   (section 4 : critère « chaque arête rencontre une seule arête de même longueur », la croix 1-4-1,
+   faces opposées séparées d'une face dans la bande).
+4. 🔧 **Conversion cm² → m² et coût au m²** (58-2, 58-10) : pratiqués, absents de la fiche du thème
+   (ils relèvent de `20-aires-polygones`, facteur 100). **Enseignés comme application** (section 6 :
+   5 400 cm² = 0,54 m² → 7,560 د ; section 8 : 4 600 cm² = 0,46 m²).
+5. 🔧 **Boîte ouverte = latérale + UNE base** (58-6 jardinière, 58-9 salle sans sol, 58-10 bassin) :
+   ni latérale ni totale — la fiche n'a que les deux formules. **Enseigné** comme cas limite
+   (section 8, bassin 8 × 6 × 2 → 104 m²).
+6. 🔧 **Lecture inverse des formules** (58-7 : arête depuis l'aire d'une face ; hauteur depuis
+   totale, base et largeur) : pratiquée, absente de la fiche. **Enseignée** en cas limite (sections 6
+   et 8).
+7. 🔧 **Solides accolés** (58-8 : deux cubes → pavé, 62,5 dm² et non 75) : pratiqué. **Enseigné** en
+   cas limite (section 8).
+8. 🟡 **Nommer une face par ses 4 sommets** (54-4, lettres arabes) : pratiqué, absent de la fiche.
+   **Non enseigné** comme notion (le cours ne nomme pas les sommets) — à trancher ; rien dans les
+   items ne le teste.
+9. 🟡 **Multiples communs de trois nombres réinvestis** (54-10, 50 / 25 / 10 → 50) : acquis du
+   chapitre `06`, lié à l'écart 1. Non repris.
+10. ↔️ **Sens inverse — la fiche porte ce que ces pages n'impriment pas** : le mot **رأس** (sommets)
+    et le compte **8 sommets** ; le manuel ne compte que faces et arêtes. Gardés (section 2) : la
+    fiche les liste et les items les testent (« كم رأسًا… » ×2).
+11. ⚠️ **Exercices à ne jamais reprendre** : 58-6 (hauteur non imprimée), 58-9 (ouvertures ambiguës),
+    58-4 (6 ou 5 faces de verre : non tranché).
+12. ✅ **Exclusions respectées** : aucune formule de volume, aucune unité cube (م³ / سم³) imprimée
+    dans ces 8 pages ; prisme, pyramide, cylindre, boule n'apparaissent qu'en contre-exemples (54-2).
+
 ### Domaine : **التصرّف في المقادير — قيس** (grandeurs & mesure) — مكوّن 2 p.58
 
 #### Thème : **المُدَد الزمنيّة** (durées) — chapitre publié `22-durees`
