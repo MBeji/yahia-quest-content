@@ -1,5 +1,9 @@
 # 91 — Actions Mohamed (consolidé)
 
+> ⛔ **Figé le 2026-09-23.** La liste vivante du reste-à-faire est la feuille de route de
+> [`STATUS.md` §6](https://github.com/MBeji/yahia-quest-arena/blob/main/STATUS.md) (§6.2 : ce qui
+> attend le propriétaire). Ce fichier reste comme trace datée du programme go-live.
+
 > Liste unique des actions **côté Mohamed** sur tout le programme go-live, par priorité.
 > Légende : 🟦 action 100 % toi · 🟨 toi → tu me donnes X → je code · ⏳ pas urgent.
 > Mise à jour : 2026-06-13 · revue 2026-07-11 (pivot gratuité : section C gelée ; E2 automatisé) ·

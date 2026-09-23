@@ -9,7 +9,7 @@
 > `YahiaAcademy/go-live/`, **hors de tout dépôt git** — donc sans historique, sans revue et
 > sans sauvegarde autre que sa copie sur un disque. Il rejoint `FableEtudes/` parce que c'est
 > le même métier : de la conception qui se planifie, s'arbitre et se journalise, à côté de la
-> [ROADMAP](../ROADMAP.md) et des études.
+> feuille de route ([`STATUS.md` §6](https://github.com/MBeji/yahia-quest-arena/blob/main/STATUS.md)) et des études.
 >
 > **Topo central côté moteur** (phase, décisions, état features/études) : `STATUS.md` du dépôt
 > `MBeji/yahia-quest-arena` (public) — ouvrir une session ici et l'y ajouter en second checkout.
