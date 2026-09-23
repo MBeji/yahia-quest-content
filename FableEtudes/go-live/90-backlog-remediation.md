@@ -1,5 +1,9 @@
 # 90 — Backlog de remédiation (transverse)
 
+> ⛔ **Figé le 2026-09-23.** La liste vivante du reste-à-faire est la feuille de route de
+> [`STATUS.md` §6](https://github.com/MBeji/yahia-quest-arena/blob/main/STATUS.md) (§6.2 : ce qui
+> attend le propriétaire). Ce fichier reste comme trace datée du programme go-live.
+
 > Pilotage : [00-MASTER-PLAN.md](./00-MASTER-PLAN.md).
 > **Entonnoir unique** : tout constat actionnable des chantiers (anomalie, risque, gap) devient
 > une ligne ici. C'est depuis ce fichier qu'on lance les sessions d'implémentation.

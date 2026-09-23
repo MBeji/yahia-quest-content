@@ -10,7 +10,7 @@ git** : pas d'historique, pas de revue, aucune sauvegarde qu'une copie sur un di
 91 MB dont 90 de binaire k6. Il rejoint `FableEtudes/` parce que c'est la même nature de
 travail : de la conception qui se planifie, s'arbitre et se journalise. Les études disent
 _quelle capacité produit construire_ ; le go-live dit _à quelles conditions on la met en
-production_. Ils partagent la [ROADMAP](../ROADMAP.md) et le même jalon de rentrée.
+production_. Ils partagent la feuille de route ([`STATUS.md` §6](https://github.com/MBeji/yahia-quest-arena/blob/main/STATUS.md)) et le même jalon de rentrée.
 
 ## Ce qui a été élagué au versement
 
