@@ -148,10 +148,10 @@
 
 - **1ere-base** : **maths** (`102105`)
 - **2eme-base** : **maths** (`102210`)
-- **3eme-base** : **eveil** (`103304`) · **maths** (`102306`)
-- **4eme-base** : **eveil** (`103404`) · **francais** (`121410`, `121411`, `521417`) · **maths** (`102407`)
-- **5eme-base** : **eveil** (`103504`) · **francais** (`121511`, `121512`) · **islamique-civique** (`111512`) · **maths** (`102511`)
-- **6eme-base** : **francais** (`121614`, `121615`, `521613`) · **islamique-civique** (`111612`)
+- **3eme-base** : **eveil** (`103304`) · **francais** (`521322`) · **maths** (`102306`, `502305`)
+- **4eme-base** : **eveil** (`103404`) · **francais** (`121410`, `121411`, `521417`, `521418`) · **maths** (`102407`)
+- **5eme-base** : **eveil** (`103504`) · **francais** (`121511`, `121512`, `521516`) · **islamique-civique** (`111512`) · **maths** (`102511`, `502504`)
+- **6eme-base** : **francais** (`121614`, `121615`, `521613`, `521616`) · **islamique-civique** (`111612`) · **maths** (`502604`)
 - **7eme-base** : **anglais** (`141705`, `141706`) · **eveil** (`103702`) · **francais** (`121707`) · **informatique** (`133701`, `133702`) · **islamique-civique** (`111706`, `111707`) · **maths** (`102707`) · **sciences-physiques** (`123702`) · **svt** (`105704`)
 - **8eme-base** : **anglais** (`141806`, `141807`) · **eveil** (`103802`) · **francais** (`121804`) · **islamique-civique** (`111807`, `111809`) · **maths** (`102805`) · **sciences-physiques** (`123801`) · **svt** (`105804`)
 - **9eme-base** : **anglais** (`141906`, `141907`) · **arabe** (`101909`) · **eveil** (`103902`) · **francais** (`121905`) · **islamique-civique** (`111909`, `111911`) · **sciences-physiques** (`123901`)
@@ -165,7 +165,7 @@
 - **annexe** : 16 PDF
 - **hors-perimetre** : 16 PDF
 - **differee** : 25 PDF
-- **enrichissement** : 21 PDF
+- **enrichissement** : 10 PDF
   - décisions en attente (`differee`) : `128703`, `128803`, `128903`, `228103`, `228233`, `228362`, `228363`, `228461`, `228462`
 
-**Totaux (calculés)** : 58 fiches suivies (40 partielle · 11 complete · 7 validee-r7) · 346 PDF au corpus · 134 œuvres principales restant à rattacher.
+**Totaux (calculés)** : 58 fiches suivies (40 partielle · 11 complete · 7 validee-r7) · 346 PDF au corpus · 141 œuvres principales restant à rattacher.
