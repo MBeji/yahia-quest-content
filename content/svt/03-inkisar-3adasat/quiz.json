@@ -22,11 +22,11 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "انكسار الضوء هو تغيير اتّجاهه عند انتقاله من وسط شفّاف إلى وسط شفّاف آخر مختلف الكثافة الضوئية عند سطح الفصل بين الوسطين.",
+      "explanation": "انكسار الضوء هو تغيّر مساره عند مروره من وسطٍ شفّاف إلى وسطٍ شفّاف آخر، على مستوى السطح الفاصل بينهما. أمّا ارتداد الضوء عن سطحٍ عاكس فهو الانعكاس، وانتشاره في خطوطٍ مستقيمة يخصّ وسطًا واحدًا متجانسًا، ولا يمتصّ الزجاج الشفّاف الضوء كلّه.",
       "difficulty": 1
     },
     {
-      "prompt": "عند انتقال الضوء من الهواء (وسط أقلّ كثافة) إلى الزجاج (وسط أكثر كثافة)، تكون زاوية الانكسار:\n<svg viewBox=\"0 0 300 200\">\n<title>شعاع وارد من الهواء إلى الزجاج</title>\n<line x1=\"20\" y1=\"105\" x2=\"280\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"40\" y=\"93\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"14\">هواء</text><text x=\"40\" y=\"127\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">زجاج</text></g><line x1=\"150\" y1=\"24\" x2=\"150\" y2=\"186\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"180\" y=\"34\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"11\">الناظم</text></g><circle cx=\"150\" cy=\"105\" r=\"2.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\"/><line x1=\"79.29\" y1=\"20.74\" x2=\"150\" y2=\"105\" stroke=\"#ef4444\" stroke-width=\"2.6\"/><polygon points=\"150,105 146.76,93.36 139.1,99.79\" fill=\"#ef4444\" stroke=\"#ef4444\" stroke-width=\"0\"/><path d=\"M 128.15 78.95 A 34 34 0 0 1 150 71\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.8\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"127.74\" y=\"76.81\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"13\">i</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"79.29\" y=\"10.74\" text-anchor=\"middle\" fill=\"#ef4444\" font-size=\"11\">الشعاع الوارد</text></g>\n</svg>",
+      "prompt": "حزمة ضوئيّة تمرّ من الهواء إلى الزجاج بزاوية ورود i (الشكل). تكون زاوية الانكسار r:\n<svg viewBox=\"0 0 300 200\">\n<title>شعاع وارد من الهواء إلى الزجاج</title>\n<line x1=\"20\" y1=\"105\" x2=\"280\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"40\" y=\"93\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"14\">هواء</text><text x=\"40\" y=\"127\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">زجاج</text></g><line x1=\"150\" y1=\"24\" x2=\"150\" y2=\"186\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"180\" y=\"34\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"11\">العمود</text></g><circle cx=\"150\" cy=\"105\" r=\"2.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\"/><line x1=\"79.29\" y1=\"20.74\" x2=\"150\" y2=\"105\" stroke=\"#ef4444\" stroke-width=\"2.6\"/><polygon points=\"150,105 146.76,93.36 139.1,99.79\" fill=\"#ef4444\" stroke=\"#ef4444\" stroke-width=\"0\"/><path d=\"M 128.15 78.95 A 34 34 0 0 1 150 71\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.8\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"127.74\" y=\"76.81\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"13\">i</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"79.29\" y=\"10.74\" text-anchor=\"middle\" fill=\"#ef4444\" font-size=\"11\">الشعاع الوارد</text></g>\n</svg>",
       "options": [
         {
           "id": "a",
@@ -38,7 +38,7 @@
         },
         {
           "id": "c",
-          "text": "أصغر من زاوية الورود (ينكسر نحو الناظم)"
+          "text": "أصغر من زاوية الورود (ينعطف الشعاع نحو العمود)"
         },
         {
           "id": "d",
@@ -46,79 +46,79 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "عند الانتقال من وسط أقلّ كثافة إلى وسط أكثر كثافة ينكسر الضوء نحو الناظم، أي أنّ زاوية الانكسار تكون أصغر من زاوية الورود (i₂ < i₁).",
+      "explanation": "من الهواء إلى وسطٍ شفّاف آخر ينعطف الشعاع المنكسر نحو العمود المقام على السطح الفاصل، فتكون r < i (قانون الزوايا). المساواة r = i قانون الانعكاس لا الانكسار، و r > i تخصّ خروج الضوء إلى الهواء، ولا تبلغ r القيمة 90° لأنّها لا تتجاوز زاوية الانكسار القصوى λ.",
       "difficulty": 2
     },
     {
-      "prompt": "ما الفرق بين العدسة المجمّعة والعدسة المفرّقة؟",
+      "prompt": "عند مرور الضوء من الهواء إلى وسطٍ شفّاف، ما اسم أكبر قيمة يمكن أن تبلغها زاوية الانكسار؟",
       "options": [
         {
           "id": "a",
-          "text": "العدسة المجمّعة أرقّ في المنتصف وتفرّق الأشعّة، والمفرّقة أثخن وتجمّعها"
+          "text": "زاوية الانكسار القصوى λ"
         },
         {
           "id": "b",
-          "text": "العدسة المجمّعة (محدّبة) أثخن في المنتصف وتجمّع الأشعّة الموازية، والمفرّقة (مقعّرة) أرقّ وتفرّق الأشعّة"
+          "text": "زاوية الورود i"
         },
         {
           "id": "c",
-          "text": "كلتاهما تجمّعان الأشعّة لكن بطريقتَين مختلفتَين"
+          "text": "زاوية الانعكاس"
         },
         {
           "id": "d",
-          "text": "العدسة المجمّعة لا تُنتج صورة حقيقية أبدًا"
+          "text": "العمود (NN′)"
         }
       ],
-      "correctOption": "b",
-      "explanation": "العدسة المجمّعة (المحدّبة) أثخن في المنتصف وتجمّع الأشعّة الموازية في نقطة واحدة تُسمّى البؤرة. والعدسة المفرّقة (المقعّرة) أرقّ في المنتصف وتفرّق الأشعّة الموازية.",
+      "correctOption": "a",
+      "explanation": "كلّما اقترب الشعاع الوارد من السطح الفاصل ارتفعت r، لكنّها لا تتجاوز قيمة قصوى تُسمّى زاوية الانكسار القصوى λ (42° للبليكسيقلاس، 49° للماء). زاوية الورود وزاوية الانعكاس تخصّان الشعاع الوارد والمنعكس، والعمود مستقيم لا زاوية.",
       "difficulty": 1
     },
     {
-      "prompt": "ما «البُعد البؤري» في العدسة المجمّعة؟",
+      "prompt": "ما اسم الظاهرة التي يرتدّ فيها الضوء كلّه إلى الوسط الشفّاف الذي جاء منه، دون أيّ شعاع منكسر؟",
       "options": [
         {
           "id": "a",
-          "text": "قطر العدسة"
+          "text": "الانتثار"
         },
         {
           "id": "b",
-          "text": "المسافة بين المركز البصري والبؤرة"
+          "text": "انكسار الضوء"
         },
         {
           "id": "c",
-          "text": "المسافة بين الجسم والعدسة"
+          "text": "الانتشار المستقيمي للضوء"
         },
         {
           "id": "d",
-          "text": "المسافة بين العدسة والصورة"
+          "text": "الانعكاس الكلّي"
         }
       ],
-      "correctOption": "b",
-      "explanation": "البُعد البؤري f هو المسافة بين المركز البصري للعدسة (O) وبؤرتها (F)، ويُرمز له بـ f = OF. كلّما زاد تحدّب العدسة قلّ البُعد البؤري وزادت قوّة التجميع.",
+      "correctOption": "d",
+      "explanation": "إذا مرّ الضوء من وسطٍ شفّاف إلى الهواء بزاوية ورود أكبر من الزاوية الحرجة استحال الانكسار (الانكسار الحدّي)، فارتدّ الضوء كلّه: هذا هو الانعكاس الكلّي. في الانكسار العاديّ يعبر جزء من الضوء إلى الوسط الثاني، والانتثار يخصّ السطوح غير الصقيلة.",
       "difficulty": 1
     },
     {
-      "prompt": "عند وضع جسم داخل البُعد البؤري (d < f) لعدسة مجمّعة، تكون الصورة:\n<svg viewBox=\"0 0 300 180\">\n<title>جسم بين العدسة والبؤرة (d < f)</title>\n<line x1=\"16\" y1=\"96\" x2=\"284\" y2=\"96\" stroke=\"#64748b\" stroke-width=\"1.6\"/><line x1=\"160\" y1=\"50\" x2=\"160\" y2=\"142\" stroke=\"#2563eb\" stroke-width=\"3\"/><polygon points=\"160,42 154,52 166,52\" fill=\"#2563eb\" stroke=\"#2563eb\" stroke-width=\"0\"/><polygon points=\"160,150 154,140 166,140\" fill=\"#2563eb\" stroke=\"#2563eb\" stroke-width=\"0\"/><circle cx=\"160\" cy=\"96\" r=\"2.4\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"160\" y=\"116\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"12\">O</text></g><circle cx=\"114\" cy=\"96\" r=\"2.4\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"114\" y=\"116\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"12\">F</text></g><circle cx=\"206\" cy=\"96\" r=\"2.4\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"206\" y=\"116\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"12\">F′</text></g><circle cx=\"68\" cy=\"96\" r=\"2.4\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"68\" y=\"116\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"12\">2F</text></g><circle cx=\"252\" cy=\"96\" r=\"2.4\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"252\" y=\"116\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"12\">2F′</text></g><line x1=\"132\" y1=\"96\" x2=\"132\" y2=\"56\" stroke=\"#ef4444\" stroke-width=\"3\"/><polygon points=\"132,50 127,58 137,58\" fill=\"#ef4444\" stroke=\"#ef4444\" stroke-width=\"0\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"132\" y=\"42\" text-anchor=\"middle\" fill=\"#ef4444\" font-size=\"12\">الجسم</text></g>\n</svg>",
+      "prompt": "شعاع ضوئيّ يصل من داخل الماء إلى سطحه مع الهواء بزاوية ورود i = 60°. الزاوية الحرجة للماء 49°. ماذا يحدث في نقطة الورود؟",
       "options": [
         {
           "id": "a",
-          "text": "حقيقية، مصغّرة، مقلوبة"
+          "text": "ينكسر إلى الهواء منعطفًا نحو العمود (r < i)"
         },
         {
           "id": "b",
-          "text": "حقيقية، مكبّرة، مقلوبة"
+          "text": "يستحيل الانكسار ويرتدّ الضوء كلّه في الماء (انعكاس كلّي)"
         },
         {
           "id": "c",
-          "text": "تخيّلية، مكبّرة، معتدلة"
+          "text": "ينكسر إلى الهواء منعطفًا نحو السطح الفاصل (r > i)"
         },
         {
           "id": "d",
-          "text": "تخيّلية، مصغّرة، مقلوبة"
+          "text": "يعبر إلى الهواء دون انحراف"
         }
       ],
-      "correctOption": "c",
-      "explanation": "عند وضع الجسم داخل البُعد البؤري (d < f) تكون الصورة تخيّلية ومكبّرة ومعتدلة الاتّجاه. هذا هو مبدأ عمل العدسة المكبّرة.",
+      "correctOption": "b",
+      "explanation": "الضوء يمرّ من وسطٍ شفّاف (الماء) إلى الهواء، و 60° أكبر من الزاوية الحرجة 49°: فيحدث الانكسار الحدّي ويترتّب عنه انعكاس كلّي. لو كانت i أصغر من 49° لانكسر الضوء نحو السطح الفاصل (r > i)؛ و r < i تخصّ الدخول من الهواء، والعبور دون انحراف لا يحدث إلّا عند i = 0°.",
       "difficulty": 3
     }
   ]
