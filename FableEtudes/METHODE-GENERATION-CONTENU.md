@@ -770,7 +770,10 @@ Deux parades, l'une en amont, l'autre en aval (§ B3) :
   3. **un distracteur étoffé ne se contredit pas** — « بدل مرفوع » d'un mot visiblement منصوب
      s'élimine à vue : il ne se trompe que sur UNE chose ;
   4. **jamais de renvoi positionnel** (« الأولى », « الثالثة ») pour désigner une option :
-     l'affichage les mélange ; citer le texte.
+     l'affichage les mélange ; citer le texte ;
+  5. **aucune notion pas encore enseignée** — un distracteur étoffé qui invoque « حال » au
+     chapitre 21 quand الحال est au chapitre 23 (vu deux fois, tranches 2 et 3) : l'élève ne
+     peut ni le choisir en connaissance de cause, ni l'écarter.
   Le mandat complet, à donner tel quel à un correcteur par chapitre :
   `.claude/skills/content-engine/references/correction-cle-longue.md` — puis un auditeur par
   chapitre en contexte vierge (§ B3), `content:gates -- --tranche`, PR, dispatch.
