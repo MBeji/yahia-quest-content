@@ -211,13 +211,17 @@ Points de vigilance, tous hérités de la méthode :
 - **Sous-agents** : un lot = un contexte frais (T-4). Délègue le lot à un sous-agent quand le harnais
   le permet, et garde le rôle d'orchestrateur mince. Écriture parallèle ⇒ **périmètre nommé** par
   agent **et chemin des chapitres déjà publiés**, sinon le moule d'un item se rejoue d'un chapitre à
-  l'autre : c'est le défaut n°1 des tranches livrées, et aucun gate ne le voit (méthode, B2 « le
-  doublon de gabarit »). Avant chaque commit, les **trois mesures muettes** de ce même §.
+  l'autre : c'est le défaut n°1 des tranches livrées (méthode, B2 « le doublon de gabarit »).
+  Avant chaque commit : `npm run content:tranche -- --changed` — les trois mesures muettes **et**
+  les candidats gabarit, croisés avec les chapitres publiés ; ses groupes vont au mandat de
+  l'auditeur.
 
 ## 4. Gates, PR, garde jusqu'au merge
 
-Depuis `engine/`, 0 erreur exigé — `programme:check` pour un lot de fiche ; `content:check`,
-`content:qa:strict`, `content:audit` (+ l'audit pédagogique `content-audit` sur les chapitres de la
+Depuis `engine/`, 0 erreur exigé — **`npm run content:gates -- --tranche`** rejoue d'un coup les sept
+étages de la Content CI (dont `programme:check` pour un lot de fiche ; `content:check`,
+`content:qa:strict`, `content:audit` pour un lot de contenu) et les mesures de tranche, et mesure le
+retard du moteur (§ 0) — (+ l'audit pédagogique `content-audit` sur les chapitres de la
 tranche — **un auditeur par chapitre, en contexte vierge, qui n'a rien écrit de ce qu'il relit** ;
 les quatre points de son mandat sont en B3 de la méthode) pour un lot de contenu. Un gate vert ne
 dit rien du fond : sur deux tranches d'anglais 1ère sec, les quatre gates étaient verts, les

@@ -117,16 +117,18 @@ auto-vérification) : `.claude/skills/content-engine/references/quality-bar.md`.
 ## Commandes
 
 ```bash
+# depuis le moteur (yahia-quest-arena), corpus branché par le lien `content` :
+npm run content:gates -- --tranche    # les 7 étages de la Content CI + les mesures de tranche
+npm run content:tranche -- --changed  # seules les mesures de tranche (méthode § B2)
 npm run content:check                 # valide tout le contenu (n'écrit rien)
-npm run content:build -- --subject <id>   # régénère la migration du SEUL sujet modifié
 ```
 
-> ⚠️ **Ne lance jamais `content:build` sans `--subject`** : il régénère les ~60 sujets avec un
-> horodatage neuf → des dizaines de migrations parasites (doublons de sujets non modifiés) qu'il ne
-> faut **pas** committer. Toujours cibler `--subject <id>` (une fois par sujet changé). Un build
-> complet involontaire se nettoie avec `git clean -f supabase/migrations/`.
-> `--subject` désigne le **dossier source** : un dossier partagé (`compileTo`)
-> régénère d'un coup ses N migrations `_generated_<id-cible>_content.sql`.
+> ⛔ **Ne lance jamais `content:build`** (avec ou sans `--subject`) : depuis l'étude 24 le contenu
+> ne voyage plus en migrations, et sans `--sql-dir` ce script en écrit dans le dépôt **moteur**
+> public — canal mort, et fuite de corpus que `leak:check` bloque. Un commit de contenu ne porte
+> que des fichiers `content/`. Pour lire le SQL d'un sujet (facultatif, jamais committé) :
+> `node --experimental-strip-types scripts/content/build.ts --subject <id> --sql-dir /tmp/sql-check`
+> — un dossier partagé (`compileTo`) y émet un fichier par section cible.
 
 > **Quel skill pour quoi ?** La carte complète du pipeline (skills de base `content-*` pour
 > créer/compléter un chapitre vs professeurs `prof-*` pour rehausser le plafond en d3–4, + règles
@@ -155,15 +157,11 @@ réponse — sinon rester en texte. Détails + `svglib.mjs` : voir le README de 
 
 ## Workflow DB ↔ code
 
-Le SQL généré est **appliqué automatiquement à la prod au merge sur `main`**
-(workflow `db-migrate-prod.yml`, voir `AGENTS.md` §7) — on n'applique **jamais**
-à la main. Ordre : `content:build` → relire le SQL → ouvrir la PR → merge (la
-migration part en prod toute seule) → le code dépendant suit.
+Le contenu **ne passe plus par les migrations** (étude 24 D-3) : `apply-content.yml` (ce dépôt)
+compile chaque sujet en un fichier stable `sql/content/<sujet>.sql` et l'applique — en
+**`workflow_dispatch` seulement**, donc **après** le merge et par un geste délibéré (un merge
+n'applique rien). Le run garde la cible, prend un `pg_dump`, applique chaque sujet en une
+transaction idempotente (rejouer est sûr) et journalise dans `content_releases` ;
+`content-drift.yml` signale tout sujet dont `main` a bougé sans application. Procédure :
+`FableEtudes/METHODE-GENERATION-CONTENU.md` § B3. On n'applique **jamais** à la main.
 
-**Mettre à jour un sujet déjà en prod** : `content:build` écrit une migration à **horodatage neuf**
-(comportement par défaut) — la garder telle quelle. Régénérer **en place** (même horodatage via
-`--timestamp <existant>`) ne sert à rien en prod : `db push` la voit comme **déjà appliquée** et la
-**saute** (log « Remote database is up to date »), donc le nouveau contenu n'atteint jamais la base.
-Vérifier le log du run `db-migrate-prod` : il doit lister `Applying migration <ts>_generated_<id>…`. Les
-anciennes migrations générées du sujet restent (les supprimer casse l'historique ; `math`/`math-6eme` en
-cumulent déjà plusieurs, c'est attendu).

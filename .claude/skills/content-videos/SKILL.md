@@ -80,8 +80,9 @@ Record the verdict of each in the entry's `notes`.
    `correctionVideo: "<id>"` on a boss exercise when a dedicated
    "classic mistakes" video exists.
 8. **Validate**: `npm run content:check` then `npm run content:qa:strict`.
-9. **Rebuild only the touched subject**: `npm run content:build -- --subject <id>`
-   — **never** bare `content:build` (it regenerates all ~60 subjects).
+9. **Nothing to build**: commit the `content/` files only (étude 24 — content no longer ships as
+   migrations; **never** run `content:build`). After the merge, the touched subjects are published
+   by dispatching `apply-content.yml` (method § B3).
 10. **The PR description lists every video added** with channel, duration, notion
     and the reason it was selected (R-3).
 
@@ -128,7 +129,7 @@ _proposes_: **a human applies the change.** To retire one:
 
 1. set its `status` to `broken` (or `retired`), or replace the video;
 2. drop or re-point the refs in the affected `chapter.json` / exercise files;
-3. rebuild those subjects (`content:build -- --subject <id>`).
+3. merge, then republish those subjects (`apply-content.yml`, `subjects="<id>"` — method § B3).
 
 A network failure is reported as `unknown`, never `broken` — never retire a video
 on an unverified verdict.

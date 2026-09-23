@@ -109,9 +109,9 @@ official scope + language of instruction).
 7. `npm run content:check` **and `npm run content:qa`** (read the warnings of your own subject:
    the pattern checks C-1…C-6 are yours) — then **stop and report**: chapter(s) touched, the
    notion → times → blocks map, the `coursePitfalls` declared per chapter, the length before and
-   after, the tested-notion coverage map, axis-by-axis self-assessment, and the human's build/apply steps
-   (a course rewrite changes `chapters` rows → `content:build` + apply before deploy, UUIDs
-   stable).
+   after, the tested-notion coverage map, axis-by-axis self-assessment, and the publish step
+   (a course rewrite changes `chapters` rows → after the merge, dispatch `apply-content.yml` for the
+   subject — method § B3; UUIDs stable; never `content:build`).
 
 ## Quality specifics to honor
 

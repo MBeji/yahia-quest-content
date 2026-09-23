@@ -60,8 +60,9 @@ produit une **worklist périmée**. Lancer ce runbook seulement quand la génér
 
 4. **Persister** : `programmes-officiels/audit/<AAAA-MM-JJ>-<scope>.md`, **en-tête tamponné** de l'empreinte
    (« valide au commit `<SHA>` — ré-auditer si le contenu a bougé »). C'est la worklist remise à la session de correction.
-5. **Boucle de correction** (autre session) : appliquer les fix → re-`content:audit` + `content:qa:strict` →
-   `content:build` → appliquer la migration → **sceller** le niveau (`sealed:true`) une fois conforme + complet.
+5. **Boucle de correction** (autre session) : appliquer les fix → re-`content:audit` + `content:qa:strict` +
+   `content:tranche` → PR (fichiers `content/` seuls, jamais `content:build`) → merge → publier
+   (`apply-content.yml`, méthode § B3) → **sceller** le niveau (`sealed:true`) une fois conforme + complet.
 
 Exemple : `programmes-officiels/audit/2026-06-21-primaire-math.md`.
 

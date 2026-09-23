@@ -68,7 +68,9 @@ récompenses, style, notation) et à `content-ecole-tn` (fidélité au programme
   validé en CI par `npm run programme:check` — `programme/_INDEX.md` n'est qu'une **vue générée**
   (`programme:index`), ⛔ jamais éditée à la main. Une entrée `complete`/`validee-r7`/`promue` = **déjà
   fait** ; `partielle` = **compléter** (les plages manquantes sont listées), jamais refaire. Vérifie aussi
-  qu'aucune PR/branche `feat/transcription-<grade>-*` ouverte ne travaille déjà le couple. Le check CI
+  qu'aucune autre session ne tient déjà le couple — par le **scan à trois pattes** du skill `campagne`
+  (§ 1 bis : worktrees, branches non mergées, PR ouvertes, en grepant le nom FR **et** le préfixe de
+  sujet) ; un grep sur un préfixe de branche comme `feat/transcription-*` rend vide à tort. Le check CI
   rejette un même PDF revendiqué par deux fiches — les incidents de doublons (2026-07-12 collège,
   2026-07-17 vague-A) ne peuvent plus passer. En cas de doublon hérité : comparer, garder la meilleure
   copie, documenter dans le registre.
@@ -116,10 +118,10 @@ récompenses, style, notation) et à `content-ecole-tn` (fidélité au programme
    `quiz.json` / `exercices/*` à partir de la transcription — ce que devient chaque contenu du manuel
    (exercice, figure, encadré) et ce qui se trace est normé par
    `content-engine/references/manuel-valorisation.md` — puis suivre la recette `content-ecole-tn`
-   (`content:check` + `content:qa:strict` + `content:audit` → build de migration `--subject <id>` → PR → revue
-   → auto-apply prod au merge). **Livraison par tranches de ≤4 chapitres complets** — commit local par
-   chapitre, une PR + une migration fraîche par tranche, jamais une matière entière retenue non poussée
-   (méthode, T-10 ; interruption ⇒ sauvegarde `wip/`).
+   (`npm run content:gates -- --tranche` → PR de fichiers `content/` seuls → revue → merge → **publication
+   par dispatch** d'`apply-content.yml`, méthode § B3 ; jamais `content:build`, aucune migration).
+   **Livraison par tranches de ≤4 chapitres complets** — commit local par chapitre, une PR par tranche,
+   jamais une matière entière retenue non poussée (méthode, T-10 ; interruption ⇒ sauvegarde `wip/`).
 
 ## STOP (escalade — ne re-designe jamais en silence)
 

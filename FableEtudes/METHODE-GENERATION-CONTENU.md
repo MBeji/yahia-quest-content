@@ -737,8 +737,10 @@ Deux parades, l'une en amont, l'autre en aval (§ B3) :
 - dans le brief de chaque auteur, le point (c) ci-dessus — le chemin des chapitres publiés et
   l'ordre d'y aller **avant** d'écrire ; et la consigne explicite « change la **tâche**, pas
   seulement le décor » ;
-- **les trois mesures muettes, à faire AVANT le commit** (un script jetable de ~40 lignes sur
-  `quiz.json` + `exercices/*.json` suffit ; aucun gate ne les porte encore) :
+- **les trois mesures muettes, à faire AVANT le commit** — elles ne sont plus un script jetable :
+  `npm run content:tranche -- --changed` (moteur) les calcule sur les chapitres touchés, croisés
+  avec les chapitres **publiés** de la matière, et y ajoute une quatrième, les **candidats
+  gabarit** (ci-dessous) :
 
   | mesure                                                    | seuil                            | ce qu'elle attrape                                                                     |
   | --------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------------------------- |
@@ -746,17 +748,34 @@ Deux parades, l'une en amont, l'autre en aval (§ B3) :
   | distribution des clés **a/b/c/d**                         | ≈ 25 % chacune                   | l'écriture au gabarit (clé rédigée d'abord, distracteurs en remplissage)               |
   | paires de questions proches (Jaccard ≥ 0,45)              | 0                                | les doublons **littéraux** — pas les doublons de gabarit, qui échappent à cette mesure |
 
-  Les deux premières se corrigent sans déplacer aucune clé. La troisième ne remplace **jamais**
-  l'audit humain : elle ne voit que ce qui se répète en mots.
+  La première se corrige sans déplacer aucune clé (raccourcir la clé, étoffer un distracteur).
+  ⚠️ La deuxième **ne fuit rien** : toutes les surfaces mélangent les options à l'affichage
+  (`shuffleOptions`) — l'outil la rapporte comme **symptôme** d'écriture au gabarit, pas comme
+  défaut à « corriger » en déplaçant des clés. La troisième ne remplace **jamais** l'audit
+  humain : elle ne voit que ce qui se répète en mots (nombres et symboles compris, pour que deux
+  calculs différents ne passent pas pour un doublon).
+
+  **Le gabarit, enfin mesurable — par son cadre, pas par ses mots.** `content:tranche` compare la
+  **consigne et la question** de chaque énoncé (première et dernière phrase) une fois le décor
+  retiré (passage cité, noms propres, nombres, figures) : « _Read this passage. \<Nom\> tient un
+  commerce à \<ville\>… à quoi renvoie ce pronom ?_ » se réduit au même cadre quel que soit le
+  décor. Il liste les groupes de même cadre servis dans **≥ 2 chapitres** — exactement ce que
+  l'auteur, enfermé dans son chapitre, ne peut pas voir. Ce n'est pas un verdict : c'est
+  l'entrée du point 2 du mandat de l'auditeur (§ B3), qui tranche « même tâche » ou « même
+  consigne, tâche différente ». Sur le corpus au 2026-09-23, il retrouve par exemple « Une seule
+  des affirmations suivantes est vraie. Laquelle ? » servi 19 fois en `math-bac-math`.
 
 ### B3 — Gates, push, prod (à chaque tranche)
 
 ```bash
 # depuis engine/ (le corpus y est branché — § Phase 0.1)
-npm run content:check          # validation Zod de tout le contenu
-npm run content:qa:strict      # QA stricte — 0 [error]
-npm run content:audit          # conformité au programme + couverture vs manifeste
+npm run content:gates -- --tranche   # les 7 étages de la Content CI, dans son ordre, + content:tranche
 ```
+
+Il continue après un rouge et rend **un** bilan (plus de « corriger, relancer, découvrir le rouge
+suivant »), mesure d'abord le retard du moteur sur `origin/main`, et fait le contrôle de
+fraîcheur de `CATALOGUE.md` que la chaîne manuelle oubliait. Les étages un par un restent
+disponibles (`content:check`, `content:qa:strict`, `content:audit`…).
 
 (`content:audit` sur une tranche intermédiaire : les chapitres des tranches **suivantes**
 apparaissent « manquants » — c'est attendu tant que la matière n'est pas finie ; à la
@@ -770,8 +789,9 @@ ce qu'il relit** — l'auto-relecture de l'auteur ne compte pas : elle confirme 
 
 1. **le chemin des chapitres déjà publiés**, avec l'ordre de croiser — sans ça, les doublons
    inter-chapitres ne sont pas trouvables (§ B2, « le doublon de gabarit ») ;
-2. **les paires que l'orchestrateur a déjà repérées à la main**, nommément à trancher : c'est en
-   cherchant autour qu'il trouve les autres ;
+2. **les paires que l'orchestrateur a déjà repérées**, nommément à trancher — à commencer par la
+   sortie de `content:tranche` (paires proches **et** candidats gabarit) : c'est en cherchant
+   autour qu'il trouve les autres ;
 3. **quels fichiers n'ont pas de rapport d'auteur** — un sous-agent tué par la limite de session
    laisse des fichiers complets mais jamais relus. Ils ne sont pas faux (0 clé fausse sur les 24
    items concernés en #120), mais ils ont porté **11 des 16 constats** de leur chapitre : le dire
