@@ -1,8 +1,10 @@
 # Étude 35 — Comprendre la théorie : chaque notion arrive par le concret, se montre par l'exemple, se fixe par la règle et se vérifie sur place (pilote maths 9ᵉ)
 
-> **Statut** : **en exécution** — écrite ET **validée le 2026-09-16** (Q-1…Q-6 arbitrées le même
-> jour, toutes sur la recommandation, §7). **Lots 1 à 6 LIVRÉS** (§8 ; campagne maths 9ᵉ le 2026-09-16, étendue au
-> concours 9ᵉ le 2026-09-18) ; restent la mesure (lot 7) et le bilan (lot 8).
+> **Statut** : **livrée** (2026-09-23) — écrite ET validée le 2026-09-16 (Q-1…Q-6 arbitrées le même
+> jour, §7). **Lots 1 à 6 et 8 LIVRÉS** (§8 ; campagne maths 9ᵉ le 2026-09-16, étendue au concours
+> 9ᵉ le 2026-09-18, bilan le 2026-09-23). **Le lot 7 (la mesure) est DIFFÉRÉ au premier trafic**,
+> comme Q-6 l'a arbitré : spécifié au §3.2, il se déclenche quand KPI-1 (un canal actif) cesse
+> d'être à zéro ; il vit dans `STATUS.md` §6.4 du moteur. **Q-5 reste à trancher** (§7).
 > **Priorité** : 35 · **Valeur** : 📖 l'élève de 9ᵉ qui lit une leçon **comprend** la notion au lieu
 > de la recevoir — parce qu'elle arrive par une situation qu'il connaît, se montre dans un exemple
 > résolu qui dit _pourquoi_ chaque étape, se distingue d'une erreur typique, se fixe en règle, et
@@ -173,6 +175,31 @@ C'est le **patron de notion** (§2.1). Le résumé en est le miroir (une carte p
 | Erreurs typiques montrées et corrigées, ancrées sur un tag du registre               | 0                                              | ≥ 1 par chapitre (19), chacune citant son `misconceptionTag`                                                             |
 | Contrôles mécaniques du patron dans `content:qa`                                     | 0                                              | 6 (§3.5), `[error]` sur `math`, `[warn]` ailleurs                                                                        |
 | Réussite du quiz au 1ᵉʳ essai après lecture « étudiée », par chapitre                | **non calculable** (aucune jointure)           | vue `lesson_to_quiz_outcome` + bloc `/admin/engagement` (lot 7) — **dette** tant que < 30 lectures étudiées par chapitre |
+
+**Relevé au bilan (2026-09-23, `main` des deux dépôts, lot 8).** Compté sur les fichiers et
+par `content:qa:strict`, jamais recopié du journal :
+
+| KPI                                   | cible                                  | mesuré                                                                                                                                                          |
+| ------------------------------------- | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Chapitres de maths 9ᵉ au patron       | 100 % des 19 (+ annales)               | **20 / 20**, `coursePattern: "notion"` posé : les contrôles tournent en `error`, **0 erreur**. Un seul avertissement de patron, C-6 sur `18` (66 lignes), assumé le 2026-09-17 |
+| Blocs de savoir                       | ≥ 1 par section théorique              | **172** (40 `definition` · 97 `propriete` · 35 `methode`) — contre **1** avant                                                                                  |
+| Exemples résolus                      | ≥ 1 par règle                          | **182** `::: exemple` — contre 0                                                                                                                                |
+| Contrôles sur place                   | ≥ 1 par section théorique              | **155** `::: verifie` — contre 0 (la syntaxe n'existait pas)                                                                                                    |
+| Erreurs typiques ancrées au registre  | ≥ 1 par chapitre                       | **115** `coursePitfalls` sur **20 / 20** chapitres, chacun porté par un distracteur (C-5 en `error`)                                                             |
+| Contrôles mécaniques du patron        | 6                                      | **7** (C-7 ajouté le 2026-09-17, arena#1054)                                                                                                                    |
+| Réussite du quiz après lecture        | vue + bloc console (lot 7)             | **dette assumée** — lot 7 différé au premier trafic (Q-6) ; KPI-1 est toujours à zéro, la console ne dirait que « volume insuffisant »                          |
+
+**Au-delà du pilote** (extension au concours 9ᵉ, 2026-09-17/18) : `arabic` 89 `verifie` · 89
+exemples · 94 blocs de savoir ; `french` 70 · 70 · 71 ; `sciences-vie-terre` 99 · 100 · 113.
+Ces trois matières n'ont **pas** `coursePattern` : aucun de leurs distracteurs n'est tagué,
+donc C-5 ne peut pas y passer en `error`. Leurs cours sont au patron, leur gate ne l'est pas.
+**Filet pédagogique** : les deux passages de `content-audit.yml` qui ont suivi la campagne
+(2026-09-17 et 2026-09-20) sont verts, et aucune issue n'est ouverte. Les signalements élèves
+(`content_reports`) ne se lisent pas depuis un dépôt : ils restent à la console.
+**Ce que le bilan ne prouve pas** : aucun audit « à l'aveugle » séparé n'a noté les sections sur
+la grille §2.4 ; la preuve de conformité est mécanique (sept contrôles en `error`) plus les
+re-dérivations des lots (537 calculs, zéro faux). La preuve d'**effet** sur l'élève est le lot 7,
+et elle attend du trafic.
 
 ### 1.5 Ce que l'étude ne cherche PAS à faire
 
@@ -677,14 +704,14 @@ chapitres) et **ne publient pas** : une PR mergée n'est en prod qu'après le di
       sections éclatées par la réécriture, pas d'un programme trop large. Restent `03`
       (10 notions) et `15` (10, « هذا الفصل بابان اثنان »), au-dessus du seuil et **assumés**.
 
-- [ ] **Lot 7 — La mesure.**
+- [ ] **Lot 7 — La mesure.** ⏸️ **Différé au premier trafic** (Q-6) — `STATUS.md` §6.4.
       _Périmètre_ : §3.2, §3.3 (console). La fonction lit `learning_pulses`, `attempts` et
       `content_releases` ; la console la montre, grisée sous 30 lectures.
       _Acceptation_ : US-10 ; pgTAP ; `types.ts` régénéré depuis la chaîne ; `db:check-chain`
       vert ; DoD §7 (additif, un seul merge).
       _Stop-point_ : aucune écriture, aucun événement produit, aucune surface élève.
 
-- [ ] **Lot 8 — Le bilan.**
+- [x] **Lot 8 — Le bilan.** ✅ 2026-09-23 (§1.4 « relevé au bilan », §8)
       _Périmètre_ : KPI §1.4 relus sur `main` et sur la console ; sweep `content-audit` (mer. +
       sam.) sur `math` ; recommandation pour Q-5 ; statut `livrée`, dossier déplacé, index,
       et STATUS.md (§4, §6) resynchronisés (`etudes:check`, `roadmap-sync`).
@@ -821,7 +848,12 @@ la console du lot 7 est la mesure, lisible quand le volume existe (D-8).
   A § A.5), et le programme de 9ᵉ ne le demande pas (R-15). Si Mohamed le souhaite : un tableau
   de 5-10 termes en fin de cours, **hors blocs**, jamais dans le résumé — un lot de contenu à
   part, après le pilote.
-- **Q-5 — La matière suivante, après le bilan.** ⏳ **au lot 8** (2026-09-16). _Recommandation : les deux autres matières
+- **Q-5 — La matière suivante, après le bilan.** ⏳ **à trancher par Mohamed** — recommandation du
+  bilan (2026-09-23) : **`math-6eme`** d'abord, car c'est la **seule** autre matière dont les
+  distracteurs sont tagués (1 276, é30), donc la seule où le patron peut être **armé** en `error`
+  (C-5) et pas seulement écrit ; l'autre classe de concours. Puis **`svt`** (physique-chimie 9ᵉ,
+  malgré son id). La campagne attend de toute façon une place libre en `STATUS.md` §6.3 (règle
+  « finir avant d'ouvrir »). Recommandation initiale, conservée pour mémoire : _les deux autres matières
   scientifiques de 9ᵉ_ (physique, puis SVT — même classe de concours, mêmes élèves, doctrine
   déjà rodée sur l'arabe RTL), puis maths 6ᵉ (l'autre concours). À trancher au lot 8, sur le
   bilan.
@@ -849,6 +881,7 @@ la console du lot 7 est la mesure, lisible quand le volume existe (D-8).
 | 2026-09-17 | —    | arena#—    | **C-7 livré au moteur — la moitié de R-14 que rien ne tenait.** R-14 autorise le terme français entre parenthèses ; elle interdit la **phrase** à moitié française au milieu d'une proposition arabe. Cette moitié-là n'était gardée par rien, et elle a fui **trois fois** dans la seule campagne pilote, dont deux après une purge à la main — d'où le contrôle. Il lit le **script** des caractères, jamais le sens (D-7 tient) : il ne sait pas le français de l'anglais. Se tait sur la glose entre parenthèses, le code, `$$…$$`, les groupes `[…]`, les majuscules (`ABCD`, `Thalès`), les symboles d'unités et les noms de fonctions. Deux régimes comme les six autres. **Mesuré sur les 1 546 fichiers : zéro constat**, et le total du gate revient exactement à sa ligne de base (0 erreur, 263 avertissements) — il n'ajoute aucun bruit. **Trois défauts trouvés en MESURANT, aucun deviné** : (a) la classe `[A-Za-zÀ-ÿ]` avale `×` (U+00D7) et `÷` (U+00F7), **opérateurs rangés entre les lettres accentuées de Latin-1** — `k×a` passait pour un mot, 10 faux positifs sur 18 ; c'est le miroir exact de la leçon déjà écrite dans `qa-checks.ts` sur l'arabe (la virgule U+060C n'est pas une lettre) ; (b) le **mot-clé** d'une directive (`::: figure`) est du latin sur une ligne arabe — **500 constats sur 550** au premier jet ; seul le préfixe tombe, la légende reste contrôlée ; (c) une leçon **française** citant « ختم التعليم الأساسي » n'est pas une leçon arabe : la question se pose au **document**, jamais à la ligne — sur `ثلاثة عدّات différentes` le latin fait jeu égal avec l'arabe, et trancher au compteur rendrait « LTR » la faute même. `rendersRtl` portait déjà la distinction ; la réutiliser plutôt que la réinventer. **Et une règle corrigée** : le prototype exigeait deux mots latins consécutifs, donc laissait passer `ثلاثة عدّات différentes` — un mot **seul** compte, c'est la faute type. 8 tests, dont les **cinq phrases réelles** qu'il a fallu purger à la main.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | 2026-09-17 | 9ᵉ-1 | privé#—    | **Généralisation au concours 9ᵉ — doctrine des trois disciplines, et une maquette par discipline.** Périmètre arrêté avec le propriétaire : `arabic` (11 ch.), `french` (10), `sciences-vie-terre` (7) — **28 chapitres, 169 sections**. ⚠️ **Un piège du corpus levé avant d'écrire** : la matière dont l'id est `svt` n'est PAS de la SVT — son `nameFr` est العلوم الفيزيائية et ses chapitres sont lumière, atomes, pH, loi d'Ohm. La vraie SVT vit sous `sciences-vie-terre`. Arbitrage : c'est elle qui est visée. **État de départ, mesuré** : sur 169 sections, **zéro bloc de savoir, zéro exemple résolu, zéro `::: verifie`** — exactement l'état de maths avant la campagne, et le gate était SILENCIEUX dessus, ses contrôles n'ayant aucun bloc à saisir. **§1bis écrit** (`course-explanation.md`) : ce qui remplit chaque temps dans chaque discipline. Le guide CNP d'arabe **prescrit déjà le patron** dans ses propres mots — نصّ انطلاق → ملاحظة → قاعدة → خلاصة → إنجاز ; en français la notion est une **transformation** de phrase, et son T3 est le tableau avant/après, pas un dessin ; en SVT **le schéma EST la notion** et la prose l'annote, l'inverse d'un chapitre de maths. **Une règle restreinte** : la glose française de R-14 ne s'applique **pas** à `arabic` — elle se justifiait par « au lycée on bascule en français », or la grammaire arabe reste en arabe ; gloser المبتدأ inventerait un couple que l'élève n'aura jamais. Elle vaut en revanche en SVT, enseignée en français au lycée. **Trois maquettes livrées** : `arabic/01-i3rab-wal-bina` (6 notions), `french/06-concordance-des-temps` (6), `sciences-vie-terre/04-zalazil` (7) — 19 contrôles `verifie`, tous rendus en `<details>` repliés sans `open`. **Preuve du régime** : `coursePattern` posé TEMPORAIREMENT sur `arabic`, le chapitre réécrit sort à **1 constat** quand les dix intacts en produisent **31**. ⚠️ **Et un mur nommé maintenant plutôt qu'à la fin** : la campagne ne pourra **pas** poser le drapeau `coursePattern` sur ces matières. C-5 est un `error` dur — un `coursePitfalls` déclaré doit être encodé par un distracteur du chapitre — or **aucun distracteur n'est tagué hors de `math` et `math-6eme`**, et le registre des misconceptions ne contient que du vocabulaire de maths. Poser le drapeau exige d'abord la campagne de tagging (é30), qui exige elle-même d'écrire le vocabulaire des erreurs de chaque discipline. Les cours se réécrivent ; le gate ne s'arme qu'après. ⚠️ **Piège Prettier, troisième occurrence et première de MON fait** : envelopper un `<svg>` dans un `::: figure` fait insérer à Prettier une ligne vide après la balise ouvrante — et le fichier passait `prettier --check` sur `main`, donc ce n'était pas une dette latente cette fois. Cause exacte : le `<title>` seul sur sa ligne. Remède : le ramener sur la ligne d'ouverture. Contenu graphique identique, vérifié par comparaison hors espaces. |
 
+| 2026-09-23 | 8    | privé#— | **Lot 8 livré — le bilan, et l'étude se ferme sans attendre sa mesure.** KPI §1.4 relevés sur les fichiers et par `content:qa:strict` (tableau « relevé au bilan ») : 20/20 chapitres au patron à zéro erreur sous `coursePattern`, 172 blocs de savoir (contre 1), 182 exemples résolus, 155 contrôles sur place, 115 `coursePitfalls`, sept contrôles mécaniques au lieu des six prévus. Les deux sweeps `content-audit` qui ont suivi la campagne sont verts. **Le lot 7 n'est pas livré, il est différé** : Q-6 l'a arbitré « au premier trafic », KPI-1 est à zéro, et une console qui ne peut dire que « volume insuffisant » n'apprendrait rien — il est spécifié (§3.2) et porté par `STATUS.md` §6.4. **Q-5 n'est pas tranchée** : le bilan recommande `math-6eme` (seule autre matière aux distracteurs tagués, donc seule où le patron s'arme), puis `svt` (physique-chimie 9ᵉ). ⚠️ **Écart de roadmap corrigé** : la refonte du matin plaçait le lot 7 au rang 1 de STATUS §6.1, contre Q-6 ; la ligne a été relue avant d'être prise, comme la règle 3 du §6.0 l'exige. |
 ---
 
 ## Annexe A — État de l'art 2024-2026 : ce qui est prouvé, ce qui ne l'est pas, ce que l'étude en fait

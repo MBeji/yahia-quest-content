@@ -18,7 +18,7 @@
 > line 121 of 138, after every rule, labelled « exemple d'application ». The order is the exact
 > reverse of what the bar prescribes, and nothing anywhere noticed.
 >
-> Étude: `FableEtudes/35-comprendre-la-theorie/ETUDE.md` — it carries the evidence base (annexe A,
+> Étude: `FableEtudes/EtudeRealisé/35-comprendre-la-theorie/ETUDE.md` — it carries the evidence base (annexe A,
 > with its verification caveat), the measured state (annexe B) and the arbitrations.
 
 ---
