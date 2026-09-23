@@ -756,6 +756,23 @@ Deux parades, l'une en amont, l'autre en aval (§ B3) :
   portait sa justification (« حال في محلّ نصب، تصف الوردة… ») et les distracteurs rien.
   La parade se prend à l'écriture : **même niveau de justification sur chaque option**, ou
   aucune.
+
+  **Corriger la dette publiée — et les quatre pièges de la correction.** La première tranche de
+  correction (`arabic-8eme` ch. 02/03/19/23, corpus #531 : 128/152 → 0/152) a montré que la
+  correction elle-même fabrique des défauts que la mesure ne voit pas ; l'audit B3 en a trouvé
+  2 BLOCKER et 6 MAJOR sur 129 questions. À mettre dans le mandat de tout correcteur :
+  1. **la clé raccourcie doit rester vraie à la lettre** — « الخطأ أنّ «كاد» للمقاربة » affirme
+     que l'erreur EST la règle ; la forme juste est « الخطأ إغفال أنّ… » ;
+  2. **ne pas créer d'indice lexical** — un terme introduit dans les clés (« بدل مطابق ») et
+     absent des distracteurs signe la bonne réponse aussi sûrement que sa longueur : il va dans
+     des distracteurs aussi ;
+  3. **un distracteur étoffé ne se contredit pas** — « بدل مرفوع » d'un mot visiblement منصوب
+     s'élimine à vue : il ne se trompe que sur UNE chose ;
+  4. **jamais de renvoi positionnel** (« الأولى », « الثالثة ») pour désigner une option :
+     l'affichage les mélange ; citer le texte.
+  Le mandat complet, à donner tel quel à un correcteur par chapitre :
+  `.claude/skills/content-engine/references/correction-cle-longue.md` — puis un auditeur par
+  chapitre en contexte vierge (§ B3), `content:gates -- --tranche`, PR, dispatch.
   ⚠️ La deuxième **ne fuit rien** : toutes les surfaces mélangent les options à l'affichage
   (`shuffleOptions`) — l'outil la rapporte comme **symptôme** d'écriture au gabarit, pas comme
   défaut à « corriger » en déplaçant des clés. La troisième ne remplace **jamais** l'audit
