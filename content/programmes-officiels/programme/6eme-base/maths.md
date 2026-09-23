@@ -110,7 +110,7 @@ et ses bandeaux de leçon sont la surface la plus propre du corpus.
 - **Vocabulaire officiel** : عدد عشريّ، جزء صحيح، جزء عشريّ، فاصلة، عُشر/أعشار، جزء من مئة/من ألف، تقدير، تدوير.
 - **Bornes de scope** :
   - ✅ INCLUS : 4 opérations sur décimaux **y compris × décimal × décimal** ; ×/÷ par 10/100/1000 ; **décimal ÷ naturel**.
-  - ⛔ EXCLU : **division PAR un décimal** (le diviseur de la division posée reste **naturel** — confirmé contenu `05` : « قسمة عدد عشريّ على عدد **طبيعيّ** », pas « ÷ على عشريّ »). C'est la borne haute vs niveaux supérieurs. (Le **× décimal × décimal**, lui, **est** au programme 6ème — borne nouvelle vs 5ème, où le × restait « عشريّ × صحيح ».)
+  - ~~⛔ EXCLU : division PAR un décimal~~ — 🔧 **FAUX, corrigé le 2026-09-23 en lisant le manuel élève (§2 quater).** La leçon 3 (ص 10–11) fait poser **86,45 : 18,2**, **15 : 0,1**, **107 : 0,01**, et déduit **15,84 : 3,6** et **158,4 : 3,6** de 44 × 36 = 1584 ; son exercice 4 demande de réécrire **1208,105 : 14,025** en une division par un naturel. ✅ **La division par un décimal EST au programme de 6ème**, par la technique « multiplier le dividende et le diviseur par la même puissance de 10 ». La borne posée plus haut avait été « confirmée » par le contenu `05` — ce qui confirmait seulement que le contenu avait la même lacune. (Le × décimal × décimal est, lui, bien au programme — inchangé.)
 
 #### Thème : **المضاعفات وقابليّة القسمة** (multiples & critères de divisibilité) — _NOTION-PHARE NOUVELLE de la 6ème_ ; chapitres publiés `06` / `07`
 
@@ -240,6 +240,101 @@ colonne somme à son total :
 → **Chapitre correspondant** : `24-decomposition-fractions` (displayOrder **9**, juste après
 `08-fractions-sens-lecture`), écrit le 2026-09-19 depuis cette lecture.
 
+## 2 quater. Leçons 1, 3 et 39 — lues au manuel élève (102609, ص 4–7, 10–13, 115–116), 2026-09-23
+
+> **Lu à l'image** (`pdftoppm -r 100`), page par page, pour la tranche « nombres » de la campagne
+> patron de notion (é35 → `math-6eme`). Chaque nombre cité ci-dessous a été **re-calculé**.
+> **Ce que ce manuel est, et ce qu'il n'est pas** : il n'imprime **aucun encadré de cours**. Chaque
+> leçon est une suite de situations en trois temps — **أستحضر** (je me remémore), **أقيّم / أعتمد
+> مكتسباتي** (j'évalue / je m'appuie sur mes acquis), **أوظّف** (j'applique). Les titres le disent :
+> « **أوظّف** الجمع والطّرح… », « **أوظّف** الضّرب والقسمة… ». Les décimaux sont un **acquis de 5ème
+> réinvesti** ; ce que la 6ème ajoute se lit dans les exercices, pas dans une règle imprimée. Les
+> situations ci-dessous sont donc **les ancrages** que les cours au patron doivent reprendre
+> (reformulés, jamais recopiés). Le guide « théorie maître » (502603 ص 44–48) est un rappel de
+> **théorie des ensembles pour l'enseignant** (ⅅ ⊂ ℚ, lois de composition interne) : il cadre, il
+> ne s'enseigne pas en 6ème.
+
+### Leçon 1 — « أوظّف الجمع والطّرح في مجموعة الأعداد العشريّة » (ص 4–7) → chapitres `03`, `04`
+
+- **أستحضر 1 — le concours de promotion.** Quatre employés (نادر، قيس، زينب، وسيم) ; pour chacun
+  deux notes professionnelles décimales, une ancienneté et un total ; cases vides à compléter par
+  addition **et** soustraction (نادر : 18,5 + 19,75 + 29 = **67,25** ; قيس : 59,25 − 17 − 19,25 =
+  **23** ; زينب : 19 + 19,25 + 24 = **62,25** ; وسيم : 65 − 27 − 18,25 = **19,75**), puis
+  **classer par ordre décroissant** (67,25 > 65 > 62,25 > 59,25).
+- **أقيّم 2 — opérations posées** (الوضع العموديّ) : sommes et différences à nombres de chiffres
+  décimaux inégaux (9,9 + 91,09 ; 0,809 + 0,1 ; 1 − 0,99 ; 100,1 − 99,98 ; 8 − … = 0,63).
+- **3 أ — estimer sans calculer** : parmi 111,87 · 112,68 · 95,67, laquelle vaut 93,78 + 18,9 ?
+  (**112,68** ; justification attendue par arrondi : ≈ 94 + 19 = 113).
+- **3 ب — trois élèves, trois résultats pour 100,5 − 8,96** : سامي 91,66 · أمل 10,9 · نادر
+  **91,54** (juste). **L'erreur d'أمل est l'erreur type du chapitre** : 100,5 − 89,6 = 10,9 — elle a
+  aligné les **chiffres** au lieu des **virgules**. → ancrage du piège « الفاصلة تحت الفاصلة ».
+- **4 — le terme manquant** dans des égalités à parenthèses (9,13 = … + 8,09 → 1,04).
+- **5 — euro → dinar avec seulement + et −** : 3 € = 4,680 د et 4 € = 6,240 د ; tout le tableau
+  (2, 5, 6, 7, 8, 9, 10 €) se remplit par sommes/différences (1 € = 6,240 − 4,680 = 1,560 د).
+- **6 — conversions d'unités dans une somme** (آر، هآ، م²، كم²، ل، دكل…).
+- **7 — le voilier** : diagramme de la distance parcourue sur 8 jours, en **milles marins**
+  (1 ميل بحري = 1,852 كم) ; plus longue / plus courte étape, total, conversion en km.
+- **أوظّف 8 — le terrain** : somme des dimensions 40,25 م, différence 4,75 م → **22,5 م et 17,75 م**
+  (somme et différence) ; maison de 162,5 م² → jardin **236,875 م²**.
+- **9 — deux associés** : somme 271,068 (ألف دينار), فتحي a 30,432 de plus → **150,75** et
+  **120,318**.
+- **أقيّم 10 — la balance** : les trois enfants pèsent 126,75 كغ ; أنيس + نادر = 88,25 ; سلمى +
+  نادر = 81,25 → سلمى **38,5**, أنيس **45,5**, نادر **42,75** (vérifié : total 126,75).
+
+### Leçon 2 — « أتصرّف في وحدات قيس المساحة » (ص 8–9) → chapitre `20-aires-polygones`
+
+Lue en passant : conversions م² ↔ آر ↔ هآ ↔ كم², découpage d'un tissu en mouchoirs, parcelles
+(rectangle, carré), jardin public en quatre zones de 1/5 de la surface chacune. Elle sert la
+tranche géométrie, pas celle-ci.
+
+### Leçon 3 — « أوظّف الضّرب والقسمة في مجموعة الأعداد العشريّة » (ص 10–13) → chapitre `05`
+
+- **أستحضر 1 — les parcelles du promoteur** : longueur, largeur, périmètre, aire, une case
+  manquante par ligne (17,75 × 14,5 ; aire 407 et longueur 22 → largeur **18,5** ; périmètre 90,5
+  et largeur 20,5 → longueur **24,75** ; aire 540 et largeur 18,75 → longueur **28,8**).
+- **أعتمد مكتسباتي 2 أ — produits posés** : 18 × 0,98 ; 3,14 × 5,2 ; 0,07 × 2,85 ; 204 × 0,5 ;
+  108 × 0,25 ; 0,75 × 0,002 ; 365,48 × 0,1 ; 22,18 × 0,01 ; 103,705 × 0,001.
+- **2 ب — quotients posés** : 38,4 : 4 ; 48,36 : 12 ; **86,45 : 18,2** (= **4,75**) ; **15 : 0,1** ;
+  **107 : 0,01** ; **198 : 0,001** ; 13,08 : 0,1 ; 24,5 : 0,01 ; 101,025 : 0,001. → **division par
+  un décimal** et **division par 0,1 / 0,01 / 0,001** (= × 10 / 100 / 1000).
+- **3 — estimer 15,08 × 10,9** parmi 150 · **164,372** · 1643,72, et **dire la démarche**
+  (≈ 15 × 11 = 165).
+- **4 — rendre le diviseur entier** : compléter des égalités du type 205,25 : 0,05 = 20 525 : 5 et
+  1208,105 : 14,025 = 1 208 105 : 14 025 → **on multiplie dividende et diviseur par la même
+  puissance de 10**.
+- **5 — de 44 × 36 = 1584, déduire sans calculer** : 158,4 : 3,6 = **44** ; 1584 : 4,4 = **360** ;
+  15,84 : 4,4 = **3,6** ; 15,84 : 3,6 = **4,4**.
+- **6 — le terme manquant** dans des égalités à parenthèses mêlant × et :.
+- **7 — les voiliers de سيدي بوسعيد** : milles ↔ km (× 1,852 / : 1,852) — 4,5 mi = **8,334** كم ;
+  10,186 كم = **5,5** mi ; 10,649 كم = **5,75** mi ; 3,25 mi = **6,019** كم ; 18,52 كم = **10** mi.
+- **أوظّف 8 — les tomates** : 1,5 كغ de graines → 18,9 ط ; tableau de proportionnalité ; 1 كغ de
+  graines couvre 2,5 هك.
+- **9 — l'usine de confection** : 832 م de tissu, 3,25 م par costume → **256** costumes ; coût
+  unitaire 57,500 د, bénéfice du 1/5 du coût.
+- **أقيّم 10 — la consommation d'eau** : diagramme en bâtons sur six mois (≈ 8,5 · 10,3 · 10,6 ·
+  8,2 · 7,5 · 6,5 م³) → **moyenne mensuelle** de deux façons.
+
+### Leçon 39 — « أتدرّب على حلّ المسائل » (ص 115–116) — ⚠️ mal rattachée
+
+Deux problèmes d'**intégration** : un plan à l'échelle **1/5000** (rectangle et quadrilatère des
+milieux, fractions d'aire), puis un terrain à l'échelle **1/2400** avec parts 1/9 et 3/5, un
+achat immobilier dont **30 %** vaut 12 210 د et un crédit à mensualités. **Ce n'est pas une leçon
+de `05`** : elle mobilise échelle, fractions et pourcentage. Le rattachement `05` ← ص 115–116 de
+`chapter.json` est retiré ; sa place naturelle est `14-proportionnalite-pourcentage`.
+
+### Ce que la lecture change
+
+1. 🔧 **Périmètre** : la **division par un décimal** est au programme (voir la borne corrigée au
+   thème « الأعداد العشريّة ») — le chapitre `05` ne l'enseignait pas. **Le cours au patron la
+   comble.**
+2. **Diviser par 0,1 / 0,01 / 0,001** et **estimer par arrondi avant de calculer** sont demandés
+   par les deux leçons ; l'estimation doit **justifier**, pas seulement choisir.
+3. **L'erreur d'alignement des virgules** (أمل, 100,5 − 8,96 = 10,9) est **imprimée** par le manuel :
+   c'est l'erreur type à montrer dans `04`.
+4. Les chapitres `01`, `02`, `03` n'ont **pas de leçon propre** : le manuel les traite en acquis.
+   Leurs ancrages viennent des situations ci-dessus (grands nombres des montants en ألف دينار,
+   classements, milles marins) ou du quotidien tunisien.
+
 ### Domaine : **التصرّف في المقادير — قيس** (grandeurs & mesure) — مكوّن 2 p.58
 
 #### Thème : **المُدَد الزمنيّة** (durées) — chapitre publié `22-durees`
@@ -326,7 +421,7 @@ colonne somme à son total :
   5. **Cercle/disque avec π ≈ 3,14** : **circonférence 2πr** et **aire du disque πr²** — _nouveau_ (la 5ème : éléments + ق=2ر seulement, **sans** πr²) (`21`).
   6. **Solides (cube, pavé droit) : aire latérale/totale** — _nouveau_ (premier contact 3D ; **surface, pas volume**) (`23`).
   7. **شبه المنحرف** (trapèze) ajouté aux quadrilatères usuels (`19`).
-- **Bornes hautes (vers les niveaux supérieurs)** : **pas de division PAR un décimal**, **pas de × ni ÷ de deux fractions**, **pas de VOLUME**, **pas de « somme des angles = 180° »**, pas de relatifs, pas de Pythagore/Thalès, pas de décomposition en facteurs premiers/PGCD formalisé.
+- **Bornes hautes (vers les niveaux supérieurs)** : ~~pas de division PAR un décimal~~ (🔧 faux, voir §2 quater), **pas de × ni ÷ de deux fractions**, **pas de VOLUME**, **pas de « somme des angles = 180° »**, pas de relatifs, pas de Pythagore/Thalès, pas de décomposition en facteurs premiers/PGCD formalisé.
 - **Outils géométriques** : المسطرة، الكوس، **المنقلة** (angles en degrés), **البركار** (cercle, disque, reports) — confirmés par la خارطة p.58.
 - **Structure annuelle** : **5 فترات** (planification fine + évaluations, خارطة p.58–59) imbriquées dans **3 ثلاثيّات** (volume horaire 160 س, p.64) ; **61 titres de leçons** au كتاب التلميذ (p.60), chaque période close par أتدرّب على حلّ المسائل → أوظّف مكتسباتي وأقيّمها → أتسلّى ; **حلّ المسائل** et **محطّات الإدماج الكبرى** très présents (la compétence = résoudre des situations-problèmes).
 - **Notation standard** : chiffres latins 0–9, **virgule décimale**, espace entre classes des grands nombres (1 250 000), signes +, −, ×, ÷, <, >, =, ∥, ⊥, °, π — lecture/écriture LTR, **même en arabe** (le guide lui-même : « 375/1000 = 3/8 », « (840×10)/100 = 84 د », « 1/1000000 » ; le contenu : « 2,4 × 3 = 7,2 », « π ≈ 3,14 »).
