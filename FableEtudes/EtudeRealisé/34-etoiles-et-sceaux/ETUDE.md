@@ -1,12 +1,9 @@
 # Étude 34 — Étoiles de chapitre & sceaux de matière : une progression qui ne recule jamais
 
-> **Statut** : **en exécution** — écrite le 2026-09-14, **Q-1…Q-5 arbitrées le même jour** par
-> Mohamed (§7) : quatre sur la recommandation, **Q-2 contre** (« maîtrisé » = étoile 4, pas
-> ≥ 3), ce qui SIMPLIFIE l'étude — la barre de la couverture parentale ne bouge pas, seule sa
-> monotonie change, et la série KPI-E de é31 n'a plus de rupture de définition. Les 5 lots sont
-> exécutables ; **les lots 1 à 4 sont LIVRÉS** (arena, 2026-09-14 — §8) et le lot 5 est optionnel et
-> commandé (Q-4), suspendu à une liste de contenu. Le numéro 33 est pris par « la porte
-> des questions ouvertes » (arena#1026, migrations `20260913120000` / `20260913130000`), dont
+> **Statut** : **livrée** (2026-09-23) — Q-1…Q-5 arbitrées le 2026-09-14 (Q-2 contre la
+> recommandation, §7). **Lots 1 à 4 LIVRÉS le 2026-09-14** (arena#1036, #1040, #1041, #1042, #1043,
+> #1044, #1045 — §8). Le **lot 5** (l'échelle nommée, optionnel) est **différé** : il attend la liste
+> des 50 savants, qui est du contenu (`STATUS.md` §6.4). Le numéro 33 est pris par « la porte des questions ouvertes » (arena#1026, migrations `20260913120000` / `20260913130000`), dont
 > le dossier n'est pas encore déposé ici.
 > **Priorité** : 34 · **Valeur** : 🎯 l'élève ne voit plus jamais sa progression **reculer**
 > quand du contenu arrive — plateforme, IA, parent ou lui-même ; il lit d'un coup d'œil ce

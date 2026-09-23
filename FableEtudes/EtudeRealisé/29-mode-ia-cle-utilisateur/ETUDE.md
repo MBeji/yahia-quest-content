@@ -1171,3 +1171,11 @@ FR/EN/AR côté client (motif des codes stables de `parent-code-errors.ts`).
 | `AI_BUDGET_REACHED`   | interne (R-11)                      | Plafond atteint, date et montant      | Appel non émis, dégradé, alerte 100 %                |
 | `AI_OUTPUT_REJECTED`  | validateur de sortie (é11 §3.4)     | Compté dans le taux de rebut          | 1 retry, puis dégradé                                |
 | `AI_FORGE_NO_QUORUM`  | < N items validés (§3.6)            | Compté dans le taux de rebut          | Échec honnête, énergie remboursée                    |
+
+---
+
+## Clôture du pilote Q-9 — 2026-09-23
+
+**Pilote clos, « armé, sans volume »** (arbitrage de Mohamed) : clés branchées et vérifiées depuis le
+2026-09-01, premier relevé à 1 famille et 0,078 $ sur 30 jours (arena#1087). La mesure attend un
+volume d'usage minimal ; le détail est dans la clôture de l'étude 11.
