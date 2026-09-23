@@ -1,5 +1,8 @@
 # Synthèse — arabe, les 8 niveaux de base face au programme CNP (2026-09-22)
 
+> ✅ **Les trois arbitrages sont rendus le 2026-09-23 — trois « oui » (§4bis).** Le reste du
+> document est le constat du 2026-09-22, laissé tel qu'il a été écrit.
+>
 > **Ce document ne tranche rien.** Il rassemble en un seul endroit ce que les huit fiches R-5
 > `programme/{1ere…8eme}-base/arabe.md` ont établi le même jour, parce que chacune se termine par
 > « l'arbitrage appartient à Mohamed » et que la fiche 8ᵉ note elle-même que **trancher niveau par
@@ -124,6 +127,33 @@ sceaux déjà acquis** ; **supprimer** un chapitre a le même effet. Requalifier
 déplacer une notion **à l'intérieur** d'un chapitre existant n'a, lui, aucun coût.
 
 ---
+
+## 4bis. Arbitrages rendus — 2026-09-23, par Mohamed : oui, oui, oui
+
+1. **Les 11 مدوّنات القسم sont requalifiées** : elles sortent d'`enrichissement` et comptent
+   désormais comme sources `principale`. **Appliqué le jour même** dans
+   `suivi/affectations.json` (11 overrides retirés). Effet mesuré par `programme:index` : les
+   4 arabes étaient déjà revendiquées par leur fiche ; les **7 de maths et de français**
+   (3ᵉ/5ᵉ/6ᵉ maths, 3ᵉ/4ᵉ/5ᵉ/6ᵉ français) entrent dans la liste « à rattacher » — **134 → 141
+   œuvres principales**. `programme:check` reste vert. Leurs fiches devront les lire avant
+   toute génération sur ces niveaux (R-5).
+2. **Le canal `نصوص` est ouvert** en 5ᵉ, 6ᵉ, 7ᵉ et 8ᵉ. Il porte de la langue que le canal
+   `قواعد` ne porte pas (العروض, بلاغة en situation, معاجم par champ, types de textes). Il se sert
+   **dans le sujet arabe existant** de chaque niveau, par chapitres nouveaux — un chapitre neuf
+   ne retire rien à personne, les étoiles se calculant par chapitre. Ordre : 8ᵉ (le manuel
+   `101806` est déjà déclaré dans `subject.json`), puis 7ᵉ, 6ᵉ, 5ᵉ.
+3. **Les ~10 notions servies hors année sont réalignées sur le programme post-2006.** Sous les
+   deux contraintes dures de `docs/etoiles-et-sceaux.md` : **aucun slug renommé, aucun chapitre
+   supprimé** (sinon étoiles et sceaux déjà acquis deviennent orphelins). Concrètement : une
+   notion qui manque à son année est **ajoutée** là où le programme la place ; un chapitre dont
+   la notion est entièrement hors année (`5ᵉ/04-al-mabni-lilmajhul`, `8ᵉ/05-munada`…) garde son
+   slug et voit sa `description` requalifiée (« révision » ou « anticipation de la 9ᵉ ») ; une
+   notion partiellement hors année est déplacée **à l'intérieur** du chapitre existant.
+
+➡️ Ces trois décisions forment **une seule campagne de contenu** (STATUS.md §6.3, ligne
+« arabe de base »), dans l'ordre : (a) le réalignement des ~10 notions, parce qu'il corrige
+ce que des élèves apprennent déjà ; (b) le canal `نصوص`, 8ᵉ d'abord ; (c) la lecture des 7
+مدوّنات de maths et de français, qui relève des campagnes de ces matières.
 
 ## 5. Ce que cette campagne n'a PAS fait
 
