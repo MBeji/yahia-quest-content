@@ -81,9 +81,11 @@ An interactive skin never loosens the content rules of the subject's track:
 4. **Self-verify** per `quality-bar.md` (re-solve blind; for matching/sequencing, enumerate ALL
    permutations and prove exactly one option is fully correct; for SVG, re-read the figure as the
    student sees it — TRUE and no key leak).
-5. **Validate and stop:** `npm run content:check` → `npm run content:qa:strict` (0 errors) → report
-   (chapter, files, formats used per question, QA output). Files only — build with
-   `npm run content:build -- --subject <id>`, apply, push **only when asked**.
+5. **Validate and stop:** `npm run content:check` → `npm run content:qa:strict` (0 errors) →
+   `npm run content:tranche -- --changed` (a new format must not become the next template: its
+   frame is compared with the subject's published chapters) → report (chapter, files, formats used
+   per question, QA + tranche output). Files only — never `content:build`; push **only when asked**,
+   publish after the merge (`apply-content.yml`, method § B3).
 
 ## Placement & rewards (canonical)
 

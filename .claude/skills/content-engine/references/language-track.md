@@ -131,8 +131,9 @@ the reference English track was built — one PR per phase):
    missing grammar competences.
 4. **Drill** — add the cumulative `05-drill` rung to every finished chapter (top-up reps).
 
-Each phase ends at the validate-and-stop gate (`content:check` + `content:qa:strict`, 0 errors) and is
-its own PR. Build the SQL migrations only when asked, after the files pass.
+Each phase ends at the validate-and-stop gate (`content:check` + `content:qa:strict`, 0 errors, then
+`content:tranche` — a language track is where template drift is most frequent) and is its own PR of
+`content/` files only; publishing is the post-merge `apply-content.yml` dispatch, never a migration.
 
 ## Hybrid sourcing
 

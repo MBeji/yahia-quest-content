@@ -27,15 +27,14 @@ Deux clones côte à côte : ce repo et `../engine` (le moteur), reliés par UN 
 ```bash
 # depuis la racine de CE repo
 rm -rf ../engine/content && ln -s "$PWD/content" ../engine/content
-# puis depuis ../engine, dans l'ordre de la CI :
-npm ci && npm run content:check && npm run content:catalogue &&
-  npm run content:qa:strict && npm run content:figures:check &&
-  npm run content:audit:strict && npm run programme:check &&
-  npm run harness:check -- --corpus
+# puis depuis ../engine — les 7 étages dans l'ordre de la CI, un seul bilan :
+npm ci && npm run content:gates -- --tranche
 ```
 
-⚠️ `content:catalogue` **régénère `content/CATALOGUE.md`**, que la CI compare par
-`git diff --exit-code` : tout chapitre neuf le périme — **le committer**. Détails (Windows,
+`--tranche` y ajoute les mesures d'avant-commit (méthode § B2 : clé la plus longue, paires
+proches, candidats **gabarit** pour l'auditeur). ⚠️ `content:catalogue` **régénère
+`content/CATALOGUE.md`**, que la CI compare par `git diff` : tout chapitre neuf le périme —
+**le committer** (`content:gates` le signale). Détails (Windows,
 pièges) : `FableEtudes/METHODE-GENERATION-CONTENU.md` § Phase 0.1 ; poste :
 `FableEtudes/POSTE-DE-TRAVAIL.md`.
 

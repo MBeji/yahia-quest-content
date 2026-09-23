@@ -44,20 +44,22 @@ To see what already exists before creating a subject, check `content/CATALOGUE.m
 > `content-langue-*`, plus `content-cours`/`content-interactif`/`content-audit`) that **build &
 > complete** a chapter, and the **professor overlay** (`prof-*`) that **raises the ceiling** with
 > hard d3–4 exercises for a given matière × niveau — the skill-selection map (task → skill), the
-> roles→skills matrix, the cumulative/non-redundant rules, and the reproducible build→migration
+> roles→skills matrix, the cumulative/non-redundant rules, and the files → gates → PR → apply
 > procedure. Read it first; it prevents overlap and duplicate work.
 
 ## How the pipeline works (the why behind the rules)
 
 Pedagogical content lives as **versioned files** under `content/<subject>/NN-<slug>/`. A generator
-(`scripts/content/build.ts` → `src/shared/content/`) validates them with Zod, then compiles them to
-**idempotent** Supabase migrations. Row IDs are **deterministic UUIDv5** derived from slugs, so
+(`scripts/content/build.ts` → `src/shared/content/`) validates them with Zod, then compiles each
+subject to **one idempotent SQL file** (`sql/content/<subject>.sql`, emitted by `apply-content.yml`
+at apply time — never committed, never a migration since étude 24). Row IDs are **deterministic
+UUIDv5** derived from slugs, so
 rebuilding updates rows in place (no duplicates) and removed admin content is pruned — while
 parent-authored content is never touched.
 
 Consequences you must respect:
 
-- **Author files, never SQL.** Hand-written SQL or hand-edited generated migrations break the
+- **Author files, never SQL.** Hand-written SQL or hand-edited generated SQL break the
   deterministic-UUID model. You only ever write/extend files under `content/`.
 - **Slugs are identity.** Renaming a subject `id`, a chapter folder, or an exercise filename, or
   reordering questions by difficulty, re-keys the UUIDs (delete+recreate, not update). Choose slugs
@@ -111,22 +113,24 @@ Run, in order:
 4. `npm run content:check` — validates all authored content against Zod. Must pass (writes nothing).
 5. `npm run content:qa:strict` — answer-key heuristics; must report **0 errors** (warnings are
    advisory but fix the easy ones).
-6. **Stop and report** — or, when asked to ship a PR, regenerate the migration for the changed
-   subject(s) **only**:
+6. `npm run content:tranche -- --changed` — the **pre-commit tranche measures** (method § B2):
+   key strictly the longest option (a leak by form — aim for 0), near-duplicate pairs against the
+   subject's **published** chapters, and **template candidates** (same task frame, décor swapped,
+   across ≥ 2 chapters — the #1 defect of parallel writing, invisible to every other gate). Fix the
+   first two before committing; hand the template groups to the auditor. One command replays all
+   seven Content CI stages plus these measures: `npm run content:gates -- --tranche`.
+7. **Stop and report** — or, when asked to ship a PR, commit **only the `content/` files** (plus
+   `content/CATALOGUE.md` when a chapter or subject is new) in the corpus repo and open the PR.
+   There is **nothing to compile by hand** (étude 24 D-3): content no longer travels as
+   migrations. `apply-content.yml` compiles each subject to `sql/content/<subject>.sql` and applies
+   it — on a **deliberate dispatch after the merge**, never automatically (method § B3).
 
-   ```bash
-   npm run content:build -- --subject <subject-id>
-   ```
-
-   ⚠️ **Never run bare `npm run content:build`** — it regenerates **all ~60 subjects** with a fresh
-   timestamp, creating dozens of stray `*_generated_<id>_content.sql` duplicates for unchanged
-   subjects. Scope with `--subject <id>` so exactly one migration is produced (run once per changed
-   subject). The default fresh timestamp sorts after existing migrations (correct); pass
-   `--timestamp <YYYYMMDDHHMMSS>` only when you need a deterministic value that still sorts **after**
-   the newest existing migration. If a stray full build happened, `git clean -f supabase/migrations/`
-   then rebuild with `--subject`. Commit the generated migration **with** the `content/` files; it
-   **auto-applies to prod on merge** via `db-migrate-prod.yml` (never apply by hand, never hand-edit
-   the SQL). Full procedure: `references/generation-pipeline.md`. Do **not** push unless explicitly asked.
+   ⛔ **Never run `npm run content:build`**, with or without `--subject`: without `--sql-dir` it
+   writes timestamped migrations into the **public engine** repo — a dead channel since étude 24
+   and a corpus leak that `leak:check` blocks. To eyeball the SQL locally (optional, never
+   committed): `node --experimental-strip-types scripts/content/build.ts --subject <id>
+   --sql-dir /tmp/sql-check`. Full procedure: `references/generation-pipeline.md`. Do **not** push
+   unless explicitly asked.
 
 Never weaken the gate to make content "pass" (no lowering thresholds, no skipping QA).
 
@@ -174,13 +178,13 @@ re-keying anything:
   pass + severity-ranked report; fixes only on request).
 
 Whatever the slice, the same gates apply: quality bar → self-verification → `content:check` →
-`content:qa:strict` → stop and report.
+`content:qa:strict` → `content:tranche` → stop and report.
 
 ## Reference files — read before writing
 
 - `references/generation-pipeline.md` — **the map of the whole system**: base vs professor skills,
-  the task→skill selection matrix, the cumulative/non-redundant rules, and the reproducible
-  build→migration procedure (incl. the `--subject` trap). **Read first.**
+  the task→skill selection matrix, the cumulative/non-redundant rules, and the files → gates →
+  PR → apply procedure (incl. the `content:build` trap). **Read first.**
 - `references/content-schema.md` — exact file shapes + every Zod constraint + file layout + reserved
   `quiz` slug. **Read before writing any file.**
 - `references/expert-exercises.md` — the professor-grade bar for hard **d3–4** exercises (archetypes,
