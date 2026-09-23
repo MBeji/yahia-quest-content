@@ -18,7 +18,7 @@ Objectif : la clé n'est plus strictement la plus longue dans aucune question to
 
 **Les quatre pièges que la relecture de la tranche 1 a attrapés — à éviter activement :**
 - **La clé raccourcie doit rester VRAIE À LA LETTRE.** « الخطأ أنّ «كاد» للمقاربة » dit que l'erreur EST la règle : faux. Relis chaque clé raccourcie comme un élève qui la prend au mot (forme correcte : « الخطأ إغفال أنّ… »).
-- **Ne crée pas un indice lexical.** Si tu introduis un terme (synonyme du cours, « مطابق », « في محلّ »…) dans des clés, mets-le AUSSI dans des distracteurs — sinon « l'option qui dit X est la bonne » remplace la fuite de longueur.
+- **Ne crée pas un indice de forme.** Si tu introduis un terme (synonyme du cours, « مطابق », « في محلّ »…) ou une marque (ellipse « … » pour tronquer une citation, guillemets, « إغفال ») dans des clés, mets-la AUSSI dans des distracteurs — sinon « l'option qui porte X est la bonne » remplace la fuite de longueur.
 - **Un distracteur étoffé ne doit pas se contredire.** « بدل مرفوع » d'un mot visiblement منصوب, « مبتدأ مرفوع » sur un mot à fatha : l'élève l'élimine à vue. Fais-le se tromper sur UNE chose (la nature de la fonction), cohérent pour le reste (le cas visible).
 - **Jamais de renvoi positionnel.** Une explication ne dit jamais « الأولى / الثالثة / الأخيرة » pour désigner une OPTION : l'affichage les mélange. Cite le texte. (Les phrases numérotées de l'ÉNONCÉ restent permises.) Corrige ceux que tu croises dans ton chapitre.
 

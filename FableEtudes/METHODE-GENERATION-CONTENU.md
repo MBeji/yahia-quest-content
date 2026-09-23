@@ -763,9 +763,10 @@ Deux parades, l'une en amont, l'autre en aval (§ B3) :
   2 BLOCKER et 6 MAJOR sur 129 questions. À mettre dans le mandat de tout correcteur :
   1. **la clé raccourcie doit rester vraie à la lettre** — « الخطأ أنّ «كاد» للمقاربة » affirme
      que l'erreur EST la règle ; la forme juste est « الخطأ إغفال أنّ… » ;
-  2. **ne pas créer d'indice lexical** — un terme introduit dans les clés (« بدل مطابق ») et
-     absent des distracteurs signe la bonne réponse aussi sûrement que sa longueur : il va dans
-     des distracteurs aussi ;
+  2. **ne pas créer d'indice de forme** — un terme introduit dans les clés (« بدل مطابق »), une
+     ellipse « … » qui ne tronque que des clés (tranche 2, ch. 17), toute marque absente des
+     distracteurs signe la bonne réponse aussi sûrement que sa longueur : elle va dans des
+     distracteurs aussi ;
   3. **un distracteur étoffé ne se contredit pas** — « بدل مرفوع » d'un mot visiblement منصوب
      s'élimine à vue : il ne se trompe que sur UNE chose ;
   4. **jamais de renvoi positionnel** (« الأولى », « الثالثة ») pour désigner une option :
