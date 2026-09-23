@@ -1136,3 +1136,17 @@ son propre document est une étude qu'on réécrit deux fois.
 2. **La personnalisation dépend du corpus.** Les tags de misconception sont appliqués en prod
    depuis le 2026-08-23, mais sur **64 % d'une seule matière** (`math` 9ᵉ). Hors de là, le
    tuteur explique sans nommer l'erreur : dégradation prévue, pas panne.
+
+---
+
+## Clôture du pilote Q-9 — 2026-09-23 (arbitrage de Mohamed)
+
+**Verdict : pilote CLOS, « armé, sans volume ».** Les deux clés (famille BYOK et plateforme,
+DeepSeek) sont branchées et vérifiées en trafic réel depuis le 2026-09-01 — la réserve 1
+ci-dessus est levée sur ce point. La mesure hebdomadaire (`ai-pilot-report.yml`, arena#1086,
+issue arena#1087) donne au premier relevé **1 famille, 1 élève, 0,078 $ sur 30 jours** : les
+cibles de coût sont atteintes parce que l'usage est minuscule, ce qui ne prouve rien. Arbitrage
+du propriétaire : **une mesure demande un volume d'usage minimal que le projet n'a pas ; elle est
+dépriorisée**, et l'effort va au contenu (priorité 1). Le relevé hebdomadaire continue de tourner
+seul ; la question « l'étage IA sert-il ? » se reposera quand KPI-1 (un canal actif) ne sera plus
+à zéro — `STATUS.md` §6.4 du moteur.
