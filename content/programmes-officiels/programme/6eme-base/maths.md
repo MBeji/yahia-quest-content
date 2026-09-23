@@ -215,11 +215,14 @@ et ses bandeaux de leçon sont la surface la plus propre du corpus.
   tafkīk se fait toujours à مقام constant.
 - ⚠️ **Le piège que la page construit elle-même** : dans l'activité 2, la السادسة «أ» compte
   **28** élèves et la «ب» **25**, et les deux ensemble **53**. Les nombres kasriyy
-  correspondants sont **4/28**, **3/25** et **7/53** — et la quatrième question (د) demande
-  justement la relation. **7/53 n'est pas 4/28 + 3/25** : il vient d'un **recomptage dans une
-  population plus grande**, pas d'une somme de fractions. C'est la meilleure inoculation
-  disponible contre `math.frac.add-numerators-and-denominators`, et elle est **dans le
-  programme officiel**, pas inventée.
+  correspondants sont **4/28**, **3/25** et **7/53**. **7/53 n'est pas 4/28 + 3/25** : il vient
+  d'un **recomptage dans une population plus grande**, pas d'une somme de fractions. C'est la
+  meilleure inoculation disponible contre `math.frac.add-numerators-and-denominators`.
+  ✏️ **Correction (relecture à l'image du 2026-09-23)** : la question (د) ne porte PAS sur
+  4/28 + 3/25. Elle demande la relation entre « مجموع تلاميذ السّادستين » (53) et « العددين
+  الكسريين الممثّلين لمجموع تلاميذ كلّ قسم » — les totaux de chaque classe, soit 28/53 + 25/53
+  = 53/53. Le piège 4/28 + 3/25 ≠ 7/53 est donc un **prolongement construit sur les nombres de
+  la page**, pas une question imprimée ; le cours `24` §6 le présente comme tel.
 
 **Table des effectifs de l'activité 2, reconstituée et vérifiée** (les cases vides du manuel sont
 à remplir par l'élève). **Ce qui est imprimé** : les effectifs 4, 10, 3 (السادسة «أ»), 3 et 8
@@ -1223,6 +1226,587 @@ La fiche (§ thème « الكسور », ligne `13`) ne dit que : « قاعدة �
    2/3 × 3,45 côte à côte). Rien que la fiche inclut ne manque au manuel.
 9. Coquilles/ambiguïtés du manuel à ne pas reprendre : ex. 6 (largeur « 7/5 de la longueur »),
    ex. 11 (eau : 1 ل en tout ou par كغ), ex. 13 (deux taux 42 % / 30 %).
+
+## 2 sexies. Tranche « grandeurs & décomposition » — lue au manuel élève (102609), 2026-09-23
+
+> Lecture à l'image par les rédacteurs de la tranche 3 de la campagne patron (`14`, `15`, `22`,
+> `24`) ; chaque nombre re-calculé (`fractions.Fraction`). Toujours **aucun encadré de cours**.
+> Les sous-sections ci-dessous sont les notes de lecture telles quelles.
+>
+> **Ce que la lecture change aux bornes** (arbitré le 2026-09-23 ; complète le §2) :
+> - ✅ **l'échelle (السلّم)** : la leçon 14 entière (« أوظّف التّناسب في السّلّم ») la pratique —
+>   elle n'était qu'en « théorie maître » et aucun chapitre ne l'enseignait. Enseignée en `14` §3.
+>   ⛔ reste : **aires à l'échelle** (rapport au carré, leçon 14 ex. 6) — non enseignées.
+> - ✅ **augmentation et remise en pourcentage** ; **retrouver la valeur d'avant une hausse par le
+>   passage à 1 %** (jamais « ÷ 1,08 ») ; pourcentages > 100 % ; valeur approchée d'un
+>   pourcentage (4/7 ≈ 57,14 %) — leçons 32 et 37. Le produit en croix reste ⛔ (absent du manuel).
+> - ✅ **vitesse moyenne d'un trajet en plusieurs étapes** = distance totale ÷ durée totale de
+>   marche (le manuel exclut l'arrêt) ; **durées en minutes / « h + min »** et changement d'unité
+>   de vitesse (m/s ↔ km/h) — leçons 51 et 53. Toujours sans division par une fraction.
+> - ✅ **multiplier une durée par un entier** — l'indicateur officiel dit « جمع وطرح **وضرب** »
+>   et la leçon 5 le pratique ; la fiche l'omettait. Aussi : heure de départ/d'arrivée, fractions
+>   d'heure, heures décimales (1 سا 30 د = 1,5 سا) pour un taux horaire, passage au lendemain.
+> - ✅ **écrire un entier sur le dénominateur d'une fraction** (8 = 40/5) et terme manquant entier
+>   (leçon 19 ex. 7) — enseigné en `24` §4.
+> - ⚠️ Notation des durées : le manuel écrit س / دق / ث ; le corpus garde سا / د / ثا.
+> - ⚠️ Énoncés à ne jamais reprendre : leçon 32 ex. 9 ; leçon 37 ex. 7 et 9 ; leçon 51 ex. 4 et
+>   10 ; leçon 5 ex. 7 (ambigus ou incohérents — détails dans les notes).
+
+### `14-proportionnalite-pourcentage` — Leçons 14, 32, 37 (ص 38–41, 93–97, 107–110)
+
+## Leçons 14, 32 et 37 — lues au manuel élève (102609, ص 38–41, 93–97, 107–110) → chapitre `14-proportionnalite-pourcentage`
+
+> Lu à l'image (`/root/.cache/yqa-manuels/r/m-038..041.png`, `m-093..097.png`, `m-107..110.png`),
+> 2026-09-23. Chaque nombre ci-dessous a été **re-calculé** (python `fractions.Fraction` /
+> `decimal`). Même constat que les tranches 1 et 2 : **aucun encadré de cours**. Chaque leçon est
+> une suite de situations **أستحضر → أستكشف → أتدرّب → أوظّف → أقيّم مكتسباتي**. Les trois titres
+> disent tous « **أوظّف التّناسب** … » : le manuel ne fait jamais de la proportionnalité une leçon
+> propre, il la fait **servir** à l'échelle (14), au sens du pourcentage (32), au calcul de
+> pourcentages (37). ⚠️ Le manuel écrit « النّسبة **المائويّة** » (avec alif) ; la fiche et le
+> corpus écrivent « المئويّة » — deux graphies admises, le corpus garde la sienne.
+
+## Leçon 14 — « أوظّف التّناسب في السّلّم » (ص 38–41)
+
+- **أستحضر 1 أ — conversions de longueur** : 500 000 صم = 50 000 دسم = **5 000 م** = 500 دكم =
+  50 هم = **5 كم** ; 4 هم = 40 دكم = 400 م = 4 000 دسم = **40 000 صم** ; 3758 صم = 375,8 دسم =
+  37,58 م = 3,758 دكم = 0,3758 هم = **0,03758 كم**. (Prérequis de toute l'échelle : même unité.)
+- **1 ب — fractions unitaires en décimal, sans poser** : 1/100 = **0,01** ; 2/1000 = **0,002** ;
+  1/2000 = **0,0005** ; 1/5000 = **0,0002**.
+- **أستكشف 2 — le jardin en trapèze rectangle** : grande base 120 م, petite base 80 م, hauteur
+  60 م ; le propriétaire demande un plan « réduit 2000 fois ». Le plan rendu mesure **12 صم, 8 صم,
+  6 صم**. 120 م = 12 000 صم → 12 000 ÷ 12 = **1000** : l'ingénieur a réduit 1000 fois, **pas**
+  2000 — il n'a pas respecté la consigne. À 1/2000 le plan mesurerait **6 صم, 4 صم, 3 صم**.
+  Questions : nommer ce rapport (**السّلّم**), l'écrire (**1/1000**), nommer ses termes, écrire le
+  سلّم demandé (**1/2000**). → **ancrage** du sens de l'échelle : un rapport plan/réel dans la
+  **même unité**.
+- **أتدرّب 3 — tableau réel / plan / nombre de réductions / échelle** : 80 صم ↔ 4 صم → 20 fois →
+  **1/20** (donné) ; 1,50 م = 150 صم ↔ 15 صم → **10 fois, 1/10** ; 150 صم ↔ 3 صم → **50 fois,
+  1/50** ; 35 م = 3 500 صم ↔ 7 صم → **500 fois, 1/500**.
+- **4 — les trois calculs** : 1/200 et 8 صم → réel **1 600 صم = 16 م** ; 1/10 000 et 400 م =
+  40 000 صم → plan **4 صم** ; 1/1000 et 18 صم → réel **18 000 صم = 180 م** ; 2 صم ↔ 50 دكم =
+  50 000 صم → échelle **1/25 000**. Puis « استنتج القواعد » : البعد الحقيقي = بعد التصميم ×
+  مقام السلّم ; بعد التصميم = البعد الحقيقي × السلّم ; السلّم = بعد التصميم / البعد الحقيقي
+  (même unité). → c'est le **T6** de la section échelle.
+- **5 — la carte de ضياء** : 4 صم ↔ 40 كم = 4 000 000 صم → **1/1 000 000**.
+- **6 — terrain rectangulaire** 25 صم × 20 صم au 1/500 → **125 م × 100 م**, aire **12 500 م²**
+  « de deux façons » (dimensions réelles puis aire ; ou aire du plan 500 صم² × 500 × 500 =
+  125 000 000 صم² = 12 500 م²). ⚠️ La 2ᵉ façon suppose que les aires se multiplient par le **carré**
+  de 500 : notion non nommée par la fiche, **non enseignée**.
+- **7 — le vélo de ضياء** : 7 صم au 1/200 000 → 1 400 000 صم = **14 كم**.
+- **8 — le jardin de l'école المنارة** (trapèze : 30 م, 24 م, hauteur 22 م) au 1/400 → **7,5 صم,
+  6 صم, 5,5 صم**.
+- **أوظّف 9 — la photo du mur** : mur 21 م de long ↔ 15 صم sur la photo → échelle 15/2100 =
+  **1/140** ; hauteur réelle 2,80 م = 280 صم → **2 صم** sur la photo.
+- **10 — la feuille de عائدة** : jardin 60 م × 40 م, feuille 30 صم × 21 صم ; échelles proposées
+  1/2000 (3 × 2 صم), 1/500 (12 × 8), **1/200 (30 × 20 — tient, et c'est le plus grand)**, 1/100
+  (60 × 40 — ne tient pas). → choisir l'échelle = comparer au format.
+- **11 — distances depuis تونس, carte au 1/1 000 000** (1 صم ↔ 10 كم) : باجة–تونس 105 كم →
+  **10,5 صم** ; تونس–نابل 6,7 صم → **67 كم** ; تونس–سوسة 14,3 صم → **143 كم** ; نابل–سوسة 96 كم →
+  **9,6 صم** ; سوسة–القصرين 20,2 صم → **202 كم** ; القصرين–سليانة 167 كم → **16,7 صم** ;
+  سليانة–تونس 12,7 صم → **127 كم**. Course cycliste تونس → نابل → سوسة → القصرين → سليانة → تونس :
+  67 + 96 + 202 + 167 + 127 = **659 كم**.
+
+## Leçon 32 — « أوظّف التّناسب في تعرّف النّسبة المائويّة » (ص 93–97)
+
+- **أستحضر 1 — le vaccin** : 3 صل pour 10 enfants. Degré 1 : 160 élèves → **48 صل** ; degré 2 :
+  57 صل → **190 élèves** ; degré 3 : 230 élèves → **69 صل** ; total **580 élèves, 174 صل**. Quatre
+  flacons d'un demi-litre = 2 ل = 200 صل ≥ 174 → **oui, cela suffit**. → tableau de proportionnalité,
+  passage par l'unité (ou par 10), **ancrage** de la section 1–2.
+- **أستكشف 2 — l'engraissement des veaux** : masses à l'achat 175 · 150 · 144 · 250 · 135 كغ, après
+  un mois 210 · 165 · 180 · 295 · 162 كغ → gains **35 · 15 · 36 · 45 · 27** ; rapport gain / masse
+  initiale 35/175 = **20/100** · 15/150 = **10/100** · 36/144 = **25/100** · 45/250 = **18/100** ·
+  27/135 = **20/100**. Plus forte hausse : **3ᵉ veau (25 %)** — alors que le 4ᵉ a le plus gros gain
+  brut (45) ; plus faible : **2ᵉ (10 %)** ; égales : **1ᵉʳ et 5ᵉ (20 %)**. Le conseiller propose de
+  rapporter « à chaque 100 كغ » → c'est la **naissance de la نسبة مائويّة** : comparer des
+  parts de touts différents. → **ancrage** de la section « % = fraction de dénominateur 100 ».
+- **أتدرّب 3 — fractions → dénominateur 100 → %, « quand c'est possible »** : 3/4 = **75 %** ;
+  11/10 = **110 %** ; 19/20 = **95 %** ; 1/25 = **4 %** ; 13/50 = **26 %** ; 5/1 = **500 %** ;
+  50/40 = 5/4 = **125 %** ; 9/15 = 3/5 = **60 %** ; 21/75 = 7/25 = **28 %** ; 27/12 = 9/4 =
+  **225 %** ; **impossibles exactement** : 5/3, 4/7, 8/9, 15/11. → **pourcentages > 100 %**,
+  **simplifier d'abord**, **conversion pas toujours exacte**.
+- **4 — dépense et épargne des enfants** : ضياء 10 د, dépense 5 → **50 %**, épargne **50 %** ; أمل
+  10 د, dépense 3,300 → **33 %**, épargne 6,700 → **67 %** ; نادر 8 د, 2 → **25 %**, 6 → **75 %** ;
+  درّة 7,5 د, 3 → **40 %**, 4,500 → **60 %**. → dépense % + épargne % = **100 %**.
+- **5 — le livre de 80 pages** (cumuls) : lues 15 → **18,75 %** (donné), non lues 65 → **81,25 %** ;
+  lues 32 → **40 %**, non lues 48 → **60 %** ; non lues 29 → lues 51 → **63,75 %** / **36,25 %** ;
+  non lues 18 → lues 62 → **77,5 %** / **22,5 %** ; jour 5 (livre fini) → **100 %** / **0 %**.
+- **6 — la population du village** (4 433 habitants) : exemples imposés — enfants 1 073 / 4 433 ≈
+  **24,20 %** ; vieux hommes 382 / 797 ≈ **47,92 %** ; « نسبة تقريبيّة بالوقوف عند رقمين بعد
+  الفاصل » → **valeur approchée**, par division décimale. Totaux vérifiés (2 224 + 2 209 = 4 433).
+- **7 — la part culturelle des salaires** : حنان 114,750 / 1530 = **7,5 %** ; حسّان 89,250 / 1275
+  = **7 %** ; سيرين 108 / 720 = **15 %** ; زينب 18 / 360 = **5 %**.
+- **أوظّف 8 — les « doigts de sable »** : 200 غ farine + 75 غ beurre + œuf 120 غ + 100 غ sucre +
+  5 غ écorce = **500 غ** ; perte de 10 % à la cuisson → **450 غ** ; parts : **40 % · 15 % · 24 % ·
+  20 % · 1 %** ; 50 pièces → **9 غ** chacune. → **diminution d'un pourcentage**.
+- **9 — l'hôtel de 325 chambres** : 50 vides, 75 maghrébins, **200** étrangers ; maghrébins : 1/3
+  simples → **25** simples, **50** doubles → **125** touristes ; étrangers : 3/8 simples → **75**
+  simples, **125** doubles → **325** touristes ; total **450**. Parts ≈ **5,55 % · 22,22 % ·
+  16,66 % · 55,55 %**. Recettes : ⚠️ **énoncé ambigu** (« 45 د » pour une chambre double : par
+  personne ou par chambre ?) ; maghrébins −30 % → 42 د et 31,5 د ; par personne **19 950 د**, par
+  chambre **12 750 د**.
+- **أقيّم 10 — la chaîne 21** : de 16 h à minuit = 480 د ; infos 90 · sport 120 · enfants 60 ·
+  films 180 · chansons 30 (= 480 ✓) → **18,75 % · 25 % · 12,5 % · 37,5 % · 6,25 %** ; demande :
+  enfants à 25 % → **120 د = 2 سا** (le double).
+
+## Leçon 37 — « أوظّف التّناسب في حساب النّسبة المائويّة » (ص 107–110)
+
+- **أستحضر 1 — fractions → décimal « de deux façons »** : 31/25 = 124/100 = **1,24** ; 18/72 = 1/4
+  = **0,25** ; 49/70 = 7/10 = **0,7** ; 15/48 = 5/16 = **0,3125** ; 5/13 **non décimal** (≈ 0,38).
+  (Réinvestit `12-fractions-decimales`.)
+- **أستكشف 2 — le théâtre, 360 spectateurs** : 30 % thème → **108** ; 25 % acteurs → **90** ; 10 %
+  billets gagnés → **36** ; 35 % soirée → **126** (somme 360 ✓). À la sortie : 18 · 54 · 72 · 216
+  (somme 360 ✓) → **5 % · 15 % · 20 % · 60 %**. → **% d'un nombre**, puis **nombre → %**.
+- **أتدرّب 3 — pourcentages d'un nombre** : 2 % de 2400 = **48** ; 100 % de 17 = **17** ; 105 % de
+  820 = **861** ; 1,5 % de 24 = **0,36** ; 41 % de 1 = **0,41** ; 113 % de 100 = **113**. → cas
+  limites **100 %**, **> 100 %**, **% décimal**, **résultat < 1**.
+- **4 أ — prix de vente avec bénéfice** « de deux façons » : chemises 15 د + 30 % → **19,5 د** ;
+  pantalons 24 د + 25 % → **30 د** ; jupes 72 د + 20 % → **86,4 د** ; cravates 7,500 د + 50 % →
+  **11,250 د**. (bénéfice puis somme ; ou × 130/100.)
+- **4 ب — soldes** : −20 % si prix ≤ 15 د, −35 % si 15 < prix ≤ 20, −45 % si prix > 20 → chemise
+  19,5 → **12,675 د** ; pantalon 30 → **16,5 د** ; jupe 86,4 → **47,52 د** ; cravate 11,25 → **9 د**.
+- **5 — la fabrique de bouchons : retrouver l'avant** : +8 % → 432 → **400** ; +12 % → 504 →
+  **450** ; +10 % → 484 → **440** ; +9 % → 545 → **500**. (108 % ↔ 432, donc 1 % ↔ 4, 100 % ↔ 400.)
+- **6 — la sécheresse** : blé dur 800 → 640, baisse **160** (**20 %**) ; blé tendre 1100 → 935,
+  **165** (**15 %**) ; orge ? → 454, baisse 78 → avant **532** (≈ **14,66 %**) ; fèves 175 → 131,
+  **44** (≈ **25,14 %**).
+- **أوظّف 7 — la facture d'électricité** (324,000 د) : éclairage 30 % → **97,200** ; froid/chaud
+  145,800 → **45 %** ; communication 15 % → **48,600** ; autres 32,400 → **10 %** ; taxes 18 % →
+  **58,320** ; à payer 118 % → **382,320**. Économies : éclairage −25 % → **72,900** ; froid 145,800
+  → 72,900 → **50 %** ; communication −60 % → **19,440** ; autres 32,400 → 19,440 → **40 %** ; total
+  324,000 → 184,680 → **43 %**. ⚠️ Taxes « 45 % » d'économie : 58,320 × 55/100 = 32,076 ; à payer
+  216,756 → économie ≈ **43,31 %** — alors que 18 % du nouveau montant donnerait 33,242 (économie de
+  43 %) : **énoncé incohérent** avec le taux de 18 %.
+- **8 — le terrain et la maison** : longueur = 1,5 × largeur, périmètre 60 م → **12 م × 18 م**,
+  **216 م²** ; 90 د/م² → **19 440 د**, + 15 % de frais → **22 356 د** ; maison 2/3 → **144 م²** ;
+  entrepreneur 275 د/م² → **39 600 د** ; maçon 29 700 د = **75 %** de 39 600 ✓.
+- **أقيّم 9 — le crédit** : terrain = 50 % de la construction, ensemble 36 000 د → construction
+  **24 000**, terrain **12 000** ; épargne 70 % du terrain + 25 % de la construction = 8 400 +
+  6 000 ; emprunt **21 600 د** ; remboursé 192 × 12 × 15 = **34 560 د** ; intérêts **12 960 د** →
+  **60 %** du principal, **37,5 %** du total remboursé, **36 %** du coût (36 000) — ⚠️ « الكلفة
+  الجمليّة » ambigu (avec intérêts : 48 960 → ≈ 26,47 %).
+
+## Écarts avec la fiche (`programme/6eme-base/maths.md`, thème « التناسب والنسبة المئويّة »)
+
+1. 🔴 **L'échelle (السّلّم) — une leçon entière du manuel, absente du cours.** La leçon 14 porte le
+   titre officiel « أوظّف التّناسب في السّلّم » (خارطة p.59, n° 14). La fiche ne la range qu'en
+   « théorie maître » (p.49–50) et au vocabulaire « (سلّم — selon le manuel) » ; ni ✅ ni ⛔.
+   Aucun chapitre de `math-6eme` ne l'enseigne (grep : zéro occurrence). ✅ **au programme** —
+   **enseigné** (section « السلّم »). Le quiz ne la teste pas → **proposer des items** (hors de mon
+   périmètre). La leçon 39 (ص 115–116, plans au 1/5000 et 1/2400) confirme que l'échelle est
+   réinvestie dans les problèmes.
+2. **Aires à l'échelle** (leçon 14 ex. 6, « de deux façons ») : la 2ᵉ façon suppose que les aires se
+   multiplient par le **carré** du rapport. Non nommée par la fiche ; **non enseignée** (le cours
+   passe par les dimensions réelles). **À trancher.**
+3. **Augmentation et diminution d'un pourcentage** (bénéfice, soldes, perte à la cuisson, baisse de
+   production, économies) — omniprésentes aux leçons 32 et 37 ; la fiche dit seulement « % d'un
+   nombre ». Le défi `04` teste déjà le prix après remise (40 د). ✅ **au programme** —
+   **enseigné** (section « الزيادة والتخفيض »).
+4. **Retrouver la valeur d'avant une hausse** (leçon 37 ex. 5 : 108 % ↔ 432 → 400) et **le tout à
+   partir d'une partie** (ex. 6 : orge 454 + 78). Même famille que « retrouver le tout par la part
+   unité » arbitré ✅ pour les fractions (§2 quinquies). Le manuel le résout **par
+   proportionnalité** (108 → 432, 1 → 4, 100 → 400), jamais par une division par 1,08. **Enseigné
+   comme cas limite** de la section « الزيادة والتخفيض », par le passage à 1 %, signalé.
+5. **Pourcentages supérieurs à 100 %** (110 %, 125 %, 225 %, 500 % ; 105 % de 820 ; 113 % de 100 ;
+   la facture à 118 %) et **pourcentages décimaux** (1,5 % de 24 ; 18,75 %) — la fiche ne les
+   nomme pas. ✅ implicites — **enseignés comme cas limites** (sections « %  كسر » et « % d'un
+   nombre »).
+6. **Conversion fraction → % impossible exactement** (5/3, 4/7, 8/9, 15/11) et **valeur approchée à
+   deux chiffres après la virgule** (1073/4433 ≈ 24,20 %). La fiche dit « ↔ fraction » sans borne.
+   **Enseigné comme cas limite** (section « من كسر إلى نسبة مئوية ») : simplifier, amplifier à 100,
+   sinon division décimale et valeur approchée.
+7. **Proportionnalité : tableaux à compléter** (leçon 32 ex. 1, vaccin) et **passage par un
+   multiple commode** (3 صل pour 10 enfants → × 16) — la fiche dit « coefficient » : ✅ enseigné.
+   Le **produit en croix** n'apparaît nulle part au manuel : ⛔ de la fiche **confirmé**.
+8. **Graphie** : le manuel écrit « المائويّة », la fiche et le corpus « المئويّة ». Pas un écart de
+   notion ; le corpus garde sa graphie.
+9. **Inverse** : tout ce que la fiche met en ✅ pour `14` (coefficient, % comme /100, % d'un nombre,
+   % usuels, ↔ fraction) est pratiqué par le manuel. Le **« % usuels = ½, ¼, 1/10 »** n'est pas un
+   exercice du manuel mais sert son calcul mental ; conservé.
+10. **Énoncés ambigus ou incohérents à ne jamais reprendre** : leçon 32 ex. 9 (tarif « 45 د » par
+    personne ou par chambre) ; leçon 37 ex. 7 (taxes « 45 % » d'économie, incohérent avec 18 %) ;
+    leçon 37 ex. 9 (« الكلفة الجمليّة » avec ou sans intérêts).
+11. Le chapitre **dépasse 8 notions** si l'on compte l'échelle : 8 sections. **Question de
+    curriculum** : l'échelle (leçon 14, période 2) est séparée du pourcentage (leçons 32/37,
+    périodes 3–4) dans le manuel ; un chapitre propre « السلّم » serait fidèle au découpage
+    officiel.
+
+### `15-vitesse-distance-temps` — Leçons 51, 53 (ص 147–150, 153–156)
+
+## Leçons 51 et 53 — lues au manuel élève (102609, ص 147–150 et 153–156), 2026-09-23 → chapitre `15-vitesse-distance-temps`
+
+> Lu à l'image (`/root/.cache/yqa-manuels/r/m-147..150.png`, `m-153..156.png`). Chaque nombre
+> ci-dessous a été **re-calculé** (python `fractions.Fraction`). Même constat que les tranches 1
+> et 2 : **aucun encadré de cours**. Les deux titres disent **« أوظّف التّناسب في حساب معدّل
+> السّرعة… »** : la vitesse n'est pas posée comme une formule, elle se **lit dans un tableau de
+> proportionnalité** (distance ↔ durée). Le manuel écrit « كم/س » et « دق » ; le corpus écrit
+> `km/h` et « سا / د » (chapitre `22-durees`). Les horaires sont donnés « في السّاعة 7 و 45 دق ».
+> Leçon 52 (ص 151–152, « أتدرّب على حلّ المسائل ») non lue : hors du périmètre du brief.
+
+### Leçon 51 — « أوظّف التّناسب في حساب معدّل السّرعة والمسافة » (ص 147–150)
+
+#### أستحضر
+
+- **1 — l'escargot** : 3 m toutes les 5 min ; tableau distance (m) ↔ durée (min) à compléter :
+  3 m ↔ **5 min** ; 9 m ↔ **15 min** ; **14,4 m** ↔ 24 min ; 22,2 m ↔ **37 min** ; **30,6 m** ↔
+  51 min. « Distance en une minute, par plus d'une méthode » : 3 : 5 = **0,6 m** (ou 9 : 15, ou
+  22,2 : 37). → **proportionnalité distance/durée ; la vitesse = la distance pour UNE unité de
+  temps = le coefficient**.
+
+#### أستكشف
+
+- **2 — deux cyclistes se disputent** : أحمد 6,5 كم en 20 د ; علي 7,5 كم en 25 د, chacun se dit
+  plus rapide. Par minute : 0,325 كم contre 0,3 كم → **أحمد est plus rapide** (19,5 km/h contre
+  18 km/h). En 10 د à la même allure : أحمد **3,25 كم**, علي **3 كم**. → **comparer deux vitesses
+  en ramenant à une même durée** ; le piège est de conclure « علي, qui a fait plus de km ».
+
+#### أتدرّب
+
+- **3 — la voiture** : 240 كم en 3 س 12 دق (= **192 دق**) ; tableau : 1 دق → **1,25 كم** ;
+  60 دق → **75 كم** ; 20 دق → **25 كم** ; 1 س 40 دق (100 دق) → **125 كم**. → vitesse par minute
+  puis par heure ; conversion h/min → min.
+- **4 — vitesse moyenne de quatre véhicules** : tracteur 117 كم en 3 س 15 دق → **36 km/h** ;
+  cycliste (درّاج) 70 كم en 2 س 20 دق → **30 km/h** ; voiture de course 484 كم en 1 س 50 دق →
+  **264 km/h** ; avion 2106 (كم) en 2 س 15 دق → **936 km/h**. → **durées non entières** (3,25 h ;
+  7/3 h ; 11/6 h ; 2,25 h) : le passage par la minute ou par un diviseur commun est la voie de
+  6ème (pas de division par une fraction).
+- **5 — distance parcourue** : voiture 90 km/h pendant 2 س 16 دق → **204 كم** ; tracteur
+  45 km/h, 1 س 24 دق → **63 كم** ; avion 900 km/h, 1 س 24 دق → **1260 كم** ; train rapide
+  120 km/h, 3 س 20 دق → **400 كم**. → distance = vitesse × durée avec durée en h + min.
+- **6 — le chemin de l'école** : 1,5 كم en **1/3 h** → **4,5 km/h** (en une heure, 3 fois plus).
+- **7 — cycliste المحمديّة → زغوان** : départ 7 س 45 دق, arrivée 9 س 10 دق (= **1 س 25 دق = 85 دق**)
+  à 36 km/h → **51 كم**. → **durée écoulée à partir des horaires**, puis distance.
+- **8 — la vitesse du son** : tir entendu 10 s après (11:20:55 → 11:21:05) à 3,4 كم → **340 m/s** ;
+  **20 400 m/min** ; **1224 km/h**. → **changement d'unité de vitesse** (m/s → m/min → km/h) par
+  proportionnalité.
+- **9 — مروان** : quitte le travail à 14 س 30 دق, s'arrête **un quart d'heure**, arrive à 15 س 30 دق ;
+  48 km/h → roule 45 دق = 3/4 h → **36 كم**. → **l'arrêt ne compte pas dans la durée de marche**.
+- **10 — la voiture et le piéton** : voiture A → B de 9 س 55 دق à 10 س 3 دق (**8 دق**) à 75 km/h →
+  **10 كم** ; le « مترجّل » repart dans l'autre sens de 10 س 45 دق à 11 س 35 دق (**50 دق**) →
+  **12 km/h**. ⚠️ lecture « 10 و3 دق » : c'est bien imprimé ainsi ; 12 km/h pour un piéton est élevé
+  — énoncé à ne pas reprendre tel quel.
+
+#### أوظّف
+
+- **11 — le médecin scolaire** : départ 7 س 20 دق, arrivée prévue 7 س 56 دق (36 دق) à 75 km/h →
+  maison–école **45 كم**. Crevaison au **tiers** du trajet : **15 كم** de la maison (30 كم de
+  l'école), atteint à 7 س 32 دق ; arrêt 8 دق (repart à 7 س 40 دق) ; arrivée 8 س 00 → reste 30 كم en
+  20 دق → **90 km/h**. « Prouver par deux méthodes que la vitesse moyenne sur tout le trajet est
+  **84,375 km/h** » : 45 كم ÷ 32 دق de roulage = 45 × 60 / 32 = **84,375** ✓ (arrêt EXCLU ; arrêt
+  inclus on trouverait 67,5). → **vitesse moyenne d'un trajet en plusieurs étapes = distance
+  totale ÷ durée totale de marche** (et non la moyenne des vitesses : (75 + 90) : 2 = 82,5 ≠ 84,375).
+- **12 — les trois tronçons de حازم** (limites 50, 90, 110 km/h ; temps minimaux 30, 28, 48 دق) :
+  tronçons **25 كم, 42 كم, 88 كم** → route **155 كم**. Temps réels 50, 35, 55 دق → vitesses
+  **30, 72, 96 km/h**, toutes sous la limite → **oui, respectées**. Moyenne sur le tout :
+  155 ÷ (140/60) = 465/7 ≈ **66,43 km/h**, bien entre 66 et 67 ✓.
+
+#### أقيّم مكتسباتي
+
+- **13 — le camion de briques** (limite 70 km/h) : aller 7 س 45 دق → 10 س 10 دق (2 س 25 دق) à
+  57 km/h → **137,75 كم**. Déchargement 1 س (repart 11 س 10 دق), retour arrivé 12 س 45 دق (1 س 35 دق
+  = 95 دق) → **87 km/h > 70 : limite non respectée**. Seconde méthode : à 70 km/h il fallait
+  137,75 ÷ 70 h ≈ 118 دق > 95 دق ; ou en 95 دق à 70 km/h on ne fait que ≈ 110,8 كم < 137,75.
+
+### Leçon 53 — « أوظّف التّناسب في حساب معدّل السّرعة والمسافة والزّمن » (ص 153–156)
+
+#### أستحضر
+
+- **1 — le nombre manquant** : 56 كم en 48 دق → **70 km/h** ; 42 دق à 90 km/h → **63 كم** ;
+  72 كم en 54 دق → **80 km/h** ; 132 دق à 75 km/h → **165 كم**. → les **trois grandeurs**, durée en
+  minutes.
+
+#### أستكشف
+
+- **2 — la régate de بنزرت** : 5 voiliers partent toutes les 15 دق à partir de 10 س, vers سيدي
+  بوسعيد à **60 كم**, aux vitesses 20, 18, 24, 16, 25 km/h. Durées : **3 س ; 3 س 20 دق ; 2 س 30 دق ;
+  3 س 45 دق ; 2 س 24 دق**. Départs 10 س 00, 10 س 15, 10 س 30, 10 س 45, 11 س 00 → arrivées
+  **13 س 00 ; 13 س 35 ; 13 س 00 ; 14 س 30 ; 13 س 24**. Classement : 1er et 3e **ex æquo** (13 س),
+  puis 5e, 2e, 4e. « Observe vitesses et durées et déduis » : **à distance égale, plus la vitesse
+  est grande, plus la durée est courte** (vitesse × durée = 60 à chaque fois). → **temps =
+  distance ÷ vitesse**, résultat non entier converti en h + min ; comparaison à distance égale.
+
+#### أتدرّب
+
+- **3 — la durée** : voiture 144 كم à 80 km/h → **1,8 h = 1 س 48 دق** ; vélo 57 كم à 36 km/h →
+  **1 س 35 دق** ; tracteur 231 م à 693 م/دق → **1/3 دق = 20 ث** ; train 870 م à 30 م/ث → **29 ث**.
+  → **unités de vitesse autres que km/h** (m/min, m/s) : la durée sort dans l'unité de temps de la
+  vitesse.
+- **4 — tableau horaire** (6 colonnes) : (8 س 36, 45 km/h, 63 كم) → 1 س 24 → arrivée **10 س 00** ;
+  (81 km/h, 108 كم, arrivée 12 س 10) → 1 س 20 → départ **10 س 50** ; (13 س 28, 90 km/h, 51 كم) →
+  34 دق → **14 س 02** ; (54 km/h, 63 كم, arrivée 13 س) → 1 س 10 → départ **11 س 50** ; (9 س 30,
+  38 km/h, 95 كم) → 2 س 30 → **12 س 00** ; (72 km/h, 102 كم, arrivée 14 س 02) → 1 س 25 → départ
+  **12 س 37**. → temps puis horaire d'arrivée OU de départ (soustraction de durées, ch. `22`).
+- **5 — le cycliste A → B → C** : 27 كم en 1 س 30 → **18 km/h** ; 7,5 كم de plus à la même vitesse
+  → **25 دق** ; trajet total 34,5 كم en **1 س 55 دق**.
+- **6 — le camion** : 30 كم à 50 km/h, ce qui représente **2/5** du trajet → trajet **75 كم** ;
+  reste 45 كم à 75 km/h → **36 دق** ; premier tronçon aussi 36 دق → total **1 س 12 دق** ; moyenne
+  75 ÷ 1,2 = **62,5 km/h** (ici = moyenne des vitesses, parce que les deux durées sont égales — cas
+  particulier). → mobilise « du tout à partir d'une partie » (ch. `13`).
+- **7 — عاصم et le vélo loué une heure** : à 40 دق il est à 16 كم ; revient pour la fin de
+  l'heure (20 دق). Aller **24 km/h**, retour **48 km/h**, aller-retour 32 كم en 1 h → **32 km/h**
+  (et non (24 + 48) : 2 = 36). Retour à la vitesse de l'aller : 40 دق → arrivée à 1 س 20 (**20 دق
+  de retard**) ; tout à la vitesse du retour : 32 ÷ 48 h = **40 دق**.
+- **8 — le cavalier** : départ 9 س 30, 18 km/h, terrain à 15 كم → 50 دق → arrivée 10 س 20 ; reste
+  45 دق (repart 11 س 05) ; retour en 36 دق → **25 km/h**, arrivée à la caserne **11 س 41**.
+
+#### أوظّف
+
+- **9 — Tunis → Béja → Tabarka** : carte au **1/250 000** ; 42 صم → **105 كم** ; 72,8 صم →
+  **182 كم**. Départ 6 س, Béja à 7 س 30 → **70 km/h** ; pause 1/2 h, même vitesse : 77 كم →
+  **66 دق** → Tabarka à **9 س 06**. Réservoir 40 ل, contenant 28 ل au départ, complété avec 25,65 ل
+  à l'arrivée → consommé 13,65 ل pour 182 كم → **7,5 ل aux 100 كم** ✓. → **échelle** (ch. `14`) et
+  **consommation aux 100 km** (proportionnalité).
+- **10 — le voyage scolaire** (plan au **1/1 500 000**) : المنارة → الأثريّة 4 صم = **60 كم** à
+  48 km/h (1 س 15) ; → الساحليّة 3,2 صم = **48 كم** à 45 km/h (1 س 04) ; → الصناعيّة 4,8 صم =
+  **72 كم** à 54 km/h (1 س 20) ; → المنارة 5,6 صم = **84 كم** à 72 km/h (1 س 10). Distance totale
+  **264 كم** ; roulage 4 س 49 دق + visites 6 س → départ 7 س → retour **17 س 49 دق**.
+
+#### أقيّم مكتسباتي
+
+- **11 — l'oncle مسك** : 12 كم à 18 km/h → **40 دق**, part 1 h avant → arrive **20 دق avant**.
+  Jour du fils malade : part 24 دق avant, arrive 6 دق en retard → 30 دق → **24 km/h** ; pour arriver
+  à l'heure en 24 دق il lui aurait fallu **30 km/h**.
+
+### Écarts avec la fiche (`programme/6eme-base/maths.md`, thème « التناسب والنسبة المئويّة »)
+
+La fiche dit pour `15` : « معدّل السرعة = المسافة ÷ الزمن ؛ المسافة = السرعة × الزمن ؛ الزمن =
+المسافة ÷ السرعة ؛ الانتباه إلى توحيد الوحدات ». Le manuel fait pratiquer, en plus :
+
+1. **La vitesse comme coefficient de proportionnalité distance ↔ durée** (51-1, 51-3, les deux
+   titres « أوظّف التّناسب ») : omis par la fiche, qui ne donne que les formules. Dans le périmètre
+   ✅ « situations de proportionnalité + coefficient » → **enseigné** (section 1).
+2. **Durée en minutes ou en h + min, résultats non entiers** (51-3, 4, 5, 7 ; 53-1, 3, 4) : la fiche
+   dit seulement « attention aux unités ». → **enseigné** : minutes → fraction d'heure (section 5),
+   vitesse ramenée à 60 min par proportionnalité (section 6), heure décimale → h + min (section 4).
+   **Jamais de division par une fraction** (⛔ du thème fractions) : là où 51-6 donne « 1,5 كم en
+   1/3 h », le cours passe par « 3 fois plus en une heure ».
+3. **Changement d'unité de vitesse** (51-8 : 340 m/s → 1224 km/h ; 53-3 : m/min et m/s) : omis par
+   la fiche, dans « attention aux unités » → **enseigné** comme cas limite de la section 6.
+4. **Comparer deux mouvements** (51-2, 53-2) et « à distance égale, plus vite = moins longtemps » :
+   omis par la fiche ; testé par `04-defi` (qui a parcouru le plus ; durée à deux vitesses) →
+   **enseigné** (section 7), **sans** nommer la proportionnalité inverse (non au programme).
+5. **Vitesse moyenne d'un trajet en plusieurs étapes = distance totale ÷ durée totale de marche**,
+   **pas la moyenne des vitesses**, et **l'arrêt n'entre pas dans la durée de marche** (51-9, 51-11,
+   51-12 ; 53-6, 53-7) : c'est le sens même de « **معدّل** » (tombé du titre dans une version de la
+   fiche, rétabli au §2 ter) ; au cœur des أوظّف/أقيّم → **enseigné** (section 8).
+6. **Durée écoulée entre deux horaires, horaire d'arrivée ou de départ** (51-7, 9, 10, 11, 13 ;
+   53-2, 4, 8, 11) : c'est le chapitre `22-durees` (المدّة المنقضية), réinvesti ici → **utilisé** dans
+   la section 8 avec renvoi, pas ré-enseigné.
+7. **Échelle d'un plan** (53-9 : 1/250 000 ; 53-10 : 1/1 500 000) et **consommation aux 100 km**
+   (53-9) : leçon 14 / ch. `14` (le §2 range l'échelle en « savoir-maître », le manuel la fait
+   pratiquer dès la leçon 14). Problèmes d'**intégration** → **non enseignés ici, signalés**.
+8. **« Du tout à partir d'une partie »** (53-6 : 30 km = 2/5 du trajet) : ch. `13` ; non ré-enseigné.
+9. Vitesse limite / sécurité routière (51-12, 51-13) : contexte, pas une notion.
+10. **Dans l'autre sens** : rien de ce que la fiche inclut pour ce chapitre n'est absent du manuel.
+11. ⚠️ **À ne pas reprendre** : 51-10 (voiture 8 دق, « piéton » à 12 km/h — probable coquille
+    d'horaire) ; 51-4 « طائرة … 2106 » sans unité imprimée.
+
+### `22-durees` — Leçon 5 (ص 16–18)
+
+## Leçon 5 — « أوظّف الجمع والطّرح والضّرب على الأعداد الّتي تقيس الزّمن » (102609, ص 16–18) → chapitre `22-durees`
+
+> **Lu à l'image** (rendus `m-016…018.png`, puis re-rendus à 200–250 dpi pour les exercices 2–3),
+> 2026-09-23, pour la campagne patron de notion (é35 → `math-6eme`). Chaque nombre ci-dessous a été
+> **re-calculé** (python, `fractions.Fraction`, tout en secondes). Comme les leçons 1 et 3, pas
+> d'encadré de cours : أستحضر → أعتمد مكتسباتي → أوظّف → أقيّم مكتسباتي. **Le titre même dit
+> « الجمع والطّرح والضّرب »** : la multiplication d'une durée fait partie de la leçon.
+> **Notation du manuel** : **س** (heure), **دق** (minute), **ث** (seconde), et « الساعة 7 و 40 دق »
+> pour un horaire. Le corpus (et la fiche) écrivent **سا / د / ثا** — voir écart 9.
+
+### أستحضر
+
+- **1 — la femme de ménage d'une entreprise.** Du lundi au samedi (**6 jours**) : matin 6 سا 45 د →
+  9 سا 30 د (**2 سا 45 د**), après-midi 12 سا 30 د → 17 سا (**4 سا 30 د**). Par jour **7 سا 15 د**.
+  « De deux façons » le total hebdomadaire : 6 × 7 سا 15 د = 42 سا 90 د = **43 سا 30 د** ; ou
+  6 × 2 سا 45 د = 16 سا 30 د et 6 × 4 سا 30 د = 27 سا → **43 سا 30 د**. (Distributivité de la
+  multiplication d'une durée sur l'addition.)
+
+### أعتمد مكتسباتي
+
+- **2 — opérations** (h/min/s mêlés) :
+  - 3 سا 15 د 14 ثا + 6 سا 10 د 58 ثا = **9 سا 26 د 12 ثا** (72 ثا = 1 د 12 ثا, retenue sur la minute) ;
+  - 5 سا 18 د − 1 سا 48 د = **3 سا 30 د** (emprunt d'une heure : 4 سا 78 د) ;
+  - 2 سا 28 ثا − 47 د 55 ثا = **1 سا 12 د 33 ثا** (emprunt en cascade à travers les minutes nulles) ;
+  - 10 سا 56 ثا + 3 سا 23 د = **13 سا 23 د 56 ثا** (unités absentes = 0) ;
+  - 3 سا − 45 د 30 ثا = **2 سا 14 د 30 ثا** (3 سا = 2 سا 59 د 60 ثا) ;
+  - 2 سا 27 د × 4 = 8 سا 108 د = **9 سا 48 د** ;
+  - (ربع ساعة و 15 ثا) × 4 = (15 د 15 ثا) × 4 = 60 د 60 ثا = **1 سا 1 د** ;
+  - (3/4 سا و 5 د) × 2 = (50 د) × 2 = 100 د = **1 سا 40 د** ;
+  - (3 سا 45 ثا) × 7 = 21 سا 315 ثا = **21 سا 5 د 15 ثا**.
+- **3 — opérations** :
+  - 12 سا 18 د 12 ثا − 9 سا 45 د 30 ثا = **2 سا 32 د 42 ثا** (double emprunt) ;
+  - (1/2 سا و 15 ثا) × 5 = (30 د 15 ثا) × 5 = 150 د 75 ثا = **2 سا 31 د 15 ثا** ;
+  - 1 سا 48 د + (1/6 سا و 58 ثا) = 1 سا 48 د + 10 د 58 ثا = **1 سا 58 د 58 ثا** ;
+  - 24 سا − 9 سا 45 د − … = 8 سا 25 د → 14 سا 15 د − … = 8 سا 25 د → **… = 5 سا 50 د** (terme manquant).
+- **4 — le grossiste ambulant, 3 régions** (tableau départ / durée / retour, une case vide par ligne) :
+  région 1 : 6 سا 15 د → 15 سا 30 د, durée **9 سا 15 د** ; région 2 : 6 سا 45 د + 7 سا 15 د →
+  retour **14 سا** ; région 3 : retour 16 سا 5 د − 8 سا 30 د → départ **7 سا 35 د**. (Les trois
+  formes : durée = arrivée − départ ; arrivée = départ + durée ; départ = arrivée − durée.)
+- **5 — l'horloge murale qui retarde de 10 ثا par heure.** Réglée à 10 سا du matin, consultée à
+  16 سا (4 h de l'après-midi) **le lendemain** : 24 سا + 6 سا = **30 سا** écoulées → retard
+  30 × 10 = 300 ثا = **5 د** ; l'horloge indique **15 سا 55 د**. (Passage au jour suivant + ×.)
+- **6 — نادر et l'école du quartier**, lundi → vendredi (**5 jours**) : quitte la maison 7 سا 40 د,
+  entre en classe 8 سا (**20 د**), sort à 12 سا, rentre à 12 سا 15 د (**15 د**). Trajet hebdomadaire
+  5 × 35 د = 175 د = **2 سا 55 د**. Heures d'étude hebdomadaires « de deux façons » : 5 × 4 سا =
+  **20 سا** ; ou 5 × (12 سا 15 د − 7 سا 40 د) = 5 × 4 سا 35 د = 22 سا 55 د, moins 2 سا 55 د = **20 سا**.
+- **7 — le chauffeur de bus (6 trajets par jour, capitale ↔ الأحواز)** : départ 5 سا 15 د, arrivée
+  5 سا 50 د (**35 د**), redépart 6 سا 5 د (pause **15 د**), retour 6 سا 40 د (**35 د**), redépart
+  6 سا 55 د. Deux trajets consécutifs : 5 سا 15 د → 6 سا 40 د = **1 سا 25 د** (cycle complet avec
+  pauses : **1 سا 40 د**). Journée (6 trajets = 3 allers-retours) : dernière arrivée 5 سا 15 د +
+  2 × 1 سا 40 د + 1 سا 25 د = **10 سا**, soit **4 سا 45 د** de travail (**5 سا** si l'on compte la
+  dernière pause — ambiguïté du manuel). « أستعين برسم بياني » : **le manuel demande une frise**.
+
+### أوظّف
+
+- **8 — le laboureur.** 6 سا 30 د → 17 سا 45 د = 11 سا 15 د, moins 45 د de repos = **10 سا 30 د** ;
+  80 آر par heure → 10 × 80 + 1/2 × 80 = **840 آر = 8,4 هك**. (Durée × débit horaire : il faut
+  lire 10 سا 30 د comme **10,5 سا** ou 10 سا + 1/2 سا.)
+- **9 — السيّد نبيل, vitesse constante sur une semaine** : 3 سا → 240 كم, donc **80 كم/سا** ;
+  320 كم → **4 سا** ; 2 سا → **160** ; 7 سا → **560** ; 5 سا → **400** ; 480 كم → **6 سا** ;
+  total **27 سا, 2 160 كم**. Carburant 7 ل/100 كم à 0,860 د : 151,2 ل, **130,032 د** (par jour :
+  22,4 ل/19,264 د ; 11,2/9,632 ; 16,8/14,448 ; 39,2/33,712 ; 28/24,080 ; 33,6/28,896). →
+  proportionnalité et vitesse (`14`, `15`), pas des durées.
+
+### أقيّم مكتسباتي
+
+- **10 — l'ouvrier d'usine.** 8 سا 30 د de travail effectif, pause 1 سا 15 د, fin à 17 سا 15 د →
+  départ 17 سا 15 د − 9 سا 45 د = **7 سا 30 د** (ou 17 سا 15 د − 8 سا 30 د − 1 سا 15 د). 6 jours à
+  1,200 د l'heure : 8,5 × 1,200 = 10,200 د par jour × 6 = **61,200 د** ; ou 51 سا × 1,200 = **61,200 د**.
+
+### Écarts avec la fiche (`programme/6eme-base/maths.md`, thème « المُدَد الزمنيّة »)
+
+1. **Multiplication d'une durée par un entier** (ex. 1, 2, 3, 5, 6, 10) — l'indicateur officiel
+   que la fiche cite (« جمع وطرح **وضرب** ») et le titre de la leçon l'incluent ; les « Concepts » et
+   les bornes ✅ de la fiche l'**omettent**. ✅ au programme — **enseigné** (section 8), signalé.
+2. **Secondes dans les calculs à trois unités**, retenue et emprunt **en cascade** (ex. 2, 3) — la
+   fiche dit « retenue à 60 » sans les trois étages. **Enseigné** (sections 4, 5, cas limites).
+3. **Fractions d'heure dans une durée** (ربع ساعة، 1/2 سا، 3/4 سا، 1/6 سا) — absentes de la fiche
+   pour ce thème (vues à `13` § 5) ; le quiz teste 1/2 et 1/4 sa. **Enseigné** (section 3, renvoi à 13).
+4. **Durée écrite en heures décimales** pour multiplier un débit horaire (ex. 8 : 10 سا 30 د =
+   10,5 سا ; ex. 10 : 8,5 سا × 1,200 د) — non dit par la fiche. Enseigné comme **cas limite** de la
+   section 3 (1 سا 30 د = 1,5 سا, jamais 1,30 سا), sans en faire une notion. À trancher.
+5. **Horaire de départ = arrivée − durée** et **terme manquant** (ex. 3 d, 4, 10) — la fiche ne
+   nomme que « المدّة المنقضية = لحظة الوصول − لحظة الانطلاق ». **Enseigné** (section 7).
+6. **Passage au jour suivant** (ex. 5 : 10 سا → 16 سا le lendemain = 30 سا) — la fiche exclut les
+   « calculs calendaires complexes » ; ce cas-ci (ajouter 24 سا) est simple. Enseigné comme **cas
+   limite** de la section 6, signalé.
+7. **Frise / « رسم بياني »** pour une durée écoulée (ex. 7) — enseignée comme représentation (T3,
+   section 6).
+8. **Proportionnalité / vitesse / carburant** (ex. 8 débit, ex. 9 tableau) — relève de `14`/`15`.
+   **Non enseigné ici**, signalé.
+9. **Notation** : le manuel écrit **س / دق / ث** ; la fiche et tout le chapitre (quiz, exercices)
+   **سا / د / ثا**. Le cours garde سا/د/ثا et **signale** une fois la notation du manuel (section 1),
+   pour que l'élève lise son livre. À trancher côté fiche (vocabulaire officiel).
+10. **Inverse** : la fiche liste semaine, mois, année (12 mois, 365 jours) ; le manuel ne pratique que
+    « jours de la semaine » (6 et 5 jours ouvrés). Le quiz les teste : gardés (section 1). La
+    **lecture d'une horloge à aiguilles** (testée par `01-pratique` Q3) n'est ni dans la fiche ni dans
+    ces pages : enseignée en section 1 (figure) pour la règle d'or.
+11. Ambiguïté du manuel à ne pas reprendre : ex. 7 « durée de travail du chauffeur » (4 سا 45 د ou
+    5 سا selon la dernière pause).
+
+### `24-decomposition-fractions` — Leçon 19 (ص 55–58) — relecture du §2 bis
+
+## Lecture — `24-decomposition-fractions` — Leçon 19 « أفكّك الأعداد الكسريّة وأركّبها » (102609, ص 55–58)
+
+> Lu à l'image (`/root/.cache/yqa-manuels/r/m-055..058.png`), 2026-09-23, en contrôle du §2 bis de la
+> fiche (`programme/6eme-base/maths.md`), qui avait déjà transcrit la leçon. Chaque nombre ci-dessous
+> est **re-calculé** (python `fractions.Fraction`). Ce qui suit renvoie au §2 bis pour ce qu'il dit
+> juste, et n'ajoute que ce qu'il omet ou lit de travers. Comme les leçons 1, 3, 47 : **aucun encadré
+> de cours** ; ordre imprimé أستحضر → أستكشف → أتدرّب → أوظّف → أقيّم مكتسباتي. La leçon arrive en
+> 19ᵉ position, **avant** la leçon 28 (fractions égales) et la leçon 42 (addition à dénominateurs
+> différents) : tout ce qu'elle fait se fait à **dénominateur constant**.
+
+## ص 55
+
+- **أستحضر 1 — la salle de l'école المنارة** : coût 40 000 د ; البلديّة paie le quart, المنظّمة le
+  cinquième, مجلس الولاية le reste. Consigne : « أكتب بالأرقام الأعداد الكسريّة الممثّلة لهذه
+  المساهمات ». → 1/4 = **10 000 د**, 1/5 = **8 000 د**, reste 40 000 − 18 000 = **22 000 د**, soit
+  22 000/40 000 = **11/20** du coût. ⚠️ Omis par le §2 bis : **le reste (11/20) ne s'écrit simplement
+  qu'avec un dénominateur commun à 4 et 5** — 1/4 + 1/5 = 9/20 relève de la leçon 42. À ce stade
+  l'élève le trouve par les **montants** (22 000 sur 40 000), ou en découpant le coût en **20 parts de
+  2 000 د** (quart = 5 parts, cinquième = 4, reste = 11) — c'est cette lecture que le cours reprend.
+- **أستكشف 2 — le test d'évaluation** : tableau conforme au §2 bis (vérifié case par case : imprimés
+  4 · 10 · 3 · 11/28 · 28/28 pour «أ» ; 3 · 9/25 · 8 · 5/25 pour «ب» ; 53 pour « معا »).
+  Colonnes : 4 + 10 + 11 + 3 = **28** ; 3 + 9 + 8 + 5 = **25** ; معا 7 · 19 · 19 · 8, total **53**.
+  Renvoi au cahier : « التمرين عدد 2 ص 14 ».
+
+## ص 56
+
+- **Questions أ → د de l'activité 2** (le §2 bis ne les transcrit pas) :
+  - أ — relation entre le total de la «أ» et les fractions des niveaux → **4/28 + 10/28 + 11/28 + 3/28
+    = 28/28** : c'est un **tafkīk de l'unité**, le cœur de la leçon ;
+  - ب — même chose pour la «ب» → 3/25 + 9/25 + 8/25 + 5/25 = **25/25** ;
+  - ج — même chose pour les deux classes ensemble → 7/53 + 19/53 + 19/53 + 8/53 = **53/53** ;
+  - د — « مجموع تلاميذ السّادستين من جهة والعددين الكسريين الممثّلين لمجموع تلاميذ كلّ قسم » : la
+    relation entre 53 et les fractions représentant **l'effectif de chaque classe** → lecture la plus
+    naturelle : **28/53 + 25/53 = 53/53**.
+  ⚠️ **Écart avec le §2 bis** : il écrit que la question د « demande justement » la relation entre
+  4/28, 3/25 et 7/53. **Ce n'est pas ce qu'imprime la page** : د porte sur les effectifs totaux des
+  classes. Le piège 4/28 + 3/25 ≠ 7/53 reste légitime — la colonne « معا » s'obtient bien en
+  additionnant les effectifs, et le §2 bis a raison d'y voir l'occasion de
+  `math.frac.add-numerators-and-denominators` — mais c'est **une exploitation**, pas une consigne du
+  manuel. (Au passage : 4/28 + 3/25 = 46/175 ≠ 7/53.)
+- **أتدرّب 3 — tafkīk à dénominateur constant** : 16/16 (2 cases), 12/10 (3 cases), 25/4 (« … »),
+  13/15, 17/8, 9/8. Réponses libres (ex. 16/16 = 9/16 + 7/16 ; 12/10 = 5/10 + 4/10 + 3/10).
+- **4 — recomposer** : 2 + 8 + 15 + 4 + 1 = 30 → **30/30** ; 7 + 3 → **10/20** ; 1 + 4 + 3 + 2 →
+  **10/8** ; 4 + 6 + 3 → **13/10**. Conforme au §2 bis (13/10 et 10/8 > 1 ; 30/30 = 1 exactement,
+  cas limite non relevé).
+- **5 — le terme manquant** : 28 − 4 − 15 = **9** → 9/20 ; 45/50 + deux cases = 50/50 → deux termes de
+  somme **5/50** (plusieurs solutions) ; 4/12 + 3/12 = **7/12** ; 5/40 + trois cases = 40/40 → somme
+  **35/40** (plusieurs solutions). Conforme.
+
+## ص 57
+
+- **6 — partie entière + partie fractionnaire** : 11/7 = **1 + 4/7** ; 19/3 = **6 + 1/3** ; 49/9 =
+  **5 + 4/9** ; 15/2 = **7 + 1/2** ; 90/11 = **8 + 2/11** ; 79/9 = **8 + 7/9** (divisions euclidiennes
+  11 = 7 × 1 + 4 ; 19 = 3 × 6 + 1 ; 49 = 9 × 5 + 4 ; 15 = 2 × 7 + 1 ; 90 = 11 × 8 + 2 ; 79 = 9 × 8 + 7).
+  Aucun cas à reste nul. Conforme.
+- **7 — six égalités à compléter** (le §2 bis n'en cite que deux) :
+  - `… + 9/17 = 13/17` → **4/17** ;
+  - `… + 4 = 19/4` → **3/4** (4 = 16/4) ;
+  - `4/5 + … = 9/5` → **5/5 = 1** (le terme manquant est un **entier**) ;
+  - `… = 1/9 + 4/9 + 2/9` → **7/9** ;
+  - `… = 3/5 + 8` → **43/5** (8 = 40/5) ;
+  - `9/7 = …/7 + 1` → **2/7** (1 = 7/7).
+  Trois des six demandent d'**écrire un entier avec le dénominateur de la fraction** (n = n × d / d) —
+  une notion que la fiche ne nomme pas.
+- **أوظّف 8 أ — la première galette** (فطيرة) : deux galettes de même forme et même volume ; la
+  première coupée en parts égales : عائلتنا 6, voisins 3 · 5 · 4 · 2 → total **20** parts ; fractions
+  6/20, 3/20, 5/20, 4/20, 2/20 ; « العدد الكسريّ الممثّل لمناب جميع العائلات » = **20/20**.
+
+## ص 58
+
+- **8 (suite)** : « أجد العلاقة بين العدد الكسريّ الممثّل للفطيرة الأولى والأعداد الكسريّة الممثّلة
+  لمنابات العائلات » → 20/20 = 6/20 + 3/20 + 5/20 + 4/20 + 2/20.
+- **8 ب — la seconde galette** : 5 · 4 · 3 · 2 · 1 → **15** parts ; 5/15 … 1/15 ; total **15/15** ;
+  « أتأكّد من صحّة هذا التّقسيم بأكثر من طريقة » ; et « أستعين بها في اقتراح تقسيم آخر » : proposer
+  **un autre partage** = un autre tafkīk de 15/15 (non-unicité, encore).
+- **أقيّم مكتسباتي 9 — le budget de juillet** : 9/20 + 3/20 + 7/20 + 5/20 = **24/20 > 20/20** → les
+  parents s'endetteraient ; réduction de 4/20 → **20/20** exactement ; « أقترح تصرّفا جديدا » : ouvert.
+  Conforme au §2 bis.
+
+## Écarts avec la fiche
+
+1. **Écrire un entier avec le dénominateur d'une fraction** (8 = 40/5, 1 = 7/7, 4 = 16/4 ; ex. 7, trois
+   items sur six) — pratiqué, ni nommé par la fiche (§2 bis n'en fait qu'une incise), ni enseigné par
+   l'ancien cours (il n'apparaissait que dans une figure). ✅ au programme — **enseigné** (section 4).
+2. **Le terme manquant peut être un entier** (4/5 + … = 9/5 → 1) — cas limite **enseigné** (section 3).
+3. **L'ancrage de l'activité 1 exige un dénominateur commun à 4 et 5** (1/4, 1/5 → 11/20) : la fiche
+   exclut ici l'addition à dénominateurs différents (leçon 42). Le cours le fait **sans** cette
+   addition, en comptant le coût en 20 parts de 2 000 د (un quart = 5 parts). Pas d'écart de fond,
+   mais à savoir : l'activité touche la frontière.
+4. **Lecture de la question د (ص 56)** : le §2 bis lui prête la relation 4/28 + 3/25 vs 7/53 ; la page
+   demande la relation entre 53 et les fractions des **effectifs de classe** (28/53 + 25/53 = 53/53).
+   Le cours montre les deux : le bon tafkīk du groupe réuni (28/53 + 25/53), puis le piège, comme
+   exploitation. **À corriger dans le §2 bis** (je n'y touche pas).
+5. **Non-unicité** : ex. 5 (deux items), 8 ب (« تقسيم آخر ») — la fiche l'a ; enseignée (section 1).
+6. Ce que la fiche borne et que le manuel respecte : jamais « عدد مختلط », jamais la notation « 1 ¾ »,
+   jamais de dénominateurs différents dans une somme. Le cours s'y tient ; il **renvoie** au chapitre
+   `11` pour 4/28 + 3/25 (« possible, après توحيد المقامات »), ce qui corrige aussi le distracteur
+   `math.frac.comparaison-jugee-impossible` du boss.
+7. Inverse : rien que la fiche inclut ne manque au manuel. Aucune notion **exclue** par la fiche n'est
+   pratiquée par la leçon.
+8. **Coquille de l'ancien cours** (pas du manuel) : « 4/28 = 1/7 وهو أكبرُ من السُّبع بقليل » —
+   contradictoire (4/28 est exactement 1/7). Retirée.
 
 ### Domaine : **التصرّف في المقادير — قيس** (grandeurs & mesure) — مكوّن 2 p.58
 
