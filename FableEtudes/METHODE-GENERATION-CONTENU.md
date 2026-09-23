@@ -749,6 +749,13 @@ Deux parades, l'une en amont, l'autre en aval (§ B3) :
   | paires de questions proches (Jaccard ≥ 0,45)              | 0                                | les doublons **littéraux** — pas les doublons de gabarit, qui échappent à cette mesure |
 
   La première se corrige sans déplacer aucune clé (raccourcir la clé, étoffer un distracteur).
+  ⛔ **Elle est désormais un gate** : la Content CI lance `content:tranche --changed --fresh
+  --strict-longest`, qui ne juge que les questions **neuves ou modifiées** de la PR — la dette
+  publiée ne bloque personne, une tranche neuve ne peut plus en ajouter. Rejouée sur les trois
+  dernières tranches d'arabe 8ᵉ (#510–#512), elle les aurait arrêtées à 61–75 % : la clé
+  portait sa justification (« حال في محلّ نصب، تصف الوردة… ») et les distracteurs rien.
+  La parade se prend à l'écriture : **même niveau de justification sur chaque option**, ou
+  aucune.
   ⚠️ La deuxième **ne fuit rien** : toutes les surfaces mélangent les options à l'affichage
   (`shuffleOptions`) — l'outil la rapporte comme **symptôme** d'écriture au gabarit, pas comme
   défaut à « corriger » en déplaçant des clés. La troisième ne remplace **jamais** l'audit
