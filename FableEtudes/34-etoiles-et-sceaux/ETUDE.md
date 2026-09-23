@@ -4,8 +4,8 @@
 > Mohamed (§7) : quatre sur la recommandation, **Q-2 contre** (« maîtrisé » = étoile 4, pas
 > ≥ 3), ce qui SIMPLIFIE l'étude — la barre de la couverture parentale ne bouge pas, seule sa
 > monotonie change, et la série KPI-E de é31 n'a plus de rupture de définition. Les 5 lots sont
-> exécutables ; **le lot 1 est LIVRÉ** (arena, 2026-09-14 — §8) et le lot 5 est optionnel et
-> commandé (Q-4). Le numéro 33 est pris par « la porte
+> exécutables ; **les lots 1 à 4 sont LIVRÉS** (arena, 2026-09-14 — §8) et le lot 5 est optionnel et
+> commandé (Q-4), suspendu à une liste de contenu. Le numéro 33 est pris par « la porte
 > des questions ouvertes » (arena#1026, migrations `20260913120000` / `20260913130000`), dont
 > le dossier n'est pas encore déposé ici.
 > **Priorité** : 34 · **Valeur** : 🎯 l'élève ne voit plus jamais sa progression **reculer**

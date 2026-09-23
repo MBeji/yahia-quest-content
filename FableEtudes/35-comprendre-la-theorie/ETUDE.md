@@ -1,8 +1,8 @@
 # Étude 35 — Comprendre la théorie : chaque notion arrive par le concret, se montre par l'exemple, se fixe par la règle et se vérifie sur place (pilote maths 9ᵉ)
 
 > **Statut** : **en exécution** — écrite ET **validée le 2026-09-16** (Q-1…Q-6 arbitrées le même
-> jour, toutes sur la recommandation, §7). **Lots 1 et 2 LIVRÉS** le 2026-09-16 (§8) ; restent la
-> campagne (lots 3 à 6), la mesure (lot 7, au premier trafic) et le bilan (lot 8).
+> jour, toutes sur la recommandation, §7). **Lots 1 à 6 LIVRÉS** (§8 ; campagne maths 9ᵉ le 2026-09-16, étendue au
+> concours 9ᵉ le 2026-09-18) ; restent la mesure (lot 7) et le bilan (lot 8).
 > **Priorité** : 35 · **Valeur** : 📖 l'élève de 9ᵉ qui lit une leçon **comprend** la notion au lieu
 > de la recevoir — parce qu'elle arrive par une situation qu'il connaît, se montre dans un exemple
 > résolu qui dit _pourquoi_ chaque étape, se distingue d'une erreur typique, se fixe en règle, et
