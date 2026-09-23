@@ -74,6 +74,10 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           path: corpus
+          # Historique complet : le cliquet `content:tranche --fresh` compare la branche à
+          # sa BASE DE FUSION avec main (27 Mo de .git). Un clone à profondeur 1 n'a pas de
+          # base de fusion, et le cliquet jugerait alors la tranche d'un autre.
+          fetch-depth: 0
 
       - name: Checkout moteur (repo public)
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
@@ -146,6 +150,23 @@ jobs:
       - name: programme:check
         working-directory: engine
         run: npm run programme:check
+
+      # Le CLIQUET de la fuite par la forme (méthode § B2, arena #1102 et suivante). Une
+      # question neuve ou modifiée dont la clé est strictement l'option la plus longue se
+      # devine sans rien savoir ; mesuré à 61–75 % sur les trois dernières tranches
+      # d'arabe 8ᵉ, dont la clé portait sa justification et les distracteurs rien.
+      # `--fresh` ne juge QUE ce que la branche ajoute ou change (contre sa base de fusion) :
+      # la dette déjà publiée ne rend aucune PR rouge. `--strict-longest` : seule cette
+      # fuite bloque — les paires proches et les candidats gabarit restent un rapport
+      # pour l'auditeur, lisible dans ce log. Sur `main`, rien n'est « neuf » : no-op.
+      - name: content:tranche --fresh (cliquet de la clé la plus longue)
+        working-directory: engine
+        run: |
+          set -euo pipefail
+          if ! npm run -s content:tranche -- --changed --fresh --strict-longest; then
+            echo "::error::content:tranche — la clé est strictement l'option la plus longue au-delà du hasard sur les questions neuves de cette PR (liste ci-dessus). Raccourcir la clé ou étoffer les distracteurs (même niveau de justification), sans déplacer la clé ; puis relancer localement : npm run content:gates -- --tranche."
+            exit 1
+          fi
 
       # Les invariants du HARNESS appliqués à ce dépôt (étude 32, lot 2). Ce dépôt porte
       # 43 skills, 12 workflows et un CLAUDE.md de 9 Kio, et n'avait AUCUN gate de harness :
