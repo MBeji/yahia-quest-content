@@ -1,8 +1,8 @@
 # Mandat — corriger la fuite « clé la plus longue » d'un chapitre publié
 
 > Mandat à donner **tel quel** à un correcteur (un par chapitre, en parallèle), en remplaçant
-> `<MATIÈRE>`, `<CHAPITRE>` et `<NN>`. Né de la correction d'`arabic-8eme` (corpus #531) : ses
-> quatre pièges sont ceux que l'audit B3 y a trouvés. La chaîne complète : correcteurs →
+> `<MATIÈRE>`, `<CHAPITRE>` et `<NN>`. Né de la correction d'`arabic-8eme` (corpus #531, #534, #540) : ses
+> pièges sont ceux que l'audit B3 y a trouvés. La chaîne complète : correcteurs →
 > un auditeur par chapitre en contexte vierge (mandat de la méthode, § B3) → arbitrage →
 > `npm run content:gates -- --tranche` → PR → dispatch d'`apply-content.yml`. Méthode : § B2.
 
@@ -16,14 +16,16 @@ Deux clones côte à côte : le corpus (ici) et le moteur `../engine`, où se la
 
 Objectif : la clé n'est plus strictement la plus longue dans aucune question touchée ; taux du chapitre ≤ 20 %. Question impossible à corriger sans risque → la laisser et dire pourquoi.
 
-**Les cinq pièges que la relecture a attrapés (tranches 1 à 3) — à éviter activement :**
+**Les sept pièges que la relecture a attrapés (tranches 1 à 3) — à éviter activement :**
 - **La clé raccourcie doit rester VRAIE À LA LETTRE.** « الخطأ أنّ «كاد» للمقاربة » dit que l'erreur EST la règle : faux. Relis chaque clé raccourcie comme un élève qui la prend au mot (forme correcte : « الخطأ إغفال أنّ… »).
 - **Ne crée pas un indice de forme.** Si tu introduis un terme (synonyme du cours, « مطابق », « في محلّ »…) ou une marque (ellipse « … » pour tronquer une citation, guillemets, « إغفال ») dans des clés, mets-la AUSSI dans des distracteurs — sinon « l'option qui porte X est la bonne » remplace la fuite de longueur.
 - **Un distracteur étoffé ne doit pas se contredire.** « بدل مرفوع » d'un mot visiblement منصوب, « مبتدأ مرفوع » sur un mot à fatha : l'élève l'élimine à vue. Fais-le se tromper sur UNE chose (la nature de la fonction), cohérent pour le reste (le cas visible).
 - **Aucune notion pas encore enseignée.** Un distracteur étoffé ou une clé reformulée ne s'appuie que sur ce que le cours de CE chapitre et les chapitres précédents ont enseigné (ordre du `manifest`/des dossiers). « حال » dans un distracteur du chapitre 21 alors que الحال est au chapitre 23 : l'élève ne peut ni le choisir en connaissance de cause, ni l'écarter.
+- **La clé raccourcie doit encore répondre à l'énoncé.** Un énoncé qui demande « الإعراب الكامل » ou « النوع والعلّة » n'accepte pas une clé réduite à la moitié : soit la clé garde les deux parts, soit l'énoncé est ajusté (« الإعراب الصحيح ») — et les distracteurs portent la même structure (une cause si la clé en donne une).
+- **Les distracteurs déjà là comptent aussi.** Dans chaque question que tu touches, remplace le distracteur préexistant qui se contredit avec le cas visible ou avec l'énoncé (premier constat des audits de la tranche 3 : ~15 par chapitre) par l'erreur plausible de même cas.
 - **Jamais de renvoi positionnel.** Une explication ne dit jamais « الأولى / الثالثة / الأخيرة » pour désigner une OPTION : l'affichage les mélange. Cite le texte. (Les phrases numérotées de l'ÉNONCÉ restent permises.) Corrige ceux que tu croises dans ton chapitre.
 
-**Interdits absolus** : ne change jamais un `id` d'option, `correctOption`, l'ordre des options ou des questions ; n'ajoute/supprime aucune question ni option ; ne touche ni `misconceptionTag`, ni `difficulty`, ni `competencies`, ni `prompt` (sauf faute manifeste ou contradiction avec le cours : la signaler). Arabe correct, vocalisé comme l'existant, chiffres occidentaux, guillemets «».
+**Interdits absolus** : ne change jamais un `id` d'option, `correctOption`, l'ordre des options ou des questions ; n'ajoute/supprime aucune question ni option ; ne touche ni `misconceptionTag`, ni `difficulty`, ni `competencies`, ni `prompt` (sauf faute manifeste, contradiction avec le cours, ou énoncé que la clé raccourcie ne couvre plus : le signaler). Arabe correct, vocalisé comme l'existant, chiffres occidentaux, guillemets «».
 
 **Vérification avant de rendre** : re-résous À L'AVEUGLE chaque question touchée (une seule juste, c'est la clé) ; `npm run -s content:check`, `npm run -s content:qa:strict -- --subject <MATIÈRE> 2>&1 | tail -3` (0 erreur), `npm run -s content:tranche -- --subject <MATIÈRE> --chapters <NN>` (taux final).
 
