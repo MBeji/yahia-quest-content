@@ -5,7 +5,7 @@
 > with `chapter.json`; a subject with 0 chapters is a ⚠ stub). Check here whether a subject /
 > grade already exists before creating one, and which slugs are taken.
 
-**95 subjects · 809 chapters · 3768 exercises · 6 themes · 0 stub(s)**
+**95 subjects · 813 chapters · 3788 exercises · 6 themes · 0 stub(s)**
 
 ## anglais
 
@@ -99,7 +99,7 @@
 | `math` | الرياضيات | 9eme-base | ar | 20 | 126 | 20 |
 | `french` | Français | 9eme-base | fr | 10 | 40 | 10 |
 | `arabic` | العربية | 9eme-base | ar | 14 | 69 | 14 |
-| `svt` | العلوم الفيزيائية | 9eme-base | ar | 9 | 43 | 9 |
+| `svt` | العلوم الفيزيائية | 9eme-base | ar | 13 | 63 | 13 |
 | `english` | English | 9eme-base | en | 10 | 40 | 10 |
 | `sciences-vie-terre` | علوم الحياة والأرض | 9eme-base | ar | 21 | 123 | 21 |
 | `math-bac-math` | Mathématiques | bac-math | fr | 19 | 133 | 19 |

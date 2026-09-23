@@ -230,7 +230,7 @@
 
 ::: figure الطيف 1 (المصباح المتوهّج) متواصل من الأحمر إلى البنفسجي؛ أمّا الطيف 2 (مصباح النيون) فأجزاء ملوّنة منفصلة تفصلها مناطق مظلمة
 <svg viewBox="0 0 340 190">
-<linearGradient id="spec" x1="0" y1="0" x2="1" y2="0">
+<linearGradient id="spec-13" x1="0" y1="0" x2="1" y2="0">
 <stop offset="0" stop-color="#dc2626"/>
 <stop offset="0.2" stop-color="#f97316"/>
 <stop offset="0.3" stop-color="#eab308"/>
@@ -239,7 +239,7 @@
 <stop offset="0.8" stop-color="#4338ca"/>
 <stop offset="1" stop-color="#7c3aed"/>
 </linearGradient>
-<rect x="40" y="30" width="260" height="46" fill="url(#spec)" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="40" y="30" width="260" height="46" fill="url(#spec-13)" stroke="#0f172a" stroke-width="1.5"/>
 <rect x="40" y="120" width="260" height="46" fill="#111827" stroke="#0f172a" stroke-width="1.5"/>
 <rect x="43.2" y="120" width="4" height="46" fill="#dc2626"/>
 <rect x="56.2" y="120" width="4" height="46" fill="#dc2626"/>
