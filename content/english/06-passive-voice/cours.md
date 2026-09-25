@@ -394,7 +394,7 @@ Live the evening, step by step:
 - **What a** + (adjective) + noun: _What a lovely present!_ · **How** + adjective: _How nice!_
 - **I'm interested in** + noun / verb-ing · **I don't mind** + verb-ing.
 
-Edge case: **What a pity!** is an exclamation, but it shows **disappointment**, not joy: _The trip is cancelled. What a pity!_
+Edge case: **What a pity!** is an exclamation, but it shows **disappointment**, not joy: _We can't go on the trip. What a pity!_
 
 :::
 

@@ -33,9 +33,9 @@ Finish two sentences of the poster, step by step:
 > ⚠️ **Common mistake**: _the fumes **who** come from the factory_ ✗. It tempts you because in Arabic the same relative word serves for people and for things alike. English does not: fumes are things, so the pronoun is **which** — _the fumes **which** come from the factory_ ✓ — or **that**.
 
 ::: propriete
-You can always replace **who** or **which** by **that**. The reverse is not free: **which** never refers to a person, and **who** never refers to a thing.
+In these groups that define a noun, you can always replace **who** or **which** by **that**. The reverse is not free: **which** never refers to a person, and **who** never refers to a thing.
 
-Edge case: **what** and **when** are question words (_What is it? When is it?_), not relative pronouns. After a noun, never write _the boy **what** won_ ✗: write _the boy **who** won_ ✓.
+Edge case: **what** and **when** are not the relative pronouns of this lesson — they never replace **who** for a person or **which** for a thing. After a noun, never write _the boy **what** won_ ✗: write _the boy **who** won_ ✓.
 
 :::
 
@@ -84,7 +84,7 @@ Join the two sentences of the news flash, step by step:
 3. Replace the repeated subject of the second sentence by that pronoun — and add no _he, she, it, they_.
 4. Put the new group **right after** its noun.
 
-Edge case: the shared noun can be the subject of the first sentence. _The boy was punished. The boy threw a bottle into the sea._ → _The boy **who** threw a bottle into the sea was punished._ The relative group sits in the middle, glued to _the boy_.
+Edge case: the shared noun can be the subject of the first sentence. _The boy is in my class. The boy threw a bottle into the sea._ → _The boy **who** threw a bottle into the sea is in my class._ The relative group sits in the middle, glued to _the boy_.
 
 :::
 
@@ -191,7 +191,7 @@ So: _Kairouan is **hotter** than Tabarka._
 2. One vowel + one consonant at the end: double the consonant (_fat → fatter_, _slim → slimmer_).
 3. Consonant + **y** at the end: **y → i** (_silly → sillier → the silliest_).
 
-Edge case: two consonants at the end never double — _warm → warmer_, not _warmmer_. And an adjective ending in **-e** only adds **-r**: _wise → wiser_.
+Edge case: two consonants at the end never double — _warm → warmer_, not _warmmer_ — and a final **w** never doubles: _new → newer_. And an adjective ending in **-e** only adds **-r**: _wise → wiser_.
 
 :::
 
@@ -370,7 +370,7 @@ Same amount: **as much / as many** + noun + **as** (_as much money as_, _as many
 
 This section is **not** in the 9th-grade programme and it is never tested. It is here for the curious reader who meets these words in a text.
 
-- **whose** shows possession: _the girl **whose** bag was stolen_ (= the girl's bag was stolen).
+- **whose** shows possession: _the girl **whose** bag is red_ (= the girl's bag is red).
 - **where** refers to a place: _the school **where** I study_.
 - Two adjectives have irregular forms: **good → better → the best**, **bad → worse → the worst**.
 

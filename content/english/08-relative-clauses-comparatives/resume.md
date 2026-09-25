@@ -1,6 +1,6 @@
 # 📜 Summary: Relative Clauses & Comparatives
 
-- **Relative pronouns** — **who** → people, **which** → things (or animals), **that** → people or things; the pronoun defines the noun just before it (_the people who throw rubbish_). **what** and **when** are not relative pronouns.
+- **Relative pronouns** — **who** → people, **which** → things (or animals), **that** → people or things; the pronoun defines the noun just before it (_the people who throw rubbish_). never **what** or **when** after the noun (_the boy what won_ ✗).
 - **Joining two sentences** — the repeated subject of the second sentence becomes **who / which / that**, placed right after its noun, with no _he, she, it_ after it (_The police stopped a lorry which was throwing waste into the river._).
 - **Comparing two** — short adjective + **-er than** (_taller than_); **more** + long adjective + **than** (_more intelligent than_); never both (_more taller_ ✗).
 - **Spelling of -er / -est** — one vowel + one consonant: double it (_hot → hotter → the hottest_, _slim → slimmer_); consonant + y: **y → i** (_silly → sillier → the silliest_); otherwise just add -er (_warm → warmer_).
