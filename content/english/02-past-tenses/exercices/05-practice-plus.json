@@ -9,73 +9,145 @@
     {
       "prompt": "Complete: \"Yesterday I ___ my grandparents in Sfax.\"",
       "options": [
-        { "id": "a", "text": "visit" },
-        { "id": "b", "text": "visited" },
-        { "id": "c", "text": "have visited" },
-        { "id": "d", "text": "was visiting" }
+        {
+          "id": "a",
+          "text": "visit"
+        },
+        {
+          "id": "b",
+          "text": "visited"
+        },
+        {
+          "id": "c",
+          "text": "have visited"
+        },
+        {
+          "id": "d",
+          "text": "was visiting"
+        }
       ],
       "correctOption": "b",
-      "explanation": "\"Yesterday\" is a finished past time marker, so we use the past simple: visited. \"visit\" is present; \"have visited\" (present perfect) cannot go with a finished time like yesterday; \"was visiting\" (past continuous) would need a longer background action, not a simple completed event.",
+      "explanation": "\"Yesterday\" is an indicator of the past: the visit is a completed action, so we use the simple past — visited. \"visit\" is present; \"have visited\" (present perfect) never goes with a finished time like yesterday; \"was visiting\" describes an action in progress at a moment, not a completed visit.",
       "difficulty": 1
     },
     {
-      "prompt": "Complete: \"While I ___ TV, the phone rang.\"",
+      "prompt": "Choose the correct sentence:",
       "options": [
-        { "id": "a", "text": "watched" },
-        { "id": "b", "text": "was watching" },
-        { "id": "c", "text": "have watched" },
-        { "id": "d", "text": "watch" }
+        {
+          "id": "a",
+          "text": "I see this film last week."
+        },
+        {
+          "id": "b",
+          "text": "I have seen this film last week."
+        },
+        {
+          "id": "c",
+          "text": "I have saw this film last week."
+        },
+        {
+          "id": "d",
+          "text": "I saw this film last week."
+        }
       ],
-      "correctOption": "b",
-      "explanation": "A longer background action interrupted by a sudden one uses the past continuous: I was watching TV when the phone rang. \"watched\" (past simple) loses the \"in-progress\" idea; \"have watched\" is present perfect; \"watch\" is present.",
+      "correctOption": "d",
+      "explanation": "\"last week\" is a finished time, so we use the simple past of the irregular verb \"see\": I saw this film last week. The present perfect (\"have seen\") never goes with a finished time; \"have saw\" also puts the simple past after have, where the participle \"seen\" is needed; \"I see\" is present.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Choose the correct negative: \"They ___ the homework on time.\"",
+      "options": [
+        {
+          "id": "a",
+          "text": "didn't finished"
+        },
+        {
+          "id": "b",
+          "text": "don't finish"
+        },
+        {
+          "id": "c",
+          "text": "didn't finish"
+        },
+        {
+          "id": "d",
+          "text": "wasn't finish"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "In the simple past negative, \"did\" carries the tense and the main verb goes back to its base form: didn't finish. \"didn't finished\" marks the past twice; \"don't finish\" is present; \"wasn't finish\" mixes \"be\" with a base verb (and \"they\" would need were).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Complete: \"___ you ever ___ in a hotel?\"",
+      "options": [
+        {
+          "id": "a",
+          "text": "Have / stayed"
+        },
+        {
+          "id": "b",
+          "text": "Have / stay"
+        },
+        {
+          "id": "c",
+          "text": "Has / stayed"
+        },
+        {
+          "id": "d",
+          "text": "Have / staying"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "\"ever\" asks about an experience, so we use the present perfect: Have + subject + ever + past participle — Have you ever stayed in a hotel? \"you\" takes have, not has; after have the verb takes its past participle (stayed), never the base form (stay) or the -ing form (staying).",
       "difficulty": 2
     },
     {
       "prompt": "Choose the correct sentence:",
       "options": [
-        { "id": "a", "text": "I have seen this film last week." },
-        { "id": "b", "text": "I saw this film last week." },
-        { "id": "c", "text": "I see this film last week." },
-        { "id": "d", "text": "I was seeing this film last week." }
+        {
+          "id": "a",
+          "text": "You was helping your friends."
+        },
+        {
+          "id": "b",
+          "text": "You were helping your friend."
+        },
+        {
+          "id": "c",
+          "text": "You were help your friend."
+        },
+        {
+          "id": "d",
+          "text": "You helping your friend."
+        }
       ],
       "correctOption": "b",
-      "explanation": "\"last week\" is a finished time, so we use the past simple: I saw this film last week. The present perfect \"I have seen this film last week\" cannot combine with a finished time expression; \"I see this film last week\" is present; \"I was seeing this film last week\" uses the continuous for a single completed action, which is wrong, and \"see\" is also stative.",
+      "explanation": "The past progressive is was/were + verb + ing, and \"you\" always takes \"were\", even for one person: You were helping your friend. \"You was helping\" breaks this agreement; \"were help\" forgets the -ing; \"You helping\" forgets was/were.",
       "difficulty": 2
     },
     {
-      "prompt": "Complete: \"___ you ever ___ to London?\"",
+      "prompt": "Choose the correct pair: \"Our town ___ a lot lately. Ten years ago, it ___ very small.\"",
       "options": [
-        { "id": "a", "text": "Did / go" },
-        { "id": "b", "text": "Have / been" },
-        { "id": "c", "text": "Have / went" },
-        { "id": "d", "text": "Did / went" }
+        {
+          "id": "a",
+          "text": "changed / was"
+        },
+        {
+          "id": "b",
+          "text": "changed / has been"
+        },
+        {
+          "id": "c",
+          "text": "has changed / has been"
+        },
+        {
+          "id": "d",
+          "text": "has changed / was"
+        }
       ],
-      "correctOption": "b",
-      "explanation": "\"ever\" with no finished time asks about a life experience up to now, so we use the present perfect: Have you ever been to London? \"Did / go\" past simple suits a specific past time, not an open experience; \"Have / went\" uses the wrong past participle (\"went\" instead of \"been/gone\"); \"Did / went\" mixes \"did\" with a past form.",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Choose the correct negative: \"They ___ the homework on time.\"",
-      "options": [
-        { "id": "a", "text": "didn't finished" },
-        { "id": "b", "text": "don't finish" },
-        { "id": "c", "text": "didn't finish" },
-        { "id": "d", "text": "wasn't finish" }
-      ],
-      "correctOption": "c",
-      "explanation": "In the past simple negative, \"did\" carries the tense and the main verb returns to its base form: didn't finish. \"didn't finished\" double-marks the past; \"don't finish\" is present; \"wasn't finish\" mixes \"be\" with a base verb (and the wrong number for \"they\").",
-      "difficulty": 2
-    },
-    {
-      "prompt": "Complete: \"She ___ already ___ when the guests arrived.\"",
-      "options": [
-        { "id": "a", "text": "has / left" },
-        { "id": "b", "text": "was / leaving" },
-        { "id": "c", "text": "had / left" },
-        { "id": "d", "text": "did / leave" }
-      ],
-      "correctOption": "c",
-      "explanation": "An action completed before another past action takes the past perfect: she had already left when the guests arrived. \"has left\" (present perfect) refers to now, not to a point in the past; \"was leaving\" describes an interrupted action, not one already finished; \"did leave\" cannot follow \"already\" in this earlier-than-the-past sense.",
+      "correctOption": "d",
+      "explanation": "\"lately\" goes with the present perfect, and this is a change between the past and now: Our town has changed a lot lately. ✓ \"Ten years ago\" is a finished time, so the second verb is simple past: it was very small. The trap is to keep one tense for both sentences: \"has been\" cannot go with \"ten years ago\", and \"changed\" does not go with \"lately\".",
       "difficulty": 3
     }
   ]
