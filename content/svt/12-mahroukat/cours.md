@@ -9,7 +9,7 @@
 فما الّذي يجمع هذه الموادّ رغم اختلاف مظهرها؟ وكيف نرتّبها؟
 
 ::: definition
-**المحروق** (combustible) مادّة قابلة للاحتراق، تحترق بوجود الأكسجين فنستغلّ حرارتها في الطبخ
+**المحروق** (combustible) مادّة قابلة للاحتراق، تحترق بوجود الأكسيجين فنستغلّ حرارتها في الطبخ
 والتدفئة والتسخين وتحريك الآلات. ومجموع هذه الموادّ هو **المحروقات**.
 :::
 
@@ -174,7 +174,7 @@
 :::
 
 ::: figure يدخل النفط الخام المسخَّن أسفل البرج، فيخرج الغاز والبنزين من القمّة، والموادّ الثقيلة من القاعدة
-<svg viewBox="0 0 360 310">
+<svg viewBox="0 0 360 320">
 <path d="M70 60 Q70 30 115 30 Q160 30 160 60 L160 210 Q160 240 115 240 Q70 240 70 210 Z" fill="#f1f5f9"/>
 <g stroke="#ffffff" stroke-width="1.5"><rect x="70" y="60" width="90" height="25" fill="#fce7f3"/><rect x="70" y="85" width="90" height="25" fill="#fbcfe8"/><rect x="70" y="110" width="90" height="25" fill="#fed7aa"/><rect x="70" y="135" width="90" height="25" fill="#fdba74"/><rect x="70" y="160" width="90" height="25" fill="#fcd34d"/><rect x="70" y="185" width="90" height="25" fill="#fb923c"/></g>
 <path d="M70 60 Q70 30 115 30 Q160 30 160 60 L160 210 Q160 240 115 240 Q70 240 70 210 Z" fill="none" stroke="#0f172a" stroke-width="2.5"/>
@@ -254,7 +254,7 @@
 <path d="M110 55 V160 M160 55 V160 M310 60 V170" fill="none" stroke="#334155" stroke-width="4"/>
 <g fill="#0f6e56"><polygon points="110,150 102,136 118,136"/><polygon points="160,136 152,150 168,150"/></g>
 <path d="M200 38 H240 V60 H200 Z" fill="#cbd5e1" stroke="#0f172a" stroke-width="2"/><path d="M196 38 L220 24 L244 38 Z" fill="#94a3b8" stroke="#0f172a" stroke-width="2"/>
-<g font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"><text x="220" y="16">محطّة انضغاط</text><text x="310" y="50">بئر مراقبة</text><text x="250" y="137">طين</text><text x="250" y="167">غاز</text><text x="180" y="220">ماء ورمل</text><text x="62" y="104">آبار ضخّ</text></g>
+<g font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"><text x="220" y="16">محطّة انضغاط</text><text x="310" y="50">بئر مراقبة</text><text x="250" y="137">طين</text><text x="250" y="167">غاز</text><text x="180" y="220">ماء ورمل</text><text x="62" y="104">آبار ضخّ وجلب</text></g>
 </svg>
 :::
 
@@ -370,7 +370,7 @@
 ::: exemple غرفة الاستحمام المغلقة
 
 1. الجهازان يحرقان الغاز في غرفة لا يتجدّد هواؤها — لأنّه لا نافذة ولا منفذ للتهوئة.
-2. نقص الهواء يجعل الاحتراق غير تامّ — لأنّ الاحتراق يحتاج إلى أكسجين الهواء.
+2. نقص الهواء يجعل الاحتراق غير تامّ — لأنّ الاحتراق يحتاج إلى أكسيجين الهواء.
 3. الاحتراق غير التامّ قد يسبّب الاختناق — فالغرفة **غير آمنة** رغم غياب أيّ تسرّب.
 4. الحلّ: تركيز الجهازين في مكان به هواء متجدّد، مع منافذ مناسبة للتهوئة.
 
