@@ -4,70 +4,121 @@
     {
       "prompt": "Which sentence contains a correctly formed modal verb?",
       "options": [
-        { "id": "a", "text": "She cans swim very well." },
-        { "id": "b", "text": "He musts leave now." },
-        { "id": "c", "text": "They should to study harder." },
-        { "id": "d", "text": "You must wear a seatbelt." }
+        {
+          "id": "a",
+          "text": "She cans swim very well."
+        },
+        {
+          "id": "b",
+          "text": "He musts leave now."
+        },
+        {
+          "id": "c",
+          "text": "They should to study harder."
+        },
+        {
+          "id": "d",
+          "text": "You must wear a seatbelt."
+        }
       ],
       "correctOption": "d",
-      "explanation": "Modal verbs are followed directly by the base verb with no -s, no -ed, and no \"to\". \"You must wear\" is the only correctly formed option.",
+      "explanation": "A modal takes the base verb directly, with no -s on the modal and no \"to\": \"You must wear\" is the only correct form. \"cans\" and \"musts\" wrongly add -s, and \"should to\" wrongly adds \"to\".",
       "difficulty": 1
     },
     {
-      "prompt": "What is the key difference between \"mustn't\" and \"don't have to\"?",
+      "prompt": "Which sentence expresses a prohibition?",
       "options": [
-        { "id": "a", "text": "They mean the same thing: neither action is required." },
+        {
+          "id": "a",
+          "text": "Don't phone in class."
+        },
         {
           "id": "b",
-          "text": "\"Mustn't\" means prohibition; \"don't have to\" means there is no obligation."
+          "text": "You should rest after lunch."
         },
-        { "id": "c", "text": "\"Mustn't\" is polite; \"don't have to\" is rude." },
+        {
+          "id": "c",
+          "text": "You might see a doctor."
+        },
         {
           "id": "d",
-          "text": "\"Don't have to\" means it is forbidden; \"mustn't\" means it is optional."
+          "text": "You can speak two languages."
         }
       ],
-      "correctOption": "b",
-      "explanation": "\"Mustn't\" forbids an action (you are not allowed). \"Don't have to\" means the action is not required but you are free to choose.",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Which modal expresses a polite request, more formal than \"can\"?",
-      "options": [
-        { "id": "a", "text": "must" },
-        { "id": "b", "text": "should" },
-        { "id": "c", "text": "could" },
-        { "id": "d", "text": "may not" }
-      ],
-      "correctOption": "c",
-      "explanation": "\"Could\" is used for polite requests and is considered more polite than \"can\". For example: \"Could you open the window?\"",
-      "difficulty": 2
+      "correctOption": "a",
+      "explanation": "\"Don't\" + base verb forbids something: don't phone in class. \"should\" gives advice (a good idea you can refuse), \"might\" says something is possible, and \"can\" expresses ability.",
+      "difficulty": 1
     },
     {
       "prompt": "Which sentence correctly uses \"should\" to give advice?",
       "options": [
-        { "id": "a", "text": "You should to eat more vegetables." },
-        { "id": "b", "text": "You should eating more vegetables." },
-        { "id": "c", "text": "You should eat more vegetables." },
-        { "id": "d", "text": "You shoulds eat more vegetables." }
+        {
+          "id": "a",
+          "text": "You should to eat more vegetables."
+        },
+        {
+          "id": "b",
+          "text": "You should eating more vegetables."
+        },
+        {
+          "id": "c",
+          "text": "You should eat more vegetables."
+        },
+        {
+          "id": "d",
+          "text": "You shoulds eat more vegetables."
+        }
       ],
       "correctOption": "c",
-      "explanation": "\"Should\" is followed by the base verb with no \"to\" and no -ing. The correct form is \"should eat\".",
+      "explanation": "\"Should\" takes the base verb with no \"to\" and no -ing: you should eat more vegetables. Only \"ought\" keeps a \"to\" (you ought to eat), and \"should\" never takes -s.",
       "difficulty": 1
     },
     {
-      "prompt": "What is the difference between \"may\" and \"might\" when expressing possibility?",
+      "prompt": "Which sentence expresses an obligation in the past?",
       "options": [
-        { "id": "a", "text": "\"May\" refers to the past; \"might\" refers to the future." },
+        {
+          "id": "a",
+          "text": "I must clean my room yesterday."
+        },
         {
           "id": "b",
-          "text": "\"May\" is more certain than \"might\"; \"might\" suggests less certainty."
+          "text": "I had to clean my room yesterday."
         },
-        { "id": "c", "text": "\"Might\" is more certain than \"may\"." },
-        { "id": "d", "text": "They cannot be used interchangeably for possibility." }
+        {
+          "id": "c",
+          "text": "I will have to clean my room yesterday."
+        },
+        {
+          "id": "d",
+          "text": "I have to clean my room yesterday."
+        }
       ],
       "correctOption": "b",
-      "explanation": "Both \"may\" and \"might\" express possibility, but \"might\" suggests even less certainty than \"may\". In practice they can often be used interchangeably.",
+      "explanation": "Obligation in the past is \"had to\" + base verb: I had to clean my room yesterday. \"must\" has no past form, \"have to\" is the present and \"will have to\" is the future, which clashes with \"yesterday\".",
+      "difficulty": 2
+    },
+    {
+      "prompt": "\"Perhaps it will rain tomorrow.\" Which sentence has the same meaning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It mights rain tomorrow."
+        },
+        {
+          "id": "b",
+          "text": "It might rain tomorrow."
+        },
+        {
+          "id": "c",
+          "text": "It can't rain tomorrow."
+        },
+        {
+          "id": "d",
+          "text": "It has to rain tomorrow."
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "\"Might\" + base verb means \"perhaps\", so it replaces perhaps + will: it might rain tomorrow. A modal never takes -s (\"mights\" is wrong), \"can't\" says it is impossible, and \"has to\" expresses an obligation, not a possibility.",
       "difficulty": 2
     }
   ]
