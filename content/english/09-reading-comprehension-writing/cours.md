@@ -122,7 +122,7 @@ Three people talk about their free time in your book, and under their words stan
 
 Three people, nine empty boxes. How do you fill them without copying the whole text?
 
-> **Hedi, 16**: "I spend my Sunday afternoons at the stadium. Football is my passion."
+> **Hedi, 16**: "I spend my Sunday afternoons playing football at the stadium. It is my passion."
 >
 > **Leila, 41**: "After work, I read novels on my balcony. It relaxes me."
 >
@@ -175,7 +175,7 @@ Text → table: one short fact per box. Table → text: one sentence per row, si
 
 ## 🔮 Inference — reading between the lines
 
-Your book tells the first day of a boy at a new school. Read it once, slowly:
+Your book tells the story of a boy's first day at a new school. Read it once, slowly:
 
 > _On the first morning at his new school, Yassine held his mother's hand very tightly at the gate. He did not say a word. He looked at the big building for a long time. Then he asked: "Can we come back tomorrow instead?"_
 
@@ -199,7 +199,7 @@ How does Yassine feel? Step by step:
 
 1. Collect the clues → the tight hand, the silence, the wish to come back another day.
 2. Test each possible answer against them → _happy_? no clue shows joy. _Nervous_? every clue fits.
-3. Answer and prove → _He is nervous: he holds his mother's hand tightly and asks to come back another day._
+3. Answer and prove → _He was nervous: he held his mother's hand tightly and asked to come back another day._
 
 :::
 

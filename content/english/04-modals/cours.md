@@ -243,7 +243,7 @@ Say what is possible for Karim, step by step:
 
 - **may / might / could** + base verb = possible (perhaps), the same form for every subject.
 - Present or future: _She **may** be at home now._ — _It **might** rain tomorrow._
-- Edge case: _Could you open the window?_ asks someone to do something — a different use of could, for the chapter on polite requests.
+- Edge case: _Could you open the window?_ asks someone to do something — a different use of could, for the chapter **Communicative Functions** (polite requests).
 
 :::
 

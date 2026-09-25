@@ -2,7 +2,7 @@
 
 > 💡 "Every English paper of the national exam is built on **one text**: you read it, you work on its language, you write about its topic. Know the shape of the paper and half the battle is won."
 
-The paper always has three parts, and all of them use the same short text on one of the six themes of your book — family life, education, health and environment, services, entertainment, civility. **Part 1 — Reading**: questions on what the text says and means. **Part 2 — Language**: grammar gaps inside sentences taken from the text. **Part 3 — Writing**: building a clear paragraph on the same topic. Each section below trains one skill the examiner rewards.
+In this chapter, each practice paper has three parts, and all of them use the same short text on one of the six themes of your book — family life, education, health and environment, services, entertainment, civility. **Part 1 — Reading**: questions on what the text says and means. **Part 2 — Language**: grammar gaps inside sentences taken from the text. **Part 3 — Writing**: building a clear paragraph on the same topic. Each section below trains one skill the examiner rewards.
 
 ## 🎯 Part 1 · Reading for the main idea
 
@@ -90,7 +90,7 @@ Statement: _"Sami joined the football club."_ True or false?
 
 :::
 
-> ⚠️ **Common mistake**: answering from **what seems normal** instead of from the text. _"Sami was happy at his new school"_ sounds true, because most pupils are — but the text says "At first, he felt lonely". Your opinion is not in the text, so the answer is False.
+> ⚠️ **Common mistake**: answering from **what seems normal** instead of from the text. _"Sami was happy at his new school from the first day"_ sounds true, because most pupils are — but the text says "At first, he felt lonely". Your opinion is not in the text, so the answer is False.
 
 ::: methode
 Key word → scan → compare → quote.
@@ -115,7 +115,7 @@ Scan for the key word, compare, then **quote** the text: the proof earns the mar
 
 ## 🧭 Part 1 · Reference words — who is "he", what is "which"?
 
-In the Entertainment module you read the story of a little fish who swims away from his father, is carried off by a ship, and ends up in an aquarium far away. The Activity Book then asked who _he_, _the two friends_ and _they_ were.
+In the Entertainment module you read the story of a little fish who swims away from his father; a diver catches him, and he ends up in an aquarium far away. The Activity Book then asked who _he_, _the two friends_ and _they_ were.
 
 Three short words, three different characters. How do you know who each word stands for?
 
@@ -179,11 +179,11 @@ A **word in context** is a new word whose meaning you guess from the **sentence 
 
 :::
 
-| Clue in the sentence | Sentence                                                            | The new word means |
-| -------------------- | ------------------------------------------------------------------- | ------------------ |
-| a synonym close by   | Pets can be a **hazard**: this danger is real for small children.   | danger             |
-| an opposite          | Dog bites are frequent, whereas cat bites are **rare**.             | not frequent       |
-| a result             | The dog was **chained** outside all day, so it could not move away. | tied up            |
+| Clue in the sentence | Sentence                                                                  | The new word means |
+| -------------------- | ------------------------------------------------------------------------- | ------------------ |
+| a synonym close by   | Pets can be a **hazard**: this danger is real for small children.         | danger             |
+| an opposite          | Dog bites are frequent, whereas cat bites are **rare**.                   | not frequent       |
+| a result             | Its owner **chained** the dog outside all day, so it could not move away. | tied up            |
 
 In each line, the words around the bold one — a synonym, an opposite, a result — give away the meaning written in the right-hand column.
 
