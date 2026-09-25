@@ -4,7 +4,7 @@
 
 ## 🏰 The simple past — a finished action
 
-Think of your first morning at prep school. You woke up early, you walked into a new building and you met your new classmates. All of it happened, and all of it is over.
+Think of your first morning at your new school. You woke up early, you walked into a new building and you met your new classmates. All of it happened, and all of it is over.
 
 When you tell that story in English, the verbs cannot stay in the present. Which tense tells an action that is **completed** in the past?
 

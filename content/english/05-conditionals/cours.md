@@ -182,7 +182,7 @@ Rewrite _We will visit the Tower of London if the weather is fine._ with the if 
 
 :::
 
-> ⚠️ **Common mistake**: _We will visit the Tower\**,*\* if the weather is fine._ ✗ — it tempts you because you remember "conditional = comma". But the comma belongs to the **if clause that opens** the sentence. When the main clause comes first, there is no comma: _We will visit the Tower if the weather is fine._ ✓ And the comma never goes straight after the word _If_ (_If, the weather…_ ✗).
+> ⚠️ **Common mistake**: _We will visit the Tower, if the weather is fine._ ✗ (a comma before _if_) — it tempts you because you remember "conditional = comma". But the comma belongs to the **if clause that opens** the sentence. When the main clause comes first, there is no comma: _We will visit the Tower if the weather is fine._ ✓ And the comma never goes straight after the word _If_ (_If, the weather…_ ✗).
 
 ::: propriete
 The two clauses can change places without changing the meaning. **If clause first → a comma after it. Main clause first → no comma.**
