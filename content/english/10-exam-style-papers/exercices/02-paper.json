@@ -7,78 +7,147 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "Read the text:\n\n\"Last summer, the small town of Beni Khalled launched a clean-air week. Cars were banned from the centre, and people were encouraged to cycle. By Friday, the streets were quieter and the sky looked clearer. A doctor told the local radio, 'I have seen fewer patients with breathing problems this week.' The mayor promised to repeat the event every year.\"\n\nWhat can we infer from the doctor's words?",
+      "prompt": "Read the text:\n\n\"Last summer, the small town of Beni Khalled organised a clean-air week. The town council banned cars from the centre, and people went to work by bike. By Friday, the streets were quieter and the sky looked clearer. A doctor said on the local radio: 'I have seen fewer patients with breathing problems this week.' The mayor promised to repeat the event every year.\"\n\nWhat can we infer from the doctor's words?",
       "options": [
-        { "id": "a", "text": "The doctor wanted the event to stop." },
-        { "id": "b", "text": "Cleaner air seemed to improve people's breathing." },
-        { "id": "c", "text": "The hospital closed during the clean-air week." },
-        { "id": "d", "text": "Most people in the town were ill." }
-      ],
-      "correctOption": "b",
-      "explanation": "Fewer breathing patients during a clean-air week suggests the cleaner air helped people breathe better — an inference supported by the clues. \"The doctor wanted the event to stop\" contradicts the positive report; \"The hospital closed during the clean-air week\" and \"Most people in the town were ill\" are never stated and go beyond what the text suggests.",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Read the text:\n\n\"Last summer, the small town of Beni Khalled launched a clean-air week. Cars were banned from the centre, and people were encouraged to cycle. By Friday, the streets were quieter and the sky looked clearer. A doctor told the local radio, 'I have seen fewer patients with breathing problems this week.' The mayor promised to repeat the event every year.\"\n\nIn the text, the word \"banned\" most probably means:",
-      "options": [
-        { "id": "a", "text": "allowed everywhere" },
-        { "id": "b", "text": "officially not permitted" },
-        { "id": "c", "text": "repaired" },
-        { "id": "d", "text": "sold cheaply" }
-      ],
-      "correctOption": "b",
-      "explanation": "Cars were \"banned from the centre\" so that people would cycle instead — the context shows they were not allowed. \"allowed everywhere\" is the opposite; \"repaired\" and \"sold cheaply\" do not fit the idea of keeping cars out for cleaner air.",
-      "difficulty": 2
-    },
-    {
-      "prompt": "Read the text:\n\n\"Last summer, the small town of Beni Khalled launched a clean-air week. Cars were banned from the centre, and people were encouraged to cycle. By Friday, the streets were quieter and the sky looked clearer. A doctor told the local radio, 'I have seen fewer patients with breathing problems this week.' The mayor promised to repeat the event every year.\"\n\nLanguage: the sentence \"Cars were banned from the centre\" is in the:",
-      "options": [
-        { "id": "a", "text": "active voice, present simple" },
-        { "id": "b", "text": "passive voice, past simple" },
-        { "id": "c", "text": "active voice, past continuous" },
-        { "id": "d", "text": "passive voice, present perfect" }
-      ],
-      "correctOption": "b",
-      "explanation": "\"Were banned\" = was/were + past participle, the passive of the past simple; the cars receive the action and the doer is unimportant. \"active voice, present simple\" and are active; \"passive voice, present perfect\" would be \"have been banned\".",
-      "difficulty": 2
-    },
-    {
-      "prompt": "Read the text:\n\n\"Last summer, the small town of Beni Khalled launched a clean-air week. Cars were banned from the centre, and people were encouraged to cycle. By Friday, the streets were quieter and the sky looked clearer. A doctor told the local radio, 'I have seen fewer patients with breathing problems this week.' The mayor promised to repeat the event every year.\"\n\nLanguage: report the doctor's words. The doctor said that ______.",
-      "options": [
-        { "id": "a", "text": "he has seen fewer patients with breathing problems that week" },
-        { "id": "b", "text": "he had seen fewer patients with breathing problems that week" },
-        { "id": "c", "text": "I have seen fewer patients with breathing problems this week" },
-        { "id": "d", "text": "he will see fewer patients with breathing problems this week" }
-      ],
-      "correctOption": "b",
-      "explanation": "In reported speech the present perfect \"have seen\" shifts back to the past perfect \"had seen\", \"I\" becomes \"he\", and \"this week\" becomes \"that week\". \"he has seen fewer patients with breathing problems that week…\" keeps the present perfect, \"I have seen fewer patients with breathing problems this week…\" keeps the exact quote, and \"he will see fewer patients with breathing problems this week…\" changes the meaning to the future.",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Read the text:\n\n\"Last summer, the small town of Beni Khalled launched a clean-air week. Cars were banned from the centre, and people were encouraged to cycle. By Friday, the streets were quieter and the sky looked clearer. A doctor told the local radio, 'I have seen fewer patients with breathing problems this week.' The mayor promised to repeat the event every year.\"\n\nLanguage: complete this conditional sentence based on the text.\n\n\"If more towns banned cars for a week, the air ______ cleaner.\"",
-      "options": [
-        { "id": "a", "text": "will be" },
-        { "id": "b", "text": "would be" },
-        { "id": "c", "text": "would have been" },
-        { "id": "d", "text": "is" }
-      ],
-      "correctOption": "b",
-      "explanation": "The if-clause uses the past simple \"banned\", which signals a second conditional (an imagined situation), so the main clause needs \"would + base verb\": \"would be\". \"will be\" belongs to the first conditional, \"would have been\" to the third, and \"is\" is not conditional.",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Read the text:\n\n\"Last summer, the small town of Beni Khalled launched a clean-air week. Cars were banned from the centre, and people were encouraged to cycle. By Friday, the streets were quieter and the sky looked clearer. A doctor told the local radio, 'I have seen fewer patients with breathing problems this week.' The mayor promised to repeat the event every year.\"\n\nWriting: which sentence would be the best topic sentence for a paragraph summarising this text?",
-      "options": [
-        { "id": "a", "text": "The mayor spoke to the local radio on Friday." },
+        {
+          "id": "a",
+          "text": "The doctor wanted the town to stop the event at once."
+        },
         {
           "id": "b",
-          "text": "A clean-air week in Beni Khalled made the town healthier and is set to return."
+          "text": "The hospital closed during the clean-air week."
         },
-        { "id": "c", "text": "Some people prefer cars to bicycles in summer." },
-        { "id": "d", "text": "For instance, the sky looked clearer by Friday." }
+        {
+          "id": "c",
+          "text": "Most people in the town were ill."
+        },
+        {
+          "id": "d",
+          "text": "Cleaner air seemed to improve people's breathing."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "The clues are fewer patients with breathing problems during a week with fewer cars and a clearer sky: cleaner air seems to have helped people breathe. The doctor's positive report contradicts the idea that he wanted the event to stop, and a closed hospital or a town of ill people has no clue in the text — it is invented.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Read the text:\n\n\"Last summer, the small town of Beni Khalled organised a clean-air week. The town council banned cars from the centre, and people went to work by bike. By Friday, the streets were quieter and the sky looked clearer. A doctor said on the local radio: 'I have seen fewer patients with breathing problems this week.' The mayor promised to repeat the event every year.\"\n\nIn the text, the word \"banned\" most probably means:",
+      "options": [
+        {
+          "id": "a",
+          "text": "not allowed"
+        },
+        {
+          "id": "b",
+          "text": "allowed everywhere"
+        },
+        {
+          "id": "c",
+          "text": "repaired"
+        },
+        {
+          "id": "d",
+          "text": "sold cheaply"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "The clue is what happened next: cars could not enter the centre, so people went to work by bike — \"banned\" means not allowed. \"allowed everywhere\" is the opposite, and repairing cars or selling them cheaply would not make people cycle to work.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Read the text:\n\n\"Last summer, the small town of Beni Khalled organised a clean-air week. The town council banned cars from the centre, and people went to work by bike. By Friday, the streets were quieter and the sky looked clearer. A doctor said on the local radio: 'I have seen fewer patients with breathing problems this week.' The mayor promised to repeat the event every year.\"\n\nLanguage: complete this sentence about the text:\n\n\"People went to work by bike ______ the council banned cars from the centre.\"",
+      "options": [
+        {
+          "id": "a",
+          "text": "so"
+        },
+        {
+          "id": "b",
+          "text": "therefore"
+        },
+        {
+          "id": "c",
+          "text": "because"
+        },
+        {
+          "id": "d",
+          "text": "whereas"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "The part after the gap — the council banned cars — is the cause of cycling, and a cause is introduced by \"because\". \"so\" and \"therefore\" introduce a result, but banning cars is not a result of cycling, and \"whereas\" needs two opposite ideas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Read the text:\n\n\"Last summer, the small town of Beni Khalled organised a clean-air week. The town council banned cars from the centre, and people went to work by bike. By Friday, the streets were quieter and the sky looked clearer. A doctor said on the local radio: 'I have seen fewer patients with breathing problems this week.' The mayor promised to repeat the event every year.\"\n\nLanguage: the doctor says \"I have seen fewer patients with breathing problems this week\". Why does he use the present perfect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He talks about a finished time in the past."
+        },
+        {
+          "id": "b",
+          "text": "He gives news about a recent change."
+        },
+        {
+          "id": "c",
+          "text": "He describes an action in progress in the past."
+        },
+        {
+          "id": "d",
+          "text": "He announces a plan for next week."
+        }
       ],
       "correctOption": "b",
-      "explanation": "A topic sentence is general and captures the whole idea: a successful clean-air week that will be repeated — exactly. \"The mayor spoke to the local radio on Friday\" is a small detail (and inaccurate: the doctor spoke), \"Some people prefer cars to bicycles in summer\" is off-topic, and \"For instance, the sky looked clearer by Friday\" is a supporting example introduced by \"For instance\".",
+      "explanation": "The present perfect gives news and describes a change between the past and now, and \"this week\" is not finished yet. A finished time such as \"last week\" would take the simple past, an action in progress in the past takes the past progressive (was/were + verb-ing), and a plan for next week needs a future form.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Read the text:\n\n\"Last summer, the small town of Beni Khalled organised a clean-air week. The town council banned cars from the centre, and people went to work by bike. By Friday, the streets were quieter and the sky looked clearer. A doctor said on the local radio: 'I have seen fewer patients with breathing problems this week.' The mayor promised to repeat the event every year.\"\n\nLanguage: complete this sentence about the text:\n\n\"If more towns ______ cars from their centres, the air will be cleaner.\"",
+      "options": [
+        {
+          "id": "a",
+          "text": "will ban"
+        },
+        {
+          "id": "b",
+          "text": "banned"
+        },
+        {
+          "id": "c",
+          "text": "are banning"
+        },
+        {
+          "id": "d",
+          "text": "ban"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "This is the first conditional: if + present simple, then will + verb in the result. The result already has \"will be\", so the if-clause takes the present simple: \"If more towns ban cars…\". \"will ban\" puts will after if, \"banned\" is the simple past, and \"are banning\" describes an action in progress, not a condition.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Read the text:\n\n\"Last summer, the small town of Beni Khalled organised a clean-air week. The town council banned cars from the centre, and people went to work by bike. By Friday, the streets were quieter and the sky looked clearer. A doctor said on the local radio: 'I have seen fewer patients with breathing problems this week.' The mayor promised to repeat the event every year.\"\n\nWriting: which sentence would be the best topic sentence for a paragraph summarising this text?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A clean-air week made Beni Khalled healthier."
+        },
+        {
+          "id": "b",
+          "text": "The mayor spoke on the local radio on Friday."
+        },
+        {
+          "id": "c",
+          "text": "Some people prefer cars to bikes in the summer."
+        },
+        {
+          "id": "d",
+          "text": "As a result, the sky looked clearer by Friday."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "A topic sentence is general and announces the whole idea: a clean-air week that made the town healthier. The words on the radio were the doctor's, not the mayor's, so that sentence is also a false detail; preferring cars is off the topic; and a sentence opening with \"As a result\" gives one result, so it cannot open the paragraph.",
       "difficulty": 3
     }
   ]
