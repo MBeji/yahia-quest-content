@@ -1,5 +1,5 @@
 {
-  "title": "👑 Elite Challenge: Passive Voice Across Tenses & Modals",
+  "title": "👑 Elite Challenge: Choosing the Right Function",
   "difficulty": 4,
   "mode": "challenge",
   "xpReward": 300,
@@ -7,75 +7,147 @@
   "displayOrder": 4,
   "questions": [
     {
-      "prompt": "Transform to passive (future simple): \"The government will announce the results tomorrow.\"\nWhich option is correct?",
+      "prompt": "Which sentence contains an error?",
       "options": [
-        { "id": "a", "text": "The results will announced by the government tomorrow." },
-        { "id": "b", "text": "The results are announced by the government tomorrow." },
-        { "id": "c", "text": "The results will be announced by the government tomorrow." },
-        { "id": "d", "text": "The results were announced by the government tomorrow." }
-      ],
-      "correctOption": "c",
-      "explanation": "Future simple passive = will + be + past participle. \"Announce\" → past participle \"announced\". The object \"the results\" becomes the subject: The results WILL BE ANNOUNCED by the government tomorrow. \"The results will announced by the government tomorrow\" omits \"be\"; \"The results are announced by the government tomorrow\" uses present passive (wrong tense); \"The results were announced by the government tomorrow\" uses past passive (wrong tense).",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Transform to passive (present perfect): \"Someone has stolen the exam papers.\"\nWhich option is correct?",
-      "options": [
-        { "id": "a", "text": "The exam papers have been stolen." },
-        { "id": "b", "text": "The exam papers has been stolen." },
-        { "id": "c", "text": "The exam papers were stolen." },
-        { "id": "d", "text": "The exam papers had been stolen." }
+        {
+          "id": "a",
+          "text": "Would you mind to carry this bag for me?"
+        },
+        {
+          "id": "b",
+          "text": "Could you carry this bag for me, please?"
+        },
+        {
+          "id": "c",
+          "text": "Can I help you with this bag?"
+        },
+        {
+          "id": "d",
+          "text": "Do you need any help with this bag?"
+        }
       ],
       "correctOption": "a",
-      "explanation": "Present perfect passive = have / has + been + past participle. \"The exam papers\" is plural → HAVE (not has). By-agent is omitted because the agent (someone) is unknown. \"The exam papers has been stolen\" incorrectly uses \"has\" with a plural subject; \"The exam papers were stolen\" is past simple (loses the present-perfect meaning); \"The exam papers had been stolen\" is past perfect (wrong tense).",
+      "explanation": "The error is in \"Would you mind to carry this bag for me?\": after \"mind\" the verb takes -ing — Would you mind carrying this bag for me? The other three are correct: \"Could you\" + bare verb is a request, and \"Can I help you…?\" / \"Do you need any help…?\" are offers.",
       "difficulty": 3
     },
     {
-      "prompt": "Transform to passive (modal — must): \"You must submit all assignments before Friday.\"\nWhich option is correct?",
+      "prompt": "Your neighbour, an old man, is carrying heavy shopping bags up the stairs. What do you say to him?",
       "options": [
-        { "id": "a", "text": "All assignments must been submitted before Friday." },
-        { "id": "b", "text": "All assignments must be submitted before Friday." },
-        { "id": "c", "text": "All assignments must being submitted before Friday." },
-        { "id": "d", "text": "All assignments must submitted before Friday." }
-      ],
-      "correctOption": "b",
-      "explanation": "Passive with a modal = modal + be + past participle. \"Must\" is already a base-form modal, so: must + BE + submitted. \"All assignments must been submitted before Friday\" uses \"been\" without \"be\" (wrong); \"All assignments must being submitted before Friday\" uses \"being\" (continuous form, wrong here); \"All assignments must submitted before Friday\" omits \"be\" entirely.",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Turn the active question into a passive question (present simple): \"Do they teach Arabic in this school?\"\nWhich passive question is correct?",
-      "options": [
-        { "id": "a", "text": "Are Arabic taught in this school?" },
-        { "id": "b", "text": "Does Arabic taught in this school?" },
-        { "id": "c", "text": "Was Arabic taught in this school?" },
-        { "id": "d", "text": "Is Arabic taught in this school?" }
-      ],
-      "correctOption": "d",
-      "explanation": "Present simple passive question = Is / Are + subject + past participle? \"Arabic\" is an uncountable/singular noun → IS (not are). Past participle of teach = taught. \"Are Arabic taught in this school?\" wrongly uses \"Are\" with the singular noun \"Arabic\"; \"Does Arabic taught in this school?\" keeps the active auxiliary \"Does\" (wrong); \"Was Arabic taught in this school?\" uses \"Was\" — past tense, not present.",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Active: \"Doctors should check patients regularly.\"\nWhich passive sentence is correct AND uses the most natural style (agent omitted when obvious)?",
-      "options": [
-        { "id": "a", "text": "Patients should be check regularly." },
-        { "id": "b", "text": "Patients should been checked regularly." },
-        { "id": "c", "text": "Patients should be checked regularly." },
-        { "id": "d", "text": "Patients should being checked regularly." }
+        {
+          "id": "a",
+          "text": "Can you help me with the bags?"
+        },
+        {
+          "id": "b",
+          "text": "Could you carry my bags, please?"
+        },
+        {
+          "id": "c",
+          "text": "Do you need any help, sir?"
+        },
+        {
+          "id": "d",
+          "text": "Would you mind carrying the bags?"
+        }
       ],
       "correctOption": "c",
-      "explanation": "Modal passive = should + be + past participle (checked). The agent \"by doctors\" is omitted because it is obvious from context. \"Patients should be check regularly\" uses the base form \"check\" instead of the past participle; \"Patients should been checked regularly\" omits \"be\" and has \"been\" in the wrong position; \"Patients should being checked regularly\" uses \"being\" (a progressive form that does not follow a bare modal).",
+      "explanation": "You want to help him, so you OFFER help, and you are the helper: Do you need any help, sir? The three other sentences ask HIM to do something for you — requests to an old man who is already carrying too much. \"Can you help me\" is the classic swap with \"Can I help you\".",
       "difficulty": 3
     },
     {
-      "prompt": "Active: \"The jury awarded the winner a gold medal.\"\nWhich passive sentence is correct?",
+      "prompt": "You meet your cousin by chance at the airport. What do you say?",
       "options": [
-        { "id": "a", "text": "The winner were awarded a gold medal by the jury." },
-        { "id": "b", "text": "The winner was awarded a gold medal by the jury." },
-        { "id": "c", "text": "A gold medal is awarded to the winner by the jury." },
-        { "id": "d", "text": "The winner was awarded to a gold medal by the jury." }
+        {
+          "id": "a",
+          "text": "How nice to see you here!"
+        },
+        {
+          "id": "b",
+          "text": "What a pity to see you here!"
+        },
+        {
+          "id": "c",
+          "text": "How a surprise to see you here!"
+        },
+        {
+          "id": "d",
+          "text": "What nice to see you here!"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "\"How nice to\" + verb is the exclamation of a happy surprise: How nice to see you here! \"What a pity\" expresses disappointment, which is wrong for a happy meeting; \"How a surprise\" and \"What nice\" mix the two patterns — What a + noun, How + adjective.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Which sentence expresses hope correctly?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I hope you to pass your exam."
+        },
+        {
+          "id": "b",
+          "text": "I hope that you pass your exam."
+        },
+        {
+          "id": "c",
+          "text": "I hope passing your exam."
+        },
+        {
+          "id": "d",
+          "text": "I hope that you passing your exam."
+        }
       ],
       "correctOption": "b",
-      "explanation": "With two-object verbs like \"award\", the indirect object (the winner) can become the subject: The winner WAS awarded a gold medal by the jury. \"The winner\" is singular + past tense → WAS (not were). \"The winner were awarded a gold medal by the jury\" wrongly uses \"were\" with a singular subject; \"A gold medal is awarded to the winner by the jury\" uses present tense (wrong) and misplaces \"to\"; and \"The winner was awarded to a gold medal by the jury\" incorrectly inserts \"to\" between \"awarded\" and \"a gold medal\", which is ungrammatical in this pattern.",
+      "explanation": "\"I hope that\" is followed by a full clause, subject + verb: I hope that you pass your exam. \"I hope you to pass\" copies \"I want you to pass\" — a common mistake; \"I hope passing\" has no subject, and \"that you passing\" has no real verb.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Your friend asks: \"Cinema or TV tonight?\" You don't prefer one or the other. Which answer shows this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I'm interested in the cinema."
+        },
+        {
+          "id": "b",
+          "text": "It sounds interesting."
+        },
+        {
+          "id": "c",
+          "text": "I don't mind."
+        },
+        {
+          "id": "d",
+          "text": "I'd like to know more about it."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "\"I don't mind\" shows indifference: either choice is fine for you. \"I'm interested in the cinema\" chooses the cinema; \"It sounds interesting\" and \"I'd like to know more about it\" show interest, not indifference.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "In a shop, the assistant shows you a blue skirt — exactly the one you were looking for. What do you say?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I don't care what colour the skirt is."
+        },
+        {
+          "id": "b",
+          "text": "What a pity! This is the skirt."
+        },
+        {
+          "id": "c",
+          "text": "It sounds interesting, this skirt."
+        },
+        {
+          "id": "d",
+          "text": "This is just what I was looking for."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "\"This is just what I wanted / needed / was looking for\" expresses satisfaction. \"I don't care…\" shows indifference, \"What a pity!\" shows disappointment, and \"It sounds interesting\" shows interest in something you hear about — none of them says the skirt is exactly right.",
       "difficulty": 3
     }
   ]

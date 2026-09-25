@@ -1,18 +1,10 @@
 # 📜 Summary: Reading Comprehension & Writing
 
-## Reading
-
-- **Main idea** = the whole text's key message (often the topic sentence), not a small detail.
-- **Scanning** = move fast and hunt only for the key word (name, number, date, place) to find a specific detail.
-- **Inference** = a conclusion the text suggests but does not state; it must be supported by clues.
-- **Reference words / pronouns** (it, they, this…) point back to the nearest matching noun before them; they must agree in number.
-- **Vocabulary from context** = guess unknown words using examples, synonyms/definitions, or contrast words.
-- **Connectors** show relationships: addition (also), contrast (but, however), cause (because), result (so, therefore), purpose (to), example (such as), time (first, then, finally).
-
-## Writing
-
-- **Topic sentence** = clear, general first sentence stating the paragraph's one main idea.
-- **Paragraph order** = topic sentence → supporting sentences (logical order) → closing sentence.
-- **Linking words** join ideas smoothly; choose them by meaning (don't use "therefore" for a contrast).
-- **Irrelevant sentence** = one that does not support the topic — remove it.
-- **Coherent continuation** = the next sentence must follow logically from the ones before.
+- **Gist** — the general idea of the whole text in one sentence: read the first and last sentences, note the words that come back, and keep the idea **every** sentence supports — a true detail is not the gist.
+- **Scanning** — to find one precise detail, take the key word of the question, guess the shape of the answer (a date, a number, a place), then read the **whole** sentence and answer with the text's words.
+- **Information transfer** — text → table: one short fact per box, in the right column (a name, a number, an _-ing_ form). Table → text (a biography): one sentence per row, in the simple past, in time order.
+- **Inference** — a conclusion the text does not state but its clues prove (feelings, speakers, place); if you cannot point to the clue, it is only a guess.
+- **Reference words** — _he, it, they, this, the two friends, who, which_ point back to something already named: check number and kind, put the noun back, let the meaning decide; _this / that's why_ can point to a whole idea.
+- **Meaning from context** — look for the same kind of word (noun for noun, verb for verb) and test it in the sentence; a contrast word (_whereas, but_) gives the opposite, and word parts help (_tire-less-ly_).
+- **The guided paragraph** — one idea: a general **topic sentence** (_In my opinion…, I think that…_), **supporting sentences** that prove it, a **closing sentence**; remove any irrelevant sentence.
+- **Linkers** — **because** + cause · **so / therefore / as a result / that's why** + consequence · **but / while / whereas** + opposite ideas · **and / also** add · **first / then / finally** order.

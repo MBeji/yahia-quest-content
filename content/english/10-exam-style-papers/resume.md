@@ -1,35 +1,11 @@
 # 📜 Summary: Exam-Style Papers
 
-## The paper has three parts (all on one text)
-
-1. **Reading comprehension** — what the text says and means.
-2. **Language in context** — grammar inside the text's sentences.
-3. **Writing skills** — organising and connecting ideas.
-
-## Reading
-
-- **Main idea** = the whole message, not one detail; often near the start/end.
-- **Detail** = scan for a key word (name, number, place, date).
-- **Inference** = a conclusion the text suggests; must be backed by clues.
-- **Reference words** (it, they, this, such) point back to the nearest matching noun.
-- **Vocabulary in context** = guess from synonym, definition, example or contrast.
-- **Not mentioned** ≠ **False**: choose it when the info is simply absent.
-
-## Language
-
-- **Tenses**: match the time markers (yesterday, since, already, next week).
-- **Modals**: choose by meaning (ability, obligation, advice, possibility).
-- **Conditionals**: type 1 will + base; type 2 would + base; type 3 would have + p.p.
-- **Passive**: be + past participle (doer unknown/unimportant).
-- **Reported speech**: shift tense back, change pronouns and time words.
-- **Relative clauses**: who (people), which/that (things), where (place), whose (possession).
-
-## Writing
-
-- **Topic sentence** = clear, general first sentence with the one main idea.
-- **Order** = topic sentence → supporting sentences → closing sentence.
-- **Linking words** = pick by meaning (also / however / because / therefore / such as).
-- **Unity** = remove any sentence that drifts off the topic.
-- **Coherent continuation** = the next sentence must follow logically.
-
-> Golden rule: every answer is **in the text** — if you can't point to the proof, choose again.
+- **Main idea (gist)** — read the whole text once, sum up each paragraph, keep the answer that covers **all** of them; an answer about one line is a detail, even if its words are copied from the text.
+- **Scanning and justifying** — key word → scan → compare → **quote** the short part of the text that proves your answer; one wrong part (a time, a reason) makes a statement false, and your opinion is never a proof.
+- **Reference words** — _he, she, it, they, his, their, who, which, that_ replace a noun that came before; the noun must match in **number**, **kind** (person or thing) and **meaning** — not just be the nearest one. _They_ can stand for two nouns together.
+- **Words in context** — no dictionary: the sentence gives the meaning through a synonym, an opposite or a result; replace the word by each answer and keep the one that fits. A look-alike French word can mislead (_library_ ≠ _librairie_).
+- **Inference** — a conclusion the text suggests but does not write: **every clue** supports it and **none** contradicts it; going beyond the clues is inventing.
+- **Time marker → tense** — every day → present simple · yesterday / last / ago → simple past · since / ever / just / already / recently / lately → present perfect (never with a finished time) · an action in progress at a past moment → past progressive · tomorrow / next → will or going to; **if + present → will**.
+- **Function → pattern** — obligation _must / have to_ (past _had to_) · advice _should / ought to_ · prohibition _Don't_ · possibility _may / might / could_ · ability _can / be able to_ · polite request _Would you mind + verb-ing? / Could you + verb?_ · warning _Mind…! / Look out!_ · suggestion _Let's / Shall we / Why don't we / What about + verb-ing_ · comparing _-er than / more … than / as … as_.
+- **Linkers** — **because** + cause · **so / therefore / as a result / that's why** + result · **while / whereas** + opposite idea; never _because_ in front of the result.
+- **A clear paragraph** — topic sentence (general) → supporting sentences joined with linkers → closing sentence (_That's why…_); every sentence on one idea (**unity**), no contradiction, no jump to another topic.

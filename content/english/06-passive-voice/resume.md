@@ -1,9 +1,9 @@
-# 📜 Summary: The Passive Voice
+# 📜 Summary: Communicative Functions
 
-- **Passive form** = subject + **be** (correct tense) + **past participle** (+ by + agent).
-- **Present simple passive**: is / are + past participle. _Rice **is grown** here._
-- **Past simple passive**: was / were + past participle. _The castle **was built** in 1400._
-- **Turning active → passive**: object becomes subject; keep the same tense with be; add past participle; "by + agent" is optional.
-- **Use the passive** when the agent is unknown, unimportant, or when focus is on the result/object.
-- **"by + agent"** is often omitted: _My bike was stolen._ (we don't know who)
-- Singular subject → **is / was**; plural subject → **are / were**.
+- **Polite requests and offers** — ask: _Would you mind_ + verb-**ing**? / _Could you_ + bare verb? (_Would you mind opening the door?_); offer: _Can I help you? / What can I do for you? / How can I help you? / Do you need any help?_ — _Can you help me?_ asks for help, it does not offer it.
+- **Warnings and signs** — **Mind** + noun, with no preposition (_Mind the iron! Mind your head!_); **Look out!** + a sentence naming the danger; signs use the bare verb (_Wear gloves! Keep out!_) or **Don't** + bare verb (_Don't touch!_).
+- **Thanking** — _Thank you very much. That's very kind **of** you._; for help still to come: _That will be very kind of you._; the answer: _You're welcome._ (_Here you are_ is for handing something).
+- **Suggestions** — **Let's / Shall we / Why don't we** + bare verb; **What about** + verb-ing or noun (_What about going…?_); **I suggest that** + subject + verb (_I suggest that we go_). _Why don't we…?_ is a friendly suggestion, not a complaint.
+- **Apologising and regret** — _I'm (so / very) sorry that_ + clause (_I'm so sorry that I forgot your book_); _I regret_ + noun or verb-**ing** (_I regret missing your party_); _I'm sorry._ alone refuses an invitation politely.
+- **Sure, not sure, opinion, hope** — not sure: **Perhaps / Maybe** + sentence; sure: **There's no doubt** + sentence; view: **I think that / I believe that** + clause, **In my opinion,** + sentence; wish: **I hope that** + clause (_I hope that you pass_, never _I hope you to pass_).
+- **Reacting** — **What a** (+ adjective) + noun! **How** + adjective! **How nice to** + verb! **What a pity!** (disappointment); satisfaction: _This is just what I wanted / needed_; interest: _I'm **interested** in…, It sounds **interesting**, I'd like to know more about…_; indifference: _I don't mind (+ verb-ing), I don't care_.
