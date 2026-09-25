@@ -757,7 +757,7 @@ Deux parades, l'une en amont, l'autre en aval (§ B3) :
   La parade se prend à l'écriture : **même niveau de justification sur chaque option**, ou
   aucune.
 
-  **Corriger la dette publiée — et les quatre pièges de la correction.** La première tranche de
+  **Corriger la dette publiée — et les sept pièges de la correction.** La première tranche de
   correction (`arabic-8eme` ch. 02/03/19/23, corpus #531 : 128/152 → 0/152) a montré que la
   correction elle-même fabrique des défauts que la mesure ne voit pas ; l'audit B3 en a trouvé
   2 BLOCKER et 6 MAJOR sur 129 questions. À mettre dans le mandat de tout correcteur :
@@ -773,7 +773,13 @@ Deux parades, l'une en amont, l'autre en aval (§ B3) :
      l'affichage les mélange ; citer le texte ;
   5. **aucune notion pas encore enseignée** — un distracteur étoffé qui invoque « حال » au
      chapitre 21 quand الحال est au chapitre 23 (vu deux fois, tranches 2 et 3) : l'élève ne
-     peut ni le choisir en connaissance de cause, ni l'écarter.
+     peut ni le choisir en connaissance de cause, ni l'écarter ;
+  6. **la clé raccourcie répond encore à l'énoncé** — « الإعراب الكامل » ou « النوع والعلّة »
+     ne s'accommode pas d'une demi-clé (tranche 3, ch. 07) : garder les deux parts ou ajuster
+     l'énoncé, et donner aux distracteurs la même structure ;
+  7. **les distracteurs déjà là comptent aussi** — l'audit de la tranche 3 a trouvé ~15
+     distracteurs par chapitre qui se contredisaient avec le cas visible AVANT toute
+     correction : le correcteur les remplace dans les questions qu'il touche.
   Le mandat complet, à donner tel quel à un correcteur par chapitre :
   `.claude/skills/content-engine/references/correction-cle-longue.md` — puis un auditeur par
   chapitre en contexte vierge (§ B3), `content:gates -- --tranche`, PR, dispatch.
