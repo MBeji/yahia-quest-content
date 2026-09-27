@@ -419,6 +419,15 @@ dans le Google Drive du projet, que la session sait lire.
     texte cassé), pas un devoir. Rien d'autre sur le Drive ne ressemble à un devoir ou à une
     série. Les devoirs déjà exploités (Berges du Lac 2016, séries de Sfax) sont des photos
     fournies par le propriétaire (privé#557 et les PR qui l'ont précédée).
+  - **Un gisement existe déjà, hors d'atteinte du cloud** : le poste porte
+    `YahiaAcademy/pdfs_9raya/` (PDF de `9raya.tn`, un site de l'annexe A.2, à calque texte
+    intact selon l'étude 13) et `YahiaAcademy/academy 9éme Math/` (cours d'enseignants
+    nommés). La fiche programme maths 9ᵉ les avait écartés sans les ouvrir le 2026-08-17, à
+    raison : ils ne sont pas CNP. Pour ce pilote, ce sont des candidats T2′. C'est la voie la
+    plus courte si l'environnement cloud reste fermé : une session lancée depuis le poste, ou
+    ces deux dossiers déposés dans `YahiaAcademy/` sur le Drive, que la session lit par son
+    connecteur. L'échantillon se fixe alors sur la liste des noms de fichiers, avant d'en
+    ouvrir un.
   - **Le protocole est écrit avant la lecture, pour que le pilote ne se juge pas lui-même.**
     Échantillon fixé à l'avance, chaîne en salle blanche où celui qui lit n'écrit pas, contrôle
     local contre les snapshots, critère de sortie chiffré (§4, « Lot 3 »). Une lacune de la
