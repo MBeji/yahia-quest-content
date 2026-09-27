@@ -122,6 +122,41 @@ Beyond the distractor/explanation rules above, every item must pass these craft 
   is the engine's job via your key balance — the _display_ order should look deliberate.
 - **No option leaks.** An option must not be contradicted or confirmed by the wording of the stem
   or of another option; distractors must not overlap (two options that mean the same thing).
+- **No form clue — the key must not be findable without the notion.** Length is only the first
+  leak (`content:tranche`, blocking in the Content CI since 2026-09-23). The six others below were
+  each found by an independent audit of `arabic-8eme` (corpus #531 → #555, 877 questions), and
+  none of them is caught by a gate:
+  1. **A marker present in the key and absent from the distractors** — a term (« بدل مطابق »,
+     « في محلّ »), an ellipsis « … », quotation marks, « الخطأ إغفال » — or **the only fully
+     vocalised option** (the vocalised one is then the odd one out). Whatever the key carries,
+     at least one distractor carries too.
+  2. **A key that is the union of the distractors** — « أشدُّ حُمرةً » when one distractor says
+     « أشدُّ » and another « حُمرةً » : the student picks the option that shares the most with the
+     others. Build distractors that are wrong on _one_ axis each, not halves of the key.
+  3. **A distractor contradicted by what the student sees** — « مبتدأ مرفوع » on a word ending in
+     a fatha, « مضاف » on a word with tanwīn, « مزيد » for « ماتَ », or an option that denies a
+     premise the stem states (« دونَ مساعدٍ » when the stem says the auxiliary verb is there). It
+     is eliminated on sight and tests nothing. Make it wrong about the function, consistent with
+     the visible case and with the stem.
+  4. **A notion not yet taught** — in a distractor, a key or an explanation. The order is the
+     chapter order of the subject (folder prefixes) plus the previous grades. « حال » as a
+     distractor in chapter 21 when الحال is chapter 23: the student can neither choose it
+     knowingly nor rule it out.
+  5. **A compound stem the key only half answers** — « ما الإعراب الكامل » / « ما نوعه وما
+     علّته » with a key reduced to one half, or a key that is the only option giving a cause.
+     Either the key keeps both parts and every distractor has the same structure, or the stem
+     asks for one thing.
+  6. **A key true only if read generously** — « الخطأ أنّ «كاد» للمقاربة » says the error IS the
+     rule. Read every key the way a student takes it: literally. (« الخطأ إغفال أنّ… »)
+- **Explanations name options by their text, never by their letter.** Options are shuffled on
+  every surface: « الخطأ الشائع (b) », « la réponse d », « الأولى / الثالثة » point the student at a
+  random option in the one place meant to correct them. `content:qa` warns on letters since
+  2026-09-27 (`qa-option-refs.ts`); ordinals (« الأولى ») are yours to catch.
+- **No mirror question, no de facto duplicate.** Two items of the same exercise with the same
+  options and inverted keys (« حوّل إلى ما أفعلَه » / « … إلى أفعِلْ بـه » on the same sentence)
+  hand each other their answer. Two items with the same four options and the same key under
+  two stems are one question asked twice. `content:tranche` lists near pairs; reading them is
+  the auditor's job (method B3), rewriting one of each pair is the author's.
 - **Difficulty tag is honest.** A d1 question is answerable by a student who just read the course;
   a d3 question requires combining ≥2 notions or a multi-step computation. Don't tag for ordering
   convenience.

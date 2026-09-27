@@ -3,7 +3,7 @@
 > Mandat à donner **tel quel** à un correcteur (un par chapitre, en parallèle), en remplaçant
 > `<MATIÈRE>`, `<CHAPITRE>` et `<NN>`. Né de la correction d'`arabic-8eme` (corpus #531, #534, #540) : ses
 > pièges sont ceux que l'audit B3 y a trouvés. La chaîne complète : correcteurs →
-> un auditeur par chapitre en contexte vierge (mandat de la méthode, § B3) → arbitrage →
+> un auditeur par chapitre en contexte vierge (mandat `audit-correction.md`) → arbitrage →
 > `npm run content:gates -- --tranche` → PR → dispatch d'`apply-content.yml`. Méthode : § B2.
 
 Deux clones côte à côte : le corpus (ici) et le moteur `../engine`, où se lancent les `npm run …` (`content/` y est le lien vers le corpus — méthode, Phase 0.1). Tu édites UNIQUEMENT `content/<MATIÈRE>/<CHAPITRE>/quiz.json` et `content/<MATIÈRE>/<CHAPITRE>/exercices/*.json`. Aucun git, aucun commit, aucun autre fichier. Garde le formatage du fichier (une option par ligne, `npx prettier --check` vert) : l'orchestrateur peut committer ton état intermédiaire, un JSON reformaté y devient du bruit de diff. Tes scripts et copies de sauvegarde vont dans un sous-dossier À TON NOM de chapitre (ex. `…/scratchpad/<CHAPITRE>/`) : d'autres correcteurs travaillent en parallèle dans le même répertoire temporaire.

@@ -756,6 +756,20 @@ Deux parades, l'une en amont, l'autre en aval (§ B3) :
   portait sa justification (« حال في محلّ نصب، تصف الوردة… ») et les distracteurs rien.
   La parade se prend à l'écriture : **même niveau de justification sur chaque option**, ou
   aucune.
+  La longueur n'est que le premier **indice de forme** : les six autres que l'audit de l'arabe
+  8ᵉ a trouvés (marque portée par la seule clé, clé qui réunit les distracteurs, distracteur
+  contredit par le cas visible, notion pas encore enseignée, énoncé composé à demi répondu, clé
+  vraie seulement si on la lit avec indulgence) se préviennent **à l'écriture** aussi — ils sont
+  dans `quality-bar.md` § « No form clue », que suit tout skill de génération. Aucun gate ne les
+  voit ; seul le relecteur B3 les attrape.
+
+  **Le cours neuf s'écrit au patron de notion (é35), et la CI le tient.** Depuis le 2026-09-27,
+  `content:tranche --fresh --strict-lessons` refuse un chapitre neuf du programme (`ecole-tn`)
+  dont le cours porte un constat é35 du régime strict (une règle sans exemple résolu, une
+  section qui ouvre sur sa règle, un exemple sans `::: verifie`, aucune erreur typique…), et un
+  cours retouché qui en compte plus qu'avant. Doctrine : `course-explanation.md`. Déclarer
+  `coursePattern: "notion"` reste l'étape de fin de campagne d'une matière — elle exige en plus
+  les `coursePitfalls` de chaque chapitre (C-5).
 
   **Corriger la dette publiée — et les sept pièges de la correction.** La première tranche de
   correction (`arabic-8eme` ch. 02/03/19/23, corpus #531 : 128/152 → 0/152) a montré que la
@@ -782,7 +796,7 @@ Deux parades, l'une en amont, l'autre en aval (§ B3) :
      correction : le correcteur les remplace dans les questions qu'il touche.
   Le mandat complet, à donner tel quel à un correcteur par chapitre :
   `.claude/skills/content-engine/references/correction-cle-longue.md` — puis un auditeur par
-  chapitre en contexte vierge (§ B3), `content:gates -- --tranche`, PR, dispatch.
+  chapitre en contexte vierge, avec `audit-correction.md` (§ B3), `content:gates -- --tranche`, PR, dispatch.
   ⚠️ La deuxième **ne fuit rien** : toutes les surfaces mélangent les options à l'affichage
   (`shuffleOptions`) — l'outil la rapporte comme **symptôme** d'écriture au gabarit, pas comme
   défaut à « corriger » en déplaçant des clés. La troisième ne remplace **jamais** l'audit

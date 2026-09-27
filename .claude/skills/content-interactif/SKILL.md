@@ -78,7 +78,7 @@ An interactive skin never loosens the content rules of the subject's track:
    not the answer; in a visual QCM all four options carry a comparable figure, none marked). A
    "how-many / which-is-true" figure shows the _forced_ configuration, never one that implies the
    wrong count.
-4. **Self-verify** per `quality-bar.md` (re-solve blind; for matching/sequencing, enumerate ALL
+4. **Self-verify** per `quality-bar.md`, including § "No form clue" (re-solve blind; for matching/sequencing, enumerate ALL
    permutations and prove exactly one option is fully correct; for SVG, re-read the figure as the
    student sees it — TRUE and no key leak).
 5. **Validate and stop:** `npm run content:check` → `npm run content:qa:strict` (0 errors) →

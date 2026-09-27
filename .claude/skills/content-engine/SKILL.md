@@ -118,7 +118,11 @@ Run, in order:
    subject's **published** chapters, and **template candidates** (same task frame, décor swapped,
    across ≥ 2 chapters — the #1 defect of parallel writing, invisible to every other gate). Fix the
    first two before committing; hand the template groups to the auditor. One command replays all
-   seven Content CI stages plus these measures: `npm run content:gates -- --tranche`.
+   seven Content CI stages plus these measures **and the two CI ratchets** (a new question's key
+   never strictly the longest; a new school course at the notion pattern of
+   `course-explanation.md`, a retouched one never worse): `npm run content:gates -- --tranche`.
+   The ratchets only see length and course form — the other form clues (`quality-bar.md`
+   § "No form clue") are caught by your blind re-solve and by the auditor.
 7. **Stop and report** — or, when asked to ship a PR, commit **only the `content/` files** (plus
    `content/CATALOGUE.md` when a chapter or subject is new) in the corpus repo and open the PR.
    There is **nothing to compile by hand** (étude 24 D-3): content no longer travels as
