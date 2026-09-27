@@ -1,0 +1,267 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: القوى في خدمة القسمة",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 12,
+  "questions": [
+    {
+      "prompt": "في الشكل ثلاثة مربّعات أطوال أضلاعها a و b و c أعداد صحيحة طبيعية مختلفة، والنقاط A و B و C و D على استقامة واحدة. ما محيط هذا الشكل بدلالة البعد AD ؟\n<svg viewBox=\"0 0 240 215\"><rect x=\"20\" y=\"40\" width=\"60\" height=\"60\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"80\" y=\"100\" width=\"90\" height=\"90\" fill=\"#2563eb\" fill-opacity=\"0.12\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"170\" y=\"60\" width=\"40\" height=\"40\" fill=\"#f59e0b\" fill-opacity=\"0.18\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"20\" cy=\"100\" r=\"2.5\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"100\" r=\"2.5\" fill=\"#0f172a\"/><circle cx=\"170\" cy=\"100\" r=\"2.5\" fill=\"#0f172a\"/><circle cx=\"210\" cy=\"100\" r=\"2.5\" fill=\"#0f172a\"/><text x=\"11\" y=\"105\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">A</text><text x=\"89\" y=\"94\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">B</text><text x=\"161\" y=\"94\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">C</text><text x=\"220\" y=\"105\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">D</text><text x=\"50\" y=\"33\" text-anchor=\"middle\" font-size=\"13\" font-style=\"italic\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\">a</text><text x=\"125\" y=\"207\" text-anchor=\"middle\" font-size=\"13\" font-style=\"italic\" fill=\"#2563eb\" direction=\"ltr\" unicode-bidi=\"isolate\">b</text><text x=\"190\" y=\"53\" text-anchor=\"middle\" font-size=\"13\" font-style=\"italic\" fill=\"#b45309\" direction=\"ltr\" unicode-bidi=\"isolate\">c</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "12 × AD"
+        },
+        {
+          "id": "b",
+          "text": "4 × AD"
+        },
+        {
+          "id": "c",
+          "text": "3 × AD",
+          "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone"
+        },
+        {
+          "id": "d",
+          "text": "2 × AD"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المربّعات الثلاثة لا تشترك في أيّ ضلع، بل تتلامس في النقطتين B و C فقط، فأضلاعها الاثنا عشر كلّها على حدود الشكل. المحيط إذن 4a + 4b + 4c = 4 × (a + b + c). وبما أنّ AB = a و BC = b و CD = c، فإنّ AD = a + b + c، ومنه المحيط 4 × AD ✓. الخطأ الشائع حذف الأضلاع الواقعة على المستقيم (AD) فيصير المحيط 3 × AD، مع أنّ كلّ ضلع منها يحدّ مربّعًا من جهة واحدة فقط. أمّا 12 × AD فيضرب عدد الأضلاع كلّها في AD بدل أن يجمع أطوالها.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.multiples-diviseurs"
+      ]
+    },
+    {
+      "prompt": "ثلاثة مربّعات مختلفة أطوال أضلاعها a و b و c أعداد صحيحة طبيعية، ومحيط الشكل الذي تكوّنه يساوي 4 × AD حيث AD = a + b + c. إذا كان البعد AD مضاعفًا للعدد 9، فعلى أيّ عدد يقبل هذا المحيط القسمة بالضرورة؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "27",
+          "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "10"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نكتب AD = 9k حيث k عدد صحيح طبيعي، فيكون المحيط 4 × 9k = 36k = 12 × 3k، وهو مضاعف للعدد 12 مهما كان k ✓. أمّا القسمة على 10 أو على 15 فليست مضمونة: من أجل a = 2 و b = 4 و c = 3 يكون AD = 9 والمحيط 36، وهو لا يقبل القسمة على 10 ولا على 15. والعدد 27 يأتي من محيط محسوب 3 × AD = 27k، أي من حذف الأضلاع الواقعة على المستقيم.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.multiples-diviseurs",
+        "math.num.criteres-divisibilite"
+      ]
+    },
+    {
+      "prompt": "نريد أن نبيّن أنّ العدد 3 × 2⁶⁴ + 8²¹ يقبل القسمة على 14، ونبدأ بتوحيد الأساس. ما كتابة 8²¹ على شكل قوّة للعدد 2 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2⁷"
+        },
+        {
+          "id": "b",
+          "text": "2²⁴",
+          "misconceptionTag": "math.num.puissances-puissance-exposants-additionnes"
+        },
+        {
+          "id": "c",
+          "text": "2⁴²"
+        },
+        {
+          "id": "d",
+          "text": "2⁶³"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "8 = 2³، إذن 8²¹ = (2³)²¹ = 2^(3 × 21) = 2⁶³ ✓، لأنّ قوّة القوّة تضرب الدليلين. جمع الدليلين (3 + 21) يعطي 2²⁴، وهو الخطأ الأكثر شيوعًا؛ وقسمة 21 على 3 تعطي 2⁷؛ أمّا 2⁴² فيأتي من اعتبار 8 = 2² خطأً.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.puissances"
+      ]
+    },
+    {
+      "prompt": "بعد توحيد الأساس صار العدد 3 × 2⁶⁴ + 2⁶³. بإخراج 2⁶³ عاملًا مشتركًا، ما الكتابة المختصرة لهذا العدد؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "7 × 2⁶³"
+        },
+        {
+          "id": "b",
+          "text": "6 × 2⁶³"
+        },
+        {
+          "id": "c",
+          "text": "4 × 2⁶⁴"
+        },
+        {
+          "id": "d",
+          "text": "4 × 2¹²⁷"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نكتب 2⁶⁴ = 2 × 2⁶³، فيصير العدد 3 × 2 × 2⁶³ + 1 × 2⁶³ = (6 + 1) × 2⁶³ = 7 × 2⁶³ ✓. الخطأ الشائع نسيان العامل 1 الذي يبقى من الحدّ 2⁶³ بعد إخراجه، فنحصل على 6 × 2⁶³. والقوّتان 2⁶⁴ و 2⁶³ ليستا حدّين متشابهين، فلا يجوز جمعهما كأنّهما من النوع نفسه للحصول على 4 × 2⁶⁴؛ ولا يجوز جمع الدليلين في مجموع قوّتين: 2⁶⁴ + 2⁶³ لا يساوي 2¹²⁷.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.puissances"
+      ]
+    },
+    {
+      "prompt": "العدد 3 × 2⁶⁴ + 8²¹ يساوي 7 × 2⁶³. لماذا يقبل هذا العدد القسمة على 14 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "لأنّ الدليل 63 مضاعف للعدد 7، فالقوّة 2⁶³ تقبل القسمة على 7 وعلى 2 معًا",
+          "misconceptionTag": "math.num.puissance-confondue-avec-produit"
+        },
+        {
+          "id": "b",
+          "text": "لأنّه عدد زوجي، وكلّ عدد زوجي يقبل القسمة على 14 مهما كان عامله الآخر",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "c",
+          "text": "لأنّه يقبل القسمة على 7، والقسمة على 7 وحدها تكفي لتضمن القسمة على 14",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "d",
+          "text": "لأنّ 7 × 2⁶³ = 7 × 2 × 2⁶² = 14 × 2⁶²، فهو مضاعف للعدد 14"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نفكّك 2⁶³ = 2 × 2⁶²، فيصير العدد 7 × 2 × 2⁶² = 14 × 2⁶²: جداء أحد عامليه 14، فهو مضاعف للعدد 14 ✓. القوّة 2⁶³ لا تقبل القسمة على 7 أصلًا لأنّها جداء عوامل كلّها تساوي 2، والدليل 63 يعدّ هذه العوامل ولا يُضرب فيها. وقابلية القسمة على 14 = 2 × 7 تحتاج إلى العاملين 2 و 7 معًا، فلا يكفي أن يكون العدد زوجيًّا، ولا أن يقبل القسمة على 7 وحده.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.puissances",
+        "math.num.criteres-divisibilite"
+      ]
+    },
+    {
+      "prompt": "نعتبر العدد 27³⁵ + 2 × 9⁵² − 5. بتوحيد الأساس ثمّ إخراج عامل مشترك، ما الكتابة المختصرة للمجموع 27³⁵ + 2 × 9⁵² ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 × 3²⁰⁹"
+        },
+        {
+          "id": "b",
+          "text": "3 × 3¹⁰⁴"
+        },
+        {
+          "id": "c",
+          "text": "5 × 3¹⁰⁴"
+        },
+        {
+          "id": "d",
+          "text": "6 × 3¹⁰⁴",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "27 = 3³ و 9 = 3²، إذن 27³⁵ = 3¹⁰⁵ و 9⁵² = 3¹⁰⁴. ثمّ 3¹⁰⁵ + 2 × 3¹⁰⁴ = 3 × 3¹⁰⁴ + 2 × 3¹⁰⁴ = (3 + 2) × 3¹⁰⁴ = 5 × 3¹⁰⁴ ✓. نجمع 3 + 2 لأنّنا نُخرج عاملًا مشتركًا من مجموع، أمّا الجداء 3 × 2 فيعطي 6 × 3¹⁰⁴ الخاطئ؛ ونسيان العامل 3 الذي يبقى من 3¹⁰⁵ يعطي 3 × 3¹⁰⁴؛ وجمع الدليلين 105 + 104 لا يجوز إلّا في جداء قوّتين.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.puissances"
+      ]
+    },
+    {
+      "prompt": "العدد 27³⁵ + 2 × 9⁵² − 5 يساوي 5 × 3¹⁰⁴ − 5. ما خارج قسمته الإقليدية على 5 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3¹⁰⁴"
+        },
+        {
+          "id": "b",
+          "text": "3¹⁰⁴ − 1"
+        },
+        {
+          "id": "c",
+          "text": "3¹⁰⁴ − 5"
+        },
+        {
+          "id": "d",
+          "text": "5 × 3¹⁰⁴ − 5",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نُخرج 5 عاملًا مشتركًا: 5 × 3¹⁰⁴ − 5 = 5 × 3¹⁰⁴ − 5 × 1 = 5 × (3¹⁰⁴ − 1). إذن العدد يساوي 5 × (3¹⁰⁴ − 1) + 0، فالخارج 3¹⁰⁴ − 1 والباقي 0 ✓. الخطأ الأكثر شيوعًا اختيار 3¹⁰⁴: نقسم الحدّ الأوّل على 5 وننسى أنّ الحدّ −5 يصير هو أيضًا −1 بعد القسمة. والاقتراح 3¹⁰⁴ − 5 يقسم الحدّ الأوّل وحده، أمّا 5 × 3¹⁰⁴ − 5 فهو العدد نفسه لا خارج قسمته.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.puissances",
+        "math.num.operations-entiers"
+      ]
+    },
+    {
+      "prompt": "نعتبر الجداء 81 × (25²¹ − 5⁴¹). ما الكتابة المختصرة للفرق 25²¹ − 5⁴¹ ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "5⁴¹"
+        },
+        {
+          "id": "c",
+          "text": "4 × 5⁴¹"
+        },
+        {
+          "id": "d",
+          "text": "6 × 5⁴¹"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "25 = 5²، إذن 25²¹ = 5⁴². ثمّ 5⁴² − 5⁴¹ = 5 × 5⁴¹ − 1 × 5⁴¹ = (5 − 1) × 5⁴¹ = 4 × 5⁴¹ ✓. طرح الدليلين (5⁴² − 5⁴¹ = 5) لا يجوز إلّا في خارج قسمة قوّتين، ونسيان العامل 1 الذي يبقى من الحدّ الثاني يعطي 5⁴¹، وجمع 5 + 1 بدل طرحهما يعطي 6 × 5⁴¹.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.puissances"
+      ]
+    },
+    {
+      "prompt": "بما أنّ 25²¹ − 5⁴¹ = 4 × 5⁴¹، ما خارج قسمة الجداء 81 × (25²¹ − 5⁴¹) على 12 وما باقيها؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "الخارج 27 والباقي 5⁴¹",
+          "misconceptionTag": "math.num.reste-superieur-ou-egal-au-diviseur"
+        },
+        {
+          "id": "b",
+          "text": "الخارج 27 × 5⁴¹ والباقي 0"
+        },
+        {
+          "id": "c",
+          "text": "الخارج 81 × 5⁴¹ والباقي 0"
+        },
+        {
+          "id": "d",
+          "text": "الخارج 324 × 5⁴¹ والباقي 0",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "81 × 4 × 5⁴¹ = 324 × 5⁴¹، و 324 = 12 × 27، إذن الجداء يساوي 12 × (27 × 5⁴¹) + 0: الخارج 27 × 5⁴¹ والباقي 0 ✓، فالجداء يقبل القسمة على 12. الباقي 5⁴¹ مستحيل لأنّه أكبر من 12، وباقي القسمة الإقليدية على 12 أصغر دائمًا من 12. والعدد 324 × 5⁴¹ هو الجداء نفسه لا خارج قسمته، أمّا 81 × 5⁴¹ فهو خارج القسمة على 4 لا على 12.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.puissances",
+        "math.num.operations-entiers"
+      ]
+    }
+  ]
+}
