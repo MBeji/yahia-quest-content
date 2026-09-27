@@ -159,12 +159,17 @@ jobs:
       # la dette déjà publiée ne rend aucune PR rouge. `--strict-longest` : seule cette
       # fuite bloque — les paires proches et les candidats gabarit restent un rapport
       # pour l'auditeur, lisible dans ce log. Sur `main`, rien n'est « neuf » : no-op.
-      - name: content:tranche --fresh (cliquet de la clé la plus longue)
+      # `--strict-lessons` (é35, 2026-09-27) : le même cliquet pour les COURS. Un chapitre
+      # neuf du programme s'écrit au patron de notion (`course-explanation.md`), un cours
+      # retouché ne compte pas plus de constats é35 qu'avant. Sans lui, une matière qui ne
+      # déclare pas `coursePattern` pouvait publier un cours qui énonce sans rien expliquer :
+      # un cours sans bloc de savoir ne déclenchait aucun avertissement.
+      - name: content:tranche --fresh (cliquets de la clé la plus longue et du patron de notion)
         working-directory: engine
         run: |
           set -euo pipefail
-          if ! npm run -s content:tranche -- --changed --fresh --strict-longest; then
-            echo "::error::content:tranche — la clé est strictement l'option la plus longue au-delà du hasard sur les questions neuves de cette PR (liste ci-dessus). Raccourcir la clé ou étoffer les distracteurs (même niveau de justification), sans déplacer la clé ; puis relancer localement : npm run content:gates -- --tranche."
+          if ! npm run -s content:tranche -- --changed --fresh --strict-longest --strict-lessons; then
+            echo "::error::content:tranche — une question neuve a sa clé strictement plus longue au-delà du hasard, ou un cours neuf ou retouché recule sur le patron de notion (liste ci-dessus). Clé : raccourcir la clé ou étoffer les distracteurs, sans la déplacer. Cours : réécrire la section aux sept temps (course-explanation.md). Puis relancer localement : npm run content:gates -- --tranche."
             exit 1
           fi
 

@@ -183,8 +183,12 @@ the corpus linked (method, Phase 0.1):
       (double-solved on the figure) and leaking no key; young grades (1ère–3ème) illustrate almost
       everything, colourfully. Doctrine `course-figures.md`; bars `course-quality.md` Axis 5 +
       `quality-bar.md` § "Illustrate what the question is about".
-- [ ] `npm run content:gates -- --tranche` → seven stages green; tranche measures read (key never
-      strictly the longest, no near pair left unjustified, template groups handed to the auditor).
+- [ ] `npm run content:gates -- --tranche` → seven stages green, both CI ratchets green (key never
+      strictly the longest on new questions; new school courses at the notion pattern), tranche
+      measures read (no near pair left unjustified, template groups handed to the auditor).
+- [ ] Every new question re-solved blind against `quality-bar.md` § "No form clue" (no marker
+      only the key carries, no distractor contradicted by the visible case or the stem, no notion
+      not yet taught, no option named by its letter in an explanation, no mirror question).
 - [ ] Only `content/` files staged (+ `CATALOGUE.md` if a chapter/subject is new) — **no SQL, no
       migration, never `content:build`**; report written; push/PR only if asked.
 - [ ] After merge: `apply-content.yml` dispatched, run green, `content_releases` row present.

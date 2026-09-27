@@ -200,6 +200,12 @@ La **notation reste standard** (chiffres 0–9, etc. — règle ci-dessus) ; cet
    `chapter.json` `sources[]`.
 5. Then author the files exactly per the content-engine workflow (cours.md, resume.md, quiz.json,
    exercises ladder), keeping core free progression at difficulty 1–2 and boss/challenge at 3–4.
+   **Every course is written at the notion pattern** (étude 35 —
+   `content-engine/references/course-explanation.md`: anchor in a situation, name, show, a worked
+   example with its whys, the typical mistake, the rule, a `::: verifie` on the spot, in that
+   order). The Content CI rejects a new school chapter whose course is not
+   (`content:tranche --fresh --strict-lessons`). **Every question avoids the form clues** of
+   `quality-bar.md` § "No form clue" — the CI only sees the length one.
 6. **Illustrate — course AND questions.** School content is where the visual gap was worst (a
    geometry course with no triangle, a «التموقع في الفضاء» chapter for 6-year-olds with no image).
    Every spatial/visual notion is drawn: in the **course** a `::: figure` next to the rule, and in

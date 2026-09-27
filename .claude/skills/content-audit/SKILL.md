@@ -191,8 +191,23 @@ Per exercise / chapter:
    Caveat (avoid false positives): when the longer-correct items are **reading-inference / definition**
    questions whose distractors are _also_ full developed clauses, the length carries no real tell —
    verify on the subject's short-answer items before escalating, and say so in the report.
+   **Measure it with the tool**: `npm run content:tranche -- --subject <id> [--chapters NN]`.
+   **Length is only the first form clue.** The independent audits of `arabic-8eme` (corpus #531 →
+   #555) found six more, none caught by a gate — check each on every item you re-solve, and see
+   `content-engine/references/quality-bar.md` § « No form clue » for the examples: (1) a marker
+   only the key carries (a term, « … », quotes, « إغفال », the only vocalised option); (2) a key
+   that is the union of halves of the distractors; (3) a distractor contradicted by the visible
+   case, the tanwīn or a premise of the stem — eliminated on sight = **[MAJOR]**, the most frequent
+   finding (~15 per chapter before correction); (4) a notion not yet taught at this point of the
+   subject (folder order) in any option or explanation = **[MAJOR]**; (5) a compound stem (« الكامل »,
+   « النوع والعلّة ») the key answers only half of; (6) a key true only when read generously
+   (« الخطأ أنّ + the rule itself » = the key is literally false = **[BLOCKER]**).
+   **Explanations never name an option by its letter or ordinal** (« (b) », « الأولى ») — options
+   are shuffled; `content:qa` warns on letters, ordinals are yours = **[MAJOR]**.
 9. **Duplicates** — same fact/computation re-asked with cosmetic changes, within or across the
-   chapter's quiz + exercises = **[MAJOR]**.
+   chapter's quiz + exercises = **[MAJOR]**. Includes the **mirror question** (same options, keys
+   inverted, same exercise) and the **de facto duplicate** (same four options and key under two
+   stems): rewrite one of the pair, keep its key id.
 10. **Difficulty calibration** — per-question difficulty honest and non-decreasing within the
     exercise; exercise `difficulty`/`mode`/rewards match the canonical table in
     `rewards-and-modes.md`; quiz stays d1–2; titles carry the ⭐ indicator = **[MINOR]** each.

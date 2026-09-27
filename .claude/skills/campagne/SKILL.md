@@ -204,7 +204,12 @@ Points de vigilance, tous hérités de la méthode :
 - **LOT B** : la **fiche** est la source de scope et de contenu — on ne rouvre pas les PDF ; unité de
   travail = le chapitre, avec le brief matière + LA section de la fiche (T-5) ; tranches de **3
   chapitres complets par défaut, jamais plus de 4 non poussés** (T-10), commit local par chapitre ;
-  illustration systématique des notions spatiales.
+  illustration systématique des notions spatiales. **Chaque cours neuf s'écrit au patron de notion**
+  (é35, `content-engine/references/course-explanation.md` : ancrer → nommer → voir → exemple résolu
+  → erreur typique → règle → `::: verifie`) — la Content CI refuse un chapitre neuf du programme
+  qui ne l'est pas (`--strict-lessons`). **Chaque question évite les indices de forme**
+  (`quality-bar.md` § « No form clue ») — la CI ne voit que la longueur, le reste est à toi et à
+  l'auditeur.
 - **A5.4** : `sujets` doit désigner des ids du manifeste du niveau — `programme:check` refuse le
   reste. Aucun sujet correspondant (matière hors programme codifié) ⇒ laisser `[]` et l'écrire en
   note, jamais inventer un id pour faire disparaître un constat.
@@ -214,7 +219,8 @@ Points de vigilance, tous hérités de la méthode :
   l'autre : c'est le défaut n°1 des tranches livrées (méthode, B2 « le doublon de gabarit »).
   Avant chaque commit : `npm run content:tranche -- --changed` — les trois mesures muettes **et**
   les candidats gabarit, croisés avec les chapitres publiés ; ses groupes vont au mandat de
-  l'auditeur.
+  l'auditeur. L'auditeur d'une tranche est un sous-agent en contexte vierge par chapitre ; pour
+  une correction de contenu publié, son mandat est `content-engine/references/audit-correction.md`.
 
 ## 4. Gates, PR, garde jusqu'au merge
 
