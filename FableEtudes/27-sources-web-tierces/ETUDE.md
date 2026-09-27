@@ -252,6 +252,8 @@ Soit 36 documents au plus. Le coût de lecture est mesuré document par document
      connaître la source (méthode, R-2).
    - (c) Relecture à l'aveugle : `content-audit` re-résout chaque clé.
 
+Les consignes exactes du lecteur, de l'auteur et du contrôle local sont en **annexe D**.
+
 **Les mesures qui décident de la généralisation.** Coût de lecture par document ; nombre
 d'archétypes manquants trouvés ; taux de rejet à l'audit des missions du pilote comparé au reste
 de la matière ; zéro recouvrement au contrôle local. **Critère de sortie** : au moins un vrai trou
@@ -507,3 +509,41 @@ re-résolus par `content-audit`, un corrigé tiers n'est pas une preuve), **ni l
 d'âge** (un devoir de prof n'est pas calibré pour un élève seul devant un écran), **ni les
 misconceptions** (`distractor_tags` viennent de notre taxonomie). Le gisement est **le plafond
 d'exigence réel** — précieux, et strictement borné à ça.
+
+## Annexe D — Les consignes du pilote (lot 3), pour qu'il se rejoue à l'identique
+
+Écrites avant la première lecture : une session qui reprend le pilote, depuis le cloud ou le
+poste, les applique telles quelles et consigne au journal ce qu'elle a dû y changer.
+
+**D.1 — Le lecteur** (sous-agent). Il reçoit la liste de l'échantillon (URL de la **page**,
+créneau) et le chapitrage du manuel (`programme/9eme-base/maths.md` §4). Pour chaque document :
+
+- il télécharge le fichier dans le scratchpad, **jamais** sous un dépôt, et en calcule le
+  SHA-256 ;
+- il en transcrit le texte (calque texte, sinon rendu PNG lu en vision) dans
+  `<scratchpad>/snapshots/<site>/<document>.txt`. Cette transcription ne sert qu'au contrôle
+  local (D.3) ;
+- il rend **une ligne par exercice**, au format fixe : document · créneau (DC1…DS3, concours,
+  série) · nᵒ d'exercice · barème · chapitre(s) du manuel · archétype · nombre d'étapes · piège
+  visé · étage estimé (d1-d4, l'échelle du portail).
+
+L'archétype se dit **dans nos mots**, en français, en douze mots au plus : « démontrer qu'une
+expression à puissances est divisible par 12 », jamais l'énoncé. Sa réponse ne contient aucun
+nombre de l'énoncé, aucun contexte (personnage, objet, lieu) et aucun fragment de la source.
+
+**D.2 — L'auteur** (`prof-math-9eme`, en sous-agent). Il reçoit la carte du couple, la liste des
+trous (étape 3) et les fichiers existants des chapitres visés. Il ne reçoit **jamais** un
+snapshot, ni une ligne du lecteur qui nomme un document. Il écrit des missions neuves, surtout
+d3 et d4, aux contextes et nombres inventés, et complète les `sources[]` des chapitres touchés
+d'une ligne « calibré sur des devoirs publics (étude 27, T2′) » qui renvoie aux fiches.
+
+**D.3 — Le contrôle local** (preuve 5b). Un script de session, hors dépôt, importe
+`scripts/content/verbatim-checks.ts` du moteur :
+
+- `buildVerbatimIndex` sur les snapshots, puis `findVerbatimHits` sur chaque question neuve
+  **et sur la carte** : zéro plage attendue ;
+- les données : pour chaque exercice source, l'ensemble de ses nombres non triviaux (trois
+  chiffres ou plus, ou un décimal). Une question qui en partage trois avec un même exercice se
+  réécrit. Les seuils se calibrent sur le pilote, comme ceux de Q-4.
+
+Seuls des comptes vont au journal, jamais un fragment de la source.
