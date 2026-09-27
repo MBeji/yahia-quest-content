@@ -1,6 +1,6 @@
 # Étude 27 — Enrichissement par sources web tierces (veille, lien sortant curé, génération inspirée)
 
-> **Statut** : brouillon
+> **Statut** : en exécution — lot 3 relancé le 2026-09-27 par le propriétaire, re-ciblé sur les maths 9ᵉ (Q-5 arbitrée) ; la lecture des sources attend l'ouverture réseau de l'environnement cloud (RISK-7, constaté à nouveau)
 > **Priorité** : 27 · **Valeur** : 🌐 le gisement web tunisien (devoirs de contrôle/synthèse, séries, corrigés alignés sur le programme réel) devient exploitable **sans copier une ligne** — et la ligne rouge du plagiat cesse d'être une promesse pour devenir un **gate déterministe** · **Complexité** : moyenne (doctrine + un petit registre ; **zéro moteur pédagogique nouveau**)
 > **Architecte** : session Claude Code / 2026-08-13 · **Exécuteur cible** : Sonnet (lots 2 et 4) + opéré (lots 1, 3, 5)
 > **Dépend de** : é23 (le patron du lien externe curé — lots 1-4 livrés : allowlist par source, registre versionné, aucune URL libre côté app) · é13 ScribeKit (livrée) · la méthode (§ Profils de source) · **ne dégèle PAS é12** (studio d'ingestion, gelée le 2026-07-20) · **Bloque** : rien
@@ -184,14 +184,15 @@ recherche dans les sites · ressource externe sur un écran de correction (é23 
 | --- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ | --------------- |
 | 1   | **Doctrine** : profil `source-web` (D-2) + les 4 tiers (R-1/R-2) dans la méthode + gabarit de fiche      | amendement `METHODE-GENERATION-CONTENU.md` ; annexe B promue en gabarit               | relecture humaine ; `programme:check` vert                               | —               |
 | 2   | **Gate anti-verbatim** (D-7)                                                                            | `scripts/content/verbatim-checks.ts` + branchement `content:qa` (dépôt **moteur**)    | Vitest : cas positifs/négatifs, **0 faux positif sur le corpus existant** | 1               |
-| 3   | **Pilote T0+T2′** : qualification de la source d'appel + 1 chapitre 2ᵉ sc. généré, coût mesuré           | `sources-externes/web-<slug>/fiche.md` + 1 chapitre `content/`                        | gates contenu + `content-audit` sur la sortie                            | 1, 2            |
+| 3   | **Pilote T0+T2′** : **maths 9ᵉ** (re-ciblé le 2026-09-27) — qualification des sites, carte de veille, missions neuves sur les trous, coût mesuré | `sources-externes/web-<slug>/fiche.md` + missions `content/math/` | gates contenu + contrôle local contre les snapshots + `content-audit` | 1, 2            |
 | 4   | **T1 moteur** : registre + `chapter.resources[]` + compilation + UI « Pour aller plus loin »            | `content/ressources.json`, `schema.ts`, `sql-builder.ts`, migration, composant        | Vitest schéma/loader/UI ; pgTAP si colonne ; `content:qa` croisé lang     | 3 + **GO** Q-2  |
 | 5   | **T1 campagne** : allowlist validée (Q-1) + curation sur les chapitres pilotes + sonde de santé (R-12)   | entrées de registre + `scripts/content/check-resources.mjs`                            | sonde verte ; `content:check`                                            | 4               |
 | 6   | **T2 (GELÉ)** : partenariat + transcription autorisée                                                   | —                                                                                    | —                                                                        | Q-3 + écrit signé |
 
 - [x] Lot 1 — doctrine (profil + tiers + gabarit) — méthode + `content-ingest` R-2, 2026-08-13
 - [x] Lot 2 — gate anti-verbatim — moteur [arena#722](https://github.com/MBeji/yahia-quest-arena/pull/722), mergé le 2026-08-13
-- [ ] Lot 3 — pilote T0+T2′ mesuré
+- [ ] Lot 3 — pilote T0+T2′ mesuré, **maths 9ᵉ** — inventaire fait le 2026-09-27 (annexe A.2),
+      lecture bloquée par l'egress de l'environnement cloud (RISK-7)
 - [ ] Lot 4 — T1 moteur (GO humain)
 - [ ] Lot 5 — T1 campagne
 - [ ] Lot 6 — gelé
@@ -201,6 +202,68 @@ lot 4 ne démarre pas sans l'arbitrage Q-2 — envoyer un élève hors de l'app 
 produit, pas technique. Le lot 6 ne démarre **jamais** sans autorisation écrite en main ; en cas
 de doute sur les droits, STOP (R-2 de `content-ingest`). Les lots 1, 3, 5 sont opérés/architecte
 (doctrine et contenu) ; l'exécuteur Sonnet ne prend que 2 et 4.
+
+### Lot 3 — le pilote maths 9ᵉ (re-ciblé le 2026-09-27)
+
+**Pourquoi les maths 9ᵉ, et pas la physique 2ᵉ sc. prévue à l'origine.** Demande du
+propriétaire : tester sur une classe de concours avant de généraliser aux autres classes et
+matières. C'est aussi le meilleur banc d'essai : `math` est la matière la plus mûre du corpus
+(patron armé, distracteurs tagués, 932 questions d'exercice sur 20 chapitres, mesuré le
+2026-09-27). Le pilote y mesure donc l'apport **net** du gisement web sur un contenu déjà
+travaillé. S'il ne trouve rien à ajouter, c'est un résultat, et il vaut pour les matières mûres.
+
+**L'échantillon est fixé avant la lecture**, pour ne pas lire seulement ce qui arrange :
+
+- **le concours national** : les sujets officiels des cinq dernières sessions (portail du
+  Ministère, `echoexam.edunet.tn`). Leur statut de droits est la question Q-6 ; jusqu'à son
+  arbitrage, ils sont traités en T2′ comme le reste ;
+- **les devoirs** : pour chacun des neuf créneaux de l'année (DC1, DC2, DS1 · DC3, DC4, DS2 ·
+  DC5, DC6, DS3), un devoir de collège pilote et un devoir ordinaire, tous deux **du programme en
+  vigueur**. Les sites rangent l'ancien programme à part (annexe A.2) : c'est la date du devoir
+  et son contenu qui tranchent, pas son rayon ;
+- **les séries** : une série par chapitre du manuel quand il en existe une (13 au plus).
+
+Soit 36 documents au plus. Le coût de lecture est mesuré document par document.
+
+**La chaîne en salle blanche : celui qui lit n'écrit pas, celui qui écrit n'a pas lu.**
+
+1. **Lecteur.** Un sous-agent, le seul à ouvrir les snapshots, rend **une ligne par exercice** :
+   chapitre(s) du manuel, archétype (verbe de consigne et objet travaillé), nombre d'étapes,
+   barème, piège visé. Il ne rend **aucun nombre, aucun contexte, aucune phrase de la source**.
+   Les snapshots restent hors git (R-10) : `YahiaAcademy/sources-web/<site>/` depuis le poste,
+   le scratchpad de la session en cloud. Ce dernier est perdu avec le conteneur, donc la fiche
+   porte l'empreinte SHA-256 de chaque document lu.
+2. **Carte.** L'architecte agrège ces lignes, chapitre par chapitre : dans combien de devoirs le
+   chapitre tombe et à quel créneau, ses archétypes et son plafond, les combinaisons entre
+   chapitres, le vocabulaire des consignes. Elle croise plusieurs sites, donc elle vit dans une
+   fiche du couple, à côté des fiches de site. C'est **elle**, et elle seule, que verra
+   l'auteur. Le contrôle local (5b) lui est appliqué aussi : aucune phrase d'une source ne doit
+   entrer dans git par la carte.
+3. **Écart.** La carte est croisée avec les questions existantes. Il en sort la liste des
+   archétypes qui tombent en devoir et que le contenu n'exerce pas, ou pas au bon étage.
+4. **Auteur.** `prof-math-9eme`, en sous-agent qui n'a **jamais** vu un snapshot, écrit les
+   missions neuves sur ces trous. Contextes et nombres sont inventés.
+5. **Preuves.**
+   - (a) `content:gates` verts : la garde de CI indexe les fiches.
+   - (b) **Contrôle local contre les snapshots.** Les fonctions de la garde (`buildVerbatimIndex`,
+     `findVerbatimHits`) sont rejouées sur les transcriptions hors git, plus une comparaison des
+     nombres : trois données non triviales communes avec un même exercice source ⇒ réécrire.
+     Ce contrôle voit la « réécriture rapprochée » que la garde de CI ne peut pas voir, faute de
+     connaître la source (méthode, R-2).
+   - (c) Relecture à l'aveugle : `content-audit` re-résout chaque clé.
+
+**Les mesures qui décident de la généralisation.** Coût de lecture par document ; nombre
+d'archétypes manquants trouvés ; taux de rejet à l'audit des missions du pilote comparé au reste
+de la matière ; zéro recouvrement au contrôle local. **Critère de sortie** : au moins un vrai trou
+comblé par chapitre touché, zéro recouvrement, zéro clé fausse à l'audit. La chaîne entre alors
+dans la méthode et dans `/campagne` pour les autres classes et matières, et les fiches de site
+déjà qualifiées servent telles quelles aux couples suivants : `devoir.tn` ou
+`tunisiecollege.net` couvrent toutes les classes du collège.
+
+**Ce qui bloque, constaté le 2026-09-27.** Voir le journal : l'environnement cloud refuse tous
+ces domaines, `curl` comme WebFetch. La levée est un réglage de l'environnement (mur « réglages
+hors dépôt » de `zero-intervention.md`) ; l'alternative est le poste Windows, ou des PDF déposés
+dans le Google Drive du projet, que la session sait lire.
 
 ---
 
@@ -263,6 +326,17 @@ de doute sur les droits, STOP (R-2 de `content-ingest`). Les lots 1, 3, 5 sont o
   n'ouvre aucun canal d'ingestion (lots 1-3 = doctrine + un script + un chapitre), donc
   l'architecte recommande de **dégeler les lots 1-3 seulement** et de laisser 4-6 derrière Q-2/Q-3.
   Sa place dans la ROADMAP découle de cet arbitrage — elle n'y a **pas** été inscrite d'office.
+  ✅ **Arbitrée le 2026-09-27 par le propriétaire**, dans le sens de la recommandation : le
+  pilote (lot 3) est lancé, **sur les maths 9ᵉ**, « avant de généraliser sur les autres classes
+  et matières ». Les lots 4-6 restent derrière Q-2/Q-3.
+- **Q-6 — Les sujets officiels du concours national** (publiés par le Ministère sur
+  `echoexam.edunet.tn`) : **corpus officiel**, au même régime que les manuels CNP (la source
+  prévue par R-2 : reprise possible, données comprises, citée dans `sources[]`), ou **source
+  tierce** au régime T2′ ? Le chapitre `14-annales-sujets-types` cite déjà ces épreuves depuis
+  avant l'étude. Recommandation de l'architecte : **corpus officiel pour le sujet lui-même**,
+  lu sur le portail du Ministère et non sur un site qui le ré-héberge ; les **corrigés** des
+  sites tiers restent T0. Tant que Q-6 n'est pas tranchée, le pilote les traite en T2′, le
+  défaut sûr.
 
 ---
 
@@ -320,9 +394,43 @@ de doute sur les droits, STOP (R-2 de `content-ingest`). Les lots 1, 3, 5 sont o
   Restent ouverts : Q-1 (allowlist), Q-2 (GO du T1, lot 4), Q-3 (courrier aux sites), Q-4 (seuil,
   mesurable seulement quand une fiche existera). Le lot 3 (pilote T0+T2′) est débloqué.
 
+- **2026-09-27 — Le propriétaire relance le lot 3, sur les maths 9ᵉ.** Sa demande : chercher les
+  séries et les anciens devoirs, de collèges pilotes et autres, pour en faire des sources
+  d'exercices ; tester sur les maths 9ᵉ avant de généraliser aux autres classes et matières.
+  C'est l'arbitrage de Q-5, et le pilote change de couple (§4, « Lot 3 »). Quatre constats :
+
+  - **L'inventaire est fait, pas la qualification.** La recherche web fonctionne depuis la
+    session et a donné une vingtaine de sites, leurs rubriques et les URL de leurs pages de
+    liste (annexe A.2). Ce que l'on sait est ce qu'un moteur de recherche en dit : des titres,
+    des années, des rubriques. C'est du T0 **de seconde main**, qui ne remplace aucune lecture.
+  - **RISK-7 tient toujours, et il est plus large qu'en août.** `curl` depuis le conteneur
+    rend 403 au CONNECT sur **tous** les domaines candidats, officiels compris
+    (`echoexam.edunet.tn`, `education.gov.tn`), et même sur `drive.google.com`. **WebFetch
+    aussi** (`EGRESS_BLOCKED`) : la politique de l'environnement s'applique à l'outil. Aucun
+    contournement n'a été tenté (R-13). La levée est un réglage de l'environnement cloud
+    (accès réseau élargi, ou ces domaines ajoutés à la liste autorisée) : c'est le mur
+    « réglages hors dépôt » de `zero-intervention.md`. Le détail est dans `STATUS.md` §6.2.
+  - **Le Google Drive du projet a été lu, faute de mieux.** Le dossier « academy 9éme »
+    partagé par Yahia ne contient qu'un résumé de cours de 2011 (Tunisiecollege.net, calque
+    texte cassé), pas un devoir. Rien d'autre sur le Drive ne ressemble à un devoir ou à une
+    série. Les devoirs déjà exploités (Berges du Lac 2016, séries de Sfax) sont des photos
+    fournies par le propriétaire (privé#557 et les PR qui l'ont précédée).
+  - **Le protocole est écrit avant la lecture, pour que le pilote ne se juge pas lui-même.**
+    Échantillon fixé à l'avance, chaîne en salle blanche où celui qui lit n'écrit pas, contrôle
+    local contre les snapshots, critère de sortie chiffré (§4, « Lot 3 »). Une lacune de la
+    garde de CI est nommée au passage : elle compare le contenu aux **fiches**, qui sont déjà
+    des reformulations, jamais à la source elle-même (R-10 l'interdit de dépôt). Elle ne peut
+    donc attraper qu'une copie de la fiche. Le contrôle local contre les snapshots comble ce
+    trou sans faire entrer un octet tiers dans git. Il reste un geste de session tant que le
+    pilote n'a pas montré qu'il en vaut un script du moteur.
+
+  Nouvelle question : **Q-6**, le statut des sujets officiels du concours (§7).
+
 ---
 
 ## Annexe A — Sites de l'écosystème à qualifier (⚠️ **PAS une allowlist**)
+
+### A.1 — La liste d'origine (2026-08-13, physique-chimie)
 
 Aucun de ces sites n'a été inspecté (RISK-7) : ce tableau liste ce qu'il faut aller vérifier,
 site par site, avant tout usage. Le tier proposé est une **hypothèse** de départ.
@@ -338,6 +446,41 @@ site par site, avant tout usage. Le tier proposé est une **hypothèse** de dép
 tiers** — cas très fréquent dans cet écosystème — alors **il n'a pas les droits à céder**, et
 aucune autorisation qu'il donnerait ne vaudrait pour T2. Le tier plafonne alors à T2′, quelle que
 soit la bonne volonté de l'exploitant.
+
+### A.2 — Inventaire maths 9ᵉ, relevé le 2026-09-27 (pilote du lot 3)
+
+**Relevé par moteur de recherche, rien n'a été ouvert** : l'egress de la session refuse tous ces
+domaines (journal du 2026-09-27). Les colonnes disent ce que les pages de résultats annoncent :
+titres, rubriques, années. Ce sont des faits à confirmer à la qualification, pas des faits établis.
+Le tier de chaque site reste l'hypothèse T0 → T2′ de A.1, sauf la source officielle (Q-6).
+
+**Source officielle — le concours national.**
+
+| site | ce qui est annoncé | pages de liste repérées |
+| ---- | ------------------ | ----------------------- |
+| `echoexam.edunet.tn` (portail « Échos des examens nationaux », Ministère de l'Éducation) | les sujets des concours nationaux, dont la 9ᵉ | [مواضيع المناظرات الوطنية — 9ᵉ](http://www.echoexam.edunet.tn/index-sujet-9eme.php) |
+| `edunet.tn` (réseau du Ministère) | « Les examens nationaux », « Sujets d'examens », sessions 2024 et 2025 | [examens nationaux](http://www.edunet.tn/index.php?id=1617) · [sujets d'examens](http://www.edunet.tn/index.php?id=1212) · [session 2024](http://www.edunet.tn/index.php?id=1644) |
+
+**Devoirs et séries** — les trois sites les mieux rangés, par où la qualification commence.
+
+| site | ce qui est annoncé pour les maths 9ᵉ | pages de liste repérées |
+| ---- | ------------------------------------ | ----------------------- |
+| `devoir.tn` | DC nᵒ 1 à 6, DS nᵒ 1 à 3, devoirs à la maison, de révision, une rubrique **collèges pilotes** (Kébili, Sousse, Gabès, Sfax, Béja…), une rubrique **ancien programme** ; séries rangées par enseignant (six noms, dont 2017-2018) ; années 2008 à 2022 | [maths 9ᵉ](https://www.devoir.tn/base/%D8%A7%D9%84%D8%B3%D9%80%D9%80%D9%809%D9%80%D9%80%D9%86%D8%A9/Math%C3%A9matiques.html) · [devoirs](https://www.devoir.tn/base/%D8%A7%D9%84%D8%B3%D9%80%D9%80%D9%809%D9%80%D9%80%D9%86%D8%A9/Math%C3%A9matiques/Devoirs.html) · [collèges pilotes](https://www.devoir.tn/base/%D8%A7%D9%84%D8%B3%D9%80%D9%80%D9%809%D9%80%D9%80%D9%86%D8%A9/Math%C3%A9matiques/Devoirs/devoirs-colleges-pilotes.html) · [DS nᵒ 1](https://www.devoir.tn/base/%D8%A7%D9%84%D8%B3%D9%80%D9%80%D9%809%D9%80%D9%80%D9%86%D8%A9/Math%C3%A9matiques/Devoirs/devoirs-de-synth%C3%A8se-n%C2%B01.html) · [DS nᵒ 2](https://www.devoir.tn/base/%D8%A7%D9%84%D8%B3%D9%80%D9%80%D9%809%D9%80%D9%80%D9%86%D8%A9/Math%C3%A9matiques/Devoirs/devoirs-de-synth%C3%A8se-n%C2%B02.html) · [DS nᵒ 3](https://www.devoir.tn/base/%D8%A7%D9%84%D8%B3%D9%80%D9%80%D9%809%D9%80%D9%80%D9%86%D8%A9/Math%C3%A9matiques/Devoirs/devoirs-de-synth%C3%A8se-n%C2%B03.html) · [DC nᵒ 4](https://www.devoir.tn/base/%D8%A7%D9%84%D8%B3%D9%80%D9%80%D9%809%D9%80%D9%80%D9%86%D8%A9/Math%C3%A9matiques/Devoirs/devoirs-de-contr%C3%B4le-n%C2%B04.html) · [DC nᵒ 5](https://www.devoir.tn/base/%D8%A7%D9%84%D8%B3%D9%80%D9%80%D9%809%D9%80%D9%80%D9%86%D8%A9/Math%C3%A9matiques/Devoirs/devoirs-de-contr%C3%B4le-n%C2%B05.html) · [révision](https://www.devoir.tn/base/%D8%A7%D9%84%D8%B3%D9%80%D9%80%D9%809%D9%80%D9%80%D9%86%D8%A9/Math%C3%A9matiques/Devoirs/devoirs-de-revision.html) · [séries](https://www.devoir.tn/base/%D8%A7%D9%84%D8%B3%D9%80%D9%80%D9%809%D9%80%D9%80%D9%86%D8%A9/Math%C3%A9matiques/S%C3%A9ries.html) |
+| `tunisiecollege.net` | devoirs rangés **par trimestre** (DS nᵒ 2 de 2015-16, 2018-19, 2021-22 ; DC nᵒ 5 de collèges pilotes ; DS de collèges pilotes 2011-2014), séries 9ᵉ dont révisions et olympiades, une rubrique concours 9ᵉ avec sujets et corrigés. Déjà cité par les chapitres 01 à 14 de `math`, depuis avant l'étude | [1ᵉʳ trimestre](https://www.tunisiecollege.net/maths/devoirs-math/9%C3%A8me-ann%C3%A9e-1er-trimestre/) · [2ᵉ trimestre](https://www.tunisiecollege.net/maths/devoirs-math/9%C3%A8me-ann%C3%A9e-2%C3%A8me-trimestre/) · [3ᵉ trimestre](https://www.tunisiecollege.net/maths/devoirs-math/9%C3%A8me-ann%C3%A9e-3%C3%A8me-trimestre/) · [séries](https://www.tunisiecollege.net/maths/s%C3%A9ries-d-exercices-math/s%C3%A9ries-math-9%C3%A8me/) · [concours 9ᵉ](https://www.tunisiecollege.net/concours-9%C3%A8me/) |
+| `tunitests.tn` | devoirs (dont DC3 du collège pilote du Lac, DS2 du collège pilote de Sfax avec corrigé, DS1 du collège pilote de Mégrine avec corrigé), séries numérotées, sujets de concours | [devoirs](https://tunitests.tn/base/9%C3%A8me-ann%C3%A9e-de-base/Maths/Devoirs/115/10) · [séries](https://tunitests.tn/base/9%C3%A8me-ann%C3%A9e-de-base/Maths/s%C3%A9ries/116/2) · [concours](https://tunitests.tn/base/9%C3%A8me-ann%C3%A9e-de-base/concours/math/129/1) |
+
+**Les autres**, à ne qualifier que si les trois premiers ne suffisent pas à remplir l'échantillon :
+
+- **annales du concours ré-hébergées** : `madrassatii.com` (« toutes les sessions depuis 2001, avec
+  correction »), `ecoles.com.tn` (depuis 2007), `polture.com` (2011-2019), `examens.tn`,
+  `kifech.org` et `droussy.org` (2023-2025), `orientini.com` (annonce le corrigé **officiel** de
+  2024). Préférer le portail du Ministère pour le sujet lui-même : ces sites en sont des copies ;
+- **devoirs et séries** : `englezz.com`, `9raya.tn`, `najahni.tn`, `love-mathematics.com`
+  (devoirs du 1ᵉʳ trimestre, 2024), `masartamayoz.com` (DC « modèles », dont des modèles
+  pilotes), `elkhadra.com` (séries par chapitre), `college.mourajaa.com`, et des blogs
+  (`espacemathematique.blogspot.com`, `encysco.blogspot.com`, `tunisie-devoirs.blogspot.com`) ;
+- **écartés d'office** : `scribd.com` (copies téléversées par des particuliers, sans lien
+  vérifiable avec l'auteur, et derrière un compte) et les vidéos Facebook de corrigés.
 
 ## Annexe B — Gabarit d'en-tête de fiche `source-web` (8 champs, tous obligatoires)
 
