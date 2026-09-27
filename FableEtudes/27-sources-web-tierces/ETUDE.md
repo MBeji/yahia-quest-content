@@ -239,8 +239,10 @@ Soit 36 documents au plus. Le coût de lecture est mesuré document par document
    fiche du couple, à côté des fiches de site. C'est **elle**, et elle seule, que verra
    l'auteur. Le contrôle local (5b) lui est appliqué aussi : aucune phrase d'une source ne doit
    entrer dans git par la carte.
-3. **Écart.** La carte est croisée avec les questions existantes. Il en sort la liste des
-   archétypes qui tombent en devoir et que le contenu n'exerce pas, ou pas au bon étage.
+3. **Écart.** La carte est croisée avec les questions existantes, en deux temps : par
+   compétence d'abord, mécaniquement (fréquence en devoir face au nombre de questions par
+   étage), puis par archétype. Il en sort la liste des archétypes qui tombent en devoir et que
+   le contenu n'exerce pas, ou pas au bon étage.
 4. **Auteur.** `prof-math-9eme`, en sous-agent qui n'a **jamais** vu un snapshot, écrit les
    missions neuves sur ces trous. Contextes et nombres sont inventés.
 5. **Preuves.**
@@ -524,8 +526,11 @@ créneau) et le chapitrage du manuel (`programme/9eme-base/maths.md` §4). Pour 
   `<scratchpad>/snapshots/<site>/<document>.txt`. Cette transcription ne sert qu'au contrôle
   local (D.3) ;
 - il rend **une ligne par exercice**, au format fixe : document · créneau (DC1…DS3, concours,
-  série) · nᵒ d'exercice · barème · chapitre(s) du manuel · archétype · nombre d'étapes · piège
-  visé · étage estimé (d1-d4, l'échelle du portail).
+  série) · nᵒ d'exercice · barème · chapitre(s) du manuel · compétence(s) · archétype · nombre
+  d'étapes · piège visé · étage estimé (d1-d4, l'échelle du portail). Les compétences se
+  prennent dans le registre `content/competences/math.json`, vocabulaire **fermé** que les
+  questions du corpus portent déjà (54 identifiants en maths 9ᵉ) : c'est ce qui rend l'écart
+  calculable au lieu d'être jugé.
 
 L'archétype se dit **dans nos mots**, en français, en douze mots au plus : « démontrer qu'une
 expression à puissances est divisible par 12 », jamais l'énoncé. Sa réponse ne contient aucun
