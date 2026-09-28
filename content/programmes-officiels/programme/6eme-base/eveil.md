@@ -260,8 +260,8 @@ Le guide **tabule bien** le déroulé annuel, en **5 فترات** calées sur le
 | 7     | `04-nutrition`                            | 20 · 21 · 22 · 23                                                    | 84–95               |
 | 8     | `06-reproduction-florale`                 | 24 الزّهرة · 25 التّأبير والإخصاب · 26 دورة الحياة                   | 97–107              |
 | 9     | `05-milieu-chaines-alimentaires`          | 27 السّلسلة الغذائيّة · 28 التلوّث · 29 أمراض تلوّث المياه           | 108–117             |
-| 10    | `11-effets-courant-electrique` **(neuf)** | 30 الحراريّ · 31 الكيميائيّ · 35 المغناطيسيّ                         | 119–125, 135–139    |
-| 11    | `07-aimants-boussole`                     | 32 المغنط · 33 قطبا المغنط · 34 البوصلة                              | 126–134             |
+| 10    | `07-aimants-boussole`                     | 32 المغنط · 33 قطبا المغنط · 34 البوصلة                              | 126–134             |
+| 11    | `11-effets-courant-electrique` **(neuf)** | 30 الحراريّ · 31 الكيميائيّ · 35 المغناطيسيّ                         | 119–125, 135–139    |
 | 12    | `08-poids`                                | 36 وزن الأجسام / السّقوط الحرّ                                       | 140–145             |
 
 **36 / 36 دروس servis**, chacun par un seul chapitre ; `displayOrder` suit désormais l'ordre du
