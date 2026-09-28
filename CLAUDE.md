@@ -21,6 +21,9 @@ avant d'être crue. Texte canonique :
   examens nationaux** — concours de 6ᵉ et de 9ᵉ, baccalauréat, toutes sessions (décision du
   2026-09-28, étude 27 Q-6) : reprise possible, citée dans `sources[]`. Corrigés de tiers,
   devoirs d'établissement et séries d'enseignants restent des sources web : rien n'en est repris.
+- **Gisement** (étude 36, fusion des études 12 et 27) : sujets d'examen repris et cités, devoirs en
+  ligne réécrits en salle blanche, couple après couple (la 9ᵉ, puis la 6ᵉ) — `content-ingest`,
+  mode gisement (`references/gisement.md`).
 - **Ne jamais committer de SQL ici, ni de migration de contenu dans le moteur** :
   `content:emit` → `sql/content/<subject>.sql`, appliqué par `apply-content.yml`.
 

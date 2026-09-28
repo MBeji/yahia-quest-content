@@ -1,19 +1,20 @@
 ---
 name: content-ingest
 description: >-
-  Ingest an arbitrary SOURCE document (teacher PDF, polycopié, paper annales, a CNP
-  manual/guide, a Word file, a scan) into the content pipeline — WITHOUT leaving the
-  gated flow — via the ScribeKit transcription engine plus agent vision OCR. Use
-  whenever the user wants to « ingérer un PDF / document source », « transcrire un
-  manuel / polycopié / annale et en faire du contenu », « importer une source
-  externe / digitaliser un cours ou des exercices depuis un scan », or to run the
-  source→content path for the CNP corpus. Orchestrates three layers: ScribeKit
-  (deterministic extraction + scaffold + validated manifest, 0 LLM / 0 API key) →
-  the AGENT reads & transcribes the scanned pages faithfully with the Claude
-  subscription (NO API key) → confront the official CNP program → hand off to the
-  generation skills. It TRANSCRIBES, it never GENERATES; output is always versioned
-  content/ files on a branch + gates + human review, never a direct DB write. Defers
-  to content-engine and content-ecole-tn.
+  Ingest a SOURCE document (teacher PDF, polycopié, annales, a CNP manual or guide,
+  a scan) into the content pipeline WITHOUT leaving the gated flow, via ScribeKit
+  plus agent vision OCR — and run the GISEMENT mode (étude 36):
+  official national exam papers and online devoirs turned into exercises, couple by
+  couple. Use whenever the user wants to « ingérer un PDF / document source »,
+  « transcrire un manuel / une annale et en faire du contenu », « exploiter les
+  concours et les devoirs en ligne », or to
+  run the source→content path for the CNP corpus. Layers: ScribeKit (deterministic
+  extraction, scaffold, validated manifest, 0 LLM / 0 API key) → the AGENT
+  transcribes scanned pages with the Claude subscription (NO API key) → confront
+  the official program → hand off to the generation skills. It TRANSCRIBES and
+  ORCHESTRATES, it never writes content itself; output is always versioned content/
+  files on a branch + gates + review, never a direct DB write. Defers to
+  content-engine and content-ecole-tn.
 ---
 
 # content-ingest — ingestion source → contenu (ScribeKit + vision agent)
@@ -127,6 +128,28 @@ récompenses, style, notation) et à `content-ecole-tn` (fidélité au programme
    par dispatch** d'`apply-content.yml`, méthode § B3 ; jamais `content:build`, aucune migration).
    **Livraison par tranches de ≤4 chapitres complets** — commit local par chapitre, une PR par tranche,
    jamais une matière entière retenue non poussée (méthode, T-10 ; interruption ⇒ sauvegarde `wip/`).
+
+## Mode gisement — examens nationaux et devoirs en ligne (étude 36)
+
+Quand la demande est d'**exploiter les sujets d'examen et les devoirs publiés en ligne** d'un
+couple classe × matière, tu déroules le pipeline de l'étude 36 (fusion des études 12 et 27), dans
+cet ordre : qualifier → fixer l'échantillon **avant** de lire → lire → carte et écart → plan →
+écrire → prouver → livrer et publier → mesurer. Deux régimes, jamais mélangés :
+
+- **sujet d'examen national** (concours de 6ᵉ, de 9ᵉ, bac) : corpus officiel (R-2). Tu le
+  transcris fidèlement sous `programmes-officiels/examens-nationaux/<classe>/<matière>/<session>.md`
+  et chaque exercice devient une mission qui le **reprend** et le **cite** ;
+- **devoir ou série d'un site** : `source-web`, tier T2′. Salle blanche : le lecteur rend une
+  ligne anonyme par exercice, l'auteur écrit une mission neuve par archétype distinct sans jamais
+  voir la source, et le contrôle local contre les snapshots (hors git) le prouve.
+
+Le déroulé, les commandes et le registre du couple : [`references/gisement.md`](references/gisement.md).
+Les consignes de rôle, à passer telles quelles aux sous-agents :
+[`gisement-lecteur.md`](references/gisement-lecteur.md),
+[`gisement-auteur-devoir.md`](references/gisement-auteur-devoir.md),
+[`gisement-auteur-examen.md`](references/gisement-auteur-examen.md),
+[`gisement-auditeur.md`](references/gisement-auditeur.md). Dans ce mode aussi, tu orchestres :
+les missions s'écrivent avec les skills `prof-*`, jamais par toi.
 
 ## STOP (escalade — ne re-designe jamais en silence)
 
