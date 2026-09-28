@@ -17,6 +17,10 @@ avant d'être crue. Texte canonique :
 - **Authoring** : méthode de référence `FableEtudes/METHODE-GENERATION-CONTENU.md`. Ouvrir la
   session ici, `add_repo MBeji/yahia-quest-arena`, éditer `content/`, laisser `content-ci`
   valider. Campagne : `/campagne` — il donne les faits, **l'humain choisit le couple**.
+- **Corpus officiel** (méthode R-2) : les manuels et guides du CNP **et les sujets officiels des
+  examens nationaux** — concours de 6ᵉ et de 9ᵉ, baccalauréat, toutes sessions (décision du
+  2026-09-28, étude 27 Q-6) : reprise possible, citée dans `sources[]`. Corrigés de tiers,
+  devoirs d'établissement et séries d'enseignants restent des sources web : rien n'en est repris.
 - **Ne jamais committer de SQL ici, ni de migration de contenu dans le moteur** :
   `content:emit` → `sql/content/<subject>.sql`, appliqué par `apply-content.yml`.
 

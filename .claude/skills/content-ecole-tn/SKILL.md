@@ -222,6 +222,12 @@ La **notation reste standard** (chiffres 0–9, etc. — règle ci-dessus) ; cet
 Hybrid, but official-source-led: the curriculum scope comes from the official program; model
 knowledge fills in worked examples and explanations; web search verifies facts and exam-style
 conventions. Exam-year grades (6ème/9ème/Bac) should reflect real exam (concours/annales) phrasing.
+**Official national exam papers are official corpus** (owner decision 2026-09-28, study 27 Q-6): the
+papers the Ministry publishes for the concours de 6ème, the concours de 9ème and the baccalauréat, every
+session, can be taken up faithfully and cited in `sources[]`, like a CNP manuel. The scope still comes
+from the programme in force: a notion an old paper tests and the programme has since dropped is
+flagged, not taught. Third-party corrigés, school devoirs and teachers' séries stay web sources
+(method, profile `source-web`: nothing is copied).
 **Taking up the pupil's own manuel** (exercises, figures, encadrés) has its own normative doctrine —
 closed taxonomy, exercise→format mapping, the three regimes, R-1→R-12 and the `manuel` traceability
 field: `content-engine/references/manuel-valorisation.md` (étude 21).

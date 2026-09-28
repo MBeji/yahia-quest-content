@@ -128,8 +128,17 @@ Règles de boucle (non négociables) :
 
 - **R-1 — Rien ne contourne le pipeline.** Sortie = TOUJOURS des fichiers versionnés sur une
   branche + gates + revue humaine. Aucune écriture DB directe, aucun skip d'audit.
-- **R-2 — Provenance & droits.** Le corpus officiel (CNP / manuels scolaires) est la source
-  prévue ; tout autre document porte auteur / origine / autorisation, sinon **refus**. Doute ⇒
+- **R-2 — Provenance & droits.** Le corpus officiel est la source prévue : les manuels et
+  guides du CNP, **et les sujets officiels des examens nationaux** — concours de 6ᵉ, concours
+  de 9ᵉ, baccalauréat, **toutes sessions** (décision du propriétaire du 2026-09-28, étude 27
+  Q-6). Un ancien sujet d'examen fait partie de la source officielle du programme, au régime
+  d'un manuel : reprise possible, données comprises, citée dans `sources[]`. Est officiel ce
+  que le Ministère publie : le sujet, de préférence lu sur son portail (`echoexam.edunet.tn`,
+  `edunet.tn`) ; d'un site qui le ré-héberge, on ne prend que le sujet. Le corrigé d'un tiers,
+  le devoir d'un établissement (même de collège pilote) et la série d'un enseignant restent
+  des sources tierces (§ Profils → `source-web`). R-3 tient : un sujet ancien qui porte une
+  notion sortie du programme en vigueur la signale, il ne la fait pas enseigner.
+  Tout autre document porte auteur / origine / autorisation, sinon **refus**. Doute ⇒
   STOP. Pas de verbatim d'œuvres périphériques sous droits (chansons, textes littéraires
   longs) : résumer + citer la référence. **Une source du web se qualifie en plus par son
   _tier_** (§ Profils → `source-web`) : ce qu'on prend à un lien décide de tout, et un seul des
@@ -271,7 +280,8 @@ Notes par profil :
   autorisation écrite (ou corpus officiel) — sinon refus (R-2). La fiche porte un en-tête de
   provenance (auteur, origine, autorisation, date) ; les `sources[]` du chapitre généré
   citeront le document. R-3 : si une transcription CNP du couple existe, confronter — le
-  programme gagne.
+  programme gagne. Un recueil d'annales mêle deux régimes : ses sujets d'examens nationaux
+  sont du corpus officiel (R-2), ses corrigés et commentaires sont ceux de son auteur.
 - **source-web.** Voir la section dédiée ci-dessous : le tier se déclare **avant** le premier
   token, et il est opposable pour toute session ultérieure.
 - **sans-source.** Vérifier que la fiche est bien à **profondeur de génération** (R-5 — une
@@ -304,7 +314,9 @@ Cinq règles qui s'ajoutent au socle R :
 - **Un site tiers n'est JAMAIS une référence de programme.** Extension de R-3 : le
   manuel/guide officiel fait foi ; un devoir reflète ce qu'un établissement a choisi d'évaluer,
   pas le périmètre officiel. « Aucune source officielle trouvable ⇒ STOP » reste entier — une
-  source web ne comble pas ce STOP.
+  source web ne comble pas ce STOP. Le sujet officiel d'un examen national n'est **pas** une
+  source web, même lu sur un site qui le ré-héberge : c'est du corpus officiel (R-2, étude 27
+  Q-6). Ce que le site y ajoute (corrigé, commentaire, mise en page) en reste une.
 - **Le défaut est la surveillance.** Fiche sans en-tête, autorisation `aucune` ou `demandée` :
   surveillée. Seule une autorisation `accordée` la lève.
 - **Le snapshot ne rentre pas dans le dépôt.** Le PDF/HTML consulté vit dans le wrapper hors git
