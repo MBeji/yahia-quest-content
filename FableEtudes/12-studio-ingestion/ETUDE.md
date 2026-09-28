@@ -1,11 +1,12 @@
 # Étude 12 — Studio d'ingestion (PDF/source → contenu, dans le pipeline à gates)
 
-> **Statut** : **dégelée pour son volet ingestion et fusionnée dans l'[étude 36](../36-gisement-examens-devoirs/ETUDE.md)**
-> le 2026-09-28, sur arbitrage écrit du propriétaire (« il faut utiliser l'étude 12 et l'optimiser si
-> nécessaire ; il faut fusionner étude 12 et 27 et faire un pipeline complet »). Les lots 1-2 (la
-> fiche, le skill, le pilote chiffré) vivent désormais dans le pipeline de l'étude 36 ; le **lot 3
-> (canal enseignant in-app) reste gelé** derrière Q-2. Historique : gelée le 2026-07-20 par la
-> doctrine verticale (é26 Q-3, acté ici le 2026-09-12) ; le fond de l'étude n'est pas touché.
+> **Statut** : **gelée** pour ce qui reste ici, le canal enseignant in-app (lot 3, derrière Q-2) —
+> son **volet ingestion est dégelé et fusionné dans l'[étude 36](../36-gisement-examens-devoirs/ETUDE.md)**
+> depuis le 2026-09-28, sur arbitrage écrit du propriétaire (« il faut utiliser l'étude 12 et
+> l'optimiser si nécessaire ; il faut fusionner étude 12 et 27 et faire un pipeline complet ») : les
+> lots 1-2 (la fiche, le skill, le pilote chiffré) vivent dans le pipeline de l'étude 36.
+> Historique : gelée le 2026-07-20 par la doctrine verticale (é26 Q-3, acté ici le 2026-09-12) ; le
+> fond de l'étude n'est pas touché.
 > **Priorité** : 12 · **Valeur** : faire chuter le coût de création quand la source n'est pas déjà couverte (PDF d'un enseignant, polycopié, annales papier) — sans sacrifier ce qui fait la valeur du contenu : fidélité, corrigés vérifiés, revue humaine · **Complexité** : moyenne (surtout process/outillage — le gros existe déjà)
 > **Architecte** : Fable (claude-fable-5), 2026-07-04 · **Exécuteur cible** : Sonnet (outillage) + skills contenu (génération)
 > **Dépend de** : rien de bloquant ; synergie avec la couche de persistance existante (transcriptions CNP) · **Bloque** : rien
