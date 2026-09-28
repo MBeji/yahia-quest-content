@@ -1,6 +1,6 @@
 # Étude 27 — Enrichissement par sources web tierces (veille, lien sortant curé, génération inspirée)
 
-> **Statut** : en exécution — lot 3 relancé le 2026-09-27 par le propriétaire, re-ciblé sur les maths 9ᵉ (Q-5 arbitrée) ; la lecture des sources attend l'ouverture réseau de l'environnement cloud (RISK-7, constaté à nouveau)
+> **Statut** : en exécution — lot 3 relancé le 2026-09-27 par le propriétaire, re-ciblé sur les maths 9ᵉ (Q-5 arbitrée) ; Q-6 arbitrée le 2026-09-28 (les sujets des examens nationaux sont du corpus officiel, le pilote les lit sans reprise) ; réseau de l'environnement cloud constaté ouvert le 2026-09-28 (RISK-7 levé), pilote en cours
 > **Priorité** : 27 · **Valeur** : 🌐 le gisement web tunisien (devoirs de contrôle/synthèse, séries, corrigés alignés sur le programme réel) devient exploitable **sans copier une ligne** — et la ligne rouge du plagiat cesse d'être une promesse pour devenir un **gate déterministe** · **Complexité** : moyenne (doctrine + un petit registre ; **zéro moteur pédagogique nouveau**)
 > **Architecte** : session Claude Code / 2026-08-13 · **Exécuteur cible** : Sonnet (lots 2 et 4) + opéré (lots 1, 3, 5)
 > **Dépend de** : é23 (le patron du lien externe curé — lots 1-4 livrés : allowlist par source, registre versionné, aucune URL libre côté app) · é13 ScribeKit (livrée) · la méthode (§ Profils de source) · **ne dégèle PAS é12** (studio d'ingestion, gelée le 2026-07-20) · **Bloque** : rien
@@ -90,7 +90,9 @@ référence de programme** · partenariat contractuel (T2, lot 6 gelé).
 - **R-3 — Un site tiers n'est JAMAIS une référence de programme.** Extension de R-3 de
   `content-ingest` : le manuel/guide officiel fait foi ; un devoir de prof reflète ce qu'un
   établissement a choisi d'évaluer, pas le périmètre officiel. **Aucune source officielle
-  trouvable ⇒ STOP** (profil `ecole-secondaire`), une source web ne comble pas ce STOP.
+  trouvable ⇒ STOP** (profil `ecole-secondaire`), une source web ne comble pas ce STOP. Le
+  sujet officiel d'un examen national n'est pas un site tiers : Q-6 l'a rangé dans le corpus
+  officiel le 2026-09-28.
 - **R-4 — L'allowlist autorise un SITE, jamais une URL** (repris tel quel de é23).
 - **R-5 — Un lien = une vérification humaine intégrale.** Pendant du visionnage intégral R-3 de
   é23 : ouvrir la ressource, confirmer gratuité réelle (pas de mur après deux clics), adéquation
@@ -192,7 +194,7 @@ recherche dans les sites · ressource externe sur un écran de correction (é23 
 - [x] Lot 1 — doctrine (profil + tiers + gabarit) — méthode + `content-ingest` R-2, 2026-08-13
 - [x] Lot 2 — gate anti-verbatim — moteur [arena#722](https://github.com/MBeji/yahia-quest-arena/pull/722), mergé le 2026-08-13
 - [ ] Lot 3 — pilote T0+T2′ mesuré, **maths 9ᵉ** — inventaire fait le 2026-09-27 (annexe A.2),
-      lecture bloquée par l'egress de l'environnement cloud (RISK-7)
+      réseau constaté ouvert le 2026-09-28 (RISK-7 levé) : pilote en cours
 - [ ] Lot 4 — T1 moteur (GO humain)
 - [ ] Lot 5 — T1 campagne
 - [ ] Lot 6 — gelé
@@ -215,8 +217,9 @@ travaillé. S'il ne trouve rien à ajouter, c'est un résultat, et il vaut pour 
 **L'échantillon est fixé avant la lecture**, pour ne pas lire seulement ce qui arrange :
 
 - **le concours national** : les sujets officiels des cinq dernières sessions (portail du
-  Ministère, `echoexam.edunet.tn`). Leur statut de droits est la question Q-6 ; jusqu'à son
-  arbitrage, ils sont traités en T2′ comme le reste ;
+  Ministère, `echoexam.edunet.tn`). Q-6 les a rangés dans le corpus officiel le 2026-09-28,
+  mais **ce pilote les lit sans reprise, en T2′ comme le reste** (arbitrage du même jour) : le
+  protocole fixé avant lecture ne bouge pas. Leur reprise fidèle et citée est un lot à part ;
 - **les devoirs** : pour chacun des neuf créneaux de l'année (DC1, DC2, DS1 · DC3, DC4, DS2 ·
   DC5, DC6, DS3), un devoir de collège pilote et un devoir ordinaire, tous deux **du programme en
   vigueur**. Les sites rangent l'ancien programme à part (annexe A.2) : c'est la date du devoir
@@ -264,10 +267,11 @@ dans la méthode et dans `/campagne` pour les autres classes et matières, et le
 déjà qualifiées servent telles quelles aux couples suivants : `devoir.tn` ou
 `tunisiecollege.net` couvrent toutes les classes du collège.
 
-**Ce qui bloque, constaté le 2026-09-27.** Voir le journal : l'environnement cloud refuse tous
-ces domaines, `curl` comme WebFetch. La levée est un réglage de l'environnement (mur « réglages
-hors dépôt » de `zero-intervention.md`) ; l'alternative est le poste Windows, ou des PDF déposés
-dans le Google Drive du projet, que la session sait lire.
+**Ce qui bloquait, levé le 2026-09-28.** Le 2026-09-27, l'environnement cloud refusait tous
+ces domaines, `curl` comme WebFetch (journal). Le 2026-09-28, le réglage de l'environnement
+avait été fait : `curl` rend 200 sur `devoir.tn`, `tunisiecollege.net`, `tunitests.tn` et
+`echoexam.edunet.tn`. Le poste Windows et le Google Drive restent les voies de repli si le
+réglage revient en arrière.
 
 ---
 
@@ -307,10 +311,11 @@ dans le Google Drive du projet, que la session sait lire.
 - **RISK-6 — Un auteur se reconnaît dans un énoncé** (possible / majeur, réputationnel) → R-2 +
   R-9 (traçabilité : on sait quoi a été consulté, quand) + procédure de retrait sous 48 h à la
   première demande, sans discuter le fond.
-- **RISK-7 — Accès réseau** (**constaté** le 2026-08-13 / opérationnel) → l'egress d'une session
-  cloud **bloque** ces domaines (`EGRESS_BLOCKED`). La qualification et la lecture se font depuis
-  le poste Windows, ou en autorisant le domaine dans la politique réseau de l'environnement ;
-  **jamais** en contournant le proxy (R-13).
+- **RISK-7 — Accès réseau** (**constaté** le 2026-08-13 / opérationnel ; **levé** le
+  2026-09-28) → l'egress d'une session cloud **bloquait** ces domaines (`EGRESS_BLOCKED`).
+  L'environnement les autorise depuis le 2026-09-28. S'il revient en arrière : le poste Windows,
+  ou le domaine autorisé dans la politique réseau de l'environnement ; **jamais** en contournant
+  le proxy (R-13).
 
 ---
 
@@ -341,6 +346,14 @@ dans le Google Drive du projet, que la session sait lire.
   lu sur le portail du Ministère et non sur un site qui le ré-héberge ; les **corrigés** des
   sites tiers restent T0. Tant que Q-6 n'est pas tranchée, le pilote les traite en T2′, le
   défaut sûr.
+  ✅ **Arbitrée le 2026-09-28 par le propriétaire** : **corpus officiel**, et plus large que la
+  recommandation — « tous les anciens examens font partie de la source officielle du
+  programme ». Portée précisée le même jour : les sujets que publie le Ministère (concours de
+  6ᵉ, concours de 9ᵉ, baccalauréat), **toutes sessions** ; les corrigés de tiers et les devoirs
+  d'établissement, même de collèges pilotes, restent des sources tierces. Pour le pilote en
+  cours, le propriétaire garde le protocole fixé avant lecture : les sujets du concours y sont
+  lus **sans reprise**, comme le reste ; leur reprise fidèle et citée sera un lot à part. La
+  règle quitte l'étude pour le socle de la méthode (R-2).
 
 ---
 
@@ -439,6 +452,32 @@ dans le Google Drive du projet, que la session sait lire.
 
   Nouvelle question : **Q-6**, le statut des sujets officiels du concours (§7).
 
+- **2026-09-28 — Q-6 arbitrée : les examens nationaux sont du corpus officiel.** Le
+  propriétaire tranche dans le sens de la recommandation, en plus large : « les sujets
+  officiels du concours sont corpus officiel, tous les anciens examens font partie de la
+  source officielle du programme ». Sa relance du pilote, envoyée juste après, disait encore
+  Q-6 ouverte ; la session a posé la contradiction plutôt que de choisir, et deux précisions
+  sont rendues le même jour :
+
+  - **la portée** : les examens nationaux dont le Ministère publie les sujets (concours de 6ᵉ,
+    concours de 9ᵉ, baccalauréat), toutes sessions. Les corrigés de tiers, les devoirs
+    d'établissement, même de collèges pilotes, et les séries d'enseignants restent des
+    sources tierces ;
+  - **le pilote** : le protocole fixé avant lecture ne bouge pas. Les sujets du concours y
+    sont lus sans reprise, en T2′ comme le reste, ce qui garde la mesure propre ; leur reprise
+    fidèle et citée sera un lot à part.
+
+  La règle quitte l'étude pour le socle : méthode R-2 (et ses deux conséquences, au profil
+  `document-libre` pour les recueils d'annales et au profil `source-web` pour les sites qui
+  ré-hébergent un sujet), `content-ingest` R-2, `content-ecole-tn` (sourcing), `CLAUDE.md` du
+  dépôt ; au moteur, `STATUS.md` §2 et le journal des décisions. Un point reste à la charge du
+  lot de reprise, pas de cette décision : où versionner la transcription d'un sujet officiel,
+  qui n'est ni une fiche de programme CNP ni une source externe.
+
+  Même jour : **le réseau est ouvert.** `curl` rend 200 sur `devoir.tn`, `tunisiecollege.net`,
+  `tunitests.tn` et `echoexam.edunet.tn` (302 sur `edunet.tn`), sans rien contourner. RISK-7
+  est levé, le pilote démarre.
+
 ---
 
 ## Annexe A — Sites de l'écosystème à qualifier (⚠️ **PAS une allowlist**)
@@ -465,7 +504,9 @@ soit la bonne volonté de l'exploitant.
 **Relevé par moteur de recherche, rien n'a été ouvert** : l'egress de la session refuse tous ces
 domaines (journal du 2026-09-27). Les colonnes disent ce que les pages de résultats annoncent :
 titres, rubriques, années. Ce sont des faits à confirmer à la qualification, pas des faits établis.
-Le tier de chaque site reste l'hypothèse T0 → T2′ de A.1, sauf la source officielle (Q-6).
+Le tier de chaque site reste l'hypothèse T0 → T2′ de A.1, sauf la source officielle : depuis
+Q-6 (2026-09-28), le sujet que publie le Ministère est du corpus officiel, pas un tier — et le
+pilote le lit tout de même sans reprise.
 
 **Source officielle — le concours national.**
 
@@ -487,7 +528,8 @@ Le tier de chaque site reste l'hypothèse T0 → T2′ de A.1, sauf la source of
 - **annales du concours ré-hébergées** : `madrassatii.com` (« toutes les sessions depuis 2001, avec
   correction »), `ecoles.com.tn` (depuis 2007), `polture.com` (2011-2019), `examens.tn`,
   `kifech.org` et `droussy.org` (2023-2025), `orientini.com` (annonce le corrigé **officiel** de
-  2024). Préférer le portail du Ministère pour le sujet lui-même : ces sites en sont des copies ;
+  2024). Préférer le portail du Ministère pour le sujet lui-même : ces sites en sont des copies.
+  Le sujet y reste du corpus officiel (Q-6) ; ce qu'ils y ajoutent, corrigés compris, non ;
 - **devoirs et séries** : `englezz.com`, `9raya.tn`, `najahni.tn`, `love-mathematics.com`
   (devoirs du 1ᵉʳ trimestre, 2024), `masartamayoz.com` (DC « modèles », dont des modèles
   pilotes), `elkhadra.com` (séries par chapitre), `college.mourajaa.com`, et des blogs

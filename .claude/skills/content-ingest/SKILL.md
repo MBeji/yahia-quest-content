@@ -54,6 +54,11 @@ récompenses, style, notation) et à `content-ecole-tn` (fidélité au programme
   humaine. **Aucune écriture DB**, aucun skip d'audit.
 - **R-2 — Provenance & droits.** Chaque source porte auteur / origine / autorisation ; un document sous
   droits sans autorisation est **refusé**. Les `chapter.sources[]` citent le document. Doute ⇒ **STOP**.
+  **Les sujets officiels des examens nationaux** (concours de 6ᵉ, concours de 9ᵉ, baccalauréat, toutes
+  sessions) sont du **corpus officiel** (décision du 2026-09-28, étude 27 Q-6) : tu les transcris comme
+  un manuel CNP, sans autorisation à demander, et tu les cites. D'un site qui les ré-héberge, tu ne
+  prends que le sujet ; son corrigé et ses commentaires, comme le devoir d'un établissement, restent une
+  source web.
   **Source du WEB** (site de devoirs, blog d'enseignant, portail d'annales) : profil `source-web` de la
   méthode — déclare le **tier** avant le premier token. T0 (veille), T1 (lien sortant) et T2′ (génération
   inspirée) ne demandent aucune autorisation ; seule la **transcription (T2)** en exige une, écrite. Tu
