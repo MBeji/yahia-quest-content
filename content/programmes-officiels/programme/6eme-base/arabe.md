@@ -1174,6 +1174,38 @@ termes classiques ci-dessus) ; ont été **ajoutés** ce que le manuel enseigne 
 taisait — au premier chef **la leçon 26, désormais enseignée (section complète du ch.11) et testée
 (7 items)**, fermant le trou « testé sans être enseigné » du §2 sexies et du §5 bis D.
 
+## 2 decies. Lecture et production écrite servies — six chapitres neufs (2026-09-28)
+
+> **Arbitrage de Mohamed (2026-09-28)** : « couvrir la lecture-compréhension et la production
+> écrite, que l'épreuve nationale évalue mais qu'aucun chapitre ne couvre ». Le trou chiffré au
+> §2 sexies et au §5 bis A est comblé par **six chapitres, un par unité**, qui suivent l'objectif
+> de lecture de l'unité (`101611`, bandeaux du فهرس) et les leçons de `101612` القسم الثّاني, plus
+> l'activité de الإدماج de l'unité (القسم الثّالث). Domaine affiché : « القراءة والإنتاج الكتابيّ ».
+
+| chapitre servi               | unité | objectif de lecture (`101611`) | `101612` (pages lues à l'image)           | items |
+| ---------------------------- | ----- | ------------------------------ | ----------------------------------------- | ----- |
+| `14-bunyat-an-nass-as-sardi` | و1    | بنية النصّ السّرديّ ومكوّناته  | القسم الثّاني p.125–142 · إدماج p.225–227 | 36    |
+| `15-as-sard-al-khatti`       | و2    | السّرد الخطّيّ وغير الخطّيّ    | p.143–157 · إدماج p.228–230               | 36    |
+| `16-al-wasf`                 | و3    | مقاطع وصفيّة                   | p.158–172 · إدماج p.231–233               | 36    |
+| `17-al-hiwar`                | و4    | مقاطع حواريّة                  | p.173–192 · إدماج p.234–236               | 36    |
+| `18-at-tafsir`               | و5    | مقاطع تفسيريّة                 | p.193–209 · إدماج p.237–240               | 36    |
+| `19-at-tawjih`               | و6    | مقاطع توجيهيّة                 | p.210–223 · إدماج p.241–243               | 36    |
+
+- **Règles tenues.** Textes d'appui **tous originaux** : aucun des 64 textes de `101611` n'est
+  recopié (droits d'auteur des écrivains cités, §2 octies) ; les consignes d'écriture adaptent
+  celles du manuel ou des épreuves officielles du guide (§2 quinquies), sans reprise littérale.
+  Le **barème officiel** de la production écrite est enseigné tel quel (guide p.27, §3.4) :
+  الملاءمة 4 · سلامة بناء النّصّ 6 · التصرّف في نمط الكتابة 3 · ثراء اللّغة والطّرافة 4 ·
+  حسن العرض 3 = 20. La divergence du §2 sexies (6) est tranchée **pour le manuel** : و5 enseigne
+  « المقطع التّفسيريّ : الأسباب والنّتائج » (p.206), pas « ماذا أفعل لـ ؟ ».
+- **Contrôle.** Chaque chapitre a été audité par un agent indépendant (items re-résolus à
+  l'aveugle, ordre unique des items `ordering`, fidélité au manuel) ; les écarts relevés (mode
+  d'un verbe, arithmétique du barème, un ordre doublement défendable, un toponyme, un jour de
+  marché) sont corrigés.
+- **Ce qui reste non servi** : les **64 textes** eux-mêmes (le contenu en enseigne les objectifs,
+  pas les textes) et les **48 مذكّرات** différenciées de `501604`. L'oral (التواصل الشفويّ) reste
+  hors du périmètre d'une app de QCM.
+
 ## 3. Notes pédagogiques / méthode
 
 ### 3.1 Le noyau grammatical (المفاهيم النّظريّة, p.13–18) — métalangage du maître
@@ -1292,15 +1324,15 @@ Chiffres **latins 0–9** partout (les tableaux écrivent **20, 30, 50, 100, 150
 
 ### A. programme → contenu — ce que le programme enseigne et que personne ne sert
 
-| strate du programme                              | volume                                                  | servi ?                                                                                  |
-| ------------------------------------------------ | ------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| `101612` القسم الأوّل — **استعمال قواعد اللّغة** | 31 leçons (p.3–124)                                     | ✅ **13 chapitres · 31/31 leçons**, dans l'ordre                                         |
-| `101611` — **القراءة وفهم المقروء**              | **64 textes** = 52 leçons + 6 تقييم + 6 إدماج (p.3–216) | ⛔ **0 chapitre** — §2 octies, mesuré en 28 graphies                                     |
-| `101612` القسم الثّاني — **الإنتاج الكتابيّ**    | **24 leçons** (p.125–220)                               | ⛔ **0 chapitre**                                                                        |
-| `101612` القسم الثّالث — **أنشطة الإدماج**       | 6, une par unité (p.225–241)                            | ⛔ **0 chapitre**                                                                        |
-| `501604` — **مذكّرات القراءة**                   | **24 مذكّرات** (p.7–92)                                 | ⛔ **0 chapitre**                                                                        |
-| `501604` — **مذكّرات الإنتاج الكتابيّ**          | **24 مذكّرات** (p.180–296)                              | ⛔ **0 chapitre**                                                                        |
-| `501604` — **مذكّرات استعمال قواعد اللّغة**      | **24 مذكّرات** (p.94–178)                               | ⚠️ non exploitées — la matière est au programme servi, mais aucun exercice n'en est tiré |
+| strate du programme                              | volume                                                  | servi ?                                                                                           |
+| ------------------------------------------------ | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `101612` القسم الأوّل — **استعمال قواعد اللّغة** | 31 leçons (p.3–124)                                     | ✅ **13 chapitres · 31/31 leçons**, dans l'ordre                                                  |
+| `101611` — **القراءة وفهم المقروء**              | **64 textes** = 52 leçons + 6 تقييم + 6 إدماج (p.3–216) | ✅ **6 chapitres (14–19)** depuis le 2026-09-28 — objectifs servis, textes non repris (§2 decies) |
+| `101612` القسم الثّاني — **الإنتاج الكتابيّ**    | **24 leçons** (p.125–220)                               | ✅ **6 chapitres (14–19)**, 24/24 leçons — §2 decies                                              |
+| `101612` القسم الثّالث — **أنشطة الإدماج**       | 6, une par unité (p.225–241)                            | ✅ intégrées aux chapitres 14–19 — §2 decies                                                      |
+| `501604` — **مذكّرات القراءة**                   | **24 مذكّرات** (p.7–92)                                 | ⛔ **0 chapitre**                                                                                 |
+| `501604` — **مذكّرات الإنتاج الكتابيّ**          | **24 مذكّرات** (p.180–296)                              | ⛔ **0 chapitre**                                                                                 |
+| `501604` — **مذكّرات استعمال قواعد اللّغة**      | **24 مذكّرات** (p.94–178)                               | ⚠️ non exploitées — la matière est au programme servi, mais aucun exercice n'en est tiré          |
 
 ➡️ **La source non déclarée ne déplace pas la frontière du scope, elle déplace le volume du
 manquant.** Le §2 sexies chiffrait le non-servi à « 24 leçons d'إنتاج + 6 إدماج + 64 textes ».

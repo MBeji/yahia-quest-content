@@ -11,7 +11,8 @@
       "options": [
         {
           "id": "a",
-          "text": "A و B كلاهما شارديّ، لأنّ التيار يمرّ فيهما معًا"
+          "text": "A و B كلاهما شارديّ، لأنّ التيار يمرّ فيهما معًا",
+          "misconceptionTag": "phys.chim.courant-detecte-donc-ionique"
         },
         {
           "id": "b",
@@ -23,7 +24,8 @@
         },
         {
           "id": "d",
-          "text": "A شارديّ، و B عازل تمامًا للتيار لأنّ المصباح لم يضئ معه"
+          "text": "A شارديّ، و B عازل تمامًا للتيار لأنّ المصباح لم يضئ معه",
+          "misconceptionTag": "phys.chim.conducteur-faible-pris-pour-isolant"
         }
       ],
       "correctOption": "c",
@@ -33,9 +35,17 @@
     {
       "prompt": "في محلول كبريتات النحاس، شوارد النحاس كاتيونات. نحو أيّ إلكترود تهاجر شوارد الكبريتات عند غلق الدارة؟",
       "options": [
-        { "id": "a", "text": "نحو المهبط، مثل شوارد النحاس" },
+        {
+          "id": "a",
+          "text": "نحو المهبط، مثل شوارد النحاس",
+          "misconceptionTag": "phys.chim.ions-vers-une-seule-electrode"
+        },
         { "id": "b", "text": "نحو المصعد، لأنّها أنيونات" },
-        { "id": "c", "text": "لا تهاجر، لأنّها عديمة اللون" },
+        {
+          "id": "c",
+          "text": "لا تهاجر، لأنّها عديمة اللون",
+          "misconceptionTag": "phys.chim.ions-incolores-immobiles"
+        },
         { "id": "d", "text": "تتوزّع بين الإلكترودين بالتساوي" }
       ],
       "correctOption": "b",
@@ -47,7 +57,11 @@
       "options": [
         { "id": "a", "text": "A فقط" },
         { "id": "b", "text": "B فقط" },
-        { "id": "c", "text": "A و B و C كلّها" },
+        {
+          "id": "c",
+          "text": "A و B و C كلّها",
+          "misconceptionTag": "phys.chim.courant-detecte-donc-ionique"
+        },
         { "id": "d", "text": "A و C فقط" }
       ],
       "correctOption": "d",
@@ -58,7 +72,11 @@
       "prompt": "في محلال فيه محلول ملح الطعام، نضيف مِسوَطًا ثانيًا من الملح ونحرّك دون تغيير حجم المحلول، فيرتفع مؤشّر الأمبيرمتر من I₁ إلى I₂. كيف نفسّر ذلك؟",
       "options": [
         { "id": "a", "text": "ارتفع تركيز المحلول، فارتفعت ناقليّته" },
-        { "id": "b", "text": "ارتفع حجم المحلول، فمرّ فيه تيار أكبر" },
+        {
+          "id": "b",
+          "text": "ارتفع حجم المحلول، فمرّ فيه تيار أكبر",
+          "misconceptionTag": "phys.chim.dilution-augmente-conductivite"
+        },
         { "id": "c", "text": "تغيّر نوع المنحلّ في المحلول" },
         { "id": "d", "text": "صار المحلول شارديًّا بعد أن لم يكن كذلك" }
       ],
@@ -100,7 +118,8 @@
         },
         {
           "id": "c",
-          "text": "الماء المقطّر أقدر على نقل التيار، لأنّه أنقى وخالٍ من الأملاح"
+          "text": "الماء المقطّر أقدر على نقل التيار، لأنّه أنقى وخالٍ من الأملاح",
+          "misconceptionTag": "phys.chim.eau-pure-meilleur-conducteur"
         },
         { "id": "d", "text": "الماء المعدنيّ لا ينقل التيار إلّا إذا سُخِّن" }
       ],
