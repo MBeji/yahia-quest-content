@@ -196,6 +196,7 @@ et **rejoue le scan 1 bis** — entre la question et le premier commit, une autr
 | `A5.4`                 | déclarer `sujets` (+ statut/couverture) au registre, régénérer la vue  | toi — édition du registre, aucun skill d'écriture                      |
 | `B1`                   | LOT B : `subject.json` + **première tranche** de chapitres             | `content-ecole-tn` (carte `generation-pipeline.md`)                    |
 | `B2`                   | LOT B : tranches suivantes, chapitres manquants ou incomplets          | idem + `content-cours`, `content-interactif`, `prof-<matière>-<cycle>` |
+| `gisement` (demandé)   | étude 36 sur un couple **déjà ouvert** : examens nationaux repris et cités, devoirs en ligne en salle blanche | `content-ingest` (mode gisement) + `prof-<matière>-<cycle>` |
 
 Points de vigilance, tous hérités de la méthode :
 
@@ -210,6 +211,11 @@ Points de vigilance, tous hérités de la méthode :
   qui ne l'est pas (`--strict-lessons`). **Chaque question évite les indices de forme**
   (`quality-bar.md` § « No form clue ») — la CI ne voit que la longueur, le reste est à toi et à
   l'auditeur.
+- **Gisement** (étude 36) : il approfondit un couple ouvert, il n'ouvre rien. Échantillon fixé et
+  mergé **avant** toute lecture ; lecteur, auteur et auditeur sont trois sous-agents distincts ;
+  **un chapitre = un auteur à la fois**, avec sa plage de numéros ; chaque tranche se livre depuis
+  un worktree frais d'`origin/main` et se publie dans la foulée. Déroulé complet :
+  `content-ingest/references/gisement.md`.
 - **A5.4** : `sujets` doit désigner des ids du manifeste du niveau — `programme:check` refuse le
   reste. Aucun sujet correspondant (matière hors programme codifié) ⇒ laisser `[]` et l'écrire en
   note, jamais inventer un id pour faire disparaître un constat.

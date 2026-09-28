@@ -1,8 +1,11 @@
 # Étude 12 — Studio d'ingestion (PDF/source → contenu, dans le pipeline à gates)
 
-> **Statut** : **gelée (doctrine verticale)** — é26 Q-3 — le canal opéré é13 suffit, arbitrage de Mohamed du
-> 2026-07-20, acté ici le 2026-09-12 (é26 lot 2). **Réversible par arbitrage humain
-> explicite** ; le fond de l'étude n'est pas touché, seul son statut l'est.
+> **Statut** : **dégelée pour son volet ingestion et fusionnée dans l'[étude 36](../36-gisement-examens-devoirs/ETUDE.md)**
+> le 2026-09-28, sur arbitrage écrit du propriétaire (« il faut utiliser l'étude 12 et l'optimiser si
+> nécessaire ; il faut fusionner étude 12 et 27 et faire un pipeline complet »). Les lots 1-2 (la
+> fiche, le skill, le pilote chiffré) vivent désormais dans le pipeline de l'étude 36 ; le **lot 3
+> (canal enseignant in-app) reste gelé** derrière Q-2. Historique : gelée le 2026-07-20 par la
+> doctrine verticale (é26 Q-3, acté ici le 2026-09-12) ; le fond de l'étude n'est pas touché.
 > **Priorité** : 12 · **Valeur** : faire chuter le coût de création quand la source n'est pas déjà couverte (PDF d'un enseignant, polycopié, annales papier) — sans sacrifier ce qui fait la valeur du contenu : fidélité, corrigés vérifiés, revue humaine · **Complexité** : moyenne (surtout process/outillage — le gros existe déjà)
 > **Architecte** : Fable (claude-fable-5), 2026-07-04 · **Exécuteur cible** : Sonnet (outillage) + skills contenu (génération)
 > **Dépend de** : rien de bloquant ; synergie avec la couche de persistance existante (transcriptions CNP) · **Bloque** : rien
@@ -174,3 +177,13 @@ pgTAP (RLS/quota), Vitest (fns zod, upload mocké, états UI), pas d'e2e dédié
   au milieu d'un chapitre ⇒ sauvegarde `wip/` (draft). Motif : une session coupée avant son
   push perd 100 % du travail — le risque principal des campagnes longues. Répercuté dans la
   méthode (T-10, B2/B3, A3.4, STOP), `content-ingest` et `generation-pipeline.md`.
+- **2026-09-28 — Dégel et fusion dans l'étude 36.** Le propriétaire demande d'utiliser cette
+  étude, de l'optimiser si nécessaire et de la fusionner avec l'étude 27 en un pipeline complet,
+  exécuté sur toutes les classes (la 9ᵉ, puis la 6ᵉ) pour tirer le maximum d'exercices des
+  examens nationaux et des devoirs en ligne. Ce qui passe dans
+  [l'étude 36](../36-gisement-examens-devoirs/ETUDE.md) : le skill `content-ingest` (qui gagne un
+  **mode gisement**), le registre, la livraison par tranches, et le lot 2 de cette étude, que le
+  pipeline accomplit couple après couple avec ses coûts mesurés. Les optimisations retenues sont
+  celles du pilote de l'étude 27 : lire le texte avant l'image, arrêter la lecture des devoirs à
+  saturation, des lots d'auteur plus gros (l'écriture coûte plus que la lecture), un outillage
+  déterministe au moteur, et un registre versionné qui survit au conteneur. Le lot 3 reste gelé.
