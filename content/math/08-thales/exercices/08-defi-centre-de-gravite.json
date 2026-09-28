@@ -1,0 +1,136 @@
+{
+  "title": "👑 تحدّي النخبة ⭐⭐⭐⭐: مركز ثقل المثلّث في سلاسل طاليس وفيثاغورس والمساحات",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "المثلّث ABC قائم الزاوية في A، حيث AB = 9 cm و AC = 12 cm، و K منتصف الوتر [BC]، و G مركز ثقل المثلّث. احسب البعد AG بين رأس الزاوية القائمة ومركز الثقل.\n<svg viewBox=\"0 0 270 230\"><path d=\"M60 200 L60 74 L228 200 Z\" fill=\"#0f6e56\" opacity=\"0.08\"/><path d=\"M60 200 L60 74 L228 200 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M60 186 L74 186 L74 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M60 200 L144 137\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M103.2 98.9 L96 108.5 M108 102.5 L100.8 112.1 M187.2 161.9 L180 171.5 M192 165.5 L184.8 175.1\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"200\" r=\"4\"/><circle cx=\"60\" cy=\"74\" r=\"4\"/><circle cx=\"228\" cy=\"200\" r=\"4\"/></g><circle cx=\"144\" cy=\"137\" r=\"4.5\" fill=\"#0f6e56\"/><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"48\" y=\"216\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"48\" y=\"70\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"240\" y=\"216\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"154\" y=\"127\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"46\" y=\"142\" text-anchor=\"middle\" fill=\"#0f172a\">9</text><text x=\"144\" y=\"220\" text-anchor=\"middle\" fill=\"#0f172a\">12</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,5 cm",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        },
+        {
+          "id": "b",
+          "text": "3,75 cm",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        { "id": "c", "text": "5 cm" },
+        { "id": "d", "text": "10 cm", "misconceptionTag": "math.geo.mediane-hypotenuse-demi" }
+      ],
+      "correctOption": "c",
+      "explanation": "الخطوة 1 — الوتر بنظرية فيثاغورس: BC² = AB² + AC² = 9² + 12² = 81 + 144 = 225، إذن BC = 15 cm. الخطوة 2 — في المثلّث القائم، الموسّط الصادر من رأس الزاوية القائمة يساوي نصف الوتر: AK = 15/2 = 7,5 cm. الخطوة 3 — مركز الثقل عند ثلثي الموسّط انطلاقًا من الرأس: AG = (2/3) × 7,5 = 5 cm، أي AG = BC/3 ✓. الخطأ الشائع: أخذ الموسّط مساويًا للوتر كلّه (AK = 15 cm) فيخرج AG = 10 cm؛ أو وضع G في منتصف [AK] فيخرج 3,75 cm؛ أو قلب الثلث والثلثين فيخرج 2,5 cm، وهو طول GK لا AG.",
+      "difficulty": 2,
+      "competencies": ["math.geo.triangles-base", "math.geo.pythagore"]
+    },
+    {
+      "prompt": "في المثلّث ABC، النقطتان I و J منتصفا [AB] و [AC] حيث IJ = 12 cm، و K منتصف [BC]، و G مركز ثقل المثلّث. المستقيم المارّ من G والموازي لـ (BC) يقطع [AB] في E و [AC] في F. احسب EF.\n<svg viewBox=\"0 0 350 245\"><path d=\"M148 26 L40 218 L310 218 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M148 26 L175 218\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/><path d=\"M94 122 L229 122\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M126.2 76.9 L115.8 71.1 M72.2 172.9 L61.8 167.1 M191.2 67.8 L182 75.6 M195 72.4 L185.8 80.2 M272.2 163.8 L263 171.6 M276 168.4 L266.8 176.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"148\" cy=\"26\" r=\"4\"/><circle cx=\"40\" cy=\"218\" r=\"4\"/><circle cx=\"310\" cy=\"218\" r=\"4\"/><circle cx=\"175\" cy=\"218\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"94\" cy=\"122\" r=\"4\"/><circle cx=\"229\" cy=\"122\" r=\"4\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"148\" y=\"16\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"28\" y=\"234\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"322\" y=\"234\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"175\" y=\"239\" text-anchor=\"middle\" fill=\"#0f172a\">K</text><text x=\"80\" y=\"119\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"243\" y=\"119\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"143.5\" y=\"114\" text-anchor=\"middle\" fill=\"#0f6e56\">12</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 cm",
+          "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux"
+        },
+        { "id": "b", "text": "8 cm", "misconceptionTag": "math.geo.centre-gravite-tiers-inverse" },
+        {
+          "id": "c",
+          "text": "12 cm",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        { "id": "d", "text": "16 cm" }
+      ],
+      "correctOption": "d",
+      "explanation": "الخطوة 1 — المستقيم الرابط بين منتصفي ضلعي مثلث: IJ = BC/2، إذن BC = 2 × 12 = 24 cm. الخطوة 2 — مركز الثقل على الموسّط [AK] عند ثلثيه من الرأس: AG/AK = 2/3. الخطوة 3 — في المثلّث ABK، النقطة E على [AB] و G على [AK] و (EG) ∥ (BK)، فبنظرية طاليس AE/AB = AG/AK = 2/3. الخطوة 4 — في المثلّث ABC، (EF) ∥ (BC)، فبنظرية طاليس EF/BC = AE/AB = 2/3، إذن EF = (2/3) × 24 = 16 cm ✓. الخطأ الشائع: وضع G في منتصف الموسّط، فيصير المستقيم الموازي هو (IJ) نفسه و EF = 12 cm — والصحيح أنّ (EF) أقرب إلى (BC) من (IJ). وقلب الثلث والثلثين يعطي EF = (1/3) × 24 = 8 cm، وأخذ BC نصف IJ بدل ضعفه يعطي BC = 6 cm و EF = 4 cm.",
+      "difficulty": 3,
+      "competencies": ["math.geo.triangles-base", "math.geo.thales-direct"]
+    },
+    {
+      "prompt": "في المثلّث ABC، النقطة K منتصف [BC] و G مركز ثقل المثلّث، و D مناظرة النقطة G بالنسبة إلى K. ما العلاقة الصحيحة بين AG و AD ؟\n<svg viewBox=\"0 0 320 262\"><path d=\"M100 32 L40 170 L280 170 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M100 32 L160 170\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M160 170 L198 257.4\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><path d=\"M97 164 L97 176 M103 164 L103 176 M217 164 L217 176 M223 164 L223 176\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"100\" cy=\"32\" r=\"4\"/><circle cx=\"40\" cy=\"170\" r=\"4\"/><circle cx=\"280\" cy=\"170\" r=\"4\"/><circle cx=\"160\" cy=\"170\" r=\"4\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"100\" y=\"22\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"28\" y=\"184\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"292\" y=\"184\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"146\" y=\"187\" text-anchor=\"middle\" fill=\"#0f172a\">K</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "AG = (2/3) × AD" },
+        { "id": "b", "text": "AG = (1/2) × AD" },
+        {
+          "id": "c",
+          "text": "AG = (1/3) × AD",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        {
+          "id": "d",
+          "text": "AG = (1/5) × AD",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الخطوة 1 — D مناظرة G بالنسبة إلى K، إذن K منتصف [GD]: KD = GK، والنقاط A و G و K و D على استقامة واحدة. الخطوة 2 — مركز الثقل عند ثلثي الموسّط من الرأس: AG = 2 × GK. الخطوة 3 — AD = AG + GK + KD = 2 × GK + GK + GK = 4 × GK، إذن AG = (1/2) × AD ✓: النقطة G منتصف [AD]، أي AG = GD. الخطأ الشائع: وضع G في منتصف [AK] (AG = GK) فيصير AD = 3 × AG، أي AG = (1/3) × AD؛ أو قلب الثلث والثلثين (GK = 2 × AG) فيصير AD = 5 × AG، أي AG = (1/5) × AD. أمّا AG = (2/3) × AD فتطبّق نسبة الموسّط على القطعة [AD] وهي ليست موسّطًا.",
+      "difficulty": 3,
+      "competencies": ["math.geo.triangles-base"]
+    },
+    {
+      "prompt": "في المثلّث ABC، BC = 12 cm والارتفاع [AH] طوله 9 cm، و K منتصف [BC]، و G مركز ثقل المثلّث، و P المسقط العمودي للنقطة G على (BC). احسب مساحة المثلّث GBC.\n<svg viewBox=\"0 0 310 265\"><path d=\"M72 32 L32 212 L272 212 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M72 32 L72 212\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><path d=\"M72 32 L152 212\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\"/><path d=\"M72 201 L83 201 L83 212\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M32 252 L272 252 M32 247 L32 257 M272 247 L272 257\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><g fill=\"#0f172a\"><circle cx=\"72\" cy=\"32\" r=\"4\"/><circle cx=\"32\" cy=\"212\" r=\"4\"/><circle cx=\"272\" cy=\"212\" r=\"4\"/><circle cx=\"72\" cy=\"212\" r=\"3.5\"/><circle cx=\"152\" cy=\"212\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"72\" y=\"22\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"20\" y=\"217\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"284\" y=\"217\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"72\" y=\"233\" text-anchor=\"middle\" fill=\"#0f172a\">H</text><text x=\"152\" y=\"233\" text-anchor=\"middle\" fill=\"#0f172a\">K</text></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"61\" y=\"127\" text-anchor=\"middle\" fill=\"#0f172a\">9</text><text x=\"152\" y=\"257\" text-anchor=\"middle\" fill=\"#0f172a\">12</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "18 cm²" },
+        {
+          "id": "b",
+          "text": "27 cm²",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        {
+          "id": "c",
+          "text": "36 cm²",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        },
+        { "id": "d", "text": "54 cm²", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" }
+      ],
+      "correctOption": "a",
+      "explanation": "الخطوة 1 — مركز الثقل على الموسّط [AK] عند ثلثه انطلاقًا من منتصف الضلع: KG/KA = 1/3. الخطوة 2 — (GP) و (AH) عموديّان على (BC) فهما متوازيان؛ وفي المثلّث KAH تقع G على [KA] و P على [KH]، فبنظرية طاليس GP/AH = KG/KA = 1/3، إذن GP = 9/3 = 3 cm. الخطوة 3 — مساحة GBC = (BC × GP)/2 = (12 × 3)/2 = 18 cm² ✓، وهي ثلث مساحة ABC = (12 × 9)/2 = 54 cm². الخطأ الشائع: وضع G في منتصف الموسّط فيصير GP = 4,5 cm والمساحة 27 cm²، أو قلب الثلث والثلثين فيصير GP = 6 cm والمساحة 36 cm². أمّا 54 cm² فهي مساحة المثلّث ABC كلّه.",
+      "difficulty": 3,
+      "competencies": ["math.geo.triangles-base", "math.geo.thales-direct", "math.mes.aires"]
+    },
+    {
+      "prompt": "المثلّث ABC قائم الزاوية في A و AB = 12 cm، و J منتصف [AC]، و G مركز ثقل المثلّث حيث BG = 10 cm. احسب AC.\n<svg viewBox=\"0 0 270 235\"><path d=\"M60 205 L60 85 L240 205 Z\" fill=\"#0f6e56\" opacity=\"0.08\"/><path d=\"M60 205 L60 85 L240 205 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M60 191 L74 191 L74 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M60 85 L150 205\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M105 199 L105 211 M195 199 L195 211\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"205\" r=\"4\"/><circle cx=\"60\" cy=\"85\" r=\"4\"/><circle cx=\"240\" cy=\"205\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"150\" cy=\"205\" r=\"4\"/><circle cx=\"120\" cy=\"165\" r=\"4.5\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"48\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"48\" y=\"81\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"252\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"150\" y=\"226\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text><text x=\"133\" y=\"162\" text-anchor=\"middle\" fill=\"#0f6e56\">G</text></g><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"44\" y=\"150\" text-anchor=\"middle\" fill=\"#0f172a\">12</text><text x=\"80.4\" y=\"137.2\" text-anchor=\"middle\" fill=\"#0f172a\">10</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "32 cm",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        { "id": "b", "text": "18 cm" },
+        { "id": "c", "text": "9 cm", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
+        { "id": "d", "text": "6 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" }
+      ],
+      "correctOption": "b",
+      "explanation": "الخطوة 1 — [BJ] موسّط، و G عند ثلثيه انطلاقًا من الرأس B: BJ = (3/2) × BG = (3/2) × 10 = 15 cm. الخطوة 2 — المثلّث ABJ قائم في A، فبنظرية فيثاغورس AJ² = BJ² − AB² = 225 − 144 = 81، إذن AJ = 9 cm. الخطوة 3 — J منتصف [AC]، إذن AC = 2 × 9 = 18 cm ✓. تحقّق: BJ = √(12² + 9²) = √225 = 15 و (2/3) × 15 = 10 ✓. الخطأ الشائع: اعتبار G منتصف [BJ] فيصير BJ = 20 cm و AJ = √(400 − 144) = 16 cm و AC = 32 cm؛ أو طرح الأطوال بدل مربّعاتها (AJ = 15 − 12 = 3) فيخرج 6 cm؛ أو التوقّف عند AJ = 9 cm وهو نصف AC. وانتبه: [BJ] ليس الموسّط الصادر من رأس الزاوية القائمة، فلا يساوي نصف الوتر.",
+      "difficulty": 3,
+      "competencies": ["math.geo.triangles-base", "math.geo.pythagore"]
+    },
+    {
+      "prompt": "ABC و DBC مثلّثان على جانبَي المستقيم (BC)، و K منتصف [BC]، و G مركز ثقل المثلّث ABC، و L مركز ثقل المثلّث DBC. إذا كان AD = 21 cm، فاحسب GL.\n<svg viewBox=\"0 0 250 240\"><path d=\"M81 17 L45 125 L189 125 Z M57 221 L45 125 L189 125 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M117 125 L81 17 M117 125 L57 221\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\"/><path d=\"M81 17 L57 221\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><path d=\"M78 119 L78 131 M84 119 L84 131 M150 119 L150 131 M156 119 L156 131\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"81\" cy=\"17\" r=\"4\"/><circle cx=\"45\" cy=\"125\" r=\"4\"/><circle cx=\"189\" cy=\"125\" r=\"4\"/><circle cx=\"57\" cy=\"221\" r=\"4\"/><circle cx=\"117\" cy=\"125\" r=\"4\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"68\" y=\"15\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"32\" y=\"130\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"202\" y=\"130\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"44\" y=\"226\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"125\" y=\"144\" text-anchor=\"middle\" fill=\"#0f172a\">K</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "7 cm" },
+        {
+          "id": "b",
+          "text": "10,5 cm",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        { "id": "c", "text": "14 cm", "misconceptionTag": "math.geo.centre-gravite-tiers-inverse" },
+        {
+          "id": "d",
+          "text": "21 cm",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الخطوة 1 — [KA] موسّط في المثلّث ABC، و G عند ثلثه انطلاقًا من منتصف الضلع: KG = (1/3) × KA. الخطوة 2 — وبالمثل في المثلّث DBC: KL = (1/3) × KD. الخطوة 3 — في المثلّث KAD: KG/KA = KL/KD = 1/3، و G و L على [KA] و [KD]، فبالنظرية العكسية لطاليس (GL) ∥ (AD). الخطوة 4 — بنظرية طاليس: GL/AD = KG/KA = 1/3، إذن GL = 21/3 = 7 cm ✓. الخطأ الشائع: قلب الثلث والثلثين، أي KG = (2/3) × KA، فيخرج GL = 14 cm — الثلثان يُحسبان من الرأس، أمّا من منتصف الضلع K فالثلث فقط؛ أو وضع مركز الثقل في منتصف الموسّط فيخرج 10,5 cm؛ أو الظنّ أنّ القطعتين المتوازيتين متقايستان فيخرج 21 cm.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.thales-reciproque",
+        "math.geo.thales-direct"
+      ]
+    }
+  ]
+}
