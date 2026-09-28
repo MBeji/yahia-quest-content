@@ -1,0 +1,116 @@
+{
+  "title": "⭐⭐ تمرين: مركز ثقل المثلّث وثلثا الموسّط",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 70,
+  "rewardCoins": 15,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "في المثلّث ABC، النقطة K منتصف [BC]، والموسّط [AK] مقسوم إلى ستّ قطع متقايسة كما في الشكل. أيّ النقاط الأربع D و E و F و H هي مركز ثقل المثلّث ABC ؟\n<svg viewBox=\"0 0 340 245\"><path d=\"M160 24 L20 214 L320 214 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M160 24 L170 214\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M92 208 L92 220 M98 208 L98 220 M242 208 L242 220 M248 208 L248 220\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"160\" cy=\"24\" r=\"4\"/><circle cx=\"20\" cy=\"214\" r=\"4\"/><circle cx=\"320\" cy=\"214\" r=\"4\"/><circle cx=\"170\" cy=\"214\" r=\"4\"/></g><circle cx=\"168.3\" cy=\"182.3\" r=\"3\" fill=\"#94a3b8\"/><g fill=\"#0f6e56\"><circle cx=\"161.7\" cy=\"55.7\" r=\"4\"/><circle cx=\"163.3\" cy=\"87.3\" r=\"4\"/><circle cx=\"165\" cy=\"119\" r=\"4\"/><circle cx=\"166.7\" cy=\"150.7\" r=\"4\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"160\" y=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"8\" y=\"230\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"332\" y=\"230\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"170\" y=\"235\" text-anchor=\"middle\" fill=\"#0f172a\">K</text><text x=\"174.7\" y=\"64.7\" text-anchor=\"middle\" fill=\"#0f6e56\">D</text><text x=\"176.3\" y=\"96.3\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text><text x=\"178\" y=\"128\" text-anchor=\"middle\" fill=\"#0f6e56\">F</text><text x=\"179.7\" y=\"159.7\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text></g></svg>",
+      "options": [
+        { "id": "a", "text": "D" },
+        { "id": "b", "text": "E", "misconceptionTag": "math.geo.centre-gravite-tiers-inverse" },
+        { "id": "c", "text": "F", "misconceptionTag": "math.geo.centre-gravite-milieu-mediane" },
+        { "id": "d", "text": "H" }
+      ],
+      "correctOption": "d",
+      "explanation": "مركز الثقل يقع على الموسّط عند ثلثيه انطلاقًا من الرأس A. الموسّط ستّ قطع متقايسة، وثلثاه (2/3) × 6 = 4 قطع: نعدّ 4 قطع من A فنصل إلى H، وتبقى قطعتان من H إلى K، أي ثلث الموسّط ✓. الخطأ الشائع: اختيار F، وهي منتصف [AK] — كلمة «مركز» توحي بالوسط، لكنّ مركز الثقل ليس منتصف الموسّط. واختيار E يقلب الثلث والثلثين: E تبعد قطعتين فقط عن A، أي ثلث الموسّط انطلاقًا من الرأس. أمّا D فتبعد قطعة واحدة عن A، أي سدس الموسّط فقط.",
+      "difficulty": 1,
+      "competencies": ["math.geo.triangles-base"]
+    },
+    {
+      "prompt": "في المثلّث ABC، النقطة K منتصف [BC] و G مركز ثقل المثلّث، و AK = 15 cm. ما طول AG ؟",
+      "options": [
+        { "id": "a", "text": "22,5 cm" },
+        { "id": "b", "text": "10 cm" },
+        {
+          "id": "c",
+          "text": "7,5 cm",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        { "id": "d", "text": "5 cm", "misconceptionTag": "math.geo.centre-gravite-tiers-inverse" }
+      ],
+      "correctOption": "b",
+      "explanation": "مركز الثقل عند ثلثي الموسّط انطلاقًا من الرأس: AG = (2/3) × AK = (2/3) × 15 = 10 cm، ويبقى GK = 15 − 10 = 5 cm، وهو فعلًا ثلث الموسّط ✓. الخطأ الشائع: وضع G في منتصف [AK] فيخرج 7,5 cm، أو قلب الثلث والثلثين فيخرج 15/3 = 5 cm، وهو طول GK لا AG. والقيمة 22,5 cm ناتجة عن القسمة على 2/3 بدل الضرب فيها، وهي مستحيلة: G على [AK]، فـ AG أصغر من 15 cm.",
+      "difficulty": 1,
+      "competencies": ["math.geo.triangles-base"]
+    },
+    {
+      "prompt": "RST مثلّث مركز ثقله G، والموسّط الصادر من الرأس R يقطع [ST] في منتصفه U. إذا كان GU = 4,5 cm، فما المسافة RG ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,25 cm",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        },
+        {
+          "id": "b",
+          "text": "4,5 cm",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        { "id": "c", "text": "9 cm" },
+        { "id": "d", "text": "13,5 cm", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" }
+      ],
+      "correctOption": "c",
+      "explanation": "G يقسم الموسّط [RU] إلى ثلاث قطع متقايسة: قطعتان من جهة الرأس R، وقطعة واحدة من جهة المنتصف U، وهي GU. إذن RG = 2 × GU = 2 × 4,5 = 9 cm. التحقّق: RU = 9 + 4,5 = 13,5 cm، و (2/3) × 13,5 = 9 ✓. الخطأ الشائع: اعتبار G منتصف [RU] فيصير RG = GU = 4,5 cm، أو قلب الثلث والثلثين فيصير RG نصف GU، أي 2,25 cm. أمّا 13,5 cm فهو طول الموسّط RU كاملًا، لا RG.",
+      "difficulty": 2,
+      "competencies": ["math.geo.triangles-base"]
+    },
+    {
+      "prompt": "في المثلّث DEF، النقطة H منتصف [EF]، ومركز الثقل G يبعد 14 cm عن الرأس D. احسب طول الموسّط [DH].",
+      "options": [
+        { "id": "a", "text": "7 cm", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
+        { "id": "b", "text": "21 cm" },
+        {
+          "id": "c",
+          "text": "28 cm",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        { "id": "d", "text": "42 cm", "misconceptionTag": "math.geo.centre-gravite-tiers-inverse" }
+      ],
+      "correctOption": "b",
+      "explanation": "DG هو ثلثا الموسّط، أي قطعتان من ثلاث قطع متقايسة، فالقطعة الواحدة 14 ÷ 2 = 7 cm، وهي GH. والموسّط ثلاث قطع: DH = 3 × 7 = 21 cm، أي DH = (3/2) × 14. التحقّق: (2/3) × 21 = 14 ✓. الخطأ الشائع: اعتبار G منتصف الموسّط فيصير DH = 2 × 14 = 28 cm، أو قلب الثلث والثلثين فيصير DG ثلث الموسّط و DH = 3 × 14 = 42 cm. أمّا 7 cm فهو GH، لا الموسّط كاملًا.",
+      "difficulty": 2,
+      "competencies": ["math.geo.triangles-base"]
+    },
+    {
+      "prompt": "في المثلّث ABC، النقطة K منتصف [BC] و G مركز ثقله، و AK = 18 cm. كتب تلميذ: «الخطوة 1: [AK] موسّط لأنّه يصل الرأس A بمنتصف الضلع المقابل. الخطوة 2: G على [AK] لأنّ الموسّطات الثلاثة تلتقي في مركز الثقل. الخطوة 3: G منتصف الموسّط، إذن AG = 18 ÷ 2 = 9 cm.» ما الخطوة الخاطئة؟",
+      "options": [
+        { "id": "a", "text": "الخطوة 1" },
+        { "id": "b", "text": "الخطوة 2" },
+        { "id": "c", "text": "الخطوة 3" },
+        {
+          "id": "d",
+          "text": "لا خطأ في الحلّ",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الخطوتان 1 و 2 صحيحتان: الموسّط يصل رأسًا بمنتصف الضلع المقابل، ومركز الثقل ملتقى الموسّطات فهو على [AK]. الخطأ في الخطوة 3: مركز الثقل ليس منتصف الموسّط، بل يقع عند ثلثيه انطلاقًا من الرأس، فـ AG = (2/3) × 18 = 12 cm و GK = 18 − 12 = 6 cm، أي AG = 2 × GK ✓. (تمرين «صيد الخطأ»: الجواب الصحيح هو الخطوة التي تحوي الغلط.) ومن رأى الحلّ سليمًا وقع في الخطأ نفسه: كلمة «مركز» توحي بالوسط.",
+      "difficulty": 2,
+      "competencies": ["math.geo.triangles-base"]
+    },
+    {
+      "prompt": "في المثلّث ABC، النقطة K منتصف [BC]، والنقطة P من الموسّط [AK] حيث AP = 8 cm و PK = 16 cm. هل P مركز ثقل المثلّث ABC ؟",
+      "options": [
+        { "id": "a", "text": "لا، لأنّ مركز الثقل يبعد 16 cm عن A" },
+        {
+          "id": "b",
+          "text": "لا، لأنّ مركز الثقل يبعد 12 cm عن A",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        {
+          "id": "c",
+          "text": "نعم، لأنّ PK = 2 × AP",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        },
+        { "id": "d", "text": "نعم، لأنّ AP + PK = AK" }
+      ],
+      "correctOption": "a",
+      "explanation": "الموسّط AK = 8 + 16 = 24 cm، ومركز الثقل يقع عند ثلثيه انطلاقًا من الرأس، أي على بعد (2/3) × 24 = 16 cm من A و 8 cm من K. أمّا P فتبعد 8 cm فقط عن A، أي ثلث الموسّط انطلاقًا من الرأس، فليست مركز الثقل. الخطأ الشائع: قلب الثلث والثلثين — بُعد مركز الثقل عن الرأس ضعف بُعده عن منتصف الضلع، لا العكس. والنقطة التي تبعد 12 cm عن A هي منتصف الموسّط، وليست مركز الثقل. أمّا AP + PK = AK فصحيحة لكلّ نقطة من [AK] ولا تثبت شيئًا.",
+      "difficulty": 2,
+      "competencies": ["math.geo.triangles-base"]
+    }
+  ]
+}

@@ -339,6 +339,114 @@ OA/OC = 3/9 = **1/3**، وهو نفسه AB/CD.
 الفراشة = طاليس برأس O. النسب نفسها، والاتّجاه يُقرأ مستقيمًا بمستقيم.
 :::
 
+## ⚖️ مركز ثقل المثلّث
+
+تصنع خذروفًا من صفيحة كرتون مثلّثة ABC: تغرز فيها عودًا رفيعًا ثمّ تديرها. إن لم يمرّ العود من
+**مركز الثقل** (centre de gravité) مالت الصفيحة وهي تدور. وتعرف أنّ هذه النقطة ملتقى **الموسّطات** (médianes)
+الثلاثة، والموسّط قطعة تصل رأسًا بمنتصف الضلع المقابل له. رسمتَ الموسّط [AK] فكان طوله 12 cm:
+على أيّ بعد من A تغرز العود؟ أفي منتصف الموسّط؟
+
+::: propriete
+في كلّ مثلّث، يقع مركز الثقل G على كلّ موسّط عند ثلثيه انطلاقًا من الرأس، وعند ثلثه انطلاقًا من
+منتصف الضلع. فإذا كان K منتصف [BC]:
+$$ AG = (2/3) × AK $$
+$$ GK = (1/3) × AK $$
+:::
+
+::: figure الموسّطات الثلاثة تلتقي في G، و G يقسم [AK] إلى ثلاث قطع متقايسة: اثنتان من جهة A وواحدة من جهة K
+<svg viewBox="0 0 340 250">
+<path d="M124 30 L40 222 L316 222 Z" fill="none" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<path d="M40 222 L220 126 M316 222 L82 126" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 4"/>
+<path d="M124 30 L178 222" fill="none" stroke="#0f6e56" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M138.8 60.4 L127.2 63.6 M156.8 124.4 L145.2 127.6 M174.8 188.4 L163.2 191.6" fill="none" stroke="#0f6e56" stroke-width="2" stroke-linecap="round"/>
+<g fill="#0f172a"><circle cx="124" cy="30" r="4"/><circle cx="40" cy="222" r="4"/><circle cx="316" cy="222" r="4"/></g>
+<g fill="#0f172a"><circle cx="82" cy="126" r="3.5"/><circle cx="220" cy="126" r="3.5"/><circle cx="178" cy="222" r="3.5"/></g>
+<circle cx="160" cy="158" r="4.5" fill="#0f6e56"/>
+<g font-size="15" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">
+<text x="124" y="20" text-anchor="middle" fill="#0f172a">A</text>
+<text x="28" y="238" text-anchor="middle" fill="#0f172a">B</text>
+<text x="328" y="238" text-anchor="middle" fill="#0f172a">C</text>
+<text x="68" y="128" text-anchor="middle" fill="#0f172a">I</text>
+<text x="234" y="128" text-anchor="middle" fill="#0f172a">J</text>
+<text x="178" y="242" text-anchor="middle" fill="#0f172a">K</text>
+<text x="168" y="147" text-anchor="middle" fill="#0f6e56">G</text>
+</g>
+</svg>
+:::
+
+العلامات المتماثلة على [AK] هي الأثلاث الثلاثة في الصيغة: القطعة AG تحمل علامتين فهي (2/3) × AK،
+والقطعة GK تحمل علامة واحدة فهي (1/3) × AK.
+
+لماذا الثلثان بالضبط؟ خذ الموسّطين [BJ] و [CI] المتقاطعين في G، وسمِّ M و N منتصفي [GB] و [GC].
+
+::: figure الرباعي IJNM متوازي أضلاع: قطراه يتناصفان في G، فتنقسم [CI] إلى ثلاث قطع متقايسة
+<svg viewBox="0 0 340 250">
+<path d="M82 126 L220 126 L238 190 L100 190 Z" fill="#0f6e56" opacity="0.12"/>
+<path d="M124 30 L40 222 L316 222 Z" fill="none" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<path d="M40 222 L220 126 M316 222 L82 126" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+<path d="M82 126 L220 126 L238 190 L100 190 Z" fill="none" stroke="#0f6e56" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M274.7 211.6 L279.3 200.4 M196.7 179.6 L201.3 168.4 M118.7 147.6 L123.3 136.4" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+<g fill="#0f172a"><circle cx="124" cy="30" r="4"/><circle cx="40" cy="222" r="4"/><circle cx="316" cy="222" r="4"/></g>
+<g fill="#0f6e56"><circle cx="82" cy="126" r="4"/><circle cx="220" cy="126" r="4"/><circle cx="100" cy="190" r="4"/><circle cx="238" cy="190" r="4"/></g>
+<circle cx="160" cy="158" r="4.5" fill="#0f6e56"/>
+<g font-size="15" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">
+<text x="124" y="20" text-anchor="middle" fill="#0f172a">A</text>
+<text x="28" y="238" text-anchor="middle" fill="#0f172a">B</text>
+<text x="328" y="238" text-anchor="middle" fill="#0f172a">C</text>
+<text x="68" y="128" text-anchor="middle" fill="#0f6e56">I</text>
+<text x="234" y="128" text-anchor="middle" fill="#0f6e56">J</text>
+<text x="100" y="211" text-anchor="middle" fill="#0f6e56">M</text>
+<text x="238" y="211" text-anchor="middle" fill="#0f6e56">N</text>
+<text x="160" y="146" text-anchor="middle" fill="#0f6e56">G</text>
+</g>
+</svg>
+:::
+
+::: exemple لماذا الثلثان؟ ثمّ أين نغرز العود؟
+
+1. I و J منتصفا [AB] و [AC]، فـ AI/AB = AJ/AC = 1/2: بالنظرية العكسية (IJ) ∥ (BC)، وبنظرية
+   طاليس IJ = BC/2 — هذا هو **المستقيم الرابط بين منتصفي ضلعي مثلث** (droite des milieux).
+2. M و N منتصفا [GB] و [GC]، فالحجّة نفسها في المثلّث GBC تعطي (MN) ∥ (BC) و MN = BC/2.
+3. إذن (IJ) ∥ (MN) و IJ = MN، فالرباعي IJNM **متوازي أضلاع** — لأنّ فيه ضلعين متقابلين متوازيين
+   ومتقايسين.
+4. قطراه [IN] و [JM] محمولان على الموسّطين فيتقاطعان في G، وقطرا متوازي الأضلاع يتناصفان: GI = GN.
+   و N منتصف [GC]، فـ GN = NC. إذن [CI] ثلاث قطع متقايسة، و CG = (2/3) × CI.
+5. الحجّة نفسها مع الموسّطين [AK] و [BJ] تعطي AG = (2/3) × AK. للخذروف: AG = (2/3) × 12 = **8 cm**
+   من A، و GK = 12 − 8 = **4 cm**، وهو فعلًا ثلث 12.
+
+:::
+
+> ⚠️ **الخطأ الشائع**: وضع G في **منتصف** الموسّط. كلمة «مركز» توحي بالوسط، فيُغرز العود على بعد
+> 12/2 = 6 cm من A، فتميل الصفيحة. الصحيح AG = 8 cm: النقطة G أقرب إلى K منها إلى A.
+
+> ⚠️ **وخطأ الاتّجاه**: قلب الثلث والثلثين، أي AG = 12/3 = 4 cm، ويقع فيه من يعدّ الأثلاث من K.
+> الثلثان يُحسبان **انطلاقًا من الرأس**: القطعة الطويلة هي AG، والقصيرة هي GK.
+
+::: methode من قطعة إلى أخرى على الموسّط
+الموسّط [AK] ثلاث قطع متقايسة: AG قطعتان، و GK قطعة واحدة.
+
+- إذا عُلم AK: نقسم على 3 فنجد GK = AK/3، ثمّ AG = 2 × GK.
+- إذا عُلم GK وحده: AG = 2 × GK و AK = 3 × GK.
+- إذا عُلم AG وحده: GK = AG/2 ثمّ AK = 3 × GK.
+- **حالة خاصّة**: في مثلّث قائم في A، الموسّط [AK] الصادر من رأس الزاوية القائمة نصفُ الوتر، إذن
+  AG = (2/3) × (BC/2) = BC/3.
+
+:::
+
+::: verifie
+في مثلّث ABC، G مركز الثقل و J منتصف [AC]، و GJ = 3,5 cm. احسب BG وطول الموسّط [BJ].
+
+---
+
+GJ تصل G بمنتصف الضلع J، فهي ثلث الموسّط: قطعة واحدة من ثلاث.
+إذن BG قطعتان: BG = 2 × 3,5 = **7 cm**، والموسّط ثلاث قطع: BJ = 3 × 3,5 = **10,5 cm**.
+التحقّق: (2/3) × 10,5 = 7 ✓.
+:::
+
+::: retenir
+مركز الثقل عند ثلثي الموسّط من الرأس وعند ثلثه من منتصف الضلع: AG = 2 × GK، لا منتصف الموسّط.
+:::
+
 ## 🏆 تطبيقات نظرية طاليس في الحياة
 
 - قياس ارتفاع شجرة أو بناية بظلالها (التشابه عبر الشمس).
