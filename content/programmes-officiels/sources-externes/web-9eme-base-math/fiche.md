@@ -89,6 +89,17 @@ ni l'établissement (fiche [`web-tunitests-tn`](../web-tunitests-tn/fiche.md)).
 Liste machine de l'échantillon (identifiants, pages, fichiers) : hors git, empreinte SHA-256
 `9b0335bb2ad90a06d24d7526fe49756c5f9ed5209f7c3f9577144056a669513e`.
 
+**Addendum — étude 36, le 2026-09-28, avant toute lecture des sujets qu'il ajoute.** Le couple
+entre dans le pipeline du gisement (fusion des études 12 et 27). Les sujets officiels sont du
+corpus officiel (Q-6) : on les lit **tous**, sans choix, pour les transcrire et les reprendre en
+les citant. S'ajoutent ainsi les **36 sujets de mathématiques** que l'archive du Ministère
+(`9web.edunet.tn`) publie en plus des cinq du pilote : filière unique 2001-2008, filière générale
+2009-2021 (sans 2014, absente de l'archive), filière technique 2010-2026 (ids `C01` à `C36`) ; les
+cinq du pilote (`D01` à `D05`) sont relus pour leur transcription. Le registre du couple est
+versionné à côté de cette fiche : [`gisement.json`](./gisement.json) (documents, empreintes,
+missions et leur état) et [`lignes.tsv`](./lignes.tsv) (une ligne anonyme par exercice lu ; la
+colonne des chapitres y donne les slugs du manifeste, déduits des compétences).
+
 ## 3. Carte — ce que les documents font faire
 
 Lu le 2026-09-28 : les 33 documents, **166 exercices** (25 dans les cinq sujets d'examen, 67
