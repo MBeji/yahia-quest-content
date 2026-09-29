@@ -1,0 +1,224 @@
+{
+  "title": "👑 تحدّي الفرض ⭐⭐⭐⭐: ترتيبة عدد أصمّ في معلّم — مستطيل وعلاقات مترية ومساحة",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 21,
+  "questions": [
+    {
+      "prompt": "في معلّم متعامد ومتجانس، نعتبر النقطتين:\nA(−1 ; 0) , C(4 ; 0)\nالنقطة B فاصلتها 2 وترتيبتها موجبة، وتحقّق AB² = 15.\nما الترتيبة الدقيقة للنقطة B ؟\n<svg viewBox=\"0 0 216 200\"><title>رسم للوضعية المعطاة</title><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M14 22 L14 178 M40 22 L40 178 M92 22 L92 178 M118 22 L118 178 M144 22 L144 178 M170 22 L170 178 M196 22 L196 178 M14 178 L196 178 M14 152 L196 152 M14 126 L196 126 M14 74 L196 74 M14 48 L196 48 M14 22 L196 22\"/></g><path d=\"M6.2 100 L203.8 100 M66 185.8 L66 11.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M203.8 100 L195.8 103.6 L195.8 96.4 Z\" fill=\"#0f172a\"/><path d=\"M66 11.6 L69.6 19.6 L62.4 19.6 Z\" fill=\"#0f172a\"/><path d=\"M118 100 L118 22\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"40\" cy=\"100\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"170\" cy=\"100\" r=\"4\" fill=\"#0f172a\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"76\" y=\"95.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">O</text><text x=\"29\" y=\"120\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"181\" y=\"120\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"92\" y=\"117\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"145\" y=\"36\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"12\">x = 2</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√6"
+        },
+        {
+          "id": "b",
+          "text": "2,5",
+          "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel"
+        },
+        {
+          "id": "c",
+          "text": "2√6",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "d",
+          "text": "6",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "في معلّم متعامد ومتجانس تُحسب المسافة بفروق الإحداثيّات: AB² = (2 − (−1))² + (y − 0)² = 3² + y² = 9 + y². والمعطى AB² = 15، فنطرح 9 من الطرفين: y² = 15 − 9 = 6، ومنه y = √6 لأنّ الترتيبة موجبة ✓. تحقّق بطريق ثانٍ: المسقط العمودي لـ B على محور الفواصل هو (2 ; 0)، فيتشكّل مثلّث قائم ضلعاه القائمان 3 و y ووتره √15، وبفيثاغورس y² = 15 − 3² = 6 ✓؛ وبالتعويض 9 + (√6)² = 9 + 6 = 15 ✓. الخطأ الشائع: الاكتفاء بقيمة تقريبيّة فتُكتب الترتيبة 2,5، وهي لا تحقّق الشرط لأنّ 9 + 2,5² = 15,25 لا 15؛ أو التوقّف عند y² = 6 وكتابة 6 دون أخذ الجذر؛ أو نقل 9 دون تغيير إشارته (15 + 9 = 24) فيُوجد y = √24 = 2√6.",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-calculs",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "في معلّم متعامد ومتجانس، نعتبر النقاط:\nA(−1 ; 0) , B(2 ; √6) , C(4 ; 0)\nالنقطة M منتصف [AC]، والنقطة D نظيرة B بالنسبة إلى M.\nما الإحداثيّات الدقيقة للنقطة D ؟\n<svg viewBox=\"0 0 216 200\"><title>رسم للوضعية المعطاة</title><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M14 22 L14 178 M40 22 L40 178 M92 22 L92 178 M118 22 L118 178 M144 22 L144 178 M170 22 L170 178 M196 22 L196 178 M14 178 L196 178 M14 152 L196 152 M14 126 L196 126 M14 74 L196 74 M14 48 L196 48 M14 22 L196 22\"/></g><path d=\"M6.2 100 L203.8 100 M66 185.8 L66 11.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M203.8 100 L195.8 103.6 L195.8 96.4 Z\" fill=\"#0f172a\"/><path d=\"M66 11.6 L69.6 19.6 L62.4 19.6 Z\" fill=\"#0f172a\"/><path d=\"M40 100 L118 36.3 L170 100 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"40\" cy=\"100\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"170\" cy=\"100\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"118\" cy=\"36.3\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"105\" cy=\"100\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"76\" y=\"95.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">O</text><text x=\"29\" y=\"120\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"181\" y=\"120\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"118\" y=\"27.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"96\" y=\"92\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"92\" y=\"117\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1 ; −2,5)",
+          "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel"
+        },
+        {
+          "id": "b",
+          "text": "(1 ; −√6)"
+        },
+        {
+          "id": "c",
+          "text": "(2 ; −2,5)"
+        },
+        {
+          "id": "d",
+          "text": "(2 ; −√6)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المنتصف M هو معدّل إحداثيّات A و C: ((−1 + 4)/2 ; (0 + 0)/2) = (1,5 ; 0). و M منتصف [BD]، فإحداثيّات D هي xD = 2 × 1,5 − 2 = 1 و yD = 2 × 0 − √6 = −√6، أي D(1 ; −√6) ✓. تحقّق بطريق ثانٍ: منتصف [BD] هو ((2 + 1)/2 ; (√6 + (−√6))/2) = (1,5 ; 0) = M ✓. الخطأ الشائع: تقدير ترتيبة D على الرسم فتُكتب −2,5، وهي قيمة تقريبيّة، ومنتصف B و (1 ; −2,5) ليس M لأنّ √6 − 2,5 ≠ 0؛ أو الخلط بين النظيرة بالنسبة إلى نقطة والنظيرة بالنسبة إلى مستقيم: تغيير إشارة الترتيبة وحدها يعطي (2 ; −√6) وهو نظير B بالنسبة إلى محور الفواصل لا إلى النقطة M، ومن جمع الخطأين وجد (2 ; −2,5).",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-calculs",
+        "math.vec.repere-coordonnees"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "في معلّم متعامد ومتجانس، نعتبر النقاط:\nA(−1 ; 0) , B(2 ; √6) , C(4 ; 0)\nاحسب BC². اكتب قيمة BC².\n<svg viewBox=\"0 0 216 200\"><title>رسم للوضعية المعطاة</title><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M14 22 L14 178 M40 22 L40 178 M92 22 L92 178 M118 22 L118 178 M144 22 L144 178 M170 22 L170 178 M196 22 L196 178 M14 178 L196 178 M14 152 L196 152 M14 126 L196 126 M14 74 L196 74 M14 48 L196 48 M14 22 L196 22\"/></g><path d=\"M6.2 100 L203.8 100 M66 185.8 L66 11.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M203.8 100 L195.8 103.6 L195.8 96.4 Z\" fill=\"#0f172a\"/><path d=\"M66 11.6 L69.6 19.6 L62.4 19.6 Z\" fill=\"#0f172a\"/><path d=\"M40 100 L118 36.3 L170 100 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M118 36.3 L170 100\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><circle cx=\"40\" cy=\"100\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"170\" cy=\"100\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"118\" cy=\"36.3\" r=\"4\" fill=\"#0f172a\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"76\" y=\"95.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">O</text><text x=\"29\" y=\"120\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"181\" y=\"120\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"118\" y=\"27.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"92\" y=\"117\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text></g></svg>",
+      "answerKey": {
+        "value": 10
+      },
+      "explanation": "BC² = (4 − 2)² + (0 − √6)² = 2² + (√6)² = 4 + 6 = 10 ✓، ومربّع √6 هو 6 بالضبط. الخطأ الشائع: قراءة الترتيبة 2,5 على الرسم فيُوجد BC² = 4 + 6,25 = 10,25؛ أو اعتبار (−√6)² يساوي −6 فيُوجد 4 − 6 = −2 وهو مستحيل لمربّع طول؛ أو نسيان تربيع الترتيبة فيُكتب 4 + √6.",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-calculs",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "في معلّم متعامد ومتجانس، نعتبر النقاط:\nA(−1 ; 0) , B(2 ; √6) , C(4 ; 0) , D(1 ; −√6)\nللقطرين [AC] و [BD] المنتصف نفسه M(1,5 ; 0)، فالرباعي ABCD متوازي أضلاع.\nاختر كلّ الحجج التي تُثبت أنّ ABCD مستطيل.\n<svg viewBox=\"0 0 216 200\"><title>رسم للوضعية المعطاة</title><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M14 22 L14 178 M40 22 L40 178 M92 22 L92 178 M118 22 L118 178 M144 22 L144 178 M170 22 L170 178 M196 22 L196 178 M14 178 L196 178 M14 152 L196 152 M14 126 L196 126 M14 74 L196 74 M14 48 L196 48 M14 22 L196 22\"/></g><path d=\"M40 100 L118 36.3 L170 100 L92 163.7 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M6.2 100 L203.8 100 M66 185.8 L66 11.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M203.8 100 L195.8 103.6 L195.8 96.4 Z\" fill=\"#0f172a\"/><path d=\"M66 11.6 L69.6 19.6 L62.4 19.6 Z\" fill=\"#0f172a\"/><path d=\"M40 100 L118 36.3 L170 100 L92 163.7 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"40\" cy=\"100\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"170\" cy=\"100\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"118\" cy=\"36.3\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"92\" cy=\"163.7\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"105\" cy=\"100\" r=\"4\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"76\" y=\"95.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">O</text><text x=\"29\" y=\"120\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"181\" y=\"120\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"118\" y=\"27.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"92\" y=\"186.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"95\" y=\"92\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"92\" y=\"117\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "AB² + BC² = 15 + 10 = 25 = AC²، فالزاوية ABC قائمة"
+        },
+        {
+          "id": "b",
+          "text": "AB² + BC² = 25,5 ≈ 25 = AC²، فالزاوية ABC قائمة"
+        },
+        {
+          "id": "c",
+          "text": "BD² = 1² + (2√6)² = 1 + 24 = 25 = AC²، فقطراه متقايسان"
+        },
+        {
+          "id": "d",
+          "text": "قطرا ABCD متعامدان، فهو إذن مستطيل"
+        },
+        {
+          "id": "e",
+          "text": "الأضلاع المتقابلة متقايسة: AB = CD و BC = AD، فهو مستطيل"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "ABCD متوازي أضلاع، وهو مستطيل إذا كانت له زاوية قائمة أو كان قطراه متقايسين. حجّة مجموع المربّعين صحيحة: AB² = 3² + (√6)² = 15 و BC² = 2² + (√6)² = 10، ومجموعهما 25 = 5² = AC²، فبعكس فيثاغورس المثلّث ABC قائم في B ✓. وحجّة تقايس القطرين صحيحة: BD² = (2 − 1)² + (√6 − (−√6))² = 1 + (2√6)² = 1 + 24 = 25 = AC²، فالقطران متقايسان ✓. أمّا بقيّة الحجج فلا تُثبت شيئًا: تعامد القطرين خاصيّة المعيّن، وهو غير متحقّق هنا أصلًا لأنّ (AC) أفقيّ و (BD) ليس عموديًّا؛ والتساوي AB = CD و BC = AD صحيح لكنّه خاصيّة كلّ متوازي أضلاع فلا يميّز المستطيل؛ والقيمة التقريبيّة ليست برهانًا: 25,5 ناتجة عن 15,25 + 10,25 أي عن الترتيبة 2,5 المقروءة على الرسم، والمجموع الحقيقي 25 بالضبط، وعكس فيثاغورس يشترط التساوي التامّ. الخطأ الشائع: نسبة التعامد إلى قطرَي المستطيل، والاكتفاء بأنّ مجموعًا «قريب» من مربّع الوتر.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.quadrilateres",
+        "math.geo.pythagore",
+        "math.vec.repere-calculs"
+      ]
+    },
+    {
+      "prompt": "في معلّم متعامد ومتجانس، ABCD مستطيل رؤوسه:\nA(−1 ; 0) , B(2 ; √6) , C(4 ; 0) , D(1 ; −√6)\nما المساحة الدقيقة للمستطيل ABCD ؟\n<svg viewBox=\"0 0 216 200\"><title>رسم للوضعية المعطاة</title><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M14 22 L14 178 M40 22 L40 178 M92 22 L92 178 M118 22 L118 178 M144 22 L144 178 M170 22 L170 178 M196 22 L196 178 M14 178 L196 178 M14 152 L196 152 M14 126 L196 126 M14 74 L196 74 M14 48 L196 48 M14 22 L196 22\"/></g><path d=\"M40 100 L118 36.3 L170 100 L92 163.7 Z\" fill=\"#0f6e56\" opacity=\"0.16\"/><path d=\"M6.2 100 L203.8 100 M66 185.8 L66 11.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M203.8 100 L195.8 103.6 L195.8 96.4 Z\" fill=\"#0f172a\"/><path d=\"M66 11.6 L69.6 19.6 L62.4 19.6 Z\" fill=\"#0f172a\"/><path d=\"M40 100 L118 36.3 L170 100 L92 163.7 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"40\" cy=\"100\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"170\" cy=\"100\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"118\" cy=\"36.3\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"92\" cy=\"163.7\" r=\"4\" fill=\"#0f172a\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"76\" y=\"95.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">O</text><text x=\"29\" y=\"120\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"181\" y=\"120\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"118\" y=\"27.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"92\" y=\"186.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"92\" y=\"117\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "5",
+          "misconceptionTag": "math.num.racine-produit-transforme-en-somme"
+        },
+        {
+          "id": "b",
+          "text": "(5√6)/2",
+          "misconceptionTag": "math.mes.aire-division-par-deux-appliquee-a-tort"
+        },
+        {
+          "id": "c",
+          "text": "5√6"
+        },
+        {
+          "id": "d",
+          "text": "12,5",
+          "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ABCD مستطيل، فمساحته جداء بعديه: بالمسافة بين الرؤوس AB² = 15 و BC² = 10، أي AB × BC = √15 × √10 = √(15 × 10) = √150 = √(25 × 6) = 5√6 ✓. وقيمتها ≈ 12,25. الخطأ الشائع: حساب المساحة بقيم تقريبيّة مقروءة على الرسم، فيُوجد مثلًا 12,5 وهي ليست 5√6؛ أو قسمة الجداء على 2 كأنّ المستطيل مثلّث فيُوجد مساحة المثلّث ABC وحدها (5√6)/2؛ أو جمع الأعداد تحت الجذرين بدل ضربها: √15 × √10 = √(15 + 10) = √25 = 5.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.quadrilateres",
+        "math.mes.aires",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABC قائم في B مع:\nAB = √15 , BC = √10 , AC = 5\nالمسقط العمودي للنقطة B على (AC) هو النقطة H.\nما الطول الدقيق BH ؟\n<svg viewBox=\"0 0 216 200\"><title>المثلّث ABC القائم في B وارتفاعه BH</title><path d=\"M40 100 L118 36.3 L170 100 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M118 36.3 L118 100\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M118 91 L109 91 L109 100\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M111 42 L116.7 49 L123.7 43.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"100\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"170\" cy=\"100\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"118\" cy=\"36.3\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"118\" cy=\"100\" r=\"4\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"29\" y=\"120\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"181\" y=\"120\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"118\" y=\"27.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"118\" y=\"122\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√6"
+        },
+        {
+          "id": "b",
+          "text": "2,5",
+          "misconceptionTag": "math.geo.hauteur-confondue-avec-mediane"
+        },
+        {
+          "id": "c",
+          "text": "(5√6)/3",
+          "misconceptionTag": "math.geo.relation-aire-mauvais-cote"
+        },
+        {
+          "id": "d",
+          "text": "√30"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "ABC قائم في B ووتره [AC]، و [BH] ارتفاعه الصادر من B. مساحة المثلّث تُحسب مرّتين، بالضلعين القائمين وبالوتر والارتفاع، فـ BH × AC = AB × BC، أي BH × 5 = √15 × √10 = √150 = √(25 × 6) = 5√6، ومنه BH = 5√6 ÷ 5 = √6 ✓. تحقّق: BH = √6 ≈ 2,45 أقصر من الضلعين القائمين AB ≈ 3,87 و BC ≈ 3,16 ✓. الخطأ الشائع: الخلط بين الارتفاع BH والموسّط BM الذي يصل B بمنتصف الوتر M ويساوي نصفه 2,5، والرسم يوحي بأنّ BH قريب منه (√6 ≈ 2,45 لا 2,5)؛ أو ضرب الارتفاع في ضلع قائم بدل الوتر (BH × AB = AC × BC) فيُوجد (5√6)/3 ≈ 4,1، وهو أكبر من الضلع القائم AB ≈ 3,9 وهذا مستحيل لأنّ الارتفاع أقصر من كلّ ضلع؛ أو قسمة √150 على 5 بإدخال 5 تحت الجذر: √(150 ÷ 5) = √30 ≈ 5,5، والصحيح أنّ القسمة على 5 خارج الجذر تقسم ما تحته على 25، فـ √150 ÷ 5 = √(150 ÷ 25) = √6.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.relations-metriques",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "في معلّم متعامد ومتجانس، ABCD مستطيل رؤوسه:\nA(−1 ; 0) , B(2 ; √6) , C(4 ; 0) , D(1 ; −√6)\nمركزه M، و H المسقط العمودي لـ B على (AC)، حيث:\nM(1,5 ; 0) , H(2 ; 0)\nاختر كلّ العبارات الصحيحة.\n<svg viewBox=\"0 0 216 200\"><title>رسم للوضعية المعطاة</title><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M14 22 L14 178 M40 22 L40 178 M92 22 L92 178 M118 22 L118 178 M144 22 L144 178 M170 22 L170 178 M196 22 L196 178 M14 178 L196 178 M14 152 L196 152 M14 126 L196 126 M14 74 L196 74 M14 48 L196 48 M14 22 L196 22\"/></g><path d=\"M6.2 100 L203.8 100 M66 185.8 L66 11.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M203.8 100 L195.8 103.6 L195.8 96.4 Z\" fill=\"#0f172a\"/><path d=\"M66 11.6 L69.6 19.6 L62.4 19.6 Z\" fill=\"#0f172a\"/><path d=\"M40 100 L118 36.3 L170 100 L92 163.7 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M118 36.3 L92 163.7\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M118 36.3 L118 100\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><path d=\"M118 92 L110 92 L110 100\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"100\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"170\" cy=\"100\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"118\" cy=\"36.3\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"92\" cy=\"163.7\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"105\" cy=\"100\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"118\" cy=\"100\" r=\"3.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"76\" y=\"95.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">O</text><text x=\"29\" y=\"120\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"181\" y=\"120\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"118\" y=\"27.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"92\" y=\"186.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"94\" y=\"93\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text><text x=\"123\" y=\"122\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"92\" y=\"117\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "MA = MB = MC = MD"
+        },
+        {
+          "id": "b",
+          "text": "BH² = AH + HC"
+        },
+        {
+          "id": "c",
+          "text": "BH × AC = AB × BC"
+        },
+        {
+          "id": "d",
+          "text": "BH = AH × HC"
+        },
+        {
+          "id": "e",
+          "text": "BH² = AH × HC"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "MA = MB = MC = MD صحيحة ✓: قطرا المستطيل متقايسان ويتقاطعان في منتصفيهما، فكلّ نصف قطر يساوي AC/2 = 2,5؛ وبالحساب MB² = (2 − 1,5)² + (√6)² = 0,25 + 6 = 6,25 و MD² = (1 − 1,5)² + (−√6)² = 0,25 + 6 = 6,25. BH × AC = AB × BC صحيحة ✓: √6 × 5 = 5√6 و √15 × √10 = √150 = 5√6، وهي مساحة المثلّث ABC محسوبة مرّتين. BH² = AH × HC صحيحة ✓: AH = 2 − (−1) = 3 و HC = 4 − 2 = 2، وجداؤهما 6 = (√6)² = BH². أمّا BH² = AH + HC فخاطئة: AH + HC = 3 + 2 = 5 بينما BH² = 6، فمربّع الارتفاع جداء القطعتين لا مجموعهما. و BH = AH × HC خاطئة: الجداء AH × HC = 6 هو مربّع الارتفاع، أمّا BH فيساوي √6 ≈ 2,45. الخطأ الشائع: جمع القطعتين بدل ضربهما، ونسيان أنّ العلاقة تعطي مربّع الارتفاع لا الارتفاع نفسه.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.relations-metriques",
+        "math.geo.quadrilateres",
+        "math.vec.repere-calculs"
+      ]
+    }
+  ]
+}
