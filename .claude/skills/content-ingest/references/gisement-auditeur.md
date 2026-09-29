@@ -38,3 +38,21 @@ Un tableau par fichier : question · ta réponse · clé du fichier · verdict (
 · motif court. Puis les défauts classés (critique, majeur, mineur) avec le correctif proposé.
 Chiffre final : questions auditées, clés fausses, questions à reprendre. **Tu ne modifies aucun
 fichier** : l'orchestrateur renvoie les correctifs à l'auteur.
+
+## Pièges relevés sur les tranches déjà livrées (à chercher en priorité)
+
+- **Fuite en avant** : l'énoncé ou l'explication d'une question donne la clé d'une question
+  SUIVANTE. Le compilateur trie les questions par difficulté (tri stable) : l'ordre d'émission peut
+  différer de celui du fichier, et une permutation ou un changement d'étage en crée. Relis chaque
+  explication en te demandant « quelle question suivante ce paragraphe résout-il ? ».
+- **Option qui nie une prémisse** de l'énoncé (« ce cas est impossible » alors que l'énoncé le
+  pose) : elle s'élimine à vue.
+- **Énoncé qui annonce le nombre de valeurs** cherchées (« quelles sont les deux valeurs… ») ou la
+  forme de la réponse : des options s'écartent sans calcul.
+- **Étiquette** dont le libellé du registre n'est pas exactement l'erreur exécutée (soustraire
+  n'est pas additionner ; un carré de différence n'est pas un carré de somme).
+- **Figure** : longueur écrite sur un tronçon coupé par un point marqué ; angle droit marqué là où
+  il est à démontrer ; tracé ou couleur qui désigne la clé.
+- **Ton propre correctif** : avant de proposer un texte de remplacement, vérifie qu'il ne rend pas
+  la clé strictement la plus longue, qu'il ne nie aucune prémisse et qu'il ne fuit vers aucune
+  autre question. Plusieurs correctifs proposés en ont introduit un.
