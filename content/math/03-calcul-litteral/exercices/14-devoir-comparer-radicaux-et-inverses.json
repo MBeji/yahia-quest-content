@@ -1,0 +1,263 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: مقارنة أعداد فيها جذور وترتيب مقلوباتها",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 14,
+  "questions": [
+    {
+      "prompt": "نضع:\na = √11 − 3\nb = 4 − √11\nc = √10 − 4\nما إشارة كلٍّ من a و b و c على التوالي؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "a موجب و b موجب و c سالب"
+        },
+        {
+          "id": "b",
+          "text": "a سالب و b موجب و c سالب",
+          "misconceptionTag": "math.num.comparaison-radical-et-entier"
+        },
+        {
+          "id": "c",
+          "text": "a موجب و b سالب و c موجب",
+          "misconceptionTag": "math.num.comparaison-radical-et-entier"
+        },
+        {
+          "id": "d",
+          "text": "a موجب و b موجب و c موجب",
+          "misconceptionTag": "math.num.comparaison-radical-et-entier"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نقارن كلّ جذر بالعدد الصحيح بمقارنة المربّعين. 11 > 9 فـ √11 > 3 ، إذن a = √11 − 3 موجب. و 11 < 16 فـ √11 < 4 ، إذن b = 4 − √11 موجب. و 10 < 16 فـ √10 < 4 ، إذن c = √10 − 4 سالب ✓. الخطأ الشائع مقارنة العدد الموجود تحت الجذر بالعدد الصحيح مباشرةً: من قارن 4 مع 11 حكم على b بأنّه سالب، ومن قارن 10 مع 4 حكم على c بأنّه موجب ؛ ومن ظنّ أنّ √11 أصغر من 3 حكم على a بأنّه سالب. والصواب مقارنة مربّعَي العددين، أي 10 مع 4² = 16.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نضع a = √11 − 3 و b = 4 − √11. ما الكتابة المبسّطة للفرق a − b ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "7 − 2√11"
+        },
+        {
+          "id": "b",
+          "text": "2√11 − 7"
+        },
+        {
+          "id": "c",
+          "text": "√22 − 7",
+          "misconceptionTag": "math.num.radicaux-semblables-radicande-additionne"
+        },
+        {
+          "id": "d",
+          "text": "−7",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "a − b = (√11 − 3) − (4 − √11) = √11 − 3 − 4 + √11 = 2√11 − 7 ✓، لأنّ الإشارة السالبة أمام القوس تقلب إشارة الحدّين معًا، ثمّ نجمع الجذرين المتشابهين √11 + √11 = 2√11 ونجمع العددين −3 − 4 = −7. الخطأ الشائع إبقاء إشارة الحدّ √11 الثاني كما هي فيتلاشى الجذران ويخرج −7 ؛ ومن جمع ما تحت الجذرين كتب √11 + √11 = √22 فوجد √22 − 7 ؛ أمّا 7 − 2√11 فهو الفرق المعاكس b − a.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "a و b عددان موجبان، ونعلم أنّ:\na − b = 2√11 − 7\nc = √10 − 4\nرتّب تصاعديًّا الأعداد a و b و c.",
+      "options": [
+        {
+          "id": "a",
+          "text": "c < b < a",
+          "misconceptionTag": "math.num.comparaison-radical-et-entier"
+        },
+        {
+          "id": "b",
+          "text": "b < a < c",
+          "misconceptionTag": "math.num.comparaison-radical-et-entier"
+        },
+        {
+          "id": "c",
+          "text": "a < b < c",
+          "misconceptionTag": "math.num.comparaison-radical-et-entier"
+        },
+        {
+          "id": "d",
+          "text": "c < a < b"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "أوّلًا c سالب (لأنّ 10 < 16) بينما a و b موجبان، فـ c هو الأصغر. ثمّ نقارن a و b بإشارة الفرق a − b = 2√11 − 7 : (2√11)² = 4 × 11 = 44 و 7² = 49، وبما أنّ 44 < 49 والعددان موجبان فإنّ 2√11 < 7 ، إذن a − b < 0 أي a < b. الترتيب: c < a < b ✓ (تقريبًا −0,84 < 0,32 < 0,68). الخطأ الشائع مقارنة 11 مع 7 مباشرةً، دون إدخال المعامل 2 تحت الجذر ودون تربيع العدد 7، فيُحكم أنّ 2√11 > 7 أي a > b ؛ أو اعتبار c موجبًا بمقارنة 10 مع 4 مباشرةً فيوضع في آخر الترتيب.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "a و b موجبان و c سالب، ومربّعاتها مرتّبة كما يلي:\na² < b² < c² < 1\nرتّب تصاعديًّا الأعداد −1 و −a و −b و c.",
+      "options": [
+        {
+          "id": "a",
+          "text": "−a < −b < c < −1",
+          "misconceptionTag": "math.num.ordre-des-negatifs-inverse"
+        },
+        {
+          "id": "b",
+          "text": "−1 < −a < −b < c",
+          "misconceptionTag": "math.num.ordre-des-negatifs-inverse"
+        },
+        {
+          "id": "c",
+          "text": "−1 < c < −b < −a"
+        },
+        {
+          "id": "d",
+          "text": "c < −b < −a < −1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المربّعات تقارن القيم المطلقة: |a| < |b| < |c| < 1. والأعداد −1 و −a و −b و c كلّها سالبة، والعدد السالب يكون أصغر كلّما كبرت قيمته المطلقة، فالترتيب ينقلب: −1 < c < −b < −a ✓. والتحقّق بمثال: a = 0,32 و b = 0,68 و c = −0,84 (مربّعاتها 0,10 < 0,46 < 0,71 < 1) : −1 < −0,84 < −0,68 < −0,32. الخطأ الشائع ترتيب السوالب كما تُرتّب الموجبات باتّباع ترتيب المربّعات، فيخرج −a < −b < c < −1 ؛ ومن طبّق القاعدة على −1 وحده وأبقى الباقي بترتيب المربّعات وجد −1 < −a < −b < c ؛ ومن قلب ترتيب −a و −b و c ثمّ وضع −1 في آخر الترتيب وجد c < −b < −a < −1.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "إذا كان a عددًا حقيقيًّا يحقّق:\n0 < a < 1\nفأيّ ترتيب تصاعدي صحيح للأعداد a² و a و √a ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "a² < a < √a"
+        },
+        {
+          "id": "b",
+          "text": "a < a² < √a",
+          "misconceptionTag": "math.num.carre-et-racine-entre-zero-et-un"
+        },
+        {
+          "id": "c",
+          "text": "a² < √a < a",
+          "misconceptionTag": "math.num.carre-et-racine-entre-zero-et-un"
+        },
+        {
+          "id": "d",
+          "text": "√a < a < a²",
+          "misconceptionTag": "math.num.carre-et-racine-entre-zero-et-un"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "لدينا a² − a = a(a − 1) وهو سالب لأنّ a موجب و a − 1 سالب، إذن a² < a : تربيع عدد محصور بين 0 و 1 يصغّره. وللمقارنة بين a و √a نقارن مربّعيهما : a² و a ، والعددان موجبان ومربّع الأوّل أصغر، إذن a < √a : جذر عدد محصور بين 0 و 1 يكبّره. الترتيب: a² < a < √a ✓. وفي مثالنا (a = √11 − 3 ≈ 0,32) نجد 0,10 < 0,32 < 0,56. الخطأ الشائع قياس القوّة على الأعداد الأكبر من 1 : من ظنّ أنّ التربيع يكبّر دائمًا كتب a < a² ، ومن ظنّ أنّ الجذر يصغّر دائمًا كتب √a < a.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.racines-definition"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "علمًا أنّ:\n−1 < c < 0\n0 < a < 1\nاختر كلّ المقارنات الصحيحة.",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/c < c"
+        },
+        {
+          "id": "b",
+          "text": "1/c < −1"
+        },
+        {
+          "id": "c",
+          "text": "1/a > 1"
+        },
+        {
+          "id": "d",
+          "text": "1/a < a"
+        },
+        {
+          "id": "e",
+          "text": "1/c < 0"
+        },
+        {
+          "id": "f",
+          "text": "c + 1/c > 0"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "الصحيحة أربع. العددان c و −1 سالبان ولهما العلامة نفسها، ومن −1 < c نستنتج بقلب الترتيب أنّ 1/c < 1/(−1) = −1 ✓، أي 1/c < −1 < c : إذن 1/c < c ✓ وكذلك 1/c < 0 ✓. و a موجب وأصغر من 1 ، وبقلب الترتيب مع العدد الموجب 1 نجد 1/a > 1/1 = 1 ✓ ، أي 1/a > 1 > a. أمّا الخاطئة فاثنتان: 1/a < a خاطئة لأنّ 1/a > 1 > a ؛ و c + 1/c > 0 خاطئة لأنّ مجموع عددين سالبين سالب. مثال: c = −0,5 ومقلوبه −2 ، و a = 0,25 ومقلوبه 4. وفي مثال c = √10 − 4 ≈ −0,84 و a = √11 − 3 ≈ 0,32 نجد 1/c ≈ −1,19 و 1/a ≈ 3,16.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "نضع:\na = √11 − 3\nأيّ حصر صحيح للعدد 1/a ؟ (نُنطق المقام بضرب البسط والمقام في √11 + 3.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 < 1/a < 1"
+        },
+        {
+          "id": "b",
+          "text": "1,5 < 1/a < 2"
+        },
+        {
+          "id": "c",
+          "text": "3 < 1/a < 3,5"
+        },
+        {
+          "id": "d",
+          "text": "6 < 1/a < 7"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نضرب البسط والمقام في √11 + 3 : 1/a = (√11 + 3)/((√11 − 3)(√11 + 3)) = (√11 + 3)/(11 − 9) = (√11 + 3)/2. ولدينا 3 < √11 < 4 (لأنّ 9 < 11 < 16)، إذن 6 < √11 + 3 < 7 ، وبالقسمة على 2 : 3 < 1/a < 3,5 ✓. والتحقّق: 1/a ≈ 3,16. الخطأ الشائع نسيان القسمة على 2 فيخرج 6 < 1/a < 7 ؛ أو نسيان الحدّ 3 في البسط فيخرج 1,5 < 1/a < 2 ؛ ومن ظنّ أنّ مقلوب عدد محصور بين 0 و 1 يبقى صغيرًا وجد 0 < 1/a < 1.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.racines-calcul",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ:\n0 < a < b < 1\n−1 < c < 0\nأيّ ترتيب تصاعدي صحيح للأعداد a و b و c و 1/a و 1/b و 1/c ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "c < 1/c < a < b < 1/b < 1/a"
+        },
+        {
+          "id": "b",
+          "text": "1/c < c < a < b < 1/b < 1/a"
+        },
+        {
+          "id": "c",
+          "text": "1/c < c < a < b < 1/a < 1/b",
+          "misconceptionTag": "math.num.inverse-conserve-l-ordre"
+        },
+        {
+          "id": "d",
+          "text": "c < 1/c < a < b < 1/a < 1/b",
+          "misconceptionTag": "math.num.inverse-conserve-l-ordre"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نجمع ما سبق. c و −1 سالبان ولهما العلامة نفسها ومن −1 < c نقلب الترتيب فنجد 1/c < −1 < c ، أي 1/c < c. و 0 < a < b < 1 : بأخذ المقلوب نقلب ترتيب الموجبين فيكون 1/b < 1/a ، وبمقارنتهما مع العدد 1 نجد أنّ كليهما أكبر من 1 وبالتالي أكبر من a و b. وكلّ سالب أصغر من كلّ موجب. الترتيب: 1/c < c < a < b < 1/b < 1/a ✓. وفي مثالنا (a = √11 − 3 و b = 4 − √11 و c = √10 − 4) : −1,19 < −0,84 < 0,32 < 0,68 < 1,46 < 3,16. الخطأ الشائع نقل قاعدة الموجب إلى السالب فيخرج c < 1/c ؛ أو الاحتفاظ بترتيب الموجبين عند أخذ المقلوبين فيخرج 1/a < 1/b ؛ وقد يجتمع الخطآن فيخرج c < 1/c < a < b < 1/a < 1/b.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    }
+  ]
+}

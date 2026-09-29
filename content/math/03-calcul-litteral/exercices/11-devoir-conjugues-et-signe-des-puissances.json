@@ -1,0 +1,218 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: من جداء مرافقَين إلى قوّة عدد سالب",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 11,
+  "questions": [
+    {
+      "prompt": "نضع:\nu = 2 − √7\nv = 2 + √7\nما قيمة الجداء u × v ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3"
+        },
+        {
+          "id": "b",
+          "text": "4 − √7",
+          "misconceptionTag": "math.alg.difference-carres-second-terme-non-eleve-au-carre"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "11",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الجداء (2 − √7)(2 + √7) هو فرق مربّعين: 2² − (√7)² = 4 − 7 = −3 ✓، والتحقّق بالنشر: 4 + 2√7 − 2√7 − 7 = −3. الخطأ الشائع جمع المربّعين فيخرج 4 + 7 = 11 ، أو عدم تربيع √7 فيبقى 4 − √7 ، أو عكس ترتيب الطرح فيخرج 7 − 4 = 3 ؛ والعدد 2 هو الحدّ الأوّل في العاملين، فمربّعه 4 هو الذي يُطرح منه مربّع √7 لا العكس.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ:\nu² = 11 − 4√7\nv² = 11 + 4√7\nما قيمة الجداء u² × v² ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−9",
+          "misconceptionTag": "math.num.puissance-signe-parite-exposant"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "93"
+        },
+        {
+          "id": "d",
+          "text": "233",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "طريقتان تتّفقان. الأولى بالنشر: (11 − 4√7)(11 + 4√7) = 11² − (4√7)² = 121 − 112 = 9 ✓، لأنّ (4√7)² = 16 × 7 = 112. والثانية بخاصيّة الجداء: u² × v² = (u × v)²، وقد وجدنا في السؤال الأوّل أنّ u × v = −3، إذن (−3)² = 9 ✓. الخطأ الشائع في الطريقة الثانية كتابة (−3)² = −9، مع أنّ الأساس سالب والدليل 2 زوجي فالنتيجة موجبة. ومن جمع المربّعين في الطريقة الأولى وجد 121 + 112 = 233، ومن ربّع العدد 7 وحده دون المعامل 4 وجد 121 − 28 = 93.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.puissances",
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ العدد v = 2 + √7 موجب، وأنّ:\nu × v = −3\nأيّ الأعداد التالية موجب؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "u⁹",
+          "misconceptionTag": "math.num.puissance-signe-parite-exposant"
+        },
+        {
+          "id": "b",
+          "text": "−u¹⁰",
+          "misconceptionTag": "math.num.puissance-signe-moins-hors-de-la-base"
+        },
+        {
+          "id": "c",
+          "text": "(−u)⁹"
+        },
+        {
+          "id": "d",
+          "text": "(uv)⁹",
+          "misconceptionTag": "math.num.puissance-signe-parite-exposant"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الجداء u × v سالب و v موجب، إذن u سالب (ويؤكّد ذلك u = 2 − √7 ≈ −0,65). إذن −u موجب، وكلّ قوّة لعدد موجب موجبة، فـ (−u)⁹ موجب ✓. أمّا u⁹ فأساسه سالب ودليله 9 فردي فهو سالب ؛ و (uv)⁹ = (−3)⁹ سالب للسبب نفسه. الخطأ الشائع في −u¹⁰ اعتباره (−u)¹⁰: القوّة تخصّ u وحده، وu¹⁰ موجب (دليل زوجي)، فالإشارة السالبة الموضوعة أمام النتيجة تجعله سالبًا.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.puissances",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "علمًا أنّ:\nu × v = −3\nما قيمة الجداء u⁵ × v⁵ ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−243"
+        },
+        {
+          "id": "b",
+          "text": "−15",
+          "misconceptionTag": "math.num.puissance-confondue-avec-produit"
+        },
+        {
+          "id": "c",
+          "text": "243",
+          "misconceptionTag": "math.num.puissance-signe-parite-exposant"
+        },
+        {
+          "id": "d",
+          "text": "59049",
+          "misconceptionTag": "math.num.puissances-base-multipliee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "للعاملين الدليل نفسه 5 وأساساهما مختلفان، فنطبّق خاصيّة الجداء ونختصر في قوّة وحيدة: u⁵ × v⁵ = (u × v)⁵ = (−3)⁵ = −243 ✓، لأنّ الأساس سالب والدليل 5 فردي فالنتيجة سالبة. الخطأ الشائع نسيان الإشارة فيُكتب 243 ؛ أو جمع الدليلين مع ضرب الأساسين فيُكتب (uv)¹⁰ = (−3)¹⁰ = 59049، مع أنّ جمع الدليلين يشترط الأساس نفسه ؛ ومن ضرب الأساس في الدليل وجد (−3) × 5 = −15.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.puissances"
+      ]
+    },
+    {
+      "prompt": "علمًا أنّ:\nu × v = −3\nنعتبر العدد التالي:\nE = u⁷ × v⁷ ÷ (−3)⁹\nاكتب E في صيغة قوّة وحيدة أساسها −3.",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3⁻²",
+          "misconceptionTag": "math.num.puissance-signe-moins-hors-de-la-base"
+        },
+        {
+          "id": "b",
+          "text": "(−3)⁻²"
+        },
+        {
+          "id": "c",
+          "text": "(−3)²"
+        },
+        {
+          "id": "d",
+          "text": "(−3)¹⁶",
+          "misconceptionTag": "math.num.puissances-quotient-exposants-additionnes"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نجمع أوّلًا العاملين ذوي الدليل نفسه: u⁷ × v⁷ = (u × v)⁷ = (−3)⁷. ثمّ نقسم قوّتين لهما الأساس نفسه فنطرح الدليلين: (−3)⁷ ÷ (−3)⁹ = (−3)^(7 − 9) = (−3)⁻² ✓، وقيمتها 1/9. الخطأ الشائع جمع الدليلين في القسمة فيخرج (−3)¹⁶ ، أو طرحهما بالترتيب المعاكس فيخرج (−3)². ومن كتب −3⁻² أخرج الإشارة من الأساس: القوسان هما اللذان يجعلان −3 هو الأساس.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.puissances"
+      ]
+    },
+    {
+      "prompt": "نضع:\nu = 2 − √7\nما قيمة العدد (u − 2)⁶ ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−343",
+          "misconceptionTag": "math.num.puissance-signe-parite-exposant"
+        },
+        {
+          "id": "b",
+          "text": "−6√7",
+          "misconceptionTag": "math.num.puissance-confondue-avec-produit"
+        },
+        {
+          "id": "c",
+          "text": "49"
+        },
+        {
+          "id": "d",
+          "text": "343"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "أوّلًا u − 2 = (2 − √7) − 2 = −√7 ، فالمطلوب (−√7)⁶. الأساس سالب والدليل 6 زوجي فالنتيجة موجبة: (−√7)⁶ = (√7)⁶ = ((√7)²)³ = 7³ = 343 ✓. الخطأ الشائع اعتبار الإشارة السالبة باقية فيُكتب −343 ؛ أو ضرب الأساس في الدليل فيخرج −6√7 ؛ ومن اختصر ((√7)²)³ في 7² نسي أنّ 6 = 2 × 3 فوجد 49.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.puissances",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نضع:\nu = 2 − √7\nv = 2 + √7\nونعلم أنّ u × v = −3. واحد فقط من الاقتراحات التالية خاطئ. حدّده.",
+      "options": [
+        {
+          "id": "a",
+          "text": "u⁶ < 0"
+        },
+        {
+          "id": "b",
+          "text": "v⁶ > 0"
+        },
+        {
+          "id": "c",
+          "text": "u⁶ × v⁶ = 729"
+        },
+        {
+          "id": "d",
+          "text": "u⁷ × v⁷ = −2187"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الاقتراح الخاطئ هو u⁶ < 0. صحيح أنّ u سالب، لكنّ الدليل 6 زوجي فالعوامل السالبة تتلاشى إشاراتها مثنى مثنى وu⁶ موجب: كلّ قوّة زوجية لعدد غير معدوم موجبة ✓. أمّا الباقي فصحيح: v⁶ موجب لأنّ v موجب ؛ و u⁶ × v⁶ = (uv)⁶ = (−3)⁶ = 729 ؛ و u⁷ × v⁷ = (uv)⁷ = (−3)⁷ = −2187 لأنّ الدليل 7 فردي.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.puissances"
+      ]
+    }
+  ]
+}
