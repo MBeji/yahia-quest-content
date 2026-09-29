@@ -1,0 +1,249 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: الرأس الرابع والزاوية القائمة ومجموعة نقاط",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "في معلّم متعامد ومتجانس، نعتبر النقاط A(−2 ; 3) و B(−1 ; 1) و C(3 ; 3). ما إحداثيّات النقطة K منتصف القطعة [AC] ؟\n<svg viewBox=\"0 0 212 236\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M22 22 V214 M46 22 V214 M70 22 V214 M118 22 V214 M142 22 V214 M166 22 V214 M190 22 V214\"/><path d=\"M22 214 H190 M22 190 H190 M22 142 H190 M22 118 H190 M22 94 H190 M22 70 H190 M22 46 H190 M22 22 H190\"/></g><path d=\"M16 166 H200 M94 220 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M191 161 L201 166 L191 171 Z M89 21 L94 11 L99 21 Z\" fill=\"#0f172a\"/><path d=\"M46 94 L70 142 L166 94 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M46 94 L166 94\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"46\" cy=\"94\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"70\" cy=\"142\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"166\" cy=\"94\" r=\"4\" fill=\"#0f172a\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"104\" y=\"159\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"118\" y=\"181\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"35\" y=\"86\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"57\" y=\"148\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"177\" y=\"86\" text-anchor=\"middle\" fill=\"#0f172a\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(0,5 ; 3)"
+        },
+        {
+          "id": "b",
+          "text": "(1 ; 6)",
+          "misconceptionTag": "math.vec.milieu-sans-moitie"
+        },
+        {
+          "id": "c",
+          "text": "(2,5 ; 0)"
+        },
+        {
+          "id": "d",
+          "text": "(3 ; 0,5)",
+          "misconceptionTag": "math.vec.coordonnees-point-inversees"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "xK = (xA + xC)/2 = (−2 + 3)/2 = 1/2 = 0,5 و yK = (yA + yC)/2 = (3 + 3)/2 = 3، إذن K(0,5 ; 3) ✓. الخطأ الشائع: الاكتفاء بمجموع الإحداثيّات (1 ; 6) دون القسمة على 2. والنقطة (2,5 ; 0) تأتي من نصف الفرقين (3 − (−2))/2 و (3 − 3)/2: نصف الفرق لا يعطي المنتصف. أمّا (3 ; 0,5) فتقلب الفاصلة والترتيبة.",
+      "difficulty": 1,
+      "competencies": [
+        "math.vec.repere-calculs"
+      ]
+    },
+    {
+      "prompt": "النقاط A(−2 ; 3) و B(−1 ; 1) و C(3 ; 3)، و K(0,5 ; 3) منتصف [AC]. ما إحداثيّات النقطة D التي تجعل الرباعي ABCD متوازي أضلاع؟\n<svg viewBox=\"0 0 212 236\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M22 22 V214 M46 22 V214 M70 22 V214 M118 22 V214 M142 22 V214 M166 22 V214 M190 22 V214\"/><path d=\"M22 214 H190 M22 190 H190 M22 142 H190 M22 118 H190 M22 94 H190 M22 70 H190 M22 46 H190 M22 22 H190\"/></g><path d=\"M16 166 H200 M94 220 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M191 161 L201 166 L191 171 Z M89 21 L94 11 L99 21 Z\" fill=\"#0f172a\"/><path d=\"M46 94 L70 142 L166 94 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><circle cx=\"46\" cy=\"94\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"70\" cy=\"142\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"166\" cy=\"94\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"106\" cy=\"94\" r=\"4\" fill=\"#0f6e56\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"104\" y=\"159\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"118\" y=\"181\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"35\" y=\"86\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"57\" y=\"148\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"177\" y=\"86\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"107\" y=\"84\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−6 ; 1)"
+        },
+        {
+          "id": "b",
+          "text": "(0 ; 5)"
+        },
+        {
+          "id": "c",
+          "text": "(2 ; 5)"
+        },
+        {
+          "id": "d",
+          "text": "(4 ; 1)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "في ABCD القطران هما [AC] و [BD]، فـ K منتصف [BD] أيضًا: xD = 2xK − xB = 2 × 0,5 − (−1) = 2 و yD = 2yK − yB = 2 × 3 − 1 = 5، إذن D(2 ; 5) ✓. التحقّق: منتصف [BD] هو ((−1 + 2)/2 ; (1 + 5)/2) = (0,5 ; 3)، وهو K منتصف [AC] ✓. الخطأ الشائع: الخطأ في ترتيب الرؤوس، فالنقطة (4 ; 1) تجعل ABDC متوازي أضلاع، والنقطة (−6 ; 1) تجعل ACBD متوازي أضلاع، لا ABCD. أمّا (0 ; 5) فتحسب 2 × 0,5 − 1 بدل 2 × 0,5 − (−1).",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-calculs",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "النقطتان A(−2 ; 3) و B(−1 ; 1). ما إحداثيّات النقطة E نظيرة A بالنسبة إلى B ؟\n<svg viewBox=\"0 0 212 236\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M22 22 V214 M46 22 V214 M70 22 V214 M118 22 V214 M142 22 V214 M166 22 V214 M190 22 V214\"/><path d=\"M22 214 H190 M22 190 H190 M22 142 H190 M22 118 H190 M22 94 H190 M22 70 H190 M22 46 H190 M22 22 H190\"/></g><path d=\"M16 166 H200 M94 220 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M191 161 L201 166 L191 171 Z M89 21 L94 11 L99 21 Z\" fill=\"#0f172a\"/><path d=\"M46 94 L70 142\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M70 142 L84.4 170.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"46\" cy=\"94\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"70\" cy=\"142\" r=\"4\" fill=\"#0f172a\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"104\" y=\"159\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"118\" y=\"181\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"35\" y=\"86\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"57\" y=\"148\" text-anchor=\"middle\" fill=\"#0f172a\">B</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−3 ; 5)"
+        },
+        {
+          "id": "b",
+          "text": "(−1,5 ; 2)"
+        },
+        {
+          "id": "c",
+          "text": "(0 ; −1)"
+        },
+        {
+          "id": "d",
+          "text": "(1 ; −2)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "E نظيرة A بالنسبة إلى B يعني أنّ B منتصف [AE]: xE = 2xB − xA = 2 × (−1) − (−2) = 0 و yE = 2yB − yA = 2 × 1 − 3 = −1، إذن E(0 ; −1) ✓. التحقّق: منتصف [AE] هو ((−2 + 0)/2 ; (3 + (−1))/2) = (−1 ; 1) = B. الخطأ الشائع: قلب الدورين، فنحسب نظيرة B بالنسبة إلى A وهي (−3 ; 5). والنقطة (−1,5 ; 2) منتصف [AB] لا النظيرة، أمّا (1 ; −2) فيأتي من طرح إحداثيّتَي A من إحداثيّتَي B، (−1 − (−2) ; 1 − 3)، وهذا الفرق ليس النظيرة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-calculs"
+      ]
+    },
+    {
+      "prompt": "النقاط A(−2 ; 3) و B(−1 ; 1) و C(3 ; 3). احسب AB² و BC² و AC². أيّ مساواة صحيحة؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "AB + BC = AC",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "b",
+          "text": "AB² + AC² = BC²",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "c",
+          "text": "AC² + BC² = AB²",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "d",
+          "text": "AB² + BC² = AC²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "AB² = (−1 − (−2))² + (1 − 3)² = 1 + 4 = 5 و BC² = (3 − (−1))² + (3 − 1)² = 16 + 4 = 20 و AC² = (3 − (−2))² + 0² = 25. المساواة الوحيدة الصحيحة: AB² + BC² = 5 + 20 = 25 = AC² ✓، فبعكس نظرية فيثاغورس المثلّث ABC قائم الزاوية في B، الرأس المقابل لأطول ضلع [AC]. الخطأ الشائع: وضع ضلع غير الأطول وحده في طرف، كما في AB² + AC² = BC² حيث 5 + 25 ≠ 20. أمّا AB + BC = AC فتنسى التربيع: √5 + 2√5 = 3√5 ≠ 5.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.vec.repere-calculs"
+      ]
+    },
+    {
+      "prompt": "ABCD متوازي أضلاع حيث A(−2 ; 3) و B(−1 ; 1) و C(3 ; 3) و D(2 ; 5)، والمثلّث ABC قائم الزاوية في B. ما أدقّ وصف للرباعي ABCD ؟\n<svg viewBox=\"0 0 212 236\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M22 22 V214 M46 22 V214 M70 22 V214 M118 22 V214 M142 22 V214 M166 22 V214 M190 22 V214\"/><path d=\"M22 214 H190 M22 190 H190 M22 142 H190 M22 118 H190 M22 94 H190 M22 70 H190 M22 46 H190 M22 22 H190\"/></g><path d=\"M16 166 H200 M94 220 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M191 161 L201 166 L191 171 Z M89 21 L94 11 L99 21 Z\" fill=\"#0f172a\"/><path d=\"M46 94 L70 142 L166 94 L142 46 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M46 94 L70 142 L166 94 L142 46 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M65.1 132.2 L74.9 127.2 L79.8 137.1\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"46\" cy=\"94\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"70\" cy=\"142\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"166\" cy=\"94\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"142\" cy=\"46\" r=\"4\" fill=\"#0f172a\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"104\" y=\"159\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"118\" y=\"181\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"35\" y=\"86\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"57\" y=\"148\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"177\" y=\"86\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"153\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "متوازي أضلاع",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "id": "b",
+          "text": "مستطيل"
+        },
+        {
+          "id": "c",
+          "text": "معيّن"
+        },
+        {
+          "id": "d",
+          "text": "مربّع",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "ABCD متوازي أضلاع له زاوية قائمة في B، فهو مستطيل ✓. ونتحقّق بالقطرين: AC = 5 و BD = √((2 − (−1))² + (5 − 1)²) = √(9 + 16) = 5، فهما متقايسان. وليس مربّعًا ولا معيّنًا لأنّ ضلعيه المتتاليين غير متقايسين: AB = √5 و BC = √20 = 2√5. الخطأ الشائع: التوقّف عند «متوازي أضلاع»، أو القفز إلى «مربّع» لمجرّد وجود زاوية قائمة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "ABCD متوازي أضلاع زاويته ABC قائمة، حيث A(−2 ; 3) و B(−1 ; 1) و C(3 ; 3) و D(2 ; 5)، و K(0,5 ; 3) منتصف [AC]، و E(0 ; −1). اختر كلّ النقاط التي تنتمي إلى الدائرة التي قطرها [AC].\n<svg viewBox=\"0 0 212 236\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M22 22 V214 M46 22 V214 M70 22 V214 M118 22 V214 M142 22 V214 M166 22 V214 M190 22 V214\"/><path d=\"M22 214 H190 M22 190 H190 M22 142 H190 M22 118 H190 M22 94 H190 M22 70 H190 M22 46 H190 M22 22 H190\"/></g><path d=\"M16 166 H200 M94 220 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M191 161 L201 166 L191 171 Z M89 21 L94 11 L99 21 Z\" fill=\"#0f172a\"/><path d=\"M46 94 L70 142 L166 94 L142 46 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M46 94 L166 94\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"46\" cy=\"94\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"70\" cy=\"142\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"166\" cy=\"94\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"142\" cy=\"46\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"106\" cy=\"94\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"94\" cy=\"190\" r=\"4\" fill=\"#0f172a\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"104\" y=\"159\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"118\" y=\"181\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"35\" y=\"86\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"57\" y=\"148\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"177\" y=\"86\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"153\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"107\" y=\"84\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text><text x=\"106\" y=\"202\" text-anchor=\"middle\" fill=\"#0f172a\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "B"
+        },
+        {
+          "id": "b",
+          "text": "D"
+        },
+        {
+          "id": "c",
+          "text": "E"
+        },
+        {
+          "id": "d",
+          "text": "P(0,5 ; 5,5)"
+        },
+        {
+          "id": "e",
+          "text": "Q(2 ; 3,5)"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "مركز الدائرة K(0,5 ; 3) منتصف [AC]، ونصف قطرها AC/2 = 5/2 = 2,5. المثلّث ABC قائم في B، فبخاصيّة الموسّط المتعلّق بالوتر KB = AC/2 = 2,5: النقطة B على الدائرة. وكذلك D، لأنّ K منتصف [BD] أيضًا فـ KD = KB = 2,5. والنقطة P لها فاصلة K نفسها وتعلوها بـ 5,5 − 3 = 2,5، فهي على الدائرة. أمّا E فـ KE = √(0,5² + 4²) = √16,25 وهو أكبر من 2,5، والنقطة Q تحقّق KQ² = 1,5² + 0,5² = 2,5، أي KQ = √2,5 وهو أصغر من 2,5: الخطأ هنا مقارنة مربّع المسافة بنصف القطر نفسه.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.cercle",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "النقطة E(0 ; −1) نظيرة A(−2 ; 3) بالنسبة إلى B(−1 ; 1)، والزاوية ABC قائمة حيث C(3 ; 3). لماذا يكون CE = CA دون أيّ حساب؟\n<svg viewBox=\"0 0 212 236\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M22 22 V214 M46 22 V214 M70 22 V214 M118 22 V214 M142 22 V214 M166 22 V214 M190 22 V214\"/><path d=\"M22 214 H190 M22 190 H190 M22 142 H190 M22 118 H190 M22 94 H190 M22 70 H190 M22 46 H190 M22 22 H190\"/></g><path d=\"M16 166 H200 M94 220 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M191 161 L201 166 L191 171 Z M89 21 L94 11 L99 21 Z\" fill=\"#0f172a\"/><path d=\"M46 94 L94 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M70 142 L166 94\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M166 94 L46 94\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M166 94 L94 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M74.9 151.8 L84.8 146.9 L79.8 137.1\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"46\" cy=\"94\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"70\" cy=\"142\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"166\" cy=\"94\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"94\" cy=\"190\" r=\"4\" fill=\"#0f172a\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"104\" y=\"159\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"118\" y=\"181\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"35\" y=\"86\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"57\" y=\"148\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"177\" y=\"86\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"106\" y=\"202\" text-anchor=\"middle\" fill=\"#0f172a\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "لأنّ C على الموسّط العمودي لـ [AE]"
+        },
+        {
+          "id": "b",
+          "text": "لأنّ C على الدائرة التي قطرها [AE]"
+        },
+        {
+          "id": "c",
+          "text": "لأنّ AC = BD في الرباعي ABCD"
+        },
+        {
+          "id": "d",
+          "text": "لأنّ B منتصف [AE]، وهذا يكفي وحده",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "B منتصف [AE] لأنّ E نظيرة A بالنسبة إلى B، و (BC) ⊥ (AE) لأنّ الزاوية ABC قائمة و E على المستقيم (AB). فالمستقيم (BC) عمودي على [AE] في منتصفها: إنّه الموسّط العمودي للقطعة [AE]، و C نقطة منه، إذن CA = CE ✓. تحقّق بالحساب: CE = √((0 − 3)² + (−1 − 3)²) = √(9 + 16) = 5 = CA. الخطأ الشائع: الاكتفاء بأنّ B منتصف [AE]، مع أنّ نقطة لا تقع على العمودي في B لا تبعد المسافة نفسها عن A وعن E. وتقايس AC و BD لا يقول شيئًا عن CE، و C ليست على الدائرة التي قطرها [AE] لأنّ CA² + CE² = 50 ≠ AE² = 20.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.droites-perp-para",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "النقطتان A(−2 ; 3) و E(0 ; −1)، و B(−1 ; 1) منتصف [AE]، و C(3 ; 3) حيث (BC) ⊥ (AE). ما مجموعة النقاط M من المستوي التي تحقّق MA = ME ؟\n<svg viewBox=\"0 0 212 236\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M22 22 V214 M46 22 V214 M70 22 V214 M118 22 V214 M142 22 V214 M166 22 V214 M190 22 V214\"/><path d=\"M22 214 H190 M22 190 H190 M22 142 H190 M22 118 H190 M22 94 H190 M22 70 H190 M22 46 H190 M22 22 H190\"/></g><path d=\"M16 166 H200 M94 220 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M191 161 L201 166 L191 171 Z M89 21 L94 11 L99 21 Z\" fill=\"#0f172a\"/><path d=\"M46 94 L94 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M70 142 L166 94\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M79.8 137.1 L74.9 127.2 L65.1 132.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M63.4 115.3 L52.6 120.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M87.4 163.3 L76.6 168.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><circle cx=\"46\" cy=\"94\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"70\" cy=\"142\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"166\" cy=\"94\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"94\" cy=\"190\" r=\"4\" fill=\"#0f172a\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"104\" y=\"159\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"118\" y=\"181\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"35\" y=\"86\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"57\" y=\"148\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"177\" y=\"86\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"106\" y=\"202\" text-anchor=\"middle\" fill=\"#0f172a\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "المستقيم (BC)"
+        },
+        {
+          "id": "b",
+          "text": "القطعة [BC]"
+        },
+        {
+          "id": "c",
+          "text": "المستقيم (AE)"
+        },
+        {
+          "id": "d",
+          "text": "القطعة [AE]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "النقاط M التي تحقّق MA = ME هي نقاط الموسّط العمودي للقطعة [AE]، والعكس صحيح: كلّ نقطة من الموسّط العمودي تحقّق MA = ME. والموسّط العمودي للقطعة [AE] هو المستقيم (BC)، لأنّه يمرّ من منتصفها B ويعامدها. إذن مجموعة النقاط M هي المستقيم (BC) كلّه ✓. الخطأ الشائع: الاكتفاء بالقطعة [BC] المرسومة، مع أنّ نقاط (BC) الواقعة خارج [BC] تحقّق MA = ME أيضًا. أمّا نقاط (AE) و [AE] فكلّ واحدة منها غير B أقرب إلى أحد الطرفين منها إلى الآخر.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.droites-perp-para"
+      ]
+    }
+  ]
+}
