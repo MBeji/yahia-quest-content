@@ -222,4 +222,12 @@ formules et racines perdues).
 **Garde anti-copie sur la carte** : 0 plage de 6 mots ou plus commune avec les transcriptions ;
 les seuls nombres partagés sont des années et des numéros de section, sans objet.
 
-_Écriture, contrôle local des questions et audit : à la livraison._
+**Écriture** (trois auteurs `prof-math-9eme`, qui n'ont vu que la carte) : 36 questions et quatre
+sections de cours ; ~2,04 M de jetons, reprise d'audit comprise — l'écriture coûte plus que la
+lecture. **Contrôle local** contre les 33 transcriptions : 0 plage de 8 mots ; une question à trois
+données communes (les valeurs du triangle 3-4-5), réécrite quand même. **Audit à l'aveugle** :
+36 clés re-résolues, 0 fausse ; trois défauts majeurs au chapitre 04, corrigés, puis contre-expertise
+(12 clés, 0 fausse, cinq mineurs corrigés). Tranches publiées : 08 et 09 (privé#570), 04 (privé#575).
+
+La suite du couple — les devoirs transformés en missions, puis les sujets d'examen repris et cités —
+se lit dans le registre [`gisement.json`](./gisement.json) et au journal de l'étude 36.

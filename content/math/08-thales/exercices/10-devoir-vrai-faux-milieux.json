@@ -1,0 +1,193 @@
+{
+  "title": "⭐⭐ تمرين موجّه: صحيح أم خاطئ؟ منتصفات الأضلاع والقيمة المطلقة",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "prompt": "في المثلّث DEF، النقطة K منتصف [DE] والنقطة L منتصف [DF]. كتب تلميذ: «(KL) ∥ (EF) و KL = 2 × EF». أيّ حكم على ما كتبه صحيح؟\n<svg viewBox=\"0 0 290 250\"><path d=\"M45 225 L195 25 L245 225 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M120 125 L145 225\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M87.3 178.6 L77.7 171.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M162.3 78.6 L152.7 71.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M93 231 L93 219 M97 231 L97 219\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M193 231 L193 219 M197 231 L197 219\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"45\" cy=\"225\" r=\"3.5\"/><circle cx=\"195\" cy=\"25\" r=\"3.5\"/><circle cx=\"245\" cy=\"225\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"120\" cy=\"125\" r=\"3.5\"/><circle cx=\"145\" cy=\"225\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"33\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"195\" y=\"15\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"257\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"105\" y=\"127\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text><text x=\"145\" y=\"242\" text-anchor=\"middle\" fill=\"#0f6e56\">L</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "صحيح كما كتبه",
+          "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux"
+        },
+        {
+          "id": "b",
+          "text": "خاطئ، والصواب: (KL) ∥ (EF) و KL = EF/2"
+        },
+        {
+          "id": "c",
+          "text": "خاطئ، والصواب: (KL) ∥ (EF) و KL = EF",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "d",
+          "text": "خاطئ، والصواب: KL = 2 × EF، والتوازي غير مضمون"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "K و L منتصفا [DE] و [DF]، فبخاصيّة المستقيم الرابط بين منتصفي ضلعي مثلّث: (KL) ∥ (EF) و KL = EF/2: القطعة الرابطة بين المنتصفين نصف الضلع الثالث لا ضعفه. فالتوازي صحيح والطول خاطئ، والصواب (KL) ∥ (EF) و KL = EF/2 ✓. الخطأ الشائع: قلب العامل 2، والضلع EF هو الذي يساوي 2 × KL. ومن شكّ في التوازي نسي أنّ المنتصفين يعطيان التوازي والطول معًا، ومن كتب KL = EF ساوى بين قطعتين لمجرّد أنّهما متوازيتان.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "في المثلّث DEF حيث DE = 10 cm و DF = 8 cm، النقطة K منتصف [DE]، والمستقيم المارّ من K والموازي لـ (EF) يقطع [DF] في L. كتب تلميذ: «DL = 4 cm». أيّ حكم على ما كتبه صحيح بتعليله؟\n<svg viewBox=\"0 0 290 250\"><path d=\"M45 225 L195 25 L245 225 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M120 125 L145 225\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M125.8 173 L133.4 178.5 L137.4 170.1\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M213.3 123 L220.9 128.5 L224.9 120.1\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M87.3 178.6 L77.7 171.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M162.3 78.6 L152.7 71.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"45\" cy=\"225\" r=\"3.5\"/><circle cx=\"195\" cy=\"25\" r=\"3.5\"/><circle cx=\"245\" cy=\"225\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"120\" cy=\"125\" r=\"3.5\"/><circle cx=\"145\" cy=\"225\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"33\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"195\" y=\"15\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"257\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"105\" y=\"127\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text><text x=\"145\" y=\"242\" text-anchor=\"middle\" fill=\"#0f6e56\">L</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "صحيح: (KL) ∥ (EF) فـ DL/DF = DK/DE = 1/2"
+        },
+        {
+          "id": "b",
+          "text": "صحيح: يكفي أنّ K منتصف [DE] دون أيّ شرط آخر",
+          "misconceptionTag": "math.geo.thales-sans-verifier-parallelisme"
+        },
+        {
+          "id": "c",
+          "text": "خاطئ: الصواب DL = DK = 5 cm لأنّ K منتصف [DE]",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "d",
+          "text": "خاطئ: لا نستطيع الحكم ما دمنا لا نعرف KL"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "(KL) ∥ (EF) معطًى في النصّ، و K من [DE] و L من [DF]: هذه وضعية طاليس في المثلّث DEF، فـ DL/DF = DK/DE = 5/10 = 1/2، أي DL = 8/2 = 4 cm ✓، فما كتبه التلميذ صحيح. لكنّ الحجّة هي التوازي: لو لم يكن (KL) ∥ (EF) لما لزم أن تكون L منتصف [DF]. الخطأ الشائع: الاكتفاء بأنّ K منتصف [DE] دون ذكر التوازي، وهو شرط النظرية. أمّا DL = DK = 5 cm فيساوي بين أطوال لا بين نسب، وطول KL لا نحتاج إليه في هذا الحساب.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "في المثلّث DEF، النقطة K منتصف [DE]، و L نقطة من [DF] حيث KL = EF/2. كتب تلميذ: «إذن L منتصف [DF]». أيّ حكم على ما كتبه صحيح بتعليله؟\n<svg viewBox=\"0 0 290 250\"><path d=\"M45 225 L195 25 L245 225 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M87.3 178.6 L77.7 171.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M162.3 78.6 L152.7 71.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"45\" cy=\"225\" r=\"3.5\"/><circle cx=\"195\" cy=\"25\" r=\"3.5\"/><circle cx=\"245\" cy=\"225\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"120\" cy=\"125\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"33\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"195\" y=\"15\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"257\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"105\" y=\"127\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "صحيح: KL = EF/2 يكفي لذلك",
+          "misconceptionTag": "math.geo.thales-sans-verifier-parallelisme"
+        },
+        {
+          "id": "b",
+          "text": "صحيح: تلك هي النظرية العكسية لطاليس",
+          "misconceptionTag": "math.geo.thales-reciproque-role"
+        },
+        {
+          "id": "c",
+          "text": "خاطئ: لم يُعطَ أنّ (KL) ∥ (EF)"
+        },
+        {
+          "id": "d",
+          "text": "خاطئ: KL يجب أن يساوي EF",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "لا نظرية تسمح بالاستنتاج من الطول وحده: نظرية طاليس تحتاج إلى (KL) ∥ (EF). والشكل يبيّن ذلك: الدائرة التي مركزها K وشعاعها EF/2 تقطع [DF] في نقطتين، المنتصف L₁ ونقطة أخرى L₂، وكلتاهما على بُعد EF/2 من K، لكنّ L₂ ليست منتصف [DF]. فما كتبه التلميذ خاطئ ✓، ويصير صحيحًا لو أُضيف التوازي. الخطأ الشائع: نسيان التوازي والاكتفاء بالطول. والنظرية العكسية لطاليس لا تعطي منتصفًا: تنطلق من نسب متساوية لتُثبت التوازي. ولا يلزم أن يساوي KL الطول EF: القطعة الرابطة بين منتصفين نصف الضلع الثالث.\n<svg viewBox=\"0 0 290 250\"><circle cx=\"120\" cy=\"125\" r=\"103.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M45 225 L195 25 L245 225 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M120 125 L145 225\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M120 125 L95 225\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M87.3 178.6 L77.7 171.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M162.3 78.6 L152.7 71.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"45\" cy=\"225\" r=\"3.5\"/><circle cx=\"195\" cy=\"25\" r=\"3.5\"/><circle cx=\"245\" cy=\"225\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"120\" cy=\"125\" r=\"3.5\"/><circle cx=\"145\" cy=\"225\" r=\"3.5\"/><circle cx=\"95\" cy=\"225\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"33\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"195\" y=\"15\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"257\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"105\" y=\"127\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text><text x=\"149\" y=\"243\" text-anchor=\"middle\" fill=\"#0f6e56\">L₁</text><text x=\"91\" y=\"243\" text-anchor=\"middle\" fill=\"#0f6e56\">L₂</text></g></svg>",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "كتب تلميذ: «|√7 − 3| + |√7 − 2| = 2√7 − 5». أيّ حكم على ما كتبه صحيح؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "صحيح: القيمة المطلقة تحذف الأقواس فقط",
+          "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste"
+        },
+        {
+          "id": "b",
+          "text": "خاطئ، والصواب 5 − 2√7",
+          "misconceptionTag": "math.num.valeur-absolue-toujours-oppose"
+        },
+        {
+          "id": "c",
+          "text": "خاطئ، والصواب 2√7 + 5",
+          "misconceptionTag": "math.num.valeur-absolue-somme-additive"
+        },
+        {
+          "id": "d",
+          "text": "خاطئ، والصواب 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نختبر إشارة ما داخل كلّ قيمة مطلقة قبل حذفها، مع √7 ≈ 2,65. العبارة √7 − 3 سالبة لأنّ 2,65 < 3، فـ |√7 − 3| = −(√7 − 3) = 3 − √7؛ والعبارة √7 − 2 موجبة لأنّ 2,65 > 2، فـ |√7 − 2| = √7 − 2. المجموع: (3 − √7) + (√7 − 2) = 1 ✓. الخطأ الشائع: حذف الأقواس دون اختبار الإشارة، وهو ما فعله التلميذ فوجد 2√7 − 5. ومن أخذ المقابل في الحالتين وجد 5 − 2√7، وهو سالب، ومجموع قيمتين مطلقتين لا يكون سالبًا؛ ومن وزّع القيمة المطلقة على الفرق فكتب |√7 − 3| = √7 + 3 و |√7 − 2| = √7 + 2 وجد 2√7 + 5.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "prompt": "بما أنّ |√7 − 3| = 3 − √7، حسب تلميذ العدد 1 − 2|√7 − 3| فكتب:\n1 − 2(3 − √7) = 1 − 6 − 2√7 = −5 − 2√7\nهل حسابه سليم؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "نعم، لأنّ (−2) × (−√7) = −2√7",
+          "misconceptionTag": "math.int.produit-signes-negatifs"
+        },
+        {
+          "id": "b",
+          "text": "لا، فالنتيجة 2√7 − 5"
+        },
+        {
+          "id": "c",
+          "text": "لا، فالنتيجة −5 − √7",
+          "misconceptionTag": "math.alg.distribution-partielle"
+        },
+        {
+          "id": "d",
+          "text": "لا، فالنتيجة √7 − 3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نوزّع العامل −2 على الحدّين: (−2) × 3 = −6 و (−2) × (−√7) = +2√7، لأنّ جداء عددين سالبين موجب. إذن 1 − 2(3 − √7) = 1 − 6 + 2√7 = 2√7 − 5 ✓ ≈ 0,29. التحقّق بالقيم التقريبية: |√7 − 3| ≈ 0,35، و 1 − 2 × 0,35 ≈ 0,29. الخطأ الشائع: الخطأ في إشارة الجداء (−2) × (−√7)، وهو ما وقع فيه التلميذ. ومن ضرب الحدّ الأوّل وحده في −2 وجد −5 − √7، ومن بدأ بالطرح 1 − 2 = −1 خالف أولويّة الضرب على الطرح فوجد √7 − 3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "العدد P معرّف كما يلي:\nP = √((√7 − 3)²) × (3 + √7)\nفي تمرين اختيار من متعدّد اقتُرحت له ثلاث قيم: −2 و 16 و 9 + 2√7. قال تلميذ: «ولا واحدة من الثلاث صحيحة». أيّ حكم على قوله صحيح بتعليله؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "قوله صحيح، لأنّ P = 2"
+        },
+        {
+          "id": "b",
+          "text": "قوله صحيح، لأنّ P = 16 + 6√7",
+          "misconceptionTag": "math.num.valeur-absolue-somme-additive"
+        },
+        {
+          "id": "c",
+          "text": "قوله خاطئ، لأنّ P = −2",
+          "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
+        },
+        {
+          "id": "d",
+          "text": "قوله خاطئ، لأنّ P = 16",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "√((√7 − 3)²) = |√7 − 3|، و √7 − 3 سالب لأنّ √7 ≈ 2,65 < 3، فـ |√7 − 3| = 3 − √7. إذن P = (3 − √7)(3 + √7) = 3² − (√7)² = 9 − 7 = 2 ✓. والعدد 2 ليس بين القيم المقترحة −2 و 16 و 9 + 2√7، فقول التلميذ صحيح: قد لا يحمل اختيار من متعدّد الإجابة الصحيحة، ولا بدّ عندها من الحساب. الخطأ الشائع: كتابة √((√7 − 3)²) = √7 − 3 دون قيمة مطلقة فيخرج −2، أو جمع المربّعين فيخرج 16، أو ضرب الحدّ الأوّل وحده في (3 + √7) فيخرج 9 + 2√7. ومن وزّع القيمة المطلقة على الفرق فكتب √7 + 3 وجد 16 + 6√7.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.num.valeur-absolue",
+        "math.alg.identites-remarquables"
+      ]
+    }
+  ]
+}

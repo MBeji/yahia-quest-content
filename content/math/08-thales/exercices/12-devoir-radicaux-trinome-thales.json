@@ -1,0 +1,247 @@
+{
+  "title": "👑 تحدّي الفرض ⭐⭐⭐⭐: من إنطاق المقام إلى طول بنظرية طاليس",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 12,
+  "questions": [
+    {
+      "prompt": "نضع:\na = 2/(√3 − 1)\nما كتابة العدد a بعد إنطاق مقامه؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "√3 + 1"
+        },
+        {
+          "id": "b",
+          "text": "(√3 + 1)/2",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "c",
+          "text": "(2√3 + 1)/2",
+          "misconceptionTag": "math.alg.distribution-partielle"
+        },
+        {
+          "id": "d",
+          "text": "2√3 + 2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نضرب البسط والمقام في مرافق المقام، √3 + 1: a = 2(√3 + 1)/((√3 − 1)(√3 + 1)) = 2(√3 + 1)/(3 − 1) = 2(√3 + 1)/2 = √3 + 1 ✓. التحقّق: (√3 + 1)(√3 − 1) = 3 − 1 = 2، أي (√3 + 1) × (√3 − 1) = 2 فعلًا. الخطأ الشائع: جمع المربّعين في المقام، 3 + 1 = 4، فيخرج (√3 + 1)/2؛ أو ضرب الحدّ الأوّل وحده في 2 فيخرج (2√3 + 1)/2. أمّا 2√3 + 2 فهو البسط وحده قبل القسمة على المقام 2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "العدد الثاني هو\nb = √3/(3 + √3)\nنضرب بسطه ومقامه في مرافق المقام ثمّ نختزل. ما الكتابة التي نصل إليها؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(√3 − 1)/4",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "b",
+          "text": "(√3 + 1)/2"
+        },
+        {
+          "id": "c",
+          "text": "(√3 + 1)/4"
+        },
+        {
+          "id": "d",
+          "text": "(√3 − 1)/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "مرافق المقام 3 + √3 هو 3 − √3: b = √3(3 − √3)/((3 + √3)(3 − √3)) = (3√3 − 3)/(9 − 3) = (3√3 − 3)/6 = 3(√3 − 1)/6 = (√3 − 1)/2 ✓. طريق ثانٍ: 3 + √3 = √3(√3 + 1)، فـ b = 1/(√3 + 1) = (√3 − 1)/2 ✓. الخطأ الشائع: جمع المربّعين في المقام، 9 + 3 = 12، فيخرج (√3 − 1)/4. ومن أخطأ في إشارة الجداء (−√3) × √3 فكتب +3 بدل −3 وجد (3√3 + 3)/6 = (√3 + 1)/2، ومن جمع الخطأين وجد (√3 + 1)/4.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "وجدنا بإنطاق المقام العددين a = √3 + 1 و b = (√3 − 1)/2. احسب الجداء a × b، ثمّ اكتب الكلمة التي نصف بها عددين لهما هذا الجداء.",
+      "answerKey": {
+        "text": "مقلوبان"
+      },
+      "acceptedAnswers": [
+        "عددان مقلوبان",
+        "مقلوب",
+        "كل منهما مقلوب الآخر",
+        "مقلوبين",
+        "عددين مقلوبين",
+        "كل واحد منهما مقلوب الآخر",
+        "مقلوب الآخر"
+      ],
+      "expectedMistakes": [
+        {
+          "text": "متقابلان",
+          "misconceptionTag": "math.num.oppose-inverse-confondus"
+        }
+      ],
+      "explanation": "a × b = (√3 + 1)(√3 − 1)/2 = (3 − 1)/2 = 2/2 = 1. وعددان جداؤهما 1 عددان مقلوبان: كلّ منهما يساوي 1 مقسومًا على الآخر، أي b = 1/a و a = 1/b ✓. الخطأ الشائع: الخلط مع العددين المتقابلين، وهما عددان مجموعهما 0 لا جداؤهما 1، مثل √3 + 1 و −√3 − 1.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نقبل أنّ\nx² − 2x − 2 = (x − 1)² − 3\nما تعميل العبارة x² − 2x − 2 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(x − 1 − √3)(x − 1 − √3)",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        },
+        {
+          "id": "b",
+          "text": "(x − 1 − √3)(x − 1 + √3)"
+        },
+        {
+          "id": "c",
+          "text": "(x − 1 − 3)(x − 1 + 3)"
+        },
+        {
+          "id": "d",
+          "text": "(x − 1 − 3)(x − 1 − 3)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نقرأ (x − 1)² − 3 فرقَ مربّعين، لأنّ 3 = (√3)²: A² − B² = (A − B)(A + B) مع A = x − 1 و B = √3، إذن x² − 2x − 2 = (x − 1 − √3)(x − 1 + √3) ✓. التحقّق بالنشر: (x − 1)² − (√3)² = x² − 2x + 1 − 3 = x² − 2x − 2 ✓. الخطأ الشائع: كتابة مربّع، (x − 1 − √3)(x − 1 − √3)، بدل جداء فرق في مجموع، ونشره يعطي حدًّا أوسط −2√3(x − 1) لا وجود له في العبارة. ومن أخذ B = 3 بدل √3 كتب (x − 1 − 3)(x − 1 + 3)، ونشره يعطي (x − 1)² − 9 لا (x − 1)² − 3؛ ومن جمع الخطأين كتب (x − 1 − 3)(x − 1 − 3).",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.factorisation",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "علمًا أنّ\nx² − 2x − 2 = (x − 1 − √3)(x − 1 + √3)\nما حلول المعادلة التالية؟\nx² − 2x − 2 = 0",
+      "options": [
+        {
+          "id": "a",
+          "text": "لا يوجد أيّ حلّ",
+          "misconceptionTag": "math.alg.produit-nul-et-au-lieu-de-ou"
+        },
+        {
+          "id": "b",
+          "text": "x = −1 + √3 أو x = −1 − √3",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "c",
+          "text": "x = 1 + √3 أو x = 1 − √3"
+        },
+        {
+          "id": "d",
+          "text": "x = 4 أو x = −2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "جداء معدوم: يكفي أن ينعدم أحد العاملين. إمّا x − 1 − √3 = 0 أي x = 1 + √3، وإمّا x − 1 + √3 = 0 أي x = 1 − √3. للمعادلة حلّان هما 1 + √3 و 1 − √3 ✓. التحقّق: (1 + √3)² − 2(1 + √3) − 2 = 4 + 2√3 − 2 − 2√3 − 2 = 0 ✓، والحساب نفسه مع 1 − √3 يعطي 4 − 2√3 − 2 + 2√3 − 2 = 0 ✓. الخطأ الشائع: قراءة الحلّ بالإشارة التي في القوس فيخرج −1 + √3 و −1 − √3، والحلّ هو مقابل ما يُطرح في القوس. ومن اشترط أن ينعدم العاملان معًا لم يجد أيّ عدد يعدمهما في آنٍ واحد، فحكم خطأً بأنّ لا حلّ. أمّا 4 و −2 فهما حلّا (x − 1)² − 9 = 0، أي بأخذ 3 بدل √3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.equations-produit"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABC، النقطة M من [AB] والنقطة N من [AC] و (MN) ∥ (BC). الأطوال بالصنتيمتر:\nAM = x و MB = 1 و AN = 2 و NC = x − 2\nما المساواة التي تعطيها نظرية طاليس بين هذه الأطوال؟\n<svg viewBox=\"0 50 355 185\"><path d=\"M207.9 75.9 L74 170.4 L281.9 170.4 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M207.9 75.9 L25 205 L308.9 205 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M74 170.4 L281.9 170.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M174.3 176.4 L181.5 170.4 L174.3 164.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M163.4 211 L170.6 205 L163.4 199\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"207.9\" cy=\"75.9\" r=\"3.5\"/><circle cx=\"25\" cy=\"205\" r=\"3.5\"/><circle cx=\"308.9\" cy=\"205\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"74\" cy=\"170.4\" r=\"3.5\"/><circle cx=\"281.9\" cy=\"170.4\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"207.9\" y=\"65.9\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"15\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"316.9\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"60\" y=\"166.4\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"294.9\" y=\"166.4\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"133\" y=\"113.1\" text-anchor=\"middle\" fill=\"#0f172a\">x</text><text x=\"41.5\" y=\"179.7\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"256.9\" y=\"121.1\" text-anchor=\"middle\" fill=\"#0f172a\">2</text><text x=\"325.9\" y=\"189.7\" text-anchor=\"middle\" fill=\"#0f172a\">x − 2</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "x/(x + 1) = (x − 2)/2",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "b",
+          "text": "x/1 = (x − 2)/2",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "c",
+          "text": "x/(x + 1) = 2/(x − 2)",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "d",
+          "text": "x/1 = 2/(x − 2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(MN) ∥ (BC) والمعطيات أجزاء، فنستعمل صيغة الجزء على الجزء المتبقّي: AM/MB = AN/NC، أي x/1 = 2/(x − 2) ✓. وبالضرب التقاطعي نجد x(x − 2) = 2، أي x² − 2x − 2 = 0، وهي المعادلة التي عمّلناها وحللناها. التحقّق بالصيغة الأخرى: AB = x + 1 و AC = 2 + (x − 2) = x، و AM/AB = AN/AC تعطي x/(x + 1) = 2/x، أي x² = 2x + 2، وهي المعادلة نفسها ✓. الخطأ الشائع: خلط الصيغتين في AM/AB = AN/NC، أي x/(x + 1) = 2/(x − 2)؛ أو قلب نسبة، x/1 = (x − 2)/2؛ ومن جمع الخطأين كتب x/(x + 1) = (x − 2)/2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.alg.mise-en-equation"
+      ]
+    },
+    {
+      "prompt": "المساواة\nx/1 = 2/(x − 2)\nتؤول إلى المعادلة\nx² − 2x − 2 = 0\nالتي لها حلّان هما 1 + √3 و 1 − √3، و x هو الطول AM في المثلّث ABC حيث MB = 1 و AN = 2 و NC = x − 2 (بالصنتيمتر). ما الطول AM ؟\n<svg viewBox=\"0 50 355 185\"><path d=\"M207.9 75.9 L74 170.4 L281.9 170.4 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M207.9 75.9 L25 205 L308.9 205 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M74 170.4 L281.9 170.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M174.3 176.4 L181.5 170.4 L174.3 164.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M163.4 211 L170.6 205 L163.4 199\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M207.9 75.9 L74 170.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"207.9\" cy=\"75.9\" r=\"3.5\"/><circle cx=\"25\" cy=\"205\" r=\"3.5\"/><circle cx=\"308.9\" cy=\"205\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"74\" cy=\"170.4\" r=\"3.5\"/><circle cx=\"281.9\" cy=\"170.4\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"207.9\" y=\"65.9\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"15\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"316.9\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"60\" y=\"166.4\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"294.9\" y=\"166.4\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"133\" y=\"113.1\" text-anchor=\"middle\" fill=\"#0f172a\">x</text><text x=\"41.5\" y=\"179.7\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"256.9\" y=\"121.1\" text-anchor=\"middle\" fill=\"#0f172a\">2</text><text x=\"325.9\" y=\"189.7\" text-anchor=\"middle\" fill=\"#0f172a\">x − 2</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 − √3 cm",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        },
+        {
+          "id": "b",
+          "text": "√3 − 1 cm"
+        },
+        {
+          "id": "c",
+          "text": "1 + √3 cm"
+        },
+        {
+          "id": "d",
+          "text": "1 − √3 cm أو 1 + √3 cm",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "x طول، فهو موجب قطعًا، و NC = x − 2 طول أيضًا، فيجب أن يكون x > 2. العدد 1 − √3 سالب لأنّ √3 ≈ 1,73 > 1، فنرفضه. والعدد 1 + √3 ≈ 2,73 أكبر من 2، ويعطي NC = √3 − 1 ≈ 0,73 > 0، فنقبله. إذن AM = 1 + √3 cm ✓. التحقّق: AM/MB = 1 + √3 و AN/NC = 2/(√3 − 1) = √3 + 1، والنسبتان متساويتان ✓. الخطأ الشائع: الاحتفاظ بالحلّ 1 − √3 لأنّه حلّ للمعادلة، مع أنّه طول سالب، أو الاحتفاظ بالحلّين معًا. ومن جعل الحلّ السالب موجبًا فكتب √3 − 1 أخطأ مرّتين: هذا العدد ليس حلًّا للمعادلة، ويعطي NC = √3 − 3 < 0.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABC: M من [AB] و N من [AC] و (MN) ∥ (BC)، حيث AM = 1 + √3 cm و MB = 1 cm و BC = 3 + √3 cm. ما طول MN ؟\n<svg viewBox=\"0 50 355 185\"><path d=\"M207.9 75.9 L74 170.4 L281.9 170.4 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M207.9 75.9 L25 205 L308.9 205 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M74 170.4 L281.9 170.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M174.3 176.4 L181.5 170.4 L174.3 164.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M163.4 211 L170.6 205 L163.4 199\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"207.9\" cy=\"75.9\" r=\"3.5\"/><circle cx=\"25\" cy=\"205\" r=\"3.5\"/><circle cx=\"308.9\" cy=\"205\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"74\" cy=\"170.4\" r=\"3.5\"/><circle cx=\"281.9\" cy=\"170.4\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"207.9\" y=\"65.9\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"15\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"316.9\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"60\" y=\"166.4\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"294.9\" y=\"166.4\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"119\" y=\"111.1\" text-anchor=\"middle\" fill=\"#0f172a\">1 + √3</text><text x=\"41.5\" y=\"179.7\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"167\" y=\"225\" text-anchor=\"middle\" fill=\"#0f172a\">3 + √3</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√3 cm"
+        },
+        {
+          "id": "b",
+          "text": "4√3 cm",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        },
+        {
+          "id": "c",
+          "text": "2 + √3 cm",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "d",
+          "text": "3 + 2√3 cm",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "بنظرية طاليس MN/BC = AM/AB، مع AB = AM + MB = 2 + √3. ننطق مقام النسبة: (1 + √3)/(2 + √3) = (1 + √3)(2 − √3)/((2 + √3)(2 − √3)) = (2 − √3 + 2√3 − 3)/(4 − 3) = √3 − 1. إذن MN = (√3 − 1)(3 + √3) = 3√3 + 3 − 3 − √3 = 2√3 cm ✓. التحقّق: 2√3 ≈ 3,46 أصغر من BC = 3 + √3 ≈ 4,73، كما يجب لقطعة توازي القاعدة داخل المثلّث ✓. الخطأ الشائع: عند النشر نضرب −1 في 3 وننسى إدخال الإشارة على √3، فنكتب −3 + √3 بدل −3 − √3، ويخرج 4√3 cm. ومن قلب النسبة وجد MN = BC ÷ (√3 − 1) = 3 + 2√3 cm، أطول من BC، ومن طرح MB من BC وجد 2 + √3 cm.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.num.racines-calcul"
+      ]
+    }
+  ]
+}
