@@ -1,0 +1,205 @@
+{
+  "title": "⭐⭐ تمرين موجّه: لمن يعود الدليل؟ قوى الجذور والمقلوب",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "prompt": "ما قيمة العدد التالي؟\n4(√3)⁴",
+      "options": [
+        {
+          "id": "a",
+          "text": "16√3",
+          "misconceptionTag": "math.num.puissance-confondue-avec-produit"
+        },
+        {
+          "id": "b",
+          "text": "36"
+        },
+        {
+          "id": "c",
+          "text": "256√3",
+          "misconceptionTag": "math.num.exposant-porte-sur-le-coefficient"
+        },
+        {
+          "id": "d",
+          "text": "2304",
+          "misconceptionTag": "math.num.exposant-porte-sur-le-coefficient"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الدليل 4 مكتوب فوق √3 وحدها، فهو يخصّ الجذر ولا يخصّ العدد 4 الواقف أمامه: 4(√3)⁴ = 4 × (√3)⁴ = 4 × 9 = 36 ✓، لأنّ (√3)⁴ = (√3)² × (√3)² = 3 × 3 = 9. الخطأ الشائع نقل الدليل إلى العدد 4 الذي أمام الجذر، فيُكتب 4⁴ × √3 = 256√3 ؛ أو رفع الجداء كلّه إلى القوّة 4 فيخرج (4√3)⁴ = 2304. ومن ضرب √3 في الدليل بدل رفعها إليه وجد 4 × 4√3 = 16√3.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.puissances",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نُدخل الآن العدد 4 داخل القوس مع الجذر. ما قيمة العدد التالي؟\n(4√3)²",
+      "options": [
+        {
+          "id": "a",
+          "text": "12",
+          "misconceptionTag": "math.num.exposant-porte-sur-un-seul-facteur"
+        },
+        {
+          "id": "b",
+          "text": "8√3",
+          "misconceptionTag": "math.num.puissance-confondue-avec-produit"
+        },
+        {
+          "id": "c",
+          "text": "16√3",
+          "misconceptionTag": "math.num.exposant-porte-sur-un-seul-facteur"
+        },
+        {
+          "id": "d",
+          "text": "48"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "القوس يضمّ العددين 4 و √3 معًا، فالدليل 2 يخصّ العاملين كليهما: (4√3)² = 4² × (√3)² = 16 × 3 = 48 ✓. الخطأ الشائع رفع √3 وحدها إلى القوّة 2 وترك العدد 4 كما هو، فنجد 4 × 3 = 12 ؛ أو رفع العدد 4 وحده فنجد 16√3. أمّا 8√3 فتأتي من ضرب 4√3 في الدليل 2 بدل رفعه إليه.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.puissances",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "بعد أن وجدنا (4√3)² = 48، ما قيمة العدد التالي؟\n(4√3)⁻²",
+      "options": [
+        {
+          "id": "a",
+          "text": "−48",
+          "misconceptionTag": "math.num.exposant-negatif-donne-nombre-negatif"
+        },
+        {
+          "id": "b",
+          "text": "1/48"
+        },
+        {
+          "id": "c",
+          "text": "√3/16",
+          "misconceptionTag": "math.num.exposant-porte-sur-un-seul-facteur"
+        },
+        {
+          "id": "d",
+          "text": "4/3",
+          "misconceptionTag": "math.num.exposant-porte-sur-un-seul-facteur"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الدليل السالب يعني المقلوب: (4√3)⁻² = 1/(4√3)² = 1/48 ✓، لأنّنا وجدنا (4√3)² = 48. الخطأ الشائع جعل الدليل السالب إشارة سالبة فيخرج −48. ومن أبقى الدليل على العدد 4 وحده كتب 4⁻² × √3 = √3/16، ومن أبقاه على الجذر وحده كتب 4 × (√3)⁻² = 4/3 ؛ وفي الحالتين نسي أنّ القوس يضمّ العاملين معًا.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.puissances",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ما مقلوب العدد 4√3 مكتوبًا دون جذر في المقام؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "4√3/3"
+        },
+        {
+          "id": "b",
+          "text": "√3/4"
+        },
+        {
+          "id": "c",
+          "text": "√3/12"
+        },
+        {
+          "id": "d",
+          "text": "−4√3",
+          "misconceptionTag": "math.num.oppose-inverse-confondus"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "مقلوب 4√3 هو 1/(4√3). نُنطق المقام بضرب البسط والمقام في √3: 1/(4√3) = √3/(4 × √3 × √3) = √3/(4 × 3) = √3/12 ✓، والتحقّق: 4√3 × √3/12 = 12/12 = 1. الخطأ الشائع خلط المقلوب بالمقابل فيُكتب −4√3 ؛ والمقلوب يقلب العددين معًا: من قلب العدد 4 وحده وجد √3/4، ومن قلب الجذر وحده وجد 4/√3 أي 4√3/3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.num.puissances"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "نضع m = 4√3. اختر كلّ المتساويات الصحيحة.",
+      "options": [
+        {
+          "id": "a",
+          "text": "m⁻² × m⁵ = m³"
+        },
+        {
+          "id": "b",
+          "text": "m⁻¹ = −m"
+        },
+        {
+          "id": "c",
+          "text": "(m⁻¹)² = m⁻²"
+        },
+        {
+          "id": "d",
+          "text": "m⁰ = 0"
+        },
+        {
+          "id": "e",
+          "text": "m² ÷ m⁻¹ = m³"
+        },
+        {
+          "id": "f",
+          "text": "4(√3)² = m²"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "الصحيحة ثلاث: m⁻² × m⁵ = m^(−2 + 5) = m³ لأنّ الأساس نفسه فنجمع الدليلين ؛ و (m⁻¹)² = m^((−1) × 2) = m⁻² لأنّ قوّة القوّة تُضرب دليلاها ؛ و m² ÷ m⁻¹ = m^(2 − (−1)) = m³ لأنّ طرح دليل سالب يعني الإضافة ✓. أمّا الخاطئة فثلاث: المتساوية m⁻¹ = −m لأنّ m⁻¹ = 1/m هو المقلوب لا المقابل ؛ والمتساوية m⁰ = 0 لأنّ m⁰ = 1، فكلّ عدد غير معدوم مرفوع إلى الدليل 0 يساوي 1 ؛ والمتساوية 4(√3)² = m² لأنّ 4(√3)² = 12 بينما m² = 48، فالدليل في الأولى يخصّ الجذر وحده وفي الثانية يخصّ العاملين معًا.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.puissances"
+      ]
+    },
+    {
+      "prompt": "نعتبر العدد التالي:\nb = √3/12\nما قيمة b⁻³ ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−192√3",
+          "misconceptionTag": "math.num.exposant-negatif-donne-nombre-negatif"
+        },
+        {
+          "id": "b",
+          "text": "√3/576",
+          "misconceptionTag": "math.num.exposant-negatif-donne-nombre-negatif"
+        },
+        {
+          "id": "c",
+          "text": "192√3"
+        },
+        {
+          "id": "d",
+          "text": "576√3",
+          "misconceptionTag": "math.num.puissance-fraction-numerateur-seul"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الدليل السالب يقلب الكسر: b⁻³ = (12/√3)³ = 1728/(3√3) = 576/√3 = 192√3 ✓، لأنّ (√3)³ = (√3)² × √3 = 3√3. والتحقّق: b مقلوب العدد 4√3 فـ b⁻³ = (4√3)³ = 64 × 3√3 = 192√3. الخطأ الشائع تجاهل الإشارة السالبة في الدليل وحساب b³ = 3√3/1728 = √3/576. ومن رفع بسط الكسر المقلوب وحده إلى القوّة 3 كتب (12/√3)³ = 1728/√3 = 576√3، والدليل يخصّ البسط والمقام معًا. أمّا −192√3 فمنشؤها اعتبار الدليل السالب إشارة سالبة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.puissances",
+        "math.num.racines-calcul"
+      ]
+    }
+  ]
+}

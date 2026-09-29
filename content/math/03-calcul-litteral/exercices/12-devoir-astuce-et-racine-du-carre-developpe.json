@@ -1,0 +1,203 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: حسابات ذكية بعددين جداؤهما 1",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 12,
+  "questions": [
+    {
+      "prompt": "نضع:\na = 4 + √15\nb = 4 − √15\nما قيمة العدد a² − b² ؟ يمكن حسابه دون نشر أيّ مربّع.",
+      "options": [
+        {
+          "id": "a",
+          "text": "62",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "b",
+          "text": "16√15"
+        },
+        {
+          "id": "c",
+          "text": "60",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        },
+        {
+          "id": "d",
+          "text": "2√15 + 8",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "العدد a² − b² فرق مربّعين، فنكتبه جداءً: a² − b² = (a − b)(a + b). لدينا a − b = (4 + √15) − (4 − √15) = 2√15 و a + b = 8، إذن a² − b² = 2√15 × 8 = 16√15 ✓. الخطأ الشائع خلط فرق المربّعين بمربّع الفرق فيُكتب (a − b)² = 60 ؛ أو جمع المربّعين بدل طرحهما فيُحسب a² + b² بدل a² − b² ؛ ومن جمع العاملين بدل ضربهما وجد 2√15 + 8.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "علمًا أنّ:\na × b = 1\nاكتب b⁻⁵ بدلالة a.",
+      "options": [
+        {
+          "id": "a",
+          "text": "−a⁵",
+          "misconceptionTag": "math.num.exposant-negatif-donne-nombre-negatif"
+        },
+        {
+          "id": "b",
+          "text": "−a⁻⁵",
+          "misconceptionTag": "math.num.exposant-negatif-donne-nombre-negatif"
+        },
+        {
+          "id": "c",
+          "text": "a⁻⁵",
+          "misconceptionTag": "math.num.exposant-negatif-donne-nombre-negatif"
+        },
+        {
+          "id": "d",
+          "text": "a⁵"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "بما أنّ a × b = 1 فإنّ b هو مقلوب a، أي b = 1/a و b⁻¹ = a. إذن b⁻⁵ = (b⁻¹)⁵ = a⁵ ✓، أو بطريقة ثانية: b⁻⁵ = 1/b⁵ = 1/(1/a)⁵ = a⁵. الخطأ الشائع تجاهل الإشارة السالبة في الدليل: يُحسب b⁵ = (1/a)⁵ فيُكتب a⁻⁵ ؛ أو جعلها إشارة سالبة أمام العدد: يُكتب −b⁵ = −(1/a)⁵ فيخرج −a⁻⁵ ؛ ومن قلب الأساس صحيحًا ثمّ أضاف إشارة سالبة كتب −a⁵.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.puissances"
+      ]
+    },
+    {
+      "prompt": "علمًا أنّ:\na × b = 1\nاكتب الجداء a⁶ × b⁻⁴ في صيغة قوّة وحيدة للعدد a.",
+      "options": [
+        {
+          "id": "a",
+          "text": "−a¹⁰",
+          "misconceptionTag": "math.num.exposant-negatif-donne-nombre-negatif"
+        },
+        {
+          "id": "b",
+          "text": "a²"
+        },
+        {
+          "id": "c",
+          "text": "a¹⁰"
+        },
+        {
+          "id": "d",
+          "text": "a²⁴",
+          "misconceptionTag": "math.num.puissances-produit-exposants-multiplies"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "بما أنّ b⁻¹ = a فإنّ b⁻⁴ = a⁴. يصير الجداء a⁶ × a⁴ ، والأساس واحد فنجمع الدليلين: a^(6 + 4) = a¹⁰ ✓. الخطأ الشائع معاملة b كأنّه a فيُكتب a^(6 − 4) = a² ؛ ونصل إلى a² أيضًا بتجاهل الدليل السالب: a⁶ × b⁴ = a² × (ab)⁴ = a² . ومن ضرب الدليلين بدل جمعهما وجد a²⁴ ، ومن جعل الدليل السالب إشارة سالبة كتب −a¹⁰.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.puissances"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ:\na + b = 8\nab = 1\nأوجد العدد a⁴ + b⁴.",
+      "options": [
+        {
+          "id": "a",
+          "text": "3842"
+        },
+        {
+          "id": "b",
+          "text": "3844",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "c",
+          "text": "3846"
+        },
+        {
+          "id": "d",
+          "text": "4094",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نحسب أوّلًا a² + b² من المتطابقة (a + b)² = a² + 2ab + b²: a² + b² = (a + b)² − 2ab = 8² − 2 × 1 = 62. ثمّ نطبّق المتطابقة نفسها على العددين a² و b²: (a² + b²)² = a⁴ + 2a²b² + b⁴، إذن a⁴ + b⁴ = (a² + b²)² − 2a²b². وبما أنّ ab = 1 فإنّ a²b² = 1، ومنه a⁴ + b⁴ = 62² − 2 × 1 = 3844 − 2 = 3842 ✓. الخطأ الشائع نسيان الحدّ الأوسط 2a²b² فيُكتب a⁴ + b⁴ = 62² = 3844 ؛ أو إعطاؤه إشارة موجبة فيخرج 3844 + 2 = 3846 ؛ ومن نسي الحدّ 2ab في الخطوة الأولى وجد a² + b² = 64 ثمّ 64² − 2 = 4094.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.puissances"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "نضع:\na = 4 + √15\nb = 4 − √15\nونعلم أنّ a × b = 1. اختر كلّ المقارنات الصحيحة.",
+      "options": [
+        {
+          "id": "a",
+          "text": "a < 8"
+        },
+        {
+          "id": "b",
+          "text": "b < 1/8"
+        },
+        {
+          "id": "c",
+          "text": "a² − b² < 62"
+        },
+        {
+          "id": "d",
+          "text": "2√15 > 8"
+        },
+        {
+          "id": "e",
+          "text": "b² < b"
+        },
+        {
+          "id": "f",
+          "text": "a < 2√15"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "الصحيحة ثلاث. المقارنة a < 8 صحيحة لأنّها تكافئ √15 < 4، أي 15 < 16 (مقارنة مربّعَي عددين موجبين). والمقارنة a² − b² < 62 صحيحة: a² − b² = 16√15 ، و 16√15 < 62 تكافئ 8√15 < 31 أي 960 < 961 (المربّعان 64 × 15 و 31²). و b² < b لأنّ 0 < b < 1 ، فالفرق b² − b = b(b − 1) سالب. أمّا الخاطئة فثلاث: b < 1/8 خاطئة لأنّ a < 8 والمقلوب يقلب ترتيب عددين موجبين فيكون b = 1/a > 1/8 ؛ و 2√15 > 8 خاطئة لأنّ مربّعيهما 60 و 64 ؛ و a < 2√15 خاطئة لأنّ a − 2√15 = 4 − √15 = b وهو موجب.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ:\na² − b² = 16√15\na² + b² = 62\nأوجد العدد a⁴ − b⁴.",
+      "options": [
+        {
+          "id": "a",
+          "text": "8√15/31"
+        },
+        {
+          "id": "b",
+          "text": "62 + 16√15",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "c",
+          "text": "3840",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        },
+        {
+          "id": "d",
+          "text": "992√15"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "a⁴ − b⁴ فرق مربّعين: (a²)² − (b²)². فنكتبه جداءً: a⁴ − b⁴ = (a² − b²)(a² + b²) = 16√15 × 62 = 992√15 ✓. الخطأ الشائع جمع العاملين بدل ضربهما فيخرج 16√15 + 62 ؛ أو تربيع الفرق a² − b² فيخرج (16√15)² = 256 × 15 = 3840، والصواب أنّ فرق المربّعين يصير جداء المجموع في الفرق ؛ ومن قسم العاملين وجد 16√15/62 = 8√15/31.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.puissances"
+      ]
+    }
+  ]
+}
