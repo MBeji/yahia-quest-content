@@ -1,0 +1,244 @@
+{
+  "title": "👑 تحدّي الفرض ⭐⭐⭐⭐: الارتفاعات داخل الدائرة — من القطر إلى طاليس",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 15,
+  "questions": [
+    {
+      "prompt": "[AC] قطر في دائرة مركزها O، وAC = 75 cm. النقطة B تنتمي إلى الدائرة وBC = 45 cm. ما طول AB بالسنتيمتر ؟\n<svg viewBox=\"0 0 300 304\"><title>دائرة قطرها AC والنقطة B عليها</title><circle cx=\"150\" cy=\"149.75\" r=\"123.75\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><polygon points=\"150,26 31.2,184.4 150,273.5\" fill=\"#0f6e56\" fill-opacity=\"0.08\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"150\" y1=\"26\" x2=\"31.2\" y2=\"184.4\" stroke=\"#d97706\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"26\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"31.2\" cy=\"184.4\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"273.5\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"149.75\" r=\"3.5\" fill=\"#2563eb\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150\" y=\"17\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"19.2\" y=\"189.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"150\" y=\"292.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"163\" y=\"153.75\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"15\">O</text><text x=\"133\" y=\"154.25\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">75</text><text x=\"82.2\" y=\"244.65\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">45</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3600",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "15√34",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "c",
+          "text": "60"
+        },
+        {
+          "id": "d",
+          "text": "30",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "B على الدائرة التي قطرها [AC]، فالمثلّث ABC قائم في B ووتره القطر [AC]. بفيثاغورس: AB² = AC² − BC² = 5625 − 2025 = 3600، إذن AB = 60 cm ✓. التحقّق: AB² + BC² = 3600 + 2025 = 5625 = AC² ✓. الخطأ الشائع: جمع المربّعين كأنّ [BC] وتر، 5625 + 2025 = 7650، فيخرج 15√34 ≈ 87,5، وهو أطول من القطر [AC] مع أنّ أيّ وتر في الدائرة لا يفوق القطر؛ أو طرح الطولين دون تربيع، 75 − 45 = 30؛ أو التوقّف عند AB² = 3600.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في B حيث AB = 60 cm و BC = 45 cm و AC = 75 cm. H المسقط العمودي للنقطة B على (AC). ما طول BH بالسنتيمتر ؟\n<svg viewBox=\"0 0 330 196\"><title>المثلّث القائم ABC والارتفاع BH</title><polygon points=\"25,161.6 197.8,32 295,161.6\" fill=\"#0f6e56\" fill-opacity=\"0.08\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"197.8\" y1=\"32\" x2=\"197.8\" y2=\"161.6\" stroke=\"#d97706\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><path d=\"M 189.8 38 L 195.8 46 L 203.8 40\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 197.8 153.6 L 205.8 153.6 L 205.8 161.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.6\"/><circle cx=\"25\" cy=\"161.6\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"197.8\" cy=\"32\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"295\" cy=\"161.6\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"197.8\" cy=\"161.6\" r=\"3.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"15\" y=\"166.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"197.8\" y=\"23\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"306\" y=\"166.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"197.8\" y=\"178.6\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"103\" y=\"90.1\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">60</text><text x=\"257.6\" y=\"92.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">45</text><text x=\"160\" y=\"190.1\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">75</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "36"
+        },
+        {
+          "id": "b",
+          "text": "37,5",
+          "misconceptionTag": "math.geo.hauteur-confondue-avec-mediane"
+        },
+        {
+          "id": "c",
+          "text": "56,25",
+          "misconceptionTag": "math.geo.relation-aire-mauvais-cote"
+        },
+        {
+          "id": "d",
+          "text": "1350",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نحسب مساحة المثلّث ABC بطريقتين: بالضلعين القائمين تساوي (AB × BC)/2، وبالوتر [AC] وارتفاعه [BH] تساوي (AC × BH)/2. إذن BH × AC = AB × BC، أي BH = (60 × 45)/75 = 2700/75 = 36 cm ✓. التحقّق: العمودي [BH] أقصر من المائلين [BC] و [BA]: 36 < 45 < 60 ✓. الخطأ الشائع: أخذ الارتفاع نصف الوتر، BH = 75/2 = 37,5، مع أنّ H ليس منتصف [AC]؛ أو ضرب الارتفاع في ضلع قائم، BH × AB = BC × AC، فيخرج (45 × 75)/60 = 56,25؛ أو التوقّف عند المساحة (60 × 45)/2 = 1350.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.relations-metriques"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في B حيث AB = 60 cm و BC = 45 cm و AC = 75 cm، و H المسقط العمودي للنقطة B على (AC). ما طول HC بالسنتيمتر ؟\n<svg viewBox=\"0 0 330 196\"><title>المثلّث القائم ABC والقطعة HC</title><polygon points=\"25,161.6 197.8,32 295,161.6\" fill=\"#0f6e56\" fill-opacity=\"0.08\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"197.8\" y1=\"32\" x2=\"197.8\" y2=\"161.6\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"197.8\" y1=\"161.6\" x2=\"295\" y2=\"161.6\" stroke=\"#d97706\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><path d=\"M 189.8 38 L 195.8 46 L 203.8 40\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 197.8 153.6 L 205.8 153.6 L 205.8 161.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.6\"/><circle cx=\"25\" cy=\"161.6\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"197.8\" cy=\"32\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"295\" cy=\"161.6\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"197.8\" cy=\"161.6\" r=\"3.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"15\" y=\"166.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"197.8\" y=\"23\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"306\" y=\"166.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"197.8\" y=\"178.6\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"103\" y=\"90.1\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">60</text><text x=\"257.6\" y=\"92.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">45</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "9",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "b",
+          "text": "27"
+        },
+        {
+          "id": "c",
+          "text": "48",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "d",
+          "text": "729",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المثلّث ABC قائم في B، فعلاقة المساحة تعطي الارتفاع: BH = (AB × BC)/AC = (60 × 45)/75 = 36 cm. والمثلّث BHC قائم في H ووتره [BC]، فبفيثاغورس: HC² = BC² − BH² = 2025 − 1296 = 729، إذن HC = 27 cm ✓. التحقّق: AH = AC − HC = 48 و BH² = 1296 = 48 × 27 = AH × HC ✓. الخطأ الشائع: طرح الطولين HC = BC − BH = 45 − 36 = 9؛ أو التوقّف عند HC² = 729؛ أو أخذ القطعة الأخرى AH = 48.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.relations-metriques",
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "[AC] قطر في دائرة، و B و D نقطتان من الدائرة نظيرتان بالنسبة إلى المستقيم (AC). S نقطة تلاقي الارتفاعات الثلاثة للمثلّث ABD. أيّ مستقيم من المستقيمات التالية عمودي على كلّ من (BS) و (DC) ؟\n<svg viewBox=\"0 0 300 304\"><title>الدائرة والمثلّث ABD وارتفاعاته الثلاثة</title><circle cx=\"150\" cy=\"149.75\" r=\"123.75\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><polygon points=\"150,26 31.2,184.4 268.8,184.4\" fill=\"#0f6e56\" fill-opacity=\"0.07\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"150\" y1=\"26\" x2=\"150\" y2=\"273.5\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"268.8\" y1=\"184.4\" x2=\"116.74\" y2=\"70.35\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"31.2\" y1=\"184.4\" x2=\"183.26\" y2=\"70.35\" stroke=\"#2563eb\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"268.8\" y1=\"184.4\" x2=\"150\" y2=\"273.5\" stroke=\"#2563eb\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"26\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"31.2\" cy=\"184.4\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"273.5\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"268.8\" cy=\"184.4\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"95.3\" r=\"4\" fill=\"#b91c1c\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150\" y=\"17\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"19.2\" y=\"189.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"150\" y=\"292.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"280.8\" y=\"189.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"162\" y=\"91.3\" text-anchor=\"middle\" fill=\"#b91c1c\" font-size=\"15\">S</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "المستقيم (AB)"
+        },
+        {
+          "id": "b",
+          "text": "المستقيم (BD)"
+        },
+        {
+          "id": "c",
+          "text": "المستقيم (AD)"
+        },
+        {
+          "id": "d",
+          "text": "المستقيم (AC)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(BS) هو الارتفاع الصادر من B في المثلّث ABD، فهو عمودي على الضلع المقابل (AD). ثمّ إنّ D نقطة من الدائرة التي قطرها [AC]، فالمثلّث ADC قائم في D، أي (DC) ⊥ (AD). إذن (AD) عمودي على (BS) وعلى (DC) معًا، ومنه (BS) ∥ (DC) ✓. الخطأ الشائع: عكس الرؤوس: (AB) هو العمودي على (BC) وعلى (DS) لأنّ (DS) الارتفاع الصادر من D، أي على الزوج الآخر لا على (BS)؛ أمّا (BD) و (AC) فمتعامدان فيما بينهما، ولا أحد منهما عمودي على (BS).",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.droites-perp-para",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "[AC] قطر في دائرة مركزها O. النقطتان B و D من الدائرة ونظيرتان بالنسبة إلى (AC)، و H نقطة تقاطع [BD] و [AC] مع AH = 48 cm وHC = 27 cm. S نقطة تلاقي الارتفاعات الثلاثة للمثلّث ABD. ما طول AS بالسنتيمتر ؟\n<svg viewBox=\"0 0 300 304\"><title>الدائرة والمثلّث ABD والمركز القائم S</title><circle cx=\"150\" cy=\"149.75\" r=\"123.75\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><polygon points=\"150,26 31.2,184.4 268.8,184.4\" fill=\"#0f6e56\" fill-opacity=\"0.07\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"31.2\" y1=\"184.4\" x2=\"268.8\" y2=\"184.4\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"26\" x2=\"150\" y2=\"273.5\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"150\" y1=\"26\" x2=\"150\" y2=\"95.3\" stroke=\"#d97706\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"26\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"31.2\" cy=\"184.4\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"273.5\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"268.8\" cy=\"184.4\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"184.4\" r=\"3.5\" fill=\"#0f6e56\"/><circle cx=\"150\" cy=\"149.75\" r=\"3.5\" fill=\"#2563eb\"/><circle cx=\"150\" cy=\"95.3\" r=\"4\" fill=\"#b91c1c\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150\" y=\"17\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"19.2\" y=\"189.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"150\" y=\"292.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"280.8\" y=\"189.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"162\" y=\"199.4\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"162\" y=\"153.75\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"15\">O</text><text x=\"162\" y=\"99.3\" text-anchor=\"middle\" fill=\"#b91c1c\" font-size=\"15\">S</text><text x=\"136\" y=\"233.45\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"13\">27</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "21"
+        },
+        {
+          "id": "b",
+          "text": "27",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "37,5"
+        },
+        {
+          "id": "d",
+          "text": "75"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "(BS) ⊥ (AD) لأنّه الارتفاع الصادر من B، و (DC) ⊥ (AD) لأنّ D على الدائرة التي قطرها [AC]، إذن (BS) ∥ (DC). وبالمثل (DS) ⊥ (AB) لأنّه الارتفاع الصادر من D، و (BC) ⊥ (AB) لأنّ B على الدائرة، إذن (DS) ∥ (BC). فالرباعي BSDC متوازي أضلاع، وقطراه [BD] و [SC] يتناصفان في H، أي HS = HC = 27 cm. إذن AS = AH − HS = 48 − 27 = 21 cm ✓. طريق ثانٍ: في المثلّث ASC، O منتصف [AC] و H منتصف [SC]، فالقطعة [OH] تصل بين منتصفَي ضلعين وتساوي نصف الضلع الثالث: AS = 2 × OH = 2 × (AH − AO) = 2 × (48 − 37,5) = 21 ✓. الخطأ الشائع: البحث عن الارتفاعات من الرؤوس الخاطئة: (BC) و (DC) عموديان على (AB) و (AD) لكنّهما لا يمرّان بالرأس المقابل، فليسا ارتفاعين للمثلّث ABD، وتقاطعهما في C يعطي AS = AC = 75؛ أو الخلط بين المركز القائم ومركز الدائرة O فيخرج AS = AO = 37,5؛ أو الوقوف عند HS = 27.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "[AC] قطر في دائرة، وAC = 75 cm. B و D نقطتان من الدائرة نظيرتان بالنسبة إلى (AC) وCD = 45 cm. S المركز القائم للمثلّث ABD (نقطة تلاقي ارتفاعاته) وAS = 21 cm، و F موطئ الارتفاع الصادر من B على (AD). ما طول SF بالسنتيمتر ؟\n<svg viewBox=\"0 0 300 304\"><title>المثلّث ACD والمستقيم (SF) العمودي على (AD)</title><circle cx=\"150\" cy=\"149.75\" r=\"123.75\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><polygon points=\"150,26 31.2,184.4 268.8,184.4\" fill=\"#0f6e56\" fill-opacity=\"0.06\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"150\" y1=\"26\" x2=\"150\" y2=\"273.5\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"268.8\" y1=\"184.4\" x2=\"150\" y2=\"273.5\" stroke=\"#2563eb\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"31.2\" y1=\"184.4\" x2=\"183.26\" y2=\"70.35\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"150\" y1=\"95.3\" x2=\"183.26\" y2=\"70.35\" stroke=\"#d97706\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><path d=\"M 178.46 63.95 L 172.06 68.75 L 176.86 75.15\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.6\"/><circle cx=\"150\" cy=\"26\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"31.2\" cy=\"184.4\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"273.5\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"268.8\" cy=\"184.4\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"183.26\" cy=\"70.35\" r=\"3.5\" fill=\"#d97706\"/><circle cx=\"150\" cy=\"95.3\" r=\"4\" fill=\"#b91c1c\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150\" y=\"17\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"19.2\" y=\"189.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"150\" y=\"292.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"280.8\" y=\"189.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"195.26\" y=\"67.35\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"15\">F</text><text x=\"138\" y=\"100.3\" text-anchor=\"middle\" fill=\"#b91c1c\" font-size=\"15\">S</text><text x=\"132\" y=\"154.25\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">75</text><text x=\"200.4\" y=\"221.45\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"13\">45</text><text x=\"138\" y=\"64\" text-anchor=\"middle\" fill=\"#b91c1c\" font-size=\"13\">21</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "32,4"
+        },
+        {
+          "id": "b",
+          "text": "24",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "c",
+          "text": "16,8",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "d",
+          "text": "12,6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "S تنتمي إلى الارتفاع الصادر من B، فالمستقيم (SF) هو هذا الارتفاع، أي (SF) ⊥ (AD). و (DC) ⊥ (AD) لأنّ D على الدائرة التي قطرها [AC]. إذن (SF) ∥ (DC). في المثلّث ACD: S على [AC] و F على [AD] و (SF) ∥ (CD)، فبنظرية طاليس انطلاقًا من الرأس A: AS/AC = SF/CD. إذن SF = CD × AS/AC = 45 × 21/75 = 12,6 cm ✓. التحقّق: AD = √(75² − 45²) = 60، فـ AF = AD × AS/AC = 16,8، والمثلّث ASF قائم في F: 16,8² + 12,6² = 282,24 + 158,76 = 441 = 21² ✓. الخطأ الشائع: إعطاء القطعة المجاورة AF = 16,8؛ أو طرح الطولين CD − AS = 24 بدل النسبة؛ أو أخذ القسم المتبقّي SC = 54 في النسبة فيخرج 45 × 54/75 = 32,4.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.droites-perp-para"
+      ]
+    },
+    {
+      "prompt": "ABD مثلّث متقايس الضلعين رأسه A، و H منتصف [BD] مع BD = 72 cm وAH = 48 cm. S المركز القائم للمثلّث ABD (نقطة تلاقي ارتفاعاته) وAS = 21 cm. المستقيم المارّ من S والموازي لـ (BD) يقطع [AB] في P و [AD] في P′. ما طول PP′ بالسنتيمتر ؟\n<svg viewBox=\"0 0 320 232\"><title>المثلّث ABD والمستقيم المارّ من S الموازي لـ BD</title><polygon points=\"160,30 30.4,202.8 289.6,202.8\" fill=\"#0f6e56\" fill-opacity=\"0.08\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"160\" y1=\"30\" x2=\"160\" y2=\"202.8\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"103.3\" y1=\"105.6\" x2=\"216.7\" y2=\"105.6\" stroke=\"#d97706\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"129.48\" y1=\"105.6\" x2=\"122.48\" y2=\"110.1\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"129.48\" y1=\"105.6\" x2=\"122.48\" y2=\"101.1\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"85.74\" y1=\"202.8\" x2=\"78.74\" y2=\"207.3\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"85.74\" y1=\"202.8\" x2=\"78.74\" y2=\"198.3\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"160\" cy=\"30\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"30.4\" cy=\"202.8\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"289.6\" cy=\"202.8\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"160\" cy=\"202.8\" r=\"3.5\" fill=\"#0f6e56\"/><circle cx=\"160\" cy=\"105.6\" r=\"4\" fill=\"#b91c1c\"/><circle cx=\"103.3\" cy=\"105.6\" r=\"3.5\" fill=\"#d97706\"/><circle cx=\"216.7\" cy=\"105.6\" r=\"3.5\" fill=\"#d97706\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"160\" y=\"21\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"18.4\" y=\"207.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"301.6\" y=\"207.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"160\" y=\"220.8\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"171\" y=\"100.6\" text-anchor=\"middle\" fill=\"#b91c1c\" font-size=\"15\">S</text><text x=\"91.3\" y=\"109.6\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"15\">P</text><text x=\"230.7\" y=\"109.6\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"15\">P′</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "15,75"
+        },
+        {
+          "id": "b",
+          "text": "31,5"
+        },
+        {
+          "id": "c",
+          "text": "40,5"
+        },
+        {
+          "id": "d",
+          "text": "51",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "S على الارتفاع [AH] لأنّه المركز القائم. في المثلّث ABH: P على [AB] و S على [AH] و (PS) ∥ (BH)، فبنظرية طاليس انطلاقًا من الرأس A: AS/AH = PS/BH. إذن PS = BH × AS/AH = 36 × 21/48 = 15,75 cm. والمثلّث ABD متقايس الضلعين فالنقطتان P و P′ متناظرتان بالنسبة إلى (AH)، وPP′ = 2 × PS = 31,5 cm ✓. مباشرةً في المثلّث ABD: PP′/BD = AS/AH، فـ PP′ = 72 × 21/48 = 31,5 ✓. الخطأ الشائع: نسيان مضاعفة PS فيخرج 15,75؛ أو استعمال SH/AH بدل AS/AH، أي قياس الموضع انطلاقًا من القاعدة، فيخرج 72 × 27/48 = 40,5؛ أو طرح الطولين 72 − 21 = 51 بدل النسبة.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "ABD مثلّث متقايس الضلعين رأسه A حيث AB = AD = 60 cm وBD = 72 cm، و H منتصف [BD] مع AH = 48 cm. F موطئ الارتفاع الصادر من B على (AD). ما طول BF بالسنتيمتر ؟\n<svg viewBox=\"0 0 320 232\"><title>المثلّث ABD والارتفاع BF</title><polygon points=\"160,30 30.4,202.8 289.6,202.8\" fill=\"#0f6e56\" fill-opacity=\"0.08\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"160\" y1=\"30\" x2=\"160\" y2=\"202.8\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"30.4\" y1=\"202.8\" x2=\"196.29\" y2=\"78.38\" stroke=\"#d97706\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><path d=\"M 189.89 83.18 L 185.09 76.78 L 191.49 71.98\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.6\"/><line x1=\"91.6\" y1=\"113.7\" x2=\"98.8\" y2=\"119.1\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><line x1=\"221.2\" y1=\"119.1\" x2=\"228.4\" y2=\"113.7\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><circle cx=\"160\" cy=\"30\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"30.4\" cy=\"202.8\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"289.6\" cy=\"202.8\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"160\" cy=\"202.8\" r=\"3.5\" fill=\"#0f6e56\"/><circle cx=\"196.29\" cy=\"78.38\" r=\"3.5\" fill=\"#d97706\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"160\" y=\"21\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"18.4\" y=\"207.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"301.6\" y=\"207.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"160\" y=\"220.8\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"209.29\" y=\"76.38\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"15\">F</text><text x=\"146\" y=\"120.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"13\">48</text><text x=\"84\" y=\"112.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">60</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "28,8"
+        },
+        {
+          "id": "b",
+          "text": "36"
+        },
+        {
+          "id": "c",
+          "text": "48"
+        },
+        {
+          "id": "d",
+          "text": "57,6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "المساحة واحدة مهما كانت القاعدة: بالقاعدة [BD] وارتفاعها [AH] تساوي (BD × AH)/2 = (72 × 48)/2 = 1728 cm²، وبالقاعدة [AD] وارتفاعها [BF] تساوي (AD × BF)/2. إذن BF = BD × AH/AD = (72 × 48)/60 = 57,6 cm ✓. التحقّق بالنسب المثلثية: في المثلّث AHD القائم في H، جا D = AH/AD = 48/60 = 0,8؛ وفي المثلّث BFD القائم في F، جا D = BF/BD، فـ BF = 72 × 0,8 = 57,6 ✓، وهو أقصر من BA = 60 كما يجب للعمودي. الخطأ الشائع: أخذ طول آخر: BH = 36 نصف القاعدة [BD]، و AH = 48 الارتفاع الصادر من A، لا الارتفاع الصادر من B؛ أو نسيان القسمة على 2 من جهة واحدة فيخرج 1728/60 = 28,8.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.relations-metriques",
+        "math.geo.triangles-base"
+      ]
+    }
+  ]
+}

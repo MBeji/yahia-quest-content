@@ -1,0 +1,215 @@
+{
+  "title": "👑 تحدّي الفرض ⭐⭐⭐⭐: نقطة متحرّكة على ضلع مستطيل — عكس فيثاغورس وعدد المواضع",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 14,
+  "questions": [
+    {
+      "prompt": "ABCD مستطيل فيه AB = 10 cm و AD = 3 cm، و M نقطة متحرّكة على الضلع [AB]. نضع x = AM (بالصنتيمتر). بتطبيق نظرية فيثاغورس في المثلّث القائم MBC، ما قيمة MC² بدلالة x ؟\n<svg viewBox=\"0 0 320 150\"><title>مستطيل ABCD ونقطة M متحرّكة على الضلع AB</title><polygon points=\"30,108 290,108 290,30 30,30\" fill=\"#0f6e56\" fill-opacity=\"0.07\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M 38 108 L 38 100 L 30 100\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 282 108 L 282 100 L 290 100\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 282 30 L 282 38 L 290 38\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 38 30 L 38 38 L 30 38\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"121\" y1=\"108\" x2=\"30\" y2=\"30\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"121\" y1=\"108\" x2=\"290\" y2=\"30\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"121\" cy=\"108\" r=\"4\" fill=\"#2563eb\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"20\" y=\"124\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"300\" y=\"124\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"300\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"20\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"121\" y=\"126\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"15\">M</text><text x=\"75.5\" y=\"124.5\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"13\">x</text><text x=\"19\" y=\"73.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">3</text><text x=\"301\" y=\"73.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">3</text><text x=\"160\" y=\"23.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">10</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(10 − x)² + 3"
+        },
+        {
+          "id": "b",
+          "text": "(10 + x)² + 9"
+        },
+        {
+          "id": "c",
+          "text": "(10 − x)² + 9"
+        },
+        {
+          "id": "d",
+          "text": "(13 − x)²",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "M على [AB]، فـ MB = AB − AM = 10 − x. والمثلّث MBC قائم في B لأنّ ABCD مستطيل، وضلعاه القائمان MB = 10 − x و BC = AD = 3، ووتره [MC]. إذن MC² = MB² + BC² = (10 − x)² + 3² = (10 − x)² + 9 ✓. التحقّق بقيمة x = 3,5: MC² = 6,5² + 9 = 42,25 + 9 = 51,25 ✓. الخطأ الشائع: نسيان تربيع الضلع 3 فيخرج (10 − x)² + 3؛ أو حساب MB بالجمع، 10 + x، مع أنّ M تقسم [AB] فـ MB = AB − AM؛ أو جمع الضلعين بدل تطبيق فيثاغورس، MC = (10 − x) + 3 = 13 − x، فيخرج (13 − x)².",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "نضع x = AM (بالصنتيمتر) فيكون:\nDM² = x² + 9 و MC² = (10 − x)² + 9\nوطول الضلع [DC] هو 10 cm. نريد أن يكون المثلّث DMC قائمًا في M. أيّ مساواة يجب أن تتحقّق ؟\n<svg viewBox=\"0 0 320 150\"><title>مستطيل ABCD ونقطة M متحرّكة على الضلع AB</title><polygon points=\"30,108 290,108 290,30 30,30\" fill=\"#0f6e56\" fill-opacity=\"0.07\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M 38 108 L 38 100 L 30 100\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 282 108 L 282 100 L 290 100\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 282 30 L 282 38 L 290 38\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 38 30 L 38 38 L 30 38\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"121\" y1=\"108\" x2=\"30\" y2=\"30\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"121\" y1=\"108\" x2=\"290\" y2=\"30\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"121\" cy=\"108\" r=\"4\" fill=\"#2563eb\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"20\" y=\"124\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"300\" y=\"124\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"300\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"20\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"121\" y=\"126\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"15\">M</text><text x=\"75.5\" y=\"124.5\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"13\">x</text><text x=\"19\" y=\"73.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">3</text><text x=\"301\" y=\"73.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">3</text><text x=\"160\" y=\"23.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">10</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "x² + 9 + (10 − x)² + 9 = 100"
+        },
+        {
+          "id": "b",
+          "text": "x² + 9 + 100 = (10 − x)² + 9",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "c",
+          "text": "x² + 9 + (10 − x)² + 9 = 10"
+        },
+        {
+          "id": "d",
+          "text": "√(x² + 9) + √((10 − x)² + 9) = 10",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المثلّث DMC قائم في M، فوتره هو الضلع المقابل للزاوية القائمة، أي [DC]. وبعكس نظرية فيثاغورس يكون DMC قائمًا في M إذا وفقط إذا كان DM² + MC² = DC². ولأنّ DC = AB = 10 فإنّ DC² = 100. إذن x² + 9 + (10 − x)² + 9 = 100 ✓. الخطأ الشائع: وضع الوتر خطأً، أي DM² + DC² = MC²؛ أو نسيان تربيع DC فتصير المساواة مع 10؛ أو جمع الأطوال بدل مربّعاتها، DM + MC = DC، وهذه المساواة لا تتحقّق في أيّ مثلّث حقيقي، لأنّ مجموع ضلعين أكبر قطعًا من الضلع الثالث.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.alg.mise-en-equation"
+      ]
+    },
+    {
+      "prompt": "المساواة التالية تعبّر عن أنّ المثلّث DMC قائم في M:\nx² + 9 + (10 − x)² + 9 = 100\nبعد النشر والاختزال ثمّ القسمة على 2، أيّ معادلة نحصل عليها ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "x² − 10x + 59 = 0"
+        },
+        {
+          "id": "b",
+          "text": "x² + 10x + 9 = 0",
+          "misconceptionTag": "math.alg.carre-difference-signes"
+        },
+        {
+          "id": "c",
+          "text": "x² − 10x + 109 = 0",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "d",
+          "text": "x² − 10x + 9 = 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "ننشر (10 − x)² = 100 − 20x + x². فالطرف الأيسر x² + 9 + 100 − 20x + x² + 9 = 2x² − 20x + 118. نطرح 100 من الطرفين: 2x² − 20x + 18 = 0، ثمّ نقسم على 2: x² − 10x + 9 = 0 ✓. التحقّق بقيمة اختبار x = 2: الطرف الأيسر 4 + 9 + 64 + 9 = 86 فالفرق بينه وبين 100 هو −14، وفي المعادلة الناتجة 4 − 20 + 9 = −7 وهو نصف −14 ✓. الخطأ الشائع: نسيان طرح 100 فيخرج x² − 10x + 59 = 0؛ أو نقل 100 دون تغيير إشارتها فيخرج x² − 10x + 109 = 0؛ أو جعل الجداء المضاعف موجبًا في (10 − x)² فيخرج x² + 10x + 9 = 0.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.mise-en-equation",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "في المستطيل ABCD حيث AB = 10 cm و AD = 3 cm، نضع x = AM لنقطة M من [AB]، أي 0 ≤ x ≤ 10. يكون المثلّث DMC قائمًا في M إذا وفقط إذا حقّق x المساواة التالية:\nx² − 10x + 9 = 0\nونعلم أنّ:\nx² − 10x + 9 = (x − 1)(x − 9)\nما مواضع M التي يكون فيها DMC قائمًا في M ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "لا يوجد موضع",
+          "misconceptionTag": "math.alg.produit-nul-et-au-lieu-de-ou"
+        },
+        {
+          "id": "b",
+          "text": "موضع واحد: AM = 1 cm"
+        },
+        {
+          "id": "c",
+          "text": "موضعان: AM = 1 cm و AM = 9 cm"
+        },
+        {
+          "id": "d",
+          "text": "موضعان: AM = 1 cm و AM = 10 cm"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "جداء معدوم: إمّا x − 1 = 0 أي x = 1، وإمّا x − 9 = 0 أي x = 9. كلا العددين يحقّق 0 ≤ x ≤ 10، فكلاهما موضع مقبول: AM = 1 cm و AM = 9 cm، وهما متناظران بالنسبة إلى منتصف [AB] ✓. التحقّق: عند x = 1: DM² = 1 + 9 = 10 و MC² = 81 + 9 = 90 و 10 + 90 = 100 = DC² ✓؛ وعند x = 9: DM² = 90 و MC² = 10 والمجموع 100 ✓. الخطأ الشائع: الاكتفاء بحلّ واحد، الأصغر 1 أو الأكبر 9، وإهمال الآخر رغم أنّه مقبول؛ أو اشتراط انعدام العاملين معًا فيُحكم بأنّه لا موضع؛ أو الظنّ أنّ الزاوية تصير قائمة حين تنطبق M على B، لأنّ زاوية المستطيل في B قائمة، مع أنّ الزاوية المطلوبة هي DMC: عند x = 10 نجد 100 − 100 + 9 = 9 وليس 0.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.mise-en-equation"
+      ]
+    },
+    {
+      "prompt": "في المستطيل ABCD حيث AB = 10 cm و AD = 3 cm، نأخذ على [AB] النقطة M حيث AM = 1 cm، فيكون المثلّث DMC قائمًا في M. ما محيط المثلّث DMC بالسنتيمتر ؟\n<svg viewBox=\"0 0 320 150\"><title>مستطيل ABCD والنقطة M على الضلع AB حيث AM = 1 cm</title><polygon points=\"30,108 290,108 290,30 30,30\" fill=\"#0f6e56\" fill-opacity=\"0.07\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M 38 108 L 38 100 L 30 100\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 282 108 L 282 100 L 290 100\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 282 30 L 282 38 L 290 38\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 38 30 L 38 38 L 30 38\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"56\" y1=\"108\" x2=\"30\" y2=\"30\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"56\" y1=\"108\" x2=\"290\" y2=\"30\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"56\" cy=\"108\" r=\"4\" fill=\"#2563eb\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"20\" y=\"124\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"300\" y=\"124\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"300\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"20\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"56\" y=\"126\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"15\">M</text><text x=\"43\" y=\"142\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"13\">1</text><text x=\"19\" y=\"73.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">3</text><text x=\"301\" y=\"73.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">3</text><text x=\"160\" y=\"23.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">10</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "26",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "b",
+          "text": "10 + 4√10"
+        },
+        {
+          "id": "c",
+          "text": "20",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        },
+        {
+          "id": "d",
+          "text": "10 + 10√10"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المثلّث DAM قائم في A ووتره [DM]: DM² = 1² + 3² = 10، فـ DM = √10. والمثلّث MBC قائم في B ووتره [MC]: MB = AB − AM = 9، فـ MC² = 9² + 3² = 90 ومنه MC = √(9 × 10) = 3√10. والضلع الثالث DC = AB = 10. إذن المحيط √10 + 3√10 + 10 = 10 + 4√10 cm ✓ ≈ 22,6. التحقّق: DM² + MC² = 10 + 90 = 100 = DC² ✓ فالمثلّث DMC قائم في M فعلًا. الخطأ الشائع: جمع الأطوال بدل مربّعاتها، DM = 1 + 3 = 4 و MC = 9 + 3 = 12، فيخرج 4 + 12 + 10 = 26؛ أو جمع الجذرين تحت جذر واحد، √10 + √90 = √100 = 10، فيخرج 10 + 10 = 20؛ أو إخراج 9 بدل 3 من √90 فيخرج 10 + 10√10.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "أراد تلميذ حلّ المعادلة التالية:\n(x − 5)² − 16 = 0\nفكتب:\nالخطوة 1: (x − 5)² = 16\nالخطوة 2: x − 5 = 16\nالخطوة 3: x = 21\nما الخطوة الخاطئة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "الخطوة 1"
+        },
+        {
+          "id": "b",
+          "text": "الخطوة 2"
+        },
+        {
+          "id": "c",
+          "text": "الخطوة 3"
+        },
+        {
+          "id": "d",
+          "text": "لا خطأ في الحلّ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الخطوة 1 صحيحة: ننقل 16 إلى الطرف الأيمن فيصير (x − 5)² = 16. الخطأ في الخطوة 2: عددان مربّعهما 16 هما 4 و −4، فنكتب x − 5 = 4 أو x − 5 = −4، لا x − 5 = 16؛ فالتلميذ ألغى التربيع بتجاهل الجذر. الحلّان الصحيحان x = 9 و x = 1 ✓، أي الحلّان اللذان أعطاهما التعميل (x − 9)(x − 1) = 0. أمّا x = 21 فلا يحقّق المعادلة: (21 − 5)² − 16 = 256 − 16 = 240 وليس 0. الخطأ الشائع: الحكم بأنّ الخطوة الأخيرة هي الخاطئة لأنّها آخر ما كُتب، مع أنّها نتيجة سليمة للخطوة التي قبلها؛ ومن رأى الحلّ سليمًا لم يعوّض x = 21 في المعادلة ليكتشف أنّه لا يحقّقها.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.factorisation"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل فيه AB = 10 cm، و M نقطة من [AB]. عندما يكون AD = 3 cm يوجد موضعان لـ M يكون فيهما المثلّث DMC قائمًا في M. نغيّر العرض فنجعل AD = 6 cm مع بقاء AB = 10 cm، ونضع x = AM. نعلم أنّ لكلّ عدد حقيقي x:\nx² − 10x + 36 = (x − 5)² + 11\nكم موضعًا لـ M على [AB] يجعل المثلّث DMC قائمًا في M ؟\n<svg viewBox=\"0 0 320 212\"><title>المستطيل ABCD حيث AD يساوي 6 وM على الضلع AB</title><polygon points=\"30,180 290,180 290,24 30,24\" fill=\"#0f6e56\" fill-opacity=\"0.07\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M 38 180 L 38 172 L 30 172\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 282 180 L 282 172 L 290 172\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 282 24 L 282 32 L 290 32\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 38 24 L 38 32 L 30 32\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"134\" y1=\"180\" x2=\"30\" y2=\"24\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"134\" y1=\"180\" x2=\"290\" y2=\"24\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"134\" cy=\"180\" r=\"4\" fill=\"#2563eb\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"20\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"300\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"300\" y=\"18\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"20\" y=\"18\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"134\" y=\"198\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"15\">M</text><text x=\"19\" y=\"106.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">6</text><text x=\"160\" y=\"17.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">10</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "موضعان، كما عندما كان AD = 3 cm"
+        },
+        {
+          "id": "b",
+          "text": "موضع واحد x = 5، لأنّ (x − 5)² ينعدم عندها"
+        },
+        {
+          "id": "c",
+          "text": "موضعان x = 5 + √11 و x = 5 − √11",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "d",
+          "text": "لا موضع، لأنّ (x − 5)² + 11 لا ينعدم أبدًا"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "بعكس فيثاغورس: DM² + MC² = DC²، أي x² + 36 + (10 − x)² + 36 = 100، ومنه 2x² − 20x + 72 = 0 ثمّ x² − 10x + 36 = 0. نستعمل الكتابة المعطاة: (x − 5)² + 11 = 0. لكنّ مربّع أيّ عدد حقيقي موجب أو معدوم، فـ (x − 5)² + 11 ≥ 11 ولا ينعدم أبدًا. إذن لا يوجد أيّ موضع لـ M ✓. طريق ثانٍ: النقاط M التي يكون عندها DMC قائمًا في M تقع على الدائرة التي قطرها [DC]، ومركزها منتصف [DC] الذي يبعد 6 cm عن (AB)، وشعاعها 5 أصغر من 6، فلا تصل هذه الدائرة إلى (AB) ✓. الخطأ الشائع: نقل 11 دون تغيير إشارتها، (x − 5)² = 11، فتظهر جذران وهميّان 5 ± √11؛ أو إهمال الحدّ 11 والحكم بأنّ x = 5 يحقّق المعادلة، مع أنّ (5 − 5)² + 11 = 11 وليس 0؛ أو افتراض أنّ العدد نفسه من المواضع يبقى مهما تغيّر العرض.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.factorisation",
+        "math.alg.equations-produit",
+        "math.geo.pythagore"
+      ]
+    }
+  ]
+}
