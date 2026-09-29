@@ -1,0 +1,225 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: تناظران مركزيّان حول مثلّث قائم ثمّ المساحات",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 16,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "ABC مثلّث قائم الزاوية في A حيث AB = 20 و AC = 21. النقطة D نظيرة B بالنسبة إلى A، والنقطة E نظيرة C بالنسبة إلى A. اختر كلّ العبارات الصحيحة.\n<svg viewBox=\"0 0 300 300\"><title>رسم للوضعية المعطاة</title><path d=\"M150 150 L270 150 L150 24 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><path d=\"M150 150 L270 150 L150 24 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M150 150 L30 150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M150 150 L150 276\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M159 150 L159 141 L150 141\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"270\" cy=\"150\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"24\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"150\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"276\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"150\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"139\" y=\"144\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">A</text><text x=\"282\" y=\"168\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"150\" y=\"14\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text><text x=\"28\" y=\"139\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">D</text><text x=\"150\" y=\"294\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "A منتصف [BD]"
+        },
+        {
+          "id": "b",
+          "text": "A منتصف [CE]"
+        },
+        {
+          "id": "c",
+          "text": "BD = 40"
+        },
+        {
+          "id": "d",
+          "text": "BD = CE"
+        },
+        {
+          "id": "e",
+          "text": "CE = 21"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "D نظيرة B بالنسبة إلى A، أي أنّ A منتصف [BD] ✓، ومنه BD = 2 × AB = 2 × 20 = 40 ✓. وبالمثل E نظيرة C بالنسبة إلى A، فـ A منتصف [CE] ✓ و CE = 2 × 21 = 42، لا 21 (فهذا طول [AE] وحده). والقطران غير متقايسين لأنّ 40 ≠ 42. وللقطرين [BD] و [CE] المنتصف نفسه A، فالرباعي BCDE متوازي أضلاع. الخطأ الشائع: الخلط بين نظيرة نقطة ومنتصف القطعة فيُنسى تضعيف الطول، أو الظنّ أنّ قطري كلّ متوازي أضلاع متقايسان.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم الزاوية في A حيث AB = 20 و AC = 21. ما طول الوتر [BC] ؟\n<svg viewBox=\"0 0 250 240\"><title>رسم للوضعية المعطاة</title><path d=\"M44 206 L204 206 L44 38 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><path d=\"M44 206 L204 206 L44 38 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M54 206 L54 196 L44 196\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"44\" cy=\"206\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"204\" cy=\"206\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"44\" cy=\"38\" r=\"4\" fill=\"#0f172a\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"32\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">A</text><text x=\"217\" y=\"212\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"44\" y=\"28\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"124\" y=\"226\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">20</text><text x=\"27\" y=\"127\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">21</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√41",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "29"
+        },
+        {
+          "id": "c",
+          "text": "41",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "841",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "بنظرية فيثاغورس في المثلّث ABC القائم في A: BC² = AB² + AC² = 400 + 441 = 841، ومنه BC = √841 = 29 ✓ (تحقّق: 20² + 21² = 29²). الخطأ الشائع: جمع الطولين 20 + 21 = 41 دون تربيعهما، أو التوقّف عند 841 ونسيان الجذر، أو اعتبار [AC] وترًا فيُطرح المربّعان: √(441 − 400) = √41.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "ABC مثلّث قائم الزاوية في A حيث AB = 20 و AC = 21. النقطة D نظيرة B بالنسبة إلى A، والنقطة E نظيرة C بالنسبة إلى A. الرباعي BCDE متوازي أضلاع. ما أدقّ وصف له ؟",
+      "answerKey": {
+        "text": "معيّن"
+      },
+      "explanation": "قطرا الرباعي BCDE محمولان على المستقيمين (AB) و (AC)، وهما متعامدان لأنّ المثلّث ABC قائم في A: فقطراه متعامدان، وهذه هي الخاصيّة التي ترقّي متوازي الأضلاع إلى رباعي أضلاعه الأربعة متقايسة. ولا يبلغ أكثر من ذلك، فقطراه غير متقايسين: BD = 2 × 20 = 40 و CE = 2 × 21 = 42، فليس مربّعًا، وليس مستطيلًا لأنّ تقايس القطرين خاصيّة المستطيل. ⚠️ الاكتفاء بوصف «متوازي أضلاع» صحيح لكنّه ليس الأدقّ.",
+      "difficulty": 2,
+      "acceptedAnswers": [
+        "الرباعي المعيّن"
+      ],
+      "expectedMistakes": [
+        {
+          "text": "مربّع",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "text": "مستطيل",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        {
+          "text": "متوازي أضلاع",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        }
+      ],
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "BCDE معيّن قطراه [BD] و [CE] يتقاطعان في A وهي منتصف كلّ منهما، حيث AB = 20 و AC = 21. ما مساحة BCDE ؟\n<svg viewBox=\"0 0 300 300\"><title>رسم للوضعية المعطاة</title><path d=\"M270 150 L150 24 L30 150 L150 276 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><path d=\"M270 150 L150 24 L30 150 L150 276 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M270 150 L30 150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M150 24 L150 276\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M159 150 L159 141 L150 141\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"270\" cy=\"150\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"24\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"150\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"276\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"150\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"139\" y=\"144\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">A</text><text x=\"284\" y=\"154.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"150\" y=\"14.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text><text x=\"16\" y=\"154.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">D</text><text x=\"150\" y=\"294.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">E</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"210\" y=\"167\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">20</text><text x=\"135\" y=\"92\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">21</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "116",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
+        },
+        {
+          "id": "b",
+          "text": "210"
+        },
+        {
+          "id": "c",
+          "text": "840"
+        },
+        {
+          "id": "d",
+          "text": "1680",
+          "misconceptionTag": "math.mes.aire-losange-sans-moitie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "القطران: BD = 2 × AB = 40 و CE = 2 × AC = 42، فمساحة المعيّن = (BD × CE)/2 = (40 × 42)/2 = 840 ✓. طريق ثانٍ: يقسم القطران المعيّن إلى أربعة مثلّثات قائمة متقايسة مساحة كلّ منها (20 × 21)/2 = 210، فالمساحة 4 × 210 = 840. الخطأ الشائع: نسيان القسمة على 2 فيُوجد 40 × 42 = 1680، أو حساب مساحة مثلّث واحد من الأربعة (20 × 21)/2 = 210، أو الخلط مع المحيط 4 × 29 = 116.",
+      "difficulty": 2,
+      "competencies": [
+        "math.mes.aires",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم الزاوية في A، و I منتصف الوتر [BC]، و F نظيرة A بالنسبة إلى I. لماذا الرباعي ABFC مستطيل ؟\n<svg viewBox=\"0 0 200 190\"><title>رسم للوضعية المعطاة</title><path d=\"M40 158 L160 158 L160 32 L40 32 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><path d=\"M40 158 L160 158 L160 32 L40 32 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M40 158 L160 32\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M160 158 L40 32\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M49 158 L49 149 L40 149\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"158\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"160\" cy=\"158\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"160\" cy=\"32\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"40\" cy=\"32\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"100\" cy=\"95\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"113\" y=\"100\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">I</text><text x=\"29\" y=\"174\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">A</text><text x=\"173\" y=\"174\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"173\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">F</text><text x=\"29\" y=\"28\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "متوازي أضلاع لأنّ قطريه [AF] و [BC] لهما نفس المنتصف I، وفيه زاوية قائمة في A"
+        },
+        {
+          "id": "b",
+          "text": "متوازي أضلاع لأنّ قطريه [AF] و [BC] لهما نفس المنتصف I، وقطراه متعامدان",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        {
+          "id": "c",
+          "text": "متوازي أضلاع لأنّ قطريه [AF] و [BC] لهما نفس المنتصف I، وضلعاه المتتاليان AB و AC متقايسان",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
+        {
+          "id": "d",
+          "text": "رباعي فيه زاوية قائمة في A وضلعان متقابلان متوازيان فقط",
+          "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "F نظيرة A بالنسبة إلى I، فـ I منتصف [AF]؛ و I منتصف [BC] بالمعطى. للقطرين [AF] و [BC] المنتصف نفسه I، فالرباعي ABFC متوازي أضلاع ✓. وله زاوية قائمة في A، ومتوازي الأضلاع الذي له زاوية قائمة مستطيل ✓. الخطأ الشائع: نسبة التعامد إلى قطرَي المستطيل (وهو خاصيّة المعيّن)، أو إعلان تقايس ضلعين متتاليين وهنا AB = 20 و AC = 21 مختلفان، أو الاكتفاء بضلعين متقابلين متوازيين، وهذا شأن شبه المنحرف.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم الزاوية في A حيث AB = 20 و AC = 21، و I منتصف [BC]، و F نظيرة A بالنسبة إلى I، والرباعي ABFC مستطيل. ما طول القطر [AF] ؟\n<svg viewBox=\"0 0 200 190\"><title>رسم للوضعية المعطاة</title><path d=\"M40 158 L160 158 L160 32 L40 32 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><path d=\"M40 158 L160 158 L160 32 L40 32 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M40 158 L160 32\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M160 158 L40 32\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M49 158 L49 149 L40 149\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"158\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"160\" cy=\"158\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"160\" cy=\"32\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"40\" cy=\"32\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"100\" cy=\"95\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"113\" y=\"100\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">I</text><text x=\"29\" y=\"174\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">A</text><text x=\"173\" y=\"174\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"173\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">F</text><text x=\"29\" y=\"28\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "41",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "b",
+          "text": "29"
+        },
+        {
+          "id": "c",
+          "text": "20,5"
+        },
+        {
+          "id": "d",
+          "text": "14,5",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "قطرا المستطيل ABFC متقايسان: AF = BC، وبنظرية فيثاغورس في المثلّث ABC: BC = √(20² + 21²) = √841 = 29، إذن AF = 29 ✓. طريق ثانٍ: I منتصف الوتر، فالموسّط المتعلّق بالوتر AI = BC/2 = 14,5، و I منتصف [AF] فـ AF = 2 × AI = 29. الخطأ الشائع: الوقوف عند AI = 14,5 وهو نصف القطر [AF] فقط، أو جمع الضلعين 20 + 21 = 41، أو أخذ معدّلهما (20 + 21)/2 = 20,5، وكلاهما دون تربيع.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم الزاوية في A حيث AB = 20 و AC = 21. المعيّن BCDE مركزه A ومساحته 840، والمستطيل ABFC. ما مساحة المنطقة المغطّاة بالمعيّن أو بالمستطيل (أحدهما على الأقلّ) ؟\n<svg viewBox=\"0 0 300 300\"><title>رسم للوضعية المعطاة</title><path d=\"M270 150 L150 24 L30 150 L150 276 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><path d=\"M270 150 L150 24 L30 150 L150 276 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M150 150 L270 150 L270 24 L150 24 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><path d=\"M270 150 L30 150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M150 24 L150 276\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M150 150 L270 24\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M159 150 L159 141 L150 141\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"150\" cy=\"150\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"270\" cy=\"150\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"24\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"150\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"276\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"270\" cy=\"24\" r=\"4\" fill=\"#0f172a\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"139\" y=\"166\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">A</text><text x=\"284\" y=\"167\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"139\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text><text x=\"28\" y=\"139\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">D</text><text x=\"150\" y=\"294\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">E</text><text x=\"283\" y=\"21\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">F</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "420"
+        },
+        {
+          "id": "b",
+          "text": "840"
+        },
+        {
+          "id": "c",
+          "text": "1050"
+        },
+        {
+          "id": "d",
+          "text": "1260"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "تقسم القطعة [BC] المستطيل ABFC إلى مثلّثين قائمين متقايسين ABC و BFC، مساحة كلّ منهما (20 × 21)/2 = 210. المثلّث ABC داخل المعيّن (هو ربعه)، أمّا المثلّث BFC فيقع خارجه في الجهة الأخرى من المستقيم (BC). فالمساحة المغطّاة = مساحة المعيّن + مساحة المثلّث BFC = 840 + 210 = 1050 ✓. طريق ثانٍ: 840 + 420 − 210 = 1050 (نطرح الجزء المشترك ABC الذي عُدّ مرّتين). الخطأ الشائع: جمع مساحتي الشكلين 840 + 420 = 1260 دون طرح الجزء المشترك، أو الاكتفاء بمساحة المعيّن 840، أو بمساحة المستطيل وحده 420.",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.aires",
+        "math.geo.quadrilateres"
+      ]
+    }
+  ]
+}

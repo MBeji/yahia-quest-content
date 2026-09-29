@@ -1,0 +1,256 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: من عكس فيثاغورس إلى مركز الثقل واستقامة النقاط",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 13,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "ABCD متوازي أضلاع مركزه O، حيث AB = 15 و BC = 36 و AC = 39. اختر كلّ العبارات الصحيحة.",
+      "options": [
+        {
+          "id": "a",
+          "text": "AB² + BC² = AC²"
+        },
+        {
+          "id": "b",
+          "text": "المثلّث ABC قائم الزاوية في B"
+        },
+        {
+          "id": "c",
+          "text": "[AC] هو وتر المثلّث ABC"
+        },
+        {
+          "id": "d",
+          "text": "AB² + AC² = BC²"
+        },
+        {
+          "id": "e",
+          "text": "المثلّث ABC قائم الزاوية في A"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "الضلع الأطول في المثلّث ABC هو [AC] = 39، فإن كان المثلّث قائمًا فهو الوتر. نحسب AB² + BC² = 225 + 1296 = 1521 و AC² = 39² = 1521: التساوي تامّ، فبعكس نظرية فيثاغورس المثلّث ABC قائم الزاوية في B، الرأس المقابل للوتر [AC] ✓. أمّا AB² + AC² = 225 + 1521 = 1746 وهو لا يساوي BC² = 1296، فالعلاقة خاطئة، ولا يمكن أن تكون الزاوية القائمة في A لأنّ [BC] ليس أطول الأضلاع. الخطأ الشائع: اختيار وتر خاطئ، أي وضع ضلع غير الأطول وحده في أحد طرفَي المساواة.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "ABCD متوازي أضلاع، والمثلّث ABC قائم الزاوية في B، حيث AB = 15 و BC = 36. ما أدقّ وصف للرباعي ABCD ؟",
+      "answerKey": {
+        "text": "مستطيل"
+      },
+      "explanation": "الرباعي ABCD متوازي أضلاع وفيه زاوية قائمة في B: هذا هو الشرط الذي يرقّيه من عائلة متوازي الأضلاع إلى الرباعي ذي الزوايا القائمة الأربع، وقطراه حينئذٍ متقايسان AC = BD = 39. ولا يذهب أبعد من ذلك، فالضلعان المتتاليان AB = 15 و BC = 36 مختلفان، إذن ليست أضلاعه الأربعة متقايسة. ⚠️ الاكتفاء بوصف «متوازي أضلاع» صحيح لكنّه ليس الأدقّ.",
+      "difficulty": 1,
+      "acceptedAnswers": [
+        "الرباعي المستطيل"
+      ],
+      "expectedMistakes": [
+        {
+          "text": "متوازي أضلاع",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "text": "مربّع",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "text": "معيّن",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        }
+      ],
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل مركزه O، حيث AB = 15 و BC = 36 و AC = 39. ما طول الموسّط [BO] في المثلّث ABC ؟\n<svg viewBox=\"0 0 340 182\"><title>رسم للوضعية المعطاة</title><path d=\"M26 26 L314 26 L314 146 L26 146 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><path d=\"M26 26 L314 26 L314 146 L26 146 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M26 26 L314 146\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M26 146 L314 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M26 137 L35 137 L35 146\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M35 26 L35 35 L26 35\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M314 35 L305 35 L305 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M305 146 L305 137 L314 137\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"26\" cy=\"26\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"26\" cy=\"146\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"314\" cy=\"146\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"314\" cy=\"26\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"170\" cy=\"86\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"13.1\" y=\"25.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">A</text><text x=\"13.1\" y=\"156.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"326.9\" y=\"156.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text><text x=\"326.9\" y=\"25.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">D</text><text x=\"168\" y=\"77\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "18",
+          "misconceptionTag": "math.geo.mediane-hypotenuse-demi"
+        },
+        {
+          "id": "b",
+          "text": "39",
+          "misconceptionTag": "math.geo.mediane-hypotenuse-demi"
+        },
+        {
+          "id": "c",
+          "text": "25,5",
+          "misconceptionTag": "math.geo.mediane-hypotenuse-demi"
+        },
+        {
+          "id": "d",
+          "text": "19,5"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "المثلّث ABC قائم الزاوية في B ووتره [AC] = 39، و O منتصف الوتر، فالموسّط المتعلّق بالوتر يساوي نصفه: BO = AC/2 = 39/2 = 19,5 ✓. طريق ثانٍ: قطرا المستطيل متقايسان BD = AC = 39 ويتقاطعان في منتصفيهما، إذن BO = BD/2 = 19,5. الخطأ الشائع: إعطاء طول الوتر كاملًا 39، أو تنصيف ضلع قائم بدل الوتر فيُوجد 36/2 = 18، أو أخذ معدّل الضلعين القائمين (15 + 36)/2 = 25,5.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل مركزه O، حيث BO = 19,5، والنقطة G مركز ثقل المثلّث ABC. ما طول [BG] ؟\n<svg viewBox=\"0 0 340 182\"><title>رسم للوضعية المعطاة</title><path d=\"M26 26 L314 26 L314 146 L26 146 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><path d=\"M26 26 L314 26 L314 146 L26 146 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M26 26 L314 146\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M26 146 L314 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M26 146 L170 86\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M26 137 L35 137 L35 146\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M35 26 L35 35 L26 35\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M314 35 L305 35 L305 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M305 146 L305 137 L314 137\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"26\" cy=\"26\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"26\" cy=\"146\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"314\" cy=\"146\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"314\" cy=\"26\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"170\" cy=\"86\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"122\" cy=\"106\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"13.1\" y=\"25.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">A</text><text x=\"13.1\" y=\"156.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"326.9\" y=\"156.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text><text x=\"326.9\" y=\"25.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">D</text><text x=\"168\" y=\"77\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">O</text><text x=\"120\" y=\"97\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "6,5",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        },
+        {
+          "id": "b",
+          "text": "9,75",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        },
+        {
+          "id": "d",
+          "text": "19,5"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "G مركز ثقل المثلّث ABC، فهو على الموسّط [BO] عند ثلثيه انطلاقًا من الرأس B: BG = (2/3) × BO = (2/3) × 19,5 = 13 ✓. تحقّق: GO = 19,5 − 13 = 6,5 وهو ثلث الموسّط. الخطأ الشائع: وضع G في منتصف الموسّط فيُوجد 9,75، أو قلب الثلث والثلثين فيُوجد 6,5؛ ومن يخلط بين G والنقطة O فيتوقّف عند نهاية الموسّط يجد BO = 19,5.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل، و O منتصف قطره [AC]، والنقطة G مركز ثقل المثلّث ABC. لإثبات أنّ النقاط B وG وD على استقامة واحدة نكتب:\n«G على الموسّط [BO] لأنّه مركز ثقل المثلّث ABC، و …، إذن G على المستقيم (BD)».\nما الجملة التي تُتمّ هذا البرهان ؟\n<svg viewBox=\"0 0 340 182\"><title>رسم للوضعية المعطاة</title><path d=\"M26 26 L314 26 L314 146 L26 146 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><path d=\"M26 26 L314 26 L314 146 L26 146 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M26 26 L314 146\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M26 146 L314 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M26 146 L170 86\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M26 137 L35 137 L35 146\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M35 26 L35 35 L26 35\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M314 35 L305 35 L305 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M305 146 L305 137 L314 137\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"26\" cy=\"26\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"26\" cy=\"146\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"314\" cy=\"146\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"314\" cy=\"26\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"170\" cy=\"86\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"122\" cy=\"106\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"13.1\" y=\"25.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">A</text><text x=\"13.1\" y=\"156.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"326.9\" y=\"156.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text><text x=\"326.9\" y=\"25.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">D</text><text x=\"168\" y=\"77\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">O</text><text x=\"120\" y=\"97\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "O منتصف [BD] لأنّ قطري المستطيل يتقاطعان في منتصفيهما"
+        },
+        {
+          "id": "b",
+          "text": "O منتصف [AC] لأنّ [BO] موسّط في المثلّث ABC الذي مركز ثقله G",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "c",
+          "text": "BG = 13 لأنّ G عند ثلثي الموسّط [BO] انطلاقًا من الرأس B"
+        },
+        {
+          "id": "d",
+          "text": "AC = BD = 39 لأنّ قطري المستطيل متقايسان"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الموسّط الصادر من B في المثلّث ABC هو [BO]، فيكفي لإثبات الاستقامة أن نبيّن أنّ D على المستقيم (BO). وقطرا المستطيل يتقاطعان في منتصفيهما، فمنتصف [AC] هو أيضًا منتصف [BD]: O منتصف [BD]، إذن B وO وD على استقامة واحدة، ومن ثمّ G ∈ [BO] ⊂ (BD) ✓. الخطأ الشائع: الاكتفاء بأنّ O منتصف [AC] وبأنّ G على الموسّط، وهذا لا يقول شيئًا عن موضع D ما لم يُثبَت أنّ O منتصف القطر الآخر [BD] أيضًا. أمّا BG = 13 فمعلومة عن طول لا عن استقامة، وتقايس القطرين خاصيّة أخرى لا صلة لها بموضع G على (BD).",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.quadrilateres",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل قطره BD = 39، و O منتصف [BD]. النقطة G مركز ثقل المثلّث ABC، والنقطة G' مركز ثقل المثلّث ACD. ما طول [GG'] ؟\n<svg viewBox=\"0 0 340 182\"><title>رسم للوضعية المعطاة</title><path d=\"M26 26 L314 26 L314 146 L26 146 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><path d=\"M26 26 L314 26 L314 146 L26 146 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M26 26 L314 146\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M26 146 L314 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M26 146 L314 26\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M26 137 L35 137 L35 146\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M35 26 L35 35 L26 35\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M314 35 L305 35 L305 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M305 146 L305 137 L314 137\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"26\" cy=\"26\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"26\" cy=\"146\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"314\" cy=\"146\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"314\" cy=\"26\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"170\" cy=\"86\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"122\" cy=\"106\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"218\" cy=\"66\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"13.1\" y=\"25.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">A</text><text x=\"13.1\" y=\"156.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"326.9\" y=\"156.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text><text x=\"326.9\" y=\"25.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">D</text><text x=\"168\" y=\"77\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">O</text><text x=\"120\" y=\"97\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">G</text><text x=\"216\" y=\"57\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">G'</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "6,5",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "26",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "19,5"
+        },
+        {
+          "id": "d",
+          "text": "13"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "المثلّث ABC والمثلّث ACD لهما الموسّط [BO] و [DO] على التوالي، و BO = DO = 19,5. فـ BG = (2/3) × 19,5 = 13 و DG' = 13، ومنه OG = OG' = 19,5 − 13 = 6,5، والنقاط B وG وO وG' وD على القطر [BD]. إذن GG' = OG + OG' = 6,5 + 6,5 = 13 ✓. تحقّق: BD − BG − DG' = 39 − 13 − 13 = 13. الخطأ الشائع: التوقّف عند OG = 6,5 ونسيان أنّ G' نظيرة G بالنسبة إلى O، أو جمع BG + DG' = 26 وهو مجموع القطعتين الطرفيّتين لا القطعة الوسطى.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل مركزه O، والنقطتان G وG' مركزا ثقل المثلّثين ABC وACD على التوالي، وهما على القطر [BD] حيث OG = OG' = 6,5. لماذا الرباعي AGCG' متوازي أضلاع ؟\n<svg viewBox=\"0 0 340 182\"><title>رسم للوضعية المعطاة</title><path d=\"M26 26 L314 26 L314 146 L26 146 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><path d=\"M26 26 L122 106 L314 146 L218 66 Z\" fill=\"#0f6e56\" opacity=\"0.22\"/><path d=\"M26 26 L314 26 L314 146 L26 146 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M26 26 L314 146\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M26 146 L314 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M26 26 L122 106 L314 146 L218 66 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><path d=\"M26 137 L35 137 L35 146\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M35 26 L35 35 L26 35\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M314 35 L305 35 L305 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M305 146 L305 137 L314 137\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"26\" cy=\"26\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"26\" cy=\"146\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"314\" cy=\"146\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"314\" cy=\"26\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"170\" cy=\"86\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"122\" cy=\"106\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"218\" cy=\"66\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"13.1\" y=\"25.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">A</text><text x=\"13.1\" y=\"156.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"326.9\" y=\"156.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text><text x=\"326.9\" y=\"25.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">D</text><text x=\"168\" y=\"77\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">O</text><text x=\"120\" y=\"120\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">G</text><text x=\"220\" y=\"58\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">G'</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "لأنّ قطريه [AC] و [GG'] متعامدان ويتقاطعان في النقطة O",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        {
+          "id": "b",
+          "text": "لأنّ الضلعين المتقابلين [AG] و [CG'] متقايسان وهذا يكفي",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "c",
+          "text": "لأنّ O منتصف القطر [AC] وهذا يكفي وحده",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "d",
+          "text": "لأنّ القطرين [AC] و [GG'] لهما المنتصف نفسه O"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "O منتصف [AC] لأنّه مركز المستطيل، و O منتصف [GG'] لأنّ OG = OG' = 6,5 وأنّ G وO وG' على استقامة واحدة مع O بينهما. للقطرين [AC] و [GG'] المنتصف نفسه O، وهذه إحدى طرق إثبات متوازي الأضلاع ✓. الخطأ الشائع: الاكتفاء بمنتصف قطر واحد، أو بتقايس ضلعين متقابلين دون توازيهما، أو نسبة التعامد إلى القطرين؛ والقطران هنا غير متعامدين ولا متقايسين (AC = 39 و GG' = 13).",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل حيث AB = 15 و AD = 36 و BD = 39. الرباعي AGCG' متوازي أضلاع قطراه [AC] و [GG']، حيث GG' = 13 و G وG' على القطر [BD]. النقطة H هي المسقط العمودي للنقطة A على (BD). ما مساحة AGCG' ؟\n<svg viewBox=\"0 0 340 182\"><title>رسم للوضعية المعطاة</title><path d=\"M26 26 L314 26 L314 146 L26 146 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><path d=\"M26 26 L122 106 L314 146 L218 66 Z\" fill=\"#0f6e56\" opacity=\"0.22\"/><path d=\"M26 26 L314 26 L314 146 L26 146 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M26 26 L314 146\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M26 146 L314 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M26 26 L122 106 L314 146 L218 66 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><path d=\"M26 26 L68.6 128.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><path d=\"M26 137 L35 137 L35 146\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M35 26 L35 35 L26 35\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M314 35 L305 35 L305 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M305 146 L305 137 L314 137\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"26\" cy=\"26\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"26\" cy=\"146\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"314\" cy=\"146\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"314\" cy=\"26\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"170\" cy=\"86\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"122\" cy=\"106\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"218\" cy=\"66\" r=\"4.5\" fill=\"#0f6e56\"/><path d=\"M65.9 121.8 L72.4 119.1 L75.1 125.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"68.6\" cy=\"128.2\" r=\"3.5\" fill=\"#0f172a\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"13.1\" y=\"25.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">A</text><text x=\"13.1\" y=\"156.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"326.9\" y=\"156.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text><text x=\"326.9\" y=\"25.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">D</text><text x=\"168\" y=\"77\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">O</text><text x=\"120\" y=\"120\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">G</text><text x=\"220\" y=\"58\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">G'</text><text x=\"78.6\" y=\"142.2\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "540"
+        },
+        {
+          "id": "b",
+          "text": "270"
+        },
+        {
+          "id": "c",
+          "text": "90"
+        },
+        {
+          "id": "d",
+          "text": "180"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "في المثلّث ABD القائم الزاوية في A: AH × BD = AB × AD، أي AH × 39 = 15 × 36 = 540، ومنه AH = 540/39 = 180/13. المستقيم (GG') هو (BD). والنقطة O منتصف [AC] وتنتمي إلى (BD)، فالنقطتان A وC على البعد نفسه AH من المستقيم (BD). إذن المثلّثان AGG' و CGG' لهما القاعدة نفسها GG' = 13 والارتفاع نفسه AH. مساحة كلّ منهما (13 × 180/13)/2 = 90، ومساحة AGCG' = 2 × 90 = 180 ✓. تحقّق: هي ثلث مساحة المستطيل 15 × 36 = 540. الخطأ الشائع: الاكتفاء بمثلّث واحد فيُوجد 90، أو الخلط مع مساحة المثلّث ABC = 270 أو المستطيل كلّه 540.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.relations-metriques",
+        "math.mes.aires",
+        "math.geo.quadrilateres"
+      ]
+    }
+  ]
+}
