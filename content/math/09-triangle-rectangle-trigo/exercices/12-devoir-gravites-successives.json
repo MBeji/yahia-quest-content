@@ -1,0 +1,221 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: مثلّث قائم ثمّ مراكز ثقل متتالية",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 12,
+  "questions": [
+    {
+      "prompt": "ABC مثلّث فيه AB = 6 cm و AC = 6√3 cm و BC = 12 cm. ما طبيعة هذا المثلّث ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "قائم في A"
+        },
+        {
+          "id": "b",
+          "text": "قائم في B",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "c",
+          "text": "قائم في C"
+        },
+        {
+          "id": "d",
+          "text": "ليس قائمًا",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "أطول الأضلاع [BC] = 12، فهو الوتر الوحيد الممكن. نقارن BC² = 144 مع AB² + AC² = 36 + (6√3)² = 36 + 108 = 144 ✓، لأنّ (6√3)² = 6² × (√3)² = 36 × 3 = 108. المساواة تامّة، فبعكس نظرية فيثاغورس المثلّث قائم، وزاويته القائمة تقابل [BC]، أي أنّها في A. الخطأ الشائع: اختيار وتر آخر، فمثلًا AB² + BC² = 36 + 144 = 180 ≠ 108 = AC² فلا يكون قائمًا في B؛ أو جمع الأطوال بدل مربّعاتها، 6 + 6√3 ≈ 16,4 ≠ 12، فيُحكم خطأً بأنّه ليس قائمًا.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في A وطول وتره BC = 12 cm، و K منتصف [BC]. ما طول الموسّط [AK] بالسنتيمتر ؟\n<svg viewBox=\"0 0 200 236\"><title>مثلّث ABC القائم في A وموسّطه AK</title><polygon points=\"32,206 134,206 32,29.33\" fill=\"#0f6e56\" fill-opacity=\"0.09\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M 41 206 L 41 197 L 32 197\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"32\" cy=\"206\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"134\" cy=\"206\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"32\" cy=\"29.33\" r=\"3.5\" fill=\"#0f172a\"/><line x1=\"32\" y1=\"206\" x2=\"83\" y2=\"117.67\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"83\" cy=\"117.67\" r=\"3.5\" fill=\"#2563eb\"/><line x1=\"112.4\" y1=\"159.58\" x2=\"104.6\" y2=\"164.09\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><line x1=\"61.4\" y1=\"71.25\" x2=\"53.6\" y2=\"75.75\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"21\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"145\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"32\" y=\"19.33\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"96\" y=\"112.67\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"15\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "24",
+          "misconceptionTag": "math.geo.mediane-hypotenuse-demi"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "12",
+          "misconceptionTag": "math.geo.mediane-hypotenuse-demi"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "في المثلّث القائم، الموسّط الصادر من رأس الزاوية القائمة يساوي نصف الوتر: AK = BC/2 = 12/2 = 6 cm ✓. أي أنّ K على بُعد واحد من الرؤوس الثلاثة: KA = KB = KC = 6. التحقّق: KB = KC = 12/2 = 6 لأنّ K منتصف [BC] ✓. الخطأ الشائع: أخذ الموسّط مساويًا للوتر كلّه فيخرج 12؛ أو إعطاء ثلث الوتر، 12/3 = 4، وهو خلط بين الموسّط ومسافة أخرى في المثلّث لا يسأل عنها هنا؛ أو قلب العلاقة، BC = AK/2، فيخرج 24.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABC القائم في A، K منتصف [BC] وطول الموسّط AK = 6 cm، و G مركز ثقل المثلّث ABC. ما طول AG بالسنتيمتر ؟\n<svg viewBox=\"0 0 200 236\"><title>مثلّث ABC القائم في A وموسّطه AK</title><polygon points=\"32,206 134,206 32,29.33\" fill=\"#0f6e56\" fill-opacity=\"0.09\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M 41 206 L 41 197 L 32 197\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"32\" cy=\"206\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"134\" cy=\"206\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"32\" cy=\"29.33\" r=\"3.5\" fill=\"#0f172a\"/><line x1=\"32\" y1=\"206\" x2=\"83\" y2=\"117.67\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"83\" cy=\"117.67\" r=\"3.5\" fill=\"#2563eb\"/><circle cx=\"66\" cy=\"147.11\" r=\"4\" fill=\"#b91c1c\"/><line x1=\"112.4\" y1=\"159.58\" x2=\"104.6\" y2=\"164.09\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><line x1=\"61.4\" y1=\"71.25\" x2=\"53.6\" y2=\"75.75\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"21\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"145\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"32\" y=\"19.33\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"96\" y=\"112.67\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"15\">K</text><text x=\"55\" y=\"162.11\" text-anchor=\"middle\" fill=\"#b91c1c\" font-size=\"15\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "مركز الثقل G يقع على الموسّط [AK] عند ثلثيه انطلاقًا من الرأس A: AG = (2/3) × AK = (2/3) × 6 = 4 cm ✓، ويبقى GK = 6 − 4 = 2 cm وهو ثلث الموسّط. الخطأ الشائع: وضع G في منتصف الموسّط فيخرج 3؛ أو قلب الثلث والثلثين فيخرج 6/3 = 2 وهو في الحقيقة GK لا AG؛ أو الضرب في 3/2 بدل 2/3 فيخرج 9، وهو أطول من الموسّط كلّه فلا يصلح.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في A وطول وتره BC = 12 cm، و H المسقط العمودي للنقطة A على (BC) حيث BH = 3 cm. ما طول AH بالسنتيمتر ؟\n<svg viewBox=\"0 0 200 236\"><title>مثلّث ABC القائم في A وارتفاعه AH</title><polygon points=\"32,206 134,206 32,29.33\" fill=\"#0f6e56\" fill-opacity=\"0.09\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M 41 206 L 41 197 L 32 197\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"32\" cy=\"206\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"134\" cy=\"206\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"32\" cy=\"29.33\" r=\"3.5\" fill=\"#0f172a\"/><line x1=\"32\" y1=\"206\" x2=\"108.5\" y2=\"161.83\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><circle cx=\"108.5\" cy=\"161.83\" r=\"3.5\" fill=\"#0f6e56\"/><path d=\"M 101.57 165.83 L 97.57 158.9 L 104.5 154.9\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.6\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"21\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"145\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"32\" y=\"19.33\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"120.5\" y=\"169.83\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"135\" y=\"186\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">3</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3√3"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "misconceptionTag": "math.geo.hauteur-confondue-avec-mediane"
+        },
+        {
+          "id": "c",
+          "text": "2√3",
+          "misconceptionTag": "math.geo.relation-hauteur-somme-au-lieu-de-produit"
+        },
+        {
+          "id": "d",
+          "text": "27",
+          "misconceptionTag": "math.geo.relation-hauteur-racine-oubliee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "H على [BC] فـ CH = 12 − 3 = 9 cm. في المثلّث ABC القائم في A: AH² = BH × CH = 3 × 9 = 27، إذن AH = √27 = 3√3 cm ✓ ≈ 5,2. التحقّق بفيثاغورس: AB² = 27 + 9 = 36 و AC² = 27 + 81 = 108، و 36 + 108 = 144 = BC² ✓. الخطأ الشائع: جمع القطعتين بدل ضربهما، AH² = 3 + 9 = 12، فيخرج 2√3؛ أو نسيان الجذر فيخرج 27؛ أو أخذ الارتفاع موسّطًا، AH = BC/2 = 6.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.relations-metriques",
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABC القائم في A، K منتصف [BC] وطول الموسّط AK = 6 cm، و I منتصف [AB]. المستقيم المارّ من I والموازي لـ (BC) يقطع [AK] في النقطة P. ما طول AP بالسنتيمتر ؟\n<svg viewBox=\"0 0 200 236\"><title>المستقيم المارّ من I الموازي لـ BC يقطع الموسّط AK في P</title><polygon points=\"32,206 134,206 32,29.33\" fill=\"#0f6e56\" fill-opacity=\"0.09\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M 41 206 L 41 197 L 32 197\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"32\" cy=\"206\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"134\" cy=\"206\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"32\" cy=\"29.33\" r=\"3.5\" fill=\"#0f172a\"/><line x1=\"32\" y1=\"206\" x2=\"83\" y2=\"117.67\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"83\" y1=\"206\" x2=\"32\" y2=\"117.67\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"41.47\" y1=\"134.07\" x2=\"48.87\" y2=\"137.88\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"41.47\" y1=\"134.07\" x2=\"41.07\" y2=\"142.38\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"81.25\" y1=\"114.63\" x2=\"88.65\" y2=\"118.45\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"81.25\" y1=\"114.63\" x2=\"80.85\" y2=\"122.95\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"83\" cy=\"117.67\" r=\"3.5\" fill=\"#2563eb\"/><circle cx=\"83\" cy=\"206\" r=\"3.5\" fill=\"#d97706\"/><circle cx=\"57.5\" cy=\"161.83\" r=\"4\" fill=\"#b91c1c\"/><line x1=\"57.5\" y1=\"210.5\" x2=\"57.5\" y2=\"201.5\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><line x1=\"108.5\" y1=\"210.5\" x2=\"108.5\" y2=\"201.5\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"21\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"145\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"32\" y=\"19.33\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"96\" y=\"112.67\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"15\">K</text><text x=\"83\" y=\"223\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"15\">I</text><text x=\"71.5\" y=\"159.83\" text-anchor=\"middle\" fill=\"#b91c1c\" font-size=\"15\">P</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "في المثلّث ABK: I على [AB] و P على [AK] و (IP) ∥ (BK). بنظرية طاليس انطلاقًا من الرأس A: AP/AK = AI/AB = 1/2 لأنّ I منتصف [AB]. إذن AP = 6 × 1/2 = 3 cm ✓، أي أنّ P منتصف [AK]. التحقّق: المستقيم المارّ من منتصف الضلع [AB] موازيًا للضلع [BK] يقطع الضلع الثالث [AK] في منتصفه، فـ P منتصف [AK] ✓. الخطأ الشائع: اعتبار P مركز الثقل لأنّها على الموسّط فيخرج AP = (2/3) × 6 = 4؛ أو اعتبار P مركز الثقل مع قلب الثلث والثلثين فيخرج 6/3 = 2؛ أو الظنّ أنّ P هي K نفسها فيخرج 6.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في A فيه AC = 6√3 cm. I منتصف [AB] و K منتصف [BC]، و G₁ مركز ثقل المثلّث ABK. ما طول KG₁ بالسنتيمتر ؟\n<svg viewBox=\"0 0 200 236\"><title>المثلّث ABK والموسّط KI ومركز ثقله G₁</title><polygon points=\"32,206 134,206 32,29.33\" fill=\"#0f6e56\" fill-opacity=\"0.09\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M 41 206 L 41 197 L 32 197\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"32\" cy=\"206\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"134\" cy=\"206\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"32\" cy=\"29.33\" r=\"3.5\" fill=\"#0f172a\"/><line x1=\"32\" y1=\"206\" x2=\"83\" y2=\"117.67\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"83\" y1=\"117.67\" x2=\"83\" y2=\"206\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"83\" cy=\"117.67\" r=\"3.5\" fill=\"#2563eb\"/><circle cx=\"83\" cy=\"206\" r=\"3.5\" fill=\"#d97706\"/><circle cx=\"83\" cy=\"176.56\" r=\"4\" fill=\"#b91c1c\"/><line x1=\"57.5\" y1=\"210.5\" x2=\"57.5\" y2=\"201.5\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><line x1=\"108.5\" y1=\"210.5\" x2=\"108.5\" y2=\"201.5\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><line x1=\"113.4\" y1=\"161.32\" x2=\"105.6\" y2=\"165.82\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><line x1=\"111.4\" y1=\"157.85\" x2=\"103.6\" y2=\"162.35\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><line x1=\"62.4\" y1=\"72.98\" x2=\"54.6\" y2=\"77.48\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><line x1=\"60.4\" y1=\"69.52\" x2=\"52.6\" y2=\"74.02\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"21\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"145\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"32\" y=\"19.33\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"96\" y=\"112.67\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"15\">K</text><text x=\"83\" y=\"223\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"15\">I</text><text x=\"98\" y=\"181.56\" text-anchor=\"middle\" fill=\"#b91c1c\" font-size=\"14\">G₁</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√3",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        },
+        {
+          "id": "b",
+          "text": "3√3/2",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        {
+          "id": "c",
+          "text": "2√3"
+        },
+        {
+          "id": "d",
+          "text": "3√3",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الموسّط الصادر من K في المثلّث ABK هو [KI] لأنّ I منتصف [AB]. وفي المثلّث ABC، I و K منتصفا [AB] و [BC]، فالقطعة الرابطة بين المنتصفين نصف الضلع الثالث: KI = AC/2 = 3√3 cm. مركز ثقل ABK يقع على [KI] عند ثلثيه انطلاقًا من الرأس K: KG₁ = (2/3) × 3√3 = 2√3 cm ✓ ≈ 3,46. الخطأ الشائع: وضع G₁ في منتصف [KI] فيخرج 3√3/2؛ أو قلب الثلث والثلثين فيخرج √3، وهو طول G₁I؛ أو التوقّف عند طول الموسّط KI = 3√3 كأنّ G₁ هي I.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في A فيه AB = 6 cm و AC = 6√3 cm و BC = 12 cm. I و J و K منتصفات [AB] و [AC] و [BC] على الترتيب، و G₁ و G₂ مركزا ثقل المثلّثين ABK و AKC. ما طول G₁G₂ بالسنتيمتر ؟\n<svg viewBox=\"0 0 200 236\"><title>مركزا الثقل G₁ و G₂ والمستقيم IJ</title><polygon points=\"32,206 134,206 32,29.33\" fill=\"#0f6e56\" fill-opacity=\"0.09\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M 41 206 L 41 197 L 32 197\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"32\" cy=\"206\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"134\" cy=\"206\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"32\" cy=\"29.33\" r=\"3.5\" fill=\"#0f172a\"/><line x1=\"83\" y1=\"117.67\" x2=\"83\" y2=\"206\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"83\" y1=\"117.67\" x2=\"32\" y2=\"117.67\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"83\" y1=\"206\" x2=\"32\" y2=\"117.67\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"83\" cy=\"117.67\" r=\"3.5\" fill=\"#2563eb\"/><circle cx=\"83\" cy=\"206\" r=\"3.5\" fill=\"#d97706\"/><circle cx=\"32\" cy=\"117.67\" r=\"3.5\" fill=\"#d97706\"/><circle cx=\"83\" cy=\"176.56\" r=\"4\" fill=\"#b91c1c\"/><circle cx=\"49\" cy=\"117.67\" r=\"4\" fill=\"#b91c1c\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"21\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"145\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"32\" y=\"19.33\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"96\" y=\"112.67\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"15\">K</text><text x=\"83\" y=\"223\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"15\">I</text><text x=\"20\" y=\"122.67\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"15\">J</text><text x=\"99\" y=\"190.56\" text-anchor=\"middle\" fill=\"#b91c1c\" font-size=\"14\">G₁</text><text x=\"52\" y=\"108.67\" text-anchor=\"middle\" fill=\"#b91c1c\" font-size=\"14\">G₂</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "9",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "c",
+          "text": "2 + 2√3",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "الموسّطان [KI] و [KJ] يخصّان المثلّثين ABK و AKC، و KI = AC/2 = 3√3 و KJ = AB/2 = 3 (القطعة الرابطة بين منتصفين). إذن KG₁ = (2/3) × 3√3 = 2√3 و KG₂ = (2/3) × 3 = 2. النسبتان KG₁/KI = KG₂/KJ = 2/3 متساويتان، فبعكس طاليس (G₁G₂) ∥ (IJ) وبطاليس G₁G₂ = (2/3) × IJ، و IJ = BC/2 = 6، إذن G₁G₂ = 4 cm ✓. طريق ثانٍ: (KI) ∥ (AC) و (KJ) ∥ (AB) و (AB) ⊥ (AC)، فالمثلّث KG₁G₂ قائم في K، و G₁G₂² = (2√3)² + 2² = 12 + 4 = 16 ✓. الخطأ الشائع: مساواة G₁G₂ بـ IJ لأنّهما متوازيتان فيخرج 6، أو قلب النسبة فيخرج (3/2) × 6 = 9، أو جمع الطولين بدل مربّعيهما، 2√3 + 2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.pythagore",
+        "math.geo.triangles-base"
+      ]
+    }
+  ]
+}

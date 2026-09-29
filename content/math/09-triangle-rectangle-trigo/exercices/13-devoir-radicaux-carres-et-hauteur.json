@@ -1,0 +1,249 @@
+{
+  "title": "👑 تحدّي الفرض ⭐⭐⭐⭐: من جذور مبسّطة إلى ارتفاع مثلّث قائم — الجذر التربيعي لمربّع",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 13,
+  "questions": [
+    {
+      "prompt": "المثلّث ABC قائم في A. المربّعان المنشآن خارجه على الضلعين القائمين [AB] و [AC] لهما المساحتان التاليتان (بالسنتيمتر المربّع):\nS = 8 + √28\nT = 8 − √28\nما الكتابة المبسّطة للعدد S ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "22",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
+        },
+        {
+          "id": "b",
+          "text": "8 + 4√7"
+        },
+        {
+          "id": "c",
+          "text": "8 + 7√2",
+          "misconceptionTag": "math.num.racine-extraction-facteur-inversee"
+        },
+        {
+          "id": "d",
+          "text": "8 + 2√7"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نُخرج أكبر مربّع كامل من تحت الجذر: 28 = 4 × 7، إذن √28 = √4 × √7 = 2√7، وتصير S = 8 + 2√7 ✓. لا نجمع 8 مع 2√7 لأنّهما ليسا حدّين متشابهين. التحقّق: √28 ≈ 5,29 و 2√7 ≈ 5,29 ✓. الخطأ الشائع: إخراج 4 بدل 2، أي √28 = 4√7؛ أو عكس العامل الخارج والباقي، √28 = 7√2 (والمربّع الكامل هو الذي يخرج)؛ أو أخذ نصف 28 بدل جذره، √28 = 14، فيخرج 22.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABC قائم في A، والمربّعان المنشآن خارجه على الضلعين القائمين [AB] و [AC] لهما المساحتان التاليتان (بالسنتيمتر المربّع):\nS = 8 + 2√7\nT = 8 − 2√7\nما طول الوتر [BC] بالسنتيمتر ؟\n<svg viewBox=\"0 0 250 284\"><title>مثلّث قائم في A ومربّعات مقامة على أضلاعه</title><polygon points=\"66,160 160.79,160 160.79,254.79 66,254.79\" fill=\"#0f6e56\" fill-opacity=\"0.16\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"66,160 66,117.21 23.21,117.21 23.21,160\" fill=\"#2563eb\" fill-opacity=\"0.16\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"160.79,160 66,117.21 108.79,22.42 203.58,65.21\" fill=\"#d97706\" fill-opacity=\"0.12\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"66,160 160.79,160 66,117.21\" fill=\"#ffffff\" fill-opacity=\"0.9\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><path d=\"M 75 160 L 75 151 L 66 151\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"66\" cy=\"160\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"160.79\" cy=\"160\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"66\" cy=\"117.21\" r=\"3.5\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"54\" y=\"177\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"171.79\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"55\" y=\"113.21\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"113.39\" y=\"212.39\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"17\">S</text><text x=\"44.61\" y=\"144.61\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"17\">T</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√(4√7)",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
+        },
+        {
+          "id": "d",
+          "text": "16",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "بنظرية فيثاغورس في المثلّث ABC القائم في A: BC² = AB² + AC². ومربّع طول الضلع هو مساحة المربّع المنشأ عليه، فـ AB² = S و AC² = T. إذن BC² = S + T = (8 + 2√7) + (8 − 2√7) = 16، فالجذران يتلاشيان، و BC = √16 = 4 cm ✓. الخطأ الشائع: التوقّف عند BC² = 16 وإعطاء 16؛ أو أخذ نصف 16 بدل جذره فيخرج 8؛ أو اعتبار [AB] هو الوتر، فيُطرح المربّعان، S − T = 4√7، ويخرج √(4√7).",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "ما ناتج نشر العبارة التالية ؟\n(1 − √7)²",
+      "options": [
+        {
+          "id": "a",
+          "text": "8 − 2√7"
+        },
+        {
+          "id": "b",
+          "text": "8 − √7"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "d",
+          "text": "8 + 2√7",
+          "misconceptionTag": "math.alg.carre-difference-signes"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نطبّق متطابقة مربّع الفرق: (a − b)² = a² − 2ab + b² مع a = 1 و b = √7. إذن (1 − √7)² = 1 − 2√7 + 7 = 8 − 2√7 ✓. وبما أنّ √28 = 2√7 فالناتج يساوي أيضًا 8 − √28. التحقّق العددي: 1 − √7 ≈ −1,65 ومربّعه ≈ 2,71، و 8 − 2√7 ≈ 2,71 ✓. الخطأ الشائع: جعل الجداء المضاعف موجبًا فيخرج 8 + 2√7؛ أو نسيان العامل 2 في الجداء المضاعف فيخرج 8 − √7؛ أو إسقاط الجداء المضاعف كلّيًّا، 1 + 7 = 8.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "مساحة المربّع المنشأ على الضلع القائم [AC] هي T (بالسنتيمتر المربّع)، ونعلم أنّ:\nT = (1 − √7)²\nما طول AC بالسنتيمتر ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 + √7",
+          "misconceptionTag": "math.num.valeur-absolue-somme-additive"
+        },
+        {
+          "id": "b",
+          "text": "8 − 2√7",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "√7 − 1"
+        },
+        {
+          "id": "d",
+          "text": "1 − √7",
+          "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "AC هو الجذر التربيعي لمساحة المربّع المنشأ عليه: AC = √T = √((1 − √7)²). والجذر التربيعي لمربّع عدد هو القيمة المطلقة لهذا العدد: AC = |1 − √7|. وبما أنّ √7 ≈ 2,65 أكبر من 1، فالعدد 1 − √7 سالب، إذن |1 − √7| = −(1 − √7) = √7 − 1 ≈ 1,65 cm ✓. التحقّق: (√7 − 1)² = 7 − 2√7 + 1 = 8 − 2√7 = T ✓. الخطأ الشائع: كتابة √(a²) = a دون اختبار الإشارة، فيخرج AC = 1 − √7 وهو عدد سالب لا يصلح طولًا؛ أو توزيع القيمة المطلقة على الفرق، |1 − √7| = 1 + √7؛ أو إعطاء المساحة T نفسها بدل طول الضلع.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABC القائم في A نجد AC = √7 − 1 و BC = 4 (بالسنتيمتر). نصغّر المثلّث بنسبة تجعل طول الضلع [AC] مساويًا 1 cm. ما طول الوتر الجديد بالسنتيمتر ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(√7 + 1)/6",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "4(√7 + 1)/8",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "c",
+          "text": "2(√7 + 1)/3"
+        },
+        {
+          "id": "d",
+          "text": "4(√7 − 1)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "معامل التصغير هو k = 1/AC = 1/(√7 − 1)، والوتر الجديد هو BC × k = 4/(√7 − 1). ننطق المقام بضرب البسط والمقام في المرافق √7 + 1: 4(√7 + 1)/((√7 − 1)(√7 + 1)) = 4(√7 + 1)/(7 − 1) = 4(√7 + 1)/6 = 2(√7 + 1)/3 ✓ ≈ 2,43 cm. التحقّق: 2,43 × (√7 − 1) ≈ 2,43 × 1,65 ≈ 4 ✓. الخطأ الشائع: جمع المربّعين في المقام، 7 + 1 = 8، فيخرج 4(√7 + 1)/8؛ أو الضرب في AC بدل القسمة عليه، 4(√7 − 1)، فيصير الضلع [AC] الجديد AC² ≈ 2,71 لا 1؛ أو التوقّف عند مقلوب AC، (√7 + 1)/6، دون ضربه في الوتر 4.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABC قائم في A حيث AB = √7 + 1 و AC = √7 − 1 و BC = 4 (بالسنتيمتر). H المسقط العمودي للنقطة A على (BC). ما طول AH بالسنتيمتر ؟\n<svg viewBox=\"0 0 300 150\"><title>مثلّث ABC قائم في A وارتفاعه AH</title><polygon points=\"237.31,29 18,128 282,128\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"237.31\" y1=\"29\" x2=\"237.31\" y2=\"128\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M 229.11 32.7 L 232.81 40.91 L 241.01 37.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 237.31 120 L 245.31 120 L 245.31 128\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.6\"/><circle cx=\"237.31\" cy=\"29\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"18\" cy=\"128\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"282\" cy=\"128\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"237.31\" cy=\"128\" r=\"3.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"237.31\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"7\" y=\"132\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"293\" y=\"132\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"237.31\" y=\"147\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"133.42\" y=\"95.76\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">√7 + 1</text><text x=\"277\" y=\"68\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">√7 − 1</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2/3"
+        },
+        {
+          "id": "b",
+          "text": "3/2"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "misconceptionTag": "math.geo.hauteur-confondue-avec-mediane"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "مساحة المثلّث القائم في A تُحسب بطريقتين: (AB × AC)/2 بالقاعدة [AC] وارتفاعها [AB]، و (BC × AH)/2 بالوتر وارتفاعه [AH]. إذن AH × BC = AB × AC. الجداء AB × AC = (√7 + 1)(√7 − 1) = 7 − 1 = 6، فـ AH = 6/4 = 3/2 cm ✓. التحقّق: 3/2 = 1,5 أصغر من AC ≈ 1,65 ومن AB ≈ 3,65، كما يجب للعمودي ✓. الخطأ الشائع: نسيان القسمة على BC فيخرج 6؛ أو أخذ الارتفاع موسّطًا، AH = BC/2 = 2، والمسقط H ليس منتصف [BC]؛ أو قلب القسمة، BC/(AB × AC) = 4/6 = 2/3.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.relations-metriques",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABC القائم في A نعلم أنّ AB = √7 + 1، أي AB² = 8 + 2√7، و AH = 3/2 (بالسنتيمتر)، حيث H المسقط العمودي للنقطة A على (BC). ونقبل أنّ:\n(4 + √7)² = 23 + 8√7\nما طول BH بالسنتيمتر ؟\n<svg viewBox=\"0 0 300 150\"><title>مثلّث ABC قائم في A وارتفاعه AH</title><polygon points=\"237.31,29 18,128 282,128\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"237.31\" y1=\"29\" x2=\"237.31\" y2=\"128\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M 229.11 32.7 L 232.81 40.91 L 241.01 37.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 237.31 120 L 245.31 120 L 245.31 128\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.6\"/><circle cx=\"237.31\" cy=\"29\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"18\" cy=\"128\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"282\" cy=\"128\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"237.31\" cy=\"128\" r=\"3.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"237.31\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"7\" y=\"132\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"293\" y=\"132\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"237.31\" y=\"147\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"223.31\" y=\"83\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"13\">3/2</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(4 − √7)/2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "(4 + √7)/4"
+        },
+        {
+          "id": "c",
+          "text": "√7 − 1/2",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "(4 + √7)/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "في المثلّث ABH القائم في H: BH² = AB² − AH² = (8 + 2√7) − (3/2)² = (32 + 8√7 − 9)/4 = (23 + 8√7)/4. وبالمتطابقة المعطاة 23 + 8√7 = (4 + √7)²، فـ BH² = ((4 + √7)/2)²، أي BH = (4 + √7)/2 لأنّ الطول موجب ✓ (≈ 3,32 cm). التحقّق: BH < AB ≈ 3,65، كما يجب لضلع قائم في المثلّث ABH ✓. الخطأ الشائع: طرح الأطوال بدل مربّعاتها، BH = AB − AH = √7 + 1 − 3/2 = √7 − 1/2؛ أو نسيان أخذ جذر المقام 4 فيخرج (4 + √7)/4؛ أو إعطاء القطعة الأخرى CH = (4 − √7)/2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABC القائم في A، H المسقط العمودي للنقطة A على (BC)، ونجد (بالسنتيمتر) BH = (4 + √7)/2 و CH = (4 − √7)/2. ما قيمة الجداء BH × CH ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "9/4"
+        },
+        {
+          "id": "b",
+          "text": "9/2"
+        },
+        {
+          "id": "c",
+          "text": "23/4",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "d",
+          "text": "(16 − √7)/4",
+          "misconceptionTag": "math.alg.difference-carres-second-terme-non-eleve-au-carre"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "BH × CH = ((4 + √7)/2) × ((4 − √7)/2) = (4 + √7)(4 − √7)/4 = (4² − (√7)²)/4 = (16 − 7)/4 = 9/4 ✓، بمتطابقة a² − b² = (a + b)(a − b). وبالعلاقة القياسيّة AH² = BH × CH نستنتج أنّ هذا الجداء هو مربّع الارتفاع، أي AH = √(9/4) = 3/2 cm ✓. الخطأ الشائع: جمع المربّعين بدل طرحهما، 16 + 7 = 23، فيخرج 23/4؛ أو نسيان أحد المقامين فيخرج 9/2؛ أو نسيان تربيع √7 فيخرج (16 − √7)/4.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.geo.relations-metriques"
+      ]
+    }
+  ]
+}
