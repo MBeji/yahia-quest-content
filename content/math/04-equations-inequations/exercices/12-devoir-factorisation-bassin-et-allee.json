@@ -1,0 +1,218 @@
+{
+  "title": "👑 تحدّي الفرض ⭐⭐⭐⭐: تعميل ثمّ حوض سباحة وممرّ يحيط به",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 12,
+  "questions": [
+    {
+      "prompt": "نعلم أنّه لكلّ عدد حقيقي w:\nw² + 4w − 60 = (w + 2)² − 64\nما التعميل الصحيح للعبارة w² + 4w − 60 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(w − 6)²",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        },
+        {
+          "id": "b",
+          "text": "(w − 6)(w + 10)"
+        },
+        {
+          "id": "c",
+          "text": "(w + 6)(w − 10)"
+        },
+        {
+          "id": "d",
+          "text": "(w − 62)(w + 66)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "العدد 64 يساوي 8²، فالعبارة فرق مربّعين: (w + 2)² − 8² = [(w + 2) − 8][(w + 2) + 8] = (w − 6)(w + 10) ✓. تحقّق بالنشر: (w − 6)(w + 10) = w² + 10w − 6w − 60 = w² + 4w − 60 ✓. الخطأ الشائع: عدم أخذ جذر 64، أي معاملة 64 كأنّه الحدّ الثاني: [(w + 2) − 64][(w + 2) + 64] = (w − 62)(w + 66). ومن كتب فرق المربّعين مربّعًا واحدًا وجد (w + 2 − 8)² = (w − 6)². ومن أخطأ في إشارة الحدّ الأوّل كتب (w + 6)(w − 10)، وحدّه الأوسط −4w لا 4w.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.factorisation",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ:\nw² + 4w − 60 = (w − 6)(w + 10)\nما مجموعة حلول المعادلة التالية؟\nw² + 4w − 60 = 0",
+      "options": [
+        {
+          "id": "a",
+          "text": "{6 ; 10}",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "b",
+          "text": "{−6 ; 10}",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "c",
+          "text": "{−8 ; 8}"
+        },
+        {
+          "id": "d",
+          "text": "{−10 ; 6}"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "حسب مبدأ الجداء المعدوم: (w − 6)(w + 10) = 0 يعني w − 6 = 0 أو w + 10 = 0، أي w = 6 أو w = −10. مجموعة الحلول {−10 ; 6} ✓. تحقّق: 6² + 4 × 6 − 60 = 36 + 24 − 60 = 0 و (−10)² + 4 × (−10) − 60 = 100 − 40 − 60 = 0 ✓. الخطأ الشائع: قراءة جذر العامل كما يظهر في القوس، فمن قرأ (w + 10) على أنّه 10 وجد {6 ; 10}، ومن عكس الإشارتين معًا وجد {−6 ; 10}. ومن أخذ الجذر التربيعي في (w + 2)² = 64 دون طرح 2 وجد w = ±8.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.equations-produit"
+      ]
+    },
+    {
+      "prompt": "حوض سباحة مستطيل الشكل، طوله يزيد على عرضه بـ 4 m ومساحته 60 m². نرمز بـ w إلى عرضه بالمتر. ما بُعدا الحوض (العرض أوّلًا ثمّ الطول)؟\nالشكل تخطيطي، غير مرسوم بمقياس.\n<svg viewBox=\"0 0 320 168\"><title>حوض سباحة مستطيل عرضه w وطوله w + 4</title><rect x=\"60\" y=\"20\" width=\"200\" height=\"100\" fill=\"#0f6e56\" opacity=\"0.14\"/><rect x=\"60\" y=\"20\" width=\"200\" height=\"100\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"160\" y=\"76\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">60 m²</text><text x=\"160\" y=\"143\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">w + 4</text><text x=\"42\" y=\"76\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">w</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "13 m و 17 m",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
+        },
+        {
+          "id": "b",
+          "text": "10 m و 14 m",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "c",
+          "text": "6 m و 10 m"
+        },
+        {
+          "id": "d",
+          "text": "6 m و 10 m، أو −10 m و −6 m",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الطول w + 4 والمساحة w(w + 4) = 60، أي w² + 4w − 60 = 0، وهي المعادلة نفسها التي حللناها: w = 6 أو w = −10. العرض طول، فهو موجب قطعًا، فنرفض −10 ونقبل w = 6 ✓. الطول 6 + 4 = 10. تحقّق: 6 × 10 = 60 ✓ و 10 − 6 = 4 ✓. الخطأ الشائع: الاحتفاظ بالحلّين معًا، فيُضاف إلى الجواب عرض −10 m وطول −6 m، وهما يحقّقان المساواة (−10) × (−6) = 60 لكنّ الأطوال لا تكون سالبة. ومن قرأ جذر العامل (w + 10) على أنّه 10 وجد عرضًا 10 m وطولًا 14 m. ومن خلط المساحة بالمحيط كتب 2(w + w + 4) = 60 فوجد عرضًا 13 m وطولًا 17 m: محيط هذا الحوض 60 m حقًّا، لكنّ مساحته 13 × 17 = 221 m² لا 60 m².",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.mise-en-equation",
+        "math.alg.equations-produit"
+      ]
+    },
+    {
+      "prompt": "حوض السباحة بُعداه 6 m و 10 m. نحيط به بممرّ عرضه x متر، ثابت على الجهات الأربع، فتصير مساحة الحوض مع الممرّ 96 m². ما المعادلة التي تترجم ذلك؟\nالشكل تخطيطي، غير مرسوم بمقياس.\n<svg viewBox=\"0 0 340 220\"><title>حوض سباحة مستطيل يحيط به ممرّ عرضه x على الجهات الأربع</title><rect x=\"40\" y=\"20\" width=\"260\" height=\"180\" fill=\"#94a3b8\" opacity=\"0.3\"/><rect x=\"70\" y=\"50\" width=\"200\" height=\"120\" fill=\"#0f6e56\" opacity=\"0.14\"/><rect x=\"40\" y=\"20\" width=\"260\" height=\"180\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"70\" y=\"50\" width=\"200\" height=\"120\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"170\" y=\"82\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">10 m</text><text x=\"96\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">6 m</text><text x=\"170\" y=\"40\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x</text><text x=\"170\" y=\"190\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x</text><text x=\"55\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x</text><text x=\"285\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(10 + x)(6 + x) = 96"
+        },
+        {
+          "id": "b",
+          "text": "(10 + 2x)(6 + 2x) = 96"
+        },
+        {
+          "id": "c",
+          "text": "(10 + 2x)(6 + 2x) = 36"
+        },
+        {
+          "id": "d",
+          "text": "60 + 32x = 96"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الممرّ يحيط بالحوض من الجهات الأربع، فيزيد كلّ بُعد بمقدار x من كلّ جهة، أي بـ 2x: البُعدان الجديدان 10 + 2x و 6 + 2x، ومساحة المستطيل الخارجي (10 + 2x)(6 + 2x) = 96 ✓، وهي مساحة الحوض والممرّ معًا. الخطأ الشائع: إضافة x مرّة واحدة إلى كلّ بُعد، أي كأنّ الممرّ على جهة واحدة، فتُكتب (10 + x)(6 + x) = 96. ومن جعل الطرف الأيمن 96 − 60 = 36، وهي مساحة الممرّ وحده، خلط بين المساحة الكلّية ومساحة الممرّ. ومن اكتفى بشريطين طوليّين وشريطين عرضيّين ونسي المربّعات الأربعة الصغيرة عند الأركان كتب 60 + 2x × 10 + 2x × 6 = 60 + 32x = 96.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.mise-en-equation",
+        "math.mes.aires"
+      ]
+    },
+    {
+      "prompt": "المعادلة التي تترجم الوضعية هي:\n(10 + 2x)(6 + 2x) = 96\nبعد النشر ونقل 96 إلى الطرف الأيسر ثمّ قسمة الطرفين على 4، أيّ المعادلات التالية نحصل عليها؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "x² + 3x − 9 = 0"
+        },
+        {
+          "id": "b",
+          "text": "x² + 8x − 36 = 0"
+        },
+        {
+          "id": "c",
+          "text": "x² + 8x − 9 = 0"
+        },
+        {
+          "id": "d",
+          "text": "x² + 8x + 39 = 0",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ننشر بأربعة جداءات: (10 + 2x)(6 + 2x) = 60 + 20x + 12x + 4x² = 4x² + 32x + 60. فتصير المعادلة 4x² + 32x + 60 = 96. ننقل 96 فتنقلب إشارته: 4x² + 32x − 36 = 0، ثمّ نقسم الحدود الثلاثة على 4: x² + 8x − 9 = 0 ✓. الخطأ الشائع: قسمة الحدّين الأوّلين على 4 دون الحدّ الثابت، فيخرج x² + 8x − 36 = 0. ومن نقل 96 دون قلب إشارته كتب 4x² + 32x + 156 = 0 فوجد x² + 8x + 39 = 0. ومن نسي أحد الجداءات الأربعة ونشر 60 + 12x + 4x² وجد x² + 3x − 9 = 0.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.developpement",
+        "math.alg.equations-premier-degre"
+      ]
+    },
+    {
+      "prompt": "عرض الممرّ x بالمتر يحقّق المعادلة التالية:\nx² + 8x − 9 = 0\nونعلم أنّه لكلّ عدد حقيقي x:\nx² + 8x − 9 = (x + 4)² − 25\nما عرض الممرّ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 m"
+        },
+        {
+          "id": "b",
+          "text": "9 m أو −1 m",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "c",
+          "text": "9 m",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "d",
+          "text": "1 m أو −9 m",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "العدد 25 يساوي 5²، فالمعادلة فرق مربّعين: (x + 4)² − 5² = (x + 4 − 5)(x + 4 + 5) = (x − 1)(x + 9) = 0، إذن x = 1 أو x = −9. عرض الممرّ طول موجب قطعًا، فنرفض −9 ونقبل x = 1 ✓: الممرّ عرضه 1 m. تحقّق: (10 + 2)(6 + 2) = 12 × 8 = 96 ✓. الخطأ الشائع: الاحتفاظ بالحلّين فيُجاب «1 m أو −9 m»؛ والحلّ −9 يحقّق المعادلة، فالبُعدان الوهميّان −8 و −12 جداؤهما 96 أيضًا، لكنّ الممرّ لا يكون عرضه سالبًا. ومن قرأ جذر العامل (x + 9) على أنّه 9 أجاب 9 m، ومن قرأ جذري العاملين بإشارتيهما الظاهرتين في القوسين وجد −1 و 9، فإن أبقاهما معًا أجاب «9 m أو −1 m».",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.factorisation"
+      ]
+    },
+    {
+      "prompt": "حوض سباحة بُعداه 6 m و 10 m يحيط به ممرّ عرضه x متر على الجهات الأربع. لو كانت مساحة الحوض مع الممرّ 40 m² بدل 96 m²، لكانت المعادلة المناسبة:\nx² + 8x + 5 = 0\nونعلم أنّه لكلّ عدد حقيقي x:\nx² + 8x + 5 = (x + 4)² − 11\nكم حلًّا مقبولًا تقبله هذه المسألة؟\nالشكل تخطيطي، غير مرسوم بمقياس.\n<svg viewBox=\"0 0 340 220\"><title>حوض سباحة مستطيل يحيط به ممرّ عرضه x على الجهات الأربع</title><rect x=\"40\" y=\"20\" width=\"260\" height=\"180\" fill=\"#94a3b8\" opacity=\"0.3\"/><rect x=\"70\" y=\"50\" width=\"200\" height=\"120\" fill=\"#0f6e56\" opacity=\"0.14\"/><rect x=\"40\" y=\"20\" width=\"260\" height=\"180\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"70\" y=\"50\" width=\"200\" height=\"120\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"170\" y=\"82\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">10 m</text><text x=\"96\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">6 m</text><text x=\"170\" y=\"40\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x</text><text x=\"170\" y=\"190\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x</text><text x=\"55\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x</text><text x=\"285\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "لا يوجد أيّ حلّ مقبول"
+        },
+        {
+          "id": "b",
+          "text": "يوجد حلّ مقبول واحد",
+          "misconceptionTag": "math.num.comparaison-radical-et-entier"
+        },
+        {
+          "id": "c",
+          "text": "يوجد حلّان مقبولان",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        },
+        {
+          "id": "d",
+          "text": "لا يمكن الحكم دون حساب بالآلة"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "العدد 11 ليس مربّعًا كاملًا لكنّه مربّع للعدد √11، فالعبارة فرق مربّعين: (x + 4)² − (√11)² = (x + 4 − √11)(x + 4 + √11) = 0، إذن x = −4 + √11 أو x = −4 − √11. الحلّ الثاني سالب بوضوح. والأوّل سالب أيضًا: نقارن √11 بالعدد 4 بمقارنة مربّعيهما، 11 < 16، فـ √11 < 4 ومنه −4 + √11 < 0 (قيمته التقريبية −0,68). فللمعادلة حلّان ولا حلّ مقبول للمسألة ✓. ويُفهم ذلك دون حساب: الممرّ لا ينقص المساحة، والحوض وحده مساحته 60 m² أكبر من 40 m². الخطأ الشائع: الاحتفاظ بالحلّين لأنّهما حقيقيان، فيُجاب بحلّين مقبولين. ومن قارن 11 بالعدد 4 بدل مربّعه 16 ظنّ أنّ √11 أكبر من 4 فحسب −4 + √11 موجبًا وأجاب بحلّ واحد. ومن لم يعرف كيف يقارن √11 بالعدد 4 قال إنّه لا يحكم دون آلة.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.factorisation",
+        "math.num.ordre-encadrement"
+      ]
+    }
+  ]
+}
