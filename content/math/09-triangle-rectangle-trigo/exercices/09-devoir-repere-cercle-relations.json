@@ -1,0 +1,251 @@
+{
+  "title": "👑 تحدّي الفرض ⭐⭐⭐⭐: دائرة في معلّم — إحداثيّات ومسافات وعلاقات قياسيّة",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "الدائرة التي مركزها O وشعاعها 3 مرسومة في معلّم متعامد ومتجانس (O ; i ; j)، والنقطة B من هذه الدائرة ترتيبتها 1 وفاصلتها موجبة. احسب هذه الفاصلة.\n<svg viewBox=\"0 0 330 280\"><path d=\"M20 140 H312 M165 268 V16\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M318 140 L307 135 L307 145 Z M165 10 L160 21 L170 21 Z\" fill=\"#94a3b8\"/><circle cx=\"165\" cy=\"140\" r=\"96\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M197 135 V145 M160 108 H170\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M165 108 L255.5 108\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M165 140 L255.5 108\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"165\" cy=\"140\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"255.5\" cy=\"108\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"154\" y=\"157\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"199\" y=\"157\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"154\" y=\"113\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"268.5\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\">B</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "b",
+          "text": "2√2"
+        },
+        {
+          "id": "c",
+          "text": "√10",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "d",
+          "text": "4",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "B على الدائرة، فبُعدها عن المركز هو الشعاع: OB = 3. وصيغة المسافة في المعلّم المتعامد والمتجانس تعطي OB² = xB² + yB²، أي 9 = xB² + 1، ومنه xB² = 8 و xB = √8 = √(4 × 2) = 2√2، لأنّ الفاصلة موجبة ✓. التحقّق: (2√2)² + 1² = 8 + 1 = 9 = 3² ✓. الخطأ الشائع: جمع المربّعين كأنّ OB ضلع قائم، 9 + 1 = 10، فيخرج √10، أطول من الشعاع نفسه؛ أو طرح الطولين دون تربيع، 3 − 1 = 2. ومن أخذ نصف 8 بدل جذره وجد 4، وهو أيضًا أطول من الشعاع.",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-calculs",
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "النقطة B(2√2 ; 1) من الدائرة التي مركزها O وشعاعها 3، و C مناظرة B بالنسبة إلى O. ما فاصلة النقطة C ؟\n<svg viewBox=\"0 0 330 280\"><path d=\"M20 140 H312 M165 268 V16\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M318 140 L307 135 L307 145 Z M165 10 L160 21 L170 21 Z\" fill=\"#94a3b8\"/><circle cx=\"165\" cy=\"140\" r=\"96\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M197 135 V145 M160 108 H170\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M165 140 L255.5 108\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"165\" cy=\"140\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"255.5\" cy=\"108\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"154\" y=\"157\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"199\" y=\"157\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"154\" y=\"113\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"268.5\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\">B</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4√2"
+        },
+        {
+          "id": "b",
+          "text": "−2√2"
+        },
+        {
+          "id": "c",
+          "text": "2√2",
+          "misconceptionTag": "math.vec.quadrant-signes-confondus"
+        },
+        {
+          "id": "d",
+          "text": "4√2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "C مناظرة B بالنسبة إلى O، فالنقطة O منتصف [BC]: (xB + xC)/2 = xO = 0، ومنه xC = 2xO − xB = 0 − 2√2 = −2√2 ✓، وبالطريقة نفسها yC = 0 − 1 = −1، أي C(−2√2 ; −1). التحقّق: منتصف [BC] هو ((2√2 − 2√2)/2 ; (1 − 1)/2) = (0 ; 0)، أي O ✓، و OC = √(8 + 1) = 3، فالنقطة C على الدائرة أيضًا. الخطأ الشائع: الإبقاء على الفاصلة 2√2 موجبة، مع أنّ C في الجهة الأخرى من الأصل وفاصلتها عدد أصمّ سالب. ومن جعل B منتصف [OC] بدل O منتصف [BC] وجد xC = 2xB − xO = 4√2، ومن كتب xC = −2xB فضاعف المقابل وجد −4√2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-calculs",
+        "math.vec.repere-coordonnees"
+      ]
+    },
+    {
+      "prompt": "P نقطة تقاطع الدائرة التي مركزها O وشعاعها 3 مع نصف محور الترتيبات الموجب، و C(−2√2 ; −1). ما المسافة PC ؟\n<svg viewBox=\"0 0 330 280\"><path d=\"M20 140 H312 M165 268 V16\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M318 140 L307 135 L307 145 Z M165 10 L160 21 L170 21 Z\" fill=\"#94a3b8\"/><circle cx=\"165\" cy=\"140\" r=\"96\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M197 135 V145 M160 108 H170\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M165 44 L74.5 172\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"165\" cy=\"140\" r=\"3.5\"/><circle cx=\"255.5\" cy=\"108\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"165\" cy=\"44\" r=\"3.5\"/><circle cx=\"74.5\" cy=\"172\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"154\" y=\"157\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"199\" y=\"157\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"154\" y=\"113\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"268.5\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"61.5\" y=\"184\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"177\" y=\"37\" text-anchor=\"middle\" fill=\"#0f172a\">P</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√2",
+          "misconceptionTag": "math.int.produit-signes-negatifs"
+        },
+        {
+          "id": "b",
+          "text": "2√3"
+        },
+        {
+          "id": "c",
+          "text": "2√6"
+        },
+        {
+          "id": "d",
+          "text": "2√2 + 4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "P على محور الترتيبات وعلى بُعد 3 من O في الجهة الموجبة، إذن P(0 ; 3). ثمّ PC² = (xC − xP)² + (yC − yP)² = (−2√2 − 0)² + (−1 − 3)² = 8 + 16 = 24، ومنه PC = √24 = 2√6 ✓. التحقّق بالمعنى: 2√6 ≈ 4,9، أقصر من القطر 6 كما يجب لقطعة طرفاها على الدائرة. الخطأ الشائع: جعل مربّع العدد السالب −2√2 سالبًا، −8 + 16 = 8، فيخرج 2√2؛ أو الخطأ في الفرق −1 − 3 بكتابة 2 بدل −4، فيخرج √12 = 2√3؛ أو جمع الفرقين دون تربيع، 2√2 + 4.",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-calculs",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "في المثلّث PBC: PB = 2√3 و PC = 2√6، والنقطتان B و C متناظرتان بالنسبة إلى O على الدائرة التي مركزها O وشعاعها 3. ما طبيعة المثلّث PBC ؟\n<svg viewBox=\"0 0 330 280\"><path d=\"M20 140 H312 M165 268 V16\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M318 140 L307 135 L307 145 Z M165 10 L160 21 L170 21 Z\" fill=\"#94a3b8\"/><circle cx=\"165\" cy=\"140\" r=\"96\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M165 44 L255.5 108 L74.5 172 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"165\" cy=\"140\" r=\"3.5\"/></g><g fill=\"#0f172a\"><circle cx=\"165\" cy=\"44\" r=\"3.5\"/><circle cx=\"255.5\" cy=\"108\" r=\"3.5\"/><circle cx=\"74.5\" cy=\"172\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"154\" y=\"157\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"268.5\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"61.5\" y=\"184\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"177\" y=\"37\" text-anchor=\"middle\" fill=\"#0f172a\">P</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "ليس قائمًا",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "b",
+          "text": "قائم في B",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "c",
+          "text": "قائم في C",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "d",
+          "text": "قائم في P"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "O منتصف [BC]، فـ BC = 2 × 3 = 6، وهو أطول الأضلاع. نضعه وحده: PB² + PC² = 12 + 24 = 36 = BC²، فالمثلّث قائم بعكس نظرية فيثاغورس، والزاوية القائمة تقابل الضلع الأطول [BC]، أي أنّها في الرأس P ✓. الخطأ الشائع: وضع الزاوية القائمة في B أو في C، والزاوية القائمة تقابل الوتر دائمًا، والوتر هنا [BC]؛ أو جمع الأطوال دون تربيع، 2√3 + 2√6 ≈ 8,4 ≠ 6، والحكم عندها بأنّ المثلّث ليس قائمًا.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.vec.repere-calculs"
+      ]
+    },
+    {
+      "prompt": "المثلّث PBC قائم في P حيث PB = 2√3 و PC = 2√6 و BC = 6، و H المسقط العمودي للنقطة P على (BC). ما طول PH ؟\n<svg viewBox=\"0 0 330 280\"><path d=\"M20 140 H312 M165 268 V16\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M318 140 L307 135 L307 145 Z M165 10 L160 21 L170 21 Z\" fill=\"#94a3b8\"/><circle cx=\"165\" cy=\"140\" r=\"96\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M165 44 L255.5 108 L74.5 172 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M165 44 L195.2 129.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M192.2 120.8 L200.7 117.8 L203.7 126.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><path d=\"M173.2 49.8 L167.4 57.9 L159.2 52.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><g fill=\"#0f172a\"><circle cx=\"165\" cy=\"44\" r=\"3.5\"/><circle cx=\"255.5\" cy=\"108\" r=\"3.5\"/><circle cx=\"74.5\" cy=\"172\" r=\"3.5\"/><circle cx=\"165\" cy=\"140\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"195.2\" cy=\"129.3\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"154\" y=\"157\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"268.5\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"61.5\" y=\"184\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"177\" y=\"37\" text-anchor=\"middle\" fill=\"#0f172a\">P</text><text x=\"201.2\" y=\"149.3\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√2"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "misconceptionTag": "math.geo.hauteur-confondue-avec-mediane"
+        },
+        {
+          "id": "c",
+          "text": "6√2",
+          "misconceptionTag": "math.geo.relation-aire-mauvais-cote"
+        },
+        {
+          "id": "d",
+          "text": "12√2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المساحة مرّتين: PH × BC = PB × PC، أي 6 × PH = 2√3 × 2√6 = 4√18 = 4 × 3√2 = 12√2، ومنه PH = 12√2/6 = 2√2 ✓. التحقّق: 2√2 ≈ 2,83 أقصر من PB ≈ 3,46 ومن PC ≈ 4,90، كما يجب للعمودي. الخطأ الشائع: ضرب الارتفاع في ضلع قائم، PH × PB = PC × BC، فيخرج 6√2؛ أو التوقّف عند الجداء 12√2 دون القسمة على BC؛ أو أخذ الارتفاع موسّطًا، PO = 3، والمسقط H ليس منتصف [BC] إلّا إذا تقايس الضلعان القائمان.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.relations-metriques",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "في المثلّث PBC القائم في P: PB = 2√3، و H المسقط العمودي للنقطة P على (BC) مع PH = 2√2، و O مركز الدائرة (شعاعها 3) ومنتصف [BC]. ما المسافة OH ؟\n<svg viewBox=\"0 0 330 280\"><path d=\"M20 140 H312 M165 268 V16\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M318 140 L307 135 L307 145 Z M165 10 L160 21 L170 21 Z\" fill=\"#94a3b8\"/><circle cx=\"165\" cy=\"140\" r=\"96\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M165 44 L255.5 108 L74.5 172 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M165 44 L195.2 129.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M165 140 L195.2 129.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M192.2 120.8 L200.7 117.8 L203.7 126.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M173.2 49.8 L167.4 57.9 L159.2 52.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><g fill=\"#0f172a\"><circle cx=\"165\" cy=\"44\" r=\"3.5\"/><circle cx=\"255.5\" cy=\"108\" r=\"3.5\"/><circle cx=\"74.5\" cy=\"172\" r=\"3.5\"/><circle cx=\"165\" cy=\"140\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"195.2\" cy=\"129.3\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"154\" y=\"157\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"268.5\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"61.5\" y=\"184\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"177\" y=\"37\" text-anchor=\"middle\" fill=\"#0f172a\">P</text><text x=\"201.2\" y=\"149.3\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "3 − 2√2",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "في المثلّث PHB القائم في H: BH² = PB² − PH² = 12 − 8 = 4، إذن BH = 2. والنقطة H بين B و O لأنّ BH = 2 < BO = 3، فـ OH = OB − BH = 3 − 2 = 1 ✓. طريق ثانٍ: في المثلّث PHO القائم في H، و OP = 3 لأنّ P على الدائرة: OH² = OP² − PH² = 9 − 8 = 1، إذن OH = 1 ✓. وتحقّق ثالث بالعلاقة القياسيّة: CH = 6 − 2 = 4 و BH × CH = 2 × 4 = 8 = PH² ✓. الخطأ الشائع: جمع الطولين، OB + BH = 5، كأنّ H خارج القطعة [BO]؛ أو التوقّف عند BH = 2؛ أو طرح الأطوال دون تربيع، OP − PH = 3 − 2√2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.geo.relations-metriques"
+      ]
+    },
+    {
+      "prompt": "O منتصف [BC] في المثلّث PBC القائم في P، و PC = 2√6. المستقيم المارّ من O والموازي لـ (PC) يقطع [PB] في M. ما طول OM ؟\n<svg viewBox=\"0 0 330 280\"><path d=\"M20 140 H312 M165 268 V16\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M318 140 L307 135 L307 145 Z M165 10 L160 21 L170 21 Z\" fill=\"#94a3b8\"/><circle cx=\"165\" cy=\"140\" r=\"96\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M165 44 L255.5 108 L74.5 172 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M165 140 L210.3 76\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M192.7 111.2 L192 101.9 L182.9 104.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M122.6 114.4 L121.8 105.1 L112.8 107.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M173.2 49.8 L167.4 57.9 L159.2 52.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><g fill=\"#0f172a\"><circle cx=\"165\" cy=\"44\" r=\"3.5\"/><circle cx=\"255.5\" cy=\"108\" r=\"3.5\"/><circle cx=\"74.5\" cy=\"172\" r=\"3.5\"/><circle cx=\"165\" cy=\"140\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"210.3\" cy=\"76\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"154\" y=\"157\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"268.5\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"61.5\" y=\"184\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"177\" y=\"37\" text-anchor=\"middle\" fill=\"#0f172a\">P</text><text x=\"192.3\" y=\"81\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√3"
+        },
+        {
+          "id": "b",
+          "text": "√6"
+        },
+        {
+          "id": "c",
+          "text": "2√6",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "d",
+          "text": "4√6",
+          "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "في المثلّث BPC: O من [BC] و M من [BP] و (OM) ∥ (PC)، فبنظرية طاليس انطلاقًا من الرأس B: BO/BC = BM/BP = OM/PC. و O منتصف [BC] فـ BO/BC = 1/2، إذن OM = PC/2 = 2√6/2 = √6 ✓، و M منتصف [PB]. ولأنّ (PC) ⊥ (PB) و (OM) ∥ (PC)، فإنّ (OM) ⊥ (PB): النقطة M هي أيضًا المسقط العمودي للنقطة O على (PB). الخطأ الشائع: قلب العامل 2 فيخرج 4√6، أو المساواة بين OM و PC لأنّهما متوازيتان فيخرج 2√6. أمّا √3 فنصف PB، والقطعة [OM] توازي [PC] لا [PB].",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "P(0 ; 3) و B(2√2 ; 1)، و O مركز الدائرة ومنتصف [BC]. المستقيم المارّ من O والموازي لـ (PC) يقطع [PB] في M. ما إحداثيّتا M ؟\n<svg viewBox=\"0 0 330 280\"><path d=\"M20 140 H312 M165 268 V16\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><path d=\"M318 140 L307 135 L307 145 Z M165 10 L160 21 L170 21 Z\" fill=\"#94a3b8\"/><circle cx=\"165\" cy=\"140\" r=\"96\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M197 135 V145 M160 108 H170\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M165 44 L255.5 108\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M255.5 108 L74.5 172\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M165 44 L74.5 172\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M165 140 L210.3 76\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M192.7 111.2 L192 101.9 L182.9 104.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M122.6 114.4 L121.8 105.1 L112.8 107.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"165\" cy=\"44\" r=\"3.5\"/><circle cx=\"255.5\" cy=\"108\" r=\"3.5\"/><circle cx=\"74.5\" cy=\"172\" r=\"3.5\"/><circle cx=\"165\" cy=\"140\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"210.3\" cy=\"76\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"154\" y=\"157\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"199\" y=\"157\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"154\" y=\"113\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"268.5\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"61.5\" y=\"184\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"177\" y=\"37\" text-anchor=\"middle\" fill=\"#0f172a\">P</text><text x=\"192.3\" y=\"81\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(2 ; √2)",
+          "misconceptionTag": "math.vec.coordonnees-point-inversees"
+        },
+        {
+          "id": "b",
+          "text": "(2√2 ; 4)",
+          "misconceptionTag": "math.vec.milieu-sans-moitie"
+        },
+        {
+          "id": "c",
+          "text": "(√2 ; 2)"
+        },
+        {
+          "id": "d",
+          "text": "(−√2 ; 1)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "O منتصف [BC] و (OM) ∥ (PC)، فبنظرية طاليس في المثلّث BPC: BM/BP = BO/BC = 1/2، إذن M منتصف [PB]. إحداثيّاته معدّل إحداثيّات الطرفين: xM = (0 + 2√2)/2 = √2 و yM = (3 + 1)/2 = 2، أي M(√2 ; 2) ✓. التحقّق: OM = √((√2)² + 2²) = √6، وهو نصف PC = 2√6 كما يعطيه طاليس ✓. الخطأ الشائع: جمع الإحداثيّات دون القسمة على 2 فيخرج (2√2 ; 4)، أو أخذ نصف الفرقين بدل نصف المجموعين فيخرج (−√2 ; 1)، أو قلب ترتيب الإحداثيّتين فيخرج (2 ; √2).",
+      "difficulty": 3,
+      "competencies": [
+        "math.vec.repere-calculs",
+        "math.geo.thales-direct"
+      ]
+    }
+  ]
+}

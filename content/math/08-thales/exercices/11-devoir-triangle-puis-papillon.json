@@ -1,0 +1,182 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: من مثلّث طاليس إلى وضعية الفراشة",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 11,
+  "questions": [
+    {
+      "prompt": "في المثلّث ABC، النقطة M من [AB] والنقطة N من [AC] حيث (MN) ∥ (BC)، و AM = 7 cm و MB = 14 cm و AN = 9 cm. ما طول AC ؟\n<svg viewBox=\"0 0 320 255\"><path d=\"M100 28.8 L80 95.8 L160 95.8 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M100 28.8 L40 230 L280 230 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M80 95.8 L160 95.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M116.4 101.8 L123.6 95.8 L116.4 89.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M156.4 236 L163.6 230 L156.4 224\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"100\" cy=\"28.8\" r=\"3.5\"/><circle cx=\"40\" cy=\"230\" r=\"3.5\"/><circle cx=\"280\" cy=\"230\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"80\" cy=\"95.8\" r=\"3.5\"/><circle cx=\"160\" cy=\"95.8\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"100\" y=\"18.8\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"28\" y=\"245\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"292\" y=\"245\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"66\" y=\"97.8\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"174\" y=\"97.8\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"78\" y=\"60\" text-anchor=\"middle\" fill=\"#0f172a\">7</text><text x=\"44\" y=\"166\" text-anchor=\"middle\" fill=\"#0f172a\">14</text><text x=\"143\" y=\"60\" text-anchor=\"middle\" fill=\"#0f172a\">9</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 cm",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "b",
+          "text": "18 cm"
+        },
+        {
+          "id": "c",
+          "text": "23 cm",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "d",
+          "text": "27 cm"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نبدأ بالضلع كاملًا: AB = AM + MB = 7 + 14 = 21 cm، لأنّ M على القطعة [AB]. ولأنّ (MN) ∥ (BC)، تعطي نظرية طاليس AM/AB = AN/AC، أي 7/21 = 9/AC، ومنه AC = 9 × 21/7 = 27 cm ✓. طريق ثانٍ بصيغة الجزء على الجزء المتبقّي: AM/MB = AN/NC أي 7/14 = 9/NC، فـ NC = 18 cm و AC = 9 + 18 = 27 cm ✓. الخطأ الشائع: كتابة AN/AC = AM/MB بخلط الصيغتين فيخرج 18 cm، وهو في الحقيقة طول NC لا AC. ومن قلب إحدى النسبتين وجد 3 cm، أقصر من AN نفسه، أمّا 23 cm فيأتي من جعل NC = MB، أي 9 + 14: النظرية تساوي بين النسب لا بين الأطوال.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABC نفسه: (MN) ∥ (BC) و AM = 7 cm و MB = 14 cm، والقاعدة [BC] طولها 24 cm. ما طول MN ؟\n<svg viewBox=\"0 0 320 255\"><path d=\"M100 28.8 L80 95.8 L160 95.8 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M100 28.8 L40 230 L280 230 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M80 95.8 L160 95.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M116.4 101.8 L123.6 95.8 L116.4 89.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M156.4 236 L163.6 230 L156.4 224\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"100\" cy=\"28.8\" r=\"3.5\"/><circle cx=\"40\" cy=\"230\" r=\"3.5\"/><circle cx=\"280\" cy=\"230\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"80\" cy=\"95.8\" r=\"3.5\"/><circle cx=\"160\" cy=\"95.8\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"100\" y=\"18.8\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"28\" y=\"245\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"292\" y=\"245\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"66\" y=\"97.8\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"174\" y=\"97.8\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"78\" y=\"60\" text-anchor=\"middle\" fill=\"#0f172a\">7</text><text x=\"44\" y=\"166\" text-anchor=\"middle\" fill=\"#0f172a\">14</text><text x=\"160\" y=\"249\" text-anchor=\"middle\" fill=\"#0f172a\">24</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "8 cm"
+        },
+        {
+          "id": "b",
+          "text": "10 cm",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "c",
+          "text": "12 cm",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "d",
+          "text": "72 cm",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "القاعدة MN تدخل في النسبة الثالثة لطاليس، وهي نسبة الجزء على الكلّ: AM/AB = MN/BC، مع AB = 7 + 14 = 21 cm. إذن 7/21 = MN/24، أي MN = 24 × 1/3 = 8 cm ✓. التحقّق: 8/24 = 1/3 = 7/21. الخطأ الشائع: إدخال MN/BC في صيغة الجزء على الجزء المتبقّي، أي MN/BC = AM/MB = 1/2، فيخرج 12 cm؛ والنسبة MN/BC لا تساوي إلّا AM/AB. ومن قلب النسبة وجد 72 cm، أطول من BC نفسها، ومن طرح MB من BC وجد 10 cm، والنظرية لا تتعامل مع فروق الأطوال.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "في شبه المنحرف MNCB حيث (MN) ∥ (BC)، يتقاطع القطران [BN] و [CM] في النقطة O. أيّ كتابة للنسب المتساوية تعطيها نظرية طاليس في هذه الوضعية؟\n<svg viewBox=\"0 0 320 255\"><path d=\"M80 95.8 L160 95.8 L280 230 L40 230 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M40 230 L160 95.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M280 230 L80 95.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M116.4 101.8 L123.6 95.8 L116.4 89.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M156.4 236 L163.6 230 L156.4 224\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"80\" cy=\"95.8\" r=\"3.5\"/><circle cx=\"160\" cy=\"95.8\" r=\"3.5\"/><circle cx=\"280\" cy=\"230\" r=\"3.5\"/><circle cx=\"40\" cy=\"230\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"130\" cy=\"129.4\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"28\" y=\"245\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"292\" y=\"245\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"66\" y=\"97.8\" text-anchor=\"middle\" fill=\"#0f172a\">M</text><text x=\"174\" y=\"97.8\" text-anchor=\"middle\" fill=\"#0f172a\">N</text><text x=\"130\" y=\"150.4\" text-anchor=\"middle\" fill=\"#0f6e56\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "ON/NB = OM/MC = MN/BC",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "b",
+          "text": "OB/ON = OM/OC = MN/BC",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "c",
+          "text": "ON/OB = OM/OC = MN/BC"
+        },
+        {
+          "id": "d",
+          "text": "ON/OC = OM/OB = MN/BC"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المستقيمان (BN) و (CM) يتقاطعان في O، و (MN) ∥ (BC): هذه وضعية الفراشة، والمثلّثان OMN و OCB متقابلان بالرأس O. ننطلق من O ونسير على المستقيم نفسه: N و B على (BN)، و M و C على (CM)، ونضع المثلّث الصغير فوق الكبير في كلّ نسبة: ON/OB = OM/OC = MN/BC ✓. الخطأ الشائع: قسمة ON على القطر كلّه NB، وهي صيغة الجزء على الكلّ التي لا تصلح هنا لأنّ O بين B و N. والكتابة OB/ON تقلب نسبة واحدة من الثلاث، أمّا ON/OC فتخلط المستقيمين: النقطتان N و C ليستا على مستقيم واحد يمرّ من O.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "في شبه المنحرف MNCB نفسه: (MN) ∥ (BC) مع MN = 8 cm و BC = 24 cm، والقطران [BN] و [CM] يتقاطعان في O، و BN = 18 cm. ما طول ON ؟\n<svg viewBox=\"0 0 320 255\"><path d=\"M80 95.8 L160 95.8 L280 230 L40 230 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M40 230 L160 95.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M280 230 L80 95.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M116.4 101.8 L123.6 95.8 L116.4 89.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M156.4 236 L163.6 230 L156.4 224\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"80\" cy=\"95.8\" r=\"3.5\"/><circle cx=\"160\" cy=\"95.8\" r=\"3.5\"/><circle cx=\"280\" cy=\"230\" r=\"3.5\"/><circle cx=\"40\" cy=\"230\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"130\" cy=\"129.4\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"28\" y=\"245\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"292\" y=\"245\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"66\" y=\"97.8\" text-anchor=\"middle\" fill=\"#0f172a\">M</text><text x=\"174\" y=\"97.8\" text-anchor=\"middle\" fill=\"#0f172a\">N</text><text x=\"130\" y=\"150.4\" text-anchor=\"middle\" fill=\"#0f6e56\">O</text></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"120\" y=\"88\" text-anchor=\"middle\" fill=\"#0f172a\">8</text><text x=\"160\" y=\"249\" text-anchor=\"middle\" fill=\"#0f172a\">24</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,5 cm"
+        },
+        {
+          "id": "b",
+          "text": "6 cm",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "c",
+          "text": "9 cm"
+        },
+        {
+          "id": "d",
+          "text": "13,5 cm",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "في وضعية الفراشة ON/OB = MN/BC = 8/24 = 1/3، أي OB = 3 × ON. والنقطة O بين B و N، فالقطعة [BN] مجموع قطعتيها: ON + OB = BN، أي ON + 3 × ON = 18، ومنه 4 × ON = 18 و ON = 4,5 cm ✓، ثمّ OB = 18 − 4,5 = 13,5 cm. التحقّق: 4,5/13,5 = 1/3 ✓. الخطأ الشائع: وضع O خارج القطعة [BN]، كأنّ N بين O و B، فنكتب OB = ON + NB بجمع لا يصحّ: 3 × ON = ON + 18 يعطي 9 cm. ومن قسم ON على القطر كلّه، ON/NB = 1/3، وجد 6 cm، أمّا 13,5 cm فهو طول OB لا ON.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "النقطة O من القطعة [BN] حيث BN = 18 cm و ON = 4,5 cm، و (MN) ∥ (BC) مع MN = 8 cm. نرسم من O موازيًا لـ (BC)، فيقطع [BM] في P. ما طول OP ؟\n<svg viewBox=\"0 0 320 255\"><path d=\"M80 95.8 L160 95.8 L280 230 L40 230 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M40 230 L160 95.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M280 230 L80 95.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M116.4 101.8 L123.6 95.8 L116.4 89.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M156.4 236 L163.6 230 L156.4 224\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M70 129.4 L130 129.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M96.4 135.4 L103.6 129.4 L96.4 123.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f6e56\"><circle cx=\"70\" cy=\"129.4\" r=\"3.5\"/></g><g fill=\"#0f172a\"><circle cx=\"80\" cy=\"95.8\" r=\"3.5\"/><circle cx=\"160\" cy=\"95.8\" r=\"3.5\"/><circle cx=\"280\" cy=\"230\" r=\"3.5\"/><circle cx=\"40\" cy=\"230\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"130\" cy=\"129.4\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"28\" y=\"245\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"292\" y=\"245\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"66\" y=\"97.8\" text-anchor=\"middle\" fill=\"#0f172a\">M</text><text x=\"174\" y=\"97.8\" text-anchor=\"middle\" fill=\"#0f172a\">N</text><text x=\"130\" y=\"150.4\" text-anchor=\"middle\" fill=\"#0f6e56\">O</text><text x=\"56\" y=\"133.4\" text-anchor=\"middle\" fill=\"#0f6e56\">P</text></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"120\" y=\"88\" text-anchor=\"middle\" fill=\"#0f172a\">8</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 cm"
+        },
+        {
+          "id": "b",
+          "text": "6 cm"
+        },
+        {
+          "id": "c",
+          "text": "8 cm",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "d",
+          "text": "10 cm"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المستقيمان (OP) و (MN) كلاهما يوازي (BC)، فهما متوازيان. وفي المثلّث BMN: O من [BN] و P من [BM] و (OP) ∥ (MN)، فنطبّق نظرية طاليس انطلاقًا من الرأس B: BO/BN = OP/MN. نحسب أوّلًا BO = BN − ON = 18 − 4,5 = 13,5 cm، لأنّ O بين B و N. إذن OP = 8 × 13,5/18 = 8 × 3/4 = 6 cm ✓. الخطأ الشائع: جمع الطولين، BO = 18 + 4,5 = 22,5 cm، كأنّ O خارج [BN]، فيخرج 10 cm، أطول من MN نفسها. ومن أخذ النسبة من الرأس N، أي ON/NB = 1/4، وجد 2 cm، أمّا 8 cm فتساوي بين OP و MN لمجرّد أنّهما متوازيتان.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "وهذا الموازي لـ (BC) المرسوم من O يقطع [CN] في Q. نعلم أنّ BC = 24 cm و BN = 18 cm و ON = 4,5 cm و OP = 6 cm. ما طول PQ ؟\n<svg viewBox=\"0 0 320 255\"><path d=\"M80 95.8 L160 95.8 L280 230 L40 230 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M40 230 L160 95.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M280 230 L80 95.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M116.4 101.8 L123.6 95.8 L116.4 89.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M156.4 236 L163.6 230 L156.4 224\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M70 129.4 L190 129.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M96.4 135.4 L103.6 129.4 L96.4 123.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f6e56\"><circle cx=\"70\" cy=\"129.4\" r=\"3.5\"/><circle cx=\"190\" cy=\"129.4\" r=\"3.5\"/></g><g fill=\"#0f172a\"><circle cx=\"80\" cy=\"95.8\" r=\"3.5\"/><circle cx=\"160\" cy=\"95.8\" r=\"3.5\"/><circle cx=\"280\" cy=\"230\" r=\"3.5\"/><circle cx=\"40\" cy=\"230\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"130\" cy=\"129.4\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"28\" y=\"245\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"292\" y=\"245\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"66\" y=\"97.8\" text-anchor=\"middle\" fill=\"#0f172a\">M</text><text x=\"174\" y=\"97.8\" text-anchor=\"middle\" fill=\"#0f172a\">N</text><text x=\"130\" y=\"150.4\" text-anchor=\"middle\" fill=\"#0f6e56\">O</text><text x=\"56\" y=\"133.4\" text-anchor=\"middle\" fill=\"#0f6e56\">P</text><text x=\"204\" y=\"133.4\" text-anchor=\"middle\" fill=\"#0f6e56\">Q</text></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"160\" y=\"249\" text-anchor=\"middle\" fill=\"#0f172a\">24</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "8 cm"
+        },
+        {
+          "id": "b",
+          "text": "12 cm"
+        },
+        {
+          "id": "c",
+          "text": "14 cm"
+        },
+        {
+          "id": "d",
+          "text": "24 cm"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "في المثلّث NBC: O من [NB] و Q من [NC] و (OQ) ∥ (BC)، فننطلق من الرأس N: NO/NB = OQ/BC، أي 4,5/18 = OQ/24، ومنه OQ = 24 × 1/4 = 6 cm. والنقاط P و O و Q على مستقيم واحد و O بين P و Q، إذن PQ = OP + OQ = 6 + 6 = 12 cm ✓. تحقّق: OP = OQ، فالنقطة O منتصف [PQ]. الخطأ الشائع: أخذ النسبة من الرأس B في المثلّث NBC، أي 3/4، فيخرج OQ = 18 cm و PQ = 24 cm؛ أو إعادة استعمال نسبة الفراشة 1/3 خارج وضعيتها، فيخرج OQ = 8 cm و PQ = 14 cm. أمّا 8 cm فتأتي من المثلّث CMN بنسبة مأخوذة من الرأس M بدل الرأس C، أي OQ = 2 cm.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    }
+  ]
+}
