@@ -1,0 +1,263 @@
+{
+  "title": "👑 تحدّي الفرض ⭐⭐⭐⭐: شبه منحرف قائم، قطراه وارتفاعات المثلّث",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 14,
+  "questions": [
+    {
+      "prompt": "ABCD شبه منحرف قائم الزاوية في A وD، قاعدتاه [AB] و [DC]، حيث AB = 9 و AD = 12 و DC = 16. ما طول القطر [BD] ؟\n<svg viewBox=\"0 0 326 256\"><title>رسم للوضعية المعطاة</title><path d=\"M46 34 L181 34 L286 214 L46 214 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><path d=\"M46 34 L181 34 L286 214 L46 214 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M181 34 L46 214\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M181 34 L46 214\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M46 43 L55 43 L55 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M46 205 L55 205 L55 214\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"46\" cy=\"34\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"181\" cy=\"34\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"286\" cy=\"214\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"46\" cy=\"214\" r=\"4\" fill=\"#0f172a\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"34.8\" y=\"30.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">A</text><text x=\"183.3\" y=\"25.1\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"297.2\" y=\"227.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text><text x=\"34.8\" y=\"227.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">D</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"113.5\" y=\"25\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">9</text><text x=\"26\" y=\"129\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">12</text><text x=\"166\" y=\"240\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">16</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3√7",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "21",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "225",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المثلّث ABD قائم الزاوية في A، فبنظرية فيثاغورس BD² = AB² + AD² = 81 + 144 = 225، ومنه BD = 15 ✓ (تحقّق: 9² + 12² = 15²). الخطأ الشائع: جمع الطولين 9 + 12 = 21 دون تربيعهما، أو التوقّف عند 225 ونسيان الجذر، أو اعتبار [AD] وترًا فيُطرح المربّعان: √(144 − 81) = √63 = 3√7.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "ABCD شبه منحرف قائم الزاوية في A وD، قاعدتاه [AB] و [DC]، حيث AB = 9 و AD = 12 و DC = 16. ما طول القطر [AC] ؟\n<svg viewBox=\"0 0 326 256\"><title>رسم للوضعية المعطاة</title><path d=\"M46 34 L181 34 L286 214 L46 214 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><path d=\"M46 34 L181 34 L286 214 L46 214 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M46 34 L286 214\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M46 34 L286 214\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M46 43 L55 43 L55 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M46 205 L55 205 L55 214\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"46\" cy=\"34\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"181\" cy=\"34\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"286\" cy=\"214\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"46\" cy=\"214\" r=\"4\" fill=\"#0f172a\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"34.8\" y=\"30.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">A</text><text x=\"183.3\" y=\"25.1\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"297.2\" y=\"227.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text><text x=\"34.8\" y=\"227.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">D</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"113.5\" y=\"25\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">9</text><text x=\"26\" y=\"129\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">12</text><text x=\"166\" y=\"240\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">16</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4√7",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "20"
+        },
+        {
+          "id": "d",
+          "text": "28",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المثلّث ADC قائم الزاوية في D، فـ AC² = AD² + DC² = 144 + 256 = 400، ومنه AC = 20 ✓. الخطأ الشائع: إعادة القطر السابق BD = 15 بدل [AC]، أو جمع الطولين 12 + 16 = 28 دون تربيعهما، أو اختيار [DC] وترًا فيُطرح المربّعان: √(256 − 144) = √112 = 4√7.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "ABCD شبه منحرف قائم الزاوية في A وD، قاعدتاه [AB] و [DC]، حيث AB = 9 و AD = 12 و DC = 16. يتقاطع القطران [AC] و [BD] في O، و BD = 15. ما طول [OB] ؟\n<svg viewBox=\"0 0 326 256\"><title>رسم للوضعية المعطاة</title><path d=\"M46 34 L181 34 L286 214 L46 214 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><path d=\"M46 34 L181 34 L286 214 L46 214 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M181 34 L46 214\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M46 34 L286 214\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M46 43 L55 43 L55 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M46 205 L55 205 L55 214\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"46\" cy=\"34\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"181\" cy=\"34\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"286\" cy=\"214\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"46\" cy=\"214\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"132.4\" cy=\"98.8\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"34.8\" y=\"30.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">A</text><text x=\"183.3\" y=\"25.1\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"297.2\" y=\"227.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text><text x=\"34.8\" y=\"227.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">D</text><text x=\"120.4\" y=\"102.8\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">O</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"113.5\" y=\"25\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">9</text><text x=\"26\" y=\"129\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">12</text><text x=\"166\" y=\"240\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">16</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "5,4"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "c",
+          "text": "7,5",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        {
+          "id": "d",
+          "text": "9,6",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "(AB) ∥ (DC) والقطران يتقاطعان في O، فالمثلّثان OAB و OCD في وضعية الفراشة، وتعطي نظرية طاليس OB/OD = AB/DC = 9/16. إذن OB = (9/(9 + 16)) × BD = (9/25) × 15 = 5,4 ✓ (وينتج OD = 9,6، والمجموع 15). الخطأ الشائع: طرح 15 − 9 = 6 (مقارنة الأطوال لا النسب)، أو الظنّ أنّ القطرين يتقاطعان في منتصفيهما فيُوجد 7,5 (وهذه خاصيّة متوازي الأضلاع لا شبه المنحرف)، أو قلب النسبة فيُوجد OD = 9,6.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "في شبه المنحرف ABCD الذي قاعدتاه [AB] و [DC]، حيث AB = 9، يتقاطع القطران [AC] و [BD] في O حيث OA = 7,2 و OB = 5,4. ماذا نستنتج ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "المثلّث AOB قائم في O لكنّ ذلك لا يقول شيئًا عن القطرين (AC) و (BD)"
+        },
+        {
+          "id": "b",
+          "text": "المثلّث AOB قائم في O لأنّ OA² + OB² = 51,84 + 29,16 = 81 = AB²، إذن (AC) ⊥ (BD)"
+        },
+        {
+          "id": "c",
+          "text": "المثلّث AOB غير قائم لأنّ OA + OB = 12,6 وهو لا يساوي AB = 9، إذن القطران غير متعامدين",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "المثلّث AOB غير قائم لأنّ OB² + AB² = 29,16 + 81 = 110,16 وهو لا يساوي OA² = 51,84، إذن القطران غير متعامدين",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "أطول أضلاع المثلّث AOB هو [AB] = 9، فنقارن AB² = 81 بمجموع مربّعي الضلعين الآخرين: OA² + OB² = 7,2² + 5,4² = 51,84 + 29,16 = 81. التساوي تامّ، فبعكس نظرية فيثاغورس المثلّث AOB قائم الزاوية في O ✓. والنقطة O تنتمي إلى القطرين، فالمستقيمان (OA) = (AC) و (OB) = (BD) متعامدان: القطران متعامدان. الخطأ الشائع: جمع الطولين 7,2 + 5,4 = 12,6 دون تربيعهما، أو اعتبار [OA] وترًا ومقارنة OB² + AB² = 110,16 بـ OA² = 51,84، أو الاكتفاء بالزاوية القائمة في المثلّث دون ربطها بالقطرين.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "ABCD شبه منحرف قائم الزاوية في A وD، قاعدتاه [AB] و [DC]، حيث AB = 9 و AD = 12 و DC = 16. النقطة H هي المسقط العمودي للنقطة B على (DC). اختر كلّ العبارات الصحيحة.\n<svg viewBox=\"0 0 326 268\"><title>رسم للوضعية المعطاة</title><path d=\"M46 34 L181 34 L286 214 L46 214 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><path d=\"M46 34 L181 34 L286 214 L46 214 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M181 34 L181 214\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M181 206 L173 206 L173 214\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M46 43 L55 43 L55 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M46 205 L55 205 L55 214\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"46\" cy=\"34\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"181\" cy=\"34\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"286\" cy=\"214\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"46\" cy=\"214\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"181\" cy=\"214\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"34.8\" y=\"30.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">A</text><text x=\"183.3\" y=\"25.1\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"297.2\" y=\"227.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text><text x=\"34.8\" y=\"227.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">D</text><text x=\"194\" y=\"233\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">H</text></g><path d=\"M46 243 L286 243 M46 238 L46 248 M286 238 L286 248\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.2\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"113.5\" y=\"25\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">9</text><text x=\"26\" y=\"129\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">12</text><text x=\"166\" y=\"262\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">16</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(BH) ∥ (AD)"
+        },
+        {
+          "id": "b",
+          "text": "الرباعي ABHD مستطيل"
+        },
+        {
+          "id": "c",
+          "text": "HC = 7"
+        },
+        {
+          "id": "d",
+          "text": "(AC) ∥ (BH)"
+        },
+        {
+          "id": "e",
+          "text": "BH = 9"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "المستقيمان (AD) و (BH) عموديان كلاهما على (DC)، فهما متوازيان ✓؛ ومع (AB) ∥ (DH) يكون في الرباعي ABHD زوجان من الأضلاع المتقابلة المتوازية، فهو متوازي أضلاع وفيه زاوية قائمة في D، إذن مستطيل ✓. ومنه DH = AB = 9 و BH = AD = 12، وبالتالي HC = DC − DH = 16 − 9 = 7 ✓. أمّا (AC) فمائل عن (DC) ولا يوازي (BH)، و BH = 12 لا 9 (خلط بين الارتفاع والقاعدة الصغيرة). الخطأ الشائع: عدّ زوج واحد من الأضلاع المتوازية كافيًا لإعلان متوازي الأضلاع.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "ABCD شبه منحرف قائم الزاوية في A وD، قاعدتاه [AB] و [DC]، حيث AB = 9 و AD = 12 و DC = 16. قطراه [AC] و [BD] متعامدان ويتقاطعان في O، و H المسقط العمودي للنقطة B على (DC). اختر كلّ العبارات الصحيحة.\n<svg viewBox=\"0 0 326 268\"><title>رسم للوضعية المعطاة</title><path d=\"M46 34 L181 34 L286 214 L46 214 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><path d=\"M46 34 L181 34 L286 214 L46 214 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M181 34 L46 214\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M46 34 L286 214\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M181 34 L181 214\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M181 206 L173 206 L173 214\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M46 43 L55 43 L55 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M46 205 L55 205 L55 214\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M137.8 91.6 L145 97 L139.6 104.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"46\" cy=\"34\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"181\" cy=\"34\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"286\" cy=\"214\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"46\" cy=\"214\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"132.4\" cy=\"98.8\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"181\" cy=\"214\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"34.8\" y=\"30.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">A</text><text x=\"183.3\" y=\"25.1\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"297.2\" y=\"227.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text><text x=\"34.8\" y=\"227.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">D</text><text x=\"120.4\" y=\"102.8\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">O</text><text x=\"194\" y=\"233\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">H</text></g><path d=\"M46 243 L286 243 M46 238 L46 248 M286 238 L286 248\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.2\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"113.5\" y=\"25\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">9</text><text x=\"26\" y=\"129\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">12</text><text x=\"166\" y=\"262\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">16</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "O تنتمي إلى الدائرة التي قطرها [BC]"
+        },
+        {
+          "id": "b",
+          "text": "H تنتمي إلى الدائرة التي قطرها [BC]"
+        },
+        {
+          "id": "c",
+          "text": "A تنتمي إلى الدائرة التي قطرها [BC]"
+        },
+        {
+          "id": "d",
+          "text": "D تنتمي إلى الدائرة التي قطرها [BC]"
+        },
+        {
+          "id": "e",
+          "text": "النقطة O مركز الدائرة التي قطرها [BC]"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "في المثلّث BOC الزاوية O قائمة لأنّ القطرين متعامدان، وفي المثلّث BHC الزاوية H قائمة. مركز الدائرة المحيطة بمثلّث قائم هو منتصف وتره، ووتر كلّ من المثلّثين هو [BC]: فالنقطتان O وH على الدائرة التي قطرها [BC] ✓، ومركز هذه الدائرة منتصف [BC] لا النقطة O: فـ O نقطة من الدائرة وليست مركزها. أمّا A فلو كانت الزاوية BAC قائمة لكان (AC) عموديًّا على (AB) مثل (AD)، أي (AC) = (AD)، وهذا مستحيل لأنّ C ليست على (AD)؛ وكذلك D، فلو كانت الزاوية BDC قائمة لكان (DB) عموديًّا على (DC) مثل (DA)، أي (DB) = (DA)، وهذا مستحيل لأنّ B ليست على (AD). فلا تنتمي A ولا D إلى هذه الدائرة. الخطأ الشائع: ظنّ أنّ رؤوس الشبه المنحرف كلّها على الدائرة نفسها، أو جعل O مركز الدائرة لأنّها ملتقى القطرين.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.geo.cercle"
+      ]
+    },
+    {
+      "prompt": "ABCD شبه منحرف قائم الزاوية في A وD، قاعدتاه [AB] و [DC]، حيث AB = 9 و AD = 12 و DC = 16. قطراه [AC] و [BD] متعامدان، و H المسقط العمودي للنقطة B على (DC). يتقاطع المستقيمان (CA) و (BH) في النقطة K. تذكير: ارتفاعات المثلّث الثلاثة تتلاقى في نقطة واحدة. أيّ المستقيمات التالية عمودي على (BC) ؟\n<svg viewBox=\"0 0 326 268\"><title>رسم للوضعية المعطاة</title><path d=\"M46 34 L181 34 L286 214 L46 214 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><path d=\"M46 34 L181 34 L286 214 L46 214 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M181 34 L46 214\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M46 34 L286 214\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M181 34 L181 214\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M181 206 L173 206 L173 214\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M46 43 L55 43 L55 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M46 205 L55 205 L55 214\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M137.8 91.6 L145 97 L139.6 104.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"46\" cy=\"34\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"181\" cy=\"34\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"286\" cy=\"214\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"46\" cy=\"214\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"132.4\" cy=\"98.8\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"181\" cy=\"135.2\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"181\" cy=\"214\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"34.8\" y=\"30.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">A</text><text x=\"183.3\" y=\"25.1\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"297.2\" y=\"227.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text><text x=\"34.8\" y=\"227.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">D</text><text x=\"120.4\" y=\"102.8\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">O</text><text x=\"193\" y=\"130.2\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">K</text><text x=\"194\" y=\"233\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">H</text></g><path d=\"M46 243 L286 243 M46 238 L46 248 M286 238 L286 248\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.2\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"113.5\" y=\"25\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">9</text><text x=\"26\" y=\"129\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">12</text><text x=\"166\" y=\"262\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">16</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(AD)"
+        },
+        {
+          "id": "b",
+          "text": "(AK)"
+        },
+        {
+          "id": "c",
+          "text": "(BK)"
+        },
+        {
+          "id": "d",
+          "text": "(DK)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "في المثلّث BCD: المستقيم (CA) يمرّ من C ويعامد (BD) لأنّ القطرين متعامدان، فهو الارتفاع الصادر من C؛ والمستقيم (BH) يمرّ من B ويعامد (DC)، فهو الارتفاع الصادر من B. ارتفاعات المثلّث الثلاثة تتلاقى في نقطة واحدة، وقد تلاقى اثنان منها في K، فالارتفاع الثالث الصادر من D والعمودي على (BC) يمرّ من K: إنّه المستقيم (DK) ✓. الخطأ الشائع: عدم رؤية أنّ (CA) و (BH) ارتفاعان في المثلّث BCD، فيُنسب إليهما تعامد مع (BC) وهما يعامدان ضلعين آخرين: (AK) هو (CA) ويعامد (BD)، و (BK) هو (BH) ويعامد (DC)، أمّا (AD) فيعامد القاعدتين ويوازي (BH).",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "ABCD شبه منحرف قائم الزاوية في A وD، قاعدتاه [AB] و [DC]، حيث AB = 9 و AD = 12 و DC = 16. النقطة H هي المسقط العمودي للنقطة B على (DC)، حيث HC = 7، والنقطة K تنتمي إلى [AC] و [BH] معًا. ما طول [HK] ؟\n<svg viewBox=\"0 0 326 268\"><title>رسم للوضعية المعطاة</title><path d=\"M46 34 L181 34 L286 214 L46 214 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><path d=\"M46 34 L181 34 L286 214 L46 214 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M181 34 L46 214\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M46 34 L286 214\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M181 34 L181 214\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M181 214 L181 135.2\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M181 206 L173 206 L173 214\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M46 43 L55 43 L55 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M46 205 L55 205 L55 214\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"46\" cy=\"34\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"181\" cy=\"34\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"286\" cy=\"214\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"46\" cy=\"214\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"181\" cy=\"135.2\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"181\" cy=\"214\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"34.8\" y=\"30.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">A</text><text x=\"183.3\" y=\"25.1\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"297.2\" y=\"227.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text><text x=\"34.8\" y=\"227.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">D</text><text x=\"193\" y=\"130.2\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">K</text><text x=\"194\" y=\"233\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">H</text></g><path d=\"M46 243 L286 243 M46 238 L46 248 M286 238 L286 248\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.2\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"113.5\" y=\"25\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">9</text><text x=\"26\" y=\"129\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">12</text><text x=\"166\" y=\"262\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">16</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,2"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "c",
+          "text": "5,25"
+        },
+        {
+          "id": "d",
+          "text": "6,75"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المستقيمان (BH) و (AD) عموديان كلاهما على (DC)، فهما متوازيان. في المثلّث CDA: H ∈ [CD] و K ∈ [CA] و (HK) ∥ (DA)، فبنظرية طاليس CH/CD = HK/DA، أي 7/16 = HK/12، ومنه HK = 12 × 7/16 = 5,25 ✓. تحقّق بوضعية الفراشة: (AB) ∥ (HC) والمستقيمان (AC) و (BH) يتقاطعان في K، فـ KH/KB = HC/AB = 7/9، ومع KH + KB = BH = 12 نجد KH = 12 × 7/16 = 5,25. الخطأ الشائع: أخذ القطعة DH = 9 بدل CH فيُوجد 12 × 9/16 = 6,75، أو قسمة على القطر AC بدل القاعدة DC فيُوجد 12 × 7/20 = 4,2، أو طرح الطولين 12 − 7 = 5 (الفروق لا النسب).",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    }
+  ]
+}
