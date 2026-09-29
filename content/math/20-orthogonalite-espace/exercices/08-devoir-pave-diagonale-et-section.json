@@ -1,0 +1,189 @@
+{
+  "title": "⭐⭐ تمرين موجّه: متوازي المستطيلات — من العمودي على القاعدة إلى القطر",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "ABCDEFGH متوازي مستطيلات أبعاده AB = 16 و AD = 12 و AE = 21 (بالصنتمتر). القاعدة ABCD مستطيل. ما قيس قطرها AC ؟\n<svg viewBox=\"0 0 207 242\"><path d=\"M30.6 210 L62.8 183 M62.8 183 L174.8 183 M62.8 183 L62.8 36\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M30.6 210 L174.8 183\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/><path d=\"M30.6 210 L142.7 210 M142.7 210 L174.8 183 M142.7 210 L142.7 63 M30.6 63 L142.7 63 M142.7 63 L174.8 36 M174.8 36 L62.8 36 M62.8 36 L30.6 63 M30.6 210 L30.6 63 M174.8 183 L174.8 36\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"30.6\" cy=\"210\" r=\"3.2\"/><circle cx=\"142.7\" cy=\"210\" r=\"3.2\"/><circle cx=\"174.8\" cy=\"183\" r=\"3.2\"/><circle cx=\"62.8\" cy=\"183\" r=\"3.2\"/><circle cx=\"30.6\" cy=\"63\" r=\"3.2\"/><circle cx=\"142.7\" cy=\"63\" r=\"3.2\"/><circle cx=\"174.8\" cy=\"36\" r=\"3.2\"/><circle cx=\"62.8\" cy=\"36\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19.6\" y=\"225\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"152.7\" y=\"225\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"187.8\" y=\"188\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"49.8\" y=\"179\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"18.6\" y=\"60\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"148.7\" y=\"55\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"186.8\" y=\"32\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"52.8\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4√7",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "20"
+        },
+        {
+          "id": "c",
+          "text": "28",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "400",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المثلّث ABC قائم في B لأنّ ABCD مستطيل، و BC = AD = 12. بنظرية بيتاغور: AC² = AB² + BC² = 256 + 144 = 400، ومنه AC = 20 cm ✓. والعدد 28 = 16 + 12 يجمع الطولين بدل مربّعيهما، و 400 هو AC² قبل أخذ الجذر، و 4√7 = √(256 − 144) يطرح المربّعين كأنّ [AB] هو الوتر.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.esp.cube-pave"
+      ]
+    },
+    {
+      "prompt": "ABCDEFGH متوازي مستطيلات. لنُثبت أنّ الحرف (AE) عمودي على مستوي القاعدة (ABC)، ما الحجّة الكافية؟\n<svg viewBox=\"0 0 207 242\"><path d=\"M62.8 183 L174.8 183 M62.8 183 L62.8 36 M30.6 210 L62.8 183\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M142.7 210 L174.8 183 M142.7 210 L142.7 63 M30.6 63 L142.7 63 M142.7 63 L174.8 36 M174.8 36 L62.8 36 M62.8 36 L30.6 63 M174.8 183 L174.8 36 M30.6 210 L142.7 210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M30.6 210 L30.6 63\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"30.6\" cy=\"210\" r=\"3.2\"/><circle cx=\"142.7\" cy=\"210\" r=\"3.2\"/><circle cx=\"174.8\" cy=\"183\" r=\"3.2\"/><circle cx=\"62.8\" cy=\"183\" r=\"3.2\"/><circle cx=\"30.6\" cy=\"63\" r=\"3.2\"/><circle cx=\"142.7\" cy=\"63\" r=\"3.2\"/><circle cx=\"174.8\" cy=\"36\" r=\"3.2\"/><circle cx=\"62.8\" cy=\"36\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19.6\" y=\"225\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"152.7\" y=\"225\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"187.8\" y=\"188\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"49.8\" y=\"179\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"18.6\" y=\"60\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"148.7\" y=\"55\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"186.8\" y=\"32\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"52.8\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "لأنّه يعامد (AB) و(AD) ، وهما متقاطعان في A"
+        },
+        {
+          "id": "b",
+          "text": "لأنّه يعامد (AB) ، و(AB) مستقيم من المستوي (ABC)",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "c",
+          "text": "لأنّه يعامد (AB) و(EF) ، وهما حرفان متوازيان",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "d",
+          "text": "لأنّه يوازي (BF) ، وهو حرف قائم من المجسّم"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "التعريف يشترط مستقيمين متقاطعين من المستوي في النقطة نفسها. الوجهان ABFE و ADHE مستطيلان، فـ (AE) يعامد (AB) و(AD)، وهذان المستقيمان متقاطعان في A ومحتويان في المستوي (ABC): إذن (AE) ⊥ (ABC) ✓. الخطأ الشائع الاكتفاء بمستقيم واحد من المستوي؛ و(EF) يوازي (AB) فلا يضيف اتّجاهًا جديدًا، فضلًا عن أنّه ليس من مستوي القاعدة. أمّا التوازي مع (BF) فليس حجّة: « حرف قائم » وصفٌ للرسم، والتعامد مع مستوٍ لا يُستنتج إلّا من مستقيمين متقاطعين منه.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.droites-perp-para",
+        "math.esp.cube-pave"
+      ]
+    },
+    {
+      "prompt": "ABCDEFGH متوازي مستطيلات حيث AE = 21 cm وقطر قاعدته AC = 20 cm، والحرف (AE) عمودي على مستوي القاعدة (ABC). ما طبيعة المثلّث AEC ؟\n<svg viewBox=\"0 0 207 242\"><path d=\"M30.6 210 L30.6 63 L174.8 183 Z\" fill=\"#0f6e56\" opacity=\"0.14\"/><path d=\"M30.6 210 L62.8 183 M62.8 183 L174.8 183 M62.8 183 L62.8 36\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M30.6 210 L174.8 183 M30.6 63 L174.8 183\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/><path d=\"M30.6 210 L142.7 210 M142.7 210 L174.8 183 M142.7 210 L142.7 63 M30.6 63 L142.7 63 M142.7 63 L174.8 36 M174.8 36 L62.8 36 M62.8 36 L30.6 63 M174.8 183 L174.8 36\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M30.6 210 L30.6 63\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"30.6\" cy=\"210\" r=\"3.2\"/><circle cx=\"142.7\" cy=\"210\" r=\"3.2\"/><circle cx=\"174.8\" cy=\"183\" r=\"3.2\"/><circle cx=\"62.8\" cy=\"183\" r=\"3.2\"/><circle cx=\"30.6\" cy=\"63\" r=\"3.2\"/><circle cx=\"142.7\" cy=\"63\" r=\"3.2\"/><circle cx=\"174.8\" cy=\"36\" r=\"3.2\"/><circle cx=\"62.8\" cy=\"36\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19.6\" y=\"225\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"152.7\" y=\"225\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"187.8\" y=\"188\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"49.8\" y=\"179\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"18.6\" y=\"60\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"148.7\" y=\"55\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"186.8\" y=\"32\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"52.8\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "ليس قائمًا"
+        },
+        {
+          "id": "b",
+          "text": "قائم في C",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "c",
+          "text": "قائم ومتقايس الضلعين في A",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "id": "d",
+          "text": "قائم في A"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(AE) عمودي على المستوي (ABC) في A، فهو يعامد كلّ مستقيمات هذا المستوي المارّة من A، ومنها (AC) وإن لم يكن حرفًا: المثلّث AEC قائم في A ✓، ووتره [EC]. ولا يكون قائمًا في C لأنّ الوتر هو الضلع المقابل للزاوية القائمة. وليس متقايس الضلعين لأنّ AE = 21 و AC = 20.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.droites-perp-para",
+        "math.esp.cube-pave"
+      ]
+    },
+    {
+      "prompt": "ABCDEFGH متوازي مستطيلات أبعاده AB = 16 و AD = 12 و AE = 21 (بالصنتمتر)، وقطر قاعدته AC = 20، والمثلّث AEC قائم في A. ما قيس قطره EC ؟\n<svg viewBox=\"0 0 207 242\"><path d=\"M30.6 210 L62.8 183 M62.8 183 L174.8 183 M62.8 183 L62.8 36 M30.6 210 L174.8 183\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M30.6 63 L174.8 183\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/><path d=\"M30.6 210 L142.7 210 M142.7 210 L174.8 183 M142.7 210 L142.7 63 M30.6 63 L142.7 63 M142.7 63 L174.8 36 M174.8 36 L62.8 36 M62.8 36 L30.6 63 M174.8 183 L174.8 36 M30.6 210 L30.6 63\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"30.6\" cy=\"210\" r=\"3.2\"/><circle cx=\"142.7\" cy=\"210\" r=\"3.2\"/><circle cx=\"174.8\" cy=\"183\" r=\"3.2\"/><circle cx=\"62.8\" cy=\"183\" r=\"3.2\"/><circle cx=\"30.6\" cy=\"63\" r=\"3.2\"/><circle cx=\"142.7\" cy=\"63\" r=\"3.2\"/><circle cx=\"174.8\" cy=\"36\" r=\"3.2\"/><circle cx=\"62.8\" cy=\"36\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19.6\" y=\"225\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"152.7\" y=\"225\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"187.8\" y=\"188\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"49.8\" y=\"179\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"18.6\" y=\"60\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"148.7\" y=\"55\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"186.8\" y=\"32\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"52.8\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√697",
+          "misconceptionTag": "math.esp.diagonale-du-pave-en-deux-dimensions"
+        },
+        {
+          "id": "b",
+          "text": "29"
+        },
+        {
+          "id": "c",
+          "text": "41",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "841",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "في المثلّث AEC القائم في A: EC² = AE² + AC² = 441 + 400 = 841، ومنه EC = 29 cm ✓. تحقّق بصيغة القطر: √(16² + 12² + 21²) = √(256 + 144 + 441) = √841 = 29. والقيمة √697 = √(16² + 21²) تكتفي ببُعدين فتعطي قطر الوجه ABFE لا قطر المجسّم، و 41 = 20 + 21 مجموع الطولين، و 841 هو EC² قبل الجذر.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.esp.cube-pave"
+      ]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "ABCDEFGH متوازي مستطيلات حيث AE = 21 و AC = 20 (بالصنتمتر). الحرفان [AE] و[CG] متوازيان ومتقايسان، والزاوية EAC قائمة لأنّ (AE) عمودي على مستوي القاعدة. ما نوع الرباعي ACGE ؟\n<svg viewBox=\"0 0 207 242\"><path d=\"M30.6 210 L174.8 183 L174.8 36 L30.6 63 Z\" fill=\"#0f6e56\" opacity=\"0.14\"/><path d=\"M30.6 210 L62.8 183 M62.8 183 L174.8 183 M62.8 183 L62.8 36\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M30.6 210 L174.8 183\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/><path d=\"M30.6 210 L142.7 210 M142.7 210 L174.8 183 M142.7 210 L142.7 63 M30.6 63 L142.7 63 M142.7 63 L174.8 36 M174.8 36 L62.8 36 M62.8 36 L30.6 63\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M30.6 210 L30.6 63 M174.8 183 L174.8 36 M30.6 63 L174.8 36\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"30.6\" cy=\"210\" r=\"3.2\"/><circle cx=\"142.7\" cy=\"210\" r=\"3.2\"/><circle cx=\"174.8\" cy=\"183\" r=\"3.2\"/><circle cx=\"62.8\" cy=\"183\" r=\"3.2\"/><circle cx=\"30.6\" cy=\"63\" r=\"3.2\"/><circle cx=\"142.7\" cy=\"63\" r=\"3.2\"/><circle cx=\"174.8\" cy=\"36\" r=\"3.2\"/><circle cx=\"62.8\" cy=\"36\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19.6\" y=\"225\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"152.7\" y=\"225\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"187.8\" y=\"188\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"49.8\" y=\"179\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"18.6\" y=\"60\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"148.7\" y=\"55\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"186.8\" y=\"32\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"52.8\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g></svg>",
+      "answerKey": {
+        "text": "مستطيل"
+      },
+      "acceptedAnswers": [
+        "مستطيل غير مربع",
+        "مستطيل ليس مربعا"
+      ],
+      "expectedMistakes": [
+        {
+          "text": "مربع",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "text": "متوازي أضلاع",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        }
+      ],
+      "explanation": "للرباعي ACGE ضلعان متقابلان [AE] و[CG] متوازيان ومتقايسان، فهو متوازي أضلاع. وله زاوية قائمة في A، ومتوازي الأضلاع الذي له زاوية قائمة تكون كلّ زواياه قائمة. ولا يصل إلى المربّع لأنّ ضلعيه المتتاليين AE = 21 و AC = 20 غير متقايسين. الخطأ الشائع التوقّف عند متوازي الأضلاع دون استثمار الزاوية القائمة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.quadrilateres",
+        "math.esp.cube-pave"
+      ]
+    },
+    {
+      "prompt": "ABCDEFGH متوازي مستطيلات حيث AB = 16 و AE = 21 (بالصنتمتر)، وقطر قاعدته AC = 20. الرباعي ACGE مستطيل. ما مساحته؟\n<svg viewBox=\"0 0 207 242\"><path d=\"M30.6 210 L174.8 183 L174.8 36 L30.6 63 Z\" fill=\"#0f6e56\" opacity=\"0.14\"/><path d=\"M30.6 210 L62.8 183 M62.8 183 L174.8 183 M62.8 183 L62.8 36\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M30.6 210 L174.8 183\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/><path d=\"M30.6 210 L142.7 210 M142.7 210 L174.8 183 M142.7 210 L142.7 63 M30.6 63 L142.7 63 M142.7 63 L174.8 36 M174.8 36 L62.8 36 M62.8 36 L30.6 63\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M30.6 210 L30.6 63 M174.8 183 L174.8 36 M30.6 63 L174.8 36\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"30.6\" cy=\"210\" r=\"3.2\"/><circle cx=\"142.7\" cy=\"210\" r=\"3.2\"/><circle cx=\"174.8\" cy=\"183\" r=\"3.2\"/><circle cx=\"62.8\" cy=\"183\" r=\"3.2\"/><circle cx=\"30.6\" cy=\"63\" r=\"3.2\"/><circle cx=\"142.7\" cy=\"63\" r=\"3.2\"/><circle cx=\"174.8\" cy=\"36\" r=\"3.2\"/><circle cx=\"62.8\" cy=\"36\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19.6\" y=\"225\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"152.7\" y=\"225\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"187.8\" y=\"188\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"49.8\" y=\"179\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"18.6\" y=\"60\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"148.7\" y=\"55\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"186.8\" y=\"32\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"52.8\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "210 cm²",
+          "misconceptionTag": "math.mes.aire-division-par-deux-appliquee-a-tort"
+        },
+        {
+          "id": "b",
+          "text": "336 cm²",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "420 cm²"
+        },
+        {
+          "id": "d",
+          "text": "609 cm²"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الرباعي ACGE مستطيل بُعداه AC = 20 و AE = 21، فمساحته AC × AE = 20 × 21 = 420 cm² ✓. لا نقسم على 2: القسمة تخصّ المثلّث AEC، وهو نصف هذا المستطيل (210 cm²). والعدد 336 = 16 × 21 مساحة الوجه ABFE لا مساحة ACGE، و 609 = 29 × 21 يعامل القطر EC كأنّه ضلع.",
+      "difficulty": 2,
+      "competencies": [
+        "math.mes.aires",
+        "math.esp.cube-pave"
+      ]
+    }
+  ]
+}
