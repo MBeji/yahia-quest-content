@@ -78,3 +78,18 @@ Fichiers créés (chapitre, étage, nombre de questions), compétences et étiqu
 notions adaptées au programme, confirmation de la double résolution, ce que les gates disent de tes
 fichiers, étiquettes manquantes. **Aucun contenu de question dans le rapport** : les fichiers
 suffisent.
+
+## Pièges relevés à l'audit (à éviter dès l'écriture)
+
+- Une question ne dit pas combien de valeurs on cherche ; aucune option ne nie ce que l'énoncé
+  pose ; aucune explication ne résout une question suivante (les questions sont triées par
+  difficulté, l'ordre d'émission n'est pas toujours celui du fichier).
+- Une longueur ne s'écrit que sur un segment entier, jamais sur un tronçon coupé par un point
+  marqué ; pas de marque d'angle droit là où l'angle est à démontrer.
+- Un énoncé ne se termine pas par une formule collée à une ponctuation latine (en arabe, le point
+  s'affiche du mauvais côté) : pose les données sur des lignes de formules seules et finis la
+  phrase par un mot arabe ou par « ؟ ».
+- Une ligne de données du genre « حيث: AB = … , BC = … , AC = … » suivie de « المثلّث ABC قائم
+  في B » reprend une formule d'énoncé courante : le contrôle anti-copie y voit une plage de 8 mots.
+  Varie la tournure (« نعلم أنّ … و … و … »).
+- La clé n'est jamais l'option la plus longue, y compris quand on retouche une option après l'audit.

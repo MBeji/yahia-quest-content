@@ -72,3 +72,18 @@ se corrige.
 Missions créées (session, exercice, chapitre, étage, nombre de questions), items écartés (hors
 programme, illisibles) et ce que tu as dû admettre dans un énoncé, étiquettes employées et
 manquantes, confirmation de la double résolution, résultat des gates pour tes fichiers.
+
+## Pièges relevés à l'audit (à éviter dès l'écriture)
+
+- Une question ne dit pas combien de valeurs on cherche ; aucune option ne nie ce que l'énoncé
+  pose ; aucune explication ne résout une question suivante (les questions sont triées par
+  difficulté, l'ordre d'émission n'est pas toujours celui du fichier).
+- Une longueur ne s'écrit que sur un segment entier, jamais sur un tronçon coupé par un point
+  marqué ; pas de marque d'angle droit là où l'angle est à démontrer.
+- Un énoncé ne se termine pas par une formule collée à une ponctuation latine (en arabe, le point
+  s'affiche du mauvais côté) : pose les données sur des lignes de formules seules et finis la
+  phrase par un mot arabe ou par « ؟ ».
+- Une ligne de données du genre « حيث: AB = … , BC = … , AC = … » suivie de « المثلّث ABC قائم
+  في B » reprend une formule d'énoncé courante : le contrôle anti-copie y voit une plage de 8 mots.
+  Varie la tournure (« نعلم أنّ … و … و … »).
+- La clé n'est jamais l'option la plus longue, y compris quand on retouche une option après l'audit.
