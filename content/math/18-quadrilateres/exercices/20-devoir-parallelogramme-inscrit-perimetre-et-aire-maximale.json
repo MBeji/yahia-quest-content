@@ -1,0 +1,257 @@
+{
+  "title": "👑 تحدّي الفرض ⭐⭐⭐⭐: متوازي أضلاع داخل مثلّث — محيط ثابت ومساحة عظمى",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 20,
+  "questions": [
+    {
+      "prompt": "ABC مثلّث متقايس الضلعين قمّته A، و H منتصف [BC]، حيث:\nAB = AC = 10 , BC = 12 , AH = 8\nM نقطة من [BC] حيث BM = x، مع x بين 0 و 12.\nالمستقيم المارّ من M والموازي لـ (AC) يقطع [AB] في N، والمستقيم المارّ من M والموازي لـ (AB) يقطع [AC] في P.\nما الحجّة التي تُثبت أنّ الرباعي ANMP متوازي أضلاع ؟\n<svg viewBox=\"0 0 300 228\"><title>رسم للوضعية المعطاة</title><path d=\"M150 32 L78 128 L114 176 L186 80 Z\" fill=\"#0f6e56\" opacity=\"0.14\"/><path d=\"M150 32 L42 176 L258 176 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M150 32 L150 176\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M150 32 L78 128 L114 176 L186 80 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M42 202 L114 202 M42 198 L42 206 M114 198 L114 206\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.5\"/><circle cx=\"150\" cy=\"32\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"42\" cy=\"176\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"258\" cy=\"176\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"78\" cy=\"128\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"186\" cy=\"80\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"114\" cy=\"176\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"150\" cy=\"176\" r=\"3.5\" fill=\"#0f172a\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"150\" y=\"21.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"30\" y=\"194.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"270\" y=\"194.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"65\" y=\"130.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">N</text><text x=\"199\" y=\"83\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">P</text><text x=\"114\" y=\"197.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text><text x=\"163\" y=\"197.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"78\" y=\"218\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"13\">x</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "قطراه [AM] و [NP] متعامدان دائمًا ويتقاطعان في نقطة واحدة",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        {
+          "id": "b",
+          "text": "(NM) ∥ (AP)، أي فيه ضلعان متقابلان متوازيان",
+          "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
+        },
+        {
+          "id": "c",
+          "text": "(NM) ∥ (AP) و (PM) ∥ (AN)، أي فيه زوجان متقابلان متوازيان"
+        },
+        {
+          "id": "d",
+          "text": "(NM) ∥ (AP) و AN = PM، أي زوج متوازٍ والزوج الآخر متقايس",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "N على (AB) و (MP) ∥ (AB)، فـ (AN) ∥ (PM). وP على (AC) و (MN) ∥ (AC)، فـ (AP) ∥ (NM). للرباعي ANMP إذن زوجان من الأضلاع المتقابلة المتوازية، وهذا تعريف متوازي الأضلاع ✓. الخطأ الشائع: الاكتفاء بزوج واحد من الأضلاع المتوازية، وهذا شرط شبه المنحرف؛ أو بزوج متوازٍ مع تقايس الزوج الآخر، وهذا يصدق أيضًا على شبه المنحرف المتقايس الضلعين؛ أو نسبة تعامد القطرين إلى كلّ متوازي أضلاع، والتعامد خاصيّة قطرَي المعيّن.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الضلعين قمّته A، و H منتصف [BC]، حيث:\nAB = AC = 10 , BC = 12 , AH = 8\nM نقطة من [BC] حيث BM = x، مع x بين 0 و 12.\nالمستقيم المارّ من M والموازي لـ (AC) يقطع [AB] في N، والمستقيم المارّ من M والموازي لـ (AB) يقطع [AC] في P.\nما الطول NM بدلالة x ؟\n<svg viewBox=\"0 0 300 228\"><title>رسم للوضعية المعطاة</title><path d=\"M42 176 L114 176 L78 128 Z\" fill=\"#0f6e56\" opacity=\"0.22\"/><path d=\"M150 32 L42 176 L258 176 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M150 32 L150 176\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M78 128 L114 176\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M42 176 L78 128\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M42 202 L114 202 M42 198 L42 206 M114 198 L114 206\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.5\"/><circle cx=\"150\" cy=\"32\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"42\" cy=\"176\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"258\" cy=\"176\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"78\" cy=\"128\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"114\" cy=\"176\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"150\" cy=\"176\" r=\"3.5\" fill=\"#0f172a\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"150\" y=\"21.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"30\" y=\"194.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"270\" y=\"194.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"65\" y=\"130.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">N</text><text x=\"114\" y=\"197.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text><text x=\"163\" y=\"197.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"78\" y=\"218\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"13\">x</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "5x/6"
+        },
+        {
+          "id": "b",
+          "text": "10 − x",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "c",
+          "text": "10x/(12 − x)",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "d",
+          "text": "120/x",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "في المثلّث BAC: N من [BA] و M من [BC] و (NM) ∥ (AC)، فبنظرية طاليس BN/BA = BM/BC = NM/AC، أي NM/10 = x/12، ومنه NM = 10x/12 = 5x/6 ✓. تحقّق: عند x = 12 تكون M هي C و N هي A، فـ NM = AC = 10، وهذا ما تعطيه الصيغة: 5 × 12/6 = 10. الخطأ الشائع: كتابة NM = 10 − x (طرح الأطوال بدل مساواة النسب)، أو قسمة BM على MC (الجزء على الباقي) فيُوجد 10x/(12 − x)، أو قلب النسبة فيُوجد 120/x.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الضلعين قمّته A، و H منتصف [BC]، حيث:\nAB = AC = 10 , BC = 12 , AH = 8\nM نقطة من [BC] حيث BM = x مع x بين 0 و 12، والنقطتان N و P تنتميان إلى [AB] و [AC] حيث (MN) ∥ (AC) و (MP) ∥ (AB)، كما في الرسم.\nنعلم أنّ NM = 5x/6. ما محيط الرباعي ANMP ؟\n<svg viewBox=\"0 0 300 228\"><title>رسم للوضعية المعطاة</title><path d=\"M150 32 L42 176 L258 176 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M150 32 L78 128 L114 176 L186 80 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"32\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"42\" cy=\"176\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"258\" cy=\"176\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"78\" cy=\"128\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"186\" cy=\"80\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"114\" cy=\"176\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"150\" y=\"21.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"30\" y=\"194.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"270\" y=\"194.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"65\" y=\"130.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">N</text><text x=\"199\" y=\"83\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">P</text><text x=\"114\" y=\"197.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "10",
+          "misconceptionTag": "math.mes.perimetre-rectangle-somme-non-doublee"
+        },
+        {
+          "id": "b",
+          "text": "10x/3"
+        },
+        {
+          "id": "c",
+          "text": "20 − x/3",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "d",
+          "text": "20"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "في المثلّث BAC: BN/BA = BM/BC = x/12، فـ BN = 10x/12 = 5x/6 = NM: المثلّث BNM متقايس الضلعين. ومنه AN = AB − BN = 10 − 5x/6، وبالتالي AN + NM = 10 − 5x/6 + 5x/6 = 10 = AB. وفي متوازي الأضلاع ANMP الضلعان المتقابلان متقايسان، فالمحيط = 2 × (AN + NM) = 2 × 10 = 20 ✓ ولا يتعلّق بـ x: المحيط ثابت. الخطأ الشائع: إعطاء نصف المحيط 10 دون تضعيفه؛ ومن حسب 2 × (BN + NM) أي أخذ ضلعَي المثلّث الصغير وجد 10x/3؛ ومن أخذ AN = 10 − x (أي BM بدل BN) وجد 20 − x/3.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.quadrilateres",
+        "math.geo.thales-direct",
+        "math.mes.perimetres"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الضلعين قمّته A، و H منتصف [BC]، حيث:\nAB = AC = 10 , BC = 12 , AH = 8\nM نقطة من [BC] حيث BM = x مع x بين 0 و 12، والنقطتان N و P تنتميان إلى [AB] و [AC] حيث (MN) ∥ (AC) و (MP) ∥ (AB)، كما في الرسم.\nK المسقط العمودي لـ N على (BC)، ونعلم أنّ BN = NM = 5x/6. ما مساحة المثلّث BNM بدلالة x ؟\n<svg viewBox=\"0 0 300 228\"><title>رسم للوضعية المعطاة</title><path d=\"M42 176 L114 176 L78 128 Z\" fill=\"#0f6e56\" opacity=\"0.22\"/><path d=\"M150 32 L42 176 L258 176 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M150 32 L150 176\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M78 128 L78 176\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M78 167 L69 167 L69 176\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"150\" cy=\"32\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"42\" cy=\"176\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"258\" cy=\"176\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"78\" cy=\"128\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"114\" cy=\"176\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"78\" cy=\"176\" r=\"3.5\" fill=\"#0f6e56\"/><circle cx=\"150\" cy=\"176\" r=\"3.5\" fill=\"#0f172a\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"150\" y=\"21.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"30\" y=\"194.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"270\" y=\"194.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"65\" y=\"130.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">N</text><text x=\"114\" y=\"197.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text><text x=\"76\" y=\"197.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">K</text><text x=\"163\" y=\"197.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "x²/3"
+        },
+        {
+          "id": "b",
+          "text": "2x²/5"
+        },
+        {
+          "id": "c",
+          "text": "2x²/3",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        },
+        {
+          "id": "d",
+          "text": "4x"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المستقيمان (NK) و (AH) عموديان كلاهما على (BC)، فهما متوازيان، وبطاليس في المثلّث BAH: NK/AH = BN/BA = (5x/6)/10 = x/12، ومنه NK = 8 × x/12 = 2x/3. المساحة = (BM × NK)/2 = (x × 2x/3)/2 = x²/3 ✓. طريق ثانٍ: المثلّث BNM متقايس الضلعين قاعدته BM = x، فـ K منتصف [BM] و NK² = NB² − (x/2)² = 25x²/36 − 9x²/36 = 16x²/36، إذن NK = 2x/3 ✓. الخطأ الشائع: نسيان القسمة على 2 فيُوجد 2x²/3، أو استعمال ارتفاع المثلّث الكبير AH = 8 كما هو فيُوجد (x × 8)/2 = 4x؛ ومن أخذ النسبة BM/BA بدل BM/BC وجد NK = 8x/10 = 4x/5 والمساحة 2x²/5.",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.aires",
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الضلعين قمّته A، و H منتصف [BC]، حيث:\nAB = AC = 10 , BC = 12 , AH = 8\nM نقطة من [BC] حيث BM = x مع x بين 0 و 12، والنقطتان N و P تنتميان إلى [AB] و [AC] حيث (MN) ∥ (AC) و (MP) ∥ (AB)، كما في الرسم.\nمساحة المثلّث ABC هي 48، ومساحة CPM هي (12 − x)²/3، ومساحة BNM هي x²/3. ما مساحة الرباعي ANMP بدلالة x بعد النشر والاختزال ؟\n<svg viewBox=\"0 0 300 228\"><title>رسم للوضعية المعطاة</title><path d=\"M42 176 L114 176 L78 128 Z\" fill=\"#64748b\" opacity=\"0.24\"/><path d=\"M258 176 L114 176 L186 80 Z\" fill=\"#64748b\" opacity=\"0.24\"/><path d=\"M150 32 L78 128 L114 176 L186 80 Z\" fill=\"#0f6e56\" opacity=\"0.16\"/><path d=\"M150 32 L42 176 L258 176 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M150 32 L150 176\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M150 32 L78 128 L114 176 L186 80 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"32\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"42\" cy=\"176\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"258\" cy=\"176\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"78\" cy=\"128\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"186\" cy=\"80\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"114\" cy=\"176\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"150\" y=\"21.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"30\" y=\"194.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"270\" y=\"194.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"65\" y=\"130.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">N</text><text x=\"199\" y=\"83\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">P</text><text x=\"114\" y=\"197.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "8x",
+          "misconceptionTag": "math.alg.carre-difference-signes"
+        },
+        {
+          "id": "b",
+          "text": "8x − 2x²/3"
+        },
+        {
+          "id": "c",
+          "text": "4x"
+        },
+        {
+          "id": "d",
+          "text": "4x − 2x²/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "يملأ الرباعي ANMP والمثلّثان BNM و CPM المثلّث ABC، فمساحة ANMP هي S(x) = 48 − x²/3 − (12 − x)²/3. ننشر بالمتطابقة الشهيرة (12 − x)² = 144 − 24x + x²، فنجد S(x) = 48 − x²/3 − (144 − 24x + x²)/3 = 48 − x²/3 − 48 + 8x − x²/3 = 8x − 2x²/3 ✓. تحقّق: عند x = 6 نجد 48 − 12 − 12 = 24 وتعطي الصيغة 48 − 24 = 24. الخطأ الشائع: في نشر (12 − x)²، من كتب 144 − 12x + x² (ضاع العامل 2 في الجداء المضاعف) وجد 4x − 2x²/3؛ ومن كتب 144 − 24x − x² (إشارة الحدّ الأخير) وجد 8x؛ ومن جمع الخطأين فكتب 144 − 12x − x² وجد 4x.",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.aires",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "مساحة الرباعي ANMP بدلالة x (مع 0 < x < 12) هي:\nS(x) = 8x − 2x²/3\nأيّ الكتابات التالية تساوي S(x) مهما كان x ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 − (2/3)(x − 3)²"
+        },
+        {
+          "id": "b",
+          "text": "24 − (2/3)(x − 6)²"
+        },
+        {
+          "id": "c",
+          "text": "36 − (2/3)(x − 6)²"
+        },
+        {
+          "id": "d",
+          "text": "96 − (2/3)(x − 12)²"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نتحقّق بنشر كلّ كتابة بالمتطابقة الشهيرة: 24 − (2/3)(x − 6)² = 24 − (2/3)(x² − 12x + 36) = 24 − 2x²/3 + 8x − 24 = 8x − 2x²/3 ✓، وهي S(x). أمّا الكتابات الأخرى فتعطي بعد النشر: 36 − (2/3)(x − 6)² = 12 + 8x − 2x²/3، و 96 − (2/3)(x − 12)² = 16x − 2x²/3، و 6 − (2/3)(x − 3)² = 4x − 2x²/3، ولا واحدة منها تساوي S(x). الخطأ الشائع: الاكتفاء بمطابقة الحدّ −2x²/3، وهو مشترك بين الكتابات الأربع، دون مقارنة الحدّ الذي فيه x والحدّ الثابت.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "مساحة الرباعي ANMP بدلالة x (مع 0 < x < 12) هي:\nS(x) = 24 − (2/3)(x − 6)²\nونذكّر بأنّه إذا كان a عددًا موجبًا فإنّ:\n|X| ≤ a ⟺ −a ≤ X ≤ a\nلأيّ قيم x تكون هذه المساحة لا تقلّ عن 18 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 < x ≤ 3 أو 9 ≤ x < 12",
+          "misconceptionTag": "math.alg.inequation-sens-non-inverse"
+        },
+        {
+          "id": "b",
+          "text": "0 < x ≤ 9",
+          "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
+        },
+        {
+          "id": "c",
+          "text": "3 ≤ x < 12",
+          "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
+        },
+        {
+          "id": "d",
+          "text": "3 ≤ x ≤ 9"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "S(x) ≥ 18 تكافئ 24 − (2/3)(x − 6)² ≥ 18. بطرح 24 من الطرفين: −(2/3)(x − 6)² ≥ −6، ثمّ بالضرب في −3/2 وهو سالب ينقلب الاتّجاه: (x − 6)² ≤ 9. مقارنة المربّعين (x − 6)² و 3² تعني مقارنة القيمتين المطلقتين: |x − 6| ≤ 3، أي −3 ≤ x − 6 ≤ 3، فـ 3 ≤ x ≤ 9 ✓ وهو داخل المجال ]0 ; 12[. تحقّق: S(3) = 24 − 6 = 18 و S(9) = 24 − 6 = 18 و S(6) = 24 ≥ 18. الخطأ الشائع: الانتقال من (x − 6)² ≤ 9 إلى x − 6 ≤ 3 وحده، فيُنسى أنّ x − 6 قد يكون سالبًا وأنّ الشرط الآخر هو x − 6 ≥ −3 (فيُوجد 0 < x ≤ 9، أو 3 ≤ x < 12 إن نُسي الشرط الأوّل)؛ ومن أهمل قلب الاتّجاه عند الضرب في −3/2 وجد المنطقتين المعاكستين.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.valeur-absolue",
+        "math.alg.inequations"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "ABC مثلّث متقايس الضلعين قمّته A، و H منتصف [BC]، حيث:\nAB = AC = 10 , BC = 12 , AH = 8\nM نقطة من [BC] حيث BM = x مع x بين 0 و 12، والنقطتان N و P تنتميان إلى [AB] و [AC] حيث (MN) ∥ (AC) و (MP) ∥ (AB)، كما في الرسم.\nنعلم أنّ مساحة ANMP لا تتجاوز 24 وأنّها تبلغها عندما تكون M منتصف [BC]، أي عندما x = 6. اختر كلّ العبارات الصحيحة في هذه الحالة.\n<svg viewBox=\"0 0 300 228\"><title>رسم للوضعية المعطاة</title><path d=\"M150 32 L96 104 L150 176 L204 104 Z\" fill=\"#0f6e56\" opacity=\"0.16\"/><path d=\"M150 32 L42 176 L258 176 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M150 32 L96 104 L150 176 L204 104 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M150 32 L150 176\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M96 104 L204 104\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"150\" cy=\"32\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"42\" cy=\"176\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"258\" cy=\"176\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"96\" cy=\"104\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"204\" cy=\"104\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"150\" cy=\"176\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"150\" y=\"21.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"30\" y=\"194.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"270\" y=\"194.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"83\" y=\"107\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">N</text><text x=\"217\" y=\"107\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">P</text><text x=\"150\" y=\"197.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "AN = NM = 5"
+        },
+        {
+          "id": "b",
+          "text": "ANMP معيّن"
+        },
+        {
+          "id": "c",
+          "text": "(AM) ⊥ (NP)"
+        },
+        {
+          "id": "d",
+          "text": "ANMP مستطيل"
+        },
+        {
+          "id": "e",
+          "text": "ANMP مربّع"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "عند x = 6 نجد NM = 5x/6 = 5 و AN = 10 − 5x/6 = 5 ✓: ضلعان متتاليان متقايسان في متوازي أضلاع، إذن ANMP معيّن ✓، وقطرا المعيّن متعامدان: (AM) ⊥ (NP) ✓ (فـ (AM) هو الارتفاع (AH) العمودي على (BC)، و (NP) ∥ (BC) بالرابط بين المنتصفين). أمّا الزاوية NAP فهي الزاوية BAC، وليست قائمة: لو كانت قائمة لكان AB² + AC² = BC² بنظرية فيثاغورس، لكنّ 100 + 100 = 200 لا يساوي 144. فليس ANMP مستطيلًا ولا مربّعًا. تحقّق بالمساحة: AM = AH = 8 و NP = BC/2 = 6، ومساحة المعيّن (8 × 6)/2 = 24، وهي القيمة العظمى نفسها ✓. الخطأ الشائع: الاكتفاء بـ «متوازي أضلاع»، أو القفز إلى «مستطيل» أو «مربّع» دون التحقّق من زاوية قائمة.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.quadrilateres",
+        "math.mes.aires"
+      ]
+    }
+  ]
+}
