@@ -149,8 +149,16 @@ reprend, données comprises, en le citant. Les deux consignes d'auteur sont dist
   lot de ≤6 documents ; pour un examen, la transcription et les lignes sortent **de la même
   lecture** (une page n'est lue qu'une fois).
 - **D-9 — L'ordre d'exécution.** Arbitrage du propriétaire : la **9ᵉ**, puis la **6ᵉ**, puis les
-  autres classes. Dans une classe, toutes les matières passent ; l'ordre est celui de la table du
-  §4 (choix de l'architecte, réversible par le propriétaire).
+  autres classes. Dans une classe, toutes les matières de son examen passent (D-10) ; l'ordre est
+  celui de la table du §4 (choix de l'architecte, réversible par le propriétaire).
+- **D-10 — Le périmètre d'une classe à examen est celui de son examen.** Arbitrage du
+  propriétaire (2026-09-29) : « pour la 9ᵉ année il ne faut pas faire sciences physiques dans le
+  pipeline, car la matière n'est pas dans le concours ; SVT est dans le concours national, pas la
+  physique ». Le gisement d'une classe à examen national ne traite que les matières de ses
+  épreuves : en 9ᵉ, math, SVT (`sciences-vie-terre`), arabe, français et anglais. Les sciences
+  physiques (`svt`, l'identifiant historique) en sortent — seule la filière technique a une
+  épreuve de physique — et leur registre, fixé avant toute lecture, est retiré. La 6ᵉ suit la
+  même règle, sur la liste des épreuves de son archive.
 
 ---
 
@@ -161,7 +169,7 @@ reprend, données comprises, en le citant. Les deux consignes d'auteur sont dist
 | 1 | **Doctrine** : cette étude ; méthode (profil `examen-national`, § Le gisement) ; `content-ingest` mode gisement et ses consignes ; renvoi de `/campagne` ; statuts de l'é12 et de l'é27 ; index ; `STATUS.md` du moteur | PR privée + PR moteur | relecture ; Content CI verte | — |
 | 2 | **Outillage** (D-6) | `scripts/content/gisement/*` + tests + commandes npm | Vitest ; `npm run verify` | 1 |
 | 3 | **9ᵉ math** : les 67 exercices de devoirs lus au pilote, puis les sujets d'examen de toutes les sessions | missions `content/math/**` | G6 par tranche | 1 |
-| 4 | 9ᵉ sciences physiques (`svt`) | idem | idem | 1 |
+| 4 | ~~9ᵉ sciences physiques (`svt`)~~ — **écarté** (D-10) : pas d'épreuve au concours | — | — | — |
 | 5 | 9ᵉ SVT (`sciences-vie-terre`) | idem | idem | 1 |
 | 6 | 9ᵉ arabe (`arabic`) | idem | idem | 1 |
 | 7 | 9ᵉ français (`french`) | idem | idem | 1 |
@@ -176,7 +184,7 @@ reprend, données comprises, en le citant. Les deux consignes d'auteur sont dist
 - [ ] Lot 1 — doctrine
 - [ ] Lot 2 — outillage
 - [ ] Lot 3 — 9ᵉ math (en cours : devoirs des trois trimestres)
-- [ ] Lots 4-8 — 9ᵉ, autres matières
+- [ ] Lots 5-8 — 9ᵉ, autres matières du concours (lot 4 écarté, D-10)
 - [ ] Lots 9-13 — 6ᵉ
 - [ ] Lots 14+ — autres classes
 
@@ -240,3 +248,9 @@ finie ; un doute de droits sur un document ⇒ il sort de l'échantillon, sans d
   d'audit ; les devoirs du 1ᵉʳ trimestre sont en écriture (quatre auteurs), ceux des 2ᵉ et
   3ᵉ trimestres planifiés (43 exercices, huit lots d'auteur, placement rejoué à l'identique sur le
   1ᵉʳ trimestre).
+- **2026-09-29 — La physique sort du gisement de 9ᵉ (D-10).** Arbitrage du propriétaire : la
+  matière n'est pas au concours. Le registre `web-9eme-base-svt` est retiré ; aucun de ses
+  documents n'avait été lu. Côté maths, deux tranches sont publiées : le chapitre 04
+  (privé#575) et les chapitres 08, 09 et 12 (privé#577). La tranche 20/07 est livrée avec
+  cette décision. Les devoirs des 2ᵉ et 3ᵉ trimestres sont en écriture ou en audit, sur les
+  chapitres 02, 03, 04, 16, 17 et 18.
