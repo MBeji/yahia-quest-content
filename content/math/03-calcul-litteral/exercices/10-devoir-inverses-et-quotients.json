@@ -1,0 +1,189 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: عددان مقلوبان ومجموع الكسور",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "prompt": "نعتبر العدد:\na = (√54 + √45)/3\nما الكتابة المختصرة لهذا العدد؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "√11",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        },
+        {
+          "id": "b",
+          "text": "√6 + √5"
+        },
+        {
+          "id": "c",
+          "text": "√18 + √15"
+        },
+        {
+          "id": "d",
+          "text": "3√6 + 3√5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "54 = 9 × 6 و 45 = 9 × 5، فنُخرج 9 من تحت الجذرين: √54 = 3√6 و √45 = 3√5. إذن a = (3√6 + 3√5)/3 = √6 + √5 ✓، بقسمة الحدّين معًا على 3. الخطأ الشائع جمع العددين تحت الجذر: √54 + √45 ≠ √99 = 3√11، فيخرج √11 خطأً، لأنّ الجذر لا يتوزّع على الجمع. ومن نسي القسمة على 3 وجد 3√6 + 3√5، ومن قسم ما تحت الجذرين على 3 وجد √18 + √15.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "العدد b هو الجذر التربيعي لمربّع:\nb = √((√5 − √6)²)\nما قيمته مكتوبةً دون الجذر الخارجي؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "√5 − √6",
+          "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
+        },
+        {
+          "id": "b",
+          "text": "11 − 2√30"
+        },
+        {
+          "id": "c",
+          "text": "√6 − √5"
+        },
+        {
+          "id": "d",
+          "text": "√5 + √6",
+          "misconceptionTag": "math.num.valeur-absolue-somme-additive"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "جذر مربّع عدد هو قيمته المطلقة: b = |√5 − √6|. وبما أنّ 5 < 6 فإنّ √5 < √6، فالعدد √5 − √6 سالب وقيمته المطلقة مقابله: b = √6 − √5 ✓. الخطأ الشائع ترك b = √5 − √6، وهو عدد سالب لا يمكن أن يكون جذرًا تربيعيًّا. ومن كتب √5 + √6 وزّع القيمة المطلقة على الفرق، أمّا 11 − 2√30 فهو (√5 − √6)² نفسه قبل أخذ الجذر.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-definition",
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "prompt": "نعتبر العددين:\na = √6 + √5\nb = √((√5 − √6)²)\nلنبيّن أنّهما مقلوبان، ما قيمة الجداء a × b ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1",
+          "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "c",
+          "text": "6 − √5",
+          "misconceptionTag": "math.alg.difference-carres-second-terme-non-eleve-au-carre"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "b = |√5 − √6| = √6 − √5، فيكون a × b = (√6 + √5)(√6 − √5) = (√6)² − (√5)² = 6 − 5 = 1 ✓، والعددان مقلوبان لأنّ جداءهما 1. الخطأ الشائع أخذ b = √5 − √6 دون قيمة مطلقة، فيخرج الجداء 5 − 6 = −1. ومن جمع المربّعين وجد 6 + 5 = 11، ومن نسي تربيع √5 وجد 6 − √5.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "بما أنّ العددين a = √6 + √5 و b = √6 − √5 مقلوبان، أي a × b = 1، احسب الخارج:\na/b",
+      "options": [
+        {
+          "id": "a",
+          "text": "11 − 2√30"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "d",
+          "text": "11 + 2√30"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "بما أنّ a × b = 1 فإنّ 1/b = a، ومنه a/b = a × (1/b) = a × a = a² = (√6 + √5)² = 6 + 2√30 + 5 = 11 + 2√30 ✓. التحقّق بإنطاق المقام: (√6 + √5)/(√6 − √5) = (√6 + √5)²/((√6)² − (√5)²) = (11 + 2√30)/1. الخطأ الشائع إسقاط الحدّ الأوسط 2√30 عند تربيع a فيخرج 11. والعدد 11 − 2√30 هو الخارج المقلوب b/a، أمّا 1 فهو الجداء a × b لا الخارج a/b.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "العددان الموجبان a و b جداؤهما 1، ومربّعاهما:\na² = 11 + 2√30\nb² = 11 − 2√30\nما قيمة المجموع التالي؟\na/b + b/a",
+      "options": [
+        {
+          "id": "a",
+          "text": "1",
+          "misconceptionTag": "math.frac.add-numerators-and-denominators"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "22"
+        },
+        {
+          "id": "d",
+          "text": "24",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "بما أنّ a × b = 1 فإنّ b = 1/a و a = 1/b، فيكون a/b = a × a = a² و b/a = b × b = b². إذن a/b + b/a = a² + b² = (11 + 2√30) + (11 − 2√30) = 22 ✓. التحقّق بتوحيد المقامين: a/b + b/a = (a² + b²)/(ab) = 22/1. الخطأ الشائع جمع البسطين معًا والمقامين معًا فيخرج (a + b)/(b + a) = 1. ومن اعتبر كلّ كسر مساويًا 1 وجد 2، أمّا 24 فهو (a + b)² لا a² + b².",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.frac.add-sous"
+      ]
+    },
+    {
+      "prompt": "مع العددين a = √6 + √5 و b = √6 − √5 نكتب:\na² + b² − 2ab = (b − a)²\nما قيمة √(a² + b² − 2ab) ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2√5",
+          "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
+        },
+        {
+          "id": "b",
+          "text": "2√5"
+        },
+        {
+          "id": "c",
+          "text": "√22",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "d",
+          "text": "20"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "a² + b² = 22 و ab = 1، فيكون a² + b² − 2ab = 22 − 2 = 20، و √20 = 2√5. ومن جهة أخرى √((b − a)²) = |b − a|، و b − a = (√6 − √5) − (√6 + √5) = −2√5 عدد سالب، فقيمته المطلقة 2√5 ✓، والطريقتان متّفقتان. الخطأ الشائع كتابة √((b − a)²) = b − a = −2√5، وهو عدد سالب لا يكون جذرًا تربيعيًّا. ومن أهمل الحدّ −2ab وجد √22، ومن نسي الجذر وقف عند 20.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.racines-definition",
+        "math.alg.identites-remarquables",
+        "math.num.valeur-absolue"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "title": "👑 تحدّي الفرض ⭐⭐⭐⭐: المرافق والمقلوب وجذر المربّع",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "نريد تبسيط العدد:\nx = √75 − √48 + 2\nعلى أيّ صورة يُكتب x بعد إخراج المربّعات الكاملة من تحت الجذرين؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 + 3√5 − 4√3",
+          "misconceptionTag": "math.num.racine-extraction-facteur-inversee"
+        },
+        {
+          "id": "b",
+          "text": "2 + √3"
+        },
+        {
+          "id": "c",
+          "text": "2 + 3√3",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        },
+        {
+          "id": "d",
+          "text": "2 + 9√3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نُخرج أكبر مربّع كامل من تحت كلّ جذر: √75 = √(25 × 3) = 5√3 و √48 = √(16 × 3) = 4√3. الجذران متشابهان فنطرح معاملَيهما: 5√3 − 4√3 = √3، إذن x = 2 + √3 ✓. الخطأ الشائع طرح العددين تحت الجذر: √75 − √48 ≠ √(75 − 48) = √27 = 3√3، لأنّ الجذر لا يتوزّع على الطرح. ومن جمع المعاملين وجد 9√3، ومن كتب √75 = 3√5 بدّل العامل الخارج بالعامل الباقي تحت الجذر.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "العدد x يساوي 2 + √3. بضرب البسط والمقام في مرافق المقام، ما الكتابة المبسّطة للعدد 1/x ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2 − √3",
+          "misconceptionTag": "math.num.oppose-inverse-confondus"
+        },
+        {
+          "id": "b",
+          "text": "(2 − √3)/7",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "c",
+          "text": "(2 − √3)/(4 − √3)",
+          "misconceptionTag": "math.alg.difference-carres-second-terme-non-eleve-au-carre"
+        },
+        {
+          "id": "d",
+          "text": "2 − √3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "مرافق 2 + √3 هو 2 − √3، و (2 + √3)(2 − √3) = 2² − (√3)² = 4 − 3 = 1. إذن 1/x = (2 − √3)/1 = 2 − √3 ✓: العدد 2 − √3 هو مقلوب x، وجداؤهما 1. الخطأ الشائع نسيان تربيع √3 في المقام فيبقى 4 − √3، أو جمع المربّعين فيصير المقام 4 + 3 = 7. أمّا −2 − √3 فهو مقابل x لا مقلوبه.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "العدد x يساوي 2 + √3. ما الكتابة المنشورة للعدد x² ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "7 + 4√3"
+        },
+        {
+          "id": "b",
+          "text": "4 + 2√3"
+        },
+        {
+          "id": "c",
+          "text": "7 + 2√3",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "d",
+          "text": "7",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "بالمتطابقة (a + b)² = a² + 2ab + b² مع a = 2 و b = √3: x² = 2² + 2 × 2 × √3 + (√3)² = 4 + 4√3 + 3 = 7 + 4√3 ✓. الخطأ الشائع إسقاط الحدّ الأوسط 2ab فيخرج 7، أو كتابته 2√3 بنسيان العامل 2 في 2ab. ومن وجد 4 + 2√3 نسي المربّع (√3)² = 3 والعامل 2 في 2ab معًا.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "نعتبر العبارة التالية، حيث t عدد حقيقي:\nE = t² − 4t + 4\nعلمًا أنّ (2 + √3)² = 7 + 4√3، احسب قيمة E إذا عوّضنا t بالعدد 2 + √3.",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "3 + 5√3",
+          "misconceptionTag": "math.alg.distribution-partielle"
+        },
+        {
+          "id": "c",
+          "text": "3 + 8√3",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        },
+        {
+          "id": "d",
+          "text": "19"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نعوّض: E = (2 + √3)² − 4(2 + √3) + 4 = 7 + 4√3 − 8 − 4√3 + 4 = 3 ✓، لأنّ الحدّين 4√3 و −4√3 يتقابلان. الخطأ الشائع في هذه الخطوة هو نشر −4(2 + √3): العامل −4 يضرب الحدّين معًا ويقلب إشارتيهما، أي −4(2 + √3) = −8 − 4√3. من ضرب 2 وحده كتب −8 + √3 فوجد 3 + 5√3، ومن قلب إشارة الحدّ الأوّل وحده كتب −8 + 4√3 فوجد 3 + 8√3، ومن أخطأ في إشارة 8 وجد 19.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "نعتبر العبارة:\nE = t² − 4t + 4\nما تعميلها بإحدى المتطابقات الشهيرة؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(t + 2)²",
+          "misconceptionTag": "math.alg.carre-difference-signes"
+        },
+        {
+          "id": "b",
+          "text": "(t − 2)(t + 2)",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        },
+        {
+          "id": "c",
+          "text": "(t − 4)²"
+        },
+        {
+          "id": "d",
+          "text": "(t − 2)²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نتعرّف على الشكل a² − 2ab + b² مع a = t و b = 2، لأنّ 4 = 2² والحدّ الأوسط 2 × t × 2 = 4t ✓. إذن E = (t − 2)² ✓. والتحقّق: من أجل t = 2 + √3 نجد (t − 2)² = (√3)² = 3، وهي القيمة التي يعطيها التعويض المباشر. الخطأ الشائع الخلط بين مربّع فرق وفرق مربّعين، فيُكتب (t − 2)(t + 2) وهو يساوي t² − 4 لا E. والكتابة (t + 2)² تعطي حدًّا أوسط +4t، و (t − 4)² تعطي t² − 8t + 16.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.alg.factorisation"
+      ]
+    },
+    {
+      "prompt": "بتعميل العبارة نجد:\nt² − 4t + 4 = (t − 2)²\nاحسب العدد √(t² − 4t + 4) حين يكون t = 2 − √3.",
+      "options": [
+        {
+          "id": "a",
+          "text": "−√3",
+          "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
+        },
+        {
+          "id": "b",
+          "text": "2 − √3"
+        },
+        {
+          "id": "c",
+          "text": "√3"
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "من أجل t = 2 − √3 يكون t − 2 = −√3، إذن √((t − 2)²) = √((−√3)²) = |−√3| = √3 ✓، لأنّ جذر مربّع عدد هو قيمته المطلقة. التحقّق: (−√3)² = 3 و √3 موجب. الخطأ الشائع كتابة √((t − 2)²) = t − 2 = −√3، وهو عدد سالب لا يمكن أن يكون جذرًا تربيعيًّا. والعدد 3 هو ما تحت الجذر لا الجذر نفسه، والعدد 2 − √3 هو قيمة t نفسها.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.racines-definition",
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "prompt": "نضع x = 2 + √3 و y = 2 − √3. ما قيمة العدد التالي؟\n√(x² − 4x + 4) + √(y² − 4y + 4)",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√6",
+          "misconceptionTag": "math.num.radicaux-semblables-radicande-additionne"
+        },
+        {
+          "id": "b",
+          "text": "2√3"
+        },
+        {
+          "id": "c",
+          "text": "√6",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        },
+        {
+          "id": "d",
+          "text": "0",
+          "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "كلّ جذر هنا جذر مربّع: √(x² − 4x + 4) = √((x − 2)²) = |x − 2| = |√3| = √3، و √(y² − 4y + 4) = |y − 2| = |−√3| = √3. إذن المجموع √3 + √3 = 2√3 ✓. الخطأ الشائع كتابة الجذر الثاني y − 2 = −√3 دون قيمة مطلقة، فيصير المجموع 0. ومن جمع المعاملين وما تحت الجذرين معًا كتب 2√6، والصواب أن نجمع المعاملين وحدهما بين جذرين متشابهين، ومن جمع ما تحت الجذرين تحت جذر واحد كتب √6.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.racines-definition",
+        "math.num.valeur-absolue",
+        "math.num.racines-calcul"
+      ]
+    }
+  ]
+}
