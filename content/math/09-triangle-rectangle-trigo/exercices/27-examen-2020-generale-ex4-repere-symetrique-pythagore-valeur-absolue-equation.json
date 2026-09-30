@@ -1,0 +1,221 @@
+{
+  "title": "🏛️ مناظرة 2020 · التمرين 4 ⭐⭐⭐: معيّن متعامد ومتجانس — نقطة مناظرة وفيثاغورس وقيمة مطلقة ومعادلة",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 27,
+  "questions": [
+    {
+      "prompt": "في المعيّن المتعامد والمتجانس (O, I, J) ، لدينا النقطتان A(2√3 ; 0) و B(√3 ; 3) ، والنقطة C هي مناظرة النقطة A بالنسبة إلى النقطة B\nما إحداثيّتا النقطة C ؟\n<svg viewBox=\"0 0 340 282\"><title>النقطتان A وB في المعيّن (O, I, J)</title><path d=\"M23.8 246 H316.2 M170 273.2 V13.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M323.2 246 L314.2 250.5 L314.2 241.5 Z\" fill=\"#94a3b8\"/><path d=\"M170 7.1 L165.5 16.1 L174.5 16.1 Z\" fill=\"#94a3b8\"/><path d=\"M34 241.5 V250.5 M68 241.5 V250.5 M102 241.5 V250.5 M136 241.5 V250.5 M204 241.5 V250.5 M238 241.5 V250.5 M272 241.5 V250.5 M306 241.5 V250.5 M165.5 212 H174.5 M165.5 178 H174.5 M165.5 144 H174.5 M165.5 110 H174.5 M165.5 76 H174.5 M165.5 42 H174.5\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M287.8 246 L228.9 144\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"170\" cy=\"246\" r=\"3.6\"/><circle cx=\"204\" cy=\"246\" r=\"3.6\"/><circle cx=\"170\" cy=\"212\" r=\"3.6\"/><circle cx=\"287.8\" cy=\"246\" r=\"3.6\"/></g><g fill=\"#0f6e56\"><circle cx=\"228.9\" cy=\"144\" r=\"4.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"159\" y=\"263\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"204\" y=\"265\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"158\" y=\"217\" text-anchor=\"middle\" fill=\"#0f172a\">J</text><text x=\"289.8\" y=\"265\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"240.9\" y=\"137\" text-anchor=\"middle\" fill=\"#0f6e56\">B</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−√3 ; 3)",
+          "misconceptionTag": "math.vec.milieu-sans-moitie"
+        },
+        {
+          "id": "b",
+          "text": "(0 ; 6)"
+        },
+        {
+          "id": "c",
+          "text": "(2√3 ; 6)"
+        },
+        {
+          "id": "d",
+          "text": "(6 ; 0)",
+          "misconceptionTag": "math.vec.coordonnees-point-inversees"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "C مناظرة A بالنسبة إلى B ، أي أنّ B منتصف القطعة [AC] ، فإحداثيّتا B هما نصفا مجموع إحداثيّتي A وC. إذا كانت (x ; y) إحداثيّتي C فإنّ √3 = (2√3 + x)/2 و 3 = (0 + y)/2 ، ومنه 2√3 + x = 2√3 أي x = 0 ، و y = 6 ، فـ C(0 ; 6) ✓. الخطأ الشائع: نسيان القسمة على 2 فنجد √3 = 2√3 + x و 3 = 0 + y أي (−√3 ; 3) ؛ أو مضاعفة إحداثيّتي B دون طرح إحداثيّتي A فنجد (2√3 ; 6) ؛ أو عكس ترتيب الفاصلة والترتيبة فنجد (6 ; 0).",
+      "difficulty": 1,
+      "competencies": [
+        "math.vec.repere-calculs",
+        "math.vec.repere-coordonnees"
+      ]
+    },
+    {
+      "prompt": "في المعيّن المتعامد والمتجانس (O, I, J) ، النقطة B منتصف القطعة [AC] ، والنقطة M المختلفة عن B تنتمي إلى المستقيم المارّ من B والعمودي على (AC)\nما التبرير الصحيح لإثبات أنّ MA = MC ؟\n<svg viewBox=\"0 0 340 282\"><title>القطعة [AC] ومنتصفها B ونقطة M من العمودي على (AC) في B</title><path d=\"M23.8 246 H316.2 M170 273.2 V13.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M323.2 246 L314.2 250.5 L314.2 241.5 Z\" fill=\"#94a3b8\"/><path d=\"M170 7.1 L165.5 16.1 L174.5 16.1 Z\" fill=\"#94a3b8\"/><path d=\"M34 241.5 V250.5 M68 241.5 V250.5 M102 241.5 V250.5 M136 241.5 V250.5 M204 241.5 V250.5 M238 241.5 V250.5 M272 241.5 V250.5 M306 241.5 V250.5 M165.5 212 H174.5 M165.5 178 H174.5 M165.5 144 H174.5 M165.5 110 H174.5 M165.5 76 H174.5 M165.5 42 H174.5\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M287.8 246 L170 42\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M199.4 161 L274.5 117.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M274.5 117.7 L287.8 246\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M274.5 117.7 L170 42\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M254 197.5 L262.7 192.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M195.1 95.5 L203.8 90.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M236.7 139.5 L232.2 131.7 L224.4 136.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"170\" cy=\"246\" r=\"3.6\"/><circle cx=\"204\" cy=\"246\" r=\"3.6\"/><circle cx=\"170\" cy=\"212\" r=\"3.6\"/><circle cx=\"287.8\" cy=\"246\" r=\"3.6\"/><circle cx=\"274.5\" cy=\"117.7\" r=\"3.6\"/></g><g fill=\"#0f6e56\"><circle cx=\"228.9\" cy=\"144\" r=\"4.2\"/><circle cx=\"170\" cy=\"42\" r=\"4.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"159\" y=\"263\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"204\" y=\"265\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"158\" y=\"217\" text-anchor=\"middle\" fill=\"#0f172a\">J</text><text x=\"289.8\" y=\"265\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"213.9\" y=\"147\" text-anchor=\"middle\" fill=\"#0f6e56\">B</text><text x=\"182\" y=\"47\" text-anchor=\"middle\" fill=\"#0f6e56\">C</text><text x=\"286.5\" y=\"111.7\" text-anchor=\"middle\" fill=\"#0f172a\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "المثلثان MBA و MBC قائمان في B ، فبفيثاغورس MB² = MA² + BA² و MB² = MC² + BC² ، وبما أنّ BA = BC فإنّ MA = MC",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "المثلثان MBA و MBC قائمان في B ، فبجمع الأطوال MB = MA + BA و MB = MC + BC ، وبما أنّ BA = BC فإنّ MA = MC"
+        },
+        {
+          "id": "c",
+          "text": "المثلثان MBA و MBC قائمان في B ، فبجمع الأطوال MA = MB + BA و MC = MB + BC ، وبما أنّ BA = BC فإنّ MA = MC",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "المثلثان MBA و MBC قائمان في B ، فبفيثاغورس MA² = MB² + BA² و MC² = MB² + BC² ، وبما أنّ BA = BC فإنّ MA = MC"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "في المثلثين القائمين في B وتراهما [MA] و[MC] ، والضلع MB مشترك بينهما ، فبمبرهنة فيثاغورس MA² = MB² + BA² و MC² = MB² + BC². وبما أنّ B منتصف [AC] فإنّ BA = BC ، فيكون MA² = MC² ، ومنه MA = MC لأنّ الطولين موجبان ✓. الخطأ الشائع: اعتبار [MB] وترًا مع أنّه ضلع من الزاوية القائمة ؛ أو جمع الطولين بدل جمع مربّعيهما فنجد MA = MB + BA ؛ أو الجمع بين الخطأين: جمع الأطوال مع اعتبار [MB] وترًا.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "في المعيّن المتعامد والمتجانس (O, I, J) ، ووحدة قيس الطول هي الصنتمتر ، لدينا النقطتان A(2√3 ; 0) و C(0 ; 6) ، والنقطة D من محور الفواصل فاصلتها العدد الحقيقي x ، وتحقّق DC = DA\nما عبارة الطول CD بدلالة x ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "x − 2√3",
+          "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste"
+        },
+        {
+          "id": "b",
+          "text": "x + 2√3",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "c",
+          "text": "|x − 2√3|"
+        },
+        {
+          "id": "d",
+          "text": "|x| − 2√3",
+          "misconceptionTag": "math.num.valeur-absolue-somme-additive"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "النقطتان A وD تنتميان إلى محور الفواصل ، فالبعد بينهما هو القيمة المطلقة للفرق بين فاصلتيهما: DA = |x − 2√3|. وبما أنّ DC = DA فإنّ CD = |x − 2√3| ✓. نبقي القيمة المطلقة لأنّ إشارة x − 2√3 تتغيّر بحسب موضع D ، أمّا الطول فلا يكون سالبًا أبدًا. الخطأ الشائع: حذف الشريطين دون اختبار الإشارة فنجد x − 2√3 ، وهو عدد سالب حين تكون x أصغر من 2√3 ؛ أو توزيع القيمة المطلقة على الفرق فنجد |x| − 2√3 ؛ أو جمع الفاصلتين بدل طرحهما فنجد x + 2√3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.vec.repere-calculs"
+      ]
+    },
+    {
+      "prompt": "في المعيّن المتعامد والمتجانس (O, I, J) ، ووحدة قيس الطول هي الصنتمتر ، لدينا النقطتان C(0 ; 6) و D(x ; 0) حيث x عدد حقيقي غير معدوم\nما طول القطعة [CD] بدلالة x ؟\n<svg viewBox=\"0 0 340 282\"><title>المثلث COD القائم في O</title><path d=\"M23.8 246 H316.2 M170 273.2 V13.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M323.2 246 L314.2 250.5 L314.2 241.5 Z\" fill=\"#94a3b8\"/><path d=\"M170 7.1 L165.5 16.1 L174.5 16.1 Z\" fill=\"#94a3b8\"/><path d=\"M34 241.5 V250.5 M68 241.5 V250.5 M102 241.5 V250.5 M136 241.5 V250.5 M204 241.5 V250.5 M238 241.5 V250.5 M272 241.5 V250.5 M306 241.5 V250.5 M165.5 212 H174.5 M165.5 178 H174.5 M165.5 144 H174.5 M165.5 110 H174.5 M165.5 76 H174.5 M165.5 42 H174.5\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 42 L119 246\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 246 L170 42\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 246 L119 246\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M161 246 L161 237 L170 237\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"170\" cy=\"246\" r=\"3.6\"/><circle cx=\"204\" cy=\"246\" r=\"3.6\"/><circle cx=\"170\" cy=\"212\" r=\"3.6\"/></g><g fill=\"#0f6e56\"><circle cx=\"170\" cy=\"42\" r=\"4.2\"/><circle cx=\"119\" cy=\"246\" r=\"4.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"159\" y=\"263\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"204\" y=\"265\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"158\" y=\"217\" text-anchor=\"middle\" fill=\"#0f172a\">J</text><text x=\"182\" y=\"47\" text-anchor=\"middle\" fill=\"#0f6e56\">C</text><text x=\"117\" y=\"265\" text-anchor=\"middle\" fill=\"#0f6e56\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√(x² + 36)"
+        },
+        {
+          "id": "b",
+          "text": "√(x² − 36)",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "c",
+          "text": "x² − 36"
+        },
+        {
+          "id": "d",
+          "text": "x² + 36",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المعيّن (O, I, J) متعامد ، فالمثلث COD قائم في O ، ووتره [CD] وضلعاه القائمان OD = |x| و OC = 6. فبمبرهنة فيثاغورس CD² = OD² + OC² = x² + 36 ، ومنه CD = √(x² + 36) ✓. الخطأ الشائع: التوقّف عند CD² = x² + 36 ونسيان الجذر ؛ أو اعتبار [OD] وترًا فنجد √(x² − 36).",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.vec.repere-calculs"
+      ]
+    },
+    {
+      "prompt": "في المعيّن المتعامد والمتجانس (O, I, J) ، لدينا النقطتان A(2√3 ; 0) و C(0 ; 6) ، والنقطة G(0 ; g) من محور التراتيب حيث g عدد حقيقي ، وتحقّق GA = GC\nما قيمة g ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "−2",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "G(0 ; g) و A(2√3 ; 0) و C(0 ; 6) ، فبمبرهنة فيثاغورس:\nGA² = (2√3)² + g² = 12 + g²\nGC² = (6 − g)² = 36 − 12g + g²\nالشرط GA = GC يعطي GA² = GC² ، أي:\ng² + 12 = g² − 12g + 36\nنحذف g² من الطرفين ، ثمّ ننقل الحدود:\n12g = 36 − 12 = 24\nومنه g = 2 ✓. الخطأ الشائع: نقل الحدّ −12g دون تغيير إشارته ، أي كتابة g² − 12g + 12 = g² + 36 ، فنجد g = −2 ؛ أو اعتبار G منتصف [OC] فنجد 3 ؛ أو إعطاء G ترتيبة النقطة C نفسها فنجد 6.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.equations-premier-degre",
+        "math.vec.repere-calculs",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "في المعيّن المتعامد والمتجانس (O, I, J) ، ووحدة قيس الطول هي الصنتمتر ، لدينا النقطتان B(√3 ; 3) و G(0 ; 2)\nما البعد BG ؟\n<svg viewBox=\"0 0 340 282\"><title>القطعة [BG] في المعيّن (O, I, J)</title><path d=\"M23.8 246 H316.2 M170 273.2 V13.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M323.2 246 L314.2 250.5 L314.2 241.5 Z\" fill=\"#94a3b8\"/><path d=\"M170 7.1 L165.5 16.1 L174.5 16.1 Z\" fill=\"#94a3b8\"/><path d=\"M34 241.5 V250.5 M68 241.5 V250.5 M102 241.5 V250.5 M136 241.5 V250.5 M204 241.5 V250.5 M238 241.5 V250.5 M272 241.5 V250.5 M306 241.5 V250.5 M165.5 212 H174.5 M165.5 178 H174.5 M165.5 144 H174.5 M165.5 110 H174.5 M165.5 76 H174.5 M165.5 42 H174.5\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M228.9 144 L170 178\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"170\" cy=\"246\" r=\"3.6\"/><circle cx=\"204\" cy=\"246\" r=\"3.6\"/><circle cx=\"170\" cy=\"212\" r=\"3.6\"/></g><g fill=\"#0f6e56\"><circle cx=\"228.9\" cy=\"144\" r=\"4.2\"/><circle cx=\"170\" cy=\"178\" r=\"4.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"159\" y=\"263\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"204\" y=\"265\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"158\" y=\"217\" text-anchor=\"middle\" fill=\"#0f172a\">J</text><text x=\"240.9\" y=\"137\" text-anchor=\"middle\" fill=\"#0f6e56\">B</text><text x=\"158\" y=\"183\" text-anchor=\"middle\" fill=\"#0f6e56\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√3 + 1",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "misconceptionTag": "math.vec.distance-sans-racine"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "√3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "فرق الفاصلتين √3 − 0 = √3 وفرق الترتيبتين 3 − 2 = 1 ، وهما ضلعا الزاوية القائمة في مثلث قائم وتره [BG]. فبمبرهنة فيثاغورس BG² = (√3)² + 1² = 3 + 1 = 4 ، ومنه BG = √4 = 2 ✓. الخطأ الشائع: التوقّف عند BG² = 4 فنجد 4 ؛ أو جمع فرقي الإحداثيّتين بدل جمع مربّعيهما فنجد √3 + 1 ؛ أو الاكتفاء بفرق الفاصلتين فنجد √3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-calculs",
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "نعتبر المعادلة التالية ذات المجهول الحقيقي x:\n(x − 2√3)² = x² + 36\nما مجموعة حلولها ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "{−4√3}"
+        },
+        {
+          "id": "b",
+          "text": "{−6}"
+        },
+        {
+          "id": "c",
+          "text": "∅",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "d",
+          "text": "{−2√3}"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "ننشر الطرف الأيسر بالمتطابقة (a − b)² = a² − 2ab + b²: (x − 2√3)² = x² − 4√3x + 12. تصبح المعادلة x² − 4√3x + 12 = x² + 36 ، فنحذف x² من الطرفين: −4√3x = 24 ، ومنه x = −24/(4√3) = −6/√3 = −2√3 ✓. الخطأ الشائع: نسيان الجداء المضاعف فنجد x² + 12 = x² + 36 أي 12 = 36 ، فنستنتج خطأً أنّ المعادلة لا حلّ لها ؛ أو جعل الحدّ الأخير سالبًا في النشر فنجد x² − 4√3x − 12 ومنه x = −4√3 ؛ أو قسمة 24 على 4 وإهمال √3 فنجد −6.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.alg.equations-premier-degre",
+        "math.num.racines-calcul"
+      ]
+    }
+  ]
+}
