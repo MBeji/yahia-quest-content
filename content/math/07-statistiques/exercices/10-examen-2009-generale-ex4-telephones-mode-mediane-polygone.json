@@ -38,7 +38,7 @@
       ]
     },
     {
-      "prompt": "توزّعت 100 عائلة بأحد الأحياء السكنية حسب عدد هواتفها المحمولة (من 0 إلى 5) كما يلي : 2 و8 و12 و30 و33 و15 عائلة على الترتيب.\nنرتّب هذه العائلات المئة تصاعديًّا حسب عدد هواتفها، ثمّ نبحث عن القيمة التي تقسم هذا الترتيب إلى نصفين متساويين في عدد العائلات.\nحدّد الوسيط (الموسّط) لهذه السلسلة الإحصائية.",
+      "prompt": "توزّعت 100 عائلة بأحد الأحياء السكنية حسب عدد هواتفها المحمولة، من 0 إلى 5، كما يلي : 2 و8 و12 و30 و33 و15 عائلة على الترتيب.\nنرتّب هذه العائلات المئة تصاعديًّا حسب عدد هواتفها، ثمّ نبحث عن القيمة التي تقسم هذا الترتيب إلى نصفين متساويين في عدد العائلات.\nحدّد الوسيط (الموسّط) لهذه السلسلة الإحصائية.",
       "options": [
         {
           "id": "a",
@@ -90,35 +90,35 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "نجمّع التكرارات تدريجيًّا من الأصغر إلى الأكبر: 2 ثمّ 2 + 8 = 10 ثمّ 10 + 12 = 22 ثمّ 22 + 30 = 52 ثمّ 52 + 33 = 85 ثمّ 85 + 15 = 100 ✓ (والأخير يساوي دائمًا عدد العائلات الكلّي 100). الخطأ الشائع: كتابة تكرار كلّ قيمة كما هو دون تجميعه؛ أو تجميع القيم الأصغر قطعًا فقط، فيبدأ السطر بـ 0 وينتهي عند 85 ولا يبلغ 100؛ أو التجميع من الجهة المعاكسة، وهو التكرار المجمّع النازل: عدد العائلات التي لها هذا العدد من الهواتف على الأقلّ.",
+      "explanation": "نبني السطر خانةً بعد خانة، وكلّ خانة تضمّ ما قبلها: 2 ، ثمّ 2 + 8 = 10 ، ثمّ 10 + 12 = 22 ، ثمّ 22 + 30 = 52 ، ثمّ 52 + 33 = 85 ، ثمّ 85 + 15 = 100 ✓. الخانة الأخيرة تعطي عدد العائلات كلّها (100)، وهذا مؤشّر تحقّق سريع. الخطأ الشائع: نسخ التكرارات كما هي دون جمعها؛ أو جمع ما هو أصغر قطعًا من القيمة فقط، فيبدأ السطر بـ 0 ولا يبلغ 100؛ أو الجمع انطلاقًا من أكبر قيمة، أي عدد من لهم هذا العدد من الهواتف على الأقلّ، فيبدأ السطر بـ 100 وينتهي بـ 15.",
       "difficulty": 2,
       "competencies": [
         "math.stat.effectifs-frequences"
       ]
     },
     {
-      "prompt": "يمثّل المضلّع التالي التكرارات المجمّعة الصاعدة لهذه السلسلة : فاصلة كلّ نقطة هي عدد الهواتف، وترتيبتها هي عدد العائلات التي لها هذا العدد من الهواتف على الأكثر.\nكم عائلة لها ثلاثة هواتف على الأكثر ؟\n<svg viewBox=\"0 0 290 224\">\n<title>مضلّع التكرارات المجمّعة الصاعدة لعدد الهواتف المحمولة لدى 100 عائلة</title>\n<path d=\"M46 34 V194 M90.8 34 V194 M135.6 34 V194 M180.4 34 V194 M225.2 34 V194 M270 34 V194 M46 194 H270 M46 162 H270 M46 130 H270 M46 98 H270 M46 66 H270 M46 34 H270\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<path d=\"M46 194 H276 M46 194 V28\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/>\n<path d=\"M282 194 L274 190 L274 198 Z M46 22 L42 30 L50 30 Z\" fill=\"#0f172a\"/>\n<text x=\"46\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">0</text><text x=\"90.8\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">1</text><text x=\"135.6\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">2</text><text x=\"180.4\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">3</text><text x=\"225.2\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">4</text><text x=\"270\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">5</text><text x=\"40\" y=\"198\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">0</text><text x=\"40\" y=\"166\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">20</text><text x=\"40\" y=\"134\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">40</text><text x=\"40\" y=\"102\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">60</text><text x=\"40\" y=\"70\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">80</text><text x=\"40\" y=\"38\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">100</text>\n<polyline points=\"46,190.8 90.8,178 135.6,158.8 180.4,110.8 225.2,58 270,34\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n<circle cx=\"46\" cy=\"190.8\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"90.8\" cy=\"178\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"135.6\" cy=\"158.8\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"180.4\" cy=\"110.8\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"225.2\" cy=\"58\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"270\" cy=\"34\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<g font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"54\" y=\"182.8\" text-anchor=\"start\">2</text><text x=\"84.8\" y=\"170\" text-anchor=\"end\">10</text><text x=\"129.6\" y=\"150.8\" text-anchor=\"end\">22</text><text x=\"174.4\" y=\"102.8\" text-anchor=\"end\">52</text><text x=\"219.2\" y=\"50\" text-anchor=\"end\">85</text><text x=\"264\" y=\"26\" text-anchor=\"end\">100</text></g>\n</svg>",
+      "prompt": "يمثّل المضلّع التالي التكرارات المجمّعة الصاعدة لعدد الهواتف المحمولة لدى 100 عائلة : فاصلة كلّ نقطة هي عدد الهواتف، وترتيبتها هي عدد العائلات التي لها هذا العدد من الهواتف على الأكثر.\nبقراءة المضلّع، كم عائلة لها ثلاثة أو أربعة هواتف بالضبط ؟\n<svg viewBox=\"0 0 290 224\">\n<title>مضلّع التكرارات المجمّعة الصاعدة لعدد الهواتف المحمولة لدى 100 عائلة</title>\n<path d=\"M46 34 V194 M90.8 34 V194 M135.6 34 V194 M180.4 34 V194 M225.2 34 V194 M270 34 V194 M46 194 H270 M46 162 H270 M46 130 H270 M46 98 H270 M46 66 H270 M46 34 H270\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<path d=\"M46 194 H276 M46 194 V28\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/>\n<path d=\"M282 194 L274 190 L274 198 Z M46 22 L42 30 L50 30 Z\" fill=\"#0f172a\"/>\n<text x=\"46\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">0</text><text x=\"90.8\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">1</text><text x=\"135.6\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">2</text><text x=\"180.4\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">3</text><text x=\"225.2\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">4</text><text x=\"270\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">5</text><text x=\"40\" y=\"198\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">0</text><text x=\"40\" y=\"166\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">20</text><text x=\"40\" y=\"134\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">40</text><text x=\"40\" y=\"102\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">60</text><text x=\"40\" y=\"70\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">80</text><text x=\"40\" y=\"38\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">100</text>\n<polyline points=\"46,190.8 90.8,178 135.6,158.8 180.4,110.8 225.2,58 270,34\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n<circle cx=\"46\" cy=\"190.8\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"90.8\" cy=\"178\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"135.6\" cy=\"158.8\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"180.4\" cy=\"110.8\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"225.2\" cy=\"58\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"270\" cy=\"34\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<g font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"54\" y=\"182.8\" text-anchor=\"start\">2</text><text x=\"84.8\" y=\"170\" text-anchor=\"end\">10</text><text x=\"129.6\" y=\"150.8\" text-anchor=\"end\">22</text><text x=\"174.4\" y=\"102.8\" text-anchor=\"end\">52</text><text x=\"219.2\" y=\"50\" text-anchor=\"end\">85</text><text x=\"264\" y=\"26\" text-anchor=\"end\">100</text></g>\n</svg>",
       "options": [
         {
           "id": "a",
-          "text": "85"
+          "text": "85",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
         },
         {
           "id": "b",
-          "text": "52"
+          "text": "63"
         },
         {
           "id": "c",
-          "text": "30",
-          "misconceptionTag": "math.stat.effectif-cumule-non-cumule"
+          "text": "33"
         },
         {
           "id": "d",
-          "text": "22"
+          "text": "30"
         }
       ],
       "correctOption": "b",
-      "explanation": "عبارة «ثلاثة هواتف على الأكثر» تعني 0 أو 1 أو 2 أو 3 هواتف، فنقرأ ترتيبة النقطة التي فاصلتها 3 : هي 52 ✓ (2 + 8 + 12 + 30 = 52). الخطأ الشائع: 30 هو عدد العائلات التي لها 3 هواتف بالضبط (تكرار غير مجمّع)؛ و22 ترتيبة الفاصلة 2 فيُهمل فيها من لهم 3 هواتف؛ و85 ترتيبة الفاصلة 4 فيُضاف إليها من لهم 4 هواتف.",
+      "explanation": "«ثلاثة أو أربعة هواتف بالضبط» تعني العائلات التي لها 4 هواتف على الأكثر بعد طرح التي لها هاتفان على الأكثر: نقرأ ترتيبة الفاصلة 4 وهي 85 وترتيبة الفاصلة 2 وهي 22، ثمّ نطرح: 85 − 22 = 63 عائلة ✓. وبطريقة ثانية: من لهم 3 هواتف بالضبط هم 52 − 22 = 30، ومن لهم 4 هواتف بالضبط هم 85 − 52 = 33، والمجموع 30 + 33 = 63 ✓. الخطأ الشائع: الاكتفاء بترتيبة الفاصلة 4 دون طرح، فنجد 85 وهو عدد من لهم 4 هواتف على الأكثر؛ أو طرح ترتيبة الفاصلة 3 بدل 2، فنجد 85 − 52 = 33 وتسقط العائلات التي لها 3 هواتف؛ أو الوقوف عند الفاصلة 3، فنجد 52 − 22 = 30 وتسقط العائلات التي لها 4 هواتف.",
       "difficulty": 2,
       "competencies": [
         "math.stat.effectifs-frequences"
@@ -133,7 +133,8 @@
         },
         {
           "id": "b",
-          "text": "52 %"
+          "text": "52 %",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
         },
         {
           "id": "c",

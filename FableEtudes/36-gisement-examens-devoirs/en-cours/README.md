@@ -1,4 +1,4 @@
-# Missions d'examen, maths 9ᵉ : travaux en cours (point de sauvegarde du 2026-09-30)
+# Missions d'examen, maths 9ᵉ : travaux en cours (point de sauvegarde du 2026-09-30, mis à jour à 07:00 UTC)
 
 Cette branche `wip/…` **ne se merge pas**. Elle met à l'abri des lots non audités ou en cours
 de correction pendant qu'une limite d'usage hebdomadaire (levée le 2026-10-03 à 12:00 UTC) peut
@@ -11,11 +11,11 @@ branche fraîche depuis `main` : on y copie ses fichiers, on rejoue les gates, o
 | Lot | Chapitre | Fichiers | État |
 |---|---|---|---|
 | L19 | 20 | 17 à 21 | publié (privé#589) |
-| L01 | 17 | 09 à 16 | auteur terminé ; correctifs du premier audit appliqués (44 questions) ; **contre-vérification à faire** (l'auditeur a été coupé) |
-| L02 | 03 | 15 à 20 | auteur terminé ; **audit commencé** (fichiers 15 à 18 vus), à reprendre ; à arbitrer : volume de la pyramide (16, Q4) |
-| L06 | 07 | 10 à 17 | audité (0 clé fausse, 9 majeurs, 18 mineurs : `audits/audit-L06.md`) ; **correctifs à appliquer** puis contre-vérifier ; ces fichiers sont l'état AVANT correctifs |
-| L11 | 09 | 16 à 22 | auteur terminé (45 questions) ; **audit à faire** |
-| L04 | 04 | 17 à 22 | auteur lancé, rien écrit |
+| L01 | 17 | 09 à 16 | **livré** (privé#595, publié) ; les fichiers de cette branche sont les versions livrées |
+| L02 | 03 | 15 à 20 | audité (0 clé fausse, 7 majeurs, 8 groupes de mineurs : `audits/audit-L02.md`) ; **correctifs appliqués**, re-vérification ciblée en cours ; étiquettes à créer : `etiquettes/L02.json` |
+| L06 | 07 | 10 à 17 | audité (`audits/audit-L06.md`), **correctifs appliqués** par l'auteur, contre-vérification en cours ; étiquettes à créer : `etiquettes/L06.json` |
+| L11 | 09 | 16 à 22 | auteur terminé (45 questions) ; **audit en cours** |
+| L04 | 04 | 17 à 22 | auteur relancé (rien de versionné ici) |
 | L03, L05, L07 à L10, L12 à L18 | | | à lancer, un auteur par chapitre à la fois, plages NN du plan |
 
 Aussi à faire, une fois les lots livrés :

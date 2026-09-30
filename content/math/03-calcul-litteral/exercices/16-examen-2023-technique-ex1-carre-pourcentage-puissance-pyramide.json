@@ -19,8 +19,7 @@
         },
         {
           "id": "c",
-          "text": "3 + √2",
-          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+          "text": "3 + √2"
         },
         {
           "id": "d",
@@ -94,7 +93,7 @@
       ]
     },
     {
-      "prompt": "SABCD هرم قاعدته المربّع ABCD، ضلع هذا المربّع 9 وارتفاع الهرم 10.\nحجم الهرم V يُحسب بالقانون التالي، حيث B مساحة القاعدة و h الارتفاع:\nV = (1/3) × B × h\nما حجم الهرم SABCD ؟\n<svg viewBox=\"0 0 300 240\"><title>هرم SABCD قاعدته المربّع ABCD</title><path d=\"M60 190 L190 190 L152.5 56 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M115 152 L245 152 M60 190 L115 152 M115 152 L152.5 56\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M60 190 L190 190 L245 152 M60 190 L152.5 56 M190 190 L152.5 56 M245 152 L152.5 56\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M152.5 56 L152.5 171\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-dasharray=\"6 4\" stroke-linecap=\"round\"/><path d=\"M60 199 L60 207 M190 199 L190 207 M60 203 L190 203\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"190\" r=\"3.2\"/><circle cx=\"190\" cy=\"190\" r=\"3.2\"/><circle cx=\"245\" cy=\"152\" r=\"3.2\"/><circle cx=\"115\" cy=\"152\" r=\"3.2\"/><circle cx=\"152.5\" cy=\"56\" r=\"3.2\"/></g><circle cx=\"152.5\" cy=\"171\" r=\"2.6\" fill=\"#0f6e56\"/><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"152.5\" y=\"46\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"47\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"203\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"258\" y=\"156\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"102\" y=\"148\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"125\" y=\"223\" text-anchor=\"middle\" fill=\"#0f6e56\">9</text><text x=\"145.5\" y=\"142\" text-anchor=\"end\" fill=\"#0f6e56\">10</text></g></svg>",
+      "prompt": "SABCD هرم قاعدته المربّع ABCD، ضلع هذا المربّع 9 وارتفاع الهرم 10.\nحجم الهرم يساوي ثلث جداء مساحة قاعدته في ارتفاعه.\nما حجم الهرم SABCD ؟\n<svg viewBox=\"0 0 300 240\"><title>هرم SABCD قاعدته المربّع ABCD</title><path d=\"M60 190 L190 190 L152.5 56 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M115 152 L245 152 M60 190 L115 152 M115 152 L152.5 56\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M60 190 L190 190 L245 152 M60 190 L152.5 56 M190 190 L152.5 56 M245 152 L152.5 56\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M152.5 56 L152.5 171\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-dasharray=\"6 4\" stroke-linecap=\"round\"/><path d=\"M60 199 L60 207 M190 199 L190 207 M60 203 L190 203\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"190\" r=\"3.2\"/><circle cx=\"190\" cy=\"190\" r=\"3.2\"/><circle cx=\"245\" cy=\"152\" r=\"3.2\"/><circle cx=\"115\" cy=\"152\" r=\"3.2\"/><circle cx=\"152.5\" cy=\"56\" r=\"3.2\"/></g><circle cx=\"152.5\" cy=\"171\" r=\"2.6\" fill=\"#0f6e56\"/><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"152.5\" y=\"46\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"47\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"203\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"258\" y=\"156\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"102\" y=\"148\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"125\" y=\"223\" text-anchor=\"middle\" fill=\"#0f6e56\">9</text><text x=\"145.5\" y=\"142\" text-anchor=\"end\" fill=\"#0f6e56\">10</text></g></svg>",
       "options": [
         {
           "id": "a",
@@ -117,7 +116,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "القاعدة مربّع ضلعه 9، فمساحتها B = 9 × 9 = 81. إذن V = (1/3) × 81 × 10 = 810/3 = 270 ✓ (الهرم ثلث المنشور الذي له القاعدة والارتفاع نفسهما، ومنشوره 81 × 10 = 810). الخطأ الشائع نسيان الثلث فيخرج 81 × 10 = 810؛ أو أخذ الضلع 9 مكان مساحة القاعدة 81 فيخرج (1/3) × 9 × 10 = 30؛ أو أخذ محيط القاعدة 4 × 9 = 36 مكان مساحتها فيخرج (1/3) × 36 × 10 = 120.",
+      "explanation": "القاعدة مربّع ضلعه 9، فمساحتها 9 × 9 = 81. إذن حجم الهرم (1/3) × 81 × 10 = 810/3 = 270 ✓ (الهرم ثلث الموشور الذي له القاعدة والارتفاع نفسهما، وحجم هذا الموشور 81 × 10 = 810). الخطأ الشائع نسيان الثلث فيخرج 81 × 10 = 810؛ أو أخذ الضلع 9 مكان مساحة القاعدة 81 فيخرج (1/3) × 9 × 10 = 30؛ أو أخذ محيط القاعدة 4 × 9 = 36 مكان مساحتها فيخرج (1/3) × 36 × 10 = 120.",
       "difficulty": 2,
       "competencies": [
         "math.mes.volumes"
