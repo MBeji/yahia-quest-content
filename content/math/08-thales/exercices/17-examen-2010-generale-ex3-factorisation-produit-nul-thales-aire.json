@@ -1,0 +1,249 @@
+{
+  "title": "🏛️ مناظرة 2010 · التمرين 3 ⭐⭐⭐: عبارة جبريّة وتعميل ومعادلة جداء ثمّ طاليس ومساحة مثلّث قائم",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 17,
+  "questions": [
+    {
+      "prompt": "نعوّض x بالعدد 2 في العبارة التالية :\nA = x² + 2x − 8\nفما العدد الذي نحصل عليه ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "misconceptionTag": "math.int.signe-ignore-dans-somme"
+        },
+        {
+          "id": "d",
+          "text": "18",
+          "misconceptionTag": "math.num.chiffres-juxtaposes-au-lieu-du-produit"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نعوّض x بـ 2 : A = 2² + 2 × 2 − 8 = 4 + 4 − 8 = 0 ✓. الخطأ الشائع: كتابة 2x على أنّها العدد المكتوب برقمين 22 بدل الجداء 2 × 2 فنجد 4 + 22 − 8 = 18 ؛ أو إهمال إشارة − أمام 8 فنجد 4 + 4 + 8 = 16 ؛ أو نسيان الحدّ 8 فنجد 4 + 4 = 8.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.puissances",
+        "math.num.relatifs-operations"
+      ]
+    },
+    {
+      "prompt": "بعد النشر والاختزال ، أيّ كتابة تساوي العبارة الآتية ؟\n(x + 1)² − 9",
+      "options": [
+        {
+          "id": "a",
+          "text": "x² − 8",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "b",
+          "text": "x² − 2x − 8",
+          "misconceptionTag": "math.alg.carre-somme-signe-double-produit"
+        },
+        {
+          "id": "c",
+          "text": "x² + x − 8",
+          "misconceptionTag": "math.alg.double-produit-sans-facteur-2"
+        },
+        {
+          "id": "d",
+          "text": "x² + 2x − 8"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نطبّق متطابقة مربّع المجموع (a + b)² = a² + 2ab + b² مع a = x و b = 1 : (x + 1)² = x² + 2x + 1 ، ثمّ نطرح 9 : x² + 2x + 1 − 9 = x² + 2x − 8 ✓ ، وهذه هي العبارة A التي بدأنا بها ، أي A = (x + 1)² − 9. الخطأ الشائع: إسقاط الجداء المضاعف فنجد x² + 1 − 9 = x² − 8 ؛ أو كتابته دون العامل 2 فنجد x² + x − 8 ؛ أو إعطاؤه الإشارة − فنجد x² − 2x − 8.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ العبارة A تُكتب كما يلي :\nA = (x + 1)² − 9\nما تعميل A إلى جداء عاملين ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(x − 8)(x + 10)"
+        },
+        {
+          "id": "b",
+          "text": "(x − 4)(x + 2)"
+        },
+        {
+          "id": "c",
+          "text": "(x − 2)²",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        },
+        {
+          "id": "d",
+          "text": "(x − 2)(x + 4)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نلاحظ أنّ 9 = 3² ، فالعبارة فرق مربّعين : a² − b² = (a − b)(a + b) مع a = x + 1 و b = 3 ، أي A = (x + 1 − 3)(x + 1 + 3) = (x − 2)(x + 4) ✓. التحقّق بالنشر : (x − 2)(x + 4) = x² + 4x − 2x − 8 = x² + 2x − 8 ✓. الخطأ الشائع: كتابة مربّع بدل جداء الفرق في المجموع فنجد (x − 2)² ؛ أو أخذ b = 9 بدل جذره 3 فنجد (x + 1 − 9)(x + 1 + 9) = (x − 8)(x + 10) ؛ أو الخلط بين إشارتي العاملين فنجد (x − 4)(x + 2) الذي ينشر إلى x² − 2x − 8.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.factorisation",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ :\nA = (x − 2)(x + 4)\nما مجموعة الأعداد الحقيقيّة x التي تحقّق A = 0 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "{−4 ; 2}"
+        },
+        {
+          "id": "b",
+          "text": "{−2 ; 4}",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "c",
+          "text": "{2}"
+        },
+        {
+          "id": "d",
+          "text": "∅",
+          "misconceptionTag": "math.alg.produit-nul-et-au-lieu-de-ou"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "جداء عاملين معدوم إذا انعدم أحد العاملين على الأقلّ : x − 2 = 0 أي x = 2 ، أو x + 4 = 0 أي x = −4 ، فمجموعة الحلول {−4 ; 2} ✓. التحقّق: (2 − 2)(2 + 4) = 0 × 6 = 0 و (−4 − 2)(−4 + 4) = (−6) × 0 = 0 ✓. الخطأ الشائع: قراءة الجذر بالإشارة التي في القوس فنجد {−2 ; 4} ؛ أو اشتراط انعدام العاملين معًا فنحكم بأنّه لا حلّ ؛ أو الاكتفاء بالعامل الأوّل فنجد {2}.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.equations-produit"
+      ]
+    },
+    {
+      "prompt": "في الشكل التالي المستقيم (BE) عمودي على (BC) وعلى (EF) ، والنقطة A من [BE] ، والنقاط C و A و F على استقامة واحدة ، والأطوال بالصنتمتر :\nAE = 4 ، BC = 2 ، AB = x ، EF = x + 2\nأيّ مساواة تعطيها نظرية طاليس في هذا الشكل ؟\n<svg viewBox=\"0 0 300 250\"><title>الشكل : (BE) عمودي على (BC) وعلى (EF) ، والنقطة A من [BE] ، والنقاط C و A و F على استقامة واحدة</title><path d=\"M170 34 L170 202\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 34 L226 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 202 L58 202\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M226 34 L58 202\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 44 L180 44 L180 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 192 L160 192 L160 202\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"170\" cy=\"34\" r=\"4.4\"/><circle cx=\"226\" cy=\"34\" r=\"4.4\"/><circle cx=\"170\" cy=\"202\" r=\"4.4\"/><circle cx=\"58\" cy=\"202\" r=\"4.4\"/></g><g fill=\"#0f6e56\"><circle cx=\"170\" cy=\"90\" r=\"4.6\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"170\" y=\"22\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"239\" y=\"28\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"185\" y=\"93\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"176\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"45\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"156\" y=\"67\" text-anchor=\"middle\" fill=\"#0f6e56\">x</text><text x=\"156\" y=\"151\" text-anchor=\"middle\" fill=\"#0f6e56\">4</text><text x=\"198\" y=\"24\" text-anchor=\"middle\" fill=\"#0f6e56\">2</text><text x=\"114\" y=\"224\" text-anchor=\"middle\" fill=\"#0f6e56\">x + 2</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "x/4 = 2/(x + 2)"
+        },
+        {
+          "id": "b",
+          "text": "x/4 = (x + 2)/2",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "c",
+          "text": "x/(x + 4) = 2/(x + 2)",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "d",
+          "text": "x/(x + 4) = (x + 2)/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "(BC) و (EF) عموديان على (BE) فهما متوازيان ، والنقطة A بين B و E وبين C و F ، فالوضعية هي وضعية الفراشة ورأسها A ، وتعطي نظرية طاليس AB/AE = BC/EF ، أي x/4 = 2/(x + 2) ✓. الخطأ الشائع: قلب إحدى النسبتين فنكتب x/4 = (x + 2)/2 ؛ أو قسمة AB على القطعة كلّها BE = x + 4 بدل AE ، وهي نسبة جزء على كلّ لا تصحّ مع نسبة الضلعين المتوازيين ، فنكتب x/(x + 4) = 2/(x + 2) ؛ أو جمع الخطأين فنكتب x/(x + 4) = (x + 2)/2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ :\nx/4 = 2/(x + 2)\nنجري الضرب التقاطعي ثمّ نجمع كلّ الحدود في طرف واحد بحيث يصير الطرف الآخر 0 ، فما المعادلة التي نحصل عليها ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "x² − 6 = 0",
+          "misconceptionTag": "math.alg.distribution-partielle"
+        },
+        {
+          "id": "b",
+          "text": "x² + 2x − 8 = 0"
+        },
+        {
+          "id": "c",
+          "text": "x² + 2x − 6 = 0",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "x² + 2x + 8 = 0",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "بالضرب التقاطعي : x × (x + 2) = 4 × 2 ، أي x² + 2x = 8 ، ثمّ ننقل 8 فتتغيّر إشارته : x² + 2x − 8 = 0 ✓. الخطأ الشائع: نقل 8 دون تغيير إشارته فنجد x² + 2x + 8 = 0 ؛ أو ضرب x في الحدّ الأوّل وحده من القوس فنجد x² + 2 = 8 أي x² − 6 = 0 ؛ أو جمع 4 و 2 بدل ضربهما فنجد x² + 2x = 6 أي x² + 2x − 6 = 0.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.mise-en-equation",
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "x هو الطول AB بالصنتمتر ، ونعلم أنّه يحقّق المعادلة التالية :\nx² + 2x − 8 = 0\nوأنّ حلّي هذه المعادلة هما −4 و 2 ، فما قيمة x ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = −4",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        },
+        {
+          "id": "b",
+          "text": "x = 2"
+        },
+        {
+          "id": "c",
+          "text": "x = 4"
+        },
+        {
+          "id": "d",
+          "text": "x = −4 أو x = 2",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "x هو طول القطعة [AB] ، فهو موجب تمامًا. من العددين −4 و 2 اللذين يحقّقان المعادلة نُبقي العدد الموجب 2 ونُقصي −4 لأنّه سالب : x = 2 ✓. التحقّق: 2² + 2 × 2 − 8 = 0 ✓. الخطأ الشائع: الاحتفاظ بالحلّ السالب لأنّه يحقّق المعادلة ، أو بالحلّين معًا ، مع أنّ الطول لا يكون سالبًا ؛ أو تحويل −4 إلى 4 لإرضاء شرط الموجب ، والعدد 4 لا يحقّق المعادلة : 4² + 2 × 4 − 8 = 16.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.mise-en-equation"
+      ]
+    },
+    {
+      "prompt": "المثلّث AEF قائم في E ، والأطوال بالصنتمتر :\nAE = 4 ، EF = x + 2 ، x = 2\nما مساحة المثلّث AEF بالصنتمتر المربّع ؟\n<svg viewBox=\"0 0 300 250\"><title>الشكل : (BE) عمودي على (BC) وعلى (EF) ، والنقطة A من [BE] ، والنقاط C و A و F على استقامة واحدة ، والمثلث AEF مظلّل</title><path d=\"M170 90 L170 202 L58 202 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\" stroke-width=\"0\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M170 34 L170 202\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 34 L226 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 202 L58 202\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M226 34 L58 202\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 44 L180 44 L180 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 192 L160 192 L160 202\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"170\" cy=\"34\" r=\"4.4\"/><circle cx=\"226\" cy=\"34\" r=\"4.4\"/><circle cx=\"170\" cy=\"202\" r=\"4.4\"/><circle cx=\"58\" cy=\"202\" r=\"4.4\"/></g><g fill=\"#0f6e56\"><circle cx=\"170\" cy=\"90\" r=\"4.6\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"170\" y=\"22\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"239\" y=\"28\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"185\" y=\"93\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"176\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"45\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"156\" y=\"67\" text-anchor=\"middle\" fill=\"#0f6e56\">x</text><text x=\"156\" y=\"151\" text-anchor=\"middle\" fill=\"#0f6e56\">4</text><text x=\"198\" y=\"24\" text-anchor=\"middle\" fill=\"#0f6e56\">2</text><text x=\"114\" y=\"224\" text-anchor=\"middle\" fill=\"#0f6e56\">x + 2</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "d",
+          "text": "16",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المثلّث AEF قائم في E ، فمساحته نصف جداء ضلعيه القائمين : (AE × EF)/2. مع x = 2 نجد EF = x + 2 = 4 ، فالمساحة (4 × 4)/2 = 8 cm² ✓. الخطأ الشائع: نسيان القسمة على 2 فنجد 4 × 4 = 16 ؛ أو حساب مساحة مثلّث آخر من الشكل : ABC ضلعاه القائمان AB = 2 و BC = 2 فمساحته (2 × 2)/2 = 2 ، و BEF ضلعاه القائمان BE = 2 + 4 = 6 و EF = 4 فمساحته (6 × 4)/2 = 12.",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.aires"
+      ]
+    }
+  ]
+}

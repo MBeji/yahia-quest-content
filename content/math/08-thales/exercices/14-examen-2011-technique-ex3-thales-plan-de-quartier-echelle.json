@@ -1,0 +1,159 @@
+{
+  "title": "🏛️ مناظرة 2011 (تقني) · التمرين 3 ⭐⭐: طاليس على تصميم حيّ سكني — نسب متساوية وطول ثمّ تحويل إلى الواقع",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 14,
+  "questions": [
+    {
+      "prompt": "يمثّل الرسم التالي تصميمًا لحيّ سكني يقطعه نهر ، والنقاط A و B و C و D و E هي منازل من هذا الحيّ ، ونعلم أنّ :\nA و D و B على استقامة واحدة\nB و E و C على استقامة واحدة\n(DE) ∥ (AC)\nما الحجّة التي تبرّر المساواة التالية ؟\nBE/BC = DE/AC\n<svg viewBox=\"0 0 330 262\"><title>تصميم حيّ سكني يقطعه نهر : المنازل A و B و C و D و E حيث A و D و B على استقامة واحدة وكذلك B و E و C و (DE) ∥ (AC)</title><path d=\"M14 96 Q52 82 92 96 T170 96 T248 96 T306 96 L306 124 Q268 138 228 124 T150 124 T72 124 T14 124 Z\" fill=\"#93c5fd\" fill-opacity=\"0.55\" stroke=\"#60a5fa\" stroke-width=\"1.6\"/><path d=\"M50 214 L182 38 L182 214 Z\" fill=\"#0f6e56\" fill-opacity=\"0.05\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M83 170 L83 214\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"214\" r=\"4.4\"/><circle cx=\"182\" cy=\"214\" r=\"4.4\"/><circle cx=\"182\" cy=\"38\" r=\"4.4\"/></g><g fill=\"#0f6e56\"><circle cx=\"83\" cy=\"170\" r=\"4.4\"/><circle cx=\"83\" cy=\"214\" r=\"4.4\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"184\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"38\" y=\"232\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"194\" y=\"232\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"68\" y=\"166\" text-anchor=\"middle\" fill=\"#0f6e56\">D</text><text x=\"84\" y=\"234\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text></g><text x=\"252\" y=\"114\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\" direction=\"rtl\">نهر</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "D من [BA] و E من [BC] و (DE) ∥ (AC) ، فنطبّق نظرية طاليس في المثلّث BAC"
+        },
+        {
+          "id": "b",
+          "text": "D من [BA] و E من [BC] ، فنطبّق نظرية طاليس في المثلّث BAC دون حاجة إلى شرط آخر",
+          "misconceptionTag": "math.geo.thales-sans-verifier-parallelisme"
+        },
+        {
+          "id": "c",
+          "text": "(DE) ∥ (AC) ، فنطبّق النظرية العكسية لطاليس في المثلّث BAC",
+          "misconceptionTag": "math.geo.thales-reciproque-role"
+        },
+        {
+          "id": "d",
+          "text": "D من [BA] و E من [BC] ، فنطبّق النظرية العكسية لطاليس في المثلّث BAC"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المستقيمان (DE) و (AC) متوازيان ، والنقطة D من [BA] والنقطة E من [BC] ، فنحن في وضعية طاليس في المثلّث BAC ورأسها B : المثلّث الصغير BDE والمثلّث الكبير BAC. وتعطي النظرية BD/BA = BE/BC = DE/AC ، ومنها BE/BC = DE/AC ✓. الخطأ الشائع: تطبيق النظرية لمجرّد أنّ D و E على ضلعين من المثلّث ، دون التوازي الذي هو شرطها ؛ أو استعمال النظرية العكسية ، وهي تنطلق من تساوي النسب لتثبت التوازي ، بينما التوازي هنا معطًى ونريد منه تساوي النسب.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "في التصميم نفسه ، الأطوال بالصنتمتر هي :\nBC = 6 ، DE = 2 ، BE = 1,5\nونعلم أنّ المساواة التالية صحيحة :\nBE/BC = DE/AC\nما المساواة التي نحصل عليها بتعويض الأطوال المعلومة ؟\n<svg viewBox=\"0 0 330 262\"><title>تصميم حيّ سكني يقطعه نهر : المنازل A و B و C و D و E حيث A و D و B على استقامة واحدة وكذلك B و E و C و (DE) ∥ (AC)</title><path d=\"M14 96 Q52 82 92 96 T170 96 T248 96 T306 96 L306 124 Q268 138 228 124 T150 124 T72 124 T14 124 Z\" fill=\"#93c5fd\" fill-opacity=\"0.55\" stroke=\"#60a5fa\" stroke-width=\"1.6\"/><path d=\"M50 214 L182 38 L182 214 Z\" fill=\"#0f6e56\" fill-opacity=\"0.05\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M83 170 L83 214\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"214\" r=\"4.4\"/><circle cx=\"182\" cy=\"214\" r=\"4.4\"/><circle cx=\"182\" cy=\"38\" r=\"4.4\"/></g><g fill=\"#0f6e56\"><circle cx=\"83\" cy=\"170\" r=\"4.4\"/><circle cx=\"83\" cy=\"214\" r=\"4.4\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"184\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"38\" y=\"232\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"194\" y=\"232\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"68\" y=\"166\" text-anchor=\"middle\" fill=\"#0f6e56\">D</text><text x=\"84\" y=\"234\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text></g><text x=\"252\" y=\"114\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\" direction=\"rtl\">نهر</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,5/6 = 2/AC"
+        },
+        {
+          "id": "b",
+          "text": "1,5/6 = AC/2",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "c",
+          "text": "1,5/4,5 = 2/AC",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "d",
+          "text": "6 − 1,5 = AC − 2",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نعوّض في المساواة BE/BC = DE/AC القيم BE = 1,5 و BC = 6 و DE = 2 ، فنجد 1,5/6 = 2/AC ✓ ، ويبقى المجهول AC في المقام. الخطأ الشائع: قلب إحدى النسبتين فنكتب 1,5/6 = AC/2 ؛ أو قسمة BE على القطعة المتبقّية EC = 6 − 1,5 = 4,5 بدل BC ، أي مزج نسبة جزء على جزء بنسبة جزء على كلّ ، فنكتب 1,5/4,5 = 2/AC ؛ أو مقارنة الفروق بدل النسب فنكتب 6 − 1,5 = AC − 2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "الأطوال المعلومة بالصنتمتر : BC = 6 و DE = 2 و BE = 1,5 ، ومن نظرية طاليس لدينا :\nBE/BC = DE/AC\nما طول AC بالصنتمتر ؟\n<svg viewBox=\"0 0 330 262\"><title>تصميم حيّ سكني يقطعه نهر : المنازل A و B و C و D و E حيث A و D و B على استقامة واحدة وكذلك B و E و C و (DE) ∥ (AC)</title><path d=\"M14 96 Q52 82 92 96 T170 96 T248 96 T306 96 L306 124 Q268 138 228 124 T150 124 T72 124 T14 124 Z\" fill=\"#93c5fd\" fill-opacity=\"0.55\" stroke=\"#60a5fa\" stroke-width=\"1.6\"/><path d=\"M50 214 L182 38 L182 214 Z\" fill=\"#0f6e56\" fill-opacity=\"0.05\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M83 170 L83 214\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"214\" r=\"4.4\"/><circle cx=\"182\" cy=\"214\" r=\"4.4\"/><circle cx=\"182\" cy=\"38\" r=\"4.4\"/></g><g fill=\"#0f6e56\"><circle cx=\"83\" cy=\"170\" r=\"4.4\"/><circle cx=\"83\" cy=\"214\" r=\"4.4\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"184\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"38\" y=\"232\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"194\" y=\"232\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"68\" y=\"166\" text-anchor=\"middle\" fill=\"#0f6e56\">D</text><text x=\"84\" y=\"234\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text></g><text x=\"252\" y=\"114\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\" direction=\"rtl\">نهر</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "c",
+          "text": "4,5",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "d",
+          "text": "0,5",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "من BE/BC = DE/AC نجد 1,5/6 = 2/AC ، وبالضرب التقاطعي : 1,5 × AC = 2 × 6 = 12 ، ومنه AC = 12 ÷ 1,5 = 8 cm ✓. التحقّق: 1,5/6 = 0,25 و 2/8 = 0,25 ✓. الخطأ الشائع: قلب إحدى النسبتين فنجد AC = 1,5 × 2 ÷ 6 = 0,5 ؛ أو مزج نسبة جزء على جزء بنسبة جزء على كلّ ، أي 1,5/4,5 = 2/AC ، فنجد AC = 6 ؛ أو كتابة AC/BC = BE/DE فنجد AC = 6 × 1,5 ÷ 2 = 4,5.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.alg.equations-premier-degre"
+      ]
+    },
+    {
+      "prompt": "على التصميم AC = 8 cm ، والسلّم 1/1000 يعني أنّ كلّ 1 cm في التصميم يمثّل 1000 cm في الواقع. ما البعد الحقيقي بين المنزلين A و C بالصنتمتر ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,008",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "800",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
+        {
+          "id": "d",
+          "text": "8000"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "كلّ 1 cm في التصميم يمثّل 1000 cm في الواقع ، فنضرب طول التصميم في 1000 : 8 × 1000 = 8000 cm ✓. الخطأ الشائع: التوقّف عند طول التصميم 8 دون تغيير السلّم ؛ أو القسمة على 1000 بدل الضرب فنجد 0,008 ؛ أو ضرب 8 في 100 فقط فنجد 800.",
+      "difficulty": 2,
+      "competencies": [
+        "math.prop.situations"
+      ]
+    },
+    {
+      "prompt": "البعد الحقيقي بين المنزلين A و C هو 8000 cm ، فكم يساوي بالمتر ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "8",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
+        {
+          "id": "b",
+          "text": "80"
+        },
+        {
+          "id": "c",
+          "text": "800",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
+        {
+          "id": "d",
+          "text": "8000"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المتر الواحد يساوي 100 cm ، فنقسم على 100 : 8000 ÷ 100 = 80 m ✓ ، أي أنّ المنزلين A و C يبعدان 80 مترًا أحدهما عن الآخر. الخطأ الشائع: ترك العدد كما هو دون تحويل الوحدة فنجد 8000 ؛ أو القسمة على 10 فنجد 800 ؛ أو القسمة على 1000 كأنّنا نحوّل من الملّيمتر فنجد 8.",
+      "difficulty": 2,
+      "competencies": [
+        "math.prop.situations"
+      ]
+    }
+  ]
+}

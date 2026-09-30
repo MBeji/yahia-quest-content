@@ -86,3 +86,11 @@ fichier** : l'orchestrateur renvoie les correctifs à l'auteur.
   graduée, gabarit « cercle × flèche ». **Vocabulaire** absent du cours (« تظليل » pour une demi-droite).
 - **Étiquette** dont le libellé cite une notion hors programme (f(x) en 9ᵉ) ou dont la compétence est
   d'un chapitre hors programme ; propose l'étiquette existante ou l'élargissement de son libellé.
+- **Autonomie** : un énoncé qui renvoie à une autre question (« بنفس الطريقة », « السؤال السابق »)
+  ou qui utilise une valeur donnée ailleurs est un défaut MAJEUR : le donjon tire les questions au
+  hasard (`ORDER BY random()`), sans tri par difficulté. Une technique qu'aucun cours n'enseigne doit
+  être donnée dans l'énoncé de chaque question qui l'emploie.
+- **Marqueur de forme** : seule la clé se justifie par un patron de phrase que les distracteurs
+  n'ont pas ; distracteurs tous multiples d'un même nombre que la clé ne partage pas.
+- **Débordement** : les listes d'intervalles passent à la ligne depuis le correctif du moteur
+  (les espaces de bord d'une formule sont de la prose) ; ne demande plus une classe par ligne.
