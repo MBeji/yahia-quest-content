@@ -37,30 +37,27 @@
       ]
     },
     {
-      "prompt": "بعد النشر والاختزال ، أيّ كتابة تساوي العبارة الآتية ؟\n(x + 1)² − 9",
+      "prompt": "نضع :\nA = x² + 2x − 8\nحيث x عدد حقيقي ، فأيّ كتابة من الكتابات الآتية تعبّر عن العبارة A نفسها ؟",
       "options": [
         {
           "id": "a",
-          "text": "x² − 8",
-          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+          "text": "(x − 1)² − 9"
         },
         {
           "id": "b",
-          "text": "x² − 2x − 8",
-          "misconceptionTag": "math.alg.carre-somme-signe-double-produit"
+          "text": "(x + 1)² − 8"
         },
         {
           "id": "c",
-          "text": "x² + x − 8",
-          "misconceptionTag": "math.alg.double-produit-sans-facteur-2"
+          "text": "(x − 1)² − 8"
         },
         {
           "id": "d",
-          "text": "x² + 2x − 8"
+          "text": "(x + 1)² − 9"
         }
       ],
       "correctOption": "d",
-      "explanation": "نطبّق متطابقة مربّع المجموع (a + b)² = a² + 2ab + b² مع a = x و b = 1 : (x + 1)² = x² + 2x + 1 ، ثمّ نطرح 9 : x² + 2x + 1 − 9 = x² + 2x − 8 ✓ ، وهذه هي العبارة A التي بدأنا بها ، أي A = (x + 1)² − 9. الخطأ الشائع: إسقاط الجداء المضاعف فنجد x² + 1 − 9 = x² − 8 ؛ أو كتابته دون العامل 2 فنجد x² + x − 8 ؛ أو إعطاؤه الإشارة − فنجد x² − 2x − 8.",
+      "explanation": "نطبّق متطابقة مربّع المجموع (a + b)² = a² + 2ab + b² مع a = x و b = 1 : (x + 1)² = x² + 2x + 1 ، فيكون (x + 1)² − 9 = x² + 2x + 1 − 9 = x² + 2x − 8 ✓ ، أي A = (x + 1)² − 9. أمّا الكتابات الأخرى فتنشر إلى (x − 1)² − 9 = x² − 2x − 8 و (x + 1)² − 8 = x² + 2x − 7 و (x − 1)² − 8 = x² − 2x − 7 ، وليس أيّ منها A. الخطأ الشائع: إعطاء الجداء المضاعف 2x الإشارة المعاكسة فنكتب (x − 1)² ؛ أو نسيان أنّ (x + 1)² يحمل الحدّ +1 الذي يجب طرحه ، فنكتب (x + 1)² − 8 ؛ أو جمع الخطأين.",
       "difficulty": 2,
       "competencies": [
         "math.alg.identites-remarquables",
@@ -80,15 +77,15 @@
         },
         {
           "id": "c",
-          "text": "(x − 2)²",
-          "misconceptionTag": "math.alg.difference-carres-confondue"
+          "text": "(x − 2)(x + 4)"
         },
         {
           "id": "d",
-          "text": "(x − 2)(x + 4)"
+          "text": "(x − 2)²",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
         }
       ],
-      "correctOption": "d",
+      "correctOption": "c",
       "explanation": "نلاحظ أنّ 9 = 3² ، فالعبارة فرق مربّعين : a² − b² = (a − b)(a + b) مع a = x + 1 و b = 3 ، أي A = (x + 1 − 3)(x + 1 + 3) = (x − 2)(x + 4) ✓. التحقّق بالنشر : (x − 2)(x + 4) = x² + 4x − 2x − 8 = x² + 2x − 8 ✓. الخطأ الشائع: كتابة مربّع بدل جداء الفرق في المجموع فنجد (x − 2)² ؛ أو أخذ b = 9 بدل جذره 3 فنجد (x + 1 − 9)(x + 1 + 9) = (x − 8)(x + 10) ؛ أو الخلط بين إشارتي العاملين فنجد (x − 4)(x + 2) الذي ينشر إلى x² − 2x − 8.",
       "difficulty": 2,
       "competencies": [
@@ -101,12 +98,12 @@
       "options": [
         {
           "id": "a",
-          "text": "{−4 ; 2}"
+          "text": "{−2 ; 4}",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
         },
         {
           "id": "b",
-          "text": "{−2 ; 4}",
-          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+          "text": "{−4 ; 2}"
         },
         {
           "id": "c",
@@ -118,7 +115,7 @@
           "misconceptionTag": "math.alg.produit-nul-et-au-lieu-de-ou"
         }
       ],
-      "correctOption": "a",
+      "correctOption": "b",
       "explanation": "جداء عاملين معدوم إذا انعدم أحد العاملين على الأقلّ : x − 2 = 0 أي x = 2 ، أو x + 4 = 0 أي x = −4 ، فمجموعة الحلول {−4 ; 2} ✓. التحقّق: (2 − 2)(2 + 4) = 0 × 6 = 0 و (−4 − 2)(−4 + 4) = (−6) × 0 = 0 ✓. الخطأ الشائع: قراءة الجذر بالإشارة التي في القوس فنجد {−2 ; 4} ؛ أو اشتراط انعدام العاملين معًا فنحكم بأنّه لا حلّ ؛ أو الاكتفاء بالعامل الأوّل فنجد {2}.",
       "difficulty": 2,
       "competencies": [
@@ -159,26 +156,25 @@
       "options": [
         {
           "id": "a",
-          "text": "x² − 6 = 0",
-          "misconceptionTag": "math.alg.distribution-partielle"
-        },
-        {
-          "id": "b",
-          "text": "x² + 2x − 8 = 0"
-        },
-        {
-          "id": "c",
           "text": "x² + 2x − 6 = 0",
           "misconceptionTag": "math.num.operation-inverse-appliquee"
         },
         {
-          "id": "d",
+          "id": "b",
+          "text": "x² + 2x + 6 = 0"
+        },
+        {
+          "id": "c",
           "text": "x² + 2x + 8 = 0",
           "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "d",
+          "text": "x² + 2x − 8 = 0"
         }
       ],
-      "correctOption": "b",
-      "explanation": "بالضرب التقاطعي : x × (x + 2) = 4 × 2 ، أي x² + 2x = 8 ، ثمّ ننقل 8 فتتغيّر إشارته : x² + 2x − 8 = 0 ✓. الخطأ الشائع: نقل 8 دون تغيير إشارته فنجد x² + 2x + 8 = 0 ؛ أو ضرب x في الحدّ الأوّل وحده من القوس فنجد x² + 2 = 8 أي x² − 6 = 0 ؛ أو جمع 4 و 2 بدل ضربهما فنجد x² + 2x = 6 أي x² + 2x − 6 = 0.",
+      "correctOption": "d",
+      "explanation": "بالضرب التقاطعي : x × (x + 2) = 4 × 2 ، أي x² + 2x = 8 ، ثمّ ننقل 8 فتتغيّر إشارته : x² + 2x − 8 = 0 ✓. الخطأ الشائع: نقل 8 دون تغيير إشارته فنجد x² + 2x + 8 = 0 ؛ أو جمع 4 و 2 بدل ضربهما فنجد x² + 2x = 6 أي x² + 2x − 6 = 0 ؛ أو جمع الخطأين فنجد x² + 2x + 6 = 0.",
       "difficulty": 2,
       "competencies": [
         "math.alg.mise-en-equation",
@@ -220,25 +216,25 @@
       "options": [
         {
           "id": "a",
-          "text": "2",
-          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+          "text": "16",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
         },
         {
           "id": "b",
-          "text": "8"
-        },
-        {
-          "id": "c",
           "text": "12",
           "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
         },
         {
+          "id": "c",
+          "text": "8"
+        },
+        {
           "id": "d",
-          "text": "16",
-          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+          "text": "2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
         }
       ],
-      "correctOption": "b",
+      "correctOption": "c",
       "explanation": "المثلّث AEF قائم في E ، فمساحته نصف جداء ضلعيه القائمين : (AE × EF)/2. مع x = 2 نجد EF = x + 2 = 4 ، فالمساحة (4 × 4)/2 = 8 cm² ✓. الخطأ الشائع: نسيان القسمة على 2 فنجد 4 × 4 = 16 ؛ أو حساب مساحة مثلّث آخر من الشكل : ABC ضلعاه القائمان AB = 2 و BC = 2 فمساحته (2 × 2)/2 = 2 ، و BEF ضلعاه القائمان BE = 2 + 4 = 6 و EF = 4 فمساحته (6 × 4)/2 = 12.",
       "difficulty": 3,
       "competencies": [

@@ -1,5 +1,5 @@
 {
-  "title": "🏛️ مناظرة 2021 · التمرين 4 ⭐⭐⭐: عبارة من الدرجة الثانية وتعميلها — مساحتا مثلّثين متقايسي الأضلاع ومجال الوسيط",
+  "title": "🏛️ مناظرة 2021 · التمرين 4 ⭐⭐⭐: عبارة من الدرجة الثانية وتعميلها — نقطة على قطعة ومساحة المثلّث المتقايس الأضلاع",
   "difficulty": 3,
   "mode": "boss",
   "xpReward": 120,
@@ -38,29 +38,27 @@
       ]
     },
     {
-      "prompt": "ننشر ونبسّط الجداء التالي حيث x عدد حقيقي:\n(3x − 10)(x − 10)\nما الناتج ؟",
+      "prompt": "نريد كتابة العبارة التالية على شكل جداء عاملين من الدرجة الأولى:\nE = 3x² − 40x + 100\nأيّ جداء يساويها لكلّ عدد حقيقي x ؟",
       "options": [
         {
           "id": "a",
-          "text": "3x² − 40x + 100"
+          "text": "(3x − 10)(x − 10)"
         },
         {
           "id": "b",
-          "text": "3x² − 40x − 100",
-          "misconceptionTag": "math.int.produit-signes-negatifs"
+          "text": "(3x − 10)(x + 10)"
         },
         {
           "id": "c",
-          "text": "3x² − 30x − 10",
-          "misconceptionTag": "math.alg.distribution-partielle"
+          "text": "(3x + 10)(x − 10)"
         },
         {
           "id": "d",
-          "text": "3x² − 30x + 100"
+          "text": "(3x + 10)(x + 10)"
         }
       ],
       "correctOption": "a",
-      "explanation": "(3x − 10)(x − 10) = 3x × x + 3x × (−10) + (−10) × x + (−10) × (−10) = 3x² − 30x − 10x + 100 = 3x² − 40x + 100 ✓. الخطأ الشائع: اعتبار (−10) × (−10) = −100 ؛ أو ضرب الحدّ الأوّل 3x وحده في القوس الثاني ثمّ إضافة −10 فنجد 3x² − 30x − 10 ؛ أو نسيان أحد الجداءين المتقاطعين فنجد 3x² − 30x + 100.",
+      "explanation": "ننشر كلّ جداء ونقارنه بـ E: (3x − 10)(x − 10) = 3x² − 30x − 10x + 100 = 3x² − 40x + 100 ✓. أمّا (3x − 10)(x + 10) = 3x² + 20x − 100 و (3x + 10)(x − 10) = 3x² − 20x − 100 و (3x + 10)(x + 10) = 3x² + 40x + 100 فلا تساوي E. الخطأ الشائع: الخطأ في إشارة العدد داخل أحد العاملين ، ويكشفه النشر لأنّ الحدّ الأوسط يجب أن يكون −40x والحدّ الثابت 100.",
       "difficulty": 2,
       "competencies": [
         "math.alg.developpement",
@@ -81,8 +79,8 @@
         },
         {
           "id": "c",
-          "text": "{10}",
-          "misconceptionTag": "math.alg.coefficient-non-divise"
+          "text": "{10/3 ; −10}",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
         },
         {
           "id": "d",
@@ -91,7 +89,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "جداء عاملين ينعدم إذا انعدم أحدهما على الأقلّ: إمّا 3x − 10 = 0 أي 3x = 10 ومنه x = 10/3 ، وإمّا x − 10 = 0 ومنه x = 10. إذن المجموعة هي {10/3 ; 10} ✓. الخطأ الشائع: قراءة الجذرين بالإشارة الظاهرة في القوسين فنجد {−10/3 ; −10} ؛ أو التوقّف عند 3x = 10 دون القسمة على 3 فنجد x = 10 ومنه {10} ؛ أو قلب الكسر عند القسمة ، أي كتابة 3/10 بدل 10/3 ، فنجد x = 3/10.",
+      "explanation": "جداء عاملين ينعدم إذا انعدم أحدهما على الأقلّ: إمّا 3x − 10 = 0 أي 3x = 10 ومنه x = 10/3 ، وإمّا x − 10 = 0 ومنه x = 10. إذن المجموعة هي {10/3 ; 10} ✓. الخطأ الشائع: قراءة الجذرين بالإشارة الظاهرة في القوسين فنجد {−10/3 ; −10} ؛ أو قراءة جذر العامل x − 10 وحده بإشارته الظاهرة فنجد {10/3 ; −10} ؛ أو قلب الكسر عند القسمة ، أي كتابة 3/10 بدل 10/3 ، فنجد x = 3/10.",
       "difficulty": 2,
       "competencies": [
         "math.alg.equations-produit",
@@ -99,7 +97,7 @@
       ]
     },
     {
-      "prompt": "قطعة [AB] طولها 5 cm ، والنقطة M من [AB] تخالف A و B ، والمثلّث MAI متقايس الأضلاع ، ونصف المستقيم [By) يحقّق ∠ABy = 60° ، والنقطة J هي تقاطع (IM) و [By) ، ونذكّر أنّ كلّ زاويتين متقابلتين بالرأس متساويتان\nما الوصف الأدقّ للمثلّث MBJ ؟\n<svg viewBox=\"0 0 340 296\"><title>المثلث MAI متقايس الأضلاع والنقطة J على المستقيم (IM)</title><polygon points=\"34,118 134,118 84,31.4\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M134 118 L284 118\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polygon points=\"134,118 284,118 209,247.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M84 31.4 L209 247.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M284 118 L192.5 276.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M84 112.5 L84 123.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M104.2 77.4 L113.8 71.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M63.8 77.4 L54.2 71.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M258 118 L258.1 119.9 L258.3 121.9 L258.7 123.8 L259.2 125.7 L259.8 127.5 L260.6 129.3 L261.5 131 L262.5 132.6 L263.7 134.2 L264.9 135.7 L266.3 137.1 L267.8 138.3 L269.4 139.5 L271 140.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"118\" r=\"3.8\"/><circle cx=\"134\" cy=\"118\" r=\"3.8\"/><circle cx=\"284\" cy=\"118\" r=\"3.8\"/><circle cx=\"84\" cy=\"31.4\" r=\"3.8\"/><circle cx=\"209\" cy=\"247.9\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"238\" y=\"143\" text-anchor=\"middle\" fill=\"#0f172a\">60°</text><text x=\"23\" y=\"135\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"136\" y=\"108\" text-anchor=\"middle\" fill=\"#0f172a\">M</text><text x=\"296\" y=\"123\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"84\" y=\"20.4\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"222\" y=\"259.9\" text-anchor=\"middle\" fill=\"#0f172a\">J</text><text x=\"180.5\" y=\"284.5\" text-anchor=\"middle\" fill=\"#0f172a\">y</text></g></svg>",
+      "prompt": "قطعة [AB] طولها 5 cm ، والنقطة M من [AB] تخالف A و B ، والمثلّث MAI متقايس الأضلاع ، ونصف المستقيم [By) يحقّق (∠ABy = 60°) ، والنقطة J هي تقاطع (IM) و [By) ، ونذكّر أنّ كلّ زاويتين متقابلتين بالرأس متساويتان\nما الوصف الأدقّ للمثلّث MBJ ؟\n<svg viewBox=\"0 0 340 296\"><title>المثلث MAI متقايس الأضلاع والنقطة J على المستقيم (IM)</title><polygon points=\"34,118 134,118 84,31.4\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M134 118 L284 118\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polygon points=\"134,118 284,118 209,247.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M84 31.4 L209 247.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M284 118 L192.5 276.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M84 112.5 L84 123.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M104.2 77.4 L113.8 71.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M63.8 77.4 L54.2 71.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M258 118 L258.1 119.9 L258.3 121.9 L258.7 123.8 L259.2 125.7 L259.8 127.5 L260.6 129.3 L261.5 131 L262.5 132.6 L263.7 134.2 L264.9 135.7 L266.3 137.1 L267.8 138.3 L269.4 139.5 L271 140.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"118\" r=\"3.8\"/><circle cx=\"134\" cy=\"118\" r=\"3.8\"/><circle cx=\"284\" cy=\"118\" r=\"3.8\"/><circle cx=\"84\" cy=\"31.4\" r=\"3.8\"/><circle cx=\"209\" cy=\"247.9\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"238\" y=\"143\" text-anchor=\"middle\" fill=\"#0f172a\">60°</text><text x=\"23\" y=\"135\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"136\" y=\"108\" text-anchor=\"middle\" fill=\"#0f172a\">M</text><text x=\"296\" y=\"123\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"84\" y=\"20.4\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"222\" y=\"259.9\" text-anchor=\"middle\" fill=\"#0f172a\">J</text><text x=\"180.5\" y=\"284.5\" text-anchor=\"middle\" fill=\"#0f172a\">y</text></g></svg>",
       "options": [
         {
           "id": "a",
@@ -121,7 +119,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "النقاط A و M و B على استقامة واحدة وI و M و J على استقامة واحدة ، فالزاويتان AMI وBMJ متقابلتان بالرأس ، ومنه ∠BMJ = ∠AMI = 60° لأنّ MAI متقايس الأضلاع. وعند B لدينا ∠MBJ = ∠ABy = 60° لأنّ M على [BA] وJ على [By). فللمثلّث MBJ زاويتان قياس كلّ منهما 60° ، وزاويته الثالثة 180° − 60° − 60° = 60° ، فأضلاعه الثلاثة متساوية ✓. الخطأ الشائع: الاكتفاء بمتقايس الضلعين ، وهو وصف صحيح لكنّه ليس الأدقّ ؛ أو الظنّ بوجود زاوية قائمة عند M لأنّ المستقيمين (AB) و (IJ) يتقاطعان ، والتقاطع وحده لا يعني التعامد.",
+      "explanation": "النقاط A و M و B على استقامة واحدة وI و M و J على استقامة واحدة ، فالزاويتان AMI وBMJ متقابلتان بالرأس ، ومنه (∠BMJ = ∠AMI = 60°) لأنّ MAI متقايس الأضلاع. وعند B لدينا (∠MBJ = ∠ABy = 60°) لأنّ M على [BA] وJ على [By). فللمثلّث MBJ زاويتان قياس كلّ منهما 60° ، وزاويته الثالثة 180° − 60° − 60° = 60° ، فأضلاعه الثلاثة متساوية ✓. الخطأ الشائع: الاكتفاء بمتقايس الضلعين ، وهو وصف صحيح لكنّه ليس الأدقّ ؛ أو الظنّ بوجود زاوية قائمة عند M لأنّ المستقيمين (AB) و (IJ) يتقاطعان ، والتقاطع وحده لا يعني التعامد.",
       "difficulty": 2,
       "competencies": [
         "math.geo.triangles-base",
@@ -133,7 +131,7 @@
       "options": [
         {
           "id": "a",
-          "text": "(√3/4)a"
+          "text": "(√5/2)a²"
         },
         {
           "id": "b",
@@ -151,7 +149,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "نرسم الارتفاع الصادر من I ، وهو يقطع [MA] في منتصفها لأنّ المثلّث متقايس الأضلاع. الارتفاع h ضلع قائم في مثلّث قائم وتره a وضلعه القائم الآخر a/2 ، فـ h² = a² − (a/2)² = 3a²/4 ومنه h = (√3/2)a. المساحة S₁ = (1/2) × a × (√3/2)a = (√3/4)a² ✓. الخطأ الشائع: نسيان القسمة على 2 في مساحة المثلّث فنجد a × (√3/2)a = (√3/2)a² ؛ أو جمع المربّعين بدل طرحهما كأنّ الضلع a ضلع قائم فنجد h² = a² + a²/4 = 5a²/4 ثمّ (√5/4)a² ؛ أو نسيان تربيع a في النتيجة فنجد (√3/4)a.",
+      "explanation": "نرسم الارتفاع الصادر من I ، وهو يقطع [MA] في منتصفها لأنّ المثلّث متقايس الأضلاع. الارتفاع h ضلع قائم في مثلّث قائم وتره a وضلعه القائم الآخر a/2 ، فـ h² = a² − (a/2)² = 3a²/4 ومنه h = (√3/2)a. المساحة S₁ = (1/2) × a × (√3/2)a = (√3/4)a² ✓. الخطأ الشائع: نسيان القسمة على 2 في مساحة المثلّث فنجد a × (√3/2)a = (√3/2)a² ؛ أو جمع المربّعين بدل طرحهما كأنّ الضلع a ضلع قائم فنجد h² = a² + a²/4 = 5a²/4 ثمّ (√5/4)a².",
       "difficulty": 2,
       "competencies": [
         "math.mes.aires",
@@ -172,8 +170,7 @@
         },
         {
           "id": "c",
-          "text": "(√3/4)a²",
-          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+          "text": "(√3/4)(5 + a)"
         },
         {
           "id": "d",
@@ -181,7 +178,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "المثلّث MBJ متقايس الأضلاع وطول ضلعه MB = AB − AM = 5 − a لأنّ M بين A و B. ومساحة مثلّث متقايس الأضلاع طول ضلعه c هي (√3/4)c² ، كما في الصيغة المعطاة لـ S₁. إذن S₂ = (√3/4)(5 − a)² ✓. الخطأ الشائع: إعطاء S₁ نفسها ، وهي مساحة المثلّث MAI لا MBJ ؛ أو جمع الطولين بدل طرحهما فنجد MB = 5 + a ؛ أو نسيان تربيع الضلع فنجد (√3/4)(5 − a).",
+      "explanation": "المثلّث MBJ متقايس الأضلاع وطول ضلعه MB = AB − AM = 5 − a لأنّ M بين A و B. ومساحة مثلّث متقايس الأضلاع طول ضلعه c هي (√3/4)c² ، كما في الصيغة المعطاة لـ S₁. إذن S₂ = (√3/4)(5 − a)² ✓. الخطأ الشائع: جمع الطولين بدل طرحهما فنجد MB = 5 + a ؛ أو نسيان تربيع الضلع فنجد (√3/4)(5 − a).",
       "difficulty": 2,
       "competencies": [
         "math.mes.aires",
@@ -198,8 +195,7 @@
         },
         {
           "id": "b",
-          "text": "(√3/4)(15a² − 160a + 400)",
-          "misconceptionTag": "math.num.exposant-porte-sur-le-coefficient"
+          "text": "(√3/4)(−5a² + 100)"
         },
         {
           "id": "c",
@@ -212,7 +208,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "4S₂ − S₁ = (√3/4)[4(5 − a)² − a²]. ننشر (5 − a)² = 25 − 10a + a² ، فـ 4(5 − a)² = 100 − 40a + 4a² ، ثمّ نطرح a²: 100 − 40a + 3a². إذن 4S₂ − S₁ = (√3/4)(3a² − 40a + 100) ✓. الخطأ الشائع: نسيان الجداء المضاعف في (5 − a)² فنجد 25 + a² ثمّ 3a² + 100 ؛ أو جعل الحدّ الأخير سالبًا فنجد 25 − 10a − a² ثمّ −5a² − 40a + 100 ؛ أو إدخال المعامل 4 في المربّع فنجد (4(5 − a))² = 16(5 − a)² ثمّ 15a² − 160a + 400.",
+      "explanation": "4S₂ − S₁ = (√3/4)[4(5 − a)² − a²]. ننشر (5 − a)² = 25 − 10a + a² ، فـ 4(5 − a)² = 100 − 40a + 4a² ، ثمّ نطرح a²: 100 − 40a + 3a². إذن 4S₂ − S₁ = (√3/4)(3a² − 40a + 100) ✓. الخطأ الشائع: نسيان الجداء المضاعف في (5 − a)² فنجد (5 − a)² = 25 + a² ثمّ 3a² + 100 ؛ أو جعل الحدّ الأخير سالبًا فنجد (5 − a)² = 25 − 10a − a² ثمّ −5a² − 40a + 100.",
       "difficulty": 3,
       "competencies": [
         "math.alg.identites-remarquables",
@@ -220,7 +216,7 @@
       ]
     },
     {
-      "prompt": "AB = 5 cm ، والنقطة M من [AB] حيث AM = a مع 0 < a < 5 ، ومساحتا المثلّثين المتقايسي الأضلاع MAI وMBJ هما S₁ و S₂ على الترتيب ، ونعلم أنّ:\n4S₂ − S₁ = (√3/4)(3a² − 40a + 100)\n3a² − 40a + 100 = (3a − 10)(a − 10)\nوأنّ S₂/S₁ = 1/4\nما قيمة a ؟",
+      "prompt": "AB = 5 cm ، والنقطة M من [AB] حيث AM = a مع 0 < a < 5 ، ومساحتا المثلّثين المتقايسي الأضلاع MAI وMBJ هما S₁ و S₂ على الترتيب ، ونعلم أنّ:\n4S₂ − S₁ = (√3/4)(3a² − 40a + 100)\n3a² − 40a + 100 = (3a − 10)(a − 10)\nوأنّ S₂/S₁ = 1/4\nما قيمة a أو قيمها الممكنة ؟",
       "options": [
         {
           "id": "a",
@@ -232,7 +228,8 @@
         },
         {
           "id": "c",
-          "text": "5/3"
+          "text": "5/3",
+          "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
         },
         {
           "id": "d",

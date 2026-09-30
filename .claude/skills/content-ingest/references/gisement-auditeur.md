@@ -65,9 +65,11 @@ fichier** : l'orchestrateur renvoie les correctifs à l'auteur.
 - **Doublon entre annales voisines** : deux sujets consécutifs recyclent les mêmes données ; compare
   aussi avec les missions des AUTRES chapitres de la même série, pas seulement celles du chapitre
   audité.
-- **Rendu arabe** : parenthèse d'unité collée à un nombre, point final après un intervalle ou une
-  formule ; passe les chaînes suspectes dans `isolateLtrRuns` (`src/shared/lib/bidi.ts`) avant de
-  conclure (un point après « b/a » seul, sans √, parenthèse ni inégalité, n'est PAS isolé).
+- **Rendu arabe** : parenthèse d'unité collée à un nombre ; passe les chaînes suspectes dans
+  `isolateLtrRuns` (`src/shared/lib/bidi.ts`), rends-les en Chromium `dir=rtl` et compare l'ordre
+  affiché au texte source. Depuis arena#1138, la ponctuation `. , ; :` et les parenthèses de prose
+  qui bordent une formule restent dans la prose : ce ne sont plus des défauts (un point après un
+  chiffre ou après « b/a » n'a jamais été un défaut).
 - **Une donnée retirée ou ajoutée par l'auteur rend un distracteur vrai** (« −3 ≤ A ≤ 5 » devient un
   encadrement vrai sans « مداه 4 ») : recalcule CHAQUE option après toute adaptation d'énoncé.
 - **Un rappel, une règle ou une réécriture dans l'énoncé qui désigne la clé** (« inverses ⟺ produit 1 »
@@ -75,10 +77,11 @@ fichier** : l'orchestrateur renvoie les correctifs à l'auteur.
   méthode » qui redemande la valeur d'une question antérieure** : la clé sort par l'ordre d'émission.
 - **Vote terme à terme** sur les distracteurs qui ne changent qu'un terme de la clé : exige un plan
   2×2 (une option à deux erreurs, muette).
-- **Rendu bidi (plus fin)** : un signe collé à une lettre hors tronçon isolé (« −x + 1 » s'affiche
-  « x + 1− »), un deux-points ou un point collé à un chiffre en fin de phrase, une liste de quatre
-  intervalles ou plus sur une ligne (débordement sur téléphone) ; simule avec `isolateLtrRuns` puis
-  bidi-js et compare le texte affiché au texte source.
+- **Rendu bidi (plus fin)** : depuis arena#1137 à #1139, les formes historiquement brouillées (signe
+  collé à une lettre, formule ouverte par un nombre puis une lettre, « ∠ », ponctuation et parenthèses
+  de bord, liste d'intervalles) sont traitées par le moteur ; simule toujours avec `isolateLtrRuns` /
+  `splitMathRuns` (ou rends en Chromium `dir=rtl`) et signale toute AUTRE chaîne dont l'ordre affiché
+  diffère du texte source.
 - **Explication fausse** : une égalité écrite qui n'en est pas une (« −2x + 4x = 6x »), ou un mécanisme
   d'erreur qui ne produit pas la valeur de l'option. Recalcule chaque égalité de chaque explication.
 - **Multi** : nombre de bonnes réponses déductible (une seule écriture juste par cas) ; énoncé au

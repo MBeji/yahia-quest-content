@@ -80,9 +80,9 @@ manquantes, confirmation de la double résolution, résultat des gates pour tes 
   difficulté, l'ordre d'émission n'est pas toujours celui du fichier).
 - Une longueur ne s'écrit que sur un segment entier, jamais sur un tronçon coupé par un point
   marqué ; pas de marque d'angle droit là où l'angle est à démontrer.
-- Un énoncé ne se termine pas par une formule collée à une ponctuation latine (en arabe, le point
-  s'affiche du mauvais côté) : pose les données sur des lignes de formules seules et finis la
-  phrase par un mot arabe ou par « ؟ ».
+- Les données d'un énoncé se posent sur des lignes de formules seules. Le point, la virgule ou les
+  deux-points qui bordent une formule ne posent plus de problème d'affichage en arabe depuis
+  arena#1138 (mesuré en Chromium `dir=rtl`) : inutile de les contourner.
 - Une ligne de données du genre « حيث: AB = … , BC = … , AC = … » suivie de « المثلّث ABC قائم
   في B » reprend une formule d'énoncé courante : le contrôle anti-copie y voit une plage de 8 mots.
   Varie la tournure (« نعلم أنّ … و … و … »).
@@ -102,9 +102,8 @@ manquantes, confirmation de la double résolution, résultat des gates pour tes 
 - Des sujets voisins recyclent leurs données (la paire 7 ± 4√3 revient en 2011 et en 2012) : deux
   missions de chapitres différents se doublent alors. Change l'angle de la question (déduire une
   relation plutôt que calculer un produit), pas seulement les nombres.
-- Pas de parenthèse d'unité ou de précision collée à un nombre ou à un intervalle, ni de point
-  final après un intervalle ou une formule : écris l'unité en mots avant la donnée et termine la
-  phrase par un mot arabe ou par « ؟ ».
+- Pas de parenthèse d'unité ou de précision collée à un nombre ou à un intervalle : écris l'unité
+  en mots avant la donnée.
 - **Une donnée retirée de l'énoncé officiel peut rendre un distracteur VRAI** : sans « مداه 4 »,
   l'option « −3 ≤ A ≤ 5 » devenait un encadrement vrai (A ∈ [−3 ; 1] ⊂ [−3 ; 5]). Chaque fois que tu
   adaptes un énoncé, recalcule que chaque option reste fausse.
@@ -117,10 +116,10 @@ manquantes, confirmation de la double résolution, résultat des gates pour tes 
   question antérieure livre la clé par l'ordre d'émission : change ce qu'elle demande.
 - **Un énoncé qui redonne l'étape clé** d'une sous-question (la réécriture (x − √2/2)² − (1/2)² avant
   de demander la factorisation) : donne la donnée brute (− 1/4), pas le résultat de l'étape.
-- **Un signe collé à une lettre dans un tronçon latin ordinaire** (« −x + 1 », « −x − 1 ») s'affiche
-  « x + 1− » : mets l'expression dans un tronçon isolé (parenthèse, √, inégalité) ou reformule. Un
-  deux-points ou un point collé à un CHIFFRE en fin de phrase (« … المقام 3: ») se renverse de même :
-  finis par un mot arabe.
+- **Rendu arabe** : depuis arena#1137, #1138 et #1139, le moteur isole tout seul les formules qui
+  s'affichaient à moitié renversées (signe collé à une lettre « −x + 1 », formule qui s'ouvre par un
+  nombre puis une lettre « 25 + k = 9 » ou « 1/b », « ∠ABC ») et garde hors de l'isolat la
+  ponctuation et les parenthèses qui les bordent. Écris les énoncés naturellement, sans contorsion.
 - **Chaque égalité écrite dans une explication est vraie** (« −2x + 4x = 6x » ne l'est pas) et le
   mécanisme décrit doit PRODUIRE la valeur de l'option (« (√2/2)² = 1/4 : oubli de la racine »
   donnerait √2/4, pas 1/4). Recalcule chaque chaîne d'égalités.

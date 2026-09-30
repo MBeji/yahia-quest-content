@@ -1,182 +1,209 @@
 {
-  "lot": "L07",
-  "chapitre": "07-statistiques",
-  "nouvelles": {
-    "math.stat.classe-finissant-au-seuil-comptee": {
-      "competency": "math.stat.effectifs-frequences",
-      "fr": "Tu comptes la classe qui se termine au seuil : « 3 heures ou plus » commence à 3, la classe qui finit à 3 est tout entière en dessous",
-      "en": "You count the class that ends at the threshold: “3 hours or more” starts at 3, the class ending at 3 lies entirely below it",
-      "ar": "تحسب الفئة التي تنتهي عند الحدّ: شرط «3 ساعات أو أكثر» يبدأ عند 3، والفئة التي تنتهي عند 3 تقع كلّها دونه"
-    },
-    "math.stat.classes-concernees-incompletes": {
-      "competency": "math.stat.effectifs-frequences",
-      "fr": "Tu oublies une partie des classes concernées : toutes les classes situées du bon côté du seuil comptent",
-      "en": "You leave out some of the classes concerned: every class on the right side of the threshold counts",
-      "ar": "تنسى بعض الفئات المعنيّة: كلّ الفئات الواقعة في الجهة المطلوبة من الحدّ تُحسب"
-    },
-    "math.stat.cumul-decale-d-une-classe": {
-      "competency": "math.stat.effectifs-frequences",
-      "fr": "Tu décales l'effectif cumulé d'une classe : il compte les valeurs strictement inférieures à sa borne supérieure — ni seulement celles d'avant sa borne inférieure, ni aussi celles de la classe suivante",
-      "en": "You shift the cumulative count by one class: it counts the values strictly below the class's upper bound — not only those below its lower bound, nor those of the next class as well",
-      "ar": "تُزيح التكرار المجمّع بفئة واحدة: هو يعدّ القيم الأصغر قطعًا من الطرف الأكبر للفئة، لا التي تسبق طرفها الأصغر فقط ولا التي تشمل الفئة التالية أيضًا"
-    },
-    "math.stat.mediane-egale-centre-ou-borne-de-la-classe": {
-      "competency": "math.stat.moyenne-mediane",
-      "fr": "Tu donnes le centre ou une borne de la classe médiane au lieu de chercher l'abscisse où l'effectif cumulé atteint N/2",
-      "en": "You give the centre or a bound of the median class instead of finding the abscissa where the cumulative count reaches N/2",
-      "ar": "تعطي مركز الفئة التي ينتمي إليها الوسيط أو أحد طرفيها بدل البحث عن الفاصلة التي يبلغ عندها التكرار المجمّع نصف التكرار الكلّي"
-    },
-    "math.stat.interpolation-mal-posee": {
-      "competency": "math.stat.moyenne-mediane",
-      "fr": "Tu poses mal l'interpolation de la médiane (point de départ, rapport ou largeur de classe) : médiane = borne inférieure + (N/2 − cumulé à cette borne) ÷ effectif de la classe × amplitude",
-      "en": "You set up the median's interpolation wrongly (starting point, ratio or class width): median = lower bound + (N/2 − cumulative at that bound) ÷ class count × class width",
-      "ar": "تُخطئ في حساب الوسيط بالتناسب داخل فئته، سواء في نقطة الانطلاق أو في النسبة أو في عرض الفئة: يُحسب الوسيط بالبدء من الطرف الأصغر للفئة ثمّ إضافة ما ينقص لبلوغ نصف التكرار الكلّي، مقسومًا على تكرار الفئة ومضروبًا في عرضها"
-    }
+ "lot": "L07",
+ "chapitre": "07-statistiques",
+ "nouvelles": {
+  "math.stat.classe-finissant-au-seuil-comptee": {
+   "competency": "math.stat.effectifs-frequences",
+   "fr": "Tu comptes la classe qui se termine au seuil : « 3 heures ou plus » commence à 3, la classe qui finit à 3 est tout entière en dessous",
+   "en": "You count the class that ends at the threshold: “3 hours or more” starts at 3, the class ending at 3 lies entirely below it",
+   "ar": "تحسب الفئة التي تنتهي عند الحدّ: شرط «3 ساعات أو أكثر» يبدأ عند 3، والفئة التي تنتهي عند 3 تقع كلّها دونه"
   },
-  "options": [
-    {
-      "file": "19",
-      "q": 6,
-      "opt": "c",
-      "id": "math.stat.classe-finissant-au-seuil-comptee"
-    },
-    {
-      "file": "19",
-      "q": 7,
-      "opt": "c",
-      "id": "math.stat.classe-finissant-au-seuil-comptee"
-    },
-    {
-      "file": "22",
-      "q": 4,
-      "opt": "b",
-      "id": "math.stat.classe-finissant-au-seuil-comptee"
-    },
-    {
-      "file": "24",
-      "q": 6,
-      "opt": "b",
-      "id": "math.stat.classe-finissant-au-seuil-comptee"
-    },
-    {
-      "file": "18",
-      "q": 6,
-      "opt": "b",
-      "id": "math.stat.classes-concernees-incompletes"
-    },
-    {
-      "file": "21",
-      "q": 6,
-      "opt": "b",
-      "id": "math.stat.classes-concernees-incompletes"
-    },
-    {
-      "file": "22",
-      "q": 4,
-      "opt": "d",
-      "id": "math.stat.classes-concernees-incompletes"
-    },
-    {
-      "file": "23",
-      "q": 5,
-      "opt": "d",
-      "id": "math.stat.classes-concernees-incompletes"
-    },
-    {
-      "file": "24",
-      "q": 6,
-      "opt": "d",
-      "id": "math.stat.classes-concernees-incompletes"
-    },
-    {
-      "file": "21",
-      "q": 5,
-      "opt": "c",
-      "id": "math.stat.cumul-decale-d-une-classe"
-    },
-    {
-      "file": "21",
-      "q": 7,
-      "opt": "b",
-      "id": "math.stat.cumul-decale-d-une-classe"
-    },
-    {
-      "file": "22",
-      "q": 3,
-      "opt": "a",
-      "id": "math.stat.cumul-decale-d-une-classe"
-    },
-    {
-      "file": "23",
-      "q": 4,
-      "opt": "b",
-      "id": "math.stat.cumul-decale-d-une-classe"
-    },
-    {
-      "file": "24",
-      "q": 5,
-      "opt": "a",
-      "id": "math.stat.cumul-decale-d-une-classe"
-    },
-    {
-      "file": "21",
-      "q": 9,
-      "opt": "a",
-      "id": "math.stat.mediane-egale-centre-ou-borne-de-la-classe"
-    },
-    {
-      "file": "22",
-      "q": 8,
-      "opt": "d",
-      "id": "math.stat.mediane-egale-centre-ou-borne-de-la-classe"
-    },
-    {
-      "file": "23",
-      "q": 7,
-      "opt": "d",
-      "id": "math.stat.mediane-egale-centre-ou-borne-de-la-classe"
-    },
-    {
-      "file": "24",
-      "q": 9,
-      "opt": "c",
-      "id": "math.stat.mediane-egale-centre-ou-borne-de-la-classe"
-    },
-    {
-      "file": "21",
-      "q": 9,
-      "opt": "c",
-      "id": "math.stat.interpolation-mal-posee"
-    },
-    {
-      "file": "22",
-      "q": 8,
-      "opt": "a",
-      "id": "math.stat.interpolation-mal-posee"
-    },
-    {
-      "file": "23",
-      "q": 7,
-      "opt": "a",
-      "id": "math.stat.interpolation-mal-posee"
-    },
-    {
-      "file": "24",
-      "q": 8,
-      "opt": "c",
-      "id": "math.stat.interpolation-mal-posee"
-    },
-    {
-      "file": "24",
-      "q": 8,
-      "opt": "d",
-      "id": "math.stat.interpolation-mal-posee"
-    },
-    {
-      "file": "24",
-      "q": 9,
-      "opt": "a",
-      "id": "math.stat.interpolation-mal-posee"
-    }
-  ]
+  "math.stat.classes-concernees-incompletes": {
+   "competency": "math.stat.effectifs-frequences",
+   "fr": "Tu oublies une partie des classes concernées : toutes les classes situées du bon côté du seuil comptent",
+   "en": "You leave out some of the classes concerned: every class on the required side of the threshold counts",
+   "ar": "تنسى بعض الفئات المعنيّة: كلّ الفئات الواقعة في الجهة المطلوبة من الحدّ تُحسب"
+  },
+  "math.stat.cumul-decale-d-une-classe": {
+   "competency": "math.stat.effectifs-frequences",
+   "fr": "Tu décales l'effectif cumulé d'une classe : il compte les valeurs strictement inférieures à sa borne supérieure — ni seulement celles d'avant sa borne inférieure, ni aussi celles de la classe suivante",
+   "en": "You shift the cumulative count by one class: it counts the values strictly below the class's upper bound — neither just those below its lower bound, nor those of the next class as well",
+   "ar": "تُزيح التكرار المجمّع بفئة واحدة: هو يعدّ القيم الأصغر قطعًا من الطرف الأكبر للفئة، لا القيم الأصغر من طرفها الأصغر وحدها، ولا قيم الفئة التالية معها"
+  },
+  "math.stat.mediane-egale-centre-ou-borne-de-la-classe": {
+   "competency": "math.stat.moyenne-mediane",
+   "fr": "Tu donnes le centre ou une borne de la classe médiane au lieu de chercher l'abscisse où l'effectif cumulé atteint N/2",
+   "en": "You give the centre or a bound of the median class instead of finding the abscissa where the cumulative count reaches N/2",
+   "ar": "تعطي مركز الفئة التي ينتمي إليها الوسيط أو أحد طرفيها بدل البحث عن الفاصلة التي يبلغ عندها التكرار المجمّع نصف التكرار الكلّي"
+  },
+  "math.stat.interpolation-mal-posee": {
+   "competency": "math.stat.moyenne-mediane",
+   "fr": "Tu poses mal l'interpolation de la médiane (point de départ, rapport ou largeur de classe) : médiane = borne inférieure + (N/2 − cumulé à cette borne) ÷ effectif de la classe × amplitude",
+   "en": "You set up the median's interpolation wrongly (starting point, ratio or class width): median = lower bound + (N/2 − cumulative at that bound) ÷ class count × class width",
+   "ar": "تُخطئ في حساب الوسيط بالتناسب داخل فئته، سواء في نقطة الانطلاق أو في النسبة أو في عرض الفئة: يُحسب الوسيط بالبدء من الطرف الأصغر للفئة ثمّ إضافة ما ينقص لبلوغ نصف التكرار الكلّي، مقسومًا على تكرار الفئة ومضروبًا في عرضها"
+  }
+ },
+ "options": [
+  {
+   "file": "19",
+   "q": 6,
+   "opt": "c",
+   "id": "math.stat.classe-finissant-au-seuil-comptee"
+  },
+  {
+   "file": "19",
+   "q": 7,
+   "opt": "c",
+   "id": "math.stat.classe-finissant-au-seuil-comptee"
+  },
+  {
+   "file": "22",
+   "q": 4,
+   "opt": "b",
+   "id": "math.stat.classe-finissant-au-seuil-comptee"
+  },
+  {
+   "file": "24",
+   "q": 6,
+   "opt": "b",
+   "id": "math.stat.classe-finissant-au-seuil-comptee"
+  },
+  {
+   "file": "18",
+   "q": 6,
+   "opt": "b",
+   "id": "math.stat.classes-concernees-incompletes"
+  },
+  {
+   "file": "21",
+   "q": 6,
+   "opt": "b",
+   "id": "math.stat.classes-concernees-incompletes"
+  },
+  {
+   "file": "22",
+   "q": 4,
+   "opt": "d",
+   "id": "math.stat.classes-concernees-incompletes"
+  },
+  {
+   "file": "23",
+   "q": 5,
+   "opt": "d",
+   "id": "math.stat.classes-concernees-incompletes"
+  },
+  {
+   "file": "24",
+   "q": 6,
+   "opt": "d",
+   "id": "math.stat.classes-concernees-incompletes"
+  },
+  {
+   "file": "21",
+   "q": 5,
+   "opt": "c",
+   "id": "math.stat.cumul-decale-d-une-classe"
+  },
+  {
+   "file": "21",
+   "q": 7,
+   "opt": "b",
+   "id": "math.stat.cumul-decale-d-une-classe"
+  },
+  {
+   "file": "22",
+   "q": 3,
+   "opt": "a",
+   "id": "math.stat.cumul-decale-d-une-classe"
+  },
+  {
+   "file": "23",
+   "q": 4,
+   "opt": "b",
+   "id": "math.stat.cumul-decale-d-une-classe"
+  },
+  {
+   "file": "24",
+   "q": 5,
+   "opt": "a",
+   "id": "math.stat.cumul-decale-d-une-classe"
+  },
+  {
+   "file": "21",
+   "q": 9,
+   "opt": "a",
+   "id": "math.stat.mediane-egale-centre-ou-borne-de-la-classe"
+  },
+  {
+   "file": "22",
+   "q": 8,
+   "opt": "d",
+   "id": "math.stat.mediane-egale-centre-ou-borne-de-la-classe"
+  },
+  {
+   "file": "23",
+   "q": 7,
+   "opt": "d",
+   "id": "math.stat.mediane-egale-centre-ou-borne-de-la-classe"
+  },
+  {
+   "file": "24",
+   "q": 9,
+   "opt": "c",
+   "id": "math.stat.mediane-egale-centre-ou-borne-de-la-classe"
+  },
+  {
+   "file": "21",
+   "q": 9,
+   "opt": "c",
+   "id": "math.stat.interpolation-mal-posee"
+  },
+  {
+   "file": "22",
+   "q": 8,
+   "opt": "a",
+   "id": "math.stat.interpolation-mal-posee"
+  },
+  {
+   "file": "23",
+   "q": 7,
+   "opt": "a",
+   "id": "math.stat.interpolation-mal-posee"
+  },
+  {
+   "file": "24",
+   "q": 8,
+   "opt": "c",
+   "id": "math.stat.interpolation-mal-posee"
+  },
+  {
+   "file": "24",
+   "q": 8,
+   "opt": "d",
+   "id": "math.stat.interpolation-mal-posee"
+  },
+  {
+   "file": "24",
+   "q": 9,
+   "opt": "a",
+   "id": "math.stat.interpolation-mal-posee"
+  },
+  {
+   "file": "24",
+   "q": 8,
+   "opt": "b",
+   "id": "math.stat.interpolation-mal-posee",
+   "remplace": "math.stat.interpolation-borne-inferieure-oubliee",
+   "texte": "2 + (220 − 120) ÷ (330 − 120)"
+  },
+  {
+   "file": "18",
+   "q": 5,
+   "opt": "d",
+   "id": "math.stat.effectif-cumule-non-cumule"
+  },
+  {
+   "file": "24",
+   "q": 7,
+   "opt": "a",
+   "id": "math.stat.effectif-cumule-non-cumule"
+  }
+ ],
+ "elargir": {
+  "math.stat.effectif-cumule-non-cumule": {
+   "fr": "Tu confonds l'effectif d'une classe (ou d'une valeur) et son effectif cumulé : le cumulé additionne tous les effectifs jusqu'à elle, l'effectif ne compte qu'elle",
+   "en": "You mix up a class's (or a value's) own count with its cumulative count: the cumulative adds up every count up to it, the count covers only itself",
+   "ar": "تخلط بين تكرار الفئة (أو القيمة) وتكرارها المجمّع: المجمّع يجمع كلّ التكرارات إلى غايتها، والتكرار يعدّها وحدها"
+  }
+ }
 }

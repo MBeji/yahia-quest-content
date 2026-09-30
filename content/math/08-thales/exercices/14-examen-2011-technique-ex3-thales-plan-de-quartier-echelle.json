@@ -11,24 +11,24 @@
       "options": [
         {
           "id": "a",
-          "text": "D من [BA] و E من [BC] و (DE) ∥ (AC) ، فنطبّق نظرية طاليس في المثلّث BAC"
-        },
-        {
-          "id": "b",
           "text": "D من [BA] و E من [BC] ، فنطبّق نظرية طاليس في المثلّث BAC دون حاجة إلى شرط آخر",
           "misconceptionTag": "math.geo.thales-sans-verifier-parallelisme"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "(DE) ∥ (AC) ، فنطبّق النظرية العكسية لطاليس في المثلّث BAC",
           "misconceptionTag": "math.geo.thales-reciproque-role"
+        },
+        {
+          "id": "c",
+          "text": "D من [BA] و E من [BC] و (DE) ∥ (AC) ، فنطبّق نظرية طاليس في المثلّث BAC"
         },
         {
           "id": "d",
           "text": "D من [BA] و E من [BC] ، فنطبّق النظرية العكسية لطاليس في المثلّث BAC"
         }
       ],
-      "correctOption": "a",
+      "correctOption": "c",
       "explanation": "المستقيمان (DE) و (AC) متوازيان ، والنقطة D من [BA] والنقطة E من [BC] ، فنحن في وضعية طاليس في المثلّث BAC ورأسها B : المثلّث الصغير BDE والمثلّث الكبير BAC. وتعطي النظرية BD/BA = BE/BC = DE/AC ، ومنها BE/BC = DE/AC ✓. الخطأ الشائع: تطبيق النظرية لمجرّد أنّ D و E على ضلعين من المثلّث ، دون التوازي الذي هو شرطها ؛ أو استعمال النظرية العكسية ، وهي تنطلق من تساوي النسب لتثبت التوازي ، بينما التوازي هنا معطًى ونريد منه تساوي النسب.",
       "difficulty": 1,
       "competencies": [
@@ -36,30 +36,29 @@
       ]
     },
     {
-      "prompt": "في التصميم نفسه ، الأطوال بالصنتمتر هي :\nBC = 6 ، DE = 2 ، BE = 1,5\nونعلم أنّ المساواة التالية صحيحة :\nBE/BC = DE/AC\nما المساواة التي نحصل عليها بتعويض الأطوال المعلومة ؟\n<svg viewBox=\"0 0 330 262\"><title>تصميم حيّ سكني يقطعه نهر : المنازل A و B و C و D و E حيث A و D و B على استقامة واحدة وكذلك B و E و C و (DE) ∥ (AC)</title><path d=\"M14 96 Q52 82 92 96 T170 96 T248 96 T306 96 L306 124 Q268 138 228 124 T150 124 T72 124 T14 124 Z\" fill=\"#93c5fd\" fill-opacity=\"0.55\" stroke=\"#60a5fa\" stroke-width=\"1.6\"/><path d=\"M50 214 L182 38 L182 214 Z\" fill=\"#0f6e56\" fill-opacity=\"0.05\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M83 170 L83 214\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"214\" r=\"4.4\"/><circle cx=\"182\" cy=\"214\" r=\"4.4\"/><circle cx=\"182\" cy=\"38\" r=\"4.4\"/></g><g fill=\"#0f6e56\"><circle cx=\"83\" cy=\"170\" r=\"4.4\"/><circle cx=\"83\" cy=\"214\" r=\"4.4\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"184\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"38\" y=\"232\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"194\" y=\"232\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"68\" y=\"166\" text-anchor=\"middle\" fill=\"#0f6e56\">D</text><text x=\"84\" y=\"234\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text></g><text x=\"252\" y=\"114\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\" direction=\"rtl\">نهر</text></svg>",
+      "prompt": "في تصميم الحيّ السكني ، الأطوال بالصنتمتر هي :\nBC = 6 ، DE = 2 ، BE = 1,5\nونعلم أنّ المساواة التالية صحيحة :\nBE/BC = DE/AC\nما المساواة التي نحصل عليها بتعويض الأطوال المعلومة ؟\n<svg viewBox=\"0 0 330 262\"><title>تصميم حيّ سكني يقطعه نهر : المنازل A و B و C و D و E حيث A و D و B على استقامة واحدة وكذلك B و E و C و (DE) ∥ (AC)</title><path d=\"M14 96 Q52 82 92 96 T170 96 T248 96 T306 96 L306 124 Q268 138 228 124 T150 124 T72 124 T14 124 Z\" fill=\"#93c5fd\" fill-opacity=\"0.55\" stroke=\"#60a5fa\" stroke-width=\"1.6\"/><path d=\"M50 214 L182 38 L182 214 Z\" fill=\"#0f6e56\" fill-opacity=\"0.05\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M83 170 L83 214\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"214\" r=\"4.4\"/><circle cx=\"182\" cy=\"214\" r=\"4.4\"/><circle cx=\"182\" cy=\"38\" r=\"4.4\"/></g><g fill=\"#0f6e56\"><circle cx=\"83\" cy=\"170\" r=\"4.4\"/><circle cx=\"83\" cy=\"214\" r=\"4.4\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"184\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"38\" y=\"232\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"194\" y=\"232\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"68\" y=\"166\" text-anchor=\"middle\" fill=\"#0f6e56\">D</text><text x=\"84\" y=\"234\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text></g><text x=\"252\" y=\"114\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\" direction=\"rtl\">نهر</text></svg>",
       "options": [
         {
           "id": "a",
-          "text": "1,5/6 = 2/AC"
-        },
-        {
-          "id": "b",
           "text": "1,5/6 = AC/2",
           "misconceptionTag": "math.geo.thales-rapport-inverse"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "1,5/4,5 = 2/AC",
           "misconceptionTag": "math.geo.thales-formes-melangees"
         },
         {
+          "id": "c",
+          "text": "1,5/4,5 = AC/2"
+        },
+        {
           "id": "d",
-          "text": "6 − 1,5 = AC − 2",
-          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+          "text": "1,5/6 = 2/AC"
         }
       ],
-      "correctOption": "a",
-      "explanation": "نعوّض في المساواة BE/BC = DE/AC القيم BE = 1,5 و BC = 6 و DE = 2 ، فنجد 1,5/6 = 2/AC ✓ ، ويبقى المجهول AC في المقام. الخطأ الشائع: قلب إحدى النسبتين فنكتب 1,5/6 = AC/2 ؛ أو قسمة BE على القطعة المتبقّية EC = 6 − 1,5 = 4,5 بدل BC ، أي مزج نسبة جزء على جزء بنسبة جزء على كلّ ، فنكتب 1,5/4,5 = 2/AC ؛ أو مقارنة الفروق بدل النسب فنكتب 6 − 1,5 = AC − 2.",
+      "correctOption": "d",
+      "explanation": "نعوّض في المساواة BE/BC = DE/AC القيم BE = 1,5 و BC = 6 و DE = 2 ، فنجد 1,5/6 = 2/AC ✓ ، ويبقى المجهول AC في المقام. الخطأ الشائع: قلب إحدى النسبتين فنكتب 1,5/6 = AC/2 ؛ أو قسمة BE على القطعة المتبقّية EC = 6 − 1,5 = 4,5 بدل BC ، أي مزج نسبة جزء على جزء بنسبة جزء على كلّ ، فنكتب 1,5/4,5 = 2/AC ؛ أو جمع الخطأين فنكتب 1,5/4,5 = AC/2.",
       "difficulty": 2,
       "competencies": [
         "math.geo.thales-direct"
@@ -74,22 +73,22 @@
         },
         {
           "id": "b",
+          "text": "6,5",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "c",
           "text": "6",
           "misconceptionTag": "math.geo.thales-formes-melangees"
         },
         {
-          "id": "c",
-          "text": "4,5",
-          "misconceptionTag": "math.geo.thales-rapport-inverse"
-        },
-        {
           "id": "d",
-          "text": "0,5",
+          "text": "4,5",
           "misconceptionTag": "math.geo.thales-rapport-inverse"
         }
       ],
       "correctOption": "a",
-      "explanation": "من BE/BC = DE/AC نجد 1,5/6 = 2/AC ، وبالضرب التقاطعي : 1,5 × AC = 2 × 6 = 12 ، ومنه AC = 12 ÷ 1,5 = 8 cm ✓. التحقّق: 1,5/6 = 0,25 و 2/8 = 0,25 ✓. الخطأ الشائع: قلب إحدى النسبتين فنجد AC = 1,5 × 2 ÷ 6 = 0,5 ؛ أو مزج نسبة جزء على جزء بنسبة جزء على كلّ ، أي 1,5/4,5 = 2/AC ، فنجد AC = 6 ؛ أو كتابة AC/BC = BE/DE فنجد AC = 6 × 1,5 ÷ 2 = 4,5.",
+      "explanation": "من BE/BC = DE/AC نجد 1,5/6 = 2/AC ، وبالضرب التقاطعي : 1,5 × AC = 2 × 6 = 12 ، ومنه AC = 12 ÷ 1,5 = 8 cm ✓. التحقّق: 1,5/6 = 0,25 و 2/8 = 0,25 ✓. الخطأ الشائع: مقارنة الفروق بدل النسب فنكتب 6 − 1,5 = AC − 2 ، فنجد AC = 6 − 1,5 + 2 = 6,5 ؛ أو مزج نسبة جزء على جزء بنسبة جزء على كلّ ، أي 1,5/4,5 = 2/AC ، فنجد AC = 6 ؛ أو كتابة AC/BC = BE/DE فنجد AC = 6 × 1,5 ÷ 2 = 4,5.",
       "difficulty": 2,
       "competencies": [
         "math.geo.thales-direct",

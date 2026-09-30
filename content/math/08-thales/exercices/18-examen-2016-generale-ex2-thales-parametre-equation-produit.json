@@ -15,28 +15,28 @@
         },
         {
           "id": "b",
-          "text": "OA/OI = OB/OE",
-          "misconceptionTag": "math.geo.thales-rapport-inverse"
-        },
-        {
-          "id": "c",
           "text": "OI/OA = OE/OB",
           "misconceptionTag": "math.geo.thales-rapport-inverse"
         },
         {
+          "id": "c",
+          "text": "OA/OI = OB/BE"
+        },
+        {
           "id": "d",
-          "text": "OA/OB = OE/OI"
+          "text": "OI/OA = OB/BE",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
         }
       ],
       "correctOption": "a",
-      "explanation": "(BI) ∥ (AE) ، والنقطة I من [OA] والنقطة B من [OE] ، فنحن في وضعية طاليس في المثلّث OAE ، وتعطي النظرية OI/OA = OB/OE = IB/AE ، ومنها بقلب النسبتين معًا OA/OI = OE/OB ✓. الخطأ الشائع: قلب إحدى النسبتين فقط فنكتب OA/OI = OB/OE أو OI/OA = OE/OB ؛ أو الجمع بين أطوال لا تنتمي إلى النسبة نفسها فنكتب OA/OB = OE/OI.",
+      "explanation": "(BI) ∥ (AE) ، والنقطة I من [OA] والنقطة B من [OE] ، فنحن في وضعية طاليس في المثلّث OAE ، وتعطي النظرية OI/OA = OB/OE = IB/AE ، ومنها بقلب النسبتين معًا OA/OI = OE/OB ✓. الخطأ الشائع: قلب إحدى النسبتين فقط فنكتب OI/OA = OE/OB ؛ أو قسمة OB على القطعة المتبقّية BE بدل OE ، أي مزج نسبة جزء على جزء متبقّ بنسبة جزء على كلّ ، فنكتب OI/OA = OB/BE ؛ أو جمع هذا الخطأ مع قلب النسبة OI/OA فنكتب OA/OI = OB/BE.",
       "difficulty": 1,
       "competencies": [
         "math.geo.thales-direct"
       ]
     },
     {
-      "prompt": "نعلم أنّ :\nOA/OI = OE/OB\nحيث OI = 1 و OA = a و OB = a ، فما قيمة OE بدلالة a ؟",
+      "prompt": "نعلم أنّ :\nOA/OI = OE/OB\nحيث a عدد حقيقي أكبر من 1 ، و OI = 1 و OA = a و OB = a ، فما قيمة OE بدلالة a ؟",
       "options": [
         {
           "id": "a",
@@ -49,15 +49,15 @@
         },
         {
           "id": "c",
-          "text": "2a − 1",
-          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+          "text": "a²"
         },
         {
           "id": "d",
-          "text": "a²"
+          "text": "2a − 1",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
         }
       ],
-      "correctOption": "d",
+      "correctOption": "c",
       "explanation": "نعوّض في OA/OI = OE/OB فنجد a/1 = OE/a ، وبالضرب التقاطعي OE = a × a = a² ✓ ؛ وبما أنّ a > 1 فإنّ a² > a ، أي أنّ E تقع بعد B على المحور (OJ). الخطأ الشائع: قسمة a على a بدل ضربهما فنجد OE = 1 ؛ أو الاكتفاء بضرب OA في OI فنجد OE = a ؛ أو مقارنة الفروق بدل النسب فنكتب OE − a = a − 1 ، أي OE = 2a − 1 ، وهو أصغر من a² لأنّ a² − (2a − 1) = (a − 1)² موجب.",
       "difficulty": 2,
       "competencies": [
@@ -66,21 +66,19 @@
       ]
     },
     {
-      "prompt": "في المعيّن نفسه لدينا E(0 ; a²) حيث a > 1 ، والنقطة M من نصف المستقيم [OJ) حيث EM = 1 وM لا تنتمي إلى القطعة [OE] ، فما البعد OM بدلالة a ؟\n<svg viewBox=\"0 0 205 245\"><title>المعيّن المتعامد (O, I, J) حيث OI = OJ = 1 ، والنقطتان A على محور الفواصل و B على محور الترتيبات و E على (OJ) و (AE) موازٍ لـ (BI) ، والنقطة M على (OJ) بعد E</title><path d=\"M36.7 205 L167.8 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M62 228 L62 32.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M167.8 205 L158.8 209.5 L158.8 200.5 Z\" fill=\"#0f172a\"/><path d=\"M62 32.5 L66.5 41.5 L57.5 41.5 Z\" fill=\"#0f172a\"/><path d=\"M71 205 L71 196 L62 196\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M62 136 L108 205\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M131 205 L62 101.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M78.62 169.95 L87.22 173.83 L86.94 164.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M90.12 152.7 L98.72 156.58 L98.44 147.15\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M62 101.5 L62 55.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"62\" cy=\"205\" r=\"3.8\"/><circle cx=\"108\" cy=\"205\" r=\"3.8\"/><circle cx=\"131\" cy=\"205\" r=\"3.8\"/><circle cx=\"62\" cy=\"159\" r=\"3.8\"/><circle cx=\"62\" cy=\"136\" r=\"3.8\"/><circle cx=\"62\" cy=\"101.5\" r=\"3.8\"/><circle cx=\"62\" cy=\"55.5\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"50\" y=\"222\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"108\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"135\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"53\" y=\"164\" text-anchor=\"end\" fill=\"#0f172a\">J</text><text x=\"53\" y=\"141\" text-anchor=\"end\" fill=\"#0f172a\">B</text><text x=\"53\" y=\"106.5\" text-anchor=\"end\" fill=\"#0f172a\">E</text><text x=\"53\" y=\"60.5\" text-anchor=\"end\" fill=\"#0f172a\">M</text></g></svg>",
+      "prompt": "(O, I, J) معيّن متعامد حيث OI = OJ = 1 ، والنقطة E(0 ; a²) حيث a > 1 ، والنقطة M من نصف المستقيم [OJ) حيث EM = 1 وM لا تنتمي إلى القطعة [OE] ، فما البعد OM بدلالة a ؟\n<svg viewBox=\"0 0 205 245\"><title>المعيّن المتعامد (O, I, J) حيث OI = OJ = 1 ، والنقطتان A على محور الفواصل و B على محور الترتيبات و E على (OJ) و (AE) موازٍ لـ (BI) ، والنقطة M على (OJ) بعد E</title><path d=\"M36.7 205 L167.8 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M62 228 L62 32.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M167.8 205 L158.8 209.5 L158.8 200.5 Z\" fill=\"#0f172a\"/><path d=\"M62 32.5 L66.5 41.5 L57.5 41.5 Z\" fill=\"#0f172a\"/><path d=\"M71 205 L71 196 L62 196\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M62 136 L108 205\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M131 205 L62 101.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M78.62 169.95 L87.22 173.83 L86.94 164.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M90.12 152.7 L98.72 156.58 L98.44 147.15\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M62 101.5 L62 55.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"62\" cy=\"205\" r=\"3.8\"/><circle cx=\"108\" cy=\"205\" r=\"3.8\"/><circle cx=\"131\" cy=\"205\" r=\"3.8\"/><circle cx=\"62\" cy=\"159\" r=\"3.8\"/><circle cx=\"62\" cy=\"136\" r=\"3.8\"/><circle cx=\"62\" cy=\"101.5\" r=\"3.8\"/><circle cx=\"62\" cy=\"55.5\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"50\" y=\"222\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"108\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"135\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"53\" y=\"164\" text-anchor=\"end\" fill=\"#0f172a\">J</text><text x=\"53\" y=\"141\" text-anchor=\"end\" fill=\"#0f172a\">B</text><text x=\"53\" y=\"106.5\" text-anchor=\"end\" fill=\"#0f172a\">E</text><text x=\"53\" y=\"60.5\" text-anchor=\"end\" fill=\"#0f172a\">M</text></g></svg>",
       "options": [
         {
           "id": "a",
-          "text": "1",
-          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
-        },
-        {
-          "id": "b",
           "text": "a² − 1"
         },
         {
+          "id": "b",
+          "text": "a + 1"
+        },
+        {
           "id": "c",
-          "text": "a²",
-          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+          "text": "a − 1"
         },
         {
           "id": "d",
@@ -88,7 +86,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "M من نصف المستقيم [OJ) وخارج القطعة [OE] ، فهي تقع بعد E على المحور ، وبالتالي OM = OE + EM = a² + 1 ✓. الخطأ الشائع: إهمال الشرط M ∉ [OE] فنطرح بدل أن نجمع ونجد OM = a² − 1 ؛ أو الاكتفاء بمعطى واحد فنجد OM = EM = 1 أو OM = OE = a².",
+      "explanation": "M من نصف المستقيم [OJ) وخارج القطعة [OE] ، فهي تقع بعد E على المحور ، وبالتالي OM = OE + EM = a² + 1 ✓. الخطأ الشائع: إهمال الشرط M ∉ [OE] فنطرح بدل أن نجمع ونجد OM = a² − 1 ؛ أو قراءة ترتيبة E على أنّها a بدل a² ، أي نسيان التربيع ، فنجد OM = a + 1 ؛ أو جمع الخطأين فنجد OM = a − 1.",
       "difficulty": 2,
       "competencies": [
         "math.geo.thales-direct",
@@ -96,7 +94,7 @@
       ]
     },
     {
-      "prompt": "في المعيّن نفسه لدينا A(a ; 0) و M(0 ; a² + 1) ، والمستقيم المارّ من J والموازي لـ (AM) يقطع (OI) في النقطة K ، فأيّ مساواة بين النسب تعطيها نظرية طاليس ؟\n<svg viewBox=\"0 0 205 245\"><title>المعيّن المتعامد (O, I, J) حيث OI = OJ = 1 ، والنقطتان A على محور الفواصل و B على محور الترتيبات و E على (OJ) و (AE) موازٍ لـ (BI) ، و (JK) موازٍ لـ (AM)</title><path d=\"M36.7 205 L167.8 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M62 228 L62 32.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M167.8 205 L158.8 209.5 L158.8 200.5 Z\" fill=\"#0f172a\"/><path d=\"M62 32.5 L66.5 41.5 L57.5 41.5 Z\" fill=\"#0f172a\"/><path d=\"M71 205 L71 196 L62 196\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M62 136 L108 205\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M131 205 L62 101.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M78.62 169.95 L87.22 173.83 L86.94 164.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M90.12 152.7 L98.72 156.58 L98.44 147.15\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M131 205 L62 55.5\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M62 159 L83.23 205\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M82 110.77 L89.9 115.94 L91.08 106.58\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M66.4 180.46 L74.29 185.63 L75.48 176.27\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"62\" cy=\"205\" r=\"3.8\"/><circle cx=\"108\" cy=\"205\" r=\"3.8\"/><circle cx=\"131\" cy=\"205\" r=\"3.8\"/><circle cx=\"62\" cy=\"159\" r=\"3.8\"/><circle cx=\"62\" cy=\"136\" r=\"3.8\"/><circle cx=\"62\" cy=\"101.5\" r=\"3.8\"/><circle cx=\"62\" cy=\"55.5\" r=\"3.8\"/><circle cx=\"83.23\" cy=\"205\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"50\" y=\"222\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"108\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"135\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"53\" y=\"164\" text-anchor=\"end\" fill=\"#0f172a\">J</text><text x=\"53\" y=\"141\" text-anchor=\"end\" fill=\"#0f172a\">B</text><text x=\"53\" y=\"106.5\" text-anchor=\"end\" fill=\"#0f172a\">E</text><text x=\"53\" y=\"60.5\" text-anchor=\"end\" fill=\"#0f172a\">M</text><text x=\"74.23\" y=\"223\" text-anchor=\"middle\" fill=\"#b45309\">K</text></g></svg>",
+      "prompt": "(O, I, J) معيّن متعامد حيث OI = OJ = 1 ، والنقطتان A(a ; 0) و M(0 ; a² + 1) حيث a > 1 ، والمستقيم المارّ من J والموازي لـ (AM) يقطع (OI) في النقطة K ، فأيّ مساواة بين النسب تعطيها نظرية طاليس ؟\n<svg viewBox=\"0 0 205 245\"><title>المعيّن المتعامد (O, I, J) حيث OI = OJ = 1 ، والنقطتان A على محور الفواصل و B على محور الترتيبات و E على (OJ) و (AE) موازٍ لـ (BI) ، و (JK) موازٍ لـ (AM)</title><path d=\"M36.7 205 L167.8 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M62 228 L62 32.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M167.8 205 L158.8 209.5 L158.8 200.5 Z\" fill=\"#0f172a\"/><path d=\"M62 32.5 L66.5 41.5 L57.5 41.5 Z\" fill=\"#0f172a\"/><path d=\"M71 205 L71 196 L62 196\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M62 136 L108 205\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M131 205 L62 101.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M78.62 169.95 L87.22 173.83 L86.94 164.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M90.12 152.7 L98.72 156.58 L98.44 147.15\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M131 205 L62 55.5\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M62 159 L83.23 205\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M82 110.77 L89.9 115.94 L91.08 106.58\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M66.4 180.46 L74.29 185.63 L75.48 176.27\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"62\" cy=\"205\" r=\"3.8\"/><circle cx=\"108\" cy=\"205\" r=\"3.8\"/><circle cx=\"131\" cy=\"205\" r=\"3.8\"/><circle cx=\"62\" cy=\"159\" r=\"3.8\"/><circle cx=\"62\" cy=\"136\" r=\"3.8\"/><circle cx=\"62\" cy=\"101.5\" r=\"3.8\"/><circle cx=\"62\" cy=\"55.5\" r=\"3.8\"/><circle cx=\"83.23\" cy=\"205\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"50\" y=\"222\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"108\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"135\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"53\" y=\"164\" text-anchor=\"end\" fill=\"#0f172a\">J</text><text x=\"53\" y=\"141\" text-anchor=\"end\" fill=\"#0f172a\">B</text><text x=\"53\" y=\"106.5\" text-anchor=\"end\" fill=\"#0f172a\">E</text><text x=\"53\" y=\"60.5\" text-anchor=\"end\" fill=\"#0f172a\">M</text><text x=\"74.23\" y=\"223\" text-anchor=\"middle\" fill=\"#b45309\">K</text></g></svg>",
       "options": [
         {
           "id": "a",
@@ -160,25 +158,24 @@
       "options": [
         {
           "id": "a",
-          "text": "x² − x/2 − 2",
-          "misconceptionTag": "math.alg.distribution-partielle"
-        },
-        {
-          "id": "b",
           "text": "x² − (3/2)x + 1"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "x² − (5/2)x − 1",
           "misconceptionTag": "math.int.produit-signes-negatifs"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "x² − (5/2)x + 1"
+        },
+        {
+          "id": "d",
+          "text": "x² − (3/2)x − 1"
         }
       ],
-      "correctOption": "d",
-      "explanation": "ننشر جداء العاملين : (x − 2)(x − 1/2) = x × x + x × (−1/2) + (−2) × x + (−2) × (−1/2) = x² − x/2 − 2x + 1 = x² − (5/2)x + 1 ✓ لأنّ −1/2 − 2 = −5/2. الخطأ الشائع: ضرب x وحده في القوس الثاني وترك −2 دون ضرب فنجد x² − x/2 − 2 ؛ أو كتابة الجداء (−2) × (−1/2) بإشارة − فنجد x² − (5/2)x − 1 ؛ أو الخطأ في إشارة الجداء x × (−1/2) فنجد −2x + x/2 = −(3/2)x أي x² − (3/2)x + 1.",
+      "correctOption": "c",
+      "explanation": "ننشر جداء العاملين : (x − 2)(x − 1/2) = x × x + x × (−1/2) + (−2) × x + (−2) × (−1/2) = x² − x/2 − 2x + 1 = x² − (5/2)x + 1 ✓ لأنّ −1/2 − 2 = −5/2. الخطأ الشائع: كتابة الجداء (−2) × (−1/2) بإشارة − فنجد x² − (5/2)x − 1 ؛ أو الخطأ في إشارة الجداء x × (−1/2) فنجد −2x + x/2 = −(3/2)x أي x² − (3/2)x + 1 ؛ أو جمع الخطأين فنجد x² − (3/2)x − 1.",
       "difficulty": 2,
       "competencies": [
         "math.alg.developpement"
@@ -189,17 +186,17 @@
       "options": [
         {
           "id": "a",
-          "text": "5a² − 2a + 5 = 0"
-        },
-        {
-          "id": "b",
           "text": "2a² + 5a + 2 = 0",
           "misconceptionTag": "math.alg.transposition-sans-changer-signe"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "2a² − 5a + 1 = 0",
           "misconceptionTag": "math.alg.distribution-partielle"
+        },
+        {
+          "id": "c",
+          "text": "2a² + 5a + 1 = 0"
         },
         {
           "id": "d",
@@ -207,7 +204,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "بالضرب التقاطعي : a × 5 = 2 × (a² + 1) ، أي 5a = 2a² + 2 ، ثمّ ننقل 5a إلى الطرف الآخر فتتغيّر إشارته : 2a² − 5a + 2 = 0 ✓. الخطأ الشائع: نقل 5a دون تغيير إشارته فنجد 2a² + 5a + 2 = 0 ؛ أو توزيع 2 على الحدّ a² وحده فنجد 5a = 2a² + 1 أي 2a² − 5a + 1 = 0 ؛ أو قلب النسبة 2/5 فنجد 5a² − 2a + 5 = 0.",
+      "explanation": "بالضرب التقاطعي : a × 5 = 2 × (a² + 1) ، أي 5a = 2a² + 2 ، ثمّ ننقل 5a إلى الطرف الآخر فتتغيّر إشارته : 2a² − 5a + 2 = 0 ✓. الخطأ الشائع: نقل 5a دون تغيير إشارته فنجد 2a² + 5a + 2 = 0 ؛ أو توزيع 2 على الحدّ a² وحده فنجد 5a = 2a² + 1 أي 2a² − 5a + 1 = 0 ؛ أو جمع الخطأين فنجد 2a² + 5a + 1 = 0.",
       "difficulty": 2,
       "competencies": [
         "math.alg.mise-en-equation",
