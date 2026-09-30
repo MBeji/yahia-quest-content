@@ -1,0 +1,245 @@
+{
+  "title": "🏛️ مناظرة 2016 (تقني) · التمرين 2 ⭐⭐⭐: استهلاك الماء لألف عائلة — الفئة المنوال والمعدّل والتكرار المجمّع والمضلّع والموسّط والنسبة المائوية",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 22,
+  "questions": [
+    {
+      "prompt": "الفئة المنوال هي الفئة الأكثر تكرارًا.\nيوزّع الجدول التالي ألف عائلة حسب كمّية استهلاكها للماء بالمتر المكعّب خلال أربعة أشهر :\nالاستهلاك بالمتر المكعّب :\n[5 ; 15[ ، [15 ; 25[ ، [25 ; 35[ ، [35 ; 45[ ، [45 ; 55[\nعدد العائلات : 180 ، 210 ، 340 ، 170 ، 100\nما الفئة المنوال لسلسلة الاستهلاك هذه ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "[15 ; 25["
+        },
+        {
+          "id": "b",
+          "text": "[25 ; 35["
+        },
+        {
+          "id": "c",
+          "text": "[35 ; 45["
+        },
+        {
+          "id": "d",
+          "text": "[45 ; 55[",
+          "misconceptionTag": "math.stat.mode-et-valeur-maximale-confondus"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نقارن التكرارات 180 و210 و340 و170 و100، وأكبرها 340 وهو تكرار الفئة [25 ; 35[ فهي الفئة المنوال ✓.\nالخطأ الشائع: اختيار الفئة الأخيرة [45 ; 55[ لأنّ قيمها هي الأكبر، مع أنّ الفئة المنوال تُحدَّد بالتكرار لا بالقيم؛ أو الفئة [15 ; 25[ ذات ثاني أكبر تكرار وهو 210؛ أو الفئة [35 ; 45[ التي تلي الفئة المنوال وتكرارها 170 فقط.",
+      "difficulty": 1,
+      "competencies": [
+        "math.stat.mode",
+        "math.stat.effectifs-frequences"
+      ]
+    },
+    {
+      "prompt": "توزّعت ألف عائلة حسب كمّية استهلاكها للماء بالمتر المكعّب خلال أربعة أشهر على الفئات [5 ; 15[ و [15 ; 25[ و [25 ; 35[ و [35 ; 45[ و [45 ; 55[ بالتكرارات 180 و210 و340 و170 و100 على الترتيب.\nما معدّل استهلاك العائلة الواحدة من هذه العائلات خلال أربعة أشهر بالمتر المكعّب ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "5600",
+          "misconceptionTag": "math.stat.moyenne-divisee-par-le-nombre-de-valeurs"
+        },
+        {
+          "id": "b",
+          "text": "30",
+          "misconceptionTag": "math.stat.moyenne-sans-ponderation"
+        },
+        {
+          "id": "c",
+          "text": "28"
+        },
+        {
+          "id": "d",
+          "text": "23",
+          "misconceptionTag": "math.stat.borne-de-classe-au-lieu-du-centre"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "مراكز الفئات هي 10 و20 و30 و40 و50، فمجموع الجداءات هو 10 × 180 + 20 × 210 + 30 × 340 + 40 × 170 + 50 × 100 = 1800 + 4200 + 10 200 + 6800 + 5000 = 28 000 ، ونقسمه على التكرار الكلّي 1000\n28 000 ÷ 1000 = 28\nأي 28 مترًا مكعّبًا ✓.\nالخطأ الشائع: 23 هو نتيجة استعمال الطرف الأصغر لكلّ فئة، وهو 5 و15 و25 و35 و45، بدل مركزها؛ و30 هو معدّل المراكز الخمسة دون ترجيحها بعدد العائلات، وهو أيضًا مركز الفئة المنوال؛ و5600 يقسم 28 000 على عدد الفئات 5 بدل التكرار الكلّي 1000.",
+      "difficulty": 2,
+      "competencies": [
+        "math.stat.moyenne-mediane"
+      ]
+    },
+    {
+      "prompt": "التكرار المجمّع الصاعد لفئة هو عدد العائلات التي يقلّ استهلاكها قطعًا عن الطرف الأكبر لهذه الفئة.\nعدد العائلات في الفئات [5 ; 15[ و [15 ; 25[ و [25 ; 35[ و [35 ; 45[ و [45 ; 55[ هو 180 و210 و340 و170 و100 على الترتيب.\nما التكرار المجمّع الصاعد الموافق للفئة [25 ; 35[ ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "900",
+          "misconceptionTag": "math.stat.cumul-decale-d-une-classe"
+        },
+        {
+          "id": "b",
+          "text": "730"
+        },
+        {
+          "id": "c",
+          "text": "610",
+          "misconceptionTag": "math.stat.cumul-croissant-decroissant-confondus"
+        },
+        {
+          "id": "d",
+          "text": "340",
+          "misconceptionTag": "math.stat.effectif-cumule-non-cumule"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "التكرار المجمّع الصاعد للفئة [25 ; 35[ يجمع تكرارها وتكرارات الفئتين اللتين قبلها، أي 180 + 210 + 340 = 730 ✓.\nالخطأ الشائع: 340 هو تكرار الفئة وحدها دون جمع؛ و610 = 340 + 170 + 100 يجمع من الفئة نحو الفئة الأخيرة، وهو التكرار المجمّع النازل؛ و900 يضيف الفئة [35 ; 45[ التي تلي الفئة المطلوبة، فيتجاوز الطرف الأكبر للفئة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.stat.effectifs-frequences"
+      ]
+    },
+    {
+      "prompt": "قرّرت شركة توزيع المياه تنظيم يوم تحسيسيّ لفائدة العائلات التي فاق استهلاكها 35 مترًا مكعّبًا خلال الأشهر الأربعة.\nالاستهلاك بالمتر المكعّب :\n[5 ; 15[ ، [15 ; 25[ ، [25 ; 35[ ، [35 ; 45[ ، [45 ; 55[\nعدد العائلات : 180 ، 210 ، 340 ، 170 ، 100\nما النسبة المائوية للعائلات التي ستُدعى إلى اليوم التحسيسيّ ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "73 %",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "61 %",
+          "misconceptionTag": "math.stat.classe-finissant-au-seuil-comptee"
+        },
+        {
+          "id": "c",
+          "text": "27 %"
+        },
+        {
+          "id": "d",
+          "text": "17 %",
+          "misconceptionTag": "math.stat.classes-concernees-incompletes"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "العائلات التي فاق استهلاكها 35 مترًا مكعّبًا هي عائلات الفئتين [35 ; 45[ و[45 ; 55[، أمّا الفئة [25 ; 35[ فينتهي مجالها عند 35 فلا تدخل، وعدد العائلات المدعوّة 170 + 100 = 270 من 1000.\nالنسبة = 270 ÷ 1000 = 0,27 = 27 % ✓.\nالخطأ الشائع: 61 % = 610 ÷ 1000 تُدخل الفئة [25 ; 35[ لأنّ 35 هو طرفها الأكبر؛ و17 % = 170 ÷ 1000 تقتصر على الفئة [35 ; 45[ وتُسقط الفئة الأخيرة؛ و73 % = 730 ÷ 1000 هي نسبة العائلات التي لا يفوق استهلاكها 35 مترًا مكعّبًا.",
+      "difficulty": 2,
+      "competencies": [
+        "math.prop.pourcentages",
+        "math.stat.effectifs-frequences"
+      ]
+    },
+    {
+      "prompt": "رسم تلميذ مضلّع التكرارات المجمّعة الصاعدة لاستهلاك ألف عائلة للماء، وكتب قرب كلّ نقطة ترتيبتها. للمضلّع نقطة أولى ترتيبتها 0 عند الطرف الأصغر 5 للفئة الأولى، ثمّ نقطة عند الطرف الأكبر لكلّ فئة. عدد العائلات في الفئات [5 ; 15[ و [15 ; 25[ و [25 ; 35[ و [35 ; 45[ و [45 ; 55[ هو 180 و210 و340 و170 و100 على الترتيب.\nأخطأ التلميذ في ترتيبة نقطة واحدة فقط. ما فاصلة هذه النقطة ؟\n<svg viewBox=\"0 0 300 226\">\n<title>مضلّع التكرارات المجمّعة الصاعدة الذي رسمه تلميذ لاستهلاك الماء لدى ألف عائلة، وترتيبة كلّ نقطة مكتوبة قربها</title>\n<path d=\"M50 34 V194 M93.6 34 V194 M137.2 34 V194 M180.8 34 V194 M224.4 34 V194 M268 34 V194 M50 194 H268 M50 162 H268 M50 130 H268 M50 98 H268 M50 66 H268 M50 34 H268\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<path d=\"M50 194 H276 M50 194 V28\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/>\n<path d=\"M282 194 L274 190 V198 Z M50 22 L46 30 H54 Z\" fill=\"#0f172a\"/>\n<text x=\"50\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">5</text><text x=\"93.6\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">15</text><text x=\"137.2\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">25</text><text x=\"180.8\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">35</text><text x=\"224.4\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">45</text><text x=\"268\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">55</text><text x=\"44\" y=\"198\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">0</text><text x=\"44\" y=\"166\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">200</text><text x=\"44\" y=\"134\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">400</text><text x=\"44\" y=\"102\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">600</text><text x=\"44\" y=\"70\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">800</text><text x=\"44\" y=\"38\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">1000</text>\n<polyline points=\"50,194 93.6,165.2 137.2,131.6 180.8,77.2 224.4,61.2 268,34\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n<circle cx=\"50\" cy=\"194\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"93.6\" cy=\"165.2\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"137.2\" cy=\"131.6\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"180.8\" cy=\"77.2\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"224.4\" cy=\"61.2\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"268\" cy=\"34\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<g font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"87.6\" y=\"157.2\" text-anchor=\"end\">180</text><text x=\"131.2\" y=\"123.6\" text-anchor=\"end\">390</text><text x=\"174.8\" y=\"69.2\" text-anchor=\"end\">730</text><text x=\"218.4\" y=\"53.2\" text-anchor=\"end\">830</text><text x=\"262\" y=\"26\" text-anchor=\"end\">1000</text></g>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "45"
+        },
+        {
+          "id": "b",
+          "text": "35"
+        },
+        {
+          "id": "c",
+          "text": "25"
+        },
+        {
+          "id": "d",
+          "text": "15"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نحسب التكرارات المجمّعة الصاعدة: 180 ، ثمّ 180 + 210 = 390 ، ثمّ 390 + 340 = 730 ، ثمّ 730 + 170 = 900 ، ثمّ 900 + 100 = 1000 ، وهي ترتيبات النقاط عند الفواصل 15 و25 و35 و45 و55.\nونقارنها بما كتبه التلميذ: النقاط ذات الفواصل 5 و15 و25 و35 و55 ترتيباتها 0 و180 و390 و730 و1000 وهي صحيحة، أمّا النقطة ذات الفاصلة 45 فكتب قربها 830 بدل 900 ✓، وهو ما ينتج عن إضافة تكرار الفئة الأخيرة 100 إلى 730 بدل تكرار الفئة الرابعة 170.\nالخطأ الشائع: الحكم على النقاط بمظهر المضلّع، فهو يرتفع باطّراد ولا يكشف الخطأ، والصواب أن نعيد حساب كلّ ترتيبة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.stat.effectifs-frequences"
+      ]
+    },
+    {
+      "prompt": "يمثّل المضلّع التالي التكرارات المجمّعة الصاعدة لاستهلاك ألف عائلة للماء، وترتيبة كلّ نقطة مكتوبة قربها. نعتبر أنّ التكرار المجمّع يتزايد بانتظام بين نقطتين متتاليتين.\nحسب المضلّع، كم عائلة تقريبًا يقلّ استهلاكها عن 27 مترًا مكعّبًا ؟\n<svg viewBox=\"0 0 300 226\">\n<title>مضلّع التكرارات المجمّعة الصاعدة لاستهلاك الماء لدى ألف عائلة، وترتيبة كلّ نقطة مكتوبة قربها</title>\n<path d=\"M50 34 V194 M93.6 34 V194 M137.2 34 V194 M180.8 34 V194 M224.4 34 V194 M268 34 V194 M50 194 H268 M50 162 H268 M50 130 H268 M50 98 H268 M50 66 H268 M50 34 H268\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<path d=\"M50 194 H276 M50 194 V28\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/>\n<path d=\"M282 194 L274 190 V198 Z M50 22 L46 30 H54 Z\" fill=\"#0f172a\"/>\n<text x=\"50\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">5</text><text x=\"93.6\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">15</text><text x=\"137.2\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">25</text><text x=\"180.8\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">35</text><text x=\"224.4\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">45</text><text x=\"268\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">55</text><text x=\"44\" y=\"198\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">0</text><text x=\"44\" y=\"166\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">200</text><text x=\"44\" y=\"134\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">400</text><text x=\"44\" y=\"102\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">600</text><text x=\"44\" y=\"70\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">800</text><text x=\"44\" y=\"38\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">1000</text>\n<polyline points=\"50,194 93.6,165.2 137.2,131.6 180.8,77.2 224.4,50 268,34\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n<circle cx=\"50\" cy=\"194\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"93.6\" cy=\"165.2\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"137.2\" cy=\"131.6\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"180.8\" cy=\"77.2\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"224.4\" cy=\"50\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"268\" cy=\"34\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<g font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"87.6\" y=\"157.2\" text-anchor=\"end\">180</text><text x=\"131.2\" y=\"123.6\" text-anchor=\"end\">390</text><text x=\"174.8\" y=\"69.2\" text-anchor=\"end\">730</text><text x=\"218.4\" y=\"42\" text-anchor=\"end\">900</text><text x=\"262\" y=\"26\" text-anchor=\"end\">1000</text></g>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "68",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "340",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "424"
+        },
+        {
+          "id": "d",
+          "text": "458"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "العدد 27 يقع بين 25 و35، فنقرأ على القطعة الواصلة بين النقطتين (25 ; 390) و(35 ; 730) أنّ التكرار المجمّع يزداد بـ 730 − 390 = 340 عائلة لكلّ 10 أمتار مكعّبة، أي بـ 34 عائلة لكلّ متر مكعّب.\nمن 25 إلى 27 نضيف 2 × 34 = 68 عائلة، فنجد 390 + 68 = 458 عائلة ✓.\nالخطأ الشائع: الاكتفاء بالزيادة دون إضافة ترتيبة النقطة ذات الفاصلة 25، سواء كانت الزيادة من 25 إلى 27 وهي 68، أو على القطعة كلّها وهي 340؛ أو إضافة زيادة متر مكعّب واحد فقط، 390 + 34 = 424، مع أنّ 27 تبعد عن 25 بمترين مكعّبين.",
+      "difficulty": 3,
+      "competencies": [
+        "math.stat.effectifs-frequences",
+        "math.stat.moyenne-mediane"
+      ]
+    },
+    {
+      "prompt": "الموسّط (الوسيط) هو فاصلة النقطة من مضلّع التكرارات المجمّعة الصاعدة التي ترتيبتها نصف عدد العائلات.\nقرأنا على مضلّع استهلاك ألف عائلة للماء أنّ حوالي 458 عائلة يقلّ استهلاكها عن 27 مترًا مكعّبًا، وأنّ حوالي 560 عائلة يقلّ استهلاكها عن 30 مترًا مكعّبًا.\nبين أيّ عددين يقع الموسّط ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "بين 25 و27"
+        },
+        {
+          "id": "b",
+          "text": "بين 27 و30"
+        },
+        {
+          "id": "c",
+          "text": "بين 30 و35"
+        },
+        {
+          "id": "d",
+          "text": "بين 35 و45"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نصف عدد العائلات هو 1000 ÷ 2 = 500 عائلة. عند 27 لم نبلغ 500 بعد لأنّ 458 أقلّ من 500، وعند 30 تجاوزناه لأنّ 560 أكبر من 500، فالنقطة ذات الترتيبة 500 فاصلتها بين 27 و30 ✓.\nالخطأ الشائع: الاكتفاء بمقارنة 458 مع 500 دون النظر إلى ترتيبة النقطة التالية، فيُختار المجال الذي يسبق 27 وترتيباته 390 و458 كلّها أقلّ من 500؛ أو اختيار مجال ترتيباته 560 و730 كلتاهما أكبر من 500، والنصف بلغناه قبله؛ أو الذهاب بعيدًا إلى مجال ترتيباته 730 و900 عائلة.",
+      "difficulty": 3,
+      "competencies": [
+        "math.stat.moyenne-mediane"
+      ]
+    },
+    {
+      "prompt": "على مضلّع التواترات المجمّعة الصاعدة لاستهلاك الماء، يساوي التواتر المجمّع 39 % عند 25 مترًا مكعّبًا و73 % عند 35 مترًا مكعّبًا. الموسّط (الوسيط) هو الاستهلاك الذي يبلغ عنده هذا التواتر المجمّع 50 %، ونفترض أنّه يزداد بانتظام بين 25 و35 مترًا مكعّبًا.\nما القيمة التقريبية للموسّط بالمتر المكعّب، مقرّبةً إلى أقرب جزء من مائة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "26,80",
+          "misconceptionTag": "math.stat.interpolation-mal-posee"
+        },
+        {
+          "id": "b",
+          "text": "28,00",
+          "misconceptionTag": "math.stat.moyenne-et-mediane-confondues"
+        },
+        {
+          "id": "c",
+          "text": "28,24"
+        },
+        {
+          "id": "d",
+          "text": "30,00",
+          "misconceptionTag": "math.stat.mediane-egale-centre-ou-borne-de-la-classe"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "بين 25 و35 يزداد التواتر المجمّع من 39 % إلى 73 %، أي بـ 34 نقطة مقابل 10 أمتار مكعّبة. للبلوغ من 39 % إلى 50 % نحتاج 11 نقطة، أي 11 ÷ 34 من عرض المجال، فالموسّط هو\n25 + (11 ÷ 34) × 10\n= 25 + 3,24 = 28,24\nأي 28,24 مترًا مكعّبًا تقريبًا، وهو بين 25 و35 كما يجب ✓.\nالخطأ الشائع: 26,80 يقسم 11 على 61، وهو ما يبقى من 100 % بعد 39 %، بدل 34 وهي زيادة التواتر بين القيمتين؛ 28,00 هو المعدّل الحسابي لا الموسّط؛ و30,00 هو مركز الفئة [25 ; 35[ وليس الموسّط.",
+      "difficulty": 3,
+      "competencies": [
+        "math.stat.moyenne-mediane",
+        "math.prop.pourcentages"
+      ]
+    }
+  ]
+}
