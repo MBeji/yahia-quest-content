@@ -56,3 +56,15 @@ fichier** : l'orchestrateur renvoie les correctifs à l'auteur.
 - **Ton propre correctif** : avant de proposer un texte de remplacement, vérifie qu'il ne rend pas
   la clé strictement la plus longue, qu'il ne nie aucune prémisse et qu'il ne fuit vers aucune
   autre question. Plusieurs correctifs proposés en ont introduit un.
+- **Titre** de la mission qui livre une clé (« عددان مقلوبان » donnait ab = 1) ; **décimale de
+  vérification** ou « seconde méthode » chiffrée dans une explication qui livre le verdict ou la clé
+  d'une question suivante.
+- **Énoncé au pluriel ou au duel** (« ما الرتب », « رتبتين ») qui annonce le nombre de valeurs.
+- **Option somme ou différence de deux autres** (30 + 33 = 63) ; **vote majoritaire** chiffre par
+  chiffre qui reconstruit une clé à plusieurs chiffres.
+- **Doublon entre annales voisines** : deux sujets consécutifs recyclent les mêmes données ; compare
+  aussi avec les missions des AUTRES chapitres de la même série, pas seulement celles du chapitre
+  audité.
+- **Rendu arabe** : parenthèse d'unité collée à un nombre, point final après un intervalle ou une
+  formule ; passe les chaînes suspectes dans `isolateLtrRuns` (`src/shared/lib/bidi.ts`) avant de
+  conclure (un point après « b/a » seul, sans √, parenthèse ni inégalité, n'est PAS isolé).
