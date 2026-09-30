@@ -135,3 +135,14 @@ manquantes, confirmation de la double résolution, résultat des gates pour tes 
   se confond avec la flèche de la solution.
 - **Énoncé nu = paire proche** : « نعتبر العددين … ما قيمة الجداء ؟ » double des missions publiées
   (Jaccard 0,5 à 0,6). Garde le contexte de l'énoncé officiel (« بعد الاختزال صار العددان … »).
+- **Chaque énoncé se lit SEUL** : le donjon tire les questions AU HASARD (`get_dungeon_questions`,
+  `ORDER BY random()`), sans tri par difficulté. Pas de « بنفس الطريقة », de « السؤال السابق »
+  ni de valeur qui n'est donnée qu'ailleurs (« نصف عدد العائلات » sans le total) ; et un énoncé qui redonne la
+  clé d'une autre question la divulgue quand elles sortent dans l'ordre inverse : ne donne que le
+  minimum de la situation.
+- **Une technique qu'aucun cours n'enseigne se donne DANS l'énoncé de CHAQUE question qui la met
+  en œuvre** (la médiane graphique définie dans Q8 mais utilisée en Q9 : Q9 ne se résout pas seule).
+- **Un marqueur de forme désigne la clé** : si seule la clé se justifie par une phrase d'un autre
+  patron (« لأنّها تجمع تكرارات الفئات كلّها » contre « لأنّ N هو … تكرار »), donne le même patron aux
+  quatre options. Un distracteur dont les nombres sont tous multiples d'un même nombre que la clé ne
+  partage pas (34, 68, 340 face à 458) la désigne comme intrus.

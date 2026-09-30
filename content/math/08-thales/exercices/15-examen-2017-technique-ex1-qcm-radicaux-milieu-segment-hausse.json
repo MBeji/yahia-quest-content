@@ -1,0 +1,125 @@
+{
+  "title": "🏛️ مناظرة 2017 (تقني) · التمرين 1 ⭐⭐: اختيار من متعدّد — فرق جذرين ومنتصف بالإحداثيّات ومنتصفا ضلعين وثمن قبل الزيادة",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 15,
+  "questions": [
+    {
+      "prompt": "ما قيمة العدد التالي ؟\n√12 − √3",
+      "options": [
+        {
+          "id": "a",
+          "text": "−√3"
+        },
+        {
+          "id": "b",
+          "text": "√3"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        },
+        {
+          "id": "d",
+          "text": "3√3",
+          "misconceptionTag": "math.num.facteur-racine-sans-carre"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نبسّط الجذر الأوّل بإخراج المربّع الكامل : √12 = √(4 × 3) = 2√3 ، فيصير العدد 2√3 − √3 = √3 ✓ لأنّ الجذرين متشابهان فنطرح معاملَيهما 2 − 1 = 1 ونحتفظ بالجذر √3. الخطأ الشائع: طرح ما تحت الجذرين فنكتب √(12 − 3) = √9 = 3 ؛ أو إخراج العدد 4 بدل جذره 2 فنكتب √12 = 4√3 ، فنجد 4√3 − √3 = 3√3 ؛ أو عكس ترتيب الطرح فنجد √3 − 2√3 = −√3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ليكن (O, I, J) معيّنًا من المستوي ، ولتكن النقاط :\nA(2 ; −3) و B(−4 ; 5) و C(−1 ; 1)\nأيّ العبارات التالية صحيحة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "A منتصف [BC]"
+        },
+        {
+          "id": "b",
+          "text": "B منتصف [AC]"
+        },
+        {
+          "id": "c",
+          "text": "C منتصف [AB]"
+        },
+        {
+          "id": "d",
+          "text": "لا توجد نقطة من A و B و C هي منتصف القطعة التي طرفاها النقطتان الأخريان",
+          "misconceptionTag": "math.vec.milieu-sans-moitie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "تكون النقطة منتصف قطعة إذا كانت إحداثيّتاها نصف مجموع إحداثيّتي الطرفين. نصف مجموع إحداثيّتي A و B هو ((2 + (−4))/2 ; (−3 + 5)/2) = (−1 ; 1) ، وهي إحداثيّتا C ✓. أمّا منتصف [BC] فهو (−2,5 ; 3) وليس A ، ومنتصف [AC] هو (0,5 ; −1) وليس B. الخطأ الشائع: جمع الإحداثيّتين دون أخذ النصف ، فلا يطابق الناتج أيّ نقطة من الثلاث : (−2 ; 2) للطرفين A و B مقابل C(−1 ; 1) ، و (−5 ; 6) للطرفين B و C مقابل A(2 ; −3) ، و (1 ; −2) للطرفين A و C مقابل B(−4 ; 5) ، فنحكم خطأً بأنّه لا توجد نقطة منتصف.",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-calculs",
+        "math.vec.repere-coordonnees"
+      ]
+    },
+    {
+      "prompt": "أطوال أضلاع المثلّث ABC بالصنتمتر :\nAB = 5 ، AC = 7 ، BC = 6\nالنقطة I منتصف [AB] والنقطة J منتصف [AC] ، فما طول القطعة [IJ] بالصنتمتر ؟\n<svg viewBox=\"0 0 320 245\"><title>مثلث ABC والنقطتان I و J منتصفا [AB] و [AC]</title><path d=\"M78 28.84 L40 215 L268 215 Z\" fill=\"#0f6e56\" fill-opacity=\"0.06\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M59 121.92 L173 121.92\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M63.6 74.38 L73.4 76.38\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M44.6 167.46 L54.4 169.46\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M120.22 77.2 L127.21 70.06\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M123.79 80.7 L130.78 73.56\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M215.22 170.28 L222.21 163.14\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M218.79 173.78 L225.78 166.64\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"78\" cy=\"28.84\" r=\"4.4\"/><circle cx=\"40\" cy=\"215\" r=\"4.4\"/><circle cx=\"268\" cy=\"215\" r=\"4.4\"/></g><g fill=\"#0f6e56\"><circle cx=\"59\" cy=\"121.92\" r=\"4.4\"/><circle cx=\"173\" cy=\"121.92\" r=\"4.4\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"78\" y=\"16.84\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"28\" y=\"232\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"280\" y=\"232\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"44\" y=\"124.92\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"188\" y=\"124.92\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,5"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "3,5"
+        },
+        {
+          "id": "d",
+          "text": "12",
+          "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "I و J منتصفا [AB] و [AC] ، فبخاصيّة المستقيم الرابط بين منتصفي ضلعين : (IJ) ∥ (BC) و IJ = BC/2 = 6/2 = 3 cm ✓ ، فالقطعة [IJ] توازي الضلع [BC] الذي لا يمرّ به أيّ من المنتصفين وتساوي نصفه. الخطأ الشائع: أخذ نصف أحد الضلعين اللذين يحملان المنتصفين ، أي 5/2 = 2,5 أو 7/2 = 3,5 ؛ أو ضرب طول الضلع الثالث في 2 بدل قسمته فنجد 6 × 2 = 12.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "بعد زيادة بنسبة 8 % أصبح ثمن هاتف جوّال 216 دينارًا ، فما ثمنه بالدينار قبل الزيادة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "198,72"
+        },
+        {
+          "id": "b",
+          "text": "200"
+        },
+        {
+          "id": "c",
+          "text": "208",
+          "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat"
+        },
+        {
+          "id": "d",
+          "text": "233,28"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الثمن بعد الزيادة يساوي 108 % من الثمن الأوّل ، أي 1,08 × الثمن الأوّل = 216 ، ومنه الثمن الأوّل = 216 ÷ 1,08 = 200 دينار ✓. التحقّق: 200 + 8 % من 200 = 200 + 16 = 216 ✓. الخطأ الشائع: تطبيق النسبة على الثمن النهائي 216 بدل الثمن الأوّل ، فنضيف 8 % إليه فنجد 216 × 1,08 = 233,28 ، أو نطرحها منه فنجد 216 × 0,92 = 198,72 ؛ أو طرح العدد 8 نفسه من 216 كأنّه 8 دنانير فنجد 208.",
+      "difficulty": 2,
+      "competencies": [
+        "math.prop.pourcentages"
+      ]
+    }
+  ]
+}

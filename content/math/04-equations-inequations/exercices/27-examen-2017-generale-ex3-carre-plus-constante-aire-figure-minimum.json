@@ -1,0 +1,193 @@
+{
+  "title": "🏛️ مناظرة 2017 · التمرين 3 ⭐⭐⭐: قيمة عددية ونشر مربّع ثمّ مجموع مساحتين في شكل هندسي ومقارنة عبارة بعدد",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 27,
+  "questions": [
+    {
+      "type": "mcq",
+      "prompt": "لتكن العبارة E حيث x عدد حقيقي:\nE = x² − 2x + 8\nما القيمتان اللتان تأخذهما E عند x = −1/2 ثمّ عند x = 5/2 على الترتيب ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "( 19/2 ; 31/2 )",
+          "misconceptionTag": "math.num.puissance-fraction-numerateur-seul"
+        },
+        {
+          "id": "b",
+          "text": "( 37/4 ; 37/4 )"
+        },
+        {
+          "id": "c",
+          "text": "( 8 ; 8 )",
+          "misconceptionTag": "math.num.puissance-confondue-avec-produit"
+        },
+        {
+          "id": "d",
+          "text": "( 29/4 ; 77/4 )",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نعوّض في E = x² − 2x + 8 ؛ عند x = −1/2 نجد (−1/2)² = 1/4 و −2 × (−1/2) = 1 ، فتكون E = 1/4 + 1 + 8 = 37/4 ؛ وعند x = 5/2 نجد (5/2)² = 25/4 و −2 × 5/2 = −5 ، فتكون E = 25/4 − 5 + 8 = 25/4 + 12/4 = 37/4 ✓ ؛ أمّا الخطأ الشائع فهو حساب x² على أنّه 2x فتصير العبارة 2x − 2x + 8 = 8 في الحالتين ؛ أو إهمال إشارة الحدّ −2x فيخرج 1/4 − 1 + 8 = 29/4 و 25/4 + 5 + 8 = 77/4 ؛ أو تربيع البسط وحده أي حساب (−1/2)² على أنّه 1/2 و (5/2)² على أنّه 25/2 فيخرج 1/2 + 1 + 8 = 19/2 و 25/2 − 5 + 8 = 31/2.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.relatifs-operations",
+        "math.num.puissances"
+      ]
+    },
+    {
+      "type": "mcq",
+      "prompt": "نعتبر العبارة التالية حيث x عدد حقيقي:\n(x − 1)² + 7\nننشر المربّع ثمّ نجمع الحدود المتشابهة. أيّ كتابة نحصل عليها ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "x² − 2x + 8"
+        },
+        {
+          "id": "b",
+          "text": "x² − 2x + 6",
+          "misconceptionTag": "math.alg.carre-difference-signes"
+        },
+        {
+          "id": "c",
+          "text": "x² − x + 6"
+        },
+        {
+          "id": "d",
+          "text": "x² + 8",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "بمتطابقة مربّع الفرق (a − b)² = a² − 2ab + b² مع a = x و b = 1 نجد (x − 1)² = x² − 2x + 1 ، فتكون العبارة x² − 2x + 1 + 7 = x² − 2x + 8 ✓ وهي العبارة E نفسها ؛ ونتحقّق عند x = 3: (3 − 1)² + 7 = 11 و 9 − 6 + 8 = 11 ✓. أمّا الخطأ الشائع فهو نسيان الجداء المضاعف فيُكتب مربّع الفرق x² + 1 ويخرج x² + 8 ؛ أو إعطاء الحدّ الأخير إشارة سالبة فيُكتب x² − 2x − 1 ويخرج x² − 2x + 6 ؛ وقد يجتمع خطأ الحدّ الأخير مع كتابة الجداء المضاعف دون العامل 2 أي −x ، فيخرج x² − x + 6.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "type": "mcq",
+      "prompt": "وحدة قياس الطول هي الصنتمتر. في الشكل التالي ABCD مربّع طول ضلعه 4 ، و APRT مربّع طول ضلعه a حيث a عدد محصور بين 0 و 4 قطعًا. ما طول الارتفاع الصادر من الرأس R في المثلّث CDR ؟\n<svg viewBox=\"0 0 280 250\"><path d=\"M40 30 H112 V102 H40 Z\" fill=\"#0f6e56\" opacity=\"0.2\"/><path d=\"M40 210 L220 210 L112 102 Z\" fill=\"#d97706\" opacity=\"0.22\"/><path d=\"M40 30 H220 V210 H40 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M112 30 V102 H40\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M112 102 L40 210 M112 102 L220 210\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"30\" r=\"3.5\"/><circle cx=\"220\" cy=\"30\" r=\"3.5\"/><circle cx=\"220\" cy=\"210\" r=\"3.5\"/><circle cx=\"40\" cy=\"210\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"112\" cy=\"30\" r=\"3.5\"/><circle cx=\"40\" cy=\"102\" r=\"3.5\"/><circle cx=\"112\" cy=\"102\" r=\"3.5\"/></g><text x=\"28\" y=\"22\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">A</text><text x=\"232\" y=\"22\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">B</text><text x=\"232\" y=\"230\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">C</text><text x=\"28\" y=\"230\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">D</text><text x=\"112\" y=\"20\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">P</text><text x=\"26\" y=\"107\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">T</text><text x=\"126\" y=\"96\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">R</text><text x=\"76\" y=\"20\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">a</text><text x=\"26\" y=\"71\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">a</text><text x=\"130\" y=\"232\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">4</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "a"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "4 + a",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "4 − a"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "الارتفاع الصادر من R في المثلّث CDR هو المسافة بين R والمستقيم (CD) ؛ والنقطة R تبعد عن الضلع [AB] بالمسافة a لأنّ APRT مربّع طول ضلعه a ، وطول ضلع المربّع ABCD يساوي 4 ، فتبعد R عن الضلع المقابل [CD] بالمسافة 4 − a ✓ ؛ ونتحقّق عند a = 3: تبعد R عن [AB] بـ 3 فتبقى 1 بينها وبين [CD] و 4 − 3 = 1 ✓. الخطأ الشائع: أخذ الطول a وهو ضلع المربّع الصغير لا ارتفاع المثلّث ؛ أو أخذ الطول 4 وهو ضلع المربّع الكبير كلّه ؛ أو جمع a إلى 4 بدل طرحها فيخرج 4 + a وهو أكبر من ضلع المربّع ABCD فلا يصلح.",
+      "difficulty": 2,
+      "competencies": [
+        "math.mes.aires",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "type": "mcq",
+      "prompt": "وحدة قياس الطول هي الصنتمتر. في الشكل التالي ABCD مربّع طول ضلعه 4 ، و APRT مربّع طول ضلعه a حيث a عدد محصور بين 0 و 4 قطعًا. نرمز بـ S إلى مجموع مساحتي المربّع APRT والمثلّث CDR بالصنتمتر المربّع. ما عبارة S بدلالة a ؟\n<svg viewBox=\"0 0 280 250\"><path d=\"M40 30 H112 V102 H40 Z\" fill=\"#0f6e56\" opacity=\"0.2\"/><path d=\"M40 210 L220 210 L112 102 Z\" fill=\"#d97706\" opacity=\"0.22\"/><path d=\"M40 30 H220 V210 H40 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M112 30 V102 H40\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M112 102 L40 210 M112 102 L220 210\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"30\" r=\"3.5\"/><circle cx=\"220\" cy=\"30\" r=\"3.5\"/><circle cx=\"220\" cy=\"210\" r=\"3.5\"/><circle cx=\"40\" cy=\"210\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"112\" cy=\"30\" r=\"3.5\"/><circle cx=\"40\" cy=\"102\" r=\"3.5\"/><circle cx=\"112\" cy=\"102\" r=\"3.5\"/></g><text x=\"28\" y=\"22\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">A</text><text x=\"232\" y=\"22\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">B</text><text x=\"232\" y=\"230\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">C</text><text x=\"28\" y=\"230\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">D</text><text x=\"112\" y=\"20\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">P</text><text x=\"26\" y=\"107\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">T</text><text x=\"126\" y=\"96\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">R</text><text x=\"76\" y=\"20\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">a</text><text x=\"26\" y=\"71\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">a</text><text x=\"130\" y=\"232\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">4</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "a² + 2a"
+        },
+        {
+          "id": "b",
+          "text": "a² + 4a"
+        },
+        {
+          "id": "c",
+          "text": "a² − 2a + 8"
+        },
+        {
+          "id": "d",
+          "text": "a² − 4a + 16",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "مساحة المربّع APRT هي a² ؛ وللمثلّث CDR القاعدة [CD] طولها 4 والارتفاع الصادر من R يساوي 4 − a ، فمساحته (1/2) × 4 × (4 − a) = 2(4 − a) = 8 − 2a ؛ فيكون S = a² + 8 − 2a = a² − 2a + 8 ✓ ؛ ونتحقّق عند a = 3: مساحة المربّع 9 ومساحة المثلّث (1/2) × 4 × 1 = 2 ، فـ S = 11 و 9 − 6 + 8 = 11 ✓. الخطأ الشائع: نسيان النصف في مساحة المثلّث فتُحسب 4 × (4 − a) = 16 − 4a ويخرج a² − 4a + 16 ؛ أو أخذ الارتفاع a بدل 4 − a فتصير مساحة المثلّث 2a ويخرج a² + 2a ؛ وإذا اجتمع الخطآن خرج a² + 4a.",
+      "difficulty": 2,
+      "competencies": [
+        "math.mes.aires",
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "type": "mcq",
+      "prompt": "نعلم أنّه لكلّ عدد حقيقي x المساواة التالية:\nx² − 2x + 8 = (x − 1)² + 7\nونعلم أنّ S تُعطى بالمساواة التالية حيث a عدد محصور بين 0 و 4 قطعًا:\nS = a² − 2a + 8\nأيّ تبرير صحيح لكون S ≥ 7 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "S = a² − 2a + 8 ، وكلّ من a² و 8 موجب فنهمل −2a ، إذن S ≥ 8 وبالتالي S ≥ 7"
+        },
+        {
+          "id": "b",
+          "text": "S = (a − 1)² + 7 ، ومربّع أيّ عدد حقيقي موجب قطعًا ، إذن S ≥ 7"
+        },
+        {
+          "id": "c",
+          "text": "S = (a − 1)² + 7 ، ومربّع أيّ عدد حقيقي لا يقلّ عن 0 ، إذن S ≥ 7"
+        },
+        {
+          "id": "d",
+          "text": "S أصغر ما يمكن عند طرف المجال a = 0 وتساوي 8 ، إذن S ≥ 7"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "بتعويض x بالعدد a في المساواة المعطاة نجد S = a² − 2a + 8 = (a − 1)² + 7. ومربّع أيّ عدد حقيقي لا يقلّ عن 0 ، ومنه (a − 1)² ≥ 0 ، وبإضافة 7 إلى الطرفين نجد (a − 1)² + 7 ≥ 7 ، أي S ≥ 7 ✓ ؛ فالتبرير الصحيح هو الذي يستند إلى المساواة S = (a − 1)² + 7 وإلى أنّ المربّع لا يقلّ عن 0. الخطأ الشائع: الظنّ أنّ المربّع موجب قطعًا مع أنّه ينعدم عند انعدام أساسه ؛ أو إهمال الحدّ −2a لأنّه سالب واعتبار S ≥ 8 مع أنّ S قد تنزل إلى 7 ؛ أو افتراض أنّ أصغر قيمة لـ S تكون عند طرف المجال a = 0 وتساوي 8 ، مع أنّ S تنقص أوّلًا قبل أن ترتفع.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "type": "mcq",
+      "prompt": "نعلم أنّه لكلّ عدد a محصور بين 0 و 4 قطعًا المساواة التالية:\nS = (a − 1)² + 7\nأيّ مجموعة تضمّ كلّ الأعداد a التي تحقّق S = 7 ولا تضمّ غيرها ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "{ −1 }",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "b",
+          "text": "{ 1 }"
+        },
+        {
+          "id": "c",
+          "text": "{ 2 }"
+        },
+        {
+          "id": "d",
+          "text": "{ 7 }",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المساواة S = 7 تعني (a − 1)² + 7 = 7 ، أي (a − 1)² = 0 ؛ والمربّع لا ينعدم إلّا إذا انعدم أساسه ، فـ a − 1 = 0 ومنه a = 1 ✓ ؛ والعدد 1 محصور بين 0 و 4 قطعًا فهو مقبول ، وله وحده تكون S = 7 ؛ ونتحقّق: 1² − 2 × 1 + 8 = 1 − 2 + 8 = 7 ✓. الخطأ الشائع: نقل −1 إلى الطرف الآخر دون تغيير إشارته فيخرج a = −1 ، وهو خارج المجال المفروض ؛ أو كتابة قيمة S نفسها أي 7 بدل قيمة a ؛ أو إهمال الحدّ الثابت 1 والاكتفاء بحلّ a² − 2a = 0 فيخرج a = 2 لأنّ a = 0 خارج المجال.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.ordre-encadrement"
+      ]
+    }
+  ]
+}
