@@ -105,3 +105,33 @@ manquantes, confirmation de la double résolution, résultat des gates pour tes 
 - Pas de parenthèse d'unité ou de précision collée à un nombre ou à un intervalle, ni de point
   final après un intervalle ou une formule : écris l'unité en mots avant la donnée et termine la
   phrase par un mot arabe ou par « ؟ ».
+- **Une donnée retirée de l'énoncé officiel peut rendre un distracteur VRAI** : sans « مداه 4 »,
+  l'option « −3 ≤ A ≤ 5 » devenait un encadrement vrai (A ∈ [−3 ; 1] ⊂ [−3 ; 5]). Chaque fois que tu
+  adaptes un énoncé, recalcule que chaque option reste fausse.
+- **Vote terme à terme** : si chaque distracteur ne change qu'UN terme de la clé, on la reconstruit
+  en votant composante par composante. Pose au moins une option à DEUX erreurs (laissée muette) :
+  plan 2×2, la clé n'est pas le « coin » que les autres entourent.
+- **Un rappel ou une règle dans l'énoncé qui désigne la clé** (« عددان مقلوبان إذا وفقط إذا جداؤهما 1 »
+  avant un produit qui vaut 1) : ne le pose pas si le cours enseigne la notion (un rappel a livré la
+  clé ou sa moitié dans quatre questions). Une « seconde méthode » qui redemande la valeur d'une
+  question antérieure livre la clé par l'ordre d'émission : change ce qu'elle demande.
+- **Un énoncé qui redonne l'étape clé** d'une sous-question (la réécriture (x − √2/2)² − (1/2)² avant
+  de demander la factorisation) : donne la donnée brute (− 1/4), pas le résultat de l'étape.
+- **Un signe collé à une lettre dans un tronçon latin ordinaire** (« −x + 1 », « −x − 1 ») s'affiche
+  « x + 1− » : mets l'expression dans un tronçon isolé (parenthèse, √, inégalité) ou reformule. Un
+  deux-points ou un point collé à un CHIFFRE en fin de phrase (« … المقام 3: ») se renverse de même :
+  finis par un mot arabe.
+- **Chaque égalité écrite dans une explication est vraie** (« −2x + 4x = 6x » ne l'est pas) et le
+  mécanisme décrit doit PRODUIRE la valeur de l'option (« (√2/2)² = 1/4 : oubli de la racine »
+  donnerait √2/4, pas 1/4). Recalcule chaque chaîne d'égalités.
+- **Vocabulaire du cours** : reprends ses termes (« سهم » et non « تظليل » pour une demi-droite ;
+  « التفكيك التامّ ») ; « الجداءين » pour deux objets ; une formule par ligne, jamais dans la phrase
+  après « العبارة ».
+- **Multi** : ajoute une écriture juste équivalente (x = 1/2 ⟹ A = −3/2 et A = −1,5) pour que le nombre
+  de bonnes réponses ne se déduise pas d'une écriture par cas ; l'énoncé n'annonce pas ce nombre.
+- **Représentation sur une droite graduée** : compare avec le quiz du chapitre (un quiz publié porte
+  déjà le gabarit « cercle plein ou ouvert × flèche ») et pose la représentation en OPTIONS figurées
+  plutôt qu'en descriptions ; une figure d'énoncé ne montre pas la pointe noire de l'axe si elle
+  se confond avec la flèche de la solution.
+- **Énoncé nu = paire proche** : « نعتبر العددين … ما قيمة الجداء ؟ » double des missions publiées
+  (Jaccard 0,5 à 0,6). Garde le contexte de l'énoncé officiel (« بعد الاختزال صار العددان … »).
