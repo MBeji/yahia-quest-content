@@ -77,9 +77,11 @@ fichier** : l'orchestrateur renvoie les correctifs à l'auteur.
   méthode » qui redemande la valeur d'une question antérieure** : la clé sort par l'ordre d'émission.
 - **Vote terme à terme** sur les distracteurs qui ne changent qu'un terme de la clé : exige un plan
   2×2 (une option à deux erreurs, muette).
-- **Rendu bidi (plus fin)** : un signe collé à une lettre hors tronçon isolé (« −x + 1 » s'affiche
-  « x + 1− ») ; simule avec `isolateLtrRuns` puis bidi-js (ou rends en Chromium) et compare le texte
-  affiché au texte source. Une liste d'intervalles passe à la ligne depuis arena#1137.
+- **Rendu bidi (plus fin)** : depuis arena#1137 à #1139, les formes historiquement brouillées (signe
+  collé à une lettre, formule ouverte par un nombre puis une lettre, « ∠ », ponctuation et parenthèses
+  de bord, liste d'intervalles) sont traitées par le moteur ; simule toujours avec `isolateLtrRuns` /
+  `splitMathRuns` (ou rends en Chromium `dir=rtl`) et signale toute AUTRE chaîne dont l'ordre affiché
+  diffère du texte source.
 - **Explication fausse** : une égalité écrite qui n'en est pas une (« −2x + 4x = 6x »), ou un mécanisme
   d'erreur qui ne produit pas la valeur de l'option. Recalcule chaque égalité de chaque explication.
 - **Multi** : nombre de bonnes réponses déductible (une seule écriture juste par cas) ; énoncé au
