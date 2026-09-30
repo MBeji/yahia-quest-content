@@ -93,3 +93,21 @@ suffisent.
   في B » reprend une formule d'énoncé courante : le contrôle anti-copie y voit une plage de 8 mots.
   Varie la tournure (« نعلم أنّ … و … و … »).
 - La clé n'est jamais l'option la plus longue, y compris quand on retouche une option après l'audit.
+- Le titre d'une mission ne livre aucune clé : « عددان مقلوبان » donnait ab = 1 avant la première
+  question. Nomme la notion ou la technique, jamais un résultat que le sujet fait démontrer.
+- Pas de décimale de vérification dans une explication (« (تحقّق : a ≈ 1,59) ») ni de « seconde
+  méthode » qui chiffre une valeur : elles livrent le verdict ou la clé d'une question suivante.
+- Un énoncé au pluriel ou au duel (« ما الرتب », « رتبتين ») annonce le nombre de valeurs :
+  écris « رتبة أو رتبتين ».
+- Étiquette : le libellé du registre doit être l'erreur EXÉCUTÉE par l'option (un carré de somme
+  n'est pas un carré de différence ; ab écrit à la place de 2ab n'est pas un double produit oublié ;
+  soustraire les dénominateurs n'est pas les additionner). Sinon laisse l'option muette, note-la
+  dans ton rapport, et n'invente jamais un identifiant.
+- Aucune option n'est la somme ou la différence de deux autres (30 + 33 = 63), et aucun vote
+  majoritaire chiffre par chiffre ne reconstruit une clé à plusieurs chiffres.
+- Des sujets voisins recyclent leurs données (la paire 7 ± 4√3 revient en 2011 et en 2012) : deux
+  missions de chapitres différents se doublent alors. Change l'angle de la question (déduire une
+  relation plutôt que calculer un produit), pas seulement les nombres.
+- Pas de parenthèse d'unité ou de précision collée à un nombre ou à un intervalle, ni de point
+  final après un intervalle ou une formule : écris l'unité en mots avant la donnée et termine la
+  phrase par un mot arabe ou par « ؟ ».

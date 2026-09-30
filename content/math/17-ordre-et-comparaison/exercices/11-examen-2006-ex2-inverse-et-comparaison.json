@@ -1,0 +1,158 @@
+{
+  "title": "🏛️ مناظرة 2006 · التمرين 2 ⭐⭐⭐: جذور ومقلوب ثمّ مقارنة عددين",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 11,
+  "questions": [
+    {
+      "prompt": "ندرس العدد الحقيقي a المعرَّف بـ:\na = 2√75 − 4√12\nما قيمة a بعد تبسيط الجذرين؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "18√3",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "b",
+          "text": "2√3"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "−6√7",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نبسّط كلّ جذر بإخراج أكبر مربّع كامل: √75 = √(25 × 3) = 5√3 و √12 = √(4 × 3) = 2√3 ، فيكون a = 2 × 5√3 − 4 × 2√3 = 10√3 − 8√3 = 2√3 ✓. الخطأ الشائع إسقاط الجذر بقراءة 2√3 على أنّه 2 × 3 فيخرج 6، وتخرج القيمة نفسها لمن عكس العاملين عند الإخراج فكتب √75 = 3√25 = 15 و √12 = 3√4 = 6 فوجد 2 × 15 − 4 × 6 = 6 ؛ ومن جمع بدل أن يطرح وجد 10√3 + 8√3 = 18√3 ؛ ومن حسب الفرق تحت جذر واحد كتب 2√75 − 4√12 = (2 − 4)√(75 − 12) = −2√63 = −6√7 والجذر لا يُوزَّع على الطرح.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "لمقارنة العددين a و b نحسب الفرق بينهما، حيث:\na = 2√3\nb = 2 + √3\nما قيمة الفرق b − a بعد الاختزال؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 + 3√3",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "b",
+          "text": "√3 − 2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "√3",
+          "misconceptionTag": "math.alg.termes-semblables-par-coefficient"
+        },
+        {
+          "id": "d",
+          "text": "2 − √3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "b − a = (2 + √3) − 2√3 = 2 + √3 − 2√3 = 2 − √3 ✓ لأنّ √3 − 2√3 = −√3 (تحقّق: a + (2 − √3) = 2√3 + 2 − √3 = 2 + √3 = b). الخطأ الشائع جمع 2√3 بدل طرحه فيُكتب 2 + √3 + 2√3 = 2 + 3√3 ؛ ومن حسب a − b بدل b − a وجد a − b = 2√3 − (2 + √3) = √3 − 2 وهو مقابل الفرق المطلوب ؛ ومن جمع 2 مع √3 كأنّهما متشابهان كتب 2 + √3 = 3√3 فخرج √3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "علمًا أنّ الفرق:\nb − a = 2 − √3\nما الحكم الصحيح بين a و b مع حجّته؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "a < b ، لأنّ 2 − √3 > 0 إذ 3 < 4"
+        },
+        {
+          "id": "b",
+          "text": "a > b ، لأنّ 2 − √3 > 0",
+          "misconceptionTag": "math.num.ordre-inverse-a-tort"
+        },
+        {
+          "id": "c",
+          "text": "a > b ، لأنّ 2 − √3 < 0 إذ 3 > 2",
+          "misconceptionTag": "math.num.comparaison-radical-et-entier"
+        },
+        {
+          "id": "d",
+          "text": "a = b ، لأنّ √3 ≈ 2",
+          "misconceptionTag": "math.num.comparaison-radical-et-entier"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "لدينا (√3)² = 3 < 4 = 2² والعددان موجبان، فالجذر يحفظ الترتيب ويكون √3 < 2 ، إذن الفرق 2 − √3 > 0. وفرق موجب b − a يعني b > a، أي a < b ✓. الخطأ الشائع قراءة القاعدة بالعكس فيُكتب a > b رغم أنّ الفرق b − a موجب ؛ ومن قارن √3 مع 2 بمقارنة 3 و 2 وحدهما ظنّ √3 > 2 وظنّ الفرق سالبًا ؛ ومن قرّب √3 إلى 2 حكم بالتساوي، لأنّ التقريب إلى الوحدة يمحو الفرق.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعتبر العدد:\nb = 2 + √3\nونضربه في العدد 2 − √3. ما قيمة الجداء b × (2 − √3) ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "7",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "b",
+          "text": "4 − √3",
+          "misconceptionTag": "math.alg.difference-carres-second-terme-non-eleve-au-carre"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "−1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الجداء من الشكل (u + v)(u − v) = u² − v² مع u = 2 و v = √3: b × (2 − √3) = 2² − (√3)² = 4 − 3 = 1 ✓. وبما أنّ الجداء يساوي 1 فإنّ العدد 2 − √3 هو مقلوب b. الخطأ الشائع جمع المربّعين بدل طرحهما فيخرج 4 + 3 = 7 ؛ أو ترك الحدّ الثاني دون تربيع فيخرج 4 − √3 ؛ أو قلب ترتيب الطرح فيخرج 3 − 4 = −1.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعتبر العددين الموجبين:\na = 2√3\nb = 2 + √3\nونعلم أنّ a < b وأنّ العدد 2 − √3 هو مقلوب b. ما الحكم الصحيح في مقارنة العددين 2 − √3 و 1/(2√3) ، مع حجّته؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 − √3 > 1/(2√3) ، لأنّ المقلوب يحفظ ترتيب عددين موجبين",
+          "misconceptionTag": "math.num.inverse-conserve-l-ordre"
+        },
+        {
+          "id": "b",
+          "text": "2 − √3 = 1/(2√3) ، لأنّ 2 − √3 ≈ 0,3 و 1/(2√3) ≈ 0,3"
+        },
+        {
+          "id": "c",
+          "text": "2 − √3 > 1/(2√3) ، لأنّ 2 − √3 ≈ 0,3 و 1/(2√3) ≈ 0,29"
+        },
+        {
+          "id": "d",
+          "text": "2 − √3 < 1/(2√3) ، لأنّ المقلوب يقلب ترتيب عددين موجبين"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نكتب 2 − √3 = 1/b و 1/(2√3) = 1/a. العددان a و b موجبان و a < b، والمقلوب يقلب ترتيب عددين لهما الإشارة نفسها، إذن 1/b < 1/a أي 2 − √3 < 1/(2√3) ✓ (تحقّق: 2 − √3 ≈ 0,268 و 1/(2√3) ≈ 0,289). الفخّ أنّ القيمتين متقاربتان: التقريب إلى جزء من عشرة يعطي 0,3 للعددين معًا فيوحي بالتساوي، والتقريبان المختلفان في الدقّة (0,3 و 0,29) يوحيان بترتيب معكوس ؛ ومن حفظ الترتيب عند أخذ المقلوب كتب عكس المتباينة الصحيحة.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.racines-calcul"
+      ]
+    }
+  ]
+}

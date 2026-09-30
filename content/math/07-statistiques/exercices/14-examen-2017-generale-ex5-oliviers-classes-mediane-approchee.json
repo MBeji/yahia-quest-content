@@ -1,0 +1,185 @@
+{
+  "title": "🏛️ مناظرة 2017 · التمرين 5 ⭐⭐: أشجار حقل زيتون — الفئة المنوال والمعدّل والوسيط التقريبي",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 14,
+  "questions": [
+    {
+      "prompt": "يقدّم الجدول التالي توزيع أشجار حقل زيتون حسب إنتاجها بالكيلوغرام:\nالإنتاج بالكيلوغرام : [0 ; 20[ ، [20 ; 40[ ، [40 ; 60[ ، [60 ; 80[ ، [80 ; 100[\nعدد الأشجار : 20 ، 84 ، 136 ، 108 ، 52\nالفئة المنوال هي الفئة ذات أكبر تكرار. ما الفئة المنوال لهذه السلسلة الإحصائية ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "[80 ; 100[",
+          "misconceptionTag": "math.stat.mode-et-valeur-maximale-confondus"
+        },
+        {
+          "id": "b",
+          "text": "[60 ; 80["
+        },
+        {
+          "id": "c",
+          "text": "[40 ; 60["
+        },
+        {
+          "id": "d",
+          "text": "[0 ; 20["
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نقارن التكرارات 20 و84 و136 و108 و52: أكبرها 136، وهو تكرار الفئة [40 ; 60[ ، فهي الفئة المنوال ✓. الخطأ الشائع: تفضيل الفئة الأخيرة [80 ; 100[ لأنّ قيمها هي الأكبر، مع أنّ الفئة المنوال تُحدَّد بالتكرار لا بالقيمة؛ أو الوقوف عند الفئة [60 ; 80[ التي تأتي ثانية بتكرار 108؛ أو اختيار الفئة الأولى [0 ; 20[ وهي صاحبة أصغر تكرار (20).",
+      "difficulty": 1,
+      "competencies": [
+        "math.stat.mode",
+        "math.stat.effectifs-frequences"
+      ]
+    },
+    {
+      "prompt": "أشجار حقل زيتون موزّعة حسب الإنتاج بالكيلوغرام على الفئات [0 ; 20[ و [20 ; 40[ و [40 ; 60[ و [60 ; 80[ و [80 ; 100[ بالتكرارات 20 و84 و136 و108 و52 على الترتيب.\nاحسب بالكيلوغرام معدّل إنتاج شجرة زيتون في هذا الحقل.",
+      "options": [
+        {
+          "id": "a",
+          "text": "4352",
+          "misconceptionTag": "math.stat.moyenne-divisee-par-le-nombre-de-valeurs"
+        },
+        {
+          "id": "b",
+          "text": "54,4"
+        },
+        {
+          "id": "c",
+          "text": "50"
+        },
+        {
+          "id": "d",
+          "text": "44,4",
+          "misconceptionTag": "math.stat.borne-de-classe-au-lieu-du-centre"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نعوّض كلّ فئة بمركزها: 10 و30 و50 و70 و90، والتكرار الكلّي 20 + 84 + 136 + 108 + 52 = 400. المعدّل = (10 × 20 + 30 × 84 + 50 × 136 + 70 × 108 + 90 × 52) ÷ 400 = (200 + 2520 + 6800 + 7560 + 4680) ÷ 400 = 21 760 ÷ 400 = 54,4 كغ ✓. الخطأ الشائع: 44,4 هو نتيجة استعمال الطرف الأصغر لكلّ فئة بدل مركزها؛ و50 هو معدّل المراكز الخمسة دون ترجيحها بالتكرارات (وهو صدفةً مركز الفئة المنوال أيضًا)؛ و4352 = 21 760 ÷ 5 يقسم على عدد الفئات بدل التكرار الكلّي 400.",
+      "difficulty": 2,
+      "competencies": [
+        "math.stat.moyenne-mediane",
+        "math.stat.effectifs-frequences"
+      ]
+    },
+    {
+      "prompt": "التكرار المجمّع الصاعد (التراكمي الصاعد) الموافق لفئة هو عدد الأشجار التي يقلّ إنتاجها قطعًا عن الطرف الأكبر لهذه الفئة، أي مجموع تكرار هذه الفئة وتكرارات الفئات التي قبلها.\nتكرارات الفئات [0 ; 20[ و [20 ; 40[ و [40 ; 60[ و [60 ; 80[ و [80 ; 100[ هي على الترتيب 20 و84 و136 و108 و52.\nما التكرار المجمّع الصاعد الموافق للفئة [60 ; 80[ ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "108",
+          "misconceptionTag": "math.stat.effectif-cumule-non-cumule"
+        },
+        {
+          "id": "b",
+          "text": "160",
+          "misconceptionTag": "math.stat.cumul-croissant-decroissant-confondus"
+        },
+        {
+          "id": "c",
+          "text": "240"
+        },
+        {
+          "id": "d",
+          "text": "348"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "ينتهي مجال الفئة [60 ; 80[ عند 80 كغ، فنحصي كلّ الأشجار التي يقلّ إنتاجها عن 80 كغ، أي أشجار الفئات الأربع الأولى: 20 + 84 + 136 + 108 = 348 ✓ (ونتحقّق بالمتمّم: 400 − 52 = 348 لأنّ 52 شجرة فقط إنتاجها 80 كغ أو أكثر). الخطأ الشائع: الإجابة بتكرار الفئة وحدها 108؛ أو التوقّف قبل الفئة نفسها عند 240 فيُنسى تكرارها؛ أو العدّ من الجهة الأخرى 108 + 52 = 160، وهو عدد الأشجار التي إنتاجها 60 كغ أو أكثر.",
+      "difficulty": 2,
+      "competencies": [
+        "math.stat.effectifs-frequences"
+      ]
+    },
+    {
+      "prompt": "يمثّل المضلّع التالي التكرارات المجمّعة الصاعدة لإنتاج 400 شجرة زيتون : فاصلة كلّ نقطة هي إنتاج بالكيلوغرام، وترتيبتها هي التكرار المجمّع الصاعد الموافق له.\nبقراءة المضلّع، كم شجرة يقلّ إنتاجها عن 40 كغ ؟\n<svg viewBox=\"0 0 290 224\">\n<title>مضلّع التكرارات المجمّعة الصاعدة لإنتاج أشجار الحقل</title>\n<path d=\"M46 34 V194 M90.8 34 V194 M135.6 34 V194 M180.4 34 V194 M225.2 34 V194 M270 34 V194 M46 194 H270 M46 154 H270 M46 114 H270 M46 74 H270 M46 34 H270\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<path d=\"M46 194 H276 M46 194 V28\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/>\n<path d=\"M282 194 L274 190 L274 198 Z M46 22 L42 30 L50 30 Z\" fill=\"#0f172a\"/>\n<text x=\"46\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">0</text><text x=\"90.8\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">20</text><text x=\"135.6\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">40</text><text x=\"180.4\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">60</text><text x=\"225.2\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">80</text><text x=\"270\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">100</text><text x=\"40\" y=\"198\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">0</text><text x=\"40\" y=\"158\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">100</text><text x=\"40\" y=\"118\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">200</text><text x=\"40\" y=\"78\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">300</text><text x=\"40\" y=\"38\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">400</text>\n<polyline points=\"46,194 90.8,186 135.6,152.4 180.4,98 225.2,54.8 270,34\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n<circle cx=\"46\" cy=\"194\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"90.8\" cy=\"186\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"135.6\" cy=\"152.4\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"180.4\" cy=\"98\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"225.2\" cy=\"54.8\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"270\" cy=\"34\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<g font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"84.8\" y=\"178\" text-anchor=\"end\">20</text><text x=\"129.6\" y=\"144.4\" text-anchor=\"end\">104</text><text x=\"174.4\" y=\"90\" text-anchor=\"end\">240</text><text x=\"219.2\" y=\"46.8\" text-anchor=\"end\">348</text><text x=\"264\" y=\"26\" text-anchor=\"end\">400</text></g>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "20"
+        },
+        {
+          "id": "b",
+          "text": "84",
+          "misconceptionTag": "math.stat.effectif-cumule-non-cumule"
+        },
+        {
+          "id": "c",
+          "text": "104"
+        },
+        {
+          "id": "d",
+          "text": "240"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ترتيبة النقطة ذات الفاصلة 40 هي التكرار المجمّع الصاعد عند 40 كغ، أي عدد الأشجار التي يقلّ إنتاجها عن 40 كغ، وهي أشجار الفئتين [0 ; 20[ و [20 ; 40[ : نقرأ 104 ✓ (= 20 + 84). الخطأ الشائع: 84 هو تكرار الفئة [20 ; 40[ وحدها؛ و20 هو ترتيبة الفاصلة 20 (الأشجار التي يقلّ إنتاجها عن 20 كغ)؛ و240 هو ترتيبة الفاصلة 60.",
+      "difficulty": 2,
+      "competencies": [
+        "math.stat.effectifs-frequences"
+      ]
+    },
+    {
+      "prompt": "يمثّل المضلّع التالي التكرارات المجمّعة الصاعدة لإنتاج 400 شجرة زيتون. الوسيط (الموسّط) هو الإنتاج الذي يبلغ عنده التكرار المجمّع الصاعد نصف عدد الأشجار، أي 400 ÷ 2 = 200. نصل بقطعة مستقيمة بين النقطتين (40 ; 104) و(60 ; 240) من المضلّع، ونعتبر أنّ التكرار المجمّع يتزايد بانتظام بين هاتين النقطتين.\nما القيمة التقريبية لوسيط إنتاج شجرة زيتون بالكيلوغرام ؟\n<svg viewBox=\"0 0 290 224\">\n<title>مضلّع التكرارات المجمّعة الصاعدة لإنتاج أشجار الحقل</title>\n<path d=\"M46 34 V194 M90.8 34 V194 M135.6 34 V194 M180.4 34 V194 M225.2 34 V194 M270 34 V194 M46 194 H270 M46 154 H270 M46 114 H270 M46 74 H270 M46 34 H270\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<path d=\"M46 194 H276 M46 194 V28\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/>\n<path d=\"M282 194 L274 190 L274 198 Z M46 22 L42 30 L50 30 Z\" fill=\"#0f172a\"/>\n<text x=\"46\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">0</text><text x=\"90.8\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">20</text><text x=\"135.6\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">40</text><text x=\"180.4\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">60</text><text x=\"225.2\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">80</text><text x=\"270\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">100</text><text x=\"40\" y=\"198\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">0</text><text x=\"40\" y=\"158\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">100</text><text x=\"40\" y=\"118\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">200</text><text x=\"40\" y=\"78\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">300</text><text x=\"40\" y=\"38\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">400</text>\n<polyline points=\"46,194 90.8,186 135.6,152.4 180.4,98 225.2,54.8 270,34\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n<circle cx=\"46\" cy=\"194\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"90.8\" cy=\"186\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"135.6\" cy=\"152.4\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"180.4\" cy=\"98\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"225.2\" cy=\"54.8\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"270\" cy=\"34\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<g font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"84.8\" y=\"178\" text-anchor=\"end\">20</text><text x=\"129.6\" y=\"144.4\" text-anchor=\"end\">104</text><text x=\"174.4\" y=\"90\" text-anchor=\"end\">240</text><text x=\"219.2\" y=\"46.8\" text-anchor=\"end\">348</text><text x=\"264\" y=\"26\" text-anchor=\"end\">400</text></g>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "60"
+        },
+        {
+          "id": "b",
+          "text": "54,1"
+        },
+        {
+          "id": "c",
+          "text": "50"
+        },
+        {
+          "id": "d",
+          "text": "14,1",
+          "misconceptionTag": "math.stat.interpolation-borne-inferieure-oubliee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "بين النقطتين (40 ; 104) و(60 ; 240) يزداد عدد الأشجار بـ 240 − 104 = 136 شجرة مقابل زيادة 20 كغ في الإنتاج. للبلوغ من 104 إلى 200 نحتاج 200 − 104 = 96 شجرة، أي 96 ÷ 136 من عرض القطعة: الإنتاج = 40 + (96 ÷ 136) × 20 = 40 + 14,12 = 54,12 ≈ 54,1 كغ ✓ (وهو بين 40 و60 كما يجب). الخطأ الشائع: 14,1 هي الزيادة وحدها دون إضافة الطرف 40؛ و50 هو مركز الفئة [40 ; 60[ وليس الوسيط؛ و60 هو الطرف الأكبر لهذه الفئة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.stat.moyenne-mediane",
+        "math.stat.effectifs-frequences"
+      ]
+    },
+    {
+      "prompt": "قام صاحب حقل زيتون بجمع محصول إحدى أشجاره بصفة عشوائية من بين 400 شجرة موزّعة حسب الإنتاج بالكيلوغرام كما يلي : 20 شجرة في [0 ; 20[ و84 في [20 ; 40[ و136 في [40 ; 60[ و108 في [60 ; 80[ و52 في [80 ; 100[\nما احتمال أن يكون إنتاج هذه الشجرة أقلّ من 60 كغ ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "87 %",
+          "misconceptionTag": "math.stat.classe-commencant-au-seuil-comptee"
+        },
+        {
+          "id": "b",
+          "text": "60 %"
+        },
+        {
+          "id": "c",
+          "text": "40 %",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "d",
+          "text": "26 %"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "يكون الإنتاج أقلّ من 60 كغ في الفئات الثلاث الأولى وحدها، أمّا الفئة [60 ; 80[ فتبدأ عند 60 كغ ولا تدخل: 20 + 84 + 136 = 240 شجرة من 400، فالاحتمال 240 ÷ 400 = 0,6 = 60 % ✓ (وبطريقة ثانية: 1 − (108 + 52) ÷ 400 = 1 − 0,4 = 0,6 ✓). الخطأ الشائع: 40 % = (108 + 52) ÷ 400 هو احتمال الحدث المعاكس، أي إنتاج 60 كغ أو أكثر؛ و26 % = 104 ÷ 400 يتوقّف عند 40 كغ؛ و87 % = 348 ÷ 400 يضمّ الفئة [60 ; 80[ التي يبدأ إنتاجها من 60 كغ.",
+      "difficulty": 2,
+      "competencies": [
+        "math.prob.frequence-et-chance",
+        "math.stat.effectifs-frequences"
+      ]
+    }
+  ]
+}

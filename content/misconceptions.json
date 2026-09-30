@@ -5210,5 +5210,113 @@
       "ar": "تظنّ أنّ التربيع يكبّر دائمًا وأنّ الجذر يصغّر دائمًا: لعدد محصور بين 0 و 1 يحدث العكس — a² < a < √a"
     },
     "competency": "math.num.ordre-encadrement"
+  },
+  "math.alg.carre-somme-signe-double-produit": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu donnes le signe moins au double produit dans le carré d'une somme : (a + b)² = a² + 2ab + b²",
+      "en": "You give the cross term a minus sign in the square of a sum: (a + b)² = a² + 2ab + b²",
+      "ar": "تعطي الجداء المضاعف إشارة ناقص في مربّع المجموع: (a + b)² = a² + 2ab + b²"
+    },
+    "competency": "math.alg.identites-remarquables"
+  },
+  "math.frac.soustraction-denominateurs": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu soustrais les dénominateurs : 1/a − 1/b ne vaut pas 1/(a − b), il faut d'abord réduire au même dénominateur",
+      "en": "You subtract the denominators: 1/a − 1/b is not 1/(a − b) — bring both to a common denominator first",
+      "ar": "تطرح المقامين: 1/a − 1/b لا تساوي 1/(a − b)، بل نوحّد المقامات أوّلًا"
+    },
+    "competency": "math.frac.add-sous"
+  },
+  "math.alg.double-produit-sans-facteur-2": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu écris le double produit sans son facteur 2 : dans (a + b)², le terme du milieu vaut 2ab, pas ab",
+      "en": "You write the cross term without its factor 2: in (a + b)², the middle term is 2ab, not ab",
+      "ar": "تكتب الجداء المضاعف دون العامل 2: في (a + b)² الحدّ الأوسط هو 2ab لا ab"
+    },
+    "competency": "math.alg.identites-remarquables"
+  },
+  "math.stat.cumul-croissant-decroissant-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu cumules dans le mauvais sens : le cumul croissant part de la plus petite valeur, le cumul décroissant de la plus grande",
+      "en": "You cumulate in the wrong direction: an ascending cumulative starts from the smallest value, a descending one from the largest",
+      "ar": "تجمّع في الاتجاه المعاكس: التجميع الصاعد يبدأ من أصغر قيمة، والتجميع النازل يبدأ من أكبرها"
+    },
+    "competency": "math.stat.effectifs-frequences"
+  },
+  "math.stat.seuil-strict-borne-incluse": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu inclus la borne alors que l'inégalité est stricte : « plus de 3 » exclut 3, « moins de 60 » exclut 60",
+      "en": "You include the bound although the inequality is strict: “more than 3” excludes 3, “less than 60” excludes 60",
+      "ar": "تُدخل الحدّ والمتراجحة صارمة: «أكثر من 3» لا تشمل 3، و«أقلّ من 60» لا تشمل 60"
+    },
+    "competency": "math.stat.effectifs-frequences"
+  },
+  "math.stat.borne-de-classe-au-lieu-du-centre": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu remplaces chaque classe par l'une de ses bornes au lieu de son centre : le centre est la moyenne des deux bornes",
+      "en": "You replace each class by one of its bounds instead of its centre: the centre is the mean of the two bounds",
+      "ar": "تعوّض كلّ فئة بأحد طرفيها بدل مركزها: مركز الفئة هو معدّل طرفيها"
+    },
+    "competency": "math.stat.moyenne-mediane"
+  },
+  "math.stat.interpolation-borne-inferieure-oubliee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu calcules le décalage dans la classe mais oublies d'y ajouter sa borne inférieure",
+      "en": "You work out the offset within the class but forget to add its lower bound",
+      "ar": "تحسب الزيادة داخل الفئة وتنسى إضافة طرفها الأصغر"
+    },
+    "competency": "math.stat.moyenne-mediane"
+  },
+  "math.stat.classe-commencant-au-seuil-comptee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu comptes la classe qui commence au seuil : « moins de 60 » s'arrête à la borne 60, la classe qui commence à 60 est au-dessus",
+      "en": "You count the class that starts at the threshold: “less than 60” stops at the bound 60, the class starting at 60 lies above it",
+      "ar": "تحسب الفئة التي تبدأ عند الحدّ: «أقلّ من 60» تتوقّف عند الحدّ 60، والفئة التي تبدأ عند 60 تقع فوقها"
+    },
+    "competency": "math.stat.effectifs-frequences"
+  },
+  "math.stat.moyenne-divisee-par-le-nombre-de-valeurs": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu divises la somme des produits par le nombre de valeurs (ou de classes) au lieu de l'effectif total",
+      "en": "You divide the sum of the products by the number of values (or classes) instead of the total frequency",
+      "ar": "تقسم مجموع الجداءات على عدد القيم (أو الفئات) بدل التكرار الكلّي"
+    },
+    "competency": "math.stat.moyenne-mediane"
+  },
+  "math.vec.symetrie-centrale-un-seul-signe": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu ne changes le signe que d'une coordonnée : c'est un symétrique par rapport à un axe. Le symétrique par rapport à O change les DEUX signes : M(x ; y) donne M′(−x ; −y)",
+      "en": "You only flip the sign of one coordinate: that is a reflection in an axis. The image by the point reflection in O changes BOTH signs: M(x ; y) gives M′(−x ; −y)",
+      "ar": "تغيّر إشارة إحداثيّة واحدة فقط، وهذه مناظرة بالنسبة إلى محور: مناظرة M(x ; y) بالنسبة إلى O هي M′(−x ; −y) ، تتغيّر الإشارتان معًا"
+    },
+    "competency": "math.vec.repere-coordonnees"
+  },
+  "math.num.facteur-racine-sans-carre": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu fais entrer ou sortir un facteur de la racine sans le carrer ou le prendre en racine : 3√2 = √(9 × 2) = √18, pas √(3 × 2) ; √8 = 2√2, pas 4√2",
+      "en": "You move a factor into or out of a root without squaring it or taking its root: 3√2 = √(9 × 2) = √18, not √(3 × 2); √8 = 2√2, not 4√2",
+      "ar": "تُدخل عاملًا تحت الجذر أو تُخرجه دون تربيعه أو أخذ جذره: 3√2 = √(9 × 2) = √18 لا √(3 × 2) ، و √8 = 2√2 لا 4√2"
+    },
+    "competency": "math.num.racines-calcul"
+  },
+  "math.geo.pythagore-egalite-approchee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu acceptes une égalité approchée : dans la réciproque de Pythagore, 61 et 64 sont différents, donc le triangle n'est pas rectangle",
+      "en": "You accept an approximate equality: in the converse of Pythagoras, 61 and 64 are different, so the triangle is not right-angled",
+      "ar": "تقبل مساواة تقريبية: في عكس نظرية فيثاغورس 61 و 64 عددان مختلفان، فالمثلث ليس قائمًا"
+    },
+    "competency": "math.geo.pythagore"
   }
 }

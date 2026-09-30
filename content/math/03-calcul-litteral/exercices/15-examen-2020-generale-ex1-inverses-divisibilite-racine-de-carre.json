@@ -1,0 +1,187 @@
+{
+  "title": "🏛️ مناظرة 2020 · التمرين 1 ⭐⭐: مقلوبان ومتطابقة، وقابلية القسمة، وجذر مربّع",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 15,
+  "questions": [
+    {
+      "prompt": "a و b عددان حقيقيّان موجبان ومقلوبان، ويحقّقان:\na² + b² = 5/2\nما قيمة (a + b)² ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2",
+          "misconceptionTag": "math.alg.carre-somme-signe-double-produit"
+        },
+        {
+          "id": "b",
+          "text": "5/2",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "c",
+          "text": "7/2",
+          "misconceptionTag": "math.alg.double-produit-sans-facteur-2"
+        },
+        {
+          "id": "d",
+          "text": "9/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "لأنّ a و b مقلوبان فإنّ a × b = 1. ومن المتطابقة (a + b)² = a² + 2ab + b² نجد: (a + b)² = 5/2 + 2 × 1 = 9/2 ✓. الخطأ الشائع إسقاط الجداء المضاعف 2ab، فيبقى 5/2 وهو a² + b² لا (a + b)²؛ ومن كتب الجداء المضاعف ab بدل 2ab وجد 7/2؛ ومن أعطاه إشارة ناقص استعمل متطابقة الفرق (a − b)² = 5/2 − 2 = 1/2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "المجموع a + b عدد موجب، ومربّعه يساوي 9/2:\n(a + b)² = 9/2\nما قيمة هذا المجموع ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/2"
+        },
+        {
+          "id": "b",
+          "text": "3√2/2"
+        },
+        {
+          "id": "c",
+          "text": "9/4",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
+        },
+        {
+          "id": "d",
+          "text": "9√2/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "a + b موجب، فهو الجذر التربيعي الموجب للعدد 9/2: a + b = √(9/2) = √9/√2 = 3/√2. ننطق المقام بضرب البسط والمقام في √2 فنجد 3√2/2 ✓. تحقّق: (3√2/2)² = 9 × 2/4 = 9/2 ✓. الخطأ الشائع أخذ جذر البسط وحده فيبقى 3/2، أو أخذ جذر المقام وحده فيصير 9/√2 = 9√2/2، أو أخذ نصف العدد بدل جذره فيخرج 9/4.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نكتب العدد الصحيح N بأرقامه على الصورة:\nN = 5bababa4\nأي أنّ أرقامه من اليسار إلى اليمين هي 5 ثمّ b ثمّ a ثمّ b ثمّ a ثمّ b ثمّ a ثمّ 4، حيث b رقم و a رقم فردي.\nما الكتابة المبسّطة لمجموع أرقام N ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "9 + a + b"
+        },
+        {
+          "id": "b",
+          "text": "5 + 3a + 3b"
+        },
+        {
+          "id": "c",
+          "text": "9 + 3a + 3b"
+        },
+        {
+          "id": "d",
+          "text": "9 + 6ab",
+          "misconceptionTag": "math.alg.termes-semblables-par-coefficient"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الرقمان 5 و4 مجموعهما 9، والحرف b يظهر ثلاث مرّات والحرف a يظهر ثلاث مرّات، فمجموع الأرقام هو 9 + 3a + 3b ✓. تحقّق بـ a = 1 و b = 0: العدد 50101014 ومجموع أرقامه 5 + 0 + 1 + 0 + 1 + 0 + 1 + 4 = 12 = 9 + 3 × 1 + 3 × 0 ✓. الخطأ الشائع جمع 3a و3b في حدّ واحد 6ab، وهما ليسا حدّين متشابهين لأنّ جزأيهما الحرفيّين مختلفان؛ ومن عدّ كلّ حرف مرّة واحدة وجد 9 + a + b؛ ومن أغفل الرقم الأخير 4 وجد 5 + 3a + 3b.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
+    },
+    {
+      "prompt": "العدد الصحيح N = 5bababa4 يُكتب بثمانية أرقام، b رقم و a رقم فردي. مجموع أرقامه يساوي:\n9 + 3a + 3b\nأيّ الأعداد التالية يقسم N مهما كان الرقم b ومهما كان الرقم الفردي a ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "15",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "N ينتهي بالرقم 4 فهو زوجي، ومجموع أرقامه 9 + 3a + 3b = 3(3 + a + b) مضاعف للعدد 3 مهما كانت قيمتا a و b؛ فهو يقبل القسمة على 2 وعلى 3 معًا، أي على 6 ✓. أمّا 12 فيلزمه القسمة على 4 أيضًا، ورقماه الأخيران a4 حيث a فردي هما 14 أو 34 أو 54 أو 74 أو 94، وليس أيّ منها مضاعفًا للعدد 4 (مثلًا 14 = 4 × 3 + 2). وأمّا 15 فيلزمه رقم آحاد 0 أو 5، ورقم آحاد N هو 4. وأمّا 9 فيلزمه أن يكون 3 + a + b مضاعفًا للعدد 3، وهذا لا يتحقّق دائمًا: مع a = 1 و b = 0 يكون مجموع الأرقام 12 وهو ليس مضاعفًا للعدد 9. الخطأ الشائع الاكتفاء بمعيار واحد هو معيار 3 فيُختار 15، أو الظنّ أنّ الرقم الأخير 4 وحده يضمن القسمة على 4 فيُختار 12، أو تطبيق معيار 3 كأنّه معيار 9 فيُختار 9.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
+    },
+    {
+      "prompt": "ما الترتيب التصاعدي الصحيح للأعداد 3 و 2√3 و 4 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√3 < 3 < 4",
+          "misconceptionTag": "math.num.exposant-porte-sur-un-seul-facteur"
+        },
+        {
+          "id": "b",
+          "text": "3 < 2√3 < 4"
+        },
+        {
+          "id": "c",
+          "text": "3 < 4 < 2√3"
+        },
+        {
+          "id": "d",
+          "text": "3 = 2√3 < 4",
+          "misconceptionTag": "math.num.comparaison-radical-et-entier"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الأعداد الثلاثة موجبة، فنقارنها بمقارنة مربّعاتها: 3² = 9 و (2√3)² = 4 × 3 = 12 و 4² = 16. ولمّا كان 9 < 12 < 16 فإنّ 3 < 2√3 < 4 ✓. ومنه 3 − 2√3 سالب و 4 − 2√3 موجب. الخطأ الشائع رفع √3 وحدها إلى المربّع فيصير (2√3)² = 2 × 3 = 6، وهو أصغر من 9، فيخرج 2√3 < 3؛ ومن قرّب 2√3 إلى 3 ظنّ العددين متساويين، والفرق بين مربّعيهما 12 − 9 = 3 يكفي لإثبات أنّهما مختلفان؛ ومن كتب 2√3 = 6 (كأنّ √3 = 3) وجد (2√3)² = 36 > 16 فرتّب 3 < 4 < 2√3، والصواب 12 < 16، أي 2√3 < 4.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ما قيمة العدد التالي ؟\n√((3 − 2√3)²) + √((4 − 2√3)²)",
+      "options": [
+        {
+          "id": "a",
+          "text": "4√3 − 7",
+          "misconceptionTag": "math.num.valeur-absolue-toujours-oppose"
+        },
+        {
+          "id": "b",
+          "text": "7 − 4√3",
+          "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "7 + 4√3",
+          "misconceptionTag": "math.num.valeur-absolue-somme-additive"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "√(x²) = |x|. الجذر لا يكون سالبًا، فنحدّد إشارة العدد المربَّع تحت كلّ جذر: 3 − 2√3 سالب (لأنّ 2√3 = √12 أكبر من 3 = √9) و4 − 2√3 موجب (لأنّ √12 أصغر من 4 = √16). إذن √((3 − 2√3)²) = |3 − 2√3| = −(3 − 2√3) = 2√3 − 3، و√((4 − 2√3)²) = 4 − 2√3. المجموع: (2√3 − 3) + (4 − 2√3) = 1 ✓. الخطأ الشائع كتابة جذر المربّع دون قيمة مطلقة: (3 − 2√3) + (4 − 2√3) = 7 − 4√3 ≈ 0,07 ولا يساوي 1؛ ومن أخذ المقابل في الحالتين وجد 4√3 − 7؛ ومن حذف إشارتَي الطرح وجد 7 + 4√3.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.num.racines-calcul"
+      ]
+    }
+  ]
+}
