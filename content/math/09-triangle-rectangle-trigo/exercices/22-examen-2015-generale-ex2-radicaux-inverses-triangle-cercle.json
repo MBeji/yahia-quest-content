@@ -1,0 +1,307 @@
+{
+  "title": "🏛️ مناظرة 2015 · التمرين 2 ⭐⭐⭐: عددان مقلوبان بجذور — مثلث قائم ودائرة مركزها رأس",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 22,
+  "questions": [
+    {
+      "prompt": "ما قيمة العدد التالي ؟\n(1 + √13)²",
+      "options": [
+        {
+          "id": "a",
+          "text": "14",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "b",
+          "text": "1 + 4√13",
+          "misconceptionTag": "math.num.puissance-confondue-avec-produit"
+        },
+        {
+          "id": "c",
+          "text": "14 − 2√13"
+        },
+        {
+          "id": "d",
+          "text": "14 + 2√13"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نطبّق متطابقة مربّع المجموع (a + b)² = a² + 2ab + b² مع a = 1 و b = √13: (1 + √13)² = 1 + 2√13 + 13 = 14 + 2√13 ✓ (≈ 21,21). الخطأ الشائع: نسيان الجداء المضاعف فنجد 1 + 13 = 14 ؛ أو الخلط مع متطابقة مربّع الفرق فنجد 14 − 2√13 ؛ أو تربيع √13 على أنّه 2√13 (ضرب في الأسّ) فنجد 1 + 2√13 + 2√13 = 1 + 4√13.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعتبر العدد الحقيقي التالي:\na = ((1 + √13)² − 8)/4\nونعلم أنّ (1 + √13)² = 14 + 2√13\nما الكتابة المبسّطة للعدد a ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(3 + √13)/4",
+          "misconceptionTag": "math.frac.reduction-un-seul-terme-divise"
+        },
+        {
+          "id": "b",
+          "text": "(3 + √13)/2"
+        },
+        {
+          "id": "c",
+          "text": "(6 + √13)/2"
+        },
+        {
+          "id": "d",
+          "text": "(6 + 2√13)/2",
+          "misconceptionTag": "math.frac.reduction-un-seul-terme-divise"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(1 + √13)² − 8 = 14 + 2√13 − 8 = 6 + 2√13 ، فـ a = (6 + 2√13)/4. نقسم على 2 كلّ حدّ من البسط ثمّ المقام: a = (3 + √13)/2 ✓ (≈ 3,30). الخطأ الشائع: قسمة البسط على 2 وترك المقام 4 فنجد (3 + √13)/4 ؛ أو قسمة المقام وحده على 2 فنجد (6 + 2√13)/2 ؛ أو قسمة أحد حدّي البسط وحده مع المقام فنجد (6 + √13)/2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "لدينا العدد b حيث:\nb = (√52 − 6)/4\nأيّ كتابة مبسّطة تساوي b ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(√13 − 3)/2"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        },
+        {
+          "id": "c",
+          "text": "(2√13 − 3)/2"
+        },
+        {
+          "id": "d",
+          "text": "5",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نُخرج المربّع الكامل من تحت الجذر: 52 = 4 × 13 ، فـ √52 = 2√13 ، ومنه b = (2√13 − 6)/4 = (√13 − 3)/2 ✓ (≈ 0,30 ؛ تحقّق: √52 ≈ 7,211 و (7,211 − 6)/4 ≈ 0,303). الخطأ الشائع: أخذ نصف 52 بدل جذره فنجد √52 = 26 و b = (26 − 6)/4 = 5 ؛ أو توزيع الجذر على الفرق √52 − 6 = √52 − √36 = √16 = 4 فنجد b = 4/4 = 1 ؛ أو إخراج العدد 4 نفسه بدل جذره فنجد √52 = 4√13 و b = (4√13 − 6)/4 = (2√13 − 3)/2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ:\na = (√13 + 3)/2\nb = (√13 − 3)/2\nما قيمة الفرق b − a ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−6"
+        },
+        {
+          "id": "b",
+          "text": "−3"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "للعددين المقام نفسه 2 ، فـ b − a = ((√13 − 3) − (√13 + 3))/2 = (√13 − 3 − √13 − 3)/2 = −6/2 = −3 ✓ (تحقّق: 0,303 − 3,303 = −3). الخطأ الشائع: عدم تغيير إشارة حدود المطروح كلّها فنكتب √13 − 3 − √13 + 3 = 0 ؛ أو ترك −6 دون قسمتها على 2 ؛ أو عكس ترتيب الطرح فنجد a − b = 3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "لدينا العددان التاليان:\na = (√13 + 3)/2\nb = (√13 − 3)/2\nكم يساوي جداؤهما a × b ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "5/2",
+          "misconceptionTag": "math.alg.difference-carres-second-terme-non-eleve-au-carre"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "11/2",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نطبّق المتطابقة (a + b)(a − b) = a² − b² على البسطين: (√13 + 3)(√13 − 3) = 13 − 9 = 4 ، والمقامان 2 × 2 = 4 ، فـ a × b = 4/4 = 1 ✓. إذن a مقلوب b ، أي a = 1/b. الخطأ الشائع: جمع المربّعين بدل طرحهما، 13 + 9 = 22 فنجد 22/4 = 11/2 ؛ أو عدم تربيع الحدّ الثاني 3 ، أي 13 − 3 = 10 فنجد 10/4 = 5/2 ؛ أو ترك البسط 4 دون القسمة على المقام 4.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "a و b عددان حقيقيان غير معدومين حيث a × b = 1.\nأيّ عبارة تساويها العبارة التالية ؟\nb/a + a/b − 2",
+      "options": [
+        {
+          "id": "a",
+          "text": "(a + b)²",
+          "misconceptionTag": "math.alg.carre-difference-signes"
+        },
+        {
+          "id": "b",
+          "text": "b² − a²"
+        },
+        {
+          "id": "c",
+          "text": "(b − a)²"
+        },
+        {
+          "id": "d",
+          "text": "b − a"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نوحّد المقامات: b/a + a/b = (b² + a²)/(ab) = a² + b² لأنّ ab = 1. إذن b/a + a/b − 2 = a² + b² − 2ab (لأنّ 2 = 2ab) = (b − a)² ✓ بمتطابقة مربّع الفرق. التحقّق بالعددين a = (√13 + 3)/2 و b = (√13 − 3)/2: a² + b² = 11 فالعبارة تساوي 11 − 2 = 9 و (b − a)² = (−3)² = 9 ✓. الخطأ الشائع: كتابة (a + b)² وهي تخالف العبارة بـ 4ab = 4 (ففيها 13 لا 9) ؛ أو تحويل a² + b² − 2 إلى b² − a² ؛ أو الاكتفاء بـ b − a دون تربيع.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "a و b عددان موجبان حيث a × b = 1 و b − a = −3\nنعلم أنّ:\nb/a + a/b − 2 = (b − a)²\nما قيمة العدد التالي ؟\n√(b/a + a/b − 2)",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3",
+          "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "b/a + a/b − 2 = (b − a)² = (−3)² = 9 ، فالعدد المطلوب √9 = 3 ✓. وبصيغة عامّة √((b − a)²) = |b − a| = |−3| = 3 وليس b − a. الخطأ الشائع: كتابة √((b − a)²) = b − a = −3 ، وهو عدد سالب لا يمكن أن يكون جذرًا تربيعيًّا ؛ أو التوقّف عند 9 قبل أخذ الجذر ؛ أو فهم أنّ b مقلوب a يعني b/a = 1 ، فنجد √(1 + 1 − 2) = 0 ، مع أنّه يعني a × b = 1.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.racines-definition",
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "prompt": "ABE مثلث قائم في A حيث AB = 3 cm و AE = 2 cm. الدائرة C مركزها B وتمرّ من النقطة E ، وتقطع نصف المستقيم [AB) في النقطة D.\nما طولا القطعتين [BE] و [BD] بالصنتمتر ؟\n<svg viewBox=\"0 0 340 240\"><title>المثلث ABE القائم في A والدائرة C التي مركزها B وتمرّ من E وتقطع نصف المستقيم [AB) في D</title><polygon points=\"50,190 170,190 50,110\" fill=\"#0f6e56\" fill-opacity=\"0.06\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M170 190 L314.22 190\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 190 L170 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 110 A144.22 144.22 0 0 1 314.22 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M61 190 L61 179 L50 179\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 190 L50 110\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 190 L314.22 190\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"190\" r=\"3.8\"/><circle cx=\"170\" cy=\"190\" r=\"3.8\"/><circle cx=\"50\" cy=\"110\" r=\"3.8\"/><circle cx=\"314.22\" cy=\"190\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"38\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"164\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"38\" y=\"104\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"318.22\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "BE = √13 و BD = 3 + √13",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "BE = √13 و BD = √13"
+        },
+        {
+          "id": "c",
+          "text": "BE = 13 و BD = 13",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "d",
+          "text": "BE = 5 و BD = 5",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المثلث ABE قائم في A ، فالوتر [BE] يحقّق BE² = AB² + AE² = 9 + 4 = 13 ، ومنه BE = √13 cm. والنقطتان E و D من الدائرة C التي مركزها B ، فـ BD = BE = √13 cm (كلّ منهما شعاع) ✓. الخطأ الشائع: جمع الطولين 3 + 2 = 5 ؛ أو التوقّف عند BE² = 13 ؛ أو خلط BD مع AD = AB + BD = 3 + √13 ، مع أنّ D تبعد عن مركز الدائرة B بشعاعها فقط.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.geo.cercle"
+      ]
+    },
+    {
+      "prompt": "ABE مثلث قائم في A حيث AB = 3 cm ، والدائرة C التي مركزها B وشعاعها BE = √13 cm تقطع نصف المستقيم [AB) في النقطة D ، و I منتصف القطعة [AD]\nما طول القطعة [AI] بالصنتمتر ؟\n<svg viewBox=\"0 0 340 240\"><title>المثلث ABE القائم في A والدائرة C التي مركزها B وتمرّ من E وتقطع نصف المستقيم [AB) في D</title><polygon points=\"50,190 170,190 50,110\" fill=\"#0f6e56\" fill-opacity=\"0.06\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M170 190 L314.22 190\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 190 L170 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 110 A144.22 144.22 0 0 1 314.22 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M61 190 L61 179 L50 179\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 219 V229 M50 224 H182.11 M182.11 219 V229\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"butt\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"190\" r=\"3.8\"/><circle cx=\"170\" cy=\"190\" r=\"3.8\"/><circle cx=\"50\" cy=\"110\" r=\"3.8\"/><circle cx=\"314.22\" cy=\"190\" r=\"3.8\"/></g><g fill=\"#0f6e56\"><circle cx=\"182.11\" cy=\"190\" r=\"4.0\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"38\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"164\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"38\" y=\"104\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"318.22\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"190.11\" y=\"180\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(√13 − 3)/2"
+        },
+        {
+          "id": "b",
+          "text": "(√13)/2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "(3 + √13)/2"
+        },
+        {
+          "id": "d",
+          "text": "3 + (√13)/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "D من نصف المستقيم [AB) وتبعد عن B مسافة الشعاع √13 ≈ 3,6 وهي أكبر من AB = 3 ، فـ B بين A و D: AD = AB + BD = 3 + √13. و I منتصف [AD] ، فـ AI = AD/2 = (3 + √13)/2 cm ✓ (≈ 3,30). الخطأ الشائع: أخذ منتصف [BD] بدل [AD] فنجد (√13)/2 ؛ أو طرح AB من BD بدل جمعهما ؛ أو قسمة الحدّ الأخير وحده على 2 فنجد 3 + (√13)/2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.cercle",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ABE مثلث قائم في A حيث AB = 3 cm ، والدائرة C التي مركزها B وشعاعها BE = √13 cm تقطع نصف المستقيم [AB) في النقطة D ، و I منتصف القطعة [AD]\nما طول القطعة [BI] بالصنتمتر ؟\n<svg viewBox=\"0 0 340 240\"><title>المثلث ABE القائم في A والدائرة C التي مركزها B وتمرّ من E وتقطع نصف المستقيم [AB) في D</title><polygon points=\"50,190 170,190 50,110\" fill=\"#0f6e56\" fill-opacity=\"0.06\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M170 190 L314.22 190\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 190 L170 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 110 A144.22 144.22 0 0 1 314.22 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M61 190 L61 179 L50 179\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 219 V229 M170 224 H182.11 M182.11 219 V229\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"butt\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"190\" r=\"3.8\"/><circle cx=\"170\" cy=\"190\" r=\"3.8\"/><circle cx=\"50\" cy=\"110\" r=\"3.8\"/><circle cx=\"314.22\" cy=\"190\" r=\"3.8\"/></g><g fill=\"#0f6e56\"><circle cx=\"182.11\" cy=\"190\" r=\"4.0\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"38\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"164\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"38\" y=\"104\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"318.22\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"190.11\" y=\"180\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(√13 − 3)/2"
+        },
+        {
+          "id": "b",
+          "text": "√13 − 3"
+        },
+        {
+          "id": "c",
+          "text": "(√13 + 3)/2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "d",
+          "text": "(√13 + 9)/2",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "AD = AB + BD = 3 + √13 و AI = (3 + √13)/2 ≈ 3,30 أكبر من AB = 3 ، فالنقطة I بعد B على القطعة [BD]: BI = AI − AB = (3 + √13)/2 − 3 = (√13 − 3)/2 cm ✓ (≈ 0,30 وهو العدد b). الخطأ الشائع: الاكتفاء بـ AI فنجد (√13 + 3)/2 ؛ أو الجمع بدل الطرح، AI + AB = (9 + √13)/2 ؛ أو نسيان القسمة على 2 فنجد √13 − 3 ، وهو ضعف BI.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.cercle",
+        "math.num.racines-calcul"
+      ]
+    }
+  ]
+}
