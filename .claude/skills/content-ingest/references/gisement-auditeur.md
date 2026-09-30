@@ -65,9 +65,11 @@ fichier** : l'orchestrateur renvoie les correctifs à l'auteur.
 - **Doublon entre annales voisines** : deux sujets consécutifs recyclent les mêmes données ; compare
   aussi avec les missions des AUTRES chapitres de la même série, pas seulement celles du chapitre
   audité.
-- **Rendu arabe** : parenthèse d'unité collée à un nombre, point final après un intervalle ou une
-  formule ; passe les chaînes suspectes dans `isolateLtrRuns` (`src/shared/lib/bidi.ts`) avant de
-  conclure (un point après « b/a » seul, sans √, parenthèse ni inégalité, n'est PAS isolé).
+- **Rendu arabe** : parenthèse d'unité collée à un nombre ; passe les chaînes suspectes dans
+  `isolateLtrRuns` (`src/shared/lib/bidi.ts`), rends-les en Chromium `dir=rtl` et compare l'ordre
+  affiché au texte source. Depuis arena#1138, la ponctuation `. , ; :` et les parenthèses de prose
+  qui bordent une formule restent dans la prose : ce ne sont plus des défauts (un point après un
+  chiffre ou après « b/a » n'a jamais été un défaut).
 - **Une donnée retirée ou ajoutée par l'auteur rend un distracteur vrai** (« −3 ≤ A ≤ 5 » devient un
   encadrement vrai sans « مداه 4 ») : recalcule CHAQUE option après toute adaptation d'énoncé.
 - **Un rappel, une règle ou une réécriture dans l'énoncé qui désigne la clé** (« inverses ⟺ produit 1 »
@@ -76,9 +78,8 @@ fichier** : l'orchestrateur renvoie les correctifs à l'auteur.
 - **Vote terme à terme** sur les distracteurs qui ne changent qu'un terme de la clé : exige un plan
   2×2 (une option à deux erreurs, muette).
 - **Rendu bidi (plus fin)** : un signe collé à une lettre hors tronçon isolé (« −x + 1 » s'affiche
-  « x + 1− »), un deux-points ou un point collé à un chiffre en fin de phrase, une liste de quatre
-  intervalles ou plus sur une ligne (débordement sur téléphone) ; simule avec `isolateLtrRuns` puis
-  bidi-js et compare le texte affiché au texte source.
+  « x + 1− ») ; simule avec `isolateLtrRuns` puis bidi-js (ou rends en Chromium) et compare le texte
+  affiché au texte source. Une liste d'intervalles passe à la ligne depuis arena#1137.
 - **Explication fausse** : une égalité écrite qui n'en est pas une (« −2x + 4x = 6x »), ou un mécanisme
   d'erreur qui ne produit pas la valeur de l'option. Recalcule chaque égalité de chaque explication.
 - **Multi** : nombre de bonnes réponses déductible (une seule écriture juste par cas) ; énoncé au
@@ -86,3 +87,11 @@ fichier** : l'orchestrateur renvoie les correctifs à l'auteur.
   graduée, gabarit « cercle × flèche ». **Vocabulaire** absent du cours (« تظليل » pour une demi-droite).
 - **Étiquette** dont le libellé cite une notion hors programme (f(x) en 9ᵉ) ou dont la compétence est
   d'un chapitre hors programme ; propose l'étiquette existante ou l'élargissement de son libellé.
+- **Autonomie** : un énoncé qui renvoie à une autre question (« بنفس الطريقة », « السؤال السابق »)
+  ou qui utilise une valeur donnée ailleurs est un défaut MAJEUR : le donjon tire les questions au
+  hasard (`ORDER BY random()`), sans tri par difficulté. Une technique qu'aucun cours n'enseigne doit
+  être donnée dans l'énoncé de chaque question qui l'emploie.
+- **Marqueur de forme** : seule la clé se justifie par un patron de phrase que les distracteurs
+  n'ont pas ; distracteurs tous multiples d'un même nombre que la clé ne partage pas.
+- **Débordement** : les listes d'intervalles passent à la ligne depuis le correctif du moteur
+  (les espaces de bord d'une formule sont de la prose) ; ne demande plus une classe par ligne.

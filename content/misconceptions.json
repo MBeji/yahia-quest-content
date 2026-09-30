@@ -344,9 +344,9 @@
   "math.num.racine-distribuee-sur-somme": {
     "subject": "math",
     "labels": {
-      "fr": "Tu distribues la racine sur une somme : la règle ne vaut que pour un produit ou un quotient, jamais pour une addition",
-      "en": "You spread the root across a sum: the rule only holds for a product or a quotient, never for an addition",
-      "ar": "توزّع الجذر على مجموع: القاعدة لا تصحّ إلّا مع الجداء أو خارج القسمة، لا مع الجمع"
+      "fr": "Tu distribues la racine sur une somme ou une différence (ou tu fusionnes deux racines ainsi) : la règle ne vaut que pour un produit ou un quotient, jamais pour une addition ni une soustraction",
+      "en": "You spread the root across a sum or a difference (or merge two roots that way): the rule only holds for a product or a quotient, never for an addition or a subtraction",
+      "ar": "توزّع الجذر على مجموع أو فرق (أو تدمج جذرين بهذه الطريقة): القاعدة لا تصحّ إلّا مع الجداء أو خارج القسمة، لا مع الجمع ولا مع الطرح"
     },
     "competency": "math.num.racines-calcul"
   },
@@ -857,9 +857,9 @@
   "math.stat.effectif-cumule-non-cumule": {
     "subject": "math",
     "labels": {
-      "fr": "Tu donnes l'effectif de la valeur au lieu de son effectif cumulé : le cumulé additionne tous les effectifs jusqu'à elle",
-      "en": "You give the value's own count instead of its cumulative count: the cumulative adds up every count down to it",
-      "ar": "تعطي تكرار القيمة بدل تكرارها المجمّع: المجمّع يجمع كلّ التكرارات إلى غاية تلك القيمة"
+      "fr": "Tu confonds l'effectif d'une classe (ou d'une valeur) et son effectif cumulé : le cumulé additionne tous les effectifs jusqu'à elle, l'effectif ne compte qu'elle",
+      "en": "You mix up a class's (or a value's) own count with its cumulative count: the cumulative adds up every count up to it, the count covers only itself",
+      "ar": "تخلط بين تكرار الفئة (أو القيمة) وتكرارها المجمّع: المجمّع يجمع كلّ التكرارات إلى غايتها، والتكرار يعدّها وحدها"
     },
     "competency": "math.stat.effectifs-frequences"
   },
@@ -5318,5 +5318,95 @@
       "ar": "تقبل مساواة تقريبية: في عكس نظرية فيثاغورس 61 و 64 عددان مختلفان، فالمثلث ليس قائمًا"
     },
     "competency": "math.geo.pythagore"
+  },
+  "math.stat.classe-finissant-au-seuil-comptee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu comptes la classe qui se termine au seuil : « 3 heures ou plus » commence à 3, la classe qui finit à 3 est tout entière en dessous",
+      "en": "You count the class that ends at the threshold: “3 hours or more” starts at 3, the class ending at 3 lies entirely below it",
+      "ar": "تحسب الفئة التي تنتهي عند الحدّ: شرط «3 ساعات أو أكثر» يبدأ عند 3، والفئة التي تنتهي عند 3 تقع كلّها دونه"
+    },
+    "competency": "math.stat.effectifs-frequences"
+  },
+  "math.stat.classes-concernees-incompletes": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu oublies une partie des classes concernées : toutes les classes situées du bon côté du seuil comptent",
+      "en": "You leave out some of the classes concerned: every class on the required side of the threshold counts",
+      "ar": "تنسى بعض الفئات المعنيّة: كلّ الفئات الواقعة في الجهة المطلوبة من الحدّ تُحسب"
+    },
+    "competency": "math.stat.effectifs-frequences"
+  },
+  "math.stat.cumul-decale-d-une-classe": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu décales l'effectif cumulé d'une classe : il compte les valeurs strictement inférieures à sa borne supérieure — ni seulement celles d'avant sa borne inférieure, ni aussi celles de la classe suivante",
+      "en": "You shift the cumulative count by one class: it counts the values strictly below the class's upper bound — neither just those below its lower bound, nor those of the next class as well",
+      "ar": "تُزيح التكرار المجمّع بفئة واحدة: هو يعدّ القيم الأصغر قطعًا من الطرف الأكبر للفئة، لا القيم الأصغر من طرفها الأصغر وحدها، ولا قيم الفئة التالية معها"
+    },
+    "competency": "math.stat.effectifs-frequences"
+  },
+  "math.stat.mediane-egale-centre-ou-borne-de-la-classe": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu donnes le centre ou une borne de la classe médiane au lieu de chercher l'abscisse où l'effectif cumulé atteint N/2",
+      "en": "You give the centre or a bound of the median class instead of finding the abscissa where the cumulative count reaches N/2",
+      "ar": "تعطي مركز الفئة التي ينتمي إليها الوسيط أو أحد طرفيها بدل البحث عن الفاصلة التي يبلغ عندها التكرار المجمّع نصف التكرار الكلّي"
+    },
+    "competency": "math.stat.moyenne-mediane"
+  },
+  "math.stat.interpolation-mal-posee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu poses mal l'interpolation de la médiane (point de départ, rapport ou largeur de classe) : médiane = borne inférieure + (N/2 − cumulé à cette borne) ÷ effectif de la classe × amplitude",
+      "en": "You set up the median's interpolation wrongly (starting point, ratio or class width): median = lower bound + (N/2 − cumulative at that bound) ÷ class count × class width",
+      "ar": "تُخطئ في حساب الوسيط بالتناسب داخل فئته، سواء في نقطة الانطلاق أو في النسبة أو في عرض الفئة: يُحسب الوسيط بالبدء من الطرف الأصغر للفئة ثمّ إضافة ما ينقص لبلوغ نصف التكرار الكلّي، مقسومًا على تكرار الفئة ومضروبًا في عرضها"
+    },
+    "competency": "math.stat.moyenne-mediane"
+  },
+  "math.alg.facteur-commun-terme-non-divise": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu mets un facteur en évidence sans diviser chaque terme par lui : dans 8x² − 20x = 4x(…), 20x ÷ 4x vaut 5, pas 20",
+      "en": "You factor out a common factor without dividing every term by it: in 8x² − 20x = 4x(…), 20x ÷ 4x is 5, not 20",
+      "ar": "تُخرج عاملًا مشتركًا دون أن تقسم كلّ حدّ عليه: في 8x² − 20x = 4x(…) يكون 20x ÷ 4x = 5 وليس 20"
+    },
+    "competency": "math.alg.factorisation"
+  },
+  "math.alg.facteur-commun-signe-change": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu changes le signe d'un terme en mettant en facteur : le signe qui sépare les termes se conserve dans la parenthèse",
+      "en": "You flip the sign of a term when factoring out: the sign between the terms is kept inside the bracket",
+      "ar": "تغيّر إشارة حدّ عند الإخراج: الإشارة التي تفصل بين الحدّين تبقى كما هي داخل القوس"
+    },
+    "competency": "math.alg.factorisation"
+  },
+  "math.alg.inequation-demi-droite-sens-inverse": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu diriges la demi-droite du mauvais côté : x ≥ a se représente vers la droite, x ≤ a vers la gauche",
+      "en": "You point the half-line the wrong way: x ≥ a is drawn towards the right, x ≤ a towards the left",
+      "ar": "تتّجه بنصف المستقيم إلى الجهة الخطأ: x ≥ a يُمثَّل نحو اليمين و x ≤ a نحو اليسار"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.alg.facteur-commun-reste-oublie": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu oublies ce qui reste après la mise en facteur : un terme égal au facteur commun laisse 1, et tout ce qui reste doit être regroupé dans la parenthèse",
+      "en": "You lose what remains after factoring out: a term equal to the common factor leaves 1, and everything that remains must be gathered inside the bracket",
+      "ar": "تنسى ما يتبقّى بعد الإخراج: الحدّ المساوي للعامل المشترك يترك العدد 1، ويجب جمع كلّ ما يتبقّى داخل القوس"
+    },
+    "competency": "math.alg.factorisation"
+  },
+  "math.num.comparaison-radicaux-partie-par-partie": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu compares deux radicaux en ne regardant que les coefficients, ou que les nombres sous la racine : compare leurs CARRÉS",
+      "en": "You compare two radicals by looking only at the coefficients, or only at the numbers under the root: compare their SQUARES",
+      "ar": "تقارن عددين جذريّين بالنظر إلى المعاملين وحدهما أو إلى ما تحت الجذرين وحده: قارن مربّعيهما"
+    },
+    "competency": "math.num.ordre-encadrement"
   }
 }

@@ -80,9 +80,9 @@ manquantes, confirmation de la double résolution, résultat des gates pour tes 
   difficulté, l'ordre d'émission n'est pas toujours celui du fichier).
 - Une longueur ne s'écrit que sur un segment entier, jamais sur un tronçon coupé par un point
   marqué ; pas de marque d'angle droit là où l'angle est à démontrer.
-- Un énoncé ne se termine pas par une formule collée à une ponctuation latine (en arabe, le point
-  s'affiche du mauvais côté) : pose les données sur des lignes de formules seules et finis la
-  phrase par un mot arabe ou par « ؟ ».
+- Les données d'un énoncé se posent sur des lignes de formules seules. Le point, la virgule ou les
+  deux-points qui bordent une formule ne posent plus de problème d'affichage en arabe depuis
+  arena#1138 (mesuré en Chromium `dir=rtl`) : inutile de les contourner.
 - Une ligne de données du genre « حيث: AB = … , BC = … , AC = … » suivie de « المثلّث ABC قائم
   في B » reprend une formule d'énoncé courante : le contrôle anti-copie y voit une plage de 8 mots.
   Varie la tournure (« نعلم أنّ … و … و … »).
@@ -102,9 +102,8 @@ manquantes, confirmation de la double résolution, résultat des gates pour tes 
 - Des sujets voisins recyclent leurs données (la paire 7 ± 4√3 revient en 2011 et en 2012) : deux
   missions de chapitres différents se doublent alors. Change l'angle de la question (déduire une
   relation plutôt que calculer un produit), pas seulement les nombres.
-- Pas de parenthèse d'unité ou de précision collée à un nombre ou à un intervalle, ni de point
-  final après un intervalle ou une formule : écris l'unité en mots avant la donnée et termine la
-  phrase par un mot arabe ou par « ؟ ».
+- Pas de parenthèse d'unité ou de précision collée à un nombre ou à un intervalle : écris l'unité
+  en mots avant la donnée.
 - **Une donnée retirée de l'énoncé officiel peut rendre un distracteur VRAI** : sans « مداه 4 »,
   l'option « −3 ≤ A ≤ 5 » devenait un encadrement vrai (A ∈ [−3 ; 1] ⊂ [−3 ; 5]). Chaque fois que tu
   adaptes un énoncé, recalcule que chaque option reste fausse.
@@ -119,8 +118,8 @@ manquantes, confirmation de la double résolution, résultat des gates pour tes 
   de demander la factorisation) : donne la donnée brute (− 1/4), pas le résultat de l'étape.
 - **Un signe collé à une lettre dans un tronçon latin ordinaire** (« −x + 1 », « −x − 1 ») s'affiche
   « x + 1− » : mets l'expression dans un tronçon isolé (parenthèse, √, inégalité) ou reformule. Un
-  deux-points ou un point collé à un CHIFFRE en fin de phrase (« … المقام 3: ») se renverse de même :
-  finis par un mot arabe.
+  deux-points ou un point collé à un chiffre (« … المقام 3: », « … هي 220. ») s'affiche correctement,
+  même sans traitement : ne le contourne pas.
 - **Chaque égalité écrite dans une explication est vraie** (« −2x + 4x = 6x » ne l'est pas) et le
   mécanisme décrit doit PRODUIRE la valeur de l'option (« (√2/2)² = 1/4 : oubli de la racine »
   donnerait √2/4, pas 1/4). Recalcule chaque chaîne d'égalités.
@@ -135,3 +134,14 @@ manquantes, confirmation de la double résolution, résultat des gates pour tes 
   se confond avec la flèche de la solution.
 - **Énoncé nu = paire proche** : « نعتبر العددين … ما قيمة الجداء ؟ » double des missions publiées
   (Jaccard 0,5 à 0,6). Garde le contexte de l'énoncé officiel (« بعد الاختزال صار العددان … »).
+- **Chaque énoncé se lit SEUL** : le donjon tire les questions AU HASARD (`get_dungeon_questions`,
+  `ORDER BY random()`), sans tri par difficulté. Pas de « بنفس الطريقة », de « السؤال السابق »
+  ni de valeur qui n'est donnée qu'ailleurs (« نصف عدد العائلات » sans le total) ; et un énoncé qui redonne la
+  clé d'une autre question la divulgue quand elles sortent dans l'ordre inverse : ne donne que le
+  minimum de la situation.
+- **Une technique qu'aucun cours n'enseigne se donne DANS l'énoncé de CHAQUE question qui la met
+  en œuvre** (la médiane graphique définie dans Q8 mais utilisée en Q9 : Q9 ne se résout pas seule).
+- **Un marqueur de forme désigne la clé** : si seule la clé se justifie par une phrase d'un autre
+  patron (« لأنّها تجمع تكرارات الفئات كلّها » contre « لأنّ N هو … تكرار »), donne le même patron aux
+  quatre options. Un distracteur dont les nombres sont tous multiples d'un même nombre que la clé ne
+  partage pas (34, 68, 340 face à 458) la désigne comme intrus.
