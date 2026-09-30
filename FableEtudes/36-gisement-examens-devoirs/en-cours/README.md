@@ -6,17 +6,17 @@ empêcher de lancer des agents. Chaque lot se livre, une fois audité et contre-
 branche fraîche depuis `main` : on y copie ses fichiers, on rejoue les gates, on met le registre
 à jour, puis on publie (`apply-content.yml`, `subjects: math`).
 
-## État des lots (plan : `plan/plan-examens-v5.json`, listes : `plan/assign-Lxx.md`)
+## État des lots (2026-09-30, 08:00 UTC) — plan : `plan/plan-examens-v5.json`, listes : `plan/assign-Lxx.md`
+
+Livrés et publiés (privé#589, #595, #597, #598, #599) : L19 (chapitre 20), L01 (17), L02 (03), L06 (07), L11 (09). Les étiquettes d'erreur manquantes de L02, L06 et L11 ont été créées en un passage (privé#601 ; outil `outils/apply-tags.py`, listes dans `etiquettes/`).
 
 | Lot | Chapitre | Fichiers | État |
 |---|---|---|---|
-| L19 | 20 | 17 à 21 | publié (privé#589) |
-| L01 | 17 | 09 à 16 | **livré** (privé#595, publié) ; les fichiers de cette branche sont les versions livrées |
-| L02 | 03 | 15 à 20 | audité (0 clé fausse, 7 majeurs, 8 groupes de mineurs : `audits/audit-L02.md`) ; **correctifs appliqués**, re-vérification ciblée en cours ; étiquettes à créer : `etiquettes/L02.json` |
-| L06 | 07 | 10 à 17 | audité (`audits/audit-L06.md`), **correctifs appliqués** par l'auteur, contre-vérification en cours ; étiquettes à créer : `etiquettes/L06.json` |
-| L11 | 09 | 16 à 22 | auteur terminé (45 questions) ; **audit en cours** |
-| L04 | 04 | 17 à 22 | auteur relancé (rien de versionné ici) |
-| L03, L05, L07 à L10, L12 à L18 | | | à lancer, un auteur par chapitre à la fois, plages NN du plan |
+| L03 | 03 | 21 à 26 | auteur terminé ou presque ; fichiers de cette branche = état à 08:00 ; audit à faire |
+| L04 | 04 | 17 à 22 | auteur terminé (38 questions) ; audit à l'aveugle en cours |
+| L07 | 07 | 18 à 24 | fichiers écrits ; audit à faire |
+| L12 | 09 | 23 à 29 | auteur en cours (1 fichier sur 7 à 08:00) |
+| L05, L08, L09, L10, L13 à L18 | | | à lancer, un auteur par chapitre à la fois, plages NN du plan |
 
 Aussi à faire, une fois les lots livrés :
 - créer en **un seul passage** les étiquettes d'erreur manquantes (les auteurs n'en créent pas : `misconceptions.json` est partagé) et les poser sur les options concernées ;

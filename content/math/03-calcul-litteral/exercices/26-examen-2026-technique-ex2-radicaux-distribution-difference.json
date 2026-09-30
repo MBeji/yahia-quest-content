@@ -1,0 +1,206 @@
+{
+  "title": "🏛️ مناظرة 2026 (تقني) · التمرين 2 ⭐⭐⭐: نشر عبارة فيها جذر، واختزال جذر، وجداء عددين، وفرق كسرين",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 26,
+  "questions": [
+    {
+      "prompt": "نضع:\na = √5(√5 + 1) − 3\nأيّ الأعداد التالية يساوي a بعد النشر والتبسيط ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "√10 + √5 − 3",
+          "misconceptionTag": "math.num.racine-produit-transforme-en-somme"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "misconceptionTag": "math.alg.distribution-partielle"
+        },
+        {
+          "id": "c",
+          "text": "2 + √5"
+        },
+        {
+          "id": "d",
+          "text": "22 + √5",
+          "misconceptionTag": "math.num.racine-et-carre-confondus"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ننشر بتوزيع √5 على حدّي القوس: √5 × √5 + √5 × 1 = 5 + √5 لأنّ (√5)² = 5. إذن a = 5 + √5 − 3 = 2 + √5 ✓. الخطأ الشائع توزيع √5 على الحدّ الأوّل وحده: √5 × √5 + 1 − 3 = 3؛ أو كتابة √5 × √5 = √10 بجمع ما تحت الجذرين بدل ضربه فيخرج √10 + √5 − 3؛ أو الخلط بين الجذر والمربّع فكتابة (√5)² = 5² = 25 فيخرج 25 + √5 − 3 = 22 + √5.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ما الكتابة المبسّطة للعدد √20 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√5"
+        },
+        {
+          "id": "b",
+          "text": "5√2",
+          "misconceptionTag": "math.num.racine-extraction-facteur-inversee"
+        },
+        {
+          "id": "c",
+          "text": "4√5"
+        },
+        {
+          "id": "d",
+          "text": "10",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نحلّل 20 إلى جداء يحوي أكبر مربّع كامل: 20 = 4 × 5. فنجد √20 = √4 × √5 = 2√5 ✓ لأنّ جذر الجداء هو جداء الجذرين وأنّ √4 = 2. الخطأ الشائع أخذ نصف العدد بدل جذره فيخرج 10؛ أو عكس العامل الخارج من الجذر وما يبقى تحته فيُكتب 5√2؛ أو إخراج المربّع الكامل 4 دون أخذ جذره فيُكتب 4√5.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعتبر العدد الحقيقي:\nb = √20 − √5 − 2\nونعلم أنّ:\n√20 = 2√5\nما قيمة b في أبسط صورة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−√5",
+          "misconceptionTag": "math.alg.termes-semblables-par-coefficient"
+        },
+        {
+          "id": "b",
+          "text": "√5 − 2"
+        },
+        {
+          "id": "c",
+          "text": "√15 − 2",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        },
+        {
+          "id": "d",
+          "text": "3√5 − 2",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نعوّض √20 بـ 2√5: b = 2√5 − √5 − 2 = (2 − 1)√5 − 2 = √5 − 2 ✓ (الجذران 2√5 و √5 متشابهان فتُطرح معاملاتهما، أمّا العدد 2 فيبقى منفصلًا). الخطأ الشائع طرح ما تحت الجذرين: √20 − √5 = √(20 − 5) = √15 فيخرج √15 − 2، والجذر لا يُوزَّع على الطرح؛ أو جمع الجذرين بدل طرحهما فيخرج 2√5 + √5 − 2 = 3√5 − 2؛ أو جمع الحدّ −2 مع معاملات الجذر كأنّه منها فيخرج (2 − 1 − 2)√5 = −√5.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "نعلم أنّ:\na = √5 + 2\nb = √5 − 2\nاحسب الجداء ab ثمّ اكتب الناتج عددًا صحيحًا",
+      "answerKey": {
+        "value": 1
+      },
+      "explanation": "الجداء من الشكل (u + v)(u − v) = u² − v² مع u = √5 و v = 2: ab = (√5)² − 2² = 5 − 4 = 1 ✓. الخطأ الشائع جمع المربّعين بدل طرحهما فيخرج 5 + 4 = 9؛ أو ترك العدد 2 دون تربيعه فيخرج 5 − 2 = 3؛ أو قلب ترتيب الطرح فيخرج 4 − 5 = −1.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "نذكّر بأنّه إذا كان جداء عددين غير معدومين يساوي 1 فإنّ كلًّا منهما مقلوب الآخر\nنعلم أنّ:\na = √5 + 2\nb = √5 − 2\nab = 1\nاختر كلّ الكتابات الصحيحة.",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/b = a"
+        },
+        {
+          "id": "b",
+          "text": "1/a = b"
+        },
+        {
+          "id": "c",
+          "text": "a + b = 0"
+        },
+        {
+          "id": "d",
+          "text": "a/b = 1"
+        },
+        {
+          "id": "e",
+          "text": "1/a = −b"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "بما أنّ ab = 1 فإنّ كلًّا من العددين مقلوب الآخر: b = 1/a و a = 1/b ✓. أمّا a + b = 2√5 فلا يساوي 0 (المقابلان هما اللذان مجموعهما 0)؛ وأمّا a/b فيساوي a × (1/b) = a × a = a² ولا يساوي 1 (الخارج لا يساوي 1 إلّا إذا تساوى العددان)؛ وأمّا 1/a = −b فتعني ab = −1 لا ab = 1، فهي خاطئة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نحسب الفرق a − b حيث:\na = √5 + 2\nb = √5 − 2\nما قيمته ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "0",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "2√5",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نطرح مع قلب إشارة كلّ حدّ في القوس: a − b = (√5 + 2) − (√5 − 2) = √5 + 2 − √5 + 2 = 4 ✓ (يتلاشى الجذران وتبقى 2 + 2). الخطأ الشائع عدم قلب إشارة الحدّ الثاني: √5 + 2 − √5 − 2 = 0؛ أو جمع العددين بدل طرحهما فيخرج a + b = 2√5؛ أو إهمال الحدّ الثابت −(−2) من b فيبقى 2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ العددين a و b مقلوبان حيث:\na = √5 + 2\nb = √5 − 2\nوأنّ:\na − b = 4\nما قيمة العدد 1/b − 1/a ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4"
+        },
+        {
+          "id": "b",
+          "text": "−1/4"
+        },
+        {
+          "id": "c",
+          "text": "1/4"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "بما أنّ a و b مقلوبان فإنّ 1/b = a و 1/a = b. إذن 1/b − 1/a = a − b = 4 ✓. الخطأ الشائع طرح المقامين مباشرة: 1/b − 1/a = 1/(b − a) = 1/(−4) = −1/4، أو 1/(a − b) = 1/4، والصواب توحيد المقامين أو استعمال المقلوب؛ أو الظنّ أنّ 1/b = b و 1/a = a فيخرج b − a = −4.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    }
+  ]
+}

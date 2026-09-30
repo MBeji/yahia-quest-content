@@ -1,0 +1,181 @@
+{
+  "title": "🏛️ مناظرة 2005 · التمرين 1 ⭐⭐⭐: معادلة ونشر جداء ثمّ متراجحة وتمثيلها على مستقيم مدرّج",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 20,
+  "questions": [
+    {
+      "prompt": "لتكن العبارة A التالية حيث x عدد حقيقي:\nA = 2x + 3\nنحسبها من أجل x = 1 ثمّ من أجل x = −1 ، ثمّ نكتب النتيجتين بهذا الترتيب. أيّ ثنائية صحيحة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "( 6 ; 5 )"
+        },
+        {
+          "id": "b",
+          "text": "( 5 ; 1 )"
+        },
+        {
+          "id": "c",
+          "text": "( 5 ; 5 )",
+          "misconceptionTag": "math.int.signe-ignore-dans-somme"
+        },
+        {
+          "id": "d",
+          "text": "( 6 ; 1 )",
+          "misconceptionTag": "math.fn.image-calculee-par-somme"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نعوّض في A = 2x + 3 ؛ عند x = 1 نجد A = 2 × 1 + 3 = 5 ، وعند x = −1 نجد A = 2 × (−1) + 3 = −2 + 3 = 1 ✓؛ أمّا الخطأ الشائع فهو قراءة 2x على أنّها 2 + x فتخرج القيمة 6 بدل 5 عند x = 1 ، أو إهمال إشارة الحدّ −2 عند جمعه مع 3 فتخرج القيمة 5 بدل 1 عند x = −1 ، وقد يجتمع الخطآن في ثنائية واحدة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.relatifs-operations"
+      ]
+    },
+    {
+      "prompt": "أوجد العدد الحقيقي x الذي يحقّق المعادلة التالية:\n2x + 3 = 0\nما قيمته ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = −3/2"
+        },
+        {
+          "id": "b",
+          "text": "x = −2/3",
+          "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
+        },
+        {
+          "id": "c",
+          "text": "x = 2/3"
+        },
+        {
+          "id": "d",
+          "text": "x = 3/2",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "ننقل العدد 3 إلى الطرف الآخر فنجد 2x = −3 لأنّ طرح 3 من الطرفين يلغي +3 ، ثمّ نقسم الطرفين على معامل المجهول 2 فنجد x = −3/2 ✓ ونتحقّق: 2 × (−3/2) + 3 = −3 + 3 = 0 ✓؛ أمّا الخطأ الشائع فهو نقل العدد 3 دون قلب إشارته فيُكتب 2x = 3 ويخرج 3/2 ، أو قسمة 2 على 3 بدل قسمة −3 على 2 فيخرج الكسر مقلوبًا.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.equations-premier-degre"
+      ]
+    },
+    {
+      "prompt": "العبارة B جداء قوسين حيث x عدد حقيقي:\nB = (2x + 3)(5x − 4)\nأيّ عبارة منشورة ومختصرة تساوي B ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "10x² − 12"
+        },
+        {
+          "id": "b",
+          "text": "10x² − 7x − 12"
+        },
+        {
+          "id": "c",
+          "text": "10x² + 7x − 12"
+        },
+        {
+          "id": "d",
+          "text": "10x² + 7x + 12"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نضرب كلّ حدّ من القوس الأوّل في كلّ حدّ من القوس الثاني: 2x × 5x = 10x² و 2x × (−4) = −8x و 3 × 5x = 15x و 3 × (−4) = −12 ؛ ثمّ نجمع الحدّين المتشابهين −8x + 15x = 7x ، فنجد B = 10x² + 7x − 12 ✓؛ أمّا الخطأ الشائع فهو ضرب الحدّين الأوّلين ثمّ الحدّين الأخيرين فقط فيخرج 10x² − 12 وتضيع الجداءات المتقاطعة ، أو خطأ في إشارة أحد الجداءات فتخرج عبارة تخالف الصحيحة في إشارة حدّ واحد.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ:\n(2x + 3)(5x − 4) = 10x² + 7x − 12\nونعتبر العبارة التالية:\nE = 10x² − (2x + 3)(5x − 4)\nما الكتابة المختصرة للعبارة E ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "12 − 7x"
+        },
+        {
+          "id": "b",
+          "text": "12 + 7x"
+        },
+        {
+          "id": "c",
+          "text": "−12 − 7x"
+        },
+        {
+          "id": "d",
+          "text": "−12 + 7x",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الإشارة − أمام القوس تغيّر إشارة كلّ حدود القوس: E = 10x² − (10x² + 7x − 12) = 10x² − 10x² − 7x + 12 = 12 − 7x ✓؛ أمّا الخطأ الشائع فهو تطبيق إشارة الطرح على الحدّ الأوّل وحده فيخرج −12 + 7x ، أو نسيان تغيير إشارة الحدّ الأخير فيخرج −12 − 7x ، أو تغيير إشارة الحدّ الأخير وحده فتبقى إشارة الحدّ الثاني خاطئة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "أيّ مجال يمثّل مجموعة حلول المتراجحة التالية ؟\n12 − 7x ≤ −2",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ∈ ]−∞ ; −2]"
+        },
+        {
+          "id": "b",
+          "text": "x ∈ ]−∞ ; 2]",
+          "misconceptionTag": "math.alg.inequation-sens-non-inverse"
+        },
+        {
+          "id": "c",
+          "text": "x ∈ [−2 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "x ∈ [2 ; +∞["
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نطرح 12 من الطرفين فنجد −7x ≤ −14 ، ثمّ نقسم الطرفين على −7 وهو عدد سالب فتنقلب الإشارة ونجد x ≥ 2 ؛ الإشارة ≥ تشمل الحدّ ، فمجموعة الحلول [2 ; +∞[ ✓ ؛ أمّا الخطأ الشائع فهو القسمة على −7 دون قلب الإشارة فيخرج x ≤ 2 ، أو قسمة −14 على −7 بنتيجة −2 فيخرج حدّ سالب بدل الحدّ الموجب.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.inequations"
+      ]
+    },
+    {
+      "prompt": "حلّ تلميذ المتراجحة التالية:\n12 − 7x ≤ −2\nثمّ مثّل مجموعة حلولها بالرسم التالي. ما الحكم على هذا التمثيل ؟\n<svg viewBox=\"0 0 360 92\"><title>تمثيل التلميذ لمجموعة الحلول على مستقيم مدرّج</title><line x1=\"14\" y1=\"50.0\" x2=\"336\" y2=\"50.0\" stroke=\"#1f2937\" stroke-width=\"2\"/><polygon points=\"346,50.0 334,45.0 334,55.0\" fill=\"#1f2937\"/><line x1=\"24\" y1=\"50.0\" x2=\"173.0\" y2=\"50.0\" stroke=\"#b91c1c\" stroke-width=\"5\" stroke-linecap=\"round\"/><polygon points=\"12,50.0 24,44.0 24,56.0\" fill=\"#b91c1c\"/><line x1=\"30.0\" y1=\"44.0\" x2=\"30.0\" y2=\"56.0\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"30.0\" y=\"74.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1f2937\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−2</text><line x1=\"65.8\" y1=\"44.0\" x2=\"65.8\" y2=\"56.0\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"65.8\" y=\"74.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1f2937\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−1</text><line x1=\"101.5\" y1=\"44.0\" x2=\"101.5\" y2=\"56.0\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"101.5\" y=\"74.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1f2937\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"137.2\" y1=\"44.0\" x2=\"137.2\" y2=\"56.0\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"137.2\" y=\"74.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1f2937\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"173.0\" y1=\"44.0\" x2=\"173.0\" y2=\"56.0\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"173.0\" y=\"74.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1f2937\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"208.8\" y1=\"44.0\" x2=\"208.8\" y2=\"56.0\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"208.8\" y=\"74.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1f2937\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><line x1=\"244.5\" y1=\"44.0\" x2=\"244.5\" y2=\"56.0\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"244.5\" y=\"74.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1f2937\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"280.2\" y1=\"44.0\" x2=\"280.2\" y2=\"56.0\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"280.2\" y=\"74.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1f2937\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><line x1=\"316.0\" y1=\"44.0\" x2=\"316.0\" y2=\"56.0\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"316.0\" y=\"74.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1f2937\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><circle cx=\"173.0\" cy=\"50.0\" r=\"6.5\" fill=\"#b91c1c\" stroke=\"#b91c1c\" stroke-width=\"2.6\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "خاطئ لأنّ الدائرة يجب أن تكون مفتوحة",
+          "misconceptionTag": "math.num.intervalle-borne-mal-incluse"
+        },
+        {
+          "id": "b",
+          "text": "خاطئ لأنّ السهم يجب أن يتّجه إلى اليمين"
+        },
+        {
+          "id": "c",
+          "text": "صحيح لأنّ الإشارة ≤ تعطي دائرة مملوءة وسهمًا إلى اليسار",
+          "misconceptionTag": "math.alg.inequation-sens-non-inverse"
+        },
+        {
+          "id": "d",
+          "text": "خاطئ لأنّ الدائرة يجب أن تكون عند −2 لا عند 2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نحلّ المتراجحة: −7x ≤ −14 ثمّ نقسم الطرفين على −7 وهو سالب فتنقلب الإشارة ونجد x ≥ 2 ؛ الإشارة ≥ تشمل العدد 2 فالدائرة المملوءة عنده صحيحة وهذا ما رسمه التلميذ ، لكنّ الحلول هي الأعداد الأكبر من 2 أي التي تقع على يمين هذه النقطة ، فيجب أن يتّجه السهم إلى اليمين لا إلى اليسار ✓ ؛ أمّا الخطأ الشائع فهو القسمة على عدد سالب دون قلب الإشارة فيخرج x ≤ 2 ويُرسم السهم إلى اليسار كما في هذا التمثيل ، وأمّا فتح الدائرة فيكون مع الإشارتين < و > وحدهما.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.inequations",
+        "math.num.ordre-encadrement"
+      ]
+    }
+  ]
+}
