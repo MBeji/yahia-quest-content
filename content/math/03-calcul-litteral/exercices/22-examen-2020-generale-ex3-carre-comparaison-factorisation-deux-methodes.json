@@ -1,0 +1,188 @@
+{
+  "title": "🏛️ مناظرة 2020 · التمرين 3 ⭐⭐⭐: تعويض في عبارة، ونشر مربّع، ومقارنة عبارتين، وتعميل، وحساب بطريقتين",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 22,
+  "questions": [
+    {
+      "prompt": "نعتبر العبارة:\nA = (x − √2/2)²\nحيث x عدد حقيقي ، ونعوّض x بالعدد:\nx = (√5 + √2)/2\nما قيمة A ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "5/4"
+        },
+        {
+          "id": "b",
+          "text": "5/2",
+          "misconceptionTag": "math.num.puissance-fraction-numerateur-seul"
+        },
+        {
+          "id": "c",
+          "text": "(5 + 2√10)/4",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        },
+        {
+          "id": "d",
+          "text": "25/4",
+          "misconceptionTag": "math.num.racine-et-carre-confondus"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نحسب أوّلًا ما بين القوسين: x − √2/2 = (√5 + √2)/2 − √2/2 = √5/2 (الحدّان √2/2 و −√2/2 يتلاشيان). إذن A = (√5/2)² = (√5)²/2² = 5/4 ✓ لأنّ الأسّ يخصّ البسط والمقام معًا وأنّ (√5)² = 5. الخطأ الشائع تربيع البسط وحده: (√5)²/2 = 5/2؛ أو الخلط بين الجذر والمربّع فكتابة (√5)² = 5² = 25 فيخرج 25/4؛ أو اعتبار (x − √2/2)² مساويًا x² − (√2/2)² (فرق مربّعين بدل مربّع فرق)، فيخرج x² − 1/2 = (7 + 2√10)/4 − 1/2 = (5 + 2√10)/4.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "نعتبر العبارة:\nA = (x − √2/2)²\nما الصورة المنشورة والمبسّطة للعبارة A ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "x² + 1/2",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "b",
+          "text": "x² − √2 x − 1/2",
+          "misconceptionTag": "math.alg.carre-difference-signes"
+        },
+        {
+          "id": "c",
+          "text": "x² − √2 x + 1",
+          "misconceptionTag": "math.num.puissance-fraction-numerateur-seul"
+        },
+        {
+          "id": "d",
+          "text": "x² − √2 x + 1/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "بالمتطابقة (u − v)² = u² − 2uv + v² مع u = x و v = √2/2: A = x² − 2 × x × (√2/2) + (√2/2)² = x² − √2 x + 2/4 = x² − √2 x + 1/2 ✓ لأنّ (√2/2)² = (√2)²/2² = 2/4. الخطأ الشائع إسقاط الجداء المضاعف فيبقى x² + 1/2؛ أو إعطاء الحدّ الأخير إشارة سالبة فيخرج x² − √2 x − 1/2 مع أنّ المربّع موجب؛ أو تربيع البسط وحده في (√2/2)² فيُكتب 2/2 = 1.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.developpement",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "نعتبر العبارتين:\nA = (x − √2/2)²\nB = x² − √2 x + 1/4\nما العلاقة الصحيحة بين A و B مهما يكن العدد الحقيقي x ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "A = B"
+        },
+        {
+          "id": "b",
+          "text": "A = B + 1/2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "A = B + 1/4"
+        },
+        {
+          "id": "d",
+          "text": "A = B − 1/4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ننشر A: A = x² − √2 x + 1/2 (لأنّ (√2/2)² = 1/2). والعبارة B هي x² − √2 x + 1/4، فالفرق A − B = 1/2 − 1/4 = 1/4 لأنّ الحدّين x² و −√2 x يتلاشيان في الفرق، أي A = B + 1/4 مهما يكن x ✓. الخطأ الشائع الاكتفاء بتطابق الحدّين x² و −√2 x في العبارتين والحكم بأنّ A = B دون مقارنة الحدّين الثابتين 1/2 و 1/4؛ أو أخذ الحدّ الثابت 1/2 وحده فارقًا فتُكتب A = B + 1/2؛ أو عكس اتّجاه الفرق فتُكتب A = B − 1/4.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ العبارتين A و B تحقّقان مهما يكن العدد الحقيقي x:\nA = B + 1/4\nونعلم أنّ قيمة A تساوي 5/4 عندما:\nx = (√5 + √2)/2\nما قيمة B عند هذا العدد ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "5/4",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "d",
+          "text": "3/2",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نعزل B في العلاقة A = B + 1/4 بنقل الحدّ 1/4 إلى الطرف الآخر مع تغيير إشارته: B = A − 1/4. وبتعويض قيمة A: B = 5/4 − 1/4 = 4/4 = 1 ✓. الخطأ الشائع نقل الحدّ 1/4 دون تغيير إشارته فيُكتب B = A + 1/4 = 3/2؛ أو قلب طرفي الفرق فيُكتب B = 1/4 − A = −1؛ أو إهمال الحدّ 1/4 والاكتفاء بقيمة A نفسها، أي 5/4.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "نعتبر العبارة B المكتوبة على الشكل:\nB = (x − √2/2)² − 1/4\nما التعميل الصحيح للعبارة B ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(x − (√2 + 1)/2)(x − (√2 − 1)/2)"
+        },
+        {
+          "id": "b",
+          "text": "(x − (√2 + 1)/2)²",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        },
+        {
+          "id": "c",
+          "text": "(x − (√2 + 1)/2)(x + (√2 − 1)/2)"
+        },
+        {
+          "id": "d",
+          "text": "(x − 1/2)²"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نكتب 1/4 = (1/2)² فتصير B = (x − √2/2)² − (1/2)² فرقَ مربّعين. نطبّق المتطابقة u² − v² = (u − v)(u + v) مع u = x − √2/2 و v = 1/2: B = (x − √2/2 − 1/2)(x − √2/2 + 1/2). ثمّ نجمع الحدّين الثابتين في كلّ عامل: −√2/2 − 1/2 = −(√2 + 1)/2 و −√2/2 + 1/2 = −(√2 − 1)/2، فتصير B = (x − (√2 + 1)/2)(x − (√2 − 1)/2) ✓. الخطأ الشائع كتابة فرق المربّعين على شكل مربّع (u − v)² فيخرج (x − (√2 + 1)/2)²؛ أو خطأ إشارة عند جمع الحدّين في العامل الثاني فيُكتب x + (√2 − 1)/2 بدل x − (√2 − 1)/2؛ أو الظنّ أنّ الحدّ الأخير 1/4 يجعل العبارة مربّعًا كاملًا (x − 1/2)² دون فحص الحدّ الأوسط، وهو −x في (x − 1/2)² لا −√2 x.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.factorisation",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "نعتبر العبارة:\nB = (x − (√2 + 1)/2)(x − (√2 − 1)/2)\nونعوّض x بالعدد:\nx = (√5 + √2)/2\nما قيمة كلٍّ من العاملين x − (√2 + 1)/2 و x − (√2 − 1)/2 على الترتيب ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(√5 − 1)/2 و (√5 − 1)/2",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        },
+        {
+          "id": "b",
+          "text": "(√5 − 1)/2 و (√5 + 1)/2"
+        },
+        {
+          "id": "c",
+          "text": "(√5 + 1)/2 و (√5 − 1)/2",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        },
+        {
+          "id": "d",
+          "text": "(√5 + 1)/2 و (√5 + 1)/2",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نحسب العاملين بقلب إشارة كلّ حدّ في البسط المطروح: x − (√2 + 1)/2 = (√5 + √2 − √2 − 1)/2 = (√5 − 1)/2 و x − (√2 − 1)/2 = (√5 + √2 − √2 + 1)/2 = (√5 + 1)/2 ✓، ثمّ B = ((√5 − 1)/2) × ((√5 + 1)/2) = ((√5)² − 1²)/4 = (5 − 1)/4 = 1، وهي القيمة نفسها التي تعطيها العلاقة B = A − 1/4 ، فالطريقتان متّفقتان. الخطأ الشائع قلب إشارة الحدّ الأوّل وحده من البسط المطروح: في العامل الأوّل يبقى +1 فيخرج (√5 + 1)/2، وفي العامل الثاني يبقى −1 فيخرج (√5 − 1)/2؛ ومن وقع فيه في العاملين معًا وجد الزوج نفسه مقلوب الترتيب، وجداؤه 1 أيضًا، فلا يكفي أن يساوي الجداء 1 ليكون الزوج صحيحًا.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.factorisation",
+        "math.alg.identites-remarquables"
+      ]
+    }
+  ]
+}
