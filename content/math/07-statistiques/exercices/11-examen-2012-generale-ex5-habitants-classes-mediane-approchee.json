@@ -1,0 +1,183 @@
+{
+  "title": "🏛️ مناظرة 2012 · التمرين 5 ⭐⭐: سكّان حيّ حسب العمر — المعدّل والتواتر المجمّع والوسيط التقريبي",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 11,
+  "questions": [
+    {
+      "prompt": "يعرض الجدول الموالي توزيعًا لسكّان أحد الأحياء حسب العمر بالسنوات:\nالفئة العمرية : [0 ; 20[ ، [20 ; 40[ ، [40 ; 60[ ، [60 ; 80[ ، [80 ; 100[\nعدد السكّان : 220 ، 490 ، 210 ، 60 ، 20\nكم عدد سكّان هذا الحيّ ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "490",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "980"
+        },
+        {
+          "id": "c",
+          "text": "1000"
+        },
+        {
+          "id": "d",
+          "text": "1100"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "عدد السكّان هو التكرار الكلّي، أي مجموع تكرارات الفئات الخمس: 220 + 490 + 210 + 60 + 20 = 1000 ✓. الخطأ الشائع: 980 يُسقط الفئة الأخيرة [80 ; 100[ ؛ و490 هو أكبر تكرار (تكرار الفئة [20 ; 40[) وليس المجموع؛ و1100 = 5 × 220 يفترض أنّ الفئات الخمس لها تكرار الفئة الأولى نفسه.",
+      "difficulty": 1,
+      "competencies": [
+        "math.stat.effectifs-frequences"
+      ]
+    },
+    {
+      "prompt": "تتوزّع أعمار سكّان حيّ على الفئات [0 ; 20[ و [20 ; 40[ و [40 ; 60[ و [60 ; 80[ و [80 ; 100[ (بالسنوات) بالتكرارات 220 و490 و210 و60 و20 على الترتيب.\nما معدّل الأعمار بهذا الحيّ ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "50",
+          "misconceptionTag": "math.stat.moyenne-sans-ponderation"
+        },
+        {
+          "id": "b",
+          "text": "33,4"
+        },
+        {
+          "id": "c",
+          "text": "30",
+          "misconceptionTag": "math.stat.moyenne-et-mode-confondus"
+        },
+        {
+          "id": "d",
+          "text": "23,4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نعوّض كلّ فئة بمركزها (منتصف طرفيها): 10 و30 و50 و70 و90. المعدّل = (10 × 220 + 30 × 490 + 50 × 210 + 70 × 60 + 90 × 20) ÷ 1000 = (2200 + 14700 + 10500 + 4200 + 1800) ÷ 1000 = 33 400 ÷ 1000 = 33,4 سنة ✓ (وهو يقع بين 0 و100 كما يجب). الخطأ الشائع: 23,4 هو نتيجة استعمال الطرف الأصغر لكلّ فئة (0 و20 و40 و60 و80) بدل مركزها؛ و50 هو معدّل المراكز الخمسة دون ترجيحها بالتكرارات؛ و30 هو مركز الفئة ذات أكبر تكرار [20 ; 40[ (الفئة المنوال) وليس المعدّل.",
+      "difficulty": 2,
+      "competencies": [
+        "math.stat.moyenne-mediane",
+        "math.stat.effectifs-frequences"
+      ]
+    },
+    {
+      "prompt": "التواتر المجمّع الصاعد (التراكمي الصاعد) الموافق لفئة هو نسبة السكّان الذين تقلّ أعمارهم عن الطرف الأكبر لهذه الفئة، أي مجموع تواتر هذه الفئة وتواترات الفئات التي قبلها.\nتكرارات الفئات الخمس مرتّبة تصاعديًّا هي 220 و490 و210 و60 و20 (والتكرار الكلّي 1000).\nما سطر التواترات المجمّعة الصاعدة الموافقة لهذه الفئات، مكتوبةً بالتواتر العشري ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,22 ، 0,49 ، 0,21 ، 0,06 ، 0,02",
+          "misconceptionTag": "math.stat.effectif-cumule-non-cumule"
+        },
+        {
+          "id": "b",
+          "text": "220 ، 710 ، 920 ، 980 ، 1000",
+          "misconceptionTag": "math.stat.effectif-frequence-confondus"
+        },
+        {
+          "id": "c",
+          "text": "1 ، 0,78 ، 0,29 ، 0,08 ، 0,02"
+        },
+        {
+          "id": "d",
+          "text": "0,22 ، 0,71 ، 0,92 ، 0,98 ، 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نحوّل أوّلًا كلّ تكرار إلى تواتر بقسمته على 1000، ثمّ نجمّع من الفئة الأولى فصاعدًا: 220 ÷ 1000 = 0,22 ثمّ 0,22 + 0,49 = 0,71 ثمّ 0,71 + 0,21 = 0,92 ثمّ 0,92 + 0,06 = 0,98 ثمّ 0,98 + 0,02 = 1 ✓ (والأخير يساوي 1 دائمًا). الخطأ الشائع: كتابة تواتر كلّ فئة دون تجميعه (0,22 ثمّ 0,49 ثمّ 0,21 ثمّ 0,06 ثمّ 0,02)؛ أو تجميع التكرارات دون قسمتها على 1000، فنكتب تكرارات مجمّعة لا تواترات؛ أو التجميع من الجهة المعاكسة، أي نسبة من تفوق أعمارهم الطرف الأصغر لكلّ فئة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.stat.effectifs-frequences"
+      ]
+    },
+    {
+      "prompt": "يمثّل المضلّع التالي التواترات المجمّعة الصاعدة (بالنسبة المائوية) لأعمار سكّان هذا الحيّ : فاصلة كلّ نقطة هي عمر بالسنوات، وترتيبتها هي التواتر المجمّع الصاعد الموافق له.\nماذا تعني النقطة التي فاصلتها 40 وترتيبتها 71 ؟\n<svg viewBox=\"0 0 290 224\">\n<title>مضلّع التواترات المجمّعة الصاعدة (بالنسبة المائوية) لأعمار سكّان الحيّ</title>\n<path d=\"M46 34 V194 M90.8 34 V194 M135.6 34 V194 M180.4 34 V194 M225.2 34 V194 M270 34 V194 M46 194 H270 M46 162 H270 M46 130 H270 M46 98 H270 M46 66 H270 M46 34 H270\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<path d=\"M46 194 H276 M46 194 V28\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/>\n<path d=\"M282 194 L274 190 L274 198 Z M46 22 L42 30 L50 30 Z\" fill=\"#0f172a\"/>\n<text x=\"46\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">0</text><text x=\"90.8\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">20</text><text x=\"135.6\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">40</text><text x=\"180.4\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">60</text><text x=\"225.2\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">80</text><text x=\"270\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">100</text><text x=\"40\" y=\"198\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">0</text><text x=\"40\" y=\"166\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">20</text><text x=\"40\" y=\"134\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">40</text><text x=\"40\" y=\"102\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">60</text><text x=\"40\" y=\"70\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">80</text><text x=\"40\" y=\"38\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">100</text>\n<text x=\"54\" y=\"22\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">%</text>\n<polyline points=\"46,194 90.8,158.8 135.6,80.4 180.4,46.8 225.2,37.2 270,34\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n<circle cx=\"46\" cy=\"194\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"90.8\" cy=\"158.8\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"135.6\" cy=\"80.4\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"180.4\" cy=\"46.8\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"225.2\" cy=\"37.2\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"270\" cy=\"34\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<g font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"84.8\" y=\"150.8\" text-anchor=\"end\">22</text><text x=\"129.6\" y=\"72.4\" text-anchor=\"end\">71</text><text x=\"174.4\" y=\"38.8\" text-anchor=\"end\">92</text><text x=\"219.2\" y=\"29.2\" text-anchor=\"end\">98</text><text x=\"264\" y=\"26\" text-anchor=\"end\">100</text></g>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "71 % من السكّان يقلّ عمرهم عن 40 سنة"
+        },
+        {
+          "id": "b",
+          "text": "71 % من السكّان يفوق عمرهم 40 سنة"
+        },
+        {
+          "id": "c",
+          "text": "40 % من السكّان يقلّ عمرهم عن 71 سنة"
+        },
+        {
+          "id": "d",
+          "text": "71 % من السكّان عمرهم بين 20 و40 سنة",
+          "misconceptionTag": "math.stat.effectif-cumule-non-cumule"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "ترتيبة النقطة هي التواتر المجمّع الصاعد عند الفاصلة 40، فهي نسبة السكّان الذين يقلّ عمرهم عن 40 سنة: 71 % من السكّان أعمارهم في الفئتين [0 ; 20[ و [20 ; 40[ ، أي 22 % + 49 % = 71 % ✓. الخطأ الشائع: قراءة 71 % على أنّها نصيب الفئة [20 ; 40[ وحدها (وهو 49 %)؛ أو قلب «أقلّ من» إلى «أكثر من» (من تفوق أعمارهم 40 سنة هم 29 %)؛ أو تبديل المحورين، فتصير الترتيبة عمرًا والفاصلة نسبة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.stat.effectifs-frequences"
+      ]
+    },
+    {
+      "prompt": "الوسيط هو العمر الذي يبلغ عنده التواتر المجمّع الصاعد 50 %. نصل بقطعة مستقيمة بين النقطتين (20 ; 22) و(40 ; 71) من المضلّع، ونعتبر أنّ التواتر يتزايد بانتظام بين هاتين النقطتين.\nما القيمة التقريبية لوسيط أعمار سكّان هذا الحيّ (بالسنوات) ؟\n<svg viewBox=\"0 0 290 224\">\n<title>مضلّع التواترات المجمّعة الصاعدة (بالنسبة المائوية) لأعمار سكّان الحيّ</title>\n<path d=\"M46 34 V194 M90.8 34 V194 M135.6 34 V194 M180.4 34 V194 M225.2 34 V194 M270 34 V194 M46 194 H270 M46 162 H270 M46 130 H270 M46 98 H270 M46 66 H270 M46 34 H270\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<path d=\"M46 194 H276 M46 194 V28\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/>\n<path d=\"M282 194 L274 190 L274 198 Z M46 22 L42 30 L50 30 Z\" fill=\"#0f172a\"/>\n<text x=\"46\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">0</text><text x=\"90.8\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">20</text><text x=\"135.6\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">40</text><text x=\"180.4\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">60</text><text x=\"225.2\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">80</text><text x=\"270\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">100</text><text x=\"40\" y=\"198\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">0</text><text x=\"40\" y=\"166\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">20</text><text x=\"40\" y=\"134\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">40</text><text x=\"40\" y=\"102\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">60</text><text x=\"40\" y=\"70\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">80</text><text x=\"40\" y=\"38\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">100</text>\n<text x=\"54\" y=\"22\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">%</text>\n<polyline points=\"46,194 90.8,158.8 135.6,80.4 180.4,46.8 225.2,37.2 270,34\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n<circle cx=\"46\" cy=\"194\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"90.8\" cy=\"158.8\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"135.6\" cy=\"80.4\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"180.4\" cy=\"46.8\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"225.2\" cy=\"37.2\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"270\" cy=\"34\" r=\"3.6\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<g font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"84.8\" y=\"150.8\" text-anchor=\"end\">22</text><text x=\"129.6\" y=\"72.4\" text-anchor=\"end\">71</text><text x=\"174.4\" y=\"38.8\" text-anchor=\"end\">92</text><text x=\"219.2\" y=\"29.2\" text-anchor=\"end\">98</text><text x=\"264\" y=\"26\" text-anchor=\"end\">100</text></g>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "50"
+        },
+        {
+          "id": "b",
+          "text": "33,4",
+          "misconceptionTag": "math.stat.moyenne-et-mediane-confondues"
+        },
+        {
+          "id": "c",
+          "text": "31,4"
+        },
+        {
+          "id": "d",
+          "text": "11,4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "على القطعة الواصلة بين (20 ; 22) و(40 ; 71) يزداد التواتر من 22 % إلى 71 %، أي بـ 49 وحدة، بينما يزداد العمر من 20 إلى 40 أي بـ 20 سنة. للانتقال من 22 % إلى 50 % نحتاج 50 − 22 = 28 وحدة، أي 28 ÷ 49 من عرض القطعة: العمر = 20 + (28 ÷ 49) × 20 = 20 + 11,43 = 31,43 ≈ 31,4 سنة ✓ (وهو بين 20 و40 كما يجب). وبالتكرارات نجد الجواب نفسه: 20 + (500 − 220) ÷ (710 − 220) × 20 = 20 + 11,43 = 31,43 ✓. الخطأ الشائع: 11,4 هي الزيادة وحدها دون إضافة الطرف 20؛ و33,4 هو المعدّل الذي حسبناه سابقًا وليس الوسيط؛ و50 يأخذ النسبة 50 % على أنّها عمر.",
+      "difficulty": 2,
+      "competencies": [
+        "math.stat.moyenne-mediane",
+        "math.stat.effectifs-frequences"
+      ]
+    },
+    {
+      "prompt": "قمنا بتسجيل كلّ فرد من سكّان هذا الحيّ على ورقة خاصّة به، ووضعنا كافّة الأوراق في كيس، ثمّ سحبنا بطريقة عشوائية إحدى الأوراق.\nالفئة العمرية : [0 ; 20[ ، [20 ; 40[ ، [40 ; 60[ ، [60 ; 80[ ، [80 ; 100[\nعدد السكّان : 220 ، 490 ، 210 ، 60 ، 20\nما احتمال الحصول على ورقة لفرد عمره أقلّ من 60 سنة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "98 %"
+        },
+        {
+          "id": "b",
+          "text": "92 %"
+        },
+        {
+          "id": "c",
+          "text": "71 %"
+        },
+        {
+          "id": "d",
+          "text": "21 %",
+          "misconceptionTag": "math.stat.effectif-cumule-non-cumule"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الأعمار الأقلّ من 60 سنة هي أعمار الفئات [0 ; 20[ و [20 ; 40[ و [40 ; 60[ (الفئة [60 ; 80[ تبدأ عند 60 ولا تدخل): 220 + 490 + 210 = 920 فردًا من 1000. الاحتمال = 920 ÷ 1000 = 0,92 = 92 % ✓ (وبطريقة ثانية: 1 − (60 + 20) ÷ 1000 = 1 − 0,08 = 0,92 ✓). الخطأ الشائع: 21 % هو تواتر الفئة [40 ; 60[ وحدها (210 ÷ 1000)؛ و71 % يتوقّف عند 40 سنة؛ و98 % يُدخل الفئة [60 ; 80[ التي يبدأ مجالها من 60 سنة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.prob.frequence-et-chance",
+        "math.stat.effectifs-frequences"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "title": "🏛️ مناظرة 2017 · التمرين 2 ⭐⭐⭐: عددان مقلوبان، وحصر مداه صغير، ومجموع مربّعَي مقلوبَين",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 20,
+  "questions": [
+    {
+      "prompt": "نعتبر العدد الحقيقي:\na = (√5(√5 + 3) − (√5 − 1))/4\nما كتابة a في أبسط صورة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(3 + √5)/2"
+        },
+        {
+          "id": "b",
+          "text": "(2 + √5)/2",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        },
+        {
+          "id": "c",
+          "text": "(9 − √5)/4",
+          "misconceptionTag": "math.alg.distribution-partielle"
+        },
+        {
+          "id": "d",
+          "text": "(1 + 3√5)/4",
+          "misconceptionTag": "math.num.racine-et-carre-confondus"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "ننشر: √5(√5 + 3) = √5 × √5 + 3√5 = 5 + 3√5. ثمّ نطرح (√5 − 1) بقلب إشارة كلّ حدّ فيه: 5 + 3√5 − √5 + 1 = 6 + 2√5. إذن a = (6 + 2√5)/4 = 2(3 + √5)/4 = (3 + √5)/2 ✓. الخطأ الشائع نسيان قلب إشارة −1 داخل القوس فيخرج 4 + 2√5 ثمّ (2 + √5)/2؛ أو ضرب √5 في الحدّ الأوّل وحده فيخرج 5 + 3 = 8 ثمّ (9 − √5)/4؛ أو الظنّ أنّ √5 × √5 = √5 فيخرج (1 + 3√5)/4.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.developpement",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "بسّط العدد التالي:\nb = (6 − √20)/4",
+      "options": [
+        {
+          "id": "a",
+          "text": "(3 − 2√5)/2"
+        },
+        {
+          "id": "b",
+          "text": "(6 − 5√2)/4",
+          "misconceptionTag": "math.num.racine-extraction-facteur-inversee"
+        },
+        {
+          "id": "c",
+          "text": "(6 − √5)/4"
+        },
+        {
+          "id": "d",
+          "text": "(3 − √5)/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "√20 = √(4 × 5) = 2√5. إذن b = (6 − 2√5)/4. نُخرج العامل المشترك 2 من البسط: 6 − 2√5 = 2(3 − √5)، ثمّ نختزل 2 مع 4: b = 2(3 − √5)/4 = (3 − √5)/2 ✓. الخطأ الشائع اختزال الحدّ الأوّل وحده: بقسمة 6 و4 على 2 مع ترك 2√5 كما هو يخرج (3 − 2√5)/2؛ ومن عكس العاملين في √20 كتبه 5√2 فلم يُبسَّط الكسر؛ ومن أسقط العامل 2 عند إخراج √4 كتب √20 = √5 فيخرج (6 − √5)/4.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.frac.equivalence"
+      ]
+    },
+    {
+      "prompt": "نعتبر العددين a = (3 + √5)/2 و b = (3 − √5)/2. ما قيمة كلٍّ من a + b و ab ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "a + b = 3 و ab = 1"
+        },
+        {
+          "id": "b",
+          "text": "a + b = 3 و ab = 7/2",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "c",
+          "text": "a + b = 3/2 و ab = 1",
+          "misconceptionTag": "math.frac.add-denominators"
+        },
+        {
+          "id": "d",
+          "text": "a + b = 3/2 و ab = 7/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "a + b = ((3 + √5) + (3 − √5))/2 = 6/2 = 3 (الحدّان √5 و −√5 يتلاشيان، والمقام المشترك 2 يبقى كما هو). و ab = (3 + √5)(3 − √5)/(2 × 2) = (3² − (√5)²)/4 = (9 − 5)/4 = 1 ✓، فالعددان مقلوبان. الخطأ الشائع جمع المقامين 2 + 2 = 4 بدل الإبقاء على مقام مشترك فيخرج 6/4 = 3/2؛ أو جمع المربّعين بدل طرحهما فيخرج ab = (9 + 5)/4 = 7/2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ما الحصر الصحيح للعدد √5 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 ≤ √5 ≤ 2"
+        },
+        {
+          "id": "b",
+          "text": "5/2 ≤ √5 ≤ 3",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
+        },
+        {
+          "id": "c",
+          "text": "2 ≤ √5 ≤ 5/2"
+        },
+        {
+          "id": "d",
+          "text": "4 ≤ √5 ≤ 25/4",
+          "misconceptionTag": "math.num.racine-et-carre-confondus"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الأعداد 2 و√5 و5/2 موجبة، فنقارن مربّعاتها: 2² = 4 و (√5)² = 5 و (5/2)² = 25/4 = 6,25. ولمّا كان 4 ≤ 5 ≤ 25/4 فإنّ 2 ≤ √5 ≤ 5/2 ✓ (تحقّق: √5 ≈ 2,236). الخطأ الشائع أخذ 5/2 = 2,5 قيمةً للجذر كأنّه نصف 5 فيصير الحصر 5/2 ≤ √5 ≤ 3 وهو خاطئ لأنّ √5 < 2,5؛ أو جعل المربّعين 4 و 25/4 حدّين للجذر نفسه فيكتب 4 ≤ √5 ≤ 25/4؛ أمّا 1 ≤ √5 ≤ 2 فيخطئ لأنّ √5 أكبر من √4 = 2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ 2 ≤ √5 ≤ 5/2 ، وأنّ a = (3 + √5)/2. أيّ حصر للعدد a صحيح ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,5 ≤ a ≤ 2,75"
+        },
+        {
+          "id": "b",
+          "text": "5 ≤ a ≤ 5,5",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "0,25 ≤ a ≤ 0,5",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "d",
+          "text": "3,5 ≤ a ≤ 4",
+          "misconceptionTag": "math.alg.distribution-partielle"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نجمع 3 إلى أطراف الحصر: 5 ≤ 3 + √5 ≤ 11/2، ثمّ نقسم على 2 (عدد موجب فلا ينقلب الترتيب): 5/2 ≤ (3 + √5)/2 ≤ 11/4، أي 5/2 ≤ a ≤ 11/4 وهو 2,5 ≤ a ≤ 2,75 ✓ (تحقّق: a ≈ 2,618). الخطأ الشائع التوقّف قبل القسمة على 2 فيخرج 5 ≤ a ≤ 5,5؛ أو قسمة الحدّ 3 وحده على 2 فيخرج 3,5 ≤ a ≤ 4؛ أو إعطاء حصر العدد b = (3 − √5)/2 وهو 0,25 ≤ b ≤ 0,5 بدل حصر a.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "a و b عددان موجبان، كلٌّ منهما مقلوب الآخر، a + b = 3 و 5/2 ≤ a ≤ 11/4. أيّ حصر للعدد b ممّا يلي مداه أصغر قطعًا من 0,04 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/4 ≤ b ≤ 1/2"
+        },
+        {
+          "id": "b",
+          "text": "4/11 ≤ b ≤ 2/5"
+        },
+        {
+          "id": "c",
+          "text": "1/3 ≤ b ≤ 2/5"
+        },
+        {
+          "id": "d",
+          "text": "0,36 ≤ b ≤ 0,4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "بما أنّ b = 1/a وأنّ a موجب، فالانتقال إلى المقلوب يقلب الترتيب: من 5/2 ≤ a ≤ 11/4 نجد 1/(11/4) ≤ b ≤ 1/(5/2)، أي 4/11 ≤ b ≤ 2/5 ✓. مدى هذا الحصر 2/5 − 4/11 = 22/55 − 20/55 = 2/55 ≈ 0,036 وهو أصغر قطعًا من 0,04 (لأنّ 2/55 < 1/25 ⟺ 50 < 55). الخطأ الشائع الاستعانة بالعلاقة b = 3 − a فيخرج حصر صحيح 1/4 ≤ b ≤ 1/2 لكنّ مداه 1/4 = 0,25 كبير جدًّا؛ أو تقريب 4/11 إلى 1/3 فيخرج مدى 1/15 ≈ 0,067؛ أو تقريب الحدّين عشريًّا 0,36 ≤ b ≤ 0,4 فمداه 0,04 بالضبط وليس أصغر قطعًا منه.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "a و b عددان مقلوبان يحقّقان a + b = 3. ما قيمة 1/a² + 1/b² ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "11"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "1/7",
+          "misconceptionTag": "math.frac.add-denominators"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "بما أنّ a و b مقلوبان فإنّ ab = 1، ومنه 1/a = b و 1/b = a، إذن 1/a² + 1/b² = b² + a². وبالمتطابقة (a + b)² = a² + 2ab + b² نجد a² + b² = (a + b)² − 2ab = 3² − 2 × 1 = 9 − 2 = 7 ✓. الخطأ الشائع إسقاط الجداء المضاعف فيبقى (a + b)² = 9؛ أو إضافته بدل طرحه فيخرج 9 + 2 = 11؛ أو جمع المقامين 1/a² + 1/b² = 1/(a² + b²) فيخرج 1/7.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "title": "🏛️ مناظرة 2010 · التمرين 2 ⭐⭐⭐: مقلوب عدد ومقارنة ثمّ مجموع صحيح طبيعي",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 15,
+  "questions": [
+    {
+      "prompt": "لنحسب العدد A دون آلة حاسبة:\nA = 1 + √2(2 + √2)\nإلى أيّ كتابة نصل؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 + 3√2",
+          "misconceptionTag": "math.alg.distribution-partielle"
+        },
+        {
+          "id": "b",
+          "text": "4 + 3√2",
+          "misconceptionTag": "math.num.priorite-operations-ignoree"
+        },
+        {
+          "id": "c",
+          "text": "3 + 2√2"
+        },
+        {
+          "id": "d",
+          "text": "5 + 2√2",
+          "misconceptionTag": "math.num.racine-et-carre-confondus"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الضرب يسبق الجمع، فننشر أوّلًا √2(2 + √2) = 2√2 + (√2)² = 2√2 + 2 ثمّ نضيف 1: A = 1 + 2√2 + 2 = 3 + 2√2 ✓ (تحقّق: A ≈ 5,828). الخطأ الشائع ضرب √2 في الحدّ الأوّل من القوس وحده فيبقى الحدّ الثاني على حاله: 1 + 2√2 + √2 = 1 + 3√2 ؛ أو جمع 1 مع √2 قبل الضرب، أي حساب (1 + √2)(2 + √2) = 4 + 3√2 وهو ما يخالف أولوية الضرب على الجمع ؛ أو كتابة (√2)² = 2² = 4 فيخرج 1 + 2√2 + 4 = 5 + 2√2 مع أنّ مربّع الجذر يعيد العدد الذي تحته.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نبسّط الجذور في العدد التالي:\nB = 3 + √32 − 3√8\nما قيمة B ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 − 2√2"
+        },
+        {
+          "id": "b",
+          "text": "−1"
+        },
+        {
+          "id": "c",
+          "text": "3 + 10√2",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "√2",
+          "misconceptionTag": "math.alg.termes-semblables-par-coefficient"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "√32 = √(16 × 2) = 4√2 و √8 = √(4 × 2) = 2√2 ، فيكون B = 3 + 4√2 − 3 × 2√2 = 3 + 4√2 − 6√2 = 3 − 2√2 ✓. الخطأ الشائع إسقاط الجذر بقراءة 4√2 على أنّه 8 و 2√2 على أنّه 4 فيخرج 3 + 8 − 3 × 4 = −1 ؛ أو جمع 6√2 بدل طرحه: 3 + 4√2 + 6√2 = 3 + 10√2 ؛ أو جمع الحدّ 3 مع الجذور كأنّه من صنفها: 3 + 4√2 − 6√2 = (3 + 4 − 6)√2 = √2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نُنطق مقام الكسر 1/A حيث:\nA = 3 + 2√2\nأيّ الأعداد التالية يساوي 1/A ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3 − 2√2",
+          "misconceptionTag": "math.num.oppose-inverse-confondus"
+        },
+        {
+          "id": "b",
+          "text": "(3 − 2√2)/17",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "c",
+          "text": "1/3 + √2/4"
+        },
+        {
+          "id": "d",
+          "text": "3 − 2√2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نضرب البسط والمقام في مرافق المقام 3 − 2√2: 1/A = (3 − 2√2)/((3 + 2√2)(3 − 2√2)) = (3 − 2√2)/(9 − 8) = 3 − 2√2 ✓ لأنّ (2√2)² = 4 × 2 = 8. وهذا العدد هو B = 3 − 2√2 نفسه، أي B = 1/A (تحقّق: A × B = 9 − 8 = 1 ✓). الخطأ الشائع خلط المقلوب بالمقابل فيُكتب 1/A = −A = −3 − 2√2 ؛ أو حساب المقام بجمع المربّعين: 9 + 8 = 17 ؛ أو تقسيم الكسر على حدّي المقام: 1/(3 + 2√2) = 1/3 + 1/(2√2) = 1/3 + √2/4 والمقام لا يُقسَّم على حدّيه.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ العدد B مقلوب العدد الموجب A ، حيث:\nA = 3 + 2√2\nB = 3 − 2√2\nأيّ حكم مع حجّته يصحّ في مقارنة العددين 3 و 2√2 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 < 2√2 ، لأنّ B مقلوب عدد موجب فهو سالب",
+          "misconceptionTag": "math.num.oppose-inverse-confondus"
+        },
+        {
+          "id": "b",
+          "text": "3 > 2√2 ، لأنّ B مقلوب عدد موجب فهو موجب"
+        },
+        {
+          "id": "c",
+          "text": "3 > 2√2 ، لأنّ B مقلوب عدد أكبر من 1 فهو أكبر من 1",
+          "misconceptionTag": "math.num.inverse-conserve-l-ordre"
+        },
+        {
+          "id": "d",
+          "text": "3 < 2√2 ، لأنّ (2√2)² = 2² × 2² = 16 وهو أكبر من 9",
+          "misconceptionTag": "math.num.racine-et-carre-confondus"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "لدينا B × A = 1 و A موجب، فلا يمكن أن يكون B سالبًا (جداء عددين مختلفَي الإشارة سالب)، إذن B = 3 − 2√2 > 0 أي 3 > 2√2 ✓ وهو ما تؤكّده المربّعات 9 > 8. الخطأ الشائع خلط المقلوب بالمقابل فيُظنّ أنّ مقلوب عدد موجب سالب ؛ ومن ظنّ أنّ المقلوب يحفظ الترتيب استنتج من A > 1 أنّ B > 1 ، والصحيح B = 1/A < 1 ، فحكمه صحيح بحجّة باطلة ؛ ومن كتب (√2)² = 2² = 4 وجد (2√2)² = 4 × 4 = 16 فقلب المقارنة.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "إذا كان العدد B مقلوب العدد A ، وكان:\nC = A/B + B/A\nفما الكتابة الأبسط التي تعبّر عن C بدلالة A و B ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "C = A² + B²"
+        },
+        {
+          "id": "b",
+          "text": "C = 2",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "c",
+          "text": "C = A + B"
+        },
+        {
+          "id": "d",
+          "text": "C = (A + B)²",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "بما أنّ B = 1/A فإنّ 1/B = A ، إذن A/B = A × (1/B) = A × A = A² وبالمثل B/A = B × (1/A) = B × B = B² ، فيكون C = A² + B² ✓ (وبطريق آخر: A/B + B/A = (A² + B²)/(A × B) = A² + B² لأنّ A × B = 1). الخطأ الشائع تحويل القسمة إلى ضرب فيُكتب A/B = A × B = 1 ومنه C = 1 + 1 = 2 ؛ أو جمع الكسرين بجمع بسطيهما فوق جداء المقامين A/B + B/A = (A + B)/(A × B) = A + B ؛ أو كتابة A² + B² = (A + B)² بإسقاط الجداء المضاعف.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نذكّر بالمتطابقتين:\n(u + v)² = u² + 2uv + v²\n(u − v)² = u² − 2uv + v²\nونعتبر:\nA = 3 + 2√2\nB = 3 − 2√2\nما قيمة العدد C حيث:\nC = A² + B²",
+      "options": [
+        {
+          "id": "a",
+          "text": "36"
+        },
+        {
+          "id": "b",
+          "text": "18 + 8√2",
+          "misconceptionTag": "math.num.exposant-porte-sur-un-seul-facteur"
+        },
+        {
+          "id": "c",
+          "text": "34"
+        },
+        {
+          "id": "d",
+          "text": "17 + 12√2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ننشر كلّ مربّع: A² = 3² + 2 × 3 × 2√2 + (2√2)² = 9 + 12√2 + 8 = 17 + 12√2 و B² = 3² − 2 × 3 × 2√2 + (2√2)² = 9 − 12√2 + 8 = 17 − 12√2 ، فيكون C = A² + B² = 34 ✓ وهو عدد صحيح طبيعي لأنّ الحدّين 12√2 و −12√2 يتلاشيان. الخطأ الشائع تربيع المعامل وحده فيُكتب (2√2)² = 4√2 ويخرج 18 + 8√2 ؛ أو كتابة A² + B² = (A + B)² = 6² = 36 مع أنّ (A + B)² = A² + 2AB + B² = 34 + 2 = 36 ؛ أو التوقّف عند حساب A² وحده فيبقى العدد 17 + 12√2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    }
+  ]
+}
