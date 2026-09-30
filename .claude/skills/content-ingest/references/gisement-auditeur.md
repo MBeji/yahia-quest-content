@@ -68,3 +68,21 @@ fichier** : l'orchestrateur renvoie les correctifs à l'auteur.
 - **Rendu arabe** : parenthèse d'unité collée à un nombre, point final après un intervalle ou une
   formule ; passe les chaînes suspectes dans `isolateLtrRuns` (`src/shared/lib/bidi.ts`) avant de
   conclure (un point après « b/a » seul, sans √, parenthèse ni inégalité, n'est PAS isolé).
+- **Une donnée retirée ou ajoutée par l'auteur rend un distracteur vrai** (« −3 ≤ A ≤ 5 » devient un
+  encadrement vrai sans « مداه 4 ») : recalcule CHAQUE option après toute adaptation d'énoncé.
+- **Un rappel, une règle ou une réécriture dans l'énoncé qui désigne la clé** (« inverses ⟺ produit 1 »
+  avant un produit qui vaut 1 ; l'étape clé d'une factorisation donnée en entrée) ; **une « seconde
+  méthode » qui redemande la valeur d'une question antérieure** : la clé sort par l'ordre d'émission.
+- **Vote terme à terme** sur les distracteurs qui ne changent qu'un terme de la clé : exige un plan
+  2×2 (une option à deux erreurs, muette).
+- **Rendu bidi (plus fin)** : un signe collé à une lettre hors tronçon isolé (« −x + 1 » s'affiche
+  « x + 1− »), un deux-points ou un point collé à un chiffre en fin de phrase, une liste de quatre
+  intervalles ou plus sur une ligne (débordement sur téléphone) ; simule avec `isolateLtrRuns` puis
+  bidi-js et compare le texte affiché au texte source.
+- **Explication fausse** : une égalité écrite qui n'en est pas une (« −2x + 4x = 6x »), ou un mécanisme
+  d'erreur qui ne produit pas la valeur de l'option. Recalcule chaque égalité de chaque explication.
+- **Multi** : nombre de bonnes réponses déductible (une seule écriture juste par cas) ; énoncé au
+  pluriel. **Doublon d'un quiz publié** (pas seulement des missions) : représentation sur droite
+  graduée, gabarit « cercle × flèche ». **Vocabulaire** absent du cours (« تظليل » pour une demi-droite).
+- **Étiquette** dont le libellé cite une notion hors programme (f(x) en 9ᵉ) ou dont la compétence est
+  d'un chapitre hors programme ; propose l'étiquette existante ou l'élargissement de son libellé.
