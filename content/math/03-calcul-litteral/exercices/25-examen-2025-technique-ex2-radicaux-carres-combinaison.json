@@ -1,0 +1,197 @@
+{
+  "title": "🏛️ مناظرة 2025 (تقني) · التمرين 2 ⭐⭐⭐: اختزال جذور، وجداء عددين، وتربيع مجموع وفرق، ونشر عبارة ثمّ حسابها",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 25,
+  "questions": [
+    {
+      "prompt": "بعد إخراج المربّعات الكاملة من تحت الجذور نبسّط العددين:\na = 2 + √27 − √12\nb = 2 − 5√3 + √48\nأيّ الأزواج التالية تمثّل قيمتَي a و b ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(a ; b) = (2 + 5√3 ; 2 + 11√3)",
+          "misconceptionTag": "math.num.facteur-racine-sans-carre"
+        },
+        {
+          "id": "b",
+          "text": "(a ; b) = (3√3 ; √3)",
+          "misconceptionTag": "math.alg.termes-semblables-par-coefficient"
+        },
+        {
+          "id": "c",
+          "text": "(a ; b) = (2 + √15 ; 2 − 3√3)",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        },
+        {
+          "id": "d",
+          "text": "(a ; b) = (2 + √3 ; 2 − √3)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نُخرج المربّع الكامل من تحت كلّ جذر: √27 = √(9 × 3) = 3√3 و √12 = √(4 × 3) = 2√3 و √48 = √(16 × 3) = 4√3. إذن a = 2 + 3√3 − 2√3 = 2 + √3 و b = 2 − 5√3 + 4√3 = 2 − √3 ✓ (الجذور كلّها مضاعفات لـ √3 فتُجمع معاملاتها، والعدد 2 يبقى منفصلًا). الخطأ الشائع إخراج المربّع الكامل دون أخذ جذره: √27 = 9√3 و √12 = 4√3 و √48 = 16√3 فيخرج a = 2 + 5√3 و b = 2 + 11√3؛ أو جمع الحدّ الثابت مع معاملات الجذر كأنّه منها: (2 + 3 − 2)√3 = 3√3 و (2 − 5 + 4)√3 = √3؛ أو نقل الجذر إلى الفرق: √27 − √12 = √15 و √75 − √48 = √27 = 3√3 فيخرج a = 2 + √15 و b = 2 − 3√3، والجذر لا يُوزَّع على الطرح.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "عددان غير معدومين يكونان مقلوبين إذا كان جداؤهما مساويًا للعدد 1\nنعتبر العددين:\na = 2 + √3\nb = 2 − √3\nما قيمة الجداء ab ، وماذا نستنتج بشأن العلاقة بين a و b ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "ab = 1 ، إذن a و b مقلوبان"
+        },
+        {
+          "id": "b",
+          "text": "ab = 1 ، إذن a و b متقابلان",
+          "misconceptionTag": "math.num.oppose-inverse-confondus"
+        },
+        {
+          "id": "c",
+          "text": "ab = 7 ، إذن a و b ليسا مقلوبين",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "d",
+          "text": "ab = −5 ، إذن a و b ليسا مقلوبين",
+          "misconceptionTag": "math.num.racine-et-carre-confondus"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الجداء من الشكل (u + v)(u − v) = u² − v² مع u = 2 و v = √3: ab = 2² − (√3)² = 4 − 3 = 1 ✓ لأنّ (√3)² = 3. وبما أنّ جداءهما يساوي 1 فإنّ a و b مقلوبان: كلّ منهما يساوي 1 مقسومًا على الآخر. الخطأ الشائع جمع المربّعين بدل طرحهما فيخرج 4 + 3 = 7؛ أو كتابة (√3)² = 3² = 9 فيخرج 4 − 9 = −5؛ أو الخلط بين المقلوب والمقابل، فالمقابلان مجموعهما 0 لا جداؤهما 1 (وهنا a + b = 4).",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "نعتبر العددين:\na = 2 + √3\nb = 2 − √3\nاختر كلّ الكتابات الصحيحة.",
+      "options": [
+        {
+          "id": "a",
+          "text": "b² = 7 + 4√3"
+        },
+        {
+          "id": "b",
+          "text": "a² = 7 + 4√3"
+        },
+        {
+          "id": "c",
+          "text": "b² = 1"
+        },
+        {
+          "id": "d",
+          "text": "b² = 7 − 4√3"
+        },
+        {
+          "id": "e",
+          "text": "a² = 7"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "بالمتطابقة (u + v)² = u² + 2uv + v² مع u = 2 و v = √3 حيث 2uv = 4√3 و (√3)² = 3 نجد a² = 4 + 4√3 + 3 = 7 + 4√3 ✓. وبالمتطابقة (u − v)² = u² − 2uv + v² نجد b² = 2² − 2 × 2 × √3 + (√3)² = 4 − 4√3 + 3 = 7 − 4√3 ✓ (الجداء المضاعف وحده سالب، والحدّ الأخير (√3)² = 3 موجب). أمّا الكتابة a² = 7 فتُسقط الجداء المضاعف 4√3؛ وأمّا الكتابة b² = 7 + 4√3 فتعطي الجداء المضاعف إشارة موجبة كما في مربّع المجموع؛ وأمّا الكتابة b² = 1 فتخلط بين مربّع الفرق وفرق المربّعين، وهما عبارتان مختلفتان.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "علمًا أنّ:\na + b = 4\na² = 7 + 4√3\nb² = 7 − 4√3\nأيّ الأعداد التالية يساوي المجموع a² + b² ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "b",
+          "text": "8√3",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "c",
+          "text": "14"
+        },
+        {
+          "id": "d",
+          "text": "16",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نجمع الطرفين: a² + b² = (7 + 4√3) + (7 − 4√3) = 14 + 4√3 − 4√3 = 14 ✓ (الحدّان 4√3 و −4√3 متقابلان فيتلاشيان). الخطأ الشائع إجراء عملية أخرى غير الجمع: الطرح يعطي a² − b² = 8√3، والضرب يعطي a²b² = 49 − 48 = 1؛ أو حساب (a + b)² = 4² = 16 بدل a² + b² وإسقاط الجداء المضاعف −2ab من a² + b² = (a + b)² − 2ab.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ما الصورة المنشورة للعبارة a² − b(a − b) حيث a و b عددان حقيقيّان ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "a² − ab",
+          "misconceptionTag": "math.alg.distribution-partielle"
+        },
+        {
+          "id": "b",
+          "text": "a² − ab − b²",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        },
+        {
+          "id": "c",
+          "text": "a² − ab + b"
+        },
+        {
+          "id": "d",
+          "text": "a² − ab + b²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نوزّع −b على حدّي القوس: −b(a − b) = (−b) × a + (−b) × (−b) = −ab + b² ✓ لأنّ جداء عددين سالبين موجب. إذن a² − b(a − b) = a² − ab + b². الخطأ الشائع توزيع −b على الحدّ الأوّل وحده فيبقى a² − ab؛ أو عدم قلب إشارة الحدّ الثاني فيُكتب −ab − b²؛ أو نسيان تربيع b في الجداء (−b) × (−b) فيُكتب +b.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "لدينا عددان مقلوبان a و b يحقّقان:\nab = 1\na² + b² = 14\nما قيمة العدد a² − b(a − b) ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "13"
+        },
+        {
+          "id": "c",
+          "text": "14"
+        },
+        {
+          "id": "d",
+          "text": "15"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "ننشر أوّلًا: a² − b(a − b) = a² − ab + b² = (a² + b²) − ab. وبتعويض a² + b² = 14 و ab = 1 نجد 14 − 1 = 13 ✓. الخطأ الشائع نسيان الحدّ −ab فيبقى 14؛ أو إضافة ab بدل طرحه فيخرج 14 + 1 = 15؛ أو الظنّ أنّ a² − ab + b² هو (a − b)² فيُطرح 2ab بدل ab فيخرج 14 − 2 = 12.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    }
+  ]
+}

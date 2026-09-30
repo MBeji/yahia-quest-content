@@ -1,0 +1,339 @@
+{
+  "title": "🏛️ مناظرة 2018 · التمرين 2 ⭐⭐⭐: مربّعا عددين بجذور تربيعية — مثلّث قائم متقايس الضلعين والمساحة بطريقتين",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 24,
+  "questions": [
+    {
+      "prompt": "مربّعا العددين الموجبين a و b هما على الترتيب:\n11 + 6√2\n11 − 6√2\nأيّ مقارنة بين a² و b² مع حجّتها هي الصحيحة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "a² > b² ، لأنّ a² − b² = 12√2 > 0"
+        },
+        {
+          "id": "b",
+          "text": "a² = b² ، لأنّ a² − b² = 11 + 6√2 − 11 − 6√2 = 0",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        },
+        {
+          "id": "c",
+          "text": "a² < b² ، لأنّ a² − b² = −12√2 < 0"
+        },
+        {
+          "id": "d",
+          "text": "a² > b² ، لأنّ a² + b² = 22 > 0",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نحسب الفرق: a² − b² = (11 + 6√2) − (11 − 6√2) = 11 + 6√2 − 11 + 6√2 = 12√2 > 0 ، إذن a² > b² ✓. الخطأ الشائع: إبقاء إشارة الطرح على الحدّ الأوّل من القوس وحده فنجد 11 + 6√2 − 11 − 6√2 = 0 ؛ أو عكس ترتيب الطرح فنجد −12√2 ، وهو سالب ؛ أو جمع العددين بدل طرحهما فنجد a² + b² = 22 ، وهو موجب دائمًا ولا يقارن شيئًا.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "a و b عددان موجبان ، ونعلم أنّ:\na² − b² = 12√2\nأيّ حجّة تثبت أنّ الفرق a − b موجب ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "a > 0 و b > 0 ، وفرق عددين موجبين يكون موجبًا دائمًا"
+        },
+        {
+          "id": "b",
+          "text": "a² − b² = a − b و a² − b² > 0 ، فالفرق a − b موجب أيضًا"
+        },
+        {
+          "id": "c",
+          "text": "(a − b)(a + b) = a² − b² > 0 و a + b > 0 ، فـ a − b > 0"
+        },
+        {
+          "id": "d",
+          "text": "مربّع الفرق (a − b)² موجب دائمًا ، فالفرق a − b موجب بدوره"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "العددان a و b موجبان وغير معدومين معًا (لأنّ a² − b² ≠ 0) ، فالمجموع a + b > 0. ومن المتطابقة a² − b² = (a − b)(a + b) نجد (a − b)(a + b) = 12√2 > 0. والجداء لا يكون موجبًا قطعًا إلّا إذا كان عاملاه من الإشارة نفسها ، وبما أنّ a + b > 0 فإنّ a − b > 0 ✓ ، أي a > b. الخطأ الشائع: القول إنّ فرق عددين موجبين موجب دائمًا ، مع أنّ 1 − 3 سالب ؛ أو مساواة a² − b² بـ a − b ؛ أو الاعتماد على أنّ (a − b)² موجب دائمًا ، فهو موجب حتّى لو كان a − b سالبًا.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "نضرب مربّعي العددين الموجبين a و b ، وهما 11 + 6√2 و 11 − 6√2 على الترتيب\nما قيمة الجداء a²b² ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "193",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "b",
+          "text": "121 − 6√2",
+          "misconceptionTag": "math.alg.difference-carres-second-terme-non-eleve-au-carre"
+        },
+        {
+          "id": "c",
+          "text": "121 − 36√2",
+          "misconceptionTag": "math.num.exposant-porte-sur-un-seul-facteur"
+        },
+        {
+          "id": "d",
+          "text": "49"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "الجداء (11 + 6√2)(11 − 6√2) من الصورة (u + v)(u − v) مع u = 11 و v = 6√2 ، فيساوي u² − v² = 11² − (6√2)² = 121 − 36 × 2 = 121 − 72 = 49 ✓. الخطأ الشائع: جمع المربّعين بدل طرحهما فنجد 121 + 72 = 193 ؛ أو تربيع العدد 6 وحده في (6√2)² فنجد 36√2 ؛ أو طرح 6√2 دون تربيعه فنجد 121 − 6√2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "a و b عددان حقيقيان موجبان ، ونعلم أنّ:\na²b² = 49\nما قيمة الجداء ab ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "7 أو −7",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "49/2",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
+        },
+        {
+          "id": "d",
+          "text": "49",
+          "misconceptionTag": "math.num.racine-et-carre-confondus"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "لدينا a²b² = (ab)² ، أي (ab)² = 49. العدد ab موجب لأنّ a و b موجبان ، فهو الجذر التربيعي الموجب للعدد 49 ، أي ab = 7 ✓. الخطأ الشائع: الاحتفاظ بالجذرين معًا 7 و −7 مع أنّ ab موجب ؛ أو أخذ نصف العدد 49 بدل جذره فنجد 49/2 ؛ أو التوقّف عند 49 كأنّه قيمة ab.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-definition",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "a و b عددان موجبان يحقّقان:\na² = 11 + 6√2\nb² = 11 − 6√2\nab = 7\nما قيمة (a − b)² ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "12√2"
+        },
+        {
+          "id": "c",
+          "text": "22",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "d",
+          "text": "36",
+          "misconceptionTag": "math.alg.carre-difference-signes"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نطبّق متطابقة مربّع الفرق: (a − b)² = a² + b² − 2ab. لدينا a² + b² = (11 + 6√2) + (11 − 6√2) = 22 و 2ab = 2 × 7 = 14 ، فـ (a − b)² = 22 − 14 = 8 ✓. الخطأ الشائع: نسيان الجداء المضاعف 2ab فنجد 22 ؛ أو جمعه بدل طرحه فنجد 22 + 14 = 36 ؛ أو الخلط بين مربّع الفرق وفرق المربّعين فنجد a² − b² = 12√2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "a و b عددان موجبان حيث a > b ، ونعلم أنّ:\n(a − b)² = 8\nما الاستنتاج الصحيح لقيمة a − b مع حجّته ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "نقسم 8 على 2 لأنّ الفرق مرفوع إلى القوّة 2 ، فـ a − b = 4",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
+        },
+        {
+          "id": "b",
+          "text": "نأخذ العدد 8 كما هو ، لأنّ الفرق ومربّعه متساويان ، فـ a − b = 8",
+          "misconceptionTag": "math.num.racine-et-carre-confondus"
+        },
+        {
+          "id": "c",
+          "text": "للعدد 8 جذران تربيعيان ، فـ a − b = 2√2 أو a − b = −2√2",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        },
+        {
+          "id": "d",
+          "text": "a − b موجب لأنّ a > b ، فهو الجذر الموجب للعدد 8 ، أي 2√2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "المساواة (a − b)² = 8 تعني أنّ a − b هو √8 أو −√8. وبما أنّ a > b فالفرق a − b موجب ، فهو الجذر التربيعي الموجب للعدد 8: a − b = √8 = √(4 × 2) = 2√2 ✓. الخطأ الشائع: الاحتفاظ بالجذرين معًا مع أنّ a − b موجب ؛ أو قسمة 8 على 2 بدل أخذ جذره فنجد 4 ؛ أو التوقّف عند المربّع 8 كأنّه الفرق نفسه.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-definition",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABC قائم في A وفيه AB = AC ، والنقطة E تنتمي إلى القطعة [AC] ، و H هي المسقط العمودي للنقطة E على (BC)\nما طبيعة المثلّث HEC ؟\n<svg viewBox=\"0 0 340 176\"><title>المثلّث ABC القائم في A والنقطتان E من [AC] و H مسقط E على المستقيم (BC)</title><polygon points=\"136.4,127.6 136.4,67.6 76.4,127.6\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><polygon points=\"170,34 263.6,127.6 76.4,127.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M136.4 67.6 L263.6 127.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M136.4 67.6 L136.4 127.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M178.5 42.5 L170 51 L161.5 42.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M136.4 117.6 L146.4 117.6 L146.4 127.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"170\" cy=\"34\" r=\"3.8\"/><circle cx=\"263.6\" cy=\"127.6\" r=\"3.8\"/><circle cx=\"76.4\" cy=\"127.6\" r=\"3.8\"/></g><g fill=\"#0f6e56\"><circle cx=\"136.4\" cy=\"67.6\" r=\"4.2\"/><circle cx=\"136.4\" cy=\"127.6\" r=\"4.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"170\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"277.6\" y=\"143.6\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"62.4\" y=\"143.6\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"122.4\" y=\"65.6\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text><text x=\"138.4\" y=\"145.6\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "قائم وليس متقايس الضلعين"
+        },
+        {
+          "id": "b",
+          "text": "متقايس الأضلاع"
+        },
+        {
+          "id": "c",
+          "text": "قائم ومتقايس الضلعين قمّته H"
+        },
+        {
+          "id": "d",
+          "text": "قائم ومتقايس الضلعين قمّته E"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المثلّث ABC قائم في A وضلعاه AB و AC متقايسان ، فزاويتا القاعدة [BC] متقايستان ومجموعهما 90° ، أي ∠ACB = 45°. والمسقط العمودي يعطي ∠EHC = 90°. إذن ∠HEC = 180° − 90° − 45° = 45° = ∠HCE ، فالمثلّث HEC قائم في H ومتقايس الضلعين قمّته H (ضلعاه المتقايسان HE و HC) ✓. الخطأ الشائع: الاكتفاء بالزاوية القائمة ونسيان أنّ الزاويتين الحادّتين متقايستان ؛ أو الظنّ أنّ المثلّث متقايس الأضلاع ، مع أنّ زاويتيه الحادّتين 45° لا 60° ؛ أو نسبة القمّة إلى E ، مع أنّ الضلعين المتقايسين هما الضلعان المحصوران للزاوية القائمة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABC قائم في A وفيه AB = AC = a ، والنقطة E تنتمي إلى القطعة [AC] حيث AE = b ، و H هي المسقط العمودي للنقطة E على (BC)\nنعلم أنّ a − b = 2√2 ، وأنّ المثلّث HEC قائم في H ومتقايس الضلعين قمّته H\nما طول EH ؟\n<svg viewBox=\"0 0 340 176\"><title>المثلّث ABC القائم في A والنقطتان E من [AC] و H مسقط E على المستقيم (BC)</title><polygon points=\"170,34 263.6,127.6 76.4,127.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M136.4 67.6 L263.6 127.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M136.4 67.6 L136.4 127.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M178.5 42.5 L170 51 L161.5 42.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M136.4 117.6 L146.4 117.6 L146.4 127.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"170\" cy=\"34\" r=\"3.8\"/><circle cx=\"263.6\" cy=\"127.6\" r=\"3.8\"/><circle cx=\"76.4\" cy=\"127.6\" r=\"3.8\"/></g><g fill=\"#0f6e56\"><circle cx=\"136.4\" cy=\"67.6\" r=\"4.2\"/><circle cx=\"136.4\" cy=\"127.6\" r=\"4.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"170\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"277.6\" y=\"143.6\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"62.4\" y=\"143.6\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"122.4\" y=\"65.6\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text><text x=\"138.4\" y=\"145.6\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text><text x=\"228.8\" y=\"76.8\" text-anchor=\"middle\" fill=\"#64748b\">a</text><text x=\"141.2\" y=\"48.8\" text-anchor=\"middle\" fill=\"#64748b\">b</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√2"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "2√2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "d",
+          "text": "4",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "النقطة E تنتمي إلى [AC] و AC = AB = a ، فـ EC = AC − AE = a − b = 2√2. المثلّث HEC قائم في H ووتره [EC] وفيه HE = HC ، فـ EC² = HE² + HC² = 2 HE² ، أي 8 = 2 HE² ، ومنه HE² = 4 وبما أنّ الطول موجب فـ HE = 2 ✓. الخطأ الشائع: إعطاء طول الوتر EC نفسه فنجد 2√2 ؛ أو التوقّف عند HE² = 4 دون أخذ الجذر فنجد 4 ؛ أو أخذ نصف الوتر فنجد EH = √2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABC قائم في A وفيه AB = AC = a ، والنقطة E تنتمي إلى القطعة [AC] ، و H هي المسقط العمودي للنقطة E على (BC) مع EH = 2\nما مساحة المثلّث BEC ؟\n<svg viewBox=\"0 0 340 176\"><title>المثلّث ABC القائم في A والنقطتان E من [AC] و H مسقط E على المستقيم (BC)</title><polygon points=\"170,34 263.6,127.6 76.4,127.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M136.4 67.6 L263.6 127.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M136.4 67.6 L136.4 127.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M178.5 42.5 L170 51 L161.5 42.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M136.4 117.6 L146.4 117.6 L146.4 127.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"170\" cy=\"34\" r=\"3.8\"/><circle cx=\"263.6\" cy=\"127.6\" r=\"3.8\"/><circle cx=\"76.4\" cy=\"127.6\" r=\"3.8\"/></g><g fill=\"#0f6e56\"><circle cx=\"136.4\" cy=\"67.6\" r=\"4.2\"/><circle cx=\"136.4\" cy=\"127.6\" r=\"4.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"170\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"277.6\" y=\"143.6\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"62.4\" y=\"143.6\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"122.4\" y=\"65.6\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text><text x=\"138.4\" y=\"145.6\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text><text x=\"147.4\" y=\"102.6\" text-anchor=\"middle\" fill=\"#64748b\">2</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "a"
+        },
+        {
+          "id": "b",
+          "text": "2a",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "a√2"
+        },
+        {
+          "id": "d",
+          "text": "2a√2",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "في المثلّث ABC القائم في A حيث AB = AC = a نجد BC² = a² + a² = 2a² ، أي BC = a√2. نأخذ [BC] قاعدةً للمثلّث BEC ، وارتفاعه [EH] لأنّ EH ⟂ (BC): S = (BC × EH)/2 = (a√2 × 2)/2 = a√2 ✓. الخطأ الشائع: نسيان القسمة على 2 فنجد 2a√2 ؛ أو جمع الضلعين القائمين BC = a + a = 2a بدل حسابه بفيثاغورس فنجد S = (2a × 2)/2 = 2a ؛ أو أخذ BC = a كأنّه ضلع قائم فنجد S = a.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.mes.aires"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABC قائم في A وفيه AB = AC = a ، والنقطة E تنتمي إلى القطعة [AC] حيث AE = b ، ونعلم أنّ:\na² = 11 + 6√2\nb² = 11 − 6√2\nab = 7\nما مساحة المثلّث BEC ؟\n<svg viewBox=\"0 0 340 176\"><title>المثلّث ABC القائم في A والنقطتان E من [AC] و H مسقط E على المستقيم (BC)</title><polygon points=\"263.6,127.6 136.4,67.6 76.4,127.6\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><polygon points=\"170,34 263.6,127.6 76.4,127.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M136.4 67.6 L263.6 127.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M136.4 67.6 L136.4 127.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M178.5 42.5 L170 51 L161.5 42.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M136.4 117.6 L146.4 117.6 L146.4 127.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"170\" cy=\"34\" r=\"3.8\"/><circle cx=\"263.6\" cy=\"127.6\" r=\"3.8\"/><circle cx=\"76.4\" cy=\"127.6\" r=\"3.8\"/></g><g fill=\"#0f6e56\"><circle cx=\"136.4\" cy=\"67.6\" r=\"4.2\"/><circle cx=\"136.4\" cy=\"127.6\" r=\"4.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"170\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"277.6\" y=\"143.6\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"62.4\" y=\"143.6\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"122.4\" y=\"65.6\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text><text x=\"138.4\" y=\"145.6\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text><text x=\"228.8\" y=\"76.8\" text-anchor=\"middle\" fill=\"#64748b\">a</text><text x=\"141.2\" y=\"48.8\" text-anchor=\"middle\" fill=\"#64748b\">b</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 + 3√2"
+        },
+        {
+          "id": "b",
+          "text": "6√2"
+        },
+        {
+          "id": "c",
+          "text": "4 + 6√2",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        },
+        {
+          "id": "d",
+          "text": "9 + 3√2",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المثلّث BEC هو المثلّث ABC بعد حذف المثلّث ABE ، فـ S = مساحة ABC − مساحة ABE. المثلّث ABC قائم في A وضلعاه القائمان a و a ، فمساحته a²/2 = (11 + 6√2)/2 ؛ والمثلّث ABE قائم في A وضلعاه القائمان a و b ، فمساحته ab/2 = 7/2. إذن S = (11 + 6√2)/2 − 7/2 = (4 + 6√2)/2 = 2 + 3√2 ✓. الخطأ الشائع: جمع المساحتين بدل طرحهما فنجد (11 + 6√2 + 7)/2 = 9 + 3√2 ؛ أو نسيان القسمة على 2 فنجد 11 + 6√2 − 7 = 4 + 6√2 ؛ أو اعتبار المثلّث المحذوف ضلعاه القائمان b و b فنجد (a² − b²)/2 = 6√2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.aires",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نحسب مساحة المثلّث BEC بطريقتين مختلفتين ، فنجد:\nS = a√2\nS = 2 + 3√2\nما قيمة العدد الموجب a ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 + 3√2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "3 + √2"
+        },
+        {
+          "id": "c",
+          "text": "3 + 2√2"
+        },
+        {
+          "id": "d",
+          "text": "6 + 2√2",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "من المساواة a√2 = 2 + 3√2 نقسم الطرفين على √2: a = (2 + 3√2)/√2 = 2/√2 + 3√2/√2 = √2 + 3 ، لأنّ 2/√2 = √2 ✓. الخطأ الشائع: إعطاء المساحة نفسها 2 + 3√2 بدل العدد a ؛ أو ضرب الطرفين في √2 بدل القسمة فنجد (2 + 3√2) × √2 = 6 + 2√2 ؛ أو كتابة 2/√2 = 2√2 فنجد 3 + 2√2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.alg.equations-premier-degre"
+      ]
+    }
+  ]
+}

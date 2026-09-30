@@ -1,0 +1,246 @@
+{
+  "title": "🏛️ مناظرة 2020 · التمرين 2 ⭐⭐⭐: جذور تربيعية وقوى ذات أسّ كبير — نصف دائرة وارتفاع ومبرهنة طاليس",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 26,
+  "questions": [
+    {
+      "prompt": "حسب تلميذ العدد التالي:\na = 3(1 − √3)² − 7(1 − √3) − 6\nوكتب الحلّ في ثلاث خطوات:\nالخطوة 1: (1 − √3)² = 1 − 2√3 + 3 = 4 − 2√3\nالخطوة 2: a = 3(4 − 2√3) − 7(1 − √3) − 6 = 12 − 6√3 − 7 − 7√3 − 6\nالخطوة 3: a = −1 − 13√3\nما الخطوة التي تحتوي على أوّل خطأ ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "الخطوة 1"
+        },
+        {
+          "id": "b",
+          "text": "الخطوة 2"
+        },
+        {
+          "id": "c",
+          "text": "الخطوة 3"
+        },
+        {
+          "id": "d",
+          "text": "لا توجد خطوة خاطئة"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الخطوة 1 صحيحة: (1 − √3)² = 1 − 2√3 + 3 = 4 − 2√3. أمّا الخطوة 2 ففيها الخطأ الأوّل: الطرح −7(1 − √3) يغيّر إشارة الحدّين داخل القوس معًا ، فهو −7 + 7√3 وليس −7 − 7√3. والحساب الصحيح: a = 12 − 6√3 − 7 + 7√3 − 6 = −1 + √3 = √3 − 1 ✓. أمّا الخطوة 3 فسليمة انطلاقًا من الخطوة 2 ، لكنّ نتيجتها خاطئة لأنّها ورثت الخطأ. الخطأ الشائع: إبقاء إشارة الطرح على الحدّ الأوّل من القوس وحده ؛ أو الحكم على الخطوة الأخيرة لمجرّد أنّ نتيجتها غير صحيحة ؛ أو نشر مربّع الفرق (1 − √3)² بنسيان الجداء المضاعف.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نريد تبسيط العدد b المعرّف كما يلي:\nb = (√48 − √12 + 2)/4\nأيّ قيمة من القيم التالية تساوي b ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(√3 − 1)/2"
+        },
+        {
+          "id": "b",
+          "text": "(√3 + 1)/4",
+          "misconceptionTag": "math.frac.reduction-un-seul-terme-divise"
+        },
+        {
+          "id": "c",
+          "text": "(√3 + 1)/2"
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نبسّط الجذرين: √48 = √(16 × 3) = 4√3 و √12 = √(4 × 3) = 2√3 ، فالبسط يساوي 4√3 − 2√3 + 2 = 2√3 + 2. ثمّ نقسم البسط والمقام معًا على 2: b = (2√3 + 2)/4 = (√3 + 1)/2 ✓. الخطأ الشائع: حساب √48 − √12 = √(48 − 12) = √36 = 6 فنجد b = (6 + 2)/4 = 2 ؛ أو قسمة البسط وحده على 2 وترك المقام 4 فنجد (√3 + 1)/4 ؛ أو تغيير إشارة الحدّ 2 عند الجمع فنجد (2√3 − 2)/4 = (√3 − 1)/2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعتبر العدد التالي:\nb = (√3 + 1)/2\nما مقلوب العدد b ، أي العدد 1/b ، في أبسط كتابة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2(√3 + 1)"
+        },
+        {
+          "id": "b",
+          "text": "√3 − 1"
+        },
+        {
+          "id": "c",
+          "text": "(√3 − 1)/2",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "d",
+          "text": "−(√3 + 1)/2",
+          "misconceptionTag": "math.num.oppose-inverse-confondus"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "مقلوب الكسر (√3 + 1)/2 هو 2/(√3 + 1). ننطق المقام بضرب البسط والمقام في مرافق المقام √3 − 1: 2/(√3 + 1) = 2(√3 − 1)/((√3 + 1)(√3 − 1)) = 2(√3 − 1)/(3 − 1) = 2(√3 − 1)/2 = √3 − 1 ✓. الخطأ الشائع: جمع المربّعين في المقام بدل طرحهما فنجد 3 + 1 = 4 ثمّ 2(√3 − 1)/4 = (√3 − 1)/2 ؛ أو الخلط بين المقلوب والمقابل فنجد −(√3 + 1)/2 ؛ أو ضرب العدد b في 2 بدل قلبه فنجد 2(√3 + 1).",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "نصف دائرة مركزها O وقطرها [BC] ، والنقطة H منتصف [OC] ، والعمودي على (BC) في H يقطع نصف الدائرة في A\nأيّ حجّة تثبت أنّ المثلّث ABC قائم في A ؟\n<svg viewBox=\"0 0 340 210\"><title>نصف الدائرة ذات المركز O والقطر [BC]</title><path d=\"M70 176 A100 100 0 0 1 270 176 Z\" fill=\"#0f6e56\" fill-opacity=\"0.06\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M220 89.4 L70 176\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M220 89.4 L270 176\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M220 89.4 L220 176\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M220 167 L229 167 L229 176\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"176\" r=\"3.8\"/><circle cx=\"270\" cy=\"176\" r=\"3.8\"/></g><g fill=\"#0f172a\"><circle cx=\"170\" cy=\"176\" r=\"3.6\"/><circle cx=\"220\" cy=\"176\" r=\"3.6\"/><circle cx=\"220\" cy=\"89.4\" r=\"3.6\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"58\" y=\"181\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"282\" y=\"181\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"170\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"222\" y=\"196\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text><text x=\"224\" y=\"79.4\" text-anchor=\"middle\" fill=\"#0f172a\">A</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "OA = OB = OC ، فـ O متساوية البعد عن الرؤوس ، إذن ABC قائم في A"
+        },
+        {
+          "id": "b",
+          "text": "[BC] قطر في نصف الدائرة ، فالمثلّث ABC قائم في B لأنّ [BC] ضلع فيه",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "c",
+          "text": "OA = OB ، فالمثلّث OAB متقايس الضلعين ، إذن المثلّث ABC قائم في A"
+        },
+        {
+          "id": "d",
+          "text": "(AH) عمودي على (BC) ، فالمثلّث ABC قائم في A لأنّ (AH) ارتفاع فيه"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "OA و OB و OC أنصاف أقطار في الدائرة نفسها ، فـ OA = OB = OC ، وO منتصف [BC] لأنّ [BC] قطر. إذن منتصف الضلع [BC] متساوي البعد عن الرؤوس الثلاثة ، فبعكس خاصية منتصف الوتر يكون المثلّث ABC قائمًا ووتره [BC] ، أي قائمًا في A ✓. الخطأ الشائع: نسبة الزاوية القائمة إلى B مع أنّها تقابل الوتر [BC] ؛ أو الاكتفاء بأنّ OAB متقايس الضلعين دون استنتاج شيء عن الزاوية عند A ؛ أو الاعتماد على أنّ (AH) عمودي على (BC) ، وهو يعطي زاويتين قائمتين عند H لا عند A.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.geo.cercle"
+      ]
+    },
+    {
+      "prompt": "نصف دائرة مركزها O وقطرها [BC] حيث BC = 4 ، والنقطة H منتصف [OC] ، والعمودي على (BC) في H يقطع نصف الدائرة في A ، والمثلّث ABC قائم في A\nما طول AH ؟\n<svg viewBox=\"0 0 340 210\"><title>نصف الدائرة ذات المركز O والقطر [BC]</title><path d=\"M70 176 A100 100 0 0 1 270 176 Z\" fill=\"#0f6e56\" fill-opacity=\"0.06\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M220 89.4 L220 176\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M220 167 L229 167 L229 176\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"176\" r=\"3.8\"/><circle cx=\"270\" cy=\"176\" r=\"3.8\"/></g><g fill=\"#0f172a\"><circle cx=\"170\" cy=\"176\" r=\"3.6\"/><circle cx=\"220\" cy=\"176\" r=\"3.6\"/><circle cx=\"220\" cy=\"89.4\" r=\"3.6\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"58\" y=\"181\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"282\" y=\"181\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"170\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"222\" y=\"196\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text><text x=\"224\" y=\"79.4\" text-anchor=\"middle\" fill=\"#0f172a\">A</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√3"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "misconceptionTag": "math.geo.relation-hauteur-racine-oubliee"
+        },
+        {
+          "id": "d",
+          "text": "2√3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "BC = 4 ، فـ OB = OC = 2 ، وH منتصف [OC] ، أي OH = HC = 1 ، ومنه BH = BO + OH = 2 + 1 = 3. H هو المسقط العمودي للنقطة A على الوتر [BC] في المثلّث ABC القائم في A ، فـ AH² = BH × HC = 3 × 1 = 3 ، ومنه AH = √3 ✓. الخطأ الشائع: التوقّف عند AH² = 3 فنجد 3 ؛ أو ضرب BH في BC ، أي 3 × 4 = 12 ، فنجد 2√3 ؛ أو جمع القطعتين، أي 3 + 1 = 4 ، فنجد AH = 2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.relations-metriques",
+        "math.geo.cercle"
+      ]
+    },
+    {
+      "prompt": "نصف دائرة مركزها O وقطرها [BC] ، والعمودي على (BC) في H يقطع نصف الدائرة في A حيث AH = √3 ، والنقطة K من القطعة [AH] حيث AK = 1\nما طول HK ؟\n<svg viewBox=\"0 0 340 210\"><title>نصف الدائرة ذات المركز O والقطر [BC]</title><path d=\"M70 176 A100 100 0 0 1 270 176 Z\" fill=\"#0f6e56\" fill-opacity=\"0.06\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M220 89.4 L220 176\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M220 167 L229 167 L229 176\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"176\" r=\"3.8\"/><circle cx=\"270\" cy=\"176\" r=\"3.8\"/></g><g fill=\"#0f172a\"><circle cx=\"170\" cy=\"176\" r=\"3.6\"/><circle cx=\"220\" cy=\"176\" r=\"3.6\"/><circle cx=\"220\" cy=\"89.4\" r=\"3.6\"/></g><g fill=\"#0f6e56\"><circle cx=\"220\" cy=\"139.4\" r=\"4.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"58\" y=\"181\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"282\" y=\"181\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"170\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"222\" y=\"196\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text><text x=\"224\" y=\"79.4\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"233\" y=\"144.4\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√3 + 1",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "b",
+          "text": "√2",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "√3 − 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "K على القطعة [AH] ، فـ HK = AH − AK = √3 − 1 ✓. الخطأ الشائع: جمع الطولين بدل طرحهما فنجد √3 + 1 ؛ أو توزيع الجذر على الفرق فنجد √(3 − 1) = √2 ؛ أو الاكتفاء بالطول المعطى AK = 1.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.geo.cercle"
+      ]
+    },
+    {
+      "prompt": "نعتبر العدد E المعرّف بما يلي:\nE = 2a²⁰¹⁹b²⁰²⁰ − a²⁰²⁰b²⁰¹⁹\nحيث a = √3 − 1 و b = (√3 + 1)/2\nما قيمة E ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "0",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "2√3",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "لا يمكن حساب القوى الكبيرة ، فنخرج العامل المشترك a²⁰¹⁹b²⁰¹⁹: E = a²⁰¹⁹b²⁰¹⁹(2b − a) = (ab)²⁰¹⁹(2b − a). ولدينا ab = (√3 − 1)(√3 + 1)/2 = (3 − 1)/2 = 1 ، فـ (ab)²⁰¹⁹ = 1 ويبقى E = 2b − a. ثمّ 2b − a = (√3 + 1) − (√3 − 1) = √3 + 1 − √3 + 1 = 2 ✓. الخطأ الشائع: عدم تغيير إشارة الحدّين داخل القوس المطروح فنجد √3 + 1 − √3 − 1 = 0 ؛ أو التوقّف عند (ab)²⁰¹⁹ = 1 ونسيان العامل (2b − a) ؛ أو جمع 2b و a بدل طرحهما فنجد (√3 + 1) + (√3 − 1) = 2√3.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.puissances",
+        "math.alg.factorisation"
+      ]
+    },
+    {
+      "prompt": "نصف دائرة مركزها O وقطرها [BC] ، والنقطة H منتصف [OC] مع HO = 1 ، والعمودي على (BC) في H يقطع نصف الدائرة في A ، والنقطتان K و J من القطعة [HA] حيث HK = √3 − 1 و HJ = 1 ، والمستقيم المارّ من J والموازي لـ (OK) يقطع (BC) في النقطة L\nما طول HL ؟\n<svg viewBox=\"0 0 340 210\"><title>نصف الدائرة ذات المركز O والقطر [BC]</title><path d=\"M70 176 A100 100 0 0 1 270 176 Z\" fill=\"#0f6e56\" fill-opacity=\"0.06\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M220 89.4 L220 176\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M220 167 L229 167 L229 176\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 176 L220 139.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M220 126 L151.7 176\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M195.1 162.9 L197.4 155.9 L190.1 156.1\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M185.9 156.2 L188.3 149.2 L180.9 149.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"176\" r=\"3.8\"/><circle cx=\"270\" cy=\"176\" r=\"3.8\"/></g><g fill=\"#0f172a\"><circle cx=\"170\" cy=\"176\" r=\"3.6\"/><circle cx=\"220\" cy=\"176\" r=\"3.6\"/><circle cx=\"220\" cy=\"89.4\" r=\"3.6\"/></g><g fill=\"#0f6e56\"><circle cx=\"220\" cy=\"139.4\" r=\"4.2\"/></g><g fill=\"#0f6e56\"><circle cx=\"220\" cy=\"126\" r=\"4.2\"/><circle cx=\"151.7\" cy=\"176\" r=\"4.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"58\" y=\"181\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"282\" y=\"181\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"170\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"222\" y=\"196\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text><text x=\"224\" y=\"79.4\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"233\" y=\"144.4\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text><text x=\"233\" y=\"127\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text><text x=\"145.7\" y=\"196\" text-anchor=\"middle\" fill=\"#0f6e56\">L</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√3 + 1"
+        },
+        {
+          "id": "b",
+          "text": "(√3 + 1)/2"
+        },
+        {
+          "id": "c",
+          "text": "√3 − 1",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "d",
+          "text": "(√3 − 1)/2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المستقيمان (JL) و (OK) متوازيان ، والنقطتان K و J على نصف المستقيم [HA) ، والنقطتان O و L على نصف المستقيم [HB) ، فبمبرهنة طاليس HK/HJ = HO/HL ، أي HL = HO × HJ/HK = 1 × 1/(√3 − 1) = 1/(√3 − 1). ننطق المقام: 1/(√3 − 1) = (√3 + 1)/((√3 − 1)(√3 + 1)) = (√3 + 1)/2 ✓. الخطأ الشائع: قلب إحدى النسب فنجد HL = HO × HK/HJ = √3 − 1 ؛ أو نسيان القسمة على المقام 2 بعد الضرب في المرافق فنجد √3 + 1 ؛ أو حساب OL = HL − HO بدل HL فنجد (√3 − 1)/2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.num.racines-calcul"
+      ]
+    }
+  ]
+}
