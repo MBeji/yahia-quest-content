@@ -11,7 +11,8 @@
       "options": [
         {
           "id": "a",
-          "text": "المثلّث EBC قائم في B لأنّ ABCD مستطيل، و [EC] وتره، فنطبّق نظرية فيثاغورس"
+          "text": "المثلّث EBC قائم في B لأنّ ABCD مستطيل، و [EC] وتره، فنطبّق نظرية فيثاغورس",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
         },
         {
           "id": "b",
@@ -23,12 +24,12 @@
         },
         {
           "id": "d",
-          "text": "المثلّث ADF قائم في A لأنّ A رأس من رؤوس المستطيل، و [DF] وتره، فنطبّق نظرية فيثاغورس",
+          "text": "المثلّث ADF قائم في A لأنّ ABCD مستطيل، و [DF] وتره، فنطبّق نظرية فيثاغورس",
           "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
         }
       ],
       "correctOption": "c",
-      "explanation": "ABCD مستطيل فزاويته في D قائمة، والنقطة F على [DC]، فالمثلّث ADF قائم في D ووتره [AF] المقابل للزاوية القائمة. تنصّ نظرية فيثاغورس على أنّ مربّع الوتر يساوي مجموع مربّعي الضلعين القائمين: AF² = DA² + DF² ✓. الخطأ الشائع: وضع الزاوية القائمة في A لأنّ A رأس من رؤوس المستطيل، مع أنّ زاوية المثلّث ADF في A جزء من زاوية المستطيل وليست الزاوية القائمة نفسها؛ أو اختيار مثلّث قائم آخر في الشكل مثل EBC فتخرج المساواة EC² = EB² + BC² لا المساواة المطلوبة؛ أو تطبيق فيثاغورس على أضلاع متوازي الأضلاع وليس فيه زاوية قائمة.",
+      "explanation": "ABCD مستطيل فزاويته في D قائمة، والنقطة F على [DC]، فالمثلّث ADF قائم في D ووتره [AF] المقابل للزاوية القائمة. تنصّ نظرية فيثاغورس على أنّ مربّع الوتر يساوي مجموع مربّعي الضلعين القائمين: AF² = DA² + DF² ✓. الخطأ الشائع: وضع الزاوية القائمة في A بحجّة أنّ ABCD مستطيل، مع أنّ زاوية المثلّث ADF في A جزء من زاوية المستطيل وليست الزاوية القائمة نفسها؛ أو اختيار مثلّث قائم آخر في الشكل مثل EBC فتخرج المساواة EC² = EB² + BC² لا المساواة المطلوبة؛ أو تطبيق فيثاغورس على أضلاع متوازي الأضلاع وليس فيه زاوية قائمة.",
       "difficulty": 1,
       "competencies": [
         "math.geo.pythagore"
@@ -39,7 +40,8 @@
       "options": [
         {
           "id": "a",
-          "text": "√13"
+          "text": "√13",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
         },
         {
           "id": "b",
@@ -47,7 +49,8 @@
         },
         {
           "id": "c",
-          "text": "3√5"
+          "text": "3√5",
+          "misconceptionTag": "math.geo.position-relative-ignoree"
         },
         {
           "id": "d",
@@ -68,7 +71,8 @@
       "options": [
         {
           "id": "a",
-          "text": "6"
+          "text": "6",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
         },
         {
           "id": "b",
@@ -110,11 +114,11 @@
         },
         {
           "id": "d",
-          "text": "المثلّثان DHF و DKC قائمان في H وفي K، فنطبّق نظرية فيثاغورس على كلّ منهما"
+          "text": "D و H و K على استقامة واحدة وكذلك D و F و C، فنطبّق عكس مبرهنة طاليس في المثلّث DKC"
         }
       ],
       "correctOption": "a",
-      "explanation": "(AF) و (EC) متوازيان لأنّهما ضلعان متقابلان في متوازي الأضلاع AECF، ومنه (HF) ∥ (KC). والنقاط D و H و K على استقامة واحدة وكذلك D و F و C، فبمبرهنة طاليس في المثلّث DKC: DH/DK = DF/DC = HF/KC ✓. الخطأ الشائع: تطبيق طاليس بمجرّد استقامة النقاط دون التحقّق من التوازي؛ أو استعمال العكس وهو يستنتج التوازي من تساوي النسب ولا يعطي تساويها فيصير الاستدلال دائريًّا؛ أو استعمال فيثاغورس وهو يربط مربّعات الأطوال لا نسبها.",
+      "explanation": "(AF) و (EC) متوازيان لأنّهما ضلعان متقابلان في متوازي الأضلاع AECF، ومنه (HF) ∥ (KC). والنقاط D و H و K على استقامة واحدة وكذلك D و F و C، فبمبرهنة طاليس في المثلّث DKC: DH/DK = DF/DC = HF/KC ✓. الخطأ الشائع: تطبيق طاليس بمجرّد استقامة النقاط دون التحقّق من التوازي؛ أو استعمال العكس وهو يستنتج التوازي من تساوي النسب ولا يعطي تساويها فيصير الاستدلال دائريًّا؛ أو الجمع بين الخطأين: الاكتفاء بالاستقامة مع استعمال العكس.",
       "difficulty": 2,
       "competencies": [
         "math.geo.thales-direct",
@@ -141,7 +145,7 @@
         {
           "id": "d",
           "text": "1/3",
-          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+          "misconceptionTag": "math.geo.segment-mal-choisi"
         }
       ],
       "correctOption": "c",
@@ -153,7 +157,7 @@
     },
     {
       "type": "numeric",
-      "prompt": "ABCD مستطيل حيث DC = 6 cm، و AECF متوازي أضلاع حيث E من [AB] و F من [DC] و CF = 2 cm. المستقيم المارّ من D والعمودي على (AF) يقطع (AF) في H حيث DH = 2,4 cm، ويقطع (EC) في K، ونعلم أنّ:\nDH/DK = DF/DC\nاحسب DK بالسنتمتر، ثمّ اكتب قيمته.\n<svg viewBox=\"0 0 288 174\"><title>القطعة [DK] بارزة في الشكل</title><polygon points=\"30,30 258,30 258,144 30,144\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M30 30 L182 144\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M106 30 L258 144\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M30 144 L112.08 34.56\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M30 144 L112.08 34.56\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"4.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M79.32 78.24 L86.52 83.64 L91.92 76.44\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"30\" cy=\"30\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"258\" cy=\"30\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"258\" cy=\"144\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"144\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"106\" cy=\"30\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"182\" cy=\"144\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"84.72\" cy=\"71.04\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"112.08\" cy=\"34.56\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"20\" y=\"21\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"268\" y=\"21\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"268\" y=\"162\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"20\" y=\"162\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"106\" y=\"19\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text><text x=\"182\" y=\"163\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">F</text><text x=\"71.72\" y=\"83.04\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"125.08\" y=\"35.56\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">K</text></g></svg>",
+      "prompt": "ABCD مستطيل حيث DC = 6 cm، و AECF متوازي أضلاع حيث E من [AB] و F من [DC] و CF = 2 cm. المستقيم المارّ من D والعمودي على (AF) يقطع (AF) في H حيث DH = 2,4 cm، ويقطع (EC) في K، ونعلم أنّ:\nDH/DK = DF/DC\nاحسب DK بالصنتمتر، ثمّ اكتب قيمته.\n<svg viewBox=\"0 0 288 174\"><title>القطعة [DK] بارزة في الشكل</title><polygon points=\"30,30 258,30 258,144 30,144\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M30 30 L182 144\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M106 30 L258 144\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M30 144 L112.08 34.56\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M30 144 L112.08 34.56\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"4.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M79.32 78.24 L86.52 83.64 L91.92 76.44\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"30\" cy=\"30\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"258\" cy=\"30\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"258\" cy=\"144\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"144\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"106\" cy=\"30\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"182\" cy=\"144\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"84.72\" cy=\"71.04\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"112.08\" cy=\"34.56\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"20\" y=\"21\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"268\" y=\"21\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"268\" y=\"162\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"20\" y=\"162\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"106\" y=\"19\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text><text x=\"182\" y=\"163\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">F</text><text x=\"71.72\" y=\"83.04\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"125.08\" y=\"35.56\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">K</text></g></svg>",
       "answerKey": {
         "value": 3.6,
         "unit": "cm"
@@ -165,7 +169,7 @@
       ]
     },
     {
-      "prompt": "ABCD مستطيل حيث AB = 6 cm و BC = 3 cm، والنقطة E من [AB] حيث AE = 2 cm، والرباعي AECF متوازي أضلاع حيث F من [DC] و AF = 5 cm.\nما مساحة AECF على التصميم بالسنتمتر المربّع ؟\n<svg viewBox=\"0 0 288 174\"><title>الرواق AECF داخل المنتزه ABCD على التصميم</title><polygon points=\"30,30 106,30 258,144 182,144\" fill=\"#0f6e56\" fill-opacity=\"0.22\" stroke=\"none\"/><polygon points=\"30,30 258,30 258,144 30,144\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><polygon points=\"30,30 106,30 258,144 182,144\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"30\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"106\" cy=\"30\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"258\" cy=\"144\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"182\" cy=\"144\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"20\" y=\"21\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"106\" y=\"19\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text><text x=\"268\" y=\"162\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"182\" y=\"163\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">F</text></g></svg>",
+      "prompt": "على تصميم منتزه، ABCD مستطيل حيث AB = 6 cm و BC = 3 cm، والنقطة E من [AB] حيث AE = 2 cm، والرباعي AECF متوازي أضلاع حيث F من [DC] و AF = 5 cm.\nما مساحة AECF على التصميم بالصنتمتر المربّع ؟\n<svg viewBox=\"0 0 288 174\"><title>الرواق AECF داخل المنتزه ABCD على التصميم</title><polygon points=\"30,30 106,30 258,144 182,144\" fill=\"#0f6e56\" fill-opacity=\"0.22\" stroke=\"none\"/><polygon points=\"30,30 258,30 258,144 30,144\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><polygon points=\"30,30 106,30 258,144 182,144\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"30\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"106\" cy=\"30\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"258\" cy=\"144\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"182\" cy=\"144\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"20\" y=\"21\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"106\" y=\"19\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text><text x=\"268\" y=\"162\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"182\" y=\"163\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">F</text></g></svg>",
       "options": [
         {
           "id": "a",
@@ -173,7 +177,8 @@
         },
         {
           "id": "b",
-          "text": "15"
+          "text": "15",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
         },
         {
           "id": "c",
@@ -215,7 +220,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "كلّ طول على التصميم يُضرب في 1000 ليصير طوله الحقيقي، فمربّع ضلعه 1 cm على التصميم هو في الواقع مربّع ضلعه 1000 cm، أي مساحته 1 000 000 cm². إذن المساحة الحقيقيّة = 6 × 1 000 000 = 6 000 000 cm². ولمّا كان 1 m² = 10 000 cm² فالمساحة = 6 000 000 ÷ 10 000 = 600 m² ✓. الخطأ الشائع: ضرب المساحة في 1000 وحده فنجد 6000 cm² أي 0,6 m²؛ أو تحويل cm² إلى m² بالقسمة على 100 فنجد 60 000؛ أو ضربها في 1000 وقراءة النتيجة 6 000 مباشرةً بالمتر المربّع دون تحويل.",
+      "explanation": "كلّ طول على التصميم يُضرب في 1000 ليصير طوله الحقيقي، فمربّع ضلعه 1 cm على التصميم هو في الواقع مربّع ضلعه 1000 cm، أي مساحته 1 000 000 cm². إذن المساحة الحقيقيّة = 6 × 1 000 000 = 6 000 000 cm². ولمّا كان المتر المربّع الواحد يساوي 10 000 cm² فالمساحة = 6 000 000 ÷ 10 000 = 600 m² ✓. الخطأ الشائع: ضرب المساحة في 1000 وحده فنجد 6 000 cm² أي 0,6 m²؛ أو تحويل cm² إلى m² بالقسمة على 100 فنجد 60 000؛ أو ضربها في 1000 وقراءة النتيجة 6 000 مباشرةً بالمتر المربّع دون تحويل.",
       "difficulty": 3,
       "competencies": [
         "math.mes.aires",
@@ -229,7 +234,7 @@
         "value": 17,
         "unit": "دينار"
       },
-      "explanation": "المساحة الحقيقيّة للرواق = 6 × 1 000 000 = 6 000 000 cm² = 6 000 000 ÷ 10 000 = 600 m². فكلفة المتر المربّع الواحد = 10 200 ÷ 600 = 17 دينارًا ✓.",
+      "explanation": "المساحة الحقيقيّة للرواق = 6 × 1 000 000 = 6 000 000 cm²، أي 600 m² لأنّ المتر المربّع الواحد يساوي 10 000 cm². فكلفة المتر المربّع الواحد = 10 200 ÷ 600 = 17 دينارًا ✓.",
       "difficulty": 3,
       "competencies": [
         "math.mes.aires",

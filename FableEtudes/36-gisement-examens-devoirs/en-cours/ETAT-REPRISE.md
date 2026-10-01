@@ -38,12 +38,16 @@
   première livraison SVT), lignes dans `lines/`.
 - Plan : 27 missions, 5 lots (`gisement/9eme-svt-plan/plan-examens-v1.json`, planificateur du moteur, 0 fautive) ;
   prompts `prompt-svt-L01..L05.md`, affectations `assign-svt-L01..L05.md`.
-- Pas de famille d'étiquettes SVT dans `misconceptions.json` : distracteurs muets, erreurs décrites au rapport.
+- Campagne « 9ᵉ au patron » (autre session, privé#569/#620, entrée de synchronisation de l'ETUDE.md §8) : SVT publiée — 14 chapitres
+  du programme en 01–14 (les 7 anciens en 15–21, optionnels), famille d'étiquettes **`bio.*` (95 ids)** disponible : les distracteurs
+  SVT s'étiquettent avec `bio.*` (nouvel id seulement s'il manque). Le plan SVT rejoué sur ces chapitres est inchangé (27 missions).
+  **Arabe 9ᵉ : en réalignement (manuel 101908) — ne rien y placer** tant que la fusion n'est pas signalée dans §8. Français 9ᵉ :
+  réaligné sur le manuel 121905, famille `fr.*` (102 ids). Maths : la campagne ne touche que les chapitres 01 et 02.
 - Reste à lire : C07–C24 (2019 à 2001, vérifier d'abord « programme en vigueur »), 6 devoirs (D01–D06, lots S1–S5).
 
 ## Arabe, français, anglais 9ᵉ
 
-- Lecture non commencée (listes `docs.json`, `machine-list.tsv`, contexte lecteur dans `lecture-9eme/<matière>/`).
+- Arabe : EN RÉALIGNEMENT, ne rien placer. Français et anglais : lecture des sessions non commencée (listes `docs.json`, `machine-list.tsv`, contexte lecteur dans `lecture-9eme/<matière>/`) ; les registres des couples sont sur `main` (échantillons fixés, privé#574).
 
 ## 6ᵉ
 

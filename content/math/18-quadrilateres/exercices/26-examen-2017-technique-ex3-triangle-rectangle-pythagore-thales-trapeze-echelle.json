@@ -15,7 +15,7 @@
         },
         {
           "id": "b",
-          "text": "(DE) ∥ (AC) وهما مقطوعان بالمستقيمين (BA) و (BC)، فنطبّق مبرهنة طاليس"
+          "text": "BDE قائم في E، فنطبّق عكس نظرية فيثاغورس لإثبات هذه المساواة"
         },
         {
           "id": "c",
@@ -23,24 +23,12 @@
         },
         {
           "id": "d",
-          "text": "BDE قائم في E و [BD] وتره، فنطبّق نظرية فيثاغورس المباشرة"
+          "text": "BDE قائم في E و [BD] وتره، فنطبّق نظرية فيثاغورس المباشرة",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
         }
       ],
       "correctOption": "c",
-      "explanation": "ABC مثلّث قائم الزاوية في A، فوتره [BC] هو الضلع المقابل للزاوية القائمة. وتنصّ نظرية فيثاغورس المباشرة على أنّ مربّع الوتر يساوي مجموع مربّعي الضلعين القائمين: BC² = AB² + AC² ✓. الخطأ الشائع: استعمال العكس، وهو يُستعمل لإثبات أنّ الزاوية قائمة وهي هنا معطاة؛ أو استعمال طاليس وهو يربط النسب لا المربّعات؛ أو تطبيق فيثاغورس في المثلّث BDE فتخرج مساواة تخصّ ذلك المثلّث وهي BD² = BE² + DE² لا المساواة المطلوبة.",
-      "difficulty": 1,
-      "competencies": [
-        "math.geo.pythagore"
-      ]
-    },
-    {
-      "type": "numeric",
-      "prompt": "ABC مثلّث قائم الزاوية في A حيث AB = 4 cm و AC = 3 cm.\nاحسب BC بالصنتمتر، ثمّ اكتب قيمته.\n<svg viewBox=\"0 0 180 220\"><title>المثلّث ABC القائم في A</title><polygon points=\"150,190 150,30 30,190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M150 179 L139 179 L139 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"150\" cy=\"190\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"30\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"190\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"163\" y=\"206\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"150\" y=\"19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"22\" y=\"206\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text></g></svg>",
-      "answerKey": {
-        "value": 5,
-        "unit": "cm"
-      },
-      "explanation": "[BC] هو الوتر لأنّه المقابل للزاوية القائمة في A: BC² = AB² + AC² = 16 + 9 = 25، إذن BC = 5 cm ✓. نربّع الطولين ثمّ نأخذ الجذر: لا نجمع الطولين مباشرةً (4 + 3 = 7)، ولا نكتفي بقيمة المربّع 25.",
+      "explanation": "ABC مثلّث قائم الزاوية في A، فوتره [BC] هو الضلع المقابل للزاوية القائمة. وتنصّ نظرية فيثاغورس المباشرة على أنّ مربّع الوتر يساوي مجموع مربّعي الضلعين القائمين: BC² = AB² + AC² ✓. الخطأ الشائع: استعمال العكس، وهو يُستعمل لإثبات أنّ الزاوية قائمة وهي هنا معطاة؛ أو الجمع بين الخطأين: العكس في المثلّث BDE؛ أو تطبيق فيثاغورس في المثلّث BDE فتخرج مساواة تخصّ ذلك المثلّث وهي BD² = BE² + DE² لا المساواة المطلوبة.",
       "difficulty": 1,
       "competencies": [
         "math.geo.pythagore"
@@ -61,7 +49,7 @@
         },
         {
           "id": "c",
-          "text": "المثلّث BDE قائم في E، فنطبّق نظرية فيثاغورس فتتساوى هذه النسب"
+          "text": "A من [BE] و C من [BD] في المثلّث BDE، فنطبّق عكس مبرهنة طاليس"
         },
         {
           "id": "d",
@@ -69,7 +57,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "(AC) ∥ (DE) معطى، و C تنتمي إلى (BD) و A تنتمي إلى (BE)، فبمبرهنة طاليس في المثلّث BDE: BC/BD = BA/BE = CA/DE، أي BD/BC = BE/BA = DE/CA ✓. الخطأ الشائع: تطبيق طاليس بمجرّد وقوع النقاط على الضلعين دون شرط التوازي؛ أو استعمال العكس وهو يستنتج التوازي من تساوي النسب والتوازي هنا معطى؛ أو استعمال فيثاغورس الذي يربط مربّعات الأطوال لا نسبها.",
+      "explanation": "(AC) ∥ (DE) معطى، و C تنتمي إلى (BD) و A تنتمي إلى (BE)، فبمبرهنة طاليس في المثلّث BDE: BC/BD = BA/BE = CA/DE، أي BD/BC = BE/BA = DE/CA ✓. الخطأ الشائع: تطبيق طاليس بمجرّد وقوع النقاط على الضلعين دون شرط التوازي؛ أو استعمال العكس وهو يستنتج التوازي من تساوي النسب والتوازي هنا معطى؛ أو الجمع بين الخطأين: وقوع النقاط على الضلعين مع استعمال العكس.",
       "difficulty": 2,
       "competencies": [
         "math.geo.thales-direct"
@@ -77,7 +65,7 @@
     },
     {
       "type": "numeric",
-      "prompt": "ABC مثلّث قائم الزاوية في A حيث AB = 4 cm و AC = 3 cm و BC = 5 cm. النقطة E على المستقيم (AB) بحيث تكون A بين B و E و AE = 6 cm، والنقطة D على المستقيم (BC) بحيث تكون C بين B و D و (DE) ∥ (AC).\nاحسب BD بالسنتمتر، ثمّ اكتب قيمته.\n<svg viewBox=\"0 0 240 300\"><title>القطعة [BD] بارزة في الشكل</title><path d=\"M210 30 L210 270\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M210 30 L30 270\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M30 270 L210 270\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M210 126 L138 126\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M210 30 L30 270\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"4.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M210 117 L201 117 L201 126\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"210\" cy=\"126\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"210\" cy=\"30\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"138\" cy=\"126\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"270\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"210\" cy=\"270\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"223\" y=\"121\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"210\" y=\"19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"134\" y=\"115\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"20\" y=\"287\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"223\" y=\"284\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text></g></svg>",
+      "prompt": "ABC مثلّث قائم الزاوية في A حيث AB = 4 cm و AC = 3 cm و BC = 5 cm. النقطة E على المستقيم (AB) بحيث تكون A بين B و E و AE = 6 cm، والنقطة D على المستقيم (BC) بحيث تكون C بين B و D و (DE) ∥ (AC).\nاحسب BD بالصنتمتر، ثمّ اكتب قيمته.\n<svg viewBox=\"0 0 240 300\"><title>القطعة [BD] بارزة في الشكل</title><path d=\"M210 30 L210 270\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M210 30 L30 270\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M30 270 L210 270\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M210 126 L138 126\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M210 30 L30 270\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"4.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M210 117 L201 117 L201 126\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"210\" cy=\"126\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"210\" cy=\"30\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"138\" cy=\"126\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"270\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"210\" cy=\"270\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"223\" y=\"121\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"210\" y=\"19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"134\" y=\"115\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"20\" y=\"287\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"223\" y=\"284\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text></g></svg>",
       "answerKey": {
         "value": 12.5,
         "unit": "cm"
@@ -102,7 +90,8 @@
         },
         {
           "id": "c",
-          "text": "4,5"
+          "text": "4,5",
+          "misconceptionTag": "math.geo.position-relative-ignoree"
         },
         {
           "id": "d",
@@ -118,7 +107,7 @@
       ]
     },
     {
-      "prompt": "ACDE شبه منحرف قاعدتاه المتوازيتان [AC] و [ED]، والضلع [AE] عمودي عليهما، حيث AC = 3 cm و ED = 7,5 cm و AE = 6 cm.\nما مساحته على التصميم بالسنتمتر المربّع ؟\n<svg viewBox=\"0 0 240 300\"><title>شبه المنحرف ACDE قائم الزاويتين في A وفي E</title><polygon points=\"210,126 138,126 30,270 210,270\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\"/><polygon points=\"210,126 138,126 30,270 210,270\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M210 135 L201 135 L201 126\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M210 261 L201 261 L201 270\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"210\" cy=\"126\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"138\" cy=\"126\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"270\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"210\" cy=\"270\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"223\" y=\"121\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"134\" y=\"115\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"20\" y=\"287\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"223\" y=\"284\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text></g></svg>",
+      "prompt": "على تصميم قطعة معدنية، ACDE شبه منحرف قاعدتاه المتوازيتان [AC] و [ED]، والضلع [AE] عمودي عليهما، حيث AC = 3 cm و ED = 7,5 cm و AE = 6 cm.\nما مساحته على التصميم بالصنتمتر المربّع ؟\n<svg viewBox=\"0 0 240 300\"><title>شبه المنحرف ACDE قائم الزاويتين في A وفي E</title><polygon points=\"210,126 138,126 30,270 210,270\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\"/><polygon points=\"210,126 138,126 30,270 210,270\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M210 135 L201 135 L201 126\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M210 261 L201 261 L201 270\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"210\" cy=\"126\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"138\" cy=\"126\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"270\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"210\" cy=\"270\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"223\" y=\"121\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"134\" y=\"115\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"20\" y=\"287\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"223\" y=\"284\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text></g></svg>",
       "options": [
         {
           "id": "a",
@@ -126,7 +115,8 @@
         },
         {
           "id": "b",
-          "text": "37,5"
+          "text": "37,5",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
         },
         {
           "id": "c",
@@ -140,7 +130,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "الارتفاع هو AE = 6 cm لأنّه عمودي على القاعدتين. مساحة شبه المنحرف = (مجموع القاعدتين) × الارتفاع/2 = (3 + 7,5) × 6/2 = 10,5 × 3 = 31,5 cm² ✓. الخطأ الشائع: نسيان القسمة على 2 فنجد 10,5 × 6 = 63؛ أو أخذ قاعدة واحدة فنجد 7,5 × 6 = 45؛ أو حساب مساحة المثلّث الكبير BDE، (7,5 × 10)/2 = 37,5، دون طرح المثلّث ABC.",
+      "explanation": "الارتفاع هو AE = 6 cm لأنّه عمودي على القاعدتين. مساحة شبه المنحرف هي نصف مجموع القاعدتين مضروبًا في الارتفاع: (3 + 7,5) × 6/2 = 10,5 × 3 = 31,5 cm² ✓. الخطأ الشائع: نسيان القسمة على 2 فنجد 10,5 × 6 = 63؛ أو أخذ قاعدة واحدة فنجد 7,5 × 6 = 45؛ أو حساب مساحة المثلّث الكبير BDE، (7,5 × 10)/2 = 37,5، دون طرح المثلّث ABC.",
       "difficulty": 2,
       "competencies": [
         "math.mes.aires",
@@ -152,7 +142,8 @@
       "options": [
         {
           "id": "a",
-          "text": "3 150"
+          "text": "3 150",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
         },
         {
           "id": "b",
@@ -168,7 +159,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "كلّ طول يُضرب في 10، فمربّع ضلعه 1 cm على التصميم هو في الواقع مربّع ضلعه 10 cm، أي مساحته 100 cm². إذن المساحة الحقيقيّة = 31,5 × 100 = 3 150 cm²، ولمّا كان 1 m² = 10 000 cm² فالمساحة = 3 150 ÷ 10 000 = 0,315 m² ✓. الخطأ الشائع: ضرب المساحة في 10 وحده فنجد 315 cm² أي 0,0315 m²؛ أو التحويل إلى المتر المربّع بالقسمة على 100 فنجد 31,5؛ أو ترك الناتج 3 150 دون تحويل cm² إلى m².",
+      "explanation": "كلّ طول يُضرب في 10، فمربّع ضلعه 1 cm على التصميم هو في الواقع مربّع ضلعه 10 cm، أي مساحته 100 cm². إذن المساحة الحقيقيّة = 31,5 × 100 = 3 150 cm²، ولمّا كان المتر المربّع الواحد يساوي 10 000 cm² فالمساحة = 3 150 ÷ 10 000 = 0,315 m² ✓. الخطأ الشائع: ضرب المساحة في 10 وحده فنجد 315 cm² أي 0,0315 m²؛ أو التحويل إلى المتر المربّع بالقسمة على 100 فنجد 31,5؛ أو ترك الناتج 3 150 دون تحويل cm² إلى m².",
       "difficulty": 3,
       "competencies": [
         "math.mes.aires",
