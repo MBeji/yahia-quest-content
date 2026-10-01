@@ -9,10 +9,10 @@
     {
       "prompt": "الوحدات التّركيبيّة للدّهنيّات هي:",
       "options": [
-        { "id": "a", "text": "الأحماض الأمينيّة" },
+        { "id": "a", "text": "الأحماض الأمينيّة", "misconceptionTag": "bio.dig.unites-structurales-confondues" },
         { "id": "b", "text": "الغليسيرول والأحماض الدّهنيّة" },
-        { "id": "c", "text": "الجليكوز" },
-        { "id": "d", "text": "سكّر الشّعير" }
+        { "id": "c", "text": "الجليكوز", "misconceptionTag": "bio.dig.unites-structurales-confondues" },
+        { "id": "d", "text": "سكّر الشّعير", "misconceptionTag": "bio.dig.unites-structurales-confondues" }
       ],
       "correctOption": "b",
       "explanation": "الغليسيرول والأحماض الدّهنيّة معًا. والأحماض الأمينيّة ناتج البروتيدات، والجليكوز ناتج السّكّريات المعقّدة — ثلاثة أصناف وثلاث نهايات مختلفة.",
@@ -21,9 +21,9 @@
     {
       "prompt": "الأنزيم الذي يفكّك زلال البيض:",
       "options": [
-        { "id": "a", "text": "الأميلاز" },
+        { "id": "a", "text": "الأميلاز", "misconceptionTag": "bio.dig.specificite-enzyme-ignoree" },
         { "id": "b", "text": "التّربسين" },
-        { "id": "c", "text": "الصّفراء" },
+        { "id": "c", "text": "الصّفراء", "misconceptionTag": "bio.dig.bile-avec-enzymes" },
         { "id": "d", "text": "الهيموغلوبين" }
       ],
       "correctOption": "b",
@@ -39,7 +39,7 @@
         },
         { "id": "b", "text": "يُكسر السنّ بصدمة" },
         { "id": "c", "text": "يقلّ الكلسيوم في الدّم" },
-        { "id": "d", "text": "يشعر المريض بالألم" }
+        { "id": "d", "text": "يشعر المريض بالألم", "misconceptionTag": "bio.sante.absence-de-symptome-prise-pour-sante" }
       ],
       "correctOption": "a",
       "explanation": "البقايا تتخمّر، والأحماض النّاتجة تهاجم المينا ثمّ العاج. والألم ليس بداية بل علامة متأخّرة: لا عصب في المينا ولا في العاج، فالألم يعني أنّ الثّقب بلغ لبّ السنّ.",
@@ -75,13 +75,13 @@
     {
       "prompt": "الهضم الكيميائيّ هو:",
       "options": [
-        { "id": "a", "text": "تفتيت الغذاء بالأسنان" },
+        { "id": "a", "text": "تفتيت الغذاء بالأسنان", "misconceptionTag": "bio.dig.fragmentation-prise-pour-digestion" },
         {
           "id": "b",
           "text": "تفكيك المعقّد إلى بسيط بمفعول الماء تحت تأثير الأنزيمات"
         },
-        { "id": "c", "text": "خلط الغذاء بالعصارات" },
-        { "id": "d", "text": "عبور المغذّيات إلى الدّم" }
+        { "id": "c", "text": "خلط الغذاء بالعصارات", "misconceptionTag": "bio.dig.fragmentation-prise-pour-digestion" },
+        { "id": "d", "text": "عبور المغذّيات إلى الدّم", "misconceptionTag": "bio.dig.absorption-dans-la-digestion" }
       ],
       "correctOption": "b",
       "explanation": "هذا هو التّعريف. والتّفتيت والخلط ظاهرتان ميكانيكيّتان، وعبور المغذّيات إلى الدّم هو الامتصاص — مرحلة تالية للهضم لا جزء منه.",

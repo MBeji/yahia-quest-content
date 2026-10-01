@@ -9,13 +9,25 @@
     {
       "prompt": "أثناء الزّفير:",
       "options": [
-        { "id": "a", "text": "يتقلّص الحجاب الحاجز فينخفض" },
+        {
+          "id": "a",
+          "text": "يتقلّص الحجاب الحاجز فينخفض",
+          "misconceptionTag": "bio.resp.mecanique-ventilatoire-inversee"
+        },
         {
           "id": "b",
           "text": "يرتخي الحجاب الحاجز فيرتفع، وترتخي عضلات الأضلاع فتضغط على الرّئتين"
         },
-        { "id": "c", "text": "تتقلّص الرّئتان بعضلاتهما" },
-        { "id": "d", "text": "يزداد حجم القفص الصّدريّ" }
+        {
+          "id": "c",
+          "text": "تتقلّص الرّئتان بعضلاتهما",
+          "misconceptionTag": "bio.resp.poumons-aspirent-l-air"
+        },
+        {
+          "id": "d",
+          "text": "يزداد حجم القفص الصّدريّ",
+          "misconceptionTag": "bio.resp.mecanique-ventilatoire-inversee"
+        }
       ],
       "correctOption": "b",
       "explanation": "الزّفير طور ارتخاء: يعود الحجاب إلى أعلى ويضيق القفص فيرتفع الضّغط داخل الرّئتين ويخرج الهواء. وليس للرّئة عضلات خاصّة بها تتقلّص.",
@@ -24,9 +36,17 @@
     {
       "prompt": "قطر الشّعيبات لا يتجاوز:",
       "options": [
-        { "id": "a", "text": "2 صم" },
+        {
+          "id": "a",
+          "text": "2 صم",
+          "misconceptionTag": "bio.lecture.valeur-d-une-autre-grandeur"
+        },
         { "id": "b", "text": "0,1 مم" },
-        { "id": "c", "text": "12 صم" },
+        {
+          "id": "c",
+          "text": "12 صم",
+          "misconceptionTag": "bio.lecture.valeur-d-une-autre-grandeur"
+        },
         { "id": "d", "text": "1 صم" }
       ],
       "correctOption": "b",
@@ -48,10 +68,22 @@
     {
       "prompt": "نسبة الأكسيجين في هواء الشّهيق:",
       "options": [
-        { "id": "a", "text": "16,4 %" },
+        {
+          "id": "a",
+          "text": "16,4 %",
+          "misconceptionTag": "bio.lecture.valeur-d-une-autre-grandeur"
+        },
         { "id": "b", "text": "21 %" },
-        { "id": "c", "text": "79 %" },
-        { "id": "d", "text": "4,2 %" }
+        {
+          "id": "c",
+          "text": "79 %",
+          "misconceptionTag": "bio.lecture.valeur-d-une-autre-grandeur"
+        },
+        {
+          "id": "d",
+          "text": "4,2 %",
+          "misconceptionTag": "bio.lecture.valeur-d-une-autre-grandeur"
+        }
       ],
       "correctOption": "b",
       "explanation": "21 % في الشّهيق، وتنخفض إلى 16,4 % في الزّفير. والنّسبة 79 % للأزوت الثّابت، و4,2 % لثنائي أكسيد الكربون في هواء الزّفير.",

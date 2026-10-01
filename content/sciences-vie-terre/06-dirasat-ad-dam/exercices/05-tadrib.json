@@ -9,7 +9,11 @@
     {
       "prompt": "شكل الكريّة الحمراء:",
       "options": [
-        { "id": "a", "text": "كرويّة ذات نواة" },
+        {
+          "id": "a",
+          "text": "كرويّة ذات نواة",
+          "misconceptionTag": "bio.sang.noyau-mal-attribue"
+        },
         { "id": "b", "text": "قرصيّة مقعّرة الوجهين وعديمة النّواة" },
         { "id": "c", "text": "مسطّحة ذات نواتين" },
         { "id": "d", "text": "مغزليّة" }
@@ -35,8 +39,16 @@
       "options": [
         { "id": "a", "text": "لها نواة، ودورها المناعة" },
         { "id": "b", "text": "بلا نواة، ودورها تخثّر الدّم ومقاومة الالتهاب" },
-        { "id": "c", "text": "بلا نواة، ودورها نقل الغازات" },
-        { "id": "d", "text": "لها نواة، ودورها التّخثّر" }
+        {
+          "id": "c",
+          "text": "بلا نواة، ودورها نقل الغازات",
+          "misconceptionTag": "bio.sang.fonctions-des-cellules-confondues"
+        },
+        {
+          "id": "d",
+          "text": "لها نواة، ودورها التّخثّر",
+          "misconceptionTag": "bio.sang.noyau-mal-attribue"
+        }
       ],
       "correctOption": "b",
       "explanation": "بلا نواة مثل الكريات الحمراء، لكنّ دورها التّخثّر. وهذا يبيّن أنّ غياب النّواة لا يحدّد الوظيفة: عنصران بلا نواة ووظيفتاهما مختلفتان تمامًا.",
@@ -69,10 +81,22 @@
     {
       "prompt": "النّصيب الأكبر من الغازات التنفّسيّة تحمله:",
       "options": [
-        { "id": "a", "text": "البلازما" },
+        {
+          "id": "a",
+          "text": "البلازما",
+          "misconceptionTag": "bio.sang.plasma-transporte-l-oxygene"
+        },
         { "id": "b", "text": "الكريات الحمراء" },
-        { "id": "c", "text": "الكريات البيضاء" },
-        { "id": "d", "text": "الصّفيحات" }
+        {
+          "id": "c",
+          "text": "الكريات البيضاء",
+          "misconceptionTag": "bio.sang.fonctions-des-cellules-confondues"
+        },
+        {
+          "id": "d",
+          "text": "الصّفيحات",
+          "misconceptionTag": "bio.sang.fonctions-des-cellules-confondues"
+        }
       ],
       "correctOption": "b",
       "explanation": "الكريات الحمراء بفضل الهيموغلوبين. والبلازما تنقل نسبة منها فقط — ولهذا كُتبت كلمة «نسبة» في وظائفها الأربع، وهي الكلمة التي تفرّق بين الجواب الصّحيح والخطأ هنا.",

@@ -9,9 +9,17 @@
     {
       "prompt": "امرأة دورتها 30 يومًا. متى تقع الإباضة؟",
       "options": [
-        { "id": "a", "text": "في اليوم 15، أي منتصف الدّورة" },
+        {
+          "id": "a",
+          "text": "في اليوم 15، أي منتصف الدّورة",
+          "misconceptionTag": "bio.cycle.ovulation-au-milieu-du-cycle"
+        },
         { "id": "b", "text": "في اليوم 16" },
-        { "id": "c", "text": "في اليوم 14" },
+        {
+          "id": "c",
+          "text": "في اليوم 14",
+          "misconceptionTag": "bio.cycle.ovulation-au-milieu-du-cycle"
+        },
         { "id": "d", "text": "في اليوم 30" }
       ],
       "correctOption": "b",
@@ -21,12 +29,20 @@
     {
       "prompt": "ولماذا يصحّ الجواب «اليوم 14» في دورة 28 يومًا؟",
       "options": [
-        { "id": "a", "text": "لأنّ الإباضة دائمًا في منتصف الدّورة" },
+        {
+          "id": "a",
+          "text": "لأنّ الإباضة دائمًا في منتصف الدّورة",
+          "misconceptionTag": "bio.cycle.ovulation-au-milieu-du-cycle"
+        },
         {
           "id": "b",
           "text": "لأنّ 28 − 14 = 14 مصادفةً: النّتيجتان تتطابقان في هذه الحالة وحدها، ومن هنا جاء اللّبس"
         },
-        { "id": "c", "text": "لأنّ الطّور الجريبي ثابت" },
+        {
+          "id": "c",
+          "text": "لأنّ الطّور الجريبي ثابت",
+          "misconceptionTag": "bio.cycle.phase-fixe-inversee"
+        },
         { "id": "d", "text": "لأنّ الحيض يدوم 14 يومًا" }
       ],
       "correctOption": "b",
@@ -37,8 +53,16 @@
       "prompt": "امرأة دورتها 24 يومًا. متى تقع الإباضة، وكم يدوم طورها الجريبي؟",
       "options": [
         { "id": "a", "text": "الإباضة يوم 10، والطّور الجريبي 10 أيّام" },
-        { "id": "b", "text": "الإباضة يوم 12، والطّور الجريبي 12 يومًا" },
-        { "id": "c", "text": "الإباضة يوم 14، والطّور الجريبي 14 يومًا" },
+        {
+          "id": "b",
+          "text": "الإباضة يوم 12، والطّور الجريبي 12 يومًا",
+          "misconceptionTag": "bio.cycle.ovulation-au-milieu-du-cycle"
+        },
+        {
+          "id": "c",
+          "text": "الإباضة يوم 14، والطّور الجريبي 14 يومًا",
+          "misconceptionTag": "bio.cycle.ovulation-au-milieu-du-cycle"
+        },
         { "id": "d", "text": "الإباضة يوم 24" }
       ],
       "correctOption": "a",
@@ -50,7 +74,8 @@
       "options": [
         {
           "id": "a",
-          "text": "الجريبي ثابت واللّوتيني متغيّر، فتُحسب الإباضة من البداية"
+          "text": "الجريبي ثابت واللّوتيني متغيّر، فتُحسب الإباضة من البداية",
+          "misconceptionTag": "bio.cycle.phase-fixe-inversee"
         },
         {
           "id": "b",

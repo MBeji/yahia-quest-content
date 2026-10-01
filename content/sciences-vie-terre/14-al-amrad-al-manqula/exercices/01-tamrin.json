@@ -9,9 +9,17 @@
     {
       "prompt": "أيّ هذه الأمراض سببه فيروس لا بكتيريا؟",
       "options": [
-        { "id": "a", "text": "السّيلان الجونوكوكي" },
-        { "id": "b", "text": "الكلاميديا" },
-        { "id": "c", "text": "الزّهري" },
+        {
+          "id": "a",
+          "text": "السّيلان الجونوكوكي",
+          "misconceptionTag": "bio.sante.agent-pathogene-confondu"
+        },
+        {
+          "id": "b",
+          "text": "الكلاميديا",
+          "misconceptionTag": "bio.sante.agent-pathogene-confondu"
+        },
+        { "id": "c", "text": "الزّهري", "misconceptionTag": "bio.sante.agent-pathogene-confondu" },
         { "id": "d", "text": "السّيدا" }
       ],
       "correctOption": "d",
@@ -23,8 +31,12 @@
       "options": [
         { "id": "a", "text": "كرويّة ثنائيّة" },
         { "id": "b", "text": "لولبيّة، وهي التّريبونيم" },
-        { "id": "c", "text": "فيروس" },
-        { "id": "d", "text": "طفيل وحيد الخليّة" }
+        { "id": "c", "text": "فيروس", "misconceptionTag": "bio.sante.agent-pathogene-confondu" },
+        {
+          "id": "d",
+          "text": "طفيل وحيد الخليّة",
+          "misconceptionTag": "bio.sante.agent-pathogene-confondu"
+        }
       ],
       "correctOption": "b",
       "explanation": "التّريبونيم بكتيريا لولبيّة. والكرويّة الثّنائيّة هي الجونوكوك المسبّبة للسّيلان — ولكلّ مرض جرثومته وشكلها الخاصّ.",
@@ -35,8 +47,16 @@
       "options": [
         { "id": "a", "text": "أنّها لا تتكاثر إلّا داخل الخلايا" },
         { "id": "b", "text": "أنّها لولبيّة" },
-        { "id": "c", "text": "أنّها فيروس" },
-        { "id": "d", "text": "أنّها تعيش في أمعاء القطّ" }
+        {
+          "id": "c",
+          "text": "أنّها فيروس",
+          "misconceptionTag": "bio.sante.agent-pathogene-confondu"
+        },
+        {
+          "id": "d",
+          "text": "أنّها تعيش في أمعاء القطّ",
+          "misconceptionTag": "bio.sante.agent-pathogene-confondu"
+        }
       ],
       "correctOption": "a",
       "explanation": "تتكاثر داخل الخلايا فتحتمي بها. ولهذا الموضع أثر عمليّ مباشر: تُعالَج بمضادّات حيويّة قادرة على الدّخول إلى الخلايا المصابة — فموضع الجرثومة يفرض نوع الدّواء.",

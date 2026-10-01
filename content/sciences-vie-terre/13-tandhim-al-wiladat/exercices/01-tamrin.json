@@ -36,10 +36,10 @@
     {
       "prompt": "أيّ وسيلة تمنع الإباضة؟",
       "options": [
-        { "id": "a", "text": "الواقي الذّكريّ" },
-        { "id": "b", "text": "الآلة الرّحميّة" },
+        { "id": "a", "text": "الواقي الذّكريّ", "misconceptionTag": "bio.contra.maillon-confondu" },
+        { "id": "b", "text": "الآلة الرّحميّة", "misconceptionTag": "bio.contra.maillon-confondu" },
         { "id": "c", "text": "الأقراص المركّبة" },
-        { "id": "d", "text": "ربط قناتَي البيض" }
+        { "id": "d", "text": "ربط قناتَي البيض", "misconceptionTag": "bio.contra.maillon-confondu" }
       ],
       "correctOption": "c",
       "explanation": "الأقراص المركّبة تمنع الإباضة برفع تركيز الهرمونين وإلغاء تغيّرهما الدّوريّ. والواقي والرّبط يعملان عند الإلقاح، والآلة الرّحميّة أساسًا عند التّعشيش.",
@@ -48,9 +48,17 @@
     {
       "prompt": "ما الوسيلة الوحيدة في هذا الدّرس التي تقي من الأمراض المنقولة جنسيًّا؟",
       "options": [
-        { "id": "a", "text": "الأقراص المركّبة" },
+        {
+          "id": "a",
+          "text": "الأقراص المركّبة",
+          "misconceptionTag": "bio.contra.efficacite-vaut-protection-ist"
+        },
         { "id": "b", "text": "الواقي الذّكريّ" },
-        { "id": "c", "text": "الآلة الرّحميّة" },
+        {
+          "id": "c",
+          "text": "الآلة الرّحميّة",
+          "misconceptionTag": "bio.contra.efficacite-vaut-protection-ist"
+        },
         { "id": "d", "text": "الامتناع الدّوريّ" }
       ],
       "correctOption": "b",
@@ -73,7 +81,7 @@
       "prompt": "ما مفعول النّحاس في الآلة الرّحميّة؟",
       "options": [
         { "id": "a", "text": "قاتل للحيوانات المنويّة" },
-        { "id": "b", "text": "يمنع الإباضة" },
+        { "id": "b", "text": "يمنع الإباضة", "misconceptionTag": "bio.contra.maillon-confondu" },
         { "id": "c", "text": "يرفع الهرمونات" },
         { "id": "d", "text": "لا مفعول له" }
       ],
