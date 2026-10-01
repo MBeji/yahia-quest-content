@@ -13,6 +13,14 @@ cp $SP/pending-tags/*.json $EC/etiquettes/
 cp $SP/spec-pub-*.json $SP/mk-pending.py $SP/lint/lot-lint.mjs $SP/fix-L08.py $SP/fix-L10.py $EC/outils/ 2>/dev/null
 cp $SP/add-source-line.py $SP/apply-tags.py $SP/gen-spec-lot.py $SP/gen-exam-assign.py $SP/registre-add.py $SP/registre-docs.py $SP/registre-set.py $SP/deliver-lot.sh $SP/gates-summary.sh $SP/fixlib17.py $SP/widen-labels.py $SP/tags-pass2.py $SP/fix-L07.py $SP/spec-pub-L03L04.json $SP/pass2-notes.md $SP/refresh-savepoint.sh $EC/outils/ 2>/dev/null
 cp $SH/.claude/skills/content-ingest/references/gisement-auteur-examen.md $SH/.claude/skills/content-ingest/references/gisement-auditeur.md .claude/skills/content-ingest/references/
+# étage de lecture des autres matières de 9e (textes seuls : ni PDF ni rendus)
+G=$SP/gisement
+for pair in "9eme-sciences-vie-terre:svt" "9eme-svt:svt-liste" "9eme-arabic:arabe" "9eme-english:anglais" "9eme-french:francais"; do
+  src=${pair%%:*}; dst=$EC/lecture-9eme/${pair##*:}
+  mkdir -p $dst
+  for f in docs.json machine-list.tsv reader-context.md chk.py mksnap.py mktsv.py zoom.py; do [ -f $G/$src/$f ] && cp $G/$src/$f $dst/; done
+  for d in officiel lines lots; do [ -d $G/$src/$d ] && mkdir -p $dst/$d && cp $G/$src/$d/* $dst/$d/; done
+done
 # lots en cours (fichiers d'examen non livrés)
 for spec in "08-thales 13 14 15 16 17 18 19 20" "09-triangle-rectangle-trigo 30 31 32 33 34 35 36 37 38 39 40 41" "12-repere-plan 16 17 18 19 20 21" "18-quadrilateres 22 23 24 25 26 27 28" "20-orthogonalite-espace 22 23 24 25 26 27"; do
   set -- $spec; ch=$1; shift
