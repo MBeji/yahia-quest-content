@@ -164,3 +164,17 @@ manquantes, confirmation de la double résolution, résultat des gates pour tes 
   تكرار كلّي قدره 20 ✓ » valide l'option 20). Un repère se donne avec son orientation : « النقطة
   الواحديّة على محور فواصله هي A », pas seulement la longueur unité.
 - **Contrôle mécanique avant de rendre** : `node /home/user/yahia-quest-content/FableEtudes/36-gisement-examens-devoirs/outils/lot-lint.mjs <tes fichiers .json>` relève, avec le moteur de rendu à jour, les défauts que les audits retrouvaient à la main : rampe qui décroît, clé strictement la plus longue (diacritiques retirés aussi), paire d'options nue à la virgule arabe, ligne de formule seule que le moteur ne pose pas en bloc, coche ✓ collée à un distracteur, option somme ou différence de deux autres, lettre d'option citée. Chaque point est à juger, ce n'est pas un verdict.
+- **Le titre nomme les notions, jamais un résultat** (« إثبات التوازي » donnait la clé de la Q4 ; « ومركز الثقل » donnait 2/3).
+- **Un rappel de règle dans l'énoncé ne doit pas reprendre la formule de deux options seulement** : l'appariement de mots tranche
+  la question sans la savoir. Une règle enseignée à un niveau antérieur (6ᵉ à 8ᵉ) n'a pas à être rappelée ; une règle jamais
+  enseignée se donne dans l'énoncé de CHAQUE question qui l'emploie — l'**échelle** (« أي أنّ كلّ 1 cm على التصميم يمثّل k cm في
+  الواقع ») sans jamais donner le facteur k² des aires. Un énoncé qui donne la règle puis demande son application directe est une
+  substitution (d1), pas un d2.
+- **Une option à deux erreurs reste muette**, et une étiquette ne se pose que si son libellé nomme EXACTEMENT l'erreur exécutée
+  (une croyance voisine ne suffit pas : « parallèle parce que B ∈ [AM] » n'« applique » pas Thalès sans vérifier).
+- **Rendu arabe** : une équation qui s'ouvre par un chiffre suivi d'un terme chiffre-lettre (« 3 − 2x = x − 3 ») s'affiche
+  brouillée au milieu d'une phrase : pose-la seule sur sa ligne. Ne nomme jamais un point avec une apostrophe (« M' » s'affiche
+  « 'M ») : prends une autre lettre.
+- **L'en-tête est honnête** : une mission « boss » (d3) compte au moins une question réellement d3 une fois chaque étape redonnée
+  avec ses données ; sinon d2 practice. Une figure ne marque pas la clé (pointillé qui fixe la coordonnée, point sur la réponse,
+  diagonale tracée qui désigne la solution).

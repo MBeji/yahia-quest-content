@@ -1,13 +1,13 @@
 {
-  "title": "🏛️ مناظرة 2026 (تقني) · التمرين 3 ⭐⭐⭐: مضمار سباق بالسلّم — فيثاغورس وطاليس في وضعية الفراشة",
-  "difficulty": 3,
-  "mode": "boss",
-  "xpReward": 120,
-  "rewardCoins": 30,
+  "title": "🏛️ مناظرة 2026 (تقني) · التمرين 3 ⭐⭐: مضمار سباق بالسلّم — فيثاغورس وطاليس في وضعية الفراشة",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
   "displayOrder": 34,
   "questions": [
     {
-      "prompt": "في تصميم مضمار سباق ، المستقيمان (AB) و (AC) متعامدان ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAB = 3\nAC = 4\nأيّ مساواة تعبّر عن نظرية فيثاغورس في المثلّث ABC ؟\n<svg viewBox=\"0 0 320 160\"><title>المثلّث ABC القائم في A</title><polygon points=\"128.8,31.6 64,118 244,118\" fill=\"#0f6e56\" fill-opacity=\"0.1\"/><polygon points=\"128.8,31.6 64,118 244,118\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M122.2 40.4 L131 47 L137.6 38.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"128.8\" cy=\"31.6\" r=\"3.8\"/><circle cx=\"64\" cy=\"118\" r=\"3.8\"/><circle cx=\"244\" cy=\"118\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"124.8\" y=\"20.6\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"51\" y=\"122\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"250\" y=\"106\" text-anchor=\"middle\" fill=\"#0f172a\">C</text></g></svg>",
+      "prompt": "في تصميم مضمار سباق ، المستقيمان (AB) و (AC) متعامدان.\nأيّ مساواة تعبّر عن نظرية فيثاغورس في المثلّث ABC ؟\n<svg viewBox=\"0 0 320 160\"><title>المثلّث ABC القائم في A</title><polygon points=\"128.8,31.6 64,118 244,118\" fill=\"#0f6e56\" fill-opacity=\"0.1\"/><polygon points=\"128.8,31.6 64,118 244,118\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M122.2 40.4 L131 47 L137.6 38.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"128.8\" cy=\"31.6\" r=\"3.8\"/><circle cx=\"64\" cy=\"118\" r=\"3.8\"/><circle cx=\"244\" cy=\"118\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"124.8\" y=\"20.6\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"51\" y=\"122\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"250\" y=\"106\" text-anchor=\"middle\" fill=\"#0f172a\">C</text></g></svg>",
       "options": [
         {
           "id": "a",
@@ -20,8 +20,7 @@
         },
         {
           "id": "c",
-          "text": "AB² = AC² + BC²",
-          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+          "text": "AC = AB + BC"
         },
         {
           "id": "d",
@@ -30,38 +29,37 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "المستقيمان (AB) و (AC) متعامدان ، فالمثلّث ABC قائم في A ووتره [BC] الذي يقابل الزاوية القائمة. ونظرية فيثاغورس تضع مربّع الوتر في طرف ومجموع مربّعي الضلعين القائمين في الطرف الآخر: BC² = AB² + AC² ✓. الخطأ الشائع: وضع ضلع قائم مكان الوتر فنكتب AC² = AB² + BC² أو AB² = AC² + BC² ، مع أنّ الوتر هو الضلع المقابل للزاوية القائمة عند A ؛ أو جمع الأطوال دون تربيعها فنكتب BC = AB + AC.",
+      "explanation": "المستقيمان (AB) و (AC) متعامدان ، فالمثلّث ABC قائم في A ووتره [BC] الذي يقابل الزاوية القائمة. ونظرية فيثاغورس تضع مربّع الوتر في طرف ومجموع مربّعي الضلعين القائمين في الطرف الآخر: BC² = AB² + AC² ✓. الخطأ الشائع: وضع ضلع قائم مكان الوتر فنكتب AC² = AB² + BC² ، مع أنّ الوتر هو الضلع المقابل للزاوية القائمة عند A ؛ أو جمع الأطوال دون تربيعها فنكتب BC = AB + AC ؛ أو الخطأين معًا فنكتب AC = AB + BC.",
       "difficulty": 1,
       "competencies": [
         "math.geo.pythagore"
       ]
     },
     {
-      "prompt": "في تصميم مضمار سباق ، المستقيمان (AB) و (AC) متعامدان ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAB = 3\nAC = 4\nما طول القطعة [BC] بالصنتمتر ؟\n<svg viewBox=\"0 0 320 160\"><title>المثلّث ABC القائم في A وطولا ضلعيه AB و AC</title><polygon points=\"128.8,31.6 64,118 244,118\" fill=\"#0f6e56\" fill-opacity=\"0.1\"/><polygon points=\"128.8,31.6 64,118 244,118\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M122.2 40.4 L131 47 L137.6 38.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"128.8\" cy=\"31.6\" r=\"3.8\"/><circle cx=\"64\" cy=\"118\" r=\"3.8\"/><circle cx=\"244\" cy=\"118\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"124.8\" y=\"20.6\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"51\" y=\"122\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"250\" y=\"106\" text-anchor=\"middle\" fill=\"#0f172a\">C</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"72.4\" y=\"72.8\" text-anchor=\"middle\" fill=\"#64748b\">3 cm</text><text x=\"192.4\" y=\"62.8\" text-anchor=\"middle\" fill=\"#64748b\">4 cm</text></g></svg>",
+      "prompt": "في تصميم مضمار سباق ، المستقيمان (AB) و (AC) متعامدان ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAB = 3\nAC = 4\nيمرّ المضمار من A إلى B ثمّ من B إلى C.\nما طول هذا الجزء من المضمار على الرسم بالصنتمتر ؟\n<svg viewBox=\"0 0 320 160\"><title>المثلّث ABC القائم في A وطولا ضلعيه AB و AC</title><polygon points=\"128.8,31.6 64,118 244,118\" fill=\"#0f6e56\" fill-opacity=\"0.1\"/><polygon points=\"128.8,31.6 64,118 244,118\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M122.2 40.4 L131 47 L137.6 38.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"128.8\" cy=\"31.6\" r=\"3.8\"/><circle cx=\"64\" cy=\"118\" r=\"3.8\"/><circle cx=\"244\" cy=\"118\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"124.8\" y=\"20.6\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"51\" y=\"122\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"250\" y=\"106\" text-anchor=\"middle\" fill=\"#0f172a\">C</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"72.4\" y=\"72.8\" text-anchor=\"middle\" fill=\"#64748b\">3 cm</text><text x=\"192.4\" y=\"62.8\" text-anchor=\"middle\" fill=\"#64748b\">4 cm</text></g></svg>",
       "options": [
         {
           "id": "a",
-          "text": "25",
-          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+          "text": "7"
         },
         {
           "id": "b",
-          "text": "7",
-          "misconceptionTag": "math.geo.pythagore-sans-carres"
+          "text": "8"
         },
         {
           "id": "c",
-          "text": "5"
+          "text": "10",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
         },
         {
           "id": "d",
-          "text": "1",
-          "misconceptionTag": "math.geo.pythagore-sans-carres"
+          "text": "28",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
         }
       ],
-      "correctOption": "c",
-      "explanation": "المثلّث ABC قائم في A ووتره [BC] ، فبنظرية فيثاغورس BC² = AB² + AC² = 3² + 4² = 9 + 16 = 25 ، ومنه BC = √25 = 5 cm ✓. الخطأ الشائع: جمع الطولين فنجد 3 + 4 = 7 أو طرحهما فنجد 4 − 3 = 1 ، مع أنّ النظرية تربط المربّعات ؛ أو التوقّف عند BC² = 25 ونسيان الجذر.",
-      "difficulty": 1,
+      "correctOption": "b",
+      "explanation": "المثلّث ABC قائم في A ووتره [BC] ، فبنظرية فيثاغورس BC² = AB² + AC² = 3² + 4² = 9 + 16 = 25 ، ومنه BC = 5 cm. وطول الجزء من A إلى B ثمّ إلى C هو AB + BC = 3 + 5 = 8 cm ✓. الخطأ الشائع: المرور بالضلع [AC] بدل [BC] فنجد 3 + 4 = 7 ؛ أو حساب BC بجمع الطولين دون تربيع ، أي BC = 7 ، فنجد 3 + 7 = 10 ؛ أو نسيان الجذر والتوقّف عند BC² = 25 فنجد 3 + 25 = 28.",
+      "difficulty": 2,
       "competencies": [
         "math.geo.pythagore"
       ]
@@ -75,7 +73,7 @@
         },
         {
           "id": "b",
-          "text": "CB/CD = CE/CA = DE/AB",
+          "text": "CB/CD = CA/CE = DE/AB",
           "misconceptionTag": "math.geo.thales-rapport-inverse"
         },
         {
@@ -88,7 +86,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "المستقيمان (AE) و (BD) يتقاطعان في C بين A و E وبين B و D ، و (AB) ∥ (DE) ، فنحن في وضعية الفراشة برأس C: المثلّثان CAB و CED متقابلان بالرأس C ، و D يقابل B و E يقابل A. وتقارن نسب طاليس كلّ طول من المثلّث CED بنظيره من المثلّث CAB: CD/CB = CE/CA = DE/AB ✓. الخطأ الشائع: قلب إحدى النسب فنكتب CB/CD مع CE/CA ؛ أو مقابلة D بـ A و E بـ B فنكتب CD/CA = CE/CB ؛ أو استعمال المستقيم الكامل [DB] بدل الجزء [CD] فنكتب CD/DB.",
+      "explanation": "المستقيمان (AE) و (BD) يتقاطعان في C بين A و E وبين B و D ، و (AB) ∥ (DE) ، فنحن في وضعية الفراشة برأس C: المثلّثان CAB و CED متقابلان بالرأس C ، و D يقابل B و E يقابل A. وتقارن نسب طاليس كلّ طول من المثلّث CED بنظيره من المثلّث CAB: CD/CB = CE/CA = DE/AB ✓. الخطأ الشائع: قلب النسبتين الأوليين فنكتب CB/CD = CA/CE ، فلا تبقى في الاتّجاه نفسه مع DE/AB ؛ أو مقابلة D بـ A و E بـ B فنكتب CD/CA = CE/CB ؛ أو أخذ القطعتين الكاملتين [DB] و [EA] بدل [CB] و [CA] فنكتب CD/DB = CE/EA.",
       "difficulty": 2,
       "competencies": [
         "math.geo.thales-direct"
@@ -174,17 +172,18 @@
       ],
       "correctOption": "d",
       "explanation": "المضمار يمرّ بالنقاط A ثمّ B ثمّ C ثمّ D ثمّ E ، فهو مجموع القطع الأربع AB و BC و CD و DE: 3 + 5 + 10 + 6 = 24 cm ✓. الخطأ الشائع: أخذ القطعة المستقيمة [AE] المرسومة بنقاط متقطّعة فنجد AC + CE = 4 + 8 = 12 ، وهي ليست جزءًا من المضمار ؛ أو نسيان قطعة منه ، كالقطعة [AB] فنجد 5 + 10 + 6 = 21 ، أو القطعة [DE] فنجد 3 + 5 + 10 = 18.",
-      "difficulty": 3,
+      "difficulty": 2,
       "competencies": [
         "math.mes.perimetres"
       ]
     },
     {
-      "prompt": "يمثّل الرسم تصميمًا لمضمار سباق وفق السلّم 1/10000 ، وأطوال قطعه الأربع على الرسم بالصنتمتر هي:\nAB = 3\nBC = 5\nCD = 10\nDE = 6\nما الطول الحقيقي للمضمار بالمتر ؟",
+      "prompt": "رُسم مضمار سباق على تصميم وفق السلّم 1/10000 ، أي أنّ كلّ 1 cm على التصميم يمثّل 10 000 cm في الواقع ، وأطوال قطعه الأربع على التصميم بالصنتمتر هي:\nAB = 3\nBC = 5\nCD = 10\nDE = 6\nما الطول الحقيقي للمضمار بالمتر ؟",
       "options": [
         {
           "id": "a",
-          "text": "240"
+          "text": "240",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
         },
         {
           "id": "b",
@@ -192,15 +191,17 @@
         },
         {
           "id": "c",
-          "text": "24 000"
+          "text": "24 000",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
         },
         {
           "id": "d",
-          "text": "240 000"
+          "text": "240 000",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
         }
       ],
       "correctOption": "b",
-      "explanation": "طول المضمار على الرسم 3 + 5 + 10 + 6 = 24 cm. والسلّم 1/10000 يعني أنّ 1 cm على الرسم يمثّل 10 000 cm في الواقع ، فالطول الحقيقي 24 × 10 000 = 240 000 cm. ونحوّل إلى المتر بالقسمة على 100 لأنّ 1 m = 100 cm ، فنجد 240 000 ÷ 100 = 2400 m ✓. الخطأ الشائع: ترك النتيجة بالصنتمتر وقراءتها بالمتر فنجد 240 000 ؛ أو القسمة على 10 بدل 100 عند التحويل فنجد 24 000 ؛ أو القسمة على 1000 فنجد 240.",
+      "explanation": "طول المضمار على التصميم 3 + 5 + 10 + 6 = 24 cm. والسلّم 1/10000 يعني أنّ 1 cm على التصميم يمثّل 10 000 cm في الواقع ، فالطول الحقيقي 24 × 10 000 = 240 000 cm. ونحوّل إلى المتر بالقسمة على 100 لأنّ 1 m = 100 cm ، فنجد 240 000 ÷ 100 = 2400 m ✓. الخطأ الشائع: ترك النتيجة بالصنتمتر وقراءتها بالمتر فنجد 240 000 ؛ أو القسمة على 10 بدل 100 عند التحويل فنجد 24 000 ؛ أو القسمة على 1000 فنجد 240.",
       "difficulty": 3,
       "competencies": [
         "math.mes.perimetres",
