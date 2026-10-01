@@ -77,9 +77,10 @@ fichier** : l'orchestrateur renvoie les correctifs à l'auteur.
   méthode » qui redemande la valeur d'une question antérieure** : la clé sort par l'ordre d'émission.
 - **Vote terme à terme** sur les distracteurs qui ne changent qu'un terme de la clé : exige un plan
   2×2 (une option à deux erreurs, muette).
-- **Rendu bidi (plus fin)** : depuis arena#1137 à #1139, les formes historiquement brouillées (signe
+- **Rendu bidi (plus fin)** : depuis arena#1137 à #1142, les formes historiquement brouillées (signe
   collé à une lettre, formule ouverte par un nombre puis une lettre, « ∠ », ponctuation et parenthèses
-  de bord, liste d'intervalles) sont traitées par le moteur ; simule toujours avec `isolateLtrRuns` /
+  de bord — y compris la « ( » qui ouvre un membre arabe après `(80 + 100) ÷ 2 = 90 ✓` —, liste
+  d'intervalles) sont traitées par le moteur ; simule toujours avec `isolateLtrRuns` /
   `splitMathRuns` (ou rends en Chromium `dir=rtl`) et signale toute AUTRE chaîne dont l'ordre affiché
   diffère du texte source.
 - **Explication fausse** : une égalité écrite qui n'en est pas une (« −2x + 4x = 6x »), ou un mécanisme
