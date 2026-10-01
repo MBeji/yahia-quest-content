@@ -21,7 +21,11 @@
     {
       "prompt": "Quelle phrase à la forme négative dit le contraire exact de « Tout le monde est venu. » ?",
       "options": [
-        { "id": "a", "text": "Tout le monde n'est pas venu." },
+        {
+          "id": "a",
+          "text": "Tout le monde n'est pas venu.",
+          "misconceptionTag": "fr.phrase.negation-sens-inexact"
+        },
         { "id": "b", "text": "Personne n'est venu." },
         { "id": "c", "text": "Tout le monde est venu pas." },
         { "id": "d", "text": "Rien n'est venu." }
@@ -36,7 +40,11 @@
         { "id": "a", "text": "Le héros a vaincu le dragon ce matin-là." },
         { "id": "b", "text": "C'est le héros qui a vaincu le dragon." },
         { "id": "c", "text": "Le héros a-t-il vaincu le dragon ?" },
-        { "id": "d", "text": "Le dragon a été vaincu par le héros." }
+        {
+          "id": "d",
+          "text": "Le dragon a été vaincu par le héros.",
+          "misconceptionTag": "fr.phrase.passif-pris-pour-emphase"
+        }
       ],
       "correctOption": "b",
       "explanation": "La forme emphatique met un élément en relief, ici le sujet « le héros » grâce au présentatif « c'est… qui ». « Le héros a vaincu le dragon ce matin-là » est à la forme neutre ; « Le héros a-t-il vaincu le dragon ? » est une phrase de type interrogatif, sans mise en relief ; « Le dragon a été vaincu par le héros » est à la forme passive, pas à la forme emphatique.",

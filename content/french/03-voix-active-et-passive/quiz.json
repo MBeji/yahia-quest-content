@@ -4,8 +4,16 @@
     {
       "prompt": "Comment se construit le verbe d'une phrase à la forme passive ?",
       "options": [
-        { "id": "a", "text": "« avoir » au temps du verbe actif + participe passé" },
-        { "id": "b", "text": "« être » toujours au présent + participe passé" },
+        {
+          "id": "a",
+          "text": "« avoir » au temps du verbe actif + participe passé",
+          "misconceptionTag": "fr.voix.passif-par-participe"
+        },
+        {
+          "id": "b",
+          "text": "« être » toujours au présent + participe passé",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
+        },
         { "id": "c", "text": "« être » au temps du verbe actif + participe passé" },
         { "id": "d", "text": "« faire » au temps du verbe actif + infinitif" }
       ],
@@ -16,7 +24,11 @@
     {
       "prompt": "Lors de la transformation active → passive, que devient le COD de la phrase active ?",
       "options": [
-        { "id": "a", "text": "Le complément d'agent de la phrase passive" },
+        {
+          "id": "a",
+          "text": "Le complément d'agent de la phrase passive",
+          "misconceptionTag": "fr.voix.roles-inverses"
+        },
         { "id": "b", "text": "Le sujet de la phrase passive" },
         { "id": "c", "text": "Il disparaît de la phrase" },
         { "id": "d", "text": "L'attribut du sujet passif" }

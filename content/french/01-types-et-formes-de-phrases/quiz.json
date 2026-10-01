@@ -4,10 +4,18 @@
     {
       "prompt": "Combien de types de phrases existe-t-il en français ?",
       "options": [
-        { "id": "a", "text": "Deux (affirmatif et négatif)" },
+        {
+          "id": "a",
+          "text": "Deux (affirmatif et négatif)",
+          "misconceptionTag": "fr.phrase.type-forme-confondus"
+        },
         { "id": "b", "text": "Trois (déclaratif, interrogatif, exclamatif)" },
         { "id": "c", "text": "Quatre (déclaratif, interrogatif, impératif, exclamatif)" },
-        { "id": "d", "text": "Cinq (déclaratif, interrogatif, impératif, exclamatif, emphatique)" }
+        {
+          "id": "d",
+          "text": "Cinq (déclaratif, interrogatif, impératif, exclamatif, emphatique)",
+          "misconceptionTag": "fr.phrase.type-forme-confondus"
+        }
       ],
       "correctOption": "c",
       "explanation": "Il existe exactement quatre types de phrases, un par intention : déclaratif (informer), interrogatif (questionner), impératif (ordonner, conseiller, interdire) et exclamatif (exprimer une émotion). Affirmatif/négatif et emphatique ne sont pas des types mais des formes, qui se cumulent avec le type.",
@@ -16,7 +24,11 @@
     {
       "prompt": "Quelle est la caractéristique principale de la phrase impérative ?",
       "options": [
-        { "id": "a", "text": "Elle se termine toujours par un point d'exclamation." },
+        {
+          "id": "a",
+          "text": "Elle se termine toujours par un point d'exclamation.",
+          "misconceptionTag": "fr.phrase.type-par-ponctuation"
+        },
         { "id": "b", "text": "Son verbe est à l'impératif, sans sujet exprimé." },
         { "id": "c", "text": "Elle contient obligatoirement une négation." },
         { "id": "d", "text": "Elle commence toujours par un mot interrogatif." }
@@ -40,7 +52,11 @@
     {
       "prompt": "À l'écrit, comment se construit la forme négative ?",
       "options": [
-        { "id": "a", "text": "Avec « pas » seul, placé après le verbe" },
+        {
+          "id": "a",
+          "text": "Avec « pas » seul, placé après le verbe",
+          "misconceptionTag": "fr.phrase.ne-oublie"
+        },
         { "id": "b", "text": "Avec « ne » seul, placé devant le verbe" },
         { "id": "c", "text": "Avec deux mots placés devant le verbe" },
         { "id": "d", "text": "Avec deux mots qui encadrent le verbe" }
@@ -54,7 +70,11 @@
       "options": [
         { "id": "a", "text": "La forme négative" },
         { "id": "b", "text": "La forme passive" },
-        { "id": "c", "text": "La forme interrogative" },
+        {
+          "id": "c",
+          "text": "La forme interrogative",
+          "misconceptionTag": "fr.phrase.type-forme-confondus"
+        },
         { "id": "d", "text": "La forme emphatique" }
       ],
       "correctOption": "d",

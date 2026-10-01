@@ -9,10 +9,22 @@
     {
       "prompt": "Mets à la forme passive : « Les élèves respectent leur professeur. »",
       "options": [
-        { "id": "a", "text": "Leur professeur respecte les élèves." },
+        {
+          "id": "a",
+          "text": "Leur professeur respecte les élèves.",
+          "misconceptionTag": "fr.voix.roles-inverses"
+        },
         { "id": "b", "text": "Leur professeur est respecté des élèves." },
-        { "id": "c", "text": "Leur professeur a été respecté des élèves." },
-        { "id": "d", "text": "Les élèves sont respectés de leur professeur." }
+        {
+          "id": "c",
+          "text": "Leur professeur a été respecté des élèves.",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
+        },
+        {
+          "id": "d",
+          "text": "Les élèves sont respectés de leur professeur.",
+          "misconceptionTag": "fr.voix.roles-inverses"
+        }
       ],
       "correctOption": "b",
       "explanation": "Le COD « leur professeur » devient sujet ; « respecter » exprime une attitude, donc le complément d'agent est introduit par « de » (« de les » → « des élèves ») ; le présent est gardé : « est respecté ». « a été respecté » passe au passé composé ; « Leur professeur respecte les élèves » et « Les élèves sont respectés de leur professeur » inversent les rôles.",
@@ -21,9 +33,21 @@
     {
       "prompt": "Mets à la forme active : « Ce roman a été écrit par un jeune auteur. »",
       "options": [
-        { "id": "a", "text": "Un jeune auteur écrit ce roman." },
-        { "id": "b", "text": "Un jeune auteur écrivait ce roman." },
-        { "id": "c", "text": "Ce roman écrit un jeune auteur." },
+        {
+          "id": "a",
+          "text": "Un jeune auteur écrit ce roman.",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
+        },
+        {
+          "id": "b",
+          "text": "Un jeune auteur écrivait ce roman.",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
+        },
+        {
+          "id": "c",
+          "text": "Ce roman écrit un jeune auteur.",
+          "misconceptionTag": "fr.voix.roles-inverses"
+        },
         { "id": "d", "text": "Un jeune auteur a écrit ce roman." }
       ],
       "correctOption": "d",
@@ -57,9 +81,21 @@
     {
       "prompt": "Mets à la forme passive en respectant l'accord : « La directrice félicite les lauréates. »",
       "options": [
-        { "id": "a", "text": "Les lauréates sont félicité par la directrice." },
-        { "id": "b", "text": "La directrice est félicitée par les lauréates." },
-        { "id": "c", "text": "Les lauréates ont été félicitées par la directrice." },
+        {
+          "id": "a",
+          "text": "Les lauréates sont félicité par la directrice.",
+          "misconceptionTag": "fr.accord.pp-etre-non-accorde"
+        },
+        {
+          "id": "b",
+          "text": "La directrice est félicitée par les lauréates.",
+          "misconceptionTag": "fr.voix.roles-inverses"
+        },
+        {
+          "id": "c",
+          "text": "Les lauréates ont été félicitées par la directrice.",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
+        },
         { "id": "d", "text": "Les lauréates sont félicitées par la directrice." }
       ],
       "correctOption": "d",
