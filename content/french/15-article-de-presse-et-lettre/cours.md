@@ -21,13 +21,13 @@ quoi ? où ? quand ?** — et, s'il reste de la place, **comment ?** et **pourqu
 ils annoncent l'essentiel et doivent **susciter l'intérêt** du lecteur.
 :::
 
-| Question  | Réponse dans le chapeau                    |
-| --------- | ------------------------------------------ |
-| Qui ?     | _l'équipe de handball de la 9e B_          |
-| Quoi ?    | _a remporté la finale régionale_           |
-| Où ?      | _à Monastir_                               |
-| Quand ?   | _samedi_                                   |
-| Comment ? | _en battant Moknine 24 à 19_               |
+| Question  | Réponse dans le chapeau           |
+| --------- | --------------------------------- |
+| Qui ?     | _l'équipe de handball de la 9e B_ |
+| Quoi ?    | _a remporté la finale régionale_  |
+| Où ?      | _à Monastir_                      |
+| Quand ?   | _samedi_                          |
+| Comment ? | _en battant Moknine 24 à 19_      |
 
 ::: exemple rédiger le circuit court du match
 
@@ -91,12 +91,12 @@ alinéas**, emploie des **phrases courtes** et un vocabulaire précis, et relie 
 **articulateurs** (_car_, _mais_, _et c'est ainsi que_, _bref_).
 :::
 
-| Paragraphe | Contenu                                   | Articulateur possible     |
-| ---------- | ----------------------------------------- | ------------------------- |
-| 1          | le fait principal (repris du chapeau)     | —                         |
-| 2          | ce qui l'a préparé : la qualification     | _Il y a un mois, …_       |
-| 3          | le déroulement : le match                 | _mais_, _car_             |
-| 4          | le résultat et ses suites                 | _et c'est ainsi que_, _bref_ |
+| Paragraphe | Contenu                               | Articulateur possible        |
+| ---------- | ------------------------------------- | ---------------------------- |
+| 1          | le fait principal (repris du chapeau) | —                            |
+| 2          | ce qui l'a préparé : la qualification | _Il y a un mois, …_          |
+| 3          | le déroulement : le match             | _mais_, _car_                |
+| 4          | le résultat et ses suites             | _et c'est ainsi que_, _bref_ |
 
 ::: exemple remettre en ordre le brouillon du match
 
@@ -155,12 +155,12 @@ handballeuses_, _les championnes de la 9e B_). Bien choisis, ils **font progress
 chaque reprise peut apporter une information nouvelle.
 :::
 
-| Reprise                     | Ce qu'elle apprend au lecteur             |
-| --------------------------- | ----------------------------------------- |
-| _l'équipe de la 9e B_       | le point de départ                        |
-| _les quatorze joueuses_     | combien elles sont                        |
-| _les élèves de M. Gharbi_   | qui les entraîne                          |
-| _les nouvelles championnes_ | le résultat                               |
+| Reprise                     | Ce qu'elle apprend au lecteur |
+| --------------------------- | ----------------------------- |
+| _l'équipe de la 9e B_       | le point de départ            |
+| _les quatorze joueuses_     | combien elles sont            |
+| _les élèves de M. Gharbi_   | qui les entraîne              |
+| _les nouvelles championnes_ | le résultat                   |
 
 ::: exemple réécrire trois phrases répétitives
 
@@ -213,11 +213,11 @@ de personnes présentes, **citations d'experts** (un vétérinaire, un médecin,
 rapportées sont mises **entre guillemets** avec un verbe introducteur (_a déclaré_, _explique_).
 :::
 
-| Peu crédible                 | Crédible                                                             |
-| ---------------------------- | -------------------------------------------------------------------- |
-| _Le faucon s'était perdu._   | _« Il s'était sans doute égaré pendant son premier vol », explique un garde forestier._ |
-| _Il y avait beaucoup de monde._ | _Près de 300 spectateurs remplissaient la salle._                 |
-| _Récemment, à Kairouan…_     | _Mardi 14 octobre, au collège Ibn Rachiq de Kairouan…_               |
+| Peu crédible                    | Crédible                                                                                |
+| ------------------------------- | --------------------------------------------------------------------------------------- |
+| _Le faucon s'était perdu._      | _« Il s'était sans doute égaré pendant son premier vol », explique un garde forestier._ |
+| _Il y avait beaucoup de monde._ | _Près de 300 spectateurs remplissaient la salle._                                       |
+| _Récemment, à Kairouan…_        | _Mardi 14 octobre, au collège Ibn Rachiq de Kairouan…_                                  |
 
 ::: exemple rendre crédible l'article sur le faucon
 
@@ -274,13 +274,13 @@ lisible (taille et variété des caractères) ; langue correcte ; paragraphes av
 bien choisie et légendée.
 :::
 
-| Critère                         | « Non » si…                                           |
-| ------------------------------- | ----------------------------------------------------- |
-| centré sur le thème             | l'article parle surtout d'autre chose que du fait     |
-| essentiel redit                 | le texte ne reprend pas le fait annoncé par le titre  |
-| informations crédibles          | aucun témoin, aucune précision vérifiable             |
-| paragraphes avec alinéas        | un seul bloc de texte                                 |
-| photo légendée                  | photo sans légende, ou sans rapport avec le fait      |
+| Critère                  | « Non » si…                                          |
+| ------------------------ | ---------------------------------------------------- |
+| centré sur le thème      | l'article parle surtout d'autre chose que du fait    |
+| essentiel redit          | le texte ne reprend pas le fait annoncé par le titre |
+| informations crédibles   | aucun témoin, aucune précision vérifiable            |
+| paragraphes avec alinéas | un seul bloc de texte                                |
+| photo légendée           | photo sans légende, ou sans rapport avec le fait     |
 
 ::: exemple relire l'article sur le match
 
@@ -340,13 +340,13 @@ affectif**. Sa présentation, sa formule d'appel et sa formule de conclusion son
 (Le manuel dit **destinateur** pour celui qui écrit, **destinataire** pour celui qui reçoit.)
 :::
 
-| Partie            | Dans ta lettre à Amira                                         |
-| ----------------- | -------------------------------------------------------------- |
-| lieu et date      | _Sousse, le 3 novembre 2026_                                   |
-| formule d'appel   | _Ma chère Amira,_                                              |
-| corps             | tu réponds à ses nouvelles, tu donnes les tiennes             |
-| formule finale    | _Je t'embrasse très fort._                                     |
-| signature         | _Ton cousin Yassine_                                           |
+| Partie          | Dans ta lettre à Amira                            |
+| --------------- | ------------------------------------------------- |
+| lieu et date    | _Sousse, le 3 novembre 2026_                      |
+| formule d'appel | _Ma chère Amira,_                                 |
+| corps           | tu réponds à ses nouvelles, tu donnes les tiennes |
+| formule finale  | _Je t'embrasse très fort._                        |
+| signature       | _Ton cousin Yassine_                              |
 
 ::: exemple répondre à Amira
 
@@ -404,13 +404,13 @@ en dessous, à gauche**, l'**objet** ; une **formule d'appel** (le titre du dest
 (_Veuillez agréer…_). On **vouvoie** le destinataire.
 :::
 
-| Place                    | Élément                                             |
-| ------------------------ | --------------------------------------------------- |
-| en haut, à gauche        | _Yassine Trabelsi, 12 rue de Tunis, Sousse_         |
-| en haut, à droite        | _Sousse, le 3 novembre 2026_                        |
-| plus bas, au milieu      | _Monsieur le Directeur de l'école de musique_       |
-| en dessous, à gauche     | _Objet : demande d'inscription_                     |
-| début du texte           | _Monsieur le Directeur,_                            |
+| Place                | Élément                                       |
+| -------------------- | --------------------------------------------- |
+| en haut, à gauche    | _Yassine Trabelsi, 12 rue de Tunis, Sousse_   |
+| en haut, à droite    | _Sousse, le 3 novembre 2026_                  |
+| plus bas, au milieu  | _Monsieur le Directeur de l'école de musique_ |
+| en dessous, à gauche | _Objet : demande d'inscription_               |
+| début du texte       | _Monsieur le Directeur,_                      |
 
 ::: exemple rédiger la demande d'inscription
 
@@ -467,8 +467,8 @@ relit avec les règles de présentation de la lettre privée ou officielle, et o
 **erreurs de présentation et de style** — en particulier le **mélange des registres**.
 :::
 
-| Erreur dans la lettre à Jojo                       | Correction                                 |
-| -------------------------------------------------- | ------------------------------------------ |
+| Erreur dans la lettre à Jojo                       | Correction                                  |
+| -------------------------------------------------- | ------------------------------------------- |
 | matricule et objet en haut                         | lieu et date seulement : lettre privée      |
 | _J'ai l'honneur de t'écrire_                       | _Je t'écris pour répondre à ta lettre_      |
 | _veuillez agréer l'expression de ma considération_ | _Je t'embrasse, ainsi que toute la famille_ |
@@ -510,9 +510,9 @@ deux corrections faut-il faire ?
 
 ---
 
-1. Remplacer la formule par une **formule de politesse officielle** au vouvoiement : _« Veuillez
-agréer, Monsieur le Directeur, l'expression de mes salutations distinguées. »_ 2. **Signer du nom
-complet** : _Yassine Trabelsi_.
+D'abord, remplacer la formule par une **formule de politesse officielle** au vouvoiement :
+_« Veuillez agréer, Monsieur le Directeur, l'expression de mes salutations distinguées. »_
+Ensuite, **signer du nom complet** : _Yassine Trabelsi_.
 :::
 
 ::: retenir
