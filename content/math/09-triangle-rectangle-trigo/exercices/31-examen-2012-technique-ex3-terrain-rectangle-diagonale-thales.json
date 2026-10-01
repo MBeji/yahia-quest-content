@@ -1,0 +1,239 @@
+{
+  "title": "🏛️ مناظرة 2012 (تقني) · التمرين 3 ⭐⭐⭐: قطعة أرض مستطيلة بالسلّم — قطر وطاليس ومحيط جزء منها",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 31,
+  "questions": [
+    {
+      "prompt": "ABCD مستطيل يمثّل تصميمًا لقطعة أرض ، وفيه:\nAB = 4 cm\nAD = 3 cm\nما طول القطر [BD] بالصنتمتر ؟\n<svg viewBox=\"0 0 320 240\"><title>المستطيل ABCD وقطره BD</title><polygon points=\"224,206 224,30 92,30 92,206\" fill=\"#0f172a\" fill-opacity=\"0.04\"/><polygon points=\"224,206 224,30 92,30 92,206\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M224 30 L92 206\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"224\" cy=\"206\" r=\"3.8\"/><circle cx=\"224\" cy=\"30\" r=\"3.8\"/><circle cx=\"92\" cy=\"30\" r=\"3.8\"/><circle cx=\"92\" cy=\"206\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"78\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"238\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"78\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"238\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\">A</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"158\" y=\"228\" text-anchor=\"middle\" fill=\"#64748b\">3 cm</text><text x=\"258\" y=\"123\" text-anchor=\"middle\" fill=\"#64748b\">4 cm</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√7",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "25",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "ABCD مستطيل ، فزاويته عند A قائمة والمثلّث ABD قائم في A ، ووتره هو القطر [BD]. فبنظرية فيثاغورس: BD² = AB² + AD² = 4² + 3² = 16 + 9 = 25 ، ومنه BD = √25 = 5 cm ✓. الخطأ الشائع: جمع الطولين فنجد 4 + 3 = 7 ؛ أو التوقّف عند 25 ونسيان الجذر ؛ أو اعتبار [AB] هو الوتر فنجد BD² = 16 − 9 = 7 أي BD = √7 ، مع أنّ القطر أطول من ضلعي المستطيل.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل يمثّل تصميمًا لقطعة أرض ، والنقطة M من القطعة [AB] ، والنقطة N من القطعة [BD] ، والمستقيم (MN) عمودي على (AB).\nأيّ حجّة تثبت أنّ المستقيمين (MN) و (AD) متوازيان ؟\n<svg viewBox=\"0 0 320 240\"><title>المستطيل ABCD والمستقيم (MN) العمودي على (AB)</title><polygon points=\"224,206 224,30 92,30 92,206\" fill=\"#0f172a\" fill-opacity=\"0.04\"/><polygon points=\"224,206 224,30 92,30 92,206\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M224 30 L92 206\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M224 162 L125 162\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M213 162 L213 173 L224 173\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"224\" cy=\"206\" r=\"3.8\"/><circle cx=\"224\" cy=\"30\" r=\"3.8\"/><circle cx=\"92\" cy=\"30\" r=\"3.8\"/><circle cx=\"92\" cy=\"206\" r=\"3.8\"/><circle cx=\"224\" cy=\"162\" r=\"3.8\"/><circle cx=\"125\" cy=\"162\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"78\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"238\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"78\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"238\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"239\" y=\"167\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"112\" y=\"153\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "كلّ منهما عمودي على (AB) ، فهما متوازيان"
+        },
+        {
+          "id": "b",
+          "text": "كلّ منهما يقطع القطر [BD] ، فهما متوازيان"
+        },
+        {
+          "id": "c",
+          "text": "الرباعي AMND شبه منحرف ، فهما متوازيان"
+        },
+        {
+          "id": "d",
+          "text": "لا يتقاطعان داخل المستطيل في الرسم ، فهما متوازيان"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "(AD) عمودي على (AB) لأنّ زاوية المستطيل عند A قائمة ، و (MN) عمودي على (AB) حسب المعطى. وكلّ مستقيمين عموديين على مستقيم واحد متوازيان ، إذن (MN) ∥ (AD) ✓. الخطأ الشائع: الاكتفاء بأنّ المستقيمين يقطعان القطر [BD] ، وهذا لا يكفي لتوازيهما ؛ أو الاستناد إلى كون AMND شبه منحرف ، وهو لا يكون كذلك إلّا بعد إثبات التوازي نفسه ؛ أو الاعتماد على أنّهما لا يتقاطعان داخل المستطيل في الرسم ، فقد يتقاطع مستقيمان خارج الجزء المرسوم.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.droites-perp-para"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل يمثّل تصميمًا لقطعة أرض ، والنقطة M من القطعة [AB] ، والنقطة N من القطعة [BD] ، والمستقيمان (MN) و (AD) متوازيان.\nما النظرية التي تبرّر المساواة التالية ، وفي أيّ مثلّث نطبّقها ؟\nBM/BA = BN/BD = MN/AD\n<svg viewBox=\"0 0 320 240\"><title>وضعية طاليس: (MN) ∥ (AD) داخل المستطيل ABCD</title><polygon points=\"224,206 224,30 92,30 92,206\" fill=\"#0f172a\" fill-opacity=\"0.04\"/><polygon points=\"224,206 224,30 92,30 92,206\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M224 30 L92 206\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M224 162 L125 162\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M171 167 L178 162 L171 157\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M154.5 211 L161.5 206 L154.5 201\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"224\" cy=\"206\" r=\"3.8\"/><circle cx=\"224\" cy=\"30\" r=\"3.8\"/><circle cx=\"92\" cy=\"30\" r=\"3.8\"/><circle cx=\"92\" cy=\"206\" r=\"3.8\"/><circle cx=\"224\" cy=\"162\" r=\"3.8\"/><circle cx=\"125\" cy=\"162\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"78\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"238\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"78\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"238\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"239\" y=\"167\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"112\" y=\"153\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "نظرية طاليس في المثلّث BCD"
+        },
+        {
+          "id": "b",
+          "text": "عكس نظرية طاليس في المثلّث BAD",
+          "misconceptionTag": "math.geo.thales-reciproque-role"
+        },
+        {
+          "id": "c",
+          "text": "نظرية فيثاغورس في المثلّث BCD"
+        },
+        {
+          "id": "d",
+          "text": "نظرية طاليس في المثلّث BAD"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(MN) ∥ (AD) و M من [BA] و N من [BD] ، فنحن في وضعية طاليس برأس B في المثلّث BAD: المثلّث BMN تصغير للمثلّث BAD ، ونظرية طاليس المباشرة تعطي تساوي النسب BM/BA = BN/BD = MN/AD ✓. الخطأ الشائع: استعمال عكس نظرية طاليس ، وهي تنطلق من تساوي النسب لتثبت التوازي ، بينما التوازي هنا هو المعطى ؛ أو اختيار المثلّث BCD ، فالنقطة M ليست من أحد أضلاعه ولا تقوم فيه وضعية طاليس.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل يمثّل تصميمًا لقطعة أرض ، والنقطة M من القطعة [AB] ، والنقطة N من القطعة [BD] ، والمستقيمان (MN) و (AD) متوازيان ، ونعلم أنّ:\nAB = 4 cm\nBM = 3 cm\nما قيمة النسبة BM/BA ؟\n<svg viewBox=\"0 0 320 240\"><title>النقطة M على [AB] مع BM = 3</title><polygon points=\"224,206 224,30 92,30 92,206\" fill=\"#0f172a\" fill-opacity=\"0.04\"/><polygon points=\"224,206 224,30 92,30 92,206\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M224 30 L92 206\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M224 162 L125 162\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M171 167 L178 162 L171 157\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M154.5 211 L161.5 206 L154.5 201\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"224\" cy=\"206\" r=\"3.8\"/><circle cx=\"224\" cy=\"30\" r=\"3.8\"/><circle cx=\"92\" cy=\"30\" r=\"3.8\"/><circle cx=\"92\" cy=\"206\" r=\"3.8\"/><circle cx=\"224\" cy=\"162\" r=\"3.8\"/><circle cx=\"125\" cy=\"162\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"78\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"238\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"78\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"238\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"239\" y=\"167\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"112\" y=\"153\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"258\" y=\"101\" text-anchor=\"middle\" fill=\"#64748b\">3 cm</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "b",
+          "text": "4/3",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "c",
+          "text": "3/4"
+        },
+        {
+          "id": "d",
+          "text": "1/4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "M من [BA] ، فالنسبة «الجزء على الكلّ» انطلاقًا من الرأس B هي BM/BA = 3/4 ✓ ، وهي المعامل الذي يصغّر المثلّث BAD إلى BMN. الخطأ الشائع: قلب النسبة فنجد BA/BM = 4/3 ؛ أو قسمة BM على القطعة المتبقّية MA = 4 − 3 = 1 فنجد BM/MA = 3 ؛ أو وضع القطعة المتبقّية في البسط فنجد MA/BA = 1/4.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل يمثّل تصميمًا لقطعة أرض ، والنقطة M من القطعة [AB] ، والنقطة N من القطعة [BD] ، والمستقيمان (MN) و (AD) متوازيان ، ونعلم أنّ:\nAB = 4 cm\nAD = 3 cm\nBM = 3 cm\nما طول القطعة [MN] بالصنتمتر ؟\n<svg viewBox=\"0 0 320 240\"><title>وضعية طاليس والطولان AD و BM</title><polygon points=\"224,206 224,30 92,30 92,206\" fill=\"#0f172a\" fill-opacity=\"0.04\"/><polygon points=\"224,206 224,30 92,30 92,206\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M224 30 L92 206\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M224 162 L125 162\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M171 167 L178 162 L171 157\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M154.5 211 L161.5 206 L154.5 201\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"224\" cy=\"206\" r=\"3.8\"/><circle cx=\"224\" cy=\"30\" r=\"3.8\"/><circle cx=\"92\" cy=\"30\" r=\"3.8\"/><circle cx=\"92\" cy=\"206\" r=\"3.8\"/><circle cx=\"224\" cy=\"162\" r=\"3.8\"/><circle cx=\"125\" cy=\"162\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"78\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"238\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"78\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"238\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"239\" y=\"167\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"112\" y=\"153\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"158\" y=\"228\" text-anchor=\"middle\" fill=\"#64748b\">3 cm</text><text x=\"258\" y=\"101\" text-anchor=\"middle\" fill=\"#64748b\">3 cm</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,75"
+        },
+        {
+          "id": "b",
+          "text": "2,25"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "d",
+          "text": "9",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(MN) ∥ (AD) و M من [BA] و N من [BD] ، فبنظرية طاليس MN/AD = BM/BA ، أي MN/3 = 3/4 ، ومنه MN = 3 × 3/4 = 9/4 = 2,25 cm ✓. الخطأ الشائع: قلب النسبة فنجد MN = 3 × 4/3 = 4 وهو أكبر من [AD] نفسه ؛ أو استعمال نسبة الجزء على الجزء المتبقّي BM/MA = 3/1 فنجد MN = 3 × 3 = 9 ؛ أو استعمال نسبة القطعة المتبقّية MA/BA = 1/4 فنجد MN = 3 × 1/4 = 0,75.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل يمثّل تصميمًا لقطعة أرض ، والنقطة M من القطعة [AB] ، والنقطة N من القطعة [BD] ، والمستقيمان (MN) و (AD) متوازيان ، ونعلم أنّ:\nAB = 4 cm\nBD = 5 cm\nBM = 3 cm\nما طول القطعة [BN] بالصنتمتر ؟\n<svg viewBox=\"0 0 320 240\"><title>وضعية طاليس والطول BM</title><polygon points=\"224,206 224,30 92,30 92,206\" fill=\"#0f172a\" fill-opacity=\"0.04\"/><polygon points=\"224,206 224,30 92,30 92,206\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M224 30 L92 206\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M224 162 L125 162\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M171 167 L178 162 L171 157\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M154.5 211 L161.5 206 L154.5 201\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"224\" cy=\"206\" r=\"3.8\"/><circle cx=\"224\" cy=\"30\" r=\"3.8\"/><circle cx=\"92\" cy=\"30\" r=\"3.8\"/><circle cx=\"92\" cy=\"206\" r=\"3.8\"/><circle cx=\"224\" cy=\"162\" r=\"3.8\"/><circle cx=\"125\" cy=\"162\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"78\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"238\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"78\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"238\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"239\" y=\"167\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"112\" y=\"153\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"258\" y=\"101\" text-anchor=\"middle\" fill=\"#64748b\">3 cm</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,75"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "c",
+          "text": "20/3",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "d",
+          "text": "15",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "(MN) ∥ (AD) و M من [BA] و N من [BD] ، فبنظرية طاليس BN/BD = BM/BA ، أي BN/5 = 3/4 ، ومنه BN = 5 × 3/4 = 15/4 = 3,75 cm ✓. الخطأ الشائع: قلب النسبة فنجد BN = 5 × 4/3 = 20/3 وهو أكبر من [BD] نفسه ؛ أو استعمال BM/MA = 3/1 فنجد BN = 5 × 3 = 15 ؛ أو طرح الفرق نفسه من الضلعين فنجد BN = 5 − (4 − 3) = 4.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل يمثّل تصميمًا لقطعة أرض ، والنقطة M من القطعة [AB] ، والنقطة N من القطعة [BD] ، ويُبنى المنزل على الرباعي AMND المظلَّل في الرسم.\nنعلم أنّ طول كلّ قطعة من القطع التالية على الرسم بالصنتمتر هو:\nAB = 4\nAD = 3\nBD = 5\nBM = 3\nBN = 3,75\nMN = 2,25\nما محيط الرباعي AMND على الرسم بالصنتمتر ؟\n<svg viewBox=\"0 0 320 240\"><title>الرباعي AMND المظلَّل داخل المستطيل ABCD</title><polygon points=\"224,206 224,30 92,30 92,206\" fill=\"#0f172a\" fill-opacity=\"0.04\"/><path d=\"M122 166 L126 162 M95 202 L135 162 M100 206 L144 162 M109 206 L153 162 M118 206 L162 162 M127 206 L171 162 M136 206 L180 162 M145 206 L189 162 M154 206 L198 162 M163 206 L207 162 M172 206 L216 162 M181 206 L224 163 M190 206 L224 172 M199 206 L224 181 M208 206 L224 190 M217 206 L224 199\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.3\" stroke-opacity=\"0.55\"/><polygon points=\"224,206 224,162 125,162 92,206\" fill=\"#0f6e56\" fill-opacity=\"0.1\"/><polygon points=\"224,206 224,30 92,30 92,206\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M224 30 L92 206\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M224 162 L125 162\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"224\" cy=\"206\" r=\"3.8\"/><circle cx=\"224\" cy=\"30\" r=\"3.8\"/><circle cx=\"92\" cy=\"30\" r=\"3.8\"/><circle cx=\"92\" cy=\"206\" r=\"3.8\"/><circle cx=\"224\" cy=\"162\" r=\"3.8\"/><circle cx=\"125\" cy=\"162\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"78\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"238\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"78\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"238\" y=\"224\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"239\" y=\"167\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"112\" y=\"153\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "7,5"
+        },
+        {
+          "id": "d",
+          "text": "5,25"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "أضلاع الرباعي AMND هي [AM] و [MN] و [ND] و [DA]. AM = AB − BM = 4 − 3 = 1 و ND = BD − BN = 5 − 3,75 = 1,25 ، ومعطى MN = 2,25 و DA = 3. فالمحيط = 1 + 2,25 + 1,25 + 3 = 7,5 cm ✓. الخطأ الشائع: أخذ أضلاع المثلّث الصغير BMN فنجد 3 + 2,25 + 3,75 = 9 ؛ أو أخذ أضلاع المثلّث الكبير BAD فنجد 4 + 3 + 5 = 12 ؛ أو الاكتفاء بالقاعدتين المتوازيتين فنجد 2,25 + 3 = 5,25.",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.perimetres",
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "يمثّل الرباعي AMND تصميمًا لجزء من قطعة أرض وفق السلّم 1/1000 ، وأطوال أضلاعه على الرسم بالصنتمتر هي:\nAM = 1\nMN = 2,25\nND = 1,25\nDA = 3\nما المحيط الحقيقي لهذا الجزء بالمتر ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "7,5"
+        },
+        {
+          "id": "b",
+          "text": "75"
+        },
+        {
+          "id": "c",
+          "text": "750"
+        },
+        {
+          "id": "d",
+          "text": "7500"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "السلّم 1/1000 يعني أنّ 1 cm على الرسم يمثّل 1000 cm في الواقع. محيط الرباعي على الرسم هو 1 + 2,25 + 1,25 + 3 = 7,5 cm ، فمحيطه الحقيقي 7,5 × 1000 = 7500 cm. ونحوّل إلى المتر بالقسمة على 100 لأنّ 1 m = 100 cm ، فنجد 7500 ÷ 100 = 75 m ✓. الخطأ الشائع: ترك النتيجة بالصنتمتر وقراءتها بالمتر فنجد 7500 ؛ أو القسمة على 10 بدل 100 عند التحويل فنجد 750 ؛ أو إهمال السلّم فنجد 7,5.",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.perimetres",
+        "math.prop.situations"
+      ]
+    }
+  ]
+}

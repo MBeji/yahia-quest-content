@@ -1,0 +1,76 @@
+{
+ "lot": "L08",
+ "chapitre": "12-repere-plan",
+ "nouvelles": {
+  "math.stat.mediane-lue-sans-ranger": {
+   "competency": "math.stat.moyenne-mediane",
+   "fr": "Tu prends la valeur du milieu sans avoir rangé la série : la médiane se lit sur la série rangée",
+   "en": "You take the middle value without sorting the series first: the median is read on the sorted series",
+   "ar": "تأخذ القيمة الوسطى قبل ترتيب السلسلة: يُقرأ الوسيط على السلسلة المرتّبة"
+  }
+ },
+ "options": [
+  {
+   "file": "10",
+   "q": 4,
+   "opt": "c",
+   "id": "math.stat.mediane-lue-sans-ranger",
+   "texte": "34"
+  }
+ ],
+ "options_id_existant_absent_de_l_arbre": [
+  {
+   "file": "14",
+   "q": 3,
+   "opt": "a",
+   "id": "math.alg.facteur-commun-signe-change",
+   "texte": "27²⁰¹⁷ × 29"
+  },
+  {
+   "file": "14",
+   "q": 6,
+   "opt": "c",
+   "id": "math.alg.facteur-commun-signe-change",
+   "texte": "29"
+  }
+ ],
+ "hors_lot": [
+  {
+   "chapitre": "07-statistiques",
+   "file": "12",
+   "q": 5,
+   "opt": "d",
+   "id": "math.stat.mediane-lue-sans-ranger",
+   "texte": "40",
+   "note": "vérifié sur origin/main 4f72f94b : option muette ; explication « أخذ القيمة الخامسة قبل الترتيب فنجد 40 » (série 37 ، 36 ، 38 ، 39 ، 40 ، 41 ، 40 ، 39 ، 41, rang 5 sur 9 lu sans ranger) = exactement l'erreur"
+  },
+  {
+   "chapitre": "20-orthogonalite-espace",
+   "file": "07",
+   "q": 3,
+   "opt": "b",
+   "id": "math.stat.mediane-lue-sans-ranger",
+   "texte": "أخذ القيمة الرابعة كما سُجّلت",
+   "note": "vérifié sur origin/main 4f72f94b : option muette de la question « ما الخطوة الأولى ؟ » ; l'explication la réfute par « ترتيب الأيّام ليس ترتيبًا للقيم : القيمة الرابعة كما سُجّلت … لا تكون الوسيط إلّا صدفةً » = exactement l'erreur (la médiane lue sur la série non rangée)"
+  },
+  {
+   "chapitre": "20-orthogonalite-espace",
+   "file": "07",
+   "q": 4,
+   "opt": "d",
+   "id": "math.stat.mediane-lue-sans-ranger",
+   "texte": "15",
+   "note": "vérifié sur origin/main 4f72f94b : option muette ; explication « أخذ القيمة الرابعة دون ترتيب ، أي 15 » (série 12 ، 17 ، 9 ، 15 ، 8 ، 14 ، 16) = exactement l'erreur"
+  }
+ ],
+ "libelle_a_elargir": [
+  "math.vec.parallelogramme-sommets-mal-ordonnes : libellé encore vectoriel sur origin/main (contraire à R-3 en 9ᵉ) ; l'audit propose de l'élargir sans vecteur (« Tu ordonnes mal les sommets du parallélogramme : dans ABCD les sommets se suivent dans l'ordre du tour, les diagonales sont [AC] et [BD] ») et de le rattacher à une compétence au programme ; puis poser l'id sur 14 Q4 option « (3 ; 4) » (lettre d dans le fichier actuel) — muette en attendant"
+ ],
+ "note": [
+  "N1 math.stat.mediane-lue-sans-ranger : 4 questions (10 Q4 « 34 » + 07/12 Q5 « 40 » + 20/07 Q3 b + 20/07 Q4 d), les trois publiées lues sur origin/main 4f72f94b et vérifiées une à une (voir hors_lot). La question 10 Q3 d'origine (rang de la médiane) est écartée : elle ne compte pas.",
+  "options_id_existant_absent_de_l_arbre : math.alg.facteur-commun-signe-change existe sur origin/main 4f72f94b mais pas dans content/misconceptions.json de cet arbre (632 ids contre 645) — apply-tags.py (assert id in registre) échouerait ici ; à appliquer avec la même forme que « options » une fois l'arbre aligné sur main. Les deux options restent muettes dans 14.",
+  "Posées DIRECTEMENT dans les fichiers 10-15 (id présent dans l'arbre, libellé relu sur origin/main) : operation-inverse-appliquee sur 10 Q1 a, 10 Q3 c et d, 11 Q2 a, 11 Q4 a, 15 Q4 d ; racine-et-carre-confondus sur 15 Q2 a et 15 Q3 b (précédent publié 03/18 Q3 c) ; critere-divisibilite-mal-choisi sur 12 Q1 c et 13 Q4 c (« 12 », harmonisé avec 03/15 Q4) ; moins-devant-parenthese sur 13 Q3 a ; difference-carres-second-terme-non-eleve-au-carre sur 15 Q5 d ; termes-semblables-par-coefficient sur 15 Q1 a ; effectif-cumule-non-cumule sur 14 Q5 d.",
+  "Quatre de ces placements ne sont exacts qu'avec le libellé ÉLARGI de origin/main, pas avec celui de cet arbre : operation-inverse-appliquee (« … une division au lieu d'une multiplication (ou l'inverse) ») pour 10 Q1 a, 10 Q3 d et 11 Q2 a ; moins-devant-parenthese (« … qu'à une partie des termes ») pour 13 Q3 a ; effectif-cumule-non-cumule (« l'effectif d'une classe (ou d'une valeur) et son effectif cumulé ») pour 14 Q5 d. L'arbre doit être synchronisé sur main avant de committer.",
+  "Rejetées par l'arbitrage : les 15 autres propositions du premier rapport ; leurs options restent muettes ou prennent l'étiquette existante que nomme l'audit (voir ci-dessus). 11 Q3 d / 11 Q5 a / 11 Q6 a (« 2/3 pris pour une longueur ») restent muettes."
+ ]
+}

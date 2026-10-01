@@ -18,8 +18,9 @@ for pj in pend:
     d = json.load(open(pj, encoding='utf-8'))
     for tid, t in d['nouvelles'].items():
         if tid in reg: continue
-        assert t['competency'] in comp, ('compétence inconnue', tid, t['competency'])
-        reg[tid] = {'subject': 'math', 'labels': {'fr': t['fr'], 'en': t['en'], 'ar': t['ar']}, 'competency': t['competency']}
+        if t.get('competency'): assert t['competency'] in comp, ('compétence inconnue', tid, t['competency'])
+        reg[tid] = {'subject': 'math', 'labels': {'fr': t['fr'], 'en': t['en'], 'ar': t['ar']}}
+        if t.get('competency'): reg[tid]['competency'] = t['competency']   # sans compétence (erreur transversale) : comme reponse-a-l-autre-inconnue
         created.append(tid)
     for o in d['options']:
         g = glob.glob('%s/content/math/%s/quiz.json' % (root, d['chapitre'])) if o['file'] == 'quiz' else glob.glob('%s/content/math/%s/exercices/%s-*.json' % (root, d['chapitre'], o['file']))

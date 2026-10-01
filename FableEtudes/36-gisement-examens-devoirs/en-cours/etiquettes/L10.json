@@ -1,0 +1,192 @@
+{
+ "lot": "L10",
+ "chapitre": "08-thales",
+ "nouvelles": {
+  "math.geo.droite-des-milieux-mauvais-cote": {
+   "competency": "math.geo.triangles-base",
+   "fr": "Tu prends la moitié d'un côté qui porte l'un des milieux : le segment qui joint les milieux vaut la moitié du TROISIÈME côté, celui qui ne passe par aucun des deux",
+   "en": "You take half of a side that carries one of the midpoints: the segment joining the midpoints is half of the THIRD side, the one that passes through neither of them",
+   "ar": "تأخذ نصف ضلع يمرّ منه أحد المنتصفين: القطعة الواصلة بين المنتصفين تساوي نصف الضلع الثالث الذي لا يمرّ منه أيّ منهما"
+  },
+  "math.vec.milieu-difference-au-lieu-de-somme": {
+   "competency": "math.vec.repere-calculs",
+   "fr": "Tu prends la moitié de la DIFFÉRENCE des coordonnées (ou la différence entière) : le milieu a pour coordonnées la moitié de leur SOMME",
+   "en": "You take half of the DIFFERENCE of the coordinates (or the whole difference): the coordinates of the midpoint are half of their SUM",
+   "ar": "تأخذ نصف الفرق بين الإحداثيّات (أو الفرق كاملًا): إحداثيّتا المنتصف هما نصف مجموع إحداثيّتي الطرفين"
+  },
+  "math.geo.position-relative-ignoree": {
+   "competency": "math.geo.thales-direct",
+   "fr": "Tu ignores la position relative des points : selon que le point est ENTRE les deux autres ou À L'EXTÉRIEUR (et de quel côté), les longueurs se retranchent ou s'additionnent",
+   "en": "You ignore the relative position of the points: depending on whether a point lies BETWEEN the other two or OUTSIDE them (and on which side), lengths are subtracted or added",
+   "ar": "تُهمل الوضعيّة النسبيّة للنقاط: حسب وقوع النقطة بين النقطتين الأخريين أو خارجهما (وفي أيّ جهة) تُطرح الأطوال أو تُجمع"
+  }
+ },
+ "options": [
+  {
+   "file": "13",
+   "q": 4,
+   "opt": "a",
+   "id": "math.geo.droite-des-milieux-mauvais-cote",
+   "texte": "IJ = AB/2"
+  },
+  {
+   "file": "13",
+   "q": 4,
+   "opt": "b",
+   "id": "math.geo.droite-des-milieux-mauvais-cote",
+   "texte": "IJ = BC/2"
+  },
+  {
+   "file": "15",
+   "q": 3,
+   "opt": "b",
+   "id": "math.geo.droite-des-milieux-mauvais-cote",
+   "texte": "3,5"
+  },
+  {
+   "file": "15",
+   "q": 3,
+   "opt": "d",
+   "id": "math.geo.droite-des-milieux-mauvais-cote",
+   "texte": "2,5"
+  },
+  {
+   "file": "16",
+   "q": 2,
+   "opt": "a",
+   "id": "math.vec.milieu-difference-au-lieu-de-somme",
+   "texte": "(−4 ; 6)"
+  },
+  {
+   "file": "16",
+   "q": 6,
+   "opt": "a",
+   "id": "math.geo.position-relative-ignoree",
+   "texte": "(−8 ; 3)"
+  },
+  {
+   "file": "18",
+   "q": 3,
+   "opt": "a",
+   "id": "math.geo.position-relative-ignoree",
+   "texte": "a² − 1"
+  },
+  {
+   "file": "17",
+   "q": 5,
+   "opt": "c",
+   "id": "math.alg.produit-nul-une-seule-solution",
+   "texte": "{2}"
+  }
+ ],
+ "hors_lot": [
+  {
+   "chapitre": "18-quadrilateres",
+   "file": "07",
+   "q": 5,
+   "opt": "a",
+   "id": "math.geo.droite-des-milieux-mauvais-cote",
+   "texte": "2,5",
+   "note": "vérifié sur origin/main 4f72f94b : option muette ; l'explication (« 2,5 نصف AB ، أي نصف ضلع يمرّ من E : الرابط يساوي نصف الضلع الثالث [BC] ») décrit exactement l'erreur"
+  },
+  {
+   "chapitre": "18-quadrilateres",
+   "file": "12",
+   "q": 2,
+   "opt": "e",
+   "id": "math.geo.droite-des-milieux-mauvais-cote",
+   "texte": "IL = AD/2",
+   "note": "vérifié sur origin/main 4f72f94b : option muette d'une question « multi » ; l'explication (« AD/2 فهو AI ، طول نصف الساق ، لا IL ») = la moitié d'un côté qui porte le milieu I — exactement l'erreur"
+  },
+  {
+   "chapitre": "09-triangle-rectangle-trigo",
+   "file": "09",
+   "q": 8,
+   "opt": "d",
+   "id": "math.vec.milieu-difference-au-lieu-de-somme",
+   "texte": "(−√2 ; 1)",
+   "note": "vérifié sur origin/main 4f72f94b : option muette ; explication « أخذ نصف الفرقين بدل نصف المجموعين » = exactement l'erreur"
+  },
+  {
+   "chapitre": "12-repere-plan",
+   "file": "07",
+   "q": 5,
+   "opt": "b",
+   "id": "math.vec.milieu-difference-au-lieu-de-somme",
+   "texte": "(2 ; −2)",
+   "note": "vérifié sur origin/main 4f72f94b : option muette ; explication « أخذ نصف الفرقين بدل نصف المجموعين » = exactement l'erreur"
+  },
+  {
+   "chapitre": "18-quadrilateres",
+   "file": "07",
+   "q": 2,
+   "opt": "c",
+   "id": "math.vec.milieu-difference-au-lieu-de-somme",
+   "texte": "(4 ; 2)",
+   "note": "vérifié sur origin/main 4f72f94b : option muette ; explication « (4 ; 2) تأتي من قسمة الفرقين 7 − (−1) = 8 و 3 − (−1) = 4 على 2 » = exactement l'erreur"
+  },
+  {
+   "chapitre": "18-quadrilateres",
+   "file": "08",
+   "q": 1,
+   "opt": "c",
+   "id": "math.vec.milieu-difference-au-lieu-de-somme",
+   "texte": "(2,5 ; 0)",
+   "note": "vérifié sur origin/main 4f72f94b : option muette ; explication « نصف الفرقين (3 − (−2))/2 و (3 − 3)/2 » = exactement l'erreur"
+  },
+  {
+   "chapitre": "18-quadrilateres",
+   "file": "11",
+   "q": 1,
+   "opt": "a",
+   "id": "math.vec.milieu-difference-au-lieu-de-somme",
+   "texte": "(2 ; −1)",
+   "note": "vérifié sur origin/main 4f72f94b : option muette ; explication « نصف هذا الفرق » (moitié de la différence) = exactement l'erreur"
+  },
+  {
+   "chapitre": "18-quadrilateres",
+   "file": "11",
+   "q": 1,
+   "opt": "c",
+   "id": "math.vec.milieu-difference-au-lieu-de-somme",
+   "texte": "(4 ; −2)",
+   "note": "vérifié sur origin/main 4f72f94b : option muette ; explication « فرق الإحداثيّات (5 − 1 ; 2 − 4) لا منتصف القطعة » = la différence entière, couverte par le libellé « (ou la différence entière) »"
+  },
+  {
+   "chapitre": "18-quadrilateres",
+   "file": "17",
+   "q": 2,
+   "opt": "c",
+   "id": "math.vec.milieu-difference-au-lieu-de-somme",
+   "texte": "I(0 ; −4) و J(3 ; −4)",
+   "note": "vérifié sur origin/main 4f72f94b : option muette ; explication « أخذ نصف الفرق بدل المتوسّط » = exactement l'erreur"
+  },
+  {
+   "chapitre": "08-thales",
+   "file": "11",
+   "q": 4,
+   "opt": "c",
+   "id": "math.geo.position-relative-ignoree",
+   "texte": "9 cm",
+   "note": "vérifié sur origin/main 4f72f94b : option muette ; explication « وضع O خارج القطعة [BN] … فنكتب OB = ON + NB بجمع لا يصحّ » = ignorer de quel côté est le point — exactement l'erreur"
+  },
+  {
+   "chapitre": "09-triangle-rectangle-trigo",
+   "file": "09",
+   "q": 6,
+   "opt": "c",
+   "id": "math.geo.position-relative-ignoree",
+   "texte": "5",
+   "note": "vérifié sur origin/main 4f72f94b : option muette ; explication « جمع الطولين ، OB + BH = 5 ، كأنّ H خارج القطعة [BO] » = point supposé à l'extérieur au lieu d'entre — exactement l'erreur"
+  }
+ ],
+ "note": [
+  "Les trois nouvelles étiquettes (droite-des-milieux-mauvais-cote : 13 Q4, 15 Q3 + 18/07 Q5 + 18/12 Q2 = 4 questions ; milieu-difference-au-lieu-de-somme : 16 Q2 + 6 publiées = 7 questions ; position-relative-ignoree : 18 Q3, 16 Q6 + 08/11 Q4 + 09/09 Q6 = 4 questions) atteignent le seuil de 3 questions distinctes ; les occurrences publiées (« hors_lot ») ont été relues sur origin/main 4f72f94b et exécutent bien l'erreur exacte. Les options de la tranche (« options ») sont muettes dans les fichiers 13-20 tant que les identifiants n'existent pas dans le registre de l'arbre : l'orchestrateur les crée, pose les étiquettes, puis lance les gates.",
+  "Non étiquetables (vérifiés) : 18/12 Q2 option d « IK = AB/2 » — AB n'est pas un côté du triangle ADC où l'on cherche IK (l'explication publiée dit « نصف القاعدة الكبيرة لا الصغيرة » : l'autre base) donc ce n'est pas « la moitié d'un côté qui porte le milieu » ; 18/19 Q3 (OI = 8) est une question numérique sans option (l'erreur AB/2 = 6 n'y figure que dans l'explication).",
+  "math.alg.produit-nul-une-seule-solution (existe sur origin/main, absente de l'arbre) : posée sur 17 Q5 option c « {2} » (un seul facteur annulé) selon l'arbitrage ; la proposition n° 8 de l'audit (produit-nul-un-seul-facteur) est fusionnée dans cet identifiant. 18 Q8 option b a disparu avec la fusion de 18 Q8 + Q9 + Q10. Total publié + lot L12 + L10 : 23 Q8 a, 09/10 Q5 a, 09/14 Q4 b (voir L12.json) + 17 Q5 c.",
+  "Libellés déjà élargis sur origin/main (4f72f94b) et utilisés tels quels dans les fichiers : math.num.operation-inverse-appliquee (division au lieu de multiplication : 18 Q2 a, 18 Q5 c ; soustraction au lieu d'addition : 13 Q3 d, 19 Q1 d, 20 Q1 d…), math.num.racine-distribuee-sur-somme (13 Q2 d, 15 Q1 a), math.int.produit-signes-negatifs (18 Q6 a et b), math.alg.transposition-sans-changer-signe (18 Q7 a). Aucun libelle_a_elargir pour operation-inverse-appliquee (la demande de l'audit est déjà satisfaite).",
+  "Registre (hors lot, signalé par l'audit) : math.vec.repere-calculs a pour prérequis math.vec.somme (vecteurs, hors programme de 9e) — à corriger par l'orchestrateur.",
+  "14 Q4 option a : l'étiquette puissance-de-dix-sens-inverse demandée par l'audit pour l'ancienne option « 0,008 » est sans objet — les anciennes Q4 et Q5 sont fusionnées en une seule question en mètres dont les options (45, 450, 800) n'exécutent pas cette erreur (800 = 8000 ÷ 10 relève de puissance-de-dix-rangs-mal-comptes, déjà posée).",
+  "17 Q3 a muette : erreur de FACTORISATION (9 pris pour b au lieu de 3) — candidate à une étiquette dédiée quand 3 questions la portent"
+ ]
+}
