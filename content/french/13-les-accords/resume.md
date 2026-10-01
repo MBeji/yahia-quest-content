@@ -1,0 +1,7 @@
+# 📜 Résumé : Les accords
+
+- **Adjectifs de couleur** : l'adjectif simple s'accorde (_des capes **rouges**_) ; il reste invariable s'il vient d'un nom commun (_des écharpes **orange**, des babouches **marron**_) ou s'il est complété (_des gilets **bleu foncé**_). _Rose, mauve, pourpre, fauve, écarlate, incarnat_ s'accordent (_des joues **roses**_, mais _des robes **rose pâle**_).
+- **Accord de « tout »** : adjectif indéfini → accord avec le nom qu'il introduit (_**toutes** les filles_) ; pronom indéfini → accord avec le nom qu'il remplace (_**Tous** sont venus._) ; adverbe (= tout à fait) → invariable (_Elles sont **tout** heureuses._), sauf devant un adjectif féminin à consonne ou à h aspiré (_**toutes** surprises, **toutes** honteuses_).
+- **Participe passé avec « avoir » et « être »** : avec _être_, accord avec le sujet (_Mes sœurs sont **arrivées**._) ; avec _avoir_, jamais avec le sujet, mais avec le C.O.D placé avant le verbe (_Les photos que j'ai **prises**_ ; _Ils ont **pris** des photos._).
+- **Participe passé des verbes pronominaux** : accord avec le sujet (_Elles se sont **promenées**._), sauf si le pronom réfléchi est C.O.I, verbe construit avec **à** (_Elles se sont **téléphoné**._ · _Elle s'est **lavé** les mains._).
+- **Accord de « quel »** : adjectif interrogatif ou exclamatif, ou pronom interrogatif devant _être_, il prend le genre et le nombre du nom auquel il se rattache (_**Quelle** belle surprise !_ · _**Quels** sont tes projets ?_).
