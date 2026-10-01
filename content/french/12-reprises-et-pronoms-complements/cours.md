@@ -190,7 +190,7 @@ Le pronom de reprise copie le genre et le nombre du nom repris ; _-ci_ = le dern
 ## 🎯 Les pronoms personnels COD et COI
 
 Après la finale : _« J'ai rencontré la championne. J'ai parlé à la championne. »_ On allège :
-_« Je \**l'\**ai rencontrée. Je **lui** ai parlé. »_
+_« Je **l'ai** rencontrée. Je **lui** ai parlé. »_
 
 Pourquoi _l'_ dans la première phrase et _lui_ dans la seconde, pour la même championne ?
 
@@ -228,7 +228,7 @@ pronom personnel _leur_ est **invariable** : _« Je **leur** parle souvent. »_
 ::: propriete
 C'est la **construction du verbe** qui décide : verbe direct → pronom COD, verbe construit avec
 _à_ + personne → pronom COI. _me, te, nous, vous_ servent pour les deux (_il **nous** regarde_ :
-COD ; _il **nous** parle_ : COI). Cas-limite : on **aide** quelqu'un (COD) → _je \**l'\**aide_, pas
+COD ; _il **nous** parle_ : COI). Cas-limite : on **aide** quelqu'un (COD) → _je **l'aide**_, pas
 _« je lui aide »_ ; on **téléphone à** quelqu'un (COI) → _je **lui** téléphone_.
 :::
 
@@ -238,7 +238,7 @@ gymnaste. »_
 
 ---
 
-_« Le public \**l'\**applaudit puis **lui** offre des fleurs. »_ _Applaudir_ est direct (COD →
+_« Le public **l'applaudit** puis **lui** offre des fleurs. »_ _Applaudir_ est direct (COD →
 _l'_) ; _offrir à_ la gymnaste est indirect (COI → _lui_).
 :::
 
@@ -299,7 +299,7 @@ par _à_ → _y_ ; _de ses découvertes_ est introduit par _de_ → _en_.
 :::
 
 ::: retenir
-_De…_ → _en_ (quantité répétée) ; _à_ + chose → _y_ ; _à_ ou _de_ + personne (_penser à_) →
+_De…_ → _en_ (quantité répétée) ; _à_ + chose → _y_ ; personne après _penser à, se moquer de_ →
 pronom tonique.
 :::
 

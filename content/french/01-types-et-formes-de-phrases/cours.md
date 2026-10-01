@@ -133,7 +133,7 @@ reconnaître la seconde ?
 ::: definition
 À la **forme active**, le sujet **fait** l'action. À la **forme passive**, le sujet **subit**
 l'action : le verbe devient **être + participe passé**, et celui qui agit devient le
-**complément d'agent**, introduit par _par_. (On dit aussi « voix passive ».)
+**complément d'agent**, introduit par _par_ (parfois _de_). (On dit aussi « voix passive ».)
 :::
 
 | Phrase active                                      | Phrase passive                                            |
@@ -179,7 +179,7 @@ rosiers_ ; _le jardinier_ devient complément d'agent après _par_.
 
 ::: retenir
 Forme passive = le sujet subit, le verbe est _être_ (au temps de l'actif) + participe passé, et
-l'agent, s'il est dit, suit _par_.
+l'agent, s'il est dit, suit _par_ (ou _de_).
 :::
 
 ## 📣 Forme neutre et forme emphatique

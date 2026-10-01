@@ -256,7 +256,7 @@ Pourtant ces verbes ont bien un complément. Pourquoi refusent-ils la forme pass
 ::: piege Erreur fréquente
 « _Ressembler à_ n'a pas de passif parce qu'il est intransitif. » ✗ _Ressembler_ a bien un
 complément (_ressembler **à** son père_) : il est **transitif indirect**. ✓ Ce qui bloque le
-passif, c'est l'absence de **COD**, quelle qu'en soit la raison.
+passif, ici, c'est l'absence de **COD** : rien ne peut devenir sujet.
 :::
 
 ::: propriete
@@ -279,8 +279,8 @@ le sens change, la transformation est impossible.
 :::
 
 ::: retenir
-Pas de passif sans COD (verbe transitif indirect, pronominal, intransitif), ni quand le verbe
-change de sens au passif.
+Pas de passif sans COD (verbe transitif indirect, intransitif), ni avec un verbe pronominal, ni
+quand le verbe change de sens au passif.
 :::
 
 ## 🕶️ Taire l'auteur de l'action : quatre constructions
