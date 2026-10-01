@@ -1,0 +1,179 @@
+{
+  "title": "🏛️ مناظرة 2018 (تقني) · التمرين 3 ⭐⭐⭐: مثلّث قائم ومستقيم يوازي الوتر — فيثاغورس وطاليس ومساحتان على سلّم",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 27,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "ABC مثلّث قائم الزاوية في A حيث AB = 6 cm و AC = 8 cm.\nاحسب BC بالصنتمتر، ثمّ اكتب قيمته.\n<svg viewBox=\"0 0 300 240\"><title>المثلّث ABC القائم في A</title><polygon points=\"30,210 30,30 270,210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M30 200 L40 200 L40 210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"30\" cy=\"210\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"30\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"270\" cy=\"210\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19\" y=\"227\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"19\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"281\" y=\"227\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text></g></svg>",
+      "answerKey": {
+        "value": 10,
+        "unit": "cm"
+      },
+      "explanation": "[BC] هو الوتر لأنّه المقابل للزاوية القائمة في A: BC² = AB² + AC² = 36 + 64 = 100، إذن BC = 10 cm ✓. نربّع الطولين ثمّ نأخذ الجذر: لا نجمع الطولين مباشرةً (6 + 8 = 14)، ولا نكتفي بقيمة المربّع 100.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم الزاوية في A، والنقطة E من [AC] والنقطة D من [AB] بحيث (DE) ∥ (BC).\nلماذا تتحقّق المساواة التالية ؟\nAE/AC = AD/AB = DE/CB\n<svg viewBox=\"0 0 300 240\"><title>المثلّث ABC والنقطتان D على [AB] و E على [AC] حيث (DE) يوازي (BC)</title><polygon points=\"30,210 30,30 270,210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M30 75 L210 210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M30 200 L40 200 L40 210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"30\" cy=\"210\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"30\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"270\" cy=\"210\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"75\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"210\" cy=\"210\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19\" y=\"227\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"19\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"281\" y=\"227\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"18\" y=\"80\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"210\" y=\"229\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "لأنّ المستقيمين (DE) و (BC) متوازيان، فالمثلّث ADE تصغير للمثلّث ABC وأطوال أضلاعهما متناسبة"
+        },
+        {
+          "id": "b",
+          "text": "لأنّ D من [AB] و E من [AC] دون شرط آخر، فالمثلّث ADE تصغير للمثلّث ABC وأطوال أضلاعهما متناسبة",
+          "misconceptionTag": "math.geo.thales-sans-verifier-parallelisme"
+        },
+        {
+          "id": "c",
+          "text": "لأنّ هذه المساواة تثبت أنّ (DE) ∥ (BC)، فالمثلّث ADE تصغير للمثلّث ABC وأطوال أضلاعهما متناسبة",
+          "misconceptionTag": "math.geo.thales-reciproque-role"
+        },
+        {
+          "id": "d",
+          "text": "لأنّ المثلّثين ABC و ADE قائمان في A، فالمثلّث ADE تصغير للمثلّث ABC وأطوال أضلاعهما متناسبة"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "(DE) ∥ (BC) مع وقوع D على الضلع [AB] و E على الضلع [AC] هو بالضبط شرط مبرهنة طاليس في المثلّث ABC: يكون ADE تصغيرًا للمثلّث ABC، فتتناسب أطوال أضلاعهما AE/AC = AD/AB = DE/CB ✓. الخطأ الشائع: الاكتفاء بوقوع النقطتين على الضلعين دون التوازي، فقد يكون (DE) مائلًا على (BC) فلا تتناسب الأطوال؛ أو استعمال العكس وهو يستنتج التوازي من تساوي النسب والتوازي هنا معطى؛ أو الظنّ أنّ كلّ مثلّثين قائمين يتناسب أضلاعهما، مع أنّ التناسب هنا نتيجة التوازي لا نتيجة الزاوية القائمة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم الزاوية في A حيث AB = 6 cm و AC = 8 cm، والنقطة E من [AC] حيث CE = 2 cm، والنقطة D من [AB] بحيث (DE) ∥ (BC).\nما طول [AD] بالصنتمتر ؟\n<svg viewBox=\"0 0 300 240\"><title>القطعة [AD] بارزة في الشكل</title><polygon points=\"30,210 30,30 270,210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M30 75 L210 210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M30 210 L30 75\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"4.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M30 200 L40 200 L40 210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"30\" cy=\"210\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"30\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"270\" cy=\"210\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"75\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"210\" cy=\"210\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19\" y=\"227\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"19\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"281\" y=\"227\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"18\" y=\"80\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"210\" y=\"229\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,6"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "c",
+          "text": "4,5"
+        },
+        {
+          "id": "d",
+          "text": "8",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "E من [AC]، فـ AE = AC − CE = 8 − 2 = 6 cm. وبمبرهنة طاليس في المثلّث ABC: AD/AB = AE/AC، أي AD/6 = 6/8 = 3/4، ومنه AD = 6 × 3/4 = 4,5 cm ✓. الخطأ الشائع: مقابلة AE بالوتر BC = 10 بدل الضلع AC، أي AD/AB = AE/BC، فنجد AD = 6 × 6/10 = 3,6؛ أو قلب النسبة فنجد AD = 6 × 8/6 = 8؛ أو مقارنة الفروق بدل النسب فنجد AD = AB − CE = 4.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "ABC مثلّث قائم الزاوية في A حيث AB = 6 cm و AC = 8 cm و BC = 10 cm، والنقطة E من [AC] حيث CE = 2 cm، والنقطة D من [AB] بحيث (DE) ∥ (BC).\nاحسب DE بالسنتمتر، ثمّ اكتب قيمته.\n<svg viewBox=\"0 0 300 240\"><title>القطعة [DE] بارزة في الشكل</title><polygon points=\"30,210 30,30 270,210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M30 75 L210 210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M30 75 L210 210\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"4.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M30 200 L40 200 L40 210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"30\" cy=\"210\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"30\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"270\" cy=\"210\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"75\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"210\" cy=\"210\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19\" y=\"227\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"19\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"281\" y=\"227\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"18\" y=\"80\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"210\" y=\"229\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text></g></svg>",
+      "answerKey": {
+        "value": 7.5,
+        "unit": "cm"
+      },
+      "explanation": "E من [AC]، فـ AE = AC − CE = 8 − 2 = 6 cm. وبمبرهنة طاليس في المثلّث ABC: DE/CB = AE/AC = 6/8 = 3/4، ومنه DE = 10 × 3/4 = 7,5 cm ✓. الخطأ الشائع: استعمال CE بدل AE فيُكتب DE = 10 × 2/8 = 2,5؛ أو مقارنة الأطوال بدل النسب فيُكتب DE = AE = 6 أو DE = BC − CE = 8.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "المثلّث ADE قائم الزاوية في A حيث AD = 4,5 cm و AE = 6 cm.\nاحسب مساحته على التصميم بالسنتمتر المربّع، ثمّ اكتب قيمتها.\n<svg viewBox=\"0 0 300 240\"><title>المثلّث ADE القائم في A داخل المثلّث ABC</title><polygon points=\"30,210 30,75 210,210\" fill=\"#0f6e56\" fill-opacity=\"0.22\" stroke=\"none\"/><polygon points=\"30,210 30,30 270,210\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><polygon points=\"30,210 30,75 210,210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M30 200 L40 200 L40 210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"30\" cy=\"210\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"75\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"210\" cy=\"210\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19\" y=\"227\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"18\" y=\"80\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"210\" y=\"229\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text></g></svg>",
+      "answerKey": {
+        "value": 13.5,
+        "unit": "cm²"
+      },
+      "explanation": "المثلّث ADE قائم في A، فمساحته = (AD × AE)/2 = (4,5 × 6)/2 = 27/2 = 13,5 cm² ✓. الخطأ الشائع: نسيان القسمة على 2 فيُكتب 4,5 × 6 = 27؛ أو أخذ مساحة المثلّث الكبير ABC، (6 × 8)/2 = 24؛ أو جمع الضلعين القائمين بدل ضربهما.",
+      "difficulty": 2,
+      "competencies": [
+        "math.mes.aires"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم الزاوية في A حيث AB = 6 cm و AC = 8 cm، والنقطة E من [AC] والنقطة D من [AB] حيث AD = 4,5 cm و AE = 6 cm. القطعة ECBD هي ما يبقى من المثلّث ABC بعد نزع المثلّث ADE.\nما مساحة ECBD على التصميم بالسنتمتر المربّع ؟\n<svg viewBox=\"0 0 300 240\"><title>القطعة ECBD هي ما يبقى من المثلّث ABC بعد نزع المثلّث ADE</title><polygon points=\"210,210 270,210 30,30 30,75\" fill=\"#0f6e56\" fill-opacity=\"0.22\" stroke=\"none\"/><polygon points=\"30,210 30,30 270,210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M30 75 L210 210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"30\" cy=\"210\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"30\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"270\" cy=\"210\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"75\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"210\" cy=\"210\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19\" y=\"227\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"19\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"281\" y=\"227\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"18\" y=\"80\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"210\" y=\"229\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "37,5"
+        },
+        {
+          "id": "b",
+          "text": "24"
+        },
+        {
+          "id": "c",
+          "text": "17,5"
+        },
+        {
+          "id": "d",
+          "text": "10,5"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "المثلّثان ABC و ADE قائمان في A: مساحة ABC = (6 × 8)/2 = 24 cm² ومساحة ADE = (4,5 × 6)/2 = 13,5 cm². فمساحة ECBD = 24 − 13,5 = 10,5 cm² ✓. الخطأ الشائع: الاكتفاء بمساحة المثلّث الكبير 24 دون نزع ADE؛ أو جمع المساحتين 24 + 13,5 = 37,5 بدل طرحهما؛ أو معاملة ECBD كشبه منحرف ارتفاعه الضلع الجانبي CE = 2 cm فنجد ((7,5 + 10)/2) × 2 = 17,5، مع أنّ CE ليس عموديًّا على القاعدتين.",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.aires",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "على التصميم، المثلّث ADE قائم الزاوية في A حيث AD = 4,5 cm و AE = 6 cm. السلّم هو 1/100، أي أنّ كلّ 1 cm على التصميم يمثّل 100 cm في الواقع.\nما مساحة القطعة الخشبيّة ADE الحقيقيّة بالمتر المربّع ؟\n<svg viewBox=\"0 0 300 240\"><title>القطعة الخشبيّة ADE على التصميم</title><polygon points=\"30,210 30,75 210,210\" fill=\"#0f6e56\" fill-opacity=\"0.3\" stroke=\"none\"/><polygon points=\"30,210 30,75 210,210\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"210\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"75\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"210\" cy=\"210\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19\" y=\"227\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"18\" y=\"80\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"210\" y=\"229\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,135"
+        },
+        {
+          "id": "b",
+          "text": "13,5"
+        },
+        {
+          "id": "c",
+          "text": "27",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        },
+        {
+          "id": "d",
+          "text": "1 350",
+          "misconceptionTag": "math.mes.conversion-aire-facteur-errone"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نحوّل الطولين إلى الواقع: AD = 4,5 × 100 = 450 cm = 4,5 m و AE = 6 × 100 = 600 cm = 6 m. والمثلّث قائم في A، فمساحته الحقيقيّة = (4,5 × 6)/2 = 13,5 m² ✓. الخطأ الشائع: ضرب مساحة التصميم 13,5 cm² في 100 وحده فنجد 1350 cm² أي 0,135 m²؛ أو التحويل إلى المتر المربّع بالقسمة على 100 فنجد 1 350؛ أو نسيان القسمة على 2 فنجد 27.",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.aires",
+        "math.prop.situations"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "على التصميم، مساحة المثلّث ABC هي 24 cm² ومساحة المثلّث ADE هي 13,5 cm²، والقطعة ECBD هي ما يبقى من ABC بعد نزع ADE. السلّم هو 1/100، أي أنّ كلّ 1 cm على التصميم يمثّل 100 cm في الواقع.\nاحسب مساحة القطعة الخشبيّة ECBD الحقيقيّة بالمتر المربّع، ثمّ اكتب قيمتها.\n<svg viewBox=\"0 0 300 240\"><title>القطعة الخشبيّة ECBD على التصميم</title><polygon points=\"210,210 270,210 30,30 30,75\" fill=\"#0f6e56\" fill-opacity=\"0.3\" stroke=\"none\"/><polygon points=\"210,210 270,210 30,30 30,75\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"210\" cy=\"210\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"270\" cy=\"210\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"30\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"75\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"210\" y=\"229\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"281\" y=\"227\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"19\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"18\" y=\"80\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text></g></svg>",
+      "answerKey": {
+        "value": 10.5,
+        "unit": "m²"
+      },
+      "explanation": "مساحة ECBD على التصميم = 24 − 13,5 = 10,5 cm². وكلّ طول يُضرب في 100 فتُضرب المساحة في 100 × 100 = 10 000، أي 10,5 × 10 000 = 105 000 cm². ولمّا كان 1 m² = 10 000 cm² فالمساحة الحقيقيّة = 105 000 ÷ 10 000 = 10,5 m² ✓.",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.aires",
+        "math.prop.situations"
+      ]
+    }
+  ]
+}

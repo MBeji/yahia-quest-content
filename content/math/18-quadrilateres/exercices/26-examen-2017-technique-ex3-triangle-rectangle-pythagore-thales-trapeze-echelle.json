@@ -34,30 +34,13 @@
       ]
     },
     {
-      "prompt": "ABC مثلّث قائم الزاوية في A حيث AB = 4 cm و AC = 3 cm.\nما طول [BC] بالصنتمتر ؟\n<svg viewBox=\"0 0 180 220\"><title>المثلّث ABC القائم في A</title><polygon points=\"150,190 150,30 30,190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M150 179 L139 179 L139 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"150\" cy=\"190\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"30\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"190\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"163\" y=\"206\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"150\" y=\"19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"22\" y=\"206\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text></g></svg>",
-      "options": [
-        {
-          "id": "a",
-          "text": "√7",
-          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
-        },
-        {
-          "id": "b",
-          "text": "5"
-        },
-        {
-          "id": "c",
-          "text": "7",
-          "misconceptionTag": "math.geo.pythagore-sans-carres"
-        },
-        {
-          "id": "d",
-          "text": "25",
-          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
-        }
-      ],
-      "correctOption": "b",
-      "explanation": "[BC] هو الوتر لأنّه المقابل للزاوية القائمة في A: BC² = AB² + AC² = 16 + 9 = 25، إذن BC = 5 cm ✓. الخطأ الشائع: جمع الطولين 4 + 3 = 7 دون تربيعهما؛ أو التوقّف عند 25 ونسيان الجذر؛ أو اعتبار [AB] وترًا فيُطرح المربّعان: √(16 − 9) = √7.",
+      "type": "numeric",
+      "prompt": "ABC مثلّث قائم الزاوية في A حيث AB = 4 cm و AC = 3 cm.\nاحسب BC بالصنتمتر، ثمّ اكتب قيمته.\n<svg viewBox=\"0 0 180 220\"><title>المثلّث ABC القائم في A</title><polygon points=\"150,190 150,30 30,190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M150 179 L139 179 L139 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"150\" cy=\"190\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"30\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"190\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"163\" y=\"206\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"150\" y=\"19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"22\" y=\"206\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text></g></svg>",
+      "answerKey": {
+        "value": 5,
+        "unit": "cm"
+      },
+      "explanation": "[BC] هو الوتر لأنّه المقابل للزاوية القائمة في A: BC² = AB² + AC² = 16 + 9 = 25، إذن BC = 5 cm ✓. نربّع الطولين ثمّ نأخذ الجذر: لا نجمع الطولين مباشرةً (4 + 3 = 7)، ولا نكتفي بقيمة المربّع 25.",
       "difficulty": 1,
       "competencies": [
         "math.geo.pythagore"
@@ -99,7 +82,7 @@
         "value": 12.5,
         "unit": "cm"
       },
-      "explanation": "A بين B و E، فـ BE = BA + AE = 4 + 6 = 10 cm. وبمبرهنة طاليس في المثلّث BDE: BD/BC = BE/BA، أي BD/5 = 10/4 = 2,5، ومنه BD = 5 × 2,5 = 12,5 cm ✓. الخطأ الشائع: قلب النسبة فيُكتب BD = 5 × 4/10 = 2؛ أو مقارنة الفروق بدل النسب فيُكتب BD − BC = BE − BA = 6 فنجد BD = 5 + 6 = 11؛ أو أخذ BE = AE = 6 دون إضافة BA فنجد BD = 5 × 6/4 = 7,5.",
+      "explanation": "A بين B و E، فـ BE = BA + AE = 4 + 6 = 10 cm. وبمبرهنة طاليس في المثلّث BDE: BD/BC = BE/BA، أي BD/5 = 10/4 = 2,5، ومنه BD = 5 × 2,5 = 12,5 cm ✓. الخطأ الشائع: قلب النسبة فيُكتب BD = 5 × 4/10 = 2؛ أو مقارنة الفروق بدل النسب فيُكتب BD − BC = BE − BA = 6 فنجد BD = 5 + 6 = 11؛ أو ضرب النسبة 2,5 في AB بدل BC فنجد BD = 4 × 2,5 = 10.",
       "difficulty": 2,
       "competencies": [
         "math.geo.thales-direct"

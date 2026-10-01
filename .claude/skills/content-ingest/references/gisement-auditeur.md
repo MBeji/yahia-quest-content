@@ -98,3 +98,9 @@ fichier** : l'orchestrateur renvoie les correctifs à l'auteur.
   n'ont pas ; distracteurs tous multiples d'un même nombre que la clé ne partage pas.
 - **Débordement** : les listes d'intervalles passent à la ligne depuis le correctif du moteur
   (les espaces de bord d'une formule sont de la prose) ; ne demande plus une classe par ligne.
+- **Options en paires nues** séparées par la virgule arabe (« −2 ، 3 » face à « 3 ، −2 ») : le sens
+  de lecture choisit la réponse ; exige les valeurs étiquetées. **Ligne de formule seule** (sans mot
+  arabe) que `isDisplayEquation` refuse — produit implicite « AM = 2/3 AB », barres « |x| », chaînes
+  chiffres-lettres — : rends-la dans Chromium `dir=rtl`, elle s'affiche brouillée. **Coche ✓** collée
+  à un distracteur. **Repère** donné sans orientation (unité seule) : la clé n'est unique que par
+  les options.

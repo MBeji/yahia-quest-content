@@ -152,3 +152,15 @@ manquantes, confirmation de la double résolution, résultat des gates pour tes 
   d'examen, cherche dans les missions PUBLIÉES des autres chapitres la même série, la même donnée,
   le même piège. Si elle existe, change l'angle ou écarte la question — deux audits ont écarté 10 Q3
   (rang de la médiane) et 13 Q5 (moyenne pondérée) pour ce seul motif.
+- **Une paire d'options écrite « −2 ، 3 » se lit à l'envers** dans une page RTL (la virgule arabe
+  coupe le segment, les deux nombres se rangent de droite à gauche) : « 3 ، −2 » est alors sa
+  forme renversée et deux options se confondent selon le sens de lecture. Étiquette les valeurs
+  (« xA = −2 ، xB = 3 ») ou écris le couple (x ; y).
+- **Une ligne de formule seule, sans mot arabe, que le moteur ne reconnaît pas comme équation
+  s'affiche brouillée** : produit implicite « AM = 2/3 AB » (écris « AM = 2/3 × AB »), barres de
+  valeur absolue « |x| ≤ 2 », chaînes chiffres-lettres. Pose la formule DANS une phrase qui porte
+  des mots arabes, ou avec un opérateur explicite.
+- **La coche ✓ suit la valeur de la clé, jamais un nombre qui est un distracteur** (« … de
+  تكرار كلّي قدره 20 ✓ » valide l'option 20). Un repère se donne avec son orientation : « النقطة
+  الواحديّة على محور فواصله هي A », pas seulement la longueur unité.
+- **Contrôle mécanique avant de rendre** : `node /tmp/claude-0/-home-user/b03814da-e5f9-5a74-bf03-e7c23b20207a/scratchpad/lint/lot-lint.mjs <tes fichiers .json>` relève, avec le moteur de rendu à jour, les défauts que les audits retrouvaient à la main : rampe qui décroît, clé strictement la plus longue (diacritiques retirés aussi), paire d'options nue à la virgule arabe, ligne de formule seule que le moteur ne pose pas en bloc, coche ✓ collée à un distracteur, option somme ou différence de deux autres, lettre d'option citée. Chaque point est à juger, ce n'est pas un verdict.

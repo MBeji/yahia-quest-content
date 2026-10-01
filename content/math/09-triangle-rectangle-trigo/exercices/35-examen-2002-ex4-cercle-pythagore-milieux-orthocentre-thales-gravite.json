@@ -1,0 +1,355 @@
+{
+  "title": "🏛️ مناظرة 2002 · التمرين 4 ⭐⭐⭐⭐: مسألة دائرة مركزها B — فيثاغورس وعكسه والمستقيم الرابط بين منتصفين والمركز القائم وطاليس ومركز الثقل",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 35,
+  "questions": [
+    {
+      "prompt": "المثلّث ABC قائم في A ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAB = 3\nAC = 4\nنعتبر الدائرة التي مركزها B وتمرّ من النقطة C.\nما شعاعها بالصنتمتر ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "25",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الدائرة مركزها B وتمرّ من C ، فشعاعها هو المسافة BC. والمثلّث ABC قائم في A ووتره [BC] ، فبنظرية فيثاغورس BC² = AB² + AC² = 3² + 4² = 9 + 16 = 25 ، ومنه BC = √25 = 5 cm ✓. الخطأ الشائع: أخذ AB = 3 شعاعًا مع أنّ الدائرة تمرّ من C لا من A ؛ أو جمع الطولين فنجد 3 + 4 = 7 ؛ أو التوقّف عند BC² = 25 ونسيان الجذر.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.geo.cercle"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABC قائم في A ، والدائرة التي مركزها B تقطع المستقيم (AB) في نقطتين E و F ، حيث E من نصف المستقيم [BA) ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAB = 3\nBE = 5\nما طولا القطعتين [AE] و [AF] بالصنتمتر ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "AE = 2 ; AF = 2"
+        },
+        {
+          "id": "b",
+          "text": "AE = 8 ; AF = 2"
+        },
+        {
+          "id": "c",
+          "text": "AE = 2 ; AF = 8"
+        },
+        {
+          "id": "d",
+          "text": "AE = 8 ; AF = 8"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "النقطة E على نصف المستقيم [BA) و BE = 5 أكبر من BA = 3 ، فالنقطة A بين B و E ، ومنه AE = BE − BA = 5 − 3 = 2. أمّا F فهي نقطة التقاطع الأخرى للدائرة مع (AB) ، في الجهة المقابلة لـ E بالنسبة إلى B ، فالنقطة B بين A و F ومنه AF = AB + BF = 3 + 5 = 8 ، أي AE = 2 ; AF = 8 ✓. الخطأ الشائع: تبديل النقطتين فنجد AE = 8 و AF = 2 ؛ أو وضع F في جهة E نفسها فنجد AF = 5 − 3 = 2 هي أيضًا ؛ أو جمع الطولين للنقطتين معًا فنجد AE = 8 و AF = 8.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.cercle"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABC قائم في A ، والنقطة F من المستقيم (AB) ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAF = 8\nAC = 4\nما طول القطعة [CF] بالصنتمتر ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "4√5"
+        },
+        {
+          "id": "b",
+          "text": "12",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "16√5",
+          "misconceptionTag": "math.num.facteur-racine-sans-carre"
+        },
+        {
+          "id": "d",
+          "text": "80",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المثلّث ACF قائم في A لأنّ F من المستقيم (AB) العمودي على (AC) ، ووتره [CF] ، فبنظرية فيثاغورس CF² = AC² + AF² = 16 + 64 = 80. ومنه CF = √80 = √(16 × 5) = 4√5 cm ✓ بإخراج العامل 16 من تحت الجذر بجذره 4. الخطأ الشائع: جمع الطولين فنجد 4 + 8 = 12 ؛ أو التوقّف عند CF² = 80 ؛ أو إخراج 16 دون أخذ جذره فنجد √80 = 16√5.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABC قائم في A ، والنقطتان E و F من المستقيم (AB) ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAE = 2\nAF = 8\nAC = 4\nأيّ مساواة صحيحة لحساب الطول EC بنظرية فيثاغورس ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "EC = AC + AF"
+        },
+        {
+          "id": "b",
+          "text": "EC² = AC² + AF²"
+        },
+        {
+          "id": "c",
+          "text": "EC = AC + AE",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "EC² = AC² + AE²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "[EC] هو وتر المثلّث ACE القائم في A ، فمربّعه مجموع مربّعي الضلعين القائمين [AC] و [AE]: EC² = AC² + AE² = 16 + 4 = 20 ✓. الخطأ الشائع: استعمال الطول AF = 8 بدل AE ، وهو ينتمي إلى المثلّث ACF لا إلى ACE ؛ أو جمع الطولين دون تربيعهما ؛ أو الخطأين معًا.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "في المثلّث EFC نعلم أنّ الأطوال بالصنتمتر هي:\nEC = 2√5\nCF = 4√5\nEF = 10\nما طبيعة المثلّث EFC ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "قائم في E",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "قائم في C"
+        },
+        {
+          "id": "c",
+          "text": "قائم في F",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "d",
+          "text": "ليس قائمًا",
+          "misconceptionTag": "math.num.exposant-porte-sur-un-seul-facteur"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نربّع الأطوال الثلاثة: EC² = (2√5)² = 4 × 5 = 20 و CF² = (4√5)² = 16 × 5 = 80 و EF² = 10² = 100. مربّع الضلع الأطول [EF] وحده في طرف ، و EC² + CF² = 20 + 80 = 100 = EF² ، فبعكس نظرية فيثاغورس المثلّث EFC قائم ووتره [EF] ، أي قائم في C ✓. الخطأ الشائع: تربيع الجذر وحده وترك العامل فنجد (2√5)² = 2 × 5 = 10 و (4√5)² = 4 × 5 = 20 ثمّ 10 + 20 = 30 ≠ 100 ، فيُظنّ المثلّث غير قائم ؛ أو اختيار وتر غير [EF] فيُنسب التعامد إلى الرأس E أو F.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "في المثلّث EFC ، النقطة B منتصف [EF] لأنّ [EF] قطر للدائرة التي مركزها B ، والنقطة K منتصف [CF].\nما الاستنتاج الصحيح بخصوص المستقيمين (BK) و (EC) والطولين BK و EC ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(BK) ∥ (EC) و BK = EC/2"
+        },
+        {
+          "id": "b",
+          "text": "(BK) ∥ (EC) و BK = 2 × EC",
+          "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux"
+        },
+        {
+          "id": "c",
+          "text": "(BK) ⊥ (EC) و BK = EC/2"
+        },
+        {
+          "id": "d",
+          "text": "(BK) ⊥ (EC) و BK = 2 × EC"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "B منتصف [EF] و K منتصف [CF] ، فالمستقيم (BK) يصل بين منتصفي ضلعين في المثلّث EFC ، وهو يوازي حامل الضلع الثالث (EC) وطول القطعة [BK] يساوي نصف طول هذا الضلع: BK = EC/2 ✓. الخطأ الشائع: عكس النسبة فنكتب BK = 2 × EC ، والصواب أنّ القطعة الواصلة بين المنتصفين أقصر من الضلع الثالث ؛ أو الاستنتاج أنّ (BK) عمودي على (EC) ، والخاصية تعطي التوازي لا التعامد.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.thales-reciproque"
+      ]
+    },
+    {
+      "prompt": "في المثلّث EFC القائم في C ، النقطة B منتصف [EF] والنقطة K منتصف [CF] ، والمستقيم (BK) يوازي (EC).\nأيّ خاصية تسمح باستنتاج أنّ (BK) عمودي على (CF) ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "كلّ مستقيمين عموديين على مستقيم واحد متوازيان",
+          "misconceptionTag": "math.geo.regle-perpendiculaire-parallele-inversee"
+        },
+        {
+          "id": "b",
+          "text": "الموسّط الصادر من رأس مثلّث عمودي دائمًا على الضلع المقابل له"
+        },
+        {
+          "id": "c",
+          "text": "المستقيم المارّ من منتصف ضلع عمودي دائمًا على هذا الضلع"
+        },
+        {
+          "id": "d",
+          "text": "كلّ مستقيم عمودي على أحد مستقيمين متوازيين عمودي على الآخر"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(EC) عمودي على (CF) لأنّ المثلّث EFC قائم في C ، و (BK) يوازي (EC). وكلّ مستقيم عمودي على أحد مستقيمين متوازيين يكون عموديًّا على الآخر ، فـ (BK) ⊥ (CF) ✓. الخطأ الشائع: استعمال الخاصية «العموديّان على مستقيم واحد متوازيان» ، وهي تُثبت التوازي لا التعامد ؛ أو اعتبار الموسّط عموديًّا على الضلع المقابل دائمًا ، مع أنّ الموسّط لا يكون ارتفاعًا في مثلّث عمومًا ؛ أو اعتبار كلّ مستقيم مارّ من منتصف ضلع عموديًّا عليه.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.droites-perp-para"
+      ]
+    },
+    {
+      "prompt": "في المثلّث BCF ، النقطتان A و E من المستقيم (BF) ، والمستقيم (BK) عمودي على (CF) في K ، والمستقيم (CA) عمودي على (BF) في A ، ويتقاطع (BK) و (CA) في النقطة H.\nنذكّر بأنّ ارتفاعات أيّ مثلّث تلتقي في نقطة واحدة ، تُسمّى المركز القائم للمثلّث.\nلإثبات أنّ H هو المركز القائم للمثلّث BCF ، أيّ مستقيمين يكفي أن نبيّن أنّهما ارتفاعان فيه ؟\n<svg viewBox=\"0 0 320 276\"><title>المثلّث BCF والمستقيمان (BK) و (CA) المتقاطعان في H</title><polygon points=\"160,118 88,30 280,118\" fill=\"#0f6e56\" fill-opacity=\"0.08\"/><path d=\"M40 118 L160 118\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"160,118 88,30 280,118\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M184 74 L88 250\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M88 30 L88 250\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M179.21 82.78 L188.3 86.95 L193.09 78.17\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M99 118 L99 107 L88 107\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"88\" cy=\"118\" r=\"3.8\"/><circle cx=\"160\" cy=\"118\" r=\"3.8\"/><circle cx=\"88\" cy=\"30\" r=\"3.8\"/><circle cx=\"40\" cy=\"118\" r=\"3.8\"/><circle cx=\"280\" cy=\"118\" r=\"3.8\"/><circle cx=\"184\" cy=\"74\" r=\"3.8\"/><circle cx=\"88\" cy=\"250\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"75\" y=\"111\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"164\" y=\"107\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"88\" y=\"19\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"37\" y=\"138\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"293\" y=\"123\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"197\" y=\"68\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text><text x=\"102\" y=\"255\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(BA) و (CE)"
+        },
+        {
+          "id": "b",
+          "text": "(BK) و (CE)"
+        },
+        {
+          "id": "c",
+          "text": "(BK) و (CA)"
+        },
+        {
+          "id": "d",
+          "text": "(BA) و (CA)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الارتفاع الصادر من رأس هو المستقيم المارّ من هذا الرأس والعمودي على الضلع المقابل. في المثلّث BCF الارتفاع الصادر من B عمودي على (CF) ، وهو (BK) ؛ والارتفاع الصادر من C عمودي على (BF) ، و (BF) هو المستقيم (BA) لأنّ A من (BF) ، فهو (CA). و H نقطة تقاطع هذين الارتفاعين ، فهي المركز القائم للمثلّث BCF ✓. الخطأ الشائع: اعتبار (CE) ارتفاعًا لأنّ E من (BF) ، مع أنّ الارتفاع يجب أن يكون عموديًّا على الضلع ؛ أو أخذ ضلع من المثلّث مكان الارتفاع ، كالمستقيم (BA) الذي هو (BF) نفسه.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "المستقيمان (EB) و (CH) يتقاطعان في النقطة A ، والنقطة A بين E و B وبين C و H ، والمستقيمان (BH) و (EC) متوازيان.\nأيّ مساواة بين النسب صحيحة بنظرية طاليس ؟\n<svg viewBox=\"0 0 320 266\"><title>وضعية الفراشة برأس A: (BH) ∥ (EC)</title><polygon points=\"150,112 106,112 150,24\" fill=\"#0f6e56\" fill-opacity=\"0.1\"/><polygon points=\"150,112 216,112 150,244\" fill=\"#0f6e56\" fill-opacity=\"0.1\"/><path d=\"M106 112 L216 112\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M150 24 L150 244\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M106 112 L150 24\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M216 112 L150 244\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M129.34 76.5 L128 68 L120.4 72.02\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M132.47 70.24 L131.13 61.74 L123.53 65.76\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M184.34 186.5 L183 178 L175.4 182.02\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M187.47 180.24 L186.13 171.74 L178.53 175.76\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"150\" cy=\"112\" r=\"3.8\"/><circle cx=\"106\" cy=\"112\" r=\"3.8\"/><circle cx=\"216\" cy=\"112\" r=\"3.8\"/><circle cx=\"150\" cy=\"24\" r=\"3.8\"/><circle cx=\"150\" cy=\"244\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"137\" y=\"104\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"93\" y=\"117\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"230\" y=\"117\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"150\" y=\"13\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"150\" y=\"266\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "BH/EC = AB/AE"
+        },
+        {
+          "id": "b",
+          "text": "BH/EC = AE/AB",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "c",
+          "text": "BH/EC = AB/EB"
+        },
+        {
+          "id": "d",
+          "text": "BH/EC = AE/EB"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "(EB) و (CH) يتقاطعان في A بين E و B وبين C و H ، و (BH) ∥ (EC) ، فنحن في وضعية الفراشة برأس A: المثلّثان AEC و ABH متقابلان بالرأس A ، و B يقابل E و H يقابل C. فنسب طاليس AB/AE = AH/AC = BH/EC ✓ ، أي BH/EC = AB/AE. الخطأ الشائع: قلب النسبة فنكتب AE/AB ؛ أو استعمال المستقيم الكامل [EB] بدل الجزء [AB] أو [AE] ، فنكتب AB/EB أو AE/EB ، وهي نسب جزء إلى كلّ لا تصلح في وضعية الفراشة.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "المستقيمان (EB) و (CH) يتقاطعان في النقطة A ، والنقطة A بين E و B وبين C و H ، والمستقيمان (BH) و (EC) متوازيان ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAB = 3\nAE = 2\nما العلاقة بين الطولين BH و EC ؟\n<svg viewBox=\"0 0 320 266\"><title>وضعية الفراشة والطولان AB و AE</title><polygon points=\"150,112 106,112 150,24\" fill=\"#0f6e56\" fill-opacity=\"0.1\"/><polygon points=\"150,112 216,112 150,244\" fill=\"#0f6e56\" fill-opacity=\"0.1\"/><path d=\"M106 112 L216 112\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M150 24 L150 244\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M106 112 L150 24\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M216 112 L150 244\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M129.34 76.5 L128 68 L120.4 72.02\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M132.47 70.24 L131.13 61.74 L123.53 65.76\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M184.34 186.5 L183 178 L175.4 182.02\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M187.47 180.24 L186.13 171.74 L178.53 175.76\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"150\" cy=\"112\" r=\"3.8\"/><circle cx=\"106\" cy=\"112\" r=\"3.8\"/><circle cx=\"216\" cy=\"112\" r=\"3.8\"/><circle cx=\"150\" cy=\"24\" r=\"3.8\"/><circle cx=\"150\" cy=\"244\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"137\" y=\"104\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"93\" y=\"117\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"230\" y=\"117\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"150\" y=\"13\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"150\" y=\"266\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"183\" y=\"132\" text-anchor=\"middle\" fill=\"#64748b\">3 cm</text><text x=\"128\" y=\"132\" text-anchor=\"middle\" fill=\"#64748b\">2 cm</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "BH = (3/5) × EC"
+        },
+        {
+          "id": "b",
+          "text": "BH = (2/3) × EC",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "c",
+          "text": "BH = EC + 1",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "d",
+          "text": "BH = (3/2) × EC"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(BH) ∥ (EC) في وضعية الفراشة برأس A ، فبنظرية طاليس BH/EC = AB/AE = 3/2 ، ومنه BH = (3/2) × EC ✓. الخطأ الشائع: قلب النسبة فنجد BH = (2/3) × EC ؛ أو استعمال القطعة الكاملة EB = AE + AB = 5 فنجد BH = (3/5) × EC ؛ أو إضافة الفرق نفسه فنجد BH = EC + (3 − 2) = EC + 1 ، مع أنّ طاليس يعتمد النسب لا الفروق.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ:\nBH = (3/2) × EC\nBK = (1/2) × EC\nما العلاقة بين الطولين BH و BK ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "BH = (1/3) × BK"
+        },
+        {
+          "id": "b",
+          "text": "BH = 3 × BK"
+        },
+        {
+          "id": "c",
+          "text": "BH = (3/4) × BK",
+          "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux"
+        },
+        {
+          "id": "d",
+          "text": "BH = (3/2) × BK"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "من BK = (1/2) × EC نجد EC = 2 × BK ، فنعوّض في الأولى: BH = (3/2) × EC = (3/2) × 2 × BK = 3 × BK ✓. الخطأ الشائع: التعويض EC = BK/2 ، أي عكس معامل النصف ، فنجد BH = (3/2) × (1/2) × BK = (3/4) × BK ؛ أو اعتبار EC = BK فنجد BH = (3/2) × BK ؛ أو قلب العلاقة فنجد BH = (1/3) × BK.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "في المثلّث HEF ، النقطة B منتصف [EF] ، والنقطة G مناظرة النقطة K بالنسبة إلى B ، أي أنّ B منتصف [KG] ، والنقاط K و B و H على استقامة واحدة مع B بين K و H ، ونعلم أنّ BH = 3 × BK.\nما قيمة النسبة HG/HB ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/3",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        },
+        {
+          "id": "b",
+          "text": "1/2",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        {
+          "id": "c",
+          "text": "2/3"
+        },
+        {
+          "id": "d",
+          "text": "4/3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "B منتصف [EF] ، فـ [HB] موسّط في المثلّث HEF. و G مناظرة K بالنسبة إلى B ، فـ BG = BK ، ومع BH = 3 × BK نجد BG = BH/3. وبما أنّ B بين K و H فإنّ G تقع على [BH] من جهة H ، ومنه HG = HB − BG = HB − HB/3 = (2/3) HB ✓. فالنقطة G على الموسّط [HB] عند ثلثيه انطلاقًا من الرأس H ، أي أنّها مركز ثقل المثلّث HEF. الخطأ الشائع: حساب BG/BH = 1/3 بدل HG/HB ، وهو عكس الثلث والثلثين ؛ أو وضع G في منتصف الموسّط فنجد 1/2 ؛ أو وضع G من جهة K بدل جهة H فنجد HG = HB + BG = (4/3) HB.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base"
+      ]
+    }
+  ]
+}

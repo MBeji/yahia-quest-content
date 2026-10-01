@@ -10,11 +10,11 @@ cp $SP/author/exam/assign-L*.md $SP/author/exam/prompt-L*.md $SP/author/exam/pro
 cp $SP/gisement/9eme-math/plan-examens-v6.json $EC/plan/
 cp $SP/author/exam/audit-L*.md $SP/author/exam/reverif-L*.md $EC/audits/ 2>/dev/null
 cp $SP/pending-tags/*.json $EC/etiquettes/
-cp $SP/spec-pub-*.json $SP/mk-pending.py $EC/outils/ 2>/dev/null
+cp $SP/spec-pub-*.json $SP/mk-pending.py $SP/lint/lot-lint.mjs $SP/fix-L08.py $SP/fix-L10.py $EC/outils/ 2>/dev/null
 cp $SP/add-source-line.py $SP/apply-tags.py $SP/gen-spec-lot.py $SP/gen-exam-assign.py $SP/registre-add.py $SP/registre-docs.py $SP/registre-set.py $SP/deliver-lot.sh $SP/gates-summary.sh $SP/fixlib17.py $SP/widen-labels.py $SP/tags-pass2.py $SP/fix-L07.py $SP/spec-pub-L03L04.json $SP/pass2-notes.md $SP/refresh-savepoint.sh $EC/outils/ 2>/dev/null
 cp $SH/.claude/skills/content-ingest/references/gisement-auteur-examen.md $SH/.claude/skills/content-ingest/references/gisement-auditeur.md .claude/skills/content-ingest/references/
 # lots en cours (fichiers d'examen non livrés)
-for spec in "08-thales 13 14 15 16 17 18 19 20" "09-triangle-rectangle-trigo 30 31 32 33 34 35 36 37 38 39 40 41" "12-repere-plan 10 11 12 13 14 15 16 17 18 19 20 21" "18-quadrilateres 22 23 24 25 26 27 28"; do
+for spec in "08-thales 13 14 15 16 17 18 19 20" "09-triangle-rectangle-trigo 30 31 32 33 34 35 36 37 38 39 40 41" "12-repere-plan 16 17 18 19 20 21" "18-quadrilateres 22 23 24 25 26 27 28" "20-orthogonalite-espace 22 23 24 25 26 27"; do
   set -- $spec; ch=$1; shift
   for nn in "$@"; do
     for f in $SH/content/math/$ch/exercices/$nn-examen-*.json; do [ -f "$f" ] && cp "$f" content/math/$ch/exercices/; done

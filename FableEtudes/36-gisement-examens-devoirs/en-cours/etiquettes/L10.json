@@ -90,15 +90,6 @@
    "note": "vérifié sur origin/main 4f72f94b : option muette ; l'explication (« 2,5 نصف AB ، أي نصف ضلع يمرّ من E : الرابط يساوي نصف الضلع الثالث [BC] ») décrit exactement l'erreur"
   },
   {
-   "chapitre": "18-quadrilateres",
-   "file": "12",
-   "q": 2,
-   "opt": "e",
-   "id": "math.geo.droite-des-milieux-mauvais-cote",
-   "texte": "IL = AD/2",
-   "note": "vérifié sur origin/main 4f72f94b : option muette d'une question « multi » ; l'explication (« AD/2 فهو AI ، طول نصف الساق ، لا IL ») = la moitié d'un côté qui porte le milieu I — exactement l'erreur"
-  },
-  {
    "chapitre": "09-triangle-rectangle-trigo",
    "file": "09",
    "q": 8,
@@ -187,6 +178,7 @@
   "Libellés déjà élargis sur origin/main (4f72f94b) et utilisés tels quels dans les fichiers : math.num.operation-inverse-appliquee (division au lieu de multiplication : 18 Q2 a, 18 Q5 c ; soustraction au lieu d'addition : 13 Q3 d, 19 Q1 d, 20 Q1 d…), math.num.racine-distribuee-sur-somme (13 Q2 d, 15 Q1 a), math.int.produit-signes-negatifs (18 Q6 a et b), math.alg.transposition-sans-changer-signe (18 Q7 a). Aucun libelle_a_elargir pour operation-inverse-appliquee (la demande de l'audit est déjà satisfaite).",
   "Registre (hors lot, signalé par l'audit) : math.vec.repere-calculs a pour prérequis math.vec.somme (vecteurs, hors programme de 9e) — à corriger par l'orchestrateur.",
   "14 Q4 option a : l'étiquette puissance-de-dix-sens-inverse demandée par l'audit pour l'ancienne option « 0,008 » est sans objet — les anciennes Q4 et Q5 sont fusionnées en une seule question en mètres dont les options (45, 450, 800) n'exécutent pas cette erreur (800 = 8000 ÷ 10 relève de puissance-de-dix-rangs-mal-comptes, déjà posée).",
-  "17 Q3 a muette : erreur de FACTORISATION (9 pris pour b au lieu de 3) — candidate à une étiquette dédiée quand 3 questions la portent"
+  "17 Q3 a muette : erreur de FACTORISATION (9 pris pour b au lieu de 3) — candidate à une étiquette dédiée quand 3 questions la portent",
+  "18/12 Q2 option e (multi) : NON étiquetée — une étiquette posée sur une option de question `multi` est retirée silencieusement à l'émission SQL (distractor_tags n'existent que pour les QCM) ; droite-des-milieux-mauvais-cote compte quand même 3 questions (13 Q4, 15 Q3, 18/07 Q5)."
  ]
 }
