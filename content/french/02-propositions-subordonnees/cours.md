@@ -13,8 +13,7 @@ et l'autre non ?
 ::: definition
 Une **phrase complexe** contient au moins deux propositions. La **proposition principale** est
 autonome : son sens est complet. La **proposition subordonnée** dépend de la principale et ne
-peut pas se lire seule. Le **subordonnant** est le mot qui les relie et indique la nature de la
-subordonnée.
+peut pas se lire seule. Le **subordonnant** (pronom relatif ou conjonction) ouvre la subordonnée.
 :::
 
 | Rôle        | Définition                                             | Exemple               |
@@ -24,19 +23,15 @@ subordonnée.
 
 ::: exemple trouver la principale en une opération
 
-1. **Repère le subordonnant** : _que, qui, dont, où, quand, parce que, bien que…_ Il ouvre la
+1. **Repère le subordonnant** : _que, qui, dont, où, quand, parce que, pour que…_ Il ouvre la
    subordonnée.
 2. **Supprime la subordonnée en entier**, du subordonnant jusqu'au bout.
-3. **Lis ce qui reste** : _« Je sais. »_ a encore un sens ← c'est la **principale**. Si rien
-   de sensé ne restait, c'est que tu as mal découpé — **parce que** la principale, par
-   définition, survit seule.
+3. **Lis ce qui reste** : _« Je sais. »_ a encore un sens, donc c'est la **principale**, car la
+   principale, par définition, survit seule.
 
 :::
 
-> 🗡️ Le test de suppression marche dans les deux sens : ce qui **disparaît sans détruire la
-> phrase** est subordonné ; ce qui **reste** est principal.
-
-::: piege l'erreur classique
+::: piege Erreur fréquente
 
 Croire que la principale est toujours en tête. _« Quand le soleil se lève, le héros part. »_
 commence par la subordonnée ; la principale est _« le héros part »_. La **position** ne décide
@@ -44,13 +39,19 @@ de rien : seul le test de suppression tranche.
 
 :::
 
+::: propriete
+Une phrase complexe compte **autant de propositions que de verbes conjugués**. Cas-limite : une
+subordonnée peut s'enchâsser dans une autre — _« Je crois que l'ami **qui** m'aide viendra »_
+compte trois propositions, et une seule principale : _« Je crois »_.
+:::
+
 ::: verifie
-Dans _« Bien qu'il soit blessé, il continue de combattre »_, quelle est la principale ?
+Dans _« Comme il pleuvait, Sami prit son parapluie »_, quelle est la principale ?
 
 ---
 
-_« il continue de combattre »_. Le subordonnant est _bien que_ ; supprime tout ce qu'il ouvre
-et il reste une phrase complète. La principale est ici **en seconde position**.
+_« Sami prit son parapluie »_. Le subordonnant est _comme_ ; supprime tout ce qu'il ouvre et il
+reste une phrase complète. La principale est ici **en seconde position**.
 :::
 
 ::: retenir
@@ -58,47 +59,50 @@ La principale survit seule, la subordonnée non — et le test de suppression l'
 sur l'ordre des mots.
 :::
 
-## ⚡ La subordonnée relative
+## ⚡ La subordonnée relative, expansion du nom
 
-Deux phrases : _« Le héros est courageux. »_ et _« Le héros combat le dragon. »_ Tu veux les
-réunir sans répéter _le héros_.
+_« Le héros est courageux. »_ + _« Le héros combat le dragon. »_ = _« Le héros **qui** combat
+le dragon est courageux. »_ Un petit mot a remplacé le second _le héros_.
 
-Tu écris : _« Le héros **qui** combat le dragon est courageux. »_ Le second _le héros_ a disparu,
-remplacé par un mot. Lequel choisir quand la fonction change ?
+Lequel choisir quand la fonction de ce nom change ?
 
 ::: definition
-La **subordonnée relative** qualifie un nom ou un pronom appelé **antécédent**. Elle est
-introduite par un **pronom relatif**, qui remplace l'antécédent **et prend sa fonction** dans
-la subordonnée.
+La **proposition subordonnée relative** est une **expansion du groupe nominal** : elle complète un
+nom appelé **antécédent**. Elle est introduite par un **pronom relatif**, qui reprend
+l'antécédent **et prend sa fonction** dans la subordonnée.
 :::
 
-| Pronom relatif | Fonction dans la subordonnée   | Exemple                                        |
-| -------------- | ------------------------------ | ---------------------------------------------- |
-| **qui**        | sujet                          | Le héros _qui combat_ le dragon est courageux. |
-| **que / qu'**  | COD                            | Le livre _que tu lis_ est passionnant.         |
-| **dont**       | complément introduit par _de_  | L'épée _dont il se sert_ est magique.          |
-| **où**         | complément de lieu ou de temps | La forêt _où il entra_ était sombre.           |
+| Pronom relatif                     | Fonction dans la subordonnée        | Exemple                                |
+| ---------------------------------- | ----------------------------------- | -------------------------------------- |
+| **qui**                            | sujet                               | Le héros _qui combat_ le dragon.       |
+| **que / qu'**                      | COD                                 | Le livre _que tu lis_ est passionnant. |
+| **dont**                           | complément introduit par _de_       | L'épée _dont il se sert_ est magique.  |
+| **où**                             | complément de lieu ou de temps      | La forêt _où il entra_ était sombre.   |
+| préposition + **qui** (_en qui_ …) | complément prépositionnel, personne | Un ami _en qui j'ai confiance_.        |
 
 ::: exemple choisir le pronom relatif en deux étapes
 
 1. **Écris la seconde phrase seule**, avec l'antécédent à sa place : _« il se sert **de
    l'épée** »_.
-2. **Regarde la fonction de l'antécédent** dans cette phrase : il est introduit par _de_ ←
-   donc **dont**. Résultat : _« L'épée **dont** il se sert est magique. »_
-3. **Refais le test avec un autre cas** : _« tu lis **le livre** »_ ← le livre est COD ← donc
-   **que**. _« Le livre **que** tu lis… »_
+2. **Regarde la fonction de l'antécédent** : il est introduit par _de_, donc **dont**, car _dont_
+   reprend un groupe en _de_. Résultat : _« L'épée **dont** il se sert est magique. »_
+3. **Refais le test** : _« j'ai confiance **en** cet ami »_ ; la préposition est _en_ et
+   l'antécédent est une personne, donc **en qui** : _« un ami **en qui** j'ai confiance »_.
 
 :::
 
-> 🛡️ **Astuce** : _dont_ remplace toujours un groupe introduit par _de_. Si tu peux réécrire la
-> subordonnée avec _de_ devant l'antécédent, le pronom est _dont_ — sinon, ce n'est pas lui.
-
-::: piege l'erreur classique
+::: piege Erreur fréquente
 
 Écrire _« la chose **que** j'ai besoin »_. Le calque vient de l'oral, où _dont_ disparaît. Le
-test tranche : on dit _« j'ai besoin **de** la chose »_ ← groupe en _de_ ← _« la chose **dont**
-j'ai besoin »_.
+test tranche : on dit _« j'ai besoin **de** la chose »_, groupe en _de_, donc _« la chose
+**dont** j'ai besoin »_.
 
+:::
+
+::: propriete
+Le pronom relatif se choisit d'après la **construction du verbe** de la subordonnée, jamais
+d'après l'antécédent seul. Cas-limite : _dont_ peut compléter un **nom** — _« le roman **dont**
+les personnages me fascinent »_ = les personnages **de ce roman**.
 :::
 
 ::: verifie
@@ -111,8 +115,8 @@ _« Voici le village **où** je suis né. »_ Dans la seconde phrase, l'antécé
 :::
 
 ::: retenir
-Le pronom relatif prend la fonction de l'antécédent dans la subordonnée — écris la phrase seule
-et la fonction te donne le pronom.
+La relative complète un nom ; le pronom relatif prend la fonction de l'antécédent — écris la
+phrase seule et la construction du verbe te donne le pronom.
 :::
 
 ## 🛡️ L'accord du participe passé avec « que »
@@ -122,34 +126,39 @@ batailles que nous avons **livrées**. »_ Il prend un _es_.
 
 Le verbe est le même, l'auxiliaire aussi. Qu'est-ce qui a changé pour que l'accord apparaisse ?
 
-::: propriete
-Avec l'auxiliaire **avoir**, le participe passé s'accorde avec le **COD** — mais seulement si
-ce COD est placé **avant** le verbe. Dans une relative en _que_, le COD est le pronom _que_,
-donc **toujours avant** : l'accord se fait avec l'**antécédent**.
+::: definition
+Avec l'auxiliaire **avoir**, le participe passé ne s'accorde **jamais avec le sujet**. Il
+s'accorde avec le **COD** lorsque ce COD est placé **avant** le verbe.
 :::
 
 | Phrase                                      | Où est le COD ? | Accord           |
 | ------------------------------------------- | --------------- | ---------------- |
 | _Nous avons livré des batailles._           | après le verbe  | pas d'accord     |
 | _Les batailles **que** nous avons livrées._ | avant (_que_)   | féminin pluriel  |
-| _Les héros **que** j'ai vus._               | avant (_que_)   | masculin pluriel |
+| _Les livres **que** j'ai lus._              | avant (_que_)   | masculin pluriel |
 
 ::: exemple accorder en trois questions
 
-1. **Quel est l'auxiliaire ?** _avoir_ ← l'accord dépend du COD, pas du sujet.
-2. **Où est le COD ?** C'est _que_, et _que_ est toujours placé **avant** le verbe.
-3. **Que reprend _que_ ?** Son antécédent _les batailles_ — féminin pluriel ← participe
-   **livrées**, **parce que** l'accord se fait avec ce que le pronom remplace, non avec le
-   pronom lui-même.
+1. **Quel est l'auxiliaire ?** _avoir_, donc l'accord dépend du COD, pas du sujet.
+2. **Où est le COD ?** C'est _que_, placé **avant** le verbe, car le pronom relatif ouvre la
+   subordonnée.
+3. **Que reprend _que_ ?** Son antécédent _les batailles_ — féminin pluriel, donc **livrées**,
+   car l'accord se fait avec ce que le pronom remplace.
 
 :::
 
-::: piege l'erreur classique
+::: piege Erreur fréquente
 
 Accorder avec le sujet : _« Les batailles que nous avons **livrés** »_ en pensant à _nous_. Avec
-_avoir_, le sujet n'entre jamais dans l'accord ; c'est le COD antéposé qui commande — ici
+_avoir_, le sujet n'entre jamais dans l'accord ; c'est le COD placé avant qui commande — ici
 _les batailles_.
 
+:::
+
+::: propriete
+Dans une relative en _que_ avec _avoir_, le participe s'accorde avec l'**antécédent**.
+Cas-limite : dans une relative en _qui_, il n'y a pas de COD placé avant — _« les soldats
+**qui** ont **livré** bataille »_ : pas d'accord.
 :::
 
 ::: verifie
@@ -158,12 +167,12 @@ Accorde : _« Les lettres que j'ai (écrire) hier. »_
 ---
 
 _« Les lettres que j'ai **écrites** hier. »_ Auxiliaire _avoir_, COD _que_ placé avant,
-antécédent _les lettres_ (féminin pluriel) ← _écrites_.
+antécédent _les lettres_ (féminin pluriel), donc _écrites_.
 :::
 
 ::: retenir
 Avec _avoir_, le participe s'accorde avec le COD placé avant — et dans une relative en _que_,
-ce COD est l'antécédent.
+ce COD reprend l'antécédent.
 :::
 
 ## 🔮 La subordonnée complétive
@@ -171,37 +180,31 @@ ce COD est l'antécédent.
 _« Je crois que le héros vaincra. »_ Remplace toute la subordonnée par un seul mot : _« Je crois
 **cela**. »_ La phrase tient toujours.
 
-Essaie le même remplacement dans _« Le héros **qui** combat est courageux »_ : impossible. Les
-deux subordonnées commencent pourtant par un mot très proche. Qu'est-ce qui les sépare ?
+Essaie le même remplacement dans _« Le héros **qui** combat est courageux »_ : impossible. Et
+pourquoi dit-on _« je crois qu'il **vient** »_ mais _« je veux qu'il **vienne** »_ ?
 
 ::: definition
 La **subordonnée complétive** est **COD du verbe principal**. Elle est introduite par la
-**conjonction de subordination** _que_, et peut se remplacer par un groupe nominal ou par le
-pronom _cela_.
+**conjonction de subordination** _que_, et peut se remplacer par _cela_.
 :::
 
-| Subordonnée            | Introduite par       | Remplaçable par _cela_ ? | Fonction          |
-| ---------------------- | -------------------- | ------------------------ | ----------------- |
-| _que le héros vaincra_ | conjonction _que_    | oui                      | COD du verbe      |
-| _qui combat le dragon_ | pronom relatif _qui_ | non                      | complément du nom |
-| _que tu lis_           | pronom relatif _que_ | non                      | complément du nom |
+| Verbe de la principale                                    | Mode de la complétive   | Exemple                             |
+| --------------------------------------------------------- | ----------------------- | ----------------------------------- |
+| déclaration, opinion affirmative (_dire, penser, croire_) | indicatif               | _Je pense qu'il **viendra**._       |
+| volonté, sentiment, doute, possibilité                    | subjonctif              | _Je veux qu'il **vienne**._         |
+| opinion à la forme négative ou interrogative              | indicatif ou subjonctif | _Je ne pense pas qu'il **vienne**._ |
 
 ::: exemple distinguer le « que » conjonction du « que » relatif
 
-1. **Remplace la subordonnée par _cela_** : _« Je crois cela. »_ fonctionne ← c'est une
+1. **Remplace la subordonnée par _cela_** : _« Je crois cela. »_ fonctionne, donc c'est une
    **complétive**, et _que_ est une conjonction.
 2. **Si le remplacement échoue**, cherche l'**antécédent** : dans _« le livre que tu lis »_,
-   _que_ reprend _le livre_ ← c'est un **pronom relatif**.
-3. **Retiens la différence de fond** : le _que_ relatif **remplace un nom** et a une fonction
-   dans la subordonnée ; le _que_ conjonction ne remplace rien, il **soude** seulement.
+   _que_ reprend _le livre_, donc c'est un **pronom relatif**.
+3. **Choisis le mode** : _croire_ affirmatif présente un fait tenu pour vrai, donc indicatif.
 
 :::
 
-> 💡 La complétive répond à la question « **quoi ?** » posée après le verbe principal. Verbes
-> introducteurs fréquents : _dire, penser, croire, savoir, espérer, vouloir, sentir, voir,
-> comprendre_.
-
-::: piege l'erreur classique
+::: piege Erreur fréquente
 
 Analyser la complétive comme une relative parce qu'elle commence par _que_. Le mot est le même,
 la nature est différente : cherche un **antécédent**. S'il n'y en a pas, _que_ est une
@@ -209,229 +212,355 @@ conjonction.
 
 :::
 
-::: verifie
-Dans _« J'espère que tu viendras »_, quelle est la nature de _que_ et la fonction de la
-subordonnée ?
-
----
-
-_que_ est une **conjonction de subordination** (elle ne reprend aucun nom), et la subordonnée
-est **COD** du verbe _espère_ : _« J'espère cela. »_
-:::
-
-::: retenir
-La complétive est COD et se remplace par _cela_ ; la relative qualifie un nom et a un
-antécédent — le mot _que_ ne dit rien à lui seul.
-:::
-
-## ⏱️ La subordonnée circonstancielle de temps
-
-_« Le héros part. »_ Quand ? Tu ajoutes : _« Quand le soleil se lève, le héros part. »_ La
-subordonnée ne complète aucun nom et n'est pas COD : elle situe l'action **dans le temps**.
-
-Mais entre _avant que_, _après que_ et _dès que_, le choix change aussi le **mode** du verbe.
-Pourquoi ?
-
-::: definition
-La **subordonnée circonstancielle de temps** indique **quand** se déroule l'action principale.
-Sa conjonction précise le rapport : simultanéité, antériorité ou postériorité.
-:::
-
-| Conjonction                  | Nuance                     | Exemple                                       |
-| ---------------------------- | -------------------------- | --------------------------------------------- |
-| **quand / lorsque**          | simultanéité, postériorité | _Quand le soleil se lève_, le héros part.     |
-| **avant que** (+ subjonctif) | antériorité                | _Avant qu'il parte_, elle lui remet l'épée.   |
-| **après que** (+ indicatif)  | postériorité               | _Après qu'il eut vaincu_, la foule l'acclama. |
-| **dès que / aussitôt que**   | simultanéité immédiate     | _Dès qu'il arriva_, le combat commença.       |
-| **pendant que / tandis que** | simultanéité               | _Pendant qu'il dort_, les ennemis avancent.   |
-
-::: exemple pourquoi « avant que » veut le subjonctif et « après que » l'indicatif
-
-1. **_Après qu'il eut vaincu_** : au moment où l'on parle, la victoire **a eu lieu** — c'est un
-   fait ← **indicatif**.
-2. **_Avant qu'il parte_** : au moment où elle lui remet l'épée, le départ **n'a pas encore eu
-   lieu** — il est envisagé, non réalisé ← **subjonctif**.
-3. **La règle générale derrière** : l'indicatif énonce le réel, le subjonctif l'envisagé. Le
-   mode suit donc la **réalité** du fait au moment repéré, pas le caprice de la conjonction.
-
-:::
-
-::: piege l'erreur classique
-
-Mettre le subjonctif après _après que_ par symétrie avec _avant que_ : _« après qu'il **soit**
-parti »_. L'erreur est si répandue qu'on l'entend partout, mais le fait est accompli : _« après
-qu'il **est** parti »_.
-
+::: propriete
+Le mode de la complétive dépend du **verbe de la principale**. Cas-limite : avec une opinion
+**niée ou interrogée**, les deux modes sont possibles — _« Crois-tu qu'il **viendra** ? »_
+(simple question) / _« Crois-tu qu'il **vienne** ? »_ (doute).
 :::
 
 ::: verifie
-Complète : _« … qu'il ait terminé, il rangera ses affaires. »_ — _avant_ ou _après_ ?
+Dans _« Il faut que tu partes »_, quelle est la nature de _que_ et pourquoi _partes_ ?
 
 ---
 
-**_Avant_** : le subjonctif _ait terminé_ signale un fait **non encore accompli** au repère.
-Avec _après_, il aurait fallu l'indicatif : _« Après qu'il aura terminé… »_
+_que_ est une **conjonction** (aucun antécédent) ; la complétive est COD de _il faut_. _Il
+faut_ exprime une **volonté**, une obligation : le verbe passe au **subjonctif**.
 :::
 
 ::: retenir
-La circonstancielle de temps situe l'action ; _avant que_ envisage donc subjonctif, _après que_
-constate donc indicatif.
+La complétive est COD et se remplace par _cela_ ; son mode dépend du verbe principal : opinion
+affirmée → indicatif, volonté ou sentiment → subjonctif.
 :::
 
-## 🔥 La subordonnée circonstancielle de cause
+## 🕰️ Le complément circonstanciel de temps : six façons de dire « quand »
 
-Trois façons de dire pourquoi : _« Il a gagné **parce qu'il** s'était entraîné. »_ · _« **Puisque**
-tu es là, commençons. »_ · _« **Comme** il pleuvait, il prit son bouclier. »_
+Compare : _« **Quand tu rentreras**, tu achèteras du pain. »_ et _« Tu achèteras du pain **en
+rentrant**. »_ L'information est la même.
 
-Les trois donnent une cause. Elles ne sont pourtant pas interchangeables. Qu'est-ce qui les
-distingue ?
+La première phrase est complexe, la seconde simple. Combien de formes peut prendre un complément
+de temps, et lesquelles ne sont pas des propositions ?
 
 ::: definition
-La **subordonnée circonstancielle de cause** explique **pourquoi** se produit l'action
-principale. Ses conjonctions se distinguent par ce que **l'interlocuteur sait déjà** et par la
-place de la subordonnée.
+Le **complément circonstanciel de temps** situe une action à un **moment**, en indique la
+**durée** ou en marque la **répétition**. Il appartient à six classes grammaticales.
 :::
 
-| Conjonction   | Nuance                                        | Exemple                                        |
-| ------------- | --------------------------------------------- | ---------------------------------------------- |
-| **parce que** | cause nouvelle, apportée comme information    | _Il a gagné **parce qu'il** s'était entraîné._ |
-| **puisque**   | cause **déjà connue** des deux interlocuteurs | _**Puisque** tu es là, commençons._            |
-| **comme**     | cause, et la subordonnée est **en tête**      | _**Comme** il pleuvait, il prit son bouclier._ |
+| Classe                          | Exemple                                |
+| ------------------------------- | -------------------------------------- |
+| adverbe                         | _Jadis_, _bientôt_, _quelquefois_      |
+| GN, avec ou sans préposition    | _Un beau jour_, _dans trois minutes_   |
+| infinitif après une préposition | _Avant de partir_, _après avoir mangé_ |
+| gérondif                        | _en rentrant_                          |
+| proposition participiale        | _Le travail fini_, allez jouer dehors. |
+| subordonnée conjonctive         | _Depuis qu'elle fréquente l'école_ …   |
+
+::: exemple trouver la classe de « Le travail fini, allez jouer dehors. »
+
+1. **Le groupe répond-il à « quand ? »** Oui : allez jouer **quand** le travail est fini.
+2. **A-t-il un verbe conjugué ?** Non, _fini_ est un participe, donc pas de subordonnée.
+3. **A-t-il son propre sujet ?** Oui, _le travail_, donc c'est une **proposition
+   participiale**, car le participe y a un sujet distinct de celui de la principale.
+
+:::
+
+::: piege Erreur fréquente
+
+Prendre _« avant de partir »_ pour une subordonnée. Sans verbe conjugué, il n'y a pas de
+proposition : c'est un **infinitif introduit par une préposition**. La subordonnée serait
+_« avant **que** tu **partes** »_.
+
+:::
+
+::: propriete
+On passe souvent de la phrase complexe à la phrase simple : _« Après qu'il a mangé, il sort »_
+→ _« Après avoir mangé, il sort »_. Cas-limite : l'infinitif et le gérondif exigent **le même
+sujet** que la principale ; avec deux sujets différents, il faut la subordonnée.
+:::
+
+::: verifie
+Quelle est la classe de _« tous les matins »_ dans _« Il court tous les matins »_, et quel sens
+a-t-il ?
+
+---
+
+Un **GN sans préposition** ; il marque la **répétition** de l'action, pas un moment unique.
+:::
+
+::: retenir
+Le CC de temps dit le moment, la durée ou la répétition, sous six formes — dont une seule est
+une subordonnée.
+:::
+
+## ⏱️ La subordonnée circonstancielle de temps : avant, pendant, après
+
+Dans un conte : _« Le petit dindon s'est mis à chanter **après que tout le monde s'était
+endormi**. »_ Deux actions : s'endormir, chanter.
+
+Laquelle a lieu d'abord ? Et comment nomme-t-on ce rapport, puisque le subordonnant change aussi
+le **mode** du verbe ?
+
+::: definition
+La **subordonnée circonstancielle de temps** exprime un **rapport temporel** entre l'action de
+la principale et celle de la subordonnée : **antériorité**, **simultanéité** ou
+**postériorité**. Le rapport se lit **du côté de la principale**.
+:::
+
+| Rapport (action principale…)     | Subordonnants                                          | Mode       |
+| -------------------------------- | ------------------------------------------------------ | ---------- |
+| **Antériorité** (avant)          | avant que, jusqu'à ce que, en attendant que            | subjonctif |
+| **Simultanéité** (en même temps) | au moment où, pendant que, tandis que, chaque fois que | indicatif  |
+| **Postériorité** (après)         | après que, depuis que, dès que, aussitôt que           | indicatif  |
+
+::: exemple classer « Afrique déchargeait les dromadaires aussitôt que la caravane arrivait. »
+
+1. **Repère le subordonnant** : _aussitôt que_.
+2. **Ordonne les actions** : la caravane arrive d'abord, le déchargement suit.
+3. **Nomme le rapport depuis la principale** : décharger vient **après** arriver, donc
+   **postériorité**, car le tableau parle toujours de l'action principale.
+4. **Vérifie le mode** : postériorité, donc indicatif (_arrivait_), car l'arrivée est un fait réel.
+
+:::
+
+::: piege Erreur fréquente
+
+Classer _dès que_ ou _aussitôt que_ en simultanéité parce que tout va « très vite ». Les deux
+actions **se suivent** : _« Dès qu'il arriva, le combat commença »_ — l'arrivée d'abord, le
+combat ensuite. C'est une **postériorité** (immédiate), pas une simultanéité.
+
+:::
+
+::: propriete
+Antériorité → subjonctif, car l'action de la subordonnée n'est pas encore réalisée ;
+simultanéité et postériorité → indicatif, car elle est réelle. Cas-limite : _après que_ veut
+l'indicatif malgré la symétrie avec _avant que_ — _« après que le film **finit** »_, jamais
+_« finisse »_. Et le _ne_ d'_« avant qu'il **ne** parte »_ ne nie rien.
+:::
+
+::: verifie
+Complète : _« Ils resteront éveillés jusqu'à ce qu'il (faire) jour. »_ Quel rapport ?
+
+---
+
+_« jusqu'à ce qu'il **fasse** jour »_ : la veille dure **avant** le lever du jour, donc
+**antériorité**, et le verbe de la subordonnée est au **subjonctif**.
+:::
+
+::: retenir
+Le rapport se lit depuis la principale : avant que (antériorité, subjonctif) ; pendant que
+(simultanéité) ; après que, dès que, aussitôt que (postériorité, indicatif).
+:::
+
+## 🔥 L'expression de la cause
+
+_« Il est resté chez lui **à cause de** la pluie. »_ · _« Il est resté chez lui \**parce qu'\**il
+pleuvait. »_ · _« Il a raté le bus, **sous prétexte que** son réveil n'a pas sonné. »_
+
+Les trois donnent une cause, avec ou sans verbe conjugué. Qu'est-ce qui les distingue ?
+
+::: definition
+La **cause** explique **pourquoi** l'action se produit. Dans la **phrase simple**, elle est un
+**CC de cause** introduit par une locution prépositive ; dans la **phrase complexe**, c'est une
+**subordonnée circonstancielle de cause**, à l'indicatif.
+:::
+
+| Outil                               | Nuance                                   |
+| ----------------------------------- | ---------------------------------------- |
+| **à cause de** + nom                | la conséquence est jugée négative        |
+| **grâce à** + nom                   | la conséquence est jugée positive        |
+| **faute de** + nom ou infinitif     | on souligne un manque                    |
+| **à force de** + nom ou infinitif   | la cause est répétée ou intense          |
+| **parce que**                       | cause que l'interlocuteur ne connaît pas |
+| **puisque, comme, étant donné que** | cause connue ou censée l'être            |
+| **sous prétexte que**               | cause jugée fausse par celui qui parle   |
 
 ::: exemple choisir entre « parce que » et « puisque »
 
-1. **Demande-toi si ton interlocuteur connaît déjà la cause.** S'il l'ignore, tu la lui
-   apprends ← **parce que**.
-2. **S'il la connaît** — il est devant toi, tu la constates avec lui — tu ne l'informes pas, tu
-   t'appuies dessus ← **puisque**.
-3. **Teste sur l'exemple** : _« Puisque tu es là »_ — il sait bien qu'il est là ; _« parce que
-   tu es là »_ sonnerait comme si on le lui apprenait, **et c'est pourquoi** l'oreille refuse.
+1. **Demande-toi si l'interlocuteur connaît la cause.** S'il l'ignore, tu la lui apprends, donc
+   **parce que**.
+2. **S'il la connaît** : _« **Puisque** tu as fini, tu peux sortir »_ — il sait qu'il a fini,
+   donc **puisque**, car on s'appuie sur une cause connue.
+3. **Place _comme_ en tête** : _« **Comme** il pleuvait, il resta »_, car _comme_ causal ouvre la
+   phrase.
 
 :::
 
-::: piege l'erreur classique
+::: piege Erreur fréquente
 
-Placer _comme_ ailleurs qu'en tête : _« Il prit son bouclier comme il pleuvait. »_ Dans cette
-position, _comme_ bascule vers la comparaison ou le temps, et la cause se perd. La place fait
-partie de la conjonction.
+Écrire _« Il a réussi **à cause de** son travail »_. _À cause de_ annonce une suite jugée
+négative ; pour un succès, on dit _« **grâce à** son travail »_.
 
+:::
+
+::: propriete
+La subordonnée de cause est toujours à l'**indicatif**, car la cause est présentée comme un
+fait. Cas-limite : _sous prétexte que_ garde l'indicatif même quand la cause est jugée fausse —
+c'est le locuteur qui doute, pas le mode.
 :::
 
 ::: verifie
-_« … tu as fini ton travail, tu peux sortir. »_ — _parce que_ ou _puisque_ ?
+_« … de temps, il n'a pas fini son devoir. »_ — _à cause de_, _faute de_ ou _grâce à_ ?
 
 ---
 
-**_Puisque_** : la fin du travail est un fait que les deux interlocuteurs constatent ensemble.
-_Parce que_ présenterait cette fin comme une information nouvelle, ce qu'elle n'est pas.
+**_Faute de_** temps : on souligne un **manque**, et le nom suit sans déterminant.
 :::
 
 ::: retenir
-La cause change de conjonction selon ce que sait l'interlocuteur : _parce que_ informe,
-_puisque_ s'appuie sur du connu, _comme_ ouvre la phrase.
+Cause : à cause de, grâce à, faute de, à force de (phrase simple) ; parce que, puisque, comme,
+sous prétexte que + indicatif (phrase complexe).
 :::
 
-## 💥 Conséquence et but : le résultat atteint contre le résultat visé
+## 💥 L'expression de la conséquence
 
-Compare : _« Il s'entraîna **si bien que** nul ne pouvait le battre. »_ et _« Il s'entraîne
-**pour que** son équipe **gagne**. »_
+_« Il a couru, \**si bien qu'\**il est arrivé à l'heure. »_ et _« Il courait \**si vite qu'\**on ne le
+voyait plus. »_ Les deux annoncent un résultat.
 
-Dans les deux, quelque chose suit l'entraînement. Mais dans la première, c'est arrivé ; dans la
-seconde, c'est seulement espéré — et le verbe change de mode.
+Mais dans la seconde, le résultat vient d'un **degré** : _si vite_. Le manuel sépare-t-il ces
+deux constructions ?
 
 ::: definition
-La **circonstancielle de conséquence** exprime un résultat **atteint** : elle se met à
-l'**indicatif**.
-La **circonstancielle de but** exprime un résultat **visé**, donc non encore réalisé : elle se
-met au **subjonctif**.
+La **conséquence** est le **résultat atteint** d'une action. Dans la **phrase simple** :
+_trop… pour_, _de façon à_, _au point de_ + infinitif. Dans la **phrase complexe** : une
+**subordonnée circonstancielle de conséquence**, à l'indicatif.
 :::
 
-| Type        | Conjonctions                                       | Mode       | Exemple                                                     |
-| ----------- | -------------------------------------------------- | ---------- | ----------------------------------------------------------- |
-| Conséquence | si bien que, de sorte que, tellement… que, si… que | Indicatif  | _Il était **tellement** rapide **qu'on** ne le voyait pas._ |
-| But         | pour que, afin que, de peur que                    | Subjonctif | _Il s'entraîne **pour que** son équipe **gagne**._          |
+| Construction                                | Subordonnants                             | Exemple                                          |
+| ------------------------------------------- | ----------------------------------------- | ------------------------------------------------ |
+| conséquence **pure et simple**              | de sorte que, de manière que, si bien que | _Il a plu, **si bien que** la route est coupée._ |
+| conséquence liée à un **degré d'intensité** | tellement… que, si… que, à tel point que  | _Il était **tellement** las \**qu'\**il dormit._ |
 
-::: exemple le mode se déduit de la réalité du fait
+::: exemple classer « Il était si fatigué qu'il s'endormit en classe. »
 
-1. **_si bien que nul ne pouvait le battre_** : personne ne le battait — c'est un fait constaté
-   ← **indicatif**.
-2. **_pour que son équipe gagne_** : l'équipe n'a pas encore gagné, c'est le but poursuivi ←
-   **subjonctif**.
-3. **Le même test qu'au temps** : demande-toi si le fait **a eu lieu**. Oui ← indicatif. Non,
-   seulement visé ← subjonctif. **Parce que** c'est toujours la réalité du fait qui commande le
-   mode, jamais la conjonction seule.
+1. **Repère l'outil** : _si… que_, en deux morceaux.
+2. **Cherche le degré** : _si_ porte sur l'adjectif _fatigué_, donc la conséquence découle d'une
+   **intensité**.
+3. **Conclus** : conséquence **liée à un degré d'intensité**, à l'indicatif, car le sommeil a
+   réellement eu lieu.
 
 :::
 
-> 🎯 **_De peur que_** ajoute un _ne_ dit **explétif**, qui ne nie rien : _« Elle chuchote **de
-> peur qu'on ne l'entende**. »_ Elle craint qu'on l'entende, et non le contraire.
+::: piege Erreur fréquente
 
-::: piege l'erreur classique
+Confondre _si bien que_ (un seul bloc, conséquence pure) et _si… que_ (_si_ + adjectif ou
+adverbe, intensité). Dans _« il a couru, si bien qu'il est arrivé »_, _si_ ne porte sur aucun
+mot : pas d'intensité.
 
-Lire le _ne_ explétif comme une négation et comprendre l'inverse de la phrase. _« de peur qu'on
-ne l'entende »_ signifie « pour qu'on ne l'entende pas » : le _ne_ est une trace ancienne, sans
-valeur négative.
+:::
 
+::: propriete
+La conséquence se met à l'**indicatif** : le résultat est présenté comme réel. Cas-limite : en
+phrase simple, _trop… pour_ annonce un résultat **empêché** — _« Il est **trop** fatigué
+**pour** sortir »_ : il ne sort pas.
 :::
 
 ::: verifie
-Conséquence ou but : _« Parle plus fort afin que tout le monde t'entende. »_ ?
+_« Elle a tellement travaillé qu'elle a obtenu la meilleure note »_ — pure ou intense ?
 
 ---
 
-**But** : _afin que_ + subjonctif _entende_, et le fait n'est pas réalisé — c'est ce qu'on
-cherche à obtenir. Une conséquence donnerait : _« Il parla si fort que tout le monde
-l'entendit. »_
+**Liée à un degré d'intensité** : _tellement_ mesure la quantité de travail, et la conséquence
+découle de ce degré.
 :::
 
 ::: retenir
-Conséquence = résultat atteint = indicatif ; but = résultat visé = subjonctif — et le _ne_ de
-_de peur que_ ne nie rien.
+Conséquence = résultat atteint, à l'indicatif : pure (si bien que, de sorte que) ou liée à une
+intensité (tellement… que, si… que).
+:::
+
+## 🎯 L'expression du but
+
+_« Il s'entraîne **pour gagner**. »_ et _« Il s'entraîne **pour que** son équipe **gagne**. »_
+Le même but, deux constructions.
+
+Pourquoi l'infinitif dans la première, une subordonnée au subjonctif dans la seconde ?
+
+::: definition
+Le **but** est ce que l'on cherche à **atteindre ou à éviter**. Dans la **phrase simple** :
+_pour, afin de, de peur de, de crainte de_ + infinitif. Dans la **phrase complexe** : _pour que,
+afin que, de peur que, de crainte que_ + **subjonctif**.
+:::
+
+| Phrase   | Sujets            | Exemple                                            |
+| -------- | ----------------- | -------------------------------------------------- |
+| simple   | **le même** sujet | _**Il** s'entraîne **pour gagner**._               |
+| complexe | **deux** sujets   | _**Il** s'entraîne **pour que son équipe gagne**._ |
+
+::: exemple relier « Il parle bas. » + « On ne doit pas l'entendre. »
+
+1. **Les sujets sont-ils les mêmes ?** _il_ et _on_ : deux sujets, donc subordonnée.
+2. **Le but est-il à atteindre ou à éviter ?** À éviter, donc _de peur que_.
+3. **Mets le subjonctif**, car le but n'est pas encore réalisé : _« Il parle bas **de peur
+   qu'on ne l'entende**. »_
+
+:::
+
+::: piege Erreur fréquente
+
+Écrire _« Je révise **pour que je réussisse** »_. Le sujet est le même : la phrase simple
+s'impose, _« Je révise **pour réussir** »_.
+
+:::
+
+::: propriete
+Le but est toujours au **subjonctif**, car il est visé, non réalisé. Cas-limite : après _de peur
+que_ et _de crainte que_, le _ne_ est **explétif** — sans _pas_, il ne nie rien : _« de peur
+qu'on ne l'entende »_ = il craint qu'on l'entende.
+:::
+
+::: verifie
+Transforme en phrase simple : _« Elle se lève tôt pour qu'elle ne rate pas le bus. »_
+
+---
+
+_« Elle se lève tôt **pour ne pas rater** le bus. »_ (ou _de peur de rater_) : un seul sujet,
+_elle_, donc l'infinitif.
+:::
+
+::: retenir
+But = résultat visé : même sujet → pour, afin de + infinitif ; deux sujets → pour que,
+afin que + subjonctif ; le _ne_ de _de peur que_ ne nie rien.
 :::
 
 ## 🌀 La subordonnée circonstancielle de condition
 
-_« Si tu t'entraînes, tu vaincras. »_ · _« Si tu t'entraînais, tu vaincrais. »_ · _« Si tu
-t'étais entraîné, tu aurais vaincu. »_
+_« Si j'ai le temps, je viendrai. »_ · _« Si j'avais le temps, je viendrais. »_ · _« Si j'avais
+eu le temps, je serais venu. »_
 
-Trois degrés : le possible, l'éventuel, le regret. Et à chaque fois, **deux** verbes changent
-ensemble. Quelle est la règle qui les apparie ?
+Trois manières d'envisager la même visite, et à chaque fois **deux** verbes changent ensemble.
+Quelle règle les apparie ?
 
 ::: definition
-La **circonstancielle de condition** pose une condition dont dépend l'action principale. Avec
-_si_, le temps de la subordonnée et celui de la principale forment un **couple fixe** : à chaque
-temps de la subordonnée correspond un seul temps possible dans la principale.
+La **subordonnée de condition** introduite par **si** pose une condition dont dépend l'action
+principale. Le temps de la subordonnée commande celui de la principale.
 :::
 
-| Subordonnée (après _si_) | Principale           | Valeur           | Exemple                                         |
-| ------------------------ | -------------------- | ---------------- | ----------------------------------------------- |
-| présent                  | futur                | réel, possible   | _Si tu t'entraînes_, tu **vaincras**.           |
-| imparfait                | conditionnel présent | éventuel         | _Si tu t'entraînais_, tu **vaincrais**.         |
-| plus-que-parfait         | conditionnel passé   | irréel du passé  | _Si tu t'étais entraîné_, tu **aurais vaincu**. |
-| — (_à condition que_)    | subjonctif           | condition exigée | _Il part **à condition que** tu **viennes**._   |
+| Après _si_       | Principale           | L'action est…                                                              |
+| ---------------- | -------------------- | -------------------------------------------------------------------------- |
+| présent          | futur                | possible, réalisable                                                       |
+| imparfait        | conditionnel présent | **éventuelle** (envisagée dans le futur) ou **irréelle** (dans le présent) |
+| plus-que-parfait | conditionnel passé   | **irréelle**, envisagée dans le passé                                      |
 
 ::: exemple construire les trois degrés sur la même idée
 
-1. **Le fait est possible aujourd'hui** : _« **Si** j'ai le temps, je **viendrai**. »_ ←
-   présent / futur.
-2. **Le fait est seulement imaginé** : _« **Si** j'avais le temps, je **viendrais**. »_ ←
-   imparfait / conditionnel présent.
-3. **Le fait ne s'est pas produit et ne se produira plus** : _« **Si** j'avais eu le temps, je
-   **serais venu**. »_ ← plus-que-parfait / conditionnel passé, **parce que** le passé ne se
-   rattrape pas.
+1. **Possible** : _« **Si** j'ai le temps, je **viendrai** »_, présent / futur.
+2. **Éventuelle** : _« **Si** j'avais le temps demain, je **viendrais** »_, imparfait /
+   conditionnel présent, car la visite est seulement envisagée.
+3. **Irréelle dans le passé** : _« **Si** j'avais eu le temps, je **serais venu** »_,
+   plus-que-parfait / conditionnel passé, car le passé ne se rattrape pas.
 
 :::
 
-> 🗡️ **Attention** : après **_si_** de condition, on n'emploie **jamais** le futur ni le
-> conditionnel. _« Si tu viendras »_ et _« si tu viendrais »_ sont fautifs — le futur et le
-> conditionnel appartiennent à la **principale**.
+::: piege Erreur fréquente
 
-::: piege l'erreur classique
+_« Si j'**aurais** su, je ne serais pas venu. »_ Le conditionnel de la principale attire celui
+de la subordonnée. Après _si_, il faut le **plus-que-parfait** : _« Si j'**avais** su… »_
 
-_« Si j'**aurais** su, je ne serais pas venu. »_ C'est la faute la plus connue du français, et
-elle vient de l'attraction du conditionnel de la principale. La subordonnée exige le
-**plus-que-parfait** : _« Si j'**avais** su… »_
+:::
 
+::: propriete
+Après _si_ de condition, **jamais de futur ni de conditionnel** : ils appartiennent à la
+principale. Cas-limite : _à condition que_ et _pourvu que_ expriment aussi la condition, mais
+avec le **subjonctif** — _« Il part à condition que tu **viennes** »_.
 :::
 
 ::: verifie
@@ -439,107 +568,52 @@ Corrige : _« Si tu viendras demain, nous partirions ensemble. »_
 
 ---
 
-Deux fautes appariées : le futur après _si_, et le conditionnel dans une principale qui ne le
-demande pas. Couple correct : _« **Si tu viens** demain, nous **partirons** ensemble. »_
+Futur après _si_ et conditionnel mal apparié. Couple correct : _« **Si tu viens** demain, nous
+**partirons** ensemble »_ (ou _« Si tu venais…, nous partirions »_).
 :::
 
 ::: retenir
-Après _si_, jamais de futur ni de conditionnel : les temps vont par couples fixes — présent/futur,
-imparfait/conditionnel présent, plus-que-parfait/conditionnel passé.
+Si + présent → futur ; si + imparfait → conditionnel présent (éventuel ou irréel) ; si +
+plus-que-parfait → conditionnel passé (irréel du passé).
 :::
 
-## 🌿 La subordonnée circonstancielle de concession
+## 📐 Méthode : analyser une subordonnée en examen
 
-_« Il est blessé »_ devrait empêcher _« il continue de combattre »_. Et pourtant : _« **Bien qu'il** **soit** blessé, il continue de combattre. »_
+On te donne _« Il sortit dès que la pluie cessa »_ et on te demande la **nature** et la
+**fonction** de la subordonnée. Trois natures possibles : par où commencer ?
 
-La concession énonce un obstacle qui n'arrête rien. Mais pourquoi _bien que_ appelle-t-il le
-subjonctif quand _même si_ garde l'indicatif ?
+::: exemple applique l'ordre à « Il sortit dès que la pluie cessa. »
 
-::: definition
-La **circonstancielle de concession** (ou d'opposition) exprime un fait qui **devrait empêcher**
-l'action principale sans y parvenir. _Bien que_ et _quoique_ demandent le **subjonctif** ;
-_même si_ garde l'**indicatif**.
-:::
-
-| Conjonction            | Mode       | Exemple                                        |
-| ---------------------- | ---------- | ---------------------------------------------- |
-| **bien que / quoique** | subjonctif | _**Bien qu'il** **soit** blessé, il continue._ |
-| **même si**            | indicatif  | _**Même s'il** **pleut**, il partira._         |
-
-::: exemple pourquoi deux modes pour une même valeur
-
-1. **_Bien que_ et _quoique_** présentent l'obstacle comme **concédé**, mis à distance : on ne
-   s'arrête pas dessus ← subjonctif.
-2. **_Même si_** est construit sur le _si_ de condition, qui refuse déjà le subjonctif ←
-   l'indicatif s'impose par héritage, **parce que** la conjonction garde la syntaxe de sa base.
-3. **Conséquence pratique** : ne transpose pas mécaniquement le mode d'une conjonction à
-   l'autre — ces deux-là expriment la même chose et se construisent différemment.
-
-:::
-
-::: piege l'erreur classique
-
-Écrire _« quoiqu'il **pleut** »_ ou _« même s'il **pleuve** »_ : les deux modes échangés. Le
-sens est le même, la construction non — c'est précisément le genre de détail qu'une question
-d'examen isole.
-
-:::
-
-::: verifie
-Complète au bon mode : _« Bien qu'il (être) fatigué, il (continuer). »_
-
----
-
-_« Bien qu'il **soit** fatigué, il **continue**. »_ Subjonctif dans la subordonnée (_bien que_)
-et indicatif dans la principale — la principale n'est jamais entraînée au subjonctif.
-:::
-
-::: retenir
-La concession pose un obstacle inefficace : _bien que_ et _quoique_ au subjonctif, _même si_ à
-l'indicatif.
-:::
-
-## 📐 Méthode : identifier une subordonnée en examen
-
-On te donne une phrase complexe et on te demande la **nature** et la **fonction** de la
-subordonnée soulignée. Trois natures possibles, et un ordre qui ne se trompe pas.
-
-::: exemple applique l'ordre à _« Il sortit dès que la pluie cessa. »_
-
-1. **Le subordonnant est-il un pronom relatif** avec un antécédent ? _dès que_ n'en a pas ←
-   ce n'est pas une relative.
-2. **Peut-on remplacer la subordonnée par _cela_** ? _« Il sortit cela »_ ne veut rien dire ←
-   ce n'est pas une complétive.
-3. **Il reste la circonstancielle** : _dès que_ marque la **simultanéité immédiate** ←
+1. **Antécédent ?** _dès que_ ne reprend aucun nom, donc ce n'est pas une relative.
+2. **Remplaçable par _cela_ ?** _« Il sortit cela »_ ne veut rien dire, donc pas une complétive.
+3. **Il reste la circonstancielle** : _dès que_ marque la **postériorité**, donc subordonnée
    circonstancielle de **temps**.
-4. **Réponse complète** : subordonnée circonstancielle de temps, complément circonstanciel du
-   verbe _sortit_.
+4. **Réponse complète** : subordonnée circonstancielle de temps, CC de temps du verbe _sortit_.
 
 :::
 
-| Type        | Conjonctions principales                      | Mode habituel     |
-| ----------- | --------------------------------------------- | ----------------- |
-| Temps       | quand, lorsque, dès que, avant que, après que | Ind. / Subj.      |
-| Cause       | parce que, puisque, comme                     | Indicatif         |
-| Conséquence | si bien que, de sorte que, tellement… que     | Indicatif         |
-| But         | pour que, afin que, de peur que               | Subjonctif        |
-| Condition   | si, à condition que, pourvu que               | Ind. / Subj.      |
-| Concession  | bien que, quoique, même si                    | Subj. / Indicatif |
+| Circonstance | Subordonnants                                | Mode              |
+| ------------ | -------------------------------------------- | ----------------- |
+| Temps        | avant que / pendant que / après que, dès que | Subj. / Indicatif |
+| Cause        | parce que, puisque, comme, sous prétexte que | Indicatif         |
+| Conséquence  | si bien que, de sorte que, tellement… que    | Indicatif         |
+| But          | pour que, afin que, de peur que              | Subjonctif        |
+| Condition    | si / à condition que                         | Ind. / Subj.      |
 
-::: methode
-
-1. **Antécédent ?** Oui → relative (complément du nom).
-2. **Remplaçable par _cela_ ?** Oui → complétive (COD du verbe).
-3. **Sinon** → circonstancielle : lis la conjonction, elle nomme la circonstance.
-4. **Vérifie le mode** : il confirme ton analyse (subjonctif pour but et concession en
-   _bien que_, indicatif pour cause et conséquence).
-
-:::
-
-::: piege l'erreur classique
+::: piege Erreur fréquente
 
 Nommer la nature et oublier la fonction. La réponse attendue comporte les deux : _« subordonnée
 circonstancielle de temps, complément circonstanciel de temps du verbe sortit »_.
+
+:::
+
+::: methode
+
+1. **Antécédent ?** Oui → relative (expansion du nom).
+2. **Remplaçable par _cela_ ?** Oui → complétive (COD du verbe).
+3. **Sinon** → circonstancielle : le subordonnant nomme la circonstance.
+4. **Vérifie le mode** : il confirme ton analyse. Cas-limite : _que_ seul peut être pronom
+   relatif ou conjonction — seul le test de l'antécédent tranche.
 
 :::
 
@@ -553,9 +627,20 @@ remplaçable par _cela_). **Fonction** : COD du verbe _sais_.
 :::
 
 ::: retenir
-Trois questions dans l'ordre — antécédent, remplacement par _cela_, conjonction — et la réponse
+Trois questions dans l'ordre — antécédent, remplacement par _cela_, subordonnant — et la réponse
 donne toujours la nature **et** la fonction.
 :::
 
-> 🏆 Tu maîtrises maintenant la phrase complexe : principale + subordonnées relative, complétive
-> et circonstancielles. C'est le cœur de la rédaction en 9ème !
+## 🚀 Pour aller plus loin (hors programme de 9e)
+
+Tu croiseras dans tes lectures deux tours que le manuel de 9e n'enseigne pas. Il suffit de les
+reconnaître ; ils ne sont pas évalués.
+
+> 🚀 _« Après qu'il **eut vaincu**, la foule l'acclama »_ : _eut vaincu_ est un **passé
+> antérieur**, temps littéraire du récit. _« \**Bien qu'\**il **soit** blessé, il continue »_ et
+> _« \**Même s'\**il pleut, il partira »_ expriment la **concession** : un obstacle qui n'empêche
+> rien.
+
+> 🏆 Tu maîtrises maintenant la phrase complexe : principale, relative, complétive et
+> circonstancielles de temps, cause, conséquence, but et condition. C'est le cœur de la rédaction
+> en 9e !

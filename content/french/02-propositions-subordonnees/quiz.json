@@ -4,64 +4,121 @@
     {
       "prompt": "Qu'est-ce qu'une proposition subordonnée ?",
       "options": [
-        { "id": "a", "text": "Une proposition autonome qui a un sens complet." },
+        {
+          "id": "a",
+          "text": "Une proposition qui dépend d'une autre et ne se lit pas seule."
+        },
         {
           "id": "b",
-          "text": "Une proposition qui dépend de la principale et ne peut pas se lire seule sans perdre son sens."
+          "text": "Une proposition autonome, dont le sens est complet."
         },
-        { "id": "c", "text": "Une proposition qui contient toujours un pronom relatif." },
-        { "id": "d", "text": "Une proposition qui exprime toujours une condition." }
+        {
+          "id": "c",
+          "text": "Une proposition qui commence toujours par un pronom relatif."
+        },
+        {
+          "id": "d",
+          "text": "Une proposition qui exprime toujours une circonstance de temps."
+        }
       ],
-      "correctOption": "b",
-      "explanation": "La proposition subordonnée dépend de la principale : supprimée, la principale garde son sens ; mais la subordonnée seule perd le sien. Elle est introduite par un subordonnant.",
+      "correctOption": "a",
+      "explanation": "La subordonnée dépend de la principale : supprimée, la principale garde son sens, mais lue seule, la subordonnée n'en a pas (« que tu réussiras »). Une proposition autonome, c'est la principale ; et la subordonnée peut s'ouvrir par une conjonction (que, quand, parce que…), pas seulement par un pronom relatif.",
       "difficulty": 1
     },
     {
-      "prompt": "Quel pronom relatif est employé lorsque la subordonnée relative a la fonction de sujet ?",
+      "prompt": "Quel pronom relatif emploie-t-on quand il est sujet du verbe de la subordonnée relative ?",
       "options": [
-        { "id": "a", "text": "que" },
-        { "id": "b", "text": "dont" },
-        { "id": "c", "text": "qui" },
-        { "id": "d", "text": "où" }
+        {
+          "id": "a",
+          "text": "que"
+        },
+        {
+          "id": "b",
+          "text": "qui"
+        },
+        {
+          "id": "c",
+          "text": "dont"
+        },
+        {
+          "id": "d",
+          "text": "où"
+        }
       ],
-      "correctOption": "c",
-      "explanation": "« qui » est le pronom relatif sujet : « Le héros qui combat le dragon est courageux. » Le pronom relatif COD est « que », et « dont » remplace un groupe introduit par « de ».",
+      "correctOption": "b",
+      "explanation": "« qui » est sujet : « Le héros qui combat le dragon » (le héros combat). « que » serait COD (« le livre que tu lis »), et « dont » remplace un complément introduit par « de ».",
       "difficulty": 1
     },
     {
-      "prompt": "La subordonnée complétive est introduite par la conjonction « que » et a la fonction de :",
+      "prompt": "La subordonnée complétive, introduite par la conjonction « que », a pour fonction :",
       "options": [
-        { "id": "a", "text": "Complément circonstanciel de cause" },
-        { "id": "b", "text": "COD du verbe principal" },
-        { "id": "c", "text": "Sujet de la proposition principale" },
-        { "id": "d", "text": "Complément d'agent" }
+        {
+          "id": "a",
+          "text": "complément circonstanciel de cause"
+        },
+        {
+          "id": "b",
+          "text": "complément du nom qui la précède"
+        },
+        {
+          "id": "c",
+          "text": "COD du verbe de la principale"
+        },
+        {
+          "id": "d",
+          "text": "complément d'agent du verbe"
+        }
       ],
-      "correctOption": "b",
-      "explanation": "La subordonnée complétive est COD du verbe principal et peut être remplacée par « cela » : « Je crois que le héros vaincra. » → « Je crois cela. »",
+      "correctOption": "c",
+      "explanation": "La complétive est COD du verbe principal : « Je crois que le héros vaincra » → « Je crois cela ». Complément du nom, c'est le rôle de la relative, qui a un antécédent ; la complétive n'en a pas.",
       "difficulty": 2
     },
     {
-      "prompt": "Quelle conjonction introduit une subordonnée de but et exige le subjonctif ?",
+      "prompt": "Dans une phrase simple où les deux actions ont le même sujet, quelle locution exprime le but ?",
       "options": [
-        { "id": "a", "text": "parce que" },
-        { "id": "b", "text": "si bien que" },
-        { "id": "c", "text": "pour que" },
-        { "id": "d", "text": "après que" }
+        {
+          "id": "a",
+          "text": "afin que"
+        },
+        {
+          "id": "b",
+          "text": "à cause de"
+        },
+        {
+          "id": "c",
+          "text": "si bien que"
+        },
+        {
+          "id": "d",
+          "text": "afin de"
+        }
       ],
-      "correctOption": "c",
-      "explanation": "« pour que » (ainsi qu'« afin que ») introduit une subordonnée de but, toujours au subjonctif : « Il s'entraîne pour que son équipe gagne. »",
+      "correctOption": "d",
+      "explanation": "Avec un seul sujet, le but s'exprime par une préposition suivie de l'infinitif : « Il s'entraîne afin de gagner ». « afin que » introduit une subordonnée au subjonctif et exige deux sujets différents ; « à cause de » marque la cause, « si bien que » la conséquence.",
       "difficulty": 2
     },
     {
-      "prompt": "Dans la phrase conditionnelle « Si tu t'entraînais, tu vaincrais. », quel est le temps du verbe dans la subordonnée introduite par « si » ?",
+      "prompt": "Complète : « Si j'avais eu le temps hier, je ___ te voir. »",
       "options": [
-        { "id": "a", "text": "Le futur simple" },
-        { "id": "b", "text": "Le conditionnel présent" },
-        { "id": "c", "text": "L'imparfait" },
-        { "id": "d", "text": "Le subjonctif présent" }
+        {
+          "id": "a",
+          "text": "serais venu"
+        },
+        {
+          "id": "b",
+          "text": "viendrais"
+        },
+        {
+          "id": "c",
+          "text": "aurais venu"
+        },
+        {
+          "id": "d",
+          "text": "serai venu"
+        }
       ],
-      "correctOption": "c",
-      "explanation": "Après « si » de condition exprimant un fait éventuel (hypothèse), on emploie l'imparfait dans la subordonnée et le conditionnel présent dans la principale. On n'emploie jamais le futur ni le conditionnel après « si ».",
+      "correctOption": "a",
+      "explanation": "Si + plus-que-parfait (« avais eu ») appelle le conditionnel passé dans la principale : l'action est irréelle, envisagée dans le passé — « serais venu », avec l'auxiliaire « être » de « venir ». « viendrais » répond à si + imparfait ; « serai venu » est un futur antérieur ; « aurais venu » se trompe d'auxiliaire.",
       "difficulty": 3
     }
   ]
