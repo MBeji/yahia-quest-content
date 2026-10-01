@@ -502,48 +502,48 @@ de pluie, comme des insectes, grignotaient les carreaux. »_
 Outil de comparaison présent ← comparaison ; absent ← métaphore, « comparaison abrégée ».
 :::
 
-## 🧪 La personnification et d'autres figures
+## 🧪 La personnification
 
-_« Le vent hurlait entre les ruines. »_ Le vent ne crie pas. _« Je t'ai attendu mille ans. »_ Personne
-ne vit mille ans.
+_« Le vent hurlait entre les ruines. »_ Le vent n'a pas de gorge : il ne crie pas. Pourtant,
+l'auteur lui prête un cri d'homme, et le paysage devient menaçant.
 
-Quel indice permet de reconnaître chacune de ces figures dans un texte ?
+Quel indice permet de reconnaître cette figure, et que faut-il dire de son effet ?
 
 ::: definition
 La **personnification** attribue des caractères **humains** (actions, sentiments, paroles) à un
 animal, un objet, un élément ou une idée.
-L'**hyperbole** exagère pour frapper. L'**énumération** aligne plusieurs termes de même
-catégorie. La **gradation** est une énumération dont les termes sont **rangés par intensité**.
 :::
 
-| Figure               | Indice à repérer                           | Exemple                                                   |
-| -------------------- | ------------------------------------------ | --------------------------------------------------------- |
-| **Personnification** | un verbe ou un sentiment réservé à l'homme | _La tempête **hurlait** sa colère._                       |
-| **Hyperbole**        | une quantité, une durée impossible         | _Je t'ai attendu **mille ans**._                          |
-| **Énumération**      | une liste de même catégorie                | _Des épées, des boucliers, des lances jonchaient le sol._ |
-| **Gradation**        | une liste **ordonnée** par intensité       | _Il frémissait, tremblait, hurlait de peur._              |
+| Phrase                                | Ce qui n'est pas humain | Trait humain prêté  | Figure           |
+| ------------------------------------- | ----------------------- | ------------------- | ---------------- |
+| _La tempête **hurlait** sa colère._   | la tempête              | hurler, la colère   | personnification |
+| _La forêt **retenait son souffle**._  | la forêt                | retenir son souffle | personnification |
+| _Le vent souffle fort sur la plaine._ | le vent                 | — (le vent souffle) | aucune figure    |
 
-::: exemple distinguer énumération et gradation
+::: exemple nommer, citer, expliquer l'effet
 
-1. **Compte les termes** : les deux figures en alignent plusieurs ← ce critère ne suffit pas.
-2. **Essaie de changer l'ordre** : _« des boucliers, des lances, des épées »_ ne perd rien ←
-   **énumération**, car l'ordre est indifférent.
-3. **Dans _« Il frémissait, tremblait, hurlait de peur »_**, l'intensité monte du frisson au
-   cri : changer l'ordre détruit l'effet ← **gradation**, car les termes sont rangés par
-   intensité.
+_« La vieille horloge toussait dans le salon vide. »_
+
+1. **Repère ce qui n'est pas humain** : _la vieille horloge_ ← un objet.
+2. **Cherche le trait humain** : _toussait_ ← **personnification**, car tousser est le geste
+   d'une personne (ici, d'un vieillard malade), pas d'une horloge.
+3. **Explique l'effet** : l'horloge paraît vieille et fatiguée, car on lui prête la toux d'un
+   vieillard ; le salon vide semble encore plus triste.
 
 :::
 
 ::: piege Erreur fréquente
-Nommer une figure sans citer ni expliquer. « Il y a une hyperbole » ne vaut presque rien ;
-« l'hyperbole _mille ans_ exagère la durée de l'attente pour montrer l'impatience » répond à la
-question.
+Nommer la figure sans citer ni expliquer. « Il y a une personnification » ne vaut presque rien ;
+« la personnification _l'horloge toussait_ prête à l'objet la toux d'un vieillard et rend le salon
+triste » répond à la question.
 :::
 
 ::: propriete
 
 - Une réponse complète **nomme** la figure, **cite** les mots qui la forment et **explique son
   effet**.
+- Cas-limite : _« Le chien aboyait »_ n'est pas une personnification — aboyer est le cri normal
+  du chien. Il faut un trait **réservé à l'homme** : _« Le chien souriait à son maître. »_
 - Cas-limite : _« La forêt retenait son souffle »_ est une personnification, pas une
   comparaison — il n'y a aucun outil, et c'est un geste humain qui est prêté à la forêt.
 
@@ -559,8 +559,8 @@ Nomme la figure et son effet : _« Le vent murmurait des secrets aux arbres. »_
 :::
 
 ::: retenir
-Personnification = trait humain prêté à un non-humain ; hyperbole = exagération ; gradation =
-énumération rangée par intensité. On nomme, on cite, on explique l'effet.
+Personnification = trait réservé à l'homme prêté à un non-humain. On nomme, on cite, on explique
+l'effet.
 :::
 
 ## 📐 Méthode : étudier le vocabulaire d'un passage
@@ -573,13 +573,13 @@ Quelles observations faire, et dans quel ordre, pour couvrir la question ?
 ::: exemple applique l'ordre à un court extrait
 
 > _« La ville dormait. Des ombres rampaient le long des murs, noires comme de l'encre. Un chien
-> hurla mille fois dans la nuit. »_
+> hurla dans la nuit. »_
 
 1. **Champ lexical dominant** : _dormait, ombres, noires, encre, nuit_ ← la **nuit et
    l'obscurité**, car tous ces mots s'y rapportent : c'est le thème.
 2. **Sens propre / figuré** : _dormir_ est au **sens figuré**, car une ville ne dort pas.
 3. **Figures** : _la ville dormait_, _des ombres rampaient_ ← **personnifications** ; _noires
-   comme de l'encre_ ← **comparaison** (outil _comme_) ; _mille fois_ ← **hyperbole**.
+   comme de l'encre_ ← **comparaison** (outil _comme_).
 4. **Effet** : ces images rendent la ville vivante et inquiétante, car elles montrent un monde
    endormi où les ombres bougent seules.
 
@@ -621,8 +621,13 @@ Champ lexical → sens figuré → figures → effet : chaque étape se conclut 
 Tu rencontreras dans des textes d'autres procédés, que le manuel de 9e n'enseigne pas. Il suffit
 pour l'instant de les **reconnaître** quand on te les nomme ; ils ne sont pas évalués ici.
 
-- **Métaphore filée** : une métaphore prolongée sur plusieurs phrases — _« La vie est un voyage :
-  on embarque, on traverse des tempêtes, on jette l'ancre. »_
+- **Métaphore filée** : une métaphore prolongée sur plusieurs phrases — _« Le temps est un
+  fleuve : il coule sans bruit, emporte nos jours et ne remonte jamais vers sa source. »_
+- **Hyperbole** : une exagération pour frapper — _« Je t'ai attendu mille ans. »_
+- **Énumération** : une liste de termes de même catégorie — _« Des épées, des boucliers, des
+  lances jonchaient le sol. »_
+- **Gradation** : une énumération rangée par intensité — _« Il frémissait, tremblait, hurlait de
+  peur. »_
 - **Connotation** : les idées qu'un mot éveille en plus de son sens — _serpent_ fait penser à la
   ruse, _aurore_ à l'espoir.
 - **Antithèse** : deux idées opposées mises face à face — _« Dehors le grand jour, en lui la

@@ -8,5 +8,5 @@
 - **Registres** : familier (proches, oral : _boulot_, _j'sais pas_) / courant (école, écrit : _travail_, _je ne sais pas_) — on change les mots et la construction.
 - **Expressions figées** : sens global, compris en bloc grâce au contexte, sans changer un seul mot (_une tête de mule_, _mener en bateau_).
 - **Comparaison** : comparé + outil (_comme, tel, semblable à…_) + comparant (+ point commun). **Métaphore** : comparaison abrégée, sans outil (_ce garçon est un vrai singe_).
-- **Personnification** (trait humain prêté à un non-humain), **hyperbole** (exagération), **énumération** (liste), **gradation** (liste rangée par intensité). On nomme, on cite, on explique l'effet.
+- **Personnification** : un trait réservé à l'homme prêté à un non-humain (_l'horloge toussait_) ; on nomme, on cite, on explique l'effet.
 - **Méthode** : champ lexical → sens figuré → figures → effet, chaque étape conclue par une interprétation.

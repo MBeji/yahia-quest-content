@@ -1,6 +1,6 @@
 # 📜 Résumé : L'article de presse et la lettre
 
-- **Circuit court** : surtitre (rubrique), titre (fait principal), chapeau qui répond aux questions de référence — **qui ? quoi ? où ? quand ?** (comment ? pourquoi ?) —, sous-titres, photo légendée. Le chapeau **donne** l'essentiel, il ne fait pas patienter.
+- **Circuit court** : surtitre (rubrique), titre (fait principal), chapeau qui présente l'événement de façon **précise et assez complète** (ce qui s'est passé, qui, où, quand ; la manière et la raison si la place le permet), sous-titres, photo légendée. Le chapeau **donne** l'essentiel, il ne fait pas patienter.
 - **Circuit long** : un ordre clair (souvent chronologique), un paragraphe par étape avec **alinéa**, des phrases courtes, la **3e personne**, des **articulateurs** justes (_car_ = cause, _mais_ = opposition, _et c'est ainsi que_ = conséquence, _bref_ = résumé). L'article informe et relate : pas d'avis du journaliste.
 - **Procédés de reprise** : pronom ou autre groupe nominal pour le même référent, **sans ambiguïté** ; la meilleure reprise **ajoute une information** (_l'équipe → les quatorze joueuses → les nouvelles championnes_).
 - **Crédibilité** : témoignages, citations d'experts, dates, lieux, chiffres, source ; paroles entre guillemets avec un verbe introducteur. « Tout le monde dit » ne prouve rien.

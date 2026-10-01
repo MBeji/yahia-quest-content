@@ -310,53 +310,34 @@ Le contexte choisit le sens : synonyme, contraire ou exemple voisins le révèle
 sens choisi dans la phrase pour vérifier.
 :::
 
-## ⚡ Reconnaître le type de texte
+## ⚡ Reconnaître le type de texte (rappel)
 
-Un passage raconte l'incendie d'un entrepôt hier à Sfax ; un autre raconte un renard qui parle à
-un corbeau. Les deux racontent. Sont-ils pour autant du même type ?
+Un passage raconte le sauvetage d'un voilier, dimanche, au large de Bizerte ; un autre raconte un
+renard qui parle à un corbeau. Les deux racontent — et pourtant ils ne sont pas du même type.
 
-Comment le type d'un texte se reconnaît-il, et à quoi sert-il de le savoir ?
+Quand une question demande le type d'un passage, comment le prouver dans la réponse ?
 
 ::: definition
-Le manuel de 9e étudie quatre types de textes : **narratif** (il raconte une histoire),
-**descriptif** (il peint un lieu, une personne, un objet), **informatif** (il informe sur des
-faits réels : article de presse, fait divers, lettre) et **argumentatif** (il défend un point de
-vue).
+**Rappel (chapitre 8)** : un texte est **narratif**, **descriptif**, **informatif** (article de
+presse, fait divers, lettre) ou **argumentatif** selon son **but**. En compréhension, on nomme le
+type **dominant** et on le **justifie** par des indices cités.
 :::
 
-| Type             | Ce qu'il fait               | Indices                                             |
-| ---------------- | --------------------------- | --------------------------------------------------- |
-| **Narratif**     | raconte une histoire        | personnages, actions qui se suivent, temps du récit |
-| **Descriptif**   | peint un lieu, une personne | adjectifs, verbes de perception, détails sensoriels |
-| **Informatif**   | informe sur un fait réel    | date, lieu, chiffres, sources, titre d'article      |
-| **Argumentatif** | défend un point de vue      | expressions de l'opinion, arguments, articulateurs  |
+::: exemple justifier le type d'un passage
 
-::: exemple trouver le type d'un passage
+_« Dimanche, au large de Bizerte, un voilier en difficulté a été remorqué jusqu'au port par les
+garde-côtes ; ses trois passagers sont sains et saufs. »_
 
-_« Hier matin, un incendie s'est déclaré dans un entrepôt de Sfax. Les pompiers sont arrivés en
-dix minutes ; personne n'a été blessé. »_
-
-1. **Cherche le but** : faire connaître un événement réel ← car il donne une date (_hier
-   matin_), un lieu (_Sfax_), un bilan.
-2. **Écarte les autres types** : aucun point de vue défendu, aucun personnage inventé.
-3. **Conclus** : texte **informatif**, du genre **fait divers** — il relate un événement pour
-   informer le lecteur.
+1. **Cherche le but** : faire connaître un fait réel ← car il donne une date (_dimanche_), un lieu
+   (_Bizerte_), un bilan (_trois passagers_).
+2. **Rédige en citant** : _« Ce passage est informatif, car il relate un fait réel, daté
+   (« dimanche ») et situé (« au large de Bizerte »). »_ ← le type est nommé, puis prouvé.
 
 :::
 
 ::: piege Erreur fréquente
 Juger le type sur la première phrase. Un texte argumentatif commence souvent par un petit récit
-qui accroche le lecteur. Le type se juge sur le **but de l'ensemble**, pas sur l'entrée en
-matière.
-:::
-
-::: propriete
-
-- Un texte mêle souvent plusieurs types ; on cherche le type **dominant**, celui qui sert le but
-  du texte.
-- Cas-limite : un fait divers relate des événements comme un récit, mais il est **informatif**,
-  car les faits sont réels, datés et situés.
-
+qui accroche le lecteur : le type se juge sur le **but de l'ensemble**.
 :::
 
 ::: verifie
@@ -370,36 +351,23 @@ l'ensemble est de convaincre, non de raconter.
 :::
 
 ::: retenir
-Le type se juge sur le but de l'ensemble : raconter, décrire, informer sur des faits réels ou
-défendre un point de vue.
+On nomme le type dominant, puis on le prouve par des indices cités : le but de l'ensemble décide.
 :::
 
-## ⚖️ Lire un texte argumentatif : thèse et arguments
-
-_« Pour moi, le métier d'infirmier est le plus beau, car on aide chaque jour des gens qui
-souffrent. De plus, on n'y connaît jamais la routine. »_
-
-Où l'auteur dit-il ce qu'il pense, et où explique-t-il pourquoi ?
-
-::: definition
-Un texte argumentatif a deux parties : la **thèse**, où l'auteur énonce son **point de vue** (avec
-des expressions de l'opinion : _pour moi, je pense que_), et l'**argumentation**, où il le
-**justifie** par des **arguments** et des **exemples**. On dit aussi que la thèse est l'**idée
-principale** du texte.
-:::
-
-| Partie du texte                                    | Rôle                                             |
-| -------------------------------------------------- | ------------------------------------------------ |
-| _Pour moi, le métier d'infirmier est le plus beau_ | **thèse** (expression de l'opinion : _pour moi_) |
-| _car on aide chaque jour des gens qui souffrent_   | **argument 1** (introduit par _car_)             |
-| _De plus, on n'y connaît jamais la routine._       | **argument 2** (introduit par _de plus_)         |
-
-Le mot _car_ marque le passage de la thèse à l'argumentation.
-
-::: exemple trouver la thèse d'un texte
+## ⚖️ Lire un texte argumentatif : trouver la thèse (rappel)
 
 _« Beaucoup pensent que les métiers manuels n'ont plus d'avenir. Pourtant, sans menuisier ni
 plombier, nos maisons ne tiendraient pas debout. Ces métiers méritent notre respect. »_
+
+Question : _« Quelle est la thèse de l'auteur ? »_ La première phrase est-elle la bonne réponse ?
+
+::: definition
+**Rappel (chapitre 8)** : la **thèse** est le point de vue défendu (_je pense que, pour moi_) ;
+l'**argumentation** le justifie par des arguments et des exemples. En compréhension, on dit aussi
+que la thèse est l'**idée principale** : elle vaut pour **tout** le texte.
+:::
+
+::: exemple trouver la thèse du passage sur les métiers manuels
 
 1. **Lis la première phrase avec prudence** : _Beaucoup pensent que…_ ← c'est l'opinion des
    autres, car l'auteur la rapporte sans la reprendre.
@@ -410,18 +378,8 @@ plombier, nos maisons ne tiendraient pas debout. Ces métiers méritent notre re
 :::
 
 ::: piege Erreur fréquente
-Prendre pour thèse la **première phrase** quand elle rapporte l'opinion que l'auteur combat. Dans
-un texte argumentatif, on défend souvent son point de vue **en s'opposant** à ceux qui pensent le
-contraire : la thèse vient alors **après** l'articulateur d'opposition.
-:::
-
-::: propriete
-
-- La thèse vaut pour **tout** le texte ; un argument ou un exemple n'en couvre qu'une partie.
-- Cas-limite : un **fait** (_« Patrick n'a pas les mains habiles »_) n'est pas une opinion ; il
-  peut servir d'**argument** pour justifier un point de vue (_« il ne veut pas être
-  chirurgien »_).
-
+Prendre pour thèse la **première phrase** quand elle rapporte l'opinion que l'auteur combat. La
+thèse vient alors **après** l'articulateur d'opposition.
 :::
 
 ::: verifie
@@ -435,31 +393,25 @@ l'articulateur _pourtant_ annonce le point de vue de l'auteur.
 :::
 
 ::: retenir
-Thèse = le point de vue défendu ; argumentation = les arguments et exemples qui le justifient —
-et la thèse peut suivre l'opinion que l'auteur combat.
+La thèse est le point de vue défendu dans tout le texte — et elle peut suivre l'opinion que
+l'auteur combat.
 :::
 
-## 🛡️ Les articulateurs logiques
+## 🛡️ Les articulateurs logiques (rappel)
 
 _« Il pleut, **donc** je reste. »_ · _« Il pleut, **pourtant** il sort. »_ Deux faits identiques,
 deux raisonnements opposés — et un seul mot de différence.
 
-Comment ces petits mots guident-ils le lecteur ?
+Une question demande : _« Quel est le rôle de « pourtant » ? »_ Que faut-il répondre ?
 
 ::: definition
-Les **articulateurs logiques** relient les idées et montrent le **rapport** entre elles : cause,
-conséquence, addition, opposition, exemple. Ils servent aussi à **énumérer et classer** les
-arguments. On dit aussi « connecteurs ».
+**Rappel (chapitre 8)** : les **articulateurs logiques** nomment le **rapport** entre deux idées —
+cause (_car, en effet, puisque_), conséquence (_donc, si bien que, c'est pourquoi, ainsi_), addition
+(_de plus, en outre, par ailleurs_), classement (_d'abord, ensuite, enfin_), opposition (_mais,
+pourtant, cependant_), exemple (_par exemple, ainsi_). En compréhension, ils permettent de
+**suivre le raisonnement** de l'auteur. _Ainsi_ introduit un exemple ou une conséquence : le
+contexte tranche.
 :::
-
-| Rapport                     | Articulateurs                                     |
-| --------------------------- | ------------------------------------------------- |
-| **Cause / justification**   | car, en effet, puisque, étant donné que           |
-| **Conséquence**             | donc, si bien que, c'est pourquoi                 |
-| **Addition**                | de plus, en outre, par ailleurs                   |
-| **Énumération, classement** | d'abord, ensuite, d'une part, d'autre part, enfin |
-| **Opposition**              | mais, pourtant, cependant                         |
-| **Exemple**                 | par exemple, ainsi                                |
 
 ::: exemple suivre un raisonnement par ses articulateurs
 
@@ -478,15 +430,6 @@ Répondre à « quel est le rôle de _pourtant_ ? » en résumant la phrase. La 
 **rapport** : _pourtant_ marque une **opposition** entre ce qui précède et ce qui suit.
 :::
 
-::: propriete
-
-- Un articulateur doit dire le **vrai rapport** entre les idées ; mal choisi, il rend le texte
-  incohérent (_« Le sport est bon. **Pourtant**, il fortifie le cœur. »_).
-- Cas-limite : _ainsi_ peut introduire un **exemple** (_« Ainsi, un nageur… »_) ou une
-  **conséquence** (_« Ainsi, il faut… »_) ; le contexte tranche.
-
-:::
-
 ::: verifie
 Quel articulateur convient : _« La lecture enrichit le vocabulaire. … elle développe
 l'imagination. »_ ?
@@ -499,8 +442,8 @@ n'est le vrai rapport.
 :::
 
 ::: retenir
-L'articulateur dit le rapport entre les idées — cause, conséquence, addition, classement,
-opposition, exemple — et il doit être le bon.
+En compréhension, on nomme le rapport que marque l'articulateur — cause, conséquence, addition,
+classement, opposition, exemple — et non le contenu de la phrase.
 :::
 
 ## ✍️ Justifier son point de vue : une justification élaborée

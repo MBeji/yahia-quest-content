@@ -10,7 +10,7 @@
 
 ## Lire et écrire un texte argumentatif
 
-- **Types de textes** : narratif (raconte), descriptif (peint), informatif (informe sur des faits réels : article de presse, fait divers, lettre), argumentatif (défend un point de vue) — on juge le but de l'ensemble.
-- **Thèse et argumentation** : la thèse énonce le point de vue (_pour moi, je pense que_) ; l'argumentation le justifie par des arguments et des exemples. La thèse peut suivre l'opinion que l'auteur combat.
-- **Articulateurs logiques** : cause (_car, en effet_), conséquence (_donc, si bien que_), addition (_de plus, par ailleurs_), classement (_d'abord, ensuite, enfin_), opposition (_mais, pourtant_), exemple (_par exemple_) — toujours le vrai rapport.
+- **Type de texte (rappel du chapitre 8)** : narratif, descriptif, informatif (article de presse, fait divers, lettre), argumentatif — on nomme le type dominant et on le prouve par des indices cités ; le but de l'ensemble décide.
+- **Thèse (rappel du chapitre 8)** : le point de vue défendu dans tout le texte (_pour moi, je pense que_), justifié par des arguments et des exemples ; elle peut suivre l'opinion que l'auteur combat (_pourtant_).
+- **Articulateurs logiques (rappel du chapitre 8)** : ils nomment le rapport — cause (_car, en effet_), conséquence (_donc, si bien que_), addition (_de plus, par ailleurs_), classement (_d'abord, ensuite, enfin_), opposition (_mais, pourtant_), exemple (_par exemple_) ; en compréhension, on nomme ce rapport.
 - **Justification élaborée** : thèse claire + arguments variés, chacun expliqué et illustré, reliés par des articulateurs ; relire avec la grille (thèse, arguments variés, cohérence, présentation, langue).

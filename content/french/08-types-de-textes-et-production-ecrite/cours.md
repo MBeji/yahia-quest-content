@@ -37,14 +37,19 @@ vue). Chacun se reconnaît à des **indices**.
 :::
 
 ::: piege Erreur fréquente
-« Il raconte ce qui s'est passé, donc c'est un texte narratif. » ✗ Un article de presse
-**relate** aussi des événements : c'est ce qui trompe. Mais son but est d'**informer** sur un
-fait réel — dates, chiffres, sources — et non de raconter une histoire avec ses personnages et
-son schéma narratif. ✓ L'article sur la crue est **informatif**.
+« Il raconte ce qui s'est passé, donc c'est un texte narratif. » ✗ Ce qui trompe : l'article
+**relate** aussi des événements. Mais son but est d'**informer** sur un fait réel, sans
+personnages ni schéma narratif. ✓ L'article sur la crue est **informatif**.
 :::
 
 > 🗡️ Un même texte mêle souvent plusieurs types : un récit contient des passages descriptifs et
 > des dialogues. On nomme le **type dominant**, celui qui sert le but du texte entier.
+
+> 📰 **Article de presse** : un circuit court (surtitre, titre, chapeau en gras qui donne
+> l'essentiel), puis un circuit long en paragraphes — dates, chiffres, témoignages, sans avis.
+>
+> 📨 **Lettre** : lieu et date, formule d'appel, signature ; la **privée** tutoie un proche,
+> l'**officielle** vouvoie et suit une présentation précise. Les **écrire** : chapitre 15.
 
 ::: verifie
 Quel type : _« Mardi, à Tabarka, un pêcheur de 62 ans a sauvé deux enfants emportés par les
@@ -53,8 +58,7 @@ vagues, a confirmé la Protection civile. »_ ?
 ---
 
 **Informatif** : un fait réel, daté (« mardi »), situé (« à Tabarka »), chiffré (« 62 ans »),
-appuyé sur une source (« a confirmé la Protection civile »). La phrase relate un événement,
-mais pour en informer le lecteur, sans avis personnel.
+appuyé sur une source (« a confirmé la Protection civile »), sans avis personnel.
 :::
 
 ::: retenir
@@ -362,66 +366,6 @@ Un portrait montre ce que le personnage est, dit et fait — et ses traits physi
 caractère et son rôle.
 :::
 
-## 📰 Le texte informatif : l'article de presse
-
-Au kiosque, tu lis seulement le gros titre et les trois lignes en gras sous lui — et tu sais
-déjà ce qui s'est passé à Sousse hier.
-
-Comment le journaliste a-t-il organisé son article pour qu'un lecteur pressé saisisse
-l'essentiel en dix secondes ?
-
-::: definition
-L'**article de presse** est un texte **informatif**. Il prévoit deux **circuits de lecture** :
-le **circuit court** — **surtitre**, **titre**, **chapeau**, sous-titres, photos légendées —
-donne l'essentiel en peu de temps ; le **circuit long** est l'article proprement dit.
-:::
-
-| Élément            | Rôle                                          | Exemple                                               |
-| ------------------ | --------------------------------------------- | ----------------------------------------------------- |
-| **Surtitre**       | annonce la rubrique                           | _INSOLITE_                                            |
-| **Titre**          | accroche, résume en quelques mots             | _Une tortue géante dans le port de Sousse_            |
-| **Chapeau**        | quelques lignes en gras : l'essentiel du fait | _Mardi, des pêcheurs ont libéré une tortue de 80 kg…_ |
-| **Photo légendée** | montre, et sa légende explique ce qu'on voit  | _La tortue regagne le large._                         |
-
-::: exemple transformer un fait divers en article
-
-1. **Choisis le surtitre** : _INSOLITE_ ← **car** il annonce le genre de nouvelle.
-2. **Écris le titre** : court et frappant ← **car** il doit donner envie de lire.
-3. **Rédige le chapeau** : ce qui s'est passé, où, quand ← **car** le lecteur pressé s'arrête
-   souvent là.
-4. **Développe en paragraphes** : les faits, puis un **témoignage** (_« Elle était épuisée »,
-   a déclaré un pêcheur_) ← **car** citer un témoin rend l'information **crédible**.
-
-:::
-
-::: piege Erreur fréquente
-Donner son avis dans l'article : _« Quelle histoire merveilleuse ! Bravo à ces pêcheurs ! »_ ✗
-Ce qui trompe : l'émotion rend le texte vivant. Mais le journaliste **informe** ; il ne cherche
-pas à convaincre. ✓ _« Les pêcheurs ont mis deux heures à la libérer. »_ — un fait, vérifiable.
-:::
-
-::: propriete
-L'information est **crédible** quand elle s'appuie sur des **témoignages**, des **citations
-d'experts**, des dates et des chiffres. Elle est **organisée** en paragraphes signalés par des
-alinéas, et les **procédés de reprise** (_la tortue → l'animal → elle_) font progresser le
-texte. Cas-limite : un fait divers **relate** des événements et reste informatif.
-:::
-
-::: verifie
-Dans l'article sur la tortue, quel élément un lecteur pressé lit-il pour connaître l'essentiel
-du fait, après le titre ?
-
----
-
-Le **chapeau** : les quelques lignes en gras sous le titre, qui disent ce qui s'est passé, où et
-quand. Avec le surtitre, le titre et la photo légendée, il forme le **circuit court**.
-:::
-
-::: retenir
-Un article de presse informe : surtitre, titre et chapeau donnent l'essentiel, et les
-témoignages rendent l'information crédible.
-:::
-
 ## ✍️ Le texte argumentatif : la thèse et l'argumentation
 
 _« Le sport est bon pour la santé. Le sport est utile. Il faut faire du sport. »_ Trois
@@ -542,63 +486,6 @@ L'articulateur logique nomme la vraie relation entre deux idées et classe les a
 moins fort au plus fort.
 :::
 
-## 📨 La lettre
-
-Tu écris au directeur de ton collège et tu commences par _« Salut ! »_. Rien n'est faux
-grammaticalement — et la lettre a déjà échoué.
-
-Ce qui change d'une lettre à l'autre, c'est la **présentation** et le **registre**. Quelles
-règles suit chacune ?
-
-::: definition
-La **lettre privée** (à un parent, un ami) suit peu de règles : datée et signée, elle tutoie
-et emploie un vocabulaire affectif. La **lettre officielle** ou administrative (on dit aussi
-« lettre formelle ») suit une **présentation précise** et emploie le **vouvoiement**.
-:::
-
-| Élément de la lettre officielle     | Place                                               |
-| ----------------------------------- | --------------------------------------------------- |
-| nom et adresse de l'expéditeur      | en haut, à gauche                                   |
-| lieu et date                        | en haut, à droite                                   |
-| destinataire, désigné par son titre | plus bas, au milieu                                 |
-| objet de la lettre                  | légèrement en dessous, à gauche                     |
-| formule d'appel                     | le titre du destinataire : _Monsieur le Directeur,_ |
-
-::: exemple ouvrir et fermer une lettre au directeur
-
-1. **En haut** : ton nom et ton adresse à gauche, _« Sfax, le 12 mai 2026 »_ à droite ← **car**
-   l'expéditeur et la date s'identifient d'un coup d'œil.
-2. **Objet** : _« Demande d'inscription au club de théâtre »_ ← **car** le destinataire sait
-   tout de suite de quoi il s'agit.
-3. **Formule d'appel** : _« Monsieur le Directeur, »_ ← le titre du destinataire, **car** la
-   lettre est officielle.
-4. **Introduction et conclusion** : _« J'ai l'honneur de… »_, puis _« Veuillez agréer,
-   Monsieur le Directeur, l'expression de mes salutations distinguées. »_ ← **car** les
-   formules de politesse ouvrent et ferment la lettre officielle.
-
-:::
-
-::: piege Erreur fréquente
-Mélanger les registres : _« J'ai l'honneur de t'écrire »_ à un ami, ou _« Veuillez agréer… »_
-à un cousin ✗. Ce qui trompe : on croit « bien écrire » en étant poli partout. ✓ À un proche,
-_« Je t'embrasse »_ ; au directeur, _« Veuillez agréer… »_ — le registre suit le destinataire.
-:::
-
-::: verifie
-Une lettre au directeur se termine par _« Merci. Karim »_. Que faut-il corriger ?
-
----
-
-La **formule de politesse** : _« Merci »_ est trop familier pour une lettre officielle. On
-attend _« Veuillez agréer, Monsieur le Directeur, l'expression de mes salutations
-distinguées »_, puis la signature avec le nom complet.
-:::
-
-::: retenir
-La lettre privée tutoie et suit peu de règles ; la lettre officielle a sa présentation, sa
-formule d'appel et ses formules de politesse.
-:::
-
 ## 🧪 Méthode : produire un texte et l'évaluer avec la grille
 
 Consigne : _« Le club du collège organise un concours d'écriture : rédigez un texte pour
@@ -606,14 +493,14 @@ inciter les jeunes à pratiquer un métier artisanal. »_ Tu as trente minutes.
 
 Par où commencer, et comment savoir, avant de rendre la copie, si ton texte est réussi ?
 
-| Grille du manuel                | Critères de réussite                                                                                                     |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Récit intégrant une description | contexte précis, suite annoncée, ordre précis, expansions et images bien choisies, physique cohérent avec le caractère   |
-| Article de presse               | centré sur le thème, informations organisées et crédibles, reprises, surtitre-titre-chapeau, paragraphes, photo légendée |
-| Texte argumentatif              | thèse clairement formulée, arguments variés, articulateurs qui assurent la cohérence, présentation, langue correcte      |
+| Grille du manuel                | Critères de réussite                                                                                                   |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Récit intégrant une description | contexte précis, suite annoncée, ordre précis, expansions et images bien choisies, physique cohérent avec le caractère |
+| Texte argumentatif              | thèse clairement formulée, arguments variés, articulateurs qui assurent la cohérence, présentation, langue correcte    |
 
 Chaque critère de la grille est une question à te poser en relisant, avec trois réponses
-possibles : « oui », « plus ou moins », « non ».
+possibles : « oui », « plus ou moins », « non ». La grille de l'article de presse et la
+présentation de la lettre se travaillent au chapitre 15.
 
 ::: exemple appliquer la méthode à la consigne du concours
 
@@ -636,8 +523,8 @@ rédaction.
 ::: methode
 
 1. **Lire** la consigne → repérer le type imposé : raconter, décrire, informer, convaincre.
-2. **Planifier** → schéma narratif, ordre de la description, circuit court de l'article, ou
-   thèse + arguments.
+2. **Planifier** → schéma narratif, ordre de la description, ou thèse + arguments (pour
+   l'article et la lettre : chapitre 15).
 3. **Rédiger** → les bons temps, des articulateurs justes, des paragraphes.
 4. **Relire avec la grille** du type de texte, critère par critère.
 

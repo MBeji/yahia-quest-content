@@ -15,19 +15,22 @@ envie de lire la suite ?
 
 ::: definition
 Écrire un article commence par son **circuit court**. Le **surtitre** nomme la rubrique (_SPORT_,
-_EXPLOIT_, _INSOLITE_), le **titre** nomme le fait principal, et le **chapeau** le présente de
-façon **précise et assez complète** en répondant aux **questions de référence** : **qui ?
-quoi ? où ? quand ?** — et, s'il reste de la place, **comment ?** et **pourquoi ?** Ensemble,
-ils annoncent l'essentiel et doivent **susciter l'intérêt** du lecteur.
+_EXPLOIT_, _INSOLITE_), le **titre** nomme le fait principal, et le **chapeau** présente
+l'événement de façon **précise et assez complète** : ce qui s'est passé, qui l'a vécu, où et
+quand — et, s'il reste de la place, de quelle manière et pour quelle raison. Ensemble, ils
+annoncent l'essentiel et doivent **susciter l'intérêt** du lecteur.
 :::
 
-| Question  | Réponse dans le chapeau           |
-| --------- | --------------------------------- |
-| Qui ?     | _l'équipe de handball de la 9e B_ |
-| Quoi ?    | _a remporté la finale régionale_  |
-| Où ?      | _à Monastir_                      |
-| Quand ?   | _samedi_                          |
-| Comment ? | _en battant Moknine 24 à 19_      |
+> On dit aussi que le journaliste répond aux « questions de référence » : _qui ? quoi ? où ?
+> quand ? comment ? pourquoi ?_
+
+| Ce que le chapeau précise | Dans le chapeau du match          |
+| ------------------------- | --------------------------------- |
+| les acteurs               | _l'équipe de handball de la 9e B_ |
+| l'événement               | _a remporté la finale régionale_  |
+| le lieu                   | _à Monastir_                      |
+| le moment                 | _samedi_                          |
+| la manière                | _en battant Moknine 24 à 19_      |
 
 ::: exemple rédiger le circuit court du match
 
@@ -35,7 +38,8 @@ ils annoncent l'essentiel et doivent **susciter l'intérêt** du lecteur.
 2. **Titre** : _La 9e B championne régionale !_ ← **car** il est court, frappant, et dit déjà le
    fait principal.
 3. **Chapeau** : _Samedi à Monastir, l'équipe de handball de la 9e B a remporté la finale
-   régionale en battant Moknine 24 à 19._ ← **car** il répond à qui, quoi, où, quand, comment.
+   régionale en battant Moknine 24 à 19._ ← **car** il dit l'événement, les acteurs, le lieu, le
+   moment et la manière : il est précis et assez complet.
 4. **Photo légendée** : _Les joueuses brandissent la coupe._ ← **car** la légende dit ce que
    l'image montre.
 
@@ -52,8 +56,8 @@ développe.
 
 1. Choisir le **surtitre** : la rubrique, en un ou deux mots.
 2. Écrire le **titre** : bref, il nomme le fait principal et accroche.
-3. Rédiger le **chapeau** : qui ? quoi ? où ? quand ? (comment ? pourquoi ?) en deux ou trois
-   lignes.
+3. Rédiger le **chapeau** : l'événement, ses acteurs, le lieu, le moment (la manière, la
+   raison) en deux ou trois lignes.
 4. Si l'article est long, l'**entrecouper de sous-titres** ; ajouter une **photo légendée**.
 
 Cas-limite : un titre n'a pas besoin de verbe (_Victoire de la 9e B à Monastir_) ; le chapeau,
@@ -61,19 +65,19 @@ lui, est fait de phrases complètes.
 :::
 
 ::: verifie
-Chapeau d'un élève : _« Mardi, un jeune faucon est entré dans une salle de classe. »_ À quelles
-questions de référence répond-il, et laquelle manque d'abord ?
+Chapeau d'un élève : _« Mardi, un jeune faucon est entré dans une salle de classe. »_ Est-il
+précis et assez complet ? Que lui manque-t-il d'abord ?
 
 ---
 
-Il répond à **quand ?** (mardi), **qui ?** (un jeune faucon) et **quoi ?** (est entré dans une
-salle). Il manque **où ?** : dans quelle ville, quel collège ? Sans le lieu, l'information n'est
+Il dit le moment (_mardi_), l'acteur (_un jeune faucon_) et l'événement (_est entré dans une
+salle_). Il manque le **lieu** : dans quelle ville, quel collège ? Sans lui, l'information n'est
 ni précise ni complète.
 :::
 
 ::: retenir
 Le circuit court donne l'essentiel : surtitre (rubrique), titre (fait principal), chapeau qui
-répond à qui, quoi, où, quand — puis sous-titres et photo légendée.
+présente l'événement de façon précise et assez complète — puis sous-titres et photo légendée.
 :::
 
 ## 🧱 Organiser l'information du circuit long
