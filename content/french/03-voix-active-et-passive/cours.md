@@ -136,8 +136,8 @@ Les deux phrases se ressemblent, mais une seule correspond. Où lire le temps d'
 | conditionnel présent      | _…inaugureraient…_               | _Le pont **serait** inauguré._        |
 | conditionnel passé        | _…auraient inauguré…_            | _Le pont **aurait été** inauguré._    |
 
-Dans chaque ligne, le temps de _être_ est exactement celui du verbe actif ; le participe
-_inauguré_, lui, ne bouge pas.
+_Être_ a le temps du verbe actif, le participe ne bouge pas : _sera inaugurée_ (futur simple)
+répond à _inaugureront_ ; _auront inauguré_ aurait donné _aura été inaugurée_.
 
 ::: exemple revenir à l'actif : _« Le fleuve a été fermé par les autorités. »_
 
@@ -151,9 +151,9 @@ _inauguré_, lui, ne bouge pas.
 :::
 
 ::: piege Erreur fréquente
-_« Ce roman **aurait été** apprécié »_ lu comme un conditionnel **présent** ✗ — on voit
-_aurait_ et on s'arrête. ✓ _Aurait été_ est le conditionnel **passé** de _être_ (_aurait_ +
-_été_) : à l'actif, _« Les lecteurs **auraient apprécié** ce roman. »_
+_« Ce film **aurait été** apprécié des critiques »_ lu comme un conditionnel **présent** ✗ — on
+voit _aurait_ et on s'arrête. ✓ _Aurait été_ est le conditionnel **passé** de _être_ (_aurait_ +
+_été_) : à l'actif, _« Les critiques **auraient apprécié** ce film. »_
 :::
 
 ::: propriete

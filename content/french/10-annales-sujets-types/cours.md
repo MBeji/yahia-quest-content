@@ -29,11 +29,11 @@ compréhension (10 points) et langue (10 points) ; l'expression écrite y fait l
 devoir.
 :::
 
-| Partie        | Ds (2 h) | Dc (1 h) | Ce qu'on attend                                                         |
-| ------------- | -------- | -------- | ----------------------------------------------------------------------- |
-| Compréhension | 7 pts    | 10 pts   | 3 ou 4 questions : relever, dégager, identifier, comparer, justifier    |
+| Partie        | Ds (2 h) | Dc (1 h) | Ce qu'on attend                                                          |
+| ------------- | -------- | -------- | ------------------------------------------------------------------------ |
+| Compréhension | 7 pts    | 10 pts   | 3 ou 4 questions : relever, dégager, identifier, comparer, justifier     |
 | Langue        | 6 pts    | 10 pts   | exercices sur des phrases **relevées dans le texte** ou inspirées de lui |
-| Essai         | 7 pts    | —        | une quinzaine de lignes, d'un type de texte imposé                      |
+| Essai         | 7 pts    | —        | une quinzaine de lignes, d'un type de texte imposé                       |
 
 ::: exemple répartir les deux heures du Ds
 
@@ -86,13 +86,13 @@ pour y trouver les éléments de réponse, on les **organise**, on **rédige**, 
 réponse.
 :::
 
-| Étape                | Ce qu'on fait                                                   |
-| -------------------- | --------------------------------------------------------------- |
-| Analyser la question | souligner les mots-clés, préciser ce qu'on demande              |
-| Relire le texte      | souligner, encercler, relier les indices                        |
-| Organiser            | mettre les éléments relevés dans un ordre logique               |
-| Rédiger              | des phrases simples et concises, une citation en cas de besoin  |
-| Relire               | améliorer la formulation, corriger les fautes                   |
+| Étape                | Ce qu'on fait                                                  |
+| -------------------- | -------------------------------------------------------------- |
+| Analyser la question | souligner les mots-clés, préciser ce qu'on demande             |
+| Relire le texte      | souligner, encercler, relier les indices                       |
+| Organiser            | mettre les éléments relevés dans un ordre logique              |
+| Rédiger              | des phrases simples et concises, une citation en cas de besoin |
+| Relire               | améliorer la formulation, corriger les fautes                  |
 
 ::: exemple analyser une question sur notre texte
 
@@ -143,12 +143,12 @@ relevés** dans le texte et reste **correctement formulée** : ce sont les crit�
 du manuel.
 :::
 
-| Verbe de la consigne | Ce qu'on attend                                                 |
-| -------------------- | --------------------------------------------------------------- |
-| Relevez              | recopier les mots exacts du texte, entre guillemets             |
-| Identifiez           | nommer (un personnage, un sentiment, une étape du récit)        |
-| Comparez             | mettre deux éléments en relation : ressemblances, différences   |
-| Justifiez            | donner la raison **et** l'indice du texte qui la prouve         |
+| Verbe de la consigne | Ce qu'on attend                                               |
+| -------------------- | ------------------------------------------------------------- |
+| Relevez              | recopier les mots exacts du texte, entre guillemets           |
+| Identifiez           | nommer (un personnage, un sentiment, une étape du récit)      |
+| Comparez             | mettre deux éléments en relation : ressemblances, différences |
+| Justifiez            | donner la raison **et** l'indice du texte qui la prouve       |
 
 ::: exemple répondre à la question sur le narrateur
 
@@ -202,13 +202,13 @@ Ce ne sont ni des questions théoriques ni des transformations mécaniques : la 
 compte.
 :::
 
-| Fait de langue          | Exemple de consigne sur un texte                                       |
-| ----------------------- | ---------------------------------------------------------------------- |
-| Temps du récit          | justifier l'imparfait ou le passé simple d'un verbe du texte           |
-| Forme passive           | transformer une phrase, retrouver le complément d'agent                |
-| Discours rapporté       | passer une phrase du texte au discours direct ou indirect              |
-| Subordonnées, expansions | nature et fonction d'une proposition du texte                         |
-| Vocabulaire             | sens d'un mot en contexte, sens propre ou figuré, synonyme             |
+| Fait de langue           | Exemple de consigne sur un texte                             |
+| ------------------------ | ------------------------------------------------------------ |
+| Temps du récit           | justifier l'imparfait ou le passé simple d'un verbe du texte |
+| Forme passive            | transformer une phrase, retrouver le complément d'agent      |
+| Discours rapporté        | passer une phrase du texte au discours direct ou indirect    |
+| Subordonnées, expansions | nature et fonction d'une proposition du texte                |
+| Vocabulaire              | sens d'un mot en contexte, sens propre ou figuré, synonyme   |
 
 ::: exemple traiter trois questions de langue sur notre texte
 
@@ -263,12 +263,12 @@ lignes) et la **situation d'énonciation** : qui écrit, à qui, à propos de qu
 circonstances et dans quelle intention. Il est lié au thème du texte, mais se comprend sans lui.
 :::
 
-| Dans la consigne       | Ce qu'il impose                                          |
-| ---------------------- | -------------------------------------------------------- |
-| « Racontez »           | un récit : schéma narratif, passé simple et imparfait    |
-| « Décrivez », portrait | verbes de perception, ordre précis, traits révélateurs   |
-| « Écrivez une lettre » | lettre privée ou officielle, selon le destinataire       |
-| « Justifiez votre choix » | texte argumentatif : thèse, arguments, articulateurs  |
+| Dans la consigne          | Ce qu'il impose                                        |
+| ------------------------- | ------------------------------------------------------ |
+| « Racontez »              | un récit : schéma narratif, passé simple et imparfait  |
+| « Décrivez », portrait    | verbes de perception, ordre précis, traits révélateurs |
+| « Écrivez une lettre »    | lettre privée ou officielle, selon le destinataire     |
+| « Justifiez votre choix » | texte argumentatif : thèse, arguments, articulateurs   |
 
 ::: exemple traiter une consigne liée à notre texte
 
