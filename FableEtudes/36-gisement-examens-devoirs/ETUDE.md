@@ -254,3 +254,28 @@ finie ; un doute de droits sur un document ⇒ il sort de l'échantillon, sans d
   (privé#575) et les chapitres 08, 09 et 12 (privé#577). La tranche 20/07 est livrée avec
   cette décision. Les devoirs des 2ᵉ et 3ᵉ trimestres sont en écriture ou en audit, sur les
   chapitres 02, 03, 04, 16, 17 et 18.
+- **2026-10-01 — Synchronisation avec la campagne « 9ᵉ au patron » (autre session, arbitrage du
+  propriétaire du 2026-09-28 : finir la 9ᵉ avant tout le reste).** Ce que cette campagne a changé
+  sous les pieds du gisement, et ce qu'elle attend de lui :
+  - **SVT 9ᵉ (`sciences-vie-terre`) — publiée (privé#569).** Les 7 anciens chapitres hors programme
+    sont passés en fin de liste (displayOrder **15–21**, optionnels) ; les 14 chapitres du programme
+    gardent 01–14. Une **famille d'étiquettes `bio.*` existe désormais (95 ids)** et tous les chapitres
+    déclarent leurs `coursePitfalls` ; **`coursePattern: "notion"` est armé**. ⇒ La ligne « Pas de
+    famille d'étiquettes SVT : distracteurs muets » de l'état de reprise est **périmée** : les missions
+    SVT du gisement se placent dans les chapitres **01–14** et étiquettent leurs distracteurs avec
+    `bio.*` (règles R1/R2/R3 ; nouvel id seulement s'il manque, à ajouter au registre).
+  - **Français 9ᵉ (`french`) — publié (privé#569).** Réaligné sur le manuel élève **121905** (lu en
+    entier) : **15 chapitres + annales** (`10-annales-sujets-types` en displayOrder 16), métalangage du
+    manuel (forme passive, élément modificateur / résolution du problème, articulateurs logiques),
+    famille **`fr.*` (102 ids)**, patron **armé**. ⇒ Les missions de français suivent ce métalangage et
+    ces chapitres ; les notions « Pour aller plus loin » n'ont pas d'item.
+  - **Arabe 9ᵉ (`arabic`) — EN RÉALIGNEMENT, ne pas y placer de missions pour l'instant.** Le contenu
+    suivait le guide d'avant la réforme de 2006 ; le manuel révisé **101908** est en cours de lecture
+    intégrale (LOT A), et le découpage des chapitres va changer (le الشّرط, par exemple, n'a aucun
+    chapitre ; l'interrogation est très incomplète). Le lot 6 du gisement attend la fusion de ce
+    réalignement, qui sera signalée ici.
+  - **Maths 9ᵉ** : la campagne ne touchera que **01-nombres-reels et 02-racines-carrees** (recentrage
+    sur leur chapitre officiel, arbitrage du 2026-09-28), après les lots en cours du gisement ; aucun
+    lot du gisement n'est sur 01/02.
+  - **Moteur** : l'italique `_…_` et les `\*` échappés s'affichent désormais (moteur #1144) — inutile
+    de les contourner dans les missions.
