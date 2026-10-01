@@ -231,7 +231,7 @@ Accorde : _« Les joueuses se sont (préparé), puis elles se sont (serré) la m
 ---
 
 _Se sont **préparées**_ : on prépare quelqu'un → accord avec le sujet _les joueuses_. _Se sont
-**serré** la main_ : elles ont serré la main **à** elles-mêmes, _se_ est C.O.I → pas d'accord.
+**serré** la main_ : elles ont serré la main **l'une à l'autre**, _se_ est C.O.I → pas d'accord.
 :::
 
 ::: retenir
