@@ -163,3 +163,4 @@ manquantes, confirmation de la double résolution, résultat des gates pour tes 
 - **La coche ✓ suit la valeur de la clé, jamais un nombre qui est un distracteur** (« … de
   تكرار كلّي قدره 20 ✓ » valide l'option 20). Un repère se donne avec son orientation : « النقطة
   الواحديّة على محور فواصله هي A », pas seulement la longueur unité.
+- **Contrôle mécanique avant de rendre** : `node /home/user/yahia-quest-content/FableEtudes/36-gisement-examens-devoirs/outils/lot-lint.mjs <tes fichiers .json>` relève, avec le moteur de rendu à jour, les défauts que les audits retrouvaient à la main : rampe qui décroît, clé strictement la plus longue (diacritiques retirés aussi), paire d'options nue à la virgule arabe, ligne de formule seule que le moteur ne pose pas en bloc, coche ✓ collée à un distracteur, option somme ou différence de deux autres, lettre d'option citée. Chaque point est à juger, ce n'est pas un verdict.

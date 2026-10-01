@@ -183,8 +183,11 @@ reprend, données comprises, en le citant. Les deux consignes d'auteur sont dist
 
 - [ ] Lot 1 — doctrine
 - [ ] Lot 2 — outillage
-- [ ] Lot 3 — 9ᵉ math (en cours : devoirs des trois trimestres)
-- [ ] Lots 5-8 — 9ᵉ, autres matières du concours (lot 4 écarté, D-10)
+- [ ] Lot 3 — 9ᵉ math (en cours au 2026-10-01 : 142 missions publiées — 80 d'examen, 56 de devoirs, 6 d'écart ;
+      restent au plan 56 missions d'examen et 10 de devoirs)
+- [ ] Lots 5-8 — 9ᵉ, autres matières du concours (lot 4 écarté, D-10) ; échantillons fixés (privé#574) ;
+      SVT : six sessions lues (2020 à 2026), plan de 27 missions en cinq lots à rejouer sur les chapitres du
+      manuel 121905 ; arabe, français, anglais : lecture à faire
 - [ ] Lots 9-13 — 6ᵉ
 - [ ] Lots 14+ — autres classes
 
@@ -254,3 +257,53 @@ finie ; un doute de droits sur un document ⇒ il sort de l'échantillon, sans d
   (privé#575) et les chapitres 08, 09 et 12 (privé#577). La tranche 20/07 est livrée avec
   cette décision. Les devoirs des 2ᵉ et 3ᵉ trimestres sont en écriture ou en audit, sur les
   chapitres 02, 03, 04, 16, 17 et 18.
+- **2026-09-29 → 2026-09-30 — Les sujets d'examen de maths 9ᵉ entrent au registre, lot après lot.**
+  Les registres des cinq couples de 9ᵉ sont versionnés avec leurs échantillons, fixés avant toute
+  lecture (privé#574). Les 40 sessions officielles de maths 9ᵉ sont transcrites (privé#582, #584,
+  #589) et placées chapitre par chapitre ; le plan v6 compte 131 missions d'examen. Les premiers
+  lots d'examen sont publiés le 30 : chapitres 17, 03, 07 et 09 (privé#595 à #599), puis 04 et 03
+  (privé#604, #606), 09 et 04 (privé#610, #612). Douze étiquettes d'erreur sont créées d'un coup et
+  posées sur 41 options d'examen (privé#601).
+
+  **Le lot, tel qu'il se déroule vraiment** : auteur (sonnet, qui reçoit la transcription officielle
+  et la cite) → audit en aveugle (opus, qui re-résout chaque clé avant de lire la sienne) →
+  corrections de l'auteur → re-vérification ciblée par le *même* auditeur → livraison scriptée
+  (copie, ligne `sources[]`, registre, contrôle anti-copie, sept étages de gates) → fusion →
+  publication (`apply-content.yml`, trois étapes vérifiées) → `content-drift.yml` → registre à
+  `publiee`. La re-vérification trouve toujours du neuf, et la plupart des défauts viennent des
+  textes de remplacement fournis par l'audit lui-même : prémisse niée par la réponse, option vraie
+  sous les données, nombre contredit par l'énoncé, vote reconstituable, coche posée à côté d'un
+  distracteur, paires de nombres à virgule arabe, ligne de formule seule non reconnue par
+  `isDisplayEquation`, figure dessinée à l'échelle de la solution. Ces pièges sont inscrits dans
+  les consignes de l'auteur et de l'auditeur (privé#593 et suivants).
+- **2026-10-01 (matin) — 142 missions de maths 9ᵉ publiées, dont 80 tirées des sujets d'examen.**
+  Les lots du chapitre 12 (privé#615) et du chapitre 08 (privé#617) sont publiés et vérifiés sur
+  les trois étapes d'`apply-content.yml`, puis sur `content-drift.yml`. Le registre du couple
+  donne : 80 missions d'examen (lots L01 à L08, L10 à L12 et L19), 56 de devoirs, 6 d'écart,
+  toutes `publiee` ; restent au plan 56 missions d'examen (lots L09, L13 à L18, L20 à L22,
+  dont 25 en écriture ou en audit) et 10 de devoirs (chapitres 04 et 09).
+  **Le rendu arabe est devenu un sujet de moteur** : d'un lot à l'autre, l'audit a trouvé des
+  chaînes que l'interface affichait à l'envers (parenthèses fermées ou ouvertes par du texte
+  arabe, listes d'intervalles, lignes de formule seule). Huit correctifs d'affichage sont livrés au
+  moteur en deux jours (arena#1137 à #1139, puis #1141 à #1145 dont l'italique markdown), chacun
+  avec ses tests de non-régression, et la validation du corpus refuse désormais une étiquette
+  d'erreur posée sur une option `ordering`, `matching` ou `multi`, où elle disparaissait en
+  silence à l'émission SQL (arena#1147). La ligne correspondante du journal du moteur est dans
+  `STATUS.md` (arena#1146).
+- **2026-10-01 (après-midi) — La limite de session coupe les quatre agents ; reprise ; la SVT
+  s'ouvre.** La limite « cinq heures » est atteinte vers 10 h 30 UTC, soixante-cinq minutes après
+  la reprise de 9 h 22 : les auteurs des lots L09 et L18 et les auditeurs des lots L13 et L15
+  meurent au même instant, la réouverture est à 14 h 20. Les agents sont repris par message à
+  15 h 09 avec leur contexte, en leur demandant d'écrire leurs résultats dans leurs fichiers de
+  rapport au fil de l'eau (un auditeur coupé avant d'avoir écrit perd tout son travail apparent) ;
+  le constat et la marche à suivre sont dans l'état de reprise de la branche de sauvegarde
+  `wip/gisement-9eme-lots-en-ecriture` (`en-cours/ETAT-REPRISE.md`). SVT 9ᵉ : six sessions lues
+  (2020 à 2026, transcriptions et lignes sur la branche de sauvegarde), 27 missions d'examen
+  planifiées en cinq lots par le planificateur du moteur. Entre-temps `main` a reçu le
+  réalignement de la SVT et du français 9ᵉ sur le manuel 121905 (privé#569 : 21 chapitres, 89
+  étiquettes `bio.*`) : le plan sera **rejoué sur ces chapitres** avant d'écrire le premier lot,
+  et les distracteurs pourront porter les étiquettes `bio.*` existantes. Arabe, français et
+  anglais : lecture à faire, échantillons déjà fixés. Un mur constaté, qu'aucune PR ne répare : le
+  garde `content-audit` (issue privé#614) est rouge depuis 01 h 13 UTC — jeton
+  `CLAUDE_CODE_OAUTH_TOKEN` invalide ; les lots s'en passent, l'audit en aveugle de chaque lot
+  étant rendu par un sous-agent opus de la session avant la fusion.
