@@ -1,5 +1,5 @@
 {
-  "title": "🛡️ Entraînement examen : la concordance des temps",
+  "title": "🛡️ Entraînement examen : temps du récit et du discours",
   "difficulty": 3,
   "mode": "boss",
   "xpReward": 120,
@@ -7,103 +7,103 @@
   "displayOrder": 5,
   "questions": [
     {
-      "prompt": "Complète correctement : « Il dormait quand le téléphone … . »",
+      "prompt": "Complète : « Il dormait quand le téléphone ___. »",
       "options": [
         {
           "id": "a",
-          "text": "sonnait"
+          "text": "avait sonné"
         },
         {
           "id": "b",
-          "text": "sonna"
+          "text": "sonnera"
         },
         {
           "id": "c",
-          "text": "sonnera"
+          "text": "sonna"
         },
         {
           "id": "d",
           "text": "sonne"
         }
       ],
-      "correctOption": "b",
-      "explanation": "Dans un récit au passé, l'imparfait (« dormait ») décrit l'action en cours et le passé simple (« sonna ») marque l'action soudaine qui s'y produit. « sonnait » décrirait une action durable, « sonnera » est au futur, « sonne » au présent.",
-      "difficulty": 2
-    },
-    {
-      "prompt": "Complète : « Quand il eut terminé son repas, il … la table. »",
-      "options": [
-        {
-          "id": "a",
-          "text": "débarrasse"
-        },
-        {
-          "id": "b",
-          "text": "débarrassera"
-        },
-        {
-          "id": "c",
-          "text": "débarrassa"
-        },
-        {
-          "id": "d",
-          "text": "débarrassait"
-        }
-      ],
       "correctOption": "c",
-      "explanation": "Le passé antérieur (« eut terminé ») exprime une action achevée juste avant une autre au passé simple : « il débarrassa la table ». Le présent « débarrasse » et le futur « débarrassera » rompent la concordance au passé ; l'imparfait « débarrassait » ne marque pas l'action ponctuelle qui suit.",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Complète : « Je voulais que tu … plus tôt. »",
-      "options": [
-        {
-          "id": "a",
-          "text": "viens"
-        },
-        {
-          "id": "b",
-          "text": "viennes"
-        },
-        {
-          "id": "c",
-          "text": "viendras"
-        },
-        {
-          "id": "d",
-          "text": "venais"
-        }
-      ],
-      "correctOption": "b",
-      "explanation": "Après un verbe de volonté (« je voulais que »), la subordonnée se met au subjonctif : « que tu viennes ». « viens » est l'indicatif présent « viens », « viendras » le futur, « venais » l'imparfait de l'indicatif « venais » — aucun n'est le subjonctif attendu.",
+      "explanation": "L'imparfait « dormait » pose l'arrière-plan ; l'action ponctuelle qui survient est au passé simple, au premier plan : « sonna ». « Avait sonné » placerait la sonnerie avant le sommeil, ce que « quand » ne dit pas ici ; le futur et le présent sortent du récit au passé.",
       "difficulty": 2
     },
     {
-      "prompt": "Au discours indirect passé : « Il a dit qu'il … le lendemain. » (parole d'origine : « Je partirai demain. »)",
+      "prompt": "« Quand Sonia ouvrit la lettre, elle comprit que son frère ___ (partir) pour le Canada : sa chambre était vide. »",
       "options": [
         {
           "id": "a",
+          "text": "était parti"
+        },
+        {
+          "id": "b",
+          "text": "partit"
+        },
+        {
+          "id": "c",
           "text": "partira"
         },
         {
-          "id": "b",
-          "text": "partait"
-        },
-        {
-          "id": "c",
-          "text": "partirait"
-        },
-        {
           "id": "d",
-          "text": "part"
+          "text": "avait parti"
         }
       ],
-      "correctOption": "c",
-      "explanation": "Au discours indirect avec un verbe introducteur au passé, le futur de la parole d'origine devient conditionnel présent : « qu'il partirait ». « partira » garde le futur, « partait » est l'imparfait, « part » le présent « part ».",
+      "correctOption": "a",
+      "explanation": "La chambre vide montre que le départ est déjà achevé au moment où Sonia comprend : plus-que-parfait, retour en arrière. « Partir » se conjugue avec « être » : « était parti », et non « avait parti ». « Partit » ferait du départ un nouvel événement du récit ; « partira » sort du passé.",
       "difficulty": 3
     },
     {
-      "prompt": "Complète : « J'avais déjà fini mes devoirs lorsque mes amis … . »",
+      "prompt": "« Il ouvrit la porte et vit que la neige était tombée toute la nuit. »\nAu présent de narration : « Il ___ la porte et ___ que la neige ___ toute la nuit. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "ouvre … voit … tombait"
+        },
+        {
+          "id": "b",
+          "text": "a ouvert … a vu … était tombée"
+        },
+        {
+          "id": "c",
+          "text": "ouvre … voit … tombera"
+        },
+        {
+          "id": "d",
+          "text": "ouvre … voit … est tombée"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Au présent de narration, le passé simple devient présent (« ouvre », « voit ») et le plus-que-parfait devient passé composé (« est tombée ») : la neige est toujours tombée avant que la porte s'ouvre. Garder l'imparfait « tombait » mélange les systèmes ; « a ouvert … a vu » n'est pas au présent ; « tombera » renverse l'ordre des faits.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Complète : « Si nous ___ (partir) plus tôt, nous n'aurions pas manqué le train. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "serions partis"
+        },
+        {
+          "id": "b",
+          "text": "étions partis"
+        },
+        {
+          "id": "c",
+          "text": "partirions"
+        },
+        {
+          "id": "d",
+          "text": "sommes partis"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le conditionnel passé « n'aurions pas manqué » répond à si + plus-que-parfait : « si nous étions partis » (action irréelle dans le passé). « Serions partis » met le conditionnel juste après « si », ce qui est fautif ; « partirions » aussi ; « sommes partis » est un passé composé qui ne forme pas ce système.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Complète : « J'avais déjà fini mes devoirs lorsque mes amis ___. »",
       "options": [
         {
           "id": "a",
@@ -115,39 +115,39 @@
         },
         {
           "id": "c",
-          "text": "sont arrivés"
+          "text": "arrivèrent"
         },
         {
           "id": "d",
-          "text": "arrivèrent"
+          "text": "étaient arrivés"
         }
       ],
-      "correctOption": "d",
-      "explanation": "Le plus-que-parfait (« j'avais fini ») marque l'antériorité par rapport à une action au passé simple dans un récit : « lorsque mes amis arrivèrent ». Le présent « arrivent » et le futur « arriveront » brisent la concordance au passé ; le passé composé « sont arrivés » appartient plutôt au récit oral, alors que le récit ici est au passé simple.",
+      "correctOption": "c",
+      "explanation": "Le plus-que-parfait « avais fini » marque une action achevée avant un autre moment passé : l'arrivée des amis, au passé simple (« arrivèrent »). « Étaient arrivés » mettrait les deux actions au plus-que-parfait et brouillerait leur ordre ; le présent et le futur sortent du récit au passé.",
       "difficulty": 3
     },
     {
-      "prompt": "Complète : « Il pensait qu'elle … déjà partie. »",
+      "prompt": "Complète : « Dès le début de l'année, je savais que tu ___ (réussir) ton examen de juin. »",
       "options": [
         {
           "id": "a",
-          "text": "est"
+          "text": "réussiras"
         },
         {
           "id": "b",
-          "text": "était"
+          "text": "réussissais"
         },
         {
           "id": "c",
-          "text": "sera"
+          "text": "avais réussi"
         },
         {
           "id": "d",
-          "text": "soit"
+          "text": "réussirais"
         }
       ],
-      "correctOption": "b",
-      "explanation": "Le verbe introducteur « pensait » étant au passé, on emploie le plus-que-parfait « était déjà partie » (auxiliaire « être » à l'imparfait + participe « partie ») pour marquer l'antériorité de son départ par rapport au moment de la pensée. « est » (présent, a) et « sera » (futur, c) ne respectent pas la concordance ; « soit » (d) est un subjonctif, non requis après « penser » à la forme affirmative.",
+      "correctOption": "d",
+      "explanation": "La réussite est à venir par rapport à un moment passé (« je savais », au début de l'année) : c'est le futur par rapport au passé, au conditionnel présent « réussirais ». « Réussiras » garde le futur alors que le repère est passé ; « réussissais » et « avais réussi » feraient de l'examen de juin un fait déjà en cours ou déjà passé au début de l'année.",
       "difficulty": 3
     }
   ]

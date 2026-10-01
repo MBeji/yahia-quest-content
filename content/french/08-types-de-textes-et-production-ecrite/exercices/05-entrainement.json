@@ -7,75 +7,78 @@
   "displayOrder": 5,
   "questions": [
     {
-      "prompt": "Lisez ce passage :\n\n« La girafe est un mammifère herbivore. Elle possède un long cou qui lui permet d'atteindre les feuilles des arbres les plus hauts. On la trouve principalement dans les savanes d'Afrique. »\n\nÀ quel type de texte appartient ce passage ?",
+      "prompt": "Lisez ce passage :\n\n« INSOLITE — Une tortue géante dans le port de Monastir. Mardi matin, des pêcheurs ont découvert une tortue de 80 kg prise dans leurs filets. « Elle était épuisée », a raconté l'un d'eux. Un vétérinaire l'a soignée avant de la relâcher. »\n\nÀ quel type de texte appartient ce passage ?",
       "options": [
         { "id": "a", "text": "Texte narratif" },
-        { "id": "b", "text": "Texte informatif" },
-        { "id": "c", "text": "Texte argumentatif" },
-        { "id": "d", "text": "Texte injonctif" }
+        { "id": "b", "text": "Texte argumentatif" },
+        { "id": "c", "text": "Texte informatif" },
+        { "id": "d", "text": "Texte descriptif" }
       ],
-      "correctOption": "b",
-      "explanation": "Le passage donne des informations objectives pour faire connaître un animal : c'est un texte informatif. Il ne raconte pas d'histoire « Texte narratif », ne défend pas d'opinion « Texte argumentatif » et ne donne pas d'instructions « Texte injonctif ».",
+      "correctOption": "c",
+      "explanation": "Le passage est un article de presse (surtitre « INSOLITE », titre) qui fait connaître un fait réel : une date, un lieu, un chiffre, un témoignage. C'est un texte informatif. Il relate un événement sans raconter une histoire inventée (« Texte narratif »), il ne défend aucune opinion (« Texte argumentatif ») et il ne se contente pas de faire voir l'animal (« Texte descriptif »).",
       "difficulty": 2
     },
     {
-      "prompt": "Quel texte est de type injonctif ?",
+      "prompt": "Quelle phrase pourrait ouvrir un article de presse informatif ?",
       "options": [
-        { "id": "a", "text": "Il était une fois un roi qui vivait dans un grand château." },
-        { "id": "b", "text": "Mélangez la farine et les œufs, puis ajoutez le lait." },
+        {
+          "id": "a",
+          "text": "Il était une fois un roi qui vivait tout seul dans un immense château."
+        },
+        { "id": "b", "text": "Samedi, 3 000 coureurs ont pris le départ du marathon de la ville." },
         { "id": "c", "text": "À mon avis, lire est le meilleur des loisirs." },
         { "id": "d", "text": "Le ciel était gris et la mer agitée." }
       ],
       "correctOption": "b",
-      "explanation": "Le texte injonctif donne des consignes, souvent à l'impératif : « Mélangez… ajoutez… » (recette). « Il était une fois un roi qui vivait dans un grand château » est narrative, « À mon avis, lire est le meilleur des loisirs » argumentative, et « Le ciel était gris et la mer agitée » descriptive.",
+      "explanation": "« Samedi, 3 000 coureurs ont pris le départ du marathon de la ville » donne un fait réel, daté et chiffré : c'est une phrase d'article de presse. « Il était une fois un roi… » ouvre un conte (narratif), « À mon avis, lire… » exprime une thèse (argumentatif), et « Le ciel était gris… » fait voir un décor (descriptif).",
       "difficulty": 2
     },
     {
-      "prompt": "Dans le schéma narratif, comment appelle-t-on l'événement qui rompt l'équilibre initial et lance l'action ?",
+      "prompt": "Dans le schéma narratif, à quelle étape le problème lancé par l'élément modificateur trouve-t-il sa solution ?",
       "options": [
-        { "id": "a", "text": "La situation finale" },
-        { "id": "b", "text": "L'élément perturbateur (déclencheur)" },
-        { "id": "c", "text": "La situation initiale" },
-        { "id": "d", "text": "Le dénouement" }
+        { "id": "a", "text": "Les péripéties qui suivent l'élément modificateur" },
+        { "id": "b", "text": "La situation initiale" },
+        { "id": "c", "text": "La situation finale" },
+        { "id": "d", "text": "La résolution du problème" }
       ],
-      "correctOption": "b",
-      "explanation": "L'élément perturbateur (ou déclencheur) brise l'équilibre de la situation initiale et met l'histoire en mouvement. La situation initiale présente l'équilibre de départ, les péripéties suivent, et le dénouement puis la situation finale closent le récit.",
+      "correctOption": "d",
+      "explanation": "C'est la résolution du problème, dernière des situations intermédiaires : le problème trouve sa solution. Les péripéties qui suivent l'élément modificateur sont les actions et obstacles qui la précèdent ; la situation finale vient après elle et installe le nouvel équilibre ; la situation initiale ouvre le récit.",
       "difficulty": 2
     },
     {
-      "prompt": "Quel connecteur logique exprime une CONSÉQUENCE ?",
+      "prompt": "Quel articulateur logique exprime une CONSÉQUENCE ?",
       "options": [
-        { "id": "a", "text": "parce que" },
-        { "id": "b", "text": "par conséquent" },
-        { "id": "c", "text": "cependant" },
+        { "id": "a", "text": "si bien que" },
+        { "id": "b", "text": "étant donné que" },
+        { "id": "c", "text": "par ailleurs" },
         { "id": "d", "text": "d'abord" }
       ],
-      "correctOption": "b",
-      "explanation": "« par conséquent » introduit la conséquence d'un fait. « parce que » exprime la cause, « cependant » l'opposition, « d'abord » l'ordre/le temps.",
+      "correctOption": "a",
+      "explanation": "« si bien que » introduit la conséquence d'un fait (« je m'entends bien avec mon équipe, si bien que je pars travailler le pied léger »). « étant donné que » exprime la cause, « par ailleurs » ajoute un argument, « d'abord » ouvre une énumération.",
       "difficulty": 2
     },
     {
-      "prompt": "Lisez ce passage :\n\n« Je pense que les jeux vidéo ne sont pas seulement une perte de temps. En effet, certains développent la réflexion et la rapidité. C'est pourquoi il faut savoir les utiliser avec mesure. »\n\nÀ quel type de texte appartient ce passage ?",
+      "prompt": "Lisez ce passage :\n\n« Je pense que les jeux vidéo ne sont pas seulement une perte de temps. En effet, certains développent la réflexion et la rapidité. C'est pourquoi il faut savoir les utiliser avec mesure. »\n\nQuel mot ou groupe de mots introduit l'argument qui justifie la thèse ?",
       "options": [
-        { "id": "a", "text": "Texte descriptif" },
-        { "id": "b", "text": "Texte argumentatif" },
-        { "id": "c", "text": "Texte narratif" },
-        { "id": "d", "text": "Texte informatif" }
+        { "id": "a", "text": "Je pense que" },
+        { "id": "b", "text": "En effet" },
+        { "id": "c", "text": "C'est pourquoi" },
+        { "id": "d", "text": "il faut" }
       ],
       "correctOption": "b",
-      "explanation": "L'auteur défend une opinion (« Je pense que… ») avec un argument (« En effet… ») et une conclusion (« C'est pourquoi… ») : c'est un texte argumentatif. Il ne décrit pas « Texte descriptif », ne raconte pas « Texte narratif » et ne se contente pas d'informer objectivement « Texte informatif ».",
+      "explanation": "« En effet » introduit l'argument : il justifie la thèse en donnant une raison (les jeux développent la réflexion et la rapidité). « Je pense que » introduit la thèse elle-même (expression de l'opinion), « C'est pourquoi » annonce une conséquence, et « il faut » exprime une obligation.",
       "difficulty": 3
     },
     {
-      "prompt": "Dans un paragraphe argumentatif, quel est le rôle de la phrase introduite par « Par exemple » ?",
+      "prompt": "Dans un texte argumentatif, quel est le rôle de la phrase introduite par « Par exemple » ?",
       "options": [
-        { "id": "a", "text": "Annoncer l'idée principale de l'auteur." },
-        { "id": "b", "text": "Illustrer l'argument par un cas concret." },
-        { "id": "c", "text": "Réfuter l'opinion adverse." },
+        { "id": "a", "text": "Énoncer la thèse, c'est-à-dire le point de vue." },
+        { "id": "b", "text": "Annoncer la conséquence de l'argument." },
+        { "id": "c", "text": "Illustrer l'argument par un cas concret." },
         { "id": "d", "text": "Conclure le paragraphe." }
       ],
-      "correctOption": "b",
-      "explanation": "« Par exemple » introduit une illustration : un cas concret qui appuie l'argument. L'idée principale s'annonce sans connecteur d'exemple, la réfutation emploie « certes… mais », et la conclusion utilise « ainsi », « donc ».",
+      "correctOption": "c",
+      "explanation": "« Par exemple » introduit une illustration : un cas concret qui rend l'argument visible. La thèse s'énonce par une expression de l'opinion (« je pense que »), la conséquence par « donc » ou « c'est pourquoi » ; un exemple ne conclut pas, il appuie.",
       "difficulty": 3
     }
   ]

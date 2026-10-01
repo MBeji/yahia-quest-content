@@ -1,14 +1,13 @@
 # 📜 Résumé : Les types de textes et la production écrite
 
-- **4 types de textes** : narratif (raconter), descriptif (décrire), informatif (informer), argumentatif (convaincre).
-- **Indices narratifs** : verbes d'action, passé simple, personnages, chronologie.
-- **Indices descriptifs** : adjectifs, imparfait, verbes d'état, comparaisons, cinq sens.
-- **Indices informatifs** : présent de vérité générale, connecteurs cause/conséquence, vocabulaire spécialisé.
-- **Indices argumentatifs** : thèse, arguments, exemples, connecteurs logiques, verbes d'opinion.
-- **Schéma narratif** (5 étapes) : situation initiale → élément perturbateur → péripéties → dénouement → situation finale.
-- **Connecteurs temporels** : _avant que_ (antériorité), _pendant que_ (simultanéité), _ensuite/enfin_ (postériorité).
-- **Connecteurs logiques** : cause (_parce que_, _car_), conséquence (_donc_, _ainsi_), opposition (_mais_, _cependant_), addition (_de plus_, _en outre_).
-- **Récit** : passé simple (actions) + imparfait (description/fond) + plus-que-parfait (antériorité).
-- **Description** : plan spatial, cinq sens, adjectifs précis, figures de style.
-- **Argumentation** : introduction (thèse) + développement (argument + exemple) + conclusion.
-- **Lettre formelle** : lieu/date, formule d'appel, corps, formule de politesse, signature.
+- **4 types de textes** : narratif (raconter), descriptif (faire voir), informatif (faire connaître un fait réel), argumentatif (défendre un point de vue) — relater un fait réel pour en informer, c'est l'informatif.
+- **Schéma narratif** : situation initiale → élément modificateur → péripéties → résolution du problème → situation finale ; l'élément modificateur lance l'histoire.
+- **Temps et personne du récit** : 1re personne (narrateur-personnage) ou 3e (narrateur extérieur) ; passé simple au premier plan, imparfait à l'arrière-plan — un seul système du début à la fin.
+- **Dialogue** : guillemets pour ouvrir, tiret pour changer de locuteur ; verbe introducteur après la réplique → inversion du sujet (_demanda-t-il_).
+- **Description dans le récit** : verbes de perception, ordre précis (premier plan → arrière-plan), imparfait ; objective ou subjective ; elle prépare la suite.
+- **Portrait** : ce que le personnage est, dit et fait ; les traits physiques annoncent le caractère et le rôle.
+- **Article de presse** : circuit court (surtitre, titre, chapeau, photo légendée) et circuit long ; témoignages et chiffres rendent l'information crédible, sans avis du journaliste.
+- **Texte argumentatif** : thèse (expression de l'opinion) + argumentation (arguments et exemples) ; un argument confirme ou infirme une thèse.
+- **Articulateurs logiques** : _d'abord, ensuite, en outre, par ailleurs, enfin_ pour classer ; _car, en effet_ (cause), _donc, si bien que_ (conséquence), _mais, cependant_ (opposition).
+- **Lettre** : privée (tutoiement, peu de règles) ou officielle (expéditeur, lieu et date, destinataire, objet, formule d'appel, formules de politesse).
+- **Méthode** : lire le type imposé, planifier, rédiger, relire avec la grille du manuel.

@@ -2,69 +2,123 @@
   "title": "Quiz de compréhension",
   "questions": [
     {
-      "prompt": "Quel mode exprime un fait réel, certain ou daté ?",
+      "prompt": "Quel mode présente un fait comme réel, certain ou daté ?",
       "options": [
-        { "id": "a", "text": "Le subjonctif" },
-        { "id": "b", "text": "Le conditionnel" },
-        { "id": "c", "text": "L'impératif" },
-        { "id": "d", "text": "L'indicatif" }
-      ],
-      "correctOption": "d",
-      "explanation": "L'indicatif exprime les faits réels, certains ou datés (ex. : « Il part. / Il partira. »). Le subjonctif exprime le possible ou le souhaité, le conditionnel l'hypothèse.",
-      "difficulty": 1
-    },
-    {
-      "prompt": "Comment se forme un temps composé en français ?",
-      "options": [
-        { "id": "a", "text": "Par la répétition du verbe principal" },
-        { "id": "b", "text": "Par l'auxiliaire « avoir » ou « être » + participe passé" },
-        { "id": "c", "text": "Par le verbe « faire » + infinitif" },
-        { "id": "d", "text": "Par l'ajout du suffixe -ait au verbe" }
-      ],
-      "correctOption": "b",
-      "explanation": "Un temps composé est formé d'un auxiliaire (« avoir » ou « être ») conjugué au temps simple correspondant, suivi du participe passé. Ex. : passé composé = avoir/être au présent + participe passé.",
-      "difficulty": 1
-    },
-    {
-      "prompt": "Dans un récit au passé, quel temps est utilisé pour les descriptions et les actions de fond ?",
-      "options": [
-        { "id": "a", "text": "Le passé simple" },
-        { "id": "b", "text": "Le futur simple" },
-        { "id": "c", "text": "L'imparfait" },
-        { "id": "d", "text": "Le passé antérieur" }
-      ],
-      "correctOption": "c",
-      "explanation": "L'imparfait sert au décor, à la description et aux actions de fond ou habituelles dans un récit au passé. Le passé simple, lui, exprime les actions ponctuelles qui font avancer le récit.",
-      "difficulty": 1
-    },
-    {
-      "prompt": "Quelle est la règle de formation du subjonctif présent ?",
-      "options": [
-        { "id": "a", "text": "Radical du futur simple + terminaisons de l'imparfait" },
+        {
+          "id": "a",
+          "text": "Le subjonctif"
+        },
         {
           "id": "b",
-          "text": "Radical de la 3e personne du pluriel du présent de l'indicatif + terminaisons -e, -es, -e, -ions, -iez, -ent"
+          "text": "Le conditionnel"
         },
         {
           "id": "c",
-          "text": "Infinitif sans -er + terminaisons -ais, -ais, -ait, -ions, -iez, -aient"
+          "text": "L'impératif"
         },
-        { "id": "d", "text": "Participe présent + terminaisons du présent" }
+        {
+          "id": "d",
+          "text": "L'indicatif"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'indicatif présente le fait comme réel ou certain : « Il part. », « Il partira. ». Le subjonctif le présente comme voulu ou douteux (« Il faut qu'il parte »), le conditionnel comme imaginaire ou soumis à une condition, l'impératif comme un ordre.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Comment se forme un temps composé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verbe « aller » au présent + infinitif du verbe"
+        },
+        {
+          "id": "b",
+          "text": "Auxiliaire « avoir » ou « être » + participe passé"
+        },
+        {
+          "id": "c",
+          "text": "Base du futur + terminaisons de l'imparfait"
+        },
+        {
+          "id": "d",
+          "text": "Auxiliaire « avoir » ou « être » + infinitif du verbe"
+        }
       ],
       "correctOption": "b",
-      "explanation": "Le subjonctif présent se forme sur le radical de la 3e personne du pluriel du présent de l'indicatif, auquel on ajoute les terminaisons -e, -es, -e, -ions, -iez, -ent (ex. : ils finissent → qu'il finisse).",
+      "explanation": "Un temps composé associe l'auxiliaire « avoir » ou « être », conjugué au temps simple correspondant, et le participe passé : « il a chanté », « il avait chanté ». Avec l'infinitif, « aller » forme le futur proche (« il va chanter ») ; la base du futur + terminaisons de l'imparfait donne le conditionnel présent, un temps simple.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un récit au passé, quel temps place la description et les éléments secondaires à l'arrière-plan ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le passé simple"
+        },
+        {
+          "id": "b",
+          "text": "Le futur simple"
+        },
+        {
+          "id": "c",
+          "text": "L'imparfait"
+        },
+        {
+          "id": "d",
+          "text": "Le plus-que-parfait"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'imparfait est le temps de l'arrière-plan : décor, description, action qui dure. Le passé simple, lui, porte le premier plan, les actions ponctuelles qui font progresser l'histoire ; le plus-que-parfait marque une action déjà achevée avant un moment du passé.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Lequel de ces verbes ne suit PAS la règle « radical de ils au présent de l'indicatif + -e, -es, -e… » au subjonctif présent ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "faire"
+        },
+        {
+          "id": "b",
+          "text": "finir"
+        },
+        {
+          "id": "c",
+          "text": "sortir"
+        },
+        {
+          "id": "d",
+          "text": "prendre"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "« Faire » est l'un des six verbes irréguliers du subjonctif (être, avoir, faire, pouvoir, savoir, aller) : la règle donnerait « qu'il fonte » (ils font), alors qu'on écrit « qu'il fasse ». « Prendre » suit bien la règle : ils prennent → qu'il prenne, comme ils finissent → qu'il finisse et ils sortent → qu'il sorte.",
       "difficulty": 3
     },
     {
-      "prompt": "Quelle valeur exprime le conditionnel présent dans la phrase « Il partirait s'il pouvait. » ?",
+      "prompt": "Quelle valeur a le conditionnel dans « Il partirait s'il pouvait » ?",
       "options": [
-        { "id": "a", "text": "Un ordre poli" },
-        { "id": "b", "text": "Une vérité générale" },
-        { "id": "c", "text": "Un fait soumis à une condition (hypothèse)" },
-        { "id": "d", "text": "Une action accomplie avant une autre" }
+        {
+          "id": "a",
+          "text": "Un fait soumis à une condition"
+        },
+        {
+          "id": "b",
+          "text": "Une demande ou un ordre atténués"
+        },
+        {
+          "id": "c",
+          "text": "Le futur par rapport au passé"
+        },
+        {
+          "id": "d",
+          "text": "Une action achevée dans l'avenir"
+        }
       ],
-      "correctOption": "c",
-      "explanation": "Le conditionnel présent exprime ici une hypothèse : l'action dépend d'une condition (si + imparfait → conditionnel présent). Il peut aussi exprimer la politesse ou une information non confirmée.",
+      "correctOption": "a",
+      "explanation": "« S'il pouvait » pose une condition : le départ en dépend, c'est un fait soumis à une condition (si + imparfait → conditionnel présent). Il n'y a ni demande polie, ni verbe principal au passé dont le conditionnel serait le futur ; l'action achevée dans l'avenir relève du futur antérieur.",
       "difficulty": 2
     }
   ]

@@ -4,462 +4,667 @@
 
 ## 🏰 Les quatre types de textes
 
-Quatre textes sur le même volcan : l'un raconte l'éruption de 1902, l'autre décrit le cratère au
-lever du jour, le troisième explique pourquoi la lave monte, le dernier défend l'interdiction
-d'habiter au pied du cône.
+Après l'orage, quatre textes parlent du même oued en crue : l'un raconte comment Sami a sauvé
+le troupeau, l'autre décrit le pont envahi par la boue, un article du journal annonce « 120
+familles évacuées », un message au maire défend la construction d'une digue.
 
 Même sujet, quatre textes que rien ne confond. À quoi les reconnaît-on **avant même** d'avoir
 tout lu ?
 
 ::: definition
-Tout texte appartient principalement à l'un de quatre **types**, défini par son **but** :
-**narratif** (raconter), **descriptif** (décrire), **informatif** (faire connaître),
-**argumentatif** (convaincre). Chacun se reconnaît à des **indices** matériels.
+Un texte appartient principalement à l'un de quatre **types**, défini par son **but** :
+**narratif** (raconter une histoire), **descriptif** (faire voir un lieu, un personnage, un
+objet), **informatif** (faire connaître un fait réel), **argumentatif** (défendre un point de
+vue). Chacun se reconnaît à des **indices**.
 :::
 
-| Type             | But principal                            | Indices caractéristiques                                                                                                              |
-| ---------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **Narratif**     | Raconter des événements                  | Verbes d'action, temps du récit (passé simple, imparfait), personnages, lieu, chronologie                                             |
-| **Descriptif**   | Décrire un lieu, un personnage, un objet | Adjectifs qualificatifs, verbes d'état (_être_, _paraître_, _sembler_), imparfait, comparaisons                                       |
-| **Informatif**   | Informer, faire connaître un phénomène   | Présent de vérité générale, connecteurs logiques (_parce que_, _en effet_, _ainsi_), vocabulaire spécialisé, organisation cause/effet |
-| **Argumentatif** | Convaincre, défendre une thèse           | Thèse, arguments, exemples, connecteurs logiques (_cependant_, _donc_, _or_), verbes d'opinion (_je pense que_, _il est vrai que_)    |
+| Type             | But                      | Indices caractéristiques                                                                     |
+| ---------------- | ------------------------ | -------------------------------------------------------------------------------------------- |
+| **Narratif**     | raconter une histoire    | personnages, suite d'actions, schéma narratif, passé simple et imparfait                     |
+| **Descriptif**   | faire voir               | verbes de perception et d'état, adjectifs, comparaisons et métaphores                        |
+| **Informatif**   | faire connaître un fait  | article de presse ou lettre : dates, lieux, chiffres, témoignages, aucun avis du journaliste |
+| **Argumentatif** | défendre un point de vue | thèse (_je pense que…_), arguments, exemples, articulateurs logiques                         |
 
-::: exemple identifier le type par deux indices convergents
+::: exemple identifier le type de l'article sur la crue
 
-1. **Regarde les temps verbaux** : passé simple et imparfait ← récit ; présent de vérité
-   générale ← information ou argumentation.
-2. **Regarde les connecteurs** : _puis_, _le lendemain_ ← chronologie ← narratif ; _en effet_,
-   _par conséquent_ ← logique ← informatif ou argumentatif.
-3. **Départage les deux derniers** : y a-t-il une **thèse** qu'on pourrait contester ? Oui ←
-   **argumentatif** ; non, le texte expose un fait admis ← **informatif**, **parce que**
-   renseigner ne suppose pas d'adversaire.
-
-:::
-
-> 🗡️ Un même texte peut mêler plusieurs types : un roman contient des passages narratifs **et**
-> descriptifs. Il faut identifier le **type dominant** — celui qui sert le but du texte entier.
-
-::: piege l'erreur classique
-
-Conclure « informatif » dès qu'on voit _parce que_. Le mot existe dans les quatre types ; c'est
-la présence d'une **thèse discutable** qui sépare l'argumentatif de l'informatif — et une
-chronologie qui sépare le narratif des deux.
+1. **Cherche le but** : l'article annonce « 120 familles évacuées » ← il fait connaître un fait
+   réel, **car** le lecteur doit savoir ce qui s'est passé.
+2. **Vérifie les indices** : une date (« mardi »), un lieu, un chiffre, un témoin cité ← indices
+   de l'**informatif**, **car** ils rendent l'information vérifiable.
+3. **Écarte l'argumentatif** : le journaliste ne dit pas ce qu'il pense ← pas de thèse, **car**
+   informer ne demande pas de convaincre.
 
 :::
+
+::: piege Erreur fréquente
+« Il raconte ce qui s'est passé, donc c'est un texte narratif. » ✗ Un article de presse
+**relate** aussi des événements : c'est ce qui trompe. Mais son but est d'**informer** sur un
+fait réel — dates, chiffres, sources — et non de raconter une histoire avec ses personnages et
+son schéma narratif. ✓ L'article sur la crue est **informatif**.
+:::
+
+> 🗡️ Un même texte mêle souvent plusieurs types : un récit contient des passages descriptifs et
+> des dialogues. On nomme le **type dominant**, celui qui sert le but du texte entier.
 
 ::: verifie
-Quel type : _« La lave monte parce que la pression des gaz augmente dans la chambre
-magmatique. »_ ?
+Quel type : _« Mardi, à Tabarka, un pêcheur de 62 ans a sauvé deux enfants emportés par les
+vagues, a confirmé la Protection civile. »_ ?
 
 ---
 
-**Informatif** : présent de vérité générale, connecteur de cause, vocabulaire spécialisé — et
-surtout **aucune thèse discutable**. Le texte fait connaître un mécanisme, il ne défend pas une
-position.
+**Informatif** : un fait réel, daté (« mardi »), situé (« à Tabarka »), chiffré (« 62 ans »),
+appuyé sur une source (« a confirmé la Protection civile »). La phrase relate un événement,
+mais pour en informer le lecteur, sans avis personnel.
 :::
 
 ::: retenir
-Le type d'un texte se lit sur son but et se prouve par deux indices convergents — et c'est la
-thèse discutable qui sépare l'argumentatif de l'informatif.
+Le type d'un texte se lit sur son but et se prouve par ses indices — et relater un fait réel
+pour en informer, c'est l'informatif, pas le narratif.
 :::
 
 ## ⚡ Le schéma narratif
 
-Voici un « récit » : _« Il vivait au village. Il vivait toujours au village. »_ Il a un
+Voici un « récit » : _« Sami vivait au village. Il vivait toujours au village. »_ Il a un
 personnage, un lieu, un début et une fin — et ce n'est pas une histoire.
 
 Il y manque une chose, une seule. Laquelle ?
 
 ::: definition
-Tout récit complet suit un **schéma narratif** en cinq étapes : **situation initiale**,
-**élément perturbateur**, **péripéties**, **dénouement**, **situation finale**. L'élément
-perturbateur est ce qui **rompt l'équilibre** — sans lui, il n'y a pas de récit.
+Un récit suit souvent le **schéma narratif** : une **situation initiale**, des **situations
+intermédiaires** — l'**élément modificateur**, les **péripéties**, la **résolution du
+problème** — puis une **situation finale**. L'élément modificateur est l'événement qui
+**change la situation de départ** et lance l'histoire.
 :::
 
-| Étape                | Ce qu'elle fait                                  | Temps dominant       |
-| -------------------- | ------------------------------------------------ | -------------------- |
-| Situation initiale   | présente l'univers, les personnages, l'équilibre | imparfait            |
-| Élément perturbateur | rompt l'équilibre, lance l'histoire              | passé simple         |
-| Péripéties           | obstacles et tentatives de rétablir l'équilibre  | passé simple         |
-| Dénouement           | le problème se résout (ou non)                   | passé simple         |
-| Situation finale     | nouvel équilibre, bilan                          | imparfait ou présent |
+> On dit aussi « élément perturbateur » et « dénouement ».
 
-::: exemple construire un récit complet à partir d'une phrase plate
+| Étape                  | Ce qu'elle fait                                | Temps fréquent       |
+| ---------------------- | ---------------------------------------------- | -------------------- |
+| Situation initiale     | présente les personnages, le lieu, l'équilibre | imparfait            |
+| Élément modificateur   | rompt l'équilibre, lance l'histoire            | passé simple         |
+| Péripéties             | actions et obstacles qui suivent               | passé simple         |
+| Résolution du problème | le problème trouve sa solution (ou non)        | passé simple         |
+| Situation finale       | nouvel équilibre, différent du premier         | imparfait ou présent |
 
-1. **Situation initiale** : _« Sami vivait au village, entre l'école et le champ de son père. »_
-   ← imparfait, décor, équilibre.
-2. **Élément perturbateur** : _« Un matin, la rivière **déborda**. »_ ← passé simple, rupture ←
-   **c'est ici que l'histoire commence vraiment**.
-3. **Péripéties** : _« Il courut prévenir les voisins, tenta de sauver les bêtes, échoua deux
-   fois… »_ ← suite d'actions et d'obstacles.
-4. **Dénouement** : _« …jusqu'à ce que les hommes du village construisent une digue. »_
-5. **Situation finale** : _« Depuis, la rivière **coulait** sagement derrière son mur de
-   pierres. »_ ← nouvel équilibre, **différent** du premier.
+::: exemple construire un récit complet à partir de la phrase plate
 
-:::
-
-> 💡 L'élément perturbateur et le dénouement sont souvent au **passé simple** ; la situation
-> initiale et la situation finale, à l'**imparfait** ou au **présent**. Le changement de temps
-> signale à lui seul les articulations du récit.
-
-::: piege l'erreur classique
-
-Écrire une situation finale identique à la situation initiale. Si rien n'a changé, l'élément
-perturbateur n'a servi à rien — et le lecteur referme le texte en se demandant ce qu'on a voulu
-lui raconter.
+1. _« Sami vivait au village. »_ ← **situation initiale**, **car** l'imparfait pose le décor.
+2. _« Un matin, l'oued déborda. »_ ← **élément modificateur**, **car** un fait soudain change tout.
+3. _« Il courut prévenir les voisins, échoua… »_ ← **péripéties**, **car** il affronte le problème.
+4. _« Les villageois bâtirent une digue. »_ ← **résolution du problème**, **car** le problème est réglé.
+5. _« Depuis, l'oued coulait sagement. »_ ← **situation finale**, **car** l'équilibre a changé.
 
 :::
 
-::: verifie
-Un récit se termine par : _« Et le village resta exactement comme avant. »_ Que manque-t-il ?
-
----
-
-Un **écart entre les deux situations**. Soit le monde a changé, soit le personnage a changé — au
-moins dans sa façon de voir. Sans cet écart, le schéma narratif est incomplet : l'élément
-perturbateur n'a rien perturbé durablement.
+::: piege Erreur fréquente
+Prendre les péripéties pour l'élément modificateur : _« Il courut prévenir les voisins »_ ✗
+est déjà une réaction — ce qui trompe : c'est la première **action** du héros. ✓ L'élément
+modificateur est l'événement qui la provoque : _« l'oued déborda »_.
 :::
-
-::: retenir
-Cinq étapes, et un pivot : l'élément perturbateur — et la situation finale doit différer de la
-situation initiale, sinon il n'y a pas de récit.
-:::
-
-## 🛡️ Les connecteurs logiques et temporels
-
-Deux phrases : _« Il partit. **Puis** il revint. »_ et _« Il partit. **Pourtant** il revint. »_
-Les événements sont les mêmes ; le second connecteur ajoute une surprise que le premier n'a pas.
-
-Les connecteurs ne servent donc pas seulement à relier. Que font-ils exactement, et comment se
-répartissent-ils ?
-
-::: definition
-Les **connecteurs** assurent la cohérence du texte en **nommant la relation** entre deux idées.
-Les **connecteurs temporels** situent dans le temps (récits) ; les **connecteurs logiques**
-expriment cause, conséquence, opposition, addition ou illustration (explication et
-argumentation).
-:::
-
-| Connecteurs temporels | Exemples                                                |
-| --------------------- | ------------------------------------------------------- |
-| Antériorité           | _avant que_, _auparavant_, _la veille_                  |
-| Simultanéité          | _pendant que_, _tandis que_, _en même temps_, _alors_   |
-| Postériorité          | _ensuite_, _puis_, _après que_, _le lendemain_, _enfin_ |
-
-| Connecteurs logiques  | Exemples                                            |
-| --------------------- | --------------------------------------------------- |
-| Cause                 | _parce que_, _car_, _en effet_, _puisque_           |
-| Conséquence           | _donc_, _ainsi_, _c'est pourquoi_, _par conséquent_ |
-| Opposition/concession | _mais_, _cependant_, _néanmoins_, _pourtant_, _or_  |
-| Addition              | _de plus_, _en outre_, _par ailleurs_, _également_  |
-| Illustration          | _par exemple_, _notamment_, _c'est le cas de_       |
-
-::: exemple mesurer ce qu'un connecteur ajoute
-
-1. **Sans connecteur** : _« Il pleuvait. Il sortit. »_ ← deux faits juxtaposés, aucune relation
-   affirmée.
-2. **Avec un connecteur de cause** : _« Il pleuvait, **c'est pourquoi** il sortit. »_ ← étrange :
-   la pluie ne pousse pas dehors.
-3. **Avec un connecteur d'opposition** : _« Il pleuvait, **pourtant** il sortit. »_ ← naturel ←
-   **parce que** le connecteur doit dire la relation **réelle** entre les deux faits, sans quoi
-   il désoriente le lecteur au lieu de le guider.
-
-:::
-
-> 🗡️ Dans une copie d'examen, employer des connecteurs **variés** est un critère de qualité
-> explicitement évalué. Un texte entier relié par « et » se voit immédiatement.
-
-::: piege l'erreur classique
-
-Mettre un connecteur logique dans un récit purement chronologique : _« Il se leva, **par
-conséquent** il ouvrit la fenêtre. »_ Une succession n'est pas une conséquence. Dans un récit,
-les connecteurs sont **temporels** sauf raison précise.
-
-:::
-
-::: verifie
-Quel connecteur pour : _« Le sport développe l'endurance. … il apprend la discipline. »_
-
----
-
-Un connecteur d'**addition** : _de plus_, _en outre_, _par ailleurs_. Les deux idées vont dans le
-même sens et s'ajoutent — ni cause, ni conséquence, ni opposition.
-:::
-
-::: retenir
-Le connecteur nomme la relation entre deux idées : temporelle dans le récit, logique dans
-l'explication et l'argumentation — et un connecteur faux désoriente plus qu'il n'aide.
-:::
-
-## 🔮 Produire un récit
-
-Tu connais le schéma narratif. Reste à écrire — et c'est là que la copie se joue : deux élèves
-qui suivent le même schéma ne rendent pas le même texte.
-
-Qu'est-ce qui, concrètement, fait la différence entre un schéma respecté et un récit réussi ?
 
 ::: propriete
-Un récit réussi respecte le **schéma narratif**, emploie les **temps du récit** à leur place,
-**varie les types de phrases**, insère du **dialogue** et des **passages descriptifs**, et
-enrichit l'expression par des **figures de style**.
-:::
-
-| Ingrédient           | Ce qu'il apporte                     | Où l'employer                            |
-| -------------------- | ------------------------------------ | ---------------------------------------- |
-| Temps du récit       | la structure temporelle              | passé simple = actions, imparfait = fond |
-| Dialogue             | la vie, le caractère des personnages | aux moments de tension                   |
-| Passages descriptifs | l'ancrage dans un espace             | situation initiale surtout               |
-| Figures de style     | la force expressive                  | aux moments à mettre en relief           |
-
-::: exemple enrichir une phrase plate en trois passes
-
-1. **Départ** : _« Il entra dans la grotte. Il avait peur. »_
-2. **Ajoute le fond à l'imparfait** : _« La grotte **était** noire et **sentait** l'humidité.
-   Il **entra**. »_ ← le passé simple ressort sur le fond imparfait.
-3. **Ajoute une figure et un dialogue** : _« L'obscurité **l'avala comme une gueule**. — Il y a
-   quelqu'un ? **murmura-t-il**. »_ ← la métaphore dit la peur sans l'affirmer, **parce que**
-   montrer vaut mieux qu'énoncer.
-
-:::
-
-::: piege l'erreur classique
-
-Écrire tout le récit au passé composé parce que c'est le temps de l'oral. En production écrite
-scolaire, on attend le couple **passé simple / imparfait** — et surtout la **cohérence** : un
-seul système de temps du début à la fin.
-
+Un récit se **planifie** avant d'être rédigé, en suivant ce schéma. Cas-limite : l'auteur peut
+**ne pas s'y conformer** — un retour en arrière (raconter plus tard ce qui s'était passé
+avant), un saut en avant. Les étapes existent toujours ; seul l'ordre du texte change.
 :::
 
 ::: verifie
-_« Il a ouvert la porte. Le vent était froid. Il a frissonné. »_ — que corriges-tu ?
+_« Léa vivait paisiblement au bord de la rivière. Un matin, une lettre anonyme arriva et
+bouleversa son existence. »_ — quelle étape est la deuxième phrase ?
 
 ---
 
-Le **système de temps** : le passé composé mêlé à l'imparfait relève de l'oral. En récit écrit :
-_« Il **ouvrit** la porte. Le vent **était** froid. Il **frissonna**. »_ — passé simple pour les
-actions, imparfait pour le fond.
+L'**élément modificateur** : après l'équilibre posé à l'imparfait (« vivait »), un événement
+soudain au passé simple (« arriva », « bouleversa ») change la situation de départ. Les
+péripéties viendront **après** lui.
 :::
 
 ::: retenir
-Le schéma ne suffit pas : un récit réussi tient au système de temps, au dialogue, à la
-description et aux figures — et le système de temps ne change pas en cours de route.
+Situation initiale, élément modificateur, péripéties, résolution du problème, situation
+finale : l'élément modificateur lance l'histoire, et la fin diffère du début.
 :::
 
-## 🌀 Produire une description
+## 🔮 Raconter : le temps et la personne du récit
 
-Deux descriptions de la même place : la première énumère un palmier, un banc, une fontaine, un
-chat. La seconde part de la vue d'ensemble et resserre jusqu'au chat endormi sur le banc.
+Deux débuts pour la même scène : _« Je pousse la porte et je découvre la grotte. »_ et _« Il
+poussa la porte ; la grotte était noire. »_
+
+L'histoire est la même. Qu'est-ce qui a changé, et lequel des deux faut-il choisir ?
+
+::: definition
+Un récit s'écrit à la **1re personne** (le narrateur est aussi un personnage) ou à la **3e
+personne** (le narrateur est extérieur au récit). Il s'écrit **au présent** (présent de
+narration) ou **au passé** : le **passé simple** porte les actions, l'**imparfait** le décor.
+:::
+
+| Passé simple                                 | Imparfait                             |
+| -------------------------------------------- | ------------------------------------- |
+| action ponctuelle, située à un moment précis | action qui dure dans le passé         |
+| action accomplie                             | action en voie d'accomplissement      |
+| **premier plan** : fait avancer l'histoire   | **arrière-plan** : décor, description |
+| seulement à l'écrit, langue soutenue         | à l'écrit et à l'oral                 |
+
+::: exemple corriger une copie qui mélange les systèmes
+
+1. **Départ** : _« Il a ouvert la porte. Le vent était froid. Il a frissonné. »_ ← à corriger,
+   **car** le passé composé y côtoie l'imparfait.
+2. **Repère les actions** : _ouvrir_, _frissonner_ ← au **passé simple**, **car** ce sont des
+   actions ponctuelles du premier plan : _« Il **ouvrit** … il **frissonna**. »_
+3. **Repère le décor** : _le vent était froid_ ← reste à l'**imparfait**, **car** c'est
+   l'arrière-plan.
+
+:::
+
+::: piege Erreur fréquente
+Raconter au **passé composé** parce que c'est le temps de l'oral : _« Il a ouvert la porte »_
+✗. Dans un récit écrit au passé, on attend le couple **passé simple / imparfait** : _« Il
+ouvrit la porte »_ ✓ — et on le garde du début à la fin.
+:::
+
+::: propriete
+Le passé simple et l'imparfait **ne sont pas interchangeables** : chacun a son plan. Cas-limite :
+le **présent de narration** remplace les deux à la fois ; on choisit alors un seul système, au
+présent ou au passé, et on ne change pas en cours de route. De même pour la personne : un
+récit commencé avec _je_ ne bascule pas vers _il_.
+:::
+
+::: verifie
+Réécris à la 3e personne : _« Je courus vers la rivière ; j'avais peur. »_
+
+---
+
+_« Il courut vers la rivière ; il avait peur. »_ Le narrateur devient **extérieur** au récit ;
+les temps ne bougent pas — passé simple pour l'action, imparfait pour le sentiment qui dure.
+:::
+
+::: retenir
+Un récit choisit sa personne et son système de temps, et les tient : passé simple au premier
+plan, imparfait à l'arrière-plan.
+:::
+
+## 💬 Insérer un dialogue dans le récit
+
+_« Le maître lui demanda son âge et il répondit qu'il avait sept ans. »_ On n'entend personne.
+
+Comment faire parler les personnages au milieu du récit, sans que le lecteur se perde entre
+les voix ?
+
+::: definition
+Un **dialogue** inséré dans le récit se signale par des **guillemets** (le narrateur donne la
+parole à un personnage) et par un **tiret** en début de ligne (on **change de locuteur**). Un
+**verbe introducteur** (_demander, répondre, rétorquer, murmurer…_) indique qui parle.
+:::
+
+| Place du verbe introducteur  | Exemple                                            | Sujet          |
+| ---------------------------- | -------------------------------------------------- | -------------- |
+| **avant** la réplique        | _Le maître demanda : « Quel âge as-tu ? »_         | sans inversion |
+| **au milieu** de la réplique | _« Sept ans, répondit l'enfant, et demain huit. »_ | **inversé**    |
+| **à la fin** de la réplique  | _« Quel âge as-tu ? » demanda le maître._          | **inversé**    |
+
+::: exemple transformer la phrase du maître en dialogue
+
+1. **Repère les paroles** : une question (l'âge), une réponse (sept ans) ← deux répliques,
+   **car** il y a deux locuteurs.
+2. **Ouvre les guillemets** : _Le maître demanda : « Quel âge as-tu ?_ ← verbe avant la
+   réplique, sujet non inversé, **car** le verbe ouvre la phrase.
+3. **Change de ligne avec un tiret** : _— Sept ans, répondit l'enfant. »_ ← le tiret marque le
+   changement de locuteur ; sujet inversé, **car** le verbe suit la réplique.
+4. **Choisis le verbe** : _demander_ pour une question, _répondre_ pour la réponse ← **car**
+   le verbe suit le type de la phrase rapportée.
+
+:::
+
+::: piege Erreur fréquente
+_« Quel âge as-tu ? il demanda. »_ ✗ — calque de l'oral, où l'on ne fait pas l'inversion.
+Après la réplique, le sujet se place **après** le verbe : _« Quel âge as-tu ? » demanda-t-il_
+✓, avec le trait d'union et le **-t-** quand le sujet est un pronom.
+:::
+
+::: propriete
+Le dialogue **rend le récit vivant** et renseigne sur le comportement, le caractère et les
+sentiments des personnages. Le verbe introducteur se choisit selon le **type de phrase** et
+l'**intention** du locuteur. Cas-limite : _murmurer_ (un secret), _rétorquer_ (une riposte),
+_bafouiller_ (l'embarras) disent ce que _dire_ ne dit pas.
+:::
+
+::: verifie
+Place le verbe _répondre_ à la fin de la réplique de Sami : _« Je n'ai pas peur. »_
+
+---
+
+_« Je n'ai pas peur », répondit Sami._ Le verbe vient **après** la réplique : le sujet
+« Sami » passe donc **après** le verbe (inversion), et une virgule sépare la réplique de
+l'incise.
+:::
+
+::: retenir
+Guillemets pour ouvrir, tiret pour changer de locuteur, et un verbe introducteur placé après la
+réplique impose l'inversion du sujet.
+:::
+
+## 🌀 Insérer une description dans le récit
+
+Deux descriptions de la même place : la première énumère un palmier, un banc, une fontaine. La
+seconde suit le regard de Sami qui arrive, du banc tout proche jusqu'au minaret au fond.
 
 Les éléments sont identiques. Pourquoi ne vois-tu la place que dans la seconde ?
 
+::: definition
+On **insère une description** (d'un lieu, d'un personnage, d'un objet, d'un animal) dans un
+récit pour donner au lecteur les informations qui l'aident à **comprendre la situation** et à
+**anticiper la suite**.
+:::
+
+| Outil                      | Exemples                                                              |
+| -------------------------- | --------------------------------------------------------------------- |
+| **Verbes de perception**   | _voir, apercevoir, distinguer, découvrir, entendre, sentir_           |
+| **Ordre précis**           | du premier plan à l'arrière-plan, du haut vers le bas, au fil des pas |
+| **Expansions du GN**       | _un banc **de pierre**, un chat **roux**, une porte **qui grinçait**_ |
+| **Comparaison, métaphore** | _la place, **comme** un four_ ; _la place était **un four**_          |
+
+::: exemple décrire la place à travers le regard de Sami
+
+1. **Introduis par un verbe de perception** : _« Sami **aperçut** d'abord un banc de
+   pierre… »_ ← **car** le lecteur voit par les yeux du personnage.
+2. **Suis un ordre** : le banc, puis la fontaine, puis le minaret au fond ← du premier plan à
+   l'arrière-plan, **car** l'ordre rend la description cohérente.
+3. **Écris à l'imparfait** : _« un chat roux **dormait** sur le banc »_ ← **car** la
+   description forme l'arrière-plan du récit.
+4. **Annonce la suite** : _« la porte de la mosquée **était entrouverte** »_ ← **car** ce
+   détail prépare ce qui va arriver.
+
+:::
+
+::: piege Erreur fréquente
+Écrire un inventaire : _« Il y avait un palmier, un banc, une fontaine, un chat. »_ ✗ Ce qui
+trompe : tout est là. Mais sans verbe de perception ni ordre, le lecteur ne voit rien. ✓ _« En
+entrant, Sami aperçut un banc ; plus loin, une fontaine ; au fond, le minaret. »_
+:::
+
 ::: propriete
-Une description s'**organise** : elle suit un **plan spatial** (de loin à près, de haut en bas,
-du général au particulier), fait appel aux **cinq sens**, emploie l'**imparfait** dans un récit
-ou le **présent** en description autonome, et choisit des **adjectifs précis**.
-:::
-
-::: exemple organiser une description en quatre mouvements
-
-1. **Vue d'ensemble** : _« La place s'ouvrait, large et blanche sous le soleil. »_
-2. **Éléments marquants** : _« Un palmier unique y jetait son ombre sur une fontaine tarie. »_
-3. **Détails précis** : _« Sur le banc de pierre, un chat roux dormait, une oreille déchirée. »_
-4. **Impression d'ensemble** : _« Tout y semblait attendre quelque chose qui ne venait pas. »_ ←
-   **parce que** la description sans impression finale reste un inventaire.
-
-:::
-
-> 💡 Les **cinq sens** : ne te limite pas à la vue. Une odeur ou un bruit ancrent un lieu plus
-> sûrement qu'une couleur de plus — _« la place sentait le jasmin et le goudron chaud »_.
-
-::: piege l'erreur classique
-
-Accumuler les adjectifs vagues : _« une belle place très jolie et agréable »_. Trois adjectifs
-qui ne montrent rien. Un seul précis vaut mieux : _« une place blanchie de chaux »_.
-
+Une description peut être **objective** (elle constate : _un mur de trois mètres_) ou
+**subjective** (elle juge : _un mur sinistre_). La subjectivité passe par le choix des
+**adjectifs**, des **comparaisons** et des **métaphores**. Cas-limite : la **métaphore** est
+une comparaison abrégée, **sans outil** de comparaison (_comme, ainsi que, semblable à_).
 :::
 
 ::: verifie
-Remets en ordre : _(le chat sur le banc) · (la place vue d'ensemble) · (le palmier et la
-fontaine)_.
+Remets en ordre pour un regard qui avance : _minaret au fond · banc à l'entrée · fontaine_.
 
 ---
 
-**Place → palmier et fontaine → chat** : du général au particulier. L'ordre inverse oblige le
-lecteur à situer le chat avant de savoir où il se trouve.
+**Banc → fontaine → minaret** : du premier plan à l'arrière-plan, au rythme des pas de celui
+qui regarde. L'ordre inverse ferait sauter le regard du fond à l'entrée.
 :::
 
 ::: retenir
-Une description s'organise avant de s'orner : plan spatial, cinq sens, adjectifs précis, et une
-impression finale qui rassemble.
+Une description insérée dans un récit s'introduit par un verbe de perception, suit un ordre
+précis et prépare la suite de l'histoire.
 :::
 
-## ✍️ Produire un texte argumentatif
+## 🎭 Le portrait
 
-_« Le sport est bon pour la santé. Le sport est utile. Il faut faire du sport. »_ Trois phrases,
-une seule idée répétée.
+_« C'était un homme grand, aux cheveux bruns, aux yeux marron. »_ On pourrait le retrouver
+dans la rue — mais on ne sait rien de lui.
 
-Le texte a une thèse mais ne convainc personne. Que faut-il lui ajouter, et dans quel ordre ?
+Que faut-il montrer d'un personnage pour que le lecteur devine **qui il est** et le rôle qu'il
+va jouer ?
 
 ::: definition
-Un texte argumentatif comporte une **thèse** (la position défendue), des **arguments** (les
-raisons), des **exemples** (les faits qui les incarnent). L'argument répond à « **pourquoi ?** »,
-l'exemple répond à « **par exemple ?** ».
+Le **portrait** présente un personnage et **annonce le rôle** qu'il va jouer. Il le
+caractérise par **ce qu'il est** (aspect physique et caractère), **ce qu'il dit** (paroles,
+façon de parler) et **ce qu'il fait** (actes, comportement).
 :::
 
-| Partie        | Contenu                                                    |
-| ------------- | ---------------------------------------------------------- |
-| Introduction  | présenter le sujet, annoncer la thèse                      |
-| Développement | un paragraphe = un argument + un exemple                   |
-| Paragraphe    | affirmation → explication → exemple → conclusion partielle |
-| Conclusion    | reformuler la thèse et ouvrir une perspective              |
+| Portrait physique              | Portrait moral               |
+| ------------------------------ | ---------------------------- |
+| visage, regard, silhouette     | caractère, qualités, défauts |
+| _un regard qui fuit le vôtre_  | → méfiance, secret           |
+| _des mains calleuses, tachées_ | → travailleur, vie rude      |
 
-::: exemple transformer une répétition en argumentation
+::: exemple faire le portrait du gardien de la ferme
 
-1. **Thèse** : _« Le sport est indispensable à un adolescent. »_
-2. **Argument** (pourquoi ?) : _« **En effet**, l'effort régulier renforce le cœur et diminue le
-   stress. »_ ← une raison, pas une reformulation.
-3. **Exemple** (par exemple ?) : _« **Ainsi**, un élève qui court trois fois par semaine dort
-   mieux et se concentre plus longtemps en classe. »_
-4. **Conclusion partielle** : _« Le sport agit donc sur le corps **et** sur les études. »_ ←
-   **parce que** chaque paragraphe doit refermer son idée avant d'ouvrir la suivante.
+1. **Fixe le rôle** : il cachera un secret ← **car** le portrait annonce ce rôle.
+2. **Choisis un trait du visage** : _« des yeux étroits qui ne se posaient sur personne »_ ←
+   le visage, **car** c'est la partie la plus expressive du corps.
+3. **Ajoute ce qu'il dit** : _« Il répondait par un grognement »_ ← **car** la façon de parler
+   révèle le caractère.
+4. **Ajoute ce qu'il fait** : _« il fermait le hangar à clé, deux fois »_ ← **car** les actes
+   confirment le soupçon.
 
 :::
 
-> 💡 Test rapide : si ton « argument » peut se remplacer par la thèse elle-même sans que la
-> phrase change de sens, ce n'est pas un argument — c'est une répétition.
+::: piege Erreur fréquente
+Écrire un **signalement** de police : taille, couleur des cheveux, couleur des yeux ✗. Ce qui
+trompe : c'est précis. Mais ces traits n'apprennent rien du caractère. ✓ Choisis les traits
+physiques qui **révèlent** le caractère : _un regard fuyant_, _un sourire qui ne monte jamais
+jusqu'aux yeux_.
+:::
 
-::: piege l'erreur classique
-
-Enchaîner les exemples sans argument : trois anecdotes ne prouvent rien tant qu'on n'a pas dit
-**ce qu'elles montrent**. L'exemple illustre l'argument ; il ne le remplace jamais.
-
+::: propriete
+Les traits physiques se choisissent pour renseigner sur les **traits psychologiques**, et tous
+deux restent cohérents avec le **rôle** du personnage. Cas-limite : un trait neutre (_il
+mesurait 1,70 m_) peut rester s'il sert l'action, mais il ne fait pas, à lui seul, un portrait.
 :::
 
 ::: verifie
-_« Il faut lire, car la lecture est importante. »_ — corrige.
+Lequel de ces traits renseigne sur le caractère : _des cheveux châtains_ ou _un regard qui
+fuyait les questions_ ?
 
 ---
 
-_« car la lecture est importante »_ répète la thèse. Un vrai argument : _« car la lecture élargit
-le vocabulaire et améliore l'expression écrite »_ — une raison vérifiable, extérieure à la thèse.
+**Un regard qui fuyait les questions** : un trait physique qui suggère la gêne ou le secret.
+_Des cheveux châtains_ décrivent l'apparence sans rien dire de la personne.
 :::
 
 ::: retenir
-Thèse, argument, exemple : l'argument dit pourquoi, l'exemple dit comment cela se voit — et une
-reformulation de la thèse n'est pas un argument.
+Un portrait montre ce que le personnage est, dit et fait — et ses traits physiques annoncent son
+caractère et son rôle.
+:::
+
+## 📰 Le texte informatif : l'article de presse
+
+Au kiosque, tu lis seulement le gros titre et les trois lignes en gras sous lui — et tu sais
+déjà ce qui s'est passé à Sousse hier.
+
+Comment le journaliste a-t-il organisé son article pour qu'un lecteur pressé saisisse
+l'essentiel en dix secondes ?
+
+::: definition
+L'**article de presse** est un texte **informatif**. Il prévoit deux **circuits de lecture** :
+le **circuit court** — **surtitre**, **titre**, **chapeau**, sous-titres, photos légendées —
+donne l'essentiel en peu de temps ; le **circuit long** est l'article proprement dit.
+:::
+
+| Élément            | Rôle                                          | Exemple                                               |
+| ------------------ | --------------------------------------------- | ----------------------------------------------------- |
+| **Surtitre**       | annonce la rubrique                           | _INSOLITE_                                            |
+| **Titre**          | accroche, résume en quelques mots             | _Une tortue géante dans le port de Sousse_            |
+| **Chapeau**        | quelques lignes en gras : l'essentiel du fait | _Mardi, des pêcheurs ont libéré une tortue de 80 kg…_ |
+| **Photo légendée** | montre, et sa légende explique ce qu'on voit  | _La tortue regagne le large._                         |
+
+::: exemple transformer un fait divers en article
+
+1. **Choisis le surtitre** : _INSOLITE_ ← **car** il annonce le genre de nouvelle.
+2. **Écris le titre** : court et frappant ← **car** il doit donner envie de lire.
+3. **Rédige le chapeau** : ce qui s'est passé, où, quand ← **car** le lecteur pressé s'arrête
+   souvent là.
+4. **Développe en paragraphes** : les faits, puis un **témoignage** (_« Elle était épuisée »,
+   a déclaré un pêcheur_) ← **car** citer un témoin rend l'information **crédible**.
+
+:::
+
+::: piege Erreur fréquente
+Donner son avis dans l'article : _« Quelle histoire merveilleuse ! Bravo à ces pêcheurs ! »_ ✗
+Ce qui trompe : l'émotion rend le texte vivant. Mais le journaliste **informe** ; il ne cherche
+pas à convaincre. ✓ _« Les pêcheurs ont mis deux heures à la libérer. »_ — un fait, vérifiable.
+:::
+
+::: propriete
+L'information est **crédible** quand elle s'appuie sur des **témoignages**, des **citations
+d'experts**, des dates et des chiffres. Elle est **organisée** en paragraphes signalés par des
+alinéas, et les **procédés de reprise** (_la tortue → l'animal → elle_) font progresser le
+texte. Cas-limite : un fait divers **relate** des événements et reste informatif.
+:::
+
+::: verifie
+Dans l'article sur la tortue, quel élément un lecteur pressé lit-il pour connaître l'essentiel
+du fait, après le titre ?
+
+---
+
+Le **chapeau** : les quelques lignes en gras sous le titre, qui disent ce qui s'est passé, où et
+quand. Avec le surtitre, le titre et la photo légendée, il forme le **circuit court**.
+:::
+
+::: retenir
+Un article de presse informe : surtitre, titre et chapeau donnent l'essentiel, et les
+témoignages rendent l'information crédible.
+:::
+
+## ✍️ Le texte argumentatif : la thèse et l'argumentation
+
+_« Le sport est bon pour la santé. Le sport est utile. Il faut faire du sport. »_ Trois
+phrases, une seule idée répétée.
+
+Le texte a un point de vue mais ne convainc personne. Que faut-il lui ajouter ?
+
+::: definition
+Dans un texte argumentatif, on défend son point de vue contre ceux qui pensent le contraire. On
+distingue deux parties : la **thèse**, où l'on énonce son point de vue (_je pense que…, il me
+semble que…, je considère que…_), et l'**argumentation**, où on le **justifie** par des
+**arguments** et des **exemples**.
+:::
+
+| Partie       | Question à laquelle elle répond | Exemple                                         |
+| ------------ | ------------------------------- | ----------------------------------------------- |
+| **Thèse**    | Que penses-tu ?                 | _Je pense que le sport est indispensable._      |
+| **Argument** | Pourquoi ?                      | _car il renforce le cœur et diminue le stress._ |
+| **Exemple**  | Comment cela se voit-il ?       | _Mon frère dort mieux depuis qu'il court._      |
+
+::: exemple transformer la répétition en argumentation
+
+1. **Thèse** : _« Je pense que le sport est indispensable à un adolescent. »_ ← **car** une
+   expression de l'opinion annonce le point de vue.
+2. **Argument** : _« **En effet**, l'effort régulier renforce le cœur et diminue le stress. »_
+   ← une raison, **car** elle répond à « pourquoi ? ».
+3. **Exemple** : _« Mon frère, qui court trois fois par semaine, dort mieux. »_ ← **car** un
+   cas concret rend l'argument visible.
+
+:::
+
+::: piege Erreur fréquente
+_« Il faut lire, car la lecture est importante. »_ ✗ Ce qui trompe : le mot _car_ est là. Mais
+ce qui suit répète la thèse au lieu de la justifier. ✓ _« Il faut lire, car la lecture enrichit
+le vocabulaire. »_ — une raison extérieure à la thèse.
+:::
+
+::: propriete
+Un argument **confirme** une thèse ou l'**infirme**. Cas-limite : le même fait peut servir les
+deux camps selon la thèse. _« Les femmes exercent déjà tous les métiers »_ confirme la thèse
+« tous les métiers peuvent être exercés par des femmes » et infirme la thèse contraire.
+:::
+
+::: verifie
+Thèse : _« Le travail en groupe aide les élèves. »_ L'argument _« Souvent, un seul élève
+travaille pendant que les autres attendent »_ la confirme-t-il ?
+
+---
+
+**Non, il l'infirme** : il montre une limite du travail en groupe et s'oppose donc à la thèse.
+Un argument qui la confirmerait : _« Chacun explique aux autres ce qu'il a compris. »_
+:::
+
+::: retenir
+Thèse, puis argumentation : l'argument dit pourquoi, l'exemple le montre — et répéter la thèse
+n'est pas la justifier.
+:::
+
+## 🛡️ Les articulateurs logiques
+
+Yasmine écrit : _« Je veux être infirmière. J'aime aider les malades. Ce métier mêle technique
+et contact humain. Je m'entends bien avec les soignants. »_
+
+Elle donne des raisons, mais où commence chacune, et laquelle compte le plus ?
+
+::: definition
+Les **articulateurs logiques** relient les idées et **nomment leur relation**. Pour **énumérer
+et classer** les arguments, on emploie : _d'abord, ensuite, en outre, par ailleurs, d'une part…
+d'autre part, enfin, finalement_.
+:::
+
+> On dit aussi « connecteurs » ; ton manuel dit **articulateurs logiques**.
+
+| Relation          | Articulateurs                                              |
+| ----------------- | ---------------------------------------------------------- |
+| Énumérer, ajouter | _d'abord, ensuite, de plus, en outre, par ailleurs, enfin_ |
+| Justifier (cause) | _car, en effet, puisque, étant donné que_                  |
+| Conséquence       | _donc, si bien que, c'est pourquoi_                        |
+| Opposition        | _mais, cependant_                                          |
+
+::: exemple articuler le message de Yasmine
+
+1. **Classe les arguments** du moins au plus important ← **car** on garde le plus fort pour la
+   fin.
+2. **Ouvre la liste** : _« **D'abord**, je m'entends bien avec les soignants. »_ ← **car**
+   _d'abord_ annonce le premier argument.
+3. **Ajoute** : _« **En outre**, ce métier mêle technique et contact humain. »_ ← **car** _en
+   outre_ ajoute un argument de même sens.
+4. **Termine** : _« **Enfin** et surtout, j'aime aider les malades. »_ ← **car** _enfin_
+   annonce le dernier argument, le plus fort.
+
+:::
+
+::: piege Erreur fréquente
+_« Il pleuvait, **c'est pourquoi** il sortit. »_ ✗ Ce qui trompe : on veut « varier les
+articulateurs ». Mais celui-ci dit une conséquence fausse — la pluie ne pousse pas dehors. ✓
+_« Il pleuvait, **cependant** il sortit. »_ — l'articulateur dit la relation **réelle**.
+:::
+
+::: propriete
+Bien choisi, l'articulateur **assure la cohérence** du texte. Cas-limite : **_aussi_** en tête de phrase exprime la **conséquence** et
+entraîne l'**inversion du sujet** : _« Ils travaillent sans machine. **Aussi** chaque objet
+porte-t-il leur marque. »_ Dans un récit, ce sont plutôt des indicateurs de temps qui
+s'enchaînent : _d'abord, puis, le lendemain, enfin_.
+:::
+
+::: verifie
+Quel articulateur pour : _« Le sport développe l'endurance. … il apprend la discipline. »_ ?
+
+---
+
+Un articulateur d'**ajout** : _de plus_, _en outre_, _par ailleurs_. Les deux idées vont dans
+le même sens et s'additionnent — ni cause, ni conséquence, ni opposition.
+:::
+
+::: retenir
+L'articulateur logique nomme la vraie relation entre deux idées et classe les arguments, du
+moins fort au plus fort.
 :::
 
 ## 📨 La lettre
 
-Tu écris à ton directeur d'école et tu commences par _« Salut ! »_. Rien n'est faux
+Tu écris au directeur de ton collège et tu commences par _« Salut ! »_. Rien n'est faux
 grammaticalement — et la lettre a déjà échoué.
 
-Ce qui change d'une lettre à l'autre n'est pas la langue mais le **registre** et la **forme**.
-Quels en sont les éléments obligatoires ?
+Ce qui change d'une lettre à l'autre, c'est la **présentation** et le **registre**. Quelles
+règles suit chacune ?
 
 ::: definition
-La **lettre formelle** obéit à une présentation fixe : lieu et date, formule d'appel, corps
-structuré, **formule de politesse**, signature. La **lettre informelle** garde un registre
-courant ou familier et une formule d'appel simple.
+La **lettre privée** (à un parent, un ami) suit peu de règles : datée et signée, elle tutoie
+et emploie un vocabulaire affectif. La **lettre officielle** ou administrative (on dit aussi
+« lettre formelle ») suit une **présentation précise** et emploie le **vouvoiement**.
 :::
 
-| Élément              | Lettre formelle               | Lettre informelle         |
-| -------------------- | ----------------------------- | ------------------------- |
-| Lieu et date         | en haut à droite, obligatoire | facultatif                |
-| Formule d'appel      | _Monsieur_, _Madame_          | _Cher ami_, _Chère Leïla_ |
-| Registre             | soutenu, vouvoiement          | courant ou familier       |
-| Formule de politesse | obligatoire, développée       | simple (_À bientôt_)      |
-| Signature            | nom complet                   | prénom                    |
+| Élément de la lettre officielle     | Place                                               |
+| ----------------------------------- | --------------------------------------------------- |
+| nom et adresse de l'expéditeur      | en haut, à gauche                                   |
+| lieu et date                        | en haut, à droite                                   |
+| destinataire, désigné par son titre | plus bas, au milieu                                 |
+| objet de la lettre                  | légèrement en dessous, à gauche                     |
+| formule d'appel                     | le titre du destinataire : _Monsieur le Directeur,_ |
 
-::: exemple ouvrir et fermer une lettre formelle
+::: exemple ouvrir et fermer une lettre au directeur
 
-1. **En haut à droite** : _« Tunis, le 12 mai 2026 »_.
-2. **Formule d'appel** suivie d'une virgule : _« Monsieur le Directeur, »_
-3. **Corps** : un paragraphe par idée, au vouvoiement, sans abréviation.
-4. **Formule de politesse** : _« Je vous prie d'agréer, Monsieur le Directeur, l'expression de
-   mes salutations distinguées. »_ ← **parce que** l'omettre est le défaut le plus
-   systématiquement sanctionné dans cet exercice.
+1. **En haut** : ton nom et ton adresse à gauche, _« Sfax, le 12 mai 2026 »_ à droite ← **car**
+   l'expéditeur et la date s'identifient d'un coup d'œil.
+2. **Objet** : _« Demande d'inscription au club de théâtre »_ ← **car** le destinataire sait
+   tout de suite de quoi il s'agit.
+3. **Formule d'appel** : _« Monsieur le Directeur, »_ ← le titre du destinataire, **car** la
+   lettre est officielle.
+4. **Introduction et conclusion** : _« J'ai l'honneur de… »_, puis _« Veuillez agréer,
+   Monsieur le Directeur, l'expression de mes salutations distinguées. »_ ← **car** les
+   formules de politesse ouvrent et ferment la lettre officielle.
 
 :::
 
-::: piege l'erreur classique
-
-Mélanger les registres : commencer par _« Monsieur le Directeur »_ et poursuivre au tutoiement,
-ou glisser une abréviation (_« bcp »_, _« svp »_) dans une lettre formelle. Le registre se tient
-du premier mot au dernier.
-
+::: piege Erreur fréquente
+Mélanger les registres : _« J'ai l'honneur de t'écrire »_ à un ami, ou _« Veuillez agréer… »_
+à un cousin ✗. Ce qui trompe : on croit « bien écrire » en étant poli partout. ✓ À un proche,
+_« Je t'embrasse »_ ; au directeur, _« Veuillez agréer… »_ — le registre suit le destinataire.
 :::
 
 ::: verifie
-Quel élément manque à une lettre formelle qui se termine par _« Merci. Karim »_ ?
+Une lettre au directeur se termine par _« Merci. Karim »_. Que faut-il corriger ?
 
 ---
 
-La **formule de politesse** développée, et la **signature complète**. _« Merci »_ relève du
-registre courant ; on attend _« Je vous prie d'agréer… »_ suivi du nom et du prénom.
+La **formule de politesse** : _« Merci »_ est trop familier pour une lettre officielle. On
+attend _« Veuillez agréer, Monsieur le Directeur, l'expression de mes salutations
+distinguées »_, puis la signature avec le nom complet.
 :::
 
 ::: retenir
-La lettre formelle a cinq éléments obligatoires, et la formule de politesse est celui qu'on
-oublie — le registre, lui, se tient d'un bout à l'autre.
+La lettre privée tutoie et suit peu de règles ; la lettre officielle a sa présentation, sa
+formule d'appel et ses formules de politesse.
 :::
 
-## 🧪 Méthode : lire et produire un texte à l'examen
+## 🧪 Méthode : produire un texte et l'évaluer avec la grille
 
-L'épreuve enchaîne deux gestes opposés : **lire** un texte pour l'analyser, puis **écrire** le
-tien. Les deux se travaillent dans le même ordre, du plan vers les mots.
+Consigne : _« Le club du collège organise un concours d'écriture : rédigez un texte pour
+inciter les jeunes à pratiquer un métier artisanal. »_ Tu as trente minutes.
 
-::: exemple applique les cinq étapes à un sujet complet
+Par où commencer, et comment savoir, avant de rendre la copie, si ton texte est réussi ?
 
-Consigne : _« Rédigez un récit où un personnage surmonte une peur. »_
+| Grille du manuel                | Critères de réussite                                                                                                     |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Récit intégrant une description | contexte précis, suite annoncée, ordre précis, expansions et images bien choisies, physique cohérent avec le caractère   |
+| Article de presse               | centré sur le thème, informations organisées et crédibles, reprises, surtitre-titre-chapeau, paragraphes, photo légendée |
+| Texte argumentatif              | thèse clairement formulée, arguments variés, articulateurs qui assurent la cohérence, présentation, langue correcte      |
 
-1. **Lire la consigne** et repérer le type imposé : un **récit** ← schéma narratif obligatoire.
-2. **Analyser ce qui est exigé** : un personnage, une peur, un dépassement ← la peur sera
-   l'**élément perturbateur** ou l'obstacle des péripéties.
-3. **Planifier** : cinq étapes notées en cinq lignes au brouillon, avant toute rédaction.
-4. **Rédiger** : passé simple pour les actions, imparfait pour le fond, un dialogue au moment de
-   la peur, une comparaison pour la rendre sensible.
-5. **Relire** : cohérence des temps, orthographe, ponctuation — **parce que** la relecture
-   rapporte plus de points que les deux dernières lignes qu'elle remplace.
+Chaque critère de la grille est une question à te poser en relisant, avec trois réponses
+possibles : « oui », « plus ou moins », « non ».
 
+::: exemple appliquer la méthode à la consigne du concours
+
+1. **Lis la consigne** : « inciter » ← texte **argumentatif**, **car** il faut convaincre.
+2. **Planifie au brouillon** : une thèse, trois arguments classés, un exemple pour chacun ←
+   **car** un texte se planifie avant d'être rédigé.
+3. **Rédige** : la thèse d'abord, puis les arguments reliés par _d'abord, en outre, enfin_ ←
+   **car** les articulateurs rendent le classement visible.
+4. **Relis avec la grille** du texte argumentatif : thèse claire ? arguments variés ?
+   articulateurs ? langue correcte ? ← **car** chaque « non » est une correction à faire.
+
+:::
+
+::: piege Erreur fréquente
+Sauter le plan pour « gagner du temps » ✗. Ce qui trompe : on commence plus vite. Mais sans
+plan, la copie se répète, sort du sujet ou finit bâclée. ✓ Trois minutes de brouillon, puis la
+rédaction.
 :::
 
 ::: methode
 
-1. **Lire** → identifier le type dominant (narratif, descriptif, informatif, argumentatif).
-2. **Analyser** → repérer les indices : temps verbaux, connecteurs, figures.
-3. **Planifier** avant d'écrire → schéma narratif ou plan argumentatif au brouillon.
-4. **Rédiger** → employer les bons temps, des connecteurs variés, des figures choisies.
-5. **Relire** → vérifier la cohérence temporelle, l'orthographe, la ponctuation.
-
-:::
-
-| Type rapide      | Indices immédiats                                                    |
-| ---------------- | -------------------------------------------------------------------- |
-| **Narratif**     | verbes d'action, passé simple, personnages, chronologie              |
-| **Descriptif**   | adjectifs, imparfait, appel aux sens, verbes d'état                  |
-| **Informatif**   | présent de vérité générale, cause/conséquence, vocabulaire technique |
-| **Argumentatif** | thèse, arguments, exemples, connecteurs logiques, verbes d'opinion   |
-
-::: piege l'erreur classique
-
-Supprimer l'étape 3 pour gagner du temps. Un plan de cinq lignes coûte trois minutes et évite le
-hors-sujet, la répétition et la fin bâclée — c'est-à-dire les trois pertes de points les plus
-lourdes.
+1. **Lire** la consigne → repérer le type imposé : raconter, décrire, informer, convaincre.
+2. **Planifier** → schéma narratif, ordre de la description, circuit court de l'article, ou
+   thèse + arguments.
+3. **Rédiger** → les bons temps, des articulateurs justes, des paragraphes.
+4. **Relire avec la grille** du type de texte, critère par critère.
 
 :::
 
 ::: verifie
-Consigne : _« Défendez l'idée que la lecture est utile aux jeunes. »_ Par quoi commences-tu ?
+Un élève relit son texte argumentatif : sa thèse est claire, mais ses trois arguments disent
+tous « le métier est beau ». Quel critère de la grille n'est pas rempli ?
 
 ---
 
-Par l'**étape 1** : le type imposé est **argumentatif** ← ni récit ni description. Puis
-l'étape 3 : au brouillon, thèse + trois arguments, chacun avec son exemple. La rédaction ne vient
-qu'ensuite.
+**« Les arguments sont variés »** : trois formulations d'une même raison ne font qu'un seul
+argument. Il faut des raisons différentes — le goût du travail manuel, la liberté, la création.
 :::
 
 ::: retenir
-Cinq étapes, du plan vers les mots — et l'étape qu'on supprime par manque de temps est justement
-celle qui en fait gagner.
+Lire le type, planifier, rédiger, puis relire avec la grille de ce type de texte : la grille
+dit, critère par critère, ce que le correcteur attend.
 :::
+
+## 🚀 Pour aller plus loin (hors programme de 9e)
+
+Ces notions apparaissent dans des textes que tu liras au lycée ; ton manuel de 9e ne les
+enseigne pas. Il suffit de les **reconnaître**.
+
+> Un texte argumentatif peut s'organiser en **introduction / développement / conclusion**,
+> l'introduction s'ouvrant parfois par une **amorce**. L'auteur peut aussi **concéder** un point
+> à l'adversaire avant de le **réfuter** : _« **Certes**, les écrans aident à apprendre ;
+> **néanmoins**, leur excès nuit à l'attention. »_ L'articulateur _or_ introduit un fait qui
+> retourne le raisonnement : _« On croit l'eau inépuisable. **Or** les nappes s'épuisent. »_

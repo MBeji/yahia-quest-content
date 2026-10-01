@@ -1,279 +1,308 @@
-# ⚔️ La concordance des temps
+# ⚔️ Les temps du récit et les temps du discours
 
 > 💡 « Chaque temps verbal est une pièce d'armure : bien les assembler, c'est construire un récit sans faille. »
 
-## 🏰 Pourquoi les temps doivent s'accorder entre eux
+## 🏰 Deux systèmes : le récit et le discours
 
-Tu écris : _« Il m'a dit qu'il **viendra** demain. »_ La phrase se comprend, et pourtant ton
-correcteur la souligne. Tu écris ensuite : _« Il me dit qu'il **viendra** demain »_ — et là, rien.
+Deux textes sur la même journée. Dans un roman : _« Ce jour-là, Sami **visita** l'oasis. »_ Dans
+une lettre de Sami : _« Hier, j'**ai visité** l'oasis. »_ Même action, même passé.
 
-Le verbe de la subordonnée n'a pas bougé. C'est le verbe d'avant qui a changé de temps. Alors
-pourquoi le second entraîne-t-il le premier ?
+Pourquoi le roman dit-il _visita_ et la lettre _ai visité_ ? Qu'est-ce qui change d'un texte à
+l'autre ?
 
 ::: definition
-La **concordance des temps** est la règle qui adapte le temps du verbe de la **subordonnée** au
-temps du verbe de la **principale** (ou du verbe introducteur).
+Les **temps du récit** — passé simple, imparfait, plus-que-parfait — racontent des faits **coupés
+du moment où l'on écrit** (repères : _ce jour-là, la veille, le lendemain_). Les **temps du
+discours** — présent, passé composé, futur simple, futur antérieur — sont **ancrés dans le
+moment où l'on parle** (repères : _aujourd'hui, hier, demain_) : dialogue, lettre, article.
 :::
 
-Elle décide dans trois situations, et ce chapitre les prend l'une après l'autre : le **récit au
-passé**, la **subordonnée au subjonctif**, et le **discours indirect**.
+| Système      | Temps                                          | Repères                               | Exemple                                |
+| ------------ | ---------------------------------------------- | ------------------------------------- | -------------------------------------- |
+| **récit**    | passé simple, imparfait, plus-que-parfait      | _ce jour-là, la veille, le lendemain_ | _Ce jour-là, Sami **visita** l'oasis._ |
+| **discours** | présent, passé composé, futur, futur antérieur | _aujourd'hui, hier, demain_           | _Hier, j'**ai visité** l'oasis._       |
 
-::: exemple pourquoi « viendra » est fautif après « a dit »
+::: exemple reconnaître le système d'un passage
 
-1. Verbe introducteur : _a dit_ — au **passé**.
-2. L'arrivée est **postérieure** au moment où il a parlé, mais ce moment est lui-même passé.
-3. Le futur _viendra_ prend le **présent** comme point de repère ; or le repère, ici, est le
-   moment de la parole, qui est passé.
-4. Il faut donc le futur **vu du passé**, et c'est le conditionnel : _qu'il **viendrait**_.
+_« Je t'écris de Tozeur. Hier, nous avons visité l'oasis ; demain, nous partirons. »_
+
+1. _écris_ → présent, **car** Sami parle du moment même où il écrit.
+2. _avons visité_ → passé composé, **car** _hier_ se mesure depuis aujourd'hui.
+3. _partirons_ → futur, **car** _demain_ est, lui aussi, compté depuis le moment de la lettre.
+4. Conclusion : c'est le **système du discours**, **car** tout part du moment où l'on parle.
 
 :::
 
-::: verifie
-Corrige : _« Elle a répondu qu'elle **est** malade. »_
+::: piege Erreur fréquente
 
----
+Mélanger passé simple et passé composé dans la même narration : _« Il entra dans la salle et il
+a vu son ami. »_ On choisit **un** système : _« Il entra et vit son ami »_ (récit) ou _« Il est
+entré et il a vu son ami »_ (discours).
 
-_Elle a répondu qu'elle **était** malade._ Le verbe introducteur est au passé, et la maladie est
-**simultanée** à la réponse : le présent devient imparfait.
 :::
-
-::: retenir
-Le temps de la principale est le repère ; la subordonnée se règle sur lui, pas sur aujourd'hui.
-:::
-
-## ⚡ Les trois temps du récit au passé
-
-Reprends un conte que tu connais : _« La salle **était** sombre. Le chevalier **franchit** la
-porte. Il **avait entraîné** ses troupes la veille. »_ Trois verbes, trois temps différents — et
-aucun n'est interchangeable.
-
-Qu'est-ce qui décide, pour chaque phrase, lequel des trois employer ?
 
 ::: propriete
-| Temps | Rôle dans le récit | Exemple |
-| -------------------- | ------------------------------------------------------ | -------------------------------------------------- |
-| **Passé simple** | Action principale, événement bref et délimité | Le chevalier _franchit_ la porte. |
-| **Imparfait** | Description, action de fond, action répétée ou durable | La salle _était_ sombre ; des torches _brûlaient_. |
-| **Plus-que-parfait** | Action antérieure à une autre action passée | Il _avait entraîné_ ses troupes avant la bataille. |
+L'imparfait et le plus-que-parfait servent aussi dans le discours (_Hier, il **pleuvait**_) : ce
+qui sépare vraiment les deux systèmes, c'est le **passé simple** (récit) face au **passé
+composé** (discours). Cas-limite : dans un récit, le dialogue fait entrer le discours — _Il entra
+et s'écria : « J'**ai gagné** ! »_
 :::
-
-::: exemple choisir le temps, phrase par phrase
-
-1. _La pluie **tombait** depuis le matin._ ← action de **fond**, qui dure ← **imparfait**.
-2. _Soudain, la porte **s'ouvrit**._ ← événement **bref et unique** ← **passé simple**.
-3. _Il **avait fermé** cette porte lui-même une heure plus tôt._ ← action **antérieure** à
-   l'ouverture ← **plus-que-parfait**.
-4. Le test qui tranche : demande-toi si l'action **dure** (imparfait), si elle **arrive**
-   (passé simple), ou si elle est **déjà faite** au moment du récit (plus-que-parfait).
-
-:::
-
-> ⚠️ **L'erreur classique** : mettre au passé composé ce qui devrait être au passé simple, parce
-> que c'est ce qu'on dit à l'oral. _« Soudain, la porte **s'est ouverte** »_ n'est pas faux en
-> soi, mais dans un **récit écrit** au passé simple, il casse le registre. Le passé composé
-> raconte depuis aujourd'hui ; le passé simple raconte depuis le récit.
 
 ::: verifie
-Quel temps pour le verbe entre crochets ? _« Le soleil [se coucher] quand les cavaliers
-arrivèrent au village. »_
+À quel système appartient _« Ce soir-là, il rentra tard : il avait manqué le dernier bus »_ ?
 
 ---
 
-_se couchait_ — **imparfait**. Le coucher du soleil est le **décor** qui dure pendant que
-l'arrivée, elle, se produit : fond à l'imparfait, événement au passé simple.
+Au **système du récit** : passé simple (_rentra_) et plus-que-parfait (_avait manqué_), avec le
+repère _ce soir-là_, coupé du moment où l'on écrit.
 :::
 
 ::: retenir
-Le décor dure (imparfait), l'événement arrive (passé simple), l'avant est déjà fait (plus-que-parfait).
+Récit : passé simple, imparfait, plus-que-parfait, repères _ce jour-là, la veille_ ; discours :
+présent, passé composé, futur, repères _aujourd'hui, hier, demain_ — on ne mélange pas les deux.
+:::
+
+## 🎬 Récit au présent, récit au passé : transposer
+
+Un récit peut s'écrire au **présent de narration** : _« Soudain, la porte **s'ouvre** ; dehors,
+il **pleut** depuis le matin. »_ Ton professeur te demande de le réécrire au passé.
+
+Un même présent peut alors devenir passé simple ou imparfait. Comment savoir lequel, verbe par
+verbe ?
+
+::: definition
+Le **présent de narration** raconte des faits passés comme s'ils se déroulaient sous nos yeux.
+**Transposer** un récit au passé, c'est remplacer chaque présent par le temps du récit qui garde
+**son rôle** : premier plan, arrière-plan, ou action déjà achevée.
+:::
+
+| Rôle du verbe au présent             | Au passé         | Exemple                                        |
+| ------------------------------------ | ---------------- | ---------------------------------------------- |
+| action ponctuelle, premier plan      | passé simple     | _la porte s'ouvre_ → _la porte **s'ouvrit**_   |
+| décor, action qui dure, arrière-plan | imparfait        | _il pleut depuis le matin_ → _il **pleuvait**_ |
+| action déjà faite (passé composé)    | plus-que-parfait | _il a fermé la porte_ → _il **avait fermé**_   |
+
+::: exemple transposer phrase par phrase
+
+_« Soudain, la porte s'ouvre ; dehors, il pleut depuis le matin. Karim a oublié son parapluie. »_
+
+1. _s'ouvre_ → _**s'ouvrit**_, **car** _soudain_ marque une action ponctuelle de premier plan.
+2. _pleut depuis le matin_ → _**pleuvait**_, **car** _depuis le matin_ montre une action qui dure,
+   en arrière-plan.
+3. _a oublié_ → _**avait oublié**_, **car** l'oubli est **déjà achevé** au moment où la porte
+   s'ouvre : c'est un retour en arrière.
 
 :::
 
-## 🛡️ Avant, pendant, après : marquer la relation
+::: piege Erreur fréquente
 
-Deux actions passées ne se contentent pas d'être passées : l'une peut précéder l'autre, la
-suivre, ou se dérouler en même temps. _« Il **eut fini** son discours »_ et _« il **finissait**
-son discours »_ ne placent pas la même chose avant l'autre.
+Tout mettre au passé simple parce que « c'est le temps du récit » : _« Il plut depuis le
+matin. »_ Une action qui dure, avec _depuis_, ne peut pas être au passé simple : elle passe à
+l'imparfait.
 
-Comment choisir le temps qui dit **laquelle vient d'abord** ?
+:::
 
 ::: propriete
-
-- **Simultanéité** : _Pendant qu'il **courait**, la tempête **faisait** rage._ (imparfait + imparfait)
-- **Antériorité** : _Quand il **eut fini** son discours, les guerriers **partirent**._ (passé
-  antérieur + passé simple) — ou _Il **avait préparé** son plan avant de lancer l'attaque._
-  (plus-que-parfait + passé simple)
-- **Postériorité** : _Il **décida** qu'il **allait** affronter le dragon._ (passé simple + imparfait)
-
+La transposition marche dans les deux sens : du présent au passé, le passé composé devient
+plus-que-parfait ; du passé au présent, le plus-que-parfait redevient passé composé —
+_« Il vit que la neige était tombée »_ → _« Il voit que la neige est tombée. »_
 :::
-
-::: exemple deux actions, quel ordre ?
-
-1. _Les guerriers partirent._ ← l'événement principal ← **passé simple**.
-2. Le discours est fini **avant** ce départ ← il faut un temps d'**antériorité**.
-3. La subordonnée est introduite par _quand_ et la principale est au passé simple ← c'est le
-   **passé antérieur** : _quand il **eut fini**_.
-4. Avec _avant de_ + infinitif, la question ne se pose plus : l'antériorité est déjà dans la
-   préposition.
-
-:::
-
-> 🗡️ Le **passé antérieur** (auxiliaire au passé simple + participe passé) est réservé aux
-> subordonnées introduites par _quand_, _lorsque_, _dès que_, _après que_, devant un verbe au
-> passé simple. Ailleurs, c'est le plus-que-parfait qui marque l'antériorité.
 
 ::: verifie
-Simultanéité, antériorité ou postériorité ? _« Dès qu'il **eut franchi** le pont, il **vit** la
-tour. »_
+Transpose au passé : _« Le train entre en gare ; sur le quai, les voyageurs attendent depuis une
+heure. »_
 
 ---
 
-**Antériorité** : le franchissement est achevé avant que la vue commence. Passé antérieur dans la
-subordonnée, passé simple dans la principale.
+_« Le train **entra** en gare ; sur le quai, les voyageurs **attendaient** depuis une heure. »_
+L'entrée est ponctuelle (passé simple) ; l'attente dure, _depuis une heure_ (imparfait).
 :::
 
 ::: retenir
-Passé antérieur après _quand_/_dès que_ ; plus-que-parfait partout ailleurs pour dire « avant ».
+Pour transposer, on garde le rôle de chaque verbe : premier plan → passé simple, arrière-plan →
+imparfait, action déjà faite → plus-que-parfait.
+:::
+
+## 🔮 Le futur dans le passé
+
+_« Elle **croit** qu'elle **gagnera**. »_ Mets le premier verbe au passé : _« Elle **croyait**
+qu'elle… »_ — _gagnera_ ne va plus.
+
+La victoire est toujours à venir, mais à venir par rapport à un moment déjà passé. Quel temps
+dit cela ?
+
+::: definition
+Quand le verbe principal passe au **passé**, le **futur simple** de la subordonnée devient
+**conditionnel présent**, et le **futur antérieur** devient **conditionnel passé** : c'est le
+**futur par rapport au passé**.
+:::
+
+| Verbe principal au présent                  | Verbe principal au passé                        |
+| ------------------------------------------- | ----------------------------------------------- |
+| _Elle croit qu'elle **gagnera**._           | _Elle croyait qu'elle **gagnerait**._           |
+| _Il espère qu'il **aura fini** avant midi._ | _Il espérait qu'il **aurait fini** avant midi._ |
+
+::: exemple mettre le verbe principal à l'imparfait
+
+_« Il sait que cela demandera des efforts. »_
+
+1. _sait_ → _**savait**_ : le repère n'est plus le présent, **car** le verbe principal est passé.
+2. _demandera_ regarde l'avenir **depuis ce moment passé**.
+3. Le futur devient donc conditionnel présent : _« Il savait que cela **demanderait** des
+   efforts »_, **car** le conditionnel est le futur vu du passé.
 
 :::
 
-## 🔮 La subordonnée au subjonctif
+::: piege Erreur fréquente
 
-_« Je veux que tu **viennes**. »_ Change le premier verbe de temps : _« Je voulais que tu… »_ —
-et beaucoup d'élèves s'arrêtent là, sans savoir quoi écrire.
+Lire ce conditionnel comme une hypothèse ou un doute. Dans _« Il savait que cela demanderait des
+efforts »_, rien n'est incertain : il n'y a pas de _si_, et le conditionnel marque seulement
+l'avenir vu d'un moment passé.
 
-Le subjonctif change-t-il de temps lui aussi, et si oui, jusqu'où faut-il le suivre ?
+:::
 
 ::: propriete
-Quand la principale est au **présent ou au futur**, la subordonnée se met au **subjonctif
-présent** : _Je veux que tu **viennes** me rejoindre._
-
-Quand la principale est au **passé ou au conditionnel**, la règle littéraire demande le
-**subjonctif imparfait** : _Il voulait que tu **vinsses** me rejoindre._
-:::
-
-::: exemple ce qu'on écrit vraiment au collège
-
-1. Principale au présent : _Il faut que tu **partes**._ ← subjonctif présent, sans hésitation.
-2. Principale au passé : la règle appelle _que tu **partisses**_ — forme juste, mais **hors
-   usage** en dehors de la littérature.
-3. L'usage courant garde le **subjonctif présent** : _Il fallait que tu **partes**._
-4. Retiens donc la règle pour **reconnaître** un subjonctif imparfait dans un texte, et le
-   subjonctif présent pour **écrire** le tien.
-
+C'est le même mécanisme qu'au discours indirect (chapitre 4) : _Il a dit qu'il viendrait._
+Cas-limite : si le verbe principal reste au **présent**, rien ne change — _Il pense que tu
+réussiras._
 :::
 
 ::: verifie
-Complète : _« Il a exigé que nous [être] à l'heure. »_
+Mets _pense_ à l'imparfait : _« Il pense que des morceaux variés séduiront le jury. »_
 
 ---
 
-_que nous **soyons** à l'heure._ La règle littéraire donnerait _fussions_, mais dans un écrit
-scolaire courant le subjonctif présent est la forme attendue.
+_« Il **pensait** que des morceaux variés **séduiraient** le jury. »_ Le verbe principal est passé ;
+le futur _séduiront_ devient le conditionnel présent _séduiraient_.
 :::
 
 ::: retenir
-Subjonctif présent partout, sauf à reconnaître le subjonctif imparfait dans un texte littéraire.
+Après un verbe principal au passé : futur → conditionnel présent, futur antérieur → conditionnel
+passé ; c'est un futur, pas une hypothèse.
+:::
+
+## 🌀 Le système en « si » : action éventuelle ou action irréelle
+
+_« Si tu venais demain, nous irions au stade. »_ · _« Si j'étais un oiseau, je volerais. »_ Les
+deux phrases ont la même construction : _si_ + imparfait, puis conditionnel présent.
+
+Pourtant, la première peut se réaliser et la seconde jamais. Comment le distinguer ?
+
+::: definition
+Après _si_, l'**imparfait** (→ conditionnel présent dans la principale) présente une action
+**éventuelle**, envisagée dans le futur, ou **irréelle**, contraire à la réalité présente. Le
+**plus-que-parfait** (→ conditionnel passé) présente une action **irréelle envisagée dans le
+passé**.
+:::
+
+| Subordonnée en _si_ | Principale           | L'action est…                                    | Exemple                                          |
+| ------------------- | -------------------- | ------------------------------------------------ | ------------------------------------------------ |
+| présent             | futur                | présentée comme réalisable                       | _Si tu viens, nous irons au stade._              |
+| imparfait           | conditionnel présent | **éventuelle** (futur) ou **irréelle** (présent) | _Si tu venais demain, nous irions au stade._     |
+| plus-que-parfait    | conditionnel passé   | **irréelle** dans le passé                       | _Si tu étais venu, nous serions allés au stade._ |
+
+::: exemple éventuelle ou irréelle ? les indices décident
+
+1. _Si tu venais **demain**…_ → **éventuelle**, **car** _demain_ place l'action dans le futur :
+   elle peut encore se produire.
+2. _Si j'étais **un oiseau**…_ → **irréelle**, **car** c'est contraire à la réalité présente.
+3. _Si tu **étais venu** hier…_ → **irréelle dans le passé**, **car** tu n'es pas venu et c'est
+   trop tard : plus-que-parfait → conditionnel passé.
 
 :::
 
-## 🌀 Le discours indirect : tout recule d'un cran
+::: piege Erreur fréquente
 
-_« Il dit : "Je suis prêt." »_ devient _« Il dit qu'il est prêt. »_ — rien n'a bougé. Mais
-_« Il **a dit** : "Je suis prêt." »_ devient _« Il a dit qu'il **était** prêt. »_
+Croire que l'imparfait après _si_ raconte le passé. _« Si tu venais demain »_ ne parle pas
+d'hier : c'est une action **éventuelle**. Et ne jamais mettre le conditionnel juste après _si_ :
+« si tu viendrais » est fautif.
 
-Un seul changement dans la principale, et toute la subordonnée se décale. Selon quelle règle ?
+:::
 
 ::: propriete
-Quand le verbe introducteur passe au **passé**, chaque temps recule d'un cran :
-
-| Discours direct | Discours indirect (verbe introducteur au passé) |
-| --------------- | ----------------------------------------------- |
-| Présent         | Imparfait                                       |
-| Passé composé   | Plus-que-parfait                                |
-| Futur simple    | Conditionnel présent                            |
-| Futur antérieur | Conditionnel passé                              |
-| Impératif       | Infinitif (ou subjonctif)                       |
-
-:::
-
-::: exemple transformer une phrase de bout en bout
-
-_Il dit : « Je **partirai** demain. »_ → verbe introducteur mis au passé.
-
-1. **Le verbe introducteur** : _il dit_ → _il **dit** / il **a dit**_ — on le met au passé.
-2. **Les guillemets tombent** et _que_ apparaît : _il a dit **que**…_
-3. **Le pronom** change de personne : _je_ → _il_.
-4. **Le temps recule** : futur _partirai_ → conditionnel _**partirait**_.
-5. **L'indicateur de temps** suit : _demain_ → _**le lendemain**_.
-
-Résultat : _Il a dit qu'il **partirait** le **lendemain**._
-
-:::
-
-::: piege L'erreur classique
-
-Reculer le verbe et **oublier les indicateurs**. _« Il a dit qu'il partirait demain »_ garde un
-_demain_ qui pointe sur aujourd'hui, alors que la phrase parle d'un jour passé. Les repères se
-déplacent avec le temps du verbe : _maintenant_ → _alors_ ; _aujourd'hui_ → _ce jour-là_ ;
-_demain_ → _le lendemain_ ; _hier_ → _la veille_ ; _ici_ → _là_.
-
-Deuxième oubli fréquent : le **pronom**. _« Il a dit que je partirais »_ fait dire au rapporteur
-ce que l'autre a dit de lui-même.
-
+Le temps du verbe ne suffit pas toujours : avec _si_ + imparfait, ce sont les **indices du
+texte** (_demain, à ta place, un oiseau_) qui disent si l'action est éventuelle ou irréelle.
+Cas-limite : _Si j'étais à ta place_ est toujours irréel, car je ne peux pas être toi.
 :::
 
 ::: verifie
-Mets au discours indirect : _« Elle a déclaré : "J'ai terminé mon travail hier." »_
+Éventuelle ou irréelle ? _« S'il faisait beau dimanche, nous irions à la plage. »_
 
 ---
 
-_Elle a déclaré qu'elle **avait terminé** son travail **la veille**._ Passé composé →
-plus-que-parfait ; _mon_ → _son_ ; _hier_ → _la veille_.
+**Éventuelle** : _dimanche_ est à venir, le beau temps reste possible. Si + imparfait → conditionnel
+présent, avec un indice de futur.
 :::
 
 ::: retenir
-Au discours indirect rapporté au passé : le temps recule, le pronom change, l'indicateur suit.
-
+Si + imparfait → conditionnel présent : action éventuelle ou irréelle selon les indices ; si +
+plus-que-parfait → conditionnel passé : action irréelle dans le passé.
 :::
 
-## 🧪 Méthode : appliquer la concordance en quatre gestes
+## 🏆 Méthode : choisir le temps d'un verbe dans un texte
 
-Les trois situations précédentes obéissent au même réflexe, et il tient en quatre questions posées
-**dans cet ordre**. Les inverser, c'est choisir un temps avant de savoir de quoi il dépend.
+En rédaction comme en examen, tu dois mettre des verbes « au temps qui convient ». Quatre
+questions, posées dans l'ordre, règlent presque tous les cas.
+
+::: exemple applique les quatre questions
+
+_« Quand le car (arriver), les élèves (attendre) depuis une heure : ils (partir) très tôt de chez
+eux. »_
+
+1. **Récit ou discours ?** Aucun repère du moment présent ← **récit**, temps du passé.
+2. _arriver_ → action ponctuelle de premier plan ← _**arriva**_, **car** c'est l'événement.
+3. _attendre_ → action qui dure (_depuis une heure_) ← _**attendaient**_, **car** c'est
+   l'arrière-plan.
+4. _partir_ → action **déjà achevée** avant l'arrivée ← _**étaient partis**_, **car** c'est un
+   retour en arrière.
+
+:::
 
 ::: methode
 
-1. **Identifier le verbe introducteur** (ou principal) et **son temps**.
-2. **Déterminer la relation temporelle** : simultanée, antérieure ou postérieure.
-3. **Choisir le temps** de la subordonnée selon cette relation.
-4. **Vérifier** les pronoms et les indicateurs de temps et de lieu.
+1. **Récit ou discours ?** Repères _ce jour-là / la veille_ ou _aujourd'hui / hier / demain_.
+2. **Premier plan, arrière-plan ou retour en arrière ?** Passé simple, imparfait ou
+   plus-que-parfait.
+3. **Un futur vu du passé ?** Conditionnel présent (ou passé s'il est achevé).
+4. **Un _si_ ?** Imparfait → conditionnel présent ; plus-que-parfait → conditionnel passé.
 
 :::
 
-::: exemple la méthode sur une phrase complète
+::: piege Erreur fréquente
 
-_Il promit : « Je vous rejoindrai ici dès que j'aurai fini. »_
-
-1. **Introducteur** : _promit_ — passé simple ← tout se règle sur le passé.
-2. **Relation** : le fait de rejoindre est **postérieur** à la promesse.
-3. **Temps** : futur → conditionnel _**rejoindrait**_ ; futur antérieur → conditionnel passé
-   _**aurait fini**_.
-4. **Vérification** : _je_ → _il_, _vous_ → _nous_, _ici_ → _**là**_.
-
-Résultat : _Il promit qu'il **nous rejoindrait là** dès qu'il **aurait fini**._
+Regarder le verbe seul, sans son repère. Dans _« Il pensait qu'il (réussir) »_, on écrit
+« réussira » parce que la réussite est à venir. Mais le repère est _pensait_, au passé : il faut
+le futur vu du passé, _il **réussirait**_.
 
 :::
 
 ::: verifie
-Applique les quatre gestes : _« Elle cria : "Je reviens tout de suite !" »_
+Mets au temps qui convient : _« Ce matin-là, Leïla (se lever) d'un bond : elle (préparer) son sac
+la veille. »_
 
 ---
 
-Introducteur _cria_, au passé. Le retour est **postérieur**. Le présent à valeur de futur proche
-devient **imparfait** : _revenait_. Et _je_ devient _elle_.
-
-Résultat : _Elle cria qu'elle **revenait** tout de suite._
-
+_« Ce matin-là, Leïla **se leva** d'un bond : elle **avait préparé** son sac la veille. »_ Récit
+(_ce matin-là_) ; le lever est l'événement (passé simple) ; la préparation est déjà faite (_la
+veille_) : plus-que-parfait.
 :::
 
-> 🏆 La maîtrise de la concordance des temps, c'est le niveau légendaire du récit : chaque temps à sa place, l'histoire coule sans accroc.
+::: retenir
+Récit ou discours, puis premier plan, arrière-plan ou retour en arrière, puis futur vu du passé,
+puis système en _si_.
+:::
+
+## 🚀 Pour aller plus loin (hors programme de 9e)
+
+Les textes littéraires emploient deux temps du récit que le programme de 9e ne te demande ni de
+conjuguer ni d'employer. Il suffit de les **reconnaître** quand tu les lis.
+
+| Forme                    | Comment la reconnaître                              | Exemple                                      |
+| ------------------------ | --------------------------------------------------- | -------------------------------------------- |
+| **passé antérieur**      | auxiliaire au passé simple (_eut, fut_) + participe | _Dès qu'il **eut fini**, il sortit._         |
+| **subjonctif imparfait** | terminaisons rares : _-ât, -ît, -ût, -issent_       | _Il voulait qu'elle **vînt** avant la nuit._ |
+
+Dans tes rédactions, le plus-que-parfait marque l'action déjà achevée, et le subjonctif présent
+suffit après un verbe principal au passé : _Il voulait qu'elle **vienne**._
+
+> 🏆 Récit ou discours, chaque temps à sa place : ton histoire avance sans accroc, comme une quête bien menée.
