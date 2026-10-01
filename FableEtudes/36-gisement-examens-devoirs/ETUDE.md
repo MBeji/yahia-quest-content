@@ -186,8 +186,9 @@ reprend, données comprises, en le citant. Les deux consignes d'auteur sont dist
 - [ ] Lot 3 — 9ᵉ math (en cours au 2026-10-01 : 142 missions publiées — 80 d'examen, 56 de devoirs, 6 d'écart ;
       restent au plan 56 missions d'examen et 10 de devoirs)
 - [ ] Lots 5-8 — 9ᵉ, autres matières du concours (lot 4 écarté, D-10) ; échantillons fixés (privé#574) ;
-      SVT : six sessions lues (2020 à 2026), plan de 27 missions en cinq lots à rejouer sur les chapitres du
-      manuel 121905 ; arabe, français, anglais : lecture à faire
+      SVT : six sessions lues (2020 à 2026), plan de 27 missions en cinq lots rejoué sur les 14 chapitres
+      du programme (étiquettes `bio.*`) ; arabe : en réalignement, rien à y placer pour l'instant ;
+      français et anglais : lecture des sessions à faire
 - [ ] Lots 9-13 — 6ᵉ
 - [ ] Lots 14+ — autres classes
 
@@ -290,6 +291,31 @@ finie ; un doute de droits sur un document ⇒ il sort de l'échantillon, sans d
   d'erreur posée sur une option `ordering`, `matching` ou `multi`, où elle disparaissait en
   silence à l'émission SQL (arena#1147). La ligne correspondante du journal du moteur est dans
   `STATUS.md` (arena#1146).
+- **2026-10-01 — Synchronisation avec la campagne « 9ᵉ au patron » (autre session, arbitrage du
+  propriétaire du 2026-09-28 : finir la 9ᵉ avant tout le reste).** Ce que cette campagne a changé
+  sous les pieds du gisement, et ce qu'elle attend de lui :
+  - **SVT 9ᵉ (`sciences-vie-terre`) — publiée (privé#569).** Les 7 anciens chapitres hors programme
+    sont passés en fin de liste (displayOrder **15–21**, optionnels) ; les 14 chapitres du programme
+    gardent 01–14. Une **famille d'étiquettes `bio.*` existe désormais (95 ids)** et tous les chapitres
+    déclarent leurs `coursePitfalls` ; **`coursePattern: "notion"` est armé**. ⇒ La ligne « Pas de
+    famille d'étiquettes SVT : distracteurs muets » de l'état de reprise est **périmée** : les missions
+    SVT du gisement se placent dans les chapitres **01–14** et étiquettent leurs distracteurs avec
+    `bio.*` (règles R1/R2/R3 ; nouvel id seulement s'il manque, à ajouter au registre).
+  - **Français 9ᵉ (`french`) — publié (privé#569).** Réaligné sur le manuel élève **121905** (lu en
+    entier) : **15 chapitres + annales** (`10-annales-sujets-types` en displayOrder 16), métalangage du
+    manuel (forme passive, élément modificateur / résolution du problème, articulateurs logiques),
+    famille **`fr.*` (102 ids)**, patron **armé**. ⇒ Les missions de français suivent ce métalangage et
+    ces chapitres ; les notions « Pour aller plus loin » n'ont pas d'item.
+  - **Arabe 9ᵉ (`arabic`) — EN RÉALIGNEMENT, ne pas y placer de missions pour l'instant.** Le contenu
+    suivait le guide d'avant la réforme de 2006 ; le manuel révisé **101908** est en cours de lecture
+    intégrale (LOT A), et le découpage des chapitres va changer (le الشّرط, par exemple, n'a aucun
+    chapitre ; l'interrogation est très incomplète). Le lot 6 du gisement attend la fusion de ce
+    réalignement, qui sera signalée ici.
+  - **Maths 9ᵉ** : la campagne ne touchera que **01-nombres-reels et 02-racines-carrees** (recentrage
+    sur leur chapitre officiel, arbitrage du 2026-09-28), après les lots en cours du gisement ; aucun
+    lot du gisement n'est sur 01/02.
+  - **Moteur** : l'italique `_…_` et les `\*` échappés s'affichent désormais (moteur #1144) — inutile
+    de les contourner dans les missions.
 - **2026-10-01 (après-midi) — La limite de session coupe les quatre agents ; reprise ; la SVT
   s'ouvre.** La limite « cinq heures » est atteinte vers 10 h 30 UTC, soixante-cinq minutes après
   la reprise de 9 h 22 : les auteurs des lots L09 et L18 et les auditeurs des lots L13 et L15
@@ -299,11 +325,13 @@ finie ; un doute de droits sur un document ⇒ il sort de l'échantillon, sans d
   le constat et la marche à suivre sont dans l'état de reprise de la branche de sauvegarde
   `wip/gisement-9eme-lots-en-ecriture` (`en-cours/ETAT-REPRISE.md`). SVT 9ᵉ : six sessions lues
   (2020 à 2026, transcriptions et lignes sur la branche de sauvegarde), 27 missions d'examen
-  planifiées en cinq lots par le planificateur du moteur. Entre-temps `main` a reçu le
-  réalignement de la SVT et du français 9ᵉ sur le manuel 121905 (privé#569 : 21 chapitres, 89
-  étiquettes `bio.*`) : le plan sera **rejoué sur ces chapitres** avant d'écrire le premier lot,
-  et les distracteurs pourront porter les étiquettes `bio.*` existantes. Arabe, français et
-  anglais : lecture à faire, échantillons déjà fixés. Un mur constaté, qu'aucune PR ne répare : le
+  planifiées en cinq lots par le planificateur du moteur. Entre-temps `main` a reçu la
+  campagne « 9ᵉ au patron » (privé#569 et #620, voir l'entrée de synchronisation ci-dessus) : le
+  plan SVT, **rejoué** sur les 14 chapitres du programme (01 à 14), est inchangé — 27 missions,
+  cinq lots —, et les distracteurs peuvent porter les étiquettes `bio.*` existantes (95
+  identifiants). Arabe : en réalignement sur le manuel 101908, aucune mission n'y est
+  placée pour l'instant ; français (réaligné sur le manuel 121905) et anglais : lecture des
+  sessions à faire, échantillons déjà fixés. Un mur constaté, qu'aucune PR ne répare : le
   garde `content-audit` (issue privé#614) est rouge depuis 01 h 13 UTC — jeton
   `CLAUDE_CODE_OAUTH_TOKEN` invalide ; les lots s'en passent, l'audit en aveugle de chaque lot
   étant rendu par un sous-agent opus de la session avant la fusion.
