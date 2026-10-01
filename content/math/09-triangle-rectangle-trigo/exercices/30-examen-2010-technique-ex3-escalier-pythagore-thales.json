@@ -1,0 +1,214 @@
+{
+  "title": "🏛️ مناظرة 2010 (تقني) · التمرين 3 ⭐⭐: تصميم مدارج — فيثاغورس والوضعية النسبية لمستقيمين وطاليس",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 30,
+  "questions": [
+    {
+      "prompt": "يمثّل الرسم تصميمًا لمدارج.\nنريد ملء الفراغين في الجملة التالية:\nالمثلّث ABC ...... في A ، إذن حسب ...... لدينا:\nBC² = AB² + AC²\nبأيّ عبارتين نملأ الفراغين على الترتيب ؟\n<svg viewBox=\"0 0 320 214\"><title>تصميم المدارج: المثلّث ABC وفيه زاوية قائمة عند A</title><polygon points=\"62,178 292,178 62,55.33\" fill=\"#0f6e56\" fill-opacity=\"0.08\"/><polygon points=\"62,178 292,178 62,55.33\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M74 178 L74 166 L62 166\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"62\" cy=\"178\" r=\"3.8\"/><circle cx=\"292\" cy=\"178\" r=\"3.8\"/><circle cx=\"62\" cy=\"55.33\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"48\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"306\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"48\" y=\"49.33\" text-anchor=\"middle\" fill=\"#0f172a\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "قائم ، عكس نظرية فيثاغورس",
+          "misconceptionTag": "math.geo.pythagore-reciproque-role"
+        },
+        {
+          "id": "b",
+          "text": "قائم ، نظرية فيثاغورس"
+        },
+        {
+          "id": "c",
+          "text": "قائم ، نظرية طاليس"
+        },
+        {
+          "id": "d",
+          "text": "قائم ، عكس نظرية طاليس"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "رمز الزاوية القائمة في الرسم عند A ، فالمثلّث ABC قائم في A ووتره [BC] هو الضلع المقابل لها. وفي مثلّث قائم نطبّق نظرية فيثاغورس المباشرة: مربّع الوتر يساوي مجموع مربّعي الضلعين القائمين ، أي BC² = AB² + AC² ✓. الخطأ الشائع: استعمال عكس نظرية فيثاغورس ، وهي لا تُستعمل إلّا لإثبات أنّ مثلّثًا قائم انطلاقًا من أطواله ، أمّا هنا فالزاوية القائمة معطاة في الرسم ؛ أو الخلط مع نظرية طاليس أو عكسها ، وهما تتعلّقان بنسب أطوال ومستقيمات متوازية ولا تعطيان مجموع مربّعات.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "في تصميم المدارج ، المثلّث ABC قائم في A ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAB = 9\nAC = 4,8\nما قيمة BC² بالصنتمتر المربّع ؟\n<svg viewBox=\"0 0 320 214\"><title>المثلّث ABC القائم في A وضلعاه القائمان AB و AC</title><polygon points=\"62,178 292,178 62,55.33\" fill=\"#0f6e56\" fill-opacity=\"0.08\"/><polygon points=\"62,178 292,178 62,55.33\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M74 178 L74 166 L62 166\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"62\" cy=\"178\" r=\"3.8\"/><circle cx=\"292\" cy=\"178\" r=\"3.8\"/><circle cx=\"62\" cy=\"55.33\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"48\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"306\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"48\" y=\"49.33\" text-anchor=\"middle\" fill=\"#0f172a\">C</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"177\" y=\"200\" text-anchor=\"middle\" fill=\"#64748b\">9 cm</text><text x=\"30\" y=\"121.67\" text-anchor=\"middle\" fill=\"#64748b\">4,8 cm</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "27,6",
+          "misconceptionTag": "math.num.puissance-confondue-avec-produit"
+        },
+        {
+          "id": "b",
+          "text": "57,96",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "c",
+          "text": "104,04"
+        },
+        {
+          "id": "d",
+          "text": "190,44"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المثلّث ABC قائم في A ، فوتره [BC] ، ونظرية فيثاغورس تعطي: BC² = AB² + AC² = 9² + 4,8² = 81 + 23,04 = 104,04 ✓. الخطأ الشائع: اعتبار [AB] هو الوتر لأنّه الأفقي والأطول من الضلعين في الرسم ، فنحسب 81 − 23,04 = 57,96 ؛ أو جمع الطولين ثمّ التربيع فنجد (9 + 4,8)² = 13,8² = 190,44 ؛ أو حساب كلّ مربّع بضرب العدد في 2 فنجد 9 × 2 + 4,8 × 2 = 18 + 9,6 = 27,6.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "في تصميم المدارج ، المثلّث ABC قائم في A ، ونعلم أنّ مربّع وتره هو:\nBC² = 104,04\nما طول الوتر [BC] بالصنتمتر ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "104,04",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "102"
+        },
+        {
+          "id": "c",
+          "text": "52,02",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
+        },
+        {
+          "id": "d",
+          "text": "10,2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "طول موجب مربّعه 104,04 ، فهو الجذر التربيعي لهذا العدد: BC = √104,04. والعدد 104,04 هو 10404 مقسومًا على 100 ، وجذر 10404 هو 102 وجذر 100 هو 10 ، فنجد BC = 102 ÷ 10 = 10,2 cm ✓. الخطأ الشائع: التوقّف عند 104,04 ونسيان الجذر ؛ أو أخذ نصف العدد بدل جذره فنجد 104,04 ÷ 2 = 52,02 ؛ أو إهمال الفاصلة فنكتب جذر 10404 وهو 102 دون القسمة على 10.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "في تصميم المدارج ، المثلّث ABC قائم في A ، والنقطة H من القطعة [AB] ، والنقطة K من القطعة [BC] ، والمستقيم (HK) عمودي على (AB) في H.\nما العلاقة بين المستقيمين (HK) و (AC) ، وما تعليلها ؟\n<svg viewBox=\"0 0 320 214\"><title>المستقيمان (HK) و (AC) عموديان على (AB)</title><polygon points=\"62,178 292,178 62,55.33\" fill=\"#0f6e56\" fill-opacity=\"0.08\"/><polygon points=\"62,178 292,178 62,55.33\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M215.33 178 L215.33 137.11\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M74 178 L74 166 L62 166\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215.33 167 L226.33 167 L226.33 178\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"62\" cy=\"178\" r=\"3.8\"/><circle cx=\"292\" cy=\"178\" r=\"3.8\"/><circle cx=\"62\" cy=\"55.33\" r=\"3.8\"/><circle cx=\"215.33\" cy=\"178\" r=\"3.8\"/><circle cx=\"215.33\" cy=\"137.11\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"48\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"306\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"48\" y=\"49.33\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"215.33\" y=\"200\" text-anchor=\"middle\" fill=\"#0f172a\">H</text><text x=\"229.33\" y=\"130.11\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "متوازيان ، لأنّ كلًّا منهما عمودي على (AB)"
+        },
+        {
+          "id": "b",
+          "text": "متعامدان ، لأنّ كلًّا منهما عمودي على (AB)",
+          "misconceptionTag": "math.geo.regle-perpendiculaire-parallele-inversee"
+        },
+        {
+          "id": "c",
+          "text": "متوازيان ، لأنّ كلًّا منهما يقطع (AB)"
+        },
+        {
+          "id": "d",
+          "text": "متعامدان ، لأنّ كلًّا منهما يقطع (AB)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المستقيم (AC) عمودي على (AB) لأنّ المثلّث ABC قائم في A ، والمستقيم (HK) عمودي على (AB) حسب المعطى. وكلّ مستقيمين عموديين على مستقيم واحد متوازيان ، إذن (HK) ∥ (AC) ✓ ، وهذا التوازي هو شرط تطبيق نظرية طاليس في المثلّث ABC. الخطأ الشائع: الاستنتاج أنّ المستقيمين متعامدان ، والصواب أنّ العموديّين على مستقيم واحد متوازيان لا متعامدان ؛ أو الاكتفاء بأنّ كلًّا منهما يقطع (AB) ، فالتقاطع مع مستقيم مشترك لا يكفي لإثبات التوازي.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.droites-perp-para"
+      ]
+    },
+    {
+      "prompt": "في تصميم المدارج ، النقطة H من القطعة [AB] والنقطة K من القطعة [BC] ، والمستقيمان (HK) و (AC) متوازيان.\nأيّ سلسلة مساواة بين النسب صحيحة بنظرية طاليس ؟\n<svg viewBox=\"0 0 320 214\"><title>وضعية طاليس برأس B: (HK) ∥ (AC)</title><polygon points=\"62,178 292,178 62,55.33\" fill=\"#0f6e56\" fill-opacity=\"0.08\"/><polygon points=\"62,178 292,178 62,55.33\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M215.33 178 L215.33 137.11\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M220.33 161.06 L215.33 154.06 L210.33 161.06\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M67 105.45 L62 98.45 L57 105.45\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"62\" cy=\"178\" r=\"3.8\"/><circle cx=\"292\" cy=\"178\" r=\"3.8\"/><circle cx=\"62\" cy=\"55.33\" r=\"3.8\"/><circle cx=\"215.33\" cy=\"178\" r=\"3.8\"/><circle cx=\"215.33\" cy=\"137.11\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"48\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"306\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"48\" y=\"49.33\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"215.33\" y=\"200\" text-anchor=\"middle\" fill=\"#0f172a\">H</text><text x=\"229.33\" y=\"130.11\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "BA/BH = BK/BC = HK/AC",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "b",
+          "text": "BH/BA = BK/BC = HK/AC"
+        },
+        {
+          "id": "c",
+          "text": "BH/BA = BK/KC = HK/AC",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "d",
+          "text": "BA/BH = BK/KC = HK/AB"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "H من [BA] و K من [BC] و (HK) ∥ (AC) ، فنحن في وضعية طاليس برأس B: المثلّث BHK تصغير للمثلّث BAC ، فالنسب الثلاث متساوية وفي الاتّجاه نفسه ، كلّ طول من المثلّث الصغير على نظيره في الكبير: BH/BA = BK/BC = HK/AC ✓. الخطأ الشائع: قلب إحدى النسب فنكتب BA/BH بدل BH/BA ؛ أو خلط شكل «الجزء على الكلّ» وشكل «الجزء على الجزء المتبقّي» فنكتب BK/KC مع BH/BA ؛ أو ربط [HK] بالضلع [AB] مع أنّه موازٍ لـ [AC].",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "في تصميم المدارج ، النقطة H من القطعة [AB] والنقطة K من القطعة [BC] ، والمستقيمان (HK) و (AC) متوازيان ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAB = 9\nBH = 3\nBC = 10,2\nما طول القطعة [BK] بالصنتمتر ؟\n<svg viewBox=\"0 0 320 214\"><title>وضعية طاليس برأس B والطول BH = 3</title><polygon points=\"62,178 292,178 62,55.33\" fill=\"#0f6e56\" fill-opacity=\"0.08\"/><polygon points=\"62,178 292,178 62,55.33\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M215.33 178 L215.33 137.11\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M220.33 161.06 L215.33 154.06 L210.33 161.06\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M67 105.45 L62 98.45 L57 105.45\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"62\" cy=\"178\" r=\"3.8\"/><circle cx=\"292\" cy=\"178\" r=\"3.8\"/><circle cx=\"62\" cy=\"55.33\" r=\"3.8\"/><circle cx=\"215.33\" cy=\"178\" r=\"3.8\"/><circle cx=\"215.33\" cy=\"137.11\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"48\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"306\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"48\" y=\"49.33\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"215.33\" y=\"200\" text-anchor=\"middle\" fill=\"#0f172a\">H</text><text x=\"229.33\" y=\"130.11\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"253.67\" y=\"198\" text-anchor=\"middle\" fill=\"#64748b\">3 cm</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,4"
+        },
+        {
+          "id": "b",
+          "text": "4,2",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "c",
+          "text": "5,1",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "d",
+          "text": "30,6",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "(HK) ∥ (AC) و H من [BA] و K من [BC] ، فبنظرية طاليس BK/BC = BH/BA ، أي BK/10,2 = 3/9 = 1/3 ، ومنه BK = 10,2 × 1/3 = 3,4 cm ✓. الخطأ الشائع: قلب النسبة فنجد BK = 10,2 × 9/3 = 30,6 وهو أطول من [BC] نفسه ، وهذا مستحيل ؛ أو استعمال نسبة الجزء على الجزء المتبقّي BH/HA = 3/6 فنجد BK = 10,2 × 1/2 = 5,1 ؛ أو طرح الفرق نفسه من الضلعين فنجد BK = 10,2 − (9 − 3) = 4,2 ، مع أنّ طاليس يعتمد النسب لا الفروق.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "في تصميم المدارج ، النقطة H من القطعة [AB] والنقطة K من القطعة [BC] ، والمستقيمان (HK) و (AC) متوازيان ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAB = 9\nAC = 4,8\nBH = 3\nما طول القطعة [HK] بالصنتمتر ؟\n<svg viewBox=\"0 0 320 214\"><title>وضعية طاليس برأس B: الطولان AC و BH</title><polygon points=\"62,178 292,178 62,55.33\" fill=\"#0f6e56\" fill-opacity=\"0.08\"/><polygon points=\"62,178 292,178 62,55.33\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M215.33 178 L215.33 137.11\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M220.33 161.06 L215.33 154.06 L210.33 161.06\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M67 105.45 L62 98.45 L57 105.45\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"62\" cy=\"178\" r=\"3.8\"/><circle cx=\"292\" cy=\"178\" r=\"3.8\"/><circle cx=\"62\" cy=\"55.33\" r=\"3.8\"/><circle cx=\"215.33\" cy=\"178\" r=\"3.8\"/><circle cx=\"215.33\" cy=\"137.11\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"48\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"306\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"48\" y=\"49.33\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"215.33\" y=\"200\" text-anchor=\"middle\" fill=\"#0f172a\">H</text><text x=\"229.33\" y=\"130.11\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"253.67\" y=\"198\" text-anchor=\"middle\" fill=\"#64748b\">3 cm</text><text x=\"26\" y=\"136.39\" text-anchor=\"middle\" fill=\"#64748b\">4,8 cm</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "14,4",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "b",
+          "text": "3,2",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "c",
+          "text": "2,4",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "d",
+          "text": "1,6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(HK) ∥ (AC) و H من [BA] و K من [BC] ، فبنظرية طاليس HK/AC = BH/BA ، أي HK/4,8 = 3/9 = 1/3 ، ومنه HK = 4,8 × 1/3 = 1,6 cm ✓. الخطأ الشائع: قلب النسبة فنجد HK = 4,8 × 3 = 14,4 وهو أكبر من [AC] نفسه ، والقطعة الصغيرة لا تتجاوز الكبيرة ؛ أو استعمال BH/HA = 3/6 فنجد 4,8 × 1/2 = 2,4 ؛ أو استعمال نسبة الجزء المتبقّي HA/BA = 6/9 فنجد 4,8 × 2/3 = 3,2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    }
+  ]
+}

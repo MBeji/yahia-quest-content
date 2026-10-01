@@ -1,0 +1,186 @@
+{
+  "title": "🏛️ مناظرة 2024 (تقني) · التمرين 3 ⭐⭐: هيكل حديدي للوحة شمسية — فيثاغورس وطاليس والسلّم",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 33,
+  "questions": [
+    {
+      "prompt": "في الهيكل الحديدي للوحة شمسية ، المثلّث ABC قائم في B والمثلّث AMN قائم في M ، والنقطة B من القطعة [AM] ، والنقطة C من القطعة [AN].\nنريد تعليل المساواة التالية:\nAC² = AB² + BC²\nأيّ تعليل صحيح ؟\n<svg viewBox=\"0 0 320 244\"><title>الهيكل الحديدي: المثلّثان ABC و AMN</title><polygon points=\"262,30 262,210 22,210\" fill=\"#0f172a\" fill-opacity=\"0.04\"/><polygon points=\"262,30 262,210 22,210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M262 210 L22 210\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 5\"/><path d=\"M262 174 L70 174\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M262 30 L262 174\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M262 163 L251 163 L251 174\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M262 199 L251 199 L251 210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"262\" cy=\"30\" r=\"3.8\"/><circle cx=\"262\" cy=\"174\" r=\"3.8\"/><circle cx=\"70\" cy=\"174\" r=\"3.8\"/><circle cx=\"262\" cy=\"210\" r=\"3.8\"/><circle cx=\"22\" cy=\"210\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"262\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"277\" y=\"178\" text-anchor=\"middle\" fill=\"#0f6e56\">B</text><text x=\"56\" y=\"172\" text-anchor=\"middle\" fill=\"#0f6e56\">C</text><text x=\"276\" y=\"228\" text-anchor=\"middle\" fill=\"#0f172a\">M</text><text x=\"18\" y=\"232\" text-anchor=\"middle\" fill=\"#0f172a\">N</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "المثلّث AMN قائم في M ، فنطبّق عكس نظرية فيثاغورس"
+        },
+        {
+          "id": "b",
+          "text": "المثلّث AMN قائم في M ، فنطبّق نظرية فيثاغورس",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "c",
+          "text": "المثلّث ABC قائم في B ، فنطبّق عكس نظرية فيثاغورس",
+          "misconceptionTag": "math.geo.pythagore-reciproque-role"
+        },
+        {
+          "id": "d",
+          "text": "المثلّث ABC قائم في B ، فنطبّق نظرية فيثاغورس"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "في المساواة AC² = AB² + BC² يقف مربّع [AC] وحده في طرف ، فـ [AC] هو الوتر ، أي الضلع المقابل للزاوية القائمة عند B. فنطبّق نظرية فيثاغورس المباشرة على المثلّث ABC القائم في B ✓. الخطأ الشائع: الاستناد إلى المثلّث AMN القائم في M ، ووتره [AN] لا [AC] ، فلا تنتج منه هذه المساواة ؛ أو استعمال عكس نظرية فيثاغورس ، وهي تُثبت أنّ مثلّثًا قائم انطلاقًا من أطواله ، ولا تُستعمل حين تكون الزاوية القائمة معلومة.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "في الهيكل الحديدي للوحة شمسية ، المثلّث ABC قائم في B ووتره [AC] ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAC = 5\nBC = 4\nما طول القطعة [AB] بالصنتمتر ؟\n<svg viewBox=\"0 0 320 206\"><title>المثلّث ABC القائم في B وطولا الضلعين AC و BC</title><polygon points=\"262,30 262,174 70,174\" fill=\"#0f172a\" fill-opacity=\"0.04\"/><polygon points=\"262,30 262,174 70,174\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M262 174 L70 174\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M262 163 L251 163 L251 174\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"262\" cy=\"30\" r=\"3.8\"/><circle cx=\"262\" cy=\"174\" r=\"3.8\"/><circle cx=\"70\" cy=\"174\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"262\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"277\" y=\"178\" text-anchor=\"middle\" fill=\"#0f6e56\">B</text><text x=\"56\" y=\"172\" text-anchor=\"middle\" fill=\"#0f6e56\">C</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"166\" y=\"194\" text-anchor=\"middle\" fill=\"#64748b\">4 cm</text><text x=\"144\" y=\"92\" text-anchor=\"middle\" fill=\"#64748b\">5 cm</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "√41",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "d",
+          "text": "9",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المثلّث ABC قائم في B ووتره [AC] ، فبنظرية فيثاغورس AC² = AB² + BC² ، ومنه AB² = AC² − BC² = 25 − 16 = 9 ، إذن AB = √9 = 3 cm ✓. الخطأ الشائع: التوقّف عند AB² = 9 ونسيان الجذر ؛ أو طرح الطولين مباشرة فنجد AB = 5 − 4 = 1 ؛ أو جمع المربّعين كأنّ [AB] هو الوتر فنجد AB² = 25 + 16 = 41 أي AB = √41.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "في الهيكل الحديدي للوحة شمسية ، المثلّث ABC قائم في B والمثلّث AMN قائم في M ، والنقطة B من القطعة [AM] ، والنقطة C من القطعة [AN].\nما العلاقة بين المستقيمين (BC) و (MN) ، وما تعليلها ؟\n<svg viewBox=\"0 0 320 244\"><title>(BC) و (MN) والمستقيم (AM) في الهيكل الحديدي</title><polygon points=\"262,30 262,210 22,210\" fill=\"#0f172a\" fill-opacity=\"0.04\"/><polygon points=\"262,30 262,210 22,210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M262 210 L22 210\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 5\"/><path d=\"M262 174 L70 174\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M262 30 L262 174\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M262 163 L251 163 L251 174\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M262 199 L251 199 L251 210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"262\" cy=\"30\" r=\"3.8\"/><circle cx=\"262\" cy=\"174\" r=\"3.8\"/><circle cx=\"70\" cy=\"174\" r=\"3.8\"/><circle cx=\"262\" cy=\"210\" r=\"3.8\"/><circle cx=\"22\" cy=\"210\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"262\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"277\" y=\"178\" text-anchor=\"middle\" fill=\"#0f6e56\">B</text><text x=\"56\" y=\"172\" text-anchor=\"middle\" fill=\"#0f6e56\">C</text><text x=\"276\" y=\"228\" text-anchor=\"middle\" fill=\"#0f172a\">M</text><text x=\"18\" y=\"232\" text-anchor=\"middle\" fill=\"#0f172a\">N</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "متوازيان ، لأنّ كلًّا منهما عمودي على (AM)"
+        },
+        {
+          "id": "b",
+          "text": "متعامدان ، لأنّ كلًّا منهما عمودي على (AM)",
+          "misconceptionTag": "math.geo.regle-perpendiculaire-parallele-inversee"
+        },
+        {
+          "id": "c",
+          "text": "متوازيان ، لأنّ B من [AM] و C من [AN]"
+        },
+        {
+          "id": "d",
+          "text": "متعامدان ، لأنّ B من [AM] و C من [AN]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المثلّث ABC قائم في B والنقطة B من [AM] ، فالمستقيم (BC) عمودي على (AM). والمثلّث AMN قائم في M ، فالمستقيم (MN) عمودي على (AM). وكلّ مستقيمين عموديين على مستقيم واحد متوازيان ، إذن (BC) ∥ (MN) ✓ ، وهذا التوازي شرط تطبيق نظرية طاليس. الخطأ الشائع: الاستنتاج أنّ المستقيمين متعامدان ، والصواب أنّ العموديّين على مستقيم واحد متوازيان ؛ أو الاكتفاء بأنّ B من [AM] و C من [AN] ، وهذا وحده لا يعطي التوازي: لو أخذنا نقطة أخرى من [AN] مكان C لما وازى (BC) المستقيم (MN).",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.droites-perp-para"
+      ]
+    },
+    {
+      "prompt": "في الهيكل الحديدي للوحة شمسية ، المثلّث ABC قائم في B والمثلّث AMN قائم في M ، والنقطة B من القطعة [AM] ، والنقطة C من القطعة [AN] ، والمستقيمان (BC) و (MN) متوازيان ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAB = 3\nAM = 3,75\nما قيمة النسبة MN/BC ؟\n<svg viewBox=\"0 0 320 244\"><title>وضعية طاليس برأس A: (BC) ∥ (MN)</title><polygon points=\"262,30 262,210 22,210\" fill=\"#0f172a\" fill-opacity=\"0.04\"/><polygon points=\"262,30 262,210 22,210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M262 210 L22 210\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 5\"/><path d=\"M262 174 L70 174\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M262 30 L262 174\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M162.5 179 L169.5 174 L162.5 169\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M138.5 215 L145.5 210 L138.5 205\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"262\" cy=\"30\" r=\"3.8\"/><circle cx=\"262\" cy=\"174\" r=\"3.8\"/><circle cx=\"70\" cy=\"174\" r=\"3.8\"/><circle cx=\"262\" cy=\"210\" r=\"3.8\"/><circle cx=\"22\" cy=\"210\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"262\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"277\" y=\"178\" text-anchor=\"middle\" fill=\"#0f6e56\">B</text><text x=\"56\" y=\"172\" text-anchor=\"middle\" fill=\"#0f6e56\">C</text><text x=\"276\" y=\"228\" text-anchor=\"middle\" fill=\"#0f172a\">M</text><text x=\"18\" y=\"232\" text-anchor=\"middle\" fill=\"#0f172a\">N</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,25",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "0,8",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "c",
+          "text": "1,25"
+        },
+        {
+          "id": "d",
+          "text": "5",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(BC) ∥ (MN) والنقطتان B و C من [AM] و [AN] ، فبنظرية طاليس في المثلّث AMN تساوي النسبة MN/BC النسبة AM/AB ، أي MN/BC = 3,75/3 = 1,25 ✓ ، وهو معامل التكبير من المثلّث ABC إلى المثلّث AMN. الخطأ الشائع: قلب النسبة فنجد AB/AM = 3/3,75 = 0,8 ؛ أو مقابلة MN/BC بنسبة الجزء على الجزء المتبقّي AM/BM ، حيث BM = 3,75 − 3 = 0,75 ، فنجد 5 ؛ أو أخذ القطعة BM بدل AM فنجد BM/AB = 0,75/3 = 0,25.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "في الهيكل الحديدي للوحة شمسية ، المثلّث ABC قائم في B والمثلّث AMN قائم في M ، والنقطة B من القطعة [AM] ، والنقطة C من القطعة [AN] ، والمستقيمان (BC) و (MN) متوازيان ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAB = 3\nAM = 3,75\nBC = 4\nما طول القطعة [MN] بالصنتمتر ؟\n<svg viewBox=\"0 0 320 244\"><title>وضعية طاليس برأس A والطول BC</title><polygon points=\"262,30 262,210 22,210\" fill=\"#0f172a\" fill-opacity=\"0.04\"/><polygon points=\"262,30 262,210 22,210\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M262 210 L22 210\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 5\"/><path d=\"M262 174 L70 174\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M262 30 L262 174\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M162.5 179 L169.5 174 L162.5 169\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M138.5 215 L145.5 210 L138.5 205\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"262\" cy=\"30\" r=\"3.8\"/><circle cx=\"262\" cy=\"174\" r=\"3.8\"/><circle cx=\"70\" cy=\"174\" r=\"3.8\"/><circle cx=\"262\" cy=\"210\" r=\"3.8\"/><circle cx=\"22\" cy=\"210\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"262\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"277\" y=\"178\" text-anchor=\"middle\" fill=\"#0f6e56\">B</text><text x=\"56\" y=\"172\" text-anchor=\"middle\" fill=\"#0f6e56\">C</text><text x=\"276\" y=\"228\" text-anchor=\"middle\" fill=\"#0f172a\">M</text><text x=\"18\" y=\"232\" text-anchor=\"middle\" fill=\"#0f172a\">N</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"120\" y=\"166\" text-anchor=\"middle\" fill=\"#64748b\">4 cm</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "20",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "4,75",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "d",
+          "text": "3,2",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(BC) ∥ (MN) والنقطتان B و C من [AM] و [AN] ، فبنظرية طاليس AM/AB = MN/BC ، أي 1,25 = MN/4 ، ومنه MN = 4 × 1,25 = 5 cm ✓. الخطأ الشائع: قلب النسبة فنجد MN = 4 × 0,8 = 3,2 وهو أقصر من [BC] مع أنّ [MN] قاعدة المثلّث الأكبر ؛ أو استعمال نسبة AM/BM = 3,75/0,75 = 5 فنجد MN = 4 × 5 = 20 ؛ أو إضافة الفرق نفسه فنجد MN = 4 + (3,75 − 3) = 4,75 ، مع أنّ طاليس يعتمد النسب لا الفروق.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "تمثّل القطعة [MN] قاعدة هيكل حديدي في تصميم سلّمه 1/40 ، أي أنّ كلّ 1 cm على التصميم يمثّل 40 cm في الواقع ، وطولها على التصميم بالصنتمتر هو 5.\nما طولها الحقيقي بالمتر ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "200",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "20",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "0,125"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "السلّم 1/40 يعني أنّ 1 cm على التصميم يمثّل 40 cm في الواقع ، فالطول الحقيقي 5 × 40 = 200 cm. ونحوّل إلى المتر بالقسمة على 100 لأنّ 1 m = 100 cm ، فنجد 200 ÷ 100 = 2 m ✓. الخطأ الشائع: ترك النتيجة بالصنتمتر وقراءتها بالمتر فنجد 200 ؛ أو القسمة على 10 بدل 100 عند التحويل فنجد 20 ؛ أو القسمة على السلّم بدل الضرب فيه مع ترك النتيجة بالصنتمتر فنجد 5 ÷ 40 = 0,125.",
+      "difficulty": 2,
+      "competencies": [
+        "math.prop.situations"
+      ]
+    }
+  ]
+}

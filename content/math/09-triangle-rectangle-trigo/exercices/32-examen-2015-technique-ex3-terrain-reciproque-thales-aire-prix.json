@@ -1,0 +1,240 @@
+{
+  "title": "🏛️ مناظرة 2015 (تقني) · التمرين 3 ⭐⭐⭐: قطعة أرض مثلّثة بالسلّم — عكس فيثاغورس وطاليس ومساحة وثمن",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 32,
+  "questions": [
+    {
+      "prompt": "في تصميم قطعة الأرض ، المثلّث ABC قائم في A ، والنقطة E من القطعة [AB] ، والنقطة F من القطعة [CB] ، ونعلم أنّ الأطوال بالصنتمتر هي:\nEB = 4\nEF = 3\nما قيمة EB² + EF² بالصنتمتر المربّع ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "49"
+        },
+        {
+          "id": "b",
+          "text": "25"
+        },
+        {
+          "id": "c",
+          "text": "14",
+          "misconceptionTag": "math.num.puissance-confondue-avec-produit"
+        },
+        {
+          "id": "d",
+          "text": "7",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نربّع كلّ طول على حدة ثمّ نجمع: EB² + EF² = 4² + 3² = 16 + 9 = 25 ✓. الخطأ الشائع: جمع الطولين دون تربيعهما فنجد 4 + 3 = 7 ؛ أو حساب كلّ مربّع بضرب العدد في 2 فنجد 4 × 2 + 3 × 2 = 14 ؛ أو تربيع المجموع فنجد (4 + 3)² = 49 ، مع أنّ المطلوب مجموع المربّعين لا مربّع المجموع.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "في تصميم قطعة الأرض ، المثلّث EBF أطوال أضلاعه بالصنتمتر هي:\nEB = 4\nEF = 3\nBF = 5\nونعلم أنّ:\nEB² + EF² = 25\nBF² = 25\nماذا نستنتج بعكس نظرية فيثاغورس ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "المثلّث EBF قائم في E ، ووتره [BF]"
+        },
+        {
+          "id": "b",
+          "text": "المثلّث EBF قائم في B ، ووتره [EF]",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "c",
+          "text": "المثلّث EBF قائم في F ، ووتره [EB]",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "d",
+          "text": "المثلّث EBF قائم في E ، ووتره [EF]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "مربّع الضلع [BF] وحده في طرف المساواة ويساوي مجموع مربّعي الضلعين الآخرين: EB² + EF² = 25 = BF². فبعكس نظرية فيثاغورس المثلّث EBF قائم ووتره [BF] ، والزاوية القائمة هي المقابلة للوتر ، أي الزاوية عند E ✓. الخطأ الشائع: اختيار وتر غير [BF] فيُنسب التعامد إلى الرأس B أو إلى الرأس F ، مع أنّ الوتر هو الضلع الذي مربّعه وحده في طرف المساواة ؛ أو الجمع بين رأس وضلع لا يتقابلان ، كقول «قائم في E ووتره [EF]» ، فالوتر يقابل دائمًا الزاوية القائمة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "في تصميم قطعة الأرض ، المثلّث ABC قائم في A ، والنقطة E من القطعة [AB] ، والنقطة F من القطعة [CB] ، والمثلّث EBF قائم في E.\nلتحديد الوضعيّة النسبيّة للمستقيمين (EF) و (AC) كتب تلميذ ما يلي:\nالخطوة 1 : المثلّث EBF قائم في E ، فالمستقيم (EF) عمودي على المستقيم (EB).\nالخطوة 2 : المستقيم (EB) هو المستقيم (AB) ، والمثلّث ABC قائم في A ، فالمستقيم (AC) عمودي على (AB).\nالخطوة 3 : المستقيمان (EF) و (AC) عموديان على مستقيم واحد ، إذن (EF) و (AC) متعامدان.\nفي أيّ خطوة يوجد الخطأ ؟\n<svg viewBox=\"0 0 320 226\"><title>المثلّثان ABC و EBF والمستقيمان (EF) و (AC)</title><polygon points=\"50,196 270,196 50,31\" fill=\"#0f172a\" fill-opacity=\"0.04\"/><polygon points=\"50,196 270,196 50,31\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M182 196 L182 130\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M62 196 L62 184 L50 184\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M182 185 L193 185 L193 196\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"196\" r=\"3.8\"/><circle cx=\"270\" cy=\"196\" r=\"3.8\"/><circle cx=\"50\" cy=\"31\" r=\"3.8\"/><circle cx=\"182\" cy=\"196\" r=\"3.8\"/><circle cx=\"182\" cy=\"130\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"36\" y=\"214\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"284\" y=\"214\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"36\" y=\"25\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"182\" y=\"218\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text><text x=\"196\" y=\"123\" text-anchor=\"middle\" fill=\"#0f6e56\">F</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "في الخطوة 1"
+        },
+        {
+          "id": "b",
+          "text": "في الخطوة 2"
+        },
+        {
+          "id": "c",
+          "text": "في الخطوة 3"
+        },
+        {
+          "id": "d",
+          "text": "لا يوجد خطأ في هذا الحلّ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "هذه مسألة اكتشاف الخطأ ، فالمطلوب هو الخطوة الخاطئة نفسها. الخطوتان 1 و 2 صحيحتان: المثلّث EBF قائم في E فـ (EF) عمودي على (EB) ، والنقطة E من [AB] فالمستقيم (EB) هو (AB) ، والمثلّث ABC قائم في A فـ (AC) عمودي على (AB). أمّا الخطوة 3 ففيها الخطأ: كلّ مستقيمين عموديين على مستقيم واحد متوازيان لا متعامدان ، فالصواب (EF) ∥ (AC) ✓ ، وهذا التوازي هو شرط تطبيق نظرية طاليس. الخطأ الشائع: اعتبار العموديّين على مستقيم ثالث متعامدين لأنّ كلمة «عمودي» تتكرّر ؛ أو الشكّ في الخطوة 2 لأنّ E ليست A ، مع أنّ E و B و A على استقامة واحدة فالمستقيم (EB) هو نفسه (AB).",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.droites-perp-para"
+      ]
+    },
+    {
+      "prompt": "في تصميم قطعة الأرض ، المثلّث ABC قائم في A ، والنقطة E من القطعة [AB] ، والنقطة F من القطعة [CB] ، والمستقيمان (EF) و (AC) متوازيان.\nنريد كتابة النسب بنظرية طاليس. ما الرأس الذي تقوم عليه وضعية طاليس ، وفي أيّ مثلّث ؟\n<svg viewBox=\"0 0 320 226\"><title>(EF) ∥ (AC) داخل المثلّث ABC</title><polygon points=\"50,196 270,196 50,31\" fill=\"#0f172a\" fill-opacity=\"0.04\"/><polygon points=\"50,196 270,196 50,31\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M182 196 L182 130\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M187 166.5 L182 159.5 L177 166.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M55 97.2 L50 90.2 L45 97.2\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"196\" r=\"3.8\"/><circle cx=\"270\" cy=\"196\" r=\"3.8\"/><circle cx=\"50\" cy=\"31\" r=\"3.8\"/><circle cx=\"182\" cy=\"196\" r=\"3.8\"/><circle cx=\"182\" cy=\"130\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"36\" y=\"214\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"284\" y=\"214\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"36\" y=\"25\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"182\" y=\"218\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text><text x=\"196\" y=\"123\" text-anchor=\"middle\" fill=\"#0f6e56\">F</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "الرأس E في المثلّث EBF"
+        },
+        {
+          "id": "b",
+          "text": "الرأس A في المثلّث ABC"
+        },
+        {
+          "id": "c",
+          "text": "الرأس C في المثلّث ABC"
+        },
+        {
+          "id": "d",
+          "text": "الرأس B في المثلّث ABC"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(EF) ∥ (AC) والنقطتان E و F من [BA] و [BC] ، فالمستقيمان (BA) و (BC) يلتقيان في B ويقطعهما المستقيمان المتوازيان ، فوضعية طاليس تقوم على الرأس B في المثلّث ABC ✓ ، والمثلّث الصغير هو EBF. الخطأ الشائع: اختيار الرأس A لأنّه رأس الزاوية القائمة ، مع أنّ (EF) لا يقطع الضلعين الخارجين من A ؛ أو اختيار الرأس C ؛ أو أخذ المثلّث الصغير EBF بدل الكبير فنختار الرأس E ، وهو رأس زاويته القائمة لا رأس وضعية طاليس.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "في تصميم قطعة الأرض ، المثلّث ABC قائم في A ، والنقطة E من القطعة [AB] ، والنقطة F من القطعة [CB] ، والمستقيمان (EF) و (AC) متوازيان ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAB = 10\nEB = 4\nEF = 3\nما طول القطعة [AC] بالصنتمتر ؟\n<svg viewBox=\"0 0 320 226\"><title>وضعية طاليس برأس B والطولان EB و EF</title><polygon points=\"50,196 270,196 50,31\" fill=\"#0f172a\" fill-opacity=\"0.04\"/><polygon points=\"50,196 270,196 50,31\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M182 196 L182 130\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M187 166.5 L182 159.5 L177 166.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M55 97.2 L50 90.2 L45 97.2\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"196\" r=\"3.8\"/><circle cx=\"270\" cy=\"196\" r=\"3.8\"/><circle cx=\"50\" cy=\"31\" r=\"3.8\"/><circle cx=\"182\" cy=\"196\" r=\"3.8\"/><circle cx=\"182\" cy=\"130\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"36\" y=\"214\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"284\" y=\"214\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"36\" y=\"25\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"182\" y=\"218\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text><text x=\"196\" y=\"123\" text-anchor=\"middle\" fill=\"#0f6e56\">F</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"226\" y=\"218\" text-anchor=\"middle\" fill=\"#64748b\">4 cm</text><text x=\"156\" y=\"167\" text-anchor=\"middle\" fill=\"#64748b\">3 cm</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,2",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "b",
+          "text": "4,5",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "c",
+          "text": "7,5"
+        },
+        {
+          "id": "d",
+          "text": "9",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(EF) ∥ (AC) والنقطتان E و F من [BA] و [BC] ، فبنظرية طاليس BE/BA = EF/AC ، أي 4/10 = 3/AC ، ومنه AC = 3 × 10/4 = 30/4 = 7,5 cm ✓. الخطأ الشائع: قلب النسبة فنجد AC = 3 × 4/10 = 1,2 ؛ أو استعمال نسبة الجزء على الجزء المتبقّي BE/EA = 4/6 فنجد AC = 3 × 6/4 = 4,5 ؛ أو إضافة الفرق نفسه فنجد AC = 3 + (10 − 4) = 9 ، مع أنّ طاليس يعتمد النسب لا الفروق.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "في تصميم قطعة الأرض ، المثلّث ABC قائم في A والمثلّث EBF قائم في E ، ويُباع الجزء AEFC المظلَّل في الرسم.\nنعلم أنّ طول كلّ قطعة من القطع التالية على الرسم بالصنتمتر هو:\nAB = 10\nAC = 7,5\nEB = 4\nEF = 3\nما مساحة الرباعي AEFC على الرسم بالصنتمتر المربّع ؟\n<svg viewBox=\"0 0 320 226\"><title>الرباعي AEFC المظلَّل داخل المثلّث ABC</title><polygon points=\"50,196 270,196 50,31\" fill=\"#0f172a\" fill-opacity=\"0.04\"/><path d=\"M50 31 L50 31 M50 40 L55.14 34.86 M50 49 L60.29 38.71 M50 58 L65.43 42.57 M50 67 L70.57 46.43 M50 76 L75.71 50.29 M50 85 L80.86 54.14 M50 94 L86 58 M50 103 L91.14 61.86 M50 112 L96.29 65.71 M50 121 L101.43 69.57 M50 130 L106.57 73.43 M50 139 L111.71 77.29 M50 148 L116.86 81.14 M50 157 L122 85 M50 166 L127.14 88.86 M50 175 L132.29 92.71 M50 184 L137.43 96.57 M50 193 L142.57 100.43 M56 196 L147.71 104.29 M65 196 L152.86 108.14 M74 196 L158 112 M83 196 L163.14 115.86 M92 196 L168.29 119.71 M101 196 L173.43 123.57 M110 196 L178.57 127.43 M119 196 L182 133 M128 196 L182 142 M137 196 L182 151 M146 196 L182 160 M155 196 L182 169 M164 196 L182 178 M173 196 L182 187\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.3\" stroke-opacity=\"0.55\"/><polygon points=\"50,196 182,196 182,130 50,31\" fill=\"#0f6e56\" fill-opacity=\"0.1\"/><polygon points=\"50,196 270,196 50,31\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M182 196 L182 130\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M62 196 L62 184 L50 184\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M182 185 L193 185 L193 196\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"196\" r=\"3.8\"/><circle cx=\"270\" cy=\"196\" r=\"3.8\"/><circle cx=\"50\" cy=\"31\" r=\"3.8\"/><circle cx=\"182\" cy=\"196\" r=\"3.8\"/><circle cx=\"182\" cy=\"130\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"36\" y=\"214\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"284\" y=\"214\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"36\" y=\"25\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"182\" y=\"218\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text><text x=\"196\" y=\"123\" text-anchor=\"middle\" fill=\"#0f6e56\">F</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "31,5"
+        },
+        {
+          "id": "b",
+          "text": "37,5"
+        },
+        {
+          "id": "c",
+          "text": "43,5",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "63",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الرباعي AEFC هو المثلّث ABC بعد نزع المثلّث EBF ، فمساحته الفرق بين المساحتين. مساحة ABC = (10 × 7,5) ÷ 2 = 37,5 ومساحة EBF = (4 × 3) ÷ 2 = 6 ، فمساحة AEFC = 37,5 − 6 = 31,5 cm² ✓. الخطأ الشائع: الاكتفاء بمساحة ABC فنجد 37,5 ؛ أو جمع المساحتين بدل طرحهما فنجد 37,5 + 6 = 43,5 ؛ أو نسيان القسمة على 2 في المثلّثين فنجد 10 × 7,5 − 4 × 3 = 75 − 12 = 63.",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.aires"
+      ]
+    },
+    {
+      "prompt": "يمثّل الرباعي AEFC تصميمًا لجزء من قطعة أرض وفق السلّم 1/1000 ، أي أنّ كلّ 1 cm على التصميم يمثّل 1000 cm في الواقع ، ومساحته على التصميم بالصنتمتر المربّع هي 31,5.\nما مساحته الحقيقية بالمتر المربّع ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "315",
+          "misconceptionTag": "math.mes.conversion-aire-facteur-errone"
+        },
+        {
+          "id": "b",
+          "text": "3150"
+        },
+        {
+          "id": "c",
+          "text": "31 500"
+        },
+        {
+          "id": "d",
+          "text": "315 000",
+          "misconceptionTag": "math.mes.conversion-aire-facteur-errone"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "السلّم 1/1000 يعني أنّ 1 cm على التصميم يمثّل 1000 cm ، أي 10 m ، في الواقع. والمساحة تُنسب إلى بُعدين ، فيُضرب عامل الأطوال في نفسه: 1 cm² على التصميم يمثّل 10 × 10 = 100 m². فالمساحة الحقيقية 31,5 × 100 = 3150 m² ✓. الخطأ الشائع: تطبيق عامل الأطوال 10 على المساحة فنجد 31,5 × 10 = 315 ؛ أو ضرب المساحة في 1000 وقراءتها بالمتر المربّع فنجد 31 500 ؛ أو ضربها في 1000 × 1000 ثمّ التحويل بالقسمة على 100 فنجد 315 000 ، مع أنّ 1 m² = 10 000 cm².",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.aires",
+        "math.prop.situations"
+      ]
+    },
+    {
+      "prompt": "بيع الجزء AEFC من قطعة أرض بثمن جملي قدره 189 000 دينار.\nرُسمت القطعة بسلّم 1/1000 ، أي أنّ كلّ 1 cm على التصميم يمثّل 1000 cm في الواقع ، وتبلغ مساحة الجزء AEFC على التصميم بالصنتمتر المربّع 31,5.\nكم ثمن بيع المتر المربّع الواحد بالدينار ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "6000",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "600",
+          "misconceptionTag": "math.mes.conversion-aire-facteur-errone"
+        },
+        {
+          "id": "c",
+          "text": "60"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نحسب أوّلًا المساحة الحقيقية: كلّ 1 cm على التصميم يمثّل 1000 cm ، أي 10 m ، فكلّ 1 cm² يمثّل 10 × 10 = 100 m² ، والمساحة الحقيقية 31,5 × 100 = 3150 m². ثمن المتر المربّع الواحد هو الثمن الجملي مقسومًا على هذه المساحة: 189 000 ÷ 3150 = 60 دينارًا ✓ ، لأنّ 3150 × 60 = 189 000. الخطأ الشائع: تطبيق عامل الأطوال 10 على المساحة فنجد 315 m² ثمّ 189 000 ÷ 315 = 600 ؛ أو القسمة على مساحة التصميم 31,5 فنجد 6000 ؛ أو ضرب مساحة التصميم في 1000 فنجد 31 500 ثمّ 189 000 ÷ 31 500 = 6.",
+      "difficulty": 3,
+      "competencies": [
+        "math.prop.situations"
+      ]
+    }
+  ]
+}
