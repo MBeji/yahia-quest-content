@@ -2,66 +2,131 @@
   "title": "Quiz de compréhension",
   "questions": [
     {
-      "prompt": "Quels signes de ponctuation caractérisent le discours direct ?",
+      "prompt": "Dans un dialogue, que signale le tiret placé au début d'une ligne ?",
       "options": [
-        { "id": "a", "text": "Des parenthèses et des crochets" },
+        {
+          "id": "a",
+          "text": "que le narrateur reprend la parole"
+        },
         {
           "id": "b",
-          "text": "Des deux-points, des guillemets (« … ») et éventuellement des tirets"
+          "text": "qu'on change de locuteur"
         },
-        { "id": "c", "text": "Uniquement des virgules et des points-virgules" },
-        { "id": "d", "text": "Des astérisques et des points de suspension" }
+        {
+          "id": "c",
+          "text": "que la réplique est une question"
+        },
+        {
+          "id": "d",
+          "text": "que le personnage parle à voix basse"
+        }
       ],
       "correctOption": "b",
-      "explanation": "Le discours direct se reconnaît aux deux-points annonçant les paroles, aux guillemets les encadrant et aux tirets marquant les changements d'interlocuteur dans un dialogue.",
+      "explanation": "Le tiret en début de ligne indique qu'un autre personnage prend la parole. Ce sont les guillemets qui encadrent le dialogue ; le retour du narrateur se voit à leur fermeture, et le ton (question, voix basse) se lit dans la ponctuation de la réplique et dans le verbe introducteur.",
       "difficulty": 1
     },
     {
-      "prompt": "Pour transposer au discours indirect une question totale du type « Viens-tu ? », quel outil de subordination utilise-t-on ?",
+      "prompt": "Pour rapporter au discours indirect une question totale comme « Viens-tu ? », quel outil emploie-t-on ?",
       "options": [
-        { "id": "a", "text": "que" },
-        { "id": "b", "text": "ce que" },
-        { "id": "c", "text": "si" },
-        { "id": "d", "text": "de + infinitif" }
+        {
+          "id": "a",
+          "text": "que",
+          "misconceptionTag": "fr.discours.outil-introducteur-faux"
+        },
+        {
+          "id": "b",
+          "text": "ce que",
+          "misconceptionTag": "fr.discours.outil-introducteur-faux"
+        },
+        {
+          "id": "c",
+          "text": "si"
+        },
+        {
+          "id": "d",
+          "text": "de + infinitif",
+          "misconceptionTag": "fr.discours.outil-introducteur-faux"
+        }
       ],
       "correctOption": "c",
-      "explanation": "Une question totale (réponse oui/non) est introduite au discours indirect par « si » : « Viens-tu ? » → Il demande si tu viens.",
+      "explanation": "Une question totale (réponse oui/non) se rapporte avec « si » : « Il demande si tu viens. » « que » rapporte une phrase déclarative, « ce que » une question partielle sur le COD, « de » + infinitif un ordre.",
       "difficulty": 1
     },
     {
-      "prompt": "Le verbe introducteur est au passé : « Elle dit : 'Je travaille.' » Quel temps prend le verbe au discours indirect ?",
+      "prompt": "Elle a affirmé : « Je travaille. » Au discours indirect, « Elle a affirmé qu'elle ___. »",
       "options": [
-        { "id": "a", "text": "Le présent" },
-        { "id": "b", "text": "L'imparfait" },
-        { "id": "c", "text": "Le plus-que-parfait" },
-        { "id": "d", "text": "Le conditionnel présent" }
-      ],
-      "correctOption": "b",
-      "explanation": "Quand le verbe introducteur est au passé, le présent du discours direct devient l'imparfait au discours indirect : « Je travaille. » → Elle dit qu'elle travaillait.",
-      "difficulty": 2
-    },
-    {
-      "prompt": "Comment transforme-t-on « aujourd'hui » du discours direct en discours indirect (verbe introducteur au passé) ?",
-      "options": [
-        { "id": "a", "text": "demain" },
-        { "id": "b", "text": "la veille" },
-        { "id": "c", "text": "le lendemain" },
-        { "id": "d", "text": "ce jour-là" }
+        {
+          "id": "a",
+          "text": "travaille",
+          "misconceptionTag": "fr.temps.repere-passe-ignore"
+        },
+        {
+          "id": "b",
+          "text": "avait travaillé"
+        },
+        {
+          "id": "c",
+          "text": "travaillerait"
+        },
+        {
+          "id": "d",
+          "text": "travaillait"
+        }
       ],
       "correctOption": "d",
-      "explanation": "Les indicateurs de temps s'adaptent au discours indirect : « aujourd'hui » devient « ce jour-là », « hier » devient « la veille », « demain » devient « le lendemain ».",
+      "explanation": "Le verbe introducteur « a affirmé » est au passé : le présent du discours direct devient imparfait, « travaillait ». Le plus-que-parfait rapporte un passé composé (« J'ai travaillé ») et le conditionnel rapporte un futur (« Je travaillerai »).",
       "difficulty": 2
     },
     {
-      "prompt": "Au discours indirect, un ordre à l'impératif est transposé grâce à :",
+      "prompt": "Avec un verbe introducteur au passé, que devient « aujourd'hui » au discours indirect ?",
       "options": [
-        { "id": "a", "text": "la conjonction « que » + subjonctif présent" },
-        { "id": "b", "text": "la préposition « de » + infinitif" },
-        { "id": "c", "text": "la conjonction « si » + indicatif" },
-        { "id": "d", "text": "le pronom relatif « qui » + verbe conjugué" }
+        {
+          "id": "a",
+          "text": "ce jour-là"
+        },
+        {
+          "id": "b",
+          "text": "le lendemain",
+          "misconceptionTag": "fr.discours.indicateur-mal-transpose"
+        },
+        {
+          "id": "c",
+          "text": "la veille",
+          "misconceptionTag": "fr.discours.indicateur-mal-transpose"
+        },
+        {
+          "id": "d",
+          "text": "demain"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "« aujourd'hui » désigne le jour de la parole ; rapporté depuis un repère passé, il devient « ce jour-là ». « la veille » correspond à « hier » et « le lendemain » à « demain ».",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Au discours indirect, un ordre à l'impératif se rapporte grâce à :",
+      "options": [
+        {
+          "id": "a",
+          "text": "la conjonction « que » + subjonctif présent",
+          "misconceptionTag": "fr.discours.outil-introducteur-faux"
+        },
+        {
+          "id": "b",
+          "text": "la préposition « de » + infinitif"
+        },
+        {
+          "id": "c",
+          "text": "la conjonction « si » + indicatif",
+          "misconceptionTag": "fr.discours.outil-introducteur-faux"
+        },
+        {
+          "id": "d",
+          "text": "le pronom « qui » + un verbe conjugué"
+        }
       ],
       "correctOption": "b",
-      "explanation": "Un impératif se transforme au discours indirect en « de + infinitif » : « Pars ! » → Il lui ordonne de partir.",
+      "explanation": "L'impératif n'existe pas en subordonnée : « Pars ! » → « Il lui ordonne de partir ». « si » rapporte une question totale, pas un ordre.",
       "difficulty": 2
     }
   ]

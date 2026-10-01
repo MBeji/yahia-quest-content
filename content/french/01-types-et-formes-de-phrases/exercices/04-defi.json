@@ -27,19 +27,21 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "La phrase se termine par « ? » et pose une question → type INTERROGATIF. Elle contient « ne… pas » → forme NÉGATIVE. Le verbe « fut racontée par les anciens » est au passif → forme PASSIVE. La structure « c'est… qui » (ici intégrée à l'interrogation) met un élément en relief → forme EMPHATIQUE. Les quatre caractéristiques coexistent.",
+      "explanation": "La phrase se termine par « ? » et pose une question (inversion « est-ce ») : type INTERROGATIF. « ne… pas » : forme NÉGATIVE. « c'est… qui » met « cette légende » en relief : forme EMPHATIQUE. « fut racontée par les anciens » (être + participe passé, complément d'agent) : forme PASSIVE. Un seul type, trois formes cumulées ; oublier la forme passive ou la forme emphatique laisse la description incomplète.",
       "difficulty": 3
     },
     {
-      "prompt": "Transforme à la voix PASSIVE en conservant le temps grammatical : « Les élèves lisaient attentivement le texte. »",
+      "prompt": "Mets à la forme PASSIVE en conservant le temps : « Les élèves lisaient attentivement le texte. »",
       "options": [
         {
           "id": "a",
-          "text": "Le texte est lu attentivement par les élèves."
+          "text": "Le texte est lu attentivement par les élèves.",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
         },
         {
           "id": "b",
-          "text": "Le texte a été lu attentivement par les élèves."
+          "text": "Le texte a été lu attentivement par les élèves.",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
         },
         {
           "id": "c",
@@ -47,11 +49,12 @@
         },
         {
           "id": "d",
-          "text": "Le texte sera lu attentivement par les élèves."
+          "text": "Le texte sera lu attentivement par les élèves.",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
         }
       ],
       "correctOption": "c",
-      "explanation": "Le verbe actif est à l'IMPARFAIT (« lisaient »). Au passif, l'auxiliaire « être » doit rester à l'imparfait : « était lu ». Le COD « le texte » devient sujet et le participe passé s'accorde avec lui (masculin singulier → « lu »). Le complément d'agent « par les élèves » conserve l'agent original.",
+      "explanation": "Le verbe actif est à l'IMPARFAIT (« lisaient ») : à la forme passive, « être » se met à l'imparfait → « était lu ». Le COD « le texte » devient sujet (le participe « lu » s'accorde au masculin singulier) et « les élèves » devient complément d'agent après « par ». « est lu » (présent), « a été lu » (passé composé) et « sera lu » (futur) changent le temps.",
       "difficulty": 3
     },
     {
@@ -63,19 +66,22 @@
         },
         {
           "id": "b",
-          "text": "C'est le pont qui a détruit la tempête."
+          "text": "C'est le pont qui a détruit la tempête.",
+          "misconceptionTag": "fr.phrase.emphase-qui-que"
         },
         {
           "id": "c",
-          "text": "C'est la tempête qui a détruit le pont."
+          "text": "C'est la tempête qui a détruit le pont.",
+          "misconceptionTag": "fr.phrase.relief-mauvais-element"
         },
         {
           "id": "d",
-          "text": "Le pont a été détruit par la tempête."
+          "text": "Le pont a été détruit par la tempête.",
+          "misconceptionTag": "fr.phrase.passif-pris-pour-emphase"
         }
       ],
       "correctOption": "a",
-      "explanation": "Pour mettre un COD en relief, on emploie « C'est… QUE » (et non « qui »). Le pont est COD → « C'est le pont QUE la tempête a détruit. » « C'est le pont qui a détruit la tempête » est agrammaticale (inversion des rôles). « C'est la tempête qui a détruit le pont » met le SUJET en relief (c'est…qui). « Le pont a été détruit par la tempête » est une transformation au passif, pas une mise en relief emphatique.",
+      "explanation": "Pour mettre un COD en relief, on emploie « c'est… QUE » (« qui » est réservé au sujet) : « C'est le pont que la tempête a détruit. » « C'est le pont qui a détruit la tempête » fait du pont le sujet : le sens est inversé. « C'est la tempête qui a détruit le pont » met en relief le SUJET. « Le pont a été détruit par la tempête » est une transformation passive, pas une mise en relief par un présentatif.",
       "difficulty": 3
     },
     {
@@ -83,7 +89,8 @@
       "options": [
         {
           "id": "a",
-          "text": "Elle ne parle pas encore à quelqu'un."
+          "text": "Elle ne parle pas encore à quelqu'un.",
+          "misconceptionTag": "fr.phrase.negation-sens-inexact"
         },
         {
           "id": "b",
@@ -91,7 +98,8 @@
         },
         {
           "id": "c",
-          "text": "Elle ne parle plus à quelqu'un."
+          "text": "Elle ne parle plus à quelqu'un.",
+          "misconceptionTag": "fr.phrase.negation-sens-inexact"
         },
         {
           "id": "d",
@@ -103,39 +111,43 @@
       "difficulty": 3
     },
     {
-      "prompt": "Laquelle de ces phrases est à la FORME IMPERSONNELLE ?",
+      "prompt": "Mets en relief le SUJET avec un présentatif : « Les élèves ont organisé la fête. »",
       "options": [
         {
           "id": "a",
-          "text": "Il est arrivé tard ce matin."
+          "text": "Ce sont les élèves que ont organisé la fête.",
+          "misconceptionTag": "fr.phrase.emphase-qui-que"
         },
         {
           "id": "b",
-          "text": "Il faut travailler davantage pour réussir."
+          "text": "Ce sont les élèves qui ont organisé la fête."
         },
         {
           "id": "c",
-          "text": "Il ne sait pas répondre à la question."
+          "text": "Ce sont les élèves qui a organisé la fête."
         },
         {
           "id": "d",
-          "text": "Il a dit la vérité à ses parents."
+          "text": "C'est la fête que les élèves ont organisée.",
+          "misconceptionTag": "fr.phrase.relief-mauvais-element"
         }
       ],
       "correctOption": "b",
-      "explanation": "La forme impersonnelle se reconnaît à un « il » SUJET APPARENT qui ne renvoie à aucune personne ou chose réelle — le vrai sujet est logique (infinitif ou proposition). « Il faut travailler » : « il » est sujet apparent, « travailler » est le vrai sujet logique. « Il est arrivé tard ce matin », « Il ne sait pas répondre à la question » et « Il a dit la vérité à ses parents » : « il » désigne une personne réelle ou remplace un sujet identifiable — ces phrases sont à la forme personnelle.",
+      "explanation": "Le sujet se met en relief avec « qui » ; au pluriel, le présentatif devient « ce sont… qui », et le verbe s'accorde avec le mot mis en relief : « ont organisé ». « que » est réservé à un complément ; « qui a organisé » oublie l'accord avec « les élèves » ; « C'est la fête que… » met en relief le COD, pas le sujet.",
       "difficulty": 3
     },
     {
-      "prompt": "Transforme à la voix PASSIVE (le complément d'agent doit être supprimé si la règle l'exige) : « On a réparé la route après la tempête. »",
+      "prompt": "Mets à la forme PASSIVE (supprime le complément d'agent si la règle l'exige) : « On a réparé la route après la tempête. »",
       "options": [
         {
           "id": "a",
-          "text": "La route a été réparée après la tempête par on."
+          "text": "La route a été réparée après la tempête par on.",
+          "misconceptionTag": "fr.voix.par-on"
         },
         {
           "id": "b",
-          "text": "La route fut réparée après la tempête."
+          "text": "La route fut réparée après la tempête.",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
         },
         {
           "id": "c",
@@ -147,7 +159,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Quand le sujet actif est « ON », la transformation au passif SUPPRIME le complément d'agent (on ne dit pas « par on »). Le verbe actif est au PASSÉ COMPOSÉ (« a réparé ») → le passif se forme avec « avoir été » : « a été réparée ». Le participe passé s'accorde avec le nouveau sujet féminin singulier « la route » → « réparée ». « La route fut réparée après la tempête » utilise le passé simple (changement de temps injustifié). « La route a été réparée après la tempête par on » et « La route est réparée après la tempête par on » conservent « par on », ce qui est agrammatical.",
+      "explanation": "Quand le sujet actif est « on », la phrase passive n'a pas de complément d'agent (on ne dit pas « par on »). « a réparé » est au passé composé → « être » au passé composé : « a été réparée », accordé avec « la route ». « La route fut réparée » passe au passé simple ; les deux phrases qui gardent « par on » sont incorrectes.",
       "difficulty": 3
     }
   ]

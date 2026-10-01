@@ -1,5 +1,5 @@
 {
-  "title": "⚔️ Boss : maîtriser la concordance des temps",
+  "title": "⚔️ Boss : maîtriser les temps du récit et du discours",
   "difficulty": 3,
   "mode": "boss",
   "xpReward": 120,
@@ -7,147 +7,160 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "Transforme au discours indirect : « Le général cria : ‹ Avancez sans tarder ! › »",
+      "prompt": "Quelles formes conviennent ?\n« Ce soir-là, Youssef ___ (entrer) sans bruit, posa le livre qu'il ___ (emprunter) la semaine précédente et repartit. »",
       "options": [
         {
           "id": "a",
-          "text": "Le général cria que ses soldats avançaient sans tarder."
+          "text": "entrait … avait emprunté",
+          "misconceptionTag": "fr.temps.passe-simple-imparfait"
         },
         {
           "id": "b",
-          "text": "Le général cria à ses soldats d'avancer sans tarder."
+          "text": "entra … empruntait",
+          "misconceptionTag": "fr.temps.anteriorite-non-marquee"
         },
         {
           "id": "c",
-          "text": "Le général cria qu'ils avanceraient sans tarder."
+          "text": "entra … avait emprunté"
         },
         {
           "id": "d",
-          "text": "Le général cria que ses soldats avancèrent sans tarder."
+          "text": "était entré … emprunta"
         }
       ],
-      "correctOption": "b",
-      "explanation": "L'impératif du discours direct devient un infinitif introduit par « de » au discours indirect : « cria de + infinitif ».",
+      "correctOption": "c",
+      "explanation": "« Entra » s'inscrit dans la suite d'actions ponctuelles au passé simple (« posa », « repartit ») : premier plan. L'emprunt est déjà achevé « la semaine précédente » : retour en arrière au plus-que-parfait, « avait emprunté ». L'imparfait « entrait » casserait la suite d'actions ; « empruntait » et « emprunta » ne marquent pas que l'emprunt est déjà fait.",
       "difficulty": 2
     },
     {
-      "prompt": "Complète : « Dès qu'il _____ son discours, les guerriers s'élancèrent. » (action antérieure immédiate)",
+      "prompt": "« Karim espère qu'il aura terminé son puzzle avant le dîner. »\nOn met « espère » à l'imparfait : « Karim espérait qu'il ___ son puzzle avant le dîner. »",
       "options": [
         {
           "id": "a",
-          "text": "avait terminé"
+          "text": "aura terminé",
+          "misconceptionTag": "fr.temps.repere-passe-ignore"
         },
         {
           "id": "b",
-          "text": "termina"
+          "text": "aurait terminé"
         },
         {
           "id": "c",
-          "text": "terminait"
+          "text": "avait terminé",
+          "misconceptionTag": "fr.temps.futur-du-passe-mal-forme"
         },
         {
           "id": "d",
-          "text": "eut terminé"
+          "text": "aurait terminer"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec un verbe principal au passé, le futur antérieur devient conditionnel passé : « aurait terminé » (auxiliaire au conditionnel + participe passé). « Aura terminé » garde le futur alors que le repère est passé ; « avait terminé » ferait du puzzle un fait déjà passé ; « aurait terminer » emploie l'infinitif au lieu du participe passé.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Lequel de ces passages appartient au système du discours ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "« Depuis ce matin, je révise : demain, j'aurai fini. »"
+        },
+        {
+          "id": "b",
+          "text": "« Ce jour-là, il révisa jusqu'au soir sans s'arrêter. »",
+          "misconceptionTag": "fr.temps.recit-discours-melanges"
+        },
+        {
+          "id": "c",
+          "text": "« Il révisait chaque soir ; ce jour-là, il s'endormit. »",
+          "misconceptionTag": "fr.temps.recit-discours-melanges"
+        },
+        {
+          "id": "d",
+          "text": "« La veille, il avait révisé ; le lendemain, il réussit. »",
+          "misconceptionTag": "fr.temps.recit-discours-melanges"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le présent « révise », le futur antérieur « aurai fini » et les repères « ce matin », « demain » partent du moment où l'on parle : c'est le discours. Les trois autres passages emploient le passé simple (« révisa », « s'endormit », « réussit ») et des repères coupés du présent (« ce jour-là », « la veille », « le lendemain ») : c'est le récit.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On remplace le passé composé par le passé simple : « Il a ouvert la fenêtre et il a appelé son chien. »\nQuelle version est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il ouvra la fenêtre et appela son chien."
+        },
+        {
+          "id": "b",
+          "text": "Il ouvrit la fenêtre et il a appelé son chien.",
+          "misconceptionTag": "fr.temps.recit-discours-melanges"
+        },
+        {
+          "id": "c",
+          "text": "Il ouvrait la fenêtre et appelait son chien.",
+          "misconceptionTag": "fr.temps.passe-simple-imparfait"
+        },
+        {
+          "id": "d",
+          "text": "Il ouvrit la fenêtre et appela son chien."
         }
       ],
       "correctOption": "d",
-      "explanation": "Après « dès que » suivi d'un verbe au passé simple, l'action antérieure immédiate s'exprime au passé antérieur (auxiliaire au passé simple + participe passé) : « eut terminé ».",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Quelle phrase respecte la concordance des temps dans le récit au passé ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Le village est calme : les habitants avaient fui la veille."
-        },
-        {
-          "id": "b",
-          "text": "Le village était calme : les habitants avaient fui la veille."
-        },
-        {
-          "id": "c",
-          "text": "Le village était calme : les habitants fuiront la veille."
-        },
-        {
-          "id": "d",
-          "text": "Le village était calme : les habitants fuyaient la veille avant."
-        }
-      ],
-      "correctOption": "b",
-      "explanation": "L'imparfait « était » décrit l'état de fond ; le plus-que-parfait « avaient fui » exprime correctement l'antériorité par rapport à l'état présent du village.",
+      "explanation": "« Ouvrir » prend les terminaisons -is, -is, -it (« il ouvrit ») et « appeler », du 1er groupe, -ai, -as, -a (« il appela »). « Il ouvra » applique à tort la terminaison du 1er groupe ; garder « il a appelé » mélange passé simple et passé composé ; « ouvrait … appelait » est à l'imparfait, pas au passé simple.",
       "difficulty": 2
     },
     {
-      "prompt": "Transforme au discours indirect (verbe introducteur au passé) : « Il murmura : ‹ Je reviendrai demain. › »",
+      "prompt": "« Si les animaux parlaient, ils nous raconteraient leur vie. »\nQue présente l'imparfait « parlaient » ?",
       "options": [
         {
           "id": "a",
-          "text": "Il murmura qu'il reviendrait le lendemain."
+          "text": "Une action éventuelle, qui pourra se réaliser plus tard",
+          "misconceptionTag": "fr.si.eventuel-irreel-confondus"
         },
         {
           "id": "b",
-          "text": "Il murmura qu'il reviendra demain."
+          "text": "Une action passée qui a duré un certain temps",
+          "misconceptionTag": "fr.valeur.forme-sans-contexte"
         },
         {
           "id": "c",
-          "text": "Il murmura qu'il était revenu le lendemain."
+          "text": "Une action irréelle, contraire à la réalité présente"
         },
         {
           "id": "d",
-          "text": "Il murmura qu'il revenait demain."
+          "text": "Une action déjà achevée avant un moment passé"
         }
       ],
-      "correctOption": "a",
-      "explanation": "Le futur simple du discours direct devient conditionnel présent (« reviendrait ») et « demain » devient « le lendemain » au discours indirect avec verbe introducteur au passé.",
-      "difficulty": 2
-    },
-    {
-      "prompt": "Dans « Il voulait que le héros _____ la quête avant la nuit. », quel temps convient au registre soutenu ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "accomplît"
-        },
-        {
-          "id": "b",
-          "text": "accomplisse"
-        },
-        {
-          "id": "c",
-          "text": "accomplit"
-        },
-        {
-          "id": "d",
-          "text": "accomplissait"
-        }
-      ],
-      "correctOption": "a",
-      "explanation": "Quand la principale est au passé (« voulait »), la subordonnée au subjonctif se met au subjonctif imparfait en registre soutenu : « accomplît » (3e pers. sing. du subjonctif imparfait d'« accomplir »).",
+      "correctOption": "c",
+      "explanation": "Les animaux ne parlent pas : après « si », l'imparfait présente ici une action irréelle, contraire à la réalité présente (si + imparfait → conditionnel présent). Elle n'est pas éventuelle, car aucun indice ne la rend possible plus tard ; et l'imparfait après « si » ne raconte pas le passé. L'action déjà achevée relève du plus-que-parfait.",
       "difficulty": 3
     },
     {
-      "prompt": "Transforme au discours indirect : « La sorcière avoua : ‹ J'ai caché la clé hier. › »",
+      "prompt": "Quelles formes conviennent ?\n« Quand les pompiers ___ (arriver), la maison ___ (brûler) depuis une heure : un voisin ___ (donner) l'alerte trop tard. »",
       "options": [
         {
           "id": "a",
-          "text": "La sorcière avoua qu'elle cachait la clé la veille."
+          "text": "étaient arrivés … brûla … avait donné"
         },
         {
           "id": "b",
-          "text": "La sorcière avoua qu'elle avait caché la clé la veille."
+          "text": "arrivèrent … brûlait … avait donné"
         },
         {
           "id": "c",
-          "text": "La sorcière avoua qu'elle a caché la clé hier."
+          "text": "arrivèrent … brûla … avait donné",
+          "misconceptionTag": "fr.temps.passe-simple-imparfait"
         },
         {
           "id": "d",
-          "text": "La sorcière avoua qu'elle cacherait la clé la veille."
+          "text": "arrivèrent … brûlait … donna",
+          "misconceptionTag": "fr.temps.anteriorite-non-marquee"
         }
       ],
       "correctOption": "b",
-      "explanation": "Le passé composé « ai caché » devient plus-que-parfait « avait caché » au discours indirect (verbe introducteur au passé), et « hier » devient « la veille ».",
+      "explanation": "C'est un récit. L'arrivée est l'événement de premier plan (passé simple « arrivèrent ») ; l'incendie dure « depuis une heure », à l'arrière-plan (imparfait « brûlait ») ; l'alerte a été donnée avant l'arrivée : retour en arrière au plus-que-parfait (« avait donné »). « Brûla depuis une heure » est impossible ; « étaient arrivés » ferait de l'arrivée un retour en arrière ; « donna » placerait l'alerte après l'arrivée des pompiers.",
       "difficulty": 3
     }
   ]

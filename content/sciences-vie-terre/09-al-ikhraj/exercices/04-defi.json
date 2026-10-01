@@ -9,12 +9,20 @@
     {
       "prompt": "تحليل بول مريض يبيّن وجود جليكوز. ماذا نستنتج؟",
       "options": [
-        { "id": "a", "text": "أنّ الكلية لا ترشّح" },
+        {
+          "id": "a",
+          "text": "أنّ الكلية لا ترشّح",
+          "misconceptionTag": "bio.excr.etape-du-nephron-confondue"
+        },
         {
           "id": "b",
           "text": "أنّ إعادة الامتصاص لم تستوعب كلّ الجليكوز المرشّح، وهي حالة المصاب بمرض السكّريّ"
         },
-        { "id": "c", "text": "أنّ الجليكوز أُفرِز من خلايا الأنبوب" },
+        {
+          "id": "c",
+          "text": "أنّ الجليكوز أُفرِز من خلايا الأنبوب",
+          "misconceptionTag": "bio.excr.etape-du-nephron-confondue"
+        },
         { "id": "d", "text": "أنّ المريض لا يأكل سكّريات" }
       ],
       "correctOption": "b",
@@ -29,7 +37,11 @@
           "id": "b",
           "text": "أنّ مرشّح الكبيبة تضرّر فصار يمرّر جزيئات كبيرة كان يحبسها"
         },
-        { "id": "c", "text": "أنّ الأنابيب أفرزت بروتيدات" },
+        {
+          "id": "c",
+          "text": "أنّ الأنابيب أفرزت بروتيدات",
+          "misconceptionTag": "bio.excr.etape-du-nephron-confondue"
+        },
         { "id": "d", "text": "أنّ البول تلوّث بالعرق" }
       ],
       "correctOption": "b",
@@ -58,8 +70,16 @@
           "id": "a",
           "text": "لأنّ الكليتين احتياطيّتان لبعضهما، والواحدة تكفي للعمل"
         },
-        { "id": "b", "text": "لأنّ الكبد يعوّض الكلية" },
-        { "id": "c", "text": "لأنّ الغدد العرقيّة تطرح البول" },
+        {
+          "id": "b",
+          "text": "لأنّ الكبد يعوّض الكلية",
+          "misconceptionTag": "bio.excr.dechet-du-mauvais-organe"
+        },
+        {
+          "id": "c",
+          "text": "لأنّ الغدد العرقيّة تطرح البول",
+          "misconceptionTag": "bio.excr.dechet-du-mauvais-organe"
+        },
         { "id": "d", "text": "لأنّه سيحتاج إلى غسيل الكلى" }
       ],
       "correctOption": "a",

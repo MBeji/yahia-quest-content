@@ -9,7 +9,11 @@
     {
       "prompt": "ما الإلقاح؟",
       "options": [
-        { "id": "a", "text": "دخول حيوان منويّ إلى البويضة فحسب" },
+        {
+          "id": "a",
+          "text": "دخول حيوان منويّ إلى البويضة فحسب",
+          "misconceptionTag": "bio.repro.fecondation-reduite-a-l-entree"
+        },
         {
           "id": "b",
           "text": "اندماج المشيجين وانصهار نواتيهما لتكوين خليّة-بيضة"
@@ -24,7 +28,11 @@
     {
       "prompt": "أين يقع الإلقاح، ولماذا هناك؟",
       "options": [
-        { "id": "a", "text": "في الرّحم، لأنّه أوسع" },
+        {
+          "id": "a",
+          "text": "في الرّحم، لأنّه أوسع",
+          "misconceptionTag": "bio.repro.fecondation-dans-l-uterus"
+        },
         {
           "id": "b",
           "text": "في الثّلث العلويّ لقناة البيض، لأنّ البويضة تنزل ببطء والحيوان المنويّ يصعد بسرعة فيلتقيان هناك"
@@ -40,8 +48,16 @@
       "prompt": "كم حيوانًا منويًّا يخترق الغلاف الخلويّ للبويضة؟",
       "options": [
         { "id": "a", "text": "واحد فقط" },
-        { "id": "b", "text": "اثنان" },
-        { "id": "c", "text": "كلّ ما يحيط بها" },
+        {
+          "id": "b",
+          "text": "اثنان",
+          "misconceptionTag": "bio.repro.plusieurs-spermatozoides-entrent"
+        },
+        {
+          "id": "c",
+          "text": "كلّ ما يحيط بها",
+          "misconceptionTag": "bio.repro.plusieurs-spermatozoides-entrent"
+        },
         { "id": "d", "text": "لا يخترقها أحد" }
       ],
       "correctOption": "a",

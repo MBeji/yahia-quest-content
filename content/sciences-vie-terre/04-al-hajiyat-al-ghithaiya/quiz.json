@@ -4,9 +4,9 @@
     {
       "prompt": "يؤدّي نقص فيتامين D في التّغذية إلى مرض:",
       "options": [
-        { "id": "a", "text": "فقر الدّم" },
+        { "id": "a", "text": "فقر الدّم", "misconceptionTag": "bio.alim.carences-confondues" },
         { "id": "b", "text": "الكُساح" },
-        { "id": "c", "text": "الإسقربوط" },
+        { "id": "c", "text": "الإسقربوط", "misconceptionTag": "bio.alim.carences-confondues" },
         { "id": "d", "text": "السّمنة" }
       ],
       "correctOption": "b",
@@ -28,9 +28,17 @@
     {
       "prompt": "وضعت قطرة ماء اليود على رُشاحة الحليب فلم يظهر اللّون الأزرق البنفسجيّ. ماذا تستنتج؟",
       "options": [
-        { "id": "a", "text": "أنّ الحليب خالٍ من كلّ أنواع السّكّريات" },
+        {
+          "id": "a",
+          "text": "أنّ الحليب خالٍ من كلّ أنواع السّكّريات",
+          "misconceptionTag": "bio.alim.absence-conclue-a-tort"
+        },
         { "id": "b", "text": "أنّ التّجربة فاشلة ويجب إعادتها" },
-        { "id": "c", "text": "أنّ الحليب لا يحتوي على البروتيدات" },
+        {
+          "id": "c",
+          "text": "أنّ الحليب لا يحتوي على البروتيدات",
+          "misconceptionTag": "bio.alim.absence-conclue-a-tort"
+        },
         { "id": "d", "text": "أنّ الحليب لا يحتوي على النّشا" }
       ],
       "correctOption": "d",
@@ -40,9 +48,17 @@
     {
       "prompt": "كم كيلو حريرة يُنتج احتراق 1 غرام من الدّهنيّات؟",
       "options": [
-        { "id": "a", "text": "4 كيلو حريرة" },
+        {
+          "id": "a",
+          "text": "4 كيلو حريرة",
+          "misconceptionTag": "bio.alim.valeurs-energetiques-confondues"
+        },
         { "id": "b", "text": "9 كيلو حريرة" },
-        { "id": "c", "text": "صفر، فهي غير قابلة للاحتراق" },
+        {
+          "id": "c",
+          "text": "صفر، فهي غير قابلة للاحتراق",
+          "misconceptionTag": "bio.alim.valeurs-energetiques-confondues"
+        },
         { "id": "d", "text": "14 كيلو حريرة" }
       ],
       "correctOption": "b",
@@ -52,7 +68,11 @@
     {
       "prompt": "وجبة تحتوي على 100 غ سكّريات و 20 غ دهنيّات. أيّ المكوّنين يوفّر طاقة أكبر؟",
       "options": [
-        { "id": "a", "text": "الدّهنيّات، لأنّ غرامها يعطي أكثر من الضّعف" },
+        {
+          "id": "a",
+          "text": "الدّهنيّات، لأنّ غرامها يعطي أكثر من الضّعف",
+          "misconceptionTag": "bio.alim.energie-sans-la-masse"
+        },
         { "id": "b", "text": "المكوّنان متساويان في الطّاقة" },
         { "id": "c", "text": "السّكّريات، بـ 400 كيلو حريرة مقابل 180" },
         { "id": "d", "text": "لا يمكن الحسم دون معرفة كتلة البروتيدات" }
@@ -64,9 +84,13 @@
     {
       "prompt": "في مجموعة الأغذية الطّاقيّة توجد:",
       "options": [
-        { "id": "a", "text": "الأملاح المعدنيّة" },
-        { "id": "b", "text": "الفيتامينات" },
-        { "id": "c", "text": "الماء" },
+        {
+          "id": "a",
+          "text": "الأملاح المعدنيّة",
+          "misconceptionTag": "bio.alim.vitamines-energetiques"
+        },
+        { "id": "b", "text": "الفيتامينات", "misconceptionTag": "bio.alim.vitamines-energetiques" },
+        { "id": "c", "text": "الماء", "misconceptionTag": "bio.alim.vitamines-energetiques" },
         { "id": "d", "text": "السّكّريات" }
       ],
       "correctOption": "d",
@@ -84,7 +108,8 @@
         { "id": "c", "text": "لأنّها تتحوّل إلى دهنيّات داخل الجسم" },
         {
           "id": "d",
-          "text": "لأنّها توجد في الأغذية الحيوانيّة والنباتيّة معا"
+          "text": "لأنّها توجد في الأغذية الحيوانيّة والنباتيّة معا",
+          "misconceptionTag": "bio.alim.classement-par-origine"
         }
       ],
       "correctOption": "a",
@@ -94,7 +119,11 @@
     {
       "prompt": "شخص يأكل كثيرا ومع ذلك يشكو فقر الدّم. كيف يُفسَّر ذلك؟",
       "options": [
-        { "id": "a", "text": "هذا مستحيل: كثرة الأكل تمنع فقر الدّم" },
+        {
+          "id": "a",
+          "text": "هذا مستحيل: كثرة الأكل تمنع فقر الدّم",
+          "misconceptionTag": "bio.alim.quantite-sans-qualite"
+        },
         {
           "id": "b",
           "text": "وجبته كافية كمّا لكنّها فقيرة كيفا في الحديد والبروتيدات والفيتامين B12"
@@ -109,7 +138,7 @@
     {
       "prompt": "ما العوامل التي تجعل حاجات فردين من الطّاقة مختلفة؟",
       "options": [
-        { "id": "a", "text": "السنّ وحده" },
+        { "id": "a", "text": "السنّ وحده", "misconceptionTag": "bio.alim.age-seul" },
         { "id": "b", "text": "الوزن وحده" },
         {
           "id": "c",
@@ -124,8 +153,16 @@
     {
       "prompt": "وجبة توفّر 3000 كيلو حريرة لطفل حاجته اليوميّة 1600. أهي متوازنة؟",
       "options": [
-        { "id": "a", "text": "نعم، ما دامت تحتوي على المجموعات الثّلاث" },
-        { "id": "b", "text": "نعم، فالزّيادة تُخزَّن ولا تضرّ" },
+        {
+          "id": "a",
+          "text": "نعم، ما دامت تحتوي على المجموعات الثّلاث",
+          "misconceptionTag": "bio.alim.exces-sans-danger"
+        },
+        {
+          "id": "b",
+          "text": "نعم، فالزّيادة تُخزَّن ولا تضرّ",
+          "misconceptionTag": "bio.alim.exces-sans-danger"
+        },
         {
           "id": "c",
           "text": "لا، لأنّ الشّرط الكمّي غير محقّق مهما كان تركيبها جيّدا"

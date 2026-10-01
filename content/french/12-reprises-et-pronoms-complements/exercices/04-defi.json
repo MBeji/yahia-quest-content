@@ -1,0 +1,165 @@
+{
+  "title": "👑 Défi élite : les reprises et les pronoms compléments",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Dans « Un garçon de Tozeur a gagné le concours régional. Ce champion du calcul mental n'a que quatorze ans ; ses camarades l'admirent. », quelle affirmation est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "« Ce champion du calcul mental » apporte une information nouvelle."
+        },
+        {
+          "id": "b",
+          "text": "Le pronom « l' » apporte une information nouvelle sur le garçon.",
+          "misconceptionTag": "fr.reprise.reprise-sans-information"
+        },
+        {
+          "id": "c",
+          "text": "« Ses camarades » est une reprise de « un garçon de Tozeur »."
+        },
+        {
+          "id": "d",
+          "text": "« Ce champion du calcul mental » est un terme générique sans information."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "« Ce champion du calcul mental » reprend le garçon en nous apprenant dans quelle discipline il a gagné : la reprise informe. Un pronom comme « l' » ne fait que renvoyer au garçon sans rien ajouter ; « ses camarades » désigne d'autres personnes, pas le garçon ; un terme générique serait « cet enfant », un mot plus large et sans information.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Mets à l'impératif affirmatif (2ᵉ personne du singulier) en remplaçant le complément : « Tu me donnes des conseils. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "Donne-moi-en.",
+          "misconceptionTag": "fr.pronom.imperatif-affirmatif"
+        },
+        {
+          "id": "b",
+          "text": "Donne-en-moi.",
+          "misconceptionTag": "fr.pronom.imperatif-affirmatif"
+        },
+        {
+          "id": "c",
+          "text": "Donne-m'en."
+        },
+        {
+          "id": "d",
+          "text": "M'en donne.",
+          "misconceptionTag": "fr.pronom.imperatif-affirmatif"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "« Des conseils » (introduit par « des ») → « en » ; à l'impératif affirmatif, les pronoms suivent le verbe avec des traits d'union, et « moi » devient « m' » devant « en » : « Donne-m'en ». « Donne-moi-en » oublie cette élision ; « Donne-en-moi » place « en » avant « moi » ; « M'en donne » garde l'ordre de la règle générale, qui ne vaut qu'à la forme négative.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans « Le directeur nous a félicités puis nous a remis un diplôme. », quelle est la fonction de chacun des deux « nous » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "COI, puis COD",
+          "misconceptionTag": "fr.pronom.cod-coi-confondus"
+        },
+        {
+          "id": "b",
+          "text": "COD, puis COI"
+        },
+        {
+          "id": "c",
+          "text": "COD les deux fois",
+          "misconceptionTag": "fr.pronom.cod-coi-confondus"
+        },
+        {
+          "id": "d",
+          "text": "COI les deux fois",
+          "misconceptionTag": "fr.pronom.cod-coi-confondus"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On félicite quelqu'un (construction directe) : le premier « nous » est COD. On remet un diplôme à quelqu'un (construction avec « à ») : le second « nous » est COI. La forme « nous » est la même pour le COD et le COI : c'est la construction du verbe qui décide, pas la forme du pronom.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle phrase remplace les deux compléments de « Elle n'a pas parlé de son projet à ses parents. » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle n'en leur a pas parlé.",
+          "misconceptionTag": "fr.pronom.ordre-inverse"
+        },
+        {
+          "id": "b",
+          "text": "Elle ne leur en n'a pas parlé."
+        },
+        {
+          "id": "c",
+          "text": "Elle ne lui en a pas parlé."
+        },
+        {
+          "id": "d",
+          "text": "Elle ne leur en a pas parlé."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "« De son projet » (introduit par « de ») → « en » ; « à ses parents » (plusieurs personnes) → « leur » ; « leur » passe avant « en », et les pronoms se placent avant l'auxiliaire, entre « ne » et « pas ». « N'en leur » inverse l'ordre ; « en n'a » ajoute un second « ne » fautif, car « ne » ne s'écrit qu'une fois, devant les pronoms ; « lui » ne désigne qu'une seule personne.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle phrase est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ma grand-mère ? J'y pense souvent.",
+          "misconceptionTag": "fr.pronom.y-pour-personne"
+        },
+        {
+          "id": "b",
+          "text": "Ma grand-mère ? Je lui pense très souvent."
+        },
+        {
+          "id": "c",
+          "text": "Ma grand-mère ? Je pense souvent à elle."
+        },
+        {
+          "id": "d",
+          "text": "Ma grand-mère ? J'en pense souvent.",
+          "misconceptionTag": "fr.pronom.en-y-le-confondus"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "« Penser à » suivi d'une personne garde la préposition et prend le pronom tonique : « je pense à elle ». « Y » remplace une chose introduite par « à », pas une personne ; « lui » ne convient pas avec « penser à » ; « en » remplace un complément introduit par « de ».",
+      "difficulty": 3
+    },
+    {
+      "prompt": "« Le capitaine et la gardienne ont été décorés : … a arrêté trois penalties, … a marqué deux buts. » Complète pour que ce soit la gardienne qui ait arrêté les penalties.",
+      "options": [
+        {
+          "id": "a",
+          "text": "celle-ci … celui-là"
+        },
+        {
+          "id": "b",
+          "text": "celle-là … celui-ci",
+          "misconceptionTag": "fr.reprise.celui-ci-celui-la-inverses"
+        },
+        {
+          "id": "c",
+          "text": "celui-ci … celle-là"
+        },
+        {
+          "id": "d",
+          "text": "celui-là … celle-ci"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La gardienne est nommée en dernier : on la reprend par « celle-ci » (le plus proche, féminin) ; le capitaine, nommé en premier, par « celui-là » (masculin). « Celle-là » renverrait au premier nommé, qui est un homme ; les deux autres réponses attribuent les penalties au capitaine.",
+      "difficulty": 3
+    }
+  ]
+}

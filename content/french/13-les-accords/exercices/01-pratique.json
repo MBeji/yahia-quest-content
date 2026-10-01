@@ -1,0 +1,161 @@
+{
+  "title": "Exercice : accorder les couleurs, « tout », le participe passé et « quel »",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Quel adjectif de couleur reste invariable ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "citron"
+        },
+        {
+          "id": "b",
+          "text": "vert"
+        },
+        {
+          "id": "c",
+          "text": "pourpre"
+        },
+        {
+          "id": "d",
+          "text": "noir"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "« Citron » est un nom commun employé comme couleur (« de la couleur du citron ») : il reste invariable, « des robes citron ». « Vert » et « noir » sont des adjectifs simples, qui s'accordent. « Pourpre » vient d'un nom, mais il fait partie des six exceptions (rose, mauve, pourpre, fauve, écarlate, incarnat) qui s'accordent : « des tapis pourpres ».",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Mets au pluriel : « une jupe bleu marine ».",
+      "options": [
+        {
+          "id": "a",
+          "text": "des jupes bleues marines",
+          "misconceptionTag": "fr.accord.couleur-composee-accordee"
+        },
+        {
+          "id": "b",
+          "text": "des jupes bleues marine",
+          "misconceptionTag": "fr.accord.couleur-composee-accordee"
+        },
+        {
+          "id": "c",
+          "text": "des jupes bleu marine"
+        },
+        {
+          "id": "d",
+          "text": "des jupes bleu marines",
+          "misconceptionTag": "fr.accord.couleur-composee-accordee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "« Bleu » est complété par « marine » : la couleur composée reste entièrement invariable, « des jupes bleu marine ». Accorder « bleu » parce que « jupes » est féminin pluriel est l'erreur tentante ; mais dès qu'un adjectif de couleur est complété par un autre mot, aucun des deux ne s'accorde.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Complète : « Les candidats sont arrivés. ___ sont prêts. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tous"
+        },
+        {
+          "id": "b",
+          "text": "Tout"
+        },
+        {
+          "id": "c",
+          "text": "Toute"
+        },
+        {
+          "id": "d",
+          "text": "Toutes"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "« Tous » remplace le nom « les candidats » : c'est un pronom indéfini, qui prend le genre et le nombre du nom qu'il remplace, masculin pluriel → « Tous ». « Tout » serait la forme invariable de l'adverbe, or ici aucun adjectif ne suit ; « Toute » et « Toutes » sont des féminins, alors que « candidats » est masculin.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Complète : « Mes oncles sont ___ de Tozeur hier soir. » (revenir)",
+      "options": [
+        {
+          "id": "a",
+          "text": "revenue"
+        },
+        {
+          "id": "b",
+          "text": "revenus"
+        },
+        {
+          "id": "c",
+          "text": "revenues"
+        },
+        {
+          "id": "d",
+          "text": "revenu",
+          "misconceptionTag": "fr.accord.pp-etre-non-accorde"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le participe passé conjugué avec « être » s'accorde avec le sujet : « mes oncles », masculin pluriel → « revenus ». « revenu » oublie l'accord, comme si l'auxiliaire était « avoir » ; « revenue » et « revenues » donnent au sujet un genre féminin qu'il n'a pas.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Complète : « Elles se sont ___ des messages toute la soirée. » (envoyer)",
+      "options": [
+        {
+          "id": "a",
+          "text": "envoyées",
+          "misconceptionTag": "fr.accord.pp-pronominal-coi"
+        },
+        {
+          "id": "b",
+          "text": "envoyés"
+        },
+        {
+          "id": "c",
+          "text": "envoyé"
+        },
+        {
+          "id": "d",
+          "text": "envoyée"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On envoie des messages À quelqu'un : le pronom réfléchi « se » (= l'une à l'autre) est un C.O.I, et le C.O.D « des messages » est placé après le verbe. Pas d'accord : « se sont envoyé ». « envoyées » applique l'accord avec le sujet des verbes pronominaux, sans voir que « se » est ici C.O.I.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Complète : « ___ histoires ta grand-mère t'a-t-elle ___ ? » (quel / raconter)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Qu'elles … racontées",
+          "misconceptionTag": "fr.homophone.quel-qu-elle"
+        },
+        {
+          "id": "b",
+          "text": "Quelles … raconté",
+          "misconceptionTag": "fr.accord.pp-avoir-cod-avant-oublie"
+        },
+        {
+          "id": "c",
+          "text": "Quels … racontés"
+        },
+        {
+          "id": "d",
+          "text": "Quelles … racontées"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "« Quelles » est l'adjectif interrogatif rattaché à « histoires », féminin pluriel. Le groupe « quelles histoires » est le C.O.D de « a racontées », placé avant le verbe avec « avoir » : le participe s'accorde → « racontées ». « Quelles … raconté » oublie cet accord ; « Quels » fait d'« histoires » un masculin ; « Qu'elles » (que + elles) ne peut pas se placer devant un nom.",
+      "difficulty": 3
+    }
+  ]
+}

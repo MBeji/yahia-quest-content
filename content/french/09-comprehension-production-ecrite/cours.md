@@ -1,319 +1,298 @@
 # ⚔️ Compréhension de texte et production écrite
 
-> 💡 « Bien lire, c'est interroger un texte ; bien écrire, c'est répondre avec ordre. »
+> 💡 « Bien lire, c'est interroger un texte ; bien écrire, c'est répondre avec ordre et preuves. »
 
-Ce chapitre relie deux compétences inséparables de l'examen : **comprendre** un texte — en
-saisir le sens explicite et implicite — et **produire** à ton tour un écrit clair, organisé et
-argumenté.
+Ce chapitre relie deux savoir-faire de l'étude de texte : **répondre par écrit** à des questions
+de compréhension, en suivant la démarche en cinq étapes du manuel, et **justifier** à ton tour un
+point de vue dans un texte argumentatif.
 
-## 🏰 Repérer l'idée directrice
+## 📜 Étape 1 : analyser la question
 
-Deux élèves résument le même texte. Le premier écrit : _« L'auteur parle d'un homme qui prend le
-train. »_ Le second : _« L'auteur montre que l'exil fait redécouvrir son pays. »_
+Question d'un devoir : _« Relevez deux indices qui montrent que Sofiane a peur, puis expliquez
+pourquoi il a peur. »_ Amine relève deux indices, s'arrête là, et perd la moitié des points.
 
-Les deux ont lu le même texte. Le premier a relevé un **détail**, le second l'idée qui commande
-tout. Comment distinguer l'une de l'autre à coup sûr ?
+Il avait pourtant bien lu le texte. Qu'a-t-il mal lu ?
 
 ::: definition
-L'**idée directrice** est l'idée principale autour de laquelle **tout le texte** s'organise. Dans
-un texte argumentatif on l'appelle **thèse** : c'est la position que l'auteur défend. Elle se
-trouve souvent dans la **première** ou la **dernière** phrase.
+**Analyser la question**, c'est repérer ses **mots-clés**, préciser leur sens, les mettre en
+rapport, et saisir **exactement la tâche demandée** — parfois il y en a deux.
 :::
 
-| Formulation                         | Verdict | Pourquoi                  |
-| ----------------------------------- | ------- | ------------------------- |
-| _Un homme prend le train._          | rejetée | détail d'une seule phrase |
-| _La vie moderne en général._        | rejetée | plus large que le texte   |
-| _L'exil fait redécouvrir son pays._ | retenue | couvre le texte entier    |
+| Formule de la question                | Ce qu'elle attend                                    |
+| ------------------------------------- | ---------------------------------------------------- |
+| _Relevez…_                            | des mots ou des phrases **cités** du texte           |
+| _Pourquoi… ? Pour quelles raisons… ?_ | une ou plusieurs **causes**                          |
+| _Qu'est-ce qui montre que… ?_         | des **indices** du texte qui prouvent une idée       |
+| _Justifiez votre réponse._            | une **preuve** tirée du texte, en plus de la réponse |
 
-::: exemple tester une idée directrice en deux questions
+::: exemple décomposer la question d'Amine
 
-1. **Est-elle plus étroite que le texte ?** Si elle ne vaut que pour un paragraphe, c'est une
-   **idée secondaire**, pas l'idée directrice.
-2. **Est-elle plus large que le texte ?** Si elle conviendrait à dix textes différents, c'est un
-   **thème vague**, pas une idée.
-3. **Bon calibre** : elle doit valoir pour **tout** le texte et pour **lui seul** — **parce que**
-   l'idée directrice est ce qui rend ce texte différent de tous les autres sur le même sujet.
+1. **Souligne les verbes de consigne** : _relevez_ et _expliquez_ ← deux verbes, donc **deux
+   tâches**, car chaque verbe commande une action.
+2. **Repère les mots-clés** : _deux indices_, _a peur_, _pourquoi_ ← il faut **deux** citations
+   sur la **peur**, puis une **cause**, car la question précise le nombre et le sujet.
+3. **Reformule la tâche** : « citer deux signes de peur, puis dire ce qui la provoque » ← la
+   réponse complète tient en deux parties.
 
 :::
 
-> 🗝️ Astuce : lis d'abord le **titre**, le **premier** et le **dernier** paragraphe. L'auteur
-> annonce souvent où il va, puis rappelle où il est arrivé.
+::: piege Erreur fréquente
+Ne traiter que la première partie de la question. Une consigne à deux verbes (_relevez… puis
+expliquez…_) attend deux réponses ; s'arrêter après le relevé laisse la réponse **incomplète**,
+même si ce qui est écrit est juste.
+:::
 
-::: piege l'erreur classique
+::: propriete
 
-Prendre pour thèse la **première phrase** quand elle expose une opinion que l'auteur va
-combattre : _« Beaucoup pensent que la lecture est dépassée… »_ Ce que l'auteur défend vient
-**après** le connecteur d'opposition, et c'est l'inverse.
+- Compte les **verbes de consigne** : un verbe = une tâche.
+- Respecte les **nombres** (_deux indices_, _trois raisons_) et les **limites** (_dans le premier
+  paragraphe_).
+- Cas-limite : _« Qu'est-ce qui montre que… ? »_ ne demande pas de redire l'idée, mais les
+  **preuves** : l'idée est déjà donnée dans la question.
 
 :::
 
 ::: verifie
-Un texte commence par _« On croit souvent que l'argent fait le bonheur »_ et finit par _« Or les
-plus heureux sont rarement les plus riches. »_ Quelle est la thèse ?
+Combien de tâches dans : _« Relevez dans le premier paragraphe les détails du portrait de Lina,
+puis dites lesquels annoncent la suite de l'histoire. »_ ?
 
 ---
 
-**L'argent ne fait pas le bonheur.** La première phrase expose l'opinion **combattue** ; le
-connecteur _or_ annonce le renversement, et la dernière phrase porte la position de l'auteur.
+**Deux** : relever les détails du portrait (limités au **premier paragraphe**), puis choisir ceux
+qui **annoncent la suite**. Deux verbes de consigne, _relevez_ et _dites_, donc deux parties.
 :::
 
 ::: retenir
-L'idée directrice vaut pour tout le texte et pour lui seul — et la première phrase peut porter
-l'opinion que l'auteur va réfuter.
+Un verbe de consigne = une tâche : on repère les mots-clés et on sait exactement ce qu'on doit
+faire avant de relire le texte.
 :::
 
-## ⚡ Lire le type de texte pour anticiper son organisation
-
-Tu ouvres un texte inconnu. Avant même de chercher les réponses, savoir qu'il est **argumentatif**
-te dit où chercher la thèse ; savoir qu'il est **narratif** te dit de suivre la chronologie.
-
-Le type ne sert donc pas qu'à être nommé. Comment l'utiliser pour **lire plus vite** ?
-
-::: definition
-Reconnaître le type d'un texte permet d'**anticiper son organisation** : où se trouve
-l'essentiel, dans quel ordre les informations arrivent, et quel genre de question on va te poser.
-:::
-
-| Type                        | Ce qu'il fait                          | Indices                                                        |
-| --------------------------- | -------------------------------------- | -------------------------------------------------------------- |
-| **Narratif**                | Raconte des événements qui se suivent  | verbes d'action, temps du récit, personnages, repères de temps |
-| **Descriptif**              | Peint un lieu, un objet, une personne  | adjectifs, verbes d'état, notations sensorielles               |
-| **Informatif**              | Donne des faits, informe sans juger    | chiffres, présent de vérité générale, ton neutre               |
-| **Argumentatif**            | Défend une opinion, convainc           | thèse, arguments, connecteurs logiques, marques de jugement    |
-
-::: exemple ce que le type t'apprend avant la lecture détaillée
-
-1. **Argumentatif** → cherche la thèse au début ou à la fin, et les arguments dans les
-   paragraphes du milieu.
-2. **Narratif** → cherche le schéma narratif ; les questions porteront sur l'élément
-   perturbateur et sur l'évolution du personnage.
-3. **Informatif** → cherche la relation cause/conséquence ; les questions porteront sur le
-   mécanisme, **parce que** c'est ce que ce type de texte a à offrir.
-
-:::
-
-::: piege l'erreur classique
-
-Décider du type sur le premier paragraphe. Un texte argumentatif commence souvent par une petite
-**anecdote narrative** pour accrocher le lecteur. Le type se juge sur le **but de l'ensemble**,
-pas sur l'entrée en matière.
-
-:::
-
-::: verifie
-Un texte raconte l'histoire d'un enfant qui plante un arbre, puis conclut : _« Chacun devrait
-planter le sien. »_ Quel est le type dominant ?
-
----
-
-**Argumentatif** : le récit n'est qu'un **exemple** au service de la thèse finale. Le but de
-l'ensemble est de convaincre, non de raconter.
-:::
-
-::: retenir
-Le type se juge sur le but de l'ensemble et sert à anticiper où chercher — un récit d'ouverture
-ne fait pas un texte narratif.
-:::
-
-## 🛡️ Le rôle des connecteurs dans la lecture
-
-_« Il pleut, **donc** je reste. »_ · _« Il pleut, **pourtant** il sort. »_ Deux faits identiques,
-deux raisonnements opposés — et un seul mot de différence.
-
-En lecture, le connecteur est la trace visible du raisonnement de l'auteur. Comment s'en servir ?
-
-::: definition
-Les **connecteurs** révèlent le **lien logique** entre les idées. Les repérer, c'est reconstituer
-le raisonnement de l'auteur sans qu'il ait besoin de l'expliquer.
-:::
-
-| Relation                    | Connecteurs                                     | Exemple                                  |
-| --------------------------- | ----------------------------------------------- | ---------------------------------------- |
-| **Addition**                | de plus, par ailleurs, en outre                 | « Il est tard ; de plus, il pleut. »     |
-| **Cause**                   | car, parce que, puisque, en effet               | « Je reste, car il pleut. »              |
-| **Conséquence**             | donc, ainsi, c'est pourquoi, par conséquent     | « Il pleut, donc je reste. »             |
-| **Opposition / concession** | mais, cependant, or, pourtant, malgré, bien que | « Il pleut, pourtant il sort. »          |
-| **But**                     | afin de, pour que                               | « Il révise pour réussir. »              |
-| **Illustration**            | par exemple, ainsi, notamment                   | « Des sports, par exemple le football. » |
-
-::: exemple suivre un raisonnement par ses seuls connecteurs
-
-> _« **Certes**, les écrans facilitent l'accès au savoir. **Mais** ils fragmentent l'attention.
-> **En effet**, une notification suffit à rompre la concentration. **C'est pourquoi** il faut en
-> régler l'usage. »_
-
-1. **_Certes_** annonce une concession : l'auteur accorde quelque chose à l'adversaire.
-2. **_Mais_** annonce sa vraie position ← **c'est ici qu'est la thèse**.
-3. **_En effet_** introduit l'argument qui la soutient.
-4. **_C'est pourquoi_** introduit la conclusion — **et les quatre connecteurs suffisent** à
-   reconstituer le plan sans lire le reste.
-
-:::
-
-> 🧩 Le connecteur n'apporte **aucune information nouvelle** : il dit ce que l'auteur fait de
-> celles qu'il a déjà données. C'est pourquoi une question sur « le rôle de ce connecteur »
-> attend une **relation**, pas un résumé.
-
-::: piege l'erreur classique
-
-Répondre à « quel est le rôle de _pourtant_ ? » en résumant la phrase. La réponse attendue est la
-**relation** : _pourtant_ marque une **opposition** entre ce qui précède et ce qui suit — et
-souligne que le second fait est inattendu.
-
-:::
-
-::: verifie
-Quel est le rôle de _certes_ dans _« Certes le trajet est long, mais la vue en vaut la peine »_ ?
-
----
-
-_Certes_ introduit une **concession** : l'auteur accorde un point à l'objection avant de la
-dépasser. Il annonce qu'un _mais_ va suivre — et que la vraie position est derrière lui.
-:::
-
-::: retenir
-Le connecteur trace le raisonnement : une question sur son rôle appelle une relation logique,
-jamais un résumé.
-:::
-
-## 🔮 Le ton et les sentiments
-
-Deux phrases sur le même repas : _« Le plat était froid. »_ et _« Le plat était **glacé**, comme
-leur accueil. »_ La seconde décrit la même chose et t'apprend en plus ce que ressent l'auteur.
-
-Il n'a pourtant écrit ni « j'étais mal à l'aise » ni « je n'ai pas aimé ». Où l'as-tu lu ?
-
-::: definition
-Le **ton** est l'attitude de l'auteur ou du personnage face à ce qu'il dit : joie, tristesse,
-colère, ironie, admiration, résignation, inquiétude. On le repère à trois traces : le **champ
-lexical**, la **ponctuation et les figures**, les **modalisateurs**.
-:::
-
-| Trace                  | Ce qu'on observe                                 | Exemple                              |
-| ---------------------- | ------------------------------------------------ | ------------------------------------ |
-| Champ lexical dominant | les mots qui reviennent et leur couleur          | _glacé_, _froid_, _distant_          |
-| Ponctuation et figures | exclamations, points de suspension, comparaisons | _comme leur accueil_                 |
-| Modalisateurs          | mots qui nuancent ou jugent                      | _peut-être_, _hélas_, _certainement_ |
-
-::: exemple identifier un ton en trois relevés
-
-1. **Relève le champ lexical** : _glacé_, _froid_, _distant_, _silence_ ← champ de la froideur.
-2. **Relève les figures** : _« comme leur accueil »_ ← la comparaison transporte la température
-   du plat sur les personnes.
-3. **Conclus sur le ton** : **amertume** ou **malaise**, **parce que** l'auteur n'a jugé
-   personne explicitement mais a choisi des mots qui portent tous la même couleur.
-
-:::
-
-::: piege l'erreur classique
-
-Nommer un ton sans le prouver. « Le ton est triste » ne vaut rien seul ; il faut citer **les
-mots** qui le portent. Et attention à l'**ironie** : elle dit le contraire de ce qu'elle pense —
-_« Quelle belle journée ! »_ sous la pluie est ironique, pas joyeux.
-
-:::
-
-::: verifie
-Quel ton, et par quelle trace : _« Il avait, hélas, tout perdu — tout, absolument tout. »_ ?
-
----
-
-Ton de **désolation**. Traces : le modalisateur **_hélas_**, et la **répétition** insistante
-_tout… tout, absolument tout_, qui amplifie la perte. Deux traces convergentes suffisent à la
-réponse.
-:::
-
-::: retenir
-Le ton se prouve par des relevés : champ lexical, ponctuation et figures, modalisateurs — et
-l'ironie dit l'inverse de ce qu'elle affirme.
-:::
-
-## 🧮 Lire entre les lignes : l'inférence
+## 🔎 Étape 2 : relire le texte et relever les indices
 
 _« Elle ferma son parapluie en entrant. »_ Le texte ne dit nulle part qu'il pleuvait. Et tu le
 sais pourtant avec certitude.
 
-D'où vient cette certitude ? Et quelle est la frontière entre cette déduction et une invention
-pure ?
+D'où vient cette certitude ? Et où s'arrête ce que le texte permet de dire ?
 
 ::: definition
-**Inférer**, c'est déduire une information **non écrite** à partir d'**indices du texte**.
-L'inférence s'appuie toujours sur le texte — jamais sur une opinion personnelle ou une
-expérience extérieure.
+On **relit le texte** pour y trouver les **éléments de réponse** : on souligne, on encercle, on
+relie par des flèches. Un élément peut être **dit clairement**, ou seulement montré par des
+**indices** (gestes, paroles, détails) d'où l'on déduit une information non écrite. On dit aussi
+« inférer ».
 :::
 
-| Phrase du texte                           | Inférence légitime                 | Invention à éviter            |
-| ----------------------------------------- | ---------------------------------- | ----------------------------- |
-| _Elle ferma son parapluie en entrant._    | il pleuvait                        | elle était de mauvaise humeur |
-| _Il compta trois fois la monnaie._        | il se méfiait ou manquait d'argent | il était avare                |
-| _La maison sentait encore le pain chaud._ | quelqu'un venait d'y cuire du pain | la mère était boulangère      |
+| Indice du texte                         | Ce qu'on peut en déduire           | Invention à éviter     |
+| --------------------------------------- | ---------------------------------- | ---------------------- |
+| _Ses mains tremblaient._                | il a peur ou il est ému            | il est malade          |
+| _Il compta trois fois la monnaie._      | il se méfie, ou il manque d'argent | il est avare           |
+| _La chambre était devenue silencieuse._ | quelqu'un est parti                | il est parti en voyage |
 
-::: exemple séparer l'inférence de l'invention
+::: exemple trouver les indices d'un sentiment
 
-1. **Pose l'indice** : _« il compta trois fois la monnaie »_.
-2. **Demande : que faut-il pour que ce geste ait lieu ?** Une raison de vérifier ← méfiance ou
-   compte serré. Ce sont des inférences : le geste les suppose.
-3. **Demande ensuite : le texte impose-t-il « il était avare » ?** Non — on peut compter par
-   prudence, par habitude, par manque. **Donc** c'est une invention, **parce qu'**une inférence
-   doit être la **seule** explication raisonnable de l'indice, ou presque.
+_« Lina relisait sa copie pour la dixième fois. Son cœur battait fort et elle n'osait pas
+regarder le professeur. »_ Question : _Qu'est-ce qui montre que Lina est inquiète ?_
+
+1. **Cherche ce que fait le corps** : _son cœur battait fort_ ← signe d'émotion, car le cœur
+   s'accélère sous la peur.
+2. **Cherche les gestes** : _relisait … pour la dixième fois_, _n'osait pas regarder_ ← elle
+   vérifie et évite, car elle craint le résultat.
+3. **Vérifie que chaque indice est cité** : trois indices, tous dans le texte ← la déduction
+   « Lina est inquiète » est prouvée.
 
 :::
 
-> 🔮 Le test, en une phrase : peux-tu **citer le mot ou la phrase** qui te fait dire cela ? Si
-> oui, c'est une inférence. Sinon, c'est ton avis — et il n'est pas demandé.
+::: piege Erreur fréquente
+Déduire ce que le texte ne permet pas. De _« Il compta trois fois la monnaie »_, on ne peut pas
+dire « il est avare » : on compte aussi par prudence ou par manque d'argent. Une déduction doit
+s'appuyer sur un indice **qu'on peut citer**, et rester la seule explication raisonnable.
+:::
 
-::: piege l'erreur classique
+::: propriete
 
-Justifier une inférence par « c'est logique » ou « tout le monde le fait ». Le correcteur attend
-**l'indice textuel**. Une inférence sans citation est traitée comme une réponse hors texte.
+- Le test : peux-tu **citer le mot ou la phrase** qui te fait dire cela ? Oui ← c'est un élément
+  de réponse. Non ← c'est ton avis, et il n'est pas demandé.
+- Cas-limite : quand un personnage **dit** une chose et **fait** le contraire (_« Je n'ai peur de
+  rien »_, mais sa voix tremble), on croit les **gestes**, car ce sont eux que l'auteur montre.
 
 :::
 
 ::: verifie
-Que peux-tu inférer de _« Il regarda longuement la photo, puis la rangea au fond du tiroir »_ ?
+Que peut-on déduire de _« Il regarda longuement la photo, puis la rangea au fond du tiroir »_ ?
 
 ---
 
-Qu'elle a pour lui une **valeur affective** (il la regarde longuement) mais qu'il ne veut pas
-l'avoir sous les yeux (il la range **au fond**). Les deux indices sont cités et le texte les
-impose. Dire « il avait perdu quelqu'un » serait une invention : le texte ne le permet pas.
+Que la photo **compte** pour lui (il la regarde _longuement_) mais qu'il ne veut plus l'avoir
+sous les yeux (il la range _au fond du tiroir_). Les deux indices sont cités. Dire « il a perdu
+quelqu'un » serait une invention : le texte ne le permet pas.
 :::
 
 ::: retenir
-Une inférence se déduit d'un indice citable et n'a pas d'autre explication raisonnable — sinon
-c'est une opinion.
+On relit pour relever des éléments de réponse et des indices citables ; une déduction sans
+citation n'est qu'un avis.
 :::
 
-## 🧪 Le lexique en contexte
+## 🧩 Étapes 3 et 4 : organiser, puis rédiger la réponse
+
+Pour la question _« Pourquoi Sofiane préfère-t-il chanter seul ? »_, tu as souligné trois
+passages : _« il a honte devant ses cousins »_, _« leurs rires le gênent »_, _« seul, sa voix lui
+semble plus belle »_.
+
+Faut-il les recopier l'un après l'autre ? Comment en faire une vraie réponse ?
+
+::: definition
+**Organiser**, c'est classer de façon logique les éléments relevés : combien y en a-t-il, sont-ils
+de même nature ? **Rédiger**, c'est construire des **phrases simples et concises** qui répondent à
+la question, illustrées **en cas de besoin** par des **citations bien choisies**, entre
+guillemets.
+:::
+
+| Éléments relevés                      | Nature                      |
+| ------------------------------------- | --------------------------- |
+| _il a honte devant ses cousins_       | ce qu'il ressent (timidité) |
+| _leurs rires le gênent_               | ce que font les autres      |
+| _seul, sa voix lui semble plus belle_ | le plaisir d'être seul      |
+
+Trois éléments, trois natures différentes : la réponse aura donc **trois raisons**.
+
+::: exemple rédiger la réponse en reprenant la question
+
+1. **Reprends les mots de la question** : _« Sofiane préfère chanter seul pour trois raisons. »_
+   ← le correcteur voit tout de suite qu'on répond, car la phrase reprend la question.
+2. **Donne chaque raison dans une phrase simple** : _« D'abord, il est timide : il a « honte
+   devant ses cousins ». »_ ← la citation est **intégrée** à la phrase, car elle prouve la raison.
+3. **Enchaîne les autres** : _« Ensuite, les rires des autres le dérangent. Enfin, seul, il
+   trouve sa voix « plus belle ». »_ ← les articulateurs classent les raisons.
+
+:::
+
+::: piege Erreur fréquente
+Recopier des phrases du texte à la place d'une réponse. Une citation seule ne répond pas : elle
+**prouve** une réponse que **tu** formules. Et une citation trop longue (tout un paragraphe)
+montre qu'on n'a pas choisi.
+:::
+
+::: propriete
+
+- Une citation est **courte**, **entre guillemets**, et **intégrée** à ta phrase.
+- On cite **en cas de besoin** : quand la question demande de relever ou de justifier.
+- Cas-limite : si deux éléments relevés disent la même chose, ils forment **une seule** raison —
+  on les regroupe au lieu de les compter deux fois.
+
+:::
+
+::: verifie
+Question : _« Pourquoi Lina est-elle inquiète ? »_ Éléments relevés : _« les résultats sont
+distribués aujourd'hui »_, _« elle n'a pas fini le dernier exercice »_. Rédige la réponse.
+
+---
+
+_« Lina est inquiète pour deux raisons : les résultats sont « distribués aujourd'hui », et elle
+sait qu'elle « n'a pas fini le dernier exercice ». »_ La réponse reprend la question, annonce le
+nombre de raisons et intègre les citations.
+:::
+
+::: retenir
+Organiser (combien d'éléments, de quelle nature), puis rédiger des phrases simples qui reprennent
+la question et intègrent de courtes citations.
+:::
+
+## ✅ Étape 5 : relire et évaluer sa réponse
+
+Ta réponse est écrite. Il reste deux minutes. Tu peux la rendre telle quelle… ou la relire avec
+les questions que se pose le correcteur.
+
+Quelles questions, exactement ?
+
+::: definition
+**Relire sa réponse**, c'est en améliorer la formulation et corriger les erreurs. On la juge avec
+la **grille d'évaluation** de l'étude de texte : réponse **correcte et complète** ; justifications
+**adéquates** ; indices du texte **bien intégrés** ; réponse **correctement formulée**.
+:::
+
+::: exemple évaluer une réponse avec la grille
+
+Question : _« Pourquoi Sofiane préfère-t-il chanter seul ? »_ Réponse d'un élève : _« Parce qu'il
+est timide. »_
+
+1. **Correcte et complète ?** Correcte, mais **incomplète**, car le texte donne trois raisons.
+2. **Justifiée ?** Non, car aucune preuve n'accompagne « timide ».
+3. **Indices intégrés ?** Aucun, car rien n'est cité ← il faut ajouter _« il a honte devant ses
+   cousins »_.
+4. **Bien formulée ?** _« Parce que… »_ ne reprend pas la question ← on écrit : _« Sofiane
+   préfère chanter seul parce que… »_.
+
+:::
+
+::: piege Erreur fréquente
+Relire seulement l'orthographe. Une réponse sans faute peut être **incomplète** ou **sans
+preuve** : la grille vérifie d'abord le contenu, puis la langue.
+:::
+
+::: methode
+
+1. **Analyser** la question : mots-clés et tâche(s).
+2. **Relire** le texte pour trouver les éléments de réponse.
+3. **Organiser** logiquement les éléments relevés.
+4. **Rédiger** des phrases simples, avec des citations en cas de besoin.
+5. **Relire** la réponse avec la grille.
+
+Cas-limite : si la relecture montre qu'il manque une partie, on revient à l'étape 1 — la
+démarche n'est pas un trajet à sens unique.
+:::
+
+::: verifie
+_« Lina est inquiète parce qu'elle est inquiète pour son devoir. »_ Quel critère de la grille
+n'est pas rempli ?
+
+---
+
+Les **justifications** et les **indices** : la réponse répète l'idée sans preuve. Il faut citer
+un indice (_« son cœur battait fort »_) et donner la vraie cause (_les résultats sont distribués
+aujourd'hui_).
+:::
+
+::: retenir
+On relit sa réponse avec la grille : correcte et complète, justifiée, indices intégrés, bien
+formulée.
+:::
+
+## 🔮 Le sens d'un mot dans le texte
 
 On te demande le sens de _« une voix **blanche** »_. Tu connais _blanc_ : la couleur. Et une voix
 n'a pas de couleur.
 
-Le dictionnaire donne plusieurs entrées. Comment savoir laquelle le texte a choisie ?
+Le dictionnaire donne plusieurs sens. Comment savoir lequel le texte a choisi ?
 
 ::: definition
-Le sens d'un mot dépend de son **entourage**. Pour comprendre un mot inconnu ou employé
-autrement, on lit la phrase entière, on cherche un **synonyme**, un **contraire** ou un
-**exemple** proche, et on vérifie que le sens retenu reste **cohérent** avec la phrase.
+Le sens d'un mot dépend de son **contexte**. Pour le trouver, on lit la phrase entière et la
+suivante, on cherche un **synonyme**, un **contraire** ou un **exemple** proche, et on vérifie que
+le sens choisi reste **cohérent** dans la phrase.
 :::
 
 ::: exemple élucider « une voix blanche » en trois pas
 
-1. **Lis la phrase entière et la suivante** : _« Il annonça la nouvelle d'une voix blanche. Ses
-   mains tremblaient. »_
-2. **Cherche l'indice voisin** : _ses mains tremblaient_ ← émotion, choc.
-3. **Vérifie la cohérence** : « une voix sans timbre, sous le coup de l'émotion » s'accorde avec
-   les mains qui tremblent ; « une voix de couleur blanche » n'a aucun sens ← **parce que** le
-   test final est toujours de remettre le sens choisi dans la phrase et de voir s'il tient.
+1. **Lis la phrase et la suivante** : _« Il annonça la nouvelle d'une voix blanche. Ses mains
+   tremblaient. »_
+2. **Cherche l'indice voisin** : _ses mains tremblaient_ ← émotion forte, car on tremble sous le
+   choc.
+3. **Vérifie la cohérence** : « une voix sans force, sous le coup de l'émotion » s'accorde avec
+   les mains qui tremblent ; « une voix de couleur blanche » n'a aucun sens ← le sens choisi tient
+   dans la phrase.
 
 :::
 
-::: piege l'erreur classique
-
+::: piege Erreur fréquente
 Donner le sens le plus courant du mot sans regarder la phrase. Le sens le plus fréquent est
-précisément celui que la question **n'attend pas** : on n'interroge que les emplois où le
-contexte déplace le sens.
+souvent celui que la question **n'attend pas** : on interroge surtout les emplois où le contexte
+déplace le sens.
+:::
+
+::: propriete
+
+- Un **contraire** voisin éclaire le sens : _« Loin de freiner les élèves, ces difficultés les ont
+  aiguillonnés »_ ← _aiguillonner_ est le contraire de _freiner_ : « stimuler ».
+- Cas-limite : un mot inconnu peut être expliqué par une **note** en bas du texte ; on la lit
+  avant de chercher ailleurs.
 
 :::
 
@@ -322,191 +301,227 @@ Que signifie _« sourd »_ dans _« Un bruit sourd monta des profondeurs de la m
 
 ---
 
-**Étouffé, grave, peu distinct** — et non « qui n'entend pas ». L'indice est que le mot qualifie
-un **bruit** : le sens courant, appliqué à une personne, ne peut pas convenir.
+**Étouffé, grave, peu distinct** — et non « qui n'entend pas ». Le mot qualifie un **bruit** : le
+sens courant, qui s'applique à une personne, ne peut pas convenir.
 :::
 
 ::: retenir
-Le contexte choisit le sens, et le test est de remettre ce sens dans la phrase — la question ne
-porte jamais sur l'emploi le plus courant.
+Le contexte choisit le sens : synonyme, contraire ou exemple voisins le révèlent, et on remet le
+sens choisi dans la phrase pour vérifier.
 :::
 
-## ✍️ La phrase d'amorce et la phrase de thèse
+## ⚡ Reconnaître le type de texte (rappel)
 
-Deux copies commencent ainsi. La première : _« Je vais parler de la lecture. »_ La seconde :
-_« Aujourd'hui, les écrans occupent chaque minute libre de nos journées. »_
+Un passage raconte le sauvetage d'un voilier, dimanche, au large de Bizerte ; un autre raconte un
+renard qui parle à un corbeau. Les deux racontent — et pourtant ils ne sont pas du même type.
 
-Les deux annoncent un devoir sur la lecture. La seconde donne envie de lire la suite. Qu'a-t-elle
-de plus ?
+Quand une question demande le type d'un passage, comment le prouver dans la réponse ?
 
 ::: definition
-L'**amorce** est la toute première phrase : elle attire l'attention et **introduit le sujet sans
-le traiter**. La **phrase de thèse** vient ensuite : elle annonce **clairement la position**
-défendue. Une bonne thèse est **précise**, **affirmée** et **orientée** vers ce qu'on va prouver.
+**Rappel (chapitre 8)** : un texte est **narratif**, **descriptif**, **informatif** (article de
+presse, fait divers, lettre) ou **argumentatif** selon son **but**. En compréhension, on nomme le
+type **dominant** et on le **justifie** par des indices cités.
 :::
 
-| Phrase                                                            | Rôle   | Verdict                          |
-| ----------------------------------------------------------------- | ------ | -------------------------------- |
-| _Je vais parler de la lecture._                                   | amorce | annonce le plan, n'accroche rien |
-| _Aujourd'hui, les écrans occupent chaque minute libre._           | amorce | constat qui mène au sujet        |
-| _La lecture est un sujet intéressant._                            | thèse  | vague, rien à prouver            |
-| _La lecture est essentielle parce qu'elle nourrit l'imagination._ | thèse  | précise et orientée              |
+::: exemple justifier le type d'un passage
 
-::: exemple écrire une introduction en deux phrases
+_« Dimanche, au large de Bizerte, un voilier en difficulté a été remorqué jusqu'au port par les
+garde-côtes ; ses trois passagers sont sains et saufs. »_
 
-1. **Amorce** — choisis un constat, une question ou un fait frappant **lié au sujet** :
-   _« Aujourd'hui, les écrans occupent chaque minute libre de nos journées. »_
-2. **Thèse** — annonce ta position, précise et affirmée : _« Pourtant la lecture reste
-   irremplaçable, parce qu'elle seule construit l'imagination. »_
-3. **Vérifie que l'amorce n'est pas déjà la conclusion** : elle pose le décor, elle ne tranche
-   pas — **parce que** si tu conclus dès la première phrase, le développement n'a plus rien à
-   apporter.
+1. **Cherche le but** : faire connaître un fait réel ← car il donne une date (_dimanche_), un lieu
+   (_Bizerte_), un bilan (_trois passagers_).
+2. **Rédige en citant** : _« Ce passage est informatif, car il relate un fait réel, daté
+   (« dimanche ») et situé (« au large de Bizerte »). »_ ← le type est nommé, puis prouvé.
 
 :::
 
-::: piege l'erreur classique
-
-L'amorce hors sujet : commencer un devoir sur la lecture par _« Depuis la nuit des temps,
-l'homme cherche le bonheur. »_ Une amorce doit conduire **à ce sujet-là**, pas à n'importe
-lequel.
-
+::: piege Erreur fréquente
+Juger le type sur la première phrase. Un texte argumentatif commence souvent par un petit récit
+qui accroche le lecteur : le type se juge sur le **but de l'ensemble**.
 :::
 
 ::: verifie
-Améliore cette thèse : _« Je pense que le sport, c'est bien. »_
+Un texte raconte un enfant qui plante un arbre, puis conclut : _« Chacun devrait planter le
+sien. »_ Quel est le type dominant ?
 
 ---
 
-Trop vague et non orientée. Par exemple : _« Le sport est indispensable à un adolescent, parce
-qu'il entretient sa santé et lui apprend à durer dans l'effort. »_ — précise, affirmée, et elle
-annonce les deux arguments à venir.
+**Argumentatif** : le récit n'est qu'un **exemple** au service du point de vue final. Le but de
+l'ensemble est de convaincre, non de raconter.
 :::
 
 ::: retenir
-L'amorce accroche et conduit au sujet sans le trancher ; la thèse annonce une position précise et
-orientée vers ce qu'on va prouver.
+On nomme le type dominant, puis on le prouve par des indices cités : le but de l'ensemble décide.
 :::
 
-## 🌀 Le paragraphe argumentatif, l'argument et le contre-argument
+## ⚖️ Lire un texte argumentatif : trouver la thèse (rappel)
 
-Un paragraphe de copie : _« Le sport est bon. Il est vraiment bon. Tout le monde devrait en
-faire. »_ Trois phrases, une seule idée, aucune preuve.
+_« Beaucoup pensent que les métiers manuels n'ont plus d'avenir. Pourtant, sans menuisier ni
+plombier, nos maisons ne tiendraient pas debout. Ces métiers méritent notre respect. »_
 
-Un paragraphe efficace comporte quatre moments. Lesquels, et dans quel ordre ?
+Question : _« Quelle est la thèse de l'auteur ? »_ La première phrase est-elle la bonne réponse ?
 
 ::: definition
-Le **paragraphe argumentatif** suit quatre moments : **idée** (l'argument annoncé),
-**explication** (le pourquoi), **exemple** (le cas concret), **mini-conclusion** ou transition.
-L'**argument** soutient ta thèse ; le **contre-argument** est l'objection adverse, qu'un bon
-texte **reconnaît** (_certes…_) puis **réfute** (_… mais_).
+**Rappel (chapitre 8)** : la **thèse** est le point de vue défendu (_je pense que, pour moi_) ;
+l'**argumentation** le justifie par des arguments et des exemples. En compréhension, on dit aussi
+que la thèse est l'**idée principale** : elle vaut pour **tout** le texte.
 :::
 
-| Moment          | Ce qu'il fait               | Marqueur fréquent      |
-| --------------- | --------------------------- | ---------------------- |
-| Idée / argument | annonce la raison           | _D'abord_, _Ensuite_   |
-| Explication     | développe le pourquoi       | _En effet_             |
-| Exemple         | prouve par un cas concret   | _Ainsi_, _Par exemple_ |
-| Mini-conclusion | referme et prépare la suite | _Donc_, _Ainsi_        |
+::: exemple trouver la thèse du passage sur les métiers manuels
 
-::: exemple écrire un paragraphe complet, avec son contre-argument
-
-1. **Idée** : _« D'abord, le sport apprend la persévérance. »_
-2. **Explication** : _« **En effet**, progresser y demande des semaines d'efforts répétés sans
-   résultat visible. »_
-3. **Exemple** : _« **Ainsi**, un nageur améliore son temps de quelques secondes après des mois
-   d'entraînement. »_
-4. **Contre-argument reconnu puis réfuté** : _« **Certes**, cette exigence décourage certains ;
-   **mais** c'est précisément là qu'elle enseigne quelque chose que l'école seule ne donne
-   pas. »_ ← **parce que** reconnaître l'objection avant de la dépasser rend l'argumentation plus
-   solide, non plus faible.
+1. **Lis la première phrase avec prudence** : _Beaucoup pensent que…_ ← c'est l'opinion des
+   autres, car l'auteur la rapporte sans la reprendre.
+2. **Repère l'articulateur** : _Pourtant_ ← l'auteur s'oppose à cette opinion.
+3. **Trouve la phrase qui dit ce qu'il pense** : _Ces métiers méritent notre respect_ ← c'est la
+   thèse, justifiée par l'argument des maisons.
 
 :::
 
-> 💡 Mémo de l'ordre logique : **annoncer → expliquer → illustrer → conclure**. Et pour le
-> contre-argument : **concéder → réfuter**, jamais l'inverse.
-
-::: piege l'erreur classique
-
-Placer le contre-argument **après** la réfutation : _« Mais c'est là qu'elle enseigne quelque
-chose ; certes, cela décourage. »_ Le lecteur reste sur l'objection, et l'effet s'inverse : on
-finit par donner raison à l'adversaire.
-
+::: piege Erreur fréquente
+Prendre pour thèse la **première phrase** quand elle rapporte l'opinion que l'auteur combat. La
+thèse vient alors **après** l'articulateur d'opposition.
 :::
 
 ::: verifie
-Complète : _« Certes, les réseaux sociaux isolent parfois, … »_
+_« On croit souvent que l'argent fait le bonheur. Pourtant, les plus heureux sont rarement les plus
+riches. »_ Quelle est la thèse ?
 
 ---
 
-_« **mais** ils permettent aussi de garder un lien avec ceux qui sont loin. »_ La concession
-(_certes_) est suivie de la réfutation (_mais_), et c'est bien la position de l'auteur qui
-occupe la **seconde** place.
+**L'argent ne fait pas le bonheur.** La première phrase rapporte l'opinion **combattue** ;
+l'articulateur _pourtant_ annonce le point de vue de l'auteur.
 :::
 
 ::: retenir
-Quatre moments — annoncer, expliquer, illustrer, conclure — et le contre-argument se concède
-d'abord, se réfute ensuite, jamais l'inverse.
+La thèse est le point de vue défendu dans tout le texte — et elle peut suivre l'opinion que
+l'auteur combat.
 :::
 
-## 🏆 Vérifier la cohérence avant de rendre
+## 🛡️ Les articulateurs logiques (rappel)
 
-Une copie peut n'avoir aucune faute de grammaire et perdre beaucoup de points. Chaque phrase est
-juste ; c'est leur **enchaînement** qui ne l'est pas.
+_« Il pleut, **donc** je reste. »_ · _« Il pleut, **pourtant** il sort. »_ Deux faits identiques,
+deux raisonnements opposés — et un seul mot de différence.
 
-Que faut-il relire, exactement, dans les dernières minutes ?
+Une question demande : _« Quel est le rôle de « pourtant » ? »_ Que faut-il répondre ?
 
-::: propriete
-Un texte **cohérent** progresse sans rupture ni répétition inutile. La relecture finale vérifie
-quatre points : l'enchaînement logique des phrases, la justesse des connecteurs, l'absence d'idée
-hors sujet, l'absence de contradiction.
+::: definition
+**Rappel (chapitre 8)** : les **articulateurs logiques** nomment le **rapport** entre deux idées —
+cause (_car, en effet, puisque_), conséquence (_donc, si bien que, c'est pourquoi, ainsi_), addition
+(_de plus, en outre, par ailleurs_), classement (_d'abord, ensuite, enfin_), opposition (_mais,
+pourtant, cependant_), exemple (_par exemple, ainsi_). En compréhension, ils permettent de
+**suivre le raisonnement** de l'auteur. _Ainsi_ introduit un exemple ou une conséquence : le
+contexte tranche.
 :::
 
-::: exemple repérer les ruptures dans un court paragraphe
+::: exemple suivre un raisonnement par ses articulateurs
 
-> _« La lecture développe l'imagination. **De plus**, elle coûte cher. Les bibliothèques sont
-> gratuites. Je pense que tout le monde devrait lire. »_
+_« Je crois que ce métier est une vocation. **En effet**, j'en rêve depuis l'enfance. **De
+plus**, il mêle technique et contact humain, **si bien que** je pars travailler le cœur léger. »_
 
-1. **Connecteur faux** : _de plus_ annonce un argument qui va dans le même sens ; or le prix
-   élevé est un **inconvénient** ← il fallait _certes… mais_.
-2. **Contradiction** : la phrase suivante dit que les bibliothèques sont gratuites ← elle
-   **annule** la précédente sans l'annoncer.
-3. **Rupture** : la conclusion arrive sans transition, **parce qu'**aucun connecteur ne relie le
-   constat à la recommandation.
+1. **En effet** introduit le premier argument, car il justifie le point de vue annoncé.
+2. **De plus** ajoute un second argument dans le même sens.
+3. **Si bien que** introduit une conséquence de ce second argument ← les articulateurs suffisent
+   à suivre le raisonnement.
 
+:::
+
+::: piege Erreur fréquente
+Répondre à « quel est le rôle de _pourtant_ ? » en résumant la phrase. La question attend le
+**rapport** : _pourtant_ marque une **opposition** entre ce qui précède et ce qui suit.
+:::
+
+::: verifie
+Quel articulateur convient : _« La lecture enrichit le vocabulaire. … elle développe
+l'imagination. »_ ?
+
+---
+
+**De plus** (ou _en outre_, _par ailleurs_) : la seconde idée est un **nouvel argument dans le
+même sens**. _Cependant_ marquerait une opposition, _donc_ une conséquence : ni l'un ni l'autre
+n'est le vrai rapport.
+:::
+
+::: retenir
+En compréhension, on nomme le rapport que marque l'articulateur — cause, conséquence, addition,
+classement, opposition, exemple — et non le contenu de la phrase.
+:::
+
+## ✍️ Justifier son point de vue : une justification élaborée
+
+Un message sur un forum : _« Le métier de vétérinaire est bien. Il est vraiment bien. Tout le
+monde devrait le faire. »_ Trois phrases, une seule idée, aucune preuve.
+
+En 9e, on attend une justification **plus élaborée**. Que faut-il ajouter ?
+
+::: definition
+Justifier de façon élaborée, c'est énoncer clairement sa **thèse**, puis l'appuyer sur des
+**arguments variés**, chacun **expliqué** (_en effet, car_) et **illustré par un exemple**, et
+reliés par des **articulateurs** qui les classent (_d'abord, de plus, enfin_).
+:::
+
+| Moment      | Ce qu'il fait             | Articulateur fréquent      |
+| ----------- | ------------------------- | -------------------------- |
+| Thèse       | énonce le point de vue    | _Je pense que_, _Pour moi_ |
+| Argument    | donne une raison          | _D'abord_, _De plus_       |
+| Explication | développe le pourquoi     | _En effet_, _car_          |
+| Exemple     | prouve par un cas concret | _Par exemple_, _Ainsi_     |
+
+::: exemple justifier un choix en quelques lignes
+
+1. **Thèse** : _« Je pense que le sport est utile aux adolescents. »_
+2. **Argument + explication** : _« D'abord, il entretient la santé : **en effet**, bouger chaque
+   jour renforce le cœur. »_ ← l'argument est expliqué, car il dit **pourquoi**.
+3. **Exemple** : _« **Par exemple**, une marche de trente minutes suffit. »_ ← il rend l'argument
+   concret.
+4. **Second argument, d'une autre nature** : _« **De plus**, il apprend à respecter des règles et
+   des coéquipiers. »_ ← les arguments sont **variés**, car l'un parle du corps, l'autre de la vie
+   en groupe.
+
+:::
+
+::: piege Erreur fréquente
+Répéter le même argument avec d'autres mots : _« Le sport est bon pour la santé. De plus, il
+garde en bonne santé. »_ Le _de plus_ annonce un nouvel argument qui n'arrive pas. Deux arguments
+doivent dire **deux choses différentes**.
 :::
 
 ::: methode
 
-1. **Relis l'enchaînement** : chaque phrase découle-t-elle de la précédente ?
-2. **Vérifie chaque connecteur** : dit-il la vraie relation entre les deux idées ?
-3. **Traque le hors-sujet** : chaque paragraphe sert-il encore la thèse annoncée ?
-4. **Traque la contradiction** : as-tu affirmé puis nié la même chose ?
+Relis ton texte argumentatif avec la grille du manuel :
 
-:::
+1. La **thèse** est-elle clairement formulée ?
+2. Les **arguments** sont-ils **variés** ?
+3. Les **articulateurs** assurent-ils la **cohérence** du texte ?
+4. La **présentation** facilite-t-elle la lecture ?
+5. La **langue** est-elle correcte ?
 
-> 💡 En résumé : on **lit** en cherchant des preuves dans le texte, et on **écrit** en organisant
-> ses idées avec des connecteurs justes.
-
-::: piege l'erreur classique
-
-Relire uniquement l'orthographe. Les fautes de langue coûtent des points ; l'incohérence en coûte
-davantage, parce qu'elle touche la **compétence évaluée** — construire un texte, pas seulement
-écrire des phrases.
-
+Cas-limite : un argument peut **confirmer** ta thèse ou l'**infirmer** ; seuls ceux qui la
+confirment ont leur place dans ta justification.
 :::
 
 ::: verifie
-_« Le sport fatigue. Donc il faut en faire chaque jour. »_ — où est la rupture ?
+Améliore : _« Je pense que lire est bien, car c'est bien. »_
 
 ---
 
-Le connecteur **_donc_** annonce une conséquence, mais la fatigue n'entraîne pas logiquement la
-pratique quotidienne. Soit on change le connecteur (_« Certes le sport fatigue, **mais**… »_),
-soit on ajoute le chaînon manquant : _« Le sport fatigue, **et c'est cette fatigue qui
-entraîne le corps** ; **donc** il faut en faire régulièrement. »_
+Par exemple : _« Je pense que lire est utile, car cela enrichit le vocabulaire : en lisant, on
+rencontre sans cesse des mots nouveaux. De plus, la lecture développe l'imagination. »_ La thèse
+est précise, l'argument est expliqué (_car_), puis un second argument, différent, est ajouté
+(_de plus_).
 :::
 
 ::: retenir
-La relecture finale porte sur l'enchaînement, les connecteurs, le hors-sujet et les
-contradictions — l'orthographe vient après.
+Thèse claire + arguments variés, chacun expliqué et illustré, reliés par des articulateurs — et
+la grille du manuel pour relire.
 :::
+
+## 🚀 Pour aller plus loin (hors programme de 9e)
+
+Au lycée, tu rencontreras d'autres outils de l'argumentation que le manuel de 9e n'enseigne pas.
+Il suffit pour l'instant de les **reconnaître** ; ils ne sont pas évalués ici.
+
+- **Amorce** : la première phrase d'une introduction, qui attire l'attention avant d'annoncer la
+  thèse (_« Aujourd'hui, les écrans occupent chaque minute libre de nos journées. »_).
+- **Plan en trois parties** : introduction, développement, conclusion.
+- **Contre-argument et réfutation** : on reconnaît d'abord l'idée adverse, puis on la dépasse —
+  _« Certes, le voyage coûte cher ; mais il ouvre l'esprit. »_

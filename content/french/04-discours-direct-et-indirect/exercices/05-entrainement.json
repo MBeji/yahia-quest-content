@@ -7,75 +7,159 @@
   "displayOrder": 5,
   "questions": [
     {
-      "prompt": "Mets au discours indirect : Il dit : « Je suis fatigué. »",
+      "prompt": "Mets au discours indirect : Il répète : « Je suis fatigué. »",
       "options": [
-        { "id": "a", "text": "Il dit qu'il est fatigué." },
-        { "id": "b", "text": "Il dit que je suis fatigué." },
-        { "id": "c", "text": "Il dit : il est fatigué." },
-        { "id": "d", "text": "Il dit qu'il était fatigué." }
+        {
+          "id": "a",
+          "text": "Il répète qu'il est fatigué."
+        },
+        {
+          "id": "b",
+          "text": "Il répète que je suis fatigué.",
+          "misconceptionTag": "fr.discours.pronoms-non-transposes"
+        },
+        {
+          "id": "c",
+          "text": "Il répète : il est fatigué.",
+          "misconceptionTag": "fr.discours.deux-discours-melanges"
+        },
+        {
+          "id": "d",
+          "text": "Il répète qu'il était fatigué.",
+          "misconceptionTag": "fr.discours.transposition-sans-passe"
+        }
       ],
       "correctOption": "a",
-      "explanation": "Le verbe introducteur est au présent : on subordonne avec « que » et on change le pronom « je » en « il », sans changer le temps : « Il dit qu'il est fatigué. ». « Il dit que je suis fatigué » garde « je » (faux), « Il dit : il est fatigué » oublie « que », « Il dit qu'il était fatigué » change le temps alors que le verbe introducteur est au présent.",
+      "explanation": "« répète » est au présent : on subordonne avec « que », « je » devient « il », et le temps ne change pas. « que je suis » garde le pronom de celui qui parle (contresens), « il répète : il est » oublie la subordination, et « était » transpose alors que le verbe introducteur est au présent.",
       "difficulty": 2
     },
     {
-      "prompt": "Mets au discours indirect : Elle a demandé : « Est-ce que tu viens ? »",
+      "prompt": "Mets au discours indirect : Elle m'a demandé : « Est-ce que tu viens ? »",
       "options": [
-        { "id": "a", "text": "Elle a demandé que tu viens." },
-        { "id": "b", "text": "Elle a demandé si je venais." },
-        { "id": "c", "text": "Elle a demandé est-ce que je viens." },
-        { "id": "d", "text": "Elle a demandé que je venais." }
+        {
+          "id": "a",
+          "text": "Elle m'a demandé que tu viens."
+        },
+        {
+          "id": "b",
+          "text": "Elle m'a demandé si je venais."
+        },
+        {
+          "id": "c",
+          "text": "Elle m'a demandé est-ce que je viens."
+        },
+        {
+          "id": "d",
+          "text": "Elle m'a demandé que je venais.",
+          "misconceptionTag": "fr.discours.outil-introducteur-faux"
+        }
       ],
       "correctOption": "b",
-      "explanation": "L'interrogation totale au discours indirect est introduite par « si » (et non « que »), le pronom devient « je » et, le verbe introducteur étant au passé, le présent passe à l'imparfait : « si je venais ». « Elle a demandé que tu viens » et « Elle a demandé que je venais » utilisent « que » (faux), « Elle a demandé est-ce que je viens » garde « est-ce que ».",
+      "explanation": "Une question totale se rapporte avec « si » ; « tu » devient « je » (c'est à moi qu'elle parlait) ; le verbe introducteur est au passé, donc le présent devient imparfait. « que » rapporte une déclaration, pas une question, et « est-ce que » est une forme directe.",
       "difficulty": 3
     },
     {
       "prompt": "Mets au discours indirect : Le maître ordonna : « Sortez ! »",
       "options": [
-        { "id": "a", "text": "Le maître ordonna que sortez." },
-        { "id": "b", "text": "Le maître ordonna de sortir." },
-        { "id": "c", "text": "Le maître ordonna sortez." },
-        { "id": "d", "text": "Le maître ordonna s'ils sortent." }
+        {
+          "id": "a",
+          "text": "Le maître ordonna que sortez."
+        },
+        {
+          "id": "b",
+          "text": "Le maître ordonna : sortez.",
+          "misconceptionTag": "fr.discours.deux-discours-melanges"
+        },
+        {
+          "id": "c",
+          "text": "Le maître leur ordonna de sortir."
+        },
+        {
+          "id": "d",
+          "text": "Le maître ordonna s'ils sortaient.",
+          "misconceptionTag": "fr.discours.outil-introducteur-faux"
+        }
       ],
-      "correctOption": "b",
-      "explanation": "Un ordre (impératif) au discours indirect se rend par « de + infinitif » : « ordonna de sortir ». « Le maître ordonna que sortez » garde l'impératif après « que », « Le maître ordonna sortez » oublie la subordination, et « Le maître ordonna s'ils sortent » transforme l'ordre en interrogation.",
+      "correctOption": "c",
+      "explanation": "Un ordre à l'impératif se rapporte par « de » + infinitif : « Le maître leur ordonna de sortir. » L'impératif ne peut pas suivre « que », les deux-points sans guillemets mélangent les deux discours, et « si » fait de l'ordre une question.",
       "difficulty": 2
     },
     {
       "prompt": "Mets au discours indirect : Il déclara : « J'ai fini mon travail hier. »",
       "options": [
-        { "id": "a", "text": "Il déclara qu'il a fini son travail hier." },
-        { "id": "b", "text": "Il déclara qu'il avait fini son travail la veille." },
-        { "id": "c", "text": "Il déclara qu'il avait fini mon travail hier." },
-        { "id": "d", "text": "Il déclara qu'il finit son travail la veille." }
+        {
+          "id": "a",
+          "text": "Il déclara qu'il a fini son travail hier."
+        },
+        {
+          "id": "b",
+          "text": "Il déclara qu'il avait fini mon travail la veille.",
+          "misconceptionTag": "fr.discours.pronoms-non-transposes"
+        },
+        {
+          "id": "c",
+          "text": "Il déclara qu'il finissait son travail la veille."
+        },
+        {
+          "id": "d",
+          "text": "Il déclara qu'il avait fini son travail la veille."
+        }
       ],
-      "correctOption": "b",
-      "explanation": "Verbe introducteur au passé : le passé composé devient plus-que-parfait (« avait fini »), le possessif « mon » devient « son » et l'indicateur de temps « hier » devient « la veille ». « Il déclara qu'il a fini son travail hier » ne fait pas la concordance, « Il déclara qu'il avait fini mon travail hier » garde « mon », « Il déclara qu'il finit son travail la veille » change le sens du verbe.",
+      "correctOption": "d",
+      "explanation": "Verbe introducteur au passé : le passé composé devient plus-que-parfait (« avait fini »), « mon » devient « son » et « hier » devient « la veille ». « a fini … hier » ne transpose rien, « mon travail » garde le possessif de celui qui parle, et l'imparfait « finissait » rapporterait un présent.",
       "difficulty": 3
     },
     {
-      "prompt": "Mets au discours indirect : Elle demanda : « Où vas-tu ? »",
+      "prompt": "Mets au discours indirect : Elle me demanda : « Où vas-tu ? »",
       "options": [
-        { "id": "a", "text": "Elle demanda où je vais." },
-        { "id": "b", "text": "Elle demanda que j'allais." },
-        { "id": "c", "text": "Elle demanda où j'allais." },
-        { "id": "d", "text": "Elle demanda si j'allais où." }
+        {
+          "id": "a",
+          "text": "Elle me demanda où j'allais."
+        },
+        {
+          "id": "b",
+          "text": "Elle me demanda où je vais.",
+          "misconceptionTag": "fr.temps.repere-passe-ignore"
+        },
+        {
+          "id": "c",
+          "text": "Elle me demanda que j'allais.",
+          "misconceptionTag": "fr.discours.outil-introducteur-faux"
+        },
+        {
+          "id": "d",
+          "text": "Elle me demanda si j'allais où."
+        }
       ],
-      "correctOption": "c",
-      "explanation": "L'interrogation partielle conserve son mot interrogatif (« où »), le pronom devient « je » et le présent passe à l'imparfait (verbe introducteur au passé) : « où j'allais ». « Elle demanda où je vais » ne fait pas la concordance, « Elle demanda que j'allais » remplace « où » par « que », et « Elle demanda si j'allais où » mal place le mot interrogatif.",
+      "correctOption": "a",
+      "explanation": "La question partielle garde « où », sans inversion ; « tu » devient « je » ; le présent devient imparfait car « demanda » est au passé : « où j'allais ». « où je vais » oublie le changement de temps, « que » remplace à tort « où », et « si … où » mélange question totale et partielle.",
       "difficulty": 3
     },
     {
       "prompt": "Quelle est la ponctuation correcte du discours direct ?",
       "options": [
-        { "id": "a", "text": "Il dit que « je viens »." },
-        { "id": "b", "text": "Il dit : « Je viens. »" },
-        { "id": "c", "text": "Il dit, Je viens." },
-        { "id": "d", "text": "Il dit Je viens" }
+        {
+          "id": "a",
+          "text": "Il dit que « je viens ».",
+          "misconceptionTag": "fr.discours.deux-discours-melanges"
+        },
+        {
+          "id": "b",
+          "text": "Il dit : « Je viens. »"
+        },
+        {
+          "id": "c",
+          "text": "Il dit, je viens.",
+          "misconceptionTag": "fr.discours.deux-discours-melanges"
+        },
+        {
+          "id": "d",
+          "text": "Il dit : je viens",
+          "misconceptionTag": "fr.discours.deux-discours-melanges"
+        }
       ],
       "correctOption": "b",
-      "explanation": "Le discours direct s'introduit par un deux-points puis des guillemets entourant les paroles exactes : « Je viens. ». Il dit que « je viens » mélange « que » (indirect) et guillemets ; « Il dit, Je viens » et « Il dit Je viens » n'emploient ni deux-points ni guillemets.",
+      "explanation": "Le discours direct s'annonce par les deux-points et s'encadre de guillemets, avec une majuscule au premier mot : « Il dit : « Je viens. » ». Mettre « que » devant des guillemets mélange les deux discours, et sans guillemets on ne sait plus où commencent les paroles.",
       "difficulty": 1
     }
   ]

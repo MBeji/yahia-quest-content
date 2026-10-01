@@ -14,7 +14,11 @@
           "id": "b",
           "text": "الخليّة النّاتجة عن انصهار نواتَي المشيجين، وهي أصل الجنين"
         },
-        { "id": "c", "text": "الحيوان المنويّ بعد دخوله" },
+        {
+          "id": "c",
+          "text": "الحيوان المنويّ بعد دخوله",
+          "misconceptionTag": "bio.repro.fecondation-reduite-a-l-entree"
+        },
         { "id": "d", "text": "المضغة بعد التّعشيش" }
       ],
       "correctOption": "b",
@@ -24,8 +28,8 @@
     {
       "prompt": "داء المقوّسات سببه:",
       "options": [
-        { "id": "a", "text": "فيروس" },
-        { "id": "b", "text": "بكتيريا" },
+        { "id": "a", "text": "فيروس", "misconceptionTag": "bio.sante.agent-pathogene-confondu" },
+        { "id": "b", "text": "بكتيريا", "misconceptionTag": "bio.sante.agent-pathogene-confondu" },
         { "id": "c", "text": "طفيل وحيد الخليّة يعيش في أمعاء القطّ" },
         { "id": "d", "text": "نقص غذائيّ" }
       ],
@@ -36,12 +40,20 @@
     {
       "prompt": "الحميراء مرض:",
       "options": [
-        { "id": "a", "text": "بكتيريّ يُعالَج بالمضادّات الحيويّة" },
+        {
+          "id": "a",
+          "text": "بكتيريّ يُعالَج بالمضادّات الحيويّة",
+          "misconceptionTag": "bio.sante.agent-pathogene-confondu"
+        },
         {
           "id": "b",
           "text": "فيروسيّ ينتقل عبر المسالك التنفّسيّة، ولا علاج له ← الوقاية بالتّلقيح"
         },
-        { "id": "c", "text": "طفيليّ ينتقل من القطط" },
+        {
+          "id": "c",
+          "text": "طفيليّ ينتقل من القطط",
+          "misconceptionTag": "bio.sante.agent-pathogene-confondu"
+        },
         { "id": "d", "text": "وراثيّ" }
       ],
       "correctOption": "b",
@@ -70,7 +82,11 @@
           "id": "a",
           "text": "يدخل في تكوين الخلايا الجديدة وكريات الدّم الحمراء"
         },
-        { "id": "b", "text": "يعطي طاقة كبيرة" },
+        {
+          "id": "b",
+          "text": "يعطي طاقة كبيرة",
+          "misconceptionTag": "bio.alim.vitamines-energetiques"
+        },
         { "id": "c", "text": "يمنع داء المقوّسات" },
         { "id": "d", "text": "يبني العظام وحدها" }
       ],

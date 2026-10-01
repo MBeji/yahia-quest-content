@@ -7,78 +7,162 @@
   "displayOrder": 1,
   "questions": [
     {
-      "prompt": "Lisez ce passage :\n\n« Trier ses déchets demande peu d'efforts, mais ce petit geste a de grands effets. Le verre, le plastique et le papier triés sont recyclés au lieu d'être brûlés. Chaque famille qui trie aide ainsi à protéger sa ville. »\n\nQuelle est l'idée directrice de ce texte ?",
+      "prompt": "Lisez ce passage :\n\n« Trier ses déchets demande peu d'efforts, mais ce petit geste a de grands effets. Le verre, le plastique et le papier triés sont recyclés au lieu d'être brûlés. Chaque famille qui trie aide ainsi à protéger sa ville. »\n\nQuelle est l'idée principale de ce texte ?",
       "options": [
-        { "id": "a", "text": "Le tri des déchets est compliqué et fatigant." },
-        { "id": "b", "text": "Le verre est le déchet le plus facile à recycler." },
-        { "id": "c", "text": "Le tri des déchets est un geste simple aux grands effets utiles." },
-        { "id": "d", "text": "Brûler les déchets est la meilleure solution." }
+        {
+          "id": "a",
+          "text": "Le tri des déchets est un geste simple aux grands effets utiles."
+        },
+        {
+          "id": "b",
+          "text": "Le tri des déchets est compliqué et fatigant pour toutes les familles.",
+          "misconceptionTag": "fr.lecture.contraire-du-texte"
+        },
+        {
+          "id": "c",
+          "text": "Le verre est le déchet le plus facile à recycler.",
+          "misconceptionTag": "fr.lecture.detail-pour-idee-principale"
+        },
+        {
+          "id": "d",
+          "text": "Brûler les déchets est la meilleure solution.",
+          "misconceptionTag": "fr.lecture.contraire-du-texte"
+        }
       ],
-      "correctOption": "c",
-      "explanation": "Le texte affirme dès la première phrase que trier « demande peu d'efforts, mais a de grands effets », puis le prouve : c'est l'idée directrice. « Le tri des déchets est compliqué et fatigant » dit le contraire (« peu d'efforts »). « Le verre est le déchet le plus facile à recycler » n'est qu'un exemple parmi le verre, le plastique et le papier. « Brûler les déchets est la meilleure solution » est rejeté par le texte, qui oppose le recyclage au fait de brûler.",
+      "correctOption": "a",
+      "explanation": "Le texte affirme dès la première phrase que trier « demande peu d'efforts, mais a de grands effets », puis le prouve : c'est l'idée principale. « Compliqué et fatigant » dit le contraire (« peu d'efforts ») ; le verre n'est qu'un exemple parmi trois ; et brûler est justement ce que le recyclage évite.",
       "difficulty": 1
     },
     {
       "prompt": "Lisez ce passage :\n\n« Le matin se levait sur le marché. Les étals débordaient d'oranges luisantes, de menthe fraîche et de piments rouges. Une odeur de pain chaud flottait dans l'air tiède. »\n\nDe quel type de texte s'agit-il ?",
       "options": [
-        { "id": "a", "text": "Descriptif : il peint un lieu à l'aide de notations sensorielles." },
-        { "id": "b", "text": "Narratif : il raconte une suite d'aventures au marché." },
-        { "id": "c", "text": "Argumentatif : il défend l'idée qu'il faut acheter local." },
-        { "id": "d", "text": "Informatif : il explique l'organisation d'un marché." }
+        {
+          "id": "a",
+          "text": "Descriptif : il peint un lieu à l'aide de détails sensoriels."
+        },
+        {
+          "id": "b",
+          "text": "Narratif : il raconte une suite d'aventures vécues par un personnage au marché."
+        },
+        {
+          "id": "c",
+          "text": "Argumentatif : il défend l'idée qu'il faut acheter local."
+        },
+        {
+          "id": "d",
+          "text": "Informatif : il relate un fait réel, comme un article de presse."
+        }
       ],
       "correctOption": "a",
-      "explanation": "Le texte fait appel à la vue (oranges luisantes, piments rouges), à l'odorat (odeur de pain) et au toucher (air tiède) pour peindre un tableau : c'est descriptif. « Narratif : il raconte une suite d'aventures au marché » : il n'y a pas d'actions enchaînées ni de personnage agissant. « Argumentatif : il défend l'idée qu'il faut acheter local » : aucune opinion n'est défendue. « Informatif : il explique l'organisation d'un marché » : rien n'explique un fonctionnement.",
+      "explanation": "Le texte fait appel à la vue (oranges luisantes, piments rouges), à l'odorat (odeur de pain) et au toucher (air tiède) pour peindre un lieu : il est descriptif. Il n'y a ni personnage qui agit (narratif), ni point de vue défendu (argumentatif), ni fait daté et situé (informatif).",
       "difficulty": 1
     },
     {
-      "prompt": "Lisez cet extrait :\n\n« Internet permet de trouver des informations en quelques secondes. Cependant, toutes ces informations ne sont pas fiables : il faut vérifier ses sources. »\n\nQuel est le rôle du connecteur « Cependant » ?",
+      "prompt": "Lisez cet extrait :\n\n« Internet permet de trouver des informations en quelques secondes. Cependant, toutes ces informations ne sont pas fiables : il faut vérifier ses sources. »\n\nQuel est le rôle de l'articulateur « Cependant » ?",
       "options": [
-        { "id": "a", "text": "Il ajoute une idée de même sens à la précédente." },
-        { "id": "b", "text": "Il introduit une réserve qui nuance l'idée précédente." },
-        { "id": "c", "text": "Il exprime la conséquence de la phrase précédente." },
-        { "id": "d", "text": "Il donne la cause de la première phrase." }
-      ],
-      "correctOption": "b",
-      "explanation": "« Cependant » est un connecteur d'opposition : après avoir reconnu un avantage d'Internet (rapidité), il introduit une réserve (les informations ne sont pas toutes fiables). « Il ajoute une idée de même sens à la précédente » confondrait avec une addition. « Il exprime la conséquence de la phrase précédente » serait « donc » ou « ainsi ». « Il donne la cause de la première phrase » serait « car » ou « parce que ».",
-      "difficulty": 2
-    },
-    {
-      "prompt": "Lisez ce court texte :\n\n« Sami regardait la photo de son grand-père. Il sourit doucement, puis ses yeux se remplirent de larmes. Cet homme lui manquait tant. »\n\nQuel sentiment l'auteur cherche-t-il à transmettre ?",
-      "options": [
-        { "id": "a", "text": "La peur face à un danger." },
-        { "id": "b", "text": "La colère contre sa famille." },
-        { "id": "c", "text": "L'indifférence totale de Sami." },
-        { "id": "d", "text": "Une émotion mêlée de tendresse et de tristesse." }
-      ],
-      "correctOption": "d",
-      "explanation": "Le sourire (tendresse), les larmes et la phrase « cet homme lui manquait tant » (tristesse, manque) traduisent une émotion mêlée : c'est le sentiment visé. « La peur face à un danger » : aucun danger. « La colère contre sa famille » : aucune trace de colère. « L'indifférence totale de Sami » est contredit par les larmes et le manque exprimés.",
-      "difficulty": 2
-    },
-    {
-      "prompt": "Lisez cet extrait :\n\n« Quand la cloche sonna, les élèves rangèrent précipitamment leurs cahiers, attrapèrent leurs sacs et se ruèrent vers la porte. »\n\nQue peut-on inférer de ce passage ?",
-      "options": [
-        { "id": "a", "text": "Les élèves détestent leur professeur." },
-        { "id": "b", "text": "La cloche a marqué la fin du cours et la sortie." },
-        { "id": "c", "text": "Le cours venait juste de commencer." },
-        { "id": "d", "text": "Il n'y avait personne dans la classe." }
-      ],
-      "correctOption": "b",
-      "explanation": "Ranger ses affaires, attraper son sac et se ruer vers la porte après la cloche permet d'inférer que le cours est terminé, même si ce n'est pas écrit. « Les élèves détestent leur professeur » est une supposition sans indice. « Le cours venait juste de commencer » contredit le rangement des affaires. « Il n'y avait personne dans la classe » est absurde : on parle bien d'élèves présents.",
-      "difficulty": 2
-    },
-    {
-      "prompt": "Vous écrivez un texte qui commence par cette amorce :\n\n« Aujourd'hui, beaucoup de jeunes passent des heures sur leur téléphone… »\n\nQuelle phrase de thèse continue le mieux cette introduction sur le thème : faut-il limiter le temps d'écran ?",
-      "options": [
-        { "id": "a", "text": "Le téléphone a été inventé il y a longtemps." },
-        { "id": "b", "text": "Je ne sais pas trop quoi penser de ce sujet." },
+        {
+          "id": "a",
+          "text": "Il ajoute une idée de même sens à la précédente.",
+          "misconceptionTag": "fr.logique.rapport-logique-confondu"
+        },
+        {
+          "id": "b",
+          "text": "Il exprime la conséquence de ce qui est dit dans la phrase précédente.",
+          "misconceptionTag": "fr.logique.rapport-logique-confondu"
+        },
         {
           "id": "c",
-          "text": "Il est nécessaire de limiter ce temps d'écran pour protéger leur santé et leurs études."
+          "text": "Il introduit une réserve qui nuance l'idée précédente."
         },
-        { "id": "d", "text": "Les téléphones existent en plusieurs couleurs." }
+        {
+          "id": "d",
+          "text": "Il donne la cause de la première phrase.",
+          "misconceptionTag": "fr.logique.rapport-logique-confondu"
+        }
       ],
       "correctOption": "c",
-      "explanation": "Après l'amorce, la thèse doit annoncer clairement la position défendue : (c) prend position (limiter) et annonce les raisons (santé, études). « Le téléphone a été inventé il y a longtemps » est un fait sans rapport avec la question posée. « Je ne sais pas trop quoi penser de ce sujet » ne défend aucune position. « Les téléphones existent en plusieurs couleurs » est hors sujet.",
+      "explanation": "« Cependant » marque une opposition : après un avantage d'Internet (la rapidité), il introduit une réserve (les informations ne sont pas toutes fiables). L'addition s'exprime par « de plus », la conséquence par « donc », la cause par « car ».",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Lisez ce court texte :\n\n« Sami regardait la photo de son grand-père. Il sourit doucement, puis ses yeux se remplirent de larmes. Cet homme lui manquait tant. »\n\nQuel sentiment les indices du texte montrent-ils chez Sami ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La peur face à un danger qui menace son grand-père.",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
+        },
+        {
+          "id": "b",
+          "text": "La colère contre sa famille.",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
+        },
+        {
+          "id": "c",
+          "text": "Une émotion mêlée de tendresse et de tristesse."
+        },
+        {
+          "id": "d",
+          "text": "L'indifférence totale de Sami.",
+          "misconceptionTag": "fr.lecture.contraire-du-texte"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le sourire (tendresse), les larmes et la phrase « cet homme lui manquait tant » (tristesse, manque) sont les indices d'une émotion mêlée. Aucun danger n'est évoqué, aucune trace de colère n'apparaît, et l'indifférence est contredite par les larmes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Lisez cet extrait :\n\n« Quand la cloche sonna, les élèves rangèrent précipitamment leurs cahiers, attrapèrent leurs sacs et se ruèrent vers la porte. »\n\nQue peut-on déduire de ce passage ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les élèves détestent leur professeur.",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
+        },
+        {
+          "id": "b",
+          "text": "La cloche a marqué la fin du cours et la sortie."
+        },
+        {
+          "id": "c",
+          "text": "Le cours venait juste de commencer, la cloche l'annonçait.",
+          "misconceptionTag": "fr.lecture.contraire-du-texte"
+        },
+        {
+          "id": "d",
+          "text": "Il n'y avait personne dans la classe.",
+          "misconceptionTag": "fr.lecture.contraire-du-texte"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Ranger ses cahiers, attraper son sac et se ruer vers la porte après la cloche sont des indices de la fin du cours, même si ce n'est pas écrit. « Ils détestent leur professeur » ne repose sur aucun indice ; un début de cours contredirait le rangement ; et des élèves sont bien présents.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Vous devez répondre à la question : « Faut-il limiter le temps d'écran des jeunes ? » Quelle phrase formule le mieux votre thèse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le téléphone a été inventé il y a longtemps et a beaucoup changé.",
+          "misconceptionTag": "fr.argu.these-mal-formulee"
+        },
+        {
+          "id": "b",
+          "text": "Je ne sais pas trop quoi penser de ce sujet, il est très compliqué.",
+          "misconceptionTag": "fr.argu.these-mal-formulee"
+        },
+        {
+          "id": "c",
+          "text": "Les jeunes passent des heures sur leur téléphone le soir.",
+          "misconceptionTag": "fr.argu.these-mal-formulee"
+        },
+        {
+          "id": "d",
+          "text": "Il faut limiter ce temps pour protéger leur santé et leurs études."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une thèse prend position et peut annoncer ses arguments : « il faut limiter » répond à la question, et « santé » et « études » annoncent la justification. L'histoire du téléphone et le constat sur les heures passées ne prennent pas position ; « je ne sais pas » refuse de répondre.",
       "difficulty": 1
     }
   ]

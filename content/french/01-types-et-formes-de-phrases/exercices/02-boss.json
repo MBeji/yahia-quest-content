@@ -7,35 +7,39 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "Transforme à la voix passive : « Le maître corrige les copies. »",
+      "prompt": "Mets à la forme passive : « Le jardinier arrose les rosiers. »",
       "options": [
         {
           "id": "a",
-          "text": "Les copies corrigent le maître."
+          "text": "Les rosiers arrosent le jardinier.",
+          "misconceptionTag": "fr.voix.roles-inverses"
         },
         {
           "id": "b",
-          "text": "Le maître est corrigé par les copies."
+          "text": "Le jardinier est arrosé par les rosiers.",
+          "misconceptionTag": "fr.voix.roles-inverses"
         },
         {
           "id": "c",
-          "text": "Les copies sont corrigées par le maître."
+          "text": "Les rosiers sont arrosés par le jardinier."
         },
         {
           "id": "d",
-          "text": "Les copies ont été corrigées par le maître."
+          "text": "Les rosiers ont été arrosés par le jardinier.",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
         }
       ],
       "correctOption": "c",
-      "explanation": "Le COD « les copies » devient sujet, et on garde le présent : « sont corrigées par le maître ».",
+      "explanation": "Le COD « les rosiers » devient sujet, « le jardinier » devient complément d'agent après « par », et « être » garde le présent du verbe actif : « sont arrosés » (accordé avec « les rosiers »). « Les rosiers ont été arrosés » change le temps (passé composé) ; les deux autres phrases inversent les rôles.",
       "difficulty": 2
     },
     {
-      "prompt": "Mets à la forme négative : « Il voit quelqu'un. »",
+      "prompt": "Dis le contraire exact, à la forme négative : « Il voit quelqu'un. »",
       "options": [
         {
           "id": "a",
-          "text": "Il ne voit pas quelqu'un."
+          "text": "Il ne voit pas quelqu'un.",
+          "misconceptionTag": "fr.phrase.negation-sens-inexact"
         },
         {
           "id": "b",
@@ -43,7 +47,8 @@
         },
         {
           "id": "c",
-          "text": "Il voit personne."
+          "text": "Il voit personne.",
+          "misconceptionTag": "fr.phrase.ne-oublie"
         },
         {
           "id": "d",
@@ -51,39 +56,42 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Le contraire de « quelqu'un » (une personne) est « ne… personne ». « ne… rien » s'emploie pour une chose.",
+      "explanation": "« quelqu'un » (une personne) appelle « ne… personne » : « Il ne voit personne. » « Il ne voit pas quelqu'un » garde « quelqu'un » et ne dit pas qu'aucune personne n'est vue ; « ne… rien » s'emploie pour une chose ; « Il voit personne » oublie le « ne », obligatoire à l'écrit.",
       "difficulty": 3
     },
     {
-      "prompt": "Quelle phrase est une interrogation partielle ?",
+      "prompt": "Mets à la forme négative ET à la forme passive : « Le jury a récompensé ce film. »",
       "options": [
         {
           "id": "a",
-          "text": "Quand pars-tu ?"
+          "text": "Ce film n'a pas été récompensé par le jury."
         },
         {
           "id": "b",
-          "text": "Pars-tu ?"
+          "text": "Ce film a pas été récompensé par le jury.",
+          "misconceptionTag": "fr.phrase.ne-oublie"
         },
         {
           "id": "c",
-          "text": "Est-ce que tu pars ?"
+          "text": "Ce film n'a pas récompensé le jury."
         },
         {
           "id": "d",
-          "text": "Tu pars ?"
+          "text": "Ce film n'était pas récompensé par le jury.",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
         }
       ],
       "correctOption": "a",
-      "explanation": "L'interrogation porte sur un élément précis (le moment) grâce au mot interrogatif « quand » : elle est partielle.",
+      "explanation": "Passif : le COD « ce film » devient sujet, « a récompensé » (passé composé) devient « a été récompensé », « le jury » suit « par ». Négation : « ne… pas » encadre l'auxiliaire « a ». « Ce film a pas été récompensé » oublie le « ne » ; « Ce film n'était pas récompensé » passe à l'imparfait ; « Ce film n'a pas récompensé le jury » reste actif et inverse les rôles.",
       "difficulty": 2
     },
     {
-      "prompt": "Mets à la voix active : « La ville fut détruite par l'armée. »",
+      "prompt": "Mets à la forme active : « La ville fut détruite par l'armée. »",
       "options": [
         {
           "id": "a",
-          "text": "L'armée détruit la ville."
+          "text": "L'armée détruit la ville.",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
         },
         {
           "id": "b",
@@ -91,7 +99,8 @@
         },
         {
           "id": "c",
-          "text": "La ville détruisit l'armée."
+          "text": "La ville détruisit l'armée.",
+          "misconceptionTag": "fr.voix.roles-inverses"
         },
         {
           "id": "d",
@@ -99,7 +108,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "Le complément d'agent « l'armée » devient sujet et on conserve le passé simple : « détruisit ».",
+      "explanation": "Le complément d'agent « l'armée » redevient sujet, le sujet « la ville » redevient COD, et le verbe garde le temps de « être » : « fut » est au passé simple, donc « détruisit ». « L'armée détruit la ville » passe au présent ; les deux phrases qui commencent par « La ville » inversent les rôles.",
       "difficulty": 3
     },
     {
@@ -111,7 +120,7 @@
         },
         {
           "id": "b",
-          "text": "Une quantité nulle"
+          "text": "Une action qui n'a jamais eu lieu"
         },
         {
           "id": "c",
@@ -123,7 +132,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "« ne… plus » indique qu'une action a cessé : le dragon dormait, mais ce n'est plus le cas.",
+      "explanation": "« ne… plus » nie « encore » : il indique qu'une action a cessé — le dragon dormait, il ne dort plus. Une action qui n'a jamais eu lieu s'exprimerait avec « ne… jamais » (« Le dragon ne dort jamais »). La phrase est déclarative : elle ne pose pas de question et n'exprime pas une exclamation.",
       "difficulty": 2
     },
     {
@@ -131,7 +140,8 @@
       "options": [
         {
           "id": "a",
-          "text": "C'est le village que le héros sauve."
+          "text": "C'est le village que le héros sauve.",
+          "misconceptionTag": "fr.phrase.relief-mauvais-element"
         },
         {
           "id": "b",
@@ -139,7 +149,8 @@
         },
         {
           "id": "c",
-          "text": "Le village est sauvé par le héros."
+          "text": "Le village est sauvé par le héros.",
+          "misconceptionTag": "fr.phrase.passif-pris-pour-emphase"
         },
         {
           "id": "d",
@@ -147,7 +158,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "Pour mettre le SUJET en relief, on emploie le présentatif « c'est… qui » : « C'est le héros qui sauve le village. » « C'est le village que le héros sauve »(« c'est… que ») met en relief le COD ; « Le village est sauvé par le héros » est une transformation passive ; « Le héros sauve-t-il le village ? » est une interrogation.",
+      "explanation": "Pour mettre le SUJET en relief, on emploie le présentatif « c'est… qui » : « C'est le héros qui sauve le village. » « C'est le village que le héros sauve » (« c'est… que ») met en relief le COD ; « Le village est sauvé par le héros » est une transformation passive ; « Le héros sauve-t-il le village ? » est une phrase de type interrogatif.",
       "difficulty": 3
     }
   ]

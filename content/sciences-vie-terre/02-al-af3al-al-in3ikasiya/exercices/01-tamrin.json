@@ -9,13 +9,25 @@
     {
       "prompt": "ما الذي يميّز الفعل الانعكاسيّ عن السّلوك المكتسب؟",
       "options": [
-        { "id": "a", "text": "أنّه أسرع فحسب" },
+        {
+          "id": "a",
+          "text": "أنّه أسرع فحسب",
+          "misconceptionTag": "bio.nerv.vitesse-comme-critere"
+        },
         {
           "id": "b",
           "text": "أنّه موجود منذ الولادة ويحدث بنفس الطّريقة عند كلّ الأفراد العاديّين من نفس النّوع"
         },
-        { "id": "c", "text": "أنّه يحتاج إلى تدريب طويل" },
-        { "id": "d", "text": "أنّه يختلف من فرد إلى آخر حسب تجربته" },
+        {
+          "id": "c",
+          "text": "أنّه يحتاج إلى تدريب طويل",
+          "misconceptionTag": "bio.nerv.inne-pris-pour-acquis"
+        },
+        {
+          "id": "d",
+          "text": "أنّه يختلف من فرد إلى آخر حسب تجربته",
+          "misconceptionTag": "bio.nerv.inne-pris-pour-acquis"
+        },
         { "id": "e", "text": "أنّه لا يحدث إلّا عند الإنسان" }
       ],
       "correctOption": "b",
@@ -35,11 +47,13 @@
         },
         {
           "id": "c",
-          "text": "عضو منفّذ ← ناقل حركيّ ← مركز عصبيّ ← ناقل حسّيّ ← مستقبل حسّيّ"
+          "text": "عضو منفّذ ← ناقل حركيّ ← مركز عصبيّ ← ناقل حسّيّ ← مستقبل حسّيّ",
+          "misconceptionTag": "bio.nerv.effecteur-avant-le-centre"
         },
         {
           "id": "d",
-          "text": "مستقبل حسّيّ ← عضو منفّذ ← مركز عصبيّ ← ناقل حسّيّ ← ناقل حركيّ"
+          "text": "مستقبل حسّيّ ← عضو منفّذ ← مركز عصبيّ ← ناقل حسّيّ ← ناقل حركيّ",
+          "misconceptionTag": "bio.nerv.effecteur-avant-le-centre"
         }
       ],
       "correctOption": "a",
@@ -49,9 +63,13 @@
     {
       "prompt": "السّيالة العصبيّة التي تسير من المستقبل الحسّيّ نحو المركز العصبيّ تسمّى:",
       "options": [
-        { "id": "a", "text": "نابذة" },
+        { "id": "a", "text": "نابذة", "misconceptionTag": "bio.nerv.sensitif-et-moteur-confondus" },
         { "id": "b", "text": "جاذبة" },
-        { "id": "c", "text": "حركيّة" },
+        {
+          "id": "c",
+          "text": "حركيّة",
+          "misconceptionTag": "bio.nerv.sensitif-et-moteur-confondus"
+        },
         { "id": "d", "text": "منفّذة" }
       ],
       "correctOption": "b",
@@ -61,7 +79,7 @@
     {
       "prompt": "في الفعل الانعكاسيّ الرّضفيّ، ما المركز العصبيّ الذي يمرّ به المسار؟",
       "options": [
-        { "id": "a", "text": "المخّ" },
+        { "id": "a", "text": "المخّ", "misconceptionTag": "bio.nerv.cerveau-dans-l-arc-reflexe" },
         { "id": "b", "text": "المخيخ" },
         { "id": "c", "text": "النّخاع الشّوكيّ" },
         { "id": "d", "text": "البصلة السّيسائيّة" }
@@ -73,8 +91,16 @@
     {
       "prompt": "عند شمّ رائحة طعام شهيّ يسيل اللّعاب. أين العضو المنفّذ هنا؟",
       "options": [
-        { "id": "a", "text": "لا يوجد عضو منفّذ: هذا ليس فعلًا انعكاسيًّا" },
-        { "id": "b", "text": "العضلة الماضغة" },
+        {
+          "id": "a",
+          "text": "لا يوجد عضو منفّذ: هذا ليس فعلًا انعكاسيًّا",
+          "misconceptionTag": "bio.nerv.effecteur-toujours-un-muscle"
+        },
+        {
+          "id": "b",
+          "text": "العضلة الماضغة",
+          "misconceptionTag": "bio.nerv.effecteur-toujours-un-muscle"
+        },
         { "id": "c", "text": "الغدّة اللّعابيّة" },
         { "id": "d", "text": "الأنف" }
       ],

@@ -4,10 +4,22 @@
     {
       "prompt": "ما العلامة الجنسية الأوّلية للبلوغ؟",
       "options": [
-        { "id": "a", "text": "خشونة الصوت عند الفتى" },
-        { "id": "b", "text": "نموّ شعر العانة" },
+        {
+          "id": "a",
+          "text": "خشونة الصوت عند الفتى",
+          "misconceptionTag": "bio.repro.primaire-secondaire-mal-classes"
+        },
+        {
+          "id": "b",
+          "text": "نموّ شعر العانة",
+          "misconceptionTag": "bio.repro.primaire-secondaire-mal-classes"
+        },
         { "id": "c", "text": "بدء الغدد التناسلية في إنتاج الأمشاج" },
-        { "id": "d", "text": "نموّ الثديين عند الفتاة" }
+        {
+          "id": "d",
+          "text": "نموّ الثديين عند الفتاة",
+          "misconceptionTag": "bio.repro.primaire-secondaire-mal-classes"
+        }
       ],
       "correctOption": "c",
       "explanation": "العلامات الأوّلية ترتبط مباشرةً بوظيفة التكاثر، أي نضج الغدد التناسلية وبدئها في إنتاج الأمشاج (نطاف عند الفتى، بويضات عند الفتاة). أمّا خشونة الصوت ونموّ الشعر ونموّ الثديين فهي علامات ثانوية لا تنتج عنها أمشاج.",
@@ -30,7 +42,11 @@
       "options": [
         { "id": "a", "text": "في المبيض" },
         { "id": "b", "text": "في المهبل" },
-        { "id": "c", "text": "في الرحم" },
+        {
+          "id": "c",
+          "text": "في الرحم",
+          "misconceptionTag": "bio.repro.fecondation-dans-l-uterus"
+        },
         { "id": "d", "text": "في البوق (قناة فالوب)" }
       ],
       "correctOption": "d",
@@ -52,8 +68,16 @@
     {
       "prompt": "ماذا يدلّ نزول الطمث؟",
       "options": [
-        { "id": "a", "text": "على حدوث إلقاح في الدورة" },
-        { "id": "b", "text": "على بداية الحمل" },
+        {
+          "id": "a",
+          "text": "على حدوث إلقاح في الدورة",
+          "misconceptionTag": "bio.cycle.regles-signe-de-fecondation"
+        },
+        {
+          "id": "b",
+          "text": "على بداية الحمل",
+          "misconceptionTag": "bio.cycle.regles-signe-de-fecondation"
+        },
         { "id": "c", "text": "على عدم حدوث إلقاح فتساقطت بطانة الرحم" },
         { "id": "d", "text": "على توقّف عمل المبيضين نهائيًّا" }
       ],
@@ -65,8 +89,16 @@
       "prompt": "كم عدد النطاف التي تندمج مع البويضة في الإلقاح؟",
       "options": [
         { "id": "a", "text": "نطفة واحدة فقط" },
-        { "id": "b", "text": "نطفتان" },
-        { "id": "c", "text": "كلّ النطاف التي تصل إلى البويضة" },
+        {
+          "id": "b",
+          "text": "نطفتان",
+          "misconceptionTag": "bio.repro.plusieurs-spermatozoides-entrent"
+        },
+        {
+          "id": "c",
+          "text": "كلّ النطاف التي تصل إلى البويضة",
+          "misconceptionTag": "bio.repro.plusieurs-spermatozoides-entrent"
+        },
         { "id": "d", "text": "لا تندمج أيّ نطفة بل تكفي ملامستها" }
       ],
       "correctOption": "a",

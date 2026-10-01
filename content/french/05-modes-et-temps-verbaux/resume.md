@@ -1,16 +1,11 @@
 # 📜 Résumé : Les modes et les temps verbaux
 
-- **4 modes personnels** : indicatif (fait réel/certain), subjonctif (fait envisagé/douteux/exigé), conditionnel (hypothèse/politesse), impératif (ordre/conseil — 3 personnes sans sujet).
-- **Temps simples / composés** : composé = auxiliaire + participe passé ; exprime l'antériorité et l'accompli par rapport au temps simple correspondant.
-- **Principaux temps de l'indicatif** :
-  - Présent : action en cours, habitude, vérité générale, présent de narration.
-  - Imparfait : durée/habitude dans le passé, description, contexte (fond du récit).
-  - Passé simple : action ponctuelle et achevée qui fait avancer le récit (littéraire).
-  - Passé composé : action achevée dans un temps non révolu, emploi oral/courant.
-  - Futur simple : action à venir certaine ou probable ; ordre poli.
-  - Plus-que-parfait : action antérieure à une autre action passée.
-- **Subjonctif présent** : après _il faut que, pour que, bien que, à moins que, vouloir que, craindre que, douter que_… Formation : radical de _ils_ au présent + _-e, -es, -e, -ions, -iez, -ent_. Irréguliers clés : _soit, ait_.
-- **Conditionnel présent** : radical du futur + terminaisons de l'imparfait (_-ais…_). Valeurs : hypothèse (si + imparfait → conditionnel), politesse, information non confirmée, futur dans le passé (DI).
-- **Règle du « si »** : _si_ + imparfait → conditionnel présent (jamais _si_ + conditionnel).
-- **Impératif** : 2e sg. (sans _-s_ pour les verbes en _-er_ et _aller_), 1re pl., 2e pl. Exceptions : _vas-y, manges-en_.
-- Méthode : mode → rapport au temps → simple/composé → concordance.
+- **4 modes personnels** : indicatif (fait réel, certain), subjonctif (fait voulu, douteux, possible), conditionnel (fait imaginaire, incertain ou sous condition), impératif (ordre, conseil, prière — sans sujet exprimé). Le mode dit comment on envisage l'action, pas quand.
+- **Temps simples / composés** : temps composé = auxiliaire _être_/_avoir_ au temps simple correspondant + participe passé (présent → passé composé, imparfait → plus-que-parfait, futur → futur antérieur, conditionnel présent → conditionnel passé) ; il marque l'action achevée.
+- **Passé simple / imparfait** : les deux temps du récit au passé. Passé simple = écrit soutenu, action ponctuelle, accomplie, **premier plan** ; imparfait = tous niveaux de langage, action qui dure, en voie d'accomplissement, **arrière-plan** (description, habitude).
+- **Imparfait / plus-que-parfait** : imparfait = action passée dans son déroulement, ou éventuelle/irréelle après _si_ ; plus-que-parfait (_avait/était_ + participe) = action déjà achevée par rapport à un moment du passé, ou irréelle dans le passé après _si_.
+- **Futur simple / futur antérieur** : futur = infinitif + _-ai, -as…_ ; valeurs : avenir, affirmation atténuée, ordre, défense, suggestion. Futur antérieur (_aura/sera_ + participe) = action achevée ; avec un futur, antériorité.
+- **Subjonctif présent** : après volonté, sentiment, doute, possibilité, opinion négative ou interrogative ; après _avant que, pour que, bien que, à condition que_. Radical de _ils_ au présent + _-e, -es, -e, -ions, -iez, -ent_ ; **irréguliers** : _être (sois), avoir (aie), faire (fasse), pouvoir (puisse), savoir (sache), aller (aille)_.
+- **Conditionnel présent / passé** : base du futur + _-ais…_ ; passé = auxiliaire au conditionnel + participe. Valeurs : fait imaginaire, incertain ou soumis à une condition ; ordre, demande ou reproche atténués ; futur par rapport au passé. _Si_ + imparfait → conditionnel présent ; _si_ + plus-que-parfait → conditionnel passé.
+- **Méthode** : simple ou composé → mode → temps → valeur (le contexte décide).
+- **Pour aller plus loin** (hors programme) : reconnaître le passé antérieur (_eut fini_) et le subjonctif passé (_qu'il ait fini_), sans les employer.

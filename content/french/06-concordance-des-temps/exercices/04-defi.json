@@ -1,5 +1,5 @@
 {
-  "title": "👑 Défi élite : concordance et systèmes hypothétiques",
+  "title": "👑 Défi élite : temps du récit et système en « si »",
   "difficulty": 4,
   "mode": "challenge",
   "xpReward": 300,
@@ -7,147 +7,159 @@
   "displayOrder": 4,
   "questions": [
     {
-      "prompt": "Laquelle de ces phrases illustre correctement l'hypothèse irréelle du passé ?",
+      "prompt": "« Le journaliste annonça que le match serait reporté. »\nQue marque le conditionnel « serait reporté » ?",
       "options": [
         {
           "id": "a",
-          "text": "Si le chevalier saurait la vérité, il n'accepterait pas la mission."
+          "text": "Un fait soumis à une condition",
+          "misconceptionTag": "fr.valeur.forme-sans-contexte"
         },
         {
           "id": "b",
-          "text": "Si le chevalier avait su la vérité, il n'aurait pas accepté la mission."
+          "text": "Un fait incertain, rapporté sans garantie",
+          "misconceptionTag": "fr.valeur.forme-sans-contexte"
         },
         {
           "id": "c",
-          "text": "Si le chevalier savait la vérité, il n'accepterait pas la mission."
+          "text": "Une demande atténuée",
+          "misconceptionTag": "fr.valeur.forme-sans-contexte"
         },
         {
           "id": "d",
-          "text": "Si le chevalier avait su la vérité, il n'accepte pas la mission."
-        }
-      ],
-      "correctOption": "b",
-      "explanation": "L'hypothèse irréelle du passé se construit avec « si » + plus-que-parfait dans la subordonnée, et conditionnel passé dans la principale : « si… avait su… n'aurait pas accepté ». Écrire « si le chevalier saurait » est impossible : on ne met jamais le conditionnel après « si » hypothétique. L'imparfait « savait » suivi du conditionnel présent exprime l'irréel du présent, pas du passé. Associer le plus-que-parfait au présent « n'accepte pas » mélange deux systèmes incompatibles.",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Transforme au discours indirect : « Il promit : ‹ Quand j'aurai vaincu le dragon, je reviendrai. › »",
-      "options": [
-        {
-          "id": "a",
-          "text": "Il promit que quand il aurait vaincu le dragon, il reviendrait."
-        },
-        {
-          "id": "b",
-          "text": "Il promit que quand il avait vaincu le dragon, il reviendrait."
-        },
-        {
-          "id": "c",
-          "text": "Il promit que quand il vaincrait le dragon, il reviendrait."
-        },
-        {
-          "id": "d",
-          "text": "Il promit que quand il avait vaincu le dragon, il revenait."
-        }
-      ],
-      "correctOption": "a",
-      "explanation": "Au discours indirect avec verbe introducteur au passé, le futur antérieur (« aurai vaincu ») devient conditionnel passé (« aurait vaincu »), et le futur simple (« reviendrai ») devient conditionnel présent (« reviendrait »). Écrire « quand il avait vaincu le dragon, il reviendrait » confond le conditionnel passé avec le plus-que-parfait (transformation du passé composé). « Il promit que quand il vaincrait le dragon, il reviendrait » omet la marque d'antériorité. « Il promit que quand il avait vaincu le dragon, il revenait » transforme incorrectement la principale en imparfait.",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Complète la phrase au registre soutenu : « Le général exigea que ses troupes _____ au camp avant l'aube. » (verbe : revenir, subjonctif imparfait, 3e pers. pl.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "revinssent"
-        },
-        {
-          "id": "b",
-          "text": "reviendraient"
-        },
-        {
-          "id": "c",
-          "text": "revinrent"
-        },
-        {
-          "id": "d",
-          "text": "reviennent"
-        }
-      ],
-      "correctOption": "a",
-      "explanation": "Quand la principale est au passé (« exigea »), la subordonnée au subjonctif prend le subjonctif imparfait en registre soutenu. La 3e personne du pluriel du subjonctif imparfait de « revenir » est « revinssent » (radical du passé simple : « revinrent » → base « revins- » + désinences du subjonctif imparfait). « reviendraient » est le conditionnel, « revinrent » est le passé simple, et « reviennent » est le subjonctif présent.",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Laquelle de ces phrases contient une erreur de concordance des temps ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Dès qu'il eut prononcé le serment, les portes s'ouvrirent."
-        },
-        {
-          "id": "b",
-          "text": "Il craignait que la reine ne vînt trop tard."
-        },
-        {
-          "id": "c",
-          "text": "Pendant qu'il traversait le désert, une tempête éclata soudain."
-        },
-        {
-          "id": "d",
-          "text": "Il décida qu'il partirait le lendemain et qu'il avait emporté ses armes."
+          "text": "Le futur par rapport au passé"
         }
       ],
       "correctOption": "d",
-      "explanation": "Dans « Il décida qu'il partirait le lendemain et qu'il avait emporté ses armes », les deux subordonnées dépendent du même verbe « décida » et expriment toutes deux des actions postérieures à cette décision. La première subordonnée est correcte (« partirait » = conditionnel présent pour la postériorité), mais la seconde utilise le plus-que-parfait « avait emporté », qui exprime une antériorité — erreur de cohérence. Il faudrait « emporterait » ou « aurait emporté » selon le sens voulu. Les phrases « Dès qu'il eut prononcé le serment, les portes s'ouvrirent », « Il craignait que la reine ne vînt trop tard » et « Pendant qu'il traversait le désert, une tempête éclata soudain » sont toutes correctes.",
+      "explanation": "Le report est à venir par rapport au moment passé où le journaliste parle (« annonça ») : le conditionnel est ici le futur par rapport au passé. Le piège est d'y lire un doute : rien ne le signale, et la forme vient du verbe principal au passé. Il n'y a ni « si », ni demande.",
       "difficulty": 3
     },
     {
-      "prompt": "Quelle phrase exprime une hypothèse réalisable (système du potentiel), et non un irréel ?",
+      "prompt": "« Le guide est sûr que la visite commencera quand tout le groupe sera arrivé. »\nOn met « est » à l'imparfait : « Le guide était sûr que la visite ___ quand tout le groupe ___. »",
       "options": [
         {
           "id": "a",
-          "text": "Si j'avais eu le temps, j'aurais étudié ce chapitre."
+          "text": "commencerait … serait arrivé"
         },
         {
           "id": "b",
-          "text": "Si j'avais le temps, j'étudierais ce chapitre."
+          "text": "commencera … sera arrivé",
+          "misconceptionTag": "fr.temps.repere-passe-ignore"
         },
         {
           "id": "c",
-          "text": "Si j'ai le temps, j'étudierai ce chapitre."
+          "text": "commencerait … était arrivé",
+          "misconceptionTag": "fr.temps.futur-du-passe-mal-forme"
         },
         {
           "id": "d",
-          "text": "Si j'aurais le temps, j'étudierais ce chapitre."
-        }
-      ],
-      "correctOption": "c",
-      "explanation": "Le système du potentiel (hypothèse réalisable) se construit avec « si » + présent de l'indicatif → futur simple dans la principale : « si j'ai le temps, j'étudierai ». « Si j'avais eu le temps, j'aurais étudié ce chapitre » est l'irréel du passé (si + PQP → conditionnel passé). « Si j'avais le temps, j'étudierais ce chapitre » est l'irréel du présent (si + imparfait → conditionnel présent). « Si j'aurais le temps, j'étudierais ce chapitre » est une construction impossible : on ne place jamais le conditionnel directement après « si » hypothétique.",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Transforme l'interrogation au discours indirect : « Le sage demanda : ‹ Avez-vous compris pourquoi le royaume a été détruit ? › »",
-      "options": [
-        {
-          "id": "a",
-          "text": "Le sage demanda s'ils avaient compris pourquoi le royaume avait été détruit."
-        },
-        {
-          "id": "b",
-          "text": "Le sage demanda s'ils comprenaient pourquoi le royaume était détruit."
-        },
-        {
-          "id": "c",
-          "text": "Le sage demanda s'ils ont compris pourquoi le royaume a été détruit."
-        },
-        {
-          "id": "d",
-          "text": "Le sage demanda qu'ils comprennent pourquoi le royaume avait été détruit."
+          "text": "aurait commencé … serait arrivé",
+          "misconceptionTag": "fr.temps.futur-du-passe-mal-forme"
         }
       ],
       "correctOption": "a",
-      "explanation": "L'interrogation totale (oui/non) devient une subordonnée introduite par « si » au discours indirect. Le passé composé « avez-vous compris » devient plus-que-parfait « avaient compris », et « a été détruit » (passé composé passif) devient « avait été détruit » (plus-que-parfait passif), conformément à la règle de concordance avec le verbe introducteur au passé. Traduire par « comprenaient » et « était détruit » rend incorrectement les passés composés en imparfait et en présent. Garder « ont compris » et « a été détruit » ne fait aucun changement de temps. Écrire « demanda qu'ils comprennent » utilise « que » + subjonctif, ce qui transforme la question en ordre.",
+      "explanation": "Le verbe principal passe au passé : le futur devient conditionnel présent (« commencerait ») et le futur antérieur conditionnel passé (« serait arrivé »). « Était arrivé » est un plus-que-parfait, qui ferait de l'arrivée un fait déjà passé ; « aurait commencé » transforme le futur simple comme s'il était un futur antérieur ; « commencera … sera arrivé » ne change rien malgré le repère passé.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Laquelle de ces phrases contient une faute de temps ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ce soir-là, il rentra tard : il avait manqué le dernier bus."
+        },
+        {
+          "id": "b",
+          "text": "Je partirai dès que j'aurai rangé ma chambre."
+        },
+        {
+          "id": "c",
+          "text": "Il entra dans la classe et il a salué le professeur."
+        },
+        {
+          "id": "d",
+          "text": "Si tu m'avais écouté, tu ne te serais pas trompé."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "« Il entra … et il a salué » mélange le passé simple (récit) et le passé composé (discours) dans une même narration : il faut « Il entra et salua le professeur ». Les autres phrases sont correctes : passé simple et plus-que-parfait (récit) ; futur et futur antérieur ; si + plus-que-parfait → conditionnel passé.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Laquelle de ces phrases présente une action éventuelle, envisagée dans le futur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si j'étais toi, je ne partirais pas à Djerba.",
+          "misconceptionTag": "fr.si.eventuel-irreel-confondus"
+        },
+        {
+          "id": "b",
+          "text": "Si mon père obtenait un congé en juillet, nous irions à Djerba."
+        },
+        {
+          "id": "c",
+          "text": "Si nous étions à Djerba en ce moment, nous nagerions dans la mer.",
+          "misconceptionTag": "fr.si.eventuel-irreel-confondus"
+        },
+        {
+          "id": "d",
+          "text": "Si nous étions partis à Djerba, nous aurions nagé.",
+          "misconceptionTag": "fr.si.eventuel-irreel-confondus"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "« En juillet » place le congé dans le futur : il reste possible. Si + imparfait présente ici une action éventuelle. « Si j'étais toi » et « si nous étions à Djerba en ce moment » sont contraires à la réalité présente : actions irréelles. « Si nous étions partis » (plus-que-parfait) est une action irréelle dans le passé.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "« Si tu m'invites, je viendrai. » devient « Si tu m'avais invité, je serais venu. »\nQue présente la seconde phrase ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une action irréelle : l'invitation n'a pas eu lieu"
+        },
+        {
+          "id": "b",
+          "text": "Une action éventuelle, encore possible dans le futur",
+          "misconceptionTag": "fr.si.eventuel-irreel-confondus"
+        },
+        {
+          "id": "c",
+          "text": "Une action réelle, qui a bien eu lieu dans le passé",
+          "misconceptionTag": "fr.valeur.forme-sans-contexte"
+        },
+        {
+          "id": "d",
+          "text": "Le futur vu depuis un moment passé"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Si + plus-que-parfait → conditionnel passé : l'action est irréelle, envisagée dans le passé — tu ne m'as pas invité, c'est trop tard. La première phrase, elle, présentait l'invitation comme réalisable. Il ne s'agit pas d'une action éventuelle (le passé ne se rattrape pas), ni d'un fait réel, ni d'un futur vu du passé (pas de verbe principal au passé).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans une lettre : « Demain, nous serons partis avant l'aube. »\nPourquoi « serons partis » est-il au futur antérieur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le départ a eu lieu avant le moment où l'on écrit",
+          "misconceptionTag": "fr.temps.compose-pris-pour-passe"
+        },
+        {
+          "id": "b",
+          "text": "Le départ dépend d'une condition non réalisée"
+        },
+        {
+          "id": "c",
+          "text": "Le départ est un ordre donné au lecteur"
+        },
+        {
+          "id": "d",
+          "text": "Le départ sera achevé à un moment à venir"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le futur antérieur exprime une action achevée : demain, avant l'aube, le départ sera déjà fait. Ce n'est pas un passé (le départ est « demain »), ni une condition (pas de « si »), ni un ordre : « nous » parle de lui-même.",
       "difficulty": 3
     }
   ]

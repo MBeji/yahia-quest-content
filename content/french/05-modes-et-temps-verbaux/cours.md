@@ -13,32 +13,31 @@ ce départ. Comment appelle-t-on cette dimension du verbe ?
 
 ::: definition
 Le **mode** exprime la manière dont le locuteur envisage l'action : comme réelle, envisagée,
-soumise à une condition, ou commandée. Les modes **personnels** se conjuguent avec un sujet.
+soumise à une condition, ou commandée. Les modes **personnels** se conjuguent avec un sujet
+(l'impératif, lui, le sous-entend).
 :::
 
 | Mode         | Valeur principale                            | Exemple                    |
 | ------------ | -------------------------------------------- | -------------------------- |
 | Indicatif    | fait réel, certain ou daté                   | Il part. / Il partira.     |
-| Subjonctif   | fait envisagé, souhaité, douteux             | Il faut qu'il parte.       |
-| Conditionnel | fait soumis à une condition, hypothèse, poli | Il partirait s'il pouvait. |
+| Subjonctif   | fait voulu, souhaité, douteux, possible      | Il faut qu'il parte.       |
+| Conditionnel | fait imaginaire, incertain ou sous condition | Il partirait s'il pouvait. |
 | Impératif    | ordre, conseil, prière                       | Pars maintenant !          |
 
 ::: exemple lire le mode dans les quatre phrases
 
-1. _Il part._ → le départ est présenté comme un **fait** ← **indicatif**.
-2. _Il faut qu'il parte._ → le départ n'a pas eu lieu, il est **exigé** ← **subjonctif**.
-3. _Il partirait s'il pouvait._ → le départ dépend d'une **condition** non remplie ←
-   **conditionnel**.
-4. _Pars maintenant !_ → le départ est **commandé** à quelqu'un ← **impératif**, **parce que**
-   seul ce mode s'adresse directement à son destinataire sans sujet exprimé.
+1. _Il part._ → le départ est présenté comme un **fait**, **car** rien ne le met en doute ←
+   **indicatif**.
+2. _Il faut qu'il parte._ → le départ n'a pas eu lieu, il est **exigé**, **car** _il faut que_
+   exprime une volonté ← **subjonctif**.
+3. _Il partirait s'il pouvait._ → le départ dépend d'une **condition**, **car** _s'il pouvait_ le
+   soumet à une possibilité ← **conditionnel**.
+4. _Pars maintenant !_ → le départ est **commandé**, **car** le verbe s'adresse directement à
+   quelqu'un, sans sujet exprimé ← **impératif**.
 
 :::
 
-> 🗡️ Les modes **impersonnels** — infinitif, participe, gérondif — n'ont pas de sujet propre et
-> ne varient pas en personne. C'est pourquoi ils servent dans les subordonnées où l'on ne veut
-> pas répéter le sujet : _« Il lui ordonne **de partir**. »_
-
-::: piege l'erreur classique
+::: piege Erreur fréquente
 
 Croire que le mode indique le moment. _Il partira_ et _qu'il parte_ peuvent désigner le même
 départ futur : le premier le donne pour certain, le second pour exigé. Le **moment** est affaire
@@ -51,13 +50,13 @@ Quel mode dans _« Je doute qu'il réussisse »_ et pourquoi ?
 
 ---
 
-**Subjonctif** (_réussisse_). Le verbe introducteur _douter_ présente la réussite comme
-**incertaine** : elle n'est pas donnée pour un fait, donc pas d'indicatif.
+**Subjonctif** (_réussisse_). Le verbe _douter_ présente la réussite comme **incertaine** : elle
+n'est pas donnée pour un fait, donc pas d'indicatif.
 :::
 
 ::: retenir
-Le mode dit comment le locuteur envisage l'action — réelle, envisagée, conditionnée ou commandée
-— et non quand elle se passe.
+Le mode dit comment le locuteur envisage l'action — réelle, voulue, imaginée ou commandée — et non
+quand elle se passe.
 :::
 
 ## ⚡ Les temps simples et les temps composés
@@ -69,176 +68,311 @@ Cet auxiliaire ajouté n'est pas décoratif : il apporte une information précis
 
 ::: definition
 Un **temps simple** est formé d'une seule forme verbale. Un **temps composé** est formé de
-l'auxiliaire **avoir** ou **être** + le **participe passé**. Le temps composé exprime une action
-**accomplie** et **antérieure** par rapport au temps simple de la même série.
+l'auxiliaire **avoir** ou **être**, conjugué au temps simple correspondant, + le **participe
+passé**. Il présente l'action comme **achevée**.
 :::
 
-| Temps simple | Temps composé correspondant |
-| ------------ | --------------------------- |
-| Présent      | Passé composé               |
-| Imparfait    | Plus-que-parfait            |
-| Passé simple | Passé antérieur             |
-| Futur simple | Futur antérieur             |
+| Temps simple         | Temps composé correspondant | Exemple                              |
+| -------------------- | --------------------------- | ------------------------------------ |
+| Présent              | Passé composé               | il chante → il **a** chanté          |
+| Imparfait            | Plus-que-parfait            | il chantait → il **avait** chanté    |
+| Futur simple         | Futur antérieur             | il chantera → il **aura** chanté     |
+| Conditionnel présent | Conditionnel passé          | il chanterait → il **aurait** chanté |
+
+Le temps de l'auxiliaire donne le nom du temps composé : _avait_ est à l'imparfait, donc _avait
+chanté_ est au plus-que-parfait.
 
 ::: exemple ce que l'auxiliaire ajoute exactement
 
-1. _Il **chante**._ → l'action est en cours maintenant.
-2. _Il **a chanté**._ → l'action est **terminée** au moment où l'on parle ← accomplie par
-   rapport au présent.
-3. _Quand il **aura chanté**, il partira._ → le chant sera terminé **avant** le départ futur ←
-   antérieur à un autre futur, **parce que** chaque temps composé se mesure au temps simple de
-   sa propre série.
+1. _Il **chante**._ → l'action est en cours maintenant, **car** le présent la saisit dans son
+   déroulement.
+2. _Il **a chanté**._ → l'action est **terminée** au moment où l'on parle, **car** l'auxiliaire
+   au présent la mesure depuis aujourd'hui.
+3. _Quand il **aura chanté**, il partira._ → le chant sera terminé **avant** le départ futur,
+   **car** le futur antérieur se mesure au futur simple de sa propre série.
 
 :::
 
-::: piege l'erreur classique
+::: piege Erreur fréquente
 
 Traduire « temps composé » par « temps du passé ». Le **futur antérieur** est un temps composé et
 désigne l'avenir : _« J'aurai fini demain. »_ Ce que le temps composé marque, c'est
-l'accomplissement — pas le passé.
+l'action achevée — pas le passé.
 
 :::
 
 ::: verifie
-À quel temps simple répond le futur antérieur, et que signifie ce rapport ?
+À quel temps est _nous serions arrivés_, et comment le sais-tu ?
 
 ---
 
-Au **futur simple**. _« Quand j'**aurai fini** (futur antérieur), je **partirai** (futur
-simple) »_ : l'action composée est **accomplie avant** l'action simple de la même série.
+Au **conditionnel passé** : l'auxiliaire _serions_ est au conditionnel présent, suivi du
+participe passé _arrivés_. Le temps de l'auxiliaire donne le temps composé.
 :::
 
 ::: retenir
-Le temps composé ajoute l'accompli et l'antériorité au temps simple correspondant — et l'un des
-quatre désigne l'avenir.
+Temps composé = auxiliaire au temps simple correspondant + participe passé : il ajoute l'achevé,
+et l'un d'eux désigne l'avenir.
 :::
 
-## 🧪 L'indicatif dans le récit : imparfait, passé simple, plus-que-parfait
+## 🧪 Le passé simple et l'imparfait
 
-Lis : _« Le ciel **était** gris. Soudain, le monstre **surgit**. Le héros **avait caché** son
-épée la veille. »_ Trois verbes, trois temps, et aucun n'est interchangeable.
+Tu racontes une sortie : _« Le ciel **était** gris et un vent froid **soufflait**. Vers midi,
+l'orage **éclata**. »_ Les trois verbes parlent du passé.
 
-Pourtant tous racontent le passé. Qu'est-ce qui décide, pour chaque phrase, lequel employer ?
+Pourtant, essaie d'écrire _« l'orage éclatait »_ ou _« le ciel fut gris »_ : le récit ne dit plus
+la même chose. Qu'est-ce qui sépare ces deux temps ?
+
+::: definition
+Le **passé simple** et l'**imparfait** sont les deux **temps du récit au passé**. Formation : au
+radical, on ajoute pour le passé simple _-ai, -as, -a, -âmes, -âtes, -èrent_ (1er groupe),
+_-is, -is, -it…_ (2e groupe et certains verbes du 3e : _dire, faire, prendre_…), _-us, -us, -ut…_ (_pouvoir, savoir,
+devoir_…) ou _-ins, -ins, -int…_ (_tenir, venir_) ; pour l'imparfait _-ais, -ais, -ait, -ions,
+-iez, -aient_.
+:::
+
+| Passé simple                                                  | Imparfait                                            |
+| ------------------------------------------------------------- | ---------------------------------------------------- |
+| uniquement à l'écrit, langage soutenu                         | à l'écrit et à l'oral, tous les niveaux de langage   |
+| action **ponctuelle**, à un moment précis                     | action qui **dure** dans le passé                    |
+| action **accomplie**                                          | action **en voie d'accomplissement**                 |
+| **premier plan** : les actions qui font progresser l'histoire | **arrière-plan** : description, éléments secondaires |
+
+::: exemple trier les verbes d'un récit
+
+_« Le ciel était gris et un vent froid soufflait. Vers midi, l'orage éclata. »_
+
+1. _était_ → **imparfait**, **car** il décrit le décor : c'est l'arrière-plan.
+2. _soufflait_ → **imparfait**, **car** l'action dure, on la voit se dérouler.
+3. _éclata_ → **passé simple**, **car** l'action arrive à un moment précis (_vers midi_) et fait
+   avancer l'histoire : c'est le premier plan.
+
+:::
+
+::: piege Erreur fréquente
+
+Confondre à l'écrit _je marchai_ (passé simple) et _je marchais_ (imparfait), qui se prononcent
+presque pareil. Pour choisir, remplace _je_ par _il_ : _il marcha_ (action ponctuelle) ou _il
+marchait_ (action qui dure). La terminaison qui convient à _il_ te dit laquelle écrire avec _je_.
+
+:::
 
 ::: propriete
-Dans un récit au passé, chaque temps a un rôle fixe :
-l'**imparfait** pose le **décor** et les actions qui durent ou se répètent ;
-le **passé simple** marque l'**événement** bref qui fait avancer le récit ;
-le **plus-que-parfait** rapporte ce qui s'est passé **avant** ce récit.
-:::
-
-| Temps                | Rôle dans le récit                                      | Exemple                                     |
-| -------------------- | ------------------------------------------------------- | ------------------------------------------- |
-| **Imparfait**        | décor, durée, habitude                                  | _Chaque matin, il **s'entraînait**._        |
-| **Passé simple**     | action ponctuelle, achevée, qui fait avancer            | _Il **saisit** l'épée et **frappa**._       |
-| **Plus-que-parfait** | action antérieure à une autre action passée             | _Elle **avait étudié** avant qu'il arrive._ |
-| **Passé composé**    | action achevée aux effets présents, ou temps non révolu | _J'**ai terminé** ma quête._                |
-
-::: exemple choisir le temps, phrase par phrase
-
-1. _La pluie **tombait** depuis le matin._ → action de **fond**, qui dure ← **imparfait**.
-2. _Soudain, la porte **s'ouvrit**._ → événement **bref et unique** qui relance le récit ←
-   **passé simple**.
-3. _Il **avait fermé** cette porte lui-même une heure plus tôt._ → action **antérieure** à
-   l'ouverture ← **plus-que-parfait**.
-4. **Le test qui tranche** : l'action **dure** (imparfait), elle **arrive** (passé simple), ou
-   elle est **déjà faite** au moment du récit (plus-que-parfait).
-
-:::
-
-> 💡 Astuce mémo : imparfait = décor (fond) ; passé simple = flash (action) ; plus-que-parfait =
-> encore plus loin dans le passé. Et le passé composé remplace le passé simple à l'oral et dans
-> les textes courants.
-
-::: piege l'erreur classique
-
-Mélanger passé simple et passé composé dans le même récit : _« Il saisit l'épée et il a
-frappé. »_ Les deux disent l'événement, mais ils n'appartiennent pas au même registre — on choisit
-l'un **pour tout le texte**.
-
+L'imparfait sert aussi à l'**habitude** : _Chaque matin, il **partait** à six heures._ Chaque
+départ est bref, mais leur répétition forme le décor du récit : c'est encore l'arrière-plan.
 :::
 
 ::: verifie
-Complète au bon temps : _« Le village (dormir) encore quand le cavalier (entrer) sur la place. »_
+Complète : _« Le village (dormir) encore quand le cavalier (entrer) sur la place. »_
 
 ---
 
 _« Le village **dormait** encore quand le cavalier **entra** sur la place. »_ Le sommeil du
-village est le **décor** qui dure ← imparfait ; l'entrée est l'**événement** bref ← passé simple.
+village dure et forme le décor ← imparfait ; l'entrée est ponctuelle et fait avancer le récit ←
+passé simple.
 :::
 
 ::: retenir
-Imparfait pour le fond, passé simple pour l'événement, plus-que-parfait pour l'avant — et on ne
-mélange pas passé simple et passé composé dans un même récit.
+Passé simple : premier plan, action ponctuelle et accomplie ; imparfait : arrière-plan, action qui
+dure, description ou habitude.
+:::
+
+## 🛡️ L'imparfait et le plus-que-parfait
+
+_« Sami relisait la lettre que son cousin lui **avait envoyée** de Paris. »_ Sami lit, mais le
+cousin, lui, a écrit bien avant.
+
+Deux temps du passé dans la même phrase, et l'un se place **derrière** l'autre. Comment le verbe
+le montre-t-il ?
+
+::: definition
+Le **plus-que-parfait** est formé de l'auxiliaire **être** ou **avoir** à l'**imparfait** + le
+participe passé : _il avait gagné, ils étaient partis_. À l'imparfait, les verbes en _-cer_
+prennent une cédille (_je commençais_), ceux en _-ger_ un _e_ (_je mangeais_), ceux en _-guer_
+gardent le _u_ (_il se fatiguait_).
+:::
+
+| L'imparfait                                                                                    | Le plus-que-parfait                                                              |
+| ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| action ou état passés, saisis dans leur **déroulement** : _Sami relisait la lettre._           | action **déjà achevée** par rapport à un moment du passé : _qu'il avait envoyée_ |
+| après _si_ : action **éventuelle** (envisagée dans le futur) ou **irréelle** (dans le présent) | après _si_ : action **irréelle** envisagée dans le **passé**                     |
+
+::: exemple lire la valeur de chaque verbe
+
+1. _Sami **relisait** la lettre_ → **imparfait**, **car** la lecture est vue en train de se
+   dérouler.
+2. _que son cousin lui **avait envoyée**_ → **plus-que-parfait**, **car** l'envoi est achevé avant
+   la lecture.
+3. _S'il **pleuvait** demain, nous resterions ici._ → imparfait d'action **éventuelle**, **car**
+   _demain_ place la pluie dans le futur.
+4. _Si tu m'**avais écouté**, tu ne te serais pas trompé._ → plus-que-parfait d'action
+   **irréelle** dans le passé, **car** il ne t'a pas écouté.
+
+:::
+
+::: piege Erreur fréquente
+
+Croire que l'imparfait parle toujours du passé. Dans _« S'il pleuvait demain… »_, rien n'est
+passé : après _si_, l'imparfait présente une action **envisagée**. Regarde les indices du texte
+(_demain_, _à ta place_) avant de conclure.
+
+:::
+
+::: propriete
+Le plus-que-parfait marque l'antériorité par rapport à un **autre moment du passé** : sans ce
+repère passé, on emploie le passé composé. Cas-limite d'orthographe : _je mangeais_ mais _nous
+mangions_, _je commençais_ mais _nous commencions_ — le _e_ et la cédille ne servent que devant
+_a_ et _o_.
+:::
+
+::: verifie
+Quelle est la valeur de l'imparfait dans _« Si j'étais à ta place, je refuserais »_ ?
+
+---
+
+Action **irréelle** envisagée dans le présent : je ne suis pas à ta place. L'imparfait, après _si_,
+ne raconte rien de passé.
+:::
+
+::: retenir
+Imparfait : action passée en déroulement, ou éventuelle/irréelle après _si_ ; plus-que-parfait :
+action déjà achevée avant un moment passé, ou irréelle dans le passé.
+:::
+
+## 🔮 Le futur simple et le futur antérieur
+
+Le professeur annonce : _« Vous **rendrez** vos copies à dix heures. »_ Ce n'est pas une
+prédiction : personne ne parie sur l'heure.
+
+Le futur peut donc faire autre chose que décrire l'avenir. Quoi, et quand faut-il sa forme
+composée ?
+
+::: definition
+Le **futur simple** se forme en général sur l'**infinitif** + _-ai, -as, -a, -ons, -ez, -ont_
+(_partir → je partirai_ ; les verbes en _-re_ perdent leur _e_ : _prendre → je prendrai_). Le
+**futur antérieur** = auxiliaire **être** ou **avoir** au futur + participe passé : _j'aurai
+fini, elle sera partie_.
+:::
+
+| Valeur                                           | Exemple                                           |
+| ------------------------------------------------ | ------------------------------------------------- |
+| action à venir                                   | _Nous **partirons** à l'aube._                    |
+| affirmation atténuée                             | _Je vous **avouerai** que ce film m'a déçu._      |
+| ordre, défense, suggestion                       | _Vous **rendrez** vos copies à dix heures._       |
+| futur antérieur : action achevée, avant un futur | _Quand nous **aurons fini**, nous **sortirons**._ |
+
+::: exemple trouver la valeur dans chaque phrase
+
+1. _Vous **rendrez** vos copies à dix heures._ → **ordre**, **car** celui qui parle a l'autorité
+   et s'adresse à ceux qui doivent obéir.
+2. _Tu ne **sortiras** pas avant la fin._ → **défense**, **car** c'est un ordre à la forme
+   négative.
+3. _Je vous **avouerai** que ce film m'a déçu._ → **atténuation**, **car** l'aveu est fait dans
+   la phrase même : le futur adoucit l'affirmation.
+4. _Quand nous **aurons fini**, nous **sortirons**._ → futur antérieur, **car** la fin sera
+   **achevée avant** la sortie, elle-même à venir.
+
+:::
+
+::: piege Erreur fréquente
+
+Lire tout futur comme une simple prévision. _« Je vous dirai que je ne suis pas d'accord »_
+n'annonce aucune parole future : la parole a lieu maintenant, et le futur la rend plus polie.
+Demande-toi toujours : l'action est-elle vraiment plus tard ?
+
+:::
+
+::: propriete
+Employé avec un futur simple, le futur antérieur exprime l'**antériorité** ; employé seul, il dit
+qu'une action sera **achevée** à un moment à venir : _À dix-huit heures, j'**aurai terminé**._
+:::
+
+::: verifie
+Quelle valeur a le futur dans _« Tu ne toucheras pas à ce gâteau avant le dîner »_ ?
+
+---
+
+Une **défense** : c'est un ordre négatif, donné par quelqu'un qui a autorité. On ne prédit pas
+l'avenir, on l'interdit.
+:::
+
+::: retenir
+Futur simple : avenir, atténuation, ordre, défense ou suggestion ; futur antérieur : action
+achevée, antérieure à un autre futur.
 :::
 
 ## 📐 Le subjonctif présent
 
-_« Il faut qu'il **finisse**. »_ Pourquoi pas _finit_ ? L'action est bien réelle : ce devoir sera
-fini.
+Ton ami écrit : _« Il faut que je **peuve** venir. »_ Il a appliqué une règle : _ils peuvent_ →
+_peuv-_. Et pourtant la forme juste est _que je **puisse**_.
 
-Le mode ne dépend pourtant pas de la réalité du fait, mais du **mot qui l'introduit**. Lequel, et
-comment les reconnaître ?
+D'où vient ce _puiss-_, et quand faut-il un subjonctif ?
 
 ::: definition
-Le **subjonctif** exprime le **possible**, le **souhaité**, le **douteux** ou l'**exigé**. Il
-s'emploie surtout en **subordonnée**, déclenché par la construction qui l'introduit.
-Sa **formation** : radical de la 3e personne du pluriel du présent de l'indicatif + terminaisons
-_-e, -es, -e, -ions, -iez, -ent_.
+Le **subjonctif présent** s'emploie dans une subordonnée **complétive** quand le verbe principal
+exprime une **volonté**, un **sentiment**, un **doute**, une **possibilité** ou une **opinion à la
+forme négative ou interrogative** ; et après certains subordonnants de **temps**, de **but**, de
+**concession** et de **condition**. Formation : radical de la 3e personne du pluriel du présent de
+l'indicatif + _-e, -es, -e, -ions, -iez, -ent_ — sauf **quelques verbes irréguliers**, dont les six que retient le manuel.
 :::
 
-| Construction déclenchante              | Exemple                                     |
-| -------------------------------------- | ------------------------------------------- |
-| **il faut que**                        | _Il faut que tu **finisses** ce niveau._    |
-| **pour que / afin que**                | _Je t'explique pour que tu **comprennes**._ |
-| **bien que / quoique**                 | _Bien qu'il **soit** fatigué, il continue._ |
-| **à moins que**                        | _À moins qu'il **vienne**, nous partirons._ |
-| **vouloir / souhaiter / craindre que** | _Je veux qu'il **parte**._                  |
-| **douter que / ne pas croire que**     | _Je doute qu'il **ait** raison._            |
+| Déclencheur                                      | Exemple                                   |
+| ------------------------------------------------ | ----------------------------------------- |
+| volonté : _vouloir, exiger, il faut que_         | _Il faut que tu **finisses** ce travail._ |
+| sentiment : _regretter, s'étonner que_           | _Je regrette qu'elle **parte**._          |
+| doute, possibilité : _douter, il se peut que_    | _Il se peut qu'il **pleuve**._            |
+| opinion négative : _je ne pense pas que_         | _Je ne pense pas qu'il **ait** raison._   |
+| _avant que, pour que, bien que, à condition que_ | _Partons avant qu'il **fasse** nuit._     |
 
-::: exemple former un subjonctif en trois étapes
+::: exemple former le subjonctif d'un verbe régulier, puis d'un irrégulier
 
-1. **Mets le verbe à la 3e personne du pluriel du présent** : _finir_ → _ils **finiss**ent_.
-2. **Retire la terminaison _-ent_** : il reste le radical **finiss-**.
-3. **Ajoute la terminaison du subjonctif** : _qu'il **finisse**_, _que nous **finissions**_ —
-   **parce que** ce radical est celui du pluriel, et non celui de l'infinitif.
+1. **Sortir** : _ils **sort**ent_ → radical **sort-** → _que je **sorte**_, **car** la règle
+   prend le radical de _ils_ au présent.
+2. **Finir** : _ils **finiss**ent_ → _qu'elle **finisse**_, **car** c'est le radical du pluriel,
+   pas celui de l'infinitif.
+3. **Pouvoir** fait partie des irréguliers : la règle donnerait « peuv- », **car** _ils
+   peuvent_ ; or le subjonctif est _que je **puisse**_, à apprendre par cœur.
 
 :::
 
-| Infinitif | Radical (ils …) | Subjonctif présent (il) |
-| --------- | --------------- | ----------------------- |
-| finir     | finiss-         | qu'il finisse           |
-| venir     | vienn-          | qu'il vienne            |
-| faire     | fass-           | qu'il fasse             |
-| être      | (irrégulier)    | qu'il soit              |
-| avoir     | (irrégulier)    | qu'il ait               |
+| Irrégulier | Subjonctif présent                |
+| ---------- | --------------------------------- |
+| être       | que je sois, que nous soyons      |
+| avoir      | que j'aie, que nous ayons         |
+| faire      | que je fasse, que nous fassions   |
+| pouvoir    | que je puisse, que nous puissions |
+| savoir     | que je sache, que nous sachions   |
+| aller      | que j'aille, que nous allions     |
 
-> 🗡️ Deux irréguliers à savoir par cœur : **être** → _sois, sois, soit, soyons, soyez, soient_ ;
-> **avoir** → _aie, aies, ait, ayons, ayez, aient_.
+::: piege Erreur fréquente
 
-::: piege l'erreur classique
+Appliquer la règle aux irréguliers : _« qu'il peuve »_, _« qu'il faise »_, _« qu'il save »_. Ces
+six verbes ne se forment **pas** sur _ils peuvent, ils font, ils savent_ : on écrit _qu'il
+**puisse**_, _qu'il **fasse**_, _qu'il **sache**_.
 
-Former le subjonctif sur l'infinitif : _« qu'il **venne** »_ au lieu de _« qu'il **vienne** »_.
-Le radical vient du **pluriel de l'indicatif** (_ils viennent_), pas de _venir_ — et c'est
-précisément sur les verbes irréguliers que la différence se voit.
+:::
 
+::: propriete
+Cas-limites : avec _nous_ et _vous_, certains verbes reprennent le radical de _nous_ au présent —
+_que nous **venions**_, _que vous **preniez**_ (et non « viennions »). Et une opinion **affirmative**
+garde l'indicatif : _Je pense qu'il **a** raison_ / _Je ne pense pas qu'il **ait** raison._
 :::
 
 ::: verifie
-Forme le subjonctif présent de _prendre_ à la 3e personne du singulier.
+Forme le subjonctif présent de _prendre_ et de _savoir_ à la 3e personne du singulier.
 
 ---
 
-_Ils **prenn**ent_ → radical **prenn-** → _**qu'il prenne**_. L'infinitif _prendre_ aurait donné
-« qu'il prende », qui n'existe pas.
+_Prendre_ : _ils **prenn**ent_ → _**qu'il prenne**_ (règle). _Savoir_ est irrégulier : _**qu'il
+sache**_ — la règle aurait donné « qu'il save », qui n'existe pas.
 :::
 
 ::: retenir
-Le subjonctif est déclenché par ce qui l'introduit, et son radical se prend sur la 3e personne
-du pluriel de l'indicatif présent.
+Subjonctif présent après volonté, sentiment, doute, possibilité, opinion négative et certains
+subordonnants ; radical de _ils_ au présent, sauf être, avoir, faire, pouvoir, savoir, aller.
 :::
 
-## 🌐 Le conditionnel présent
+## 🌐 Le conditionnel présent et le conditionnel passé
 
 _« Le champion **serait** blessé. »_ Où est la condition ? Il n'y a pas de _si_ dans cette
 phrase, et pourtant le verbe est au conditionnel.
@@ -246,157 +380,117 @@ phrase, et pourtant le verbe est au conditionnel.
 Le nom du mode trompe : il ne sert pas qu'à poser des conditions. À quoi sert-il d'autre ?
 
 ::: definition
-Le **conditionnel présent** se forme sur le **radical du futur simple** + les terminaisons de
-l'**imparfait** (_-ais, -ais, -ait, -ions, -iez, -aient_). Il a quatre valeurs : l'hypothèse, la
-politesse, l'information non confirmée, et le **futur dans le passé**.
+Le **conditionnel présent** = **base du futur** + terminaisons de l'**imparfait** (_-ais, -ais,
+-ait, -ions, -iez, -aient_) : _je pourrais_. Le **conditionnel passé** = auxiliaire **être** ou
+**avoir** au conditionnel présent + participe passé : _j'aurais réussi, nous serions arrivés_.
 :::
 
-| Valeur                                    | Exemple                                               |
-| ----------------------------------------- | ----------------------------------------------------- |
-| Hypothèse (si + imparfait → conditionnel) | Si j'étudiais plus, j'**aurais** de meilleures notes. |
-| Politesse                                 | Je **voudrais** un conseil, s'il vous plaît.          |
-| Information non confirmée                 | Le champion **serait** blessé.                        |
-| Futur dans le passé (discours indirect)   | Il dit qu'il **viendrait** demain.                    |
+| Le conditionnel exprime…                                | Exemple                                                                     |
+| ------------------------------------------------------- | --------------------------------------------------------------------------- |
+| un fait imaginaire, incertain ou soumis à une condition | _Le champion **serait** blessé._ / _Si j'avais le temps, je **viendrais**._ |
+| un ordre, une demande ou un reproche atténués           | _**Pourriez**-vous fermer la porte ?_                                       |
+| le futur par rapport au passé                           | _Il croyait qu'il **gagnerait**._                                           |
 
 ::: exemple former un conditionnel, puis reconnaître sa valeur
 
-1. **Prends le radical du futur** : _je chanterai_ → radical **chanter-**.
-2. **Ajoute les terminaisons de l'imparfait** : _je **chanterais**_ — d'où la ressemblance
-   trompeuse avec l'imparfait à l'oreille.
-3. **Cherche ensuite la valeur dans la phrase** : y a-t-il un _si_ + imparfait ? ← hypothèse.
-   Un verbe introducteur au passé ? ← futur dans le passé. Une demande polie ? ← politesse. Une
-   information rapportée sans garantie ? ← information non confirmée, **parce que** la forme est
-   la même et que seul le contexte départage.
+1. **Base du futur** : _je chanterai_ → **chanter-**, **car** le conditionnel part du futur.
+2. **Terminaison de l'imparfait** : _je **chanterais**_, **car** c'est le mélange des deux
+   temps — d'où sa ressemblance avec _je chanterai_.
+3. **Forme passée** : _j'**aurais** chanté_, **car** l'auxiliaire est au conditionnel présent.
+4. **Valeur** : dans _Le champion serait blessé_, aucun _si_ ni verbe passé : le fait est
+   **incertain**, **car** le journaliste ne le garantit pas.
 
 :::
 
-> ⚡ Structure clé : **si** + imparfait → conditionnel présent. Jamais _si_ + conditionnel — la
-> faute la plus repérable du français écrit.
+::: piege Erreur fréquente
 
-::: piege l'erreur classique
-
-Lire un conditionnel de **futur dans le passé** comme une hypothèse. Dans _« Il dit qu'il
-viendrait demain »_, il n'y a **aucun doute** sur la venue : c'est simplement le futur mesuré
-depuis un moment passé.
+Écrire _« je voudrai un renseignement »_ (futur) pour une demande polie. À la 1re personne, futur
+et conditionnel se prononcent presque pareil. Remplace _je_ par _il_ : _il voudrait_ (conditionnel)
+ou _il voudra_ (futur) — la demande atténuée exige _je **voudrais**_.
 
 :::
 
-::: verifie
-Quelle valeur du conditionnel dans _« Selon le journal, le musée rouvrirait en mars »_ ?
-
----
-
-**Information non confirmée** : le journaliste rapporte sans garantir. Pas d'hypothèse (aucun
-_si_), pas de politesse, pas de verbe introducteur au passé — c'est le contexte _« selon le
-journal »_ qui donne la valeur.
-:::
-
-::: retenir
-Radical du futur + terminaisons de l'imparfait, et quatre valeurs — dont deux, le futur dans le
-passé et l'information non confirmée, n'ont rien d'une condition.
-:::
-
-## 🔎 L'impératif
-
-Conjugue _manger_ à l'impératif : _Mange !_ Pas de _s_. Puis ajoute un petit mot : _Manges-en !_
-Le _s_ revient.
-
-Une lettre apparaît et disparaît selon ce qui suit. Quelle règle gouverne cela ?
-
-::: definition
-L'**impératif** exprime l'**ordre**, le **conseil** ou la **prière**. Il n'a que **trois
-personnes** — 2e du singulier, 1re et 2e du pluriel — et **aucun sujet exprimé**.
-:::
-
-| Personne | Exemple (aller) | Exemple (finir) |
-| -------- | --------------- | --------------- |
-| 2e sg.   | Va !            | Finis !         |
-| 1re pl.  | Allons !        | Finissons !     |
-| 2e pl.   | Allez !         | Finissez !      |
-
-::: exemple le « s » qui revient devant « y » et « en »
-
-1. **Verbes du 1er groupe et _aller_** : pas de _s_ à la 2e personne du singulier ← _Mange !_,
-   _Va !_
-2. **Sauf devant _-y_ ou _-en_** : le _s_ réapparaît ← _**Vas**-y !_, _**Manges**-en !_
-3. **Pourquoi ?** Pour éviter le heurt de deux voyelles : _« Va-y »_ est imprononçable, le _s_
-   fait la liaison — **parce que** cette lettre n'est pas grammaticale ici, elle est
-   phonétique.
-
-:::
-
-::: piege l'erreur classique
-
-Écrire un sujet devant l'impératif : _« Tu mange ! »_ L'impératif se définit par l'**absence** de
-sujet ; avec _tu_, la forme correcte serait l'indicatif _« Tu manges »_ — et ce n'est plus un
-ordre.
-
+::: propriete
+Avec _si_ : _si_ + imparfait → conditionnel **présent** ; _si_ + plus-que-parfait → conditionnel
+**passé** — _Si tu m'avais prévenu, je serais venu._ Cas-limite : **jamais** de conditionnel
+juste après _si_ (« si j'aurais » est fautif). Le chapitre 6 travaille ce système en entier.
 :::
 
 ::: verifie
-Écris à l'impératif 2e personne du singulier : _(donner)_ + _en_.
+Temps et valeur de _aurait rouvert_ dans _« Selon la radio, le musée aurait rouvert hier »_ ?
 
 ---
 
-_**Donnes-en** !_ Le verbe _donner_ est du 1er groupe, donc pas de _s_ en principe (_Donne !_),
-mais le _s_ revient devant _en_ pour permettre la liaison.
+**Conditionnel passé** (auxiliaire _aurait_ au conditionnel présent + _rouvert_). Valeur : **fait
+incertain** — _selon la radio_ montre qu'on rapporte sans garantir.
 :::
 
 ::: retenir
-Trois personnes, aucun sujet, et le _s_ de la 2e personne du singulier qui reparaît seulement
-devant _y_ et _en_.
+Conditionnel présent : base du futur + -ais ; conditionnel passé : auxiliaire au conditionnel +
+participe ; trois valeurs — fait imaginaire ou incertain, demande atténuée, futur vu du passé.
 :::
 
-## 🏆 Méthode : choisir le bon mode et le bon temps
+## 🏆 Méthode : identifier un mode, un temps et sa valeur
 
-En rédaction, tu écris des dizaines de verbes sans y penser. En examen, on t'en isole un et on te
-demande de le justifier. Quatre questions suffisent, toujours les mêmes.
+En examen, on te donne une phrase et on te demande : « Relevez les verbes, précisez leur mode,
+leur temps et leur valeur. » Quatre questions, toujours dans le même ordre, suffisent.
 
-::: exemple applique les quatre questions à un verbe isolé
+::: exemple applique les quatre questions
 
-Phrase : _« Bien qu'il (avoir) peu dormi, il continua sa route. »_
+_« Je voudrais que tu viennes : quand tu auras vu l'oasis, tu ne regretteras rien. »_
 
-1. **Quel mode ?** _Bien que_ est une conjonction déclenchante ← **subjonctif**.
-2. **Quel rapport au temps ?** Le manque de sommeil précède la marche ← **antériorité**.
-3. **Simple ou composé ?** Antérieur ← **composé** ← subjonctif **passé**.
-4. **Concordance** : le verbe principal est au passé simple, donc le récit est au passé.
-   Résultat courant : _« Bien qu'il **ait** peu dormi, il continua sa route. »_ — le subjonctif
-   passé suffit ici ; la forme _eût peu dormi_ existe aussi, mais elle appartient au registre
-   littéraire.
+1. _voudrais_ → simple ; terminaison _-rais_ sur la base du futur ← **conditionnel présent** ;
+   valeur : **demande atténuée**, **car** la phrase est une prière polie.
+2. _viennes_ → **subjonctif présent**, **car** il suit _vouloir que_ (volonté) ; radical de
+   _ils viennent_.
+3. _auras vu_ → composé, auxiliaire _auras_ au futur ← **futur antérieur**, **car** la visite sera
+   achevée avant le regret.
+4. _regretteras_ → **futur simple** de l'indicatif, valeur **action à venir**.
 
 :::
 
 ::: methode
 
-1. **Quel mode ?** Indicatif (réel, certain), subjonctif (déclenché par la subordonnée),
-   conditionnel (hypothèse, politesse, futur dans le passé), impératif (ordre).
-2. **Quel rapport au temps ?** Présent, passé ou futur.
-3. **Simple ou composé ?** Action en cours ou habituelle (simple), accomplie ou antérieure
-   (composé).
-4. **Concordance** : dans une subordonnée ou un discours indirect, le temps de la subordonnée
-   se règle sur le verbe principal.
+1. **Simple ou composé ?** Un auxiliaire + participe passé signale un temps composé.
+2. **Quel mode ?** Un déclencheur (_il faut que, bien que_…) appelle le subjonctif ; la base du
+   futur + _-ais_ signale le conditionnel ; pas de sujet : l'impératif.
+3. **Quel temps ?** La terminaison, ou le temps de l'auxiliaire pour un temps composé.
+4. **Quelle valeur ?** Le contexte décide : _si_, _selon…_, _demain_, un ordre, une politesse.
 
 :::
 
-::: piege l'erreur classique
+::: piege Erreur fréquente
 
-Sauter la première question et choisir un temps avant d'avoir fixé le mode. Le temps se conjugue
-**à l'intérieur** d'un mode : parler d'un « imparfait du subjonctif » n'a de sens qu'une fois le
-subjonctif choisi.
+Décider du temps avant le mode. _nous chantions_ peut être un **imparfait** (_Hier, nous
+chantions_) ou un **subjonctif présent** (_Il faut que nous chantions_) : la forme est la même,
+seul le déclencheur _il faut que_ tranche.
 
 :::
 
 ::: verifie
-Justifie le verbe de _« Je voudrais que tu viennes. »_
+Mode, temps et justification de _sache_ dans _« Je doute qu'il sache la réponse. »_
 
 ---
 
-Deux verbes, deux modes. _voudrais_ : **conditionnel présent**, valeur de **politesse**.
-_viennes_ : **subjonctif présent**, déclenché par _vouloir que_ — et sa forme vient du radical
-_ils vienn-_.
+**Subjonctif présent** de _savoir_, verbe **irrégulier** (pas « save »). Le mode est déclenché par
+_douter que_, qui exprime le doute.
 :::
 
 ::: retenir
-Quatre questions dans l'ordre : mode, rapport au temps, simple ou composé, concordance — et le
-mode se fixe toujours en premier.
+Quatre questions dans l'ordre : simple ou composé, mode, temps, valeur — et c'est le contexte qui
+donne la valeur.
 :::
+
+## 🚀 Pour aller plus loin (hors programme de 9e)
+
+Dans les romans et même dans certaines dictées, tu croiseras deux formes que le programme de 9e ne
+te demande ni de conjuguer ni d'employer. Les **reconnaître** suffit : elles se repèrent à leur
+auxiliaire.
+
+| Forme                | Comment la reconnaître                                         | Exemple                                   |
+| -------------------- | -------------------------------------------------------------- | ----------------------------------------- |
+| **passé antérieur**  | auxiliaire au **passé simple** (_eut, fut_) + participe        | _Quand il **eut fini**, il sortit._       |
+| **subjonctif passé** | auxiliaire au **subjonctif présent** (_ait, soit_) + participe | _Je suis content que tu **aies réussi**._ |
+
+Dans tes propres rédactions, tu exprimes l'antériorité avec le plus-que-parfait ou le futur
+antérieur, que tu maîtrises.

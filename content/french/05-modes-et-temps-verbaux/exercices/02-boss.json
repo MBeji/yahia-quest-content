@@ -7,99 +7,107 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "Identifie le temps et le mode du verbe souligné :\n« À peine avait-il franchi la porte qu'une flèche siffla. »\n(verbe : avait franchi)",
+      "prompt": "Identifie le temps et le mode du verbe « avait franchi » :\n« À peine avait-il franchi la porte qu'une flèche siffla. »",
       "options": [
         {
           "id": "a",
-          "text": "Passé composé de l'indicatif"
+          "text": "Passé composé (indicatif)",
+          "misconceptionTag": "fr.temps.compose-mal-identifie"
         },
         {
           "id": "b",
-          "text": "Passé antérieur de l'indicatif"
+          "text": "Plus-que-parfait (indicatif)"
         },
         {
           "id": "c",
-          "text": "Imparfait de l'indicatif"
+          "text": "Imparfait (indicatif)",
+          "misconceptionTag": "fr.temps.compose-mal-identifie"
         },
         {
           "id": "d",
-          "text": "Plus-que-parfait de l'indicatif"
-        }
-      ],
-      "correctOption": "d",
-      "explanation": "« Avait franchi » = auxiliaire avoir à l'imparfait + participe passé → c'est le plus-que-parfait de l'indicatif. Il exprime une action antérieure à une autre action passée (« siffla », passé simple). Le passé antérieur utiliserait « eut franchi » (auxiliaire au passé simple).",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Conjugue correctement au subjonctif présent (3e personne du singulier) :\n« Il est indispensable que le groupe ___ à l'heure. »\n(verbe : venir)",
-      "options": [
-        {
-          "id": "a",
-          "text": "vient"
-        },
-        {
-          "id": "b",
-          "text": "viendra"
-        },
-        {
-          "id": "c",
-          "text": "vienne"
-        },
-        {
-          "id": "d",
-          "text": "venait"
-        }
-      ],
-      "correctOption": "c",
-      "explanation": "Après « il est indispensable que », on emploie le subjonctif présent. Le radical se prend sur la 3e personne du pluriel du présent de l'indicatif (« ils viennent » → « vienn- ») : qu'il vienne. « vient » est le présent de l'indicatif, « viendra » le futur et « venait » l'imparfait.",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Quelle phrase illustre correctement l'emploi du conditionnel de politesse ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Je veux un renseignement, s'il vous plaît."
-        },
-        {
-          "id": "b",
-          "text": "Je voudrais un renseignement, s'il vous plaît."
-        },
-        {
-          "id": "c",
-          "text": "Je voulus un renseignement, s'il vous plaît."
-        },
-        {
-          "id": "d",
-          "text": "Je veuille un renseignement, s'il vous plaît."
+          "text": "Conditionnel passé (conditionnel)",
+          "misconceptionTag": "fr.temps.compose-mal-identifie"
         }
       ],
       "correctOption": "b",
-      "explanation": "« Je voudrais » est le conditionnel présent de « vouloir » : il adoucit la demande et exprime la politesse (« Je voudrais un renseignement, s'il vous plaît ». « Je veux un renseignement, s'il vous plaît »(« je veux », présent de l'indicatif) est plus directe et moins polie ; « je voulus » (passé simple) est inapproprié ici ; « je veuille » emploie à tort le subjonctif dans un contexte où le conditionnel s'impose.",
-      "difficulty": 1
+      "explanation": "« Avait franchi » = auxiliaire « avoir » à l'imparfait + participe passé : c'est le plus-que-parfait de l'indicatif. Il marque une action déjà achevée par rapport à un autre moment du passé (« siffla »). Le passé composé aurait l'auxiliaire au présent (« a franchi »), le conditionnel passé l'auxiliaire au conditionnel (« aurait franchi »).",
+      "difficulty": 3
     },
     {
-      "prompt": "Dans le récit suivant, quel temps manque-t-il pour exprimer l'action qui fait avancer l'histoire ?\n« Le guerrier ___ son épée, ___ un cri et ___ sur l'ennemi. » (actions ponctuelles et successives, style littéraire)",
+      "prompt": "Conjugue « venir » au subjonctif présent :\n« Il est indispensable que le groupe ___ à l'heure. »",
       "options": [
         {
           "id": "a",
-          "text": "Le passé simple"
+          "text": "vient",
+          "misconceptionTag": "fr.mode.subjonctif-oublie"
         },
         {
           "id": "b",
-          "text": "L'imparfait"
+          "text": "viendra",
+          "misconceptionTag": "fr.mode.subjonctif-oublie"
         },
         {
           "id": "c",
+          "text": "venait",
+          "misconceptionTag": "fr.mode.subjonctif-oublie"
+        },
+        {
+          "id": "d",
+          "text": "vienne"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "« Il est indispensable que » exprime une volonté : subjonctif présent. « Venir » suit la règle : ils viennent → radical vienn- → qu'il vienne. « Vient » est le présent de l'indicatif, « viendra » le futur, « venait » l'imparfait : trois formes de l'indicatif.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle phrase emploie le conditionnel pour formuler une demande atténuée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Je voudrais un renseignement, s'il vous plaît."
+        },
+        {
+          "id": "b",
+          "text": "Je voudrai un renseignement, s'il vous plaît.",
+          "misconceptionTag": "fr.conj.futur-conditionnel-1re-personne"
+        },
+        {
+          "id": "c",
+          "text": "Je veux bien un renseignement, s'il vous plaît."
+        },
+        {
+          "id": "d",
+          "text": "Je voulus un renseignement, s'il vous plaît."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "« Je voudrais » (base du futur voudr- + -ais) est un conditionnel présent : il atténue la demande. « Je voudrai », qui se prononce presque pareil, est un futur simple (il voudra) : il annonce, il n'adoucit pas. « Je veux » est un présent de l'indicatif et « je voulus » un passé simple.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel temps convient aux verbes de ce récit ?\n« Le guerrier ___ son épée, ___ un cri et ___ sur l'ennemi. » (actions ponctuelles et successives, récit écrit)",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'imparfait",
+          "misconceptionTag": "fr.temps.passe-simple-imparfait"
+        },
+        {
+          "id": "b",
           "text": "Le présent"
+        },
+        {
+          "id": "c",
+          "text": "Le passé simple"
         },
         {
           "id": "d",
           "text": "Le plus-que-parfait"
         }
       ],
-      "correctOption": "a",
-      "explanation": "Les actions ponctuelles et successives qui font avancer le récit en style littéraire sont exprimées au passé simple : « saisit, poussa, se rua ». L'imparfait décrit le fond ou les habitudes ; le présent s'emploie dans un récit oral courant ou pour un présent de narration ; le plus-que-parfait exprime l'antériorité.",
+      "correctOption": "c",
+      "explanation": "Des actions ponctuelles et successives qui font progresser l'histoire forment le premier plan du récit écrit : passé simple (« saisit, poussa, se rua »). L'imparfait est le temps de l'arrière-plan (ce qui dure, la description) ; le plus-que-parfait marque une action déjà achevée avant un autre moment ; le présent ne convient pas à un récit au passé.",
       "difficulty": 2
     },
     {
@@ -111,43 +119,46 @@
         },
         {
           "id": "b",
-          "text": "Elle est partie"
+          "text": "Elle partirait"
         },
         {
           "id": "c",
-          "text": "Elle partirait"
+          "text": "Elle est partie"
         },
         {
           "id": "d",
           "text": "Elle parte"
         }
       ],
-      "correctOption": "c",
-      "explanation": "« Partirait » = radical du futur (partir-) + terminaison de l'imparfait (-ait) → conditionnel présent. « Partait » est l'imparfait de l'indicatif ; « est partie » est le passé composé ; « parte » est le subjonctif présent.",
+      "correctOption": "b",
+      "explanation": "« Partirait » = base du futur (partir-) + terminaison de l'imparfait (-ait) : conditionnel présent. « Partait » est l'imparfait (sans la base du futur), « est partie » le passé composé, « parte » le subjonctif présent.",
       "difficulty": 2
     },
     {
-      "prompt": "Complète avec la forme correcte :\n« Il faut que vous ___ la vérité. » (verbe : dire)",
+      "prompt": "Complète avec la forme correcte (verbe « dire ») :\n« Il faut que vous ___ la vérité. »",
       "options": [
         {
           "id": "a",
-          "text": "disiez"
+          "text": "direz",
+          "misconceptionTag": "fr.mode.subjonctif-oublie"
         },
         {
           "id": "b",
-          "text": "direz"
+          "text": "dites",
+          "misconceptionTag": "fr.mode.subjonctif-oublie"
         },
         {
           "id": "c",
-          "text": "dites"
+          "text": "diriez",
+          "misconceptionTag": "fr.mode.subjonctif-oublie"
         },
         {
           "id": "d",
-          "text": "diriez"
+          "text": "disiez"
         }
       ],
-      "correctOption": "a",
-      "explanation": "Après « il faut que », on emploie le subjonctif présent. Pour « dire » à la 2e personne du pluriel, le radical est « dis- » (ils disent → dis-) et la terminaison est « -iez » → disiez. « direz » est le futur de l'indicatif ; « dites » est le présent de l'indicatif ou l'impératif ; « diriez » est le conditionnel présent.",
+      "correctOption": "d",
+      "explanation": "« Il faut que » déclenche le subjonctif présent. « Dire » suit la règle : ils disent → radical dis- + -iez → que vous disiez. « Direz » est le futur, « diriez » le conditionnel présent, « dites » le présent de l'indicatif ou l'impératif.",
       "difficulty": 3
     }
   ]

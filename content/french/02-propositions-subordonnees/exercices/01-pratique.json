@@ -11,143 +11,152 @@
       "options": [
         {
           "id": "a",
-          "text": "Une subordonnée relative qualifiant « tu »"
+          "text": "une subordonnée relative qui complète « tu »",
+          "misconceptionTag": "fr.subord.completive-relative-confondues"
         },
         {
           "id": "b",
-          "text": "Une subordonnée complétive, COD de « sais »"
+          "text": "une subordonnée complétive, COD de « sais »"
         },
         {
           "id": "c",
-          "text": "Une subordonnée circonstancielle de cause"
+          "text": "une circonstancielle de cause du verbe « sais »"
         },
         {
           "id": "d",
-          "text": "Une proposition principale"
+          "text": "la proposition principale de la phrase"
         }
       ],
       "correctOption": "b",
-      "explanation": "La proposition est introduite par « que », COD du verbe « savoir » : c'est une subordonnée complétive.",
+      "explanation": "« que » ne reprend aucun nom (pas d'antécédent) et la proposition se remplace par « cela » : « Je sais cela ». C'est une complétive, COD de « sais ». Un pronom personnel comme « tu » ne peut pas être l'antécédent d'une relative ici : « tu » est le sujet de « réussiras ».",
       "difficulty": 2
     },
     {
-      "prompt": "Quel pronom relatif complète correctement la phrase : « L'épée ___ il se sert est magique. »",
+      "prompt": "Quel pronom relatif complète la phrase : « L'épée ___ il se sert est magique. »",
       "options": [
         {
           "id": "a",
-          "text": "dont"
+          "text": "que",
+          "misconceptionTag": "fr.relative.pronom-selon-construction"
         },
         {
           "id": "b",
-          "text": "que"
-        },
-        {
-          "id": "c",
           "text": "qui"
         },
         {
-          "id": "d",
-          "text": "où"
-        }
-      ],
-      "correctOption": "a",
-      "explanation": "« se servir de » → on remplace le groupe « de l'épée » par « dont » : « l'épée dont il se sert ».",
-      "difficulty": 2
-    },
-    {
-      "prompt": "Dans « La forêt où il entra était sombre. », le pronom relatif « où » a la fonction de :",
-      "options": [
-        {
-          "id": "a",
-          "text": "Sujet"
-        },
-        {
-          "id": "b",
-          "text": "COD"
-        },
-        {
           "id": "c",
-          "text": "Complément d'agent"
+          "text": "dont"
         },
         {
           "id": "d",
-          "text": "Complément de lieu"
-        }
-      ],
-      "correctOption": "d",
-      "explanation": "« où » reprend « la forêt » (lieu) et joue le rôle de complément de lieu dans la subordonnée relative.",
-      "difficulty": 1
-    },
-    {
-      "prompt": "Quelle conjonction introduit une subordonnée de but ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "parce que"
-        },
-        {
-          "id": "b",
-          "text": "si bien que"
-        },
-        {
-          "id": "c",
-          "text": "pour que"
-        },
-        {
-          "id": "d",
-          "text": "bien que"
+          "text": "en qui"
         }
       ],
       "correctOption": "c",
-      "explanation": "« pour que » exprime le but et introduit une subordonnée au subjonctif. « parce que » = cause, « si bien que » = conséquence, « bien que » = concession.",
+      "explanation": "On dit « se servir de l'épée » : le groupe introduit par « de » est repris par « dont ». « que » serait COD, et « en qui » reprend une personne après la préposition « en » (« un ami en qui j'ai confiance »).",
       "difficulty": 2
     },
     {
-      "prompt": "Dans « Bien qu'il soit fatigué, il continue. », la subordonnée est une circonstancielle de :",
+      "prompt": "Quel pronom relatif complète la phrase : « C'est un ami ___ j'ai toute confiance. »",
       "options": [
         {
           "id": "a",
-          "text": "Cause"
+          "text": "dont"
         },
         {
           "id": "b",
-          "text": "Temps"
+          "text": "que",
+          "misconceptionTag": "fr.relative.pronom-selon-construction"
         },
         {
           "id": "c",
-          "text": "Condition"
+          "text": "avec qui"
         },
         {
           "id": "d",
-          "text": "Concession"
+          "text": "en qui"
         }
       ],
       "correctOption": "d",
-      "explanation": "« bien que » + subjonctif exprime un obstacle qui ne bloque pas l'action : c'est la concession.",
+      "explanation": "On dit « avoir confiance en quelqu'un » : la préposition est « en » et l'antécédent est une personne, d'où « en qui ». « avec qui » garde une préposition que le verbe ne demande pas ; « dont » reprendrait un complément en « de ».",
       "difficulty": 2
     },
     {
-      "prompt": "Choisissez la forme correcte : « Les batailles ___ nous avons livrées ont forgé notre courage. »",
+      "prompt": "Dans « Il était tellement fatigué qu'il s'endormit en classe. », la subordonnée exprime :",
       "options": [
         {
           "id": "a",
-          "text": "que"
+          "text": "une conséquence liée à l'intensité"
         },
         {
           "id": "b",
-          "text": "qui"
+          "text": "une conséquence pure et simple",
+          "misconceptionTag": "fr.circ.consequence-intensite"
         },
         {
           "id": "c",
+          "text": "un but que l'on cherche à atteindre",
+          "misconceptionTag": "fr.logique.rapport-logique-confondu"
+        },
+        {
+          "id": "d",
+          "text": "une cause connue de l'interlocuteur"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "« tellement… que » fait découler le résultat (s'endormir) d'un degré : « tellement fatigué ». C'est une conséquence liée à un degré d'intensité. La conséquence pure et simple s'introduit par « si bien que » ou « de sorte que », sans mot de degré ; et le sommeil est atteint, pas visé : ce n'est pas un but.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Choisis la forme correcte : « Ils resteront éveillés jusqu'à ce qu'il ___ jour. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "fait",
+          "misconceptionTag": "fr.mode.subjonctif-oublie"
+        },
+        {
+          "id": "b",
+          "text": "fasse"
+        },
+        {
+          "id": "c",
+          "text": "fera",
+          "misconceptionTag": "fr.mode.subjonctif-oublie"
+        },
+        {
+          "id": "d",
+          "text": "ferait",
+          "misconceptionTag": "fr.mode.subjonctif-oublie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "« jusqu'à ce que » marque l'antériorité (la veille a lieu avant le lever du jour) : le verbe de la subordonnée se met au subjonctif, « fasse ». L'indicatif « fait » ou « fera » conviendrait après un subordonnant de simultanéité ou de postériorité, pas ici.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Choisis le mot correct : « Les batailles ___ nous avons livrées ont forgé notre courage. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "qui",
+          "misconceptionTag": "fr.relative.qui-que-confondus"
+        },
+        {
+          "id": "b",
           "text": "dont"
+        },
+        {
+          "id": "c",
+          "text": "que"
         },
         {
           "id": "d",
           "text": "où"
         }
       ],
-      "correctOption": "a",
-      "explanation": "Le pronom relatif est COD du verbe « livrer » (on a livré les batailles) : on emploie « que ». Le participe « livrées » s'accorde avec l'antécédent féminin pluriel « batailles ».",
+      "correctOption": "c",
+      "explanation": "« nous avons livré les batailles » : l'antécédent est COD, donc « que ». Ce COD placé avant le verbe commande l'accord avec « avoir » : « livrées » (féminin pluriel). « qui » serait sujet, or le sujet de « avons livrées » est « nous ».",
       "difficulty": 3
     }
   ]

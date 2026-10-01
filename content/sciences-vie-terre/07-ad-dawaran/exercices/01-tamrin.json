@@ -9,7 +9,11 @@
     {
       "prompt": "كم تجويفًا في القلب، وما هي؟",
       "options": [
-        { "id": "a", "text": "تجويفان: أذينة وبطين" },
+        {
+          "id": "a",
+          "text": "تجويفان: أذينة وبطين",
+          "misconceptionTag": "bio.circ.coeur-une-seule-pompe"
+        },
         { "id": "b", "text": "أربعة: أذينتان وبطينان" },
         { "id": "c", "text": "ثلاثة: أذينة وبطينان" },
         { "id": "d", "text": "ستّة" }
@@ -23,8 +27,16 @@
       "options": [
         { "id": "a", "text": "نحو 40 دقّة في الدّقيقة" },
         { "id": "b", "text": "نحو 70 دقّة في الدّقيقة" },
-        { "id": "c", "text": "نحو 120 دقّة في الدّقيقة" },
-        { "id": "d", "text": "نحو 180 دقّة في الدّقيقة" }
+        {
+          "id": "c",
+          "text": "نحو 120 دقّة في الدّقيقة",
+          "misconceptionTag": "bio.lecture.valeur-d-une-autre-grandeur"
+        },
+        {
+          "id": "d",
+          "text": "نحو 180 دقّة في الدّقيقة",
+          "misconceptionTag": "bio.lecture.valeur-d-une-autre-grandeur"
+        }
       ],
       "correctOption": "b",
       "explanation": "نحو 70 دقّة في الدّقيقة، لكن بشرط الرّاحة: النّسق يبلغ 120 إثر نشاط معتدل و180 إثر نشاط مكثّف. فالقيمة 70 وصف حالة لا ثابت للقلب.",
@@ -33,7 +45,11 @@
     {
       "prompt": "ما تعريف الشّريان؟",
       "options": [
-        { "id": "a", "text": "وعاء يحمل دمًا مؤكسجًا دائمًا" },
+        {
+          "id": "a",
+          "text": "وعاء يحمل دمًا مؤكسجًا دائمًا",
+          "misconceptionTag": "bio.circ.artere-sang-oxygene"
+        },
         { "id": "b", "text": "وعاء يخرج من القلب" },
         { "id": "c", "text": "وعاء يدخل إلى القلب" },
         { "id": "d", "text": "وعاء رقيق الجدار" }
@@ -60,7 +76,11 @@
     {
       "prompt": "إلى أين تصبّ الأوردة الرّئويّة الأربعة؟",
       "options": [
-        { "id": "a", "text": "الأذينة اليمنى" },
+        {
+          "id": "a",
+          "text": "الأذينة اليمنى",
+          "misconceptionTag": "bio.circ.oreillettes-inversees"
+        },
         { "id": "b", "text": "الأذينة اليسرى" },
         { "id": "c", "text": "البطين الأيمن" },
         { "id": "d", "text": "الشّريان الأبهر" }

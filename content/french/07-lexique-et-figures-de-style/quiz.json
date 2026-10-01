@@ -4,82 +4,123 @@
     {
       "prompt": "Qu'est-ce qu'un préfixe ?",
       "options": [
-        { "id": "a", "text": "La partie centrale d'un mot qui porte le sens de base." },
+        {
+          "id": "a",
+          "text": "Un élément placé avant le radical pour modifier le sens du mot."
+        },
         {
           "id": "b",
-          "text": "Un élément placé après le radical pour changer la catégorie ou le sens du mot."
+          "text": "La partie centrale d'un mot qui porte le sens de base."
         },
-        { "id": "c", "text": "Un élément placé avant le radical pour modifier le sens du mot." },
-        { "id": "d", "text": "Un mot appartenant au même champ lexical qu'un autre." }
+        {
+          "id": "c",
+          "text": "Un élément placé après le radical pour changer la classe ou le sens du mot."
+        },
+        {
+          "id": "d",
+          "text": "Un mot qui appartient au même champ lexical qu'un autre."
+        }
       ],
-      "correctOption": "c",
-      "explanation": "Le préfixe est un élément placé avant le radical pour modifier le sens du mot. Ex. : « im- » dans « impossible » ; « re- » dans « relire ». Le suffixe, lui, se place après le radical.",
+      "correctOption": "a",
+      "explanation": "Le préfixe se place avant le radical et en modifie le sens : « in- » dans « inutile », « dé- » dans « décharger ». L'élément placé après le radical est le suffixe (« -able », « -ette ») ; la partie centrale est le radical.",
       "difficulty": 1
     },
     {
-      "prompt": "Quelle est la différence entre le champ lexical et le champ sémantique ?",
+      "prompt": "Dans la phrase « Le temps se gâte, rentrons vite », quel est le sens du verbe « gâter » ?",
       "options": [
         {
           "id": "a",
-          "text": "Le champ lexical regroupe les différents sens d'un mot ; le champ sémantique regroupe tous les mots liés à un thème."
+          "text": "Combler quelqu'un de cadeaux.",
+          "misconceptionTag": "fr.lexique.sens-hors-contexte"
         },
         {
           "id": "b",
-          "text": "Le champ lexical regroupe tous les mots liés à un thème ; le champ sémantique regroupe les différents sens d'un même mot selon le contexte."
+          "text": "Devenir mauvais, se dégrader."
         },
-        { "id": "c", "text": "Le champ lexical est synonyme du champ sémantique." },
+        {
+          "id": "c",
+          "text": "Pourrir à cause de l'humidité.",
+          "misconceptionTag": "fr.lexique.sens-hors-contexte"
+        },
         {
           "id": "d",
-          "text": "Le champ lexical concerne uniquement les adjectifs ; le champ sémantique concerne les verbes."
+          "text": "Gaspiller une chose précieuse."
         }
       ],
       "correctOption": "b",
-      "explanation": "Le champ lexical regroupe tous les mots (de catégories variées) se rapportant à un même thème. Le champ sémantique d'un mot regroupe tous les sens différents que ce mot peut avoir selon le contexte.",
-      "difficulty": 3
+      "explanation": "« Gâter » est polysémique : c'est le contexte qui choisit. Avec « le temps », il signifie « devenir mauvais » (on rentre vite). « Combler de cadeaux » est le sens de « gâter un enfant », « pourrir » celui de « des fruits gâtés » : ces sens existent, mais pas dans cette phrase.",
+      "difficulty": 2
     },
     {
       "prompt": "Les mots « verre » (récipient), « vers » (poème), « vert » (couleur) et « ver » (animal) sont des :",
       "options": [
-        { "id": "a", "text": "Synonymes" },
-        { "id": "b", "text": "Antonymes" },
-        { "id": "c", "text": "Paronymes" },
-        { "id": "d", "text": "Homonymes" }
-      ],
-      "correctOption": "d",
-      "explanation": "Les homonymes sont des mots de prononciation identique mais de sens différents. « verre », « vers », « vert » et « ver » se prononcent tous [vɛʁ] mais n'ont pas le même sens.",
-      "difficulty": 1
-    },
-    {
-      "prompt": "Quelle est la différence entre une comparaison et une métaphore ?",
-      "options": [
-        { "id": "a", "text": "La comparaison est toujours plus courte que la métaphore." },
+        {
+          "id": "a",
+          "text": "Synonymes"
+        },
         {
           "id": "b",
-          "text": "La comparaison utilise un outil comparatif explicite (comme, tel…) ; la métaphore identifie directement le comparé au comparant sans outil."
+          "text": "Antonymes"
         },
         {
           "id": "c",
-          "text": "La métaphore utilise un outil comparatif ; la comparaison n'en utilise pas."
+          "text": "Paronymes"
         },
         {
           "id": "d",
-          "text": "La comparaison s'applique uniquement aux personnes ; la métaphore aux objets."
+          "text": "Homonymes"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Ces quatre mots se prononcent exactement de la même façon mais ont des sens différents : ce sont des homonymes. Des paronymes ont seulement une forme proche, sans prononciation identique (« compréhensif » / « compréhensible »).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Comment le manuel définit-il la métaphore ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une comparaison qui emploie toujours « comme » ou « tel »."
+        },
+        {
+          "id": "b",
+          "text": "Une comparaison abrégée, sans outil de comparaison."
+        },
+        {
+          "id": "c",
+          "text": "Un mot employé dans son sens premier, concret, sans image."
+        },
+        {
+          "id": "d",
+          "text": "Un trait humain prêté à un objet ou à un animal."
         }
       ],
       "correctOption": "b",
-      "explanation": "La comparaison rapproche deux éléments à l'aide d'un outil comparatif (comme, tel, pareil à…). La métaphore fait le même rapprochement mais sans outil : elle identifie directement le comparé au comparant. Ex. : « fort comme un lion » (comparaison) vs « ce guerrier est un lion » (métaphore).",
+      "explanation": "La métaphore est une comparaison abrégée, sans outil de comparaison : « Ce guerrier est un lion ». Avec « comme » ou « tel », on a une comparaison ; le mot pris dans son sens premier, concret, est au sens propre, donc sans image ; le trait humain prêté à un non-humain est la personnification.",
       "difficulty": 2
     },
     {
-      "prompt": "La figure de style qui consiste à attribuer des caractéristiques humaines à un objet, un animal ou une abstraction s'appelle :",
+      "prompt": "La figure de style qui consiste à attribuer des caractéristiques humaines à un objet, un animal ou une idée s'appelle :",
       "options": [
-        { "id": "a", "text": "Une hyperbole" },
-        { "id": "b", "text": "Une gradation" },
-        { "id": "c", "text": "Une personnification" },
-        { "id": "d", "text": "Une énumération" }
+        {
+          "id": "a",
+          "text": "Une comparaison"
+        },
+        {
+          "id": "b",
+          "text": "Une métaphore"
+        },
+        {
+          "id": "c",
+          "text": "Une expression figée"
+        },
+        {
+          "id": "d",
+          "text": "Une personnification"
+        }
       ],
-      "correctOption": "c",
-      "explanation": "La personnification attribue des caractéristiques humaines à ce qui n'est pas humain. Ex. : « La tempête hurlait sa fureur. » L'hyperbole est une exagération expressive ; la gradation est une suite ordonnée par intensité.",
+      "correctOption": "d",
+      "explanation": "La personnification prête des actions, des sentiments ou des paroles humaines à ce qui n'est pas humain : « La tempête hurlait sa colère. » La comparaison et la métaphore rapprochent deux réalités (avec ou sans outil) ; l'expression figée est un groupe de mots qui se comprend en bloc.",
       "difficulty": 1
     }
   ]

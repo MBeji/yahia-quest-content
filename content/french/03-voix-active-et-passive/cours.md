@@ -1,353 +1,344 @@
-# ⚔️ La voix active et la voix passive
+# ⚔️ La forme passive
 
-> 💡 « Choisir entre la voix active et la voix passive, c'est décider qui prend la lumière : le héros qui agit, ou la cible qui subit l'action. »
+> 💡 « Choisir entre la forme active et la forme passive, c'est décider qui prend la lumière : le héros qui agit, ou la cible qui subit l'action. »
 
-## 🏰 Définitions : voix active et voix passive
+## 🏰 Forme active et forme passive
 
-Deux phrases disent la même chose : _« Le chevalier frappe le dragon. »_ et _« Le dragon est
-frappé par le chevalier. »_ Même événement, mêmes personnages.
+Un article sur le Rhin annonce : _« Une passerelle géante **a été installée** dimanche. »_
+Plus loin : _« L'Europe, la France et l'Allemagne **financent** l'ouvrage. »_
 
-Mais le mot placé en tête a changé, et avec lui **ce dont on parle**. Comment nomme-t-on ce
-choix, et à quoi le reconnaît-on dans le verbe ?
-
-::: definition
-Tout verbe d'action **transitif direct** peut s'employer à deux **voix**.
-À la **voix active**, le sujet **fait** l'action.
-À la **voix passive**, le sujet la **subit**, et le verbe devient **être + participe passé**.
-:::
-
-| Voix        | Qui fait l'action ?     | Structure du groupe verbal              | Exemple                                  |
-| ----------- | ----------------------- | --------------------------------------- | ---------------------------------------- |
-| **Active**  | Le sujet agit lui-même  | verbe conjugué normalement              | _Le chevalier frappe le dragon._         |
-| **Passive** | Le sujet subit l'action | **être** conjugué + **participe passé** | _Le dragon est frappé par le chevalier._ |
-
-::: exemple reconnaître un passif en deux vérifications
-
-1. **Cherche l'auxiliaire _être_ suivi d'un participe passé** : _est frappé_, _fut vaincu_,
-   _a été détruite_.
-2. **Demande-toi si le sujet agit ou subit** : dans _« Le dragon est frappé »_, le dragon ne
-   frappe pas ← il subit ← **passif**.
-3. **Attention au piège inverse** : _« Le dragon est blessé »_ peut être un passif (on l'a
-   blessé) ou un simple attribut décrivant son état. C'est la présence possible d'un
-   **complément d'agent** — _par le chevalier_ — qui tranche.
-
-:::
-
-> 🗡️ Seuls les verbes **transitifs directs** (ceux qui ont un COD) peuvent se mettre au passif.
-> _Dormir_, _partir_, _ressembler à_ n'ont pas de COD : ils n'ont pas de passif.
-
-::: piege l'erreur classique
-
-Mettre au passif un verbe sans COD : _« Il a été dormi par le chat. »_ Pour passiver, il faut un
-COD à promouvoir en sujet ; sans COD, la transformation n'a rien à déplacer.
-
-:::
-
-::: verifie
-Lesquels de ces verbes peuvent se mettre au passif : _construire_, _tomber_, _lire_,
-_ressembler_ ?
-
----
-
-**_Construire_** et **_lire_** : ils ont un COD (_construire une maison_, _lire un livre_).
-_Tomber_ et _ressembler_ n'en ont pas — le premier est intransitif, le second transitif
-**indirect** (_ressembler **à** quelqu'un_).
-:::
-
-::: retenir
-Le passif se reconnaît à _être_ + participe passé et à un sujet qui subit — et il n'existe que
-pour les verbes qui ont un COD.
-:::
-
-## ⚡ La transformation active → passive
-
-Prends _« Le maître corrige les copies. »_ et transforme-la. Trois éléments changent de place
-ou de forme, et aucun ne disparaît.
-
-Lesquels bougent, et dans quel ordre faut-il s'y prendre pour ne rien perdre ?
-
-::: propriete
-La transformation se fait en **trois étapes** :
-
-1. Le **COD** de la phrase active devient le **sujet** de la phrase passive.
-2. Le **sujet** de la phrase active devient le **complément d'agent** (introduit par _par_ ou
-   parfois _de_).
-3. Le verbe devient **être conjugué au même temps + participe passé accordé** avec le nouveau
-   sujet.
-
-:::
-
-| Phrase active                       | Élément           | Devient                                   |
-| ----------------------------------- | ----------------- | ----------------------------------------- |
-| _Le maître corrige **les copies**._ | COD _les copies_  | sujet du passif                           |
-| _**Le maître** corrige les copies._ | sujet _le maître_ | complément d'agent _par le maître_        |
-| _Le maître **corrige** les copies._ | verbe _corrige_   | _sont corrigées_ (être au présent + p.p.) |
-
-::: exemple transformer pas à pas
-
-1. **Repère le COD** : _les copies_ ← il devient sujet, en tête : _« Les copies… »_
-2. **Repère le sujet** : _le maître_ ← il passe à la fin, précédé de _par_ : _« …par le
-   maître. »_
-3. **Construis le verbe** : le verbe actif est au **présent**, donc _être_ se met au présent :
-   _sont_ ; puis le participe passé de _corriger_ : _corrigé_.
-4. **Accorde le participe** avec le nouveau sujet _les copies_ (féminin pluriel) ←
-   _**corrigées**_, **parce que** le participe d'un verbe passif s'accorde toujours avec son
-   sujet. Résultat : _« Les copies sont corrigées par le maître. »_
-
-:::
-
-> 🛡️ Le participe passé s'accorde **toujours** en genre et en nombre avec le sujet du verbe
-> passif — c'est-à-dire avec l'ancien COD. Contrairement à la règle de l'auxiliaire _avoir_, il
-> n'y a ici aucune condition de place.
-
-::: piege l'erreur classique
-
-Oublier l'accord parce que le COD d'origine ne s'accordait pas : _« Les copies sont **corrigé**
-par le maître. »_ Au passif, le mot est devenu **sujet** — et le participe suit son sujet, sans
-exception.
-
-:::
-
-::: verifie
-Mets au passif : _« Les élèves ont planté ces arbres. »_
-
----
-
-_« Ces arbres **ont été plantés** par les élèves. »_ COD _ces arbres_ → sujet ; sujet _les
-élèves_ → complément d'agent ; verbe au passé composé → _être_ au passé composé (_ont été_) +
-participe accordé au masculin pluriel.
-:::
-
-::: retenir
-Trois déplacements : COD → sujet, sujet → complément d'agent, verbe → être au même temps +
-participe accordé **avec le sujet**.
-:::
-
-## 🛡️ La conservation du temps
-
-Voici un piège que beaucoup ne voient pas : dans _« Le dragon **a été** vaincu »_, le verbe
-_vaincre_ est-il au passé composé ou au plus-que-parfait ?
-
-La forme s'allonge au passif, et on croit que le temps a changé. Qu'est-ce qui porte réellement
-le temps ?
-
-::: propriete
-Le temps du verbe **ne change pas** lors de la transformation. C'est l'auxiliaire **être** qui
-prend le temps de la phrase active ; le participe passé, lui, ne change jamais de forme
-temporelle.
-:::
-
-| Temps de la phrase active | Forme passive correspondante    | Exemple                                    |
-| ------------------------- | ------------------------------- | ------------------------------------------ |
-| Présent                   | être au présent + p.p.          | _Le dragon est vaincu par le héros._       |
-| Imparfait                 | être à l'imparfait + p.p.       | _Le dragon était vaincu par le héros._     |
-| Passé composé             | être au passé composé + p.p.    | _Le dragon a été vaincu par le héros._     |
-| Passé simple              | être au passé simple + p.p.     | _Le dragon fut vaincu par le héros._       |
-| Plus-que-parfait          | être au plus-que-parfait + p.p. | _Le dragon avait été vaincu par le héros._ |
-| Futur simple              | être au futur simple + p.p.     | _Le dragon sera vaincu par le héros._      |
-| Conditionnel présent      | être au cond. présent + p.p.    | _Le dragon serait vaincu par le héros._    |
-
-::: exemple retrouver le temps d'un verbe passif
-
-1. **Isole l'auxiliaire _être_** dans la forme passive : dans _a été vaincu_, c'est _a été_.
-2. **Demande-toi à quel temps est _être_** : _a été_ est le passé composé du verbe _être_.
-3. **Conclus** : le verbe passif est au **passé composé**, **parce que** c'est _être_ qui porte
-   le temps. Le participe _vaincu_ n'indique rien à ce sujet.
-
-:::
-
-> 💡 Au passé composé et au plus-que-parfait passifs, c'est **avoir** qui sert à conjuguer
-> **être** : _a été_, _avait été_. La forme compte alors trois mots — et c'est normal.
-
-::: piege l'erreur classique
-
-Confondre _« Le dragon a été vaincu »_ (passé composé passif) et _« Le dragon avait été
-vaincu »_ (plus-que-parfait passif). Un seul mot les sépare — _a_ contre _avait_ — et c'est lui
-qui donne le temps.
-
-:::
-
-::: verifie
-À quel temps est _« La ville serait reconstruite »_ ?
-
----
-
-**Conditionnel présent** : l'auxiliaire _serait_ est le conditionnel présent d'_être_. Le
-participe _reconstruite_ ne dit rien du temps ; il porte seulement l'accord avec _la ville_.
-:::
-
-::: retenir
-C'est _être_ qui porte le temps du verbe passif — pour retrouver le temps, ne regarde que lui.
-:::
-
-## 🧪 Le complément d'agent
-
-Compare : _« La ville a été détruite **par l'armée** »_ et _« La ville a été détruite. »_ La
-seconde est complète et correcte — il y manque pourtant celui qui a agi.
-
-Pourquoi le français autorise-t-il cette absence, et que gagne-t-on à ne pas nommer l'agent ?
+Dans la première, la passerelle ne fait rien, elle subit ; dans la seconde, le sujet agit.
+Comment appelle-t-on ces deux constructions ?
 
 ::: definition
-Le **complément d'agent** désigne celui qui accomplit l'action dans une phrase passive. Il est
-introduit par **par** dans la majorité des cas, et par **de** avec certains verbes d'état ou de
-sentiment. Il peut être **absent** quand l'agent est inconnu, sans importance ou volontairement
-tu.
+À la **forme active**, le sujet **fait** l'action. À la **forme passive**, le sujet **subit**
+l'action et le verbe se construit avec **être + participe passé**. La **transformation
+passive** met en position de sujet le **COD** de la phrase active. (On dit aussi « voix ».)
 :::
 
-| Phrase passive             | Agent   | Pourquoi cette forme      |
-| -------------------------- | ------- | ------------------------- |
-| _détruite **par** l'armée_ | exprimé | cas ordinaire             |
-| _aimé **de** tous_         | exprimé | verbe de sentiment → _de_ |
-| _entouré **de** ses amis_  | exprimé | verbe d'état → _de_       |
-| _La ville a été détruite._ | absent  | l'agent est inconnu ou tu |
-| _Ce texte est souvent lu._ | absent  | le lecteur reste indéfini |
+| Forme   | Phrase                                        | Le sujet…      |
+| ------- | --------------------------------------------- | -------------- |
+| active  | _**L'Europe** finance **l'ouvrage**._         | fait l'action  |
+| passive | _**L'ouvrage** est financé **par l'Europe**._ | subit l'action |
+| passive | _**La passerelle** a été installée dimanche._ | subit l'action |
 
-::: exemple choisir entre « par » et « de »
+Le COD de la première ligne, _l'ouvrage_, est devenu le sujet de la deuxième ; celui qui agit
+suit _par_ : c'est le **complément d'agent**.
 
-1. **Le verbe exprime-t-il une action concrète ?** _détruire_, _fermer_, _écrire_ ← **par**.
-2. **Exprime-t-il un état ou un sentiment ?** _aimer_, _entourer_, _connaître_, _respecter_ ←
-   **de** est possible et souvent plus naturel : _« aimé **de** tous »_.
-3. **En cas de doute, essaie les deux à voix haute** : _« connu par tout le village »_ passe
-   mal, _« connu **de** tout le village »_ sonne juste — **parce que** _connaître_ décrit ici un
-   état, non un acte.
+::: exemple reconnaître _« L'ouvrage est financé par l'Europe. »_
 
-:::
-
-::: piege l'erreur classique
-
-Croire qu'une phrase passive sans agent est incomplète et en inventer un. _« La ville a été
-détruite »_ est une phrase correcte et parfois **volontaire** : elle dit l'événement sans
-désigner de coupable. Ajouter un agent, c'est ajouter une information que le texte ne donne pas.
+1. **Cherche _être_ + participe passé** : _est financé_ ← construction passive, car _est_ est
+   _être_ au présent.
+2. **Demande-toi qui agit** : l'ouvrage ne finance rien ← le sujet subit l'action.
+3. **Cherche _par_** : _par l'Europe_ nomme qui agit ← complément d'agent : **forme passive**.
 
 :::
 
-::: verifie
-Quel complément d'agent dans _« Le proviseur est respecté … ses élèves »_ ?
-
----
-
-**_de_** : _« respecté **de** ses élèves »_. Le verbe _respecter_ exprime ici un sentiment
-durable, non une action ponctuelle — c'est le cas typique du complément d'agent en _de_.
+::: piege Erreur fréquente
+« Il y a un participe passé, donc la phrase est passive. » ✗ _« Les ouvriers **ont installé**
+la passerelle »_ contient un participe, mais avec _avoir_ : c'est un passé composé **actif**, et
+le sujet agit. ✓ Le passif exige _être_ + participe passé **et** un sujet qui subit.
 :::
-
-::: retenir
-L'agent s'introduit par _par_ pour une action, par _de_ pour un état ou un sentiment — et son
-absence est un choix, pas un oubli.
-:::
-
-## 📐 La transformation passive → active
-
-Tu sais aller de l'actif au passif. En examen, on demande aussi le chemin inverse — et il réserve
-une difficulté : _« La porte a été fermée. »_ Qui mettras-tu comme sujet ?
-
-Il n'y a pas de complément d'agent à promouvoir. Que faire alors ?
 
 ::: propriete
-Pour revenir à la voix active, on **inverse** les trois étapes :
-
-1. Le **sujet** de la phrase passive devient le **COD**.
-2. Le **complément d'agent** devient le **sujet**.
-3. **être + participe passé** redevient le verbe conjugué au même temps.
-   S'il n'y a **pas** de complément d'agent, le sujet de la phrase active est le pronom indéfini
-   **on**.
-
-:::
-
-::: exemple les deux cas, l'un après l'autre
-
-1. **Avec agent** — _« La porte a été fermée par la sentinelle. »_ : sujet _la porte_ → COD ;
-   agent _la sentinelle_ → sujet ; _a été fermée_ → _a fermé_ (passé composé actif). Résultat :
-   _« La sentinelle a fermé la porte. »_
-2. **Sans agent** — _« La porte a été fermée. »_ : il n'y a personne à promouvoir, donc le sujet
-   devient **on** : _« **On** a fermé la porte. »_
-3. **Vérifie l'accord** : à l'actif avec _avoir_, le participe ne s'accorde pas avec le COD placé
-   **après** ← _« On a **fermé** la porte »_, sans _e_, **parce que** l'accord du passif
-   disparaît avec le passif.
-
-:::
-
-::: piege l'erreur classique
-
-Garder l'accord du passif en repassant à l'actif : _« On a fermée la porte. »_ L'accord au passif
-venait du sujet ; à l'actif avec _avoir_ et un COD placé après, il n'y a **pas** d'accord.
-
+Une phrase est passive quand son verbe est _être_ + participe passé **et** que son sujet subit
+l'action ; le complément d'agent peut manquer (_La passerelle a été installée._). Cas-limite :
+_« La passerelle est arrivée. »_ a _être_ + participe, mais _arriver_ n'a jamais de COD : c'est
+un passé composé **actif**.
 :::
 
 ::: verifie
-Mets à la voix active : _« Ces règles doivent être respectées. »_
+Laquelle est à la forme passive : _« Le maire est venu au pont. »_ ou _« Le pont a été
+inauguré par le maire. »_ ?
 
 ---
 
-_« **On** doit respecter ces règles. »_ Pas de complément d'agent → le sujet actif est _on_ ; et
-le participe _respectées_ redevient l'infinitif _respecter_, sans accord.
+La seconde : _a été inauguré_ = _être_ + participe, et le pont subit l'action du maire
+(_par le maire_). Dans la première, _venir_ n'a pas de COD : _est venu_ est un passé composé
+actif.
 :::
 
 ::: retenir
-Le chemin inverse rend le COD, promeut l'agent — et sans agent, c'est _on_ qui prend la place du
+Forme passive = _être_ + participe passé, et un sujet qui subit l'action.
+:::
+
+## ⚡ La transformation passive pas à pas
+
+Une ingénieure a dessiné la maquette du nouveau pont. Le journal veut parler de **la
+maquette**, pas de l'ingénieure : il doit écrire une phrase dont la maquette est le sujet.
+
+Que faut-il déplacer, et que faut-il changer dans le verbe, pour ne rien perdre en route ?
+
+| Phrase active                               | Ce qui bouge                       | Phrase passive                                       |
+| ------------------------------------------- | ---------------------------------- | ---------------------------------------------------- |
+| _Une ingénieure a dessiné **la maquette**._ | COD → sujet                        | _**La maquette**…_                                   |
+| _**Une ingénieure** a dessiné la maquette._ | sujet → complément d'agent         | _…**par une ingénieure**._                           |
+| _Une ingénieure **a dessiné** la maquette._ | verbe → _être_ + participe accordé | _La maquette **a été dessinée** par une ingénieure._ |
+
+Chaque ligne déplace un élément ; aucun ne disparaît, et le verbe garde son temps.
+
+::: exemple mettre au passif _« Une ingénieure a dessiné la maquette. »_
+
+1. **Le COD _la maquette_ devient sujet** ← la phrase passive commence par lui, car c'est de lui
+   qu'on veut parler.
+2. **Le sujet _une ingénieure_ devient complément d'agent** ← il passe après _par_, car il fait
+   toujours l'action.
+3. **_Être_ prend le temps du verbe actif** : _a dessiné_ est au passé composé ← _a été_.
+4. **Le participe s'accorde avec le nouveau sujet** _la maquette_ (féminin singulier) ←
+   _dessinée_. Résultat : _« La maquette a été dessinée par une ingénieure. »_
+
+:::
+
+::: piege Erreur fréquente
+_« La maquette a été **dessiné** par une ingénieure. »_ ✗ L'élève garde le participe de la
+phrase active, qui ne s'accordait pas. ✓ Au passif, le participe suit **le sujet** :
+_dessinée_. Et _été_, lui, ne s'accorde jamais : _« Les maquettes ont **été** dessinées »_, pas
+_« ont étés »_.
+:::
+
+::: propriete
+La transformation passive : **COD → sujet**, **sujet → complément d'agent**, **verbe → _être_
+au temps de l'actif + participe passé accordé avec le sujet** (genre et nombre). Cas-limite :
+un sujet féminin pluriel exige les deux marques : _« Les lauréates sont **félicitées**. »_
+:::
+
+::: verifie
+Mets à la forme passive : _« Les supporters ont acclamé les joueuses. »_
+
+---
+
+_« Les joueuses **ont été acclamées** par les supporters. »_ Le COD _les joueuses_ devient
+sujet ; _ont acclamé_ (passé composé) donne _ont été_ ; le participe s'accorde au féminin
+pluriel ; _les supporters_ suit _par_.
+:::
+
+::: retenir
+COD → sujet, sujet → complément d'agent, _être_ au temps de l'actif + participe accordé avec le
 sujet.
 :::
 
-## 🌟 L'intérêt stylistique de la voix passive
+## ⏳ Le temps : c'est l'auxiliaire _être_ qui le porte
 
-_« Le journaliste révèle la vérité. »_ et _« La vérité est révélée par le journaliste. »_ disent
-le même fait. Aucune des deux n'est plus correcte que l'autre.
+_« La passerelle **sera inaugurée** par les maires. »_ Pour revenir à l'actif, faut-il écrire
+_« Les maires inaugureront la passerelle »_ ou _« Les maires auront inauguré la passerelle »_ ?
 
-Pourtant un rédacteur choisit l'une plutôt que l'autre. Sur quoi se fonde ce choix ?
+Les deux phrases se ressemblent, mais une seule correspond. Où lire le temps d'un verbe passif ?
+
+| Temps de la phrase active | Phrase active                    | Phrase passive : _être_ au même temps |
+| ------------------------- | -------------------------------- | ------------------------------------- |
+| présent                   | _Les maires inaugurent le pont._ | _Le pont **est** inauguré._           |
+| imparfait                 | _…inauguraient…_                 | _Le pont **était** inauguré._         |
+| passé simple              | _…inaugurèrent…_                 | _Le pont **fut** inauguré._           |
+| passé composé             | _…ont inauguré…_                 | _Le pont **a été** inauguré._         |
+| plus-que-parfait          | _…avaient inauguré…_             | _Le pont **avait été** inauguré._     |
+| futur simple              | _…inaugureront…_                 | _Le pont **sera** inauguré._          |
+| futur antérieur           | _…auront inauguré…_              | _Le pont **aura été** inauguré._      |
+| conditionnel présent      | _…inaugureraient…_               | _Le pont **serait** inauguré._        |
+| conditionnel passé        | _…auraient inauguré…_            | _Le pont **aurait été** inauguré._    |
+
+_Être_ a le temps du verbe actif, le participe ne bouge pas : _sera inaugurée_ (futur simple)
+répond à _inaugureront_ ; _auront inauguré_ aurait donné _aura été inaugurée_.
+
+::: exemple revenir à l'actif : _« Le fleuve a été fermé par les autorités. »_
+
+1. **Isole _être_** : _a été_ ← c'est lui qui porte le temps, car le participe _fermé_ ne
+   change jamais de temps.
+2. **Nomme son temps** : _a été_ est le passé composé de _être_ ← le verbe actif sera au
+   passé composé.
+3. **Rends les rôles** : l'agent _les autorités_ devient sujet, _le fleuve_ redevient COD ←
+   _« Les autorités ont fermé le fleuve. »_
+
+:::
+
+::: piege Erreur fréquente
+_« Ce film **aurait été** apprécié des critiques »_ lu comme un conditionnel **présent** ✗ — on
+voit _aurait_ et on s'arrête. ✓ _Aurait été_ est le conditionnel **passé** de _être_ (_aurait_ +
+_été_) : à l'actif, _« Les critiques **auraient apprécié** ce film. »_
+:::
 
 ::: propriete
-Le choix de la voix décide **de quoi parle la phrase** : le mot placé en position de sujet est
-celui que le lecteur retient. L'actif met **l'agent** en avant, le passif met **la cible** en
-avant, et le passif **sans agent** dépersonnalise.
-:::
-
-| Formulation                                 | Ce qui passe au premier plan | Emploi typique              |
-| ------------------------------------------- | ---------------------------- | --------------------------- |
-| _Le journaliste révèle la vérité._          | le journaliste (l'agent)     | on parle de lui             |
-| _La vérité est révélée par le journaliste._ | la vérité (la cible)         | on parle d'elle             |
-| _Les règles doivent être respectées._       | l'obligation, sans personne  | consignes, lois, règlements |
-
-::: exemple choisir la voix selon ce dont on parle
-
-1. **Tu écris un portrait du journaliste** : il doit être sujet ← **actif**.
-2. **Tu écris un article sur l'affaire** : c'est la vérité qui est le thème ← **passif avec
-   agent**.
-3. **Tu rédiges un règlement** : peu importe qui respecte, l'obligation vaut pour tous ←
-   **passif sans agent**, **parce que** nommer un agent restreindrait la portée de la règle.
-
-:::
-
-::: piege l'erreur classique
-
-Croire que le passif est une « faute de style » à éviter partout. Il est fautif quand il alourdit
-sans raison, et **juste** quand la cible est le sujet du texte — ou quand l'agent est inconnu.
-Le critère n'est pas la voix, c'est ce dont parle la phrase.
-
+_Être_ se conjugue **au temps du verbe actif**, puis vient le participe passé. Cas-limite : à un
+temps composé, _être_ a lui-même son auxiliaire, et la forme compte trois mots (_aura été
+inauguré_) : c'est normal, et c'est _aura été_ qui donne le temps (futur antérieur).
 :::
 
 ::: verifie
-Un article s'intitule « Le patrimoine de la ville ». Quelle voix pour : _(les habitants /
-restaurer / la vieille mosquée)_ ?
+Mets à la forme active : _« La scène aurait été filmée par un amateur. »_
 
 ---
 
-**Passive** : _« La vieille mosquée a été restaurée par les habitants. »_ Le thème de l'article
-est le patrimoine, donc c'est le monument qui doit occuper la place de sujet — l'actif mettrait
-les habitants au premier plan.
+_« Un amateur **aurait filmé** la scène. »_ _Aurait été_ est au conditionnel passé, donc le
+verbe actif aussi (_aurait filmé_) ; l'agent _un amateur_ devient sujet, _la scène_ redevient
+COD, et le participe actif ne s'accorde plus.
 :::
 
 ::: retenir
-La voix choisit le premier plan : actif pour l'agent, passif pour la cible, passif sans agent
-pour la règle générale.
+Pour trouver le temps d'un verbe passif, ne regarde que _être_ — et garde ce temps en changeant
+de forme.
 :::
 
-## 🧩 Récapitulatif
+## 🧪 Le complément d'agent : _par_ ou _de_ ?
 
-| Élément            | Voix active               | Voix passive                       |
-| ------------------ | ------------------------- | ---------------------------------- |
-| Sujet              | Fait l'action (agent)     | Subit l'action (patient)           |
-| Verbe              | Conjugué normalement      | **être** + participe passé accordé |
-| Complément d'agent | Absent (c'est le sujet)   | Introduit par **par** ou **de**    |
-| Accord du p.p.     | Avec le COD (règle avoir) | Avec le sujet (toujours)           |
+_« Ce footballeur est admiré … tous les enfants du quartier. »_ Faut-il écrire _par tous les
+enfants_ ou _de tous les enfants_ ? À l'oreille, les deux semblent possibles.
 
-> 🏆 Tu connais maintenant les deux voix : active pour mettre l'agent au premier plan, passive
-> pour mettre la cible en lumière. Maîtriser ce choix, c'est maîtriser le style !
+Comment choisir la préposition qui introduit le complément d'agent ?
+
+::: definition
+Le **complément d'agent** désigne, dans une phrase passive, celui qui fait l'action. Il est
+introduit le plus souvent par **par**, parfois par **de**.
+:::
+
+| Verbe de la phrase passive                                                           | Préposition | Exemple                                 |
+| ------------------------------------------------------------------------------------ | ----------- | --------------------------------------- |
+| la plupart des verbes (_installer, fabriquer, assembler_…)                           | **par**     | _fabriqués **par** une firme africaine_ |
+| sentiment ou attitude (_admirer, adorer, aimer, détester, estimer, haïr, respecter_) | **de**      | _admiré **de** tous les enfants_        |
+| _connaître, ignorer, oublier_                                                        | **de**      | _connu **de** tout le quartier_         |
+
+Le choix ne dépend pas de l'agent mais du **verbe** : c'est lui qu'on regarde dans la colonne de
+gauche.
+
+::: exemple compléter trois phrases passives
+
+1. _Ces engins sont fabriqués … une firme._ ← _fabriquer_ est une action ordinaire : **par**.
+2. _Ce footballeur est admiré … tous._ ← _admirer_ exprime un sentiment : **de**.
+3. _Cet auteur sera vite oublié … ses lecteurs._ ← _oublier_ fait partie des trois verbes
+   _connaître, ignorer, oublier_ : **de**.
+
+:::
+
+::: piege Erreur fréquente
+_« Ce chanteur est connu **par** tout le monde. »_ ✗ — _par_ est le réflexe, car c'est le cas
+le plus courant. ✓ _Connaître_ appelle **de** : _« connu **de** tout le monde »_. Avec _les_,
+_de_ se contracte : _« respecté **des** élèves »_.
+:::
+
+::: propriete
+**Par** dans la plupart des cas ; **de** avec les verbes de sentiment ou d'attitude, et avec
+_connaître, ignorer, oublier_. Cas-limite : en général, un **pronom personnel** ne peut pas
+être complément d'agent — plutôt que _« Ce livre a été écrit par lui »_, on garde l'actif :
+_« Il a écrit ce livre. »_
+:::
+
+::: verifie
+Complète : _« Cet ouvrier consciencieux est respecté … tous ses collègues. »_
+
+---
+
+**de** : _« respecté **de** tous ses collègues »_. _Respecter_ exprime une attitude : il fait
+partie des verbes qui remplacent _par_ par _de_.
+:::
+
+::: retenir
+_Par_ en général ; _de_ après un verbe de sentiment ou d'attitude et après _connaître, ignorer,
+oublier_.
+:::
+
+## 🚫 Quand la transformation passive est impossible
+
+Essaie de mettre au passif _« Tout le monde parle de cet exploit. »_ : _« Cet exploit est parlé
+par tout le monde »_ ? La phrase sonne faux. Et _« Son visage respire la santé »_ donnerait
+_« La santé est respirée par son visage »_ — absurde.
+
+Pourtant ces verbes ont bien un complément. Pourquoi refusent-ils la forme passive ?
+
+::: exemple tester trois phrases avant de les transformer
+
+1. _« Il pense à son projet. »_ ← le complément est introduit par _à_ : ce n'est pas un COD,
+   car _penser à_ est **transitif indirect**. Rien ne peut devenir sujet : passif impossible.
+2. _« Il se rappelle les détails. »_ ← _se rappeler_ est **pronominal** : passif impossible.
+3. _« Cette technique offre plusieurs avantages. »_ ← il y a un COD, mais _offrir_ veut dire
+   ici « présenter » ; au passif, _être offert_ veut dire « être donné » (_Un bouquet a été
+   offert au responsable._). Le sens changerait : passif impossible.
+
+:::
+
+::: piege Erreur fréquente
+« _Ressembler à_ n'a pas de passif parce qu'il est intransitif. » ✗ _Ressembler_ a bien un
+complément (_ressembler **à** son père_) : il est **transitif indirect**. ✓ Ce qui bloque le
+passif, ici, c'est l'absence de **COD** : rien ne peut devenir sujet.
+:::
+
+::: propriete
+La transformation passive n'est pas possible quand le verbe actif est **transitif indirect**
+(_penser à, renoncer à, ressembler à, parler de_) ou **pronominal** (_se rappeler_), ni quand
+il **ne garde pas le même sens** au passif (_offrir_ = présenter, _respirer la santé_,
+_comprendre_ = comporter). Cas-limite : un verbe **intransitif** (_dormir, arriver_) n'a aucun
+complément d'objet, donc pas de passif non plus.
+:::
+
+::: verifie
+Lesquelles peuvent passer au passif : _« Le public a applaudi les acteurs. »_ et _« Son
+sourire respire la joie. »_ ?
+
+---
+
+La première seulement : _« Les acteurs ont été applaudis par le public. »_ Dans la seconde,
+_respirer_ veut dire « exprimer » ; au passif il retrouverait son sens de « inspirer de l'air » :
+le sens change, la transformation est impossible.
+:::
+
+::: retenir
+Pas de passif sans COD (verbe transitif indirect, intransitif), ni avec un verbe pronominal, ni
+quand le verbe change de sens au passif.
+:::
+
+## 🕶️ Taire l'auteur de l'action : quatre constructions
+
+Un titre de journal annonce : _« Découverte d'une nouvelle planète »_. Qui l'a découverte ? Le
+titre ne le dit pas — et ce n'est pas un oubli : ce qui compte pour le lecteur, c'est la planète.
+
+Quand l'auteur d'une action est inconnu, ou qu'on ne veut pas le nommer, de quels moyens
+dispose-t-on ?
+
+| Construction                               | Exemple                                           |
+| ------------------------------------------ | ------------------------------------------------- |
+| phrase passive **sans complément d'agent** | _Un nouvel exploit vient d'être réalisé._         |
+| **forme pronominale** du verbe             | _Ce mot s'écrit ainsi._ · _Le thé se boit chaud._ |
+| phrase active au sujet **_on_**            | _On ne bat plus les records si facilement._       |
+| **nom dérivé** du verbe (titres)           | _Démolition du vieux pont_                        |
+
+Les quatre lignes disent une action sans nommer son auteur ; seule la première est une phrase
+passive au sens strict.
+
+::: exemple développer le titre _« Démolition du vieux pont »_
+
+1. **Retrouve le verbe** du nom dérivé : _démolition_ ← _démolir_.
+2. **Fais du pont le sujet** d'une phrase passive, car c'est lui qui subit : _« Le vieux pont a
+   été démoli. »_ — sans complément d'agent, car le titre ne nomme personne.
+3. **Équivalent actif** : sans agent à promouvoir, le sujet devient _on_ ← _« On a démoli le
+   vieux pont. »_
+
+:::
+
+::: piege Erreur fréquente
+_« La route a été réparée **par on**. »_ ✗ _On_ ne désigne personne de précis : il ne peut pas
+devenir complément d'agent. ✓ La phrase passive tirée d'une phrase en _on_ n'a **pas** de complément
+d'agent : _« La route a été réparée. »_
+:::
+
+::: propriete
+Passif sans agent et phrase en _on_ se correspondent : _on_ → pas de complément d'agent, et pas
+d'agent → _on_ à l'actif. La forme passive sert ainsi à placer en tête ce qui subit l'action et
+à taire un auteur inconnu ou sans importance — d'où sa fréquence dans les articles de presse.
+Cas-limite : à la forme pronominale, le verbe s'accorde avec son sujet (_Ces tissus se
+déchirent facilement._).
+:::
+
+::: verifie
+Transforme _« On n'emploie plus cette technique. »_ de deux façons, sans nommer d'auteur.
+
+---
+
+Forme passive sans agent : _« Cette technique **n'est plus employée**. »_ Forme pronominale :
+_« Cette technique **ne s'emploie plus**. »_ Dans les deux cas, le COD _cette technique_ devient
+sujet et _on_ disparaît.
+:::
+
+::: retenir
+Pour taire l'auteur : passif sans agent, forme pronominale, _on_, ou nom dérivé — et jamais
+« par on ».
+:::
+
+> 🏆 Tu maîtrises maintenant la forme passive : la reconnaître, la construire à tous les temps,
+> choisir _par_ ou _de_, savoir quand elle est impossible — et taire l'auteur quand il le faut.

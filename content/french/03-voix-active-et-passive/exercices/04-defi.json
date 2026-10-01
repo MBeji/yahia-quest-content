@@ -1,5 +1,5 @@
 {
-  "title": "👑 Défi élite : voix active et passive",
+  "title": "👑 Défi élite : la forme passive",
   "difficulty": 4,
   "mode": "challenge",
   "xpReward": 300,
@@ -7,7 +7,7 @@
   "displayOrder": 4,
   "questions": [
     {
-      "prompt": "Transforme à la voix passive en conservant le temps : « Les archéologues auront découvert ces vestiges avant la fin du chantier. »",
+      "prompt": "Mets à la forme passive en conservant le temps : « Les archéologues auront découvert ces vestiges avant la fin du chantier. »",
       "options": [
         {
           "id": "a",
@@ -15,67 +15,72 @@
         },
         {
           "id": "b",
-          "text": "Ces vestiges ont été découverts par les archéologues avant la fin du chantier."
+          "text": "Ces vestiges ont été découverts par les archéologues avant la fin du chantier.",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
         },
         {
           "id": "c",
-          "text": "Ces vestiges avaient été découverts par les archéologues avant la fin du chantier."
+          "text": "Ces vestiges avaient été découverts par les archéologues avant la fin du chantier.",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
         },
         {
           "id": "d",
-          "text": "Ces vestiges seront découverts par les archéologues avant la fin du chantier."
+          "text": "Ces vestiges seront découverts par les archéologues avant la fin du chantier.",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
         }
       ],
       "correctOption": "a",
-      "explanation": "La phrase active est au futur antérieur (« auront découvert »). Au passif, l'auxiliaire « être » se met au futur antérieur : « auront été » + participe passé accordé avec le nouveau sujet « ces vestiges » (masculin pluriel) → « découverts ». Le passé composé (« ont été découverts »), le plus-que-parfait (« avaient été découverts ») et le futur simple (« seront découverts ») ne conservent pas le futur antérieur.",
+      "explanation": "La phrase active est au futur antérieur (« auront découvert ») : « être » se met au futur antérieur, « auront été », + participe accordé avec le nouveau sujet « ces vestiges » (masculin pluriel) → « découverts ». « ont été découverts » (passé composé), « avaient été découverts » (plus-que-parfait) et « seront découverts » (futur simple) ne gardent pas le futur antérieur.",
       "difficulty": 3
     },
     {
-      "prompt": "Transforme à la voix active en rétablissant l'agent comme sujet : « Ce roman aurait été apprécié des lecteurs avertis. »",
+      "prompt": "Mets à la forme active, l'agent devenant sujet : « Ce roman aurait été apprécié des lecteurs avertis. » Quel verbe complète « Les lecteurs avertis ___ ce roman. » ?",
       "options": [
         {
           "id": "a",
-          "text": "Des lecteurs avertis ont apprécié ce roman."
+          "text": "apprécieraient",
+          "misconceptionTag": "fr.temps.compose-mal-identifie"
         },
         {
           "id": "b",
-          "text": "Les lecteurs avertis apprécient ce roman."
+          "text": "avaient apprécié",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
         },
         {
           "id": "c",
-          "text": "Les lecteurs avertis auraient apprécié ce roman."
+          "text": "auraient apprécié"
         },
         {
           "id": "d",
-          "text": "On aurait apprécié ce roman."
+          "text": "auraient été appréciés"
         }
       ],
       "correctOption": "c",
-      "explanation": "Le complément d'agent « des lecteurs avertis » (introduit ici par « de », usage des verbes de sentiment) devient sujet à la voix active. Le temps est le conditionnel présent (« aurait été apprécié ») : à la voix active, le verbe se met donc au conditionnel présent → « auraient apprécié ». « Des lecteurs avertis ont apprécié ce roman » fausse le temps (passé composé), « Les lecteurs avertis apprécient ce roman » fausse le temps (présent), « On aurait apprécié ce roman » efface l'agent au lieu de le rétablir.",
+      "explanation": "« aurait été » est le conditionnel PASSÉ de « être » (« aurait » + « été ») : le verbe actif se met donc au conditionnel passé, accordé avec le nouveau sujet pluriel → « auraient apprécié ». « apprécieraient » est un conditionnel présent (on a lu « aurait » sans voir « été ») ; « avaient apprécié » est un plus-que-parfait ; « auraient été appréciés » garde la forme passive.",
       "difficulty": 3
     },
     {
-      "prompt": "Laquelle de ces phrases ne peut PAS être mise à la voix passive, et pourquoi ?",
+      "prompt": "Laquelle de ces phrases ne peut PAS être mise à la forme passive ?",
       "options": [
         {
           "id": "a",
-          "text": "« La foule a applaudi le discours. » — ne peut pas se mettre au passif car le sujet est indéfini."
+          "text": "Les ouvriers ont quitté le chantier très tard."
         },
         {
           "id": "b",
-          "text": "« Le directeur a renoncé à ce projet. » — ne peut pas se mettre au passif car « renoncer à » est un verbe transitif indirect (son complément est introduit par « à », pas un COD)."
+          "text": "Cette passerelle comprend cinq mille pièces."
         },
         {
           "id": "c",
-          "text": "« L'arbitre a sifflé la faute. » — ne peut pas se mettre au passif car « siffler » est un verbe intransitif."
+          "text": "Jean adore le vélo depuis son enfance."
         },
         {
           "id": "d",
-          "text": "« Les élèves avaient préparé l'exposé. » — ne peut pas se mettre au passif car le sujet est pluriel."
+          "text": "Notre équipe a rattrapé tout son retard."
         }
       ],
       "correctOption": "b",
-      "explanation": "Seuls les verbes transitifs directs (ayant un COD) peuvent se mettre à la voix passive. « Renoncer à » est un verbe transitif indirect : son complément est introduit par la préposition « à » et ne constitue pas un COD — la transformation au passif est donc impossible. « Applaudir » et « siffler » sont bien transitifs directs et se mettent au passif ; le pluriel du sujet n'empêche jamais la transformation passive.",
+      "explanation": "Ici « comprendre » signifie « comporter » ; au passif, « être compris » signifierait « être saisi par l'esprit » : le verbe ne garde pas le même sens, la transformation est impossible. Les autres passent au passif : « Le chantier a été quitté très tard par les ouvriers », « Le vélo est adoré de Jean depuis son enfance » (« de » après un verbe de sentiment), « Tout son retard a été rattrapé par notre équipe ».",
       "difficulty": 3
     },
     {
@@ -87,47 +92,49 @@
         },
         {
           "id": "b",
-          "text": "Les accusées ont été condamnées par le jury."
+          "text": "Les accusées avaient été condamnées par le jury.",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
         },
         {
           "id": "c",
-          "text": "Les accusées ont été condamné par le jury."
+          "text": "Les accusées ont été condamné par le jury.",
+          "misconceptionTag": "fr.accord.pp-etre-non-accorde"
         },
         {
           "id": "d",
-          "text": "Les accusées avaient été condamnées par le jury."
+          "text": "Les accusées ont été condamnées par le jury."
         }
       ],
-      "correctOption": "b",
-      "explanation": "Le COD « les accusées » (féminin pluriel) devient sujet du verbe passif. Le participe passé doit donc s'accorder en féminin pluriel → « condamnées ». « Les accusées ont été condamnés par le jury » accorde en masculin pluriel (« condamnés »), « Les accusées ont été condamné par le jury » laisse le participe invariable (« condamné »), « Les accusées avaient été condamnées par le jury » fausse le temps (plus-que-parfait au lieu du passé composé).",
+      "correctOption": "d",
+      "explanation": "Le COD « les accusées » (féminin pluriel) devient sujet du verbe passif : le participe s'accorde au féminin pluriel → « condamnées », et « ont été » garde le passé composé de « a condamné ». « condamnés » accorde au masculin, « condamné » oublie l'accord, « avaient été condamnées » passe au plus-que-parfait.",
       "difficulty": 3
     },
     {
-      "prompt": "La phrase « La salle est éclairée. » est-elle à la voix passive ou exprime-t-elle un état résultant ? Quelle option explique correctement la distinction ?",
+      "prompt": "Quelle phrase dit la même chose que « On sert ce plat froid. » en employant la forme pronominale ?",
       "options": [
         {
           "id": "a",
-          "text": "C'est nécessairement une voix passive, car elle contient « être » + participe passé."
+          "text": "Ce plat est servi froid."
         },
         {
           "id": "b",
-          "text": "C'est nécessairement un état résultant, car aucun complément d'agent n'est exprimé."
+          "text": "Ce plat sert froid."
         },
         {
           "id": "c",
-          "text": "Elle est ambiguë hors contexte : elle peut décrire l'état résultant d'une action passée (« la salle se trouve dans un état éclairé ») ou une voix passive réelle si un agent est sous-entendu ou exprimable (« La salle est éclairée par des spots »). Le contexte seul permet de trancher."
+          "text": "Ce plat se sert froid."
         },
         {
           "id": "d",
-          "text": "C'est une voix passive sans complément d'agent, ce qui la rend grammaticalement incorrecte."
+          "text": "Ce plat s'est servi froid."
         }
       ],
       "correctOption": "c",
-      "explanation": "La construction « être + participe passé » peut exprimer soit la voix passive (l'action est en cours ou accomplie par un agent), soit un état résultant (adjectif attribut issu d'un participe, décrivant le résultat d'une action antérieure). Sans contexte, « La salle est éclairée » est ambiguë : si l'on peut ajouter « par quelqu'un/quelque chose », c'est une voix passive ; si la phrase décrit un état figé, c'est un emploi attributif. L'absence du complément d'agent ne suffit pas à trancher, et la voix passive sans complément d'agent est parfaitement correcte — la dire « grammaticalement incorrecte » est faux.",
+      "explanation": "La forme pronominale (« se » + verbe) permet, comme « on », de taire l'auteur de l'action, au même temps : « Ce plat se sert froid » (présent). « Ce plat est servi froid » tait aussi l'auteur, mais c'est une phrase passive sans complément d'agent, pas la forme pronominale ; « Ce plat sert froid » fait du plat celui qui agit ; « s'est servi » passe au passé composé.",
       "difficulty": 3
     },
     {
-      "prompt": "Transforme à la voix passive en conservant exactement le temps : « Le tribunal prononça les peines. »",
+      "prompt": "Mets à la forme passive en conservant exactement le temps : « Le tribunal prononça les peines. »",
       "options": [
         {
           "id": "a",
@@ -135,11 +142,13 @@
         },
         {
           "id": "b",
-          "text": "Les peines ont été prononcées par le tribunal."
+          "text": "Les peines ont été prononcées par le tribunal.",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
         },
         {
           "id": "c",
-          "text": "Les peines étaient prononcées par le tribunal."
+          "text": "Les peines étaient prononcées par le tribunal.",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
         },
         {
           "id": "d",
@@ -147,7 +156,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "La phrase active est au passé simple (« prononça »). Au passif, l'auxiliaire « être » se conjugue au passé simple → « furent » + participe passé accordé avec le nouveau sujet « les peines » (féminin pluriel) → « prononcées ». « Les peines ont été prononcées par le tribunal » utilise le passé composé, « Les peines étaient prononcées par le tribunal » l'imparfait, et « Les peines furent prononcés par le tribunal » commet une faute d'accord (masculin pluriel « prononcés » au lieu de féminin pluriel « prononcées »).",
+      "explanation": "La phrase active est au passé simple (« prononça ») : « être » se met au passé simple → « furent », + participe accordé avec « les peines » (féminin pluriel) → « prononcées ». « ont été prononcées » est un passé composé, « étaient prononcées » un imparfait ; « furent prononcés » garde le temps mais accorde au masculin.",
       "difficulty": 3
     }
   ]

@@ -7,7 +7,7 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "Lis ce passage : « Le volcan entre en éruption lorsque la pression des gaz et du magma dépasse la résistance de la roche. La lave jaillit alors par le cratère et dévale les pentes. » Quel est le type dominant ?",
+      "prompt": "Lis ce passage : « Hier soir, vers 21 heures, un incendie s'est déclaré dans un entrepôt de la zone industrielle de Sfax. Selon la Protection civile, aucune victime n'est à déplorer. » Quel est le type dominant ?",
       "options": [
         {
           "id": "a",
@@ -15,7 +15,8 @@
         },
         {
           "id": "b",
-          "text": "Narratif"
+          "text": "Narratif",
+          "misconceptionTag": "fr.texte.informatif-pris-pour-narratif"
         },
         {
           "id": "c",
@@ -27,7 +28,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Le passage fait connaître un phénomène naturel (l'éruption) à l'aide d'une relation cause/effet et du présent de vérité générale : c'est un texte informatif.",
+      "explanation": "Le passage fait connaître un fait réel, daté (« hier soir, vers 21 heures »), situé (« Sfax ») et appuyé sur une source (« selon la Protection civile ») : c'est un texte informatif, comme un fait divers. Il relate un événement, mais pour informer, pas pour raconter une histoire : le piège est d'y voir un récit.",
       "difficulty": 2
     },
     {
@@ -39,7 +40,7 @@
         },
         {
           "id": "b",
-          "text": "Situation initiale + élément perturbateur"
+          "text": "Situation initiale + élément modificateur"
         },
         {
           "id": "c",
@@ -51,7 +52,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "La première phrase est la thèse (position défendue), « En effet » introduit un argument (raison), et « Par exemple » illustre par un exemple concret : c'est la structure argumentative classique.",
+      "explanation": "La première phrase est la thèse (le point de vue défendu), « En effet » introduit un argument (une raison), et « Par exemple » l'illustre par un cas concret : thèse puis argumentation. « Situation initiale + élément modificateur » relève du récit.",
       "difficulty": 2
     },
     {
@@ -59,7 +60,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Élément perturbateur"
+          "text": "Élément modificateur"
         },
         {
           "id": "b",
@@ -75,23 +76,26 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "Ce passage décrit le nouvel état d'équilibre atteint après la résolution du conflit : c'est la situation finale, dernière étape du schéma narratif.",
+      "explanation": "Ce passage installe un nouvel équilibre après la résolution du problème : le héros retrouve son village en paix. C'est la situation finale, dernière étape du schéma narratif.",
       "difficulty": 2
     },
     {
-      "prompt": "Quel connecteur logique complète le mieux cette phrase argumentative : « Ce projet est ambitieux ; _____, il est tout à fait réalisable. » ?",
+      "prompt": "Quel articulateur logique complète le mieux cette phrase : « Ce projet est ambitieux ; _____, il est tout à fait réalisable. » ?",
       "options": [
         {
           "id": "a",
-          "text": "car"
+          "text": "en effet",
+          "misconceptionTag": "fr.logique.rapport-logique-confondu"
         },
         {
           "id": "b",
-          "text": "donc"
+          "text": "c'est pourquoi",
+          "misconceptionTag": "fr.logique.rapport-logique-confondu"
         },
         {
           "id": "c",
-          "text": "ensuite"
+          "text": "d'abord",
+          "misconceptionTag": "fr.logique.rapport-logique-confondu"
         },
         {
           "id": "d",
@@ -99,55 +103,59 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "« Cependant » exprime la concession/opposition : on admet une limite (projet ambitieux) tout en la nuançant (mais réalisable). C'est le connecteur d'opposition qui convient ici.",
+      "explanation": "Les deux idées s'opposent (ambitieux, donc difficile ↔ réalisable) : il faut un articulateur d'opposition, « cependant ». « c'est pourquoi » ferait de la réalisation une conséquence de l'ambition, « en effet » une justification, et « d'abord » ouvrirait une énumération.",
       "difficulty": 3
     },
     {
-      "prompt": "Pour décrire une salle de château de façon méthodique, quelle organisation est la plus adaptée ?",
+      "prompt": "Ton personnage entre dans une salle de château. Pour que le lecteur se la représente, dans quel ordre organises-tu la description ?",
       "options": [
         {
           "id": "a",
-          "text": "Un plan chronologique (du passé au présent)"
+          "text": "Dans l'ordre où les objets te viennent",
+          "misconceptionTag": "fr.description.inventaire"
         },
         {
           "id": "b",
-          "text": "Un plan thèse/antithèse/synthèse"
+          "text": "De l'objet le plus ancien au plus récent"
         },
         {
           "id": "c",
-          "text": "Un plan spatial (par exemple : de l'entrée vers le fond, puis de gauche à droite)"
+          "text": "Du premier plan à l'arrière-plan"
         },
         {
           "id": "d",
-          "text": "Un plan cause/conséquence"
+          "text": "De l'objet le plus beau au plus laid"
         }
       ],
       "correctOption": "c",
-      "explanation": "La description d'un lieu s'organise selon un plan spatial (point de vue du regard qui se déplace) pour guider le lecteur de manière cohérente et vivante.",
+      "explanation": "Une description s'organise selon un ordre précis qui guide le regard dans l'espace : du premier plan à l'arrière-plan, du haut vers le bas, ou au fil des pas de celui qui décrit. L'ordre où les objets « viennent à l'esprit » donne un inventaire, et l'âge ou la beauté des objets ne disent pas où ils sont.",
       "difficulty": 3
     },
     {
-      "prompt": "Quelle formule de politesse convient à la clôture d'une lettre formelle adressée à un directeur ?",
+      "prompt": "Tu fais le portrait d'un vieux pêcheur généreux, qui sauvera plus tard le héros. Quel détail choisis-tu pour annoncer son caractère et son rôle ?",
       "options": [
         {
           "id": "a",
-          "text": "« Veuillez agréer, Monsieur le Directeur, l'expression de mes salutations distinguées. »"
+          "text": "Il mesurait un peu moins de deux mètres.",
+          "misconceptionTag": "fr.portrait.signalement"
         },
         {
           "id": "b",
-          "text": "« Bisous et à bientôt ! »"
+          "text": "Il portait chaque jour la même casquette bleue, délavée par le sel.",
+          "misconceptionTag": "fr.portrait.signalement"
         },
         {
           "id": "c",
-          "text": "« Cordialement, ton ami. »"
+          "text": "Il avait les cheveux gris et les yeux bruns.",
+          "misconceptionTag": "fr.portrait.signalement"
         },
         {
           "id": "d",
-          "text": "« En espérant une réponse rapide. »"
+          "text": "Il partageait toujours sa pêche avec les veuves du port."
         }
       ],
-      "correctOption": "a",
-      "explanation": "La lettre formelle exige une formule de politesse complète reprenant le titre du destinataire. « Bisous et à bientôt ! », « Cordialement, ton ami. » et « En espérant une réponse rapide. » appartiennent au registre familier ou sont incomplètes.",
+      "correctOption": "d",
+      "explanation": "Un portrait montre ce que le personnage est, dit et fait, et ses traits annoncent son caractère et son rôle. Partager sa pêche avec les veuves est un acte qui révèle la générosité et prépare le rôle de sauveur. La taille, la casquette, les cheveux et les yeux le décrivent comme un signalement : on le reconnaîtrait dans la rue, sans rien savoir de son caractère.",
       "difficulty": 2
     }
   ]

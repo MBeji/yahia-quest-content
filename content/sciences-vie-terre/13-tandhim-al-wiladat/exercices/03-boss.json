@@ -9,9 +9,17 @@
     {
       "prompt": "امرأة معدّل طول دورتها 26 يومًا وتعتمد الامتناع الدّوريّ. في أيّ يوم تقدّر إباضتها؟",
       "options": [
-        { "id": "a", "text": "اليوم 13" },
+        {
+          "id": "a",
+          "text": "اليوم 13",
+          "misconceptionTag": "bio.cycle.ovulation-au-milieu-du-cycle"
+        },
         { "id": "b", "text": "اليوم 12" },
-        { "id": "c", "text": "اليوم 14" },
+        {
+          "id": "c",
+          "text": "اليوم 14",
+          "misconceptionTag": "bio.cycle.ovulation-au-milieu-du-cycle"
+        },
         { "id": "d", "text": "اليوم 26" }
       ],
       "correctOption": "b",
@@ -40,7 +48,11 @@
           "id": "a",
           "text": "من 3 إلى 5 أيّام قبل الإباضة ويومان بعدها، وقبلها وبعدها فترتا أمان"
         },
-        { "id": "b", "text": "يوم الإباضة وحده، وبقيّة الدّورة أمان" },
+        {
+          "id": "b",
+          "text": "يوم الإباضة وحده، وبقيّة الدّورة أمان",
+          "misconceptionTag": "bio.repro.fecondite-reduite-a-l-ovulation"
+        },
         { "id": "c", "text": "كلّ الدّورة فترة خصوبة" },
         { "id": "d", "text": "أسبوعان قبل الإباضة" }
       ],
@@ -55,9 +67,17 @@
           "id": "a",
           "text": "تصل إلى 30 %، لأنّ الطّور الجريبي غير ثابت فتاريخ الإباضة تقدير لا يقين"
         },
-        { "id": "b", "text": "أقلّ من 1 %، لأنّها دقيقة" },
+        {
+          "id": "b",
+          "text": "أقلّ من 1 %، لأنّها دقيقة",
+          "misconceptionTag": "bio.cycle.date-d-ovulation-certaine"
+        },
         { "id": "c", "text": "نحو 5 %" },
-        { "id": "d", "text": "لا تخفق أبدًا" }
+        {
+          "id": "d",
+          "text": "لا تخفق أبدًا",
+          "misconceptionTag": "bio.cycle.date-d-ovulation-certaine"
+        }
       ],
       "correctOption": "a",
       "explanation": "نسبة الإخفاق تصل إلى 30 %، وسببها بنيويّ لا تقنيّ: الطّور الجريبي متغيّر، والدّورة تتغيّر عند المرأة نفسها لأسباب نفسيّة وصحّيّة ومناخيّة. فالخطأ في المعطى لا في الحساب.",
@@ -85,8 +105,12 @@
           "id": "a",
           "text": "تمنع انغراس المضغة وتغيّر إفرازات عنق الرّحم والنّحاس قاتل للحيوانات المنويّة؛ ولا تؤثّر في دورة المبيض ولا في الإباضة"
         },
-        { "id": "b", "text": "تمنع الإباضة وتوقف الدّورة" },
-        { "id": "c", "text": "تمنع قذف المني" },
+        {
+          "id": "b",
+          "text": "تمنع الإباضة وتوقف الدّورة",
+          "misconceptionTag": "bio.contra.maillon-confondu"
+        },
+        { "id": "c", "text": "تمنع قذف المني", "misconceptionTag": "bio.contra.maillon-confondu" },
         { "id": "d", "text": "ترفع الهرمونات الأنثويّة" }
       ],
       "correctOption": "a",

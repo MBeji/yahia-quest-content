@@ -9,10 +9,14 @@
     {
       "prompt": "الواقي الذّكريّ يمنع الحمل بـ:",
       "options": [
-        { "id": "a", "text": "منع الإباضة" },
+        { "id": "a", "text": "منع الإباضة", "misconceptionTag": "bio.contra.maillon-confondu" },
         { "id": "b", "text": "منع قذف المنيّ في المهبل، فهو حاجز مادّيّ" },
-        { "id": "c", "text": "منع انغراس المضغة" },
-        { "id": "d", "text": "رفع الهرمونات" }
+        {
+          "id": "c",
+          "text": "منع انغراس المضغة",
+          "misconceptionTag": "bio.contra.maillon-confondu"
+        },
+        { "id": "d", "text": "رفع الهرمونات", "misconceptionTag": "bio.contra.maillon-confondu" }
       ],
       "correctOption": "b",
       "explanation": "حاجز مادّيّ يعمل عند حلقة الإلقاح. ومن كونه حاجزًا تأتي ميزته الفريدة: الوقاية من الأمراض المنقولة جنسيًّا، وهو ما لا تفعله وسيلة هرمونيّة ولا رحميّة.",
@@ -25,9 +29,17 @@
           "id": "a",
           "text": "يمنع انتقال البويضات والحيوانات المنويّة إلى موقع الإخصاب"
         },
-        { "id": "b", "text": "يوقف الدّورة الجنسيّة" },
-        { "id": "c", "text": "يمنع الإباضة" },
-        { "id": "d", "text": "يمنع الحيض" }
+        {
+          "id": "b",
+          "text": "يوقف الدّورة الجنسيّة",
+          "misconceptionTag": "bio.contra.ligature-prise-pour-ablation"
+        },
+        { "id": "c", "text": "يمنع الإباضة", "misconceptionTag": "bio.contra.maillon-confondu" },
+        {
+          "id": "d",
+          "text": "يمنع الحيض",
+          "misconceptionTag": "bio.contra.ligature-prise-pour-ablation"
+        }
       ],
       "correctOption": "a",
       "explanation": "يقطع الطّريق إلى موضع الإلقاح فحسب. ولا يؤثّر على الدّورة الجنسيّة ولا على النّشاط الجنسيّ ولا على الجسم عمومًا، لأنّ ما قُطع مسلك لا غدّة.",
@@ -65,7 +77,11 @@
           "id": "b",
           "text": "أنّه قد يسبّب حساسيّة تجاه المطّاط أو يحدّ من الإحساس الجنسيّ، وقد ينزلق أو يتقطّع"
         },
-        { "id": "c", "text": "أنّه يمنع الإباضة" },
+        {
+          "id": "c",
+          "text": "أنّه يمنع الإباضة",
+          "misconceptionTag": "bio.contra.maillon-confondu"
+        },
         { "id": "d", "text": "أنّه يستوجب عيادة الطّبيب" }
       ],
       "correctOption": "b",

@@ -7,51 +7,52 @@
   "displayOrder": 1,
   "questions": [
     {
-      "prompt": "Quel mode exprime un fait soumis à une condition ou une hypothèse ?",
+      "prompt": "« Je partirai dès l'aube. » Quelle valeur a ici le futur simple ?",
       "options": [
         {
           "id": "a",
-          "text": "Le conditionnel"
+          "text": "Un ordre"
         },
         {
           "id": "b",
-          "text": "L'impératif"
+          "text": "Une action à venir"
         },
         {
           "id": "c",
-          "text": "Le subjonctif"
+          "text": "Une affirmation atténuée"
         },
         {
           "id": "d",
-          "text": "L'indicatif"
+          "text": "Une action achevée"
         }
       ],
-      "correctOption": "a",
-      "explanation": "Le conditionnel exprime un fait soumis à une condition (hypothèse), la politesse ou une information non confirmée. L'impératif donne des ordres ; le subjonctif exprime le souhaité ou le douteux ; l'indicatif énonce un fait réel ou certain.",
+      "correctOption": "b",
+      "explanation": "Le futur exprime ici une action non encore réalisée, située dans l'avenir : le départ aura lieu à l'aube. Ce n'est pas un ordre (je parle de moi-même), ni une atténuation (rien n'est adouci) ; l'action achevée serait exprimée par le futur antérieur « je serai parti ».",
       "difficulty": 1
     },
     {
-      "prompt": "Dans la phrase « Il lisait quand le tonnerre éclata. », les deux temps utilisés sont :",
+      "prompt": "Dans « Il lisait quand le tonnerre éclata », quels sont les temps des deux verbes ?",
       "options": [
         {
           "id": "a",
-          "text": "L'imparfait (lisait) et le passé simple (éclata)"
+          "text": "Le passé simple (lisait) et l'imparfait (éclata)",
+          "misconceptionTag": "fr.temps.passe-simple-imparfait"
         },
         {
           "id": "b",
-          "text": "Le passé composé (lisait) et l'imparfait (éclata)"
+          "text": "L'imparfait (lisait) et le plus-que-parfait (éclata)"
         },
         {
           "id": "c",
-          "text": "Le passé simple (lisait) et le passé simple (éclata)"
+          "text": "L'imparfait (lisait) et le passé simple (éclata)"
         },
         {
           "id": "d",
-          "text": "Le présent (lisait) et le futur (éclata)"
+          "text": "Le passé composé (lisait) et le passé simple (éclata)"
         }
       ],
-      "correctOption": "a",
-      "explanation": "« Lisait » est à l'imparfait (action de fond, en cours) et « éclata » est au passé simple (action soudaine et ponctuelle). Ce couple imparfait/passé simple est la structure narrative fondamentale du récit littéraire.",
+      "correctOption": "c",
+      "explanation": "« Lisait » est à l'imparfait : l'action dure, c'est l'arrière-plan. « Éclata » est au passé simple : l'action est ponctuelle et fait avancer le récit, c'est le premier plan. Inverser les deux étiquettes est l'erreur tentante ; le plus-que-parfait et le passé composé sont des temps composés, avec auxiliaire.",
       "difficulty": 2
     },
     {
@@ -59,55 +60,59 @@
       "options": [
         {
           "id": "a",
-          "text": "Il faut que tu finisses cet exercice."
+          "text": "Je sais que tu finiras ce travail."
         },
         {
           "id": "b",
-          "text": "Tu finiras cet exercice."
+          "text": "Je crois que tu finis ce travail."
         },
         {
           "id": "c",
-          "text": "Tu finissais cet exercice."
+          "text": "Je vois que tu finissais ce travail."
         },
         {
           "id": "d",
-          "text": "Tu as fini cet exercice."
-        }
-      ],
-      "correctOption": "a",
-      "explanation": "Après « il faut que », le verbe est obligatoirement au subjonctif : « finisses » est bien le subjonctif présent de « finir » (2e personne du singulier). « Tu finiras cet exercice » (futur), « tu finissais » (imparfait) et « tu as fini » (passé composé) sont à l'indicatif.",
-      "difficulty": 2
-    },
-    {
-      "prompt": "Quel est le temps composé correspondant à l'imparfait ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Le passé composé"
-        },
-        {
-          "id": "b",
-          "text": "Le futur antérieur"
-        },
-        {
-          "id": "c",
-          "text": "Le passé antérieur"
-        },
-        {
-          "id": "d",
-          "text": "Le plus-que-parfait"
+          "text": "Il faut que tu finisses ce travail."
         }
       ],
       "correctOption": "d",
-      "explanation": "Le plus-que-parfait (ex. : « avait chanté ») est le temps composé qui correspond à l'imparfait (même série temporelle passée). Il exprime une action antérieure et accomplie par rapport à une action à l'imparfait ou au passé simple.",
+      "explanation": "« Il faut que » exprime une volonté et déclenche le subjonctif : « que tu finisses ». Après « je sais » et « je crois » (opinion affirmative) ou « je vois », le fait est présenté comme réel : indicatif futur (« finiras »), présent (« finis ») ou imparfait (« finissais »).",
       "difficulty": 2
     },
     {
-      "prompt": "Quelle forme verbale est correcte dans : « Si tu ___ davantage, tu réussirais. » ?",
+      "prompt": "Quel est le temps composé qui correspond à l'imparfait ?",
       "options": [
         {
           "id": "a",
-          "text": "travaillerais"
+          "text": "Le plus-que-parfait"
+        },
+        {
+          "id": "b",
+          "text": "Le passé composé",
+          "misconceptionTag": "fr.temps.compose-mal-identifie"
+        },
+        {
+          "id": "c",
+          "text": "Le futur antérieur",
+          "misconceptionTag": "fr.temps.compose-mal-identifie"
+        },
+        {
+          "id": "d",
+          "text": "Le conditionnel passé",
+          "misconceptionTag": "fr.temps.compose-mal-identifie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le plus-que-parfait se forme avec l'auxiliaire à l'imparfait : « il chantait » → « il avait chanté ». Le passé composé correspond au présent (« il a chanté »), le futur antérieur au futur (« il aura chanté »), le conditionnel passé au conditionnel présent (« il aurait chanté »).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle forme verbale complète « Si tu ___ davantage, tu réussirais. » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "travaillerais",
+          "misconceptionTag": "fr.si.conditionnel-apres-si"
         },
         {
           "id": "b",
@@ -115,19 +120,21 @@
         },
         {
           "id": "c",
-          "text": "travailleras"
+          "text": "travailleras",
+          "misconceptionTag": "fr.si.conditionnel-apres-si"
         },
         {
           "id": "d",
-          "text": "travailles"
+          "text": "travailles",
+          "misconceptionTag": "fr.si.systeme-mal-apparie"
         }
       ],
       "correctOption": "b",
-      "explanation": "Après « si » dans une hypothèse, on emploie l'imparfait (jamais le conditionnel) : « si tu travaillais → tu réussirais ». La structure est : si + imparfait → conditionnel présent ; la réponse est donc « travaillais ». « travaillerais » (conditionnel), le futur et le présent sont interdits après « si » dans ce contexte.",
+      "explanation": "Avec un conditionnel présent dans la principale (« réussirais »), la subordonnée en « si » est à l'imparfait : si tu travaillais → tu réussirais. « Travaillerais » est le piège : on ne met jamais le conditionnel juste après « si ». Le futur est impossible après « si », et le présent irait avec un futur (« tu réussiras »).",
       "difficulty": 2
     },
     {
-      "prompt": "Quel emploi de l'impératif est illustré dans : « Prends soin de toi. » ?",
+      "prompt": "Quel emploi de l'impératif est illustré dans « Prends soin de toi. » ?",
       "options": [
         {
           "id": "a",
@@ -147,7 +154,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Le ton de « Prends soin de toi » est bienveillant : c'est un conseil, pas un ordre autoritaire. L'impératif peut exprimer un ordre, un conseil ou une prière. Les autres valeurs proposées relèvent d'autres modes : le fait réel de l'indicatif, l'hypothèse du conditionnel et le doute du subjonctif.",
+      "explanation": "L'impératif exprime un ordre, un conseil ou une prière ; ici, le ton bienveillant en fait un conseil. Le fait réel relève de l'indicatif, l'hypothèse du conditionnel et le doute du subjonctif : ce ne sont pas des valeurs de l'impératif.",
       "difficulty": 1
     }
   ]

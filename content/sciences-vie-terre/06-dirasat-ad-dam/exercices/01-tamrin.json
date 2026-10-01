@@ -36,7 +36,11 @@
     {
       "prompt": "دم غير متخثّر تُرك يومين في ثلاجة يترسّب في ثلاث طبقات. ما نسبة البلازما ونسبة الكريات الحمراء؟",
       "options": [
-        { "id": "a", "text": "بلازما 45 % وكريات حمراء 55 %" },
+        {
+          "id": "a",
+          "text": "بلازما 45 % وكريات حمراء 55 %",
+          "misconceptionTag": "bio.lecture.valeur-d-une-autre-grandeur"
+        },
         { "id": "b", "text": "بلازما 55 % وكريات حمراء 45 %" },
         { "id": "c", "text": "بلازما 90 % وكريات حمراء 10 %" },
         { "id": "d", "text": "متساويتان: 50 % و50 %" }
@@ -61,8 +65,16 @@
       "prompt": "ما دور الهيموغلوبين؟",
       "options": [
         { "id": "a", "text": "نقل الغازات التنفّسيّة" },
-        { "id": "b", "text": "تخثّر الدّم" },
-        { "id": "c", "text": "صنع الأجسام المضادّة" },
+        {
+          "id": "b",
+          "text": "تخثّر الدّم",
+          "misconceptionTag": "bio.sang.fonctions-des-cellules-confondues"
+        },
+        {
+          "id": "c",
+          "text": "صنع الأجسام المضادّة",
+          "misconceptionTag": "bio.sang.fonctions-des-cellules-confondues"
+        },
         { "id": "d", "text": "هضم الدّهنيّات" }
       ],
       "correctOption": "a",
@@ -72,10 +84,22 @@
     {
       "prompt": "ما العنصر الدّمويّ الوحيد الذي له نواة؟",
       "options": [
-        { "id": "a", "text": "الكريّة الحمراء" },
-        { "id": "b", "text": "الصّفيحة الدّمويّة" },
+        {
+          "id": "a",
+          "text": "الكريّة الحمراء",
+          "misconceptionTag": "bio.sang.noyau-mal-attribue"
+        },
+        {
+          "id": "b",
+          "text": "الصّفيحة الدّمويّة",
+          "misconceptionTag": "bio.sang.noyau-mal-attribue"
+        },
         { "id": "c", "text": "الكريّة البيضاء" },
-        { "id": "d", "text": "كلّها لها نوى" }
+        {
+          "id": "d",
+          "text": "كلّها لها نوى",
+          "misconceptionTag": "bio.sang.noyau-mal-attribue"
+        }
       ],
       "correctOption": "c",
       "explanation": "الكريّة البيضاء وحدها. ولهذا تظهر وحدها زرقاء في السّحبة الملوّنة بأزرق الميتيلان، لأنّ الملوّن يصبغ النّواة — فتصير النّواة علامة تمييز عمليّة تحت المجهر.",

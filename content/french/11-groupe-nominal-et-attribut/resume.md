@@ -1,0 +1,10 @@
+# 📜 Résumé : Le groupe nominal et l'attribut du sujet
+
+- **GN étendu** : nom + **expansions** qui précisent son sens, en général supprimables. Quatre sortes : épithète, complément du nom, apposition, relative (_la vieille maison en pierre que mon grand-père a bâtie_). Le déterminant n'est pas une expansion.
+- **Épithète** : adjectif collé au nom, sans verbe, avant ou après (_un vélo **très léger**_ = groupe adjectival) ; il s'accorde avec le nom. Séparé par un verbe d'état, l'adjectif est attribut (_Ce vélo est léger._).
+- **Complément du nom** : préposition + nom, GN, pronom ou infinitif, après un **nom** (_une table **en bois**_, _une machine **à coudre**_) ; _de Sousse_ dans _revient de Sousse_ complète un verbe, pas un nom.
+- **Apposition** : adjectif ou GN **détaché par des virgules**, souvent mobile (_**Concentré**, le gardien fixe le tireur._) ; le GN apposé désigne la même réalité que le nom (_Tunis, **la capitale**_).
+- **Relative** : expansion introduite par un pronom relatif (_qui, que, dont, où_, préposition + _qui_) qui reprend un **antécédent** ; elle peut céder la place à une épithète (_un garçon qui parle beaucoup_ → _un garçon bavard_). Sans nom avant _que_, ce n'est pas une relative.
+- **Verbe d'état** : relie le sujet à son attribut — _être_ (qualité), _devenir_ (entrée dans un état), _rester, demeurer_ (maintien), _paraître, sembler, passer pour, avoir l'air_ (attribution nuancée), _être considéré comme, s'annoncer, se révéler_. Faux verbes d'état : _Ce journal paraît le lundi_, _Elle demeure à Sfax_, _Il passe chez moi_.
+- **Attribut du sujet** : qualité du sujet, relié par un verbe d'état ; classes : adjectif ou groupe adjectival, GN, pronom (possessif _le mien_ ; _le_ invariable ; _en_ avec _avoir l'air_), infinitif ou groupe infinitif. À ne pas confondre avec le COD (_Il voit un médecin_).
+- **Accord de l'attribut** : l'adjectif s'accorde avec le **noyau du sujet** (_La voix des supporters devient enrouée._) ; masculin + féminin → masculin pluriel ; un GN attribut garde son genre.

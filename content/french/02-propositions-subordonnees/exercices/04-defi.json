@@ -7,35 +7,37 @@
   "displayOrder": 4,
   "questions": [
     {
-      "prompt": "Dans « Je me souviens des leçons que le maître nous a enseignées », quelle est la nature de la proposition soulignée « que le maître nous a enseignées » et quelle est la fonction de « que » dans cette proposition ?",
+      "prompt": "Dans « Je me souviens des leçons que le maître nous a enseignées », quelle est la nature de « que le maître nous a enseignées » et la fonction de « que » ?",
       "options": [
         {
           "id": "a",
-          "text": "Subordonnée complétive – « que » est conjonction de subordination, sans fonction propre"
+          "text": "Complétive – « que » est une conjonction, sans fonction propre",
+          "misconceptionTag": "fr.subord.completive-relative-confondues"
         },
         {
           "id": "b",
-          "text": "Subordonnée relative – « que » est pronom relatif, COD du verbe « a enseignées »"
+          "text": "Relative – « que » est pronom relatif, COD de « a enseignées »"
         },
         {
           "id": "c",
-          "text": "Subordonnée relative – « que » est pronom relatif, sujet du verbe « a enseignées »"
+          "text": "Relative – « que » est pronom relatif, sujet de « a enseignées »",
+          "misconceptionTag": "fr.relative.qui-que-confondus"
         },
         {
           "id": "d",
-          "text": "Subordonnée complétive – « que » est pronom relatif, COD du verbe « a enseignées »"
+          "text": "Complétive – « que » est pronom relatif, COD de « a enseignées »"
         }
       ],
       "correctOption": "b",
-      "explanation": "La proposition qualifie l'antécédent « les leçons » : c'est une subordonnée relative. Dans cette relative, « que » est pronom relatif et remplace « les leçons », qui est l'objet de « a enseignées » (COD). La preuve : le participe passé s'accorde au féminin pluriel avec cet antécédent, ce qui est propre à la relative avec « avoir », jamais à la complétive.",
+      "explanation": "La proposition complète le nom « leçons » (antécédent) : c'est une relative. « que » y reprend « les leçons », que le maître a enseignées : COD. Le sujet de « a enseignées » est « le maître ». Preuve : le participe s'accorde avec ce COD placé avant (« enseignées »).",
       "difficulty": 3
     },
     {
-      "prompt": "Dans « Le roman dont les personnages me fascinent est un chef-d'œuvre », quelle est la fonction de « dont » à l'intérieur de la proposition subordonnée relative ?",
+      "prompt": "Dans « Le roman dont les personnages me fascinent est un chef-d'œuvre », quelle est la fonction de « dont » ?",
       "options": [
         {
           "id": "a",
-          "text": "Complément d'objet direct du verbe « fascinent »"
+          "text": "Complément d'objet direct de « fascinent »"
         },
         {
           "id": "b",
@@ -47,107 +49,109 @@
         },
         {
           "id": "d",
-          "text": "Complément d'objet indirect du verbe « fascinent »"
+          "text": "Complément d'objet indirect de « fascinent »",
+          "misconceptionTag": "fr.gn.complement-nom-ou-verbe"
         }
       ],
       "correctOption": "c",
-      "explanation": "Dans cette relative, « dont » équivaut à « de ce roman » et se rattache au nom « personnages » : « les personnages de ce roman ». Il occupe donc la fonction de complément du nom (déterminatif), et non de complément du verbe. C'est une construction fréquente avec « dont » qui piège les candidats.",
+      "explanation": "« dont » vaut « de ce roman » et se rattache au nom : « les personnages de ce roman ». Il est complément du nom « personnages ». Le sujet de « fascinent » est « les personnages », et « fascinent » n'a pas de complément en « de » : ce n'est pas un COI.",
       "difficulty": 3
     },
     {
-      "prompt": "Choisissez la forme verbale grammaticalement correcte : « Après qu'il ___ la forteresse, l'armée célébra sa victoire. »",
+      "prompt": "Choisis la forme correcte : « Le petit dindon s'est mis à chanter après que tout le monde ___. »",
       "options": [
         {
           "id": "a",
-          "text": "ait pris"
+          "text": "s'endorme"
         },
         {
           "id": "b",
-          "text": "eût pris"
+          "text": "se serait endormi"
         },
         {
           "id": "c",
-          "text": "eut pris"
+          "text": "s'endort"
         },
         {
           "id": "d",
-          "text": "prenne"
+          "text": "s'était endormi"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "« après que » marque la postériorité et veut l'indicatif. L'endormissement est achevé avant le chant, qui est passé : on emploie le plus-que-parfait, « s'était endormi ». Le subjonctif « s'endorme » est l'erreur de symétrie avec « avant que » ; « s'endort » et « se serait endormi » ne marquent pas une action réellement achevée dans le passé.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans « Le général croit que l'armée qui le suit vaincra l'ennemi », combien de propositions compte-t-on, et quelle est la principale ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trois ; principale : « Le général croit »"
+        },
+        {
+          "id": "b",
+          "text": "Deux ; principale : « Le général croit »"
+        },
+        {
+          "id": "c",
+          "text": "Trois ; principale : « l'armée vaincra l'ennemi »"
+        },
+        {
+          "id": "d",
+          "text": "Deux ; principale : « l'armée vaincra l'ennemi »"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Trois verbes conjugués, trois propositions : « Le général croit » (principale), « que l'armée… vaincra l'ennemi » (complétive, COD de « croit ») et « qui le suit » (relative enchâssée, qui complète « l'armée »). Seule « Le général croit » reste autonome quand on supprime les subordonnées.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans « Les épreuves que ces élèves ont surmontées les ont rendus plus forts », pourquoi « surmontées » est-il au féminin pluriel ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il s'accorde avec « élèves », le sujet du verbe de la relative",
+          "misconceptionTag": "fr.accord.pp-avoir-avec-sujet"
+        },
+        {
+          "id": "b",
+          "text": "Il s'accorde avec « que », COD placé avant, qui reprend « épreuves »"
+        },
+        {
+          "id": "c",
+          "text": "Il s'accorde avec « les épreuves », sujet du verbe de la principale"
+        },
+        {
+          "id": "d",
+          "text": "Il s'accorde toujours avec le nom placé juste avant l'auxiliaire avoir"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec « avoir », le participe s'accorde avec le COD placé avant le verbe. Ce COD est « que », qui reprend « les épreuves » (féminin pluriel). Le sujet « ces élèves » n'entre jamais dans l'accord avec « avoir » ; et ce n'est pas comme sujet de la principale que « les épreuves » commande, mais comme antécédent de « que ».",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans « Il n'est pas venu, sous prétexte qu'il était malade », que fait comprendre celui qui parle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Qu'il apprend cette cause à son interlocuteur"
+        },
+        {
+          "id": "b",
+          "text": "Que cette cause est connue de tout le monde"
+        },
+        {
+          "id": "c",
+          "text": "Qu'il doute de la cause qu'il rapporte"
+        },
+        {
+          "id": "d",
+          "text": "Que la maladie est une conséquence de l'absence"
         }
       ],
       "correctOption": "c",
-      "explanation": "« Après que » exprime la postériorité et se construit avec l'indicatif (jamais le subjonctif). Comme la principale est au passé simple, la subordonnée exprime une action antérieure : on emploie le passé antérieur de l'indicatif : « eut pris ». Le subjonctif passé (« ait pris ») ou plus-que-parfait du subjonctif (« eût pris ») sont fautifs après « après que ».",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Dans la phrase complexe « Le général croit que l'armée qui le suit vaincra l'ennemi », combien de propositions compte-t-on et laquelle est la proposition principale ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Deux propositions ; principale : « le général croit »"
-        },
-        {
-          "id": "b",
-          "text": "Trois propositions ; principale : « Le général croit »"
-        },
-        {
-          "id": "c",
-          "text": "Trois propositions ; principale : « que l'armée qui le suit vaincra l'ennemi »"
-        },
-        {
-          "id": "d",
-          "text": "Deux propositions ; principale : « l'armée vaincra l'ennemi »"
-        }
-      ],
-      "correctOption": "b",
-      "explanation": "La phrase contient trois propositions : (1) « Le général croit » — principale ; (2) « que l'armée… vaincra l'ennemi » — subordonnée complétive, COD de « croit » ; (3) « qui le suit » — subordonnée relative enchâssée dans la complétive, qualifiant « l'armée ». La principale est bien « Le général croit » : c'est la seule qui soit autonome.",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Dans « Les épreuves que ces élèves ont surmontées les ont rendus plus forts », le participe passé « surmontées » est au féminin pluriel. Pourquoi ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Parce qu'il s'accorde avec « élèves », sujet du verbe de la relative"
-        },
-        {
-          "id": "b",
-          "text": "Parce qu'il s'accorde avec « que », pronom relatif qui représente « les épreuves » (féminin pluriel), antécédent placé avant l'auxiliaire « avoir »"
-        },
-        {
-          "id": "c",
-          "text": "Parce que le participe passé s'accorde toujours avec le sujet de la proposition principale"
-        },
-        {
-          "id": "d",
-          "text": "Parce qu'il s'accorde avec « elles » (les épreuves), sujet sous-entendu de la principale"
-        }
-      ],
-      "correctOption": "b",
-      "explanation": "Avec l'auxiliaire « avoir », le participe passé s'accorde avec le COD lorsque celui-ci est placé avant le verbe. Ici, « que » est le pronom relatif COD de « ont surmontées » ; il représente son antécédent « les épreuves » (féminin pluriel). Le participe prend donc la marque du féminin pluriel : « surmontées ».",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Laquelle de ces quatre phrases emploie correctement et avec la nuance la plus précise la conjonction de subordination causale en contexte d'examen ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "« Puisqu'il n'avait pas révisé, il échoua à l'examen. » (la cause est ignorée de l'interlocuteur)"
-        },
-        {
-          "id": "b",
-          "text": "« Comme il avait bien révisé, il obtint une excellente note. » (la cause est placée en tête de phrase et présentée comme un fait connu ou évident)"
-        },
-        {
-          "id": "c",
-          "text": "« Parce que tu es intelligent, tu réussiras sûrement. » (la cause est inconnue de l'interlocuteur et présentée pour la première fois)"
-        },
-        {
-          "id": "d",
-          "text": "« Puisqu'il pleuvait, personne ne savait encore pourquoi il était rentré. » (la cause est présentée comme nouvelle et surprenante)"
-        }
-      ],
-      "correctOption": "b",
-      "explanation": "« Comme » causal se place obligatoirement en tête de phrase et introduit une cause présentée comme un fait établi ou évident : c'est son emploi correct et précis. — « Puisque » s'emploie pour une cause déjà connue des deux interlocuteurs : la phrase « Puisqu'il n'avait pas révisé, il échoua à l'examen. » (la… l'utilise à tort pour une cause ignorée. — La phrase confond « parce que » (cause directe et nouvelle) avec le compliment implicite : l'usage n'est pas fautif mais la description « inconnue » est inexacte ici. — La phrase est incorrecte : « puisque » ne peut pas introduire une cause « nouvelle et surprenante ».",
+      "explanation": "« sous prétexte que » présente une cause jugée fausse : le locuteur rapporte l'excuse sans y croire. Pour une cause nouvelle pour l'interlocuteur, on emploierait « parce que » ; pour une cause connue, « puisque » ou « comme ». La maladie reste bien la cause annoncée, pas une conséquence.",
       "difficulty": 3
     }
   ]

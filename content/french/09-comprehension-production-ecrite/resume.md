@@ -1,20 +1,16 @@
 # Résumé — Compréhension de texte & production écrite
 
-## Lire (comprendre)
+## Répondre à une question de compréhension (démarche en cinq étapes)
 
-- **Idée directrice / thèse** : l'idée centrale que défend le texte ; souvent en tête ou en fin. À distinguer d'un simple détail ou exemple.
-- **Type de texte** : narratif (raconte), descriptif (peint), informatif (donne des faits), argumentatif (défend une opinion).
-- **Connecteurs logiques** : révèlent le lien entre les idées — addition (de plus), cause (car), conséquence (donc), opposition (mais, pourtant, malgré), but (afin de).
-- **Ton / sentiment** : attitude de l'auteur (joie, ironie, résignation…), repérée via le champ lexical, les répétitions et la ponctuation.
-- **Inférence** : déduire une information non écrite à partir d'indices du texte, sans inventer.
-- **Lexique en contexte** : deviner le sens d'un mot grâce à la phrase qui l'entoure (synonyme, contraire, exemple).
+- **1. Analyser la question** : repérer les mots-clés et la tâche exacte — un verbe de consigne (_relevez, expliquez, justifiez_) = une tâche.
+- **2. Relire le texte** : souligner les éléments de réponse et les **indices** ; une déduction doit reposer sur un indice qu'on peut citer, sinon c'est un avis.
+- **3–4. Organiser puis rédiger** : classer les éléments (combien, de quelle nature), écrire des phrases simples qui reprennent la question, avec de courtes citations entre guillemets intégrées à la phrase.
+- **5. Relire avec la grille** : réponse correcte et complète, justifications adéquates, indices bien intégrés, réponse correctement formulée.
+- **Sens d'un mot** : le contexte choisit le sens (synonyme, contraire, exemple voisins) ; on remet le sens trouvé dans la phrase pour vérifier.
 
-## Écrire (produire)
+## Lire et écrire un texte argumentatif
 
-- **Plan** : introduction (amorce + thèse) → développement (un argument + exemple par paragraphe) → conclusion.
-- **Phrase de thèse** : précise, affirmée, orientée vers ce qu'on va prouver.
-- **Phrase d'amorce** : première phrase qui introduit le sujet sans le traiter ; liée au sujet (constat, question, fait frappant).
-- **Paragraphe argumentatif** : annoncer l'argument → expliquer → illustrer par un exemple → conclure / faire la transition.
-- **Bon connecteur** : doit correspondre au lien réel entre les idées ; un mauvais choix rend le texte incohérent.
-- **Argument vs contre-argument** : l'argument soutient la thèse ; le contre-argument est l'objection, qu'on reconnaît (« certes ») puis réfute (« mais »).
-- **Cohérence** : relire pour vérifier l'enchaînement logique, la justesse des connecteurs et l'absence de hors-sujet ou de contradiction.
+- **Type de texte (rappel du chapitre 8)** : narratif, descriptif, informatif (article de presse, fait divers, lettre), argumentatif — on nomme le type dominant et on le prouve par des indices cités ; le but de l'ensemble décide.
+- **Thèse (rappel du chapitre 8)** : le point de vue défendu dans tout le texte (_pour moi, je pense que_), justifié par des arguments et des exemples ; elle peut suivre l'opinion que l'auteur combat (_pourtant_).
+- **Articulateurs logiques (rappel du chapitre 8)** : ils nomment le rapport — cause (_car, en effet_), conséquence (_donc, si bien que_), addition (_de plus, par ailleurs_), classement (_d'abord, ensuite, enfin_), opposition (_mais, pourtant_), exemple (_par exemple_) ; en compréhension, on nomme ce rapport.
+- **Justification élaborée** : thèse claire + arguments variés, chacun expliqué et illustré, reliés par des articulateurs ; relire avec la grille (thèse, arguments variés, cohérence, présentation, langue).

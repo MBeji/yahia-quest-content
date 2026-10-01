@@ -7,59 +7,64 @@
   "displayOrder": 5,
   "questions": [
     {
-      "prompt": "Lisez ce texte :\n\n« Karim avait toujours détesté la mer. Pourtant, ce matin-là, debout sur la plage, il sentit son cœur s'apaiser au rythme des vagues. Pour la première fois, l'eau ne lui faisait plus peur. »\n\nQuelle est l'idée essentielle du texte ?",
+      "prompt": "Lisez ce texte :\n\n« Karim avait toujours détesté la mer. Pourtant, ce matin-là, debout sur la plage, il sentit son cœur s'apaiser au rythme des vagues. Pour la première fois, l'eau ne lui faisait plus peur. »\n\nQu'est-ce qui change chez Karim dans ce passage ?",
       "options": [
         {
           "id": "a",
-          "text": "Karim a toujours adoré la mer."
+          "text": "Lui qui craignait la mer, il commence à l'apprécier."
         },
         {
           "id": "b",
-          "text": "Karim, qui craignait la mer, commence à l'apprécier."
+          "text": "Il a toujours adoré la mer et ne la quitte jamais.",
+          "misconceptionTag": "fr.lecture.contraire-du-texte"
         },
         {
           "id": "c",
-          "text": "Karim se noie dans les vagues."
+          "text": "Il tombe à l'eau et se noie presque dans les vagues.",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
         },
         {
           "id": "d",
-          "text": "Karim part en voyage très loin."
+          "text": "Il décide de partir en voyage très loin de la plage.",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
         }
       ],
-      "correctOption": "b",
-      "explanation": "Le « Pourtant » oppose son ancienne aversion (« avait toujours détesté ») à son apaisement présent (« ne lui faisait plus peur ») : Karim, qui craignait la mer, commence à l'apprécier. « Karim a toujours adoré la mer » contredit « détesté », et « Karim se noie dans les vagues » comme « Karim part en voyage très loin » ajoutent des faits absents du texte.",
+      "correctOption": "a",
+      "explanation": "« Pourtant » oppose son ancienne aversion (« avait toujours détesté ») à son apaisement (« ne lui faisait plus peur ») : il commence à apprécier la mer. « Toujours adoré » contredit « détesté » ; la noyade et le voyage sont des faits absents du texte.",
       "difficulty": 2
     },
     {
-      "prompt": "Lisez ce texte :\n\n« Les abeilles ne sont pas de simples insectes. En butinant les fleurs, elles transportent le pollen et permettent ainsi aux plantes de se reproduire. Sans elles, de nombreuses cultures disparaîtraient. »\n\nÀ quel type de texte appartient ce passage ?",
+      "prompt": "Lisez ce texte :\n\n« Dimanche soir, un camion chargé de pastèques s'est renversé à l'entrée de Kairouan. Le chauffeur est sorti indemne ; la circulation a été rétablie deux heures plus tard. »\n\nÀ quel type de texte appartient ce passage ?",
       "options": [
         {
           "id": "a",
-          "text": "Texte narratif"
+          "text": "Informatif : un fait divers"
         },
         {
           "id": "b",
-          "text": "Texte informatif"
+          "text": "Narratif : un conte",
+          "misconceptionTag": "fr.texte.informatif-pris-pour-narratif"
         },
         {
           "id": "c",
-          "text": "Texte injonctif"
+          "text": "Descriptif : un portrait"
         },
         {
           "id": "d",
-          "text": "Texte poétique"
+          "text": "Argumentatif : un débat d'idées"
         }
       ],
-      "correctOption": "b",
-      "explanation": "Le passage explique objectivement le rôle des abeilles (pollinisation, reproduction des plantes) pour informer le lecteur : c'est un texte informatif. Il ne raconte pas d'histoire « Texte narratif », ne donne pas d'ordres « Texte injonctif » et n'a pas de visée poétique.",
+      "correctOption": "a",
+      "explanation": "Le passage informe sur un fait réel, daté (« dimanche soir »), situé (« à l'entrée de Kairouan ») et accompagné d'un bilan : c'est un texte informatif, du genre fait divers. Il relate des événements, mais ils sont réels, ce n'est pas un conte ; il ne peint pas une personne et ne défend aucun point de vue.",
       "difficulty": 2
     },
     {
-      "prompt": "Lisez cette phrase tirée d'un texte :\n\n« Malgré ses nombreux échecs, elle refusait d'abandonner. »\n\nQue suggère le connecteur « Malgré » sur le caractère du personnage ?",
+      "prompt": "Lisez cette phrase tirée d'un texte :\n\n« Malgré ses nombreux échecs, elle refusait d'abandonner. »\n\nQue suggère le mot « Malgré » sur le caractère du personnage ?",
       "options": [
         {
           "id": "a",
-          "text": "Le personnage est paresseux et renonce vite."
+          "text": "Le personnage est paresseux et renonce très vite.",
+          "misconceptionTag": "fr.lecture.contraire-du-texte"
         },
         {
           "id": "b",
@@ -67,15 +72,17 @@
         },
         {
           "id": "c",
-          "text": "Le personnage n'a jamais connu d'échec."
+          "text": "Le personnage n'a jamais connu d'échec.",
+          "misconceptionTag": "fr.lecture.contraire-du-texte"
         },
         {
           "id": "d",
-          "text": "Le personnage est indifférent à tout."
+          "text": "Le personnage est indifférent à tout.",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
         }
       ],
       "correctOption": "b",
-      "explanation": "« Malgré ses nombreux échecs » introduit un obstacle qui n'empêche pas l'action « elle refusait d'abandonner » : on infère un personnage persévérant. « Le personnage est paresseux et renonce vite » est contredite par « refusait d'abandonner », « Le personnage n'a jamais connu d'échec » par « nombreux échecs », « Le personnage est indifférent à tout » ne correspond à aucun indice.",
+      "explanation": "« Malgré ses nombreux échecs » pose un obstacle qui n'empêche pas l'action (« elle refusait d'abandonner ») : on en déduit un personnage persévérant. « Renonce très vite » est contredit par « refusait d'abandonner », « jamais connu d'échec » par « nombreux échecs », et l'indifférence ne repose sur aucun indice.",
       "difficulty": 3
     },
     {
@@ -83,7 +90,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Très en colère"
+          "text": "Très en colère contre lui-même"
         },
         {
           "id": "b",
@@ -99,43 +106,47 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "La suite « il n'en pouvait plus » et le geste de poser son sac confirment qu'« exténué » signifie épuisé, extrêmement fatigué. La colère, la joie « Très heureux » et la surprise ne correspondent pas à l'idée d'épuisement décrite.",
+      "explanation": "La suite « il n'en pouvait plus » et le geste de poser enfin son sac montrent qu'« exténué » signifie épuisé. La colère, la joie et la surprise ne correspondent pas à l'idée d'épuisement que le contexte décrit.",
       "difficulty": 2
     },
     {
-      "prompt": "Vous rédigez l'introduction d'un texte argumentatif sur l'importance du sport. Quelle phrase constitue la meilleure phrase de thèse ?",
+      "prompt": "Vous rédigez un texte argumentatif sur l'importance du sport. Quelle phrase constitue la meilleure thèse ?",
       "options": [
         {
           "id": "a",
-          "text": "Le sport, c'est quand on bouge."
+          "text": "Le sport, c'est quand on bouge son corps pendant un certain temps.",
+          "misconceptionTag": "fr.argu.these-mal-formulee"
         },
         {
           "id": "b",
-          "text": "Selon moi, pratiquer un sport régulièrement est essentiel pour la santé et le bien-être."
+          "text": "Est-ce que le sport est vraiment utile à tous les adolescents d'aujourd'hui ?",
+          "misconceptionTag": "fr.argu.these-mal-formulee"
         },
         {
           "id": "c",
-          "text": "Est-ce que le sport est utile ?"
+          "text": "Un jour, je suis allé courir au parc avec mes cousins.",
+          "misconceptionTag": "fr.production.type-de-texte-non-respecte"
         },
         {
           "id": "d",
-          "text": "Un jour, je suis allé courir au parc."
+          "text": "Selon moi, pratiquer un sport régulièrement est essentiel pour la santé."
         }
       ],
-      "correctOption": "b",
-      "explanation": "Une phrase de thèse annonce clairement l'opinion que l'on va défendre : « pratiquer un sport… est essentiel pour la santé et le bien-être ». « Le sport, c'est quand on bouge » n'est qu'une définition vague, « Est-ce que le sport est utile ? » une question (non une prise de position), et « Un jour, je suis allé courir au parc » le début d'un récit.",
+      "correctOption": "d",
+      "explanation": "Une thèse énonce clairement le point de vue défendu, ici avec une expression de l'opinion (« Selon moi ») : le sport est essentiel pour la santé. Une définition vague ne prend pas position, une question n'est pas une réponse, et un souvenir est le début d'un récit.",
       "difficulty": 3
     },
     {
-      "prompt": "Vous voulez enchaîner deux arguments dans un paragraphe. Vous avez ces phrases :\n\n1) De plus, le sport apprend à respecter des règles et les autres joueurs.\n2) Tout d'abord, le sport renforce le corps et protège de nombreuses maladies.\n\nQuel est le bon ordre logique ?",
+      "prompt": "Vous voulez enchaîner deux arguments. Vous avez ces phrases :\n\n1) De plus, le sport apprend à respecter des règles et les autres joueurs.\n2) Tout d'abord, le sport renforce le corps et protège de nombreuses maladies.\n\nQuel est le bon ordre logique ?",
       "options": [
         {
           "id": "a",
-          "text": "1 puis 2"
+          "text": "2 puis 1"
         },
         {
           "id": "b",
-          "text": "2 puis 1"
+          "text": "1 puis 2",
+          "misconceptionTag": "fr.argu.ordre-logique"
         },
         {
           "id": "c",
@@ -146,8 +157,8 @@
           "text": "Il faut remplacer « De plus » par « Enfin »."
         }
       ],
-      "correctOption": "b",
-      "explanation": "Le connecteur « Tout d'abord » ouvre la série d'arguments, et « De plus » en ajoute un supplémentaire : l'ordre logique est donc 2 puis 1. Commencer par « De plus » serait incohérent, car ce connecteur suppose qu'un argument précède déjà — les deux ordres ne se valent pas. Et remplacer « De plus » par « Enfin » ne réglerait rien : le problème est l'ordre des phrases, pas le choix du second connecteur.",
+      "correctOption": "a",
+      "explanation": "« Tout d'abord » ouvre la série d'arguments, et « De plus » en ajoute un : l'ordre est 2 puis 1. Commencer par « De plus » serait incohérent, car cet articulateur suppose qu'un argument précède ; les deux ordres ne se valent donc pas, et remplacer « De plus » par « Enfin » ne règle pas l'ordre des phrases.",
       "difficulty": 3
     }
   ]

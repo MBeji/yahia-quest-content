@@ -9,12 +9,20 @@
     {
       "prompt": "نسبة الأزوت في هواء الشّهيق 79 % وفي هواء الزّفير 79 % أيضًا. ما فائدة هذه الملاحظة؟",
       "options": [
-        { "id": "a", "text": "لا فائدة: غاز لا يتغيّر لا يعنينا" },
+        {
+          "id": "a",
+          "text": "لا فائدة: غاز لا يتغيّر لا يعنينا",
+          "misconceptionTag": "bio.resp.azote-constant-lu-comme-erreur"
+        },
         {
           "id": "b",
           "text": "هي الشّاهد: ثبات الأزوت يبيّن أنّ تغيّر الغازين الآخرين حقيقيّ ولا يرجع إلى خطأ في القياس"
         },
-        { "id": "c", "text": "تبيّن أنّ الأزوت يُستهلك" },
+        {
+          "id": "c",
+          "text": "تبيّن أنّ الأزوت يُستهلك",
+          "misconceptionTag": "bio.resp.azote-constant-lu-comme-erreur"
+        },
         { "id": "d", "text": "تبيّن أنّ الرّئة لا تعمل" }
       ],
       "correctOption": "b",
@@ -26,8 +34,16 @@
       "options": [
         { "id": "a", "text": "4,6 %: من 21 % إلى 16,4 %" },
         { "id": "b", "text": "21 %: يستهلكه كلّه" },
-        { "id": "c", "text": "0,04 %" },
-        { "id": "d", "text": "79 %" }
+        {
+          "id": "c",
+          "text": "0,04 %",
+          "misconceptionTag": "bio.lecture.valeur-d-une-autre-grandeur"
+        },
+        {
+          "id": "d",
+          "text": "79 %",
+          "misconceptionTag": "bio.lecture.valeur-d-une-autre-grandeur"
+        }
       ],
       "correctOption": "a",
       "explanation": "يفقد 4,6 %، من 21 % إلى 16,4 %. فهواء الزّفير ما زال غنيًّا بالأكسيجين — ولهذا ينفع التّنفّس الاصطناعيّ فمًا لفم: ما نطرحه يكفي غيرنا.",
@@ -37,9 +53,21 @@
       "prompt": "وماذا يكسب الهواء من ثنائي أكسيد الكربون؟",
       "options": [
         { "id": "a", "text": "4,16 %: من 0,04 % إلى 4,2 %" },
-        { "id": "b", "text": "0,04 %: لا يتغيّر" },
-        { "id": "c", "text": "21 %" },
-        { "id": "d", "text": "79 %" }
+        {
+          "id": "b",
+          "text": "0,04 %: لا يتغيّر",
+          "misconceptionTag": "bio.lecture.valeur-d-une-autre-grandeur"
+        },
+        {
+          "id": "c",
+          "text": "21 %",
+          "misconceptionTag": "bio.lecture.valeur-d-une-autre-grandeur"
+        },
+        {
+          "id": "d",
+          "text": "79 %",
+          "misconceptionTag": "bio.lecture.valeur-d-une-autre-grandeur"
+        }
       ],
       "correctOption": "a",
       "explanation": "يرتفع من 0,04 % إلى 4,2 %، أي بزيادة 4,16 %. ولاحظ أنّها قريبة من 4,6 % المفقودة أكسيجينًا، وهذا طبيعيّ: ما يُستهلك في الخلايا يعود في صورة هذا الغاز.",
@@ -49,7 +77,11 @@
       "prompt": "لكلّ 100 مل من الدّم في الأسناخ: كم يكسب من الأكسيجين وكم يفقد من ثنائي أكسيد الكربون؟",
       "options": [
         { "id": "a", "text": "يكسب 10 (من 10 إلى 20) ويفقد 10 (من 60 إلى 50)" },
-        { "id": "b", "text": "يكسب 20 ويفقد 60" },
+        {
+          "id": "b",
+          "text": "يكسب 20 ويفقد 60",
+          "misconceptionTag": "bio.lecture.valeur-d-une-autre-grandeur"
+        },
         { "id": "c", "text": "يفقد 10 ويكسب 10 من الغاز الآخر" },
         { "id": "d", "text": "لا يتغيّر شيء" }
       ],
