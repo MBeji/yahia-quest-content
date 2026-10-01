@@ -1091,9 +1091,9 @@
   "math.geo.condition-suffisante-supposee": {
     "subject": "math",
     "labels": {
-      "fr": "Tu prends une seule propriété pour une preuve : des diagonales perpendiculaires ne suffisent pas au losange, il leur faut aussi le même milieu",
-      "en": "You take a single property as proof: perpendicular diagonals are not enough for a rhombus — they must also share a midpoint",
-      "ar": "تعدّ خاصيّة واحدة برهانًا: تعامد القطرَين لا يكفي للمعيّن، بل يلزم كذلك أن يكون لهما المنتصف نفسه"
+      "fr": "Tu prends une seule propriété pour une preuve : il faut toutes les conditions — par exemple, des diagonales perpendiculaires ne suffisent pas au losange, il leur faut aussi le même milieu",
+      "en": "You take a single property as proof: every condition is needed — for instance, perpendicular diagonals are not enough for a rhombus, they must also share a midpoint",
+      "ar": "تعدّ خاصيّة واحدة برهانًا: يلزم اجتماع كلّ الشروط — فمثلًا تعامد القطرَين لا يكفي للمعيّن، بل يلزم كذلك أن يكون لهما المنتصف نفسه"
     },
     "competency": "math.geo.quadrilateres"
   },
@@ -7046,5 +7046,41 @@
       "ar": "تُهمل الوضعيّة النسبيّة للنقاط: حسب وقوع النقطة بين النقطتين الأخريين أو خارجهما (وفي أيّ جهة) تُطرح الأطوال أو تُجمع"
     },
     "competency": "math.geo.thales-direct"
+  },
+  "math.mes.echelle-aire-rapport-non-carre": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu appliques à une aire le rapport des longueurs : à l'échelle 1/k, chaque longueur est multipliée par k, donc une aire est multipliée par k × k",
+      "en": "You apply the length ratio to an area: at a 1/k scale every length is multiplied by k, so an area is multiplied by k × k",
+      "ar": "تطبّق على المساحة نسبة الأطوال: بالسلّم 1/k يُضرب كلّ طول في k، فتُضرب المساحة في k × k"
+    },
+    "competency": "math.mes.aires"
+  },
+  "math.geo.parallelogramme-sommets-mal-ordonnes": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu ordonnes mal les sommets du parallélogramme : dans ABCD, les diagonales joignent les sommets opposés, [AC] et [BD], et ce sont elles qui ont le même milieu",
+      "en": "You order the parallelogram's vertices wrongly: in ABCD the diagonals join opposite vertices, [AC] and [BD], and they are the ones that share a midpoint",
+      "ar": "ترتّب رؤوس متوازي الأضلاع خطأً: في ABCD يصل القطران الرأسين المتقابلين، [AC] و [BD]، وهما اللذان لهما المنتصف نفسه"
+    },
+    "competency": "math.geo.quadrilateres"
+  },
+  "math.vec.symetrie-axiale-signe-mal-place": {
+    "subject": "math",
+    "labels": {
+      "fr": "Par rapport à un axe, une seule coordonnée change de signe — celle que l'axe ne porte pas : (OI) donne (x ; −y), (OJ) donne (−x ; y) ; changer les deux signes, c'est la symétrie par rapport à O",
+      "en": "In an axis only one coordinate changes sign — the one the axis does not carry: (OI) gives (x ; −y), (OJ) gives (−x ; y); changing both signs is the reflection in O",
+      "ar": "بالنسبة إلى محور تتغيّر إشارة إحداثيّة واحدة هي التي لا يحملها المحور: (OI) يعطي (x ; −y) و (OJ) يعطي (−x ; y)، وتغيير الإشارتين معًا تناظر بالنسبة إلى O"
+    },
+    "competency": "math.vec.repere-coordonnees"
+  },
+  "math.vec.symetrique-confondu-avec-milieu": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu t'arrêtes au milieu : le symétrique de A par rapport à K est de l'autre côté de K, à la même distance — K est le milieu de [AA′], pas le point cherché",
+      "en": "You stop at the midpoint: the image of A in point K lies on the other side of K at the same distance — K is the midpoint of [AA′], not the point you want",
+      "ar": "تتوقّف عند المنتصف: نظيرة A بالنسبة إلى K تقع في الجهة الأخرى من K وعلى البعد نفسه، و K منتصف [AA′] لا النقطة المطلوبة"
+    },
+    "competency": "math.vec.repere-calculs"
   }
 }
